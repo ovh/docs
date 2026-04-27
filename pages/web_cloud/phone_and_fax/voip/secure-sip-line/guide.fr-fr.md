@@ -83,6 +83,7 @@ Pour cela, gérez le filtrage d'appels depuis votre espace client OVHcloud. Repo
 
 ### Étape 3 : suivre vos consommations
 
+<!-- CP-STEPS-START:suivre-consommations -->
 Maintenant que vous avez appris à sécuriser votre ligne SIP OVHcloud ou que vous venez de le faire, il est intéressant de savoir où suivre en temps réel la consommation inhérente à votre ligne.
 
 Dans l'onglet `Consommation`{.action}, cliquez sur `Appels émis`{.action}.
@@ -92,6 +93,7 @@ Dans l'onglet `Consommation`{.action}, cliquez sur `Appels émis`{.action}.
 La page qui s'affiche alors vous permet de visionner l'historique des consommations du mois en cours, ainsi que le nombre d'appels hors forfait et le montant généré par ces derniers. Nous vous conseillons de consulter cette page régulièrement.
 
 ![securisersip](images/secure-sip-line-step2.png){.thumbnail}
+<!-- CP-STEPS-END:suivre-consommations -->
 
 ## Aller plus loin
 

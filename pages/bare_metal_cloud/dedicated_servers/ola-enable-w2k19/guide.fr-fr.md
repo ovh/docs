@@ -1,12 +1,15 @@
 ---
 title: "Configurer OVHcloud Link Aggregation sur un serveur dédié (Windows)"
 excerpt: "Activez OVHcloud Link Aggregation sur votre serveur dédié Windows Server 2019"
-updated: 2021-03-25
+updated: 2026-04-20
 ---
 
 ## Objectif
 
-La technologie OVHcloud Link Aggregation (OLA) est conçue par nos équipes pour augmenter la disponibilité de votre serveur et améliorer l'efficacité de vos connexions réseau. En quelques clics, vous pouvez agréger vos cartes réseau et rendre vos liaisons réseau redondantes. Cela signifie que si une liaison tombe en panne, le trafic est automatiquement redirigé vers une autre liaison disponible.
+La technologie OVHcloud Link Aggregation (OLA) est conçue par nos équipes pour augmenter la disponibilité de votre serveur et améliorer l'efficacité de vos connexions réseau. En quelques clics, vous pouvez agréger vos cartes réseau et rendre vos liaisons réseau redondantes. Cela signifie que si une liaison tombe en panne, le trafic est automatiquement redirigé vers une autre liaison disponible. La bande passante disponible est également doublée grâce à l'agrégation.
+L'agrégation est basée sur la technologie IEEE 802.3ad, Link Aggregation Control Protocol (LACP).
+
+**Ce guide explique comment configurer le NIC Teaming pour OLA sous Windows Server 2019.**
 
 ## Prérequis
 
@@ -72,10 +75,12 @@ Pour vérifier que votre équipe NIC fonctionne, effectuez un ping vers un autre
 
 ## Aller plus loin
 
-[Configurer l’agrégation de liens OLA dans votre espace client](/pages/bare_metal_cloud/dedicated_servers/ola-enable-manager).
+[Configurer l'agrégation de liens OLA dans votre espace client](/pages/bare_metal_cloud/dedicated_servers/ola-enable-manager)
 
-[Comment configurer votre NIC pour l'agrégation de liens OVHcloud sous Debian 9](/pages/bare_metal_cloud/dedicated_servers/ola-enable-debian9).
+[Comment configurer votre NIC pour OVHcloud Link Aggregation sous Debian 12 ou Ubuntu 24.04 avec Netplan](/pages/bare_metal_cloud/dedicated_servers/lacp-enable-netplan)
 
-[Comment configurer votre NIC pour l’agrégation de liens OVHcloud dans SLES 15](/pages/bare_metal_cloud/dedicated_servers/ola-enable-sles15).
+[Comment configurer votre NIC pour l'agrégation de liens OVHcloud sous Debian 9 à 11](/pages/bare_metal_cloud/dedicated_servers/ola-enable-debian9)
+
+[Comment configurer votre NIC pour OVHcloud Link Aggregation sous SLES 15](/pages/bare_metal_cloud/dedicated_servers/ola-enable-sles15)
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).

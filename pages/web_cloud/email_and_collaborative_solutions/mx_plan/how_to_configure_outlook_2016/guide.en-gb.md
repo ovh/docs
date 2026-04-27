@@ -38,6 +38,7 @@ Email addresses from the **MX Plan** and [Zimbra Starter](/links/web/emails-zimb
 - Have the [new Outlook](https://support.microsoft.com/en-gb/office/getting-started-with-the-new-outlook-for-windows-656bb8d9-5a60-49b2-a98b-ba7822bc7627) for Windows.
 - Have the credentials related to the email address you wish to configure.
 
+<!-- CP-STEPS-START:cp-nav-mx-plan -->
 <!-- CP-NAV-START:web-mx-plan -->
 ---
 
@@ -48,6 +49,7 @@ Email addresses from the **MX Plan** and [Zimbra Starter](/links/web/emails-zimb
 
 ---
 <!-- CP-NAV-END:web-mx-plan -->
+<!-- CP-STEPS-END:cp-nav-mx-plan -->
 
 /// details | Information related to the management and configuration of OVHcloud services
 
@@ -254,11 +256,13 @@ This is why we invite you to consult the chapter corresponding to the interface 
 >>
 >> The window is divided into two parts, **Incoming mail** and **Outgoing mail**. Click on the part you wish to modify.
 >>
+>> <!-- CP-STEPS-START:cp-note-email-pro-server -->
 >> > [!primary]
 >> >
 >> > In our example, the server name used is "pro**?**.mail.ovh.net". You will need to replace the character "?" with the number corresponding to the server of your Email Pro service.
 >> >
 >> > Find this number in your [OVHcloud Control Panel](/links/manager), in the `Web Cloud`{.action} section then `Email Pro`{.action}. The server name is visible in the **Connection** box of the `General information`{.action} tab.
+>> <!-- CP-STEPS-END:cp-note-email-pro-server -->
 >>
 >> ![Outlook](images/config-outlook-legacy-mxplan08.png){.thumbnail}
 >>

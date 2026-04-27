@@ -14,11 +14,21 @@ Ce guide explique comment récupérer la passerelle correcte et l’ajouter à v
 
 - Une organisation [Public VCF as-a-Service](/links/hosted-private-cloud/vmware-vcd) avec un bloc d’adresses IP publiques.
 - Les droits d’administrateur technique sur [VMware vSphere on OVHcloud](/links/hosted-private-cloud/vmware).
-- Être connecté à l’[espace client OVHcloud](/links/manager).
+
+<!-- CP-NAV-START:privatecloud-vmware-vcf -->
+---
+
+### Accès à l’espace client OVHcloud
+
+- **Lien direct :** [VMware Cloud Foundation](/links/control-panel/privatecloud-vmware-vcf)
+- **Pour accéder à vos services :** `Hosted Private Cloud`{.action} > `Public VCF as-a-Service`{.action} > Sélectionnez votre service VCF
+
+---
+<!-- CP-NAV-END:privatecloud-vmware-vcf -->
 
 ## En pratique
 
-1. Connectez-vous à votre [espace client OVHcloud](/links/manager). Cliquez sur `Hosted Private Cloud`{.action}, puis `Public VCF as-a-Service`{.action} et sélectionnez votre organisation.
+1. Sélectionnez votre organisation.
 
     ![Ouvrir l’organisation](images/vcd-declare-public-gateway-01.png){.thumbnail}
 

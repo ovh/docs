@@ -43,6 +43,7 @@ Creating, transferring or changing the holder of a domain name can generate erro
 
 ### Overview of the ongoing operations management interface
 
+<!-- CP-STEPS-START:ongoing-ops-presentation -->
 Click on the tabs below to view each of the **2** steps.
 
 > [!tabs]
@@ -63,6 +64,7 @@ Click on the tabs below to view each of the **2** steps.
 >> - `Date of update`: Timestamp for updating the current operation.
 >> - `End date`: The end date of the operation.
 >> - `Status`: The current status of the operation.
+<!-- CP-STEPS-END:ongoing-ops-presentation -->
 
 Not all of the operations listed in this table require your intervention for them to proceed normally.
 
@@ -82,6 +84,7 @@ This guide covers **error** operations through recurring situations.
 
 **Click on the situation of your choice to view the content.**
 
+<!-- CP-STEPS-START:situation-document-request -->
 /// details | Document requests
 
 Some domain name extensions require you to justify their registration by providing documents. If this is the case, you must submit the documents from your OVHcloud Control Panel.
@@ -110,7 +113,9 @@ Click on the tabs below to view each of the **4** steps.
 >> ![domain](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/ongoing-operations/operation-data-provide-us-with-the-documents-required.png){.thumbnail}
 
 ///
+<!-- CP-STEPS-END:situation-document-request -->
 
+<!-- CP-STEPS-START:situation-missing-info -->
 /// details | Missing information
 
 When you register your domain name, it is sometimes necessary to complete the contact data. If these details do not match the criteria for the domain name, you might get the error below.
@@ -139,7 +144,9 @@ Click on the tabs below to view each of the **4** steps.
 >> ![domain](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/ongoing-operations/operation-data-complete-nic-admin-es-tld.png){.thumbnail}
 
 ///
+<!-- CP-STEPS-END:situation-missing-info -->
 
+<!-- CP-STEPS-START:situation-transfer-code -->
 /// details | Wrong transfer code
 
 When you transfer your domain name to OVHcloud, you must enter a transfer code (**authInfo** / **AuthCode**) when placing your order. If this code is incorrect, the operation is suspended. You can restart it with the correct code.
@@ -168,7 +175,9 @@ Click on the tabs below to view each of the **4** steps.
 >> ![domain](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/ongoing-operations/operation-data-auth-code-missing.png){.thumbnail}
 
 ///
+<!-- CP-STEPS-END:situation-transfer-code -->
 
+<!-- CP-STEPS-START:situation-dns-error -->
 /// details | DNS server error
 
 An error may occur if the DNS servers you attach to a domain name are not working.
@@ -196,7 +205,9 @@ Click on the tabs below to view each of the **4** steps.
 >> From this tab, [edit your DNS servers](/pages/web_cloud/domains/dns_server_edit).
 
 ///
+<!-- CP-STEPS-END:situation-dns-error -->
 
+<!-- CP-STEPS-START:situation-domain-blocked -->
 /// details | Error on a .ie, .de or .it domain name after a DNS update
 
 When you modify your DNS servers, the registry may check the new DNS servers and the associated DNS zone, and block the domain name if the configuration is not compliant.
@@ -238,7 +249,9 @@ To check if your domain name is blocked, click on the tabs below to view each of
 >> Once you have identified the origin of the error and corrected it, click the `...`{.action} button to the right of the operation concerned and restart the DNS verification operation.
 
 ///
+<!-- CP-STEPS-END:situation-domain-blocked -->
 
+<!-- CP-STEPS-START:situation-internal-error -->
 /// details | OVHcloud internal error
 
 You may encounter an error with the comment "internal error".
@@ -265,6 +278,7 @@ Click on the tabs below to view each of the **3** steps.
 >> If you notice an anomaly that is not related to the configuration of the DNS servers or the DNS zone, [contact OVHcloud support](/links/support) to identify the cause of the malfunction.
 
 ///
+<!-- CP-STEPS-END:situation-internal-error -->
 
 ## Go further
 

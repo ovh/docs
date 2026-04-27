@@ -49,10 +49,12 @@ Votre identifiant client est renseigné en haut à droite sur toutes vos facture
 
 Si vous ne retrouvez pas votre identifiant, sachez que vous pouvez vous connecter en utilisant l'adresse e-mail principale (à la place de l'identifiant) que vous avez renseignée dans votre compte.
 
+<!-- CP-STEPS-START:find-customer-id -->
 Une fois connecté, vous pourrez prendre note de votre identifiant qui est affiché dans votre espace client, en cliquant sur votre nom en haut à droite.
 <br>Il apparaît sous votre adresse e-mail principale.
 
 ![identifiant client](/pages/assets/screens/control_panel/product-selection/right-menu/id.png){.thumbnail}
+<!-- CP-STEPS-END:find-customer-id -->
 
 ### J'ai perdu mon mot de passe
 

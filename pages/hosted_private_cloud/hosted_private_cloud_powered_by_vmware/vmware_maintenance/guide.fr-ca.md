@@ -18,15 +18,24 @@ updated: 2025-06-02
 - Être connecté à [l'espace client OVHcloud](/links/manager) ou à la [console API console pour vos services](/links/api).
 - Être contact administrateur ou technique de l'infrastructure [VMware on OVHcloud](/links/hosted-private-cloud/vmware).
 
+<!-- CP-NAV-START:privatecloud-vmware-vsphere -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [VMware vSphere](/links/control-panel/privatecloud-vmware-vsphere)
+- **Pour accéder à vos services :** `Hosted Private Cloud`{.action} > `Managed VMware vSphere`{.action} > Sélectionnez votre service vSphere
+
+---
+<!-- CP-NAV-END:privatecloud-vmware-vsphere -->
+
 ## En pratique
 
 Les opérations de maintenance au sein de OVHcloud témoignent d'un savoir-faire de la part des équipes internes. Celui-ci a été perfectionné au fil des années afin de garantir la fiabilité et la performance des équipements.
 
 ### Accéder aux opérations Hosted Private Cloud
 
-Connectez-vous à votre [espace client OVHcloud](/links/manager) avec un compte administrateur et cliquez sur l'onglet `Hosted Private Cloud`{.action}.
-
-Sélectionnez votre infrastructure sous `VMware`{.action} puis cliquez sur l'onglet `Operations`{.action}. 
+Cliquez sur [ce lien](/links/control-panel/privatecloud-vmware-vsphere) pour accéder à la section `VMware vSphere`{.action}, puis cliquez sur l'onglet `Operations`{.action}.
 
 ![Maintenance Operation](/pages/assets/screens/control_panel/product-selection/hosted-private-cloud/vmware/operations/maintenance.png){.thumbnail}
 

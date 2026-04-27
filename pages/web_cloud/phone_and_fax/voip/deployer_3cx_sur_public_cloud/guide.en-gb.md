@@ -614,6 +614,7 @@ For our guide, we will use a **Discovery D2-4** instance.
 
 #### Deployment via the OVHcloud Control Panel
 
+<!-- CP-STEPS-START:step2-deploy-control-panel -->
 Go to the [Public Cloud](/links/control-panel/publiccloud-projects) section, then select your project.
 
 On the homepage, click `Create an instance`{.action}. Select your instance flavor and the region you want.
@@ -643,6 +644,7 @@ tail -F /var/lib/3cxpbx/Data/Logs/PbxConfigTool.log
 ```
 
 Once the deployment is complete, the administration interface will be accessible via the FQDN given when you subscribe to your 3CX license, or via the IP address of your instance: `https://instance_public_ip:5001/`
+<!-- CP-STEPS-END:step2-deploy-control-panel -->
 
 #### Deployment via API
 

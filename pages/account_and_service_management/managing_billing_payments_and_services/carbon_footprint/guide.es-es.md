@@ -66,6 +66,7 @@ Tenga en cuenta los siguientes puntos:
 
 ### Obtener el balance mensual del mes anterior desde el área de cliente de OVHcloud
 
+<!-- CP-STEPS-START:retrieve-cp-footprint -->
 1. En el [Panel de control de la cuenta](/links/control-panel/account-dashboard), en la columna izquierda, desplácese hasta la sección que contiene los **Enlaces útiles** y haga clic en la pestaña `Mi huella de carbono`{.action}.
 1. En la nueva página que aparece, haga clic en `Descargar mi huella de [Mes] [Año]`{.action}.
 
@@ -74,6 +75,7 @@ Tenga en cuenta los siguientes puntos:
 Podrá recuperar cada mes la huella de carbono del mes anterior para sus servicios elegibles.
 
 Si necesita la huella de carbono durante un mes anterior al mes anterior al mes en curso, deberá utilizar obligatoriamente nuestras API para recuperarla.
+<!-- CP-STEPS-END:retrieve-cp-footprint -->
 
 ### Recuperar un balance mensual anterior al mes anterior a través de nuestras API
 

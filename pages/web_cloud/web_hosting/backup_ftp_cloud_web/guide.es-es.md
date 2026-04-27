@@ -52,6 +52,7 @@ A diferencia de los alojamientos compartidos de OVHcloud, no es posible restaura
 
 Se genera un enlace de descarga de la copia de seguridad y se envía por correo electrónico a la dirección de correo electrónico asociada al ID de cliente administrador del hosting Cloud Web.
 
+<!-- CP-STEPS-START:access-ftp-backup -->
 Haga clic en las fichas siguientes para ver cada una de las **5** etapas.
 
 > [!tabs]
@@ -88,6 +89,7 @@ Haga clic en las fichas siguientes para ver cada una de las **5** etapas.
 >> ![Mensaje de progreso de la copia de seguridad](/pages/assets/screens/control_panel/product-selection/web-cloud/cloud-web/ftp-ssh/message-backup-progress.png){.thumbnail}
 >>
 >> La generación de la copia de seguridad tarda entre 10 y 15 minutos.
+<!-- CP-STEPS-END:access-ftp-backup -->
 
 ### Descargar la copia de seguridad
 

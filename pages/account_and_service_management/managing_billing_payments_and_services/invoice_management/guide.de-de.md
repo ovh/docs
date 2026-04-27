@@ -59,6 +59,7 @@ Die Rechnung zu Ihrer OVHcloud Dienstleistung wird Ihnen nach einer Bezahlung od
 
 #### Rechnungen einsehen und verwalten
 
+<!-- CP-STEPS-START:view-manage-bills -->
 Um Ihre Rechnungen einzusehen, öffnen Sie die Seite [Meine Rechnungen](/links/control-panel/billing-invoices).
 
 ![Rechnungsstellung](/pages/assets/screens/control_panel/product-selection/right-menu/my-bills.png){.thumbnail}
@@ -113,14 +114,17 @@ Wenn Sie alle Ihre Rechnungen exportieren möchten, verwenden Sie die Buttons `A
 Wenn Sie nur einen Teil davon exportieren möchten, setzen Sie in der ersten Spalte der Tabelle ein Häkchen, um die Rechnungen auszuwählen, die Sie interessieren. Zwei neue Aktionen, `Die Auswahl im CSV-Format exportieren`{.action} und `Die Auswahl im PDF-Format exportieren`{.action}, sind dann im Menü `Massenaktionen`{.action} verfügbar.
 
 ![export_selection](images/export_selection.png){.thumbnail}
+<!-- CP-STEPS-END:view-manage-bills -->
 
 #### Rechnungen bezahlen <a name="pay-bills"></a>
 
+<!-- CP-STEPS-START:pay-bills -->
 Um Ihre ausstehenden Rechnungen zu begleichen, klicken Sie einfach auf das Menü `Massenaktionen`{.action} und dann auf den Button `Mein Konto sofort ausgleichen`{.action}.
 
 ![Bezahlung ausstehender Beträge](images/pay_debt.png){.thumbnail}
 
 Es wird dann ein [Bestellschein](/pages/account_and_service_management/managing_billing_payments_and_services/managing_ovh_orders#der-bestellschein) entsprechend der Rechnungsbeträge erstellt. Nach Bezahlung ist Ihr Konto ausgeglichen.
+<!-- CP-STEPS-END:pay-bills -->
 
 #### Die Stornierung einer Rechnung beantragen
 
@@ -129,10 +133,13 @@ Es wird dann ein [Bestellschein](/pages/account_and_service_management/managing_
 > Um die Kündigung Ihrer Dienstleistung zu beantragen, folgen Sie den Anweisungen in [dieser Anleitung](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_cancel_services).
 >
 
+<!-- CP-STEPS-START:request-cancellation-ticket -->
 Wenn Sie eine Rechnung erhalten haben, die Sie nicht für rechtmäßig halten, und Sie eine Erstattung beantragen oder Ihre Rechnung geltend machen möchten, klicken Sie oben rechts auf Ihrem Bildschirm auf Ihren Namen und dann auf `Ein Ticket erstellen`{.action}.
+<!-- CP-STEPS-END:request-cancellation-ticket -->
 
 ### Zahlungsverfolgung
 
+<!-- CP-STEPS-START:track-payments -->
 Die Zahlungshistorie finden Sie in `Meine Rechnungen`{.action} und dann `Zahlungsverfolgung`{.action}. So können Sie jede Rechnung mit der zugehörigen Zahlung verbinden.
 
 ![Zahlungsverfolgung](images/payment_tracking.png){.thumbnail}
@@ -143,6 +150,7 @@ In diesem Bereich können Sie Ihre Zahlungsbelege auch im *.csv* Format exportie
 >
 > Sollten Sie einen Unterschied zwischen gezahltem Betrag und Rechnungsbetrag feststellen, dann hatten Sie auf Ihrem OVHcloud Konto ein Guthaben, von dem der Rechnungsbetrag automatisch abgezogen wurde.
 >
+<!-- CP-STEPS-END:track-payments -->
 
 ## Weiterführende Informationen
 

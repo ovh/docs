@@ -41,17 +41,6 @@ En transférant votre nom de domaine, vous changerez de registre pour celui-ci. 
 - Être habilité à demander le transfert du nom de domaine.
 - Avoir prévenu le titulaire du nom de domaine et/ou ses administrateurs de la demande de transfert.
 
-<!-- CP-NAV-START:web-domains -->
----
-
-### Accès à l'espace client OVHcloud
-
-- **Lien direct :** [Noms de domaine](/links/control-panel/web-domains)
-- **Pour accéder à vos services :** `Web Cloud`{.action} > `Noms de domaine`{.action} > Sélectionnez votre nom de domaine
-
----
-<!-- CP-NAV-END:web-domains -->
-
 ## En pratique
 
 La procédure de transfert comporte plusieurs étapes, impliquant la prise de contact avec plusieurs entités, dont votre registre actuel, OVHcloud et d'autres parties. Le tableau ci-dessous vous indique les personnes contactées et la durée estimée de chaque étape.

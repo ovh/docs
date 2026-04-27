@@ -61,6 +61,7 @@ If you are unable to log in, change your FTP password as described in this [guid
 
 A lack of file storage capacity on your Web Hosting plan may cause your site to malfunction when you try to modify or update it.
 
+<!-- CP-STEPS-START:check-disk-space -->
 To check the remaining storage space on your hosting, click on the tabs below to view each of the **2** steps.
 
 > [!tabs]
@@ -75,6 +76,7 @@ To check the remaining storage space on your hosting, click on the tabs below to
 >> You can find the storage space utilization of your hosting in the **General information** box, under **Disk space**.
 >>
 >> ![disk_space](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-disk-space.png){.thumbnail}
+<!-- CP-STEPS-END:check-disk-space -->
 
 ### I can't transfer my files to the FTP server.
 

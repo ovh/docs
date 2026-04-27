@@ -78,6 +78,7 @@ Nel caso in cui la password risulti compromessa, consigliamo di [modificarla imm
 
 #### Dallo Spazio Cliente
 
+<!-- CP-STEPS-START:change-password-cp -->
 - Nella pagina [Sicurezza dell'account](/links/control-panel/account-security), clicca sul pulsante `Modificare`{.action} in corrispondenza della voce “Password”.
 
 ![manage-ovh-password](/pages/assets/screens/control_panel/product-selection/right-column/access-my-account/edit-account-password.png){.thumbnail}
@@ -92,10 +93,13 @@ Nel caso in cui la password risulti compromessa, consigliamo di [modificarla imm
 
 - A questo punto compare un messaggio che conferma che l’operazione eseguita è andata a buon fine. Clicca su `Continua`{.action} per essere reindirizzato alla pagina di login. Inserisci l’identificativo e la nuova password.
 
+<!-- CP-STEPS-END:change-password-cp -->
+
 <a name="lost-password"></a>
 
 #### Se non ricordi più la password
 
+<!-- CP-STEPS-START:change-password-forgotten -->
 - Nella pagina di accesso allo Spazio Cliente clicca su `Non ricordi identificativo o password?`{.action}.
 
 ![manage-ovh-password](images/account-password-modif-forgotten-step1.png){.thumbnail}
@@ -118,6 +122,8 @@ Nel caso in cui la password risulti compromessa, consigliamo di [modificarla imm
 > 
 > Durante la propagazione della modifica tutte le sessioni attive sull’account OVHcloud verranno chiuse automaticamente.
 > 
+
+<!-- CP-STEPS-END:change-password-forgotten -->
 
 ## Per saperne di più
 

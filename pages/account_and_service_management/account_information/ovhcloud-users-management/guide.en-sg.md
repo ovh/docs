@@ -42,6 +42,7 @@ Local users are one of the types of identities that can be set up on your OVHclo
 
 #### Add a user
 
+<!-- CP-STEPS-START:add-a-user -->
 From the [IAM Identities](/links/control-panel/iam-identities) page, click on `Add user`{.action}.
 
 A window will pop up, and you will need to complete the required fields. Click `Confirm`{.action} to create the user.
@@ -73,9 +74,11 @@ Example: **1234-567-89/johnsmith**.
 The user you have created can then log in to the [OVHcloud Control Panel](/links/manager) using this ID. 
 
 They can also change their password and secure their own access to your account by enabling two-factor authentication (this is only for their access as a user). To find out how to enable two-factor authentication, you can refer to [this guide](/pages/account_and_service_management/account_information/secure-ovhcloud-account-with-2fa).
+<!-- CP-STEPS-END:add-a-user -->
 
 #### Manage users
 
+<!-- CP-STEPS-START:manage-users -->
 You can disable/enable or remove a user by clicking on the `…`{.action} button to the right of the user’s name.
 
 ![users-management](images/usersmanagement4.png){.thumbnail}
@@ -83,11 +86,13 @@ You can disable/enable or remove a user by clicking on the `…`{.action} button
 When you edit a user you can update their email address, group and description.
 
 ![users-management](images/usersmanagement6.png){.thumbnail}
+<!-- CP-STEPS-END:manage-users -->
 
 ### Group management
 
 #### Add a group
 
+<!-- CP-STEPS-START:add-a-group -->
 To add a group, go to the `User groups`{.action} tab, then click the `Declare a group`{.action} button.
 
 ![users-management](images/usersmanagement7.png){.thumbnail}
@@ -104,9 +109,11 @@ Groups give a default privilege level for the users they contain, according to t
 | Read-Only | Gives read access to the OVHcloud Control Panel and all of its sections. |
 | Restricted Admin | Gives write access to the OVHcloud Control Panel and all of its sections, **except for** user management. |
 | Administrator | Gives write access to the OVHcloud Control Panel and all of its sections, **including** user management. |
+<!-- CP-STEPS-END:add-a-group -->
 
 #### Manage groups
 
+<!-- CP-STEPS-START:manage-groups -->
 You can update or remove a group by clicking on the `…`{.action} button to the right of the group name.
 
 ![users-management](images/usersmanagement9.png){.thumbnail}
@@ -114,6 +121,7 @@ You can update or remove a group by clicking on the `…`{.action} button to the
 When you edit a group you can update its description and role.
 
 ![users-management](images/usersmanagement10.png){.thumbnail}
+<!-- CP-STEPS-END:manage-groups -->
 
 ### Rights management
 

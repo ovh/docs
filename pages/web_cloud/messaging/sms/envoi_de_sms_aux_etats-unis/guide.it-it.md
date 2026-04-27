@@ -48,6 +48,7 @@ Sono autorizzati soltanto messaggi di alert e di doppia autenticazione. I modell
 
 #### 2.1 Dallo Spazio Cliente OVHcloud
 
+<!-- CP-STEPS-START:add-template-cp -->
 Clicca sulla scheda `Messaggio e campagna`{.action} e poi su `Gestisci gli SMS`{.action}.
 
 Clicca su `Gestisci i modelli`{.action}.
@@ -68,6 +69,8 @@ Visualizzi un pop-up con i campi da compilare.
 | Attività    | Seleziona il tipo di modello:<br>\- Alert<br>\- Autentificazione<br>\- Sistema di gestione transazionale |
 | Descrizione | Descrizione del modello                                                                                            |
 | Modello      | Digita il modello. È possibile includere le variabili delimitate con il carattere #.                                                                  |
+
+<!-- CP-STEPS-END:add-template-cp -->
 
 #### 2.2 Via API
 

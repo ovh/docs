@@ -34,6 +34,7 @@ Tutti gli account SMS OVHcloud possono utilizzare una o più rubriche. Questa gu
 
 ### Passaggio 1: Crea una rubrica di contatti nel tuo Spazio Cliente
 
+<!-- CP-STEPS-START:create-address-book -->
 Clicca sull'account SMS interessato e seleziona `Contatti`{.action} > `Rubrica`{.action}.
 
 ![phonebook](images/smsphonebook01.png){.thumbnail}
@@ -43,6 +44,7 @@ Seleziona la scheda `Rubrica Indirizzi`{.action}.
 Clicca su `Aggiungi Rubrica Indirizzi`{.action} e assegna un nome alla tua nuova lista di contatti.
 
 ![phonebook](images/smsphonebook2.png){.thumbnail}
+<!-- CP-STEPS-END:create-address-book -->
 
 ### Passaggio 2: Aggiungi contatti nella tua rubrica
 
@@ -50,6 +52,7 @@ Una volta creata la rubrica indirizzi, esistono vari metodi per aggiungere i con
 
 ### Aggiungi contatti dallo Spazio Cliente
 
+<!-- CP-STEPS-START:add-contact-individually -->
 Seleziona il pulsante `Azioni`{.action} e clicca su `Aggiungi`{.action}.
 
 ![phonebook](images/smsphonebook3.png){.thumbnail}
@@ -59,6 +62,7 @@ A questo punto, inserisci le informazioni del contatto che vuoi aggiungere.
 ![phonebook](images/smsphonebook4.png){.thumbnail}
 
 Compila i campi richiesti e conferma l’operazione per salvare le modifiche. Il contatto verrà quindi aggiunto alla rubrica. Per aggiungere altri contatti, effettua la stessa operazione.
+<!-- CP-STEPS-END:add-contact-individually -->
 
 ### Aggiungi contatti multipli tramite l’importazione di file di contatti dallo Spazio Cliente
 
@@ -94,6 +98,7 @@ Allo stesso modo, salvalo o esportalo nel formato “.csv” per consentirne l�
 
 #### Importa il file nel tuo Spazio Cliente
 
+<!-- CP-STEPS-START:import-contact-file -->
 Dallo Spazio Cliente OVHcloud, seleziona il pulsante `Azioni`{.action} e clicca su `Importa`{.action}.
 
 ![phonebook](images/smsphonebook5.png){.thumbnail}
@@ -103,9 +108,11 @@ Nel pop-up che appare, clicca su `File di contatto`{.action}, seleziona il file 
 ![phonebook](images/smsphonebook6.png){.thumbnail}
 
 Attendi alcuni secondi durante il caricamento del file nel tuo Spazio Cliente.
+<!-- CP-STEPS-END:import-contact-file -->
 
 ### Passaggio 3: Modifica o elimina una rubrica indirizzi
 
+<!-- CP-STEPS-START:edit-delete-address-book -->
 Per modificare il nome di una rubrica, seleziona la tua lista di contatti nel menu a tendina (1) (se hai creato diverse rubriche) e clicca sulla matita (2) accanto al nome della rubrica. 
 
 Per eliminare una rubrica, selezionala nel menu a tendina (1) e clicca su `Elimina rubrica indirizzi`{.action} (3).
@@ -113,6 +120,7 @@ Per eliminare una rubrica, selezionala nel menu a tendina (1) e clicca su `Elimi
 Per modificare o eliminare un contatto, clicca sui tre puntini `...`{.action} nella colonna “Azioni” (4) accanto al contatto corrispondente. A questo punto, puoi selezionare l’opzione che desideri.
 
 ![phonebook](images/smsphonebook7.png){.thumbnail}
+<!-- CP-STEPS-END:edit-delete-address-book -->
 
 ## Per saperne di più
 

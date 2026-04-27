@@ -68,6 +68,7 @@ I messaggi di errore menzionati [sopra](#objective) non significano necessariame
 
 Per recuperare l'indirizzo IP del tuo [hosting OVHcloud](/links/web/hosting), clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **2** passaggi.
 
+<!-- CP-STEPS-START:check-hosting-ip -->
 > [!tabs]
 > **Passaggio 1**
 >>
@@ -82,6 +83,7 @@ Per recuperare l'indirizzo IP del tuo [hosting OVHcloud](/links/web/hosting), cl
 >> ![Indirizzi IPv4 e IPv6](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-ipv4-and-ipv6.png){.thumbnail}
 >>
 >> Annota l'indirizzo IPv4 e/o IPv6, poi prosegui nella lettura della guida.
+<!-- CP-STEPS-END:check-hosting-ip -->
 
 #### Verifica l'indirizzo IP nella zona DNS
 
@@ -89,6 +91,7 @@ A questo punto è necessario verificare che l'indirizzo IP indicato nella [zona 
 
 Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **2** passaggi.
 
+<!-- CP-STEPS-START:check-dns-zone-ip -->
 > [!tabs]
 > **Passaggio 1**
 >>
@@ -101,6 +104,7 @@ Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **2** pa
 >> Annota la destinazione del record di tipo `A` per il tuo dominio:
 >>
 >> ![Destinazione del record A nella zona DNS](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/dashboard-entry-a.png){.thumbnail}
+<!-- CP-STEPS-END:check-dns-zone-ip -->
 
 #### Effettua le azioni necessarie
 
@@ -166,6 +170,7 @@ Se necessario, contatta il tuo webmaster o i [partner OVHcloud](/links/partner) 
 
 Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **2** passaggi.
 
+<!-- CP-STEPS-START:check-ssl-certificate -->
 > [!tabs]
 > **Passaggio 1**
 >>
@@ -178,6 +183,7 @@ Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **2** pa
 >> Nella scheda `Informazioni generali`{.action}, verifica la sezione `Certificato SSL`:
 >>
 >> ![Certificato SSL nella scheda informazioni generali](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/no-ssl-certificate.png){.thumbnail}
+<!-- CP-STEPS-END:check-ssl-certificate -->
 
 #### Scenario 1: il tuo hosting non contiene un certificato SSL
 

@@ -64,6 +64,7 @@ A fatura do seu serviço OVHcloud é-lhe enviada após o pagamento de uma encome
 
 #### Consultar e gerir faturas
 
+<!-- CP-STEPS-START:view-manage-bills -->
 Abra a página [As minhas faturas](/links/control-panel/billing-invoices).
 
 ![Faturação](/pages/assets/screens/control_panel/product-selection/right-menu/my-bills.png){.thumbnail}
@@ -118,14 +119,17 @@ Se pretender exportar o conjunto das suas faturas, utilize os botões `Exportar 
 Se pretender exportar apenas uma parte, selecione as casas correspondentes na primeira coluna da tabela para selecionar as faturas que lhe interessam. Duas novas ações, `Exportar a seleção em formato CSV`{.action} ou `Exportar a seleção em formato PDF`{.action}, estarão então disponíveis no menu `Ações massivas`{.action}.
 
 ![export_selection](images/export_selection.png){.thumbnail}
+<!-- CP-STEPS-END:view-manage-bills -->
 
 #### Pagar as suas faturas <a name="pay-bills"></a>
 
+<!-- CP-STEPS-START:pay-bills -->
 Para efetuar o pagamento das suas faturas com pagamento pendente, clique no menu `Ações massivas`{.action} e no botão `Pagar a minha dívida imediatamente`{.action}.
 
 ![Pagamento da dívida](images/pay_debt.png){.thumbnail}
 
 Será criada uma [nota de encomenda de regularização](/pages/account_and_service_management/managing_billing_payments_and_services/managing_ovh_orders#a-nota-de-encomenda). Uma vez realizado o pagamento, a situação ficará regularizada.
+<!-- CP-STEPS-END:pay-bills -->
 
 #### Pedir a anulação de uma fatura
 
@@ -134,11 +138,14 @@ Será criada uma [nota de encomenda de regularização](/pages/account_and_servi
 > Para solicitar a rescisão do serviço na data de expiração, siga as instruções deste [guia](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_cancel_services).
 >
 
+<!-- CP-STEPS-START:request-cancellation-ticket -->
 Se recebeu uma fatura que não considera legítima e deseja pedir o seu reembolso, ou fazer valer o seu [direito de retratação](/pages/account_and_service_management/managing_billing_payments_and_services/managing_ovh_orders#direito-de-retratacao), pode efetuar uma reclamação através da sua Área de Cliente OVHcloud, sob reserva da aplicação das nossas [Condições Gerais de Serviço](https://www.ovh.pt/suporte/documentos_legais/OVH_COND_GERAIS.pdf).
 <br>Clique no canto superior direito do seu ecrã no seu nome e depois em `Criar um ticket`{.action}.
+<!-- CP-STEPS-END:request-cancellation-ticket -->
 
 ### Seguir os seus pagamentos
 
+<!-- CP-STEPS-START:track-payments -->
 Encontre o histórico dos pagamentos efetuados nas `As minhas faturas`{.action} e, a seguir, `Pagamentos`{.action}. Assim, poderá fazer a ligação entre cada fatura e o pagamento associado.
 
 ![Pagamentos](images/payment_tracking.png){.thumbnail}
@@ -149,6 +156,7 @@ A partir deste espaço, pode também exportar os seus comprovativos de pagamento
 >
 > Se detetar uma discrepância entre um pagamento e o montante de uma fatura, significa que um crédito foi automaticamente aplicado.
 >
+<!-- CP-STEPS-END:track-payments -->
 
 ## Saiba mais
 

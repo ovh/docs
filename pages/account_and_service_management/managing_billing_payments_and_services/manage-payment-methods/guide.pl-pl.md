@@ -25,6 +25,7 @@ W Panelu klienta OVHcloud możesz dodać różne sposoby płatności i zarządza
 
 ## W praktyce <a name="payment_methods"></a>
 
+<!-- CP-STEPS-START:instructions-overview -->
 Otwórz stronę [Moje sposoby płatności](/links/control-panel/billing-payment-methods).
 
 ![hubpayment](/pages/assets/screens/control_panel/product-selection/right-menu/my-payment-methods.png){.thumbnail}
@@ -35,9 +36,11 @@ Wyświetli się strona z tabelą wyszczególniającą sposoby płatności zapisa
 - Zmienić domyślny sposób płatności
 - Zmień opis Twojego sposobu płatności
 - Usunąć sposób płatności
+<!-- CP-STEPS-END:instructions-overview -->
 
 ### Dodanie sposobu płatności
 
+<!-- CP-STEPS-START:register-payment-method -->
 Podczas pierwszego zamówienia zostaniesz poproszony o zarejestrowanie sposobu płatności, aby zapewnić automatyczne pobranie płatności za odnowienie usługi.
 
 Ten sposób płatności jest używany domyślnie dla wszystkich odnowień i jest proponowany do uregulowania nowych zamówień.
@@ -73,9 +76,11 @@ Kwota nie zostanie pobrana, a Twoja karta bankowa zostanie aktywowana po kilku m
 Wybierz `PayPal`{.action} jako sposób płatności. Kliknij przycisk `PayPal`{.action}. Otworzy się wówczas okno, w którym zaloguj się do Twojego konta PayPal® i zapisz je jako sposób płatności zatwierdzony przez OVHcloud.
 
 Twoje konto PayPal® zostanie włączone za kilka minut.
+<!-- CP-STEPS-END:register-payment-method -->
 
 ### Zmienić domyślny sposób płatności
 
+<!-- CP-STEPS-START:change-default-payment-method -->
 Faktury za odnowienie usług są zawsze opłacane przy użyciu domyślnego sposobu płatności. Jeśli chcesz go zmienić, musisz najpierw dodać nowy sposób płatności w Panelu klienta.
 
 Kliknij przycisk `...`{.action} znajdujący się po prawej stronie nowego sposobu płatności, a następnie wybierz opcję `Ustaw te metode płatności jako domyślna`{.action}.
@@ -88,14 +93,17 @@ Kliknij przycisk `...`{.action} znajdujący się po prawej stronie nowego sposob
 > - Etap 2: definiuj nowy sposób płatności jako domyślny sposób płatności
 > - Etap 3: usuń stary sposób płatności
 >
+<!-- CP-STEPS-END:change-default-payment-method -->
 
 ### Usunąć sposób płatności
 
+<!-- CP-STEPS-START:delete-payment-method -->
 Jeśli nie chcesz już korzystać ze swoich sposobów płatności, możesz je usunąć, klikając przycisk `...`{.action} znajdujący się po prawej stronie. Następnie kliknij polecenie `Usuń te sposób płatności`{.action}.
 
 ![manage-payment-methods](images/managepaymentmethods4.png){.thumbnail}
 
 Jeśli chcesz usunąć wszystkie Twoje sposoby płatności, wszystkie Twoje usługi muszą być [odnawiane ręcznie](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#odnowienie-reczne).
+<!-- CP-STEPS-END:delete-payment-method -->
 
 #### Usuwanie sposobu płatności przez API OVHcloud
 
@@ -126,6 +134,7 @@ Następnie usuń sposób płatności, używając identyfikatora uzyskanego na po
 
 #### Czym jest konto przedpłacone?
 
+<!-- CP-STEPS-START:prepaid-account-overview -->
 *Konto prepaid* jest widoczne na stronie [Moje metody płatności](/links/control-panel/billing-payment-methods) od chwili jego utworzenia. Umożliwia zasilenie konta klienta z wyprzedzeniem i wykorzystanie tych środków do opłacania zamówień oraz faktur za odnowienie.
 
 Tworząc regularnie konto, będziesz mógł sprawdzić, czy [automatyczne odnawianie](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#odnowienie-automatyczne) usług nie zostanie przerwane z powodu braku płatności.
@@ -136,6 +145,7 @@ W tym celu przejdź do sekcji `Sposoby płatności` w Panelu klienta:
 - wybierz kartę `Moje konto prezdplacone`{.action}.
 
 ![prepaid-account](images/prepaid-account.png){.thumbnail}
+<!-- CP-STEPS-END:prepaid-account-overview -->
 
 #### Jak działa?
 
@@ -149,12 +159,15 @@ Natomiast jeśli nie masz ustawionego sposobu płatności, ureguluj saldo w Pane
 
 Jeśli nie masz zarejestrowanego sposobu płatności, zalecamy ustawienie **progu alertu**, aby upewnić się, że dysponujesz funduszami wystarczającymi na kolejne faktury:
 
+<!-- CP-STEPS-START:prepaid-account-alert -->
 ![warning_prepaid_account](images/warning_prepaid_account.png){.thumbnail}
 
 Jeśli zasilenie dostępne na koncie przedpłaconym spada poniżej określonego limitu, otrzymasz e-mail z powiadomieniem.
+<!-- CP-STEPS-END:prepaid-account-alert -->
 
 #### Jak zasilić konto Skarbonka?
 
+<!-- CP-STEPS-START:prepaid-account-credit -->
 W zakładce `Moje konto prezdplacone`{.action} kliknij przycisk `Zasil`{.action}.
 
 ![prepaid-account](images/credit-prepaid-account.png){.thumbnail}
@@ -164,6 +177,7 @@ W oknie, które się wyświetli wskaż kwotę do zasilenia, kliknij `Dalej`{.act
 ![order-prepaid-account](images/order-prepaid-account.png){.thumbnail}
 
 W formularzu zamówienia, który się wyświetla wybierz sposób płatności i ureguluj Twoje zamówienie.
+<!-- CP-STEPS-END:prepaid-account-credit -->
 
 ## Sprawdź również
 

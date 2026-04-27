@@ -99,6 +99,7 @@ Pour vous en assurer, consultez si besoin nos guides ci-dessous :
 
 #### 1.1 - Pour un nom de domaine/sous-domaine et un hébergement web déjà existants chez OVHcloud
 
+<!-- CP-STEPS-START:order-sectigo-ev -->
 Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **5** étapes.
 
 > [!tabs]
@@ -137,6 +138,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **5*
 >> Cliquez sur `Continuer`{.action} une fois **tous les éléments** correctement renseignés.
 >>
 >> Poursuivez la commande jusqu'au paiement afin de valider la demande de création du certificat SSL.
+<!-- CP-STEPS-END:order-sectigo-ev -->
 
 > [!alert]
 >

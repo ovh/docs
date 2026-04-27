@@ -1,12 +1,14 @@
 ---
 title: Die richtige Block Storage-Klasse auswählen
 excerpt: Erfahren Sie, wie Sie die richtige OVHcloud Block Storage-Klasse auswählen. Vergleichen Sie Leistung, Preise und Anwendungsfälle, um Ihre Speicherung sowohl hinsichtlich Kosten als auch Effizienz zu optimieren.
-updated: 2025-12-15
+updated: 2026-04-14
 ---
 
 ## Ziel
 
-Diese Anleitung hilft Ihnen dabei, die verschiedenen OVHcloud Block Storage-Klassen zu verstehen und diejenige auszuwählen, die am besten zu Ihren Bedürfnissen passt. Sie erfahren alles über Leistungsstufen, Preisaspekte und empfohlene Anwendungsfälle, um fundierte Entscheidungen für Ihre Speicherung zu treffen.
+**Diese Anleitung hilft Ihnen dabei, die verschiedenen OVHcloud Block Storage-Klassen zu verstehen und diejenige auszuwählen, die am besten zu Ihren Bedürfnissen passt.**
+
+Sie erfahren alles über Leistungsstufen, Preisaspekte und empfohlene Anwendungsfälle, um fundierte Entscheidungen für Ihre Speicherung zu treffen.
 
 ## Block Storage Übersicht
 
@@ -71,7 +73,7 @@ Jede Block Storage-Volumetyp ist in einer verschlüsselten Version (LUKS) erhäl
 Verschlüsselte Volumes können direkt über das OVHcloud Kundencenter oder über CLI/API-Tools erstellt werden, indem der Volumetyp mit dem Suffix `-luks` angegeben wird (z. B. classic-luks oder highspeed-luks). Dies bietet eine einfache und sichere Möglichkeit, sensible Daten zu schützen, wobei die gleiche Leistung und Funktionalität wie bei Standardvolumes genutzt werden kann.
 
 > [!primary]
-> Verschlüsselte Volumes beeinflussen die Leistung nicht.
+> Für große verschlüsselte Volumes (über 800 GiB) kann die Leistung unter der erwarteten Volume-QoS liegen, mit einer Durchsatzreduzierung von bis zu 20 % für High Speed Gen2. Die Auswirkung hängt von der Implementierung des Kunden ab.
 
 ## Anwendungsfälle
 
@@ -99,6 +101,6 @@ Block Storage-Volumes können mit unterschiedlichen Verfügbarkeitsoptionen bere
 
 [Block Storage Volume bearbeiten](/pages/public_cloud/compute/switch_volume_type)
 
-Wenn Sie Schulungen oder technische Unterstützung bei der Implementierung unserer Lösungen benötigen, wenden Sie sich an Ihren Vertriebsmitarbeiter oder klicken Sie auf [diesen Link](/links/professional-services), um einen Kostenvoranschlag zu erhalten und eine persönliche Analyse Ihres Projekts durch unsere Experten des Professional Services Teams anzufordern.
+Wenn Sie Schulungen oder technische Unterstützung bei der Implementierung unserer Lösungen benötigen, wenden Sie sich an Ihren Vertriebsmitarbeiter oder an unser [Professional Services Team](/links/professional-services), um einen Kostenvoranschlag zu erhalten und eine persönliche Analyse Ihres Projekts anzufordern.
 
 Treten Sie unserer [User Community](/links/community) bei.

@@ -65,6 +65,7 @@ En primer lugar, es necesario identificar las tablas de gran tamaño de la base 
 
 Recupere la información de acceso a su base de datos directamente en el archivo de configuración de su sitio web. Realice esta acción utilizando el **apartado 1** de nuestra guía sobre [el cambio de la contraseña de una base de datos](/pages/web_cloud/web_hosting/sql_change_password).
 
+<!-- CP-STEPS-START:connect-phpmyadmin -->
 Haga clic en las fichas siguientes para ver cada una de las **4** etapas.
 
 > [!tabs]
@@ -95,6 +96,7 @@ Haga clic en las fichas siguientes para ver cada una de las **4** etapas.
 >> ![phpMyAdmin Login interface](/pages/assets/screens/other/web-tools/phpmyadmin/pma-interface-login.png){.thumbnail}
 >>
 >> Introduzca los datos de acceso a la base de datos y haga clic en `Conexión`{.action}.
+<!-- CP-STEPS-END:connect-phpmyadmin -->
 
 #### 1.2 - Buscar las tablas más voluminosas <a name="step1.2"></a>
 
@@ -234,6 +236,7 @@ Sin embargo, puede forzar su migración a sus servicios para acelerar el proceso
 
 #### Recalcular el límite para una base de datos incluida con su plan de hosting
 
+<!-- CP-STEPS-START:recalculate-quota-web-hosting -->
 Haga clic en las fichas siguientes para ver cada una de las **4** etapas.
 
 > [!tabs]
@@ -264,9 +267,11 @@ Haga clic en las fichas siguientes para ver cada una de las **4** etapas.
 >> Una vez iniciada, la operación puede tardar varios minutos. Al finalizar, el estado "READ ONLY" de la base de datos desaparece.
 >> La base de datos vuelve a estar totalmente operativa.
 >>
+<!-- CP-STEPS-END:recalculate-quota-web-hosting -->
 
 #### Recalcular el límite de una base de datos alojada en una solución Web Cloud Databases
 
+<!-- CP-STEPS-START:recalculate-quota-web-cloud-databases -->
 Haga clic en las fichas siguientes para ver cada una de las **2** etapas.
 
 > [!tabs]
@@ -285,6 +290,7 @@ Haga clic en las fichas siguientes para ver cada una de las **2** etapas.
 >> Una vez iniciada, la operación puede tardar varios minutos. Al finalizar, el estado "READ ONLY" de la base de datos desaparece.
 >> La base de datos vuelve a estar totalmente operativa.
 >>
+<!-- CP-STEPS-END:recalculate-quota-web-cloud-databases -->
 
 ## Más información <a name="go-further"></a>
 

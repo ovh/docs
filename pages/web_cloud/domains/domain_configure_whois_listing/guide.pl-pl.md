@@ -45,6 +45,7 @@ Podczas używania nazwy domeny może być konieczne wyświetlenie lub ukrycie ni
 
 ## W praktyce
 
+<!-- CP-STEPS-START:configure-whois -->
 Kliknij poniższe zakładki, aby wyświetlić kolejne **3** kroki.
 
 > [!tabs]
@@ -69,6 +70,7 @@ Kliknij poniższe zakładki, aby wyświetlić kolejne **3** kroki.
 >> Po dokonaniu wyboru, kliknij przycisk `Zatwierdź`{.action}.
 >>
 >> Wprowadzenie zmian może potrwać do **48** godz. Zmiany te zostaną zastosowane **tylko wtedy, gdy zezwoli na nie operator zarządzający rozszerzeniem Twojej nazwy domeny**.
+<!-- CP-STEPS-END:configure-whois -->
 
 ## Sprawdź również
  

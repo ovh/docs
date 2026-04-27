@@ -28,6 +28,7 @@ Charger les variables d'environnement OpenStack sur votre poste vous permettra d
 
 ### Étape 1 : récupérer les variables
 
+<!-- CP-STEPS-START:retrieve-openrc-file -->
 Afin de récupérer vos variables d'environnement, vous pouvez télécharger le fichier OpenRC de votre utilisateur OpenStack créé au préalable.
 
 Dans le menu de gauche, sous la rubrique **Paramètres**, cliquez sur `Utilisateurs & Rôles`{.action}. Ensuite, cliquez sur les `...`{.action} à droite de votre utilisateur et sélectionnez `Télécharger le fichier RC d'OpenStack`{.action}.
@@ -35,6 +36,7 @@ Dans le menu de gauche, sous la rubrique **Paramètres**, cliquez sur `Utilisate
 ![openstack-variables](images/download_rc_file.png){.thumbnail}
 
 Un fichier OpenRC correspond à un utilisateur et aussi à une zone. Vous ne pouvez pas gérer plusieurs zones dans un même fichier.
+<!-- CP-STEPS-END:retrieve-openrc-file -->
 
 ### Étape 2 : charger les variables
 

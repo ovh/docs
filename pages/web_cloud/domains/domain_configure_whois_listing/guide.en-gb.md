@@ -45,6 +45,7 @@ When using your domain name, you may find that you need to show or hide certain 
 
 ## Instructions
 
+<!-- CP-STEPS-START:configure-whois -->
 Click on the tabs below to view each of the **3** steps.
 
 > [!tabs]
@@ -69,6 +70,7 @@ Click on the tabs below to view each of the **3** steps.
 >> Once you have made your choices, click the `Confirm`{.action} button.
 >>
 >> Changes may take up to **48** hours to take effect. These changes will only be applied **if authorized by the registry managing your domain name extension**.
+<!-- CP-STEPS-END:configure-whois -->
 
 ## Go further
  

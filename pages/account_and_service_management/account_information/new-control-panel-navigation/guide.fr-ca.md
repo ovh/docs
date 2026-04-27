@@ -43,17 +43,21 @@ Depuis avril 2025, les équipes OVHcloud ont introduit une nouvelle navigation d
 
 ### Comment accéder à mon compte ?
 
+<!-- CP-STEPS-START:access-account -->
 Accédez à la gestion de votre compte à tout moment en cliquant sur votre nom en haut à droite de l'espace client.
 
 ![espace client - mon compte](images/01-account-access.png){.thumbnail width="1000"}
+<!-- CP-STEPS-END:access-account -->
 
 ### Comment gérer mon compte et mes informations ?
 
+<!-- CP-STEPS-START:manage-account -->
 Cliquez sur votre nom pour mettre à jour votre profil, vos moyens de paiement et votre niveau de support.<br>
 Le même menu vous permet d'accéder rapidement à vos factures, vos commandes ainsi qu'à la gestion de vos services.<br>
 Vous y trouvez également des liens vers les e-mails de service envoyés par OVHcloud (`Mes communications`{.action}) et les différents contacts liés à vos services.
 
 ![espace client - gérer mon compte](images/02-account-menu.png){.thumbnail width="1000"}
+<!-- CP-STEPS-END:manage-account -->
 
 /// details | Liens utiles
 
@@ -69,19 +73,23 @@ Vous y trouvez également des liens vers les e-mails de service envoyés par OVH
 
 ### Comment accéder à mes services ?
 
+<!-- CP-STEPS-START:access-services -->
 Le menu d'accès aux services OVHcloud est désormais disposé à gauche de l'espace client. L'ensemble des services OVHcloud y est accessible, ce qui vous permet de compléter facilement votre offre avec des services supplémentaires et adaptés.
 
 Les services que vous possédez sont signalés par une pastille bleue<sup>1</sup>.
 
 ![espace client - mes services](images/03-services.png){.thumbnail width="1000"}
+<!-- CP-STEPS-END:access-services -->
 
 ### Raccourcis supplémentaires
 
+<!-- CP-STEPS-START:additional-shortcuts -->
 En bas à gauche de l'espace client, des raccourcis vous permettent de découvrir nos vendeurs partenaires sur notre Marketplace, de rester informé de l'état de vos services en temps réel et d'estimer votre empreinte carbone.
 
 **Besoin d'aide ?** Accédez au centre d'aide, à vos demandes d'assistance ainsi qu'au Live Chat pour obtenir des réponses à vos questions.
 
 ![espace client - raccourcis supplémentaires](images/04-shortcuts.png){.thumbnail width="1000"}
+<!-- CP-STEPS-END:additional-shortcuts -->
 
 /// details | Liens utiles
 

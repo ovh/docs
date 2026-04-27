@@ -1,7 +1,7 @@
 ---
 title: "Configurare IPv6 su un server dedicato"
 excerpt: "Configura indirizzi IPv6 sul tuo server dedicato OVHcloud con esempi per le principali distribuzioni Linux e Windows"
-updated: 2025-12-09
+updated: 2026-04-13
 ---
 
 <style>
@@ -541,6 +541,22 @@ IPv6_GATEWAY: `2607:5300:60:62FF:00FF:00FF:00FF:00FF` può anche essere scritto 
 >> Inserisci la configurazione IPv6 (`IPv6 address` e `Default gateway`), spunta la casella `Conferma le impostazioni all’uscita` e clicca sul pulsante `OK`{.action} per confermare le modifiche.
 >>
 >> ![Proprietà](images/ipv6_configuration.png){.thumbnail}
+>>
+>> **Passaggio 4: Disabilitare gli identificatori di interfaccia IPv6 casuali**
+>>
+>> Aprire il menu Start, cercare `Windows PowerShell`{.action}, fare clic con il tasto destro e selezionare `Esegui come amministratore`{.action}.
+>>
+>> ![Eseguire PowerShell come amministratore](images/ipv6_powershell_admin.png){.thumbnail}
+>>
+>> Nella finestra di PowerShell, eseguire il comando seguente:
+>>
+>> ```powershell
+>> Set-NetIPv6Protocol -RandomizeIdentifiers Disabled
+>> ```
+>>
+>> ![Disabilitare gli identificatori casuali](images/ipv6_powershell_randomize_identifiers.png){.thumbnail}
+>>
+>> Questo passaggio è necessario per la connettività IPv6 sull'infrastruttura OVHcloud. Consente a Windows di costruire i propri indirizzi IPv6 link-local dall'indirizzo MAC dell'adattatore (EUI-64) invece di utilizzare valori casuali. La modifica ha effetto immediato e persiste dopo il riavvio.
 >>
 
 ### Verifica la configurazione e prova la connessione

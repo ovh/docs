@@ -100,6 +100,7 @@ Więcej informacji na ten temat zawiera poniższy krok 5.
 
 Aby znaleźć źródło opóźnień, przejrzyj wykresy wykorzystania zasobów hostingu (więcej informacji poniżej). Następnie sprawdź w logach wpisy z okresów, w których wystąpiło szczytowe wykorzystanie.
 
+<!-- CP-STEPS-START:access-stats-and-logs -->
 Aby uzyskać dostęp do statystyk i logów, kliknij poniższe zakładki, aby wyświetlić kolejne **3** kroki.
 
 > [!tabs]
@@ -120,7 +121,9 @@ Aby uzyskać dostęp do statystyk i logów, kliknij poniższe zakładki, aby wy�
 >> Kliknij przycisk `Wyświetl statystyki`{.action} wyświetlone, aby uzyskać dostęp do statystyk odwiedzin strony www lub `Sprawdź logi`{.action}, aby sprawdzić logi dostępne dla Twojego hostingu www.
 >>
 >> ![logi](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/statistics-and-logs/tab.png){.thumbnail}
+<!-- CP-STEPS-END:access-stats-and-logs -->
 
+<!-- CP-STEPS-START:access-resource-charts -->
 Aby uzyskać dostęp do wykresów, kliknij poniższe zakładki, aby wyświetlić kolejne **3** kroki.
 
 > [!tabs]
@@ -150,6 +153,7 @@ Aby uzyskać dostęp do wykresów, kliknij poniższe zakładki, aby wyświetlić
 >> - **Polecenia FTP**: pokazuje różne polecenia FTP używane w hostingu. Na przykład udane i nieudane próby zalogowania, pobranie, przesłanie lub usunięcie plików.
 >> - **Czas odpowiedzi SQL**: wyświetla czas odpowiedzi na zapytania (widoczne tylko, jeśli korzystasz z bazy danych).
 >> - **Żądania SQL**: wyświetla liczbę żądań (widoczne tylko, jeśli korzystasz z bazy danych).
+<!-- CP-STEPS-END:access-resource-charts -->
 
 ### 5 - Sprawdzenie żądań sieciowych
 

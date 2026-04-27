@@ -52,6 +52,7 @@ Deseja que o seu website esteja acessível através do seu nome de domínio? Par
 
 ### Adicionar um registo DNS do tipo A para um domínio
 
+<!-- CP-STEPS-START:add-a-record-domain -->
 Clique nos separadores abaixo para ver cada um dos **5** passos.
 
 > [!tabs]
@@ -88,9 +89,11 @@ Consulte os nossos guias detalhados:
 - [Alojamento web - Alterar um nome de domínio já associado a um alojamento](/pages/web_cloud/web_hosting/multisites_modify_domain).
 
 ///
+<!-- CP-STEPS-END:add-a-record-domain -->
 
 ### Adicionar um registo DNS do tipo A para o subdomínio de um domínio
 
+<!-- CP-STEPS-START:add-a-record-subdomain -->
 Clique nos separadores abaixo para ver cada um dos **5** passos.
 
 > [!tabs]
@@ -128,6 +131,7 @@ Consulte os nossos guias detalhados:
 - [Alojamento web - Alterar um nome de domínio já associado a um alojamento](/pages/web_cloud/web_hosting/multisites_modify_domain).
 
 ///
+<!-- CP-STEPS-END:add-a-record-subdomain -->
 
 ## Quer saber mais?
 

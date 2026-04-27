@@ -30,6 +30,7 @@ A **shared account** is a mailbox shared between several Exchange accounts and c
 
 ### Adding a shared account
 
+<!-- CP-STEPS-START:add-shared-account -->
 Select the `Shared accounts`{.action} tab in the horizontal menu and click on `Add a shared account`{.action}.
 
 ![emails](images/exchange-shared_accounts01.png){.thumbnail}
@@ -56,9 +57,11 @@ Fill in the requested fields:
 Click `Next`{.action} to proceed to the summary. Complete the operation by clicking on `Confirm`{.action}.
 
 ![emails](images/exchange-shared_accounts02.png){.thumbnail}
+<!-- CP-STEPS-END:add-shared-account -->
 
 ### Managing the delegation of a shared account
 
+<!-- CP-STEPS-START:manage-delegation -->
 Once you have created your shared account, you will need to grant access permissions to one or more accounts of the Exchange service.
 
 A shared account cannot be accessed directly because it does not have a password. It cannot be configured directly in an Outlook client, or accessed via webmail.
@@ -80,6 +83,7 @@ Choose the permissions for the selected account:
 Then click `Next`{.action} and `Confirm`{.action} to save the changes.
 
 ![emails](images/exchange-shared_accounts04.png){.thumbnail}
+<!-- CP-STEPS-END:manage-delegation -->
 
 In our example, we allow the accounts **guide-exchange@** and **test@** to access **shared_test@**.
 <br>The account **guide-exchange@** will also have the right to send mails "as" **shared_test@**.

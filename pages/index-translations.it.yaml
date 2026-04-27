@@ -94,6 +94,7 @@ hosted-private-cloud-managed-vmware-troubleshooting-compliance: Monitoraggio del
 hosted-private-cloud-managed-vmware-additional-resources: Risorse aggiuntive
 hosted-private-cloud-hosted-private-cloud-opcp: On-Prem Cloud Platform
 hosted-private-cloud-hosted-private-cloud-opcp-getting-started: Per iniziare
+hosted-private-cloud-hosted-private-cloud-opcp-cloudstore: CloudStore
 hosted-private-cloud-hosted-private-cloud-opcp-additional-resources: Risorse aggiuntive
 hosted-private-cloud-snc-cloud-platform: SNC Cloud Platform
 hosted-private-cloud-snc-cloud-platform-getting-started: Per iniziare
@@ -336,8 +337,6 @@ public-cloud-storage-block-storage-additional-resources: Risorse aggiuntive
 public-cloud-storage-file-storage: File Storage
 public-cloud-storage-file-storage-key-concepts: Concetti chiave
 public-cloud-storage-file-storage-getting-started: Per iniziare
-public-cloud-integrations: Integrations
-public-cloud-integrations-prefect: Prefect
 public-cloud-network: Public Cloud Network Services
 public-cloud-network-key-concepts: Concetti chiave
 public-cloud-network-getting-started: Per iniziare

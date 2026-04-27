@@ -29,11 +29,13 @@ Si vous souhaitez en créer davantage, une augmentation de quota est alors néce
 ---
 <!-- CP-NAV-END:publiccloud-projects -->
 
+<!-- CP-STEPS-START:navigate-quota-regions -->
 Dans le menu de gauche, cliquez sur `Quota & Régions`{.action} sous **Paramètres**.
 
 ![Page Quota & Régions affichant les quotas actuels du projet par région](images/raisepciquota1.png){.thumbnail}
 
 Cette page présente un récapitulatif des quotas actuels de votre projet par région. Un avertissement apparaît dès qu'une ressource atteint 80 % de son quota.
+<!-- CP-STEPS-END:navigate-quota-regions -->
 
 ### Augmenter votre quota de ressources
 
@@ -43,6 +45,7 @@ Vous pouvez augmenter votre quota de ressources manuellement ou automatiquement.
 
 #### Augmenter automatiquement votre quota de ressources avec la fonctionnalité « Quota autoscaling »
 
+<!-- CP-STEPS-START:increase-quota-auto-scaling -->
 Cette option vous permet de demander une augmentation automatique et progressive de votre quota de ressources. Le quota sera ajusté en fonction de votre utilisation réelle **si vous dépassez 60 % de votre quota actuel pendant 30 jours consécutifs**, ainsi que selon un ensemble de critères internes et financiers.
 
 > [!primary]
@@ -50,7 +53,7 @@ Cette option vous permet de demander une augmentation automatique et progressive
 > Ce processus n’est pas adapté pour des augmentations rapides de quota.
 >
 
-En haut à droite de la page, l'option **Quota autoscaling** est disponible :
+En haut à droite de la page, l’option **Quota autoscaling** est disponible :
 
 - Pour en savoir plus sur cette fonctionnalité, cliquez sur le `?`{.action} à côté de cette option.
 - Activez l’option en cliquant sur le bouton situé à droite de cette dernière. Son état passera de *Désactivé* à *Activé*.
@@ -58,9 +61,11 @@ En haut à droite de la page, l'option **Quota autoscaling** est disponible :
 ![Bouton de bascule Auto-scaling quota réglé sur Activé](images/autoscaling.png){.thumbnail}
 
 Une fois activé, l’auto-scaling augmente progressivement le quota de votre projet en fonction de vos besoins réels.
+<!-- CP-STEPS-END:increase-quota-auto-scaling -->
 
 #### Augmenter manuellement votre quota de ressources
 
+<!-- CP-STEPS-START:increase-quota-manually -->
 > [!primary]
 >
 > Si vous avez besoin d'augmenter votre quota et que le bouton `Augmenter mes quotas`{.action} n'est pas disponible dans votre espace client, cliquez sur le bouton `Contacter le support`{.action}.
@@ -97,6 +102,7 @@ Une fois votre volume sélectionné, cliquez sur `Confirmer`{.action}. Votre pai
 >
 > Après avoir cliqué sur le bouton `Confirmer`{.action}, la commande est automatiquement créée et le montant est prélevé sur votre moyen de paiement par défaut.
 >
+<!-- CP-STEPS-END:increase-quota-manually -->
 
 Pour une vue plus détaillée de vos ressources, accédez à l'[interface Horizon](https://horizon.cloud.ovh.net/auth/login/). Une fois connecté, cliquez sur `Projet`{.action}, puis sur `Présentation`{.action}.
 

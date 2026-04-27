@@ -100,6 +100,7 @@ Puede encontrar más información sobre este tema más adelante, en el paso 5.
 
 Correlacione los gráficos de recursos utilizados de su hospedaje (más información a continuación) para descubrir el origen de los retrasos y consulte los registros de las fechas de dichos picos.
 
+<!-- CP-STEPS-START:access-stats-and-logs -->
 Para acceder a las estadísticas y logs, haga clic en las fichas siguientes para ver cada una de las **3** etapas.
 
 > [!tabs]
@@ -120,7 +121,9 @@ Para acceder a las estadísticas y logs, haga clic en las fichas siguientes para
 >> Haga clic en el botón `Ver las estadísticas`{.action} mostradas para acceder a las estadísticas de visita del sitio web o en `Ver los logs`{.action} para consultar los logs disponibles para su alojamiento web.
 >>
 >> ![logs](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/statistics-and-logs/tab.png){.thumbnail}
+<!-- CP-STEPS-END:access-stats-and-logs -->
 
+<!-- CP-STEPS-START:access-resource-charts -->
 Para acceder a los gráficos, haga clic en las fichas siguientes para ver cada una de las **3** etapas.
 
 > [!tabs]
@@ -150,6 +153,7 @@ Para acceder a los gráficos, haga clic en las fichas siguientes para ver cada u
 >> - **Comandos FTP**: Muestra los diferentes comandos FTP que se han utilizado en el hospedaje. Por ejemplo, intentos de conexión satisfactorios y no satisfactorios; descargas; cargas y eliminación de archivos.
 >> - **Tiempo de respuesta del SQL**: Muestra el tiempo de respuesta de las consultas (visible solo si utiliza una base de datos).
 >> - **Peticiones SQL**: Muestra el número de peticiones (visible solo si utiliza una base de datos).
+<!-- CP-STEPS-END:access-resource-charts -->
 
 ### 5 - Comprobar las peticiones de la red
 

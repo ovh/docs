@@ -18,8 +18,19 @@ Lorsqu'une maintenance est programmée sur votre Hosted Private Cloud, un e-mail
 ## Prérequis
 
 - Avoir reçu un e-mail de notification de maintenance indiquant spécifiquement que vous pouvez « **modifier la date d'exécution de la maintenance** ». Dans le cas contraire, la date de la maintenance ne peut pas être modifiée.
-- Être contact administrateur ou technique de l'infrastructure [VMware on OVHcloud](https://www.ovhcloud.com/fr-ca/enterprise/products/hosted-private-cloud/).
-- Être connecté à l'[espace client OVHcloud](/links/manager) ou à l'[interface d'administration de vos services par API](/links/api).
+- Être contact administrateur ou technique de l'infrastructure [VMware on OVHcloud](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/).
+- Être connecté à l'[espace client OVHcloud](/links/control-panel/privatecloud-vmware-vsphere) ou à l'[interface d'administration de vos services par API](/links/api).
+
+<!-- CP-NAV-START:privatecloud-vmware-vsphere -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [VMware vSphere](/links/control-panel/privatecloud-vmware-vsphere)
+- **Pour accéder à vos services :** `Hosted Private Cloud`{.action} > `Managed VMware vSphere`{.action} > Sélectionnez votre service vSphere
+
+---
+<!-- CP-NAV-END:privatecloud-vmware-vsphere -->
 
 ## En pratique
 
@@ -29,9 +40,7 @@ Lorsqu'une maintenance est programmée sur votre Hosted Private Cloud, un e-mail
 
 ### Depuis l'espace client OVHcloud
 
-Connectez-vous à votre [espace client OVHcloud](/links/manager) avec un compte administrateur.
-
-Dans le menu `Hosted Private Cloud`{.action}, cliquez sur l'onglet `Operations`{.action}. Sélectionnez `À faire`{.action} dans le menu déroulant permettant de filtrer les opérations.
+Cliquez sur [ce lien](/links/control-panel/privatecloud-vmware-vsphere) pour accéder à la section `VMware vSphere`{.action}, puis cliquez sur l'onglet `Operations`{.action}. Sélectionnez `À faire`{.action} dans le menu déroulant permettant de filtrer les opérations.
 
 Cliquez ensuite sur le bouton `...`{.action} puis sur `Modifier la date de traitement`{.action}.
 

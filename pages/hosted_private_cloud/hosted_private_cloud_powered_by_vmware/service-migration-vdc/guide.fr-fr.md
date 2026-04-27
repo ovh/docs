@@ -33,7 +33,6 @@ Ce processus comporte deux aspects :
 ## Prérequis
 
 - Une infrastructure PCC (SDDC ou PREMIER)
-- Être connecté à votre [espace client OVHcloud](/links/manager) dans la partie `Hosted Private Cloud`{.action}.
 - Être connecté à votre interface d'administration vSphere
 
 ## En pratique

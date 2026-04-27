@@ -26,7 +26,7 @@ details[open]>summary::before {
 
 ## Objective
 
-This guide aims at providing a clear and detailed method for creating and updating Savings Plans for your resources. You will discover how to manage your Savings Plans using the OVHcloud Control Panel, the OVHcloud API and Terraform. By following this guide, you will be able to:
+This guide aims to provide a clear and detailed method for creating and updating Savings Plans for your resources. You will discover how to manage your Savings Plans using the OVHcloud Control Panel, the OVHcloud API and Terraform. By following this guide, you will be able to:
 
 - Create a Savings Plan for your resources.
 - Modify a Savings Plan.
@@ -38,7 +38,7 @@ This guide aims at providing a clear and detailed method for creating and updati
 
 - A [Public Cloud project](/links/public-cloud/public-cloud) in your OVHcloud account.
 - Access to the [OVHcloud API](/links/api) (create your credentials using [this guide](/pages/manage_and_operate/api/first-steps))
-- Being familiar with [Terraform](/pages/public_cloud/public_cloud_cross_functional/how_to_use_terraform) if you intend using it.
+- Being familiar with [Terraform](/pages/public_cloud/public_cloud_cross_functional/how_to_use_terraform) if you intend to use it.
 - Being familiar with the principles of [Savings Plans](/links/public-cloud/savings-plan)
 
 ## Instructions
@@ -54,10 +54,13 @@ This guide aims at providing a clear and detailed method for creating and updati
 ---
 <!-- CP-NAV-END:publiccloud-projects -->
 
+<!-- CP-STEPS-START:savings-plans-navigation -->
 Click on `Savings Plans`{.action} in the left-hand navigation bar under **Settings**.
+<!-- CP-STEPS-END:savings-plans-navigation -->
 
 ### Create a Savings Plan
 
+<!-- CP-STEPS-START:create-savings-plan -->
 You can create your Savings Plan for the type of resource you want by following these steps:
 
 > [!tabs]
@@ -106,9 +109,11 @@ You can create your Savings Plan for the type of resource you want by following 
 >> ```console
 >> terraform apply
 >> ```
+<!-- CP-STEPS-END:create-savings-plan -->
 
 ### Modifying a Savings plan
 
+<!-- CP-STEPS-START:modify-savings-plan -->
 > [!tabs]
 > Via the OVHcloud Control Panel
 >> > [!primary]
@@ -158,7 +163,7 @@ You can create your Savings Plan for the type of resource you want by following 
 >> >
 >> The **serviceId** corresponds to the previously retrieved id.
 >>
->> You get a list of Savings Plan as follows:
+>> You get a list of Savings Plans as follows:
 >>
 >> ![Savings Plan list](images/savings_plan_list_svp.png){.thumbnail .h-600}
 >>
@@ -190,7 +195,7 @@ You can create your Savings Plan for the type of resource you want by following 
 >>
 >> /// details | Increase the number of Savings Plan resources
 >>
->> To increase the number of resources subscribed by your Savings Plan, use this route:
+>> To increase the number of resources subscribed to your Savings Plan, use this route:
 >>
 >> > [!primary]
 >> >
@@ -210,6 +215,7 @@ You can create your Savings Plan for the type of resource you want by following 
 >> > [!primary]
 >> >
 >> > Note that only the **service_name**, **size** and **auto_renewal** fields can be modified. The **size** can only be increased.
+<!-- CP-STEPS-END:modify-savings-plan -->
 
 ## Go further
 

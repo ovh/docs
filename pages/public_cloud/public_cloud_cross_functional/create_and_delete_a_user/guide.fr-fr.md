@@ -33,6 +33,7 @@ Depuis l'interface Horizon, vous pouvez définir un mot de passe pour chaque uti
 
 ### Création d'un utilisateur OpenStack
 
+<!-- CP-STEPS-START:create-openstack-user -->
 Cliquez sur `Utilisateurs & Rôles`{.action} dans le menu de gauche sous **Paramètres**.
 
 Cliquez sur le bouton `Créer un utilisateur`{.action}.
@@ -56,6 +57,7 @@ Veillez à enregistrer le mot de passe, uniquement affiché à ce moment précis
 ![Generate](images/generatepw.png){.thumbnail}
 
 Une fois l'utilisateur OpenStack créé, vous pourrez utiliser ses identifiants pour vous connecter à [l'interface Horizon](/pages/public_cloud/public_cloud_cross_functional/introducing_horizon) en cliquant sur le lien `Horizon`{.action} dans le menu de gauche.
+<!-- CP-STEPS-END:create-openstack-user -->
 
 ### Changer le mot de passe d'un utilisateur OpenStack
 
@@ -90,6 +92,7 @@ Veuillez noter que le changement de mot de passe du compte d’utilisateur entra
 
 ### Suppression de l'utilisateur OpenStack
 
+<!-- CP-STEPS-START:delete-openstack-user -->
 Cliquez sur `Utilisateurs & Rôles`{.action} dans le menu de gauche sous **Paramètres**.
 
 ![public-cloud](images/delete.png){.thumbnail}
@@ -100,6 +103,7 @@ Cliquez sur `...`{.action} et sélectionnez `Supprimer`{.action}.
 >
 > La suppression d'un utilisateur est définitive et invalidera tous les tokens associés, y compris ceux dont la date d'expiration n'est pas encore dépassée.
 > 
+<!-- CP-STEPS-END:delete-openstack-user -->
 
 ## Aller plus loin
 

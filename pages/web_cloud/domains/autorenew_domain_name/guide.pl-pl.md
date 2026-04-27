@@ -93,6 +93,7 @@ Jeśli opcja automatycznego odnowienia jest włączona, Twój sposób płatnośc
 
 ### Zmiana sposobu odnawiania domen
 
+<!-- CP-STEPS-START:zmiana-sposobu-odnawiania-domen -->
 Kliknij zakładki poniżej, aby wyświetlić każdy z **2** kroków.
 
 > [!tabs]
@@ -117,9 +118,11 @@ Kliknij zakładki poniżej, aby wyświetlić każdy z **2** kroków.
 >> - Wybierz odpowiednie wiersze w tabeli, zaznaczając pola wyboru na początku wiersza.
 >> - Kliknij przycisk `Actions`{.action} w lewym górnym rogu tabeli.
 >> - Wybierz `Włącz płatność automatyczną`{.action} lub `Wyłącz płatność automatyczną`{.action}.
+<!-- CP-STEPS-END:zmiana-sposobu-odnawiania-domen -->
 
 ### Odnów domenę przed datą wygaśnięcia
 
+<!-- CP-STEPS-START:odnow-domene-przed-data-wygasniecia -->
 Kliknij zakładki poniżej, aby wyświetlić każdy z **3** kroków.
 
 > [!tabs]
@@ -141,6 +144,7 @@ Kliknij zakładki poniżej, aby wyświetlić każdy z **3** kroków.
 >>
 >> Możesz odnowić usługę w dowolnym momencie przed jej wygaśnięciem, a także wybrać czas odnowienia.
 >> W tym przypadku zamówiony czas ważności zostanie dodany do bieżącego czasu ważności. Nie tracisz pozostałego czasu ważności usługi.
+<!-- CP-STEPS-END:odnow-domene-przed-data-wygasniecia -->
 
 ### Monitoruj odnowienie domeny
 
@@ -148,6 +152,7 @@ Po opłaceniu odnowienia domena zostanie odnowiona na dzień przed jej wygaśni�
 
 Dane wyświetlane w bazie WHOIS są aktualizowane w celu potwierdzenia poprawnego odnowienia domeny.
 
+<!-- CP-STEPS-START:monitoruj-odnowienie-domeny -->
 Aby sprawdzić status odnowienia domeny, kliknij zakładki poniżej, aby wyświetlić każdy z **2** kroków.
 
 > [!tabs]
@@ -162,9 +167,11 @@ Aby sprawdzić status odnowienia domeny, kliknij zakładki poniżej, aby wyświe
 >> W sekcji **Informacje ogólne** sprawdź status odnowienia pod pozycją **Status domeny**.
 >>
 >> Informacja `Odnowienie w trakcie` będzie pojawiać się po dokonaniu płatności, do momentu odnowienia domeny przez registry.
+<!-- CP-STEPS-END:monitoruj-odnowienie-domeny -->
 
 ### Rezygnacja z domeny
 
+<!-- CP-STEPS-START:rezygnacja-z-domeny -->
 Kliknij zakładki poniżej, aby wyświetlić każdy z **2** kroków.
 
 > [!tabs]
@@ -179,6 +186,7 @@ Kliknij zakładki poniżej, aby wyświetlić każdy z **2** kroków.
 >> Kliknij przycisk `...`{.action} po prawej stronie linii, a następnie kliknij `Rezygnuję z usługi`{.action}.
 >>
 >> To działanie jest dostępne w przypadku usług z opcją **automatycznego odnowienia**. Jeśli wybierzesz to działanie, dla wybranych usług zostanie wyłączone automatyczne odnawianie i pobieranie środków.
+<!-- CP-STEPS-END:rezygnacja-z-domeny -->
 
 > [!primary]
 >
@@ -188,6 +196,7 @@ Więcej informacji znajdziesz w przewodniku "**[Jak zrezygnować z usług OVHclo
 
 ### Opłacenie faktury za odnowienie domeny
 
+<!-- CP-STEPS-START:oplacenie-faktury-za-odnowienie-domeny -->
 Kliknij zakładki poniżej, aby wyświetlić każdy z **2** kroków.
 
 > [!tabs]
@@ -207,6 +216,7 @@ Kliknij zakładki poniżej, aby wyświetlić każdy z **2** kroków.
 >> >
 >> > - Posiadasz usługi z opcją automatycznego odnawiania.
 >> > - Nie masz ustawionego sposobu płatności umożliwiającego pobranie środków w celu uregulowania faktur.
+<!-- CP-STEPS-END:oplacenie-faktury-za-odnowienie-domeny -->
 
 ## FAQ
 
@@ -244,6 +254,7 @@ Po odnowieniu domeny przez registry (około miesiąc po uregulowaniu opłat za o
 
 Dane WHOIS są aktualizowane.
 
+<!-- CP-STEPS-START:faq-sprawdz-status-odnowienia -->
 Aby sprawdzić status odnowienia domeny, kliknij zakładki poniżej, aby wyświetlić każdy z **2** kroków.
 
 > [!tabs]
@@ -256,6 +267,7 @@ Aby sprawdzić status odnowienia domeny, kliknij zakładki poniżej, aby wyświe
 > **Krok 2**
 >>
 >> W sekcji **Informacje ogólne** sprawdź status odnowienia pod pozycją **Status domeny**.
+<!-- CP-STEPS-END:faq-sprawdz-status-odnowienia -->
 
 ///
 

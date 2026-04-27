@@ -37,6 +37,7 @@ La barra de herramientas y los accesos rápidos le permitirán acceder a las pri
 
 ### 1. Añadir contactos
 
+<!-- CP-STEPS-START:add-contacts -->
 #### Añadir una lista de contactos
 
 Puede importar una lista de contactos a través de un archivo .csv o .txt.
@@ -56,9 +57,11 @@ Para añadir una agenda de contactos, abra la pestaña `Contactos`{.action} y ha
 ![firstsms](images/firstsms04.png){.thumbnail}
 
 Para más información sobre las agendas de contactos, consulte [esta guía](/pages/web_cloud/messaging/sms/gerer_mes_carnets_dadresses_sms).
+<!-- CP-STEPS-END:add-contacts -->
 
 ### 2. Crear un remitente
 
+<!-- CP-STEPS-START:create-sender -->
 Por defecto, el envío de SMS desde una cuenta de OVHcloud se realiza desde un número que permite responder (funcionalidad solo disponible en Francia). 
 
 Sin embargo, en algunos casos puede ser más apropiado utilizar un remitente alfanumérico (que se crea desde la pestaña `Remitentes`{.action}) para que el SMS se envíe a nombre de su empresa u organización.
@@ -66,9 +69,11 @@ Sin embargo, en algunos casos puede ser más apropiado utilizar un remitente alf
 ![firstsms](images/firstsms05.png){.thumbnail}
 
 Para ello, consulte el apartado de la guía «[Enviar SMS desde el área de cliente](/pages/web_cloud/messaging/sms/envoyer_des_sms_depuis_mon_espace_client#3-elegir-el-remitente-del-sms)» relativo a la elección de remitentes.
+<!-- CP-STEPS-END:create-sender -->
 
 ### 3. El envío de una campaña de SMS
 
+<!-- CP-STEPS-START:send-sms-campaign -->
 La pestaña `Mensaje y campaña`{.action} le permitirá acceder a las opciones de envío, al historial de sus SMS enviados y recibidos, así como a sus envíos de SMS planificados como parte de los envíos aplazados.
 
 ![firstsms](images/firstsms02.png){.thumbnail}
@@ -90,6 +95,7 @@ Componga su mensaje y elija entre un envío inmediato o planificado. En caso de 
 ![firstsms](images/firstsms08.png){.thumbnail}
 
 Haga clic en el botón `Enviar`{.action} para enviar o planificar la campaña.
+<!-- CP-STEPS-END:send-sms-campaign -->
 
 ## Más información
 

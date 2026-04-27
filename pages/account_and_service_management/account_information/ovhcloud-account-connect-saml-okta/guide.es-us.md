@@ -88,6 +88,7 @@ Su servicio Okta ya confía en OVHcloud como proveedor de servicios. El siguient
 
 ### Guardar Okta en la cuenta de OVHcloud y configurar la conexión
 
+<!-- CP-STEPS-START:register-okta-in-ovhcloud -->
 Para añadir a Okta como proveedor de identidad de confianza, debe proporcionar los metadatos del proveedor de identidad. Abra la página [SAML SSO](/links/control-panel/iam-saml-sso) y haga clic en el botón `Conexión SSO`{.action}.
 
 ![Acceso al menú IAM](images/access_to_the_IAM_menu_03.png){.thumbnail}
@@ -111,6 +112,7 @@ El botón `..`{.action} permite actualizar o eliminar el SSO y consultar los det
 ![Conexión SSO OVHcloud etapa 5](images/ovhcloud_user_management_connect_sso_5.png){.thumbnail}
 
 Su servicio Okta se considera ahora un proveedor de identidad de confianza. No obstante, debe añadir grupos a su cuenta de OVHcloud.
+<!-- CP-STEPS-END:register-okta-in-ovhcloud -->
 
 > [!warning]
 > Si intenta conectarse por SSO, es probable que aparezca un mensaje de error `Not in valid groups`.
@@ -120,6 +122,7 @@ Su servicio Okta se considera ahora un proveedor de identidad de confianza. No o
 
 Ahora debe asignar **roles** a los grupos de usuarios Okta de OVHcloud. En caso contrario, su cuenta de OVHcloud no sabe lo que el usuario está autorizado a hacer y, por defecto, no tiene permisos.
 
+<!-- CP-STEPS-START:declare-okta-groups-ovhcloud -->
 En la sección `Identidades`{.action}, abra la pestaña `Grupos de usuarios`{.action}. A continuación, haga clic en el botón `Declarar un grupo`{.action} y complete los campos :
 
 - **Group name** : Nombre del grupo en Okta
@@ -132,6 +135,7 @@ En la sección `Identidades`{.action}, abra la pestaña `Grupos de usuarios`{.ac
 A continuación, compruebe que el grupo se añade a su cuenta de OVHcloud en la sección "Grupos":
 
 ![Grupos de gestión de usuarios Okta](images/ovhcloud_user_management_groups_3.png){.thumbnail}
+<!-- CP-STEPS-END:declare-okta-groups-ovhcloud -->
 
 Cuando se conecte posteriormente con un usuario del grupo **Intern**, su cuenta de OVHcloud reconocerá que el usuario tiene el rol "UNPRIVILEGED" especificado por su grupo.
 

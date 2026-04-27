@@ -53,7 +53,8 @@ Lors d'un changement d'offre vers les nouvelles offres Fibre Pro et xDSL Pro, vo
 
 ### Changer d’offre
 
-Pour changer d'offre, depuis votre [espace client OVHcloud](/links/control-panel/telecom-xdsl-fttx), sélectionnez le *Pack* contenant l'accès à Internet concerné, puis cliquez sur `Changer d'offre`{.action} dans le cadre « Informations Générales ».
+<!-- CP-STEPS-START:changer-offre -->
+Pour changer d’offre, depuis votre [espace client OVHcloud](/links/control-panel/telecom-xdsl-fttx), sélectionnez le *Pack* contenant l’accès à Internet concerné, puis cliquez sur `Changer d’offre`{.action} dans le cadre « Informations Générales ».
 
 ![changement d'offre](images/changement-offre.png){.thumbnail}
 
@@ -109,6 +110,8 @@ Comptez un délai d'une heure pour que le changement soit effectif, sauf pour le
 En fonction de votre offre actuelle, un remplacement du modem peut s'avérer nécessaire. Cela vous sera indiqué lors du choix de votre nouvelle offre.
 
 Les nouveaux services liés à votre nouvelle offre Pro seront accessibles une fois le changement d'offre effectif. 
+
+<!-- CP-STEPS-END:changer-offre -->
 
 ## Aller plus loin
 

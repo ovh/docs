@@ -66,6 +66,7 @@ Plusieurs retours d'erreur peuvent apparaître sur votre navigateur en cas d'ina
 > De ce fait, nous vous recommandons fortement d'activer le [renouvellement automatique](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#en-pratique) sur l'ensemble de vos abonnements OVHcloud.
 >
 
+<!-- CP-STEPS-START:check-domain-renewal -->
 Pour vérifier la validité de l'abonnement relatif à votre nom de domaine, cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3** étapes.
 
 > [!tabs]
@@ -82,6 +83,7 @@ Pour vérifier la validité de l'abonnement relatif à votre nom de domaine, cli
 > **Étape 3**
 >>
 >> Suite à ce renouvellement, votre site sera accessible sous 48 heures maximum.
+<!-- CP-STEPS-END:check-domain-renewal -->
 
 ### 2 - Vérifier les serveurs DNS
 
@@ -89,6 +91,7 @@ Pour vérifier la validité de vos [serveurs DNS](/pages/web_cloud/domains/dns_s
 
 **Cliquez sur le scénario correspondant à votre situation pour afficher le contenu.**
 
+<!-- CP-STEPS-START:check-dns-servers-scenario1 -->
 /// details | Scénario 1 - Aucune anomalie sur les serveurs DNS
 
 Pour vérifier les serveurs DNS déclarés, cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3** étapes.
@@ -113,6 +116,7 @@ Pour vérifier les serveurs DNS déclarés, cliquez sur les onglets ci-dessous p
 >> ![srv-dns-ok](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/dashboard-entry-ns.png){.thumbnail}
 
 ///
+<!-- CP-STEPS-END:check-dns-servers-scenario1 -->
 
 /// details | Scénario 2 - Un avertissement apparaît au-dessus de la zone DNS
 
@@ -138,6 +142,7 @@ Votre site sera de nouveau accessible sous 48 heures maximum.
 
 ///
 
+<!-- CP-STEPS-START:fix-missing-ns-records -->
 /// details | Scénario 3 - Aucune entrée de type NS n'apparaît dans la zone DNS
 
 La **Zone DNS** de votre domaine ne contient pas d'entrée de type `NS` :
@@ -174,6 +179,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4*
 >> Votre site sera de nouveau accessible sous 24 heures maximum.
 
 ///
+<!-- CP-STEPS-END:fix-missing-ns-records -->
 
 ### 3 - Vérifier la zone DNS <a name="etape3"></a>
 
@@ -181,6 +187,7 @@ Dans cette étape, vous allez retrouver l'adresse IP de votre hébergement, puis
 
 Si votre site web est hébergé en dehors de l'infrastructure OVHcloud ou géré par une tierce personne, contactez l'hébergeur ou le prestataire concerné.
 
+<!-- CP-STEPS-START:check-hosting-ip-for-dns -->
 Si votre site web est hébergé sur l'une de nos [offres d'hébergement web](/links/web/hosting), cliquez sur les onglets ci-dessous pour afficher successivement chacune des **2** étapes.
 
 > [!tabs]
@@ -197,6 +204,7 @@ Si votre site web est hébergé sur l'une de nos [offres d'hébergement web](/li
 >> ![IPv4-IPv6](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-ipv4-and-ipv6.png){.thumbnail}
 >>
 >> Copiez l'adresse IPv4 et/ou IPv6 de votre nom de domaine.
+<!-- CP-STEPS-END:check-hosting-ip-for-dns -->
 
 Puis reportez-la dans la [zone DNS](/pages/web_cloud/domains/dns_zone_edit) de votre nom de domaine, en modifiant ou créant une ou plusieurs entrées de type `A`.
 

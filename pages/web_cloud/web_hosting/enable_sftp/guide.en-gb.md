@@ -49,6 +49,7 @@ The only difference is that SFTP uses a secure channel to exchange data. The dat
 
 **Click on one of the two lines below, depending on your web hosting offer, to display the explanations.**
 
+<!-- CP-STEPS-START:enable-sftp-starter-perso -->
 /// details | Enable SFTP on a **free 100M**, **Starter**, or **Perso** web hosting offer
 
 Click on the tabs below to view each of the **3** steps.
@@ -76,7 +77,9 @@ Click on the tabs below to view each of the **3** steps.
 >>
 
 ///
+<!-- CP-STEPS-END:enable-sftp-starter-perso -->
 
+<!-- CP-STEPS-START:enable-sftp-pro-performance -->
 /// details | Enable SFTP on a **Pro** or **Performance** web hosting offer
 
 Click on the tabs below to view each of the **4** steps.
@@ -112,6 +115,7 @@ Click on the tabs below to view each of the **4** steps.
 >> Then click on `Next`{.action}, then on `Confirm`{.action} to complete the activation of SFTP for the relevant user.
 
 ///
+<!-- CP-STEPS-END:enable-sftp-pro-performance -->
 
 ### Connect to your web hosting via SFTP
 

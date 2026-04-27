@@ -40,6 +40,7 @@ Si vous avez commandé un hébergement web sans l'attacher directement à un nom
 
 ### Activation de vos adresses e-mail incluses avec votre offre d'hébergement web
 
+<!-- CP-STEPS-START:activation-email -->
 Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3** étapes.
 
 > [!tabs]
@@ -62,6 +63,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3*
 >>
 >> ![email-activation](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/order-activate-email-included-webhosting-step-1.png){.thumbnail}
 >>
+<!-- CP-STEPS-END:activation-email -->
 
 > [!primary]
 > Si vous souhaitez obtenir davantage de comptes e-mails inclus, nous vous invitons à commander une [offre d'hébergement web](/links/web/hosting) supérieure depuis notre page commerciale.
@@ -73,6 +75,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3*
 
 Si votre hébergement web est sur le point d'expirer, il est possible de demander la conservation de vos adresses e-mail **avant** sa date d'expiration.
 
+<!-- CP-STEPS-START:conservation-email -->
 Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **2** étapes.
 
 > [!tabs]
@@ -88,6 +91,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **2*
 >> Cliquez sur le bouton `...`{.action} à droite puis sur `Délier mon option e-mail`{.action}.
 >>
 >> ![email-activation](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/detach-email-included-webhosting.png){.thumbnail}
+<!-- CP-STEPS-END:conservation-email -->
 
 Une offre MX adaptée vous sera proposée à l'achat. Une fois la commande réglée, vos e-mails continueront à fonctionner après suspension de l'hébergement web.
 
@@ -99,6 +103,7 @@ Il est possible de supprimer définitivement l'offre e-mail associée à votre h
 >
 > Attention, cette action est irréversible. Les comptes e-mail et leur contenu seront supprimés.
 
+<!-- CP-STEPS-START:suppression-email -->
 Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **2** étapes.
 
 > [!tabs]
@@ -118,6 +123,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **2*
 >> > [!warning]
 >> >
 >> > Pour confirmer la suppression de l'offre e-mail associée à votre hébergement web, un lien de validation vous est envoyé par e-mail. Vous devez obligatoirement cliquer sur ce lien pour que l'opération de suppression soit lancée.
+<!-- CP-STEPS-END:suppression-email -->
 
 #### Cas particulier - Suppression de l'offre e-mail liée à votre hébergement web (afin de l'associer à un autre nom de domaine)
 

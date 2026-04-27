@@ -67,6 +67,7 @@ Les réponses des deux membres doivent être alternées :
 
 ### Étape 2 - Définir le poids d'un membre sur 0
 
+<!-- CP-STEPS-START:step2-set-weight-horizon-access -->
 > [!tabs]
 > API OVHcloud
 >> Connectez-vous à l’interface APIv6 d’OVHcloud en utilisant ce guide de [premiers pas avec l’API OVHcloud](/pages/manage_and_operate/api/first-steps).
@@ -158,6 +159,7 @@ Les réponses des deux membres doivent être alternées :
 >> $ openstack loadbalancer member set --weight 0 <pool> <member_0>
 >> ```
 >>
+<!-- CP-STEPS-END:step2-set-weight-horizon-access -->
 
 ### Étape 3 - Vérifier le statut du membre
 

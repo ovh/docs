@@ -98,6 +98,7 @@ Vous avez accès à l'interface d'administration du CMS et vous connaissez votre
 
 ### Modifier son mot de passe administrateur via phpMyAdmin depuis l'espace client OVHcloud <a name="via-phpmyadmin"></a>
 
+<!-- CP-STEPS-START:access-phpmyadmin -->
 Vous n'avez plus accès à l'interface d'administration du CMS ou vous ne pouvez pas utiliser la fonctionnalité « Mot de passe oublié » parce que l'adresse e-mail associée est inaccessible ? Utilisez phpMyAdmin depuis votre [espace client OVHcloud](/links/manager) pour réinitialiser le mot de passe directement depuis la base de données.
 
 Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4** étapes.
@@ -120,6 +121,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4*
 > **Étape 4**
 >>
 >> Saisissez les identifiants de la base de données (nom d'utilisateur et mot de passe) que vous avez définis lors de sa création. Une fois connecté à phpMyAdmin, cliquez sur l'onglet concerné ci-dessous.
+<!-- CP-STEPS-END:access-phpmyadmin -->
 
 > [!tabs]
 > WordPress

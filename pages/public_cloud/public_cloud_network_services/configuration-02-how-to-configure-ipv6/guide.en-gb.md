@@ -69,6 +69,7 @@ Here is a short glossary of the terms used in this tutorial:
 
 ### Retrieve your network information
 
+<!-- CP-STEPS-START:retrieve-network-info -->
 In your Public Cloud project, click on `Instances`{.action} in the left-hand menu.
 
 Click on `...`{.action} next to the corresponding instance and click on `Instance details`{.action}.
@@ -78,6 +79,7 @@ Click on `...`{.action} next to the corresponding instance and click on `Instanc
 All the information you need is in the **Networks** section.
 
 ![public-cloud ipv6](images/pci2022.1.png){.thumbnail}
+<!-- CP-STEPS-END:retrieve-network-info -->
 
 ### Examples of persistent configuration
 

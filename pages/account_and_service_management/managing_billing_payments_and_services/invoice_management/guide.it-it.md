@@ -59,6 +59,7 @@ La fattura del tuo servizio OVHcloud ti viene inviata in seguito al pagamento di
 
 #### Consulta e gestisci le tue fatture
 
+<!-- CP-STEPS-START:view-manage-bills -->
 Apri la pagina [Le mie fatture](/links/control-panel/billing-invoices).
 
 ![Fatturazione](/pages/assets/screens/control_panel/product-selection/right-menu/my-bills.png){.thumbnail}
@@ -113,14 +114,17 @@ Per esportare tutte le fatture, utilizza i pulsanti `Export tutto in CSV`{.actio
 Per esportare solo una parte del prodotto, seleziona le caselle corrispondenti nella prima colonna della tabella per selezionare le fatture che ti interessano. Due nuove azioni, `Esporta la selezione in formato CSV`{.action} o `Esporta la selezione in formato PDF`{.action}, saranno disponibili nel menu `Azioni massive`{.action}.
 
 ![export_selection](images/export_selection.png){.thumbnail}
+<!-- CP-STEPS-END:view-manage-bills -->
 
 #### Paga le tue fatture <a name="pay-bills"></a>
 
+<!-- CP-STEPS-START:pay-bills -->
 Per procedere al saldo delle fatture in attesa di pagamento, clicca sul menu `Azioni massive`{.action} e poi sul pulsante `Salda subito l'importo dovuto`{.action}.
 
 ![Pagamento dell’importo dovuto](images/pay_debt.png){.thumbnail}
 
 Verrà creato un [buono d'ordine](/pages/account_and_service_management/managing_billing_payments_and_services/managing_ovh_orders#il-buono-dordine). Una volta effettuato il pagamento, la situazione risulterà regolarizzata.
+<!-- CP-STEPS-END:pay-bills -->
 
 #### Richiedi l'annullamento di una fattura
 
@@ -129,11 +133,14 @@ Verrà creato un [buono d'ordine](/pages/account_and_service_management/managing
 > Per richiedere la disattivazione del tuo servizio alla data di scadenza, segui le indicazioni di questa [guida](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_cancel_services).
 >
 
+<!-- CP-STEPS-START:request-cancellation-ticket -->
 Se hai ricevuto una fattura che non consideri legittima e vuoi richiederne il rimborso o far valere il tuo [diritto di recesso](/pages/account_and_service_management/managing_billing_payments_and_services/managing_ovh_orders#esercita-il-diritto-di-recesso), puoi inviare un reclamo tramite il tuo Spazio Cliente OVHcloud, con riserva dell'applicazione delle nostre [Condizioni Generali di Servizio](https://www.ovh.it/supporto//documenti_legali/condizioni_generali_servizio.pdf).
 <br> Clicca sul tuo nome in alto a destra e seleziona `Crea un ticket`{.action}.
+<!-- CP-STEPS-END:request-cancellation-ticket -->
 
 ### Controlla i tuoi pagamenti
 
+<!-- CP-STEPS-START:track-payments -->
 Visualizza lo storico dei pagamenti effettuati nelle `Le mie fatture`{.action} e `Controllo di pagamenti`{.action}. In questo modo è possibile collegare ciascuna fattura al pagamento associato.
 
 ![Verifica dei pagamenti](images/payment_tracking.png){.thumbnail}
@@ -144,6 +151,7 @@ In questo spazio è possibile esportare anche i giustificativi in formato *.csv*
 >
 > In caso di mancata corrispondenza tra un pagamento effettuato e l’importo della relativa fattura, è possibile che parte della somma sia stata detratta da un credito disponibile e che l’addebito sia quindi di cifra inferiore.
 >
+<!-- CP-STEPS-END:track-payments -->
 
 ## Per saperne di più
 

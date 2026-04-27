@@ -62,6 +62,7 @@ Vous devez **impérativement** disposer des quatre informations suivantes afin d
 
 #### Login, Domain et Proxy sortant
 
+<!-- CP-STEPS-START:login-domain-proxy-sortant -->
 Afin de retrouver votre **Login**, **Domain** et **Proxy sortant**, suivez les étapes ci-dessous.
 
 Dans l'onglet `Gestion`{.action}, cliquez sur `Informations générales`{.action}.
@@ -76,6 +77,7 @@ Vous retrouvez alors, dans le cadre « Informations SIP », votre **Login**, **D
 > Dans l'exemple ci-dessus, le **Domain** est `sip-domain.io`. Prenez soin de vérifier quel est le **Domain** de votre ligne SIP, celui-ci pouvant être différent.
 > Le **Proxy sortant** est `outbound-ovh-1.sip-proxy.io`, mais il sera différent pour votre ligne SIP.
 >
+<!-- CP-STEPS-END:login-domain-proxy-sortant -->
 
 #### Mot de passe SIP
 

@@ -33,6 +33,7 @@ Notre Load Balancer Public Cloud est basé sur le service [Openstack Octavia](ht
 
 ### Création du Load Balancer
 
+<!-- CP-STEPS-START:create-load-balancer -->
 > [!tabs]
 > Via l'espace client OVHcloud
 >> Cliquez sur `Load Balancer`{.action} (sous **Network**) dans le menu de gauche, puis cliquez sur le bouton `Créer un Load Balancer`{.action}.
@@ -179,6 +180,7 @@ Notre Load Balancer Public Cloud est basé sur le service [Openstack Octavia](ht
 >> openstack loadbalancer member create --subnet-id my_subnet --address <private_ip_instance_2> --protocol-port 80 my_pool
 >> ```
 >>
+<!-- CP-STEPS-END:create-load-balancer -->
 
 Vous pouvez maintenant accéder à votre Load Balancer via l'adresse Floating IP ou l'adresse IP privée depuis une instance dans votre réseau privé.
 

@@ -52,6 +52,7 @@ The languages currently available are:
 - Python
 - Ruby
 
+<!-- CP-STEPS-START:access-runtime-software -->
 To access the runtime software applications for your [Cloud Web](/links/web/hosting-cloud-web-offer) hosting plan, click on the tabs below to view each of the **3** steps.
 
 > [!tabs]
@@ -70,9 +71,11 @@ To access the runtime software applications for your [Cloud Web](/links/web/host
 > **Step 3**
 >>
 >> If you have the [Cloud Web](/links/web/hosting-cloud-web-offer) offer with 2 vCores, you can add a second runtime environment (maximum 2 per plan) by clicking on the `Actions`{.action} button, then on `Add a runtime software application`{.action}.
+<!-- CP-STEPS-END:access-runtime-software -->
 
 Once you have done this, please ensure that you have the runtime software application (or applications) required for your project before you continue.
 
+<!-- CP-STEPS-START:check-cloud-web-vcores -->
 To check that you have 2 vCores with your Cloud Web hosting plan, click on the tabs below to view each of the **2** steps.
 
 > [!tabs]
@@ -85,6 +88,7 @@ To check that you have 2 vCores with your Cloud Web hosting plan, click on the t
 > **Step 2**
 >>
 >> In the **Plan** box and under `Service plan`, check that the reference `Cloud Web 3` is present.
+<!-- CP-STEPS-END:check-cloud-web-vcores -->
 
 ### 3 - Create environment variables (optional)
 
@@ -92,6 +96,7 @@ If you would like to deploy your project several times in different environments
 
 For example, this way you can leave out the .env file in the PHP Laravel framework, as described in this guide: <https://laravel.com/docs/master/configuration>.
 
+<!-- CP-STEPS-START:add-environment-variable -->
 To add an environment variable, click on the tabs below to view each of the **3** steps.
 
 > [!tabs]
@@ -110,6 +115,7 @@ To add an environment variable, click on the tabs below to view each of the **3*
 >> To add a new one, click on the `Actions`{.action} button, then `Add an environment variable`{.action}. Follow the appropriate instructions for the variable you would like to create.
 >>
 >> ![Adding an environment variable on a Cloud Web hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/cloud-web/environment-variables/add-an-environment-variable.png){.thumbnail}
+<!-- CP-STEPS-END:add-environment-variable -->
 
 If you do not use a development framework that includes the environment variables, or would simply like to check that your variables are working properly, you can create a script to do this. Below are examples of two scripts that can help you with this process, although they are no substitute for the assistance of a webmaster:
 
@@ -137,6 +143,7 @@ Make sure you replace the generic information included in these scripts (e.g. DB
 
 ### 4 - Configure additional domains as multisites (optional)
 
+<!-- CP-STEPS-START:configure-multisite -->
 Now that the technical environment of your [Cloud Web](/links/web/hosting-cloud-web-offer) hosting plan is ready, you can configure additional domain names on it as multisites. This way, you can partition your space in order to host several websites on it, for example. If you would like to do this for your project, click on the tabs below to view each of the **3** steps.
 
 > [!tabs]
@@ -163,6 +170,7 @@ Now that the technical environment of your [Cloud Web](/links/web/hosting-cloud-
 >> > [!warning]
 >> >
 >> > If you have added a domain name that is considered to be external, you will need to add a TXT record called **ovhcontrol** to its DNS configuration. This way, OVHcloud can ensure that the domain addition is approved. If you skip this step, your domain will not be added.
+<!-- CP-STEPS-END:configure-multisite -->
 
 Repeat this step if you would like to add several domain names to your Cloud Web hosting plan. For more information on adding a domain name as a multisite, please read the following guide: [Hosting multiple websites on your Web Hosting plan](/pages/web_cloud/web_hosting/multisites_configure_multisite).
 
@@ -174,6 +182,7 @@ There are two ways of setting up your project. Once you have picked the techniqu
 
 By using our 1-click modules, you will get a ready-to-use website template that you can customise with a variety of themes, texts, and much more. OVHcloud offers four structures with its 1-click modules. You can find out more about them by browsing our webpage on [Creating a website with 1-click modules](/links/web/hosting-website).
 
+<!-- CP-STEPS-START:install-1-click-module -->
 If your choice of method involves using our 1-click modules, click on the tabs below to view each of the **3** steps.
 
 > [!tabs]
@@ -190,6 +199,7 @@ If your choice of method involves using our 1-click modules, click on the tabs b
 > **Step 3**
 >>
 >> You can then choose whether to install it in 'basic' mode (non-customisable), or 'advanced' mode (customisable).
+<!-- CP-STEPS-END:install-1-click-module -->
 
 If you need more information on OVHcloud 1-click modules, please read our guide: [Setting up your website with 1-click modules](/pages/web_cloud/web_hosting/cms_install_1_click_modules).
 

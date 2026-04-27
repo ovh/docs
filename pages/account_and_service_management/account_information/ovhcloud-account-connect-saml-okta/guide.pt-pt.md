@@ -88,6 +88,7 @@ O seu serviço Okta confia agora na OVHcloud enquanto prestadora de serviços. O
 
 ### Registar o Okta na conta OVHcloud e configurar a ligação
 
+<!-- CP-STEPS-START:register-okta-in-ovhcloud -->
 Para adicionar o Okta como fornecedor de identidade de confiança, deve fornecer os metadados do fornecedor de identidade. Abra a página [SAML SSO](/links/control-panel/iam-saml-sso) e clique no botão `Ligação SSO`{.action}.
 
 ![Para aceder ao menu IAM](images/access_to_the_IAM_menu_03.png){.thumbnail}
@@ -111,6 +112,7 @@ O botão `...`{.action} permite atualizar ou eliminar o SO, e consultar os respe
 ![Ligação SSO OVHcloud etapa 5](images/ovhcloud_user_management_connect_sso_5.png){.thumbnail}
 
 O seu serviço Okta é agora considerado um fornecedor de identidade de confiança. No entanto, deve mesmo assim adicionar grupos à sua conta OVHcloud.
+<!-- CP-STEPS-END:register-okta-in-ovhcloud -->
 
 > [!warning]
 > Se, nesta fase, estiver a tentar conectar-se através de SSO, é provável que apareça uma mensagem de erro `Not in valid groups`.
@@ -120,6 +122,7 @@ O seu serviço Okta é agora considerado um fornecedor de identidade de confian�
 
 Agora deve atribuir **funções** aos grupos de utilizadores Okta na OVHcloud. Caso contrário, a sua conta OVHcloud não sabe o que o utilizador está autorizado a fazer e, de forma padrão, não é atribuído nenhum direito.
 
+<!-- CP-STEPS-START:declare-okta-groups-ovhcloud -->
 Na secção `Identidades`{.action}, abra o separador `Grupos de utilizadores`{.action}. De seguida, clique no botão `Declarar um grupo`{.action} e introduza os campos:
 
 - **Group name**: Nome do grupo em Okta
@@ -132,6 +135,7 @@ Na secção `Identidades`{.action}, abra o separador `Grupos de utilizadores`{.a
 De seguida, poderá verificar que o grupo é adicionado à sua conta OVHcloud na secção "Grupos":
 
 ![Grupos de gestão dos utilizadores Okta](images/ovhcloud_user_management_groups_3.png){.thumbnail}
+<!-- CP-STEPS-END:declare-okta-groups-ovhcloud -->
 
 Quando se ligar posteriormente com um utilizador do grupo **Intern**, a sua conta OVHcloud reconhecerá que o utilizador tem o papel "UNPRIVILEGED" especificado pelo seu grupo.
 

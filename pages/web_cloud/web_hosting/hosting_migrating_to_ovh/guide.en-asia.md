@@ -71,6 +71,7 @@ Several [OVHcloud web hosting plans](/links/web/hosting) contain an [MX Plan](/p
 
 Once you have chosen your hosting plan, click the `Order`{.action} button on the commercial pages above. Follow the steps for the **order without requesting the transfer of your domain name**. (This action will be performed in part 10 of this guide.)
 
+<!-- CP-STEPS-START:order-hosting-plan -->
 You can also place the order from your OVHcloud Control Panel. To do this, click on the tabs below to view each of the **3** steps.
 
 > [!tabs]
@@ -87,6 +88,7 @@ You can also place the order from your OVHcloud Control Panel. To do this, click
 > **Step 3**
 >>
 >> Follow the steps in the order **without requesting the transfer of your domain name** (this action will be carried out in part 10 of this guide).
+<!-- CP-STEPS-END:order-hosting-plan -->
 
 Once the payment has been confirmed, the hosting plan installation will begin. An email will be sent to your contact email address. It will contain the credentials for accessing your web hosting plan’s FTP (File Transfer Protocol) storage space.
 

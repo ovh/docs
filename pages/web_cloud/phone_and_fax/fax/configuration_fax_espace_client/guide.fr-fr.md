@@ -27,13 +27,14 @@ Vous pouvez configurer votre ligne Fax directement via votre espace client OVHcl
 
 ## En pratique
 
-Sélectionnez l’onglet `Services`{.action} puis la ligne Fax concernée.
-
 ### Mot de passe fax
 
-L'envoi de télécopies par e-mail ou via le logiciel EcoFax nécessite de définir un mot de passe fax.
+<!-- CP-STEPS-START:mot-de-passe-fax -->
+Sélectionnez l’onglet `Services`{.action} puis la ligne Fax concernée.
 
-Pour le définir, sélectionnez votre ligne FAX, cliquez sur l'onglet `Fax`{.action} puis sur `Mot de passe fax`{.action}.
+L’envoi de télécopies par e-mail ou via le logiciel EcoFax nécessite de définir un mot de passe fax.
+
+Pour le définir, sélectionnez votre ligne FAX, cliquez sur l’onglet `Fax`{.action} puis sur `Mot de passe fax`{.action}.
 
 ![mot de passe fax](images/motdepassefax.png){.thumbnail}
 
@@ -41,11 +42,13 @@ Le mot de passe doit contenir au moins 6 caractères.
 
 > [!primary]
 >
-> Dans le cas d'une ancienne offre de type « EcoFax Perso », la modification du mot de passe s'effectue depuis l'onglet `Configuration du fax`{.action} puis en cliquant sur `Générer`{.action}.
+> Dans le cas d’une ancienne offre de type « EcoFax Perso », la modification du mot de passe s’effectue depuis l’onglet `Configuration du fax`{.action} puis en cliquant sur `Générer`{.action}.
 >
+<!-- CP-STEPS-END:mot-de-passe-fax -->
 
 ### Options de configuration
 
+<!-- CP-STEPS-START:options-de-configuration -->
 Sélectionnez votre ligne FAX, cliquez sur l'onglet `Fax`{.action} puis sur `Configuration du Fax`{.action}.
 
 ![menu fax](images/configuration-fax.png){.thumbnail}
@@ -54,7 +57,6 @@ Sélectionnez votre ligne FAX, cliquez sur l'onglet `Fax`{.action} puis sur `Con
 >
 > Dans le cas d'une ancienne offre de type « EcoFax Perso », l'envoi des fax est possible si le nombre de fax restant est positif. Dans le cas contraire, vous pouvez commander des fax via l'onglet situé juste en dessous.
 >
-
 #### Options générales
 
 La qualité d'envoi de vos télécopies peut avoir un impact sur vos émissions de télécopies à destination de certains numéros spéciaux.
@@ -94,8 +96,11 @@ Vous pouvez renseigner jusqu'à 5 adresses différentes.
 
 ![adresses de notification](images/adresses_notifications.png){.thumbnail}
 
+<!-- CP-STEPS-END:options-de-configuration -->
+
 ### Options de filtrage
 
+<!-- CP-STEPS-START:options-de-filtrage -->
 Vous pouvez appliquer des règles de filtrage sur votre ligne Fax afin de ne pas recevoir de télécopies indésirables.
 
 Pour configurer ces filtrages, sélectionnez votre ligne FAX, cliquez sur l'onglet `Fax`{.action} puis sur `Filtrage de fax`{.action}.
@@ -107,6 +112,7 @@ Vous pouvez configurer et activer soit une liste blanche, soit une liste noire d
 ![filtrage fax](images/regles_filtrage.png){.thumbnail}
 
 Commencez par ajouter les numéros à filtrer dans le menu de droite puis activez la liste blanche ou noire dans le menu de gauche.
+<!-- CP-STEPS-END:options-de-filtrage -->
 
 ## Aller plus loin
 

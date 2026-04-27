@@ -89,6 +89,7 @@ Cette option permet d'appliquer automatiquement la configuration de la zone DNS 
 >
 > Si besoin, consultez les guides « [Modifier une zone DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit) » et/ou « [Créer une zone DNS OVHcloud](/pages/web_cloud/domains/dns_zone_create) » pour vérifier si une zone DNS OVHcloud existe pour votre nom de domaine.
 
+<!-- CP-STEPS-START:option-1-ovhcloud-default-dns -->
 Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4** étapes.
 
 > [!tabs]
@@ -127,6 +128,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4*
 >> S'ils correspondent à ceux que vous souhaitez appliquer, cliquez sur `Appliquer`{.action}.
 >>
 >> Ainsi, les 2 serveurs DNS déclarés (dans les enregistrements de type NS de la zone DNS OVHcloud) seront utilisés pour votre nom de domaine.
+<!-- CP-STEPS-END:option-1-ovhcloud-default-dns -->
 
 Les anciens serveurs DNS déclarés et la configuration DNS qu'ils appliquaient seront désactivés pour votre nom de domaine. La zone DNS OVHcloud deviendra la zone DNS active pour votre nom de domaine.
 
@@ -151,6 +153,7 @@ Cela peut être, par exemple :
 > - « Your own domain (or just an @) » IN NS ns2.dns-server.tld.
 > - « Your own domain (or just an @) » IN NS ns3.dns-server.tld.
 
+<!-- CP-STEPS-START:option-2-own-dns -->
 Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **5** étapes.
 
 > [!tabs]
@@ -200,6 +203,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **5*
 >>
 >> Elle résume les noms des serveurs DNS qui vont être appliqués à votre nom de domaine.
 >> S'ils correspondent à ceux que vous souhaitez appliquer, cliquez sur `Appliquer`{.action}.
+<!-- CP-STEPS-END:option-2-own-dns -->
 
 Les anciens serveurs DNS déclarés et la configuration DNS qu'ils appliquaient seront désactivés pour votre nom de domaine. La zone DNS déclarée sur vos propres serveurs DNS deviendra la zone DNS active pour votre nom de domaine.
 
@@ -227,6 +231,7 @@ Cependant, vérifiez bien que les configurations des zones DNS présentes sur le
 > - « Your own domain (or just an @) » IN NS dnsXX.ovh.net.
 > - « Your own domain (or just an @) » IN NS nsXX.ovh.net.
 
+<!-- CP-STEPS-START:option-3-mixed-dns -->
 Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **5** étapes.
 
 > [!tabs]
@@ -276,6 +281,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **5*
 >>
 >> Elle résume les noms des serveurs DNS qui vont être appliqués à votre nom de domaine.
 >> S'ils correspondent à ceux que vous souhaitez appliquer, cliquez sur `Appliquer`{.action}.
+<!-- CP-STEPS-END:option-3-mixed-dns -->
 
 Les anciens serveurs DNS déclarés et la configuration DNS qu'ils appliquaient seront désactivés pour votre nom de domaine. Les zones DNS présentes sur vos propres serveurs DNS et sur les serveurs DNS OVHcloud deviendront celles actives pour votre nom de domaine.
 

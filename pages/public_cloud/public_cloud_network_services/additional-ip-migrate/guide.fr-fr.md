@@ -41,15 +41,16 @@ Ce guide vous explique comment basculer une Additional IP d'une instance à une 
 > Une Additional IP ne peut pas être déplacée entre différentes zones. Par exemple, une IP localisée dans le datacentre de SBG peut être déplacée vers GRA ou RBX mais pas vers BHS.
 >
 
+<!-- CP-STEPS-START:migrate-additional-ip -->
 Dans le menu de gauche, rendez-vous dans la section **Network** puis ouvrez `IP Publiques`{.action}. Cliquez sur l’onglet `Additional IP`{.action}.
 
-Dans cet exemple, l'adresse Additional IP routée vers "Instance_A" sera migrée vers "Instance_B".
+Dans cet exemple, l’adresse Additional IP routée vers "Instance_A" sera migrée vers "Instance_B".
 
-Cliquez sur `...`{.action} dans la ligne de l'Additional IP et sélectionnez `Modifier l'instance associée`{.action}.
+Cliquez sur `...`{.action} dans la ligne de l’Additional IP et sélectionnez `Modifier l’instance associée`{.action}.
 
 ![migrating Additional IP](images/migrateip_01.png){.thumbnail}
 
-Cliquez sur le menu déroulant pour choisir l'instance de destination dans la liste.
+Cliquez sur le menu déroulant pour choisir l’instance de destination dans la liste.
 
 ![migrating Additional IP](images/migrateip_02.png){.thumbnail}
 
@@ -63,6 +64,7 @@ Après quelques secondes, l’espace client est mis à jour. Un message de confi
 >
 L’Additional IP peut être configurée sur le serveur de destination avant ou après la migration. S’il était pré-configuré, il commencera à répondre dès que l’opération de routage sera terminée.
 >
+<!-- CP-STEPS-END:migrate-additional-ip -->
 
 ## Aller plus loin
 

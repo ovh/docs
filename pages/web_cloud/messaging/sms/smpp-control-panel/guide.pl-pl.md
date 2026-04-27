@@ -35,12 +35,15 @@ W Panelu klienta OVHcloud możesz odnaleźć dane do logowania SMPP, zmienić ha
 
 ## W praktyce
 
+<!-- CP-STEPS-START:account-selection -->
 Wybierz konto SMPP. Nazwa serwera różni się od innych kont SMS OVHcloud. Zaczyna się bowiem od `smpp-` zamiast `sms-` dla klasycznych kont SMS.
 
 ![SMPP account](images/smpp-account.png){.thumbnail}
+<!-- CP-STEPS-END:account-selection -->
 
 ### Dane identyfikacyjne
 
+<!-- CP-STEPS-START:credentials -->
 Ramka `Informacje ogólne` pozwala na odnalezienie danych identyfikacyjnych niezbędnych do korzystania z usługi. Skopiuj zawartość przycisku z prawej strony każdego pola.
 
 ![SMPP account](images/smpp-account-ID.png){.thumbnail}
@@ -50,9 +53,11 @@ W przypadku zapomnienia hasła SMPP, kliknij przycisk `Wygeneruj nowe hasło`{.a
 Kliknij polecenie `Wyślij`{.action}, aby potwierdzić operację.
 
 ![SMPP account](images/smpp-account-password.png){.thumbnail}
+<!-- CP-STEPS-END:credentials -->
 
 ### Zarządzanie dostępami
 
+<!-- CP-STEPS-START:access-management -->
 Kliknij zakładkę `Opcje`{.action}, a następnie `Parametry SMPP`{.action}.
 
 ![SMPP account](images/smpp-acl0.png){.thumbnail}
@@ -62,6 +67,7 @@ Pole `Autoryzowane adresy IP` adresy IP klientów SMPP, którzy mają prawo dost
 Kliknij przycisk `Dodaj adres IP`{.action}, aby dodać adresy IP do tej listy.
 
 ![SMPP account](images/smpp-acl1.png){.thumbnail}
+<!-- CP-STEPS-END:access-management -->
 
 ### Zarządzanie nadawcami i zasileniami
 

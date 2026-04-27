@@ -164,8 +164,9 @@ Pour cela, vous devez choisir le bon fournisseur et la bonne ressource Terraform
 > Le vRack est géré au niveau de l’infrastructure OVHcloud, ce qui signifie que vous ne pouvez l’administrer que depuis votre espace client et les APIv6 OVHcloud.
 >
 
+<!-- CP-STEPS-START:activate-vrack -->
 > [!tabs]
-> Depuis l'espace client OVHcloud
+> Depuis l’espace client OVHcloud
 >> > [!primary]
 >> >
 >> > Cette étape ne s'applique pas aux projets nouvellement créés, qui sont désormais automatiquement livrés avec un vRack. Pour visualiser le vRack une fois le projet créé, rendez-vous dans la section `Network`{.action} et cliquez sur `Réseau Privé vRack`{.action} pour voir le(s) vRack(s).
@@ -348,6 +349,8 @@ Pour cela, vous devez choisir le bon fournisseur et la bonne ressource Terraform
 >> >
 >>
  
+<!-- CP-STEPS-END:activate-vrack -->
+
 ### Étape 2 : Créer un réseau privé dans le vRack <a name="create-pn-in-vrack"></a>
 
 Il est nécessaire de créer un réseau privé avec un réseau local virtuel (VLAN) afin que les instances reliées au vRack puissent communiquer entre elles.
@@ -372,6 +375,7 @@ Depuis l'espace client OVHcloud et les APIv6 OVHcloud, vous pourrez personnalise
 > OpenStack n'étant pas situé au même niveau de l'infrastructure, vous ne pourrez pas personnaliser les VLAN au travers de l'interface Horizon ou des API OpenStack.
 >
 
+<!-- CP-STEPS-START:create-private-network -->
 > [!tabs]
 > Depuis l'espace client OVHcloud
 >> Une fois votre vRack créé, l’étape suivante consiste à créer un réseau privé.
@@ -574,6 +578,8 @@ Depuis l'espace client OVHcloud et les APIv6 OVHcloud, vous pourrez personnalise
 >> ```
 >> 
 
+<!-- CP-STEPS-END:create-private-network -->
+
 ### Étape 3 : Intégrer une instance dans le vRack
 
 Deux situations peuvent se présenter à vous :
@@ -583,6 +589,7 @@ Deux situations peuvent se présenter à vous :
 
 /// details | **Cas d'une nouvelle instance**
 
+<!-- CP-STEPS-START:integrate-new-instance -->
 > [!tabs]
 > Depuis l'espace client OVHcloud
 >> Consultez le guide « [Créer une instance depuis l’espace client](/pages/public_cloud/compute/public-cloud-first-steps) ». Lors de la création d'une instance, vous pouvez choisir à l'étape 5, un mode réseau puis un réseau privé dans lequel intégrer votre instance.
@@ -863,6 +870,8 @@ Deux situations peuvent se présenter à vous :
 >> ```
 >>
 
+<!-- CP-STEPS-END:integrate-new-instance -->
+
 ///
 
 /// details | **Cas d'une instance déjà existante**
@@ -877,6 +886,7 @@ Ainsi, par exemple, si vous avez une interface publique *eth0*, vous aurez en pl
 > La configuration de cette nouvelle interface est rarement automatique. Il vous faudra donc la configurer en DHCP ou en IP fixe selon votre infrastructure.
 >
 
+<!-- CP-STEPS-START:integrate-existing-instance -->
 > [!tabs]
 > Depuis l'espace client OVHcloud
 >> Dans votre projet Public Cloud, cliquez sur `Instances`{.action} dans le menu latéral de gauche. Cliquez ensuite sur le bouton `⁝`{.action} à droite de l'instance concernée puis sur `Détail de l'instance`{.action}.
@@ -1139,6 +1149,8 @@ Ainsi, par exemple, si vous avez une interface publique *eth0*, vous aurez en pl
 >> [...]
 >> ```
 >>
+
+<!-- CP-STEPS-END:integrate-existing-instance -->
 
 ### Détacher une interface réseau
 

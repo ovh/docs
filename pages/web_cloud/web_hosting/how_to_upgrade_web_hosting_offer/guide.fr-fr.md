@@ -48,6 +48,7 @@ Votre [espace client OVHcloud](/links/manager) permet d'augmenter les capacités
 
 ### Modifier votre offre d'hébergement web <a name="modify"></a>
 
+<!-- CP-STEPS-START:modify-subscription -->
 Pour modifier votre abonnement, cliquez sur les onglets ci-dessous pour afficher successivement chacune des **2** étapes.
 
 > [!tabs]
@@ -64,6 +65,7 @@ Pour modifier votre abonnement, cliquez sur les onglets ci-dessous pour afficher
 >> ![change_plan](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/pro-change-plan.png){.thumbnail}
 >>
 >> Sélectionnez ensuite votre nouvel abonnement, ainsi que sa durée. Validez les contrats correspondants puis cliquez sur `Envoyer`{.action}.
+<!-- CP-STEPS-END:modify-subscription -->
 
 ### Vérifier que votre hébergement web est compatible avec une offre de la gamme inférieure <a name="checks"></a>
 
@@ -81,6 +83,7 @@ Assurez-vous que la nouvelle offre comporte assez de [bases de données](/links/
 
 Dans le cas contraire, supprimez les bases de données inutilisées et réduisez, si nécessaire, la quantité de données qu'elles contiennent. Cette quantité ne devra pas dépasser la taille maximale des bases de données de la nouvelle offre. Pour toute demande d'assistance sur les manipulations à effectuer, contactez les [partenaires OVHcloud](/links/partner).
 
+<!-- CP-STEPS-START:recalculate-db-quota -->
 Suite à la suppression de données sur vos bases, recalculez le quota utilisé. Pour cela, cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4** étapes.
 
 > [!tabs]
@@ -110,6 +113,7 @@ Suite à la suppression de données sur vos bases, recalculez le quota utilisé.
 >>
 >> Une fois lancée, l'opération peut prendre plusieurs minutes. Lorsqu'elle se termine, le statut « READ ONLY » de votre base de données disparaît.
 >> Votre base de données est alors de nouveau pleinement opérationnelle.
+<!-- CP-STEPS-END:recalculate-db-quota -->
 
 > [!primary]
 >
@@ -120,6 +124,7 @@ Suite à la suppression de données sur vos bases, recalculez le quota utilisé.
 
 Si vous utilisez l'offre [Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb) incluse avec votre hébergement web [Performance](/links/web/hosting-performance-offer) et que vous souhaitez passer votre hébergement web sur une offre [Pro](/links/web/hosting-professional-offer), vous devrez d'abord dissocier l'offre Web Cloud Databases de votre hébergement web.
 
+<!-- CP-STEPS-START:detach-wcdb -->
 Pour cela, cliquez sur les onglets ci-dessous pour afficher successivement chacune des **2** étapes.
 
 > [!tabs]
@@ -134,13 +139,16 @@ Pour cela, cliquez sur les onglets ci-dessous pour afficher successivement chacu
 >> Dans le cadre **Configuration**, cliquez sur le bouton `...`{.action} situé à droite de la mention **Web Cloud Databases** puis sur `Délier`{.action}.
 >>
 >> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/wcdb-detach.png){.thumbnail}
+<!-- CP-STEPS-END:detach-wcdb -->
 
 Cette action vous permettra de commander une offre Web Cloud Databases indépendante de votre abonnement *Performance*. Les données de votre serveur seront conservées.
 
 Si vous ne souhaitez pas conserver ces données, vous pouvez aussi supprimer votre offre Web Cloud Databases avant de passer sur l'offre *Pro* : 
 
 1. Sauvegardez vos données en suivant les instructions de ce [guide](/pages/web_cloud/web_cloud_databases/save-export-on-database-server).<br>
-2. Supprimez votre serveur Web Cloud Databases via votre [espace client OVHcloud](/links/manager). Pour cela, cliquez sur les onglets ci-dessous pour afficher successivement chacune des **2** étapes.
+2. Supprimez votre serveur Web Cloud Databases via votre [espace client OVHcloud](/links/manager).
+<!-- CP-STEPS-START:delete-wcdb -->
+Pour cela, cliquez sur les onglets ci-dessous pour afficher successivement chacune des **2** étapes.
 
 > [!tabs]
 > **Étape 1**
@@ -150,11 +158,13 @@ Si vous ne souhaitez pas conserver ces données, vous pouvez aussi supprimer vot
 > **Étape 2**
 >>
 >> Cliquez sur le bouton `...`{.action} à droite de la ligne de l'offre Web Cloud Databases/SQL Privé concernée puis sur `Supprimer mon hébergement SQL privé`{.action}.
+<!-- CP-STEPS-END:delete-wcdb -->
 
 #### 3 - Espace de stockage FTP
 
 Assurez-vous que la nouvelle offre propose suffisamment [d'espace de stockage FTP](/pages/web_cloud/web_hosting/ftp_connection) pour que l'import des fichiers de votre hébergement actuel soit possible.
 
+<!-- CP-STEPS-START:check-ftp-storage -->
 Pour vérifier le quota d'espace de stockage FTP utilisé sur votre hébergement web, cliquez sur les onglets ci-dessous pour afficher successivement chacune des **2** étapes.
 
 > [!tabs]
@@ -171,11 +181,13 @@ Pour vérifier le quota d'espace de stockage FTP utilisé sur votre hébergement
 >> ![disk_space](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-disk-space.png){.thumbnail}
 >>
 >> L'espace de stockage utilisé apparaît en dessous de cette mention.
+<!-- CP-STEPS-END:check-ftp-storage -->
 
 #### 4 - Adresses e-mail
 
 Vérifiez que votre nouvelle offre propose un nombre suffisant d'adresses e-mail disponibles. Dans le cas contraire, supprimez les adresses e-mail inutilisées après avoir [sauvegardé](/pages/web_cloud/email_and_collaborative_solutions/migrating/manual_email_migration) leur contenu si nécessaire.
 
+<!-- CP-STEPS-START:upgrade-email-plan-accounts -->
 Si vous souhaitez conserver le même nombre de boîtes e-mail et **avant de passer votre hébergement web sur une offre inférieure**, il est également possible de commander une nouvelle offre de messagerie **MX Plan**. Pour cela, cliquez sur les onglets ci-dessous pour afficher successivement chacune des **2** étapes.
 
 > [!tabs]
@@ -188,9 +200,11 @@ Si vous souhaitez conserver le même nombre de boîtes e-mail et **avant de pass
 >> Dans l'encadré **Abonnement** et à droite de la mention **Offre**, cliquez sur le bouton `...`{.action} puis sur `Changer d'offre`{.action}.
 >>
 >> ![Changement d'offre MX Plan](/pages/assets/screens/control_panel/product-selection/web-cloud/emails/general-information/change-solution.png){.thumbnail}
+<!-- CP-STEPS-END:upgrade-email-plan-accounts -->
 
 Si le changement d'offre est indisponible sur votre offre e-mail, c'est que celle-ci est liée à un hébergement web.
 
+<!-- CP-STEPS-START:detach-email-option-accounts -->
 Vous pouvez délier l'offre e-mail de votre hébergement web. Pour cela, cliquez sur les onglets ci-dessous pour afficher successivement chacune des **2** étapes.
 
 > [!tabs]
@@ -201,11 +215,13 @@ Vous pouvez délier l'offre e-mail de votre hébergement web. Pour cela, cliquez
 > **Étape 2**
 >>
 >> Dans l'encadré **Configuration**, cliquez sur le bouton `...`{.action} à droite de la mention **Adresses e-mails** puis sur `Délier mon option e-mail`{.action}.
+<!-- CP-STEPS-END:detach-email-option-accounts -->
 
 #### 5 - Mailing lists
 
 La fonctionnalité [Mailing lists](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/feature_mailing_list) est en option sur les hébergements [Perso](/links/web/hosting-personal-offer).
 
+<!-- CP-STEPS-START:upgrade-email-plan-lists -->
 Pour passer votre hébergement web sur une offre [Perso](/links/web/hosting-personal-offer), vous devrez dans un premier temps supprimer les mailing lists ou commander une offre de messagerie comprenant cette fonctionnalité (**MX Plan 100** ou **MX Plan Full**) depuis votre [espace client OVHcloud](/links/manager). Pour cela, cliquez sur les onglets ci-dessous pour afficher successivement chacune des **2** étapes.
 
 > [!tabs]
@@ -216,9 +232,11 @@ Pour passer votre hébergement web sur une offre [Perso](/links/web/hosting-pers
 > **Étape 2**
 >>
 >> Dans l'encadré **Abonnement** et à droite de la mention **Offre**, cliquez sur le bouton `...`{.action} puis sur `Changer d'offre`{.action}.
+<!-- CP-STEPS-END:upgrade-email-plan-lists -->
 
 Si le changement d'offre est indisponible sur votre offre e-mail, c'est que celle-ci est liée à un hébergement web.
 
+<!-- CP-STEPS-START:detach-email-option-lists -->
 Vous pouvez délier l'offre e-mail de votre hébergement web. Pour cela, cliquez sur les onglets ci-dessous pour afficher successivement chacune des **2** étapes.
 
 > [!tabs]
@@ -229,11 +247,13 @@ Vous pouvez délier l'offre e-mail de votre hébergement web. Pour cela, cliquez
 > **Étape 2**
 >>
 >> Dans l'encadré **Configuration**, cliquez sur le bouton `...`{.action} à droite de la mention **Adresses e-mails** puis sur `Délier mon option e-mail`{.action}.
+<!-- CP-STEPS-END:detach-email-option-lists -->
 
 #### 6 - Utilisateurs FTP
 
 Assurez-vous que la nouvelle offre propose suffisamment d'utilisateurs FTP.
 
+<!-- CP-STEPS-START:check-ftp-users -->
 Le nombre d'utilisateurs FTP est visible dans votre espace client OVHcloud. Pour le vérifier, cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3** étapes.
 
 > [!tabs]
@@ -250,6 +270,7 @@ Le nombre d'utilisateurs FTP est visible dans votre espace client OVHcloud. Pour
 >> Pour supprimer des utilisateurs FTP, cliquez sur le bouton `...`{.action} à droite de l'utilisateur FTP concerné puis sur `Supprimer`{.action}.
 >>
 >> ![Suppression d'un utilisateur FTP](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/edit-ftp-user-2.png){.thumbnail}
+<!-- CP-STEPS-END:check-ftp-users -->
 
 #### Finalisation
 
@@ -273,6 +294,7 @@ Avec l'[option Boost](/links/web/hosting-options-boost), disponible sur nos offr
 
 Si l'option **Boost** convient à votre besoin, vous trouverez ci-dessous les instructions pour **activer** ou **désactiver** cette option sur votre hébergement.
 
+<!-- CP-STEPS-START:enable-boost -->
 Pour **activer l'option Boost**, cliquez sur les onglets ci-dessous pour afficher successivement chacune des **2** étapes.
 
 > [!tabs]
@@ -287,7 +309,9 @@ Pour **activer l'option Boost**, cliquez sur les onglets ci-dessous pour affiche
 >> Dans l'encadré **Informations générales** de la page qui s'affiche, cliquez sur le bouton `...`{.action} à droite de **Boost** puis sur `Booster mon offre`{.action}.
 >>
 >> ![boost enable](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/boost-my-hosting-plan.png){.thumbnail}
+<!-- CP-STEPS-END:enable-boost -->
 
+<!-- CP-STEPS-START:disable-boost -->
 Pour **désactiver l'option Boost**, cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3** étapes.
 
 > [!tabs]
@@ -310,6 +334,7 @@ Pour **désactiver l'option Boost**, cliquez sur les onglets ci-dessous pour aff
 >> Le tableau d'utilisation de l'option Boost s'affiche, cliquez sur `Désactiver l'offre boost`{.action}
 >>
 >> ![boost disable](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/boost-my-hosting-plan/deactivate-the-boost-plan.png){.thumbnail}
+<!-- CP-STEPS-END:disable-boost -->
 
 #### La facturation en cas de changement d'offre <a name="billing"></a>
 

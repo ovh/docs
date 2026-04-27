@@ -13,15 +13,21 @@ Il est possible d'associer un nom, prénom, numéro de téléphone et adresse e-
 ## Prérequis
 
 - Disposer d'une offre [Hosted Private cloud](https://www.ovhcloud.com/fr-ca/enterprise/products/hosted-private-cloud/).
-- Être connecté à [l'espace client OVHcloud](/links/manager).
+
+<!-- CP-NAV-START:privatecloud-vmware-vsphere -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [VMware vSphere](/links/control-panel/privatecloud-vmware-vsphere)
+- **Pour accéder à vos services :** `Hosted Private Cloud`{.action} > `Managed VMware vSphere`{.action} > Sélectionnez votre service vSphere
+
+---
+<!-- CP-NAV-END:privatecloud-vmware-vsphere -->
 
 ## En pratique
 
-Connectez-vous à votre [espace client OVHcloud](/links/manager) et dirigez-vous dans la section `Hosted Private Cloud`. Cliquez sur `Private Cloud` dans la barre de services à gauche puis sélectionnez l'infrastructure concernée.
-
-![utilisateur vsphere](images/addMailOnUser01.png){.thumbnail}
-
-Dirigez-vous sur onglet `Utilisateurs`{.action}, cliquez sur `...` à droite de l'utilisateur concerné puis sur`Modifier`{.action} 
+Dirigez-vous sur l'onglet `Utilisateurs`{.action}, cliquez sur `...` à droite de l'utilisateur concerné puis sur`Modifier`{.action} 
 
 ![utilisateur vsphere](images/addMailOnUser02.png){.thumbnail}
 

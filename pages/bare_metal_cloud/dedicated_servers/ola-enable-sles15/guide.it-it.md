@@ -1,18 +1,33 @@
 ---
 title: "Configurare OVHcloud Link Aggregation su un server dedicato (SLES 15)"
 excerpt: "Attiva OVHcloud Link Aggregation sul tuo server dedicato SLES 15."
-updated: 2024-11-26
+updated: 2026-04-20
 ---
+
+<style>
+details>summary {
+    color:rgb(33, 153, 232) !important;
+    cursor: pointer;
+}
+details>summary::before {
+    content:'\25B6';
+    padding-right:1ch;
+}
+details[open]>summary::before {
+    content:'\25BC';
+}
+</style>
 
 ## Obiettivo
 
-La tecnologia OVHcloud Link Aggregation (OLA) è sviluppata dai nostri team per aumentare la disponibilità dei server e migliorare l'efficacia delle connessioni di rete. In pochi click è possibile aggregare le schede di rete e rendere ridondanti i collegamenti di rete. Ciò significa che in caso di guasto di un collegamento, il traffico viene automaticamente reindirizzato verso un altro collegamento disponibile.
+La tecnologia OVHcloud Link Aggregation (OLA) è stata progettata dai team OVHcloud per aumentare la disponibilità dei server e potenziare le connessioni di rete. L'attivazione dell'opzione permette di aggregare in pochi click le schede di rete e rendere i collegamenti ridondati in modo che, in caso di malfunzionamenti, il traffico venga reindirizzato automaticamente verso il collegamento disponibile. La larghezza di banda disponibile viene anche raddoppiata grazie all'aggregazione.
+L'aggregazione si basa sulla tecnologia IEEE 802.3ad, Link Aggregation Control Protocol (LACP).
 
-**Questa guida ti mostra come raggruppare i tuoi NIC (Network Interface Controller) per utilizzarli con il servizio OLA su SLES 15.**
+**Questa guida spiega come configurare le interfacce in aggregazione per utilizzarle con OLA in SLES 15.**
 
 ## Prerequisiti
 
-- [Aver configurato il NIC handle per la funzionalità OVHcloud Link Aggregation dallo Spazio Cliente OVHcloud](/pages/bare_metal_cloud/dedicated_servers/ola-enable-manager)
+- [Configurare OVHcloud Link Aggregation nello Spazio Cliente OVHcloud](/pages/bare_metal_cloud/dedicated_servers/ola-enable-manager)
 
 <!-- CP-NAV-START:baremetal-dedicated-servers -->
 ---
@@ -27,15 +42,46 @@ La tecnologia OVHcloud Link Aggregation (OLA) è sviluppata dai nostri team per 
 
 ## Procedura
 
-Dal momento che i nostri NIC su OLA sono configurati privatamente, non è possibile connettersi in SSH al server. Per accedere al server è quindi necessario utilizzare il tool IPMI.
+Poiché la configurazione dei NIC in OLA è di tipo privato-privato, non sarà possibile accedere al server in SSH. Sarà quindi necessario utilizzare lo strumento IPMI per accedere al server.
 
-Clicca sulla scheda `IPMI`{.action} (1) e poi sul pulsante `Da un applet Java (KVM)`{.action} (2).
+Clicca sulla scheda `IPMI`{.action} (1) e poi sul pulsante `Da una applet Java (KVM)`{.action} (2).
 
 ![remote kvm](images/remote_kvm2022.png){.thumbnail}
 
-Verrà scaricato un software JNLP. Avvia il software per accedere all'IPMI. Accedi utilizzando le informazioni di identificazione associate al server.
+Verrà scaricato un software JNLP. Avvialo per accedere all'IPMI. Accedi utilizzando le informazioni di identificazione associate al server.
 
-Di default, utilizzando un modello OVHcloud, i NIC saranno nominati *eth0* e *eth1*. Se non utilizzi un modello OVHcloud, puoi recuperare i nomi delle interfacce utilizzando il seguente comando:
+Di default, utilizzando un modello OVHcloud, i NIC saranno denominati *eth0* e *eth1*. Se non utilizzi un modello OVHcloud, puoi recuperare i nomi delle interfacce utilizzando il seguente comando:
+
+```bash
+ip a
+```
+
+> [!primary]
+> I valori (indirizzi MAC, indirizzi IP, ecc.) indicati nelle configurazioni e negli esempi seguenti sono forniti a titolo di esempio. Naturalmente è necessario sostituirli con i propri valori.
+>
+
+### Recupero degli indirizzi MAC
+
+Vai alla scheda `Interfacce di rete`{.action} e prendi nota degli indirizzi MAC di ciascuna interfaccia (pubblica/privata) visualizzati in fondo al menu.
+
+![Spazio Cliente OVHcloud](images/ControlPanel.png){.thumbnail}
+
+> [!primary]
+> L'indirizzo MAC dell'interfaccia **pubblica principale** è quello che riceve le offerte DHCP, sia nel sistema operativo del server che in modalità rescue. Questa interfaccia gestisce la connettività pubblica nella configurazione predefinita.
+>
+> Inoltre, l'indirizzo MAC dell'interfaccia **privata principale** è quello con il valore più basso. Nell'immagine di esempio sopra, si tratta dell'indirizzo `a1:b2:c3:d4:e5:d6`.
+>
+
+Una volta che sai quali indirizzi MAC sono associati a ciascun tipo di interfaccia (pubblica/privata), devi recuperare i nomi delle interfacce.
+
+### Recupero dei nomi delle interfacce
+
+> [!primary]
+>
+> Se perdi la connessione di rete al server, segui i passaggi "**Apri KVM**" di [questa guida](/pages/bare_metal_cloud/dedicated_servers/using_ipmi_on_dedicated_servers).
+>
+
+Per recuperare i nomi delle interfacce, esegui il seguente comando:
 
 ```bash
 ip a
@@ -43,105 +89,252 @@ ip a
 
 > [!primary]
 >
-> Il comando restituirà diverse "interfacce". In caso di difficoltà nell'identificazione dei NIC fisici, la prima interfaccia avrà sempre l'indirizzo IP pubblico del server assegnato di default.
+> Questo comando mostrerà numerose interfacce. In caso di difficoltà nel determinare quali siano le interfacce fisiche, l'indirizzo IP pubblico del server è ancora associato di default alla prima interfaccia.
 >
 
-Una volta identificati i nomi dei tuoi due NIC-handle, è necessario creare il NIC-bonding o aggregare i link sul sistema operativo. Per effettuare questa operazione, crea il file di interfacce sull'editor di testo scelto utilizzando il seguente comando:
+Ecco un esempio di output:
 
-```bash
-vi /etc/sysconfig/network/ifcfg-bond0
+```text
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host noprefixroute
+       valid_lft forever preferred_lft forever
+2: ens22f0np0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc mq state UP group default qlen 1000
+    link/ether a1:b2:c3:d4:e5:c6 brd ff:ff:ff:ff:ff:ff
+    inet 203.0.113.1/32 metric 100 scope global dynamic ens22f0np0
+       valid_lft 71613sec preferred_lft 71613sec
+    inet6 2001:db8:1:1b00:203:0:112:0/56 scope global
+       valid_lft forever preferred_lft forever
+    inet6 fe80::a6b2:c3ff:fed4:e5c6/64 scope link
+       valid_lft forever preferred_lft forever
+3: ens22f1np1: <BROADCAST,MULTICAST> mtu 1500 qdisc noop state DOWN group default qlen 1000
+    link/ether a1:b2:c3:d4:e5:c7 brd ff:ff:ff:ff:ff:ff
+4: ens33f0np0: <BROADCAST,MULTICAST> mtu 1500 qdisc noop state DOWN group default qlen 1000
+    link/ether a1:b2:c3:d4:e5:d6 brd ff:ff:ff:ff:ff:ff
+5: ens33f1np1: <BROADCAST,MULTICAST> mtu 1500 qdisc noop state DOWN group default qlen 1000
+    link/ether a1:b2:c3:d4:e5:d7 brd ff:ff:ff:ff:ff:ff
 ```
 
-Aprirà un file di testo vuoto. Per configurare l'interfaccia di aggregazione, inserisci queste righe nel file di testo:
+Una volta determinati i nomi delle interfacce, è possibile configurare l'aggregazione nel sistema operativo.
 
-```bash
-STARTMODE='onboot'
-BOOTPROTO='static'
-IPADDR='10.0.0.1/24'
-BONDING_MASTER='yes'
-BONDING_SLAVE_0='eth0'
-BONDING_SLAVE_1='eth1'
-BONDING_MODULE_OPTS='mode=802.3ad xmit_hash_policy=layer3+4'
-```
+### Configurazione dell'aggregazione delle interfacce
 
-> [!primary]
->
-> Puoi utilizzare qualsiasi indirizzo IP o sottorete privata che desideri.
-> Se il tuo server possiede più di 2 interfacce di rete, puoi aggiungerle nella configurazione inserendo il numero del parametro `BONDING_SLAVE_`, ad esempio `BONDING_SLAVE_2='eth3`.
->
+Seleziona la scheda seguente corrispondente alla configurazione del tuo server:
 
-Salva e lascia il file una volta confermato che l'informazione è corretta.  A questo punto è necessario configurare le due interfacce fisiche. Di default, su un server OVHcloud solo *eth0* dispone di un file di configurazione. Apri il comando:
+- **Due interfacce**: server Advance con due NIC fisiche.
+- **Quattro interfacce - Double LAG**: server Scale e High-Grade con OLA in modalità **Active - Double LAG** (aggregati pubblico + privato). Richiede l'[attivazione di OLA](/pages/bare_metal_cloud/dedicated_servers/ola-enable-manager) nello Spazio Cliente OVHcloud.
+- **Quattro interfacce - Fully Private**: server Scale e High-Grade con OLA in modalità **Active - Fully Private** (unico aggregato privato per vRack). Richiede l'[attivazione di OLA](/pages/bare_metal_cloud/dedicated_servers/ola-enable-manager) nello Spazio Cliente OVHcloud.
 
-```bash
-vi /etc/sysconfig/network/ifcfg-eth0
-```
+> [!tabs]
+> Due interfacce
+>> Crea il file di configurazione dell'aggregato `/etc/sysconfig/network/ifcfg-bond0`:
+>>
+>> **IP statico**
+>>
+>> ```bash
+>> STARTMODE='onboot'
+>> BOOTPROTO='static'
+>> IPADDR='203.0.113.1/32'
+>> BONDING_MASTER='yes'
+>> BONDING_SLAVE_0='ens22f0np0'
+>> BONDING_SLAVE_1='ens22f1np1'
+>> BONDING_MODULE_OPTS='mode=802.3ad xmit_hash_policy=layer3+4 lacp_rate=fast'
+>> ```
+>>
+>> Configura poi ogni interfaccia fisica. Modifica `/etc/sysconfig/network/ifcfg-ens22f0np0`:
+>>
+>> ```bash
+>> BOOTPROTO='none'
+>> STARTMODE='hotplug'
+>> LLADDR=a1:b2:c3:d4:e5:c6
+>> ```
+>>
+>> Crea `/etc/sysconfig/network/ifcfg-ens22f1np1`:
+>>
+>> ```bash
+>> BOOTPROTO='none'
+>> STARTMODE='hotplug'
+>> LLADDR=a1:b2:c3:d4:e5:c7
+>> ```
+>>
+>> /// details | DHCP
+>>
+>> ```bash
+>> STARTMODE='onboot'
+>> BOOTPROTO='dhcp4'
+>> BONDING_MASTER='yes'
+>> BONDING_SLAVE_0='ens22f0np0'
+>> BONDING_SLAVE_1='ens22f1np1'
+>> BONDING_MODULE_OPTS='mode=802.3ad xmit_hash_policy=layer3+4 lacp_rate=fast'
+>> ```
+>>
+>> I file di configurazione delle interfacce fisiche rimangono invariati come sopra.
+>>
+>> ///
+>>
+> Quattro interfacce - Double LAG
+>> Questa configurazione raggruppa le interfacce pubbliche in `bond0` (con IP pubblico) e le interfacce private in `bond1` (per vRack).
+>>
+>> Crea il file di configurazione dell'aggregato pubblico `/etc/sysconfig/network/ifcfg-bond0`:
+>>
+>> **IP statico**
+>>
+>> ```bash
+>> STARTMODE='onboot'
+>> BOOTPROTO='static'
+>> IPADDR='203.0.113.1/32'
+>> BONDING_MASTER='yes'
+>> BONDING_SLAVE_0='ens22f0np0'
+>> BONDING_SLAVE_1='ens22f1np1'
+>> BONDING_MODULE_OPTS='mode=802.3ad xmit_hash_policy=layer3+4 lacp_rate=fast'
+>> ```
+>>
+>> Crea il file di configurazione dell'aggregato privato `/etc/sysconfig/network/ifcfg-bond1`:
+>>
+>> ```bash
+>> STARTMODE='onboot'
+>> BOOTPROTO='static'
+>> IPADDR='10.0.0.1/24'
+>> BONDING_MASTER='yes'
+>> BONDING_SLAVE_0='ens33f0np0'
+>> BONDING_SLAVE_1='ens33f1np1'
+>> BONDING_MODULE_OPTS='mode=802.3ad xmit_hash_policy=layer3+4 lacp_rate=fast'
+>> ```
+>>
+>> Configura poi ogni interfaccia fisica. Modifica `/etc/sysconfig/network/ifcfg-ens22f0np0`:
+>>
+>> ```bash
+>> BOOTPROTO='none'
+>> STARTMODE='hotplug'
+>> LLADDR=a1:b2:c3:d4:e5:c6
+>> ```
+>>
+>> Crea `/etc/sysconfig/network/ifcfg-ens22f1np1`:
+>>
+>> ```bash
+>> BOOTPROTO='none'
+>> STARTMODE='hotplug'
+>> LLADDR=a1:b2:c3:d4:e5:c7
+>> ```
+>>
+>> Crea `/etc/sysconfig/network/ifcfg-ens33f0np0`:
+>>
+>> ```bash
+>> BOOTPROTO='none'
+>> STARTMODE='hotplug'
+>> LLADDR=a1:b2:c3:d4:e5:d6
+>> ```
+>>
+>> Crea `/etc/sysconfig/network/ifcfg-ens33f1np1`:
+>>
+>> ```bash
+>> BOOTPROTO='none'
+>> STARTMODE='hotplug'
+>> LLADDR=a1:b2:c3:d4:e5:d7
+>> ```
+>>
+>> /// details | DHCP (solo bond0)
+>>
+>> Per l'aggregato pubblico, utilizza DHCP:
+>>
+>> ```bash
+>> STARTMODE='onboot'
+>> BOOTPROTO='dhcp4'
+>> BONDING_MASTER='yes'
+>> BONDING_SLAVE_0='ens22f0np0'
+>> BONDING_SLAVE_1='ens22f1np1'
+>> BONDING_MODULE_OPTS='mode=802.3ad xmit_hash_policy=layer3+4 lacp_rate=fast'
+>> ```
+>>
+>> L'aggregato privato (`ifcfg-bond1`) e tutti i file di configurazione delle interfacce fisiche rimangono invariati come sopra.
+>>
+>> ///
+>>
+> Quattro interfacce - Fully Private
+>> Questa configurazione aggrega tutte le interfacce fisiche in un unico aggregato esclusivamente per l'utilizzo con vRack. Non è prevista connettività IP pubblica.
+>>
+>> > [!warning]
+>> >
+>> > In seguito all'implementazione di OLA in modalità Fully Private, l'IP pubblico non è più accessibile. Assicurati di disporre di un mezzo di accesso alternativo (ad esempio tramite un altro server nel vRack o via KVM/IPMI) prima di applicare questa configurazione.
+>> >
+>>
+>> Crea il file di configurazione dell'aggregato `/etc/sysconfig/network/ifcfg-bond0`:
+>>
+>> ```bash
+>> STARTMODE='onboot'
+>> BOOTPROTO='static'
+>> IPADDR='10.0.0.1/24'
+>> BONDING_MASTER='yes'
+>> BONDING_SLAVE_0='ens22f0np0'
+>> BONDING_SLAVE_1='ens22f1np1'
+>> BONDING_SLAVE_2='ens33f0np0'
+>> BONDING_SLAVE_3='ens33f1np1'
+>> BONDING_MODULE_OPTS='mode=802.3ad xmit_hash_policy=layer3+4 lacp_rate=fast'
+>> ```
+>>
+>> Configura poi ogni interfaccia fisica. Modifica `/etc/sysconfig/network/ifcfg-ens22f0np0`:
+>>
+>> ```bash
+>> BOOTPROTO='none'
+>> STARTMODE='hotplug'
+>> LLADDR=a1:b2:c3:d4:e5:c6
+>> ```
+>>
+>> Crea `/etc/sysconfig/network/ifcfg-ens22f1np1`:
+>>
+>> ```bash
+>> BOOTPROTO='none'
+>> STARTMODE='hotplug'
+>> LLADDR=a1:b2:c3:d4:e5:c7
+>> ```
+>>
+>> Crea `/etc/sysconfig/network/ifcfg-ens33f0np0`:
+>>
+>> ```bash
+>> BOOTPROTO='none'
+>> STARTMODE='hotplug'
+>> LLADDR=a1:b2:c3:d4:e5:d6
+>> ```
+>>
+>> Crea `/etc/sysconfig/network/ifcfg-ens33f1np1`:
+>>
+>> ```bash
+>> BOOTPROTO='none'
+>> STARTMODE='hotplug'
+>> LLADDR=a1:b2:c3:d4:e5:d7
+>> ```
+>>
+>> > [!primary]
+>> >
+>> > In modalità Fully Private, l'aggregato utilizza l'indirizzo MAC dell'interfaccia **privata principale**. Il campo `IPADDR` deve essere impostato sul tuo indirizzo IP privato vRack.
+>> >
 
-Di default, il file mostrerà questo testo:
+### Applicazione della configurazione
 
-```bash
-# Created by cloud-init on instance boot automatically, do not edit.
-#
-BOOTPROTO=dhcp4
-IPADDR6=2001:41d0:408:dd00::/56
-LLADDR=10:70:fd:c5:14:00
-STARTMODE=auto
-```
-
-> [!warning]
->
-> Gli indirizzi IP saranno differenti per ogni server.
->
-
-È necessario modificare questo file per visualizzare questo testo:
-
-```bash
-BOOTPROTO='none'
-#IPADDR6=2001:41d0:408:dd00::/56
-LLADDR=10:70:fd:c5:14:00
-STARTMODE='hotplug'
-```
-
-> [!primary]
->
-> L'indirizzo hardware (indirizzo MAC) del NIC handle può essere recuperato utilizzando il comando `ip utilizzato in precedenza`. Sarà il numero accanto a `link/ether` del risultato visualizzato.
->
-
-L'*#* davanti a una linea indica che il server non saprà questa linea durante la lettura del file. significa che queste righe non saranno prese in carico durante la creazione del file di interfaccia per *eth0*.
-
-Per creare il file di configurazione *eth1*, utilizza questo comando:
-
-```bash
-vi /etc/sysconfig/network/ifcfg-eth1
-```
-
-Questa volta il file sarà vuoto. Aggiungi questo contenuto:
-
-```bash
-BOOTPROTO='none'
-STARTMODE='hotplug'
-LLADDR=0c:42:a1:a7:29:c2
-```
-
-Riavvia il servizio di rete utilizzando questo comando:
+Applica la configurazione ricaricando tutte le interfacce con wicked:
 
 ```bash
 wicked ifreload all
 ```
 
-Per verificare che questa aggregazione funzioni, effettua un ping verso un altro server sulla stessa vRack. Se l'operazione funziona, il processo di configurazione è completato. In caso contrario, verifica la configurazione o prova a riavviare il server.
+Questa operazione potrebbe richiedere alcuni secondi per costruire l'interfaccia di aggregazione. Per verificare che l'aggregato funzioni correttamente, effettua il ping di un altro server nella stessa vRack. Se funziona, la procedura è conclusa. In caso contrario, verifica nuovamente le configurazioni o prova a riavviare il server.
 
-Per verificare le impostazioni utilizzate dall'interfaccia ifcfg-bond0, utilizza questo comando:
+Puoi anche verificare le impostazioni dell'aggregato con il seguente comando:
 
 ```bash
-/proc/net/bonding/bond0
+cat /proc/net/bonding/bond0
 ```
 
 ## Per saperne di più
 
-[Configurare l'aggregazione dei link OLA nel tuo Spazio Cliente](/pages/bare_metal_cloud/dedicated_servers/ola-enable-manager).
+[Configurare OVHcloud Link Aggregation nello Spazio Cliente OVHcloud](/pages/bare_metal_cloud/dedicated_servers/ola-enable-manager)
 
-[Come configurare il NIC handle per aggregare i link OVHcloud su Debian 9](/pages/bare_metal_cloud/dedicated_servers/ola-enable-debian9).
+[Come configurare la NIC per OVHcloud Link Aggregation in Debian 12 o Ubuntu 24.04 con Netplan](/pages/bare_metal_cloud/dedicated_servers/lacp-enable-netplan)
 
-[Come configurare il tuo NIC handle per aggregare i link OVHcloud con Windows Server 2019](/pages/bare_metal_cloud/dedicated_servers/ola-enable-w2k19).
+[Configurare un NIC per il servizio OVHcloud Link Aggregation in Debian 9 a 11](/pages/bare_metal_cloud/dedicated_servers/ola-enable-debian9)
+
+[Configurare un NIC per il servizio OVHcloud Link Aggregation in Windows Server 2019](/pages/bare_metal_cloud/dedicated_servers/ola-enable-w2k19)
 
 Contatta la nostra [Community di utenti](/links/community).

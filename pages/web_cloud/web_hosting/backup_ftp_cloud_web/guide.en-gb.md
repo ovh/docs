@@ -52,6 +52,7 @@ Unlike OVHcloud shared hosting, you cannot restore the FTP space in one click fr
 
 A link to download the backup is generated, then sent by email to the email address associated with the Cloud Web hosting plan’s admin NIC handle.
 
+<!-- CP-STEPS-START:access-ftp-backup -->
 Click on the tabs below to view each of the **5** steps.
 
 > [!tabs]
@@ -88,6 +89,7 @@ Click on the tabs below to view each of the **5** steps.
 >> ![Backup progress message](/pages/assets/screens/control_panel/product-selection/web-cloud/cloud-web/ftp-ssh/message-backup-progress.png){.thumbnail}
 >>
 >> The backup takes between 10 and 15 minutes.
+<!-- CP-STEPS-END:access-ftp-backup -->
 
 ### Download the backup
 

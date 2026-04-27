@@ -1,7 +1,7 @@
 ---
 title: "Endereços IP do monitoring OVHcloud para servidores dedicados"
 excerpt: "Encontre os endereços IP a autorizar na sua firewall para que o monitoring OVHcloud continue a funcionar no seu servidor"
-updated: 2025-06-04
+updated: 2026-04-13
 ---
 
 ## Objetivo
@@ -37,7 +37,7 @@ Para implementar uma firewall restritiva, nomeadamente no ICMP, e continuar a be
 |Reverse|IP|Protocolo|
 |---|---|---|
 |netmon-rbx-probe|92.222.184.0/24|icmp|
-|netmon-sbg-probe|92.222.185.0/24|icmp|
+|netmon-sbg-probe|51.38.25.100/32|icmp|
 |netmon-gra-probe|92.222.186.0/24|icmp|
 |netmon-bhs-probe|167.114.37.0/24|icmp|
 |netmon-sgp-probe|139.99.1.144/28|icmp|
@@ -46,9 +46,8 @@ Para implementar uma firewall restritiva, nomeadamente no ICMP, e continuar a be
 |netmon-syd-probe|139.99.187.247/32|icmp|
 |netmon-tor-probe|72.251.7.222/32|icmp|
 |netmon-eri-probe|51.195.135.163/32|icmp|
-|netmon-lim-probe|51.38.117.56|icmp|
-|netmon-sbg-probe|51.38.25.100|icmp|
-|netmon-par-probe|57.130.4.212|icmp|
+|netmon-lim-probe|51.38.117.56/32|icmp|
+|netmon-par-probe|57.130.4.212/32|icmp|
 |ping.ovh.net|213.186.33.13|icmp|
 |---|---|---|
 ||xxx.xxx.xxx.250 (xxx.xxx.xxx.aaa sendo o IP do servidor)|icmp|

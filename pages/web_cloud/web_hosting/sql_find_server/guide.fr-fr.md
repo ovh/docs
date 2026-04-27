@@ -32,6 +32,7 @@ Au cours de l'utilisation de vos services, vous pouvez être amené à devoir co
 
 ## En pratique
 
+<!-- CP-STEPS-START:find-database-server -->
 Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3** étapes.
 
 > [!tabs]
@@ -61,6 +62,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3*
 >> >
 >> > - L'**Adresse du serveur** fait partie des identifiants de connexion spécifiques à votre base de données et permet de connecter votre site web à celle-ci.
 >> > - Le **Serveur** représente l'infrastructure qui héberge votre base de données, ainsi que d'autres bases. Le nom du serveur permet de vérifier s'il est concerné par une opération de maintenance ou un incident déclaré sur notre page [Web Cloud Status](https://web-cloud.status-ovhcloud.com/).
+<!-- CP-STEPS-END:find-database-server -->
 
 ## Aller plus loin <a name="go-further"></a>
 

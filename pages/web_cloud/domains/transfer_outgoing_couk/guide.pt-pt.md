@@ -66,6 +66,7 @@ Se ainda não conhece a TAG necessária, pode solicitá-la ao novo prestador de 
 >
 > Deve estar ligado como [administrador](/pages/account_and_service_management/account_information/managing_contacts) para efetuar estas ações.
 
+<!-- CP-STEPS-START:change-outgoing-tag -->
 Clique nos separadores abaixo para visualizar cada uma das **3** etapas.
 
 > [!tabs]
@@ -86,6 +87,7 @@ Clique nos separadores abaixo para visualizar cada uma das **3** etapas.
 >> Na nova janela, introduza a TAG do novo agente de registo e clique em `Confirmar`{.action}.
 >>
 >> ![transferência de saída](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/outgoing-transfer-tag-confirmation.png){.thumbnail}
+<!-- CP-STEPS-END:change-outgoing-tag -->
 
 Se não conseguir alterar a TAG do nome de domínio a partir da Área de Cliente, pode solicitá-la ao registry Nominet. Encontre mais informações no [site oficial da Nominet](https://www.nominet.uk/domain-support/).
 

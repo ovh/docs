@@ -133,6 +133,7 @@ Adding your AD FS as a trusted identity provider is done in the [OVHcloud Contro
 
 Open the [SAML SSO](/links/control-panel/iam-saml-sso) page.
 
+<!-- CP-STEPS-START:configure-sso-connection -->
 In the `SSO connection`{.action} section, fill in the XML metadata of your AD FS. The "Group Attribute Name" is optional in this case. Click on `Confirm`{.action}.
 
 You can keep local users by ticking the `Keep active OVHcloud users` box.
@@ -152,6 +153,7 @@ Click the link below `SSO service URL` to view more information on it.
 The `...`{.action} button enables you to update or delete the SSO, and to see details.
 
 ![OVHcloud connect SSO step 6](images/ovhcloud_user_management_connect_sso_6.png){.thumbnail}
+<!-- CP-STEPS-END:configure-sso-connection -->
 
 The trust of your AD FS as identity provider is thus established but you still have to add groups to your OVHcloud account.
 
@@ -186,6 +188,7 @@ You can also verify this in the SAML assertion:
 
 This means that you need to add the `manager@<my-domain>.com` group to your OVHcloud account, attaching a role to it. Otherwise, your OVHcloud account wouldn't know what is the user allowed to do.
 
+<!-- CP-STEPS-START:add-user-groups -->
 To add this group, go to the `Identities`{.action} section, then to the `User groups`{.action} tab. Then click the `Declare a group`{.action} button, enter the name of the group and select the associated role:
 
 ![AD FS user management groups](images/ovhcloud_user_management_groups_1.png){.thumbnail}
@@ -195,6 +198,7 @@ To add this group, go to the `Identities`{.action} section, then to the `User gr
 You can then check that the group is added to your OVHcloud account in the `Groups` section:
 
 ![AD FS user management groups](images/ovhcloud_user_management_groups_3.png){.thumbnail}
+<!-- CP-STEPS-END:add-user-groups -->
 
 When you connect with the Active Directory user "johndoe" now, your OVHcloud account will recognize that the user has the "REGULAR" role, specified by its group.
 

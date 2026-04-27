@@ -133,6 +133,7 @@ Das Hinzufügen Ihrer AD FS als vertrauenswürdiger Identity Provider erfolgt im
 
 Öffnen Sie die Seite [SAML SSO](/links/control-panel/iam-saml-sso).
 
+<!-- CP-STEPS-START:configure-sso-connection -->
 Im Bereich `SSO-Verbindung`{.action} geben Sie die XML-Metadaten Ihres AD FS ein. In diesem Fall ist das `Name des Gruppenattributs` optional. Klicken Sie auf `Bestätigen`{.action}.
 
 Sie können die lokalen Benutzer beibehalten, indem Sie das Kontrollkästchen `Aktive OVHcloud User beibehalten` aktivieren.
@@ -152,6 +153,7 @@ Für weitere Informationen klicken Sie auf den Link unter der `URL des SSO Diens
 Mit dem Button `...`{.action} können Sie den SSO aktualisieren oder löschen und die Details einsehen.
 
 ![OVHcloud SSO-Verbindung Schritt 6](images/ovhcloud_user_management_connect_sso_6.png){.thumbnail}
+<!-- CP-STEPS-END:configure-sso-connection -->
 
 Ihr AD FS gilt nun als vertrauenswürdiger Identity Provider. Dennoch müssen im OVHcloud Account Gruppen hinzugefügt werden.
 
@@ -186,6 +188,7 @@ Sie können dies auch in der SAML *Assertion* überprüfen:
 
 Das bedeutet, dass Sie die Gruppe `manager@<my-domain>.com` zu Ihrem OVHcloud Account hinzufügen müssen und damit einer Rolle zuweisen. Andernfalls kann Ihr OVHcloud Account nicht feststellen, welche Rechte der Benutzer hat.
 
+<!-- CP-STEPS-START:add-user-groups -->
 Um diese Gruppe hinzuzufügen, gehen Sie zum Abschnitt `Identitäten`{.action} und dann zum Tab `Nutzergruppen`{.action}. Klicken Sie dann auf die Schaltfläche `Eine Gruppe anmelden`{.action}, geben Sie den Namen der Gruppe ein und wählen Sie die zugehörige Rolle aus:
 
 ![AD FS Benutzer-Verwaltungsgruppen](images/ovhcloud_user_management_groups_1.png){.thumbnail}
@@ -195,6 +198,7 @@ Um diese Gruppe hinzuzufügen, gehen Sie zum Abschnitt `Identitäten`{.action} u
 Anschließend können Sie überprüfen, ob die Gruppe zu Ihrem OVHcloud Account im Bereich `Gruppen` hinzugefügt wurde:
 
 ![AD FS Benutzer-Verwaltungsgruppen](images/ovhcloud_user_management_groups_3.png){.thumbnail}
+<!-- CP-STEPS-END:add-user-groups -->
 
 Wenn Sie sich später mit dem Active Directory Benutzer "John Doe" verbinden, erkennt Ihr OVHcloud Account, dass der Benutzer die von seiner Gruppe definierte Rolle "REGULAR" hat.
 

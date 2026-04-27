@@ -1,7 +1,7 @@
 ---
 title: Capacités et limitations pour Analytics avec Kafka MirrorMaker (EN)
 excerpt: Discover the capabilities and limitations of Analytics for Kafka MirrorMaker
-updated: 2026-02-17
+updated: 2026-04-15
 ---
 
 ## Objective
@@ -49,25 +49,11 @@ Additionally, Kafka Connect is available at OVHcloud.
 
 Three plans are available:
 
-- *Essential*
-- *Business/Production*
-- *Enterprise/Advanced*
-
-Here is an overview of the various plans' capabilities:
-
-| Plan                  | Number of nodes by default | Additional nodes |
-| --------------------- | -------------------------- | ---------------- |
-| *Essential*           | 1                          | No               |
-| *Business/Production* | 3                          | No               |
-| *Enterprise/Advanced* | 6                          | No               |
+- **Essential**: 1 node
+- **Business/Production**: 3 nodes
+- **Enterprise/Advanced**: 6 nodes
 
 Your choice of plan affects the number of nodes your cluster can run as well as the SLA.
-
-#### Nodes
-
-- **Essential**: the cluster is delivered with 1 node by default.
-- **Business/Production**: the cluster is delivered with 3 nodes by default.
-- **Enterprise/Advanced**: the cluster is delivered with 6 nodes by default.
 
 #### License type
 

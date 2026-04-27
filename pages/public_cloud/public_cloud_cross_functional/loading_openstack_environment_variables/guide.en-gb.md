@@ -28,6 +28,7 @@ By setting OpenStack environment variables on your desktop, you can use the Open
 
 ### Step 1: Retrieve the variables
 
+<!-- CP-STEPS-START:retrieve-openrc-file -->
 To retrieve your environment variables, you can download the OpenRC file from the OpenStack user account you have created.
 
 In the left-hand menu, click on `Users & Roles`{.action} under **Settings**. Next, click on the `...`{.action} to the right of your user, then select `Download OpenStack's RC file`{.action}.
@@ -35,6 +36,7 @@ In the left-hand menu, click on `Users & Roles`{.action} under **Settings**. Nex
 ![openstack-variables](images/download_rc_file.png){.thumbnail}
 
 An OpenRC file corresponds to a specific user and zone. You cannot manage multiple zones in the same file.
+<!-- CP-STEPS-END:retrieve-openrc-file -->
 
 ### Step 2: Set the variables
 

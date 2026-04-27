@@ -42,6 +42,7 @@ Użytkownicy lokalni to jeden z typów tożsamości, które można skonfigurowa�
 
 #### Dodaj użytkownika
 
+<!-- CP-STEPS-START:add-a-user -->
 Na stronie [Tożsamości IAM](/links/control-panel/iam-identities) kliknij na `Dodaj użytkownika`{.action}.
 
 Pojawi się okno, w którym należy uzupełnić wymagane pola. Kliknij przycisk `Zatwierdź`{.action}, aby utworzyć użytkownika.
@@ -73,9 +74,11 @@ Przykład: **1234-567-89/johnsmith**.
 Przy użyciu tego identyfikatora nowy użytkownik będzie mógł zalogować się do [Panelu klienta OVHcloud](/links/manager).
 
 Będzie również mógł zmienić swoje hasło i zabezpieczyć swój własny dostęp do Twojego konta, włączając procedurę weryfikacji dwuetapowej (która dotyczy wyłącznie jego dostępu jako użytkownika). W tym celu zapoznaj się z [przewodnikiem dotyczącym wdrażania weryfikacji dwuetapowej](/pages/account_and_service_management/account_information/secure-ovhcloud-account-with-2fa).
+<!-- CP-STEPS-END:add-a-user -->
 
 #### Zarządzanie użytkownikami
 
+<!-- CP-STEPS-START:manage-users -->
 Możesz edytować, aktywować, dezaktywować lub usunąć użytkownika, klikając przycisk `…`{.action} znajdujący się po prawej stronie użytkownika.
 
 ![users-management](images/usersmanagement4.png){.thumbnail}
@@ -83,11 +86,13 @@ Możesz edytować, aktywować, dezaktywować lub usunąć użytkownika, klikają
 Edycja użytkownika pozwala na aktualizację jego adresu e-mail, uprawnień oraz opisu.
 
 ![users-management](images/usersmanagement6.png){.thumbnail}
+<!-- CP-STEPS-END:manage-users -->
 
 ### Zarządzanie grupami
 
 #### Dodaj grupę
 
+<!-- CP-STEPS-START:add-a-group -->
 Aby dodać grupę, przejdź do zakładki `Grupy użytkowników`{.action} i kliknij przycisk `Zadeklaruj grupę`{.action}.
 
 ![users-management](images/usersmanagement7.png){.thumbnail}
@@ -104,9 +109,11 @@ Grupy przyznają domyślny poziom przywileju użytkownikom, których dotyczą, w
 | Tylko Odczyt | Dostęp w trybie odczytu do Panelu klienta OVHcloud i do wszystkich jego sekcji. |
 | Ograniczony administrator | Dostęp w trybie zapisu do Panelu klienta OVHcloud i do wszystkich jego sekcji, **z wyjątkiem** zarządzania użytkownikami. |
 | Administrator | Dostęp w trybie zapisu do Panelu klienta OVHcloud i wszystkich jego sekcji **w tym** zarządzanie użytkownikami. |
+<!-- CP-STEPS-END:add-a-group -->
 
 #### Zarządzaj grupami
 
+<!-- CP-STEPS-START:manage-groups -->
 Możesz zaktualizować lub usunąć grupę, klikając przycisk `...`{.action} po prawej stronie nazwy grupy.
 
 ![users-management](images/usersmanagement9.png){.thumbnail}
@@ -114,6 +121,7 @@ Możesz zaktualizować lub usunąć grupę, klikając przycisk `...`{.action} po
 Po zmianie grupy możesz zmienić jej opis i rolę.
 
 ![users-management](images/usersmanagement10.png){.thumbnail}
+<!-- CP-STEPS-END:manage-groups -->
 
 ## Zarządzanie uprawnieniami
 

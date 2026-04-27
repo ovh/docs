@@ -33,6 +33,7 @@ La barre d'outils ainsi que les raccourcis vous permettront d'accéder aux fonct
 
 ### Étape 1 : Ajouter des contacts
 
+<!-- CP-STEPS-START:add-contacts -->
 #### Ajout d'une liste de contacts
 
 Une liste de contacts peut être importée via un fichier .csv ou .txt.
@@ -52,17 +53,21 @@ Pour ajouter un carnet d'adresses, cliquez sur l'onglet `Contacts`{.action} puis
 ![firstsms](images/firstsms04.png){.thumbnail}
 
 Consultez le guide [Gérer mes carnets d'adresses SMS](/pages/web_cloud/messaging/sms/gerer_mes_carnets_dadresses_sms) afin d'en savoir plus.
+<!-- CP-STEPS-END:add-contacts -->
 
 ### Étape 2 : Créer un expéditeur
 
+<!-- CP-STEPS-START:create-sender -->
 Par défaut, l'envoi de vos SMS depuis un compte OVHcloud en France se fait depuis un numéro court permettant la réponse. Il peut être plus intéressant de formuler la demande d'un expéditeur alphanumérique, depuis l'onglet `Expéditeurs`{.action}, afin que vos SMS soient envoyés au nom de votre société ou de votre organisme.
 
 ![firstsms](images/firstsms05.png){.thumbnail}
 
 À cet effet, vous pouvez consulter [la section dédiée au choix de votre expéditeur SMS au sein du guide « Envoyer des sms depuis mon espace client »](/pages/web_cloud/messaging/sms/envoyer_des_sms_depuis_mon_espace_client#etape-3-choisir-votre-expediteur-sms).
+<!-- CP-STEPS-END:create-sender -->
 
 ### Étape 3 : L'envoi d'une campagne SMS
 
+<!-- CP-STEPS-START:send-sms-campaign -->
 L'onglet `Message et campagne`{.action} vous permettra d'accéder aux options d'envoi, à l'historique de vos SMS envoyés et reçus ainsi qu'à vos envois de SMS planifiés dans le cadre d'envois différés.
 
 ![firstsms](images/firstsms02.png){.thumbnail}
@@ -86,6 +91,7 @@ Composez alors votre message et choisissez entre un envoi immédiat ou planifié
 Pour plus d'informations sur la taille des SMS à caractère commercial ainsi que sur le format des messages, consultez notre guide dédié à [l'envoi de messages depuis l'espace client OVHcloud](/pages/web_cloud/messaging/sms/envoyer_des_sms_depuis_mon_espace_client#taille-des-sms-a-caractere-commercial) .
 
 Il ne vous reste plus qu'à cliquer sur le bouton `Envoi`{.action} pour que votre campagne soit envoyée ou planifiée.
+<!-- CP-STEPS-END:send-sms-campaign -->
 
 ## Aller plus loin
 

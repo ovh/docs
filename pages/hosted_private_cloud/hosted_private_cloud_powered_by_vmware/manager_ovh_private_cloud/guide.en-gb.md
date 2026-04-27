@@ -13,19 +13,23 @@ The OVHcloud Hosted Private Cloud Control Panel enables you to easily manage you
 ## Requirements
 
 - A [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/)
-- Access to the [OVHcloud Control Panel](/links/manager)
+
+<!-- CP-NAV-START:privatecloud-vmware-vsphere -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [VMware vSphere](/links/control-panel/privatecloud-vmware-vsphere)
+- **Navigation path:** `Hosted Private Cloud`{.action} > `Managed VMware vSphere`{.action} > Select your vSphere service
+
+---
+<!-- CP-NAV-END:privatecloud-vmware-vsphere -->
 
 ## Instructions
 
-### Interface Access
-
-Navigate to the [OVHcloud Control Panel](/links/manager) and log on with your administrative credentials.
-
-![LOGIN](images/en01login.png){.thumbnail}
-
 ### Hosted Private Cloud View
 
-Go to the `Hosted Private Cloud`{.action} tab and select your service under `Private Cloud`{.action} in the left-hand navigation bar. You can rename your infrastructure by clicking the `Pencil`{.action} button in the center of the page.
+You can rename your infrastructure by clicking the `Pencil`{.action} button in the center of the page.
 
 ![HOSTED](images/en02dashboard.png){.thumbnail}
 

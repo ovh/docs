@@ -39,6 +39,7 @@ Le HLR Lookup permet également de nettoyer vos listes de numéros en identifian
 ---
 <!-- CP-NAV-END:telecom-sms -->
 
+<!-- CP-STEPS-START:hlr-access -->
 ![espace client Telecom SMS](/pages/assets/screens/control_panel/product-selection/telecom/tpl-telecom-03-fr-sms.png){.thumbnail}
 
 Sélectionnez l'onglet `Message et campagne`{.action} > `Gestion des SMS`{.action}.
@@ -48,20 +49,25 @@ Sélectionnez l'onglet `Message et campagne`{.action} > `Gestion des SMS`{.actio
 Cliquez sur `HLR`{.action}.
 
 ![Section HLR dans l'espace client](images/img_4792.png){.thumbnail}
+<!-- CP-STEPS-END:hlr-access -->
 
 ### Nouvelle requête HLR
 
+<!-- CP-STEPS-START:hlr-new-request -->
 Renseignez le numéro à tester puis cliquez sur `Envoyer la requête`{.action}.
 
 ![Formulaire de nouvelle requête HLR](images/img_4793.png){.thumbnail}
 
 Chaque requête est facturée 0,1 crédit SMS. Consultez la [grille tarifaire SMS](/links/telecom/sms-prices) pour plus de détails.
+<!-- CP-STEPS-END:hlr-new-request -->
 
 ### Consulter les requêtes passées
 
+<!-- CP-STEPS-START:hlr-past-requests -->
 Les résultats de vos requêtes apparaissent dans le tableau en bas de page.
 
 ![Tableau des résultats de requêtes HLR](images/tableau-historique.png){.thumbnail}
+<!-- CP-STEPS-END:hlr-past-requests -->
 
 ### Les différents états
 
@@ -79,6 +85,7 @@ Les rapports HLR indiquent :
 
 ### Importation du fichier de destinataires
 
+<!-- CP-STEPS-START:import-contacts -->
 Rendez-vous dans la partie `Contacts`{.action} > `Créer une liste de contacts`{.action} et ajoutez votre fichier au format `.csv` ou `.txt`.
 
 ![Créer une liste de contacts](images/creer-liste-contacts.png){.thumbnail}
@@ -86,9 +93,11 @@ Rendez-vous dans la partie `Contacts`{.action} > `Créer une liste de contacts`{
 ![Ajout fichier contacts](images/ajouter-fichier-contacts.png){.thumbnail}
 
 Consultez le guide « [Liste de destinataires SMS](/pages/web_cloud/messaging/sms/liste_de_destinataire_sms) » pour plus de détails.
+<!-- CP-STEPS-END:import-contacts -->
 
 ### Nettoyer le fichier
 
+<!-- CP-STEPS-START:clean-contact-list -->
 Une fois votre carnet chargé sur l'espace client, sélectionnez-le et procédez au nettoyage.
 
 ![Sélection du carnet de contacts à nettoyer](images/nettoyer-liste.png){.thumbnail}
@@ -102,6 +111,7 @@ Une fois votre carnet chargé sur l'espace client, sélectionnez-le et procédez
 
 Le nettoyage de la base dédoublonnera vos contacts et éliminera ceux qui sont invalides.
 Le fichier nettoyé remplacera l'ancien qui sera sauvegardé et accessible. Vous recevrez un rapport par e-mail à la fin de l'opération.
+<!-- CP-STEPS-END:clean-contact-list -->
 
 ## Aller plus loin
 

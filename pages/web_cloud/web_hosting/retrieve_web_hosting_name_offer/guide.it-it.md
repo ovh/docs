@@ -29,6 +29,7 @@ Nell'utilizzo dei tuoi servizi, potresti aver bisogno del nome della tua offerta
 
 ## Procedura
 
+<!-- CP-STEPS-START:find-plan-name -->
 Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **2** passi.
 
 > [!tabs]
@@ -45,6 +46,7 @@ Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **2** pa
 >> ![Plan](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-plan-pro.png){.thumbnail}
 >>
 >> Sotto questa dicitura, troverai il nome della tua offerta di hosting web (ad esempio: Perso, Pro, Performance, ecc.).
+<!-- CP-STEPS-END:find-plan-name -->
 
 ## Per saperne di più <a name="go-further"></a>
 

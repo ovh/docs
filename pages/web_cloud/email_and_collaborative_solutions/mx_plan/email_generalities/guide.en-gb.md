@@ -46,6 +46,7 @@ If you have just purchased an MX Plan solution, this means you have email addres
 
 **Continue with the email technology used by your MX Plan service**.
 
+<!-- CP-STEPS-START:identify-technology -->
 > [!primary]
 >
 > **Identify the email technology for your MX Plan solution.**
@@ -55,6 +56,7 @@ If you have just purchased an MX Plan solution, this means you have email addres
 > - In the `General information`{.action} tab, note the technology used under the **Webmail** mention in the `Subscription`{.action} or `Connection`{.action} box.
 >
 > ![mx plan](images/technology-email.png){.thumbnail .w-500}
+<!-- CP-STEPS-END:identify-technology -->
 
 **Contents**
 
@@ -71,6 +73,7 @@ If you have just purchased an MX Plan solution, this means you have email addres
 
 To find out how to create an email address, click on the tab corresponding to the email technology used by your MX Plan service:
 
+<!-- CP-STEPS-START:create-email -->
 > [!tabs]
 > **Roundcube**
 >>
@@ -108,6 +111,7 @@ To find out how to create an email address, click on the tab corresponding to th
 >>
 >> ![email](images/mxplan-starter-new-step3.png){.thumbnail .w-500}
 >>
+<!-- CP-STEPS-END:create-email -->
 
 ### Use your email addresses <a name="consult-emails"></a>
 
@@ -221,10 +225,11 @@ Do you want to redirect your emails to another recipient, create an alias or sys
 
 To do this, click on the tab corresponding to your email technology:
 
+<!-- CP-STEPS-START:redirections -->
 > [!tabs]
 > **Roundcube**
 >>
->> To add a redirection or an alias, click on the `Emails`{.action} tab of your MX Plan service, then click on the `Manage redirections`{.action} button on the right.  
+>> To add a redirection or an alias, click on the `Emails`{.action} tab of your MX Plan service, then click on the `Manage redirections`{.action} button on the right.
 >> The table of redirections that are already active appears. On the right, click `Add a redirection`{.action} to start creating your redirection or alias.
 >>
 >> - `From address`: Enter the email address you would like to redirect.<br>
@@ -246,6 +251,7 @@ To do this, click on the tab corresponding to your email technology:
 >> - `Choose a copy method`: Define whether you want to keep a copy of the email received at the targeted email address (`From address`) or directly redirect to the redirection address (`To address`) without saving a copy.
 >>
 >> To understand how to use redirections and aliases on your MX Plan service, please read our full guide: “[Use email redirections](/pages/web_cloud/email_and_collaborative_solutions/common_email_features/feature_redirections)”.
+<!-- CP-STEPS-END:redirections -->
 
 ### Automatic reply <a name="autoreply"></a>
 
@@ -253,10 +259,11 @@ It is important to be able to set up an automatic response in case you cannot vi
 
 Select the tab corresponding to the email technology of your MX Plan solution:
 
+<!-- CP-STEPS-START:autoreply -->
 > [!tabs]
 > **Roundcube**
 >>
->> To add an automatic reply to one of your email addresses, click on the `Emails`{.action} tab of your MX Plan service, then click the `Manage replies`{.action} button on the right.  
+>> To add an automatic reply to one of your email addresses, click on the `Emails`{.action} tab of your MX Plan service, then click the `Manage replies`{.action} button on the right.
 >> The table of auto-replies that are already active is displayed. On the right, click `Add auto-reply`{.action} to start creating your redirection or alias.
 >>
 >> For more details on setting up an automatic response from your MX Plan service in the OVHcloud Control Panel, please read our guide on “[MX Plan - Creating an automatic response on an email address](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/feature_auto_responses)”.
@@ -267,8 +274,9 @@ Select the tab corresponding to the email technology of your MX Plan solution:
 >>
 > **OWA**
 >>
->> You can set up an automatic reply directly by logging in to your email account via Webmail. For further details, please refer to the section "Adding automatic replies" in our guide on [Using an email address via the Outlook Web App (OWA)](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa).
+>> You can set up an automatic reply directly by logging in to your email account via Webmail. For further details, please refer to the section “Adding automatic replies” in our guide on [Using an email address via the Outlook Web App (OWA)](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa).
 >>
+<!-- CP-STEPS-END:autoreply -->
 
 ## Go further <a name="go-further"></a>
 

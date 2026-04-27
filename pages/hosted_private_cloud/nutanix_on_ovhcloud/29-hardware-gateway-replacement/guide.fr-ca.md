@@ -22,9 +22,28 @@ Contactez le service commercial OVHcloud pour vous aider à choisir le bon serve
 ## Prérequis
 
 - Disposer d'un cluster Nutanix dans votre compte OVHcloud.
-- Être connecté à votre [espace client OVHcloud](/links/manager).
-- Être connecté sur le cluster via Prism Central. 
+- Être connecté sur le cluster via Prism Central.
 - Disposer d'un [serveur dédié](/links/bare-metal/bare-metal) dans votre compte OVHcloud avec plusieurs cartes réseaux, certaines sur le réseau public, d'autres sur le réseau privé. Ce serveur doit être sur le même Data Center que le cluster Nutanix.
+
+<!-- CP-NAV-START:privatecloud-nutanix -->
+<!-- CP-NAV-START:baremetal-dedicated-servers -->
+---
+
+### Accès à l'espace client OVHcloud
+
+**Nutanix :**
+
+- **Lien direct :** [Nutanix](/links/control-panel/privatecloud-nutanix)
+- **Pour accéder à vos services :** `Hosted Private Cloud`{.action} > `Nutanix`{.action} > Sélectionnez votre cluster
+
+**Serveurs dédiés :**
+
+- **Lien direct :** [Serveurs dédiés](/links/control-panel/baremetal-dedicated-servers)
+- **Pour accéder à vos services :** `Bare Metal Cloud`{.action} > `Serveurs dédiés`{.action} > Sélectionnez votre serveur
+
+---
+<!-- CP-NAV-END:baremetal-dedicated-servers -->
+<!-- CP-NAV-END:privatecloud-nutanix -->
 
 ## En pratique
 
@@ -40,11 +59,11 @@ Pour remplacer la VM OVHgateway, nous allons utiliser ces paramètres :
 
 ### Récupération des informations nécessaires au déploiement de votre serveur
 
-Dans votre [espace client OVHcloud](/links/manager), cliquez sur `Hosted Private Cloud`{.action} dans la barre d'onglets. Sélectionnez votre cluster Nutanix à gauche et notez le nom du vRack associé à votre cluster Nutanix dans `Réseau privé (vRack)`.
+Sélectionnez votre cluster Nutanix et notez le nom du vRack associé dans `Réseau privé (vRack)`.
 
 ![01 get nutanix vrack 01](images/01-get-nutanix-vrack01.png){.thumbnail}
 
-Rendez-vous ensuite sur l'onglet `Bare Metal Cloud`{.action} de votre espace clietn. Sélectionnez, dans la barre de menu à gauche, votre serveur dédié et cliquez sur `Interfaces réseau`{.action}.
+Sélectionnez, dans la barre de menu à gauche, votre serveur dédié et cliquez sur `Interfaces réseau`{.action}.
 
 ![02 getnetworkinformation 01](images/02-getnetworkinformation01.png){.thumbnail}
 

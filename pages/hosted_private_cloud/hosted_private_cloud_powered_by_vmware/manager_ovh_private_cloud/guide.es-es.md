@@ -12,14 +12,22 @@ El área de cliente de OVHcloud ofrece múltiples opciones de configuración de 
 
 ## Requisitos
 
-- Estar conectado al [área de cliente de OVHcloud](/links/manager), en la sección `Servidor`{.action}, y dentro, en `Private Cloud`{.action}.
 - Haber contratado un servicio [Private Cloud OVHcloud](https://www.ovhcloud.com/es-es/enterprise/products/hosted-private-cloud/).
+
+<!-- CP-NAV-START:privatecloud-vmware-vsphere -->
+---
+
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [VMware vSphere](/links/control-panel/privatecloud-vmware-vsphere)
+- **Ruta de navegación:** `Hosted Private Cloud`{.action} > `Managed VMware vSphere`{.action} > Seleccione su servicio vSphere
+
+---
+<!-- CP-NAV-END:privatecloud-vmware-vsphere -->
 
 ## Procedimiento
 
 ### Información general
-
-Una vez en la sección `Servidor`{.action} del [área de cliente OVHcloud](/links/manager), haga clic en `Private Cloud`{.action} y aparecerá la información general de su Private Cloud.
 
 ![Información general](images/controlpanel1.png){.thumbnail}
 

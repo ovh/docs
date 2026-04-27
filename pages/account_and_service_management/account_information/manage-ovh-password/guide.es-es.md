@@ -79,6 +79,7 @@ Si estuviese comprometida, le recomendamos encarecidamente [que la cambie de inm
 
 #### Desde el área de cliente de OVHcloud
 
+<!-- CP-STEPS-START:change-password-cp -->
 - En la página [Seguridad de la cuenta](/links/control-panel/account-security), haga clic en `Editar`{.action} (a la derecha de "Contraseña").
 
 ![manage-ovh-password](/pages/assets/screens/control_panel/product-selection/right-column/access-my-account/edit-account-password.png){.thumbnail}
@@ -93,10 +94,13 @@ Si estuviese comprometida, le recomendamos encarecidamente [que la cambie de inm
 
 - A continuación, aparece un mensaje indicando que la operación se ha realizado satisfactoriamente. Haga clic en el botón `Continuar`{.action} debajo de este mensaje para ser redirigido a la página de identificación. A continuación, introduzca su usuario y su nueva contraseña.
 
+<!-- CP-STEPS-END:change-password-cp -->
+
 <a name="lost-password"></a>
 
 #### En caso de haber olvidado la contraseña actual
 
+<!-- CP-STEPS-START:change-password-forgotten -->
 - Haga clic en `¿Ha olvidado el identificador o la contraseña?`{.action} cuando acceda a la ventana de identificación del área de cliente de OVHcloud.
 
 ![manage-ovh-password](images/account-password-modif-forgotten-step1.png){.thumbnail}
@@ -119,6 +123,8 @@ Si estuviese comprometida, le recomendamos encarecidamente [que la cambie de inm
 >
 > Al guardar la nueva contraseña, todas las sesiones activas en su cuenta de OVHcloud se cerrarán automáticamente.
 >
+
+<!-- CP-STEPS-END:change-password-forgotten -->
 
 ## Más información <a name="gofurther"></a>
 

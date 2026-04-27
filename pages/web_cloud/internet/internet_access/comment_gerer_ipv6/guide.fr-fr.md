@@ -34,6 +34,7 @@ La pénurie d'IPv4 avançant de plus en plus, l'utilisation d'une IPv6 en parall
 > Par défaut, nous activons une IPv6 sur chacun de nos accès Internet livrés. Aucune manipulation n'est nécessaire si celle-ci est déjà activée.
 >
 
+<!-- CP-STEPS-START:activer-ipv6 -->
 Depuis votre [espace client OVHcloud](/links/control-panel/telecom-xdsl-fttx), cliquez sur votre accès à Internet FTTH ou xDSL dans le cadre `Accès Internet` à droite, puis positionnez-vous sur l'onglet `Mon accès`{.action}.
 
 Dans le cadre « Caractéristiques », reportez-vous aux éléments de la partie `IPs`. Vous retrouverez dans cette dernière les adresses IP associées à votre accès à Internet. Vérifiez l'état de l'adresse IPv6 afin de savoir si celle-ci est activée ou non :
@@ -53,6 +54,7 @@ Dans le cadre « Caractéristiques », reportez-vous aux éléments de la partie
 Pour activer ou désactiver l'IPv6 sur votre accès Internet, il suffit de cocher ou décocher la case :
 
 ![IPv6 status](images/IPv6-activate.png){.thumbnail}
+<!-- CP-STEPS-END:activer-ipv6 -->
 
 ### Étape 2 : Vérifier que l'IPv6 fonctionne sur votre accès
 

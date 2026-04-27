@@ -63,8 +63,9 @@ Ensuite, nous utiliserons cette Floating IP pour nous connecter à l'instance (V
 
 #### Depuis l’espace client OVHcloud
 
+<!-- CP-STEPS-START:attach-floating-ip -->
 > [!success]
-> Cliquez sur l'un des deux onglets ci-dessous selon que vous souhaitez associer une Floating IP à une nouvelle instance (**Option 1**) ou à une instance déjà existante (**Option 2**).
+> Cliquez sur l’un des deux onglets ci-dessous selon que vous souhaitez associer une Floating IP à une nouvelle instance (**Option 1**) ou à une instance déjà existante (**Option 2**).
 
 > [!tabs]
 > **Option 1**
@@ -141,6 +142,7 @@ Ensuite, nous utiliserons cette Floating IP pour nous connecter à l'instance (V
 >>
 >> ![generate order](images/createfiporder.png){.thumbnail}
 >>
+<!-- CP-STEPS-END:attach-floating-ip -->
 
 #### Détacher une Floating IP
 
@@ -148,6 +150,7 @@ Cette fonctionnalité est actuellement disponible uniquement via [l’API OpenSt
 
 #### Supprimer une Floating IP
 
+<!-- CP-STEPS-START:delete-floating-ip -->
 Cliquez sur `IP Publiques`{.action} dans le menu de gauche sous **Network**.
 
 Dans l'onglet `Floating IP`{.action}, cliquez sur le bouton `...`{.action} à côté de l'IP correspondante et sélectionnez `Supprimer`{.action}.
@@ -155,6 +158,7 @@ Dans l'onglet `Floating IP`{.action}, cliquez sur le bouton `...`{.action} à c�
 ![delete floating ip](images/deletefip.png){.thumbnail}
 
 Dans la fenêtre qui s'affiche, cliquez sur `Confirmer`{.action}. L'opération peut prendre quelques minutes.
+<!-- CP-STEPS-END:delete-floating-ip -->
 
 
 #### Depuis l'API OpenStack

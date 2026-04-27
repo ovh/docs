@@ -26,12 +26,15 @@ Votre ligne téléphonique chez OVHcloud vous permet de recevoir et d'émettre d
 ---
 <!-- CP-NAV-END:telecom-voip-fax -->
 
+<!-- CP-STEPS-START:nav-voip-selection -->
 ![espace client Telecom VoIP](/pages/assets/screens/control_panel/product-selection/telecom/tpl-telecom-02-fr-voip.png){.thumbnail}
+<!-- CP-STEPS-END:nav-voip-selection -->
 
 ## En pratique
 
 ### Gérer les appels simultanés
 
+<!-- CP-STEPS-START:gerer-appels-simultanes -->
 Dans l'onglet `Gestion des appels`{.action}, cliquez sur `Appels simultanés`{.action}.
 
 ![appels-simultanes](images/simultaneous-call-step1.png){.thumbnail}
@@ -44,6 +47,7 @@ La page qui s'affiche vous permet de visualiser le nombre d'appels simultanés i
 Dès que vous êtes prêt, modifiez le nombre d'appels simultanés grâce aux flèches, puis suivez les étapes qui s'affichent. Pour chaque ajout, n'oubliez pas de payer le bon de commande qui s'affichera.
 
 ![appels-simultanes](images/simultaneous-call-step2.png){.thumbnail}
+<!-- CP-STEPS-END:gerer-appels-simultanes -->
 
 ### Utiliser les appels simultanés
 

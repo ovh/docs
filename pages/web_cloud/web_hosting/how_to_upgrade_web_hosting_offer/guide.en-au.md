@@ -51,6 +51,7 @@ In your [OVHcloud Control Panel](/links/manager), you can increase the capacity 
 > If you would like to change your subscription to a lower plan, please follow the steps in our guide on "[Migrating your website and emails to OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh)".
 >
 
+<!-- CP-STEPS-START:modify-subscription -->
 To modify your subscription, click on the tabs below to view each of the **2** steps.
 
 > [!tabs]
@@ -67,6 +68,7 @@ To modify your subscription, click on the tabs below to view each of the **2** s
 >> ![change_plan](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/pro-change-plan.png){.thumbnail}
 >>
 >> Then select your new subscription and its duration. Confirm the corresponding contracts, then click `Send`{.action}.
+<!-- CP-STEPS-END:modify-subscription -->
 
 ### Special cases
 
@@ -80,6 +82,7 @@ With the [Boost option](/links/web/hosting-options-boost), available on our *Per
 
 If the **Boost** option is right for you, please find instructions below on how to **enable** or **disable** this option on your web hosting plan.
 
+<!-- CP-STEPS-START:enable-boost -->
 To **enable the Boost option**, click on the tabs below to view each of the **2** steps.
 
 > [!tabs]
@@ -94,7 +97,9 @@ To **enable the Boost option**, click on the tabs below to view each of the **2*
 >>  In the **General information** box on the page that opens, click the `...`{.action} button to the right of **Boost**, then `Boost my hosting plan`{.action}.
 >>
 >> ![boost enable](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/boost-my-hosting-plan.png){.thumbnail}
+<!-- CP-STEPS-END:enable-boost -->
 
+<!-- CP-STEPS-START:disable-boost -->
 To **disable the Boost option**, click on the tabs below to view each of the **3** steps.
 
 > [!tabs]
@@ -117,6 +122,7 @@ To **disable the Boost option**, click on the tabs below to view each of the **3
 >> The usage table for the Boost option will appear. Click `Disable boost plan`{.action}.
 >>
 >> ![boost disable](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/boost-my-hosting-plan/deactivate-the-boost-plan.png){.thumbnail}
+<!-- CP-STEPS-END:disable-boost -->
 
 #### Billing when you change plans <a name="billing"></a>
 

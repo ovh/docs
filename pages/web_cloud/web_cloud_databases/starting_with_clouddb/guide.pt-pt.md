@@ -30,6 +30,8 @@ Por predefinição, a solução Web Cloud Databases está associada à rede de a
 
 ### Ativação do servidor Web Cloud Databases incluído no plano de alojamento web
 
+<!-- CP-STEPS-START:activate-wcdb -->
+
 Se o seu plano de alojamento inclui a opção Web Cloud Databases, clique nos separadores abaixo para visualizar cada uma das **3** etapas.
 
 > [!tabs]
@@ -49,7 +51,11 @@ Se o seu plano de alojamento inclui a opção Web Cloud Databases, clique nos se
 >>
 >> Siga as instruções apresentadas para determinar o tipo e a versão do servidor Web Cloud Databases. Ficará depois acessível na coluna da esquerda, em `Web Cloud Databases`{.action}.
 
+<!-- CP-STEPS-END:activate-wcdb -->
+
 ### Consultar as informações gerais da instância
+
+<!-- CP-STEPS-START:general-info -->
 
 Clique nos separadores abaixo para visualizar cada uma das **2** etapas.
 
@@ -83,11 +89,15 @@ Clique nos separadores abaixo para visualizar cada uma das **2** etapas.
 >>
 >> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/general-information/general-information.png){.thumbnail}
 
+<!-- CP-STEPS-END:general-info -->
+
 ### Criar uma base de dados
 
 > [!primary]
 >
 > Este passo não se aplica ao sistema de bases de dados Redis.
+
+<!-- CP-STEPS-START:create-database -->
 
 Clique nos separadores abaixo para visualizar cada uma das **4** etapas.
 
@@ -125,6 +135,8 @@ Clique nos separadores abaixo para visualizar cada uma das **4** etapas.
 >>
 >> ![web-cloud-databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/databases/add-database-confirmation.png){.thumbnail}
 
+<!-- CP-STEPS-END:create-database -->
+
 ### Criar um utilizador
 
 > [!primary]
@@ -132,6 +144,8 @@ Clique nos separadores abaixo para visualizar cada uma das **4** etapas.
 > Este passo não se aplica ao sistema de bases de dados Redis.
 
 Se criou o utilizador ao mesmo tempo que a base de dados no passo anterior, este passo é facultativo. No entanto, um projeto pode exigir vários utilizadores com permissões diferentes (por exemplo, leitura/escrita para um e apenas leitura para outro).
+
+<!-- CP-STEPS-START:create-user -->
 
 Se o seu projeto não necessitar de um utilizador adicional, pode avançar para o passo seguinte. Caso contrário, clique nos separadores abaixo para visualizar cada uma das **4** etapas.
 
@@ -156,6 +170,8 @@ Se o seu projeto não necessitar de um utilizador adicional, pode avançar para 
 >>
 >> Introduza um "nome de utilizador" e uma "palavra-passe" e clique em `Validar`{.action}.
 
+<!-- CP-STEPS-END:create-user -->
+
 Se precisar de alterar as permissões de um utilizador existente, consulte o nosso guia "[Web Cloud Databases - Alterar as permissões de um utilizador](/pages/web_cloud/web_cloud_databases/modify_rights_for_users)".
 
 ### Importar uma base de dados
@@ -169,6 +185,8 @@ Para importar uma base de dados, consulte o nosso guia "[Restaurar e importar um
 São descritos vários métodos de importação.
 
 ### Autorizar um endereço IP
+
+<!-- CP-STEPS-START:authorize-ip -->
 
 Para que a instância Web Cloud Databases funcione, é necessário indicar os IPs ou intervalos de IP autorizados a conectar-se às bases de dados.
 
@@ -216,6 +234,8 @@ Para isso, clique nos separadores abaixo para visualizar cada uma das **4** etap
 >>
 >> Depois de introduzir as informações, clique no botão `Validar`{.action}.
 
+<!-- CP-STEPS-END:authorize-ip -->
+
 ### Autorizar as ligações a partir de um alojamento web OVHcloud <a name="trustip"></a>
 
 Por predefinição, a solução Web Cloud Databases está automaticamente associada aos alojamentos web da OVHcloud. Se desejar, pode desativar o acesso dos alojamentos web da OVHcloud ao Web Cloud Databases.
@@ -223,6 +243,8 @@ Por predefinição, a solução Web Cloud Databases está automaticamente associ
 Para isso, consulte os casos particulares do nosso guia "[Web Cloud Databases - Como autorizar um endereço IP?](/pages/web_cloud/web_cloud_databases/authorise_IP)" para ativar ou desativar o acesso dos alojamentos web da OVHcloud ao Web Cloud Databases.
 
 ### Associar o website à base de dados
+
+<!-- CP-STEPS-START:link-website-database -->
 
 Agora que a base de dados está criada, um ou mais utilizadores têm permissões sobre ela e pelo menos um endereço IP ou os alojamentos web da OVHcloud foram autorizados na instância Web Cloud Databases, só falta associar o website à base de dados. Este passo pode ser efetuado de várias formas, em função do website ou do CMS (WordPress, Joomla!, etc.) utilizado, bem como da etapa em que se encontra se estiver a instalar um website.
 
@@ -262,6 +284,8 @@ Para as obter, clique nos separadores abaixo para visualizar cada uma das **2** 
 > O campo `porta`{.action} pode não estar disponível na configuração do seu website. Deve adicionar este campo após o nome de host do servidor, separando-os com *:*.
 >
 > Por exemplo, para o nome de host `aaXXXXX-XXX.eu.clouddb.ovh.net` com a porta SQL `12345`, deverá introduzir `aaXXXXX-XXX.eu.clouddb.ovh.net:12345` na secção "Host" / "Nome de host".
+
+<!-- CP-STEPS-END:link-website-database -->
 
 ### Obter os logs do servidor Web Cloud Databases
 

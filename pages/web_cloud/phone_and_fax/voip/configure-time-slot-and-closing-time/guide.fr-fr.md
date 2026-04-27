@@ -45,6 +45,7 @@ Poursuivez la lecture de cette documentation en fonction de la configuration que
 
 #### Étape 1 : accéder à la gestion des plages horaires
 
+<!-- CP-STEPS-START:gerer-plages-horaires-etape1 -->
 Dans l'onglet `Gestion des appels`{.action}, cliquez sur `Gérer les plages horaires`{.action}.
 
 ![gerer-plages-horaires](images/manage-time-slot-step1.png){.thumbnail}
@@ -58,9 +59,11 @@ La page qui s'affiche vous donne accès à trois parties afin de gérer vos plag
 |Configuration des plages horaires|Définissez sur un agenda les plages horaires où vous êtes joignable. Pour correspondre au mieux à votre organisation, vous pourrez utiliser les redirections que vous configurerez et les associer à des plages horaires.|
 
 ![gerer-plages-horaires](images/manage-time-slot-step2.png){.thumbnail}
+<!-- CP-STEPS-END:gerer-plages-horaires-etape1 -->
 
 #### Étape 2 : configurer les redirections
 
+<!-- CP-STEPS-START:gerer-plages-horaires-etape2 -->
 > [!success]
 >
 > Pour configurer et personnaliser le répondeur d'une ligne, consultez le guide « [Configurer et consulter le répondeur de sa ligne](/pages/web_cloud/phone_and_fax/voip/configurer-consulter-repondeur-ligne-ovh) »
@@ -78,24 +81,29 @@ Pour modifier un créneau, cliquez sur l'icône en forme de roue dentée à côt
 Sachez que les communications vers un numéro non enregistré chez OVHcloud (externe) seront décomptées de votre forfait ou facturées selon le [forfait auquel vous avez souscrit](/links/telecom/telephonie-voip) (voir la note en bas de page) et [les tarifs en vigueur](/links/telecom/telephonie-decouvrez-tarifs-telephonie).
 
 ![gerer-plages-horaires](images/manage-time-slot-step3.png){.thumbnail}
+<!-- CP-STEPS-END:gerer-plages-horaires-etape2 -->
 
 #### Étape 3 : configurer les plages horaires
 
-Une fois les créneaux configurés, définissez les plages horaires sur l'agenda. Il existe deux possibilités de le faire : cliquer sur un horaire et modifier la plage associée ou cliquer sur l’horaire de début souhaité puis glisser en maintenant le clic jusqu’à l’horaire de fin. Vous devez ensuite valider l’ajout de la plage horaire grâce au bouton `Ajouter`{.action}.
+<!-- CP-STEPS-START:gerer-plages-horaires-etape3 -->
+Une fois les créneaux configurés, définissez les plages horaires sur l’agenda. Il existe deux possibilités de le faire : cliquer sur un horaire et modifier la plage associée ou cliquer sur l’horaire de début souhaité puis glisser en maintenant le clic jusqu’à l’horaire de fin. Vous devez ensuite valider l’ajout de la plage horaire grâce au bouton `Ajouter`{.action}.
 
 Vous pouvez également déplacer des plages existantes. Pour ce faire, cliquez sur ces dernières et, en maintenant le clic, glissez-les dans le tableau des horaires.
 
 ![gerer-plages-horaires](images/manage-time-slot-step4.png){.thumbnail}
 
 Dès que toutes vos plages horaires sont configurées, cliquez sur le bouton `Valider`{.action} pour sauvegarder ces changements. Vous avez aussi la possibilité de cliquer sur `Appliquer à plusieurs numéros`{.action} pour dupliquer les paramètres sur d’autres files d’appels.
+<!-- CP-STEPS-END:gerer-plages-horaires-etape3 -->
 
-#### Étape 4 : activer l'utilisation des plages horaires
+#### Étape 4 : activer l’utilisation des plages horaires
 
+<!-- CP-STEPS-START:gerer-plages-horaires-etape4 -->
 Il ne reste plus qu’à activer les plages horaires. Dans la partie `Configuration générale` de la page, cliquez sur `Oui`{.action} puis sur `Valider`{.action}.
 
-Vous pouvez également personnaliser le délai avant renvoi en « hors plage horaire », si une redirection ne s'effectue pas (lorsqu'une ligne est indisponible, par exemple).
+Vous pouvez également personnaliser le délai avant renvoi en « hors plage horaire », si une redirection ne s’effectue pas (lorsqu’une ligne est indisponible, par exemple).
 
 ![gerer-plages-horaires](images/manage-time-slot-step5.png){.thumbnail}
+<!-- CP-STEPS-END:gerer-plages-horaires-etape4 -->
 
 ### Gérer les fermetures exceptionnelles <a name="fermetures-exceptionnelles"></a>
 
@@ -106,6 +114,7 @@ Pour compléter vos plages horaires, vous avez la possibilité de créer des fer
 > Les fermetures exceptionnelles complètent [vos plages horaires paramétrées](/pages/web_cloud/phone_and_fax/voip/configure-time-slot-and-closing-time#gerer-les-plages-horaires). Il est donc indispensable que ces dernières soient activées pour que les fermetures exceptionnelles s'appliquent.
 >
 
+<!-- CP-STEPS-START:gerer-fermetures-exceptionnelles -->
 Dans l'onglet `Gestion des appels`{.action}, cliquez sur `Gérer les fermetures exceptionnelles`{.action}.
 
 ![gerer-fermetures-exceptionnelles](images/manage-closing-time-step1.png){.thumbnail}
@@ -125,6 +134,7 @@ Une fois les informations renseignées, cliquez sur `Créer l'événement`{.acti
 Enfin, dans la partie `Paramètres` de la page, assurez-vous que le « **fuseau horaire** » paramétré est correct et que les plages horaires sont activées. Si vous effectuez un changement, cliquez sur le bouton `Valider`{.action} pour le sauvegarder.
 
 ![gerer-fermetures-exceptionnelles](images/manage-closing-time-step2.png){.thumbnail}
+<!-- CP-STEPS-END:gerer-fermetures-exceptionnelles -->
 
 ## Aller plus loin
 

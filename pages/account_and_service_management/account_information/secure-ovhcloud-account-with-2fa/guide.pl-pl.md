@@ -102,6 +102,7 @@ Na stronie [Bezpieczeństwo konta](/links/control-panel/account-security) klikni
 
 > [!tabs]
 > SMS
+>> <!-- CP-STEPS-START:enable-2fa-sms -->
 >> Wybierz metodę SMS-ową i kliknij na `Dalej`{.action}.
 >>
 >> ![2FA sms](images/2024-002-sms-choice.png){.thumbnail width="400"}<br>
@@ -114,7 +115,9 @@ Na stronie [Bezpieczeństwo konta](/links/control-panel/account-security) klikni
 >>
 >> ![2FA sms](images/2024-002-sms-code.png){.thumbnail width="400"}<br>
 >> Weryfikacja dwuetapowa jest teraz aktywna. Można też dodać kolejne numery.
+>> <!-- CP-STEPS-END:enable-2fa-sms -->
 > Aplikacja Mobilna
+>> <!-- CP-STEPS-START:enable-2fa-otp -->
 >> Wybierz metodę za pomocą aplikacji mobilnej i kliknij przycisk `Dalej`{.action}.
 >>
 >> ![2FA mobileapp](images/2024-003-otp-choice.png){.thumbnail width="400"}<br>
@@ -124,7 +127,9 @@ Na stronie [Bezpieczeństwo konta](/links/control-panel/account-security) klikni
 >>
 >> ![2FA mobileapp](images/2024-003-otp-code.png){.thumbnail width="400"}<br>
 >> Weryfikacja dwuetapowa jest teraz aktywna.
+>> <!-- CP-STEPS-END:enable-2fa-otp -->
 > Klucz bezpieczeństwa
+>> <!-- CP-STEPS-START:enable-2fa-u2f -->
 >> Wybierz metodę z wykorzystaniem klucza sprzętowego i kliknij na `Dalej`{.action}.
 >>
 >> ![2FA securitykey](images/2024-004-u2f-choice.png){.thumbnail width="400"}<br>
@@ -137,11 +142,13 @@ Na stronie [Bezpieczeństwo konta](/links/control-panel/account-security) klikni
 >>
 >> Po rozpoznaniu klucza możesz także dodać opis.
 >> Weryfikacja dwuetapowa jest teraz aktywna.
+>> <!-- CP-STEPS-END:enable-2fa-u2f -->
 
 Po dodaniu pierwszej metody możesz również **dodać jedną lub dwie inne metody**, aby mieć więcej sposobów logowania się do swojego konta.
 
 ### Etap 2 - Zapisz kody zapasowe <a name="codes"></a>
 
+<!-- CP-STEPS-START:save-backup-codes -->
 Przy pierwszym dodaniu weryfikacji dwuetapowej w Panelu klienta wyświetlanych jest 10 jednorazowych kodów zapasowych **jednorazowych**.
 
 **Zachowaj je w bezpiecznym miejscu**. Zalecamy, aby przechowywać je w menedżerze haseł, takim jak [KeePass](https://keepass.info/) lub [Bitwarden](https://bitwarden.com/) (obie aplikacje są bezpłatne).
@@ -151,6 +158,7 @@ Przy pierwszym dodaniu weryfikacji dwuetapowej w Panelu klienta wyświetlanych j
 Możesz wygenerować lub usunąć kody zapasowe w Panelu klienta:
 
 ![2FA](images/emergency-codes.png){.thumbnail}
+<!-- CP-STEPS-END:save-backup-codes -->
 
 > [!warning]
 >
@@ -201,11 +209,13 @@ Jeśli Twoje urządzenie (telefon komórkowy/smartfon/klucz sprzętowy) zostanie
 > - prawidłowymi kodami zapasowymi.
 >
 
+<!-- CP-STEPS-START:delete-device -->
 Aby usunąć urządzenie, przejdź na stronę [Bezpieczeństwo konta](/links/control-panel/account-security) i kliknij `...`{.action} po prawej stronie Twojego urządzenia do usunięcia, a następnie wybierz `Usuń`{.action}.
 
 ![2FA](images/2024-006-delete-device.png){.thumbnail}
 
 Na urządzeniu, które chcesz usunąć, zostanie wysłany ostatni kod weryfikacyjny. W wyświetlonym oknie wpisz ten kod, a następnie kliknij `Zatwierdź`{.action}, aby zakończyć usuwanie.
+<!-- CP-STEPS-END:delete-device -->
 
 Jeśli nie masz dostępu do urządzenia, które chcesz usunąć, nie będziesz mógł usunąć go samodzielnie z Panelu klienta OVHcloud.
 W takim przypadku **skontaktuj się bezpośrednio** z naszymi zespołami pomocy, [tworząc zgłoszenie z Centrum pomocy](https://help.ovhcloud.com/csm?id=csm_get_help) lub postępując zgodnie z procedurą opisaną [poniżej](#2FA-deletion).
@@ -222,9 +232,11 @@ Aby w pełni wyłączyć weryfikację dwuetapową na Twoim koncie OVHcloud, usu�
 
 Aby usunąć każde urządzenie, zapoznaj się z [częścią niniejszego przewodnika](#delete-device).
 
+<!-- CP-STEPS-START:disable-2fa-codes -->
 Po usunięciu wszystkich urządzeń, wyłącz kody zapasowe, klikając przycisk `Wyłącz kody 2FA`{.action}.
 
 ![2FA kody](images/disabling-codes.png){.thumbnail}
+<!-- CP-STEPS-END:disable-2fa-codes -->
 
 #### Jeśli nie masz już dostępu do Panelu klienta OVHcloud <a name="2FA-deletion"></a>
 

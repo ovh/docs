@@ -86,7 +86,9 @@ Para más información, consulte nuestra guía [Proteger su cuenta de OVHcloud c
 
 Puede modificar la información de su cuenta. Acceda a su [perfil de usuario](/links/control-panel/account-profile).
 
+<!-- CP-STEPS-START:save-profile-changes -->
 Modifique sus datos y haga clic en el botón `Guardar los cambios`{.action}.
+<!-- CP-STEPS-END:save-profile-changes -->
 
 > [!warning]
 >
@@ -95,6 +97,7 @@ Modifique sus datos y haga clic en el botón `Guardar los cambios`{.action}.
 
 #### Editar la dirección de correo electrónico principal
 
+<!-- CP-STEPS-START:changing-primary-email -->
 Si desea cambiar su dirección de correo electrónico principal, deberá validarla mediante un código enviado a su dirección de correo electrónico principal actual. Una vez recibido el código, haga clic en el botón `He recibido el código de verificación`{.action}.
 
 ![ID cliente](images/nichandle07.png){.thumbnail}
@@ -102,6 +105,7 @@ Si desea cambiar su dirección de correo electrónico principal, deberá validar
 Introduzca el código en el campo `Código de validación` y acepte.
 
 ![ID cliente](images/nichandle08.png){.thumbnail}
+<!-- CP-STEPS-END:changing-primary-email -->
 
 > [!primary]
 >
@@ -109,11 +113,13 @@ Introduzca el código en el campo `Código de validación` y acepte.
 
 #### Cambiar el tipo de cuenta
 
+<!-- CP-STEPS-START:changing-account-type -->
 Al editar su perfil, haga clic en el `tipo de cuenta`. Un menú desplegable le permite definir el tipo de cuenta correspondiente a su situación.
 
 ![ID cliente](images/nichandle09.png){.thumbnail}
 
 Una vez introducidos los datos, haga clic en el botón `Aceptar`{.action}.
+<!-- CP-STEPS-END:changing-account-type -->
 
 #### Ejercer mis derechos sobre mis datos personales
 

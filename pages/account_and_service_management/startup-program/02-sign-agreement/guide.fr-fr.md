@@ -31,6 +31,7 @@ Pour participer au Startup Program d'OVHcloud, la signature du contrat est une �
 
 Vous devez accéder au contrat directement dans votre espace client.
 
+<!-- CP-STEPS-START:sign-contract -->
 Assurez-vous de vous connecter avec le compte que vous avez utilisé pour l’inscription au Startup Program. Dans [Mes offres et services](/links/control-panel/billing-services), sélectionnez l’onglet `Contrats`{.action}.
 
 ![mes services - contrats](images/02-services-contracts.png){.thumbnail}
@@ -45,3 +46,4 @@ Cliquez à nouveau sur le bouton `...`{.action} et sélectionnez `Accepter` pour
 Après la signature, vos crédits seront crédités sur votre compte sous 48 heures ouvrées et vous pourrez profiter pleinement des avantages du programme.
 
 Votre contrat signé restera disponible dans l’onglet `Contrats`{.action} de votre espace client pour être consulté à tout moment.
+<!-- CP-STEPS-END:sign-contract -->
