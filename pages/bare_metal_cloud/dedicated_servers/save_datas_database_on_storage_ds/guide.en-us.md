@@ -1,5 +1,5 @@
 ---
-title: "Back Up Data and Databases on a Dedicated Server"
+title: "Back up Data and Databases on a Dedicated Server"
 excerpt: "Back up your data and databases to the integrated storage space on your OVHcloud dedicated server in five steps."
 updated: 2018-09-12
 ---
