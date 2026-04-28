@@ -313,6 +313,7 @@ Avant de créer votre première tâche, veuillez tenir compte des considération
 >> Cliquez sur votre bucket source et allez dans l'onglet `Jobs`{.action}. Vous devriez pouvoir voir toutes les tâches nouvellement créées.
 >> 
 >> L'onglet affiche les informations suivantes pour chaque tâche :
+>>
 >> - ID : un identifiant unique qui identifie une tâche
 >> - Date de création : l'horodatage de création de la tâche au format MM/dd/aaaa HH:mm
 >> - Statut : Créé | En préparation | Actif | Terminé | Échoué
