@@ -13,7 +13,7 @@ This guide walks you through connecting to OVHcloud using a **third-party networ
 Make sure you have:
 
 - ✅ An **OVHcloud account** with billing configured
-- ✅ A contract or account with a **supported provider** (see [Providers](1.3_providers))
+- ✅ A contract or account with a **supported provider** (see [Providers](../1.3_providers))
 - ✅ A **router** that supports BGP peering (OVHcloud Connect Provider is always a Layer 3 service)
 - ✅ A planned **IP addressing scheme** and **ASN**
 
@@ -71,7 +71,7 @@ Make sure you have:
 5. Review pricing and submit the order.
 6. OVHcloud generates a **pairing key** (also called a service key) for your provider.
 
-For detailed steps, see [Order OVHcloud Connect Provider](3.2_order_provider).
+For detailed steps, see [Order OVHcloud Connect Provider](../3.2_order_provider).
 
 ### Step 2 — Share the pairing key
 
@@ -95,13 +95,13 @@ Link the OVHcloud Connect service to your **vRack**:
 2. Add your OVHcloud Connect service.
 3. Configure the required VLANs and subnets.
 
-See [Associate an OVHcloud Connect to your vRack](3._associate_vrack).
+See [Associate an OVHcloud Connect to your vRack](../3.5_associate_vrack).
 
 ### Step 5 — Verify BGP session and routing
 
 OVHcloud Connect Provider is always a Layer 3 service — BGP peering is established between your router (or your provider's router, depending on your provider offering) and the OVHcloud PoP. Verify in the OVHcloud Control Panel and in your provider's portal that the session is established and routes are being exchanged.
 
-See [Configure OCC L3 with BGP](3.7_occ_l3_bgp) for detailed guidance.
+See [Configure OCC L3 with BGP](../3.7_occ_l3_bgp) for detailed guidance.
 
 ### Step 6 — Test and verify
 
@@ -124,9 +124,9 @@ See [Configure OCC L3 with BGP](3.7_occ_l3_bgp) for detailed guidance.
 
 ## What's next?
 
-- For a self-managed connection, see [Quick Start: Direct Connection](2.1_quick_start_direct)
-- Set up [monitoring](3.9_monitor)
-- Explore [resilient architectures](4.1.2_onprem_resilient)
+- For a self-managed connection, see [Quick Start: Direct Connection](../2.1_quick_start_direct)
+- Set up [monitoring](../3.9_monitor)
+- Explore [resilient architectures](../4.2_resilient/4.1.2_onprem_resilient)
 
 ## Go further
 

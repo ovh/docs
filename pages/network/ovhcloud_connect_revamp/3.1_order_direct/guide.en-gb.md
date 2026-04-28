@@ -14,7 +14,7 @@ Before starting the order, prepare the following:
 
 | Information | Description |
 |---|---|
-| **PoP location** | The data centre where you want to connect (see [PoP Locations](1.4_pop_locations_regions.md)) |
+| **PoP location** | The data centre where you want to connect (see [PoP Locations](../1.4_pop_locations_regions/guide.en-gb.md)) |
 | **Bandwidth** | The speed of the connection (e.g. 1 Gbps or 10 Gbps) |
 | **Your ASN** | Your Autonomous System Number (public or private) for BGP peering |
 | **IP plan** | The prefixes you intend to advertise and the peering subnet |
@@ -54,7 +54,7 @@ result = client.get('/ovhCloudConnect')
 print(result)
 ```
 
-> Refer to the [Automation guide](1.6_automation.md) for API setup instructions.
+> Refer to the [Automation guide](../1.6_automation/guide.en-gb.md) for API setup instructions.
 
 ## What happens after ordering
 
@@ -109,9 +109,9 @@ print(result)
 
 ## What's next?
 
-- [Receive and use your LOA](3.11_cross_connect_loa.md)
-- [Configure OCC L3 with BGP](3.7_occ_l3_bgp.md)
-- [Associate with your vRack](3.5_associate_vrack.md)
+- [Receive and use your LOA](../3.11_cross_connect_loa/guide.en-gb.md)
+- [Configure OCC L3 with BGP](../3.7_occ_l3_bgp/guide.en-gb.md)
+- [Associate with your vRack](../3.5_associate_vrack/guide.en-gb.md)
 
 ## Go further
 

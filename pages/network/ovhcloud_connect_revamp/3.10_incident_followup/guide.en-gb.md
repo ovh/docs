@@ -88,7 +88,7 @@ Before opening a ticket, verify whether the issue is already known:
 
 If the issue is **business-critical** and you are not getting a timely response:
 
-1. Reference the SLA terms in your contract (see [SLAs](1.7_slas.md)).
+1. Reference the SLA terms in your contract (see [SLAs](../1.7_slas/guide.en-gb.md)).
 2. Request an escalation through the support portal.
 3. Contact your OVHcloud account manager for priority handling.
 
@@ -99,7 +99,7 @@ After the incident is resolved:
 1. **Request a Root Cause Analysis (RCA)** — Ask OVHcloud support for a post-incident report explaining what happened and what measures are being taken to prevent recurrence.
 2. **Update your runbooks** — Document the incident, resolution steps, and lessons learned.
 3. **Implement mitigations** — If the incident revealed a gap (e.g. missing redundancy, inadequate monitoring), plan improvements.
-4. **Verify SLA compliance** — If the incident caused downtime beyond the SLA commitment, you may be eligible for service credits (see [SLAs](1.7_slas.md)).
+4. **Verify SLA compliance** — If the incident caused downtime beyond the SLA commitment, you may be eligible for service credits (see [SLAs](../1.7_slas/guide.en-gb.md)).
 
 ## Summary: incident response flow
 
@@ -142,8 +142,8 @@ After the incident is resolved:
 
 ## What's next?
 
-- Set up proactive [monitoring](3.9_monitor.md) to detect issues before they impact your users
-- Review your [SLA](1.7_slas.md) commitments
+- Set up proactive [monitoring](../3.9_monitor/guide.en-gb.md) to detect issues before they impact your users
+- Review your [SLA](../1.7_slas/guide.en-gb.md) commitments
 
 ## Go further
 

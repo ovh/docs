@@ -61,7 +61,7 @@ Before ordering OVHcloud Connect, review the requirements below to ensure your e
   - DCBX and related protocols (802.1Qbb, 802.1Qaz, 802.1Qau)
   - TRILL, SPF and FabricPath
   - FCoE
-  - Spannning-tree
+  - Spanning Tree
   - IGMP and Multicast
   - EtherChannel, PaGP for aggregation
 
@@ -86,8 +86,8 @@ OVHcloud Connect Provider is always a Layer 3 network service: please read the [
 
 ### Limits
 
-- Maximum one BGP session between your equipment and the OVHcloud Point of Presence router (no eBGP Multihop). More details in the [Configure OCC L3 with BGP](../3.6_occ_l3_bgp/guide.en-gb.md).
-- Each Availability Zone supports up to 4 BGP peers. More details in the [Set up your vRack network](../3.5_vrack_network_setup/guide.en-gb.md).
+- Maximum one BGP session between your equipment and the OVHcloud Point of Presence router (no eBGP Multihop). More details in the [Configure OCC L3 with BGP](../3.7_occ_l3_bgp/guide.en-gb.md).
+- Each Availability Zone supports up to 4 BGP peers. More details in the [Set up your vRack network](../3.6_vrack_network_setup/guide.en-gb.md).
 - Up to 100 prefixes can be announced per BGP session.
 
 - The following features are not supported:
@@ -101,7 +101,7 @@ OVHcloud Connect Provider is always a Layer 3 network service: please read the [
 
 ## What's next?
 
-- Jump to the [Quick Start: Direct Connection](2.1_quick_start_direct.md) or [Quick Start: Provider Connection](2.2_quick_start_provider.md)
+- Jump to the [Quick Start: Direct Connection](../2.1_quick_start_direct/guide.en-gb.md) or [Quick Start: Provider Connection](../2.2_quick_start_provider/guide.en-gb.md)
 
 ## Go further
 

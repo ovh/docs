@@ -23,7 +23,7 @@ OVHcloud PoPs are located inside major carrier-neutral datacenters managed by ou
 If you are using a **Provider**, the provider handles the physical connectivity and may reach the PoP from a different facility.
 
 > [!primary]
-> OVHcloud regularly adds new locations. Always check the [OVHcloud Connect webpage](https://www.ovhcloud.com/en-ie/network/ovhcloud-connect/) for the most up-to-date list.
+> OVHcloud regularly adds new locations. Always check the [OVHcloud Connect webpage](https://www.ovhcloud.com/en-gb/network/ovhcloud-connect/) for the most up-to-date list.
 >
 
 ## How to choose a PoP
@@ -40,12 +40,12 @@ If you are using OVHcloud Connect Provider, verify that your chosen provider has
 
 ### 3. Redundancy
 
-For high-availability architectures, select **two PoPs in different locations** so that a single site failure does not take down your connection. Follow on of the resilient architecture tutorial for details :
-- [On-prem](../4.1.2_onprem_resilient/guide.en-gb.md)
-- [WAN](../4.2.2_wan_resilient/guide.en-gb.md)
-- [AWS](../4.3.2_aws_resilient/guide.en-gb.md)
-- [Azure](../4.4.2_azure_resilient/guide.en-gb.md)
-- [GCP](../4.5.2_gcp_resilient/guide.en-gb.md)
+For high-availability architectures, select **two PoPs in different locations** so that a single site failure does not take down your connection. Follow one of the resilient architecture tutorials for details:
+- [On-prem](../4.2_resilient/4.1.2_onprem_resilient/guide.en-gb.md)
+- [WAN](../4.2_resilient/4.2.2_wan_resilient/guide.en-gb.md)
+- [AWS](../4.2_resilient/4.3.2_aws_resilient/guide.en-gb.md)
+- [Azure](../4.2_resilient/4.4.2_azure_resilient/guide.en-gb.md)
+- [GCP](../4.2_resilient/4.5.2_gcp_resilient/guide.en-gb.md)
 
 ### 4. Regulatory / data residency requirements
 
@@ -57,7 +57,7 @@ To ensure the best performance, your OVHcloud Connect service should terminate i
 
 ## PoP and Region Mapping Tables
 
-The following tables list the regions accessible from each PoP, the corresponding low-latency OVHcloud region, and the available OCC Direct bandwidth, by geographic zone :
+The following tables list the regions accessible from each PoP, the corresponding low-latency OVHcloud region, and the available OCC Direct bandwidth, by geographic zone:
 
 > [!tabs]
 > Europe
@@ -116,8 +116,8 @@ The following tables list the regions accessible from each PoP, the correspondin
 
 ## What's next?
 
-- Understand [Multi-AZ](1.5_multi_az.md) for resilient architectures
-- Review [Configure OCC L3 with BGP](3.6_occ_l3_bgp.md) for technical setup
+- Understand [Multi-AZ](../1.5_multi_az/guide.en-gb.md) for resilient architectures
+- Review [Configure OCC L3 with BGP](../3.7_occ_l3_bgp/guide.en-gb.md) for technical setup
 
 ## Go further
 

@@ -12,7 +12,7 @@ This guide explains how to order an OVHcloud Connect service through a **third-p
 
 | Information | Description |
 |---|---|
-| **Provider** | The third-party provider you want to use (see [Providers](1.3_providers.md)) |
+| **Provider** | The third-party provider you want to use (see [Providers](../1.3_providers/guide.en-gb.md)) |
 | **PoP location** | The OVHcloud PoP where the provider will connect |
 | **Bandwidth** | The desired speed (e.g. 100 Mbps, 1 Gbps, 10 Gbps — options vary by provider) |
 | **Your ASN & IP plan** | OVHcloud Connect Provider is always a Layer 3 service; you need an ASN and peering IPs for BGP |
@@ -110,9 +110,9 @@ The pairing key identifies your OVHcloud Connect order and allows the provider t
 
 ## What's next?
 
-- [Configure OCC L3 with BGP](3.6_occ_l3_bgp.md)
-- [Associate with your vRack](3.8_associate_vrack.md)
-- [Monitor your connection](3.9_monitor.md)
+- [Configure OCC L3 with BGP](../3.7_occ_l3_bgp/guide.en-gb.md)
+- [Associate with your vRack](../3.5_associate_vrack/guide.en-gb.md)
+- [Monitor your connection](../3.9_monitor/guide.en-gb.md)
 
 ## Go further
 

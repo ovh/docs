@@ -159,7 +159,7 @@ You can configure MED via custom route advertisements in the Cloud Router BGP pe
 
 **OVHcloud side:**
 
-Use [Configure OCC L3 with BGP](../3.6_occ_l3_bgp.md):
+Use [Configure OCC L3 with BGP](../3.7_occ_l3_bgp/guide.en-gb.md):
 
 | Path | Local Preference | AS-path prepend |
 |---|---|---|
@@ -168,7 +168,7 @@ Use [Configure OCC L3 with BGP](../3.6_occ_l3_bgp.md):
 
 ### 7. Associate both services with your vRack
 
-[Associate both OVHcloud Connect services](../3.8_associate_vrack.md) with the same vRack.
+[Associate both OVHcloud Connect services](../3.5_associate_vrack/guide.en-gb.md) with the same vRack.
 
 ### 8. Test failover
 
@@ -188,7 +188,7 @@ Use [Configure OCC L3 with BGP](../3.6_occ_l3_bgp.md):
 
 ## What's next?
 
-- [Simple GCP connection](4.5.1_gcp_simple.md) for non-critical workloads
+- [Simple GCP connection](../../4.1_simple/4.5.1_gcp_simple/guide.en-gb.md) for non-critical workloads
 - [GCP Interconnect documentation](https://cloud.google.com/network-connectivity/docs/interconnect)
 - [GCP Cloud Router documentation](https://cloud.google.com/network-connectivity/docs/router)
 - [Monitor your OVHcloud Connect](../3.9_monitor.md) service

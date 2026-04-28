@@ -72,13 +72,13 @@ After you order **OVHcloud Connect Direct**, OVHcloud will provide the LOA:
 
 1. The data centre operator installs the physical cable (typically within a few business days).
 2. Verify in the **OVHcloud Control Panel** that the port status changes to "Up".
-3. Proceed with [BGP configuration](3.6_occ_l3_bgp.md).
+3. Proceed with [BGP configuration](../3.7_occ_l3_bgp/guide.en-gb.md).
 
 ## Cancelling a cross-connect
 
 ### Step 1 — Cancel the OVHcloud Connect service first
 
-Before removing the physical cable, cancel the OVHcloud Connect service (see [Cancel Direct](3.3_cancel_direct.md) or [Cancel Provider](3.4_cancel_provider.md)).
+Before removing the physical cable, cancel the OVHcloud Connect service (see [Cancel Direct](../3.3_cancel_direct/guide.en-gb.md) or [Cancel Provider](../3.4_cancel_provider/guide.en-gb.md)).
 
 ### Step 2 — Request cross-connect removal
 
@@ -104,8 +104,8 @@ Before removing the physical cable, cancel the OVHcloud Connect service (see [Ca
 
 ## What's next?
 
-- [Configure OCC L3 with BGP](3.6_occ_l3_bgp.md) after the cross-connect is installed
-- [Order OVHcloud Connect Direct](3.1_order_direct.md) if you haven't started the process yet
+- [Configure OCC L3 with BGP](../3.7_occ_l3_bgp/guide.en-gb.md) after the cross-connect is installed
+- [Order OVHcloud Connect Direct](../3.1_order_direct/guide.en-gb.md) if you haven't started the process yet
 
 ## Go further
 

@@ -4,11 +4,11 @@ excerpt: Overview of the concepts required to understand the OVHcloud Connect of
 updated: 2026-02-18
 ---
 
-## What is OVHcloud Connect ?
+## What is OVHcloud Connect?
 
 OVHcloud Connect is a **dedicated, private network connection** between your infrastructure and OVHcloud. Instead of routing traffic over the public internet, OVHcloud Connect establishes a direct link that offers better security, lower latency, and guaranteed bandwidth.
 
-## Who is it for ?
+## Who is it for?
 
 OVHcloud Connect is designed for organisations that need:
 
@@ -30,11 +30,11 @@ OVHcloud Connect links your network to OVHcloud through a **Point of Presence (P
 
 OVHcloud Connect L2 links your infrastructure to OVHcloud services at the data link layer (Layer 2). It allows you to extend your private network to OVHcloud datacenters, creating a seamless bridge between your local network and cloud resources, no routing involved. As opposed to Layer 3 service, it is transparent to VLANs (802.1q).
 
-**Key points :**
+**Key points:**
 - It is a strict point-to-point link (**one PoP** and **one AZ** only).
 - Redundancy is possible via link aggregation (LACP) on the same PoP.
 
-**Potential use cases :**
+**Potential use cases:**
 - Simple hybrid topologies
 - "Lift & Shift" migrations without IP changes
 - Applications requiring L2 adjacency or VLAN transparency
@@ -45,11 +45,11 @@ OVHcloud Connect L3 links your infrastructure to OVHcloud services at the networ
 
 Once the physical link is established, routing is configured using **BGP (Border Gateway Protocol)**, and the connection is associated with your **vRack** — OVHcloud's virtual private network — so your OVHcloud resources can communicate privately with your external infrastructure.
 
-**Key points :**
+**Key points:**
 - It is supported by a Full Mesh architecture allowing multiple PoPs and availability zones (AZ) to be interconnected within a region.
 - Network resilience can be created via BGP sessions (multi-peers) and ECMP, with the possibility of automatic failover between multiple PoPs.
 
-**Potential use cases :**
+**Potential use cases:**
 - Enterprise WAN integration (Cloud as a Branch)
 - Critical multi-PoP architectures
 - Large-scale complex deployments.
@@ -64,7 +64,7 @@ Once the physical link is established, routing is configured using **BGP (Border
 - See the list of [Providers](../1.3_providers) available for managed connectivity.
 - Read the [prerequisites and limitations](../1.8_prerequisites_limitations) to verify whether OVHcloud Connect meets your use case.
 - Jump to the [Quick Start guides: Direct](../2.1_quick_start_direct) to get connected.
-- Jump to the [Quick Start guides: Provider](../2.1_quick_start_direct) to get connected.
+- Jump to the [Quick Start guides: Provider](../2.2_quick_start_provider) to get connected.
 
 ## Go further
 

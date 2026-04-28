@@ -12,14 +12,14 @@ updated: 2026-04-14
 2. **AZ extra configuration (BGP)** — BGP peering within the OVHcloud AZ for route distribution.
 
 > [!primary]
-> If you prefer static routing instead of BGP, see [Configure OVHcloud Connect L3 with static routing](/pages/network/ovhcloud_connect_revamp/3.7_occ_l3_static).
+> If you prefer static routing instead of BGP, see [Configure OVHcloud Connect L3 with static routing](/pages/network/ovhcloud_connect_revamp/3.8_occ_l3_static).
 
 ## Requirements
 
 - An active [OVHcloud account](/links/manager)
 - An active OVHcloud Connect service (status `active`)
-- OVHcloud Connect associated with a vRack — see [Associate OVHcloud Connect with your vRack](/pages/network/ovhcloud_connect_revamp/3.8_associate_vrack)
-- An AZ configuration created — see [Set up vRack networking](/pages/network/ovhcloud_connect_revamp/3.5_vrack_network_setup)
+- OVHcloud Connect associated with a vRack — see [Associate OVHcloud Connect with your vRack](/pages/network/ovhcloud_connect_revamp/3.5_associate_vrack)
+- An AZ configuration created — see [Set up vRack networking](/pages/network/ovhcloud_connect_revamp/3.6_vrack_network_setup)
 - Your ASN (a public ASN or a private ASN in the range 64512–65534)
 - A /30 peering subnet (e.g. `192.0.2.0/30`)
 - OVHcloud API credentials (Application Key, Application Secret, Consumer Key). Refer to the [First steps with the OVHcloud API](/pages/manage-and-operate/api/first-steps) guide.
@@ -114,7 +114,7 @@ Check the BGP session state:
 
 ### Step 4 — Create AZ extra configuration (BGP)
 
-After the PoP configuration and the [AZ configuration](/pages/network/ovhcloud_connect_revamp/3.5_vrack_network_setup), create a **BGP extra configuration** to enable BGP route distribution within the AZ.
+After the PoP configuration and the [AZ configuration](/pages/network/ovhcloud_connect_revamp/3.6_vrack_network_setup), create a **BGP extra configuration** to enable BGP route distribution within the AZ.
 
 > [!warning]
 > Enabling BGP at the AZ level **disables VRRP** on that AZ configuration. BGP handles failover instead. You must establish a BGP session with **both** OVHcloud device A and device B (up to 4 BGP peers per AZ). By default, BFD (Bidirectional Forwarding Detection) is activated on all AZ BGP sessions — enabling BFD on your side as well is strongly recommended for faster convergence.
@@ -328,8 +328,8 @@ To remove the BGP configuration, delete in reverse order:
 
 ## Go further
 
-- [Set up vRack networking](/pages/network/ovhcloud_connect_revamp/3.5_vrack_network_setup) — If you have not configured AZ subnets yet
-- [Associate OVHcloud Connect with your vRack](/pages/network/ovhcloud_connect_revamp/3.8_associate_vrack)
+- [Set up vRack networking](/pages/network/ovhcloud_connect_revamp/3.6_vrack_network_setup) — If you have not configured AZ subnets yet
+- [Associate OVHcloud Connect with your vRack](/pages/network/ovhcloud_connect_revamp/3.5_associate_vrack)
 - [Monitor your connection](/pages/network/ovhcloud_connect_revamp/3.9_monitor)
 
 Join our [community of users](/links/community).

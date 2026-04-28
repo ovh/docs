@@ -36,7 +36,7 @@ The level of SLA you can achieve depends on your architecture:
 For the SLA to be valid, you must:
 
 1. **Follow OVHcloud's configuration guidelines** — Incorrect BGP configuration or unsupported setups may void the SLA.
-2. **Report incidents promptly** — Use the official support channels (see [Declare and follow up upon an incident](3.10_incident_followup.md)).
+2. **Report incidents promptly** — Use the official support channels (see [Declare and follow up upon an incident](../3.10_incident_followup/guide.en-gb.md)).
 3. **Accept scheduled maintenance** — OVHcloud may perform maintenance windows. Downtime during announced maintenance is typically excluded from SLA calculations.
 4. **Use a supported architecture** — Higher SLA tiers require redundant connections. A single connection cannot claim the 99.99% SLA.
 
@@ -57,13 +57,13 @@ To track whether your connection meets the SLA:
 - Set up **alerts** for link-down events, BGP session drops, and latency spikes.
 - Use the **OVHcloud API** to query status programmatically and integrate with your monitoring tools.
 
-See [Monitor your OVHcloud Connect](3.9_monitor.md) for detailed monitoring guidance.
+See [Monitor your OVHcloud Connect](../3.9_monitor/guide.en-gb.md) for detailed monitoring guidance.
 
 ## What's next?
 
-- Review [Prerequisites & Limitations](1.8_prerequisites_limitations.md)
-- Set up [monitoring](3.9_monitor.md) for your connection
-- Learn how to [declare and follow up on incidents](3.10_incident_followup.md)
+- Review [Prerequisites & Limitations](../1.8_prerequisites_limitations/guide.en-gb.md)
+- Set up [monitoring](../3.9_monitor/guide.en-gb.md) for your connection
+- Learn how to [declare and follow up on incidents](../3.10_incident_followup/guide.en-gb.md)
 
 ## Go further
 

@@ -74,7 +74,7 @@ The connection between AWS and OVHcloud is typically routed through a **shared p
 3. Choose the PoP location.
 4. Copy the **pairing key**.
 
-See [Order OVHcloud Connect Provider](3.2_order_provider.md).
+See [Order OVHcloud Connect Provider](../../3.2_order_provider/guide.en-gb.md).
 
 ### 3. Create the bridge on the provider
 
@@ -107,7 +107,7 @@ If **not** using a provider MCR:
 
 ### 5. Associate OVHcloud Connect with vRack
 
-See [Associate with vRack](3.8_associate_vrack.md).
+See [Associate with vRack](../../3.5_associate_vrack/guide.en-gb.md).
 
 ### 6. Test connectivity
 
@@ -126,5 +126,5 @@ See [Associate with vRack](3.8_associate_vrack.md).
 
 ## What's next?
 
-- [Resilient AWS-to-OVHcloud architecture](4.3.2_aws_resilient.md)
+- [Resilient AWS-to-OVHcloud architecture](../../4.2_resilient/4.3.2_aws_resilient/guide.en-gb.md)
 - [AWS Direct Connect documentation](https://docs.aws.amazon.com/directconnect/)

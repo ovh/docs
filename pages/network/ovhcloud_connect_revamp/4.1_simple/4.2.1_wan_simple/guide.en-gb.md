@@ -66,14 +66,14 @@ In a WAN scenario, your traffic typically originates from **multiple branch offi
 Contact your WAN/MPLS/SD-WAN provider and request:
 
 - A **circuit** or **virtual connection** from your WAN backbone to the OVHcloud PoP.
-- The circuit should terminate at a facility where OVHcloud has a PoP (see [PoP Locations](1.4_pop_locations_regions.md)).
+- The circuit should terminate at a facility where OVHcloud has a PoP (see [PoP Locations](../../1.4_pop_locations_regions/guide.en-gb.md)).
 
 If your WAN provider is also an OVHcloud Connect provider (e.g. Megaport, Equinix), they can handle both the WAN handoff and the OVHcloud Connect provisioning.
 
 ### 2. Order OVHcloud Connect
 
-- **Direct:** If your WAN edge router is co-located at the OVHcloud PoP. See [Order Direct](3.1_order_direct.md).
-- **Provider:** If the connection is managed by a provider. See [Order Provider](3.2_order_provider.md).
+- **Direct:** If your WAN edge router is co-located at the OVHcloud PoP. See [Order Direct](../../3.1_order_direct/guide.en-gb.md).
+- **Provider:** If the connection is managed by a provider. See [Order Provider](../../3.2_order_provider/guide.en-gb.md).
 
 ### 3. Configure BGP on the WAN edge
 
@@ -83,11 +83,11 @@ Set up a BGP session between your **WAN edge device** and OVHcloud:
 - Accept OVHcloud routes.
 - Ensure your WAN routing propagates the OVHcloud routes back to all branch offices.
 
-See [Configure OCC L3 with BGP](3.6_occ_l3_bgp.md).
+See [Configure OCC L3 with BGP](../../3.7_occ_l3_bgp/guide.en-gb.md).
 
 ### 4. Associate with vRack and configure subnets
 
-Link to your vRack and set up the required subnets. See [Associate with vRack](3.8_associate_vrack.md) and [Set up your vRack network](3.5_vrack_network_setup.md).
+Link to your vRack and set up the required subnets. See [Associate with vRack](../../3.5_associate_vrack/guide.en-gb.md) and [Set up your vRack network](../../3.6_vrack_network_setup/guide.en-gb.md).
 
 ### 5. Test end-to-end connectivity
 
@@ -106,9 +106,9 @@ ping 10.1.0.1              # Ping a branch IP from an OVHcloud VM
 
 ### 6. Set up monitoring
 
-Monitor the WAN edge BGP session and OVHcloud Connect link. See [Monitor](3.9_monitor.md).
+Monitor the WAN edge BGP session and OVHcloud Connect link. See [Monitor](../../3.9_monitor/guide.en-gb.md).
 
 ## What's next?
 
-- [Resilient WAN architecture](4.2.2_wan_resilient.md) for high availability
-- [Monitor your connection](3.9_monitor.md)
+- [Resilient WAN architecture](../../4.2_resilient/4.2.2_wan_resilient/guide.en-gb.md) for high availability
+- [Monitor your connection](../../3.9_monitor/guide.en-gb.md)

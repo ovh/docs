@@ -39,7 +39,7 @@ updated: 2025-10-03
 - DCBX and related protocols (802.1Qbb, 802.1Qaz, 802.1Qau)
 - TRILL, SPF and FabricPath
 - FCoE
-- Spannning-tree
+- Spanning Tree
 - IGMP and Multicast
 - EtherChannel, PaGP for aggregation
 

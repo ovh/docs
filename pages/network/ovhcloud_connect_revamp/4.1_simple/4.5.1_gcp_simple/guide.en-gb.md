@@ -64,8 +64,8 @@ This tutorial explains how to **bridge Google Cloud Platform (GCP) and OVHcloud*
 |---|---|
 | Data transfer from GCP to OVHcloud | ✅ Simple connection |
 | Hybrid AI/ML pipeline (GCP compute + OVHcloud storage) | ✅ Simple connection |
-| Production multi-cloud with SLA requirements | Use the [resilient tutorial](4.5.2_gcp_resilient.md) |
-| Disaster recovery | Use the [resilient tutorial](4.5.2_gcp_resilient.md) |
+| Production multi-cloud with SLA requirements | Use the [resilient tutorial](../../4.2_resilient/4.5.2_gcp_resilient/guide.en-gb.md) |
+| Disaster recovery | Use the [resilient tutorial](../../4.2_resilient/4.5.2_gcp_resilient/guide.en-gb.md) |
 
 ## GCP Interconnect types
 
@@ -137,7 +137,7 @@ After the provider provisions the connection:
 
 ### 5. Configure OVHcloud BGP peering
 
-[Configure OCC L3 with BGP](../3.6_occ_l3_bgp.md).
+[Configure OCC L3 with BGP](../3.7_occ_l3_bgp/guide.en-gb.md).
 
 Ensure the provider MCR:
 - Advertises GCP VPC prefixes (`10.3.0.0/16`) toward OVHcloud (ASN 35540).
@@ -145,7 +145,7 @@ Ensure the provider MCR:
 
 ### 6. Associate your vRack
 
-[Associate the OVHcloud Connect service with your vRack](../3.8_associate_vrack.md).
+[Associate the OVHcloud Connect service with your vRack](../3.5_associate_vrack/guide.en-gb.md).
 
 ### 7. Verify connectivity
 
@@ -179,7 +179,7 @@ Ensure the provider MCR:
 
 ## What's next?
 
-- [Resilient GCP connection](4.5.2_gcp_resilient.md) for production workloads
+- [Resilient GCP connection](../../4.2_resilient/4.5.2_gcp_resilient/guide.en-gb.md) for production workloads
 - [GCP Interconnect documentation](https://cloud.google.com/network-connectivity/docs/interconnect)
 - [Monitor your OVHcloud Connect](../3.9_monitor.md) service
 - [FAQ](../5_faq.md) for common questions

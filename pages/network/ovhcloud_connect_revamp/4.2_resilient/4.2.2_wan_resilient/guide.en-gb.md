@@ -76,7 +76,7 @@ Coordinate with your WAN provider to deliver circuits to both PoPs. If using an 
 
 Set up two BGP sessions with appropriate routing policies:
 
-- **Active/Standby:** Use Local Preference and AS-path prepending (see [Resilient On-Prem](4.1.2_onprem_resilient.md) for detailed BGP examples).
+- **Active/Standby:** Use Local Preference and AS-path prepending (see [Resilient On-Prem](../4.1.2_onprem_resilient/guide.en-gb.md) for detailed BGP examples).
 - **Active/Active:** Use ECMP for load balancing across both links.
 - **SD-WAN integration:** Many SD-WAN platforms can detect link quality and switch traffic automatically, supplementing BGP failover.
 
@@ -86,7 +86,7 @@ Both OVHcloud Connect services should be associated with the same vRack.
 
 ### 5. Configure subnets across AZs
 
-Distribute subnets across both AZs for full redundancy. See [Set up your vRack network](3.5_vrack_network_setup.md).
+Distribute subnets across both AZs for full redundancy. See [Set up your vRack network](../../3.6_vrack_network_setup/guide.en-gb.md).
 
 ### 6. Test failover
 
@@ -97,7 +97,7 @@ Distribute subnets across both AZs for full redundancy. See [Set up your vRack n
 
 ### 7. Monitor both paths
 
-Set up independent monitoring for each link, each BGP session, and each WAN circuit. See [Monitor](3.9_monitor.md).
+Set up independent monitoring for each link, each BGP session, and each WAN circuit. See [Monitor](../../3.9_monitor/guide.en-gb.md).
 
 ## SD-WAN considerations
 
@@ -109,5 +109,5 @@ If you use an SD-WAN overlay:
 
 ## What's next?
 
-- [Simple WAN connection](4.2.1_wan_simple.md) for non-critical use cases
-- Connect to other clouds: [AWS](4.3.1_aws_simple.md) · [Azure](4.4.1_azure_simple.md) · [GCP](4.5.1_gcp_simple.md)
+- [Simple WAN connection](../../4.1_simple/4.2.1_wan_simple/guide.en-gb.md) for non-critical use cases
+- Connect to other clouds: [AWS](../../4.1_simple/4.3.1_aws_simple/guide.en-gb.md) · [Azure](../../4.1_simple/4.4.1_azure_simple/guide.en-gb.md) · [GCP](../../4.1_simple/4.5.1_gcp_simple/guide.en-gb.md)

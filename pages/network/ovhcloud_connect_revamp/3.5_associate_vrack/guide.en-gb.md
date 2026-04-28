@@ -96,9 +96,9 @@ client.post(f"/vrack/{vrack_service_name}/ovhCloudConnect",
 ### Via Terraform
 
 ```hcl
-resource "ovh_vrack_cloudconnect" "association" {
-  service_name = "pn-abc123"       # Your vRack service name
-  connect_id   = "ovhcc-xyz789"   # Your OVHcloud Connect service ID
+resource "ovh_vrack_ovhcloudconnect" "association" {
+  service_name      = "pn-abc123"      # Your vRack service name
+  ovh_cloud_connect = "ovhcc-xyz789"   # Your OVHcloud Connect service ID
 }
 ```
 
@@ -125,8 +125,8 @@ If you need to dissociate OVHcloud Connect from a vRack:
 
 ## What's next?
 
-- [Monitor your OVHcloud Connect](3.9_monitor.md)
-- [Set up your vRack network](3.5_vrack_network_setup.md) to set up subnets properly
+- [Monitor your OVHcloud Connect](../3.9_monitor/guide.en-gb.md)
+- [Set up your vRack network](../3.6_vrack_network_setup/guide.en-gb.md) to set up subnets properly
 
 ## Go further
 

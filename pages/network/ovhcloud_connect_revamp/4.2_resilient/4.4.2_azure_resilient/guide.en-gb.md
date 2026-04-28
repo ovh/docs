@@ -145,7 +145,7 @@ Azure uses **connection weight** to prefer one path over the other.
 
 ### 6. Configure OVHcloud BGP with failover
 
-On the OVHcloud side, use [Configure OCC L3 with BGP](../3.6_occ_l3_bgp.md) to prefer the primary path:
+On the OVHcloud side, use [Configure OCC L3 with BGP](../3.7_occ_l3_bgp/guide.en-gb.md) to prefer the primary path:
 
 | Path | Local Preference | AS-path prepend |
 |---|---|---|
@@ -154,7 +154,7 @@ On the OVHcloud side, use [Configure OCC L3 with BGP](../3.6_occ_l3_bgp.md) to p
 
 ### 7. Associate both services with your vRack
 
-[Associate both OVHcloud Connect services](../3.8_associate_vrack.md) with the same vRack. Both will inject routes; the vRack will use the higher Local Preference path.
+[Associate both OVHcloud Connect services](../3.5_associate_vrack/guide.en-gb.md) with the same vRack. Both will inject routes; the vRack will use the higher Local Preference path.
 
 ### 8. Test failover
 
@@ -175,7 +175,7 @@ On the OVHcloud side, use [Configure OCC L3 with BGP](../3.6_occ_l3_bgp.md) to p
 
 ## What's next?
 
-- [Simple Azure connection](4.4.1_azure_simple.md) for non-critical workloads
+- [Simple Azure connection](../../4.1_simple/4.4.1_azure_simple/guide.en-gb.md) for non-critical workloads
 - [Azure ExpressRoute documentation](https://learn.microsoft.com/en-us/azure/expressroute/)
 - [Multi-AZ configuration](../1.5_multi_az.md) for OVHcloud side resilience
 - [Incident follow-up](../3.10_incident_followup.md) if issues arise during failover testing

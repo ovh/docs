@@ -10,7 +10,7 @@ updated: 2026-02-18
 
 OVHcloud Connect (OCC) is a dedicated, private network connection between your infrastructure and OVHcloud. It bypasses the public internet, providing **lower latency, higher bandwidth, and improved security** compared to VPN or internet-based connections.
 
-See [What is OVHcloud Connect?](1.1_what_is_ovhcloud_connect.md) for a full overview.
+See [What is OVHcloud Connect?](../1.1_what_is_ovhcloud_connect/guide.en-gb.md) for a full overview.
 
 ### What is the difference between Direct and Provider?
 
@@ -29,17 +29,17 @@ OVHcloud Connect Provider works with:
 - **Equinix Fabric** — Virtual connections
 - **Console Connect** (PCCW Global) — On-demand connections
 
-See [Providers](1.3_providers.md) for details.
+See [Providers](../1.3_providers/guide.en-gb.md) for details.
 
 ### Where is OVHcloud Connect available?
 
-OVHcloud Connect is available in major PoP locations across Europe, North America, and Asia-Pacific. See [PoP locations and regions](1.4_pop_locations_regions.md) for the full list.
+OVHcloud Connect is available in major PoP locations across Europe, North America, and Asia-Pacific. See [PoP locations and regions](../1.4_pop_locations_regions/guide.en-gb.md) for the full list.
 
 ### Can OVHcloud host my router?
 
 No. OVHcloud does not host customer networking equipment. To use OVHcloud Connect Direct, you must have your **own rack space (a bay)** in a data centre where OVHcloud has a point of presence, with your router installed and operated by you. You can then order an OVHcloud Connect Direct service and a cross-connect between your bay and the OVHcloud PoP within that facility.
 
-If you do not have a presence in an OVHcloud PoP, use [OVHcloud Connect Provider](3.2_order_provider.md) instead — your provider handles the last-mile connectivity on your behalf.
+If you do not have a presence in an OVHcloud PoP, use [OVHcloud Connect Provider](../3.2_order_provider/guide.en-gb.md) instead — your provider handles the last-mile connectivity on your behalf.
 
 ---
 
@@ -47,8 +47,8 @@ If you do not have a presence in an OVHcloud PoP, use [OVHcloud Connect Provider
 
 ### How do I order OVHcloud Connect?
 
-- **Direct**: [Order a Direct connection](3.1_order_direct.md)
-- **Provider**: [Order a Provider connection](3.2_order_provider.md)
+- **Direct**: [Order a Direct connection](../3.1_order_direct/guide.en-gb.md)
+- **Provider**: [Order a Provider connection](../3.2_order_provider/guide.en-gb.md)
 
 You can order through the OVHcloud Control Panel, the API, or Terraform.
 
@@ -81,8 +81,8 @@ No. Bandwidth changes require ordering a new service at the desired speed and mi
 
 ### How do I cancel a service?
 
-- **Direct**: [Cancel a Direct connection](3.3_cancel_direct.md)
-- **Provider**: [Cancel a Provider connection](3.4_cancel_provider.md)
+- **Direct**: [Cancel a Direct connection](../3.3_cancel_direct/guide.en-gb.md)
+- **Provider**: [Cancel a Provider connection](../3.4_cancel_provider/guide.en-gb.md)
 
 > **Important:** Always remove the provider virtual circuit and BGP configuration before cancelling the OVHcloud service to avoid routing issues.
 
@@ -116,7 +116,7 @@ Yes. Attach your Public Cloud project to the same vRack as your OVHcloud Connect
 
 ### What happens if my BGP session goes down?
 
-If you have a single OVHcloud Connect link, traffic between your network and OVHcloud will stop flowing until BGP is re-established. For production workloads, always use a [resilient architecture](1.5_multi_az.md) with two links and BGP failover.
+If you have a single OVHcloud Connect link, traffic between your network and OVHcloud will stop flowing until BGP is re-established. For production workloads, always use a [resilient architecture](../1.5_multi_az/guide.en-gb.md) with two links and BGP failover.
 
 ### Can I use BFD (Bidirectional Forwarding Detection)?
 
@@ -130,9 +130,9 @@ BFD support depends on the OVHcloud Connect type and PoP. Contact OVHcloud suppo
 
 Yes. Order separate OVHcloud Connect Provider services and bridge each to the respective cloud:
 
-- [AWS via Direct Connect](4.3.1_aws_simple.md)
-- [Azure via ExpressRoute](4.4.1_azure_simple.md)
-- [GCP via Interconnect](4.5.1_gcp_simple.md)
+- [AWS via Direct Connect](../4.1_simple/4.3.1_aws_simple/guide.en-gb.md)
+- [Azure via ExpressRoute](../4.1_simple/4.4.1_azure_simple/guide.en-gb.md)
+- [GCP via Interconnect](../4.1_simple/4.5.1_gcp_simple/guide.en-gb.md)
 
 All can be associated with the same vRack, allowing traffic to flow between all clouds through OVHcloud.
 
@@ -157,18 +157,18 @@ SLA levels depend on your architecture:
 | Single link, single AZ | ~99.9% |
 | Dual links, Multi-AZ | ~99.95%–99.99% |
 
-See [SLAs](1.7_slas.md) for full details and conditions.
+See [SLAs](../1.7_slas/guide.en-gb.md) for full details and conditions.
 
 ### How do I set up a resilient connection?
 
 Order two OVHcloud Connect services at **different PoPs**, associate both with the same vRack, and configure BGP failover with Local Preference and AS-path prepending.
 
 Tutorials:
-- [On-premises resilient](4.1.2_onprem_resilient.md)
-- [WAN resilient](4.2.2_wan_resilient.md)
-- [AWS resilient](4.3.2_aws_resilient.md)
-- [Azure resilient](4.4.2_azure_resilient.md)
-- [GCP resilient](4.5.2_gcp_resilient.md)
+- [On-premises resilient](../4.2_resilient/4.1.2_onprem_resilient/guide.en-gb.md)
+- [WAN resilient](../4.2_resilient/4.2.2_wan_resilient/guide.en-gb.md)
+- [AWS resilient](../4.2_resilient/4.3.2_aws_resilient/guide.en-gb.md)
+- [Azure resilient](../4.2_resilient/4.4.2_azure_resilient/guide.en-gb.md)
+- [GCP resilient](../4.2_resilient/4.5.2_gcp_resilient/guide.en-gb.md)
 
 ### How long does BGP failover take?
 
@@ -184,8 +184,8 @@ With default BGP timers (hold time = 90 seconds), failover can take **30–90 se
 |---|---|
 | Cross-connect not completed (Direct) | Contact your colocation provider; check LOA status |
 | Provider VXC not provisioned (Provider) | Check provider portal; ensure pairing key is correct |
-| BGP not configured | [Configure BGP](3.6_occ_l3_bgp.md) |
-| vRack not associated | [Associate vRack](3.8_associate_vrack.md) |
+| BGP not configured | [Configure BGP](../3.7_occ_l3_bgp/guide.en-gb.md) |
+| vRack not associated | [Associate vRack](../3.5_associate_vrack/guide.en-gb.md) |
 
 ### I can see the BGP session but have no reachability
 
@@ -199,7 +199,7 @@ With default BGP timers (hold time = 90 seconds), failover can take **30–90 se
 - Check interface errors and CRC counts on your router.
 - Verify the **bandwidth** of your OVHcloud Connect matches your traffic load.
 - Look for **MTU mismatches** causing fragmentation.
-- Use the [monitoring guide](3.9_monitor.md) to check link health.
+- Use the [monitoring guide](../3.9_monitor/guide.en-gb.md) to check link health.
 
 ### How do I open a support ticket?
 
@@ -208,7 +208,7 @@ With default BGP timers (hold time = 90 seconds), failover can take **30–90 se
 3. Select **Network** → **OVHcloud Connect**.
 4. Include your service name, error details, and any diagnostic output.
 
-See [Incident follow-up](3.10_incident_followup.md) for detailed escalation procedures.
+See [Incident follow-up](../3.10_incident_followup/guide.en-gb.md) for detailed escalation procedures.
 
 ---
 
@@ -216,7 +216,7 @@ See [Incident follow-up](3.10_incident_followup.md) for detailed escalation proc
 
 ### Can I manage OVHcloud Connect with Terraform?
 
-Yes. Use the [OVHcloud Terraform provider](https://registry.terraform.io/providers/ovh/ovh/latest) (version ≥ 2.7.0) to manage OVHcloud Connect resources. See [Automation](1.6_automation.md) for examples.
+Yes. Use the [OVHcloud Terraform provider](https://registry.terraform.io/providers/ovh/ovh/latest) (version ≥ 2.7.0) to manage OVHcloud Connect resources. See [Automation](../1.6_automation/guide.en-gb.md) for examples.
 
 ### Is there an API for OVHcloud Connect?
 
@@ -227,13 +227,13 @@ Yes. The OVHcloud API provides full lifecycle management:
 
 Explore the API at [api.ovh.com/console](https://api.ovh.com/console/#/ovhCloudConnect).
 
-See [Automation](1.6_automation.md) for SDK and API examples.
+See [Automation](../1.6_automation/guide.en-gb.md) for SDK and API examples.
 
 ---
 
 ## Still have questions?
 
-- Browse the [full documentation](1.1_what_is_ovhcloud_connect.md)
+- Browse the [full documentation](../1.1_what_is_ovhcloud_connect/guide.en-gb.md)
 - Check the [OVHcloud Community](https://community.ovh.com/)
 - Contact [OVHcloud Support](https://www.ovh.com/manager/) via the Control Panel
 

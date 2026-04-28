@@ -58,8 +58,8 @@ This guide explains how to cancel an OVHcloud Connect Provider service. Since a 
 
 ## What's next?
 
-- [Cancel OVHcloud Connect Direct](3.3_cancel_direct.md) (if you also have a direct connection)
-- [Order a new connection](3.2_order_provider.md) if you need a replacement
+- [Cancel OVHcloud Connect Direct](../3.3_cancel_direct/guide.en-gb.md) (if you also have a direct connection)
+- [Order a new connection](../3.2_order_provider/guide.en-gb.md) if you need a replacement
 
 ## Go further
 

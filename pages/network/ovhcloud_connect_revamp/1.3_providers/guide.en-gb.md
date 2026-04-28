@@ -32,7 +32,7 @@ Consider the following:
 
 OVHcloud partners with the global network providers listed below.
 
-> **Note:** The list of supported providers may evolve over time. Check the [OVHcloud Connect Webpage](https://www.ovhcloud.com/fr/network/ovhcloud-connect/) for the most current list.
+> **Note:** The list of supported providers may evolve over time. Check the [OVHcloud Connect Webpage](https://www.ovhcloud.com/en/network/ovhcloud-connect/) for the most current list.
 
 ### BSO (formerly Intercloud)
 ---
@@ -40,7 +40,7 @@ OVHcloud partners with the global network providers listed below.
 
 BSO is a global financial network and technology provider specializing in ultra-low latency connectivity and cloud access for capital markets, enterprises, and trading firms. Following the acquisition of Intercloud, BSO expanded its cloud connectivity portfolio to offer direct, private connections to major cloud providers including OVHcloud.
 
-BSO's network is optimized for performance-critical applications, with a focus on financial services, media, and data-intensive industries. Their solutions combine high-performance networking with cloud on-ramps and managed services.
+BSO's network is optimised for performance-critical applications, with a focus on financial services, media, and data-intensive industries. Their solutions combine high-performance networking with cloud on-ramps and managed services.
 
 #### Useful links
 
@@ -137,8 +137,8 @@ Risq positions itself as a premium connectivity partner for businesses requiring
 
 ## What's next?
 
-- Check [PoP Locations & Regions](1.4_pop_locations_regions.md) to find where you can connect
-- Follow the [Quick Start with a Provider](2.2_quick_start_provider.md) to get started
+- Check [PoP Locations & Regions](../1.4_pop_locations_regions/guide.en-gb.md) to find where you can connect
+- Follow the [Quick Start with a Provider](../2.2_quick_start_provider/guide.en-gb.md) to get started
 
 ## Go further
 

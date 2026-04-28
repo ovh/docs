@@ -1,6 +1,6 @@
 ---
 title: Capacités et limites techniques
-excerpt: 'Découvrez les capacités et limites techniques de l offre OVHcloud Connect'
+excerpt: 'Découvrez les capacités et limites techniques de l''offre OVHcloud Connect'
 updated: 2025-10-03
 ---
 
@@ -25,7 +25,7 @@ updated: 2025-10-03
 * Le nombre d'adresses MAC coté client est limité à 512 par port
 * La bande passante maximale est de 10Gb par port
 
-#### Mode Layer-3
+#### Mode Layer 3
 
 * Chaque PoP ne prend en charge qu’une seule session BGP (pas de Multihop eBGP)
 * Chaque AZ prend en charge jusqu’à 4 peers BGP
@@ -40,11 +40,11 @@ updated: 2025-10-03
 802.1Qaz, 802.1Qau)
 * TRILL, SPF et FabricPath
 * FCoE
-* Spannning-tree
+* Spanning Tree
 * IGMP et Multicast
 * EtherChannel, PaGP pour l'aggrégation de liens
 
-#### Mode Layer-3
+#### Mode Layer 3
 
 * IPv6
 * Tout mécanisme de qualité de service

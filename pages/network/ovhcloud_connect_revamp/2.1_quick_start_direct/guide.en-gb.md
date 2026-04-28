@@ -13,7 +13,7 @@ This guide walks you through the essential steps to establish a **direct, privat
 Make sure you have:
 
 - ✅ An **OVHcloud account** with billing configured
-- ✅ Equipment (or a circuit) in a **data centre where OVHcloud has a PoP** (see [PoP Locations](1.4_pop_locations_regions.md))
+- ✅ Equipment (or a circuit) in a **data centre where OVHcloud has a PoP** (see [PoP Locations](../1.4_pop_locations_regions/guide.en-gb.md))
 - ✅ A **router** that supports BGP and single-mode fibre optic interfaces
 - ✅ A planned **IP addressing scheme** (peering IPs and prefixes to advertise)
 - ✅ A private or public **ASN** (Autonomous System Number)
@@ -72,7 +72,7 @@ Make sure you have:
 5. Fill in technical details: your ASN, contact information, and any special instructions for the data centre.
 6. Review pricing and confirm the order.
 
-For detailed ordering steps, see [Order OVHcloud Connect Direct](3.1_order_direct.md).
+For detailed ordering steps, see [Order OVHcloud Connect Direct](../3.1_order_direct/guide.en-gb.md).
 
 ### Step 2 — Receive the LOA
 
@@ -92,7 +92,7 @@ This step may take a few days depending on the data centre's processes.
 
 Link your OVHcloud Connect service to your **vRack** so that your OVHcloud resources (servers, VMs, etc.) can communicate over the private connection.
 
-See [Associate an OVHcloud Connect to your vRack](3.5_associate_vrack.md).
+See [Associate an OVHcloud Connect to your vRack](../3.5_associate_vrack/guide.en-gb.md).
 
 ### Step 5 — Configure BGP
 
@@ -102,7 +102,7 @@ Once the physical link is up:
 2. On **your router**, configure a BGP neighbour using the peering IP and OVHcloud's ASN provided in the configuration details.
 3. Advertise the IP prefixes you want to reach from OVHcloud.
 
-For detailed BGP configuration, see [Configure OCC L3 with BGP](3.6_occ_l3_bgp.md).
+For detailed BGP configuration, see [Configure OCC L3 with BGP](../3.7_occ_l3_bgp/guide.en-gb.md).
 
 ### Step 6 — Test and verify
 
@@ -125,13 +125,13 @@ Run these checks to confirm everything is working:
 | No routes exchanged | BGP prefix filters, route-map configuration, maximum-prefix limits |
 | Cannot ping OVHcloud resources | vRack association, VLAN ID, subnet configuration in AZ |
 
-If you cannot resolve the issue, [open a support ticket](3.10_incident_followup.md) with your BGP output, interface status, and traceroute results.
+If you cannot resolve the issue, [open a support ticket](../3.10_incident_followup/guide.en-gb.md) with your BGP output, interface status, and traceroute results.
 
 ## What's next?
 
-- For a managed connection, see [Quick Start: Provider Connection](2.2_quick_start_provider.md)
-- For resilient setups, see [Resilient On-Prem tutorial](4.1.2_onprem_resilient.md)
-- Set up [monitoring](3.9_monitor.md) for your connection
+- For a managed connection, see [Quick Start: Provider Connection](../2.2_quick_start_provider/guide.en-gb.md)
+- For resilient setups, see [Resilient On-Prem tutorial](../4.2_resilient/4.1.2_onprem_resilient/guide.en-gb.md)
+- Set up [monitoring](../3.9_monitor/guide.en-gb.md) for your connection
 
 ## Go further
 

@@ -41,7 +41,7 @@ Before cancelling the OVHcloud Connect service:
 After OVHcloud confirms the cancellation:
 
 1. Contact your **data centre operator** and request the removal of the cross-connect.
-2. Provide any required documentation (some facilities require an LOA for removal — see [Cross Connect LOA](3.11_cross_connect_loa.md)).
+2. Provide any required documentation (some facilities require an LOA for removal — see [Cross Connect LOA](../3.11_cross_connect_loa/guide.en-gb.md)).
 3. Confirm with the data centre that the physical cable has been removed.
 
 > **Tip:** Keep a copy of all cancellation confirmations and LOAs for your records.
@@ -71,8 +71,8 @@ client.post(f"/ovhCloudConnect/{service_name}/terminate")
 
 ## What's next?
 
-- [Cancel OVHcloud Connect Provider](3.4_cancel_provider.md) (if you also have a provider connection)
-- [Order a new connection](3.1_order_direct.md) if you need to replace the service
+- [Cancel OVHcloud Connect Provider](../3.4_cancel_provider/guide.en-gb.md) (if you also have a provider connection)
+- [Order a new connection](../3.1_order_direct/guide.en-gb.md) if you need to replace the service
 
 ## Go further
 

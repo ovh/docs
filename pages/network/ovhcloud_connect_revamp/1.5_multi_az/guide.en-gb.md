@@ -33,7 +33,7 @@ For automatic failover, your BGP configuration must distinguish between the prim
 - **AS-path prepending** — Make the backup path's AS-path longer so it is less preferred.
 - **MED (Multi-Exit Discriminator)** — Use MED values to influence inbound routing from OVHcloud.
 
-See [Configure OCC L3 with BGP](../3.6_occ_l3_bgp/guide.en-gb.md) for detailed configuration guidance.
+See [Configure OCC L3 with BGP](../3.7_occ_l3_bgp/guide.en-gb.md) for detailed configuration guidance.
 
 ## When to use Multi-AZ
 
@@ -47,8 +47,8 @@ See [Configure OCC L3 with BGP](../3.6_occ_l3_bgp/guide.en-gb.md) for detailed c
 ## What's next?
 
 - Learn about [SLAs](../1.7_slas/guide.en-gb.md) and how Multi-AZ affects your uptime guarantees
-- See the [AZ configuration guide](../3.5_vrack_network_setup/guide.en-gb.md) to set up subnets across zones
-- Explore [resilient architecture tutorials](../4.1.2_onprem_resilient/guide.en-gb.md) for step-by-step examples
+- See the [AZ configuration guide](../3.6_vrack_network_setup/guide.en-gb.md) to set up subnets across zones
+- Explore [resilient architecture tutorials](../4.2_resilient/4.1.2_onprem_resilient/guide.en-gb.md) for step-by-step examples
 
 ## Go further
 

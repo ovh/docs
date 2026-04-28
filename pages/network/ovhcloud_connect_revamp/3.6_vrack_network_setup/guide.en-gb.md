@@ -17,8 +17,8 @@ Before configuring OVHcloud Connect L3 routing (BGP or static), you must prepare
 > [!primary]
 > This guide covers the **basic vRack configuration for OVHcloud Connect compatibility**. For advanced vRack networking configuration, see:
 >
-> - [Configure OVHcloud Connect L3 with BGP](/pages/network/ovhcloud_connect_revamp/3.6_occ_l3_bgp)
-> - [Configure OVHcloud Connect L3 with static routing](/pages/network/ovhcloud_connect_revamp/3.7_occ_l3_static)
+> - [Configure OVHcloud Connect L3 with BGP](/pages/network/ovhcloud_connect_revamp/3.7_occ_l3_bgp)
+> - [Configure OVHcloud Connect L3 with static routing](/pages/network/ovhcloud_connect_revamp/3.8_occ_l3_static)
 >
 > For general vRack networking, see the [vRack service presentation](/pages/network/vrack/global).
 >
@@ -27,9 +27,10 @@ Before configuring OVHcloud Connect L3 routing (BGP or static), you must prepare
 
 ## Requirements
 
-You need to have cleared steps 1 through 3 of one of the following guides : 
-- [Quick Start: Direct Connection to OVHcloud](pages\network\ovhcloud_connect_revamp\2.1_quick_start_direct)
-- [Quick Start: Connection to OVHcloud with a Provider](pages\network\ovhcloud_connect_revamp\2.2_quick_start_provider)
+You need to have cleared steps 1 through 3 of one of the following guides:
+
+- [Quick Start: Direct Connection to OVHcloud](/pages/network/ovhcloud_connect_revamp/2.1_quick_start_direct)
+- [Quick Start: Connection to OVHcloud with a Provider](/pages/network/ovhcloud_connect_revamp/2.2_quick_start_provider)
 
 ## Instructions
 
@@ -222,8 +223,8 @@ For more information, refer to our guide on [Multi-AZ](/pages/network/ovhcloud_c
 
 Now that your AZ configuration is ready, configure the OVHcloud Connect L3 routing:
 
-- [Configure OVHcloud Connect L3 with BGP](/pages/network/ovhcloud_connect_revamp/3.6_occ_l3_bgp)
-- [Configure OVHcloud Connect L3 with static routing](/pages/network/ovhcloud_connect_revamp/3.7_occ_l3_static)
+- [Configure OVHcloud Connect L3 with BGP](/pages/network/ovhcloud_connect_revamp/3.7_occ_l3_bgp)
+- [Configure OVHcloud Connect L3 with static routing](/pages/network/ovhcloud_connect_revamp/3.8_occ_l3_static)
 - [Monitor your connection](/pages/network/ovhcloud_connect_revamp/3.9_monitor)
 
 Join our [community of users](/links/community).

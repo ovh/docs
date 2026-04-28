@@ -96,11 +96,11 @@ provider "ovh" {
   # OVH_APPLICATION_KEY, OVH_APPLICATION_SECRET, OVH_CONSUMER_KEY
 }
 
-# Example: Declare an OVHcloud Connect resource
+# Example: Associate an OVHcloud Connect service with a vRack
 # Check the Terraform Registry for exact resource names and attributes
-resource "ovh_vrack_cloudconnect" "my_connect" {
-  service_name = "vrack-abc123"
-  connect_id   = "ovhcloudconnect-xyz789"
+resource "ovh_vrack_ovhcloudconnect" "my_connect" {
+  service_name      = "vrack-abc123"
+  ovh_cloud_connect = "ovhcloudconnect-xyz789"
 }
 ```
 

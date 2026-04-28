@@ -12,7 +12,7 @@ updated: 2026-04-14
 2. **AZ extra configuration (network)** — Static routes within the OVHcloud AZ for route distribution.
 
 > [!primary]
-> If you prefer dynamic routing with BGP, see [Configure OVHcloud Connect L3 with BGP](/pages/network/ovhcloud_connect_revamp/3.6_occ_l3_bgp).
+> If you prefer dynamic routing with BGP, see [Configure OVHcloud Connect L3 with BGP](/pages/network/ovhcloud_connect_revamp/3.7_occ_l3_bgp).
 
 ### When to use static routing vs BGP
 
@@ -30,8 +30,8 @@ Use static routing when you have a simple setup with a small number of stable pr
 
 - An active [OVHcloud account](/links/manager)
 - An active OVHcloud Connect service (status `active`)
-- OVHcloud Connect associated with a vRack — see [Associate OVHcloud Connect with your vRack](/pages/network/ovhcloud_connect_revamp/3.8_associate_vrack)
-- An AZ configuration created — see [Set up vRack networking](/pages/network/ovhcloud_connect_revamp/3.5_vrack_network_setup)
+- OVHcloud Connect associated with a vRack — see [Associate OVHcloud Connect with your vRack](/pages/network/ovhcloud_connect_revamp/3.5_associate_vrack)
+- An AZ configuration created — see [Set up vRack networking](/pages/network/ovhcloud_connect_revamp/3.6_vrack_network_setup)
 - A /30 peering subnet (e.g. `192.0.2.0/30`)
 - OVHcloud API credentials (Application Key, Application Secret, Consumer Key). Refer to the [First steps with the OVHcloud API](/pages/manage-and-operate/api/first-steps) guide.
 
@@ -107,7 +107,7 @@ From this response:
 
 ### Step 4 — Create AZ extra configuration (static)
 
-After the PoP configuration and a [AZ configuration](/pages/network/ovhcloud_connect_revamp/3.5_vrack_network_setup), create a **network extra configuration** to define static routes within the AZ.
+After the PoP configuration and a [AZ configuration](/pages/network/ovhcloud_connect_revamp/3.6_vrack_network_setup), create a **network extra configuration** to define static routes within the AZ.
 
 > [!primary]
 > With static routing, **VRRP remains active** on the AZ endpoint. OVHcloud devices A and B share a virtual IP (the second address of the AZ subnet, e.g. `172.16.1.1`). Point your services' default gateway to this VRRP virtual IP for automatic failover between devices.
@@ -263,7 +263,7 @@ Available diagnostic names: `diagPeering`, `diagPeeringExtra`, `diagRoutes`, `di
 > [!warning]
 > Static routing has significant limitations compared to BGP:
 >
-> - **No automatic failover.** If a link goes down, traffic is blackholed until you manually update routes. For automatic failover, use [BGP](/pages/network/ovhcloud_connect_revamp/3.6_occ_l3_bgp).
+> - **No automatic failover.** If a link goes down, traffic is blackholed until you manually update routes. For automatic failover, use [BGP](/pages/network/ovhcloud_connect_revamp/3.7_occ_l3_bgp).
 > - **Manual updates required.** When you add or change subnets, you must update both the OVHcloud extra configuration and your router configuration.
 > - **No load balancing.** Static routes do not support ECMP or traffic engineering. Traffic follows a single path.
 > - **Not recommended for multi-AZ.** For resilient multi-AZ setups, BGP is strongly recommended — see [Multi-AZ](/pages/network/ovhcloud_connect_revamp/1.5_multi_az).
@@ -285,8 +285,8 @@ Delete in reverse order:
 
 ## Go further
 
-- [Set up vRack networking](/pages/network/ovhcloud_connect_revamp/3.5_vrack_network_setup) — If you have not configured AZ subnets yet
-- [Associate OVHcloud Connect with your vRack](/pages/network/ovhcloud_connect_revamp/3.8_associate_vrack)
+- [Set up vRack networking](/pages/network/ovhcloud_connect_revamp/3.6_vrack_network_setup) — If you have not configured AZ subnets yet
+- [Associate OVHcloud Connect with your vRack](/pages/network/ovhcloud_connect_revamp/3.5_associate_vrack)
 - [Monitor your connection](/pages/network/ovhcloud_connect_revamp/3.9_monitor)
 
 Join our [community of users](/links/community).

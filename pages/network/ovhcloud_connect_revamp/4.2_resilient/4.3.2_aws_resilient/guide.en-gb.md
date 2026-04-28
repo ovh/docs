@@ -122,6 +122,6 @@ Plan your budget accordingly. The cost of redundancy is typically justified by t
 
 ## What's next?
 
-- [Simple AWS connection](4.3.1_aws_simple.md) for non-critical workloads
+- [Simple AWS connection](../../4.1_simple/4.3.1_aws_simple/guide.en-gb.md) for non-critical workloads
 - [AWS Direct Connect documentation](https://docs.aws.amazon.com/directconnect/)
-- [Connect Azure to OVHcloud](4.4.1_azure_simple.md) for multi-cloud setups
+- [Connect Azure to OVHcloud](../../4.1_simple/4.4.1_azure_simple/guide.en-gb.md) for multi-cloud setups

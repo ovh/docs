@@ -64,12 +64,12 @@ This tutorial guides you through connecting a single on-premises site to OVHclou
 
 Choose **Direct** or **Provider** depending on your situation:
 
-- **Direct** — You have equipment in the same data centre as an OVHcloud PoP. See [Order Direct](3.1_order_direct.md).
-- **Provider** — You prefer a managed connection. See [Order Provider](3.2_order_provider.md).
+- **Direct** — You have equipment in the same data centre as an OVHcloud PoP. See [Order Direct](../../3.1_order_direct/guide.en-gb.md).
+- **Provider** — You prefer a managed connection. See [Order Provider](../../3.2_order_provider/guide.en-gb.md).
 
 ### 2. Install the physical connection
 
-- **Direct:** Provide the LOA to the data centre operator to install a cross-connect. See [Cross Connect LOA](3.11_cross_connect_loa.md).
+- **Direct:** Provide the LOA to the data centre operator to install a cross-connect. See [Cross Connect LOA](../../3.11_cross_connect_loa/guide.en-gb.md).
 - **Provider:** Share the pairing key with your provider and wait for activation.
 
 ### 3. Configure BGP
@@ -79,15 +79,15 @@ Set up a single BGP session between your on-premises router and OVHcloud:
 - Advertise your on-premises prefixes (e.g. `10.0.0.0/16`) to OVHcloud.
 - Accept OVHcloud prefixes (e.g. `172.16.0.0/16`) from OVHcloud.
 
-See [Configure OCC L3 with BGP](3.6_occ_l3_bgp.md) for detailed instructions and configuration examples.
+See [Configure OCC L3 with BGP](../../3.7_occ_l3_bgp/guide.en-gb.md) for detailed instructions and configuration examples.
 
 ### 4. Associate with vRack
 
-Link your OVHcloud Connect service to your vRack. See [Associate with vRack](3.8_associate_vrack.md).
+Link your OVHcloud Connect service to your vRack. See [Associate with vRack](../../3.5_associate_vrack/guide.en-gb.md).
 
 ### 5. Configure AZ subnets
 
-Define the private subnets in OVHcloud that your on-premises network should reach. See [Set up your vRack network](3.5_vrack_network_setup.md).
+Define the private subnets in OVHcloud that your on-premises network should reach. See [Set up your vRack network](../../3.6_vrack_network_setup/guide.en-gb.md).
 
 ### 6. Test connectivity
 
@@ -100,17 +100,17 @@ Define the private subnets in OVHcloud that your on-premises network should reac
 
 ### 7. Set up monitoring
 
-Configure monitoring alerts for link status, BGP session, and bandwidth. See [Monitor](3.9_monitor.md).
+Configure monitoring alerts for link status, BGP session, and bandwidth. See [Monitor](../../3.9_monitor/guide.en-gb.md).
 
 ## Limitations of a simple connection
 
 - **Single point of failure** — If the link, PoP, or cross-connect fails, connectivity is lost.
 - **No automatic failover** — You need to manually intervene or rely on internet-based backup.
-- **Lower SLA** — A single connection typically supports up to 99.9% SLA (see [SLAs](1.7_slas.md)).
+- **Lower SLA** — A single connection typically supports up to 99.9% SLA (see [SLAs](../../1.7_slas/guide.en-gb.md)).
 
-> **Recommendation:** For production workloads, consider upgrading to a [resilient architecture](4.1.2_onprem_resilient.md).
+> **Recommendation:** For production workloads, consider upgrading to a [resilient architecture](../../4.2_resilient/4.1.2_onprem_resilient/guide.en-gb.md).
 
 ## What's next?
 
-- [Resilient On-Prem architecture](4.1.2_onprem_resilient.md) for high availability
-- [Monitor your connection](3.9_monitor.md)
+- [Resilient On-Prem architecture](../../4.2_resilient/4.1.2_onprem_resilient/guide.en-gb.md) for high availability
+- [Monitor your connection](../../3.9_monitor/guide.en-gb.md)

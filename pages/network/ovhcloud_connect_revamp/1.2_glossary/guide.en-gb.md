@@ -25,7 +25,7 @@ The subscribed throughput capacity for your link (from 50 Mbps to 10 Gbps). Unli
 The standard routing protocol used to exchange network routes between different networks. In the context of OVHcloud Connect, BGP is used in L3 mode to tell each side (your network and OVHcloud) which IP address ranges are reachable through the connection.
 
 **BGP-ECMP (Equal-Cost Multi-Path)**
-Routing technique that distributes traffic across multiple active physical links simultaneously, thus optimizing load and redundancy.
+Routing technique that distributes traffic across multiple active physical links simultaneously, thus optimising load and redundancy.
 
 **BGP Session**
 An active connection between two BGP routers (called "peers") that allows them to share routing information. You will configure at least one BGP session between your router and OVHcloud's router at the PoP.
