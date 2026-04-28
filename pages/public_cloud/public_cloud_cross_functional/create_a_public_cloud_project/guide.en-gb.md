@@ -27,6 +27,8 @@ Creating a project is the first step in deploying [Public Cloud instances](/link
 
 <!-- CP-STEPS-START:create-public-cloud-project -->
 
+### Project creation
+
 Once you have read and understood the terms of the contracts, tick the corresponding box, then click `Discover the Public Cloud universe`{.action}.
 
 ![project creation](images/firstproject2024.png){.thumbnail width="400"}
@@ -56,6 +58,19 @@ You now have access to the entire OVHcloud Public Cloud ecosystem. To discover t
 <iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/N7r_VCB7nmI?si=fcyToz1wK8Tw7skw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 <!-- CP-STEPS-END:create-public-cloud-project -->
+
+### Project activation and free trial
+
+When you activate your project by registering a payment method via `Activate project`{.action} from discovery mode, a **€200 free trial credit** is automatically applied if you are eligible.
+
+> [!primary]
+> **Free trial conditions**
+>
+> - The credit is activated at the time of project activation and is valid for **one month**.
+> - **Eligible:** Any OVHcloud customer creating their first Public Cloud project (an existing OVHcloud account is not an obstacle).
+> - **Not eligible:** Customers who already have or have previously had a Public Cloud project, or who have already used a free trial credit.
+>
+> Learn more on the [OVHcloud Public Cloud free trial](https://www.ovhcloud.com/en/public-cloud/free-trial/) page.
 
 ## Go further
 

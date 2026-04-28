@@ -73,4 +73,9 @@ The voucher balance will appear in the `Credits & Vouchers` list.
 
 ## Go further
 
+> [!primary]
+>
+> New customers automatically receive €200 in free trial credit upon **activating** their first Public Cloud project. See our guide on [Creating your first Public Cloud project](/pages/public_cloud/public_cloud_cross_functional/create_a_public_cloud_project).
+>
+
 Join our [community of users](/links/community).
