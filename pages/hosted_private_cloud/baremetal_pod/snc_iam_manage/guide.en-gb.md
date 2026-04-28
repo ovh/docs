@@ -19,7 +19,6 @@ All authentication is centralised in **Keycloak**, which acts as the single entr
 - A **Bare Metal Pod SecNumCloud** delivered and operational
 - Access to the Keycloak interface with an account holding the `pod_operator` role or higher
 - Having read the [Getting started with your Bare Metal Pod SecNumCloud](/pages/hosted_private_cloud/baremetal_pod/snc_getting_started) guide
-- Having `jq` installed on your workstation (required for the Keycloak API script)
 
 ## Instructions
 
