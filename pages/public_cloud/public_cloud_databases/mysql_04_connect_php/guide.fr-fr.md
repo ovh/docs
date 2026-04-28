@@ -1,4 +1,4 @@
----
+﻿---
 title: Se connecter depuis PHP au service Public Cloud Databases pour MySQL (EN)
 excerpt: Connect to your Public Cloud Databases for MySQL using the PHP programming language
 updated: 2025-05-16
@@ -97,10 +97,8 @@ array(2) {
 
 #### Using PDO
 
-<!-- CP-STEPS-START:using-pdo -->
 Click on `Databases`{.action} in the left-hand navigation bar, and select your MySQL instance.  
 Select the `General Information`{.action} tab. In the **Login Informations** section, download the CA certificate.
-<!-- CP-STEPS-END:using-pdo -->
 
 ```php
 <?php

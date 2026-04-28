@@ -1,4 +1,4 @@
----
+﻿---
 title: Configurez les connexions entrantes d'un service Public Cloud Databases pour MySQL (EN)
 excerpt: Find out how to configure your MySQL instance to accept incoming connections
 updated: 2025-05-19
@@ -36,7 +36,6 @@ Click on `Databases`{.action} in the left-hand navigation bar and select your My
 
 #### Step 1: Verify your user roles and password
 
-<!-- CP-STEPS-START:step-1-verify-your-user-roles-and-password -->
 Select the `Users`{.action} tab. Verify that you have a user with sufficient rights and a configured password. If you don't remember the user's password, you can either create a new user or regenerate the password of an existing user.
 
 > [!warning]
@@ -61,11 +60,9 @@ Enter a username then click `Create User`{.action}.
 
 > [!primary]
 > You can delete a user or regenerate a password via the `...`{.action} button in the `Users & Roles` table.
-<!-- CP-STEPS-END:step-1-verify-your-user-roles-and-password -->
 
 #### Step 2: Authorise incoming connections from the MySQL client
 
-<!-- CP-STEPS-START:step-2-authorise-incoming-connections-from-the-mysql-client -->
 > [!warning]
 > For security reasons the default network configuration doesn't allow any incoming connections. It is thus critical you authorise the suitable IP addresses in order to successfully access your database.
 
@@ -83,11 +80,9 @@ Validate the changes by clicking the `Save changes`{.action} button.
 >
 > If you want to allow connections from the outside, you can enter the IP 0.0.0.0/0. Please use it carefully.
 >
-<!-- CP-STEPS-END:step-2-authorise-incoming-connections-from-the-mysql-client -->
 
 #### Collect required information
 
-<!-- CP-STEPS-START:collect-required-information -->
 Select the `Dashboard`{.action} tab to find the required login credentials in the `Connection information` section.
 
 ![Login information tab](images/connection_information.png){.thumbnail}
@@ -99,7 +94,6 @@ Select the `Databases`{.action} tab to get the database name.
 Select the `Users`{.action} tab to get the username.
 
 ![User table](images/user.png){.thumbnail}
-<!-- CP-STEPS-END:collect-required-information -->
 
 ## Go further
 

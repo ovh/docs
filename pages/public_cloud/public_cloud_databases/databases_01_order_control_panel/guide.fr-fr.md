@@ -1,4 +1,4 @@
----
+﻿---
 title: Premiers pas avec les bases de données Public Cloud (EN)
 excerpt: Find out how to set up your managed database service in the OVHcloud Control Panel
 updated: 2024-10-04
@@ -29,7 +29,6 @@ OVHcloud Databases as-a-service (DBaaS) allow you to focus on building and deplo
 
 ## Instructions
 
-<!-- CP-STEPS-START:order-database-instance -->
 Click on `Databases`{.action} in the left-hand navigation bar under **Databases & Analytics**.
 
 > [!primary]
@@ -103,7 +102,6 @@ Within a few minutes your new database service will be deployed. Messages in the
 Continue with the *Configure your instance to accept incoming connections* guide of your selected database type available [here](/products/public-cloud-databases) to configure your service after installation.
 
 Note that the configuration options might be different, depending on the database type. You will find example on this repository: <https://github.com/ovh/public-cloud-databases-examples>.
-<!-- CP-STEPS-END:order-database-instance -->
 
 ## We want your feedback!
 

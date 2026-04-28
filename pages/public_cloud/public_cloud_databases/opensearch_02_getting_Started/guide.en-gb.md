@@ -171,9 +171,9 @@ In practice, for OpenSearch Dashboards to work properly, you must grant the user
 
 ### Advanced configuration
 
-<!-- CP-STEPS-START:advanced-configuration -->
 #### Indexes
 
+<!-- CP-STEPS-START:advanced-configuration-indexes -->
 An index contains a database schema. Each data is based on a basic unit which is a JSON document, indexed with a unique ID. Indexing is the method used to store data and by the search engine for fast retrieval.
 
 You can learn more browsing the [OpenSearch official documentation - Index data](https://opensearch.org/docs/latest/opensearch/index-data/)
@@ -185,16 +185,18 @@ It's not mandatory, but if needed, you can add new indexes in the OpenSearch dat
 Please enter the name of the index that you want to create.
 
 ![Index Template creation](images/configure_index_template.png){.thumbnail}
+<!-- CP-STEPS-END:advanced-configuration-indexes -->
 
 #### Automatic backups
 
+<!-- CP-STEPS-START:advanced-configuration-backups -->
 OVHcloud performs daily backups for your Public Cloud Databases for the OpenSearch service.
 To find them, switch to the `Backups`{.action} tab. Backups will be created automatically, and retention time depends on the service plan. Please visit the [Public Cloud Databases for OpenSearch capabilities page](/pages/public_cloud/public_cloud_databases/opensearch_01_capabilities) for detailed information on each plan's properties.
 
 ![Backups](images/configure_backup.png){.thumbnail}
 
 You can restore and delete backups via the `...`{.action} button.
-<!-- CP-STEPS-END:advanced-configuration -->
+<!-- CP-STEPS-END:advanced-configuration-backups -->
 
 ### Connection to the OpenSearch Dashboard
 

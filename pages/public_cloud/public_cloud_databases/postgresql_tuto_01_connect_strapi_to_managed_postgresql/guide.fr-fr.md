@@ -1,4 +1,4 @@
----
+﻿---
 title: Construire une application Strapi connectée a Public Cloud Databases pour PostgreSQL (EN)
 excerpt: "Find out how to build a Strapi application connected to an OVHcloud Managed PostgreSQL service"
 updated: 2021-01-11
@@ -38,25 +38,20 @@ As [Strapi](https://strapi.io/) is written in Javascript, packages like [nodejs]
 
 #### Subscribing to the service
 
-<!-- CP-STEPS-START:subscribing-to-the-service -->
 Click on `Databases`{.action} in the left-hand navigation bar under **Storage**.
 
 Click on the `Create a database instance`{.action} button. (`Create a service`{.action} if your project already contains databases.)
-<!-- CP-STEPS-END:subscribing-to-the-service -->
 
 #### Step 1: Select PostgreSQL database
 
-<!-- CP-STEPS-START:step-1-select-postgresql-database -->
 Click on the PostgreSQL database and then select the version to install from the drop-down menu.
 
 ![Choose PostgreSQL database](images/postgresql-tuto-01-connect-strapi-to-managed-postgresql01.png){.thumbnail}
 
 Click `Next`{.action} to continue.
-<!-- CP-STEPS-END:step-1-select-postgresql-database -->
 
 #### Step 2: Select a solution
 
-<!-- CP-STEPS-START:step-2-select-a-solution -->
 In this step, choose an appropriate service plan. You will be able to upgrade the plan after creation.
 
 ![Choose plan](images/postgresql-tuto-01-connect-strapi-to-managed-postgresql02.png){.thumbnail}
@@ -64,21 +59,17 @@ In this step, choose an appropriate service plan. You will be able to upgrade th
 Please visit the [capabilities page](/pages/public_cloud/public_cloud_databases/postgresql_01_capabilities) for detailed information on each plan's properties.
 
 Click `Next`{.action} to continue.
-<!-- CP-STEPS-END:step-2-select-a-solution -->
 
 #### Step 3: Select a location
 
-<!-- CP-STEPS-START:step-3-select-a-location -->
 Choose the geographical region of the data center in which your database will be hosted.
 
 ![Choose region](images/postgresql-tuto-01-connect-strapi-to-managed-postgresql03.png){.thumbnail}
 
 Click `Next`{.action} to continue.
-<!-- CP-STEPS-END:step-3-select-a-location -->
 
 #### Step 4: Configure database nodes
 
-<!-- CP-STEPS-START:step-4-configure-database-nodes -->
 You can choose the node model in this step. The initial and maximum numbers of nodes depend on the chosen solution in step 2.
 
 ![Order nodes](images/postgresql-tuto-01-connect-strapi-to-managed-postgresql04.png){.thumbnail}
@@ -86,21 +77,17 @@ You can choose the node model in this step. The initial and maximum numbers of n
 Please visit the [capabilities page](/pages/public_cloud/public_cloud_databases/postgresql_01_capabilities) for detailed information on the hardware resources and other properties of the MySQL database installation.
 
 Take note of the pricing information and click `Next`{.action} to continue.
-<!-- CP-STEPS-END:step-4-configure-database-nodes -->
 
 #### Step 5: Configure your options
 
-<!-- CP-STEPS-START:step-5-configure-your-options -->
 You can name your database in this step.
 
 ![Configure options](images/postgresql-tuto-01-connect-strapi-to-managed-postgresql05.png){.thumbnail}
 
 Click `Next`{.action} to continue.
-<!-- CP-STEPS-END:step-5-configure-your-options -->
 
 #### Step 6: Summary and confirmation
 
-<!-- CP-STEPS-START:step-6-summary-and-confirmation -->
 The last section will show a summary of your order as well as the API equivalent of creating this database instance with the [OVHcloud API](/pages/manage_and_operate/api/first-steps).
 
 ![Confirm order](images/postgresql-tuto-01-connect-strapi-to-managed-postgresql06.png){.thumbnail}
@@ -112,7 +99,6 @@ Within a few minutes your new database service will be deployed. Messages in the
 Your database is ready when cluster status is "Ready", node status is green, and number of users is set to "1 user".
 
 ![Green statuses on Database Control Panel](images/postgresql-tuto-01-connect-strapi-to-managed-postgresql08.png){.thumbnail}
-<!-- CP-STEPS-END:step-6-summary-and-confirmation -->
 
 ### Authorize your IP address
 
@@ -122,11 +108,9 @@ Your database is ready when cluster status is "Ready", node status is green, and
 
 #### Add your IPs to the DB authorized list
 
-<!-- CP-STEPS-START:add-your-ips-to-the-db-authorized-list -->
 Following the related documentation on how to [authorize the suitable IP addresses](/pages/public_cloud/public_cloud_databases/mongodb_02_manage_control_panel#configuring-authorized-ips), add your IPs to the authorized list.
 
 ![Green statuses and authorized IPs setted on Database Control Panel](images/postgresql-tuto-01-connect-strapi-to-managed-postgresql10.png){.thumbnail}
-<!-- CP-STEPS-END:add-your-ips-to-the-db-authorized-list -->
 
 ### Test connection to the PostgreSQL DataBase
 
@@ -149,7 +133,6 @@ A quick and easy way to test the connection is to use the Postgre Command Line I
 
 #### Connect to the database
 
-<!-- CP-STEPS-START:connect-to-the-database -->
 The useful parameters are:
 
 - The db Host, the db Port
@@ -162,7 +145,6 @@ The useful parameters are:
     - Get it after you reset it.
 
 ![Password reseted](images/postgresql-tuto-01-connect-strapi-to-managed-postgresql11.png){.thumbnail}
-<!-- CP-STEPS-END:connect-to-the-database -->
 
 Now connect to the database with the following command
 
@@ -493,9 +475,7 @@ rm -rf /home/my/app/path/my-strapi/
 
 To clean your PostgreSQL, use the OVHcloud Control Panel to delete your managed PostgreSQL service:
 
-<!-- CP-STEPS-START:cleaning-up -->
 ![delete service menu](images/postgresql-tuto-01-connect-strapi-to-managed-postgresql15.png){.thumbnail}
-<!-- CP-STEPS-END:cleaning-up -->
 
 ## We want your feedback!
 

@@ -1,4 +1,4 @@
----
+﻿---
 title: Mettre à jour le plan d'une base de données Public Cloud (EN)
 excerpt: Find out how to upgrade the service plan of your cluster
 updated: 2025-07-31
@@ -32,7 +32,6 @@ Learn how to upgrade the service plan of your cluster according to your needs.
 
 ### Using the OVHcloud Control Panel
 
-<!-- CP-STEPS-START:using-the-ovhcloud-control-panel -->
 Click `Databases`{.action} in the left navigation bar, select your engine instance then click the `Configuration`{.action} tab.
 
 ![Cluster overview](images/cluster_overview.png)
@@ -40,7 +39,6 @@ Click `Databases`{.action} in the left navigation bar, select your engine instan
 Click `Edit`{.action} on the "Plan" line and adjust the Plan of your cluster.
 
 ![Change solution](images/plan_change_view.png)
-<!-- CP-STEPS-END:using-the-ovhcloud-control-panel -->
 
 ### Using the OVHcloud API
 

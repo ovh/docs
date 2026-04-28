@@ -1,4 +1,4 @@
----
+﻿---
 title: Configurez les connexions entrantes d'un service Public Cloud Databases pour MongoDB (EN)
 excerpt: Find out how to configure your MongoDB instance to accept incoming connections
 updated: 2025-10-08
@@ -36,7 +36,6 @@ Click on `Databases`{.action} in the left-hand navigation bar and select your Mo
 
 #### Step 1: Verify your user roles and password
 
-<!-- CP-STEPS-START:verify-user-roles-and-password -->
 Select the `Users`{.action} tab. Verify that you have a user with sufficient rights and a configured password. If you don't remember the user's password, you can either create a new user or regenerate the password of an existing user. Be careful! By doing so you will need to update all the places where you already use this user/password pair.
 
 We provide official MongoDB built-in roles. Please read the [official MongoDB documentation](https://docs.mongodb.com/manual/reference/built-in-roles/) to select the right roles for your use case.
@@ -48,11 +47,9 @@ In our example, we will create a new user called `foo` with the role `userAdmin`
 After a few seconds the user is ready with the "Enabled" status, you can then reset and note its password.
 
 ![User ready](images/mongodb_02_manage_control_panel-reset_password.png){.thumbnail}
-<!-- CP-STEPS-END:verify-user-roles-and-password -->
 
 #### Step 2: Authorise incoming connections from the MongoDB client
 
-<!-- CP-STEPS-START:authorise-incoming-connections-from-the-mongodb-client -->
 In this step, select the `Authorised IP's`{.action} tab (Access Control List).
 By default, a Public Cloud Database does not accept any form of connection from the outside world.
 This way we can help prevent intrusive connection attempts.
@@ -65,11 +62,9 @@ Click to authorise a new IP. In our case we will enter 109.190.200.59:
 >
 > If you want to allow any connections from the outside, you can enter the IP 0.0.0.0/0. Please use it carefully. Every IP will be authorised.
 >
-<!-- CP-STEPS-END:authorise-incoming-connections-from-the-mongodb-client -->
 
 ### Get your connection information (URI)
 
-<!-- CP-STEPS-START:get-your-connection-information-uri -->
 Select the `Dashboard`{.action} tab. In the **Connection Information** section, copy the Service URI.
 
 You can specify the MongoDB connection string using either:
@@ -103,7 +98,6 @@ You can specify the MongoDB connection string using either:
 >> ```
 >> mongodb+srv://<username>:<password>@<hostname>/admin?replicaSet=replicaset&tls=true
 >> ```
-<!-- CP-STEPS-END:get-your-connection-information-uri -->
 
 ## Go further
 

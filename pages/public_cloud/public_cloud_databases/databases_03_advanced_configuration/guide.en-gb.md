@@ -68,6 +68,7 @@ When ready, click on `Update advanced configuration`{.action}.
 >
 <!-- CP-STEPS-END:using-the-ovhcloud-control-panel -->
 
+
 ### Using API
 
 > [!primary]

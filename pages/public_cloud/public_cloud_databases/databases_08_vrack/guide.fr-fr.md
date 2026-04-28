@@ -1,4 +1,4 @@
----
+﻿---
 title: Configurer le réseau privé des bases de données Public Cloud (EN)
 excerpt: Connect a Public Cloud Database to vRack
 updated: 2023-08-17
@@ -43,7 +43,6 @@ The first step is to create the virtual network that will be used in your vRack.
 
 ### Step 2 - Creating a Public Cloud Database connected to the private network
 
-<!-- CP-STEPS-START:step-2-creating-a-public-cloud-database-connected-to-the-private-network -->
 Follow this [guide](/pages/public_cloud/public_cloud_databases/databases_01_order_control_panel) to create a new Public Cloud Database.
 
 > [!primary]
@@ -63,11 +62,9 @@ Follow this [guide](/pages/public_cloud/public_cloud_databases/databases_01_orde
 >
 > ![Configure options](images/redis_08_vrack_12.png){.thumbnail}
 >
-<!-- CP-STEPS-END:step-2-creating-a-public-cloud-database-connected-to-the-private-network -->
 
 ### Step 3 - Configure your Public Cloud database instance to accept incoming connections
 
-<!-- CP-STEPS-START:step-3-configure-your-public-cloud-database-instance-to-accept-incoming-connections -->
 Follow the *Configure your \<database> instance to accept incoming connections* guide of your selected database type available [here](/products/public-cloud-databases) to configure your service after installation.
 
 > [!primary]
@@ -78,11 +75,9 @@ Follow the *Configure your \<database> instance to accept incoming connections* 
 >
 
 The database is now connected to the virtual network, we can use it from any component that is connected to the same vRack.
-<!-- CP-STEPS-END:step-3-configure-your-public-cloud-database-instance-to-accept-incoming-connections -->
 
 ### Step 4 - Adding a Public Cloud Instance to the vRack
 
-<!-- CP-STEPS-START:step-4-adding-a-public-cloud-instance-to-the-vrack -->
 Follow this [guide](/pages/public_cloud/compute/public-cloud-first-steps) to create a new Public Cloud Instance
 
 > [!primary]
@@ -96,7 +91,6 @@ Follow this [guide](/pages/public_cloud/compute/public-cloud-first-steps) to cre
 >
 >If you want to test the access from an existing instance, read this tutorial to connect it to the vRack: [Configuring vRack for Public Cloud](/pages/public_cloud/public_cloud_network_services/getting-started-07-creating-vrack#in-case-of-an-existing-instance).
 >
-<!-- CP-STEPS-END:step-4-adding-a-public-cloud-instance-to-the-vrack -->
 
 ### Step 5 - Example of verification with a Public Cloud Databases for Valkey
 

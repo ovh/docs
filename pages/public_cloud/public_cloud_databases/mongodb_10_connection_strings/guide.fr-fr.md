@@ -1,4 +1,4 @@
----
+﻿---
 title: Comprendre le format de l'URI des chaînes de connection de Public Cloud Databases for MongoDB (EN)
 excerpt: Find out how connections syntax work for MongoDB
 updated: 2023-03-02
@@ -91,13 +91,11 @@ _mongodb._tcp.mongodb-708c0af6-o1b33fa01.database.cloud.ovh.net. 1440 IN SRV   0
 
 ### Retrieve MongoDB DNS Seed List connection string
 
-<!-- CP-STEPS-START:retrieve-mongodb-dns-seed-list-connection-string -->
 To retrieve the MongoDB URI (`mongodbSrv`), open your Public Cloud project and click on `Databases`{.action} in the left-hand navigation bar and select your MongoDB instance.
 
 From the central `Login information` panel, select `mongodbSrv` as **Service** and copy the URI.
 
 ![Copy SRV URI from the OVHcloud manager](images/copy-srv-ovhcloud-control-panel.png){.thumbnail}
-<!-- CP-STEPS-END:retrieve-mongodb-dns-seed-list-connection-string -->
 
 ### Test the connection to MongoDB
 
@@ -112,7 +110,6 @@ MongoDB Compass establishes the connection and you should now be able to explore
 
 ### Add a node to a cluster
 
-<!-- CP-STEPS-START:add-a-node-to-a-cluster -->
 Imagine you want to scale your cluster up to support additional load.<br>
 From the OVHcloud Control Panel, click the `Add node`{.action} button and confirm.
 
@@ -126,11 +123,9 @@ From the menu, click `Connection info`{.action}.
 ![MongoDB Compass connection info 4 nodes](images/compass-connection-info-4-nodes.png){.thumbnail}
 
 Your MongoDB Compass is now connected to the 4 nodes of the cluster.
-<!-- CP-STEPS-END:add-a-node-to-a-cluster -->
 
 ### Remove a node from the cluster
 
-<!-- CP-STEPS-START:remove-a-node-from-the-cluster -->
 You now want to scale the cluster down by removing a node.
 
 Go back to the OVHcloud Control Panel, click on the `Delete node`{.action} button and confirm.
@@ -144,7 +139,6 @@ You should be able to see that MongoDB Compass has updated the list of nodes of 
 ![MongoDB Compass connection info 4 nodes](images/compass-connection-info-3-nodes.png){.thumbnail}
 
 Without having updated the connection string, the client application has dynamically updated its connection information.
-<!-- CP-STEPS-END:remove-a-node-from-the-cluster -->
 
 ## Wrapping up
 

@@ -1,4 +1,4 @@
----
+﻿---
 title: Restaurer la sauvegarde d'une base de données Public Cloud (EN)
 excerpt: Find out how to restore a backup
 updated: 2024-07-31
@@ -29,7 +29,6 @@ We continuously improve our offers. You can follow and submit ideas to add to ou
 
 ## Instructions
 
-<!-- CP-STEPS-START:restore-backup-instructions -->
 
 ### Step 1: Select the database service you want to restore data from
 
@@ -134,7 +133,6 @@ This new service is now completely independent from the one you forked the backu
 
 ![Forked service](images/forked-service-20230331.png){.thumbnail}
 
-<!-- CP-STEPS-END:restore-backup-instructions -->
 
 ## Go further
 

@@ -1,4 +1,4 @@
----
+﻿---
 title: Installer et connecter Wagtail à Public Cloud Databases pour PostgreSQL (EN)
 excerpt: "Find out how to install Wagtail and connect it to an OVHcloud Managed PostgreSQL service"
 updated: 2022-02-11
@@ -47,7 +47,6 @@ Click on `Databases`{.action} in the left-hand navigation bar and select your Po
 
 ### Step 1: Verify your user roles and password
 
-<!-- CP-STEPS-START:verify-your-user-roles-and-password -->
 Select the `Users`{.action} tab. Verify that you have a user with sufficient rights and a configured password. If you don't remember the user's password, you can either create a new user or regenerate the password of an existing user. Be careful! By doing so you will need to update all the places where you already use this user/password pair.
 
 This first user **avnadmin** comes with the following privileges:
@@ -71,11 +70,9 @@ In our example, we will simply reset the **avnadmin** password.
 Once created or updated, the user has to be ready and have the status "Enabled" in the Control Panel.
 
 ![User ready](images/user_enabled.png){.thumbnail}
-<!-- CP-STEPS-END:verify-your-user-roles-and-password -->
 
 ### Step 2: Authorise incoming connections from the PostgreSQL client
 
-<!-- CP-STEPS-START:authorise-incoming-connections-from-the-postgresql-client -->
 In this step, select the `Authorised IP's`{.action} tab (Access Control List).
 By default, a Public Cloud Database does not accept any form of connection from the outside world.
 This way we can help prevent intrusive connection attempts.
@@ -83,7 +80,6 @@ This way we can help prevent intrusive connection attempts.
 Click to authorise a new IP, and enter the previously found IP of your Python environment. In our case we will enter 109.190.200.59.
 
 ![Add an IP](images/ip_authorize.png){.thumbnail}
-<!-- CP-STEPS-END:authorise-incoming-connections-from-the-postgresql-client -->
 
 > [!primary]
 >
@@ -203,7 +199,6 @@ You can now access the administrative area at `http://127.0.0.1:8000/admin`:
 
 ### Cleaning up
 
-<!-- CP-STEPS-START:cleaning-up -->
 To clean your Wagtail, make sure it is closed by pressing `CTRL+C`{.action} in the terminal you used to launch it, then delete your installation folder.
 
 ```sh
@@ -213,7 +208,6 @@ rm -rf /home/my/app/path/my-wagtail/
 To clean your PostgreSQL, use the OVHcloud Control Panel to delete your managed PostgreSQL service:
 
 ![delete service menu](images/postgresql-tuto-01-connect-strapi-to-managed-postgresql15.png){.thumbnail}
-<!-- CP-STEPS-END:cleaning-up -->
 
 ## We want your feedback!
 

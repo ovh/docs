@@ -1,4 +1,4 @@
----
+﻿---
 title: Premiers pas avec Public Cloud Databases pour MongoDB (EN)
 excerpt: Get started with MongoDB Free Tier through the OVHcloud Control Panel
 updated: 2024-02-05
@@ -27,7 +27,6 @@ updated: 2024-02-05
 
 ## Instructions
 
-<!-- CP-STEPS-START:instructions -->
 Click on `Databases`{.action} in the left-hand navigation bar under **Databases & Analytics**.
 
 Click the `Create a database instance`{.action} button (click `Create a service`{.action} if your project already contains databases).
@@ -53,7 +52,6 @@ The **Discovery** plan is selected by default along with the following options:
 Review the service settings and click on the `Order`{.action} button.
 
 Within a few minutes, your **Discovery** MongoDB service will be deployed.
-<!-- CP-STEPS-END:instructions -->
 
 ### Connectivity settings
 

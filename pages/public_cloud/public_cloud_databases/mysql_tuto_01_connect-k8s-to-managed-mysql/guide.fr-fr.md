@@ -1,4 +1,4 @@
----
+﻿---
 title: Connecter Managed Kubernetes à Public Cloud Databases pour MySQL (EN)
 excerpt: "Find out how to connect OVHcloud Managed Kubernetes to an OVHcloud Managed MySQL database"
 updated: 2021-12-30
@@ -40,23 +40,18 @@ Finally, you need to be able to order a database solution in the OVHcloud Contro
 
 #### Subscribing to the service
 
-<!-- CP-STEPS-START:subscribing-to-the-service -->
 Click on `Databases`{.action} in the left-hand navigation bar under **Storage**.
 
 Click on the `Create a database instance`{.action} button. (`Create a service`{.action} if your project already contains databases.)
-<!-- CP-STEPS-END:subscribing-to-the-service -->
 
 #### Step 1: Select MySQL database
 
-<!-- CP-STEPS-START:step-1-select-mysql-database -->
 Click on the MySQL database and then select the version to install from the drop-down menu. Click `Next`{.action} to continue.
 
 ![Choose MySQL database](images/connect-kubernetes-to-managed-mysql01.png){.thumbnail}
-<!-- CP-STEPS-END:step-1-select-mysql-database -->
 
 #### Step 2: Select a solution
 
-<!-- CP-STEPS-START:step-2-select-a-solution -->
 In this step, choose an appropriate service plan. You will be able to upgrade the plan after creation.
 
 ![Choose plan](images/connect-kubernetes-to-managed-mysql02.png){.thumbnail}
@@ -64,21 +59,17 @@ In this step, choose an appropriate service plan. You will be able to upgrade th
 Please visit the [capabilities page](/pages/public_cloud/public_cloud_databases/mysql_01_capabilities) for detailed information on each plan's properties.
 
 Click `Next`{.action} to continue.
-<!-- CP-STEPS-END:step-2-select-a-solution -->
 
 #### Step 3: Select a location
 
-<!-- CP-STEPS-START:step-3-select-a-location -->
 Choose the geographical region of the data center in which your database will be hosted.
 
 ![Choose region](images/connect-kubernetes-to-managed-mysql03.png){.thumbnail}
 
 Click `Next`{.action} to continue.
-<!-- CP-STEPS-END:step-3-select-a-location -->
 
 #### Step 4: Configure database nodes
 
-<!-- CP-STEPS-START:step-4-configure-database-nodes -->
 You can choose the node model in this step. The initial and maximum numbers of nodes depend on the chosen solution in step 2.
 
 ![Order nodes](images/connect-kubernetes-to-managed-mysql04.png){.thumbnail}
@@ -86,19 +77,15 @@ You can choose the node model in this step. The initial and maximum numbers of n
 Please visit the [capabilities page](/pages/public_cloud/public_cloud_databases/mysql_01_capabilities) for detailed information on the hardware resources and other properties of the MySQL database installation.
 
 Take note of the pricing information and click `Next`{.action} to continue.
-<!-- CP-STEPS-END:step-4-configure-database-nodes -->
 
 #### Step 5: Configure your options
 
-<!-- CP-STEPS-START:step-5-configure-your-options -->
 You can name your database in this step.
 
 ![Configure options](images/connect-kubernetes-to-managed-mysql05.png){.thumbnail}
-<!-- CP-STEPS-END:step-5-configure-your-options -->
 
 #### Step 6: Summary and confirmation
 
-<!-- CP-STEPS-START:step-6-summary-and-confirmation -->
 The last section will show a summary of your order as well as the API equivalent of creating this database instance with the [OVHcloud API](/pages/manage_and_operate/api/first-steps).
 
 ![Confirm order](images/connect-kubernetes-to-managed-mysql06.png){.thumbnail}
@@ -108,7 +95,6 @@ Within a few minutes your new database service will be deployed. Messages in the
 Your database is ready when cluster status is "Ready", node status is green, and number of users is set to "1 user".
 
 ![Green statuses on Database Control Panel](images/connect-kubernetes-to-managed-mysql08.png){.thumbnail}
-<!-- CP-STEPS-END:step-6-summary-and-confirmation -->
 
 ### Authorise your OVHcloud Managed Kubernetes cluster
 
@@ -120,7 +106,6 @@ Your database is ready when cluster status is "Ready", node status is green, and
 
 #### Add Kubernetes cluster nodes IPs to the DB authorised list
 
-<!-- CP-STEPS-START:add-kubernetes-cluster-nodes-ips-to-the-db-authorised-list -->
 Get your Kubernetes cluster nodes IP addresses from the Compute / Instances menu on the left.
 
 ![Nodes IPs list on Instances Control Panel](images/connect-kubernetes-to-managed-mysql09.png){.thumbnail}
@@ -128,7 +113,6 @@ Get your Kubernetes cluster nodes IP addresses from the Compute / Instances menu
 Following the related documentation on how to [authorise the suitable IP addresses](/pages/public_cloud/public_cloud_databases/mongodb_02_manage_control_panel#configuring-authorised-ips), add your Kubernetes cluster node IPs to the authorised list.
 
 ![Green statuses and authorized IPs setted on Database Control Panel](images/connect-kubernetes-to-managed-mysql10.png){.thumbnail}
-<!-- CP-STEPS-END:add-kubernetes-cluster-nodes-ips-to-the-db-authorised-list -->
 
 ### Test connection from Kubernetes cluster to MySQL DataBase
 
@@ -144,7 +128,6 @@ You are now inside the pod you just created on your cluster, you can simply use 
 
 The useful parameters are:
 
-<!-- CP-STEPS-START:start-a-mysql-client-inside-a-pod -->
 - The db Host, the db Port
     - Get them from the "General Information tab"
 
@@ -158,7 +141,6 @@ The useful parameters are:
     - Get it after you reset it.
 
 ![Password reseted](images/connect-kubernetes-to-managed-mysql11.png){.thumbnail}
-<!-- CP-STEPS-END:start-a-mysql-client-inside-a-pod -->
 
 Now connect to the database with the following command
 
