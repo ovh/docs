@@ -10,7 +10,7 @@ To make your Public Cloud infrastructure and platforms compliant with [healthcar
 
 OVHcloud Public Cloud services are HDS certified for certain activities listed in the [certification reference](https://esante.gouv.fr/labels-certifications/hds/certification-des-hebergeurs-de-donnees-de-sante) of the French Digital Health Agency.
 
-The list of certified OVHcloud products is available on the page “[OVHcloud products HDS certification](/pages/account_and_service_management/account_information/hds_certification)”.
+The list of certified OVHcloud products is available on the page "[OVHcloud products HDS certification](/pages/account_and_service_management/account_information/hds_certification)".
 
 **Find out how to enable the option for hosting healthcare data on your Public Cloud project**
 

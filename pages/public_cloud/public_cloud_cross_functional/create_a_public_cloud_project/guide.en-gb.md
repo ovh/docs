@@ -57,6 +57,7 @@ You now have access to the entire OVHcloud Public Cloud ecosystem. To discover t
 
 <!-- CP-STEPS-END:create-public-cloud-project -->
 
+
 ## Go further
 
 - [Creating and connecting to your first Public Cloud instance](/pages/public_cloud/compute/public-cloud-first-steps)
