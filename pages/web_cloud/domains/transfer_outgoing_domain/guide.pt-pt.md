@@ -71,7 +71,7 @@ Clique nos separadores abaixo para visualizar cada um dos **3** passos.
 >>
 >> Aceda à página [Nomes de domínio](/links/control-panel/web-domains) e escolha o domínio correspondente.
 >>
->> ![Domain names](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns.png){.thumbnail}
+>> ![Domain names](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
 >>
 > **Passo 2**
 >>
@@ -122,7 +122,7 @@ Clique nos separadores abaixo para visualizar cada um dos **3** passos.
 >>
 >> Aceda à página [Nomes de domínio](/links/control-panel/web-domains) e escolha o domínio correspondente.
 >>
->> ![Domain names](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns.png){.thumbnail}
+>> ![Domain names](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
 >>
 > **Passo 2**
 >>
