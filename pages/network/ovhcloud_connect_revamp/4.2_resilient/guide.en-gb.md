@@ -1,10 +1,10 @@
 ---
-title: Introduction to OVHcloud Connect
-excerpt: Overview of the concepts required to understand the OVHcloud Connect offer
+title: Setting up a resilient OVHcloud Connect architecture
+excerpt: Connect your infrastructure to OVHcloud through two redundant OVHcloud Connect links for high availability and automatic failover.
 updated: 2026-02-18
 ---
 
-## Connect My On-Premises to OVHcloud — Resilient Connection
+## Objective
 
 This tutorial guides you through connecting your infrastructure to OVHcloud using **two independent OVHcloud Connect links** for high availability. If one link fails, traffic automatically switches to the other.
 

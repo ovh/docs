@@ -1,10 +1,10 @@
 ---
-title: Introduction to OVHcloud Connect
-excerpt: Overview of the concepts required to understand the OVHcloud Connect offer
+title: Setting up a simple OVHcloud Connect architecture
+excerpt: Connect a single on-premises site, branch WAN, or public cloud (AWS, Azure, GCP) environment to OVHcloud through one OVHcloud Connect link.
 updated: 2026-02-18
 ---
 
-## Connect My On-Premises to OVHcloud — Simple Connection
+## Objective
 
 This tutorial guides you through connecting a single on-premises site to OVHcloud using **one OVHcloud Connect link**. This is the simplest architecture, suitable when you need private connectivity but can accept a single path (no built-in redundancy).
 
@@ -13,7 +13,7 @@ This tutorial guides you through connecting a single on-premises site to OVHclou
 Below, you will find prerequisites and instructions for five separate use-cases, which you may choose depending on desired architecture.
 
 > [!tabs]
-> On-Premise
+> On-Premises
 >>### Prerequisites
 >>
 >>- An OVHcloud account with a vRack
@@ -80,7 +80,7 @@ Below, you will find prerequisites and instructions for five separate use-cases,
 >>#### 2. Install the physical connection
 >>
 >>- **Direct:** Provide the LOA to the data centre operator to install a cross-connect. See [Cross Connect LOA](../3.11_cross_connect_loa).
->>- **Provider:** Share the pairing key with your provider and wait for activation.
+>>- **Provider:** Share the service key with your provider and wait for activation.
 >>
 >>#### 3. Configure BGP
 >>
@@ -89,15 +89,15 @@ Below, you will find prerequisites and instructions for five separate use-cases,
 >>- Advertise your on-premises prefixes (e.g. `10.0.0.0/16`) to OVHcloud.
 >>- Accept OVHcloud prefixes (e.g. `172.16.0.0/16`) from OVHcloud.
 >>
->>See [Configure OCC L3 with BGP](../3.6_occ_l3_bgp) for detailed instructions and configuration examples.
+>>See [Configure OCC L3 with BGP](../3.7_occ_l3_bgp) for detailed instructions and configuration examples.
 >>
 >>#### 4. Associate with vRack
 >>
->>Link your OVHcloud Connect service to your vRack. See [Associate with vRack](../3.8_associate_vrack).
+>>Link your OVHcloud Connect service to your vRack. See [Associate with vRack](../3.5_associate_vrack).
 >>
 >>#### 5. Configure AZ subnets
 >>
->>Define the private subnets in OVHcloud that your on-premises network should reach. See [Set up your vRack network](../3.5_vrack_network_setup).
+>>Define the private subnets in OVHcloud that your on-premises network should reach. See [Set up your vRack network](../3.6_vrack_network_setup).
 >>
 >>#### 6. Test connectivity
 >>
@@ -128,7 +128,7 @@ Below, you will find prerequisites and instructions for five separate use-cases,
 >>- BGP-capable network equipment
 >>- An IP addressing plan with no overlaps between your network and OVHcloud subnets
 >>
->>#### Architecture
+>>### Architecture
 >>
 >>```svg
 >><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 200" font-family="Arial, sans-serif" font-size="12">
@@ -209,11 +209,11 @@ Below, you will find prerequisites and instructions for five separate use-cases,
 >>- Accept OVHcloud routes.
 >>- Ensure your WAN routing propagates the OVHcloud routes back to all branch offices.
 >>
->>See [Configure OCC L3 with BGP](../3.6_occ_l3_bgp).
+>>See [Configure OCC L3 with BGP](../3.7_occ_l3_bgp).
 >>
 >>#### 4. Associate with vRack and configure subnets
 >>
->>Link to your vRack and set up the required subnets. See [Associate with vRack](../3.8_associate_vrack) and [Set up your vRack network](../3.5_vrack_network_setup).
+>>Link to your vRack and set up the required subnets. See [Associate with vRack](../3.5_associate_vrack) and [Set up your vRack network](../3.6_vrack_network_setup).
 >>
 >>#### 5. Test end-to-end connectivity
 >>
@@ -305,7 +305,7 @@ Below, you will find prerequisites and instructions for five separate use-cases,
 >>1. In the **OVHcloud Control Panel**, order OVHcloud Connect Provider.
 >>2. Select the same provider you're using for AWS (e.g. Megaport).
 >>3. Choose the PoP location.
->>4. Copy the **pairing key**.
+>>4. Copy the **service key**.
 >>
 >>See [Order OVHcloud Connect Provider](../3.2_order_provider).
 >>
@@ -317,7 +317,7 @@ Below, you will find prerequisites and instructions for five separate use-cases,
 >>
 >>1. Create a **Megaport port** or use an existing one.
 >>2. Create a **VXC to AWS** using the AWS Direct Connect hosted connection details.
->>3. Create a **VXC to OVHcloud** using the OVHcloud pairing key.
+>>3. Create a **VXC to OVHcloud** using the OVHcloud service key.
 >>4. Optionally, use a **Megaport MCR (Cloud Router)** to route between the two VXCs if you need Layer 3 routing at the provider level.
 >>
 >>#### 4. Configure BGP
@@ -340,7 +340,7 @@ Below, you will find prerequisites and instructions for five separate use-cases,
 >>
 >>#### 5. Associate OVHcloud Connect with vRack
 >>
->>See [Associate with vRack](../3.8_associate_vrack).
+>>See [Associate with vRack](../3.5_associate_vrack).
 >>
 >>#### 6. Test connectivity
 >>
@@ -384,14 +384,14 @@ Below, you will find prerequisites and instructions for five separate use-cases,
 >>  <text x="315" y="90" text-anchor="middle" font-weight="bold" fill="#6a1b9a">Provider</text>
 >>  <text x="315" y="110" text-anchor="middle" fill="#555" font-size="10">Megaport / Equinix</text>
 >>  <text x="315" y="130" text-anchor="middle" fill="#555" font-size="10">VXC or Fabric</text>
->>  <text x="315" y="148" text-anchor="middle" fill="#555" font-size="9">Service Key ↔ Pairing Key</text>
+>>  <text x="315" y="148" text-anchor="middle" fill="#555" font-size="9">Service Key ↔ Service Key</text>
 >>
 >>  <!-- OVHcloud PoP -->
 >>  <rect x="465" y="65" width="130" height="100" rx="6" fill="#e8f5e9" stroke="#2e7d32" stroke-width="1.5"/>
 >>  <text x="530" y="90" text-anchor="middle" font-weight="bold" fill="#2e7d32">OVHcloud PoP</text>
 >>  <text x="530" y="115" text-anchor="middle" fill="#555" font-size="10">OCC Provider</text>
 >>  <text x="530" y="135" text-anchor="middle" fill="#555" font-size="10">BGP peering</text>
->>  <text x="530" y="150" text-anchor="middle" fill="#555" font-size="9">ASN 35540</text>
+>>  <text x="530" y="150" text-anchor="middle" fill="#555" font-size="9">ASN varies by PoP</text>
 >>
 >>  <!-- vRack -->
 >>  <rect x="660" y="55" width="140" height="130" rx="8" fill="#e8f5e9" stroke="#2e7d32" stroke-width="2"/>
@@ -427,8 +427,8 @@ Below, you will find prerequisites and instructions for five separate use-cases,
 >>|---|---|
 >>| Migrate VMs from Azure to OVHcloud | ✅ Simple connection |
 >>| Burst compute from Azure to OVHcloud | ✅ Simple connection |
->>| Production multi-cloud (high availability) | Use the [resilient tutorial](../4.4.2_azure_resilient) |
->>| DR between Azure and OVHcloud | Use the [resilient tutorial](../4.4.2_azure_resilient) |
+>>| Production multi-cloud (high availability) | Use the [resilient tutorial](../4.2_resilient/4.4.2_azure_resilient) |
+>>| DR between Azure and OVHcloud | Use the [resilient tutorial](../4.2_resilient/4.4.2_azure_resilient) |
 >>
 >>### Step-by-step
 >>
@@ -445,7 +445,7 @@ Below, you will find prerequisites and instructions for five separate use-cases,
 >>
 >>If not already done, [order an OVHcloud Connect Provider](../3.2_order_provider) at a PoP served by the same provider.
 >>
->>Retrieve your **pairing key** from the OVHcloud Control Panel or API.
+>>Retrieve your **service key** from the OVHcloud Control Panel or API.
 >>
 >>#### 3. Create the provider bridge
 >>
@@ -454,7 +454,7 @@ Below, you will find prerequisites and instructions for five separate use-cases,
 >>| VXC | Source | Destination |
 >>|---|---|---|
 >>| VXC 1 | Azure ExpressRoute (Service Key) | Provider MCR / Port |
->>| VXC 2 | Provider MCR / Port | OVHcloud Connect (Pairing Key) |
+>>| VXC 2 | Provider MCR / Port | OVHcloud Connect (Service Key) |
 >>
 >>If the provider supports it, an MCR (Cloud Router) acts as a transit point between Azure and OVHcloud.
 >>
@@ -462,12 +462,12 @@ Below, you will find prerequisites and instructions for five separate use-cases,
 >>
 >>1. Create a **Megaport Cloud Router (MCR)** in the same metro.
 >>2. Add VXC from MCR → Azure ExpressRoute using the Azure Service Key.
->>3. Add VXC from MCR → OVHcloud Connect using the OVHcloud pairing key.
+>>3. Add VXC from MCR → OVHcloud Connect using the OVHcloud service key.
 >>
 >>**Equinix Fabric example:**
 >>
 >>1. Create a connection from your Fabric port → Azure ExpressRoute using the Service Key.
->>2. Create a connection from your Fabric port → OVHcloud Connect using the pairing key.
+>>2. Create a connection from your Fabric port → OVHcloud Connect using the service key.
 >>
 >>#### 4. Configure Azure Private Peering
 >>
@@ -482,13 +482,13 @@ Below, you will find prerequisites and instructions for five separate use-cases,
 >>
 >>#### 5. Configure OVHcloud BGP peering
 >>
->>[Configure OCC L3 with BGP](../3.6_occ_l3_bgp) for the OVHcloud Connect service.
+>>[Configure OCC L3 with BGP](../3.7_occ_l3_bgp) for the OVHcloud Connect service.
 >>
 >>Ensure the MCR or provider router advertises Azure prefixes (`10.2.0.0/16`) toward OVHcloud, and OVHcloud prefixes (`172.16.0.0/16`) toward Azure.
 >>
 >>#### 6. Associate your vRack
 >>
->>[Associate the OVHcloud Connect service with your vRack](../3.8_associate_vrack).
+>>[Associate the OVHcloud Connect service with your vRack](../3.5_associate_vrack).
 >>
 >>#### 7. Verify connectivity
 >>
@@ -507,7 +507,7 @@ Below, you will find prerequisites and instructions for five separate use-cases,
 >>| Segment | Endpoints | ASNs |
 >>|---|---|---|
 >>| Azure ↔ Provider | Azure (ASN 12076) ↔ MCR/Provider ASN | 12076 ↔ Provider |
->>| Provider ↔ OVHcloud | MCR/Provider ASN ↔ OVHcloud (ASN 35540) | Provider ↔ 35540 |
+>>| Provider ↔ OVHcloud | MCR/Provider ASN ↔ OVHcloud BGP AS [TODO: per-PoP — 65501 EU / 65502 CA / 65519 Asia] | Provider ↔ [TODO: per-PoP] |
 >>| OVHcloud ↔ vRack | Internal routing within OVHcloud | N/A |
 >>
 >> **Note:** Azure uses ASN **12076** for ExpressRoute Private Peering.
@@ -518,7 +518,7 @@ Below, you will find prerequisites and instructions for five separate use-cases,
 >>|---|---|---|
 >>| ExpressRoute circuit stuck in "Enabling" | Provider has not completed provisioning | Check provider portal; contact provider support |
 >>| Azure private peering not established | Subnet or ASN mismatch | Verify /30 subnets and peer ASN match provider settings |
->>| OVHcloud BGP session down | Pairing key not activated or VLAN mismatch | Check OVHcloud API and provider VXC configuration |
+>>| OVHcloud BGP session down | Service key not activated or VLAN mismatch | Check OVHcloud API and provider VXC configuration |
 >>| No route to Azure VNet | Missing route advertisement | Verify MCR forwards Azure prefixes toward OVHcloud |
 >>| Asymmetric routing | Different paths for outbound/inbound | Ensure both sides prefer the same path; check BGP attributes |
 >>
@@ -550,14 +550,14 @@ Below, you will find prerequisites and instructions for five separate use-cases,
 >>  <text x="315" y="90" text-anchor="middle" font-weight="bold" fill="#6a1b9a">Provider</text>
 >>  <text x="315" y="110" text-anchor="middle" fill="#555" font-size="10">Megaport / Equinix</text>
 >>  <text x="315" y="130" text-anchor="middle" fill="#555" font-size="10">VXC or Fabric</text>
->>  <text x="315" y="148" text-anchor="middle" fill="#555" font-size="9">Pairing Key bridge</text>
+>>  <text x="315" y="148" text-anchor="middle" fill="#555" font-size="9">Service Key bridge</text>
 >>
 >>  <!-- OVHcloud PoP -->
 >>  <rect x="465" y="65" width="130" height="100" rx="6" fill="#e8f5e9" stroke="#2e7d32" stroke-width="1.5"/>
 >>  <text x="530" y="90" text-anchor="middle" font-weight="bold" fill="#2e7d32">OVHcloud PoP</text>
 >>  <text x="530" y="115" text-anchor="middle" fill="#555" font-size="10">OCC Provider</text>
 >>  <text x="530" y="135" text-anchor="middle" fill="#555" font-size="10">BGP peering</text>
->>  <text x="530" y="150" text-anchor="middle" fill="#555" font-size="9">ASN 35540</text>
+>>  <text x="530" y="150" text-anchor="middle" fill="#555" font-size="9">ASN varies by PoP</text>
 >>
 >>  <!-- vRack -->
 >>  <rect x="660" y="55" width="140" height="130" rx="8" fill="#e8f5e9" stroke="#2e7d32" stroke-width="2"/>
@@ -638,12 +638,12 @@ Below, you will find prerequisites and instructions for five separate use-cases,
 >>
 >>1. Create an **MCR** (Megaport Cloud Router) in a metro with both GCP and OVHcloud presence.
 >>2. **VXC 1**: MCR → Google Cloud Partner Interconnect (use GCP pairing key).
->>3. **VXC 2**: MCR → OVHcloud Connect (use OVHcloud pairing key).
+>>3. **VXC 2**: MCR → OVHcloud Connect (use OVHcloud service key).
 >>
 >>**Equinix Fabric example:**
 >>
 >>1. Create a connection from your Fabric port → GCP Partner Interconnect (use GCP pairing key).
->>2. Create a connection from your Fabric port → OVHcloud Connect (use OVHcloud pairing key).
+>>2. Create a connection from your Fabric port → OVHcloud Connect (use OVHcloud service key).
 >>
 >>#### 4. Activate the GCP VLAN attachment
 >>
@@ -656,15 +656,15 @@ Below, you will find prerequisites and instructions for five separate use-cases,
 >>
 >>#### 5. Configure OVHcloud BGP peering
 >>
->>[Configure OCC L3 with BGP](../3.6_occ_l3_bgp).
+>>[Configure OCC L3 with BGP](../3.7_occ_l3_bgp).
 >>
 >>Ensure the provider MCR:
->>- Advertises GCP VPC prefixes (`10.3.0.0/16`) toward OVHcloud (ASN 35540).
+>>- Advertises GCP VPC prefixes (`10.3.0.0/16`) toward OVHcloud (BGP AS [TODO: per-PoP — 65501 EU / 65502 CA / 65519 Asia]).
 >>- Advertises OVHcloud prefixes (`172.16.0.0/16`) toward GCP Cloud Router.
 >>
 >>#### 6. Associate your vRack
 >>
->>[Associate the OVHcloud Connect service with your vRack](../3.8_associate_vrack).
+>>[Associate the OVHcloud Connect service with your vRack](../3.5_associate_vrack).
 >>
 >>#### 7. Verify connectivity
 >>
@@ -681,7 +681,7 @@ Below, you will find prerequisites and instructions for five separate use-cases,
 >>| Segment | Endpoints | ASNs |
 >>|---|---|---|
 >>| GCP ↔ Provider | Cloud Router (ASN 16550) ↔ MCR (Provider ASN) | 16550 ↔ Provider |
->>| Provider ↔ OVHcloud | MCR (Provider ASN) ↔ OVHcloud (ASN 35540) | Provider ↔ 35540 |
+>>| Provider ↔ OVHcloud | MCR (Provider ASN) ↔ OVHcloud BGP AS [TODO: per-PoP — 65501 EU / 65502 CA / 65519 Asia] | Provider ↔ [TODO: per-PoP] |
 >>| OVHcloud ↔ vRack | Internal OVHcloud routing | N/A |
 >>
 >> **Note:** GCP Cloud Router uses ASN **16550** by default. You can configure a custom ASN during Cloud Router creation.
@@ -694,7 +694,7 @@ Below, you will find prerequisites and instructions for five separate use-cases,
 >>| VLAN attachment in "Pending customer" | Not yet activated in GCP Console | Click **Activate** on the VLAN attachment |
 >>| Cloud Router BGP not established | ASN mismatch or incorrect peering IPs | Verify Cloud Router ASN matches what the provider expects |
 >>| No routes to GCP VPC | Missing route advertisement | Ensure Cloud Router advertises VPC subnets and MCR forwards them |
->>| OVHcloud BGP down | Pairing key not consumed or VLAN mismatch | Check OVHcloud service status and provider VXC config |
+>>| OVHcloud BGP down | Service key not consumed or VLAN mismatch | Check OVHcloud service status and provider VXC config |
 
 ### What's next?
 
