@@ -52,7 +52,7 @@ As an example, this video shows how to easily scale the number of instances whil
 
 ### Token creation
 
-Besides the API end-point, the required keys are the `application_key`, the `application_secret`, and the `consumer_key`. These keys can be generated via the [OVHcloud token generation page](https://api.ovh.com/createToken/?GET=/*&POST=/*&PUT=/*&DELETE=/*).
+Besides the API end-point, the required keys are the `application_key`, the `application_secret`, and the `consumer_key`. These keys can be generated via the [OVHcloud token generation page](https://auth.eu.ovhcloud.com/api/createToken?GET=/*&POST=/*&PUT=/*&DELETE=/*).
 
 ![token](images/first_step.png){.thumbnail}
 

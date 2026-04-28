@@ -329,7 +329,7 @@ Per maggiori dettagli, consulta la guida "[Tutto sugli utenti SMS](/pages/web_cl
 
 L'API OVHcloud consente di inviare SMS in modo programmatico. In PHP, utilizza l'SDK ufficiale OVHcloud:
 
-1. **Crea le chiavi API** dalla [pagina di creazione dei token API di OVHcloud](https://api.ovh.com/createToken/) autorizzando gli endpoint `/sms/*`.
+1. **Crea le chiavi API** dalla [pagina di creazione dei token API di OVHcloud](https://auth.eu.ovhcloud.com/api/createToken) autorizzando gli endpoint `/sms/*`.
 2. **Installa l'SDK** tramite Composer: `composer require ovh/ovh`.
 3. **Invia un SMS** con l'endpoint `POST /sms/{serviceName}/jobs` specificando: il messaggio, i destinatari (array di numeri in formato internazionale), il mittente e le opzioni.
 
