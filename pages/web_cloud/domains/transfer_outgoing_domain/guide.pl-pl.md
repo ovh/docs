@@ -71,7 +71,7 @@ Kliknij na karty poniżej, aby wyświetlić kolejno każdy z **3** kroków.
 >>
 >> Przejdź na stronę [Domeny](/links/control-panel/web-domains), następnie wybierz odpowiednią domenę.
 >>
->> ![Domain names](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns.png){.thumbnail}
+>> ![Domain names](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
 >>
 > **Krok 2**
 >>
@@ -122,7 +122,7 @@ Kliknij na karty poniżej, aby wyświetlić kolejno każdy z **3** kroków.
 >>
 >> Przejdź na stronę [Domeny](/links/control-panel/web-domains), następnie wybierz odpowiednią domenę.
 >>
->> ![Domain names](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns.png){.thumbnail}
+>> ![Domain names](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
 >>
 > **Krok 2**
 >>
