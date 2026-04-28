@@ -37,6 +37,7 @@ You can make use of these instance backups for two basic purposes:
 
 > [!tabs]
 > Via the OVHcloud Control Panel
+<!-- CP-STEPS-START:creating-instance-from-backup-cp -->
 >> Log in to the [OVHcloud Control Panel](/links/manager), go to the `Public Cloud`{.action} section and select the Public Cloud project concerned.<br>
 >> Then click `Instance backup`{.action} in the left-hand navigation bar under **Compute**.
 >>
@@ -65,6 +66,7 @@ You can make use of these instance backups for two basic purposes:
 >> > In order to create the instance in a different data centre, you will first need to transfer the backup to the appropriate region. Please refer to our guide to [transferring an instance backup](/pages/public_cloud/compute/transfer_instance_backup_from_one_datacentre_to_another).
 >> >
 >>
+<!-- CP-STEPS-END:creating-instance-from-backup-cp -->
 > Via the OpenStack CLI
 >>
 >> To create an instance from your backup, use the backup ID as the image with this command:
@@ -137,6 +139,7 @@ You can make use of these instance backups for two basic purposes:
 
 > [!tabs]
 > Via the OVHcloud Control Panel
+<!-- CP-STEPS-START:restoring-instance-from-backup-cp -->
 >> Log in to the [OVHcloud Control Panel](/links/manager), go to the `Public Cloud`{.action} section and select the Public Cloud project concerned.<br>
 >> Then click `Instances`{.action} in the left-hand navigation bar under **Compute**.
 >>
@@ -164,6 +167,7 @@ You can make use of these instance backups for two basic purposes:
 >> > As stated in the warning message, any data added after the backup creation will be lost.
 >> >
 >>
+<!-- CP-STEPS-END:restoring-instance-from-backup-cp -->
 > Via the OVHcloud API
 >> > [!api]
 >> >

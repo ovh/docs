@@ -42,6 +42,7 @@ This modification can be made via Horizon or the OpenStack CLI.
 >
 
 > [!tabs]
+<!-- CP-STEPS-START:change-volume-type-cp -->
 > Via the OVHcloud Control Panel
 >>
 >> Click on `Block Storage`{.action} in the left-hand menu under **Storage & Backup**.
@@ -55,6 +56,7 @@ This modification can be made via Horizon or the OpenStack CLI.
 >> > Changing the volume type (retyping) may take a few minutes.
 >> >
 >>
+<!-- CP-STEPS-END:change-volume-type-cp -->
 > Via the Horizon Interface
 >>
 >> Log in to the [Horizon interface](https://horizon.cloud.ovh.net/auth/login/) and make sure you are in the correct region. You can verify this in the top left corner. 

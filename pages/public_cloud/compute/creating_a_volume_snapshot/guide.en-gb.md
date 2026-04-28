@@ -34,6 +34,7 @@ A snapshot of an additional volume serves two general purposes:
 
 ## Instructions
 
+<!-- CP-STEPS-START:create-volume-snapshot -->
 Open `Block Storage`{.action} in the left-hand navigation bar under **Storage & backup**.
 
 ![Volume Snapshot](images/volume_snapshot01.png){.thumbnail}
@@ -57,12 +58,15 @@ Other best practices include:
 - Try not to "solicit" the server too much during the snapshot creation phase (I/O limitation, RAM consumption, etc.).
 
 Since a volume snapshot is a clone of the entire disk, it will have the maximum size of the original volume, regardless of the actual disk space allocation.
+<!-- CP-STEPS-END:create-volume-snapshot -->
 
+<!-- CP-STEPS-START:manage-volume-snapshots -->
 ![Volume Snapshot](images/volume_snapshot03.png){.thumbnail}
 
 Open the section `Volume Snapshot`{.action} in the left-hand navigation bar. After the snapshot is created, it will be added to this table.
 
 Click on the button `...`{.action} to `Delete`{.action} a snapshot or to `Create a volume`{.action} based on the respective snapshot. You can find further information in [this guide](/pages/public_cloud/compute/create-volume-from-snapshot).
+<!-- CP-STEPS-END:manage-volume-snapshots -->
 
 ## Go further
 
