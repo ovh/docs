@@ -741,8 +741,67 @@ aws s3api put-bucket-lifecycle-configuration --bucket my-bucket --lifecycle-conf
 
 ///
 
-### Using the OVHcloud Control Panel (coming soon)
+### Using the OVHcloud Control Panel
 
+As a prerequisite, you must have a bucket containing data on which you want to apply the lifecycle configuration.
+
+**Step 1 — Navigate to your bucket's Lifecycle tab.**
+
+Log in to the [OVHcloud Control Panel](/links/manager), open the `Public Cloud`{.action} section, and select your project. In the left-hand menu, click `Object Storage`{.action} under **Storage**, then click the name of the target bucket. Go to the `Lifecycle`{.action} tab and click `Create rule`{.action}.
+
+**Step 2 — Configure the rule identifier.**
+
+Enter a unique name in the **Rule identifier** field.
+
+**Step 3 — Define the rule scope.**
+
+Choose whether the rule applies to all objects or only to specific ones:
+
+- `Apply to all objects in the container`{.action}: the rule applies to every object in the bucket.
+- `Limit the application of this rule`{.action}: reveals additional filter fields:
+    - **Prefix**: restrict the rule to objects whose key starts with a given prefix (e.g. `logs/`).
+    - **Tags**: click `+ Add a tag`{.action} to filter by one or more key/value object tags.
+    - **Specify a minimum object size**: optionally set a minimum size threshold.
+    - **Specify a maximum object size**: optionally set a maximum size threshold.
+
+**Step 4 — Select lifecycle operations.**
+
+Tick one or more checkboxes to enable operations. Each checkbox reveals its configuration fields:
+
+- **Transition the current version of objects**: automate transition of current versions to a lower-cost storage tier.
+    - **Days after creation**: number of days after object creation before the transition is triggered (minimum: 30).
+    - **Storage class**: select the target storage class.
+    - Click `+ Add a transition`{.action} to add multiple transition steps.
+
+- **Expire the current version of objects**: automatically delete current object versions after a set period.
+    - **Days after creation**: number of days after object creation before deletion.
+
+- **Delete expired delete markers**: remove delete markers that have no remaining non-current versions. No additional fields required.
+
+- **Transition older versions of objects**: automate transition of non-current versions to a lower-cost storage tier.
+    - **Days after becoming non-current**: minimum age of a non-current version before the transition is triggered (minimum: 30).
+    - **Storage class**: select the target storage class.
+    - **Non-current versions to keep**: number of the most recent non-current versions to retain in their current tier (0 means no retention limit applies).
+    - Click `+ Add a transition`{.action} to add multiple transition steps.
+
+- **Expiration of non-current versions**: automatically delete non-current object versions.
+    - **Days after becoming non-current**: minimum age of a non-current version before deletion.
+    - **Non-current versions to keep**: number of the most recent non-current versions to retain before deletion applies.
+
+- **Delete incomplete multipart uploads**: stop and delete parts of incomplete multipart uploads.
+    - **Days after initiation**: number of days after the upload was initiated before its parts are deleted (must be greater than 0).
+
+**Step 5 — Create the rule.**
+
+Once all required fields are filled in, click `Create rule`{.action}. The rule appears in the lifecycle rules list and is applied asynchronously within 24 hours.
+
+**Managing existing rules.**
+
+From the lifecycle rules list, click the `...`{.action} button at the end of a rule's row to access the following actions:
+
+- **Modify**: edit the rule's scope, filters, or operations.
+- **Enable/Disable**: toggle the rule on or off without deleting it.
+- **Delete**: permanently remove the rule.
 
 ## FAQ
 

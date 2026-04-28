@@ -742,7 +742,67 @@ aws s3api put-bucket-lifecycle-configuration --bucket my-bucket --lifecycle-conf
 
 ///
 
-### Via l'espace client OVHcloud (à venir)
+### Via l'espace client OVHcloud
+
+Comme prérequis, vous devez avoir un bucket contenant des données sur lesquelles vous souhaitez appliquer la configuration de lifecycle.
+
+**Étape 1 — Accédez à l'onglet Lifecycle de votre bucket.**
+
+Connectez-vous à votre [espace client OVHcloud](/links/manager), ouvrez la section `Public Cloud`{.action} et sélectionnez votre projet. Dans le menu de gauche, cliquez sur `Object Storage`{.action} sous **Storage**, puis cliquez sur le nom du bucket cible. Accédez à l'onglet `Lifecycle`{.action} et cliquez sur `Créer une règle`{.action}.
+
+**Étape 2 — Configurez l'identifiant de la règle.**
+
+Saisissez un nom unique dans le champ **Identifiant de la règle**.
+
+**Étape 3 — Définissez la portée de la règle.**
+
+Choisissez si la règle s'applique à tous les objets ou uniquement à des objets spécifiques :
+
+- `Appliquer à tous les objets du conteneur`{.action} : la règle s'applique à tous les objets du bucket.
+- `Limiter l'application de cette règle`{.action} : affiche des champs de filtre supplémentaires :
+    - **Préfixe** : restreignez la règle aux objets dont la clé commence par un préfixe donné (ex. `logs/`).
+    - **Tags** : cliquez sur `+ Ajouter un tag`{.action} pour filtrer par un ou plusieurs tags clé/valeur.
+    - **Spécifier une taille minimale d'objet** : définissez optionnellement un seuil de taille minimale.
+    - **Spécifier une taille maximale d'objet** : définissez optionnellement un seuil de taille maximale.
+
+**Étape 4 — Sélectionnez les opérations de lifecycle.**
+
+Cochez une ou plusieurs cases pour activer des opérations. Chaque case révèle ses champs de configuration :
+
+- **Transition de la version courante des objets** : automatise la transition des versions courantes vers un niveau de stockage moins coûteux.
+    - **Jours après la création** : nombre de jours après la création de l'objet avant que la transition ne soit déclenchée (minimum : 30).
+    - **Classe de stockage** : sélectionnez la classe de stockage cible.
+    - Cliquez sur `+ Ajouter une transition`{.action} pour ajouter plusieurs étapes de transition.
+
+- **Expiration de la version courante des objets** : supprime automatiquement les versions courantes des objets après une période définie.
+    - **Jours après la création** : nombre de jours après la création de l'objet avant la suppression.
+
+- **Suppression des marqueurs de suppression expirés** : supprime les marqueurs de suppression qui n'ont plus aucune version non courante. Aucun champ supplémentaire requis.
+
+- **Transition des versions non courantes des objets** : automatise la transition des versions non courantes vers un niveau de stockage moins coûteux.
+    - **Jours après être devenu non courant** : âge minimum d'une version non courante avant que la transition ne soit déclenchée (minimum : 30).
+    - **Classe de stockage** : sélectionnez la classe de stockage cible.
+    - **Versions non courantes à conserver** : nombre des versions non courantes les plus récentes à conserver dans leur niveau de stockage actuel (0 signifie qu'aucune limite de conservation ne s'applique).
+    - Cliquez sur `+ Ajouter une transition`{.action} pour ajouter plusieurs étapes de transition.
+
+- **Expiration des versions non courantes** : supprime automatiquement les versions non courantes des objets.
+    - **Jours après être devenu non courant** : âge minimum d'une version non courante avant la suppression.
+    - **Versions non courantes à conserver** : nombre des versions non courantes les plus récentes à conserver avant que la suppression ne s'applique.
+
+- **Suppression des téléversements multi-parties incomplets** : arrête et supprime les parties des téléversements multi-parties incomplets.
+    - **Jours après l'initiation** : nombre de jours après le lancement du téléversement avant que ses parties soient supprimées (doit être supérieur à 0).
+
+**Étape 5 — Créez la règle.**
+
+Une fois tous les champs requis remplis, cliquez sur `Créer une règle`{.action}. La règle apparaît dans la liste des règles de lifecycle et est appliquée de manière asynchrone dans les 24 heures.
+
+**Gestion des règles existantes.**
+
+Depuis la liste des règles de lifecycle, cliquez sur le bouton `...`{.action} à la fin de la ligne d'une règle pour accéder aux actions suivantes :
+
+- **Modifier** : modifiez la portée, les filtres ou les opérations de la règle.
+- **Activer/Désactiver** : activez ou désactivez la règle sans la supprimer.
+- **Supprimer** : supprimez définitivement la règle.
 
 
 ## FAQ
