@@ -589,6 +589,8 @@
     + [Bare Metal Pod](hosted-private-cloud-baremetal-pod)
         + [Getting started](hosted-private-cloud-baremetal-pod-getting-started)
             + [Mise en route de votre Bare Metal POD SecNumCloud](hosted_private_cloud/baremetal_pod/snc_getting_started)
+        + [Security](hosted-private-cloud-baremetal-pod-security)
+            + [IAM Rights Management - Bare Metal Pod SecNumCloud](hosted_private_cloud/baremetal_pod/snc_iam_manage)
     + [On-Prem Cloud Platform](products/hosted-private-cloud-hosted-private-cloud-opcp)
         + [Getting started](hosted-private-cloud-hosted-private-cloud-opcp-getting-started)
             + [Getting started with your OPCP](hosted_private_cloud/opcp/opcp-getting-started)
