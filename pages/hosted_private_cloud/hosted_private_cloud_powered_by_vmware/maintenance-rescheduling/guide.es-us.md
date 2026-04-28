@@ -23,7 +23,18 @@ Cuando se haya programado un mantenimiento en su Hosted Private Cloud, recibirá
 
 - Haber recibido una notificación de mantenimiento por correo electrónico en la que se indique específicamente que puede "**modificar la fecha de ejecución del mantenimiento**". En caso contrario, la fecha del mantenimiento no puede modificarse.
 - Ser contacto administrador o técnico de la infraestructura [VMware on OVHcloud](https://www.ovhcloud.com/es/enterprise/products/hosted-private-cloud/).
-- Tienes acceso a tu [área de cliente de OVHcloud](/links/manager) o al panel de [administración de sus servicios a través de la API](/links/api).
+- Tienes acceso al [área de cliente de OVHcloud](/links/control-panel/privatecloud-vmware-vsphere) o al panel de [administración de sus servicios a través de la API](/links/api).
+
+<!-- CP-NAV-START:privatecloud-vmware-vsphere -->
+---
+
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [VMware vSphere](/links/control-panel/privatecloud-vmware-vsphere)
+- **Ruta de navegación:** `Hosted Private Cloud`{.action} > `Managed VMware vSphere`{.action} > Seleccione su servicio vSphere
+
+---
+<!-- CP-NAV-END:privatecloud-vmware-vsphere -->
 
 ## Procedimiento
 
@@ -33,9 +44,7 @@ Cuando se haya programado un mantenimiento en su Hosted Private Cloud, recibirá
 
 ### Desde el Panel de configuración de OVHcloud
 
-Conéctese al [área de cliente de OVHcloud](/links/manager) con una cuenta de administrador.
-
-En el menú `Hosted Private Cloud`{.action}, abra la pestaña `Operaciones`{.action}. Seleccione `Pendiente`{.action} en el menú desplegable para filtrar las operaciones.
+Haga clic en [este enlace](/links/control-panel/privatecloud-vmware-vsphere) para acceder a la sección `VMware vSphere`{.action} y, a continuación, abra la pestaña `Operaciones`{.action}. Seleccione `Pendiente`{.action} en el menú desplegable para filtrar las operaciones.
 
 Haga clic en el botón `...`{.action} y, seguidamente, en `Modificar la fecha de tratamiento`{.action}.
 

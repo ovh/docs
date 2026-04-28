@@ -86,7 +86,9 @@ Encontrará todos os detalhes para o ativar no nosso manual "[Proteger a sua con
 
 Pode alterar as informações da sua conta. Aceda ao seu [perfil de utilizador](/links/control-panel/account-profile).
 
+<!-- CP-STEPS-START:save-profile-changes -->
 Altere os seus dados e clique no botão `Registar as modificações`{.action}.
+<!-- CP-STEPS-END:save-profile-changes -->
 
 > [!warning]
 >
@@ -95,6 +97,7 @@ Altere os seus dados e clique no botão `Registar as modificações`{.action}.
 
 #### Alterar o endereço de e-mail principal
 
+<!-- CP-STEPS-START:changing-primary-email -->
 Se deseja indicar um novo endereço de e-mail principal, terá de o validar por meio de um código enviado para o seu endereço de contacto principal atual. Depois de receber este código, clique no botão `Recebi o meu código de validação`{.action}.
 
 ![identificador de cliente](images/nichandle07.png){.thumbnail}
@@ -102,6 +105,7 @@ Se deseja indicar um novo endereço de e-mail principal, terá de o validar por 
 Introduza o código no campo `Código de validação` e valide.
 
 ![identificador de cliente](images/nichandle08.png){.thumbnail}
+<!-- CP-STEPS-END:changing-primary-email -->
 
 > [!primary]
 >
@@ -109,11 +113,13 @@ Introduza o código no campo `Código de validação` e valide.
 
 #### Modificar o tipo de conta
 
+<!-- CP-STEPS-START:changing-account-type -->
 Clique no `tipo de conta` quando editar o seu perfil. Um menu pendente permite-lhe definir o tipo de conta que corresponde à sua situação.
 
 ![identificador de cliente](images/nichandle09.png){.thumbnail}
 
 Depois de preencher as informações, clique no botão `Validar`{.action}.
+<!-- CP-STEPS-END:changing-account-type -->
 
 #### Exercer os meus direitos sobre os meus dados pessoais
 

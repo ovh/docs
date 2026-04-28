@@ -89,6 +89,7 @@ Il tuo Google Workspace si fida di OVHcloud come provider di servizi. Lo step su
 
 ### Affidare la fiducia all'account OVHcloud e configurare la connessione
 
+<!-- CP-STEPS-START:register-gws-ovhcloud -->
 Per aggiungere Google Workspace come provider di identità affidabile, è necessario fornire i metadati del provider nel tuo Spazio Cliente OVHcloud. [Accedi alla pagina SAML SSO](/links/control-panel/iam-saml-sso), quindi clicca sul pulsante `Connessione SSO`{.action}.
 
 ![Accesso al menu IAM](images/access_to_the_IAM_menu_03.png){.thumbnail}
@@ -112,6 +113,7 @@ Il pulsante `...`{.action} permette di aggiornare o eliminare l'SO e di consulta
 ![OVHcloud di connessione SSO step 5](images/ovhcloud_user_management_connect_sso_5.png){.thumbnail}
 
 Il tuo Google Workspace è considerato un provider affidabile. È comunque necessario aggiungere gruppi al tuo account OVHcloud.
+<!-- CP-STEPS-END:register-gws-ovhcloud -->
 
 > [!warning]
 > Se stai cercando di accedere via SSO, probabilmente comparirà un messaggio di errore `Not in valid groups`.
@@ -141,6 +143,7 @@ In seguito, è necessario attribuire **ruoli** a questi gruppi di utenti in OVHc
 
 ![Configurazione dei gruppi di utenti](images/google_workspace_web_mobile_setup_groups.png){.thumbnail}
 
+<!-- CP-STEPS-START:declare-groups-ovhcloud -->
 Nel tuo Spazio Cliente OVHcloud, clicca su `Identità`{.action} e poi sulla scheda `Gruppi di utenti`{.action}. Clicca sul pulsante `Dichiarare un gruppo`{.action} e completa i campi:
 
 - **Nome del gruppo**: Nome del gruppo in seno a Google Workspace
@@ -153,6 +156,7 @@ Nel tuo Spazio Cliente OVHcloud, clicca su `Identità`{.action} e poi sulla sche
 Verifica che il gruppo sia aggiunto al tuo account OVHcloud nella sezione "Gruppi":
 
 ![Gruppi di gestione utenti Google Workspace](images/ovhcloud_user_management_groups_3.png){.thumbnail}
+<!-- CP-STEPS-END:declare-groups-ovhcloud -->
 
 Quando ti connetti con un utente del gruppo **Intern**, il tuo account OVHcloud riconoscerà che l'utente ha il ruolo "UNPRIVILEGED" specificato dal suo gruppo.
 

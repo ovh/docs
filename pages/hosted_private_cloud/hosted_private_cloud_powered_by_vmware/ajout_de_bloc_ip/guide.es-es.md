@@ -13,13 +13,24 @@ Los bloques de IP permiten que sus servicios estén accesibles online.
 ## Requisitos
 
 - Ser contacto administrador de la infraestructura [Hosted Private Cloud](https://www.ovhcloud.com/es-es/enterprise/products/hosted-private-cloud/), para recibir claves de conexión.
-- Tener un usuario activo (creado en el [área de cliente de OVHcloud](/links/manager).
+- Tener un usuario activo (creado en el [área de cliente de OVHcloud](/links/manager))
+
+<!-- CP-NAV-START:privatecloud-vmware-vsphere -->
+---
+
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [VMware vSphere](/links/control-panel/privatecloud-vmware-vsphere)
+- **Ruta de navegación:** `Hosted Private Cloud`{.action} > `Managed VMware vSphere`{.action} > Seleccione su servicio vSphere
+
+---
+<!-- CP-NAV-END:privatecloud-vmware-vsphere -->
 
 ## Procedimiento
 
 ### Contratar un bloque de IP
 
-Para contratar un bloque de IP adicional en su **Hosted Private Cloud**, acceda al área de cliente de OVHcloud. En el menú `Hosted Private Cloud`, acceda a la sección `IP` en la columna izquierda y haga clic en `Contratar IP adicionales`{.action}. Seleccione su solución **Hosted Private Cloud** en el menú desplegable antes de pasar a la siguiente etapa.
+Para contratar un bloque de IP adicional en su **Hosted Private Cloud**, haga clic en [este enlace](/links/control-panel/privatecloud-vmware-vsphere) para acceder a la sección `VMware vSphere`{.action} y, a continuación, acceda a la sección `IP` en la columna izquierda y haga clic en `Contratar IP adicionales`{.action}. Seleccione su solución **Hosted Private Cloud** en el menú desplegable antes de pasar a la siguiente etapa.
 
 Deberá rellenar diferentes campos para crear su bloque de IP.
 

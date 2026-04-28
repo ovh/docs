@@ -56,6 +56,7 @@ Les enregistrements CNAME sont utiles pour éviter de devoir modifier les adress
 
 ### Ajouter un enregistrement DNS de type CNAME pour le sous-domaine d'un nom de domaine
 
+<!-- CP-STEPS-START:add-cname-record-subdomain -->
 Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **5** étapes.
 
 > [!tabs]
@@ -80,6 +81,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **5*
 > **Étape 5**
 >>
 >> Vérifiez le résumé, puis cliquez sur `Valider`{.action}. Patientez jusqu'à **24** heures pour que la propagation de l'ajout sur le réseau DNS soit pleinement effective.
+<!-- CP-STEPS-END:add-cname-record-subdomain -->
 
 /// details | Consultez nos guides détaillés :
 

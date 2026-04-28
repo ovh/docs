@@ -1,6 +1,6 @@
 ---
-title: Hot Swap - Software RAID
-excerpt: Find out how to hot-swap a disk on a server with a software RAID configuration
+title: "Hot-Swapping a Disk on Software RAID Dedicated Servers"
+excerpt: "Replace a defective disk on a dedicated server with software RAID without downtime using the hot-swap procedure."
 updated: 2023-08-21
 ---
 
@@ -299,5 +299,7 @@ The defective disk is now ready to be replaced by a datacentre technician. Once 
 [Managing hardware RAID](/pages/bare_metal_cloud/dedicated_servers/raid_hard)
 
 [Hot Swap - Hardware RAID](/pages/bare_metal_cloud/dedicated_servers/hotswap_raid_hard)
+
+[Managing Software RAID (UEFI) on Dedicated Servers](/pages/bare_metal_cloud/dedicated_servers/raid_soft_uefi)
 
 Join our [community of users](/links/community).

@@ -49,6 +49,7 @@ Il buono d'ordine viene creato al momento dell'ordine. Elenca i prodotti ordinat
 
 ### Visualizza i tuoi ordini nello Spazio Cliente OVHcloud
 
+<!-- CP-STEPS-START:access-purchase-orders -->
 Apri la pagina [I miei ordini](/links/control-panel/billing-orders).
 
 ![Spazio Cliente](images/huborders.png){.thumbnail}
@@ -76,9 +77,11 @@ Ecco i diversi stati dell’ordine:
 Per visualizzare il buono d’ordine in formato HTML, clicca sui tre puntini `...`{.action} in corrispondenza dell’ordine in questione e seleziona `Visualizza l’ordine in formato HTML`{.action}.
 
 ![Riepilogo degli ordini](images/order04.png){.thumbnail}
+<!-- CP-STEPS-END:access-purchase-orders -->
 
 ### Monitora il tuo ordine
 
+<!-- CP-STEPS-START:track-order -->
 Una volta generato il buono d'ordine, è possibile seguirlo dalla pagina [I miei ordini](/links/control-panel/billing-orders):
 
 * Clicca sul pulsante `...`{.action} davanti al tuo ordine.
@@ -89,6 +92,7 @@ Una volta generato il buono d'ordine, è possibile seguirlo dalla pagina [I miei
 Si apre una finestra in cui puoi effettuare il monitoraggio in quattro step.
 
 ![Gestione degli ordini](images/order06.png){.thumbnail}
+<!-- CP-STEPS-END:track-order -->
 
 ### Esercita il diritto di recesso
 
@@ -110,6 +114,7 @@ Troverai tutte le modalità di applicazione del diritto di recesso nel prosieguo
 
 Se i criteri di idoneità al diritto di recesso sono soddisfatti, il diritto di recesso può essere esercitato direttamente dalla pagina [I miei ordini](/links/control-panel/billing-orders):
 
+<!-- CP-STEPS-START:cancel-order -->
 * Clicca sul pulsante `...`{.action} davanti al tuo ordine.
 * Seleziona `Annulla l’ordine`{.action}.
 
@@ -118,6 +123,7 @@ Se i criteri di idoneità al diritto di recesso sono soddisfatti, il diritto di 
 Seleziona la casella `Sì, voglio annullare questo ordine`{.action} e infine conferma l’operazione.
 
 ![Conferma dell’operazione di annullamento](images/cancelorder2.png){.thumbnail}
+<!-- CP-STEPS-END:cancel-order -->
 
 > [!primary]
 >

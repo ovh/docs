@@ -18,13 +18,24 @@ O vRack é a possibilidade de ligar diferentes serviços cloud da OVHcloud entre
 
 - Ter um serviço [vRack](/links/network/vrack) na sua conta ou encomendar um serviço se necessário.
 - Ter contacto com o administrador da infraestrutura [Hosted Private Cloud](https://www.ovhcloud.com/pt/enterprise/products/hosted-private-cloud/), para receber dados de acesso.
-- Ter um identificador de utilizador ativo [criado na Área de Cliente OVHcloud](/links/manager).
+- Ter um identificador de utilizador ativo com acesso ao vSphere (criado na [Área de Cliente OVHcloud](/links/manager)).
+
+<!-- CP-NAV-START:network-vrack -->
+---
+
+### Acesso à Área de Cliente OVHcloud
+
+- **Link direto:** [vRack](/links/control-panel/network-vrack)
+- **Caminho de navegação:** `Network`{.action} > `Rede privada vRack`{.action}
+
+---
+<!-- CP-NAV-END:network-vrack -->
 
 ## Instruções
 
 ### Área de Cliente
 
-Aquando da entrega do seu serviço [Hosted Private Cloud](https://www.ovhcloud.com/pt/enterprise/products/hosted-private-cloud/), a parte *datacenter* já está dentro de um vRack. Para aceder à secção vRack, aceda à secção `Bare Metal Cloud`{.action}, clique em `Network`{.action}, e em `vRack`{.action}. Selecione o seu vRack na lista para visualizar o conteúdo.
+Aquando da entrega do seu serviço [Hosted Private Cloud](https://www.ovhcloud.com/pt/enterprise/products/hosted-private-cloud/), a parte *datacenter* já está dentro de um vRack. Selecione o seu vRack na lista para visualizar o conteúdo.
 
 ![Datacenter](images/vRackDatacenter.PNG){.thumbnail}
 

@@ -1,6 +1,6 @@
 ---
-title: 'Zmiana strefy rozgłaszania bloku IP w sieci vRack'
-excerpt: 'Dowiedz się, jak zmienić strefę rozgłaszania bloku IP w sieci vRack'
+title: "Zmiana ogłoszenia bloku IP w sieci vRack na serwerze dedykowanym"
+excerpt: "Zmień strefę ogłoszenia geograficznego bloku IP w sieci OVHcloud vRack w celu optymalizacji routingu."
 updated: 2025-05-14
 ---
 
@@ -88,5 +88,7 @@ traceroute to 1.2.3.4, 30 hops max, 60 byte packets
 Powyższy przykład pokazuje, że testowany adres IP jest obecnie rozgłaszany w **Gravelines** Jest to widoczne w ostatnim zrealizowanym skoku: “be120.**gra**-d1-a75.fr.eu (37.187.232.74) 0.351 ms”.
 
 ## Sprawdź również
+
+- [Konfiguracja vRack na serwerach dedykowanych](/pages/bare_metal_cloud/dedicated_servers/vrack_configuring_on_dedicated_server)
 
 Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

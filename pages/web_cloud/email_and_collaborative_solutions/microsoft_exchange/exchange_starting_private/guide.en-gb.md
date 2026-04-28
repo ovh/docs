@@ -31,11 +31,13 @@ This guide is for customers who have just ordered a Private Exchange platform. I
 
 Once you have placed your order, you will be sent an email to your contact email address you have listed in the OVHcloud Control Panel. This email will contain the information you need to configure your Private Exchange platform. 
 
+<!-- CP-STEPS-START:step1-service-emails -->
 To read this email via the [OVHcloud Control Panel](/links/manager), click on your account name in the top right-hand corner, then click on `Service emails`{.action}. Search for an email with the subject:
 
 > **\[xx-11111-ovh] Your Private Exchange 20_xxx_ service is being delivered.**
 
 ![first-use-private-exchange](images/first-use-private-exchange-01.png){.thumbnail}
+<!-- CP-STEPS-END:step1-service-emails -->
 
 This email contains a link to complete two steps of your service configuration:
 

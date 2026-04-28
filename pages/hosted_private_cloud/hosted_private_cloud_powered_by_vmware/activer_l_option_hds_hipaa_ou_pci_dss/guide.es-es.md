@@ -13,15 +13,23 @@ En la solución Private Cloud de OVH es posible activar la certificación PCI DS
 ## Requisitos
 
 - Tener una infraestructura Private Cloud con versión 6.0 o superior.
-- Estar conectado al [área de cliente de OVH](/links/manager).
+
+<!-- CP-NAV-START:privatecloud-vmware-vsphere -->
+---
+
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [VMware vSphere](/links/control-panel/privatecloud-vmware-vsphere)
+- **Ruta de navegación:** `Hosted Private Cloud`{.action} > `Managed VMware vSphere`{.action} > Seleccione su servicio vSphere
+
+---
+<!-- CP-NAV-END:privatecloud-vmware-vsphere -->
 
 ## Procedimiento
 
 ### Activar la opción de seguridad avanzada
 
-Para poder activar la certificación PCI DSS en su Private Cloud, debe tener activada la opción de seguridad correspondiente. Para comprobarlo, en la sección **Dedicado** del [área de cliente de OVH](/links/manager), haga clic en `Private Cloud`{.action} en la columna izquierda y seleccione su Private Cloud. 
-
-A continuación, en la pestaña `Información general`{.action}, compruebe que la opción **Payment Card Industry Data Security Standard (PCI DSS)** del apartado **Opc. de seguridad** esté activada. **Tenga en cuenta que no es posible activar simultáneamente varias opciones de seguridad en un mismo Private Cloud.**
+Para poder activar la certificación PCI DSS en su Private Cloud, debe tener activada la opción de seguridad correspondiente. Haga clic en [este enlace](/links/control-panel/privatecloud-vmware-vsphere) para acceder a la sección `VMware vSphere`{.action} y, a continuación, en la pestaña `Información general`{.action}, compruebe que la opción **Payment Card Industry Data Security Standard (PCI DSS)** del apartado **Opc. de seguridad** esté activada. **Tenga en cuenta que no es posible activar simultáneamente varias opciones de seguridad en un mismo Private Cloud.**
 
 ![Opc. de seguridad](images/HomeSDDCManager-2.png){.thumbnail}
 

@@ -1,6 +1,6 @@
 ---
-title: How to recover server access if your user password is lost
-excerpt: Find out how to configure a new password for a user account on a GNU/Linux operating system with the OVHcloud rescue mode
+title: "Recover a Lost Password on a Dedicated Server"
+excerpt: "Reset a lost user password on a GNU/Linux dedicated server using OVHcloud rescue mode to regain access."
 updated: 2025-10-02
 ---
 
@@ -20,7 +20,6 @@ To recover access to a server that you log in to with an SSH key, refer to our g
 ## Requirements
 
 - A [dedicated server](/links/bare-metal/bare-metal) or a [VPS](/links/bare-metal/vps) with a Linux-based OS in your OVHcloud account
-
 
 > [!primary]
 >

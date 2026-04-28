@@ -680,7 +680,7 @@ MKS uses the OpenStack Cinder CSI driver for persistent storage:
 | Solution | Protocol | Documentation |
 |----------|----------|---------------|
 | **File Storage** (Public Cloud) | NFS | [File Storage documentation](/products/public-cloud-storage-file-storage) |
-| **Enterprise File Storage** | NFS | [EFS with MKS](/pages/public_cloud/containers_orchestration/managed_kubernetes/configuring-multi-attach-persistent-volumes-with-ovh-efs) |
+| **Enterprise File Storage** | NFS | [EFS with MKS](/pages/storage_and_backup/file_storage/enterprise_file_storage/netapp_trident_csi) |
 | **NAS-HA** | NFS | [NAS-HA with MKS](/pages/public_cloud/containers_orchestration/managed_kubernetes/configuring-multi-attach-persistent-volumes-with-ovh-nas-ha) |
 | **Cloud Disk Array** | CephFS | [CDA with MKS](/pages/public_cloud/containers_orchestration/managed_kubernetes/configuring-multi-attach-persistent-volumes-with-ovh-cloud-disk-array) |
 

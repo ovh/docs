@@ -1,6 +1,6 @@
 ---
-title: "Comment réinitialiser le mot de passe administrateur avec Rescue-Customer-Windows"
-excerpt: "Comment réinitialiser le mot de passe administrateur avec Rescue-Customer-Windows"
+title: "Réinitialiser le mot de passe Windows sur un serveur dédié"
+excerpt: "Réinitialisez le mot de passe administrateur Windows sur un serveur dédié via le système rescue Windows OVHcloud"
 updated: 2025-10-22
 ---
 
@@ -155,5 +155,9 @@ Puis redémarrez le serveur à partir de l'espace client. Cliquez sur le bouton 
 ![reboot](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/dedicated-servers/general-information/cp_dedicated_restart.png){.thumbnail}
 
 ## Aller plus loin
+
+[Premiers pas avec un serveur dédié](/pages/bare_metal_cloud/dedicated_servers/getting-started-with-dedicated-server)
+
+[Sécuriser un serveur dédié](/pages/bare_metal_cloud/dedicated_servers/securing-a-dedicated-server)
 
 Rejoignez notre [communauté d'utilisateurs](/links/community)

@@ -1,6 +1,6 @@
 ---
-title: "Disinstallare il sistema di monitoring RTM v2"
-excerpt: "Questa guida ti mostra come disinstallare un sistema di monitoring RTM sui tuoi servizi"
+title: "Disinstallare il monitoring RTM v2 su un server dedicato"
+excerpt: "Rimuovi il sistema di monitoring RTM v2 obsoleto dal tuo server dedicato OVHcloud su CentOS, Debian, Fedora o Ubuntu"
 updated: 2023-06-20
 ---
 
@@ -108,4 +108,4 @@ rm -f /etc/yum.repos.d/OVH-metrics.repo /etc/yum.repos.d/OVH-rtm.repo
 
 In caso di necessità di formazione o assistenza tecnica per l'implementazione delle nostre soluzioni, contatta il tuo provider o clicca su [questo link](/links/professional-services) per ottenere un preventivo e richiedere un'analisi personalizzata del tuo progetto ai nostri esperti del team Professional Services.
 
-Contatta la nostra Community di utenti all'indirizzo <https://community.ovh.com/en/>.
+Contatta la nostra [Community di utenti](/links/community).

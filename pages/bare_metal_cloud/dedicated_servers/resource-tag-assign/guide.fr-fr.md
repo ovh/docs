@@ -1,6 +1,6 @@
 ---
-title: 'Comment assigner un tag à un serveur Bare Metal'
-excerpt: "Découvrez comment créer et modifier des tags pour chaque serveur dédié depuis l'espace client OVHcloud"
+title: "Comment assigner un tag à un serveur Bare Metal"
+excerpt: "Créez et assignez des tags à vos serveurs dédiés OVHcloud via l'espace client pour une gestion organisée de vos ressources"
 updated: 2025-07-01
 ---
 
@@ -89,5 +89,9 @@ Une fenêtre de confirmation s'affiche. Cliquez sur le bouton `Confirmer`{.actio
 ![Confirmer la suppression du tag](images/remove_tag.png){.thumbnail}
 
 ## Aller plus loin
+
+[Premiers pas avec un serveur dédié](/pages/bare_metal_cloud/dedicated_servers/getting-started-with-dedicated-server)
+
+[Quelles sont les adresses IP du monitoring OVHcloud ?](/pages/bare_metal_cloud/dedicated_servers/network_ip_monitoring)
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).

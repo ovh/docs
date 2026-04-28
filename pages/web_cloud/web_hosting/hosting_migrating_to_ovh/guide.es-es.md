@@ -71,6 +71,7 @@ Varios [planes de hosting de OVHcloud](/links/web/hosting) contienen una soluci�
 
 Si todavía no es cliente de OVHcloud, haga clic en el botón `Contratar`{.action} de las páginas comerciales anteriores. Siga los pasos del pedido **sin solicitar la transferencia del dominio** (esta acción se realizará en la parte 10 de esta guía).
 
+<!-- CP-STEPS-START:order-hosting-plan -->
 También puede realizar el pedido desde su área de cliente de OVHcloud. Para ello, haga clic en las pestañas siguientes para visualizar cada una de las **3** etapas.
 
 > [!tabs]
@@ -87,6 +88,7 @@ También puede realizar el pedido desde su área de cliente de OVHcloud. Para el
 > **Etapa 3**
 >>
 >> Siga los pasos del pedido **sin solicitar la transferencia del dominio** (esta acción se realizará en la parte 10 de esta guía).
+<!-- CP-STEPS-END:order-hosting-plan -->
 
 Una vez validado el pago, se iniciará la instalación del alojamiento. Recibirá un mensaje de correo electrónico en su dirección de correo electrónico de contacto, que contendrá las claves de acceso al espacio de almacenamiento FTP (File Transfer Protocol) de su alojamiento web.
 

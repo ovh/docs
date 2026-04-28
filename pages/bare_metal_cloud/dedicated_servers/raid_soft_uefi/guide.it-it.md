@@ -1,6 +1,6 @@
 ---
-title: "Gestione e ricostruzione di un RAID software sui server in modalità UEFI"
-excerpt: Scopri come gestire e ricostruire un RAID software dopo la sostituzione di un disco su un server UEFI
+title: "Gestire il RAID software (modalità di avvio UEFI) su un server dedicato"
+excerpt: "Gestisci e ricostruisci il RAID software dopo la sostituzione di un disco su un server dedicato in modalità di avvio UEFI."
 updated: 2026-01-26
 ---
 

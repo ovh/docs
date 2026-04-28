@@ -104,6 +104,7 @@ hosted-private-cloud-nutanix-troubleshooting: Diagnóstico
 hosted-private-cloud-nutanix-additional-resources: Recursos adicionais
 hosted-private-cloud-hosted-private-cloud-opcp: On-Prem Cloud Platform
 hosted-private-cloud-hosted-private-cloud-opcp-getting-started: Primeiros passos
+hosted-private-cloud-hosted-private-cloud-opcp-cloudstore: CloudStore
 hosted-private-cloud-hosted-private-cloud-opcp-additional-resources: Recursos adicionais
 hosted-private-cloud-snc-cloud-platform: SNC Cloud Platform
 hosted-private-cloud-snc-cloud-platform-getting-started: Primeiros passos
@@ -336,8 +337,6 @@ public-cloud-storage-block-storage-additional-resources: Recursos adicionais
 public-cloud-storage-file-storage: File Storage
 public-cloud-storage-file-storage-key-concepts: Conceitos-chave
 public-cloud-storage-file-storage-getting-started: Introdução
-public-cloud-integrations: Integrations
-public-cloud-integrations-prefect: Prefect
 public-cloud-network: Public Cloud Network Services
 public-cloud-network-key-concepts: Conceitos-chave
 public-cloud-network-getting-started: Introdução

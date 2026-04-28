@@ -33,6 +33,7 @@ This can be created via the [OVHcloud Control Panel](/links/manager), the [OpenS
 
 ### Via the OVHcloud Control Panel
 
+<!-- CP-STEPS-START:create-gateway -->
 > [!success]
 > Click on the tabs below to view each of the 6 steps in turn.
 
@@ -103,6 +104,7 @@ This can be created via the [OVHcloud Control Panel](/links/manager), the [OpenS
 >>
 >> ![new private network](images/mynewgateway.png){.thumbnail}
 >>
+<!-- CP-STEPS-END:create-gateway -->
 
 ### Via Terraform
 

@@ -1,6 +1,6 @@
 ---
-title: Jak rozpocząć korzystanie z połączeń SSH
-excerpt: "Dowiedz się, jak korzystać z SSH, aby uzyskać dostęp do serwera OVHcloud z większości stacji roboczych"
+title: "Wprowadzenie do SSH dla serwerów dedykowanych"
+excerpt: "Poznaj podstawy protokołu SSH i dowiedz się, jak połączyć się z serwerem dedykowanym OVHcloud."
 updated: 2024-12-03
 ---
 
@@ -146,7 +146,7 @@ Najnowsze wersje systemu operacyjnego Windows to OpenSSH, który umożliwia korz
 
 Kliknij prawym przyciskiem myszy przycisk `Start`{.action} systemu Windows i wybierz `Windows PowerShell`{.action}. Pole wyszukiwania może być również używane do uruchamiania jednej z aplikacji wiersza polecenia.
 
-![PowerShell](images/windowsps.png){.thumbnail}
+![Okno aplikacji Windows PowerShell](images/windowsps.png){.thumbnail}
 
 Połącz się z serwerem za pomocą następującego polecenia:
 

@@ -51,6 +51,7 @@ Erstellen Sie hierzu in der aktiven DNS-Zone Ihrer Domain einen DNS-Eintrag vom 
 >
 > Das Hinzufügen, Ändern oder Löschen von DNS-Einträgen in einer aktiven DNS-Zone kann zu Dienstunterbrechungen führen. Im Zweifelsfall wenden Sie sich an einen [spezialisierten Dienstleister](/links/partner).
 
+<!-- CP-STEPS-START:add-txt-record-domain -->
 ### Einen DNS-Eintrag vom Typ TXT für eine Domain hinzufügen
 
 Klicken Sie auf die Tabs, um die einzelnen **5** Schritte nacheinander anzuzeigen.
@@ -87,7 +88,9 @@ Lesen Sie unsere detaillierten Anleitungen:
 - [Bearbeiten der OVHcloud DNS-Zone](/pages/web_cloud/domains/dns_zone_edit)
 
 ///
+<!-- CP-STEPS-END:add-txt-record-domain -->
 
+<!-- CP-STEPS-START:add-txt-record-subdomain -->
 ### Einen DNS-Eintrag vom Typ TXT für die Subdomain einer Domain hinzufügen
 
 Klicken Sie auf die Tabs, um die einzelnen **5** Schritte nacheinander anzuzeigen.
@@ -125,6 +128,7 @@ Lesen Sie unsere detaillierten Anleitungen:
 - [Bearbeiten der OVHcloud DNS-Zone](/pages/web_cloud/domains/dns_zone_edit)
 
 ///
+<!-- CP-STEPS-END:add-txt-record-subdomain -->
 
 ## Weiterführende Informationen
 

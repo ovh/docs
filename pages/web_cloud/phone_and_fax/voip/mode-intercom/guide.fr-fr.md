@@ -32,31 +32,39 @@ Votre ligne téléphonique vous permet de recevoir et d'émettre des appels. Un 
 
 ### Étape 1 : accéder à la gestion du mode intercom
 
+<!-- CP-STEPS-START:acces-gestion-intercom -->
 Dans l'onglet `Gestion des appels`{.action}, cliquez sur `Double appel et Intercom`{.action}.
  
 ![modeintercom](images/mode-intercom-step1.png){.thumbnail}
+<!-- CP-STEPS-END:acces-gestion-intercom -->
 
 ### Étape 2 : gérer le mode intercom
 
+<!-- CP-STEPS-START:gerer-mode-intercom -->
 Une fois positionné sur la page « Double appel et Intercom », vous pouvez réaliser deux actions selon l'état d'activation du mode intercom. Cet état est représenté par la case se trouvant à côté de `Activer le mode Intercom avec préfixe 3691`{.action}.
 
 Poursuivez la lecture de cette documentation selon la manipulation que vous souhaitez réaliser.
+<!-- CP-STEPS-END:gerer-mode-intercom -->
 
 #### Activer le mode intercom
 
+<!-- CP-STEPS-START:activer-mode-intercom -->
 Pour activer le mode intercom, cochez la case `Activer le mode Intercom avec préfixe 3691`{.action}, puis cliquez sur le bouton `Valider`{.action}.
 
 Si vous souhaitez activer ce mode sur plusieurs lignes, cliquez sur `Appliquer à plusieurs lignes`{.action}, choisissez les lignes concernées dans la fenêtre de sélection, puis cliquez sur le bouton `Valider`{.action}.
 
 ![modeintercom](images/mode-intercom-step2.png){.thumbnail}
+<!-- CP-STEPS-END:activer-mode-intercom -->
 
 #### Désactiver le mode intercom
 
+<!-- CP-STEPS-START:desactiver-mode-intercom -->
 Pour désactiver le mode intercom, décochez la case `Activer le mode Intercom avec préfixe 3691`{.action}, puis cliquez sur le bouton `Valider`{.action}.
 
 Si vous souhaitez désactiver ce mode sur plusieurs lignes, cliquez sur `Appliquer à plusieurs lignes`{.action}, choisissez les lignes concernées dans la fenêtre de sélection, puis cliquez sur le bouton `Valider`{.action}.
 
 ![modeintercom](images/mode-intercom-step2.png){.thumbnail}
+<!-- CP-STEPS-END:desactiver-mode-intercom -->
 
 ### Étape 3 : utiliser le mode intercom
 

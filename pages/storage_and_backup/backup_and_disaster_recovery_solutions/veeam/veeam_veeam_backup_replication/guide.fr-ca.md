@@ -1,7 +1,7 @@
 ---
 title: "Installer Veeam Backup & Replication"
 excerpt: "Découvrez comment installer un serveur Veeam Backup & Replication avec Veeam Enterprise"
-updated: 2026-03-24
+updated: 2026-04-07
 ---
 
 ## Objectif
@@ -79,11 +79,20 @@ Vous serez redirigé vers l'assistant d'installation, il vous suffit de fermer l
 
 #### Étape 1 - Lancer un compte de service
 
-Au préalable, il est nécessaire de générer un mot de passe **complexe**.
+Vous devez créer un **mot de passe complexe** pour votre compte de service.
 
-Pour commencer, lancez Windows Powershell en tant qu'administrateur.
+Pour garantir le bon fonctionnement de l'activation de la licence Veeam, le nom d'utilisateur et le mot de passe doivent utiliser uniquement les caractères pris en charge :
 
-Créez ensuite un compte de service, en entrant ces lignes de commande :
+- Lettres minuscules et majuscules **sans accents** (a-z, A-Z)
+- Chiffres (0-9)
+- Caractères spéciaux : `! @ = # % & ' " { } * ( ) [ ] ? . , ; : - _ \ / +`
+
+> [!warning]
+>
+> Si le nom d'utilisateur ou le mot de passe contient des caractères non pris en charge, l'activation de la licence risque d'échouer.
+>
+
+Ensuite, lancez Windows PowerShell en tant qu'administrateur et créez le compte de service, par exemple :
 
 ```powershell
 New-LocalUser "OVHVeeamEnterprise" -Password (ConvertTo-SecureString -AsPlainText "P@ssword01" -Force) -Description "OVH Service Account for Veeam Enterprise" -PasswordNeverExpires:$true -UserMayNotChangePassword:$true -AccountNeverExpires:$true

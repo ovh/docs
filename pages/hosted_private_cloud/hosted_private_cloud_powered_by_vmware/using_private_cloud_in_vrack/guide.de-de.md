@@ -18,13 +18,24 @@ vRack bietet die Möglichkeit, verschiedene Cloud-Dienste von OVHcloud untereina
 
 - Sie haben eine [vRack](/links/network/vrack) Dienstleistung in Ihrem Account.
 - Sie sind Administrator-Kontakt für die [Hosted Private Cloud](https://www.ovhcloud.com/de/enterprise/products/hosted-private-cloud/) Infrastruktur, um Login-Daten zu erhalten.
-- Sie haben eine aktive Benutzerkennung (erstellt im [OVHcloud Kundencenter](/links/manager)).
+- Sie haben eine aktive Benutzerkennung (erstellt im [OVHcloud Kundencenter](/links/manager))
+
+<!-- CP-NAV-START:network-vrack -->
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direktlink:** [vRack](/links/control-panel/network-vrack)
+- **Navigationspfad:** `Network`{.action} > `Privates vRack Netzwerk`{.action}
+
+---
+<!-- CP-NAV-END:network-vrack -->
 
 ## In der praktischen Anwendung
 
 ### OVHcloud Kundencenter
 
-Sobald Ihre Dienstleistung [Hosted Private Cloud](https://www.ovhcloud.com/de/enterprise/products/hosted-private-cloud/) bereitgestellt ist, wird sie im Bereich `vRack` angezeigt und das "Rechenzentrum" befindet sich bereits in einem vRack. Um zum vRack zu gelangen, gehen Sie in den Bereich `Bare Metal Cloud`{.action}, klicken Sie auf `Network`{.action} und dann auf `vRack`{.action}. Wählen Sie in der Liste Ihr vRack aus, um den Inhalt anzuzeigen.
+Sobald Ihre Dienstleistung [Hosted Private Cloud](https://www.ovhcloud.com/de/enterprise/products/hosted-private-cloud/) bereitgestellt ist, wird sie im Bereich `vRack`{.action} angezeigt. Wählen Sie in der Liste Ihr vRack aus, um den Inhalt anzuzeigen.
 
 ![Rechenzentrum](images/vRackDatacenter.PNG){.thumbnail}
 

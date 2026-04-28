@@ -1,6 +1,6 @@
 ---
-title: Configurare la rete su Windows Server con Hyper-V
-excerpt: Come configurare la rete su Windows Server con Hyper-V
+title: "Rete Hyper-V su server dedicati HG/Scale"
+excerpt: "Configura le interfacce di rete su Windows Server con Hyper-V sui server dedicati High Grade o Scale"
 updated: 2025-05-16
 ---
 
@@ -362,4 +362,4 @@ network:
 
 ## Per saperne di più
   
-Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.
+Contatta la nostra [Community di utenti](/links/community).

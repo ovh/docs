@@ -1,6 +1,6 @@
 ---
-title: "Klienci Kimsufi i So you Start - Zapoznaj się z Panelem klienta OVHcloud"
-excerpt: "Dowiedz się, jak zarządzać usługami w Panelu klienta OVHcloud"
+title: "Panel klienta OVHcloud dla serwerów dedykowanych Kimsufi i So you Start"
+excerpt: "Nawiguj w Panelu klienta OVHcloud jako klient Kimsufi lub So you Start, aby zarządzać usługami serwerów dedykowanych."
 updated: 2025-04-28
 ---
 
@@ -22,7 +22,7 @@ OVHcloud ogłasza, że wszystkie serwery dedykowane Kimsufi, So you Start i Rise
 
 ### Dashboard
 
-![dashboard](images/OVHclouddashboard.png){.thumbnail}
+![Panel główny Panelu klienta OVHcloud](images/OVHclouddashboard.png){.thumbnail}
 
 Jeśli zakupiłeś serwer z linii produktu Eco, dashboard zostanie teraz dostępny w Panelu klienta OVHcloud. Na dashboardzie OVHcloud znajdziesz podsumowanie wszystkich Twoich usług. Interfejs ten zawiera kilka sekcji umożliwiających szybki dostęp do usługi.<br>
 W kolumnie po prawej stronie masz dostęp do Twoich danych osobowych, identyfikatora klienta oraz poziomu wsparcia (w stosownych przypadkach).<br>
@@ -39,9 +39,9 @@ W Panelu klienta OVHcloud kliknij najpierw menu `Bare Metal Cloud`{.action}, a n
 
 W menu `Serwery dedykowane`{.action} kliknij wybrany serwer, aby uzyskać dostęp do jego interfejsu.
 
-![server interface](images/serverinterface01.png){.thumbnail}
+![Zakładka informacji ogólnych o serwerze](images/serverinterface01.png){.thumbnail}
 
-![server interface](images/serverinterface02.png){.thumbnail}
+![Status serwera i szczegóły sieci](images/serverinterface02.png){.thumbnail}
 
 **Informacje ogólne**: w tej sekcji znajdziesz wszystkie informacje dotyczące Twojego serwera.
 

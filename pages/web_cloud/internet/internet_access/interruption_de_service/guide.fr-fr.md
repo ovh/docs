@@ -10,10 +10,12 @@ Vous n'avez actuellement pas accès à Internet ou vous rencontrez des coupures 
 
 **Découvrez comment rétablir votre service suite à sa coupure complète ou partielle.**
 
+<!-- CP-STEPS-START:lancer-diagnostic -->
 > [!primary]
 >
 > Pour vous accompagner au mieux dans le rétablissement de vos services, vous avez également la possibilité d'utiliser notre assistant de dépannage. Pour y accéder, connectez-vous à votre [espace client OVHcloud](/links/control-panel/telecom-xdsl-fttx) dans la section « Télécom ». Une fois positionné sur l'accès Internet concerné, cliquez sur `Lancer le diagnostic`{.action}. 
 >
+<!-- CP-STEPS-END:lancer-diagnostic -->
 
 ## Prérequis
 

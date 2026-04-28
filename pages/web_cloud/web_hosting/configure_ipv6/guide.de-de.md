@@ -49,6 +49,7 @@ Um zu überprüfen, ob Ihre Website bereits eine IPv6-Adresse verwendet, können
 
 ### 2 - IPv6-Adresse Ihres Webhostings abrufen
 
+<!-- CP-STEPS-START:ipv6-adresse-abrufen -->
 Klicken Sie auf die Tabs, um die **2** Schritte anzuzeigen.
 
 > [!tabs]
@@ -65,6 +66,7 @@ Klicken Sie auf die Tabs, um die **2** Schritte anzuzeigen.
 >> ![IPv6](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-ipv6.png){.thumbnail}
 >>
 >> Kopieren Sie die IPv6-Adresse und folgen Sie der Anleitung weiter.
+<!-- CP-STEPS-END:ipv6-adresse-abrufen -->
 
 ### 3 - DNS-Zone Ihres Domainnamens konfigurieren
 

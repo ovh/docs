@@ -1,6 +1,6 @@
 ---
-title: 'Modificare la password amministratore su un server dedicato Windows'
-excerpt: 'Come impostare una nuova password amministratore su un server Windows'
+title: "Modificare la password amministratore su un server dedicato Windows"
+excerpt: "Reimposta la password amministratore su un server dedicato Windows tramite la modalità rescue OVHcloud in caso di smarrimento"
 updated: 2024-06-26
 flag: hidden
 ---
@@ -350,4 +350,4 @@ Prosegui nella lettura di questa guida allo [Step 5: impostare una nuova passwor
 
 [Utilizzare l’IPMI sui server dedicati](/pages/bare_metal_cloud/dedicated_servers/using_ipmi_on_dedicated_servers)
 
-Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.
+Contatta la nostra [Community di utenti](/links/community).

@@ -14,8 +14,18 @@ updated: 2024-11-05
 ## Prérequis
 
 - Disposer d'un [compte OVHcloud](/pages/account_and_service_management/account_information/ovhcloud-account-creation).
-- Avoir accès à [l'espace client OVHcloud](/links/manager).
 - Avoir un ou plusieurs produits [Hosted Private Cloud - VMware on OVHcloud](/links/hosted-private-cloud/vmware) liés à ce compte.
+
+<!-- CP-NAV-START:privatecloud-vmware-vsphere -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [VMware vSphere](/links/control-panel/privatecloud-vmware-vsphere)
+- **Pour accéder à vos services :** `Hosted Private Cloud`{.action} > `Managed VMware vSphere`{.action} > Sélectionnez votre service vSphere
+
+---
+<!-- CP-NAV-END:privatecloud-vmware-vsphere -->
 
 ## En pratique
 

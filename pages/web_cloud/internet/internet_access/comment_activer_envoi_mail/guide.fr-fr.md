@@ -28,6 +28,7 @@ Afin de protéger votre réseau et vos adresses e-mail, nous désactivons l'envo
 
 ### Activer ou désactiver l'envoi d'e-mails
 
+<!-- CP-STEPS-START:activer_desactiver_envoi_emails -->
 > [!primary]
 >
 > Par défaut, l'envoi d'e-mails est désactivé sur tous les accès Internet livrés après le mois d'octobre 2024. Aucune manipulation n'est nécessaire si vous n'utilisez pas d'adresse e-mail configurée sur un logiciel de messagerie installé directement sur votre ordinateur.
@@ -58,6 +59,8 @@ Dans le cadre « Informations générales », reportez-vous à la partie `Envoi 
 - Pour changer l'état, cliquez simplement sur l'action disponible. Par exemple ici pour la désactivation :
 
 ![Mail Sending status](images/MailSending-Disable.png){.thumbnail}
+
+<!-- CP-STEPS-END:activer_desactiver_envoi_emails -->
 
 ## Aller plus loin
 

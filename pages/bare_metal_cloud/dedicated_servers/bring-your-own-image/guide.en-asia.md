@@ -1,6 +1,6 @@
 ---
-title: Bring Your Own Image (BYOI)
-excerpt: Find out how to easily deploy your own images on dedicated servers
+title: "Deploy custom images using Bring Your Own Image (BYOI) on Dedicated Servers"
+excerpt: "Deploy your own custom OS images on OVHcloud dedicated servers using the Bring Your Own Image (BYOI) feature."
 updated: 2026-02-10
 ---
 
@@ -64,11 +64,11 @@ There are some technical limitations linked to the use of physical products such
 
 In the `General information`{.action} tab, click the `...`{.action} button next to "System (OS)" then click `Install`{.action}.
 
-![BringYourOwnImage Control Panel 01](images/byoi-controlpanel01.png){.thumbnail}
+![Bring Your Own Image Control Panel install button](images/byoi-controlpanel01.png){.thumbnail}
 
 In the window that appears, select `Custom` in the menu, then `Bring Your Own Image - byoi`, and click `Next`{.action}.
 
-![BringYourOwnImage Control Panel 03](images/byoi-controlpanel03.png){.thumbnail}
+![Bring Your Own Image Control Panel custom image selection](images/byoi-controlpanel03.png){.thumbnail}
 
 You will be redirected to the configuration page. Make sure your image URL is in the correct format. Fill in the rest of the required fields on this page. Once you have confirmed that the information is correct, click `Confirm`{.action}.
 
@@ -76,7 +76,7 @@ You can find more details on the options in the [deployment options](#options) s
 
 For more information and examples about Cloud-Init's ConfigDrive, please read the official documentation on [this page](https://cloudinit.readthedocs.io/en/22.1_a/topics/examples.html).
 
-![BringYourOwnImage Control Panel 04](images/byoi-controlpanel04.png){.thumbnail}
+![Bring Your Own Image Control Panel configuration page](images/byoi-controlpanel04.png){.thumbnail}
 
 ### Deploy your image via the API <a name="viaapi"></a>
 

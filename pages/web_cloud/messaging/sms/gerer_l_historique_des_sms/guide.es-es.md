@@ -42,6 +42,7 @@ El historial de envíos incluye información sobre la fecha, el remitente, el de
 
 ### 1. Consultar el historial en el área de cliente
 
+<!-- CP-STEPS-START:view-sms-log -->
 En la barra de pestañas, haga clic en `Mensage y campaña`{.action} y, seguidamente, en `Gestión de SMS`{.action} para acceder al historial de sus SMS unitarios o en `Gestión de campañas`{.action} para acceder al historial de sus campañas de SMS.
 
 A continuación, haga clic en el botón `Historial de envíos`{.action} o `Estadísticas e historial`{.action}.
@@ -63,12 +64,15 @@ Para eliminar varios SMS a la vez, selecciónelos marcando las casillas correspo
 El botón `Filtrar`{.action} permite filtrar la búsqueda por remitente (si hubiera más de uno) o por destinatario.
 
 ![área de cliente Telecom SMS](images/smshistory5.png){.thumbnail}
+<!-- CP-STEPS-END:view-sms-log -->
  
 ### 2. Descargar el historial de sus SMS en CSV <a name="csv"></a>
- 
+
+<!-- CP-STEPS-START:download-sms-csv -->
 Para descargar el historial de los SMS enviados en formato «.CSV», haga clic en el botón `Acciones`{.action} en la esquina superior izquierda y seleccione `Descargar`{.action}. 
  
 ![área de cliente Telecom SMS](images/smshistory6.png){.thumbnail}
+<!-- CP-STEPS-END:download-sms-csv -->
  
 También puede consultar el historial desde un programa de hojas de cálculo. La información aparecerá como se muestra a continuación:
 

@@ -44,11 +44,13 @@ Chaque service dispose d'une plage /56 mais certaines restrictions s'appliquent 
 
 ### Étape 1 : activer ou désactiver IPv6
 
+<!-- CP-STEPS-START:etape1-activer-desactiver-ipv6 -->
 Depuis votre [espace client OVHcloud](/links/control-panel/telecom-otb), sélectionnez le service OverTheBox sur lequel vous souhaitez configurer l'IPv6.
 - Pour **activer** IPv6, cochez la case `IPv6 activée`{.action}.
 - Pour **désactiver** IPv6, décochez la case `IPv6 activée`{.action}.
 
 ![overthebox](images/step1-ipv6-1-enableIpv6-2025.png){.thumbnail}
+<!-- CP-STEPS-END:etape1-activer-desactiver-ipv6 -->
 
 ### Étape 2 : configuration du pare-feu
 

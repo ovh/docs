@@ -213,6 +213,7 @@ La adición de su aplicación Entra ID como proveedor de identidad aprobado se r
 
 #### Creación de confianza en OVHcloud
 
+<!-- CP-STEPS-START:establish-trust -->
 Rellene el campo **Nombre de Atributo de Usuario** con el nombre de reclamación de la aplicación de identificación inicial **UPN** y en el campo **Nombre de Atributo de Grupo** con el valor del nombre de reclamación de **groups** guardado antes.
 
 Rellene los metadatos XML de su aplicación Entra ID desde el archivo guardado anteriormente.
@@ -222,6 +223,7 @@ Es posible conservar los usuarios locales marcando la casilla `Mantener los usua
 Haga clic en `Aceptar`{.action}.
 
 ![Ovhcloud SSO step 1](images/ovhcloud_sso_1.png){.thumbnail}
+<!-- CP-STEPS-END:establish-trust -->
 
 La adición de su aplicación Entra ID como proveedor de identidad ya está establecida, pero debe añadir grupos a su cuenta de OVHcloud.
 
@@ -237,6 +239,7 @@ Para solucionar el problema, compruebe el atributo "Group" devuelto por la aplic
 
 ![Entra ID Group etapa 2](images/azure_ad_group_2.png){.thumbnail}
 
+<!-- CP-STEPS-START:declare-groups -->
 Para añadir un grupo, acceda a la sección `Identidades`{.action} y, a continuación, a la pestaña `Grupos de usuarios`{.action}. Luego, haga clic en el botón `Declarar un grupo`{.action} :
 
 ![Grupos de gestión de usuarios de Ovhcloud etapa 1](images/ovhcloud_sso_menu_1.png){.thumbnail}
@@ -248,6 +251,7 @@ Introduzca el nombre del grupo, seleccione el rol asociado y haga clic en el bot
 El grupo creado debe aparecer en la lista.
 
 ![Grupos de gestión de usuarios Ovhcloud etapa 3](images/ovhcloud_sso_menu_3.png){.thumbnail}
+<!-- CP-STEPS-END:declare-groups -->
 
 Atención: Si otorga el rol `Ninguno`, será necesario asignar permisos a este grupo a través de las [políticas IAM](/pages/account_and_service_management/account_information/iam-policy-ui).
 

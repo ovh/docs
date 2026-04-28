@@ -40,6 +40,7 @@ Podczas tworzenia instancji Public Cloud można wybrać typ rozliczenia za godzi
 
 ### W Panelu klienta OVHcloud
 
+<!-- CP-STEPS-START:switch-to-monthly-billing -->
 > [!warning]
 > Następująca procedura nie działa dla instancji trzeciej generacji (przykład: B3-32). Aby móc płacić za ten typ instancji w trybie miesięcznym, utwórz dla tego modelu instancji [Savings Plan](/pages/public_cloud/public_cloud_cross_functional/savings_plans).
 >
@@ -53,6 +54,7 @@ Następnie potwierdź zmianę typu rozliczenia:
 ![Confirm billing calculation change](images/confirm_to_monthly_updated.png){.thumbnail}
 
 Po potwierdzeniu wyboru, natychmiast otrzymają Państwo miesięczny rachunek proporcjonalny. Następny rachunek będzie zawierał część stawki godzinowej z danego miesiąca (od 1. dnia miesiąca do zmiany) oraz nową opłatę miesięczną.
+<!-- CP-STEPS-END:switch-to-monthly-billing -->
 
 ### Z poziomu API Openstack
 

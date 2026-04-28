@@ -60,53 +60,57 @@ Su base de datos puede contener una gran cantidad de información esencial para 
 
 #### Realizar una copia de seguridad manual
 
-Haga clic en las pestañas siguientes para ver cada uno de los **3** pasos.
+<!-- CP-STEPS-START:manual-backup -->
+Haga clic en las fichas siguientes para ver cada una de las **3** etapas.
 
 > [!tabs]
-> **Paso 1**
+> **Etapa 1**
 >>
 >> Acceda a la página [Web Cloud Databases](/links/control-panel/web-cloud-databases) y seleccione la solución correspondiente.
 >>
 >> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases.png){.thumbnail}
 >>
-> **Paso 2**
+> **Etapa 2**
 >>
 >> Haga clic en la pestaña `Bases de datos`{.action}.
 >>
 >> En la columna **Copias de seguridad**, la cifra corresponde al número de copias de seguridad disponibles para su base de datos.
 >>
-> **Paso 3**
+> **Etapa 3**
 >>
 >> Haga clic en el botón `...`{.action} a la derecha de la base de datos y, a continuación, en `Guardar`{.action}.
 >>
 >> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/databases/back-up-now.png){.thumbnail}
+<!-- CP-STEPS-END:manual-backup -->
 
 #### Exportar una copia de seguridad
 
-Haga clic en las pestañas siguientes para ver cada uno de los **4** pasos.
+<!-- CP-STEPS-START:export-backup -->
+Haga clic en las fichas siguientes para ver cada una de las **4** etapas.
 
 > [!tabs]
-> **Paso 1**
+> **Etapa 1**
 >>
 >> Acceda a la página [Web Cloud Databases](/links/control-panel/web-cloud-databases) y seleccione la solución correspondiente.
 >>
 >> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases.png){.thumbnail}
 >>
-> **Paso 2**
+> **Etapa 2**
 >>
 >> Haga clic en la pestaña `Bases de datos`{.action}.
 >>
 >> En la columna **Copias de seguridad**, la cifra corresponde al número de copias de seguridad disponibles para su base de datos.
 >>
-> **Paso 3**
+> **Etapa 3**
 >>
 >> Haga clic en el botón `...`{.action} a la derecha de la base de datos y, a continuación, en `Mostrar las copias de seguridad`{.action}.
 >>
 >> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/databases/show-backups.png){.thumbnail}
 >>
-> **Paso 4**
+> **Etapa 4**
 >>
 >> Se mostrará la lista de las copias de seguridad disponibles. Haga clic en el botón `...`{.action} a la derecha de la copia de seguridad seleccionada y, a continuación, en `Descargar la copia de seguridad`{.action}.
+<!-- CP-STEPS-END:export-backup -->
 
 ### Copia de seguridad y exportación de una base de datos fuera del área de cliente
 

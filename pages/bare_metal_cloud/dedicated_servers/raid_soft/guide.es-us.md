@@ -1,6 +1,6 @@
 ---
-title: Gestión y reconstrucción del RAID software en servidores en modo de arranque legacy (BIOS)
-excerpt: "Descubra cómo gestionar y reconstruir el RAID software tras un reemplazo de disco en su servidor en modo de arranque legacy (BIOS)"
+title: "Gestionar el RAID por software (modo de arranque BIOS) en un servidor dedicado"
+excerpt: "Gestione y reconstruya el RAID por software tras la sustitución de un disco en un servidor dedicado en modo de arranque BIOS."
 updated: 2026-03-02
 ---
 

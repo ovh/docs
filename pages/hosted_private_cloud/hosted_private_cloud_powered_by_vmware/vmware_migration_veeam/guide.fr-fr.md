@@ -22,6 +22,17 @@ Avant de commencer, vous aurez besoin de :
 - Une solution **Veeam Backup & Replication** valide via le [site de Veeam](https://www.veeam.com/downloads.html?ad=top-sub-menu).
 - Un accès à vCenter, ainsi que des services DNS, NTP et d’authentification préconfigurés dans votre HPC.
 
+<!-- CP-NAV-START:privatecloud-vmware-vsphere -->
+---
+
+### Accès à l’espace client OVHcloud
+
+- **Lien direct :** [VMware vSphere](/links/control-panel/privatecloud-vmware-vsphere)
+- **Pour accéder à vos services :** `Hosted Private Cloud`{.action} > `Managed VMware vSphere`{.action} > Sélectionnez votre service vSphere
+
+---
+<!-- CP-NAV-END:privatecloud-vmware-vsphere -->
+
 ![Move2Cloud](images/Move2PCC_Veam.png){.thumbnail}
 
 ## En pratique
@@ -85,9 +96,8 @@ Pour les services exposés à Internet, prévoyez des IP publiques ou utilisez l
 
 Pour permettre l’accès à distance au vCenter dans votre HPC :
 
-1. Connectez-vous à [l'espace client OVHcloud](/links/manager)
-2. Accédez à `Hosted Private Cloud`{.action} > Secure SSL Gateway
-3. Ajoutez les adresses IP autorisées
+1. Cliquez sur [ce lien](/links/control-panel/privatecloud-vmware-vsphere) pour accéder à la section `VMware vSphere`{.action}, puis ouvrez le Secure SSL Gateway.
+2. Ajoutez les adresses IP autorisées.
 
 Consultez aussi notre [guide de IP whitelisting](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/autoriser_des_ip_a_se_connecter_au_vcenter).
 

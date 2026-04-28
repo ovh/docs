@@ -1,6 +1,6 @@
 ---
-title: "Ochrona serwera gier za pomocą firewalla aplikacyjnego"
-excerpt: "Dowiedz się, jak skonfigurować OVHcloud Game DDoS Protection firewall"
+title: "Serwer dedykowany - Konfiguracja Game DDoS Protection"
+excerpt: "Skonfiguruj OVHcloud Game DDoS Protection, aby chronić serwer gier dedykowany przed atakami DDoS."
 updated: 2026-03-24
 ---
 
@@ -266,4 +266,5 @@ Aby poprosić o ustawienie ochrony profilu, należy udostępnić odpowiednie zab
 
 Jeśli potrzebujesz szkolenia lub pomocy technicznej w celu wdrożenia naszych rozwiązań, skontaktuj się z przedstawicielem handlowym lub kliknij [ten link](/links/professional-services), aby uzyskać wycenę i poprosić o spersonalizowaną analizę projektu od naszych ekspertów z zespołu Professional Services.
 
+- [Serwer dedykowany - Panel bezpieczeństwa sieci](/pages/bare_metal_cloud/dedicated_servers/network_security_dashboard)
 Dołącz do [grona naszych użytkowników](/links/community).

@@ -103,6 +103,7 @@ Pour plus d’information à ce sujet, veuillez vous référer à l’étape 5 c
 
 Établissez une corrélation entre les graphiques d’utilisation des ressources de votre hébergement (voir ci-dessous pour plus d’information) pour déterminer l’origine des retards et consultez les fichiers journaux en vous référant aux dates de ces pointes d’utilisation.
 
+<!-- CP-STEPS-START:access-stats-and-logs -->
 Pour accéder aux statistiques et logs, cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3** étapes.
 
 > [!tabs]
@@ -123,7 +124,9 @@ Pour accéder aux statistiques et logs, cliquez sur les onglets ci-dessous pour 
 >> Cliquez ensuite sur le bouton `Voir les statistiques`{.action} affiché pour accéder aux statistiques de visite du site web ou sur `Voir les logs`{.action} pour consulter les logs disponibles pour votre hébergement web.
 >>
 >> ![logs](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/statistics-and-logs/tab.png){.thumbnail}
+<!-- CP-STEPS-END:access-stats-and-logs -->
 
+<!-- CP-STEPS-START:access-resource-charts -->
 Pour accéder aux graphiques, cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3** étapes.
 
 > [!tabs]
@@ -153,6 +156,7 @@ Pour accéder aux graphiques, cliquez sur les onglets ci-dessous pour afficher s
 >> - **Commandes FTP** : commandes FTP utilisées par l’hébergement (connexions, téléchargements, chargements, suppression de fichiers, etc.).
 >> - **Temps de réponse SQL** : temps de réponse aux requêtes (visible uniquement si vous utilisez une base de données).
 >> - **Requêtes SQL** : nombre de requêtes (visible uniquement si vous utilisez une base de données).
+<!-- CP-STEPS-END:access-resource-charts -->
 
 ### 5 - Vérification des requêtes sur le réseau
 

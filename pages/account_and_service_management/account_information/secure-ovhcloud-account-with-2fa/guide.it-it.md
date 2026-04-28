@@ -103,6 +103,7 @@ Nella pagina [Sicurezza dell'account](/links/control-panel/account-security), cl
 
 > [!tabs]
 > SMS
+>> <!-- CP-STEPS-START:enable-2fa-sms -->
 >> Scegli il metodo SMS e clicca su `Continua`{.action}.
 >>
 >>![2FA sms](images/2024-002-sms-choice.png){.thumbnail width="400"}<br>
@@ -115,7 +116,9 @@ Nella pagina [Sicurezza dell'account](/links/control-panel/account-security), cl
 >>
 >>![2FA sms](images/2024-002-sms-code.png){.thumbnail width="400"}<br>
 >> L’autenticazione a due fattori è attiva. ed è possibile aggiungere altri numeri.
+>> <!-- CP-STEPS-END:enable-2fa-sms -->
 > Applicazione Mobile
+>> <!-- CP-STEPS-START:enable-2fa-otp -->
 >> Scegli il metodo applicazione mobile e clicca su `Continua`{.action}.
 >>
 >>![2FA mobileapp](images/2024-003-otp-choice.png){.thumbnail width="400"}<br>
@@ -125,7 +128,9 @@ Nella pagina [Sicurezza dell'account](/links/control-panel/account-security), cl
 >>
 >>![2FA mobileapp](images/2024-003-otp-code.png){.thumbnail width="400"}<br>
 >> L’autenticazione a due fattori è attiva.
+>> <!-- CP-STEPS-END:enable-2fa-otp -->
 > Chiave di sicurezza
+>> <!-- CP-STEPS-START:enable-2fa-u2f -->
 >> Seleziona il metodo con chiave di sicurezza e clicca su `Continua`{.action}.
 >>
 >>![2FA securitykey](images/2024-004-u2f-choice.png){.thumbnail width="400"}<br>
@@ -138,11 +143,13 @@ Nella pagina [Sicurezza dell'account](/links/control-panel/account-security), cl
 >>
 >> Una volta riconosciuta la chiave, potete anche aggiungere una descrizione.
 >> L’autenticazione a due fattori è attiva.
+>> <!-- CP-STEPS-END:enable-2fa-u2f -->
 
 Una volta aggiunto il primo metodo, **aggiungi uno o due altri metodi** per avere più modi per accedere al tuo account.
 
 ### Step 2 - salvare i codici di sicurezza <a name="codes"></a>
 
+<!-- CP-STEPS-START:save-backup-codes -->
 Quando si aggiunge la doppia autenticazione per la prima volta, nell'area clienti vengono visualizzati 10 codici di emergenza **utilizzati una sola volta**.
 
 **Conservali con cura**. Ti consigliamo di salvarli con un gestore di password, come [KeePass](https://keepass.info/) o [Bitwarden](https://bitwarden.com/) (queste due applicazioni sono gratuite).
@@ -152,6 +159,7 @@ Quando si aggiunge la doppia autenticazione per la prima volta, nell'area client
 I codici di sicurezza possono essere rigenerati o eliminati direttamente dallo Spazio Cliente:
 
 ![2FA](images/emergency-codes.png){.thumbnail}
+<!-- CP-STEPS-END:save-backup-codes -->
 
 > [!warning]
 >
@@ -202,11 +210,13 @@ Se il dispositivo (telefono cellulare/smartphone/chiave di sicurezza) viene smar
 > - codici di sicurezza validi.
 >
 
-Per rimuovere un dispositivo, accedi alla pagina [Sicurezza dell'account](/links/control-panel/account-security) e clicca sui `...`{.action} a destra del dispositivo da rimuovere e poi su `Eliminare`{.action}.
+<!-- CP-STEPS-START:delete-device -->
+Per rimuovere un dispositivo, accedi alla pagina [Sicurezza dell’account](/links/control-panel/account-security) e clicca sui `...`{.action} a destra del dispositivo da rimuovere e poi su `Eliminare`{.action}.
 
 ![2FA](images/2024-006-delete-device.png){.thumbnail}
 
 Verrà inviato un codice di conferma finale per il dispositivo da rimuovere. Inserisci il codice nella finestra che si apre e clicca su `Conferma`{.action} per completare l’eliminazione.
+<!-- CP-STEPS-END:delete-device -->
 
 Se non hai più accesso al dispositivo che vuoi rimuovere, non puoi eliminarlo dallo Spazio Cliente OVHcloud.
 In questo caso, **contatta direttamente** il nostro team di supporto [creando un ticket dal centro assistenza](https://help.ovhcloud.com/csm?id=csm_get_help) o seguendo il processo descritto [qui di seguito](#2FA-deletion).
@@ -223,9 +233,11 @@ Per disattivare completamente la doppia autenticazione sul tuo account OVHcloud,
 
 Per eliminare ogni periferica, consulta la [sezione dedicata di questa guida](#delete-device).
 
+<!-- CP-STEPS-START:disable-2fa-codes -->
 Una volta eliminati tutti i dispositivi, disattiva i codici di sicurezza cliccando sul pulsante `Disattiva i codici 2FA`{.action}.
 
 ![2FA codes](images/disabling-codes.png){.thumbnail}
+<!-- CP-STEPS-END:disable-2fa-codes -->
 
 #### Se non hai più accesso allo Spazio Cliente OVHcloud <a name="2FA-deletion"></a>
 

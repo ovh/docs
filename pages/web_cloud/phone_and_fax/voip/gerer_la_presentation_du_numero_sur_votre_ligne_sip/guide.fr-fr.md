@@ -37,22 +37,24 @@ Même si le principe de la présentation du numéro reste le même, la manipulat
 - [Configurer la présentation du numéro d'une ligne SIP](#sip)
 - [Configurer la présentation du numéro d'une ligne Trunk](#trunk)
 
-### Configurer la présentation du numéro d'une ligne SIP <a name="sip"></a>
+### Configurer la présentation du numéro d’une ligne SIP <a name="sip"></a>
 
-Dans l'onglet `Gestion des appels`{.action}, cliquez sur `Présentation du numéro`{.action}.
+<!-- CP-STEPS-START:sip-presentation-numero -->
+Dans l’onglet `Gestion des appels`{.action}, cliquez sur `Présentation du numéro`{.action}.
 
 ![configurer-presentation-numero](images/display-incoming-call-step1.png){.thumbnail}
 
-La page qui s'affiche vous indique l'état actuel de la présentation du numéro. Par défaut, le numéro de votre ligne est présenté. Vous avez cependant la possibilité de choisir deux autres configurations :
+La page qui s’affiche vous indique l’état actuel de la présentation du numéro. Par défaut, le numéro de votre ligne est présenté. Vous avez cependant la possibilité de choisir deux autres configurations :
 
 |Configuration|Description|
 |---|---|  
 |Rester anonyme|Permet de masquer votre numéro lorsque vous émettez un appel. Pour valider ce choix, cochez la case `Rester anonyme`{.action}. Vous pouvez également activer cette configuration grâce à un code à taper sur votre combiné (voir la documentation [Activer ou désactiver des services depuis le téléphone](/pages/web_cloud/phone_and_fax/voip/activer_desactiver_fonctions)).|
-|Présenter un autre numéro|Permet de présenter un numéro différent de celui de la ligne sélectionnée lorsque vous émettez un appel (par exemple, pour masquer le numéro direct d'un de vos collaborateurs en affichant celui de votre standard téléphonique). Pour cela, cliquez sur `Choisir un autre numéro`{.action}, puis sélectionnez celui souhaité dans la liste. Seuls les numéros rattachés à vos groupes de facturation apparaissent dans la liste.|
+|Présenter un autre numéro|Permet de présenter un numéro différent de celui de la ligne sélectionnée lorsque vous émettez un appel (par exemple, pour masquer le numéro direct d’un de vos collaborateurs en affichant celui de votre standard téléphonique). Pour cela, cliquez sur `Choisir un autre numéro`{.action}, puis sélectionnez celui souhaité dans la liste. Seuls les numéros rattachés à vos groupes de facturation apparaissent dans la liste.|
 
 Une fois votre choix fait, cliquez sur le bouton `Appliquer les modifications`{.action}. Vous pouvez aussi cliquer sur `Appliquer à plusieurs lignes`{.action} pour dupliquer les paramètres sur d’autres lignes OVHcloud.
 
 ![configurer-presentation-numero](images/display-incoming-call-step2.png){.thumbnail}
+<!-- CP-STEPS-END:sip-presentation-numero -->
 
 ### Configurer la présentation du numéro d'une ligne Trunk <a name="trunk"></a>
 
@@ -74,25 +76,29 @@ Dès que vous êtes prêt, poursuivez la lecture de cette documentation en fonct
 
 #### Rester anonyme <a name="rester-anonyme"></a>
 
-Choisissez la ligne Trunk concernée, cliquez sur l'onglet `Gestion des appels`{.action} puis sur `Présentation du numéro`{.action}.
+<!-- CP-STEPS-START:trunk-rester-anonyme -->
+Choisissez la ligne Trunk concernée, cliquez sur l’onglet `Gestion des appels`{.action} puis sur `Présentation du numéro`{.action}.
 
 ![configurer-presentation-numero-trunk](images/display-incoming-call-trunk-step1.png){.thumbnail}
 
-La page qui s'affiche vous indique la configuration actuelle de la présentation du numéro. Par défaut, le numéro de votre ligne est présenté. Pour le masquer, cochez la case `Rester anonyme`{.action}, puis cliquez sur le bouton `Appliquer les modifications`{.action}. Vous avez aussi la possibilité de cliquer sur `Appliquer à plusieurs lignes`{.action} pour dupliquer ce paramètre sur d’autres lignes OVHcloud.
+La page qui s’affiche vous indique la configuration actuelle de la présentation du numéro. Par défaut, le numéro de votre ligne est présenté. Pour le masquer, cochez la case `Rester anonyme`{.action}, puis cliquez sur le bouton `Appliquer les modifications`{.action}. Vous avez aussi la possibilité de cliquer sur `Appliquer à plusieurs lignes`{.action} pour dupliquer ce paramètre sur d’autres lignes OVHcloud.
 
 ![configurer-presentation-numero-trunk](images/display-incoming-call-trunk-anonymous-step1.png){.thumbnail}
+<!-- CP-STEPS-END:trunk-rester-anonyme -->
 
 #### Présenter de manière unique un numéro OVHcloud <a name="presenter-numero-unique"></a>
 
-Choisissez la ligne Trunk concernée, cliquez sur l'onglet `Gestion des appels`{.action} puis sur `Présentation du numéro`{.action}.
+<!-- CP-STEPS-START:trunk-presenter-numero-unique -->
+Choisissez la ligne Trunk concernée, cliquez sur l’onglet `Gestion des appels`{.action} puis sur `Présentation du numéro`{.action}.
 
 ![configurer-presentation-numero-trunk](images/display-incoming-call-trunk-step1.png){.thumbnail}
 
-La page qui s'affiche vous indique la configuration actuelle de la présentation du numéro. Par défaut, le numéro de votre ligne est présenté. Pour en présenter un autre, cliquez sur `Choisir un autre numéro`{.action}, puis sélectionnez celui souhaité dans la liste. Seuls les numéros rattachés à vos groupes de facturation apparaissent ici.
+La page qui s’affiche vous indique la configuration actuelle de la présentation du numéro. Par défaut, le numéro de votre ligne est présenté. Pour en présenter un autre, cliquez sur `Choisir un autre numéro`{.action}, puis sélectionnez celui souhaité dans la liste. Seuls les numéros rattachés à vos groupes de facturation apparaissent ici.
 
 Une fois votre choix fait, cliquez sur le bouton `Appliquer les modifications`{.action}. Vous avez aussi la possibilité de cliquer sur `Appliquer à plusieurs lignes`{.action} pour dupliquer les paramètres sur d’autres lignes OVHcloud.
 
 ![configurer-presentation-numero-trunk](images/display-incoming-call-trunk-step2.png){.thumbnail}
+<!-- CP-STEPS-END:trunk-presenter-numero-unique -->
 
 #### Présenter « à la volée » un numéro OVHcloud <a name="presenter-numero-volee"></a>
 
@@ -107,6 +113,7 @@ Une fois votre choix fait, cliquez sur le bouton `Appliquer les modifications`{.
 
 **Le mode anonyme doit être désactivé sur la ligne Trunk depuis l'espace client OVHcloud, sinon il sera prioritaire sur la présentation de votre IPBX.**
 
+<!-- CP-STEPS-START:trunk-presenter-numero-volee-ovhcloud -->
 Choisissez la ligne Trunk concernée, cliquez sur l'onglet `Gestion des appels`{.action} puis sur `Présentation du numéro`{.action}.
 
 ![configurer-presentation-numero-trunk](images/display-incoming-call-trunk-step1.png){.thumbnail}
@@ -114,6 +121,7 @@ Choisissez la ligne Trunk concernée, cliquez sur l'onglet `Gestion des appels`{
 Décochez la case `Rester anonyme`{.action}, puis cliquez sur le bouton `Appliquer les modifications`{.action}
 
 ![désactiver-anonyme](images/display-incoming-call-trunk-anonymous-step7.png){.thumbnail}
+<!-- CP-STEPS-END:trunk-presenter-numero-volee-ovhcloud -->
 
 Vous pouvez à présent configurer la présentation du numéro sur votre équipement IPBX.
 
@@ -128,6 +136,7 @@ Vous pouvez à présent configurer la présentation du numéro sur votre équipe
 
 La présentation d'un numéro externe depuis votre IPBX nécessite la validation du numéro souhaité.
 
+<!-- CP-STEPS-START:trunk-presenter-numero-volee-externe -->
 Choisissez la ligne Trunk concernée, cliquez sur l'onglet `Gestion des appels`{.action} puis sur `Présentation du numéro externe`{.action}.
 
 ![configurer-presentation-numero-trunk](images/display-incoming-call-trunk-step3.png){.thumbnail}
@@ -151,6 +160,7 @@ Choisissez la ligne Trunk concernée, cliquez sur l'onglet `Gestion des appels`{
 Décochez la case `Rester anonyme`{.action} puis cliquez sur le bouton `Appliquer les modifications`{.action}
 
 ![désactiver-anonyme](images/display-incoming-call-trunk-anonymous-step7.png){.thumbnail}
+<!-- CP-STEPS-END:trunk-presenter-numero-volee-externe -->
 
 Vous pouvez à présent configurer la présentation du numéro sur votre équipement IPBX.
 

@@ -42,6 +42,7 @@ Historia zawiera informacje o dacie, godzinie, nadawcy, odbiorcy oraz treści wy
 
 ### Etap 1: Sprawdzanie historii w Panelu klienta
 
+<!-- CP-STEPS-START:view-sms-log -->
 Na pasku kart kliknij `Wiadomość SMS i kampania`{.action}, a następnie `Zarządzanie SMS-ami`{.action}, aby uzyskać dostęp do historii Twoich pojedynczych wiadomości SMS lub `Zarządzanie kampaniami`{.action}.
 
 Następnie kliknij `Historia wysyłki`{.action} lub `Statystyki i Historia`{.action}.
@@ -63,12 +64,15 @@ Aby usunąć kilka wiadomości SMS jednocześnie, zaznacz pola znajdujące obok 
 Przycisk `Filtruj`{.action} umożliwia filtrowanie wyszukiwania według nadawcy (jeśli masz wielu nadawców) lub odbiorcy.
 
 ![sms-history](images/smshistory5.png){.thumbnail}
+<!-- CP-STEPS-END:view-sms-log -->
  
 ### Etap 2: Pobieranie historii wiadomości SMS do pliku CSV <a name="csv"></a> 
 
+<!-- CP-STEPS-START:download-sms-csv -->
 Kliknij przycisk `Działania`{.action} po lewej stronie, nad historią, a następnie kliknij polecenie `Pobierz`{.action}, aby pobrać historię wysłanych wiadomości SMS w formacie .csv. 
  
 ![sms-history](images/smshistory6.png){.thumbnail}
+<!-- CP-STEPS-END:download-sms-csv -->
  
 Teraz możesz otworzyć historię w arkuszu kalkulacyjnym. Wyświetlane informacje mogą wyglądać jak na poniższym przykładzie.
 

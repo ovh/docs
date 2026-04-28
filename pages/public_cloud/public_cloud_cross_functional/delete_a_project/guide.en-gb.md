@@ -34,6 +34,7 @@ Please note that deleting a project is not the same as deactivating your Public 
 
 ## Instructions
 
+<!-- CP-STEPS-START:delete-project -->
 Open the `Project settings`{.action} under **Settings** in the left-hand menu.
 
 ![menu](images/delete-project-2025.png){.thumbnail}
@@ -51,6 +52,7 @@ When you click on the button, an email will be sent to your contact email addres
 > [!warning]
 > Please note that when a project is marked for deletion, it remains in suspend status for up to 7 days. The project is not immediately deleted. In situations where this may affect the creation of new projects on accounts with limited project quota, please contact our support team for further assistance.
 >
+<!-- CP-STEPS-END:delete-project -->
 
 ## Go further
 

@@ -1,6 +1,6 @@
 ---
-title: 'AMD SME/SEV sur Ubuntu 20'
-excerpt: 'Activer SME sur votre serveur ubuntu et générer une machine virtuelle SEV'
+title: "Activer AMD SME/SEV sur un serveur dédié (Ubuntu)"
+excerpt: "Activez SME sur votre serveur dédié Ubuntu et créez une machine virtuelle SEV sécurisée"
 updated: 2020-05-07
 ---
 
@@ -153,5 +153,8 @@ ubuntu@ubuntu:~$ dmesg | grep SEV
 
 ## Aller plus loin
 
-Échangez avec notre [communauté d'utilisateurs](/links/community).
+[Comment gérer Intel SGX sur un serveur dédié](/pages/bare_metal_cloud/dedicated_servers/sgx-enable-and-use)
 
+[Sécuriser un serveur dédié](/pages/bare_metal_cloud/dedicated_servers/securing-a-dedicated-server)
+
+Échangez avec notre [communauté d'utilisateurs](/links/community).

@@ -1,6 +1,6 @@
 ---
-title: Enabling and configuring the Edge Network Firewall
-excerpt: Find out how to configure the Edge Network Firewall for your services
+title: "Configure the Edge Network Firewall for Dedicated Servers"
+excerpt: "Enable and configure the Edge Network Firewall to filter incoming traffic to your OVHcloud dedicated server."
 updated: 2026-03-10
 ---
 
@@ -101,19 +101,19 @@ You can set up to **20 rules per IP**.
 
 **To add a rule**, click on the `+ Add a rule`{.action} button, on the top left:
 
-| ![add-rule-btn](images/enf_add_rule_new.png) | 
-|:--:| 
+| ![Add a rule button in Edge Network Firewall](images/enf_add_rule_new.png) |
+|:--:|
 | Click on `+ Add a rule`{.action}. |
 
 For each rule (excluding TCP), you must choose:
 
-| ![add-rule-btn](images/enf_add_rule_no_tcp_new.png){.thumbnail} |
+| ![Firewall rule form for non-TCP protocols](images/enf_add_rule_no_tcp_new.png){.thumbnail} |
 |:--|
 | - A priority (from 0 to 19, 0 being the first rule to be applied, followed by the others) <br> - An action (`Accept`{.action} or `Deny`{.action}) <br> - The protocol <br> - Source IP (optional) |
 
 For each **TCP** rule, you must choose:
 
-| ![add-rule-btn](images/enf_add_rule_tcp_new.png){.thumbnail} |
+| ![Firewall rule form for TCP protocol](images/enf_add_rule_tcp_new.png){.thumbnail} |
 |:--|
 | - A priority (from 0 to 19, 0 being the first rule to be applied, followed by the others) <br> - An action (`Accept`{.action} or `Deny`{.action}) <br> - The protocol <br> - Source IP (optional) <br> - The source port or port range (optional) <br> - The destination port or port range (optional) <br> - The TCP state (optional) <br> - Fragments (optional) |
 
@@ -206,5 +206,7 @@ After reading this tutorial, you should be able to configure the Edge Network Fi
 ## Go further
 
 - [Protecting a game server with the application firewall](/pages/bare_metal_cloud/dedicated_servers/firewall_game_ddos)
+
+[Configuring Anti-DDoS for Solana on Dedicated Servers](/pages/bare_metal_cloud/dedicated_servers/blockchain_anti_ddos)
 
 Join our [community of users](/links/community).

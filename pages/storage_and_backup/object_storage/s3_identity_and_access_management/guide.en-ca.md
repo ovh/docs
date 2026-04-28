@@ -1,7 +1,7 @@
 ---
 title: Object Storage - Identity and access management
 excerpt: The purpose of this guide is to show you how to manage your identities and access your Object Storage resources
-updated: 2026-03-06
+updated: 2026-04-14
 ---
 
 ## Objective
@@ -72,22 +72,6 @@ Select the user to add to your bucket and click `Next`{.action}.
 Set access to your bucket for this user and click on `Confirm`{.action}.
 
 ![Add a user to my container - Role](images/highperf-identity-and-access-management-20220928083800300.png){.thumbnail}
-
-### Manage access to an object via a profile
-
-You can also set access to your objects via predefined profiles.
-
-Click on the `...`{.action} at the end of your object line, then `Add user to my object`{.action}.
-
-![object menu](images/highperf-identity-and-access-management-20220928084137918.png){.thumbnail}
-
-Select the user and click `Next`{.action}.
-
-![add user to my object](images/highperf-identity-and-access-management-20220928084222940.png){.thumbnail}
-
-Select the access profile for this user and click `Confirm`{.action}.
-
-![add role to my object](images/highperf-identity-and-access-management-20220928084308265.png){.thumbnail}
 
 ### Advanced resource access management
 

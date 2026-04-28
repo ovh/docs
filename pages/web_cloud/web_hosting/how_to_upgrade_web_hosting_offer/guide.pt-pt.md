@@ -48,6 +48,7 @@ A sua [Área de Cliente OVHcloud](/links/manager) permite aumentar as capacidade
 
 ### Alterar a oferta de alojamento web <a name="modify"></a>
 
+<!-- CP-STEPS-START:modify-subscription -->
 Para alterar a sua subscrição, clique nos separadores abaixo para visualizar cada uma das **2** etapas.
 
 > [!tabs]
@@ -64,6 +65,7 @@ Para alterar a sua subscrição, clique nos separadores abaixo para visualizar c
 >> ![change_plan](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/pro-change-plan.png){.thumbnail}
 >>
 >> De seguida, selecione a nova subscrição e a respetiva duração. Valide os contratos correspondentes e clique em `Enviar`{.action}.
+<!-- CP-STEPS-END:modify-subscription -->
 
 ### Verifique se o seu alojamento web é compatível com uma oferta da gama inferior <a name="checks"></a>
 
@@ -81,7 +83,9 @@ Certifique-se de que a nova oferta inclui suficientes [bases de dados](/links/we
 
 Caso contrário, elimine as bases de dados não utilizadas e, se necessário, reduza a quantidade de dados nelas contida. Esta quantidade não deverá ultrapassar a dimensão máxima das bases de dados da nova oferta. Para qualquer pedido de assistência sobre as manipulações a efetuar, contacte os [parceiros OVHcloud](/links/partner).
 
-Após a eliminação dos dados das suas bases de dados, recalcule o limite utilizado. Para isso, clique nos separadores abaixo para visualizar cada uma das **4** etapas.
+Após a eliminação dos dados das suas bases de dados, recalcule o limite utilizado.
+<!-- CP-STEPS-START:recalculate-db-quota -->
+Para isso, clique nos separadores abaixo para visualizar cada uma das **4** etapas.
 
 > [!tabs]
 > **Etapa 1**
@@ -110,6 +114,7 @@ Após a eliminação dos dados das suas bases de dados, recalcule o limite utili
 >>
 >> Depois de iniciada, a operação pode demorar alguns minutos. Quando esta operação terminar, o estado "READ ONLY" da base de dados desaparece.
 >> A sua base de dados estará novamente plenamente operacional.
+<!-- CP-STEPS-END:recalculate-db-quota -->
 
 > [!primary]
 >
@@ -120,6 +125,7 @@ Após a eliminação dos dados das suas bases de dados, recalcule o limite utili
 
 Se utilizar a oferta [Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb) incluída com o seu alojamento web [Performance](/links/web/hosting-performance-offer) e pretender colocar o seu alojamento web numa oferta [Pro](/links/web/hosting-professional-offer), deverá primeiro dissociar a oferta Web Cloud Databases do seu alojamento web.
 
+<!-- CP-STEPS-START:detach-wcdb -->
 Para isso, clique nos separadores abaixo para visualizar cada uma das **2** etapas.
 
 > [!tabs]
@@ -134,12 +140,14 @@ Para isso, clique nos separadores abaixo para visualizar cada uma das **2** etap
 >> No marco **Configuração**, clique no botão `...`{.action} à direita da menção **Web Cloud Databases** e, a seguir, em `Desassociar`{.action}.
 >>
 >> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/wcdb-detach.png){.thumbnail}
+<!-- CP-STEPS-END:detach-wcdb -->
 
 Esta ação permitir-lhe-á encomendar uma oferta Web Cloud Databases independente da sua subscrição *Performance*. Os dados do seu servidor serão conservados.
 
 Se não deseja conservar estes dados, pode igualmente eliminar o seu serviço Web Cloud Databases antes de passar para a oferta *Pro* : 
 
 1. Efetue o backup dos seus dados conforme indicado neste [guia](/pages/web_cloud/web_cloud_databases/save-export-on-database-server).<br>
+<!-- CP-STEPS-START:delete-wcdb -->
 2. Elimine o seu servidor Web Cloud Databases através da [Área de Cliente OVHcloud](/links/manager). Para isso, clique nos separadores abaixo para visualizar cada uma das **2** etapas.
 
 > [!tabs]
@@ -147,11 +155,13 @@ Se não deseja conservar estes dados, pode igualmente eliminar o seu serviço We
 >> Aceda à página [As minhas ofertas e serviços](/links/control-panel/billing-services).
 > **Etapa 2**
 >> Clique no botão `...`{.action} à direita da linha da oferta Web Cloud Databases/SQL Privado em causa e depois em `Eliminar o meu alojamento SQL privado`{.action}.
+<!-- CP-STEPS-END:delete-wcdb -->
 
 #### 3 - Espaço de armazenamento FTP
 
 Certifique-se de que a nova oferta oferece um espaço de armazenamento [FTP](/pages/web_cloud/web_hosting/ftp_connection) suficiente para que seja possível a importação dos ficheiros do seu alojamento atual.
 
+<!-- CP-STEPS-START:check-ftp-storage -->
 Para verificar a quota de espaço de armazenamento FTP utilizado no seu alojamento web, clique nos separadores abaixo para visualizar cada uma das **2** etapas.
 
 > [!tabs]
@@ -168,11 +178,13 @@ Para verificar a quota de espaço de armazenamento FTP utilizado no seu alojamen
 >> ![disk_space](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-disk-space.png){.thumbnail}
 >>
 >> O espaço de armazenamento utilizado aparece abaixo desta menção.
+<!-- CP-STEPS-END:check-ftp-storage -->
 
 #### 4 - Endereços de e-mail
 
 Certifique-se de que a nova oferta inclui endereços de correio eletrónico suficientes disponíveis. Caso contrário, remova os endereços de e-mail não utilizados após [copiar](/pages/web_cloud/email_and_collaborative_solutions/migrating/manual_email_migration) os respetivos conteúdos, se necessário.
 
+<!-- CP-STEPS-START:upgrade-email-plan-accounts -->
 Se pretender conservar o mesmo número de caixas de correio e **antes de passar o seu alojamento web para uma oferta inferior**, é igualmente possível encomendar uma nova oferta de correio eletrónico **MX Plan**. Para isso, clique nos separadores abaixo para visualizar cada uma das **2** etapas.
 
 > [!tabs]
@@ -181,9 +193,11 @@ Se pretender conservar o mesmo número de caixas de correio e **antes de passar 
 > **Etapa 2**
 >> Na caixa **Subscrição** e à direita de **Oferta**, clique no botão `...`{.action} e, a seguir, em `Mudar de oferta`{.action}.
 >> ![Alteração de oferta MX Plan](/pages/assets/screens/control_panel/product-selection/web-cloud/emails/general-information/change-solution.png){.thumbnail}
+<!-- CP-STEPS-END:upgrade-email-plan-accounts -->
 
 Se a alteração de oferta não estiver disponível no seu serviço de e-mail, este está associado a um alojamento web.
 
+<!-- CP-STEPS-START:detach-email-option-accounts -->
 Pode desassociar o serviço de e-mail do seu alojamento web. Para isso, clique nos separadores abaixo para visualizar cada uma das **2** etapas.
 
 > [!tabs]
@@ -191,11 +205,13 @@ Pode desassociar o serviço de e-mail do seu alojamento web. Para isso, clique n
 >> Aceda à página [Alojamentos](/links/control-panel/web-hosting) e escolha o alojamento web em causa.
 > **Etapa 2**
 >> Na caixa **Configuração**, clique no botão `...`{.action} à direita de **Endereços de e-mail** e, a seguir, em `Desassociar a minha opção de e-mail`{.action}.
+<!-- CP-STEPS-END:detach-email-option-accounts -->
 
 #### 5 - Mailing lists
 
 A funcionalidade [Mailing lists](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/feature_mailing_list) é opcional nos alojamentos [Perso](/links/web/hosting-personal-offer).
 
+<!-- CP-STEPS-START:upgrade-email-plan-lists -->
 Para passar o seu alojamento web para uma oferta [Perso](/links/web/hosting-personal-offer), deverá em primeiro lugar eliminar as mailing lists ou encomendar uma oferta de correio eletrónico que inclua esta funcionalidade (**MX Plan 100** ou **MX Plan Full**) a partir da sua [Área de Cliente OVHcloud](/links/manager). Para isso, clique nos separadores abaixo para visualizar cada uma das **2** etapas.
 
 > [!tabs]
@@ -203,9 +219,11 @@ Para passar o seu alojamento web para uma oferta [Perso](/links/web/hosting-pers
 >> Aceda à página [MX Plan](/links/control-panel/web-mx-plan) e escolha o domínio em causa.
 > **Etapa 2**
 >> Na caixa **Subscrição** e à direita de **Oferta**, clique no botão `...`{.action} e, a seguir, em `Mudar de oferta`{.action}.
+<!-- CP-STEPS-END:upgrade-email-plan-lists -->
 
 Se a alteração de oferta não estiver disponível no seu serviço de e-mail, este está associado a um alojamento web.
 
+<!-- CP-STEPS-START:detach-email-option-lists -->
 Pode desassociar o serviço de e-mail do seu alojamento web. Para isso, clique nos separadores abaixo para visualizar cada uma das **2** etapas.
 
 > [!tabs]
@@ -213,6 +231,7 @@ Pode desassociar o serviço de e-mail do seu alojamento web. Para isso, clique n
 >> Aceda à página [Alojamentos](/links/control-panel/web-hosting) e escolha o alojamento web em causa.
 > **Etapa 2**
 >> Na caixa **Configuração**, clique no botão `...`{.action} à direita de **Endereços de e-mail** e, a seguir, em `Desassociar a minha opção de e-mail`{.action}.
+<!-- CP-STEPS-END:detach-email-option-lists -->
 
 #### 6 - Utilizadores FTP
 
@@ -220,6 +239,7 @@ Certifique-se de que a nova oferta oferece utilizadores FTP em número suficient
 
 O número de utilizadores FTP pode ser consultado na Área de Cliente OVHcloud. Para verificar, clique nos separadores abaixo para visualizar cada uma das **3** etapas.
 
+<!-- CP-STEPS-START:check-ftp-users -->
 > [!tabs]
 > **Etapa 1**
 >> Aceda à página [Alojamentos](/links/control-panel/web-hosting) e escolha o alojamento web em causa.
@@ -228,6 +248,7 @@ O número de utilizadores FTP pode ser consultado na Área de Cliente OVHcloud. 
 > **Etapa 3**
 >> Para eliminar utilizadores FTP, clique no botão `...`{.action} à direita do utilizador FTP em causa e, a seguir, em `Eliminar`{.action}.
 >> ![Eliminação de utilizador FTP](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/edit-ftp-user-2.png){.thumbnail}
+<!-- CP-STEPS-END:check-ftp-users -->
 
 #### Finalização
 
@@ -251,6 +272,7 @@ Com a [opção Boost](/links/web/hosting-options-boost), disponível nas nossas 
 
 Se a opção **Boost** for adequada às suas necessidades, encontrará abaixo as instruções para **ativar** ou **desativar** esta opção no seu alojamento.
 
+<!-- CP-STEPS-START:enable-boost -->
 Para **ativar a opção Boost**, clique nos separadores abaixo para visualizar cada uma das **2** etapas.
 
 > [!tabs]
@@ -265,7 +287,9 @@ Para **ativar a opção Boost**, clique nos separadores abaixo para visualizar c
 >>  No quadro **Informações gerais** da página que se abrir, clique no botão `...`{.action} à direita de **Boost** e, a seguir, em `Aplicar opção boost ao serviço`{.action}.
 >>
 >> ![boost enable](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/boost-my-hosting-plan.png){.thumbnail}
+<!-- CP-STEPS-END:enable-boost -->
 
+<!-- CP-STEPS-START:disable-boost -->
 Para **desativar a opção Boost**, clique nos separadores abaixo para visualizar cada uma das **3** etapas.
 
 > [!tabs]
@@ -288,6 +312,7 @@ Para **desativar a opção Boost**, clique nos separadores abaixo para visualiza
 >> Aparece o quadro de utilização da opção Boost, clique em `Desativar a opção boost`{.action}.
 >>
 >> ![boost disable](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/boost-my-hosting-plan/deactivate-the-boost-plan.png){.thumbnail}
+<!-- CP-STEPS-END:disable-boost -->
 
 #### A faturação em caso de alteração da oferta <a name="billing"></a>
 

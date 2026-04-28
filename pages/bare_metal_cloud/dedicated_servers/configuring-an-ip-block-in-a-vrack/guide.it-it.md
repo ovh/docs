@@ -1,6 +1,6 @@
 ---
-title: 'Configurare un blocco Additional IP in un vRack'
-excerpt: 'Scopri come configurare un blocco di indirizzi IP pubblici nel vRack.'
+title: "Configurare un blocco IP nella vRack su un server dedicato"
+excerpt: "Configura un blocco di indirizzi IP pubblici per la rete privata vRack OVHcloud tra i tuoi server dedicati."
 updated: 2026-04-03
 ---
 
@@ -387,7 +387,7 @@ sudo dnf install iproute
 >> sudo netplan apply
 >> ```
 >> 
-> **Fedora, AlmaLinux e Rocky Linux (10/11)**
+> **Fedora, AlmaLinux e Rocky Linux (10)**
 >>
 >> Per prima cosa, verificare che l'interfaccia vRack sia nello stato `connected` o `connecting`. Nel nostro esempio, l'interfaccia si chiama `eno2`.
 >>

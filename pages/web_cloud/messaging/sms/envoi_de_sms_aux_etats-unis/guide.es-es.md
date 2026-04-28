@@ -48,6 +48,7 @@ Es posible solicitar la validación de varias plantillas de mensajes.
 
 #### 2.1. Desde el área de cliente
 
+<!-- CP-STEPS-START:add-template-cp -->
 Haga clic en la pestaña `Mensaje y campaña`{.action} y, seguidamente, en `Gestión de SMS`{.action}.
 
 Por último, haga clic en `Gestionar las plantillas`{.action}.
@@ -68,6 +69,8 @@ Rellene los campos en la ventana emergente que aparece.
 | Actividad    | Seleccione el tipo de plantilla:<br>\- Alerta<br>\- Autenticación<br>\- Sistema de tratamiento transaccional |
 | Descripción | Descripción de la plantilla                                                                                            |
 | Plantilla      | Escribir la plantilla. Es posible incluir variables delimitadas con el carácter #.                                                                  |
+
+<!-- CP-STEPS-END:add-template-cp -->
 
 #### 2.2. A través de la API
 

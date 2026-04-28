@@ -88,6 +88,7 @@ Votre service Okta fait désormais confiance à OVHcloud en tant que prestataire
 
 ### Enregistrer Okta sur le compte OVHcloud et configurer la connexion
 
+<!-- CP-STEPS-START:register-okta-in-ovhcloud -->
 Pour ajouter Okta en tant que fournisseur d'identité de confiance, vous devez fournir les métadonnées du fournisseur d'identité. Ouvrez la page [SAML SSO](/links/control-panel/iam-saml-sso) et cliquez sur le bouton `Connexion SSO`{.action}.
 
 ![Accès au menu IAM](images/access_to_the_IAM_menu_03.png){.thumbnail}
@@ -111,6 +112,7 @@ Le bouton `...`{.action} permet de mettre à jour ou de supprimer le SSO, et d'e
 ![Connexion SSO OVHcloud étape 5](images/ovhcloud_user_management_connect_sso_5.png){.thumbnail}
 
 Votre service Okta est désormais considéré comme un fournisseur d'identité de confiance. Cependant, vous devez tout de même ajouter des groupes à votre compte OVHcloud.
+<!-- CP-STEPS-END:register-okta-in-ovhcloud -->
 
 > [!warning]
 > Si vous essayez à ce stade de vous connecter via SSO, un message d'erreur `Not in valid groups` s'affichera probablement.
@@ -120,6 +122,7 @@ Votre service Okta est désormais considéré comme un fournisseur d'identité d
 
 Vous devez à présent attribuer des **rôles** aux groupes d'utilisateurs Okta chez OVHcloud. Dans le cas contraire, votre compte OVHcloud ne sait pas ce que l'utilisateur est autorisé à faire et, par défaut, aucun droit n'est attribué.
 
+<!-- CP-STEPS-START:declare-okta-groups-ovhcloud -->
 Dans la section `Identités`{.action}, ouvrez l'onglet `Groupes d'utilisateurs`{.action}. Cliquez ensuite sur le bouton `Déclarer un groupe`{.action} et remplissez les champs :
 
 - **Group name** : Nom du groupe dans Okta
@@ -132,6 +135,7 @@ Dans la section `Identités`{.action}, ouvrez l'onglet `Groupes d'utilisateurs`{
 Vous pourrez ensuite vérifier que le groupe est ajouté à votre compte OVHcloud dans la section « Groupes » :
 
 ![Groupes de gestion des utilisateurs Okta](images/ovhcloud_user_management_groups_3.png){.thumbnail}
+<!-- CP-STEPS-END:declare-okta-groups-ovhcloud -->
 
 Lorsque vous vous connecterez ultérieurement avec un utilisateur du groupe **Intern**, votre compte OVHcloud reconnaîtra que l'utilisateur a le rôle "UNPRIVILEGED" spécifié par son groupe.
 

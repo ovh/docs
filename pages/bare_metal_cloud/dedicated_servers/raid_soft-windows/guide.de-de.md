@@ -1,6 +1,6 @@
 ---
-title: Konfigurieren eines Software-Mirror (RAID) mit Windows
-excerpt: "Erfahren Sie hier, wie Sie die Disk-Konfiguration Ihres Servers nach einem Austausch wiederherstellen"
+title: "Dedicated Server - Software-RAID Mirror unter Windows"
+excerpt: "Erstellen Sie die Software-RAID-Mirror-Konfiguration auf einem Windows Dedicated Server nach einem Festplattenaustausch neu."
 updated: 2023-03-28
 ---
 
@@ -25,11 +25,11 @@ Stellen Sie eine Remote Desktop (RDP) Verbindung zu Ihrem Server her.
 
 Wenn Sie eingeloggt sind, klicken Sie mit der rechten Maustaste auf das `Startmenü`{.action} und öffnen Sie `Ausführen`{.action}.
 
-![Software spiegelt Windows](images/raid-soft-windows-01.png){.thumbnail}
+![Windows-Startmenü mit Option "Ausführen"](images/raid-soft-windows-01.png){.thumbnail}
 
 Geben Sie "cmd" ein und klicken Sie auf `OK`{.action}.
 
-![Software spiegelt Windows](images/raid-soft-windows-02.png){.thumbnail}
+![Ausführen-Dialog mit eingegebenem cmd-Befehl](images/raid-soft-windows-02.png){.thumbnail}
 
 Welche Methode zu verwenden ist, hängt vom Partitionstyp Ihrer Disks ab. Befolgen Sie die Anweisungen in [diesem Abschnitt](#mbr) für **MBR**, oder gehen Sie zum [nachfolgenden Abschnitt](#gpt) über, wenn **GPT** verwendet wird. Wenn Sie unsicher sind, führen Sie `diskpart` an der Eingabeaufforderung aus und geben Sie `list disk` ein. Überprüfen Sie die Spalte "Gpt" in der Ausgabe.
 
@@ -404,5 +404,9 @@ DISKPART> list volume
 Es ist empfehlenswert, den Server erst nach Abschluss der Wiederherstellung neu zu starten.
 
 ## Weiterführende Informationen
+
+- [Dedicated Server - Software-RAID verwalten (BIOS)](/pages/bare_metal_cloud/dedicated_servers/raid_soft)
+
+- [Creating a Windows Partition on a Dedicated RAID Server](/pages/bare_metal_cloud/dedicated_servers/windows_raid_hard)
 
 Für den Austausch mit unserer Community gehen Sie auf <https://community.ovh.com/en/>.

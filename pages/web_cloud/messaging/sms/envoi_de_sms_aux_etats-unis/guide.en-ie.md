@@ -44,6 +44,7 @@ You can request the validation of multiple message templates.
 
 #### 2.1 Via the Control Panel
 
+<!-- CP-STEPS-START:add-template-cp -->
 Click on the `Message and campaign`{.action} tab and click `SMS management`{.action}.
 
 Finally, click `Manage templates`{.action}.
@@ -64,6 +65,8 @@ A pop-up will appear with fields to complete.
 | Activity    | Select the template type:<br>\- Alert<br>\- Authentication<br>\- Transaction processing system |
 | Description | Template description                                                                                            |
 | Template      | Write the template, including the variable between #                                                                  |
+
+<!-- CP-STEPS-END:add-template-cp -->
 
 #### 2.2 Via APIs
 

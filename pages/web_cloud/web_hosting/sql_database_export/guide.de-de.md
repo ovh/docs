@@ -55,6 +55,7 @@ Folgen Sie dieser Anleitung nun entsprechend der von Ihnen ausgewählten Backup-
 
 ### Backup mit dem OVHcloud Backup-Tool exportieren
 
+<!-- CP-STEPS-START:retrieve-backup-ovhcloud-tool -->
 Klicken Sie auf die Tabs, um die **3** Schritte anzuzeigen.
 
 > [!tabs]
@@ -77,9 +78,11 @@ Klicken Sie auf die Tabs, um die **3** Schritte anzuzeigen.
 >> ![Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/tab.png){.thumbnail}
 >>
 >> Die angezeigte Tabelle enthält alle Datenbanken, die im Rahmen Ihres Webhosting Angebots erstellt wurden. Sie können nun wählen, ob Sie ein neues Backup erstellen oder ein bereits existierendes Backup exportieren möchten.
+<!-- CP-STEPS-END:retrieve-backup-ovhcloud-tool -->
 
 #### 1 - Neues Backup der Datenbank durchführen
 
+<!-- CP-STEPS-START:create-new-backup -->
 Um ein neues Backup zu erstellen, klicken Sie auf die Tabs, um die **4** Schritte anzuzeigen.
 
 > [!tabs]
@@ -104,9 +107,11 @@ Um ein neues Backup zu erstellen, klicken Sie auf die Tabs, um die **4** Schritt
 >> ![databaseDump](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/create-a-database-backup-step-1.png){.thumbnail}
 >>
 >> Warten Sie, bis die Sicherung abgeschlossen ist. Sobald diese verfügbar ist, können Sie sie abrufen.
+<!-- CP-STEPS-END:create-new-backup -->
 
 #### 2 - Datenbank-Backup exportieren
 
+<!-- CP-STEPS-START:retrieve-existing-backup -->
 Um ein bestehendes Backup abzurufen, klicken Sie auf die Tabs, um die **4** Schritte anzuzeigen.
 
 > [!tabs]
@@ -131,9 +136,11 @@ Um ein bestehendes Backup abzurufen, klicken Sie auf die Tabs, um die **4** Schr
 >> Um ein Backup herunterzuladen klicken Sie auf den Button `...`{.action} rechts von dem Backup, das Sie wiederherstellen möchten, und dann auf `Backup herunterladen`{.action}. Akzeptieren und warten, bis die Sicherung heruntergeladen wurde.
 >>
 >> ![databaseDump](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/download-the-backup.png){.thumbnail}
+<!-- CP-STEPS-END:retrieve-existing-backup -->
 
 ### Backup über das phpMyAdmin-Webinterface exportieren
 
+<!-- CP-STEPS-START:retrieve-backup-phpmyadmin -->
 Loggen Sie sich hierzu auf *phpMyAdmin* ein. Klicken Sie dazu auf die Tabs, um die **3** Schritte anzuzeigen.
 
 > [!tabs]
@@ -150,6 +157,7 @@ Loggen Sie sich hierzu auf *phpMyAdmin* ein. Klicken Sie dazu auf die Tabs, um d
 >> Klicken Sie auf den Button `...`{.action} rechts neben der betreffenden Datenbank und dann auf `Zugang zu phpMyAdmin`{.action}.
 >>
 >> ![databaseDump](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/go-to-phpmyadmin.png){.thumbnail}
+<!-- CP-STEPS-END:retrieve-backup-phpmyadmin -->
 
 Geben Sie im Login-Interface von *phpMyAdmin* die Informationen zu Ihrer Datenbank ein, um sich einzuloggen. Gehen Sie nach dem Login auf den Tab `Exportieren`{.action} und wählen Sie eine Exportmethode aus:
 

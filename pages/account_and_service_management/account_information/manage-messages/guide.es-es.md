@@ -27,12 +27,15 @@ Al crear su cuenta de OVHcloud, especificó una dirección de correo electrónic
 
 ### Mis mensajes
 
+<!-- CP-STEPS-START:my-messages -->
 Desde la pestaña `Mis mensajes`{.action}, puede ver todos los mensajes que se han enviado a su dirección de correo electrónico de contacto. En la parte superior derecha de la tabla, puede activar un filtro para ordenar sus mensajes por prioridad, fecha y categoría.
 
 ![my messages](images/messages-01.png){.thumbnail .w-600}
+<!-- CP-STEPS-END:my-messages -->
 
 ### Contactos
 
+<!-- CP-STEPS-START:contacts -->
 Desde la pestaña `Contactos`{.action}, encontrará la dirección de correo electrónico de referencia de la cuenta de OVHcloud, que no se puede eliminar ni modificar desde el espacio cliente.
 
 > [!primary]
@@ -49,9 +52,11 @@ Además de su contacto `por defecto`, puede añadir nuevas direcciones de correo
     - `Eliminar`{.action}: Permite eliminar este contacto.
 
 ![my messages](images/contacts-01.png){.thumbnail .w-600}
+<!-- CP-STEPS-END:contacts -->
 
 ### Parámetros de envío
 
+<!-- CP-STEPS-START:delivery-settings -->
 Desde la pestaña `Parámetros de envío`{.action}, puede crear reglas para organizar la distribución de los mensajes a sus direcciones de correo electrónico de contacto.
 
 - **(1)**: Haga clic en el botón `Crear una regla`{.action} para definir qué contactos recibirán las comunicaciones, según las categorías y los niveles de prioridad que seleccione.
@@ -74,6 +79,7 @@ También puede crear una regla que incluya varias condiciones que se aplicarán 
 Por defecto, si se aplica una condición, el proceso se detiene. Si desea que el proceso siga aplicando las condiciones siguientes, active el botón `Y continuar el tratamiento de reglas `{.action} **(2)** debajo de la regla que ha configurado.
 
 ![my messages](images/rules-02.png){.thumbnail .w-600}
+<!-- CP-STEPS-END:delivery-settings -->
 
 ## Más información
 

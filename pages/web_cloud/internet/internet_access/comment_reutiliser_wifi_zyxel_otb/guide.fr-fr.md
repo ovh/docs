@@ -35,13 +35,16 @@ Dans ce guide, vous verrez comment tirer parti de l'interface du modem Zyxel pou
 
 ## En pratique
 
+<!-- CP-STEPS-START:callout-en-pratique-echange-modem -->
 > [!primary]
 >
-> Ce guide ne concerne que les modems de marque Zyxel. Si vous possédez un modem Thomson ou Technicolor, vous pouvez demander un échange de confort facturé 70 € HT (84 € TTC). Pour cela, depuis votre [espace client OVHcloud](/links/control-panel/telecom-xdsl-fttx) partie « Télécom », cliquez sur `Accès Internet`{.action}, puis sélectionnez le pack et l’accès à Internet concerné. Assurez-vous d'être positionné sur l'onglet `Mon Accès`{.action}. En bas de la page à gauche, cliquez sur le bouton `Échanger mon modem`{.action}.
+> Ce guide ne concerne que les modems de marque Zyxel. Si vous possédez un modem Thomson ou Technicolor, vous pouvez demander un échange de confort facturé 70 € HT (84 € TTC). Pour cela, depuis votre [espace client OVHcloud](/links/control-panel/telecom-xdsl-fttx) partie « Télécom », cliquez sur `Accès Internet`{.action}, puis sélectionnez le pack et l’accès à Internet concerné. Assurez-vous d’être positionné sur l’onglet `Mon Accès`{.action}. En bas de la page à gauche, cliquez sur le bouton `Échanger mon modem`{.action}.
 >
+<!-- CP-STEPS-END:callout-en-pratique-echange-modem -->
 
 ### Étape 1 : désactiver la configuration à distance <a name="desactiver-configuration-distance"></a>
 
+<!-- CP-STEPS-START:etape-1-desactiver-configuration-distance -->
 Depuis votre [espace client OVHcloud](/links/control-panel/telecom-xdsl-fttx), cliquez sur votre accès à Internet FTTH ou xDSL dans le cadre `Accès Internet` à droite, puis positionnez-vous sur l'onglet `Mon modem`{.action}.
 
 Dans le cadre « Configuration à distance », vérifiez que la case à côté de `Configuration à distance activée` est bien décochée. Dès lors, deux possibilités :
@@ -51,6 +54,7 @@ Dans le cadre « Configuration à distance », vérifiez que la case à côté d
 - **la configuration à distance est activée** : vous devez désactiver la configuration à distance si vous souhaitez paramétrer votre modem Zyxel localement. Pour ce faire, décochez la case à côté de `Configuration à distance activée`, confirmez la manipulation, puis patientez quelques minutes le temps de la désactivation.
 
 ![reutiliserWiFiOTB](images/reutiliserWiFiOTB-step1-2022.png){.thumbnail}
+<!-- CP-STEPS-END:etape-1-desactiver-configuration-distance -->
 
 ### Étape 2 : se connecter à l'interface locale du modem <a name="interface-locale"></a>
 
@@ -64,9 +68,11 @@ Un couple user/password vous est alors demandé :
 
 ![reutiliserWiFiOTB](images/reutiliserWiFiOTB-step2.png){.thumbnail}
 
+<!-- CP-STEPS-START:etape-2-callout-emails-service -->
 > [!primary]
 > L'ensemble des e-mails envoyés par OVHcloud sont accessibles depuis votre espace client. Pour retrouver vos derniers identifiants de connexion reçus par e-mail, connectez-vous à votre [espace client OVHcloud](/links/control-panel/account-messages) depuis un autre accès à Internet ou un smartphone. Une fois connecté, cliquez sur votre nom puis sur `E-mails de service`{.action} à droite de l'écran.
 >
+<!-- CP-STEPS-END:etape-2-callout-emails-service -->
 
 ### Étape 3 : accéder aux options de groupe d'interfaces
 
@@ -90,7 +96,9 @@ Dans la dernière partie apparaissent deux listes, `Available LAN Interfaces` et
 
 Une fois les interfaces souhaitées déplacées dans la section `Selected LAN Interfaces`, cliquez sur `OK`{.action} pour valider votre choix. Le modem va alors déplacer les interfaces dans le groupe `OverTheBox`. Un délai peut être nécessaire avant que ne s'affichent les deux groupes d'interfaces `Default` et `OverTheBox`.
 
+<!-- CP-STEPS-START:type-connexion-espace-client -->
 ![reutiliserWiFiOTB](images/reutiliserWiFiOTB-step3-3-2022.png){.thumbnail}
+<!-- CP-STEPS-END:type-connexion-espace-client -->
 
 ### Étape 4 : modifier la gestion du DHCP pour le groupe OverTheBox
 

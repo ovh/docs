@@ -1,6 +1,6 @@
 ---
-title: Gestion du RAID matériel
-excerpt: Apprenez à vérifier l'état de votre RAID matériel et de vos disques durs
+title: "Gérer le RAID matériel sur un serveur dédié"
+excerpt: "Vérifiez l'état de votre contrôleur RAID matériel et surveillez la santé des disques durs sur votre serveur dédié OVHcloud"
 updated: 2025-03-19
 ---
 

@@ -99,6 +99,7 @@ In the “sftp.json” file, enter the values for the following entries:
 
 #### name
 
+<!-- CP-STEPS-START:find-hosting-name -->
 To find the name of your web hosting plan, click on the tabs below to view each of the **2** steps.
 
 > [!tabs]
@@ -113,6 +114,7 @@ To find the name of your web hosting plan, click on the tabs below to view each 
 >> Locate it at the two locations highlighted in orange.
 >>
 >> ![hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/hosting_name.png){.thumbnail}
+<!-- CP-STEPS-END:find-hosting-name -->
 
 > [!primary]
 >
@@ -120,6 +122,7 @@ To find the name of your web hosting plan, click on the tabs below to view each 
 
 #### host
 
+<!-- CP-STEPS-START:find-ftp-host -->
 To find the host name (`host`), click on the tabs below to view each of the **2** steps.
 
 > [!tabs]
@@ -134,9 +137,11 @@ To find the host name (`host`), click on the tabs below to view each of the **2*
 >> In the `FTP - SSH`{.action} tab, the host name is visible under the mention `FTP and SFTP server`.
 >>
 >> ![hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/hostname.png){.thumbnail}
+<!-- CP-STEPS-END:find-ftp-host -->
 
 #### username
 
+<!-- CP-STEPS-START:find-ftp-username -->
 To find the username, click on the tabs below to view each of the **2** steps.
 
 > [!tabs]
@@ -149,9 +154,11 @@ To find the username, click on the tabs below to view each of the **2** steps.
 > **Step 2**
 >>
 >> In the `FTP - SSH`{.action} tab, locate the username in the `Login` column of the table.
+<!-- CP-STEPS-END:find-ftp-username -->
 
 #### remotePath
 
+<!-- CP-STEPS-START:find-ftp-remote-path -->
 To find the remote path (`remotePath`), click on the tabs below to view each of the **2** steps.
 
 > [!tabs]
@@ -166,6 +173,7 @@ To find the remote path (`remotePath`), click on the tabs below to view each of 
 >> In the `FTP - SSH`{.action} tab, locate the path under the mention `Home directory path`. If multiple users are configured, the specified path may be different. In this case, replace the username mentioned after `home/` with the one of your choice in the `Login` column of the table.
 >>
 >> **Example**: If your username is “john-smith” you will get `home/john-smith`.
+<!-- CP-STEPS-END:find-ftp-remote-path -->
 
 Finally, remember to add this line in the file “sftp.json”: `"openSsh": true`.
 

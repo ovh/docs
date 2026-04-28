@@ -1,7 +1,7 @@
 ---
-title: 'Activating Windows Machines using Hyper-V on an OVHcloud licensed Windows Server'
-excerpt: 'Find out how to create and activate a VM using Hyper-V on a Windows Server licensed by OVHcloud'
-updated: 2022-01-06
+title: "Activate Windows VMs with Hyper-V on a Dedicated Server"
+excerpt: "Create and activate Windows virtual machines using Hyper-V on an OVHcloud-licensed Windows Server dedicated server."
+updated: 2024-10-30
 ---
 
 ## Objective
@@ -24,11 +24,13 @@ updated: 2022-01-06
 
 This tutorial assumes that you have already installed the Hyper-V role and have access to the Hyper-V Manager. If you have not done this, you can refer to Microsoft's guide to installing the Hyper-V role [here](https://docs.microsoft.com/en-us/windows-server/virtualization/hyper-v/get-started/install-the-hyper-v-role-on-windows-server).
 
+The steps below are for standard activation only. If you have a Windows Datacenter licence, we recommend proceeding with [Automatic Virtual Machine Activation (AVMA)](https://learn.microsoft.com/en-us/windows-server/get-started/automatic-vm-activation?tabs=server2019#system-requirements).
+
 ### Creating a NAT Network
 
 First of all, Windows Server will request the activation of the guest OS through NAT (unless you had a SPLA license to be attached with a specific KMS). Open up a PowerShell session as an administrator. We will create it with the following command:
 
-```sh
+```powershell
 PS C:\Windows\system32> New-VMSwitch -SwitchName "NAT" -SwitchType Internal
 Name SwitchType NetAdapterInterfaceDescription
 ---- ---------- ------------------------------
@@ -37,7 +39,7 @@ NAT Internal
 
 After that, confirm the adaptor has been successfully created with:
 
-```sh
+```powershell
 PS C:\Windows\system32> Get-VMSwitch
 
 Name SwitchType NetAdapterInterfaceDescription
@@ -50,7 +52,7 @@ NAT Internal
 We see that the "NAT" Virtual Switch has been created successfully. Once it's been created, we will need to confirm the InterfaceIndex
 or "interface ID" for the following step like this:
 
-```sh
+```powershell
 PS C:\Windows\system32> Get-NetAdapter
 Name                     InterfaceDescription                  ifIndex Status
 MacAddress             LinkSpeed
@@ -72,7 +74,7 @@ In our case, we see our "NAT" adapter ID is 24.
 
 Next, Let's create a NAT network that will allow our VM to connect to the internet; we will be able to see the information of it once it's been executed:
 
-```sh
+```powershell
 PS C:\Windows\system32> New-NetIPAddress -IPAddress 192.168.0.1 -PrefixLength 24 -InterfaceIndex 24
 IPAddress : 192.168.0.1
 InterfaceIndex : 24
@@ -112,7 +114,7 @@ virtual switch created on the step before (in our case, its ID is 24).
 
 Lastly, let's create the network that will be used by our WinNAT service to reach the internet with the following command:
 
-```sh
+```powershell
 PS C:\Windows\system32> New-NetNat -Name MyNATnetwork -InternalIPInterfaceAddressPrefix 192.168.0.0/24
 Name : MyNATnetwork
 ExternalIPInterfaceAddressPrefix :
@@ -146,7 +148,7 @@ At this point, the network will be correctly set for this validation. Create a n
 Since the .ISO used has enabled the "Evaluation mode", we need to transfer this guest OS to the Standard version. Launch the following
 command on your CMD:
 
-```sh
+```powershell
 C:\Users\Administrator> DISM.exe /Online /Set-Edition:ServerStandard /ProductKey:N69G4-B89J2-4G8F4-WWYCCJ464C /AcceptEula
 ```
 
@@ -159,18 +161,22 @@ Reboot your VM, then do the following to set the KMS server and activate Windows
 
 Setting the KMS server
 
-```sh
+```powershell
 cscript.exe c:\windows\system32\slmgr.vbs -skms kms.ovh.net 
 ```
 
 Activating Windows
 
-```sh
+```powershell
 cscript.exe c:\windows\system32\slmgr.vbs -ato
 ```
 
 Your VM should now be activated.
 
 ## Go further
+
+[Changing a Windows Server Product Key (Dedicated)](/pages/bare_metal_cloud/dedicated_servers/windows_key)
+
+[Changing the admin password on a Windows Dedicated Server](/pages/bare_metal_cloud/dedicated_servers/changing-admin-password-on-windows)
 
 Join our [community of users](/links/community).

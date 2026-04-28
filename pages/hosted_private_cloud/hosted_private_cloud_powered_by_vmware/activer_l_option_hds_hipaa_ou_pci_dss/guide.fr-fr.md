@@ -12,16 +12,24 @@ Pour rendre votre infrastructure Private Cloud conforme à [l'hébergement des d
 
 ## Prérequis
 
-* Être connecté à votre [espace client OVHcloud](/links/manager).
 * Posséder une [infrastructure Private Cloud](https://www.ovh.com/fr/public-cloud/instances/) sur votre compte OVHcloud. Version 6.0 ou supérieure.
+
+<!-- CP-NAV-START:privatecloud-vmware-vsphere -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [VMware vSphere](/links/control-panel/privatecloud-vmware-vsphere)
+- **Pour accéder à vos services :** `Hosted Private Cloud`{.action} > `Managed VMware vSphere`{.action} > Sélectionnez votre service vSphere
+
+---
+<!-- CP-NAV-END:privatecloud-vmware-vsphere -->
 
 ## En pratique
 
 ### Activation
 
-Pour adapter votre Private Cloud à cette certification, l'une des options de sécurité correspondantes doit être activée. Pour le vérifier, connectez-vous à votre [espace client OVHcloud](/links/manager) et dirigez-vous dans la section `Serveur`. Cliquez sur `Private Cloud`{.action} et sélectionnez le service concerné.
-
-Dans la fenêtre qui s'affiche, vérifiez que vous vous trouvez dans l'onglet `Informations générales`{.action}. Vérifiez ensuite l'état d'activation des options de sécurité dans la section « Options et conformité ».
+Pour adapter votre Private Cloud à cette certification, l'une des options de sécurité correspondantes doit être activée. Pour le vérifier, assurez-vous d'être dans l'onglet `Informations générales`{.action}. Vérifiez ensuite l'état d'activation des options de sécurité dans la section « Options et conformité ».
 
 ![hdspcidsscompliance](images/compliancesddc01.png){.thumbnail}
 

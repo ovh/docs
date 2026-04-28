@@ -1,6 +1,6 @@
 ---
-title: Austauschen eines SSH-Schlüsselpaars
-excerpt: Erfahren Sie hier, wie Sie Zugriff auf Ihren Server mit einem neuen SSH-Schlüsselpaar wiederherstellen, falls der private Schlüssel verloren ist
+title: "Verlorenen SSH-Schlüssel auf einem Dedicated Server ersetzen"
+excerpt: "Stellen Sie den SSH-Zugriff auf Ihren Dedicated Server wieder her, indem Sie ein neues Schlüsselpaar im Rescue-Modus erstellen und bereitstellen."
 updated: 2024-04-04
 ---
 

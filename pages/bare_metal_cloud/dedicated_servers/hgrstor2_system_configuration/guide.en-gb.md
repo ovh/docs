@@ -1,6 +1,6 @@
 ---
-title: Configuring the storage on a HGR-STOR-2 server
-excerpt: Setting up and configuring the multipath as part of using an HGR-STOR-2 server
+title: "Configure Storage on a HGR-STOR-2 Dedicated Server"
+excerpt: "Setting up and configuring the multipath as part of using an HGR-STOR-2 server"
 updated: 2022-08-25
 ---
 
@@ -732,5 +732,9 @@ Number Friendly Name            Serial Number            HealthStatus         Op
 ```  
 
 ## Go further
+
+[How to use the backup storage on a Dedicated Server](/pages/bare_metal_cloud/dedicated_servers/services_backup_storage)
+
+[Customising Dedicated Server Partitions via OVHcloud API](/pages/bare_metal_cloud/dedicated_servers/partitioning_ovh)
 
 Join our [community of users](/links/community).

@@ -1,6 +1,6 @@
 ---
-title: Configurer le pare-feu sous Linux avec Iptables
-excerpt: Découvrez comment sécuriser un serveur avec Iptables
+title: "Configurer iptables sur un serveur dédié Linux"
+excerpt: "Sécurisez votre serveur dédié en configurant des règles de pare-feu iptables pour filtrer le trafic réseau sous Linux"
 updated: 2024-12-20
 ---
 
@@ -235,5 +235,9 @@ Vous pouvez dorénavant configurer des règles de pare-feu Iptables de base pour
 N'hésitez pas à expérimenter car vous pouvez toujours supprimer les règles dont vous n'avez pas besoin, ou vider toutes les règles et recommencer.
 
 ## Aller plus loin
+
+[Activer et configurer le Edge Network Firewall](/pages/bare_metal_cloud/dedicated_servers/firewall_network)
+
+[Monitoring des attaques DDoS avec le Network Security Dashboard](/pages/bare_metal_cloud/dedicated_servers/network_security_dashboard)
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).

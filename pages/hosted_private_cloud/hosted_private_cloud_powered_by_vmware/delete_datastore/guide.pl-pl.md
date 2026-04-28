@@ -1,7 +1,7 @@
 ---
 title: 'Usuwanie przestrzeni datastore'
 excerpt: 'Dowiedz się, jak usunąć przestrzeń datastore z Twojej infrastruktury Private Cloud'
-updated: 2020-07-01
+updated: 2026-04-07
 ---
 
 ## Wprowadzenie
@@ -20,7 +20,13 @@ W niektórych przypadkach może zaistnieć potrzeba usunięcia datastore z Twoje
 > [!warning]
 >
 > Ze względów bezpieczeństwa żądanie usunięcia datastora nie zostanie zrealizowane, jeśli na wybranej przestrzeni dyskowej znajdują się Twoje wirtualne maszyny (ich lista znajduje się w oknie potwierdzenia usunięcia datastore).
-> 
+>
+> Sprawdź również, czy nie pozostał żaden:
+>
+> - plik ISO lub snapshot podłączony do VM;
+> - template obecny w datastore;
+> - plik lub katalog rezydualny;
+> - plik vCLS.
 
 Aby usunąć datastore, najpierw kliknij prawym przyciskiem myszy na wybrany zasób. Wybierz `OVHcloud`{.action}, następnie `Remove storage`{.action}.
 

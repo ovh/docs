@@ -38,7 +38,9 @@ Diese Anleitung beschreibt die Verlängerung ausführlich: [Verlängerung Ihrer 
 
 ### Wie kann ich die automatische Verlängerung aktivieren?
 
+<!-- CP-STEPS-START:enable-automatic-renewal -->
 Auf der Seite [Meine Angebote und Dienste](/links/control-panel/billing-services) wählen Sie den betreffenden Dienst aus, klicken Sie auf die drei Punkte und wählen Sie `Automatische Zahlung aktivieren`{.action} aus. Standardmäßig wird die automatische Verlängerung bei der Bestellung des Dienstes aktiviert.
+<!-- CP-STEPS-END:enable-automatic-renewal -->
 
 #### Tipps und Tricks
 
@@ -47,9 +49,11 @@ Wenn Sie detaillierte Erläuterungen wünschen, empfehlen wir Ihnen dazu die fol
 
 ### Wie kann ich die automatische Verlängerung deaktivieren?
 
+<!-- CP-STEPS-START:disable-automatic-renewal -->
 Auf der Seite [Meine Angebote und Dienste](/links/control-panel/billing-services) wählen Sie den betreffenden Dienst aus, klicken Sie auf die drei Punkte in der letzten Tabellenspalte und wählen Sie `Konfigurieren der Verlängerung`{.action} aus. Sie können nun den manuellen Modus auswählen. Dieser Modus steht nur für bestimmte Dienstleistungen zur Verfügung, wie Domainnamen, Webhosting, VPS und Dedicated Server.
 
 Um einen Dienst zu kündigen, informieren Sie sich bitte hier [Wie kann ich einen Dienst kündigen?](#cancelservice)
+<!-- CP-STEPS-END:disable-automatic-renewal -->
 
 #### Tipps und Tricks
 
@@ -58,7 +62,9 @@ Wenn Sie detaillierte Erläuterungen wünschen, empfehlen wir Ihnen dazu die fol
 
 ### Wie kann ich ein Zahlungsmittel hinzufügen?
 
+<!-- CP-STEPS-START:add-payment-method -->
 Auf der Seite [Zahlungsarten](/links/control-panel/billing-payment-methods) klicken Sie auf `Zahlungsart hinzufügen`{.action}.
+<!-- CP-STEPS-END:add-payment-method -->
 
 ### Wie kann ich mein Zahlungsmittel aktualisieren?
 
@@ -74,7 +80,9 @@ Damit Ihre Dienste reibungslos verlängert werden können, sollte im Kundencente
 
 ### Wie kann ich ein Zahlungsmittel löschen?
 
+<!-- CP-STEPS-START:delete-payment-method -->
 Auf der Seite [Zahlungsarten](/links/control-panel/billing-payment-methods) wählen Sie das Zahlungsmittel aus, das Sie löschen möchten, und klicken Sie auf das Papierkorb-Symbol.
+<!-- CP-STEPS-END:delete-payment-method -->
 
 #### Tipps und Tricks
 
@@ -92,7 +100,8 @@ Wenn Ihr OVHcloud Prepaid Account ein Guthaben aufweist, wird er standardmäßig
 
 ### Wann erfolgt meine nächste Abbuchung?
 
-Die Daten aller Verlängerungen finden Sie unter „Meine Angebote und Dienste“, direkt zugänglich auf dem Dashboard in Ihrem OVHcloud Kundencenter.
+<!-- CP-STEPS-START:next-payment-due-date -->
+Die Daten aller Verlängerungen finden Sie unter „Meine Angebote und Dienste”, direkt zugänglich auf dem Dashboard in Ihrem OVHcloud Kundencenter.
 
 Bei Diensten mit automatischer Verlängerung wird der Rechnungsbetrag am Ersten des Monats abgebucht. Die Abbuchungen können jedoch entsprechend Ihren Dienstleistungen unterschiedlich häufig erfolgen.
 
@@ -100,6 +109,7 @@ Bei Diensten mit automatischer Verlängerung wird der Rechnungsbetrag am Ersten 
 
 Auf der Seite [Meine Angebote und Dienste](/links/control-panel/billing-services) können Sie die Häufigkeit der Verlängerung Ihrer Lösungen ändern.
 Wenn Sie detaillierte Erläuterungen wünschen, empfehlen wir Ihnen dazu die folgende Anleitung: [Verlängerung meiner Dienste verwalten](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal)
+<!-- CP-STEPS-END:next-payment-due-date -->
 
 ### Welches meiner Zahlungsmittel wird belastet?
 
@@ -140,13 +150,17 @@ Auf der Seite [Zahlungsarten](/links/control-panel/billing-payment-methods) kön
 
 ### Wie kann ich meine Zahlungen nachverfolgen?
 
+<!-- CP-STEPS-START:payments-correspondence -->
 Die Zahlungen, die Sie über unsere Seite vornehmen, sowie automatische Abrechnungen werden in Ihrem Kundencenter gespeichert. Im Bereich `Zahlungsverfolgung`{.action} finden Sie Ihre Rechnungen, Daten und die zugehörigen Rechnungsbeträge.
+<!-- CP-STEPS-END:payments-correspondence -->
 
 ### Wie kann ich einen Dienst kündigen? <a name="cancelservice"></a>
 
+<!-- CP-STEPS-START:cancel-service -->
 Für Lösungen wie Domainnamen, Webhostings, Dedicated Server und VPS öffnen Sie die Seite [Meine Angebote und Dienste](/links/control-panel/billing-services). Wählen Sie den betreffenden Dienst aus, klicken Sie auf die drei Punkte ganz rechts daneben und dann auf `Meinen Dienst kündigen`{.action}. Sollten Sie den Dienst bereits gekündigt haben, wird Ihnen die Option `Kündigung der Dienstes stornieren`{.action} angeboten.
 
 Die Kündigung wird mit dem Ablauf der Geltungsdauer oder der Vertragslaufzeit des Dienstes wirksam. Sie können Ihren Dienst bis 24 Stunden vor Ablauf kündigen oder aber die Kündigung stornieren.
+<!-- CP-STEPS-END:cancel-service -->
 
 #### Gut zu wissen:
 
@@ -155,8 +169,10 @@ Die vollständige Dokumentation zur Kündigung aller unserer Meine Angebote und 
 
 ### Wie kann ich die Produkt- oder Servicereferenz auf meiner Rechnung bearbeiten?
 
+<!-- CP-STEPS-START:customize-product-reference-bill -->
 Um die Lesbarkeit zu verbessern werden die Namen, die Sie Ihren Produkten und/oder Dienstleistungen geben, direkt auf Ihrer Rechnung aufgeführt - zusätzlich zur Referenz von OVHcloud.
 Die Namen Ihrer Produkte und/oder Dienstleistungen (mit Ausnahme des Produkts `Domainname`{.action}) können Sie in Ihrem Kundencenter anpassen. Gehen Sie dazu auf die Konfigurationsseite des jeweiligen Produkts oder der Dienstleistung.
+<!-- CP-STEPS-END:customize-product-reference-bill -->
 
 ### Wie funktioniert die Abrechnung der Public Cloud?
 
@@ -168,11 +184,13 @@ Lesen Sie dazu die folgende Anleitung: [Informationen zur Cloud-Abrechnung](/pag
 
 ### Wo kann ich einen Gesamtüberblick über meine Rechnungen erhalten?
 
+<!-- CP-STEPS-START:see-accounts-ledger -->
 Das gesamte Rechnungsbuch wird ausschließlich von der Buchhaltung des Antragstellers bereitgestellt.
 
 OVHcloud stellt Ihnen dennoch eine Exceldatei (.csv) zur Verfügung, in der Ihnen alle Ihre Rechnungen aufgelistet werden.
 
 Um die Datei herunterzuladen, öffnen Sie die Seite [Meine Rechnungen](/links/control-panel/billing-invoices). Klicken Sie auf `Aktionen`{.action} und wählen Sie dann `als CSV exportieren`{.action} aus.
+<!-- CP-STEPS-END:see-accounts-ledger -->
 
 ## Weiterführende Informationen
  

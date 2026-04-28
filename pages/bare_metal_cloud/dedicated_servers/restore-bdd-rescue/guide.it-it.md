@@ -1,6 +1,6 @@
 ---
-title: "Recupero dei database in modalità Rescue"
-excerpt: "Scopri come accedere ai tuoi database e registrarli in modalità Rescue"
+title: "Recuperare database in modalità rescue su un server dedicato"
+excerpt: "Accedi ai tuoi database ed esportali da un server dedicato in modalità rescue per recuperare i dati dopo un incidente."
 updated: 2023-04-13
 ---
 
@@ -271,4 +271,4 @@ root@rescue:/# scp -P SSH_Port_Number dump.sql user@IP_address:/home/backup
 
 ## Per saperne di più
 
-Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.
+Contatta la nostra [Community di utenti](/links/community).

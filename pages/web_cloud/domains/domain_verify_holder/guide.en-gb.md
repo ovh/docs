@@ -53,6 +53,7 @@ When clicking on `Confirm your email address`{.action}, a new page will open wit
 
 ### 2 - Correct or complete the contact details of the domain name holder as an administrator
 
+<!-- CP-STEPS-START:fix-contact-info -->
 Click on the tabs below to view each of the **4** steps.
 
 > [!tabs]
@@ -89,6 +90,7 @@ Click on the tabs below to view each of the **4** steps.
 >> ![Owner information](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/owner.png){.thumbnail}
 >>
 >> Find more details on changing the holder in our guide: "[Domain name - How do I change the owner](/pages/web_cloud/domains/trade_domain)".
+<!-- CP-STEPS-END:fix-contact-info -->
 
 ### 3 - What to do if the holder contact's email address is no longer accessible?
 
@@ -130,6 +132,7 @@ For certain extensions ( e.g.: .fr, .it, .es), the domain administrator can go d
 > If the corrections in the first part of this guide required the initialization of a change of holder for the domain name, complete the change of holder **before** continuing with the actions described in this guide.
 >
 
+<!-- CP-STEPS-START:relaunch-verification -->
 Click on the tabs below to view each of the **4** steps.
 
 > [!tabs]
@@ -158,6 +161,7 @@ Click on the tabs below to view each of the **4** steps.
 >> If the operation has completed successfully, the row for the processed operation no longer appears.
 >>
 >> If this is not the case, a correction is necessary in the domain name holder's contact details. In this case, please follow this guide from the beginning to resolve the issue.
+<!-- CP-STEPS-END:relaunch-verification -->
 
 ## Go further
 

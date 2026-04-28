@@ -38,6 +38,7 @@ The log records the date, time, sender, recipient and contents of the sent SMS.
 
 ### Step 1: Viewing the log in your Control Panel
 
+<!-- CP-STEPS-START:view-sms-log -->
 In the tab bar, click `Message and campaign`{.action} then `SMS Management`{.action} to access your unit SMS history or `Campaign Management`{.action} to access your SMS campaign history.
 
 Then click on `Sending log`{.action} or `Statistics and history`{.action}.
@@ -59,12 +60,15 @@ To delete several SMS messages at once, tick the boxes next to each message. The
 The `Filter`{.action} button allows you to filter your search by sender (if you have several senders) or by recipient.
 
 ![sms-history](images/smshistory5.png){.thumbnail}
+<!-- CP-STEPS-END:view-sms-log -->
  
 ### Step 2: Downloading the sending log as a CSV <a name="csv"></a> 
 
+<!-- CP-STEPS-START:download-sms-csv -->
 Click on the `Actions`{.action} button above your log then on `Download`{.action} to download your SMS log in a .csv format. 
  
 ![sms-history](images/smshistory6.png){.thumbnail}
+<!-- CP-STEPS-END:download-sms-csv -->
  
 You can then view the log using a spreadsheet program. The information will be able to be displayed such as in the example below.
 

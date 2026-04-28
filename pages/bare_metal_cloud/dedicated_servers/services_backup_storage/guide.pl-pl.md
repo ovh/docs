@@ -1,6 +1,6 @@
 ---
-title: 'Korzystanie z Backup Storage na serwerze dedykowanym'
-excerpt: 'Dowiedz się, jak aktywować i uzyskać dostęp do dodatkowej przestrzeni dyskowej'
+title: "Serwer dedykowany - Korzystanie z Backup Storage"
+excerpt: "Uzyskaj dostęp do przestrzeni Backup Storage na serwerze dedykowanym OVHcloud i zarządzaj nią przez NFS, CIFS lub FTP."
 updated: 2026-03-25
 ---
 
@@ -43,11 +43,11 @@ Serwery dedykowane OVHcloud dysponują dodatkową przestrzenią do przechowywani
 
 W zakładce `Backup Storage`{.action} kliknij przycisk `Aktywuj Backup Storage`{.action}.
 
-![Włącz Backup Storage](images/backup-storage01.png){.thumbnail}
+![Przycisk aktywacji Backup Storage w zakładce Backup storage](images/backup-storage01.png){.thumbnail}
 
 Kliknij `Zatwierdź`{.action} w menu, które się wyświetli.
 
-![Włącz Backup Storage](images/backup-storage02.png){.thumbnail}
+![Potwierdzenie aktywacji Backup Storage w oknie dialogowym](images/backup-storage02.png){.thumbnail}
 
 Backup Storage zostanie skonfigurowany w ciągu kilku minut. Po zakończeniu konfiguracji otrzymasz e-mail z potwierdzeniem.
 
@@ -396,4 +396,6 @@ Poniższy przykład kodu zawiera zmienne, które należy zastąpić odpowiednimi
 
 ## Sprawdź również
 
+- [Jak wykonać kopię zapasową bazy danych na serwerze dedykowanym](/pages/bare_metal_cloud/dedicated_servers/save_datas_database_on_storage_ds)
+- [Configuring the storage on a HGR-STOR-2 server (EN)](/pages/bare_metal_cloud/dedicated_servers/hgrstor2_system_configuration)
 Dołącz do [grona naszych użytkowników](/links/community).

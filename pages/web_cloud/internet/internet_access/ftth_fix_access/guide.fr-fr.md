@@ -261,7 +261,9 @@ Il se peut qu'un élément basique de votre ordinateur (comme la configuration d
 
 - vérifiez que la date et l'heure sont à jour sur votre ordinateur. Si ce n'est pas le cas, l'accès à certains sites bénéficiant d'un certificat SSL pourrait ne plus fonctionner ;
 
+<!-- CP-STEPS-START:ftth-fix-ipv6-access -->
 - si vous avez activé le protocole **IPv6** sur votre accès Internet OVHcloud, assurez-vous que le ou les sites qui ne fonctionnent pas sont bien accessibles via ce protocole. Si ce n'est pas le cas, désactiver l'IPv6 pourrait rétablir l'accès à ces pages. Cette gestion s'effectue dans l'espace client, en cliquant sur l'onglet `Mon accès`{.action} de l'accès à Internet concerné, puis sur la section « Caractéristiques ».
+<!-- CP-STEPS-END:ftth-fix-ipv6-access -->
 
 Si votre connexion fonctionne de nouveau, c'est qu'un élément perturbe son fonctionnement. Reconfigurez, réinitialisez ou écartez cet élément afin de résoudre la panne. Si votre connexion ne fonctionne toujours pas, poursuivez la lecture de cette documentation.
 
@@ -339,6 +341,7 @@ Votre connexion Wi-Fi n'est toujours pas fonctionnelle ? Deux vérifications pe
 
 - **Modifier la clé Wi-Fi** : Votre réseau Wi-Fi étant accessible par le biais d'une clé, il est possible que celle que vous utilisez ne soit pas correcte. Il est alors conseillé de modifier la clé Wi-Fi, afin d'être sûr d'en utiliser une fonctionnelle.
 
+<!-- CP-STEPS-START:ftth-fix-wifi-config -->
 Depuis votre [espace client OVHcloud](/links/control-panel/telecom-xdsl-fttx), cliquez sur votre accès à Internet FTTH ou xDSL dans le cadre `Accès Internet` à droite, puis positionnez-vous sur l'onglet `Mon modem`{.action} et cliquez sur `Configurer les réseaux Wi-Fi`{.action} dans la section `Configuration générale`{.action}.
 
 ![diagnosticfibre](images/espaceclient2022.png){.thumbnail}
@@ -347,10 +350,11 @@ Dans la page qui apparaît, cliquez sur le bouton représentant des points de su
 
 Validez vos changements grâce au bouton `Valider`{.action} et **patientez cinq minutes, le temps que la modification soit prise en compte par votre box OVHcloud.** Si nécessaire, effectuez plusieurs tests concernant le canal Wi-Fi afin de trouver le plus stable et le mieux adapté à votre situation.
 
-![diagnosticfibre](images/wifi-2022.png){.thumbnail}
+<!-- CP-STEPS-END:ftth-fix-wifi-config -->
 
 #### 4.5 Vérifier la configuration réseau de votre box OVHcloud <a name="check-box-network"></a>
 
+<!-- CP-STEPS-START:ftth-fix-network-config -->
 Si la connexion n'est toujours pas fonctionnelle, assurez-vous que la configuration réseau actuellement en place sur votre box OVHcloud permet toujours à vos équipements personnels de communiquer entre eux.
 
 Depuis votre [espace client OVHcloud](/links/control-panel/telecom-xdsl-fttx), cliquez sur votre accès à Internet FTTH ou xDSL dans le cadre `Accès Internet` à droite, puis positionnez-vous sur l'onglet `Mon modem`{.action} et descendez dans la page jusqu'à voir la section `Configuration réseau`{.action}.
@@ -379,7 +383,7 @@ Vous avez également la possibilité de réinitialiser la configuration de votre
 
 Pour réinitialiser la configuration de votre box OVHcloud, depuis l'onglet `Mon modem`{.action}, descendez dans la page jusqu'à voir la section `Configurations avancées`{.action}, puis cliquez sur `Réinitialiser la configuration OVHcloud`{.action}. **Patientez cinq minutes le temps que la modification soit prise en compte par votre modem.**
 
-![diagnosticfibre](images/acces-internet-laptop-test-step13-2022.png){.thumbnail}
+<!-- CP-STEPS-END:ftth-fix-network-config -->
 
 #### 4.6 Vérifier la configuration de la carte réseau de votre ordinateur
 

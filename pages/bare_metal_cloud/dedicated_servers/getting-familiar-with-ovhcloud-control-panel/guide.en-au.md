@@ -1,6 +1,6 @@
 ---
-title: Kimsufi and So you Start customers - Get to know the OVHcloud Control Panel
-excerpt: Find out how to navigate the OVHcloud Control Panel
+title: "OVHcloud Control Panel for Kimsufi & So you Start Dedicated Servers"
+excerpt: "Navigate the OVHcloud Control Panel as a Kimsufi or So you Start customer to manage your dedicated server services."
 updated: 2025-04-28
 ---
 
@@ -34,9 +34,9 @@ In the OVHcloud Control Panel, click on the `Bare Metal Cloud`{.action} menu, th
 
 Once you are in the `Dedicated Servers`{.action} menu, click on the server of your choice to access its interface.
 
-![server interface](images/serverinterface01.png){.thumbnail}
+![Server general information tab](images/serverinterface01.png){.thumbnail}
 
-![server interface](images/serverinterface02.png){.thumbnail}
+![Server status and network details](images/serverinterface02.png){.thumbnail}
 
 **General information** : In this section, you will find all the information concerning your server.
 
@@ -54,7 +54,7 @@ Once you are in the `Dedicated Servers`{.action} menu, click on the server of yo
 - IPV4: Click on the `...`{.action} next to this option to manage your IP.
 - Reverse: Click on the `...`{.action} next to this section to enter/modify your reverse DNS.
 
-**Secondary DNS**: Configure your secondary DNS here. For more information, consult the following [guide](/pages/bare_metal_cloud/dedicated_servers/adding-secondary-dns-on-dedicated-server).
+**Secondary DNS**: Configure your secondary DNS here. For more information, consult the following [guide](/pages/bare_metal_cloud/dedicated_servers/adding-secondary-dns-on-dedicated-server)
 
 **Backup Storage** (Only available on OVHcloud servers and So you Start servers including those in the Eco line): Order and configure your backup storage here. For more information, consult [this guide](/pages/bare_metal_cloud/dedicated_servers/services_backup_storage).
 
@@ -94,6 +94,7 @@ In the OVHcloud Control Panel, these options are grouped into a common space. Cl
 - **My services**: in this section, you can view all of your services and contracts.
 - **Payment method**: in this section, you can access your current payment method, your prepaid account and OVHcloud vouchers. You will also find the option to add/delete a payment method. For further information on managing your payment methods, please refer to [this guide](/pages/account_and_service_management/managing_billing_payments_and_services/manage-payment-methods).
 - **My orders**: view your orders from this page. More information is available in [this guide](/pages/account_and_service_management/managing_billing_payments_and_services/managing_ovh_orders).
+- **My contacts**: in this section, you can view and manage the contacts associated with your services. In the **My requests** tab, you will find contact change requests sent from your customer account, as well as service management requests received. For more information on managing your service contacts, please refer to [this guide](/pages/account_and_service_management/account_information/managing_contacts).
 - **My support requests**: in this section, you can open/view all of your support tickets.
 
 ## Go further

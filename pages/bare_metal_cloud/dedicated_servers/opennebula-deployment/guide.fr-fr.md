@@ -1,6 +1,6 @@
 ---
-title: Comment déployer et vérifier un OpenNebula Hosted Cloud sur des serveurs Bare Metal
-excerpt: Déployez un OpenNebula Hosted Cloud certifié en utilisant des serveurs Bare Metal OVHcloud et des playbooks Ansible
+title: "Déployer OpenNebula Hosted Cloud sur des serveurs Bare Metal"
+excerpt: "Déployez un OpenNebula Hosted Cloud certifié sur des serveurs Bare Metal OVHcloud avec des playbooks Ansible"
 updated: 2025-12-09
 ---
 
@@ -275,6 +275,10 @@ Enfin, en tant qu'étape de nettoyage, supprimez le serveur virtuel en cliquant 
 - Si vous avez besoin d'informations supplémentaires sur OpenNebula, vous pouvez consulter le [site web OpenNebula](https://opennebula.io/) ou la [documentation officielle OpenNebula](https://docs.opennebula.io/).
 - Si vous avez besoin d'informations supplémentaires sur Ansible, vous pouvez consulter la [page Ansible sur le site RedHat](https://www.redhat.com/en/ansible-collaborative?) ou la [documentation officielle Ansible](https://docs.ansible.com/).
 - Le dépôt de déploiement OpenNebula utilisé et référencé dans ce guide est [Hosted Cloud OVHcloud](https://github.com/OpenNebula/hosted-cloud-ovhcloud).
+
+[Configurer une adresse IPv6 principale sur un serveur dédié](/pages/bare_metal_cloud/dedicated_servers/network_ipv6)
+
+[Configurer des Additional IP en mode bridge sur vos machines virtuelles](/pages/bare_metal_cloud/dedicated_servers/network_bridging)
 
 Si vous avez besoin de formation ou d'une assistance technique pour mettre en œuvre nos solutions, contactez votre représentant commercial ou cliquez sur [ce lien](/links/professional-services) pour obtenir un devis et demander l'assistance des experts de notre équipe Professional Services pour votre cas d'utilisation et projet spécifiques.
 

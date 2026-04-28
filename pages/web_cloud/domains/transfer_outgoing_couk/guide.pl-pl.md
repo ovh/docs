@@ -66,6 +66,7 @@ Jeśli nie znasz jeszcze wymaganego wpisu TAG, możesz złożyć wniosek u noweg
 >
 > Aby wykonać te czynności, musisz być zalogowany jako [administrator](/pages/account_and_service_management/account_information/managing_contacts).
 
+<!-- CP-STEPS-START:change-outgoing-tag -->
 W tym celu kliknij poniższe zakładki, aby wyświetlić kolejne **3** kroki.
 
 > [!tabs]
@@ -86,6 +87,7 @@ W tym celu kliknij poniższe zakładki, aby wyświetlić kolejne **3** kroki.
 >> W oknie, które się wyświetli wprowadź TAG nowego operatora, po czym kliknij `Zatwierdź`{.action}.
 >>
 >> ![transfer wychodzący](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/outgoing-transfer-tag-confirmation.png){.thumbnail}
+<!-- CP-STEPS-END:change-outgoing-tag -->
 
 Jeśli nie możesz zmienić wpisu TAG Twojej nazwy domeny w Panelu klienta, możesz zlecić jego zmianę w rejestrze Nominet. Więcej informacji znajduje się na oficjalnej [stronie internetowej Nominet](https://www.nominet.uk/domain-support/).
 

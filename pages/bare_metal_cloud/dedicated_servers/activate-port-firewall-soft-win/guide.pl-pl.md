@@ -1,6 +1,6 @@
 ---
-title: Konfiguracja firewalla w systemie Windows
-excerpt: Dowiedz się, jak skonfigurować firewall w systemie Windows
+title: "Konfiguracja zapory systemu Windows na serwerze dedykowanym"
+excerpt: "Skonfiguruj wbudowaną zaporę systemu Windows na serwerze dedykowanym, aby kontrolować przychodzący i wychodzący ruch sieciowy."
 updated: 2022-01-31
 ---
 
@@ -39,7 +39,7 @@ Aby uzyskać dostęp do firewalla Windows, możesz postępować zgodnie z tą ko
 
 Następnie kliknij pozycję Konfiguracja `zaawansowana`{.action}.
 
-![Step1](images/step1.PNG){.thumbnail}
+![Ekran zaawansowanych ustawień zapory Windows](images/step1.PNG){.thumbnail}
 
 ### Etap 2: aktywuj regułę ruchu przychodzącego
 
@@ -51,7 +51,7 @@ W wyświetlonym oknie znajdziesz parametry takie jak:
 
 Wybierając `Reguły ruchu przychodzącego`{.action}, wyświetlają się wszystkie wstępnie skonfigurowane reguły Windows Server związane z połączeniami sieciowymi i przychodzącymi pakietami. Niektóre z tych reguł nie są domyślnie aktywowane. Jeśli chcesz je włączyć, kliknij prawym przyciskiem myszy regułę i wybierz opcję `Włącz regułę`{.action}.
 
-![Step1](images/step2.PNG){.thumbnail}
+![Lista reguł przychodzących z opcją włączenia reguły](images/step2.PNG){.thumbnail}
 
 ### Etap 3: utworzyć nową regułę 
 
@@ -113,5 +113,8 @@ Kliknij przycisk `Zakończ`{.action}, aby zakończyć proces i utworzyć nową r
 Następnie możesz wprowadzić zmiany w zakresie bezpieczeństwa nowej reguły utworzonej.
 
 ## Sprawdź również
+
+- [Serwer dedykowany - Edge Network Firewall](/pages/bare_metal_cloud/dedicated_servers/firewall_network)
+- [Serwer dedykowany - Panel bezpieczeństwa sieci](/pages/bare_metal_cloud/dedicated_servers/network_security_dashboard)
 
 Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

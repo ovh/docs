@@ -155,7 +155,9 @@ If your files exceed the maximum size allowed, or if you need to share an unsupp
 
 /// details | Where can I find my support level?
 
+<!-- CP-STEPS-START:find-support-level-1 -->
 To find out the level of support associated with your NIC handle, open your [My account](/links/control-panel/account-dashboard) page. The support level appears to the right of **Support**. If you have not subscribed to a paid support service, you will receive the Standard level by default.
+<!-- CP-STEPS-END:find-support-level-1 -->
 
 Explore and compare the different support levels available [here](/links/support).
 
@@ -218,7 +220,9 @@ Explore and compare the different support levels available [here](/links/support
 
 /// details | Where can I find my support level?
 
+<!-- CP-STEPS-START:find-support-level-2 -->
 To find out the level of support associated with your account, open your [My account](/links/control-panel/account-dashboard) page. The support level appears to the right of **Support**. If you have not subscribed to a paid support service, you will receive the Standard level by default.
+<!-- CP-STEPS-END:find-support-level-2 -->
 
 Discover and compare the different support levels available [here](/links/support).
 

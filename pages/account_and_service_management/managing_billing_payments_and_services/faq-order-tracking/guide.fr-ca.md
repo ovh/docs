@@ -14,19 +14,25 @@ Vous ne pouvez régler votre commande qu’une fois identifié à l’aide de vo
 
 #### Trucs et astuces
 
+<!-- CP-STEPS-START:pay-new-order -->
 Vous avez quitté la page de votre commande ? Rendez-vous sur la page [Mes commandes](/links/control-panel/billing-orders). Vous pourrez alors visualiser votre commande et la régler.
+<!-- CP-STEPS-END:pay-new-order -->
 
 ### Comment consulter le statut de mon paiement ?
 
+<!-- CP-STEPS-START:check-payment-status -->
 Ouvrez la page [Mes factures](/links/control-panel/billing-invoices). Si une facture est en attente de paiement, il vous sera proposé d'en régler le solde.
 
 #### Trucs et astuces
 
 Sur la page [Moyens de paiement](/links/control-panel/billing-payment-methods), vous pouvez enregistrer votre moyen de paiement. Vos factures seront ainsi automatiquement régularisées.
+<!-- CP-STEPS-END:check-payment-status -->
 
 ### Comment suivre l'état de ma commande ?
 
+<!-- CP-STEPS-START:track-order-status -->
 Ouvrez la page [Mes commandes](/links/control-panel/billing-orders).
+<!-- CP-STEPS-END:track-order-status -->
 
 #### Trucs et astuces
 
@@ -51,6 +57,7 @@ En tant que professionnel, vous n'êtes pas soumis à l’article liminaire du C
 
 ### Pourquoi mon service n’a pas été livré ?
 
+<!-- CP-STEPS-START:service-not-delivered -->
 Plusieurs causes peuvent expliquer un éventuel retard de votre commande.
 Afin de garantir la protection de ses clients, OVHcloud accorde une attention particulière à la sécurité des transactions financières. À ce titre, nous avons mis en place un processus de validation aléatoire des paiements, susceptible de ralentir votre commande. Pour savoir si vous êtes concerné, vous avez la possibilité de consulter l’état de vos paiements depuis votre espace `Facturation`{.action}.
 
@@ -61,6 +68,7 @@ Une facture en attente de paiement peut également être à l’origine de cette
 #### Trucs et astuces
 
 Sur la page [Moyens de paiement](/links/control-panel/billing-payment-methods), vous pouvez enregistrer votre moyen de paiement. Vos factures seront ainsi automatiquement régularisées.
+<!-- CP-STEPS-END:service-not-delivered -->
 
 ## Aller plus loin
 

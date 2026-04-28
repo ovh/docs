@@ -49,6 +49,7 @@ Możesz w każdym momencie odnaleźć Twoje zamówienie na stronie [Moje zamówi
 
 ### Dostęp do zamówień w Panelu klienta OVHcloud
 
+<!-- CP-STEPS-START:access-purchase-orders -->
 Otwórz stronę [Moje zamówienia](/links/control-panel/billing-orders).
 
 ![Panel klienta](images/huborders.png){.thumbnail}
@@ -76,9 +77,11 @@ Możliwe statusy zamówienia:
 Możesz również wyświetlić zamówienie w formacie HTML, klikając `...`{.action} z prawej strony Twojego zamówienia, a następnie wybierając polecenie `Wyswietl zamówienie w formacie HTML`{.action}.
 
 ![Podsumowanie zamówień](images/order04.png){.thumbnail}
+<!-- CP-STEPS-END:access-purchase-orders -->
 
 ### Sprawdzanie statusu zamówienia
 
+<!-- CP-STEPS-START:track-order -->
 Po wygenerowaniu formularza zamówienia możesz śledzić zamówienie na stronie [Moje zamówienia](/links/control-panel/billing-orders):
 
 * Kliknij przycisk `...`{.action} przed Twoim zamówieniem.
@@ -89,6 +92,7 @@ Po wygenerowaniu formularza zamówienia możesz śledzić zamówienie na stronie
 Pojawi się poniższe okno umożliwiające monitorowanie w czterech krokach.
 
 ![Informacje o zamówieniu](images/order06.png){.thumbnail}
+<!-- CP-STEPS-END:track-order -->
 
 ### Korzystanie z prawa do odstąpienia od umowy
 
@@ -110,6 +114,7 @@ Opcję skorzystania z prawa do odstąpienia od umowy znajdziesz w dalszym ciągu
 
 Jeśli kryteria kwalifikujące do prawa odstąpienia od umowy są spełnione, możesz skorzystać z prawa odstąpienia od umowy bezpośrednio na stronie [Moje zamówienia](/links/control-panel/billing-orders):
 
+<!-- CP-STEPS-START:cancel-order -->
 * Kliknij przycisk `...`{.action} przed Twoim zamówieniem.
 * Wybierz opcję `Anuluj zamówienie`{.action}.
 
@@ -118,6 +123,7 @@ Jeśli kryteria kwalifikujące do prawa odstąpienia od umowy są spełnione, mo
 Zaznacz kratkę `Tak, chcę anulować to zamówienie`{.action}, po czym zatwierdź tę operację.
 
 ![Potwierdzenie anulowania zamówienia](images/cancelorder2.png){.thumbnail}
+<!-- CP-STEPS-END:cancel-order -->
 
 > [!primary]
 >

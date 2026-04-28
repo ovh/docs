@@ -1,6 +1,6 @@
 ---
-title: Managing hardware RAID (EN)
-excerpt: Find out how to verify the state of your hardware RAID and the health of your hard drives
+title: "Zarządzanie sprzętowym RAID na serwerze dedykowanym"
+excerpt: "Sprawdź stan kontrolera RAID sprzętowego i monitoruj stan dysków twardych na serwerze dedykowanym OVHcloud."
 updated: 2025-03-19
 ---
 

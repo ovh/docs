@@ -1,6 +1,6 @@
 ---
-title: "Ativar e utilizar o modo rescue"
-excerpt: "Descubra como utilizar o modo customer rescue OVHcloud para solucionar problemas com o seu servidor dedicado"
+title: "Modo rescue num servidor dedicado"
+excerpt: "Inicie o seu servidor dedicado em modo rescue OVHcloud para diagnosticar problemas, reparar sistemas de ficheiros e reinicializar palavras-passe"
 updated: 2026-01-09
 ---
 
@@ -65,7 +65,7 @@ Clique no nome do seu servidor para abrir o separador `Informações gerais`{.ac
 
 Na casa **Informações gerais**, clique no botão `...`{.action} ao lado de `Boot`. Clique em `Alterar`{.action} no menu contextual.
 
-![Alterar o modo de arranque](images/rescue-mode-001.png){.thumbnail}
+![Opção Modificar o boot no menu contextual das Informações gerais](images/rescue-mode-001.png){.thumbnail}
 
 <a name="netboot"></a>
 
@@ -73,7 +73,7 @@ Na casa **Informações gerais**, clique no botão `...`{.action} ao lado de `Bo
 
 Na página **Alterar o netboot**, selecione `Fazer boot em modo rescue`{.action}.
 
-![Alterar o modo de arranque](images/rescue-mode-002.png){.thumbnail}
+![Página Modificar o netboot com Arrancar em modo rescue selecionado](images/rescue-mode-002.png){.thumbnail}
 
 As opções disponíveis para o modo rescue dependem do tipo de servidor e do **sistema operativo* instalado.
 

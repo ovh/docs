@@ -50,7 +50,7 @@ Cette option vous permet de demander une augmentation automatique et progressive
 > Ce processus n’est pas adapté pour des augmentations rapides de quota.
 >
 
-En haut à droite de la page, l'option **Quota autoscaling** est disponible :
+En haut à droite de la page, l’option **Quota autoscaling** est disponible :
 
 - Pour en savoir plus sur cette fonctionnalité, cliquez sur le `?`{.action} à côté de cette option.
 - Activez l’option en cliquant sur le bouton situé à droite de cette dernière. Son état passera de *Désactivé* à *Activé*.

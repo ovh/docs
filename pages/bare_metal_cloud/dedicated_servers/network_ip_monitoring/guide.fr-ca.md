@@ -1,7 +1,7 @@
 ---
-title: Quelles sont les adresses IP du monitoring OVHcloud ?
-excerpt: Retrouvez ici les adresses IP a renseigner lors de la mise en place d’un firewall, afin que le monitoring OVHcloud continue de fonctionner sur votre serveur.
-updated: 2025-06-04
+title: "Adresses IP du monitoring OVHcloud pour serveurs dédiés"
+excerpt: "Retrouvez les adresses IP à autoriser dans votre firewall pour que le monitoring OVHcloud continue de fonctionner sur votre serveur"
+updated: 2026-04-13
 ---
 
 ## Objectif
@@ -37,7 +37,7 @@ Pour mettre en place un firewall restrictif, notamment sur l'ICMP, et continuer 
 |Reverse|IP|Protocole|
 |---|---|---|
 |netmon-rbx-probe|92.222.184.0/24|icmp|
-|netmon-sbg-probe|92.222.185.0/24|icmp|
+|netmon-sbg-probe|51.38.25.100/32|icmp|
 |netmon-gra-probe|92.222.186.0/24|icmp|
 |netmon-bhs-probe|167.114.37.0/24|icmp|
 |netmon-sgp-probe|139.99.1.144/28|icmp|
@@ -46,9 +46,8 @@ Pour mettre en place un firewall restrictif, notamment sur l'ICMP, et continuer 
 |netmon-syd-probe|139.99.187.247/32|icmp|
 |netmon-tor-probe|72.251.7.222/32|icmp|
 |netmon-eri-probe|51.195.135.163/32|icmp|
-|netmon-lim-probe|51.38.117.56|icmp|
-|netmon-sbg-probe|51.38.25.100|icmp|
-|netmon-par-probe|57.130.4.212|icmp|
+|netmon-lim-probe|51.38.117.56/32|icmp|
+|netmon-par-probe|57.130.4.212/32|icmp|
 |ping.ovh.net|213.186.33.13|icmp|
 |---|---|---|
 ||xxx.xxx.xxx.250 (xxx.xxx.xxx.aaa étant l'IP du serveur)|icmp|
@@ -63,11 +62,9 @@ Pour mettre en place un firewall restrictif, notamment sur l'ICMP, et continuer 
 
 ### Activer ou désactiver le monitoring
 
-Tout d’abord, connectez-vous à votre [espace client OVHcloud](/links/manager) et sélectionnez l'onglet `Bare Metal Cloud`{.action}. Sélectionnez le serveur concerné dans le menu déroulant `Serveurs dédiés`{.action}.
+Vous pouvez activer ou désactiver le monitoring d’un serveur dédié à partir de l’onglet `Informations générales`{.action}. L’option se situe dans la section `État des services`.
 
-Vous pouvez activer ou désactiver le monitoring d'un serveur dédié à partir de l'onglet `Informations générales`{.action}. L'option se situe dans la section `État des services`.
-
-![Monitoring](images/monitoring-server.png){.thumbnail}
+![Statut du monitoring dans l'onglet informations générales du serveur](images/monitoring-server.png){.thumbnail}
 
 Cliquez sur le bouton `Configurer`{.action}. Dans la fenêtre qui apparaît, vous avez trois options pour le comportement du monitoring :
 
@@ -75,12 +72,16 @@ Cliquez sur le bouton `Configurer`{.action}. Dans la fenêtre qui apparaît, vou
 - **Activé avec intervention proactive** : si le serveur ne répond plus, un e-mail d'alerte vous est envoyé et le serveur est vérifié par un technicien.
 - **Activé sans intervention proactive** : vous recevrez un message d'alerte par e-mail au cas où le serveur ne répondrait plus. Pour lancer une intervention, il est nécessaire de créer une demande d'assistance.
 
-![Monitoring](images/monitoring-server2.png){.thumbnail}
+![Popup de configuration du monitoring avec trois options](images/monitoring-server2.png){.thumbnail}
 
 Cliquez sur `Confirmer`{.action} pour mettre à jour votre configuration du monitoring.
 
 ## Aller plus loin
 
 [Configurer le Network Firewall](/pages/bare_metal_cloud/dedicated_servers/firewall_network).
+
+[Premiers pas avec un serveur dédié](/pages/bare_metal_cloud/dedicated_servers/getting-started-with-dedicated-server)
+
+[Désinstaller le système de monitoring RTM v2](/pages/bare_metal_cloud/dedicated_servers/rtm-uninstall)
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).

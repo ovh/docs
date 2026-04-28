@@ -29,13 +29,16 @@ updated: 2026-01-07
 
 Il campo "Inviare un SMS" è il primo elemento disponibile nella lista delle azioni.
 
+<!-- CP-STEPS-START:send-sms-overview -->
 ![envoi sms manager](images/sms-send-control-panel01E.png){.thumbnail}
+<!-- CP-STEPS-END:send-sms-overview -->
 
 ### Passaggio 1: Configura il mittente e il destinatario
 
 > [!primary]
-> Per ulteriori informazioni sulla creazione e sull'utilizzo di un mittente, consultare la nostra guida "[Tutto ciò che devi sapere sui mittenti SMS](/pages/web_cloud/messaging/sms/tout_savoir_sur_les_expediteurs_sms)".
+> Per ulteriori informazioni sulla creazione e sull’utilizzo di un mittente, consultare la nostra guida “[Tutto ciò che devi sapere sui mittenti SMS](/pages/web_cloud/messaging/sms/tout_savoir_sur_les_expediteurs_sms)”.
 
+<!-- CP-STEPS-START:configure-sender-recipient -->
 Una volta nella pagina di invio SMS, è necessario configurare tre distinti parametri per adattare al meglio l’invio di SMS alle tue esigenze.
 
 ![envoi sms manager](images/sms-send-control-panel02E.png){.thumbnail}
@@ -50,6 +53,7 @@ Per maggiori informazioni, consulta la nostra [guida sulle liste di destinatari 
 
 - Tramite una rubrica indirizzi (3), che può essere creata dallo Spazio Cliente o importata tramite un file .csv o .txt.
 Per maggiori informazioni consulta la [guida sulle rubriche SMS](/pages/web_cloud/messaging/sms/gerer_mes_carnets_dadresses_sms).
+<!-- CP-STEPS-END:configure-sender-recipient -->
 
 ### Passaggio 2: Digita il tuo SMS
 
@@ -57,6 +61,7 @@ Per maggiori informazioni consulta la [guida sulle rubriche SMS](/pages/web_clou
 >
 > Per motivi legali, gli SMS a carattere commerciale saranno inviati esclusivamente tra le **8:00 e le 20:00, dal lunedì al sabato**.
 
+<!-- CP-STEPS-START:compose-sms-message -->
 Una volta selezionato il mittente e inseriti i destinatari, è possibile iniziare a digitare il messaggio.
 
 ![envoi sms manager](images/sms-send-control-panel03E.png){.thumbnail}
@@ -74,14 +79,17 @@ La lunghezza massima di un SMS è di 160 caratteri (norma GSM 03.38).
 Attenzione: l’utilizzo di caratteri non presenti in queste tabelle comporta il passaggio della codifica in Unicode e la riduzione della lunghezza massima di un SMS a 70 caratteri.
 
 ![Lista dei caratteri SMS](images/smsauthorizedcharacters.png){.thumbnail}
+<!-- CP-STEPS-END:compose-sms-message -->
 
 #### Opzioni avanzate
 
+<!-- CP-STEPS-START:advanced-options -->
 ![envoi sms manager](images/sms-send-control-panel-advanced.png){.thumbnail}
 
 In questa sezione è possibile effettuare un invio immediato o differito (1).
 
 Sono disponibili tre formati di invio (Standard/Flash/Sim) (2) ma questa funzionalità è obsoleta.
+<!-- CP-STEPS-END:advanced-options -->
 
 ## Per saperne di più
 

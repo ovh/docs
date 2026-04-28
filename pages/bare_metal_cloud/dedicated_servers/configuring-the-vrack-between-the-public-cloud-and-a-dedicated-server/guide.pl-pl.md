@@ -1,6 +1,6 @@
 ---
-title: 'Konfiguracja sieci vRack między Public Cloud a serwerem dedykowanym'
-excerpt: 'Dowiedz się, jak skonfigurować prywatną sieć między instancją Public Cloud a serwerem dedykowanym'
+title: "Konfiguracja sieci vRack między Public Cloud a serwerem dedykowanym"
+excerpt: "Skonfiguruj prywatną sieć między instancją OVHcloud Public Cloud a serwerem dedykowanym za pomocą sieci vRack."
 updated: 2026-02-20
 ---
 
@@ -93,13 +93,13 @@ Na następnej stronie możesz spersonalizować wiele ustawień.
 
 W etapie 1 wybierz regiony, w którym chcesz umieścić sieć prywatną. Upewnij się, że znajduje się ona w tym samym regionie co istniejąca instancja.
 
-![select region](images/vrack2024-01.png){.thumbnail}
+![Wybór regionu dla sieci prywatnej](images/vrack2024-01.png){.thumbnail}
 
 Aby obie usługi mogły się ze sobą komunikować, muszą mieć "tagi" tego samego **VLAN ID**.
 
 Można go skonfigurować w etapie 2.
 
-![configure network](images/configure_private_network.png){.thumbnail}
+![Formularz nazwy sieci prywatnej, VLAN ID i konfiguracji DHCP](images/configure_private_network.png){.thumbnail}
 
 Ten etap oferuje kilka opcji konfiguracji. Na potrzeby tego przewodnika skupimy się na niezbędnych elementach. Kliknij poniższe zakładki, aby wyświetlić szczegółowe informacje:
 
@@ -148,11 +148,11 @@ Po zakończeniu konfiguracji kliknij przycisk `Skonfiguruj prywatną sieć`{.act
 
 W dashboardzie odpowiedniej instancji znajdź sekcję "Sieć" i kliknij przycisk `...`{.action} obok "Sieci prywatne". Wybierz `Przypisz sieć`{.action}.
 
-![attach network](images/vrack2021-01.png){.thumbnail}
+![Panel klienta OVHcloud - strona vRack](images/vrack2021-01.png){.thumbnail}
 
 W oknie, które się pojawi, wybierz prywatną sieć lub sieci, które chcesz przypisać do swojej instancji i kliknij przycisk `Przypisz`{.action}.
 
-![attach network](images/attach_network.png){.thumbnail}
+![Okno wyboru i przypisania sieci prywatnej do instancji](images/attach_network.png){.thumbnail}
 
 ### Konfiguracja interfejsów sieciowych
 
@@ -815,4 +815,5 @@ W tym przykładzie użyjemy **10** jako identyfikatora VLAN (tag) oraz **192.168
 
 [Tworzenie kilku sieci VLAN w prywatnej sieci vRack](/pages/bare_metal_cloud/dedicated_servers/creating-multiple-vlans-in-a-vrack)
 
+- [Konfiguracja vRack na serwerach dedykowanych](/pages/bare_metal_cloud/dedicated_servers/vrack_configuring_on_dedicated_server)
 Dołącz do [grona naszych użytkowników](/links/community).

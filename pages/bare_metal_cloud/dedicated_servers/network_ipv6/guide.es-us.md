@@ -1,7 +1,7 @@
 ---
-title: 'Configurar IPv6 en un servidor dedicado'
-excerpt: 'Descubra cómo configurar direcciones IPv6 en nuestra infraestructura'
-updated: 2025-12-09
+title: "Configurar IPv6 en un servidor dedicado"
+excerpt: "Configure direcciones IPv6 en su servidor dedicado OVHcloud con ejemplos para las principales distribuciones Linux y Windows"
+updated: 2026-04-13
 ---
 
 <style>
@@ -30,7 +30,7 @@ Los servidores de las gamas High Grade, Scale y Advance (desde julio de 2024) se
 > Este artículo explica cómo configurar una dirección IP principal. En los servidores compatibles con el vRack, también puede configurar direcciones Additional IP en un vRack en lugar de en la interfaz pública del servidor. Consulte las instrucciones correspondientes en los siguientes artículos:
 >
 > - IPv4: [Configurar un bloque de IP en el vRack](/pages/bare_metal_cloud/dedicated_servers/configuring-an-ip-block-in-a-vrack).
-> - IPv6: [Configurar un bloque IPv6 en un vRack (EN)](/pages/bare_metal_cloud/dedicated_servers/configure-an-ipv6-in-a-vrack).
+> - IPv6: [Configurar un bloque IPv6 en un vRack](/pages/bare_metal_cloud/dedicated_servers/configure-an-ipv6-in-a-vrack).
 >
 
 > [!warning]
@@ -547,6 +547,23 @@ IPv6_GATEWAY: `2607:5300:60:62FF:00FF:00FF:00FF:00FF` también se puede escribir
 >> Introduzca su configuración IPv6 (`IPv6 address` y `Default gateway`), marque la casilla `Validar los parámetros al salir` y haga clic en el botón `OK`{.action} para aceptar los cambios.
 >>
 >> ![Propiedades](images/ipv6_configuration.png){.thumbnail}
+>>
+>> **Paso 4: Desactivar los identificadores de interfaz IPv6 aleatorios**
+>>
+>> Abra el menú Inicio, busque `Windows PowerShell`{.action}, haga clic derecho sobre él y seleccione `Ejecutar como administrador`{.action}.
+>>
+>> ![Ejecutar PowerShell como administrador](images/ipv6_powershell_admin.png){.thumbnail}
+>>
+>> En la ventana de PowerShell, ejecute el siguiente comando:
+>>
+>> ```powershell
+>> Set-NetIPv6Protocol -RandomizeIdentifiers Disabled
+>> ```
+>>
+>> ![Desactivar identificadores aleatorios](images/ipv6_powershell_randomize_identifiers.png){.thumbnail}
+>>
+>> Este paso es necesario para la conectividad IPv6 en la infraestructura de OVHcloud. Hace que Windows construya sus direcciones IPv6 link-local a partir de la dirección MAC del adaptador (EUI-64) en lugar de utilizar valores aleatorios. El cambio tiene efecto inmediato y persiste tras los reinicios.
+>>
 
 ### Comprobar la configuración y probar la conexión
 

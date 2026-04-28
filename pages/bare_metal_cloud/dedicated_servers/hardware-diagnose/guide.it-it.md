@@ -1,6 +1,6 @@
 ---
-title: "Diagnosticare problemi hardware su un server dedicato"
-excerpt: "Scopri come utilizzare gli strumenti di diagnostica per identificare malfunzionamenti hardware sul tuo server"
+title: "Eseguire una diagnostica hardware in modalità rescue su un server dedicato"
+excerpt: "Esegui diagnostiche hardware sul tuo server dedicato OVHcloud in modalità rescue per identificare guasti a disco, RAM o CPU."
 updated: 2025-10-16
 ---
 

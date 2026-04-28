@@ -62,6 +62,7 @@ Si vous ne parvenez pas à vous authentifier, modifiez votre mot de passe FTP en
 
 Le manque d'espace sur votre hébergement mutualisé peut entraîner des dysfonctionnements sur votre site lorsque vous tentez de le modifier ou de le mettre à jour.
 
+<!-- CP-STEPS-START:check-disk-space -->
 Pour vérifier l'espace de stockage restant sur votre hébergement web, cliquez sur les onglets ci-dessous pour afficher successivement chacune des **2** étapes.
 
 > [!tabs]
@@ -78,6 +79,7 @@ Pour vérifier l'espace de stockage restant sur votre hébergement web, cliquez 
 >> ![disk_space](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-disk-space.png){.thumbnail}
 >>
 >> L'espace de stockage utilisé apparaît en dessous de cette mention.
+<!-- CP-STEPS-END:check-disk-space -->
 
 ### Je n'arrive pas à transférer mes fichiers vers le serveur FTP.
 

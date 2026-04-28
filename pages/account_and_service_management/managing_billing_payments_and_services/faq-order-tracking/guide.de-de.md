@@ -14,19 +14,25 @@ Sie können Ihre Bestellung erst bezahlen, wenn Sie sich über Ihren Kunden-Acco
 
 #### Tipps und Tricks
 
+<!-- CP-STEPS-START:pay-new-order -->
 Sie haben die Seite Ihrer Bestellung geschlossen? Öffnen Sie die Seite [Meine Bestellungen](/links/control-panel/billing-orders). Dort können Sie Ihre Bestellung einsehen und begleichen.
+<!-- CP-STEPS-END:pay-new-order -->
 
 ### Wie kann ich meinen Zahlungsstatus einsehen?
 
+<!-- CP-STEPS-START:check-payment-status -->
 Öffnen Sie die Seite [Meine Rechnungen](/links/control-panel/billing-invoices). Wenn eine ausstehende Rechnung vorhanden ist, können Sie den Restbetrag begleichen.
 
 #### Tipps und Tricks
 
 Auf der Seite [Zahlungsarten](/links/control-panel/billing-payment-methods) können Sie Ihre Zahlungsart eintragen. So werden Ihre Rechnungen automatisch beglichen.
+<!-- CP-STEPS-END:check-payment-status -->
 
 ### Wie kann ich den Status meiner Bestellung nachverfolgen?
 
+<!-- CP-STEPS-START:track-order-status -->
 Öffnen Sie die Seite [Meine Bestellungen](/links/control-panel/billing-orders).
+<!-- CP-STEPS-END:track-order-status -->
 
 #### Tipps und Tricks
 
@@ -51,6 +57,7 @@ Das 14-tägige Widerrufsrecht gilt nicht für Unternehmer.
 
 ### Warum wurde mein Dienst nicht zur Verfügung gestellt?
 
+<!-- CP-STEPS-START:service-not-delivered -->
 Ihre Bestellung kann aus unterschiedlichen Gründen verspätet bearbeitet werden.
 Um seinen Kunden den bestmöglichen Schutz zu garantieren, achtet OVHcloud insbesondere auf die Sicherheit bei Finanztransaktionen. Daher haben wir ein Verfahren eingerichtet, mit dem Zahlungen zufällig überprüft werden. Die Bearbeitung Ihrer Bestellung kann dadurch verzögert werden. Wenn Sie sehen möchten, ob Sie betroffen sind, können Sie den Status Ihrer Zahlungen in Ihrem OVHcloud Kundencenter im Bereich `Abrechnung`{.action} einsehen.
 
@@ -61,6 +68,7 @@ Eine ausstehende Rechnung kann ebenfalls der Grund für die verspätete Bereitst
 #### Tipps und Tricks
 
 Auf der Seite [Zahlungsarten](/links/control-panel/billing-payment-methods) können Sie Ihre Zahlungsart eintragen. So werden Ihre Rechnungen automatisch beglichen.
+<!-- CP-STEPS-END:service-not-delivered -->
 
 ## Weiterführende Informationen
 

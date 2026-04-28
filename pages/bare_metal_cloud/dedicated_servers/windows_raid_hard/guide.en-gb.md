@@ -1,6 +1,6 @@
 ---
-title: 'Creating a Windows partition on a server with hardware RAID'
-excerpt: 'This guide will explain the steps needed to create a Windows partition on a server with hardware RAID.'
+title: "Create a Windows Partition on a Dedicated Server with Hardware RAID"
+excerpt: "Create a Windows partition on an OVHcloud dedicated server equipped with a hardware RAID controller."
 updated: 2018-07-24
 ---
 
@@ -239,5 +239,7 @@ Once the system is installed, log in to your Windows system and open up the util
 ## Go further
 
 [Hardware RAID](/pages/bare_metal_cloud/dedicated_servers/raid_hard).
+
+[Software RAID Mirror on a Windows Dedicated Server](/pages/bare_metal_cloud/dedicated_servers/raid_soft-windows)
 
 Join our [community of users](/links/community).

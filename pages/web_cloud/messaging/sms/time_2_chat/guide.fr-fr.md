@@ -73,15 +73,18 @@ La phase de lancement de Time2Chat est réservée aux clients déjà détenteurs
 
 Nous proposerons prochainement ce service à tous les clients possédant un [compte SMS OVHcloud](/links/telecom/sms).
 
+<!-- CP-STEPS-START:buy-credits -->
 > [!primary]
 >
 > Les crédits SMS existants peuvent être utilisés sur Time2Chat.
 >
-> Vous pouvez également acheter un pack de crédits SMS depuis la [section SMS de votre espace client](/links/control-panel/telecom-sms). Cliquez sur votre compte SMS puis sur `Créditer mon compte`{.action} depuis l'onglet `Accueil`{.action}.
+> Vous pouvez également acheter un pack de crédits SMS depuis la [section SMS de votre espace client](/links/control-panel/telecom-sms). Cliquez sur votre compte SMS puis sur `Créditer mon compte`{.action} depuis l’onglet `Accueil`{.action}.
+<!-- CP-STEPS-END:buy-credits -->
 
 ### Commander un numéro Time2Chat
 
-Dans l'onglet `Accueil`{.action}, cliquez sur le bouton `Commander un numéro Time2Chat`{.action}.
+<!-- CP-STEPS-START:order-time2chat -->
+Dans l’onglet `Accueil`{.action}, cliquez sur le bouton `Commander un numéro Time2Chat`{.action}.
 
 ![time2chat](images/time2chat_order_number_button.png){.thumbnail}
 
@@ -94,9 +97,11 @@ Dans le formulaire qui s’affiche, remplissez tous les champs puis cliquez sur 
 > Les informations saisies pourront être modifiées ultérieurement depuis l’espace client.
 
 Suivez toutes les étapes avant de procéder au paiement.
+<!-- CP-STEPS-END:order-time2chat -->
 
 ### Configurer un expéditeur Time2Chat
 
+<!-- CP-STEPS-START:configure-sender -->
 Une fois votre numéro Time2Chat commandé, cliquez sur l’onglet `Expéditeurs`{.action} de votre compte SMS. Le numéro Time2Chat apparaît automatiquement dans la liste des expéditeurs avec le type « Numéro virtuel ». Pour le configurer, cliquez à droite du numéro sur le bouton `...`{.action} puis sélectionnez `Configurer`{.action}. Vous accédez alors à la page de configuration du SMS conversationnel Time2Chat.
 
 ![time2chat](images/time2chat_configuration_number.png){.thumbnail}
@@ -111,6 +116,7 @@ Dans cette interface, vous pouvez :
 Ces éléments permettent de personnaliser votre numéro Time2Chat et de garantir le bon fonctionnement des échanges bidirectionnels entre votre marque et vos clients.
 
 Dès que le client répond, la **session de 24 heures** démarre. Tous les échanges effectués durant cette période sont décomptés de vos **crédits SMS disponibles**, qu’ils proviennent de votre pack initial ou d’achats complémentaires.
+<!-- CP-STEPS-END:configure-sender -->
 
 ## Aller plus loin
 

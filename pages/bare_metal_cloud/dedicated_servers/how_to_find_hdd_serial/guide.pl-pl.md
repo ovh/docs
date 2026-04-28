@@ -1,6 +1,6 @@
 ---
-title: 'Ustalenie numeru seryjnego dysku twardego'
-excerpt: 'Dowiedz się, jak ustalić numer seryjny dysku, aby przystąpić do jego wymiany'
+title: "Jak znaleźć numer seryjny dysku na serwerze dedykowanym"
+excerpt: "Znajdź numer seryjny dysku twardego lub SSD na serwerze dedykowanym OVHcloud za pomocą wiersza poleceń."
 updated: 2018-08-21
 ---
 
@@ -166,5 +166,7 @@ Po odnalezieniu urządzenia “sg” powiązanego z dyskiem twardym, który chce
 Numer urządzenia “sg” będzie się wyświetlał w następujący sposób: `/dev/sg0`, `/dev/sg1`...
 
 ## Sprawdź również
+
+- [Jak wymienić dysk na serwerze dedykowanym](/pages/bare_metal_cloud/dedicated_servers/disk_replacement)
 
 Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

@@ -1,6 +1,6 @@
 ---
-title: How to replace an SSH key pair
-excerpt: Find out how restore server access by replacing an SSH key pair with a new one in case your private key is lost
+title: "Replace a Lost SSH Key on a Dedicated Server"
+excerpt: "Restore SSH access to your dedicated server by generating and deploying a new key pair in rescue mode."
 updated: 2024-04-04
 ---
 

@@ -1,6 +1,6 @@
 ---
-title: "Korzystanie z Hyper-V z adresów Additional IP w sieci vRack"
-excerpt: "Dowiedz się, jak skonfigurować wirtualną maszynę z Additional IP i Hyper-V w sieci vRack"
+title: "Konfiguracja VM Hyper-V z Additional IP w sieci vRack na serwerze dedykowanym"
+excerpt: "Korzystaj z Hyper-V z Additional IP przez vRack na serwerze dedykowanym OVHcloud."
 updated: 2025-07-22
 ---
 
@@ -37,27 +37,27 @@ Pierwszy etap polega na zainstalowaniu Hyper-V.
 
 W panelu zarządzania serwerami kliknij `Add roles and features`{.action}
 
-![Installing hyper-v](images/add-roles-features.png){.thumbnail}
+![Panel Menedżera serwera z linkiem Dodaj role i funkcje](images/add-roles-features.png){.thumbnail}
 
 W Kreatorze kliknij `Next`{.action}, aby przejść do następnej strony.
 
-![Installing hyper-v](images/add-roles-features-2.png){.thumbnail}
+![Strona powitalna kreatora Dodaj role](images/add-roles-features-2.png){.thumbnail}
 
 Sprawdź, czy wybrano opcję "Role-Based or feature-based" i kliknij `Next`{.action}.
 
-![Installing hyper-v](images/add-roles-features-3.png){.thumbnail}
+![Wybór typu instalacji z opcją Instalacja oparta na rolach](images/add-roles-features-3.png){.thumbnail}
 
 Sprawdź, czy wybrana jest opcja "Select a server from the server pool" oraz serwer, nad którym pracujesz na liście poniżej. Następnie kliknij `Next`{.action}.
 
-![Installing hyper-v](images/add-roles-features-4.png){.thumbnail}
+![Wybór puli serwerów z zaznaczonym bieżącym serwerem](images/add-roles-features-4.png){.thumbnail}
 
 Na liście kół zaznacz opcję "Hyper-V", następnie kliknij `Next`{.action}.
 
-![Installing hyper-v](images/add-roles-features-5.png){.thumbnail}
+![Lista ról serwera z zaznaczonym Hyper-V](images/add-roles-features-5.png){.thumbnail}
 
 Na następnej stronie ("Features") kliknij `Next`{.action}.
 
-![Installing hyper-v](images/add-roles-features-9.png){.thumbnail}
+![Strona funkcji w kreatorze Dodaj role](images/add-roles-features-9.png){.thumbnail}
 
 Wyszukaj połączenie sieciowe Twojego serwera, którego chcesz użyć do wirtualnego switcha.
 
@@ -65,21 +65,21 @@ Aby go zidentyfikować, otwórz Command Prompt lub PowerShell i wprowadź komend
 
 W naszym przykładzie `Ethernet 2` to interfejs używany w sieci vRack. Możliwe jest jednak, że karta sieciowa vRack używa innego interfejsu. Korzystaj z interfejsu, który nie posiada głównego adresu IP serwera lub który używa przypisanego do siebie adresu IP (169.254.x.x).
 
-![check-interface](images/ipconfig.png){.thumbnail}
+![Wynik ipconfig pokazujący interfejs vRack z automatycznym IP](images/ipconfig.png){.thumbnail}
 
 Po uzyskaniu tych informacji wróć do okna `Add Roles and Features Wizard`{.action} i kliknij `Next`{.action}.
 
-![Installing hyper-v](images/add-roles-features-6.png){.thumbnail}
+![Strona tworzenia przełącznika wirtualnego Hyper-V](images/add-roles-features-6.png){.thumbnail}
 
 Wybierz adapter vRack, który zidentyfikowałeś w Command Prompt lub PowerShell, następnie kliknij `Next`{.action}.
 
-![Installing hyper-v](images/add-roles-features-7.png){.thumbnail}
+![Wybór karty sieciowej vRack dla przełącznika wirtualnego](images/add-roles-features-7.png){.thumbnail}
 
 Na dwóch kolejnych stronach możesz wybrać opcje migracji i przechowywania danych. Możesz je dowolnie skonfigurować.
 
 Po dotarciu do strony z potwierdzeniem zaznacz kratkę "Restart the destination automatically if required", kliknij `Yes`{.action}, a następnie `Install`{.action}.
 
-![Installing hyper-v](images/add-roles-features-8.png){.thumbnail}
+![Strona potwierdzenia z opcją automatycznego restartu i przyciskiem Zainstaluj](images/add-roles-features-8.png){.thumbnail}
 
 Hyper-V się zainstaluje i serwer powinien zrestartować.
 
@@ -89,19 +89,19 @@ Po zrestartowaniu serwera zaloguj się i otwórz Hyper-V Manager.
 
 Wybierz serwer po lewej stronie, kliknij `New`{.action} i wybierz "Virtual Machine".
 
-![create-vm](images/create-vm.png){.thumbnail}
+![Menedżer Hyper-V z opcją Nowa maszyna wirtualna](images/create-vm.png){.thumbnail}
 
 W sekcji "New Virtual Machine Wizard" skonfiguruj wirtualną maszynę zgodnie z potrzebami. Po przejściu do etapu "Configuration Networking" wybierz wirtualny switch. Po wybraniu domeny kliknij `Next`{.action}, aby kontynuować.
 
-![create-vm](images/create-vm-2.png){.thumbnail}
+![Krok konfiguracji sieci z wybranym przełącznikiem wirtualnym](images/create-vm-2.png){.thumbnail}
 
 Po dotarciu do sekcji "Instalacja Opcje" dodaj obraz ISO dla systemu operacyjnego, który chcesz zainstalować. Kliknij `Next`{.action}, aby kontynuować.
 
-![create-vm](images/create-vm-3.png){.thumbnail}
+![Opcje instalacji z wybranym plikiem ISO systemu](images/create-vm-3.png){.thumbnail}
 
 Po wejściu na stronę "Summary" sprawdź, czy parametry wirtualnego switcha i systemu operacyjnego są poprawne, po czym kliknij `Finish`{.action}.
 
-![create-vm](images/create-vm-4.png){.thumbnail}
+![Podsumowanie tworzenia maszyny wirtualnej z ustawieniami sieci i systemu](images/create-vm-4.png){.thumbnail}
 
 ### Zainstaluj system operacyjny i skonfiguruj IP
 
@@ -113,11 +113,11 @@ W tym przypadku wyłącz opcję "Secure Boot".
 
 Wyłącz wirtualną maszynę i kliknij `Settings`{.action}.
 
-![disable-secure-boot](images/disable-secure-boot.png){.thumbnail}
+![Okno ustawień maszyny wirtualnej w Menedżerze Hyper-V](images/disable-secure-boot.png){.thumbnail}
 
 Kliknij `Security`{.action}, usuń zaznaczenie i kliknij `Apply`{.action}.
 
-![disable-secure-boot](images/disable-secure-boot-2.png){.thumbnail}
+![Ustawienia zabezpieczeń z odznaczonym Bezpiecznym rozruchem](images/disable-secure-boot-2.png){.thumbnail}
 
 Po zakończeniu zrestartuj wirtualną maszynę.
 
@@ -151,8 +151,10 @@ Po zainstalowaniu systemu operacyjnego. Powinien już być połączony.
 
 Poniższy przykład pokazuje, w jaki sposób powinien pojawić się plik `ifcfg-eth0`.
 
-![konfiguracja](images/configured.png){.thumbnail}
+![Plik CentOS ifcfg-eth0 ze statyczną konfiguracją IP vRack](images/configured.png){.thumbnail}
 
 ## Sprawdź również
+
+- [Konfiguracja sieci Hyper-V na serwerach dedykowanych HG/Scale](/pages/bare_metal_cloud/dedicated_servers/hyperv-network-HG-Scale)
 
 Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

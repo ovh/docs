@@ -1,6 +1,6 @@
 ---
-title: 'Jak przypisać tag do serwera bare metal'
-excerpt: 'Dowiedz się, jak tworzyć i modyfikować tagi dla każdego serwera dedykowanego w panelu klienta OVHcloud'
+title: "Jak przypisać tag do serwera bare metal"
+excerpt: "Przypisuj i zarządzaj tagami zasobów na serwerach dedykowanych OVHcloud, aby organizować i śledzić infrastrukturę."
 updated: 2025-07-01
 ---
 
@@ -89,4 +89,6 @@ Zostanie wyświetlone okno potwierdzające. Kliknij przycisk `Zatwierdź`{.actio
 
 ## Sprawdź również
 
+- [Pierwsze kroki z serwerem dedykowanym OVHcloud](/pages/bare_metal_cloud/dedicated_servers/getting-started-with-dedicated-server)
+- [Serwer dedykowany - Konfiguracja monitorowania IP](/pages/bare_metal_cloud/dedicated_servers/network_ip_monitoring)
 Dołącz do [grona naszych użytkowników](/links/community).

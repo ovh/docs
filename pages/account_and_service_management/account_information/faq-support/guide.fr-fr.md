@@ -214,7 +214,9 @@ Découvrez et comparez les différents niveaux de support disponibles [ici](/lin
 
 /// details | Où puis-je trouver mon niveau de support ?
 
+<!-- CP-STEPS-START:find-support-level -->
 Pour connaître le niveau de support associé à votre identifiant client, ouvrez la page [Mon compte](/links/control-panel/account-dashboard). Le niveau de support apparaît à droite de la mention **Support**. Si vous n’avez pas souscrit à un service de support payant, vous bénéficiez par défaut du niveau Standard.
+<!-- CP-STEPS-END:find-support-level -->
 
 Découvrez et comparez les différents niveaux de support disponibles [ici](/links/support).
 

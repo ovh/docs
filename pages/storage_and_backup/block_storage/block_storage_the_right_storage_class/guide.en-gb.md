@@ -1,12 +1,14 @@
 ---
 title: Choosing the Right Block Storage Class
-excerpt: Discover how to choose the right OVHcloud Block Storage class. Compare performance, pricing, and use cases to optimize your storage for both cost and efficiency.
-updated: 2025-12-15
+excerpt: Find out how to choose the right OVHcloud Block Storage class. Compare performance, pricing, and use cases to optimize your storage for both cost and efficiency.
+updated: 2026-04-14
 ---
 
 ## Objective
 
-This guide helps you understand the different OVHcloud Block Storage classes and choose the one that best fits your needs. You will learn about performance levels, pricing considerations, and recommended use cases to make informed storage decisions.
+**This guide helps you understand the different OVHcloud Block Storage classes and choose the one that best fits your needs.**
+
+You will learn about performance levels, pricing considerations, and recommended use cases to make informed storage decisions.
 
 ## Block Storage Overview
 
@@ -71,7 +73,7 @@ Each Block Storage volume type is also available in an encrypted version (LUKS),
 Encrypted volumes can be created directly from the OVHcloud Control Panel or via CLI/API tools by specifying the volume type with the suffix `-luks` (for example, classic-luks or highspeed-luks). This provides an easy and secure way to protect sensitive data while leveraging the same performance and features as standard volumes.
 
 > [!primary]
-> Encrypted volumes have no impact on performance.
+> For large encrypted volumes (over 800 GiB), performance may be lower than the expected volume QoS, with up to a 20% reduction in throughput for High Speed Gen2. The impact varies depending on the customer’s implementation.
 
 ## Use Cases
 
@@ -82,7 +84,7 @@ Block Storage supports a wide variety of workloads thanks to its performance, fl
 - **Analytics & AI workloads**: High Speed Volumes provide maximum IOPS and throughput for data-intensive applications.
 - **Backup & disaster recovery**: Easily create snapshots and backups for critical data, ensuring fast recovery and protection.
 
-## Zone and regional Considerations
+## Zone and Regional Considerations
 
 Block Storage volumes can be deployed with different availability options depending on your requirements:
 
@@ -99,6 +101,6 @@ Block Storage volumes can be deployed with different availability options depend
 
 [Change your Block Storage volume type](/pages/public_cloud/compute/switch_volume_type)
 
-If you need training or technical assistance to implement our solutions, please contact your sales representative or click [this link](/links/professional-services) to get a quote and request a personalised analysis of your project from our Professional Services team.
+If you need training or technical assistance to implement our solutions, contact your sales representative or reach out to our [Professional Services team](/links/professional-services) to get a quote and request a personalised analysis of your project.
 
 Join our [community of users](/links/community).

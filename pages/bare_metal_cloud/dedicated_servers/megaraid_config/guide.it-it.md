@@ -1,6 +1,6 @@
 ---
-title: Configura il tuo MegaRAID in RAID 0
-excerpt: "Come configurare i dischi del tuo server in RAID 0, per sfruttare il massimo dello spazio disponibile"
+title: "Configurare MegaRAID in RAID 0 su un server dedicato"
+excerpt: "Configura il RAID 0 con il controller MegaRAID per utilizzare la capacità massima dei dischi del tuo server dedicato OVHcloud"
 updated: 2025-04-29
 ---
 
@@ -127,4 +127,4 @@ MegaCli -LDInfo -Lall -a0 | grep -i size
 
 [Gestione del RAID hardware](/pages/bare_metal_cloud/dedicated_servers/raid_hard)
 
-Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.
+Contatta la nostra [Community di utenti](/links/community).

@@ -10,10 +10,20 @@ This guide explains how to identify OmniOS datastores in your Hosted Private Clo
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](/links/manager)
 - Administrator access to your vSphere environment (via vScope)
 - Basic knowledge of VMware vSphere and Storage vMotion
 - Available supported datastores as migration targets
+
+<!-- CP-NAV-START:privatecloud-vmware-vsphere -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [VMware vSphere](/links/control-panel/privatecloud-vmware-vsphere)
+- **Navigation path:** `Hosted Private Cloud`{.action} > `Managed VMware vSphere`{.action} > Select your vSphere service
+
+---
+<!-- CP-NAV-END:privatecloud-vmware-vsphere -->
 
 > [!primary]
 > OVHcloud will provide the necessary freespare storage space as part of the migration process led by our teams.
@@ -22,17 +32,13 @@ This guide explains how to identify OmniOS datastores in your Hosted Private Clo
 
 ### Step 1 - Identify OmniOS datastores
 
-1. Log in to the [OVHcloud Control Panel](/links/manager).
+1. Click [this link](/links/control-panel/privatecloud-vmware-vsphere) to access the `VMware vSphere`{.action} section, then select your PCC service.
 
-2. Click on `Hosted Private Cloud`{.action} and select your PCC service.
-
-    ![Access Hosted Private Cloud](images/omnios-01.png){.thumbnail}
-
-3. Go to the `Datacenters`{.action} tab.
+2. Go to the `Datacenters`{.action} tab.
 
     ![Datacenters page](images/omnios-02.png){.thumbnail}
 
-4. On the datacenter page, open the `Datastores`{.action} tab.
+3. On the datacenter page, open the `Datastores`{.action} tab.
 
     ![Datacenters page](images/omnios-03.png){.thumbnail}
 
@@ -44,7 +50,7 @@ This guide explains how to identify OmniOS datastores in your Hosted Private Clo
     > [!primary]
     > OmniOS datastores must be migrated to supported storage to ensure service continuity.
 
-5. Before starting a vMotion, make sure that you have a supported datastore available in your infrastructure.
+4. Before starting a vMotion, make sure that you have a supported datastore available in your infrastructure.
 
     - If you need to add a datastore, refer to the [Add a datastore](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/how_to_add_storage) guide.
     - If you need to remove an unused datastore, refer to the [Delete a datastore](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/delete_datastore) guide.

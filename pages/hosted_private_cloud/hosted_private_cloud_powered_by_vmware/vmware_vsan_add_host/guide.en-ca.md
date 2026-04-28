@@ -14,13 +14,22 @@ This guide explains how to add a new ESXi server storage to an existing vSAN clu
 - A user account with access to vSphere as well as the specific rights for NSX (created in the [OVHcloud Control Panel](/links/manager))
 - A deployed [vSan Datastore](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_vsan)
 
+<!-- CP-NAV-START:privatecloud-vmware-vsphere -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [VMware vSphere](/links/control-panel/privatecloud-vmware-vsphere)
+- **Navigation path:** `Hosted Private Cloud`{.action} > `Managed VMware vSphere`{.action} > Select your vSphere service
+
+---
+<!-- CP-NAV-END:privatecloud-vmware-vsphere -->
+
 ## Instructions
 
 ### Order a new vSan host
 
-Log in to the [OVHcloud Control Panel](/links/manager) with your administrative credentials.
-
-In the `Hosted Private Cloud`{.action} section, select your datacenter and go to the `Hosts`{.action} tab.<br>
+Click [this link](/links/control-panel/privatecloud-vmware-vsphere) to access the `VMware vSphere`{.action} section, then select your datacenter and go to the `Hosts`{.action} tab.<br>
 Click on the `Order a Host`{.action} button.
 
 ![ORDER](images/en02order.png){.thumbnail}

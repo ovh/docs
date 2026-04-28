@@ -61,6 +61,7 @@ Se utilizzi una rete 4G/5G in aggiunta, ricordati di recuperare anche l'indirizz
 
 ### Step 2 - Attiva una restrizione di accesso per IP
 
+<!-- CP-STEPS-START:enable-ip-restriction -->
 Nella pagina [Sicurezza dell'account](/links/control-panel/account-security), individua la sezione **Restrizione dell'accesso per IP**.
 
 ![Access from Manager](images/ip2.png){.thumbnail}
@@ -90,9 +91,11 @@ Per l'implementazione delle restrizioni IP sono presenti due sezioni:
 >
 > Prestare la massima attenzione su questo punto.
 >
+<!-- CP-STEPS-END:enable-ip-restriction -->
 
 #### Rifiuta tutti gli indirizzi IP ad eccezione degli indirizzi legittimi
 
+<!-- CP-STEPS-START:add-allow-rule -->
 Per autorizzare l'accesso allo Spazio Cliente OVHcloud esclusivamente a uno o più indirizzi IP legittimi, clicca su `Aggiungere una restrizione`{.action}.
 
 > Nelle successive catture, l'IP **192.0.2.0** sarà sostituito da un IP che ti riguarda.
@@ -120,9 +123,11 @@ Una volta **l'insieme** dei tuoi indirizzi IP pubblici inseriti nella sezione `I
 ![Add allow rule](images/ip7.png){.thumbnail}
 
 > Da questo momento, **solo** gli indirizzi IP pubblici autorizzati precedentemente nella sezione `IP configurati` possono accedere al tuo Spazio Cliente OVHcloud.
+<!-- CP-STEPS-END:add-allow-rule -->
 
 #### Autorizza tutti gli indirizzi IP ad eccezione di alcuni indirizzi
 
+<!-- CP-STEPS-START:add-deny-rule -->
 L'opzione di restrizione di accesso per IP permette inoltre di autorizzare tutti gli indirizzi IP ad accedere al tuo Spazio Cliente OVHcloud, ad eccezione di alcune delle quali avrai precedentemente identificato come illegittime.
 
 Per bloccare l'accesso al tuo Spazio Cliente OVHcloud a uno o più indirizzi IP, clicca sulla sezione `IP configurati` e seleziona `Aggiunere una restrizione`{.action}.
@@ -149,6 +154,7 @@ Una volta inseriti tutti gli indirizzi IP pubblici nella sezione `IP configurati
 ![Add deny rule](images/ip12.png){.thumbnail}
 
 > Da questo momento, **tutte*** gli indirizzi IP pubblici possono accedere al tuo Spazio Cliente OVHcloud, **ad eccezione di** quelli dichiarati nella sezione `IP configurati`.
+<!-- CP-STEPS-END:add-deny-rule -->
 
 ## Per saperne di più
 

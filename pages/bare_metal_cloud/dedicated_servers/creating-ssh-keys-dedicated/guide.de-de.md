@@ -1,6 +1,6 @@
 ---
-title: Authentifizierungsschlüssel für SSH-Verbindungen zu OVHcloud Servern erstellen und verwenden
-excerpt: Erfahren Sie hier, wie Sie Schlüsselpaare für OpenSSH auf Ihrem lokalen Gerät konfigurieren und für sichere Verbindungen zu Ihrem Dedicated Server oder VPS verwenden
+title: "SSH-Schlüssel für Dedicated Server erstellen"
+excerpt: "Erstellen Sie OpenSSH-Schlüsselpaare auf Ihrem lokalen Gerät und verwenden Sie sie für sichere, passwortlose Verbindungen zu Ihrem Dedicated Server."
 updated: 2025-01-06
 ---
 

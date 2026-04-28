@@ -37,6 +37,7 @@ Abra `Créditos e Vouchers`{.action} no menu à esquerda, em **Parâmetros**
 
 ### Adicionar crédito
 
+<!-- CP-STEPS-START:add-credit -->
 Clique no botão `Adquirir um crédito cloud`{.action}.
 
 ![addpubliccloudcredit](images/cloudcredit1.png){.thumbnail}
@@ -50,9 +51,11 @@ Será, então, gerada uma nota de encomenda. Clique no link no quadro verde de n
 ![addpubliccloudcredit](images/cloudcredit3.png){.thumbnail}
 
 Uma vez o pagamento efetuado, o seu crédito aparecerá na lista `Créditos e Vouchers`.
+<!-- CP-STEPS-END:add-credit -->
 
 ### Utilizar um voucher
 
+<!-- CP-STEPS-START:redeem-voucher -->
 Clique no botão `Ativar um voucher`{.action}.
 
 ![addpubliccloudcredit](images/voucher1.png){.thumbnail}
@@ -62,6 +65,7 @@ Na nova janela, introduza o código do voucher e clique em `Validar`{.action}.
 ![addpubliccloudcredit](images/voucher2.png){.thumbnail}
 
 O saldo do voucher aparecerá na lista `Créditos e Vouchers`.
+<!-- CP-STEPS-END:redeem-voucher -->
 
 > [!primary]
 >

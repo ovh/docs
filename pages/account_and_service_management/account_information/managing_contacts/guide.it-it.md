@@ -54,6 +54,7 @@ L'identificativo cliente è un codice personale che viene inviato via email al m
 
 ### Accedi alla pagina di gestione dei contatti <a name="gestion_des_contacts"></a>
 
+<!-- CP-STEPS-START:access-contact-management -->
 Apri la pagina [Gestione dei contatti](/links/control-panel/account-contacts).
 
 ![Gestione dei contatti](/pages/assets/screens/control_panel/product-selection/right-menu/my-contacts.png){.thumbnail}
@@ -61,9 +62,11 @@ Apri la pagina [Gestione dei contatti](/links/control-panel/account-contacts).
 Visualizzi una tabella con i diversi servizi per cui il tuo identificativo cliente è stato indicato come contatto.
 
 ![Gestione dei contatti](images/managing_contacts_02.png){.thumbnail}
+<!-- CP-STEPS-END:access-contact-management -->
 
 ### Modifica i contatti di un servizio
 
+<!-- CP-STEPS-START:change-contacts-service -->
 Accedi alla pagina di gestione dei contatti e clicca sui `...`{.action}in corrispondenza del servizio che vuoi modificare e poi clicca su `Modifica i contatti`{.action}. Inserisci i nuovi contatti e infine clicca su `Conferma`{.action}.
 
 ![Gestione dei contatti](images/managing_contacts_03.png){.thumbnail}
@@ -76,6 +79,7 @@ Se l’operazione va a buon fine, i contatti interessati riceveranno un’email.
 >
 > Nessuna modifica del contatto sarà consentita se il vecchio o il nuovo account cliente hanno una o più fatture non pagate.
 >
+<!-- CP-STEPS-END:change-contacts-service -->
 
 #### Sei il contatto amministratore <a name="administrateur"></a>
 
@@ -95,6 +99,7 @@ Puoi solo definire un altro contatto di fatturazione per sostituirti. Questa ope
 
 ### Conferma, rifiuta o verifica lo stato di una modifica del contatto
 
+<!-- CP-STEPS-START:confirm-track-contact-change -->
 Per visualizzare e gestire le richieste in corso, clicca sulla scheda `Le tue richieste`{.action}. Qui puoi accettare o rifiutare una richiesta.
 
 ![Gestione dei contatti](images/managing_contacts_05.png){.thumbnail}
@@ -116,6 +121,7 @@ Se la modifica viene confermata da uno solo dei contatti, verrà visualizzato un
 ![Gestione dei contatti](images/managing_contacts_007.png){.thumbnail}
 
 La modifica del contatto diventerà effettiva entro pochi minuti dalla conferma della richiesta da parte dei due contatti. Riceveranno un'email con le informazioni relative alla gestione della richiesta.
+<!-- CP-STEPS-END:confirm-track-contact-change -->
 
 ### Esempio: assegna la gestione tecnica del tuo sito al tuo webmaster
 

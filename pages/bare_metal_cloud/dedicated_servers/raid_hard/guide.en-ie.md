@@ -1,6 +1,6 @@
 ---
-title: Managing hardware RAID
-excerpt: Find out how to verify the state of your hardware RAID and the health of your hard drives
+title: "Manage Hardware RAID on a Dedicated Server"
+excerpt: "Verify the state of your hardware RAID controller and monitor hard drive health on your OVHcloud dedicated server."
 updated: 2025-03-19
 ---
 

@@ -38,7 +38,9 @@ For further information, please read this detailed guide: [Managing renewal for 
 
 ### How do I enable automatic renewal?
 
+<!-- CP-STEPS-START:enable-automatic-renewal -->
 On the [My offers and services](/links/control-panel/billing-services) page, click on the three dots next to the service concerned, and select `Enable automatic payment`{.action}.
+<!-- CP-STEPS-END:enable-automatic-renewal -->
 
 #### Tips and tricks
 
@@ -47,9 +49,11 @@ For further information, please read this detailed guide: [Managing renewal for 
 
 ### How do I disable automatic renewal?
 
+<!-- CP-STEPS-START:disable-automatic-renewal -->
 On the [My offers and services](/links/control-panel/billing-services) page, click on the three dots next to the service concerned, then select `Configure renewal`{.action}. You can then choose manual mode. This mode is only available for certain services — e.g. domain names, web hosting plans, VPS, and dedicated servers.
 
 To cancel a service, go to [How do I cancel a service?](#cancelservice)
+<!-- CP-STEPS-END:disable-automatic-renewal -->
 
 #### Tips and tricks
 
@@ -58,15 +62,19 @@ For further information, please read this detailed guide: [Managing renewal for 
 
 ### How do I add a payment method?
 
+<!-- CP-STEPS-START:add-payment-method -->
 On the [My payment methods](/links/control-panel/billing-payment-methods) page, click `Add a payment method`{.action}.
+<!-- CP-STEPS-END:add-payment-method -->
 
 ### How do I update my payment method?
 
+<!-- CP-STEPS-START:update-payment-method -->
 On the [My payment methods](/links/control-panel/billing-payment-methods) page, you can add or delete a payment method (bank card, PayPal or SEPA direct debit).
 
 If you request a SEPA direct debit, you will receive an email within 24 to 48 hours via the email address on your OVHcloud account, with a link for the electronic signature of your direct debit mandate. Warning: the owner of the bank account must be the same as the owner of the OVHcloud account.
 
 Once you have received your order from us, if your mandate has been approved, you can then use this new payment method.
+<!-- CP-STEPS-END:update-payment-method -->
 
 #### Tips and tricks
 
@@ -74,7 +82,9 @@ To ensure that your services are renewed properly, you will need to set at least
 
 ### How do I delete a payment method?
 
+<!-- CP-STEPS-START:delete-payment-method -->
 On the [My payment methods](/links/control-panel/billing-payment-methods) page, identify the payment method you wish to delete and click on the trashcan icon.
+<!-- CP-STEPS-END:delete-payment-method -->
 
 #### Tips and tricks
 
@@ -92,6 +102,7 @@ If your pre-paid OVHcloud account contains credit, it will always be used by def
 
 ### When is my next payment due date?
 
+<!-- CP-STEPS-START:next-payment-due-date -->
 You can view all of your renewal dates in the `My offers and services`{.action} section, accessible directly in the dashboard of the OVHcloud Control Panel.
 
 Please note that solutions with automatic renewal will be renewed on the first day of the month. However, the frequency may vary depending on the services you have.
@@ -100,6 +111,7 @@ Please note that solutions with automatic renewal will be renewed on the first d
 
 On the [My offers and services](/links/control-panel/billing-services) page, you can change how often your solutions are renewed.
 For further information, please read this detailed guide: [Managing renewal for your services](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal).
+<!-- CP-STEPS-END:next-payment-due-date -->
 
 ### Which of my payment methods will be debited?
 
@@ -140,13 +152,17 @@ On the [My payment methods](/links/control-panel/billing-payment-methods) page, 
 
 ### What do my payments correspond to?
 
+<!-- CP-STEPS-START:payments-correspondence -->
 Payments made on our website and via direct debit are listed in the OVHcloud Control Panel. You can find the corresponding invoices, dates and amounts in the `Track payments`{.action} section.
+<!-- CP-STEPS-END:payments-correspondence -->
 
 ### How do I cancel a service? <a name="cancelservice"></a>
 
+<!-- CP-STEPS-START:cancel-service -->
 For solutions like domain names, web hosting plans, dedicated servers and VPS solutions, go to the [My offers and services](/links/control-panel/billing-services) page. To cancel a service, click on the three dots next to it, then click `Cancel my subscription`{.action}. If you have already requested a cancellation, you can also `Stop cancellation of service`{.action}.
 
 The cancellation will be effective once your service is no longer valid, or reaches its expiry date. You can submit a cancellation request, or undo it up to 24 hours before the expiry date.
+<!-- CP-STEPS-END:cancel-service -->
 
 #### Tips and tricks
 
@@ -155,8 +171,10 @@ You can access comprehensive documentation on cancelling all of our products and
 
 ### How do I customize the reference for my product/service on my bill?
 
+<!-- CP-STEPS-START:customize-product-reference-bill -->
 To make bills more easily readable, the custom names you attribute to your products and services are included directly in the bill, along with the OVHcloud reference.
 Also, to customize the names of your products/services (with the exception of `domain name`{.action} products), go to the OVHcloud Control Panel, then to the configuration page for each service.
+<!-- CP-STEPS-END:customize-product-reference-bill -->
 
 ### How does Public Cloud billing work?
 
@@ -168,11 +186,13 @@ For further information, please read this detailed guide: [Information regarding
 
 ### How do I see the accounts ledger?
 
+<!-- CP-STEPS-START:see-accounts-ledger -->
 The accounts ledger is only issued by the requesting party’s accounts department.
 
 However, OVHcloud offers you access to all of your invoices in an Excel file (.csv).
 
 To download the file, open the [My bills](/links/control-panel/billing-invoices) page. Click on the `Actions`{.action} button, then select `Export as CSV`{.action}.
+<!-- CP-STEPS-END:see-accounts-ledger -->
 
 ## Go further
   

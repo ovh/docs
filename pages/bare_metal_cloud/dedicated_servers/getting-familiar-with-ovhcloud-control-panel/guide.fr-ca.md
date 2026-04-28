@@ -1,6 +1,6 @@
 ---
 title: "Clients Kimsufi et So you Start - Se familiariser avec l'espace client OVHcloud"
-excerpt: "Apprenez à naviguer dans l'espace client OVHcloud"
+excerpt: "Naviguez dans l'espace client OVHcloud en tant que client Kimsufi ou So you Start pour gérer vos serveurs dédiés"
 updated: 2025-04-28
 ---
 
@@ -35,9 +35,9 @@ Depuis l'espace client OVHcloud, cliquez sur `Bare Metal Cloud`{.action} dans le
 
 Une fois dans le menu `Serveurs Dédiés`{.action}, cliquez sur le serveur de votre choix pour accéder à son interface.
 
-![server interface](images/serverinterface01.png){.thumbnail}
+![Onglet informations générales du serveur](images/serverinterface01.png){.thumbnail}
 
-![server interface](images/serverinterface02.png){.thumbnail}
+![Statut du serveur et details réseau](images/serverinterface02.png){.thumbnail}
 
 **Informations générales** : dans cette section, retrouvez toutes les informations concernant votre serveur.
 
@@ -95,6 +95,7 @@ Cliquez sur le nom de votre compte en haut à droite, puis sur `Accéder à mon 
 - **Mes services** : cette rubrique vous permet de visualiser l'ensemble de vos services et vos contrats.
 - **Moyens de paiement** : dans cette rubrique, vous avez accès à votre moyen de paiement actuel, votre compte prépayé ainsi que vos vouchers OVHcloud. Vous y trouverez également l'option d'ajouter/supprimer une méthode de paiement. Pour plus d’informations sur la gestion de vos moyens de paiement, nous vous invitons à consulter [ce guide](/pages/account_and_service_management/managing_billing_payments_and_services/manage-payment-methods).
 - **Mes commandes** : consultez vos commandes depuis cette page. Plus d'informations sur [ce guide](/pages/account_and_service_management/managing_billing_payments_and_services/managing_ovh_orders).
+- **Mes contacts** : dans cette rubrique, vous pouvez visualiser et gérer les contacts associés à vos services. Dans l'onglet **Mes demandes**, vous trouverez les demandes de modification de coordonnées envoyées depuis votre compte client ainsi que les demandes de gestion de services reçues. Pour plus d’informations sur la gestion de vos contacts de services, nous vous invitons à consulter [ce guide](/pages/account_and_service_management/account_information/managing_contacts).
 - **Mes demandes d'assistance** : cette rubrique vous permet d’ouvrir/visualiser l’ensemble de vos demandes d’assistance.
 
 ## Aller plus loin

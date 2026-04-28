@@ -52,6 +52,7 @@ Les langages actuellement disponibles sont :
 - Python
 - Ruby
 
+<!-- CP-STEPS-START:access-runtime-software -->
 Pour accéder aux moteurs d'exécution de votre hébergement [Cloud Web](/links/web/hosting-cloud-web-offer), cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3** étapes.
 
 > [!tabs]
@@ -70,9 +71,11 @@ Pour accéder aux moteurs d'exécution de votre hébergement [Cloud Web](/links/
 > **Étape 3**
 >>
 >> Si vous disposez de l'offre [Cloud Web](/links/web/hosting-cloud-web-offer) avec 2 vCores, vous pouvez ajouter un second moteur d'exécution (maximum 2 par offre) en cliquant sur le bouton `Actions`{.action}, puis sur `Ajouter un moteur d'exécution`{.action}.
+<!-- CP-STEPS-END:access-runtime-software -->
 
 Dès lors, assurez-vous de disposer du ou des moteurs d'exécution nécessaires à votre projet avant de poursuivre.
 
+<!-- CP-STEPS-START:check-cloud-web-vcores -->
 Pour vérifier que vous disposez bien de 2 vCores avec votre hébergement Cloud Web, cliquez sur les onglets ci-dessous pour afficher successivement chacune des **2** étapes.
 
 > [!tabs]
@@ -85,6 +88,7 @@ Pour vérifier que vous disposez bien de 2 vCores avec votre hébergement Cloud 
 > **Étape 2**
 >>
 >> Dans l'encadré **Abonnement** et sous la mention `Offre`, vérifiez que la référence `Cloud Web 3` y est indiquée.
+<!-- CP-STEPS-END:check-cloud-web-vcores -->
 
 ### 3 - Créer des variables d'environnement (facultatif)
 
@@ -92,6 +96,7 @@ Lorsque vous souhaitez déployer plusieurs fois votre projet dans des environnem
 
 Par exemple, cela permet de ne pas définir de fichier « .env » dans le framework, comme sur PHP Laravel : <https://laravel.com/docs/master/configuration>.
 
+<!-- CP-STEPS-START:add-environment-variable -->
 Pour ajouter une variable d'environnement, cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3** étapes.
 
 > [!tabs]
@@ -110,6 +115,7 @@ Pour ajouter une variable d'environnement, cliquez sur les onglets ci-dessous po
 >> Pour en ajouter une nouvelle, cliquez sur le bouton `Actions`{.action}, puis sur `Ajouter une variable d'environnement`{.action}. Suivez alors les indications en fonction de la variable que vous souhaitez créer.
 >>
 >> ![Ajout d'une variable d'environnement sur un hébergement Cloud Web](/pages/assets/screens/control_panel/product-selection/web-cloud/cloud-web/environment-variables/add-an-environment-variable.png){.thumbnail}
+<!-- CP-STEPS-END:add-environment-variable -->
 
 Si vous n’utilisez pas de framework de développement intégrant les variables d’environnement ou si vous souhaitez simplement vérifier le bon fonctionnement de vos variables, vous pouvez créer un script qui effectuera cette vérification. Vous trouverez, ci-dessous, deux exemples pouvant vous aider dans votre démarche, mais ils ne se substituent pas à l’aide d’un webmaster.
 
@@ -137,6 +143,7 @@ Prenez soin de remplacer l'information générique présente dans ces scripts «
 
 ### 4 - Configurer des domaines additionnels en tant que Multisite (facultatif)
 
+<!-- CP-STEPS-START:configure-multisite -->
 Maintenant que l’environnement technique de votre hébergement Cloud Web est prêt, vous pouvez configurer des noms de domaine additionnels à celui-ci en tant que Multisite. Ceci vous permet de partager votre espace afin d’y héberger plusieurs sites internet par exemple. Si cela correspond à votre projet, cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3** étapes.
 
 > [!tabs]
@@ -163,6 +170,7 @@ Maintenant que l’environnement technique de votre hébergement Cloud Web est p
 >> > [!warning]
 >> >
 >> > Si vous avez ajouté un nom de domaine considéré comme externe, vous devrez paramétrer un champ TXT appelé **ovhcontrol** à sa configuration DNS. Il permet à OVHcloud de s’assurer que l’ajout est légitime. Il s’avère donc indispensable et s’il n’est pas réalisé, l’ajout sera annulé.
+<!-- CP-STEPS-END:configure-multisite -->
 
 Répétez cette manipulation si vous souhaitez ajouter plusieurs noms de domaine à votre hébergement Cloud Web. Pour obtenir plus d'informations sur l'ajout d'un nom de domaine en tant que Multisite, consultez notre documentation : [« Partager son hébergement entre plusieurs sites »](/pages/web_cloud/web_hosting/multisites_configure_multisite).
 
@@ -174,6 +182,7 @@ Deux démarches sont possibles pour réaliser l'installation de votre projet. R�
 
 Cette solution vous permet de bénéficier d’une structure de site prête à l’emploi à personnaliser (thème, textes, etc.). OVHcloud en propose quatre avec ses modules en 1 clic à découvrir sur la page [« Créer un site internet avec les modules en 1 clic »](/links/web/hosting-website).
 
+<!-- CP-STEPS-START:install-1-click-module -->
 Si votre choix se porte sur l'utilisation de nos modules en 1 clic, cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3** étapes.
 
 > [!tabs]
@@ -190,6 +199,7 @@ Si votre choix se porte sur l'utilisation de nos modules en 1 clic, cliquez sur 
 > **Étape 3**
 >>
 >> Vous pouvez alors initier une installation en mode « simple » (non personnalisable) ou en mode « avancé » (possibilité de personnaliser certains éléments).
+<!-- CP-STEPS-END:install-1-click-module -->
 
 Si vous désirez obtenir plus d'informations sur les modules en 1 clic OVHcloud, consultez notre documentation : [« Installer son site avec les modules en 1 clic »](/pages/web_cloud/web_hosting/cms_install_1_click_modules).
 

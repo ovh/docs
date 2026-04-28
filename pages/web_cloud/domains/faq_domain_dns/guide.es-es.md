@@ -87,6 +87,7 @@ En caso contrario, su nombre de dominio está registrado en otro registrador. Bu
 
 ///
 
+<!-- CP-STEPS-START:expiry-date -->
 /// details | ¿Cómo conocer la fecha de expiración de un nombre de dominio?
 
 La solución más rápida es realizar una consulta [WHOIS](/links/web/domains-whois) sobre el nombre de dominio. Una vez realizada la consulta, busque en el resultado la línea correspondiente a la fecha de expiración (por ejemplo: `Expiry Date: 2025-09-22T08:00:00Z`, `Registry Expiry Date: 2025-09-22T08:00:00Z`, etc.).
@@ -103,6 +104,7 @@ Si su nombre de dominio está registrado en OVHcloud, haga clic en las pestañas
 >> En la tabla que aparece, busque la línea correspondiente a su nombre de dominio y localice la fecha presente en la columna `Fecha de efecto`. Esta fecha corresponde a la fecha de expiración de su nombre de dominio.
 
 ///
+<!-- CP-STEPS-END:expiry-date -->
 
 /// details | ¿Cómo cambiar la fecha anual de expiración de un nombre de dominio?
 
@@ -142,6 +144,7 @@ Los nombres de dominio se consideran productos personalizados, ya que se registr
 
 ///
 
+<!-- CP-STEPS-START:delete-domain -->
 /// details | ¿Cómo eliminar un nombre de dominio?
 
 Haga clic en las pestañas de abajo para ver cada uno de los **3** pasos.
@@ -170,6 +173,7 @@ Haga clic en las pestañas de abajo para ver cada uno de los **3** pasos.
 > Consulte todos los detalles en nuestra guía "[Cómo dar de baja mis servicios de OVHcloud](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_cancel_services)".
 
 ///
+<!-- CP-STEPS-END:delete-domain -->
 
 /// details | He recibido un e-mail relativo a la validación de la información del titular asociada a mi nombre de dominio, ¿qué debo hacer?
 
@@ -239,6 +243,7 @@ Por lo tanto, si ha cometido un error de escritura durante su pedido, este no po
 
 ///
 
+<!-- CP-STEPS-START:renew-alldom -->
 /// details | ¿Cómo renovar un solo nombre de dominio presente en un pack Alldom?
 
 Para ello, debe estar declarado como mínimo como [contacto "Facturación"](/pages/account_and_service_management/account_information/managing_contacts) del nombre de dominio en cuestión. A continuación, deberá modificar el modo de renovación del nombre de dominio para pasar a la **renovación automática**.
@@ -265,6 +270,7 @@ Para ello, haga clic en las pestañas de abajo para ver cada uno de los **2** pa
 > Consulte todos los detalles en nuestra guía "[Cómo renovar mis servicios de OVHcloud](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal)".
 
 ///
+<!-- CP-STEPS-END:renew-alldom -->
 
 ## Transferencia de un nombre de dominio
 
@@ -399,6 +405,7 @@ Existen numerosos registros DNS. Cada uno tiene un propósito específico en la 
 
 ///
 
+<!-- CP-STEPS-START:dns-records-available -->
 /// details | ¿Cuáles son los registros DNS disponibles en una zona DNS de OVHcloud?
 
 Haga clic en las pestañas de abajo para ver cada uno de los **2** pasos.
@@ -445,7 +452,9 @@ Haga clic en las pestañas de abajo para ver cada uno de los **2** pasos.
 >     - [Mejorar la seguridad de los e-mails mediante un registro DMARC](/pages/web_cloud/domains/dns_zone_dmarc)
 
 ///
+<!-- CP-STEPS-END:dns-records-available -->
 
+<!-- CP-STEPS-START:change-ns-in-dns-zone -->
 /// details | ¿Puedo cambiar los servidores DNS declarados en mi zona DNS en OVHcloud?
 
 La modificación manual de los registros DNS de tipo NS de un nombre de dominio en una zona DNS de OVHcloud no se recomienda, ya que impediría la resolución DNS de la zona DNS correspondiente.
@@ -490,6 +499,7 @@ En caso de error, le invitamos a abrir un tíquet de asistencia desde el [centro
 > Consulte todos los detalles en nuestra guía "[Modificar los servidores DNS de un nombre de dominio en OVHcloud](/pages/web_cloud/domains/dns_server_edit)".
 
 ///
+<!-- CP-STEPS-END:change-ns-in-dns-zone -->
 
 /// details | ¿Cuál es la diferencia entre un registro DNS de tipo A (IPv4) y AAAA (IPv6)?
 
@@ -532,6 +542,7 @@ Para configurar un registro reverse/PTR para una dirección IP externa, contacte
 
 ///
 
+<!-- CP-STEPS-START:change-ttl -->
 /// details | ¿Cómo cambiar el TTL predeterminado en mi zona DNS de OVHcloud?
 
 Haga clic en las pestañas de abajo para ver cada uno de los **3** pasos.
@@ -556,6 +567,7 @@ Haga clic en las pestañas de abajo para ver cada uno de los **3** pasos.
 > La propagación de la modificación de una zona DNS puede tardar hasta **24** horas.
 
 ///
+<!-- CP-STEPS-END:change-ttl -->
 
 /// details | ¿Qué es un registro DNS de tipo SOA?
 
@@ -601,6 +613,7 @@ Estas son diferentes soluciones para verificar la configuración de una zona DNS
 
 ///
 
+<!-- CP-STEPS-START:verify-dns-propagation -->
 /// details | ¿Cómo verificar la propagación de las modificaciones realizadas en mi zona DNS?
 
 > [!primary]
@@ -672,7 +685,9 @@ Una vez obtenido el número de serie, haga clic en las pestañas de abajo para v
 >> - La propagación DNS no se está realizando correctamente. En este caso, desde la ventana `Modificar en modo de texto`{.action} que se abrió en el paso **3**, haga clic directamente **sin realizar modificaciones** en el botón `Siguiente`{.action} y luego en `Validar`{.action}. Se iniciará una nueva propagación DNS.
 
 ///
+<!-- CP-STEPS-END:verify-dns-propagation -->
 
+<!-- CP-STEPS-START:restore-dns-zone -->
 /// details | ¿Cómo restaurar una zona DNS?
 
 Haga clic en las pestañas de abajo para ver cada uno de los **3** pasos.
@@ -701,7 +716,9 @@ Haga clic en las pestañas de abajo para ver cada uno de los **3** pasos.
 > Consulte todos los detalles en nuestra guía "[Gestionar el historial de una zona DNS](/pages/web_cloud/domains/dns_zone_history)".
 
 ///
+<!-- CP-STEPS-END:restore-dns-zone -->
 
+<!-- CP-STEPS-START:get-dns-zone-copy -->
 /// details | ¿Cómo obtener una copia de mi zona DNS?
 
 Haga clic en las pestañas de abajo para ver cada uno de los **3** pasos.
@@ -726,7 +743,9 @@ Haga clic en las pestañas de abajo para ver cada uno de los **3** pasos.
 > Consulte todos los detalles en nuestra guía "[Gestionar el historial de una zona DNS](/pages/web_cloud/domains/dns_zone_history)".
 
 ///
+<!-- CP-STEPS-END:get-dns-zone-copy -->
 
+<!-- CP-STEPS-START:create-dns-zone-subdomain -->
 /// details | ¿Puedo crear una zona DNS para un subdominio?
 
 Puede crear una zona DNS para un subdominio.
@@ -811,7 +830,9 @@ Deberá declarar los 2 servidores DNS para su subdominio directamente ante el pr
 > - [Editar una zona DNS de OVHcloud](/pages/web_cloud/domains/dns_zone_edit)
 
 ///
+<!-- CP-STEPS-END:create-dns-zone-subdomain -->
 
+<!-- CP-STEPS-START:redirect-all-subdomains -->
 /// details | ¿Cómo redirigir todos los subdominios de un mismo nombre de dominio a la misma dirección IP?
 
 Haga clic en las pestañas de abajo para ver cada uno de los **4** pasos.
@@ -844,7 +865,9 @@ Haga clic en las pestañas de abajo para ver cada uno de los **4** pasos.
 > Consulte todos los detalles en nuestra guía "[Editar una zona DNS de OVHcloud](/pages/web_cloud/domains/dns_zone_edit)".
 
 ///
+<!-- CP-STEPS-END:redirect-all-subdomains -->
 
+<!-- CP-STEPS-START:wildcard-dns -->
 /// details | ¿Puedo configurar un wildcard en mi zona DNS?
 
 Es posible configurar un wildcard en una zona DNS de OVHcloud.
@@ -879,9 +902,11 @@ Para ello, haga clic en las pestañas de abajo para ver cada uno de los **4** pa
 > Consulte todos los detalles en nuestra guía "[Editar una zona DNS de OVHcloud](/pages/web_cloud/domains/dns_zone_edit)".
 
 ///
+<!-- CP-STEPS-END:wildcard-dns -->
 
 <br>
 
+<!-- CP-STEPS-START:restore-deleted-dns-zone -->
 /// details | He eliminado accidentalmente mi zona DNS y deseo restaurarla, ¿qué debo hacer?
 
 OVHcloud envía un e-mail con una copia de la zona DNS en formato de texto una vez eliminada su zona DNS, para que pueda restaurarla posteriormente si es necesario.
@@ -927,6 +952,7 @@ Haga clic en las pestañas de abajo para ver cada uno de los **4** pasos.
 > - [Gestionar el historial de una zona DNS](/pages/web_cloud/domains/dns_zone_history)
 
 ///
+<!-- CP-STEPS-END:restore-deleted-dns-zone -->
 
 /// details | ¿Cómo cancelar una solicitud de eliminación de mi zona DNS?
 
@@ -938,6 +964,7 @@ En caso contrario, la eliminación se ha iniciado y ya no puede cancelarse. La o
 
 ///
 
+<!-- CP-STEPS-START:activate-dns-zone -->
 /// details | No consigo activar una zona DNS para mi nombre de dominio, ¿qué debo hacer?
 
 Esta situación se produce cuando ya existe una zona DNS para su nombre de dominio en OVHcloud.
@@ -966,6 +993,7 @@ Haga clic en las pestañas de abajo para ver cada uno de los **2** pasos.
 >> En esta situación, si no conoce este otro identificador de cliente, le invitamos a abrir un tíquet de asistencia desde el [centro de ayuda](https://help.ovhcloud.com/csm?id=csm_get_help) para recuperar la gestión de la zona DNS.
 
 ///
+<!-- CP-STEPS-END:activate-dns-zone -->
 
 /// details | ¿Por qué no encuentro la pestaña "GLUE" en mi área de cliente de OVHcloud?
 
@@ -984,6 +1012,7 @@ Si la pestaña no aparece en su [área de cliente de OVHcloud](/links/manager), 
 >
 > La modificación de los servidores DNS es una manipulación delicada y puede provocar una interrupción de los servicios asociados a su nombre de dominio (alojamiento web, e-mail, etc.). En caso de duda, no dude en contactar con un [proveedor especializado](/links/partner).
 
+<!-- CP-STEPS-START:change-dns-servers -->
 /// details | ¿Cómo modificar mis servidores DNS?
 
 Haga clic en las pestañas de abajo para ver cada uno de los **3** pasos.
@@ -1014,7 +1043,9 @@ Haga clic en las pestañas de abajo para ver cada uno de los **3** pasos.
 > Consulte todos los detalles en nuestra guía "[Modificar los servidores DNS de un nombre de dominio en OVHcloud](/pages/web_cloud/domains/dns_server_edit)".
 
 ///
+<!-- CP-STEPS-END:change-dns-servers -->
 
+<!-- CP-STEPS-START:customize-dns-servers -->
 /// details | ¿Cómo personalizar mis servidores DNS?
 
 Haga clic en las pestañas de abajo para ver cada uno de los **3** pasos.
@@ -1045,7 +1076,9 @@ Haga clic en las pestañas de abajo para ver cada uno de los **3** pasos.
 > Consulte todos los detalles en nuestra guía "[Modificar los servidores DNS de un nombre de dominio en OVHcloud](/pages/web_cloud/domains/dns_server_edit)".
 
 ///
+<!-- CP-STEPS-END:customize-dns-servers -->
 
+<!-- CP-STEPS-START:replace-with-ovhcloud-dns -->
 /// details | ¿Cómo sustituir mis servidores DNS por los de OVHcloud?
 
 Haga clic en las pestañas de abajo para ver cada uno de los **3** pasos.
@@ -1076,6 +1109,7 @@ Haga clic en las pestañas de abajo para ver cada uno de los **3** pasos.
 > Consulte todos los detalles en nuestra guía "[Modificar los servidores DNS de un nombre de dominio en OVHcloud](/pages/web_cloud/domains/dns_server_edit)".
 
 ///
+<!-- CP-STEPS-END:replace-with-ovhcloud-dns -->
 
 /// details | En mi área de cliente, aparece un mensaje de error indicando que no estoy utilizando los servidores DNS de OVHcloud para mi nombre de dominio, ¿qué debo hacer?
 
@@ -1096,6 +1130,7 @@ Si desea utilizar los servidores DNS de OVHcloud para su nombre de dominio, podr
 
 ///
 
+<!-- CP-STEPS-START:cannot-change-dns-servers -->
 /// details | No consigo modificar los servidores DNS de un nombre de dominio desde mi área de cliente de OVHcloud, ¿qué debo hacer?
 
 Esto significa que solo dispone de la gestión de la zona DNS del nombre de dominio, pero no del nombre de dominio en sí.
@@ -1127,6 +1162,7 @@ Para verificarlo, haga clic en las pestañas de abajo para ver cada uno de los *
 >> A continuación, podrá realizar un [procedimiento de recuperación de contactos](/links/transversal/procedure-contact-change) para que su nombre de dominio se gestione íntegramente desde su área de cliente de OVHcloud.
 
 ///
+<!-- CP-STEPS-END:cannot-change-dns-servers -->
 
 ## Más información <a name="go-further"></a>
 

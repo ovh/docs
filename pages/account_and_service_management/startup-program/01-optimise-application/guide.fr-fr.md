@@ -21,9 +21,11 @@ Le Startup Program d'OVHcloud offre de nombreux avantages pour soutenir les star
 
 Assurez-vous que votre compte OVHcloud est correctement configuré avant de soumettre votre candidature.
 
+<!-- CP-STEPS-START:update-account-type -->
 Sélectionnez le statut `Entreprise` et complétez les informations requises. Renseignez le SIRET, le numéro de TVA, l'adresse de la société ainsi que les informations personnelles du titulaire du compte. Utilisez une adresse e-mail professionnelle associée au nom de domaine de votre entreprise. Renseignez également une adresse e-mail de secours (privilégiez une adresse e-mail personnelle).
 
 ![Type de compte](images/01-account-type.png){.thumbnail}
+<!-- CP-STEPS-END:update-account-type -->
 
 Pour plus d'informations, consultez ce guide : [Sécuriser mon compte OVHcloud et gérer mes informations personnelles](/pages/account_and_service_management/account_information/all_about_username).
 
@@ -33,7 +35,9 @@ Un moyen de paiement valide est requis pour garantir la continuité de vos servi
 
 Consultez ce guide pour plus d'informations : [Gérer mes moyens de paiement](/pages/account_and_service_management/managing_billing_payments_and_services/manage-payment-methods).
 
+<!-- CP-STEPS-START:add-payment-method -->
 ![Moyen de paiement](images/02-payment-mean.png){.thumbnail}
+<!-- CP-STEPS-END:add-payment-method -->
 
 ### Etape 3 - Remplir soigneusement le formulaire d'inscription au Startup Program
 

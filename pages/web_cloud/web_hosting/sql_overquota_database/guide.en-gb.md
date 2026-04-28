@@ -65,6 +65,7 @@ The first step is to identify the large table or tables in your database.
 
 Retrieve your database access data directly from your website's configuration file. Perform this action using **part 1** in our guide to [changing a database password](/pages/web_cloud/web_hosting/sql_change_password).
 
+<!-- CP-STEPS-START:connect-phpmyadmin -->
 To connect to the database via phpMyAdmin, click on the tabs below to view each of the **4** steps.
 
 > [!tabs]
@@ -95,6 +96,7 @@ To connect to the database via phpMyAdmin, click on the tabs below to view each 
 >> ![phpMyAdmin Login interface](/pages/assets/screens/other/web-tools/phpmyadmin/pma-interface-login.png){.thumbnail}
 >>
 >> Enter the login information for your database, then click `Login`{.action}.
+<!-- CP-STEPS-END:connect-phpmyadmin -->
 
 #### 1.2 - Find the largest tables <a name="step1.2"></a>
 
@@ -234,6 +236,7 @@ However, you can force them through your services to speed up the process. To do
 
 #### Recalculate the quota for a database included with your web hosting plan
 
+<!-- CP-STEPS-START:recalculate-quota-web-hosting -->
 Click on the tabs below to view each of the **4** steps.
 
 > [!tabs]
@@ -264,9 +267,11 @@ Click on the tabs below to view each of the **4** steps.
 >> Once launched, the operation may take several minutes. When it ends, the "READ ONLY" status of your database disappears.  
 >> Your database is now fully operational again.
 >>
+<!-- CP-STEPS-END:recalculate-quota-web-hosting -->
 
 #### Recalculate the quota for a database hosted on a Web Cloud Databases solution
 
+<!-- CP-STEPS-START:recalculate-quota-web-cloud-databases -->
 Click on the tabs below to view each of the **2** steps.
 
 > [!tabs]
@@ -285,6 +290,7 @@ Click on the tabs below to view each of the **2** steps.
 >> Once launched, the operation may take several minutes. When it ends, the "READ ONLY" status of your database disappears.
 >> Your database is now fully operational again.
 >>
+<!-- CP-STEPS-END:recalculate-quota-web-cloud-databases -->
 
 ## Go further <a name="go-further"></a>
 

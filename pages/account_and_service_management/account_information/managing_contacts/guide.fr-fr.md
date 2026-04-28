@@ -57,6 +57,7 @@ L'identifiant client est un identifiant personnel que vous recevez par e-mail lo
 
 ### Accéder à la gestion des contacts <a name="gestion_des_contacts"></a>
 
+<!-- CP-STEPS-START:access-contact-management -->
 Ouvrez la page [Gestion des contacts](/links/control-panel/account-contacts).
 
 ![Contact management](/pages/assets/screens/control_panel/product-selection/right-menu/my-contacts.png){.thumbnail}
@@ -64,9 +65,11 @@ Ouvrez la page [Gestion des contacts](/links/control-panel/account-contacts).
 Le tableau qui apparaît permet ainsi de visionner les différents services pour lesquels votre identifiant client est renseigné en tant que contact.
 
 ![Contact management](images/managing_contacts_02.png){.thumbnail}
+<!-- CP-STEPS-END:access-contact-management -->
 
 ### Modifier les contacts d'un service
 
+<!-- CP-STEPS-START:change-contacts-service -->
 Une fois sur la page de gestion des contacts, cliquez sur `...`{.action} à droite du service à modifier, puis sur `Modifier les contacts`{.action}. Renseignez le ou les nouveaux contacts souhaités puis cliquez sur `Valider`{.action} votre demande.
 
 ![Contact management](images/managing_contacts_03.png){.thumbnail}
@@ -79,6 +82,7 @@ Un e-mail va être envoyé aux contacts impliqués dans ce processus de modifica
 >
 > Aucun changement de contact ne sera autorisé si l'ancien ou le nouveau compte client concernés ont une ou plusieurs factures impayées.
 >
+<!-- CP-STEPS-END:change-contacts-service -->
 
 #### Je suis contact administrateur <a name="administrateur"></a>
 
@@ -98,6 +102,7 @@ Vous pouvez uniquement désigner un autre contact facturation pour vous remplace
 
 ### Valider, refuser ou suivre un changement de contact <a name="validation"></a>
 
+<!-- CP-STEPS-START:confirm-track-contact-change -->
 Pour suivre et gérer les demandes en cours, cliquez sur l'onglet `Mes demandes`{.action}. C'est ici que vous pourrez accepter ou refuser une demande.
 
 ![Contact management](images/managing_contacts_05.png){.thumbnail}
@@ -120,6 +125,7 @@ Si un seul contact a validé le changement, un message apparaîtra, vous informa
 ![Contact management](images/managing_contacts_007.png){.thumbnail}
 
 Le changement de contact sera effectif quelques minutes après que les deux contacts aient validé la demande. Ils recevront ensuite un e-mail les informant que la demande a bien été traitée.
+<!-- CP-STEPS-END:confirm-track-contact-change -->
 
 ### Exemple de cas concret : confier la gestion technique de votre site à votre webmaster <a name="use-case"></a>
 

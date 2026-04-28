@@ -1,6 +1,6 @@
 ---
-title: 'Configuring OVHcloud Secondary DNS on a dedicated server'
-excerpt: 'Find out how to add a secondary DNS server for your domain'
+title: "Configure OVHcloud Secondary DNS on a Dedicated Server"
+excerpt: "Add a secondary DNS server for your domain name hosted on an OVHcloud dedicated server for improved DNS resilience."
 updated: 2021-01-08
 ---
 
@@ -38,21 +38,21 @@ If you are configuring your dedicated server as a DNS server, you can make use o
 
 Switch to the tab `Secondary DNS`{.action} and click on the button `Add a domain`{.action}.
 
-![Secondary DNS](images/cp-01.png){.thumbnail}
+![Secondary DNS tab with Add a domain button](images/cp-01.png){.thumbnail}
 
 Enter your IP address and the domain name to add, then click `Next`{.action}.
 
-![Secondary DNS](images/cp-02.png){.thumbnail}
+![Add domain form with IP address and domain name fields](images/cp-02.png){.thumbnail}
 
 Confirming with `Next`{.action} in this step will trigger the domain verification check. If you have not already fulfilled this requirement by adding a TXT record to your DNS zone, follow the instructions in the [guide section below](#verifyingdomain) first. Otherwise, continue by clicking on `Next`{.action}.
 
-![Secondary DNS](images/cp-03.png){.thumbnail}
+![Domain verification step with TXT record instructions](images/cp-03.png){.thumbnail}
 
 After clicking on `Add`{.action} in the last window, the domain name will be added to the OVHcloud Secondary DNS server.
 
 Added domain names will be listed in this tab and can be deleted by clicking on the `...`{.action} button. The name of the secondary DNS server will be displayed next to the domain name.
 
-![Secondary DNS](images/cp-05.png){.thumbnail}
+![List of added secondary DNS domains with delete option](images/cp-05.png){.thumbnail}
 
 > [!primary]
 >
@@ -72,12 +72,16 @@ It is necessary to confirm your authorisation to manage the domain name before i
 
 - If the domain is managed by OVHcloud as its registrar and it uses OVHcloud DNS servers, close the window by clicking on `Cancel`{.action} first. Then you can follow the instructions in [this guide](/pages/web_cloud/domains/dns_zone_edit) to add the TXT record in your [OVHcloud Control Panel](/links/manager).
 
-![Secondary DNS](images/cp-04.png){.thumbnail}
+![Owner verification dialogue showing TXT record value](images/cp-04.png){.thumbnail}
 
 After successfully adding the TXT record to the domain name's DNS zone, repeat the [steps above](#addingdomain) and finish the process.
 
 ## Go further
 
 [Editing an OVHcloud DNS zone](/pages/web_cloud/domains/dns_zone_edit)
+
+[How to get started with a Dedicated Server](/pages/bare_metal_cloud/dedicated_servers/getting-started-with-dedicated-server)
+
+[Configuring IPv6 on Dedicated Servers](/pages/bare_metal_cloud/dedicated_servers/network_ipv6)
 
 Join our [community of users](/links/community).

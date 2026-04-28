@@ -1,7 +1,7 @@
 ---
 title: "IPv6 auf einem Dedicated Server konfigurieren"
-excerpt: "Erfahren Sie hier, wie Sie IPv6-Adressen auf unserer Infrastruktur konfigurieren"
-updated: 2025-12-09
+excerpt: "Konfigurieren Sie IPv6-Adressen auf Ihrem OVHcloud Dedicated Server mit Beispielen für die wichtigsten Linux-Distributionen und Windows."
+updated: 2026-04-13
 ---
 
 <style>
@@ -545,6 +545,22 @@ IPv6_GATEWAY `2607:5300:60:62FF:00FF:00FF:00FF:00FF` kann auch als `2607:5300:60
 >>
 >> ![Eigenschaften](images/ipv6_configuration.png){.thumbnail}
 >>
+>> **Schritt 4: Randomisierte IPv6-Schnittstellenidentifikatoren deaktivieren**
+>>
+>> Öffnen Sie das Startmenü, suchen Sie nach `Windows PowerShell`{.action}, klicken Sie mit der rechten Maustaste darauf und wählen Sie `Als Administrator ausführen`{.action}.
+>>
+>> ![PowerShell als Administrator ausführen](images/ipv6_powershell_admin.png){.thumbnail}
+>>
+>> Führen Sie im PowerShell-Fenster den folgenden Befehl aus:
+>>
+>> ```powershell
+>> Set-NetIPv6Protocol -RandomizeIdentifiers Disabled
+>> ```
+>>
+>> ![Randomisierte Identifikatoren deaktivieren](images/ipv6_powershell_randomize_identifiers.png){.thumbnail}
+>>
+>> Dieser Schritt ist für die IPv6-Konnektivität auf der OVHcloud-Infrastruktur erforderlich. Er weist Windows an, seine IPv6-Link-Local-Adressen aus der MAC-Adresse des Adapters (EUI-64) zu berechnen, anstatt zufällige Werte zu verwenden. Die Änderung wird sofort wirksam und bleibt nach einem Neustart erhalten.
+>>
 
 ### Konfiguration überprüfen und die Verbindung testen
 
@@ -639,5 +655,7 @@ Zögern Sie in jedem Fall nicht, sich an [unser Support-Team](https://help.ovhcl
 - Inhalt dieser Datei 
 
 ## Weiterführende Informationen
+
+- [Configuring IPv6 on a VM on a Dedicated Server](/pages/bare_metal_cloud/dedicated_servers/configure-an-ipv6-on-a-vm)
 
 Treten Sie unserer [User Community](/links/community) bei.

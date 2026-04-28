@@ -31,20 +31,25 @@ Rattacher plusieurs lignes au sein d'un seul groupe permet aussi la supervision 
 
 ## En pratique
 
+<!-- CP-STEPS-START:en-pratique-overview -->
 Cliquez sur un groupe de téléphonie pour afficher la liste des services qu'il contient.
 
 ![groupes de téléphonie](images/groupes01.png){.thumbnail}
+<!-- CP-STEPS-END:en-pratique-overview -->
 
 ### Renommer un groupe de téléphonie
 
+<!-- CP-STEPS-START:renommer-groupe -->
 Il peut être utile de bien nommer vos groupes de téléphones dès lors que vous possédez un nombre important de services.
 
 Chaque groupe possède un nom interne unique (1 ci-dessous) que vous ne pouvez pas modifier. Vous pouvez par contre modifier le nom personnalisé du groupe en cliquant sur le crayon (2 ci-dessous) à droite du nom du groupe.
 
 ![renommer groupe](images/groupes02.png){.thumbnail}
+<!-- CP-STEPS-END:renommer-groupe -->
 
 ### Ajouter un groupe de téléphonie
 
+<!-- CP-STEPS-START:ajouter-groupe -->
 L'ajout d'un groupe de téléphonie est gratuit. Pour créer un nouveau groupe, depuis un groupe existant, cliquez sur l'onglet `Administration`{.action} puis sur `Ajouter un groupe`{.action}.
 
 ![ajouter groupe](images/02-ajouter-01.png){.thumbnail}
@@ -54,6 +59,7 @@ Prenez connaissance des contrats et conditions, validez-les puis cliquez sur `Co
 ![ajouter groupe](images/02-ajouter-02.png){.thumbnail}
 
 La création du groupe prend quelques minutes. Il sera alors automatiquement ajouté à la liste de vos groupes dans le menu de gauche. Rafraîchissez votre espace client si vous ne le voyez pas apparaître.
+<!-- CP-STEPS-END:ajouter-groupe -->
 
 ### Regrouper des services dans un groupe de téléphonie <a name="regrouper-lignes"></a>
 
@@ -63,6 +69,7 @@ Un autre cas d'usage fréquent est la supervision, depuis un téléphone ou un l
 Ainsi, une personne en charge de l'accueil téléphonique d'une entreprise peut connaître en temps réel le statut (libre ou occupé) des lignes de ses collègues et ainsi déterminer si un transfert d'appel est possible.
 Pour qu'une ligne soit supervisée, elle doit être dans le **même groupe de téléphonie** que la ligne qui la supervise.
 
+<!-- CP-STEPS-START:regrouper-lignes -->
 Afin de déplacer une ligne dans un nouveau groupe, sélectionnez celui-ci dans le menu de gauche puis cliquez sur l'onglet `Administration`{.action} et enfin sur `Regroupement de lignes`{.action}.
 
 ![regrouper lignes](images/03-regrouper-01.png){.thumbnail}
@@ -72,6 +79,7 @@ Sélectionnez d'abord le groupe qui contient actuellement les lignes souhaitées
 ![regrouper lignes](images/03-regrouper-02.png){.thumbnail}
 
 Cette action prend quelques minutes pour être prise en compte.
+<!-- CP-STEPS-END:regrouper-lignes -->
 
 #### Cas particulier des lignes liées à une offre Découverte
 
@@ -83,9 +91,11 @@ De même, il n'est pas possible d'intégrer d'autres lignes dans un groupe de t�
 Les accès à Internet OVHcloud comprennent souvent des lignes téléphoniques qu'il faut activer dans l'espace client OVHcloud, dans la partie `Accès Internet`{.action}. Ces lignes, une fois activées, génèrent leur propre groupe de téléphonie (un groupe pour chaque accès à Internet).
 <br>Ce groupe est nommé *ovhtel-XXXXXXXX-X*, contrairement à un groupe de téléphonie classique dont le nom contient votre identifiant client, par exemple *az123456-ovh-1*.
 
+<!-- CP-STEPS-START:cas-particulier-acces-internet -->
 |Groupe de téléphonie classique|Groupe de téléphonie lié à un accès à Internet OVHcloud| 
 |---|---| 
 |![groupe VoIP classique](images/03-regrouper-03.png){.thumbnail}|![groupe ovhtel](images/03-regrouper-04.png){.thumbnail}|
+<!-- CP-STEPS-END:cas-particulier-acces-internet -->
 
 > [!warning]
 > Le déplacement d'une ligne liée à un accès à Internet OVHcloud, depuis un groupe *ovhtel-XXXXXXXX-X* vers un autre groupe de téléphonie, n'est pas autorisé.
@@ -102,6 +112,7 @@ Par contre, il n'est pas possible de déplacer un numéro unitaire appartenant �
 
 ### Gérer les options d'un groupe de téléphonie
 
+<!-- CP-STEPS-START:options-groupe -->
 Le menu `Options du groupe`{.action}, dans l'onglet `Administration`{.action}, vous permet d'activer ou désactiver les options suivantes :
 
 - Masquer les appels entrants/sortants sur le relevé de consommation.
@@ -109,6 +120,7 @@ Le menu `Options du groupe`{.action}, dans l'onglet `Administration`{.action}, v
 - Présenter la description des lignes lors des appels.
 
 ![options du groupe](images/options-groupe.png){.thumbnail}
+<!-- CP-STEPS-END:options-groupe -->
 
 ### Supprimer un groupe de téléphonie
 
@@ -119,19 +131,23 @@ Le menu `Options du groupe`{.action}, dans l'onglet `Administration`{.action}, v
 > Vous pouvez déplacer ces services dans un autre groupe ou, si c'est votre souhait, résilier individuellement chaque service.
 >
 
+<!-- CP-STEPS-START:supprimer-groupe -->
 Pour supprimer un groupe de téléphonie, sélectionnez-le dans le menu de gauche puis cliquez sur l'onglet `Administration`{.action} et sur `Supprimer le groupe`{.action}.
 
 ![supprimer groupe](images/04-supprimer.png){.thumbnail}
 
 La suppression d'un groupe de téléphonie n'est pas à effet immédiat, elle est planifiée à la date de votre prochaine facturation. Jusqu'à cette date, elle peut être annulée.
+<!-- CP-STEPS-END:supprimer-groupe -->
 
 #### Annuler une demande de suppression d'un groupe de téléphonie
 
+<!-- CP-STEPS-START:annuler-suppression-groupe -->
 Pour annuler une demande de suppression, cliquez sur `Supprimer le groupe`{.action} puis sur `Annuler la suppression`{.action}.
 
 ![supprimer groupe](images/05-annuler-suppression.png){.thumbnail}
 
 L'annulation sera prise en compte immédiatement.
+<!-- CP-STEPS-END:annuler-suppression-groupe -->
 
 ## Aller plus loin
 

@@ -13,6 +13,17 @@ updated: 2024-05-23
 - Disposer d'un [compte OVHcloud](/pages/account_and_service_management/account_information/ovhcloud-account-creation)
 - Avoir un ou plusieurs produits Hosted Private Cloud - VMware on OVHcloud liés à ce compte (Hosted Private Cloud powered by VMware, Service Pack VMware).
 
+<!-- CP-NAV-START:privatecloud-vmware-vsphere -->
+---
+
+### Accès à l’espace client OVHcloud
+
+- **Lien direct :** [VMware vSphere](/links/control-panel/privatecloud-vmware-vsphere)
+- **Pour accéder à vos services :** `Hosted Private Cloud`{.action} > `Managed VMware vSphere`{.action} > Sélectionnez votre service vSphere
+
+---
+<!-- CP-NAV-END:privatecloud-vmware-vsphere -->
+
 ## En pratique
 
 ### Activer IAM
@@ -20,13 +31,11 @@ updated: 2024-05-23
 > [!primary]
 > Cette opération peut prendre jusqu’à 30 minutes.
 
-### Via l'espace client OVHcloud
+### Via l’espace client OVHcloud
 
-Connectez-vous à votre [espace client OVHcloud](/links/manager) et cliquez sur l'onglet `Hosted Private Cloud`{.action}.
+Cliquez sur [ce lien](/links/control-panel/privatecloud-vmware-vsphere) pour accéder à la section `VMware vSphere`{.action}, puis rendez-vous dans l’onglet `Utilisateurs`{.action}.
 
-Cliquez sur la rubrique `VMware`{.action}, sélectionnez votre infrastructure puis rendez-vous dans l'onglet `Utilisateurs`{.action}.
-
-Sous la section `IAM OVHcloud`{.action}, cliquez sur `Activer l'IAM OVHcloud`{.action}.
+Sous la section `IAM OVHcloud`{.action}, cliquez sur `Activer l’IAM OVHcloud`{.action}.
 
 ![Activer IAM](images/iam_enable_2.png){.thumbnail}
 

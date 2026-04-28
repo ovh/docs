@@ -52,6 +52,7 @@ Following an error on your database, you must be able to restore a backup or imp
 
 #### Restoring an existing backup
 
+<!-- CP-STEPS-START:restore-existing-backup -->
 Click on the tabs below to view each of the **4** steps.
 
 > [!tabs]
@@ -81,8 +82,11 @@ Click on the tabs below to view each of the **4** steps.
 >> >
 >> > Restoration involves overwriting the contents of the database, potentially resulting in data loss. If you are unsure of what you are doing, we recommend creating a backup beforehand.
 
+<!-- CP-STEPS-END:restore-existing-backup -->
+
 #### Importing a local backup
 
+<!-- CP-STEPS-START:import-local-backup -->
 Click on the tabs below to view each of the **4** steps.
 
 > [!tabs]
@@ -129,6 +133,8 @@ Click on the tabs below to view each of the **4** steps.
 >> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/databases/database-import-existing-file-step-2.png){.thumbnail}
 >>
 >> If you wish, tick **"Empty the current database"** before importing, and **"Send an email when importing is complete"** to be informed of the completion of the operation on the primary email address of your OVHcloud account, then click `Confirm`{.action}.
+
+<!-- CP-STEPS-END:import-local-backup -->
 
 ### Importing a database outside the Control Panel
 

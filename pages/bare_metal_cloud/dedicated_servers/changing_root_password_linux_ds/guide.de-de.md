@@ -1,6 +1,6 @@
 ---
-title: "Konfigurieren von Benutzer-Accounts und Root-Zugriff auf einem Server"
-excerpt: "Erfahren Sie hier die ersten Schritte zur Verwaltung von Benutzer-Accounts auf einem GNU/Linux-Betriebssystem"
+title: "Benutzer-Accounts und Root-Zugriff konfigurieren (Dedicated)"
+excerpt: "Verwalten Sie Benutzer-Accounts, sudo-Zugriff und Root-Login auf einem dedizierten GNU/Linux-Server für eine sichere Systemadministration."
 updated: 2024-02-19
 ---
 

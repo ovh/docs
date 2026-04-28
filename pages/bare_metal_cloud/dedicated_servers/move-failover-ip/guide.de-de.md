@@ -1,6 +1,6 @@
 ---
-title: Eine Additional IP umziehen
-excerpt: Erfahren Sie, wie Sie eine Additional IP über Ihr Kundencenter oder die OVHcloud API umziehen
+title: "Additional IP auf einem Dedicated Server umziehen"
+excerpt: "Ziehen Sie eine Additional IP-Adresse zwischen Dedicated Servern über das OVHcloud Kundencenter oder die API um."
 updated: 2026-01-21
 ---
 
@@ -86,11 +86,11 @@ Sie können das Dropdown-Menü unter **Meine öffentlichen IP-Adressen und dazug
 
 Klicken Sie anschließend auf die Schaltfläche `⁝`{.action} rechts neben der zusätzlichen IP-Adresse oder dem IP-Adressblock, den Sie verschieben möchten, und wählen Sie `Verschieben Additional IP`{.action}.
 
-![Kundencenter](images/move_ip_1_new.png){.thumbnail}
+![Kontextmenü zum Umziehen einer Additional IP-Adresse](images/move_ip_1_new.png){.thumbnail}
 
 Wählen Sie im Popup-Fenster aus dem Menü den Dienst aus, zu dem die IP-Adresse verschoben werden soll.
 
-![Kundencenter](images/move_ip_2_new.png){.thumbnail}
+![Zieldienst für Additional IP auswählen](images/move_ip_2_new.png){.thumbnail}
 
 Klicken Sie auf `Weiter`{.action} und dann auf `Bestätigen`{.action}.
 
@@ -135,48 +135,48 @@ Um eine Additional IP von einem SYS Kundencenter zu einem OVHcloud Kundencenter 
 
 Melden Sie sich zunächst bei Ihrem So you Start Kundencenter an und klicken Sie im Haupt-Dashboard auf `IP`{.action}.
 
-![soyoustart to ovh](images/sys-ip-section.png){.thumbnail}
+![IP-Bereich von So you Start im Dashboard](images/sys-ip-section.png){.thumbnail}
 
 Klicken Sie auf das Zahnrad neben der entsprechenden IP und wählen Sie `Failover IP umziehen`{.action}.
 
-![soyoustart to ovh](images/move-ip-sys.png){.thumbnail}
+![Option "Failover-IP umziehen" im So you Start Menü](images/move-ip-sys.png){.thumbnail}
 
 Wählen Sie `Auf eine OVH-Dienstleistung umziehen`{.action}, geben Sie Ihre OVHcloud Kundenkennung, auch "NIC-handle" ein und klicken Sie auf `Weiter`{.action}.
 
-![soyoustart to ovh](images/move-to-ovh.png){.thumbnail}
+![Option "Zu einem OVH-Dienst umziehen" und NIC-Handle eingeben](images/move-to-ovh.png){.thumbnail}
 
 Dadurch wird ein Code (Token) generiert. Speichern Sie diesen.
 
-![soyoustart to ovh](images/token-id.png){.thumbnail}
+![Generierter Token-Code für den IP-Transfer](images/token-id.png){.thumbnail}
 
 Melden Sie sich bei Ihrem [OVHcloud Kundencenter](/links/manager) an, klicken Sie im Menü links auf `Network`{.action} und dann auf `Öffentliche IP-Adressen`{.action}.
 
 Klicken Sie auf das Zahnrad auf der rechten Seite und wählen Sie `Meine IP-Adressen von SyS bei OVHcloud importieren`{.action}.
 
-![SoYouStart to ovh](images/import-ip-to-ovh.png){.thumbnail}
+![Option zum Importieren von IP-Adressen von SyS zu OVHcloud](images/import-ip-to-ovh.png){.thumbnail}
 
 Ein Popup-Fenster wird angezeigt, in dem Sie die Additional IP (oder den Block) und das Token (das im Konto So you Start abgerufen wurde) eingeben können. Klicken Sie dann auf `Weiter`{.action}.
 
-![soyoustart to ovh](images/Step-1.png){.thumbnail}
+![Additional IP und Token für den Import eingeben](images/Step-1.png){.thumbnail}
 
 Wählen Sie den Zielserver aus und klicken Sie auf `Weiter`{.action}. Wenn der Dedicated Server mit der IP-Adresse kompatibel ist, wird eine grüne Meldung angezeigt. Ist dies nicht der Fall, erhalten Sie eine Fehlermeldung.
 
 Klicken Sie auf `Weiter`{.action}.
 
-![soyoustart to ovh](images/Step-2.png){.thumbnail}<br>
-![soyoustart to ovh](images/Step-2.1.png){.thumbnail}
+![Zielserver mit Kompatibilitätsprüfung auswählen](images/Step-2.png){.thumbnail}<br>
+![Bestätigung der Serverkompatibilität](images/Step-2.1.png){.thumbnail}
 
 Im nächsten Fenster wird die Dauer automatisch ausgewählt und die Gebühr angezeigt. Klicken Sie auf `Weiter`{.action}, um fortzufahren.
 
-![soyoustart to ovh](images/Step-3.png){.thumbnail}
+![Zusammenfassung von Laufzeit und Gebühren für den IP-Transfer](images/Step-3.png){.thumbnail}
 
 Markieren Sie `Ich akzeptiere die Verträge`{.action}, um den Dienstleistungsbedingungen zuzustimmen, sobald Sie sie gelesen haben. Klicken Sie dann auf `Weiter`{.action}.
 
-![soyoustart to ovh](images/Step-4.png){.thumbnail}
+![Kontrollkästchen "Verträge akzeptieren" für den IP-Transfer](images/Step-4.png){.thumbnail}
 
 Beachten Sie die Bestellübersicht und klicken Sie auf `Bestätigen`{.action}.
 
-![soyoustart to ovh](images/Step-5.png){.thumbnail}
+![Bestellübersicht und Bestätigung für den IP-Transfer](images/Step-5.png){.thumbnail}
 
 Sie werden auf eine neue Seite weitergeleitet, um die Zahlung vorzunehmen.
 
@@ -203,5 +203,9 @@ Weitere Informationen finden Sie in unserer Liste der [verfügbaren Regionen](/l
 | ap-southeast-syd|    ❌         |      ❌       |     ❌        |        ❌       |      ❌       |       ❌         |      ❌       |      ❌       |       ❌       | ❌      |     ✅       |
 
 ## Weiterführende Informationen
+
+- [Dedicated Server - IP-Aliasing konfigurieren](/pages/bare_metal_cloud/dedicated_servers/network_ipaliasing)
+
+- [Dedicated Server - Additional IPs im Bridge-Modus konfigurieren](/pages/bare_metal_cloud/dedicated_servers/network_bridging)
 
 Treten Sie unserer [User Community](/links/community) bei.

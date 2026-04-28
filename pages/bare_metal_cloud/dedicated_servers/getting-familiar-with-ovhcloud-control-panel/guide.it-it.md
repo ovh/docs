@@ -1,6 +1,6 @@
 ---
-title: Clienti Kimsufi e So you Start - familiarizzarsi con lo Spazio Cliente OVHcloud
-excerpt: Come navigare nello Spazio Cliente OVHcloud
+title: "Spazio Cliente OVHcloud per server dedicati Kimsufi e So you Start"
+excerpt: "Naviga nello Spazio Cliente OVHcloud come cliente Kimsufi o So you Start per gestire i tuoi server dedicati."
 updated: 2025-04-28
 ---
 
@@ -120,4 +120,4 @@ Ecco alcune guide aggiuntive che ti aiuteranno nei tuoi primi passi:
 
 Se avete bisogno di formazione o di assistenza tecnica per implementare le nostre soluzioni, contattate il vostro rappresentante o cliccate su [questo link](/links/professional-services) per ottenere un preventivo e richiedere un'analisi personalizzata del vostro progetto da parte dei nostri esperti del team Professional Services.
 
-Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.
+Contatta la nostra [Community di utenti](/links/community).

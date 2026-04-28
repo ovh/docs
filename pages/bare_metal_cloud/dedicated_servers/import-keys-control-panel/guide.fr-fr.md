@@ -1,6 +1,6 @@
 ---
-title: "Comment stocker les clés SSH dans votre espace client"
-excerpt: "Découvrez comment importer des clés SSH publiques dans votre espace client OVHcloud"
+title: "Stocker des clés SSH de serveur dédié dans l'espace client"
+excerpt: "Importez et gérez vos clés SSH publiques dans l'espace client OVHcloud pour un déploiement rapide sur vos serveurs dédiés"
 updated: 2024-12-04
 ---
 
@@ -42,16 +42,16 @@ Si vous n'avez pas encore créé de paire de clés SSH, consultez d'abord nos gu
 
 Dans la section `Mes services` de votre espace client, cliquez sur `Clés SSH`{.action}.
 
-![control panel ssh keys](images/importkey1.png){.thumbnail}
+![Section cles SSH dans l'espace client](images/importkey1.png){.thumbnail}
 
 Cliquez sur le bouton `Ajouter une clé SSH`{.action} et sélectionnez `Dédié`{.action} dans le menu.
 
-![control panel ssh keys](images/importkey2.png){.thumbnail}
+![Menu Ajouter une cle SSH avec option Dedicated](images/importkey2.png){.thumbnail}
 
 Dans la fenêtre qui s'affiche, saisissez un « label » pour la clé dans le premier champ.  
 Copiez l'intégralité de la chaîne de clé publique et collez-la dans le deuxième champ.
 
-![control panel ssh keys](images/importkey3.png){.thumbnail}
+![Popup pour saisir le libelle et la cle publique SSH](images/importkey3.png){.thumbnail}
 
 Cliquez sur le bouton `Valider`{.action}.
 
@@ -64,6 +64,8 @@ Consultez nos guides « Premiers pas » pour plus de détails sur ce sujet :
 - [VPS](/pages/bare_metal_cloud/virtual_private_servers/starting_with_a_vps)
 
 ## Aller plus loin
+
+[Installer la clé SSH OVHcloud](/pages/bare_metal_cloud/dedicated_servers/ovh_ssh_key)
 
 Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](/links/partner).
 

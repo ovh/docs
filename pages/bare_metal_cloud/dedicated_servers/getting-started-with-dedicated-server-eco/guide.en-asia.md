@@ -1,6 +1,6 @@
 ---
-title: "How to get started with a Kimsufi, So You Start or Rise dedicated server"
-excerpt: "Find out how to manage a Kimsufi, So You Start or Rise in the OVHcloud Control Panel and how to start with configuring and securing a server"
+title: "Get Started with a Kimsufi, So You Start or Rise Server"
+excerpt: "Manage your Kimsufi, So You Start, or Rise server from the OVHcloud Control Panel: install an OS, set up SSH, and secure your service."
 updated: 2025-04-29
 ---
 
@@ -144,10 +144,10 @@ passwd: password updated successfully
 >
 > It is not necessary to use the "root" user account to get started with administrating your server. This account has to be enabled first in the server OS in order to use it. Moreover, SSH connections with the user "root" are **disabled** by default as a security measure.
 > 
-Unless stated otherwise, all administrative actions described in our documentation can be accomplished by the default user account, i.e. typing `sudo` followed by the respective command. Learn more about this topic in our guide on [How to configure user accounts and root access on a server](/pages/bare_metal_cloud/dedicated_servers/changing_root_password_linux_ds).
+Unless stated otherwise, all administrative actions described in our documentation can be accomplished by the default user account, i.e. typing `sudo` followed by the respective command. Learn more about this topic in our guide on [How to configure user accounts and root access on a server](/pages/bare_metal_cloud/dedicated_servers/changing_root_password_linux_ds). 
 >
 
-Depending on your requirements for security, mobility and convenience, SSH keys can serve as an additional connection method or replace logins with username and password. Find out how to use them in our guides:
+Depending on your requirements for security, mobility and convenience, SSH keys can serve as an additional connection method or replace logins with username and password. Find out how to use them in our guides: 
 
 - [How to create and use keys for SSH authentication](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated)
 - [How to create and use keys for SSH authentication with PuTTY](/pages/web_cloud/web_hosting/ssh_using_putty_on_windows)
@@ -183,22 +183,23 @@ To activate them, follow the steps below by navigating through the tabs:
 > 2. **Open the "Run" utility**
 >>
 >> Open the Windows start menu and click on `Run`{.action}.<br><br>
->>![IPMI](/pages/assets/screens/other/windows/windows_start_run.png){.thumbnail}<br>
+>>![Windows Start menu with Run option highlighted](/pages/assets/screens/other/windows/windows_start_run.png){.thumbnail}<br>
 >>
 > 3. **Open "msconfig"**
 >>
 >> Enter "msconfig" and click on `OK`{.action}.<br><br>
->>![IPMI](/pages/assets/screens/other/windows/windows_msconfig.png){.thumbnail}<br>
+>>![Run dialog with msconfig command entered](/pages/assets/screens/other/windows/windows_msconfig.png){.thumbnail}<br>
 >>
 > 4. **Activate logs**
 >>
 >> In the new window, activate the logs option next to `Boot log`. Click on `OK`{.action}.<br><br>
->>![IPMI](/pages/assets/screens/other/windows/windows_log.png){.thumbnail}<br>
+>>![System Configuration window with Boot log option enabled](/pages/assets/screens/other/windows/windows_log.png){.thumbnail}<br>
 >>
 
 The next time your server boots, logs will be saved into a `.txt` file. The file path is: `C:\Windows\ntbtlog.txt`.
 
 To access the log file in rescue mode, please follow the instructions in the [rescue mode guide](/pages/bare_metal_cloud/dedicated_servers/rescue_mode).
+
 
 <a name="reboot"></a>
 
@@ -228,7 +229,7 @@ If your server runs Windows, use [this guide](/pages/bare_metal_cloud/dedicated_
 
 You can set the monitoring status for a dedicated server from the `General information`{.action} tab in your [OVHcloud Control Panel](/links/manager) (section **Service status**).
 
-![Monitoring](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/dedicated-servers/general-information/monitoring-your-server.png){.thumbnail}
+![Monitoring status in the Service status section](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/dedicated-servers/general-information/monitoring-your-server.png){.thumbnail}
 
 Click on the button `Configure`{.action}. In the popup window, you have three options for the monitoring behaviour:
 
@@ -236,7 +237,7 @@ Click on the button `Configure`{.action}. In the popup window, you have three op
 - **Enabled with proactive intervention**: If the server stops responding, an alert email is sent to you and the server will be checked by a technician.
 - **Enabled without proactive intervention**: You will receive an alert message by email in case the server stops responding. To initiate an intervention, you will need to create a support request.
 
-![Monitoring](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/dedicated-servers/general-information/monitoring-your-server2.png){.thumbnail}
+![Monitoring configuration popup with three options](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/dedicated-servers/general-information/monitoring-your-server2.png){.thumbnail}
 
 Click on `Confirm`{.action} to update your monitoring configuration.
 
@@ -312,6 +313,8 @@ To activate and use the backup storage, please refer to [this guide](/pages/bare
 [Activating and using rescue mode](/pages/bare_metal_cloud/dedicated_servers/rescue_mode)
 
 [OVHcloud API & OS installation](/pages/bare_metal_cloud/dedicated_servers/api-os-installation)
+
+[OVHcloud Control Panel for Kimsufi & So you Start Servers](/pages/bare_metal_cloud/dedicated_servers/getting-familiar-with-ovhcloud-control-panel)
 
 If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for a custom analysis of your project.
 

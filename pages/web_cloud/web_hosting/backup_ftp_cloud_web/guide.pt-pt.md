@@ -52,6 +52,7 @@ Contrariamente aos alojamentos partilhados OVHcloud, é impossível efetuar um r
 
 É gerado um link de download do backup que é enviado por e-mail para o endereço de e-mail associado ao identificador de cliente administrador do alojamento Cloud Web.
 
+<!-- CP-STEPS-START:access-ftp-backup -->
 Clique nos separadores abaixo para visualizar cada uma das **5** etapas.
 
 > [!tabs]
@@ -88,6 +89,7 @@ Clique nos separadores abaixo para visualizar cada uma das **5** etapas.
 >> ![Mensagem de progresso do backup](/pages/assets/screens/control_panel/product-selection/web-cloud/cloud-web/ftp-ssh/message-backup-progress.png){.thumbnail}
 >>
 >> A geração do backup demora entre 10 e 15 minutos.
+<!-- CP-STEPS-END:access-ftp-backup -->
 
 ### Descarregar o backup
 

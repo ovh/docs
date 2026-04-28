@@ -40,6 +40,7 @@ Esta guía explica cómo activar el alojamiento gratuito 100M en su [nombre de d
 
 ## Procedimiento
 
+<!-- CP-STEPS-START:activate-100m-steps -->
 Para activar su alojamiento gratuito 100M, haga clic en las fichas siguientes para ver cada una de las **3** etapas.
 
 > [!tabs]
@@ -78,6 +79,7 @@ Para activar su alojamiento gratuito 100M, haga clic en las fichas siguientes pa
 >> La sección **3** le recuerda el precio de la solución. 
 >>
 >> En la sección **4**, debe leer los contratos y aceptar su pedido.
+<!-- CP-STEPS-END:activate-100m-steps -->
 
 > [!primary]
 >

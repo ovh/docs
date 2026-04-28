@@ -81,6 +81,7 @@ Pour l'exemple cité plus haut :
 
 ### Augmenter la limite de base
 
+<!-- CP-STEPS-START:augmenter-limite-base -->
 Dans l'onglet `Facturation`{.action}, cliquez sur `Modifier votre limite de dépôt de garantie`{.action}.
 
 ![augmenter limite hors forfait](images/hflimit1.png){.thumbnail}
@@ -90,9 +91,11 @@ Choisissez le montant de votre limite. Une lecture des contrats relatifs à cett
 ![augmenter limite hors forfait](images/hflimit2.png){.thumbnail}
 
 Vous pouvez revenir à 150€ HT à tout moment via la même méthode.
+<!-- CP-STEPS-END:augmenter-limite-base -->
 
 ### Augmenter le dépôt de garantie
 
+<!-- CP-STEPS-START:augmenter-depot-garantie -->
 Dans l'onglet `Facturation`{.action}, cliquez sur `Augmenter le plafond de dépôt de garantie`{.action}.
 
 ![augmenter depot de garantie](images/securitydeposit1.png){.thumbnail}
@@ -109,6 +112,7 @@ Un bon de commande sera alors généré. Cliquez sur le numéro de bon de comman
 > - Vous pouvez rajouter une somme par dessus un dépôt déjà existant, elle sera cumulée au premier.
 > - Le dépôt de garantie ne peut pas servir à payer votre hors-forfait. Ce dépôt restera inactif tant qu'il ne sera pas récupéré.
 >
+<!-- CP-STEPS-END:augmenter-depot-garantie -->
 
 ### Comment récupérer le dépôt de garantie ?
 
@@ -116,6 +120,7 @@ Si vous souhaitez récupérer le dépôt de garantie de l'un de vos groupes de t
 
 Le dépôt de garantie sera alors crédité sur votre compte prépayé OVHcloud, à la date de facturation suivant la suppression du groupe.
 
+<!-- CP-STEPS-START:recuperer-depot-garantie -->
 Pour supprimer un groupe de téléphonie, sélectionnez-le dans le menu de gauche puis cliquez sur l’onglet `Administration`{.action} et sur `Supprimer le groupe`{.action}.
 
 ![Suppression groupe de téléphonie](images/SupprGroup.png){.thumbnail}
@@ -126,11 +131,13 @@ Pour supprimer un groupe de téléphonie, sélectionnez-le dans le menu de gauch
 > Si vous souhaitez conserver ces services, vous devez les déplacer dans un autre groupe de téléphonie, **avant** de supprimer le groupe initial.
 > Pour cela, consultez le guide ["Gestion des groupes de téléphonie"](/pages/web_cloud/phone_and_fax/voip/regrouper_services_telephonie) afin de créer un nouveau groupe ou de déplacer les services dans un groupe existant.
 >
+<!-- CP-STEPS-END:recuperer-depot-garantie -->
 
 ### Les transferts entre groupes
 
 Si vous possédez plusieurs groupes de téléphonie, vous pouvez ajuster leur hors-forfait autorisé en transférant, partiellement ou totalement, un dépôt de garantie d'un groupe à l'autre.
 
+<!-- CP-STEPS-START:transferts-entre-groupes -->
 Dans l'onglet `Facturation`{.action}, cliquez sur `Transfert de vos dépôts de garantie entre groupes`{.action}.
 
 ![transfert depot de garantie](images/transferdeposit1.png){.thumbnail}
@@ -142,6 +149,7 @@ Sélectionnez le groupe « Source » qui va transférer le dépôt de garantie, 
 > [!warning]
 > Le transfert entre groupes n'est pas possible si le groupe source ou destination est suspendu pour dépassement du hors forfait autorisé.
 >
+<!-- CP-STEPS-END:transferts-entre-groupes -->
 
 ### Qu'arrive t-il en cas de dépassement ?
 
@@ -157,9 +165,11 @@ Au cours du mois, vous recevrez des e-mails de notification sur votre adresse e-
 
 Si votre groupe est suspendu pour dépassement du hors-forfait autorisé, la première chose à faire est de s'assurer qu'il n'y a pas eu un piratage de votre ligne. Pour cela, consultez les appels émis par les lignes et numéros du groupe.
 
+<!-- CP-STEPS-START:depassement-consommation -->
 Dans l'onglet `Facturation`{.action}, cliquez sur `Consommation générale`{.action}.
 
 ![consommation générale](images/voipconso.png){.thumbnail}
+<!-- CP-STEPS-END:depassement-consommation -->
 
 Si vous constatez des anomalies, commencez par [sécuriser votre ligne SIP](/pages/web_cloud/phone_and_fax/voip/secure-sip-line). 
 

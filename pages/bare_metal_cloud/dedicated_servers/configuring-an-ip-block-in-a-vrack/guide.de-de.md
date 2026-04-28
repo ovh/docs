@@ -1,6 +1,6 @@
 ---
-title: 'Konfiguration eines Additional IP-Blocks in einem vRack'
-excerpt: 'In dieser Anleitung erfahren Sie, wie Sie einen Block öffentlicher IP-Adressen für die Verwendung mit dem vRack konfigurieren.'
+title: "Einen IP-Block im vRack auf einem Dedicated Server konfigurieren"
+excerpt: "Konfigurieren Sie einen öffentlichen IP-Adressblock für das private OVHcloud vRack-Netzwerk auf Dedicated Servern."
 updated: 2026-04-03
 ---
 
@@ -387,7 +387,7 @@ sudo dnf install iproute
 >> sudo netplan apply
 >> ```
 >> 
-> **Fedora, AlmaLinux und Rocky Linux (10/11)**
+> **Fedora, AlmaLinux und Rocky Linux (10)**
 >>
 >> Überprüfen Sie zunächst, dass Ihre vRack-Schnittstelle den Status `connected` oder `connecting` hat. In unserem Beispiel heißt die Schnittstelle `eno2`.
 >>
@@ -484,19 +484,19 @@ Prüfen Sie die Informationen der neuen Netzwerkschnittstelle:
 
 Prüfen Sie anschließend die Eigenschaften:
 
-![Eigenschaften der sekundären Netzwerkschnittstelle](images/win-ip-vrack-2.png){.thumbnail}
+![Netzwerkadapter-Eigenschaften für das vRack-Interface](images/win-ip-vrack-2.png){.thumbnail}
 
-![Eigenschaften der sekundären Netzwerkschnittstelle](images/win-ip-vrack-3.png){.thumbnail}
+![IPv4-Eigenschaften des vRack-Netzwerkadapters](images/win-ip-vrack-3.png){.thumbnail}
 
 #### Schritt 2: IP-Konfiguration
 
 Wählen Sie die Option `Use the following IP address`{.action}:
 
-![IP-Konfiguration](images/win-ip-vrack-4.png){.thumbnail}
+![Option "Folgende IP-Adresse verwenden" auswählen](images/win-ip-vrack-4.png){.thumbnail}
 
 Legen Sie die IP-Informationen fest:
 
-![IP-Konfiguration](images/win-ip-vrack-5b.png){.thumbnail}
+![IP-Adresse und Subnetzmaske für vRack ausgefüllt](images/win-ip-vrack-5b.png){.thumbnail}
 
 #### Schritt 3: Neustart der Netzwerkschnittstelle
 
@@ -527,5 +527,7 @@ Fügen Sie die obigen Ergebnisse Ihrem Ticket bei.
 [Mehrere VLANs in einem vRack erstellen](/pages/bare_metal_cloud/dedicated_servers/creating-multiple-vlans-in-a-vrack)
 
 [Das vRack zwischen der Public Cloud und einem dedizierten Server konfigurieren](/pages/bare_metal_cloud/dedicated_servers/configuring-the-vrack-between-the-public-cloud-and-a-dedicated-server)
+
+- [Dedicated Server - IP-Block-Ankündigung im vRack ändern](/pages/bare_metal_cloud/dedicated_servers/vrack_change_zone_announce)
 
 Treten Sie unserer [User Community](/links/community) bei.

@@ -1,6 +1,6 @@
 ---
-title: "How to use SFTP to transfer files"
-excerpt: "Find out how to connect to your server with FileZilla to upload and download files"
+title: "Transfer Files via SFTP on a Dedicated Server"
+excerpt: "Transfer files to and from your dedicated server using SFTP with FileZilla for secure uploads and downloads."
 updated: 2025-02-21
 ---
 

@@ -101,6 +101,7 @@ Esistono tuttavia **casi particolari**, descritti in dettaglio [più in basso](#
 
 ### Come disattivare l’abbonamento <a name="terminate"></a>
 
+<!-- CP-STEPS-START:cancel-subscription -->
 Per disattivare l’abbonamento al servizio, apri la pagina [Le mie offerte e servizi](/links/control-panel/billing-services).
 
 ![prodotti e servizi](/pages/assets/screens/control_panel/product-selection/right-menu/my-solutions-and-services.png){.thumbnail}
@@ -115,12 +116,13 @@ Indica i motivi della richiesta di disattivazione e clicca su `Conferma`{.action
 >
 > Ottenere la vostra opinione è essenziale per noi. In questo modo possiamo far evolvere i nostri servizi in modo che rispondano al meglio alle tue esigenze e aspettative.
 >
-> Per maggiori informazioni sulla tua esperienza personale con OVHcloud, consulta il form proposto al momento della disattivazione. Ti ringraziamo fin d'ora per il tuo contributo al miglioramento dei nostri prodotti.
+> Per maggiori informazioni sulla tua esperienza personale con OVHcloud, consulta il form proposto al momento della disattivazione. Ti ringraziamo fin d’ora per il tuo contributo al miglioramento dei nostri prodotti.
 >
 
 La disattivazione del servizio avverrà alla **data di entrata in vigore** indicata nella tabella "Gestione delle mie offerte e servizi". Se non vedi lo stato "Disattivazione programmata", aggiorna la pagina.
 
 ![richiesta di disattivazione](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/cancellation-request.png){.thumbnail}
+<!-- CP-STEPS-END:cancel-subscription -->
 
 ### Casi particolari <a name="specific-cases"></a>
 
@@ -170,9 +172,11 @@ Per disattivare la soluzione [VMware on OVHcloud](https://www.ovhcloud.com/it/en
 
 #### Public Cloud <a name="publiccloud"></a>
 
+<!-- CP-STEPS-START:public-cloud-deletion -->
 Ogni servizio [Public Cloud](/links/public-cloud/public-cloud) può essere eliminato cliccando sul pulsante `...`{.action} a destra del servizio interessato e poi su `Elimina`{.action}, come nell'esempio seguente per un'istanza:
 
 ![public cloud instance deletion](images/pci-deletion-en.png){.thumbnail}
+<!-- CP-STEPS-END:public-cloud-deletion -->
 
 Il Public Cloud OVHcloud si basa sul principio del *Pay as you go* (per maggiori informazioni, consulta la pagina [relativa alla fatturazione Public Cloud](/pages/public_cloud/public_cloud_cross_functional/analyze_billing)). Alla fine del mese viene fatturato solo il tempo di utilizzo effettivo delle risorse.
 
@@ -185,6 +189,7 @@ Accedi allo Spazio Cliente OVHcloud per [consultare i tuoi consumi correnti](/pa
 > Puoi annullare una richiesta di disattivazione del servizio fino a 24 ore prima della data di scadenza dell'abbonamento.
 >
 
+<!-- CP-STEPS-START:stop-cancellation -->
 Per annullare una richiesta di disattivazione, apri la pagina [Le mie offerte e servizi](/links/control-panel/billing-services).
 
 Clicca sui tre puntini `...`{.action} in corrispondenza del servizio richiesto e seleziona `Annulla la disattivazione del servizio`{.action} 
@@ -192,6 +197,7 @@ Clicca sui tre puntini `...`{.action} in corrispondenza del servizio richiesto e
 ![cancel_termination](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/cancel_termination-en.png){.thumbnail}
 
 Infine clicca su `Conferma l'annullamento`{.action}.
+<!-- CP-STEPS-END:stop-cancellation -->
 
 L'annullamento della disattivazione ha effetto immediato. Aggiorna la pagina "Gestione delle mie offerte e servizi" se visualizzi ancora lo stato "Disattivazione programmata".
 

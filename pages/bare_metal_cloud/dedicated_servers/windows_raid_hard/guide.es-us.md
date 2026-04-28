@@ -1,6 +1,6 @@
 ---
-title: 'Crear una partición de Windows en un servidor con RAID de hardware'
-excerpt: 'Esta guía explicará los pasos necesarios para crear una partición de Windows en un servidor con RAID de hardware.'
+title: "Crear una partición de Windows en un servidor dedicado con RAID de hardware"
+excerpt: "Cree una partición de Windows en un servidor dedicado de OVHcloud equipado con un controlador RAID de hardware."
 updated: 2018-07-24
 ---
 

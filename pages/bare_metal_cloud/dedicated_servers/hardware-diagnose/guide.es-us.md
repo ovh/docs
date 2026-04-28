@@ -1,6 +1,6 @@
 ---
-title: "Diagnosticar fallos de hardware en un servidor dedicado"
-excerpt: "Cómo utilizar las herramientas de diagnóstico para identificar fallos de hardware en el servidor"
+title: "Realizar un diagnóstico de hardware en modo rescue en un servidor dedicado"
+excerpt: "Ejecute diagnósticos de hardware en su servidor dedicado de OVHcloud en modo rescue para identificar fallos de disco, RAM o CPU."
 updated: 2025-10-16
 ---
 

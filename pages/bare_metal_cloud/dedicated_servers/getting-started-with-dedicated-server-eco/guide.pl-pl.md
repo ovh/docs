@@ -1,6 +1,6 @@
 ---
-title: "Pierwsze kroki z serwerem dedykowanym Kimsufi, So You Start lub Rise"
-excerpt: "Dowiedz się, jak zarządzać serwerem dedykowanym Kimsufi, So You Start lub Rise w Panelu klienta i jak rozpocząć konfigurację oraz zabezpieczenie serwera"
+title: "Pierwsze kroki z serwerem dedykowanym Eco"
+excerpt: "Rozpocznij pracę z serwerem dedykowanym OVHcloud z gamy Eco: logowanie SSH, instalacja systemu i konfiguracja."
 updated: 2025-04-29
 ---
 
@@ -228,7 +228,7 @@ Jeśli korzystasz z serwera Windows, zapoznaj się z [tym przewodnikiem](/pages/
 
 Możesz włączyć lub wyłączyć monitoring serwera dedykowanego w zakładce `Informacje ogólne`{.action} w Twoim [Panelu klienta OVHcloud](/links/manager). Wariant ten znajduje się w sekcji `Status usług`.
 
-![Monitoring](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/dedicated-servers/general-information/monitoring-your-server.png){.thumbnail}
+![Status monitorowania w sekcji Stan usługi](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/dedicated-servers/general-information/monitoring-your-server.png){.thumbnail}
 
 Kliknij przycisk `Skonfiguruj`{.action}. W oknie, które się pojawi, masz trzy opcje dotyczące zachowania inwigilacji:
 
@@ -236,7 +236,7 @@ Kliknij przycisk `Skonfiguruj`{.action}. W oknie, które się pojawi, masz trzy 
 - **Aktywny z aktywną interwencją**: Jeśli serwer przestanie odpowiadać, otrzymasz wiadomość e-mail z alertem. Serwer zostanie zweryfikowany przez technika.
 - **Aktywny bez aktywnej interwencji**: Otrzymasz e-mail z komunikatem ostrzegawczym, jeśli serwer przestanie odpowiadać. Aby rozpocząć interwencję, należy utworzyć wniosek o pomoc.
 
-![Monitoring](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/dedicated-servers/general-information/monitoring-your-server2.png){.thumbnail}
+![Okno konfiguracji monitorowania z trzema opcjami](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/dedicated-servers/general-information/monitoring-your-server2.png){.thumbnail}
 
 Kliknij na `Zatwierdź`{.action}, aby zaktualizować konfigurację monitorowania.
 
@@ -315,4 +315,5 @@ Aby włączyć i korzystać z opcji Backup Storage, zapoznaj się [z tym przewod
 
 Jeśli potrzebujesz szkolenia lub pomocy technicznej w celu wdrożenia naszych rozwiązań, skontaktuj się z przedstawicielem handlowym lub kliknij [ten link](/links/professional-services), aby uzyskać wycenę i poprosić o spersonalizowaną analizę projektu od naszych ekspertów z zespołu Professional Services.
 
+- [Serwer dedykowany - Zapoznanie się z Panelem klienta OVHcloud](/pages/bare_metal_cloud/dedicated_servers/getting-familiar-with-ovhcloud-control-panel)
 Dołącz do [grona naszych użytkowników](/links/community).

@@ -17,7 +17,6 @@ Ce guide vous détaille comment consulter les alertes et les évènements ainsi 
 ## Prérequis
 
 - Disposer d'un cluster Nutanix dans votre compte OVHcloud
-- Être connecté à votre [espace client OVHcloud](/links/manager)
 - Être connecté sur le cluster via Prism Central
 
 ## Définitions des alertes, événements et tâches dans Prism Central

@@ -15,8 +15,9 @@ With the OVHcloud MX Plan, you can send and receive emails from third-party soft
 - Access to the MX Plan email account you would like to use; for more information, please refer to our guide [Getting started with an MX Plan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities).
 - Your OVHcloud email solution **MX Plan** must use the webmail technology **Roundcube**. To identify it, follow the instructions below.
 
+<!-- CP-STEPS-START:identify-mx-plan-technology -->
 > [!primary]
-> 
+>
 > **How do I identify the technology used on my MX Plan solution?**
 >
 > The email technology used for your MX Plan solution is characterized by its webmail interface. To identify it via the OVHcloud Control Panel, follow this path:
@@ -29,6 +30,7 @@ With the OVHcloud MX Plan, you can send and receive emails from third-party soft
 > 1. Note the technology used as **Webmail**.
 >
 > ![MX Plan](images/technology-email.png){.thumbnail .w-500}
+<!-- CP-STEPS-END:identify-mx-plan-technology -->
 
 <!-- CP-NAV-START:web-mx-plan -->
 ---
@@ -370,11 +372,15 @@ To add a response, click the `+`{.action} button at the bottom of the `Replies` 
 
 ### Adding an autoresponder <a name="automatic-respond"></a>
 
+<!-- CP-STEPS-START:autoresponder-cp-reference -->
 You want to add an automatic reply to your email account when you are absent or unavailable. This feature cannot be enabled via webmail, but via your [OVHcloud Control Panel](/links/manager), in the management interface for your email accounts. Read our guide "[Creating an autoresponder for your email addresses](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/feature_auto_responses/)".
+<!-- CP-STEPS-END:autoresponder-cp-reference -->
 
 ### Changing your email password <a name="password"></a>
 
+<!-- CP-STEPS-START:change-password-cp-reference -->
 To change your email password, you will need to log in to your [OVHcloud Control Panel](/links/manager), in the interface for managing your email addresses. Read our guide "[Changing an email password](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_change_password/)".
+<!-- CP-STEPS-END:change-password-cp-reference -->
 
 ### Writing an email <a name="email-writing"></a>
 

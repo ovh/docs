@@ -42,11 +42,12 @@ Une interface spécifique vous propose également de suivre en temps réel les d
 
 ### Étape 1 : Appliquer la configuration « Conférence »
 
-- Si votre numéro n'est actuellement pas configuré, cliquez sur l'onglet `Configuration`{.action}, sélectionnez `Conférence`{.action} puis cliquez sur `Paramétrer`{.action}.
+<!-- CP-STEPS-START:appliquer-configuration-conference -->
+- Si votre numéro n’est actuellement pas configuré, cliquez sur l’onglet `Configuration`{.action}, sélectionnez `Conférence`{.action} puis cliquez sur `Paramétrer`{.action}.
 
-- Si votre numéro a déjà une configuration en place, cliquez sur l'onglet `Configuration`{.action} puis sur `Changer de configuration`{.action}. Sélectionnez ensuite `Conférence`{.action} et cliquez sur `Paramétrer`{.action}. Vous devrez alors confirmer la perte de la configuration actuellement en place.
+- Si votre numéro a déjà une configuration en place, cliquez sur l’onglet `Configuration`{.action} puis sur `Changer de configuration`{.action}. Sélectionnez ensuite `Conférence`{.action} et cliquez sur `Paramétrer`{.action}. Vous devrez alors confirmer la perte de la configuration actuellement en place.
 
-L'application de la configuration prend quelques secondes.
+L’application de la configuration prend quelques secondes.
 
 ![conférence](images/conference2026-01.png){.thumbnail}
 
@@ -59,34 +60,40 @@ L'application de la configuration prend quelques secondes.
 > Cliquez sur le bouton `Paramétrer`{.action} et patientez quelques instants pendant l’application du paramétrage.
 >
 > Si vous appliquez le même type de configuration à plusieurs numéros, vous devrez finaliser la configuration sur chacun des numéros concernés.
+<!-- CP-STEPS-END:appliquer-configuration-conference -->
 
 ### Étape 2 : Accéder à la configuration de la conférence
 
+<!-- CP-STEPS-START:acceder-configuration-conference -->
 Une fois la configuration appliquée, vous accédez directement aux paramètres de la conférence.
 
 Pour retrouver ce menu ultérieurement, cliquez sur l'onglet `Configuration`{.action} puis sur `Conférence`{.action}.
+<!-- CP-STEPS-END:acceder-configuration-conference -->
 
 ### Étape 3 : Gérer les paramètres de la conférence
 
 #### Configurer la conférence
 
+<!-- CP-STEPS-START:configurer-conference -->
 Dans la partie « Configuration », définissez les paramètres de la conférence.
 
 ![conference](images/conference2022-02.png){.thumbnail}
 
 |Paramètres|Description|
 |---|---|
-|Code PIN d’accès|Le code PIN défini devra être renseigné lorsqu'un participant rejoindra la conférence. Celui-ci doit être compris entre 1 et 8 numéros. Indiquez « 0 » ou laissez la case vide pour ne pas utiliser de code PIN.|
-|Annonce personnalisée|Permet de personnaliser l'annonce d'entrée d'un nouveau participant dans la conférence. Pour cela, cliquez sur `Ajouter un son`{.action} puis suivez les étapes qui apparaissent.|
-|Enregistrement de la conférence|Permet d'activer ou non l'enregistrement des conférences réalisées sur le numéro.|
-|Microphone des participants à l’entrée|Permet d'activer ou de rendre muet le microphone des participants lorsqu'ils rejoignent la conférence.|
-|Appels anonymes|Permet d'autoriser ou d'interdire l'accès à la conférence aux numéros anonymes.|
+|Code PIN d’accès|Le code PIN défini devra être renseigné lorsqu’un participant rejoindra la conférence. Celui-ci doit être compris entre 1 et 8 numéros. Indiquez « 0 » ou laissez la case vide pour ne pas utiliser de code PIN.|
+|Annonce personnalisée|Permet de personnaliser l’annonce d’entrée d’un nouveau participant dans la conférence. Pour cela, cliquez sur `Ajouter un son`{.action} puis suivez les étapes qui apparaissent.|
+|Enregistrement de la conférence|Permet d’activer ou non l’enregistrement des conférences réalisées sur le numéro.|
+|Microphone des participants à l’entrée|Permet d’activer ou de rendre muet le microphone des participants lorsqu’ils rejoignent la conférence.|
+|Appels anonymes|Permet d’autoriser ou d’interdire l’accès à la conférence aux numéros anonymes.|
 |Langue de votre conférence|Permet de définir la langue de la conférence parmi plusieurs options.|
 
 Cliquez enfin sur le bouton `Valider`{.action} en bas de la page afin de confirmer les changements.
+<!-- CP-STEPS-END:configurer-conference -->
 
 #### Administrer la conférence
 
+<!-- CP-STEPS-START:administrer-conference -->
 Dans la partie « Administration », définissez également vos paramètres.
 
 ![conference](images/conference2022-03.png){.thumbnail}
@@ -97,6 +104,7 @@ Dans la partie « Administration », définissez également vos paramètres.
 |Suivi et contrôle de la conférence|Permet d'activer des liens pour suivre et contrôler la conférence. Pour les activer, cliquez sur `Générer les URL`{.action}. Un bouton à droite de chaque URL vous permet de la copier.<br><br> Si des URL sont déjà générées, vous avez la possibilité de :<br><br> - **Régénérer les URL** : permet de remplacer les URL existantes par d'autres ;<br> - **Supprimer les URL** : permet de désactiver le suivi et le contrôle de la conférence.|
 
 Cliquez enfin sur le bouton `Valider`{.action} pour confirmer les changements.
+<!-- CP-STEPS-END:administrer-conference -->
 
 ### Étape 4 : Utiliser la conférence
 

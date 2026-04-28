@@ -45,6 +45,7 @@ Poursuivez la lecture de cette documentation en fonction de la solution que vous
 
 ### Activer le verrouillage des appels sortants <a name="verrouillage"></a>
 
+<!-- CP-STEPS-START:verrouillage-des-appels-sortants -->
 Dans l'onglet `Gestion des appels`{.action}, cliquez sur `Verrouillage des appels sortants`{.action}.
 
 ![gerer-appels-verrouillage](images/manage-calls-locking-step1.png){.thumbnail}
@@ -54,6 +55,7 @@ Sur la page qui s'affiche, cochez la case `Activer le verrouillage`{.action} et 
 Vous pouvez appliquer ce verrouillage à plusieurs lignes grâce au bouton `Appliquer à plusieurs lignes`{.action}. Cliquez finalement sur le bouton `Valider`{.action} pour appliquer la nouvelle configuration.
 
 ![gerer-appels-verrouillage](images/manage-calls-locking-step2.png){.thumbnail}
+<!-- CP-STEPS-END:verrouillage-des-appels-sortants -->
 
 ### Activer le renvoi d'appel <a name="renvoi"></a>
 
@@ -65,6 +67,7 @@ Vous pouvez appliquer ce verrouillage à plusieurs lignes grâce au bouton `Appl
 > Si vous souhaitez renvoyer les appels **en fonction de plages horaires**, consultez notre guide « [Configurer des plages horaires et des fermetures exceptionnelles sur une ligne](/pages/web_cloud/phone_and_fax/voip/configure-time-slot-and-closing-time)».
 >
 
+<!-- CP-STEPS-START:renvoi-d-appel -->
 Dans l'onglet `Gestion des appels`{.action}, cliquez sur `Renvoi d'appel`{.action}.
 
 ![gerer-appels-renvoi](images/manage-calls-fowarding-step1.png){.thumbnail}
@@ -107,9 +110,11 @@ Vous pouvez appliquer vos choix de configuration à plusieurs lignes, grâce au 
 > - Vous avez configuré, sur votre ligne OVHcloud **A**, un renvoi de tous les appels vers un numéro de mobile **B**
 > - Un interlocuteur (**C**) vous appelle sur la ligne OVHcloud **A**.
 > - Vous recevez l'appel (via le renvoi d'appels) sur le mobile **B**. Peuvent alors être présentés à l'écran, suivant votre opérateur de téléphonie mobile, le numéro de l'appelant (**C**) et/ou le numéro de la ligne appelée (**B**).
+<!-- CP-STEPS-END:renvoi-d-appel -->
 
 ### Activer le filtrage d'appels <a name="filtrage"></a>
 
+<!-- CP-STEPS-START:filtrage-d-appels -->
 Dans l'onglet `Gestion des appels`{.action}, cliquez sur `Filtrage d'appels`{.action}.
 
 ![gerer-appels-filtrage](images/manage-calls-filtering-step1.png){.thumbnail}
@@ -160,6 +165,7 @@ Enfin, dans la partie « Configuration actuelle », vous pouvez visualiser les f
 >
 
 ![gerer-appels-filtrage](images/manage-calls-filtering-step3.png){.thumbnail}
+<!-- CP-STEPS-END:filtrage-d-appels -->
 
 ## Aller plus loin
 

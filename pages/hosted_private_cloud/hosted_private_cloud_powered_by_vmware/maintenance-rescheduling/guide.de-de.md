@@ -22,8 +22,19 @@ Wenn Wartungsarbeiten geplant sind, die Ihre Hosted Private Cloud Infrastruktur 
 ## Voraussetzungen
 
 - Sie haben eine E-Mail mit der Benachrichtigung über die Wartungsarbeiten erhalten, in der ausdrücklich darauf hingewiesen wird, dass Sie **das Datum der Wartungsarbeiten** ändern können. Andernfalls können die Arbeiten nicht verschoben werden.
-- Sie sind als administrativer oder technischer Kontakt für die [[VMware on OVHcloud](https://www.ovhcloud.com/de/enterprise/products/hosted-private-cloud/) Infrastruktur eingetragen.
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager) oder auf die  [OVHcloud API ](/links/api).
+- Sie sind als administrativer oder technischer Kontakt für die [VMware on OVHcloud](https://www.ovhcloud.com/de/enterprise/products/hosted-private-cloud/) Infrastruktur eingetragen.
+- Sie haben Zugriff auf das [OVHcloud Kundencenter](/links/control-panel/privatecloud-vmware-vsphere) oder auf die [OVHcloud API](/links/api).
+
+<!-- CP-NAV-START:privatecloud-vmware-vsphere -->
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direktlink:** [VMware vSphere](/links/control-panel/privatecloud-vmware-vsphere)
+- **Navigationspfad:** `Hosted Private Cloud`{.action} > `Managed VMware vSphere`{.action} > Wählen Sie Ihren vSphere Dienst aus
+
+---
+<!-- CP-NAV-END:privatecloud-vmware-vsphere -->
 
 ## In der praktischen Anwendung
 
@@ -33,9 +44,7 @@ Wenn Wartungsarbeiten geplant sind, die Ihre Hosted Private Cloud Infrastruktur 
 
 ### Im OVHcloud Kundencenter
 
-Loggen Sie sich mit dem Administrator-Account in Ihrem [OVHcloud Kundencenter](/links/manager) ein.
-
-Wählen Sie im Bereich `Hosted Private Cloud`{.action} Ihren Dienst aus und klicken Sie auf den Tab `Operationen`{.action}. Wählen Sie im Drop-down-Menü `Verfügbar`{.action}, um die Tasks zu filtern.
+Klicken Sie auf [diesen Link](/links/control-panel/privatecloud-vmware-vsphere), um auf den Bereich `VMware vSphere`{.action} zuzugreifen, und klicken Sie auf den Tab `Operationen`{.action}. Wählen Sie im Drop-down-Menü `Verfügbar`{.action}, um die Tasks zu filtern.
 
 Klicken Sie dann auf den Button `...`{.action} und dann auf `Bearbeitungsdatum ändern`{.action}.
 
