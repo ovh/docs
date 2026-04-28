@@ -1,7 +1,7 @@
 ---
 title: "IAM Rights Management - Bare Metal Pod SecNumCloud"
-excerpt: "Learn how to manage users and their access rights on your Bare Metal Pod SecNumCloud using Keycloak"
-updated: 2026-04-27
+excerpt: "Find out how to manage users, configure their access rights, and assign OpenStack roles on your Bare Metal Pod SecNumCloud via Keycloak."
+updated: 2026-04-28
 ---
 
 ## Objective
@@ -48,7 +48,7 @@ The `pod_operator` role is assigned by OVHcloud to the first platform access acc
 
 It provides the following additional capabilities:
 
-- Manage users, groups and roles within the pod realm (create accounts, assign OpenStack rights via project attributes)
+- Manage users, groups, and roles within the pod realm (create accounts, assign OpenStack rights via project attributes)
 - Request node delegation from OVHcloud support (required for specific configurations such as LACP or software RAID)
 
 ### Access matrix
@@ -89,12 +89,18 @@ Add a new attribute with the following values:
 
 ```json
 {
-  "domain": {"name": "Default"},
-  "name": "project-name",
-  "roles": [
-    {"name": "member"},
-    {"name": "reader"}
-  ]
+    "domain": {
+        "name": "Default"
+    },
+    "name": "project-name",
+    "roles": [
+        {
+            "name": "member"
+        },
+        {
+            "name": "reader"
+        }
+    ]
 }
 ```
 
@@ -112,25 +118,48 @@ Available OpenStack roles are:
 
 #### Assigning multiple projects to a user
 
-Multiple `project` attributes can be added to the same user or group. They will automatically be merged into a single `projects` attribute in the token passed to Keystone.
+You can add multiple `project` attributes to the same user or group. Keycloak automatically merges them into a single `projects` attribute in the token passed to Keystone.
 
 Example for a user accessing two projects:
 
 **Attribute 1** (key: `project`):
 
 ```json
-{"domain": {"name": "Default"}, "name": "production-project", "roles": [{"name": "member"}]}
+{
+    "domain": {
+        "name": "Default"
+    },
+    "name": "production-project",
+    "roles": [
+        {
+            "name": "member"
+        }
+    ]
+}
 ```
 
 **Attribute 2** (key: `project`):
 
 ```json
-{"domain": {"name": "Default"}, "name": "staging-project", "roles": [{"name": "member"}, {"name": "reader"}]}
+{
+    "domain": {
+        "name": "Default"
+    },
+    "name": "staging-project",
+    "roles": [
+        {
+            "name": "member"
+        },
+        {
+            "name": "reader"
+        }
+    ]
+}
 ```
 
 #### Configuring attributes on a group
 
-The same configuration can be applied to a **Keycloak group**. All members of the group will automatically inherit the project attributes defined on that group.
+You can apply the same configuration to a **Keycloak group** — all members automatically inherit the project attributes defined on it.
 
 In Keycloak, navigate to **Groups**, select the target group, and fill in the `project` attributes in the same way as for an individual user.
 
@@ -162,7 +191,7 @@ openstack role list
 
 #### Via the Keycloak API (complete view)
 
-To obtain an exhaustive view of rights, including users who have never logged into OpenStack, you need to query the Keycloak API directly and consolidate project attributes manually.
+For an exhaustive view of rights — including Keycloak users who have never logged into OpenStack — query the Keycloak API directly and consolidate project attributes manually.
 
 The script uses a **service account** in Keycloak, which avoids any dependency on user credentials or OTP. Follow the steps below to set it up before running the script.
 
@@ -212,9 +241,13 @@ pip install python-keycloak requests
 
 ##### Rights retrieval script
 
-A user's OpenStack rights can come from multiple sources: attributes defined directly on their account, inherited from groups, parent groups, or roles. This combination can make it difficult to read effective permissions from the administration interface. To check the rights of a specific user, you can use the Keycloak web interface directly: **Clients** > select the `keystone` client > **Client scopes** > **Evaluate** > select the user > **Generate access token**. The script below is an example of using the Keycloak API to retrieve this same information programmatically. By querying Keycloak the same way Keystone would, it provides a **clear and consolidated view of effective permissions** across all active users in the realm in a single run.
+A user's OpenStack rights can come from multiple sources: attributes defined directly on their account, inherited from groups, parent groups, or roles. This combination can make it difficult to read effective permissions from the administration interface.
 
-This script uses the same mechanism as the **Generate access token** button in the Keycloak interface, via the scope evaluation endpoint. This is the ground truth: groups, subgroups and user attributes are all merged by Keycloak itself.
+To check the rights of a specific user, you can use the Keycloak web interface directly: **Clients** > select the `keystone` client (OpenStack client) > **Client scopes** > **Evaluate** > select the user > **Generate access token**.
+
+The script below is an example of using the Keycloak API to retrieve this same information programmatically. By querying Keycloak the same way Keystone would, it provides a **clear and consolidated view of effective permissions** across all active users in the realm in a single run.
+
+This script uses the same mechanism as the **Generate access token** button in the Keycloak interface, via the scope evaluation endpoint. This is the ground truth: groups, subgroups, and user attributes are all merged by Keycloak itself.
 
 ```python
 import json
@@ -276,15 +309,15 @@ for user in kc.get_users():
         print(f"[!] {user['username']}: {e}")
 ```
 
-This script displays for each user the `projects` claim **exactly as Keystone will receive it**, including own attributes, inherited from direct groups and all parent groups.
+This script displays for each user the `projects` claim **exactly as Keystone will receive it**, including own attributes, inherited from direct groups, and all parent groups.
 
 > [!primary]
 >
-> A no-script alternative is available directly in the Keycloak interface: **Clients** > select the OpenStack client > **Client scopes** > **Evaluate** > select a user > **Generate access token**. This shows the exact token that will be sent to Keystone for that user.
+> A no-script alternative is available directly in the Keycloak interface: **Clients** > select the `keystone` client (OpenStack client) > **Client scopes** > **Evaluate** > select a user > **Generate access token**. This shows the exact token that will be sent to Keystone for that user.
 >
 
 ## Go further
 
-If you need training or technical assistance with the implementation of our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and request a custom analysis of your project from our Professional Services team experts.
+For training or technical assistance with implementing our solutions, contact your sales representative or visit our [Professional Services](/links/professional-services) page to request a quote and a custom project analysis from our experts.
 
 Join our [community of users](/links/community).

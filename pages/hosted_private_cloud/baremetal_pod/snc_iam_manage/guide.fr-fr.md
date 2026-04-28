@@ -1,15 +1,14 @@
 ---
 title: "Gestion des droits IAM - Bare Metal Pod SecNumCloud"
-excerpt: "Découvrez comment gérer les utilisateurs et leurs droits d'accès sur votre Bare Metal Pod SecNumCloud via Keycloak"
-updated: 2026-04-27
+excerpt: "Découvrez comment gérer les utilisateurs, configurer leurs droits et attribuer les rôles OpenStack sur votre Bare Metal Pod SecNumCloud via Keycloak."
+updated: 2026-04-28
 ---
 
 ## Objectif
 
-Ce guide explique comment gérer les droits et les accès (IAM - Identity and Access Management) de votre **Bare Metal Pod
-SecNumCloud**.
+Ce guide explique comment gérer les droits et les accès (IAM - Identity and Access Management) de votre **Bare Metal Pod SecNumCloud**.
 
-L'ensemble de l'authentification est centralisé dans **Keycloak**, qui sert de point d'entrée unique pour :
+L'ensemble de l'authentification est centralisé dans **Keycloak**, qui sert de point d'entrée unique pour :
 
 - L'accès au **Dashboard** (tableau de bord unifié du service)
 - L'accès à l'interface graphique **OpenStack Horizon**
@@ -19,15 +18,13 @@ L'ensemble de l'authentification est centralisé dans **Keycloak**, qui sert de 
 
 - Disposer d'un **Bare Metal Pod SecNumCloud** livré et opérationnel
 - Avoir accès à l'interface Keycloak avec un compte disposant du rôle `pod_operator` ou supérieur
-- Avoir pris connaissance du
-  guide [Mise en route de votre Bare Metal Pod SecNumCloud](/pages/hosted_private_cloud/baremetal_pod/snc_getting_started)
+- Avoir pris connaissance du guide [Mise en route de votre Bare Metal Pod SecNumCloud](/pages/hosted_private_cloud/baremetal_pod/snc_getting_started)
 
 ## En pratique
 
 ### Architecture d'authentification
 
-Toute l'authentification du **Bare Metal Pod** est centralisée dans **Keycloak**. Un seul et même compte utilisateur
-Keycloak donne accès à l'ensemble des services du pod : dashboard, OpenStack Horizon et APIs OpenStack.
+Toute l'authentification du **Bare Metal Pod** est centralisée dans **Keycloak**. Un seul et même compte utilisateur Keycloak donne accès à l'ensemble des services du pod : dashboard, OpenStack Horizon et APIs OpenStack.
 
 ### Hiérarchie des rôles
 
@@ -35,7 +32,7 @@ Le modèle IAM du **Bare Metal Pod SecNumCloud** repose sur deux niveaux d'accè
 
 #### Accès par défaut
 
-Tout utilisateur enregistré dans Keycloak, sans rôle spécifique attribué, dispose d'un accès par défaut lui permettant de :
+Tout utilisateur enregistré dans Keycloak, sans rôle spécifique attribué, dispose d'un accès par défaut lui permettant de :
 
 - Se connecter au **Dashboard** et gérer ses propres paramètres de compte Keycloak
 - Accéder à l'interface **OpenStack** et aux projets pour lesquels un `pod_operator` lui a attribué des droits via des attributs de projet
@@ -49,7 +46,7 @@ Tout utilisateur enregistré dans Keycloak, sans rôle spécifique attribué, di
 
 Le rôle `pod_operator` est attribué par OVHcloud au premier compte d'accès à la plateforme lors de la livraison du service. Ce compte initial peut ensuite assigner librement ce rôle à d'autres utilisateurs du realm pod.
 
-Il donne les capacités supplémentaires suivantes :
+Il donne les capacités supplémentaires suivantes :
 
 - Gérer les utilisateurs, groupes et rôles au sein du realm pod (créer des comptes, attribuer des droits OpenStack via les attributs de projet)
 - Faire une demande de délégation de nœuds auprès du support OVHcloud (nécessaire pour certaines configurations spécifiques comme le LACP ou le RAID logiciel)
@@ -58,36 +55,37 @@ Il donne les capacités supplémentaires suivantes :
 
 Le tableau ci-dessous récapitule les accès de chaque rôle sur les applications intégrées.
 
-**Légende** : ✅ Autorisé | ❌ Non autorisé | 🟡 Partiel (conditionné par les attributs de projet)
+**Légende** : ✅ Autorisé | ❌ Non autorisé | 🟡 Partiel (conditionné par les attributs de projet)
 
-| Application   | Permission                      | `default` | `pod_operator` |
+| Application   | Permission                      | Default   | `pod_operator` |
 |---------------|---------------------------------|:---------:|:--------------:|
 | **Keycloak**  | Voir ses paramètres de compte   |     ✅     |       ✅        |
-| **Keycloak**  | Gérer les utilisateurs keycloak |     ❌     |       ✅        |
+| **Keycloak**  | Gérer les utilisateurs Keycloak |     ❌     |       ✅        |
 | **OpenStack** | view                            |    🟡     |       🟡       |
 | **OpenStack** | member (édition)                |    🟡     |       🟡       |
 | **Dashboard** | Iframe OpenStack                |     ✅     |       ✅        |
+| **Grafana**   | view                            |     ❌     |       ✅        |
+| **Prometheus**| view                            |     ❌     |       ✅        |
+| **Dashboard** | Iframe Grafana                  |     ❌     |       ✅        |
+| **Dashboard** | Iframe Prometheus               |     ❌     |       ✅        |
 
 > [!primary]
 >
-> Les accès OpenStack marqués 🟡 sont conditionnés par la présence d'**attributs de projet** sur l'utilisateur ou son
-> groupe dans Keycloak. Sans attribut de projet configuré, l'utilisateur ne pourra pas accéder aux ressources OpenStack.
+> Les accès OpenStack marqués 🟡 sont conditionnés par la présence d'**attributs de projet** sur l'utilisateur ou son groupe dans Keycloak. Sans attribut de projet configuré, l'utilisateur ne pourra pas accéder aux ressources OpenStack.
 >
 
 ### Configurer les droits OpenStack via les attributs Keycloak
 
-Les droits d'accès aux projets OpenStack se définissent directement dans les **attributs de l'utilisateur** (ou du
-groupe) dans Keycloak. Cela permet de spécifier sur quel(s) projet(s) OpenStack un utilisateur peut opérer, et avec
-quel(s) rôle(s).
+Les droits d'accès aux projets OpenStack se définissent directement dans les **attributs de l'utilisateur** (ou du groupe) dans Keycloak. Cela permet de spécifier sur quel(s) projet(s) OpenStack un utilisateur peut opérer, et avec quel(s) rôle(s).
 
 #### Ajouter un attribut de projet sur un utilisateur
 
 Dans l'interface Keycloak, accédez à l'utilisateur concerné, puis ouvrez l'onglet **Attributes**.
 
-Ajoutez un nouvel attribut avec les valeurs suivantes :
+Ajoutez un nouvel attribut avec les valeurs suivantes :
 
-- **Clé** : `project`
-- **Valeur** : un objet JSON décrivant le projet et les rôles à attribuer
+- **Clé** : `project`
+- **Valeur** : un objet JSON décrivant le projet et les rôles à attribuer
 
 ```json
 {
@@ -106,7 +104,7 @@ Ajoutez un nouvel attribut avec les valeurs suivantes :
 }
 ```
 
-Les rôles OpenStack disponibles sont :
+Les rôles OpenStack disponibles sont :
 
 | Rôle OpenStack | Description                    |
 |----------------|--------------------------------|
@@ -115,18 +113,16 @@ Les rôles OpenStack disponibles sont :
 
 > [!primary]
 >
-> Si le projet OpenStack portant le nom indiqué n'existe pas encore, il sera **créé automatiquement** lors de la
-> première connexion de l'utilisateur.
+> Si le projet OpenStack portant le nom indiqué n'existe pas encore, il sera **créé automatiquement** lors de la première connexion de l'utilisateur.
 >
 
 #### Attribuer plusieurs projets à un utilisateur
 
-Il est possible d'ajouter **plusieurs attributs `project`** pour un même utilisateur ou groupe. Ils seront
-automatiquement fusionnés en un attribut `projects` dans le token transmis à Keystone.
+Vous pouvez ajouter **plusieurs attributs `project`** pour un même utilisateur ou groupe. Keycloak les fusionne automatiquement en un attribut `projects` dans le token transmis à Keystone.
 
-Exemple pour un utilisateur accédant à deux projets :
+Exemple pour un utilisateur accédant à deux projets :
 
-**Attribut 1** (clé : `project`) :
+**Attribut 1** (clé : `project`) :
 
 ```json
 {
@@ -142,7 +138,7 @@ Exemple pour un utilisateur accédant à deux projets :
 }
 ```
 
-**Attribut 2** (clé : `project`) :
+**Attribut 2** (clé : `project`) :
 
 ```json
 {
@@ -163,29 +159,26 @@ Exemple pour un utilisateur accédant à deux projets :
 
 #### Configurer les attributs sur un groupe
 
-La même configuration peut être appliquée à un **groupe Keycloak**. Tous les membres du groupe hériteront
-automatiquement des attributs de projet définis sur ce groupe.
+Vous pouvez appliquer la même configuration à un **groupe Keycloak** : tous les membres héritent automatiquement des attributs de projet qui y sont définis.
 
-Dans Keycloak, accédez à **Groups**, sélectionnez le groupe souhaité, puis renseignez les attributs `project` de la même
-manière que pour un utilisateur individuel.
+Dans Keycloak, accédez à **Groups**, sélectionnez le groupe souhaité, puis renseignez les attributs `project` de la même manière que pour un utilisateur individuel.
 
 > [!primary]
 >
-> Les attributs définis sur un groupe et ceux définis directement sur l'utilisateur sont fusionnés. Un utilisateur peut
-> ainsi bénéficier de projets issus de plusieurs groupes en plus de ses propres attributs.
+> Les attributs définis sur un groupe et ceux définis directement sur l'utilisateur sont fusionnés. Un utilisateur peut ainsi bénéficier de projets issus de plusieurs groupes en plus de ses propres attributs.
 >
 
 ### Lister l'ensemble des droits
 
 #### Via la CLI OpenStack
 
-Pour lister les assignations de rôles actives dans OpenStack :
+Pour lister les assignations de rôles actives dans OpenStack :
 
 ```bash
 openstack role assignment list --names
 ```
 
-Pour lister les rôles disponibles sur la plateforme :
+Pour lister les rôles disponibles sur la plateforme :
 
 ```bash
 openstack role list
@@ -193,15 +186,12 @@ openstack role list
 
 > [!warning]
 >
-> Ces commandes ne retournent que les utilisateurs qui se sont **déjà authentifiés** au moins une fois via OpenStack.
-> Les utilisateurs présents dans Keycloak mais n'ayant jamais effectué de connexion OpenStack n'apparaîtront pas dans
-> ces
-> résultats.
+> Ces commandes ne retournent que les utilisateurs qui se sont **déjà authentifiés** au moins une fois via OpenStack. Les utilisateurs présents dans Keycloak mais ne s'étant jamais connectés à OpenStack n'apparaîtront pas dans ces résultats.
 >
 
 #### Via l'API Keycloak (vue complète)
 
-Pour obtenir une vue exhaustive des droits, y compris pour les utilisateurs Keycloak n'ayant jamais effectué de connexion OpenStack, il est nécessaire d'interroger directement l'API Keycloak et de consolider manuellement les attributs de projet.
+Pour obtenir une vue exhaustive des droits, y compris pour les utilisateurs Keycloak ne s'étant jamais connectés à OpenStack, interrogez directement l'API Keycloak et consolidez manuellement les attributs de projet.
 
 Le script utilise un **service account** Keycloak, ce qui évite toute dépendance aux credentials utilisateur et aux OTP. Suivez les étapes ci-dessous pour le créer avant d'exécuter le script.
 
@@ -211,18 +201,18 @@ Le script utilise un **service account** Keycloak, ce qui évite toute dépendan
 
 Dans l'interface Keycloak, sélectionnez votre realm pod puis accédez à **Clients** > **Create client**.
 
-Renseignez les champs suivants :
+Renseignez les champs suivants :
 
-- **Client type** : `OpenID Connect`
-- **Client ID** : choisissez un nom explicite, par exemple `iam-audit`
+- **Client type** : `OpenID Connect`
+- **Client ID** : choisissez un nom explicite, par exemple `iam-audit`
 
 Cliquez sur **Next**.
 
 **2. Activer le Service Account**
 
-Sur l'écran **Capability config**, activez uniquement :
+Sur l'écran **Capability config**, activez uniquement :
 
-- **Service accounts roles** : `On`
+- **Service accounts roles** : `On`
 
 Désactivez **Standard flow** et **Direct access grants** s'ils sont activés. Cliquez sur **Save**.
 
@@ -241,9 +231,9 @@ Dans le filtre, sélectionnez **Filter by clients** et recherchez `realm-managem
 > Le rôle `view-users` du client `realm-management` permet au service account de lister les utilisateurs du realm sans lui donner aucun droit de modification.
 >
 
-##### Prérequis : installer les librairies nécessaires
+##### Prérequis : installer les librairies nécessaires
 
-Assurez-vous d'avoir Python 3 installé, puis installez les librairies requises :
+Assurez-vous d'avoir Python 3 installé, puis installez les librairies requises :
 
 ```bash
 pip install python-keycloak requests
@@ -251,9 +241,13 @@ pip install python-keycloak requests
 
 ##### Script de récupération des droits
 
-Les droits OpenStack d'un utilisateur peuvent provenir de plusieurs sources : attributs définis directement sur son compte, hérités de groupes, de groupes parents ou encore de rôles. Cette combinaison peut rendre difficile la lecture des permissions effectives depuis l'interface d'administration. Pour vérifier les droits d'un utilisateur en particulier, il est tout à fait possible de passer par l'interface web Keycloak : **Clients** > sélectionner le client `keystone` > **Client scopes** > **Evaluate** > sélectionner l'utilisateur > **Generate access token**. Le script ci-dessous est un exemple d'utilisation de l'API Keycloak pour récupérer ces mêmes informations de manière programmatique. En interrogeant Keycloak comme le ferait Keystone, il permet d'obtenir une **vue claire et consolidée des permissions effectives** de l'ensemble des utilisateurs actifs du realm en une seule exécution.
+Les droits OpenStack d'un utilisateur peuvent provenir de plusieurs sources : attributs définis directement sur son compte, hérités de groupes, de groupes parents ou encore de rôles. Cette combinaison peut rendre difficile la lecture des permissions effectives depuis l'interface d'administration.
 
-Ce script utilise le même mécanisme que le bouton **Generate access token** de l'interface Keycloak, via l'endpoint d'évaluation des scopes. C'est la source de vérité : groupes, sous-groupes et attributs utilisateur sont tous fusionnés par Keycloak lui-même.
+Pour vérifier les droits d'un utilisateur en particulier, vous pouvez utiliser l'interface web Keycloak : **Clients** > sélectionner le client `keystone` (client OpenStack) > **Client scopes** > **Evaluate** > sélectionner l'utilisateur > **Generate access token**.
+
+Le script ci-dessous est un exemple d'utilisation de l'API Keycloak pour récupérer ces mêmes informations de manière programmatique. En interrogeant Keycloak comme le ferait Keystone, il permet d'obtenir une **vue claire et consolidée des permissions effectives** de l'ensemble des utilisateurs actifs du realm en une seule exécution.
+
+Ce script utilise le même mécanisme que le bouton **Generate access token** de l'interface Keycloak, via l'endpoint d'évaluation des scopes. C'est la source de vérité : groupes, sous-groupes et attributs utilisateur sont tous fusionnés par Keycloak lui-même.
 
 ```python
 import json
@@ -319,13 +313,11 @@ Ce script affiche pour chaque utilisateur le claim `projects` **tel que Keystone
 
 > [!primary]
 >
-> Une alternative sans script est disponible directement dans l'interface Keycloak : **Clients** > sélectionner le client OpenStack > **Client scopes** > **Evaluate** > sélectionner un utilisateur > **Generate access token**. Cela affiche le token exact qui sera transmis à Keystone pour cet utilisateur.
+> Une alternative sans script est disponible directement dans l'interface Keycloak : **Clients** > sélectionner le client `keystone` (client OpenStack) > **Client scopes** > **Evaluate** > sélectionner un utilisateur > **Generate access token**. Cela affiche le token exact qui sera transmis à Keystone pour cet utilisateur.
 >
 
 ## Aller plus loin
 
-Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en œuvre de nos solutions, contactez
-votre commercial ou cliquez sur [ce lien](/links/professional-services) pour obtenir un devis et demander une analyse
-personnalisée de votre projet à nos experts de l'équipe Professional Services.
+Pour une formation ou une assistance technique sur la mise en œuvre de nos solutions, contactez votre commercial ou rendez-vous sur la page [Professional Services](/links/professional-services) afin d'obtenir un devis et une analyse personnalisée de votre projet par nos experts.
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).
