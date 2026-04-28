@@ -39,6 +39,11 @@ Cette page présente un récapitulatif des quotas actuels de votre projet par r�
 
 En accord avec des critères internes (ancienneté, existence de factures acquittées, etc.), vous pouvez demander des augmentations de quota pour vos projets Public Cloud directement depuis votre espace client OVHcloud.
 
+> [!primary]
+>
+> Les nouveaux utilisateurs Public Cloud bénéficient de [200 $ de crédit offert](https://www.ovhcloud.com/fr/public-cloud/free-trial/) activé automatiquement à la création du projet, valable un mois. L'éligibilité à l'augmentation de quota dépend de critères tels que l'ancienneté du compte et l'existence de factures acquittées. Les utilisateurs en période d'essai peuvent donc avoir des options d'augmentation de quota limitées tant que leur première facture n'a pas été réglée.
+>
+
 Vous pouvez augmenter votre quota de ressources manuellement ou automatiquement.
 
 #### Augmenter automatiquement votre quota de ressources avec la fonctionnalité « Quota autoscaling »

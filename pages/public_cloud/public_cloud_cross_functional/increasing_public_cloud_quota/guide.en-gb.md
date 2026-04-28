@@ -41,6 +41,11 @@ This page shows a summary of your project's current quotas by region. A warning 
 
 In compliance with internal criteria (seniority, existence of paid invoices, etc.), you can request quota increases for your Public Cloud project resources directly from your OVHcloud Control Panel.
 
+> [!primary]
+>
+> First-time Public Cloud users benefit from [$200 in free credit](https://www.ovhcloud.com/en/public-cloud/free-trial/) automatically activated upon project creation, valid for one month. Because quota increase eligibility depends on criteria such as account seniority and paid invoices, free trial users may have limited quota increase options until their first invoice has been settled.
+>
+
 You can increase your resources quota manually or automatically.
 
 #### Increasing your resources quota automatically with the "Auto-scaling quota" feature
