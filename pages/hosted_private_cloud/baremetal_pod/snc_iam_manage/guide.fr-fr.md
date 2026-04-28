@@ -1,6 +1,6 @@
 ---
 title: "Gestion des droits IAM - Bare Metal Pod SecNumCloud"
-excerpt: "Découvrez comment gérer les utilisateurs, configurer leurs droits et attribuer les rôles OpenStack sur votre Bare Metal Pod SecNumCloud via Keycloak."
+excerpt: "Découvrez comment gérer les utilisateurs, configurer leurs droits et attribuer les rôles OpenStack sur votre Bare Metal Pod SecNumCloud via Keycloak"
 updated: 2026-04-28
 ---
 

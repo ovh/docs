@@ -1,6 +1,6 @@
 ---
 title: "IAM Rights Management - Bare Metal Pod SecNumCloud"
-excerpt: "Find out how to manage users, configure their access rights, and assign OpenStack roles on your Bare Metal Pod SecNumCloud via Keycloak."
+excerpt: "Find out how to manage users, configure their access rights, and assign OpenStack roles on your Bare Metal Pod SecNumCloud via Keycloak"
 updated: 2026-04-28
 ---
 
