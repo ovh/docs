@@ -122,15 +122,12 @@ Questa guida ti mostra come:
 
 ## Procedura
 
-<!-- CP-STEPS-START:services-table -->
 Apri la pagina [Le mie offerte e servizi](/links/control-panel/billing-services).
 
 ![prodotti e servizi](/pages/assets/screens/control_panel/product-selection/right-menu/my-solutions-and-services.png){.thumbnail}
-<!-- CP-STEPS-END:services-table -->
 
 ### Visualizza il tipo di rinnovo <a name="renewal-type"></a>
 
-<!-- CP-STEPS-START:services-table -->
 La pagina **Gestione delle mie offerte e servizi** contiene una tabella di gestione dei tuoi servizi OVHcloud. Nella tabella sono riportati nome, tipo di servizio, disponibilità del servizio (`Attivo` di default), stato (tipo di rinnovo, azione da eseguire, ecc.), la data di validità successiva del rinnovo o della disattivazione del servizio, nonché un pulsante `...`{.action} dedicato alle azioni possibili per ogni servizio.
 
 ![i miei servizi](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/my-services-en.png){.thumbnail}
@@ -142,7 +139,6 @@ La pagina **Gestione delle mie offerte e servizi** contiene una tabella di gesti
 > I criteri di filtraggio verranno visualizzati sopra la tabella. Ecco un esempio di filtro che permette di visualizzare i domini con rinnovo manuale.
 >
 > ![manageautomaticrenewal](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/filters-en.png){.thumbnail}
-<!-- CP-STEPS-END:services-table -->
 
 <a name="actions"></a>
 
@@ -153,7 +149,6 @@ La pagina **Gestione delle mie offerte e servizi** contiene una tabella di gesti
 > In base al servizio, se è disponibile il rinnovo manuale o meno, alcune azioni non saranno disponibili.
 >
 
-<!-- CP-STEPS-START:configure-renewal -->
 A destra di un servizio, clicca sul pulsante `...`{.action} nella colonna `Azioni` e seleziona l’azione che preferisci.
 
 ![menu azioni](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/actions-en.png){.thumbnail}
@@ -171,8 +166,6 @@ A destra di un servizio, clicca sul pulsante `...`{.action} nella colonna `Azion
 >>
 >> In base alla scelta effettuata, visualizzerai tutte le date di prelevamento, il metodo di pagamento utilizzato e la data di scadenza del servizio.
 >>
-<!-- CP-STEPS-END:configure-renewal -->
-<!-- CP-STEPS-START:bring-forward-payment -->
 > **Anticipa il pagamento**
 >>
 >> ![anticipare il pagamento](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/forward-payment-en.png){.thumbnail}
@@ -193,8 +186,6 @@ A destra di un servizio, clicca sul pulsante `...`{.action} nella colonna `Azion
 >> >
 >> > Per informazione, il prezzo di alcune opzioni viene visualizzato solo quando viene generato il buono d'ordine di rinnovo.
 >>
-<!-- CP-STEPS-END:bring-forward-payment -->
-<!-- CP-STEPS-START:cancel-subscription -->
 > **Disattivare il servizio**
 >>
 >> ![disattiva](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/cancel-en.png){.thumbnail}
@@ -205,8 +196,6 @@ A destra di un servizio, clicca sul pulsante `...`{.action} nella colonna `Azion
 >>
 >> Per maggiori informazioni sulla disattivazione dei servizi OVHcloud, segui le istruzioni contenute nella guida **"[Come disattivare i servizi OVHcloud](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_cancel_services)"**.
 >>
-<!-- CP-STEPS-END:cancel-subscription -->
-<!-- CP-STEPS-START:renew-service -->
 > **Rinnova il servizio**
 >>
 >> ![Rinnova il servizio](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/renew-service-en.png){.thumbnail}
@@ -225,8 +214,6 @@ A destra di un servizio, clicca sul pulsante `...`{.action} nella colonna `Azion
 >> >
 >> > Per informazione, il prezzo di alcune opzioni viene visualizzato solo quando viene generato il buono d'ordine di rinnovo.
 >>
-<!-- CP-STEPS-END:renew-service -->
-<!-- CP-STEPS-START:pay-bill -->
 > **Paga la tua fattura**
 >>
 >> ![Paga una fattura](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/pay-bill-en.png){.thumbnail}
@@ -238,13 +225,11 @@ A destra di un servizio, clicca sul pulsante `...`{.action} nella colonna `Azion
 >>
 >> Ti basta scegliere l’azione `Salda la tua fattura`{.action} che ti reindirizzerà verso una piattaforma di pagamento online.
 >>
-<!-- CP-STEPS-END:pay-bill -->
 
 <a name="group-actions"></a>
 
 ### Azioni in blocco
 
-<!-- CP-STEPS-START:bulk-actions -->
 Per effettuare azioni in blocco è possibile selezionare diversi servizi nella tabella e cliccare sul pulsante `Azioni`{.action}.
 
 ![azioni in blocco](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/batch-actions-en.png){.thumbnail}
@@ -258,7 +243,6 @@ Nella tabella seguente vengono descritte le azioni in blocco disponibili.
 |Attiva il pagamento automatico|Riattiva il rinnovo automatico su più servizi in una sola volta. Verranno rinnovati solo i servizi per cui è applicabile l’operazione.|
 |Esporta in CSV|Esporta in un file csv tutti i tuoi servizi e le date di scadenza.|
 |Allinea le date di rinnovo|Consente di allineare la data di scadenza dei tuoi servizi in modo che abbiano tutti un’unica data di rinnovo.  Verranno aggiornati solo i servizi per cui è applicabile l’operazione.|
-<!-- CP-STEPS-END:bulk-actions -->
 
 ## FAQ
 

@@ -80,13 +80,11 @@ Le informaremos de las etapas de la entrega y sabrá si es necesario realizar al
 
 ### Baja de servicios
 
-<!-- CP-STEPS-START:service-termination -->
 Si quiere dejar de utilizar uno de sus servicios, puede darlo de baja, pasar la renovación a modo manual o eliminarlo inmediatamente desde la página [Mis soluciones y servicios](/links/control-panel/billing-services). Haga clic en el botón `...`{.action} correspondiente al servicio en el que quiera realizar la acción y seleccione uno de los siguientes botones:
 
 - `Configurar la renovación`{.action}: en la siguiente pantalla, podrá pasar el `Modo de renovación` del servicio a `Manual`. Haga clic en `Siguiente`{.action} y `Confirmar`{.action}. Antes de la fecha de expiración del servicio, recibirá varias notificaciones por correo electrónico. Si no renueva el servicio, se eliminará **definitivamente**.
 - `Dar de baja mi servicio`{.action}: en la siguiente pantalla, indique los motivos de la solicitud de baja y haga clic en `Aceptar`{.action}. La operación se eliminará **definitivamente** en la fecha de expiración del servicio.
 - `Eliminar inmediatamente`{.action}: en la siguiente pantalla, haga clic en `Aceptar`{.action}. Recibirá un mensaje de correo electrónico de confirmación. Tras la validación, su servicio se eliminará **de forma inmediata y definitiva**.
-<!-- CP-STEPS-END:service-termination -->
 
 Para más información sobre la baja de sus servicios, consulte la guía [Cómo dar de baja sus servicios de OVHcloud](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_cancel_services).
 

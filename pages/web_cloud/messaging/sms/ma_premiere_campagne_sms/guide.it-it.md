@@ -37,7 +37,6 @@ La barra degli strumenti e le scorciatoie ti permetteranno di accedere alle funz
 
 ### Passaggio 1: Aggiungi contatti
 
-<!-- CP-STEPS-START:add-contacts -->
 #### Aggiungi una lista di contatti
 
 Una lista di contatti può essere importata tramite un file .csv o .txt.
@@ -57,21 +56,17 @@ Per aggiungere una rubrica indirizzi, clicca sulla scheda `Contatti`{.action} e 
 ![firstsms](images/firstsms04.png){.thumbnail}
 
 Per saperne di più, consulta la guida [Gestire le rubriche SMS](/pages/web_cloud/messaging/sms/gerer_mes_carnets_dadresses_sms).
-<!-- CP-STEPS-END:add-contacts -->
 
 ### Passaggio 2: Crea un mittente
 
-<!-- CP-STEPS-START:create-sender -->
 Di default, l’invio di SMS da un account OVHcloud in Francia si effettua da un numero breve che accetta risposte. Potrebbe essere più opportuno richiedere un mittente alfanumerico, dalla scheda `Mittenti`{.action} per consentire l’invio di SMS a nome della tua società o della tua organizzazione.
 
 ![firstsms](images/firstsms05.png){.thumbnail}
 
 A questo proposito, consulta la sezione dedicata alla scelta del mittente per i tuoi SMS della guida [“Inviare sms dallo Spazio Cliente”](/pages/web_cloud/messaging/sms/envoyer_des_sms_depuis_mon_espace_client#step-3-scegli-il-mittente-del-tuo-sms).
-<!-- CP-STEPS-END:create-sender -->
 
 ### Passaggio 3: Invio di una campagna SMS
 
-<!-- CP-STEPS-START:send-sms-campaign -->
 La scheda `Messaggio e campagna`{.action} ti permette di accedere alle opzioni di invio, alla cronologia dei tuoi SMS inviati e ricevuti e all'invio di SMS pianificati nell'ambito di invii differiti.
 
 ![firstsms](images/firstsms02.png){.thumbnail}
@@ -93,7 +88,6 @@ Inserisci il tuo messaggio e scegli tra un invio immediato o pianificato. In cas
 ![firstsms](images/firstsms08.png){.thumbnail}
 
 Clicca sul pulsante `Invia`{.action} per l'invio o la pianificazione della tua campagna.
-<!-- CP-STEPS-END:send-sms-campaign -->
 
 ## Per saperne di più
 

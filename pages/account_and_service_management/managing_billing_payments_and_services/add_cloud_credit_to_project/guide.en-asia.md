@@ -36,7 +36,6 @@ Open `Credit & Vouchers`{.action} in the left-hand menu under **Settings**.
 
 ### Adding credit
 
-<!-- CP-STEPS-START:add-credit -->
 Click on the button `Buy Public Cloud credit`{.action}.
 
 ![addpubliccloudcredit](images/cloudcredit1.png){.thumbnail}
@@ -50,11 +49,9 @@ A purchase order will then be generated. Click on the link in the green notifica
 ![addpubliccloudcredit](images/cloudcredit3.png){.thumbnail}
 
 Once the payment is processed, your credit will appear in the `Credits & Vouchers` list.
-<!-- CP-STEPS-END:add-credit -->
 
 ### Redeeming a voucher
 
-<!-- CP-STEPS-START:redeem-voucher -->
 Click on the button `Use a voucher`{.action}.
 
 ![addpubliccloudcredit](images/voucher1.png){.thumbnail}
@@ -64,7 +61,6 @@ Enter your voucher code in the window that appears and click on `Confirm`{.actio
 ![addpubliccloudcredit](images/voucher2.png){.thumbnail}
 
 The voucher balance will appear in the `Credits & Vouchers` list.
-<!-- CP-STEPS-END:redeem-voucher -->
 
 > [!primary]
 >

@@ -42,7 +42,6 @@ Lokale Benutzer sind einer der Identitätstypen, die in Ihrem OVHcloud Kunden-Ac
 
 #### Benutzer hinzufügen
 
-<!-- CP-STEPS-START:add-a-user -->
 Auf der Seite [IAM-Identitäten](/links/control-panel/iam-identities), klicken Sie auf `Nutzer hinzufügen`{.action}.
 
 Füllen Sie im neu geöffneten Fenster alle erforderlichen Felder aus. Klicken Sie auf `Bestätigen`{.action}, um den Benutzer zu erstellen.
@@ -74,11 +73,9 @@ Beispiel: **1234-567-89/johnsmith**.
 Der Benutzer kann sich von nun an mit dieser Kennung im [OVHcloud Kundencenter](/links/manager) einloggen. 
 
 Darüber hinaus kann er sein Passwort ändern und seinen eigenen Zugang zu Ihrem Account mithilfe einer Zwei-Faktor-Authentifizierung zusätzlich schützen (diese betrifft nur den Zugriff als Benutzer). Um mehr über die Einrichtung der Zwei-Faktor-Authentifizierung zu erfahren, lesen Sie [diese Anleitung](/pages/account_and_service_management/account_information/secure-ovhcloud-account-with-2fa).
-<!-- CP-STEPS-END:add-a-user -->
 
 #### Benutzer verwalten
 
-<!-- CP-STEPS-START:manage-users -->
 Sie können einen Benutzer bearbeiten, deaktivieren/aktivieren oder löschen, indem Sie rechts auf `...`{.action} klicken.
 
 ![Benutzerverwaltung](images/usersmanagement4.png){.thumbnail}
@@ -86,13 +83,11 @@ Sie können einen Benutzer bearbeiten, deaktivieren/aktivieren oder löschen, in
 Durch Bearbeiten des Benutzers können Sie dessen E-Mail-Adresse, Rechte und die Beschreibung aktualisieren.
 
 ![Benutzerverwaltung](images/usersmanagement6.png){.thumbnail}
-<!-- CP-STEPS-END:manage-users -->
 
 ### Verwaltung der Gruppen
 
 #### Gruppe hinzufügen
 
-<!-- CP-STEPS-START:add-a-group -->
 Um eine Gruppe hinzuzufügen, gehen Sie zum Tab `Nutzergruppen`{.action} und klicken Sie auf die Schaltfläche `Eine Gruppe anmelden`{.action}.
 
 ![users-management](images/usersmanagement7.png){.thumbnail}
@@ -109,11 +104,9 @@ Gruppen weisen den darin enthaltenen Benutzern je nach ausgewählter Rolle eine 
 | Nur Lesen| Lesezugriff auf alle Bereiche des OVHcloud Kundencenters. |
 | Eingeschränkter Administrator| Schreibzugriff auf das OVHcloud Kundencenter und alle Bereiche **ausschließlich** Benutzerverwaltung. |
 | Administrator | Schreibzugriff auf das OVHcloud Kundencenter und alle Bereiche **einschließlich** Benutzerverwaltung. |
-<!-- CP-STEPS-END:add-a-group -->
 
 #### Gruppen verwalten
 
-<!-- CP-STEPS-START:manage-groups -->
 Sie können eine Gruppe aktualisieren oder löschen, indem Sie auf den Button `...`{.action} rechts neben dem Gruppennamen klicken.
 
 ![users-management](images/usersmanagement9.png){.thumbnail}
@@ -121,7 +114,6 @@ Sie können eine Gruppe aktualisieren oder löschen, indem Sie auf den Button `.
 Wenn Sie eine Gruppe bearbeiten, können Sie ihre Beschreibung und Rolle ändern.
 
 ![users-management](images/usersmanagement10.png){.thumbnail}
-<!-- CP-STEPS-END:manage-groups -->
 
 ### Rechteverwaltung
 

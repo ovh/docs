@@ -101,7 +101,6 @@ No entanto, existem **casos especiais** que são detalhados [mais abaixo](#speci
 
 ### Como cancelar a subscrição <a name="terminate"></a>
 
-<!-- CP-STEPS-START:cancel-subscription -->
 Abra a página [As minhas ofertas e serviços](/links/control-panel/billing-services).
 
 ![produtos e serviços](/pages/assets/screens/control_panel/product-selection/right-menu/my-solutions-and-services.png){.thumbnail}
@@ -122,7 +121,6 @@ Especifique as razões do seu pedido de rescisão e clique em `Validar`{.action}
 O cancelamento do seu serviço terá lugar na **data de entrada em vigor** indicada na tabela "Gestão das minhas ofertas e serviços". Se não vir o estado "Rescisão agendada" aparecer, atualize a página.
 
 ![pedido de rescisão](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/cancellation-request.png){.thumbnail}
-<!-- CP-STEPS-END:cancel-subscription -->
 
 ### Casos particulares <a name="specific-cases"></a>
 
@@ -166,11 +164,9 @@ Para rescindir à sua oferta [VMware on OVHcloud](https://www.ovhcloud.com/pt/en
 
 #### Public Cloud <a name="publiccloud"></a>
 
-<!-- CP-STEPS-START:public-cloud-deletion -->
 Cada serviço [Public Cloud](/links/public-cloud/public-cloud) pode ser eliminado clicando no botão `...`{.action} à direita do serviço em causa e, a seguir, em `Eliminar`{.action}, como no exemplo seguinte para uma instância:
 
 ![public cloud instance deleet](images/pci-deletion.png){.thumbnail}
-<!-- CP-STEPS-END:public-cloud-deletion -->
 
 O Public Cloud da OVHcloud baseia-se no princípio do *Pay as you go* (mais pormenores na nossa página de [informações sobre o modo de faturação Public Cloud](/pages/public_cloud/public_cloud_cross_functional/analyze_billing)). No final do mês, apenas paga pelo tempo de utilização efetivo dos recursos.
 
@@ -183,7 +179,6 @@ Também pode [consultar o seu consumo atual](/pages/public_cloud/public_cloud_cr
 > Pode anular um pedido de rescisão até 24 horas antes do fim da subscrição.
 >
 
-<!-- CP-STEPS-START:stop-cancellation -->
 Para anular um pedido de rescisão, abra a página [As minhas ofertas e serviços](/links/control-panel/billing-services).
 
 A seguir, clique no botão `...`{.action} à direita do serviço que é objeto de um pedido de rescisão e, a seguir, em `Anular a rescisão do serviço`{.action}.
@@ -191,7 +186,6 @@ A seguir, clique no botão `...`{.action} à direita do serviço que é objeto d
 ![cancel_terminação](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/cancel_termination.png){.thumbnail}
 
 Por fim, clique em `Confirmar a anulação`{.action}.
-<!-- CP-STEPS-END:stop-cancellation -->
 
 A anulação da rescisão produz efeitos imediatos. Atualize a página "O meus Serviços" se continuar a ver o estado "Rescisão agendada".
 

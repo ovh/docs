@@ -48,7 +48,6 @@ Sie können Ihren Bestellschein jederzeit auf der Seite [Meine Bestellungen](/li
 
 ### Auf die Bestellscheine im OVHcloud Kundencenter zugreifen
 
-<!-- CP-STEPS-START:access-purchase-orders -->
 Öffnen Sie die Seite [Meine Bestellungen](/links/control-panel/billing-orders).
 
 ![Kundencenter](images/huborders.png){.thumbnail}
@@ -76,11 +75,9 @@ Folgende Bestellschritte sind möglich:
 Sie können das Bestellformular auch im HTML-Format anzeigen, indem Sie rechts neben Ihrer Bestellung auf `...`{.action} und danach auf `Bestellung im HTML-Format abrufen`{.action} klicken.
 
 ![Bestellübersicht](images/order04.png){.thumbnail}
-<!-- CP-STEPS-END:access-purchase-orders -->
 
 ### Bestellung verfolgen
 
-<!-- CP-STEPS-START:track-order -->
 Nach Erstellung Ihres Bestellscheins können Sie Ihre Bestellung über die Seite [Meine Bestellungen](/links/control-panel/billing-orders) verfolgen:
 
 - Klicken Sie auf den Button `...`{.action} vor Ihrer Bestellung.
@@ -91,7 +88,6 @@ Nach Erstellung Ihres Bestellscheins können Sie Ihre Bestellung über die Seite
 Das folgende Fenster wird angezeigt, um den Status anhand von vier Schritten anzuzeigen.
 
 ![Bestellverfolgung](images/order06.png){.thumbnail}
-<!-- CP-STEPS-END:track-order -->
 
 ### Widerrufsrecht ausüben
 
@@ -113,7 +109,6 @@ Weitere Informationen zur Ausübung ihres Widerrufsrechts finden Sie in unseren 
 
 Wenn die Voraussetzungen für das Widerrufsrecht erfüllt sind, kann es direkt über die Seite [Meine Bestellungen](/links/control-panel/billing-orders) ausgeübt werden:
 
-<!-- CP-STEPS-START:cancel-order -->
 - Klicken Sie auf den Button `...`{.action} vor Ihrer Bestellung.
 - Wählen Sie `Die Bestellung stornieren`{.action}.
 
@@ -122,7 +117,6 @@ Wenn die Voraussetzungen für das Widerrufsrecht erfüllt sind, kann es direkt �
 Bestätigen Sie nun die Stornierung der Bestellung, indem Sie einen Haken bei `Ja, ich möchte diese Bestellung stornieren`{.action} setzen und dann auf den Bestätigungsbutton klicken.
 
 ![Stornierung bestätigen](images/cancelorder2.png){.thumbnail}
-<!-- CP-STEPS-END:cancel-order -->
 
 > [!primary]
 >

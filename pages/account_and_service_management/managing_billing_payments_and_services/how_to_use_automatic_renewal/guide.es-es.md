@@ -124,15 +124,12 @@ Antes de continuar leyendo esta guía, debe cumplir los siguientes requisitos:
 
 ## Procedimiento
 
-<!-- CP-STEPS-START:services-table -->
 Abra la página [Mis soluciones y servicios](/links/control-panel/billing-services).
 
 ![productos y servicios](/pages/assets/screens/control_panel/product-selection/right-menu/my-solutions-and-services.png){.thumbnail}
-<!-- CP-STEPS-END:services-table -->
 
 ### Mostrar el tipo de renovación <a name="renewal-type"></a>
 
-<!-- CP-STEPS-START:services-table -->
 La página **Gestión de mis soluciones y servicios** contiene una tabla de gestión de los servicios de OVHcloud. Puede consultar su nombre, el tipo de servicio, la disponibilidad del servicio (`Activo` por defecto), su estado (tipo de renovación, acción a realizar, etc.), la próxima fecha de aplicación de la renovación o de la baja, así como un botón `...`{.action} dedicado a las acciones posibles para cada servicio.
 
 ![mis servicios](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/my-services-en.png){.thumbnail}
@@ -144,7 +141,6 @@ La página **Gestión de mis soluciones y servicios** contiene una tabla de gest
 > Los criterios de filtrado se mostrarán sobre la tabla. A continuación ofrecemos un ejemplo de filtro que permite ver los dominios cuya renovación es manual.
 >
 >![manageautomaticrenewal](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/filters-en.png){.thumbnail}
-<!-- CP-STEPS-END:services-table -->
 
 <a name="actions"></a>
 
@@ -155,7 +151,6 @@ La página **Gestión de mis soluciones y servicios** contiene una tabla de gest
 > En función del servicio, algunas acciones pueden no estar disponibles si el servicio puede renovarse manualmente o no.
 >
 
-<!-- CP-STEPS-START:configure-renewal -->
 A la derecha de un servicio, haga clic en el botón `...`{.action} en la columna `Acciones` y seleccione la acción que desee.
 
 ![menu actions](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/actions-en.png){.thumbnail}
@@ -173,8 +168,6 @@ A la derecha de un servicio, haga clic en el botón `...`{.action} en la columna
 >>
 >> En función de la elección realizada, se le indicarán las futuras fechas de cargo, la forma de pago que se utilizará y la fecha de expiración del servicio.
 >>
-<!-- CP-STEPS-END:configure-renewal -->
-<!-- CP-STEPS-START:bring-forward-payment -->
 > **Adelantar el pago**
 >>
 >> ![anticipar el pago](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/forward-payment-en.png){.thumbnail}
@@ -195,8 +188,6 @@ A la derecha de un servicio, haga clic en el botón `...`{.action} en la columna
 >> >
 >> > Para su información, el precio de algunas opciones no aparece hasta que se genera la orden de pedido de renovación.
 >>
-<!-- CP-STEPS-END:bring-forward-payment -->
-<!-- CP-STEPS-START:cancel-subscription -->
 > **Dar de baja mi servicio**
 >>
 >> ![dar de baja](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/cancel-en.png){.thumbnail}
@@ -207,8 +198,6 @@ A la derecha de un servicio, haga clic en el botón `...`{.action} en la columna
 >>
 >> Para más información sobre la baja de los servicios de OVHcloud, siga las instrucciones de la guía "**[Cómo dar de baja los servicios de OVHcloud](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_cancel_services)**".
 >>
-<!-- CP-STEPS-END:cancel-subscription -->
-<!-- CP-STEPS-START:renew-service -->
 > **Renovar el servicio**
 >>
 >> ![Renovar el servicio](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/renew-service-en.png){.thumbnail}
@@ -227,8 +216,6 @@ A la derecha de un servicio, haga clic en el botón `...`{.action} en la columna
 >> >
 >> > Para su información, el precio de algunas opciones no aparece hasta que se genera la orden de pedido de renovación.
 >>
-<!-- CP-STEPS-END:renew-service -->
-<!-- CP-STEPS-START:pay-bill -->
 > **Abonar mi factura**
 >>
 >> ![Pagar una factura](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/pay-bill-en.png){.thumbnail}
@@ -240,13 +227,11 @@ A la derecha de un servicio, haga clic en el botón `...`{.action} en la columna
 >>
 >> Solo tiene que elegir la acción `Abonar mi factura`{.action} que le redirigirá a una plataforma de pago en línea.
 >>
-<!-- CP-STEPS-END:pay-bill -->
 
 <a name="group-actions"></a>
 
 ### Acciones agrupadas
 
-<!-- CP-STEPS-START:bulk-actions -->
 Puede realizar acciones agrupadas seleccionando varios servicios en la tabla y haciendo clic en el botón `Acciones`{.action}.
 
 ![acciones agrupadas](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/batch-actions-en.png){.thumbnail}
@@ -260,7 +245,6 @@ El siguiente cuadro explica en detalle cuáles son las acciones que pueden agrup
 |Activar el pago automático|Reactive la renovación automática en varios servicios de una vez. Solo los servicios compatibles se actualizarán.|
 |Exportar en CVS (delimitado por comas)|Exporte todos sus servicios y sus fechas de expiración a un archivo CSV.|
 |Unificar las fechas de renovación|Permite unificar la fecha de expiración de sus servicios en un día natural. Solo los servicios compatibles podrán actualizarse.|
-<!-- CP-STEPS-END:bulk-actions -->
 
 ## FAQ
 

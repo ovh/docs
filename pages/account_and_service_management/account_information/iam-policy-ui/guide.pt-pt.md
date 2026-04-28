@@ -48,7 +48,6 @@ Por exemplo, podemos criar uma política para dar a um utilizador chamado John, 
 
 ### Aceder ao menu IAM
 
-<!-- CP-STEPS-START:access-iam-menu -->
 Abra a página [Políticas IAM](/links/control-panel/iam-policies).
 
 ![Acesso ao menu IAM](images/access_to_the_IAM_menu_01.png){.thumbnail}
@@ -70,7 +69,6 @@ Se já tiver criado políticas ou utilizadores, estes serão apresentados no pri
 ![Acesso ao menu IAM](images/access_to_the_IAM_menu_03.png){.thumbnail}
 
 Cada política é apresentada com o seu nome, o número de identidades e o número de ações que contém.
-<!-- CP-STEPS-END:access-iam-menu -->
 
 ### Gestão das políticas
 
@@ -78,7 +76,6 @@ Cada política é apresentada com o seu nome, o número de identidades e o núme
 
 #### Criar uma política
 
-<!-- CP-STEPS-START:create-policy -->
 Clique no botão `Criar uma política`{.action}.
 
 É apresentado o seguinte formulário:
@@ -142,11 +139,9 @@ Está disponível um campo de pesquisa para o ajudar a identificar uma ação es
 
 > [!primary]
 > As ações relacionadas à compra e à faturação não estão disponíveis no IAM da OVHcloud.
-<!-- CP-STEPS-END:create-policy -->
 
 #### Condições nas políticas
 
-<!-- CP-STEPS-START:conditions-on-policies -->
 É possível adicionar condições às políticas IAM.
 
 Uma política com condições é válida quando todas as condições são validadas.
@@ -164,25 +159,20 @@ Uma política com condições é válida quando todas as condições são valida
 ![Criar uma política](images/conditions.png){.thumbnail}
 
 Uma vez adicionadas, as condições são exibidas com a sintaxe [utilizada na API](/pages/account_and_service_management/account_information/iam-policies-api)
-<!-- CP-STEPS-END:conditions-on-policies -->
 
 #### Alterar uma política
 
-<!-- CP-STEPS-START:edit-policy -->
 Para alterar uma política existente, clique no botão `...`{.action} à direita da política, e depois `Alterar a política`{.action}.
 
 ![Modificar uma política](images/editing_a_policy.png){.thumbnail}
 
 A seguir, poderá alterar o âmbito da política.
-<!-- CP-STEPS-END:edit-policy -->
 
 #### Eliminar uma política
 
-<!-- CP-STEPS-START:delete-policy -->
 Para eliminar uma política existente, clique no botão `...`{.action} à direita da política, e por `Eliminar a política`{.action}.
 
 Uma janela contextual irá pedir-lhe que confirme a eliminação.
-<!-- CP-STEPS-END:delete-policy -->
 
 <a name="create-users"></a>
 
@@ -198,11 +188,9 @@ O acesso ao suporte ficará reservado à conta proprietária do recurso.
 
 ### Gestão das identidades
 
-<!-- CP-STEPS-START:manage-identities -->
 Para gerir as identidades disponíveis para as políticas, aceda ao menu `Identidade, Segurança e Operações`{.action} e, a seguir, à secção `Identidades`{.action}.
 
 Encontre os detalhes da gestão dos utilizadores na [documentação dedicada](/pages/account_and_service_management/account_information/ovhcloud-users-management).
-<!-- CP-STEPS-END:manage-identities -->
 
 ### Gestão dos grupos de recursos
 
@@ -210,7 +198,6 @@ As políticas podem visar grupos de recursos (em vez de visarem diretamente recu
 
 #### Criar um grupo de recursos
 
-<!-- CP-STEPS-START:create-resource-group -->
 Para criar um grupo de recursos, aceda à secção `Políticas`{.action} e clique no separador `Grupos de recursos`{.action} :
 
 ![Resource Group](images/resource_groups.png){.thumbnail}
@@ -222,7 +209,6 @@ Clique em `Criar o grupo de recursos`{.action}.
 - **Nome do grupo de recursos**: trata-se do nome que aparecerá nas interfaces. O nome deve ser único e não deve conter qualquer espaço.
 - **Tipos de produtos**: lista dos tipos de produtos abrangidos por esse grupo de recursos.
 - **Recursos**: lista dos recursos que o grupo conterá.
-<!-- CP-STEPS-END:create-resource-group -->
 
 #### Modificar um grupo de recursos
 
@@ -230,11 +216,9 @@ Para alterar um grupo de recursos, clique no seu nome na lista.
 
 #### Eliminar um grupo de recursos
 
-<!-- CP-STEPS-START:delete-resource-group -->
 Para eliminar um grupo de recursos existente, clique no botão `...`{.action} à direita do grupo, depois por `Eliminar o grupo de recursos`{.action.
 
 Uma janela contextual irá pedir-lhe que confirme a eliminação.
-<!-- CP-STEPS-END:delete-resource-group -->
 
 ## Quer saber mais?
 

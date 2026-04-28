@@ -37,7 +37,6 @@ Pasek narzędzi oraz skróty ułatwiają dostęp do głównych funkcji służąc
 
 ### Etap 1: Dodaj kontakty
 
-<!-- CP-STEPS-START:add-contacts -->
 #### Dodanie listy kontaktów
 
 Listę kontaktów można zaimportować z pliku .csv lub .txt.
@@ -57,21 +56,17 @@ Aby dodać książkę adresową, kliknij zakładkę `Kontakty`{.action}, a nast�
 ![firstsms](images/firstsms04.png){.thumbnail}
 
 Zapoznaj się z przewodnikiem [Zarządzanie książkami adresowymi SMS](/pages/web_cloud/messaging/sms/gerer_mes_carnets_dadresses_sms), aby dowiedzieć się więcej.
-<!-- CP-STEPS-END:add-contacts -->
 
 ### Etap 2: Utworzyć nadawcę
 
-<!-- CP-STEPS-START:create-sender -->
 Domyślnie wysyłka wiadomości SMS z konta OVHcloud we Francji odbywa się ze skróconego numeru umożliwiającego otrzymanie odpowiedzi. Być może bardziej przydatne będzie zażądanie nadawcy alfanumerycznego w karcie `Nadawcy`{.action}, aby wiadomości SMS były wysyłane w imieniu Twojej firmy lub organizacji.
 
 ![firstsms](images/firstsms05.png){.thumbnail}
 
 W tym celu zapoznaj się z sekcją poświęconą wyborowi nadawcy wiadomości SMS w przewodniku [„Wysyłanie wiadomości SMS z Panelu klienta”](/pages/web_cloud/messaging/sms/envoyer_des_sms_depuis_mon_espace_client#etap-3-wybor-nadawcy-wiadomosci-sms).
-<!-- CP-STEPS-END:create-sender -->
 
 ### Etap 3: Wysłanie kampanii SMS
 
-<!-- CP-STEPS-START:send-sms-campaign -->
 Zakładka `Wiadomość i kampania`{.action} umożliwia dostęp do opcji wysyłki, historii wysłanych i odebranych wiadomości SMS oraz do zaplanowanych wysyłek wiadomości SMS w ramach odroczonej wysyłki.
 
 ![firstsms](images/firstsms02.png){.thumbnail}
@@ -93,7 +88,6 @@ Zbuduj swoją wiadomość i wybierz między natychmiastową lub zaplanowaną wys
 ![firstsms](images/firstsms08.png){.thumbnail}
 
 Teraz kliknij przycisk `Wyślij`{.action}, aby Twoja kampania została wysłana lub zaplanowana.
-<!-- CP-STEPS-END:send-sms-campaign -->
 
 ## Sprawdź również
 

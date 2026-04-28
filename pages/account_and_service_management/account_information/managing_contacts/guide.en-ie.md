@@ -53,7 +53,6 @@ The NIC handle is a personal username that you receive via email when you create
 
 ### Access contact management <a name="gestion_des_contacts"></a>
 
-<!-- CP-STEPS-START:access-contact-management -->
 Open the [My contacts](/links/control-panel/account-contacts) page.
 
 ![Contact management](/pages/assets/screens/control_panel/product-selection/right-menu/my-contacts.png){.thumbnail}
@@ -61,11 +60,9 @@ Open the [My contacts](/links/control-panel/account-contacts) page.
 The table that appears will show all of the services your NIC handle is registered with as a contact.
 
 ![Contact management](images/managing_contacts_02.png){.thumbnail}
-<!-- CP-STEPS-END:access-contact-management -->
 
 ### Change the contacts for a service.
 
-<!-- CP-STEPS-START:change-contacts-service -->
 Once you are on the Contacts page, click `...`{.action} to the right of the service you want to modify, then `Modify contacts`{.action}. Enter the new contact(s) you want to add, then click `Confirm`{.action}.
 
 ![Contact management](images/managing_contacts_03.png){.thumbnail}
@@ -78,7 +75,6 @@ An email will be sent to the contacts you have added once you confirm this chang
 >
 > No change of contact will be allowed if the old or new customer account concerned has one or more unpaid invoices.
 >
-<!-- CP-STEPS-END:change-contacts-service -->
 
 #### Administrative contact <a name="administrateur"></a>
 
@@ -98,7 +94,6 @@ You can only add another billing contact to replace you. Confirmation is require
 
 ### Confirm, decline or track a contact change.
 
-<!-- CP-STEPS-START:confirm-track-contact-change -->
 To track and manage ongoing requests, click on the `My requests`{.action} tab. Here, you can accept or decline a request.
 
 ![Contact management](images/managing_contacts_05.png){.thumbnail}
@@ -119,7 +114,6 @@ If only one contact has confirmed the change, a message will appear confirming t
 ![Contact management](images/managing_contacts_007.png){.thumbnail}
 
 The contact change will take effect a few minutes after both contacts have validated the request. They will then receive an email informing them that the request has been processed.
-<!-- CP-STEPS-END:confirm-track-contact-change -->
 
 ### Example: Providing access for a website's technical administration to your webmaster
 

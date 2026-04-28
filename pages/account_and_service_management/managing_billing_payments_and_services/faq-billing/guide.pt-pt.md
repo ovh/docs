@@ -37,9 +37,7 @@ Se quiser saber mais, pode consultar este manual pormenorizado: [Gerir a renova�
 
 ### Como ativar a renovação automática?
 
-<!-- CP-STEPS-START:enable-automatic-renewal -->
 Na página [As minhas ofertas e serviços](/links/control-panel/billing-services), identifique o serviço em causa, clique nos três pontos e selecione a opção `Ativar pagamento`{.action}.
-<!-- CP-STEPS-END:enable-automatic-renewal -->
 
 #### Truques e dicas
 
@@ -48,11 +46,9 @@ Se quiser saber mais, pode consultar este manual pormenorizado: [Gerir a renova�
 
 ### Como desativar a renovação automática?
 
-<!-- CP-STEPS-START:disable-automatic-renewal -->
 Na página [As minhas ofertas e serviços](/links/control-panel/billing-services), identifique o serviço em causa, clique nos três pontos e selecione a opção `Configurar a renovação`{.action}. Pode escolher o modo manual. Este modo só está disponível para determinados serviços, tais como os nomes de domínio, alojamentos web, VPS e servidores dedicados.
 
 Para rescindir um serviço, consulte a página [Como rescindir um serviço?](#cancelservice)
-<!-- CP-STEPS-END:disable-automatic-renewal -->
 
 #### Truques e dicas
 
@@ -61,9 +57,7 @@ Se quiser saber mais, pode consultar este manual pormenorizado: [Gerir a renova�
 
 ### Como adicionar um método de pagamento?
 
-<!-- CP-STEPS-START:add-payment-method -->
 Na página [Os meus métodos de pagamento](/links/control-panel/billing-payment-methods), clique em `Adicionar um método de pagamento`{.action}.
-<!-- CP-STEPS-END:add-payment-method -->
 
 ### Como atualizar um método de pagamento?
 
@@ -79,9 +73,7 @@ Deve ter configurado, pelo menos, um método de pagamento na Área de Cliente, p
 
 ### Como eliminar um método de pagamento?
 
-<!-- CP-STEPS-START:delete-payment-method -->
 Na página [Os meus métodos de pagamento](/links/control-panel/billing-payment-methods), identifique o método de pagamento a eliminar e clique no ícone do caixote de lixo.
-<!-- CP-STEPS-END:delete-payment-method -->
 
 #### Truques e dicas
 
@@ -99,7 +91,6 @@ Se à sua conta pré-paga da OVHcloud dispuser de crédito, esta será sempre ut
 
 ### Qual é a data do próximo pagamento?
 
-<!-- CP-STEPS-START:next-payment-due-date -->
 Consulte todas as datas de renovação na secção `As minhas ofertas e serviços`{.action}, acessível diretamente na página [As minhas ofertas e serviços](/links/control-panel/billing-services).
 
 As soluções que beneficiam de renovação automática são renovadas no primeiro dia do mês. No entanto, a frequência pode variar em função dos serviços subscritos.
@@ -108,7 +99,6 @@ As soluções que beneficiam de renovação automática são renovadas no primei
 
 Na página [As minhas ofertas e serviços](/links/control-panel/billing-services), poderá alterar a frequência de renovação das suas soluções.
 Se quiser saber mais, pode consultar este manual pormenorizado: [Gerir a renovação dos serviços](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal).
-<!-- CP-STEPS-END:next-payment-due-date -->
 
 ### Que método de pagamento é utilizado para pagar o serviço?
 
@@ -149,17 +139,13 @@ Na página [Os meus métodos de pagamento](/links/control-panel/billing-payment-
 
 ### A que se referem os meus pagamentos?
 
-<!-- CP-STEPS-START:payments-correspondence -->
 Os pagamentos que realizou no nosso site, bem como todos os débitos diretos, estão registados na sua Área de Cliente. Na secção `Pagamentos`{.action}, encontrará as faturas, as datas e os montantes correspondentes.
-<!-- CP-STEPS-END:payments-correspondence -->
 
 ### Como rescindir um serviço? <a name="cancelservice"></a>
 
-<!-- CP-STEPS-START:cancel-service -->
 Para soluções como domínios, alojamentos web, servidores dedicados e VPS, aceda à página [As minhas ofertas e serviços](/links/control-panel/billing-services). Identifique o serviço em causa, clique nos três pontos e selecione `Rescindir o meu serviço`{.action}. Se já tiver efetuado um pedido, surgirá a opção `Anular a rescisão do serviço`{.action}.
 
 A rescisão ficará efetiva quando o período de validade ou de compromisso do serviço tiver chegado ao fim. Pode realizar este pedido ou anulá-lo até 24 horas antes da data de expiração.
-<!-- CP-STEPS-END:cancel-service -->
 
 #### Conselhos e dicas
 
@@ -168,10 +154,8 @@ Para mais informações sobre a rescisão dos nossos produtos e serviços, cliqu
 
 ### Como personalizar a referência do meu produto/serviço na minha fatura?
 
-<!-- CP-STEPS-START:customize-product-reference-bill -->
 Para uma leitura mais fácil, a referência OVHcloud e os nomes personalizados que atribui aos seus produtos/serviços aparecem diretamente na sua fatura.
 Além disso, é possível personalizar o nome dos seus produtos/serviços (exceto do produto `nome de domínio`{.action}) a partir da Área de Cliente, na página de configuração do produto/serviço em questão.
-<!-- CP-STEPS-END:customize-product-reference-bill -->
 
 ### Como funciona a faturação do Public Cloud?
 
@@ -183,13 +167,11 @@ Se quiser saber mais, pode consultar este manual pormenorizado: [Informação re
 
 ### Como consultar o livro razão?
 
-<!-- CP-STEPS-START:see-accounts-ledger -->
 O livro razão é fornecido exclusivamente pelo serviço de contabilidade do requerente.
 
 No entanto, a OVHcloud dá-lhe acesso ao conjunto das suas faturas através de um ficheiro Excel (.csv).
 
 Para o descarregar, abra a página [As minhas faturas](/links/control-panel/billing-invoices). A seguir, clique no botão `Ações`{.action} e selecione a opção `Exportar em CSV`{.action}.
-<!-- CP-STEPS-END:see-accounts-ledger -->
 
 ## Quer saber mais?
  

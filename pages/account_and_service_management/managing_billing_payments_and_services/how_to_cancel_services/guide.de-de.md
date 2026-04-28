@@ -110,7 +110,6 @@ Es gibt jedoch auch **Sonderfälle**, die [weiter unten](#specific-cases) in die
 
 ## Wie kann ich ein Abonnement kündigen? <a name="terminate"></a>
 
-<!-- CP-STEPS-START:cancel-subscription -->
 Um das Abonnement Ihres Dienstes zu kündigen, öffnen Sie die Seite [Meine Angebote und Dienste](/links/control-panel/billing-services).
 
 ![Produkte und Dienstleistungen](/pages/assets/screens/control_panel/product-selection/right-menu/my-solutions-and-services.png){.thumbnail}
@@ -131,7 +130,6 @@ Bitte geben Sie die Gründe für Ihre Kündigungsanfrage an und klicken Sie dann
 Die Kündigung Ihrer Dienstleistung erfolgt zum **Datum des Inkrafttretens** in der Tabelle "Verwaltung meiner Angebote und Dienste". Wenn der Status "Kündigung geplant" nicht angezeigt wird, aktualisieren Sie die Seite.
 
 ![Kündigungsanfrage](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/cancellation-request.png){.thumbnail}
-<!-- CP-STEPS-END:cancel-subscription -->
 
 ### Sonderfälle <a name="specific-cases"></a>
 
@@ -175,11 +173,9 @@ Um Ihre [VMware on OVHcloud](/links/hosted-private-cloud/hosted-private-cloud) z
 
 ### Public Cloud <a name="publiccloud"></a>
 
-<!-- CP-STEPS-START:public-cloud-deletion -->
 Jeder Public Cloud Dienst kann gelöscht werden, indem Sie rechts neben dem betreffenden Dienst `...`{.action} und dann auf `Löschen`{.action} klicken, wie im folgenden Beispiel für eine Instanz abgebildet:
 
 ![public cloud instance deletion](images/pci-deletion.png){.thumbnail}
-<!-- CP-STEPS-END:public-cloud-deletion -->
 
 Die OVHcloud Public Cloud basiert auf dem Prinzip *Pay as you go* (weitere Details finden Sie auf unserer Seite zum [Abrechnungsmodus Public Cloud](/pages/public_cloud/public_cloud_cross_functional/analyze_billing)). Sie zahlen am Monatsende nur für die Zeit, in der die Ressourcen tatsächlich genutzt wurden.
 
@@ -192,7 +188,6 @@ Sie können Ihren [aktuellen Verbrauch](/pages/public_cloud/public_cloud_cross_f
 > Sie können eine Kündigungsanfrage nur bis zu 24 Stunden vor dem Kündigungsdatum stornieren.
 >
 
-<!-- CP-STEPS-START:stop-cancellation -->
 Um eine Kündigungsanfrage zurückzunehmen, öffnen Sie die Seite [Meine Angebote und Dienste](/links/control-panel/billing-services).
 
 Klicken Sie dann auf den Button `...`{.action} rechts neben der Dienstleistung, für die eine Kündigung beantragt wurde, und dann auf `Kündigung der Dienstes stornieren`{.action}
@@ -200,7 +195,6 @@ Klicken Sie dann auf den Button `...`{.action} rechts neben der Dienstleistung, 
 ![cancel_termination](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/cancel_termination.png){.thumbnail}
 
 Klicken Sie dann auf `Stornierung bestätigen`{.action}.
-<!-- CP-STEPS-END:stop-cancellation -->
 
 Die Kündigung wird mit sofortiger Wirkung rückgängig gemacht. Aktualisieren Sie die Seite "Verwaltung meiner Angebote und Dienste", wenn Sie immer noch den Status "Kündigung geplant" sehen.
 

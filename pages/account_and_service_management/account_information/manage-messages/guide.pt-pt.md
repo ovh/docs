@@ -27,15 +27,12 @@ Ao criar a sua conta OVHcloud, especificou um endereço de correio eletrónico d
 
 ### As minhas comunicações
 
-<!-- CP-STEPS-START:my-messages -->
 A partir do separador `As minhas comunicações`{.action}, encontre todos os mensagens que foram enviadas para o seu endereço de correio eletrónico de contacto. Na parte superior direita da tabela, pode ativar um filtro para classificar as suas mensagens por prioridade, data e categoria.
 
 ![my messages](images/messages-01.png){.thumbnail .w-600}
-<!-- CP-STEPS-END:my-messages -->
 
 ### Contactos
 
-<!-- CP-STEPS-START:contacts -->
 A partir do separador `Contactos`{.action}, encontra o endereço de correio eletrónico de referência da conta OVHcloud, que não pode ser removido ou modificado a partir do espaço cliente.
 
 > [!primary]
@@ -52,11 +49,9 @@ Além do seu contacto `predefinido`, pode adicionar novos endereços de correio 
     - `Eliminar`{.action}: Permite eliminar este contacto.
 
 ![my messages](images/contacts-01.png){.thumbnail .w-600}
-<!-- CP-STEPS-END:contacts -->
 
 ### Definições de difusão
 
-<!-- CP-STEPS-START:delivery-settings -->
 A partir do separador `Definições de difusão`{.action}, pode criar regras para organizar a distribuição das mensagens para os seus endereços de correio eletrónico de contacto.
 
 - **(1)**: Clique no botão `Criar uma regra`{.action} para definir quais os contactos que receberão as comunicações, consoante as categorias e os níveis de prioridade que selecionar.
@@ -79,7 +74,6 @@ Também pode criar uma regra que inclua várias condições que serão aplicadas
 Por defeito, se uma condição se aplicar, o processo pára. Se quiser que o processo continue a aplicar as condições seguintes, ative o botão `E continuar o tratamento de regras`{.action} **(2)** sob a regra que configurou.
 
 ![my messages](images/rules-02.png){.thumbnail .w-600}
-<!-- CP-STEPS-END:delivery-settings -->
 
 ## Quer saber mais?
 

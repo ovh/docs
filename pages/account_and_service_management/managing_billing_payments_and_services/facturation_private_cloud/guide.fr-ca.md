@@ -82,7 +82,6 @@ Si vous avez plusieurs datacentres dans votre infrastructure, le datastore sera 
 
 ### Ressources mensuelles
 
-<!-- CP-STEPS-START:monthly-resources-cp -->
 La commande de ressources mensuelles se fait depuis l'espace client OVHcloud dans l'onglet `Datacenter`{.action} de votre Hosted Private Cloud.
 
 #### Facturation mensuelle
@@ -120,11 +119,9 @@ Puis la confirmation.
 ![confirmation commande datastore](images/images-order_datastore_manager_confirm.png){.thumbnail}
 
 Dans l'espace client OVHcloud, il n'y a pas d'indication de disponibilité. Si une ressource n'est pas disponible, la commande restera en attente et de ce fait la période de location ne débutera qu'à la livraison de la ressource.
-<!-- CP-STEPS-END:monthly-resources-cp -->
 
 ### Licences Windows
 
-<!-- CP-STEPS-START:windows-spla-licenses -->
 Depuis votre espace client OVHcloud, vous pouvez activer les licences SPLA, afin de [déployer des machines virtuelles Windows avec une licence OVHcloud](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/ovf_template).
 
 Après avoir cliqué sur le bouton `Activer le SPLA`{.action}, la fenêtre suivante s'ouvrira :
@@ -132,7 +129,6 @@ Après avoir cliqué sur le bouton `Activer le SPLA`{.action}, la fenêtre suiva
 ![activer SPLA](images/images-activate_spla.png){.thumbnail}
 
 Après avoir confirmé les différentes conditions, vous serez invité a valider un bon de commande gratuit pour que l'option puisse s'activer.
-<!-- CP-STEPS-END:windows-spla-licenses -->
 
 Cette licence sera facturée en début de mois suivant, par rapport au nombre  de machines déployées et allumées dans le mois écoulé.
 
@@ -157,13 +153,11 @@ Une machine virtuelle sera facturée dès son démarrage et pour un mois entier,
 
 ### Sauvegarde Veeam
 
-<!-- CP-STEPS-START:veeam-backup -->
 Depuis votre espace client OVHcloud, vous pouvez activer l'option Veeam qui permettra de sauvegarder vos machines virtuelles.
 
 L'activation se fait sur le bouton disponible dans l'onglet `Backup`{.action}. Vous devrez confirmer l'activation sur le fenêtre qui s'ouvrira.
 
 ![activer Veeam](images/images-activate_veeam.png){.thumbnail}
-<!-- CP-STEPS-END:veeam-backup -->
 
 Suite à cela, une machine virtuelle Windows sera déployée sur votre infrastructure avec un coût fixe de 20 € HT, quelle que soit votre gamme et vos types d'hôtes.
 

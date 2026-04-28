@@ -80,13 +80,11 @@ Será informado das etapas da entrega e saberá se são necessárias ações.
 
 ### Rescisão de serviços
 
-<!-- CP-STEPS-START:service-termination -->
 Se pretender deixar de utilizar um dos seus serviços, pode rescindir o serviço, passar a renovação em modo manual ou eliminá-lo imediatamente a partir da página [As minhas ofertas e serviços](/links/control-panel/billing-services). Clique no botão `...`{.action} correspondente ao serviço sobre o qual deseja atuar e, em seguida, num dos botões seguintes:
 
 - `Configurar a renovação`{.action}: no ecrã seguinte, poderá passar o `Tipo de renovação` do seu serviço para `Manual`. A seguir, clique em `Seguinte`{.action} e em `Confirmar`{.action}. Antes da data de expiração do serviço, receberá várias notificações por e-mail. Se não renovar o serviço, este será eliminado **definitivamente**.
 - `Rescindir o meu serviço`{.action}: no ecrã seguinte, indique as razões do seu pedido de rescisão e clique em `Validar`{.action}. Na data de expiração do seu serviço, ele será eliminado **definitivamente**.
 - `Eliminar imediatamente`{.action}: no ecrã seguinte, clique em `Validar`{.action}. Receberá um e-mail de confirmação. Após a validação, o seu serviço será eliminado de **imediato e de forma definitiva**.
-<!-- CP-STEPS-END:service-termination -->
 
 Para obter mais informações sobre a rescisão dos seus serviços, consulte o guia [Como rescindir os seus serviços OVHcloud](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_cancel_services).
 

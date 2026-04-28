@@ -33,9 +33,7 @@ Dans la pratique, il s'agit souvent de l’envoi d’un e-mail ou d'un SMS vous 
 
 #### Identifier un e-mail de phishing
 
-<!-- CP-STEPS-START:check-messages -->
 En priorité, vérifiez si l'e-mail que vous avez reçu est aussi visible sur la page [Mes communications](/links/control-panel/account-messages). Vous y retrouverez les copies des e-mails officiels envoyés par OVHcloud.
-<!-- CP-STEPS-END:check-messages -->
 
 Par ailleurs, voici quelques éléments pour vous aider à distinguer visuellement un authentique e-mail OVHcloud d'une tentative de phishing.
 
@@ -246,9 +244,7 @@ Contactez rapidement votre banque pour faire opposition sur votre moyen de paiem
 
 /// details | **Si vous avez entré votre mot de passe OVHcloud sur un site frauduleux**
 
-<!-- CP-STEPS-START:change-password-security -->
 Ouvrez la page [Sécurité du compte](/links/control-panel/account-security) et modifiez immédiatement votre mot de passe.<br>
-<!-- CP-STEPS-END:change-password-security -->
 
 Vous trouverez, sur notre guide « [Modifier le mot de passe de votre compte](/pages/account_and_service_management/account_information/manage-ovh-password) », la méthode pour modifier votre mot de passe depuis votre espace client, ainsi que nos recommandations pour générer un mot de passe efficace et le sauvegarder dans un gestionnaire de mots de passe. 
 

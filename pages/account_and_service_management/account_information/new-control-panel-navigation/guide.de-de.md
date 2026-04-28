@@ -43,21 +43,17 @@ Seit April 2025 haben die Teams von OVHcloud eine neue Navigation in Ihrem Kunde
 
 ### Wie kann ich auf meinen Account zugreifen?
 
-<!-- CP-STEPS-START:access-account -->
 Greifen Sie jederzeit auf die Verwaltung Ihres Accounts zu, indem Sie oben rechts im Kundencenter auf Ihren Namen klicken.
 
 ![Kundencenter - Mein Account](images/01-account-access.png){.thumbnail width="1000"}
-<!-- CP-STEPS-END:access-account -->
 
 ### Wie verwalte ich meinen Account und meine Informationen?
 
-<!-- CP-STEPS-START:manage-account -->
 Klicken Sie auf Ihren Namen, um Ihr Profil, Ihre Zahlungsarten und Ihren Support zu aktualisieren.<br>
 Über das gleiche Menü haben Sie schnellen Zugriff auf Ihre Rechnungen, Bestellungen und die Verwaltung Ihrer Dienstleistungen.<br>
 Sie finden dort auch Links zu den von OVHcloud versandten E-Mails (`Meine Kommunikation`{.action}) und den verschiedenen Kontakten, die mit Ihren Diensten verbunden sind.
 
 ![Kundencenter - Meinen Account verwalten](images/02-account-menu.png){.thumbnail width="1000"}
-<!-- CP-STEPS-END:manage-account -->
 
 /// details | Nützliche Links
 
@@ -73,23 +69,19 @@ Sie finden dort auch Links zu den von OVHcloud versandten E-Mails (`Meine Kommun
 
 ### Wie kann ich auf meine Dienstleistungen zugreifen?
 
-<!-- CP-STEPS-START:access-services -->
 Das Menü für den Zugriff auf die OVHcloud Dienste befindet sich nun links im Kundencenter. Sie haben Zugriff auf sämtliche OVHcloud Dienste, sodass Sie Ihr Angebot problemlos mit zusätzlichen und angepassten Diensten ergänzen können.
 
 Ihre Dienste sind mit einem blauen Kreis gekennzeichnet<sup>1</sup>.
 
 ![Kundencenter - Meine Dienste](images/03-services.png){.thumbnail width="1000"}
-<!-- CP-STEPS-END:access-services -->
 
 ### Zusätzliche Tastenkombinationen
 
-<!-- CP-STEPS-START:additional-shortcuts -->
 Unten links im Kundencenter finden Sie die Shortcuts, um unsere Partner auf unserem Marketplace kennenzulernen, in Echtzeit über den Status Ihrer Dienstleistungen auf dem Laufenden zu bleiben und Ihren CO2-Fußabdruck einzuschätzen.
 
 **Benötigen Sie Hilfe?** Besuchen Sie das Help Center, um Antworten auf Ihre Fragen zu erhalten.
 
 ![Kundencenter - Zusätzliche Tastenkombinationen](images/04-shortcuts.png){.thumbnail width="1000"}
-<!-- CP-STEPS-END:additional-shortcuts -->
 
 /// details | Nützliche Links
 

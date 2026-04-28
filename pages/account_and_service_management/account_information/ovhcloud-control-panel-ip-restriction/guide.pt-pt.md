@@ -61,7 +61,6 @@ Se utilizar uma rede 4G/5G em complemento, não se esqueça de recuperar também
 
 ### Etapa 2 - Implementar uma restrição de acesso por IP
 
-<!-- CP-STEPS-START:enable-ip-restriction -->
 Na página [Segurança da conta](/links/control-panel/account-security), encontre a secção **Restrição de acesso por IP**.
 
 ![Access from Manager](images/ip2.png){.thumbnail}
@@ -91,11 +90,9 @@ Estão presentes duas secções para a implementação das restrições por IP:
 >
 > Esteja portanto extremamente vigilante quanto a este ponto.
 >
-<!-- CP-STEPS-END:enable-ip-restriction -->
 
 #### Recusar todos os endereços IP com exceção dos endereços legítimos
 
-<!-- CP-STEPS-START:add-allow-rule -->
 Para autorizar o acesso à Área de Cliente OVHcloud apenas a um ou vários endereços IP legítimos, clique no botão `Adicionar uma restrição`{.action}.
 
 > Nas capturas de ecrã que se seguirão, o IP **192.0.2.0** deverá ser substituído por um IP que lhe diz respeito.
@@ -123,11 +120,9 @@ Depois de **ter inserido o conjunto** dos seus endereços IP públicos na secç�
 ![Add allow rule](images/ip7.png){.thumbnail}
 
 > A partir de agora, **apenas** os endereços IP públicos previamente autorizados na secção `IP configurados` podem aceder à sua Área de Cliente OVHcloud. 
-<!-- CP-STEPS-END:add-allow-rule -->
 
 #### Autorizar todos os endereços IP com exceção de certos endereços
 
-<!-- CP-STEPS-START:add-deny-rule -->
 A opção de restrição de acesso por IP permite também autorizar todos os endereços de IP a aceder à sua Área de Cliente OVHcloud, à exceção de alguns que terá previamente identificado como ilegítimos.
 
 Para bloquear o acesso à sua Área de Cliente OVHcloud a um ou vários endereços IP, clique na secção `IP configurados`, no botão `Adicionar uma restrição`{.action}.
@@ -154,7 +149,6 @@ Depois de inserir todos os endereços IP públicos na secção `IP configurados`
 ![Add deny rule](images/ip12.png){.thumbnail}
 
 > A partir de agora, **todos** os endereços IP públicos podem aceder à sua Área de Cliente OVHcloud, **à exceção dos** que são declarados na secção `IP configurados`.
-<!-- CP-STEPS-END:add-deny-rule -->
 
 ## Quer saber mais?
 

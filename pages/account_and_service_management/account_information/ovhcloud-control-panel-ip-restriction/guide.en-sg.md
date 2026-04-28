@@ -62,7 +62,6 @@ If you are using a 4G/5G network as an addition, remember to also retrieve the I
 
 ### Step 2 - Set up access restriction by IP
 
-<!-- CP-STEPS-START:enable-ip-restriction -->
 On the [Account security](/links/control-panel/account-security) page, find the **IP access restriction** section.
 
 ![Access from Manager](images/ip2.png){.thumbnail}
@@ -92,11 +91,9 @@ There are two sections for setting IP restrictions:
 >
 > Be extremely vigilant on this point.
 >
-<!-- CP-STEPS-END:enable-ip-restriction -->
 
 #### Deny all IP addresses except legitimate addresses
 
-<!-- CP-STEPS-START:add-allow-rule -->
 To authorise access to the OVHcloud Control Panel only for one or more legitimate IP addresses, click the `Add a restriction`{.action} button.
 
 > The IP **192.0.2.0** used in the following screenshots needs to be replaced with one of your own IP addresses.
@@ -124,11 +121,9 @@ Once you have **set all** of your public IP addresses in the `Configured IPs` se
 ![Add allow rule](images/ip7.png){.thumbnail}
 
 > From now on, **only** public IP addresses previously authorised in the `Configured IPs` section can access your OVHcloud Control Panel.
-<!-- CP-STEPS-END:add-allow-rule -->
 
 #### Authorise all IP addresses except some addresses
 
-<!-- CP-STEPS-START:add-deny-rule -->
 With the IP access restriction option, you can also authorise all IP addresses to access your OVHcloud Control Panel, with the exception of a few that you have previously identified as illegitimate.
 
 To block access to your OVHcloud Control Panel for one or more IP addresses, click on the `Add a restriction`{.action} button in the `Configured IPs` section.
@@ -155,7 +150,6 @@ Once you have entered all of the public IP addresses in the `Configured IPs` sec
 ![Add deny rule](images/ip12.png){.thumbnail}
 
 > From now on, **all** public IP addresses can access your OVHcloud Control Panel, **with the exception of** those declared in the `Configured IPs` section.
-<!-- CP-STEPS-END:add-deny-rule -->
 
 ## Go further
 

@@ -25,7 +25,6 @@ En el área de cliente de OVHcloud, puede registrar y gestionar diferentes forma
 
 ## Procedimiento <a name="payment_methods"></a>
 
-<!-- CP-STEPS-START:instructions-overview -->
 En la página [Formas de pago](/links/control-panel/billing-payment-methods), podrá consultar la forma de pago registrada en su cuenta de cliente.
 
 ![hubpayment](/pages/assets/screens/control_panel/product-selection/right-menu/my-payment-methods.png){.thumbnail}
@@ -36,11 +35,9 @@ Allí, podrá:
 - Cambiar su forma de pago por defecto
 - Editar la descripción de la forma de pago
 - Eliminar una forma de pago
-<!-- CP-STEPS-END:instructions-overview -->
 
 ### Añadir una forma de pago
 
-<!-- CP-STEPS-START:register-payment-method -->
 Al realizar el primer pedido, deberá registrar una forma de pago para garantizar la renovación del servicio mediante cargo automático.
 
 Esta forma de pago se utilizará por defecto para todas sus renovaciones y se le propondrá abonar nuevos pedidos.
@@ -76,11 +73,9 @@ No se cargará ningún importe y su tarjeta bancaria se activará en unos minuto
 Seleccionar `PayPal`{.action} como forma de pago. Haga clic en el botón `PayPal`{.action}. Se abrirá una ventana emergente donde podrá conectarse a su cuenta de PayPal® y registrarla como forma de pago autorizada con OVHcloud.
 
 Su cuenta de PayPal® se activará en unos minutos.
-<!-- CP-STEPS-END:register-payment-method -->
 
 ### Cambiar su forma de pago por defecto
 
-<!-- CP-STEPS-START:change-default-payment-method -->
 Las facturas correspondientes a la renovación de sus servicios siempre se cargarán a su forma de pago por defecto. Si desea modificarla, deberá añadir primeramente una nueva forma de pago en su área de cliente.
 
 Para ello, haga clic en el botón `...`{.action} a la derecha de la nueva forma de pago y, seguidamente, en `Establecer como forma de pago por defecto`{.action}.
@@ -93,17 +88,14 @@ Para ello, haga clic en el botón `...`{.action} a la derecha de la nueva forma 
 > - 2. establezca la nueva forma de pago por defecto
 > - 3. elimine la antigua forma de pago
 >
-<!-- CP-STEPS-END:change-default-payment-method -->
 
 ### Eliminar una forma de pago
 
-<!-- CP-STEPS-START:delete-payment-method -->
 Si ya no desea utilizar alguna de sus formas de pago, puede eliminarla haciendo clic en el botón `...`{.action} a la derecha de esta. A continuación, haga clic en `Eliminar esta forma de pago`{.action}.
 
 ![manage-payment-methods](images/managepaymentmethods4.png){.thumbnail}
 
 Si quiere eliminar todas sus formas de pago, todos sus servicios deben estar [renovados manualmente](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#renovacion-manual).
-<!-- CP-STEPS-END:delete-payment-method -->
 
 #### Eliminar una forma de pago a través de las API OVHcloud
 
@@ -134,7 +126,6 @@ A continuación, elimine la forma de pago utilizando el ID obtenido en el paso a
 
 #### ¿Qué es la cuenta de prepago?
 
-<!-- CP-STEPS-START:prepaid-account-overview -->
 Una vez que haya creado, la *cuenta de prepago* aparecerá en el [área de cliente de OVHcloud](/links/control-panel/billing-payment-methods). Le permite recargar con antelación su cuenta de cliente y utilizar estos fondos para abonar sus pedidos y sus facturas de renovación.
 
 Recargando su cuenta con regularidad, se asegurará de que la [renovación automática](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal) de sus servicios no se interrumpa nunca por defecto de pago.
@@ -142,7 +133,6 @@ Recargando su cuenta con regularidad, se asegurará de que la [renovación autom
 Para ello, acceda a la página [Formas de pago](/links/control-panel/billing-payment-methods) y seleccione la pestaña `Mi cuenta de prepago`{.action}.
 
 ![prepaid-account](images/prepaid-account.png){.thumbnail}
-<!-- CP-STEPS-END:prepaid-account-overview -->
 
 #### ¿Cómo funciona?
 
@@ -156,15 +146,12 @@ Si no ha registrado ninguna forma de pago, deberá abonar el importe pendiente d
 
 Si no ha guardado ninguna forma de pago, le recomendamos que establezca un **umbral de alerta** para asegurarse de que dispone de los fondos necesarios para sus próximas facturas:
 
-<!-- CP-STEPS-START:prepaid-account-alert -->
 ![warning_prepaid_account](images/warning_prepaid_account.png){.thumbnail}
 
 Si el crédito disponible en su cuenta de prepago se reduce por debajo del límite establecido, se le enviará de inmediato un email de notificación.
-<!-- CP-STEPS-END:prepaid-account-alert -->
 
 #### ¿Cómo recargar su cuenta de prepago?
 
-<!-- CP-STEPS-START:prepaid-account-credit -->
 En la pestaña `Mi cuenta de prepago`{.action}, haga clic en el botón `Recargar`{.action}.
 
 ![credit-prepaid-account](images/credit-prepaid-account.png){.thumbnail}
@@ -174,7 +161,6 @@ En la nueva ventana, seleccione el importe que desea recargar y haga clic en `Si
 ![order-prepaid-account](images/order-prepaid-account.png){.thumbnail}
 
 En la nueva orden de pedido, seleccione la forma de pago que desee y abone el pedido.
-<!-- CP-STEPS-END:prepaid-account-credit -->
 
 ## Más información
 

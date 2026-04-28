@@ -80,13 +80,11 @@ Sie werden über die Schritte der Ausführung informiert und erfahren, ob auf Ih
 
 ### Kündigung von Dienstleistungen
 
-<!-- CP-STEPS-START:service-termination -->
 Wenn Sie einen Ihrer Dienste nicht mehr nutzen möchten, können Sie ihn kündigen, die Verlängerung auf den manuellen Modus umstellen oder ihn sofort von der Seite [Meine Angebote und Dienste](/links/control-panel/billing-services) aus löschen. Klicken Sie auf den Button `...`{.action}, der dem Dienst entspricht, den Sie bearbeiten möchten, und klicken Sie dann auf einen der folgenden Buttons:
 
 - `Verlängerung konfigurieren`{.action}: Auf dem folgenden Bildschirm können Sie den `Verlängerungsart` Ihrer Dienstleistung auf `Manuell` umstellen. Klicken Sie anschließend auf `Weiter`{.action} und `Bestätigen`{.action}. Vor Ablauf Ihrer Dienstleistung erhalten Sie mehrere Benachrichtigungen per E-Mail. Wenn Sie Ihren Dienst nicht verlängern, wird er **endgültig** gelöscht.
 - `Meinen Dienst kündigen`{.action}: Geben Sie im folgenden Fenster die Gründe für Ihre Kündigungsanfrage ein und klicken Sie dann auf `Bestätigen`{.action}. Am Ablaufdatum Ihrer Dienstleistung wird diese **endgültig** gelöscht.
 - `Sofort löschen`{.action}: Klicken Sie dann auf `Bestätigen`{.action}. Sie erhalten eine Bestätigungsmail. Nach Ihrer Validierung wird Ihre Dienstleistung **sofort und endgültig** gelöscht.
-<!-- CP-STEPS-END:service-termination -->
 
 Weitere Informationen zur Kündigung Ihrer Dienstleistungen finden Sie in der Anleitung [OVHcloud Dienste kündigen](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_cancel_services).
 

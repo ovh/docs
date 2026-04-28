@@ -96,7 +96,6 @@ Sur la page [Sécurité du compte](/links/control-panel/account-security), cliqu
 
 > [!tabs]
 > Application Mobile
->> <!-- CP-STEPS-START:enable-2fa-otp -->
 >> Choisissez la méthode par application mobile et cliquez sur `Suivant`{.action}.
 >>
 >> ![2FA mobileapp](images/2024-003-otp-choice-ca.png){.thumbnail width="400"}<br>
@@ -106,9 +105,7 @@ Sur la page [Sécurité du compte](/links/control-panel/account-security), cliqu
 >>
 >> ![2FA mobileapp](images/2024-003-otp-code.png){.thumbnail width="400"}<br>
 >> La double authentification est maintenant activée.
->> <!-- CP-STEPS-END:enable-2fa-otp -->
 > Clé de sécurité
->> <!-- CP-STEPS-START:enable-2fa-u2f -->
 >> Choisissez la méthode par clé de sécurité et cliquez sur `Suivant`{.action}.
 >>
 >> ![2FA securitykey](images/2024-004-u2f-choice-ca.png){.thumbnail width="400"}<br>
@@ -121,13 +118,11 @@ Sur la page [Sécurité du compte](/links/control-panel/account-security), cliqu
 >>
 >> Une fois la clé reconnue, vous pouvez également ajouter une description.
 >> La double authentification est maintenant activée.
->> <!-- CP-STEPS-END:enable-2fa-u2f -->
 
 Une fois la première méthode ajoutée, vous pouvez également **ajouter une ou deux autres méthodes** afin de disposer de multiples moyens de vous connecter à votre compte.
 
 ### Étape 2 - Sauvegarder les codes de secours <a name="codes"></a>
 
-<!-- CP-STEPS-START:save-backup-codes -->
 Lorsque vous ajoutez une double authentification pour la première fois, 10 codes de secours **à usage unique** vous sont affichés dans l'espace client.
 
 **Conservez-les précieusement**. Nous vous conseillons de les sauvegarder dans un gestionnaire de mots de passe, tel que [KeePass](https://keepass.info/) ou [Bitwarden](https://bitwarden.com/) (ces deux applications sont gratuites).
@@ -137,7 +132,6 @@ Lorsque vous ajoutez une double authentification pour la première fois, 10 code
 Vous pouvez regénérer ou supprimer les code de secours depuis votre espace client :
 
 ![2FA](images/emergency-codes.png){.thumbnail}
-<!-- CP-STEPS-END:save-backup-codes -->
 
 > [!warning]
 >
@@ -192,13 +186,11 @@ Si votre périphérique (téléphone mobile/smartphone/clé de sécurité) est p
 > - de codes de secours valides.
 >
 
-<!-- CP-STEPS-START:delete-device -->
 Pour supprimer un périphérique, rendez-vous sur la page [Sécurité du compte](/links/control-panel/account-security) et cliquez sur les `...`{.action} à droite de votre périphérique à supprimer, puis sur `Supprimer`{.action}.
 
 ![2FA](images/2024-006-delete-device.png){.thumbnail}
 
 Un dernier code de validation vous est alors envoyé sur le périphérique que vous souhaitez supprimer. Renseignez ce code dans la fenêtre qui s'ouvre puis cliquez sur `Valider`{.action} pour terminer la suppression.
-<!-- CP-STEPS-END:delete-device -->
 
 Si vous n'avez plus accès au périphérique que vous souhaitez supprimer, vous ne pourrez pas le supprimer vous-même de l'espace client OVHcloud.
 Dans ce cas, **contactez directement** nos équipes du support en [créant un ticket depuis le centre d'aide](https://help.ovhcloud.com/csm?id=csm_get_help) ou en suivant le processus décrit [ci-dessous](#2FA-deletion).
@@ -215,11 +207,9 @@ Pour désactiver complètement la double authentification sur votre compte OVHcl
 
 Pour supprimer chaque périphérique, consultez le [chapitre dédié de ce guide ci-dessus](#delete-device).
 
-<!-- CP-STEPS-START:disable-2fa-codes -->
 Une fois tous vos périphériques supprimés, désactivez les codes de secours en cliquant sur le bouton `Désactiver les codes 2FA`{.action}.
 
 ![2FA codes](images/disabling-codes.png){.thumbnail}
-<!-- CP-STEPS-END:disable-2fa-codes -->
 
 #### Si vous n'avez plus accès à votre espace client OVHcloud <a name="2FA-deletion"></a>
 

@@ -14,25 +14,19 @@ You can only pay for your order once you have logged in to your customer account
 
 #### Tips and tricks
 
-<!-- CP-STEPS-START:pay-new-order -->
 Have you left the order page? Go to the [My orders](/links/control-panel/billing-orders) page. You can then view and pay for your order.
-<!-- CP-STEPS-END:pay-new-order -->
 
 ### How do I check my payment status?
 
-<!-- CP-STEPS-START:check-payment-status -->
 Open the [My bills](/links/control-panel/billing-invoices) page. If a bill is pending payment, you will be asked to pay the balance.
 
 #### Tips and tricks
 
 On the [My payment methods](/links/control-panel/billing-payment-methods) page, you can save your payment method. This way, your bills will be automatically settled.
-<!-- CP-STEPS-END:check-payment-status -->
 
 ### How do I track the status of my order?
 
-<!-- CP-STEPS-START:track-order-status -->
 Open the [My orders](/links/control-panel/billing-orders) page.
-<!-- CP-STEPS-END:track-order-status -->
 
 #### Tips and tricks
 
@@ -58,7 +52,6 @@ As a business customer, please note that you are not covered by the introductory
 
 ### Why has my service not been delivered?
 
-<!-- CP-STEPS-START:service-not-delivered -->
 Your order might be delayed for a number of reasons.
 
 In order to protect its customers, OVHcloud takes particular care to ensure that financial transactions are secure. As a result, a random payment validation process has been set up, and it may slow down your order. To find out if this affects you, you can check your payment status in the `Billing`{.action} section of the OVHcloud Control Panel.
@@ -70,7 +63,6 @@ Another potential reason may be that you have a bill pending payment. If this is
 #### Tips and tricks
 
 On the [My payment methods](/links/control-panel/billing-payment-methods) page, you can save your payment method. This way, your bills will be automatically settled.
-<!-- CP-STEPS-END:service-not-delivered -->
 
 ## Go further
 

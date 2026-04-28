@@ -27,7 +27,6 @@ This guide will explain how to create and manage API users.
 
 ## Instructions
 
-<!-- CP-STEPS-START:instructions-overview -->
 ![sms-users](images/smsusers.png){.thumbnail}
 
 An SMS API user can be useful for a number of reasons:
@@ -46,21 +45,17 @@ To better manage credit for your SMS accounts, you can set a limit and quota for
 - The **quota** is the number of available SMS credits for each API user.
 
 - The **limit** corresponds to the minimum threshold of SMS credits that an API user must have before receiving an alert to recharge or not the balance of these credits.
-<!-- CP-STEPS-END:instructions-overview -->
 
 ### Step 1: Create an API user
 
-<!-- CP-STEPS-START:create-api-user -->
 Click on the `API users`{.action} tab. To add a user, click `Actions`{.action}, then `Add`{.action}.
 
 ![sms-users](images/smsusers01e-2021.png){.thumbnail}
 
 You can enter a name for the API user. The password for an API user must contain 8 alpha-numeric characters.
-<!-- CP-STEPS-END:create-api-user -->
 
 ### Step 2: Set a quota for an API user
 
-<!-- CP-STEPS-START:set-quota -->
 You can manage quotas in the `API users`{.action} tab. Click `...`{.action} next to the user concerned, then `Quota`{.action}.
 
 ![sms-users](images/smsusers03e-2021.png){.thumbnail}
@@ -78,11 +73,9 @@ You can then perform two actions.
 >
 > As an example: an SMS account has a total of 200 credits. Assigning 150 credits to an API user will deduct 150 credits from the SMS account. It will then have 50 credits.
 >
-<!-- CP-STEPS-END:set-quota -->
 
 ### Step 3: Set a limit for an API user
 
-<!-- CP-STEPS-START:set-limit -->
 To configure a limit for a user, stay in the same menu, click `...`{.action}, then `Limit`{.action}.
 
 The following settings are now available:
@@ -97,11 +90,9 @@ The following settings are now available:
 >
 
 ![sms-users](images/smsusers05-2021.png){.thumbnail}
-<!-- CP-STEPS-END:set-limit -->
 
 ### Step 4: Define a restriction by IP for the http2sms feature
 
-<!-- CP-STEPS-START:ip-restriction -->
 You can secure the http2sms feature by applying IP restrictions for each API user.
 
 To enable it, click `...`{.action} to the right of the user, then `Restrictions`{.action}.
@@ -111,11 +102,9 @@ You can enter up to 5 different IP addresses for sending HTTPS requests.
 ![sms-users](images/smsusers06-2021.png){.thumbnail}
 
 For further details on the http2sms feature, please refer to our guide on [Sending SMS messages via a URL](/pages/web_cloud/messaging/sms/envoyer_des_sms_depuis_une_url_-_http2sms).
-<!-- CP-STEPS-END:ip-restriction -->
 
 ### Step 5: Specify a callback URL
 
-<!-- CP-STEPS-START:callback-url -->
 To set up custom tracking for SMS delivery (Delivery reporting or DLR), you can specify a callback URL by clicking `...`{.action} to the right of a user, then `Callback`{.action}.
 
 ![sms-users](images/smsusers07-2021.png){.thumbnail}
@@ -127,7 +116,6 @@ When the send status of an SMS message is updated, we call the specified URL. Th
 - date: The DLR date.
 - description: The DLR ID. The various ptt codes are explained in the table below.
 - descriptionDlr: The DLR status description.
-<!-- CP-STEPS-END:callback-url -->
 
 #### The ptt codes
 

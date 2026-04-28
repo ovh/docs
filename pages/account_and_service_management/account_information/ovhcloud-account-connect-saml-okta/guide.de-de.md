@@ -88,7 +88,6 @@ Ihr Okta Dienst vertraut nun OVHcloud als Service Provider. Stellen Sie im näch
 
 ### Das Vertrauen zum OVHcloud Account und die Verbindung konfigurieren
 
-<!-- CP-STEPS-START:register-okta-in-ovhcloud -->
 Um Okta als vertrauenswürdigen Identity Provider hinzuzufügen, liefern Sie die Metadaten des Identity Providers. Öffnen Sie die Seite [SAML SSO](/links/control-panel/iam-saml-sso) und klicken Sie auf die Schaltfläche `SSO-Verbindung`{.action}.
 
 ![IAM-Menüzugriff](images/access_to_the_IAM_menu_03.png){.thumbnail}
@@ -112,7 +111,6 @@ Mit dem Button `...`{.action} können Sie den SSO aktualisieren oder löschen un
 ![OVHcloud SSO-Verbindung Schritt 5](images/ovhcloud_user_management_connect_sso_5.png){.thumbnail}
 
 Ihr Okta gilt nun als vertrauenswürdiger Identity Provider. Dennoch müssen im OVHcloud Account Gruppen hinzugefügt werden.
-<!-- CP-STEPS-END:register-okta-in-ovhcloud -->
 
 > [!warning]
 > Wenn Sie sich in diesem Schritt über SSO verbinden, wird wahrscheinlich eine Fehlermeldung `Not in valid groups` angezeigt.
@@ -122,7 +120,6 @@ Ihr Okta gilt nun als vertrauenswürdiger Identity Provider. Dennoch müssen im 
 
 Sie müssen nun den Nutzergruppen in Okta **Rollen** bei OVHcloud zuweisen. Andernfalls weiß Ihr OVHcloud Account nicht, welche Berechtigungen ein Benutzer hat und es werden keine Rechte zugewiesen.
 
-<!-- CP-STEPS-START:declare-okta-groups-ovhcloud -->
 Gehen Sie zum Abschnitt `Identitäten`{.action} und dann zum Tab `Nutzergruppen`{.action}. Klicken Sie dann auf die Schaltfläche `Eine Gruppe anmelden`{.action} und füllen Sie die Felder aus:
 
 - **Group name**: Name der Gruppe in Okta
@@ -135,7 +132,6 @@ Gehen Sie zum Abschnitt `Identitäten`{.action} und dann zum Tab `Nutzergruppen`
 Anschließend können Sie überprüfen, ob die Gruppe zu Ihrem OVHcloud Account im Bereich `Gruppen` hinzugefügt wurde:
 
 ![Okta Benutzer-Verwaltungsgruppen](images/ovhcloud_user_management_groups_3.png){.thumbnail}
-<!-- CP-STEPS-END:declare-okta-groups-ovhcloud -->
 
 Wenn sich später ein Benutzer aus der Gruppe **Intern** einloggt, erkennt Ihr OVHcloud Account, dass der Benutzer die von seiner Gruppe definierte Rolle "UNPRIVILEGED" hat.
 

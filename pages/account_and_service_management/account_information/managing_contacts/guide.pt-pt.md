@@ -53,7 +53,6 @@ O Identificador de Cliente (ID) é um código pessoal. Trata-se de um nome de ut
 
 ### Aceder à área de gestão dos contactos <a name="gestion_des_contacts"></a>
 
-<!-- CP-STEPS-START:access-contact-management -->
 Abra a página [Gestão dos contactos](/links/control-panel/account-contacts).
 
 ![Gestão de contactos](/pages/assets/screens/control_panel/product-selection/right-menu/my-contacts.png){.thumbnail}
@@ -61,11 +60,9 @@ Abra a página [Gestão dos contactos](/links/control-panel/account-contacts).
 Irá visualizar uma tabela. A tabela inclui a lista de serviços associados ao seu ID de cliente, e a lista dos contactos responsáveis pela gestão dos vários aspetos do serviço.
 
 ![Gestão de contactos](images/managing_contacts_02.png){.thumbnail}
-<!-- CP-STEPS-END:access-contact-management -->
 
 ### Alterar contactos (gestores) de um serviço
 
-<!-- CP-STEPS-START:change-contacts-service -->
 Na página de gestão dos contactos, clique em `...`{.action} à direita do serviço a alterar e, a seguir, em `Modificar os contactos`{.action}. Faça as alterações desejadas e, a seguir, clique em `Validar`{.action}.
 
 ![Gestão de contactos](images/managing_contacts_03.png){.thumbnail}
@@ -78,7 +75,6 @@ Os contactos implicados no processo de modificação vão receber um e-mail para
 >
 > Não será permitida qualquer alteração de contacto se a antiga ou a nova conta de cliente em causa tiver uma ou mais faturas em dívida.
 >
-<!-- CP-STEPS-END:change-contacts-service -->
 
 #### Sou administrador <a name="administrateur"></a>
 
@@ -98,7 +94,6 @@ Este acesso só permite alterar o utilizador definido como contacto de faturaç�
 
 ### Gerir pedidos em curso: confirmar, recusar ou consultar uma alteração de contacto
 
-<!-- CP-STEPS-START:confirm-track-contact-change -->
 Para gerir os pedidos em curso, clique no separador `Os meus pedidos`{.action}. Aqui pode aceitar ou recusar um pedido.
 
 ![Gestão de contactos](images/managing_contacts_05.png){.thumbnail}
@@ -119,7 +114,6 @@ Se apenas um dos contactos confirmar a alteração, será mostrada uma mensagem 
 ![Gestão de contactos](images/managing_contacts_007.png){.thumbnail}
 
 A alteração de contacto será efetiva alguns minutos após a validação do pedido pelos dois contactos. De seguida, receberão um e-mail a informá-los de que o pedido foi tratado.
-<!-- CP-STEPS-END:confirm-track-contact-change -->
 
 ### Exemplo: dar ao webmaster a gestão técnica do seu website
 

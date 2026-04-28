@@ -66,7 +66,6 @@ Há vários pontos a ter em conta:
 
 ### Recuperar o balanço mensal do mês anterior através da Área de Cliente OVHcloud
 
-<!-- CP-STEPS-START:retrieve-cp-footprint -->
 1. No [Painel de controlo da conta](/links/control-panel/account-dashboard), na coluna da esquerda, aceda à secção contendo os **Links úteis** e clique no separador `A minha pegada ecológica`{.action}.
 1. Na nova página que aparece, clique em `Fazer download da minha pegada de [Mês] de [Ano]`{.action}.
 
@@ -75,7 +74,6 @@ Há vários pontos a ter em conta:
 Poderá recuperar todos os meses a pegada de carbono do mês anterior para os seus serviços elegíveis.
 
 Se precisar da pegada de carbono durante um mês antes do mês anterior ao mês em curso, deverá obrigatoriamente passar pelas nossas API para a recuperar.
-<!-- CP-STEPS-END:retrieve-cp-footprint -->
 
 ### Recuperar um balanço mensal anterior ao mês anterior através das nossas API
 

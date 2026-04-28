@@ -23,9 +23,7 @@ Ten przewodnik wyjaśnia, jak tworzyć i używać nadawców do wysyłania SMS.
 ---
 <!-- CP-NAV-END:telecom-sms -->
 
-<!-- CP-STEPS-START:cp-overview-screenshot -->
 ![espace client Telecom SMS](/pages/assets/screens/control_panel/product-selection/telecom/tpl-telecom-03-fr-sms.png){.thumbnail}
-<!-- CP-STEPS-END:cp-overview-screenshot -->
 
 ## W praktyce
 
@@ -52,7 +50,6 @@ Umożliwia otrzymywanie odpowiedzi za pomocą zakładki „SMS otrzymane”.
 
 #### Nadawca alfanumeryczny
 
-<!-- CP-STEPS-START:alphanumeric-sender-management -->
 Możesz spersonalizować swojego nadawcę. Nie będzie wtedy możliwe otrzymywanie odpowiedzi od odbiorcy SMS. Aby uzyskać dostęp do zarządzania nadawcami SMS, wybierz zakładkę `Nadawcy`{.action} (1), gdy jesteś na odpowiednim koncie SMS.
 
 ![envoi sms manager](images/sms-send-control-panel04E.png){.thumbnail}
@@ -77,7 +74,6 @@ Weryfikacja nadawcy alfanumerycznego trwa średnio 72 godziny po jego utworzeniu
 - **Dodaj nadawców na podstawie danych osobowych**: Możesz zażądać nadawcy opartego na danych swojego konta OVHcloud. Wyświetlana będzie lista dostępnych nadawców.
 
 - **Dodaj nadawców na podstawie swoich domen OVHcloud**: Możesz użyć domeny dostępnej w Twoim koncie OVHcloud jako nadawcę. Wyświetlana będzie lista dostępnych nadawców.
-<!-- CP-STEPS-END:alphanumeric-sender-management -->
 
 #### Wirtualny numer komórkowy
 

@@ -89,7 +89,6 @@ Twoja usługa Google Workspace stała się dla OVHcloud zaufana jako dostawca us
 
 ### Budowa zaufania do konta OVHcloud i konfiguracja połączenia
 
-<!-- CP-STEPS-START:register-gws-ovhcloud -->
 Aby dodać Google Workspace jako zaufanego dostawcę tożsamości, musisz dostarczyć metadane dostawcy tożsamości w Panelu klienta OVHcloud. [Przejdź na stronę SAML SSO](/links/control-panel/iam-saml-sso), następnie kliknij przycisk `Logowanie SSO`{.action}.
 
 ![Dostęp do menu IAM](images/access_to_the_IAM_menu_03.png){.thumbnail}
@@ -113,7 +112,6 @@ Przycisk `...`{.action} pozwala na aktualizację lub usunięcie certyfikatu SSO 
 ![Etap 5 OVHcloud logowania SSO](images/ovhcloud_user_management_connect_sso_5.png){.thumbnail}
 
 Twój Google Workspace jest teraz uważany za zaufanego dostawcę tożsamości. Jednocześnie należy dodać grupy do konta OVHcloud.
-<!-- CP-STEPS-END:register-gws-ovhcloud -->
 
 > [!warning]
 > Jeśli spróbujesz zalogować się przez SSO, prawdopodobnie wyświetli się komunikat błędu `Not in valid groups`.
@@ -143,7 +141,6 @@ Następnie przypisz **role** tym grupom użytkowników do OVHcloud. W przeciwnym
 
 ![Konfiguracja grup użytkowników](images/google_workspace_web_mobile_setup_groups.png){.thumbnail}
 
-<!-- CP-STEPS-START:declare-groups-ovhcloud -->
 W Panelu klienta OVHcloud przejdź do sekcji `Tożsamości`{.action} i w zakładce `Grupy użytkowników`{.action}. Następnie kliknij przycisk `Zadeklaruj grupę`{.action} i wypełnij pola:
 
 - **Nazwa grupy**: Nazwa grupy w Google Workspace
@@ -156,7 +153,6 @@ W Panelu klienta OVHcloud przejdź do sekcji `Tożsamości`{.action} i w zakład
 Następnie możesz sprawdzić, czy grupa została dodana do Twojego konta OVHcloud w sekcji "Grupy":
 
 ![Grupy zarządzania użytkownikami Google Workspace](images/ovhcloud_user_management_groups_3.png){.thumbnail}
-<!-- CP-STEPS-END:declare-groups-ovhcloud -->
 
 Po zalogowaniu się z użytkownikiem grupy **wewnętrznej** konto OVHcloud zostanie uznane za użytkownika spełniającego rolę "UNPRIVILEGED" określoną przez jego grupę.
 

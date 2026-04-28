@@ -213,7 +213,6 @@ L'ajout de votre application Entra ID en tant que fournisseur d'identité approu
 
 #### Établir la confiance OVHcloud
 
-<!-- CP-STEPS-START:establish-trust -->
 Complétez le champ **Nom d'attribut d'utilisateur** avec la valeur de claim d'applications Entra ID **UPN** et le champ **Nom d'attribut de groupe** avec la valeur de claim **groups** enregistrée précédemment.
 
 Remplissez les métadonnées XML de votre application Entra ID à partir du fichier enregistré précédemment.
@@ -223,7 +222,6 @@ Il est possible de conserver les utilisateurs locaux en cochant la case `Conserv
 Cliquez sur le bouton `Valider`{.action}.
 
 ![Ovhcloud SSO step 1](images/ovhcloud_sso_1.png){.thumbnail}
-<!-- CP-STEPS-END:establish-trust -->
 
 L'ajout de votre application Entra ID en tant que fournisseur d'identité est donc établie mais vous devez quand même ajouter des groupes à votre compte OVHcloud.
 
@@ -239,7 +237,6 @@ Pour résoudre cette situation, vérifiez l'attribut « Group » retourné par v
 
 ![Entra ID Group étape 2](images/azure_ad_group_2.png){.thumbnail}
 
-<!-- CP-STEPS-START:declare-groups -->
 Pour ajouter un groupe, rendez-vous dans la section `Identités`{.action} puis dans l'onglet `Groupes d'utilisateurs`{.action}. Cliquez ensuite sur le bouton `Déclarer un groupe`{.action} :
 
 ![Groupes de gestion des utilisateurs Ovhcloud étape 1](images/ovhcloud_sso_menu_1.png){.thumbnail}
@@ -251,7 +248,6 @@ Renseignez le nom du groupe et sélectionnez le privilège associé, puis clique
 Le groupe créé doit apparaître sur la liste.
 
 ![Groupes de gestion des utilisateurs Ovhcloud étape 3](images/ovhcloud_sso_menu_3.png){.thumbnail}
-<!-- CP-STEPS-END:declare-groups -->
 
 Attention, si vous donnez le privilège `Aucun`, il sera nécessaire d'attribuer des droits à ce groupe via les [politiques IAM](/pages/account_and_service_management/account_information/iam-policy-ui)
 

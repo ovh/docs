@@ -37,7 +37,6 @@ Otwórz `Zasilenia i vouchery`{.action} w menu po lewej stronie w sekcji **Ustaw
 
 ### Dodaj zasilenie
 
-<!-- CP-STEPS-START:add-credit -->
 Kliknij przycisk `Zamów zasilenie cloud`{.action}.
 
 ![addpubliccloudcredit](images/cloudcredit1.png){.thumbnail}
@@ -51,11 +50,9 @@ Zostaje wygenerowane zamówienie. Kliknij na link w zielonej ramce powiadomienia
 ![addpubliccloudcredit](images/cloudcredit3.png){.thumbnail}
 
 Po dokonaniu płatności zasilenie pojawi się na liście `Kredyty i vouchery`.
-<!-- CP-STEPS-END:add-credit -->
 
 ### Wykorzystanie vouchera
 
-<!-- CP-STEPS-START:redeem-voucher -->
 Kliknij przycisk `Włącz kod`{.action}.
 
 ![addpubliccloudcredit](images/voucher1.png){.thumbnail}
@@ -65,7 +62,6 @@ W oknie, które się pojawi, wprowadź kod vouchera i kliknij `Zatwierdź`{.acti
 ![addpubliccloudcredit](images/voucher2.png){.thumbnail}
 
 Pozostała część kodu pojawi się na liście `Kredyty i vouchery`.
-<!-- CP-STEPS-END:redeem-voucher -->
 
 > [!primary]
 >

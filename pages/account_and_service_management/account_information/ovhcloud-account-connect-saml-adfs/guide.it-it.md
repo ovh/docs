@@ -133,7 +133,6 @@ L'aggiunta del tuo AD FS come affidabilità provider avviene [nello Spazio Clien
 
 Apri la pagina [SAML SSO](/links/control-panel/iam-saml-sso).
 
-<!-- CP-STEPS-START:configure-sso-connection -->
 Nella sezione `SSO connection`{.action}, inserisci i metadati XML del tuo servizio AD FS. Il campo `Nome del gruppo` è facoltativo in questo caso. Clicca su `Conferma`{.action}.
 
 Per conservare gli utenti locali, spunta la casella `Conservare gli utenti OVHcloud attivi`.
@@ -153,7 +152,6 @@ Per maggiori informazioni, clicca sul link sotto l'`URL del servizio SSO`.
 Il pulsante `...`{.action} permette di aggiornare o eliminare l'SO e di consultarne i dettagli.
 
 ![OVHcloud di connessione SSO Step 6](images/ovhcloud_user_management_connect_sso_6.png){.thumbnail}
-<!-- CP-STEPS-END:configure-sso-connection -->
 
 Il tuo AD FS è considerato un provider affidabile. È comunque necessario aggiungere gruppi al tuo account OVHcloud.
 
@@ -188,7 +186,6 @@ Puoi verificarlo anche nella dichiarazione SAML:
 
 Questo significa che è necessario aggiungere il gruppo `manager@<my-domain>.com` al tuo account OVHcloud associandovi un ruolo. In caso contrario, il tuo account OVHcloud non sa cosa l'utente può fare.
 
-<!-- CP-STEPS-START:add-user-groups -->
 Per aggiungere questo gruppo, clicca sulla sezione `Identità`{.action} e poi sulla scheda `Gruppi di utenti`{.action}. Clicca sul pulsante `Dichiarare un gruppo`{.action}, inserisci il nome del gruppo e seleziona il ruolo associato:
 
 ![Gruppi di gestione utenti AD FS](images/ovhcloud_user_management_groups_1.png){.thumbnail}
@@ -198,7 +195,6 @@ Per aggiungere questo gruppo, clicca sulla sezione `Identità`{.action} e poi su
 Verifica che il gruppo sia aggiunto al tuo account OVHcloud nella sezione `Gruppi`:
 
 ![Gruppi di gestione utenti AD FS](images/ovhcloud_user_management_groups_3.png){.thumbnail}
-<!-- CP-STEPS-END:add-user-groups -->
 
 Quando ti connetti con l'utente Active Directory "John Doe", il tuo account OVHcloud riconoscerà che l'utente ha il ruolo "REGULAR", specificato dal suo gruppo.
 

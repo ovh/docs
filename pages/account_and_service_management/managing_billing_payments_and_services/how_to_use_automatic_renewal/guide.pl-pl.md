@@ -122,15 +122,12 @@ Z tego przewodnika dowiesz się:
 
 ## W praktyce
 
-<!-- CP-STEPS-START:services-table -->
 Otwórz stronę [Moje rozwiązania i usługi](/links/control-panel/billing-services).
 
 ![produkty i usługi](/pages/assets/screens/control_panel/product-selection/right-menu/my-solutions-and-services.png){.thumbnail}
-<!-- CP-STEPS-END:services-table -->
 
 ### Wyświetl typ odnowienia <a name="renewal-type"></a>
 
-<!-- CP-STEPS-START:services-table -->
 Na stronie **Moje rozwiązania i usługi** znajduje się tabela wyszczególniająca Twoje usługi OVHcloud. Znajdziesz tam nazwy swoich usług, ich rodzaj, dostępność (Domyślny składnik `aktywów`), status (rodzaj odnowienia, działanie do przeprowadzenia itd.), kolejną datę odnowienia lub rozwiązania umowy oraz przycisk `...`{.action} przeznaczony do działań możliwych do przeprowadzenia dla każdej usługi.
 
 ![Moje usługi](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/my-services-en.png){.thumbnail}
@@ -142,7 +139,6 @@ Na stronie **Moje rozwiązania i usługi** znajduje się tabela wyszczególniaj�
 > Kryteria filtrowania zostaną wyświetlone nad tabelą. Oto przykład filtra umożliwiającego wyświetlenie nazw domen, których odnowienie jest wykonywane ręcznie.
 >
 > ![manageautomaticrenewal](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/filters-en.png){.thumbnail}
-<!-- CP-STEPS-END:services-table -->
 
 <a name="actions"></a>
 
@@ -153,7 +149,6 @@ Na stronie **Moje rozwiązania i usługi** znajduje się tabela wyszczególniaj�
 > Niektóre działania mogą nie być dostępne w zależności od tego, czy dana usługa kwalifikuje się do odnowienia ręcznego.
 >
 
-<!-- CP-STEPS-START:configure-renewal -->
 Po prawej stronie usługi kliknij przycisk `...`{.action} w kolumnie `Filtruj`, a następnie wybierz odpowiednią akcję.
 
 ![menu actions](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/actions-en.png){.thumbnail}
@@ -171,8 +166,6 @@ Po prawej stronie usługi kliknij przycisk `...`{.action} w kolumnie `Filtruj`, 
 >>
 >> W zależności od dokonanego wyboru, zostaną określone przyszłe daty pobrania środków, sposób płatności, który zostanie wykorzystany oraz data wygaśnięcia usługi.
 >>
-<!-- CP-STEPS-END:configure-renewal -->
-<!-- CP-STEPS-START:bring-forward-payment -->
 > **Prognoza płatności**
 >>
 >>![antycypowanie płatności](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/forward-payment-en.png){.thumbnail}
@@ -193,8 +186,6 @@ Po prawej stronie usługi kliknij przycisk `...`{.action} w kolumnie `Filtruj`, 
 >> >
 >> > W celach informacyjnych ceny niektórych opcji są wyświetlane dopiero po wygenerowaniu zamówienia na odnowienie usługi.
 >>
-<!-- CP-STEPS-END:bring-forward-payment -->
-<!-- CP-STEPS-START:cancel-subscription -->
 > **Rezygnuję z usługi**
 >>
 >> ![Zrezygnuj](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/cancel-en.png){.thumbnail}
@@ -205,8 +196,6 @@ Po prawej stronie usługi kliknij przycisk `...`{.action} w kolumnie `Filtruj`, 
 >>
 >> Aby uzyskać więcej informacji na temat rezygnacji z usług OVHcloud, postępuj zgodnie z instrukcjami zawartymi w przewodniku "**[Jak zrezygnować z usług OVHcloud](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_cancel_services)**".
 >>
-<!-- CP-STEPS-END:cancel-subscription -->
-<!-- CP-STEPS-START:renew-service -->
 > **Odnów usługę**
 >>
 >> ![Odnów usługę](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/renew-service-en.png){.thumbnail}
@@ -225,8 +214,6 @@ Po prawej stronie usługi kliknij przycisk `...`{.action} w kolumnie `Filtruj`, 
 >> >
 >> > W celach informacyjnych ceny niektórych opcji są wyświetlane dopiero po wygenerowaniu zamówienia na odnowienie usługi.
 >>
-<!-- CP-STEPS-END:renew-service -->
-<!-- CP-STEPS-START:pay-bill -->
 > **Ureguluj należności**
 >>
 >> ![Zapłać fakturę](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/pay-bill-en.png){.thumbnail}
@@ -238,13 +225,11 @@ Po prawej stronie usługi kliknij przycisk `...`{.action} w kolumnie `Filtruj`, 
 >>
 >> Wystarczy, że wybierzesz działanie `Opłać fakturę`{.action}, które przekieruje Cię do platformy płatności online.
 >>
-<!-- CP-STEPS-END:pay-bill -->
 
 <a name="group-actions"></a>
 
 ### Działania zbiorcze
 
-<!-- CP-STEPS-START:bulk-actions -->
 Działania zbiorcze na usługach możesz wykonać, zaznaczając kilka usług w tabeli i klikając przycisk `Operacje`{.action}.
 
 ![operacje zbiorcze](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/batch-actions-en.png){.thumbnail}
@@ -258,7 +243,6 @@ W poniższej tabeli przedstawiono możliwe działania zbiorcze.
 |Włącz płatność automatyczną|Powoduje włączenie automatycznego odnawiania kilku usług na raz. Zaktualizowane zostaną tylko te usługi, które się do tego kwalifikują.|
 |Eksportuj w formacie CSV|Wyeksportuj do pliku csv wszystkie usługi i daty ich wygaśnięcia.|
 |Ustaw daty odnowienia|Opcja pozwala na ustawienie dat wygaśnięcia usług na ten sam dzień kalendarzowy. Zaktualizowane zostaną tylko te usługi, które się do tego kwalifikują.|
-<!-- CP-STEPS-END:bulk-actions -->
 
 ## FAQ
 

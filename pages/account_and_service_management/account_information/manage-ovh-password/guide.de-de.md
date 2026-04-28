@@ -80,7 +80,6 @@ Das Prinzip ist einfach: Ein Masterpasswort, das hinreichend komplex sein muss, 
 
 #### Von Ihrem OVHcloud Kundencenter aus
 
-<!-- CP-STEPS-START:change-password-cp -->
 - Klicken Sie auf der Seite [Kontosicherheit](/links/control-panel/account-security) auf `Bearbeiten`{.action} rechts von “Passwort”.
 
 ![manage-ovh-password](/pages/assets/screens/control_panel/product-selection/right-column/access-my-account/edit-account-password.png){.thumbnail}
@@ -95,13 +94,11 @@ Das Prinzip ist einfach: Ein Masterpasswort, das hinreichend komplex sein muss, 
 
 - Eine Meldung über die erfolgreiche Aktion erscheint. Klicken Sie auf die Schaltfläche `Weiter`{.action} unter dieser Nachricht, um zur Anmeldeseite weitergeleitet zu werden. Geben Sie nun Ihre Kennung und Ihr neues Passwort ein.
 
-<!-- CP-STEPS-END:change-password-cp -->
 
 <a name="lost-password"></a>
 
 #### Wenn Sie Ihr aktuelles Passwort nicht kennen 
 
-<!-- CP-STEPS-START:change-password-forgotten -->
 - Klicken Sie auf `Login oder Passwort vergessen?`{.action} wenn Sie zum Anmeldefenster Ihres OVHcloud Kundencenters kommen.
 
 ![ovh-passwort-verwalten](images/account-password-modif-forgotten-step1.png){.thumbnail}
@@ -125,7 +122,6 @@ Das Prinzip ist einfach: Ein Masterpasswort, das hinreichend komplex sein muss, 
 > Die Berücksichtigung des neuen Passworts bewirkt automatisch die Schließung aller aktiven Sitzungen Ihres OVHcloud Kunden-Accounts.
 > 
 
-<!-- CP-STEPS-END:change-password-forgotten -->
 
 ## Weiterführende Informationen
 

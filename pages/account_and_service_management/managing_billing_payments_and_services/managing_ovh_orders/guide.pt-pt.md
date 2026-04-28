@@ -49,7 +49,6 @@ Pode consultar à sua nota de encomenda a qualquer momento na página [Encomenda
 
 ### Aceder às notas de encomenda na Área de Cliente OVHcloud
 
-<!-- CP-STEPS-START:access-purchase-orders -->
 Abra a página [Encomendas](/links/control-panel/billing-orders).
 
 ![Área de Cliente](images/huborders.png){.thumbnail}
@@ -77,11 +76,9 @@ Estes são os diferentes estados da encomenda:
 Poderá igualmente visualizar a nota de encomenda em formato HTML, clicando em `...`{.action} à direita da sua encomenda e depois em `Ver encomenda em formato HTML`{.action}.
 
 ![Resumo das encomendas](images/order04.png){.thumbnail}
-<!-- CP-STEPS-END:access-purchase-orders -->
 
 ### Seguir à sua encomenda
 
-<!-- CP-STEPS-START:track-order -->
 Depois de gerar à sua nota de encomenda, pode seguir à sua encomenda a partir da página [Encomendas](/links/control-panel/billing-orders):
 
 * Clique no botão `...`{.action} junto da sua encomenda.
@@ -92,7 +89,6 @@ Depois de gerar à sua nota de encomenda, pode seguir à sua encomenda a partir 
 Aparecerá a janela seguinte, que lhe permite um acompanhamento em quatro etapas.
 
 ![Acompanhamento de encomendas](images/order06.png){.thumbnail}
-<!-- CP-STEPS-END:track-order -->
 
 ### Direito de arrependimento
 
@@ -112,7 +108,6 @@ O artigo 12.4 das [Condições Gerais de Serviço](/links/terms-conditions-contr
 
 Se os critérios de elegibilidade para o direito de arrependimento estiverem preenchidos, pode ser implementado diretamente a partir da página [Encomendas](/links/control-panel/billing-orders):
 
-<!-- CP-STEPS-START:cancel-order -->
 * Clique no botão `...`{.action} junto da sua encomenda.
 * Selecione `Anular a encomenda`{.action}.
 
@@ -121,7 +116,6 @@ Se os critérios de elegibilidade para o direito de arrependimento estiverem pre
 Por último, selecione a opção `Sim, desejo cancelar esta encomenda`{.action} e confirme.
 
 ![Confirmação da anulação](images/cancelorder2.png){.thumbnail}
-<!-- CP-STEPS-END:cancel-order -->
 
 > [!primary]
 >
