@@ -1,4 +1,4 @@
----
+﻿---
 title: Connecter Managed Kubernetes à Public Cloud Databases pour MySQL (EN)
 excerpt: "Find out how to connect OVHcloud Managed Kubernetes to an OVHcloud Managed MySQL database"
 updated: 2021-12-30

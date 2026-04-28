@@ -1,4 +1,4 @@
----
+﻿---
 title: Configurer les paramètres avancés des bases de données Public Cloud (EN)
 excerpt: Advanced configuration for Public Cloud Databases engines
 updated: 2025-02-03
