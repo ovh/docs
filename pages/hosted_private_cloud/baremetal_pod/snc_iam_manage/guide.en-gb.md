@@ -103,7 +103,6 @@ Available OpenStack roles are:
 
 | OpenStack role | Description |
 |----------------|-------------|
-| `admin` | Full administration of the project |
 | `member` | Edit rights on the project |
 | `reader` | Read-only access to the project |
 
@@ -127,7 +126,7 @@ Example for a user accessing two projects:
 **Attribute 2** (key: `project`):
 
 ```json
-{"domain": {"name": "Default"}, "name": "staging-project", "roles": [{"name": "admin"}, {"name": "reader"}]}
+{"domain": {"name": "Default"}, "name": "staging-project", "roles": [{"name": "member"}, {"name": "reader"}]}
 ```
 
 #### Configuring attributes on a group

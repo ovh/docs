@@ -108,11 +108,10 @@ Ajoutez un nouvel attribut avec les valeurs suivantes :
 
 Les rôles OpenStack disponibles sont :
 
-| Rôle OpenStack | Description                       |
-|----------------|-----------------------------------|
-| `admin`        | Administration complète du projet |
-| `member`       | Droits d'édition sur le projet    |
-| `reader`       | Lecture seule sur le projet       |
+| Rôle OpenStack | Description                    |
+|----------------|--------------------------------|
+| `member`       | Droits d'édition sur le projet |
+| `reader`       | Lecture seule sur le projet    |
 
 > [!primary]
 >
@@ -153,7 +152,7 @@ Exemple pour un utilisateur accédant à deux projets :
     "name": "projet-staging",
     "roles": [
         {
-            "name": "admin"
+            "name": "member"
         },
         {
             "name": "reader"
