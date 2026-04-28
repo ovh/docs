@@ -271,6 +271,32 @@ In Keycloak, go to **Groups**, select the desired group, then fill in the `proje
 > Attributes defined on a group and those defined directly on the user are merged. A user can therefore benefit from projects from multiple groups in addition to their own attributes.
 >
 
+#### Keycloak as the single source of truth
+
+We recommend not creating users directly in OpenStack, in order to keep Keycloak as the **single source of truth** for platform accounts. Any account created directly in OpenStack would bypass the lifecycle managed by Keycloak and would not benefit from automatic cleanup or centralised rights management.
+
+#### Service accounts for automation
+
+For automation needs (Terraform, OpenTofu, scripts, CI/CD pipelines...), we recommend creating a **dedicated account in Keycloak** with permissions scoped to the automation's requirements, then generating **OpenStack application credentials** associated with that account.
+
+Application credentials allow your automation tools to drive OpenStack without depending on a personal user's credentials. A user connected to OpenStack with their Keycloak account can create their own application credentials from the Horizon interface, via **Identity** > **Application Credentials** > **Create Application Credentials**.
+
+> [!primary]
+>
+> If the associated Keycloak account is deleted, the OpenStack application credentials will be automatically revoked. Avoid linking critical automation to a personal account.
+>
+
+For more details on configuring Keycloak authentication with the OpenStack CLI and obtaining your credentials, refer to the guide [How to use the APIs and obtain the credentials](/pages/hosted_private_cloud/opcp/how-to-use-api-and-get-credentials).
+
+### Automatic account cleanup
+
+The platform reacts to user deletion events in Keycloak: as soon as an account is removed from the Realm Master, the associated OpenStack users and **application credentials** are automatically deleted.
+
+> [!warning]
+>
+> Deleting an account in Keycloak immediately triggers the revocation of the associated OpenStack application credentials. Consider this impact before deleting any account, particularly if automations or scripts rely on those credentials.
+>
+
 ### Advanced Keycloak configuration
 
 All official Keycloak features are available on your **OPCP**. For any advanced configuration (password policies, fine-grained role management, client configuration, etc.), refer to the [official Keycloak documentation](https://www.keycloak.org/docs/latest/server_admin/index.html).
@@ -326,15 +352,6 @@ resource "keycloak_user" "john_doe" {
 ```
 
 For all available resources (users, groups, roles, federation, etc.), refer to the [Keycloak provider documentation](https://registry.terraform.io/providers/keycloak/keycloak/latest/docs/resources/user).
-
-### Automatic account cleanup
-
-The platform reacts to user deletion events in Keycloak: as soon as an account is removed from the Realm Master, the associated OpenStack users and **application credentials** are automatically deleted.
-
-> [!warning]
->
-> Deleting an account in Keycloak immediately triggers the revocation of the associated OpenStack application credentials. Consider this impact before deleting any account, particularly if automations or scripts rely on those credentials.
->
 
 ### Listing all rights
 

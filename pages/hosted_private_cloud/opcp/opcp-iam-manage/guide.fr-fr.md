@@ -271,6 +271,32 @@ Dans Keycloak, accédez à **Groups**, sélectionnez le groupe souhaité, puis r
 > Les attributs définis sur un groupe et ceux définis directement sur l'utilisateur sont fusionnés. Un utilisateur peut ainsi bénéficier de projets issus de plusieurs groupes en plus de ses propres attributs.
 >
 
+#### Keycloak comme source unique de vérité
+
+Nous recommandons de ne pas créer d'utilisateurs directement dans OpenStack, afin de conserver Keycloak comme **source unique de vérité** sur les comptes de la plateforme. Tout compte créé directement dans OpenStack échapperait au cycle de vie géré par Keycloak et ne bénéficierait pas du nettoyage automatique ni de la gestion centralisée des droits.
+
+#### Comptes de service pour l'automatisation
+
+Pour les besoins d'automatisation (Terraform, OpenTofu, scripts, pipelines CI/CD...), nous recommandons de créer un **compte dédié dans Keycloak** avec les permissions adaptées au périmètre de l'automate, puis de générer des **application credentials OpenStack** associés à ce compte.
+
+Les application credentials permettent à vos outils d'automatisation de piloter OpenStack sans dépendre des credentials personnels d'un utilisateur. Un utilisateur connecté à OpenStack avec son compte Keycloak peut créer ses propres application credentials depuis l'interface Horizon, via **Identity** > **Application Credentials** > **Create Application Credentials**.
+
+> [!primary]
+>
+> En cas de suppression du compte Keycloak associé, les application credentials OpenStack seront automatiquement révoqués. Veillez à ne pas lier des automates critiques à un compte personnel.
+>
+
+Pour configurer l'authentification Keycloak avec la CLI OpenStack et obtenir vos credentials, référez-vous au guide [Comment utiliser les APIs et obtenir les credentials](/pages/hosted_private_cloud/opcp/how-to-use-api-and-get-credentials).
+
+### Nettoyage automatique des comptes
+
+La plateforme réagit aux événements de suppression d'utilisateur dans Keycloak : dès qu'un compte est supprimé du Realm Master, les utilisateurs et les **application credentials** OpenStack associés sont automatiquement supprimés.
+
+> [!warning]
+>
+> La suppression d'un compte dans Keycloak entraîne la révocation immédiate des application credentials OpenStack associés. Anticipez cet impact avant toute suppression de compte, notamment si des automatisations ou des scripts utilisent ces credentials.
+>
+
 ### Configuration avancée de Keycloak
 
 L'ensemble des fonctionnalités officielles de Keycloak est disponible sur votre **OPCP**. Pour toute configuration avancée (politiques de mots de passe, gestion fine des rôles, configuration des clients, etc.), référez-vous à la [documentation officielle Keycloak](https://www.keycloak.org/docs/latest/server_admin/index.html).
@@ -326,15 +352,6 @@ resource "keycloak_user" "john_doe" {
 ```
 
 Pour l'ensemble des ressources disponibles (utilisateurs, groupes, rôles, fédération, etc.), référez-vous à la [documentation du provider Keycloak](https://registry.terraform.io/providers/keycloak/keycloak/latest/docs/resources/user).
-
-### Nettoyage automatique des comptes
-
-La plateforme réagit aux événements de suppression d'utilisateur dans Keycloak : dès qu'un compte est supprimé du Realm Master, les utilisateurs et les **application credentials** OpenStack associés sont automatiquement supprimés.
-
-> [!warning]
->
-> La suppression d'un compte dans Keycloak entraîne la révocation immédiate des application credentials OpenStack associés. Anticipez cet impact avant toute suppression de compte, notamment si des automatisations ou des scripts utilisent ces credentials.
->
 
 ### Lister l'ensemble des droits
 
