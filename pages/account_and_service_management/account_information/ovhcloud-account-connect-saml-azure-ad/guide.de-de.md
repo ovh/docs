@@ -213,7 +213,6 @@ Das Hinzufügen Ihrer Entra ID Anwendung als vertrauenswürdiger Identity Provid
 
 #### OVHcloud Vertrauen aufbauen
 
-<!-- CP-STEPS-START:establish-trust -->
 Geben Sie im Feld **Nutzerattributname** den **UPN** der Entra ID Anwendung ein und im Feld **Name des Gruppenattributs** den zuvor gespeicherten Wert des *Claim name* für **groups**.
 
 Geben Sie die XML-Metadaten der Entra ID Anwendung aus der zuvor gespeicherten Datei ein.
@@ -223,7 +222,6 @@ Sie können die lokalen Benutzer beibehalten, indem Sie die Option `Aktive OVHcl
 Klicken Sie auf den Button `Bestätigen`{.action}.
 
 ![SSO Step 1](images/ovhcloud_sso_1.png){.thumbnail}
-<!-- CP-STEPS-END:establish-trust -->
 
 Ihre Entra ID Anwendung gilt nun als vertrauenswürdiger Identity Provider. Dennoch müssen im OVHcloud Account Gruppen hinzugefügt werden.
 
@@ -239,7 +237,6 @@ Um dies zu erreichen, überprüfen Sie das Attribut "Group", das von Ihrer Entra
 
 ![Entra ID Group Schritt 2](images/azure_ad_group_2.png){.thumbnail}
 
-<!-- CP-STEPS-START:declare-groups -->
 Um eine Gruppe hinzuzufügen, gehen Sie zum Abschnitt `Identitäten`{.action} und dann zum Tab `Nutzergruppen`{.action}. Klicken Sie dann auf die Schaltfläche `Eine Gruppe anmelden`{.action}:
 
 ![OVHcloud User Management Gruppen Schritt 1](images/ovhcloud_sso_menu_1.png){.thumbnail}
@@ -251,7 +248,6 @@ Geben Sie den Gruppennamen ein und wählen Sie die zugehörige Rolle aus. Klicke
 Die erstellte Gruppe sollte in der Liste erscheinen.
 
 ![OVHcloud User Management Gruppen Schritt 3](images/ovhcloud_sso_menu_3.png){.thumbnail}
-<!-- CP-STEPS-END:declare-groups -->
 
 Achtung, wenn Sie die Berechtigung `Keine` erteilen, müssen Sie dieser Gruppe Rechte über die [IAM-Richtlinien](/pages/account_and_service_management/account_information/iam-policy-ui) zuweisen.
 

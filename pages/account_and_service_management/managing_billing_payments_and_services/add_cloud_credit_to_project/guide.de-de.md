@@ -37,7 +37,6 @@ Das bedeutet, dass dieses Guthabenkonto zuerst belastet wird und dann noch verbl
 
 ### Guthaben aufladen
 
-<!-- CP-STEPS-START:add-credit -->
 Klicken Sie auf den Button `Cloud Guthaben aufladen`{.action}.
 
 ![addpubliccloudcredit](images/cloudcredit1.png){.thumbnail}
@@ -51,11 +50,9 @@ Ein Bestellschein wird dann erstellt. Klicken Sie im Rahmen der grünen Benachri
 ![addpubliccloudcredit](images/cloudcredit3.png){.thumbnail}
 
 Sobald die Zahlung eingegangen ist, erscheint Ihr Guthaben in der Liste `Guthaben und Gutscheine`.
-<!-- CP-STEPS-END:add-credit -->
 
 ### Einen Gutschein verwenden
 
-<!-- CP-STEPS-START:redeem-voucher -->
 Klicken Sie auf den Button `Gutschein aktivieren`{.action}.
 
 ![addpubliccloudcredit](images/voucher1.png){.thumbnail}
@@ -65,7 +62,6 @@ Geben Sie im angezeigten Fenster den Code des Gutscheins ein und klicken Sie auf
 ![addpubliccloudcredit](images/voucher2.png){.thumbnail}
 
 Der Gutschein-Saldo erscheint in der Liste `Guthaben und Gutscheine` .
-<!-- CP-STEPS-END:redeem-voucher -->
 
 > [!primary]
 >

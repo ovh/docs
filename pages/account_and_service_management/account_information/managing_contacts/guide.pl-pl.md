@@ -54,7 +54,6 @@ Identyfikator klienta to osobisty login, który otrzymujesz e-mailem podczas two
 
 ### Dostęp do zarządzania kontaktami <a name="gestion_des_contacts"></a>
 
-<!-- CP-STEPS-START:access-contact-management -->
 Otwórz stronę [Zarządzanie kontaktami](/links/control-panel/account-contacts).
 
 ![Contact management](/pages/assets/screens/control_panel/product-selection/right-menu/my-contacts.png){.thumbnail}
@@ -62,11 +61,9 @@ Otwórz stronę [Zarządzanie kontaktami](/links/control-panel/account-contacts)
 Pojawi się tabela, która umożliwia wyświetlenie różnych usług, dla których Twój identyfikator klienta jest podany jako kontakt.
 
 ![Contact management](images/managing_contacts_02.png){.thumbnail}
-<!-- CP-STEPS-END:access-contact-management -->
 
 ### Zmiana kontaktów usługi
 
-<!-- CP-STEPS-START:change-contacts-service -->
 Na stronie zarządzania kontaktami kliknij przycisk `...`{.action} po prawej stronie usługi, którą chcesz zmienić, a następnie kliknij `Zmień kontakty`{.action}. Podaj nowy kontakt lub nowe kontakty, a następnie kliknij przycisk `Zatwierdź`{.action}.
 
 ![Contact management](images/managing_contacts_03.png){.thumbnail}
@@ -79,7 +76,6 @@ Do kontaktów, których dotyczy ten proces modyfikacji, zostanie wysłany e-mail
 >
 > Zmiana kontaktu nie zostanie dozwolona, jeśli stare lub nowe konto klienta posiada jedną lub więcej niezapłaconych faktur.
 >
-<!-- CP-STEPS-END:change-contacts-service -->
 
 #### Jestem kontaktem administracyjnym <a name="administrateur"></a>
 
@@ -99,7 +95,6 @@ Możesz wyznaczyć wyłącznie inny kontakt księgowy na swoje miejsce. Konieczn
 
 ### Zatwierdzenie, odrzucenie lub śledzenie zmiany kontaktu
 
-<!-- CP-STEPS-START:confirm-track-contact-change -->
 Aby śledzić bieżące wnioski i zarządzać nimi, kliknij kartę `Moje wnioski`{.action}. Tutaj możesz zaakceptować lub odrzucić wniosek.
 
 ![Contact management](images/managing_contacts_05.png){.thumbnail}
@@ -120,7 +115,6 @@ Jeśli tylko jeden kontakt zatwierdzi zmianę, pojawi się komunikat informując
 ![Contact management](images/managing_contacts_007.png){.thumbnail}
 
 Zmiana kontaktu zostanie wykonana w ciągu kilku minut od zatwierdzenia przez oba kontakty wniosku. Następnie otrzymają e-mail informujący ich o pomyślnym rozpatrzeniu wniosku.
-<!-- CP-STEPS-END:confirm-track-contact-change -->
 
 ### Przykład: zarządzanie stroną www na webmasterze
 

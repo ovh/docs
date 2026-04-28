@@ -213,7 +213,6 @@ Adding your Entra ID application as a trusted identity provider is done on the [
 
 #### Establish OVHcloud trust
 
-<!-- CP-STEPS-START:establish-trust -->
 Fill in the field **User Attribute Name** with the Entra ID application **UPN** claim name and enter the **groups** claim name value saved before into the field **Group Attribute Name**. 
 
 Fill in the XML metadata of your Entra ID application from the file saved before.
@@ -223,7 +222,6 @@ You can keep local users by ticking the `Keep active OVHcloud users` box.
 Click on the `Confirm`{.action} button.
 
 ![Ovhcloud SSO step 1](images/ovhcloud_sso_1.png){.thumbnail}
-<!-- CP-STEPS-END:establish-trust -->
 
 The trust of your Entra ID application as identity provider is thus established but you still have to add groups to your OVHcloud account.
 
@@ -239,7 +237,6 @@ To resolve this, check the "Group" attribute that your Entra ID application retu
 
 ![Entra ID Group step 2](images/azure_ad_group_2.png){.thumbnail}
 
-<!-- CP-STEPS-START:declare-groups -->
 To add a group, go to the `Identities`{.action} section, then to the `User groups`{.action} tab. Then click the `Declare a group`{.action}:
 
 ![Ovhcloud user management groups step 1](images/ovhcloud_sso_menu_1.png){.thumbnail}
@@ -251,7 +248,6 @@ Enter the group name and select the associated role, then click on `Confirm`{.ac
 The created group should appear on the list.
 
 ![Ovhcloud user management groups step 3](images/ovhcloud_sso_menu_3.png){.thumbnail}
-<!-- CP-STEPS-END:declare-groups -->
 
 Warning: if you give the `NONE` role, you will need to assign permissions to this group via the [IAM policies](/pages/account_and_service_management/account_information/iam-policy-ui).
 

@@ -31,16 +31,13 @@ Es posible enviar SMS directamente desde el área de cliente de OVHcloud.
 
 En la pestaña **Inicio**, haga clic en el enlace `Enviar un SMS`{.action} del apartado **Quiero...**.
 
-<!-- CP-STEPS-START:send-sms-overview -->
 ![quiero enviar un sms](images/sms-send-control-panel01E.png){.thumbnail}
-<!-- CP-STEPS-END:send-sms-overview -->
 
 ### 1. Configurar el remitente y el destinatario
 
 > [!primary]
 > Para obtener más información sobre la creación y el uso de un remitente, consulte nuestra guía "[Todo sobre los remitentes SMS](/pages/web_cloud/messaging/sms/tout_savoir_sur_les_expediteurs_sms)".
 
-<!-- CP-STEPS-START:configure-sender-recipient -->
 Una vez en la página de envío de los SMS, podrá configurar distintos parámetros para adaptar el envío de SMS a sus necesidades.
 
 ![configurar remitente y destinatario](images/sms-send-control-panel02E.png){.thumbnail}
@@ -54,7 +51,6 @@ Para más información, puede consultar nuestra guía relativa a las [listas de 
 
 - Mediante una agenda de contactos (3). Puede crearla directamente en el área de cliente o importarla a través de un archivo .CSV o .TXT.
 Para más información, puede consultar nuestra guía relativa a las [agendas de contactos de SMS](/pages/web_cloud/messaging/sms/gerer_mes_carnets_dadresses_sms).
-<!-- CP-STEPS-END:configure-sender-recipient -->
 
 ### 2. Escribir un SMS
 
@@ -62,7 +58,6 @@ Para más información, puede consultar nuestra guía relativa a las [agendas de
 >
 > Por motivos legales, los SMS comerciales solo se enviarán **entre 8:00 y 20:00, de lunes a sábado**.
 
-<!-- CP-STEPS-START:compose-sms-message -->
 Una vez que haya seleccionado el remitente y los destinatarios, ya puede empezar a escribir el mensaje.
 
 ![escribir sms](images/sms-send-control-panel03E.png){.thumbnail}
@@ -80,17 +75,14 @@ La longitud máxima de un SMS es de 160 caracteres con codificación de 7 bits (
  Si utiliza caracteres que no figuran en estas tablas, la codificación pasará a Unicode y la longitud máxima del SMS se reducirá a 70 caracteres.
 
 ![Lista de caracteres de SMS](images/smsauthorizedcharacters.png){.thumbnail}
-<!-- CP-STEPS-END:compose-sms-message -->
 
 **Opciones avanzadas**
 
-<!-- CP-STEPS-START:advanced-options -->
 ![opciones avanzadas de envío de SMS](images/sms-send-control-panel-advanced.png){.thumbnail}
 
 Desplegando estas opciones, puede realizar un envío de SMS en diferido (1). Por defecto, el envío será inmediato.
 
 También puede configurar el tipo de envío (2) (eligiendo entre Estándar, Flash y Sim) pero esta funcionalidad está desfasada.
-<!-- CP-STEPS-END:advanced-options -->
 
 ## Más información
 

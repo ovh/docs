@@ -29,16 +29,13 @@ Vous pouvez envoyer des SMS directement via votre espace client OVHcloud. Ce gui
 
 Le champ « Envoyer un SMS » est le premier élément disponible dans la liste des actions.
 
-<!-- CP-STEPS-START:send-sms-overview -->
 ![envoi sms manager](images/sms-send-control-panel01E.png){.thumbnail}
-<!-- CP-STEPS-END:send-sms-overview -->
 
 ### Étape 1 : Configurer l’expéditeur et le destinataire
 
 > [!primary]
 > Pour plus de renseignements sur la création et l’utilisation d’un expéditeur, reportez-vous à notre guide « [Tout savoir sur les expéditeurs SMS](/pages/web_cloud/messaging/sms/tout_savoir_sur_les_expediteurs_sms) ».
 
-<!-- CP-STEPS-START:configure-sender-recipient -->
 Une fois sur la page d’envoi de SMS, vous disposez de différents paramètres à renseigner pour adapter au mieux votre envoi de SMS à votre besoin.
 
 ![envoi sms manager](images/sms-send-control-panel02E.png){.thumbnail}
@@ -57,7 +54,6 @@ Pour plus d’informations, vous pouvez consulter notre [guide sur les listes de
 
 - Par le biais d’un carnet d’adresses (3). Celui-ci peut être créé directement via votre espace client, ou être importé via un fichier .csv ou .txt. 
 N’hésitez pas à consulter notre [guide sur les carnets d’adresses SMS](/pages/web_cloud/messaging/sms/gerer_mes_carnets_dadresses_sms).
-<!-- CP-STEPS-END:configure-sender-recipient -->
 
 ### Étape 2 : Composer votre SMS
 
@@ -65,7 +61,6 @@ N’hésitez pas à consulter notre [guide sur les carnets d’adresses SMS](/pa
 >
 > Pour des raisons légales, un SMS à caractère commercial ne sera envoyé qu’entre **08h00 et 20h00, du lundi au samedi**.
 
-<!-- CP-STEPS-START:compose-sms-message -->
 Une fois l’expéditeur sélectionné et vos destinataires renseignés, vous pouvez désormais passer à la composition du message.
 
 ![envoi sms manager](images/sms-send-control-panel03E.png){.thumbnail}
@@ -100,17 +95,14 @@ Exemple : en encodage 7bits, si votre message fait plus de 149 caractères, il s
 >
 > Vérifiez toujours que votre message ne contient pas de caractères spéciaux ou d’accent pouvant faire passer du simple au double le nombre de caractères comptés.
 >
-<!-- CP-STEPS-END:compose-sms-message -->
 
 #### Options avancées
 
-<!-- CP-STEPS-START:advanced-options -->
 ![envoi sms manager](images/sms-send-control-panel-advanced.png){.thumbnail}
 
 Dans cette section vous avez la possibilité d’effectuer un envoi immédiat ou différé (1).
 
 Trois formats d’envoi (Standard / Flash / Sim) sont proposés (2) mais cette fonctionnalité est dépréciée.
-<!-- CP-STEPS-END:advanced-options -->
 
 ## Aller plus loin
 

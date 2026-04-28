@@ -58,11 +58,9 @@ Pour lister vos services, ouvrez la page [Mes offres et services](/links/control
 
 /// details | Nom de domaine
 
-<!-- CP-STEPS-START:domain-name-delete -->
 1. Ouvrez la page [Mes offres et services](/links/control-panel/billing-services).
 1. Cliquez sur le bouton `...`{.action} à droite du nom de domaine concerné, puis sur `Résilier mon service`{.action}. Sélectionnez `Résilier le service immédiatement`{.action} et validez en cliquant sur `Oui, résilier`{.action}.
 1. Un e-mail de confirmation est alors automatiquement envoyé à l'adresse e-mail principale du compte OVHcloud, cliquez sur le lien dans cet e-mail pour confirmer la suppression immédiate.
-<!-- CP-STEPS-END:domain-name-delete -->
 
 Un délai de 45 à 60 jours, selon l'extension du domaine, peut être observé avant la suppression effective du service.
 
@@ -75,11 +73,9 @@ Un délai de 45 à 60 jours, selon l'extension du domaine, peut être observé a
 > La suppression d'un hébergement entraîne l'effacement définitif de toutes ses données.
 >
 
-<!-- CP-STEPS-START:web-hosting-delete -->
 1. Ouvrez la page [Mes offres et services](/links/control-panel/billing-services).
 1. Cliquez sur le bouton `...`{.action} à droite du service concerné, puis sur `Supprimer immédiatement l'hébergement`{.action}. Validez en cliquant sur `Oui, résilier`{.action}.
 1. Un e-mail de confirmation est alors automatiquement envoyé à l'adresse e-mail principale du compte OVHcloud, cliquez sur le lien dans cet e-mail pour confirmer la suppression immédiate.
-<!-- CP-STEPS-END:web-hosting-delete -->
 
 Un délai de 45 jours peut être observé avant la suppression effective du service.
 
@@ -93,11 +89,9 @@ Un délai de 45 jours peut être observé avant la suppression effective du serv
 
 Si votre service e-mail MX Plan est lié à un hébergement web, procédez à la suppression de celui-ci (voir ci-dessus).
 
-<!-- CP-STEPS-START:mxplan-delete -->
 1. Ouvrez la page [Mes offres et services](/links/control-panel/billing-services).
 1. Cliquez sur le bouton `...`{.action} à droite du service concerné, puis sur `Supprimer immédiatement le MX Plan`{.action}. Validez en cliquant sur `Oui, résilier`{.action}.
 1. Un e-mail de confirmation est alors automatiquement envoyé à l'adresse e-mail principale du compte OVHcloud, cliquez sur le lien dans cet e-mail pour confirmer la suppression immédiate.
-<!-- CP-STEPS-END:mxplan-delete -->
 
 Un délai de 14 jours peut être observé avant la suppression effective du service.
 
@@ -110,14 +104,12 @@ Un délai de 14 jours peut être observé avant la suppression effective du serv
 > La suppression de votre service Zimbra Mail entraîne l'effacement définitif de tous les e-mails et données qu'il contient.
 >
 
-<!-- CP-STEPS-START:zimbra-delete -->
 1. Ouvrez [Zimbra](/links/control-panel/web-zimbra) dans l'espace client OVHcloud.
 1. Cliquez sur l'onglet `Compte email`{.action}. Cliquez sur le bouton `⋮`{.action} à droite de chaque compte e-mail à supprimer puis sur `Supprimer`{.action}.
 1. Une fois tous les comptes e-mail supprimés, cliquez sur l'onglet `Domaine`{.action}. Cliquez sur le bouton `⋮`{.action} à droite de chaque domaine puis sur `Supprimer`{.action}.
 1. Lorsque les domaines associés ont été supprimés, ouvrez la page [Mes offres et services](/links/control-panel/billing-services).
     1. Utilisez l'outil `Filtrer`{.action} sur la droite pour lister uniquement les services `Compte Email Zimbra`. Cliquez sur `Ajouter`{.action} pour valider le filtre.
     1. Sélectionnez tous les comptes Zimbra puis cliquez successivement sur le bouton `Actions`{.action} et `Désactiver le paiement automatique`{.action}.
-<!-- CP-STEPS-END:zimbra-delete -->
 1. Une fois ces actions réalisées, vous pouvez créer un [ticket d'assistance via le centre d'aide](https://help.ovhcloud.com/csm?id=csm_get_help) afin de demander une application accélérée de la suppression du service.
 
 ///
@@ -128,12 +120,10 @@ Un délai de 14 jours peut être observé avant la suppression effective du serv
 >
 > La suppression de votre service E-mail Pro entraîne l'effacement définitif de tous les e-mails et données qu'il contient.
 
-<!-- CP-STEPS-START:email-pro-delete -->
 1. Ouvrez [Email Pro](/links/control-panel/web-email-pro) dans l'espace client OVHcloud et sélectionnez la plateforme concernée.
 1. Cliquez sur l'onglet `Comptes e-mail`{.action}. Cliquez sur le bouton `...`{.action} à droite de chaque compte e-mail à supprimer puis sur `Réinitialiser le compte`{.action}.
 1. Une fois tous les comptes e-mail supprimés, cliquez sur l'onglet `Domaines associés`{.action}. Cliquez sur le bouton `...`{.action} à droite de chaque domaine puis sur `Supprimer ce domaine`{.action}.
 1. Lorsque les domaines associés ont été supprimés, cliquez en haut à droite sur le bouton `Actions`{.action} puis sur `Résilier`{.action}. Suivez alors les étapes décrites.
-<!-- CP-STEPS-END:email-pro-delete -->
 1. Une fois ces actions réalisées, vous pouvez créer un [ticket d'assistance via le centre d'aide](https://help.ovhcloud.com/csm?id=csm_get_help) afin de demander une application accélérée de la suppression du service.
 
 ///
@@ -144,22 +134,18 @@ Un délai de 14 jours peut être observé avant la suppression effective du serv
 >
 > La suppression de votre service Exchange entraîne l'effacement définitif de tous les e-mails et données qu'il contient.
 
-<!-- CP-STEPS-START:exchange-delete -->
 1. Ouvrez [Exchange](/links/control-panel/web-exchange) dans l'espace client OVHcloud et sélectionnez la plateforme Exchange concernée.
 1. Cliquez sur l'onglet `Comptes e-mail`{.action}. Cliquez sur le bouton `...`{.action} à droite de chaque compte e-mail à supprimer puis sur `Réinitialiser le compte`{.action}.
 1. Une fois tous les comptes e-mail supprimés, cliquez sur l'onglet `Domaines associés`{.action}. Cliquez sur le bouton `...`{.action} à droite de chaque domaine puis sur `Supprimer ce domaine`{.action}.
 1. Lorsque les domaines associés ont été supprimés, cliquez en haut à droite sur le bouton `Actions`{.action} puis sur `Résilier`{.action}. Suivez alors les étapes décrites.
-<!-- CP-STEPS-END:exchange-delete -->
 1. Une fois ces actions réalisées, vous pouvez créer un [ticket d'assistance via le centre d'aide](https://help.ovhcloud.com/csm?id=csm_get_help) afin de demander une application accélérée de la suppression du service.
 
 ///
 
 /// details | Zone DNS
 
-<!-- CP-STEPS-START:dns-zone-delete -->
 1. Ouvrez la page [Mes offres et services](/links/control-panel/billing-services).
 1. Cliquez sur le bouton `...`{.action} à droite de la zone DNS concernée, puis sur `Résilier mon service`{.action}.
-<!-- CP-STEPS-END:dns-zone-delete -->
 1. Une fois la résiliation demandée, vous pouvez créer un [ticket d'assistance via le centre d'aide](https://help.ovhcloud.com/csm?id=csm_get_help) afin de demander son application immédiate.
 
 ///
@@ -174,11 +160,9 @@ Un délai de 14 jours peut être observé avant la suppression effective du serv
 >
 > Utilisez l'outil `Filtrer`{.action} dans `Mes offres et services`{.action} pour retrouver les services Web Cloud Databases qui sont nommés « Hébergement base SQL privée ».
 
-<!-- CP-STEPS-START:web-cloud-databases-delete -->
 1. Ouvrez la page [Mes offres et services](/links/control-panel/billing-services).
 1. Cliquez sur le bouton `...`{.action} à droite du service concerné, puis sur `Supprimer mon hébergement SQL privé`{.action}. Validez en cliquant sur `Oui, résilier`{.action}.
 1. Un e-mail de confirmation est alors automatiquement envoyé à l'adresse e-mail principale du compte OVHcloud, cliquez sur le lien dans cet e-mail pour confirmer la suppression immédiate.
-<!-- CP-STEPS-END:web-cloud-databases-delete -->
 
 Un délai de 45 jours peut être observé avant la suppression effective du service.
 
@@ -192,11 +176,9 @@ Un délai de 45 jours peut être observé avant la suppression effective du serv
 >
 > La suppression immédiate d'un VPS entraîne l'effacement définitif et irrémédiable de toutes ses données.
 
-<!-- CP-STEPS-START:vps-delete -->
 1. Ouvrez [Gestion VPS](/links/control-panel/baremetal-vps) dans l'espace client OVHcloud et sélectionnez le VPS concerné.
 1. Dans le cadre `Mon offre`, cliquez sur `Résilier`{.action}. Sélectionnez alors `Résilier le service immédiatement`{.action} et validez en cliquant sur `Oui, résilier`{.action}.
 1. Un e-mail de confirmation est alors automatiquement envoyé à l'adresse e-mail principale du compte OVHcloud, cliquez sur le lien dans cet e-mail pour confirmer la suppression immédiate.
-<!-- CP-STEPS-END:vps-delete -->
 
 Un délai de 30 jours peut être observé avant la suppression effective du service.
 
@@ -208,23 +190,19 @@ Un délai de 30 jours peut être observé avant la suppression effective du serv
 >
 > La suppression immédiate d'un serveur dédié entraîne l'effacement définitif et irrémédiable de toutes ses données.
 
-<!-- CP-STEPS-START:dedicated-server-delete -->
 1. Ouvrez [Serveurs dédiés](/links/control-panel/baremetal-dedicated-servers) dans l'espace client OVHcloud et sélectionnez le serveur concerné.
 1. Dans le cadre `État des services`, cliquez le bouton  sur `...`{.action} à droite de `Statut` puis sur `Résilier mon service`{.action}. Sélectionnez alors `Résilier le service immédiatement`{.action} et validez en cliquant sur `Valider`{.action}.
 1. Un e-mail de confirmation est alors automatiquement envoyé à l'adresse e-mail principale du compte OVHcloud, cliquez sur le lien dans cet e-mail pour confirmer la suppression.
-<!-- CP-STEPS-END:dedicated-server-delete -->
 1. Une fois ces actions réalisées, vous pouvez créer un [ticket d'assistance via le centre d'aide](https://help.ovhcloud.com/csm?id=csm_get_help) afin de demander une application accélérée de la suppression du service.
 
 ///
 
 /// details | vRack
 
-<!-- CP-STEPS-START:vrack-delete -->
 1. Ouvrez [vRack](/links/control-panel/network-vrack) dans l'espace client OVHcloud et sélectionnez le vRack concerné.
 1. Vous devez retirer tous les services d'un vRack afin de pouvoir le supprimer. Sélectionnez chaque service présent dans le vRack et cliquez sur `Retirer`{.action}.
 1. Une fois tous les services retirés du vRack, cliquez sur le bouton `Résilier`{.action}. Validez en cliquant sur `Oui, résilier`{.action}.
 1. Un e-mail de confirmation est alors automatiquement envoyé à l'adresse e-mail principale du compte OVHcloud, cliquez sur le lien dans cet e-mail pour confirmer la suppression.
-<!-- CP-STEPS-END:vrack-delete -->
 
 ///
 
@@ -236,11 +214,9 @@ Un délai de 30 jours peut être observé avant la suppression effective du serv
 >
 > La suppression immédiate d'un projet Public Cloud entraîne l'effacement définitif et irrémédiable de tous ses services, données, ressources et paramètres.
 
-<!-- CP-STEPS-START:public-cloud-project-delete -->
 1. Ouvrez [Projets Public Cloud](/links/control-panel/publiccloud-projects) dans l'espace client OVHcloud et sélectionnez le projet concerné.
 1. Cliquez sur `Project settings`{.action} puis sur `Supprimer le projet`{.action}. Validez en cliquant sur `Oui, résilier`{.action}.
 1. Un e-mail de confirmation est alors automatiquement envoyé à l'adresse e-mail principale du compte OVHcloud, cliquez sur le lien dans cet e-mail pour confirmer la suppression immédiate.
-<!-- CP-STEPS-END:public-cloud-project-delete -->
 
 Un délai de 30 jours peut être observé avant la suppression effective des services.
 
@@ -254,11 +230,9 @@ Un délai de 30 jours peut être observé avant la suppression effective des ser
 >
 > La suppression d'un groupe de téléphonie entraîne la résiliation de tous les services qu'il contient.
 
-<!-- CP-STEPS-START:voip-group-delete -->
 1. Ouvrez [VoIP & Fax](/links/control-panel/telecom-voip-fax) dans l'espace client OVHcloud et sélectionnez le groupe de téléphonie concerné.
 1. Cliquez sur l'onglet `Administration`{.action} puis sur `Supprimer le groupe`{.action}. Validez en cliquant sur le bouton de suppression du groupe.
 1. La suppression d'un groupe de téléphonie entraîne la résiliation de tous les services qu'il contient à la date de la prochaine facturation. Créez un [ticket d'assistance via le centre d'aide](https://help.ovhcloud.com/csm?id=csm_get_help) pour demander une application immédiate de la résiliation.
-<!-- CP-STEPS-END:voip-group-delete -->
 
 ///
 

@@ -59,7 +59,6 @@ To ensure that you are never short of credit on your account, you can enable aut
 > - a SEPA direct debit payment method is present and validated in your OVHcloud account.
 > - your SMS service must be at least 2 months old.
 
-<!-- CP-STEPS-START:automatic-re-credit -->
 Go to the `Options`{.action} menu (1), then `Automatic re-credit`{.action} (2).
 
 ![credit sms](images/smscredit01.png){.thumbnail}
@@ -75,7 +74,6 @@ Finally, fill in the required fields.
 - Click `Confirm`{.action} to apply the settings.
 
 ![credit sms](images/smscredit03.png){.thumbnail}
-<!-- CP-STEPS-END:automatic-re-credit -->
 
 ### Transferring credits
 
@@ -84,7 +82,6 @@ Finally, fill in the required fields.
 > SMS credits can only be transferred between SMS accounts within the same OVHcloud account. Credits cannot be transferred between two different OVHcloud accounts.
 >
 
-<!-- CP-STEPS-START:transferring-credits -->
 Click `Transfer Credits`{.action} from the `Home`{.action} tab.
 
 ![sms credits transfer](images/credit-transfer01.png){.thumbnail}
@@ -98,7 +95,6 @@ Then choose:
 Click `Send`{.action} to execute the transfer. This one is immediate.
 
 ![sms credits transfer](images/credit-transfer02.png){.thumbnail}
-<!-- CP-STEPS-END:transferring-credits -->
 
 ## Go further
 

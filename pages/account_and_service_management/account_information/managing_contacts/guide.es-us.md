@@ -52,7 +52,6 @@ Existen tres tipos de contactos:
 
 ### Acceder a la gestión de los contactos
 
-<!-- CP-STEPS-START:access-contact-management -->
 Abra la página [Gestión de contactos](/links/control-panel/account-contacts).
 
 ![Gestión de contactos](/pages/assets/screens/control_panel/product-selection/right-menu/my-contacts.png){.thumbnail}
@@ -60,11 +59,9 @@ Abra la página [Gestión de contactos](/links/control-panel/account-contacts).
 Se mostrará una tabla con todos los servicios en los que su identificador de cliente aparece como contacto.
 
 ![Gestión de contactos](images/managing_contacts_02.png){.thumbnail}
-<!-- CP-STEPS-END:access-contact-management -->
 
 ### Cambiar los contactos de un servicio
 
-<!-- CP-STEPS-START:change-contacts-service -->
 Una vez en la página de gestión de los contactos, haga clic en `...`{.action} a la derecha del servicio que quiere modificar y, seguidamente, en `Modificar los contactos`{.action}. Introduzca el o los nuevos contactos que desee (introduzca la dirección de correo electrónico principal de la cuenta correspondiente) y haga clic en `Confirmar`{.action} su solicitud.
 
 ![Gestión de contactos](images/managing_contacts_03.png){.thumbnail}
@@ -72,7 +69,6 @@ Una vez en la página de gestión de los contactos, haga clic en `...`{.action} 
 ![Gestión de contactos](images/managing_contacts_04.png){.thumbnail}
 
 Los contactos implicados en el proceso de modificación recibirán un mensaje de correo electrónico.
-<!-- CP-STEPS-END:change-contacts-service -->
 
 #### Soy contacto administrador
 
@@ -97,7 +93,6 @@ Como contacto de facturación, solo puede designar a otro contacto de facturaci�
 
 ### Validar, rechazar o realizar el seguimiento de un cambio de contacto
 
-<!-- CP-STEPS-START:confirm-track-contact-change -->
 Para gestionar y realizar el seguimiento de las solicitudes en curso, haga clic en la pestaña `Mis solicitudes`{.action}. Ahí es donde puede aceptar o rechazar una solicitud.
 
 ![Gestión de contactos](images/managing_contacts_05.png){.thumbnail}
@@ -118,7 +113,6 @@ Si solo uno de los contactos valida la solicitud de cambio, aparecerá un mensaj
 ![Gestión de contactos](images/managing_contacts_007.png){.thumbnail}
 
 Una vez que los dos contactos hayan validado la solicitud, el cambio se hará efectivo en minutos. Los dos contactos recibirán un mensaje de correo electrónico informándole de que la solicitud de cambio se ha realizado correctamente.
-<!-- CP-STEPS-END:confirm-track-contact-change -->
 
 ## Más información
 

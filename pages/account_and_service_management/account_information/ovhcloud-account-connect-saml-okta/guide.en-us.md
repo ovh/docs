@@ -88,7 +88,6 @@ Your Okta service now trusts OVHcloud as a service provider. The next step is to
 
 ### Registering Okta into the OVHcloud account and configuring the connection
 
-<!-- CP-STEPS-START:register-okta-in-ovhcloud -->
 To add Okta as a trusted identity provider, you need to provide the identity provider metadata. Open the [SAML SSO](/links/control-panel/iam-saml-sso) page and click the `SSO connection`{.action} button.
 
 ![Access to the IAM menu](images/access_to_the_IAM_menu_03.png){.thumbnail}
@@ -112,7 +111,6 @@ The `...`{.action} button allows you to update or delete the SSO, and view its d
 ![OVHcloud SSO connection step 5](images/ovhcloud_user_management_connect_sso_5.png){.thumbnail}
 
 Your Okta service is now considered a trusted identity provider. However, you still need to add groups to your OVHcloud account.
-<!-- CP-STEPS-END:register-okta-in-ovhcloud -->
 
 > [!warning]
 > If you try to connect via SSO at this point, you will probably receive a `Not in valid groups` error message.
@@ -122,7 +120,6 @@ Your Okta service is now considered a trusted identity provider. However, you st
 
 You must then assign **roles** to Okta user groups at OVHcloud. Otherwise, your OVHcloud account does not know what the user is allowed to do and, by default, no rights are assigned.
 
-<!-- CP-STEPS-START:declare-okta-groups-ovhcloud -->
 In the `Identities`{.action} section, open the `User groups`{.action} tab. Then click the `Declare a group`{.action} button and fill in the fields:
 
 - **Group name**: Group name within Okta
@@ -135,7 +132,6 @@ In the `Identities`{.action} section, open the `User groups`{.action} tab. Then 
 You can then verify that the group is added to your OVHcloud account in the "Groups" section:
 
 ![Okta User Management Groups](images/ovhcloud_user_management_groups_3.png){.thumbnail}
-<!-- CP-STEPS-END:declare-okta-groups-ovhcloud -->
 
 When you later log in with a user from the **Intern** group, your OVHcloud account will recognise that the user has the role "UNPRIVILEGED" specified by his group.
 

@@ -133,7 +133,6 @@ L'ajout de votre AD FS en tant que fournisseur d'identité de confiance s'effect
 
 Ouvrez la page [SAML SSO](/links/control-panel/iam-saml-sso).
 
-<!-- CP-STEPS-START:configure-sso-connection -->
 Dans la section `Connexion SSO`{.action}, renseignez les métadonnées XML de votre service AD FS. Le champ `Nom d’attribut de groupe` est facultatif dans ce cas. Cliquez sur `Confirmer`{.action}.
 
 Il est possible de conserver les utilisateurs locaux en cochant la case `Conserver les utilisateurs OVHcloud actifs`.
@@ -153,7 +152,6 @@ Pour plus d’informations, cliquez sur le lien situé sous l’`URL du service 
 Le bouton `...`{.action} permet de mettre à jour ou de supprimer le SSO, et d’en consulter les détails.
 
 ![OVHcloud connexion SSO étape 6](images/ovhcloud_user_management_connect_sso_6.png){.thumbnail}
-<!-- CP-STEPS-END:configure-sso-connection -->
 
 Votre AD FS est maintenant considéré comme fournisseur d’identité de confiance. Cependant, vous devez tout de même ajouter des groupes à votre compte OVHcloud.
 
@@ -188,7 +186,6 @@ Vous pouvez également le vérifier dans l'assertion SAML :
 
 Cela signifie que vous devez ajouter le groupe `manager@<my-domain>.com` à votre compte OVHcloud en y attachant un rôle. Dans le cas contraire, votre compte OVHcloud ne sait pas ce que l'utilisateur est autorisé à faire.
 
-<!-- CP-STEPS-START:add-user-groups -->
 Pour ajouter ce groupe, rendez-vous dans la section `Identités`{.action} puis dans l'onglet `Groupes d'utilisateurs`{.action}. Cliquez ensuite sur le bouton `Déclarer un groupe`{.action}, renseignez le nom du groupe et sélectionnez le privilège associé :
 
 ![Groupes de gestion des utilisateurs AD FS](images/ovhcloud_user_management_groups_1.png){.thumbnail}
@@ -198,7 +195,6 @@ Pour ajouter ce groupe, rendez-vous dans la section `Identités`{.action} puis d
 Vous pourrez ensuite vérifier que le groupe est ajouté à votre compte OVHcloud dans la section `Groupes` :
 
 ![Groupes de gestion des utilisateurs AD FS](images/ovhcloud_user_management_groups_3.png){.thumbnail}
-<!-- CP-STEPS-END:add-user-groups -->
 
 Lorsque vous vous connecterez par la suite avec l'utilisateur Active Directory « John Doe », votre compte OVHcloud reconnaîtra que l'utilisateur a le rôle « REGULAR », spécifié par son groupe.
 

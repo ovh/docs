@@ -59,7 +59,6 @@ Pour ne jamais être à court de crédit sur votre compte, vous pouvez activer l
 > - un moyen de paiement de type Prélèvement SEPA est présent et validé sur votre compte OVHcloud ;
 > - votre service SMS doit avoir au moins 2 mois d'ancienneté.
 
-<!-- CP-STEPS-START:automatic-re-credit -->
 Rendez-vous dans le menu `Options`{.action} (1) puis `Recharge automatique`{.action} (2).
 
 ![credit sms](images/smscredit01.png){.thumbnail}
@@ -75,7 +74,6 @@ Enfin, remplissez les champs requis :
 - Cliquez sur le bouton `Valider`{.action} pour appliquer le paramétrage.
 
 ![credit sms](images/smscredit03.png){.thumbnail}
-<!-- CP-STEPS-END:automatic-re-credit -->
 
 ### Transférer des crédits SMS
 
@@ -84,7 +82,6 @@ Enfin, remplissez les champs requis :
 > Le transfert de crédits n'est possible qu'entre les comptes SMS d'un seul et même compte client OVHcloud. Le transfert de crédits entre deux comptes clients OVHcloud est impossible.
 >
 
-<!-- CP-STEPS-START:transferring-credits -->
 Cliquez sur `Transférer des crédits`{.action} depuis l'onglet `Accueil`{.action}.
 
 ![transfert de crédits SMS](images/credit-transfer01.png){.thumbnail}
@@ -98,7 +95,6 @@ Choisissez alors :
 Cliquez sur `Envoyer`{.action} pour valider le transfert. Celui-ci est immédiat.
 
 ![transfert de crédits SMS](images/credit-transfer02.png){.thumbnail}
-<!-- CP-STEPS-END:transferring-credits -->
 
 ## Aller plus loin
 

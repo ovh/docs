@@ -125,15 +125,12 @@ Avant de poursuivre la lecture de ce guide, vous devez remplir les conditions su
 
 ## En pratique
 
-<!-- CP-STEPS-START:services-table -->
 Ouvrez la page [Mes offres et services](/links/control-panel/billing-services).
 
 ![produits et services](/pages/assets/screens/control_panel/product-selection/right-menu/my-solutions-and-services.png){.thumbnail}
-<!-- CP-STEPS-END:services-table -->
 
 ### Afficher le type de renouvellement <a name="renewal-type"></a>
 
-<!-- CP-STEPS-START:services-table -->
 La page **Gestion de mes offres et services** contient un tableau de gestion de vos services OVHcloud. Vous pouvez y retrouver leurs noms, le type de service, la disponibilité du service (`Actif` par défaut), son statut (type de renouvellement, action à réaliser, etc.), la prochaine date d'effet du renouvellement ou de la résiliation ainsi qu'un bouton `...`{.action} dédié aux actions possibles pour chaque service.
 
 ![mes services](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/my-services-fr.png){.thumbnail}
@@ -145,7 +142,6 @@ La page **Gestion de mes offres et services** contient un tableau de gestion de 
 > Vos critères de filtrage seront alors affichés au dessus du tableau. Voici un exemple de filtre permettant d'afficher les noms de domaines en renouvellement manuel.
 >
 > ![manageautomaticrenewal](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/filters-fr.png){.thumbnail}
-<!-- CP-STEPS-END:services-table -->
 
 <a name="actions"></a>
 
@@ -156,7 +152,6 @@ La page **Gestion de mes offres et services** contient un tableau de gestion de 
 > Selon le service, s'il est éligible ou non au renouvellement manuel, certaines actions ne seront pas disponibles.
 >
 
-<!-- CP-STEPS-START:configure-renewal -->
 À droite d'un service, cliquez sur le bouton `...`{.action} dans la colonne `Actions` puis sur l'action de votre choix.
 
 ![menu actions](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/actions-fr.png){.thumbnail}
@@ -174,8 +169,6 @@ La page **Gestion de mes offres et services** contient un tableau de gestion de 
 >>
 >> En fonction du choix effectué, vous seront précisées les futures dates de prélèvement, le moyen de paiement qui sera utilisé et la date d'expiration du service.
 >>
-<!-- CP-STEPS-END:configure-renewal -->
-<!-- CP-STEPS-START:bring-forward-payment -->
 > **Anticiper le paiement**
 >>
 >> ![anticiper le paiement](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/forward-payment-fr.png){.thumbnail}
@@ -196,8 +189,6 @@ La page **Gestion de mes offres et services** contient un tableau de gestion de 
 >> >
 >> > Pour information, la tarification de certaines options ne s'affiche que lorsque le bon de commande de renouvellement est généré.
 >>
-<!-- CP-STEPS-END:bring-forward-payment -->
-<!-- CP-STEPS-START:cancel-subscription -->
 > **Résilier mon service**
 >>
 >> ![résilier](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/cancel-fr.png){.thumbnail}
@@ -208,8 +199,6 @@ La page **Gestion de mes offres et services** contient un tableau de gestion de 
 >>
 >> Pour plus d'informations sur la résiliation des services OVHcloud, suivez les instructions du guide « **[Comment résilier vos services OVHcloud](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_cancel_services)** ».
 >>
-<!-- CP-STEPS-END:cancel-subscription -->
-<!-- CP-STEPS-START:renew-service -->
 > **Renouveler le service**
 >>
 >> ![Renouveler le service](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/renew-service-fr.png){.thumbnail}
@@ -228,8 +217,6 @@ La page **Gestion de mes offres et services** contient un tableau de gestion de 
 >> >
 >> > Pour information, la tarification de certaines options ne s'affiche que lorsque le bon de commande de renouvellement est généré.
 >>
-<!-- CP-STEPS-END:renew-service -->
-<!-- CP-STEPS-START:pay-bill -->
 > **Régler ma facture**
 >>
 >> ![Payer une facture](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/pay-bill-fr.png){.thumbnail}
@@ -241,13 +228,11 @@ La page **Gestion de mes offres et services** contient un tableau de gestion de 
 >>
 >> Il vous suffit alors de choisir l'action `Régler ma facture`{.action} qui vous redirigera vers une plateforme de paiement en ligne.
 >>
-<!-- CP-STEPS-END:pay-bill -->
 
 <a name="group-actions"></a>
 
 ### Les actions groupées
 
-<!-- CP-STEPS-START:bulk-actions -->
 Vous avez la possibilité d'effectuer des actions groupées, en sélectionnant plusieurs services dans le tableau puis en cliquant sur le bouton `Actions`{.action}.
 
 ![actions groupées](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/batch-actions-fr.png){.thumbnail}
@@ -261,7 +246,6 @@ Le tableau ci-dessous détaille les actions groupées possibles.
 |Activer le paiement automatique|Réactivez le renouvellement automatique sur plusieurs services en une seule fois. Seuls les services éligibles seront mis à jour.|
 |Exporter en CSV|Exportez dans un fichier csv l'ensemble de vos services et leurs dates d'expiration.|
 |Aligner les dates de renouvellement|Permet d'aligner la date d'expiration de vos services à un jour calendaire. Seuls les services éligibles pourront être mis à jour.|
-<!-- CP-STEPS-END:bulk-actions -->
 
 ## FAQ
 

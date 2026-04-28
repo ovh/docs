@@ -67,7 +67,6 @@ Dabei sind mehrere Punkte zu beachten:
 
 ### Abrufen der monatlichen Bilanz des Vormonats über das OVHcloud Kundencenter
 
-<!-- CP-STEPS-START:retrieve-cp-footprint -->
 1. Auf dem [Mein Account](/links/control-panel/account-dashboard) gehen Sie in der linken Spalte nach unten zu **Nützliche Links**, und klicken Sie dann auf den Tab `Meine CO2-Bilanz`{.action}.
 1. Klicken Sie auf der neu geöffneten Seite auf `Meinen CO2-Fußabdruck von [Monat] [Jahr] herunterladen`{.action}.
 
@@ -76,7 +75,6 @@ Dabei sind mehrere Punkte zu beachten:
 Sie können jeden Monat die CO2-Bilanz des Vormonats für Ihre wählbaren Dienste abrufen.
 
 Wenn Sie den CO2-Fußabdruck für einen Monat vor dem laufenden Monat benötigen, müssen Sie ihn über unsere API abrufen.
-<!-- CP-STEPS-END:retrieve-cp-footprint -->
 
 ### Eine monatliche Bilanz vor dem Vormonat über unsere API abrufen
 

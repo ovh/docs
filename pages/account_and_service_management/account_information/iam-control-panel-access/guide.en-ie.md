@@ -38,7 +38,6 @@ With these rights, a user will be able to log in to the OVHcloud Control Panel. 
 
 ### Using UI
 
-<!-- CP-STEPS-START:iam-cp-access-ui -->
 Using the UI, you can set up a policy with the following configuration:
 
 Add the identites you want to give access to.
@@ -58,7 +57,6 @@ Or add the 4 rights listed above as an action.
 ![Add actions](images/add_actions.png){.thumbnail}
 
 You can now link your users to this policy to give them the right to log in to the OVHcloud Control Panel.
-<!-- CP-STEPS-END:iam-cp-access-ui -->
 
 ### Using API
 

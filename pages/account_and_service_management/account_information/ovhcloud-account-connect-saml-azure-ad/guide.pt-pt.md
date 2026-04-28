@@ -213,7 +213,6 @@ A adição da sua aplicação Entra ID como fornecedor de identidade aprovado é
 
 #### Criar confiança na OVHcloud
 
-<!-- CP-STEPS-START:establish-trust -->
 Complete o campo **Nome de Atributo de utilizador** com a aplicação Entra ID **UPN** nome do pedido e no campo **Nome de atributo de grupo** com o valor de nome de pedido **groups** guardado antes.
 
 Preencha os metadados XML da sua aplicação Entra ID a partir do ficheiro anteriormente registado.
@@ -223,7 +222,6 @@ Preencha os metadados XML da sua aplicação Entra ID a partir do ficheiro anter
 Clique no botão `Validar`{.action}.
 
 ![Ovhcloud SSO step 1](images/ovhcloud_sso_1.png){.thumbnail}
-<!-- CP-STEPS-END:establish-trust -->
 
 A adição da sua aplicação Entra ID como fornecedor de identidade foi estabelecida, mas deve ainda assim adicionar grupos à sua conta OVHcloud.
 
@@ -239,7 +237,6 @@ Para resolver esta situação, verifique o atributo "Group" devolvido pela sua a
 
 ![Entra ID Group etapa 2](images/azure_ad_group_2.png){.thumbnail}
 
-<!-- CP-STEPS-START:declare-groups -->
 Para adicionar um grupo, aceda à secção `Identidades`{.action} e aceda ao separador `Grupos de utilizadores`{.action}. De seguida, clique no botão `Declarar um grupo`{.action} :
 
 ![Grupos de gestão de utilizadores Ovhcloud etapa 1](images/ovhcloud_sso_menu_1.png){.thumbnail}
@@ -251,7 +248,6 @@ Introduza o nome do grupo e selecione o privilégio associado e clique no botão
 O grupo criado deve constar da lista.
 
 ![Grupos de gestão de utilizadores Ovhcloud etapa 3](images/ovhcloud_sso_menu_3.png){.thumbnail}
-<!-- CP-STEPS-END:declare-groups -->
 
 Atenção: se conceder o privilégio `Nenhum`, será necessário atribuir permissões a este grupo através das [políticas IAM](/pages/account_and_service_management/account_information/iam-policy-ui).
 

@@ -85,7 +85,6 @@ Se non hai ancora trovato il tuo identificativo, puoi cliccare sul link "Non ric
 
 /// details | Come proteggere il mio account?
 
-<!-- CP-STEPS-START:secure-account -->
 Sono disponibili diverse soluzioni per proteggere il tuo account, come ad esempio:
 
 - la scelta di una [password complessa e il suo aggiornamento regolare](/pages/account_and_service_management/account_information/manage-ovh-password);
@@ -93,7 +92,6 @@ Sono disponibili diverse soluzioni per proteggere il tuo account, come ad esempi
 - la configurazione di una [limitazione per IP](/pages/account_and_service_management/account_information/ovhcloud-control-panel-ip-restriction).
 
 Nella pagina [Sicurezza](/links/control-panel/account-security) puoi visualizzarle.
-<!-- CP-STEPS-END:secure-account -->
 
 ///
 
@@ -112,7 +110,6 @@ Per tutti questi casi, consulta [questa documentazione](/pages/account_and_servi
 
 /// details | Come modificare la password del mio account OVHcloud?
 
-<!-- CP-STEPS-START:change-password -->
 Nella pagina [Sicurezza](/links/control-panel/account-security), clicca sul pulsante `Modifica`{.action} situato a destra della voce **Password**. Puoi quindi modificare la tua password corrente. Un messaggio di sicurezza appare per informarti che stai per effettuare un cambio password. Dopo la tua conferma, riceverai (all'indirizzo e-mail principale indicato nell'account) un'e-mail contenente la procedura da seguire. 
 
 Trova maggiori informazioni nella nostra guida "[Impostare e gestire la password di un account OVHcloud](/pages/account_and_service_management/account_information/manage-ovh-password)".
@@ -129,7 +126,6 @@ Trova maggiori informazioni nella nostra guida "[Impostare e gestire la password
 > Se hai dimenticato il tuo identificativo cliente, puoi trovarlo in alto a destra sulla tua ultima fattura. Assomiglia a questo: "aa00000-ovh" (le prime lettere sono in genere le iniziali della persona che ha creato l'account). Questo identificativo è anche indicato nell'e-mail di conferma della creazione dell'account, così come negli e-mail di conferma o di rinnovo dell'ordine.
 >
 
-<!-- CP-STEPS-END:change-password -->
 
 ///
 
@@ -171,7 +167,6 @@ Consulta la parte "[Cosa fare se uno dei miei dispositivi è perduto/rubato o sm
 
 /// details | Come modificare le mie informazioni personali?
 
-<!-- CP-STEPS-START:change-personal-information -->
 Per visualizzare o modificare le tue coordinate, apri la pagina [Il mio profilo](/links/control-panel/account-profile).
 
 > [!success]
@@ -179,19 +174,16 @@ Per visualizzare o modificare le tue coordinate, apri la pagina [Il mio profilo]
 >
 > Ti verrà prima inviata una richiesta di conferma all'indirizzo e-mail che hai attualmente indicato nel tuo Spazio Cliente. Se non riesci più ad accedere a questa e-mail, è necessario attendere 24 ore. Trascorso questo periodo, il cambiamento sarà effettuato automaticamente.
 >
-<!-- CP-STEPS-END:change-personal-information -->
 
 ///
 
 /// details | Come accedere ai contratti e alle condizioni generali di servizio?
 
-<!-- CP-STEPS-START:access-contracts -->
 Puoi trovare i contratti dei tuoi servizi OVHcloud direttamente nella pagina [Lista dei contratti](/links/control-panel/billing-contracts).
 
 Puoi anche consultare i contratti sul nostro sito, tramite [questo link](/links/terms-conditions-contracts).
 
 Questa pagina contiene tutte le informazioni necessarie sui nostri contratti, compresi i termini e le condizioni dei nostri servizi.
-<!-- CP-STEPS-END:access-contracts -->
 
 ///
 
@@ -230,7 +222,6 @@ Per qualsiasi informazione complementare, contatta il nostro supporto creando un
 
 /// details | Come cancellare il mio account OVHcloud?
 
-<!-- CP-STEPS-START:delete-account -->
 La chiusura del tuo account cliente OVHcloud e l'eliminazione delle tue informazioni personali è possibile solo se:
 
 1. Non hai più servizi visibili nella sezione "[Le mie offerte e servizi](https://www.ovh.com/manager/dedicated/#/billing/autoRenew)". In caso contrario, dovrai prima richiedere la loro cancellazione e attendere la loro rimozione.
@@ -243,7 +234,6 @@ Se le condizioni sopra indicate sono soddisfatte, puoi richiedere l'eliminazione
 1. Accedi al [centro di assistenza OVHcloud](https://help.ovhcloud.com/csm?id=csm_get_help).
 1. Seleziona il motivo `Gestisci il tuo account client OVHcloud`{.action}.
 1. Specifica `Voglio chiudere il mio account client OVHcloud`{.action} e segui le istruzioni descritte.
-<!-- CP-STEPS-END:delete-account -->
 
 ///
 
@@ -289,9 +279,7 @@ Tutte le nostre e-mail rispettano i nostri standard di sicurezza (SPF, DKIM, DMA
 **In caso di dubbio sull'autenticità di un'e-mail** :
 
 - Sappiate che non vi chiederemo mai una password o coordinate bancarie via e-mail.
-<!-- CP-STEPS-START:check-emails -->
 - Verifica se l'e-mail che hai ricevuto è visibile anche nella pagina [I miei messaggi](/links/control-panel/account-messages). Troverai lì le copie delle e-mail ufficiali inviate da OVHcloud.
-<!-- CP-STEPS-END:check-emails -->
 - Consultate anche la nostra guida « [Phishing - Come riconoscere e-mail o SMS fraudolenti ?](/pages/account_and_service_management/account_information/phishing_care) ».
 
 ///
@@ -336,7 +324,6 @@ Sostituisci `{logId}` con l'identificativo reale del log che desideri consultare
 
 /// details | Come posso delegare l'accesso ai miei servizi ad altre persone?
 
-<!-- CP-STEPS-START:change-contacts -->
 Hai la possibilità di delegare ad altri account client OVHcloud la gestione amministrativa, tecnica e fatturazione dei tuoi servizi dal tuo spazio client. Per farlo, apri la pagina [Gestione dei contatti](/links/control-panel/account-contacts).
 
 L'assegnazione del servizio dovrà essere validata via email sia dall'amministratore del servizio che dal nuovo contatto.
@@ -347,18 +334,15 @@ Se desideri recuperare un nome di dominio di cui sei il proprietario registrato 
 
 > [!success]
 > Una guida completa sulla gestione dei contatti è disponibile [qui](/pages/account_and_service_management/account_information/managing_contacts).
-<!-- CP-STEPS-END:change-contacts -->
 
 ///
 
 /// details | Come configurare o modificare un contatto per la fatturazione?
 
-<!-- CP-STEPS-START:change-billing-contact -->
 Apri la pagina [Gestione dei contatti](/links/control-panel/account-contacts).
 
 > [!success]
 > Se desideri saperne di più sulla gestione dei contatti, ti invitiamo a consultare questa guida dettagliata: "[Gestire i contatti dei servizi OVHcloud](/pages/account_and_service_management/account_information/managing_contacts)".
-<!-- CP-STEPS-END:change-billing-contact -->
 
 ///
 

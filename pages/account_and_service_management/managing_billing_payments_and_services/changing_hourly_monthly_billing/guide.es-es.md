@@ -40,7 +40,6 @@ Al crear una instancia de Public Cloud, puede elegir entre una tarifa por horas 
 
 ### Desde el área de cliente de OVHcloud
 
-<!-- CP-STEPS-START:switch-to-monthly-billing -->
 > [!warning]
 > El procedimiento siguiente no funciona para las instancias de tercera generación (por ejemplo, B3-32). Para facturar mensualmente este tipo de instancia, debe crear un [Savings Plan](/pages/public_cloud/public_cloud_cross_functional/savings_plans) para este modelo de instancia.
 >
@@ -54,7 +53,6 @@ A continuación, debe confirmar que desea cambiar su tarifa de facturación:
 ![Confirm billing calculation change](images/confirm_to_monthly_updated.png){.thumbnail}
 
 Una vez confirmada su elección, recibirá de inmediato una factura mensual proporcional a la parte restante. El próximo proyecto de ley incluirá la parte de la tarifa horaria del mes (el 1er del mes hasta el cambio) y la nueva tarifa mensual.
-<!-- CP-STEPS-END:switch-to-monthly-billing -->
 
 ### Desde la API OpenStack
 

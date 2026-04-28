@@ -30,7 +30,6 @@ Tous les comptes SMS OVHcloud peuvent utiliser un ou plusieurs carnets d'adresse
 
 ### Étape 1 : Créer un carnet d'adresses dans votre espace client
 
-<!-- CP-STEPS-START:create-address-book -->
 Choisissez l'onglet `Contacts`{.action} puis `Carnet d'adresses`{.action}.
 
 ![phonebook](images/smsphonebook01.png){.thumbnail}
@@ -38,7 +37,6 @@ Choisissez l'onglet `Contacts`{.action} puis `Carnet d'adresses`{.action}.
 Cliquez sur `Ajouter un carnet d'adresses`{.action} et nommez alors votre nouveau carnet.
 
 ![phonebook](images/smsphonebook2.png){.thumbnail}
-<!-- CP-STEPS-END:create-address-book -->
 
 ### Étape 2 : Ajouter des contacts dans votre carnet
 
@@ -46,7 +44,6 @@ Le carnet d'adresses est maintenant créé mais ne contient aucun contact. Plusi
 
 ### Ajout unitaire de contacts depuis l'espace client
 
-<!-- CP-STEPS-START:add-contact-individually -->
 Sélectionnez le bouton `Actions`{.action} et cliquez sur `Ajouter`{.action}.
 
 ![phonebook](images/smsphonebook3.png){.thumbnail}
@@ -56,7 +53,6 @@ Vous accéderez à une fenêtre vous permettant de renseigner les informations d
 ![phonebook](images/smsphonebook4.png){.thumbnail}
 
 Remplissez les champs souhaités et validez pour enregistrer vos modifications. Le contact sera alors intégré à votre carnet. Il vous faudra refaire la même manipulation pour ajouter d'autres contacts.
-<!-- CP-STEPS-END:add-contact-individually -->
 
 ### Ajout de contacts multiples via un import de fichier de contacts depuis l'espace client
 
@@ -94,7 +90,6 @@ En parallèle, enregistrez-le ou exportez-le au format «.csv » afin d'en prép
 
 #### Import du fichier dans votre espace client
 
-<!-- CP-STEPS-START:import-contact-file -->
 De retour sur votre espace client OVHcloud, sélectionnez le bouton `Actions`{.action} et cliquez sur `Importer`{.action}.
 
 ![phonebook](images/smsphonebook5.png){.thumbnail}
@@ -104,11 +99,9 @@ Une pop-up s'affichera, cliquez alors sur `Fichier de contact`{.action} pour sé
 ![phonebook](images/smsphonebook6.png){.thumbnail}
 
 Patientez quelques secondes pendant le chargement du fichier dans votre espace client.
-<!-- CP-STEPS-END:import-contact-file -->
 
 ### Étape 3 : Éditer ou supprimer un carnet d'adresses
 
-<!-- CP-STEPS-START:edit-delete-address-book -->
 Si vous souhaitez modifier le nom d'un carnet d'adresses, sélectionnez votre carnet dans le menu déroulant (1) (si vous avez créé plusieurs carnets) puis cliquez sur le crayon (2) en face du nom du carnet. 
 
 Pour supprimer un carnet, sélectionnez-le dans le menu déroulant (1) puis cliquez sur `Supprimer le carnet d'adresses`{.action}.
@@ -116,7 +109,6 @@ Pour supprimer un carnet, sélectionnez-le dans le menu déroulant (1) puis cliq
 Pour éditer ou supprimer un contact, cliquez, dans la colonne « Actions », sur `...`{.action} (4) en face du contact choisi. Vous aurez ainsi accès au menu vous proposant ces choix.
 
 ![phonebook](images/smsphonebook7.png){.thumbnail}
-<!-- CP-STEPS-END:edit-delete-address-book -->
 
 ## Aller plus loin
 

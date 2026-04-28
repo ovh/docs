@@ -122,15 +122,12 @@ Folgende Themen werden erläutert:
 
 ## In der praktischen Anwendung
 
-<!-- CP-STEPS-START:services-table -->
 Öffnen Sie die Seite [Meine Angebote und Dienste](/links/control-panel/billing-services).
 
 ![Produkte und Dienstleistungen](/pages/assets/screens/control_panel/product-selection/right-menu/my-solutions-and-services.png){.thumbnail}
-<!-- CP-STEPS-END:services-table -->
 
 ### Verlängerungstyp anzeigen <a name="renewal-type"></a>
 
-<!-- CP-STEPS-START:services-table -->
 Die Seite **Verwaltung meiner Angebote und Dienste** enthält eine Tabelle zur Verwaltung Ihrer OVHcloud Dienstleistungen. Sie finden dort deren Namen, den Typ der Dienstleistung, die Verfügbarkeit der Dienstleistung (z.B. `Aktiv`), deren Status (Art der Verlängerung, durchzuführende Aktion, etc.), das nächste Datum, an dem die Verlängerung oder Kündigung wirksam wird, sowie den Button `...`{.action} zum Zugriff die möglichen Aktionen für jeden Dienst.
 
 ![Meine Dienstleistungen](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/my-services-en.png){.thumbnail}
@@ -142,7 +139,6 @@ Die Seite **Verwaltung meiner Angebote und Dienste** enthält eine Tabelle zur V
 > Ihre Filterkriterien werden dann über der Tabelle angezeigt. Im Folgenden finden Sie ein Beispiel für einen Filter zum Anzeigen von Domainnamen mit manueller Verlängerung.
 >
 > ![manageAutomaticRenewal](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/filters-en.png){.thumbnail}
-<!-- CP-STEPS-END:services-table -->
 
 <a name="actions"></a>
 
@@ -153,7 +149,6 @@ Die Seite **Verwaltung meiner Angebote und Dienste** enthält eine Tabelle zur V
 > Je nach Dienst sind manche Aktionen nicht verfügbar, auch wenn er nicht manuell verlängert werden kann.
 >
 
-<!-- CP-STEPS-START:configure-renewal -->
 Rechts neben einem Dienst klicken Sie auf den Button `...`{.action} in der Spalte `Aktionen` und dann auf die gewünschte Aktion.
 
 ![Menü Aktionen](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/actions-en.png){.thumbnail}
@@ -171,8 +166,6 @@ Rechts neben einem Dienst klicken Sie auf den Button `...`{.action} in der Spalt
 >>
 >> Je nach getroffener Wahl werden die künftigen Zahlungsdaten, die verwendete Zahlungsart und das Ablaufdatum der Dienstleistung angegeben.
 >>
-<!-- CP-STEPS-END:configure-renewal -->
-<!-- CP-STEPS-START:bring-forward-payment -->
 > **Vorauszahlen**
 >>
 >>![Zahlung vorziehen](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/forward-payment-en.png){.thumbnail}
@@ -193,8 +186,6 @@ Rechts neben einem Dienst klicken Sie auf den Button `...`{.action} in der Spalt
 >> >
 >> > Zur Information: Die Preise für einige Dienste werden erst angezeigt, wenn der Verlängerungsauftrag erstellt wurde.
 >>
-<!-- CP-STEPS-END:bring-forward-payment -->
-<!-- CP-STEPS-START:cancel-subscription -->
 > **Meinen Dienst kündigen**
 >>
 >>![Kündigen](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/cancel-en.png){.thumbnail}
@@ -205,8 +196,6 @@ Rechts neben einem Dienst klicken Sie auf den Button `...`{.action} in der Spalt
 >>
 >> Weitere Informationen zur Kündigung von OVHcloud-Diensten finden Sie in der Anleitung **[So kündigen Sie Ihre OVHcloud-Dienste](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_cancel_services)**.
 >>
-<!-- CP-STEPS-END:cancel-subscription -->
-<!-- CP-STEPS-START:renew-service -->
 > **Dienst verlängern**
 >>
 >>![Dienstleistung verlängern](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/renew-service-en.png){.thumbnail}
@@ -225,8 +214,6 @@ Rechts neben einem Dienst klicken Sie auf den Button `...`{.action} in der Spalt
 >> >
 >> > Zur Information: Die Preise für einige Dienste werden erst angezeigt, wenn der Verlängerungsauftrag erstellt wurde.
 >>
-<!-- CP-STEPS-END:renew-service -->
-<!-- CP-STEPS-START:pay-bill -->
 > **Meine Rechnung bezahlen**
 >>
 >>![Rechnung bezahlen](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/pay-bill-en.png){.thumbnail}
@@ -238,13 +225,11 @@ Rechts neben einem Dienst klicken Sie auf den Button `...`{.action} in der Spalt
 >>
 >> Wählen Sie dann einfach die Aktion `Meine Rechnung bezahlen`{.action} aus, die Sie zum Zahlungsformular weiterleitet.
 >>
-<!-- CP-STEPS-END:pay-bill -->
 
 <a name="group-actions"></a>
 
 ### Die gebündelten Aktionen
 
-<!-- CP-STEPS-START:bulk-actions -->
 Sie können gruppierte Aktionen ausführen, indem Sie mehrere Dienste in der Tabelle auswählen und dann auf den Button `Aktionen`{.action} klicken.
 
 ![Gruppierte Aktionen](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/batch-actions-en.png){.thumbnail}
@@ -258,7 +243,6 @@ In der folgenden Tabelle sind die möglichen gruppierten Aktionen aufgeführt.
 |Automatische Zahlung aktivieren|Die automatische Zahlung für mehrere Dienstleistungen gleichzeitig aktivieren. Nur die in Frage kommenden Dienstleistungen werden aktualisiert.|
 |Export als CSV-Datei|Exportiert alle Ihre Dienstleistungen und deren Ablaufdaten in eine Datei im Format *csv*.|
 |Ablaufdaten einander angleichen|Das Ablaufdatum Ihrer Dienstleistungen an einen Kalendertag angleichen. Nur die in Frage kommenden Dienstleistungen werden aktualisiert.|
-<!-- CP-STEPS-END:bulk-actions -->
 
 ## FAQ
 

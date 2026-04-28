@@ -49,7 +49,6 @@ En cualquier momento puede consultar la orden de pedido desde la página [Mis pe
 
 ### Acceder a los pedidos desde el área de cliente de OVHcloud.
 
-<!-- CP-STEPS-START:access-purchase-orders -->
 Abra la página [Mis pedidos](/links/control-panel/billing-orders).
 
 ![Área de cliente](images/huborders.png){.thumbnail}
@@ -77,11 +76,9 @@ Estos son los posibles estados de un pedido:
 Si desea ver el pedido en formato HTML, haga clic en `...`{.action} a la derecha de su pedido y, seguidamente, en `Ver la orden de pedido en formato HTML`{.action}.
 
 ![Resumen de pedidos](images/order04.png){.thumbnail}
-<!-- CP-STEPS-END:access-purchase-orders -->
 
 ### Seguimiento del pedido
 
-<!-- CP-STEPS-START:track-order -->
 Una vez generada la orden de pedido, puede realizar el seguimiento de su pedido desde la página [Mis pedidos](/links/control-panel/billing-orders):
 
 * Haga clic en el botón `...`{.action} delante del pedido.
@@ -92,7 +89,6 @@ Una vez generada la orden de pedido, puede realizar el seguimiento de su pedido 
 Se abrirá una ventana en la que podrá realizar el seguimiento en cuatro pasos.
 
 ![Seguimiento de los pedidos](images/order06.png){.thumbnail}
-<!-- CP-STEPS-END:track-order -->
 
 ### Ejercer el derecho de desistimiento
 
@@ -114,7 +110,6 @@ Encontrará todas las modalidades de la aplicación de dicho derecho en los sigu
 
 Si cumple con los requisitos necesarios para ejercer el derecho de desistimiento, podrá hacerlo directamente desde la página [Mis pedidos](/links/control-panel/billing-orders):
 
-<!-- CP-STEPS-START:cancel-order -->
 * Haga clic en el botón `...`{.action} delante del pedido.
 * Seleccione `Cancelar el pedido`{.action}.
 
@@ -123,7 +118,6 @@ Si cumple con los requisitos necesarios para ejercer el derecho de desistimiento
 Por último, marque la casilla `Sí, quiero cancelar el pedido`{.action} y confirme.
 
 ![Confirmación de la cancelación](images/cancelorder2.png){.thumbnail}
-<!-- CP-STEPS-END:cancel-order -->
 
 > [!primary]
 >

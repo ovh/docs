@@ -37,11 +37,9 @@ En tant que membre du Startup Program d'OVHcloud, vous bénéficiez de crédits 
 
 ## En pratique
 
-<!-- CP-STEPS-START:view-startup-credits -->
 Dans [Mes moyens de paiement](/links/control-panel/billing-payment-methods), sélectionnez l’onglet `Mes bons d’achat`{.action}. Ici, vous verrez le montant total de vos crédits attribués, la date d'expiration, les crédits restants, et l’historique de leur consommation.
 
     ![bons d'achat](images/02-vouchers.png){.thumbnail}
-<!-- CP-STEPS-END:view-startup-credits -->
 
 ## Conclusion
 

@@ -66,7 +66,6 @@ Please note the following information:
 
 ### Retrieving the monthly carbon footprint report for the previous month via the OVHcloud Control Panel
 
-<!-- CP-STEPS-START:retrieve-cp-footprint -->
 1. On the [My account](/links/control-panel/account-dashboard), scroll down to the **Useful links** section in the left-hand column, then click on the `My carbon footprint`{.action} tab.
 1. On the new page that appears, click `Download my [Month] [Year] footprint`{.action}.
 
@@ -75,7 +74,6 @@ Please note the following information:
 You can recover the carbon footprint of the previous month for your eligible services every month.
 
 If you need the carbon footprint for a month prior to the month preceding the current month, you will have to use our APIs to retrieve it.
-<!-- CP-STEPS-END:retrieve-cp-footprint -->
 
 ### Retrieving a monthly carbon footprint prior to the previous month via our APIs
 

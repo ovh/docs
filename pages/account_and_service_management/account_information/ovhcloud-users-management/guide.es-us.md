@@ -42,7 +42,6 @@ Los usuarios locales son uno de los tipos de identidad que pueden configurarse e
 
 #### Añadir un usuario
 
-<!-- CP-STEPS-START:add-a-user -->
 Desde la página [Identidades IAM](/links/control-panel/iam-identities), haga clic en `Añadir un usuario`{.action}.
 
 Se abrirá una ventana, donde deberá completar los campos obligatorios. Haga clic en `Aceptar`{.action} para crear el usuario.
@@ -74,11 +73,9 @@ Por ejemplo: **1234-567-89/johnsmith**.
 A partir de ese momento, el usuario creado podrá iniciar sesión en el [área de cliente de OVHcloud](/links/manager) con este identificador.
 
 También podrá cambiar su contraseña y proteger el acceso a su cuenta activando la doble autenticación (esta última medida solo se aplicará a su acceso como usuario). A tal fin, puede consultar [la guía sobre la instrumentación de la doble autenticación](/pages/account_and_service_management/account_information/secure-ovhcloud-account-with-2fa).
-<!-- CP-STEPS-END:add-a-user -->
 
 #### Gestionar los usuarios
 
-<!-- CP-STEPS-START:manage-users -->
 Para modificar, desactivar/activar o eliminar un usuario, haga clic en `…`{.action} a la derecha de este.
 
 ![users-management](images/usersmanagement4.png){.thumbnail}
@@ -86,13 +83,11 @@ Para modificar, desactivar/activar o eliminar un usuario, haga clic en `…`{.ac
 La modificación del usuario permite actualizar su dirección de correo electrónico, sus privilegios y su descripción.
 
 ![users-management](images/usersmanagement6.png){.thumbnail}
-<!-- CP-STEPS-END:manage-users -->
 
 ### Gestión de grupos
 
 #### Añadir un grupo
 
-<!-- CP-STEPS-START:add-a-group -->
 Para añadir un grupo, acceda a la pestaña `Grupos de usuarios`{.action} y haga clic en el botón `Declarar un grupo`{.action}.
 
 ![users-management](images/usersmanagement7.png){.thumbnail}
@@ -109,11 +104,9 @@ Los grupos asignan un nivel de privilegio por defecto a los usuarios que contien
 | Solo Lectura | Proporciona acceso de lectura al área de cliente de OVHcloud y a todas sus secciones. |
 | Administrador restringido | Concede acceso de escritura al área de cliente de OVHcloud y a todas sus secciones,**excepto para la gestión de los** usuarios. |
 | Administrador | Proporciona acceso de escritura al área de cliente de OVHcloud y a todas sus secciones, **incluyendo** la gestión de usuarios. |
-<!-- CP-STEPS-END:add-a-group -->
 
 #### Administrar grupos
 
-<!-- CP-STEPS-START:manage-groups -->
 Para actualizar o eliminar un grupo, haga clic en el botón `...`{.action} situado a la derecha del nombre del grupo.
 
 ![users-management](images/usersmanagement9.png){.thumbnail}
@@ -121,7 +114,6 @@ Para actualizar o eliminar un grupo, haga clic en el botón `...`{.action} situa
 Al editar un grupo, puede editar su descripción y rol.
 
 ![users-management](images/usersmanagement10.png){.thumbnail}
-<!-- CP-STEPS-END:manage-groups -->
 
 ### Gestión de los permisos
 

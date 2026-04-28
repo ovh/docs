@@ -25,7 +25,6 @@ A Área de Cliente OVHcloud permite-lhe guardar e gerir vários métodos de paga
 
 ## Instruções <a name="payment_methods"></a>
 
-<!-- CP-STEPS-START:instructions-overview -->
 Na página [Os meus métodos de pagamento](/links/control-panel/billing-payment-methods), encontrará um quadro que indica os métodos de pagamento registados na sua conta de cliente.
 
 ![hubpayment](/pages/assets/screens/control_panel/product-selection/right-menu/my-payment-methods.png){.thumbnail}
@@ -36,11 +35,9 @@ Nela pode:
 - Alterar o seu método de pagamento padrão
 - Modificar a descrição do seu método de pagamento
 - Eliminar um método de pagamento
-<!-- CP-STEPS-END:instructions-overview -->
 
 ### Adicionar um método de pagamento
 
-<!-- CP-STEPS-START:register-payment-method -->
 Aquando da sua primeira encomenda, é-lhe pedido que registe um método de pagamento para assegurar a renovação do seu serviço por débito automático.
 
 Este método de pagamento é então utilizado por defeito para todas as suas renovações e é-lhe proposto para pagar novas encomendas.
@@ -76,11 +73,9 @@ Nenhum montante será debitado e o seu cartão de crédito será ativado ao fim 
 Clique no botão `PayPal`{.action}. Será então aberta uma janela de contexto para se ligar à sua conta PayPal® e registar esta como método de pagamento autorizado junto da OVHcloud.
 
 A sua conta PayPal® será ativada dentro de alguns minutos.
-<!-- CP-STEPS-END:register-payment-method -->
 
 ### Alterar o seu método de pagamento padrão
 
-<!-- CP-STEPS-START:change-default-payment-method -->
 As faturas de renovação dos seus serviços são sempre debitadas no seu método de pagamento padrão. Se pretender alterar este método, terá primeiro de adicionar um novo método de pagamento na sua Área de Cliente.
 
 Clique, então, no botão `...`{.action} à direita do novo método de pagamento, e em `Definir este método de pagamento por predefiniçao`{.action}.
@@ -93,17 +88,14 @@ Clique, então, no botão `...`{.action} à direita do novo método de pagamento
 > - Etapa 2: defina o novo método de pagamento como método de pagamento padrão
 > - Etapa 3: elimine o método de pagamento antigo
 >
-<!-- CP-STEPS-END:change-default-payment-method -->
 
 ### Eliminar um método de pagamento
 
-<!-- CP-STEPS-START:delete-payment-method -->
 Se já não quiser usar um dos métodos de pagamento, poderá eliminá-lo clicando no botão `...`{.action} à direita do método de pagamento. Clique, então, em `Eliminar este método de pagamento`{.action}.
 
 ![manage-payment-methods](images/managepaymentmethods4.png){.thumbnail}
 
 Se deseja eliminar a integralidade dos seus métodos de pagamento, o conjunto dos seus serviços deve ser [renovado manualmente](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#a-renovacao-manual).
-<!-- CP-STEPS-END:delete-payment-method -->
 
 #### Eliminar um método de pagamento através das API OVHcloud
 
@@ -134,7 +126,6 @@ De seguida, elimine o método de pagamento utilizando o ID que obteve na etapa a
 
 #### O que é a conta pré-paga?
 
-<!-- CP-STEPS-START:prepaid-account-overview -->
 A *conta pré-paga* está presente na página [Os meus métodos de pagamento](/links/control-panel/billing-payment-methods) assim que for criada. Permite-lhe creditar antecipadamente à sua conta de cliente e utilizar estes fundos para o pagamento das suas encomendas e das suas faturas de renovação.
 
 Ao creditar regularmente à sua conta, certificar-se-á de que a [renovação automática](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#a-renovacao-automatica) dos seus serviços nunca será interrompida por falta de pagamento.
@@ -142,7 +133,6 @@ Ao creditar regularmente à sua conta, certificar-se-á de que a [renovação au
 Para isso, aceda à página [Os meus métodos de pagamento](/links/control-panel/billing-payment-methods) e selecione o separador `Conta pré-paga`{.action}.
 
 ![prepaid-account](images/prepaid-account.png){.thumbnail}
-<!-- CP-STEPS-END:prepaid-account-overview -->
 
 #### Como funciona?
 
@@ -156,15 +146,12 @@ No entanto, se não registou nenhum método de pagamento, deverá pagar este sal
 
 Se não possui nenhum método de pagamento registado, recomendamos que parametrize um **limite de alerta** para garantir que dispõe dos fundos suficientes para as suas próximas faturas:
 
-<!-- CP-STEPS-START:prepaid-account-alert -->
 ![warning_prepaid_account](images/warning_prepaid_account.png){.thumbnail}
 
 Se o crédito disponível na sua conta pré-paga desce abaixo do limite definido, ser-lhe-á imediatamente enviado um e-mail de notificação.
-<!-- CP-STEPS-END:prepaid-account-alert -->
 
 #### Como creditar à sua conta pré-paga?
 
-<!-- CP-STEPS-START:prepaid-account-credit -->
 No separador `A minha conta pré-paga`{.action}, clique no botão `Creditar`{.action}.
 
 ![credit-prepaid-account](images/credit-prepaid-account.png){.thumbnail}
@@ -174,7 +161,6 @@ Na nova janela, indique o montante a creditar, clique em `Seguinte`{.action} e d
 ![order-prepaid-account](images/order-prepaid-account.png){.thumbnail}
 
 Na nota de encomenda que aparece, selecione o método de pagamento à sua escolha e efetue o pagamento da sua encomenda.
-<!-- CP-STEPS-END:prepaid-account-credit -->
 
 ## Quer saber mais?
 
