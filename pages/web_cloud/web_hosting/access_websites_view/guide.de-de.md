@@ -1,7 +1,7 @@
 ---
 title: "Alle Ihre Websites im OVHcloud Kundencenter anzeigen und verwalten"
 excerpt: "Erfahren Sie hier, wie Sie alle Ihre Websites über das OVHcloud Kundencenter anzeigen und verwalten"
-updated: 2026-04-22
+updated: 2026-05-04
 ---
 
 ## Ziel

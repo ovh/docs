@@ -1,7 +1,7 @@
 ---
 title: "Hosting Web - Ambiente, versione PHP, .ovhconfig"
 excerpt: "Questa guida ti mostra come modificare ambiente di esecuzione, versione PHP, firewall applicativo, motore, modalità e .ovhconfig di un hosting Web"
-updated: 2026-04-22
+updated: 2026-05-04
 ---
 
 <style>
@@ -147,6 +147,8 @@ Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **2** pa
 > **Passaggio 1**
 >>
 >> Accedi alla pagina [Hosting](/links/control-panel/web-hosting), poi seleziona l’hosting Web interessato.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
 > **Passaggio 2**
 >>

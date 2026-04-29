@@ -1,7 +1,7 @@
 ---
 title: "Casos de uso - Como alterar o domínio de um site existente"
 excerpt: "Descubra como alterar o nome de domínio de um site existente"
-updated: 2026-04-22
+updated: 2026-05-04
 ---
 
 ## Objetivo
@@ -57,6 +57,8 @@ Para ser bem-sucedida na etapa 1, é necessário preencher várias condições:
 > **Etapa 1**
 >>
 >> Aceda à página [Alojamentos](/links/control-panel/web-hosting) e escolha o alojamento web em causa.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
 > **Etapa 2**
 >>

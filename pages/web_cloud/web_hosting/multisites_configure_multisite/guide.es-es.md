@@ -1,7 +1,7 @@
 ---
 title: 'Compartir su alojamiento entre varios sitios web'
 excerpt: 'Descubra cómo alojar diferentes sitios web en su oferta de alojamiento web'
-updated: 2026-04-22
+updated: 2026-05-04
 ---
 
 <style>
@@ -278,7 +278,7 @@ Haga clic en las fichas siguientes para ver cada una de las **7** etapas.
 >>
 >> Marque la opción `Contratar un nuevo dominio`{.action} y haga clic en `Continuar`{.action}.
 >>
->> ![Add external domain](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/add-a-domain-or-subdomain-new-step-1.png){.thumbnail}
+>> ![Add external domain](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/add-a-domain-or-sub-domain-new-step-1.png){.thumbnail}
 >>
 > **Etapa 5**
 >>

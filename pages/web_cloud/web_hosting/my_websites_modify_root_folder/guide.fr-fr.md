@@ -1,7 +1,7 @@
 ---
 title: "Comment modifier le dossier racine d'un site web existant ?"
 excerpt: "Découvrez comment modifier le dossier racine déclaré pour un site web déjà existant sur votre hébergement web depuis votre espace client OVHcloud"
-updated: 2026-04-22
+updated: 2026-05-04
 ---
 
 ## Objectif
@@ -17,7 +17,9 @@ En utilisant vos services, vous pouvez être amené à :
 **Découvrez comment modifier le dossier racine déclaré pour un site web déjà existant sur votre hébergement web depuis votre espace client OVHcloud.**
 
 > [!primary]
-> Si vous n'avez pas encore créé le site web concerné sur votre hébergement web, consultez **directement** [notre guide sur le multisite](/pages/web_cloud/web_hosting/multisites_configure_multisite).
+> Cette procédure s'applique à la [nouvelle version de l'espace client OVHcloud](/links/control-panel-ovhcloud), actuellement disponible en bêta. Pour la suivre, basculez vers cette interface depuis votre espace client habituel.
+>
+> Si vous n'avez pas encore créé le site web concerné sur votre hébergement web, consultez **directement** [ce guide](/pages/web_cloud/web_hosting/multisites_configure_multisite).
 >
 > Si votre site web dispose d'une configuration avec Git, consultez préalablement notre guide « [Configurer et utiliser Git avec son hébergement web OVHcloud](/pages/web_cloud/web_hosting/git_integration_webhosting) » pour supprimer l'association avec Git **avant** de poursuivre. En effet, la modification du dossier racine déclaré pour un site web est indisponible si votre site web est configuré avec Git. Si tel était le cas, le changement de dossier racine perturberait l'association avec Git.
 
@@ -31,8 +33,8 @@ En utilisant vos services, vous pouvez être amené à :
 
 ### Accès à l'espace client OVHcloud
 
-- **Lien direct :** [Hébergements](/links/control-panel/web-hosting)
-- **Pour accéder à vos services :** `Web Cloud`{.action} > `Hébergements`{.action} > Sélectionnez votre hébergement web
+- **Lien direct :** [Hébergements](/links/control-panel/web-hosting-sites)
+- **Pour accéder à vos services :** `Web Cloud`{.action} > `Hébergements`{.action} > `Sites`{.action} > Sélectionnez votre hébergement web
 
 ---
 <!-- CP-NAV-END:web-hosting -->
@@ -59,19 +61,19 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4*
 > [!tabs]
 > **Étape 1**
 >>
->> Accédez à la page [Hébergements](/links/control-panel/web-hosting), puis choisissez l'hébergement web concerné.
+>> Accédez à la page [Hébergements](/links/control-panel/web-hosting-sites), puis choisissez l'hébergement web concerné.
 >>
->> ![Hébergements](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>> ![Hébergements](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-sites.png){.thumbnail}
 >>
 > **Étape 2**
 >>
 >> Sur la page qui s'affiche, cliquez sur l'onglet `Mes sites`{.action}.
 >>
->> ![Mes sites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites.png){.thumbnail}
+>> ![Mes sites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-sites.png){.thumbnail}
 >>
 > **Étape 3**
 >>
->> Dans le tableau qui apparaît, cliquez sur le bouton `⁝`{.action} situé à droite du site web concerné, puis sur `Modifier un site`{.action}.
+>> Dans le tableau qui apparaît, cliquez sur le bouton `⁝`{.action} situé à droite du site web concerné, puis sur `Modifier le site`{.action}.
 >>
 >> ![Options du site](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/website-options.png){.thumbnail}
 >>

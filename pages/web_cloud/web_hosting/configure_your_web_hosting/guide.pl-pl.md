@@ -1,7 +1,7 @@
 ---
 title: "Hosting WWW - Środowisko, wersja PHP, .ovhconfig"
 excerpt: "Dowiedz się, jak zmienić środowisko uruchomieniowe, wersję PHP, zaporę aplikacyjną, silnik, tryb i .ovhconfig na hostingu WWW"
-updated: 2026-04-22
+updated: 2026-05-04
 ---
 
 <style>
@@ -147,6 +147,8 @@ Kliknij poniższe zakładki, aby wyświetlić kolejne **2** kroki.
 > **Krok 1**
 >>
 >> Przejdź na stronę [Hosting](/links/control-panel/web-hosting), następnie wybierz odpowiedni hosting.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
 > **Krok 2**
 >>

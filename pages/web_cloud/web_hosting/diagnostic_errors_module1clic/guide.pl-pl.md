@@ -1,7 +1,7 @@
 ---
 title: "Rozwiąż najczęstsze błędy związane z modułami za pomocą 1 kliknięcia"
 excerpt: "Dowiedz się, jak za pomocą 1 kliknięcia zdiagnozować najczęstsze przypadki błędów związane z tworzeniem modułów"
-updated: 2026-04-22
+updated: 2026-05-04
 ---
 
 <style>
@@ -107,6 +107,8 @@ Kliknij poniższe zakładki, aby wyświetlić kolejne **2** kroki.
 >>
 >> Przejdź na stronę [Hosting](/links/control-panel/web-hosting), następnie wybierz odpowiedni hosting.
 >>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
 > **Krok 2**
 >>
 >> Kliknij zakładkę `Bazy danych`{.action}, następnie `Działania`{.action}, aby zamówić dodatkową bazę danych:
@@ -137,6 +139,8 @@ Kliknij poniższe zakładki, aby wyświetlić kolejne **2** kroki.
 >>
 >> Przejdź na stronę [Hosting](/links/control-panel/web-hosting), następnie wybierz odpowiedni hosting.
 >>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
 > **Krok 2**
 >>
 >> W sekcji `Abonament` - `Oferta` kliknij przycisk `...`{.action} i następnie `Zmień ofertę`{.action}:
@@ -163,6 +167,8 @@ Aby usunąć bazę danych, kliknij poniższe zakładki, aby wyświetlić kolejne
 > **Krok 1**
 >>
 >> Przejdź na stronę [Hosting](/links/control-panel/web-hosting), następnie wybierz odpowiedni hosting.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
 > **Krok 2**
 >>
@@ -288,6 +294,8 @@ Kliknij poniższe zakładki, aby wyświetlić kolejne **2** kroki.
 >>
 >> Przejdź na stronę [Hosting](/links/control-panel/web-hosting), następnie wybierz odpowiedni hosting.
 >>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
 > **Krok 2**
 >>
 >> W sekcji `Abonament` - `Usługa` kliknij przycisk `...`{.action} i następnie `Zmień ofertę`{.action}:
@@ -315,6 +323,8 @@ Usuń następnie "moduł za 1 kliknięciem". W tym celu kliknij poniższe zakła
 > **Krok 1**
 >>
 >> Przejdź na stronę [Hosting](/links/control-panel/web-hosting), następnie wybierz odpowiedni hosting.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
 > **Krok 2**
 >>
@@ -381,6 +391,8 @@ Aby odnaleźć nazwę Twojego serwera baz danych, kliknij poniższe zakładki, a
 >>
 >> Przejdź na stronę [Web Cloud Databases](/links/control-panel/web-cloud-databases), następnie wybierz odpowiedni serwer baz danych.
 >>
+>> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases.png){.thumbnail}
+>>
 > **Krok 2**
 >>
 >> Nazwa serwera, której chcesz użyć jest wyświetlana w ramce `Informacje na temat połączenia`, podsekcja `SQL`, pod słowem `Nazwa hosta`.
@@ -398,6 +410,8 @@ Kliknij poniższe zakładki, aby wyświetlić kolejne **2** kroki.
 > **Krok 1**
 >>
 >> Przejdź na stronę [Hosting](/links/control-panel/web-hosting), następnie wybierz odpowiedni hosting.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
 > **Krok 2**
 >>

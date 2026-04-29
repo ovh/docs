@@ -1,7 +1,7 @@
 ---
 title: "Como verificar a associação 'nome de domínio / site web'?"
 excerpt: "Utilize a nossa ferramenta de diagnóstico para verificar que o seu nome de domínio ou subdomínio está bem declarado com o seu site web no seu alojamento web"
-updated: 2026-04-22
+updated: 2026-05-04
 ---
 
 <style>
@@ -89,7 +89,7 @@ Clique nos separadores abaixo para visualizar cada uma das **4** etapas.
 
 /// details | A/AAAA verde
 
-![A and AAAA green](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/diagnostic-green-info.png){.thumbnail}
+![A and AAAA green](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/diagnostic-green-info.png){.thumbnail}
 
 Quando o ícone `A/AAAA` é verde na coluna `Diagnóstico`, isso significa que o registo **A** (para endereços IPv4) e/ou o registo **AAAA** (para endereços IPv6) do seu nome de domínio aponta corretamente para o endereço IP do seu alojamento web. A configuração DNS do seu nome de domínio está, portanto, conforme para funcionar com o site web do seu alojamento web.
 
@@ -97,7 +97,7 @@ Quando o ícone `A/AAAA` é verde na coluna `Diagnóstico`, isso significa que o
 
 /// details | A/AAAA amarelo
 
-![A and AAAA yellow](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/diagnostic-yellow-info.png){.thumbnail}
+![A and AAAA yellow](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/diagnostic-yellow-info.png){.thumbnail}
 
 Quando o ícone `A/AAAA` é amarelo na coluna `Diagnóstico`, isso significa que o registo **A** (IPv4) e/ou **AAAA** (IPv6) do seu nome de domínio aponta para um endereço IP, mas que não é o do alojamento web a partir do qual está a consultar a coluna `Diagnóstico`.
 
@@ -107,7 +107,7 @@ Para resolver os problemas de ponteiro DNS do seu nome de domínio e assegurar-s
 
 /// details | A/AAAA cinzento
 
-![A and AAAA grey](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/diagnostic-grey-info.png){.thumbnail}
+![A and AAAA grey](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/diagnostic-grey-info.png){.thumbnail}
 
 Quando o ícone `A/AAAA` é cinzento na coluna `Diagnóstico`, isso significa que o nome de domínio não aponta atualmente para nenhum endereço IP e que nenhum registo **A** (IPv4) ou **AAAA** (IPv6) está configurado para este nome de domínio.
 

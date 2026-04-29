@@ -1,7 +1,7 @@
 ---
 title: "Mettere online un sito Internet su un hosting Web"
 excerpt: "Questa guide ti mostra come pubblicare un sito su un hosting Web OVHcloud"
-updated: 2026-04-22
+updated: 2026-05-04
 ---
 
 ## Obiettivo
@@ -124,6 +124,8 @@ Per verificare la cartella in cui deve essere pubblicato il sito web, clicca sul
 >>
 >> Accedi alla pagina [Hosting](/links/control-panel/web-hosting) e seleziona l'hosting Web interessato.
 >>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
 > **Passaggio 2**
 >>
 >> Seleziona la scheda `I miei siti`{.action}. Nella tabella che appare, per il sito web desiderato, guarda la `Cartella di root`{.action} che appare.
@@ -167,6 +169,8 @@ Per creare un nuovo database in OVHcloud, clicca sulle schede qui sotto per visu
 >>
 >> Accedi alla pagina [Hosting](/links/control-panel/web-hosting) e seleziona l'hosting Web interessato.
 >>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
 > **Passaggio 2**
 >>
 >> Seleziona la scheda `Database`{.action}.
@@ -191,6 +195,8 @@ L’importazione può essere effettuata in diversi modi. OVHcloud ne propone una
 > **Passaggio 1**
 >>
 >> Accedi alla pagina [Hosting](/links/control-panel/web-hosting) e seleziona l’hosting Web interessato.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
 > **Passaggio 2**
 >>

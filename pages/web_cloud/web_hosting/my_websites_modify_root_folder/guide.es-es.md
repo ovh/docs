@@ -1,7 +1,7 @@
 ---
 title: "¿Cómo modificar la carpeta raíz de un sitio web existente?"
 excerpt: "Descubra cómo modificar la carpeta raíz declarada para un sitio web ya existente en su alojamiento web desde su área de cliente de OVHcloud"
-updated: 2026-04-22
+updated: 2026-05-04
 ---
 
 ## Objetivo
@@ -17,7 +17,9 @@ Al utilizar sus servicios, puede necesitar:
 **Descubra cómo modificar la carpeta raíz declarada para un sitio web ya existente en su alojamiento web desde su área de cliente de OVHcloud.**
 
 > [!primary]
-> Si aún no ha creado el sitio web en su alojamiento web, consulte **directamente** nuestra guía sobre [Alojar varios sitios web en un mismo hosting](/pages/web_cloud/web_hosting/multisites_configure_multisite).
+> Este procedimiento se aplica a la [nueva versión del área de cliente de OVHcloud](/links/control-panel-ovhcloud), actualmente disponible en beta. Para seguirlo, cambie a esta interfaz desde su área de cliente habitual.
+>
+> Si aún no ha creado el sitio web en su alojamiento web, consulte **directamente** [esta guía](/pages/web_cloud/web_hosting/multisites_configure_multisite).
 >
 > Si su sitio web dispone de una configuración con Git, consulte previamente nuestra guía "[Configurar y utilizar Git con un alojamiento web de OVHcloud](/pages/web_cloud/web_hosting/git_integration_webhosting)" para eliminar la asociación con Git **antes** de continuar. La modificación de la carpeta raíz no está disponible si su sitio web está configurado con Git. De ser así, el cambio de carpeta raíz alteraría la asociación con Git.
 
@@ -31,8 +33,8 @@ Al utilizar sus servicios, puede necesitar:
 
 ### Acceso al área de cliente de OVHcloud
 
-- **Enlace directo:** [Alojamientos](/links/control-panel/web-hosting)
-- **Ruta de navegación:** `Web Cloud`{.action} > `Alojamientos`{.action} > Seleccione su alojamiento web
+- **Enlace directo:** [Alojamientos](/links/control-panel/web-hosting-sites)
+- **Ruta de navegación:** `Web Cloud`{.action} > `Alojamientos`{.action} > `Sitios`{.action} > Seleccione su alojamiento web
 
 ---
 <!-- CP-NAV-END:web-hosting -->
@@ -59,19 +61,19 @@ Haga clic en las fichas siguientes para ver cada una de las **4** etapas.
 > [!tabs]
 > **Etapa 1**
 >>
->> Acceda a la página [Alojamientos](/links/control-panel/web-hosting) y seleccione el alojamiento web correspondiente.
+>> Acceda a la página [Alojamientos](/links/control-panel/web-hosting-sites) y seleccione el alojamiento web correspondiente.
 >>
->> ![Alojamientos](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>> ![Alojamientos](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-sites.png){.thumbnail}
 >>
 > **Etapa 2**
 >>
 >> En la nueva página, haga clic en la pestaña `Mis sitios`{.action}.
 >>
->> ![Mis sitios](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites.png){.thumbnail}
+>> ![Mis sitios](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-sites.png){.thumbnail}
 >>
 > **Etapa 3**
 >>
->> En la tabla que aparece, haga clic en el botón `⁝`{.action} situado a la derecha del sitio web correspondiente y, a continuación, en `Editar un sitio`{.action}.
+>> En la tabla que aparece, haga clic en el botón `⁝`{.action} situado a la derecha del sitio web correspondiente y, a continuación, en `Editar sitio`{.action}.
 >>
 >> ![Opciones del sitio](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/website-options.png){.thumbnail}
 >>

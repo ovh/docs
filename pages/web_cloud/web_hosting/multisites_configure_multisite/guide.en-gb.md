@@ -1,7 +1,7 @@
 ---
 title: 'Hosting multiple websites on your Web Hosting plan'
 excerpt: 'Find out how to host several websites on your Web Hosting plan'
-updated: 2026-04-22
+updated: 2026-05-04
 ---
 
 <style>
@@ -278,7 +278,7 @@ Click on the tabs below to view each of the **5** steps.
 >>
 >> Tick the `Order a new domain`{.action} option and click on `Continue`{.action}.
 >>
->> ![Add external domain](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/add-a-domain-or-subdomain-new-step-1.png){.thumbnail}
+>> ![Add external domain](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/add-a-domain-or-sub-domain-new-step-1.png){.thumbnail}
 >>
 > **Step 5**
 >>

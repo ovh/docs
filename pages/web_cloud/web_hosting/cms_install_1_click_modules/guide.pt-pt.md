@@ -1,7 +1,7 @@
 ---
 title: "Instalar o seu website com um 'módulo 1 clique' (CMS)"
 excerpt: "Descubra como instalar o seu website através dos nossos 'módulos 1 clique'"
-updated: 2026-04-22
+updated: 2026-05-04
 ---
 
 <style>
@@ -92,6 +92,8 @@ Clique nos separadores abaixo para visualizar cada uma das **4** etapas.
 >>
 >> Aceda à página [Alojamentos](/links/control-panel/web-hosting) e selecione o alojamento web correspondente.
 >>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
 > **Etapa 2**
 >>
 >> Na página que se abre, clique no separador `Modulos "1 clique"`{.action}. Encontrará os eventuais "módulos 1 clique" já instalados. Poderá gerir os seus "módulos 1 clique" e instalar novos módulos.
@@ -143,6 +145,8 @@ Clique nos separadores abaixo para visualizar cada uma das **8** etapas.
 > **Etapa 1**
 >>
 >> Aceda à página [Alojamentos](/links/control-panel/web-hosting) e selecione o alojamento web correspondente.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
 > **Etapa 2**
 >>

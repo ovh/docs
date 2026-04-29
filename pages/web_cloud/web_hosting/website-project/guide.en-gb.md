@@ -1,7 +1,7 @@
 ---
 title: "How to create a website - Carrying out your project in 5 steps"
 excerpt: "Find out how to define your project, publish your website and create email addresses with your web hosting solution"
-updated: 2026-04-22
+updated: 2026-05-04
 ---
 
 <style>

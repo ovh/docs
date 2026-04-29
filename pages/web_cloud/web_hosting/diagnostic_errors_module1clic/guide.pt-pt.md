@@ -1,7 +1,7 @@
 ---
 title: "Resolver os erros mais frequentes associados aos módulos 1 clique"
 excerpt: "Saiba como diagnosticar os casos mais comuns de erros associados à criação de módulos 1 clique"
-updated: 2026-04-22
+updated: 2026-05-04
 ---
 
 <style>
@@ -109,6 +109,8 @@ Clique nos separadores abaixo para visualizar cada uma das **2** etapas.
 >>
 >> Aceda à página [Alojamentos](/links/control-panel/web-hosting) e escolha o alojamento web correspondente.
 >>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
 > **Etapa 2**
 >>
 >> Clique no separador `Bases de dados`{.action} e, a seguir, em `Ações`{.action} para encomendar uma base de dados suplementar:
@@ -139,6 +141,8 @@ Clique nos separadores abaixo para visualizar cada uma das **2** etapas.
 >>
 >> Aceda à página [Alojamentos](/links/control-panel/web-hosting) e escolha o alojamento web correspondente.
 >>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
 > **Etapa 2**
 >>
 >> Na parte `Subscrição` - `Oferta`, clique no botão `...`{.action} e depois em `Mudar de oferta`{.action}:
@@ -165,6 +169,8 @@ Para eliminar uma base de dados, clique nos separadores abaixo para visualizar c
 > **Etapa 1**
 >>
 >> Aceda à página [Alojamentos](/links/control-panel/web-hosting) e escolha o alojamento web correspondente.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
 > **Etapa 2**
 >>
@@ -290,6 +296,8 @@ Clique nos separadores abaixo para visualizar cada uma das **2** etapas.
 >>
 >> Aceda à página [Alojamentos](/links/control-panel/web-hosting) e escolha o alojamento web correspondente.
 >>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
 > **Etapa 2**
 >>
 >> Na parte `Subscrição` - `Oferta`, clique no botão `...`{.action} e depois em `Mudar de oferta`{.action}:
@@ -317,6 +325,8 @@ Elimine o seu "módulo em 1 clique". Para isso, clique nos separadores abaixo pa
 > **Etapa 1**
 >>
 >> Aceda à página [Alojamentos](/links/control-panel/web-hosting) e escolha o alojamento web correspondente.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
 > **Etapa 2**
 >>
@@ -383,6 +393,8 @@ Para encontrar o nome do servidor de bases de dados, clique nos separadores abai
 >>
 >> Aceda à página [Web Cloud Databases](/links/control-panel/web-cloud-databases) e selecione o servidor de bases de dados em causa.
 >>
+>> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases.png){.thumbnail}
+>>
 > **Etapa 2**
 >>
 >> O nome do servidor a utilizar é indicado no quadro `Informações da ligação`, na subparte `SQL`, sob a menção `Nome do host`.
@@ -400,6 +412,8 @@ Clique nos separadores abaixo para visualizar cada uma das **2** etapas.
 > **Etapa 1**
 >>
 >> Aceda à página [Alojamentos](/links/control-panel/web-hosting) e escolha o alojamento web correspondente.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
 > **Etapa 2**
 >>

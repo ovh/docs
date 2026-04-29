@@ -1,7 +1,7 @@
 ---
 title: "Przewodnik dotyczący usługi CDN na hostingu www"
 excerpt: "Dowiedz się, jak ulepszyć stronę WWW, przyspieszając jej ładowanie w hostingu WWW dzięki usłudze CDN"
-updated: 2026-04-22
+updated: 2026-05-04
 ---
 
 ## Wprowadzenie 
@@ -50,6 +50,8 @@ Kliknij poniższe zakładki, aby wyświetlić kolejne **2** kroki.
 > **Krok 1**
 >>
 >> Przejdź na stronę [Hosting](/links/control-panel/web-hosting), następnie wybierz odpowiedni hosting.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
 > **Krok 2**
 >>
@@ -545,6 +547,8 @@ Kliknij poniższe zakładki, aby wyświetlić kolejne **3** kroki.
 >>
 >> Przejdź na stronę [Hosting](/links/control-panel/web-hosting), następnie wybierz odpowiedni hosting.
 >>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
 > **Krok 2**
 >>
 >> Znajdź sekcję **Opcja CDN**. Kliknij `...`{.action} po prawej stronie, a następnie `Rezygnacja z GeoCache`{.action}.
@@ -579,7 +583,7 @@ Set-Cookie: SERVERID12345=123456; path=/; max-age=900
 Vary: Accept-Encoding
 X-Request-ID: 123456789
 X-CDN-Pop: rbx1
-X-CDN-Pop-IP: 00.111.22.333/44
+X-CDN-Pop-IP: 203.0.113.0/44
 X-Cacheable: Cacheable
 Accept-Ranges: bytes
 Transfer-Encoding: chunked

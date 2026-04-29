@@ -1,7 +1,7 @@
 ---
 title: "Wie kann ich einen Domainnamen von einer bestehenden Website trennen?"
 excerpt: "Erfahren Sie, wie Sie einen Domainnamen oder eine Subdomain von einer bereits existierenden Website auf Ihrem Webhosting trennen können"
-updated: 2026-04-22
+updated: 2026-05-04
 ---
 
 ## Ziel

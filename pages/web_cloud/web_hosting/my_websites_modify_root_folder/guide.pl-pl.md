@@ -1,7 +1,7 @@
 ---
 title: "Jak zmienić katalog główny istniejącej strony WWW?"
 excerpt: "Dowiedz się, jak zmienić katalog główny zadeklarowany dla istniejącej strony WWW na hostingu za pomocą Panelu klienta OVHcloud"
-updated: 2026-04-22
+updated: 2026-05-04
 ---
 
 ## Wprowadzenie
@@ -17,7 +17,9 @@ Korzystając z usług, możesz potrzebować:
 **Dowiedz się, jak zmienić katalog główny zadeklarowany dla istniejącej strony WWW na hostingu za pomocą Panelu klienta OVHcloud.**
 
 > [!primary]
-> Jeśli nie utworzyłeś jeszcze danej strony WWW na hostingu, zapoznaj się **bezpośrednio** z naszym przewodnikiem [Instalacja kilku stron WWW na jednym hostingu](/pages/web_cloud/web_hosting/multisites_configure_multisite).
+> Ta procedura dotyczy [nowej wersji Panelu klienta OVHcloud](/links/control-panel-ovhcloud), obecnie dostępnej w wersji beta. Aby ją wykonać, przełącz się na ten interfejs z poziomu swojego zwykłego Panelu klienta.
+>
+> Jeśli nie utworzyłeś jeszcze danej strony WWW na hostingu, zapoznaj się **bezpośrednio** z [tym przewodnikiem](/pages/web_cloud/web_hosting/multisites_configure_multisite).
 >
 > Jeśli Twoja strona WWW jest skonfigurowana z Git, zapoznaj się najpierw z naszym przewodnikiem "[Konfiguracja i korzystanie z Git na hostingu OVHcloud](/pages/web_cloud/web_hosting/git_integration_webhosting)", aby usunąć powiązanie z Git **przed** kontynuowaniem. Zmiana katalogu głównego jest niedostępna, jeśli Twoja strona WWW jest skonfigurowana z Git. W przeciwnym razie zmiana katalogu głównego zakłóciłaby powiązanie z Git.
 
@@ -31,8 +33,8 @@ Korzystając z usług, możesz potrzebować:
 
 ### Dostęp do Panelu klienta OVHcloud
 
-- **Link bezpośredni:** [Hosting](/links/control-panel/web-hosting)
-- **Ścieżka nawigacji:** `Web Cloud`{.action} > `Hosting`{.action} > Wybierz hosting WWW
+- **Link bezpośredni:** [Hosting](/links/control-panel/web-hosting-sites)
+- **Ścieżka nawigacji:** `Web Cloud`{.action} > `Hosting`{.action} > `Strony`{.action} > Wybierz hosting WWW
 
 ---
 <!-- CP-NAV-END:web-hosting -->
@@ -59,15 +61,15 @@ Kliknij na poniższe karty, aby wyświetlić kolejno każdy z **4** kroków.
 > [!tabs]
 > **Krok 1**
 >>
->> Przejdź na stronę [Hosting](/links/control-panel/web-hosting) i wybierz odpowiedni hosting.
+>> Przejdź na stronę [Hosting](/links/control-panel/web-hosting-sites) i wybierz odpowiedni hosting.
 >>
->> ![Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>> ![Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-sites.png){.thumbnail}
 >>
 > **Krok 2**
 >>
 >> Na wyświetlonej stronie kliknij zakładkę `Moje strony`{.action}.
 >>
->> ![Moje strony](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites.png){.thumbnail}
+>> ![Moje strony](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-sites.png){.thumbnail}
 >>
 > **Krok 3**
 >>

@@ -1,7 +1,7 @@
 ---
 title: "Ihre Webseiten mit CDN beschleunigen"
 excerpt: "Diese Anleitung erklärt, wie Sie die Ladezeiten Ihres Webhostings mit der CDN-Option verbessern"
-updated: 2026-04-22
+updated: 2026-05-04
 ---
 
 ## Ziel 
@@ -50,6 +50,8 @@ Klicken Sie auf die Tabs, um die **2** Schritte anzuzeigen.
 > **Schritt 1**
 >>
 >> Gehen Sie auf die Seite [Hosting-Pakete](/links/control-panel/web-hosting), und wählen Sie das betreffende Webhosting aus.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
 > **Schritt 2**
 >>
@@ -545,6 +547,8 @@ Klicken Sie auf die Tabs, um die **3** Schritte anzuzeigen.
 >>
 >> Gehen Sie auf die Seite [Hosting-Pakete](/links/control-panel/web-hosting), und wählen Sie das betreffende Webhosting aus.
 >>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
 > **Schritt 2**
 >>
 >> Suchen Sie den Eintrag **CDN-Option**. Klicken Sie auf `...`{.action} rechts daneben und danach auf `CDN kündigen`{.action}.
@@ -579,7 +583,7 @@ Set-Cookie: SERVERID12345=123456; path=/; max-age=900
 Vary: Accept-Encoding
 X-Request-ID: 123456789
 X-CDN-Pop: rbx1
-X-CDN-Pop-IP: 00.111.22.333/44
+X-CDN-Pop-IP: 203.0.113.0/44
 X-Cacheable: Cacheable
 Accept-Ranges: bytes
 Transfer-Encoding: chunked

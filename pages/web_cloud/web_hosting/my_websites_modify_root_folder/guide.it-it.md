@@ -1,7 +1,7 @@
 ---
 title: "Come modificare la cartella root di un sito web esistente?"
 excerpt: "Scopri come modificare la cartella root dichiarata per un sito web già esistente sul tuo hosting web dallo Spazio Cliente OVHcloud"
-updated: 2026-04-22
+updated: 2026-05-04
 ---
 
 ## Obiettivo
@@ -17,7 +17,9 @@ Utilizzando i tuoi servizi, potresti aver bisogno di:
 **Scopri come modificare la cartella root dichiarata per un sito web già esistente sul tuo hosting web dallo Spazio Cliente OVHcloud.**
 
 > [!primary]
-> Se non hai ancora creato il sito web interessato sul tuo hosting web, consulta **direttamente** la nostra guida su [Ospitare più siti su uno stesso hosting](/pages/web_cloud/web_hosting/multisites_configure_multisite).
+> Questa procedura si applica alla [nuova versione dello Spazio Cliente OVHcloud](/links/control-panel-ovhcloud), attualmente disponibile in beta. Per seguirla, passa a questa interfaccia dal tuo Spazio Cliente abituale.
+>
+> Se non hai ancora creato il sito web interessato sul tuo hosting web, consulta **direttamente** [questa guida](/pages/web_cloud/web_hosting/multisites_configure_multisite).
 >
 > Se il tuo sito web dispone di una configurazione con Git, consulta preventivamente la nostra guida "[Configurare e utilizzare Git con un hosting Web OVHcloud](/pages/web_cloud/web_hosting/git_integration_webhosting)" per rimuovere l'associazione con Git **prima** di proseguire. La modifica della cartella root dichiarata per un sito web non è disponibile se il tuo sito web è configurato con Git. In tal caso, la modifica della cartella root comprometterebbe l'associazione con Git.
 
@@ -31,8 +33,8 @@ Utilizzando i tuoi servizi, potresti aver bisogno di:
 
 ### Accesso allo Spazio Cliente OVHcloud
 
-- **Link diretto:** [Hosting](/links/control-panel/web-hosting)
-- **Percorso di navigazione:** `Web Cloud`{.action} > `Hosting`{.action} > Seleziona il tuo hosting web
+- **Link diretto:** [Hosting](/links/control-panel/web-hosting-sites)
+- **Percorso di navigazione:** `Web Cloud`{.action} > `Hosting`{.action} > `Siti`{.action} > Seleziona il tuo hosting web
 
 ---
 <!-- CP-NAV-END:web-hosting -->
@@ -59,19 +61,19 @@ Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **4** pa
 > [!tabs]
 > **Passaggio 1**
 >>
->> Accedi alla pagina [Hosting](/links/control-panel/web-hosting) e seleziona l'hosting web interessato.
+>> Accedi alla pagina [Hosting](/links/control-panel/web-hosting-sites) e seleziona l'hosting web interessato.
 >>
->> ![Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>> ![Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-sites.png){.thumbnail}
 >>
 > **Passaggio 2**
 >>
 >> Nella pagina visualizzata, clicca sulla scheda `I miei siti`{.action}.
 >>
->> ![I miei siti](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites.png){.thumbnail}
+>> ![I miei siti](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-sites.png){.thumbnail}
 >>
 > **Passaggio 3**
 >>
->> Nella tabella che compare, clicca sul pulsante `⁝`{.action} situato a destra del sito web interessato, poi su `Modifica un sito`{.action}.
+>> Nella tabella che compare, clicca sul pulsante `⁝`{.action} situato a destra del sito web interessato, poi su `Modifica sito`{.action}.
 >>
 >> ![Opzioni del sito](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/website-options.png){.thumbnail}
 >>

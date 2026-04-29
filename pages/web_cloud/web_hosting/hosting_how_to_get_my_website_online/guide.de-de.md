@@ -1,7 +1,7 @@
 ---
 title: "Eine Website auf Ihrem Webhosting online stellen"
 excerpt: "So stellen Sie eine Website auf Ihrem OVHcloud Webhosting online"
-updated: 2026-04-22
+updated: 2026-05-04
 ---
 
 ## Ziel 
@@ -124,6 +124,8 @@ Um den Ordner zu prüfen, in den die Website veröffentlicht werden muss, klicke
 >>
 >> Gehen Sie auf die Seite [Hosting-Pakete](/links/control-panel/web-hosting) und wählen Sie das betreffende Webhosting aus.
 >>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
 > **Schritt 2**
 >>
 >> Navigieren Sie zum Tab `Meine Seiten`{.action}. Im angezeigten Tabellenansicht für die gewünschte Website, prüfen Sie den `Wurzelverzeichnis`{.action}, der angezeigt wird.
@@ -167,6 +169,8 @@ Wenn Sie eine neue Datenbank bei OVHcloud erstellen möchten, klicken Sie auf di
 >>
 >> Gehen Sie auf die Seite [Hosting-Pakete](/links/control-panel/web-hosting) und wählen Sie das betreffende Webhosting aus.
 >>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
 > **Schritt 2**
 >>
 >> Gehen Sie auf den Tab `Datenbanken`{.action}.
@@ -191,6 +195,8 @@ Für den Import gibt es mehrere Möglichkeiten, OVHcloud bietet einen solchen ü
 > **Schritt 1**
 >>
 >> Gehen Sie auf die Seite [Hosting-Pakete](/links/control-panel/web-hosting) und wählen Sie das betreffende Webhosting aus.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
 > **Schritt 2**
 >>

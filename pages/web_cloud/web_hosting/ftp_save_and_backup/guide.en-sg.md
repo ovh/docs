@@ -1,7 +1,7 @@
 ---
 title: "Restoring your Web Hosting plan’s storage space"
 excerpt: "Find out how to restore a file or an entire storage space from your Web Hosting plan"
-updated: 2026-04-22
+updated: 2026-05-04
 ---
 
 ## Objective

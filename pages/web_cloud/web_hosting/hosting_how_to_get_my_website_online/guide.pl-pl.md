@@ -1,7 +1,7 @@
 ---
 title: "Uruchomienie strony WWW na hostingu"
 description: "Dowiedz się, jak uruchomić stronę WWW na Twoim hostingu OVHcloud"
-updated: 2026-04-22
+updated: 2026-05-04
 ---
 
 ## Wprowadzenie 
@@ -126,6 +126,8 @@ Aby sprawdzić folder, w którym należy opublikować stronę internetową, klik
 >>
 >> Przejdź na stronę [Hosting](/links/control-panel/web-hosting), następnie wybierz odpowiedni hosting.
 >>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
 > **Krok 2**
 >>
 >> Przejdź do karty `Moje strony`{.action}. W wyświetlonej tabeli, dla wybranej strony internetowej, sprawdź `Katalog główny`{.action}, który się pokazuje.
@@ -169,6 +171,8 @@ Jeśli chcesz utworzyć nową bazę danych w OVHcloud, kliknij poniższe zakład
 >>
 >> Przejdź na stronę [Hosting](/links/control-panel/web-hosting), następnie wybierz odpowiedni hosting.
 >>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
 > **Krok 2**
 >>
 >> Przejdź do zakładki `Baza danych`{.action}.
@@ -193,6 +197,8 @@ Istnieje kilka metod importu. OVHcloud oferuje jedną z nich w Panelu klienta. K
 > **Krok 1**
 >>
 >> Przejdź na stronę [Hosting](/links/control-panel/web-hosting), następnie wybierz odpowiedni hosting.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
 > **Krok 2**
 >>

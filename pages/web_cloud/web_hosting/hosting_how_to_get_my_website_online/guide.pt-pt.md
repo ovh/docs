@@ -1,7 +1,7 @@
 ---
 title: "Publicar um site num alojamento web"
 excerpt: "Saiba como publicar um site no seu alojamento web da OVHcloud"
-updated: 2026-04-22
+updated: 2026-05-04
 ---
 
 ## Sumário
@@ -126,6 +126,8 @@ Para verificar a pasta em que o site web deve ser publicado, clique nos separado
 >>
 >> Aceda à página [Alojamentos](/links/control-panel/web-hosting) e escolha o alojamento web em causa.
 >>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
 > **Etapa 2**
 >>
 >> Aceda ao separador `Meus sites`{.action}. Na tabela que aparece, para o site web desejado, veja o `Pasta raiz`{.action} que aparece.
@@ -169,6 +171,8 @@ Se pretende criar uma nova base de dados na OVHcloud, clique nos separadores aba
 >>
 >> Aceda à página [Alojamentos](/links/control-panel/web-hosting) e escolha o alojamento web em causa.
 >>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
 > **Etapa 2**
 >>
 >> Clique no separador `Base de dados`{.action}.
@@ -193,6 +197,8 @@ A importação pode ser feita de várias formas. A OVHcloud disponibiliza uma at
 > **Etapa 1**
 >>
 >> Aceda à página [Alojamentos](/links/control-panel/web-hosting) e escolha o alojamento web em causa.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
 > **Etapa 2**
 >>

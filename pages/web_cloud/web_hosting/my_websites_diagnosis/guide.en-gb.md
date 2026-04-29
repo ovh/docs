@@ -1,7 +1,7 @@
 ---
 title: "How to check the 'domain name / website' association"
 excerpt: "Use our diagnostic tool to verify that your domain name or subdomain is correctly declared with your website on your web hosting"
-updated: 2026-04-22
+updated: 2026-05-04
 ---
 
 <style>
@@ -89,7 +89,7 @@ Click on the tabs below to view each of the **4** steps.
 
 /// details | Green A/AAAA
 
-![A and AAAA green](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/diagnostic-green-info.png){.thumbnail}
+![A and AAAA green](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/diagnostic-green-info.png){.thumbnail}
 
 When the `A/AAAA` icon is green in the `Diagnostic` column, it means that the **A** record (for IPv4 addresses) and/or the **AAAA** record (for IPv6 addresses) of your domain name is correctly pointing to the IP address of your web hosting. The DNS configuration of your domain name is therefore correct to work with the website on your web hosting.
 
@@ -97,7 +97,7 @@ When the `A/AAAA` icon is green in the `Diagnostic` column, it means that the **
 
 /// details | Yellow A/AAAA
 
-![A and AAAA yellow](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/diagnostic-yellow-info.png){.thumbnail}
+![A and AAAA yellow](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/diagnostic-yellow-info.png){.thumbnail}
 
 When the `A/AAAA` icon is yellow in the `Diagnostic` column, it means that the **A** record (IPv4) and/or **AAAA** record (IPv6) of your domain name is pointing to an IP address, but it is not the one of the web hosting from which you are viewing the `Diagnostic` column.
 
@@ -107,7 +107,7 @@ To resolve DNS issues with your domain name and ensure it correctly points to th
 
 /// details | Grey A/AAAA
 
-![A and AAAA grey](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/diagnostic-grey-info.png){.thumbnail}
+![A and AAAA grey](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/diagnostic-grey-info.png){.thumbnail}
 
 When the `A/AAAA` icon is grey in the `Diagnostic` column, it means that the domain name is not currently pointing to any IP address and no **A** (IPv4) or **AAAA** (IPv6) records are configured for this domain name.
 

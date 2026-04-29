@@ -1,7 +1,7 @@
 ---
 title: "Troubleshooting common 1-click module errors"
 excerpt: "Find out how to diagnose the most common cases of 1-click module creation errors"
-updated: 2026-04-22
+updated: 2026-05-04
 ---
 
 <style>
@@ -107,6 +107,8 @@ Click on the tabs below to view each of the **2** steps.
 >>
 >> Go to the [Hosting plans](/links/control-panel/web-hosting) page, then select the web hosting plan concerned.
 >>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
 > **Step 2**
 >>
 >> Click on the `Databases`{.action} tab, then on `Actions`{.action} to order an additional database:
@@ -137,6 +139,8 @@ Click on the tabs below to view each of the **2** steps.
 >>
 >> Go to the [Hosting plans](/links/control-panel/web-hosting) page, then select the web hosting plan concerned.
 >>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
 > **Step 2**
 >>
 >> In the `Plan` - `Solution` section, click the `...`{.action} button then `Change plan`{.action}:
@@ -163,6 +167,8 @@ To delete a database, click on the tabs below to view each of the **2** steps.
 > **Step 1**
 >>
 >> Go to the [Hosting plans](/links/control-panel/web-hosting) page, then select the web hosting plan concerned.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
 > **Step 2**
 >>
@@ -288,6 +294,8 @@ Click on the tabs below to view each of the **2** steps.
 >>
 >> Go to the [Hosting plans](/links/control-panel/web-hosting) page, then select the web hosting plan concerned.
 >>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
 > **Step 2**
 >>
 >> In the `Plan` - `Solution` section, click the `...`{.action} button then `Change plan`{.action}:
@@ -315,6 +323,8 @@ Then delete your 1-click module. To do this, click on the tabs below to view eac
 > **Step 1**
 >>
 >> Go to the [Hosting plans](/links/control-panel/web-hosting) page, then select the web hosting plan concerned.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
 > **Step 2**
 >>
@@ -381,6 +391,8 @@ To find the name of your database server, click on the tabs below to view each o
 >>
 >> Go to the [Web Cloud Databases](/links/control-panel/web-cloud-databases) page, then select the database server concerned.
 >>
+>> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases.png){.thumbnail}
+>>
 > **Step 2**
 >>
 >> The name of the server to use is listed in the `Login information` box, in the `SQL` subsection, under `Host name`.
@@ -398,6 +410,8 @@ Click on the tabs below to view each of the **2** steps.
 > **Step 1**
 >>
 >> Go to the [Hosting plans](/links/control-panel/web-hosting) page, then select the web hosting plan concerned.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
 > **Step 2**
 >>

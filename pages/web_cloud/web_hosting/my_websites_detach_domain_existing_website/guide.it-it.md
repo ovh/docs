@@ -1,7 +1,7 @@
 ---
 title: "Come scollegare un dominio da un sito web esistente"
 excerpt: "Questa guida ti mostra come scollegare un nome di dominio o un sottodominio da un sito web già esistente sul tuo hosting web"
-updated: 2026-04-22
+updated: 2026-05-04
 ---
 
 ## Obiettivo

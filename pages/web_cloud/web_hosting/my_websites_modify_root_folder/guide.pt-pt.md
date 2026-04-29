@@ -1,7 +1,7 @@
 ---
 title: "Como alterar a pasta raiz de um website existente?"
 excerpt: "Saiba como alterar a pasta raiz declarada para um website já existente no seu alojamento web a partir da Área de Cliente OVHcloud"
-updated: 2026-04-22
+updated: 2026-05-04
 ---
 
 ## Objetivo
@@ -17,7 +17,9 @@ Ao utilizar os seus serviços, poderá necessitar de:
 **Saiba como alterar a pasta raiz declarada para um website já existente no seu alojamento web a partir da Área de Cliente OVHcloud.**
 
 > [!primary]
-> Se ainda não criou o website em questão no seu alojamento web, consulte **diretamente** o nosso guia sobre [Partilhar o alojamento entre vários sites](/pages/web_cloud/web_hosting/multisites_configure_multisite).
+> Este procedimento aplica-se à [nova versão da Área de Cliente OVHcloud](/links/control-panel-ovhcloud), atualmente disponível em beta. Para o seguir, mude para esta interface a partir da sua Área de Cliente habitual.
+>
+> Se ainda não criou o website em questão no seu alojamento web, consulte **diretamente** [este guia](/pages/web_cloud/web_hosting/multisites_configure_multisite).
 >
 > Se o seu website tem uma configuração com Git, consulte previamente o nosso guia "[Configurar e utilizar o Git com um alojamento web OVHcloud](/pages/web_cloud/web_hosting/git_integration_webhosting)" para eliminar a associação com Git **antes** de prosseguir. A modificação da pasta raiz declarada para um website não está disponível se o seu website estiver configurado com Git. Caso contrário, a alteração da pasta raiz perturbaria a associação com Git.
 
@@ -31,8 +33,8 @@ Ao utilizar os seus serviços, poderá necessitar de:
 
 ### Acesso à Área de Cliente OVHcloud
 
-- **Ligação direta:** [Alojamentos](/links/control-panel/web-hosting)
-- **Caminho de navegação:** `Web Cloud`{.action} > `Alojamentos`{.action} > Selecione o seu alojamento web
+- **Ligação direta:** [Alojamentos](/links/control-panel/web-hosting-sites)
+- **Caminho de navegação:** `Web Cloud`{.action} > `Alojamentos`{.action} > `Sites`{.action} > Selecione o seu alojamento web
 
 ---
 <!-- CP-NAV-END:web-hosting -->
@@ -59,19 +61,19 @@ Clique nos separadores abaixo para visualizar cada uma das **4** etapas.
 > [!tabs]
 > **Etapa 1**
 >>
->> Aceda à página [Alojamentos](/links/control-panel/web-hosting) e escolha o alojamento web correspondente.
+>> Aceda à página [Alojamentos](/links/control-panel/web-hosting-sites) e escolha o alojamento web correspondente.
 >>
->> ![Alojamentos](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>> ![Alojamentos](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-sites.png){.thumbnail}
 >>
 > **Etapa 2**
 >>
 >> Na página que se abrir, clique no separador `Meus sites`{.action}.
 >>
->> ![Meus sites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites.png){.thumbnail}
+>> ![Meus sites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-sites.png){.thumbnail}
 >>
 > **Etapa 3**
 >>
->> No quadro que aparece, clique no botão `⁝`{.action} situado à direita do website correspondente e, de seguida, em `Editar um site`{.action}.
+>> No quadro que aparece, clique no botão `⁝`{.action} situado à direita do website correspondente e, de seguida, em `Editar site`{.action}.
 >>
 >> ![Opções do site](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/website-options.png){.thumbnail}
 >>

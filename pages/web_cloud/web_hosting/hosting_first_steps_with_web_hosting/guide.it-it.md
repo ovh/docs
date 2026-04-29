@@ -1,7 +1,7 @@
 ---
 title: "Come eseguire le prime operazioni sul tuo hosting Web"
 excerpt: 'Questa guida ti mostra come pubblicare un nuovo sito Internet con le nostre opzioni di "CMS in 1 click" e come creare un nuovo indirizzo email personalizzato con il tuo dominio, il tutto grazie alla nostra soluzione di hosting Web'
-updated: 2026-04-22
+updated: 2026-05-04
 ---
 
 <style>
@@ -61,6 +61,8 @@ Clicca sulle schede qui sotto per visualizzare successivamente i **4** passaggi.
 >>
 >> Accedi alla pagina [Hosting](/links/control-panel/web-hosting) e seleziona l’hosting Web interessato.
 >>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
 > **Passaggio 2**
 >>
 >> Seleziona la scheda `I miei siti`{.action} una volta posizionato sull’hosting Web interessato.
@@ -95,6 +97,8 @@ Clicca sulle schede qui sotto per visualizzare successivamente i **4** passaggi.
 > **Passaggio 1**
 >>
 >> Accedi alla pagina [Hosting](/links/control-panel/web-hosting) e seleziona l’hosting Web interessato.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
 > **Passaggio 2**
 >>
@@ -131,6 +135,8 @@ Clicca sulle schede qui sotto per visualizzare successivamente i **3** passaggi.
 > **Passaggio 1**
 >>
 >> Accedi alla pagina [Hosting](/links/control-panel/web-hosting) e seleziona l’hosting Web interessato.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
 > **Passaggio 2**
 >>

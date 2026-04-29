@@ -1,7 +1,7 @@
 ---
 title: "Web Hosting - How to modify a domain name already associated to a hosting plan"
 excerpt: "Find out how to change the association settings for a domainname or subdomain already declared on your web hosting plan"
-updated: 2026-04-22
+updated: 2026-05-04
 ---
 
 ## Objective

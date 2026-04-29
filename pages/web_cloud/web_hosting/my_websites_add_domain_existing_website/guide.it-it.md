@@ -1,7 +1,7 @@
 ---
 title: "Come associare un nome di dominio a un sito web esistente"
 excerpt: "Questa guida ti mostra come associare un nome di dominio o un sottodominio a un sito web già esistente sul tuo hosting web"
-updated: 2026-04-22
+updated: 2026-05-04
 ---
 
 <style>

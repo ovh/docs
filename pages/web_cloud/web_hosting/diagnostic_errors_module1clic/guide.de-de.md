@@ -1,7 +1,7 @@
 ---
 title: "Die häufigsten Fehler bei 1-Klick-Modulen beheben"
 excerpt: "Erfahren Sie hier, wie Sie die häufigsten Fehler bei der Erstellung von 1-Klick-Modulen beheben können"
-updated: 2026-04-22
+updated: 2026-05-04
 ---
 
 <style>
@@ -106,6 +106,8 @@ Klicken Sie auf die Tabs, um die **2** Schritte anzuzeigen.
 >>
 >> Gehen Sie auf die Seite [Hosting-Pakete](/links/control-panel/web-hosting), und wählen Sie das betreffende Webhosting aus.
 >>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
 > **Schritt 2**
 >>
 >> Klicken Sie auf den Tab `Datenbanken`{.action}, dann auf `Aktionen`{.action}, um eine zusätzliche Datenbank zu bestellen:
@@ -136,6 +138,8 @@ Klicken Sie auf die Tabs, um die **2** Schritte anzuzeigen.
 >>
 >> Gehen Sie auf die Seite [Hosting-Pakete](/links/control-panel/web-hosting), und wählen Sie das betreffende Webhosting aus.
 >>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
 > **Schritt 2**
 >>
 >> Im Bereich `Abo` - `Angebot` klicken Sie auf den Button `...`{.action} und dann auf `Angebot wechseln`{.action}:
@@ -162,6 +166,8 @@ Klicken Sie auf die Tabs, um die **2** Schritte anzuzeigen.
 > **Schritt 1**
 >>
 >> Gehen Sie auf die Seite [Hosting-Pakete](/links/control-panel/web-hosting), und wählen Sie das betreffende Webhosting aus.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
 > **Schritt 2**
 >>
@@ -287,6 +293,8 @@ Klicken Sie auf die Tabs, um die **2** Schritte anzuzeigen.
 >>
 >> Gehen Sie auf die Seite [Hosting-Pakete](/links/control-panel/web-hosting), und wählen Sie das betreffende Webhosting aus.
 >>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
 > **Schritt 2**
 >>
 >> Im Bereich `Abo` - `Angebot` klicken Sie auf den Button `...`{.action} und dann auf `Angebot wechseln`{.action}:
@@ -314,6 +322,8 @@ Löschen Sie anschließend Ihr 1-Klick-Modul. Klicken Sie dazu auf die Tabs, um 
 > **Schritt 1**
 >>
 >> Gehen Sie auf die Seite [Hosting-Pakete](/links/control-panel/web-hosting), und wählen Sie das betreffende Webhosting aus.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
 > **Schritt 2**
 >>
@@ -380,6 +390,8 @@ Um den Namen Ihres Datenbankservers zu finden, klicken Sie auf die Tabs, um die 
 >>
 >> Gehen Sie auf die Seite [Web Cloud Databases](/links/control-panel/web-cloud-databases), und wählen Sie den betreffenden Datenbankserver aus.
 >>
+>> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases.png){.thumbnail}
+>>
 > **Schritt 2**
 >>
 >> Der Name des zu verwendenden Servers wird in der Randleiste `Verbindungsinformationen`, Unterabschnitt `SQL`, unter dem Begriff `Hostname` angezeigt.
@@ -397,6 +409,8 @@ Klicken Sie auf die Tabs, um die **2** Schritte anzuzeigen.
 > **Schritt 1**
 >>
 >> Gehen Sie auf die Seite [Hosting-Pakete](/links/control-panel/web-hosting), und wählen Sie das betreffende Webhosting aus.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
 > **Schritt 2**
 >>

@@ -1,7 +1,7 @@
 ---
 title: "Mettre en ligne un site web sur son hébergement web"
 excerpt: "Découvrez comment mettre en ligne un site web sur votre hébergement web OVHcloud"
-updated: 2026-04-22
+updated: 2026-05-04
 ---
 
 ## Objectif
@@ -124,6 +124,8 @@ Pour vérifier le dossier dans lequel doit être publié le site web, cliquez su
 >>
 >> Accédez à la page [Hébergements](/links/control-panel/web-hosting), puis choisissez l'hébergement web concerné.
 >>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
 > **Étape 2**
 >>
 >> Sélectionnez l'onglet `Mes sites`{.action}. Dans le tableau qui s'affiche, pour le site web souhaité, regardez le `Dossier racine`{.action} qui s'affiche.
@@ -167,6 +169,8 @@ Si vous souhaitez créer une nouvelle base de données chez OVHcloud, cliquez su
 >>
 >> Accédez à la page [Hébergements](/links/control-panel/web-hosting), puis choisissez l'hébergement web concerné.
 >>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
 > **Étape 2**
 >>
 >> Sélectionnez l'onglet `Base de données`{.action}.
@@ -191,6 +195,8 @@ Il existe plusieurs méthodes pour effectuer cet import. OVHcloud en propose une
 > **Étape 1**
 >>
 >> Accédez à la page [Hébergements](/links/control-panel/web-hosting), puis choisissez l'hébergement web concerné.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
 > **Étape 2**
 >>

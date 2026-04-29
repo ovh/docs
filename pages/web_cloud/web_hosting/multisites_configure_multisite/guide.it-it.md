@@ -1,7 +1,7 @@
 ---
 title: 'Ospitare più siti su uno stesso hosting'
 excerpt: 'Questa guida ti mostra come ospitare diversi siti web sulla tua offerta di hosting web'
-updated: 2026-04-22
+updated: 2026-05-04
 ---
 
 <style>
@@ -278,7 +278,7 @@ Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **7** pa
 >>
 >> Seleziona l'opzione `Ordina un nuovo dominio`{.action} e fai clic su `Continua`{.action}.
 >>
->> ![Add external domain](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/add-a-domain-or-subdomain-new-step-1.png){.thumbnail}
+>> ![Add external domain](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/add-a-domain-or-sub-domain-new-step-1.png){.thumbnail}
 >>
 > **Passaggio 5**
 >>

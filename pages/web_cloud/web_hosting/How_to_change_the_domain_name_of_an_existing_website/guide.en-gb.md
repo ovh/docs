@@ -1,7 +1,7 @@
 ---
 title: "Use cases - How to change the domain of an existing website"
 excerpt: "Find out how to change the domain name of an existing website"
-updated: 2026-04-22
+updated: 2026-05-04
 ---
 
 ## Objective
@@ -58,6 +58,8 @@ There are several conditions to meet for this part:
 > **Step 1**
 >>
 >> Go to the [Hosting plans](/links/control-panel/web-hosting) page, then choose the web hosting plan concerned.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
 > **Step 2**
 >>

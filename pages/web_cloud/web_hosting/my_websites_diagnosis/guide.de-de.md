@@ -1,7 +1,7 @@
 ---
 title: "Wie kann ich die Zuordnung von Domainnamen und Websites prüfen?"
 excerpt: "Verwenden Sie unser Diagnose-Tool, um zu prüfen, ob Ihre Domain oder Subdomain korrekt mit Ihrer Website auf Ihrem Webhosting verknüpft ist"
-updated: 2026-04-22
+updated: 2026-05-04
 ---
 
 <style>
@@ -89,7 +89,7 @@ Klicken Sie auf die Tabs, um die **4** Schritte anzuzeigen.
 
 /// details | A/AAAA grün
 
-![A and AAAA green](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/diagnostic-green-info.png){.thumbnail}
+![A and AAAA green](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/diagnostic-green-info.png){.thumbnail}
 
 Wenn das Symbol `A/AAAA` in der Spalte `Diagnose` grün ist, bedeutet dies, dass der Eintrag **A** (für IPv4-Adressen) und/oder der Eintrag **AAAA** (für IPv6-Adressen) Ihrer Domain korrekt auf die IP-Adresse Ihres Webhostings verweist. Die DNS-Konfiguration Ihrer Domain ist somit für die Verwendung mit der Website Ihres Webhostings korrekt.
 
@@ -97,7 +97,7 @@ Wenn das Symbol `A/AAAA` in der Spalte `Diagnose` grün ist, bedeutet dies, dass
 
 /// details | A/AAAA gelb
 
-![A and AAAA yellow](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/diagnostic-yellow-info.png){.thumbnail}
+![A and AAAA yellow](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/diagnostic-yellow-info.png){.thumbnail}
 
 Wenn das Symbol `A/AAAA` in der Spalte `Diagnose` gelb ist, bedeutet dies, dass der Eintrag **A** (IPv4) und/oder **AAAA** (IPv6) Ihrer Domain auf eine IP-Adresse verweist, die jedoch nicht die IP-Adresse des Webhostings ist, von dem aus Sie die Spalte `Diagnose` einsehen.
 
@@ -107,7 +107,7 @@ Um Probleme mit der DNS-Zuordnung Ihrer Domain zu beheben und sicherzustellen, d
 
 /// details | A/AAAA grau
 
-![A and AAAA grey](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/diagnostic-grey-info.png){.thumbnail}
+![A and AAAA grey](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/diagnostic-grey-info.png){.thumbnail}
 
 Wenn das Symbol `A/AAAA` in der Spalte `Diagnose` grau ist, bedeutet dies, dass die Domain aktuell auf keine IP-Adresse verweist und weder ein Eintrag **A** (IPv4) noch **AAAA** (IPv6) für diese Domain konfiguriert ist.
 

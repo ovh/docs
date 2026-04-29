@@ -1,7 +1,7 @@
 ---
 title: "Cómo desvincular un dominio de un sitio web existente"
 excerpt: "Descubra cómo desvincular un nombre de dominio o un subdominio de un sitio web ya existente en su alojamiento web"
-updated: 2026-04-22
+updated: 2026-05-04
 ---
 
 ## Objetivo

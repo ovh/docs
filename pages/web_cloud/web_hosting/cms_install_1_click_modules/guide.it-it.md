@@ -1,7 +1,7 @@
 ---
 title: "Installare il tuo sito Web con un 'CMS in 1 click'"
 excerpt: "Questa guida ti mostra come creare il tuo sito Web con i nostri 'moduli in 1 click'"
-updated: 2026-04-22
+updated: 2026-05-04
 ---
 
 <style>
@@ -92,6 +92,8 @@ Clicca sulle schede qui sotto per visualizzare ciascuno dei **4** passaggi.
 >>
 >> Accedi alla pagina [Hosting](/links/control-panel/web-hosting) e seleziona l'hosting Web interessato.
 >>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
 > **Passaggio 2**
 >>
 >> Nella pagina che si apre, clicca sulla scheda `CMS in 1 click`{.action}. Qui sono elencati gli eventuali "moduli in 1 click" già installati. È possibile gestire i "moduli in 1 click" e installarne di nuovi.
@@ -143,6 +145,8 @@ Clicca sulle schede qui sotto per visualizzare ciascuno dei **8** passaggi.
 > **Passaggio 1**
 >>
 >> Accedi alla pagina [Hosting](/links/control-panel/web-hosting) e seleziona l'hosting Web interessato.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
 > **Passaggio 2**
 >>

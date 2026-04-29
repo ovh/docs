@@ -1,7 +1,7 @@
 ---
 title: "Publicar un sitio web en internet"
 excerpt: "Descubra cómo subir un sitio web a un alojamiento de OVHcloud para publicarlo en internet"
-updated: 2026-04-22
+updated: 2026-05-04
 ---
 
 ## Objetivo
@@ -124,6 +124,8 @@ Para verificar la carpeta en la que debe publicarse el sitio web, haga clic en l
 >>
 >> Acceda a la página [Alojamientos](/links/control-panel/web-hosting) y seleccione el alojamiento web correspondiente.
 >>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
 > **Etapa 2**
 >>
 >> Vaya a la pestaña `Mis sitios`{.action}. En la tabla que aparece, para el sitio web deseado, mire el `Carpeta raíz`{.action} que se muestra.
@@ -167,6 +169,8 @@ Si quiere crear una nueva base de datos en OVHcloud, haga clic en las pestañas 
 >>
 >> Acceda a la página [Alojamientos](/links/control-panel/web-hosting) y seleccione el alojamiento web correspondiente.
 >>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
 > **Etapa 2**
 >>
 >> Abra la pestaña `Bases de datos`{.action}.
@@ -191,6 +195,8 @@ Existen diversas formas de realizar la importación. OVHcloud ofrece una desde e
 > **Etapa 1**
 >>
 >> Acceda a la página [Alojamientos](/links/control-panel/web-hosting) y seleccione el alojamiento web correspondiente.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
 > **Etapa 2**
 >>

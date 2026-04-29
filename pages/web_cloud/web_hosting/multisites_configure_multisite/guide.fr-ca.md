@@ -1,7 +1,7 @@
 ---
 title: 'Partager son hébergement entre plusieurs sites'
 excerpt: "Découvrez comment héberger différents sites web sur votre offre d'hébergement web"
-updated: 2026-04-22
+updated: 2026-05-04
 ---
 
 <style>
@@ -278,7 +278,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **5*
 >>
 >> Cochez l'option `Commander un nouveau domaine`{.action} et cliquez sur `Continuer`{.action}.
 >>
->> ![Add external domain](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/add-a-domain-or-subdomain-new-step-1.png){.thumbnail}
+>> ![Add external domain](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/add-a-domain-or-sub-domain-new-step-1.png){.thumbnail}
 >>
 > **Étape 5**
 >>

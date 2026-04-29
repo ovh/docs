@@ -1,7 +1,7 @@
 ---
 title: "Comment bien débuter avec votre hébergement web"
 excerpt: "Découvrez comment mettre en ligne un nouveau site Internet via nos options de « Modules en 1 clic », comment créer une nouvelle adresse e-mail personnalisée avec votre nom de domaine, le tout grâce à notre solution d'hébergement web"
-updated: 2026-04-22
+updated: 2026-05-04
 ---
 
 <style>
@@ -60,6 +60,8 @@ Cliquez sur les onglets ci-dessous pour afficher successivement les **4** étape
 >>
 >> Accédez à la page [Hébergements](/links/control-panel/web-hosting), puis choisissez l'hébergement web concerné.
 >>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
 > **Étape 2**
 >>
 >> Sélectionnez l'onglet `Mes sites`{.action} une fois positionné sur l'hébergement web concerné.
@@ -94,6 +96,8 @@ Cliquez sur les onglets ci-dessous pour afficher successivement les **4** étape
 > **Étape 1**
 >>
 >> Accédez à la page [Hébergements](/links/control-panel/web-hosting), puis choisissez l'hébergement web concerné.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
 > **Étape 2**
 >>
@@ -130,6 +134,8 @@ Cliquez sur les onglets ci-dessous pour afficher successivement les **3** étape
 > **Étape 1**
 >>
 >> Accédez à la page [Hébergements](/links/control-panel/web-hosting), puis choisissez l'hébergement web concerné.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
 > **Étape 2**
 >>

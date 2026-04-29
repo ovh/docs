@@ -1,7 +1,7 @@
 ---
 title: "Tutorial - Rewrite the URL for accessing your website using mod_rewrite via the .htaccess file"
 excerpt: "Find out how to rewrite the URL for accessing your website using mod_rewrite via the .htaccess file"
-updated: 2026-04-22
+updated: 2026-05-04
 ---
 
   

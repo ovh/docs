@@ -1,7 +1,7 @@
 ---
 title: "Come creare un sito Web - Realizzare il tuo progetto in 5 tappe"
 excerpt: "Questa guida ti mostra come definire il tuo progetto, pubblicare il tuo sito Internet e creare indirizzi email con la tua soluzione di hosting Web"
-updated: 2026-04-22
+updated: 2026-05-04
 ---
 
 <style>

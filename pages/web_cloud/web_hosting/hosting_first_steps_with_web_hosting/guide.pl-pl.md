@@ -1,7 +1,7 @@
 ---
 title: "Jak rozpocząć korzystanie z hostingu WWW"
 excerpt: 'Dowiedz się, jak zamieścić w Internecie nową stronę WWW za pomocą opcji"Moduły za 1 kliknięciem", jak utworzyć nowy spersonalizowany adres e-mail z nazwą domeny, a wszystko to za pomocą naszego rozwiązania hostingowego'
-updated: 2026-04-22
+updated: 2026-05-04
 ---
 
 <style>
@@ -61,6 +61,8 @@ Kliknij poniższe zakładki, aby wyświetlić kolejne **4** kroki.
 >>
 >> Przejdź na stronę [Hosting](/links/control-panel/web-hosting), następnie wybierz odpowiedni hosting.
 >>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
 > **Krok 2**
 >>
 >> Wybierz zakładkę `Moje strony`{.action} po wybraniu odpowiedniego hostingu.
@@ -95,6 +97,8 @@ Kliknij poniższe zakładki, aby wyświetlić kolejne **4** kroki.
 > **Krok 1**
 >>
 >> Przejdź na stronę [Hosting](/links/control-panel/web-hosting), następnie wybierz odpowiedni hosting.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
 > **Krok 2**
 >>
@@ -131,6 +135,8 @@ Kliknij poniższe zakładki, aby wyświetlić kolejne **3** kroki.
 > **Krok 1**
 >>
 >> Przejdź na stronę [Hosting](/links/control-panel/web-hosting), następnie wybierz odpowiedni hosting.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
 > **Krok 2**
 >>

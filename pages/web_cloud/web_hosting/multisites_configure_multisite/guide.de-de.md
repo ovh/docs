@@ -1,7 +1,7 @@
 ---
 title: 'Mehrere Websites auf einem Webhosting hosten'
 excerpt: "Erfahren Sie, wie Sie verschiedene Webseiten-Installationen mit Ihrem Hosting-Paket verwalten"
-updated: 2026-04-22
+updated: 2026-05-04
 ---
 
 <style>
@@ -279,7 +279,7 @@ Klicken Sie auf die Tabs, um die **5** Schritte anzuzeigen.
 >>
 >> Aktivieren Sie die Option `Eine neue Domain bestellen`{.action} und klicken Sie auf `Weiter`{.action}.
 >>
->> ![Add external domain](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/add-a-domain-or-subdomain-new-step-1.png){.thumbnail}
+>> ![Add external domain](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/add-a-domain-or-sub-domain-new-step-1.png){.thumbnail}
 >>
 > **Schritt 5**
 >>

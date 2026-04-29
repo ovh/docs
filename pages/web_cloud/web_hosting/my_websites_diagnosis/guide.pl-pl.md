@@ -1,7 +1,7 @@
 ---
 title: "Jak sprawdzić przypisanie 'nazwy domeny / strony internetowej'?"
 excerpt: "Użyj naszego narzędzia diagnostycznego, aby upewnić się, że Twoja domena lub poddomena jest poprawnie zadeklarowana z Twoją stroną internetową na Twoim hosting"
-updated: 2026-04-22
+updated: 2026-05-04
 ---
 
 <style>
@@ -89,7 +89,7 @@ Kliknij poniższe zakładki, aby wyświetlić kolejne **4** kroki.
 
 /// details | A/AAAA zielony
 
-![A and AAAA green](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/diagnostic-green-info.png){.thumbnail}
+![A and AAAA green](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/diagnostic-green-info.png){.thumbnail}
 
 Gdy ikona `A/AAAA` jest zielona w kolumnie `Diagnostyka`, oznacza to, że rekord **A** (dla adresów IPv4) i/lub rekord **AAAA** (dla adresów IPv6) Twojej domeny poprawnie wskazuje na adres IP Twojego hostingu. Konfiguracja DNS Twojej domeny jest więc zgodna z potrzebami działania strony internetowej na Twoim Hosting.
 
@@ -97,7 +97,7 @@ Gdy ikona `A/AAAA` jest zielona w kolumnie `Diagnostyka`, oznacza to, że rekord
 
 /// details | A/AAAA żółty
 
-![A and AAAA yellow](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/diagnostic-yellow-info.png){.thumbnail}
+![A and AAAA yellow](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/diagnostic-yellow-info.png){.thumbnail}
 
 Gdy ikona `A/AAAA` jest żółta w kolumnie `Diagnostyka`, oznacza to, że rekord **A** (IPv4) i/lub **AAAA** (IPv6) Twojej domeny wskazuje na adres IP, ale nie jest to adres IP hostingu, z którego przeglądasz kolumnę `Diagnostyka`.
 
@@ -107,7 +107,7 @@ Aby rozwiązać problemy z wskazywaniem DNS Twojej domeny i upewnić się, że p
 
 /// details | A/AAAA szary
 
-![A and AAAA grey](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/diagnostic-grey-info.png){.thumbnail}
+![A and AAAA grey](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/diagnostic-grey-info.png){.thumbnail}
 
 Gdy ikona `A/AAAA` jest szara w kolumnie `Diagnostyka`, oznacza to, że domena nie wskazuje obecnie na żaden adres IP, a żaden rekord **A** (IPv4) ani **AAAA** (IPv6) nie jest skonfigurowany dla tej domeny.
 

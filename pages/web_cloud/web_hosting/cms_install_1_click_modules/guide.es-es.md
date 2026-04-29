@@ -1,7 +1,7 @@
 ---
 title: "Instalar su sitio web con un 'módulo en 1 clic' (CMS)"
 excerpt: Descubra cómo instalar su sitio web a través de nuestros "módulos en 1 clic"
-updated: 2026-04-22
+updated: 2026-05-04
 ---
 
 <style>
@@ -92,6 +92,8 @@ Haga clic en las pestañas a continuación para visualizar cada una de las **4**
 >>
 >> Acceda a la página [Alojamientos](/links/control-panel/web-hosting) y seleccione el alojamiento web correspondiente.
 >>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
 > **Etapa 2**
 >>
 >> En la página que se abre, haga clic en la pestaña `Módulos en 1 clic`{.action}. Encontrará los "módulos en 1 clic" ya instalados. Puede gestionar sus módulos en 1 clic e instalar nuevos.
@@ -143,6 +145,8 @@ Haga clic en las pestañas a continuación para visualizar cada una de las **8**
 > **Etapa 1**
 >>
 >> Acceda a la página [Alojamientos](/links/control-panel/web-hosting) y seleccione el alojamiento web correspondiente.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
 > **Etapa 2**
 >>

@@ -1,7 +1,7 @@
 ---
 title: "Cómo empezar correctamente con su alojamiento web"
 excerpt: 'Descubra cómo publicar un nuevo sitio web a través de nuestras opciones de "Módulos en un clic" y cómo crear una nueva dirección de correo personalizada con su nombre de dominio gracias a nuestra solución de alojamiento web'
-updated: 2026-04-22
+updated: 2026-05-04
 ---
 
 <style>
@@ -61,6 +61,8 @@ Haga clic en las pestañas de abajo para visualizar sucesivamente las **4** etap
 >>
 >> Acceda a la página [Alojamientos](/links/control-panel/web-hosting) y seleccione el alojamiento web correspondiente.
 >>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
 > **Etapa 2**
 >>
 >> Seleccione la pestaña `Mis sitios`{.action} una vez que haya seleccionado el alojamiento web correspondiente.
@@ -95,6 +97,8 @@ Haga clic en las pestañas de abajo para visualizar sucesivamente las **4** etap
 > **Etapa 1**
 >>
 >> Acceda a la página [Alojamientos](/links/control-panel/web-hosting) y seleccione el alojamiento web correspondiente.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
 > **Etapa 2**
 >>
@@ -131,6 +135,8 @@ Haga clic en las pestañas de abajo para visualizar sucesivamente las **3** etap
 > **Etapa 1**
 >>
 >> Acceda a la página [Alojamientos](/links/control-panel/web-hosting) y seleccione el alojamiento web correspondiente.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
 > **Etapa 2**
 >>

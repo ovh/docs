@@ -1,7 +1,7 @@
 ---
 title: "Risolvi gli errori più comuni relativi ai CMS/moduli in 1 click"
 excerpt: "Questa guida ti mostra come diagnosticare i casi più comuni di errori associati alla creazione di moduli in 1 click"
-updated: 2026-04-22
+updated: 2026-05-04
 ---
 
 <style>
@@ -108,6 +108,8 @@ Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **2** pa
 >>
 >> Accedi alla pagina [Hosting](/links/control-panel/web-hosting), poi seleziona l'hosting Web interessato.
 >>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
 > **Passaggio 2**
 >>
 >> Clicca sulla scheda `Database`{.action} e poi su `Azioni`{.action} per ordinare un database aggiuntivo:
@@ -138,6 +140,8 @@ Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **2** pa
 >>
 >> Accedi alla pagina [Hosting](/links/control-panel/web-hosting), poi seleziona l'hosting Web interessato.
 >>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
 > **Passaggio 2**
 >>
 >> Nella sezione `Abbonamento` - `Servizio`, clicca sul pulsante `...`{.action} e poi su `Modifica offerta`{.action}:
@@ -164,6 +168,8 @@ Per eliminare un database, clicca sulle schede qui sotto per visualizzare in seq
 > **Passaggio 1**
 >>
 >> Accedi alla pagina [Hosting](/links/control-panel/web-hosting), poi seleziona l'hosting Web interessato.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
 > **Passaggio 2**
 >>
@@ -289,6 +295,8 @@ Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **2** pa
 >>
 >> Accedi alla pagina [Hosting](/links/control-panel/web-hosting), poi seleziona l'hosting Web interessato.
 >>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
 > **Passaggio 2**
 >>
 >> Nella sezione `Abbonamento` - `Servizio`, clicca sul pulsante `...`{.action} e poi su `Modifica offerta`{.action}:
@@ -316,6 +324,8 @@ Elimina il "modulo in 1 click". Per farlo, clicca sulle schede qui sotto per vis
 > **Passaggio 1**
 >>
 >> Accedi alla pagina [Hosting](/links/control-panel/web-hosting), poi seleziona l'hosting Web interessato.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
 > **Passaggio 2**
 >>
@@ -382,6 +392,8 @@ Per recuperare il nome del tuo database server, clicca sulle schede qui sotto pe
 >>
 >> Accedi alla pagina [Web Cloud Databases](/links/control-panel/web-cloud-databases), poi seleziona il database server interessato.
 >>
+>> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases.png){.thumbnail}
+>>
 > **Passaggio 2**
 >>
 >> Il nome del server da utilizzare è indicato nel riquadro `Informazioni di login`, sottosezione `SQL`, sotto la dicitura `Nome host`.
@@ -399,6 +411,8 @@ Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **2** pa
 > **Passaggio 1**
 >>
 >> Accedi alla pagina [Hosting](/links/control-panel/web-hosting), poi seleziona l'hosting Web interessato.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
 > **Passaggio 2**
 >>

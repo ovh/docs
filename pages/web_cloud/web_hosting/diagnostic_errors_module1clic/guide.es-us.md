@@ -1,7 +1,7 @@
 ---
 title: "Resolver los errores más frecuentes relacionados con los módulos en un clic"
 excerpt: "Descubra cómo diagnosticar los errores más comunes relacionados con la creación de módulos en 1 clic"
-updated: 2026-04-22
+updated: 2026-05-04
 ---
 
 <style>
@@ -108,6 +108,8 @@ Haga clic en las fichas siguientes para ver cada una de las **2** etapas.
 >>
 >> Acceda a la página [Alojamientos](/links/control-panel/web-hosting) y seleccione el alojamiento web correspondiente.
 >>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
 > **Etapa 2**
 >>
 >> Haga clic en la pestaña `Bases de datos`{.action} y seleccione `Acciones`{.action} para contratar una base de datos adicional:
@@ -138,6 +140,8 @@ Haga clic en las fichas siguientes para ver cada una de las **2** etapas.
 >>
 >> Acceda a la página [Alojamientos](/links/control-panel/web-hosting) y seleccione el alojamiento web correspondiente.
 >>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
 > **Etapa 2**
 >>
 >> En la sección `Suscripción` - `Solución`, haga clic en el botón `...`{.action} y luego en `Cambiar de plan`{.action}:
@@ -164,6 +168,8 @@ Para eliminar una base de datos, haga clic en las fichas siguientes para ver cad
 > **Etapa 1**
 >>
 >> Acceda a la página [Alojamientos](/links/control-panel/web-hosting) y seleccione el alojamiento web correspondiente.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
 > **Etapa 2**
 >>
@@ -289,6 +295,8 @@ Haga clic en las fichas siguientes para ver cada una de las **2** etapas.
 >>
 >> Acceda a la página [Alojamientos](/links/control-panel/web-hosting) y seleccione el alojamiento web correspondiente.
 >>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
 > **Etapa 2**
 >>
 >> En la sección `Suscripción` - `Solución`, haga clic en el botón `...`{.action} y luego en `Cambiar de plan`{.action}:
@@ -316,6 +324,8 @@ A continuación, elimine el "módulo en un clic". Para ello, haga clic en las fi
 > **Etapa 1**
 >>
 >> Acceda a la página [Alojamientos](/links/control-panel/web-hosting) y seleccione el alojamiento web correspondiente.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
 > **Etapa 2**
 >>
@@ -382,6 +392,8 @@ Para consultar el nombre del servidor de bases de datos, haga clic en las fichas
 >>
 >> Acceda a la página [Web Cloud Databases](/links/control-panel/web-cloud-databases) y seleccione el servidor de bases de datos correspondiente.
 >>
+>> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases.png){.thumbnail}
+>>
 > **Etapa 2**
 >>
 >> El nombre del servidor que debe utilizarse aparece en el recuadro `Datos de conexión`, subparte `SQL`, con la mención `Nombre de host`.
@@ -399,6 +411,8 @@ Haga clic en las fichas siguientes para ver cada una de las **2** etapas.
 > **Etapa 1**
 >>
 >> Acceda a la página [Alojamientos](/links/control-panel/web-hosting) y seleccione el alojamiento web correspondiente.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
 > **Etapa 2**
 >>

@@ -1,7 +1,7 @@
 ---
 title: "Accélérer mon site web en utilisant le CDN"
 excerpt: "Découvrez comment améliorer votre site web en accélérant son chargement sur votre hébergement web grâce au CDN"
-updated: 2026-04-22
+updated: 2026-05-04
 ---
 
 ## Objectif
@@ -50,6 +50,8 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **2*
 > **Étape 1**
 >>
 >> Accédez à la page [Hébergements](/links/control-panel/web-hosting), puis choisissez l'hébergement web concerné.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
 > **Étape 2**
 >>
@@ -545,6 +547,8 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3*
 >>
 >> Accédez à la page [Hébergements](/links/control-panel/web-hosting), puis choisissez l'hébergement web concerné.
 >>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
 > **Étape 2**
 >>
 >> Repérez la mention **Option CDN**. Cliquez sur `...`{.action} à droite puis sur `Résilier le CDN`{.action}.
@@ -579,7 +583,7 @@ Set-Cookie: SERVERID12345=123456; path=/; max-age=900
 Vary: Accept-Encoding
 X-Request-ID: 123456789
 X-CDN-Pop: rbx1
-X-CDN-Pop-IP: 00.111.22.333/44
+X-CDN-Pop-IP: 203.0.113.0/44
 X-Cacheable: Cacheable
 Accept-Ranges: bytes
 Transfer-Encoding: chunked

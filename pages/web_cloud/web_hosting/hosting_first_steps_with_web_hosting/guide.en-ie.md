@@ -1,7 +1,7 @@
 ---
 title: "How to get started with your web hosting plan"
 excerpt: "Find out how to put a new website online with our 1-click modules, how to create a new custom email address with your domain name, all using our web hosting solution"
-updated: 2026-04-22
+updated: 2026-05-04
 ---
 
 <style>
@@ -61,6 +61,8 @@ Click on the tabs below to view each of the **4** steps.
 >>
 >> Go to the [Hosting plans](/links/control-panel/web-hosting) page, then choose the web hosting plan concerned.
 >>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
 > **Step 2**
 >>
 >> Select the `My sites`{.action} tab.
@@ -95,6 +97,8 @@ Click on the tabs below to view each of the **4** steps.
 > **Step 1**
 >>
 >> Go to the [Hosting plans](/links/control-panel/web-hosting) page, then choose the web hosting plan concerned.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
 > **Step 2**
 >>
@@ -131,6 +135,8 @@ Click on the tabs below to view each of the **3** steps.
 > **Step 1**
 >>
 >> Go to the [Hosting plans](/links/control-panel/web-hosting) page, then choose the web hosting plan concerned.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
 > **Step 2**
 >>

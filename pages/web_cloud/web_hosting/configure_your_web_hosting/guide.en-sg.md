@@ -1,7 +1,7 @@
 ---
 title: "Web Hosting - Environment, PHP version, .ovhconfig"
 excerpt: "Find out how to modify a web hosting plan’s runtime environment, PHP version, application firewall, engine, mode and .ovhconfig"
-updated: 2026-04-22
+updated: 2026-05-04
 ---
 
 <style>
@@ -147,6 +147,8 @@ Click on the tabs below to view each of the **2** steps.
 > **Step 1**
 >>
 >> Go to the [Hosting plans](/links/control-panel/web-hosting) page, then select the web hosting plan concerned.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
 > **Step 2**
 >>

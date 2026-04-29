@@ -1,7 +1,7 @@
 ---
 title: "Como desassociar um nome de domínio de um site web existente"
 excerpt: "Descubra como desassociar um nome de domínio ou subdomínio de um site web já existente no seu alojamento web"
-updated: 2026-04-22
+updated: 2026-05-04
 ---
 
 ## Objetivo

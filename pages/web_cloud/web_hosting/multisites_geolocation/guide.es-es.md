@@ -1,7 +1,7 @@
 ---
 title: "¿Cómo geolocalizar un sitio web en un país específico?"
 excerpt: "Esta guía explica cómo localizar un sitio web con las direcciones IP geolocalizadas disponibles en los planes de hosting de OVHcloud"
-updated: 2026-04-22
+updated: 2026-05-04
 ---
 
 ## Objetivo

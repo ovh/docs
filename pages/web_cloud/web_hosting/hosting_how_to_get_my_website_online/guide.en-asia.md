@@ -1,7 +1,7 @@
 ---
 title: "Publishing a website on your Web Hosting plan"
 excerpt: "Find how to publish a website on your OVHcloud Web Hosting plan"
-updated: 2026-04-22
+updated: 2026-05-04
 ---
 
 ## Objective
@@ -124,6 +124,8 @@ To check the folder in which the website should be published, click on the tabs 
 >>
 >> Go to the [Hosting plans](/links/control-panel/web-hosting) page, then choose the web hosting plan concerned.
 >>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
 > **Step 2**
 >>
 >> Go to the `My sites`{.action} tab. In the table that appears, for the desired website, look at the `Root folder`{.action} displayed.
@@ -167,6 +169,8 @@ If you want to create a new database with OVHcloud, click on the tabs below to v
 >>
 >> Go to the [Hosting plans](/links/control-panel/web-hosting) page, then choose the web hosting plan concerned.
 >>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
 > **Step 2**
 >>
 >> Go to the `Databases`{.action} tab.
@@ -191,6 +195,8 @@ There are several methods for importing a database. OVHcloud offers one of these
 > **Step 1**
 >>
 >> Go to the [Hosting plans](/links/control-panel/web-hosting) page, then choose the web hosting plan concerned.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
 > **Step 2**
 >>

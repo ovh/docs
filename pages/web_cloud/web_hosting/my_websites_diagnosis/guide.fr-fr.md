@@ -1,7 +1,7 @@
 ---
 title: "Comment vérifier l'association « nom de domaine / site web » ?"
 excerpt: "Utilisez notre outil de diagnostic pour vérifier que votre nom de domaine ou sous-domaine est bien déclaré avec votre site web sur votre hébergement web"
-updated: 2026-04-22
+updated: 2026-05-04
 ---
 
 <style>
@@ -89,7 +89,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4*
 
 /// details | A/AAAA vert
 
-![A and AAAA green](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/diagnostic-green-info.png){.thumbnail}
+![A and AAAA green](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/diagnostic-green-info.png){.thumbnail}
 
 Lorsque l'icône `A/AAAA` est verte dans la colonne `Diagnostic`, cela signifie que l'enregistrement **A** (pour les adresses IPv4) et/ou l'enregistrement **AAAA** (pour les adresses IPv6) de votre nom de domaine pointe correctement vers l'adresse IP de votre hébergement web. La configuration DNS de votre nom de domaine est donc conforme pour fonctionner avec le site web de votre hébergement web.
 
@@ -97,7 +97,7 @@ Lorsque l'icône `A/AAAA` est verte dans la colonne `Diagnostic`, cela signifie 
 
 /// details | A/AAAA jaune
 
-![A and AAAA yellow](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/diagnostic-yellow-info.png){.thumbnail}
+![A and AAAA yellow](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/diagnostic-yellow-info.png){.thumbnail}
 
 Lorsque l'icône `A/AAAA` est jaune dans la colonne `Diagnostic`, cela signifie que l'enregistrement **A** (IPv4) et/ou **AAAA** (IPv6) de votre nom de domaine pointe vers une adresse IP, mais qu'il ne s'agit pas de celle de l'hébergement web depuis lequel vous consultez la colonne `Diagnostic`.
 
@@ -107,7 +107,7 @@ Pour résoudre les problèmes de pointage DNS de votre nom de domaine et vous as
 
 /// details | A/AAAA gris
 
-![A and AAAA grey](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/diagnostic-grey-info.png){.thumbnail}
+![A and AAAA grey](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/diagnostic-grey-info.png){.thumbnail}
 
 Lorsque l'icône `A/AAAA` est grise dans la colonne `Diagnostic`, cela signifie que le nom de domaine ne pointe actuellement vers aucune adresse IP et qu'aucun enregistrement **A** (IPv4) ou **AAAA** (IPv6) n'est configuré pour ce nom de domaine.
 

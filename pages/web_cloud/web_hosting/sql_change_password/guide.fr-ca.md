@@ -1,7 +1,7 @@
 ---
 title: Modifier le mot de passe de la base de données d'un hébergement web
 excerpt: Découvrez comment changer le mot de passe d'une base de données créée dans le cadre d'une offre d'hébergement web
-updated: 2026-04-22
+updated: 2026-05-04
 ---
 
 ## Objectif

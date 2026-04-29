@@ -1,7 +1,7 @@
 ---
 title: "Webhosting - Schnellstart-Anleitung"
 excerpt: "Erfahren Sie hier, wie Sie auf einem Webhosting eine neue Website mithilfe eines 1-Klick-Moduls online stellen und personalisierte E-Mail-Adressen mit Ihrem Domainnamen verwenden"
-updated: 2026-04-22
+updated: 2026-05-04
 ---
 
 <style>
@@ -61,6 +61,8 @@ Klicken Sie auf die folgenden Tabs, um die **4** Schritte nacheinander anzuzeige
 >>
 >> Gehen Sie auf die Seite [Hosting-Pakete](/links/control-panel/web-hosting) und wählen Sie das betreffende Webhosting aus.
 >>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
 > **Schritt 2**
 >>
 >> Wählen Sie den Tab `Meine Seiten`{.action}.
@@ -95,6 +97,8 @@ Klicken Sie auf die folgenden Tabs, um die **4** Schritte nacheinander anzuzeige
 > **Schritt 1**
 >>
 >> Gehen Sie auf die Seite [Hosting-Pakete](/links/control-panel/web-hosting) und wählen Sie das betreffende Webhosting aus.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
 > **Schritt 2**
 >>
@@ -131,6 +135,8 @@ Klicken Sie auf die folgenden Tabs, um die **3** Schritte nacheinander anzuzeige
 > **Schritt 1**
 >>
 >> Gehen Sie auf die Seite [Hosting-Pakete](/links/control-panel/web-hosting) und wählen Sie das betreffende Webhosting aus.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
 > **Schritt 2**
 >>

@@ -1,7 +1,7 @@
 ---
 title: "Speeding up your website with CDN"
 excerpt: "Find out how to improve your website by reducing loading times on a Web Hosting plan using the CDN"
-updated: 2026-04-22
+updated: 2026-05-04
 ---
 
 ## Objective
@@ -50,6 +50,8 @@ Click on the tabs below to view each of the **2** steps.
 > **Step 1**
 >>
 >> Go to the [Hosting plans](/links/control-panel/web-hosting) page, then select the relevant Web Hosting plan.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
 > **Step 2**
 >>
@@ -545,6 +547,8 @@ Click on the tabs below to view each of the **3** steps.
 >>
 >> Go to the [Hosting plans](/links/control-panel/web-hosting) page, then select the relevant Web Hosting plan.
 >>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
 > **Step 2**
 >>
 >> Locate the **CDN option**. Click on `...`{.action} to the right, then on `Cancel the CDN`{.action}.
@@ -579,7 +583,7 @@ Set-Cookie: SERVERID12345=123456; path=/; max-age=900
 Vary: Accept-Encoding
 X-Request-ID: 123456789
 X-CDN-Pop: rbx1
-X-CDN-Pop-IP: 00.111.22.333/44
+X-CDN-Pop-IP: 203.0.113.0/44
 X-Cacheable: Cacheable
 Accept-Ranges: bytes
 Transfer-Encoding: chunked

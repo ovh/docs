@@ -1,7 +1,7 @@
 ---
 title: "How to manage your 1-click module"
 excerpt: "Find out how to manage your 1-click module in the OVHcloud Control Panel"
-updated: 2026-04-22
+updated: 2026-05-04
 ---
 
 ## Objective
@@ -42,7 +42,11 @@ Click on the tabs below to display each of the **2** steps in turn.
 > [!tabs]
 > **Step 1**
 >>
->> Access the [Hosting plans](/links/control-panel/web-hosting) page, then select your web hosting plan. Click on the `1-click modules`{.action} tab.
+>> Access the [Hosting plans](/links/control-panel/web-hosting) page, then select your web hosting plan.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+>> Click on the `1-click modules`{.action} tab.
 >>
 > **Step 2**
 >>
@@ -63,7 +67,11 @@ Click on the tabs below to display each of the **2** steps in turn.
 > [!tabs]
 > **Step 1**
 >>
->> Access the [Hosting plans](/links/control-panel/web-hosting) page, then select your web hosting plan. Click on the `1-click modules`{.action} tab.
+>> Access the [Hosting plans](/links/control-panel/web-hosting) page, then select your web hosting plan.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+>> Click on the `1-click modules`{.action} tab.
 >>
 > **Step 2**
 >>
@@ -80,6 +88,8 @@ Click on the tabs below to display each of the **3** steps in turn.
 > **Step 1**
 >>
 >> Access the [Hosting plans](/links/control-panel/web-hosting) page, then select your web hosting plan.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
 > **Step 2**
 >>
@@ -124,7 +134,11 @@ Click on the tabs below to display each of the **3** steps in turn.
 > [!tabs]
 > **Step 1**
 >>
->> Access the [Hosting plans](/links/control-panel/web-hosting) page, then select your web hosting plan. Click on the `Databases`{.action} tab.
+>> Access the [Hosting plans](/links/control-panel/web-hosting) page, then select your web hosting plan.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+>> Click on the `Databases`{.action} tab.
 >>
 > **Step 2**
 >>
@@ -162,6 +176,8 @@ Click on the tabs below to display each of the **3** steps in turn.
 >>
 >> Access the [Hosting plans](/links/control-panel/web-hosting) page, then select your web hosting plan.
 >>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
 > **Step 2**
 >>
 >> Click on the `1-click modules`{.action} tab.
@@ -196,7 +212,11 @@ To complete the removal of your module, click on the tabs below to display each 
 > [!tabs]
 > **Step 1**
 >>
->> Access the [Hosting plans](/links/control-panel/web-hosting) page, then select your web hosting plan. Click on the `Databases`{.action} tab.
+>> Access the [Hosting plans](/links/control-panel/web-hosting) page, then select your web hosting plan.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+>> Click on the `Databases`{.action} tab.
 >>
 > **Step 2**
 >>

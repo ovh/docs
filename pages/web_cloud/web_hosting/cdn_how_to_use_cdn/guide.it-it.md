@@ -1,7 +1,7 @@
 ---
 title: "Aumentare la velocità di un sito Web con la CDN"
 excerpt: "Questa guida ti mostra come ottimizzare il tuo sito accelerando la velocità di caricamento dell’hosting Web con la CDN"
-updated: 2026-04-22
+updated: 2026-05-04
 ---
 
 ## Obiettivo
@@ -50,6 +50,8 @@ Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **2** pa
 > **Passaggio 1**
 >>
 >> Accedi alla pagina [Hosting](/links/control-panel/web-hosting), poi seleziona l’hosting Web interessato.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
 > **Passaggio 2**
 >>
@@ -545,6 +547,8 @@ Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **3** pa
 >>
 >> Accedi alla pagina [Hosting](/links/control-panel/web-hosting), poi seleziona l’hosting Web interessato.
 >>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
 > **Passaggio 2**
 >>
 >> Individua la voce **Opzione CDN**. Clicca sui tre puntini `...`{.action} e poi su `Disattiva la CDN`{.action}.
@@ -579,7 +583,7 @@ Set-Cookie: SERVERID12345=123456; path=/; max-age=900
 Vary: Accept-Encoding
 X-Request-ID: 123456789
 X-CDN-Pop: rbx1
-X-CDN-Pop-IP: 00.111.22.333/44
+X-CDN-Pop-IP: 203.0.113.0/44
 X-Cacheable Cacheable
 Accept-Ranges: bytes
 Transfer-Encoding: chunked

@@ -1,7 +1,7 @@
 ---
 title: "Résoudre les erreurs les plus fréquentes liées aux modules en 1 clic"
 excerpt: "Découvrez comment diagnostiquer les cas les plus courants d'erreurs liées aux créations de modules en 1 clic"
-updated: 2026-04-22
+updated: 2026-05-04
 ---
 
 <style>
@@ -108,6 +108,8 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **2*
 >>
 >> Accédez à la page [Hébergements](/links/control-panel/web-hosting), puis choisissez l'hébergement web concerné.
 >>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
 > **Étape 2**
 >>
 >> Cliquez sur l'onglet `Bases de données`{.action}, puis sur `Actions`{.action} pour commander une base de données supplémentaire :
@@ -138,6 +140,8 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **2*
 >>
 >> Accédez à la page [Hébergements](/links/control-panel/web-hosting), puis choisissez l'hébergement web concerné.
 >>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
 > **Étape 2**
 >>
 >> Dans la partie `Abonnement` - `Offre`, cliquez sur le bouton `...`{.action} puis sur `Changer d'offre`{.action} :
@@ -164,6 +168,8 @@ Pour supprimer une base de données, cliquez sur les onglets ci-dessous pour aff
 > **Étape 1**
 >>
 >> Accédez à la page [Hébergements](/links/control-panel/web-hosting), puis choisissez l'hébergement web concerné.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
 > **Étape 2**
 >>
@@ -289,6 +295,8 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **2*
 >>
 >> Accédez à la page [Hébergements](/links/control-panel/web-hosting), puis choisissez l'hébergement web concerné.
 >>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
 > **Étape 2**
 >>
 >> Dans la partie `Abonnement` - `Offre`, cliquez sur le bouton `...`{.action} puis sur `Changer d'offre`{.action} :
@@ -316,6 +324,8 @@ Supprimez ensuite votre « module en 1 clic ». Pour cela, cliquez sur les ongle
 > **Étape 1**
 >>
 >> Accédez à la page [Hébergements](/links/control-panel/web-hosting), puis choisissez l'hébergement web concerné.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
 > **Étape 2**
 >>
@@ -382,6 +392,8 @@ Pour retrouver le nom de votre serveur de bases de données, cliquez sur les ong
 >>
 >> Accédez à la page [Web Cloud Databases](/links/control-panel/web-cloud-databases), puis sélectionnez le serveur de bases de données concerné.
 >>
+>> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases.png){.thumbnail}
+>>
 > **Étape 2**
 >>
 >> Le nom du serveur à utiliser est indiqué dans l'encadré `Informations de connexion`, sous-partie `SQL`, sous la mention `Nom d'hôte`.
@@ -399,6 +411,8 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **2*
 > **Étape 1**
 >>
 >> Accédez à la page [Hébergements](/links/control-panel/web-hosting), puis choisissez l'hébergement web concerné.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
 > **Étape 2**
 >>

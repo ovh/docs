@@ -1,7 +1,7 @@
 ---
 title: "Jak zarządzać modułem za 1 kliknięciem?"
 excerpt: "Dowiedz się, jak zarządzać modułem za pomocą 1 kliknięcia w Panelu klienta OVHcloud"
-updated: 2026-04-22
+updated: 2026-05-04
 ---
 
 ## Wprowadzenie 
@@ -43,7 +43,11 @@ Kliknij poniższe zakładki, aby kolejno wyświetlić każdy z **2** kroków.
 > [!tabs]
 > **Krok 1**
 >>
->> Przejdź do strony [Hosting](/links/control-panel/web-hosting) i wybierz odpowiedni hosting WWW. Kliknij zakładkę `Moduły CMS`{.action}.
+>> Przejdź do strony [Hosting](/links/control-panel/web-hosting) i wybierz odpowiedni hosting WWW.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+>> Kliknij zakładkę `Moduły CMS`{.action}.
 >>
 > **Krok 2**
 >>
@@ -64,7 +68,11 @@ Kliknij poniższe zakładki, aby kolejno wyświetlić każdy z **2** kroków.
 > [!tabs]
 > **Krok 1**
 >>
->> Przejdź do strony [Hosting](/links/control-panel/web-hosting) i wybierz odpowiedni hosting WWW. Kliknij zakładkę `Moduły CMS`{.action}.
+>> Przejdź do strony [Hosting](/links/control-panel/web-hosting) i wybierz odpowiedni hosting WWW.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+>> Kliknij zakładkę `Moduły CMS`{.action}.
 >>
 > **Krok 2**
 >>
@@ -81,6 +89,8 @@ Kliknij poniższe zakładki, aby kolejno wyświetlić każdy z **3** kroków.
 > **Krok 1**
 >>
 >> Przejdź do strony [Hosting](/links/control-panel/web-hosting) i wybierz odpowiedni hosting WWW.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
 > **Krok 2**
 >>
@@ -124,7 +134,11 @@ Kliknij poniższe zakładki, aby kolejno wyświetlić każdy z **3** kroków.
 > [!tabs]
 > **Krok 1**
 >>
->> Przejdź do strony [Hosting](/links/control-panel/web-hosting) i wybierz odpowiedni hosting WWW. Kliknij zakładkę `Bazy danych`{.action}.
+>> Przejdź do strony [Hosting](/links/control-panel/web-hosting) i wybierz odpowiedni hosting WWW.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+>> Kliknij zakładkę `Bazy danych`{.action}.
 >>
 > **Krok 2**
 >>
@@ -162,6 +176,8 @@ Kliknij poniższe zakładki, aby kolejno wyświetlić każdy z **3** kroków.
 >>
 >> Przejdź do strony [Hosting](/links/control-panel/web-hosting) i wybierz odpowiedni hosting WWW.
 >>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
 > **Krok 2**
 >>
 >> Kliknij zakładkę `Moduły CMS`{.action}.
@@ -196,7 +212,11 @@ Aby dokończyć usuwanie modułu, kliknij poniższe zakładki, aby kolejno wyśw
 > [!tabs]
 > **Krok 1**
 >>
->> Przejdź do strony [Hosting](/links/control-panel/web-hosting) i wybierz odpowiedni hosting WWW. Kliknij zakładkę `Bazy danych`{.action}.
+>> Przejdź do strony [Hosting](/links/control-panel/web-hosting) i wybierz odpowiedni hosting WWW.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+>> Kliknij zakładkę `Bazy danych`{.action}.
 >>
 > **Krok 2**
 >>

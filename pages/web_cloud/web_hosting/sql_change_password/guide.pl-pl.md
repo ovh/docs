@@ -1,7 +1,7 @@
 ---
 title: Zmiana hasła do bazy danych na hostingu
 excerpt: Dowiedz się, jak zmienić hasło do bazy danych utworzonej w ramach pakietu hostingowego
-updated: 2026-04-22
+updated: 2026-05-04
 ---
 
 ## Wprowadzenie 

@@ -1,7 +1,7 @@
 ---
 title: Cambiar la contraseña de la base de datos de un alojamiento web
 excerpt: Cómo cambiar la contraseña de una base de datos creada en un plan de hosting
-updated: 2026-04-22
+updated: 2026-05-04
 ---
 
 ## Objetivo

@@ -1,7 +1,7 @@
 ---
 title: 'Partilhar o alojamento entre vários sites'
 excerpt: 'Saiba como alojar diferentes websites no seu alojamento web'
-updated: 2026-04-22
+updated: 2026-05-04
 ---
 
 <style>
@@ -278,7 +278,7 @@ Clique nos separadores abaixo para visualizar cada uma das **7** etapas.
 >>
 >> Marque a opção `Encomendar um novo nome de domínio`{.action} e clique em `Continuar`{.action}.
 >>
->> ![Add external domain](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/add-a-domain-or-subdomain-new-step-1.png){.thumbnail}
+>> ![Add external domain](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/add-a-domain-or-sub-domain-new-step-1.png){.thumbnail}
 >>
 >>
 > **Etapa 5**

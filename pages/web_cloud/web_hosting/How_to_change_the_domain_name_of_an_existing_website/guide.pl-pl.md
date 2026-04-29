@@ -1,7 +1,7 @@
 ---
 title: "Przykłady zastosowania - Jak zmienić domenę na istniejącej stronie"
 excerpt: "Dowiedz się, jak zmienić nazwę domeny na istniejącej stronie"
-updated: 2026-04-22
+updated: 2026-05-04
 ---
 
 ## Wprowadzenie
@@ -57,6 +57,8 @@ Aby pomyślnie przejść do etapu 1 należy spełnić kilka warunków:
 > **Krok 1**
 >>
 >> Przejdź na stronę [Hosting](/links/control-panel/web-hosting), następnie wybierz odpowiedni hosting.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
 > **Krok 2**
 >>

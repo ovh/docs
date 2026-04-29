@@ -1,7 +1,7 @@
 ---
 title: "Comment gérer votre module en 1 clic ?"
 excerpt: "Découvrez comment gérer votre module en 1 clic depuis votre espace client OVHcloud"
-updated: 2026-04-22
+updated: 2026-05-04
 ---
 
 ## Objectif
@@ -43,7 +43,11 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **2*
 > [!tabs]
 > **Étape 1**
 >>
->> Accédez à la page [Hébergements](/links/control-panel/web-hosting), puis choisissez l'hébergement web concerné. Cliquez sur l'onglet `Modules en 1 clic`{.action}.
+>> Accédez à la page [Hébergements](/links/control-panel/web-hosting), puis choisissez l'hébergement web concerné.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+>> Cliquez sur l'onglet `Modules en 1 clic`{.action}.
 >>
 > **Étape 2**
 >>
@@ -63,7 +67,11 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **2*
 > [!tabs]
 > **Étape 1**
 >>
->> Accédez à la page [Hébergements](/links/control-panel/web-hosting), puis choisissez l'hébergement web concerné. Cliquez sur l'onglet `Modules en 1 clic`{.action}.
+>> Accédez à la page [Hébergements](/links/control-panel/web-hosting), puis choisissez l'hébergement web concerné.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+>> Cliquez sur l'onglet `Modules en 1 clic`{.action}.
 >>
 > **Étape 2**
 >>
@@ -80,6 +88,8 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3*
 > **Étape 1**
 >>
 >> Accédez à la page [Hébergements](/links/control-panel/web-hosting), puis choisissez l'hébergement web concerné.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
 > **Étape 2**
 >>
@@ -124,7 +134,11 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3*
 > [!tabs]
 > **Étape 1**
 >>
->> Accédez à la page [Hébergements](/links/control-panel/web-hosting), puis choisissez l'hébergement web concerné. Cliquez sur l'onglet `Bases de données`{.action}.
+>> Accédez à la page [Hébergements](/links/control-panel/web-hosting), puis choisissez l'hébergement web concerné.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+>> Cliquez sur l'onglet `Bases de données`{.action}.
 >>
 > **Étape 2**
 >>
@@ -162,6 +176,8 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3*
 >>
 >> Accédez à la page [Hébergements](/links/control-panel/web-hosting), puis choisissez l’hébergement web concerné.
 >>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
 > **Étape 2**
 >>
 >> Cliquez sur l’onglet `Modules en 1 clic`{.action}.
@@ -193,7 +209,11 @@ Pour finaliser la suppression de votre module, cliquez sur les onglets ci-dessou
 > [!tabs]
 > **Étape 1**
 >>
->> Accédez à la page [Hébergements](/links/control-panel/web-hosting), puis choisissez l'hébergement web concerné. Cliquez sur l'onglet `Bases de données`{.action}.
+>> Accédez à la page [Hébergements](/links/control-panel/web-hosting), puis choisissez l'hébergement web concerné.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+>> Cliquez sur l'onglet `Bases de données`{.action}.
 >>
 > **Étape 2**
 >>

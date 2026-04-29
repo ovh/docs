@@ -1,7 +1,7 @@
 ---
 title: "Como gerir o seu módulo em 1 clique?"
 excerpt: "Saiba como gerir o módulo 1 clique na Área de Cliente OVHcloud"
-updated: 2026-04-22
+updated: 2026-05-04
 ---
 
 ## Objetivo
@@ -43,7 +43,11 @@ Clique nos separadores abaixo para visualizar cada uma das **2** etapas.
 > [!tabs]
 > **Etapa 1**
 >>
->> Aceda à página [Alojamentos](/links/control-panel/web-hosting) e selecione o seu alojamento web. Clique no separador `Módulos "1 clique"`{.action}.
+>> Aceda à página [Alojamentos](/links/control-panel/web-hosting) e selecione o seu alojamento web.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+>> Clique no separador `Módulos "1 clique"`{.action}.
 >>
 > **Etapa 2**
 >>
@@ -64,7 +68,11 @@ Clique nos separadores abaixo para visualizar cada uma das **2** etapas.
 > [!tabs]
 > **Etapa 1**
 >>
->> Aceda à página [Alojamentos](/links/control-panel/web-hosting) e selecione o seu alojamento web. Clique no separador `Módulos "1 clique"`{.action}.
+>> Aceda à página [Alojamentos](/links/control-panel/web-hosting) e selecione o seu alojamento web.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+>> Clique no separador `Módulos "1 clique"`{.action}.
 >>
 > **Etapa 2**
 >>
@@ -81,6 +89,8 @@ Clique nos separadores abaixo para visualizar cada uma das **3** etapas.
 > **Etapa 1**
 >>
 >> Aceda à página [Alojamentos](/links/control-panel/web-hosting) e selecione o seu alojamento web.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
 > **Etapa 2**
 >>
@@ -124,7 +134,11 @@ Clique nos separadores abaixo para visualizar cada uma das **3** etapas.
 > [!tabs]
 > **Etapa 1**
 >>
->> Aceda à página [Alojamentos](/links/control-panel/web-hosting) e selecione o seu alojamento web. Clique no separador `Bases de dados`{.action}.
+>> Aceda à página [Alojamentos](/links/control-panel/web-hosting) e selecione o seu alojamento web.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+>> Clique no separador `Bases de dados`{.action}.
 >>
 > **Etapa 2**
 >>
@@ -162,6 +176,8 @@ Clique nos separadores abaixo para visualizar cada uma das **3** etapas.
 >>
 >> Aceda à página [Alojamentos](/links/control-panel/web-hosting) e selecione o seu alojamento web.
 >>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
 > **Etapa 2**
 >>
 >> Clique no separador `Módulos "1 clique"`{.action}.
@@ -196,7 +212,11 @@ Para terminar a eliminação do módulo, clique nos separadores abaixo para visu
 > [!tabs]
 > **Etapa 1**
 >>
->> Aceda à página [Alojamentos](/links/control-panel/web-hosting) e selecione o seu alojamento web. Clique no separador `Bases de dados`{.action}.
+>> Aceda à página [Alojamentos](/links/control-panel/web-hosting) e selecione o seu alojamento web.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+>> Clique no separador `Bases de dados`{.action}.
 >>
 > **Etapa 2**
 >>

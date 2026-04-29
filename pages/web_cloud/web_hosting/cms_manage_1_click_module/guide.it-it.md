@@ -1,7 +1,7 @@
 ---
 title: "Come gestire il tuo modulo in 1 click?"
 excerpt: "Questa guida ti mostra come gestire il tuo modulo in 1 click dallo Spazio Cliente OVHcloud"
-updated: 2026-04-22
+updated: 2026-05-04
 ---
 
 ## Obiettivo
@@ -43,7 +43,11 @@ Clicca sulle schede seguenti per visualizzare uno alla volta i **2** passaggi.
 > [!tabs]
 > **Passaggio 1**
 >>
->> Accedi alla pagina [Hosting](/links/control-panel/web-hosting) e seleziona il tuo hosting web. Clicca sulla scheda `CMS in 1 click`{.action}.
+>> Accedi alla pagina [Hosting](/links/control-panel/web-hosting) e seleziona il tuo hosting web.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+>> Clicca sulla scheda `CMS in 1 click`{.action}.
 >>
 > **Passaggio 2**
 >>
@@ -64,7 +68,11 @@ Clicca sulle schede seguenti per visualizzare uno alla volta i **2** passaggi.
 > [!tabs]
 > **Passaggio 1**
 >>
->> Accedi alla pagina [Hosting](/links/control-panel/web-hosting) e seleziona il tuo hosting web. Clicca sulla scheda `CMS in 1 click`{.action}.
+>> Accedi alla pagina [Hosting](/links/control-panel/web-hosting) e seleziona il tuo hosting web.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+>> Clicca sulla scheda `CMS in 1 click`{.action}.
 >>
 > **Passaggio 2**
 >>
@@ -81,6 +89,8 @@ Clicca sulle schede seguenti per visualizzare uno alla volta i **3** passaggi.
 > **Passaggio 1**
 >>
 >> Accedi alla pagina [Hosting](/links/control-panel/web-hosting) e seleziona il tuo hosting web.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
 > **Passaggio 2**
 >>
@@ -124,7 +134,11 @@ Clicca sulle schede seguenti per visualizzare uno alla volta i **3** passaggi.
 > [!tabs]
 > **Passaggio 1**
 >>
->> Accedi alla pagina [Hosting](/links/control-panel/web-hosting) e seleziona il tuo hosting web. Clicca sulla scheda `Database`{.action}.
+>> Accedi alla pagina [Hosting](/links/control-panel/web-hosting) e seleziona il tuo hosting web.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+>> Clicca sulla scheda `Database`{.action}.
 >>
 > **Passaggio 2**
 >>
@@ -162,6 +176,8 @@ Clicca sulle schede seguenti per visualizzare uno alla volta i **3** passaggi.
 >>
 >> Accedi alla pagina [Hosting](/links/control-panel/web-hosting) e seleziona il tuo hosting web.
 >>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
 > **Passaggio 2**
 >>
 >> Clicca sulla scheda `CMS in 1 click`{.action}.
@@ -196,7 +212,11 @@ Per completare l'eliminazione del tuo modulo, clicca sulle schede seguenti per v
 > [!tabs]
 > **Passaggio 1**
 >>
->> Accedi alla pagina [Hosting](/links/control-panel/web-hosting) e seleziona il tuo hosting web. Clicca sulla scheda `Database`{.action}.
+>> Accedi alla pagina [Hosting](/links/control-panel/web-hosting) e seleziona il tuo hosting web.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+>> Clicca sulla scheda `Database`{.action}.
 >>
 > **Passaggio 2**
 >>

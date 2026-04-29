@@ -1,7 +1,7 @@
 ---
 title: "Wie ändere ich das Wurzelverzeichnis einer bestehenden Website?"
 excerpt: "Erfahren Sie, wie Sie das für eine bestehende Website auf Ihrem Webhosting deklarierte Wurzelverzeichnis über Ihr OVHcloud Kundencenter ändern"
-updated: 2026-04-22
+updated: 2026-05-04
 ---
 
 ## Ziel
@@ -17,7 +17,9 @@ Bei der Nutzung Ihrer Dienste können Sie Folgendes benötigen:
 **Erfahren Sie, wie Sie das für eine bestehende Website auf Ihrem Webhosting deklarierte Wurzelverzeichnis über Ihr OVHcloud Kundencenter ändern.**
 
 > [!primary]
-> Wenn Sie die betreffende Website noch nicht auf Ihrem Webhosting erstellt haben, lesen Sie **direkt** unsere Anleitung [Mehrere Websites auf einem Webhosting einrichten](/pages/web_cloud/web_hosting/multisites_configure_multisite).
+> Dieses Verfahren gilt für die [neue Version des OVHcloud Kundencenters](/links/control-panel-ovhcloud), die derzeit als Beta verfügbar ist. Um es durchzuführen, wechseln Sie aus Ihrem gewohnten Kundencenter zu dieser Oberfläche.
+>
+> Wenn Sie die betreffende Website noch nicht auf Ihrem Webhosting erstellt haben, lesen Sie **direkt** [diese Anleitung](/pages/web_cloud/web_hosting/multisites_configure_multisite).
 >
 > Wenn Ihre Website eine Git-Konfiguration verwendet, lesen Sie zunächst unsere Anleitung "[Git mit Ihrem OVHcloud Webhosting konfigurieren und verwenden](/pages/web_cloud/web_hosting/git_integration_webhosting)", um die Git-Verknüpfung **vor** dem Fortfahren zu entfernen. Die Änderung des Wurzelverzeichnisses ist nicht möglich, wenn Ihre Website mit Git konfiguriert ist. In diesem Fall würde die Änderung des Wurzelverzeichnisses die Git-Verknüpfung stören.
 
@@ -31,8 +33,8 @@ Bei der Nutzung Ihrer Dienste können Sie Folgendes benötigen:
 
 ### Zugriff auf das OVHcloud Kundencenter
 
-- **Direkter Link:** [Hosting-Pakete](/links/control-panel/web-hosting)
-- **Navigationspfad:** `Web Cloud`{.action} > `Hosting-Pakete`{.action} > Wählen Sie Ihr Webhosting aus
+- **Direkter Link:** [Hosting-Pakete](/links/control-panel/web-hosting-sites)
+- **Navigationspfad:** `Web Cloud`{.action} > `Hosting-Pakete`{.action} > `Websites`{.action} > Wählen Sie Ihr Webhosting aus
 
 ---
 <!-- CP-NAV-END:web-hosting -->
@@ -59,19 +61,19 @@ Klicken Sie auf die nachstehenden Tabs, um die **4** Schritte nacheinander anzuz
 > [!tabs]
 > **Schritt 1**
 >>
->> Gehen Sie auf die Seite [Hosting-Pakete](/links/control-panel/web-hosting) und wählen Sie das betreffende Webhosting aus.
+>> Gehen Sie auf die Seite [Hosting-Pakete](/links/control-panel/web-hosting-sites) und wählen Sie das betreffende Webhosting aus.
 >>
->> ![Hosting-Pakete](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>> ![Hosting-Pakete](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-sites.png){.thumbnail}
 >>
 > **Schritt 2**
 >>
 >> Klicken Sie auf der angezeigten Seite auf den Tab `Meine Seiten`{.action}.
 >>
->> ![Meine Seiten](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites.png){.thumbnail}
+>> ![Meine Seiten](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-sites.png){.thumbnail}
 >>
 > **Schritt 3**
 >>
->> Klicken Sie in der angezeigten Tabelle auf den Button `⁝`{.action} rechts neben der betreffenden Website und dann auf `Eine Seite bearbeiten`{.action}.
+>> Klicken Sie in der angezeigten Tabelle auf den Button `⁝`{.action} rechts neben der betreffenden Website und dann auf `Website bearbeiten`{.action}.
 >>
 >> ![Website-Optionen](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/website-options.png){.thumbnail}
 >>

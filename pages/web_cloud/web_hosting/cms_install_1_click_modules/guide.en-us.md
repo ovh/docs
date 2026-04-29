@@ -1,7 +1,7 @@
 ---
 title: "Setting up your website with a 1-click module (CMS)"
 excerpt: "Find out how to set up your website using our 1-click modules"
-updated: 2026-04-22
+updated: 2026-05-04
 ---
 
 <style>
@@ -92,6 +92,8 @@ Click on the tabs below to display each of the **4** steps in turn.
 >>
 >> Go to the [Hosting plans](/links/control-panel/web-hosting) page, then choose the web hosting plan concerned.
 >>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
 > **Step 2**
 >>
 >> On the page that opens, click the `1-click modules`{.action} tab. You will find any 1-click modules already installed. You can manage your 1-click modules and install new ones.
@@ -143,6 +145,8 @@ Click on the tabs below to display each of the **8** steps in turn.
 > **Step 1**
 >>
 >> Go to the [Hosting plans](/links/control-panel/web-hosting) page, then choose the web hosting plan concerned.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
 > **Step 2**
 >>

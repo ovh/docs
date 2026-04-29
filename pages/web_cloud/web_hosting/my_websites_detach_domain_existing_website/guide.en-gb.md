@@ -1,7 +1,7 @@
 ---
 title: "How to detach a domain name from an existing website?"
 excerpt: "Find out how to detach a domain name or subdomain from an existing website on your web hosting"
-updated: 2026-04-22
+updated: 2026-05-04
 ---
 
 ## Objective

@@ -1,7 +1,7 @@
 ---
 title: "Installation Ihrer Website mit 1-Klick-Modulen (CMS)"
 excerpt: "Erfahren Sie hier, wie Sie Ihre Website mithilfe unserer 1-Klick-Module installieren"
-updated: 2026-04-22
+updated: 2026-05-04
 ---
 
 <style>
@@ -92,6 +92,8 @@ Klicken Sie auf die Tabs unten, um die **4** Schritte nacheinander anzuzeigen.
 >>
 >> Rufen Sie die Seite [Hosting-Pakete](/links/control-panel/web-hosting) auf und wählen Sie das betreffende Webhosting aus.
 >>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
 > **Schritt 2**
 >>
 >> Klicken Sie auf der angezeigten Seite auf den Tab `1-Klick-Module`{.action}. Hier können Sie die bereits installierten 1-Klick-Module verwalten und neue Module installieren.
@@ -143,6 +145,8 @@ Klicken Sie auf die Tabs unten, um die **8** Schritte nacheinander anzuzeigen.
 > **Schritt 1**
 >>
 >> Rufen Sie die Seite [Hosting-Pakete](/links/control-panel/web-hosting) auf und wählen Sie das betreffende Webhosting aus.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
 > **Schritt 2**
 >>

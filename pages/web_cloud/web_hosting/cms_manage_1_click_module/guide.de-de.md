@@ -1,7 +1,7 @@
 ---
 title: "1-Klick-Module verwalten"
 excerpt: "Erfahren Sie hier, wie Sie Ihr 1-Klick-Modul über Ihr OVHcloud Kundencenter verwalten"
-updated: 2026-04-22
+updated: 2026-05-04
 ---
 
 ## Ziel
@@ -42,7 +42,11 @@ Klicken Sie auf die nachfolgenden Tabs, um die **2** Schritte nacheinander anzuz
 > [!tabs]
 > **Schritt 1**
 >>
->> Öffnen Sie die Seite [Hosting-Pakete](/links/control-panel/web-hosting) und wählen Sie das betreffende Webhosting aus. Klicken Sie auf den Tab `1-Klick-Module`{.action}.
+>> Öffnen Sie die Seite [Hosting-Pakete](/links/control-panel/web-hosting) und wählen Sie das betreffende Webhosting aus.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+>> Klicken Sie auf den Tab `1-Klick-Module`{.action}.
 >>
 > **Schritt 2**
 >>
@@ -63,7 +67,11 @@ Klicken Sie auf die nachfolgenden Tabs, um die **2** Schritte nacheinander anzuz
 > [!tabs]
 > **Schritt 1**
 >>
->> Öffnen Sie die Seite [Hosting-Pakete](/links/control-panel/web-hosting) und wählen Sie das betreffende Webhosting aus. Klicken Sie auf den Tab `1-Klick-Module`{.action}.
+>> Öffnen Sie die Seite [Hosting-Pakete](/links/control-panel/web-hosting) und wählen Sie das betreffende Webhosting aus.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+>> Klicken Sie auf den Tab `1-Klick-Module`{.action}.
 >>
 > **Schritt 2**
 >>
@@ -80,6 +88,8 @@ Klicken Sie auf die nachfolgenden Tabs, um die **3** Schritte nacheinander anzuz
 > **Schritt 1**
 >>
 >> Öffnen Sie die Seite [Hosting-Pakete](/links/control-panel/web-hosting) und wählen Sie das betreffende Webhosting aus.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
 > **Schritt 2**
 >>
@@ -124,7 +134,11 @@ Klicken Sie auf die nachfolgenden Tabs, um die **3** Schritte nacheinander anzuz
 > [!tabs]
 > **Schritt 1**
 >>
->> Öffnen Sie die Seite [Hosting-Pakete](/links/control-panel/web-hosting) und wählen Sie das betreffende Webhosting aus. Klicken Sie auf den Tab `Datenbanken`{.action}.
+>> Öffnen Sie die Seite [Hosting-Pakete](/links/control-panel/web-hosting) und wählen Sie das betreffende Webhosting aus.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+>> Klicken Sie auf den Tab `Datenbanken`{.action}.
 >>
 > **Schritt 2**
 >>
@@ -162,6 +176,8 @@ Klicken Sie auf die nachfolgenden Tabs, um die **3** Schritte nacheinander anzuz
 >>
 >> Öffnen Sie die Seite [Hosting-Pakete](/links/control-panel/web-hosting) und wählen Sie das betreffende Webhosting aus.
 >>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
 > **Schritt 2**
 >>
 >> Klicken Sie auf den Tab `1-Klick-Module`{.action}.
@@ -196,7 +212,11 @@ Um die Löschung Ihres Moduls abzuschließen, klicken Sie auf die nachfolgenden 
 > [!tabs]
 > **Schritt 1**
 >>
->> Öffnen Sie die Seite [Hosting-Pakete](/links/control-panel/web-hosting) und wählen Sie das betreffende Webhosting aus. Klicken Sie auf den Tab `Datenbanken`{.action}.
+>> Öffnen Sie die Seite [Hosting-Pakete](/links/control-panel/web-hosting) und wählen Sie das betreffende Webhosting aus.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+>> Klicken Sie auf den Tab `Datenbanken`{.action}.
 >>
 > **Schritt 2**
 >>

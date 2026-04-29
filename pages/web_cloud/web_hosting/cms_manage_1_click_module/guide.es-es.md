@@ -1,7 +1,7 @@
 ---
 title: "¿Cómo gestionar su módulo en 1 clic?"
 excerpt: "Descubra cómo gestionar su módulo en 1 clic desde el área de cliente de OVHcloud"
-updated: 2026-04-22
+updated: 2026-05-04
 ---
 
 ## Objetivo
@@ -43,7 +43,11 @@ Haga clic en las pestañas a continuación para visualizar cada una de las **2**
 > [!tabs]
 > **Etapa 1**
 >>
->> Acceda a la página [Alojamientos](/links/control-panel/web-hosting) y seleccione el alojamiento web correspondiente. Haga clic en la pestaña `Módulos en 1 clic`{.action}.
+>> Acceda a la página [Alojamientos](/links/control-panel/web-hosting) y seleccione el alojamiento web correspondiente.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+>> Haga clic en la pestaña `Módulos en 1 clic`{.action}.
 >>
 > **Etapa 2**
 >>
@@ -64,7 +68,11 @@ Haga clic en las pestañas a continuación para visualizar cada una de las **2**
 > [!tabs]
 > **Etapa 1**
 >>
->> Acceda a la página [Alojamientos](/links/control-panel/web-hosting) y seleccione el alojamiento web correspondiente. Haga clic en la pestaña `Módulos en 1 clic`{.action}.
+>> Acceda a la página [Alojamientos](/links/control-panel/web-hosting) y seleccione el alojamiento web correspondiente.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+>> Haga clic en la pestaña `Módulos en 1 clic`{.action}.
 >>
 > **Etapa 2**
 >>
@@ -81,6 +89,8 @@ Haga clic en las pestañas a continuación para visualizar cada una de las **3**
 > **Etapa 1**
 >>
 >> Acceda a la página [Alojamientos](/links/control-panel/web-hosting) y seleccione el alojamiento web correspondiente.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
 > **Etapa 2**
 >>
@@ -124,7 +134,11 @@ Haga clic en las pestañas a continuación para visualizar cada una de las **3**
 > [!tabs]
 > **Etapa 1**
 >>
->> Acceda a la página [Alojamientos](/links/control-panel/web-hosting) y seleccione el alojamiento web correspondiente. Haga clic en la pestaña `Bases de datos`{.action}.
+>> Acceda a la página [Alojamientos](/links/control-panel/web-hosting) y seleccione el alojamiento web correspondiente.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+>> Haga clic en la pestaña `Bases de datos`{.action}.
 >>
 > **Etapa 2**
 >>
@@ -162,6 +176,8 @@ Haga clic en las pestañas a continuación para visualizar cada una de las **3**
 >>
 >> Acceda a la página [Alojamientos](/links/control-panel/web-hosting) y seleccione el alojamiento web correspondiente.
 >>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
 > **Etapa 2**
 >>
 >> Haga clic en la pestaña `Módulos en 1 clic`{.action}.
@@ -196,7 +212,11 @@ Para terminar de eliminar el módulo, haga clic en las pestañas a continuación
 > [!tabs]
 > **Etapa 1**
 >>
->> Acceda a la página [Alojamientos](/links/control-panel/web-hosting) y seleccione el alojamiento web correspondiente. Haga clic en la pestaña `Bases de datos`{.action}.
+>> Acceda a la página [Alojamientos](/links/control-panel/web-hosting) y seleccione el alojamiento web correspondiente.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+>> Haga clic en la pestaña `Bases de datos`{.action}.
 >>
 > **Etapa 2**
 >>

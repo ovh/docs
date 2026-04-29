@@ -1,7 +1,7 @@
 ---
 title: "Tutorial - Die URL einer Website mit mod_rewrite über die .htaccess Datei umschreiben"
 excerpt: "Diese Anleitung erklärt, wie Sie die Zugriffs-URL mithilfe des mod_rewrite über die .htaccess Datei neu schreiben."
-updated: 2026-04-22
+updated: 2026-05-04
 ---
 
 ## Ziel

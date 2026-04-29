@@ -1,7 +1,7 @@
 ---
 title: "How to modify the root folder of an existing website?"
 excerpt: "Find out how to modify the root folder declared for an existing website on your web hosting plan from your OVHcloud Control Panel"
-updated: 2026-04-22
+updated: 2026-05-04
 ---
 
 ## Objective
@@ -17,7 +17,9 @@ When using your services, you may need to:
 **Find out how to modify the root folder declared for an existing website on your web hosting plan from your OVHcloud Control Panel.**
 
 > [!primary]
-> If you have not yet created the website concerned on your web hosting plan, refer **directly** to our guide on [Hosting multiple websites on your web hosting plan](/pages/web_cloud/web_hosting/multisites_configure_multisite).
+> This procedure applies to the [new version of the OVHcloud Control Panel](/links/control-panel-ovhcloud), currently available in beta. To follow it, switch to this interface from your usual Control Panel.
+>
+> If you have not yet created the website concerned on your web hosting plan, refer **directly** to [this guide](/pages/web_cloud/web_hosting/multisites_configure_multisite).
 >
 > If your website has a Git configuration, first refer to our guide on [Configuring and using Git with your OVHcloud web hosting plan](/pages/web_cloud/web_hosting/git_integration_webhosting) to remove the Git association **before** continuing. The root folder modification is unavailable if your website is configured with Git. If that were the case, changing the root folder would disrupt the Git association.
 
@@ -31,8 +33,8 @@ When using your services, you may need to:
 
 ### OVHcloud Control Panel Access
 
-- **Direct link:** [Hosting plans](/links/control-panel/web-hosting)
-- **Navigation path:** `Web Cloud`{.action} > `Hosting plans`{.action} > Select your web hosting plan
+- **Direct link:** [Hosting plans](/links/control-panel/web-hosting-sites)
+- **Navigation path:** `Web Cloud`{.action} > `Hosting plans`{.action} > `Sites`{.action} > Select your web hosting plan
 
 ---
 <!-- CP-NAV-END:web-hosting -->
@@ -59,19 +61,19 @@ Click on the tabs below to view each of the **4** steps.
 > [!tabs]
 > **Step 1**
 >>
->> Go to the [Hosting plans](/links/control-panel/web-hosting) page, then select the web hosting plan concerned.
+>> Go to the [Hosting plans](/links/control-panel/web-hosting-sites) page, then select the web hosting plan concerned.
 >>
->> ![Hosting plans](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>> ![Hosting plans](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-sites.png){.thumbnail}
 >>
 > **Step 2**
 >>
 >> On the page that opens, click on the `My sites`{.action} tab.
 >>
->> ![My sites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites.png){.thumbnail}
+>> ![My sites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-sites.png){.thumbnail}
 >>
 > **Step 3**
 >>
->> In the table that appears, click on the `⁝`{.action} button to the right of the website concerned, then on `Edit a site`{.action}.
+>> In the table that appears, click on the `⁝`{.action} button to the right of the website concerned, then on `Edit site`{.action}.
 >>
 >> ![Website options](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/website-options.png){.thumbnail}
 >>

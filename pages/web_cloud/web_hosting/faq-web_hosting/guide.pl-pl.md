@@ -1,7 +1,7 @@
 ---
 title: "FAQ Web Hosting"
 excerpt: "Poznaj najważniejsze pytania dotyczące hostingu WWW OVHcloud"
-updated: 2026-04-22
+updated: 2026-05-04
 ---
 
 <style>
