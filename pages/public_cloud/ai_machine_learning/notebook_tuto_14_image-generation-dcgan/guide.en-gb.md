@@ -44,6 +44,8 @@ You can launch the notebook from the [OVHcloud Control Panel](/links/manager) or
 
 ### Launching a Jupyter notebook with "Conda" via UI (Control Panel)
 
+<!-- CP-STEPS-START:launch-notebook-ui-control-panel -->
+
 To launch your notebook from the [OVHcloud Control Panel](/links/manager), refer to the following steps.
 
 #### Code editor
@@ -62,6 +64,8 @@ Using GPUs is recommended because manipulating images is a training intensive ta
 >
 > Here, using `1 GPU` is sufficient.
 >
+
+<!-- CP-STEPS-END:launch-notebook-ui-control-panel -->
 
 ### Launching a Jupyter notebook with "conda" via CLI
 
