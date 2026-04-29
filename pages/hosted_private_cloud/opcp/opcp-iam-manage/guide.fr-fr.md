@@ -171,7 +171,6 @@ Le tableau ci-dessous récapitule les accès de chaque rôle sur les application
 | **OpenStack** | reader (vue) | 🟡 | ❌ | ✅ | ✅ |
 | **OpenStack** | member (édition) | ❌ | ❌ | ✅ | ✅ |
 | **OpenStack** | admin | ❌ | ❌ | ✅ | ✅ |
-| **Grafana** | view | ✅ | ✅ | ✅ | ✅ |
 | **Grafana** | edit (dashboards) | ❌ | ✅ | ✅ | ✅ |
 | **Netbox** | reader | ✅ | ✅ | ✅ | ✅ |
 | **Netbox** | operator | ❌ | ✅ | ✅ | ✅ |
