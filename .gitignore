@@ -15,3 +15,7 @@ cp-extraction
 CLAUDE.md
 CLAUDE.local.md
 .mcp.json
+.github/agents/doc-writer.agent.md
+.github/instructions/object-storage-docs.instructions.md
+.github/agents/analyst.agent.md
+.github/agents/output/
