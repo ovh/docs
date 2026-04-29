@@ -1,7 +1,7 @@
 ---
 title: Informations Anti-Hack - Serveur dédié et VPS
 excerpt: Découvrez les informations visibles et fournies lorsque la protection Anti-Hack interne d'OVHcloud est déclenchée
-updated: 2026-XX-XX
+updated: 2026-04-29
 ---
 
 **Découvrez ce qui se passe lorsque la protection Anti-Hack d'OVHcloud s'active sur votre Serveur dédié ou votre VPS.**
@@ -13,7 +13,7 @@ updated: 2026-XX-XX
 
 ## Informations anti-hack
 
-### **Serveur dédié**
+### Serveur dédié
 
 Lorsque la protection Anti-Hack est déclenchée sur votre Serveur dédié, un message s'affiche dans votre [espace client OVHcloud](/links/manager) : « *Votre serveur a été compromis. Veuillez contacter notre équipe d'assistance pour obtenir des instructions sur la marche à suivre.* »
 
@@ -26,7 +26,7 @@ Selon la criticité de la protection Anti-Hack déclenchée par OVHcloud, les ac
 
 ![informations antihack SD](images/hacked-service.png){.thumbnail}
 
-OVHcloud ouvrira également un ticket de support en votre nom contenant les informations suivantes :
+Dans le cas où votre serveur est placé en mode rescue FTP, OVHcloud ouvrira également un ticket de support en votre nom contenant les informations suivantes :
 
 >
 > Cher client,
@@ -52,13 +52,13 @@ situation ne devienne pas critique.
 > Support client OVHcloud
 > L'équipe OVHcloud
 
-### **VPS**
+### VPS
 
-Lorsque la protection Anti-Hack est déclenchée sur votre VPS, celui-ci est placé en mode rescue.
+Lorsque la protection Anti-Hack est déclenchée sur votre VPS, celui-ci peut être placé en mode rescue selon la sévérité de la menace détectée.
 
 ![informations antihack VPS](images/hacked-vps.png){.thumbnail}
 
-OVHcloud ouvrira également un ticket de support en votre nom contenant les informations suivantes :
+Dans le cas où votre VPS est placé en mode rescue, OVHcloud ouvrira également un ticket de support en votre nom contenant les informations suivantes :
 
 >
 > Cher client,

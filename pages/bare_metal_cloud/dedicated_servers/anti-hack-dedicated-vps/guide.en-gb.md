@@ -1,7 +1,7 @@
 ---
 title: Anti-Hack information - Dedicated Server and VPS
 excerpt: Find out what information will be visible and provided when OVHcloud's internal Anti-Hack protection is triggered
-updated: 2026-XX-XX
+updated: 2026-04-29
 ---
 
 **Learn what happens when OVHcloud's Anti-Hack protection activates on your Dedicated Server or VPS.**
@@ -13,7 +13,7 @@ updated: 2026-XX-XX
 
 ## Anti-Hack information
 
-### **Dedicated Server**
+### Dedicated Server
 
 When Anti-Hack protection is triggered on your Dedicated Server, you will see a message in the [OVHcloud Control Panel](/links/manager): "*Your server has been hacked. Please contact our support team for instructions on what to do next.*"
 
@@ -26,7 +26,7 @@ Depending on the criticity of the Anti-Hack protection triggered by OVHcloud, th
 
 ![antihack information SD](images/hacked-service.png){.thumbnail}
 
-OVHcloud will also open a support ticket on your behalf containing the following:
+In the case your server is placed in rescue FTP mode, OVHcloud will also open a support ticket on your behalf containing the following:
 
 >
 > Dear Customer,
@@ -52,13 +52,13 @@ situation does not become critical.
 > OVHcloud Customer Support
 > The OVHcloud Team
 
-### **VPS**
+### VPS
 
-When Anti-Hack protection is triggered on your VPS, your VPS will be placed in rescue mode.
+When Anti-Hack protection is triggered on your VPS, it may be placed in rescue mode depending on the severity of the threat detected.
 
 ![antihack information VPS](images/hacked-vps.png){.thumbnail}
 
-OVHcloud will also open a support ticket on your behalf containing the following:
+In the case your VPS is placed in rescue mode, OVHcloud will also open a support ticket on your behalf containing the following:
 
 >
 > Dear Customer,
