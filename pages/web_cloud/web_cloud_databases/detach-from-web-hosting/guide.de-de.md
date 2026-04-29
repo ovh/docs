@@ -28,6 +28,7 @@ Die Lösung [Web Cloud Databases](/links/web/databases) ist in unseren [Performa
 
 ## In der praktischen Anwendung
 
+<!-- CP-STEPS-START:detach-wcdb-steps -->
 Klicken Sie auf die Tabs, um die **3** Schritte anzuzeigen.
 
 > [!tabs]
@@ -49,6 +50,7 @@ Klicken Sie auf die Tabs, um die **3** Schritte anzuzeigen.
 >>
 >> ![Detach Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/detach-my-web-cloud-databases.png){.thumbnail}
 >>
+<!-- CP-STEPS-END:detach-wcdb-steps -->
 
 Nach Abschluss der 3 Schritte wird Ihr neuer Dienst für Web Cloud Databases innerhalb weniger Stunden bereitgestellt.
 

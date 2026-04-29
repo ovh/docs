@@ -61,6 +61,7 @@ Aby uzyskać więcej informacji, zapoznaj się z naszymi przewodnikami "[Wszystk
 >
 > W przeciwieństwie do nazwy domeny, nie ma tu pojęcia abonenta strefy DNS, lecz zarządzanie kontaktami w przypadku strefy DNS OVHcloud. Jeśli chcesz przełączyć zarządzanie swoją strefą DNS na inne konto OVHcloud, postępuj zgodnie z naszym przewodnikiem [Zarządzanie kontaktami swoich usług](/pages/account_and_service_management/account_information/managing_contacts).
 
+<!-- CP-STEPS-START:access-dns-zone-management -->
 Aby uzyskać dostęp do interfejsu zarządzania strefą DNS OVHcloud, kliknij poniższe zakładki, aby wyświetlić kolejne **2** kroki.
 
 > [!tabs]
@@ -75,6 +76,7 @@ Aby uzyskać dostęp do interfejsu zarządzania strefą DNS OVHcloud, kliknij po
 >> W tabeli, która się wyświetla dla każdego wiersza wyświetlony zostanie rekord DNS powiązany z Twoją nazwą domeny w OVHcloud. Możesz sortować ich zawartość według typu rekordu lub nazwy domeny.
 >>
 >> ![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/tab.png){.thumbnail}
+<!-- CP-STEPS-END:access-dns-zone-management -->
 
 ### Edycja strefy DNS OVHcloud dla Twojej nazwy domeny
 
@@ -99,6 +101,7 @@ W tym celu możesz ręcznie zmienić strefę w trybie tekstowym lub skorzystać 
 > Tylko dla zaawansowanych użytkowników. Zachowaj szczególną ostrożność podczas wprowadzania zmian.
 >
 
+<!-- CP-STEPS-START:edit-text-mode -->
 Aby zmienić strefę DNS OVHcloud w trybie tekstowym, kliknij poniższe zakładki, aby wyświetlić kolejne **2** kroki.
 
 > [!tabs]
@@ -115,6 +118,7 @@ Aby zmienić strefę DNS OVHcloud w trybie tekstowym, kliknij poniższe zakładk
 >> > [!warning]
 >> >
 >> > Nie zmieniaj wpisów DNS strefy DNS za pomocą przycisku `Zmień w trybie tekstowym`{.action} na rzecz serwerów DNS zewnętrznych wobec OVHcloud. Ta strefa DNS działa **tylko** z serwerami DNS OVHcloud.
+<!-- CP-STEPS-END:edit-text-mode -->
 
 #### Skorzystaj z naszych asystentów konfiguracji
 
@@ -127,6 +131,7 @@ Od tego momentu niniejszy przewodnik opisuje jedynie konfigurację przy użyciu 
 
 **Kliknij cztery nagłówki poniżej, aby wyświetlić wyjaśnienia.**
 
+<!-- CP-STEPS-START:add-dns-record -->
 /// details | Dodanie nowego rekordu DNS
 
 Aby dodać nowy rekord DNS, kliknij poniższe zakładki, aby wyświetlić kolejne **2** kroki.
@@ -153,7 +158,9 @@ Aby dodać nowy rekord DNS, kliknij poniższe zakładki, aby wyświetlić kolejn
 >> > Wówczas należy mieć jako cel `mydomain.ovh.` a nie `mydomain.ovh` bez **.** na końcu.
 
 ///
+<!-- CP-STEPS-END:add-dns-record -->
 
+<!-- CP-STEPS-START:modify-dns-record -->
 /// details | Modyfikacja istniejącego rekordu DNS
 
 Aby zmodyfikować rekord DNS, kliknij poniższe zakładki, aby wyświetlić kolejne **2** kroki.
@@ -174,7 +181,9 @@ Aby zmodyfikować rekord DNS, kliknij poniższe zakładki, aby wyświetlić kole
 >> ![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/modify-record.png){.thumbnail}
 
 ///
+<!-- CP-STEPS-END:modify-dns-record -->
 
+<!-- CP-STEPS-START:delete-dns-record -->
 /// details | Usunięcie rekordu DNS
 
 Aby usunąć rekord DNS, kliknij poniższe zakładki, aby wyświetlić kolejne **2** kroki.
@@ -197,7 +206,9 @@ Aby usunąć rekord DNS, kliknij poniższe zakładki, aby wyświetlić kolejne *
 >> ![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/delete-record.png){.thumbnail}
 
 ///
+<!-- CP-STEPS-END:delete-dns-record -->
 
+<!-- CP-STEPS-START:reset-dns-zone -->
 /// details | Zresetuj strefę DNS
 
 Zresetowanie strefy DNS pozwala na przywrócenie minimalnej konfiguracji z domyślnymi wpisami OVHcloud lub wpisami usług. Możesz również wskazać swoją nazwę domeny na niestandardowy hosting WWW oraz usługi e-mail.
@@ -250,11 +261,13 @@ Aby zresetować strefę DNS, kliknij poniższe zakładki, aby wyświetlić kolej
 >> ![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/dns-zone-reset-02.png){.thumbnail}
 
 ///
+<!-- CP-STEPS-END:reset-dns-zone -->
 
 ### Czas propagacji
 
 Czas propagacji wprowadzonych w strefie DNS zmian wynosi maksymalnie 24 godziny.
 
+<!-- CP-STEPS-START:modify-ttl -->
 Jeśli chcesz skrócić czas propagacji w przypadku kolejnych modyfikacji strefy DNS OVHcloud, możesz to uczynić, do pewnego stopnia, przez dostosowanie TTL (*Time To Live*), który zostanie zastosowany do wszystkich rekordów strefy DNS. W tym celu kliknij poniższe zakładki, aby wyświetlić kolejne **2** kroki.
 
 > [!tabs]
@@ -269,6 +282,7 @@ Jeśli chcesz skrócić czas propagacji w przypadku kolejnych modyfikacji strefy
 >> Kliknij przycisk `Zmień domyślny TTL`{.action} po prawej stronie lub poniżej tabeli i postępuj zgodnie z kolejnymi instrukcjami, które się wyświetlą.
 >>
 >> Możesz również zmienić TTL rekordu DNS. Operacja ta może być jednak przeprowadzona tylko na jednym rekordzie, po zmianie lub po dodaniu rekordu.
+<!-- CP-STEPS-END:modify-ttl -->
 
 ## Sprawdź również
 

@@ -89,7 +89,6 @@ O seu serviço Google Workspace já confia na OVHcloud enquanto fornecedor de se
 
 ### Determinar a confiança da conta OVHcloud e configurar a ligação
 
-<!-- CP-STEPS-START:register-gws-ovhcloud -->
 Para adicionar o Google Workspace como fornecedor de identidade de confiança, é necessário fornecer os metadados do fornecedor de identidade na sua Área de Cliente OVHcloud. [Aceda à página SAML SSO](/links/control-panel/iam-saml-sso), depois clique no botão `Ligação SSO`{.action}.
 
 ![Para aceder ao menu IAM](images/access_to_the_IAM_menu_03.png){.thumbnail}
@@ -113,7 +112,6 @@ O botão `...`{.action} permite atualizar ou eliminar o SO, e consultar os respe
 ![Ligação SSO OVHcloud etapa 5](images/ovhcloud_user_management_connect_sso_5.png){.thumbnail}
 
 O seu Google Workspace é agora considerado um fornecedor de confiança. No entanto, deve mesmo assim adicionar grupos à sua conta OVHcloud.
-<!-- CP-STEPS-END:register-gws-ovhcloud -->
 
 > [!warning]
 > Se, nesta fase, estiver a tentar conectar-se através de SSO, é provável que apareça uma mensagem de erro `Not in valid groups`.
@@ -143,7 +141,6 @@ De seguida, deverá atribuir **funções** a estes grupos de utilizadores na OVH
 
 ![Configuração dos grupos de utilizadores](images/google_workspace_web_mobile_setup_groups.png){.thumbnail}
 
-<!-- CP-STEPS-START:declare-groups-ovhcloud -->
 Na sua Área de Cliente OVHcloud, aceda à secção `Identidades`{.action} e aceda ao separador `Grupos de utilizadores`{.action}. De seguida, clique no botão `Declarar um grupo`{.action} e introduza os campos:
 
 - **Nome do grupo**: Nome do grupo no Google Workspace
@@ -156,7 +153,6 @@ Na sua Área de Cliente OVHcloud, aceda à secção `Identidades`{.action} e ace
 De seguida, poderá verificar que o grupo é adicionado à sua conta OVHcloud na secção "Grupos":
 
 ![Grupos de gestão de utilizadores Google Workspace](images/ovhcloud_user_management_groups_3.png){.thumbnail}
-<!-- CP-STEPS-END:declare-groups-ovhcloud -->
 
 Quando se ligar a um utilizador do grupo **Intern**, a sua conta OVHcloud reconhecerá que o utilizador tem o papel "UNPRIVILEGED" especificado pelo seu grupo.
 

@@ -53,6 +53,7 @@ Per accedere e utilizzare l’accesso SSH di un hosting Web sono necessari:
 
 ### 1 - Assicurati che l’utente SSH scelto disponga dell’accesso SSH <a name="user-ssh-enablement"></a> attivo
 
+<!-- CP-STEPS-START:check-ssh-access -->
 Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **3** passi.
 
 > [!tabs]
@@ -83,9 +84,11 @@ Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **3** pa
 >> - 3: Controlla il riepilogo della modifica richiesta e clicca su `Conferma`{.action}.
 >>
 >> > Se non hai la possibilità di attivarlo, assicurati che [la tua soluzione di hosting Web OVHcloud](/links/web/hosting) disponga di un accesso SSH.
+<!-- CP-STEPS-END:check-ssh-access -->
 
 #### 2 - Recupera le informazioni necessarie per accedere in SSH <a name="sshlogin"></a>
 
+<!-- CP-STEPS-START:retrieve-ssh-login -->
 Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **3** passi.
 
 > [!tabs]
@@ -111,6 +114,7 @@ Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **3** pa
 >> |**Porta di connessione al server SSH**| Individua la voce `Porta SSH`. Di default, il numero della porta SSH è `22`.|
 >> |**Utente SSH attivo**| Nella tabella in fondo alla pagina, trovatelo nella colonna `Login`.<br>Ricordiamo che questo utente deve [disporre di un accesso SSH attivo](#user-ssh-enablement).|
 >> |**Password utente SSH**| Se hai dimenticato questa password, clicca sul pulsante `...`{.action} a destra della riga corrispondente all’utente in questione nella tabella situata in fondo alla pagina e poi su `Modificare la password`{.action}.|
+<!-- CP-STEPS-END:retrieve-ssh-login -->
 
 ### 3 - Accedi in SSH allo spazio di storage del tuo hosting Web
 

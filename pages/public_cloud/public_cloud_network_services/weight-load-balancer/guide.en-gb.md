@@ -67,6 +67,7 @@ You should see alternating responses from the two members:
 
 ### Step 2 - Set the Weight of a member to 0
 
+<!-- CP-STEPS-START:step2-set-weight-horizon-access -->
 > [!tabs]
 > OVHcloud API
 >> Log in to the OVHcloud APIv6 interface according to the relevant guide ([First steps with the OVHcloud API](/pages/manage_and_operate/api/first-steps)).
@@ -158,6 +159,7 @@ You should see alternating responses from the two members:
 >> $ openstack loadbalancer member set --weight 0 <pool> <member_0>
 >> ```
 >>
+<!-- CP-STEPS-END:step2-set-weight-horizon-access -->
 
 ### Step 3 - Verify Member Status
 

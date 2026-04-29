@@ -98,6 +98,7 @@ La configuración, la gestión y la responsabilidad de los servicios que OVHclou
 
 ### Cambiar la contraseña de administrador mediante phpMyAdmin desde el área de cliente de OVHcloud <a name="via-phpmyadmin"></a>
 
+<!-- CP-STEPS-START:access-phpmyadmin -->
 ¿Ya no tiene acceso al panel de administración del CMS o no puede utilizar la funcionalidad "Contraseña olvidada" porque no puede acceder a la dirección de correo electrónico asociada? Utilice phpMyAdmin desde su [área de cliente de OVHcloud](/links/manager) para restaurar la contraseña directamente desde la base de datos.
 
 Haga clic en las fichas siguientes para ver cada una de las **4** etapas.
@@ -120,6 +121,7 @@ Haga clic en las fichas siguientes para ver cada una de las **4** etapas.
 > **Etapa 4**
 >>
 >> Introduzca los identificadores de la base de datos (nombre de usuario y contraseña) que haya definido al crear la base de datos. Una vez conectado a phpMyAdmin, haga clic en la pestaña correspondiente a continuación.
+<!-- CP-STEPS-END:access-phpmyadmin -->
 
 > [!tabs]
 > WordPress

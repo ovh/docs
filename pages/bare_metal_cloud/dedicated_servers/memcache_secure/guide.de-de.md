@@ -1,6 +1,6 @@
 ---
-title: Einen Server mit Memcached-Dienst sichern
-excerpt: In dieser Anleitung erfahren Sie, wie Sie Ihren Memcached-Dienst sichern
+title: "Dedicated Server mit Memcached-Dienst absichern"
+excerpt: "Sichern Sie den Memcached-Dienst auf Ihrem Dedicated Server ab, um unbefugten Remote-Zugriff und Datenlecks zu verhindern."
 updated: 2018-03-02
 ---
 
@@ -116,5 +116,9 @@ sudo systemctl force-reload memcached
 ```
 
 ## Weiterführende Informationen
+
+- [Dedicated Server absichern](/pages/bare_metal_cloud/dedicated_servers/securing-a-dedicated-server)
+
+- [Dedicated Server - iptables unter Linux konfigurieren](/pages/bare_metal_cloud/dedicated_servers/firewall-Linux-iptable)
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

@@ -1,6 +1,6 @@
 ---
-title: Amélioration de la résilience réseau sur les serveurs Bare Metal
-excerpt: "Découvrez comment renforcer la résilience des interfaces publiques et privées sur vos serveurs Bare Metal OVHcloud avec la nouvelle architecture d'agrégation réseau"
+title: "Amélioration de la résilience réseau sur les serveurs Bare Metal"
+excerpt: "Renforcez la résilience réseau de votre serveur Bare Metal OVHcloud en configurant l'agrégation des interfaces publiques et privées"
 updated: 2025-10-28
 ---
 
@@ -52,5 +52,7 @@ Sous réserve d’une configuration correcte côté OS, cette évolution permet 
 - **Une évolution transparente** : aucune modification requise pour les agrégations existantes, hors cas spécifiques mentionnés ci-dessus.
 
 ## Aller plus loin
+
+[Comment configurer l'agrégation de liens avec LACP dans Debian 12 ou Ubuntu 24.04](/pages/bare_metal_cloud/dedicated_servers/lacp-enable-netplan)
 
 Rejoignez notre [communauté d'utilisateurs](/links/community).

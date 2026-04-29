@@ -1,6 +1,6 @@
 ---
-title: OVHcloud AntiSpam - Bonnes pratiques et déblocage d'une adresse IP
-excerpt: Découvrez nos bonnes pratiques antispam et comment débloquer une adresse IP bloquée pour SPAM
+title: "OVHcloud AntiSpam - Bonnes pratiques et déblocage d'une adresse IP"
+excerpt: "Appliquez les bonnes pratiques antispam OVHcloud et débloquez une adresse IP de serveur dédié signalée pour envoi de spam"
 updated: 2026-01-06
 ---
 
@@ -291,5 +291,7 @@ Si vos e-mails sont conformes, vous pouvez nous en informer en envoyant un exemp
 Une fois les informations envoyées, notre service d'assistance communiquera avec Vade Secure pour une analyse plus approfondie de la situation.
 
 ## Aller plus loin
+
+[Sécuriser un serveur dédié](/pages/bare_metal_cloud/dedicated_servers/securing-a-dedicated-server)
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).

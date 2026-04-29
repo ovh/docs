@@ -1,6 +1,6 @@
 ---
-title: 'Tworzenie kilku sieci VLAN w prywatnej sieci vRack'
-excerpt: 'Dowiedz się, jak utworzyć kilka sieci VLAN w prywatnej sieci vRack'
+title: "Tworzenie wielu sieci VLAN w sieci vRack na serwerze dedykowanym"
+excerpt: "Twórz i zarządzaj wieloma sieciami VLAN w sieci OVHcloud vRack, aby segmentować ruch sieciowy między serwerami dedykowanymi."
 updated: 2026-02-20
 ---
 
@@ -360,49 +360,49 @@ updated: 2026-02-20
 
 Połącz się z serwerem przez zdalny pulpit i otwórz aplikację "Server Manager". Wybierz następnie `Server lokalny`{.action}, po czym kliknij link `Wyłączone`{.action} obok **Tworzenie zespołu kart interfejsu sieciowego**:
 
-![Windows VLAN](images/vrack2-windows-01.png){.thumbnail}
+![Menedżer serwera z wyłączonym NIC Teaming](images/vrack2-windows-01.png){.thumbnail}
 
 Następnie kliknij prawym przyciskiem myszy interfejs sieciowy i wybierz `Dodaj do nowego zespołu`{.action}.
 
-![Windows vLAN](images/vrack2-windows-02.0.png){.thumbnail}
+![Menu kontekstowe dodawania interfejsu do nowego zespołu](images/vrack2-windows-02.0.png){.thumbnail}
 
 W oknie, które się wyświetli, utwórz nowy zespół, wpisując nazwę zespołu w polu **Nazwa zespołu**. Po zakończeniu zatwierdź przyciskiem `OK`{.action}.
 
-![Windows VLAN](images/vrack2-windows-02.png){.thumbnail}
+![Okno nowego zespołu z nazwą i przyciskiem OK](images/vrack2-windows-02.png){.thumbnail}
 
 Następnie podaj tag VLAN. W panelu **KARTY I INTERFEJSY** na ekranie **Tworzenie zespołu kart interfejsu sieciowego**, przejdź do zakładki `Interfejsy zespołów`{.action} i kliknij prawym przyciskiem myszy interfejs, który właśnie dodałeś do nowego zespołu kart sieciowych, po czym kliknij `Właściwości`{.action}. Następnie kliknij `Określona sieć VLAN`{.action} i podaj tag:
 
-![Windows VLAN](images/vrack2-windows-03.png){.thumbnail}
+![Właściwości interfejsu NIC Teaming ze znacznikiem VLAN](images/vrack2-windows-03.png){.thumbnail}
 
 Teraz skonfiguruj adres IP VLAN: Kliknij przycisk `Start`{.action} w menu startowym, a następnie kliknij `Panel sterowania`{.action}:
 
-![Windows VLAN](images/vrack2-windows-04.png){.thumbnail}
+![Menu Start Windows z opcją Panel sterowania](images/vrack2-windows-04.png){.thumbnail}
 
 Kliknij `Sieć i Internet`{.action}.
 
-![Windows VLAN](images/vrack2-windows-05.png){.thumbnail}
+![Panel sterowania z kategorią Sieć i Internet](images/vrack2-windows-05.png){.thumbnail}
 
 Kliknij `Centrum sieci i udostępniania`{.action}:
 
-![Windows VLAN](images/vrack2-windows-06.png){.thumbnail}
+![Centrum sieci i udostępniania w Windows](images/vrack2-windows-06.png){.thumbnail}
 
 Kliknij `Zmień ustawienia karty sieciowej`{.action}:
 
-![Windows VLAN](images/vrack2-windows-07.png){.thumbnail}
+![Zmiana ustawień karty w Centrum sieci i udostępniania](images/vrack2-windows-07.png){.thumbnail}
 
 Następnie kliknij prawym przyciskiem myszy interfejs VLAN, po czym kliknij `Właściwości`{.action}:
 
-![Windows VLAN](images/vrack2-windows-08.png){.thumbnail}
+![Menu kontekstowe interfejsu VLAN z opcją Właściwości](images/vrack2-windows-08.png){.thumbnail}
 
 W naszym przykładzie `Ethernet 2` to interfejs używany w sieci vRack. Możliwe jest jednak, że karta sieciowa vRack używa innego interfejsu. Korzystaj z interfejsu, który nie posiada głównego adresu IP serwera lub który używa przypisanego do siebie adresu IP.
 
 Kliknij dwa razy `Internet Protocol Version 4 (TCP/IPv4)`{.action}.
 
-![Windows VLAN](images/vrack2-windows-09.png){.thumbnail}
+![Właściwości karty z zaznaczonym protokołem IPv4](images/vrack2-windows-09.png){.thumbnail}
 
 W kolejnym kroku kliknij `Uźyj następującego adresu IP`{.action}. **Adres IP**: wprowadź adres IP z Twojego zakresu adresów prywatnych. **Maska podsieci**, wprowadź "255.255.0.0".
 
-![Windows VLAN](images/vrack2-windows-10.png){.thumbnail}
+![Ustawienia IPv4 z adresem IP i maską podsieci VLAN](images/vrack2-windows-10.png){.thumbnail}
 
 Na koniec kliknij przycisk `OK`{.action}, aby zapisać modyfikacje, po czym zrestartuj serwer.
 
@@ -410,4 +410,5 @@ Na koniec kliknij przycisk `OK`{.action}, aby zapisać modyfikacje, po czym zres
 
 [Konfiguracja kilku serwerów dedykowanych w sieci vRack](/pages/bare_metal_cloud/dedicated_servers/vrack_configuring_on_dedicated_server)
 
+- [Konfiguracja vRack między Public Cloud a serwerem dedykowanym](/pages/bare_metal_cloud/dedicated_servers/configuring-the-vrack-between-the-public-cloud-and-a-dedicated-server)
 Dołącz do [grona naszych użytkowników](/links/community).

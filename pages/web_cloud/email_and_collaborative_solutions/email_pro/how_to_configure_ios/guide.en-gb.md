@@ -38,11 +38,13 @@ You can configure Email Pro accounts on email clients, if they are compatible. B
 
 ### Adding an account <a name="addaccount"></a>
 
+<!-- CP-STEPS-START:server-name-lookup -->
 > [!primary]
 >
 > In this guide, we will use as the server name: pro?.mail.ovh.net. You will need to replace the "?" with the actual number indicating the appropriate server for your Email Pro service.
 >
 > Click [this link](/links/control-panel/web-email-pro) to access the `Email Pro`{.action} section. The server name is visible in the **Connection** section of the `General information`{.action} tab.
+<!-- CP-STEPS-END:server-name-lookup -->
 
 On your device’s home screen, go to `Settings`{.action} (cogwheel icon). There are several ways you can add an account, depending on your iOS version:
 

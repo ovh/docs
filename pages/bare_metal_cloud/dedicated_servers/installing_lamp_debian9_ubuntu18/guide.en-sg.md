@@ -1,6 +1,6 @@
 ---
-title: How to set up a web server (LAMP) on Debian or Ubuntu
-excerpt: Find out how to configure a LAMP-based web server
+title: "How to set up a web server (LAMP) on Debian or Ubuntu"
+excerpt: "Set up a LAMP web server (Linux, Apache, MySQL, PHP) on a Debian or Ubuntu dedicated server step by step."
 updated: 2023-05-10
 ---
 
@@ -173,13 +173,13 @@ MariaDB [(none)]> exit;
 
 [Configuring a firewall](/pages/bare_metal_cloud/dedicated_servers/firewall-Linux-iptable) (*iptables*) will enhance the security of your server. This process can be simplified by using the frontend "Uncomplicated Firewall" (UFW) and its preset of profiles. Install UFW:
 
-```bash
+``` {.bash}
 sudo apt install ufw
 ```
 
 The relevant profiles are labelled as "WWW" in the application list:
 
-```bash
+``` {.bash}
 sudo ufw app list | grep WWW
   WWW
   WWW Cache
@@ -199,13 +199,13 @@ sudo ufw allow 'WWW Full'
 
 Since all ports not explicitly allowed will be **blocked** after enabling the firewall, make sure to allow SSH connections (port 22 in a default configuration) as well:
 
-``` {.bash}
+```bash
 sudo ufw allow 'SSH'
 ```
 
 Finally, activate the firewall rules and verify the configuration:
 
-```bash
+``` {.bash}
 sudo ufw enable
 ```
 
@@ -240,6 +240,8 @@ Please refer to our guide on [Editing a DNS zone](/pages/web_cloud/domains/dns_z
 > [!primary]
 >
 > In order to establish secure connections (`https`), the web server has to be secured via an official Certificate Authority such as "[Let’s Encrypt](https://letsencrypt.org/)" which offers free certificates. You will need to install a client tool (such as "Certbot") and configure Apache accordingly. Without this step, your website or application can only accept unencrypted `http` requests.
+> 
+> As an alternative, OVHcloud offers the solution [SSL Gateway](/links/web/ssl-gateway). Refer to the [guide pages](/pages/web_cloud/ssl_gateway/order-ssl-gateway) as well for further information.
 > 
 
 First make sure that your domain name has the correct records in the DNS zone, i.e. is mapped to the IP address of your server.
@@ -279,5 +281,7 @@ Certbot will automatically renew the certificates. There are no further steps ne
 [Certbot documentation](https://eff-certbot.readthedocs.io/en/stable/)
 
 [NGINX documentation](https://nginx.org/en/docs/) (Apache alternative)
+
+[How to secure a Dedicated Server](/pages/bare_metal_cloud/dedicated_servers/securing-a-dedicated-server)
 
 Join our [community of users](/links/community).

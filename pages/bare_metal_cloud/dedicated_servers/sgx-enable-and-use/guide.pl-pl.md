@@ -1,6 +1,6 @@
 ---
-title: "Jak zarządzać Intel SGX na serwerze dedykowanym"
-excerpt: "Odkryj, jak aktywować opcję SGX na swoim serwerze dedykowanym i zainstalować stos oprogramowania SGX dla systemu Linux"
+title: "Serwer dedykowany - Intel SGX: aktywacja i użytkowanie"
+excerpt: "Aktywuj Intel SGX na serwerze dedykowanym OVHcloud i zainstaluj stos oprogramowania SGX dla systemu Linux."
 updated: 2025-11-20
 ---
 
@@ -249,3 +249,5 @@ Aby dowiedzieć się więcej (np. jak opracować własną aplikację, zarejestro
 - [Intel SGX Attestation services](https://software.intel.com/en-us/sgx/attestation-services)
 - [Intel SGX linux-2.26 documentation](https://download.01.org/intel-sgx/sgx-linux/2.26/docs/)
 - [github.com/intel/linux-sgx](https://github.com/intel/linux-sgx)
+- [Enabling AMD SME/SEV on a Dedicated Server (Ubuntu)](/pages/bare_metal_cloud/dedicated_servers/sme_sev_enable_and_use)
+- [Jak zabezpieczyć serwer dedykowany](/pages/bare_metal_cloud/dedicated_servers/securing-a-dedicated-server)

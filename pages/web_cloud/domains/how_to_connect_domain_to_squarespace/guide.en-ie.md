@@ -45,6 +45,7 @@ Before following the steps in this guide, we recommend that you get familiar wit
 
 ### Configure your DNS records on your OVHcloud account
 
+<!-- CP-STEPS-START:configure-dns-records -->
 Click the tabs below to view each of the **5** steps in sequence.
 
 > [!tabs]
@@ -126,6 +127,7 @@ Click the tabs below to view each of the **5** steps in sequence.
 >> If no "CNAME" record exists for the "www" subdomain, click `Add an entry`{.action} at the top right, select the `CNAME`{.action} pointer record, enter `www` in the **Subdomain** field and `ext-cust.squarespace.com.` in the **Target** field. Click `Next`{.action} and confirm.
 >>
 >> **4 - Addition:** Create a verification CNAME record by entering your `unique code retrieved from SquareSpace` in the **Subdomain** field, then `verify.squarespace.com.` in the **Target** field. Click `Next`{.action} and confirm.
+<!-- CP-STEPS-END:configure-dns-records -->
 
 The DNS zone is now configured to point to your SquareSpace hosting plan.
 

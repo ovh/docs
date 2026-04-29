@@ -55,6 +55,7 @@ Continua la lettura in base al metodo di importazione scelto.
 
 ### Ripristino dallo Spazio Cliente
 
+<!-- CP-STEPS-START:restore-backup-control-panel -->
 Per eseguire questa operazione, clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **4** passi.
 
 > [!tabs]
@@ -79,9 +80,11 @@ Per eseguire questa operazione, clicca sulle schede qui sotto per visualizzare i
 >> Verifica la correttezza delle informazioni e clicca su `Conferma`{.action} per avviare l'operazione. Attendi il completamento del processo.
 >>
 >> ![Importazione database](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/restore-the-backup.png){.thumbnail}
+<!-- CP-STEPS-END:restore-backup-control-panel -->
 
 ### Importazione dallo Spazio Cliente
 
+<!-- CP-STEPS-START:import-own-backup-control-panel -->
 Per eseguire questa operazione, clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **5** passi.
 
 > [!tabs]
@@ -126,9 +129,11 @@ Per eseguire questa operazione, clicca sulle schede qui sotto per visualizzare i
 >> >
 >> > L'opzione `Utilizza un file esistente`{.action} permette di importare nuovamente i dati di un file già inviato nel tool di importazione.
 >> >
+<!-- CP-STEPS-END:import-own-backup-control-panel -->
 
 ### Interfaccia Web phpMyAdmin
 
+<!-- CP-STEPS-START:import-phpmyadmin -->
 Per recuperare il link di accesso a phpMyAdmin, clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **3** passi.
 
 > [!tabs]
@@ -145,6 +150,7 @@ Per recuperare il link di accesso a phpMyAdmin, clicca sulle schede qui sotto pe
 >> Clicca sui tre puntini in corrispondenza del database di cui vuoi importare il backup e seleziona `Accedi a phpMyAdmin`{.action}.
 >>
 >> ![Importazione database](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/go-to-phpmyadmin.png){.thumbnail}
+<!-- CP-STEPS-END:import-phpmyadmin -->
 
 Nella pagina di phpMyAdmin, inserisci le informazioni relative al database, scegli dal menu a tendina se visualizzare i dati attuali del database ed effettua l'accesso. Seleziona la scheda `Importa`{.action} e inserisci i dati richiesti. Ti ricordiamo che il file caricato non può superare la dimensione massima consentita.
 

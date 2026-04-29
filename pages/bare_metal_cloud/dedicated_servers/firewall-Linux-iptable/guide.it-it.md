@@ -1,6 +1,6 @@
 ---
-title: Configura il firewall su Linux con iptables
-excerpt: Scopri come proteggere un server con iptables
+title: "Configurare iptables su un server dedicato Linux"
+excerpt: "Proteggi il tuo server dedicato configurando regole firewall iptables per filtrare il traffico di rete su Linux"
 updated: 2024-12-20
 ---
 
@@ -242,4 +242,4 @@ Non esitare a sperimentare perché puoi sempre eliminare le regole di cui non ha
 
 ## Per saperne di più
 
-Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.
+Contatta la nostra [Community di utenti](/links/community).

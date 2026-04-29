@@ -133,7 +133,6 @@ A adição do AD FS como fornecedor de identidade de confiança pode ser efetuad
 
 Abra a página [SAML SSO](/links/control-panel/iam-saml-sso).
 
-<!-- CP-STEPS-START:configure-sso-connection -->
 Na secção `SSO connection`{.action}, insira os metadados XML do seu serviço AD FS. O campo `Nome do atributo do grupo` é facultativo neste caso. Clique em `Confirmar`{.action}.
 
 É possível conservar os utilizadores locais marcando a caixa `Manter os utilizadores da OVHcloud ativos`.
@@ -153,7 +152,6 @@ Para mais informações, clique no link situado abaixo do `URL do serviço SSO`.
 O botão `...`{.action} permite atualizar ou eliminar o SO, e consultar os respetivos detalhes.
 
 ![Ligação SSO OVHcloud etapa 6](images/ovhcloud_user_management_connect_sso_6.png){.thumbnail}
-<!-- CP-STEPS-END:configure-sso-connection -->
 
 O seu AD FS é agora considerado fornecedor de identidade de confiança. No entanto, deve mesmo assim adicionar grupos à sua conta OVHcloud.
 
@@ -188,7 +186,6 @@ Também pode verificar isto na secção SAML:
 
 Isto significa que deve adicionar o grupo `manager@<my-domain>.com` à sua conta OVHcloud ligando-lhe um papel. Caso contrário, a sua conta OVHcloud não sabe o que o utilizador pode fazer.
 
-<!-- CP-STEPS-START:add-user-groups -->
 Para adicionar este grupo, aceda à secção `Identidades`{.action} e aceda ao separador `Grupos de utilizadores`{.action}. Clique então no botão `Declarar um grupo`{.action}, introduza o nome do grupo e selecione o privilégio associado:
 
 ![Grupos de gestão dos utilizadores AD FS](images/ovhcloud_user_management_groups_1.png){.thumbnail}
@@ -198,7 +195,6 @@ Para adicionar este grupo, aceda à secção `Identidades`{.action} e aceda ao s
 De seguida, poderá verificar que o grupo é adicionado à sua conta OVHcloud na secção `Grupos`:
 
 ![Grupos de gestão dos utilizadores AD FS](images/ovhcloud_user_management_groups_3.png){.thumbnail}
-<!-- CP-STEPS-END:add-user-groups -->
 
 Quando se ligar ao utilizador Active Directory "John Doe", a sua conta OVHcloud reconhecerá que o utilizador tem o papel "REGULAR", especificado pelo seu grupo.
 

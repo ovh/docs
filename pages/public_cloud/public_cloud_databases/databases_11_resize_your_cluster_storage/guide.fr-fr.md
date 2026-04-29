@@ -1,4 +1,4 @@
----
+﻿---
 title: "Ajuster le stockage d'une base de données Public Cloud (EN)"
 excerpt: Find out how to adjust the storage space of your cluster
 updated: 2024-12-30

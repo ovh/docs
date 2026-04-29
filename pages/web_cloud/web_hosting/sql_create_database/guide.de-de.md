@@ -30,6 +30,7 @@ Datenbanken (DBs) werden verwendet, um dynamische Elemente (Verbindungsdaten, Be
 
 ### 1 - Auf die Datenbankverwaltung des Webhostings zugreifen
 
+<!-- CP-STEPS-START:access-databases-tab -->
 Klicken Sie auf die Tabs, um die **2** Schritte anzuzeigen.
 
 > [!tabs]
@@ -48,6 +49,7 @@ Klicken Sie auf die Tabs, um die **2** Schritte anzuzeigen.
 >> Die Tabelle auf dieser Seite enthält alle Datenbanken, die mit Ihrem Webhosting erstellt wurden.
 >>
 >> ![Liste der Webhosting-Datenbanken](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/tab.png){.thumbnail}
+<!-- CP-STEPS-END:access-databases-tab -->
 
 In der Tabelle können Datenbanken verschiedene Typen haben:
 
@@ -63,6 +65,7 @@ In der Tabelle können Datenbanken verschiedene Typen haben:
 
 ### 2 - Datenbank erstellen
 
+<!-- CP-STEPS-START:create-database -->
 Um eine Datenbank zu erstellen, klicken Sie auf die Tabs, um die **5** Schritte anzuzeigen.
 
 > [!tabs]
@@ -110,6 +113,7 @@ Um eine Datenbank zu erstellen, klicken Sie auf die Tabs, um die **5** Schritte 
 >> > [!primary]
 >> >
 >> > Die Aktualisierung der Engine-Version einer bereits erstellten Datenbank ist derzeit nicht verfügbar.
+<!-- CP-STEPS-END:create-database -->
 
 > [!primary]
 >
@@ -155,6 +159,7 @@ Sie können nun Ihre Datenbank verwenden. Hierzu benötigen Sie Ihre Anmeldeinfo
 
 Diese Informationen sind für die Verbindung von Websites mit der Datenbank unbedingt erforderlich.
 
+<!-- CP-STEPS-START:get-connection-info -->
 Falls Sie diese Verbindungsinformationen abrufen müssen, klicken Sie auf die Tabs, um die **2** Schritte anzuzeigen.
 
 > [!tabs]
@@ -165,6 +170,7 @@ Falls Sie diese Verbindungsinformationen abrufen müssen, klicken Sie auf die Ta
 > **Schritt 2**
 >>
 >> Klicken Sie auf der angezeigten Seite auf den Tab `Datenbanken`{.action}. Die Verbindungsinformationen zu Ihrer Datenbank finden Sie in der angezeigten Tabelle, aus Sicherheitsgründen unter Ausnahme von Passwörtern.
+<!-- CP-STEPS-END:get-connection-info -->
 
 > [!warning]
 >
@@ -180,6 +186,7 @@ Je nach verwendeter Software muss diese Verbindung gegebenenfalls manuell oder �
 
 #### Auf das phpMyAdmin-Interface zugreifen
 
+<!-- CP-STEPS-START:access-phpmyadmin -->
 OVHcloud stellt Ihnen ein Online-Tool für das Datenbankmanagement zur Verfügung: phpMyAdmin. Um den Zugriffslink zu dieser Anwendung zu finden, klicken Sie auf die Tabs, um die **4** Schritte anzuzeigen.
 
 > [!tabs]
@@ -202,11 +209,13 @@ OVHcloud stellt Ihnen ein Online-Tool für das Datenbankmanagement zur Verfügun
 >> ![phpMyAdmin Login-Seite](/pages/assets/screens/other/web-tools/phpmyadmin/pma-interface-login.png){.thumbnail}
 >>
 >> Falls nötig, folgen Sie dem [Teil 3](#step3) dieser Anleitung, um die Zugangsdaten zu Ihrer Datenbank zu finden.
+<!-- CP-STEPS-END:access-phpmyadmin -->
 
 #### Datenbanken sichern
 
 Für jede Webhosting-Datenbank werden täglich Snapshots erstellt (maximal 32 insgesamt). Sie können damit schnell eine frühere Version einer Datenbank über Ihr OVHcloud Kundencenter wiederherstellen.
 
+<!-- CP-STEPS-START:check-database-snapshots -->
 Um die verfügbaren Snapshots sowie deren Erstellungsdatum und -zeit einzusehen, klicken Sie auf die Tabs, um die **3** Schritte anzuzeigen.
 
 > [!tabs]
@@ -221,6 +230,7 @@ Um die verfügbaren Snapshots sowie deren Erstellungsdatum und -zeit einzusehen,
 > **Schritt 3**
 >>
 >> Klicken Sie in der hier angezeigten Tabelle auf das Symbol neben dem grünen Kreis. Von dort können Sie auch jedes Backup einer Datenbank herunterladen.
+<!-- CP-STEPS-END:check-database-snapshots -->
 
 Weitere Informationen zu diesem Thema finden Sie in unserer Anleitung „[Backup einer Webhosting-Datenbank exportieren](/pages/web_cloud/web_hosting/sql_database_export)".
 

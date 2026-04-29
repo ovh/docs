@@ -1,6 +1,6 @@
 ---
-title: Remplacement à chaud - RAID logiciel
-excerpt: Retrouvez ici comment remplacer un disque à chaud sur un serveur avec un RAID logiciel
+title: "Remplacement à chaud sur un serveur dédié en RAID logiciel"
+excerpt: "Remplacez un disque défectueux sur un serveur dédié en RAID logiciel sans interruption grâce à la procédure de hot-swap"
 updated: 2023-08-21
 ---
 
@@ -299,5 +299,7 @@ Le disque défectueux est désormais prêt à être remplacé par un technicien 
 [Gestion du RAID matériel](/pages/bare_metal_cloud/dedicated_servers/raid_hard)
 
 [Remplacement à chaud - RAID Matériel](/pages/bare_metal_cloud/dedicated_servers/hotswap_raid_hard)
+
+[Gestion et reconstruction d'un RAID logiciel sur les serveurs utilisant le mode de démarrage UEFI](/pages/bare_metal_cloud/dedicated_servers/raid_soft_uefi)
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).

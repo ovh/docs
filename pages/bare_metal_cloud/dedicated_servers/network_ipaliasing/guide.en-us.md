@@ -1,6 +1,6 @@
 ---
-title: 'Configuring IP aliasing'
-excerpt: 'Find out how to add Additional IP addresses to your server configuration'
+title: "Configure IP Aliasing on a Dedicated Server"
+excerpt: "Add and configure Additional IP addresses on your OVHcloud dedicated server for multi-site or service hosting."
 updated: 2025-12-04
 ---
 
@@ -500,7 +500,7 @@ In the examples below, we will use the `nano` text editor. With some operating s
 >> 4. Select `Internet Protocol Version 4 (TCP/IPv4)`{.action}, then click on `Properties`{.action}.
 >> 5. Click on `Use the following IP address`{.action} and type in your server’s primary IP, subnet mask and default gateway information obtained by using the `ipconfig` command above. In the "Preferred DNS Server" box, type 213.186.33.99.
 >>
->> ![Internet Protocol Version 4 (TCP/IPv4) Properties](images/configure-main-ip.png){.thumbnail}
+>> ![TCP/IPv4 Properties with primary IP address and DNS configured](images/configure-main-ip.png){.thumbnail}
 >>
 >> > [!warning]
 >> >
@@ -509,7 +509,7 @@ In the examples below, we will use the `nano` text editor. With some operating s
 >>
 >> Then click on `Advanced`{.action} (still in the `TCP/IP Settings`{.action}).
 >>
->> ![Internet Protocol Version 4 (TCP/IPv4) Properties](images/configure-main-ip-1.png){.thumbnail}
+>> ![TCP/IPv4 Properties with Advanced button highlighted](images/configure-main-ip-1.png){.thumbnail}
 >>
 >> In the `IP Address`{.action} section, click `Add`{.action}:
 >>
@@ -550,11 +550,11 @@ In the examples below, we will use the `nano` text editor. With some operating s
 >>
 >> In this section, click on the button `Add IP Address`{.action}.
 >>
->> ![add ip information](images/Plesk-2024.png){.thumbnail}
+>> ![Plesk Add IP Address button in the IP management section](images/Plesk-2024.png){.thumbnail}
 >>
 >> Enter your Additional IP in the form `xxx.xxx.xxx.xxx/32` into the field "IP address and subnet mask", then click on `OK`{.action}.
 >>
->> ![add ip information](images/Plesk-2024-1.png){.thumbnail}
+>> ![Plesk form with Additional IP and subnet mask fields](images/Plesk-2024-1.png){.thumbnail}
 >>
 >> **Step 3: Check the current IP configuration**
 >>
@@ -583,5 +583,7 @@ To test the connection, ping your Additional IP from outside. If it responds in 
 ## Go further
 
 [Configuring a network bridge](/pages/bare_metal_cloud/dedicated_servers/network_bridging)
+
+[Moving an Additional IP on a Dedicated Server](/pages/bare_metal_cloud/dedicated_servers/move-failover-ip)
 
 Join our [community of users](/links/community).

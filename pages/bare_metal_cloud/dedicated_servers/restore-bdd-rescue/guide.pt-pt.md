@@ -1,6 +1,6 @@
 ---
-title: "Recuperação das bases de dados em modo rescue"
-excerpt: "Descubra como aceder às suas bases de dados e registá-las em modo rescue"
+title: "Recuperar bases de dados em modo rescue num servidor dedicado"
+excerpt: "Aceda às suas bases de dados e exporte-as a partir de um servidor dedicado em modo rescue para recuperar dados após um incidente."
 updated: 2023-04-13
 ---
 

@@ -1,6 +1,6 @@
 ---
-title: 'Jak zmienić klucz aktywacyjny Windows Server'
-excerpt: 'Dowiedz się, jak zmodyfikować klucz aktywacyjny Windows Server'
+title: "Jak aktywować licencję Windows Server na serwerze dedykowanym"
+excerpt: "Aktywuj licencję Windows Server na serwerze dedykowanym OVHcloud za pomocą klucza produktu lub KMS."
 updated: 2026-01-06
 ---
 
@@ -24,7 +24,7 @@ Kiedy korzystasz z próbnej wersji systemu, zarejestrowany zostaje klucz domyśl
 
 ![Uruchomienie programu Run](images/executer.png){.thumbnail}
 
-![Run](images/executer2.png){.thumbnail}
+![Okno dialogowe Uruchom do poleceń klucza produktu Windows](images/executer2.png){.thumbnail}
 
 Wpisz w programie następującą komendę:
 
@@ -70,4 +70,6 @@ cscript.exe c:\windows\system32\slmgr.vbs -ato
 
 ## Sprawdź również
 
+- [Jak zmienić hasło administratora w systemie Windows Server](/pages/bare_metal_cloud/dedicated_servers/changing-admin-password-on-windows)
+- [Activating Windows VMs with Hyper-V on a Dedicated Server](/pages/bare_metal_cloud/dedicated_servers/activate_windows_vm_hyperv)
 Dołącz do [grona naszych użytkowników](/links/community).

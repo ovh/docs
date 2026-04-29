@@ -25,6 +25,7 @@ La création d’un projet est la première étape indispensable pour déployer 
 
 ## En pratique
 
+
 Après en avoir pris connaissance, validez les termes des contrats en cochant la case correspondante puis cliquez sur `Découvrir l'univers Public Cloud`{.action}.
 
 ![création de projet](images/firstproject2024.png){.thumbnail width="400"}
@@ -52,6 +53,7 @@ Vous avez dorénavant accès à tout l'ecosystème Public Cloud OVHcloud, décou
 > ![activer le projet](images/activate-project.png){.thumbnail width="400"}
 
 <iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/xTG4mAaGqN4?si=RtSEte_rV3Babwm6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 
 ## Aller plus loin
 

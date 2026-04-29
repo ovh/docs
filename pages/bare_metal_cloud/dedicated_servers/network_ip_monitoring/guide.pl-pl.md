@@ -1,6 +1,6 @@
 ---
-title: Jakie są adresy IP monitoringu OVHcloud?
-excerpt: W tej sekcji odnajdziesz adresy IP, które mają zostać wpisane podczas uruchamiania firewalla. Dzięki temu monitoring OVHcloud będzie nadal działać na Twoim serwerze.
+title: "Serwer dedykowany - Konfiguracja monitorowania IP"
+excerpt: "W tej sekcji odnajdziesz adresy IP, które mają zostać wpisane podczas uruchamiania firewalla. Dzięki temu monitoring OVHcloud będzie nadal działać na Twoim serwerze."
 updated: 2026-04-13
 ---
 
@@ -66,7 +66,7 @@ Po pierwsze, zaloguj się do [Panelu klienta OVHcloud](/links/manager) i wybierz
 
 Możesz włączyć lub wyłączyć monitoring serwera dedykowanego w zakładce `Informacje ogólne`{.action}. Wariant ten znajduje się w sekcji `Status usług`.
 
-![Monitoring](images/monitoring-server.png){.thumbnail}
+![Status monitorowania w zakładce informacji ogólnych serwera](images/monitoring-server.png){.thumbnail}
 
 Kliknij przycisk `Skonfiguruj`{.action}. W oknie, które się pojawi, masz trzy opcje dotyczące zachowania inwigilacji:
 
@@ -74,7 +74,7 @@ Kliknij przycisk `Skonfiguruj`{.action}. W oknie, które się pojawi, masz trzy 
 - **Aktywny z aktywną interwencją**: Jeśli serwer przestanie odpowiadać, otrzymasz wiadomość e-mail z alertem. Serwer zostanie zweryfikowany przez technika.
 - **Aktywny bez aktywnej interwencji**: Otrzymasz e-mail z komunikatem ostrzegawczym, jeśli serwer przestanie odpowiadać. Aby rozpocząć interwencję, należy utworzyć wniosek o pomoc.
 
-![Monitoring](images/monitoring-server2.png){.thumbnail}
+![Okno konfiguracji monitorowania z trzema opcjami](images/monitoring-server2.png){.thumbnail}
 
 Kliknij na `Zatwierdź`{.action}, aby zaktualizować konfigurację monitorowania.
 
@@ -82,4 +82,6 @@ Kliknij na `Zatwierdź`{.action}, aby zaktualizować konfigurację monitorowania
 
 [Konfiguracja zapory sieciowej Network Firewall](/pages/bare_metal_cloud/dedicated_servers/firewall_network).
 
+- [Pierwsze kroki z serwerem dedykowanym OVHcloud](/pages/bare_metal_cloud/dedicated_servers/getting-started-with-dedicated-server)
+- [Jak odinstalować RTM v1 na serwerze dedykowanym](/pages/bare_metal_cloud/dedicated_servers/rtm-uninstall)
 Dołącz do [grona naszych użytkowników](/links/community).

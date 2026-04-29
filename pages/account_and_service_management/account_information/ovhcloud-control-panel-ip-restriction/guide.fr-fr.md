@@ -61,7 +61,6 @@ Si vous utilisez un réseau 4G/5G en complément, n'oubliez pas de récupérer �
 
 ### Etape 2 - Mettre en place une restriction d'accès par IP
 
-<!-- CP-STEPS-START:enable-ip-restriction -->
 Sur la page [Sécurité du compte](/links/control-panel/account-security), repérez la section **Restriction d'accès par IP**.
 
 ![Access from Manager](images/ip2.png){.thumbnail}
@@ -91,11 +90,9 @@ Deux sections sont présentes pour la mise en place des restrictions par IP :
 >
 > Soyez donc extrêmement vigilant sur ce point.
 >
-<!-- CP-STEPS-END:enable-ip-restriction -->
 
 #### Refuser toutes les adresses IP à l'exception des adresses légitimes
 
-<!-- CP-STEPS-START:add-allow-rule -->
 Pour n'autoriser l'accès à l'espace client OVHcloud qu'à une ou plusieurs adresse(s) IP légitimes, cliquez sur le bouton `Ajouter une restriction`{.action}.
 
 > Dans les captures écran qui vont suivre, l'IP **192.0.2.0** sera à remplacer par une IP qui vous concerne.
@@ -123,11 +120,9 @@ Une fois **l'ensemble** de vos adresses IP publiques renseignées dans la sectio
 ![Add allow rule](images/ip7.png){.thumbnail}
 
 > Désormais, **seules** les adresses IP publiques préalablement autorisées dans la section `IP configurées` peuvent accéder à votre espace client OVHcloud. 
-<!-- CP-STEPS-END:add-allow-rule -->
 
 #### Autoriser toutes les adresses IP à l'exception de certaines adresses
 
-<!-- CP-STEPS-START:add-deny-rule -->
 L'option de restriction d'accès par IP permet aussi d'autoriser toutes les adresses IP à accéder à votre espace client OVHcloud à l'exception de quelques unes que vous aurez préalablement identifiées comme illégitimes.
 
 Pour bloquer l'accès à votre espace client OVHcloud à une ou plusieurs adresse(s) IP, cliquez, dans la section `IP configurées`, sur le bouton `Ajouter une restriction`{.action}.
@@ -154,7 +149,6 @@ Une fois l'ensemble des adresses IP publiques renseignées dans la section `IP c
 ![Add deny rule](images/ip12.png){.thumbnail}
 
 > Désormais, **toutes** les adresses IP publiques peuvent accéder à votre espace client OVHcloud, **à l'exception de** celles déclarées dans la section `IP configurées`.
-<!-- CP-STEPS-END:add-deny-rule -->
 
 ## Aller plus loin
 

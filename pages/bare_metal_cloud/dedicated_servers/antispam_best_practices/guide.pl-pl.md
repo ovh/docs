@@ -1,6 +1,6 @@
 ---
-title: OVHcloud AntySpam - Dobre praktyki i odblokowanie adresu IP
-excerpt: Poznaj nasze dobre praktyki antyspamowe i sposoby odblokowania adresu IP zablokowanego przez SPAM
+title: "OVHcloud AntySpam - Dobre praktyki i odblokowanie adresu IP"
+excerpt: "Poznaj najlepsze praktyki antyspamowe OVHcloud dotyczące IP serwerów dedykowanych i dowiedz się, jak odblokować zablokowany adres IP."
 updated: 2026-01-06
 ---
 
@@ -288,4 +288,5 @@ Po wysłaniu informacji nasz zespół wsparcia skontaktuje się z Vade Secure w 
 
 ## Sprawdź również
 
+- [Jak zabezpieczyć serwer dedykowany](/pages/bare_metal_cloud/dedicated_servers/securing-a-dedicated-server)
 Dołącz do [grona naszych użytkowników](/links/community).

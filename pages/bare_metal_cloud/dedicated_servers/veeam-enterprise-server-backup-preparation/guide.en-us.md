@@ -1,6 +1,6 @@
 ---
-title: Preparing a Bare Metal Server backup with Veeam Enterprise
-excerpt: Learn how to prepare to back up your Bare Metal Server using Veeam Backup and Replication (Enterprise)
+title: "Prepare a Bare Metal Server backup with Veeam Enterprise"
+excerpt: "Prepare your Bare Metal server for backup with Veeam Backup and Replication Enterprise: network, storage, and agent setup."
 updated: 2024-04-05
 ---
 
@@ -120,19 +120,19 @@ Click `Add`{.action} to enter your credentials. Enter your **Access key** and **
 
 Click `Browse...`{.action} to select the **Bucket**.
 
-![Veeam - bucket](images/backup-preparation-11.png){.thumbnail}
+![Veeam Browse button to select the bucket](images/backup-preparation-11.png){.thumbnail}
 
 Select the bucket and click `OK`{.action}.
 
-![Veeam - bucket](images/backup-preparation-12.png){.thumbnail}
+![Veeam bucket selection dialog with available buckets](images/backup-preparation-12.png){.thumbnail}
 
 Click `Browse...`{.action} to select the **Folder**.
 
-![Veeam - folder](images/backup-preparation-13.png){.thumbnail}
+![Veeam Browse button to select the folder](images/backup-preparation-13.png){.thumbnail}
 
 Click `New Folder`{.action}, enter a name for the folder, select it, and then click `OK`{.action}.
 
-![Veeam - folder](images/backup-preparation-14.png){.thumbnail}
+![Veeam folder creation dialog with new folder name](images/backup-preparation-14.png){.thumbnail}
 
 On the Mount Server screen, click `Next`{.action}.
 

@@ -120,6 +120,8 @@ If you use an alternative software, refer to its user documentation. A usage exa
 
 ### Step 2: Import SSH keys
 
+<!-- CP-STEPS-START:import-ssh-keys -->
+
 You can store your public SSH keys in the `Public Cloud`{.action} section of the [OVHcloud Control Panel](/links/manager). This is not mandatory but makes the instance creation process more convenient.
 
 > [!primary]
@@ -138,6 +140,8 @@ In the new window, enter a name for the key. Fill in the `Key` field with your p
 ![add key](images/24-addkey.png){.thumbnail}
 
 You can now select this key in [Step 4](#step-4-create-the-instance) to add it to a new instance.
+
+<!-- CP-STEPS-END:import-ssh-keys -->
 
 ### Step 3: Prepare the network configuration
 
@@ -176,6 +180,8 @@ Find out more on the [Local Zones web page](/links/public-cloud/local-zones).
 >
 > Refer to [step 1](#step-1-create-an-ssh-key-set) and [step 2](#step-2-import-ssh-keys) in this guide if you do not have any SSH keys ready to use.
 >
+
+<!-- CP-STEPS-START:create-instance -->
 
 On the **Home** page, click `Create an instance`{.action}.
 
@@ -348,6 +354,8 @@ On the right side of your screen, you will find a summary of your configuration.
 
 Once you have finished configuring your instance, click the `Launch my instance`{.action} button. Delivery of your service may take a few minutes.
 
+<!-- CP-STEPS-END:create-instance -->
+
 ### Step 5: Connect to the instance
 
 The instructions in this part concern remote connections by means of the **OpenSSH** and **RDP** protocols through a public network (Internet).
@@ -363,6 +371,8 @@ Note that we provide alternative ways of access (mainly used for troubleshooting
 >
 
 #### 5.1: Verify the instance status in the OVHcloud Control Panel
+
+<!-- CP-STEPS-START:verify-instance-status -->
 
 Select `Instances`{.action} in the left-hand navigation bar under **Compute**. Your instance is ready when the status is set to `Enabled` in the table. If the instance was recently created and has a different status, click on the "Refresh" button located next to the search filter.
 
@@ -382,6 +392,8 @@ If your [SSH key pair is set up correctly](#step-1-create-an-ssh-key-set), you c
 >
 > This guide does not cover private networking for instances. Please consult our documentation on [Public Cloud Network Services](/products/public-cloud-network) regarding this topic. 
 >
+
+<!-- CP-STEPS-END:verify-instance-status -->
 
 #### 5.2: First login on an instance with a GNU/Linux OS installed
 
@@ -415,6 +427,8 @@ Continue with [Step 6 below](#step-6-first-steps-on-a-new-instance).
 
 ##### 5.3.1: Finish the installation of the Windows instance
 
+<!-- CP-STEPS-START:windows-vnc-setup -->
+
 After verifying that the Windows instance is [installed](#51-verify-the-instance-status-in-the-ovhcloud-control-panel), open the tab `VNC console`{.action} in your [OVHcloud Control Panel](/links/manager).
 
 You will then need to complete the initial setup of your Windows OS. Follow the steps below by navigating through the tabs:
@@ -440,6 +454,8 @@ You will then need to complete the initial setup of your Windows OS. Follow the 
 >> Enter the `Administrator` password you have created in the previous step and click on the `Arrow` button.<br><br>
 >>![VNC](/pages/assets/screens/other/windows/windows_login.png){.thumbnail}
 >>
+
+<!-- CP-STEPS-END:windows-vnc-setup -->
 
 ##### 5.3.2: Log in remotely from Windows
 
@@ -485,6 +501,8 @@ The free and open-source software `Remmina Remote Desktop Client` is available f
 
 #### 5.4: VNC console access
 
+<!-- CP-STEPS-START:vnc-console-access -->
+
 The VNC console allows you to connect to your instances even when other means of access are not available.
 
 Select `Instances`{.action} in the left-hand navigation bar under **Compute**. Click on the instance name and open the tab `VNC console`{.action}.
@@ -500,6 +518,8 @@ Select `Instances`{.action} in the left-hand navigation bar under **Compute**. C
 >>
 >> Log in with your Windows credentials. If there is an active login session, you will have immediate access. There will be a noticeable latency compared to an RDP connection.
 >>
+
+<!-- CP-STEPS-END:vnc-console-access -->
 
 ### Step 6: First steps on a new instance
 

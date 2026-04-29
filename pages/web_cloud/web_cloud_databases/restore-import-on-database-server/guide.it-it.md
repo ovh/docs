@@ -52,6 +52,7 @@ In caso di errore sul database, è necessario essere in grado di ripristinare un
 
 #### Ripristinare un backup esistente
 
+<!-- CP-STEPS-START:restore-existing-backup -->
 Clicca sulle schede qui sotto per visualizzare ciascuno dei **4** passaggi.
 
 > [!tabs]
@@ -80,9 +81,11 @@ Clicca sulle schede qui sotto per visualizzare ciascuno dei **4** passaggi.
 >> > [!warning]
 >> >
 >> > Il ripristino comporta la sovrascrittura del contenuto del database e quindi una possibile perdita di dati. Se non sei sicuro di ciò che stai facendo, ti consigliamo di effettuare un backup prima.
+<!-- CP-STEPS-END:restore-existing-backup -->
 
 #### Importare un backup locale
 
+<!-- CP-STEPS-START:import-local-backup -->
 Clicca sulle schede qui sotto per visualizzare ciascuno dei **4** passaggi.
 
 > [!tabs]
@@ -129,6 +132,7 @@ Clicca sulle schede qui sotto per visualizzare ciascuno dei **4** passaggi.
 >> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/databases/database-import-existing-file-step-2.png){.thumbnail}
 >>
 >> Se lo desideri, seleziona **"Svuota il database attuale"** prima dell'importazione e **"Invia un'email alla fine dell'importazione"** per essere informato del completamento dell'operazione sull'indirizzo e-mail di riferimento del tuo account OVHcloud, poi clicca su `Invia`{.action}.
+<!-- CP-STEPS-END:import-local-backup -->
 
 ### Importare un database al di fuori dello Spazio Cliente
 

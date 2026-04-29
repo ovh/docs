@@ -34,7 +34,7 @@ Descargue en su proyecto el directorio **./vendor/ovh/ovh/** y el archivo **auto
 Para utilizar el servicio de SMS con la API, es necesario disponer de unas claves. Dichas claves se generan una sola vez para identificar la aplicación que enviará SMS. Es posible configurar su validez.
 
 Genere las claves para su script (se crean todas a la vez) desde esta página:
-[https://api.ovh.com/createToken](https://eu.api.ovh.com/createToken/index.cgi?GET=/sms&GET=/sms/*/jobs/&POST=/sms/*/jobs/) (si accede desde este enlace, tendrá automáticamente los permisos necesarios para seguir los pasos que se explican en esta guía).
+[https://auth.eu.ovhcloud.com/api/createToken](https://auth.eu.ovhcloud.com/api/createToken?GET=/sms&GET=/sms/*/jobs/&POST=/sms/*/jobs/) (si accede desde este enlace, tendrá automáticamente los permisos necesarios para seguir los pasos que se explican en esta guía).
 
 ![Crear los tokens](images/img_2451.jpg){.thumbnail}
 
@@ -69,7 +69,7 @@ Pruebe la conexión a la API mostrando, por ejemplo, los detalles de cada cuenta
 /**
  * Muestra el detalle de cada cuenta de SMS.
  * 
- * Vaya a https://eu.api.ovh.com/createToken/index.cgi?GET=/sms&GET=/sms/*/jobs/&POST=/sms/*/jobs/
+ * Vaya a https://auth.eu.ovhcloud.com/api/createToken?GET=/sms&GET=/sms/*/jobs/&POST=/sms/*/jobs/
  * para generar las claves de acceso a la API para:
  *
  * GET /sms
@@ -124,7 +124,7 @@ Para enviar SMS, utilice la siguiente llamada a la API:
 /**
  * Envía un SMS y luego muestra la lista de SMS pendientes de envío.
  * 
- * Vaya a https://eu.api.ovh.com/createToken/index.cgi?GET=/sms&GET=/sms/*/jobs/&POST=/sms/*/jobs/
+ * Vaya a https://auth.eu.ovhcloud.com/api/createToken?GET=/sms&GET=/sms/*/jobs/&POST=/sms/*/jobs/
  * para generar las claves de acceso a la API para:
  *
  * GET /sms

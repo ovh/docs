@@ -88,6 +88,7 @@ This option automatically applies the existing OVHcloud DNS zone configuration f
 >
 > If needed, refer to the guides "[Editing an OVHcloud DNS zone](/pages/web_cloud/domains/dns_zone_edit)" and/or "[Creating an OVHcloud DNS zone](/pages/web_cloud/domains/dns_zone_create)" to check if an OVHcloud DNS zone exists for your domain name.
 
+<!-- CP-STEPS-START:option-1-ovhcloud-default-dns -->
 Click on the tabs below to view each of the **4** steps.
 
 > [!tabs]
@@ -126,6 +127,7 @@ Click on the tabs below to view each of the **4** steps.
 >> If they correspond to the ones you want to apply, click `Apply`{.action}.
 >>
 >> The 2 DNS servers declared (in the NS type records of the OVHcloud DNS zone) will then be used for your domain name.
+<!-- CP-STEPS-END:option-1-ovhcloud-default-dns -->
 
 The old declared DNS servers and the DNS configuration they applied will be deactivated for your domain name. The OVHcloud DNS zone will become the active DNS zone for your domain name.
 
@@ -150,6 +152,7 @@ This can be, for example:
 > - "Your own domain (or just an @)" IN NS ns2.dns-server.tld.
 > - "Your own domain (or just an @)" IN NS ns3.dns-server.tld.
 
+<!-- CP-STEPS-START:option-2-own-dns-servers -->
 Click on the tabs below to view each of the **5** steps.
 
 > [!tabs]
@@ -199,6 +202,7 @@ Click on the tabs below to view each of the **5** steps.
 >>
 >> It summarises the names of the DNS servers that will be applied to your domain name.
 >> If they correspond to the ones you want to apply, click `Apply`{.action}.
+<!-- CP-STEPS-END:option-2-own-dns-servers -->
 
 The old declared DNS servers and the DNS configuration they applied will be deactivated for your domain name. The DNS zone declared on your own DNS servers will become the active DNS zone for your domain name.
 
@@ -226,6 +230,7 @@ However, make sure that the DNS zone configurations on the various DNS servers c
 > - "Your own domain (or just an @)" IN NS dnsXX.ovh.net.
 > - "Your own domain (or just an @)" IN NS nsXX.ovh.net.
 
+<!-- CP-STEPS-START:option-3-combined-dns-servers -->
 Click on the tabs below to view each of the **5** steps.
 
 > [!tabs]
@@ -275,6 +280,7 @@ Click on the tabs below to view each of the **5** steps.
 >>
 >> It summarises the names of the DNS servers that will be applied to your domain name.
 >> If they correspond to the ones you want to apply, click `Apply`{.action}.
+<!-- CP-STEPS-END:option-3-combined-dns-servers -->
 
 The old declared DNS servers and the DNS configuration they applied will be deactivated for your domain name. The DNS zones on your own DNS servers and on the OVHcloud DNS servers will become the active ones for your domain name.
 

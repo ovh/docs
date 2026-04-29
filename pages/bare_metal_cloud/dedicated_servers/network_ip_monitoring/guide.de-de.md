@@ -1,6 +1,6 @@
 ---
-title: Welche IP-Adressen nutzt das OVHcloud Monitoring?
-excerpt: Erfahren Sie hier die IP-Adressen zur Einrichtung Ihrer Firewall, um OVHcloud Monitoring auf Ihrem Server zu erlauben
+title: "OVHcloud Monitoring IP-Adressen für Dedicated Server"
+excerpt: "Erfahren Sie hier die IP-Adressen zur Einrichtung Ihrer Firewall, um OVHcloud Monitoring auf Ihrem Server zu erlauben"
 updated: 2026-04-13
 ---
 
@@ -67,7 +67,7 @@ Loggen Sie sich zunächst in Ihr [OVHcloud Kundencenter ein](/links/manager) und
 
 Sie können den Monitoring-Status eines Servers vom Tab `Allgemeine Informationen`{.action} aus einrichten (Abschnitt **Dienststatus**).
 
-![Monitoring](images/monitoring-server.png){.thumbnail}
+![Monitoring-Status im Tab "Allgemeine Informationen" des Servers](images/monitoring-server.png){.thumbnail}
 
 Klicken Sie auf den Button `Konfigurieren`{.action}. Im neu angezeigten Fenster haben Sie drei Optionen für das Überwachungsverhalten:
 
@@ -75,12 +75,16 @@ Klicken Sie auf den Button `Konfigurieren`{.action}. Im neu angezeigten Fenster 
 - **Aktiviert mit proaktivem Eingriff**: Wenn der Server nicht mehr reagiert wird Ihnen eine Benachrichtigung per E-Mail gesendet und der Server von einem Techniker überprüft.
 - **Aktiviert ohne proaktiven Eingriff**: Sie erhalten eine Benachrichtigung per E-Mail, wenn der Server nicht mehr reagiert. Um eine Intervention zu veranlassen, muss eine Support-Anfrage erstellt werden.
 
-![Monitoring](images/monitoring-server2.png){.thumbnail}
+![Monitoring-Konfigurationspopup mit drei Optionen](images/monitoring-server2.png){.thumbnail}
 
 Klicken Sie auf `Bestätigen`{.action}, um Ihre Monitoring-Konfiguration zu aktualisieren.
 
 ## Weiterführende Informationen
 
 [Konfiguration der Network Firewall](/pages/bare_metal_cloud/dedicated_servers/firewall_network).
+
+- [Erste Schritte mit einem Dedicated Server](/pages/bare_metal_cloud/dedicated_servers/getting-started-with-dedicated-server)
+
+- [RTM v2 Monitoring auf einem Dedicated Server deinstallieren](/pages/bare_metal_cloud/dedicated_servers/rtm-uninstall)
 
 Treten Sie unserer [User Community](/links/community) bei.

@@ -1,6 +1,6 @@
 ---
-title: "Clientes Kimsufi y So you Start: familiarizarse con el área de cliente de OVHcloud"
-excerpt: Esta guía explica cómo navegar por el área de cliente de OVHcloud.
+title: "Área de cliente de OVHcloud para servidores dedicados Kimsufi y So you Start"
+excerpt: "Navegue por el área de cliente de OVHcloud como cliente de Kimsufi o So you Start para gestionar sus servidores dedicados."
 updated: 2025-04-28
 ---
 
@@ -22,7 +22,7 @@ OVHcloud anuncia la agrupación de todos los servidores dedicados Kimsufi, So yo
 
 ### Panel de control
 
-![Dashboard](images/OVHclouddashboard.png){.thumbnail}
+![Panel de control](images/OVHclouddashboard.png){.thumbnail}
 
 Si ha adquirido un servidor de la línea de producto Eco, el panel de control será ahora el del área de cliente de OVHcloud. Este panel de control de OVHcloud contiene un resumen de todos sus servicios. Esta interfaz presenta varias secciones que le permiten acceder instantáneamente a un servicio.<br>
 En la columna de la derecha podrá acceder a sus datos personales, su identificador de cliente y su nivel de soporte (en su caso).<br>
@@ -30,7 +30,7 @@ También ofrece una serie de atajos y enlaces útiles.
 
 ### Acceder al servidor
 
-![list servers](images/listserversOVHcloud.png){.thumbnail}
+![Acceso al servidor](images/listserversOVHcloud.png){.thumbnail}
 
 En las interfaces Kimsufi y So you Start, el panel de control le permite ver su servidor/lista de servidores.<br>
 En el área de cliente de OVHcloud, haga clic en el menú `Bare Metal Cloud`{.action} y seleccione `Servidores dedicados`{.action} para ver los servidores.
@@ -39,9 +39,9 @@ En el área de cliente de OVHcloud, haga clic en el menú `Bare Metal Cloud`{.ac
 
 En la columna izquierda, haga clic en `Servidores dedicados`{.action} y seleccione el servidor.
 
-![server interface](images/serverinterface01.png){.thumbnail}
+![Pestaña de información general del servidor](images/serverinterface01.png){.thumbnail}
 
-![server interface](images/serverinterface02.png){.thumbnail}
+![Estado del servidor y detalles de red](images/serverinterface02.png){.thumbnail}
 
 **Información general**: en esta sección encontrará toda la información relativa al servidor.
 
@@ -81,7 +81,7 @@ Para acceder a la sección **IP** del área de cliente de OVHcloud, haga clic en
 
 Para acceder a la pestaña **Licencias** del área de cliente de OVHcloud, haga clic en el menú `Bare Metal Cloud`{.action} y seleccione `Licencias`{.action}.
 
-![license](images/managelicencesOVHcloud.png){.thumbnail}
+![Licencias](images/managelicencesOVHcloud.png){.thumbnail}
 
 ### Soporte, facturación y gestión de cuenta
 

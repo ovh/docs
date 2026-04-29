@@ -1,6 +1,6 @@
 ---
-title: Configurer un miroir logiciel (RAID) sous Windows
-excerpt: "Découvrez comment reconstruire la configuration des disques de votre serveur après un remplacement de disque"
+title: "Miroir RAID logiciel sur un serveur dédié Windows"
+excerpt: "Reconstruisez la configuration du miroir RAID logiciel sur un serveur dédié Windows après un remplacement de disque"
 updated: 2023-03-28
 ---
 
@@ -21,11 +21,11 @@ Sur un système Windows, la redondance des données est assurée par la mise en 
 
 Une fois connecté, faites un clic droit sur le bouton du menu `Démarrer`{.action} et ouvrez `Exécuter`{.action}.
 
-![Software mirror Windows](images/raid-soft-windows-01.png){.thumbnail}
+![Menu Demarrer de Windows avec option Executer](images/raid-soft-windows-01.png){.thumbnail}
 
 Renseignez `cmd` et cliquez sur `OK`{.action}.
 
-![Software mirror Windows](images/raid-soft-windows-02.png){.thumbnail}
+![Boite de dialogue Executer avec commande cmd saisie](images/raid-soft-windows-02.png){.thumbnail}
 
 La méthode à utiliser dépend du type de partition de vos disques. Suivez les instructions de [cette section](#mbr) pour **MBR** ou passez à la [section suivante](#gpt) pour **GPT**. Si vous n'en êtes pas sûr, exécutez la commande `diskpart` dans l'invite de commande et entrez `list disk`. Vérifiez la colonne « Gpt » dans le résultat fourni.
 
@@ -399,5 +399,9 @@ DISKPART> list volume
 Il est préférable de ne pas redémarrer le serveur tant que le processus de reconstruction n'est pas terminé.
 
 ## Aller plus loin
+
+[Gestion et reconstruction du RAID logiciel sur les serveurs en mode legacy boot (BIOS)](/pages/bare_metal_cloud/dedicated_servers/raid_soft)
+
+[Créer un partitionnement Windows avec un Raid Hard](/pages/bare_metal_cloud/dedicated_servers/windows_raid_hard)
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).

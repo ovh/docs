@@ -40,6 +40,7 @@ Ce guide vous présente comment activer cette offre sur votre [nom de domaine](/
 
 ## En pratique
 
+<!-- CP-STEPS-START:activate-100m-steps -->
 Pour activer votre hébergement gratuit 100M, cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3** étapes.
 
 > [!tabs]
@@ -79,6 +80,7 @@ Pour activer votre hébergement gratuit 100M, cliquez sur les onglets ci-dessous
 >> La section **3** vous rappelle la tarification de l'offre. 
 >>
 >> Dans la section **4**, prenez connaissance des contrats, puis validez votre commande pour terminer la demande d'activation de votre hébergement gratuit 100M.
+<!-- CP-STEPS-END:activate-100m-steps -->
 
 > [!primary]
 >

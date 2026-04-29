@@ -1,6 +1,6 @@
 ---
-title: 'Configuring Additional IPs in bridge mode on your virtual machines'
-excerpt: 'Find out how to configure your virtual machines for access to the public internet'
+title: "Configure Additional IPs in Bridge Mode on a Dedicated Server"
+excerpt: "Configure your virtual machines on a dedicated server for public internet access using network bridge mode."
 updated: 2026-01-06
 ---
 
@@ -483,7 +483,7 @@ For all operating systems and distributions, you **must** configure your virtual
 >>
 >> Select the adapter with the server’s IP, then tick the option `Allow management operating system to share this network adapter`{.action}.
 >>
->> ![networkbridging](images/network-bridging-windows-2012-1.jpg){.thumbnail}
+>> ![Hyper-V Virtual Switch Manager with External network type](images/network-bridging-windows-2012-1.jpg){.thumbnail}
 >>
 >> > [!primary]
 >> > 
@@ -494,13 +494,13 @@ For all operating systems and distributions, you **must** configure your virtual
 >>
 >> Expand the network adapter in the left-hand menu and click on `Advanced Features`{.action}. Change the MAC address to `Static`{.action}, and enter the virtual MAC address for the Additional IP. Once you have entered these settings, press `OK`{.action} to apply the changes.
 >>
->> ![networkbridging](images/network-bridging-windows-2012-2.jpg){.thumbnail}
+>> ![VM network adapter settings with static MAC address](images/network-bridging-windows-2012-2.jpg){.thumbnail}
 >>
 >> Next, start the VM and log in as an administrator, then go to the `Control Panel`{.action}'s `Network and Sharing Center`{.action}. Click on `Ethernet`{.action} to open the settings and click on the `Properties`{.action} button to view the `Ethernet Properties`.
 >>
 >> Select `Internet Protocol Version 4 (TCP/IPv4)`{.action}, and then click on the `Properties`{.action} button.
 >>
->> ![networkbridging](images/network-bridging-windows-2012-3.jpg){.thumbnail}
+>> ![Ethernet Properties with TCP/IPv4 selected](images/network-bridging-windows-2012-3.jpg){.thumbnail}
 >>
 >> In the IPv4 Properties window, select `Use the following IP address`{.action}. Enter the Additional IP into the IP address field, and enter 255.255.255.255 into the subnet mask.
 >>
@@ -508,7 +508,7 @@ For all operating systems and distributions, you **must** configure your virtual
 >>
 >> Finally, click `OK`{.action}, and ignore the warning message about the gateway IP and the assigned IP not being in the same subnet.
 >>
->> ![networkbridging](images/network-bridging-windows-2012-4.jpg){.thumbnail}
+>> ![IPv4 Properties with Additional IP and gateway configured](images/network-bridging-windows-2012-4.jpg){.thumbnail}
 >>
 >> After rebooting the server, the VM should be connected to the internet using the Additional IP.
 >>
@@ -569,5 +569,11 @@ Next, ping your Additional IP address from an external device.
 - If the IP address is still not working, please open a support ticket via the [help center](https://help.ovhcloud.com/csm?id=csm_cases_requests) to relay your test results to our support teams.
 
 ## Go further
+
+[Configuring IP Aliasing on a Dedicated Server](/pages/bare_metal_cloud/dedicated_servers/network_ipaliasing)
+
+[Configuring IPv6 on Dedicated Servers](/pages/bare_metal_cloud/dedicated_servers/network_ipv6)
+
+[Dedicated Server - Configuring pfSense Network Bridge](/pages/bare_metal_cloud/dedicated_servers/pfSense_bridging)
 
 Join our [community of users](/links/community).

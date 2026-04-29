@@ -1,6 +1,6 @@
 ---
-title: "Wiederherstellen des Serverzugriffs bei Passwortverlust"
-excerpt: "Erfahren Sie hier, wie Sie mit dem OVHcloud Rescue-Modus ein neues Passwort für einen Benutzer-Account auf einem GNU/Linux-Betriebssystem einrichten"
+title: "Verlorenes Passwort auf einem Dedicated Server zurücksetzen"
+excerpt: "Setzen Sie ein verlorenes Benutzerpasswort auf einem GNU/Linux-Dedicated-Server im OVHcloud Rescue-Modus zurück."
 updated: 2025-10-02
 ---
 

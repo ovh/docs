@@ -99,6 +99,7 @@ Configuring L7 policies and rules via the OVHcloud customer space allows you to 
 ---
 <!-- CP-NAV-END:publiccloud-projects -->
 
+<!-- CP-STEPS-START:configure-l7-policies -->
 #### Step 2: Navigate to the Load Balancer
 
 In your Public Cloud project, select `Load Balancer`{.action} in the `Network`section or use the quick search function. You will see a list of your Load Balancers. Click on the one you wish to configure.
@@ -180,6 +181,8 @@ An L7 rule is a logical test that returns "True" or "False" statuses. To trigger
 Once all fields are filled in according to your criteria, click `Add`{.action} to save the rule to your L7 policy.
 
 ![Schema 1](images/Policy8.png){.thumbnail}
+
+<!-- CP-STEPS-END:configure-l7-policies -->
 
 ### Using the OpenStack CLI and Horizon
 

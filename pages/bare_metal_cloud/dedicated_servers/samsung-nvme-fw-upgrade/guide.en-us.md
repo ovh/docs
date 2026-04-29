@@ -1,6 +1,6 @@
 ---
-title: Advance Dedicated Servers - Upgrading your Samsung NVMe PM9A1 firmware
-excerpt: Learn how to upgrade your Samsung NVMe PM9A1 firmware for Linux, ESXi and Windows Dedicated Servers
+title: "Upgrade Samsung NVMe PM9A1 Firmware on Dedicated Servers"
+excerpt: "Upgrade the Samsung NVMe PM9A1 firmware on your Linux, ESXi, or Windows dedicated server for improved reliability."
 updated: 2023-10-18
 ---
 
@@ -14,7 +14,7 @@ Firmware changelog : <https://last-public-ovh-baremetal.snap.mirrors.ovh.net/har
 
 ## Requirements
 
-- An [Advance Dedicated Server](https://www.ovhcloud.com/en/bare-metal/advance/) with NVMe Samsung PM9A1, from the following:
+- An [Advance Dedicated Server](https://www.ovhcloud.com/en-gb/bare-metal/advance/) with NVMe Samsung PM9A1, from the following:
     - Advance-1
     - Advance-2
     - Advance-3
@@ -376,6 +376,10 @@ Copyright (C) 2017 SAMSUNG Electronics Co. Ltd. All rights reserved.
 Your NVMe drive now should have the firmware version **GXA7802Q**.
 
 ## Go further <a name="gofurther"></a>
+
+[Dedicated Servers - Upgrading your Micron 7500 PRO firmware](/pages/bare_metal_cloud/dedicated_servers/micron-7500-fw-upgrade)
+
+[Dedicated Server - Upgrading Solidigm D7-P5520 SSD Firmware](/pages/bare_metal_cloud/dedicated_servers/solidigm_d7-p5520_fw_update)
 
 If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for a custom analysis of your project.
 

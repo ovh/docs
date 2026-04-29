@@ -29,6 +29,7 @@ Una base de datos (DB) permite almacenar elementos denominados dinámicos, como 
 
 ### Crear una base de datos
 
+<!-- CP-STEPS-START:create-db -->
 Haga clic en las fichas siguientes para ver cada una de las **4** etapas.
 
 > [!tabs]
@@ -64,9 +65,11 @@ Haga clic en las fichas siguientes para ver cada una de las **4** etapas.
 >> Haga clic en `Aceptar`{.action}.
 >>
 >> ![web-cloud-databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/databases/add-database-confirmation.png){.thumbnail}
+<!-- CP-STEPS-END:create-db -->
 
 ### Crear un usuario
 
+<!-- CP-STEPS-START:create-user -->
 Para utilizar un servidor de bases de datos de OVHcloud, cree usuarios con permisos específicos de conexión a una base de datos.
 
 Haga clic en las fichas siguientes para ver cada una de las **4** etapas.
@@ -91,9 +94,11 @@ Haga clic en las fichas siguientes para ver cada una de las **4** etapas.
 > **Etapa 4**
 >>
 >> Introduzca un "nombre de usuario" y una "contraseña" y haga clic en `Aceptar`{.action}.
+<!-- CP-STEPS-END:create-user -->
 
 ### Gestionar los permisos de los usuarios
 
+<!-- CP-STEPS-START:manage-user-rights -->
 Para permitir que un usuario realice acciones en una base de datos, es necesario asignarle permisos.
 
 Haga clic en las fichas siguientes para ver cada una de las **4** etapas.
@@ -131,9 +136,11 @@ Haga clic en las fichas siguientes para ver cada una de las **4** etapas.
 >> > La distribución de los permisos mencionados anteriormente es propia de OVHcloud. Así, un usuario con permisos de `Administrador` podrá utilizar **DDL** (Data Definition Language) y **DML** (Data Manipulation Language), mientras que un usuario con permisos de `Lectura / Escritura` solo podrá utilizar **DML** (Data Manipulation Language).
 >>
 >> ![web-cloud-databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/users-and-rights/changing-user-rights.png){.thumbnail}
+<!-- CP-STEPS-END:manage-user-rights -->
 
 ### Eliminar una base de datos
 
+<!-- CP-STEPS-START:delete-db -->
 > [!warning]
 >
 > Antes de eliminar una base de datos en un servidor de bases de datos,
@@ -160,6 +167,7 @@ Haga clic en las fichas siguientes para ver cada una de las **3** etapas.
 >> Haga clic en el botón `...`{.action} a la derecha de la base de datos correspondiente y luego en `Eliminar la base de datos`{.action}.
 >>
 >> ![web-cloud-databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/databases/delete-the-database.png){.thumbnail}
+<!-- CP-STEPS-END:delete-db -->
 
 ## Más información
 

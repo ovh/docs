@@ -41,17 +41,6 @@ Transfer nazwy domeny umożliwia jej przeniesienie do innego operatora. Możesz 
 - Posiadanie uprawnień do złożenia wniosku o transfer nazwy domeny
 - Powiadomienie abonenta nazwy domeny i/lub administratorów o wszczęciu procedury transferu
 
-<!-- CP-NAV-START:web-domains -->
----
-
-### Dostęp do Panelu klienta OVHcloud
-
-- **Link bezpośredni:** [Domeny](/links/control-panel/web-domains)
-- **Ścieżka nawigacji:** `Web Cloud`{.action} > `Domeny`{.action} > Wybierz nazwę domeny
-
----
-<!-- CP-NAV-END:web-domains -->
-
 ## W praktyce
 
 Procedura transferu składa się z kilku etapów, w które włączone są różne podmioty, w tym obecny rejestr, OVHcloud i inne strony. Poniższa tabela wskazuje osoby, z którymi należy się kontaktować oraz szacowany czas trwania każdego etapu.

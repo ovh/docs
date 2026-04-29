@@ -52,6 +52,7 @@ details[open]>summary::before {
 
 ### Añadir un registro DNS de tipo A a un dominio
 
+<!-- CP-STEPS-START:add-a-record-domain -->
 Haga clic en las pestañas de abajo para ver cada uno de los **5** pasos.
 
 > [!tabs]
@@ -76,6 +77,7 @@ Haga clic en las pestañas de abajo para ver cada uno de los **5** pasos.
 > **Paso 5**
 >>
 >> Revise el resumen y haga clic en `Aceptar`{.action}. Espere hasta **24** horas para que la propagación de la adición en la red DNS sea plenamente efectiva.
+<!-- CP-STEPS-END:add-a-record-domain -->
 
 /// details | Haga clic aquí para obtener más información.
 
@@ -91,6 +93,7 @@ Consulte nuestras guías detalladas:
 
 ### Añadir un registro DNS de tipo A para el subdominio de un dominio
 
+<!-- CP-STEPS-START:add-a-record-subdomain -->
 Haga clic en las pestañas de abajo para ver cada uno de los **5** pasos.
 
 > [!tabs]
@@ -115,6 +118,7 @@ Haga clic en las pestañas de abajo para ver cada uno de los **5** pasos.
 > **Paso 5**
 >>
 >> Revise el resumen y haga clic en `Aceptar`{.action}. Espere hasta **24** horas para que la propagación de la adición en la red DNS sea plenamente efectiva.
+<!-- CP-STEPS-END:add-a-record-subdomain -->
 
 /// details | Haga clic aquí para obtener más información.
 

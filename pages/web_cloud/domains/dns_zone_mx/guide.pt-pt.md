@@ -79,6 +79,7 @@ Estes valores são comuns a todas estas ofertas, à exceção de [Private Exchan
 
 Estes registos MX devem ser configurados na zona DNS do seu nome de domínio.
 
+<!-- CP-STEPS-START:configure-mx-record -->
 ### Configurar um registo MX numa zona DNS da OVHcloud
 
 Clique nos separadores abaixo para ver sucessivamente cada uma das **5** etapas.
@@ -120,6 +121,7 @@ Clique nos separadores abaixo para ver sucessivamente cada uma das **5** etapas.
 > [!primary]
 >
 > A propagação das alterações efetuadas pode demorar entre 4 e 24 horas.
+<!-- CP-STEPS-END:configure-mx-record -->
 
 ## Quer saber mais? <a name="go-further"></a>
 

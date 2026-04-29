@@ -35,15 +35,12 @@ Desde el área de cliente de OVHcloud podrá encontrar las claves SMPP, cambiar 
 
 ## Procedimiento
 
-<!-- CP-STEPS-START:account-selection -->
 Seleccione su cuenta SMPP. Por su nombre, se diferencia de las demás cuentas de SMS de OVHcloud. En efecto, empieza por `smpp-` en lugar de `sms-` para las cuentas SMS clásicas.
 
 ![SMPP account](images/smpp-account.png){.thumbnail}
-<!-- CP-STEPS-END:account-selection -->
 
 ### Datos de identificación
 
-<!-- CP-STEPS-START:credentials -->
 El recuadro `Información general` le permite consultar las claves necesarias para utilizar el servicio. Utilice el botón situado a la derecha de cada campo para copiar su contenido.
 
 ![SMPP account](images/smpp-account-ID.png){.thumbnail}
@@ -53,11 +50,9 @@ Si ha olvidado la contraseña SMPP, utilice el botón `Generar una nueva contras
 Haga clic en `Enviar`{.action} para confirmar esta acción.
 
 ![SMPP account](images/smpp-account-password.png){.thumbnail}
-<!-- CP-STEPS-END:credentials -->
 
 ### Gestión de los accesos
 
-<!-- CP-STEPS-START:access-management -->
 Haga clic en la pestaña `Opciones`{.action} y, seguidamente, en `Parámetros SMPP`{.action}.
 
 ![SMPP account](images/smpp-acl0.png){.thumbnail}
@@ -67,7 +62,6 @@ El recuadro `IP autorizadas` enumera las direcciones IP de sus clientes SMPP que
 Haga clic en el botón `Añadir una IP`{.action} para añadir direcciones IP a esta lista.
 
 ![SMPP account](images/smpp-acl1.png){.thumbnail}
-<!-- CP-STEPS-END:access-management -->
 
 ### Gestión de remitentes y créditos
 

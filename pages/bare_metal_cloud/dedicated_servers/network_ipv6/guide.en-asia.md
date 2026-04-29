@@ -1,6 +1,6 @@
 ---
-title: 'Configuring IPv6 on dedicated servers'
-excerpt: 'Find out how to configure IPv6 addresses on our infrastructure'
+title: "Configure IPv6 on Dedicated Servers"
+excerpt: "Configure IPv6 addresses on your OVHcloud dedicated server with examples for major Linux distributions and Windows."
 updated: 2026-04-13
 ---
 
@@ -531,13 +531,13 @@ The leading "0s" can be removed in an IPv6 gateway. For example, the IPv6 gatewa
 >>
 >> Select `Internet Protocol Version 6`{.action}, then click `Properties`{.action}.
 >>
->> ![Properties](images/ipv6_properties.png){.thumbnail}
+>> ![Internet Protocol Version 6 selected in adapter properties](images/ipv6_properties.png){.thumbnail}
 >>
 >> **Step 3: Amend the network configuration**
 >>
 >> Enter your IPv6 configuration (`IPv6 address` and `Default Gateway`), check the `Validate settings upon exit` box and click the `OK`{.action} button to validate your changes.
 >>
->> ![Properties](images/ipv6_configuration.png){.thumbnail}
+>> ![IPv6 address and gateway configuration dialog](images/ipv6_configuration.png){.thumbnail}
 >>
 >> **Step 4: Disable randomized IPv6 interface identifiers**
 >>
@@ -650,5 +650,7 @@ In any case, feel free to [contact our support team](https://help.ovhcloud.com/c
 - The content of that file.
 
 ## Go further
+
+[Configuring IPv6 on a VM on a Dedicated Server](/pages/bare_metal_cloud/dedicated_servers/configure-an-ipv6-on-a-vm)
 
 Join our [community of users](/links/community).

@@ -48,7 +48,6 @@ Na przykład, możemy stworzyć politykę pozwalającą użytkownikowi o nazwie 
 
 ### Dostęp do menu IAM
 
-<!-- CP-STEPS-START:access-iam-menu -->
 Otwórz stronę [Polityki IAM](/links/control-panel/iam-policies).
 
 ![Dostęp do menu IAM](images/access_to_the_IAM_menu_01.png){.thumbnail}
@@ -70,7 +69,6 @@ Jeśli masz już utworzone reguły lub użytkowników, znajdziesz je w pierwszej
 ![Dostęp do menu IAM](images/access_to_the_IAM_menu_03.png){.thumbnail}
 
 Każda polityka jest wyświetlana wraz z jej nazwiskiem, liczbą powiązanych z nią tożsamości oraz liczbą działań, które zawiera.
-<!-- CP-STEPS-END:access-iam-menu -->
 
 ### Zarządzanie polityką
 
@@ -78,7 +76,6 @@ Każda polityka jest wyświetlana wraz z jej nazwiskiem, liczbą powiązanych z 
 
 #### Tworzenie polityki
 
-<!-- CP-STEPS-START:create-policy -->
 Kliknij przycisk 'Tworzenie polityki{.action}.
 
 Pojawi się następujący formularz:
@@ -142,11 +139,9 @@ Pole wyszukiwania jest dostępne, aby pomóc Ci zidentyfikować konkretne dział
 
 > [!primary]
 > Działania związane z zamówieniami i fakturami nie są jeszcze dostępne w IAM OVHcloud.
-<!-- CP-STEPS-END:create-policy -->
 
 #### Warunki dla zasad
 
-<!-- CP-STEPS-START:conditions-on-policies -->
 Można dodać warunki do zasad IAM.
 
 Zasada z warunkami jest ważna tylko wtedy, gdy wszystkie warunki są zweryfikowane.
@@ -164,25 +159,20 @@ Można dodać warunki dotyczące:
 ![Utwórz zasadę](images/conditions.png){.thumbnail}
 
 Po dodaniu warunki są wyświetlane zgodnie z [składnią używaną w API](/pages/account_and_service_management/account_information/iam-policies-api).
-<!-- CP-STEPS-END:conditions-on-policies -->
 
 #### Zmień politykę
 
-<!-- CP-STEPS-START:edit-policy -->
 Aby zmienić istniejącą politykę, kliknij przycisk `...`{.action} po prawej stronie polityki a następnie kliknij `Zmień politykę`{.action}.
 
 ![Zmień politykę](images/editing_a_policy.png){.thumbnail}
 
 Następnie można zmienić zakres polityki.
-<!-- CP-STEPS-END:edit-policy -->
 
 #### Usuń politykę
 
-<!-- CP-STEPS-START:delete-policy -->
 Aby usunąć istniejącą politykę, kliknij przycisk `...`{.action} po prawej stronie polityki, a następnie kliknij na `Usuń politykę`{.action}.
 
 W oknie podręcznym zostanie wyświetlona prośba o potwierdzenie usunięcia hosta.
-<!-- CP-STEPS-END:delete-policy -->
 
 <a name="create-users"></a>
 
@@ -198,11 +188,9 @@ Dostęp do pomocy technicznej będzie zawsze zarezerwowany dla właściciela zas
 
 ### Zarządzanie tożsamością
 
-<!-- CP-STEPS-START:manage-identities -->
 Aby zarządzać tożsamościami dostępnymi dla polityk, przejdź do menu `Tożsamość, bezpieczeństwo i operacje`{.action}, a następnie do sekcji `Tożsamości`{.action}.
 
 Szczegóły zarządzania użytkownikami znajdziesz w [dokumentacji dedykowanej](/pages/account_and_service_management/account_information/ovhcloud-users-management).
-<!-- CP-STEPS-END:manage-identities -->
 
 ### Zarządzanie grupami zasobów
 
@@ -210,7 +198,6 @@ Polityka może być ukierunkowana na grupy zasobów (zamiast bezpośredniego uki
 
 #### Utwórz grupę zasobów
 
-<!-- CP-STEPS-START:create-resource-group -->
 Aby utworzyć grupę zasobów, przejdź do sekcji `Polityki`{.action} i kliknij zakładkę `Grupy zasobów`{.action}:
 
 ![Resource Group](images/resource_groups.png){.thumbnail}
@@ -222,7 +209,6 @@ Kliknij polecenie Utwórz grupę zasobów{.action}.
 - **Nazwa grupy zasobów**: to nazwa, która pojawi się w interfejsach. Nazwa musi być unikalna i nie może zawierać spacji.
 - **Rodzaje produktów**: wykaz rodzajów produktów, których dotyczy ta grupa zasobów.
 - **Zasoby**: wykaz zasobów, które grupa będzie zawierać.
-<!-- CP-STEPS-END:create-resource-group -->
 
 #### Zmień grupę zasobów
 
@@ -230,11 +216,9 @@ Aby zmienić grupę zasobów, kliknij na jej nazwę na liście.
 
 #### Usuń grupę zasobów
 
-<!-- CP-STEPS-START:delete-resource-group -->
 Aby usunąć istniejącą grupę zasobów, kliknij przycisk `...`{.action} po prawej stronie grupy, a następnie kliknij `Usuń grupę zasobów`{.action}.
 
 W oknie podręcznym zostanie wyświetlona prośba o potwierdzenie usunięcia hosta.
-<!-- CP-STEPS-END:delete-resource-group -->
 
 ## Sprawdź również
 

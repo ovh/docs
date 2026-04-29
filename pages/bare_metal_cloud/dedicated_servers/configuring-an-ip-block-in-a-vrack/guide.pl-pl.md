@@ -1,6 +1,6 @@
 ---
-title: 'Konfiguracja bloku Additional IP w sieci vRack'
-excerpt: 'Ten przewodnik pokazuje, jak skonfigurować blok publicznych adresów IP do użytku z siecią vRack.'
+title: "Konfiguracja bloku IP w sieci vRack na serwerze dedykowanym"
+excerpt: "Skonfiguruj publiczny blok adresów IP do użytku z prywatną siecią OVHcloud vRack na serwerach dedykowanych."
 updated: 2026-04-03
 ---
 
@@ -492,11 +492,11 @@ Sprawdź następnie właściwości:
 
 Wybierz opcję `Use the following IP address`{.action}:
 
-![konfiguracja IP](images/win-ip-vrack-4.png){.thumbnail}
+![Wybór opcji Użyj następującego adresu IP](images/win-ip-vrack-4.png){.thumbnail}
 
 Zdefiniuj informacje o adresie IP:
 
-![konfiguracja IP](images/win-ip-vrack-5b.png){.thumbnail}
+![Pola adresu IP i maski podsieci wypełnione dla vRack](images/win-ip-vrack-5b.png){.thumbnail}
 
 #### Krok 3: Ponowne uruchomienie interfejsu sieciowego
 
@@ -528,4 +528,5 @@ Dołącz powyższe wyniki do swojego zgłoszenia.
 
 [Konfiguracja sieci vRack między usługą Public Cloud a serwerem dedykowanym](/pages/bare_metal_cloud/dedicated_servers/configuring-the-vrack-between-the-public-cloud-and-a-dedicated-server)
 
+- [Jak zmienić strefę ogłaszania bloku IP w vRack](/pages/bare_metal_cloud/dedicated_servers/vrack_change_zone_announce)
 Dołącz do [grona naszych użytkowników](/links/community).

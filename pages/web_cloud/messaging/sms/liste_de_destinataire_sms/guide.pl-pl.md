@@ -76,7 +76,6 @@ Otrzymany rezultat powinien wyglądać następująco:
 
 ### Etap 2: Zaimportować listę do Panelu klienta OVHcloud
 
-<!-- CP-STEPS-START:import-recipient-list -->
 Kliknij zakładkę `Kontakty`{.action} i `Utwórz listę kontaktów`{.action}.
 
 ![recipients](images/sms-recipientlist-3b.png){.thumbnail}
@@ -90,7 +89,6 @@ W tym celu kliknij pozycję `Działania`{.action}, a następnie wybierz poleceni
 Nazwij plik z listą odbiorców i zaimportuj plik lokalny do Panelu klienta.
 
 ![recipients](images/sms-recipientlist-6b.png){.thumbnail}
-<!-- CP-STEPS-END:import-recipient-list -->
 
 ### Etap 3: Wysyłka wiadomości SMS do listy odbiorców
 

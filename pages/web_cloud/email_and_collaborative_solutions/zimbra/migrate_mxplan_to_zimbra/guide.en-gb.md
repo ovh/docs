@@ -65,6 +65,7 @@ Use the migration tool [**O**VH **M**ail **M**igrator](/links/web/omm) (**OMM**)
 
 The migration with OMM is carried out in 3 steps: create a project, configure the migration, then track its progress. Click on each tab to display the corresponding instructions.
 
+<!-- CP-STEPS-START:omm-migration-steps -->
 > [!tabs]
 > **Step 1**
 >>
@@ -116,6 +117,7 @@ The migration with OMM is carried out in 3 steps: create a project, configure th
 >> - `Delete my migration data (GDPR)`{.action}: Triggers the deletion of all migration-related data. Information on migration events is retained.
 >>
 >> ![zimbra](images/omm-migration-follow.png){.thumbnail}
+<!-- CP-STEPS-END:omm-migration-steps -->
 
 For more details on using OMM, please read our guide "[Migrating email accounts via OVHcloud Mail Migrator](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_omm)".
 
@@ -143,7 +145,9 @@ To delete the MX Plan email address (e.g. `contact@mydomain.ovh`), follow our gu
 
 #### 2.2 - Rename the Zimbra email address <a name="step22"></a>
 
+<!-- CP-STEPS-START:zimbra-rename-address -->
 In your OVHcloud Control Panel, access your Zimbra service and rename the temporary Zimbra email address to the migrated MX Plan address. Using the example from step 2 of chapter 1.2 above, the temporary address `zimbra2@mydomain.ovh` will be renamed to `john.smith@mydomain.ovh`, which is the address in use.
+<!-- CP-STEPS-END:zimbra-rename-address -->
 
 ### Conclusion <a name="conclusion"></a>
 

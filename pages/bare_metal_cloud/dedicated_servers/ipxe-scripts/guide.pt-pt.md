@@ -1,6 +1,6 @@
 ---
-title: "Configurar um script iPXE personalizado para iniciar o seu servidor através da API OVHcloud"
-excerpt: "Descubra como a API OVHcloud lhe permite configurar um script de arranque personalizado PXE para dar bootagem ao seu servidor"
+title: "Script iPXE personalizado para servidores dedicados"
+excerpt: "Configure um script iPXE personalizado através da API OVHcloud para controlar o netboot do seu servidor dedicado."
 updated: 2024-02-27
 ---
 

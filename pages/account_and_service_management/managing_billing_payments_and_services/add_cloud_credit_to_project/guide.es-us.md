@@ -37,7 +37,6 @@ Abra `Crédito y códigos promocionales`{.action} en el menú de la izquierda en
 
 ### Añadir crédito
 
-<!-- CP-STEPS-START:add-credit -->
 Haga clic en el botón `Comprar crédito cloud`{.action}.
 
 ![addpubliccloudcredit](images/cloudcredit1.png){.thumbnail}
@@ -51,11 +50,9 @@ Se generará un recibo de pedido. Para consultar e iniciar el pago, haga clic en
 ![addpubliccloudcredit](images/cloudcredit3.png){.thumbnail}
 
 Una vez realizado el pago, su crédito aparecerá en la lista `Crédito y códigos promocionales`.
-<!-- CP-STEPS-END:add-credit -->
 
 ### Utilizar un código promocional
 
-<!-- CP-STEPS-START:redeem-voucher -->
 Haga clic en el botón `Activar un código promocional`{.action}.
 
 ![addpubliccloudcredit](images/voucher1.png){.thumbnail}
@@ -65,7 +62,6 @@ Se abrirá una ventana en la que deberá introducir el código promocional y hac
 ![addpubliccloudcredit](images/voucher2.png){.thumbnail}
 
 El saldo del código promocional aparecerá en la lista `Crédito y códigos promocionales`.
-<!-- CP-STEPS-END:redeem-voucher -->
 
 > [!primary]
 >

@@ -1,6 +1,6 @@
 ---
-title: Cómo evitar que sus correos electrónicos sean marcados como spam
-excerpt: "Aprenda a aplicar las buenas prácticas de envío de correo electrónico para limitar el riesgo de bloqueo de los mensajes legítimos mediante la protección contra el spam"
+title: "Optimizar el envío de e-mails en un servidor dedicado"
+excerpt: "Aplique las buenas prácticas de envío de e-mails en su servidor dedicado para evitar que sus mensajes legítimos sean marcados como spam"
 updated: 2024-01-24
 ---
 

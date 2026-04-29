@@ -213,7 +213,6 @@ Aplikacja Entra ID zostaje dodana jako zatwierdzony dostawca danych na stronie [
 
 #### Zaufanie OVHcloud
 
-<!-- CP-STEPS-START:establish-trust -->
 Uzupełnij pole **Nazwa atrybutu użytkownika** nazwą oświadczenia aplikacji identyfikatora wewnętrznego **UPN** oraz w polu **Nazwa atrybutu grupy** wartością nazwy oświadczenia **groups**, która została wcześniej zapisana.
 
 Wypełnij metadane XML aplikacji Entra ID z wcześniej zarejestrowanego pliku.
@@ -223,7 +222,6 @@ Użytkowników lokalnych można zachować, zaznaczając pole `Zachowaj status �
 Kliknij przycisk `Zatwierdź`{.action}.
 
 ![Ovhcloud SSO step 1](images/ovhcloud_sso_1.png){.thumbnail}
-<!-- CP-STEPS-END:establish-trust -->
 
 Dodawanie aplikacji Entra ID do Twojego konta e-mail zostało ustanowione, ale należy dodać grupy do Twojego konta OVHcloud.
 
@@ -239,7 +237,6 @@ Aby rozwiązać tę sytuację, sprawdź atrybut "Group" zwrócony przez aplikacj
 
 ![Etap 2 Entra ID Group](images/azure_ad_group_2.png){.thumbnail}
 
-<!-- CP-STEPS-START:declare-groups -->
 Aby dodać grupę, przejdź do sekcji `Tożsamości`{.action} i następnie do zakładki `Grupy użytkowników`{.action}. Następnie kliknij przycisk `Zadeklaruj grupę`{.action}:
 
 ![Grupy zarządzania użytkownikami Ovhcloud etap 1](images/ovhcloud_sso_menu_1.png){.thumbnail}
@@ -251,7 +248,6 @@ Wpisz nazwę grupy i wybierz przypisaną rolę, a następnie kliknij na `Zatwier
 Utworzona grupa musi pojawić się na liście.
 
 ![Grupy zarządzania użytkownikami Ovhcloud etap 3](images/ovhcloud_sso_menu_3.png){.thumbnail}
-<!-- CP-STEPS-END:declare-groups -->
 
 Uwaga: jeśli nadasz tej grupie uprawnienia `Brak`, konieczne będzie przypisanie uprawnień za pośrednictwem [zasad IAM](/pages/account_and_service_management/account_information/iam-policy-ui).
 

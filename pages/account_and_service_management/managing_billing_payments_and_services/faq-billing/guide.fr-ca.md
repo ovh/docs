@@ -46,9 +46,7 @@ Si vous souhaitez en savoir plus, nous vous invitons à consulter ce guide déta
 
 ### Comment activer le renouvellement automatique ?
 
-<!-- CP-STEPS-START:enable-automatic-renewal -->
 Sur la page [Mes offres et services](/links/control-panel/billing-services), identifiez le service concerné, cliquez sur le bouton `...`{.action}, puis sélectionnez `Activer le paiement automatique`{.action}. Par défaut, le renouvellement automatique est activé sur chaque service lors de sa commande.
-<!-- CP-STEPS-END:enable-automatic-renewal -->
 
 #### Trucs et astuces
 
@@ -57,11 +55,9 @@ Si vous souhaitez en savoir plus, nous vous invitons à consulter ce guide déta
 
 ### Comment désactiver le renouvellement automatique ?
 
-<!-- CP-STEPS-START:disable-automatic-renewal -->
 Sur la page [Mes offres et services](/links/control-panel/billing-services), identifiez le service concerné, cliquez sur les points de suspension, puis sélectionnez « Configurer le renouvellement ». Vous pouvez ensuite choisir le mode manuel. Ce mode n'est disponible que pour certains services, tels que les noms de domaines, hébergements web, VPS, et serveurs dédiés.
 
 Pour résilier un service, consultez [Comment résilier un service](#cancelservice)
-<!-- CP-STEPS-END:disable-automatic-renewal -->
 
 #### Trucs et astuces
 
@@ -70,9 +66,7 @@ Si vous souhaitez en savoir plus, nous vous invitons à consulter ce guide déta
 
 ### Comment ajouter un moyen de paiement ?
 
-<!-- CP-STEPS-START:add-payment-method -->
 Sur la page [Moyens de paiement](/links/control-panel/billing-payment-methods), cliquez sur `Ajouter un moyen de paiement`{.action}.
-<!-- CP-STEPS-END:add-payment-method -->
 
 ### Comment mettre à jour mon moyen de paiement ?
 
@@ -88,9 +82,7 @@ Au moins un moyen de paiement doit être enregistré dans votre espace client, a
 
 ### Comment supprimer un moyen de paiement ?
 
-<!-- CP-STEPS-START:delete-payment-method -->
 Sur la page [Moyens de paiement](/links/control-panel/billing-payment-methods), identifiez le moyen de paiement à supprimer, puis cliquez sur l'icône en forme de corbeille.
-<!-- CP-STEPS-END:delete-payment-method -->
 
 #### Trucs et astuces
 
@@ -108,7 +100,6 @@ Si votre compte prépayé OVHcloud est créditeur, il sera toujours utilisé par
 
 ### Quelle est la date de mon prochain paiement ?
 
-<!-- CP-STEPS-START:next-payment-due-date -->
 Retrouvez toutes vos dates de renouvellement dans la rubrique « Mes offres et services » accessible directement sur le tableau de bord de votre espace client OVHcloud.
 
 À noter que les solutions bénéficiant du renouvellement automatique sont renouvelées le premier jour du mois. La fréquence peut cependant être différente selon vos services.
@@ -117,7 +108,6 @@ Retrouvez toutes vos dates de renouvellement dans la rubrique « Mes offres et s
 
 Sur la page [Mes offres et services](/links/control-panel/billing-services), vous pourrez modifier la fréquence de renouvellement de vos solutions.
 Si vous souhaitez en savoir plus, nous vous invitons à consulter ce guide détaillé : [Gérer le renouvellement de mes services](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal).
-<!-- CP-STEPS-END:next-payment-due-date -->
 
 ### Lequel de mes moyens de paiement sera débité ?
 
@@ -158,9 +148,7 @@ Sur la page [Moyens de paiement](/links/control-panel/billing-payment-methods), 
 
 ### À quoi correspondent mes paiements ?
 
-<!-- CP-STEPS-START:payments-correspondence -->
 Les paiements que vous réalisez sur notre site, ainsi que les prélèvements automatiques, sont historisés dans votre espace client. Depuis la rubrique `Suivi des paiements`{.action}, vous pouvez retrouver les factures, dates et montants correspondants.
-<!-- CP-STEPS-END:payments-correspondence -->
 
 ### Que faire si mon paiement par carte bancaire est refusé ?
 
@@ -172,11 +160,9 @@ Dans ce cas, nous vous conseillons de contacter votre banque afin d’être info
 
 ### Comment résilier un service ? <a name="cancelservice"></a>
 
-<!-- CP-STEPS-START:cancel-service -->
 Pour les solutions telles que les noms de domaine, hébergements web, serveurs dédiés et VPS, rendez-vous sur la page [Mes offres et services](/links/control-panel/billing-services). Identifiez le service concerné, cliquez sur le bouton `...`{.action}, puis sélectionnez `Résilier mon service`{.action}. À noter que si une demande a déjà été effectuée, il vous sera proposé d'`Annuler la résiliation du service`{.action}.
 
 La résiliation sera effective lorsque la période de validité ou d'engagement de votre service sera terminée. Vous pouvez effectuer cette demande ou l'annuler jusqu'à 24 heures avant la date d'échéance.
-<!-- CP-STEPS-END:cancel-service -->
 
 #### Trucs et astuces
 
@@ -185,10 +171,8 @@ Une documentation complète sur la résiliation de l'ensemble de nos produits et
 
 ### Comment personnaliser la référence de mon produit/service sur ma facture?
 
-<!-- CP-STEPS-START:customize-product-reference-bill -->
 Pour une lecture facilitée, les noms personnalisés que vous attribuez à vos produits/services sont inscrits, directement sur votre facture, en plus de la référence OVHcloud.
 Aussi, pour personnaliser le nom de vos produits/services (à l'exception du produit « nom de domaine »), rendez-vous dans votre espace client, dans la page de configuration de chacun de ceux-ci.
-<!-- CP-STEPS-END:customize-product-reference-bill -->
 
 ### Comment fonctionne la facturation de Public Cloud ?
 
@@ -200,13 +184,11 @@ Si vous souhaitez en savoir plus, nous vous invitons à consulter ce guide déta
 
 ### Comment consulter le grand livre des comptes ?
 
-<!-- CP-STEPS-START:see-accounts-ledger -->
 Le grand livre des comptes est fourni uniquement par le service comptabilité du demandeur.
 
 OVHcloud vous donne cependant accès à l'ensemble de vos factures, via un fichier Excel (.csv).
 
 Pour le télécharger, ouvrez la page [Mes factures](/links/control-panel/billing-invoices). Cliquez ensuite sur le bouton `Actions`{.action}, puis sélectionnez « Exporter en CSV ».
-<!-- CP-STEPS-END:see-accounts-ledger -->
 
 ## Aller plus loin
 

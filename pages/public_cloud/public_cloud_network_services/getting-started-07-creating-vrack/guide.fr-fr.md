@@ -165,7 +165,7 @@ Pour cela, vous devez choisir le bon fournisseur et la bonne ressource Terraform
 >
 
 > [!tabs]
-> Depuis l'espace client OVHcloud
+> Depuis l’espace client OVHcloud
 >> > [!primary]
 >> >
 >> > Cette étape ne s'applique pas aux projets nouvellement créés, qui sont désormais automatiquement livrés avec un vRack. Pour visualiser le vRack une fois le projet créé, rendez-vous dans la section `Network`{.action} et cliquez sur `Réseau Privé vRack`{.action} pour voir le(s) vRack(s).
@@ -348,6 +348,7 @@ Pour cela, vous devez choisir le bon fournisseur et la bonne ressource Terraform
 >> >
 >>
  
+
 ### Étape 2 : Créer un réseau privé dans le vRack <a name="create-pn-in-vrack"></a>
 
 Il est nécessaire de créer un réseau privé avec un réseau local virtuel (VLAN) afin que les instances reliées au vRack puissent communiquer entre elles.
@@ -573,6 +574,7 @@ Depuis l'espace client OVHcloud et les APIv6 OVHcloud, vous pourrez personnalise
 >> openstack subnet create --dhcp --network OS_CLI_private_network OS_CLI_subnet --subnet-range 10.1.0.0/16
 >> ```
 >> 
+
 
 ### Étape 3 : Intégrer une instance dans le vRack
 
@@ -863,6 +865,7 @@ Deux situations peuvent se présenter à vous :
 >> ```
 >>
 
+
 ///
 
 /// details | **Cas d'une instance déjà existante**
@@ -1139,6 +1142,7 @@ Ainsi, par exemple, si vous avez une interface publique *eth0*, vous aurez en pl
 >> [...]
 >> ```
 >>
+
 
 ### Détacher une interface réseau
 

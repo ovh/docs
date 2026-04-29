@@ -40,6 +40,7 @@ Gen 3 provides improved performance, scalability, and reliability compared to Ge
 
 ### Migrate a database service from Gen 2 to Gen 3
 
+<!-- CP-STEPS-START:migrate-database-service-from-gen-2-to-gen-3 -->
 > [!tabs]
 > Via the OVHcloud Control Panel
 >> Click `Databases`{.action} in the left navigation bar, select your database service then click the `Backups`{.action} tab.
@@ -153,6 +154,7 @@ Gen 3 provides improved performance, scalability, and reliability compared to Ge
 >> }
 >> ```
 >>
+<!-- CP-STEPS-END:migrate-database-service-from-gen-2-to-gen-3 -->
 
 ### Validate the deployment
 
@@ -168,6 +170,7 @@ After your new Gen 3 database service has been successfully provisioned, it's cr
 
 ### Clean up
 
+<!-- CP-STEPS-START:clean-up -->
 Once you've fully validated that your application is working correctly with the new Gen 3 database service, and you're confident all data has been transferred and is accessible, you can proceed with deleting the old Gen 2 service.
 
 This step is crucial to avoid unnecessary costs and maintain a clean infrastructure.
@@ -188,6 +191,7 @@ Follow these instructions to delete the old 1-AZ service:
 >> > @api {v1} /cloud DELETE /cloud/project/{serviceName}/database/postgresql/{clusterId}
 >> >
 >>
+<!-- CP-STEPS-END:clean-up -->
 
 ## We want your feedback!
 

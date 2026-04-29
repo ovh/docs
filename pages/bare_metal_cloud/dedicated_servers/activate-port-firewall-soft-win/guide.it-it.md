@@ -1,6 +1,6 @@
 ---
-title: Configura il firewall su Windows
-excerpt: Scopri come configurare un firewall Windows
+title: "Configurare il firewall di Windows su un server dedicato"
+excerpt: "Configura il firewall integrato di Windows sul tuo server dedicato per controllare il traffico di rete in entrata e in uscita."
 updated: 2022-01-31
 ---
 
@@ -114,4 +114,4 @@ Successivamente, è possibile apportare modifiche al livello di sicurezza della 
 
 ## Per saperne di più
 
-Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.
+Contatta la nostra [Community di utenti](/links/community).

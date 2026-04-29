@@ -44,6 +44,7 @@ Once you have launched Outlook on your device, you can add an account in two dif
 
 Enter your email address, then click `Continue`{.action}. If you are asked to choose a provider, select `Exchange`{.action}. Then fill in the information requested.
 
+<!-- CP-STEPS-START:find-server-name -->
 |Information|Description|
 |---|---|
 |Method|Leave **Username and password** (selected by default).|
@@ -51,6 +52,7 @@ Enter your email address, then click `Continue`{.action}. If you are asked to ch
 |DOMAIN\username or email address|Enter your full email address.|
 |Password|Enter the password for your email address.|
 |Server|Depending on the DNS configuration for your domain name, you may not need to enter the server. If you do, enter the details for the server your Exchange service is hosted on. Click [this link](/links/control-panel/web-exchange) to access the `Exchange`{.action} section. The server name is displayed in the **Connection** section of the `General information`{.action} tab.|
+<!-- CP-STEPS-END:find-server-name -->
 
 Once you have entered this information, click `Add account`{.action}. If the information is correct, Outlook will successfully connect to the account.
 

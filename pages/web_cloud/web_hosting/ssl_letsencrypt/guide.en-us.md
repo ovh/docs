@@ -69,6 +69,7 @@ Let's Encrypt is a free, automated, open, non-profit certification authority. Yo
 
 ### Activate the Let's Encrypt SSL certificate
 
+<!-- CP-STEPS-START:activate-letsencrypt -->
 Click on the tabs below to view each of the **3** steps.
 
 > [!tabs]
@@ -91,11 +92,13 @@ Click on the tabs below to view each of the **3** steps.
 >> ![Let's Encrypt SSL](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ssl-certificates/enable-ssl-lets-encrypt.png){.thumbnail}
 >>
 >> Then click the `Enable Let's Encrypt SSL`{.action} button.
+<!-- CP-STEPS-END:activate-letsencrypt -->
 
 It may take several hours to set up the Let's Encrypt SSL certificate.
 
 ### Verify activation of the free Let's Encrypt (DV) SSL certificate
 
+<!-- CP-STEPS-START:verify-letsencrypt -->
 To verify that the installation is complete, click on the tabs below to view each of the **3** steps.
 
 > [!tabs]
@@ -116,6 +119,7 @@ To verify that the installation is complete, click on the tabs below to view eac
 >> When the contents of the tab appear, check that each domain and/or subdomain concerned is listed in the table with the SSL certificate type `Let's Encrypt`.
 >>
 >>![SSL certificate management panel](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ssl-certificates/tab.png){.thumbnail}
+<!-- CP-STEPS-END:verify-letsencrypt -->
 
 Your Let's Encrypt SSL certificate is now installed and active. You can now use it with your new website(s) by switching, for example, your new [website(s) to HTTPS](/pages/web_cloud/web_hosting/ssl-activate-https-website).
 

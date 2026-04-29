@@ -11,53 +11,39 @@ Benvenuti in questa guida su come aggiungere una chiave SSH nel pannello di cont
 <iframe class="video" src="https://embed.api.video/vod/vi5UW0KIxq7D5kc0UrvoiToZ" width="100%" height="100%" frameborder="0" scrolling="no" allowfullscreen="true"></iframe>
 
 ## Passo 1: Accedere alla pagina "My offers and services"
-<!-- CP-STEPS-START:access-services-page -->
 
 Per iniziare, devi accedere alla pagina "My offers and services" all'interno del pannello di controllo OVHcloud. Puoi farlo accedendo all'URL [https://www.ovh.com/manager/#/billing/autorenew/](https://www.ovh.com/manager/#/billing/autorenew/). Una volta acceso, assicurati di essere sulla pagina corretta. 
 
 ![Passo 1](images/screenshot-1.it-it.jpg){.thumbnail}
-<!-- CP-STEPS-END:access-services-page -->
 
 ## Passo 2: Selezionare la scheda "SSH key"
-<!-- CP-STEPS-START:click-ssh-key-tab -->
 
 Una volta nella pagina "My offers and services", clicca sulla scheda "SSH key" per accedere alle impostazioni relative alle chiavi SSH. 
 
 ![Passo 2](images/screenshot-2.it-it.jpg){.thumbnail}
-<!-- CP-STEPS-END:click-ssh-key-tab -->
 
 ## Passo 3: Aggiungere una nuova chiave SSH
-<!-- CP-STEPS-START:add-new-ssh-key -->
 Clicca sul pulsante "Add an SSH key" per aggiungere una nuova chiave SSH. Questo pulsante aprirà un menu a discesa con diverse opzioni. Seleziona l'opzione "Dedicated" per procedere con l'aggiunta di una chiave SSH dedicata. 
 
 ![Passo 3](images/screenshot-3.it-it.jpg){.thumbnail}
-<!-- CP-STEPS-END:add-new-ssh-key -->
 
 ## Passo 4: Verificare la visualizzazione della finestra modale "Add an SSH key"
-<!-- CP-STEPS-START:verify-modal-window -->
 Dopo aver selezionato l'opzione "Dedicated", dovrebbe apparire una finestra modale intitolata "Add an SSH key". Questa finestra ti permetterà di inserire le informazioni necessarie per la nuova chiave SSH.
-<!-- CP-STEPS-END:verify-modal-window -->
 
 ## Passo 5: Inserire l'ID della chiave SSH
-<!-- CP-STEPS-START:enter-key-id -->
 Nella finestra modale "Add an SSH key", inserisci un valore nell campo "ID" (o "Identifier"). Per questo esempio, puoi inserire un ID casuale. Assicurati di ricordare questo ID, poiché potrebbe essere necessario in futuro. 
 
 ![Passo 5](images/screenshot-5.it-it.jpg){.thumbnail}
-<!-- CP-STEPS-END:enter-key-id -->
 
 ## Passo 6: Inserire la chiave SSH
-<!-- CP-STEPS-START:enter-ssh-key -->
 Nel campo "Key" input, inserisci la chiave SSH nel formato corretto, ad esempio "ssh-rsa AAAArandom123". Assicurati di inserire la chiave SSH corretta, poiché questa sarà utilizzata per l'autenticazione. 
 
 ![Passo 6](images/screenshot-6.it-it.jpg){.thumbnail}
-<!-- CP-STEPS-END:enter-ssh-key -->
 
 ## Passo 7: Confermare l'aggiunta della chiave SSH
-<!-- CP-STEPS-START:confirm-ssh-key -->
 Clicca sul pulsante "Confirm" per aggiungere la nuova chiave SSH. Una volta confermata, la chiave SSH sarà aggiunta al tuo account OVHcloud. 
 
 ![Passo 7](images/screenshot-7.it-it.jpg){.thumbnail}
-<!-- CP-STEPS-END:confirm-ssh-key -->
 
 ## Conclusione
 Congratulazioni! Hai aggiunto con successo una chiave SSH nel pannello di controllo OVHcloud. Se hai bisogno di ulteriore assistenza o hai domande, non esitare a contattare il supporto tecnico OVHcloud. Ricorda di gestire sempre le tue chiavi SSH in modo sicuro per proteggere l'accesso ai tuoi servizi. 

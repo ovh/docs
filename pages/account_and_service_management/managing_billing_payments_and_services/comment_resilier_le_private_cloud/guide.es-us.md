@@ -36,7 +36,6 @@ La solución Hosted Private Cloud se contrata sin período de permanencia. Sin e
 
 ### 1\. Solicitar la baja del servicio desde el área de cliente de OVHcloud
 
-<!-- CP-STEPS-START:cancel-step1 -->
 En la columna «Gestión del servicio» de la pestaña «Información general», haga clic en el botón con forma de tres puntos `...`{.action} (4) que aparece junto a la fecha de renovación. Por último, haga clic en `Eliminar el servicio`{.action} (5).
 
 ![Baja desde el área de cliente](images/resiliation1.png){.thumbnail}
@@ -50,17 +49,14 @@ Haga clic en `«Aceptar»`{.action} para solicitar la baja del servicio.
 Aparecerá un mensaje confirmándole que la solicitud de baja se ha enviado correctamente. A continuación, recibirá el procedimiento de confirmación de la baja del servicio por correo electrónico, en la dirección asociada a su cuenta de OVHcloud.
 
 ![Confirmar la baja del servicio](images/resiliation3.png){.thumbnail}
-<!-- CP-STEPS-END:cancel-step1 -->
 
 ### 2\. Confirmar la baja del servicio
 
 Una vez solicitada la baja del servicio, recibirá el procedimiento de confirmación por correo electrónico en la dirección asociada a su cuenta de OVHcloud. 
 
-<!-- CP-STEPS-START:cancel-step2 -->
 También puede consultar este mensaje de correo electrónico en su área de cliente de OVHcloud. Para ello, desde la página de inicio del panel de control, haga clic en el botón `Mis mensajes`{.action} que aparece en el menú de la derecha.
 
 ![Confirmar la baja del servicio](/pages/assets/screens/control_panel/product-selection/right-menu/my-messages.png){.thumbnail}
-<!-- CP-STEPS-END:cancel-step2 -->
 
 El objeto del mensaje será el siguiente:
 

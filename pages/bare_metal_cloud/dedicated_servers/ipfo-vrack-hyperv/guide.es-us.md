@@ -1,6 +1,6 @@
 ---
-title: "Utilizar Hyper-V con direcciones Additional IP en un vRack"
-excerpt: Cómo configurar una máquina virtual con Additional IP e Hyper-V en un vRack
+title: "Configurar máquinas virtuales Hyper-V con Additional IP en un vRack en un servidor dedicado"
+excerpt: "Utilice Hyper-V con Additional IP a través de un vRack en su servidor dedicado de OVHcloud."
 updated: 2025-07-22
 ---
 
@@ -20,7 +20,7 @@ Siga el proceso de instalación de Hyper-V, asocie un switch virtual y configure
 - Una imagen ISO para el sistema operativo que se instalará en su máquina virtual (CentOS 7 se utilizará como ejemplo en esta guía)
 - Un vRack incluido en su cuenta de OVHcloud
 - Un bloque IP de 4 o más direcciones IP
-- Estar conectado al [área de cliente de OVHcloud](/links/manager)
+- Estar conectado al [área de cliente de OVHcloud](/links/manager).
 
 > [!warning]
 > Esta funcionalidad puede no estar disponible o estar limitada en los [servidores dedicados **Eco**](/links/bare-metal/eco-about).

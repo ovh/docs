@@ -54,11 +54,13 @@ If you experience any difficulties carrying out these operations, we recommend t
 
 ## Instructions
 
+<!-- CP-STEPS-START:cp-server-name-lookup -->
 > [!primary]
 >
 > In our example, we use the server reference: ex?.mail.ovh.net. The "?" must be replaced with the number corresponding to your Exchange service's server.
 >
 > Click [this link](/links/control-panel/web-exchange) to access the `Exchange`{.action} section. The server name is displayed in the **Connection** section of the `General information`{.action} tab.
+<!-- CP-STEPS-END:cp-server-name-lookup -->
 
 ### Add the account
 

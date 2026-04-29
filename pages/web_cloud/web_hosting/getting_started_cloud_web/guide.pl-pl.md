@@ -52,6 +52,7 @@ Aktualnie dostępne języki to:
 - Python
 - Ruby
 
+<!-- CP-STEPS-START:access-runtime-software -->
 Aby uzyskać dostęp do frameworków Twojego hostingu [Cloud Web](/links/web/hosting-cloud-web-offer), kliknij na poniższe karty, aby wyświetlić kolejno każdy z **3** kroków.
 
 > [!tabs]
@@ -70,9 +71,11 @@ Aby uzyskać dostęp do frameworków Twojego hostingu [Cloud Web](/links/web/hos
 > **Krok 3**
 >>
 >> Jeśli dysponujesz pakietem [Cloud Web](/links/web/hosting-cloud-web-offer) z 2 vCores, możesz dodać drugi framework (maksymalnie 2 na ofertę), klikając przycisk `Operacje`{.action}, a następnie `Dodaj framework`{.action}.
+<!-- CP-STEPS-END:access-runtime-software -->
 
 Zanim przejdziesz do kolejnych kroków, upewnij się, że posiadasz framework lub frameworki niezbędne do Twojego projektu.
 
+<!-- CP-STEPS-START:check-cloud-web-vcores -->
 Aby sprawdzić, czy w ramach hostingu Cloud Web dysponujesz 2 vCores, kliknij na poniższe karty, aby wyświetlić kolejno każdy z **2** kroków.
 
 > [!tabs]
@@ -85,6 +88,7 @@ Aby sprawdzić, czy w ramach hostingu Cloud Web dysponujesz 2 vCores, kliknij na
 > **Krok 2**
 >>
 >> W ramce **Abonament** i pod napisem `Pakiet` sprawdź, czy jest tam wskazany numer `Cloud Web 3`.
+<!-- CP-STEPS-END:check-cloud-web-vcores -->
 
 ### 3 - Utworzenie zmiennych środowiskowych (opcjonalnie)
 
@@ -92,6 +96,7 @@ Jeśli chcesz wdrożyć kilka projektów w różnych środowiskach (na przykład
 
 Dzięki temu nie jest na przykład konieczne określanie pliku ".env" we frameworku PHP Laravel, jak wskazuje dokumentacja: <https://laravel.com/docs/master/configuration>.
 
+<!-- CP-STEPS-START:add-environment-variable -->
 Aby dodać zmienną środowiskową, kliknij na poniższe karty, aby wyświetlić kolejno każdy z **3** kroków.
 
 > [!tabs]
@@ -110,6 +115,7 @@ Aby dodać zmienną środowiskową, kliknij na poniższe karty, aby wyświetlić
 >> Aby dodać nową zmienną, kliknij przycisk `Operacje`{.action}, a następnie `Dodaj zmienną środowiskową`{.action}. Następnie postępuj zgodnie ze wskazówkami w zależności od zmiennej, którą chcesz utworzyć.
 >>
 >> ![Dodawanie zmiennej środowiskowej na hostingu Cloud Web](/pages/assets/screens/control_panel/product-selection/web-cloud/cloud-web/environment-variables/add-an-environment-variable.png){.thumbnail}
+<!-- CP-STEPS-END:add-environment-variable -->
 
 Jeśli nie używasz środowiska deweloperskiego zawierającego zmienne środowiskowe lub jeśli chcesz sprawdzić, czy zmienne działają poprawnie, możesz utworzyć skrypt, który przeprowadzi weryfikację. Poniżej przykład skryptu, który może być pomocny w przeprowadzanej przez Ciebie operacji, nie zastąpi on jednak pomocy technicznej webmastera.
 
@@ -137,6 +143,7 @@ Pamiętaj, aby zastąpić informację "DB_DATABASE", zapisaną w powyższych skr
 
 ### 4 - Konfiguracja dodatkowych domen jako MultiSite (opcjonalnie)
 
+<!-- CP-STEPS-START:configure-multisite -->
 Teraz, kiedy środowisko Twojego hostingu Cloud Web jest gotowe, możesz skonfigurować dodatkowe domeny w opcji MultiSite. Dzięki temu będziesz mógł podzielić Twoją przestrzeń i hostować na niej kilka stron WWW. Jeśli opcja ta jest niezbędna dla Twojego projektu, kliknij na poniższe karty, aby wyświetlić kolejno każdy z **3** kroków.
 
 > [!tabs]
@@ -163,6 +170,7 @@ Teraz, kiedy środowisko Twojego hostingu Cloud Web jest gotowe, możesz skonfig
 >> > [!warning]
 >> >
 >> > Jeśli dodałeś domenę uznawaną jako zewnętrzną, podczas konfiguracji DNS skonfiguruj również pole TXT o nazwie **ovhcontrol**. Dzięki temu OVHcloud ma pewność, że dodanie domeny nastąpiło zgodnie z Twoją wolą. Czynność ta jest niezbędna i jeśli nie zostanie przeprowadzona, dodanie domeny zostanie anulowane.
+<!-- CP-STEPS-END:configure-multisite -->
 
 Powtórz tę operację, jeśli chcesz dodać kilka domen do Twojego hostingu Cloud Web. Aby uzyskać więcej informacji o dodawaniu domeny w opcji MultiSite, zapoznaj się z naszą dokumentacją: [Instalacja kilku stron WWW na jednym hostingu](/pages/web_cloud/web_hosting/multisites_configure_multisite).
 
@@ -174,6 +182,7 @@ Aby zainstalować Twój projekt, masz do dyspozycji dwie możliwości. Powtarzaj
 
 W tej opcji wybierasz gotowe do użycia rozwiązanie, które dowolnie personalizujesz pod względem struktury strony (szablon, teksty itd.). OVHcloud proponuje cztery moduły CMS, o których możesz dowiedzieć się więcej na stronie ["Twoja strona WWW dzięki modułom CMS"](/links/web/hosting-website).
 
+<!-- CP-STEPS-START:install-1-click-module -->
 Jeśli decydujesz się na skorzystanie z modułów CMS OVHcloud, kliknij na poniższe karty, aby wyświetlić kolejno każdy z **3** kroków.
 
 > [!tabs]
@@ -190,6 +199,7 @@ Jeśli decydujesz się na skorzystanie z modułów CMS OVHcloud, kliknij na poni
 > **Krok 3**
 >>
 >> Będziesz mógł wówczas rozpocząć instalację w trybie "podstawowym" (bez personalizacji) lub "zaawansowanym" (z możliwością personalizacji niektórych elementów).
+<!-- CP-STEPS-END:install-1-click-module -->
 
 Jeśli chcesz uzyskać więcej informacji o modułach CMS OVHcloud, zapoznaj się z dokumentacją: [Automatyczna instalacja strony WWW za pomocą modułu CMS](/pages/web_cloud/web_hosting/cms_install_1_click_modules).
 

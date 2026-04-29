@@ -42,6 +42,7 @@ For example: you can automatically delete emails tagged as spam by our spam prot
 
 ## Instructions <a name="oldmxplan"></a>
 
+<!-- CP-STEPS-START:open-filter-management -->
 In the table listing your email addresses, click on the `Filter`{.action} icon in the row of the email address concerned.
 
 ![emails](images/img_3239.png){.thumbnail}
@@ -49,9 +50,11 @@ In the table listing your email addresses, click on the `Filter`{.action} icon i
 A new window will open which contains the list of filters currently configured for this email address. To add one, click on the button `Add a Filter`{.action}.
 
 ![emails](images/img_3240.jpg){.thumbnail}
+<!-- CP-STEPS-END:open-filter-management -->
 
 ### Understanding the email filter settings
 
+<!-- CP-STEPS-START:configure-filter-settings -->
 ![emails](images/img_3241.jpg){.thumbnail}
 
 #### Information
@@ -104,9 +107,11 @@ You can choose between these types of actions:
 - **redirect to a local address**: redirects the email to one of your other email addresses on the same domain.
 - **deletion**: deletes the email from your inbox without further notice.
 - **redirect to a remote address**: redirects the email to whichever email address you enter.
+<!-- CP-STEPS-END:configure-filter-settings -->
 
 ### Examples
 
+<!-- CP-STEPS-START:filter-examples -->
 #### Deleting spam emails
 
 > [!warning]
@@ -148,6 +153,7 @@ This filter example consists of two rules:
 In the Control Panel, the filter configuration looks like this:
 
 ![emails](images/img_3242.jpg){.thumbnail}
+<!-- CP-STEPS-END:filter-examples -->
 
 ## Go further <a name="go-further"></a>
 

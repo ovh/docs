@@ -31,7 +31,6 @@ Niniejszy przewodnik wyjaśnia, jak tworzyć użytkowników API i zarządzać ni
 
 ## W praktyce
 
-<!-- CP-STEPS-START:instructions-overview -->
 ![sms-users](images/smsusers.png){.thumbnail}
 
 Utworzenie użytkownika API do wysyłania wiadomości SMS może być przydatne z kilku powodów:
@@ -50,21 +49,17 @@ Aby jak najlepiej zarządzać zasileniami konta SMS, możesz ustalić ograniczen
 - **Limit** to ilość zasileń SMS dostępnych dla użytkownika API.
 
 - **Próg** to minimalna ilość zasileń SMS, jakie pozostały użytkownikowi API przed otrzymaniem alertu o konieczności doładowania tych zasileń.
-<!-- CP-STEPS-END:instructions-overview -->
 
 ### Etap 1: Utworzenie użytkownika API
 
-<!-- CP-STEPS-START:create-api-user -->
 Kliknij kartę `Użytkownicy API`{.action}. Aby dodać użytkownika, kliknij przycisk `Działania`{.action}, a następnie `Dodaj`{.action}.
 
 ![sms-users](images/smsusers01e-2021.png){.thumbnail}
 
 Użytkownikowi API można nadać dowolną nazwę. Hasło użytkownika API musi składać się z 8 znaków alfanumerycznych.
-<!-- CP-STEPS-END:create-api-user -->
 
 ### Etap 2: Przypisywanie limitu użytkownikowi API
 
-<!-- CP-STEPS-START:set-quota -->
 Limitami możesz zarządzać z poziomu karty `Użytkownicy API`{.action}. Obok wybranego użytkownika kliknij pozycję `...`{.action}, a następnie `Limity`{.action}.
 
 ![sms-users](images/smsusers03e-2021.png){.thumbnail}
@@ -82,11 +77,9 @@ Teraz możesz wykonać dwa działania.
 >
 > Przykład: na koncie SMS jest do dyspozycji 200 zasileń. Przydzielenie użytkownikowi API 150 zasileń spowoduje potrącenie tej liczby z konta SMS, na którym zostanie już tylko 50 zasileń.
 >
-<!-- CP-STEPS-END:set-quota -->
 
 ### Etap 3: Przypisywanie progu alertu użytkownikowi API
 
-<!-- CP-STEPS-START:set-limit -->
 Konfigurację progu dla użytkownika przeprowadza się z tego samego menu, klikając pozycję `...`{.action}, a następnie `Próg`{.action}.
 
 Dostępne są następujące parametry:
@@ -101,11 +94,9 @@ Dostępne są następujące parametry:
 >
 > Wysłanie powiadomienia przez wiadomość SMS zostanie odliczone od Twojego stanu zasileń SMS.
 >
-<!-- CP-STEPS-END:set-limit -->
 
 ### Etap 4: Określanie ograniczenia funkcji http2sms dla adresu IP
 
-<!-- CP-STEPS-START:ip-restriction -->
 Funkcję http2sms możesz zabezpieczyć, nakładając ograniczenia dla adresu IP dla każdego użytkownika API.
 
 Aby aktywować funkcję, po prawej stronie użytkownika kliknij pozycję `...`{.action}, a następnie `Ograniczenia`{.action}.
@@ -115,11 +106,9 @@ Możesz wprowadzić do 5 różnych publicznych adresów IP dla wysyłania zapyta
 ![sms-users](images/smsusers06-2021.png){.thumbnail}
 
 Aby uzyskać więcej informacji na temat funkcji http2sms, przeczytaj przewodnik [Wysyłanie wiadomości SMS z adresu URL](/pages/web_cloud/messaging/sms/envoyer_des_sms_depuis_une_url_-_http2sms).
-<!-- CP-STEPS-END:ip-restriction -->
 
 ### Etap 5: Określanie adresu URL wywołania zwrotnego
 
-<!-- CP-STEPS-START:callback-url -->
 Aby monitorować potwierdzenia odbioru wiadomości SMS (Delivery reporting lub DLR), można określić adres URL wywołania zwrotnego, po prawej stronie użytkownika klikając pozycję `...`{.action}, a następnie `Wywołanie zwrotne`{.action}.
 
 ![sms-users](images/smsusers07-2021.png){.thumbnail}
@@ -131,7 +120,6 @@ Gdy status wysyłki wiadomości SMS zostanie zaktualizowany, wywołamy określon
 - date: data raportu DLR;
 - description: identyfikator raportu DLR; Różne identyfikatory zostały opisane w drugiej tabeli poniżej.
 - descriptionDlr: opis statusu raportu DLR.
-<!-- CP-STEPS-END:callback-url -->
 
 #### Różne kody ptt
 

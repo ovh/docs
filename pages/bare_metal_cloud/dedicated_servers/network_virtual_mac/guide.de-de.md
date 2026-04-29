@@ -1,6 +1,6 @@
 ---
-title: 'Virtuelle MAC-Adresse einer Additional IP zuweisen'
-excerpt: 'Erfahren Sie hier, wie Sie eine virtuelle MAC-Adresse erstellen und mit einer Additional IP verbinden'
+title: "Virtuelle MAC-Adresse auf einem Dedicated Server zuweisen"
+excerpt: "Erstellen Sie eine virtuelle MAC-Adresse und weisen Sie sie einer Additional IP für transparentes VM-Networking auf Dedicated Servern zu."
 updated: 2025-05-16
 ---
 
@@ -49,11 +49,11 @@ Bei OVHcloud können Sie eine virtuelle MAC-Adresse mit einer IP-Adresse verbind
 
 Klicken Sie auf den Tab `Additional IP`{.action}.
 
-![manage IPs](images/manageIPs2022.png){.thumbnail}
+![Tab "Additional IP" im Kundencenter](images/manageIPs2022.png){.thumbnail}
 
 Suchen Sie nun in der Liste nach Ihrer Additional IP (oder Ihrem Block) und klicken Sie auf den Button `...`{.action}, um die Optionen anzuzeigen.
 
-![IP](images/addvmac.png){.thumbnail}
+![Optionsmenü für Additional IP-Adresse](images/addvmac.png){.thumbnail}
 
 Wenn das Dialogfeld “Virtuelle MAC-Adresse hinzufügen” erscheint, wählen Sie einen Typ in der Drop-down-Liste aus, geben Sie den Namen einer virtuellen Maschine ein und klicken Sie anschließend auf `Bestätigen`{.action}.
 
@@ -64,7 +64,7 @@ Wenn das Dialogfeld “Virtuelle MAC-Adresse hinzufügen” erscheint, wählen S
 > **Name der virtuellen Maschine**: Das ist der gewünschte Name für die virtuelle MAC-Adresse, damit das IP/MAC-Paar später einfacher gefunden werden kann.
 >
 
-![Additional IP](images/addvmac2.png){.thumbnail}
+![Dialog "Virtuelle MAC hinzufügen" mit Typ und VM-Name](images/addvmac2.png){.thumbnail}
 
 > [!primary]
 >
@@ -110,5 +110,7 @@ Der Block wird nicht verschoben.
 Beispiel: Wenn Sie versuchen, einen Block mit 4 IPs zu verschieben, wobei verschiedene vMACs an einen Server mit bereits 30 vMACs angehängt sind, wird der Block nicht verschoben, da die Gesamtanzahl der vMACs die erlaubten 32 vMACs übersteigen würde.
 
 ## Weiterführende Informationen
+
+- [Dedicated Server - IP-Aliasing konfigurieren](/pages/bare_metal_cloud/dedicated_servers/network_ipaliasing)
 
 Treten Sie unserer [User Community](/links/community) bei.

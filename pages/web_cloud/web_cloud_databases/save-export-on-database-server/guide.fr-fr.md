@@ -60,6 +60,8 @@ Votre base de données peut contenir un grand nombre d'informations essentielles
 
 #### Réaliser une sauvegarde manuelle
 
+<!-- CP-STEPS-START:save-manual -->
+
 Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3** étapes.
 
 > [!tabs]
@@ -81,7 +83,11 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3*
 >>
 >> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/databases/back-up-now.png){.thumbnail}
 
+<!-- CP-STEPS-END:save-manual -->
+
 #### Exporter une sauvegarde
+
+<!-- CP-STEPS-START:export-backup -->
 
 Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4** étapes.
 
@@ -107,6 +113,8 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4*
 > **Étape 4**
 >>
 >> La liste des sauvegardes disponibles apparaît. Cliquez sur le bouton `...`{.action} à droite de la sauvegarde choisie, puis sur `Télécharger la sauvegarde`{.action}.
+
+<!-- CP-STEPS-END:export-backup -->
 
 ### Sauvegarder et exporter une base de données hors espace client
 

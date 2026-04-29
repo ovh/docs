@@ -1,6 +1,6 @@
 ---
-title: SSH-Verbindungen verwenden
-excerpt: Erfahren Sie hier, wie Sie mit SSH von den meisten Desktop-Clients aus auf Ihren OVHcloud Server zugreifen können
+title: "Erste Schritte mit SSH auf einem Dedicated Server"
+excerpt: "Verbinden Sie sich per SSH von Windows, macOS oder Linux aus mit Ihrem OVHcloud Server per Passwort- oder Schlüssel-Authentifizierung."
 updated: 2024-12-03
 ---
 
@@ -146,7 +146,7 @@ Neuere Versionen von Windows unterstützen OpenSSH, sodass Sie es direkt aus den
 
 Klicken Sie mit der rechten Maustaste auf den Button `Start`{.action} und wählen Sie `Windows PowerShell`{.action}. Sie können auch das Suchfeld verwenden, um eine der Befehlszeilenanwendungen zu starten.
 
-![PowerShell](images/windowsps.png){.thumbnail}
+![Windows PowerShell Anwendungsfenster](images/windowsps.png){.thumbnail}
 
 Melden Sie sich mit folgendem Befehl beim Server an:
 

@@ -64,7 +64,7 @@ Ensuite, nous utiliserons cette Floating IP pour nous connecter à l'instance (V
 #### Depuis l’espace client OVHcloud
 
 > [!success]
-> Cliquez sur l'un des deux onglets ci-dessous selon que vous souhaitez associer une Floating IP à une nouvelle instance (**Option 1**) ou à une instance déjà existante (**Option 2**).
+> Cliquez sur l’un des deux onglets ci-dessous selon que vous souhaitez associer une Floating IP à une nouvelle instance (**Option 1**) ou à une instance déjà existante (**Option 2**).
 
 > [!tabs]
 > **Option 1**

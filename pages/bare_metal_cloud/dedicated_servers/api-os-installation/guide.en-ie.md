@@ -1,6 +1,6 @@
 ---
-title: OVHcloud API and OS Installation
-excerpt: Use OVHcloud API to install or reinstall an OS on your dedicated server
+title: "Install an OS via the OVHcloud API on a Dedicated Server"
+excerpt: "Use OVHcloud API to install or reinstall an OS on your dedicated server"
 updated: 2025-06-06
 ---
 
@@ -337,5 +337,7 @@ You also can set it in the payload of the following API call:
 [Managing software RAID](/pages/bare_metal_cloud/dedicated_servers/raid_soft)
 
 [Managing hardware RAID](/pages/bare_metal_cloud/dedicated_servers/raid_hard)
+
+[Installing CUDA on a Dedicated Server with GPU](/pages/bare_metal_cloud/dedicated_servers/cuda_installation_on_gpu)
 
 Join our [community of users](/links/community).

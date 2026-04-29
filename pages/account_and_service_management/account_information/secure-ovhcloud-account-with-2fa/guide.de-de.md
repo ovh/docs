@@ -102,7 +102,6 @@ Klicken Sie auf der Seite [Kontosicherheit](/links/control-panel/account-securit
 
 > [!tabs]
 > SMS
->> <!-- CP-STEPS-START:enable-2fa-sms -->
 >> Wählen Sie die Methode SMS aus und klicken Sie auf `Weiter`{.action}.
 >>
 >>![2FA SMS](images/2024-002-sms-choice.png){.thumbnail width="400"}<br>
@@ -115,9 +114,7 @@ Klicken Sie auf der Seite [Kontosicherheit](/links/control-panel/account-securit
 >>
 >>![2FA SMS](images/2024-002-sms-code.png){.thumbnail width="400"}<br>
 >> Die Zwei-Faktor-Authentifizierung ist nun aktiviert. Sie können auch weitere Nummern hinzufügen.
->> <!-- CP-STEPS-END:enable-2fa-sms -->
 > Mobil-App
->> <!-- CP-STEPS-START:enable-2fa-otp -->
 >> Wählen Sie die Methode mobile Applikation aus und klicken Sie auf `Weiter`{.action}.
 >>
 >>![2FA mobileApp](images/2024-003-otp-choice.png){.thumbnail width="400"}<br>
@@ -127,9 +124,7 @@ Klicken Sie auf der Seite [Kontosicherheit](/links/control-panel/account-securit
 >>
 >>![2FA MobileApp](images/2024-003-otp-code.png){.thumbnail width="400"}<br>
 >> Die Zwei-Faktor-Authentifizierung ist nun aktiviert.
->> <!-- CP-STEPS-END:enable-2fa-otp -->
 > USB-Token
->> <!-- CP-STEPS-START:enable-2fa-u2f -->
 >> Wählen Sie die Methode USB-Token und klicken Sie auf `Weiter`{.action}.
 >>
 >>![2FA SecurityKey](images/2024-004-u2f-choice.png){.thumbnail width="400"}<br>
@@ -142,13 +137,11 @@ Klicken Sie auf der Seite [Kontosicherheit](/links/control-panel/account-securit
 >>
 >> Nach dem Erkennen des Schlüssels können Sie auch eine Beschreibung hinzufügen.
 >> Die Zwei-Faktor-Authentifizierung ist nun aktiviert.
->> <!-- CP-STEPS-END:enable-2fa-u2f -->
 
 Nachdem Sie die erste Methode hinzugefügt haben, können Sie auch **eine oder zwei weitere Methoden hinzufügen**, um mehrere Optionen zur Anmeldung bei Ihrem Konto zu haben.
 
 ### Schritt 2: Speichern Sie die Sicherheitscodes  <a name="codes"></a>
 
-<!-- CP-STEPS-START:save-backup-codes -->
 Wenn Sie zum ersten Mal eine Zwei-Faktor-Authentifizierung hinzufügen, werden Ihnen im Kundencenter 10 **Notfall-Codes** zur einmaligen Verwendung angezeigt.
 
 **Bewahren Sie diese gut auf**. Wir empfehlen Ihnen, sie in einem Passwort-Manager wie [Keepass](https://keepass.info/) oder [Bitwarden](https://bitwarden.com/) zu speichern (beide Apps sind kostenlos).
@@ -158,7 +151,6 @@ Wenn Sie zum ersten Mal eine Zwei-Faktor-Authentifizierung hinzufügen, werden I
 Sie können die Notfall-Codes über Ihr Kundencenter neu generieren oder löschen:
 
 ![2FA](images/emergency-codes.png){.thumbnail}
-<!-- CP-STEPS-END:save-backup-codes -->
 
 > [!warning]
 >
@@ -209,13 +201,11 @@ Wenn Ihr Peripheriegerät (Mobiltelefon/Smartphone/Sicherheitsschlüssel) verlor
 > - Gültige Notfall-Codes.
 >
 
-<!-- CP-STEPS-START:delete-device -->
 Um ein Gerät zu entfernen, gehen Sie zur Seite [Kontosicherheit](/links/control-panel/account-security) und klicken Sie auf die `...`{.action} rechts vom zu löschenden Gerät und dann auf `Löschen`{.action}.
 
 ![2FA](images/2024-006-delete-device.png){.thumbnail}
 
 Anschließend wird ein letzter Bestätigungscode an das zu löschende Gerät gesendet. Geben Sie diesen Code in das angezeigte Fenster ein und klicken Sie auf `Bestätigen`{.action}, um den Löschvorgang abzuschließen.
-<!-- CP-STEPS-END:delete-device -->
 
 Wenn Sie keinen Zugriff mehr auf das Gerät haben, das Sie löschen möchten, können Sie es nicht selbst aus dem OVHcloud Kundencenter löschen.
 In diesem Fall **kontaktieren Sie unsere Support-Teams direkt**, indem Sie [ein Ticket über das Help Center erstellen](https://help.ovhcloud.com/csm?id=csm_get_help) oder durch Befolgen des [unten](#2FA-deletion) beschriebenen Vorgangs.
@@ -232,11 +222,9 @@ Um die Zwei-Faktor-Authentifizierung für Ihren OVHcloud Kunden-Account vollstä
 
 Um die Peripheriegeräte zu entfernen, lesen Sie den [entsprechenden Abschnitt dieser Anleitung](#delete-device).
 
-<!-- CP-STEPS-START:disable-2fa-codes -->
 Wenn alle Ihre Geräte gelöscht sind, deaktivieren Sie die Notfall-Codes, indem Sie auf den Button `2FA-Codes deaktivieren`{.action} klicken.
 
 ![2FA Codes](images/disabling-codes.png){.thumbnail}
-<!-- CP-STEPS-END:disable-2fa-codes -->
 
 #### Wenn Sie keinen Zugriff mehr auf Ihr OVHcloud Kundencenter haben <a name="2FA-deletion"></a>
 

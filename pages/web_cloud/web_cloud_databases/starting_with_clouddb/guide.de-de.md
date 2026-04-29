@@ -30,6 +30,7 @@ Standardmäßig ist Ihre Web Cloud Databases Lösung mit dem OVHcloud Webhosting
 
 ### Aktivierung Ihres im Webhosting enthaltenen Web Cloud Databases Servers
 
+<!-- CP-STEPS-START:activate-webhosting-clouddb -->
 Wenn Ihr Hosting die Option Web Cloud Databases beinhaltet, klicken Sie auf die unten stehenden Tabs, um die **3** Schritte nacheinander anzuzeigen.
 
 > [!tabs]
@@ -48,9 +49,11 @@ Wenn Ihr Hosting die Option Web Cloud Databases beinhaltet, klicken Sie auf die 
 > **Schritt 3**
 >>
 >> Folgen Sie den angezeigten Anweisungen, um den Typ und die Version Ihres Web Cloud Databases Servers festzulegen. Er wird anschließend in der linken Spalte unter `Web Cloud Databases`{.action} verfügbar sein.
+<!-- CP-STEPS-END:activate-webhosting-clouddb -->
 
 ### Allgemeine Informationen der Instanz anzeigen
 
+<!-- CP-STEPS-START:view-general-info -->
 Klicken Sie auf die unten stehenden Tabs, um die **2** Schritte nacheinander anzuzeigen.
 
 > [!tabs]
@@ -82,9 +85,11 @@ Klicken Sie auf die unten stehenden Tabs, um die **2** Schritte nacheinander anz
 >> |Host|Zeigt den OVHcloud Server an, auf dem Ihre Instanz erstellt wurde. Hierbei handelt es sich um eine der OVHcloud Infrastruktur inhärente Information, die in Mitteilungen zu [OVHcloud Störungen](https://www.status-ovhcloud.com/) verwendet werden kann.|
 >>
 >> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/general-information/general-information.png){.thumbnail}
+<!-- CP-STEPS-END:view-general-info -->
 
 ### Datenbank erstellen
 
+<!-- CP-STEPS-START:create-database -->
 > [!primary]
 >
 > Dieser Schritt gilt nicht für das Datenbanksystem Redis.
@@ -124,9 +129,11 @@ Klicken Sie auf die unten stehenden Tabs, um die **4** Schritte nacheinander anz
 >> Klicken Sie auf `Bestätigen`{.action}.
 >>
 >> ![web-cloud-databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/databases/add-database-confirmation.png){.thumbnail}
+<!-- CP-STEPS-END:create-database -->
 
 ### Benutzer erstellen
 
+<!-- CP-STEPS-START:create-user -->
 > [!primary]
 >
 > Dieser Schritt gilt nicht für das Datenbanksystem Redis.
@@ -155,6 +162,7 @@ Wenn Ihr Projekt keinen zusätzlichen Benutzer erfordert, können Sie zum nächs
 > **Schritt 4**
 >>
 >> Geben Sie einen "Benutzernamen" und ein "Passwort" ein und klicken Sie dann auf `Bestätigen`{.action}.
+<!-- CP-STEPS-END:create-user -->
 
 Wenn Sie die Rechte eines bestehenden Benutzers ändern möchten, lesen Sie unsere Anleitung "[Web Cloud Databases - Benutzerrechte ändern](/pages/web_cloud/web_cloud_databases/modify_rights_for_users)".
 
@@ -170,6 +178,7 @@ Dort werden verschiedene Importmethoden beschrieben.
 
 ### IP-Adresse autorisieren
 
+<!-- CP-STEPS-START:authorise-ip -->
 Damit Ihre Web Cloud Databases Instanz funktioniert, müssen Sie die IPs oder IP-Bereiche angeben, die sich mit Ihren Datenbanken verbinden dürfen.
 
 Klicken Sie dazu auf die unten stehenden Tabs, um die **4** Schritte nacheinander anzuzeigen.
@@ -215,6 +224,7 @@ Klicken Sie dazu auf die unten stehenden Tabs, um die **4** Schritte nacheinande
 >> > Dies würde den Zugriff auf Ihre Datenbanken für alle existierenden IPv4-Adressen ermöglichen.
 >>
 >> Klicken Sie nach Eingabe der Informationen auf den Button `Bestätigen`{.action}.
+<!-- CP-STEPS-END:authorise-ip -->
 
 ### Verbindungen von einem OVHcloud Webhosting erlauben <a name="trustip"></a>
 
@@ -224,6 +234,7 @@ Lesen Sie dazu die Sonderfälle in unserer Anleitung "[Web Cloud Databases - Wie
 
 ### Ihre Website mit der Datenbank verbinden
 
+<!-- CP-STEPS-START:connect-website-database -->
 Nachdem Ihre Datenbank erstellt wurde, ein oder mehrere Benutzer Rechte dafür haben und mindestens eine IP-Adresse oder OVHcloud Webhostings auf Ihrer Web Cloud Databases Instanz autorisiert wurden, muss nur noch Ihre Website mit Ihrer Datenbank verbunden werden. Dieser Schritt kann auf verschiedene Weisen erfolgen, je nach Website oder CMS (WordPress, Joomla!, etc.) und je nachdem, in welchem Stadium Sie sich bei der Installation einer Website befinden.
 
 Dafür benötigen Sie die folgenden 5 Informationen:
@@ -262,6 +273,7 @@ Um diese Informationen abzurufen, klicken Sie auf die unten stehenden Tabs, um d
 > Das Feld `Port`{.action} ist möglicherweise in der Konfiguration Ihrer Website nicht vorhanden. Sie müssen dieses Feld nach dem Hostnamen Ihres Servers hinzufügen, getrennt durch ein *:*.
 >
 > Zum Beispiel müssten Sie für den Hostnamen `aaXXXXX-XXX.eu.clouddb.ovh.net` mit dem SQL-Port `12345` im Bereich "Host" / "Hostname" `aaXXXXX-XXX.eu.clouddb.ovh.net:12345` eingeben.
+<!-- CP-STEPS-END:connect-website-database -->
 
 ### Logs Ihres Web Cloud Databases Servers abrufen
 

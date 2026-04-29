@@ -27,15 +27,12 @@ Beim Anlegen Ihres OVHcloud Kunden-Accounts haben Sie eine E-Mail-Adresse als Ko
 
 ### Meine Kommunikation
 
-<!-- CP-STEPS-START:my-messages -->
 Über den Tab `Meine Kommunikation`{.action} können Sie alle Nachrichten einsehen, die an Ihre E-Mail-Adresse gesendet wurden. In der oberen rechten Ecke der Tabelle können Sie einen Filter aktivieren, um Ihre Nachrichten nach Priorität, Datum und Kategorie zu sortieren.
 
 ![my messages](images/messages-01.png){.thumbnail .w-600}
-<!-- CP-STEPS-END:my-messages -->
 
 ### Kontakte
 
-<!-- CP-STEPS-START:contacts -->
 Über den Tab `Kontakte`{.action} können Sie die Referenz-E-Mail-Adresse Ihres OVHcloud Kunden-Accounts einsehen, die nicht über das Kundencenter entfernt oder geändert werden kann.
 
 > [!primary]
@@ -52,11 +49,9 @@ Neben Ihrem Standardkontakt können Sie weitere E-Mail-Adressen zu Ihrem OVHclou
     - `Löschen`{.action}: Diesen Kontakt löschen.
 
 ![my messages](images/contacts-01.png){.thumbnail .w-600}
-<!-- CP-STEPS-END:contacts -->
 
 ### Sendungseinstellungen
 
-<!-- CP-STEPS-START:delivery-settings -->
 Über den Tab `Sendungseinstellungen`{.action} können Sie Regeln erstellen, um die Sendung von Nachrichten an Ihre E-Mail-Adressen zu organisieren.
 
 - **(1)**: Klicken Sie auf den Button `Regel erstellen`{.action}, um festzulegen, welche Kontakte Nachrichten erhalten, abhängig von den Kategorien und Prioritätsstufen, die Sie auswählen.
@@ -79,7 +74,6 @@ Sie können auch eine Regel erstellen, die mehrere Bedingungen enthält, die nac
 Standardmäßig stoppt der Prozess, sobald eine Bedingung zutrifft. Wenn Sie möchten, dass der Prozess fortfährt und die folgenden Bedingungen angewendet werden, aktivieren Sie den Button `Und die Regelverarbeitung fortsetzen`{.action} **(2)** unter der Regel, die Sie konfiguriert haben.
 
 ![my messages](images/rules-02.png){.thumbnail .w-600}
-<!-- CP-STEPS-END:delivery-settings -->
 
 ## Weiterführende Informationen
 

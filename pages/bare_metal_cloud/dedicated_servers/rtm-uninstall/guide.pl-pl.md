@@ -1,6 +1,6 @@
 ---
-title: "Odinstaluj system monitoringu RTM v2"
-excerpt: "Dowiedz się, jak odinstalować system monitorowania RTM w odniesieniu do Twoich usług"
+title: "Jak odinstalować RTM v1 na serwerze dedykowanym"
+excerpt: "Odinstaluj przestarzałe narzędzie Real Time Monitoring v1 z serwera dedykowanego OVHcloud."
 updated: 2023-06-20
 ---
 
@@ -107,5 +107,8 @@ rm -f /etc/yum.repos.d/OVH-metrics.repo /etc/yum.repos.d/OVH-rtm.repo
 ## Sprawdź również
 
 Jeśli potrzebujesz wsparcia technicznego lub szkolenia w zakresie wdrażania naszych rozwiązań, skontaktuj się z handlowcem lub kliknij na [link](/links/professional-services), aby otrzymać wycenę i poprosić o spersonalizowaną analizę projektu naszych ekspertów z zespołu Professional Services.
+
+- [Serwer dedykowany - Konfiguracja monitorowania IP](/pages/bare_metal_cloud/dedicated_servers/network_ip_monitoring)
+- [Pierwsze kroki z serwerem dedykowanym OVHcloud](/pages/bare_metal_cloud/dedicated_servers/getting-started-with-dedicated-server)
 
 Przyłącz się do społeczności naszych użytkowników na <https://community.ovh.com/en/>.

@@ -60,7 +60,6 @@ La facture de votre service OVHcloud vous est envoyée suite au règlement d'une
 
 #### Consulter et gérer ses factures
 
-<!-- CP-STEPS-START:view-manage-bills -->
 Pour consulter vos factures, ouvrez la page [Mes factures](/links/control-panel/billing-invoices).
 
 ![Facturation](/pages/assets/screens/control_panel/product-selection/right-menu/my-bills.png){.thumbnail}
@@ -115,11 +114,9 @@ Si vous souhaitez exporter l'ensemble de vos factures, utilisez les boutons `Tou
 Si vous souhaitez n'en exporter qu'une partie, cochez les cases correspondantes dans la première colonne du tableau afin de sélectionner les factures qui vous intéressent. Deux nouvelles actions, `Exporter la sélection au format CSV`{.action} ou `Exporter la sélection au format PDF`{.action}, seront alors disponibles dans le menu `Actions de masse`{.action}.
 
 ![export_selection](images/export_selection.png){.thumbnail}
-<!-- CP-STEPS-END:view-manage-bills -->
 
 #### Payer vos factures <a name="pay-bills"></a>
 
-<!-- CP-STEPS-START:pay-bills -->
 Afin de procéder au règlement de vos factures en attente de paiement, il vous suffit de cliquer sur le menu `Actions de masse`{.action} puis sur le bouton `Régler mon solde immédiatement`{.action}.
 
 ![Paiement de la dette](images/pay_debt.png){.thumbnail}
@@ -130,7 +127,6 @@ Un [bon de commande de régularisation](/pages/account_and_service_management/ma
 >
 > Si vous souhaitez régler une facture pour le compte d'une administration publique, suivez les instructions de ce [guide](/pages/account_and_service_management/managing_billing_payments_and_services/mandat_administratif).
 >
-<!-- CP-STEPS-END:pay-bills -->
 
 #### Demander l'annulation d'une facture
 
@@ -139,14 +135,11 @@ Un [bon de commande de régularisation](/pages/account_and_service_management/ma
 > Pour demander la résiliation de votre service à échéance, suivez les instructions de ce [guide](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_cancel_services).
 >
 
-<!-- CP-STEPS-START:request-cancellation-ticket -->
 Si vous avez reçu une facture que vous ne considérez pas comme légitime et souhaitez en demander le remboursement, ou faire valoir votre [droit de rétractation](/pages/account_and_service_management/managing_billing_payments_and_services/managing_ovh_orders#appliquer-le-droit-de-retractation), vous pouvez effectuer une réclamation via votre [espace client OVHcloud](/links/control-panel/billing-invoices), sous réserve de l'application de nos [Conditions Générales de Service](https://contract.eu.ovhapis.com/1.0/pdf/contrat_genServices-fr.pdf).
 <br> Cliquez en haut à droite de votre écran sur votre nom, puis sur `Créer un ticket`{.action}.
-<!-- CP-STEPS-END:request-cancellation-ticket -->
 
 ### Suivre vos paiements
 
-<!-- CP-STEPS-START:track-payments -->
 Retrouvez l'historique des paiements effectués dans `Mes factures`{.action} puis `Suivi des paiements`{.action}. Vous pouvez ainsi faire le lien entre chaque facture et le paiement associé.
 
 ![Suivi des paiements](images/payment_tracking.png){.thumbnail}
@@ -157,7 +150,6 @@ Depuis cet espace, vous pouvez également exporter vos justificatifs de paiement
 >
 > Si vous constatez une différence entre un paiement et le montant d'une facture, cela signifie que vous possédiez un avoir qui a automatiquement diminué le montant prélevé.
 >
-<!-- CP-STEPS-END:track-payments -->
 
 ## Aller plus loin
 

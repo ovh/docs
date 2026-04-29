@@ -86,9 +86,7 @@ Per maggiori informazioni, consulta la nostra guida [Proteggere un account OVHcl
 
 È possibile modificare le informazioni del tuo account. Accedi al tuo [profilo utente](/links/control-panel/account-profile).
 
-<!-- CP-STEPS-START:save-profile-changes -->
 Modifica le informazioni e clicca su `Salva le modifiche`{.action}.
-<!-- CP-STEPS-END:save-profile-changes -->
 
 > [!warning]
 >
@@ -97,7 +95,6 @@ Modifica le informazioni e clicca su `Salva le modifiche`{.action}.
 
 #### Modifica l’indirizzo email principale
 
-<!-- CP-STEPS-START:changing-primary-email -->
 Per modificare l’indirizzo che hai inserito come contatto principale, è necessario confermare la nuova email inserendo il codice ricevuto all’indirizzo del contatto principale attuale. Una volta ricevuto il codice, clicca sul pulsante `Ho ricevuto il codice di conferma`{.action}.
 
 ![identificativo cliente](images/nichandle07.png){.thumbnail}
@@ -105,7 +102,6 @@ Per modificare l’indirizzo che hai inserito come contatto principale, è neces
 Inserisci il codice nel campo `Codice di conferma` e conferma l’operazione.
 
 ![identificativo cliente](images/nichandle08.png){.thumbnail}
-<!-- CP-STEPS-END:changing-primary-email -->
 
 > [!primary]
 >
@@ -113,13 +109,11 @@ Inserisci il codice nel campo `Codice di conferma` e conferma l’operazione.
 
 #### Modifica il tipo di account
 
-<!-- CP-STEPS-START:changing-account-type -->
 Clicca sulla specializzazione `tipo di account` quando modifica il tuo profilo. Un menu a tendina ti permette di definire il tipo di account corrispondente alla tua situazione.
 
 ![identificativo cliente](images/nichandle09.png){.thumbnail}
 
 Una volta inseriti tutti i dati, clicca sul pulsante `Conferma`{.action}.
-<!-- CP-STEPS-END:changing-account-type -->
 
 #### Esercita i tuoi diritti sui tuoi dati personali
 

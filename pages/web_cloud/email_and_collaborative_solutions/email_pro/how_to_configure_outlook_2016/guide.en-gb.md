@@ -69,11 +69,13 @@ If you experience any difficulties carrying out these operations, we recommend t
 
 ### Adding the account <a name="add-account"></a>
 
+<!-- CP-STEPS-START:cp-block-server-name-lookup-add -->
 > [!primary]
 >
 > In our example, we use the server name: pro?.mail.ovh.net. You will need to replace the "?" with the number corresponding to your Email Pro service server.
 >
 > Click [this link](/links/control-panel/web-email-pro) to access the `Email Pro`{.action} section. The server name is visible in the **Connection** section of the `General information`{.action} tab.
+<!-- CP-STEPS-END:cp-block-server-name-lookup-add -->
 
 - **When you start the application for the first time**: a setup wizard will appear and prompt you to enter your email address.
 
@@ -229,11 +231,13 @@ This is why we invite you to consult the chapter corresponding to the interface 
 >>
 >> The window is divided into two parts, **Incoming mail** and **Outgoing mail**. Click on the part you wish to modify.
 >>
+>> <!-- CP-STEPS-START:cp-block-server-name-lookup-modify -->
 >> > [!primary]
 >> >
 >> > In our example, the server name used is "pro**?**.mail.ovh.net". You must replace the character "?" with the number corresponding to your Email Pro service server.
 >> >
 >> > Click [this link](/links/control-panel/web-email-pro) to access the `Email Pro`{.action} section. The server name is visible in the **Connection** section of the `General information`{.action} tab.
+>> <!-- CP-STEPS-END:cp-block-server-name-lookup-modify -->
 >>
 >> ![Outlook](images/config-outlook-legacy-emailpro08.png){.thumbnail}
 >>

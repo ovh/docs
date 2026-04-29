@@ -1,6 +1,6 @@
 ---
-title: 'Upgrade and downgrade Bandwidth via the OVHcloud API'
-excerpt: 'Find out how to upgrade and downgrade the bandwidth on a Dedicated Server via the OVHcloud API'
+title: "Manage Dedicated Server Bandwidth via the OVHcloud API"
+excerpt: "Upgrade or downgrade the public bandwidth allocation on your dedicated server using the OVHcloud API."
 updated: 2025-01-20
 ---
 
@@ -30,7 +30,7 @@ Use the following API call to list all the available services for upgrade (or do
 > @api {v1} /order GET /order/upgrade/baremetalPublicBandwidth
 >
 
-![bandwidth](images/bandwidth_01.png){.thumbnail}
+![API call listing available public bandwidth services](images/bandwidth_01.png){.thumbnail}
 
 ### Find the plan code
 
@@ -45,11 +45,11 @@ Enter the variables:
 
 - serviceName: the name of your dedicated server, for example `ns1234567.ip-203.0.113.eu`
 
-![bandwidth](images/bandwidth_02.png){.thumbnail}
+![API call to list available bandwidth plan codes](images/bandwidth_02.png){.thumbnail}
 
 The `RESPONSE` field should display information similar to the following:
 
-![bandwidth](images/bandwidth_02_1.png){.thumbnail}
+![API response showing available bandwidth plan codes](images/bandwidth_02_1.png){.thumbnail}
 
 ### Review your order
 
@@ -66,11 +66,11 @@ Enter the variables:
 - serviceName: the name of your dedicated server
 - quantity: 1
 
-![bandwidth](images/bandwidth_03.png){.thumbnail}
+![API call to preview the bandwidth order with pricing](images/bandwidth_03.png){.thumbnail}
 
 The `RESPONSE` field should display information similar to the following:
 
-![bandwidth](images/bandwidth_03_1.png){.thumbnail}
+![API response with bandwidth order pricing details](images/bandwidth_03_1.png){.thumbnail}
 
 ### Submit your order
 
@@ -81,10 +81,14 @@ To officially submit the order, use the following API call:
 > @api {v1} /order POST /order/upgrade/baremetalPublicBandwidth/{serviceName}/{planCode}
 >
 
-![bandwidth](images/bandwidth_4.png){.thumbnail}
+![API call to submit the public bandwidth order](images/bandwidth_4.png){.thumbnail}
 
 The order will be processed once you have clicked `Execute`{.action}. The amount displayed corresponds to your option’s first billing month, calculated on a pro rata basis for the current month.
 
 ## Go further
+
+[Managing vRack Private Bandwidth via the OVHcloud API](/pages/bare_metal_cloud/dedicated_servers/manage_bandwidth_vRack_api)
+
+[How to get started with a Dedicated Server](/pages/bare_metal_cloud/dedicated_servers/getting-started-with-dedicated-server)
 
 Join our [community of users](/links/community).

@@ -1,6 +1,6 @@
 ---
-title: Konfiguration von Additional IPs im Bridge-Modus auf Ihren virtuellen Maschinen
-excerpt: Erfahren Sie hier, wie Sie den Internet-Zugang für Ihre virtuellen Maschinen konfigurieren
+title: "Additional IPs im Bridge-Modus auf einem Dedicated Server konfigurieren"
+excerpt: "Konfigurieren Sie Ihre virtuellen Maschinen auf einem Dedicated Server für den öffentlichen Internetzugang im Netzwerk-Bridge-Modus."
 updated: 2026-01-06
 ---
 
@@ -570,5 +570,11 @@ Pingen Sie nun Ihre Additional IP von einem externen Gerät aus an.
 - Wenn die IP immer noch nicht funktioniert, öffnen Sie bitte ein Support-Ticket über das [Help Center](https://help.ovhcloud.com/csm?id=csm_cases_requests).
 
 ## Weiterführende Informationen
+
+- [Dedicated Server - IP-Aliasing konfigurieren](/pages/bare_metal_cloud/dedicated_servers/network_ipaliasing)
+
+- [IPv6 auf einem Dedicated Server konfigurieren](/pages/bare_metal_cloud/dedicated_servers/network_ipv6)
+
+- [Dedicated Server - Configuring pfSense Network Bridge](/pages/bare_metal_cloud/dedicated_servers/pfSense_bridging)
 
 Treten Sie unserer [User Community](/links/community) bei.

@@ -1,6 +1,6 @@
 ---
-title: 'Copying data from one dedicated server to another using rsync'
-excerpt: 'Copy your data easily from one server to another with rsync'
+title: "Copy Data Between Dedicated Servers Using rsync"
+excerpt: "Copy your data easily from one server to another with rsync"
 updated: 2022-02-16
 ---
 
@@ -106,3 +106,11 @@ rsync -av -P --stats --human-readable -e 'ssh -p X' --exclude="Folder_Name" --ex
 You now know how to copy your data easily from one server to another with rsync.
 
 To go further, you can Join our [community of users](/links/community).
+
+## Go further
+
+[How to Transfer Files via SFTP on a Dedicated Server](/pages/bare_metal_cloud/dedicated_servers/comment-deposer-ou-recuperer-des-donnees-sur-un-serveur-dedie-via-sftp)
+
+[Migrate data from one Dedicated Server to another](/pages/bare_metal_cloud/dedicated_servers/migrate_a_server_to_another)
+
+Join our [community of users](/links/community).

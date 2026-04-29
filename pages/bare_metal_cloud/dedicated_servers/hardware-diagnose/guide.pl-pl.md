@@ -1,6 +1,6 @@
 ---
-title: "Diagnostyka usterek sprzętowych serwera dedykowanego"
-excerpt: "Dowiedz się, jak korzystać z narzędzi diagnostycznych do identyfikacji usterek sprzętowych na Twoim serwerze"
+title: "Diagnostyka sprzętu w trybie rescue na serwerze dedykowanym"
+excerpt: "Przeprowadź diagnostykę sprzętu na serwerze dedykowanym OVHcloud w trybie rescue, aby zidentyfikować awarie dysków, pamięci RAM lub procesora."
 updated: 2025-10-16
 ---
 
@@ -82,4 +82,6 @@ hdparm -t /dev/sd(x)
 ```
 ## Sprawdź również
 
+- [Jak przywrócić bazę danych w trybie rescue](/pages/bare_metal_cloud/dedicated_servers/restore-bdd-rescue)
+- [Jak zaktualizować firmware BMC na serwerze dedykowanym](/pages/bare_metal_cloud/dedicated_servers/bmc_fw_update)
 Przyłącz się do [społeczności użytkowników](/links/community).

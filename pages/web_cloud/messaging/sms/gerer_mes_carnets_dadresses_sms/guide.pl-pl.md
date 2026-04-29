@@ -34,7 +34,6 @@ Wszystkie konta OVHcloud mogą używać jednej lub więcej książek adresowych.
 
 ### Etap 1: Tworzenie książki adresowej w Panelu klienta
 
-<!-- CP-STEPS-START:create-address-book -->
 Kliknij żądane konto SMS i wybierz kartę `Kontakty`{.action}, a następnie `Książka adresowa`{.action}.
 
 ![phonebook](images/smsphonebook01.png){.thumbnail}
@@ -44,7 +43,6 @@ Wybierz kartę `Książka adresowa`{.action}.
 Kliknij polecenie `Dodaj książkę adresową`{.action} i nadaj jej nazwę.
 
 ![phonebook](images/smsphonebook2.png){.thumbnail}
-<!-- CP-STEPS-END:create-address-book -->
 
 ### Etap 2: Dodawanie kontaktów do książki adresowej
 
@@ -52,7 +50,6 @@ Książka adresowa została utworzona, ale nie zawiera żadnego kontaktu. Możes
 
 ### Pojedyncze dodawanie kontaktów z Panelu klienta
 
-<!-- CP-STEPS-START:add-contact-individually -->
 Wybierz przycisk `Działania`{.action} i kliknij polecenie `Dodaj`{.action}.
 
 ![phonebook](images/smsphonebook3.png){.thumbnail}
@@ -62,7 +59,6 @@ Pojawi się okno, które umożliwi wpisanie informacji o kontakcie.
 ![phonebook](images/smsphonebook4.png){.thumbnail}
 
 Wypełnij żądane pola i potwierdź, aby zapisać zmiany. Kontakt zostanie dodany do książki adresowej. Powtórz powyższe kroki, aby dodać kolejne kontakty.
-<!-- CP-STEPS-END:add-contact-individually -->
 
 ### Dodawanie wielu kontaktów poprzez import pliku z kontaktami z Panelu klienta
 
@@ -98,7 +94,6 @@ Jednocześnie zapisz go lub wyeksportuj do formatu .csv, aby przygotować jego i
 
 #### Import pliku w Panelu klienta
 
-<!-- CP-STEPS-START:import-contact-file -->
 Wróć do Panelu klienta OVHcloud, wybierz przycisk `Działania`{.action}, a następnie kliknij polecenie `Importuj`{.action}.
 
 ![phonebook](images/smsphonebook5.png){.thumbnail}
@@ -108,11 +103,9 @@ Pojawi się wyskakujące okienko. Kliknij w nim pozycję `Plik kontaktów`{.acti
 ![phonebook](images/smsphonebook6.png){.thumbnail}
 
 Poczekaj kilka sekund, aż plik zostanie przesłany do Panelu klienta.
-<!-- CP-STEPS-END:import-contact-file -->
 
 ### Etap 3: Edytowanie lub usuwanie książki adresowej
 
-<!-- CP-STEPS-START:edit-delete-address-book -->
 Jeśli chcesz zmienić nazwę książki adresowej, z rozwijanego menu (1) wybierz Twoją książkę adresową (jeśli masz więcej niż jedną), a następnie kliknij ikonę ołówka (2) znajdującą się przy nazwie książki. 
 
 Aby usunąć książkę, wybierz ją z rozwijanego menu (1) i kliknij polecenie `Usuń książkę adresową`{.action}.
@@ -120,7 +113,6 @@ Aby usunąć książkę, wybierz ją z rozwijanego menu (1) i kliknij polecenie 
 Aby zmienić lub usunąć kontakt, w kolumnie „Działania” kliknij `...`{.action} (4) obok wybranego kontaktu. W ten sposób uzyskasz dostęp do menu umożliwiającego edycję lub usunięcie kontaktu.
 
 ![phonebook](images/smsphonebook7.png){.thumbnail}
-<!-- CP-STEPS-END:edit-delete-address-book -->
 
 ## Sprawdź również
 

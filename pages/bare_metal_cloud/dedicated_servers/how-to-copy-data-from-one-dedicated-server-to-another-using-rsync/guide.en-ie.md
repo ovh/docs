@@ -1,14 +1,14 @@
 ---
-title: 'Copying data from one dedicated server to another using rsync'
-excerpt: 'Copy your data easily from one server to another with rsync'
+title: "Copy Data Between Dedicated Servers Using rsync"
+excerpt: "Copy your data easily from one server to another with rsync"
 updated: 2022-02-16
 ---
 
-## Objective
+## Introduction
 
-As part of a migration or backup process, you may find that you need to copy or transfer data stored on one dedicated server, and move it to another.
+As part of a migration or backup process, you may find that you need to copy or transfer data stored on one dedicated server, and move it to another. 
 
-Distributed under the GNU GPL licence, rysnc (short for “remote synchronisation”) is a free file syncing software program that can perform unidirectional synchronisation, i.e. copying files from a source server to a target server.
+Distributed under the GNU GPL licence, rysnc (short for “remote synchronisation”) is a free file syncing software program that can perform unidirectional synchronisation, i.e. copying files from a source server to a target server. 
 
 **This tutorial will show you how to copy data from one OVHcloud dedicated server to another using rsync.**
 
@@ -21,19 +21,19 @@ This guide will show you how to use one or more OVHcloud solutions with external
 
 ### What you need to know
 
-- knowledge of Linux administration
-- knowledge of how to install new packets
-- SSH access
+*     knowledge of Linux administration
+*     knowledge of how to install new packets 
+*     SSH access
 
 ### What you need to have
 
-- at least two OVHcloud dedicated servers working with a GNU/Linux distribution
-- **root** access to the source server
-- **SSH** access to the target server
+*     at least two OVHcloud dedicated servers working with a GNU/Linux distribution
+*     *root* access to the source server
+*     *SSH* access to the target server
 
 ## Instructions
 
-### Step 1: Install rsync
+### Step 1: Install rsync.
 
 The source server used for this tutorial has Debian 9.4 installed. This distribution has rsync natively in its repositories, so it does not need to be added, and rsync can be installed directly.
 
@@ -43,7 +43,7 @@ To do this, log in via SSH as a superuser (or root user) on your source server, 
 apt-get update && apt-get install rsync
 ```
 
-### Step 2: Launch the transfer
+### Step 2: Launch the transfer.
 
 #### If you do not want to exclude any folders in your copy
 
@@ -74,20 +74,20 @@ rsync -av -e 'ssh -p X' YourLocalFolder/ login@server:/DestinationFolder/
 
 If rsync can be used to transfer all of the folders from a server, you can exclude certain folders or sub-folders from the copy that you are getting ready to create. If you would like to do this, list the folders, sub-folders and their names on your server.
 
-And generally, we recommend excluding the transfer of temporary caches and system files from the source server, in order to avoid any conflict on the target server.
+And generally, we recommend excluding the transfer of temporary caches and system files from the source server, in order to avoid any conflict on the target server. 
 
-Here is a non-exhaustive list of some of the folders that can contain temporary caches and system files on a server with a GNU/Linux distribution:
+Here is a non-exhaustive list of some of the folders that can contain temporary caches and system files on a server with a GNU/Linux distribution: 
 
 * /dev/*
-* /proc/*
+* /proc/* 
 * /sys/*
 * /tmp/*
 * /run/*
 * /media/*
 * /lost+found
  
-Once you have finished listing the files you want to exclude, use the  `--exclude` argument for rsync to ignore these files during the copy.
-
+Once you have finished listing the files you want to exclude, use the  `--exclude` argument for rsync to ignore these files during the copy. 
+ 
 This argument can be repeated for as many times as there are folders and sub-folders to exclude, and is added to the end of the command. The general structure of a command like this is: `rsync --exclude="Folder_Name" --exclude="Other_Folder_name" source/ destination/`
 
 > [!primary]
@@ -96,7 +96,7 @@ Please note that the folder location must be expressed in its relative location,
 >
 
 By taking into account the elements that are already exposed, the transfer command will be as follows:
-
+ 	
 ```sh
 rsync -av -P --stats --human-readable -e 'ssh -p X' --exclude="Folder_Name" --exclude="Other_Folder_name" YourLocalFolder/ login@server:/DestinationFolder/
 ```
@@ -106,3 +106,11 @@ rsync -av -P --stats --human-readable -e 'ssh -p X' --exclude="Folder_Name" --ex
 You now know how to copy your data easily from one server to another with rsync.
 
 To go further, you can Join our [community of users](/links/community).
+
+## Go further
+
+[How to Transfer Files via SFTP on a Dedicated Server](/pages/bare_metal_cloud/dedicated_servers/comment-deposer-ou-recuperer-des-donnees-sur-un-serveur-dedie-via-sftp)
+
+[Migrate data from one Dedicated Server to another](/pages/bare_metal_cloud/dedicated_servers/migrate_a_server_to_another)
+
+Join our [community of users](/links/community).

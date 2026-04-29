@@ -34,7 +34,6 @@ Todas las cuentas de SMS de OVHcloud permiten utilizar una o varias agendas de c
 
 ### 1. Crear una agenda de contactos en el área de cliente
 
-<!-- CP-STEPS-START:create-address-book -->
 Haga clic en la cuenta de SMS correspondiente y seleccione la pestaña `Contactos`{.action} y luego `Agenda de contactos`{.action}.
 
 ![agenda de contactos](images/smsphonebook01.png){.thumbnail}
@@ -44,7 +43,6 @@ Acceda a la sección `Agenda de contactos`{.action}.
 A continuación, haga clic en `Añadir una agenda de contactos`{.action} y asígnele un nombre a la nueva agenda.
 
 ![agenda de contactos](images/smsphonebook2.png){.thumbnail}
-<!-- CP-STEPS-END:create-address-book -->
 
 ### 2. Añadir contactos a la agenda
 
@@ -52,7 +50,6 @@ Una vez creada la agenda de contactos, es posible añadir contactos de diferente
 
 ### Añadir un contacto desde el área de cliente
 
-<!-- CP-STEPS-START:add-contact-individually -->
 Haga clic en `Acciones`{.action} y seleccione la opción `Añadir`{.action}.
 
 ![agenda de contactos](images/smsphonebook3.png){.thumbnail}
@@ -62,7 +59,6 @@ A continuación, introduzca la información del contacto que desea añadir.
 ![agenda de contactos](images/smsphonebook4.png){.thumbnail}
 
 Rellene los campos solicitados y haga clic en `Aceptar`{.action} para guardar los cambios. El contacto se añadirá a su agenda. Realice esta misma operación para añadir más contactos.
-<!-- CP-STEPS-END:add-contact-individually -->
 
 ### Añadir múltiples contactos mediante un archivo de contactos
 
@@ -98,7 +94,6 @@ Asimismo, guárdelo o expórtelo en formato «.CSV» para poder importarlo.
 
 #### Importación del archivo en el área de cliente
 
-<!-- CP-STEPS-START:import-contact-file -->
 Haga clic en `Acciones`{.action} y seleccione la opción `Importar`{.action}.
 
 ![agenda de contactos](images/smsphonebook5.png){.thumbnail}
@@ -108,11 +103,9 @@ En la ventana que aparece, haga clic en `Archivo de contactos`{.action} y selecc
 ![agenda de contactos](images/smsphonebook6.png){.thumbnail}
 
 Espere unos segundos hasta que el archivo se cargue en su área de cliente.
-<!-- CP-STEPS-END:import-contact-file -->
 
 ### 3. Editar o eliminar una agenda de contactos
 
-<!-- CP-STEPS-START:edit-delete-address-book -->
 Si quiere modificar el nombre de una agenda de contactos, selecciónela en el menú desplegable (1) y haga clic en el icono con forma de lápiz (2) que aparece junto a la agenda. 
 
 Para eliminar una agenda, selecciónela en el menú desplegable (1) y haga clic en `Eliminar la agenda de contactos`{.action} (3). 
@@ -120,7 +113,6 @@ Para eliminar una agenda, selecciónela en el menú desplegable (1) y haga clic 
 Para editar o eliminar un contacto, haga clic en el icono con forma de tres puntos (`...`{.action}) que aparece en la columna «Acciones» (4), junto al contacto correspondiente. Podrá elegir entre realizar cualquiera de estas dos acciones.
 
 ![agenda de contactos](images/smsphonebook7.png){.thumbnail}
-<!-- CP-STEPS-END:edit-delete-address-book -->
 
 ## Más información
 

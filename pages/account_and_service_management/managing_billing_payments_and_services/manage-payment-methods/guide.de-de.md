@@ -25,7 +25,6 @@ Ihr OVHcloud Kunden-Account ermöglicht Ihnen, verschiedene Zahlungsarten zu hin
 
 ## In der praktischen Anwendung <a name="payment_methods"></a>
 
-<!-- CP-STEPS-START:instructions-overview -->
 Öffnen Sie die Seite [Zahlungsarten](/links/control-panel/billing-payment-methods).
 
 ![Hubpayment](/pages/assets/screens/control_panel/product-selection/right-menu/my-payment-methods.png){.thumbnail}
@@ -36,11 +35,9 @@ Die angezeigte Seite enthält eine Tabelle mit den in Ihrem Kundenkonto hinterle
 - Ihre Standardzahlungsart ändern.
 - Beschreibung Ihrer Zahlungsart ändern.
 - Eine Zahlungsart löschen.
-<!-- CP-STEPS-END:instructions-overview -->
 
 ### Eine Zahlungsart hinzufügen
 
-<!-- CP-STEPS-START:register-payment-method -->
 Bei Ihrer ersten Bestellung werden Sie aufgefordert, ein Zahlungsmittel zu hinterlegen, um die Verlängerung Ihrer Dienstleistung per automatischer Lastschrift sicherzustellen.
 
 Dieses Zahlungsmittel wird standardmäßig für alle Ihre Verlängerungen verwendet und Ihnen wird angeboten, neue Bestellungen zu begleichen.
@@ -88,11 +85,9 @@ Es wird kein Betrag abgebucht und Ihre Kreditkarte wird nach einigen Minuten akt
 Klicken Sie auf den Button `PayPal`{.action}. Es öffnet sich ein neues Fenster, um sich mit Ihrem PayPal® Account zu verbinden und diesen als autorisiertes Zahlungsmittel bei OVHcloud zu hinterlegen.
 
 Ihr PayPal® Account wird in wenigen Minuten aktiviert.
-<!-- CP-STEPS-END:register-payment-method -->
 
 ### Ihre Standardzahlungsart ändern
 
-<!-- CP-STEPS-START:change-default-payment-method -->
 Die Rechnungen für die Verlängerung Ihrer Dienstleistungen werden automatisch mit Ihrer Standardzahlungsart beglichen. Wenn Sie diese ändern möchten, müssen Sie zuerst in Ihrem OVHcloud Kundencenter eine neue Zahlungsart hinzufügen.
 
 Klicken Sie dafür auf `...`{.action} rechts neben der Zahlungsart und dann auf `Dieses Zahlungsmittel als Standardzahlungsmittel festlegen`{.action}.
@@ -105,17 +100,14 @@ Klicken Sie dafür auf `...`{.action} rechts neben der Zahlungsart und dann auf 
 > - Schritt 2: Legen Sie das neue Zahlungsmittel als Standardzahlungsmittel fest.
 > - Schritt 3: Die alte Zahlungsart löschen.
 >
-<!-- CP-STEPS-END:change-default-payment-method -->
 
 ### Eine Zahlungsart löschen
 
-<!-- CP-STEPS-START:delete-payment-method -->
 Wenn Sie eine Ihrer Zahlungsarten nicht mehr verwenden möchten, dann können Sie sie löschen, indem Sie auf `...`{.action} rechts neben der Zahlungsart und dann auf `Dieses Zahlungsmittel löschen`{.action} klicken.
 
 ![manage-payment-methods](images/managepaymentmethods4.png){.thumbnail}
 
 Wenn Sie alle Ihre Zahlungsarten löschen möchten, müssen alle Ihre Dienstleistungen [auf manuelle Verlängerung](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal) umgestellt werden.
-<!-- CP-STEPS-END:delete-payment-method -->
 
 #### Löschen einer Zahlungsart über die OVHcloud API
 
@@ -146,7 +138,6 @@ Löschen Sie anschließend die Zahlungsart mithilfe der im vorigen Schritt erhal
 
 #### Was ist der Prepaid-Account?
 
-<!-- CP-STEPS-START:prepaid-account-overview -->
 Der Prepaid-Account ist in Ihrem [OVHcloud Kundencenter](/links/control-panel/billing-payment-methods) verfügbar. Damit können Sie in Ihrem Kunden-Account im Voraus Guthaben aufladen und es für die Bezahlung Ihrer Bestellungen und Verlängerungsrechnungen verwenden.
 
 Wenn Sie Ihren Account regelmäßig aufladen, stellen Sie damit sicher, dass die [automatische Verlängerung](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal) Ihrer Dienstleistungen nie wegen Zahlungsausfalls unterbrochen wird.
@@ -157,7 +148,6 @@ Gehen Sie dazu in den Bereich `Zahlungsarten` Ihres Kundencenters:
 - Wählen Sie den Tab `Mein Prepaid-Account`{.action}.
 
 ![prepaid-account](images/prepaid-account.png){.thumbnail}
-<!-- CP-STEPS-END:prepaid-account-overview -->
 
 #### Wie funktioniert der Prepaid-Account?
 
@@ -171,15 +161,12 @@ Wenn Sie jedoch kein Zahlungsmittel hinterlegt haben, müssen Sie diesen Betrag 
 
 Wenn Sie kein Zahlungsmittel hinterlegt haben, empfehlen wir Ihnen deshalb, einen **Alarm** einzurichten, um sicherzustellen, dass Sie über genügend Mittel für Ihre nächsten Rechnungen verfügen:
 
-<!-- CP-STEPS-START:prepaid-account-alert -->
 ![warning_prepaid_account](images/warning_prepaid_account.png){.thumbnail}
 
 Wenn das für Ihren Prepaid-Account verfügbare Guthaben unter den festgelegten Grenzwert fällt, wird Ihnen eine Benachrichtigung per E-Mail gesendet.
-<!-- CP-STEPS-END:prepaid-account-alert -->
 
 #### Wie kann ich den Prepaid-Account aufladen?
 
-<!-- CP-STEPS-START:prepaid-account-credit -->
 Klicken Sie im Tab `Mein Prepaid-Account`{.action} auf den Button `Aufladen`{.action}.
 
 ![credit-prepaid-account](images/credit-prepaid-account.png){.thumbnail}
@@ -189,7 +176,6 @@ Geben Sie im neuen Fenster den aufzuladenden Betrag ein, klicken Sie auf `Weiter
 ![order-prepaid-account](images/order-prepaid-account.png){.thumbnail}
 
 Wählen Sie im angezeigten Bestellschein die Zahlungsart Ihrer Wahl aus und führen Sie die Zahlung aus.
-<!-- CP-STEPS-END:prepaid-account-credit -->
 
 ## Weiterführende Informationen
 

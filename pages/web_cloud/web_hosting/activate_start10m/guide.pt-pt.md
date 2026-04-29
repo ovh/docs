@@ -40,6 +40,7 @@ Este guia explica como pode ativar o alojamento gratuito 100M no seu [domínio](
 
 ## Instruções
 
+<!-- CP-STEPS-START:activate-100m-steps -->
 Para ativar o alojamento gratuito 100M, clique nos separadores abaixo para visualizar cada uma das **3** etapas.
 
 > [!tabs]
@@ -79,6 +80,7 @@ Para ativar o alojamento gratuito 100M, clique nos separadores abaixo para visua
 >> A secção **3** recorda-lhe o preço da oferta. 
 >>
 >> Na secção **4**, deverá ler os contratos e validar a encomenda.
+<!-- CP-STEPS-END:activate-100m-steps -->
 
 > [!primary]
 >

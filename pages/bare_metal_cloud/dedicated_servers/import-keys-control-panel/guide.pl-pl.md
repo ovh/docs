@@ -1,6 +1,6 @@
 ---
-title: "Jak przechowywać klucze SSH w Panelu klienta"
-excerpt: "Dowiedz się, jak importować publiczne klucze SSH do Panelu klienta OVHcloud"
+title: "Jak dodać klucz SSH w Panelu klienta OVHcloud"
+excerpt: "Importuj klucze SSH do Panelu klienta OVHcloud, aby używać ich z serwerami dedykowanymi i instancjami Public Cloud."
 updated: 2024-12-04
 ---
 
@@ -69,4 +69,5 @@ W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj
 
 Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](/links/support).
 
+- [Serwer dedykowany - Zarządzanie kluczami SSH w Panelu klienta](/pages/bare_metal_cloud/dedicated_servers/ovh_ssh_key)
 Dołącz do [grona naszych użytkowników](/links/community).

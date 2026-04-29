@@ -1,6 +1,6 @@
 ---
-title: Quelles sont les adresses IP du monitoring OVHcloud ?
-excerpt: Retrouvez ici les adresses IP a renseigner lors de la mise en place d’un firewall, afin que le monitoring OVHcloud continue de fonctionner sur votre serveur.
+title: "Adresses IP du monitoring OVHcloud pour serveurs dédiés"
+excerpt: "Retrouvez les adresses IP à autoriser dans votre firewall pour que le monitoring OVHcloud continue de fonctionner sur votre serveur"
 updated: 2026-04-13
 ---
 
@@ -64,7 +64,7 @@ Pour mettre en place un firewall restrictif, notamment sur l'ICMP, et continuer 
 
 Vous pouvez activer ou désactiver le monitoring d’un serveur dédié à partir de l’onglet `Informations générales`{.action}. L’option se situe dans la section `État des services`.
 
-![Monitoring](images/monitoring-server.png){.thumbnail}
+![Statut du monitoring dans l'onglet informations générales du serveur](images/monitoring-server.png){.thumbnail}
 
 Cliquez sur le bouton `Configurer`{.action}. Dans la fenêtre qui apparaît, vous avez trois options pour le comportement du monitoring :
 
@@ -72,12 +72,16 @@ Cliquez sur le bouton `Configurer`{.action}. Dans la fenêtre qui apparaît, vou
 - **Activé avec intervention proactive** : si le serveur ne répond plus, un e-mail d'alerte vous est envoyé et le serveur est vérifié par un technicien.
 - **Activé sans intervention proactive** : vous recevrez un message d'alerte par e-mail au cas où le serveur ne répondrait plus. Pour lancer une intervention, il est nécessaire de créer une demande d'assistance.
 
-![Monitoring](images/monitoring-server2.png){.thumbnail}
+![Popup de configuration du monitoring avec trois options](images/monitoring-server2.png){.thumbnail}
 
 Cliquez sur `Confirmer`{.action} pour mettre à jour votre configuration du monitoring.
 
 ## Aller plus loin
 
 [Configurer le Network Firewall](/pages/bare_metal_cloud/dedicated_servers/firewall_network).
+
+[Premiers pas avec un serveur dédié](/pages/bare_metal_cloud/dedicated_servers/getting-started-with-dedicated-server)
+
+[Désinstaller le système de monitoring RTM v2](/pages/bare_metal_cloud/dedicated_servers/rtm-uninstall)
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).

@@ -1,6 +1,6 @@
 ---
-title: Installation des OVHcloud SSH-Schlüssels
-excerpt: In dieser Anleitung zeigen wir Ihnen, wie Sie einen OVHcloud SSH-Schlüssel installieren, um unseren Administratoren Zugriff zu gewähren, und diesen anschließend wieder deaktivieren
+title: "OVHcloud SSH-Schlüssel auf einem Dedicated Server"
+excerpt: "Installieren Sie einen OVHcloud SSH-Schlüssel auf Ihrem Dedicated Server, um den OVHcloud Support-Teams sicheren administrativen Zugriff zu gewähren."
 updated: 2018-02-12
 ---
 
@@ -115,5 +115,7 @@ cat /root/.ssh/authorized_keys2
 ## Weiterführende Informationen
 
 [SSH Einführung](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction)
+
+- [SSH-Schlüssel für Dedicated Server im Kundencenter speichern](/pages/bare_metal_cloud/dedicated_servers/import-keys-control-panel)
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

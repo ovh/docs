@@ -55,6 +55,7 @@ Folgen Sie dieser Anleitung nun entsprechend der von Ihnen gewählten Import-Met
 
 ### Backup über das Kundencenter wiederherstellen
 
+<!-- CP-STEPS-START:restore-backup-control-panel -->
 Klicken Sie auf die Tabs, um die **4** Schritte anzuzeigen.
 
 > [!tabs]
@@ -79,9 +80,11 @@ Klicken Sie auf die Tabs, um die **4** Schritte anzuzeigen.
 >> Vergewissern Sie sich, dass die Informationen im angezeigten Fenster korrekt sind, und klicken Sie dann auf `Bestätigen`{.action}. Warten Sie, bis die Wiederherstellung abgeschlossen ist.
 >>
 >> ![Datenbankimport](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/restore-the-backup.png){.thumbnail}
+<!-- CP-STEPS-END:restore-backup-control-panel -->
 
 ### Eigene Backup-Datei über das Kundencenter importieren
 
+<!-- CP-STEPS-START:import-own-backup-control-panel -->
 Klicken Sie auf die Tabs, um die **5** Schritte anzuzeigen.
 
 > [!tabs]
@@ -126,9 +129,11 @@ Klicken Sie auf die Tabs, um die **5** Schritte anzuzeigen.
 >> >
 >> > Über den Button `Vorhandene Datei verwenden`{.action} können Sie die Daten einer bereits an das Import-Tool versendeten Datei erneut importieren.
 >> >
+<!-- CP-STEPS-END:import-own-backup-control-panel -->
 
 ### Backup über das phpMyAdmin-Webinterface importieren
 
+<!-- CP-STEPS-START:import-phpmyadmin -->
 Loggen Sie sich auf phpMyAdmin ein, um den Import durchzuführen. Klicken Sie dazu auf die Tabs, um die **3** Schritte anzuzeigen.
 
 > [!tabs]
@@ -145,6 +150,7 @@ Loggen Sie sich auf phpMyAdmin ein, um den Import durchzuführen. Klicken Sie da
 >> Klicken Sie auf die drei Punkte rechts neben der betreffenden Datenbank und gehen Sie dann auf `Zugang zu phpMyAdmin`{.action}.
 >>
 >> ![Datenbankimport](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/go-to-phpmyadmin.png){.thumbnail}
+<!-- CP-STEPS-END:import-phpmyadmin -->
 
 Geben Sie im phpMyAdmin-Webinterface die Informationen zu Ihrer Datenbank ein, wählen Sie über das Drop-down-Menü die aktuellen Daten der Datenbank (Current) und loggen Sie sich ein. Gehen Sie nach dem Login auf den Tab `Importieren`{.action} und vervollständigen Sie die angeforderten Informationen. Zur Erinnerung: Die Backup-Datei darf eine bestimmte Größe nicht überschreiten.
 

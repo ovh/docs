@@ -1,6 +1,6 @@
 ---
-title: 'Configuring an Additional IP block in a vRack'
-excerpt: 'Find out how to configure a public IP address block for use with the vRack'
+title: "Configure an IP Block in a vRack on a Dedicated Server"
+excerpt: "Configure a public IP address block for use with the OVHcloud vRack private network across dedicated servers."
 updated: 2026-04-03
 ---
 
@@ -484,19 +484,19 @@ First, check the new network interface information:
 
 Then, check the properties:
 
-![properties of the second network interface](images/win-ip-vrack-2.png){.thumbnail}
+![Network adapter properties for the vRack interface](images/win-ip-vrack-2.png){.thumbnail}
 
-![properties of the second network interface](images/win-ip-vrack-3.png){.thumbnail}
+![IPv4 properties of the vRack network adapter](images/win-ip-vrack-3.png){.thumbnail}
 
 #### Step 2: IP Configuration
 
 Select the `Use the following IP address`{.action} option:
 
-![ip configuration](images/win-ip-vrack-4.png){.thumbnail}
+![Selecting Use the following IP address option](images/win-ip-vrack-4.png){.thumbnail}
 
 Define the IP information:
 
-![ip configuration](images/win-ip-vrack-5b.png){.thumbnail}
+![IP address and subnet mask fields filled in for vRack](images/win-ip-vrack-5b.png){.thumbnail}
 
 #### Step 3: Rebooting the network interface
 
@@ -527,5 +527,7 @@ Include the results above in your ticket.
 [Creating multiple vLANs in a vRack](/pages/bare_metal_cloud/dedicated_servers/creating-multiple-vlans-in-a-vrack)
 
 [Configuring the vRack between the Public Cloud and a Dedicated Server](/pages/bare_metal_cloud/dedicated_servers/configuring-the-vrack-between-the-public-cloud-and-a-dedicated-server)
+
+[Dedicated Server - Changing IP Block Announcement in vRack](/pages/bare_metal_cloud/dedicated_servers/vrack_change_zone_announce)
 
 Join our [community of users](/links/community).

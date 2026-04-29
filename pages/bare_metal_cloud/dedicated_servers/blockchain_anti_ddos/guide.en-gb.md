@@ -1,6 +1,6 @@
 ---
-title: "How to configure the Anti-DDos Infrastructure for Solana"
-excerpt: "Learn how to leverage the OVHcloud Anti-DDoS infrastructure to protect your Solana nodes without harming their functionality"
+title: "Configure Anti-DDoS for Solana on Dedicated Servers"
+excerpt: "Leverage the OVHcloud Anti-DDoS infrastructure to protect your Solana nodes on dedicated servers without harming functionality."
 updated: 2025-10-13
 ---
 
@@ -60,5 +60,9 @@ Solana nodes use the following network protocols and ports:
 You can find the hardware requirements for Solana Validator and RPC nodes in [the official Anza documentation](https://docs.anza.xyz/operations/requirements).
 
 ## Go further
+
+[Edge Network Firewall for Dedicated Servers](/pages/bare_metal_cloud/dedicated_servers/firewall_network)
+
+[Network Security Dashboard for Dedicated Servers](/pages/bare_metal_cloud/dedicated_servers/network_security_dashboard)
 
 Join our [community of users](/links/community).

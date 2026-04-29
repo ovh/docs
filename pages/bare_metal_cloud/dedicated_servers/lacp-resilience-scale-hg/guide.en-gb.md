@@ -1,6 +1,6 @@
 ---
-title: Improving Network Resilience on Bare Metal servers
-excerpt: Discover how to reinforce the resilience of public and private interfaces on your OVHcloud Bare Metal servers with the new network aggregation architecture
+title: "Improve Network Resilience on Bare Metal servers"
+excerpt: "Reinforce network resilience on your OVHcloud Bare Metal server by configuring public and private interface aggregation."
 updated: 2025-10-28
 ---
 
@@ -54,3 +54,5 @@ Subject to correct configuration on the OS side, this development provides:
 ## Go Further
 
 Join our [user community](/links/community).
+
+[Dedicated Server - LACP Link Aggregation on Debian/Ubuntu](/pages/bare_metal_cloud/dedicated_servers/lacp-enable-netplan)

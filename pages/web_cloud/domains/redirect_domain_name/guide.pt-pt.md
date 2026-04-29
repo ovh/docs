@@ -93,6 +93,7 @@ Esta opção permite, após a introdução do domínio reencaminhado, apresentar
 
 > Este reencaminhamento "standard" devolve um código HTTP 301.
 
+<!-- CP-STEPS-START:configure-redirect-permanent -->
 Clique nos separadores abaixo para ver cada um dos **7** passos.
 
 > [!tabs]
@@ -157,6 +158,7 @@ Clique nos separadores abaixo para ver cada um dos **7** passos.
 >> > Atenção, a configuração anterior será desativada e eliminada.
 >> >
 >>
+<!-- CP-STEPS-END:configure-redirect-permanent -->
 
 ///
 
@@ -174,6 +176,7 @@ O posicionamento nos motores de busca é menos eficiente do que com um reencamin
 
 > Este reencaminhamento devolve um código HTTP 302.
 
+<!-- CP-STEPS-START:configure-redirect-temporary -->
 Clique nos separadores abaixo para ver cada um dos **7** passos.
 
 > [!tabs]
@@ -236,6 +239,7 @@ Clique nos separadores abaixo para ver cada um dos **7** passos.
 >> > Se aparecer a mensagem "*Existem reencaminhamentos a partir dos nomes de domínio que pretende reencaminhar que entram em conflito com os reencaminhamentos que pretende adicionar*", pode selecionar a caixa `Confirmar a substituição do reencaminhamento existente`{.action} para forçar a aplicação do reencaminhamento.
 >> >
 >> > Atenção, a configuração anterior será desativada e eliminada.
+<!-- CP-STEPS-END:configure-redirect-temporary -->
 
 ///
 
@@ -259,6 +263,7 @@ Este encapsulamento impede os visitantes do website de visualizar o domínio de 
 >
 > Atenção, as páginas encapsuladas com uma tag *iFrame* podem não ser apresentadas nos smartphones. O seu conteúdo geralmente não é tido em conta pelos motores de busca para o referenciamento SEO e a indexação do website.
 
+<!-- CP-STEPS-START:configure-redirect-invisible -->
 Clique nos separadores abaixo para ver cada um dos **7** passos.
 
 > [!tabs]
@@ -327,6 +332,7 @@ Clique nos separadores abaixo para ver cada um dos **7** passos.
 >> > Se aparecer a mensagem "*Existem reencaminhamentos a partir dos nomes de domínio que pretende reencaminhar que entram em conflito com os reencaminhamentos que pretende adicionar*", pode selecionar a caixa `Confirmar a substituição do reencaminhamento existente`{.action} para forçar a aplicação do reencaminhamento.
 >> >
 >> > Atenção, a configuração anterior será desativada e eliminada.
+<!-- CP-STEPS-END:configure-redirect-invisible -->
 
 ### Reencaminhar um domínio através de um ficheiro ".htaccess" <a name="htaccess_rewrite"></a>
 

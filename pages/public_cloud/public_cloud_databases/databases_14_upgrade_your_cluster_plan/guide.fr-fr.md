@@ -1,4 +1,4 @@
----
+﻿---
 title: Mettre à jour le plan d'une base de données Public Cloud (EN)
 excerpt: Find out how to upgrade the service plan of your cluster
 updated: 2025-07-31

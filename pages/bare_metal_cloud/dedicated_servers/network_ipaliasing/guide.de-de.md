@@ -1,6 +1,6 @@
 ---
-title: "Konfiguration von IP-Aliasing"
-excerpt: "Erfahren Sie hier, wie Sie Additional IPs zu Ihrer Konfiguration hinzufügen"
+title: "Dedicated Server - IP-Aliasing konfigurieren"
+excerpt: "Fügen Sie Additional IP-Adressen zu Ihrem OVHcloud Dedicated Server hinzu und konfigurieren Sie diese für Multi-Site- oder Dienst-Hosting."
 updated: 2025-12-04
 ---
 
@@ -595,5 +595,7 @@ Um die Verbindung zu testen, senden Sie einen Ping an Ihre Additional IP. Wenn d
 ## Weiterführende Informationen
 
 [Network Bridge einrichten](/pages/bare_metal_cloud/dedicated_servers/network_bridging)
+
+- [Additional IP auf einem Dedicated Server umziehen](/pages/bare_metal_cloud/dedicated_servers/move-failover-ip)
 
 Treten Sie unserer [User Community](/links/community) bei.

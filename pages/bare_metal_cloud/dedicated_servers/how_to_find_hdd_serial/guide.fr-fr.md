@@ -1,6 +1,6 @@
 ---
-title: "Récupérer le numéro de série d'un disque dur"
-excerpt: "Découvrez comment récupérer le numéro de série d'un disque dur pour remplacer celui-ci"
+title: "Trouver le numéro de série d'un disque sur un serveur dédié"
+excerpt: "Récupérez le numéro de série d'un disque dur sur votre serveur dédié pour l'identifier lors d'une demande de remplacement"
 updated: 2019-05-22
 ---
 
@@ -166,5 +166,7 @@ Une fois que vous avez trouvé ce périphérique lié au disque dur que vous vou
 Le numéro du périphérique sg sera affiché comme suit : `/dev/sg0`, `/dev/sg1`, etc.
 
 ## Aller plus loin
+
+[Remplacer un disque défectueux](/pages/bare_metal_cloud/dedicated_servers/disk_replacement)
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).

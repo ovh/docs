@@ -1,6 +1,6 @@
 ---
-title: Migrate data from one dedicated server to another
-excerpt: Find out how to migrate data from one dedicated server to another
+title: "Migrate data from one Dedicated Server to another"
+excerpt: "Migrate data between OVHcloud dedicated servers using rsync, SFTP, or backup storage for a seamless server transition."
 updated: 2021-09-16
 ---
 
@@ -86,6 +86,10 @@ Once the data is available on the new server, you may need to modify your DNS co
 For more information, please read our documentation on [domains and DNS](/products/web-cloud-domains-domain-names).
 
 ## Go further
+
+[Getting Started with SSH on a Dedicated Server](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction)
+
+[Getting Started with a Dedicated Server](/pages/bare_metal_cloud/dedicated_servers/getting-started-with-dedicated-server)
 
 If you would like assistance migrating your server, please contact our network of [OVHcloud partners](/links/partner).
 

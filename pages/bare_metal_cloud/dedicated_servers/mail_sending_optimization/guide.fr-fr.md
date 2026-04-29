@@ -1,6 +1,6 @@
 ---
-title: Comment éviter que vos e-mails ne soient marqués comme spam
-excerpt: "Découvrez comment appliquer les bonnes pratiques d'envoi d'e-mails afin de limiter les risques de blocage des e-mails légitimes par la protection contre les spams"
+title: "Optimiser l'envoi d'e-mails sur un serveur dédié"
+excerpt: "Appliquez les bonnes pratiques d'envoi d'e-mails sur votre serveur dédié pour éviter que vos messages légitimes soient marqués comme spam"
 updated: 2024-09-24
 ---
 
@@ -132,6 +132,10 @@ Il peut être intéressant d'utiliser un site comme [Mail Tester](http://www.mai
 [Améliorer la sécurité des e-mails via un enregistrement SPF](/pages/web_cloud/domains/dns_zone_spf)
 
 [Améliorer la sécurité des e-mails via un enregistrement DMARC](/pages/web_cloud/domains/dns_zone_dmarc)
+
+[OVHcloud AntiSpam - Bonnes pratiques et déblocage d'une adresse IP](/pages/bare_metal_cloud/dedicated_servers/antispam_best_practices)
+
+[Sécuriser un serveur dédié](/pages/bare_metal_cloud/dedicated_servers/securing-a-dedicated-server)
 
 Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](/links/partner).
 

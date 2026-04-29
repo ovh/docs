@@ -1,6 +1,6 @@
 ---
-title: Créer un partitionnement Windows avec un Raid Hard
-excerpt: Decouvrez ici comment créer un partitionnement pour Windows sur un serveur en Raid Materiel.
+title: "Créer une partition Windows sur un serveur dédié avec RAID matériel"
+excerpt: "Créez une partition Windows sur un serveur dédié OVHcloud équipé d’un contrôleur RAID matériel."
 updated: 2018-07-24
 ---
 

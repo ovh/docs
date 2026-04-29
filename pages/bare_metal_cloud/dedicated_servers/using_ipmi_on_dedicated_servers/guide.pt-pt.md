@@ -1,6 +1,6 @@
 ---
 title: "Como utilizar a consola IPMI com um servidor dedicado"
-excerpt: "Saiba como aceder ao servidor a partir da Área de Cliente sem usar outro software"
+excerpt: "Aceda ao seu servidor dedicado remotamente através da consola IPMI/KVM da área de cliente OVHcloud sem software externo"
 updated: 2026-01-29
 ---
 
@@ -142,7 +142,7 @@ A reinicialização do IPMI demora alguns minutos.
 
 Para começar, abra o [IPMI a partir de uma applet Java](#applet-java) através da sua [Área de Cliente OVHcloud](/links/manager). A seguir, clique em `Device`{.action} na barra de menus e selecione `Redirect ISO`{.action} no menu pendente.
 
-![Redirect_ISO](images/RedirectISO.jpg){.thumbnail}
+![Opção Redirect ISO no menu Device](images/RedirectISO.jpg){.thumbnail}
 
 De seguida, selecione a norma ISO que deseja utilizar no sistema de ficheiros do seu computador local. Depois de selecionar a sua norma ISO, prima o botão `Ctrl Alt Del`{.action} no canto superior direito do ecrã para reiniciar o servidor. Carregue na tecla `F` para aceder às opções de arranque.
 
@@ -152,7 +152,7 @@ De seguida, selecione a norma ISO que deseja utilizar no sistema de ficheiros do
 
 Selecione a opção `UEFI Virtual CDROM 1.00` no menu de arranque (Boot) para iniciar o servidor a partir da ISO previamente associada.
 
-![UEFI_Virt](images/UEFIVirt.jpg){.thumbnail}
+![Opção de boot UEFI Virtual CDROM no menu de arranque](images/UEFIVirt.jpg){.thumbnail}
 
 Siga os passos necessários para instalar o sistema operativo. Não se esqueça de eliminar a norma ISO da opção "Redirect ISO".
 
@@ -164,15 +164,15 @@ Siga os passos necessários para instalar o sistema operativo. Não se esqueça 
 
 Para começar, abra o [IPMI a partir de uma applet Java](#applet-java) através da sua [Área de Cliente OVHcloud](/links/manager). A seguir, clique em `Virtual Media`{.action} e, a seguir, em `Virtual Storage`{.action}.
 
-![Virtual storage](images/virtual_storage.png){.thumbnail}
+![Opção Virtual Storage no menu Virtual Media](images/virtual_storage.png){.thumbnail}
 
 Na nova janela, selecione a opção `ISO File` na lista pendente "Logical Drive Type". A seguir, clique em `Open Image`{.action} e navegue até ao seu ficheiro ISO. Finalmente, clique em `Plug-in`{.action} e `OK`{.action}.
 
-![ISO_file](images/iso_file.png){.thumbnail}
+![Selecionar e montar um ficheiro ISO no Virtual Storage](images/iso_file.png){.thumbnail}
 
 Para começar a partir do seu ficheiro ISO, deve aceder à BIOS e alterar as opções de arranque. Para isso, clique em `Power Control`{.action} e, a seguir, em `Set Power Reset`{.action}.
 
-![Power_Reserver](images/power_reset.png){.thumbnail}
+![Menu Power Control com opção Set Power Reset](images/power_reset.png){.thumbnail}
 
 > [!primary]
 > Poderá ter de utilizar o teclado de software para registar as entradas no IPMI. Para aceder, clique na opção `Virtual Media`{.action} na barra de menus no topo da janela. De seguida, selecione `Virtual Keyboard`{.action} no menu pendente.
@@ -180,11 +180,11 @@ Para começar a partir do seu ficheiro ISO, deve aceder à BIOS e alterar as op�
 
 Durante o processo de arranque, prima a tecla `SUPR` quando for convidado a aceder à BIOS. Também pode carregar na tecla `F11` e aceder à BIOS selecionando a opção `Enter Setup`{.action}.
 
-![Menu_arranque](images/boot_menu.png){.thumbnail}
+![Menu de arranque do servidor com opção Enter Setup](images/boot_menu.png){.thumbnail}
 
 Na BIOS, navegue até ao separador `Boot`{.action} e substitua `UEFI Boot Order #1` por `UEFI USB CD/DVD:UEFI: CDROM virtual ATEN YSOJ`.
 
-![Bios](images/bios.png){.thumbnail}
+![Separador Boot da BIOS com configuração da ordem de arranque UEFI](images/bios.png){.thumbnail}
 
 Por fim, carregue na tecla `F4` para registar as suas modificações e reiniciar o servidor.
 
@@ -205,31 +205,31 @@ Aqui, tem acesso às mesmas informações e funcionalidades que nos módulos IPM
 
 Clique no botão `Browse File`{.action} e selecione o seu ficheiro de imagem.
 
-![Instalação do KVM](images/kvm_install01.png){.thumbnail}
+![Botão Browse File na consola web KVM](images/kvm_install01.png){.thumbnail}
 
 Clique em `Start Media`{.action}. Isto preparará a ISO para o processo de instalação.
 
-![Instalação do KVM](images/kvm_install02.png){.thumbnail}
+![Botão Start Media para preparar a ISO](images/kvm_install02.png){.thumbnail}
 
 O tamanho do ficheiro apresentado não é o tamanho real. É normal, porque o ficheiro não é completamente descarregado nesta etapa.
 
-![Instalação do KVM](images/kvm_install03.png){.thumbnail}
+![Tamanho do ficheiro ISO apresentado durante a preparação do upload](images/kvm_install03.png){.thumbnail}
 
 Clique em `Power`{.action} e selecione `Reset Server`{.action} (reinicializar o servidor) no menu pendente.
 
-![Instalação do KVM](images/kvm_install04.png){.thumbnail}
+![Menu Power com opção Reset Server no KVM](images/kvm_install04.png){.thumbnail}
 
 Esperem que o ecrã de seleção de arranque seja apresentado e carreguem a tecla apropriada para entrar no menu de Boot (neste exemplo, `F11`).
 
-![Instalação do KVM](images/kvm_install05.png){.thumbnail}
+![Ecrã de seleção de arranque com tecla F11](images/kvm_install05.png){.thumbnail}
 
 No menu boot, selecione o leitor óptico (`UEFI: AMI Virtual CDROM0` neste exemplo) e prima a `Entrada`.
 
-![Instalação do KVM](images/kvm_install06.png){.thumbnail}
+![Selecionar o leitor CDROM virtual no menu de arranque](images/kvm_install06.png){.thumbnail}
 
 O ficheiro ISO vai agora ser telecarregado e o servidor vai começar a partir do ficheiro.
 
-![Instalação do KVM](images/kvm_install07.png){.thumbnail}
+![Upload da ISO em curso e arranque do servidor a partir do ficheiro](images/kvm_install07.png){.thumbnail}
 
 <a name="bios"></a>
 

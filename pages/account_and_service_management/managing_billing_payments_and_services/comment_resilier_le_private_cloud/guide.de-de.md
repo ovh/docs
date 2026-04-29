@@ -38,7 +38,6 @@ Bei Hosted Private Cloud gibt es keine Mindestvertragslaufzeit. Wie jedoch in de
 
 Wählen Sie die Private Cloud aus der Liste aus, die Sie kündigen möchten.
 
-<!-- CP-STEPS-START:cancel-step1 -->
 Klicken Sie im Reiter „Allgemeine Informationen” in der Tabelle  „Dienstverwaltung” auf den Button `...`{.action} (4) rechts neben dem Datum der Verlängerung. Klicken Sie dann auf `Dienst löschen`{.action} (5).
 
 ![Kündigung über das Kundencenter](images/resiliation1.png){.thumbnail}
@@ -52,17 +51,14 @@ Klicken Sie auf `Bestätigen`{.action} um die Kündigung zu beantragen.
 Sie sehen dann eine Bestätigung Ihres Antrags. Die Bestätigung der Kündigung wird Ihnen per E-Mail an die Adresse zugesandt, die mit dem Account bei OVHcloud verbunden ist.
 
 ![Bestätigung der Kündigung](images/resiliation3.png){.thumbnail}
-<!-- CP-STEPS-END:cancel-step1 -->
 
 ### Schritt 2: Die Kündigung bestätigen
 
 Aufgrund Ihrer Anfrage wird Ihnen eine Bestätigung der Kündigung per E-Mail an die Adresse zugesandt, die mit dem Account bei OVHcloud verbunden ist. 
 
-<!-- CP-STEPS-START:cancel-step2 -->
 Diese E-Mail können Sie auch in Ihrem OVHcloud Kundencenter einsehen. Klicken Sie auf Ihren Namen oben rechts, dann auf `E-Mails vom Support`{.action}.
 
 ![Bestätigung der Kündigung](/pages/assets/screens/control_panel/product-selection/right-menu/my-messages.png){.thumbnail}
-<!-- CP-STEPS-END:cancel-step2 -->
 
 Der Betreff der E-Mail ist:
 
