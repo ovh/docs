@@ -21,14 +21,14 @@ The OVHcloud Game Panel provides a dedicated interface for managing your game se
 
 Go to your Game Panel. The access link depends on the domain you selected during installation.
 
-<!-- SCREENSHOT-STATUS: playwright -->
+<!-- SCREENSHOT-STATUS: as-is -->
 ![The Game Panel login page](images/game-panel-login.png){.thumbnail}
 
 ### Step 2 — Log in
 
 Enter your username and the associated password to log in to the Game Panel.
 
-<!-- SCREENSHOT-STATUS: playwright -->
+<!-- SCREENSHOT-STATUS: as-is -->
 ![Entering credentials on the login page](images/game-panel-login-form.png){.thumbnail}
 
 ### Recover a lost password

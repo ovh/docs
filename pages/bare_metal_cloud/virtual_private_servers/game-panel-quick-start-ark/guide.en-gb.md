@@ -25,7 +25,7 @@ Log in to your OVHcloud Game Panel.
 
 Click `Add Game Server`{.action} and select **ARK: Survival Evolved**.
 
-<!-- SCREENSHOT-STATUS: playwright -->
+<!-- SCREENSHOT-STATUS: as-is -->
 ![Selecting ARK: Survival Evolved from the game list](images/select-ark.png){.thumbnail}
 
 > [!primary]

@@ -25,7 +25,7 @@ Log in to your OVHcloud Game Panel.
 
 Click `Add Game Server`{.action} and select **Valheim**.
 
-<!-- SCREENSHOT-STATUS: playwright -->
+<!-- SCREENSHOT-STATUS: as-is -->
 ![Selecting Valheim from the game list](images/select-valheim.png){.thumbnail}
 
 > [!primary]

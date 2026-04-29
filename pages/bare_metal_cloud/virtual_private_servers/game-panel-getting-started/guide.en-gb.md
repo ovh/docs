@@ -40,14 +40,14 @@ With OVHcloud infrastructure, hosting game servers becomes straightforward and r
 
 From your [VPS management page](/links/control-panel/baremetal-vps), locate the game management feature linked to your server and click `Open Panel`{.action} to access the Game Panel interface.
 
-<!-- SCREENSHOT-STATUS: playwright -->
+<!-- SCREENSHOT-STATUS: as-is -->
 ![The Game Panel main dashboard](images/game-panel-dashboard.png){.thumbnail}
 
 ### Step 2 — Deploy your first game server
 
 From the Game Servers dashboard, select the option to add a new instance.
 
-<!-- SCREENSHOT-STATUS: playwright -->
+<!-- SCREENSHOT-STATUS: as-is -->
 ![Selecting a game from the available list](images/game-selection-list.png){.thumbnail}
 
 Choose the game you want to host from the available list (40+ games) and click `Install`{.action}. The configuration may vary depending on the game.
@@ -72,7 +72,7 @@ Once deployed, the panel provides the following controls for your game server:
 - **Access logs and console**.
 - **Delete** the server.
 
-<!-- SCREENSHOT-STATUS: playwright -->
+<!-- SCREENSHOT-STATUS: as-is -->
 ![Server management interface with status controls](images/server-management.png){.thumbnail}
 
 ### Step 4 — Configure game settings
@@ -89,7 +89,7 @@ Depending on the game, you can configure options by clicking the `Settings`{.act
 >
 > The SSH terminal gives full shell access inside the server container. Misuse can break the game server, delete files, or expose sensitive data. Use with caution.
 
-<!-- SCREENSHOT-STATUS: playwright -->
+<!-- SCREENSHOT-STATUS: as-is -->
 ![Game-specific configuration panel](images/game-settings.png){.thumbnail}
 
 ### Step 5 — Monitor performance
@@ -99,7 +99,7 @@ The monitoring section shows your game server's health:
 - Monitor **CPU and RAM** usage.
 - Check **overall server health**.
 
-<!-- SCREENSHOT-STATUS: playwright -->
+<!-- SCREENSHOT-STATUS: as-is -->
 ![Performance monitoring dashboard](images/monitoring-dashboard.png){.thumbnail}
 
 ### Step 6 — Manage users
@@ -127,7 +127,7 @@ Predefined roles (viewer, operator, or full access) or custom permissions, inclu
 
 This ensures each administrator accesses only the features they need, improving security and operational efficiency. It is especially useful for teams managing multiple servers or collaborating on game hosting projects.
 
-<!-- SCREENSHOT-STATUS: playwright -->
+<!-- SCREENSHOT-STATUS: as-is -->
 ![User management panel with permission settings](images/user-management.png){.thumbnail}
 
 ## Go further

@@ -65,7 +65,7 @@ If your map folder is not named `world`, you must update the server configuratio
 4. Locate the option **World folder name**.
 5. Enter the exact name of your map folder.
 
-<!-- SCREENSHOT-STATUS: playwright -->
+<!-- SCREENSHOT-STATUS: as-is -->
 ![Configuring the world folder name in Game Config](images/world-folder-name-config.png){.thumbnail}
 
 > [!primary]

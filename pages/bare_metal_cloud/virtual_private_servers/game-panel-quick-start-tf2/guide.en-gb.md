@@ -25,7 +25,7 @@ Log in to your Game Panel.
 
 Click `Add Game Server`{.action} and select **Team Fortress 2**.
 
-<!-- SCREENSHOT-STATUS: playwright -->
+<!-- SCREENSHOT-STATUS: as-is -->
 ![Selecting Team Fortress 2 from the game list](images/select-tf2.png){.thumbnail}
 
 > [!primary]

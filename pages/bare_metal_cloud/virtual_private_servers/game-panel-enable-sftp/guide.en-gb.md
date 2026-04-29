@@ -34,7 +34,7 @@ Once logged in:
 2. Click `Settings`{.action}.
 3. Go to the `SFTP`{.action} tab.
 
-<!-- SCREENSHOT-STATUS: playwright -->
+<!-- SCREENSHOT-STATUS: as-is -->
 ![The SFTP settings tab](images/sftp-settings.png){.thumbnail}
 
 ### Step 3 — Enable SFTP

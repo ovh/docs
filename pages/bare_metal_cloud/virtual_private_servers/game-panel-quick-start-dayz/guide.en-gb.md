@@ -24,7 +24,7 @@ Log in to your Game Panel.
 
 From the left-hand menu, go to the `Game Servers`{.action} section and click `Add Game Server`{.action}.
 
-<!-- SCREENSHOT-STATUS: playwright -->
+<!-- SCREENSHOT-STATUS: as-is -->
 ![Game Servers section with the Add Game Server button](images/add-game-server.png){.thumbnail}
 
 Select **DayZ** from the game list. A configuration window opens.
@@ -40,7 +40,7 @@ In the configuration window:
 >
 > It is strongly recommended to use a dedicated Steam account for this purpose, not your personal one. Use a complex password and disable email-based two-factor authentication (Steam Guard) on that account before proceeding.
 
-<!-- SCREENSHOT-STATUS: playwright -->
+<!-- SCREENSHOT-STATUS: as-is -->
 ![DayZ installation form showing server name and Steam credential fields](images/install-dayz-form.png){.thumbnail}
 
 ### Step 3 — Configure the network ports
@@ -49,16 +49,16 @@ The following UDP ports are pre-configured in the installation form:
 
 | Port | Purpose |
 |------|---------|
-| 2382 | Game |
-| 2384 | Steam |
-| 2386 | BattlEye |
-| 27616 | Query Steam |
+| 2302 | Game |
+| 2304 | Steam |
+| 2306 | BattlEye |
+| 27016 | Query Steam |
 
 > [!primary]
 >
 > If this is your first DayZ server on the Game Panel and the default ports are available, no manual changes are needed.
 
-<!-- SCREENSHOT-STATUS: playwright -->
+<!-- SCREENSHOT-STATUS: as-is -->
 ![Network ports section with pre-configured DayZ UDP ports](images/network-ports.png){.thumbnail}
 
 ### Step 4 — Launch the installation
@@ -92,7 +92,7 @@ Click `Settings`{.action} on your server, then open `Game Config`{.action} to ad
 
 For advanced configuration, use the **File Manager** to edit the DayZ server configuration file directly.
 
-<!-- SCREENSHOT-STATUS: playwright -->
+<!-- SCREENSHOT-STATUS: as-is -->
 ![Server Settings panel with Game Config and File Manager options](images/game-config.png){.thumbnail}
 
 ### Step 7 — Connect to your server

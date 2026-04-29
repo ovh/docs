@@ -21,14 +21,14 @@ The Game Panel lets you deploy a 7 Days to Die server with automated installatio
 
 Log in to your Game Panel. Go to the **Game Servers** section in the left-hand menu.
 
-<!-- SCREENSHOT-STATUS: playwright -->
+<!-- SCREENSHOT-STATUS: as-is -->
 ![Game Servers section with Add Game Server button](images/game-servers-list.png){.thumbnail}
 
 ### Step 2 — Create a 7 Days to Die server
 
 Click `Add Game Server`{.action} and select **7 Days to Die** from the list.
 
-<!-- SCREENSHOT-STATUS: playwright -->
+<!-- SCREENSHOT-STATUS: as-is -->
 ![Selecting 7 Days to Die from the game list](images/select-7-days-to-die.png){.thumbnail}
 
 Configure the installation:
@@ -36,7 +36,7 @@ Configure the installation:
 - `Server Name`: Give your server a name (e.g., `7 Days to Die Server`).
 - `Network Ports`: Leave the default ports or add more if needed in the advanced section.
 
-<!-- SCREENSHOT-STATUS: playwright -->
+<!-- SCREENSHOT-STATUS: as-is -->
 ![7 Days to Die installation form](images/7-days-to-die-install-form.png){.thumbnail}
 
 ### Step 3 — Launch the installation

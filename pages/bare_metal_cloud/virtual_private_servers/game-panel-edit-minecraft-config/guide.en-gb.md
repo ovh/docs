@@ -21,14 +21,14 @@ The Game Panel exposes the Minecraft server configuration directly in the UI. Ba
 
 From the main Game Panel page, locate the Minecraft server you want to configure. In the `Management`{.action} column, click `Settings`{.action}.
 
-<!-- SCREENSHOT-STATUS: playwright -->
+<!-- SCREENSHOT-STATUS: as-is -->
 ![Minecraft server with Settings button highlighted](images/minecraft-server-settings.png){.thumbnail}
 
 ### Step 2 — Open the Game Config tab
 
 In the **Server Settings** panel, select `Game Config`{.action} in the left sidebar.
 
-<!-- SCREENSHOT-STATUS: playwright -->
+<!-- SCREENSHOT-STATUS: as-is -->
 ![Game Config tab in the Server Settings panel](images/minecraft-game-config.png){.thumbnail}
 
 ### Step 3 — Configure your game
@@ -42,7 +42,7 @@ The **Game Configuration** section lets you:
 
 The **Advanced Configuration** section gives you direct access to the `server.properties` file, providing more control than the basic UI options.
 
-<!-- SCREENSHOT-STATUS: playwright -->
+<!-- SCREENSHOT-STATUS: as-is -->
 ![Advanced Configuration section showing server.properties editor](images/minecraft-advanced-config.png){.thumbnail}
 
 > [!primary]

@@ -29,7 +29,7 @@ Once logged in:
 2. Click `Settings`{.action}.
 3. Go to the `Backup`{.action} tab.
 
-<!-- SCREENSHOT-STATUS: playwright -->
+<!-- SCREENSHOT-STATUS: as-is -->
 ![The backup settings tab](images/backup-tab.png){.thumbnail}
 
 ### Step 3 — Create a backup
@@ -40,7 +40,7 @@ Click `Create backup now`{.action}.
 >
 > We recommend keeping the **Stop server before backup** option enabled to ensure consistent saves.
 
-<!-- SCREENSHOT-STATUS: playwright -->
+<!-- SCREENSHOT-STATUS: as-is -->
 ![Creating a backup with the stop server option](images/create-backup.png){.thumbnail}
 
 Once the backup is complete, the file is available for download in the same settings section.

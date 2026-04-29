@@ -25,7 +25,7 @@ Log in to your Game Panel.
 
 Click `Add Game Server`{.action} and select **Arma Reforger**.
 
-<!-- SCREENSHOT-STATUS: playwright -->
+<!-- SCREENSHOT-STATUS: as-is -->
 ![Selecting Arma Reforger from the game list](images/select-arma-reforger.png){.thumbnail}
 
 > [!primary]

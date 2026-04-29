@@ -21,14 +21,14 @@ The Game Panel lets you deploy a Garry's Mod server with automated installation 
 
 Log in to your Game Panel. Go to the **Game Servers** section in the left-hand menu.
 
-<!-- SCREENSHOT-STATUS: playwright -->
+<!-- SCREENSHOT-STATUS: as-is -->
 ![Game Servers section with Add Game Server button](images/game-servers-list.png){.thumbnail}
 
 ### Step 2 — Create a Garry's Mod server
 
 Click `Add Game Server`{.action} and select **Garrys Mod** from the list.
 
-<!-- SCREENSHOT-STATUS: playwright -->
+<!-- SCREENSHOT-STATUS: as-is -->
 ![Selecting Garrys Mod from the game list](images/select-garrys-mod.png){.thumbnail}
 
 Configure the installation:

@@ -22,10 +22,10 @@ The Game Panel lets you deploy and configure a TeamSpeak 3 voice server in a few
 
 From your Game Panel dashboard, click `Add Game Server`{.action}. In the list of available games, search for and select **TeamSpeak 3**.
 
-<!-- SCREENSHOT-STATUS: playwright -->
+<!-- SCREENSHOT-STATUS: as-is -->
 ![Game Panel dashboard with Add Game Server button](images/teamspeak-add-server.png){.thumbnail}
 
-<!-- SCREENSHOT-STATUS: playwright -->
+<!-- SCREENSHOT-STATUS: as-is -->
 ![Selecting TeamSpeak 3 from the game list](images/select-teamspeak-3.png){.thumbnail}
 
 ### Step 2 — Configure your server
@@ -40,7 +40,7 @@ Among the available settings, you can modify:
     - `10011` (TCP) — ServerQuery
     - `30033` (TCP) — file transfer
 
-<!-- SCREENSHOT-STATUS: playwright -->
+<!-- SCREENSHOT-STATUS: as-is -->
 ![TeamSpeak 3 Network Ports configuration](images/teamspeak-network-ports.png){.thumbnail}
 
 > [!primary]
@@ -51,7 +51,7 @@ Among the available settings, you can modify:
 
 Once you have reviewed the configuration, click `Install`{.action} to start the deployment.
 
-<!-- SCREENSHOT-STATUS: playwright -->
+<!-- SCREENSHOT-STATUS: as-is -->
 ![TeamSpeak 3 install configuration form with Install button](images/teamspeak-install-form.png){.thumbnail}
 
 ### Step 4 — Monitor the installation progress

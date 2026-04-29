@@ -25,7 +25,7 @@ Log in to your OVHcloud Game Panel. Go to the **Game Servers** section in the le
 
 Click `Add Game Server`{.action} and select **Counter-Strike 2** from the list.
 
-<!-- SCREENSHOT-STATUS: playwright -->
+<!-- SCREENSHOT-STATUS: as-is -->
 ![Selecting Counter-Strike 2 from the game list](images/select-cs2.png){.thumbnail}
 
 Configure the installation:

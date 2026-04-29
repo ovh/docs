@@ -15,3 +15,4 @@ cp-extraction
 CLAUDE.md
 CLAUDE.local.md
 .mcp.json
+.playwright-mcp/

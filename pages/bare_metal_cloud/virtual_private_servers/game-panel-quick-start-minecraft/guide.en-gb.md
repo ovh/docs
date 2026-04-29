@@ -25,7 +25,7 @@ Log in to your OVHcloud Game Panel.
 
 Click `Add Game Server`{.action} and select **Minecraft**.
 
-<!-- SCREENSHOT-STATUS: playwright -->
+<!-- SCREENSHOT-STATUS: as-is -->
 ![Selecting Minecraft from the game list](images/select-minecraft.png){.thumbnail}
 
 > [!primary]
@@ -45,7 +45,7 @@ While the server is installing, the status will display **Installing**. You can 
 
 Once the installation is finished, the server status will automatically change to **Running**.
 
-<!-- SCREENSHOT-STATUS: playwright -->
+<!-- SCREENSHOT-STATUS: as-is -->
 ![Minecraft server with Running status](images/server-running.png){.thumbnail}
 
 ### Step 5 — Retrieve connection information
