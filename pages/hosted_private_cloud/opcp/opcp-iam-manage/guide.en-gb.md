@@ -102,7 +102,6 @@ Supervision and audit profile. This role provides read-only access to the platfo
 It allows you to:
 
 - View your own account settings in Keycloak
-- Access **Grafana** in read-only mode (metrics visualisation)
 - Access **Netbox** in read-only mode (network inventory)
 - Access **Prometheus** in read-only mode
 - Access the **Dashboard** and the Grafana, Netbox and Prometheus iframes
@@ -172,7 +171,6 @@ The table below summarises the access for each role across the integrated applic
 | **OpenStack** | reader (view) | 🟡 | ❌ | ✅ | ✅ |
 | **OpenStack** | member (edit) | ❌ | ❌ | ✅ | ✅ |
 | **OpenStack** | admin | ❌ | ❌ | ✅ | ✅ |
-| **Grafana** | view | ✅ | ✅ | ✅ | ✅ |
 | **Grafana** | edit (dashboards) | ❌ | ✅ | ✅ | ✅ |
 | **Netbox** | reader | ✅ | ✅ | ✅ | ✅ |
 | **Netbox** | operator | ❌ | ✅ | ✅ | ✅ |

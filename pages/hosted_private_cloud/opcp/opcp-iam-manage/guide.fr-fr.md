@@ -106,11 +106,11 @@ Il permet de :
 - Accéder en lecture à **Prometheus**
 - Accéder au **Dashboard** et aux iframes Grafana, Netbox et Prometheus
 - Accéder à l'iframe **OpenStack** dans le Dashboard
-- Accéder aux projets OpenStack en mode **vue** uniquement, sous réserve d'attributs de projet configurés dans Keycloak
+- Accéder aux projets OpenStack en mode **reader** uniquement, sous réserve d'attributs de projet configurés dans Keycloak
 
 > [!primary]
 >
-> L'accès OpenStack du rôle `reader` est limité à la consultation (`view`). Il est conditionné par la présence d'attributs de projet sur le compte ou le groupe Keycloak. Sans attribut de projet, aucune ressource OpenStack n'est visible.
+> L'accès OpenStack du rôle Keycloak `reader` est limité au rôle OpenStack `reader` (lecture seule). Il est conditionné par la présence d'attributs de projet sur le compte ou le groupe Keycloak. Sans attribut de projet, aucune ressource OpenStack n'est visible.
 >
 
 #### Rôle `dc_operator`
@@ -135,7 +135,7 @@ Opérateur principal de la plateforme. Ce rôle est destiné aux équipes IT qui
 Il donne les accès supplémentaires suivants par rapport au `dc_operator` :
 
 - Gérer les utilisateurs du Realm Master dans Keycloak (création de comptes, attribution de droits)
-- Accéder à **OpenStack** avec tous les droits (`view`, `member`, `admin`)
+- Accéder à **OpenStack** avec tous les droits (`reader`, `member`, `admin`)
 - Accéder au **Dashboard** avec l'iframe OpenStack
 
 > [!warning]
