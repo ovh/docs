@@ -156,11 +156,15 @@ services:
       MYSQL_PASSWORD: ${DB_PASSWORD}
       MYSQL_ROOT_PASSWORD: ${DB_ROOT_PASSWORD}
     volumes:
-      - db_data:/var/lib/MySQL
+      - db_data:/var/lib/mysql
+    networks:
+      - internal
 
   Redis:
-    image: Redis:7-alpine
+    image: redis:7-alpine
     restart: unless-stopped
+    networks:
+      - internal
 
   app:
     image: nextcloud:apache
@@ -179,11 +183,14 @@ services:
       NEXTCLOUD_TRUSTED_DOMAINS: ${NC_DOMAIN}
     volumes:
       - nextcloud_html:/var/www/html
+      - config:/var/www/html/config
       - nextcloud_data:/var/www/html/data
     networks:
+      - internal
       - proxy
     labels:
       - traefik.enable=true
+      - traefik.docker.network=proxy
       - traefik.http.routers.nextcloud.rule=Host(`${NC_DOMAIN}`)
       - traefik.http.routers.nextcloud.entrypoints=websecure
       - traefik.http.routers.nextcloud.tls.certresolver=letsencrypt
@@ -192,8 +199,10 @@ volumes:
   db_data:
   nextcloud_html:
   nextcloud_data:
+  config:
 
 networks:
+  internal:
   proxy:
     external: true
 ```
