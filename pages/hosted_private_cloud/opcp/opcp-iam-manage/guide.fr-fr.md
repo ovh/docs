@@ -120,7 +120,7 @@ Opérateur datacenter. Ce rôle est destiné aux équipes en charge de l'infrast
 
 Il donne les accès supplémentaires suivants par rapport au `reader` :
 
-- Administrer **Grafana** : édition des dashboards et gestion des datasources
+- Accéder à **Grafana** en édition (modification des dashboards)
 - Accéder à **Netbox** en tant qu'opérateur (création et modification des ressources réseau)
 - Accéder au **Dashboard** (iframe Grafana, Netbox, Prometheus)
 
@@ -169,12 +169,11 @@ Le tableau ci-dessous récapitule les accès de chaque rôle sur les application
 | **Keycloak** | Voir ses paramètres de compte | ✅ | ✅ | ✅ | ✅ |
 | **Keycloak** | Gérer les utilisateurs du realm | ❌ | ❌ | ✅ | ✅ |
 | **Keycloak** | Administrer le realm (politique, fédération) | ❌ | ❌ | ❌ | ✅ |
-| **OpenStack** | view | 🟡 | ❌ | ✅ | ✅ |
+| **OpenStack** | reader (vue) | 🟡 | ❌ | ✅ | ✅ |
 | **OpenStack** | member (édition) | ❌ | ❌ | ✅ | ✅ |
 | **OpenStack** | admin | ❌ | ❌ | ✅ | ✅ |
 | **Grafana** | view | ✅ | ✅ | ✅ | ✅ |
 | **Grafana** | edit (dashboards) | ❌ | ✅ | ✅ | ✅ |
-| **Grafana** | admin (datasources) | ❌ | ✅ | ✅ | ✅ |
 | **Netbox** | reader | ✅ | ✅ | ✅ | ✅ |
 | **Netbox** | operator | ❌ | ✅ | ✅ | ✅ |
 | **Netbox** | admin | ❌ | ❌ | ❌ | ✅ |
@@ -188,7 +187,7 @@ Le tableau ci-dessous récapitule les accès de chaque rôle sur les application
 
 > [!primary]
 >
-> L'accès OpenStack `view` du rôle `reader` est conditionné par la présence d'**attributs de projet** sur l'utilisateur ou son groupe dans Keycloak. Sans attribut de projet configuré, aucune ressource OpenStack n'est accessible.
+> L'accès OpenStack `reader` du rôle Keycloak `reader` est conditionné par la présence d'**attributs de projet** sur l'utilisateur ou son groupe dans Keycloak. Sans attribut de projet configuré, aucune ressource OpenStack n'est accessible.
 >
 
 ### Créer un utilisateur et lui assigner un rôle

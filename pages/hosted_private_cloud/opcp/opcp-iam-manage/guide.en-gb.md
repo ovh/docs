@@ -107,11 +107,11 @@ It allows you to:
 - Access **Prometheus** in read-only mode
 - Access the **Dashboard** and the Grafana, Netbox and Prometheus iframes
 - Access the **OpenStack** iframe in the Dashboard
-- Access OpenStack projects in **view** mode only, subject to project attributes configured in Keycloak
+- Access OpenStack projects in **reader** mode only, subject to project attributes configured in Keycloak
 
 > [!primary]
 >
-> The `reader` role's OpenStack access is limited to `view`. It requires project attributes to be configured on the Keycloak account or group. Without a project attribute, no OpenStack resource is visible.
+> The `reader` role's OpenStack access is limited to the `reader` role (read-only). It requires project attributes to be configured on the Keycloak account or group. Without a project attribute, no OpenStack resource is visible.
 >
 
 #### The `dc_operator` role
@@ -120,7 +120,7 @@ Datacenter operator. This role is intended for teams responsible for network and
 
 It provides the following additional access compared to `reader`:
 
-- Administer **Grafana**: edit dashboards and manage datasources
+- Access **Grafana** in edit mode (modify dashboards)
 - Access **Netbox** as an operator (create and modify network resources)
 - Access the **Dashboard** (Grafana, Netbox, Prometheus iframes)
 
@@ -136,7 +136,7 @@ Main platform operator. This role is intended for IT teams who manage OPCP resou
 It provides the following additional access compared to `dc_operator`:
 
 - Manage Realm Master users in Keycloak (create accounts, assign rights)
-- Access **OpenStack** with full rights (`view`, `member`, `admin`)
+- Access **OpenStack** with full rights (`reader`, `member`, `admin`)
 - Access the **Dashboard** with the OpenStack iframe
 
 > [!warning]
@@ -169,12 +169,11 @@ The table below summarises the access for each role across the integrated applic
 | **Keycloak** | View own account settings | ✅ | ✅ | ✅ | ✅ |
 | **Keycloak** | Manage realm users | ❌ | ❌ | ✅ | ✅ |
 | **Keycloak** | Administer realm (policy, federation) | ❌ | ❌ | ❌ | ✅ |
-| **OpenStack** | view | 🟡 | ❌ | ✅ | ✅ |
+| **OpenStack** | reader (view) | 🟡 | ❌ | ✅ | ✅ |
 | **OpenStack** | member (edit) | ❌ | ❌ | ✅ | ✅ |
 | **OpenStack** | admin | ❌ | ❌ | ✅ | ✅ |
 | **Grafana** | view | ✅ | ✅ | ✅ | ✅ |
 | **Grafana** | edit (dashboards) | ❌ | ✅ | ✅ | ✅ |
-| **Grafana** | admin (datasources) | ❌ | ✅ | ✅ | ✅ |
 | **Netbox** | reader | ✅ | ✅ | ✅ | ✅ |
 | **Netbox** | operator | ❌ | ✅ | ✅ | ✅ |
 | **Netbox** | admin | ❌ | ❌ | ❌ | ✅ |
@@ -188,7 +187,7 @@ The table below summarises the access for each role across the integrated applic
 
 > [!primary]
 >
-> The `reader` role's OpenStack `view` access requires **project attributes** to be configured on the user or their group in Keycloak. Without a configured project attribute, no OpenStack resource is accessible.
+> The `reader` role's OpenStack `reader` access requires **project attributes** to be configured on the user or their group in Keycloak. Without a configured project attribute, no OpenStack resource is accessible.
 >
 
 ### Creating a user and assigning a role
