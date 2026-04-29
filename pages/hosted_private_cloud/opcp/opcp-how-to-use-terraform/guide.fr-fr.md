@@ -1,5 +1,5 @@
 ---
-title: "OPCP - Comment utiliser Terraform avec OPCP"
+title: "Comment utiliser Terraform avec OPCP"
 excerpt: "Découvrez comment générer une Application Credential depuis Horizon et automatiser le déploiement de vos ressources OPCP avec Terraform"
 updated: 2026-04-29
 ---
@@ -10,13 +10,16 @@ updated: 2026-04-29
 
 L'offre **OPCP** reposant sur **OpenStack**, vous pouvez utiliser le **provider Terraform OpenStack** afin d'automatiser le déploiement de vos ressources : instances, réseaux, volumes, paires de clés, etc.
 
+> [!primary]
+> Ce guide est également valable avec [**OpenTofu**](https://opentofu.org/), le fork open source de Terraform maintenu par la Linux Foundation. OpenTofu est compatible avec la syntaxe HCL et les providers Terraform : il vous suffit de remplacer la commande `terraform` par `tofu` dans les exemples ci-dessous.
+
 **Ce guide détaille les étapes nécessaires pour générer une *Application Credential* depuis Horizon, configurer Terraform et déployer un premier serveur sur votre infrastructure OPCP.**
 
 ## Prérequis
 
 - Disposer d'un service [OPCP](/links/hosted-private-cloud/onprem-cloud-platform) actif.
 - Posséder un **compte utilisateur** avec les droits suffisants pour se connecter à Horizon sur l'offre OPCP.
-- Avoir [installé Terraform](https://developer.hashicorp.com/terraform/install) (version >= 1.0) sur votre poste de travail.
+- Avoir [installé Terraform](https://developer.hashicorp.com/terraform/install) (version >= 1.0) ou [OpenTofu](https://opentofu.org/docs/intro/install/) sur votre poste de travail.
 - Disposer d'une **paire de clés SSH** sur votre poste local pour accéder à votre instance.
 - Avoir préalablement créé un **réseau privé** dans votre projet OPCP (voir le guide [Comment installer une instance depuis l'interface Horizon](/pages/hosted_private_cloud/opcp/opcp-setup-instance)).
 
@@ -46,7 +49,7 @@ Renseignez les champs suivants :
 | **Description** | Optionnel. Ajoutez une description si nécessaire. |
 | **Secret** | Optionnel. Si non renseigné, un secret sera généré automatiquement. |
 | **Expiration Date / Expiration Time** | Optionnel. Définissez une date d'expiration. |
-| **Roles** | Sélectionnez les rôles à associer à la credential (ex. : *member*). |
+| **Roles** | Sélectionnez les rôles à associer à la credential (ex. : *member*, *admin*). |
 | **Access Rules** | Optionnel. Permet de restreindre les actions autorisées. |
 | **Unrestricted** | Laissez décoché pour limiter les actions possibles. |
 
@@ -55,7 +58,7 @@ Cliquez sur `Create Application Credential`{.action}.
 > [!warning]
 > Une fois la fenêtre fermée, le **secret ne sera plus accessible**. Téléchargez le fichier `clouds.yaml` ou `openrc` proposé par Horizon, ou copiez les valeurs `id` et `secret` dans un emplacement sécurisé.
 
-![horizon-application-credential-download](images/02-application-credential-step03.png){.thumbnail}
+![horizon-application-credential-download](images/01-application-credential-step03.png){.thumbnail}
 
 > [!primary]
 > Pour la suite de ce tutoriel, **téléchargez le fichier `openrc`** : il sera utilisé à l'étape suivante pour authentifier Terraform auprès de votre infrastructure OPCP.
@@ -85,7 +88,9 @@ terraform {
   }
 }
 
-provider "openstack" {}
+provider "openstack" {
+  
+}
 ```
 
 Aucun paramètre n'est nécessaire dans le bloc `provider`{.action} : le provider OpenStack récupère automatiquement les informations d'authentification depuis les variables d'environnement `OS_*`.
@@ -207,7 +212,17 @@ terraform apply
 
 Confirmez avec `yes` lorsque Terraform vous le demande. Une fois la création terminée, l'instance est visible dans l'interface Horizon, dans la section `Compute`{.action} > `Instances`{.action}.
 
-### 4. Suppression de l'infrastructure
+### 4. Configurations complémentaires sur le nœud (RAID, LACP)
+
+Certaines configurations doivent être appliquées **sur le nœud baremetal** avant le déploiement de l'instance et ne sont pas couvertes par le provider Terraform OpenStack. Elles nécessitent des droits **admin** Ironic (ou des nœuds transférés dans votre projet) et restent à effectuer via la CLI OpenStack.
+
+> [!primary]
+> **RAID logiciel** : pour configurer un RAID logiciel sur un nœud baremetal, consultez le guide [Comment configurer un RAID logiciel sur un nœud](/pages/hosted_private_cloud/opcp/how-to-setup-softraid-on-node). L'attribut `target_raid_config` n'est pas exposé par la ressource `openstack_baremetal_node_v1`. Cette opération est à réaliser **avant** le `terraform apply` qui déploie l'instance, en ciblant ensuite le nœud configuré via `availability_zone = "nova::<node-id>"`.
+
+> [!primary]
+> **LACP / bonding** : pour agréger plusieurs interfaces réseau d'un nœud, consultez le guide [Comment configurer LACP sur un nœud](/pages/hosted_private_cloud/opcp/how-to-setup-lacp-on-node). La configuration des ports baremetal et du bonding n'est pas gérable de manière déclarative par le provider Terraform OpenStack. Cette opération est à réaliser **avant** le `terraform apply` qui déploie l'instance.
+
+### 5. Suppression de l'infrastructure
 
 Pour supprimer l'ensemble des ressources créées via Terraform :
 
@@ -215,7 +230,10 @@ Pour supprimer l'ensemble des ressources créées via Terraform :
 terraform destroy
 ```
 
-### 5. Dépannage (Troubleshooting)
+> [!warning]
+> `terraform destroy` ne réinitialise pas les configurations RAID ou LACP appliquées sur le nœud. Pour les retirer, suivez la section dédiée du guide correspondant via la CLI OpenStack.
+
+### 6. Dépannage (Troubleshooting)
 
 | Problème | Cause possible | Solution |
 |-----------|----------------|-----------|
@@ -224,9 +242,10 @@ terraform destroy
 | `No suitable endpoint could be found` | Mauvaise URL `auth_url` ou région inexistante | Vérifiez l'URL Keystone et la région dans `Project`{.action} > `API Access`{.action}. |
 | `Network not found` | Réseau privé absent dans le projet | Créez un réseau privé au préalable depuis Horizon (`Network`{.action} > `Networks`{.action}). |
 
-### 6. Références
+### 7. Références
 
 - [Documentation officielle Terraform](https://developer.hashicorp.com/terraform)
+- [Documentation officielle OpenTofu](https://opentofu.org/docs/)
 - [Provider Terraform OpenStack](https://registry.terraform.io/providers/terraform-provider-openstack/openstack/latest/docs)
 - [Ressource openstack_compute_instance_v2](https://registry.terraform.io/providers/terraform-provider-openstack/openstack/latest/docs/resources/compute_instance_v2)
 - [OpenStack Application Credentials](https://docs.openstack.org/keystone/latest/user/application_credentials.html)
