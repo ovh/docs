@@ -1,7 +1,7 @@
 ---
 title: "Uploading a custom world to your Minecraft server"
 excerpt: "Upload a custom Minecraft map to your game server via SFTP, configure the world folder name in Game Config, and switch between multiple maps."
-updated: 2026-04-12
+updated: 2026-04-29
 ---
 
 ## Objective
@@ -37,6 +37,7 @@ data > serverfiles
 
 Inside this directory, you will see a folder named `world`. This folder contains your current Minecraft map and is created by default.
 
+<!-- SCREENSHOT-STATUS: manual-edit | reason: FileZilla view, third-party UI -->
 ![The default world folder in the server file structure](images/world-folder.png){.thumbnail}
 
 ### Step 3 — Prepare the server for your new map
@@ -51,6 +52,7 @@ Before uploading your own map, you need to free up the `world` folder name. You 
 
 In FileZilla, locate your map folder on the left side (your computer) and drag it into `data > serverfiles` on the right side (remote server).
 
+<!-- SCREENSHOT-STATUS: manual-edit | reason: FileZilla view, third-party UI -->
 ![Uploading a custom map folder via FileZilla](images/upload-map.png){.thumbnail}
 
 ### Step 5 — Configure the world name (if needed)
@@ -63,7 +65,7 @@ If your map folder is not named `world`, you must update the server configuratio
 4. Locate the option **World folder name**.
 5. Enter the exact name of your map folder.
 
-<!-- DRAFT: To screenshot — Game Config tab with World folder name option -->
+<!-- SCREENSHOT-STATUS: playwright -->
 ![Configuring the world folder name in Game Config](images/world-folder-name-config.png){.thumbnail}
 
 > [!primary]
@@ -76,8 +78,7 @@ Restart your server from the Game Panel. Your custom Minecraft map is now ready 
 
 ## Go further
 
-See our guide on [Deploy a Minecraft server on the Game Panel](/pages/bare_metal_cloud/virtual_private_servers/game-panel-quick-start-minecraft).
-
-See our guide on [Creating a backup on the Game Panel](/pages/bare_metal_cloud/virtual_private_servers/game-panel-create-backup).
+- [Deploy a Minecraft server on the Game Panel](/pages/bare_metal_cloud/virtual_private_servers/game-panel-quick-start-minecraft)
+- [Creating a backup on the Game Panel](/pages/bare_metal_cloud/virtual_private_servers/game-panel-create-backup)
 
 Join our [community of users](/links/community).

@@ -1,7 +1,7 @@
 ---
 title: "Deploy a Valheim server on the Game Panel"
 excerpt: "Learn how to deploy a Valheim server on the OVHcloud Game Panel, track installation progress, and join your server from the Valheim client."
-updated: 2026-04-12
+updated: 2026-04-29
 ---
 
 ## Objective
@@ -25,7 +25,7 @@ Log in to your OVHcloud Game Panel.
 
 Click `Add Game Server`{.action} and select **Valheim**.
 
-<!-- DRAFT: To screenshot — Game selection with Valheim highlighted -->
+<!-- SCREENSHOT-STATUS: playwright -->
 ![Selecting Valheim from the game list](images/select-valheim.png){.thumbnail}
 
 > [!primary]
@@ -36,19 +36,23 @@ Click `Add Game Server`{.action} and select **Valheim**.
 
 Once the installation starts, you will see a confirmation screen. Click `Open Logs`{.action} to follow the installation progress in real time.
 
-<!-- DRAFT: To screenshot — Valheim installation progress with logs panel -->
+<!-- SCREENSHOT-STATUS: playwright -->
 ![Monitoring Valheim server installation](images/installation-logs.png){.thumbnail}
 
 ### Step 4 — Confirm installation is complete
 
 Once the installation is finished, a notification will appear: **Server status is now: Running**.
 
-<!-- DRAFT: To screenshot — Valheim server with Running status notification -->
+<!-- SCREENSHOT-STATUS: playwright -->
 ![Valheim server with Running status](images/server-running.png){.thumbnail}
 
 ### Step 5 — Retrieve connection information
 
-Once your server status is **Running**, copy the connection information from the Game Panel.
+Once your server status is **Running**, copy the connection information from the Game Panel. Valheim uses two UDP ports: `2456` (Game) and `2457` (Query).
+
+> [!primary]
+>
+> A server password is generated automatically during installation. Open the `File Manager`{.action} from your server `Settings`{.action} and look in `config-lgsm` > `vhserver` > `secrets-common.cfg` to retrieve it.
 
 ### Step 6 — Join your server in Valheim
 
@@ -60,8 +64,7 @@ Once your server status is **Running**, copy the connection information from the
 
 ## Go further
 
-See our guide on [Getting started with the Game Panel](/pages/bare_metal_cloud/virtual_private_servers/game-panel-getting-started).
-
-See our guide on [Creating a backup on the Game Panel](/pages/bare_metal_cloud/virtual_private_servers/game-panel-create-backup).
+- [Getting started with the Game Panel](/pages/bare_metal_cloud/virtual_private_servers/game-panel-getting-started)
+- [Creating a backup on the Game Panel](/pages/bare_metal_cloud/virtual_private_servers/game-panel-create-backup)
 
 Join our [community of users](/links/community).

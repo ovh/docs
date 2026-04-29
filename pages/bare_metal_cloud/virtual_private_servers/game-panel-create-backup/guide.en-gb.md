@@ -1,7 +1,7 @@
 ---
 title: "Creating a backup on the Game Panel"
 excerpt: "Create a backup of your game server instance using the OVHcloud Game Panel to save your server state and restore it if needed."
-updated: 2026-04-12
+updated: 2026-04-29
 ---
 
 ## Objective
@@ -29,7 +29,7 @@ Once logged in:
 2. Click `Settings`{.action}.
 3. Go to the `Backup`{.action} tab.
 
-<!-- DRAFT: To screenshot — Backup tab in server settings -->
+<!-- SCREENSHOT-STATUS: playwright -->
 ![The backup settings tab](images/backup-tab.png){.thumbnail}
 
 ### Step 3 — Create a backup
@@ -40,12 +40,12 @@ Click `Create backup now`{.action}.
 >
 > We recommend keeping the **Stop server before backup** option enabled to ensure consistent saves.
 
-<!-- DRAFT: To screenshot — Backup creation confirmation with stop server option -->
+<!-- SCREENSHOT-STATUS: playwright -->
 ![Creating a backup with the stop server option](images/create-backup.png){.thumbnail}
 
 Once the backup is complete, the file is available for download in the same settings section.
 
-<!-- DRAFT: To screenshot — Backup list with download option -->
+<!-- SCREENSHOT-STATUS: playwright -->
 ![List of available backups](images/backup-list.png){.thumbnail}
 
 ## Go further

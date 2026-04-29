@@ -1,7 +1,7 @@
 ---
 title: "Managing users on the Game Panel"
 excerpt: "Create and manage user accounts with granular permissions on the OVHcloud Game Panel to control access to your game servers."
-updated: 2026-04-12
+updated: 2026-04-29
 ---
 
 ## Objective
@@ -21,7 +21,7 @@ The OVHcloud Game Panel lets you create and manage user accounts with granular p
 
 Click `User Administration`{.action} in the left menu of the Game Panel.
 
-<!-- DRAFT: To screenshot — User administration page with user list -->
+<!-- SCREENSHOT-STATUS: playwright -->
 ![The user administration interface](images/user-administration.png){.thumbnail}
 
 You will see a list of existing users. Use the `Edit`{.action} and `Delete`{.action} buttons to modify or remove users.
@@ -36,7 +36,7 @@ Fill in the following fields:
 - **New password**: A secure password.
 - **Retype new password**: Confirm the password.
 
-<!-- DRAFT: To screenshot — Create user form with username and password fields -->
+<!-- SCREENSHOT-STATUS: playwright -->
 ![Creating a new user account](images/create-user.png){.thumbnail}
 
 ### Step 3 — Configure server-specific permissions
@@ -54,7 +54,7 @@ Quick presets are available:
 | **Operator** | Limited access. |
 | **Full access** | Full control (recommended for administrators). |
 
-<!-- DRAFT: To screenshot — Server permissions panel with preset dropdown and checkboxes -->
+<!-- SCREENSHOT-STATUS: playwright -->
 ![Configuring server-level permissions](images/server-permissions.png){.thumbnail}
 
 #### Customise permissions
@@ -63,11 +63,16 @@ Check the boxes for specific actions:
 
 - **Edit server name**: Modify the server name.
 - **Access server console**: Access the server console.
-- **Power controls**: Start/stop/restart the server.
-- **Read server logs**: View server logs.
+- **Power controls (start/stop/restart)**: Start, stop, or restart the server.
 - **Manage game update settings**: Manage game updates.
-- **Read files / Write files**: Read and write files.
-- **Create backups / Delete backups**: Create and delete backups.
+- **Read server logs**: View server logs.
+- **Delete server**: Delete the server.
+- **Read files** / **Write files**: Read and write server files.
+- **Download backups**: Download backup archives.
+- **Create backups**: Create new backups.
+- **Edit backup settings**: Edit backup configuration.
+- **Delete backups**: Delete backup archives.
+- **Manage SFTP**: Configure SFTP access.
 - **Use SSH terminal**: Access the SSH terminal.
 
 ### Step 4 — Save changes
@@ -80,6 +85,6 @@ Click `Delete`{.action} next to the user you want to remove, then confirm the de
 
 ## Go further
 
-See our guide on [Getting started with the Game Panel](/pages/bare_metal_cloud/virtual_private_servers/game-panel-getting-started).
+- [Getting started with the Game Panel](/pages/bare_metal_cloud/virtual_private_servers/game-panel-getting-started)
 
 Join our [community of users](/links/community).

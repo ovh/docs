@@ -1,7 +1,7 @@
 ---
 title: "Uploading a backup on the Game Panel"
 excerpt: "Restore a game server backup on the OVHcloud Game Panel by downloading the archive, extracting it, and uploading the serverfiles folder via SFTP."
-updated: 2026-04-12
+updated: 2026-04-29
 ---
 
 ## Objective
@@ -37,14 +37,14 @@ At the bottom of the page, find the list of available backups. Click `Download`{
 
 If no backup is available, you must first create one. Refer to our guide on [Creating a backup on the Game Panel](/pages/bare_metal_cloud/virtual_private_servers/game-panel-create-backup).
 
-<!-- DRAFT: To screenshot — Backup list with download button -->
+<!-- SCREENSHOT-STATUS: playwright -->
 ![Downloading a backup from the list](images/download-backup.png){.thumbnail}
 
 ### Step 4 — Extract the backup
 
 Once the backup has been downloaded, extract the archive on your computer. After extraction, you should see the backup files and folders, including the `serverfiles` directory.
 
-<!-- DRAFT: To screenshot — Extracted backup folder showing serverfiles directory -->
+<!-- SCREENSHOT-STATUS: manual-edit | reason: local OS file manager view, third-party UI -->
 ![Extracted backup showing the serverfiles directory](images/extracted-backup.png){.thumbnail}
 
 ### Step 5 — Connect to your server via SFTP
@@ -77,8 +77,7 @@ Once the upload is complete, restart your server from the Game Panel. Your serve
 
 ## Go further
 
-See our guide on [Creating a backup on the Game Panel](/pages/bare_metal_cloud/virtual_private_servers/game-panel-create-backup).
-
-See our guide on [Enabling SFTP on the Game Panel](/pages/bare_metal_cloud/virtual_private_servers/game-panel-enable-sftp).
+- [Creating a backup on the Game Panel](/pages/bare_metal_cloud/virtual_private_servers/game-panel-create-backup)
+- [Enabling SFTP on the Game Panel](/pages/bare_metal_cloud/virtual_private_servers/game-panel-enable-sftp)
 
 Join our [community of users](/links/community).

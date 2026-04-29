@@ -1,7 +1,7 @@
 ---
-title: "How to Choose Your OVHcloud Gaming VPS Plan"
+title: "Choose a VPS plan for your game server"
 excerpt: "Compare OVHcloud Gaming VPS plans game by game and choose the right configuration for your server, player count, and installed mods."
-updated: 2026-04-24
+updated: 2026-04-29
 ---
 
 ## Objective
@@ -95,8 +95,7 @@ VPS-5 and VPS-6 are not required for a single game with 10 players. Their value 
 
 ## Go further
 
-See our guide on [Getting started with the Game Panel](/pages/bare_metal_cloud/virtual_private_servers/game-panel-getting-started).
-
-See our guide on [Logging in to the Game Panel](/pages/bare_metal_cloud/virtual_private_servers/game-panel-log-in).
+- [Getting started with the Game Panel](/pages/bare_metal_cloud/virtual_private_servers/game-panel-getting-started)
+- [Logging in to the Game Panel](/pages/bare_metal_cloud/virtual_private_servers/game-panel-log-in)
 
 Join our [community of users](/links/community).

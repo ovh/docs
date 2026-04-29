@@ -1,14 +1,14 @@
 ---
-title: "Deploy a Counter-Strike 2 server on the Game Panel"
-excerpt: "Deploy a Counter-Strike 2 server using the OVHcloud Game Panel with automated deployment, port configuration, and console connect steps."
+title: "Deploy a 7 Days to Die server on the Game Panel"
+excerpt: "Deploy a 7 Days to Die server on the Game Panel with automated installation, port configuration, and console connect steps."
 updated: 2026-04-29
 ---
 
 ## Objective
 
-The OVHcloud Game Panel lets you deploy a Counter-Strike 2 (CS2) server with automated installation and port configuration.
+The Game Panel lets you deploy a 7 Days to Die server with automated installation and port configuration.
 
-**This guide explains how to deploy and connect to a Counter-Strike 2 server on the OVHcloud Game Panel.**
+**This guide explains how to deploy and connect to a 7 Days to Die server on the Game Panel.**
 
 ## Requirements
 
@@ -19,19 +19,25 @@ The OVHcloud Game Panel lets you deploy a Counter-Strike 2 (CS2) server with aut
 
 ### Step 1 — Access the Game Panel
 
-Log in to your OVHcloud Game Panel. Go to the **Game Servers** section in the left-hand menu.
-
-### Step 2 — Create a CS2 server
-
-Click `Add Game Server`{.action} and select **Counter-Strike 2** from the list.
+Log in to your Game Panel. Go to the **Game Servers** section in the left-hand menu.
 
 <!-- SCREENSHOT-STATUS: playwright -->
-![Selecting Counter-Strike 2 from the game list](images/select-cs2.png){.thumbnail}
+![Game Servers section with Add Game Server button](images/game-servers-list.png){.thumbnail}
+
+### Step 2 — Create a 7 Days to Die server
+
+Click `Add Game Server`{.action} and select **7 Days to Die** from the list.
+
+<!-- SCREENSHOT-STATUS: playwright -->
+![Selecting 7 Days to Die from the game list](images/select-7-days-to-die.png){.thumbnail}
 
 Configure the installation:
 
-- `Server Name`: Give your server a name (e.g., `CS2 Competitive Server`).
-- `Network Ports`: Leave the default ports or add more if needed in the advanced section. CS2 typically uses ports around `27015`.
+- `Server Name`: Give your server a name (e.g., `7 Days to Die Server`).
+- `Network Ports`: Leave the default ports or add more if needed in the advanced section.
+
+<!-- SCREENSHOT-STATUS: playwright -->
+![7 Days to Die installation form](images/7-days-to-die-install-form.png){.thumbnail}
 
 ### Step 3 — Launch the installation
 
@@ -42,12 +48,12 @@ Click `Install`{.action}. The deployment will start automatically. Wait a few mi
 
 Then click the launch button to start the server.
 
-<!-- SCREENSHOT-STATUS: playwright -->
-![Counter-Strike 2 server installation progress](images/cs2-installation.png){.thumbnail}
-
 ### Step 4 — Verify the server is running
 
 Check that the server status displays **Running** and that CPU/RAM activity is visible.
+
+<!-- SCREENSHOT-STATUS: playwright -->
+![7 Days to Die server with Running status](images/7-days-to-die-running.png){.thumbnail}
 
 Available actions:
 
@@ -56,13 +62,13 @@ Available actions:
 - `Settings`{.action} > `Game Config`{.action}: Access game settings.
 
 <!-- SCREENSHOT-STATUS: playwright -->
-![Counter-Strike 2 server with Running status](images/cs2-running.png){.thumbnail}
+![7 Days to Die Game Config settings](images/7-days-to-die-game-config.png){.thumbnail}
 
 ### Step 5 — Connect to the server
 
-In the `Connection`{.action} column, you will find the IP address and port (e.g., `xxx.xxx.xxx.xxx:27015`).
+In the `Connection`{.action} column, you will find the IP address and port (e.g., `xxx.xxx.xxx.xxx:26900`).
 
-In Counter-Strike 2:
+In 7 Days to Die:
 
 1. Open the console (`~`).
 2. Type:

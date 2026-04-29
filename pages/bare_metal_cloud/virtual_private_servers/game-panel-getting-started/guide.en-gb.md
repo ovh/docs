@@ -1,7 +1,7 @@
 ---
 title: "Getting started with the Game Panel"
 excerpt: "Deploy and manage game servers on your OVHcloud VPS using the Game Panel. Supports 40+ popular titles including Minecraft, ARK, CS2, and Rust."
-updated: 2026-04-12
+updated: 2026-04-29
 ---
 
 ## Objective
@@ -40,14 +40,14 @@ With OVHcloud infrastructure, hosting game servers becomes straightforward and r
 
 From your [VPS management page](/links/control-panel/baremetal-vps), locate the game management feature linked to your server and click `Open Panel`{.action} to access the Game Panel interface.
 
-<!-- DRAFT: To screenshot — Game Panel dashboard after first login -->
+<!-- SCREENSHOT-STATUS: playwright -->
 ![The Game Panel main dashboard](images/game-panel-dashboard.png){.thumbnail}
 
 ### Step 2 — Deploy your first game server
 
 From the Game Servers dashboard, select the option to add a new instance.
 
-<!-- DRAFT: To screenshot — Game selection list showing available titles -->
+<!-- SCREENSHOT-STATUS: playwright -->
 ![Selecting a game from the available list](images/game-selection-list.png){.thumbnail}
 
 Choose the game you want to host from the available list (40+ games) and click `Install`{.action}. The configuration may vary depending on the game.
@@ -58,7 +58,7 @@ Choose the game you want to host from the available list (40+ games) and click `
 
 The panel automatically downloads and configures all required files. You can follow the installation progress directly from the log tab.
 
-<!-- DRAFT: To screenshot — Deployment progress / log tab view -->
+<!-- SCREENSHOT-STATUS: playwright -->
 ![Installation progress in the log tab](images/deployment-progress.png){.thumbnail}
 
 ### Step 3 — Manage your server
@@ -72,7 +72,7 @@ Once deployed, the panel provides the following controls for your game server:
 - **Access logs and console**.
 - **Delete** the server.
 
-<!-- DRAFT: To screenshot — Server management view with control buttons -->
+<!-- SCREENSHOT-STATUS: playwright -->
 ![Server management interface with status controls](images/server-management.png){.thumbnail}
 
 ### Step 4 — Configure game settings
@@ -89,7 +89,7 @@ Depending on the game, you can configure options by clicking the `Settings`{.act
 >
 > The SSH terminal gives full shell access inside the server container. Misuse can break the game server, delete files, or expose sensitive data. Use with caution.
 
-<!-- DRAFT: To screenshot — Game settings panel showing configuration options -->
+<!-- SCREENSHOT-STATUS: playwright -->
 ![Game-specific configuration panel](images/game-settings.png){.thumbnail}
 
 ### Step 5 — Monitor performance
@@ -99,7 +99,7 @@ The monitoring section shows your game server's health:
 - Monitor **CPU and RAM** usage.
 - Check **overall server health**.
 
-<!-- DRAFT: To screenshot — Monitoring dashboard with CPU/RAM graphs -->
+<!-- SCREENSHOT-STATUS: playwright -->
 ![Performance monitoring dashboard](images/monitoring-dashboard.png){.thumbnail}
 
 ### Step 6 — Manage users
@@ -127,13 +127,12 @@ Predefined roles (viewer, operator, or full access) or custom permissions, inclu
 
 This ensures each administrator accesses only the features they need, improving security and operational efficiency. It is especially useful for teams managing multiple servers or collaborating on game hosting projects.
 
-<!-- DRAFT: To screenshot — User management interface with roles and permissions -->
+<!-- SCREENSHOT-STATUS: playwright -->
 ![User management panel with permission settings](images/user-management.png){.thumbnail}
 
 ## Go further
 
-See our guide on [Getting started with a VPS](/pages/bare_metal_cloud/virtual_private_servers/starting_with_a_vps).
-
-See our guide on [Securing a VPS](/pages/bare_metal_cloud/virtual_private_servers/secure_your_vps).
+- [Getting started with a VPS](/pages/bare_metal_cloud/virtual_private_servers/starting_with_a_vps)
+- [Securing a VPS](/pages/bare_metal_cloud/virtual_private_servers/secure_your_vps)
 
 Join our [community of users](/links/community).
