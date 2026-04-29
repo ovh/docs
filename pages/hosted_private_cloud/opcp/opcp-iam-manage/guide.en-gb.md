@@ -8,7 +8,7 @@ updated: 2026-04-28
 
 This guide explains how to manage rights and access (IAM - Identity and Access Management) on your **On-Prem Cloud Platform (OPCP)**.
 
-Access management on the **OPCP** relies on two distinct layers: SSH access to the control plane, and application service access centralised in **Keycloak** (Realm Master). This guide covers both layers, with a particular focus on Keycloak, the single entry point for:
+Access to application services is centralised in **Keycloak** (Realm Master), which serves as the single entry point for:
 
 - Access to the **Dashboard** (unified service dashboard)
 - Access to the **OpenStack Horizon** graphical interface

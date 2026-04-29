@@ -8,7 +8,7 @@ updated: 2026-04-28
 
 Ce guide explique comment gérer les droits et les accès (IAM - Identity and Access Management) de votre **On-Prem Cloud Platform (OPCP)**.
 
-La gestion des accès de l'**OPCP** repose sur deux niveaux distincts : l'accès SSH au control plane, et l'accès aux services applicatifs centralisé dans **Keycloak** (Realm Master). Ce guide couvre ces deux niveaux, avec un focus particulier sur Keycloak, point d'entrée unique pour :
+L'accès aux services applicatifs est centralisé dans **Keycloak** (Realm Master), qui sert de point d'entrée unique pour :
 
 - L'accès au **Dashboard** (tableau de bord unifié du service)
 - L'accès à l'interface graphique **OpenStack Horizon**
@@ -102,7 +102,6 @@ Profil supervision et audit. Ce rôle donne un accès en lecture aux outils de m
 Il permet de :
 
 - Consulter ses paramètres de compte dans Keycloak
-- Accéder en lecture à **Grafana** (visualisation des métriques)
 - Accéder en lecture à **Netbox** (inventaire réseau)
 - Accéder en lecture à **Prometheus**
 - Accéder au **Dashboard** et aux iframes Grafana, Netbox et Prometheus
