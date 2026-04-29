@@ -1,7 +1,7 @@
 ---
-title: "Object Storage - Combining lifecycle policies and asynchronous replication"
-excerpt: "Learn how to combine Object Storage lifecycle policies and asynchronous replication to address advanced data management use cases"
-updated: 2026-04-17
+title: "Object Storage - Lifecycle and replication use cases"
+excerpt: "Find out how to combine Object Storage lifecycle policies and asynchronous replication to address advanced data management use cases"
+updated: 2026-04-29
 ---
 
 ## Objective
@@ -13,7 +13,7 @@ OVHcloud Object Storage offers two powerful automation features that, when combi
 
 Used in isolation, each feature already provides significant value. Used together, they unlock architectures that are simultaneously cost-efficient, resilient, and compliant.
 
-This guide covers seven production-ready use cases that combine both features:
+This guide covers 7 production-ready use cases combining both features:
 
 1. [Regulatory archiving and compliance](#use-case-1-regulatory-archiving-and-compliance)
 2. [Disaster recovery](#use-case-2-disaster-recovery)
@@ -25,15 +25,15 @@ This guide covers seven production-ready use cases that combine both features:
 
 ## Requirements
 
-- An active [OVHcloud Public Cloud project](https://www.ovhcloud.com/en-gb/public-cloud/)
-- Object Storage buckets created in one or more OVHcloud regions. Refer to our guide [Getting started with Object Storage](/pages/storage_and_backup/object_storage/s3_getting_started_with_object_storage/guide.en-gb) if needed
-- A working understanding of OVHcloud storage classes. Refer to our guide [Choosing the right storage class for your needs](/pages/storage_and_backup/object_storage/s3_storage_class/guide.en-gb)
-- A working understanding of lifecycle policies. Refer to our guide [Object Storage - Managing object lifecycle](/pages/storage_and_backup/object_storage/s3_lifecycle/guide.en-gb)
-- A working understanding of asynchronous replication. Refer to our guide [Object Storage - Mastering asynchronous replication across your buckets](/pages/storage_and_backup/object_storage/s3_replication/guide.en-gb)
-- **For CLI steps only**: the AWS CLI installed and configured with your OVHcloud Object Storage credentials and endpoint. Refer to our guide [Getting started with Object Storage](/pages/storage_and_backup/object_storage/s3_getting_started_with_object_storage/guide.en-gb)
+- An active [OVHcloud Public Cloud project](/links/public-cloud/public-cloud).
+- Object Storage buckets created in one or more OVHcloud regions. Refer to our guide [Getting started with Object Storage](/pages/storage_and_backup/object_storage/s3_getting_started_with_object_storage) if needed.
+- A working understanding of OVHcloud storage classes. Refer to our guide [Choosing the right storage class for your needs](/pages/storage_and_backup/object_storage/s3_choosing_the_right_storage_class_for_your_needs).
+- A working understanding of lifecycle policies. Refer to our guide [Object Storage - Managing object lifecycle](/pages/storage_and_backup/object_storage/s3_bucket_lifecycle).
+- A working understanding of asynchronous replication. Refer to our guide [Object Storage - Mastering asynchronous replication across your buckets](/pages/storage_and_backup/object_storage/s3_asynchronous_replication).
+- **For CLI steps only**: the AWS CLI installed and configured with your OVHcloud Object Storage credentials and endpoint. Refer to our guide [Getting started with Object Storage](/pages/storage_and_backup/object_storage/s3_getting_started_with_object_storage).
 
 > [!primary]
-> Every step in this guide can be performed either via the **OVHcloud Control Panel** or via the **AWS CLI**. Both approaches are described for each step. CLI examples use the OVHcloud endpoint format:
+> Every step can be performed via the **OVHcloud Control Panel** or the **AWS CLI**. Both approaches are described for each step. CLI examples use the OVHcloud endpoint format:
 > ```bash
 > --endpoint-url https://s3.<region>.io.cloud.ovh.net
 > ```
@@ -41,10 +41,10 @@ This guide covers seven production-ready use cases that combine both features:
 
 ## Storage class mapping reference
 
-All CLI examples in this guide use the S3 API `StorageClass` values as required for **write operations** (PUT, lifecycle transitions, replication destination) on the OVHcloud `.io` endpoint. The mapping differs between **3-AZ regions** and **1-AZ regions**.
+All CLI examples in this guide use the S3<sup>1</sup> API `StorageClass` values as required for **write operations** (PUT, lifecycle transitions, replication destination) on the OVHcloud `.io` endpoint. The mapping differs between **3-AZ regions** and **1-AZ regions**.
 
 > [!primary]
-> The mapping below reflects the current state as of **2026-01-03**. Refer to the [Object Storage - Endpoints and geoavailability](/pages/storage_and_backup/object_storage/s3_location/guide.en-gb) guide for the full and up-to-date reference.
+> The mapping below reflects the current state as of **2026-01-03**. Refer to the [Object Storage - Endpoints and geoavailability](/pages/storage_and_backup/object_storage/s3_location) guide for the full and up-to-date reference.
 
 **3-AZ regions (e.g. Paris `eu-west-par`, Milan `eu-south-mil`)**
 
@@ -65,18 +65,16 @@ All CLI examples in this guide use the S3 API `StorageClass` values as required 
 | `STANDARD_IA` (also `ONEZONE_IA`, `GLACIER_IR`, `GLACIER`, `DEEP_ARCHIVE`) | Infrequent Access |
 
 > [!warning]
-> In **1-AZ regions**, `GLACIER_IR`, `GLACIER`, and `DEEP_ARCHIVE` all map to **Infrequent Access** - there are no deeper archive tiers available. Cold Archive is currently available in 3-AZ regions only, and only in Paris (`eu-west-par`).
+> In **1-AZ regions**, `GLACIER_IR`, `GLACIER`, and `DEEP_ARCHIVE` all map to **Infrequent Access** — there are no deeper archive tiers available. Cold Archive is currently available in 3-AZ regions only, and only in Paris (`eu-west-par`).
 
 > [!warning]
 > This mapping applies to the `.io` endpoint only. The legacy `.perf` endpoint uses a different mapping and is maintained for backward compatibility purposes only.
-
----
 
 ## Use case 1 - Regulatory archiving and compliance
 
 ### Context
 
-Organisations in regulated industries (finance, healthcare, legal) must retain certain data for legally mandated periods - often 5 to 10 years - while keeping storage costs under control and ensuring data is available in a secondary jurisdiction if required. A typical requirement combines:
+Organisations in regulated industries (finance, healthcare, legal) must retain certain data for legally mandated periods — often 5 to 10 years — while keeping storage costs under control and ensuring data is available in a secondary jurisdiction if required. A typical requirement combines:
 
 - Automatic transition to cheaper storage classes as data ages
 - A compliant copy in a geographically separate region
@@ -96,7 +94,7 @@ Asynchronous replication requires versioning to be enabled on both the source an
 
 **Via the OVHcloud Control Panel**
 
-Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/), go to the `Public Cloud`{.action} section, and select your project. Click `Object Storage`{.action} in the left-hand menu, then on the `My containers`{.action} tab. Click the name of your source bucket (`compliance-primary-<region>`), then select the `Versioning`{.action} tab. Toggle versioning to **Enabled** and click `Save`{.action}. Repeat this operation for the destination bucket (`compliance-archive-<region2>`).
+Go to the [Public Cloud](/links/control-panel/publiccloud-projects) section of your OVHcloud Control Panel and select your project. Click `Object Storage`{.action} in the left-hand menu, then click the name of your source bucket (`compliance-primary-<region>`) from the `My containers`{.action} tab. In the `General information`{.action} tab, enable versioning and click `Confirm`{.action}. Repeat this operation for the destination bucket (`compliance-archive-<region2>`).
 
 **Via the AWS CLI**
 
@@ -116,7 +114,7 @@ aws s3api put-bucket-versioning \
 
 **Via the OVHcloud Control Panel**
 
-From the `My containers`{.action} tab, click the name of your source bucket, then select the `Replication`{.action} tab. Click `Add a replication rule`{.action}. Set the destination bucket to `compliance-archive-<region2>`, set the destination storage class to **Standard**, enable **Delete marker replication**, and click `Save`{.action}.
+From the `My containers`{.action} tab, click the name of your source bucket, then select the `Replication`{.action} tab. Click `Add a replication rule`{.action}. Set the destination bucket to `compliance-archive-<region2>`, set the destination storage class to **Standard**, enable **Replicating delete markers**, and click `Create`{.action}.
 
 **Via the AWS CLI**
 
@@ -156,14 +154,14 @@ This configuration transitions objects through Infrequent Access, Active Archive
 
 **Via the OVHcloud Control Panel**
 
-From the `My containers`{.action} tab, click the name of your source bucket and select the `Lifecycle rules`{.action} tab. Click `Add a rule`{.action}. Leave the prefix filter empty. For **3-AZ regions**, add three transition actions: **Infrequent Access** at day 30, **Active Archive** at day 90, and **Cold Archive** at day 365. For **1-AZ regions**, add only the **Infrequent Access** transition at day 30. Click `Save`{.action}.
+From the `My containers`{.action} tab, click the name of your source bucket and select the `Lifecycle`{.action} tab. Click `Create a rule`{.action}. Leave the prefix filter empty. For **3-AZ regions**, add three transition actions: **Infrequent Access** at day 30, **Active Archive** at day 90, and **Cold Archive** at day 365. For **1-AZ regions**, add only the **Infrequent Access** transition at day 30. Click `Create rule`{.action}.
 
 **Via the AWS CLI**
 
 Create a file named `lifecycle-compliance.json`:
 
 > [!primary]
-> The example below targets a **3-AZ region** (e.g. Paris `eu-west-par`). It uses `GLACIER_IR` for Active Archive and `DEEP_ARCHIVE` for Cold Archive, both available in 3-AZ only. For **1-AZ regions**, remove both archive transitions - only `STANDARD_IA` is available.
+> The example below targets a **3-AZ region** (e.g. Paris `eu-west-par`). It uses `GLACIER_IR` for Active Archive and `DEEP_ARCHIVE` for Cold Archive, both available in 3-AZ only. For **1-AZ regions**, remove both archive transitions — only `STANDARD_IA` is available.
 
 ```json
 {
@@ -195,7 +193,7 @@ This configuration retains objects for 7 years (2555 days) before expiration.
 
 **Via the OVHcloud Control Panel**
 
-From the `My containers`{.action} tab, click the name of your destination bucket and select the `Lifecycle rules`{.action} tab. Click `Add a rule`{.action}. Leave the prefix filter empty. Add an expiration action set to **2555 days**. Click `Save`{.action}.
+From the `My containers`{.action} tab, click the name of your destination bucket and select the `Lifecycle`{.action} tab. Click `Create a rule`{.action}. Leave the prefix filter empty. Add an expiration action set to **2555 days**. Click `Create rule`{.action}.
 
 **Via the AWS CLI**
 
@@ -222,8 +220,6 @@ aws s3api put-bucket-lifecycle-configuration \
 > [!primary]
 > Replication copies the object at the time of its creation. If the object transitions to a cheaper storage class on the primary bucket, the replica in the secondary bucket retains its own storage class independently. This means you can optimise costs differently on each side.
 
----
-
 ## Use case 2 - Disaster recovery
 
 ### Context
@@ -233,7 +229,7 @@ A disaster recovery (DR) strategy for Object Storage requires a copy of all data
 - **Primary bucket**: short retention, Standard storage class, low cost
 - **DR bucket**: full copy in a remote region, longer retention in Infrequent Access class to reduce standby cost
 
-Asynchronous replication ensures the DR bucket stays up to date (~15 minutes lag). Lifecycle policies on the primary bucket keep costs down by expiring objects that are already safely replicated.
+Asynchronous replication ensures the DR bucket stays up to date (approximately 15 minutes lag). Lifecycle policies on the primary bucket keep costs down by expiring objects that are already safely replicated.
 
 ### Architecture
 
@@ -246,7 +242,7 @@ Asynchronous replication ensures the DR bucket stays up to date (~15 minutes lag
 
 **Via the OVHcloud Control Panel**
 
-Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/), go to `Public Cloud`{.action} and select your project. Click `Object Storage`{.action} then `My containers`{.action}. For each bucket (`dr-primary-<region>` and `dr-backup-<region2>`), click its name, select the `Versioning`{.action} tab, toggle to **Enabled**, and click `Save`{.action}.
+Go to the [Public Cloud](/links/control-panel/publiccloud-projects) section of your OVHcloud Control Panel and select your project. Click `Object Storage`{.action} in the left-hand menu. For each bucket (`dr-primary-<region>` and `dr-backup-<region2>`), click its name from the `My containers`{.action} tab, then in the `General information`{.action} tab, enable versioning and click `Confirm`{.action}.
 
 **Via the AWS CLI**
 
@@ -268,7 +264,7 @@ Replicated objects are stored directly in Infrequent Access on the DR side to re
 
 **Via the OVHcloud Control Panel**
 
-From the `My containers`{.action} tab, click the name of your primary bucket and select the `Replication`{.action} tab. Click `Add a replication rule`{.action}. Set the destination to `dr-backup-<region2>`, set the destination storage class to **Infrequent Access**, disable **Delete marker replication** to protect the DR copy from accidental deletions, and click `Save`{.action}.
+From the `My containers`{.action} tab, click the name of your primary bucket and select the `Replication`{.action} tab. Click `Add a replication rule`{.action}. Set the destination to `dr-backup-<region2>`, set the destination storage class to **Infrequent Access**, disable **Replicating delete markers** to protect the DR copy from accidental deletions, and click `Create`{.action}.
 
 **Via the AWS CLI**
 
@@ -306,7 +302,7 @@ Objects expire after 60 days; non-current versions are cleaned up after 7 days.
 
 **Via the OVHcloud Control Panel**
 
-From the `My containers`{.action} tab, click the name of your primary bucket and select the `Lifecycle rules`{.action} tab. Click `Add a rule`{.action}. Leave the prefix empty. Add an expiration action set to **60 days** and a non-current version expiration set to **7 days**. Click `Save`{.action}.
+From the `My containers`{.action} tab, click the name of your primary bucket and select the `Lifecycle`{.action} tab. Click `Create a rule`{.action}. Leave the prefix empty. Add an expiration action set to **60 days** and a non-current version expiration set to **7 days**. Click `Create rule`{.action}.
 
 **Via the AWS CLI**
 
@@ -335,7 +331,7 @@ aws s3api put-bucket-lifecycle-configuration \
 
 **Via the OVHcloud Control Panel**
 
-From the `My containers`{.action} tab, click the name of your DR bucket and select the `Lifecycle rules`{.action} tab. Click `Add a rule`{.action}. Leave the prefix empty. Set expiration to **365 days** and non-current version expiration to **30 days**. Click `Save`{.action}.
+From the `My containers`{.action} tab, click the name of your DR bucket and select the `Lifecycle`{.action} tab. Click `Create a rule`{.action}. Leave the prefix empty. Set expiration to **365 days** and non-current version expiration to **30 days**. Click `Create rule`{.action}.
 
 **Via the AWS CLI**
 
@@ -361,9 +357,7 @@ aws s3api put-bucket-lifecycle-configuration \
 ```
 
 > [!warning]
-> **Delete marker replication** is disabled in the DR replication rule above. This prevents deletions on the primary bucket from propagating to the DR bucket, protecting the replica against accidental or malicious deletions. Adjust this setting if your use case requires full consistency between both buckets.
-
----
+> **Replicating delete markers** is disabled in the DR replication rule above. This prevents deletions on the primary bucket from propagating to the DR bucket, protecting the replica against accidental or malicious deletions. Adjust this setting if your use case requires full consistency between both buckets.
 
 ## Use case 3 - Data lake and automated tiering
 
@@ -385,7 +379,7 @@ Data lake architectures generate large volumes of objects that are queried frequ
 
 **Via the OVHcloud Control Panel**
 
-Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/), go to `Public Cloud`{.action} and select your project. Click `Object Storage`{.action} then `My containers`{.action}. For each bucket, click its name, select the `Versioning`{.action} tab, toggle to **Enabled**, and click `Save`{.action}.
+Go to the [Public Cloud](/links/control-panel/publiccloud-projects) section of your OVHcloud Control Panel and select your project. Click `Object Storage`{.action} in the left-hand menu. For each bucket, click its name from the `My containers`{.action} tab, then in the `General information`{.action} tab, enable versioning and click `Confirm`{.action}.
 
 **Via the AWS CLI**
 
@@ -405,7 +399,7 @@ aws s3api put-bucket-versioning \
 
 **Via the OVHcloud Control Panel**
 
-From the `My containers`{.action} tab, click the name of your main data lake bucket and select the `Replication`{.action} tab. Click `Add a replication rule`{.action}. Leave the prefix filter empty. Set the destination to `datalake-analytics-<region2>`, set the destination storage class to **Standard**, disable **Delete marker replication**, and click `Save`{.action}.
+From the `My containers`{.action} tab, click the name of your main data lake bucket and select the `Replication`{.action} tab. Click `Add a replication rule`{.action}. Leave the prefix filter empty. Set the destination to `datalake-analytics-<region2>`, set the destination storage class to **Standard**, disable **Replicating delete markers**, and click `Create`{.action}.
 
 **Via the AWS CLI**
 
@@ -441,7 +435,7 @@ This configuration applies different tiering schedules to raw data and processed
 
 **Via the OVHcloud Control Panel**
 
-From the `My containers`{.action} tab, click the name of your main bucket and select the `Lifecycle rules`{.action} tab. Use `Add a rule`{.action} to add two rules separately:
+From the `My containers`{.action} tab, click the name of your main bucket and select the `Lifecycle`{.action} tab. Use `Create a rule`{.action} to add two rules separately:
 
 - **Rule 1** - prefix `raw/`: transitions to **Infrequent Access** at day 30, **Active Archive** at day 90, **Cold Archive** at day 365 (3-AZ only)
 - **Rule 2** - prefix `processed/`: transitions to **Infrequent Access** at day 60, **Active Archive** at day 180 (3-AZ only)
@@ -449,7 +443,7 @@ From the `My containers`{.action} tab, click the name of your main bucket and se
 **Via the AWS CLI**
 
 > [!primary]
-> `GLACIER_IR` maps to Active Archive and `DEEP_ARCHIVE` maps to Cold Archive - both are available in **3-AZ regions** only. For **1-AZ regions**, use only `STANDARD_IA`.
+> `GLACIER_IR` maps to Active Archive and `DEEP_ARCHIVE` maps to Cold Archive — both are available in **3-AZ regions** only. For **1-AZ regions**, use only `STANDARD_IA`.
 
 ```json
 {
@@ -487,8 +481,6 @@ aws s3api put-bucket-lifecycle-configuration \
 > [!primary]
 > The analytics replica keeps all objects in Standard class regardless of transitions applied on the source. Your analytics tools always access immediately available data without retrieval delays or additional restore costs.
 
----
-
 ## Use case 4 - Geographic content distribution
 
 ### Context
@@ -510,7 +502,7 @@ Organisations distributing static assets (media files, software packages, firmwa
 
 **Via the OVHcloud Control Panel**
 
-Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/) and go to `Public Cloud`{.action} > `Object Storage`{.action} > `My containers`{.action}. For each of the three buckets, click its name, select the `Versioning`{.action} tab, toggle to **Enabled**, and click `Save`{.action}.
+Go to the [Public Cloud](/links/control-panel/publiccloud-projects) section of your OVHcloud Control Panel and select your project. Click `Object Storage`{.action} in the left-hand menu. For each of the three buckets, click its name from the `My containers`{.action} tab, then in the `General information`{.action} tab, enable versioning and click `Confirm`{.action}.
 
 **Via the AWS CLI**
 
@@ -537,7 +529,7 @@ OVHcloud Object Storage supports multiple replication rules on a single bucket.
 
 **Via the OVHcloud Control Panel**
 
-From the `My containers`{.action} tab, click the name of your origin bucket and select the `Replication`{.action} tab. Click `Add a replication rule`{.action}. Leave the prefix empty, set the destination to `content-eu-west-<region2>`, enable **Delete marker replication**, and click `Save`{.action}. Click `Add a replication rule`{.action} again to add a second rule with destination `content-eu-central-<region3>` and the same settings.
+From the `My containers`{.action} tab, click the name of your origin bucket and select the `Replication`{.action} tab. Click `Add a replication rule`{.action}. Leave the prefix empty, set the destination to `content-eu-west-<region2>`, enable **Replicating delete markers**, and click `Create`{.action}. Click `Add a replication rule`{.action} again to add a second rule with destination `content-eu-central-<region3>` and the same settings.
 
 **Via the AWS CLI**
 
@@ -584,7 +576,7 @@ Remove non-current versions after 30 days to prevent accumulation of stale conte
 
 **Via the OVHcloud Control Panel**
 
-From the `My containers`{.action} tab, click the name of a regional bucket and select the `Lifecycle rules`{.action} tab. Click `Add a rule`{.action}. Leave the prefix empty. Set non-current version expiration to **30 days** and abort incomplete multipart upload cleanup to **7 days**. Click `Save`{.action}. Repeat for the other regional bucket.
+From the `My containers`{.action} tab, click the name of a regional bucket and select the `Lifecycle`{.action} tab. Click `Create a rule`{.action}. Leave the prefix empty. Set non-current version expiration to **30 days** and abort incomplete multipart upload cleanup to **7 days**. Click `Create rule`{.action}. Repeat for the other regional bucket.
 
 **Via the AWS CLI**
 
@@ -615,9 +607,7 @@ aws s3api put-bucket-lifecycle-configuration \
 ```
 
 > [!primary]
-> With **Delete marker replication** enabled, when you delete an object on the origin bucket, the delete marker propagates to all regional replicas. The `NoncurrentVersionExpiration` rule then cleans up the superseded version data after 30 days automatically - no manual cleanup is required.
-
----
+> With **Replicating delete markers** enabled, when you delete an object on the origin bucket, the delete marker propagates to all regional replicas. The `NoncurrentVersionExpiration` rule then cleans up the superseded version data after 30 days automatically — no manual cleanup is required.
 
 ## Use case 5 - Dev/Staging environment management
 
@@ -642,7 +632,7 @@ Development and staging environments often need a realistic copy of production d
 
 **Via the OVHcloud Control Panel**
 
-Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/) and go to `Public Cloud`{.action} > `Object Storage`{.action} > `My containers`{.action}. For each bucket, click its name, select the `Versioning`{.action} tab, toggle to **Enabled**, and click `Save`{.action}.
+Go to the [Public Cloud](/links/control-panel/publiccloud-projects) section of your OVHcloud Control Panel and select your project. Click `Object Storage`{.action} in the left-hand menu. For each bucket, click its name from the `My containers`{.action} tab, then in the `General information`{.action} tab, enable versioning and click `Confirm`{.action}.
 
 **Via the AWS CLI**
 
@@ -664,7 +654,7 @@ Only the `datasets/` prefix is replicated to limit the volume of data copied to 
 
 **Via the OVHcloud Control Panel**
 
-From the `My containers`{.action} tab, click the name of your production bucket and select the `Replication`{.action} tab. Click `Add a replication rule`{.action}. Set the prefix filter to `datasets/`, set the destination to `staging-data-<region>`, leave the storage class as **Standard**, disable **Delete marker replication**, and click `Save`{.action}.
+From the `My containers`{.action} tab, click the name of your production bucket and select the `Replication`{.action} tab. Click `Add a replication rule`{.action}. Set the prefix filter to `datasets/`, set the destination to `staging-data-<region>`, leave the storage class as **Standard**, disable **Replicating delete markers**, and click `Create`{.action}.
 
 **Via the AWS CLI**
 
@@ -700,7 +690,7 @@ Objects expire after 14 days; non-current versions are cleaned up after 3 days.
 
 **Via the OVHcloud Control Panel**
 
-From the `My containers`{.action} tab, click the name of your staging bucket and select the `Lifecycle rules`{.action} tab. Click `Add a rule`{.action}. Leave the prefix empty. Set expiration to **14 days**, non-current version expiration to **3 days**, and abort incomplete multipart upload cleanup to **1 day**. Click `Save`{.action}.
+From the `My containers`{.action} tab, click the name of your staging bucket and select the `Lifecycle`{.action} tab. Click `Create a rule`{.action}. Leave the prefix empty. Set expiration to **14 days**, non-current version expiration to **3 days**, and abort incomplete multipart upload cleanup to **1 day**. Click `Create rule`{.action}.
 
 **Via the AWS CLI**
 
@@ -727,9 +717,7 @@ aws s3api put-bucket-lifecycle-configuration \
 ```
 
 > [!warning]
-> **Delete marker replication** is disabled in the replication rule above. This ensures that deletions in the production bucket do not propagate to staging, allowing staging environments to continue working with their local copy of the data even after production objects have been removed.
-
----
+> **Replicating delete markers** is disabled in the replication rule above. This ensures that deletions in the production bucket do not propagate to staging, allowing staging environments to continue working with their local copy of the data even after production objects have been removed.
 
 ## Use case 6 - Logs and observability
 
@@ -754,7 +742,7 @@ The combination of prefix-based lifecycle policies with replication to a central
 
 **Via the OVHcloud Control Panel**
 
-Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/) and go to `Public Cloud`{.action} > `Object Storage`{.action} > `My containers`{.action}. For each bucket, click its name, select the `Versioning`{.action} tab, toggle to **Enabled**, and click `Save`{.action}.
+Go to the [Public Cloud](/links/control-panel/publiccloud-projects) section of your OVHcloud Control Panel and select your project. Click `Object Storage`{.action} in the left-hand menu. For each bucket, click its name from the `My containers`{.action} tab, then in the `General information`{.action} tab, enable versioning and click `Confirm`{.action}.
 
 **Via the AWS CLI**
 
@@ -776,7 +764,7 @@ Only the `audit/` prefix is replicated to the security bucket.
 
 **Via the OVHcloud Control Panel**
 
-From the `My containers`{.action} tab, click the name of your primary logs bucket and select the `Replication`{.action} tab. Click `Add a replication rule`{.action}. Set the prefix filter to `audit/`, set the destination to `logs-security-<region2>`, set the destination storage class to **Infrequent Access**, disable **Delete marker replication**, and click `Save`{.action}.
+From the `My containers`{.action} tab, click the name of your primary logs bucket and select the `Replication`{.action} tab. Click `Add a replication rule`{.action}. Set the prefix filter to `audit/`, set the destination to `logs-security-<region2>`, set the destination storage class to **Infrequent Access**, disable **Replicating delete markers**, and click `Create`{.action}.
 
 **Via the AWS CLI**
 
@@ -812,7 +800,7 @@ Apply separate expiration and transition rules per log type using prefix filters
 
 **Via the OVHcloud Control Panel**
 
-From the `My containers`{.action} tab, click the name of your primary logs bucket and select the `Lifecycle rules`{.action} tab. Use `Add a rule`{.action} to create three rules:
+From the `My containers`{.action} tab, click the name of your primary logs bucket and select the `Lifecycle`{.action} tab. Use `Create a rule`{.action} to create three rules:
 
 - **Rule 1** - prefix `access/`: expiration at **30 days**
 - **Rule 2** - prefix `errors/`: transition to **Infrequent Access** at day 30, expiration at **90 days**
@@ -867,7 +855,7 @@ aws s3api put-bucket-lifecycle-configuration \
 
 **Via the OVHcloud Control Panel**
 
-From the `My containers`{.action} tab, click the name of your security bucket and select the `Lifecycle rules`{.action} tab. Click `Add a rule`{.action}. Leave the prefix empty. For **3-AZ regions**, add transitions: **Infrequent Access** at day 90, **Active Archive** at day 365, and **Cold Archive** at day 730. For **1-AZ regions**, add only the **Infrequent Access** transition at day 90. Set expiration to **2555 days**. Click `Save`{.action}.
+From the `My containers`{.action} tab, click the name of your security bucket and select the `Lifecycle`{.action} tab. Click `Create a rule`{.action}. Leave the prefix empty. For **3-AZ regions**, add transitions: **Infrequent Access** at day 90, **Active Archive** at day 365, and **Cold Archive** at day 730. For **1-AZ regions**, add only the **Infrequent Access** transition at day 90. Set expiration to **2555 days**. Click `Create rule`{.action}.
 
 **Via the AWS CLI**
 
@@ -900,9 +888,7 @@ aws s3api put-bucket-lifecycle-configuration \
 ```
 
 > [!primary]
-> By structuring your log pipeline with typed prefixes (`access/`, `errors/`, `audit/`), you can apply precise lifecycle rules to each category independently. Adding a new log type only requires a new prefix and a new lifecycle rule - no pipeline refactoring is needed.
-
----
+> By structuring your log pipeline with typed prefixes (`access/`, `errors/`, `audit/`), you can apply precise lifecycle rules to each category independently. Adding a new log type only requires a new prefix and a new lifecycle rule — no pipeline refactoring is needed.
 
 ## Use case 7 - SaaS multi-tenant backup
 
@@ -929,7 +915,7 @@ Objects are stored under `tenants/<tenant-id>/` prefixes. Each tenant's objects 
 
 **Via the OVHcloud Control Panel**
 
-Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/) and go to `Public Cloud`{.action} > `Object Storage`{.action} > `My containers`{.action}. For each bucket, click its name, select the `Versioning`{.action} tab, toggle to **Enabled**, and click `Save`{.action}.
+Go to the [Public Cloud](/links/control-panel/publiccloud-projects) section of your OVHcloud Control Panel and select your project. Click `Object Storage`{.action} in the left-hand menu. For each bucket, click its name from the `My containers`{.action} tab, then in the `General information`{.action} tab, enable versioning and click `Confirm`{.action}.
 
 **Via the AWS CLI**
 
@@ -951,7 +937,7 @@ Objects must be tagged at upload time so that tag-based lifecycle rules can iden
 
 **Via the OVHcloud Control Panel**
 
-From the `My containers`{.action} tab, click the name of your tenants bucket. Select the `Objects`{.action} tab and click `+ Add objects`{.action}. Before confirming the upload, expand the **Tags** section. Add a tag with key `tenant-id` and value `tenant-abc123`, and a second tag with key `tenant-tier` and value `premium`. Select your file and click `Import`{.action}.
+From the `My containers`{.action} tab, click the name of your tenants bucket. Select the `Objects`{.action} tab and click `Add objects`{.action}. Before confirming the upload, expand the **Tags** section. Add a tag with key `tenant-id` and value `tenant-abc123`, and a second tag with key `tenant-tier` and value `premium`. Select your file and click `Import`{.action}.
 
 **Via the AWS CLI**
 
@@ -968,7 +954,7 @@ aws s3api put-object \
 
 **Via the OVHcloud Control Panel**
 
-From the `My containers`{.action} tab, click the name of your tenants bucket and select the `Replication`{.action} tab. Click `Add a replication rule`{.action}. Set the prefix filter to `tenants/`, set the destination to `saas-backup-<region2>`, set the destination storage class to **Infrequent Access**, disable **Delete marker replication**, and click `Save`{.action}.
+From the `My containers`{.action} tab, click the name of your tenants bucket and select the `Replication`{.action} tab. Click `Add a replication rule`{.action}. Set the prefix filter to `tenants/`, set the destination to `saas-backup-<region2>`, set the destination storage class to **Infrequent Access**, disable **Replicating delete markers**, and click `Create`{.action}.
 
 **Via the AWS CLI**
 
@@ -1001,7 +987,7 @@ aws s3api put-bucket-replication \
 ### Step 4 - Apply tag-based lifecycle policies for differentiated retention
 
 > [!primary]
-> Tag-based lifecycle filters are currently configurable via the AWS CLI. For tag-based rules in the OVHcloud Control Panel, check the `Lifecycle rules`{.action} tab of your bucket - support for tag filters may have been added since this guide was published.
+> Tag-based lifecycle filters are currently configurable via the AWS CLI. For tag-based rules in the OVHcloud Control Panel, check the `Lifecycle`{.action} tab of your bucket — support for tag filters may have been added since this guide was published.
 
 **Via the AWS CLI**
 
@@ -1051,13 +1037,11 @@ aws s3api put-bucket-lifecycle-configuration \
 > [!warning]
 > Tag-based lifecycle rules require that each object is tagged correctly at upload time. Consider enforcing this at the application layer to ensure consistency across all tenant uploads. If a tenant's tier changes, re-tagging existing objects will cause the appropriate lifecycle rule to apply going forward.
 
----
-
 ## Summary
 
-The table below provides a quick reference for the key configuration choices across all seven use cases:
+The table below provides a quick reference for the key configuration choices across all 7 use cases:
 
-| Use case | Replication scope | Delete marker replication | Primary lifecycle | Secondary lifecycle |
+| Use case | Replication scope | Replicating delete markers | Primary lifecycle | Secondary lifecycle |
 |----------|------------------|--------------------------|-------------------|---------------------|
 | Regulatory archiving | All objects | Enabled | Tiering (30 → 90 → 365 days) | Expiration at 7 years |
 | Disaster recovery | All objects | Disabled | Expiration at 60 days | Expiration at 1 year |
@@ -1072,14 +1056,12 @@ The table below provides a quick reference for the key configuration choices acr
 
 ## Go further
 
-- [Object Storage - Managing object lifecycle](/pages/storage_and_backup/object_storage/s3_lifecycle/guide.en-gb)
-- [Object Storage - Mastering asynchronous replication across your buckets](/pages/storage_and_backup/object_storage/s3_replication/guide.en-gb)
-- [Object Storage - Choosing the right storage class for your needs](/pages/storage_and_backup/object_storage/s3_storage_class/guide.en-gb)
-- [Object Storage - Getting started with Object Storage](/pages/storage_and_backup/object_storage/s3_getting_started_with_object_storage/guide.en-gb)
-- [Object Storage - Endpoints and geoavailability](/pages/storage_and_backup/object_storage/s3_location/guide.en-gb)
+- [Object Storage - Managing object lifecycle](/pages/storage_and_backup/object_storage/s3_bucket_lifecycle)
+- [Object Storage - Mastering asynchronous replication across your buckets](/pages/storage_and_backup/object_storage/s3_asynchronous_replication)
+- [Object Storage - Choosing the right storage class for your needs](/pages/storage_and_backup/object_storage/s3_choosing_the_right_storage_class_for_your_needs)
+- [Object Storage - Getting started with Object Storage](/pages/storage_and_backup/object_storage/s3_getting_started_with_object_storage)
+- [Object Storage - Endpoints and geoavailability](/pages/storage_and_backup/object_storage/s3_location)
 
-Join our [community of users](https://community.ovh.com/en/).
+Join our [community of users](/links/community).
 
----
-
-*1: S3 is a trademark of Amazon Technologies, Inc. OVHcloud's service is not sponsored by, endorsed by, or otherwise affiliated with Amazon Technologies, Inc.*
+<sup>1</sup>: S3 is a trademark of Amazon Technologies, Inc. OVHcloud's service is not sponsored by, endorsed by, or otherwise affiliated with Amazon Technologies, Inc.
