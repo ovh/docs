@@ -1,12 +1,12 @@
 ---
 title: "Object Storage - Conditional Writes"
-excerpt: "Learn how to use If-Match and If-None-Match conditional headers to prevent overwrites, avoid race conditions, and control reads on your OVHcloud Object Storage buckets"
+excerpt: "Learn how to use If-Match and If-None-Match conditional headers to prevent overwrites and avoid race conditions on your OVHcloud Object Storage buckets"
 updated: 2026-04-29
 ---
 
 ## Objective
 
-**This guide explains how to use the `If-Match` and `If-None-Match` HTTP conditional headers on `PutObject`, `DeleteObject`, `GetObject`, `HeadObject`, and `CompleteMultipartUpload` requests on your OVHcloud Object Storage buckets.**
+**This guide explains how to use the `If-Match` and `If-None-Match` HTTP conditional headers on `PutObject`, `DeleteObject`, and `CompleteMultipartUpload` requests on your OVHcloud Object Storage buckets.**
 
 ## Requirements
 
@@ -28,7 +28,7 @@ Conditional writes solve this problem **at the storage layer**, without requirin
 - **Distributed locking primitive:** Implement a lightweight, storage-native lock using `If-None-Match: *` on `PutObject` — only the first writer succeeds; all others receive `412 Precondition Failed`.
 - **Atomic compare-and-swap:** Read an object's ETag, modify it, then write back with `If-Match: <original_etag>`. The write is rejected if the object was modified in between, giving you a safe optimistic concurrency pattern.
 - **No extra infrastructure:** Coordination happens inside the Object Storage service itself — no additional databases, queues, or lock managers required.
-- **Any S3-compatible client:** The conditional headers are part of the HTTP standard ([RFC 7232](https://datatracker.ietf.org/doc/rfc7232/)) and the S3 API — they work with AWS CLI, any S3 SDK, and raw HTTP calls.
+- **Any S3-compatible client:** The conditional headers are part of the HTTP standard ([RFC 9110](https://datatracker.ietf.org/doc/rfc9110/)) and the S3 API — they work with AWS CLI, any S3 SDK, and raw HTTP calls.
 
 ---
 
@@ -36,7 +36,7 @@ Conditional writes solve this problem **at the storage layer**, without requirin
 
 Conditional requests allow you to attach a precondition to an S3 API call based on the current state of the target object. OVHcloud Object Storage evaluates the condition **atomically** before executing the operation. If the condition is not met, the request is rejected without modifying any data.
 
-Two HTTP headers are supported, based on [RFC 7232](https://datatracker.ietf.org/doc/rfc7232/):
+Two HTTP headers are supported, based on [RFC 9110](https://datatracker.ietf.org/doc/rfc9110/):
 
 | Header | Accepted value | Meaning |
 |--------|---------------|---------|
@@ -49,8 +49,6 @@ Supported operations:
 |-----------|-----------|----------------|
 | `PutObject` | ✅ | ✅ |
 | `DeleteObject` | ✅ | ❌ |
-| `GetObject` | ✅ | ✅ |
-| `HeadObject` | ✅ | ✅ |
 | `CompleteMultipartUpload` | ✅ | ✅ |
 
 > [!primary]
@@ -70,7 +68,8 @@ Supported operations:
 | HTTP code | Meaning |
 |-----------|---------|
 | `200 OK` / `204 No Content` | Condition was satisfied — operation executed |
-| `412 Precondition Failed` | Condition was not satisfied — operation rejected, object unchanged |
+| `404 Not Found` | `If-Match` condition: the target object does not exist (no current version, or current version is a delete marker) |
+| `412 Precondition Failed` | `If-Match` condition: the object exists but its ETag does not match; or `If-None-Match: *` and the object already exists |
 | `409 ConditionalRequestConflict` | A concurrent operation conflicted — retry required |
 
 #### Versioning and delete markers
@@ -80,7 +79,7 @@ All conditions are evaluated against the **current version** of the object, rega
 > [!primary]
 >
 > A **delete marker** in a versioned bucket is **not** considered an existing object:
-> - `If-Match` (with an ETag or `*`) → `412 Precondition Failed` when the current version is a delete marker.
+> - `If-Match` (with an ETag or `*`) → `404 Not Found` when the current version is a delete marker.
 > - `If-None-Match: *` → **succeeds** when the current version is a delete marker (treated as non-existent).
 >
 
@@ -173,8 +172,8 @@ Add a precondition to an object upload to prevent accidental overwrites or to im
 |---|---|---|---|
 | Non-versioned | Succeeds only if no object exists | Succeeds only if current ETag matches | Succeeds only if object exists |
 | Versioned — current version exists | `412 Precondition Failed` | Succeeds if ETag matches → creates new version | Succeeds → creates new version |
-| Versioned — current version is a delete marker | Succeeds → creates new version | `412 Precondition Failed` | `412 Precondition Failed` |
-| Versioned — no version at all | Succeeds → creates first version | `412 Precondition Failed` | `412 Precondition Failed` |
+| Versioned — current version is a delete marker | Succeeds → creates new version | `404 Not Found` | `404 Not Found` |
+| Versioned — no version at all | Succeeds → creates first version | `404 Not Found` | `404 Not Found` |
 
 ///
 
@@ -226,69 +225,9 @@ Delete an object only if the ETag condition is satisfied. Only `If-Match` is sup
 |---|---|---|
 | Non-versioned | Permanently deletes if ETag matches | Permanently deletes if object exists |
 | Versioned — current version exists | Creates delete marker if current version ETag matches | Creates delete marker if current version exists |
-| Versioned — current version is a delete marker | `412 Precondition Failed` | `412 Precondition Failed` |
+| Versioned — current version is a delete marker | `404 Not Found` | `404 Not Found` |
 
 ///
-
----
-
-### GetObject — conditional read
-
-Retrieve an object only if the ETag condition is met. This is typically used for cache validation.
-
-**Use cases:**
-
-- **Cache validation:** Store an object's ETag locally. On the next access, send `If-Match: <cached_etag>` — the download proceeds only if the object has not changed.
-- **Read-if-not-exists guard:** Use `If-None-Match: *` to read an object only if it does not yet exist (returns the object body if there is no current version).
-
-> [!tabs]
-> Via AWS CLI
->> ```sh
->> # Download only if the ETag matches the cached value
->> aws s3api get-object \
->>   --bucket <bucket_name> \
->>   --key <object_key> \
->>   --if-match <cached_etag> \
->>   <output_file>
->>
->> # Download only if the object exists (any ETag)
->> aws s3api get-object \
->>   --bucket <bucket_name> \
->>   --key <object_key> \
->>   --if-match "*" \
->>   <output_file>
->> ```
->>
-
-Conditions for `GetObject` and `HeadObject` are always evaluated against the **current version**. To target a specific version, add `--version-id <version_id>` — the condition is then evaluated against that version.
-
----
-
-### HeadObject — conditional metadata read
-
-Check object metadata and ETag without downloading the object body. Semantics are identical to `GetObject` but no response body is returned.
-
-**Use cases:**
-
-- **Lightweight existence check:** Confirm an object exists and retrieve its current ETag before performing a conditional write.
-- **Freshness check:** Confirm a cached ETag is still valid without incurring download costs.
-
-> [!tabs]
-> Via AWS CLI
->> ```sh
->> # Check object exists (any ETag) and retrieve metadata
->> aws s3api head-object \
->>   --bucket <bucket_name> \
->>   --key <object_key> \
->>   --if-match "*"
->>
->> # Check object metadata only if the ETag matches
->> aws s3api head-object \
->>   --bucket <bucket_name> \
->>   --key <object_key> \
->>   --if-match <cached_etag>
->> ```
->>
 
 ---
 
@@ -339,8 +278,8 @@ Attach a precondition to the final step of a multipart upload. The condition is 
 |---|---|---|---|
 | Non-versioned | Succeeds only if no object exists at finalization time | Succeeds only if current ETag matches at finalization time | Succeeds only if object exists at finalization time |
 | Versioned — current version exists | `412 Precondition Failed` | Succeeds if ETag matches → creates new version | Succeeds → creates new version |
-| Versioned — current version is a delete marker | Succeeds → creates new version | `412 Precondition Failed` | `412 Precondition Failed` |
-| Versioned — no version at all | Succeeds → creates first version | `412 Precondition Failed` | `412 Precondition Failed` |
+| Versioned — current version is a delete marker | Succeeds → creates new version | `404 Not Found` | `404 Not Found` |
+| Versioned — no version at all | Succeeds → creates first version | `404 Not Found` | `404 Not Found` |
 
 ///
 
@@ -351,7 +290,7 @@ Attach a precondition to the final step of a multipart upload. The condition is 
 - **Atomicity:** The condition check and the operation execute as a single atomic unit. No concurrent operation can alter the object between the check and the write.
 - **Single header per request:** You cannot combine `If-Match` and `If-None-Match` in the same request — this results in `400 Bad Request`.
 - **409 retry for PutObject / DeleteObject:** On `409 ConditionalRequestConflict`, re-fetch the object's current ETag with `HeadObject` and retry your request with the updated value.
-- **No IAM changes required:** No additional permissions are needed. The existing `s3:PutObject`, `s3:DeleteObject`, and `s3:GetObject` permissions are sufficient.
+- **No IAM changes required:** No additional permissions are needed. The existing `s3:PutObject` and `s3:DeleteObject` permissions are sufficient.
 - **Object Lock compatibility:** Conditional headers are evaluated independently from Object Lock (WORM) rules. Both constraints apply.
 
 ## Go further

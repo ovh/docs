@@ -1,12 +1,12 @@
 ---
 title: "Object Storage - Écritures conditionnelles"
-excerpt: "Apprenez à utiliser les en-têtes conditionnels If-Match et If-None-Match pour prévenir les écrasements, éviter les conditions de course et contrôler les lectures sur vos buckets OVHcloud Object Storage"
+excerpt: "Apprenez à utiliser les en-têtes conditionnels If-Match et If-None-Match pour prévenir les écrasements et éviter les conditions de course sur vos buckets OVHcloud Object Storage"
 updated: 2026-04-29
 ---
 
 ## Objectif
 
-**Ce guide explique comment utiliser les en-têtes HTTP conditionnels `If-Match` et `If-None-Match` sur les requêtes `PutObject`, `DeleteObject`, `GetObject`, `HeadObject` et `CompleteMultipartUpload` de vos buckets OVHcloud Object Storage.**
+**Ce guide explique comment utiliser les en-têtes HTTP conditionnels `If-Match` et `If-None-Match` sur les requêtes `PutObject`, `DeleteObject` et `CompleteMultipartUpload` de vos buckets OVHcloud Object Storage.**
 
 ## Prérequis
 
@@ -28,7 +28,7 @@ Les écritures conditionnelles résolvent ce problème **au niveau de la couche 
 - **Primitive de verrouillage distribué :** Implémentez un verrou léger natif au stockage avec `If-None-Match: *` sur `PutObject` — seul le premier écrivain réussit ; tous les autres reçoivent `412 Precondition Failed`.
 - **Comparer-et-échanger atomique :** Lisez l'ETag d'un objet, modifiez-le, puis réécrivez-le avec `If-Match: <etag_original>`. L'écriture est rejetée si l'objet a été modifié entre-temps — un modèle de concurrence optimiste sûr.
 - **Aucune infrastructure supplémentaire :** La coordination s'effectue directement au sein du service Object Storage — pas besoin de bases de données, files de messages ou gestionnaires de verrous supplémentaires.
-- **Tout client compatible S3 :** Les en-têtes conditionnels font partie du standard HTTP ([RFC 7232](https://datatracker.ietf.org/doc/rfc7232/)) et de l'API S3 — ils fonctionnent avec AWS CLI, n'importe quel SDK S3 et les appels HTTP directs.
+- **Tout client compatible S3 :** Les en-têtes conditionnels font partie du standard HTTP ([RFC 9110](https://datatracker.ietf.org/doc/rfc9110/)) et de l'API S3 — ils fonctionnent avec AWS CLI, n'importe quel SDK S3 et les appels HTTP directs.
 
 ---
 
@@ -36,7 +36,7 @@ Les écritures conditionnelles résolvent ce problème **au niveau de la couche 
 
 Les requêtes conditionnelles vous permettent d'associer une précondition à un appel API S3, basée sur l'état actuel de l'objet cible. L'Object Storage OVHcloud évalue la condition de manière **atomique** avant d'exécuter l'opération. Si la condition n'est pas satisfaite, la requête est rejetée sans modifier aucune donnée.
 
-Deux en-têtes HTTP sont supportés, conformément à la [RFC 7232](https://datatracker.ietf.org/doc/rfc7232/) :
+Deux en-têtes HTTP sont supportés, conformément à la [RFC 9110](https://datatracker.ietf.org/doc/rfc9110/) :
 
 | En-tête | Valeur acceptée | Signification |
 |---------|----------------|---------------|
@@ -49,8 +49,6 @@ Opérations supportées :
 |-----------|-----------|----------------|
 | `PutObject` | ✅ | ✅ |
 | `DeleteObject` | ✅ | ❌ |
-| `GetObject` | ✅ | ✅ |
-| `HeadObject` | ✅ | ✅ |
 | `CompleteMultipartUpload` | ✅ | ✅ |
 
 > [!primary]
@@ -70,7 +68,8 @@ Opérations supportées :
 | Code HTTP | Signification |
 |-----------|--------------|
 | `200 OK` / `204 No Content` | La condition est satisfaite — opération exécutée |
-| `412 Precondition Failed` | La condition n'est pas satisfaite — opération rejetée, objet inchangé |
+| `404 Not Found` | Condition `If-Match` : l'objet cible n'existe pas (aucune version courante, ou la version courante est un marqueur de suppression) |
+| `412 Precondition Failed` | Condition `If-Match` : l'objet existe mais son ETag ne correspond pas ; ou `If-None-Match: *` et l'objet existe déjà |
 | `409 ConditionalRequestConflict` | Une opération concurrente est en conflit — nouvelle tentative requise |
 
 #### Versioning et marqueurs de suppression
@@ -80,7 +79,7 @@ Toutes les conditions sont évaluées par rapport à la **version courante** de 
 > [!primary]
 >
 > Un **marqueur de suppression** (delete marker) dans un bucket versionné n'est **pas** considéré comme un objet existant :
-> - `If-Match` (avec un ETag ou `*`) → `412 Precondition Failed` lorsque la version courante est un marqueur de suppression.
+> - `If-Match` (avec un ETag ou `*`) → `404 Not Found` lorsque la version courante est un marqueur de suppression.
 > - `If-None-Match: *` → **réussit** lorsque la version courante est un marqueur de suppression (traité comme inexistant).
 >
 
@@ -173,8 +172,8 @@ Ajoutez une précondition à l'upload d'un objet pour éviter les écrasements a
 |---|---|---|---|
 | Non versionné | Réussit uniquement si aucun objet n'existe | Réussit uniquement si l'ETag courant correspond | Réussit uniquement si l'objet existe |
 | Versionné — version courante existante | `412 Precondition Failed` | Réussit si l'ETag correspond → crée une nouvelle version | Réussit → crée une nouvelle version |
-| Versionné — version courante est un marqueur de suppression | Réussit → crée une nouvelle version | `412 Precondition Failed` | `412 Precondition Failed` |
-| Versionné — aucune version | Réussit → crée la première version | `412 Precondition Failed` | `412 Precondition Failed` |
+| Versionné — version courante est un marqueur de suppression | Réussit → crée une nouvelle version | `404 Not Found` | `404 Not Found` |
+| Versionné — aucune version | Réussit → crée la première version | `404 Not Found` | `404 Not Found` |
 
 ///
 
@@ -226,69 +225,9 @@ Supprimez un objet uniquement si la condition ETag est satisfaite. Seul `If-Matc
 |---|---|---|
 | Non versionné | Suppression définitive si l'ETag correspond | Suppression définitive si l'objet existe |
 | Versionné — version courante existante | Crée un marqueur de suppression si l'ETag de la version courante correspond | Crée un marqueur de suppression si une version courante existe |
-| Versionné — version courante est un marqueur de suppression | `412 Precondition Failed` | `412 Precondition Failed` |
+| Versionné — version courante est un marqueur de suppression | `404 Not Found` | `404 Not Found` |
 
 ///
-
----
-
-### GetObject — lecture conditionnelle
-
-Récupérez un objet uniquement si la condition ETag est satisfaite. Utilisé principalement pour la validation de cache.
-
-**Cas d'usage :**
-
-- **Validation de cache :** Stockez l'ETag d'un objet téléchargé. Au prochain accès, envoyez `If-Match: <etag_en_cache>` — le téléchargement s'effectue uniquement si l'objet n'a pas changé.
-- **Garde lecture-si-inexistant :** Utilisez `If-None-Match: *` pour lire un objet uniquement s'il n'existe pas encore.
-
-> [!tabs]
-> Via AWS CLI
->> ```sh
->> # Télécharger uniquement si l'ETag correspond à la valeur en cache
->> aws s3api get-object \
->>   --bucket <nom_du_bucket> \
->>   --key <clé_de_l_objet> \
->>   --if-match <etag_en_cache> \
->>   <fichier_de_sortie>
->>
->> # Télécharger uniquement si l'objet existe (n'importe quel ETag)
->> aws s3api get-object \
->>   --bucket <nom_du_bucket> \
->>   --key <clé_de_l_objet> \
->>   --if-match "*" \
->>   <fichier_de_sortie>
->> ```
->>
-
-Les conditions pour `GetObject` et `HeadObject` sont toujours évaluées par rapport à la **version courante**. Pour cibler une version spécifique, ajoutez `--version-id <id_de_version>` — la condition est alors évaluée par rapport à cette version.
-
----
-
-### HeadObject — lecture conditionnelle des métadonnées
-
-Vérifiez les métadonnées d'un objet et son ETag sans télécharger le contenu. La sémantique est identique à `GetObject`, mais aucun contenu n'est retourné.
-
-**Cas d'usage :**
-
-- **Vérification légère d'existence :** Confirmez qu'un objet existe et récupérez son ETag courant avant d'effectuer une écriture conditionnelle.
-- **Vérification de fraîcheur :** Confirmez qu'un ETag en cache est toujours valide sans engager de coût de téléchargement.
-
-> [!tabs]
-> Via AWS CLI
->> ```sh
->> # Vérifier l'existence de l'objet (n'importe quel ETag) et récupérer ses métadonnées
->> aws s3api head-object \
->>   --bucket <nom_du_bucket> \
->>   --key <clé_de_l_objet> \
->>   --if-match "*"
->>
->> # Vérifier les métadonnées uniquement si l'ETag correspond
->> aws s3api head-object \
->>   --bucket <nom_du_bucket> \
->>   --key <clé_de_l_objet> \
->>   --if-match <etag_en_cache>
->> ```
->>
 
 ---
 
@@ -339,8 +278,8 @@ Associez une précondition à l'étape finale d'un upload multipart. La conditio
 |---|---|---|---|
 | Non versionné | Réussit uniquement si aucun objet n'existe au moment de la finalisation | Réussit uniquement si l'ETag courant correspond au moment de la finalisation | Réussit uniquement si l'objet existe au moment de la finalisation |
 | Versionné — version courante existante | `412 Precondition Failed` | Réussit si l'ETag correspond → crée une nouvelle version | Réussit → crée une nouvelle version |
-| Versionné — version courante est un marqueur de suppression | Réussit → crée une nouvelle version | `412 Precondition Failed` | `412 Precondition Failed` |
-| Versionné — aucune version | Réussit → crée la première version | `412 Precondition Failed` | `412 Precondition Failed` |
+| Versionné — version courante est un marqueur de suppression | Réussit → crée une nouvelle version | `404 Not Found` | `404 Not Found` |
+| Versionné — aucune version | Réussit → crée la première version | `404 Not Found` | `404 Not Found` |
 
 ///
 
@@ -351,7 +290,7 @@ Associez une précondition à l'étape finale d'un upload multipart. La conditio
 - **Atomicité :** La vérification de la condition et l'opération s'exécutent en une seule unité atomique. Aucune opération concurrente ne peut modifier l'objet entre la vérification et l'écriture.
 - **Un seul en-tête par requête :** Vous ne pouvez pas combiner `If-Match` et `If-None-Match` dans la même requête — cela retourne une erreur `400 Bad Request`.
 - **Nouvelle tentative sur 409 pour PutObject / DeleteObject :** En cas de `409 ConditionalRequestConflict`, récupérez l'ETag courant de l'objet avec `HeadObject` et relancez votre requête avec la valeur mise à jour.
-- **Aucune modification IAM requise :** Aucune permission supplémentaire n'est nécessaire. Les permissions existantes `s3:PutObject`, `s3:DeleteObject` et `s3:GetObject` sont suffisantes.
+- **Aucune modification IAM requise :** Aucune permission supplémentaire n'est nécessaire. Les permissions existantes `s3:PutObject` et `s3:DeleteObject` sont suffisantes.
 - **Compatibilité avec Object Lock :** Les en-têtes conditionnels sont évalués indépendamment des règles Object Lock (WORM). Les deux contraintes s'appliquent.
 
 ## Aller plus loin
