@@ -1,5 +1,5 @@
 ---
-title: "How to use Terraform"
+title: "OPCP - How to use Terraform"
 excerpt: "Find out how to generate an Application Credential from Horizon and automate the deployment of your OPCP resources with Terraform"
 updated: 2026-04-30
 ---
@@ -25,17 +25,17 @@ Since the **OPCP** offer is based on **OpenStack**, you can use the **Terraform 
 
 ## Table of Contents
 
-- [1. Creating an Application Credential from Horizon](#creating-an-application-credential-from-horizon)
-- [2. Preparing the Terraform environment](#preparing-the-terraform-environment)
-- [3. Creating a server](#creating-a-server)
-- [4. Additional node-level configurations (RAID, LACP)](#additional-node-level-configurations-raid-lacp)
-- [5. Removing the infrastructure](#removing-the-infrastructure)
+- [1. Creating an Application Credential from Horizon](#appcred)
+- [2. Preparing the Terraform environment](#tfenv)
+- [3. Creating a server](#server)
+- [4. Additional node-level configurations (RAID, LACP)](#nodeconfig)
+- [5. Removing the infrastructure](#destroy)
 - [6. Troubleshooting](#troubleshooting)
 - [7. References](#references)
 
 ## Instructions
 
-### 1. Creating an Application Credential from Horizon
+### 1. Creating an Application Credential from Horizon <a name="appcred"></a>
 
 To allow Terraform to communicate with your OPCP infrastructure, you need to generate an **Application Credential** pair (`id` / `secret`) from the Horizon interface. This mechanism avoids using your Keycloak credentials directly and provides dedicated authentication for your automation workflows, with a permissions scope limited to the current project.
 
@@ -78,7 +78,7 @@ Click on `Create Application Credential`{.action}.
 > [!primary]
 > For the rest of this tutorial, **download the `openrc` file**: it will be used in the next step to authenticate Terraform against your OPCP infrastructure.
 
-### 2. Preparing the Terraform environment
+### 2. Preparing the Terraform environment <a name="tfenv"></a>
 
 #### Creating the working directory
 
@@ -129,7 +129,7 @@ Download the OpenStack provider plugins:
 terraform init
 ```
 
-### 3. Creating a server
+### 3. Creating a server <a name="server"></a>
 
 In a `main.tf` file, declare the resources required to create an instance attached to an existing private network:
 
@@ -227,7 +227,7 @@ terraform apply
 
 Confirm with `yes` when Terraform asks you to. Once the creation is complete, the instance is visible in the Horizon interface, in the `Compute`{.action} > `Instances`{.action} section.
 
-### 4. Additional node-level configurations (RAID, LACP)
+### 4. Additional node-level configurations (RAID, LACP) <a name="nodeconfig"></a>
 
 Some configurations must be applied **on the baremetal node** before deploying the instance and are not covered by the Terraform OpenStack provider. They require **admin** Ironic rights (or nodes transferred to your project) and must be performed via the OpenStack CLI.
 
@@ -237,7 +237,7 @@ Some configurations must be applied **on the baremetal node** before deploying t
 > [!primary]
 > **LACP / bonding**: to aggregate several network interfaces of a node, refer to the guide [How to set up LACP on a node](/pages/hosted_private_cloud/opcp/how-to-setup-lacp-on-node). Baremetal port and bonding configuration cannot be managed declaratively by the Terraform OpenStack provider. This operation must be performed **before** the `terraform apply` that deploys the instance.
 
-### 5. Removing the infrastructure
+### 5. Removing the infrastructure <a name="destroy"></a>
 
 To delete all resources created via Terraform:
 
@@ -248,7 +248,7 @@ terraform destroy
 > [!warning]
 > `terraform destroy` does not reset the RAID or LACP configurations applied to the node. To remove them, follow the dedicated section of the corresponding guide using the OpenStack CLI.
 
-### 6. Troubleshooting
+### 6. Troubleshooting <a name="troubleshooting"></a>
 
 | Issue | Possible cause | Solution |
 |-----------|----------------|-----------|
@@ -257,7 +257,7 @@ terraform destroy
 | `No suitable endpoint could be found` | Wrong `auth_url` URL or non-existent region | Check the Keystone URL and the region in `Project`{.action} > `API Access`{.action}. |
 | `Network not found` | Private network missing in the project | Create a private network beforehand from Horizon (`Network`{.action} > `Networks`{.action}). |
 
-### 7. References
+### 7. References <a name="references"></a>
 
 - [Official Terraform documentation](https://developer.hashicorp.com/terraform)
 - [Official OpenTofu documentation](https://opentofu.org/docs/)
