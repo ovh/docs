@@ -18,17 +18,17 @@ updated: 2026-04-29
 
 ### Why use conditional writes?
 
-Object Storage is inherently concurrent — multiple application instances, microservices, or background jobs may read and write the same object at the same time. Without coordination, concurrent writes can silently overwrite each other, causing data loss that is difficult to detect and reproduce.
+Object Storage is inherently concurrent - multiple application instances, microservices, or background jobs may read and write the same object at the same time. Without coordination, concurrent writes can silently overwrite each other, causing data loss that is difficult to detect and reproduce.
 
 Conditional writes solve this problem **at the storage layer**, without requiring an external coordination service such as a database or a distributed lock manager. By attaching a precondition to an S3 API call, you ensure the operation only proceeds if the object is in the expected state at the moment the request is evaluated.
 
 **Key benefits:**
 
 - **Data integrity in concurrent environments:** Prevent a write from silently overwriting changes made by another process between your read and your write (a classic *check-then-act* race condition).
-- **Distributed locking primitive:** Implement a lightweight, storage-native lock using `If-None-Match: *` on `PutObject` — only the first writer succeeds; all others receive `412 Precondition Failed`.
+- **Distributed locking primitive:** Implement a lightweight, storage-native lock using `If-None-Match: *` on `PutObject` - only the first writer succeeds; all others receive `412 Precondition Failed`.
 - **Atomic compare-and-swap:** Read an object's ETag, modify it, then write back with `If-Match: <original_etag>`. The write is rejected if the object was modified in between, giving you a safe optimistic concurrency pattern.
-- **No extra infrastructure:** Coordination happens inside the Object Storage service itself — no additional databases, queues, or lock managers required.
-- **Any S3-compatible client:** The conditional headers are part of the HTTP standard ([RFC 9110](https://datatracker.ietf.org/doc/rfc9110/)) and the S3 API — they work with AWS CLI, any S3 SDK, and raw HTTP calls.
+- **No extra infrastructure:** Coordination happens inside the Object Storage service itself - no additional databases, queues, or lock managers required.
+- **Any S3-compatible client:** The conditional headers are part of the HTTP standard ([RFC 9110](https://datatracker.ietf.org/doc/rfc9110/)) and the S3 API - they work with AWS CLI, any S3 SDK, and raw HTTP calls.
 
 ---
 
@@ -53,7 +53,7 @@ Supported operations:
 
 > [!primary]
 >
-> **ETag format:** When using `If-Match`, provide the ETag as a **bare string without surrounding quotes** — for example `d41d8cd98f00b204e9800998ecf8427e`, not `"d41d8cd98f00b204e9800998ecf8427e"`.
+> **ETag format:** When using `If-Match`, provide the ETag as a **bare string without surrounding quotes** - for example `d41d8cd98f00b204e9800998ecf8427e`, not `"d41d8cd98f00b204e9800998ecf8427e"`.
 >
 > To retrieve an object's current ETag, use `aws s3api head-object --bucket <bucket_name> --key <object_key>` and read the `ETag` field from the response, stripping the surrounding quotes.
 >
@@ -67,10 +67,10 @@ Supported operations:
 
 | HTTP code | Meaning |
 |-----------|---------|
-| `200 OK` / `204 No Content` | Condition was satisfied — operation executed |
+| `200 OK` / `204 No Content` | Condition was satisfied - operation executed |
 | `404 Not Found` | `If-Match` condition: the target object does not exist (no current version, or current version is a delete marker) |
 | `412 Precondition Failed` | `If-Match` condition: the object exists but its ETag does not match; or `If-None-Match: *` and the object already exists |
-| `409 ConditionalRequestConflict` | A concurrent operation conflicted — retry required |
+| `409 ConditionalRequestConflict` | A concurrent operation conflicted - retry required |
 
 #### Versioning and delete markers
 
@@ -90,13 +90,13 @@ All conditions are evaluated against the **current version** of the object, rega
 
 ---
 
-### PutObject — conditional write
+### PutObject - conditional write
 
 Add a precondition to an object upload to prevent accidental overwrites or to implement first-write-wins logic.
 
 **Use cases:**
 
-- **First-write-wins / distributed lock:** Multiple processes race to create the same object. Only the first call with `If-None-Match: *` succeeds — all others receive `412`.
+- **First-write-wins / distributed lock:** Multiple processes race to create the same object. Only the first call with `If-None-Match: *` succeeds - all others receive `412`.
 - **Safe overwrite:** Read an object, modify it, write it back with `If-Match: <original_etag>`. If another client modified the object in between, the write is rejected.
 - **Idempotent initialisation:** Create a configuration object without risk of overwriting an existing version.
 
@@ -171,17 +171,17 @@ Add a precondition to an object upload to prevent accidental overwrites or to im
 | Bucket state | `If-None-Match: *` | `If-Match: <etag>` | `If-Match: *` |
 |---|---|---|---|
 | Non-versioned | Succeeds only if no object exists | Succeeds only if current ETag matches | Succeeds only if object exists |
-| Versioned — current version exists | `412 Precondition Failed` | Succeeds if ETag matches → creates new version | Succeeds → creates new version |
-| Versioned — current version is a delete marker | Succeeds → creates new version | `404 Not Found` | `404 Not Found` |
-| Versioned — no version at all | Succeeds → creates first version | `404 Not Found` | `404 Not Found` |
+| Versioned - current version exists | `412 Precondition Failed` | Succeeds if ETag matches → creates new version | Succeeds → creates new version |
+| Versioned - current version is a delete marker | Succeeds → creates new version | `404 Not Found` | `404 Not Found` |
+| Versioned - no version at all | Succeeds → creates first version | `404 Not Found` | `404 Not Found` |
 
 ///
 
 ---
 
-### DeleteObject — conditional delete
+### DeleteObject - conditional delete
 
-Delete an object only if the ETag condition is satisfied. Only `If-Match` is supported for `DeleteObject` — `If-None-Match` is not applicable.
+Delete an object only if the ETag condition is satisfied. Only `If-Match` is supported for `DeleteObject` - `If-None-Match` is not applicable.
 
 **Use cases:**
 
@@ -216,7 +216,7 @@ Delete an object only if the ETag condition is satisfied. Only `If-Match` is sup
 
 > [!primary]
 >
-> In a **versioned bucket**, a successful `DeleteObject` creates a delete marker as the new current version — it does not permanently delete the object. To permanently delete a specific version, include `--version-id` in the request.
+> In a **versioned bucket**, a successful `DeleteObject` creates a delete marker as the new current version - it does not permanently delete the object. To permanently delete a specific version, include `--version-id` in the request.
 >
 
 /// details | Versioning behaviour for DeleteObject
@@ -224,14 +224,14 @@ Delete an object only if the ETag condition is satisfied. Only `If-Match` is sup
 | Bucket state | `If-Match: <etag>` | `If-Match: *` |
 |---|---|---|
 | Non-versioned | Permanently deletes if ETag matches | Permanently deletes if object exists |
-| Versioned — current version exists | Creates delete marker if current version ETag matches | Creates delete marker if current version exists |
-| Versioned — current version is a delete marker | `404 Not Found` | `404 Not Found` |
+| Versioned - current version exists | Creates delete marker if current version ETag matches | Creates delete marker if current version exists |
+| Versioned - current version is a delete marker | `404 Not Found` | `404 Not Found` |
 
 ///
 
 ---
 
-### CompleteMultipartUpload — conditional finalization
+### CompleteMultipartUpload - conditional finalization
 
 Attach a precondition to the final step of a multipart upload. The condition is evaluated **at the time `CompleteMultipartUpload` is called**, not when `CreateMultipartUpload` was initiated.
 
@@ -277,9 +277,9 @@ Attach a precondition to the final step of a multipart upload. The condition is 
 | Bucket state | `If-None-Match: *` | `If-Match: <etag>` | `If-Match: *` |
 |---|---|---|---|
 | Non-versioned | Succeeds only if no object exists at finalization time | Succeeds only if current ETag matches at finalization time | Succeeds only if object exists at finalization time |
-| Versioned — current version exists | `412 Precondition Failed` | Succeeds if ETag matches → creates new version | Succeeds → creates new version |
-| Versioned — current version is a delete marker | Succeeds → creates new version | `404 Not Found` | `404 Not Found` |
-| Versioned — no version at all | Succeeds → creates first version | `404 Not Found` | `404 Not Found` |
+| Versioned - current version exists | `412 Precondition Failed` | Succeeds if ETag matches → creates new version | Succeeds → creates new version |
+| Versioned - current version is a delete marker | Succeeds → creates new version | `404 Not Found` | `404 Not Found` |
+| Versioned - no version at all | Succeeds → creates first version | `404 Not Found` | `404 Not Found` |
 
 ///
 
@@ -288,7 +288,7 @@ Attach a precondition to the final step of a multipart upload. The condition is 
 ### Important considerations
 
 - **Atomicity:** The condition check and the operation execute as a single atomic unit. No concurrent operation can alter the object between the check and the write.
-- **Single header per request:** You cannot combine `If-Match` and `If-None-Match` in the same request — this results in `400 Bad Request`.
+- **Single header per request:** You cannot combine `If-Match` and `If-None-Match` in the same request - this results in `400 Bad Request`.
 - **409 retry for PutObject / DeleteObject:** On `409 ConditionalRequestConflict`, re-fetch the object's current ETag with `HeadObject` and retry your request with the updated value.
 - **No IAM changes required:** No additional permissions are needed. The existing `s3:PutObject` and `s3:DeleteObject` permissions are sufficient.
 - **Object Lock compatibility:** Conditional headers are evaluated independently from Object Lock (WORM) rules. Both constraints apply.
