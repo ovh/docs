@@ -1,5 +1,5 @@
 ---
-title: "Comment utiliser Terraform avec OPCP"
+title: "Comment utiliser Terraform"
 excerpt: "Découvrez comment générer une Application Credential depuis Horizon et automatiser le déploiement de vos ressources OPCP avec Terraform"
 updated: 2026-04-29
 ---
@@ -30,7 +30,7 @@ L'offre **OPCP** reposant sur **OpenStack**, vous pouvez utiliser le **provider 
 Pour permettre à Terraform de communiquer avec votre infrastructure OPCP, il est nécessaire de générer un couple **Application Credential** (`id` / `secret`) depuis l'interface Horizon. Ce mécanisme évite l'utilisation directe de vos identifiants Keycloak et fournit une authentification dédiée à vos automatisations, avec un périmètre de droits limité au projet courant.
 
 > [!warning]
-> Une `Application Credential` est automatiquement supprimée lorsque l'utilisateur qui l'a créée est révoqué. Pour éviter toute perte d'accès dans un workflow d'automatisation, ne générez pas d'Application Credential depuis un compte utilisateur nominatif ou facilement révocable ; privilégiez un compte technique dédié.
+> Une `Application Credential` est automatiquement supprimée lorsque l'utilisateur qui l'a créée est révoqué. Pour éviter toute perte d'accès dans un workflow d'automatisation, ne générez pas d'Application Credential depuis un compte utilisateur nominatif ou facilement révocable ; privilégiez un compte dédié.
 
 #### Connexion à Horizon
 
