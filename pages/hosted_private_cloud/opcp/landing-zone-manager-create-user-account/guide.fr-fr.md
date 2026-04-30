@@ -43,9 +43,9 @@ Une fois tous les champs remplis, confirmez la création du compte utilisateur.
 > L'adresse e-mail fournie est utilisée comme identifiant de connexion du nouveau compte utilisateur. Assurez-vous qu'elle est correcte avant de valider, car les utilisateurs s'authentifieront avec cette valeur.
 >
 
-### Étape 3 : Communiquer les identifiants de première connexion
+### Étape 3 : Première connexion au Landing Zone Manager
 
-Une fois le compte utilisateur créé avec succès, l'utilisateur peut se connecter pour la première fois en utilisant :
+Une fois le compte utilisateur créé avec succès, communiquez l'URL du Landing Zone Manager à l'utilisateur ainsi que ses identifiants de première connexion :
 
 - **Login** : l'adresse e-mail saisie lors de la création
 - **Mot de passe** : le mot de passe par défaut de première connexion défini lors du déploiement d'OPCP et du CloudStore
@@ -55,11 +55,7 @@ Une fois le compte utilisateur créé avec succès, l'utilisateur peut se connec
 > Le mot de passe par défaut est partagé entre toutes les premières connexions et est défini au moment du déploiement. Pour des raisons de sécurité, il sera demandé aux utilisateurs de le changer immédiatement après leur première connexion.
 >
 
-### Étape 4 : Première connexion au Landing Zone Manager
-
-Une fois le compte utilisateur provisionné, l'utilisateur peut se connecter au Landing Zone Manager en utilisant l'URL communiquée précédemment.
-
-## Correspondance des comptes dans Keycloak
+### Correspondance des comptes dans Keycloak
 
 > [!primary]
 >

@@ -43,9 +43,9 @@ Once all fields are filled in, confirm the user account creation.
 > The email address provided is used as the login identifier for the new user account. Make sure it is correct before validating, as users will authenticate with this value.
 >
 
-### Step 3: Share the first-login credentials
+### Step 3: First connection to the Landing Zone Manager
 
-After the user account is successfully created, the user can log in for the first time using:
+Once the user account is successfully created, share the Landing Zone Manager URL with the user, along with their first-login credentials:
 
 - **Login**: the email address entered during creation
 - **Password**: the first-login default password defined during OPCP and CloudStore deployment
@@ -55,11 +55,7 @@ After the user account is successfully created, the user can log in for the firs
 > The default password is shared across first logins and is defined at deployment time. For security reasons, users have to change this password immediately after their first successful login.
 >
 
-### Step 4: First connection to the Landing Zone Manager
-
-Once the user account has been provisioned, the user can connect to the Landing Zone Manager using the URL previously communicated.
-
-## How user accounts are mapped in Keycloak
+### How user accounts are mapped in Keycloak
 
 > [!primary]
 >
