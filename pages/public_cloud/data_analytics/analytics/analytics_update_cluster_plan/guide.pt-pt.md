@@ -14,14 +14,22 @@ Learn how to upgrade the service plan of your cluster according to your needs.
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](/links/manager) or to the [OVHcloud API](/links/api)
+- Access to the [OVHcloud Control Panel](/links/control-panel/publiccloud-projects) or to the [OVHcloud API](/links/api)
 - A [Public Cloud project](/links/public-cloud/public-cloud) in your OVHcloud account
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+### Acesso à Área de Cliente OVHcloud
+- **Ligação direta:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Caminho de navegação:** `Public Cloud`{.action} > Selecione o seu projeto
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## Instructions
 
 ### Using the OVHcloud Control Panel
 
-To upgrade the service plan of your cluster, log in to the [OVHcloud Control Panel](/links/manager) and open your Public Cloud project. Click `Data Analysis`{.action} or `Data Streaming`{.action} in the left navigation bar, then select your engine instance.
+Click `Data Analysis`{.action} or `Data Streaming`{.action} in the left navigation bar, then select your engine instance.
 
 ![Cluster overview](images/cluster_overview.png){.thumbnail}
 

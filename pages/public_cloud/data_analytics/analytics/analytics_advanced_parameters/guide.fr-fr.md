@@ -22,7 +22,18 @@ Analytics engines are managed services, which means that they are not fully conf
 
 - A [Public Cloud project](/links/public-cloud/public-cloud) in your OVHcloud account
 - An analytics service running on your OVHcloud Analytics ([this guide](/pages/public_cloud/data_analytics/analytics/analytics_getting_started) can help you to meet this requirement)
-- Access to your [OVHcloud Control Panel](/links/manager) or to the [OVHcloud API](/links/api)
+- Access to your [OVHcloud Control Panel](/links/control-panel/publiccloud-projects) or to the [OVHcloud API](/links/api)
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Projets Public Cloud](/links/control-panel/publiccloud-projects)
+- **Pour accéder à vos services :** `Public Cloud`{.action} > Sélectionnez votre projet
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## Instructions
 
@@ -45,7 +56,7 @@ Analytics engines are managed services, which means that they are not fully conf
 
 ### Using the OVHcloud Control Panel
 
-To change the advanced configuration, you first need to log in to your [OVHcloud Control Panel](/links/manager) and open your `Public Cloud`{.action} project. Click on `Data Streaming`{.action} or `Data Analysis`{.action} in the left-hand navigation bar, select your engine instance then the `Advanced configuration`{.action} tab.
+Click [this link](/links/control-panel/publiccloud-projects) to access the `Public Cloud`{.action} section, then click on `Data Streaming`{.action} or `Data Analysis`{.action} in the left-hand navigation bar, select your engine instance then the `Advanced configuration`{.action} tab.
 
 Select the key of the advanced setting you want to define, then set its value.
 
