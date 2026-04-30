@@ -598,6 +598,7 @@
             + [OPCP - How to use the APIs and obtain the credentials](hosted_private_cloud/opcp/how-to-use-api-and-get-credentials)
             + [OPCP - How to install an instance from the Horizon interface](hosted_private_cloud/opcp/how-to-setup-instance)
             + [OPCP - How to setup an instance using the OpenStack API](hosted_private_cloud/opcp/how-to-setup-instance-from-api)
+            + [OPCP - How to use Terraform with OPCP](hosted_private_cloud/opcp/opcp-how-to-use-terraform)
             + [OPCP - How to setup LACP on a Node](hosted_private_cloud/opcp/how-to-setup-lacp-on-node)
             + [OPCP - How to setup trunk on a Node](hosted_private_cloud/opcp/how-to-setup-trunk-on-node)
             + [OPCP - How to setup Softraid on a Node](hosted_private_cloud/opcp/how-to-setup-softraid-on-node)
