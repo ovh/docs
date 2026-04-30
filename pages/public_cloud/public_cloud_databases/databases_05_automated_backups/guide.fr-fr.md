@@ -1,7 +1,7 @@
 ---
 title: Sauvegardes automatiques des bases de données Public Cloud (EN)
 excerpt: Discover the automated backup methods for each engine
-updated: 2026-02-17
+updated: 2026-04-30
 ---
 
 ## Objective
