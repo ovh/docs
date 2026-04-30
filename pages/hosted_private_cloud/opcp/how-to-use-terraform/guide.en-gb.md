@@ -1,7 +1,7 @@
 ---
 title: "How to use Terraform"
-excerpt: "Learn how to generate an Application Credential from Horizon and automate the deployment of your OPCP resources with Terraform"
-updated: 2026-04-29
+excerpt: "Find out how to generate an Application Credential from Horizon and automate the deployment of your OPCP resources with Terraform"
+updated: 2026-04-30
 ---
 
 ## Objective
@@ -21,7 +21,17 @@ Since the **OPCP** offer is based on **OpenStack**, you can use the **Terraform 
 - A **user account** with sufficient rights to log in to Horizon on the OPCP offer.
 - [Terraform installed](https://developer.hashicorp.com/terraform/install) (version >= 1.0) or [OpenTofu](https://opentofu.org/docs/intro/install/) on your workstation.
 - An **SSH key pair** on your local workstation to access your instance.
-- A **private network** previously created in your OPCP project (see the guide [How to install an instance from the Horizon interface](/pages/hosted_private_cloud/opcp/opcp-setup-instance)).
+- A **private network** previously created in your OPCP project (see the guide [How to install an instance from the Horizon interface](/pages/hosted_private_cloud/opcp/how-to-setup-instance)).
+
+## Table of Contents
+
+- [1. Creating an Application Credential from Horizon](#creating-an-application-credential-from-horizon)
+- [2. Preparing the Terraform environment](#preparing-the-terraform-environment)
+- [3. Creating a server](#creating-a-server)
+- [4. Additional node-level configurations (RAID, LACP)](#additional-node-level-configurations-raid-lacp)
+- [5. Removing the infrastructure](#removing-the-infrastructure)
+- [6. Troubleshooting](#troubleshooting)
+- [7. References](#references)
 
 ## Instructions
 
@@ -38,10 +48,12 @@ Log in to the **Horizon** interface of your OPCP environment, then select the **
 
 #### Creating the Application Credential
 
-In the left-hand menu, click on `Identity`{.action}, then on `Application Credentials`{.action}.<br><br>
+In the left-hand menu, click on `Identity`{.action}, then on `Application Credentials`{.action}.
+
 ![horizon-identity-application-credentials](images/01-application-credential-step01.png){.thumbnail}
 
-Click on `+ Create Application Credential`{.action}.<br><br>
+Click on `+ Create Application Credential`{.action}.
+
 ![horizon-create-application-credential](images/01-application-credential-step02.png){.thumbnail}
 
 Fill in the following fields:
@@ -61,7 +73,7 @@ Click on `Create Application Credential`{.action}.
 > [!warning]
 > Once the window is closed, the **secret will no longer be accessible**. Download the `clouds.yaml` or `openrc` file offered by Horizon, or copy the `id` and `secret` values to a secure location.
 
-![horizon-application-credential-download](images/02-application-credential-step03.png){.thumbnail}
+![horizon-application-credential-download](images/01-application-credential-step03.png){.thumbnail}
 
 > [!primary]
 > For the rest of this tutorial, **download the `openrc` file**: it will be used in the next step to authenticate Terraform against your OPCP infrastructure.
@@ -195,7 +207,7 @@ output "instance_ip" {
 ```
 
 > [!primary]
-> The names of available images, flavors and networks can be listed from Horizon or with the OpenStack CLI (`openstack image list`, `openstack flavor list`, `openstack network list`). To configure the CLI, refer to the guide [How to use the API and get credentials](/pages/hosted_private_cloud/opcp/opcp-use-api-get-credentials).
+> The names of available images, flavors and networks can be listed from Horizon or with the OpenStack CLI (`openstack image list`, `openstack flavor list`, `openstack network list`). To configure the CLI, refer to the guide [How to use the API and get credentials](/pages/hosted_private_cloud/opcp/how-to-use-api-and-get-credentials).
 
 #### Reviewing the plan
 
@@ -255,6 +267,6 @@ terraform destroy
 
 ## Go further
 
-If you need training or technical assistance for the implementation of our solutions, contact your sales representative or click [this link](/links/professional-services) to request a quote and have your project analyzed by our Professional Services team experts.
+For training or technical assistance implementing our solutions, contact your sales representative or visit our [Professional Services](/links/professional-services) page to request a quote and have your project analyzed by our experts.
 
 Join our [community of users](/links/community).
