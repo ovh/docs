@@ -108,12 +108,14 @@ cd ai-training-examples/jobs/weights-and-biases/audio-classification-models-comp
 
 It's a zip file (`audio_files.zip`)! We are going to push it into an object container named `spoken-digit`.
 
-If you want to upload it from the [OVHcloud Control Panel](/links/manager), go to the Object Storage section and [create a new object container](/pages/storage_and_backup/object_storage/pcs_create_container) by clicking `Object Storage` > `Create an object container`.
+<!-- CP-STEPS-START:upload-dataset-object-storage -->
+If you want to upload it from the [OVHcloud Control Panel](/links/manager), go to the Object Storage section and [create a new object container](/pages/storage_and_backup/object_storage/pcs_create_container) by clicking `Object Storage`{.action} > `Create an object container`{.action}.
 
 > [!primary]
 >
 > In the OVHcloud Control Panel, you can upload files but not folders. For instance, you can upload a .zip file to optimize the bandwidth, then unzip it later when accessing it through a JupyterLab. You can also use the OVHcloud AI CLI to upload files and folders (and be more stable than through your browser).
 >
+<!-- CP-STEPS-END:upload-dataset-object-storage -->
 
 If you want to run it with the CLI, just follow [this guide](/pages/public_cloud/ai_machine_learning/cli_17_how_to_cli_data_notebooks). You have to choose the region, the name of your container and the path where your data is located and use the following command:
 

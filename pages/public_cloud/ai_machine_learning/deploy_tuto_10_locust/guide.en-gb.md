@@ -217,6 +217,7 @@ Let's see the same results in details with the AI Deploy monitoring tool.
 
 ### Interpret the results with the AI Deploy Monitoring
 
+<!-- CP-STEPS-START:interpret-results-ai-deploy-monitoring -->
 Go in the OVHcloud Control Panel and get the detail of your deployed application. Click on the `Access Dashboards`{.action} button.
 
 This dashboard is provided for free in AI Deploy, for each deployed application. All of the deployed apps are combined in a simple Grafana Dashboard.
@@ -247,6 +248,7 @@ We can see that the threshold has been capped at 75% for the autoscaling and thi
 As a conclusion, both Locust and AI Deploy Monitoring are useful to interpret results but, more than tools, the most important thing is to define realistic workloads and performance criterias.
 
 Last point : while Locust is measuring an end-to-end latency (from Locust virtual machine here, to the API model deployed), AI Deploy monitoring is only measuring backbone latency (from the query to the answer). That's why latency values are higher on Locust side, reaching 2.5 seconds. 
+<!-- CP-STEPS-END:interpret-results-ai-deploy-monitoring -->
 
 ## Go further
 
