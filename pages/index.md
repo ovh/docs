@@ -603,7 +603,7 @@
             + [OPCP - How to setup Softraid on a Node](hosted_private_cloud/opcp/how-to-setup-softraid-on-node)
             + [OPCP - How to see node inventory](hosted_private_cloud/opcp/how-to-see-node-inventory)
         + [Security](hosted-private-cloud-hosted-private-cloud-opcp-security)
-            + [IAM Rights Management - On-Prem Cloud Platform](hosted_private_cloud/opcp/opcp-iam-manage)
+            + [OPCP - IAM Rights Management](hosted_private_cloud/opcp/opcp-iam-manage)
         + [CloudStore](hosted-private-cloud-hosted-private-cloud-opcp-cloudstore)
             + [Getting started with your CloudStore](hosted_private_cloud/opcp/cloudstore-getting-started)
         + [Additional resources](hosted-private-cloud-hosted-private-cloud-opcp-additional-resources)

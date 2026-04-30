@@ -1,34 +1,34 @@
 ---
-title: "Gestion des droits IAM - On-Prem Cloud Platform"
-excerpt: "Découvrez comment gérer les utilisateurs et leurs droits d'accès sur votre On-Prem Cloud Platform via Keycloak"
-updated: 2026-04-28
+title: "OPCP - Gestion des droits IAM"
+excerpt: "Gérez les utilisateurs, les rôles et les accès aux projets OpenStack de votre On-Prem Cloud Platform via Keycloak (Realm Master)"
+updated: 2026-04-30
 ---
 
 ## Objectif
 
-Ce guide explique comment gérer les droits et les accès (IAM - Identity and Access Management) de votre **On-Prem Cloud Platform (OPCP)**.
+Ce guide explique comment gérer les droits et les accès (IAM — Identity and Access Management) de votre **On-Prem Cloud Platform (OPCP)**.
 
-L'accès aux services applicatifs est centralisé dans **Keycloak** (Realm Master), qui sert de point d'entrée unique pour :
+L'accès aux services applicatifs est centralisé dans **Keycloak** (Realm Master), qui sert de point d'entrée unique pour :
 
 - L'accès au **Dashboard** (tableau de bord unifié du service)
 - L'accès à l'interface graphique **OpenStack Horizon**
-- L'accès aux **APIs OpenStack** (Keystone, Nova, Neutron, Glance, Ironic...)
-- L'accès aux outils de supervision : **Grafana**, **Netbox**, **Prometheus**
+- L'accès aux **APIs OpenStack** (Keystone, Nova, Neutron, Glance, Ironic, etc.)
+- L'accès aux outils de supervision : **Grafana**, **Netbox**, **Prometheus**
 
 ## Prérequis
 
-- Disposer d'un **On-Prem Cloud Platform** livré et opérationnel
+- Disposer d'un service [On-Prem Cloud Platform](/links/hosted-private-cloud/onprem-cloud-platform) livré et opérationnel
 - Avoir accès à l'interface Keycloak avec un compte disposant du rôle `it_admin` ou supérieur
-- Avoir pris connaissance du guide [Mise en route de votre OPCP](/pages/hosted_private_cloud/opcp/opcp-getting-started)
+- Avoir pris connaissance du guide « [Mise en route de votre OPCP](/pages/hosted_private_cloud/opcp/opcp-getting-started) »
 
 ## En pratique
 
 ### Architecture d'authentification
 
-Toute l'authentification de l'**OPCP** repose sur deux niveaux distincts :
+Toute l'authentification de l'**OPCP** repose sur deux niveaux distincts :
 
-- **L'accès au control plane** : accès SSH aux contrôleurs qui composent l'infrastructure de la plateforme, remis lors de la mise à disposition du service
-- **L'accès aux services** : centralisé dans **Keycloak** (Realm Master), point d'entrée unique pour le Dashboard, OpenStack, Grafana, Netbox et Prometheus
+- **L'accès au control plane** : accès SSH aux contrôleurs qui composent l'infrastructure de la plateforme, remis lors de la mise à disposition du service
+- **L'accès aux services** : centralisé dans **Keycloak** (Realm Master), point d'entrée unique pour le Dashboard, OpenStack, Grafana, Netbox et Prometheus
 
 ### Accès au control plane
 
@@ -38,16 +38,16 @@ Le périmètre d'accès du compte administrateur qui vous est remis varie selon 
 
 #### Mode managé par OVHcloud
 
-En mode managé, le compte administrateur qui vous est remis dispose de droits étendus permettant d'exécuter les outils d'administration de la solution :
+En mode managé, le compte administrateur qui vous est remis dispose de droits étendus permettant d'exécuter les outils d'administration de la solution :
 
-- `opcp-cli` : outil en ligne de commande pour administrer la plateforme
-- `opcp-diag` : outil de diagnostic du control plane
+- `opcp-cli` : outil en ligne de commande pour administrer la plateforme
+- `opcp-diag` : outil de diagnostic du control plane
 
 La gestion du déploiement et des mises à jour du control plane est assurée par OVHcloud.
 
 #### Mode non managé par OVHcloud
 
-En mode non managé, le compte administrateur qui vous est remis dispose des **pleins privilèges** sur le control plane, permettant de :
+En mode non managé, le compte administrateur qui vous est remis dispose des **pleins privilèges** sur le control plane, permettant de :
 
 - Déployer le control plane
 - Mettre à jour le control plane
@@ -60,11 +60,11 @@ En mode non managé, le compte administrateur qui vous est remis dispose des **p
 
 #### Identifiants initiaux
 
-Deux types d'identifiants vous sont remis à l'initialisation de votre OPCP :
+Deux types d'identifiants vous sont remis à l'initialisation de votre OPCP :
 
-**Compte Linux administrateur** : permet la connexion SSH aux contrôleurs. Par défaut, **l'authentification par mot de passe est désactivée** sur les contrôleurs. Lors de l'installation de votre OPCP, une clé SSH publique de votre choix peut être fournie à OVHcloud afin d'être déployée et de vous permettre un premier accès. Un mot de passe vous est également remis, utile uniquement pour accéder directement au serveur via la console en cas d'impossibilité de connexion SSH.
+**Compte Linux administrateur** : permet la connexion SSH aux contrôleurs. Par défaut, **l'authentification par mot de passe est désactivée** sur les contrôleurs. Lors de l'installation de votre OPCP, une clé SSH publique de votre choix peut être fournie à OVHcloud afin d'être déployée et de vous permettre un premier accès. Un mot de passe vous est également remis, utile uniquement pour accéder directement au serveur via la console en cas d'impossibilité de connexion SSH.
 
-**Compte Keycloak administrateur** : fourni aussi bien en mode managé qu'en mode non managé, ce compte dispose des droits d'administration complets sur le Realm Master. Un mot de passe temporaire vous est attribué, que vous devez **changer dès la première connexion**.
+**Compte Keycloak administrateur** : fourni aussi bien en mode managé qu'en mode non managé, ce compte dispose des droits d'administration complets sur le Realm Master. Un mot de passe temporaire vous est attribué, que vous devez **changer dès la première connexion**.
 
 > [!primary]
 >
@@ -75,11 +75,11 @@ Deux types d'identifiants vous sont remis à l'initialisation de votre OPCP :
 
 Deux méthodes permettent d'accéder à l'interface d'administration Keycloak de votre **OPCP**.
 
-**Via le Dashboard** : connectez-vous à `admin.dashboard.<nomdedomaine>`, puis cliquez sur votre nom en haut à droite. Un menu apparaît avec un lien **IAM** qui vous redirige directement vers l'interface Keycloak.
+**Via le Dashboard** : connectez-vous à `admin.dashboard.<nomdedomaine>`, puis cliquez sur votre nom en haut à droite. Un menu apparaît avec un lien `IAM`{.action} qui vous redirige directement vers l'interface Keycloak.
 
 ![Lien IAM dans le menu du Dashboard](images/dashboard_iam_link.png){.thumbnail}
 
-**Accès direct** : vous pouvez également accéder à Keycloak directement via `admin.keycloak.<nomdedomaine>`.
+**Accès direct** : vous pouvez également accéder à Keycloak directement via `admin.keycloak.<nomdedomaine>`.
 
 > [!primary]
 >
@@ -99,7 +99,7 @@ Le modèle IAM de l'**OPCP** repose sur quatre rôles distincts, du plus restrei
 
 Profil supervision et audit. Ce rôle donne un accès en lecture aux outils de monitoring de la plateforme.
 
-Il permet de :
+Il permet de :
 
 - Consulter ses paramètres de compte dans Keycloak
 - Accéder en lecture à **Netbox** (inventaire réseau)
@@ -117,7 +117,7 @@ Il permet de :
 
 Opérateur datacenter. Ce rôle est destiné aux équipes en charge de l'infrastructure réseau et physique.
 
-Il donne les accès supplémentaires suivants par rapport au `reader` :
+Il donne les accès supplémentaires suivants par rapport au `reader` :
 
 - Accéder à **Grafana** en édition (modification des dashboards)
 - Accéder à **Netbox** en tant qu'opérateur (création et modification des ressources réseau)
@@ -132,11 +132,10 @@ Il donne les accès supplémentaires suivants par rapport au `reader` :
 
 Opérateur principal de la plateforme. Ce rôle est destiné aux équipes IT qui exploitent les ressources de l'OPCP au quotidien.
 
-Il donne les accès supplémentaires suivants par rapport au `dc_operator` :
+Il donne les accès supplémentaires suivants par rapport au `dc_operator` :
 
 - Gérer les utilisateurs du Realm Master dans Keycloak (création de comptes, attribution de droits)
 - Accéder à **OpenStack** avec tous les droits (`reader`, `member`, `admin`)
-- Accéder au **Dashboard** avec l'iframe OpenStack
 
 > [!warning]
 >
@@ -147,7 +146,7 @@ Il donne les accès supplémentaires suivants par rapport au `dc_operator` :
 
 Administrateur de la plateforme. Ce rôle dispose de tous les droits, y compris l'administration complète du Realm Master Keycloak.
 
-Il donne les accès supplémentaires suivants par rapport à l'`it_admin` :
+Il donne les accès supplémentaires suivants par rapport à l'`it_admin` :
 
 - Modifier la configuration du Realm Master (politique de sécurité, fédération, etc.)
 - Administrer **Netbox** avec tous les droits, y compris le rôle `admin`
@@ -161,7 +160,7 @@ Il donne les accès supplémentaires suivants par rapport à l'`it_admin` :
 
 Le tableau ci-dessous récapitule les accès de chaque rôle sur les applications intégrées.
 
-**Légende** : ✅ Autorisé | ❌ Non autorisé | 🟡 Partiel (conditionné par les attributs de projet)
+**Légende** : ✅ Autorisé | ❌ Non autorisé | 🟡 Partiel (conditionné par les attributs de projet)
 
 | Application | Permission | `reader` | `dc_operator` | `it_admin` | `master_admin` |
 |---|---|:---:|:---:|:---:|:---:|
@@ -192,21 +191,21 @@ Le tableau ci-dessous récapitule les accès de chaque rôle sur les application
 
 #### Créer un utilisateur
 
-Dans l'interface Keycloak, assurez-vous d'être connecté sur le **Realm Master**, puis accédez à **Users** > **Add user**.
+Dans l'interface Keycloak, assurez-vous d'être connecté sur le **Realm Master**, puis accédez à `Users`{.action} > `Add user`{.action}.
 
-Renseignez les champs suivants :
+Renseignez les champs suivants :
 
-- **Username** : identifiant de connexion de l'utilisateur
-- **Email** : adresse e-mail (recommandé)
-- **First name / Last name** : nom et prénom
+- **Username** : identifiant de connexion de l'utilisateur
+- **Email** : adresse e-mail (recommandé)
+- **First name / Last name** : nom et prénom
 
-Cliquez sur **Create**, puis ouvrez l'onglet **Credentials** pour définir un mot de passe temporaire. Activez l'option **Temporary** afin que l'utilisateur soit contraint de le changer à sa première connexion.
+Cliquez sur `Create`{.action}, puis ouvrez l'onglet `Credentials`{.action} pour définir un mot de passe temporaire. Activez l'option `Temporary`{.action} afin que l'utilisateur soit contraint de le changer à sa première connexion.
 
 #### Assigner un rôle à un utilisateur
 
-Dans la fiche de l'utilisateur, ouvrez l'onglet **Role mapping**, puis cliquez sur **Assign role**.
+Dans la fiche de l'utilisateur, ouvrez l'onglet `Role mapping`{.action}, puis cliquez sur `Assign role`{.action}.
 
-Dans le filtre, sélectionnez **Filter by realm roles**, puis recherchez et sélectionnez le rôle souhaité (`reader`, `dc_operator`, `it_admin` ou `master_admin`). Cliquez sur **Assign**.
+Dans le filtre, sélectionnez `Filter by realm roles`{.action}, puis recherchez et sélectionnez le rôle souhaité (`reader`, `dc_operator`, `it_admin` ou `master_admin`). Cliquez sur `Assign`{.action}.
 
 > [!primary]
 >
@@ -215,11 +214,11 @@ Dans le filtre, sélectionnez **Filter by realm roles**, puis recherchez et sél
 
 #### Assigner un rôle à un groupe
 
-Il est préférable d'assigner les rôles à des **groupes** plutôt qu'à des utilisateurs individuels, afin de simplifier la gestion des droits à grande échelle.
+Assignez les rôles à des **groupes** plutôt qu'à des utilisateurs individuels pour simplifier la gestion des droits à grande échelle.
 
-Dans Keycloak, accédez à **Groups** > **Create group**, nommez le groupe, puis ouvrez l'onglet **Role mapping** pour lui assigner le rôle souhaité.
+Dans Keycloak, accédez à `Groups`{.action} > `Create group`{.action}, nommez le groupe, puis ouvrez l'onglet `Role mapping`{.action} pour lui assigner le rôle souhaité.
 
-Ajoutez ensuite les utilisateurs au groupe via leur fiche utilisateur, onglet **Groups** > **Join group**.
+Ajoutez ensuite les utilisateurs au groupe depuis leur fiche utilisateur, via `Groups`{.action} > `Join group`{.action}.
 
 ### Configurer les droits OpenStack via les attributs Keycloak
 
@@ -227,12 +226,12 @@ Pour le rôle `reader`, les droits d'accès aux projets OpenStack se définissen
 
 #### Ajouter un attribut de projet sur un utilisateur
 
-Dans l'interface Keycloak, accédez à l'utilisateur concerné, puis ouvrez l'onglet **Attributes**.
+Dans l'interface Keycloak, accédez à l'utilisateur concerné, puis ouvrez l'onglet `Attributes`{.action}.
 
-Ajoutez un nouvel attribut avec les valeurs suivantes :
+Ajoutez un nouvel attribut avec les valeurs suivantes :
 
-- **Clé** : `project`
-- **Valeur** : un objet JSON décrivant le projet et le rôle à attribuer
+- **Key** : `project`
+- **Value** : un objet JSON décrivant le projet et le rôle à attribuer
 
 ```json
 {
@@ -261,7 +260,7 @@ Il est possible d'ajouter **plusieurs attributs `project`** pour un même utilis
 
 La même configuration peut être appliquée à un **groupe Keycloak**. Tous les membres du groupe hériteront automatiquement des attributs de projet définis sur ce groupe.
 
-Dans Keycloak, accédez à **Groups**, sélectionnez le groupe souhaité, puis renseignez les attributs `project` de la même manière que pour un utilisateur individuel.
+Dans Keycloak, accédez à `Groups`{.action}, sélectionnez le groupe souhaité, puis renseignez les attributs `project` de la même manière que pour un utilisateur individuel.
 
 > [!primary]
 >
@@ -270,24 +269,24 @@ Dans Keycloak, accédez à **Groups**, sélectionnez le groupe souhaité, puis r
 
 #### Keycloak comme source unique de vérité
 
-Nous recommandons de ne pas créer d'utilisateurs directement dans OpenStack, afin de conserver Keycloak comme **source unique de vérité** sur les comptes de la plateforme. Tout compte créé directement dans OpenStack échapperait au cycle de vie géré par Keycloak et ne bénéficierait pas du nettoyage automatique ni de la gestion centralisée des droits.
+Nous recommandons de ne pas créer d'utilisateurs directement dans OpenStack, pour conserver Keycloak comme **source unique de vérité** sur les comptes de la plateforme. Tout compte créé directement dans OpenStack échapperait au cycle de vie géré par Keycloak et ne bénéficierait pas du nettoyage automatique ni de la gestion centralisée des droits.
 
 #### Comptes de service pour l'automatisation
 
-Pour les besoins d'automatisation (Terraform, OpenTofu, scripts, pipelines CI/CD...), nous recommandons de créer un **compte dédié dans Keycloak** avec les permissions adaptées au périmètre de l'automate, puis de générer des **application credentials OpenStack** associés à ce compte.
+Pour les besoins d'automatisation (Terraform, OpenTofu, scripts, pipelines CI/CD, etc.), nous recommandons de créer un **compte dédié dans Keycloak** avec les permissions adaptées au périmètre de l'automate, puis de générer des **application credentials OpenStack** associés à ce compte.
 
-Les application credentials permettent à vos outils d'automatisation de piloter OpenStack sans dépendre des credentials personnels d'un utilisateur. Un utilisateur connecté à OpenStack avec son compte Keycloak peut créer ses propres application credentials depuis l'interface Horizon, via **Identity** > **Application Credentials** > **Create Application Credentials**.
+Les application credentials permettent à vos outils d'automatisation de piloter OpenStack sans dépendre des credentials personnels d'un utilisateur. Un utilisateur connecté à OpenStack avec son compte Keycloak peut créer ses propres application credentials depuis l'interface Horizon, via `Identity`{.action} > `Application Credentials`{.action} > `Create Application Credentials`{.action}.
 
 > [!primary]
 >
 > En cas de suppression du compte Keycloak associé, les application credentials OpenStack seront automatiquement révoqués. Veillez à ne pas lier des automates critiques à un compte personnel.
 >
 
-Pour configurer l'authentification Keycloak avec la CLI OpenStack et obtenir vos credentials, référez-vous au guide [Comment utiliser les APIs et obtenir les credentials](/pages/hosted_private_cloud/opcp/how-to-use-api-and-get-credentials).
+Pour configurer l'authentification Keycloak avec la CLI OpenStack et obtenir vos credentials, référez-vous au guide « [Comment utiliser les APIs et obtenir les credentials](/pages/hosted_private_cloud/opcp/how-to-use-api-and-get-credentials) ».
 
 ### Nettoyage automatique des comptes
 
-La plateforme réagit aux événements de suppression d'utilisateur dans Keycloak : dès qu'un compte est supprimé du Realm Master, les utilisateurs et les **application credentials** OpenStack associés sont automatiquement supprimés.
+La plateforme réagit aux événements de suppression d'utilisateur dans Keycloak : dès qu'un compte est supprimé du Realm Master, les utilisateurs et les **application credentials** OpenStack associés sont automatiquement supprimés.
 
 > [!warning]
 >
@@ -302,7 +301,7 @@ L'ensemble des fonctionnalités officielles de Keycloak est disponible sur votre
 
 Nous recommandons fortement d'activer l'**authentification multi-facteurs** sur les comptes de votre plateforme, en particulier pour les rôles `it_admin` et `master_admin`. Keycloak supporte nativement le protocole TOTP (Time-based One-Time Password), compatible avec toute application d'authentification supportant ce standard ouvert, comme FreeOTP.
 
-La configuration du MFA se fait au niveau du flux d'authentification du realm. Consultez la [documentation officielle Keycloak](https://www.keycloak.org/docs/latest/server_admin/index.html#post-login-flow-examples) pour mettre en place un flux post-login avec OTP obligatoire ou conditionnel selon les rôles.
+Le MFA se configure au niveau du flux d'authentification du realm. Consultez la [documentation officielle Keycloak](https://www.keycloak.org/docs/latest/server_admin/index.html#post-login-flow-examples) pour mettre en place un flux post-login avec OTP obligatoire ou conditionnel selon les rôles.
 
 #### Fédération d'identité et Identity Providers
 
@@ -329,7 +328,7 @@ La gestion des utilisateurs, groupes et rôles dans Keycloak peut être automati
 
 Cela permet de gérer vos accès de manière déclarative, reproductible et versionnée.
 
-Exemple de ressource pour créer un utilisateur :
+Exemple de ressource pour créer un utilisateur :
 
 ```hcl
 resource "keycloak_user" "john_doe" {
@@ -354,7 +353,7 @@ Pour l'ensemble des ressources disponibles (utilisateurs, groupes, rôles, féd�
 
 #### Via opcp-diag (vue consolidée)
 
-Pour obtenir une vue complète de l'ensemble des comptes et de leurs droits sur la plateforme, connectez-vous en SSH à un contrôleur puis exécutez :
+Pour obtenir une vue complète de l'ensemble des comptes et de leurs droits sur la plateforme, connectez-vous en SSH à un contrôleur puis exécutez :
 
 ```bash
 opcp-diag audit
@@ -366,10 +365,10 @@ Cet outil affiche l'ensemble des comptes déclarés dans **Keycloak**, sur les *
 
 | Option | Description |
 |---|---|
-| `-o, --format` | Format de sortie : `json` (défaut) ou `text` |
+| `-o, --format` | Format de sortie : `json` (défaut) ou `text` |
 | `--only` | Restreindre l'audit à un ou plusieurs types, séparés par des virgules |
 
-Les types d'audit disponibles pour `--only` sont :
+Les types d'audit disponibles pour `--only` sont :
 
 | Type | Description |
 |---|---|
@@ -379,13 +378,13 @@ Les types d'audit disponibles pour `--only` sont :
 | `netbox` | Comptes dans Netbox, la CMDB de la plateforme |
 | `nog` | Comptes dans NOG, le composant qui pilote la configuration des équipements réseau pour appliquer les réseaux Neutron |
 
-Par exemple, pour auditer uniquement Keycloak et OpenStack :
+Par exemple, pour auditer uniquement Keycloak et OpenStack :
 
 ```bash
 opcp-diag audit --only keycloak_master,openstack
 ```
 
-Pour une sortie lisible en mode texte :
+Pour une sortie lisible en mode texte :
 
 ```bash
 opcp-diag audit --format text
@@ -393,7 +392,7 @@ opcp-diag audit --format text
 
 #### Manipuler la sortie JSON
 
-La sortie par défaut est au format **JSON**, ce qui permet de la manipuler et de la filtrer avec des outils comme `jq`. Par exemple :
+La sortie par défaut est au format **JSON**, ce qui permet de la manipuler et de la filtrer avec des outils comme `jq`. Par exemple :
 
 ```bash
 # Exporter le résultat complet dans un fichier daté
@@ -410,13 +409,13 @@ opcp-diag audit --only keycloak_master | jq '.keycloak_master.users[] | select(.
 
 #### Via la CLI OpenStack
 
-Pour lister les assignations de rôles actives dans OpenStack :
+Pour lister les assignations de rôles actives dans OpenStack :
 
 ```bash
 openstack role assignment list --names
 ```
 
-Pour lister les rôles disponibles sur la plateforme :
+Pour lister les rôles disponibles sur la plateforme :
 
 ```bash
 openstack role list
@@ -429,8 +428,6 @@ openstack role list
 
 ## Aller plus loin
 
-Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en œuvre de nos solutions, contactez
-votre commercial ou cliquez sur [ce lien](/links/professional-services) pour obtenir un devis et demander une analyse
-personnalisée de votre projet à nos experts de l'équipe Professional Services.
+Pour une formation ou une assistance technique sur la mise en œuvre de nos solutions, contactez votre commercial ou consultez la page [Professional Services](/links/professional-services) pour obtenir un devis et faire analyser votre projet par nos experts.
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).

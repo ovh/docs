@@ -1,23 +1,23 @@
 ---
-title: "IAM Rights Management - On-Prem Cloud Platform"
-excerpt: "Find out how to manage users and their access rights on your On-Prem Cloud Platform via Keycloak"
-updated: 2026-04-28
+title: "OPCP - IAM Rights Management"
+excerpt: "Manage users, roles and OpenStack project access on your On-Prem Cloud Platform through Keycloak (Realm Master)"
+updated: 2026-04-30
 ---
 
 ## Objective
 
-This guide explains how to manage rights and access (IAM - Identity and Access Management) on your **On-Prem Cloud Platform (OPCP)**.
+This guide explains how to manage rights and access (IAM — Identity and Access Management) on your **On-Prem Cloud Platform (OPCP)**.
 
 Access to application services is centralised in **Keycloak** (Realm Master), which serves as the single entry point for:
 
 - Access to the **Dashboard** (unified service dashboard)
 - Access to the **OpenStack Horizon** graphical interface
-- Access to the **OpenStack APIs** (Keystone, Nova, Neutron, Glance, Ironic...)
+- Access to the **OpenStack APIs** (Keystone, Nova, Neutron, Glance, Ironic, etc.)
 - Access to the monitoring tools: **Grafana**, **Netbox**, **Prometheus**
 
 ## Requirements
 
-- A delivered and operational **On-Prem Cloud Platform**
+- A delivered and operational [On-Prem Cloud Platform](/links/hosted-private-cloud/onprem-cloud-platform) service
 - Access to the Keycloak interface with an account holding the `it_admin` role or higher
 - Familiarity with the guide [Getting started with your OPCP](/pages/hosted_private_cloud/opcp/opcp-getting-started)
 
@@ -75,7 +75,7 @@ Two types of credentials are provided when your OPCP is initialised:
 
 Two methods are available to access the Keycloak administration interface of your **OPCP**.
 
-**Via the Dashboard**: log in to `admin.dashboard.<domainname>`, then click on your name in the top right corner. A menu appears with an **IAM** link that redirects you directly to the Keycloak interface.
+**Via the Dashboard**: log in to `admin.dashboard.<domainname>`, then click on your name in the top right corner. A menu appears with an `IAM`{.action} link that redirects you directly to the Keycloak interface.
 
 ![IAM link in the Dashboard menu](images/dashboard_iam_link.png){.thumbnail}
 
@@ -136,7 +136,6 @@ It provides the following additional access compared to `dc_operator`:
 
 - Manage Realm Master users in Keycloak (create accounts, assign rights)
 - Access **OpenStack** with full rights (`reader`, `member`, `admin`)
-- Access the **Dashboard** with the OpenStack iframe
 
 > [!warning]
 >
@@ -192,7 +191,7 @@ The table below summarises the access for each role across the integrated applic
 
 #### Creating a user
 
-In the Keycloak interface, make sure you are connected to the **Realm Master**, then go to **Users** > **Add user**.
+In the Keycloak interface, make sure you are connected to the **Realm Master**, then go to `Users`{.action} > `Add user`{.action}.
 
 Fill in the following fields:
 
@@ -200,13 +199,13 @@ Fill in the following fields:
 - **Email**: email address (recommended)
 - **First name / Last name**: user's full name
 
-Click **Create**, then open the **Credentials** tab to set a temporary password. Enable the **Temporary** option to force the user to change it at their first login.
+Click `Create`{.action}, then open the `Credentials`{.action} tab to set a temporary password. Enable the `Temporary`{.action} option to force the user to change it at their first login.
 
 #### Assigning a role to a user
 
-In the user's profile, open the **Role mapping** tab, then click **Assign role**.
+In the user's profile, open the `Role mapping`{.action} tab, then click `Assign role`{.action}.
 
-In the filter, select **Filter by realm roles**, then search for and select the desired role (`reader`, `dc_operator`, `it_admin` or `master_admin`). Click **Assign**.
+In the filter, select `Filter by realm roles`{.action}, then search for and select the desired role (`reader`, `dc_operator`, `it_admin` or `master_admin`). Click `Assign`{.action}.
 
 > [!primary]
 >
@@ -215,11 +214,11 @@ In the filter, select **Filter by realm roles**, then search for and select the 
 
 #### Assigning a role to a group
 
-It is recommended to assign roles to **groups** rather than individual users, to simplify rights management at scale.
+Assign roles to **groups** rather than to individual users to simplify rights management at scale.
 
-In Keycloak, go to **Groups** > **Create group**, name the group, then open the **Role mapping** tab to assign the desired role.
+In Keycloak, go to `Groups`{.action} > `Create group`{.action}, name the group, then open the `Role mapping`{.action} tab to assign the desired role.
 
-Then add users to the group via their user profile, **Groups** tab > **Join group**.
+Then add users to the group from their user profile via `Groups`{.action} > `Join group`{.action}.
 
 ### Configuring OpenStack rights via Keycloak attributes
 
@@ -227,7 +226,7 @@ For the `reader` role, access rights to OpenStack projects are defined directly 
 
 #### Adding a project attribute to a user
 
-In the Keycloak interface, navigate to the relevant user, then open the **Attributes** tab.
+In the Keycloak interface, navigate to the relevant user, then open the `Attributes`{.action} tab.
 
 Add a new attribute with the following values:
 
@@ -261,7 +260,7 @@ You can add **multiple `project` attributes** to the same user or group. They wi
 
 The same configuration can be applied to a **Keycloak group**. All members of the group will automatically inherit the project attributes defined on that group.
 
-In Keycloak, go to **Groups**, select the desired group, then fill in the `project` attributes in the same way as for an individual user.
+In Keycloak, go to `Groups`{.action}, select the desired group, then fill in the `project` attributes in the same way as for an individual user.
 
 > [!primary]
 >
@@ -270,13 +269,13 @@ In Keycloak, go to **Groups**, select the desired group, then fill in the `proje
 
 #### Keycloak as the single source of truth
 
-We recommend not creating users directly in OpenStack, in order to keep Keycloak as the **single source of truth** for platform accounts. Any account created directly in OpenStack would bypass the lifecycle managed by Keycloak and would not benefit from automatic cleanup or centralised rights management.
+We recommend not creating users directly in OpenStack, to keep Keycloak as the **single source of truth** for platform accounts. Any account created directly in OpenStack would bypass the lifecycle managed by Keycloak and would not benefit from automatic cleanup or centralised rights management.
 
 #### Service accounts for automation
 
-For automation needs (Terraform, OpenTofu, scripts, CI/CD pipelines...), we recommend creating a **dedicated account in Keycloak** with permissions scoped to the automation's requirements, then generating **OpenStack application credentials** associated with that account.
+For automation needs (Terraform, OpenTofu, scripts, CI/CD pipelines, etc.), we recommend creating a **dedicated account in Keycloak** with permissions scoped to the automation's requirements, then generating **OpenStack application credentials** associated with that account.
 
-Application credentials allow your automation tools to drive OpenStack without depending on a personal user's credentials. A user connected to OpenStack with their Keycloak account can create their own application credentials from the Horizon interface, via **Identity** > **Application Credentials** > **Create Application Credentials**.
+Application credentials allow your automation tools to drive OpenStack without depending on a personal user's credentials. A user connected to OpenStack with their Keycloak account can create their own application credentials from the Horizon interface, via `Identity`{.action} > `Application Credentials`{.action} > `Create Application Credentials`{.action}.
 
 > [!primary]
 >
@@ -429,6 +428,6 @@ openstack role list
 
 ## Go further
 
-If you need training or technical assistance with the implementation of our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and request a custom analysis of your project from our Professional Services team experts.
+For training or technical assistance implementing our solutions, contact your sales representative or visit our [Professional Services](/links/professional-services) page to request a quote and have your project analyzed by our experts.
 
 Join our [community of users](/links/community).
