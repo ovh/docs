@@ -1,7 +1,7 @@
 ---
 title: "Premiers pas avec votre CloudStore"
 excerpt: "Découvrez comment vous connecter, gérer les comptes, déployer des services et configurer votre CloudStore"
-updated: 2026-04-14
+updated: 2026-04-30
 ---
 
 ## Objectif
@@ -156,9 +156,9 @@ Le CloudStore utilise un modèle de fédération Keycloak en couches qui reflèt
 - **Keycloak L2** est fédéré avec **L1** (OPCP Core). Les droits accordés sur les projets OpenStack au niveau L1 sont ainsi propagés au niveau L2.
 - **Keycloak L3** est une instance indépendante gérée par l'API CloudStore. Chaque compte dispose de son propre realm isolé.
 
-> [!info]
+> [!primary]
 >
-> La **couche L3** est fournie par le [Landing Zone Manager](/pages/hosted_private_cloud/opcp/landing-zone-manager), un produit OPCP distinct en charge de la gestion des comptes utilisateurs Landing Zone Manager. Sa stack Keycloak **n'est pas fédérée** avec les instances Keycloak L1 (OPCP Core) et L2 (CloudStore).
+> La **couche L3** est fournie par le [Landing Zone Manager](/pages/hosted_private_cloud/opcp/landing-zone-manager-create-user-account), un produit OPCP distinct en charge de la gestion des comptes utilisateurs Landing Zone Manager. Sa stack Keycloak **n'est pas fédérée** avec les instances Keycloak L1 (OPCP Core) et L2 (CloudStore).
 >
 
 #### Gestion de l'IAM sur le Keycloak CloudStore (L2)

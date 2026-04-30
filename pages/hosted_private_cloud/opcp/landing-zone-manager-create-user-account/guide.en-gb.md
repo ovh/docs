@@ -1,21 +1,21 @@
 ---
-title: "Landing Zone Manager - Creating and using an useraccount"
-excerpt: "Find out how to create a new user account in the Landing Zone Manager and log in for the first time"
-updated: 2026-04-21
+title: "Landing Zone Manager - Creating a user account"
+excerpt: "Find out how to create a user account in the Landing Zone Manager and log in for the first time"
+updated: 2026-04-30
 ---
 
 ## Objective
 
-The Landing Zone Manager provides self-service user account management that lets administrators provision new users and grant them access to the platform. Each account created in the Landing Zone Manager is backed by a dedicated realm in the underlying Keycloak instance.
+The Landing Zone Manager is the OPCP portal that lets each team, department or customer deploy and operate their workloads autonomously, in a dedicated and isolated space. Administrators provision users and grant them access to the platform. Each user account is backed by a dedicated realm in the underlying Keycloak instance, ensuring multitenant isolation of accesses.
 
-**This guide explains how to create a new user account in the Landing Zone Manager and how to log in with it for the first time.**
+**This guide explains how to create a user account in the Landing Zone Manager and log in for the first time.**
 
 ## Requirements
 
-- access to the Landing Zone Manager with administrator privileges allowing user account management
-- the first-login default password defined during your Landing Zone Manager deployment
-- the URL of the Landing Zone Manager (previously communicated by your administrator)
-- valid user information to provision (full name and email address)
+- Access to the Landing Zone Manager with administrator privileges allowing user account management
+- The first-login default password defined during your Landing Zone Manager deployment
+- The URL of the Landing Zone Manager (previously communicated by your administrator)
+- Valid user information to provision (full name and email address)
 
 ## Instructions
 
@@ -25,9 +25,9 @@ Log in to the Landing Zone Manager with an account that has administrator privil
 
 ### Step 2: Create a new user account
 
-Click the `+ Create New account`{.action} button to open the user account creation form.
+Click the `+ Create new account`{.action} button to open the user account creation form.
 
-Fill in the following required fields:
+Fill in the required fields:
 
 | Field      | Description                                                                        |
 | ------------| ------------------------------------------------------------------------------------|
@@ -36,7 +36,7 @@ Fill in the following required fields:
 | First name | The user's first name                                                              |
 | Last name  | The user's last name                                                               |
 
-Once all fields are filled in, confirm the creation of the user account.
+Once all fields are filled in, confirm the user account creation.
 
 > [!primary]
 >
@@ -45,10 +45,10 @@ Once all fields are filled in, confirm the creation of the user account.
 
 ### Step 3: Share the first-login credentials
 
-After the user user account is successfully created, the user can log in for the first time using:
+After the user account is successfully created, the user can log in for the first time using:
 
 - **Login**: the email address entered during creation
-- **Password**: the first-login default password defined during OPCP and Cloud Store deployment
+- **Password**: the first-login default password defined during OPCP and CloudStore deployment
 
 > [!warning]
 >
@@ -57,13 +57,13 @@ After the user user account is successfully created, the user can log in for the
 
 ### Step 4: First connection to the Landing Zone Manager
 
-Once the user account  has been provisioned, the user can connect to the Landing Zone Manager using the URL previously communicated.
+Once the user account has been provisioned, the user can connect to the Landing Zone Manager using the URL previously communicated.
 
 ## How user accounts are mapped in Keycloak
 
-> [!info]
+> [!primary]
 >
-> The Landing Zone Manager runs on its **own dedicated Keycloak stack**, independent from the OPCP Core Keycloak and from any CloudStore Keycloak. It is not federated with these instances: identities, realms and credentials managed in the Landing Zone Manager are fully isolated from administraters who can access to the rest of the OPCP identity layers.
+> The Landing Zone Manager runs on its **own dedicated Keycloak stack**, independent from the OPCP Core Keycloak and from any CloudStore Keycloak. It is not federated with these instances: identities, realms and credentials managed in the Landing Zone Manager are fully isolated from administrators who can access the rest of the OPCP identity layers.
 >
 
 Every account created in the Landing Zone Manager automatically generates a dedicated **realm in Keycloak**. This design ensures:
@@ -73,11 +73,11 @@ Every account created in the Landing Zone Manager automatically generates a dedi
 
 > [!primary]
 >
-> Because each tenant corresponds to a distinct Keycloak realm, any identity-related operation (adding users, configuring federation, defining roles) must be performed within the realm associated with the target tenan.
+> Because each account corresponds to a distinct Keycloak realm, any identity-related operation (adding users, configuring federation, defining roles) must be performed within the realm associated with the target account.
 >
 
 ## Go further
 
-If you need training or technical assistance for the implementation of our solutions, contact your sales representative or click [this link](/links/professional-services) to request a quote and have your project analyzed by our Professional Services team experts.
+For training or technical assistance implementing our solutions, contact your sales representative or visit our [Professional Services](/links/professional-services) page to request a quote and have your project analyzed by our experts.
 
 Join our [community of users](/links/community).
