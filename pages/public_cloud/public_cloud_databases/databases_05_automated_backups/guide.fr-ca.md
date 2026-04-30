@@ -25,7 +25,6 @@ Either you run into a problem or you just want to see what your data looked like
 Engine | Backup Method(s) | Location(s) | Frequency | RPO | Encrypted
 :--- | :--- | :---: | :---: | :---: | :---:
 MongoDB | Backup on object storage | Off-Site | Daily | 24h | Yes
-MongoDB Enterprise | PITR on object storage | Off-site | Continuous | Few minutes | Yes
 PostgreSQL | PITR on object storage | On-Site, Off-Site | Continuous | Few minutes | Yes
 MySQL | PITR on object storage | On-Site, Off-Site | Continuous | Few minutes | Yes
 Valkey | Backup on object storage | On-Site, Off-Site | 2 times a day | 12h | Yes
