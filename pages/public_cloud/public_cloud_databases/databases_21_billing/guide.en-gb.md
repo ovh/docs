@@ -1,7 +1,7 @@
 ---
-title: Understanding OVHcloud Databases Pricing
-excerpt: "Learn how OVHcloud database services are priced, including compute, storage, backups, and per-second billing."
-updated: 2026-03-26
+title: Understanding Public Cloud Databases Pricing
+excerpt: "Learn how Public Cloud database services are priced, including compute, storage, backups, and per-second billing."
+updated: 2026-05-04
 ---
 
 ## Objective
@@ -18,9 +18,11 @@ Compute represents the virtual machine running your database service. It include
 
 Storage corresponds to the block storage volume where your database data is stored. This component is billed based on the allocated capacity (in GB) and is independent from compute resources.
 
+Databases such as Valkey are in-memory systems, meaning they store data primarily in RAM and therefore do not directly benefit from block storage for their core data operations.
+
 ### Backups (Object Storage)
 
-Backups are stored in object storage and ensure data durability and recovery. Pricing depends on the amount of backup data stored and any associated retention policy.
+Backups are stored in object storage and ensure data durability and recovery. Pricing depends not only on the database engine and any associated retention policy, but also on the nature of the data files and how the database engine structures and organizes the data—while backup tools may optimize the final backup size through compression, these factors still directly influence the characteristics and overall size of the resulting backups.
 
 ## Billing and Pricing Principles
 
@@ -40,6 +42,23 @@ The monthly price is an estimation derived from the hourly price:
 
 This gives a standard approximation of monthly costs for comparison and planning purposes, even though actual billing remains based on per-second usage.
 
+### Invoice Structure
+
+Invoices for database services are designed to clearly reflect how resources are billed.
+
+Up until May 2026, an invoice for a given service typically includes two billing lines:
+
+- The database service itself (covering compute, base storage and backups)
+- Optional additional storage, if provisioned
+
+As the billing model evolves toward greater transparency, invoices are being updated to include three distinct lines:
+
+- The compute component of the service
+- The total storage usage, combining base storage and any additional storage
+- The backups stored for the service
+
+This evolution provides better visibility into how costs are distributed between compute, storage and backup resources.
+
 ## Pricing Visibility Across Interfaces
 
 ### Website Pricing Page
@@ -54,7 +73,7 @@ When ordering a database service in the OVHcloud Control Panel, pricing is displ
 
 In the billing section of the Control Panel, you can monitor your actual usage and costs. Charges are detailed per component and reflect the per-second billing model, giving full transparency into how your bill is calculated.
 
-## We want your feedback!
+## We want your feedback
 
 We would love to help answer questions and appreciate any feedback you may have.
 
