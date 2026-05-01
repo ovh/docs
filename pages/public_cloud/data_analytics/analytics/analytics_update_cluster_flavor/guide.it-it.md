@@ -1,4 +1,4 @@
----
+﻿---
 title: Update the flavor of Analytics
 excerpt: Find out how to adjust the flavor of your cluster
 updated: 2025-02-03
@@ -20,10 +20,10 @@ This option is available through the OVHcloud [API](/links/api) and the [Control
 <!-- CP-NAV-START:publiccloud-projects -->
 ---
 
-### Accesso allo Spazio Cliente OVHcloud
+### OVHcloud Control Panel Access
 
-- **Link diretto:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
-- **Percorso di navigazione:** `Public Cloud`{.action} > Seleziona il tuo project
+- **Direct link:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Navigation path:** `Public Cloud`{.action} > Select your project
 
 ---
 <!-- CP-NAV-END:publiccloud-projects -->

@@ -1,4 +1,4 @@
----
+﻿---
 title: Getting started with Analytics
 excerpt: Find out how to set up your managed analytic service in the OVHcloud Control Panel
 updated: 2025-02-03
@@ -17,10 +17,10 @@ OVHcloud Analytics allows you to focus on building and deploying cloud applicati
 <!-- CP-NAV-START:publiccloud-projects -->
 ---
 
-### Dostęp do Panelu klienta OVHcloud
+### OVHcloud Control Panel Access
 
-- **Link bezpośredni:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
-- **Ścieżka nawigacji:** `Public Cloud`{.action} > Wybierz projekt
+- **Direct link:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Navigation path:** `Public Cloud`{.action} > Select your project
 
 ---
 <!-- CP-NAV-END:publiccloud-projects -->

@@ -1,4 +1,4 @@
----
+﻿---
 title: Configurer les paramètres avancés des services Analytics (EN)
 excerpt: Advanced configuration for Analytics engines
 updated: 2025-02-03
@@ -27,10 +27,10 @@ Analytics engines are managed services, which means that they are not fully conf
 <!-- CP-NAV-START:publiccloud-projects -->
 ---
 
-### Accès à l'espace client OVHcloud
+### OVHcloud Control Panel Access
 
-- **Lien direct :** [Projets Public Cloud](/links/control-panel/publiccloud-projects)
-- **Pour accéder à vos services :** `Public Cloud`{.action} > Sélectionnez votre projet
+- **Direct link:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Navigation path:** `Public Cloud`{.action} > Select your project
 
 ---
 <!-- CP-NAV-END:publiccloud-projects -->

@@ -1,4 +1,4 @@
----
+﻿---
 title: Set up logs forwarding for Analytics
 excerpt: Find out how to forward logs of your Analytics service to your Logs Data Platform data stream
 updated: 2025-02-03
@@ -21,10 +21,10 @@ Analytics services allow you to send logs of your service to your own Logs Data 
 <!-- CP-NAV-START:publiccloud-projects -->
 ---
 
-### Zugriff auf das OVHcloud Kundencenter
+### OVHcloud Control Panel Access
 
-- **Direkter Link:** [Public Cloud Projekte](/links/control-panel/publiccloud-projects)
-- **Navigationspfad:** `Public Cloud`{.action} > Wählen Sie Ihr Projekt aus
+- **Direct link:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Navigation path:** `Public Cloud`{.action} > Select your project
 
 ---
 <!-- CP-NAV-END:publiccloud-projects -->

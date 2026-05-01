@@ -1,4 +1,4 @@
----
+﻿---
 title: Restore a backup of Analytics
 excerpt: Find out how to restore a backup
 updated: 2025-02-03
@@ -19,10 +19,10 @@ We continuously improve our offers. You can follow and submit ideas to add to ou
 <!-- CP-NAV-START:publiccloud-projects -->
 ---
 
-### Acesso à Área de Cliente OVHcloud
+### OVHcloud Control Panel Access
 
-- **Ligação direta:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
-- **Caminho de navegação:** `Public Cloud`{.action} > Selecione o seu projeto
+- **Direct link:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Navigation path:** `Public Cloud`{.action} > Select your project
 
 ---
 <!-- CP-NAV-END:publiccloud-projects -->

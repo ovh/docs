@@ -1,4 +1,4 @@
----
+﻿---
 title: Update the plan of Analytics
 excerpt: Find out how to upgrade the service plan of your cluster
 updated: 2025-02-03
@@ -19,9 +19,12 @@ Learn how to upgrade the service plan of your cluster according to your needs.
 
 <!-- CP-NAV-START:publiccloud-projects -->
 ---
-### Acesso à Área de Cliente OVHcloud
-- **Ligação direta:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
-- **Caminho de navegação:** `Public Cloud`{.action} > Selecione o seu projeto
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Navigation path:** `Public Cloud`{.action} > Select your project
+
 ---
 <!-- CP-NAV-END:publiccloud-projects -->
 
