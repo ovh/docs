@@ -1,4 +1,4 @@
----
+﻿---
 title: Resize the storage of Analytics
 excerpt: Find out how to adjust the storage space of your cluster
 updated: 2025-02-03
@@ -24,12 +24,22 @@ You can increase or decrease the storage of your service at any time using eithe
 
 #### Requirements
 
-- Access to the [OVHcloud Control Panel](/links/manager)
 - A [Public Cloud project](/links/public-cloud/public-cloud) in your OVHcloud account
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Navigation path:** `Public Cloud`{.action} > Select your project
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 #### Instructions
 
-To adjust the storage space of your cluster, log in to the [OVHcloud Control Panel](/links/manager) and open your Public Cloud project. Click `Data Analysis`{.action} or `Data Streaming`{.action} in the left navigation bar, then select your engine instance.
+To adjust the storage space of your cluster, click `Data Analysis`{.action} or `Data Streaming`{.action} in the left navigation bar, then select your engine instance.
 
 ![Cluster overview](images/cluster-overview.png){.thumbnail}
 

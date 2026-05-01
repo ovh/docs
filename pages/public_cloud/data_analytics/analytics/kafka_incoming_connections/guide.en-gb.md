@@ -12,9 +12,19 @@ This guide explains how to configure your Kafka cluster to accept incoming conne
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](/links/manager)
-- A [Public Cloud project](/links/public-cloud/public-cloud) in your OVHcloud account
+- A [Public Cloud project](/links/control-panel/publiccloud-projects) in your OVHcloud account
 - A [Kafka cluster running](/pages/public_cloud/data_analytics/analytics/kafka_create_cluster) on OVHcloud Public Cloud
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Navigation path:** `Public Cloud`{.action} > Select your project
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## Instructions
 
