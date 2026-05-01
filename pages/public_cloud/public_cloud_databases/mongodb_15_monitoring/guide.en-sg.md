@@ -17,7 +17,17 @@ You can monitor your databases via the OVHcloud Control Panel (and also view sum
 - A [Public Cloud project](/links/public-cloud/public-cloud) in your OVHcloud account.
 - An OVHcloud managed MongoDB service. If you do not have one, please refer to the following guide: [Getting started with Public Cloud Databases](/pages/public_cloud/public_cloud_databases/databases_01_order_control_panel).
 - An account you can use to log in to MongoDB. If you do not have one, please refer to the following guide: [Configure your MongoDB instance to accept incoming connections](/pages/public_cloud/public_cloud_databases/mongodb_02_manage_control_panel).
-- Access to the [OVHcloud Control Panel](/links/manager).
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Navigation path:** `Public Cloud`{.action} > Select your project
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## Instructions
 
