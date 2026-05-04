@@ -6,7 +6,7 @@ updated: 2026-05-04
 
 ## Objectif
 
-Vous pouvez mettre en œuvre un outil comme [Restic](https://restic.readthedocs.io/en/stable/) afin d'automatiser les sauvegardes des données de vos instances vers Object Storage. Les sauvegardes peuvent être utilisées pour restaurer vos données en cas de problème.
+Vous pouvez mettre en œuvre un outil comme [Restic](https://restic.readthedocs.io/en/stable/) pour automatiser les sauvegardes de vos instances vers Object Storage. Les sauvegardes peuvent être utilisées pour restaurer vos données en cas de problème.
 
 ## Prérequis
 
@@ -25,7 +25,7 @@ Vous pouvez mettre en œuvre un outil comme [Restic](https://restic.readthedocs.
 
 ### Créer un bucket pour stocker les sauvegardes
 
-Renseignez la commande suivante :
+Exécutez la commande suivante :
 
 ```bash
 $ s3cmd mb s3://backup
@@ -39,7 +39,7 @@ Commencez par choisir un mot de passe pour chiffrer vos sauvegardes. Dans ce gui
 $ gpg --gen-random --armor 1 20
 ```
 
-Notez ce mot de passe dans un endroit sûr, avec vos informations d’identification S3<sup>1</sup>. Ensuite, la configuration de Restic sera placée dans des variables d'environnement. Cela inclut des informations sensibles, comme votre secret S3 et le mot de passe du dépôt. Par conséquent, assurez-vous que les commandes suivantes **n’apparaissent pas** dans le fichier d'historique de votre shell. Ajustez le contenu des variables d'environnement en fonction du nom de votre bucket, de la région et des informations d'identification API de votre utilisateur.
+Notez ce mot de passe dans un endroit sûr, avec vos informations d’identification S3<sup>1</sup>. Ensuite, configurez Restic via des variables d'environnement. Cela inclut des informations sensibles, comme votre secret S3 et le mot de passe du dépôt. Par conséquent, assurez-vous que les commandes suivantes **n’apparaissent pas** dans le fichier d'historique de votre shell. Ajustez les variables d'environnement selon le nom de votre bucket, la région et vos informations d'identification API.
 
 ```bash
 unset HISTFILE
@@ -50,7 +50,7 @@ export RESTIC_REPOSITORY="s3:https://s3-beta.eu-west-rbx-snc.cloud.snc.ovh.net/b
 export RESTIC_PASSWORD="BYhISmzRvIPMwvbzgl8ROQ=="
 ```
 
-Une fois l'environnement configuré, la commande Restic peut être appelée pour initialiser le dépôt :
+Une fois l'environnement configuré, lancez la commande Restic pour initialiser le dépôt :
 
 ```bash
 $ restic init
@@ -109,7 +109,7 @@ $ s3cmd la
 
 ## Aller plus loin
 
-Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en œuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](/links/professional-services) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
+Si vous avez besoin d'une formation ou d'une assistance technique pour mettre en œuvre nos solutions, contactez votre commercial ou rendez-vous sur [la page Professional Services](/links/professional-services) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).
 
