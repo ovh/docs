@@ -101,7 +101,7 @@ La génération 2 des volumes High-Speed est optimisée pour les workloads les p
 
 > [!tabs]
 > **Via l'espace client OVHcloud**
->> Ouvrez `Block Storage`{.action} dans le menu de gauche sous **Storage & Backup**.
+>> Ouvrez `Block Storage`{.action} dans le menu de gauche sous **Storage & backup**.
 >>
 >> Dans cette partie, cliquez sur le bouton `Créer un volume`{.action}.
 >>

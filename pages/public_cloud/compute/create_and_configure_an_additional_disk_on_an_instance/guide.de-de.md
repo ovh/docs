@@ -1,7 +1,7 @@
 ---
 title: Zusätzliches Volume auf einer Instanz erstellen und konfigurieren
-excerpt: Erfahren Sie hier, wie Sie eine neue Disk erstellen und zu Ihrer Public Cloud Instanz hinzufügen
-updated: 2025-09-19
+excerpt: Erfahren Sie hier, wie Sie ein zusätzliches Block Storage Volume erstellen, an Ihre Public Cloud Instanz anhängen und unter Linux oder Windows konfigurieren.
+updated: 2026-05-04
 ---
 
 <style>
@@ -20,7 +20,7 @@ details[open]>summary::before {
 
 ## Ziel
 
-Es ist möglich, zusätzliche Volumes für Ihre OVHcloud Public Cloud Instanzen zu erstellen.
+Sie können zusätzliche Disks für Ihre Public Cloud Instanzen erstellen.
 Das kann in folgenden Fällen hilfreich sein:
 
 - Sie möchten Ihre Speicherkapazität erhöhen, ohne das Instanzmodell zu verändern.
@@ -53,7 +53,7 @@ Das kann in folgenden Fällen hilfreich sein:
 
 ### Die verschiedenen Volume-Typen
 
-OVHcloud bietet drei Arten von Block Storage-Volumes, die jeweils an spezifische Leistungs-, Kapazitäts- und Kostenanforderungen angepasst sind. Mit diesen Lösungen können Sie Ihren Instanzen persistente Speichervolumes zuweisen und so ein hohes Maß an Zuverlässigkeit und Verfügbarkeit sicherstellen. Wenn die Funktion verfügbar ist, kann Verschlüsselung bei der Erstellung eines Volumes für alle Volume-Typen außer Classic Multi-Attach-Volumes in 3AZ-Regionen aktiviert werden.
+OVHcloud bietet drei Arten von Block Storage Volumes, die jeweils an spezifische Leistungs-, Kapazitäts- und Kostenanforderungen angepasst sind. Diese Lösungen hängen persistente Speichervolumes mit hoher Zuverlässigkeit und Verfügbarkeit an Ihre Instanzen an. Wenn die Funktion verfügbar ist, kann Verschlüsselung bei der Erstellung eines Volumes für alle Volume-Typen außer Classic Multi-Attach Volumes in 3AZ-Regionen aktiviert werden.
 
 /// details | **Classic - 500 IOPS garantiert**
 
@@ -63,7 +63,7 @@ Das Volume Classic ist eine zuverlässige und kostengünstige Speicherlösung, d
 - Speicherung kleiner bis mittlerer Datenbanken
 - Datensicherung und -archivierung
 
-In den 3AZ-Regionen sind Classic Volumes regionale Dienste, die *Distributed Erasure Coding* über mehrere Availability Zones verwenden. Dadurch wird sichergestellt, dass die Daten ohne Auswirkung oder Unterbrechung verfügbar sind, wenn eine Zone ausfällt, sofern die Anforderungen einer resilienten *Multi-Attach* Architektur erfüllt werden. Weitere Informationen finden Sie in unserer Anleitung „[Proper Usage and Limitations of Classic Multi-Attach Block Storage in 3AZ Regions](/pages/public_cloud/compute/classic_block_multi_az_limitations)“.
+In den 3AZ-Regionen sind Classic Volumes regionale Dienste, die *Distributed Erasure Coding* über mehrere Availability Zones verwenden. Dadurch wird sichergestellt, dass die Daten ohne Auswirkung oder Unterbrechung verfügbar sind, wenn eine Zone ausfällt, sofern die Anforderungen einer resilienten *Multi-Attach*-Architektur erfüllt werden. Weitere Informationen finden Sie in unserer Anleitung "[Proper Usage and Limitations of Classic Multi-Attach Block Storage in 3AZ Regions](/pages/public_cloud/compute/classic_block_multi_az_limitations)".
 
 ///
 
@@ -98,13 +98,14 @@ High Speed Volumes der zweiten Generation sind für die anspruchsvollsten Worklo
 
 > [!tabs]
 > **Über das OVHcloud Kundencenter**
+>>
 >> Öffnen Sie `Block Storage`{.action} im linken Menü unter **Storage und Backups**.
 >>
->> Klicken Sie in diesem Bereich auf den Button `Volume erstellen`{.action}.
+>> Klicken Sie auf `Volume erstellen`{.action}.
 >>
 >> ![Projekt auswählen](images/avolume01.png){.thumbnail}
 >>
->> Folgen Sie den Konfigurationsschritten, um die Optionen für Standort, Volumetyp, Verschlüsselung und Volumekapazität auszuwählen. Geben Sie einen Namen für das Volume ein und bestätigen Sie durch Klicken auf `Volume erstellen`{.action}.
+>> Wählen Sie den Standort, den Typ, die Verschlüsselung, die Kapazität und einen Namen aus. Klicken Sie auf `Volume erstellen`{.action}.
 >>
 >> > [!warning]
 >> >
@@ -112,30 +113,29 @@ High Speed Volumes der zweiten Generation sind für die anspruchsvollsten Worklo
 >> >
 >>
 >> ![create disk](images/avolume02.png){.thumbnail}
->> 
->> Die neue Disk wird anschließend im Kundencenter angezeigt.
+>>
+>> Die Disk wird nun im Kundencenter angezeigt.
 >>
 >> ![configure disk](images/avolume03.png){.thumbnail}
 >>
->> Klicken Sie rechts neben dem Volume auf den Button `...`{.action} und wählen Sie `Mit Instanz verbinden`{.action}.
+>> Klicken Sie auf den Button `...`{.action} neben dem Volume und wählen Sie `Mit Instanz verbinden`{.action}.
 >>
 >> ![attach disk 01](images/avolume04.png){.thumbnail}
->> 
->> Wählen Sie im angezeigten Fenster eine Instanz aus der Liste aus und klicken Sie auf `Bestätigen`{.action}, um das Volume anzuhängen.
+>>
+>> Wählen Sie eine Instanz aus und klicken Sie auf `Bestätigen`{.action}.
 >>
 >> ![attach disk 02](images/avolume05.png){.thumbnail}
 >>
->> Der Vorgang zum Verbinden mit der Instanz startet nun. Dieser Task kann einige Minuten in Anspruch nehmen.
+>> Der Verbindungsvorgang beginnt. Dies kann einige Minuten dauern.
 >>
 >> > [!warning]
->> >
->> > Achten Sie darauf, nicht vom aktuellen Bereich weg zu navigieren, während das Volume angehängt wird. Der Vorgang könnte unterbrochen werden.
+>> > Achten Sie darauf, die aktuelle Seite in Ihrem OVHcloud Kundencenter nicht zu verlassen, während die Disk angehängt wird. Andernfalls könnte der Vorgang unterbrochen werden.
 >> >
 >>
 > **Via Terraform**
 >> > [!warning]
 >> >
->> > Achten Sie darauf, nicht vom aktuellen Bereich weg zu navigieren, während das Volume angehängt wird. Der Vorgang könnte unterbrochen werden.
+>> > Bitte beachten Sie, dass die Volume-Typen `high-speed-gen2` oder `luks` möglicherweise nicht in allen Regionen verfügbar sind.
 >> >
 >>
 >> Volume-Typen:
@@ -190,7 +190,7 @@ High Speed Volumes der zweiten Generation sind für die anspruchsvollsten Worklo
 >> }
 >> ```
 >>
->> Sie können Ihr Block Storage Volume erstellen und es mit der gewünschten Instanz verbinden, indem Sie folgenden Befehl eingeben:
+>> Erstellen Sie das Volume und verbinden Sie es mit folgendem Befehl:
 >>
 >> ```console
 >> terraform apply
@@ -245,31 +245,31 @@ High Speed Volumes der zweiten Generation sind für die anspruchsvollsten Worklo
 >> ```
 >>
 > **Über das Horizon-Interface**
->> Gehen Sie in den Dropdown-Bereich `Volumes`{.action}, klicken Sie auf `Volumes`{.action} und dann auf `Create Volume`{.action}.
+>> Gehen Sie im Dropdown-Menü auf `Volumes`{.action} und klicken Sie dann auf `Create Volume`{.action}.
 >>
 >> ![create volume block storage](images/horizon_create_volume.png){.thumbnail}
 >>
->> Füllen Sie das Feld `Volume Name`{.action} aus und wählen Sie den gewünschten Volume-Typ. Klicken Sie dann auf  `Create Volume`{.action}
+>> Geben Sie den Volume-Namen ein, wählen Sie einen Typ aus und klicken Sie dann auf `Create Volume`{.action}.
 >>
 >> > [!warning]
 >> >
->> > Wenn der Volume-Typ "high-speed-gen2" or "luks" in der Liste nicht aufgeführt ist, ist er in dieser Region nicht verfügbar.
+>> > Bitte beachten Sie: Wenn der Volume-Typ `high-speed-gen2` oder `luks` nicht in der Liste erscheint, ist er in dieser Region nicht verfügbar.
 >> >
 >>
 >> ![create volume block storage 02](images/horizon_create_volume_02.png){.thumbnail width="1000"}
 >>
->> Klicken Sie zum Anfügen dieses Volumes an eine Instanz in der Zeile des Volumes auf den Pfeil am Ende der Zeile neben `Edit Volume`{.action}. Klicken Sie auf `Manage Attachments`{.action}.
+>> Klicken Sie auf das Pfeilsymbol am Ende der Zeile `Edit Volume` und dann auf `Manage Attachments`{.action}.
 >>
 >> ![Attach a block storage volume to an instance](images/horizon_manage_attachments.png){.thumbnail}
 >>
->> Wählen Sie die Instanz aus, an die Sie Ihr Volume anhängen möchten, und klicken Sie dann auf `Attach Volume`{.action}.
+>> Wählen Sie die Instanz aus und klicken Sie auf `Attach Volume`{.action}.
 >>
 >> ![Attach a block storage volume to an instance 02](images/horizon_manage_attachments_display.png){.thumbnail}
 >>
-> **Via the OpenStack CLI**
+> **Über die OpenStack CLI**
 >> > [!warning]
 >> >
->> > Wenn der Volume-Typ "high-speed-gen2" or "luks" in der Liste nicht aufgeführt ist, ist er in dieser Region nicht verfügbar.
+>> > Bitte beachten Sie: Wenn der Volume-Typ `high-speed-gen2` oder `luks` nicht in der Liste erscheint, ist er in dieser Region nicht verfügbar.
 >> >
 >>
 >> Volume-Typen:
@@ -285,7 +285,7 @@ High Speed Volumes der zweiten Generation sind für die anspruchsvollsten Worklo
 >>
 >> > [!warning]
 >> >
->> > Beim Erstellen eines **-luks** Datenträgers wird automatisch ein dedizierter Schlüssel erstellt.
+>> > Beim Erstellen eines **-luks**-Volumes wird automatisch ein dedizierter Schlüssel erstellt.
 >> >
 >> > Dieser Schlüssel sollte nicht geändert oder gelöscht werden, wenn er mit einem Block Storage Volume verknüpft ist. Ansonsten können die Daten auf diesem Volume und alle zugehörigen Snapshots dauerhaft nicht wiederhergestellt werden.
 >> >
@@ -296,7 +296,7 @@ High Speed Volumes der zweiten Generation sind für die anspruchsvollsten Worklo
 >> openstack volume type list
 >> ```
 >>
->> Erstellen Sie ein Volume, indem Sie mindestens dessen Größe (in GB) und einen der oben aufgeführten Typen angeben. Sie können auch einen Namen für Ihr Volume anfügen.
+>> Erstellen Sie ein Volume mit mindestens einer Größe (in GB) und einem Typ. Optional können Sie einen Namen angeben.
 >>
 >> ```bash
 >> openstack volume create --size 1 --type high-speed-gen2 volumeName # classic, high-speed, high-speed-gen2 or equivalent `-luks`
@@ -318,10 +318,41 @@ High Speed Volumes der zweiten Generation sind für die anspruchsvollsten Worklo
 >> +-----------+-------------------------------------+
 >> ```
 >>
+> **Über die OVHcloud CLI**
+>> > [!warning]
+>> >
+>> > Wenn der Volume-Typ `high-speed-gen2` oder `luks` nicht in der Liste erscheint, ist er in dieser Region nicht verfügbar.
+>> >
+>>
+>> | Option | Beschreibung |
+>> |--------|--------------|
+>> | `<region>` | Region, in der das Volume erstellt wird (z. B. `GRA11`) |
+>> | `--name` | Name des Volumes |
+>> | `--size` | Größe des Volumes in GB |
+>> | `--type` | Volume-Typ: `classic`, `high-speed`, `high-speed-gen2` oder entsprechende `-luks`-Variante |
+>> | `--wait` | Warten, bis die Erstellung abgeschlossen ist, bevor das Programm beendet wird |
+>>
+>> Erstellen Sie ein Volume, indem Sie die Region, einen Namen, die Größe in GB und einen Typ angeben:
+>>
+>> ```bash
+>> ovhcloud cloud storage-block create <region> --name <volume-name> --size <size-in-GB> --type <volume-type> --wait
+>> ```
+>>
+>> Sobald das Volume erstellt ist, hängen Sie es an eine Instanz an:
+>>
+>> | Parameter | Beschreibung |
+>> |-----------|--------------|
+>> | `<volume_id>` | ID des anzuhängenden Volumes |
+>> | `<instance_id>` | ID der Instanz, an die das Volume angehängt werden soll |
+>>
+>> ```bash
+>> ovhcloud cloud storage-block attach <volume_id> <instance_id>
+>> ```
+>>
 
 ### Konfiguration des neuen Volumes
 
-Die folgenden Beispiele setzen voraus, dass Sie als Benutzer mit erhöhten Rechten eingeloggt sind.
+Diese Beispiele setzen voraus, dass Sie mit erhöhten Rechten angemeldet sind.
 
 #### Unter Linux
 
@@ -343,7 +374,7 @@ vdb 254:16 0 10G 0 disk
 > In diesem Beispiel bezieht sich `vda` auf die originäre Disk der Instanz. Die zusätzliche Disk ist demzufolge als `vdb` benannt.
 >
 
-Erstellen Sie eine Partition auf der zusätzlichen Disk indem Sie die nachfolgenden Befehle ausführen.
+Erstellen Sie eine Partition auf der zusätzlichen Disk:
 
 Wenn Ihre zusätzliche Festplatte weniger als 2 TB groß ist:
 
@@ -414,8 +445,7 @@ Ignore/Cancel? I
 (parted) quit
 ```
 
-Formatieren Sie anschließend die neue Partition `vdb1` mit folgendem Befehl:
-
+Formatieren Sie die Partition `vdb1`:
 
 ```bash
 sudo mkfs.ext4 /dev/vdb1
@@ -434,7 +464,7 @@ Creating journal (32768 blocks): done
 Writing superblocks and filesystem accounting information: done
 ```
 
-Mounten Sie die Partition mit folgenden Befehlen:
+Mounten Sie die Partition:
 
 ```bash
 sudo mkdir /mnt/disk
@@ -444,8 +474,7 @@ sudo mkdir /mnt/disk
 sudo mount /dev/vdb1 /mnt/disk/
 ```
 
-Überprüfen Sie den Mountpunkt mit folgendem Befehl:
-
+Überprüfen Sie den Mountpunkt:
 
 ```bash
 df -h
@@ -464,10 +493,10 @@ tmpfs 982M 0 982M 0% /sys/fs/cgroup
 
 > [!primary]
 >
-> Die vorherige Anpassung ist nicht persistent, da die Disk wieder getrennt wird, wenn die Instanz neu gestartet wird. Zur Automatisierung des Mountvorgangs muss die Datei `fstab` angepasst werden.
+> Das Mounten ist nach einem Neustart nicht persistent. Um den Mountvorgang zu automatisieren, muss die Datei `fstab` angepasst werden.
 >
 
-Ermitteln Sie zunächst die UUID (Block-ID) des neuen Volumes:
+Ermitteln Sie die UUID des neuen Volumes:
 
 ```bash
 sudo blkid
@@ -478,43 +507,43 @@ sudo blkid
 /dev/vdb1: UUID="2e4a9012-bf0e-41ef-bf9a-fbf350803ac5" TYPE="ext4" PARTUUID="95c4adcc-01"
 ```
 
-Öffnen Sie `/etc/fstab` mit einem Texteditor:
+Öffnen Sie `/etc/fstab`:
 
 ```bash
 sudo nano /etc/fstab
 ```
 
-Fügen Sie die folgende Zeile zur Datei hinzu und ersetzen Sie die UUID mit Ihrer zuvor ausgelesenen:
+Fügen Sie diese Zeile hinzu und ersetzen Sie die UUID durch Ihre eigene:
 
 ```console
 UUID=2e4a9012-bf0e-41ef-bf9a-fbf350803ac5 /mnt/disk ext4 nofail 0 0
 ```
 
-Speichern Sie und verlassen Sie den Editor. Nun sollte die Festplatte nach jedem Neustart automatisch gemountet werden.
+Speichern Sie und verlassen Sie den Editor. Die Disk wird nun nach jedem Neustart automatisch gemountet.
 
 #### Unter Windows
 
 Stellen Sie eine Remotedesktop-Verbindung (RDP) mit Ihrer Windows-Instanz her.
 
-Wenn Sie eingeloggt sind, klicken Sie mit der rechten Maustaste auf das `Startmenü`{.action} und öffnen Sie die `Datenträgerverwaltung`{.action}.
+Klicken Sie mit der rechten Maustaste auf das `Startmenü`{.action} und öffnen Sie die `Datenträgerverwaltung`{.action}.
 
 ![disk management](images/start-menu.png){.thumbnail}
 
-Die neue Disk wird als unbekanntes Volume mit nicht zugewiesenem Speicherplatz angezeigt.
+Die Disk wird als unbekanntes Volume mit nicht zugewiesenem Speicherplatz angezeigt.
 
 ![Volume](images/disk-management-01.png){.thumbnail}
 
-Wird die Disk als `Offline` angezeigt, muss sie zuerst initialisiert werden. Sie können hierzu das [Windows GUI](#initDiskManagement) oder das [DISKPART Tool](#initDiskpart) verwenden. Falls nicht, [formatieren Sie nun die Disk in der Datenträgerverwaltung](#formatDiskManagement).
+Wenn die Disk offline ist, initialisieren Sie sie über die [Windows GUI](#initDiskManagement) oder mit [DISKPART](#initDiskpart). Andernfalls fahren Sie mit der [Formatierung](#formatDiskManagement) fort.
 
 ##### **Initialisierung der Disk in der Datenträgerverwaltung** <a name="initDiskManagement"></a>
 
 Klicken Sie mit der rechten Maustaste auf die Disk und wählen Sie `Online`{.action}.
 
-Wenn die Disk hier als offline angezeigt wird, ist dies wahrscheinlich auf eine auf der Instanz vorhandene Policy zurückzuführen. Um dieses Problem zu lösen, klicken Sie mit der rechten Maustaste auf die Disk und wählen Sie `Online`{.action}.
+Wenn die Disk offline ist, klicken Sie mit der rechten Maustaste darauf und wählen Sie `Online`{.action}.
 
 ![offline disk](images/disk-management-02.png){.thumbnail}
 
-Klicken Sie mit der rechten Maustaste auf die Disk und wählen Sie dieses Mal `Festplatte initialisieren`{.action}.
+Klicken Sie erneut mit der rechten Maustaste darauf und wählen Sie `Festplatte initialisieren`{.action}.
 
 ![offline disk](images/disk-management-03.png){.thumbnail}
 
@@ -528,7 +557,7 @@ Klicken Sie mit der rechten Maustaste auf das `Startmenü`{.action} und öffnen 
 
 ![Disk-Initialisierung](images/diskpart.png){.thumbnail}
 
-Geben Sie `cmd` ein und klicken Sie auf `OK`{.action}, um die Kommandozeilenanwendung zu öffnen.
+Geben Sie `cmd` ein und klicken Sie auf `OK`{.action}.
 
 ![Prompt](images/run-prompt.png){.thumbnail}
 
@@ -538,7 +567,7 @@ In der Eingabeaufforderung starten Sie DISKPART:
 C:\> diskpart
 ```
 
-Verwenden Sie folgende Befehle in DISKPART, um die Festplatte als "Online" zu konfigurieren:
+Führen Sie diese DISKPART-Befehle aus, um die Disk online zu schalten:
 
 ```console
 DISKPART> san
@@ -582,44 +611,44 @@ DiskPart successfully onlined the selected disk.
 
 ##### **Formatierung der Disk** <a name="formatDiskManagement"></a>
 
-Klicken Sie in der `Datenträgerverwaltung`{.action} mit der rechten Maustaste auf die neue Disk und wählen Sie `Neues einfaches Volume...`{.action}.
+Klicken Sie in der `Datenträgerverwaltung`{.action} mit der rechten Maustaste auf die Disk und wählen Sie `Neues einfaches Volume...`{.action}.
 
 ![Disk Format](images/format-disk-01.png){.thumbnail}
 
-Klicken Sie im Assistenten auf `Weiter`{.action}, um die Größe des Volumes festzulegen. Sie sollte standardmäßig auf das Maximum festgelegt sein. Klicken Sie auf `Weiter`{.action}, um fortzufahren.
+Klicken Sie im Assistenten auf `Weiter`{.action}, um die Volumegröße zu bestätigen (standardmäßig auf das Maximum festgelegt), und dann erneut auf `Weiter`{.action}.
 
 ![Disk Format](images/format-disk-03.png){.thumbnail}
 
-Akzeptieren Sie den neuen Laufwerksbuchstaben oder wählen Sie einen anderen aus und klicken Sie dann auf `Weiter`{.action}.
+Akzeptieren Sie den Laufwerksbuchstaben oder wählen Sie einen anderen aus und klicken Sie dann auf `Weiter`{.action}.
 
 ![Disk Format](images/format-disk-04.png){.thumbnail}
 
-Benennen Sie das Volume (optional) und bestätigen Sie die Formatierungsoptionen, indem Sie auf `Weiter`{.action} klicken.
+Benennen Sie das Volume (optional) und klicken Sie auf `Weiter`{.action}.
 
 ![Disk Format](images/format-disk-05.png){.thumbnail}
 
-Klicken Sie im letzten Fenster auf `Beenden`{.action}, um die Disk zu formatieren.
+Klicken Sie auf `Beenden`{.action}, um die Disk zu formatieren.
 
 ![Disk Format](images/format-disk-06.png){.thumbnail}
 
-Das Volume ist dann als Laufwerk im Dateiexplorer verfügbar.
+Die Disk wird im Datei-Explorer als Laufwerk angezeigt.
 
 ### Volume abtrennen
 
-Wenn Sie ein Volume von Ihrer Instanz trennen möchten, ist die beste Vorgehensweise, es vorher im Betriebssystem auszuhängen.
+Bevor Sie ein Volume abtrennen, hängen Sie es im Betriebssystem aus.
 
 > [!warning]
 >
 > Es kann eine Fehlermeldung angezeigt werden, wenn auf der zusätzlichen Disk Software oder Prozesse ausgeführt werden. In diesem Fall wird empfohlen, zunächst alle Prozesse zu beenden.
 >
 
-Wählen Sie das verwendete OS aus, um **das Volume** zu entfernen:
+So **hängen Sie das Volume** im Betriebssystem aus, bevor Sie es von der Instanz trennen:
 
 > [!tabs]
 > **Unter Linux** <a name="linux"></a>
->> 
->> Stellen Sie eine [SSH-Verbindung](/pages/public_cloud/compute/public-cloud-first-steps#connect-instance) zur Instanz her und verwenden Sie den folgenden Befehl, um die eingehängten Disks aufzulisten.
->> 
+>>
+>> [Verbinden Sie sich per SSH](/pages/public_cloud/compute/public-cloud-first-steps#connect-instance) und listen Sie dann die angehängten Disks auf:
+>>
 >> ```bash
 >> lsblk
 >> ```
@@ -632,13 +661,13 @@ Wählen Sie das verwendete OS aus, um **das Volume** zu entfernen:
 >> └─vdb1    8:1    0   10G  0 part /mnt/disk
 >> ```
 >> 
->> Hängen Sie die Partition mit folgendem Befehl aus:
+>> Hängen Sie die Partition aus:
 >>
 >> ```bash
 >> sudo umount /dev/vdb1
 >> ```
 >>
->> Löschen Sie die zugehörige UUID aus der Datei `fstab`, um den Prozess abzuschließen. Wird dies nicht durchgeführt, wird die Partition nach einem Neustart automatisch wieder gemountet.
+>> Löschen Sie die zugehörige UUID aus der Datei `fstab`, andernfalls wird die Partition nach einem Neustart automatisch wieder gemountet.
 >>
 >> ```bash
 >> sudo nano /etc/fstab
@@ -648,19 +677,19 @@ Wählen Sie das verwendete OS aus, um **das Volume** zu entfernen:
 >>
 >> Stellen Sie eine Remotedesktop-Verbindung (RDP) mit Ihrer Windows-Instanz her.
 >>
->> Wenn Sie eingeloggt sind, klicken Sie mit der rechten Maustaste auf das `Startmenü`{.action} und öffnen Sie die `Datenträgerverwaltung`{.action}.
+>> Klicken Sie mit der rechten Maustaste auf das `Startmenü`{.action} und öffnen Sie die `Datenträgerverwaltung`{.action}.
 >>
 >> ![Datenträgerverwaltung](images/start-menu.png){.thumbnail}
 >>
->> Klicken Sie mit der rechten Maustaste auf das Volume, das Sie aushängen möchten, und wählen Sie `Laufwerkbuchstaben und -pfade ändern...`{.action}.
+>> Klicken Sie mit der rechten Maustaste auf das Volume und wählen Sie `Laufwerkbuchstaben und -pfade ändern...`{.action}.
 >>
 >> ![unmount disk](images/unmountdisk.png){.thumbnail}
 >>
->> Klicken Sie auf `Entfernen`{.action}, um die Disk zu entfernen.
+>> Klicken Sie auf `Entfernen`{.action}.
 >>
 >> ![remove disk](images/changedriveletter.png){.thumbnail}
 >>
->> Klicken Sie anschließend auf `Ja`{.action}, um den Löschvorgang zu bestätigen.
+>> Klicken Sie auf `Ja`{.action}, um zu bestätigen.
 >>
 >> ![remove disk](images/confirmunmounting.png){.thumbnail}
 >>
@@ -671,20 +700,21 @@ Zum Schluss trennen wir das Volume von der Instanz:
 
 > [!tabs]
 > **Über das OVHcloud Kundencenter**
->> Gehen Sie in Ihrem OVHcloud Kundencenter in den Bereich `Public Cloud`{.action} und klicken Sie im Menü links unter **Storage und Backups** auf `Block Storage`{.action}.
+>>
+>> Öffnen Sie `Block Storage`{.action} im linken Menü unter **Storage und Backups**.
 >>
 >> Klicken Sie auf den Button `...`{.action} neben dem entsprechenden Volume und wählen Sie `Instanz trennen`{.action}.
 >>
 >> ![detach disk](images/detachinstance.png){.thumbnail}
 >>
->> Klicken Sie im neuen Fenster auf `Bestätigen`{.action}, um den Vorgang zu starten.
+>> Klicken Sie auf `Bestätigen`{.action}.
 >>
 >> ![Disk Detach](images/confirminstancedetach.png){.thumbnail}
->> 
+>>
 > **Via Terraform**
 >>
->> Löschen Sie zunächst die entsprechenden Zeilen aus Ihrer Terraform-Datei:
->> 
+>> Löschen Sie diese Zeilen aus Ihrer Terraform-Datei:
+>>
 >> ```python
 >> # Volume mit Instanz verbinden
 >> resource "openstack_compute_volume_attach_v2" "volume_attach" {
@@ -692,8 +722,8 @@ Zum Schluss trennen wir das Volume von der Instanz:
 >>   volume_id   = openstack_blockstorage_volume_v3.terraform_volume.id
 >> }
 >> ```
->> 
->> Geben Sie folgenden Befehl ein, um zu überprüfen, ob die richtige Ressource gelöscht wird:
+>>
+>> Führen Sie diesen Befehl aus, um die geplante Löschung zu überprüfen:
 >>
 >> ```console
 >> terraform plan
@@ -724,8 +754,14 @@ Zum Schluss trennen wir das Volume von der Instanz:
 >> Plan: 0 to add, 0 to change, 1 to destroy.
 >> ```
 >>
->> Führen Sie die Änderungen durch, indem Sie folgenden Befehl eingeben:
->> 
+>> Wenden Sie die Änderungen an:
+>>
+>> ```console
+>> terraform apply
+>> ```
+>>
+>> Die Ausgabe sollte wie folgt aussehen:
+>>
 >> ```console
 >> $ terraform apply
 >> openstack_compute_volume_attach_v2.va_1: Refreshing state... [id=11cc1279-xxxx-xxxx-xxxx-3ace4c954780/daf3a86e-xxxx-xxxx-xxxx-ac7b6ffbb806]
@@ -760,6 +796,18 @@ Zum Schluss trennen wir das Volume von der Instanz:
 >>
 >> Apply complete! Resources: 0 added, 0 changed, 1 destroyed.
 >> ```
+>>
+> **Über die OVHcloud CLI**
+>>
+>> | Parameter | Beschreibung |
+>> |-----------|--------------|
+>> | `<volume_id>` | ID des abzutrennenden Volumes |
+>> | `<instance_id>` | ID der Instanz, von der das Volume abgetrennt werden soll |
+>>
+>> ```bash
+>> ovhcloud cloud storage-block detach <volume_id> <instance_id>
+>> ```
+>>
 
 ## Weiterführende Informationen
 
