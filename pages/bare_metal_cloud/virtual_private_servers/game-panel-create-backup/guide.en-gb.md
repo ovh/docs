@@ -45,8 +45,6 @@ Click `Create backup now`{.action}.
 
 Once the backup is complete, the file is available for download in the same settings section.
 
-<!-- SCREENSHOT-STATUS: playwright -->
-![List of available backups](images/backup-list.png){.thumbnail}
 
 ## Go further
 

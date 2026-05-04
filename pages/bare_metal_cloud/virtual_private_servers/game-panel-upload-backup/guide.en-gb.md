@@ -44,9 +44,6 @@ If no backup is available, you must first create one. Refer to our guide on [Cre
 
 Once the backup has been downloaded, extract the archive on your computer. After extraction, you should see the backup files and folders, including the `serverfiles` directory.
 
-<!-- SCREENSHOT-STATUS: manual-edit | reason: local OS file manager view, third-party UI -->
-![Extracted backup showing the serverfiles directory](images/extracted-backup.png){.thumbnail}
-
 ### Step 5 — Connect to your server via SFTP
 
 Connect to your game server via SFTP. Refer to our guide on [Enabling SFTP on the Game Panel](/pages/bare_metal_cloud/virtual_private_servers/game-panel-enable-sftp) for setup instructions.
@@ -58,6 +55,9 @@ Before continuing, ensure your game server is fully stopped from the Game Panel.
 ### Step 7 — Replace the remote serverfiles folder
 
 Once connected through SFTP, locate the remote `serverfiles` folder on your server.
+
+<!-- SCREENSHOT-STATUS: manual-edit | reason: local OS file manager view, third-party UI -->
+![Serverfiles directory on the server](images/serverfiles.png){.thumbnail}
 
 Before uploading the backup, you should either:
 
