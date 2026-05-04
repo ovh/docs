@@ -77,7 +77,7 @@ Deux méthodes permettent d'accéder à l'interface d'administration Keycloak de
 
 **Via le Dashboard** : connectez-vous à `admin.dashboard.<nomdedomaine>`, puis cliquez sur votre nom en haut à droite. Un menu apparaît avec un lien `IAM`{.action} qui vous redirige directement vers l'interface Keycloak.
 
-![Lien IAM dans le menu du Dashboard](images/dashboard_iam_link.png){.thumbnail}
+![Lien IAM dans le menu du Dashboard](images/dashboard_iam_link_fr.png){.thumbnail}
 
 **Accès direct** : vous pouvez également accéder à Keycloak directement via `admin.keycloak.<nomdedomaine>`.
 
