@@ -65,9 +65,11 @@ Beforehand, if you want to store your data (Tweets) in an **object container**, 
 
 ### Uploading your dataset on Public Cloud Storage
 
+<!-- CP-STEPS-START:upload-dataset-cp -->
 If you want to upload it from the [OVHcloud Control Panel](/links/manager), go to the Object Storage section and create a new object container by clicking `Object Storage`{.action} > `Create an object container`{.action}.
 
 ![image](images/new-object-container.png){.thumbnail}
+<!-- CP-STEPS-END:upload-dataset-cp -->
 
 If you want to run it with the CLI, just follow [this guide](/pages/public_cloud/ai_machine_learning/cli_17_how_to_cli_data_notebooks). You have to choose the region, the name of your container and the path where your data is located and use the following command:
 

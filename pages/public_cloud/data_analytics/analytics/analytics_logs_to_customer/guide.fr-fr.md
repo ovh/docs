@@ -1,4 +1,4 @@
----
+﻿---
 title: "Mettre en place le transfert de logs d'un service Analytics (EN)"
 excerpt: Find out how to forward logs of your Analytics service to your Logs Data Platform data stream
 updated: 2025-02-03
@@ -12,12 +12,22 @@ Analytics services allow you to send logs of your service to your own Logs Data 
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](/links/manager)
 - An [Analytics service](/links/public-cloud/analytics) up and running
 - Access to the [OVHcloud API](/links/api)
 - A Logs Data Platform account within this OVHcloud account with at least one destination stream configured
     - If you are not familiar with all the LDP *Stream* configuration possibilities, simply create a new one with the default options (indexing & websocket enabled, long-term storage disabled) for the purpose of this guide.
 - A running Analytics service
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Navigation path:** `Public Cloud`{.action} > Select your project
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## Instructions
 

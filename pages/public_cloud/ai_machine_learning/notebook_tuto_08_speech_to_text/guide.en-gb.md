@@ -47,6 +47,7 @@ Direct link to the full code can be found [here](https://github.com/ovh/ai-train
 
 ### Launching a Jupyter notebook with "Miniconda" via UI
 
+<!-- CP-STEPS-START:launch-notebook-ui -->
 To launch your notebook from the [OVHcloud Control Panel](/links/manager), refer to the following steps.
 
 #### Code editor
@@ -77,6 +78,7 @@ GPU is recommended since audio transcription is resource intensive.
 >
 > Here, using `1 GPU` is sufficient.
 >
+<!-- CP-STEPS-END:launch-notebook-ui -->
 
 ### Launching a Jupyter notebook with "Miniconda" via CLI
 
