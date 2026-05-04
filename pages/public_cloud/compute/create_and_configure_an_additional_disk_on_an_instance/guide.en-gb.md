@@ -1,7 +1,7 @@
 ---
 title: How to create and configure an additional disk on an instance
-excerpt: Find out how to attach a new volume to your Public Cloud instance
-updated: 2026-04-07
+excerpt: Find out how to create an additional Block Storage volume, attach it to your Public Cloud instance, and configure it on Linux or Windows.
+updated: 2026-05-04
 ---
 
 <style>
@@ -98,6 +98,7 @@ Generation 2 High-Speed volumes are optimized for the most demanding workloads. 
 
 ### Attaching a new volume
 
+<!-- CP-STEPS-START:attach-volume-cp -->
 > [!tabs]
 > **Via the OVHcloud Control Panel**
 >>
@@ -137,7 +138,7 @@ Generation 2 High-Speed volumes are optimized for the most demanding workloads. 
 > **Via Terraform**
 >> > [!warning]
 >> >
->> > Please note that the "high-speed-gen2" or "luks" volume types may not be available in all regions.
+>> > Please note that the `high-speed-gen2` or `luks` volume types may not be available in all regions.
 >> >
 >>
 >> Types of volumes:
@@ -255,7 +256,7 @@ Generation 2 High-Speed volumes are optimized for the most demanding workloads. 
 >>
 >> > [!warning]
 >> >
->> > Please note that if the volume type "high-speed-gen2" or "luks" does not appear in the list, this means that it is not available in this region.
+>> > Please note that if the volume type `high-speed-gen2` or `luks` does not appear in the list, this means that it is not available in this region.
 >> >
 >>
 >> ![create volume block storage 02](images/horizon_create_volume_02.png){.thumbnail width="1000"}
@@ -271,7 +272,7 @@ Generation 2 High-Speed volumes are optimized for the most demanding workloads. 
 > **Via the OpenStack CLI**
 >> > [!warning]
 >> >
->> > Please note that if the volume type "high-speed-gen2" or "luks" does not appear in the list, this means that it is not available in this region.
+>> > Please note that if the volume type `high-speed-gen2` or `luks` does not appear in the list, this means that it is not available in this region.
 >> >
 >>
 >> Types of volumes:
@@ -323,7 +324,7 @@ Generation 2 High-Speed volumes are optimized for the most demanding workloads. 
 > **Via the OVHcloud CLI**
 >> > [!warning]
 >> >
->> > Please note that if the volume type "high-speed-gen2" or "luks" does not appear in the list, this means that it is not available in this region.
+>> > If the volume type `high-speed-gen2` or `luks` does not appear in the list, it is not available in this region.
 >> >
 >>
 >> | Option | Description |
@@ -348,9 +349,10 @@ Generation 2 High-Speed volumes are optimized for the most demanding workloads. 
 >> | `<instance_id>` | ID of the instance to attach the volume to |
 >>
 >> ```bash
->> ovhcloud cloud storage-block attach <volume-id> <instance-id>
+>> ovhcloud cloud storage-block attach <volume_id> <instance_id>
 >> ```
 >>
+<!-- CP-STEPS-END:attach-volume-cp -->
 
 ### Configuring the new disk
 
@@ -701,10 +703,11 @@ Here's how to **unmount the volume** from the operating system before detaching 
 
 Finally, we will detach the volume from the instance:
 
+<!-- CP-STEPS-START:detach-volume-cp -->
 > [!tabs]
 > **Via the OVHcloud Control Panel**
 >>
->> In the Control Panel, go to `Public Cloud`{.action} > `Block Storage`{.action} under **Storage & backup**.
+>> Open `Block Storage`{.action} in the left-hand menu under **Storage & backup**.
 >>
 >> Click the `...`{.action} button next to the corresponding volume and select `Detach from instance`{.action}.
 >>
@@ -808,9 +811,10 @@ Finally, we will detach the volume from the instance:
 >> | `<instance_id>` | ID of the instance to detach the volume from |
 >>
 >> ```bash
->> ovhcloud cloud storage-block detach <volume-id> <instance-id>
+>> ovhcloud cloud storage-block detach <volume_id> <instance_id>
 >> ```
 >>
+<!-- CP-STEPS-END:detach-volume-cp -->
 
 ## Go further
 

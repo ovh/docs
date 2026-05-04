@@ -1,7 +1,7 @@
 ---
 title: Créer et configurer un disque supplémentaire sur une instance
 excerpt: Découvrez comment créer un volume Block Storage supplémentaire, l'attacher à votre instance Public Cloud et le configurer sous Linux ou Windows.
-updated: 2026-04-07
+updated: 2026-05-04
 ---
 
 <style>
@@ -137,7 +137,7 @@ La génération 2 des volumes High-Speed est optimisée pour les workloads les p
 > **Via Terraform**
 >> > [!warning]
 >> > 
->> > Veuillez noter que les types de volume « high-speed-gen2 » ou « luks » peuvent ne pas être disponibles dans toutes les régions.
+>> > Veuillez noter que les types de volume `high-speed-gen2` ou `luks` peuvent ne pas être disponibles dans toutes les régions.
 >> >
 >>
 >> Types de volumes :
@@ -255,7 +255,7 @@ La génération 2 des volumes High-Speed est optimisée pour les workloads les p
 >>
 >> > [!warning]
 >> >
->> > Veuillez noter que si le type de volume « high-speed-gen2 » ou « luks » n'apparaît pas dans la liste, cela signifie qu'il n'est pas disponible dans cette région.
+>> > Veuillez noter que si le type de volume `high-speed-gen2` ou `luks` n'apparaît pas dans la liste, cela signifie qu'il n'est pas disponible dans cette région.
 >> >
 >>
 >> ![create volume block storage 02](images/horizon_create_volume_02.png){.thumbnail width="1000"}
@@ -271,7 +271,7 @@ La génération 2 des volumes High-Speed est optimisée pour les workloads les p
 > **Via la CLI OpenStack**
 >> > [!warning]
 >> >
->> > Veuillez noter que si le type de volume « high-speed-gen2 » ou « luks » n'apparaît pas dans la liste, cela signifie qu'il n'est pas disponible dans cette région.
+>> > Veuillez noter que si le type de volume `high-speed-gen2` ou `luks` n'apparaît pas dans la liste, cela signifie qu'il n'est pas disponible dans cette région.
 >> >
 >>
 >> Types de volumes :
@@ -323,7 +323,7 @@ La génération 2 des volumes High-Speed est optimisée pour les workloads les p
 > **Via la CLI OVHcloud**
 >> > [!warning]
 >> >
->> > Veuillez noter que si le type de volume « high-speed-gen2 » ou « luks » n'apparaît pas dans la liste, cela signifie qu'il n'est pas disponible dans cette région.
+>> > Si le type de volume `high-speed-gen2` ou `luks` n'apparaît pas dans la liste, il n'est pas disponible dans cette région.
 >> >
 >>
 >> | Option | Description |
@@ -331,7 +331,7 @@ La génération 2 des volumes High-Speed est optimisée pour les workloads les p
 >> | `<region>` | Région dans laquelle le volume sera créé (ex. : `GRA11`) |
 >> | `--name` | Nom du volume |
 >> | `--size` | Taille du volume en GB |
->> | `--type` | Type de volume : `classic`, `high-speed`, `high-speed-gen2`, ou l'équivalent avec `-luks` |
+>> | `--type` | Type de volume : `classic`, `high-speed`, `high-speed-gen2`, ou la variante `-luks` correspondante |
 >> | `--wait` | Attend la fin de la création avant de quitter |
 >>
 >> Créez un volume en spécifiant la région, un nom, la taille en GB et un type :
@@ -348,7 +348,7 @@ La génération 2 des volumes High-Speed est optimisée pour les workloads les p
 >> | `<instance_id>` | ID de l'instance à laquelle attacher le volume |
 >>
 >> ```bash
->> ovhcloud cloud storage-block attach <volume-id> <instance-id>
+>> ovhcloud cloud storage-block attach <volume_id> <instance_id>
 >> ```
 >>
 
@@ -700,7 +700,9 @@ Pour finir, nous allons détacher le volume de l'instance :
 
 > [!tabs]
 > **Via l'espace client OVHcloud**
->> Dans l'espace client, allez à `Public Cloud`{.action} > `Block Storage`{.action} sous **Storage & Backup**.
+>>
+>> Ouvrez `Block Storage`{.action} dans le menu de gauche sous **Storage & backup**.
+>>
 >> Cliquez sur le bouton `...`{.action} à côté du volume correspondant et sélectionnez `Détacher de l'instance`{.action}.
 >>
 >> ![detach disk](images/detachinstance.png){.thumbnail}
@@ -803,7 +805,7 @@ Pour finir, nous allons détacher le volume de l'instance :
 >> | `<instance_id>` | ID de l'instance de laquelle détacher le volume |
 >>
 >> ```bash
->> ovhcloud cloud storage-block detach <volume-id> <instance-id>
+>> ovhcloud cloud storage-block detach <volume_id> <instance_id>
 >> ```
 >>
 
