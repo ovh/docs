@@ -1,7 +1,7 @@
 ---
 title: "OPCP - IAM Rights Management"
-excerpt: "Manage users, roles and OpenStack project access on your On-Prem Cloud Platform through Keycloak (Realm Master)"
-updated: 2026-04-30
+excerpt: "Find out how to manage users, roles, and access rights on your On-Prem Cloud Platform with Keycloak"
+updated: 2026-05-04
 ---
 
 ## Objective
