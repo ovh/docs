@@ -35,9 +35,11 @@ Analytics services allow you to send logs of your service to your own Logs Data 
 
 #### Retrieve your LDP destination `streamId`:
 
+<!-- CP-STEPS-START:retrieve-ldp-streamid -->
 - In the [OVHcloud Control Panel](/links/manager) go to the LDP page.
 - Go to the `Data stream` tab.
 - Choose your target stream and click on `Copy stream ID`{.action}.
+<!-- CP-STEPS-END:retrieve-ldp-streamid -->
 
 #### Retrieve your LDP destination `serviceName`:
 
@@ -45,8 +47,10 @@ Analytics services allow you to send logs of your service to your own Logs Data 
 
 #### Retrieve your `clusterId`:
 
+<!-- CP-STEPS-START:retrieve-clusterid -->
 - In the OVHcloud Control Panel, go to your Analytics service.
 - Retrieve your `Cluster ID` from the related field.
+<!-- CP-STEPS-END:retrieve-clusterid -->
 
 ### Step 2 - Create your subscription
 

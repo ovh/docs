@@ -30,14 +30,17 @@ This guide explains how to configure your Kafka cluster to accept incoming conne
 
 ### Configure the Apache Kafka service
 
+<!-- CP-STEPS-START:configure_kafka_service_overview -->
 Once your Kafka service is up and running, you will have to define at least one user and one authorised IP (if not already provided during the order) in order to fully connect to the service (as producer or consumer).
 
 The `Dashboard`{.action} tab automatically updates when your service is ready.
 
 ![Kafka General information](images/kafka_cluster_ready_to_configure.v2.png){.thumbnail}
+<!-- CP-STEPS-END:configure_kafka_service_overview -->
 
 #### Set up a user
 
+<!-- CP-STEPS-START:set_up_user -->
 Switch to the `Users`{.action} tab. An admin user name `avnadmin` is preconfigured during the service installation. 
 
 ![Users](images/kafka_users.v2.png){.thumbnail}
@@ -51,9 +54,11 @@ Enter a username, then click `Create User`{.action}.
 Passwords need to be reset from the `Users`{.action} table.
 
 ![Password reset](images/kafka_user_password_reset1.v2.png){.thumbnail}
+<!-- CP-STEPS-END:set_up_user -->
 
 #### Configure authorised IPs
 
+<!-- CP-STEPS-START:configure_authorised_ips -->
 > [!warning]
 > For security reasons the default network configuration doesn't allow any incoming connections. It is thus critical to authorize the suitable IP addresses in order to successfully access your Kafka cluster.
 
@@ -67,6 +72,7 @@ You will be able to remove IPs from the table afterward.
 ![Add IP](images/kafka_add_ip.v2.png){.thumbnail}
 
 Your Apache Kafka service is now fully accessible!
+<!-- CP-STEPS-END:configure_authorised_ips -->
 Optionally, you can configure access control lists (ACL) for granular permissions and create topics, as shown below.
 
 ## We want your feedback!

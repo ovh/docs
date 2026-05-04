@@ -56,6 +56,7 @@ Analytics engines are managed services, which means that they are not fully conf
 
 ### Using the OVHcloud Control Panel
 
+<!-- CP-STEPS-START:using-the-ovhcloud-control-panel -->
 Click [this link](/links/control-panel/publiccloud-projects) to access the `Public Cloud`{.action} section, then click on `Data Streaming`{.action} or `Data Analysis`{.action} in the left-hand navigation bar, select your engine instance then the `Advanced configuration`{.action} tab.
 
 Select the key of the advanced setting you want to define, then set its value.
@@ -66,6 +67,7 @@ When ready, click on `Update advanced configuration`{.action}.
 >
 > On the top-right of the advanced configuration tab, you can see the settings which are already defined.
 >
+<!-- CP-STEPS-END:using-the-ovhcloud-control-panel -->
 
 ### Using API
 

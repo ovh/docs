@@ -41,15 +41,19 @@ In order to connect to the Apache Kafka service, it is required to use server an
 
 ##### Server certificate
 
+<!-- CP-STEPS-START:server-certificate -->
 The server CA (*Certificate Authority*) certificate can be downloaded from the `Dashboard`{.action} tab:
 
 ![Kafka server certificate](images/kafka_get_server_certificate.v2.png){.thumbnail}
+<!-- CP-STEPS-END:server-certificate -->
 
 ##### User certificate and access key
 
+<!-- CP-STEPS-START:user-certificate-and-access-key -->
 The user certificate and the user access key can be downloaded from the `Users`{.action} tab:
 
 ![User informations](images/kafka_user_certificate_and_access_key.v2.png){.thumbnail}
+<!-- CP-STEPS-END:user-certificate-and-access-key -->
 
 #### Install an Apache Kafka CLI
 

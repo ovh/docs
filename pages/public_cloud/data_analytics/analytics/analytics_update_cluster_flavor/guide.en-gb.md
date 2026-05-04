@@ -30,6 +30,7 @@ This option is available through the OVHcloud [API](/links/api) and the [Control
 
 ### Instructions
 
+<!-- CP-STEPS-START:upgrade-instructions -->
 To adjust the flavor of your cluster, click `Data Analysis`{.action} or `Data Streaming`{.action} in the left navigation bar, then select your engine instance.
 
 ![Cluster overview](images/cluster_overview.png){.thumbnail}
@@ -37,6 +38,7 @@ To adjust the flavor of your cluster, click `Data Analysis`{.action} or `Data St
 Click `Change node template`{.action} and adjust the flavor of your cluster.
 
 ![Change node template](images/flavor_change.png){.thumbnail}
+<!-- CP-STEPS-END:upgrade-instructions -->
 
 ## How to downgrade your flavor
 

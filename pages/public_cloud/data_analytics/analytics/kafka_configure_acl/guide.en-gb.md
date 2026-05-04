@@ -30,6 +30,7 @@ This guide explains how to configure Access Control Lists (ACLs) via the OVHclou
 
 ### Configure ACLs on topics
 
+<!-- CP-STEPS-START:configure-acls-on-topics -->
 Kafka supports access control lists (ACLs) to manage permissions on topics. This approach allows you to limit the operations that are available to specific connections and to restrict access to certain data sets, which improves the security of your data.
 
 By default the admin user has access to all topics with admin privileges. You can define some additional ACLs for all users / topics, by clicking on the `Add an ACL`{.action} button from the `ACL`{.action} tab:
@@ -48,6 +49,7 @@ For a particular user, and one topic (or all with '*'), define the ACL with the 
 *Note*: Write permission allows the service user to create new indexes that match the pattern, but it does not allow deletion of those indexes.
 
 When multiple rules match, they are applied in the order listed above. If no rules match, access is denied.
+<!-- CP-STEPS-END:configure-acls-on-topics -->
 
 ## We want your feedback!
 

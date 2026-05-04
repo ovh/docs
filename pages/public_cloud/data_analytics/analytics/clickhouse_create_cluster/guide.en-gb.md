@@ -27,6 +27,7 @@ ClickHouse is an open-source, columnar analytical database system designed for r
 
 ## Instructions
 
+<!-- CP-STEPS-START:clickhouse_create_cluster_subscribe -->
 ### Subscribing to the service
 
 Click on `Data Streaming`{.action} in the left-hand navigation bar under **Databases & Analytics**.
@@ -81,6 +82,7 @@ When you are ready, click the `Order`{.action} button to create your service.
 In a matter of minutes, your new ClickHouse service will be deployed.
 
 Messages in the OVHcloud Control Panel will inform you when the ClickHouse cluster is ready to use.
+<!-- CP-STEPS-END:clickhouse_create_cluster_subscribe -->
 
 ## We want your feedback!
 

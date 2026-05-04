@@ -30,12 +30,15 @@ ClickHouse is an open-source, columnar analytical database system designed for r
 
 ### Configuring the ClickHouse service
 
+<!-- CP-STEPS-START:clickhouse_user_setup_intro -->
 Once your ClickHouse service is up and running, you must define at least one user and one authorised IP (if not already provided during the order) to fully connect to the service (as producer or consumer).
 
 The `Dashboard`{.action} tab automatically updates when your service is ready.
+<!-- CP-STEPS-END:clickhouse_user_setup_intro -->
 
 #### Setting up a user
 
+<!-- CP-STEPS-START:clickhouse_user_setup -->
 Switch to the `Users`{.action} tab. An admin user named `avnadmin` is preconfigured during the service installation.
 
 You can add more users by clicking the `Add user`{.action} button.
@@ -43,9 +46,11 @@ You can add more users by clicking the `Add user`{.action} button.
 Enter a username, then click `Create User`{.action}.
 
 Passwords need to be reset from the `Users`{.action} table.
+<!-- CP-STEPS-END:clickhouse_user_setup -->
 
 #### Configuring authorised IPs
 
+<!-- CP-STEPS-START:clickhouse_ip_authorisation -->
 > [!warning]
 > For security reasons, the default network configuration doesn't allow any incoming connections. You must therefore authorise the suitable IP addresses to access your ClickHouse cluster.
 
@@ -56,6 +61,7 @@ Add the IP address of your computer by using the `Current IP`{.action} button.
 You can remove IPs from the table afterward.
 
 Your ClickHouse service is now fully accessible!
+<!-- CP-STEPS-END:clickhouse_ip_authorisation -->
 
 Optionally, you can configure access control lists (ACL) for granular permissions and create topics.
 
