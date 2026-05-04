@@ -38,6 +38,7 @@ The default RAID level for OVHcloud server installations is RAID 1, which double
 
 ### Using the OVHcloud Control Panel
 
+<!-- CP-STEPS-START:install-os-raid0 -->
 From the `General information`{.action} tab, click on `...`{.action} next to the operating system and then click `Install`{.action}.
 
 Select the operating system you want to install and then click `Next`{.action}.
@@ -57,6 +58,7 @@ Configure the partitions as you see fit and then click `Next`{.action}.
 Finally, click `Confirm`{.action}.
 
 ![Confirm the RAID 0 installation settings](images/server_installation_raid0_5.png){.thumbnail}
+<!-- CP-STEPS-END:install-os-raid0 -->
 
 After your server has been installed, check the partition sizes by logging on to the server via SSH and running the following command:
 
@@ -66,6 +68,7 @@ df -h
 
 ### Using rescue mode
 
+<!-- CP-STEPS-START:boot-rescue-mode -->
 In the **General Information** tab, look for `Boot` and click on `...`{.action}. Then click the `Edit`{.action} button to change the boot system.
 
 ![Edit boot setting in the General Information tab](images/rescue_mode_raid0_1.png){.thumbnail}
@@ -83,6 +86,7 @@ Click `Next`{.action} and then Confirm`{.action} in the **Summary**.
 Once the change is completed, click on `...`{.action} next to “Status” in the box labelled **Service status**. Select `Restart`{.action} and the server will restart into rescue mode.
 
 ![Restart the server from the Service status section](images/server_installation_raid0_6.png){.thumbnail}
+<!-- CP-STEPS-END:boot-rescue-mode -->
 
 When your server reboots, log in to it via SSH using the rescue mode credentials that were emailed to you.
 

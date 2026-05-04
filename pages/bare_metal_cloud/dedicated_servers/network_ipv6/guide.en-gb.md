@@ -82,12 +82,14 @@ In our examples, we'll use the `nano` text editor. Feel free to use the text edi
 The first step is to identify the IPv6 block and gateway assigned to your server.
 
 > [!tabs]
+<!-- CP-STEPS-START:view-ipv6-info -->
 > **Via the OVHcloud Control Panel**
 >>
 >> The IPv6 block and gateway assigned to your server will appear in the `Network` section of the `General Information`{.action} tab. Once you have copied them, continue with applying the IPv6 configuration.
 >>
 >> ![configureipv6](images/ipv6_information.png){.thumbnail}
 >>
+<!-- CP-STEPS-END:view-ipv6-info -->
 > **Via the OVHcloud API**
 >>
 >> Another way to retrieve the networking information for your server is to [use the OVHcloud API](/pages/manage_and_operate/api/first-steps).

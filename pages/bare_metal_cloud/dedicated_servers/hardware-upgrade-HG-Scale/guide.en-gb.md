@@ -32,6 +32,7 @@ Our High Grade and Scale servers offer a scalable option that allows you increas
 
 ### Upgrade your RAM
 
+<!-- CP-STEPS-START:upgrade-ram -->
 In the `Hardware`{.action} section, click on `Increase RAM`{.action}.
 
 ![increase RAM](images/increaseram.png)
@@ -53,9 +54,11 @@ Next, click on `Confirm`{.action}.
 ![Confirm date and time for RAM upgrade intervention](images/ramconfirm.png){.thumbnail}
 
 Once done, you will receive an email with the date and time of the intervention.
+<!-- CP-STEPS-END:upgrade-ram -->
 
 ### Upgrade Storage
 
+<!-- CP-STEPS-START:upgrade-storage -->
 In the `Hardware`{.action} section, click on `Increase storage`{.action}.
 
 ![increase storage](images/increasestorage.png){.thumbnail}
@@ -79,6 +82,7 @@ Next, click on `Confirm`{.action}.
 Once done, you will receive an email with the date and time of the intervention.
 
 If you would like to schedule an upgrade in RAM and storage during the same intervention, you will need to order and pay for each option one after the other within 1 hour.
+<!-- CP-STEPS-END:upgrade-storage -->
 
 ## Go further
 

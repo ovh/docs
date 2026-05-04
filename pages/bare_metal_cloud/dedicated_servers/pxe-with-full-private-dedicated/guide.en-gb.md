@@ -91,11 +91,13 @@ Here is a (logical) Netboot boot schema:
 <!-- CP-NAV-END:baremetal-dedicated-servers -->
 
 
+<!-- CP-STEPS-START:check-ola-eligibility -->
 > Select your server and check that it is eligible for `OLA: OVHcloud Link Aggregation` in the `Network interfaces`{.action} tab.
 >
 > ![OLA eligibility check in network interfaces tab](images/Scr_OLA1.png){.thumbnail}
 >
 > ![OLA Link Aggregation configuration details](images/Scr_OLA2.png){.thumbnail}
+<!-- CP-STEPS-END:check-ola-eligibility -->
 
 ## Instructions
 

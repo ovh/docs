@@ -38,6 +38,7 @@ Aggregation is based on IEEE 802.3ad, Link Aggregation Control Protocol (LACP) t
 
 ### Configuring OLA in the OVHcloud Control Panel
 
+<!-- CP-STEPS-START:configure-ola -->
 To start configuring OLA, open the `Network interfaces`{.action} tab on your server's management page.
 
 Click the `Network Aggregation`{.action} button in the **Network Interface Controllers (NICs)** section.
@@ -49,6 +50,7 @@ You will be shown two tables:
 In the field below the tables, enter a name for your link aggregation.
 
 Once you have verified that the aggregation layout matches your network requirements, click `Enable Aggregation`{.action} to proceed.
+<!-- CP-STEPS-END:configure-ola -->
 
 This may take a few minutes. Once it is complete, the next step is to configure the interfaces in your operating system via a NIC link or NIC team. For the method to use, refer to the following guides for the most popular operating systems:
 
@@ -59,6 +61,7 @@ This may take a few minutes. Once it is complete, the next step is to configure 
 
 ### Checking the OLA status
 
+<!-- CP-STEPS-START:check-ola-status -->
 You can verify your Link Aggregation (OLA) status in the `Network interfaces`{.action} tab. At the bottom of the **Bandwidth** section, locate the **OVHcloud Link Aggregation** row.
 
 There are four possible status tags:
@@ -70,12 +73,16 @@ There are four possible status tags:
 > [!primary]
 > **Note:** The **Active - Double LAG** status is a specific configuration typically reserved for Scale and High-Grade server ranges, which feature four physical network interfaces.
 >
+<!-- CP-STEPS-END:check-ola-status -->
 
 ### Restoring OLA to default values
 
+<!-- CP-STEPS-START:restore-ola -->
 To restore OLA to the default values, click on the `Disaggregate networks`{.action} button at the top of the **Network Interface Controllers** section. Click `Confirm`{.action} in the popup menu.
 
 This may take a few minutes.
+<!-- CP-STEPS-END:restore-ola -->
+
 
 ## Go further
 

@@ -32,6 +32,7 @@ Enabling Intel Software Guard Extensions (SGX) on your server allows you to run 
 
 ### Enabling SGX
 
+<!-- CP-STEPS-START:enable-sgx -->
 The activation of SGX is possible from the OVHcloud Control Panel, the OVHcloud API, or your server's BIOS.
 
 > [!tabs]
@@ -142,6 +143,7 @@ The activation of SGX is possible from the OVHcloud Control Panel, the OVHcloud 
 >>
 >> Your server will then reboot into your operating system.
 >>
+<!-- CP-STEPS-END:enable-sgx -->
 
 ### Installing the SGX software stack
 

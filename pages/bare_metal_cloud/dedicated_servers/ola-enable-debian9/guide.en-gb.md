@@ -63,6 +63,7 @@ Aggregation is based on IEEE 802.3ad, Link Aggregation Control Protocol (LACP) t
 
 ### Retrieving MAC addresses
 
+<!-- CP-STEPS-START:retrieve-mac-addresses -->
 Switch to the tab `Network Interfaces`{.action} and take note of the MAC addresses for each interface (public/private) which are displayed at the bottom of the menu.
 
 ![OVHcloud Control Panel](images/ControlPanel.png){.thumbnail}
@@ -77,6 +78,7 @@ Because you have a private-private configuration for your NICs in OLA, you will 
 <br>Click the `IPMI`{.action} tab (1).
 
 Next, click the `From a Java applet (KVM)`{.action} button (2).
+<!-- CP-STEPS-END:retrieve-mac-addresses -->
 
 ### Retrieving interfaces names
 

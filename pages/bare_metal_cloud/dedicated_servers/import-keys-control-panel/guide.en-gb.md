@@ -39,6 +39,7 @@ If you have not created a key pair yet, consult our guides first:
 - [How to create and use keys for SSH authentication](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated)
 - [How to create and use keys for SSH authentication with PuTTY](/pages/web_cloud/web_hosting/ssh_using_putty_on_windows)
 
+<!-- CP-STEPS-START:import-ssh-key -->
 ![products and services](/pages/assets/screens/control_panel/product-selection/right-menu/my-solutions-and-services.png){.thumbnail}
 
 In the Control Panel section `My services`, click `SSH keys`{.action}.
@@ -55,6 +56,7 @@ Copy the entire public key string and paste it into the second field.
 ![Popup to enter SSH key label and public key](images/importkey3.png){.thumbnail}
 
 Click the button `Confirm`{.action}. 
+<!-- CP-STEPS-END:import-ssh-key -->
 
 The key will now be available when you reinstall a dedicated server or a VPS in the OVHcloud Control Panel.
 

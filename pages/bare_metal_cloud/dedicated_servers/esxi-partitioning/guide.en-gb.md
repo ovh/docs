@@ -73,6 +73,7 @@ The `default` partitioning scheme will be used unless another one is selected.
 
 #### Via the OVHcloud Control Panel
 
+<!-- CP-STEPS-START:select-partitioning-via-cp -->
 > [!primary]
 >
 > The procedure is very similar [to other operating systems](/pages/bare_metal_cloud/dedicated_servers/getting-started-with-dedicated-server), with the exception that you cannot tick the checkbox `Customise the partitioning configuration`{.action} and that you have a dropdown menu to choose the partitioning layout at the fourth and final step.
@@ -110,6 +111,7 @@ Fill in the other details and click `Confirm`{.action} to start the ESXi install
 >
 
 ![Partitioning Scheme selection](images/esxi-custom-scheme-00.png){.thumbnail}
+<!-- CP-STEPS-END:select-partitioning-via-cp -->
 
 #### Via the OVHcloud API
 

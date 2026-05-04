@@ -44,6 +44,7 @@ A dedicated server is a physical server ("bare metal") located in one of our dat
 
 ### Installing or reinstalling an operating system
 
+<!-- CP-STEPS-START:reinstall-os -->
 > [!success]
 >
 > Find more information about server operating systems on [our web page](/links/bare-metal/os).
@@ -89,6 +90,7 @@ To find out more about this topic, consult our guides:
 - [How to create and use keys for SSH authentication with PuTTY](/pages/web_cloud/web_hosting/ssh_using_putty_on_windows)
 
 Finally, click `Confirm`{.action} to trigger the operating system installation on your dedicated server.
+<!-- CP-STEPS-END:reinstall-os -->
 
 <a name="connect"></a>
 
@@ -211,9 +213,11 @@ A reboot might become necessary in order to apply updated configurations or to f
 reboot
 ```
 
+<!-- CP-STEPS-START:hard-reboot -->
 However, you can carry out a "hard reboot" at any time in your [OVHcloud Control Panel](/links/manager). From the `General information`{.action} tab, click on `...`{.action} next to "Status" in the **Service status** box, then click `Restart`{.action} and `Confirm`{.action} the action in the popup window.
 
 ![Rebooting](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/dedicated-servers/general-information/rebooting-your-server.png){.thumbnail}
+<!-- CP-STEPS-END:hard-reboot -->
 
 <a name="secure"></a>
 
@@ -227,6 +231,7 @@ If your server runs Windows, use [this guide](/pages/bare_metal_cloud/dedicated_
 
 ### OVHcloud Monitoring
 
+<!-- CP-STEPS-START:configure-monitoring -->
 You can set the monitoring status for a dedicated server from the `General information`{.action} tab in your [OVHcloud Control Panel](/links/manager) (section **Service status**).
 
 ![Monitoring status in the Service status section](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/dedicated-servers/general-information/monitoring-your-server.png){.thumbnail}
@@ -240,6 +245,7 @@ Click on the button `Configure`{.action}. In the popup window, you have three op
 ![Monitoring configuration popup with three options](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/dedicated-servers/general-information/monitoring-your-server2.png){.thumbnail}
 
 Click on `Confirm`{.action} to update your monitoring configuration.
+<!-- CP-STEPS-END:configure-monitoring -->
 
 You can find more information about OVHcloud Monitoring in [this guide](/pages/bare_metal_cloud/dedicated_servers/network_ip_monitoring).
 

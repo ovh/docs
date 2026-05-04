@@ -56,6 +56,7 @@ There are some technical limitations linked to the use of physical products such
 
 ### Deploy your image via the Control Panel <a name="viacontrolpanel"></a>
 
+<!-- CP-STEPS-START:deploy-via-control-panel -->
 In the `General information`{.action} tab, click the `...`{.action} button next to "System (OS)" then click `Install`{.action}.
 
 ![Bring Your Own Linux Control Panel install button](images/byolinux-controlpanel01.png){.thumbnail}
@@ -71,6 +72,7 @@ You can find more details on the options in the [deployment options](#options) s
 For more information and examples about Cloud-Init's ConfigDrive, please read the official documentation on [this page](https://cloudinit.readthedocs.io/en/22.1_a/topics/examples.html).
 
 ![Bring Your Own Linux Control Panel configuration page](images/byolinux-controlpanel04.png){.thumbnail}
+<!-- CP-STEPS-END:deploy-via-control-panel -->
 
 ### Deploy your image via the API <a name="viaapi"></a>
 

@@ -40,6 +40,7 @@ OVHcloud dedicated servers include additional backup space to store important da
 
 ### Activating the backup storage
 
+<!-- CP-STEPS-START:activate-backup-storage -->
 On the `Backup storage`{.action} tab, click the `Enable backup storage`{.action} button.
 
 ![Enable backup storage button on the Backup storage tab](images/backup-storage01.png){.thumbnail}
@@ -49,6 +50,7 @@ Click the `Confirm`{.action} button in the popup window.
 ![Confirm backup storage activation in popup window](images/backup-storage02.png){.thumbnail}
 
 Your backup storage will be configured within a few minutes. A confirmation email will be sent as soon as it is ready.
+<!-- CP-STEPS-END:activate-backup-storage -->
 
 ### Managing access control
 
@@ -56,6 +58,7 @@ Access to the backup storage is restricted by IP address according to an access 
 
 #### Adding a backup access
 
+<!-- CP-STEPS-START:add-backup-access -->
 On the `Backup storage`{.action} tab, click on the button `Add an access`{.action}.
 
 ![Add an access button on the Backup storage tab](images/backup-storage03.png){.thumbnail}
@@ -70,9 +73,11 @@ You will then need to select the IP block that you want to authorize. After sele
 ![Select IP block and protocols for backup access](images/backup-storage04.png){.thumbnail}
 
 Confirm by clicking on `Finish`{.action}. You will now be able to access your server's backup storage from the IP block you have selected.
+<!-- CP-STEPS-END:add-backup-access -->
 
 #### Modifying or deleting a backup access
 
+<!-- CP-STEPS-START:modify-delete-backup-access -->
 Once the service is enabled, your ACL table will be displayed in the `Backup storage`{.action} tab. Click on `...`{.action} in the row of an IP block to open the access menu.
 
 ![Backup access ACL table with modify and delete options](images/backup-storage05.png){.thumbnail}
@@ -80,6 +85,7 @@ Once the service is enabled, your ACL table will be displayed in the `Backup sto
 To change the protocols for an authorized IP block, click on `Modify the access`{.action} and select/deselect protocols in the popup window. Save the changes by clicking on `Confirm`{.action}.
 
 To revoke authorization for an IP block, click on `Delete the access`{.action} and then on `Confirm`{.action} in the popup window.
+<!-- CP-STEPS-END:modify-delete-backup-access -->
 
 #### Accessing the backup storage from an IP address outside of your account <a name="accessbackup"></a>
 
@@ -117,18 +123,23 @@ To verify that your IP address is authorized, use the following call:
 
 ### Resetting your password
 
+<!-- CP-STEPS-START:reset-password -->
 On the `Backup storage`{.action} tab, click on the button `Forgotten your password?`{.action}.
 
 If you click on `Confirm`{.action} in the popup window, a password recovery email will be sent to the email address of your admin contact. Follow the instructions in the email to reset your password.
+<!-- CP-STEPS-END:reset-password -->
 
 ### Deleting the backup storage
 
+<!-- CP-STEPS-START:delete-backup-storage -->
 On the `Backup storage`{.action} tab, click on the button `Delete backup storage`{.action}.
 
 If you click on `Confirm`{.action} in the popup window, the backup storage will be disabled within a few minutes. All data on the storage space will be deleted.
+<!-- CP-STEPS-END:delete-backup-storage -->
 
 ### Ordering more disk space
 
+<!-- CP-STEPS-START:order-disk-space -->
 On the `Backup storage`{.action} tab, click on the button `Order disk space`{.action}.
 
 ![Order additional disk space for backup storage](images/backup-storage06.png){.thumbnail}
@@ -137,6 +148,7 @@ Select the additional storage capacity you would like to order and then click on
 
 Take note of the pricing and contract information in the next window and click on `Confirm`{.action}.
 An order will be created and once your payment has been processed, you will be notified about the successful expansion of the space.
+<!-- CP-STEPS-END:order-disk-space -->
 
 ### Using the backup storage
 
@@ -150,7 +162,9 @@ An order will be created and once your payment has been processed, you will be n
 > The backup storage service has a limit of three simultaneous connections on an IP.
 >
 
+<!-- CP-STEPS-START:retrieve-hostname -->
 To retrieve the Hostname of your backup storage, click on the `Backup Storage`{.action} tab in the interface of the dedicated server concerned. The Hostname is usually written as `ftpback-rbxX-YYY.ip-Z.Z.Z.net` or `ftpback-bhsX-YYY.ip-Z.Z.Z.net`.
+<!-- CP-STEPS-END:retrieve-hostname -->
 
 #### FTP/FTPS
 

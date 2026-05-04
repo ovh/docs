@@ -43,11 +43,13 @@ Aggregation is based on IEEE 802.3ad, Link Aggregation Control Protocol (LACP) t
 ## Instructions
 
 Because you have a private-private configuration for your NICs in OLA, you will be unable to SSH into the server. Thus, you will need to leverage the IPMI tool to access the server.
+<!-- CP-STEPS-START:open-ipmi-kvm -->
 Click the `IPMI`{.action} tab (1).
 
 Next, click the `From a Java applet (KVM)`{.action} button (2).
 
 ![remote kvm](images/remote_kvm2022.png){.thumbnail}
+<!-- CP-STEPS-END:open-ipmi-kvm -->
 
 A JNLP program will be downloaded. Open the program to enter the IPMI. Log in using valid credentials for the server.
 
@@ -63,9 +65,11 @@ ip a
 
 ### Retrieving MAC addresses
 
+<!-- CP-STEPS-START:retrieve-mac-addresses -->
 Switch to the tab `Network Interfaces`{.action} and take note of the MAC addresses for each interface (public/private) which are displayed at the bottom of the menu.
 
 ![OVHcloud Control Panel](images/ControlPanel.png){.thumbnail}
+<!-- CP-STEPS-END:retrieve-mac-addresses -->
 
 > [!primary]
 > Please note that the MAC address of the **main public** interface is the one receiving DHCP offers, both in the server's operating system and in rescue mode. This interface handles public connectivity in the default configuration.

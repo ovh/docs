@@ -76,7 +76,9 @@ First, you need to install Ubuntu 24.04 LTS on both of your dedicated servers, b
 
 Subsequently, add both servers to your vRack service by following step 2 of [this vRack configuration guide](/pages/bare_metal_cloud/dedicated_servers/vrack_configuring_on_dedicated_server).
 
+<!-- CP-STEPS-START:order-public-ip-block -->
 Finally, from the OVHcloud Control Panel, open the `Network`{.action} section, then select `Public IP Addresses`{.action} under **Public Network**. Once you have reached the IP management interface, click on the `Order IPs`{.action} button near the top of the page. Choose the IP version, then **select the vRack your servers are attached to**, and the region where those servers are hosted.
+<!-- CP-STEPS-END:order-public-ip-block -->
 
 > [!warning]
 > 
@@ -107,9 +109,11 @@ The **Private network bond** provides network to virtual servers, leveraging the
 
 #### Bare Metal network settings <a name="bare_metal_network_settings"></a>
 
+<!-- CP-STEPS-START:collect-bare-metal-network-settings -->
 Open both management pages for your dedicated servers, and collect the highlighted parameters :
 
 ![dedicated servers administration page](images/bare_metal_network.png){.thumbnail}
+<!-- CP-STEPS-END:collect-bare-metal-network-settings -->
 
 | Description                              | Variable Names                                           | Comment                                                |
 |------------------------------------------|----------------------------------------------------------|--------------------------------------------------------|

@@ -61,6 +61,7 @@ The option **Windows customer rescue system** is only available for dedicated se
 
 ### Activating rescue mode for Windows
 
+<!-- CP-STEPS-START:activate-rescue-windows -->
 Click on your server's name to open the `General information`{.action} tab.
 
 <a name="netboot"></a>
@@ -96,11 +97,14 @@ This "hard reboot" will take a few minutes to complete. You can check the curren
 > [!primary]
 > 
 > After you have finished your actions in rescue mode, remember to change the `Netboot` setting back to `Boot from the hard disk`{.action} before restarting the server.
+<!-- CP-STEPS-END:activate-rescue-windows -->
 
 ### Accessing your server in rescue mode
 
 Once you have received the email informing you that rescue mode is enabled, you can log on to the Windows rescue mode system and access your server.  
+<!-- CP-STEPS-START:service-emails -->
 This email is also available in your [OVHcloud Control Panel](/links/manager) as soon as it is sent. Click on the name associated with your NIC handle (Customer ID) in the menu bar in the top right-hand corner, then select `Service emails`{.action}.
+<!-- CP-STEPS-END:service-emails -->
 
 To establish a remote session to the Windows rescue mode system, you will need these credentials:
 
@@ -236,11 +240,13 @@ Once logged in to the Windows customer rescue system, you need to import (mount)
 
 ### Exiting rescue mode
 
+<!-- CP-STEPS-START:exit-rescue -->
 In the [OVHcloud Control Panel](/links/manager), [change the boot mode](#netboot) back to `Boot from the hard disk`{.action} and confirm.
 
 ![Netboot Disk](images/rescue-mode-007.png){.thumbnail width="800"}
 
 Then use the `Restart`{.action} function in your OVHcloud Control Panel.
+<!-- CP-STEPS-END:exit-rescue -->
 
 <a name="gofurther"></a>
 
