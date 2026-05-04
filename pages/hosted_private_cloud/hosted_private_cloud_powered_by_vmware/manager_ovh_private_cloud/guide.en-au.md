@@ -12,20 +12,24 @@ The OVHcloud Hosted Private Cloud Control Panel enables you to easily manage you
 
 ## Requirements
 
-- A [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/en-au/enterprise/products/hosted-private-cloud/)
-- Access to the [OVHcloud Control Panel](/links/manager)
+- A [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/)
+
+<!-- CP-NAV-START:privatecloud-vmware-vsphere -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [VMware vSphere](/links/control-panel/privatecloud-vmware-vsphere)
+- **Navigation path:** `Hosted Private Cloud`{.action} > `Managed VMware vSphere`{.action} > Select your vSphere service
+
+---
+<!-- CP-NAV-END:privatecloud-vmware-vsphere -->
 
 ## Instructions
 
-### Interface Access
-
-Navigate to the [OVHcloud Control Panel](/links/manager) and log on with your administrative credentials.
-
-![LOGIN](images/en01login.png){.thumbnail}
-
 ### Hosted Private Cloud View
 
-Go to the `Hosted Private Cloud`{.action} tab and select your service under `Private Cloud`{.action} in the left-hand navigation bar. You can rename your infrastructure by clicking the `Pencil`{.action} button in the center of the page.
+You can rename your infrastructure by clicking the `Pencil`{.action} button in the center of the page.
 
 ![HOSTED](images/en02dashboard.png){.thumbnail}
 
@@ -33,12 +37,12 @@ Go to the `Hosted Private Cloud`{.action} tab and select your service under `Pri
 
 The General Information tab gives you an overview of your services:
 
-- The "Description" field is editable through the `...`{.action} button 
+- The "Description" field is editable through the `...`{.action} button
 - The "Software solution" shows the vCSA version installed
 - The "Location" of your Hosted Private Cloud
 - The "Access policy" of your infrastructure (`Open` or `Restricted`)
 - The "Number of datacenters" in your infrastructure
-- The "Number of IP blocks" you own and the option to order more through the `...`{.action} button  
+- The "Number of IP blocks" you own and the option to order more through the `...`{.action} button
 - Links to your management interfaces
 - Your "Options and compliance" tab shows your enabled and disabled options with direct access to modification though the `...`{.action} buttons
 - The "Mailing list" section allows you to sign up to the OVHcloud Hosted Private Cloud mailing list
@@ -49,7 +53,7 @@ The General Information tab gives you an overview of your services:
 #### Datacenters
 
 The Datacenters tab shows your current virtual datacenters and offers a button to add more as you need.<br>
-The full Datacenter view (see below) will give you more details and options. 
+The full Datacenter view (see below) will give you more details and options.
 
 ![DATACENTERS](images/en04datacenters.png){.thumbnail}
 
@@ -112,7 +116,7 @@ You can configure options settings with the buttons on the right.
 > [!warning]
 >
 >  If you set the access policy to "Restricted" and do not enter any IP addresses, no user will be able to connect to the vSphere client. However, virtual machines will remain accessible.
-> 
+>
 
 At the bottom of the page, you can also add or see your Key Management Servers.<br>
 Check out [Enabling Virtual Machine Encryption](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vm_encrypt) for more details.
@@ -134,11 +138,11 @@ You can sort the list by types and if the tasks are actionable, you will have op
 #### Windows Licence
 
 The Windows license tab shows your Windows SPLA licence status.<br>
-More information on the [pricing page](https://www.ovhcloud.com/en-au/enterprise/products/hosted-private-cloud/images-licenses/).
+More information on the [pricing page](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/images-licenses/).
 
 ![SPLA](images/en11spla.png){.thumbnail}
 
-### Datacenter View 
+### Datacenter View
 
 A Hosted Private Cloud may include multiple virtual datacenters.<br>
 The left-hand navigation bar will list them when you select a Hosted Private Cloud service. Click on one to open its management page.<br>

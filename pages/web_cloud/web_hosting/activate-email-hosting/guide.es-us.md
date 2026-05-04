@@ -40,6 +40,8 @@ Si ha contratado un plan de hosting con OVHcloud sin asociarlo directamente a un
 
 ### Activación de las direcciones de correo electrónico incluidas con el plan de hosting
 
+<!-- CP-STEPS-START:activate-email -->
+
 Haga clic en las fichas siguientes para ver cada una de las **3** etapas.
 
 > [!tabs]
@@ -67,8 +69,12 @@ Haga clic en las fichas siguientes para ver cada una de las **3** etapas.
 >
 > Atención: La activación de la opción de correo puede tardar unos minutos. Recibirá un mensaje de correo electrónico para confirmar la instalación y activación de la solución MXPLAN. Incluye, entre otras cosas, la gestión y la configuración de sus direcciones de correo.
 >
+<!-- CP-STEPS-END:activate-email -->
+
 
 ### Eliminar la solución de correo asociada al alojamiento web
+
+<!-- CP-STEPS-START:delete-email -->
 
 Es posible eliminar definitivamente la solución de correo asociada a su alojamiento web.
 
@@ -95,6 +101,8 @@ Haga clic en las fichas siguientes para ver cada una de las **2** etapas.
 >> > [!warning]
 >> >
 >> > Para confirmar la eliminación del servicio de correo asociado a su alojamiento web, recibirá un enlace de validación por correo electrónico. Es necesario hacer clic en este vínculo para iniciar la operación de eliminación.
+<!-- CP-STEPS-END:delete-email -->
+
 
 #### Caso particular - Eliminación del servicio de correo asociado a su alojamiento web (para asociarlo a otro dominio)
 

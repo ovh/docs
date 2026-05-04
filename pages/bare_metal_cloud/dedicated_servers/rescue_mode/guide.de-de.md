@@ -1,6 +1,6 @@
 ---
-title: "OVHcloud Rescue-Modus aktivieren und verwenden"
-excerpt: "Erfahren Sie hier, wie Sie das <i>Customer Rescue System</i> zur Fehlerbehebung bei einem Dedicated Server einsetzen"
+title: "Rescue-Modus auf einem Dedicated Server"
+excerpt: "Starten Sie Ihren Dedicated Server im OVHcloud Rescue-Modus, um Probleme zu diagnostizieren, Dateisysteme zu reparieren und Passwörter zurückzusetzen."
 updated: 2026-01-09
 ---
 
@@ -65,7 +65,7 @@ Klicken Sie auf den Namen Ihres Servers, um den Tab `Allgemeine Informationen`{.
 
 Klicken Sie im Feld **Allgemeine Informationen** auf den Button `...`{.action} neben `Boot`. Klicken Sie im Kontextmenü auf `Bearbeiten`{.action}.
 
-![Startmodus ändern](images/rescue-mode-001.png){.thumbnail}
+![Boot-Option im Kontextmenü "Allgemeine Informationen" bearbeiten](images/rescue-mode-001.png){.thumbnail}
 
 <a name="netboot"></a>
 
@@ -73,7 +73,7 @@ Klicken Sie im Feld **Allgemeine Informationen** auf den Button `...`{.action} n
 
 Wählen Sie auf der Seite **Netboot-Modus ändern** `Im Rescue-Modus booten`{.action} aus.
 
-![Startmodus ändern](images/rescue-mode-002.png){.thumbnail}
+![Netboot-Seite mit ausgewähltem Boot im Rescue-Modus](images/rescue-mode-002.png){.thumbnail}
 
 Die verfügbaren Optionen für den Rescue-Modus hängen vom Servertyp und dem installierten **Betriebssystem** ab.
 

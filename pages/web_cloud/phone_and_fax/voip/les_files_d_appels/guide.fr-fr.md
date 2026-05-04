@@ -39,6 +39,7 @@ Vous pouvez ainsi décider, lorsqu'un appel entrant arrive sur votre numéro pri
 
 ### Étape 1 : Appliquer la configuration « File d'appels »
 
+<!-- CP-STEPS-START:apply-call-queue-config -->
 - Si votre numéro n'est actuellement pas configuré, cliquez sur l'onglet `Configuration`{.action}, sélectionnez `File d'appels`{.action} puis cliquez sur `Paramétrer`{.action}.
 
 - Si votre numéro a déjà une configuration en place, cliquez sur l'onglet `Configuration`{.action} puis sur `Changer de configuration`{.action}. Sélectionnez ensuite `File d'appels`{.action} et cliquez sur `Paramétrer`{.action}. Vous devrez alors confirmer la perte de la configuration actuellement en place.
@@ -51,19 +52,22 @@ Vous pouvez ainsi décider, lorsqu'un appel entrant arrive sur votre numéro pri
 > 
 > ![configurationnumeroalias](images/selection-alias-conf.png){.thumbnail}
 >
-> Cliquez sur le bouton `Paramétrer`{.action} et patientez quelques instants pendant l’application du paramétrage.
+> Cliquez sur le bouton `Paramétrer`{.action} et patientez quelques instants pendant l'application du paramétrage.
 >
 > Si vous appliquez le même type de configuration à plusieurs numéros, vous devrez finaliser la configuration sur chacun des numéros concernés.
+<!-- CP-STEPS-END:apply-call-queue-config -->
 
 ### Étape 2 : Paramétrer la file d'appels
 
 Une fois la configuration de file d'appels appliquée, les menus de configuration vous sont présentés.
 
+<!-- CP-STEPS-START:access-config-menus -->
 ![fileappels](images/2022-VoIP-FA-02.png){.thumbnail}
 
 Pour revenir à cette page à tout moment, cliquez sur l'onglet `Mon numéro`{.action} puis, dans le cadre « Configuration », cliquez sur `Paramétrer la configuration`{.action}.
 
 ![fileappels](images/2022-VoIP-FA-03.png){.thumbnail}
+<!-- CP-STEPS-END:access-config-menus -->
 
 Quatre menus principaux vous sont proposés :
 
@@ -84,10 +88,14 @@ Poursuivez la lecture de cette documentation selon le ou les paramètres que vou
 
 #### 2.1 Gérer la file d'appels et ses lignes <a name="manage-lines"></a>
 
+<!-- CP-STEPS-START:acces-gestion-lignes -->
 Depuis le menu « Configuration », cliquez sur `Gestion des lignes dans la file`{.action}.
+<!-- CP-STEPS-END:acces-gestion-lignes -->
 
 ##### 1. Ajouter une ligne à la file
 
+<!-- CP-STEPS-START:add-line-to-queue -->
+Sur la page qui s'affiche, dans la partie « Organisation de vos lignes », cliquez sur le bouton `+ Ajouter une ligne`{.action} pour ajouter une nouvelle ligne à votre file d'appels.
 Sur la page qui s'affiche, dans la partie « Organisation de vos lignes », cliquez sur le bouton `+ Ajouter une ligne`{.action} pour ajouter une nouvelle ligne à votre file d'appels.
 
 ![fileappels](images/2022-VoIP-FA-04.png){.thumbnail}
@@ -111,17 +119,19 @@ Une fois ces informations complétées, cliquez sur le bouton `Valider`{.action}
 >
 > - La législation interdit la redirection sur des numéros surtaxés.
 > - Un appel redirigé vers une destination non-comprise dans votre forfait vous sera facturé.
-> - Les redirections vers un numéro mobile ou une ligne externe à OVHcloud ne sont pas comprises dans les [forfaits VoIP](/links/telecom/telephonie-voip-offers). Elles sont donc facturées à la seconde, sauf dans le cadre des forfaits mobile à l’heure.
+> - Les redirections vers un numéro mobile ou une ligne externe à OVHcloud ne sont pas comprises dans les [forfaits VoIP](/links/telecom/telephonie-voip-offers). Elles sont donc facturées à la seconde, sauf dans le cadre des forfaits mobile à l'heure.
 >
 > Consultez les [tarifs de la téléphonie OVHcloud](/links/telecom/telephonie-decouvrez-tarifs-telephonie) pour plus de détails.
+<!-- CP-STEPS-END:add-line-to-queue -->
 
-##### 2. Configurer une stratégie d’appels
+##### 2. Configurer une stratégie d'appels
 
+<!-- CP-STEPS-START:configure-call-strategy -->
 Dès qu'au moins une ligne est présente dans votre file, vous pouvez configurer une stratégie d'appels pour cette dernière. Pour cela, en dessous du tableau de vos lignes, faites vos choix parmi les options proposées.
 
 ![fileappels](images/2022-VoIP-FA-06.png){.thumbnail}
 
-- **« Numéro à afficher »** : définissez le numéro qui sera visible sur le téléphone de la personne qui reçoit l’appel.
+- **« Numéro à afficher »** : définissez le numéro qui sera visible sur le téléphone de la personne qui reçoit l'appel.
 - **« Stratégie de sonnerie »** : définissez la manière dont les lignes de votre file d'appels sonneront. Selon celle choisie, vous serez peut-être amené à [modifier l'ordre des lignes de la file](/pages/web_cloud/phone_and_fax/voip/les_files_d_appels#3-organiser-les-lignes-de-la-file-dappels).
 - **« Appliquer les renvois définis sur les lignes »** : définissez si les renvois d'appels configurés sur les lignes de la file doivent être appliqués ou non. Sauf besoin spécifique, nous vous conseillons de laisser cette option décochée. 
 
@@ -131,25 +141,29 @@ Une fois vos choix effectués, cliquez sur le bouton `Valider`{.action}.
 
 |Stratégie|Détails|
 |---|---|
-|Tous en même temps|Tous les téléphones sonnent en même temps. Le premier qui décroche prend l’appel sur son poste.|
+|Tous en même temps|Tous les téléphones sonnent en même temps. Le premier qui décroche prend l'appel sur son poste.|
 |Selon l'ordre défini dans la liste|Le premier téléphone de la file sonne, puis le second, etc.|
-|Selon l'ordre défini dans la liste, cumulé|Le premier téléphone de la file d’attente sonne. Le deuxième sonne à son tour après quelques secondes, en même temps que le premier. Le troisième commence à sonner quelques secondes après, etc.|
+|Selon l'ordre défini dans la liste, cumulé|Le premier téléphone de la file d'attente sonne. Le deuxième sonne à son tour après quelques secondes, en même temps que le premier. Le troisième commence à sonner quelques secondes après, etc.|
 |Le plus ancien à avoir raccroché|Les téléphones sonnent les uns après les autres en suivant toujours le même ordre.|
-|Du plus disponible au moins disponible|Les téléphones sonneront suivant leur disponibilité depuis l’activation.|
+|Du plus disponible au moins disponible|Les téléphones sonneront suivant leur disponibilité depuis l'activation.|
 |Selon une répartition de charge| Les téléphones sonneront suivant leur disponibilité depuis le dernier appel : le plus disponible en premier.|
 |Aléatoire|Les téléphones sonnent les uns après les autres de manière aléatoire.|
+<!-- CP-STEPS-END:configure-call-strategy -->
 
-##### 3. Organiser les lignes de la file d’appels
+##### 3. Organiser les lignes de la file d'appels
 
+<!-- CP-STEPS-START:organise-queue-lines -->
 Vous pouvez organiser les lignes dans votre file d'appels depuis le tableau où celles-ci apparaissent.<br>
 Pour cela, utilisez les flèches à gauche de chacune des lignes pour les déplacer jusqu'à leurs positions adéquates. 
 
 ![fileappels](images/2022-VoIP-FA-07.png){.thumbnail}
 
 Une fois vos modifications effectuées, cliquez sur le bouton `Valider`{.action}.
+<!-- CP-STEPS-END:organise-queue-lines -->
 
 ##### 4. Modifier ou supprimer une ligne 
 
+<!-- CP-STEPS-START:modify-or-delete-line -->
 Depuis le tableau des lignes de votre file d'appels, cliquez sur le bouton `...`{.action} à droite de la ligne concernée et sélectionnez `Modifier`{.action} ou `Supprimer`{.action}.
 
 ![fileappels](images/2022-VoIP-FA-08.png){.thumbnail}
@@ -168,13 +182,17 @@ La modification vous permet d'affiner les réglages de sonnerie de chaque ligne 
 > - taper `3` pour rejoindre la file d'appels et ainsi faire sonner ses membres.
 >
 > Vous pouvez ainsi gérer à la volée, directement depuis votre téléphone, l'activation de votre ligne au sein de la file d'appels.
+<!-- CP-STEPS-END:modify-or-delete-line -->
 
 #### 2.2 Gérer les sons et l'attente <a name="manage-sounds"></a>
 
-Dans le menu « Configuration », cliquez sur `Gestion des sons et de l'attente`{.action}. Plusieurs actions sont alors possibles depuis cette page. 
+<!-- CP-STEPS-START:acces-gestion-sons -->
+Dans le menu « Configuration », cliquez sur `Gestion des sons et de l'attente`{.action}. Plusieurs actions sont alors possibles depuis cette page.
+<!-- CP-STEPS-END:acces-gestion-sons -->
 
 ##### Configuration de l'attente
 
+<!-- CP-STEPS-START:configure-wait-sounds -->
 > [!warning]
 >
 > La création des annonces sonores est de votre responsabilité. En cas de difficultés, nous vous conseillons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/) car OVHcloud ne sera pas en mesure de créer ces fichiers pour vous.
@@ -189,9 +207,11 @@ Vous pouvez ajouter deux sons :
 Pour ajouter un son, cliquez sur le bouton `Ajouter un son`{.action} puis suivez les étapes de téléversement. Cliquez enfin sur le bouton `Valider`{.action} en bas de la page pour confirmer les changements.
 
 ![fileappels](images/2022-VoIP-FA-10.png){.thumbnail}
+<!-- CP-STEPS-END:configure-wait-sounds -->
 
 ##### Configuration du débordement
 
+<!-- CP-STEPS-START:configure-overflow -->
 Depuis cette partie, définissez le nombre maximum d'appelants pouvant être en attente simultanément dans la file. Si ce nombre venait à être dépassé, vous pouvez définir un comportement à adopter parmi les deux possibilités suivantes de débordement :
 
 - **Renvoyer sur un répondeur** : le ou les appelants concernés par le débordement seront alors renvoyés vers le répondeur de votre choix. Pour le sélectionner, cochez d'abord la case `Renvoyer sur un répondeur`{.action}. Cliquez ensuite sur `Ajouter un répondeur`{.action} et sélectionnez le répondeur d'une de vos lignes SIP.
@@ -200,9 +220,11 @@ Depuis cette partie, définissez le nombre maximum d'appelants pouvant être en 
 Cliquez enfin sur le bouton `Valider`{.action} en bas de la page pour confirmer les changements.
 
 ![fileappels](images/2022-VoIP-FA-11.png){.thumbnail}
+<!-- CP-STEPS-END:configure-overflow -->
 
 ##### Configuration de fermeture
 
+<!-- CP-STEPS-START:configure-closure-timeout -->
 Définissez ici la durée maximale pendant laquelle un appelant attendra dans la file. Si cette durée venait à être dépassée, choisissez le comportement à adopter parmi deux possibilités :
 
 - **Renvoyer sur un répondeur** : le ou les appelants concernés seront alors renvoyés vers le répondeur de votre choix. Pour le sélectionner, cochez d'abord la case `Renvoyer sur un répondeur`{.action}. Cliquez ensuite sur `Ajouter un répondeur`{.action} et sélectionnez le répondeur d'une de vos lignes SIP.
@@ -211,20 +233,26 @@ Définissez ici la durée maximale pendant laquelle un appelant attendra dans la
 Cliquez enfin sur le bouton `Valider`{.action} en bas de la page pour confirmer les changements.
 
 ![fileappels](images/2022-VoIP-FA-12.png){.thumbnail}
+<!-- CP-STEPS-END:configure-closure-timeout -->
 
 #### 2.3 Gérer les plages horaires et les fermetures <a name="manage-agenda"></a>
 
-Depuis le menu « Configuration », cliquez sur `Plages horaires et fermetures`{.action}. Plusieurs actions sont alors possibles depuis cette page. 
+<!-- CP-STEPS-START:acces-plages-horaires -->
+Depuis le menu « Configuration », cliquez sur `Plages horaires et fermetures`{.action}. Plusieurs actions sont alors possibles depuis cette page.
+<!-- CP-STEPS-END:acces-plages-horaires -->
 
 ##### 1. Activer ou désactiver les plages horaires
 
+<!-- CP-STEPS-START:activate-time-slots -->
 Utilisez les boutons `Activées`{.action} ou `Désactivées`{.action} afin de définir si vous souhaitez utiliser ou non les plages horaires mises en place.
 Si votre numéro est déjà en production, nous vous conseillons de définir vos plages horaires et leur configuration **avant** de les activer.
 
 ![fileappels](images/2022-VoIP-FA-13.png){.thumbnail}
+<!-- CP-STEPS-END:activate-time-slots -->
 
 ##### 2. Configuration des créneaux horaires
 
+<!-- CP-STEPS-START:configure-time-slots-scenarios -->
 Définissez ici des scénarios de redirection que vous pourrez utiliser ensuite pour vos plages horaires. 
 
 Pour cela, dans la partie « Configuration des créneaux horaires », cliquez sur le pictogramme en forme d'engrenage à droite de chaque créneau<br>
@@ -234,14 +262,16 @@ Par défaut, la sélection est positionnée sur « Un numéro externe ». Vous p
 Finalisez votre choix en cliquant sur le bouton `Modifier`{.action}.
 
 ![fileappels](images/2022-VoIP-FA-14.png){.thumbnail}
+<!-- CP-STEPS-END:configure-time-slots-scenarios -->
 
 ##### 3. Définir les plages horaires
 
+<!-- CP-STEPS-START:define-time-slots -->
 Une fois les créneaux configurés à votre convenance, dans la partie « Gestion des plages horaires et des fermetures » de la page, vous pouvez définir des plages horaires et leur attribuer des créneaux.
 
-Cliquez sur un horaire et modifiez la plage associée, ou cliquez sur l’horaire de début souhaité puis glissez en maintenant le clic jusqu’à l’horaire de fin. 
+Cliquez sur un horaire et modifiez la plage associée, ou cliquez sur l'horaire de début souhaité puis glissez en maintenant le clic jusqu'à l'horaire de fin. 
 Utilisez le bouton `Répéter`{.action} pour, par exemple, appliquer le même créneau sur plusieurs jours de la semaine.<br>
-Définissez ensuite le créneau à appliquer grâce au bouton `Rediriger les appels vers`{.action}, puis validez l’ajout de la plage horaire en cliquant sur `Ajouter`{.action}.
+Définissez ensuite le créneau à appliquer grâce au bouton `Rediriger les appels vers`{.action}, puis validez l'ajout de la plage horaire en cliquant sur `Ajouter`{.action}.
 
 ![fileappels](images/2022-VoIP-FA-15.png){.thumbnail}
 
@@ -251,12 +281,14 @@ Pour **supprimer une plage**, cliquez sur celle-ci, puis sur `Supprimer`{.action
 ![fileappels](images/2022-VoIP-FA-16.png){.thumbnail}
 
 Dès que toutes vos plages horaires sont configurées, cliquez sur le bouton `Valider`{.action} pour sauvegarder ces changements. 
+<!-- CP-STEPS-END:define-time-slots -->
 
 ##### 4. Définir des fermetures exceptionnelles
 
+<!-- CP-STEPS-START:define-exceptional-closures -->
 Une fois les plages horaires créées à votre convenance, vous pouvez définir des fermetures exceptionnelles.
 
-Celles-ci vous permettront de fermer votre file d’appels sur des plages horaires normalement considérées comme étant ouvertes. Pour cela, toujours dans la partie « Gestion des plages horaires et des fermetures », cliquez sur `Gérer les fermetures exceptionnelles`{.action}.
+Celles-ci vous permettront de fermer votre file d'appels sur des plages horaires normalement considérées comme étant ouvertes. Pour cela, toujours dans la partie « Gestion des plages horaires et des fermetures », cliquez sur `Gérer les fermetures exceptionnelles`{.action}.
 
 ![fileappels](images/2022-VoIP-FA-17.png){.thumbnail}
 
@@ -278,14 +310,18 @@ Sur la page qui apparaît, positionnez vos fermetures exceptionnelles sur le cal
 Une fois les informations complétées, cliquez sur `Créer l'événement`{.action}. Répétez cette manipulation afin d'ajouter toutes les fermetures exceptionnelles que vous souhaitez créer. Cliquez finalement sur le bouton `Valider`{.action} pour sauvegarder ces changements.
 
 ![fileappels](images/2022-VoIP-FA-18.png){.thumbnail}
+<!-- CP-STEPS-END:define-exceptional-closures -->
 
 #### 2.4 Gérer le filtrage des appels <a name="manage-filters"></a>
 
-Depuis le menu « Configuration », cliquez sur `Filtrages des appels`{.action}. Plusieurs actions sont alors possibles depuis cette page. 
+<!-- CP-STEPS-START:acces-filtrages-appels -->
+Depuis le menu « Configuration », cliquez sur `Filtrages des appels`{.action}. Plusieurs actions sont alors possibles depuis cette page.
+<!-- CP-STEPS-END:acces-filtrages-appels -->
 
 ##### 1. Configurer les filtrages d'appels
 
-Vous pouvez mettre en place un filtrage s’appliquant aux appels entrants. 
+<!-- CP-STEPS-START:configure-call-filtering -->
+Vous pouvez mettre en place un filtrage s'appliquant aux appels entrants. 
 
 ![fileappels](images/2022-VoIP-FA-19.png){.thumbnail}
 
@@ -299,9 +335,11 @@ Quatre configurations sont proposées :
 |Appels entrants autorisés (liste blanche)|Seuls les numéros ou les tranches de numéros inscrits dans la liste sont autorisés à vous contacter.|
 
 Cliquez sur le bouton `Valider`{.action} pour sauvegarder ces changements.
+<!-- CP-STEPS-END:configure-call-filtering -->
 
 ##### 2. Configurer et gérer les listes
 
+<!-- CP-STEPS-START:manage-filter-lists -->
 Dans la partie « Configuration des listes », vous pouvez ajouter des numéros ou des types de numéros à la liste blanche ou à la liste noire. 
 
 ![fileappels](images/2022-VoIP-FA-20.png){.thumbnail}
@@ -321,9 +359,11 @@ En dessous de la configuration des listes, dans la partie « Détails de vos lis
 Pour **supprimer des éléments de vos listes**, sélectionnez-les dans le tableau en cochant la case située à gauche de ces derniers. Cliquez ensuite sur le bouton `Actions`{.action} puis sur `Supprimer les éléments sélectionnés`{.action}. Confirmez alors la suppression.
 
 ![fileappels](images/2022-VoIP-FA-20bis.png){.thumbnail}
+<!-- CP-STEPS-END:manage-filter-lists -->
 
 ### Gérer les enregistrements d'appels <a name="manage-records"></a>
 
+<!-- CP-STEPS-START:manage-call-recordings -->
 La configuration file d'appels vous permet d'enregistrer les appels entrants. Les enregistrements sont automatiquement supprimés de nos serveurs au bout de 60 jours.
 
 Cliquez sur l'onglet `Enregistrements`{.action}. 
@@ -339,6 +379,7 @@ Validez vos choix en cliquant sur `Appliquer`{.action}.
 Un tableau vous donnera accès aux enregistrements d'appels, vous permettant de les télécharger ou de les supprimer.
 
 ![fileappels](images/2022-VoIP-FA-22.png){.thumbnail}
+<!-- CP-STEPS-END:manage-call-recordings -->
 
 ## Aller plus loin
 

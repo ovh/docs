@@ -1,6 +1,6 @@
 ---
-title: 'Change the announcement of an IP block in vRack'
-excerpt: 'Learn how to change the announcement of an IP block in vRack'
+title: "Change IP Block Announcement in a vRack on a Dedicated Server"
+excerpt: "Change the geographic announcement zone of an IP block in your OVHcloud vRack for optimised routing."
 updated: 2025-05-14
 ---
 
@@ -89,5 +89,7 @@ traceroute to 1.2.3.4, 30 hops max, 60 byte packets
 In this example, the tested IP address is now announced to **Gravelines**. This is visible in the last hop: 'be120.**gra**-d1-a75.fr.eu (37.187.232.74) 0.351 ms.’
 
 ## Go further
+
+[Configuring the vRack on your Dedicated Servers](/pages/bare_metal_cloud/dedicated_servers/vrack_configuring_on_dedicated_server)
 
 Join our [community of users](/links/community).

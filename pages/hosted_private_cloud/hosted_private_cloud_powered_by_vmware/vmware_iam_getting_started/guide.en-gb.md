@@ -15,8 +15,18 @@ updated: 2024-11-05
 ## Requirements
 
 - An [OVHcloud account](/pages/account_and_service_management/account_information/ovhcloud-account-creation)
-- Access to the [OVHcloud Control Panel](/links/manager)
 - One or more [Hosted Private Cloud products - VMware on OVHcloud](/links/hosted-private-cloud/vmware) linked to this account
+
+<!-- CP-NAV-START:privatecloud-vmware-vsphere -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [VMware vSphere](/links/control-panel/privatecloud-vmware-vsphere)
+- **Navigation path:** `Hosted Private Cloud`{.action} > `Managed VMware vSphere`{.action} > Select your vSphere service
+
+---
+<!-- CP-NAV-END:privatecloud-vmware-vsphere -->
 
 ## Instructions
 
@@ -86,9 +96,7 @@ Yes, when IAM is enabled, you can choose between IAM and a Vphere local user, us
 Click on your name in the top right-hand corner of the OVHcloud Control Panel, then click on your initials to go to the `My account`{.action} section.<br>
 Under `My account`{.action}, click `Identities and access (IAM)`{.action].
 
-You can manage IAM roles and local vSphere users in the `Hosted Private Cloud`{.action} section of the [OVHcloud Control Panel](/links/manager).
-
-Click on the `VMware`{.action} section, select your infrastructure, then go to the `Users`{.action} tab.
+You can manage IAM roles and local vSphere users from the `Users`{.action} tab of your VMware vSphere service.
 
 ### How many roles are available by default?
 

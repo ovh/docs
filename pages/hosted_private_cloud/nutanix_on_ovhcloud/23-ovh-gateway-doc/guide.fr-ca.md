@@ -10,6 +10,19 @@ updated: 2023-08-07
 
 **Ce guide vous décrit le fonctionnement de cette passerelle, et la méthode pour la redéployer.**
 
+## Prérequis
+
+<!-- CP-NAV-START:network-vrack -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [vRack](/links/control-panel/network-vrack)
+- **Pour accéder à vos services :** `Network`{.action} > `Réseau Privé vRack`{.action}
+
+---
+<!-- CP-NAV-END:network-vrack -->
+
 ## En pratique
 
 ### Détails techniques
@@ -113,7 +126,7 @@ Pour redéployer la VM de la passerelle, vous aurez besoin des éléments suivan
 
 ##### **Vérifier l'adresse Additional IP**
 
-Connectez-vous à l'[espace client OVHcloud](/links/manager) et accédez à la gestion de votre [vRack](/links/network/vrack). Vérifiez l'adresse Additional IP utilisée par le cluster Nutanix.
+Dans la section de gestion de votre [vRack](/links/network/vrack), vérifiez l'adresse Additional IP utilisée par le cluster Nutanix.
 
 ![Additional IP](images/check_subnet0.png){.thumbnail}
 

@@ -1,5 +1,6 @@
 ---
-title: "ESXi Dedicated Servers - FAQ"
+
+title: "ESXi on OVHcloud Dedicated Servers - FAQ"
 excerpt: "Find the most frequently asked questions about the wave of attacks targeting ESXi servers"
 updated: 2024-09-13
 ---
@@ -79,5 +80,9 @@ Not to our knowledge on this wave of attack.
 Our customers using [VMware on OVHcloud](/links/hosted-private-cloud/hosted-private-cloud) solutions are not affected by the ransomware. Specifically, the SSL gateway makes it possible to avoid this type of attack by blocking external access to this port (OpenSLP 427).
 
 ## Go further
+
+[How to install VMware ESXi 8 on a Dedicated Server](/pages/bare_metal_cloud/dedicated_servers/esxi-partitioning)
+
+[Securing Your ESXi Dedicated Server](/pages/bare_metal_cloud/dedicated_servers/esxi-hardening)
 
 Join our [community of users](/links/community).

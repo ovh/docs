@@ -65,6 +65,7 @@ A pop-up will appear with fields to complete.
 | Description | Template description                                                                                            |
 | Template      | Write the template, including the variable between #                                                                  |
 
+
 #### 2.2 Via APIs
 
 > [!success]

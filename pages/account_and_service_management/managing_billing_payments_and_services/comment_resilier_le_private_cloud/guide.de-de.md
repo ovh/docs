@@ -38,7 +38,7 @@ Bei Hosted Private Cloud gibt es keine Mindestvertragslaufzeit. Wie jedoch in de
 
 Wählen Sie die Private Cloud aus der Liste aus, die Sie kündigen möchten.
 
-Klicken Sie im Reiter „Allgemeine Informationen“ in der Tabelle  „Dienstverwaltung“ auf den Button `...`{.action} (4) rechts neben dem Datum der Verlängerung. Klicken Sie dann auf `Dienst löschen`{.action} (5).
+Klicken Sie im Reiter „Allgemeine Informationen” in der Tabelle  „Dienstverwaltung” auf den Button `...`{.action} (4) rechts neben dem Datum der Verlängerung. Klicken Sie dann auf `Dienst löschen`{.action} (5).
 
 ![Kündigung über das Kundencenter](images/resiliation1.png){.thumbnail}
 

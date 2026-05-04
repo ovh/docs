@@ -60,6 +60,7 @@ Zarządzanie DNS jest teraz łatwiejsze dzięki historii Twoich stref DNS.
 
 **Kliknij wybraną akcję, aby wyświetlić jej zawartość.**
 
+<!-- CP-STEPS-START:view-dns-zone -->
 /// details | Wyświetlanie strefy DNS
 
 Kliknij poniższe karty, aby wyświetlić kolejne **4** kroki.
@@ -96,7 +97,9 @@ Kliknij poniższe karty, aby wyświetlić kolejne **4** kroki.
 >> Kliknij `Zamknij`{.action}, aby wrócić do strony głównej "Historia strefy DNS".
 
 ///
+<!-- CP-STEPS-END:view-dns-zone -->
 
+<!-- CP-STEPS-START:download-dns-zone -->
 /// details | Pobieranie strefy DNS
 
 Kliknij poniższe karty, aby wyświetlić kolejne **3** kroki.
@@ -127,7 +130,9 @@ Kliknij poniższe karty, aby wyświetlić kolejne **3** kroki.
 >> Strefa DNS zostanie pobrana w formacie .txt.
 
 ///
+<!-- CP-STEPS-END:download-dns-zone -->
 
+<!-- CP-STEPS-START:restore-dns-zone -->
 /// details | Przywracanie strefy DNS
 
 Kliknij poniższe karty, aby wyświetlić kolejne **4** kroki.
@@ -170,7 +175,9 @@ Kliknij poniższe karty, aby wyświetlić kolejne **4** kroki.
 > Modyfikacja lub przywrócenie strefy DNS powoduje opóźnienie propagacji wynoszące od **4** do **24** godzin, zanim zmiana zostanie w pełni uwzględniona w sieci DNS.
 
 ///
+<!-- CP-STEPS-END:restore-dns-zone -->
 
+<!-- CP-STEPS-START:compare-dns-zones -->
 /// details | Porównywanie dwóch stref DNS
 
 Kliknij poniższe karty, aby wyświetlić kolejne **4** kroki.
@@ -211,6 +218,7 @@ Kliknij poniższe karty, aby wyświetlić kolejne **4** kroki.
 >> ![Szczegóły porównania dwóch stref DNS](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/compare-dns-zone-details.png){.thumbnail}
 
 ///
+<!-- CP-STEPS-END:compare-dns-zones -->
 
 ## Sprawdź również
 

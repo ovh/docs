@@ -40,6 +40,7 @@ Para más información, consulte nuestra guía [Gestionar la renovación de los 
 
 Abra la página [Mis soluciones y servicios](/links/control-panel/billing-services). Localice el servicio en el que quiera activar la renovación automática, haga clic en el botón `···`{.action} situado al final de la fila y seleccione `Activar el pago automático`{.action}. 
 
+
 #### Ideas y consejos
 
 Antes de activar la renovación automática, asegúrese de haber configurado una forma de pago. De lo contrario, en caso de impago se procederá a la suspensión de los servicios al cabo de 7 días.

@@ -59,6 +59,8 @@ On your OVHcloud web hosting, you can use scripts to automate certain operations
 
 ### Creating an automated task
 
+<!-- CP-STEPS-START:create-cron-task -->
+
 Click on the tabs below to view each of the **5** steps.
 
 > [!tabs]
@@ -121,8 +123,12 @@ Click on the tabs below to view each of the **5** steps.
 >> ![cron confirmation](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/cron/add-scheduling-step-3.png){.thumbnail}
 >>
 >> The task will be ready within a few minutes. You can then modify all of its settings or delete the task by clicking on `...`{.action} in the overview table in your OVHcloud Control Panel.
+<!-- CP-STEPS-END:create-cron-task -->
+
 
 ### Modify or delete a scheduled task
+
+<!-- CP-STEPS-START:modify-delete-cron-task -->
 
 Click on the tabs below to view each of the **3** steps.
 
@@ -142,6 +148,8 @@ Click on the tabs below to view each of the **3** steps.
 >> In the table that appears, click the `...`{.action} button to the right of the scheduled task concerned.
 >>
 >> Click on the `Edit`{.action} or `Delete`{.action} button, depending on the action you want to perform on the scheduled task.
+<!-- CP-STEPS-END:modify-delete-cron-task -->
+
 
 ### Limitations of web hosting tasks
 

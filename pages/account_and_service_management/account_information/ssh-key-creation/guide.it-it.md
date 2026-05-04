@@ -11,11 +11,13 @@ Benvenuti in questa guida su come aggiungere una chiave SSH nel pannello di cont
 <iframe class="video" src="https://embed.api.video/vod/vi5UW0KIxq7D5kc0UrvoiToZ" width="100%" height="100%" frameborder="0" scrolling="no" allowfullscreen="true"></iframe>
 
 ## Passo 1: Accedere alla pagina "My offers and services"
+
 Per iniziare, devi accedere alla pagina "My offers and services" all'interno del pannello di controllo OVHcloud. Puoi farlo accedendo all'URL [https://www.ovh.com/manager/#/billing/autorenew/](https://www.ovh.com/manager/#/billing/autorenew/). Una volta acceso, assicurati di essere sulla pagina corretta. 
 
 ![Passo 1](images/screenshot-1.it-it.jpg){.thumbnail}
 
 ## Passo 2: Selezionare la scheda "SSH key"
+
 Una volta nella pagina "My offers and services", clicca sulla scheda "SSH key" per accedere alle impostazioni relative alle chiavi SSH. 
 
 ![Passo 2](images/screenshot-2.it-it.jpg){.thumbnail}

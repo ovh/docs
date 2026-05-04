@@ -50,6 +50,7 @@ In this guide you can find all of the IP addresses for OVHcloud web hosting plan
 
 ## Instructions
 
+<!-- CP-STEPS-START:instructions-find-cluster -->
 To find out on which web hosting cluster your service is located, click on the tabs below to view each of the **2** steps.
 
 > [!tabs]
@@ -64,6 +65,7 @@ To find out on which web hosting cluster your service is located, click on the t
 >> In the **General information** box on the page that appears, retrieve the cluster number under the mention **Cluster** (3 digits between `0` and `9`).
 >>
 >> ![Cluster and Filer number](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-cluster-and-filer.png){.thumbnail}
+<!-- CP-STEPS-END:instructions-find-cluster -->
 
 **Click below on the cluster number where your web hosting is located to display the corresponding IP addresses.**
 

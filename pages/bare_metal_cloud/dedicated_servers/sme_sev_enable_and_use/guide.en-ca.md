@@ -1,6 +1,6 @@
 ---
-title: 'AMD SME/SEV on Ubuntu 20'
-excerpt: 'Enable SME on your ubuntu server and spawn an SEV virtual machine'
+title: "Enable AMD SME/SEV on a Dedicated Server (Ubuntu)"
+excerpt: "Enable SME on your ubuntu server and spawn an SEV virtual machine"
 updated: 2020-05-07
 ---
 
@@ -148,5 +148,9 @@ ubuntu@ubuntu:~$ dmesg | grep SEV
 - [github.com/AMDESE/sev-tool](https://github.com/AMDESE/sev-tool)
 
 ## Go further
+
+[How to manage Intel SGX on a Dedicated Server](/pages/bare_metal_cloud/dedicated_servers/sgx-enable-and-use)
+
+[How to secure a Dedicated Server](/pages/bare_metal_cloud/dedicated_servers/securing-a-dedicated-server)
 
 Join our [community of users](/links/community).

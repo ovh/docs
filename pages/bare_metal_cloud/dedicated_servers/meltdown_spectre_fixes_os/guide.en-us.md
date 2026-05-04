@@ -1,5 +1,5 @@
 ---
-title: Find your patch for Meltdown and Spectre
+title: "Find your patch for Meltdown and Spectre"
 updated: 2020-07-15
 ---
 
@@ -1313,3 +1313,8 @@ updated: 2020-07-15
    <p>All of them are affected. If you're using one of them,&nbsp;we strongly recommend you to update your system with the latest available patches.</p>
 </div>
 
+## Go further
+
+[Dedicated Server - Mitigating the Inception Vulnerability](/pages/bare_metal_cloud/dedicated_servers/vulnerability-inception)
+
+Join our [community of users](/links/community).

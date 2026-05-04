@@ -1,6 +1,6 @@
 ---
-title: "Configuration des comptes utilisateurs et de l'accès root sur un serveur"
-excerpt: "Découvrez comment bien débuter dans l'administration de comptes utilisateurs sur un système d'exploitation GNU/Linux"
+title: "Configurer les comptes utilisateurs et l'accès root (Dédié)"
+excerpt: "Gérez les comptes utilisateurs, l'accès sudo et la connexion root sur un serveur dédié GNU/Linux pour une administration sécurisée"
 updated: 2024-02-19
 ---
 

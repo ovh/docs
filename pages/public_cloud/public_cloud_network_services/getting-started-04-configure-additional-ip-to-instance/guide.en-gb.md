@@ -67,6 +67,7 @@ The following sections contain the configurations for the most commonly used dis
 > When configuring an Additional IP on a Public Cloud instance, you do not need a gateway and subnet mask.
 >
 
+<!-- CP-STEPS-START:configure-additional-ip -->
 > [!success]
 > Select the tab corresponding to your operating system.
 
@@ -351,6 +352,7 @@ The following sections contain the configurations for the most commonly used dis
 >>
 >> ![check current network configuration](images/image8-8.png){.thumbnail}
 >>
+<!-- CP-STEPS-END:configure-additional-ip -->
 
 ### Troubleshooting
 

@@ -94,6 +94,7 @@ Jeśli Twoje hasło wykradzione, rekomendujemy [jego natychmiastową zmianę](./
 
 - Kiedy wykonasz te czynności, wyświetli się komunikat informujący o powodzeniu operacji. Kliknij przycisk `Kontynuuj`{.action} na dole wiadomości. Zostaniesz wówczas przekierowany na stronę logowania. Następnie wpisz nazwę użytkownika i nowe hasło.
 
+
 <a name="lost-password"></a>
 
 #### Jeśli nie znasz swojego aktualnego hasła
@@ -120,6 +121,7 @@ Jeśli Twoje hasło wykradzione, rekomendujemy [jego natychmiastową zmianę](./
 > 
 > Ustanowienie nowego hasła automatycznie powoduje zamknięcie wszystkich aktywnych sesji na Twoim koncie OVHcloud.
 > 
+
 
 ## Sprawdź również
 [Zalecenia dotyczące tworzenia bezpiecznych haseł](https://www.gov.pl/web/baza-wiedzy/jak-tworzyc-bezpieczne-hasla)

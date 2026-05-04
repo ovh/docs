@@ -202,7 +202,7 @@ Se il dispositivo (telefono cellulare/smartphone/chiave di sicurezza) viene smar
 > - codici di sicurezza validi.
 >
 
-Per rimuovere un dispositivo, accedi alla pagina [Sicurezza dell'account](/links/control-panel/account-security) e clicca sui `...`{.action} a destra del dispositivo da rimuovere e poi su `Eliminare`{.action}.
+Per rimuovere un dispositivo, accedi alla pagina [Sicurezza dell’account](/links/control-panel/account-security) e clicca sui `...`{.action} a destra del dispositivo da rimuovere e poi su `Eliminare`{.action}.
 
 ![2FA](images/2024-006-delete-device.png){.thumbnail}
 

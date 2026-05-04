@@ -97,6 +97,7 @@ Si votre mot de passe est compromis, nous vous recommandons vivement de le [modi
 
 - Un message vous indiquant le succès de l’opération s’affiche alors. Cliquez sur le bouton `Continuer`{.action} en bas ce message pour être redirigé vers la page d’identification. Renseignez alors votre identifiant et votre nouveau mot de passe.
 
+
 <a name="lost-password"></a>
 
 #### Si vous ne connaissez plus votre mot de passe actuel
@@ -123,6 +124,7 @@ Si votre mot de passe est compromis, nous vous recommandons vivement de le [modi
 >
 > La prise en compte du changement du mot de passe entraîne automatiquement la fermeture de toutes les sessions actives sur votre compte OVHcloud.
 >
+
 
 ## Aller plus loin
 

@@ -88,11 +88,12 @@ Your Okta service now trusts OVHcloud as a service provider. The next step is to
 
 ### Registering Okta into the OVHcloud account and configuring the connection
 
+<!-- CP-STEPS-START:register-okta-in-ovhcloud -->
 To add Okta as a trusted identity provider, you need to provide the identity provider metadata. Open the [SAML SSO](/links/control-panel/iam-saml-sso) page and click the `SSO connection`{.action} button.
 
 ![Access to the IAM menu](images/access_to_the_IAM_menu_03.png){.thumbnail}
 
-Fill in the XML metadata of your Okta service. Enter `http://schemas.xmlsoap.org/ws/2005/05/identity/claims/upn` as the "User Attribute Name" and `Group` as the "Group Attribute Name". Click on `Confirm`{.action}.
+Fill in the XML metadata of your Okta service. Enter `http://schemas.xmlsoap.org/ws/2005/05/identity/claims/upn` as the “User Attribute Name” and `Group` as the “Group Attribute Name”. Click on `Confirm`{.action}.
 
 You can keep local users by ticking the `Keep active OVHcloud users` box.
 
@@ -109,6 +110,7 @@ For more information, click on the link under “SSO Service URL”.
 The `...`{.action} button allows you to update or delete the SSO, and view its details.
 
 ![OVHcloud SSO connection step 5](images/ovhcloud_user_management_connect_sso_5.png){.thumbnail}
+<!-- CP-STEPS-END:register-okta-in-ovhcloud -->
 
 Your Okta service is now considered a trusted identity provider. However, you still need to add groups to your OVHcloud account.
 
@@ -120,6 +122,7 @@ Your Okta service is now considered a trusted identity provider. However, you st
 
 You must then assign **roles** to Okta user groups at OVHcloud. Otherwise, your OVHcloud account does not know what the user is allowed to do and, by default, no rights are assigned.
 
+<!-- CP-STEPS-START:declare-okta-groups-ovhcloud -->
 In the `Identities`{.action} section, open the `User groups`{.action} tab. Then click the `Declare a group`{.action} button and fill in the fields:
 
 - **Group name**: Group name within Okta
@@ -129,11 +132,12 @@ In the `Identities`{.action} section, open the `User groups`{.action} tab. Then 
 
 ![Okta User Management Groups](images/ovhcloud_user_management_groups_2.png){.thumbnail}
 
-You can then verify that the group is added to your OVHcloud account in the "Groups" section:
+You can then verify that the group is added to your OVHcloud account in the “Groups” section:
 
 ![Okta User Management Groups](images/ovhcloud_user_management_groups_3.png){.thumbnail}
+<!-- CP-STEPS-END:declare-okta-groups-ovhcloud -->
 
-When you later log in with a user from the **Intern** group, your OVHcloud account will recognise that the user has the role "UNPRIVILEGED" specified by his group.
+When you later log in with a user from the **Intern** group, your OVHcloud account will recognise that the user has the role “UNPRIVILEGED” specified by his group.
 
 Warning: if you give the `NONE` role, you will need to assign permissions to this group via the [IAM policies](/pages/account_and_service_management/account_information/iam-policy-ui).
 

@@ -92,7 +92,7 @@ Wenn Ihr OVHcloud Prepaid Account ein Guthaben aufweist, wird er standardmäßig
 
 ### Wann erfolgt meine nächste Abbuchung?
 
-Die Daten aller Verlängerungen finden Sie unter „Meine Angebote und Dienste“, direkt zugänglich auf dem Dashboard in Ihrem OVHcloud Kundencenter.
+Die Daten aller Verlängerungen finden Sie unter „Meine Angebote und Dienste”, direkt zugänglich auf dem Dashboard in Ihrem OVHcloud Kundencenter.
 
 Bei Diensten mit automatischer Verlängerung wird der Rechnungsbetrag am Ersten des Monats abgebucht. Die Abbuchungen können jedoch entsprechend Ihren Dienstleistungen unterschiedlich häufig erfolgen.
 

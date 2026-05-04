@@ -1,6 +1,6 @@
 ---
-title: How to determine if your dedicated server supports virtual MAC addresses
-excerpt: Find out how to use the OVHcloud API to determine whether the virtual MAC feature is supported on a dedicated server 
+title: "Check Virtual MAC Support on Your Dedicated Server"
+excerpt: "Use the OVHcloud API to check whether virtual MAC address assignment is supported on your dedicated server model."
 updated: 2025-04-28
 ---
 
@@ -31,11 +31,11 @@ Open the following API endpoint in the API console:
 
 Enter the internal server name into the `serviceName` field, then click `Execute`{.action}.
 
-![SVMAC](images/support_virtual_mac_02.png){.thumbnail}
+![API console with serviceName field for vMAC check](images/support_virtual_mac_02.png){.thumbnail}
 
 The result will show a "vmac / supported" entry which can be "true" or "false" (boolean value).
 
-![SVMAC](images/support_virtual_mac_04.png){.thumbnail}
+![API result showing vMAC supported true or false](images/support_virtual_mac_04.png){.thumbnail}
 
 > [!primary]
 > **Interpretation of the result**
@@ -48,5 +48,9 @@ The result will show a "vmac / supported" entry which can be "true" or "false" (
 ## Go further
 
 [First Steps with the OVHcloud API](/pages/manage_and_operate/api/first-steps)
+
+[Assigning a Virtual MAC on a Dedicated Server](/pages/bare_metal_cloud/dedicated_servers/network_virtual_mac)
+
+[Dedicated Server - Configuring Additional IPs in Bridge Mode](/pages/bare_metal_cloud/dedicated_servers/network_bridging)
 
 Join our [community of users](/links/community).

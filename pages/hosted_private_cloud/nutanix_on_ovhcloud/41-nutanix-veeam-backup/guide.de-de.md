@@ -22,7 +22,6 @@ Veeam Backup is a backup software available for Nutanix.
 ## Requirements
 
 - A Nutanix cluster in your OVHcloud account.
-- Access to the [OVHcloud Control Panel](/links/manager).
 - You must be connected to the cluster via **Prism Central**. 
 - **Veeam Backup & Replication** installed on a virtual machine in your Nutanix cluster via this procedure: [Setting up Veeam Backup & Replication](/pages/storage_and_backup/backup_and_disaster_recovery_solutions/veeam/veeam_veeam_backup_replication).
 - Knowing the public IP address used by **Veeam Backup** to access the internet.

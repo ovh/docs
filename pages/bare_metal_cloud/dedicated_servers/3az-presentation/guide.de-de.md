@@ -52,20 +52,22 @@ Für eine optimale Leistung sollte eine Region so nah wie möglich an den Benutz
 
 Wechseln Sie zum Tab `3-AZ Cluster`{.action}.
 
-![list_clusters](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/dedicated-servers/general-information/clusters1.png){.thumbnail}
+![Tab "3-AZ Cluster" mit verfügbaren Clustern](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/dedicated-servers/general-information/clusters1.png){.thumbnail}
 
 Klicken Sie auf den Cluster-Namen in der Tabelle, um die Details anzuzeigen.
 
-![list_clusters](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/dedicated-servers/general-information/clusters2.png){.thumbnail}
+![Cluster-Detailseite mit Verfügbarkeitszonen-Informationen](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/dedicated-servers/general-information/clusters2.png){.thumbnail}
 
 Klicken Sie auf den Tab `Nodes`{.action}, um die Serverliste des Clusters zu öffnen.
 
-![list_clusters](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/dedicated-servers/general-information/clusters3.png){.thumbnail}
+![Tab "Nodes" mit der Liste der Server im Cluster](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/dedicated-servers/general-information/clusters3.png){.thumbnail}
 
 Durch Klicken auf einen Server-/Knotennamen in dieser Liste öffnet sich der Tab `Allgemeine Informationen`{.action} des Servers. Einzelheiten zu diesem Bereich finden Sie in unserer Anleitung:
 
 [Erste Schritte mit einem Dedicated Server](/pages/bare_metal_cloud/dedicated_servers/getting-started-with-dedicated-server)
 
 ## Weiterführende Informationen <a name="go-further"></a>
+
+- [vRack auf Ihren Dedicated Servern konfigurieren](/pages/bare_metal_cloud/dedicated_servers/vrack_configuring_on_dedicated_server)
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

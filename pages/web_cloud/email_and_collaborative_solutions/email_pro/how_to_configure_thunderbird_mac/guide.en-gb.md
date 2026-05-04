@@ -54,11 +54,13 @@ If you experience any difficulties carrying out these operations, we recommend t
 
 ## Instructions
 
+<!-- CP-STEPS-START:server-name-lookup -->
 > [!warning]
 >
 > In our examples, we will use as the server name: pro?.mail.ovh.net. You will need to replace the "?" with the number designating the server of your Email Pro service.
 >
 > Click [this link](/links/control-panel/web-email-pro) to access the `Email Pro`{.action} section. The server name is visible in the **Connection** section of the `General information`{.action} tab.
+<!-- CP-STEPS-END:server-name-lookup -->
 
 ### Add the account
 

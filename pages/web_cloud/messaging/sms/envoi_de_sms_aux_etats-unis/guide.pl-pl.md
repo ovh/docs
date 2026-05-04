@@ -69,6 +69,7 @@ Pojawi się okienko pop-up zawierające pola do wypełnienia.
 | Opis | Opis modelu                                                                                            |
 | Model      | Napisz model zawierający zmienną między #                                                                  |
 
+
 #### 2.2 Za pośrednictwem API
 
 > [!success]

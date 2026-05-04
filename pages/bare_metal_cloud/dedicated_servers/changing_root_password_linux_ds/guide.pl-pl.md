@@ -1,6 +1,6 @@
 ---
-title: "Konfigurowanie kont użytkowników i dostępu root na serwerze"
-excerpt: "Dowiedz się, jak rozpocząć zarządzanie kontami użytkowników w systemie operacyjnym GNU/Linux"
+title: "Jak zmienić hasło root na serwerze dedykowanym z systemem Linux"
+excerpt: "Zmień hasło root na serwerze dedykowanym OVHcloud z systemem Linux za pomocą trybu rescue lub SSH."
 updated: 2024-02-19
 ---
 

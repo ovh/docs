@@ -21,10 +21,12 @@ OVHcloud's Startup Program offers numerous benefits to support startups in their
 
 Ensure your OVHcloud account is correctly configured before submitting your application.
 
+<!-- CP-STEPS-START:update-account-type -->
 Select `Company` as legal form and complete the required information:
 Provide the SIRET (only for accounts in France), VAT number, company address, and the personal information of the account holder. Use a professional email address associated with your company domain. Please also enter a backup email address (preferably a personal email address).
 
 ![Account type](images/01-account-type.png){.thumbnail}
+<!-- CP-STEPS-END:update-account-type -->
 
 Refer to this guide for more information: [Securing my OVHcloud account and managing my personal information](/pages/account_and_service_management/account_information/all_about_username).
 
@@ -34,7 +36,9 @@ A valid payment method is required to ensure the continuity of your services. It
 
 Refer to this guide for more information: [Managing payment methods](/pages/account_and_service_management/managing_billing_payments_and_services/manage-payment-methods).
 
+<!-- CP-STEPS-START:add-payment-method -->
 ![Payment method](images/02-payment-mean.png){.thumbnail}
+<!-- CP-STEPS-END:add-payment-method -->
 
 ### Step 3 - Carefully complete the Startup Program application form
 

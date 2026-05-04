@@ -1,6 +1,6 @@
 ---
-title: "Configuração das contas utilizadores e do acesso root num servidor"
-excerpt: "Descubra como começar a administrar corretamente contas de utilizadores num sistema operativo GNU/Linux"
+title: "Configurar as contas de utilizadores e o acesso root (Dedicado)"
+excerpt: "Faça a gestão das contas de utilizadores, do acesso sudo e da ligação root num servidor dedicado GNU/Linux para uma administração segura"
 updated: 2024-02-19
 ---
 

@@ -1,6 +1,6 @@
 ---
-title: Konfiguracja firewalla w systemie Linux z systemem iptables
-excerpt: Dowiedz się, jak zabezpieczyć serwer korzystając z iptables
+title: "Konfiguracja zapory iptables na serwerze dedykowanym z systemem Linux"
+excerpt: "Skonfiguruj reguły zapory iptables na serwerze dedykowanym OVHcloud z systemem Linux, aby zabezpieczyć ruch sieciowy."
 updated: 2024-12-20
 ---
 
@@ -241,5 +241,8 @@ Możesz teraz skonfigurować podstawowe reguły firewalla iptables dla Twojego s
 Nie wahaj się doświadczyć, ponieważ zawsze możesz usunąć reguły, których nie potrzebujesz, lub usunąć wszystkie reguły i zacząć od nowa.
 
 ## Sprawdź również
+
+- [Serwer dedykowany - Edge Network Firewall](/pages/bare_metal_cloud/dedicated_servers/firewall_network)
+- [Serwer dedykowany - Panel bezpieczeństwa sieci](/pages/bare_metal_cloud/dedicated_servers/network_security_dashboard)
 
 Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

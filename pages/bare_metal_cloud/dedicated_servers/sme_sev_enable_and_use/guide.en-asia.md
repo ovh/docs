@@ -1,6 +1,6 @@
 ---
-title: 'AMD SME/SEV on Ubuntu 20'
-excerpt: 'Enable SME on your ubuntu server and spawn an SEV virtual machine'
+title: "Enable AMD SME/SEV on a Dedicated Server (Ubuntu)"
+excerpt: "Enable SME on your ubuntu server and spawn an SEV virtual machine"
 updated: 2020-05-07
 ---
 
@@ -123,8 +123,7 @@ Note: at the time of writing, there is an issue in apparmor/libvirt that wil mak
 ERROR    internal error: process exited while connecting to monitor: 2020-04-28T15:04:14.348979Z qemu-system-x86_64: sev_guest_init: Failed to open /dev/sev 'Permission denied'
 ```
 To fix it, we'll edit `/etc/apparmor.d/abstractions/libvirt-qemu` to authorize `rw` access to `/dev/sev`. Here's what it should look like once edited:
-```bash
-[...]
+```bash[...]
   /dev/net/tun rw,
   /dev/kvm rw,
   /dev/ptmx rw,
@@ -149,5 +148,9 @@ ubuntu@ubuntu:~$ dmesg | grep SEV
 - [github.com/AMDESE/sev-tool](https://github.com/AMDESE/sev-tool)
 
 ## Go further
+
+[How to manage Intel SGX on a Dedicated Server](/pages/bare_metal_cloud/dedicated_servers/sgx-enable-and-use)
+
+[How to secure a Dedicated Server](/pages/bare_metal_cloud/dedicated_servers/securing-a-dedicated-server)
 
 Join our [community of users](/links/community).

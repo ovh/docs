@@ -52,6 +52,7 @@ details[open]>summary::before {
 
 ### Añadir un registro DNS de tipo AAAA a un dominio
 
+<!-- CP-STEPS-START:add-aaaa-record -->
 Haga clic en las pestañas siguientes para ver cada uno de los **5** pasos.
 
 > [!tabs]
@@ -76,6 +77,7 @@ Haga clic en las pestañas siguientes para ver cada uno de los **5** pasos.
 > **Paso 5**
 >>
 >> Revise el resumen y haga clic en `Aceptar`{.action}. Espere hasta **24** horas para que la propagación de la adición en la red DNS sea plenamente efectiva.
+<!-- CP-STEPS-END:add-aaaa-record -->
 
 /// details | Haga clic aquí para obtener más información.
 
@@ -91,6 +93,7 @@ Consulte nuestras guías detalladas:
 
 ### Añadir un registro DNS de tipo AAAA para el subdominio de un dominio
 
+<!-- CP-STEPS-START:add-aaaa-record-subdomain -->
 Haga clic en las pestañas siguientes para ver cada uno de los **5** pasos.
 
 > [!tabs]
@@ -115,6 +118,7 @@ Haga clic en las pestañas siguientes para ver cada uno de los **5** pasos.
 > **Paso 5**
 >>
 >> Revise el resumen y haga clic en `Aceptar`{.action}. Espere hasta **24** horas para que la propagación de la adición en la red DNS sea plenamente efectiva.
+<!-- CP-STEPS-END:add-aaaa-record-subdomain -->
 
 /// details | Haga clic aquí para obtener más información.
 
@@ -136,7 +140,7 @@ Consulte nuestras guías detalladas:
 [Todo sobre los registros DNS](/pages/web_cloud/domains/dns_zone_records).
 
 Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](/links/partner).
-
+ 
 Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](/links/support).
-
+ 
 Interactúe con nuestra [comunidad de usuarios](/links/community).

@@ -1,4 +1,4 @@
----
+﻿---
 title: OpenSearch - Premiers pas (EN)
 excerpt: Find out how to set up and manage your Public Cloud Databases for OpenSearch
 updated: 2023-03-03
@@ -127,6 +127,7 @@ Your OpenSearch service is now fully accessible!
 Optionally, you can configure access control lists (ACL) for granular permissions.
 
 #### Optional: configure ACLs
+
 
 OpenSearch database supports index-level access control lists (ACLs) to control permissions. This approach allows you to limit the operations that are available to specific connections and to restrict access to certain data sets, which improves the security of your data.
 

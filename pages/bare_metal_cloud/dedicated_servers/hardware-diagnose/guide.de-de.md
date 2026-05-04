@@ -1,6 +1,6 @@
 ---
-title: "Hardwarefehler auf einem dedizierten Server im Rescue-Modus diagnostizieren"
-excerpt: "Erfahren Sie hier, wie Sie mithilfe von OVHcloud Rescue-Modus und Diagnose-Tools Hardwarefehler auf Ihrem Dedicated Server identifizieren"
+title: "Hardware-Diagnose im Rescue-Modus auf einem Dedicated Server durchführen"
+excerpt: "Führen Sie eine Hardware-Diagnose auf Ihrem OVHcloud Dedicated Server im Rescue-Modus durch, um Festplatten-, RAM- oder CPU-Fehler zu identifizieren."
 updated: 2025-10-16
 ---
 
@@ -82,5 +82,9 @@ hdparm -t /dev/sd(x)
 ```
 
 ## Weiterführende Informationen
+
+- [Dedicated Server - Datenbanken im Rescue-Modus abrufen](/pages/bare_metal_cloud/dedicated_servers/restore-bdd-rescue)
+
+- [BMC-Firmware-Version auf einem Dedicated Server prüfen](/pages/bare_metal_cloud/dedicated_servers/bmc_fw_update)
 
 Für den Austausch mit unserer [User Community](/links/community).

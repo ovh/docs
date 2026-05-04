@@ -1,6 +1,6 @@
 ---
-title: Sprawdzanie wersji oprogramowania BMC na dedykowanym serwerze
-excerpt: "Dowiedz się, jak sprawdzić wersję oprogramowania BMC na dedykowanym serwerze."
+title: "Sprawdzenie wersji firmware BMC na serwerze dedykowanym Linux"
+excerpt: "Sprawdź wersję firmware BMC na serwerze dedykowanym OVHcloud, aby zapewnić kompatybilność zarządzania sprzętowego."
 updated: 2026-02-25
 ---
 
@@ -48,7 +48,7 @@ Sprawdź wersję oprogramowania BMC za pomocą poniższego polecenia:
 sudo ipmitool mc info
 ```
 
-![bmc](images/ipmi_tool.png){.thumbnail} 
+![Wersja firmware BMC z narzędzia ipmitool w systemie Linux](images/ipmi_tool.png){.thumbnail} 
 
 Jeśli wersja oprogramowania sprzętowego jest równa lub mniejsza niż 1.14, skontaktuj się z naszym zespołem wsparcia, tworząc [żądanie wsparcia za pośrednictwem OVHcloud Help Center](/links/support-contact), aby zażądać aktualizacji oprogramowania. Jeśli wersja jest wyższa niż 1.14, nie jest wymagana żadna akcja.
 
@@ -70,7 +70,7 @@ Następnie sprawdź wersję oprogramowania:
 ipmitool mc info
 ```
 
-![bmc](images/ipmi_tool_rescue.png){.thumbnail}
+![Wersja firmware BMC z narzędzia ipmitool w trybie rescue](images/ipmi_tool_rescue.png){.thumbnail}
 
 Jeśli wersja oprogramowania sprzętowego jest równa lub mniejsza niż 1.14, skontaktuj się z naszym zespołem wsparcia, tworząc [żądanie wsparcia za pośrednictwem OVHcloud Help Center](/links/support-contact), aby zażądać aktualizacji oprogramowania. Jeśli wersja jest wyższa niż 1.14, nie jest wymagana żadna akcja.
 
@@ -80,4 +80,6 @@ Dla specjalistycznych usług (SEO, programowanie itp.) skontaktuj się z [partne
 
 Jeśli potrzebujesz pomocy w użyciu i konfiguracji rozwiązań OVHcloud, oferujemy różne [opcje wsparcia](/links/support).
 
+- [Advance Dedicated Servers - Upgrading your Samsung NVMe PM9A1 firmware (EN)](/pages/bare_metal_cloud/dedicated_servers/samsung-nvme-fw-upgrade)
+- [Dedicated Servers - Upgrading your Micron 7500 PRO firmware](/pages/bare_metal_cloud/dedicated_servers/micron-7500-fw-upgrade)
 Dołącz do [grona naszych użytkowników](/links/community).

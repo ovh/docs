@@ -69,6 +69,7 @@ Visualizzi un pop-up con i campi da compilare.
 | Descrizione | Descrizione del modello                                                                                            |
 | Modello      | Digita il modello. È possibile includere le variabili delimitate con il carattere #.                                                                  |
 
+
 #### 2.2 Via API
 
 > [!success]

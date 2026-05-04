@@ -52,6 +52,7 @@ Si se produce un error en la base de datos, es necesario poder restaurar una cop
 
 #### Restaurar una copia de seguridad existente
 
+<!-- CP-STEPS-START:restore-backup -->
 Haga clic en las fichas siguientes para ver cada una de las **4** etapas.
 
 > [!tabs]
@@ -80,9 +81,11 @@ Haga clic en las fichas siguientes para ver cada una de las **4** etapas.
 >> > [!warning]
 >> >
 >> > La restauración implica la sobrescritura del contenido de la base de datos y, por tanto, una posible pérdida de datos. Si no está seguro de lo que hace, le recomendamos que realice una copia de seguridad antes.
+<!-- CP-STEPS-END:restore-backup -->
 
 #### Importar una copia de seguridad local
 
+<!-- CP-STEPS-START:import-local-backup -->
 Haga clic en las fichas siguientes para ver cada una de las **4** etapas.
 
 > [!tabs]
@@ -129,6 +132,7 @@ Haga clic en las fichas siguientes para ver cada una de las **4** etapas.
 >> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/databases/database-import-existing-file-step-2.png){.thumbnail}
 >>
 >> Si lo desea, marque **"Vaciar la base de datos actual"** antes de la importación y **"Enviar un email al final de la importación"** para estar informado del fin de la operación en la dirección de correo electrónico de referencia de su cuenta de OVHcloud, y haga clic en `Aceptar`{.action}.
+<!-- CP-STEPS-END:import-local-backup -->
 
 ### Importar una base de datos fuera del área de cliente
 

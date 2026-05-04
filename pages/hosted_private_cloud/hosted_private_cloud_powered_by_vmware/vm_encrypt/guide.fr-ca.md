@@ -15,6 +15,17 @@ updated: 2024-10-21
 - Avoir accès à l’interface de gestion vSphere.
 - Posséder des machines virtuelles avec une version Hardware 13 (minimum).
 
+<!-- CP-NAV-START:privatecloud-vmware-vsphere -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [VMware vSphere](/links/control-panel/privatecloud-vmware-vsphere)
+- **Pour accéder à vos services :** `Hosted Private Cloud`{.action} > `Managed VMware vSphere`{.action} > Sélectionnez votre service vSphere
+
+---
+<!-- CP-NAV-END:privatecloud-vmware-vsphere -->
+
 ## En pratique
 
 Ce guide a pour objectif d'expliquer les détails de la mise en oeuvre du chiffrement de machines virtuells sur l'offre Hosted Private Cloud VMware on OVHcloud, en employant une stratégie de stockage utilisant un **Fournisseur de clé Standard** ou KMS externe.

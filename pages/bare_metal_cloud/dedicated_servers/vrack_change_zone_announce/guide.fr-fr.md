@@ -1,6 +1,6 @@
 ---
-title: "Modifier l'annonce d'un bloc IP dans le vRack"
-excerpt: "Apprenez à modifier l'annonce d'un bloc IP dans le vRack"
+title: "Modifier l'annonce d'un bloc IP dans le vRack sur un serveur dédié"
+excerpt: "Modifiez la zone d'annonce géographique d'un bloc IP dans votre vRack OVHcloud pour un routage optimisé"
 updated: 2025-05-14
 ---
 
@@ -88,5 +88,7 @@ traceroute to 1.2.3.4, 30 hops max, 60 byte packets
 L'exemple ci-dessus montre que l'adresse IP testée est à présent annoncée à **Gravelines**. Cette mention est visible dans le dernier saut réalisé : « be120.**gra**-d1-a75.fr.eu (37.187.232.74) 0.351 ms ».
 
 ## Aller plus loin
+
+[Configurer le vRack sur vos serveurs dédiés](/pages/bare_metal_cloud/dedicated_servers/vrack_configuring_on_dedicated_server)
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).

@@ -129,6 +129,7 @@ Se generará una [orden de pedido de regularización](/pages/account_and_service
 > Para solicitar la baja al vencimiento del servicio, siga las indicaciones de esta [guía](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_cancel_services).
 >
 
+
 ### Seguimiento de los pagos
 
 Consulte el historial de pagos efectuados en `Mis facturas`{.action} y, seguidamente, `Seguimiento de los pagos`{.action}. De este modo, podrá asociar cada factura al pago asociado.

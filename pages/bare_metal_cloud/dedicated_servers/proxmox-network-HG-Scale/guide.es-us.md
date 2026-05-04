@@ -34,6 +34,7 @@ updated: 2026-01-23
 - An [OVHcloud dedicated server](/links/bare-metal/bare-metal)
 - One or more [Additional IP addresses](/links/network/additional-ip)
 
+
 > [!warning]
 >
 > No virtual MAC address must be applied to Additional IPs in the OVHcloud Control Panel.

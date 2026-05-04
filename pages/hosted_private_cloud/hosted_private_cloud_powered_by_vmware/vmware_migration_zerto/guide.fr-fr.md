@@ -29,6 +29,17 @@ Avant de commencer, assurez-vous de détenir :
 > Depuis mai 2025, **Zerto ne prend pas en charge la réplication des VM avec le chiffrement VMEncrypt activé**.
 > Le chiffrement au repos de vSAN est pris en charge. Vous pouvez également chiffrer vos VM après la migration.
 
+<!-- CP-NAV-START:privatecloud-vmware-vsphere -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [VMware vSphere](/links/control-panel/privatecloud-vmware-vsphere)
+- **Pour accéder à vos services :** `Hosted Private Cloud`{.action} > `Managed VMware vSphere`{.action} > Sélectionnez votre service vSphere
+
+---
+<!-- CP-NAV-END:privatecloud-vmware-vsphere -->
+
 ## En pratique
 
 ![Move2CloudZerto](/pages/assets/screens/other/zerto/move2cloud-zerto.png){.thumbnail}
@@ -113,10 +124,8 @@ Vous devez explicitement autoriser vos adresses IP d'administration à atteindre
 
 Pour ce faire :
 
-1. Connectez-vous à votre [espace client OVHcloud](/links/manager).
-2. Sélectionnez votre `Hosted Private Cloud`{.action}.
-3. Accédez à l'onglet `Sécurité`{.action}
-4. Cliquez sur `Ajouter une nouvelle plage d'adresses IP`{.action} pour autoriser vos adresses IP d'infrastructure source et vos composants Zerto.
+1. Cliquez sur [ce lien](/links/control-panel/privatecloud-vmware-vsphere) pour accéder à la section `VMware vSphere`{.action}, puis accédez à l'onglet `Sécurité`{.action}.
+2. Cliquez sur `Ajouter une nouvelle plage d'adresses IP`{.action} pour autoriser vos adresses IP d'infrastructure source et vos composants Zerto.
 
 Pour des instructions détaillées, référez-vous à notre guide « [Autoriser des IP à se connecter au vCenter](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/autoriser_des_ip_a_se_connecter_au_vcenter) ».
 
@@ -214,7 +223,7 @@ Vous pouvez également établir une communication sécurisée entre l'AD on-prem
 
 Zerto est installé et géré par site. Côté OVHcloud, les composants sont déployés automatiquement lors de l’activation de Zerto.
 
-Dans votre interface `Hosted Private Cloud`{.action} :
+Cliquez sur [ce lien](/links/control-panel/privatecloud-vmware-vsphere) pour accéder à la section `VMware vSphere`{.action}, puis :
 
 1. Accédez à `Reprise d'activité`{.action}.
 2. Sélectionnez `Activer la réplication virtuelle Zerto`{.action}.

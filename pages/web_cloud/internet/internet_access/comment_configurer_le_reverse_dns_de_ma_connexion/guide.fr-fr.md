@@ -114,6 +114,8 @@ Nous pouvons maintenant passer à l'étape suivante qui est la configuration de 
 
 ### Configurer le Reverse DNS de votre connexion
 
+<!-- CP-STEPS-START:configurer-reverse-dns -->
+
 La configuration du Reverse DNS s'effectue dans votre [espace client OVHcloud](/links/control-panel/telecom-xdsl-fttx). Cliquez sur votre accès à Internet FTTH ou xDSL dans le cadre `Accès Internet` à droite.
 
 Dans les caractéristiques sur la droite, vous verrez apparaître votre IPv4 publique sous cette forme : `109.190.xxx.xxx` ou `151.127.xxx.xxx` et votre préfixe IPv6 public sous cette forme : `2001:41d0:xxxx:xxxx::`.
@@ -148,6 +150,8 @@ Dans les caractéristiques sur la droite, vous verrez apparaître votre IPv4 pub
 
 
 Quelques minutes seront nécessaires pour que la nouvelle valeur de votre DNS soit visible dans votre espace client.
+
+<!-- CP-STEPS-END:configurer-reverse-dns -->
 
 ### Vérifier la configuration du Reverse DNS
 

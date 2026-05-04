@@ -50,6 +50,7 @@ Jedyną różnicą jest to, że SFTP korzysta z bezpiecznego kanału komunikacji
 
 **Kliknij jedną z dwóch poniższych linii, w zależności od oferty Web Hostinga, aby wyświetlić instrukcję.**
 
+<!-- CP-STEPS-START:enable-sftp-starter-perso -->
 /// details | Włączenie SFTP na ofercie Web Hostinga **Darmowy 100M**, **Starter** lub **Perso**
 
 Kliknij poniższe zakładki, aby wyświetlić kolejne **3** kroki.
@@ -77,7 +78,9 @@ Kliknij poniższe zakładki, aby wyświetlić kolejne **3** kroki.
 >>
 
 ///
+<!-- CP-STEPS-END:enable-sftp-starter-perso -->
 
+<!-- CP-STEPS-START:enable-sftp-pro-performance -->
 /// details | Włączenie SFTP na ofercie Web Hostinga **Pro** lub **Performance**
 
 Kliknij poniższe zakładki, aby wyświetlić kolejne **4** kroki.
@@ -113,6 +116,7 @@ Kliknij poniższe zakładki, aby wyświetlić kolejne **4** kroki.
 >> Następnie kliknij `Dalej`{.action}, a następnie `Zatwierdź`{.action}, aby zakończyć włączanie SFTP dla danego użytkownika.
 
 ///
+<!-- CP-STEPS-END:enable-sftp-pro-performance -->
 
 ### Połączenie się z Web Hostingiem za pomocą SFTP
 

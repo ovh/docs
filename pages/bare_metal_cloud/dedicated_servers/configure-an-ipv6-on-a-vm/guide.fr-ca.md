@@ -1,6 +1,6 @@
 ---
-title: "Configurer une adresse IPv6 sur une machine virtuelle"
-excerpt: "Découvrez comment configurer une adresse IPv6 sur une machine virtuelle pour Proxmox VE ou Microsoft Hyper-V Server sur un Serveur Dédié OVHcloud"
+title: "Configurer IPv6 sur une VM d'un serveur dédié"
+excerpt: "Configurez une adresse IPv6 sur une machine virtuelle Proxmox VE ou Hyper-V hébergée sur un serveur dédié OVHcloud"
 updated: 2024-10-18
 ---
 
@@ -20,15 +20,15 @@ Notre infrastructure vous permet également de configurer l'IPv6 sur vos machine
 
 ## Prérequis
 
-- Disposer d’un [serveur dédié](/links/bare-metal/bare-metal) disposant d'un bloc IPv6 (/64) ou (/56) dans votre compte OVHcloud.
-- Avoir installé un système d'exploitation permettant la virtualisation (Proxmox VE, Microsoft Hyper-V Server, etc.).
+- Disposer d’un [serveur dédié](/links/bare-metal/bare-metal) disposant d’un bloc IPv6 (/64) ou (/56) dans votre compte OVHcloud.
+- Avoir installé un système d’exploitation permettant la virtualisation (Proxmox VE, Microsoft Hyper-V Server, etc.).
 - Avoir toutes les informations relatives à votre IPv6 (préfixe, passerelle, etc.).
 - Avoir des connaissances de base en SSH et en réseau.
 
 <!-- CP-NAV-START:baremetal-dedicated-servers -->
 ---
 
-### Accès à l'espace client OVHcloud
+### Accès à l’espace client OVHcloud
 
 - **Lien direct :** [Serveurs dédiés](/links/control-panel/baremetal-dedicated-servers)
 - **Pour accéder à vos services :** `Bare Metal Cloud`{.action} > `Serveurs dédiés`{.action} > Sélectionnez votre serveur
@@ -63,7 +63,7 @@ La première étape consiste à récupérer la passerelle (gateway) IPv6 assign�
 
 La passerelle IPv6 assignée à votre serveur est affichée dans la section `Réseau` de l'onglet `Informations générales`{.action}.
 
-![configureipv6](images/ipv6_information.png){.thumbnail}
+![Section Réseau du tableau de bord du serveur affichant la passerelle IPv6](images/ipv6_information.png){.thumbnail}
 
 #### Via les API OVHcloud 
 
@@ -92,7 +92,7 @@ La première étape consiste à créer la machine virtuelle dans Proxmox VE.
 
 Une fois connecté au tableau de bord Proxmox, cliquez sur le nom de votre serveur dans le coin à gauche, puis sur `Créer VM`{.action}.
 
-![create vm](images/create_vm_proxmox.png){.thumbnail}
+![Tableau de bord Proxmox avec bouton Create VM mis en évidence](images/create_vm_proxmox.png){.thumbnail}
 
 **Create: Virtual Machine**
 
@@ -121,21 +121,21 @@ Une fois le système d'exploitation installé sur la machine virtuelle, vous pou
 
 Une fois votre conteneur créé, cliquez dessus dans le menu de gauche. Cliquez ensuite sur `Réseau`{.action}.
 
-![configuration du conteneur](images/container_network.png){.thumbnail}
+![Onglet Network du conteneur Proxmox avec interface listee](images/container_network.png){.thumbnail}
 
 Sélectionnez le réseau existant et cliquez sur `Edit`{.action}.
 
-![configuration du conteneur](images/edit_network.png){.thumbnail}
+![Dialogue de modification de l'interface réseau du conteneur](images/edit_network.png){.thumbnail}
 
 Complétez les champs IPv6 avec les bonnes informations.
 
-![configuration du conteneur](images/configure_ipv6_container.png){.thumbnail}
+![Champs adresse IPv6 et passerelle dans la configuration réseau du conteneur](images/configure_ipv6_container.png){.thumbnail}
 
 Enfin, cliquez sur `OK`{.action} pour enregistrer les modifications.
 
 Connectez-vous à votre conteneur pour vérifier la connectivité IPv6 avec la commande `ping` :
 
-![ping](images/container_ubuntu.png){.thumbnail}
+![Ping IPv6 reussi depuis le conteneur Proxmox](images/container_ubuntu.png){.thumbnail}
 
 #### Windows Server / Hyper-V
 
@@ -153,7 +153,7 @@ Dans le panneau de configuration Hyper-V, créez un nouveau commutateur virtuel 
 
 Sélectionnez l'adaptateur avec l'adresse IP du serveur, puis cochez `Autoriser le système d'exploitation à partager cette carte réseau`{.action}.
 
-![virtual switch](images/virtual_switch.png){.thumbnail}
+![Gestionnaire de commutateur virtuel Hyper-V avec type Externe sélectionné](images/virtual_switch.png){.thumbnail}
 
 > [!primary]
 >
@@ -162,7 +162,7 @@ Sélectionnez l'adaptateur avec l'adresse IP du serveur, puis cochez `Autoriser 
 
 Ensuite, allez dans les paramètres de la VM et cliquez sur `Network Adapter`{.action} dans l'onglet de gauche. Dans la liste déroulante, sélectionnez le commutateur virtuel créé plus tôt et cliquez sur `Appliquer`{.action}, puis sur `OK`{.action}.
 
-![virtual switch](images/virtual_switch_1.png){.thumbnail}
+![Paramètres de la VM avec commutateur virtuel assigne a la carte réseau](images/virtual_switch_1.png){.thumbnail}
 
 Une fois le système d'exploitation installé sur la machine virtuelle, vous pouvez procéder à la [configuration](#configurationsteps) de l'adresse IPv6.
 
@@ -210,7 +210,7 @@ sudo netplan apply
 
 Pour tester la connectivité de votre IPv6, exécutez la commande `ping` à l'adresse `2001:4860:4860::8888` :
 
-![ping](images/vm_ubuntu.png){.thumbnail}
+![Resultat de ping IPv6 reussi sur une VM Ubuntu](images/vm_ubuntu.png){.thumbnail}
 
 #### Configuration basée sur ENI
 
@@ -244,7 +244,7 @@ sudo systemctl restart networking.service
 
 Pour tester la connectivité de votre IPv6, exécutez la commande `ping` à l'adresse `2001:4860:4860::8888` :
 
-![ping](images/vm_debian.png){.thumbnail}
+![Resultat de ping IPv6 reussi sur une VM Debian](images/vm_debian.png){.thumbnail}
 
 #### Configuration basée sur NetworkManager
 
@@ -260,7 +260,7 @@ cd /etc/NetworkManager/system-connections
 
 Utilisez la commande `ls` pour afficher le fichier de configuration réseau. Dans notre exemple, notre fichier s'appelle `ens18.nmconnection`.
 
-![ls](images/ls_command.png){.thumbnail}
+![Terminal listant les fichiers de connexion NetworkManager](images/ls_command.png){.thumbnail}
 
 Configurez ensuite l'adresse IPv6 de votre choix en remplaçant *YOUR_IPV6*, *IPV6_PREFIX* et *IPV6_GATEWAY* par vos propres valeurs.
 
@@ -286,8 +286,12 @@ sudo systemctl restart NetworkManager
 
 Pour tester la connectivité de votre IPv6, exécutez la commande `ping` à l'adresse `2001:4860:4860::8888` :
 
-![ping](images/vm_alma_rocky.png){.thumbnail}
+![Resultat de ping IPv6 reussi sur une VM Fedora](images/vm_alma_rocky.png){.thumbnail}
 
 ## Aller plus loin
+
+[Configurer une adresse IPv6 principale sur un serveur dédié](/pages/bare_metal_cloud/dedicated_servers/network_ipv6)
+
+[Configurer des Additional IP en mode bridge sur vos machines virtuelles](/pages/bare_metal_cloud/dedicated_servers/network_bridging)
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).

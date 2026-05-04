@@ -1,6 +1,6 @@
 ---
-title: 'Configurer le vRack entre Public Cloud et un serveur dédié'
-excerpt: 'Découvrez comment configurer un réseau privé entre une instance Public Cloud et un serveur dédié.'
+title: "Configurer le vRack entre Public Cloud et un serveur dédié"
+excerpt: "Mettez en place un réseau privé entre une instance Public Cloud OVHcloud et un serveur dédié via le vRack"
 updated: 2026-02-20
 ---
 
@@ -59,7 +59,7 @@ Le [vRack](/links/network/vrack) OVHcloud est un réseau privé qui vous permet 
 
 Dans la liste des services éligibles, sélectionnez le projet que vous souhaitez ajouter au vRack, puis cliquez sur le bouton `Ajouter`{.action}.
 
-![ajouter un projet au vrack](images/addprojectvrack.png){.thumbnail}
+![Sélection d'un projet Public Cloud a ajouter au vRack](images/addprojectvrack.png){.thumbnail}
 
 ### Intégrer une instance dans le vRack
 
@@ -86,19 +86,19 @@ Dans l'onglet `Public cloud`{.action}, cliquez sur `Private Network`{.action} da
 
 Cliquez sur le bouton `Ajouter un réseau privé`{.action}. 
 
-![create private network](images/vrack2022-03.png){.thumbnail}
+![Section Private Network avec bouton Ajouter un réseau prive](images/vrack2022-03.png){.thumbnail}
 
 La page suivante vous permet de personnaliser plusieurs paramètres.
 
 Sélectionnez la région dans laquelle vous souhaitez placer le réseau privé. Assurez-vous qu'il se trouve dans la même région que l'instance existante.
 
-![select region](images/vrack2024-01.png){.thumbnail}
+![Sélection de la region pour le réseau prive](images/vrack2024-01.png){.thumbnail}
 
 Pour que les deux services puissent communiquer entre eux, ils doivent être « taggués » avec le même **VLAN ID**.
 
 Ceci peut être configuré à l'étape suivante.
 
-![configure network](images/configure_private_network.png){.thumbnail}
+![Formulaire de configuration du réseau prive avec nom, VLAN ID et DHCP](images/configure_private_network.png){.thumbnail}
 
 Cette étape offre plusieurs options de configuration. Pour les besoins de ce guide, nous allons nous concentrer sur les éléments nécessaires. Cliquez sur les onglets ci-dessous pour afficher les détails :
 
@@ -145,11 +145,11 @@ Une fois la configuration terminée, cliquez sur `Configurez votre réseau priv�
 
 Dans le tableau de bord de l'instance concernée, localisez la section « Réseaux » et cliquez sur le bouton `...`{.action} à côté de « Réseau(x) privé(s) ». Sélectionnez `Attacher un réseau`{.action}.
 
-![attach network](images/vrack2021-01.png){.thumbnail}
+![Tableau de bord de l'instance avec option Attacher un réseau](images/vrack2021-01.png){.thumbnail}
 
 Dans la fenêtre qui apparaît, sélectionnez le ou les réseaux privés à attacher à votre instance et cliquez sur `Attacher`{.action}.
 
-![attach network](images/attach_network.png){.thumbnail}
+![Popup pour sélectionner et attacher un réseau prive a l'instance](images/attach_network.png){.thumbnail}
 
 ### Configurer vos interfaces réseau
 
@@ -811,5 +811,7 @@ Dans cet exemple, nous utiliserons **10** comme identifiant (balise) VLAN et **1
 ## Aller plus 
 
 [Créer plusieurs VLAN dans le vRack](/pages/bare_metal_cloud/dedicated_servers/creating-multiple-vlans-in-a-vrack)
+
+[Configurer le vRack sur vos serveurs dédiés](/pages/bare_metal_cloud/dedicated_servers/vrack_configuring_on_dedicated_server)
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).

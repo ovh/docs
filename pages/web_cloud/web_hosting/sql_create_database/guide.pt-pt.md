@@ -30,6 +30,7 @@ Uma base de dados (BDD) é utilizada para armazenar elementos dinâmicos (dados 
 
 ### 1 - Aceder ao separador de gestão das bases de dados de um alojamento web
 
+<!-- CP-STEPS-START:access-databases-tab -->
 Clique nos separadores abaixo para visualizar cada uma das **2** etapas.
 
 > [!tabs]
@@ -48,6 +49,7 @@ Clique nos separadores abaixo para visualizar cada uma das **2** etapas.
 >> A tabela desta secção contém todas as bases de dados criadas com o seu alojamento web.
 >>
 >> ![Lista das bases de dados do alojamento web](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/tab.png){.thumbnail}
+<!-- CP-STEPS-END:access-databases-tab -->
 
 Na tabela, as bases de dados podem ter vários Status diferentes:
 
@@ -63,6 +65,7 @@ Na tabela, as bases de dados podem ter vários Status diferentes:
 
 ### 2 - Criar a base de dados
 
+<!-- CP-STEPS-START:create-database -->
 Para criar uma base de dados, clique nos separadores abaixo para visualizar cada uma das **5** etapas.
 
 > [!tabs]
@@ -110,6 +113,7 @@ Para criar uma base de dados, clique nos separadores abaixo para visualizar cada
 >> > [!primary]
 >> >
 >> > A atualização da versão do motor de uma base de dados já criada está atualmente indisponível.
+<!-- CP-STEPS-END:create-database -->
 
 > [!primary]
 >
@@ -155,6 +159,7 @@ Agora pode utilizar a sua base de dados. Para isso, precisará das suas informa�
 
 Estas informações são essenciais para que o seu website possa ligar-se à base de dados.
 
+<!-- CP-STEPS-START:get-connection-info -->
 Se necessário, para recuperar estas informações de ligação, clique nos separadores abaixo para visualizar cada uma das **2** etapas.
 
 > [!tabs]
@@ -165,6 +170,7 @@ Se necessário, para recuperar estas informações de ligação, clique nos sepa
 > **Etapa 2**
 >>
 >> Na página que se apresenta, clique no separador `Bases de dados`{.action}. Consulte a tabela que se apresenta para ver o conjunto das informações de ligação à sua base de dados. Isto exceto para a *palavra-passe*, por motivos de segurança.
+<!-- CP-STEPS-END:get-connection-info -->
 
 > [!warning]
 >
@@ -180,6 +186,7 @@ Em função do software utilizado, é possível que esta ligação tenha de ser 
 
 #### Aceder à interface phpMyAdmin
 
+<!-- CP-STEPS-START:access-phpmyadmin -->
 A OVHcloud fornece uma ferramenta online para a gestão das bases de dados, "phpMyAdmin". Para encontrar o link de acesso a esta aplicação, clique nos separadores abaixo para visualizar cada uma das **4** etapas.
 
 > [!tabs]
@@ -202,11 +209,13 @@ A OVHcloud fornece uma ferramenta online para a gestão das bases de dados, "php
 >> ![Página de ligação ao phpMyAdmin](/pages/assets/screens/other/web-tools/phpmyadmin/pma-interface-login.png){.thumbnail}
 >>
 >> Caso seja necessário, consulte a [parte 3](#step3) deste guia para encontrar as informações de ligação à sua base de dados.
+<!-- CP-STEPS-END:access-phpmyadmin -->
 
 #### Utilizar os backups das bases de dados
 
 Para cada base de dados de alojamento web, são criadas snapshots automaticamente todos os dias (até um máximo de 32). Assim, pode restaurar rapidamente uma versão anterior de uma base de dados a partir da sua Área de Cliente OVHcloud.
 
+<!-- CP-STEPS-START:check-database-snapshots -->
 Para verificar as snapshots disponíveis, bem como a data e a hora de criação, clique nos separadores abaixo para visualizar cada uma das **3** etapas.
 
 > [!tabs]
@@ -221,6 +230,7 @@ Para verificar as snapshots disponíveis, bem como a data e a hora de criação,
 > **Etapa 3**
 >>
 >> Na tabela que vai aparecer, clique no símbolo junto do círculo verde. Pode igualmente descarregar cada backup de uma base de dados a partir desse mesmo local.
+<!-- CP-STEPS-END:check-database-snapshots -->
 
 Encontre mais informações sobre este assumpto no nosso guia "[Obter a cópia de segurança da base de dados de um alojamento web](/pages/web_cloud/web_hosting/sql_database_export)".
 

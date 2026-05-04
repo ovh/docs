@@ -16,8 +16,34 @@ updated: 2022-09-28
 
 ## Requirements
 
-- You must be logged in to your [OVHcloud Control Panel](/links/manager).
 - You must be connected to your clusters via Prism Central.
+
+<!-- CP-NAV-START:privatecloud-nutanix -->
+<!-- CP-NAV-START:network-vrack -->
+<!-- CP-NAV-START:network-load-balancer -->
+---
+
+### OVHcloud Control Panel Access
+
+**Nutanix:**
+
+- **Direct link:** [Nutanix](/links/control-panel/privatecloud-nutanix)
+- **Navigation path:** `Hosted Private Cloud`{.action} > `Nutanix`{.action} > Select your cluster
+
+**vRack:**
+
+- **Direct link:** [vRack](/links/control-panel/network-vrack)
+- **Navigation path:** `Network`{.action} > `vRack private network`{.action}
+
+**Load Balancer:**
+
+- **Direct link:** [Load Balancer](/links/control-panel/network-load-balancer)
+- **Navigation path:** `Network`{.action} > `Load Balancer`{.action} > Select your service
+
+---
+<!-- CP-NAV-END:network-load-balancer -->
+<!-- CP-NAV-END:network-vrack -->
+<!-- CP-NAV-END:privatecloud-nutanix -->
 
 ## Instructions
 
@@ -71,17 +97,15 @@ Access to Prism Central is maintained using the Load Balancer.
 
 ### Configuring vRacks
 
-This operation involves deleting the vRack assignment in Roubaix and then extending the vRack from Gravelines to Roubaix. You can modify the vRack via the OVHcloud Control Panel. 
-
-Log in to your [OVHcloud Control Panel](/links/manager). 
+This operation involves deleting the vRack assignment in Roubaix and then extending the vRack from Gravelines to Roubaix. You can modify the vRack via the OVHcloud Control Panel.
 
 #### Deleting Roubaix vRack elements.
 
-From the `Hosted Private Cloud`{.action} menu, select the Roubaix cluster on the left in the `Nutanix` category and note the name of the vRack which is under `Private network (vRack)`.
+Select the Roubaix cluster and note the name of the vRack which is under `Private network (vRack)`.
 
 ![02 Remove services from vrack 01](images/02-remove-services-fromvrack01.png){.thumbnail}
 
-Go to the `Bare Metal Cloud` menu, click on the `vRack`{.action} concerned below the `vRack`{.action} option (in the `Network`{.action} submenu).
+Go to the `Network`{.action} section, click on `vRack`{.action} and select the relevant vRack.
 
 ![02 Remove services from vrack 02](images/02-remove-services-fromvrack02.png){.thumbnail}
 
@@ -102,11 +126,11 @@ Select all the elements that are in your vRack:
 
 ### Adding deleted items from the Roubaix vRack into the Gravelines vRack
 
-Go back to the `Hosted Private Cloud`{.action} menu, choose the Gravelines cluster from the `Nutanix` category and note the name of the vRack under `Private network (vRack)`.
+Select the Gravelines cluster and note the name of the vRack under `Private network (vRack)`.
 
 ![03 Add to vrack 01](images/03-addtovrack01.png){.thumbnail}
 
-Go to the `Bare Metal Cloud` menu, select the `vRack`{.action} from Gravelines below the `vRack`{.action} option (from the `Network`{.action} submenu).
+Go to the `Network`{.action} section, click on `vRack`{.action} and select the Gravelines vRack.
 
 ![03 Add to vrack 02](images/03-addtovrack02.png){.thumbnail}
 
@@ -141,7 +165,7 @@ Outgoing internet access on the Roubaix website is again available through the v
 
 We will reconfigure the Roubaix Load Balancer to work with the vRack shared by both sites, so that it can access Prism Central for the Roubaix cluster.
 
-In the `Bare Metal Cloud` menu, select the Roubaix Load Balancer from the `Load Balancer`{.action} submenu.
+Go to the `Network`{.action} section, click on `Load Balancer`{.action} and select the Roubaix Load Balancer.
 
 Go to `Private networks`{.action}, click on the `...`{.action} to the right of the existing **private network**.
 

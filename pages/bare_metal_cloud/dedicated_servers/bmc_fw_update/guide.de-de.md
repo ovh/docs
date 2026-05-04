@@ -1,6 +1,6 @@
 ---
-title: So überprüfen Sie die BMC-Firmware-Version auf einem dedizierten Server
-excerpt: "Erfahren Sie, wie Sie die BMC-Firmware-Version auf einem dedizierten Server prüfen"
+title: "BMC-Firmware-Version auf einem Linux Dedicated Server überprüfen"
+excerpt: "Überprüfen Sie die BMC-Firmware-Version auf Ihrem OVHcloud Dedicated Server, um die Kompatibilität der Hardware-Verwaltung sicherzustellen."
 updated: 2026-02-25
 ---
 
@@ -48,7 +48,7 @@ Je nach verwendeter Linux-Distribution kann der Befehl variieren:
 sudo ipmitool mc info
 ```
 
-![bmc](images/ipmi_tool.png){.thumbnail} 
+![BMC-Firmware-Version in der ipmitool-Ausgabe unter Linux](images/ipmi_tool.png){.thumbnail} 
 
 - Wenn die Firmware-Version kleiner oder gleich 1.14 ist, kontaktieren Sie unser Support-Team, indem Sie ein [Support-Ticket im OVHcloud Help Center](/links/support-contact) erstellen, um ein Firmware-Update anzufordern. 
 - Wenn die Version höher als 1.14 ist, sind keine Maßnahmen erforderlich.
@@ -71,7 +71,7 @@ root@rescue12-customer-eu (nsxxxxx.ip-xx-xx-xx.eu) ~ # apt install ipmitool -y
 ipmitool mc info
 ```
 
-![bmc](images/ipmi_tool_rescue.png){.thumbnail}
+![BMC-Firmware-Version in der ipmitool-Ausgabe im Rescue-Modus](images/ipmi_tool_rescue.png){.thumbnail}
 
 - Wenn die Firmware-Version kleiner oder gleich 1.14 ist, kontaktieren Sie unser Support-Team, indem Sie ein [Support-Ticket im OVHcloud Help Center](/links/support-contact) erstellen, um ein Firmware-Update anzufordern. 
 - Wenn die Version höher als 1.14 ist, sind keine Maßnahmen erforderlich.
@@ -81,5 +81,9 @@ ipmitool mc info
 Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](/links/partner).
 
 Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](/links/support).
+
+- [Upgrading Samsung NVMe PM9A1 Firmware on Dedicated Servers](/pages/bare_metal_cloud/dedicated_servers/samsung-nvme-fw-upgrade)
+
+- [Dedicated Servers - Upgrading your Micron 7500 PRO firmware](/pages/bare_metal_cloud/dedicated_servers/micron-7500-fw-upgrade)
 
 Treten Sie unserer [User Community](/links/community) bei.

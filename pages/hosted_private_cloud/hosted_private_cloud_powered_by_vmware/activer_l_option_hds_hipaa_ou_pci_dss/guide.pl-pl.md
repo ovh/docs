@@ -13,7 +13,17 @@ Możesz dostosować swoją chmurę prywatną do wymogów certyfikacji HDS lub PC
 ## Wymagania początkowe
 
 - Dysponowanie infrastrukturą Private Cloud w wersji co najmniej 6.0.
-- Dostęp do[Panelu klienta](/links/manager), sekcja `Dedykowane`{.action}
+
+<!-- CP-NAV-START:privatecloud-vmware-vsphere -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [VMware vSphere](/links/control-panel/privatecloud-vmware-vsphere)
+- **Ścieżka nawigacji:** `Hosted Private Cloud`{.action} > `Managed VMware vSphere`{.action} > Wybierz usługę vSphere
+
+---
+<!-- CP-NAV-END:privatecloud-vmware-vsphere -->
 
 ## W praktyce
 

@@ -97,6 +97,7 @@ Sie haben Zugriff auf das Verwaltungsinterface des CMS und kennen Ihr aktuelles 
 
 ### Administratorpasswort über phpMyAdmin über das OVHcloud Kundencenter ändern <a name="via-phpmyadmin"></a>
 
+<!-- CP-STEPS-START:access-phpmyadmin -->
 Sie haben keinen Zugriff mehr auf das Verwaltungsinterface des CMS oder können die Funktion "Passwort vergessen" nicht verwenden, weil die zugehörige E-Mail-Adresse nicht erreichbar ist? Verwenden Sie phpMyAdmin in Ihrem [OVHcloud Kundencenter](/links/manager), um das Passwort direkt über die Datenbank zurückzusetzen.
 
 Klicken Sie auf die Tabs, um die **4** Schritte anzuzeigen.
@@ -119,6 +120,7 @@ Klicken Sie auf die Tabs, um die **4** Schritte anzuzeigen.
 > **Schritt 4**
 >>
 >> Geben Sie die Zugangsdaten (Benutzername und Kennwort) ein, die Sie bei der Erstellung der Datenbank festgelegt haben. Wenn Sie bei phpMyAdmin eingeloggt sind, klicken Sie unten auf den entsprechenden Tab.
+<!-- CP-STEPS-END:access-phpmyadmin -->
 
 > [!tabs]
 > WordPress

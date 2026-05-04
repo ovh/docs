@@ -1,6 +1,6 @@
 ---
-title: 'Activer et configurer le Edge Network Firewall'
-excerpt: 'Découvrez comment configurer le Edge Network Firewall pour vos services'
+title: "Configurer le Edge Network Firewall pour serveurs dédiés"
+excerpt: "Activez et configurez le Edge Network Firewall pour filtrer le trafic entrant vers votre serveur dédié OVHcloud"
 updated: 2026-03-10
 ---
 
@@ -205,5 +205,7 @@ Après avoir lu ce tutoriel, vous devriez pouvoir configurer le Edge Network Fir
 ## Aller plus loin
 
 - [Protéger un serveur GAME avec le pare-feu applicatif](/pages/bare_metal_cloud/dedicated_servers/firewall_game_ddos)
+
+[Comment configurer l'infrastructure Anti-DDoS pour Solana](/pages/bare_metal_cloud/dedicated_servers/blockchain_anti_ddos)
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).

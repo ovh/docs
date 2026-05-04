@@ -1,6 +1,6 @@
 ---
-title: Wymiana dysku bez wyłączania serwera – Programowa macierz RAID
-excerpt: Dowiedz się, jak przebiega wymiana dysku bez wyłączania serwera w programowej macierzy RAID
+title: "Serwer dedykowany - Hot Swap w RAID programowym"
+excerpt: "Wymień uszkodzony dysk w macierzy RAID programowej na serwerze dedykowanym OVHcloud bez przerwy w działaniu."
 updated: 2023-08-21
 ---
 
@@ -295,5 +295,7 @@ Niesprawny dysk jest teraz gotowy do wymiany przez technika w centrum danych. Po
 [Programowa macierz RAID](/pages/bare_metal_cloud/dedicated_servers/raid_soft)
 
 [OVHcloud API and Storage](/pages/bare_metal_cloud/dedicated_servers/partitioning_ovh)
+
+- [Konfiguracja RAID programowego UEFI na serwerze dedykowanym](UEFI)
 
 Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

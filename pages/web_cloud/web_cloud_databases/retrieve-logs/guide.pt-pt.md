@@ -72,6 +72,7 @@ Em determinadas situações, pode precisar de consultar ou recuperar os logs:
 
 ### Visualizar os logs em tempo real do seu Web Cloud Databases
 
+<!-- CP-STEPS-START:view-realtime-logs -->
 Clique nos separadores abaixo para visualizar cada uma das **2** etapas.
 
 > [!tabs]
@@ -94,6 +95,7 @@ Clique nos separadores abaixo para visualizar cada uma das **2** etapas.
 >> > Os logs só estão disponíveis aqui em tempo real. Só aparecerão se forem gerados enquanto estiver no separador `Logs`{.action}.
 >> >
 >> > Se sair do separador `Logs`{.action} e voltar mais tarde, o histórico apresentado anteriormente terá desaparecido.
+<!-- CP-STEPS-END:view-realtime-logs -->
 
 ### Recuperar o histórico de logs da sua solução Web Cloud Databases
 
@@ -106,6 +108,7 @@ Para recuperar o histórico de logs da sua solução Web Cloud Databases, deve l
 > Para verificar, obtenha o endereço IP público do seu ponto de acesso à Internet e consulte a secção **Autorizar um endereço IP** [deste guia](/pages/web_cloud/web_cloud_databases/starting_with_clouddb).
 >
 
+<!-- CP-STEPS-START:retrieve-sftp-connection-details -->
 Para obter as informações de ligação SFTP da sua solução Web Cloud Databases, clique nos separadores abaixo para visualizar cada uma das **2** etapas.
 
 > [!tabs]
@@ -124,6 +127,7 @@ Para obter as informações de ligação SFTP da sua solução Web Cloud Databas
 >> > Se não conhece a `Palavra-passe do servidor`, clique no botão `...`{.action} à direita para a alterar.
 >>
 >> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/general-information/sftp-login.png){.thumbnail}
+<!-- CP-STEPS-END:retrieve-sftp-connection-details -->
 
 Depois de obter as credenciais de acesso SFTP, ligue-se através de um cliente FTP (FileZilla, Cyberduck, WinSCP, etc.).
 
@@ -166,6 +170,7 @@ Para subscrever a sua solução Web Cloud Databases a um fluxo de dados no Logs 
 
 **Clique em cada caso para ver o conteúdo.**
 
+<!-- CP-STEPS-START:ldp-subscribe-existing-stream -->
 <a name="wcdb-ldp-case1"></a>
 
 /// details | Caso 1 - Subscrever um fluxo de dados existente na sua solução Logs Data Platform
@@ -198,7 +203,9 @@ Clique nos separadores abaixo para visualizar cada uma das **4** etapas.
 >> Após alguns segundos, uma mensagem confirma que a subscrição foi criada com sucesso.
 
 ///
+<!-- CP-STEPS-END:ldp-subscribe-existing-stream -->
 
+<!-- CP-STEPS-START:ldp-subscribe-new-stream -->
 /// details | Caso 2 - Subscrever um novo fluxo de dados na sua solução Logs Data Platform
 
 Clique nos separadores abaixo para visualizar cada uma das **5** etapas.
@@ -237,6 +244,7 @@ Clique nos separadores abaixo para visualizar cada uma das **5** etapas.
 >> Para subscrever a sua solução Web Cloud Databases a este novo fluxo, volte ao separador `Logs`{.action} da sua solução Web Cloud Databases e siga o [Caso 1](#wcdb-ldp-case1) descrito acima.
 
 ///
+<!-- CP-STEPS-END:ldp-subscribe-new-stream -->
 
 ## Quer saber mais? <a name="go-further"></a>
 

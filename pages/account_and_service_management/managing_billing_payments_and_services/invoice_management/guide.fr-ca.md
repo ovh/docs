@@ -130,6 +130,7 @@ Un [bon de commande de régularisation](/pages/account_and_service_management/ma
 > Pour demander la résiliation de votre service à échéance, suivez les instructions de ce [guide](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_cancel_services).
 >
 
+
 ### Suivre vos paiements
 
 Retrouvez l'historique des paiements effectués dans `Mes factures`{.action} puis `Suivi des paiements`{.action}. Vous pouvez ainsi faire le lien entre chaque facture et le paiement associé.

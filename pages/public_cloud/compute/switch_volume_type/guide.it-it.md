@@ -1,7 +1,7 @@
 ---
 title: Modificare un Volume Block Storage
 excerpt: "Scopri come modificare il tipo di un volume block storage utilizzando Openstack"
-updated: 2026-01-13
+updated: 2026-04-13
 ---
 
 ## Obiettivo
@@ -36,9 +36,7 @@ La modifica può essere effettuata via Horizon o tramite l’interfaccia da riga
 >
 > Se il volume Block Storage è collegato a un'istanza, devi prima scollegarlo prima di procedere. Per ulteriori informazioni, consulta la sezione **Scollega un volume** della guida "[Crea e configura un disco aggiuntivo sulla tua istanza](/pages/public_cloud/Compute/create_and_configure_an_additional_disk_on_an_instance#detach-a-volume)".
 >
-> Il cambio di tipo di volume (retyping) tramite l'Spazio Cliente OVHcloud o l'API OVHcloud è disponibile solo per i volumi non crittografati. Non è possibile modificare il tipo dei volumi crittografati di tipo **-LUKS** tramite queste interfacce.
->
-> Il retyping è possibile tramite OpenStack / Horizon solo per volumi **-LUKS** verso **-LUKS**. In questo caso, la ripristinazione del volume dopo il retyping non è possibile.
+> Il cambio di tipo di volume (retyping) tramite lo Spazio Cliente OVHcloud o l'API OVHcloud è disponibile solo per i volumi non cifrati. I volumi cifrati di tipo **-LUKS** non possono essere modificati.
 > 
 > Le conversioni **-LUKS** verso **non -LUKS** non sono supportate, nemmeno tramite OpenStack / Horizon.
 >

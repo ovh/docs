@@ -1,6 +1,6 @@
 ---
-title: 'Obter o número de série de um disco rígido'
-excerpt: 'Saiba como obter o número de série de um disco rígido para proceder à sua substituição'
+title: "Encontrar o número de série de um disco num servidor dedicado"
+excerpt: "Recupere o número de série de um disco rígido no seu servidor dedicado para o identificar durante um pedido de substituição"
 updated: 2018-08-21
 ---
 

@@ -1,6 +1,6 @@
 ---
-title: Einen Additional-IPv6-Block in einem vRack konfigurieren
-excerpt: "Erfahren Sie, wie Sie einen Block öffentlicher IPv6-Adressen für die Verwendung in einem OVHcloud vRack-Netzwerk konfigurieren"
+title: "Einen IPv6-Block im vRack auf einem Dedicated Server konfigurieren"
+excerpt: "Konfigurieren Sie einen öffentlichen IPv6-Adressblock für das private OVHcloud vRack-Netzwerk auf Ihrem Dedicated Server."
 updated: 2026-03-13
 ---
 
@@ -177,7 +177,7 @@ Sobald der Additional-IPv6-/56-Block einem vRack-Netzwerk zugewiesen ist, wird d
 
 Wie im folgenden Beispiel:
 
-![GET subrange bridged into your vRack](images/20240418-05.png){.thumbnail}
+![API-Antwort mit Bridge-Subbereichen im vRack](images/20240418-05.png){.thumbnail}
 
 Für weitere Details verwenden Sie diesen Aufruf:
 
@@ -188,7 +188,7 @@ Für weitere Details verwenden Sie diesen Aufruf:
 
 Wie im folgenden Beispiel:
 
-![GET subrange bridged into your vRack](images/20240418-06.png){.thumbnail}
+![API-Antwort mit Bridge-Subbereichsdetails und SLAAC-Status](images/20240418-06.png){.thumbnail}
 
 Beachten Sie, dass die automatische IP-Konfiguration (SLAAC) standardmäßig deaktiviert ist.
 
@@ -382,11 +382,11 @@ Um ein geroutetes Subnetz zu erstellen, müssen wir zunächst folgendes definier
 
 Bitte beachten Sie, dass sich ein gegebenes Subnetz nicht mit einem anderen definierten Subnetz überschneiden darf und die Next-Hop-Adresse zum ersten Teil (gebrücktes /64-Subnetz) Ihres Additional-IPv6-Präfixes gehören muss.
 
-![weiter](images/800.png){.thumbnail}
+![Geroutetes Subnetz in CIDR-Notation und Next-Hop-Adresse definieren](images/800.png){.thumbnail}
 
 Das erstellte geroutete Subnetz `2001:41d0:abcd::ef10::/60` ist über den Next Hop `2001:41d0:abcd::ef00::2` erreichbar.
 
-![weiter](images/801.png){.thumbnail}
+![Erstelltes geroutetes Subnetz mit angezeigtem Next-Hop](images/801.png){.thumbnail}
 
 ///
 
@@ -401,7 +401,7 @@ Bitte beachten Sie, dass sich ein gegebenes Subnetz nicht mit einem anderen defi
 
 Das folgende Beispiel zeigt, wie ein solches Subnetz definiert wird:
 
-![weiter](images/20240418-02.png){.thumbnail}
+![API-Aufruf zum Definieren eines gerouteten Subnetzes mit Next-Hop](images/20240418-02.png){.thumbnail}
 
 Hier haben wir das geroutete Subnetz `2001:41d0:abcd:ef10::/60` definiert, das an die VM delegiert wird, die auf `2001:41d0:abcd:ef00::2` gehostet ist.
 
@@ -595,7 +595,7 @@ Andererseits sind Dienste wie Additional IPv6 regional, was bedeutet, dass ihre 
 
 Nachfolgend wird zu Lernzwecken eine Architektur mit zwei verschiedenen Regionen und verschiedenen Additional-IPv6-Blöcken präsentiert, die jeweils aus einer Region angekündigt werden. Außerdem wird ein Host mit IP-Adressen aus beiden Netzwerken sowie ein Beispiel einer suboptimalen Route vorgestellt - ein Host in einer Region mit einer in einer anderen Region angekündigten IPv6-Adresse:
 
-![image](images/20240418-08.png){.thumbnail}
+![Multi-Region vRack-Architektur mit verschiedenen IPv6-Blöcken](images/20240418-08.png){.thumbnail}
 
 Bitte beachten Sie, dass bei solchen Setups (mit Additional IPv6 aus mehr als einer Region) SLAAC **im gesamten vRack deaktiviert sein muss** (da dies zu unvorhersehbaren Ergebnissen und zufälligem Konnektivitätsverlust führen kann).
 
@@ -623,5 +623,9 @@ Das Verständnis der Einschränkungen bei der Verwendung von **Additional IPv6**
 - **Derzeit wird das Routing von Additional IPv6 in das vRack in APAC-Regionen (Asien-Pazifik) nicht unterstützt.**
 
 ## Weiterführende Informationen
+
+- [vRack auf Ihren Dedicated Servern konfigurieren](/pages/bare_metal_cloud/dedicated_servers/vrack_configuring_on_dedicated_server)
+
+- [Dedicated Server - Additional IPs im Bridge-Modus konfigurieren](/pages/bare_metal_cloud/dedicated_servers/network_bridging)
 
 Treten Sie unserer [User Community](/links/community) bei.

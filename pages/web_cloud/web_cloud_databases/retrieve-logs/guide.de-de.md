@@ -72,6 +72,7 @@ In bestimmten Situationen kann es erforderlich sein, die Logs abzurufen:
 
 ### Echtzeit-Logs Ihres Web Cloud Databases einsehen
 
+<!-- CP-STEPS-START:realtime-logs -->
 Klicken Sie auf die unten stehenden Tabs, um die **2** Schritte nacheinander anzuzeigen.
 
 > [!tabs]
@@ -94,6 +95,7 @@ Klicken Sie auf die unten stehenden Tabs, um die **2** Schritte nacheinander anz
 >> > Die Logs sind hier nur in Echtzeit verfügbar. Sie werden nur angezeigt, wenn sie erzeugt werden, während Sie sich auf dem Tab `Logs`{.action} befinden.
 >> >
 >> > Wenn Sie den Tab `Logs`{.action} verlassen und später zu ihm zurückkehren, ist der zuvor angezeigte Verlauf nicht mehr vorhanden.
+<!-- CP-STEPS-END:realtime-logs -->
 
 ### Den Logverlauf Ihres Web Cloud Databases Dienstes abrufen
 
@@ -106,6 +108,7 @@ Um den Logverlauf Ihres Web Cloud Databases Dienstes abzurufen, müssen Sie sich
 > Um dies zu überprüfen, ermitteln Sie die öffentliche IP-Adresse Ihres Internetzugangs und lesen Sie den Abschnitt **IP-Adresse autorisieren** in [dieser Anleitung](/pages/web_cloud/web_cloud_databases/starting_with_clouddb).
 >
 
+<!-- CP-STEPS-START:sftp-connection-info -->
 Um die SFTP-Verbindungsinformationen für Ihren Web Cloud Databases Dienst zu finden, klicken Sie auf die unten stehenden Tabs, um die **2** Schritte nacheinander anzuzeigen.
 
 > [!tabs]
@@ -136,6 +139,7 @@ Klicken Sie auf `Neuer Server`{.action} und geben Sie die zuvor ermittelten Eins
 Die Logdatei mit dem Namen `stdout.log` befindet sich im Stammverzeichnis.
 
 Laden Sie sie auf Ihren Computer herunter, um sie einzusehen.
+<!-- CP-STEPS-END:sftp-connection-info -->
 
 > [!primary]
 >
@@ -168,6 +172,7 @@ Um Ihren Web Cloud Databases Dienst bei einem Datenstream auf Logs Data Platform
 
 <a name="wcdb-ldp-case1"></a>
 
+<!-- CP-STEPS-START:ldp-subscribe-existing -->
 /// details | Szenario 1 - Einen bestehenden Datenstream auf Ihrer Logs Data Platform abonnieren
 
 Klicken Sie auf die unten stehenden Tabs, um die **4** Schritte nacheinander anzuzeigen.
@@ -198,7 +203,9 @@ Klicken Sie auf die unten stehenden Tabs, um die **4** Schritte nacheinander anz
 >> Nach einigen Sekunden bestätigt eine Meldung, dass das Abonnement erfolgreich erstellt wurde.
 
 ///
+<!-- CP-STEPS-END:ldp-subscribe-existing -->
 
+<!-- CP-STEPS-START:ldp-subscribe-new -->
 /// details | Szenario 2 - Einen neuen Datenstream auf Ihrer Logs Data Platform abonnieren
 
 Klicken Sie auf die unten stehenden Tabs, um die **5** Schritte nacheinander anzuzeigen.
@@ -237,6 +244,7 @@ Klicken Sie auf die unten stehenden Tabs, um die **5** Schritte nacheinander anz
 >> Um Ihren Web Cloud Databases Dienst bei diesem neuen Datenstream zu abonnieren, kehren Sie zum Tab `Logs`{.action} Ihres Web Cloud Databases Dienstes zurück und folgen Sie dem oben beschriebenen [Szenario 1](#wcdb-ldp-case1).
 
 ///
+<!-- CP-STEPS-END:ldp-subscribe-new -->
 
 ## Weiterführende Informationen <a name="go-further"></a>
 

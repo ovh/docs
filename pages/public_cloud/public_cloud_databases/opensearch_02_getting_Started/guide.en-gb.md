@@ -29,6 +29,7 @@ This guide explains how to successfully configure a Public Cloud Databases for a
 
 ### Subscribe to the service
 
+<!-- CP-STEPS-START:subscribe-to-the-service -->
 Click on `Databases`{.action} in the left-hand navigation bar under **Storage**.
 
 Click on the button `Create a database instance`{.action}. (`Create a service`{.action} if your project already contains databases.)
@@ -78,9 +79,11 @@ The final section will display a summary of your order as well as the API equiva
 ![Confirm order](images/creation_opensearch06.png){.thumbnail}
 
 In a matter of minutes, your new database service will be deployed. Messages in the OVHcloud Control Panel will inform you when the database is ready to use.
+<!-- CP-STEPS-END:subscribe-to-the-service -->
 
 ### Configure the OpenSearch service
 
+<!-- CP-STEPS-START:configure-the-opensearch-service -->
 Once the Public Cloud Databases for OpenSearch service is up and running, you will have to define at least one user and one authorized IP in order to fully connect to the service.
 
 The `General information`{.action} tab should inform you to create users and authorized IPs.
@@ -151,6 +154,7 @@ Rules are defined separately for each user as **permission / index model** combi
 ![User ACLs](images/configure_user_acl.png){.thumbnail}
 
 When multiple rules match, they are applied in the order listed above. If ACLs are enabled and no rules match, access is denied.
+<!-- CP-STEPS-END:configure-the-opensearch-service -->
 
 ##### **Control access to top-level APIs**
 
@@ -169,6 +173,7 @@ In practice, for OpenSearch Dashboards to work properly, you must grant the user
 
 #### Indexes
 
+<!-- CP-STEPS-START:advanced-configuration-indexes -->
 An index contains a database schema. Each data is based on a basic unit which is a JSON document, indexed with a unique ID. Indexing is the method used to store data and by the search engine for fast retrieval.
 
 You can learn more browsing the [OpenSearch official documentation - Index data](https://opensearch.org/docs/latest/opensearch/index-data/)
@@ -180,15 +185,18 @@ It's not mandatory, but if needed, you can add new indexes in the OpenSearch dat
 Please enter the name of the index that you want to create.
 
 ![Index Template creation](images/configure_index_template.png){.thumbnail}
+<!-- CP-STEPS-END:advanced-configuration-indexes -->
 
 #### Automatic backups
 
+<!-- CP-STEPS-START:advanced-configuration-backups -->
 OVHcloud performs daily backups for your Public Cloud Databases for the OpenSearch service.
 To find them, switch to the `Backups`{.action} tab. Backups will be created automatically, and retention time depends on the service plan. Please visit the [Public Cloud Databases for OpenSearch capabilities page](/pages/public_cloud/public_cloud_databases/opensearch_01_capabilities) for detailed information on each plan's properties.
 
 ![Backups](images/configure_backup.png){.thumbnail}
 
 You can restore and delete backups via the `...`{.action} button.
+<!-- CP-STEPS-END:advanced-configuration-backups -->
 
 ### Connection to the OpenSearch Dashboard
 

@@ -28,20 +28,25 @@ This guide covers the initialisation of **AI Training** and the submission of [*
 
 ### Step 1 - Going to the AI Training menu
 
+<!-- CP-STEPS-START:step-1-ai-training-menu -->
 Click [this link](/links/control-panel/publiccloud-projects) to access your Public Cloud project, then go to the `AI Training`{.action} section, located under `AI & Machine Learning`.
 
 ![image](images/00_training_menu.png){.thumbnail}
+<!-- CP-STEPS-END:step-1-ai-training-menu -->
 
 ### Step 2 - Starting a job submission
 
+<!-- CP-STEPS-START:step-2-start-job-submission -->
 Once you have read the general information and validated this service's contract terms, you can start submitting your jobs. Upon activating the AI Training service you grant OVHcloud access to your Object Storage containers. This access is only used to synchronise your data within **AI Training** with your containers.
 
 From the **jobs** list in the dashboard you can start the job submission by clicking the `Launch a new Job`{.action} button.
 
 ![training onboarding page](images/01_training_onboarding.png){.thumbnail}
+<!-- CP-STEPS-END:step-2-start-job-submission -->
 
 ### Step 3 - Selecting a region for your job
 
+<!-- CP-STEPS-START:step-3-select-region -->
 Give a name to your job. This will make it easier to manage when you have multiple jobs running.
 
 Each **job** is executed in an OVHcloud region. Each region has its own **AI Training** cluster with potentially varying capabilities. For more information, see the [capabilities](/pages/public_cloud/ai_machine_learning/training_guide_01_capabilities).
@@ -51,9 +56,11 @@ Select the desired region and click `Next`{.action}.
 ![image](images/02_name_job.png){.thumbnail}
 
 ![image](images/03_submit_region.png){.thumbnail}
+<!-- CP-STEPS-END:step-3-select-region -->
 
 ### Step 4 - Specifying the amount of resources
 
+<!-- CP-STEPS-START:step-4-specify-resources -->
 In this step you can either select the amount of GPUs or CPUs you need for your training workload.
 
 The max amount of GPUs or CPUs you can select for your **job** is region-dependent. If you choose a GPU, a fixed ratio of CPU is applied based on the number of GPUs. Similarly, there is a fixed ratio of Memory based on the number of CPUs. For more information see the [capabilities](/pages/public_cloud/ai_machine_learning/training_guide_01_capabilities).
@@ -61,9 +68,11 @@ The max amount of GPUs or CPUs you can select for your **job** is region-depende
 Once the amount of resources is set you can see a preview of the billing rate. Click `Next`{.action}.
 
 ![image](images/04_submit_resources.png){.thumbnail}
+<!-- CP-STEPS-END:step-4-specify-resources -->
 
 ### Step 5 - Providing a Docker image
 
+<!-- CP-STEPS-START:step-5-provide-docker-image -->
 A job is basically a Docker container that is run within the OVHcloud infrastructure. You need to provide a Docker image to be executed. There are several options you can choose from:
 
 #### Preset Images
@@ -77,9 +86,11 @@ Preset images cannot cover all your needs so you can specify your own image if n
 This includes public images (e.g. Dockerhub), images within the shared registry or images in your added private registry. For more information, see how to [add a private registry](/pages/public_cloud/ai_machine_learning/gi_07_manage_registry).
 
 ![image](images/05_submit_image.png){.thumbnail}
+<!-- CP-STEPS-END:step-5-provide-docker-image -->
 
 ### Step 6 - Privacy Settings
 
+<!-- CP-STEPS-START:step-6-privacy-settings -->
 Next, select your privacy settings.
 
 > [!warning]
@@ -88,9 +99,11 @@ Next, select your privacy settings.
 >
 
 ![image](images/06_job_privacy_settings.png){.thumbnail}
+<!-- CP-STEPS-END:step-6-privacy-settings -->
 
 ### Step 7 - Job lifecycle
 
+<!-- CP-STEPS-START:step-7-job-lifecycle -->
 > [!warning]
 >
 > Actually our main motivation is to keep the plateform up-to-date, in matter of security patches and new features alignment, so we need to update and restart hosts from time to time, which requires to get them free from any customer workload.
@@ -99,9 +112,11 @@ Next, select your privacy settings.
 By default, your job will automatically shut down after 7 consecutive days of being in `RUNNING` status. Rest assured that all your settings and data will be preserved. You have the option to enable Automatic Restart, which will automatically restart your job back on every 7 days, ensuring minimal disruption to your workflow. Alternatively, you can also contact [our support](/links/support-contact) to extend this automatic restart period from 7 to 28 days.
 
 ![image](images/07_job_lifecycle.png){.thumbnail}
+<!-- CP-STEPS-END:step-7-job-lifecycle -->
 
 ### Step 8 - Advanced configuration
 
+<!-- CP-STEPS-START:step-8-advanced-configuration -->
 *This step is optional.*
 
 First, the Docker image you provided in Step 6 includes an entrypoint for your container. You can override this entrypoint by specifying your own command.
@@ -113,9 +128,11 @@ If you want to learn more about configuring containers and Git repositories in t
 Finally, **SSH public keys** allow you to access your job remotely.
 
 ![image](images/08_job_advanced_config.png){.thumbnail}
+<!-- CP-STEPS-END:step-8-advanced-configuration -->
 
 ### Step 9 - Submitting your job
 
+<!-- CP-STEPS-START:step-9-submit-job -->
 In the final step you get an overview of the **job** you configured before submission. You also get the equivalent command to use with the **`ovhai` CLI**.
 
 ![submit summary](images/09_job_summary.png){.thumbnail}
@@ -125,17 +142,21 @@ Click `Order`{.action} to confirm and launch the creation of your **job** to the
 When your job is created, it will appear on your AI Training tab:
 
 ![image](images/10_ai_training_panel.png){.thumbnail}
+<!-- CP-STEPS-END:step-9-submit-job -->
 
 ### Step 10 - Consulting your job
 
+<!-- CP-STEPS-START:step-10-consult-job -->
 From this list you can access your job details either by clicking on its name or by clicking on `...`{.action} and selecting `Manage`. The details include several components, like the job resources, statuses, billing, logs and access url. This URL is of the form `https://<JOB-ID>.job.<REGION>.ai.cloud.ovh.net/`. Moreover, you can access any available port by adding it to the job URL this way: `https://<JOB-ID>-<PORT>.job.<REGION>.ai.cloud.ovh.net/`. You can check the list of available ports in the [capabilities](/pages/public_cloud/ai_machine_learning/training_guide_01_capabilities).
 
 ![image](images/11_job_details.png){.thumbnail}
 
 You can also check your job logs by clicking the `Logs`{.action} button.
+<!-- CP-STEPS-END:step-10-consult-job -->
 
 ### Step 11 - Stopping your job
 
+<!-- CP-STEPS-START:step-11-stop-job -->
 If you are done using your job, if your model converged prematurely or if you just wish to interrupt your job you can do so from the **jobs** list and the job page.
 
 From the list of **jobs** you can list the available actions at the far right of each entry and interrupt the job by clicking `Stop`{.action}. Alternatively, from the **job** details you can also interrupt the **job** from the list of actions by clicking the `🔴`{.action} stop button.
@@ -145,12 +166,15 @@ From the list of **jobs** you can list the available actions at the far right of
 After that, if you no longer need your job, you can delete it. To do so, just click on the `...`{.action} button, and then select `Delete`{.action} action.
 
 ![image](images/13_job_delete.png){.thumbnail}
+<!-- CP-STEPS-END:step-11-stop-job -->
 
 ### Step 12 - Cloning your job
 
+<!-- CP-STEPS-START:step-12-clone-job -->
 You can also click the `🔄`{.action} restart button to clone the job with the same configuration. This will launch a new job identical to the original (e.g., `example-job`), allowing you to rerun your workflow without re‑configuring the job.
 
 ![image](images/14_job_clone.png){.thumbnail}
+<!-- CP-STEPS-END:step-12-clone-job -->
 
 ## Going further
 

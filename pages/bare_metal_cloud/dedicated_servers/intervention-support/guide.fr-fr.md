@@ -1,6 +1,6 @@
 ---
-title: 'Finaliser une intervention de maintenance réalisée sur votre serveur dédié'
-excerpt: "Découvrez quelles actions peuvent être à effectuer par vos soins sur votre serveur suite à une intervention de maintenance"
+title: "Finaliser une intervention de maintenance réalisée sur votre serveur dédié"
+excerpt: "Effectuez les actions requises sur votre serveur dédié après une intervention de maintenance OVHcloud pour restaurer le service"
 updated: 2026-03-20
 ---
 
@@ -901,5 +901,9 @@ L'image ci-dessous est un résumé des actions citées plus haut :
 ![select_efi](images/select_efi-v2.gif){.thumbnail}
 
 ## Aller plus loin
+
+[Premiers pas avec un serveur dédié](/pages/bare_metal_cloud/dedicated_servers/getting-started-with-dedicated-server)
+
+[Remplacer un disque défectueux](/pages/bare_metal_cloud/dedicated_servers/disk_replacement)
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).

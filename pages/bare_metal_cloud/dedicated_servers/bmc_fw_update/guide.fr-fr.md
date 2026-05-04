@@ -1,6 +1,6 @@
 ---
-title: 'Comment vérifier la version du firmware BMC sur un serveur dédié'
-excerpt: "Découvrez comment vérifier la version du firmware BMC sur un serveur dédié"
+title: "Vérifier la version du firmware BMC sur un serveur dédié Linux"
+excerpt: "Vérifiez la version du firmware BMC sur votre serveur dédié OVHcloud pour garantir la compatibilité de gestion matérielle"
 updated: 2026-02-25
 ---
 
@@ -48,7 +48,7 @@ Vérifiez la version du firmware BMC avec la commande suivante :
 sudo ipmitool mc info
 ```
 
-![bmc](images/ipmi_tool.png){.thumbnail} 
+![Version du firmware BMC obtenue via ipmitool sous Linux](images/ipmi_tool.png){.thumbnail} 
 
 - Si la version du firmware est inférieure ou égale à 1.14, veuillez contacter notre support en créant un [ticket d'assistance depuis le centre d'aide OVHcloud](/links/support-contact) pour demander une mise à jour du firmware. 
 - Si la version est supérieure à 1.14, aucune action n'est requise.
@@ -71,12 +71,16 @@ Ensuite, vérifiez la version du firmware :
 ipmitool mc info
 ```
 
-![bmc](images/ipmi_tool_rescue.png){.thumbnail}
+![Version du firmware BMC obtenue via ipmitool en mode rescue](images/ipmi_tool_rescue.png){.thumbnail}
 
 - Si la version du firmware est inférieure ou égale à 1.14, veuillez contacter notre support en créant un [ticket d'assistance depuis le centre d'aide OVHcloud](/links/support-contact) pour demander une mise à jour du firmware. 
 - Si la version est supérieure à 1.14, aucune action n'est nécessaire.
 
 ## Aller plus loin
+
+[Advance Dedicated Servers - Upgrading your Samsung NVMe PM9A1 firmware (EN)](/pages/bare_metal_cloud/dedicated_servers/samsung-nvme-fw-upgrade)
+
+[Serveurs Dédiés - Mise à jour du firmware de votre Micron 7500 PRO (EN)](/pages/bare_metal_cloud/dedicated_servers/micron-7500-fw-upgrade)
 
 Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](/links/partner).
 

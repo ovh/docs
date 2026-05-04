@@ -27,6 +27,7 @@ Want to retrieve a list of all the domain names on your OVHcloud customer accoun
 
 ## Instructions
 
+<!-- CP-STEPS-START:export-csv -->
 Click on the tabs below to view each of the **3** steps.
 
 > [!tabs]
@@ -55,6 +56,7 @@ Click on the tabs below to view each of the **3** steps.
 >> ![Export domains in CSV format step 2 done](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/export-csv/export-domains-in-csv-format-step-2b.png){.thumbnail}
 >>
 >> If the CSV file download did not start automatically, click the `download it manually`{.action} link to retrieve it.
+<!-- CP-STEPS-END:export-csv -->
 
 ## Go further
  

@@ -31,6 +31,7 @@ Durante l'utilizzo del prodotto, potrebbe essere necessario modificare i diritti
 > [!primary]
 > Per creare un nuovo utente sulla tua soluzione Web Cloud Databases, consulta la sezione **Creare un utente** della nostra guida "[Crea i tuoi database e i tuoi utenti sul tuo database server](/pages/web_cloud/web_cloud_databases/create-db-and-user-on-db-server)".
 
+<!-- CP-STEPS-START:modificare-diritti-utente -->
 Clicca sulle schede qui sotto per visualizzare ciascuno dei **4** passaggi.
 
 > [!tabs]
@@ -59,6 +60,8 @@ Clicca sulle schede qui sotto per visualizzare ciascuno dei **4** passaggi.
 >> ![Changing user rights](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/users-and-rights/changing-user-rights-db-alone.png){.thumbnail}
 >>
 >> È qui che puoi modificare i diritti dell'utente per ciascun database. Per farlo, per ciascun database interessato, clicca sui cerchi vuoti corrispondenti ai diritti che desideri ridefinire per il tuo utente. La modifica diventa effettiva in pochi istanti.
+
+<!-- CP-STEPS-END:modificare-diritti-utente -->
 
 Di seguito è riportata una tabella riassuntiva dei tipi di richieste possibili su un database in base ai diritti assegnati all'utente:
 

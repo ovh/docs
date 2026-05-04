@@ -115,7 +115,7 @@ Indica i motivi della richiesta di disattivazione e clicca su `Conferma`{.action
 >
 > Ottenere la vostra opinione è essenziale per noi. In questo modo possiamo far evolvere i nostri servizi in modo che rispondano al meglio alle tue esigenze e aspettative.
 >
-> Per maggiori informazioni sulla tua esperienza personale con OVHcloud, consulta il form proposto al momento della disattivazione. Ti ringraziamo fin d'ora per il tuo contributo al miglioramento dei nostri prodotti.
+> Per maggiori informazioni sulla tua esperienza personale con OVHcloud, consulta il form proposto al momento della disattivazione. Ti ringraziamo fin d’ora per il tuo contributo al miglioramento dei nostri prodotti.
 >
 
 La disattivazione del servizio avverrà alla **data di entrata in vigore** indicata nella tabella "Gestione delle mie offerte e servizi". Se non vedi lo stato "Disattivazione programmata", aggiorna la pagina.

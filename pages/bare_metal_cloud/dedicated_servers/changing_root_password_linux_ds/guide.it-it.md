@@ -1,6 +1,6 @@
 ---
-title: "Configurazione degli account utente e dell'accesso root su un server"
-excerpt: "Scopri come eseguire le prime operazioni sulla gestione degli account utente di un sistema operativo GNU/Linux"
+title: "Configurare gli account utente e l'accesso root (Dedicato)"
+excerpt: "Gestisci gli account utente, l'accesso sudo e la connessione root su un server dedicato GNU/Linux per un'amministrazione sicura"
 updated: 2024-02-19
 ---
 
@@ -408,4 +408,4 @@ Ciò dovrebbe essere sufficiente per applicare le modifiche. In caso contrario, 
 
 [Mettere in sicurezza un VPS](/pages/bare_metal_cloud/virtual_private_servers/secure_your_vps)
 
-Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.
+Contatta la nostra [Community di utenti](/links/community).

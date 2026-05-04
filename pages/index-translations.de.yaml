@@ -104,11 +104,14 @@ hosted-private-cloud-nutanix-troubleshooting: Diagnose
 hosted-private-cloud-nutanix-additional-resources: Zusätzliche Ressourcen
 hosted-private-cloud-hosted-private-cloud-opcp: On-Prem Cloud Platform
 hosted-private-cloud-hosted-private-cloud-opcp-getting-started: Erste Schritte
+hosted-private-cloud-hosted-private-cloud-opcp-security: Sicherheit
+hosted-private-cloud-hosted-private-cloud-opcp-cloudstore: CloudStore
 hosted-private-cloud-hosted-private-cloud-opcp-additional-resources: Zusätzliche Ressourcen
 hosted-private-cloud-snc-cloud-platform: SNC Cloud Platform
 hosted-private-cloud-snc-cloud-platform-getting-started: Erste Schritte
 hosted-private-cloud-baremetal-pod: Bare Metal Pod
 hosted-private-cloud-baremetal-pod-getting-started: Erste Schritte
+hosted-private-cloud-baremetal-pod-security: Sicherheit
 hosted-private-cloud-sap-ovhcloud: SAP on OVHcloud
 hosted-private-cloud-sap-ovhcloud-concepts: Konzepte
 hosted-private-cloud-sap-ovhcloud-getting-started: Erste Schritte
@@ -336,8 +339,6 @@ public-cloud-storage-block-storage-additional-resources: Zusätzliche Ressourcen
 public-cloud-storage-file-storage: File Storage
 public-cloud-storage-file-storage-key-concepts: Schlüsselkonzepte
 public-cloud-storage-file-storage-getting-started: Erste Schritte
-public-cloud-integrations: Integrations
-public-cloud-integrations-prefect: Prefect
 public-cloud-network: Public Cloud Network Services
 public-cloud-network-key-concepts: Schlüsselkonzepte
 public-cloud-network-getting-started: Erste Schritte

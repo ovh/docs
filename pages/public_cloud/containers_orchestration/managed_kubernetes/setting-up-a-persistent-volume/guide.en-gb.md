@@ -225,7 +225,7 @@ The default MKS storage classes don't allow mounting a PV on several nodes: only
 
 Additional `ReadWriteMany` storage classes can be configured to have this capability:
 
-* The [Enterprise Filesystem Service](/pages/public_cloud/containers_orchestration/managed_kubernetes/configuring-multi-attach-persistent-volumes-with-ovh-efs) offers a managed shared filesystem consumed via NFS.
+* The [Enterprise File Storage](/pages/storage_and_backup/file_storage/enterprise_file_storage/netapp_trident_csi) offers a managed shared filesystem consumed via NFS.
 * The [OVHcloud Cloud Disk Array](/pages/public_cloud/containers_orchestration/managed_kubernetes/configuring-multi-attach-persistent-volumes-with-ovh-cloud-disk-array) offers a managed shared filesystem consumed via CephFS.
 
 ## Reclaim policies

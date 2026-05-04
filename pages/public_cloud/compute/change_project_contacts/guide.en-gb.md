@@ -29,6 +29,8 @@ Modifying these contacts enables you to separate the technical management of ser
 
 ## Instructions
 
+<!-- CP-STEPS-START:change-project-contacts -->
+
 Click on `Contacts & Rights`{.action} in the left-hand menu under **Settings**.
 
 On this page you can see the administrative and billing contacts associated with your project.
@@ -48,6 +50,8 @@ In the new window, enter the desired NIC handle for each contact you wish to cha
 Once you have clicked `Confirm`{.action}, both OVHcloud accounts affected by the change will receive a confirmation email. This email contains a token with which the contact change can be accepted in the tab `My requests`{.action} of the **Contact management** section.
 
 For a more detailed explanation of this process, please consult our guide [Managing contacts for your services](/pages/account_and_service_management/account_information/managing_contacts).
+
+<!-- CP-STEPS-END:change-project-contacts -->
 
 ## Go further
 

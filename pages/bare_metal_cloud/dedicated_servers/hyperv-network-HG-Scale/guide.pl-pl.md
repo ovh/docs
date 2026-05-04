@@ -1,6 +1,6 @@
 ---
-title: 'Konfiguracja sieci w systemie Windows Server z Hyper-V'
-excerpt: 'Dowiedz się, jak skonfigurować sieć w systemie Windows Server z Hyper-V'
+title: "Konfiguracja sieci Hyper-V na serwerach dedykowanych HG/Scale"
+excerpt: "Skonfiguruj sieci wirtualne Hyper-V na serwerach dedykowanych OVHcloud HG i Scale z vRack."
 updated: 2025-05-16
 ---
 
@@ -80,11 +80,11 @@ W tym przykładzie:
 
 Przejdź do Panelu klienta Server, przejdź do `Local Server`{.action} i kliknij `Disabled`{.action} obok "NIC Teaming".
 
-![NIC Teaming](images/nic_teaming_1.png){.thumbnail}
+![Menedżer serwera z wyłączonym NIC Teaming](images/nic_teaming_1.png){.thumbnail}
 
 Na następnej stronie kliknij prawym przyciskiem myszy jeden z uprzednio zidentyfikowanych interfejsów publicznych, a następnie kliknij `Add to New Team`{.action}.
 
-![NIC Teaming](images/nic_teaming_2.png){.thumbnail}
+![Menu kontekstowe dodawania interfejsu do nowego zespołu](images/nic_teaming_2.png){.thumbnail}
 
 Nadaj nazwę swojej usłudze *teaming*, a następnie dodaj drugi interfejs do *teaming*. Następnie otwórz dodatkowe właściwości, zdefiniuj "Teaming Mode" na "LACP" i kliknij `OK`{.action}.
 
@@ -94,15 +94,15 @@ Aby uniknąć utraty połączenia podczas restartu, musimy statycznie skonfiguro
 
 Naciśnij `Windows Key` + `R`, aby otworzyć okno Run. Wprowadź `ncpa.cpl` i kliknij `OK`{.action}. Otworzy to Twoje okno "Połączenia sieciowe".
 
-![Status IP](images/static_ip_1.png){.thumbnail}
+![Okno Uruchom z poleceniem ncpa.cpl do otwarcia Połączeń sieciowych](images/static_ip_1.png){.thumbnail}
 
 Kliknij prawym przyciskiem myszy na *teaming*, który utworzyłeś i kliknij `Properties`{.action}.
 
-![Status IP](images/static_ip_2.png){.thumbnail}
+![Właściwości zespołu NIC w Połączeniach sieciowych](images/static_ip_2.png){.thumbnail}
 
 Kliknij dwukrotnie `Internet Protocol Version 4(TCP/IPv4)`{.action}.
 
-![Status IP](images/static_ip_3.png){.thumbnail}
+![Właściwości karty z zaznaczonym protokołem IPv4](images/static_ip_3.png){.thumbnail}
 
 Wybierz `Use the following IP address and insert your IP address`.
 
@@ -112,25 +112,25 @@ Dla serwerów DNS możesz wybrać własne. W naszym przykładzie używamy 213.18
 
 Po wpisaniu adresów kliknij `OK`{.action}, aby zamknąć okno i ponownie kliknij `OK`{.action}, aby zamknąć okno właściwości adaptera.
 
-![Status IP](images/static_ip_4.png){.thumbnail}
+![Konfiguracja statycznego IP z maską podsieci i bramą](images/static_ip_4.png){.thumbnail}
 
 #### Dodaj role Hyper-V i RRAS
 
 W serwerze Manager wybierz `Dashboard`{.action} i kliknij `Add roles and features`{.action}.
 
-![Instalacja](images/install_roles_1.png){.thumbnail}
+![Panel Menedżera serwera z opcją Dodaj role i funkcje](images/install_roles_1.png){.thumbnail}
 
 Postępuj zgodnie z instrukcjami, aż do sekcji "Server Roles". Następnie wybierz `Hyper-v` i `Remote Access`.
 
-![Instalacja](images/install_roles_2.png){.thumbnail}
+![Wybór ról serwera z zaznaczonym Hyper-V i Dostęp zdalny](images/install_roles_2.png){.thumbnail}
 
 Następnie przejdź do sekcji "Virtual Switches" funkcji "Hyper-V" i upewnij się, że żaden interfejs nie jest zaznaczony.
 
-![Install roles](images/install_roles_3_2.png){.thumbnail}
+![Sekcja przełączników wirtualnych Hyper-V bez wybranych interfejsów](images/install_roles_3_2.png){.thumbnail}
 
 Następnie przejdź do sekcji "Role Services" "Remote Access" i wybierz `Routing`.
 
-![Instalacja](images/install_roles_4.png){.thumbnail}
+![Usługi ról Dostępu zdalnego z zaznaczonym Routingiem](images/install_roles_4.png){.thumbnail}
 
 W sekcji "Confirmation" wybierz `Restart the destination server automatically if required` i kliknij na `Install`{.action}.
 
@@ -146,19 +146,19 @@ New-VMSwitch -Name "vSwitch_Name" -NetAdapterName "NIC_Team_Name" -AllowNetLbfoT
 
 Otwórz nową aplikację "Routing and Remote Access", kliknij prawym przyciskiem myszy serwer i kliknij `Configuration and Enable Routing and Remote Access`{.action}.
 
-![Konfiguracja RRAS](images/configure_rras_1.png){.thumbnail}
+![Konsola RRAS z opcją Konfiguruj i włącz](images/configure_rras_1.png){.thumbnail}
 
 Wybierz `Custom konfiguracji` i kliknij `Next`{.action}.
 
-![Konfiguracja RRAS](images/configure_rras_2.png){.thumbnail}
+![Kreator RRAS z wybraną Konfiguracją niestandardową](images/configure_rras_2.png){.thumbnail}
 
 Następnie wybierz `LAN Routing` i kliknij `Next`{.action}.
 
-![Konfiguracja RRAS](images/configure_rras_3.png){.thumbnail}
+![Kreator RRAS z wybraną opcją Routing LAN](images/configure_rras_3.png){.thumbnail}
 
 Następnie w oknie, które się wyświetli kliknij `Finish`{.action}, a następnie `Start Service`{.action}.
 
-![Konfiguracja RRAS](images/configure_rras_4.png){.thumbnail}
+![Zakończenie konfiguracji RRAS z monitem o uruchomienie usługi](images/configure_rras_4.png){.thumbnail}
 
 #### Określenie głównych i dodatkowych statycznych adresów IP w interfejsie Hyper-V
 
@@ -170,7 +170,7 @@ Naciśnij `Windows Key` + `R`, aby otworzyć okno Run. Wprowadź `ncpa.cpl` i kl
 
 Kliknij prawym przyciskiem myszy kartę vEthernet i kliknij `Properties`{.action}.
 
-![Status IP](images/static_ip_5.png){.thumbnail}
+![Właściwości karty vEthernet w Połączeniach sieciowych](images/static_ip_5.png){.thumbnail}
 
 Kliknij dwukrotnie `Internet Protocol Version 4(TCP/IPv4)`{.action}.
 
@@ -188,7 +188,7 @@ Następnie kliknij przycisk `Advanced...` i w nowym oknie kliknij `Add...`{.acti
 
 Dodaj adres IP oraz maskę podsieci przypisaną do Twojego Additional IP i kliknij `Add`{.action}
 
-![Status IP](images/static_ip_6.png){.thumbnail}
+![Zaawansowane ustawienia TCP/IP z dodanym Additional IP](images/static_ip_6.png){.thumbnail}
 
 Po wpisaniu wszystkich adresów kliknij `OK`{.action}, aby zamknąć zaawansowane okno, ponownie kliknij `OK`{.action}, aby zamknąć ustawienia TCP/IPv4, a następnie ponownie kliknij `OK`{.action}, aby zamknąć okno właściwości karty.
 
@@ -363,4 +363,9 @@ network:
 
 ## Sprawdź również
  
+
+- [Konfiguracja sieci na Proxmox VE w ofercie High Grade, Scale & Advance (EN)](/pages/bare_metal_cloud/dedicated_servers/proxmox-network-HG-Scale)
+- [Serwer dedykowany - Wymiana sprzętu na serwerach HG/Scale](/pages/bare_metal_cloud/dedicated_servers/hardware-upgrade-HG-Scale)
+- [Konfiguracja Additional IP w Hyper-V z vRack na serwerze dedykowanym](Dedicated)
+
 Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

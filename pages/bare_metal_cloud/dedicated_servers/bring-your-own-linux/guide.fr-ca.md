@@ -1,6 +1,6 @@
 ---
-title: Bring Your Own Linux (BYOLinux)
-excerpt: Découvrez comment déployer facilement vos propres images Linux sur des serveurs dédiés
+title: "Déployer des images Linux personnalisées via Bring Your Own Linux (BYOLinux) sur un serveur dédié"
+excerpt: "Déployez vos propres images Linux personnalisées sur un serveur dédié OVHcloud grâce à la fonctionnalité Bring Your Own Linux (BYOLinux)"
 updated: 2026-03-16
 ---
 
@@ -58,11 +58,11 @@ Certaines limites techniques sont liées à l’utilisation de produits physique
 
 Dans l'onglet `Informations générales`{.action}, cliquez sur le bouton `...`{.action} à côté de « Système (OS) » puis cliquez sur `Installer`{.action}.
 
-![BringYourOwnLinux Control Panel 01](images/byolinux-controlpanel01.png){.thumbnail}
+![Bouton d'installation Bring Your Own Linux dans l'espace client](images/byolinux-controlpanel01.png){.thumbnail}
 
 À l'étape suivante, sélectionnez `Personnalisé` dans le menu puis `Bring Your Own Linux - byolinux` et cliquez sur `Suivant`{.action}.
 
-![BringYourOwnLinux Control Panel 03](images/byolinux-controlpanel03.png){.thumbnail}
+![Sélection d'image personnalisee Bring Your Own Linux dans l'espace client](images/byolinux-controlpanel03.png){.thumbnail}
 
 Vous allez être redirigé vers la page de configuration. Assurez-vous que l'URL de votre image est au bon format. Remplissez le reste des champs obligatoires de cette page. Une fois que vous avez confirmé que les informations sont correctes, cliquez sur `Confirmer`{.action}.
 
@@ -70,7 +70,7 @@ Vous trouverez plus de détails sur les options dans la section « [options de d
 
 Pour plus d'informations et des exemples sur ConfigDrive de Cloud-Init, consultez la documentation officielle sur [cette page](https://cloudinit.readthedocs.io/en/22.1_a/topics/examples.html).
 
-![BringYourOwnLinux Control Panel 04](images/byolinux-controlpanel04.png){.thumbnail}
+![Page de configuration Bring Your Own Linux dans l'espace client](images/byolinux-controlpanel04.png){.thumbnail}
 
 ### Déploiement de votre image via l'API <a name="viaapi"></a>
 

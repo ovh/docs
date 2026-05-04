@@ -170,6 +170,7 @@ Um dies zu überprüfen, lesen Sie bei Bedarf unsere Anleitungen:
 
 Sobald alle diese Voraussetzungen erfüllt sind, können Sie mit der Fertigstellung der Installation Ihres personalisierten SSL-Zertifikats auf Ihrem Webhosting beginnen.
 
+<!-- CP-STEPS-START:install-custom-ssl -->
 Klicken Sie auf die Tabs, um die **4** Schritte anzuzeigen.
 
 > [!tabs]
@@ -204,6 +205,7 @@ Klicken Sie auf die Tabs, um die **4** Schritte anzuzeigen.
 >> ![Order an SSL certificate](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ssl-certificates/import-your-own-ssl-certificate-window-completed.png){.thumbnail}
 >>
 >> Wenn Sie alle 3 Formulare ausgefüllt haben, klicken Sie auf `Bestätigen`{.action}, um den Import des personalisierten SSL-Zertifikats auf Ihr Webhosting abzuschließen.
+<!-- CP-STEPS-END:install-custom-ssl -->
 
 Wenn das SSL-Zertifikat vom SSL-Anbieter korrekt generiert wurde und die Voraussetzungen erfüllt sind, erscheint die Meldung, dass die Aktivierung des SSL-Zertifikats auf Ihrem Webhosting durchgeführt wird.
 
@@ -218,6 +220,7 @@ Wenn das SSL-Zertifikat vom SSL-Anbieter korrekt generiert wurde und die Vorauss
 
 Die Installation dauert mehrere Minuten.
 
+<!-- CP-STEPS-START:verify-ssl-installation -->
 Um zu überprüfen, dass die Installation abgeschlossen ist, klicken Sie auf die Tabs, um die **3** Schritte anzuzeigen.
 
 > [!tabs]
@@ -238,6 +241,7 @@ Um zu überprüfen, dass die Installation abgeschlossen ist, klicken Sie auf die
 >> Wenn der Inhalt des Tab angezeigt wird, überprüfen Sie, ob jeder betroffene Domainname und/oder jede Subdomain in der Tabelle mit dem SSL-Zertifikattyp `Custom` aufgeführt ist.
 >>
 >> ![Tabelle zur Verwaltung der SSL-Zertifikate](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ssl-certificates/tab-custom.png){.thumbnail}
+<!-- CP-STEPS-END:verify-ssl-installation -->
 
 Ihr personalisiertes SSL-Zertifikat ist installiert und aktiv. Sie können es nun mit Ihrem Webhosting nutzen und zum Beispiel [HTTPS für Ihre Website aktivieren](/pages/web_cloud/web_hosting/ssl-activate-https-website).
 

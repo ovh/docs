@@ -45,7 +45,7 @@ Specifically, you have to generate these credentials via the OVHcloud token gene
 > EU region
 >> [Generate OVHcloud API tokens (EU)](https://auth.eu.ovhcloud.com/api/createToken?GET=/cloud/project/*/database/*&POST=/cloud/project/*/database/*&PUT=/cloud/project/*/database/*&DELETE=/cloud/project/*/database/*)
 > CA region
->> [Generate OVHcloud API tokens (CA)](https://ca.api.ovh.com/createToken?GET=/cloud/project/*/database/*&POST=/cloud/project/*/database/*&PUT=/cloud/project/*/database/*&DELETE=/cloud/project/*/database/*)
+>> [Generate OVHcloud API tokens (CA)](https://auth.ca.ovhcloud.com/api/createToken?GET=/cloud/project/*/database/*&POST=/cloud/project/*/database/*&PUT=/cloud/project/*/database/*&DELETE=/cloud/project/*/database/*)
 
 Once you have generated your tokens, save them — you will need them shortly.
 

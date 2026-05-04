@@ -43,6 +43,7 @@ Each method offers its distinct advantages, depending on your expertise and pref
 
 ### OVHcloud AI Solutions Authorization Process 
 
+<!-- CP-STEPS-START:ovhcloud-ai-solutions-authorization-process -->
 > [!tabs]
 > **Using the Control Panel (UI)**
 >>
@@ -61,11 +62,13 @@ Each method offers its distinct advantages, depending on your expertise and pref
 >> ![Create a Notebook Control Panel manager 01](images/creating-a-notebook-using-UI-01.png){.thumbnail}
 >>
 >> Once you have clicked this button, you can leave this page and continue to follow this documentation to launch your AI Notebook using the CLI, API, or SDK as desired. Indeed, you do not need to complete the entire Notebook creation process in the Control Panel. Clicking the `Create a Notebook`{.action} button is sufficient.
+<!-- CP-STEPS-END:ovhcloud-ai-solutions-authorization-process -->
 
 ### Launch your first AI Notebook
 
 To create an AI Notebook, follow these steps:
 
+<!-- CP-STEPS-START:launch-your-first-ai-notebook -->
 > [!tabs]
 > **Using the Control Panel (UI)**
 >>
@@ -280,11 +283,13 @@ To create an AI Notebook, follow these steps:
 >>
 >> Running this code will launch a new AI Notebook based on the specifications you provided. Feel free to adjust the specifications based on the Notebook you want to create.
 >>
+<!-- CP-STEPS-END:launch-your-first-ai-notebook -->
 
 ### Accessing your AI Notebook
 
 At this point your AI Notebook is created. You will need to wait a few seconds for the Notebook to start and reach the `RUNNING` status. Once it has, the Notebook URL will be accessible.
 
+<!-- CP-STEPS-START:accessing-your-ai-notebook -->
 > [!tabs]
 > **Using the Control Panel (UI)**
 >>
@@ -385,6 +390,7 @@ At this point your AI Notebook is created. You will need to wait a few seconds f
 >>
 >> print(json.loads(response.content.decode()))
 >>
+<!-- CP-STEPS-END:accessing-your-ai-notebook -->
 
 ### Connecting to your AI Notebook
 
@@ -477,6 +483,7 @@ You can stop your AI Notebook at any time. This will release its compute resourc
 
 Indeed, when you stop a Notebook, it will be unavailable for a certain period while your data is synchronized to the Object Storage, so that you can retrieve your work later. Once the synchronization is complete, the Notebook will reach the `STOPPED` state, at which point you can either start it again or delete it.
 
+<!-- CP-STEPS-START:stopping-an-ai-notebook -->
 > [!tabs]
 > **Using the Control Panel (UI)**
 >>
@@ -531,11 +538,13 @@ Indeed, when you stop a Notebook, it will be unavailable for a certain period wh
 >>
 >> Please replace `YOUR_AI_TOKEN` with your actual AI token and `YOUR_NOTEBOOK_UUID` with the `UUID` of the Notebook you want to stop.
 >>
+<!-- CP-STEPS-END:stopping-an-ai-notebook -->
 
 ### Starting a stopped Notebook
 
 Once the Notebook has reached the `Stopped` state, you may be interested in starting it in order to continue your work.
 
+<!-- CP-STEPS-START:starting-a-stopped-notebook -->
 > [!tabs]
 > **Using the Control Panel (UI)**
 >>
@@ -584,6 +593,7 @@ Once the Notebook has reached the `Stopped` state, you may be interested in star
 >>
 >> Please replace `YOUR_AI_TOKEN` with your actual AI token and `YOUR_NOTEBOOK_UUID` with the `UUID` of the Notebook you want to stop.
 >>
+<!-- CP-STEPS-END:starting-a-stopped-notebook -->
 
 Starting a Notebook will transition its state to `RUNNING`, once the Notebook is started. However, there will be a short waiting period while your data synchronizes back to your Notebook (internal workspace and remotely mounted volumes if any). During this data synchronization, the Notebook's state will display as `Pending` or `Starting` before entering the `RUNNING` state.
 
@@ -595,6 +605,7 @@ The restart operation **will not trigger a datasync process**, which means your 
 
 If you have enabled the Automatic Restart feature, your Notebook will automatically restart every 7 days without requiring manual intervention. You also have the option to extend this period to 28 days by contacting our [support](/links/support-contact).
 
+<!-- CP-STEPS-START:restarting-a-notebook -->
 > [!tabs]
 > **Using the Control Panel (UI)**
 >>
@@ -622,6 +633,7 @@ If you have enabled the Automatic Restart feature, your Notebook will automatica
 >>
 >> ![Restart a Notebook API](images/restarting-a-notebook-using-API.png){.thumbnail}
 >>
+<!-- CP-STEPS-END:restarting-a-notebook -->
 
 ### Deleting a Notebook
 
@@ -629,6 +641,7 @@ If you no longer need your Notebook, you can delete it.
 
 Deleting a Notebook also means that you will delete the Notebook's local storage. This data cannot be recovered once the Notebook has been deleted. However, any remote Object Storage that was mounted on the AI Notebook during its creation will not be deleted.
 
+<!-- CP-STEPS-START:deleting-a-notebook -->
 > [!tabs]
 > **Using the Control Panel (UI)**
 >>
@@ -678,6 +691,7 @@ Deleting a Notebook also means that you will delete the Notebook's local storage
 >>
 >> Please replace `YOUR_AI_TOKEN` with your actual AI token and `YOUR_NOTEBOOK_UUID` with the `UUID` of the Notebook you want to delete. If the Notebook is still `RUNNING`, you will need to set the `force` parameter to `True` to delete the Notebook.
 >>
+<!-- CP-STEPS-END:deleting-a-notebook -->
 
 Once the AI Notebook has been deleted, you should no longer see it when listing your existing AI Notebooks.
 

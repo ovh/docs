@@ -1,6 +1,6 @@
 ---
-title: Mehrere VLANs im vRack erstellen
-excerpt: 'Erfahren Sie hier, wie Sie mehrere VLANs im vRack erstellen'
+title: "Mehrere VLANs im vRack auf einem Dedicated Server erstellen"
+excerpt: "Erstellen und verwalten Sie mehrere VLANs in Ihrem OVHcloud vRack, um den Netzwerkverkehr zwischen Dedicated Servern zu segmentieren."
 updated: 2026-02-20
 ---
 
@@ -360,54 +360,56 @@ Bei der [Standardkonfiguration des vRack](/pages/bare_metal_cloud/dedicated_serv
 
 Verbinden Sie sich über Remote-Desktop mit Ihrem Server und öffnen Sie die Anwendung "Server-Manager". Wählen Sie dann `Lokaler Server`{.action} aus und klicken Sie neben "**NIC Teamvorgang**" auf den Link `Deaktiviert`{.action}:
 
-![Windows VLAN](images/vrack2-windows-01.png){.thumbnail}
+![Server Manager – Lokaler Server mit deaktiviertem NIC Teaming](images/vrack2-windows-01.png){.thumbnail}
 
 Klicken Sie dann mit der rechten Maustaste auf das Netzwerkinterface und wählen Sie `Zum neuen Team hinzufügen`{.action}.
 
-![Windows vLAN](images/vrack2-windows-02.0.png){.thumbnail}
+![Kontextmenü zum Hinzufügen eines Interfaces zu einem neuen Team](images/vrack2-windows-02.0.png){.thumbnail}
 
 Erstellen Sie anschließend ein neues Team, indem Sie ein Netzwerkinterface auswählen und im Feld "**Teamname**" einen Teamnamen eingeben. Wenn Sie damit fertig sind, bestätigen Sie mit `OK`{.action}.
 
-![Windows VLAN](images/vrack2-windows-02.png){.thumbnail}
+![Dialog "Neues Team" mit Teamname und OK-Schaltfläche](images/vrack2-windows-02.png){.thumbnail}
 
 Geben Sie nun das VLAN-Tag an. Klicken Sie im "**NIC-Teamvorgang**"-Fenster im Panel "**ADAPTER UND SCHNITTSTELLEN**", Gehen Sie zur Registerkarte `Teamschnittstellen`{.action} und mit der rechten Maustaste auf das Interface, das Sie gerade zum neuen Team hinzugefügt haben, und klicken Sie dann auf `Eigenschaften`{.action}. Klicken Sie jetzt auf `Spezifisches VLAN`{.action} und geben Sie den Tag ein:
 
-![Windows VLAN](images/vrack2-windows-03.png){.thumbnail}
+![NIC Teaming Interface-Eigenschaften mit spezifischem VLAN-Tag](images/vrack2-windows-03.png){.thumbnail}
 
 Konfigurieren Sie nun die IP-Adresse des VLANs. Öffnen Sie hierzu über das Startmenü die `Systemsteuerung`{.action}.
 
-![Windows VLAN](images/vrack2-windows-04.png){.thumbnail}
+![Windows-Startmenü mit Systemsteuerung-Option](images/vrack2-windows-04.png){.thumbnail}
 
 Klicken Sie auf `Netzwerk und Internet`{.action}:
 
-![Windows VLAN](images/vrack2-windows-05.png){.thumbnail}
+![Systemsteuerung mit Kategorie "Netzwerk und Internet"](images/vrack2-windows-05.png){.thumbnail}
 
 Klicken Sie dann auf `Netzwerk- und Freigabecenter`{.action}:
 
-![Windows VLAN](images/vrack2-windows-06.png){.thumbnail}
+![Link zum Netzwerk- und Freigabecenter in Windows](images/vrack2-windows-06.png){.thumbnail}
 
 Klicken Sie anschließend auf `Adaptereinstellugen ändern`{.action}:
 
-![Windows VLAN](images/vrack2-windows-07.png){.thumbnail}
+![Adaptereinstellungen ändern im Netzwerk- und Freigabecenter](images/vrack2-windows-07.png){.thumbnail}
 
 Klicken Sie nun mit der rechten Maustaste auf das VLAN-Interface und klicken Sie dann auf `Eigenschaften`{.action}.
 
-![Windows VLAN](images/vrack2-windows-08.png){.thumbnail}
+![Rechtsklick auf VLAN-Interface zum Öffnen der Eigenschaften](images/vrack2-windows-08.png){.thumbnail}
 
 In unserem Beispiel ist `Ethernet 2` das für vRack verwendete Interface. Es ist jedoch möglich, dass das vRack-Interface in Ihrer Konfiguration ein anderes ist. Das hier auszuwählende Interface verwendet nicht die Haupt-IP-Adresse des Servers oder eine selbst zugewiesene IP-Adresse.
 
 Doppelklicken Sie auf `Internet Protocol Version 4 (TCP/IPv4)`{.action}.
 
-![Windows VLAN](images/vrack2-windows-09.png){.thumbnail}
+![Adaptereigenschaften mit hervorgehobenem IPv4-Protokoll](images/vrack2-windows-09.png){.thumbnail}
 
 Klicken Sie auf `Folgende IP-Adresse verwenden`{.action}. Geben Sie in das Feld "**IP-Adresse**" eine IP-Adresse aus Ihrem internen IP-Bereich ein. Geben Sie in das Feld "**Subnetzmaske**" die Subnetzmaske "255.255.0.0" ein.
 
-![Windows VLAN](images/vrack2-windows-10.png){.thumbnail}
+![IPv4-Einstellungen mit VLAN-IP-Adresse und Subnetzmaske](images/vrack2-windows-10.png){.thumbnail}
 
 Klicken Sie abschließend auf den Button `OK`{.action}, um die Änderungen zu speichern, und starten Sie den Server neu.
 
 ## Weiterführende Informationen
 
 [Mehrere dedizierte Server im vRack konfigurieren](/pages/bare_metal_cloud/dedicated_servers/vrack_configuring_on_dedicated_server)
+
+- [vRack zwischen Public Cloud und Dedicated Server konfigurieren](/pages/bare_metal_cloud/dedicated_servers/configuring-the-vrack-between-the-public-cloud-and-a-dedicated-server)
 
 Treten Sie unserer [User Community](/links/community) bei.

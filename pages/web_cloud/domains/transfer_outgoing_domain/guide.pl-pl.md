@@ -63,6 +63,7 @@ Aby zapobiec przenoszeniu nazwy domeny bez zezwolenia, nazwy domen są zazwyczaj
 
 ### 1 - Wyłączenie ochrony przed transferem nazwy domeny
 
+<!-- CP-STEPS-START:unlock-domain-transfer -->
 Kliknij na karty poniżej, aby wyświetlić kolejno każdy z **3** kroków.
 
 > [!tabs]
@@ -70,7 +71,7 @@ Kliknij na karty poniżej, aby wyświetlić kolejno każdy z **3** kroków.
 >>
 >> Przejdź na stronę [Domeny](/links/control-panel/web-domains), następnie wybierz odpowiednią domenę.
 >>
->> ![Domain names](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns.png){.thumbnail}
+>> ![Domain names](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
 >>
 > **Krok 2**
 >>
@@ -97,6 +98,7 @@ Kliknij na karty poniżej, aby wyświetlić kolejno każdy z **3** kroków.
 >> > Niektóre *kody transferu* są zarządzane bezpośrednio przez *registry* przy rozszerzaniu nazwy domeny. *Rejestr* to organizacja, która zarządza wszystkimi nazwami domen dla wybranego rozszerzenia. Na przykład,**AFNIC** zarządza wszystkimi nazwami domen, których rozszerzenie oznacza "*.fr*". W takim przypadku należy skontaktować się bezpośrednio z repozytorium*, które zarządza rozszerzeniem Twojej nazwy domeny, aby pobrać *kod transferu*.
 >>
 >> ![dezaktywacja](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/protection-against-domain-name-transfert-deactivating.png){.thumbnail}
+<!-- CP-STEPS-END:unlock-domain-transfer -->
 
 > [!primary]
 >
@@ -112,6 +114,7 @@ Kliknij na karty poniżej, aby wyświetlić kolejno każdy z **3** kroków.
 
 Po odblokowaniu Twojej nazwy domeny do transferu, pobierz jej kod transferu.
 
+<!-- CP-STEPS-START:get-transfer-code -->
 Kliknij na karty poniżej, aby wyświetlić kolejno każdy z **3** kroków.
 
 > [!tabs]
@@ -119,7 +122,7 @@ Kliknij na karty poniżej, aby wyświetlić kolejno każdy z **3** kroków.
 >>
 >> Przejdź na stronę [Domeny](/links/control-panel/web-domains), następnie wybierz odpowiednią domenę.
 >>
->> ![Domain names](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns.png){.thumbnail}
+>> ![Domain names](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
 >>
 > **Krok 2**
 >>
@@ -134,6 +137,7 @@ Kliknij na karty poniżej, aby wyświetlić kolejno każdy z **3** kroków.
 >> Kod zostanie poproszony przez nowego operatora o zakończenie procesu transferu. Szczegóły możesz sprawdzić u nowego operatora.
 >>
 >> Zamiast ręcznie wpisywać kod, zalecamy jego skopiowanie/wklejenie, ponieważ niektóre znaki mogą być łatwo mylone.
+<!-- CP-STEPS-END:get-transfer-code -->
 
 Po pobraniu kodu transferu **nie zablokuj ponownie nazwy domeny, chyba że nie chcesz jej już przenosić**.
 

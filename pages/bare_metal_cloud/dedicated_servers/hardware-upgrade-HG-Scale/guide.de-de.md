@@ -1,6 +1,6 @@
 ---
-title: Hardware-Upgrade auf einem Dedicated Server der Reihen High Grade oder SCALE
-excerpt: Erfahren Sie hier, wie Sie über das OVHcloud Kundencenter ein Hardware-Upgrade für High Grade und SCALE beantragen können
+title: "Hardware-Upgrade auf einem High Grade oder Scale Server"
+excerpt: "Beantragen Sie ein Hardware-Upgrade (RAM, Festplatte, NIC) für Ihren High Grade oder SCALE Dedicated Server über das OVHcloud Kundencenter."
 updated: 2024-01-04
 ---
 
@@ -42,19 +42,19 @@ Klicken Sie im Tab `Hardware`{.action} auf `RAM hinzufügen`{.action}.
 
 Wählen Sie auf der nächsten Seite die gewünschte Speicheroption aus und klicken Sie auf `Bestellen`{.action}.
 
-![Storage Option](images/selectram.png){.thumbnail}
+![Gewünschte RAM-Option auswählen und Bestellen klicken](images/selectram.png){.thumbnail}
 
 Sobald die Bestellung bezahlt wurde, erhalten Sie eine E-Mail mit einem Link, um den Eingriff für das RAM-Upgrade zu planen.
 
 Wenn Sie auf den Link in der E-Mail klicken, werden Sie zum Dashboard des Dedicated Servers weitergeleitet. Klicken Sie hier auf `Den Vorgang planen`{.action}.
 
-![schedule intervention](images/ramintervention.png){.thumbnail}
+![Schaltfläche "Intervention planen" für RAM-Upgrade](images/ramintervention.png){.thumbnail}
 
 Setzen Sie einen Haken unter `Haben Sie bereits ein Backup Ihrer Daten durchgeführt?`{.action} und wählen Sie Datum und Uhrzeit aus den angebotenen Zeitfenstern. Bitte beachten Sie, dass ein Eingriff durch die Techniker in unseren Rechenzentren eine gewisse Vorbereitungszeit erfordert. Das erste Verfügbarkeitsdatum wird daher nach einem Zeitraum von mindestens 10 Tagen festgelegt.
 
 Klicken Sie dann auf `Bestätigen`{.action}.
 
-![confirm intervention](images/ramconfirm.png){.thumbnail}
+![Datum und Uhrzeit der RAM-Upgrade-Intervention bestätigen](images/ramconfirm.png){.thumbnail}
 
 Sie erhalten dann eine E-Mail, in der Datum und Uhrzeit des Eingriffs bestätigt werden.
 
@@ -66,19 +66,19 @@ Klicken Sie im Tab `Hardware`{.action} auf `Storage erhöhen`{.action}.
 
 Wählen Sie auf der nächsten Seite die gewünschte Speicheroption aus und klicken Sie auf `Bestellen`{.action}.
 
-![option de stockage](images/selectstorage.png){.thumbnail}
+![Gewünschte Storage-Option auswählen und Bestellen klicken](images/selectstorage.png){.thumbnail}
 
 Sobald die Bestellung bezahlt wurde, erhalten Sie eine E-Mail mit einem Link, um den Eingriff für das Hardware-Upgrade zu planen.
 
 Wenn Sie auf den Link in der E-Mail klicken, werden Sie zum Dashboard des Dedicated Servers weitergeleitet. Klicken Sie hier auf `Den Vorgang planen`{.action}.
 
-![schedule intervention](images/storageintervention.png){.thumbnail}
+![Schaltfläche "Intervention planen" für Storage-Upgrade](images/storageintervention.png){.thumbnail}
 
 Setzen Sie einen Haken unter `Haben Sie bereits ein Backup Ihrer Daten durchgeführt?`{.action} und wählen Sie Datum und Uhrzeit aus den angebotenen Zeitfenstern. Bitte beachten Sie, dass ein Eingriff durch die Techniker in unseren Rechenzentren eine gewisse Vorbereitungszeit erfordert. Das erste Verfügbarkeitsdatum wird daher nach einem Zeitraum von mindestens 10 Tagen festgelegt.
 
 Klicken Sie dann auf `Bestätigen`{.action}.
 
-![confirm intervention](images/confirmintervention.png){.thumbnail}
+![Datum und Uhrzeit der Storage-Upgrade-Intervention bestätigen](images/confirmintervention.png){.thumbnail}
 
 Sie erhalten dann eine E-Mail, in der Datum und Uhrzeit des Eingriffs bestätigt werden.
 
@@ -90,4 +90,8 @@ Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.
  
 Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](/links/support).
  
+- [Proxmox VE Networking on HG/Scale Dedicated Servers](/pages/bare_metal_cloud/dedicated_servers/proxmox-network-HG-Scale)
+
+- [Dedicated Server - Hyper-V Netzwerk auf HG/Scale Servern](/pages/bare_metal_cloud/dedicated_servers/hyperv-network-HG-Scale)
+
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

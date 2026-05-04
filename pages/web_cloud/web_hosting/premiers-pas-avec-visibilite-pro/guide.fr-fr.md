@@ -30,6 +30,7 @@ Visibilité Pro est une solution de référencement local vous permettant de gé
 
 ### 1 - Accéder à la gestion de la solution Visibilité Pro
 
+<!-- CP-STEPS-START:access-visibility-pro -->
 Pour accéder à la gestion de la solution Visibilité Pro, cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3** étapes.
 
 > [!tabs]
@@ -52,6 +53,7 @@ Pour accéder à la gestion de la solution Visibilité Pro, cliquez sur les ongl
 >> Pour accéder à l'interface de gestion de la solution Visibilité Pro, cliquez sur le bouton `...`{.action} à droite de la ligne concernée, puis sur `Accéder à l'interface`{.action}.
 >>
 >> ![Accès à l'interface de gestion Visibilité Pro depuis l'espace client OVHcloud](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/visibility-pro/acces-to-the-interface.png){.thumbnail}
+<!-- CP-STEPS-END:access-visibility-pro -->
 
 ### 2 - Renseigner le profil de votre établissement
 

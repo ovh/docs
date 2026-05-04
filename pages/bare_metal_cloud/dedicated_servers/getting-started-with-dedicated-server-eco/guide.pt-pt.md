@@ -1,6 +1,6 @@
 ---
 title: "Primeiros passos com um servidor dedicado Kimsufi, So You Start ou Rise"
-excerpt: "Descubra como gerir um servidor dedicado na sua Área de Cliente e como começar com a configuração e a segurança de um servidor Kimsufi, So You Start ou Rise"
+excerpt: "Faça a gestão do seu servidor Kimsufi, So You Start ou Rise a partir da área de cliente OVHcloud: instale um SO, configure SSH e proteja o seu serviço"
 updated: 2025-04-29
 ---
 
@@ -228,7 +228,7 @@ Se utilizar um servidor Windows, consulte [este guia](/pages/bare_metal_cloud/de
 
 Pode ativar ou desativar o monitoring de um servidor dedicado a partir do separador `Informações gerais`{.action} da sua [Área de Cliente OVHcloud](/links/manager). A opção situa - se na secção `Estado dos serviços`.
 
-![Monitoring](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/dedicated-servers/general-information/monitoring-your-server.png){.thumbnail}
+![Estado do monitoring na secção Estado dos serviços](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/dedicated-servers/general-information/monitoring-your-server.png){.thumbnail}
 
 Clique no botão `Configurar`{.action}. Na janela que aparece, tem três opções para o comportamento de vigilância:
 
@@ -236,7 +236,7 @@ Clique no botão `Configurar`{.action}. Na janela que aparece, tem três opçõe
 - **Ativado com intervenção proactiva**: Se o servidor deixar de responder, ser-lhe-á enviado um e-mail de alerta e o servidor será verificado por um técnico.
 - **Ativado sem intervenção proactiva**: No caso de o servidor deixar de responder, receberá uma mensagem de alerta por e-mail. Para dar início a uma intervenção, é necessário criar um pedido de assistência.
 
-![Monitoring](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/dedicated-servers/general-information/monitoring-your-server2.png){.thumbnail}
+![Popup de configuração do monitoring com três opções](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/dedicated-servers/general-information/monitoring-your-server2.png){.thumbnail}
 
 Clique em `Confirmar`{.action} para atualizar a sua configuração de vigilância.
 
@@ -305,13 +305,15 @@ Para ativar e utilizar a opção Backup Storage, consulte [este guia](/pages/bar
 
 ## Quer saber mais?
 
-[Configuração das contas de utilizadores e acesso root num servidor](/pages/bare_metal_cloud/dedicated_servers/changing_root_password_linux_ds)
+[Configurar as contas de utilizadores e o acesso root num servidor](/pages/bare_metal_cloud/dedicated_servers/changing_root_password_linux_ds)
 
 [Proteger um servidor dedicado](/pages/bare_metal_cloud/dedicated_servers/securing-a-dedicated-server)
 
 [Ativar e utilizar o modo rescue](/pages/bare_metal_cloud/dedicated_servers/rescue_mode)
 
-[OVHcloud API & OS installation](/pages/bare_metal_cloud/dedicated_servers/api-os-installation) (EN)
+[API OVHcloud e instalação de um SO](/pages/bare_metal_cloud/dedicated_servers/api-os-installation)
+
+[Clientes Kimsufi e So you Start - Familiarizar-se com a área de cliente OVHcloud](/pages/bare_metal_cloud/dedicated_servers/getting-familiar-with-ovhcloud-control-panel)
 
 Se precisar de formação ou de assistência técnica para implementar as nossas soluções, contacte o seu representante comercial ou clique em [esta ligação](/links/professional-services) para obter um orçamento e solicitar uma análise personalizada do seu projecto aos nossos especialistas da equipa de Serviços Profissionais.
 

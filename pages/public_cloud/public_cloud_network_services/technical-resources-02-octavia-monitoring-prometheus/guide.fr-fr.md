@@ -96,6 +96,7 @@ Click `Add`{.action} to trigger the listener creation. The new listener is added
 
 ![Listener list in OVHcloud Control Panel](images/listener_list.png){.thumbnail}
 
+
 #### Create a Prometheus listener via OpenStack GUI (Horizon)
 
 Log in to Horizon using this [guide](/pages/public_cloud/public_cloud_cross_functional/introducing_horizon).

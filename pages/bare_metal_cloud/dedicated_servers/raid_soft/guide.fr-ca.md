@@ -1,6 +1,6 @@
 ---
-title: Gestion et reconstruction du RAID logiciel sur les serveurs en mode legacy boot (BIOS)
-excerpt: "Découvrez comment gérer et reconstruire le RAID logiciel après un remplacement de disque sur votre serveur en mode legacy boot (BIOS)"
+title: "Gérer le RAID logiciel (mode de démarrage BIOS) sur un serveur dédié"
+excerpt: "Gérez et reconstruisez le RAID logiciel après un remplacement de disque sur un serveur dédié en mode boot BIOS"
 updated: 2026-03-02
 ---
 
@@ -579,10 +579,10 @@ unused devices: <none>
 
 Enfin, nous ajoutons une étiquette et montons la partition [SWAP] (le cas échéant).
 
-Une fois la reconstruction du RAID terminée, nous montons la partition contenant la racine de notre système d'exploitation sur `/mnt`. Dans notre exemple, cette partition est `md4`.
+Une fois la reconstruction du RAID terminée, nous montons la partition contenant la racine de notre système d'exploitation sur `/mnt`. Dans notre exemple, cette partition est `md2`.
 
 ```sh
-root@rescue12-customer-eu (nsxxxxx.ip-xx-xx-xx.eu) ~ # mount /dev/md4 /mnt
+root@rescue12-customer-eu (nsxxxxx.ip-xx-xx-xx.eu) ~ # mount /dev/md2 /mnt
 ```
 
 Nous ajoutons le label à notre partition swap avec la commande :

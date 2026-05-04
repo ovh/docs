@@ -1,5 +1,5 @@
 ---
-title: CUDA auf einem GPU Dedicated Server installieren
+title: "CUDA auf einem Dedicated Server mit GPU installieren"
 updated: 2017-12-14
 ---
 
@@ -173,5 +173,9 @@ Wed Nov 1 09:14:38 2017
 ```
 
 ## Weiterführende Informationen
+
+- [Erste Schritte mit einem Dedicated Server](/pages/bare_metal_cloud/dedicated_servers/getting-started-with-dedicated-server)
+
+- [OS Installation via the OVHcloud API on a Dedicated Server](/pages/bare_metal_cloud/dedicated_servers/api-os-installation)
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

@@ -1,7 +1,7 @@
 ---
 title: AI Endpoints - Build a JavaScript Chatbot with LangChain
 excerpt: Learn how to build a chatbot using JavaScript, LangChain, and AI Endpoints
-updated: 2025-12-19
+updated: 2026-04-15
 ---
 
 > [!primary]
@@ -93,7 +93,7 @@ async function chatCompletion(question) {
     ["human", "{question}"]
   ]);
 
-  // Use Mixtral-8x22B as LLM
+  // Use gpt-oss-120b as LLM
   const model = new ChatMistralAI({
     modelName: process.env.OVH_AI_ENDPOINTS_MODEL_NAME,
     model: process.env.OVH_AI_ENDPOINTS_MODEL_NAME,
@@ -164,7 +164,7 @@ async function chatCompletion(question) {
     ["human", "{question}"]
   ]);
 
-  // Use Mixtral-8x22B as LLM
+  // Use gpt-oss-120b as LLM
   const model = new ChatMistralAI({
     modelName: process.env.OVH_AI_ENDPOINTS_MODEL_NAME,
     model: process.env.OVH_AI_ENDPOINTS_MODEL_NAME,

@@ -1,6 +1,6 @@
 ---
-title: 'Eseguire il backup di dati e database su un server di storage'
-excerpt: 'Come proteggere i tuoi dati in 5 step'
+title: "Salvare dati e database su un server dedicato"
+excerpt: "Esegui il backup dei tuoi dati e database sullo spazio di storage integrato del tuo server dedicato OVHcloud in cinque passaggi"
 updated: 2018-09-12
 ---
 

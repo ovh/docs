@@ -52,6 +52,7 @@ Aktuell sind folgende Programmiersprachen verfügbar:
 - Python
 - Ruby
 
+<!-- CP-STEPS-START:access-runtime-software -->
 Um zu den Runtime Engines Ihres [Cloud Web](/links/web/hosting-cloud-web-offer) Hostings zu gelangen, klicken Sie auf die Tabs, um nacheinander jeden der **3** Schritte anzuzeigen.
 
 > [!tabs]
@@ -70,9 +71,11 @@ Um zu den Runtime Engines Ihres [Cloud Web](/links/web/hosting-cloud-web-offer) 
 > **Schritt 3**
 >>
 >> Wenn Sie das Angebot [Cloud Web](/links/web/hosting-cloud-web-offer) mit 2 vCores nutzen, können Sie eine zweite Runtime Engine hinzufügen (maximal 2 pro Angebot), indem Sie auf den Button `Aktionen`{.action} und dann auf `Runtime Engine hinzufügen`{.action} klicken.
+<!-- CP-STEPS-END:access-runtime-software -->
 
 Überprüfen Sie daher, bevor Sie fortfahren, dass Sie über die für Ihr Projekt notwendigen Runtime Engines verfügen.
 
+<!-- CP-STEPS-START:check-cloud-web-vcores -->
 Um zu überprüfen, dass Sie über 2 vCores für Ihr Cloud Web Hosting verfügen, klicken Sie auf die Tabs, um nacheinander jeden der **2** Schritte anzuzeigen.
 
 > [!tabs]
@@ -85,6 +88,7 @@ Um zu überprüfen, dass Sie über 2 vCores für Ihr Cloud Web Hosting verfügen
 > **Schritt 2**
 >>
 >> Überprüfen Sie in der Randleiste **Abo** und unter `Angebot`, dass die Referenz `Cloud Web 3` vorhanden ist.
+<!-- CP-STEPS-END:check-cloud-web-vcores -->
 
 ### 3 - Umgebungsvariablen erstellen (optional)
 
@@ -92,6 +96,7 @@ Wenn Sie Ihr Projekt mehrfach in verschiedenen Umgebungen einrichten möchten (z
 
 Dadurch ist es zum Beispiel möglich, keine .env-Datei im PHP-Framework Laravel festzulegen, wie es in der zugehörigen Dokumentation beschrieben ist: <https://laravel.com/docs/master/configuration>.
 
+<!-- CP-STEPS-START:add-environment-variable -->
 Um eine Umgebungsvariable hinzuzufügen, klicken Sie auf die Tabs, um nacheinander jeden der **3** Schritte anzuzeigen.
 
 > [!tabs]
@@ -110,6 +115,7 @@ Um eine Umgebungsvariable hinzuzufügen, klicken Sie auf die Tabs, um nacheinand
 >> Um eine neue Variable hinzuzufügen, klicken Sie auf den Button `Aktionen`{.action} und anschließend auf `Umgebungsvariable hinzufügen`{.action}. Folgen Sie nun den Anweisungen für die Variable, die Sie erstellen möchten.
 >>
 >> ![Hinzufügen einer Umgebungsvariable auf einem Cloud Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/cloud-web/environment-variables/add-an-environment-variable.png){.thumbnail}
+<!-- CP-STEPS-END:add-environment-variable -->
 
 Wenn Sie kein Entwicklungsframework mit Umgebungsvariablen verwenden oder überprüfen möchten, ob Ihre Umgebungsvariablen funktionieren, können Sie hierfür ein Skript erstellen. Im Folgenden finden Sie zwei Beispiele, um Ihnen bei diesem Vorgang zu helfen. Sie ersetzen allerdings nicht die Hilfe eines Webmasters.
 
@@ -137,6 +143,7 @@ Vergessen Sie nicht, die allgemeinen Angaben in diesen Skripten ("DB_DATABASE") 
 
 ### 4 - Zusätzliche Domains und Multisite konfigurieren (optional)
 
+<!-- CP-STEPS-START:configure-multisite -->
 Nun da die technische Umgebung Ihres Cloud Web Hostings fertig ist, können Sie zusätzliche Domains konfigurieren und als Multisite einrichten. So können Sie Ihren Bereich aufteilen und beispielsweise mehrere Websites darauf hosten. Wenn Sie dies für Ihr Projekt einrichten möchten, klicken Sie auf die Tabs, um nacheinander jeden der **3** Schritte anzuzeigen.
 
 > [!tabs]
@@ -163,6 +170,7 @@ Nun da die technische Umgebung Ihres Cloud Web Hostings fertig ist, können Sie 
 >> > [!warning]
 >> >
 >> > Wenn Sie eine externe Domain hinzugefügt haben, muss zusätzlich ein TXT-Feld mit dem Namen **ovhcontrol** in der DNS-Konfiguration der Domain erstellt werden. Über dieses Feld kann OVHcloud überprüfen, dass die Domain tatsächlich hinzugefügt werden darf. Wurde kein TXT-Feld erstellt, wird der Vorgang abgebrochen.
+<!-- CP-STEPS-END:configure-multisite -->
 
 Wiederholen Sie diesen Schritt, falls Sie mehrere Domains zu Ihrem Cloud Web Hosting hinzufügen möchten. Weitere Informationen zum Hinzufügen einer Domain als Multisite finden Sie in unserer Anleitung: ["Mehrere Websites auf einem Webhosting einrichten"](/pages/web_cloud/web_hosting/multisites_configure_multisite).
 
@@ -174,6 +182,7 @@ Es gibt zwei mögliche Vorgehensweisen, um Ihr Projekt einzurichten. Wenn Sie me
 
 Mit dieser Lösung können Sie auf einer gebrauchsfertigen Websitestruktur aufbauen und diese nach Belieben anpassen (Themes, Texte usw.). OVHcloud stellt Ihnen 4 verschiedene 1-Klick-Module zur Verfügung. Nähere Informationen finden Sie auf der Webseite ["Erstellen Sie Ihre Website mit 1-Klick-Modulen"](/links/web/hosting-website).
 
+<!-- CP-STEPS-START:install-1-click-module -->
 Wenn Sie sich für die Verwendung eines unserer 1-Klick-Module entscheiden, klicken Sie auf die Tabs, um nacheinander jeden der **3** Schritte anzuzeigen.
 
 > [!tabs]
@@ -190,6 +199,7 @@ Wenn Sie sich für die Verwendung eines unserer 1-Klick-Module entscheiden, klic
 > **Schritt 3**
 >>
 >> Nun können Sie auswählen, ob Sie eine "einfache" (nicht personalisierbare) Installation oder die Installation "im Experten-Modus" (mit anpassbaren Optionen) durchführen möchten.
+<!-- CP-STEPS-END:install-1-click-module -->
 
 Wenn Sie mehr über die 1-Klick-Module von OVHcloud wissen möchten, werfen Sie einen Blick in unsere Dokumentation: ["Installation Ihrer Website mit 1-Klick-Modulen"](/pages/web_cloud/web_hosting/cms_install_1_click_modules).
 

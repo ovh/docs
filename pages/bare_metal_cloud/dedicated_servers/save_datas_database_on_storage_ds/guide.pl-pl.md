@@ -1,6 +1,6 @@
 ---
-title: 'Tworzenie kopii danych i baz danych na serwerze Storage'
-excerpt: 'Zabezpiecz Twoje dane w 5 krokach'
+title: "Jak wykonać kopię zapasową bazy danych na serwerze dedykowanym"
+excerpt: "Wykonaj kopię zapasową bazy danych MySQL/MariaDB lub PostgreSQL z serwera dedykowanego OVHcloud na Backup Storage."
 updated: 2018-09-12
 ---
 
@@ -184,3 +184,10 @@ Składnia *crontab* jest specyficzna; nie opisujemy jej dokładnie w niniejszym 
 Właśnie skonfigurowałeś własny serwer kopii zapasowych i zautomatyzowałeś w sposób podstawowy wykonywanie kopii zapasowych plików. Jest to ważny krok, dzięki któremu unikniesz utraty danych i zapewnisz bezpieczeństwo prowadzonej przez Ciebie działalności.
 
 Jak wspomniano wyżej, istnieją również inne darmowe lub płatne sposoby optymalizacji wykonywania kopii zapasowych. Jeśli Twoje dane są wrażliwe, zalecamy ich zaszyfrowanie i przesyłanie wyłączenie w sieci prywatnej, takiej jak vRack OVHcloud.
+
+## Sprawdź również
+
+- [Serwer dedykowany - Korzystanie z Backup Storage](/pages/bare_metal_cloud/dedicated_servers/services_backup_storage)
+- [Customising Dedicated Server Partitions via OVHcloud API](/pages/bare_metal_cloud/dedicated_servers/partitioning_ovh)
+
+Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

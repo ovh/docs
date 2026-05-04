@@ -1,6 +1,6 @@
 ---
-title: Configuring the firewall on Linux with iptables
-excerpt: Find out how to secure a server with iptables
+title: "Configure iptables on a Linux Dedicated Server"
+excerpt: "Secure your dedicated server by configuring iptables firewall rules to filter network traffic on Linux."
 updated: 2024-12-20
 ---
 
@@ -138,7 +138,7 @@ The options work this way:
 > [!warning]
 > If you lose access to your server, you can always use the KVM/IPMI tool to access it again and modify your configuration or delete your rules.
 >
-> For more information on accessing this tool, please refer to [this guide](/pages/bare_metal_cloud/dedicated_servers/using_ipmi_on_dedicated_servers).
+> For more information on accessing this tool, please refer to [this guide](/pages/bare_metal_cloud/dedicated_servers/using_ipmi_on_dedicated_servers).  
 > 
 
 ### Step 6: Control traffic by IP address
@@ -236,5 +236,9 @@ You can now configure basic *iptables* firewall rules for your Linux server.
 Feel free to experiment because you can always delete the rules you don't need, or empty all the rules and start over.
 
 ## Go further
+
+[Edge Network Firewall for Dedicated Servers](/pages/bare_metal_cloud/dedicated_servers/firewall_network)
+
+[Network Security Dashboard for Dedicated Servers](/pages/bare_metal_cloud/dedicated_servers/network_security_dashboard)
 
 Join our [community of users](/links/community).

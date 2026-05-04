@@ -1,6 +1,6 @@
 ---
-title: Installare la chiave SSH OVHcloud
-excerpt: Come configurare una chiave SSH OVHcloud per consentire l'intervento dei nostri amministratori
+title: "Installare una chiave SSH OVHcloud su un server dedicato"
+excerpt: "Installa una chiave SSH OVHcloud sul tuo server dedicato per concedere un accesso amministrativo sicuro ai team di supporto OVHcloud"
 updated: 2018-02-12
 ---
 
@@ -117,4 +117,4 @@ cat /root/.ssh/authorized_keys2
 
 [Introduzione a SSH](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction)
 
-Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.
+Contatta la nostra [Community di utenti](/links/community).

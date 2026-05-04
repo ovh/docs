@@ -21,13 +21,22 @@ L’objectif de ce guide est de fournir des instructions détaillées pour conne
 > Des droits d’administration appropriés sur Zerto Manager sont requis, à la fois sur Managed vSphere et sur les sites on-premises.
 >
 
+<!-- CP-NAV-START:privatecloud-vmware-vsphere -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [VMware vSphere](/links/control-panel/privatecloud-vmware-vsphere)
+- **Pour accéder à vos services :** `Hosted Private Cloud`{.action} > `Managed VMware vSphere`{.action} > Sélectionnez votre service vSphere
+
+---
+<!-- CP-NAV-END:privatecloud-vmware-vsphere -->
+
 ## En pratique
 
 ### 1 - Accéder à Zerto Manager sur Managed vSphere
 
-- Connectez-vous à votre [espace client OVHcloud](/links/manager), puis accédez à la section `Hosted Private Cloud`{.action}.
-- Cliquez sur le menu `Managed VMware vSphere`{.action} et sélectionnez l’infrastructure concernée.
-- Accédez à l’onglet `Datacentres`{.action} et sélectionnez le datacentre.
+- Cliquez sur [ce lien](/links/control-panel/privatecloud-vmware-vsphere) pour accéder à la section `VMware vSphere`{.action}, puis accédez à l’onglet `Datacentres`{.action} et sélectionnez le datacentre.
 - Accédez à l’onglet `Zerto`{.action}.
 
 ![zerto manager tab](images/zerto_manager_tab.png){.thumbnail}

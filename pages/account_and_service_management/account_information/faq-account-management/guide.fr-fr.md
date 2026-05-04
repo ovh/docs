@@ -128,6 +128,7 @@ Retrouvez plus d'informations dans notre guide «[Modifier le mot de passe de vo
 > Si vous avez oublié votre identifiant client, vous pouvez le retrouver en haut à droite de votre dernière facture. Il ressemble à ceci : « aa00000-ovh » (les premières lettres sont généralement les initiales de la personne qui a créé le compte). Cet identifiant est aussi indiqué dans l’e-mail de confirmation de création du compte, ainsi que dans les e-mails de confirmation ou de renouvellement de commande.
 >
 
+
 ///
 
 /// details | Existe-t-il une limite au nombre de fois où je peux modifier le mot de passe de mon compte OVHcloud (via l'option « Identifiant ou mot de passe oublié ») ?
@@ -336,7 +337,7 @@ Remplacez `{logId}` par l'identifiant réel du log que vous souhaitez consulter.
 
 ### Déléguer l'accès à ses services
 
-/// details | Comment déléguer l'accès à mes servives à d'autres personnes ?
+/// details | Comment déléguer l’accès à mes servives à d’autres personnes ?
 
 Vous avez la possibilité de déléguer à d’autres comptes clients OVHcloud la gestion administrative, technique et facturation de vos services depuis votre espace client. Pour cela, rendez-vous sur la page [Gestion des contacts](/links/control-panel/account-contacts).
 

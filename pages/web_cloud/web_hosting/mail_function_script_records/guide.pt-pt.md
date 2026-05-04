@@ -41,6 +41,7 @@ Os e-mails automáticos são mensagens enviadas através de scripts. Geralmente 
 
 ### Apresentação da secção «Scripts e-mails»
 
+<!-- CP-STEPS-START:email-scripts-overview -->
 Para aceder à secção «Scripts e-mails», clique nos separadores abaixo para visualizar cada uma das **3** etapas.
 
 > [!tabs]
@@ -86,6 +87,7 @@ Para aceder à secção «Scripts e-mails», clique nos separadores abaixo para 
 >> - **Desbloquear o envio**: desbloqueia o envio dos e-mails automáticos do seu alojamento web. Os e-mails presentes na fila de espera serão também retomados para envio.
 >>
 >> Para realizar a ação pretendida, clique no botão correspondente e depois em `Validar`{.action}. Em certos casos, a ação pretendida pode levar vários minutos para ser plenamente efetiva.
+<!-- CP-STEPS-END:email-scripts-overview -->
 
 > [!primary]
 >
@@ -144,6 +146,7 @@ Este estado ocorre quando:
 - demasiados e-mails voltaram com erro;
 - desativou você mesmo a funcionalidade a partir da sua [Área de Cliente OVHcloud](/links/manager).
 
+<!-- CP-STEPS-START:resolve-disabled-status -->
 Para desbloquear a situação, clique nos separadores abaixo para visualizar cada uma das **3** etapas.
 
 > [!tabs]
@@ -158,11 +161,13 @@ Para desbloquear a situação, clique nos separadores abaixo para visualizar cad
 > **Etapa 3**
 >>
 >> Clique em `Desbloquear o envio`{.action} e aguarde alguns minutos para que o serviço de envio fique novamente ativo.
+<!-- CP-STEPS-END:resolve-disabled-status -->
 
 #### O estado «Bounce»
 
 Este estado ocorre quando uma certa percentagem dos seus e-mails enviados automaticamente voltou com erro.
 
+<!-- CP-STEPS-START:resolve-bounce-status -->
 Para desbloquear a situação, clique nos separadores abaixo para visualizar cada uma das **3** etapas.
 
 > [!tabs]
@@ -180,6 +185,7 @@ Para desbloquear a situação, clique nos separadores abaixo para visualizar cad
 >>
 >> - Se clicar em `Desbloquear o envio`{.action}, o estado do serviço passará para *«Force»*. O rácio **e-mails que voltaram com erro / número total de envios de e-mails enviados** autorizado antes de um bloqueio será duplicado. O envio voltará a estar operacional alguns minutos após o desbloqueio.
 >> - Se clicar em `Purgar os e-mails`{.action}, isso apagará todos os e-mails da fila de espera e o estado do serviço voltará para *«Ativado»* sem duplicar o rácio.
+<!-- CP-STEPS-END:resolve-bounce-status -->
 
 #### O estado «spam»
 
@@ -195,6 +201,7 @@ São possíveis três casos em relação a esta situação:
 
 Para corrigir esta situação, deve proteger todos os scripts capazes de emitir e-mails a partir do seu alojamento, com a ajuda de um sistema do tipo «Captcha».
 
+<!-- CP-STEPS-START:resolve-spam-case-1 -->
 Aceda de seguida à secção «Scripts e-mails» do seu alojamento. Para isso, clique nos separadores abaixo para visualizar cada uma das **3** etapas.
 
 > [!tabs]
@@ -209,6 +216,7 @@ Aceda de seguida à secção «Scripts e-mails» do seu alojamento. Para isso, c
 > **Etapa 3**
 >>
 >> Clique em `Purgar os e-mails`{.action}: isso apagará todos os e-mails da fila de espera e o estado do serviço voltará para *«Ativado»*. Neste caso, uma purga é obrigatória para apagar os spam em espera de envio.
+<!-- CP-STEPS-END:resolve-spam-case-1 -->
 
 - **Caso n°2: injeção de ficheiros maliciosos no seu alojamento**:
 
@@ -222,6 +230,7 @@ Para corrigir esta situação, deve efetuar pelo menos as seguintes ações:
 Se utilizar um CMS, privilegie a utilização de plugin(s)/tema(s) «oficial(is)».
 Atualize o CMS, os plugins e o tema associados o mais regularmente possível para evitar que isso se repita.
 
+<!-- CP-STEPS-START:resolve-spam-case-2 -->
 Uma vez protegido o seu alojamento, clique nos separadores abaixo para visualizar cada uma das **3** etapas.
 
 > [!tabs]
@@ -236,6 +245,7 @@ Uma vez protegido o seu alojamento, clique nos separadores abaixo para visualiza
 > **Etapa 3**
 >>
 >> Clique em `Purgar os e-mails`{.action}: isso apagará todos os e-mails da fila de espera e o estado do serviço voltará para *«Ativado»*.
+<!-- CP-STEPS-END:resolve-spam-case-2 -->
 
 Neste caso, uma purga é obrigatória para apagar os spam em espera de envio.
 

@@ -1,4 +1,4 @@
----
+﻿---
 title: Se connecter depuis PHP au service Public Cloud Databases pour MySQL (EN)
 excerpt: Connect to your Public Cloud Databases for MySQL using the PHP programming language
 updated: 2025-05-16

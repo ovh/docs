@@ -135,6 +135,7 @@ Suivez ces étapes pour ajouter un Health Monitor à un pool de votre Load Balan
 
 Ce processus crée un Health Monitor qui effectuera régulièrement des contrôles d'intégrité sur chaque membre du pool, utilisant les résultats pour déterminer si le membre doit recevoir de nouvelles connexions. Un seul Health Monitor peut être défini pour chaque pool.
 
+
 #### CLI (OpenStack)
 
 <strong>1.</strong> **Préparation** : assurez-vous que l'outil CLI OpenStack est installé et configuré sur votre machine.<br>

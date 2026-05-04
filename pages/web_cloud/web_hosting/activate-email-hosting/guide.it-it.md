@@ -40,12 +40,13 @@ Se il dominio è già associato all’opzione "indirizzo/i email incluso/i con i
 
 ### Attivazione degli indirizzi email inclusi con il piano di hosting Web
 
+<!-- CP-STEPS-START:activation-email -->
 Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **3** passi.
 
 > [!tabs]
 > **Passaggio 1**
 >>
->> Accedi alla pagina [Hosting plans](/links/control-panel/web-hosting), poi seleziona l'hosting Web interessato.
+>> Accedi alla pagina [Hosting plans](/links/control-panel/web-hosting), poi seleziona l’hosting Web interessato.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
@@ -67,17 +68,19 @@ Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **3** pa
 >> >
 >> > Attenzione: l’attivazione dell’opzione email potrebbe richiedere alcuni minuti. Riceverai un’email di conferma dell’installazione e dell’attivazione della soluzione MXPLAN. e include la gestione e la configurazione degli indirizzi email.
 >> >
+<!-- CP-STEPS-END:activation-email -->
 
 ### Conservazione degli indirizzi email dopo la scadenza dell’hosting Web
 
 In caso di scadenza imminente dell’hosting Web, è possibile richiedere la conservazione degli indirizzi email **prima** della data di scadenza.
 
+<!-- CP-STEPS-START:conservation-email -->
 Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **2** passi.
 
 > [!tabs]
 > **Passaggio 1**
 >>
->> Accedi alla pagina [Hosting plans](/links/control-panel/web-hosting), poi seleziona l'hosting Web interessato.
+>> Accedi alla pagina [Hosting plans](/links/control-panel/web-hosting), poi seleziona l’hosting Web interessato.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
@@ -87,8 +90,9 @@ Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **2** pa
 >> Clicca sul pulsante `...`{.action} a destra e poi su `Scollega la tua opzione email`{.action}.
 >>
 >> ![Attivazione email](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/detach-email-included-webhosting.png){.thumbnail}
+<!-- CP-STEPS-END:conservation-email -->
 
-Verrà proposto l’acquisto di un'offerta MX personalizzata. Una volta saldato l’ordine, gli account di posta continueranno a funzionare anche dopo la disattivazione dell’hosting Web.
+Verrà proposto l’acquisto di un’offerta MX personalizzata. Una volta saldato l’ordine, gli account di posta continueranno a funzionare anche dopo la disattivazione dell’hosting Web.
  
 ### Elimina il servizio email associato all’hosting Web
 
@@ -98,12 +102,13 @@ Il servizio di posta associato all’hosting Web può anche essere eliminato def
 >
 > Questa operazione è irreversibile: non è possibile riattivare il servizio di posta in seguito alla sua disattivazione.
 
+<!-- CP-STEPS-START:elimina-email -->
 Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **2** passi.
 
 > [!tabs]
 > **Passaggio 1**
 >>
->> Accedi alla pagina [Hosting plans](/links/control-panel/web-hosting), poi seleziona l'hosting Web interessato.
+>> Accedi alla pagina [Hosting plans](/links/control-panel/web-hosting), poi seleziona l’hosting Web interessato.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
@@ -116,7 +121,8 @@ Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **2** pa
 >>
 >> > [!warning]
 >> >
->> > Per confermare l’eliminazione del servizio di posta associato all’hosting Web, riceverai un link di conferma via email. Per avviare l'operazione di eliminazione, è necessario fare clic sul collegamento.
+>> > Per confermare l’eliminazione del servizio di posta associato all’hosting Web, riceverai un link di conferma via email. Per avviare l’operazione di eliminazione, è necessario fare clic sul collegamento.
+<!-- CP-STEPS-END:elimina-email -->
 
 #### Caso particolare - Elimina il servizio di posta associato all’hosting Web (per associarlo a un altro dominio)
 

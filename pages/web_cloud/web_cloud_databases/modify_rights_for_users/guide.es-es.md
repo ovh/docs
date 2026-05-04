@@ -28,6 +28,8 @@ Durante el uso del producto, es posible que necesite modificar los permisos de u
 
 ## Procedimiento
 
+<!-- CP-STEPS-START:modificar-permisos-usuario -->
+
 > [!primary]
 > Para crear un nuevo usuario en su solución Web Cloud Databases, consulte la sección **Crear un usuario** de nuestra guía "[Crear bases de datos y usuarios en un servidor de bases de datos](/pages/web_cloud/web_cloud_databases/create-db-and-user-on-db-server)".
 
@@ -59,6 +61,8 @@ Haga clic en las fichas siguientes para ver cada una de las **4** etapas.
 >> ![Changing user rights](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/users-and-rights/changing-user-rights-db-alone.png){.thumbnail}
 >>
 >> Aquí es donde podrá modificar los permisos de su usuario para cada una de sus bases de datos. Para ello, en cada base de datos correspondiente, haga clic en los círculos vacíos que se correspondan con los permisos que quiera redefinir para su usuario. La modificación se hará efectiva en unos instantes.
+
+<!-- CP-STEPS-END:modificar-permisos-usuario -->
 
 A continuación se muestra una tabla que resume los tipos de consultas posibles en una base de datos en función del permiso asignado al usuario:
 

@@ -52,9 +52,11 @@ Le processus et le délai varient selon le type de numéro(s) à porter. Afin qu
 
 ### 2 - Demander la portabilité
 
+<!-- CP-STEPS-START:demander-portabilite-intro -->
 Dans l'onglet `Tableau de bord`{.action}, cliquez sur `Demander une portabilité`{.action}.
 
 ![numberport](images/porta-request.png){.thumbnail}
+<!-- CP-STEPS-END:demander-portabilite-intro -->
 
 Dans la page qui apparaît, deux types de demandes sont proposés. Poursuivez la lecture de cette documentation selon celui choisi.
 
@@ -73,6 +75,7 @@ Dans la page qui apparaît, deux types de demandes sont proposés. Poursuivez la
 
 Cliquez sur les onglets ci-dessous pour afficher les 5 étapes.
 
+<!-- CP-STEPS-START:porter-numero-individuel -->
 > [!tabs]
 > Étape 1
 >>
@@ -113,11 +116,13 @@ Cliquez sur les onglets ci-dessous pour afficher les 5 étapes.
 >> ![numberport](images/porting-number-step5-2026.png){.thumbnail}
 >>
 >> Dès lors, pour suivre l'avancement de votre demande, reportez-vous aux informations de la partie 3 « [Suivre une demande de portabilité](#suivre-demande) » de cette documentation.
+<!-- CP-STEPS-END:porter-numero-individuel -->
 
 #### Porter une plage de numéros <a name="plage-numeros"></a>
 
 Cliquez sur les onglets ci-dessous pour afficher les 6 étapes.
 
+<!-- CP-STEPS-START:porter-plage-numeros -->
 > [!tabs]
 > Étape 1
 >>
@@ -183,6 +188,7 @@ Cliquez sur les onglets ci-dessous pour afficher les 6 étapes.
 >> ![numberport](images/porting-number-step7-2.png){.thumbnail}
 >>
 >> Pour suivre l'avancement de votre demande de portabilité, reportez-vous aux informations décrites dans la partie 3 « [Suivre une demande de portabilité](#suivre-demande) » de cette documentation.
+<!-- CP-STEPS-END:porter-plage-numeros -->
 
 #### Porter un numéro spécial de Services à Valeur Ajoutée (SVA) <a name="numero-special"></a>
 
@@ -191,6 +197,7 @@ Les numéros spéciaux ne pouvant faire l'objet d'une demande de portabilité en
 L'exploitation de numéros de Services à Valeur Ajoutée (SVA) nécessite d'être en conformité avec le cadre réglementaire défini par l'ARCEP.<br>
 Lors de la portabilité d'un numéro SVA, vous devez fournir à OVHcloud des justificatifs de l'identité de votre entreprise.
 
+<!-- CP-STEPS-START:porter-numero-sva -->
 Une fois le numéro spécial à porter renseigné (au format international) dans le champ prévu à cet effet, cliquez sur le bouton `Vérifier l'identité`{.action}. Vous serez alors redirigé vers la procédure de vérification d'identité.
 
 > [!primary]
@@ -198,9 +205,11 @@ Une fois le numéro spécial à porter renseigné (au format international) dans
 >
 
 ![numberport](images/porting-number-sva-2026.png){.thumbnail}
+<!-- CP-STEPS-END:porter-numero-sva -->
 
 ### 3 - Suivre une demande de portabilité <a name="suivre-demande"></a>
 
+<!-- CP-STEPS-START:suivre-demande-portabilite -->
 Dans l'onglet `Tableau de bord`{.action}, cliquez sur `Consulter mes portabilités en cours`{.action}.
 
 ![numberport](images/porting-number-step8-2021.png){.thumbnail}
@@ -210,6 +219,7 @@ Dans la page qui apparaît, vous trouverez l'état de vos demandes de portabilit
 ![numberport](images/porting-number-step9-2021.png){.thumbnail}
 
 Si, durant le processus, vous souhaitez annuler votre demande de portabilité, vous pouvez le faire, au plus tard jusqu'à 72 heures avant la date de portabilité, grâce au bouton `Annuler la portabilité ?`{.action}.
+<!-- CP-STEPS-END:suivre-demande-portabilite -->
 
 Nous vous recommandons également de consulter régulièrement votre adresse e-mail. Des notifications peuvent en effet vous y être envoyées si une action de votre part est requise.
 

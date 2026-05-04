@@ -20,7 +20,7 @@ details[open]>summary::before {
 
 ## Objective
 
-Want your website to be accessible via your domain name? To do this, your domain name must point to the IP address of the service your website is located on (web hosting plan, dedicated server, VPS, etc.). You will then need to configure your domain name's active DNS zone using a type A DNS record.
+Want your website to be accessible via your domain name? To do this, your domain name must point to the IP address of the service your website is located on (web hosting plan, dedicated server, VPS, etc.). You will then need to configure your domain name’s active DNS zone using a type A DNS record.
 
 **Find out how to add a DNS A record to an OVHcloud DNS zone for your domain name.**
 
@@ -52,6 +52,7 @@ Want your website to be accessible via your domain name? To do this, your domain
 
 ### Add a DNS A record for a domain name
 
+<!-- CP-STEPS-START:add-a-record-domain -->
 Click on the tabs below to view each of the **5** steps.
 
 > [!tabs]
@@ -76,6 +77,7 @@ Click on the tabs below to view each of the **5** steps.
 > **Step 5**
 >>
 >> Check the summary, then click `Confirm`{.action}. It takes up to **24** hours for the change to propagate fully over the DNS network.
+<!-- CP-STEPS-END:add-a-record-domain -->
 
 /// details | Click here for more information.
 
@@ -91,6 +93,7 @@ See our detailed guides:
 
 ### Add a DNS A record for a domain name subdomain
 
+<!-- CP-STEPS-START:add-a-record-subdomain -->
 Click on the tabs below to view each of the **5** steps.
 
 > [!tabs]
@@ -115,6 +118,7 @@ Click on the tabs below to view each of the **5** steps.
 > **Step 5**
 >>
 >> Check the summary, then click `Confirm`{.action}. It takes up to **24** hours for the change to propagate fully over the DNS network.
+<!-- CP-STEPS-END:add-a-record-subdomain -->
 
 /// details | Click here for more information.
 
@@ -136,7 +140,7 @@ See our detailed guides:
 [Everything you need to know about DNS records](/pages/web_cloud/domains/dns_zone_records)
 
 For specialised services (SEO, development, etc.), contact [OVHcloud partners](/links/partner).
-
+ 
 If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](/links/support).
-
+ 
 Join our [community of users](/links/community).

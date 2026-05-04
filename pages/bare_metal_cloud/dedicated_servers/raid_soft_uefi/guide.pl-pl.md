@@ -1,6 +1,6 @@
 ---
-title: Zarządzanie i odbudowa oprogramowania RAID na serwerach w trybie UEFI
-excerpt: Dowiedz się, jak zarządzać i odbudować oprogramowanie RAID po wymianie dysku na serwerze w trybie uruchamiania UEFI
+title: "Zarządzanie programowym RAID (tryb rozruchu UEFI) na serwerach dedykowanych"
+excerpt: "Zarządzaj i odbuduj programowy RAID po wymianie dysku na serwerze dedykowanym w trybie rozruchu UEFI."
 updated: 2026-01-26
 ---
 

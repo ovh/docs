@@ -126,6 +126,7 @@ Trova maggiori informazioni nella nostra guida "[Impostare e gestire la password
 > Se hai dimenticato il tuo identificativo cliente, puoi trovarlo in alto a destra sulla tua ultima fattura. Assomiglia a questo: "aa00000-ovh" (le prime lettere sono in genere le iniziali della persona che ha creato l'account). Questo identificativo è anche indicato nell'e-mail di conferma della creazione dell'account, così come negli e-mail di conferma o di rinnovo dell'ordine.
 >
 
+
 ///
 
 /// details | Esiste un limite al numero di volte in cui posso modificare la password del mio account OVHcloud (tramite l'opzione "Non ricordi identificativo o password?")?

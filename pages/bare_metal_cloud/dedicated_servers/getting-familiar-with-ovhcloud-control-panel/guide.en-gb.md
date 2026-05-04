@@ -1,6 +1,6 @@
 ---
-title: Kimsufi and So you Start customers - Get to know the OVHcloud Control Panel
-excerpt: Find out how to navigate the OVHcloud Control Panel
+title: "OVHcloud Control Panel for Kimsufi & So you Start Dedicated Servers"
+excerpt: "Navigate the OVHcloud Control Panel as a Kimsufi or So you Start customer to manage your dedicated server services."
 updated: 2025-04-28
 ---
 
@@ -34,9 +34,9 @@ In the OVHcloud Control Panel, click on the `Bare Metal Cloud`{.action} menu, th
 
 Once you are in the `Dedicated Servers`{.action} menu, click on the server of your choice to access its interface.
 
-![server interface](images/serverinterface01.png){.thumbnail}
+![Server general information tab](images/serverinterface01.png){.thumbnail}
 
-![server interface](images/serverinterface02.png){.thumbnail}
+![Server status and network details](images/serverinterface02.png){.thumbnail}
 
 **General information** : In this section, you will find all the information concerning your server.
 

@@ -69,6 +69,7 @@ Rellene los campos en la ventana emergente que aparece.
 | Descripción | Descripción de la plantilla                                                                                            |
 | Plantilla      | Escribir la plantilla. Es posible incluir variables delimitadas con el carácter #.                                                                  |
 
+
 #### 2.2. A través de la API
 
 > [!success]

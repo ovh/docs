@@ -93,6 +93,7 @@ Questa opzione permette, dopo aver inserito il dominio reindirizzato, di mostrar
 
 > Questo reindirizzamento "standard" restituisce un codice HTTP 301.
 
+<!-- CP-STEPS-START:configure-redirect-permanent -->
 Clicca sulle schede qui sotto per visualizzare i **7** step in sequenza.
 
 > [!tabs]
@@ -157,6 +158,7 @@ Clicca sulle schede qui sotto per visualizzare i **7** step in sequenza.
 >> > Attenzione, la configurazione precedente verrà disattivata e rimossa.
 >> >
 >>
+<!-- CP-STEPS-END:configure-redirect-permanent -->
 
 ///
 
@@ -174,6 +176,7 @@ Il posizionamento sui motori di ricerca è meno performante rispetto a un reindi
 
 > Questo reindirizzamento restituisce un codice HTTP 302.
 
+<!-- CP-STEPS-START:configure-redirect-temporary -->
 Clicca sulle schede qui sotto per visualizzare i **7** step in sequenza.
 
 > [!tabs]
@@ -236,6 +239,7 @@ Clicca sulle schede qui sotto per visualizzare i **7** step in sequenza.
 >> > Se appare il messaggio "*Esistono reindirizzamenti a partire dai nomi di dominio che desideri reindirizzare che entrano in conflitto con i reindirizzamenti che desideri aggiungere*", puoi selezionare la casella `Conferma la sovrascrittura del reindirizzamento esistente`{.action} per forzare l'applicazione del reindirizzamento.
 >> >
 >> > Attenzione, la configurazione precedente verrà disattivata e rimossa.
+<!-- CP-STEPS-END:configure-redirect-temporary -->
 
 ///
 
@@ -259,6 +263,7 @@ Questa incapsulazione impedisce ai visitatori del sito di visualizzare il domini
 >
 > Attenzione, le pagine incapsulate con un tag *iFrame* potrebbero non essere visualizzate sugli smartphone. Il loro contenuto generalmente non è preso in considerazione dai motori di ricerca per il posizionamento SEO e l'indicizzazione del sito.
 
+<!-- CP-STEPS-START:configure-redirect-invisible -->
 Clicca sulle schede qui sotto per visualizzare i **7** step in sequenza.
 
 > [!tabs]
@@ -327,6 +332,7 @@ Clicca sulle schede qui sotto per visualizzare i **7** step in sequenza.
 >> > Se appare il messaggio "*Esistono reindirizzamenti a partire dai nomi di dominio che desideri reindirizzare che entrano in conflitto con i reindirizzamenti che desideri aggiungere*", puoi selezionare la casella `Conferma la sovrascrittura del reindirizzamento esistente`{.action} per forzare l'applicazione del reindirizzamento.
 >> >
 >> > Attenzione, la configurazione precedente verrà disattivata e rimossa.
+<!-- CP-STEPS-END:configure-redirect-invisible -->
 
 ### Reindirizzare un dominio tramite un file ".htaccess" <a name="htaccess_rewrite"></a>
 

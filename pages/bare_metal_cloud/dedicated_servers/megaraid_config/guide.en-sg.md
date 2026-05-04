@@ -1,6 +1,6 @@
 ---
-title: Configuring MegaRAID for RAID Level 0
-excerpt: "Find out how to configure RAID 0 in order to use your server's entire disk space"
+title: "Configure MegaRAID for RAID 0 on a Dedicated Server"
+excerpt: "Configure RAID 0 with the MegaRAID controller to use the full disk capacity on your OVHcloud dedicated server."
 updated: 2025-04-29
 ---
 
@@ -44,19 +44,19 @@ Select the operating system you want to install and then click `Next`{.action}.
 
 Tick the boxes for **Customise the hardware RAID configuration** and **Customise the partition configuration**, then click `Next`{.action}.
 
-![megaraid](images/server_installation_raid0_2.png){.thumbnail}
+![Customise hardware RAID and partition checkboxes](images/server_installation_raid0_2.png){.thumbnail}
 
 Select `raid0` from the RAID drop-down list and click `Next`{.action}.
 
-![megaraid](images/server_installation_raid0_3.png){.thumbnail}
+![Select RAID 0 from the RAID level drop-down list](images/server_installation_raid0_3.png){.thumbnail}
 
 Configure the partitions as you see fit and then click `Next`{.action}.
 
-![megaraid](images/server_installation_raid0_4.png){.thumbnail}
+![Configure disk partitions for the installation](images/server_installation_raid0_4.png){.thumbnail}
 
 Finally, click `Confirm`{.action}.
 
-![megaraid](images/server_installation_raid0_5.png){.thumbnail}
+![Confirm the RAID 0 installation settings](images/server_installation_raid0_5.png){.thumbnail}
 
 After your server has been installed, check the partition sizes by logging on to the server via SSH and running the following command:
 
@@ -68,21 +68,21 @@ df -h
 
 In the **General Information** tab, look for `Boot` and click on `...`{.action}. Then click the `Edit`{.action} button to change the boot system.
 
-![megaraid](images/rescue_mode_raid0_1.png){.thumbnail}
+![Edit boot setting in the General Information tab](images/rescue_mode_raid0_1.png){.thumbnail}
 
 Next, select `Boot in rescue mode`{.action} then select `rescue-customer`{.action} from the drop-down list.
 
 In the field "Send new login details to the following email address:", specify an alternative email address if you do not want the login credentials sent to your customer account’s primary address.
 
-![megaraid](images/rescue_mode_raid0_2.png){.thumbnail}
+![Select Boot in rescue mode with rescue-customer option](images/rescue_mode_raid0_2.png){.thumbnail}
 
 Click `Next`{.action} and then Confirm`{.action} in the **Summary**.
 
-![megaraid](images/rescue_mode_raid0_3.png){.thumbnail}
+![Rescue mode summary confirmation step](images/rescue_mode_raid0_3.png){.thumbnail}
 
 Once the change is completed, click on `...`{.action} next to “Status” in the box labelled **Service status**. Select `Restart`{.action} and the server will restart into rescue mode.
 
-![megaraid](images/server_installation_raid0_6.png){.thumbnail}
+![Restart the server from the Service status section](images/server_installation_raid0_6.png){.thumbnail}
 
 When your server reboots, log in to it via SSH using the rescue mode credentials that were emailed to you.
 

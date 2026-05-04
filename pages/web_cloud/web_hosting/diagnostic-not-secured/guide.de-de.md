@@ -67,6 +67,7 @@ Die [oben](#objective) genannten Fehlermeldungen bedeuten nicht unbedingt, dass 
 
 Um die IP-Adresse Ihres [OVHcloud Webhostings](/links/web/hosting) herauszufinden, klicken Sie auf die Tabs, um die **2** Schritte anzuzeigen.
 
+<!-- CP-STEPS-START:check-hosting-ip -->
 > [!tabs]
 > **Schritt 1**
 >>
@@ -81,6 +82,7 @@ Um die IP-Adresse Ihres [OVHcloud Webhostings](/links/web/hosting) herauszufinde
 >> ![IPv4- und IPv6-Adressen](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-ipv4-and-ipv6.png){.thumbnail}
 >>
 >> Notieren Sie die IPv4- und/oder IPv6-Adresse und folgen Sie der Anleitung weiter.
+<!-- CP-STEPS-END:check-hosting-ip -->
 
 #### IP-Adresse in der DNS-Zone überprüfen
 
@@ -88,6 +90,7 @@ Um die IP-Adresse Ihres [OVHcloud Webhostings](/links/web/hosting) herauszufinde
 
 Klicken Sie auf die Tabs, um die **2** Schritte anzuzeigen.
 
+<!-- CP-STEPS-START:check-dns-zone-ip -->
 > [!tabs]
 > **Schritt 1**
 >>
@@ -100,6 +103,7 @@ Klicken Sie auf die Tabs, um die **2** Schritte anzuzeigen.
 >> Notieren Sie das "Ziel" des Eintrags vom Typ `A` Ihres Domainnamens:
 >>
 >> ![A-Eintrag Ziel in der DNS-Zone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/dashboard-entry-a.png){.thumbnail}
+<!-- CP-STEPS-END:check-dns-zone-ip -->
 
 #### Die notwendigen Aktionen durchführen
 
@@ -165,6 +169,7 @@ Falls nötig kontaktieren Sie Ihren Webmaster oder einen [OVHcloud Partner](/lin
 
 Klicken Sie auf die Tabs, um die **2** Schritte anzuzeigen.
 
+<!-- CP-STEPS-START:check-ssl-certificate -->
 > [!tabs]
 > **Schritt 1**
 >>
@@ -177,6 +182,7 @@ Klicken Sie auf die Tabs, um die **2** Schritte anzuzeigen.
 >> Überprüfen Sie im Tab `Allgemeine Informationen`{.action} den Abschnitt `SSL-Zertifikat`:
 >>
 >> ![SSL-Zertifikat im Tab Allgemeine Informationen](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/no-ssl-certificate.png){.thumbnail}
+<!-- CP-STEPS-END:check-ssl-certificate -->
 
 #### Szenario 1: Ihr Hosting enthält kein SSL-Zertifikat
 

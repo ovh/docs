@@ -1,4 +1,4 @@
----
+﻿---
 title: Premiers pas avec les bases de données Public Cloud (EN)
 excerpt: Find out how to set up your managed database service in the OVHcloud Control Panel
 updated: 2024-10-04

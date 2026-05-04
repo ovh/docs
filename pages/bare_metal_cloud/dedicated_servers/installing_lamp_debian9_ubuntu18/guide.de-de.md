@@ -1,6 +1,6 @@
 ---
-title: Webserver (LAMP) auf Debian oder Ubuntu installieren
-excerpt: Erfahren Sie hier, wie Sie einen LAMP-basierten Webserver einrichten
+title: "Webserver (LAMP) auf Debian oder Ubuntu installieren"
+excerpt: "Richten Sie einen LAMP-Webserver (Linux, Apache, MySQL, PHP) auf einem Debian- oder Ubuntu-Dedicated-Server Schritt für Schritt ein."
 updated: 2023-05-10
 ---
 
@@ -289,5 +289,7 @@ Certbot verlängert die Zertifikate automatisch; es sind keine weitereren Schrit
 [Certbot Dokumentation](https://eff-certbot.readthedocs.io/en/stable/)
 
 [NGINX Dokumentation](https://nginx.org/en/docs/) (Apache Alternative)
+
+- [Dedicated Server absichern](/pages/bare_metal_cloud/dedicated_servers/securing-a-dedicated-server)
 
 Für den Austausch mit unserer Community gehen Sie auf <https://community.ovh.com/en/>.

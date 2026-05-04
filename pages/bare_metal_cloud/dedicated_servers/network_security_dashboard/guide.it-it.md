@@ -1,6 +1,6 @@
 ---
-title: "Monitoraggio degli attacchi DDoS con il Network Security Dashboard"
-excerpt: "Scopri come navigare attraverso il dashboard di sicurezza di rete"
+title: "Network Security Dashboard per server dedicati"
+excerpt: "Monitora l'attività DDoS e i flussi di traffico sul tuo server dedicato con il Network Security Dashboard OVHcloud"
 updated: 2025-10-31
 ---
 
@@ -37,7 +37,7 @@ Ogni volta che viene rilevato un attacco verso un qualsiasi IP del tuo servizio,
 
 Durante un attacco, un'azione di mitigazione attiva viene indicata da un'icona di avviso nella pagina dell'elenco degli IP (nella sezione `Gestisci gli indirizzi IP`{.action} del tuo Spazio Cliente OVHcloud).
 
-![red-line-attack](images/forced_blur.png){.thumbnail}
+![Icona di avviso mitigazione attivata nella pagina di elenco degli IP](images/forced_blur.png){.thumbnail}
 
 > [!primary]
 >
@@ -51,7 +51,7 @@ Durante un attacco, un'azione di mitigazione attiva viene indicata da un'icona d
 
 ### Notifiche di sicurezza di rete
 
-![red-line-attack](images/nsd_04_blur.PNG){.thumbnail}
+![Notifiche di sicurezza di rete con colonne di stato Anti-DDoS](images/nsd_04_blur.PNG){.thumbnail}
 
 Accedi allo [Spazio Cliente OVHcloud](/links/manager), clicca su `Network`{.action} nel menu a sinistra dello schermo e poi su `Indirizzi IP Pubblici`{.action}. Verifica che la `Modalità avanzata` sia abilitata per visualizzare lo stato dell'infrastruttura anti-DDoS e la configurazione dei suoi componenti.
 
@@ -77,7 +77,7 @@ Le colonne corrispondono allo stato di protezione anti-DDoS (**Mitigation**), al
 
 Nella scheda **scrubbing center log** è possibile recuperare tutte le informazioni sugli attacchi rilevati in passato (o in corso).
 
-![red-line-attack](images/nsd_main_blur.png){.thumbnail}
+![Registro del centro di pulizia con attacchi rilevati e timestamp](images/nsd_main_blur.png){.thumbnail}
 
 Nella tabella sono presenti le seguenti colonne: 
 
@@ -95,7 +95,7 @@ Nella tabella sono presenti le seguenti colonne:
 
 Nella scheda **Traffic chart**, è possibile visualizzare un grafico che mostra il traffico verso il proprio indirizzo IP (bps o pps).
 
-![red-line-attack](images/nsd_graph_tab_blur.png){.thumbnail}
+![Grafico del traffico con traffico malevolo bloccato e traffico pulito](images/nsd_graph_tab_blur.png){.thumbnail}
 
 Presenta il traffico malevolo che è caduto (**in rosso**) e il traffico pulito recapitato al tuo indirizzo IP (**in verde**). Vengono inoltre visualizzate le statistiche di base relative alla mitigazione, ad esempio il numero di attacchi rilevati per un IP selezionato, la quantità di traffico (o pacchetti) pulito durante gli attacchi o il numero di volte che i centri di pulitura hanno eseguito un'azione per ispezionare il traffico (il numero di eventi) in un determinato periodo di tempo.
 

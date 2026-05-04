@@ -1,6 +1,6 @@
 ---
-title: 'Utilizar Backup Storage en un servidor dedicado'
-excerpt: 'Cómo activar y acceder al espacio de almacenamiento adicional'
+title: "Utilizar Backup Storage en un servidor dedicado"
+excerpt: "Active y acceda al espacio de backup incluido con su servidor dedicado OVHcloud para sus copias de seguridad de archivos"
 updated: 2026-03-25
 ---
 

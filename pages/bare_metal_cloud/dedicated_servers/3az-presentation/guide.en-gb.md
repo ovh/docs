@@ -1,6 +1,6 @@
 ---
-title: 'Bare Metal 3-AZ Region - Service presentation'
-excerpt: 'Discover Bare Metal 3-AZ service, offering unparalleled high availability and redundancy across three data centers'
+title: "Bare Metal 3-AZ Region - Service presentation"
+excerpt: "Discover Bare Metal 3-AZ service, offering unparalleled high availability and redundancy across three data centers"
 updated: 2025-06-04
 ---
 
@@ -52,20 +52,22 @@ For optimal performance, a region should be selected closest to its users. For g
 
 Switch to the tab `3-AZ clusters`{.action}.
 
-![list_clusters](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/dedicated-servers/general-information/clusters1.png){.thumbnail}
+![3-AZ clusters tab listing available clusters](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/dedicated-servers/general-information/clusters1.png){.thumbnail}
 
 Click the cluster name in the table to see the details.
 
-![list_clusters](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/dedicated-servers/general-information/clusters2.png){.thumbnail}
+![Cluster details page with availability zone information](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/dedicated-servers/general-information/clusters2.png){.thumbnail}
 
 Click the tab `Nodes`{.action} to open the server list of the cluster.
 
-![list_clusters](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/dedicated-servers/general-information/clusters3.png){.thumbnail}
+![Nodes tab showing the list of servers in the cluster](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/dedicated-servers/general-information/clusters3.png){.thumbnail}
 
 Clicking on a server/node name in this list opens the `General information`{.action} tab of the server. You can find the details on this Control Panel section in our guide:
 
 [How to get started with a dedicated server](/pages/bare_metal_cloud/dedicated_servers/getting-started-with-dedicated-server)
 
 ## Go further
+
+[Configuring the vRack on your Dedicated Servers](/pages/bare_metal_cloud/dedicated_servers/vrack_configuring_on_dedicated_server)
 
 Join our [community of users](/links/community).

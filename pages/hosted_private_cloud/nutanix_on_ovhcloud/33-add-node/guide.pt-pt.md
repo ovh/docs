@@ -16,9 +16,19 @@ Nutanix clusters on OVHcloud are scalable. You can now **add (scale out)** or **
 ## Requirements
 
 - A Nutanix cluster hosted in your OVHcloud account
-- Access to the [OVHcloud Control Panel](/links/manager)
 - Access to the Prism Central administration interface
-- Access to the [OVHcloud API](/links/api).
+- Access to the [OVHcloud API](/links/api) (optional).
+
+<!-- CP-NAV-START:privatecloud-nutanix -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Nutanix](/links/control-panel/privatecloud-nutanix)
+- **Navigation path:** `Hosted Private Cloud`{.action} > `Nutanix`{.action} > Select your cluster
+
+---
+<!-- CP-NAV-END:privatecloud-nutanix -->
 
 ## Technical Information
 
@@ -31,19 +41,15 @@ Nutanix clusters on OVHcloud are scalable. You can now **add (scale out)** or **
 
 #### Add a node
 
-1. From the [OVHcloud Control Panel](/links/manager), navigate to your Nutanix cluster via the `Hosted Private Cloud`{.action} and `Nutanix`{.action} menus.
-
-    ![Nutanix cluster overview](images/control-panel.png){.thumbnail}
-
-2. In the **General information** tab, you can see the **Number of nodes**. Click `Manage my nodes`{.action}.
+1. In the **General information** tab, you can see the **Number of nodes**. Click `Manage my nodes`{.action}.
 
     ![Number of nodes](images/manage-nodes.png){.thumbnail}
 
-3. In the **Nodes** tab, select `Add nodes`{.action}.
+2. In the **Nodes** tab, select `Add nodes`{.action}.
 
     ![Add nodes tab](images/adding-nodes-03.png){.thumbnail}
 
-4. Review the configuration and pricing in the pop-up window, then click `Order`{.action} to add the node(s).
+3. Review the configuration and pricing in the pop-up window, then click `Order`{.action} to add the node(s).
 
     ![Order popup](images/adding-nodes-04.png){.thumbnail}
 
@@ -90,15 +96,11 @@ Please refer to the documentation below:
 
 #### Power down a node
 
-1. From the [OVHcloud Control Panel](/links/manager), navigate to your Nutanix cluster via the `Hosted Private Cloud`{.action} and `Nutanix`{.action} menus.
-
-    ![Nutanix cluster overview](images/control-panel.png){.thumbnail}
-
-2. In the **General information** tab, you can see the Number of nodes. Click `Manage my nodes`{.action}.
+1. In the **General information** tab, you can see the Number of nodes. Click `Manage my nodes`{.action}.
 
     ![Manage my nodes](images/manage-nodes.png){.thumbnail}
 
-3. Here, you have 2 options:
+2. Here, you have 2 options:
 
 > [!tabs]
 > OVHcloud Control Panel

@@ -115,6 +115,7 @@ Find out how to add your Exchange platform to Veeam Backup before you can create
 
 Follow the configuration steps by clicking on the 10 tabs below:
 
+<!-- CP-STEPS-START:configure-veeam-connect -->
 > [!tabs]
 > **Step 1**
 >>
@@ -202,6 +203,7 @@ Follow the configuration steps by clicking on the 10 tabs below:
 >> - Click `Finish`{.action} to finish connecting to the Exchange platform.
 >>
 >> ![veeam backup exchange](images/exchange_veeam_backup17.png){.thumbnail .h-600}
+<!-- CP-STEPS-END:configure-veeam-connect -->
 
 #### Create email account backup operations
 
