@@ -1,6 +1,6 @@
 ---
 title: 'Utiliser son adresse e-mail depuis le webmail Roundcube'
-updated: 2025-11-12
+updated: 2026-05-04
 ---
 
 ## Objectif
@@ -25,7 +25,7 @@ Avec l'offre MX Plan OVHcloud, vous pouvez envoyer et recevoir des e-mails depui
 > 1. Rendez-vous dans la partie `Web Cloud`{.action}.
 > 1. Cliquez sur `MX Plan`{.action}.
 > 1. Sélectionnez le domaine concerné.
-> 1. Depuis l'onglet `Informations Générales`{.action} (sélectionné par défaut), relevez la technologie utilisée sous la mention **Webmail**.
+> 1. Depuis l'onglet `Informations générales`{.action} (sélectionné par défaut), relevez la technologie utilisée sous la mention **Webmail**.
 >
 > ![MX plan](images/technology-email.png){.thumbnail .w-500}
 
@@ -265,7 +265,7 @@ Si votre navigateur vous le permet, vous pouvez installer et activer l'extension
 
 Vous êtes ainsi seul à pouvoir lire vos e-mails. Cette extension est un moyen de sécuriser votre webmail si vous recevez des e-mails de nature confidentielle.
 
-Pour plus d'informations, consultez la FAQ de « Mailvelope » à l'adresse <https://mailvelope.com/faq>.
+Pour plus d'informations, consultez la FAQ de « Mailvelope » à l'adresse <https://mailvelope.com/fr/faq>.
 
 ### Gérer les identités et leur signature <a name="identity-signature"></a>
 
