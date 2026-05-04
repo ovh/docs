@@ -1,7 +1,7 @@
 ---
 title: 'Crear y configurar un disco adicional en una instancia'
-excerpt: 'Cómo asociar un nuevo volumen a una instancia de Public Cloud'
-updated: 2025-09-19
+excerpt: 'Cómo crear un volumen Block Storage adicional, asociarlo a su instancia de Public Cloud y configurarlo en Linux o Windows'
+updated: 2026-05-04
 ---
 
 <style>
@@ -26,7 +26,7 @@ Esto puede ser útil en los siguientes casos:
 - Si quiere aumentar su capacidad de almacenamiento sin tener que cambiar el modelo de instancia.
 - Si quiere disponer de un espacio de almacenamiento de alta disponibilidad y buen rendimiento.
 - Si desea transferir su almacenamiento y sus datos a otra instancia.
-- Si desea preparar el entorno para utilizar [Terraform](/pages/public_cloud/public_cloud_cross_functional/how_to_use_terraform), debe preparar el entorno.
+- Si desea utilizar [Terraform](/pages/public_cloud/public_cloud_cross_functional/how_to_use_terraform), prepare el entorno.
 
 **Esta guía explica cómo crear un disco adicional y configurarlo en una instancia.**
 
@@ -98,44 +98,44 @@ La generación 2 de los volúmenes High-Speed está optimizada para las cargas d
 
 > [!tabs]
 > **Desde el área de cliente de OVHcloud**
->> Abra `Block Storage`{.action} en el menú de la izquierda, en **Storage & Backup**.
+>> Abra `Block Storage`{.action} en el menú de la izquierda, en **Backup Storage**.
 >>
 >> En esta sección, haga clic en el botón `Crear un volumen`{.action}.
 >>
 >> ![seleccionar proyecto](images/avolume01.png){.thumbnail}
 >>
->> Siga los pasos de configuración para seleccionar las opciones de ubicación, tipo de disco, cifrado y capacidad de disco. Introduzca un nombre para el volumen y acepte haciendo clic en `Crear el volumen`{.action}.
+>> Seleccione la ubicación, el tipo, el cifrado y la capacidad. Introduzca un nombre y haga clic en `Crear el volumen`{.action}.
 >>
 >> > [!warning]
->>
+>> >
 >> > Nota: El volumen debe crearse en la misma región que la instancia a la que desea asociarlo. Si lo crea en otra región, puede eliminarlo y volver a crearlo en la región correcta.
->>
+>> >
 >>
 >> ![create disk](images/avolume02.png){.thumbnail}
 >>
->> El nuevo disco aparecerá en el área de cliente.
+>> El disco aparece en el área de cliente.
 >>
 >> ![configure disk](images/avolume03.png){.thumbnail}
 >>
->> A la derecha del volumen, haga clic en el botón `...`{.action} y seleccione `Asociar a la instancia`{.action}.
+>> Haga clic en `...`{.action} junto al volumen y seleccione `Asociar a la instancia`{.action}.
 >>
 >> ![attach disk 01](images/avolume04.png){.thumbnail}
 >>
->> En la ventana que aparece, seleccione una instancia de la lista y haga clic en `Confirmar`{.action} para asociar el disco.
+>> Seleccione una instancia y haga clic en `Confirmar`{.action}.
 >>
 >> ![attach disk 02](images/avolume05.png){.thumbnail}
 >>
->> El proceso de asociar el disco a su instancia comenzará. La operación puede tardar unos minutos.
+>> La asociación comienza. La operación puede tardar unos minutos.
 >>
 >> > [!warning]
 >> > Recuerde no abandonar la página actual del área de cliente de OVHcloud mientras el disco está conectado. Esto podría interrumpir el proceso.
->>
+>> >
 >>
 > **Via Terraform**
 >> > [!warning]
->>
->> > Tenga en cuenta que los tipos de volumen "high-speed-gen2" o "luks" pueden no estar disponibles en todas las regiones.
->>
+>> >
+>> > Tenga en cuenta que los tipos de volumen `high-speed-gen2` o `luks` pueden no estar disponibles en todas las regiones.
+>> >
 >>
 >> Tipos de volúmenes:
 >>
@@ -189,7 +189,7 @@ La generación 2 de los volúmenes High-Speed está optimizada para las cargas d
 >> }
 >> ```
 >>
->> Puede crear su volumen de tipo block storage y asociarlo a la instancia deseada introduciendo el siguiente comando:
+>> Cree y asocie el volumen con el siguiente comando:
 >>
 >> ```console
 >> terraform apply
@@ -243,6 +243,8 @@ La generación 2 de los volúmenes High-Speed está optimizada para las cargas d
 >> Apply complete! Resources: 2 added, 0 changed, 0 destroyed.
 >> ```
 >>
+>> A continuación, vamos a asociarlo a la instancia de destino.
+>>
 > **A través de Horizon**
 >> Acceda a la sección desplegable `Volumes`{.action}, haga clic en `Volumes`{.action} y luego en `Create Volume`{.action}.
 >>
@@ -251,9 +253,9 @@ La generación 2 de los volúmenes High-Speed está optimizada para las cargas d
 >> Introduzca el campo `Volume Name`{.action} y seleccione el tipo de volumen que desee. A continuación, haga clic en `Create Volume`{.action}.
 >>
 >> > [!warning]
->>
->> > Tenga en cuenta que si el tipo de volumen "high-speed-gen2" o "luks" no aparece en la lista, significa que no está disponible en esta región.
->>
+>> >
+>> > Tenga en cuenta que si el tipo de volumen `high-speed-gen2` o `luks` no aparece en la lista, significa que no está disponible en esta región.
+>> >
 >>
 >> ![create volume block storage 02](images/horizon_create_volume_02.png){.thumbnail width="1000"}
 >>
@@ -267,9 +269,9 @@ La generación 2 de los volúmenes High-Speed está optimizada para las cargas d
 >>
 > **A través de la CLI OpenStack**
 >> > [!warning]
->>
->> > Tenga en cuenta que si el tipo de volumen "high-speed-gen2" o "luks" no aparece en la lista, significa que no está disponible en esta región.
->>
+>> >
+>> > Tenga en cuenta que si el tipo de volumen `high-speed-gen2` o `luks` no aparece en la lista, significa que no está disponible en esta región.
+>> >
 >>
 >> Tipos de volúmenes:
 >>
@@ -317,6 +319,38 @@ La generación 2 de los volúmenes High-Speed está optimizada para las cargas d
 >> +-----------+-------------------------------------+
 >> ```
 >>
+> **A través de la CLI OVHcloud**
+>> > [!warning]
+>> >
+>> > Si el tipo de volumen `high-speed-gen2` o `luks` no aparece en la lista, no está disponible en esta región.
+>> >
+>>
+>> | Opción | Descripción |
+>> |--------|-------------|
+>> | `<region>` | Región en la que se creará el volumen (ej.: `GRA11`) |
+>> | `--name` | Nombre del volumen |
+>> | `--size` | Tamaño del volumen en GB |
+>> | `--type` | Tipo de volumen: `classic`, `high-speed`, `high-speed-gen2`, o la variante `-luks` correspondiente |
+>> | `--wait` | Espera a que termine la creación antes de salir |
+>>
+>> Cree un volumen especificando la región, un nombre, el tamaño en GB y un tipo:
+>>
+>> ```bash
+>> ovhcloud cloud storage-block create <region> --name <volume-name> --size <size-in-GB> --type <volume-type> --wait
+>> ```
+>>
+>> Una vez creado el volumen, asócielo a una instancia:
+>>
+>> | Parámetro | Descripción |
+>> |-----------|-------------|
+>> | `<volume_id>` | ID del volumen que se va a asociar |
+>> | `<instance_id>` | ID de la instancia a la que se asociará el volumen |
+>>
+>> ```bash
+>> ovhcloud cloud storage-block attach <volume_id> <instance_id>
+>> ```
+>>
+>
 
 ### Configuración del nuevo disco
 
@@ -342,7 +376,7 @@ vdb 254:16 0 10G 0 disk
 > En este ejemplo, `vda` hace referencia al disco por defecto de la instancia. El disco adicional se llamará `vdb`.
 >
 
-Cree una partición en el disco adicional con los siguientes comandos.
+Cree una partición en el disco adicional:
 
 Si tu disco adicional es inferior a 2TB:
 
@@ -413,7 +447,7 @@ Ignore/Cancel? I
 (parted) quit
 ```
 
-A continuación, forme la nueva partición `vdb1` con el siguiente comando:
+Formatee la nueva partición `vdb1`:
 
 ```bash
 sudo mkfs.ext4 /dev/vdb1
@@ -432,17 +466,14 @@ Creating journal (32768 blocks): done
 Writing superblocks and filesystem accounting information: done
 ```
 
-Monte la partición con los siguientes comandos:
+Monte la partición:
 
 ```bash
 sudo mkdir /mnt/disk
-```
-
-```bash
 sudo mount /dev/vdb1 /mnt/disk/
 ```
 
-Por último, compruebe el punto de montaje utilizando el siguiente comando:
+Compruebe el punto de montaje:
 
 ```bash
 df -h
@@ -461,10 +492,10 @@ tmpfs 982M 0 982M 0% /sys/fs/cgroup
 
 > [!primary]
 >
-> El montaje no es persistente, ya que el disco se desvinculará al reiniciar la instancia. Para automatizar el montaje, es necesario editar el archivo `fstab`.
+> El montaje no es persistente: el disco se desvinculará al reiniciar. Para automatizar el montaje, edite el archivo `fstab`.
 >
 
-En primer lugar, consulte el UUID (block ID) del nuevo volumen:
+Consulte el UUID del nuevo volumen:
 
 ```bash
 sudo blkid
@@ -475,19 +506,19 @@ sudo blkid
 /dev/vdb1: UUID="2e4a9012-bf0e-41ef-bf9a-fbf350803ac5" TYPE="ext4" PARTUUID="95c4adcc-01"
 ```
 
-Abra `/etc/fstab` con un editor de texto:
+Abra `/etc/fstab`:
 
 ```bash
 sudo nano /etc/fstab
 ```
 
-Añada la siguiente línea al archivo y sustituya el UUID por el suyo:
+Añada esta línea sustituyendo el UUID por el suyo:
 
 ```console
 UUID=2e4a9012-bf0e-41ef-bf9a-fbf350803ac5 /mnt/disk ext4 nofail 0 0
 ```
 
-Guarde y salga del editor. El disco debe montarse automáticamente cada vez que se reinicie.
+Guarde y salga. El disco se monta automáticamente cada vez que se reinicie.
 
 #### En Windows
 
@@ -497,11 +528,11 @@ Una vez que se haya conectado, haga clic derecho en el botón `Iniciar`{.action}
 
 ![disk management](images/start-menu.png){.thumbnail}
 
-El nuevo disco se mostrará como volumen desconocido con espacio no asignado.
+El disco aparece como volumen desconocido con espacio no asignado.
 
 ![volumen desconocido](images/disk-management-01.png){.thumbnail}
 
-Si el disco está marcado como desconectado, deberá inicializarlo primero. Para ello, puede utilizar la [interfaz de usuario Windows](#initDiskManagement) o la [utilidad DISKPART](#initDiskpart). De lo contrario, realice el [formateo del disco en Gestión de discos](#formatDiskManagement).
+Si está desconectado, inicialícelo a través de la [interfaz de usuario Windows](#initDiskManagement) o de la [utilidad DISKPART](#initDiskpart). En caso contrario, pase al [formateo](#formatDiskManagement).
 
 ##### **Iniciar el disco en Gestión de discos** <a name="initDiskManagement"></a>
 
@@ -517,7 +548,7 @@ Haga clic derecho de nuevo y seleccione `Inicializar disco`{.action}.
 
 A continuación, seleccione `MBR`{.action} si su disco adicional es inferior a 2TB, o `GPT`{.action} si es superior a 2TB, y haga clic en `OK`{.action}.
 
-![initialise disk](images/initialize_disk.png){.thumbnail}
+![inicializar el disco](images/initialize_disk.png){.thumbnail}
 
 ##### **Iniciar el disco con DISKPART** <a name="initDiskpart"></a>
 
@@ -535,7 +566,7 @@ En el pedido, abra DISKPART:
 C:\> diskpart
 ```
 
-Utilice la siguiente serie de comandos DISKPART para poner el disco `en línea`:
+Ejecute estos comandos DISKPART para poner el disco en línea:
 
 ```console
 DISKPART> san
@@ -583,39 +614,39 @@ En la herramienta de `gestión de discos`{.action}, haga clic derecho en el nuev
 
 ![formato disk](images/format-disk-01.png){.thumbnail}
 
-En el asistente, haga clic en `Siguiente`{.action} para especificar el tamaño del volumen. Por defecto, debe estar al máximo. Haga clic en `Siguiente`{.action} para continuar.
+En el asistente, haga clic en `Siguiente`{.action} para confirmar el tamaño del volumen (máximo por defecto) y, a continuación, de nuevo en `Siguiente`{.action}.
 
 ![formato disk](images/format-disk-03.png){.thumbnail}
 
-Deje la nueva letra predeterminada o seleccione otra y haga clic en `Siguiente`{.action}.
+Acepte la letra de la unidad o seleccione otra y haga clic en `Siguiente`{.action}.
 
 ![formato disk](images/format-disk-04.png){.thumbnail}
 
-Asigne un nombre al volumen (opcional) y confirme las opciones de formato haciendo clic en `Siguiente`{.action}.
+Asigne un nombre al volumen (opcional) y haga clic en `Siguiente`{.action}.
 
 ![formato disk](images/format-disk-05.png){.thumbnail}
 
-En la última ventana, haga clic en `Finalizar`{.action} para dar formato al disco.
+Haga clic en `Finalizar`{.action} para dar formato al disco.
 
 ![formato disk](images/format-disk-06.png){.thumbnail}
 
-El disco estará disponible como lector en el explorador de archivos.
+El disco está disponible en el explorador de archivos.
 
 ### Desvincular un volumen
 
-Si desea desvincular un volumen de su instancia, la mejor práctica es desmontar el volumen del sistema operativo antes de desvincularlo de la instancia.
+Antes de desvincular un volumen, desmóntelo del sistema operativo.
 
 > [!warning]
 >
 > Se puede mostrar un mensaje de error si se están ejecutando programas o procesos en el disco adicional. En ese caso, se recomienda detener todos los procesos antes de continuar.
 >
 
-Así es como **desmonta el volumen** del sistema operativo antes de desmontarlo de la instancia:
+**Desmonte el volumen** del sistema operativo antes de desvincularlo de la instancia:
 
 > [!tabs]
 > **En Linux**
 >>
->> Abra una [conexión SSH a su instancia](/pages/public_cloud/compute/public-cloud-first-steps#3-crear-una-instancia) y utilice el siguiente comando para mostrar los discos asociados.
+>> Abra una [conexión SSH](/pages/public_cloud/compute/public-cloud-first-steps#connect-instance) y muestre los discos asociados:
 >>
 >> ```bash
 >> lsblk
@@ -629,13 +660,13 @@ Así es como **desmonta el volumen** del sistema operativo antes de desmontarlo 
 >> └─vdb1    8:1    0   10G  0 part /mnt/disk
 >> ```
 >>
->> Desmonte la partición utilizando el siguiente comando:
+>> Desmonte la partición:
 >>
 >> ```bash
 >> sudo umount /dev/vdb1
 >> ```
 >>
->> Elimine el ID del dispositivo fstab para finalizar el proceso de desmontaje. Si no se realiza, la partición se recuperará después de un reinicio.
+>> Elimine la entrada del fstab; de lo contrario, la partición se volverá a montar tras un reinicio.
 >>
 >> ```bash
 >> sudo nano /etc/fstab
@@ -647,7 +678,7 @@ Así es como **desmonta el volumen** del sistema operativo antes de desmontarlo 
 >>
 >> Establezca una conexión RDP (Remote Desktop) con su instancia Windows.
 >>
->> Una vez que se haya conectado, haga clic derecho en el menú `Iniciar`{.action} y abra `Administración de discos`{.action}.
+>> Una vez conectado, haga clic derecho en el menú `Iniciar`{.action} y abra `Administración de discos`{.action}.
 >>
 >> ![gestión de discos](images/start-menu.png){.thumbnail}
 >>
@@ -670,19 +701,20 @@ Por último, vamos a desvincular el volumen de la instancia:
 
 > [!tabs]
 > **Desde el área de cliente de OVHcloud**
->> Acceda a la sección `Public Cloud`{.action} de su área de cliente de OVHcloud y haga clic en `Block Storage`{.action} en el menú de la izquierda bajo **Backup Storage**.
+>>
+>> Abra `Block Storage`{.action} en el menú de la izquierda, en **Backup Storage**.
 >>
 >> Haga clic en el botón `...`{.action} junto al volumen correspondiente y seleccione `Desvincular de la instancia`{.action}.
 >>
 >> ![detach disk](images/detachinstance.png){.thumbnail}
 >>
->> Haga clic en `Confirmar`{.action} en la nueva ventana para iniciar el proceso.
+>> Haga clic en `Confirmar`{.action}.
 >>
 >> ![confirm disk detach](images/confirminstancedetach.png){.thumbnail}
 >>
 > **Via Terraform**
 >>
->> Comience por eliminar las líneas creadas anteriormente en su archivo Terraform:
+>> Elimine estas líneas de su archivo Terraform:
 >>
 >> ```python
 >> # Asociar el volumen a la instancia
@@ -692,7 +724,7 @@ Por último, vamos a desvincular el volumen de la instancia:
 >> }
 >> ```
 >>
->> Introduzca el siguiente comando para comprobar si se va a eliminar el recurso correcto:
+>> Ejecute este comando para comprobar que se va a eliminar el recurso correcto:
 >>
 >> ```console
 >> terraform plan
@@ -723,7 +755,7 @@ Por último, vamos a desvincular el volumen de la instancia:
 >> Plan: 0 to add, 0 to change, 1 to destroy.
 >> ```
 >>
->> A continuación, aplique los cambios introduciendo este comando:
+>> Aplique los cambios:
 >>
 >> ```console
 >> terraform apply
@@ -765,6 +797,18 @@ Por último, vamos a desvincular el volumen de la instancia:
 >>
 >> Apply complete! Resources: 0 added, 0 changed, 1 destroyed.
 >> ```
+>>
+> **A través de la CLI OVHcloud**
+>>
+>> | Parámetro | Descripción |
+>> |-----------|-------------|
+>> | `<volume_id>` | ID del volumen que se va a desvincular |
+>> | `<instance_id>` | ID de la instancia de la que desvincular el volumen |
+>>
+>> ```bash
+>> ovhcloud cloud storage-block detach <volume_id> <instance_id>
+>> ```
+>>
 
 ## Más información
 
