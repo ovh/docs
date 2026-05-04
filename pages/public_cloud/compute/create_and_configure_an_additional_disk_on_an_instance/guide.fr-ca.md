@@ -1,6 +1,6 @@
 ---
 title: Créer et configurer un disque supplémentaire sur une instance
-excerpt: Découvrez comment créer un volume Block Storage supplémentaire, l'attacher à votre instance Public Cloud et le configurer sous Linux ou Windows
+excerpt: "Découvrez comment créer un volume Block Storage supplémentaire, l'attacher à votre instance Public Cloud et le configurer sous Linux ou Windows"
 updated: 2026-05-04
 ---
 
