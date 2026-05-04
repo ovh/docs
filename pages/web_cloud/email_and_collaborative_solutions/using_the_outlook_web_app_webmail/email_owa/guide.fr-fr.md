@@ -1,7 +1,7 @@
 ---
 title: 'Utiliser son adresse e-mail depuis le webmail Outlook Web App (OWA)'
 excerpt: 'Découvrez comment utiliser votre adresse e-mail depuis le webmail OWA'
-updated: 2026-03-24
+updated: 2026-05-04
 ---
 
 ## Objectif
@@ -44,7 +44,7 @@ Si c'est la première fois que vous vous connectez à OWA avec cette adresse e-m
 
 > [!primary]
 >
-> Les fuseaux horaires sont listés selon [la norme UTC (temps universel coordonné)](https://en.wikipedia.org/wiki/Coordinated_Universal_Time#/media/File:World_Time_Zones_Map.png), et non par ordre alphabétique des villes.
+> Les fuseaux horaires sont listés selon [la norme UTC (temps universel coordonné)](https://fr.wikipedia.org/wiki/Temps_universel_coordonn%C3%A9), et non par ordre alphabétique des villes.
 >
 > **Exemple** : Pour l'Europe de l'Ouest, il s'agit de UTC +1 (Bruxelles, Copenhague, Madrid, Paris).
 
