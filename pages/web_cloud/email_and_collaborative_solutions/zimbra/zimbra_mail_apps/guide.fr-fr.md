@@ -1,7 +1,7 @@
 ---
 title: "Zimbra - Configurer son compte e-mail sur un logiciel de messagerie"
 excerpt: "Choisissez la méthode de configuration adaptée à votre offre Zimbra Starter ou Pro et à votre logiciel de messagerie"
-updated: 2026-04-22
+updated: 2026-05-04
 ---
 
 ## Objectif
