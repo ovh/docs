@@ -1,7 +1,7 @@
 ---
 title: 'Utiliser son adresse e-mail depuis le webmail Outlook Web App (OWA)'
 excerpt: 'Découvrez comment utiliser votre adresse e-mail depuis le webmail OWA'
-updated: 2026-03-24
+updated: 2026-05-04
 ---
 
 ## Objectif
@@ -12,20 +12,22 @@ Avec les solutions e-mail OVHcloud, vous pouvez envoyer et recevoir vos e-mails 
 
 ## Prérequis
 
-- Disposer d'une solution e-mail OVHcloud, proposée parmi nos [offres d’hébergement web](/links/web/hosting) ou commandée séparément comme solution autonome telle que [**Hosted Exchange**](/links/web/emails-hosted-exchange)
-- Connaître les identifiants de connexion de l’adresse e-mail que vous souhaitez configurer
+- Disposer d'une solution e-mail OVHcloud configurée au préalable, parmi les offres suivantes :
+    - [**MX Plan**](/links/web/hosting), proposée avec nos offres d'hébergement web ou commandée comme solution autonome ;
+    - [**Hosted Exchange**](/links/web/emails-hosted-exchange).
+- Connaître les identifiants de connexion de l’adresse e-mail à utiliser.
 
 ## En pratique
 
-Ce guide vous permettra de mieux comprendre les tâches habituelles disponibles dans un compte de messagerie sous OWA. Cependant, comme cette interface n'a pas été créée à l'origine par OVHcloud, nous ne pouvons pas fournir des instructions spécifiques sur les paramètres non abordés dans ce guide.
+Ce guide vous permettra de mieux comprendre les tâches habituelles disponibles dans un compte de messagerie sous OWA. Cependant, comme cette interface n'a pas été créée à l'origine par OVHcloud, nous ne pouvons pas fournir des instructions spécifiques sur des paramètres non abordés dans ce guide.
 
-Concernant les fonctionnalités spécifiques à Exchange, vous pourrez retrouver quelques guides supplémentaires dans la section [Aller plus loin](./#aller-plus-loin_1) en bas de ce guide.
+Concernant les fonctionnalités spécifiques à Exchange, vous pourrez retrouver quelques guides supplémentaires dans la section [Aller plus loin](./#aller-plus-loin) en bas de ce guide.
 
 > [!primary]
 >
-> Après les deux premières étapes, il n'est pas nécessaire de suivre les instructions dans l'ordre donné.
+> Après la connexion et la prise en main de l'interface, il n'est pas nécessaire de suivre les instructions dans l'ordre donné.
 
-### Étape 1 : Se connecter à OWA
+### Se connecter à OWA
 
 Pour vous connecter à OWA avec votre adresse e-mail, ouvrez la page de [connexion au webmail](/links/web/email). Saisissez entièrement votre adresse e-mail et votre mot de passe. Ensuite, cliquez sur `Connexion`{.action}.
 
@@ -35,7 +37,7 @@ Si c'est la première fois que vous vous connectez à OWA avec cette adresse e-m
 
 > [!primary]
 >
-> Les fuseaux horaires sont listés selon [la norme UTC (temps universel coordonné)](https://en.wikipedia.org/wiki/Coordinated_Universal_Time#/media/File:World_Time_Zones_Map.png), et non par ordre alphabétique des villes.
+> Les fuseaux horaires sont listés selon [la norme UTC (temps universel coordonné)](https://fr.wikipedia.org/wiki/Temps_universel_coordonn%C3%A9), et non par ordre alphabétique des villes.
 >
 > **Exemple** : Pour l'Europe de l'Ouest, il s'agit de UTC +1 (Bruxelles, Copenhague, Madrid, Paris).
 
@@ -45,7 +47,7 @@ Dorénavant, votre boîte de réception apparaîtra par défaut dès que vous se
 
 ![useowa](images/use-owa-step3.png){.thumbnail}
 
-### Étape 2 : Comprendre l’affichage d’OWA
+### Comprendre l’affichage d’OWA
 
 L'interface OWA comporte plusieurs sections. Veuillez vous référer au tableau et à l'image ci-dessous pour vous familiariser avec celle-ci.
 
@@ -66,17 +68,27 @@ Pour consulter vos e-mails, sélectionnez un dossier sur le côté gauche. Les e
 
 ![useowa](images/use-owa-step5.png){.thumbnail}
 
-Pour lire un e-mail, sélectionnez son dossier si nécessaire. Cliquez ensuite sur l’e-mail pour afficher son contenu dans le coin de lecture. Une couleur différente est utilisée pour les messages non lus afin de les distinguer de ceux qui ont été lus.
+Pour lire un e-mail, sélectionnez son dossier si nécessaire. Cliquez ensuite sur l’e-mail pour afficher son contenu dans le volet de lecture. Les messages non lus apparaissent en gras pour les distinguer des messages lus.
 
 ![useowa](images/use-owa-step6.png){.thumbnail}
 
+### Trier et filtrer les e-mails
+
+En haut à droite de la liste des messages, le bouton `Filtrer`{.action} ouvre un menu qui regroupe toutes les options d'affichage du dossier sélectionné.
+
+- **Filtrer par catégorie** : sélectionnez une entrée pour n'afficher qu'une sélection d'e-mails parmi `Tout`{.action}, `Non lu`{.action}, `À moi`{.action} (e-mails adressés directement à votre adresse), `Avec indicateur`{.action} (e-mails signalés pour le suivi) ou `Mentions`{.action} (e-mails dans lesquels votre adresse est mentionnée).
+
+- **Trier par** : survolez l'entrée `Trier par`{.action} pour choisir le critère de classement des e-mails : **Date**, **De**, **À**, **Objet**, **Pièces jointes**, **Importance** ou **Taille**. La flèche à gauche du critère indique l'ordre courant ; cliquez à nouveau sur le même critère pour l'inverser.
+
+- **Afficher comme** : survolez l'entrée `Afficher comme`{.action} pour basculer entre l'affichage **Messages** (un e-mail par ligne) ou **Conversations** (e-mails regroupés par fil de discussion).
+
 ### Envoyer et répondre
 
-Pour **envoyer un nouveau message**, cliquez sur l'icône `Nouveau`{.action} en haut de l'interface du webmail. Le volet d’édition apparaîtra sur le côté droit. Remplissez les champs de votre e-mail (destinataires, objet, corps du message, pièces jointes). Dès que vous êtes prêt à l'envoyer, cliquez sur `Envoyer`{.action}.
+Pour **envoyer un nouveau message**, cliquez sur l'icône `Nouveau`{.action} en haut de l'interface OWA. Le volet d’édition apparaîtra sur le côté droit. Remplissez les champs de votre e-mail (destinataires, objet, corps du message, pièces jointes). Cliquez sur `Envoyer`{.action} une fois votre e-mail rédigé.
 
 ![useowa](images/use-owa-step7.png){.thumbnail}
 
-Pour **répondre à un message**, [cliquez d'abord](./#afficher-les-e-mails) sur celui-ci pour l'afficher. Cliquez ensuite sur `Répondre à tous`{.action}. Par contre, utilisez le bouton flèche vers le bas si vous souhaitez uniquement répondre à l'expéditeur de l’e-mail (excluant tout destinataire mis en copie).
+Pour **répondre à un message**, cliquez d'abord sur celui-ci pour l'afficher. Cliquez ensuite sur `Répondre à tous`{.action} pour répondre à l'ensemble des destinataires. Utilisez le bouton flèche vers le bas si vous souhaitez uniquement répondre à l'expéditeur de l’e-mail (excluant tout destinataire mis en copie), cliquez sur `Répondre`{.action}.
 
 ![useowa](images/use-owa-step8.png){.thumbnail}
 
@@ -90,7 +102,8 @@ OWA propose plusieurs façons d'organiser votre messagerie. Vous pouvez :
 
 - [créer des dossiers et des sous-dossiers](./#creer-un-dossier),
 - [déplacer des e-mails](./#deplacer-des-e-mails),
-- [définir des règles](./#creer-des-regles-de-gestion-de-la-messagerie) afin d’effectuer automatiquement des actions dès la réception d'un nouvel e-mail.
+- [définir des règles](./#creer-des-regles-de-gestion-de-la-messagerie) afin d’effectuer automatiquement des actions dès la réception d'un nouvel e-mail,
+- [bloquer un expéditeur](./#bloquer-un-expediteur) pour ne plus recevoir ses messages.
 
 #### Créer un dossier
 
@@ -101,7 +114,7 @@ Pour créer un nouveau dossier, faites un clic droit sur le nom de votre adresse
 #### Déplacer des e-mails
 
 Pour **déplacer un e-mail**, vous pouvez simplement le glisser-déposer dans le dossier cible ou faire un clic droit et sélectionner `Déplacer`{.action}.
-Pour simultanément **déplacer plusieurs e-mails**, sélectionnez les tous grâce à leur case à cocher. Ensuite cliquez sur  `Déplacer`{.action} (sur le coté droit) ou sur `Déplacer vers`{.action} (dans la section supérieure). Choisissez ensuite le dossier de destination.
+Pour simultanément **déplacer plusieurs e-mails**, sélectionnez-les tous grâce à leur case à cocher. Ensuite, cliquez sur `Déplacer`{.action} (sur le côté droit) ou sur `Déplacer vers`{.action} (dans la section supérieure). Choisissez ensuite le dossier de destination.
 
 ![useowa](images/use-owa-step11.png){.thumbnail}
 
@@ -129,25 +142,29 @@ Pour des instructions plus détaillées sur la création des règles de gestion 
 
 <iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/Ivad4FgJ2No" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-Cliquez sur l'icône de l'engrenage en haut à droite, puis cliquez sur `Options`{.action}. Toujours dans la colonne de gauche, parcourez l'arborescence "Courrier" sous "Comptes", puis "Bloquer ou autoriser".
+Cliquez sur l'icône de l'engrenage en haut à droite, puis cliquez sur `Options`{.action}. Toujours dans la colonne de gauche, parcourez l'arborescence « Courrier » sous « Comptes », puis « Bloquer ou autoriser ».
 
 Dans la section « **Expéditeurs bloqués** », tapez une adresse e-mail ou un nom de domaine à bloquer, puis cliquez sur le bouton `+`{.action} pour l'ajouter dans la liste.
 
 ![useowa](images/owa_exchange_block.png){.thumbnail}
 
-### Gérer une liste de contacts
+### Gérer vos contacts
 
-Pour gérer vos contacts, cliquez d’abord sur le bouton bleu du « App launcher » en haut de la page, ensuite sur `Contacts`{.action}.
+Pour gérer vos contacts, cliquez d’abord sur le bouton bleu du lanceur d’applications en haut à gauche de la page (qui donne également accès au calendrier, aux tâches et à d’autres modules), puis sur `Contacts`{.action}.
 
 ![useowa](images/use-owa-step15.png){.thumbnail}
 
 Dans la nouvelle page, vous pouvez ajouter un nouveau contact, créer une liste de contacts et supprimer des contacts existants.
 
-Pour **ajouter un nouveau contact**, cliquez sur `Nouveau`{.action}, et introduisez les coordonnées du contact à ajouter. Une fois cela fait, cliquez sur `Enregistrer`{.action}.
+#### Ajouter un contact
+
+Cliquez sur `Nouveau`{.action}, puis saisissez les coordonnées du contact à ajouter. Une fois cela fait, cliquez sur `Enregistrer`{.action}.
 
 ![useowa](images/use-owa-step16.png){.thumbnail}
 
-Pour **créer une liste de contacts**, cliquez sur la flèche vers le bas à côté de « Nouveau », puis cliquez sur `Liste de contacts`{.action}. Donnez-lui un nom, ajoutez-y des contacts et cliquez sur `Enregistrer`{.action}.
+#### Créer une liste de contacts
+
+Cliquez sur la flèche vers le bas à côté de `Nouveau`{.action}, puis sur `Liste de contacts`{.action}. Donnez-lui un nom, ajoutez-y des contacts et cliquez sur `Enregistrer`{.action}.
 
 ![useowa](images/use-owa-step17.png){.thumbnail}
 
@@ -167,8 +184,7 @@ Dans la nouvelle fenêtre qui s'ouvre, entrez votre mot de passe actuel. Saisiss
 
 > [!primary]
 >
-> N'oubliez pas d’enter votre nouveau mot de passe sur tous vos appareils utilisés pour accéder à ce compte (par exemple dans le logiciel client de messagerie). En cas de difficultés avec votre mot de passe, contactez votre administrateur de services.
->
+> N'oubliez pas d’entrer votre nouveau mot de passe sur tous vos appareils utilisés pour accéder à ce compte (par exemple dans le logiciel client de messagerie). En cas de difficultés avec votre mot de passe, contactez votre administrateur de services.
 
 ![useowa](images/use-owa-step19.png){.thumbnail}
 
@@ -183,11 +199,11 @@ Dans la fenêtre qui s’ouvre, sélectionnez l’option « Envoyer des réponse
 - envoyer des e-mails de réponse automatique pendant un intervalle de temps fixe, ou en continu jusqu'à ce qu'il soit désactivé manuellement
 - définir les expéditeurs qui recevront les e-mails de réponse automatique (expéditeurs internes uniquement, ou inclure les expéditeurs externes)
 
-Remplissez les informations demandées en fonction de la tâche que vous voudrez effectuer grâce à cette règle. Une fois cela fait, cliquez sur OK.
+Remplissez les informations demandées en fonction de la tâche que vous voudrez effectuer grâce à cette règle. Une fois cela fait, cliquez sur `OK`{.action}.
 
 ![useowa](images/use-owa-step21.png){.thumbnail}
 
-Pour des instructions plus détaillées sur la création des règles de gestion de messagerie, veuillez vous référer à notre guide : [Créer un répondeur automatique sous OWA](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/owa_automatic_replies).
+Pour des instructions plus détaillées sur la création de réponses automatiques, veuillez vous référer à notre guide : [Créer un répondeur automatique sous OWA](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/owa_automatic_replies).
 
 ### Ajouter une signature
 
@@ -227,5 +243,7 @@ La désactivation de ces cookies peut néanmoins affecter la stabilité de votre
 [Partager un dossier depuis l’interface OWA](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/owa_directory_sharing)
 
 [Partager des calendriers via l’interface OWA](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/owa_calendar_sharing)
+
+[Créer un groupe de contacts](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/feature_groups)
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).
