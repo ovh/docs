@@ -1,19 +1,12 @@
 ---
-title: "OPCP - IAM Rights Management"
+title: "OPCP - IAM rights management"
 excerpt: "Find out how to manage users, roles, and access rights on your On-Prem Cloud Platform with Keycloak"
 updated: 2026-05-04
 ---
 
 ## Objective
 
-This guide explains how to manage rights and access (IAM — Identity and Access Management) on your **On-Prem Cloud Platform (OPCP)**.
-
-Access to application services is centralised in **Keycloak** (Realm Master), which serves as the single entry point for:
-
-- Access to the **Dashboard** (unified service dashboard)
-- Access to the **OpenStack Horizon** graphical interface
-- Access to the **OpenStack APIs** (Keystone, Nova, Neutron, Glance, Ironic, etc.)
-- Access to the monitoring tools: **Grafana**, **Netbox**, **Prometheus**
+This guide explains how to manage IAM (Identity and Access Management) rights and access on your **On-Prem Cloud Platform (OPCP)** through **Keycloak**, which centralises authentication to the platform's application services.
 
 ## Requirements
 
@@ -28,7 +21,11 @@ Access to application services is centralised in **Keycloak** (Realm Master), wh
 Authentication on the **OPCP** relies on two distinct layers:
 
 - **Control plane access**: SSH access to the controllers that make up the platform infrastructure, provided at service delivery
-- **Service access**: centralised in **Keycloak** (Realm Master), the single entry point for the Dashboard, OpenStack, Grafana, Netbox and Prometheus
+- **Service access**: centralised in **Keycloak** (Realm Master), which serves as the single entry point for:
+    - the **Dashboard** (unified service dashboard)
+    - the **OpenStack Horizon** graphical interface
+    - the **OpenStack APIs** (Keystone, Nova, Neutron, Glance, Ironic, etc.)
+    - the monitoring tools: **Grafana**, **Netbox**, **Prometheus**
 
 ### Control plane access
 
@@ -104,9 +101,8 @@ It allows you to:
 - View your own account settings in Keycloak
 - Access **Netbox** in read-only mode (network inventory)
 - Access **Prometheus** in read-only mode
-- Access the **Dashboard** and the Grafana, Netbox and Prometheus iframes
-- Access the **OpenStack** iframe in the Dashboard
-- Access OpenStack projects in **reader** mode only, subject to project attributes configured in Keycloak
+- Access the **Dashboard** and its iframes (Grafana, Netbox, Prometheus, OpenStack)
+- View OpenStack project resources in **reader** mode, subject to project attributes configured in Keycloak
 
 > [!primary]
 >
@@ -121,7 +117,6 @@ It provides the following additional access compared to `reader`:
 
 - Access **Grafana** in edit mode (modify dashboards)
 - Access **Netbox** as an operator (create and modify network resources)
-- Access the **Dashboard** (Grafana, Netbox, Prometheus iframes)
 
 > [!primary]
 >
