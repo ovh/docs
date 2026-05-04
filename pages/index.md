@@ -591,6 +591,7 @@
     + [Bare Metal Pod](hosted-private-cloud-baremetal-pod)
         + [Getting started](hosted-private-cloud-baremetal-pod-getting-started)
             + [Mise en route de votre Bare Metal POD SecNumCloud](hosted_private_cloud/baremetal_pod/snc_getting_started)
+            + [Comment sauvegarder une instance Bare Metal Pod SecNumCloud](hosted_private_cloud/baremetal_pod/snc_backup_an_instance)
         + [Security](hosted-private-cloud-baremetal-pod-security)
             + [IAM Rights Management - Bare Metal Pod SecNumCloud](hosted_private_cloud/baremetal_pod/snc_iam_manage)
     + [On-Prem Cloud Platform](products/hosted-private-cloud-hosted-private-cloud-opcp)
