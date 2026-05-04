@@ -20,7 +20,7 @@ Lorsque la protection Anti-Hack est déclenchée sur votre Serveur dédié, un m
 Selon la criticité de la protection Anti-Hack déclenchée par OVHcloud, les actions suivantes seront autorisées/requises afin de rétablir le service complet sur le serveur.
 
 | Statut | Actions attendues |
-| ------ | --------- | ----------- |
+| ------ | ----------------- |
 | Compromis | Redémarrer le serveur ou demander à OVHcloud de réinstaller le serveur |
 | CompromisBloqué | Collecter les données via FTP sur le serveur démarré en système rescue FTP |
 
