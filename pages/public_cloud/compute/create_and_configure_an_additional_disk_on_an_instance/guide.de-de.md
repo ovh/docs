@@ -1,6 +1,6 @@
 ---
 title: Zusätzliches Volume auf einer Instanz erstellen und konfigurieren
-excerpt: Erfahren Sie hier, wie Sie ein zusätzliches Block Storage Volume erstellen, an Ihre Public Cloud Instanz anhängen und unter Linux oder Windows konfigurieren.
+excerpt: Erfahren Sie hier, wie Sie ein zusätzliches Block Storage Volume erstellen, an Ihre Public Cloud Instanz anhängen und unter Linux oder Windows konfigurieren
 updated: 2026-05-04
 ---
 

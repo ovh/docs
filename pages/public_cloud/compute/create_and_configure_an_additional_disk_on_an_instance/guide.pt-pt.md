@@ -1,6 +1,6 @@
 ---
 title: 'Criar e configurar um disco suplementar numa instância'
-excerpt: 'Saiba como criar um volume Block Storage suplementar, associá-lo à sua instância Public Cloud e configurá-lo em Linux ou Windows.'
+excerpt: 'Saiba como criar um volume Block Storage suplementar, associá-lo à sua instância Public Cloud e configurá-lo em Linux ou Windows'
 updated: 2026-05-04
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: 'Zarządzanie wolumenem instancji Public Cloud'
-excerpt: 'Dowiedz się, jak utworzyć dodatkowy wolumen Block Storage, przypisać go do instancji Public Cloud i skonfigurować w systemie Linux lub Windows.'
+excerpt: 'Dowiedz się, jak utworzyć dodatkowy wolumen Block Storage, przypisać go do instancji Public Cloud i skonfigurować w systemie Linux lub Windows'
 updated: 2026-05-04
 ---
 

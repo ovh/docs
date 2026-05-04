@@ -1,6 +1,6 @@
 ---
 title: How to create and configure an additional disk on an instance
-excerpt: Find out how to create an additional Block Storage volume, attach it to your Public Cloud instance, and configure it on Linux or Windows.
+excerpt: Find out how to create an additional Block Storage volume, attach it to your Public Cloud instance, and configure it on Linux or Windows
 updated: 2026-05-04
 ---
 

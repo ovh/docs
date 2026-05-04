@@ -1,6 +1,6 @@
 ---
 title: 'Crear y configurar un disco adicional en una instancia'
-excerpt: 'Cómo crear un volumen Block Storage adicional, asociarlo a su instancia de Public Cloud y configurarlo en Linux o Windows.'
+excerpt: 'Cómo crear un volumen Block Storage adicional, asociarlo a su instancia de Public Cloud y configurarlo en Linux o Windows'
 updated: 2026-05-04
 ---
 
