@@ -1403,6 +1403,7 @@
                 + [Capabilities and Limitations of Analytics with Kafka MirrorMaker](public_cloud/public_cloud_databases/mirrormaker_01_capabilities)
                 + [Comparison of Analytics Engines Deployment Modes - Understanding 3-AZ / 1-AZ](public_cloud/data_analytics/analytics/analytics_regions_comparison)
                 + [Automated Backups for Analytics](public_cloud/data_analytics/analytics/information_05_automated_backups)
+                + [Available connectors for Kafka Connect](public_cloud/data_analytics/analytics/kafka_connect_available_connectors)
             + [Getting started](public-cloud-data-analytics-kafka-getting-started)
                 + [Getting started with Analytics with Kafka](public_cloud/public_cloud_databases/kafka_02_getting_started)
                 + [Getting started with Analytics](public_cloud/data_analytics/analytics/analytics_getting_started)
