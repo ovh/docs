@@ -1,7 +1,7 @@
 ---
 title: Wybór odpowiedniej klasy Block Storage
 excerpt: Dowiedz się, jak wybrać odpowiednią klasę OVHcloud Block Storage. Porównaj wydajność, ceny i przypadki użycia, aby zoptymalizować swoje magazynowanie pod kątem kosztu i wydajności.
-updated: 2026-04-14
+updated: 2026-05-05
 ---
 
 ## Wprowadzenie
@@ -32,20 +32,21 @@ Klasa **Classic Volume** jest idealna do codziennych potrzeb aplikacji, w tym ba
 
 Ta klasa jest odpowiednia dla standardowych obciążeń, w których ważna jest niska opóźnienie i niezawodność, ale nie jest wymagana replikacja w wielu strefach.
 
-### High Speed Volume
+### High Speed Volume Gen2
 
-Klasa **High Speed Volume** występuje w dwóch generacjach, oferując różne profile wydajności:
+Klasa **High Speed Volume Gen2** oferuje wydajność, która skaluje się wraz z rozmiarem wolumenu — idealna do intensywnych obciążeń:
 
-- Gen 1: Do 3000 IOPS i 128 MB/s – odpowiednia do ogólnych obciążeń wysokiej wydajności.
-- Gen 2: 30 IOPS/GB (maks. 20000 IOPS) i 0,5 MB/s na GB (maks. 512 MB/s) – zalecana do intensywnych aplikacji wymagających maksymalnego I/O i przepustowości.
+- **IOPS**: 30 IOPS/GB (bazowo 3 000 IOPS dla 10–100 GB, do 20 000 IOPS)
+- **Przepustowość**: 0,5 MB/s/GB (bazowo 50 MB/s dla 10–100 GB, do 512 MB/s)
+- **Maksymalny rozmiar**: 12 TB
 
-Wybierz Gen 1 dla standardowych przypadków użycia wysokiej wydajności, a Gen 2 dla ciężkich obciążeń, takich jak analizy, duże bazy danych lub wysokowydajne obliczenia.
+Ta klasa jest zalecana do ciężkich obciążeń, takich jak analizy, duże bazy danych i wysokowydajne obliczenia.
 
 ### Tabela porównawcza
 
 | Klasa magazynowania | Przypadki użycia | Wydajność | Obsługiwane regiony | SLA dostępności | Replikacja | Uwagi |
 | --- | --- | --- | --- | --- | --- | --- |
-| **High Speed Volume** | Obciążenia wysokiej wydajności, analizy, duże bazy danych | **Gen 1**: Do 3000 IOPS, 128 MB/s <br><br> **Gen 2**: 30 IOPS/GB (maks. 20000 IOPS), 0,5 MB/s na GB (maks. 512 MB/s) | 3-AZ, 1-AZ, Local Zones | 99,9% | Zonalna | Zoptymalizowane NVMe, skalowalna wydajność |
+| **High Speed Volume Gen2** | Obciążenia wysokiej wydajności, analizy, duże bazy danych | 30 IOPS/GB (bazowo 3 000 IOPS, do 20 000 IOPS), 0,5 MB/s/GB (bazowo 50 MB/s, do 512 MB/s), maks. 12 TB | 3-AZ, 1-AZ, Local Zones | 99,9% | Zonalna | Zoptymalizowane NVMe, skalowalna wydajność |
 | **Regional Classic Volume** | Krytyczne aplikacje, systemy rozproszone | 500 IOPS gwarantowanych, 64 MB/s | 3-AZ | 99,99% | Wielostrefowa | NVMe over Fabric, wysoka dostępność |
 | **Classic Volume** | Codzienne obciążenia, maszyny wirtualne, kopie zapasowe | 500 IOPS gwarantowanych, 64 MB/s | 1-AZ, Local Zones | 99,9% | Zonalna | NVMe over Fabric, standardowa wydajność |
 

@@ -1,7 +1,7 @@
 ---
 title: Choisir la bonne classe de Block Storage
 excerpt: Découvrez comment choisir la bonne classe de Block Storage OVHcloud. Comparez performances, coûts et cas d’usage pour optimiser votre stockage en termes de prix et d’efficacité.
-updated: 2026-04-14
+updated: 2026-05-05
 ---
 
 ## Objectif
@@ -36,11 +36,11 @@ Cette classe convient aux workloads standards où la faible latence et la fiabil
 
 ### High Speed Volume Gen2
 
-La classe **High Speed Volume Gen2** offre des performances évolutives qui augmentent avec la taille du volume, ce qui en fait une solution idéale pour les workloads intensifs :
+La classe **High Speed Volume Gen2** offre des performances évolutives qui augmentent avec la taille du volume, ce qui en fait une solution idéale pour les workloads intensifs :
 
-- **IOPS** : 30 IOPS/Go (base 3 000 IOPS pour 10–100 Go, jusqu’à 20 000 IOPS)
-- **Débit** : 0,5 Mo/s/Go (base 50 Mo/s pour 10–100 Go, jusqu’à 512 Mo/s)
-- **Taille maximale** : 12 To
+- **IOPS** : 30 IOPS/Go (base 3 000 IOPS pour 10–100 Go, jusqu’à 20 000 IOPS)
+- **Débit** : 0,5 Mo/s/Go (base 50 Mo/s pour 10–100 Go, jusqu’à 512 Mo/s)
+- **Taille maximale** : 12 To
 
 Cette classe est recommandée pour les workloads lourds tels que l’analytique, les grandes bases de données et le calcul haute performance.
 

@@ -1,7 +1,7 @@
 ---
 title: How to create and configure an additional disk on an instance
 excerpt: Find out how to create an additional Block Storage volume, attach it to your Public Cloud instance, and configure it on Linux or Windows
-updated: 2026-05-04
+updated: 2026-05-05
 ---
 
 <style>
@@ -69,25 +69,28 @@ In 3AZ regions, Classic Volumes are regional services that use distributed erasu
 
 ///
 
-/// details | **High-Speed – Up to 3000 IOPS**
+/// details | **High Speed Gen2 – 30 IOPS/GB and up to 20,000 IOPS**
 
-The High-Speed volume is designed for applications requiring faster data access. With performance of up to 3000 IOPS, it is ideally suited to the following use cases:
+Generation 2 High Speed volumes are optimized for the most demanding workloads. Performance scales with volume size:
 
-- Transactional databases (MySQL, PostgreSQL, etc.)
-- Virtualization and container environments
-- Applications requiring low latency and high throughput
+- **IOPS**: 30 IOPS/GB (base 3,000 IOPS for 10–100 GB, up to 20,000 IOPS)
+- **Throughput**: 0.5 MB/s/GB (base 50 MB/s for 10–100 GB, up to 512 MB/s)
+- **Maximum size**: 12 TB
 
-///
-
-/// details | **High-Speed Gen2 – 30 IOPS/GB and up to 20,000 IOPS**
-
-Generation 2 High-Speed volumes are optimized for the most demanding workloads. With a performance of 30 IOPS/GB, up to 20,000 IOPS, this type of volume is recommended for:
+This type of volume is recommended for:
 
 - Big Data and real-time analysis
 - Artificial intelligence and machine learning
 - Large database processing and high-performance storage
 
 ///
+
+> [!primary]
+>
+> **You can no longer order High Speed (Gen1) volumes via the OVHcloud Control Panel.** They have been replaced by High Speed Gen2 volumes at the same price, with better performance for volumes above 100 GB. High Speed volumes remain available via the API, Terraform, and OpenStack.
+>
+> Existing High Speed volumes remain supported. You can also [change your Block Storage volume type](/pages/public_cloud/compute/switch_volume_type) to migrate them to Gen2.
+>
 
 ![volume_types](images/volume-types.png){.thumbnail}
 

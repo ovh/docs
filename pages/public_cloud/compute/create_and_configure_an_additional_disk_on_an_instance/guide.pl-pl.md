@@ -1,7 +1,7 @@
 ---
 title: 'Zarządzanie wolumenem instancji Public Cloud'
 excerpt: 'Dowiedz się, jak utworzyć dodatkowy wolumen Block Storage, przypisać go do instancji Public Cloud i skonfigurować w systemie Linux lub Windows'
-updated: 2026-05-04
+updated: 2026-05-05
 ---
 
 <style>
@@ -66,25 +66,28 @@ W regionach 3AZ woluminy Classic są usługami regionalnymi, które korzystają 
 
 ///
 
-/// details | **High-Speed - Do 3000 IOPS**
+/// details | **High Speed Gen2 – 30 IOPS/GB i do 20 000 IOPS**
 
-Wolumen High-Speed jest przeznaczony dla aplikacji wymagających szybszego dostępu do danych. Dzięki wydajności do 3000 IOPS rozwiązanie to jest idealne do następujących zastosowań:
+Wolumeny High Speed drugiej generacji są zoptymalizowane pod kątem najbardziej wymagających obciążeń. Wydajność skaluje się wraz z rozmiarem wolumenu:
 
-- Transakcyjne bazy danych (MySQL, PostgreSQL, etc.)
-- Środowiska wirtualizacji i kontenerów
-- Aplikacje wymagające krótkiego czasu odpowiedzi i dużej przepustowości
+- **IOPS**: 30 IOPS/GB (bazowo 3 000 IOPS dla 10–100 GB, do 20 000 IOPS)
+- **Przepustowość**: 0,5 MB/s/GB (bazowo 50 MB/s dla 10–100 GB, do 512 MB/s)
+- **Maksymalny rozmiar**: 12 TB
 
-///
-
-/// details | **High-Speed Gen2 - 30 IOPS/GB i do 20 000 IOPS**
-
-Generowanie 2 wolumenów High-Speed jest zoptymalizowane pod kątem najbardziej wymagających obciążeń. Przy wydajności 30 IOPS/GB i wydajności do 20 000 IOPS ten typ wolumenu jest zalecany do następujących zastosowań:
+Ten typ wolumenu jest zalecany do następujących zastosowań:
 
 - Big Data i analizy w czasie rzeczywistym
 - Sztuczna inteligencja i Machine Learning
 - Przetwarzanie dużych baz danych i przestrzeń dyskowa o wysokiej wydajności
 
 ///
+
+> [!primary]
+>
+> **Nie można już zamawiać wolumenów High Speed (Gen1) za pośrednictwem Panelu klienta OVHcloud.** Zostały one zastąpione przez wolumeny High Speed Gen2 w tej samej cenie, oferujące lepszą wydajność dla wolumenów powyżej 100 GB. Wolumeny High Speed pozostają dostępne za pośrednictwem API, Terraform oraz OpenStack.
+>
+> Istniejące wolumeny High Speed są nadal obsługiwane. Możesz również [zmienić typ wolumenu Block Storage](/pages/public_cloud/compute/switch_volume_type), aby przeprowadzić ich migrację do Gen2.
+>
 
 ![volume_types](images/volume-types.png){.thumbnail}
 
