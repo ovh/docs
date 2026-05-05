@@ -70,7 +70,7 @@ Click on the tabs below to view each of the **3** steps.
 >>
 >> Go to the [Domain names](/links/control-panel/web-domains) page, then choose the domain name concerned.
 >>
->> ![Domain names](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns.png){.thumbnail}
+>> ![Domain names](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
 >>
 > **Step 2**
 >>
@@ -121,7 +121,7 @@ Click on the tabs below to view each of the **3** steps.
 >>
 >> Go to the [Domain names](/links/control-panel/web-domains) page, then choose the domain name concerned.
 >>
->> ![Domain names](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns.png){.thumbnail}
+>> ![Domain names](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
 >>
 > **Step 2**
 >>

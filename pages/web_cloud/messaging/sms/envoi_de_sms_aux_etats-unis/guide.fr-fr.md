@@ -44,7 +44,6 @@ Vous pouvez demander la validation de plusieurs modèles de messages.
 
 #### 2.1 Depuis l'espace client
 
-<!-- CP-STEPS-START:add-template-cp -->
 Cliquez sur l'onglet `Message et campagne`{.action} puis sur `Gestion des SMS`{.action}.
 
 Enfin, cliquez sur `Gérer les modèles`{.action}.
@@ -66,7 +65,6 @@ Une pop-up apparaît avec les champs à remplir.
 | Description | Description du modèle                                                                                            |
 | Modèle      | Écrire le modèle comprenant la variable entre #                                                                  |
 
-<!-- CP-STEPS-END:add-template-cp -->
 
 #### 2.2 Via les API
 

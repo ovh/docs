@@ -128,7 +128,7 @@ The `PHP` and `Python` tabs contain the elements to be added to your script acco
 
 Any application that wants to communicate with the OVHcloud API must be declared in advance.
 
-To do this, click the following link: [https://ca.api.ovh.com/createToken/](https://ca.api.ovh.com/createToken/).
+To do this, click the following link: [https://auth.ca.ovhcloud.com/api/createToken](https://auth.ca.ovhcloud.com/api/createToken).
 
 Fill in your OVHcloud customer ID, password, and application name. The name will be useful later if you want to allow others to use it.
 
@@ -186,7 +186,7 @@ Here is an example of how to use the `/me` section to manage your OVHcloud accou
 ```python
 import ovh
 
-# Instantiate. Visit https://ca.api.ovh.com/createToken/?GET=/me
+# Instantiate. Visit https://auth.ca.ovhcloud.com/api/createToken?GET=/me
 # to get your credentials
 client = ovh.Client(
     endpoint='ovh-eu',

@@ -313,6 +313,7 @@ Before creating your first job, please take into account the following considera
 >> Click on your source bucket and go to the `Jobs`{.action} tab. You should be able to see all newly created jobs.
 >> 
 >> The tab displays the following information for each job :
+>>
 >> - ID: a unique ID that identifies a job
 >> - Creation date: the job creation timestamp in MM/dd/yyyy HH:mm format
 >> - Status: Created | Preparing | Active | Completed | Failed

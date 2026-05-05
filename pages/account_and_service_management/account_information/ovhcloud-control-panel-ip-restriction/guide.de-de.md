@@ -61,7 +61,6 @@ Wenn Sie zusätzlich ein 4G/5G-Netzwerk verwenden, vergessen Sie nicht, auch die
 
 ### Schritt 2: Einschränkung des Zugangs nach IP einrichten
 
-<!-- CP-STEPS-START:enable-ip-restriction -->
 Öffnen Sie die Seite [Kontosicherheit](/links/control-panel/account-security) und suchen Sie den Bereich **IP-Zugangsbeschränkung**.
 
 ![Access from Manager](images/ip2.png){.thumbnail}
@@ -91,11 +90,9 @@ Es gibt zwei Abschnitte zur Umsetzung der IP-Beschränkungen:
 >
 > Widmen Sie daher diesem Punkt besondere Aufmerksamkeit.
 >
-<!-- CP-STEPS-END:enable-ip-restriction -->
 
 #### Alle IP-Adressen mit Ausnahme berechtigter Adressen ablehnen
 
-<!-- CP-STEPS-START:add-allow-rule -->
 Um den Zugriff auf das OVHcloud Kundencenter nur für eine oder mehrere autorisierte IP-Adressen zu erlauben, klicken Sie auf den Button `Eine Einschränkung hinzufügen`{.action}.
 
 > Ersetzen Sie die in den folgenden Screenshots angezeigte IP-Adresse **192.0.2.0** mit Ihrer tatsächlich verwendeten Adresse.
@@ -123,11 +120,9 @@ Nachdem Sie **alle** Ihre öffentlichen IP-Adressen in der Rubrik `Konfigurierte
 ![Add allow rule](images/ip7.png){.thumbnail}
 
 > Ab sofort haben **ausschließlich** die im Bereich `Konfigurierte IP`{.action} autorisierten öffentlichen IP-Adressen Zugriff auf Ihr OVHcloud Kundencenter.
-<!-- CP-STEPS-END:add-allow-rule -->
 
 #### Alle IP-Adressen mit Ausnahme bestimmter Adressen erlauben
 
-<!-- CP-STEPS-START:add-deny-rule -->
 Mit der Kundencenter-Zugriffsbeschränkung nach IP können bestimmte IP-Adressen blockiert werden, während alle anderen öffentlichen Adressen generell für den Zugang erlaubt bleiben.
 
 Um den Zugang zu Ihrem OVHcloud Kundencenter für eine oder mehrere IP-Adressen zu sperren, klicken Sie im Bereich `Konfigurierte IP` auf den Button `Eine Einschränkung hinzufügen`{.action}.
@@ -154,7 +149,6 @@ Nachdem Sie **alle** abzulehnenden IP-Adressen in der Rubrik `Konfigurierte IP`{
 ![Add Deny rule](images/ip12.png){.thumbnail}
 
 > Ab sofort können alle öffentlichen IP-Adressen **außer** die im Bereich `Konfigurierte IP`{.action} abgelehnten öffentlichen IP-Adressen auf Ihr OVHcloud Kundencenter zugreifen.
-<!-- CP-STEPS-END:add-deny-rule -->
 
 ## Weiterführende Informationen
 

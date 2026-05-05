@@ -80,13 +80,11 @@ Będziesz informowany o etapach dostawy i będziesz wiedzieć, czy konieczne są
 
 ### Rezygnacja z usług
 
-<!-- CP-STEPS-START:service-termination -->
 Jeśli chcesz przestać korzystać z którejkolwiek z Twoich usług, możesz je anulować, przełączyć na tryb ręczny lub usunąć natychmiast na stronie [Moje rozwiązania i usługi](/links/control-panel/billing-services). Kliknij przycisk `...`{.action} odnoszący się do usługi, na którą chcesz działać, po czym kliknij jeden z poniższych przycisków:
 
 - `Skonfiguruj odnowienie`{.action}: na następnym ekranie będziesz mógł przenieść `Sposób odnowienia` usługi do `Recznie`. Następnie kliknij `Dalej`{.action} i `Zatwierdź`{.action}. Przed wygaśnięciem usługi otrzymasz kilka powiadomień e-mailem. Jeśli nie odnowiesz usługi, zostanie ona **definitywnie** usunięta.
 - `Rezygnuję z usługi`{.action}: w kolejnym oknie podaj powody rezygnacji, a następnie kliknij `Zatwierdź`{.action}. W dniu wygaśnięcia Twojej usługi zostanie ona **definitywnie** usunięta.
 - `Usuń natychmiast`{.action}: na następnym ekranie kliknij `Zatwierdź`{.action}. Otrzymasz e-mail z potwierdzeniem. Po zatwierdzeniu Twojej usługi zostanie **natychmiast i na stałe** usunięta.
-<!-- CP-STEPS-END:service-termination -->
 
 Aby uzyskać więcej informacji na temat rezygnacji z usług, zapoznaj się z przewodnikiem [Jak zrezygnować z usług OVHcloud](https://www.ovh.pl/ochrona-danych-osobowych/korzystanie-z-praw).
 

@@ -66,7 +66,6 @@ Plusieurs points sont à prendre en compte :
 
 ### Récupérer le bilan mensuel du mois précédent via l'espace client OVHcloud
 
-<!-- CP-STEPS-START:retrieve-cp-footprint -->
 1. Sur le [Mon compte](/links/control-panel/account-dashboard), dans la colonne de gauche, descendez jusqu'à la section contenant les **Liens utiles**, puis cliquez sur l'onglet `Mon bilan carbone`{.action}.
 1. Sur la nouvelle page qui apparaît, cliquez sur `Télécharger mon empreinte de [Mois] [Année]`{.action}.
 
@@ -75,7 +74,6 @@ Plusieurs points sont à prendre en compte :
 Vous pourrez récupérer chaque mois l'empreinte carbone du mois précédent pour vos services éligibles.
 
 Si vous avez besoin de l'empreinte carbone pour un mois antérieur au mois précédent le mois en cours, vous devrez obligatoirement passer par nos API pour le récupérer.
-<!-- CP-STEPS-END:retrieve-cp-footprint -->
 
 ### Récupérer un bilan mensuel antérieur au mois précédent via nos API
 

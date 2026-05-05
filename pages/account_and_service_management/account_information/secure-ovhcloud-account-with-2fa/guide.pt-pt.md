@@ -102,7 +102,6 @@ Na página [Segurança da conta](/links/control-panel/account-security), clique 
 
 > [!tabs]
 > SMS
->> <!-- CP-STEPS-START:enable-2fa-sms -->
 >> Escolha o método por SMS e clique em `Seguinte`{.action}.
 >>
 >>![2FA sms](images/2024-002-sms-choice.png){.thumbnail width="400"}<br>
@@ -115,9 +114,7 @@ Na página [Segurança da conta](/links/control-panel/account-security), clique 
 >>
 >>![2FA sms](images/2024-002-sms-code.png){.thumbnail width="400"}<br>
 >> A dupla autenticação está agora ativada. Também pode adicionar outros números de telefone.
->> <!-- CP-STEPS-END:enable-2fa-sms -->
 > Aplicação móvel
->> <!-- CP-STEPS-START:enable-2fa-otp -->
 >> Escolha o método por aplicação móvel e clique em `Seguinte`{.action}.
 >>
 >>![2FA mobileapp](images/2024-003-otp-choice.png){.thumbnail width="400"}<br>
@@ -127,9 +124,7 @@ Na página [Segurança da conta](/links/control-panel/account-security), clique 
 >>
 >>![2FA mobileapp](images/2024-003-otp-code.png){.thumbnail width="400"}<br>
 >> A dupla autenticação está agora ativada.
->> <!-- CP-STEPS-END:enable-2fa-otp -->
 > Chave de segurança
->> <!-- CP-STEPS-START:enable-2fa-u2f -->
 >> Escolha o método com chave de segurança e clique em `Seguinte`{.action}.
 >>
 >>![2FA securitykey](images/2024-004-u2f-choice.png){.thumbnail width="400"}<br>
@@ -142,13 +137,11 @@ Na página [Segurança da conta](/links/control-panel/account-security), clique 
 >>
 >> Quando a chave for reconhecida, pode também adicionar uma descrição.
 >> A dupla autenticação está agora ativada.
->> <!-- CP-STEPS-END:enable-2fa-u2f -->
 
 Uma vez adicionado o primeiro método, também pode **adicionar um ou dois outros métodos** para que possa aceder à sua conta de forma múltipla.
 
 ### Etapa 2 - Guardar os códigos de segurança <a name="codes"></a>
 
-<!-- CP-STEPS-START:save-backup-codes -->
 Quando adiciona uma autenticação dupla pela primeira vez, 10 códigos de segurança **de utilização única** são-lhe apresentados na Área de Cliente.
 
 **Guarde-os preciosamente**. Aconselhamos que os guarde num gestor de palavras-passe, tal como [KeePass](https://keepass.info/) ou [Bitwarden](https://bitwarden.com/) (as duas aplicações são gratuitas).
@@ -158,7 +151,6 @@ Quando adiciona uma autenticação dupla pela primeira vez, 10 códigos de segur
 Pode regenerar ou eliminar os códigos de segurança a partir da Área de Cliente:
 
 ![2FA](images/emergency-codes.png){.thumbnail}
-<!-- CP-STEPS-END:save-backup-codes -->
 
 > [!warning]
 >
@@ -209,13 +201,11 @@ Se o seu periférico (telemóvel/smartphone/chave de segurança) estiver perdido
 > - códigos de segurança válidos.
 >
 
-<!-- CP-STEPS-START:delete-device -->
 Para eliminar um periférico, aceda à página [Segurança da conta](/links/control-panel/account-security) e clique nos `...`{.action} à direita do seu periférico a eliminar e, em seguida, em `Eliminar`{.action}.
 
 ![2FA](images/2024-006-delete-device.png){.thumbnail}
 
 Um último código de validação ser-lhe-á enviado para o dispositivo que pretende eliminar. Introduza este código na janela que se abrir e clique em `Validar`{.action} para terminar a eliminação.
-<!-- CP-STEPS-END:delete-device -->
 
 Se já não tiver acesso ao dispositivo que pretende eliminar, não poderá eliminá-lo da Área de Cliente OVHcloud.
 Neste caso, **contacte diretamente** as nossas equipas de suporte [criando um ticket a partir do Centro de Ajuda](https://help.ovhcloud.com/csm?id=csm_get_help) ou seguindo o processo descrito [abaixo](#2FA-deletion).
@@ -232,11 +222,9 @@ Para desativar completamente a dupla autenticação na sua conta OVHcloud, é ne
 
 Para eliminar cada periférico, consulte a [parte dedicada deste guia](#delete-device).
 
-<!-- CP-STEPS-START:disable-2fa-codes -->
 Depois de eliminar todos os periféricos, desative os códigos de segurança clicando no botão `Desativar os códigos 2FA`{.action}.
 
 ![2FA códigos](images/disabling-codes.png){.thumbnail}
-<!-- CP-STEPS-END:disable-2fa-codes -->
 
 #### Se já não tem acesso à Área de Cliente OVHcloud <a name="2FA-deletion"></a>
 

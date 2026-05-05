@@ -1,7 +1,7 @@
 ---
 title: 'Zarządzanie wolumenem instancji Public Cloud'
-excerpt: 'Dowiedz się, jak przypisać nowy wolumen do instancji Public Cloud'
-updated: 2025-09-19
+excerpt: 'Dowiedz się, jak utworzyć dodatkowy wolumen Block Storage, przypisać go do instancji Public Cloud i skonfigurować w systemie Linux lub Windows'
+updated: 2026-05-04
 ---
 
 <style>
@@ -30,11 +30,10 @@ Może to być przydatne w następujących przypadkach:
 
 **Dowiedz się, jak utworzyć dodatkowy dysk i skonfigurować go na Twojej instancji.**
 
-## Wymagania początkowe początkowe
+## Wymagania początkowe
 
 - Posiadanie instancji [Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps) na koncie OVHcloud
-- Dostęp administratora (sudo) do Twojej instancji przez SSH
-- Przygotuj środowisko, jeśli chcesz korzystać z [Terraform](/pages/public_cloud/public_cloud_cross_functional/how_to_use_terraform)
+- Dostęp administratora (sudo) do Twojej instancji przez SSH (Linux) lub RDP (Windows)
 
 <!-- CP-NAV-START:publiccloud-projects -->
 ---
@@ -53,7 +52,7 @@ Może to być przydatne w następujących przypadkach:
 
 ### Rodzaje wolumenów
 
-OVHcloud oferuje trzy rodzaje wolumenów Block Storage, z których każdy jest dostosowany do specyficznych potrzeb w zakresie wydajności, pojemności i kosztów. Rozwiązania te pozwalają na przypisanie trwałych wolumenów przestrzeni dyskowej do Twoich instancji i gwarantują wysoki poziom niezawodności i dostępności. Jeśli ta funkcja jest dostępna, szyfrowanie można włączyć podczas tworzenia woluminu dla wszystkich typów woluminów z wyjątkiem woluminów typu Classic z wieloma atakami w regionach 3AZ.
+OVHcloud oferuje trzy rodzaje wolumenów Block Storage, z których każdy jest dostosowany do specyficznych potrzeb w zakresie wydajności, pojemności i kosztów. Rozwiązania te przypisują trwałe wolumeny przestrzeni dyskowej do Twoich instancji z wysokim poziomem niezawodności i dostępności. Jeśli ta funkcja jest dostępna, szyfrowanie można włączyć podczas tworzenia woluminu dla wszystkich typów woluminów z wyjątkiem woluminów typu Classic Multi-Attach w regionach 3AZ.
 
 /// details | **Classic - 500 IOPS gwarantowanych**
 
@@ -63,7 +62,7 @@ Wolumen Classic to niezawodne i ekonomiczne rozwiązanie do przechowywania danyc
 - Małe i średnie przechowywanie baz danych
 - Archiwizacja i kopie zapasowe danych
 
-W regionach 3AZ woluminy Classic są usługami regionalnymi, które korzystają z Erasure Coding rozproszonego między kilkoma strefami dostępności. Dzięki temu zyskujesz gwarancję dostępności danych bez wpływu na strefę i bez przerw w jej działaniu, pod warunkiem, że spełnione są wymagania odpornej architektury z możliwością wielokrotnego przyłączenia. Aby uzyskać więcej informacji, zapoznaj się z przewodnikiem "[Prawidłowe użycie i ograniczenia pamięci masowej Classic Multi-Attach w regionach 3AZ](/pages/public_cloud/compute/classic_block_multi_az_limitations)".
+W regionach 3AZ woluminy Classic są usługami regionalnymi, które korzystają z Erasure Coding rozproszonego między kilkoma strefami dostępności. Dzięki temu zyskujesz gwarancję dostępności danych bez wpływu na strefę i bez przerw w jej działaniu, pod warunkiem, że spełnione są wymagania odpornej architektury z możliwością wielokrotnego przyłączenia. Zapoznaj się z przewodnikiem "[Prawidłowe użycie i ograniczenia pamięci masowej Classic Multi-Attach w regionach 3AZ](/pages/public_cloud/compute/classic_block_multi_az_limitations)".
 
 ///
 
@@ -98,43 +97,44 @@ Generowanie 2 wolumenów High-Speed jest zoptymalizowane pod kątem najbardziej 
 
 > [!tabs]
 > **W Panelu klienta OVHcloud**
->> Otwórz `Block Storage`{.action} w menu po lewej stronie, pod **Storage & backup**.
 >>
->> W tej części kliknij przycisk `Utwórz wolumen`{.action}.
+>> Otwórz `Block Storage`{.action} w menu po lewej stronie, pod **Storage i backup**.
+>>
+>> Kliknij `Utwórz wolumen`{.action}.
 >>
 >> ![wybierz projekt](images/avolume01.png){.thumbnail}
 >>
->> Postępuj zgodnie z kolejnymi instrukcjami, aby wybrać lokalizację, typ dysku, szyfrowanie i pojemność dysku. Wprowadź nazwę wolumenu i zatwierdź, klikając `Utwórz wolumen`{.action}.
+>> Wybierz lokalizację, typ, szyfrowanie, pojemność oraz nazwę. Kliknij `Utwórz wolumen`{.action}.
 >>
 >> > [!warning]
 >> >
->> > Uwaga: Wolumen musi być utworzony w tym samym regionie, co instancja, do której ma zostać przypisany. Jeśli utworzysz ją w innym regionie, możesz ją usunąć i odtworzyć w odpowiednim regionie.
+>> > Uwaga: Wolumen musi być utworzony w tym samym regionie, co instancja, do której ma zostać przypisany. Jeśli utworzysz go w innym regionie, możesz go usunąć i odtworzyć w odpowiednim regionie.
 >> >
 >>
 >> ![create disk](images/avolume02.png){.thumbnail}
 >>
->> Nowy dysk pojawi się wówczas w panelu klienta.
+>> Dysk pojawi się w Panelu klienta.
 >>
 >> ![konfiguruj dysk](images/avolume03.png){.thumbnail}
 >>
->> Po prawej stronie wolumenu kliknij przycisk`...`{.action} i wybierz `Przypisz do instancji`{.action}.
+>> Kliknij przycisk `...`{.action} obok wolumenu i wybierz `Przypisz do instancji`{.action}.
 >>
 >> ![attach disk 01](images/avolume04.png){.thumbnail}
 >>
->> W oknie, które się pojawi, wybierz instancję z listy i kliknij na `Potwierdź`{.action}, aby przyłączyć dysk.
+>> Wybierz instancję i kliknij `Potwierdź`{.action}.
 >>
 >> ![attach disk 02](images/avolume05.png){.thumbnail}
 >>
->> Rozpocznie się proces przyłączania dysku do instancji. Może to potrwać kilka minut.
+>> Rozpocznie się proces przyłączania. Może to potrwać kilka minut.
 >>
 >> > [!warning]
 >> > Nie opuszczaj bieżącej strony w Panelu klienta OVHcloud, gdy dysk jest podłączony. Mogłoby to spowodować przerwanie procesu.
 >> >
 >>
-> **Via Terraform**
+> **Przez Terraform**
 >> > [!warning]
 >> >
->> Należy pamiętać, że typy woluminów "high-speed-gen2" i "luks" mogą nie być dostępne we wszystkich regionach.
+>> > Należy pamiętać, że typy woluminów `high-speed-gen2` i `luks` mogą nie być dostępne we wszystkich regionach.
 >> >
 >>
 >> Typy woluminów:
@@ -189,7 +189,7 @@ Generowanie 2 wolumenów High-Speed jest zoptymalizowane pod kątem najbardziej 
 >> }
 >> ```
 >>
->> Możesz utworzyć wolumen block storage i przypisać go do wybranej instancji. W tym celu wprowadź następującą komendę:
+>> Utwórz i przypisz wolumen, uruchamiając:
 >>
 >> ```console
 >> terraform apply
@@ -244,31 +244,31 @@ Generowanie 2 wolumenów High-Speed jest zoptymalizowane pod kątem najbardziej 
 >> ```
 >>
 > **W interfejsie Horizon**
->> Przejdź do sekcji rozwijanej `Volumes`{.action}, kliknij `Volumes`{.action}, a następnie `Create Volume`{.action}.
+>> Przejdź do `Volumes`{.action} w menu rozwijanym, a następnie kliknij `Create Volume`{.action}.
 >>
 >> ![create volume block storage](images/horizon_create_volume.png){.thumbnail}
 >>
->> Wpisz pole `Volume Name`{.action} i wybierz rodzaj wolumenu, który chcesz wybrać. Następnie kliknij `Create Volume`{.action}.
+>> Wprowadź nazwę wolumenu, wybierz typ, a następnie kliknij `Create Volume`{.action}.
 >>
 >> > [!warning]
 >> >
->> > Pamiętaj, że jeśli typ woluminu "high-speed-gen2" lub "luks" nie pojawia się na liście, oznacza to, że nie jest dostępny w tym regionie.
+>> > Pamiętaj, że jeśli typ woluminu `high-speed-gen2` lub `luks` nie pojawia się na liście, oznacza to, że nie jest dostępny w tym regionie.
 >> >
 >>
 >> ![create volume block storage 02](images/horizon_create_volume_02.png){.thumbnail width="1000"}
 >>
->> Aby przypisać wolumen do instancji, w linii wolumenu kliknij strzałka znajdująca się na końcu linii obok `Edit Volume`. Następnie kliknij `Manage Attachments`{.action}
+>> Kliknij ikonę strzałki na końcu wiersza `Edit Volume`, a następnie kliknij `Manage Attachments`{.action}.
 >>
 >> ![Attach a block storage volume to an instance](images/horizon_manage_attachments.png){.thumbnail}
 >>
->> Wybierz instancję, do której chcesz przypisać wolumen, następnie kliknij `Attach Volume`{.action}.
+>> Wybierz instancję i kliknij `Attach Volume`{.action}.
 >>
 >> ![Attach a block storage volume to an instance 02](images/horizon_manage_attachments_display.png){.thumbnail}
 >>
 > **Za pośrednictwem CLI OpenStack**
 >> > [!warning]
 >> >
->> > Pamiętaj, że jeśli typ woluminu "high-speed-gen2" lub "luks" nie pojawia się na liście, oznacza to, że nie jest dostępny w tym regionie.
+>> > Pamiętaj, że jeśli typ woluminu `high-speed-gen2` lub `luks` nie pojawia się na liście, oznacza to, że nie jest dostępny w tym regionie.
 >> >
 >>
 >> Typy woluminów:
@@ -295,7 +295,7 @@ Generowanie 2 wolumenów High-Speed jest zoptymalizowane pod kątem najbardziej 
 >> openstack volume type list
 >> ```
 >>
->> Utwórz wolumen, określając przynajmniej jego rozmiar (w GB) oraz jego typ spośród wcześniej wymienionych. Możesz również wskazać nazwę wolumenu na końcu zamówienia.
+>> Utwórz wolumen, określając co najmniej rozmiar (w GB) i typ. Opcjonalnie dodaj nazwę.
 >>
 >> ```bash
 >> openstack volume create --size 1 --type high-speed-gen2 volumeName # classic, high-speed, high-speed-gen2 or equivalent `-luks`
@@ -317,11 +317,41 @@ Generowanie 2 wolumenów High-Speed jest zoptymalizowane pod kątem najbardziej 
 >> +-----------+-------------------------------------+
 >> ```
 >>
-
+> **Przez OVHcloud CLI**
+>> > [!warning]
+>> >
+>> > Jeśli typ woluminu `high-speed-gen2` lub `luks` nie pojawia się na liście, oznacza to, że nie jest dostępny w tym regionie.
+>> >
+>>
+>> | Opcja | Opis |
+>> |--------|-------------|
+>> | `<region>` | Region, w którym wolumen zostanie utworzony (np. `GRA11`) |
+>> | `--name` | Nazwa wolumenu |
+>> | `--size` | Rozmiar wolumenu w GB |
+>> | `--type` | Typ wolumenu: `classic`, `high-speed`, `high-speed-gen2` lub równoważny wariant `-luks` |
+>> | `--wait` | Poczekaj na zakończenie tworzenia przed wyjściem |
+>>
+>> Utwórz wolumen, podając region, nazwę, rozmiar w GB oraz typ:
+>>
+>> ```bash
+>> ovhcloud cloud storage-block create <region> --name <volume-name> --size <size-in-GB> --type <volume-type> --wait
+>> ```
+>>
+>> Po utworzeniu wolumenu przypisz go do instancji:
+>>
+>> | Parametr | Opis |
+>> |-----------|-------------|
+>> | `<volume_id>` | ID wolumenu, który ma zostać przypisany |
+>> | `<instance_id>` | ID instancji, do której wolumen ma zostać przypisany |
+>>
+>> ```bash
+>> ovhcloud cloud storage-block attach <volume_id> <instance_id>
+>> ```
+>>
 
 ### Konfiguracja nowego dysku
 
-Poniższe przykłady zakładają, że jesteś zalogowany jako użytkownik z odpowiednimi uprawnieniami.
+Poniższe przykłady zakładają, że jesteś zalogowany z podwyższonymi uprawnieniami.
 
 #### Linux
 
@@ -343,7 +373,7 @@ vdb 254:16 0 10G 0 disk
 > W tym przykładzie `vda` odnosi się do dysku domyślnego instancji. Dodatkowy dysk zostanie nazwany `vdb`.
 >
 
-Utwórz partycję na dodatkowym dysku za pomocą poniższych poleceń.
+Utwórz partycję na dodatkowym dysku:
 
 Jeśli dodatkowy dysk jest mniejszy niż 2 TB:
 
@@ -414,7 +444,7 @@ Ignore/Cancel? I
 (parted) quit
 ```
 
-Następnie utworz nową partycję `vdb`, używając polecenia:
+Sformatuj partycję `vdb1`:
 
 ```bash
 sudo mkfs.ext4 /dev/vdb1
@@ -433,7 +463,7 @@ Creating journal (32768 blocks): done
 Writing superblocks and filesystem accounting information: done
 ```
 
-Zamontuj partycję za pomocą następujących poleceń:
+Zamontuj partycję:
 
 
 ```bash
@@ -444,7 +474,7 @@ sudo mkdir /mnt/disk
 sudo mount /dev/vdb1 /mnt/disk/
 ```
 
-Sprawdź punkt montowania za pomocą tego polecenia:
+Sprawdź punkt montowania:
 
 ```bash
 df -h
@@ -466,7 +496,7 @@ tmpfs 982M 0 982M 0% /sys/fs/cgroup
 > Montowanie nie jest stałe, ponieważ dysk zostanie odłączony podczas restartu instancji. Aby zautomatyzować montaż, edytuj plik `fstab`.
 >
 
-Pobierz UUID (blok ID) nowego wolumenu:
+Pobierz UUID nowego wolumenu:
 
 ```bash
 sudo blkid
@@ -478,43 +508,43 @@ sudo blkid
 /dev/vdb1: UUID="2e4a9012-bf0e-41ef-bf9a-fbf350803ac5" TYPE="ext4" PARTUUID="95c4adcc-01"
 ```
 
-Otwórz `/etc/fstab` z edytorem tekstu:
+Otwórz `/etc/fstab`:
 
 ```bash
 sudo nano /etc/fstab
 ```
 
-Dodaj poniższą linię do pliku i zastąp UUID Twoją:
+Dodaj poniższą linię, zastępując UUID własnym:
 
 ```console
 UUID=2e4a9012-bf0e-41ef-bf9a-fbf350803ac5 /mnt/disk ext4 nofail 0 0
 ```
 
-Zapisz i wyjdź z edytora. Dysk powinien być automatycznie montowany przy każdym restarcie.
+Zapisz i wyjdź. Dysk będzie automatycznie montowany po każdym restarcie.
 
 #### Windows
 
-Utworzenie połączenia RDP (Remote Desktop) z instancją Windows.
+Utwórz połączenie RDP (Remote Desktop) z instancją Windows.
 
-Po zalogowaniu kliknij prawym przyciskiem myszy przycisk `Start`{.action} i otwórz `Zarządzanie dyskami`{.action}.
+Kliknij prawym przyciskiem myszy `Start`{.action} i otwórz `Zarządzanie dyskami`{.action}.
 
 ![disk management](images/start-menu.png){.thumbnail}
 
-Nowy dysk będzie wyświetlany jako nieznany wolumen z nieprzydzieloną przestrzenią.
+Dysk pojawi się jako nieznany wolumen z nieprzydzieloną przestrzenią.
 
 ![nieznana objętość](images/disk-management-01.png){.thumbnail}
 
-Jeśli dysk jest pokazany tutaj jako offline, musi zostać najpierw zainicjowany. W tym celu możesz użyć [interfejsu użytkownika Windows](#initDiskManagement) lub [narzędzia DISKPART](#initDiskpart). W przeciwnym razie przeprowadź [formatowanie dysku w Zarządzaniu dyskami](#formatDiskManagement).
+Jeśli dysk jest offline, zainicjuj go przez [interfejs Windows](#initDiskManagement) lub [DISKPART](#initDiskpart). W przeciwnym razie przejdź do [formatowania](#formatDiskManagement).
 
 ##### **Zainicjowanie dysku w zarządzaniu dyskami** <a name="initDiskManagement"></a>
 
 Kliknij prawym przyciskiem myszy na dysk i wybierz `Online`{.action}.
 
-Jeśli dysk jest pokazany tutaj jako offline, jest to prawdopodobnie wynikiem polityki uruchomionej na instancji. Aby rozwiązać ten problem, kliknij prawym przyciskiem myszy na dysk i wybierz `Online`{.action}.
+Jeśli dysk jest offline, kliknij go prawym przyciskiem myszy i wybierz `Online`{.action}.
 
 ![offline disk](images/disk-management-02.png){.thumbnail}
 
-Kliknij prawym przyciskiem myszy i wybierz tym razem `Zainicjuj dysk`{.action}.
+Kliknij prawym przyciskiem myszy ponownie i wybierz `Zainicjuj dysk`{.action}.
 
 ![offline disk](images/disk-management-03.png){.thumbnail}
 
@@ -522,23 +552,23 @@ Następnie wybierz `MBR`{.action}, jeśli dodatkowy dysk ma mniej niż 2 TB, lub
 
 ![initialise disk](images/initialize_disk.png){.thumbnail}
 
-##### **Zainstaluj dysk za pomocą DISKPART** <a name="initDiskpart"></a>
+##### **Zainicjowanie dysku za pomocą DISKPART** <a name="initDiskpart"></a>
 
-Kliknij prawym przyciskiem myszy przycisk `Start`{.action} i otwórz `Uruchom`{.action}.
+Kliknij prawym przyciskiem myszy `Start`{.action} i otwórz `Uruchom`{.action}.
 
 ![initialise disk](images/diskpart.png){.thumbnail}
 
-Wpisz `cmd` i kliknij `OK`{.action}, aby otworzyć aplikację wiersza poleceń.
+Wpisz `cmd` i kliknij `OK`{.action}.
 
-![run szybki](images/run-prompt.png){.thumbnail}
+![run prompt](images/run-prompt.png){.thumbnail}
 
-Na zamówienie otwórz DISKPART:
+W wierszu poleceń otwórz DISKPART:
 
 ```console
 C:\> diskpart
 ```
 
-Użyj następującej serii poleceń DISKPART, aby umieścić dysk `online`:
+Wykonaj następujące polecenia DISKPART, aby przełączyć dysk w tryb online:
 
 ```console
 DISKPART> san
@@ -580,33 +610,33 @@ DISKPART> online disk
 DiskPart successfully onlined the selected disk.
 ```
 
-##### **Formacja dysku** <a name="formatDiskManagement"></a>
+##### **Formatowanie dysku** <a name="formatDiskManagement"></a>
 
-W narzędziu `Zarządzanie dyskami`{.action} kliknij prawym przyciskiem myszy nowy dysk i wybierz `Nowy prosty wolumen...`{.action}.
+W narzędziu `Zarządzanie dyskami`{.action} kliknij prawym przyciskiem myszy dysk i wybierz `Nowy prosty wolumen...`{.action}.
 
 ![format disk](images/format-disk-01.png){.thumbnail}
 
-W asystencie kliknij `Dalej`{.action}, aby określić rozmiar woluminu. Domyślnie musi być maksymalnie. Kliknij na `Dalej`{.action}, aby kontynuować.
+W kreatorze kliknij `Dalej`{.action}, aby zatwierdzić rozmiar woluminu (domyślnie maksymalny), a następnie kliknij `Dalej`{.action} ponownie.
 
 ![format disk](images/format-disk-03.png){.thumbnail}
 
-Pozostaw nowy domyślny list odtwarzacza lub wybierz inny, a następnie kliknij `Dalej`{.action}.
+Zaakceptuj literę dysku lub wybierz inną, a następnie kliknij `Dalej`{.action}.
 
 ![format disk](images/format-disk-04.png){.thumbnail}
 
-Nazwij wolumen (opcjonalnie) i potwierdź opcje formatowania, klikając `Dalej`{.action}.
+Nazwij wolumen (opcjonalnie) i kliknij `Dalej`{.action}.
 
 ![format disk](images/format-disk-05.png){.thumbnail}
 
-W ostatnim oknie kliknij `Zakończ`{.action}, aby sformatować dysk.
+Kliknij `Zakończ`{.action}, aby sformatować dysk.
 
 ![format disk](images/format-disk-06.png){.thumbnail}
 
-Dysk będzie następnie dostępny jako dysk w eksploratorze plików.
+Dysk pojawi się w Eksploratorze plików jako napęd.
 
 ### Odłącz wolumen
 
-Jeśli chcesz odłączyć wolumen od instancji, najlepszym rozwiązaniem jest odmontowanie wolumenu systemu operacyjnego przed odłączeniem go od instancji.
+Przed odłączeniem wolumenu odmontuj go w systemie operacyjnym.
 
 > [!warning]
 >
@@ -618,7 +648,7 @@ Oto jak **odmontować wolumin** z systemu operacyjnego przed odłączeniem go od
 > [!tabs]
 > **Linux**
 >>
->> Otwórz [połączenie SSH z Twoją instancją](/pages/public_cloud/compute/public-cloud-first-steps#krok-3-tworzenie-instancji), a następnie wpisz poniższe polecenie, aby wyświetlić powiązane dyski.
+>> [Połącz się przez SSH](/pages/public_cloud/compute/public-cloud-first-steps#connect-instance), a następnie wyświetl powiązane dyski:
 >>
 >> ```bash
 >> lsblk
@@ -632,70 +662,72 @@ Oto jak **odmontować wolumin** z systemu operacyjnego przed odłączeniem go od
 >> └─vdb1    8:1    0   10G  0 part /mnt/disk
 >> ```
 >>
->> Rozpocznij partycję, używając polecenia:
+>> Odmontuj partycję:
 >>
 >> ```bash
 >> sudo umount /dev/vdb1
 >> ```
 >>
->> Usuń ID urządzenia fstab, aby zakończyć proces demontażu. Jeśli nie, partycja zostanie ponownie uruchomiona.
->> 
+>> Usuń identyfikator urządzenia z pliku fstab; w przeciwnym razie partycja zostanie ponownie zamontowana po restarcie.
+>>
+
 >> ```bash
 >> sudo nano /etc/fstab
 >> ```
 >>
 >> Zapisz i wyjdź z edytora.
 >>
-> Windows
+> **Windows**
 >>
->> Utworzenie połączenia RDP (Remote Desktop) z instancją Windows.
+>> Utwórz połączenie RDP (Remote Desktop) z instancją Windows.
 >>
->> Po zalogowaniu kliknij prawym przyciskiem myszy menu `Rozpocznij`{.action} i otwórz `Zarządzanie dyskami`{.action}.
+>> Kliknij prawym przyciskiem myszy `Start`{.action} i otwórz `Zarządzanie dyskami`{.action}.
 >>
 >> ![zarządzanie dyskami](images/start-menu.png){.thumbnail}
 >>
->> Kliknij prawym przyciskiem myszy wolumen, który chcesz odmontować i wybierz `Zmień literę dysku i ścieżki...`{.action}.
+>> Kliknij prawym przyciskiem myszy wolumen i wybierz `Zmień literę dysku i ścieżki...`{.action}.
 >>
 >> ![unmount disk](images/unmountdisk.png){.thumbnail}
 >>
->> Kliknij `Usuń`{.action}, aby usunąć dysk.
+>> Kliknij `Usuń`{.action}.
 >>
 >> ![remove disk](images/changedriveletter.png){.thumbnail}
 >>
->> Następnie kliknij `Tak`{.action}, aby potwierdzić usunięcie litery z dysku.
+>> Kliknij `Tak`{.action}, aby potwierdzić.
 >>
 >> ![ponowny disk](images/confirmunmounting.png){.thumbnail}
 >>
->> Po zakończeniu możesz zamknąć okno zarządzania dyskiem.
+>> Po zakończeniu możesz zamknąć okno Zarządzania dyskami.
 >>
 
 Na koniec odłączymy wolumin od instancji:
 
 > [!tabs]
 > **W Panelu klienta OVHcloud**
->> Przejdź do sekcji `Public Cloud`{.action} w Twoim Panelu klienta OVHcloud i kliknij `Block Storage`{.action} w menu po lewej stronie w sekcji **Storage i Backup**.
+>>
+>> Otwórz `Block Storage`{.action} w menu po lewej stronie, pod **Storage i backup**.
 >>
 >> Kliknij przycisk `...`{.action} obok odpowiedniego wolumenu i wybierz `Odłącz od instancji`{.action}.
 >>
 >> ![detach disk](images/detachinstance.png){.thumbnail}
 >>
->> Kliknij `Potwierdź`{.action} w oknie, które się wyświetli, aby rozpocząć proces.
+>> Kliknij `Potwierdź`{.action}.
 >>
 >> ![confirm disk detach](images/confirminstancedetach.png){.thumbnail}
 >>
 > **Przez Terraform**
 >> 
->> Zacznij od usunięcia wierszy utworzonych wcześniej w pliku Terraform: 
+>> Usuń poniższe wiersze z pliku Terraform:
 >>
 >> ```python
->> # Dołącz wolumin do instancji
+>> # Attach the volume to the instance
 >> resource "openstack_compute_volume_attach_v2" "volume_attach" {
->> instance_id = "<twoja_instancja_id>"
+>>   instance_id = "<your_instance_id>"
 >>   volume_id   = openstack_blockstorage_volume_v3.terraform_volume.id
 >> }
 >> ```
 >>
->> Wprowadź następujące polecenie, aby sprawdzić, czy poprawny zasób zostanie usunięty:
+>> Wykonaj poniższą komendę, aby sprawdzić zaplanowane usunięcie:
 >>
 >> ```console
 >> terraform plan
@@ -726,7 +758,7 @@ Na koniec odłączymy wolumin od instancji:
 >> Plan: 0 to add, 0 to change, 1 to destroy.
 >> ```
 >>
->> Następnie zastosuj zmiany, wprowadzając następującą komendę:
+>> Zastosuj zmiany:
 >>
 >> ```console
 >> terraform apply
@@ -768,6 +800,18 @@ Na koniec odłączymy wolumin od instancji:
 >>
 >> Apply complete! Resources: 0 added, 0 changed, 1 destroyed.
 >> ```
+>>
+> **Przez OVHcloud CLI**
+>>
+>> | Parametr | Opis |
+>> |-----------|-------------|
+>> | `<volume_id>` | ID wolumenu, który ma zostać odłączony |
+>> | `<instance_id>` | ID instancji, od której wolumen ma zostać odłączony |
+>>
+>> ```bash
+>> ovhcloud cloud storage-block detach <volume_id> <instance_id>
+>> ```
+>>
 
 ## Sprawdź również
 

@@ -43,21 +43,17 @@ Da aprile 2025, i team OVHcloud hanno introdotto una nuova navigazione nello Spa
 
 ### Come accedere al mio account?
 
-<!-- CP-STEPS-START:access-account -->
 Accedi alla gestione del tuo account in qualsiasi momento cliccando sul tuo nome in alto a destra nello Spazio Cliente.
 
 ![spazio cliente - il mio account](images/01-account-access.png){.thumbnail width="1000"}
-<!-- CP-STEPS-END:access-account -->
 
 ### Come gestire il mio account e le mie informazioni?
 
-<!-- CP-STEPS-START:manage-account -->
 Fare clic sul proprio nome per aggiornare il profilo, i metodi di pagamento e il livello di supporto.<br>
 Lo stesso menu ti permette di accedere rapidamente a fatture, ordini e alla gestione dei tuoi servizi.<br>
 e i link alle email inviate da OVHcloud (`Le mie comunicazioni`{.action}) e ai diversi contatti associati ai servizi.
 
 ![spazio cliente - gestire il mio account](images/02-account-menu.png){.thumbnail width="1000"}
-<!-- CP-STEPS-END:manage-account -->
 
 /// details | Collegamenti utili
 
@@ -73,23 +69,19 @@ e i link alle email inviate da OVHcloud (`Le mie comunicazioni`{.action}) e ai d
 
 ### Come accedere ai miei servizi?
 
-<!-- CP-STEPS-START:access-services -->
 Il menu di accesso ai servizi OVHcloud è disponibile a sinistra dello Spazio Cliente. Ti consente di accedere a tutti i servizi di OVHcloud e completare facilmente la tua offerta con servizi aggiuntivi e su misura.
 
 I servizi di cui si dispone sono contrassegnati da una casellina blu<sup>1</sup>.
 
 ![spazio cliente - i miei servizi](images/03-services.png){.thumbnail width="1000"}
-<!-- CP-STEPS-END:access-services -->
 
 ### Collegamenti supplementari
 
-<!-- CP-STEPS-START:additional-shortcuts -->
 In basso a sinistra dello Spazio Cliente, i collegamenti permettono di scoprire i nostri venditori partner sul nostro Marketplace, restare aggiornati sullo stato dei servizi in tempo reale e stimare la propria impronta di carbonio.
 
 **Hai bisogno di aiuto?** Accedi al centro assistenza, alle richieste di assistenza e alla Live Chat per ottenere risposte alle tue domande.
 
 ![spazio cliente - collegamenti aggiuntivi](images/04-shortcuts.png){.thumbnail width="1000"}
-<!-- CP-STEPS-END:additional-shortcuts -->
 
 /// details | Collegamenti utili
 

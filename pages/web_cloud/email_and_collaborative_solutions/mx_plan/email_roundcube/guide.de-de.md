@@ -1,34 +1,33 @@
 ---
-title: Verwendung Ihres E-Mail-Accounts mit Roundcube Webmail
-updated: 2025-11-12
+title: 'E-Mail-Adresse über das Roundcube Webmail-Interface verwenden'
+updated: 2026-05-04
 ---
 
 ## Ziel
 
-Mit einem OVHcloud MX Plan können Sie E-Mails über eine Software oder ein Webmail-Interface versenden und empfangen. OVHcloud bietet einen E-Mail-Dienst namens Roundcube, der über  Webbrowser den Zugriff auf E-Mail-Accounts ermöglicht.
+Mit der OVHcloud MX Plan Lösung können Sie E-Mails über eine Drittanbieter-Software oder über Webmail versenden und empfangen. OVHcloud bietet einen Online-E-Mail-Dienst namens Roundcube, mit dem Sie über einen Webbrowser auf einen E-Mail-Account zugreifen können.
 
-**Diese Anleitung erklärt, wie Sie Roundcube Webmail für Ihre OVHcloud E-Mail-Accounts verwenden.**
+**Erfahren Sie, wie Sie das Roundcube Webmail-Interface für Ihre OVHcloud E-Mail-Adressen verwenden.**
 
 ## Voraussetzungen
 
-- Sie verfügen über einen OVHcloud **MX Plan**, als E-Mail-Dienst in unseren [Webhosting-Angeboten](/links/web/hosting) sowie in [Kostenloses Hosting 100M](/links/web/domains-free-hosting) enthalten oder separat als eigenständige Lösung bestellbar.
-- Sie verfügen über die Logindaten des MX Plan E-Mail-Accounts, den Sie verwenden möchten. Weitere Informationen finden Sie in unserer Anleitung "[Erste Schritte mit MX Plan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities)".
-- Ihre OVHcloud E-Mail-Lösung **MX Plan** muss die Web muss die Webmail-Technologie **Roundcube** verwenden. Um dies zu identifizieren, folgen Sie den unten stehenden Anweisungen.
+- Sie verfügen über eine OVHcloud E-Mail-Lösung **MX Plan**, die in unseren [Webhosting-Angeboten](/links/web/hosting) enthalten ist, in einem [kostenlosen Hosting-Angebot 100M](/links/web/domains-free-hosting) inbegriffen ist oder separat als eigenständige Lösung bestellt wurde.
+- Sie verfügen über die Logindaten der MX Plan E-Mail-Adresse, die Sie verwenden möchten. Weitere Informationen finden Sie in unserer Anleitung [Erste Schritte mit der MX Plan Lösung](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities).
+- Ihre OVHcloud E-Mail-Lösung **MX Plan** muss die Webmail-Technologie **Roundcube** verwenden. Folgen Sie den nachstehenden Anweisungen, um dies zu identifizieren.
 
 > [!primary]
 > 
-> **Wie kann ich die bei meinem MX Plan verwendete Technologie identifizieren?**
+> **Wie identifiziere ich die in meiner MX Plan Lösung verwendete Technologie?**
 >
-> Die für Ihr MX Plan Angebot verwendete E-Mail-Technologie ist durch das Webmail-Interface gekennzeichnet. Um ihn über Ihr Kundencenter zu identifizieren, folgen Sie dem folgenden Pfad:
+> Die für Ihre MX Plan Lösung verwendete E-Mail-Technologie ist anhand des Webmail-Interface erkennbar. Um dies in Ihrem Kundencenter zu identifizieren, folgen Sie diesem Pfad:
 >
-> 1. Verbinden Sie sich mit Ihrem [OVHcloud Kundencenter](/links/manager).
+> 1. Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein.
 > 1. Gehen Sie in den Bereich `Web Cloud`{.action}.
 > 1. Klicken Sie auf `MX Plan`{.action}.
 > 1. Wählen Sie die betreffende Domain aus.
-> 1. Wählen Sie in `Allgemeine Informationen`{.action} die Option „Standard“.
-> 1. Notieren Sie die unter **Webmail** verwendete Technologie.
+> 1. Im Tab `Allgemeine Informationen`{.action} (standardmäßig ausgewählt) prüfen Sie die unter dem Eintrag **Webmail** verwendete Technologie.
 >
-> ![MX PLAN](images/technology-email.png){.thumbnail .w-500}
+> ![MX plan](images/technology-email.png){.thumbnail .w-500}
 
 <!-- CP-NAV-START:web-mx-plan -->
 ---
@@ -45,400 +44,413 @@ Mit einem OVHcloud MX Plan können Sie E-Mails über eine Software oder ein Webm
 
 **Inhaltsübersicht**
 
-- [Einloggen in Roundcube Webmail](#roundcube-connexion)
-- [Roundcube Interface Hauptseite](#general-interface)
+- [Einloggen in das Roundcube Webmail-Interface](#roundcube-connexion)
+- [Hauptseite des Roundcube Webmail](#general-interface)
     - [Ordnerverwaltung (linke Spalte)](#leftcolumn)
-    - [Liste der empfangenen / gesendeten E-Mails (oberes Fenster)](#topwindow)
+    - [Liste der empfangenen/gesendeten E-Mails (oberes Fenster)](#topwindow)
         - [Anzeigetyp](#topwindow-display)
         - [Aktion auf einer ausgewählten E-Mail](#topwindow-action)
-        - [Nach E-Mails suchen](#topwindow-search)
-    - [Inhalt einer E-Mail (unteres Fenster)](#lowerwindow)
+        - [Nach einer E-Mail suchen](#topwindow-search)
+    - [Inhalt der E-Mail (unteres Fenster)](#lowerwindow)
 - [Einstellungen des Roundcube Interface konfigurieren](#roundcube-settings)
     - [Benutzeroberfläche](#user-interface-settings)
     - [Postfachansicht](#mail-view-settings)
-    - [E-Mail-Anzeigeeinstellungen](#mail-display-settings)
+    - [Nachrichtenanzeige](#mail-display-settings)
     - [Nachrichtenerstellung](#mail-writing-settings)
     - [Kontakte](#contacts-settings)
     - [Spezialordner](#special-folder-settings)
     - [Servereinstellungen](#server-settings)
     - [Verschlüsselung](#encryption)
-- [Identitäten und deren Signatur verwalten](#identity-signature)
-    - [Attribute einer Identität einstellen](#identity)
-    - [Signatur hinzufügen](#signature)
+- [Identitäten und ihre Signaturen verwalten](#identity-signature)
+    - [Identität](#identity)
+    - [Signatur](#signature)
 - [Adressbuch](#contact-book)
     - [Gruppen](#group)
     - [Kontakte](#contacts)
     - [Kontakte importieren](#import-contacts)
     - [Kontakte exportieren](#export-contacts)
-- [Schnellantworten (Templates](#responses)
-- [Auto-Responder hinzufügen](#automatic-respond)
+- [Schnellantworten (Templates)](#responses)
+- [Einen Auto-Responder hinzufügen](#automatic-respond)
 - [Passwort Ihres E-Mail-Accounts ändern](#password)
 - [E-Mail verfassen](#email-writing)
-- [Anwendungsfälle](#usecase)
+- [Anwendungsfall](#usecase)
 
-### Einloggen in Roundcube Webmail <a name="#roundcube-connexion"></a>
+### Einloggen in das Roundcube Webmail-Interface <a name="roundcube-connexion"></a>
 
 Gehen Sie auf die Seite [Webmail](/links/web/email). Geben Sie eine E-Mail-Adresse und das Passwort ein und klicken Sie dann auf `Login`{.action}. 
 
-![Hosting](images/webmail_login.png){.thumbnail}
+![hosting](images/webmail_login.png){.thumbnail}
 
-Sie werden dann zum Roundcube Interface weitergeleitet.
+Sie werden anschließend zum Roundcube Interface weitergeleitet.
 
-![Hosting](images/roundcube01.png){.thumbnail}
+![hosting](images/roundcube01.png){.thumbnail}
 
 > [!primary]
 > 
-> Beim ersten Anmelden unterscheidet sich das Roundcube Interface möglicherweise von dem in dieser Anleitung beschriebenen. Dies bedeutet, dass das "klassische" Aussehen auf Ihrem Interface eingestellt wurde. Um es zu ändern, folgen Sie dem Abschnitt "[Benutzeroberfläche](#user-interface-settings)" und wählen Sie die Ansicht "Larry" aus.
-> Das Erscheinungsbild der Benutzeroberfläche hat keinen Einfluss auf die Erläuterungen in dieser Dokumentation.
+> Beim ersten Einloggen in das Roundcube Interface kann das Erscheinungsbild von dem in dieser Dokumentation gezeigten abweichen. Dies bedeutet, dass das "klassische" Erscheinungsbild auf Ihrem Interface eingestellt wurde. Um dies zu ändern, folgen Sie dem Abschnitt "[Benutzeroberfläche](#user-interface-settings)" und wählen Sie die Ansicht "Larry" aus.
+> Das Erscheinungsbild des Interface hat keinen Einfluss auf die nachfolgenden Erklärungen in dieser Dokumentation.
 
 > [!warning]
 > 
-> Wenn Sie auf ein **O**utlook **W**eb **A**pp Interface (OWA) weitergeleitet werden, verwenden Sie die neueste Version des MX Plan Dienstes. Weitere Informationen zu Ihrem MX Plan finden Sie auf unserer Seite "[Erste Schritte mit MX Plan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities)".
+> Wenn Sie auf ein **O**utlook **W**eb **A**pp Interface (OWA) weitergeleitet werden, bedeutet dies, dass Sie die neueste Version der MX Plan Lösung verwenden. Weitere Informationen zu Ihrer MX Plan Lösung finden Sie auf unserer Seite [Erste Schritte mit der MX Plan Lösung](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities).
 >
-> Um sich mit dem **OWA** Interface vertraut zu machen, lesen Sie unsere [OWA Anleitung](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa).
+> Um sich mit dem **OWA**-Interface vertraut zu machen, lesen Sie unsere Anleitung [Verwendung eines E-Mail-Accounts mit dem OWA-Interface](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa).
 
-### Roundcube Interface Hauptseite <a name="general-interface"></a>
+### Hauptseite des Roundcube Webmail <a name="general-interface"></a>
 
-Sobald Sie in Ihren E-Mail-Account eingeloggt sind, haben Sie Zugriff auf das Roundcube Hauptfenster, das aus 3 Zonen besteht:
+Sobald Sie in Ihrem E-Mail-Account eingeloggt sind, haben Sie Zugriff auf das Roundcube Hauptfenster, das aus 3 Bereichen besteht:
 
-- [**Linke Spalte**](#leftcolumn): Die Ordnerstruktur Ihres E-Mail-Accounts, bestehend aus Ordnern und Unterordnern. Der Hauptordner ist der `Posteingang`.
+- [**Linke Spalte**](#leftcolumn): die Ordnerstruktur Ihres E-Mail-Accounts, bestehend aus Ordnern und Unterordnern. Der Hauptordner ist der `Posteingang`.
 
-- [**Oberes Fenster**](#topwindow): Die Liste der E-Mails, die im links ausgewählten Ordner enthalten sind.
+- [**Oberes Fenster**](#topwindow): die Liste der E-Mails, die im in der linken Spalte ausgewählten Ordner enthalten sind.
 
-- [**Unteres Fenster**](#lowerwindow): Der Inhalt der im oberen Fenster ausgewählten E-Mail.
+- [**Unteres Fenster**](#lowerwindow): der Inhalt der im oberen Fenster ausgewählten E-Mail.
 
 #### Ordnerverwaltung (linke Spalte) <a name="leftcolumn"></a>
 
 In diesem Bereich werden die Ordner Ihres E-Mail-Accounts angezeigt.
 
-Um die Ordner genauer zu verwalten, klicken Sie auf das Zahnrad am Ende der Spalte und anschließend auf `Ordner verwalten`{.action}.
+Um die Ordner genauer zu verwalten, klicken Sie auf das Zahnradsymbol am unteren Rand der Spalte und anschließend auf `Ordner verwalten`{.action}.
 
-![Hosting](images/roundcube02.png){.thumbnail}
+![hosting](images/roundcube02.png){.thumbnail}
 
-Um einen Ordner zu erstellen, klicken Sie auf `+`{.action} am Ende der Spalte `Ordner`.
+Um einen Ordner zu erstellen, klicken Sie auf den Button `+`{.action} am unteren Rand der Spalte `Ordner`.
 
-Um einen Ordner zu löschen, wählen Sie ihn aus, klicken Sie auf das Zahnrad am Ende der Spalte `Ordner` und dann auf `Löschen`{.action}. Um nur den Inhalt zu löschen und den Ordner zu behalten, klicken Sie auf `Leeren`{.action}.
+Um einen Ordner zu löschen, wählen Sie den betreffenden Ordner aus, klicken Sie auf das Zahnradsymbol am unteren Rand der Spalte `Ordner` und anschließend auf `Löschen`{.action}. Um den Inhalt zu leeren, ohne den Ordner zu entfernen, klicken Sie auf `Leeren`{.action}.
 
-Die Checkboxen entsprechen den "Abonnements". Das Abonnement legt fest, ob der Ordner im Webmail-Interface oder im E-Mail-Programm angezeigt werden soll, unter Beibehaltung des Ordnerinhalts. Dabei geht es lediglich darum, einen Ordner im E-Mail-Account zu verbergen oder anzuzeigen.
+Die Kontrollkästchen neben den Ordnern entsprechen den "Abonnements". Das Abonnement legt fest, ob der Ordner im Webmail-Interface oder in der E-Mail-Software angezeigt wird oder nicht, wobei der Inhalt des Ordners erhalten bleibt. Es geht nur darum, einen Ordner im E-Mail-Account ein- oder auszublenden.
 
 > [!primary]
 >
-> Ordner mit ausgegrauten Haken sind spezielle Ordner. Es ist nicht möglich, sie zu löschen oder ihr Abonnement zu entfernen.
+> Ordner mit einem grauen Kontrollkästchen sind Spezialordner. Sie können diese weder löschen noch ihr Abonnement aufheben.
 
-#### Liste der empfangenen / gesendeten E-Mails (oberes Fenster) <a name="topwindow"></a>
+#### Liste der empfangenen/gesendeten E-Mails (oberes Fenster) <a name="topwindow"></a>
 
-Dieses Fenster zeigt den Inhalt des in der linken Spalte ausgewählten Ordners an.
+Dieses Fenster zeigt den Inhalt des in der linken Spalte ausgewählten Ordners an. 
 
-##### **Anzeigetyp** <a name="topwindow-display"></a>
+##### Anzeigetyp <a name="topwindow-display"></a>
 
-Dieses Fenster kann individuell angepasst werden. Klicken Sie hierzu auf das Zahnrad oben links im Fenster.
+Dieses Fenster wird in einer anpassbaren Form dargestellt. Klicken Sie hierzu auf das Zahnradsymbol oben links im Fenster.
 
-![Hosting](images/roundcube03.png){.thumbnail}
+![hosting](images/roundcube03.png){.thumbnail}
 
-Folgende Einstellungen sind möglich:
+Vier Parameter können konfiguriert werden:
 
-- **Layout**: Ermöglicht die Neuanordnung der Verwaltungsfenster des E-Mail-Accounts.
-- **Spalten**: ermöglicht das Hinzufügen von anzuzeigenden Spalten (Prioritäten der E-Mails etc.).
-- **Sortieren nach**: Erlaubt die Wahl der Spalte, anhand derer die Standardsortierung durchgeführt wird.
-- **Sortierung**: Wechselt zwischen Aufwärtssortierung oder Abwärtssortierung, abhängig von der ausgewählten Spalte.
+- **Layout**: legt fest, wie die Verwaltungsfenster des E-Mail-Accounts angeordnet werden. Drei Optionen:
+    - `Breitbild`{.action}: drei Bereiche nebeneinander – Ordner, E-Mail-Liste und Lesebereich horizontal angeordnet;
+    - `Standard`{.action}: E-Mail-Liste oben, Lesebereich darunter (klassisches Layout);
+    - `Liste`{.action}: kein Lesebereich – E-Mails werden beim Anklicken im Vollbildfenster geöffnet.
 
-##### **Aktion auf einer ausgewählten E-Mail** <a name="topwindow-action"></a>
+- **Listenspalten**: Kontrollkästchen, die festlegen, welche Spalten in der E-Mail-Liste angezeigt werden. Die Spalten **Betreff** und **Threads** sind immer sichtbar. Verfügbare optionale Spalten: `Von`{.action}, `An`{.action}, `Von/An`{.action}, `Antwort an`{.action}, `Kopie`{.action}, `Datum`{.action}, `Größe`{.action}, `Status`{.action}, `Anhang`{.action}, `Markierung`{.action}, `Priorität`{.action}.
 
-Wenn Sie eine E-Mail ausgewählt haben, sind diverse Aktionen1 möglich:
+- **Sortierspalte**: ermöglicht die Auswahl der Standardsortierspalte. Verfügbare Optionen: `Keine`{.action}, `Eingangsdatum`{.action}, `Sendedatum`{.action}, `Betreff`{.action}, `Von`{.action}, `An`{.action}, `Von/An`{.action}, `Kopie`{.action} oder `Größe`{.action}.
 
-- `Antworten`{.action}: Dem Absender direkt antworten.
-- `Allen antworten`{.action}: Allen Empfängern in den Feldern "An" und "Kopie" antworten.
-- `Weiterleiten`{.action}: Die ausgewählte E-Mail an einen oder mehrere Empfänger weiterleiten.
-- `Löschen`{.action}: Die ausgewählte E-Mail in den "Papierkorb" verschieben.
-- `Spam`{.action}: Die ausgewählte E-Mail in den Spam-Ordner (Junk) verschieben.
-- `Markieren`{.action}: Den Status einer E-Mail manuell bestimmen.
+- **Sortierreihenfolge**: aufsteigend oder absteigend.
+
+Klicken Sie auf `Speichern`{.action}, um Ihre Auswahl zu übernehmen.
+
+> [!primary]
+>
+> Sie können die Liste auch **dynamisch sortieren**, indem Sie direkt auf die Kopfzeile einer angezeigten Spalte klicken (zum Beispiel **Datum**, **Betreff** oder **Größe**). Ein zweiter Klick auf dieselbe Spalte kehrt die Reihenfolge um.
+
+##### Aktion auf einer ausgewählten E-Mail <a name="topwindow-action"></a>
+
+Wenn eine E-Mail ausgewählt ist, können Sie verschiedene Aktionen darauf ausführen. Folgende Aktionen sind möglich:
+
+- `Antworten`{.action}: dem Absender direkt antworten.
+- `Allen antworten`{.action}: allen in den Feldern "An" und "Kopie" aufgeführten Empfängern direkt antworten.
+- `Weiterleiten`{.action}: die ausgewählte E-Mail an einen oder mehrere Empfänger weiterleiten.
+- `Löschen`{.action}: die ausgewählte E-Mail in den "Papierkorb" verschieben.
+- `Als Spam markieren`{.action}: die ausgewählte E-Mail direkt in den Spam-Ordner (Junk) verschieben und als **Spam** kennzeichnen.
+- `Markieren`{.action}: den Status einer E-Mail manuell festlegen.
 - `Mehr`{.action} 
     - `Nachricht drucken`{.action}.
-    - `Lokal speichern (.eml)`{.action}: Die komplette E-Mail inklusive Header als Datei sichern.
-    - `Als neue Nachricht öffnen`{.action}: Eine neue E-Mail auf der Grundlage der ausgewählten E-Mail erstellen.
-    - `Quelltext anzeigen`{.action}: Die E-Mail in ihrer Rohform inklusive Header anzeigen.
-    - `Verschieben nach`{.action}: Die E-Mail in einen Ordner verschieben.
-    - `Kopieren nach`{.action}: Die E-Mail in einen Ordner kopieren.
+    - `Lokal speichern (.eml)`{.action}: den Header der E-Mail und ihren Inhalt abrufen.
+    - `Als neue Nachricht öffnen`{.action}: eine neue E-Mail auf der Grundlage der ausgewählten E-Mail erstellen.
+    - `Quelltext anzeigen`{.action}: die E-Mail in ihrer Rohform inklusive Header anzeigen.
+    - `Verschieben nach`{.action}: die E-Mail in einen Ordner verschieben.
+    - `Kopieren nach`{.action}: die E-Mail in einen Ordner kopieren.
     - `In neuem Fenster öffnen`{.action}.
 
-![Hosting](images/roundcube04.png){.thumbnail}
+![hosting](images/roundcube04.png){.thumbnail}
 
 > [!primary]
 >
-> Wenn einer Ihrer Kontakte eine Lesebestätigung für eine E-Mail anfordert, erhalten Sie folgende Nachricht: `Der Absender dieser Nachricht bat um Benachrichtigung, wenn Sie diese Nachricht lesen. Möchten Sie den Absender benachrichtigen`?
-> 
+> Wenn einer Ihrer Kontakte eine Lesebestätigung anfordert, sobald Sie die zugehörige E-Mail lesen, erhalten Sie folgende Nachricht: `Der Absender dieser Nachricht hat um eine Benachrichtigung gebeten, wenn Sie diese Nachricht lesen. Möchten Sie den Absender benachrichtigen?`.
+>
 
-##### **Nach E-Mails suchen** <a name="topwindow-search"></a>
+##### Nach einer E-Mail suchen <a name="topwindow-search"></a>
 
-Im oberen rechten Bereich des Interface ist ein Suchwerkzeug verfügbar.
+Im oberen rechten Bereich des Interface steht ein Suchwerkzeug zur Verfügung.
 
-Klicken Sie auf den Pfeil rechts neben der Lupe, um die Suchfilter anzuzeigen.
+Geben Sie einen Begriff in das Suchfeld ein und bestätigen Sie mit der `Eingabetaste`{.action}: standardmäßig durchsucht Roundcube den gesamten aktuellen Ordner.
 
-#### Inhalt einer E-Mail (unteres Fenster) <a name="lowerwindow"></a>
+Klicken Sie auf den Pfeil rechts neben der Lupe, um die Suchfilter anzuzeigen: Sie können die Suche auf bestimmte Felder beschränken (Betreff, Nachrichtentext, Absender, Empfänger usw.) oder ihren Umfang auf alle Ordner ausweiten.
 
-Wird eine E-Mail aus der Liste ausgewählt, wird sie im unteren Fenster angezeigt.
+#### Inhalt der E-Mail (unteres Fenster) <a name="lowerwindow"></a>
 
-Rechts finden Sie Shortcuts für die folgenden Funktionen:
+Wenn eine E-Mail in der Liste ausgewählt wird, wird sie im unteren Fenster angezeigt.
 
-- Als original HTML anzeigen
-- Als reinen Text anzeigen
-- Antwort verfassen
-- Allen antworten
-- Weiterleiten
-- In neuem Fenster öffnen
+Auf der rechten Seite finden Sie Verknüpfungen für die folgenden Funktionen:
 
-![Hosting](images/roundcube05.png){.thumbnail}
+- `Im HTML-Format anzeigen`{.action} (Standard)
+- `Im Klartextformat anzeigen`{.action}
+- `Antworten`{.action}
+- `Allen antworten`{.action}
+- `Weiterleiten`{.action}
+- `In neuem Fenster öffnen`{.action}
+
+![hosting](images/roundcube05.png){.thumbnail}
 
 ### Einstellungen des Roundcube Interface konfigurieren <a name="roundcube-settings"></a>
 
-Die nachfolgenden Abschnitte entsprechen den Tabs, die den Teil `Einstellungen`{.action} im Abschnitt `Einstellungen`{.action} von Roundcube bilden. Ihre Beschreibung ist nicht erschöpfend.
+Die folgenden Abschnitte dieser Anleitung entsprechen den Tabs, aus denen sich der Bereich `Einstellungen`{.action} der Roundcube `Einstellungen`{.action} zusammensetzt. Ihre Beschreibung ist nicht erschöpfend.
 
-![Hosting](images/roundcube06.png){.thumbnail}
+![hosting](images/roundcube06.png){.thumbnail}
 
 #### Benutzeroberfläche <a name="user-interface-settings"></a>
 
-Hier legen Sie die verwendete `Sprache` des Roundcube Interface, die `Zeitzone`, die `Zeitformatierung` und die `Datumsformatierung` fest.
+Hier legen Sie die `Sprache` des Roundcube Interface, die `Zeitzone`, das `Zeitformat` und das `Datumsformat` fest.
 
-Die Option `Kurze Datumsanzeige` ermöglicht die Anzeige der Empfangs- und Versendedaten mit relativen Begriffen wie "Heute", "Gestern" etc.<br>
+Die Option `Kurze Datumsanzeige` ermöglicht die Anzeige des Empfangs-/Sendedatums mit relativen Begriffen wie "Heute", "Gestern" usw.<br>
+**Zum Beispiel**: Das heutige Datum ist der **19.05.2022**, eine am **17.05.2022** um **17:38** Uhr gesendete/empfangene E-Mail wird als **Di. 17:38** angezeigt, da die E-Mail dem vorhergehenden Dienstag entspricht.
 
-Das Feld `Den nächsten Eintrag nach Löschen oder Verschieben anzeigen` bedeutet, dass nach Löschen oder Verschieben einer E-Mail das Element der unteren Zeile automatisch ausgewählt wird, unabhängig von der Reihenfolge der Sortierung. 
+Das Kontrollkästchen `Den nächsten Eintrag nach Löschen oder Verschieben anzeigen` bedeutet, dass nach dem Löschen oder Verschieben einer E-Mail das Element der unteren Zeile automatisch ausgewählt wird, unabhängig von der Sortierreihenfolge.
 
-Sie können das Erscheinungsbild Ihrer Benutzeroberfläche auswählen. Sie können zwischen der Ansicht **Classic** und der Ansicht **Larry** wählen.
+Sie können das Erscheinungsbild Ihrer Benutzeroberfläche auswählen. Sie haben die Wahl zwischen der Ansicht **Classic** und der Ansicht **Larry**.
 
 #### Postfachansicht <a name="mail-view-settings"></a>
 
-Definieren Sie hier die bevorzugte Art, um E-Mails anzuzeigen und zu bearbeiten. Die Option `Layout` erlaubt es, die 3 im Abschnitt [Roundcube Interface Hauptseite](#topwindow) beschriebenen Fenster neu anzuordnen.
+Legen Sie hier das Layout fest, das zum Anzeigen und Bearbeiten von E-Mails verwendet wird. Die Option `Layout` ermöglicht es, die 3 im Abschnitt [Liste der empfangenen/gesendeten E-Mails](#topwindow) beschriebenen Fenster anzuordnen.
 
-#### E-Mail-Anzeigeeinstellungen <a name="mail-display-settings"></a>
+#### Nachrichtenanzeige <a name="mail-display-settings"></a>
 
 Legen Sie fest, wie E-Mails angezeigt werden.<br>
-Es wird empfohlen, das Feld `HTML anzeigen` anzuhaken, um sicherzustellen, dass vom Absender formatierte E-Mails korrekt angezeigt werden.<br>
-Darüber hinaus ist es ratsam, die Option `Externe Ressourcen erlauben (Bilder, Formate)` auf `nie` zu belassen. Dies verhindert, dass externe Elemente einer E-Mail geladen werden, die Schadcode enthält.
+Wir empfehlen, das Kontrollkästchen `HTML anzeigen` aktiviert zu lassen, um sicherzustellen, dass vom Absender formatierte E-Mails korrekt angezeigt werden.<br>
+Wir empfehlen außerdem, die Option `Externe Ressourcen erlauben (Bilder, Formate)` auf `nie` belassen. So wird verhindert, dass Elemente einer E-Mail geladen werden, die schädlich sein könnten.
 
 #### Nachrichtenerstellung <a name="mail-writing-settings"></a>
 
-Legen Sie die Standardform beim Verfassen einer E-Mail oder Antwort fest.<br>
-Es wird empfohlen, die Option `HTML-Nachrichten verfassen` auf `immer` zu stellen, um vom HTML-Editor zu profitieren und HTML-Signaturen korrekt beizubehalten.
+Legen Sie die Standardform beim Verfassen einer E-Mail oder einer Antwort fest.<br>
+Wir empfehlen, die Option `HTML-Nachrichten verfassen` auf `immer` zu setzen, um standardmäßig von den HTML-Bearbeitungswerkzeugen zu profitieren und eine HTML-Signatur nicht zu verändern.
 
 #### Kontakte <a name="contacts-settings"></a>
 
-Personalisieren Sie hier die Anordnung der Informationen in Ihrem Adressbuch.
+Passen Sie hier die Anordnung der Informationen in Ihrem Adressbuch an.
 
 #### Spezialordner <a name="special-folder-settings"></a>
 
-Roundcube verfügt über 4 Spezialordner: `Entwürfe`, `Gesendet`, `Spam`, `Gelöscht`.
+Roundcube verfügt über 4 Spezialordner: `Entwürfe`, `Gesendet`, `Spam`, `Papierkorb`.
 
-Wir raten dazu, diese nicht zu ändern, aber Sie können über die Drop-down-Menüs die Eigenschaften der Spezialordner neu erstellten Ordnern zuweisen.<br>
+Wir raten davon ab, diese zu ändern. Sie können jedoch das Verhalten eines Spezialordners einem später erstellten Ordner zuweisen, indem Sie die Drop-down-Menüs verwenden.<br>
 
-Sie können beispielsweise die Eigenschaft `Entwürfe` einem anderen Ordner zuweisen, den Sie erstellt haben, indem Sie auf die Dropdownliste klicken und diesen Ordner auswählen. Wenn kein Ordner zugewiesen ist, wird er automatisch auf die Option "Drafts" gesetzt. Die dort gespeicherten E-Mails gelten dann als Entwürfe bis sie tatsächlich versendet werden.
+**Zum Beispiel** können Sie das Verhalten "Entwürfe" einem von Ihnen erstellten Ordner zuweisen, indem Sie auf die Drop-down-Liste klicken und diesen Ordner auswählen. Wenn kein Ordner zugewiesen ist, wird er automatisch auf die Option "Entwürfe" gesetzt. Die dort gespeicherten E-Mails werden dann als Entwürfe betrachtet, bis sie tatsächlich versendet werden.
 
-> Beispiel: Sie erstellen einen Unterordner "Entwürfe von Kunden-E-Mails". Gehen Sie dann zu `Einstellungen`{.action}, `Spezialordner`{.action} und wählen die Option `Entwürfe`. Wählen Sie im Drop-down-Menü den Ordner "Entwürfe von Kunden-E-Mails" aus, um "Drafts" zu ersetzen. In diesem Ordner liegende E-Mails werden als Entwürfe behandelt.
+> In der Praxis erstellen Sie einen Unterordner mit dem Namen "Entwürfe von Kunden-E-Mails". Gehen Sie zu `Einstellungen`{.action} / `Spezialordner`{.action} und wählen Sie die Option "Entwürfe". Wählen Sie im Drop-down-Menü den Ordner "Entwürfe von Kunden-E-Mails" aus, um "Entwürfe" zu ersetzen. In diesem Ordner verfasste E-Mails werden als Entwürfe behandelt.
 
 #### Servereinstellungen <a name="server-settings"></a>
 
-In diesem Tab können Sie den Speicherplatz auf einem E-Mail-Account optimieren. Mit der Option `Papierkorb beim Abmelden leeren` wird vermieden, dass gelöschte Elemente sich dort ansammeln. Die Option `Nachrichten in Spam direkt löschen` löscht automatisch alle als SPAM markierten E-Mails.
+In diesem Tab können Sie den von einem E-Mail-Account belegten Speicherplatz optimieren. Die Option `Papierkorb beim Abmelden leeren` hilft, die Ansammlung gelöschter Elemente zu vermeiden. Die Option `Nachrichten in Spam direkt löschen` löscht automatisch alle als Spam eingestuften E-Mails.
 
 > [!warning]
 > 
-> Es ist nicht ratsam, die Option `Nachrichten in Spam direkt löschen` zu aktivieren, um zu verhindern, dass "False Positives" (fälschlicherweise als "SPAM" erkannte E-Mails) für den Empfangsserver als SPAM deklariert werden. Wenn diese Nachrichten zunächst im Ordner "Spam" abgelegt werden, kann noch überprüft werden, ob sich legitime E-Mails darunter befinden.
+> Wir raten davon ab, die Option `Nachrichten in Spam direkt löschen` zu aktivieren, falls vom Empfangsserver ein "False Positive" (eine fälschlicherweise als "Spam" eingestufte E-Mail) als Spam markiert wird. Wenn eine E-Mail im Ordner "Spam" abgelegt wird, können Sie noch überprüfen, ob die E-Mail legitim ist.
 
 #### Verschlüsselung <a name="encryption"></a>
 
-Wenn Ihr Browser dies zulässt, können Sie die Erweiterung "Mailvelope" installieren und aktivieren. Hierbei handelt es sich um eine Browsererweiterung, die PGP (**P**retty **G**ood **P**rivacy) in Ihre webbasierten E-Mails integriert. Das PGP-Verschlüsselungssystem und somit die Erweiterung "Mailvelope" ermöglichen:
+Wenn Ihr Browser dies zulässt, können Sie die Erweiterung "Mailvelope" installieren und aktivieren. Dabei handelt es sich um eine Browsererweiterung, die PGP (**P**retty **G**ood **P**rivacy) in Ihr Webmail integriert. Das PGP-Verschlüsselungssystem und damit die Erweiterung "Mailvelope" ermöglichen Folgendes:
 
-- Verschlüsseln und Entschlüsseln von E-Mails in Ihrem Browser
-- Inhalt Ihrer E-Mails gegenüber Ihrem E-Mail-Anbieter verbergen
+- E-Mails in Ihrem Browser verschlüsseln und entschlüsseln.
+- Den Inhalt Ihrer E-Mails vor Ihrem E-Mail-Anbieter geheim halten.
 
-So sind Sie allein in der Lage, Ihre E-Mails zu lesen. Diese Endung ist eine Möglichkeit, Ihr Webmail abzusichern, wenn Sie vertrauliche E-Mails erhalten.
+So können nur Sie Ihre E-Mails lesen. Diese Erweiterung ist eine Möglichkeit, Ihr Webmail abzusichern, wenn Sie vertrauliche E-Mails erhalten.
 
-Weitere Informationen finden Sie in den FAQ zu "Mailvelope" unter <https://mailvelope.com/faq>.
+Weitere Informationen finden Sie in den FAQ zu "Mailvelope" unter <https://mailvelope.com/de/faq>.
 
-### Identitäten und deren Signatur verwalten <a name="identity-signature"></a>
+### Identitäten und ihre Signaturen verwalten <a name="identity-signature"></a>
 
-Klicken Sie im oberen Menü auf `Einstellungen`{.action} und im linken Menü auf `Identitäten`{.action}. "Identität" erlaubt es, die an die Empfänger gesendeten Informationen zu personalisieren, wie zum Beispiel den Anzeigenamen oder die Signatur.
+Klicken Sie in Roundcube in der oberen Leiste auf `Einstellungen`{.action} und anschließend in der linken Spalte auf `Identitäten`{.action}. Die "Identität" ermöglicht es Ihnen, die an die Empfänger gesendeten Informationen wie den Anzeigenamen oder die Signatur anzupassen.
 
-![Hosting](images/roundcube07.png){.thumbnail}
+![hosting](images/roundcube07.png){.thumbnail}
 
-#### Attribute einer Identität einstellen <a name="identity"></a>
+#### Attribute einer Identität festlegen <a name="identity"></a>
 
-- **Angezeigter Name**: Dieser Name wird im "Absender" des Empfängers erscheinen.
-- **E-Mail**: Die Adresse, die als Absender der E-Mail angezeigt wird.
-- **Organisation**: Feld für ein Unternehmen, Vereine oder eine andere Einrichtung.
-- **Antwort an**: Eine andere E-Mail-Adresse als die des Absenders zuweisen.
-- **Blindkopie**: Eine Blindkopie an weitere Empfänger senden.
-- **Als Standard**: Gibt es mehrere Identitäten (Signaturen), wird diese bevorzugt angehängt.
-- **Signatur**: Die Fußzeile einer E-Mail bei deren Abfassung anpassen (Name, Vorname, Position, Sätze, Bilder, etc.).
-- **HTML-Signatur**: Aktiviert das HTML-Format für die Signatur.
+- **Angezeigter Name**: Dieser Name erscheint im Bereich "Absender" beim Empfänger.
+- **E-Mail**: Die Adresse, von der die E-Mail gesendet wird.
+- **Organisation**: ein Feld für einen Firmennamen, einen Verein oder eine andere Einrichtung.
+- **Antwort an**: weisen Sie eine andere Antwort-E-Mail-Adresse als die des Absenders zu.
+- **Blindkopie**: senden Sie beim Versand eine Blindkopie an eine E-Mail-Adresse.
+- **Als Standard festlegen**: Bei mehreren Identitäten (Signaturen) legen Sie diese als Standard fest.
+- **Signatur**: passen Sie die Fußzeile einer E-Mail beim Verfassen an (Name, Vorname, Position, Sätze, Bilder usw.).
+- **HTML-Signatur**: aktiviert das HTML-Format für die Signatur.
 
 > [!alert]
-> 
-> Das Feld **E-Mail** mit einer anderen E-Mail-Adresse als einer zu Ihrem Account gehörenden auszufüllen, wird als Absenderverschleierung eingestuft (*Spoofing*). Die für den Versand verwendete IP-Adresse kann bei Ihren Empfängern deshalb als "SPAM" deklariert oder gesperrt werden. 
+>
+> Das Ausfüllen des Feldes **E-Mail** mit einer anderen E-Mail-Adresse als der, mit der Sie eingeloggt sind, gilt als elektronischer Identitätsdiebstahl (*Spoofing*). Die für den Versand verwendete IP-Adresse kann von Ihren Empfängern als "gesperrt" und/oder als "Spam" eingestuft werden.
 
-#### Signatur hinzufügen <a name="signature"></a>
+#### Eine Signatur hinzufügen <a name="signature"></a>
 
-Standardmäßig ist das Feld `Signatur` auf reines Texformat eingestellt. Dieses Format erlaubt keine erweiterte Formatierung oder das Einfügen von Bildern in Ihre Signatur. Um die erweiterten Bearbeitungsoptionen für eine Signatur nutzen zu können, empfehlen wir die Aktivierung des HTML-Modus durch Klicken auf **HTML-Signatur** unter der Texteingabe.
+Standardmäßig ist das Feld `Signatur` im "Klartext"-Format. Dieses Format erlaubt keine erweiterte Bearbeitung oder das Einfügen eines Bildes in Ihre Signatur. Um die erweiterten Bearbeitungsoptionen für eine Signatur zu nutzen, empfehlen wir, den HTML-Modus durch Klicken auf **HTML-Signatur** unter dem Eingabefeld zu aktivieren.
 
 > [!warning]
-> 
-> Wenn die Signatur im HTML-Format vorliegt, muss zur Erstellung einer E-Mail auf den HTML-Modus umgestellt werden. Sie können dies als Standardoption für jede E-Mail-Erstellung im Bereich `Einstellungen`{.action} des Roundcube Interface aktivieren.
 >
-> Klicken Sie in der linken Spalte auf `Einstellungen`{.action} und dann auf `Nachrichtenerstellung`{.action}. Für den Eintrag **HTML-Nachrichten verfassen** wählen Sie `Immer`.
+> Wenn die Signatur im HTML-Format vorliegt, müssen Sie beim Verfassen einer E-Mail in den HTML-Modus wechseln. Sie können diese Option standardmäßig für jede E-Mail, die Sie verfassen, im Bereich `Einstellungen`{.action} des Roundcube Interface aktivieren.
+> Klicken Sie in der linken Spalte auf `Einstellungen`{.action} und dann auf `Nachrichtenerstellung`{.action}. Wählen Sie für den Eintrag **HTML-Nachrichten verfassen** die Option `Immer`.
 >
 
-Um ein Bild in eine Signatur einzufügen, muss die Datei auf einem Server (OVHcloud Hosting oder andere) bereitgestellt werden.<br>
-**Ein von einem lokalen Gerät hochgeladenes Bild wird nicht angezeigt werden.**.
+Um ein Bild in eine Signatur einzufügen, muss das Bild auf einem Server (einem OVHcloud Hosting-Angebot oder einem anderen) bereitgestellt werden.<br>
+**Das Hochladen eines Bildes von einem Computer ermöglicht nicht dessen Anzeige**.
 
-Klicken Sie auf den Button `< >`{.action} in der HTML-Werkzeugleiste und fügen Sie folgenden Code ein, wobei Sie `image-url` mit der Adresse (URL) Ihrer Bilddatei ersetzen und `Alternativtext` mit einem Text, der erscheint, wenn das Bild nicht angezeigt werden kann.
+Klicken Sie auf den Button `< >`{.action} in der HTML-Werkzeugleiste und fügen Sie dann den folgenden Code ein, wobei Sie `your-image-url` durch die URL des Bildes und `text-if-image-is-not-displayed` durch einen Text ersetzen, der das Bild ersetzt, falls es nicht angezeigt werden kann.
 
-```bash
-<img src="image-url" border="0" alt="Alternativtext"/>
+```html
+<img src="your-image-url" border="0" alt="text-if-image-is-not-displayed" />
 ```
 
-![Hosting](images/roundcube08.png){.thumbnail}
+![hosting](images/roundcube08.png){.thumbnail}
 
 ### Adressbuch <a name="contact-book"></a>
 
-Klicken Sie im oberen Menü auf Kontakte`{.action}, um zum Adressbuch zu gelangen. Es ist in **3 Spalten unterteilt**:
+Klicken Sie in der oberen Leiste auf `Kontakte`{.action}, um auf das Adressbuch zuzugreifen. Es ist in **3 Spalten** unterteilt:
 
-- **Gruppen**: Im Adressbuch können Sie Gruppen erstellen, um die Kontakte zu ordnen.
-- **Kontakte**: Kontakte im Adressbuch oder der ausgewählten Gruppe anzeigen.
-- **Kontaktdaten** oder **Kontakt hinzufügen**: Dieses Fenster wird angezeigt, wenn ein Kontakt ausgewählt wird oder erstellt wird. Dort können Sie die Informationen eines Kontakts einsehen oder ändern.
+- **Gruppen**: Im Adressbuch können Sie Gruppen erstellen, um Kontakte zu organisieren.
+- **Kontakte**: Zeigen Sie die Kontakte des Adressbuchs oder der ausgewählten Gruppe an.
+- **Kontakteigenschaften** oder **Kontakt hinzufügen**: Dieses Fenster wird angezeigt, wenn ein Kontakt ausgewählt oder erstellt wird. Sie können die Kontaktinformationen einsehen oder bearbeiten.
 
-![Hosting](images/roundcube09.png){.thumbnail}
+![hosting](images/roundcube09.png){.thumbnail}
 
 #### Gruppen <a name="group"></a>
 
-Gruppen sind Unterkategorien des Adressbuchs. Sie erlauben es, die Kontakte in Untereinheiten zu ordnen. So finden Sie zum Beispiel leichter einen Kontakt in einer Gruppe, die Sie erstellt haben, als im gesamten Adressbuch. So können Sie auch eine E-Mail versenden, indem Sie eine Gruppe pro Empfänger hinzufügen, anstatt die Kontakte der Gruppe einzeln hinzuzufügen.
+Gruppen sind Unterkategorien des Adressbuchs. Sie ermöglichen es Ihnen, Kontakte in Untergruppen zu organisieren. So ist es zum Beispiel einfacher, einen Kontakt in einer von Ihnen erstellten Gruppe zu finden als im gesamten Adressbuch. Sie ermöglichen außerdem das Versenden einer E-Mail, indem Sie eine Gruppe als Empfänger hinzufügen, anstatt die Kontakte der Gruppe einzeln hinzuzufügen.
 
-Um eine Gruppe zu erstellen, klicken Sie unten in der Spalte `Gruppen`{.action} auf den Button `+`. Legen Sie den Namen der Gruppe fest und klicken Sie auf `Speichern`{.action}, um zu bestätigen.
+Um eine Gruppe zu erstellen, klicken Sie auf den Button `+`{.action} am unteren Rand der Spalte `Gruppen`. Legen Sie den Namen der Gruppe fest und klicken Sie auf `Speichern`{.action}, um zu bestätigen.
 
-![Hosting](images/roundcube10.png){.thumbnail}
+![hosting](images/roundcube10.png){.thumbnail}
 
-Um einen Kontakt einer der Gruppen zuzuweisen, wählen Sie den Kontakt in der Spalte `Kontakte` aus und klicken Sie im neuen Fenster auf den Tab `Gruppen`{.action}. Wählen Sie die Gruppe aus, die Sie dem Kontakt zuweisen möchten.
+Um einen Kontakt einer der Gruppen zuzuweisen, wählen Sie einen Kontakt in der Spalte `Kontakte` aus und klicken Sie im erscheinenden Fenster auf den Tab `Gruppen`{.action}. Aktivieren Sie das Kontrollkästchen der Gruppe, die Sie dem Kontakt zuweisen möchten.
 
 #### Kontakte <a name="contacts"></a>
 
 Wählen Sie in der Spalte `Gruppen` das Adressbuch oder eine der Gruppen aus.
 
 > [!primary]
-> 
-> Wenn Sie in der ausgewählten Gruppe einen Kontakt erstellen, wird der Kontakt automatisch zur Gruppe hinzugefügt.
+>
+> Wenn Sie einen Kontakt aus einer ausgewählten Gruppe heraus erstellen, wird der Kontakt automatisch zur Gruppe hinzugefügt.
 
-Klicken Sie auf den Button `+`{.action} unten in der Spalte `Kontakte,` um einen Kontakt zu erstellen.
+Klicken Sie auf den Button `+`{.action} am unteren Rand der Spalte `Kontakte`, um einen Kontakt zu erstellen.
 
-![Hosting](images/roundcube11.png){.thumbnail}
+![hosting](images/roundcube11.png){.thumbnail}
 
 Geben Sie anschließend die Kontaktinformationen ein.
 
 > [!primary]
->
-> Sie können über das Drop-down-Menü `Ein Feld hinzufügen...` unter den Feldern `Name` und `Adresse` weitere Felder hinzufügen.
+> Sie können über das Drop-down-Menü `Feld hinzufügen...`{.action} weitere Felder hinzufügen, das sich unter den Feldern `Vorname` und `Adresse` befindet.
 
 #### Kontakte importieren <a name="import-contacts"></a>
 
 Klicken Sie im Fenster `Kontakte`{.action} in der oberen Leiste auf `Importieren`{.action}, um das Importfenster zu öffnen.
 
-- `Aus Datei importieren`: Wählen Sie eine CSV-Datei oder eine vCard-Datei auf Ihrem Computer aus. Kontakte in einer CSV-Datei müssen durch Kommas getrennt werden. Die Dateigröße darf 20 MB nicht überschreiten.
-- `Gruppenzuordnungen importieren`: Wenn die Kontakte in Ihrer Datei auf Gruppen verteilt sind, können Sie diese Option aktivieren, um diese Organisation wiederherzustellen. Wenn Sie diese Option auf `Keine` belassen, werden den Kontakten keine Gruppen zugewiesen.
-- `Bestehendes Adressbuch komplett ersetzen`: Wenn Ihre Kontakte bereits konfiguriert ist, empfehlen wir Ihnen, das Adressbuch zu exportieren, bevor Sie diese Option nutzen. Haken Sie dies ansonsten nur an, wenn Sie sicher sind, dass Sie das Adressbuch dauerhaft ersetzen möchten.
+- `Aus Datei importieren`: Wählen Sie eine CSV-Datei oder eine vCard-Datei von Ihrem Computer aus. Kontakte in einer CSV-Datei müssen durch Kommas getrennt sein. Die Datei darf nicht größer als 20 MB sein.
+- `Gruppenzuordnungen importieren`: Wenn die Kontakte in Ihrer Datei nach Gruppen sortiert sind, können Sie diese Option aktivieren, um diese Organisation beizubehalten, oder diese Option auf `Keine` belassen, sodass den Kontakten keine Gruppe zugewiesen wird.
+- `Bestehendes Adressbuch komplett ersetzen`: Wenn bereits ein Adressbuch konfiguriert ist, empfehlen wir Ihnen, dieses zu exportieren, bevor Sie diese Option aktivieren, oder sich zu vergewissern, dass Sie es dauerhaft ersetzen möchten.
 
-![Hosting](images/roundcube-import-contact.png){.thumbnail}
+![hosting](images/roundcube-import-contact.png){.thumbnail}
 
 #### Kontakte exportieren <a name="export-contacts"></a>
 
-Klicken Sie im Fenster `Kontakte`{.action} im oberen Menü rechts auf den Pfeil neben der Schaltfläche `Exportieren`{.action}.
+Klicken Sie im Fenster `Kontakte`{.action} in der oberen Leiste auf den Pfeil rechts neben dem Button `Exportieren`{.action}.
 
 Sie haben die Wahl zwischen:
 
-- `Alles exportieren`{.action}: Alle Kontakte werden in eine **.vcf** Datei exportiert.
-- `Auswahl exportieren`{.action}: Exportiert nur die Elemente, die Sie in der Spalte `Kontakte`{.action} ausgewählt haben.
+- `Alles exportieren`{.action}: Alle Kontakte werden in einer **.vcf**-Datei exportiert.
+- `Auswahl exportieren`{.action}: Es werden nur die Elemente exportiert, die Sie in der Spalte `Kontakte`{.action} ausgewählt haben.
 
-![Hosting](images/roundcube-export-contact.png){.thumbnail}
+![hosting](images/roundcube-export-contact.png){.thumbnail}
 
 ### Schnellantworten (Templates) <a name="responses"></a>
 
-Mit dieser Funktion können Sie Templates für das Verfassen einer E-Mail erstellen.
+Mit dieser Funktion können Sie Antwortvorlagen für das Verfassen einer E-Mail erstellen.
 
-Klicken Sie im oberen Menü auf `Einstellungen`{.action} und im linken Menü auf `Schnellantworten`{.action}.
+Klicken Sie in Roundcube in der oberen Leiste auf `Einstellungen`{.action} und anschließend in der linken Spalte auf `Schnellantworten`{.action}.
 
-Um eine Antwort hinzuzufügen, klicken Sie unten in der Spalte `Schnellantworten`{.action} auf den Button `+`{.action}.
+Um eine Antwort hinzuzufügen, klicken Sie auf den Button `+`{.action} am unteren Rand der Spalte `Schnellantworten`.
 
-![Hosting](images/roundcube12.png){.thumbnail}
+![hosting](images/roundcube12.png){.thumbnail}
 
 > [!primary]
-> 
-> "Schnellantworten" sind immer im Textformat verfasst.
+>
+> "Schnellantworten" werden im "Klartext"-Format verfasst.
 
-### Auto-Responder hinzufügen <a name="automatic-respond"></a>
+### Einen Auto-Responder hinzufügen <a name="automatic-respond"></a>
 
-Um Ihrem E-Mail-Account eine automatische Antwort hinzufügen, wenn Sie abwesend oder nicht verfügbar sind, kann ein Auto-Responder genutzt werden. Diese Funktion kann aber nicht im Webmail, sondern nur im [OVHcloud Kundencenter](/links/manager) im Verwaltungsinterface Ihrer E-Mail-Accounts aktiviert werden. Lesen Sie unsere Anleitung "[Einrichten von Auto-Antworten für E-Mails](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/feature_auto_responses/)".
+Sie möchten Ihrer E-Mail-Adresse eine automatische Antwort hinzufügen, wenn Sie abwesend oder nicht verfügbar sind. Diese Funktion kann nicht über das Webmail-Interface aktiviert werden, sondern über Ihr [OVHcloud Kundencenter](/links/manager) im Verwaltungsinterface Ihrer E-Mail-Adressen. Lesen Sie unsere Anleitung "[Einen Auto-Responder für Ihre E-Mail-Adresse erstellen](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/feature_auto_responses/)".
 
 ### Passwort Ihres E-Mail-Accounts ändern <a name="password"></a>
 
-Um das Passwort Ihres E-Mail-Accounts zu ändern, loggen Sie sich in Ihrem [OVHcloud Kundencenter](/links/manager) im Verwaltungsinterface Ihres E-Mail-Accounts ein. Lesen Sie unsere Anleitung "[Passwort eines E-Mail-Accounts ändern](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_change_password/)".
+Um Ihr E-Mail-Passwort zu ändern, müssen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) im Verwaltungsinterface Ihrer E-Mail-Adressen einloggen. Lesen Sie unsere Anleitung "[Passwort einer E-Mail-Adresse ändern](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_change_password/)".
 
 ### E-Mail verfassen <a name="email-writing"></a>
 
-Klicken Sie im Tab `E-Mail`{.action} im oberen Menü auf `Verfassen`{.action}.
+Klicken Sie im Tab `E-Mail`{.action} in der oberen Leiste auf `Verfassen`{.action}.
 
-Im Fenster zum Verfassen einer E-Mail finden Sie folgende Felder: 
+Im Fenster zum Verfassen einer E-Mail finden Sie folgende Felder:
 
-- **Von**: eine [Identität](#identity) für den Absender auswählen.
-- **An**: Empfänger und/oder eine [Empfängergruppe hinzufügen](#group).
+- **Von**: Wählen Sie eine [Identität](#identity) aus, um den Absender festzulegen.
+- **An**: Fügen Sie Empfänger und/oder eine [Empfängergruppe](#group) hinzu. Mit dem Button `+`{.action} rechts neben dem Feld können Sie mehrere Adressen eingeben.
 
 > [!primary]
-> 
-> Das Feld "**An**" darf nicht mehr als 100 Empfänger enthalten, die in einer [Gruppe](#group) enthaltenen Kontakte eingeschlossen.
+>
+> Das Feld **"An"** darf 100 Empfänger nicht überschreiten, einschließlich der Kontakte innerhalb einer [Gruppe](#group).
 
-- **Kopie hinzufügen**: Empfänger in Kopie hinzufügen.
-- **Blindkopie hinzufügen**: Empfänger in Blindkopie hinzufügen. Die anderen Empfänger der E-Mail werden die als Bcc eingetragenen Adressen nicht sehen.
-- **Followup-To hinzufügen**: Die E-Mail an Empfänger weiterleiten.
-- **Bearbeitungstyp**:  
-    - `Einfacher Text`: Nur Text ohne Formatierung.
-    - `HTML`: Formatierter Text. Oberhalb des Eingabefensters erscheint eine HTML-Werkzeugleiste.
-- **Priorität** für die E-Mail.
-- **Empfangsbestätigung (MDN)**: Der Empfänger erhält eine Empfangsbestätigungsanfrage.
-- **Übermittlungsbestätigung (DSN)** Statusbenachrichtigung, sobald die E-Mail an den Empfänger übermittelt wurde.
-- **Nachricht speichern in**: Einen Ordner auswählen, in dem eine Kopie der E-Mail gespeichert wird.
+- **Kopie**: Über den Button `Kopie hinzufügen`{.action} fügen Sie Empfänger als einfache Kopie hinzu.
+- **Blindkopie**: Über den Button `Blindkopie hinzufügen`{.action} fügen Sie Empfänger als Blindkopie hinzu. Die anderen Empfänger der E-Mail sehen die in Blindkopie eingetragenen Adressen nicht.
+- **Followup-To**: Über den Button `Followup-To hinzufügen`{.action} leiten Sie die E-Mail an Empfänger weiter.
+- **Bearbeitungstyp**:
+    - `Klartext`: nur Text, ohne Formatierung.
+    - `HTML`: Text mit Formatierung. Eine HTML-Werkzeugleiste erscheint oberhalb des Eingabefensters.
+- **Priorität** der E-Mail.
+- **Empfangsbestätigung**: Vom Empfänger wird eine Lesebestätigung angefordert.
+- **Übermittlungsstatusbenachrichtigung**, sobald die E-Mail erfolgreich an den Empfänger zugestellt wurde.
+- **Gesendete Nachricht speichern in**: Wählen Sie den Ordner aus, in dem eine Kopie der E-Mail gespeichert wird.
 
-Im oberen Menü sind folgende Aktionen verfügbar:
+In der oberen Leiste sind folgende Aktionen verfügbar:
 
-- `Abbrechen`{.action}: Erstellung einer E-Mail nach einer Bestätigungsanfrage abbrechen.
-- `Senden`{.action}: E-Mail versenden.
-- `Speichern`{.action}: E-Mail im Spezialordner "Entwurf" speichern.
-- `Rechtschreibung`{.action}: Überprüft den Text, mit Sprachauswahl.
-- `Anhang`{.action}: Datei an die E-Mail anhängen.
-- `Signatur`{.action}: Fügt die mit der ausgewählten [Identität](#identity) verbundene Signatur hinzu.
-- `Schnellantworten`{.action}: Fügt eine im Abschnitt [Schnellantworten](#responses) gespeicherte Vorlage hinzu.
+- `Abbrechen`{.action}: das Verfassen einer E-Mail abbrechen, mit einer Bestätigungsabfrage.
+- `Senden`{.action}: eine E-Mail versenden.
+- `Speichern`{.action}: eine E-Mail im Spezialordner "Entwürfe" speichern.
+- `Rechtschreibung`{.action}: prüft den Text, mit einem Menü zur Sprachauswahl.
+- `Anhang`{.action}: eine Datei an eine E-Mail anhängen.
+- `Signatur`{.action}: fügt die mit der ausgewählten [Identität](#identity) verknüpfte Signatur hinzu.
+- `Schnellantworten`{.action}: fügt eine zuvor gespeicherte Vorlage aus dem Abschnitt [Schnellantworten](#responses) hinzu.
 
-![Hosting](images/roundcube13.png){.thumbnail}
+![hosting](images/roundcube13.png){.thumbnail}
 
-### Anwendungsfälle <a name="usecase"></a>
+### Anwendungsfall <a name="usecase"></a>
 
 #### Fehler bei der Anforderungsüberprüfung
 
-Wenn Sie versuchen, auf Ihr Roundcube Webmail zuzugreifen, wird folgende Meldung angezeigt:
+Wenn Sie versuchen, auf Ihr Roundcube Webmail-Interface zuzugreifen, wird folgende Meldung angezeigt:
 
 ```console
-FEHLER BEI DER ANFORDERUNGSÜBERPRÜFUNG
+ANFORDERUNGSPRÜFUNG FEHLGESCHLAGEN
 Zu Ihrem Schutz ist der Zugriff auf diese Ressource gegen CSRF-Angriffe geschützt.
-Wenn Sie das sehen, haben Sie sich wahrscheinlich nicht abgemeldet, bevor Sie die Web-App verlassen haben.
-Um fortzufahren, ist nun eine menschliche Interaktion erforderlich.
-Bitte wenden Sie sich an den Administrator Ihres Servers.
+Wenn Sie dies sehen, haben Sie sich vor dem Verlassen der Webanwendung wahrscheinlich nicht abgemeldet.
+Eine Benutzerinteraktion ist jetzt erforderlich, um fortzufahren.
+Bitte wenden Sie sich an Ihren Serveradministrator.
 ```
 
-Wie in der Nachricht angegeben, wird bei Ihrem E-Mail-Account bereits ein Login registriert. Dies bedeutet, dass Ihr E-Mail-Account vom E-Mail-Server bereits verwendet wird und dass diese Sitzung zuerst geschlossen werden muss. Stellen Sie sicher, dass Ihr E-Mail-Account nicht bereits in Roundcube geöffnet ist. Leeren Sie auch den Cache (die zwischengespeicherten Daten) in Ihrem Browser.
+Wie in der Meldung angegeben, gilt Ihr E-Mail-Account als bereits eingeloggt. Dies wird als "Sitzung" bezeichnet. Es bedeutet, dass Ihr E-Mail-Account aus Sicht des E-Mail-Servers bereits in Verwendung ist und dass diese vorherige Sitzung geschlossen werden muss. Prüfen Sie, dass Ihr E-Mail-Account nicht bereits in Roundcube geöffnet ist. Leeren Sie auch die zwischengespeicherten Daten in Ihrem Webbrowser.
 
 ## Weiterführende Informationen
 
-[Erste Schritte mit MX Plan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities)
+[Erste Schritte mit der MX Plan Lösung](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities)
 
 [Passwort einer MX Plan E-Mail-Adresse ändern](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_change_password)
 
-[Einen Beantworter für seine E-Mail-Adresse erstellen](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/feature_auto_responses/)
+[Einen Auto-Responder für Ihre E-Mail-Adresse erstellen](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/feature_auto_responses/)
 
 [Filter für Ihre E-Mail-Adressen erstellen](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/feature_filters)
 
-[E-Mail Weiterleitungen verwenden](/pages/web_cloud/email_and_collaborative_solutions/common_email_features/feature_redirections)
+[E-Mail-Weiterleitungen verwenden](/pages/web_cloud/email_and_collaborative_solutions/common_email_features/feature_redirections)
 
 Treten Sie unserer [User Community](/links/community) bei.

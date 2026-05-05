@@ -31,7 +31,6 @@ Questa guida ti mostra come creare e aggiungere utenti API.
 
 ## Procedura
 
-<!-- CP-STEPS-START:instructions-overview -->
 ![sms-users](images/smsusers.png){.thumbnail}
 
 Disporre di un utente SMS API può essere utile per varie ragioni:
@@ -50,21 +49,17 @@ Per gestire al meglio il saldo del tuo account SMS, puoi fissare un limite e una
 - La **quota** è la quantità di crediti SMS a disposizione dell’utente API.
 
 - Il **limite** corrisponde alla soglia minima di crediti SMS che un utente API deve avere prima di ricevere un alert per ricaricare o meno il saldo dei crediti.
-<!-- CP-STEPS-END:instructions-overview -->
 
 ### Passaggio 1: Crea un utente API
 
-<!-- CP-STEPS-START:create-api-user -->
 Clicca sulla scheda `Utenti API`{.action}. Per aggiungere un utente, clicca sul pulsante `Azioni`{.action} e poi su `Aggiungi`{.action}.
 
 ![sms-users](images/smsusers01e-2021.png){.thumbnail}
 
 Assegna un nome all’utente API. La password utente dell’utente API deve essere composta da 8 caratteri alfanumerici.
-<!-- CP-STEPS-END:create-api-user -->
 
 ### Passaggio 2: Attribuisci una quota a un utente API
 
-<!-- CP-STEPS-START:set-quota -->
 È possibile gestire le quote dalla scheda `Utente API`{.action}. Clicca sui tre puntini `...`{.action} in corrispondenza dell’utente API e seleziona `Quota`{.action}.
 
 ![sms-users](images/smsusers03e-2021.png){.thumbnail}
@@ -82,11 +77,9 @@ A questo punto, è possibile effettuare due operazioni:
 >
 > Ad esempio: un account SMS dispone di un totale di 200 crediti. L’assegnazione di 150 crediti a un utente API andrà a dedurre 150 crediti dall’account SMS che, a quel punto disporrà, quindi di soli 50 crediti.
 >
-<!-- CP-STEPS-END:set-quota -->
 
 ### Passaggio 3: Attribuisci un limite a un utente API
 
-<!-- CP-STEPS-START:set-limit -->
 Per configurare un limite a un utente clicca sui tre puntini `...`{.action} e poi su `Limite`{.action}.
 
 A questo punto saranno disponibili le seguenti impostazioni:
@@ -101,11 +94,9 @@ A questo punto saranno disponibili le seguenti impostazioni:
 >
 
 ![sms-users](images/smsusers05-2021.png){.thumbnail}
-<!-- CP-STEPS-END:set-limit -->
 
 ### Passaggio 4: Definisci una restrizione IP per la funzione http2sms
 
-<!-- CP-STEPS-START:ip-restriction -->
 È possibile rendere sicura la funzione http2sms applicando alcune restrizioni IP per ciascun utente API.
 
 Per farlo, clicca sui tre puntini `...`{.action} a destra dell’utente e poi su `Restrizioni`{.action}.
@@ -115,11 +106,9 @@ Per l’invio delle richieste https, è possibile inserire fino a 5 diversi indi
 ![sms-users](images/smsusers06-2021.png){.thumbnail}
 
 Per maggiori informazioni sulla funzione http2sms, consulta la guida [Inviare SMS da un URL](/pages/web_cloud/messaging/sms/envoyer_des_sms_depuis_une_url_-_http2sms).
-<!-- CP-STEPS-END:ip-restriction -->
 
 ### Passaggio 5: Specifica un URL di Callback
 
-<!-- CP-STEPS-START:callback-url -->
 Per realizzare un follow-up personalizzato degli avvisi di ricevimento via SMS (Delivery reporting o DLR), è possibile specificare un URL chiamato Callback. Per farlo, clicca sui tre puntini `...`{.action} a destra in corrispondenza dell’utente e poi su `Callback`{.action}.
 
 ![sms-users](images/smsusers07-2021.png){.thumbnail}
@@ -131,7 +120,6 @@ Una volta aggiornato lo stato di invio dell’SMS, il servizio effettua una chia
 - data: data del DLR
 - descrizione : ID del DLR. I diversi ID sono riportati nella tabella qui di seguito.
 - descriptionDIR: descrizione dello stato del DLR
-<!-- CP-STEPS-END:callback-url -->
 
 #### I diversi codici ptt
 

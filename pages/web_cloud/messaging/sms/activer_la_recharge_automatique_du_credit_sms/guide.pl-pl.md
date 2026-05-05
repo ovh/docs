@@ -63,7 +63,6 @@ Aby nigdy nie zabrakło Ci zasileń na koncie, możesz aktywować automatyczne d
 > - na Twoim koncie OVHcloud dostępny jest sposób płatności SEPA.
 > - Twoja usługa SMS musi mieć przynajmniej 2 miesięcy stażu pracy.
 
-<!-- CP-STEPS-START:automatic-re-credit -->
 Przejdź do menu `Opcje`{.action} (1), a następnie `Automatyczne ładowanie`{.action} (2).
 
 ![zasilenie sms](images/smscredit01.png){.thumbnail}
@@ -79,7 +78,6 @@ Wypełnij wymagane pola:
 - Kliknij przycisk `Zatwierdź`{.action}, aby zastosować konfigurację.
 
 ![zasilenie sms](images/smscredit03.png){.thumbnail}
-<!-- CP-STEPS-END:automatic-re-credit -->
 
 ### Przenoszenie zasileń
 
@@ -88,7 +86,6 @@ Wypełnij wymagane pola:
 > Zasilenia można przenosić wyłącznie między kontami SMS należącymi do jednego identyfikatora OVHcloud. Przenoszenie zasileń między dwoma identyfikatorami OVHcloud jest niemożliwe.
 >
 
-<!-- CP-STEPS-START:transferring-credits -->
 Kliknij polecenie `Przeniesienie zasileń`{.action} z zakładki `Strona główna`{.action}.
 
 ![transfer zasileń SMS](images/credit-transfer01.png){.thumbnail}
@@ -102,7 +99,6 @@ Wybierz:
 Kliknij polecenie `Wyślij`{.action}, aby zatwierdzić przeniesienie. Jest on natychmiastowy.
 
 ![transfer zasileń SMS](images/credit-transfer02.png){.thumbnail}
-<!-- CP-STEPS-END:transferring-credits -->
 
 ## Sprawdź również
 

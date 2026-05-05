@@ -42,7 +42,6 @@ Lors de la création d’une instance Public Cloud, vous pouvez choisir entre un
 
 ### Depuis l’espace client OVHcloud
 
-<!-- CP-STEPS-START:switch-to-monthly-billing -->
 > [!warning]
 > La procédure suivante ne fonctionne pas pour les instances de troisième génération (exemple : B3-32). Pour être facturé mensuellement pour ce type d’instance, vous devez créer un [Savings Plan](/pages/public_cloud/public_cloud_cross_functional/savings_plans) pour ce modèle d’instance.
 >
@@ -56,7 +55,6 @@ Il vous faudra ensuite confirmer que vous souhaitez modifier le mode de facturat
 ![Confirmer la modification du mode de calcul des factures](images/confirm_to_monthly_updated.png){.thumbnail}
 
 Après validation de votre choix, vous recevrez immédiatement une facture mensuelle au prorata. La prochaine facture inclura la partie du mois à l'heure (le 1er du mois jusqu'au changement) et les nouveaux frais mensuels.
-<!-- CP-STEPS-END:switch-to-monthly-billing -->
 
 ### Depuis l'API Openstack
 

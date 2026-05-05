@@ -42,6 +42,7 @@ To follow this guide, ensure you meet the following requirements:
 
 ### Create an S3 compatible bucket
 
+<!-- CP-STEPS-START:create-an-s3-compatible-bucket -->
 To create your first **S3 compatible Object Storage bucket**, click [this link](/links/control-panel/publiccloud-projects) to access your Public Cloud project, then click the `Object Storage`{.action} button in the left-hand side bar, in the `Storage`{.action} section:
 
 ![S3 compatible bucket creation](images/s3-bucket-object-storage.png)
@@ -106,9 +107,11 @@ You should therefore find it in the list of your existing Object Storage buckets
 By clicking on its name, you can see the objects it contains (empty for now), as well as information such as its endpoint and location (region), which we will use later:
 
 ![S3 compatible bucket user](images/s3-bucket-overview.png)
+<!-- CP-STEPS-END:create-an-s3-compatible-bucket -->
 
 ### Edit your S3 compatible user roles
 
+<!-- CP-STEPS-START:edit-your-s3-compatible-user-roles -->
 Once your S3 compatible bucket has been created, you need to check that the associated user has the necessary rights to interact with your data and the OVHcloud AI Solutions (AI Notebooks, Training and Deploy).
 
 For Local Zone deployment, you did not need to associate a user with your bucket. However, it is important to check that you also have at least one user with the necessary rights.
@@ -120,9 +123,11 @@ Whether you have created a *new user* or use an *existing one*, check that this 
 ![S3 compatible user roles](images/user-roles.png)
 
 For more information about editing user rights, you can check the [dedicated documentation](/pages/public_cloud/ai_machine_learning/gi_01_manage_users).
+<!-- CP-STEPS-END:edit-your-s3-compatible-user-roles -->
 
 ### Retrieve user credentials
 
+<!-- CP-STEPS-START:retrieve-user-credentials -->
 Before continuing, you need to ensure that you have the following information so that you can authenticate via the CLI and use your bucket:
 
 - **Username**
@@ -139,9 +144,11 @@ If you have lost the password associated with this username, you can **regenerat
 Then, you need to retrieve the **access key** and **secret key** associated to this user. To do that, return to the `Object Storage`{.action} section. By default, you will redirected to the `My containers`{.action} section. Click on the `Object Storage Users`{.action} category. Here you will find the **access key** for each of your existing users. You can also view the **secret key** by clicking the `...`{.action} button, then on `view the secret key`{.action}, as showed on the screnshot below:
 
 ![user keys](images/s3-user-retrieve-keys.png)
+<!-- CP-STEPS-END:retrieve-user-credentials -->
 
 ### Set up proper access permissions
 
+<!-- CP-STEPS-START:set-up-proper-access-permissions -->
 It is also important to ensure that this user has the appropriate permissions to access all the files in the bucket. Otherwise, you may encounter permission issues during the AI Solution deployment process.
 
 To grant access to your bucket for your user, click the `...`{.action} button located next to your bucket name. Then, click the `Add a user to my container` option and select the same user you used during bucket creation.
@@ -149,6 +156,7 @@ To grant access to your bucket for your user, click the `...`{.action} button lo
 ![s3 bucket add user](images/s3-bucket-add-user.png)
 
 By following these steps, you can grant the necessary permissions to your user, ensuring a smooth deployment process for your notebook, job, or app.
+<!-- CP-STEPS-END:set-up-proper-access-permissions -->
 
 ### Add a datastore via the `ovhai` CLI
 
@@ -304,6 +312,7 @@ DATE                     NAME
 
 Before connecting your bucket to the AI solutions, you are going to upload a few objects to it (images, codes, models, ...) so that you can then retrieve these files from the AI Solutions. You can do this using the Control Panel (UI) or the `ovhai` CLI:
 
+<!-- CP-STEPS-START:upload-files-cp-tab -->
 > [!tabs]
 > **Using the Control Panel (UI)**
 >>
@@ -358,6 +367,7 @@ Before connecting your bucket to the AI solutions, you are going to upload a few
 >> ```console
 >> ovhai bucket object upload --help
 >> ```
+<!-- CP-STEPS-END:upload-files-cp-tab -->
 
 ### Use S3 compatible buckets with AI Solutions
 

@@ -1,4 +1,4 @@
----
+﻿---
 title: Détecter et terminer les requêtes de longue durée de Public CLoud Databases pour PostgreSQL (EN)
 excerpt: This guide explains how to detect and terminate specific sessions via the OVHcloud Control Panel and Command Line Interface (CLI)
 updated: 2023-02-15

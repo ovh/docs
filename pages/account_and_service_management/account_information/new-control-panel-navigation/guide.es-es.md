@@ -43,21 +43,17 @@ Desde abril de 2025, el equipo de OVHcloud ha introducido una nueva navegación 
 
 ### ¿Cómo acceder a mi cuenta?
 
-<!-- CP-STEPS-START:access-account -->
 Acceda a la gestión de su cuenta en todo momento haciendo clic en su nombre en la esquina superior derecha del área de cliente.
 
 ![área de cliente - mi cuenta](images/01-account-access.png){.thumbnail width="1000"}
-<!-- CP-STEPS-END:access-account -->
 
 ### ¿Cómo gestionar mi cuenta y mis datos?
 
-<!-- CP-STEPS-START:manage-account -->
 Haga clic en su nombre para actualizar su perfil, formas de pago y nivel de soporte.<br>
 El mismo menú le permite acceder rápidamente a sus facturas, pedidos y a la gestión de sus servicios.<br>
 También encontrará enlaces a los correos electrónicos de servicio enviados por OVHcloud (`Mis mensajes`{.action}) y los distintos contactos asociados a sus servicios.
 
 ![área de cliente - gestionar mi cuenta](images/02-account-menu.png){.thumbnail width="1000"}
-<!-- CP-STEPS-END:manage-account -->
 
 /// details | Enlaces útiles
 
@@ -73,23 +69,19 @@ También encontrará enlaces a los correos electrónicos de servicio enviados po
 
 ### ¿Cómo acceder a mis servicios?
 
-<!-- CP-STEPS-START:access-services -->
 El menú de acceso a los servicios de OVHcloud se encuentra a la izquierda del área de cliente. Todos los servicios de OVHcloud están disponibles, lo que le permite completar fácilmente su oferta con servicios adicionales y adaptados.
 
 Los servicios que usted posea están marcados con una etiqueta azul<sup>1</sup>.
 
 ![área de cliente - Mis servicios](images/03-services.png){.thumbnail width="1000"}
-<!-- CP-STEPS-END:access-services -->
 
 ### Accesos directos adicionales
 
-<!-- CP-STEPS-START:additional-shortcuts -->
 En la parte inferior izquierda del área de cliente, encontrará atajos para descubrir a nuestros vendedores asociados en nuestro Marketplace, mantenerse informado del estado de sus servicios en tiempo real y estimar su huella de carbono.
 
 **¿Necesita ayuda?** Acceda al Centro de ayuda, a sus solicitudes de asistencia y al Live Chat para obtener respuestas a sus preguntas.
 
 ![área de cliente - accesos directos adicionales](images/04-shortcuts.png){.thumbnail width="1000"}
-<!-- CP-STEPS-END:additional-shortcuts -->
 
 /// details | Enlaces útiles
 

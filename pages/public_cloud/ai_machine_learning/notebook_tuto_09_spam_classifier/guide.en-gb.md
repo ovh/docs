@@ -39,6 +39,7 @@ You can launch your notebook from the [OVHcloud Control Panel](/links/manager) o
 
 ### Launching a Jupyter notebook with "Miniconda" via UI
 
+<!-- CP-STEPS-START:launch-notebook-ui -->
 To launch your notebook from the [OVHcloud Control Panel](/links/manager), refer to the following steps.
 
 #### Code editor
@@ -69,6 +70,8 @@ You can choose the number of CPUs or GPUs you want.
 >
 > Here, using `4 CPU` is sufficient.
 >
+
+<!-- CP-STEPS-END:launch-notebook-ui -->
 
 ### Launching a Jupyter notebook with "Miniconda" via CLI
 

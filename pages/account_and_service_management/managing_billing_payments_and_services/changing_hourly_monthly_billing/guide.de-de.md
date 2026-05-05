@@ -42,7 +42,6 @@ Instanzen mit monatlicher Fälligkeit können im Voraus bezahlt werden und werde
 
 ### Über das OVHcloud Kundencenter
 
-<!-- CP-STEPS-START:switch-to-monthly-billing -->
 > [!warning]
 > Das folgende Verfahren funktioniert nicht bei Instanzen der dritten Generation (Beispiel: B3-32). Um die monatliche Abrechnung für diese Art von Instanz zu erhalten, müssen Sie einen [Savings Plan](/pages/public_cloud/public_cloud_cross_functional/savings_plans) für diese Instanz erstellen.
 >
@@ -56,7 +55,6 @@ Sie müssen dann bestätigen, dass Sie die Abrechnungsart ändern möchten:
 ![Confirm billing calculation change](images/confirm_to_monthly_updated.png){.thumbnail}
 
 Sobald Sie Ihre Wahl bestätigt haben, erhalten Sie eine anteilige Monatsrechnung. Die nächste Rechnung enthält den Stundensatzanteil des Monats (1. des Monats bis zur Änderung) und die neue monatliche Gebühr.
-<!-- CP-STEPS-END:switch-to-monthly-billing -->
 
 ### Über die OpenStack API
 

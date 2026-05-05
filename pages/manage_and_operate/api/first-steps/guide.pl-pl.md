@@ -132,7 +132,7 @@ Zakładki `PHP` i `Python` zawierają elementy, które należy dodać do skryptu
 
 Każda aplikacja, która chce komunikować się z API OVHcloud, musi zostać zgłoszona z wyprzedzeniem.
 
-W tym celu kliknij link: [https://eu.api.ovh.com/createToken/](https://eu.api.ovh.com/createToken/).
+W tym celu kliknij link: [https://auth.eu.ovhcloud.com/api/createToken](https://auth.eu.ovhcloud.com/api/createToken).
 
 Wpisz identyfikator klienta, hasło i nazwę aplikacji. Nazwa będzie pomocna później, jeśli chcesz zezwolić innym na jej używanie.
 
@@ -190,7 +190,7 @@ Przykład zastosowania sekcji `/me`, która pozwala na zarządzanie kontem OVHcl
 ```python
 import ovh
 
-# Instantiate. Visit https://api.ovh.com/createToken/?GET=/me
+# Instantiate. Visit https://auth.eu.ovhcloud.com/api/createToken?GET=/me
 # to get your credentials
 client = ovh.Client(
     endpoint='ovh-eu',

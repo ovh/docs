@@ -101,7 +101,6 @@ Istnieją jednak **przypadki szczególne**, które są opisane [poniżej](#speci
 
 ### Jak zrezygnować z abonamentu? <a name="terminate"></a>
 
-<!-- CP-STEPS-START:cancel-subscription -->
 Aby zrezygnować z abonamentu, otwórz stronę [Moje rozwiązania i usługi](/links/control-panel/billing-services).
 
 ![produkty i usługi](/pages/assets/screens/control_panel/product-selection/right-menu/my-solutions-and-services.png){.thumbnail}
@@ -122,7 +121,6 @@ Podaj powody złożenia wniosku o rezygnację z usługi i kliknij przycisk `Zatw
 Rezygnacja z usługi nastąpi w dniu **date d'effet** wskazanym w tabeli "Zarządzanie rozwiązaniami i usługami". Jeśli nie widzisz statusu "Planowane zakończenie usługi", odśwież stronę.
 
 ![dyspozycja zakończenia](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/cancellation-request.png){.thumbnail}
-<!-- CP-STEPS-END:cancel-subscription -->
 
 ### Przypadki szczególne <a name="specific-cases"></a>
 
@@ -172,11 +170,9 @@ Aby zrezygnować z usługi [VMware on OVHcloud](https://www.ovhcloud.com/pl/ente
 
 ### Public Cloud <a name="publiccloud"></a>
 
-<!-- CP-STEPS-START:public-cloud-deletion -->
 Każda usługa [Public Cloud](/links/public-cloud/public-cloud) może zostać usunięta, klikając przycisk `...`{.action} po prawej stronie wybranej usługi, a następnie `Usuń`{.action}, jak w poniższym przykładzie dla instancji:
 
 ![public cloud instance deletion](images/pci-deletion-en.png){.thumbnail}
-<!-- CP-STEPS-END:public-cloud-deletion -->
 
 Public Cloud OVHcloud opiera się na zasadzie *Pay as you go* (więcej szczegółów na naszej stronie [informacyjnej o sposobie rozliczania usługi Public Cloud](/pages/public_cloud/public_cloud_cross_functional/analyze_billing)). Płacisz pod koniec miesiąca tylko za czas rzeczywistego wykorzystania zasobów.
 
@@ -189,7 +185,6 @@ Możesz również [sprawdzić aktualne](/pages/public_cloud/public_cloud_cross_f
 > Możesz anulować zlecenie rezygnacji z usługi do 24 godzin przed datą wygaśnięcia abonamentu.
 >
 
-<!-- CP-STEPS-START:stop-cancellation -->
 Aby anulować zlecenie rezygnacji z usługi, otwórz stronę [Moje rozwiązania i usługi](/links/control-panel/billing-services).
 
 Następnie kliknij przycisk `...`{.action} po prawej stronie usługi, w odniesieniu do której złożono wniosek o rezygnację, a następnie `Anuluj rezygnację z usługi`{.action} 
@@ -197,7 +192,6 @@ Następnie kliknij przycisk `...`{.action} po prawej stronie usługi, w odniesie
 ![cancel_termination](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/cancel_termination-en.png){.thumbnail}
 
 Na koniec kliknij `Potwierdź anulowanie`{.action}.
-<!-- CP-STEPS-END:stop-cancellation -->
 
 Anulowanie rezygnacji obowiązuje natychmiastowo. Odśwież stronę "Zarządzanie rozwiązaniami i usługami", jeśli nadal widzisz status "Planowane zakończenie usługi".
 

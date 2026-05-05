@@ -88,7 +88,6 @@ Il tuo servizio Okta si fida di OVHcloud come provider di servizi. Lo step succe
 
 ### Salva Okta sull'account OVHcloud e configura la connessione
 
-<!-- CP-STEPS-START:register-okta-in-ovhcloud -->
 Per aggiungere Okta come affidabilità provider, è necessario fornire i metadati del provider. Apri la pagina [SAML SSO](/links/control-panel/iam-saml-sso) e clicca sul pulsante `Connessione SSO`{.action}.
 
 ![Accesso al menu IAM](images/access_to_the_IAM_menu_03.png){.thumbnail}
@@ -111,7 +110,6 @@ Il pulsante `...`{.action} permette di aggiornare o rimuovere l'SO e consulta i 
 ![Connessione SSO OVHcloud step 5](images/ovhcloud_user_management_connect_sso_5.png){.thumbnail}
 
 Il tuo servizio Okta è considerato un provider di identità affidabile. È comunque necessario aggiungere gruppi al tuo account OVHcloud.
-<!-- CP-STEPS-END:register-okta-in-ovhcloud -->
 
 > [!warning]
 > Se stai cercando di accedere via SSO, probabilmente comparirà un messaggio di errore `Not in valid groups`.
@@ -121,7 +119,6 @@ Il tuo servizio Okta è considerato un provider di identità affidabile. È comu
 
 A questo punto è necessario attribuire i **roles** ai gruppi di utenti Okta in OVHcloud. In caso contrario, il tuo account OVHcloud non sa cosa è autorizzato a fare l'utente e, di default, non viene assegnato alcun diritto.
 
-<!-- CP-STEPS-START:declare-okta-groups-ovhcloud -->
 Nella sezione `Identità`{.action}, apri la scheda `Gruppi di utenti`{.action}. Clicca sul pulsante `Dichiarare un gruppo`{.action} e completa i campi:
 
 - **Group name**: Nome del gruppo in Okta
@@ -134,7 +131,6 @@ Nella sezione `Identità`{.action}, apri la scheda `Gruppi di utenti`{.action}. 
 Verifica che il gruppo sia aggiunto al tuo account OVHcloud nella sezione "Gruppi":
 
 ![Gruppi di gestione degli utenti Okta](images/ovhcloud_user_management_groups_3.png){.thumbnail}
-<!-- CP-STEPS-END:declare-okta-groups-ovhcloud -->
 
 Quando ti connetti successivamente con un utente del gruppo **Intern**, il tuo account OVHcloud riconoscerà che l'utente ha il ruolo "UNPRIVILEGED" specificato dal suo gruppo.
 

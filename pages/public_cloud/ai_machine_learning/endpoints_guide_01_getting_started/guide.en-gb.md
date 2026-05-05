@@ -41,6 +41,7 @@ It explains how to obtain an access key, access AI models, and interact with AI 
 
 ### Generating your first API access key
 
+<!-- CP-STEPS-START:generating-your-first-api-access-key -->
 Getting an API key enables you to use the models available in our [catalog](/links/public-cloud/ai-endpoints-catalog) and test their integration into your solutions. To obtain an API access key, please follow the steps below:
 
 **1\. Access the AI Endpoints section**
@@ -90,6 +91,7 @@ Your key value will be displayed and you can copy it by clicking the copy icon.
 >
 
 With your access API key in hand, you are now ready to access the AI models and their easy-to-use APIs.
+<!-- CP-STEPS-END:generating-your-first-api-access-key -->
 
 ### Accessing AI models
 
@@ -152,6 +154,7 @@ This will take you to a dedicated page with several options for interacting with
 
 ### Revoke your API access key
 
+<!-- CP-STEPS-START:revoke-your-api-access-key -->
 To maintain security and control over your API access, it is essential to **revoke keys that are no longer needed**.
 
 To revoke one of your API access keys, click [this link](/links/control-panel/publiccloud-projects) to access your Public Cloud project, then click on `AI Endpoints`{.action} underneath **AI & Machine Learning** in the left-hand menu, then on the `API key`{.action} management section.
@@ -163,6 +166,7 @@ On the **AI key management** page, you will see a table listing all your generat
 **Verification**
 
 After revoking an API key, you can verify that it is no longer valid by attempting to use it for an API request. The API should return an error message indicating that the credentials are invalid, such as `403 Forbidden: Authentication Failed`.
+<!-- CP-STEPS-END:revoke-your-api-access-key -->
 
 ### Model rate limit
 
@@ -177,11 +181,13 @@ If you require higher usage, please **[get in touch with us](/links/support-cont
 
 ### Billing and usage
 
+<!-- CP-STEPS-START:billing-and-usage -->
 For information on pricing and the models lifecycle of the platform, please refer to the [AI Endpoints - Billing and lifecycle](/pages/public_cloud/ai_machine_learning/endpoints_guide_04_billing_concept) documentation.
 
 For your convenience, you can monitor your estimated consumption and model usage in the `AI Endpoints`{.action} section of the `AI & Machine Learning` category in your [Public Cloud project](/links/control-panel/publiccloud-projects) left-hand vertical menu.
 
 ![AI Endpoints usage monitoring](images/ai-endpoints-usage-monitoring.png){.thumbnail}
+<!-- CP-STEPS-END:billing-and-usage -->
 
 ## Going further
 

@@ -11,55 +11,41 @@ En este tutorial, aprenderás a agregar una clave SSH en el Panel de Control de 
 <iframe class="video" src="https://embed.api.video/vod/vi7Nrf4kB71MAILTYzsMvhkh" width="100%" height="100%" frameborder="0" scrolling="no" allowfullscreen="true"></iframe>
 
 ## Paso 1: Acceder al Panel de Control de OVHcloud
-<!-- CP-STEPS-START:access-services-page -->
 
 Para empezar, debes acceder al Panel de Control de OVHcloud. Puedes hacerlo visitando la siguiente URL: [https://www.ovh.com/manager/#/billing/autorenew/](https://www.ovh.com/manager/#/billing/autorenew/). Una vez que hayas iniciado sesión, asegúrate de que estés en la página "Mis ofertas y servicios" dentro del Panel de Control de OVHcloud. Esta página es el punto de partida para gestionar tus servicios en la nube.
 
 ![Paso 1](images/screenshot-1.es-es.jpg){.thumbnail}
-<!-- CP-STEPS-END:access-services-page -->
 
 ## Paso 2: Seleccionar la pestaña "Clave SSH"
-<!-- CP-STEPS-START:click-ssh-key-tab -->
 
 En la página "Mis ofertas y servicios", busca la pestaña "Clave SSH" y haz clic en ella. Esta pestaña te permite gestionar tus claves SSH y agregar nuevas.
 
 ![Paso 2](images/screenshot-2.es-es.jpg){.thumbnail}
-<!-- CP-STEPS-END:click-ssh-key-tab -->
 
 ## Paso 3: Agregar una nueva clave SSH
-<!-- CP-STEPS-START:add-new-ssh-key -->
 Haz clic en el botón "Agregar una clave SSH". Se mostrará un menú desplegable con opciones. Selecciona la opción "Dedicada" para agregar una clave SSH para tus servicios dedicados.
 
 ![Paso 3](images/screenshot-3.es-es.jpg){.thumbnail}
-<!-- CP-STEPS-END:add-new-ssh-key -->
 
 ## Paso 4: Verificar la ventana modal "Agregar una clave SSH"
-<!-- CP-STEPS-START:verify-modal-window -->
 Después de seleccionar la opción "Dedicada", se mostrará una ventana modal con el título "Agregar una clave SSH". Esta ventana te permite ingresar los detalles de tu clave SSH.
 
 ![Paso 4](images/screenshot-4.es-es.jpg){.thumbnail}
-<!-- CP-STEPS-END:verify-modal-window -->
 
 ## Paso 5: Ingresar el ID de la clave SSH
-<!-- CP-STEPS-START:enter-key-id -->
 En el campo "ID" (o "Identificador"), ingresa un valor único para identificar tu clave SSH. Puedes ingresar un ID aleatorio para este tutorial.
 
 ![Paso 5](images/screenshot-5.es-es.jpg){.thumbnail}
-<!-- CP-STEPS-END:enter-key-id -->
 
 ## Paso 6: Ingresar la clave SSH
-<!-- CP-STEPS-START:enter-ssh-key -->
 En el campo "Clave", ingresa tu clave SSH en el formato correcto, que es "ssh-rsa AAAArandom123" (por ejemplo, para este tutorial). Asegúrate de que la clave esté en el formato correcto para evitar errores.
 
 ![Paso 6](images/screenshot-6.es-es.jpg){.thumbnail}
-<!-- CP-STEPS-END:enter-ssh-key -->
 
 ## Paso 7: Confirmar la agregación de la clave SSH
-<!-- CP-STEPS-START:confirm-ssh-key -->
 Haz clic en el botón "Confirmar" para agregar la nueva clave SSH. La clave se agregará a tu lista de claves SSH y estará lista para usarse.
 
 ![Paso 7](images/screenshot-7.es-es.jpg){.thumbnail}
-<!-- CP-STEPS-END:confirm-ssh-key -->
 
 ## Conclusión
 Has agregado con éxito una clave SSH en el Panel de Control de OVHcloud. Ahora puedes usar esta clave para acceder a tus servicios en la nube de manera segura. Recuerda que la autenticación por clave SSH es un método seguro para proteger tus servicios en la nube.

@@ -38,6 +38,7 @@ If your instance lacks resources due to increased activity or new needs, you can
 
 ## Instructions
 
+<!-- CP-STEPS-START:resize-instance-via-cp -->
 Click on `Instances`{.action} in the left-hand menu.
 
 Click on `...`{.action} to the right of the instance, and select `Edit`{.action}. You can also access this action from the instance details by clicking on its name, then on `Modify model`{.action}.
@@ -58,6 +59,7 @@ If your disk is equal to or smaller than 50GB, you can switch to a `Flexible ins
 >
 
 Once the selection has been made, click on `Modify template`{.action} to confirm your choice.
+<!-- CP-STEPS-END:resize-instance-via-cp -->
 
 ### Resizing a disk in Windows
 

@@ -84,6 +84,8 @@ This option releases the resources dedicated to your Public Cloud instance, but 
 
 #### From the OVHcloud Control Panel
 
+<!-- CP-STEPS-START:shelve-control-panel -->
+
 In the OVHcloud Control Panel, select your project from the `Public Cloud`{.action} section. Click on `Instances`{.action} in the left side menu.
 
 Click on the `⋮`{.action} button to the right of the instance you want to suspend, then click on `Suspend`{.action}.
@@ -105,6 +107,8 @@ Once the process is completed, your instance will now appear as *Suspended*.
 To view the snapshot, click on `Instance Backup`{.action} underneath the **Compute** tab in the left side menu. A snapshot named *xxxxx-shelved* will now be visible:
 
 ![snapshot tab](images/shelved_backup_2025.png){.thumbnail}
+
+<!-- CP-STEPS-END:shelve-control-panel -->
 
 <a name="horizon"></a>
 
@@ -168,6 +172,8 @@ This option will allow you to re-up your instance so that you can continue using
 
 #### From the OVHcloud Control Panel
 
+<!-- CP-STEPS-START:unshelve-control-panel -->
+
 In the OVHcloud Control Panel, select your project from the `Public Cloud`{.action} section and click on `Instances`{.action} in the left side menu.
 
 Click on the `⋮`{.action} button to the right of the instance, then click on `Reactivate`{.action}.
@@ -177,6 +183,8 @@ Click on the `⋮`{.action} button to the right of the instance, then click on `
 In the pop-up window, take note of the message and click on `Confirm`{.action}.
 
 Once the process is completed, the status of your instance will now appear as *Enabled*.
+
+<!-- CP-STEPS-END:unshelve-control-panel -->
 
 <a name="horizon-unshelve"></a>
 
@@ -212,6 +220,8 @@ This option shuts down your instance and stores the VM state on disk, including 
 
 #### From the OVHcloud Control Panel
 
+<!-- CP-STEPS-START:stop-control-panel -->
+
 In the OVHcloud Control Panel, select your project from the `Public Cloud`{.action} section and click on `Instances`{.action} in the left side menu.
 
 Click on the `⋮`{.action} button to the right of the instance you want to stop, then click on `Turn off`{.action}.
@@ -231,6 +241,8 @@ To **resume** the instance, perform the same steps as mentioned above. Click on 
 ![start instance](images/start_instance_2025.png){.thumbnail}
 
 Once the process is completed, the status of your instance will now appear as *Enabled*.
+
+<!-- CP-STEPS-END:stop-control-panel -->
 
 <a name="stop-horizon"></a>
 

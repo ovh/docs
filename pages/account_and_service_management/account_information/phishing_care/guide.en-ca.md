@@ -33,9 +33,7 @@ In practice, this is often done by sending an email asking you to click on a lin
 
 #### Identifying a phishing email
 
-<!-- CP-STEPS-START:check-messages -->
 First, check whether the email you received is also visible on the [My messages](/links/control-panel/account-messages) page. You will find copies of all official emails sent by OVHcloud there.
-<!-- CP-STEPS-END:check-messages -->
 
 Here are some tips to visually distinguish a genuine OVHcloud email from a phishing attempt.
 
@@ -246,9 +244,7 @@ The only thing you can do is contact your bank as soon as possible, to have your
 
 /// details | **If you have entered your OVHcloud password on a fraudulent website**
 
-<!-- CP-STEPS-START:change-password-security -->
 Open the [Account security](/links/control-panel/account-security) page and change your password.
-<!-- CP-STEPS-END:change-password-security -->
 
 In our guide [Changing your account password](/pages/account_and_service_management/account_information/manage-ovh-password), you will find instructions for changing your password via the OVHcloud Control Panel, as well as our recommendations for generating a strong password, and saving it in a password manager.
 

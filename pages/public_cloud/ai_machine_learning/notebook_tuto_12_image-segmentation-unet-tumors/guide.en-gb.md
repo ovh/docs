@@ -48,6 +48,8 @@ Direct link to the full code can be found [here](https://github.com/ovh/ai-train
 
 To launch your notebook from the [OVHcloud Control Panel](/links/manager), refer to the following steps.
 
+<!-- CP-STEPS-START:launch-jupyter-notebook-tensorflow-ui -->
+
 #### Code editor
 
 Choose the `Jupyterlab` code editor.
@@ -64,6 +66,8 @@ Using GPUs is recommended because medical imaging is a training intensive task.
 >
 > Here, using `1 GPU` is sufficient.
 >
+
+<!-- CP-STEPS-END:launch-jupyter-notebook-tensorflow-ui -->
 
 ### Launching a Jupyter notebook with "Tensorflow" via CLI
 

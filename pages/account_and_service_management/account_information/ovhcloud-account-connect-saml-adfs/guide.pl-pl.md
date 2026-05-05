@@ -133,7 +133,6 @@ Opcja dodawania AD FS jako zaufanego dostawcy danych jest dostępna w [panelu kl
 
 Otwórz stronę [SAML SSO](/links/control-panel/iam-saml-sso).
 
-<!-- CP-STEPS-START:configure-sso-connection -->
 W sekcji `SSO connection`{.action} wpisz metadane XML Twojej usługi AD FS. W tym przypadku pole `Nazwa atrybutu grupy` jest opcjonalne. Kliknij na `Zatwierdź`{.action}.
 
 Użytkowników lokalnych można zachować, zaznaczając pole `Zachowaj status „aktywny” dla użytkowników OVHcloud`.
@@ -153,7 +152,6 @@ Aby uzyskać więcej informacji, kliknij link pod `URL usługi SSO`.
 Przycisk `...`{.action} pozwala na aktualizację lub usunięcie certyfikatu SSO i na zapoznanie się z jego szczegółami.
 
 ![Etap 6 OVHcloud logowania SSO](images/ovhcloud_user_management_connect_sso_6.png){.thumbnail}
-<!-- CP-STEPS-END:configure-sso-connection -->
 
 Usługa AD FS jest obecnie uważana za zaufanego dostawcę tożsamości. Jednocześnie należy dodać grupy do konta OVHcloud.
 
@@ -188,7 +186,6 @@ Możesz również sprawdzić w twierdzeniu SAML:
 
 Oznacza to, że należy dodać grupę `manager@<my-domain>.com` do Twojego konta OVHcloud i przypisać do niego określoną rolę. W przeciwnym razie Twoje konto OVHcloud nie wie, co może robić użytkownik.
 
-<!-- CP-STEPS-START:add-user-groups -->
 Aby dodać tę grupę, przejdź do sekcji `Tożsamości`{.action} a następnie do zakładki `Grupy użytkowników`{.action}. Następnie kliknij przycisk `Zadeklaruj grupę`{.action}, wpisz nazwę grupy i wybierz przypisaną rola:
 
 ![Grupy zarządzania użytkownikami AD FS](images/ovhcloud_user_management_groups_1.png){.thumbnail}
@@ -198,7 +195,6 @@ Aby dodać tę grupę, przejdź do sekcji `Tożsamości`{.action} a następnie d
 Następnie możesz sprawdzić, czy grupa została dodana do Twojego konta OVHcloud w sekcji `Grupy`:
 
 ![Grupy zarządzania użytkownikami AD FS](images/ovhcloud_user_management_groups_3.png){.thumbnail}
-<!-- CP-STEPS-END:add-user-groups -->
 
 Po zalogowaniu się z użytkownikiem Active Directory "John Doe" Twoje konto OVHcloud potwierdzi rolę "REGULAR" określoną przez jego grupę.
 

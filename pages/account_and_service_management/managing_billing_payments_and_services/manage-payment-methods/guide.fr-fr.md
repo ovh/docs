@@ -27,7 +27,6 @@ L'espace client OVHcloud vous permet d'enregistrer et gérer différents moyens 
 
 ## En pratique <a name="payment_methods"></a>
 
-<!-- CP-STEPS-START:instructions-overview -->
 Ouvrez la page [Moyens de paiement](/links/control-panel/billing-payment-methods).
 
 ![hubpayment](/pages/assets/screens/control_panel/product-selection/right-menu/my-payment-methods.png){.thumbnail}
@@ -38,11 +37,9 @@ La page qui s’affiche contient un tableau répertoriant les moyens de paiement
 - Modifier votre moyen de paiement par défaut
 - Modifier la description de votre moyen de paiement
 - Supprimer un moyen de paiement
-<!-- CP-STEPS-END:instructions-overview -->
 
 ### Ajouter un moyen de paiement
 
-<!-- CP-STEPS-START:register-payment-method -->
 Lors de votre première commande, il vous est demandé d'enregistrer un moyen de paiement, afin d'assurer le renouvellement de votre service par prélèvement automatique.
 
 Ce moyen de paiement est alors utilisé par défaut pour tous vos renouvellements et vous est proposé pour régler de nouvelles commandes.
@@ -89,11 +86,9 @@ Aucun montant ne sera prélevé et votre carte bancaire sera activée au bout de
 Cliquez sur le bouton `PayPal`{.action}. Une fenêtre contextuelle s'ouvrira alors pour vous connecter à votre compte PayPal&#174; et enregistrer celui-ci comme moyen de paiement autorisé auprès de OVHcloud.
 
 Votre compte PayPal&#174; sera activé sous quelques minutes.
-<!-- CP-STEPS-END:register-payment-method -->
 
 ### Modifier votre moyen de paiement par défaut
 
-<!-- CP-STEPS-START:change-default-payment-method -->
 Les factures de renouvellement de vos services sont toujours prélevées sur votre moyen de paiement par défaut. Si vous souhaitez modifier celui-ci, il vous faut d'abord ajouter un nouveau moyen de paiement dans votre espace client.
 
 Cliquez alors sur le bouton `...`{.action} à droite du nouveau moyen de paiement, puis sur `Définir ce moyen de paiement par défaut`{.action}.
@@ -106,17 +101,14 @@ Cliquez alors sur le bouton `...`{.action} à droite du nouveau moyen de paiemen
 > - Étape 2 : définissez le nouveau moyen de paiement comme moyen de paiement par défaut
 > - Étape 3 : supprimez l'ancien moyen de paiement
 >
-<!-- CP-STEPS-END:change-default-payment-method -->
 
 ### Supprimer un moyen de paiement
 
-<!-- CP-STEPS-START:delete-payment-method -->
 Si vous ne souhaitez plus utiliser l'un de vos moyens de paiement, vous pouvez le supprimer en cliquant sur le bouton `...`{.action} à droite de celui-ci. Cliquez alors sur `Supprimer ce moyen de paiement`{.action}.
 
 ![manage-payment-methods](images/managepaymentmethods4.png){.thumbnail}
 
 Si vous souhaitez supprimer l'intégralité de vos moyens de paiement, l'ensemble de vos services doit être en [renouvellement manuel](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#le-renouvellement-manuel).
-<!-- CP-STEPS-END:delete-payment-method -->
 
 #### Supprimer un moyen de paiement via les API OVHcloud
 
@@ -147,7 +139,6 @@ Supprimez ensuite le moyen de paiement en utilisant l’ID que vous avez obtenu 
 
 #### Qu'est-ce que le compte prépayé ?
 
-<!-- CP-STEPS-START:prepaid-account-overview -->
 Le *compte prépayé* est présent sur la page [Mes moyens de paiement](/links/control-panel/billing-payment-methods) dès sa création. Il vous permet de créditer à l'avance votre compte client et d'utiliser ces fonds pour le règlement de vos commandes et de vos factures de renouvellement.
 
 En créditant régulièrement votre compte, vous vous assurerez ainsi que le [renouvellement automatique](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal) de vos services ne sera jamais interrompu pour défaut de paiement.
@@ -157,7 +148,6 @@ Pour cela, rendez-vous sur la page [Moyens de paiement](/links/control-panel/bil
 - sélectionnez l'onglet `Mon compte prépayé`{.action}.
 
 ![prepaid-account](images/prepaid-account.png){.thumbnail}
-<!-- CP-STEPS-END:prepaid-account-overview -->
 
 #### Comment fonctionne t-il ?
 
@@ -171,15 +161,12 @@ En revanche, si vous n'avez pas enregistré de moyen de paiement, vous devrez r�
 
 Si vous n'avez pas de moyen de paiement enregistré, nous vous recommandons donc de paramétrer un **seuil d'alerte**, afin de vous assurer que vous disposerez des fonds suffisants pour vos prochaines factures :
 
-<!-- CP-STEPS-START:prepaid-account-alert -->
 ![warning_prepaid_account](images/warning_prepaid_account.png){.thumbnail}
 
 Si le crédit disponible sur votre compte prépayé descend sous la limite définie, un e-mail de notification vous sera immédiatement envoyé.
-<!-- CP-STEPS-END:prepaid-account-alert -->
 
 #### Comment créditer votre compte prépayé ?
 
-<!-- CP-STEPS-START:prepaid-account-credit -->
 Dans l'onglet `Mon compte prépayé`{.action}, cliquez sur le bouton `Créditer`{.action}.
 
 ![credit-prepaid-account](images/credit-prepaid-account.png){.thumbnail}
@@ -189,7 +176,6 @@ Dans la fenêtre qui s'affiche, indiquez le montant à créditer, cliquez sur `S
 ![order-prepaid-account](images/order-prepaid-account.png){.thumbnail}
 
 Sur le bon de commande qui s'affiche, sélectionnez le moyen de paiement de votre choix et réglez votre commande.
-<!-- CP-STEPS-END:prepaid-account-credit -->
 
 ## Aller plus loin
 

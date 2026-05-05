@@ -38,7 +38,6 @@ L'historique comprend la date, l'heure, l'expéditeur, le destinataire ainsi que
 
 ### Étape 1 : Consulter l'historique dans votre espace client
 
-<!-- CP-STEPS-START:view-sms-log -->
 Dans la barre d'onglets, cliquez sur `Message et campagne`{.action} puis sur `Gestion des SMS`{.action} pour accéder à l'historique de vos SMS unitaires ou sur `Gestion des campagnes`{.action} pour accéder à l'historique de vos campagnes de SMS.
 
 Selon votre choix, cliquez ensuite sur `Historique des envois`{.action} ou `Statistiques et historique`{.action}.
@@ -60,15 +59,12 @@ Pour supprimer plusieurs SMS à la fois, il suffit de cocher les cases à côté
 Le bouton `Filtrer`{.action} vous permet de filtrer la recherche par expéditeur (si vous disposez de plusieurs expéditeurs) ou par destinataire.
 
 ![sms-history](images/smshistory5.png){.thumbnail}
-<!-- CP-STEPS-END:view-sms-log -->
  
 ### Étape 2 : Télécharger l'historique de vos SMS en CSV <a name="csv"></a>
 
-<!-- CP-STEPS-START:download-sms-csv -->
 Cliquez sur le bouton `Actions`{.action} à gauche au-dessus de votre historique puis sur `Télécharger`{.action} pour télécharger l'historique de vos SMS envoyés au format « .csv ». 
  
 ![sms-history](images/smshistory6.png){.thumbnail}
-<!-- CP-STEPS-END:download-sms-csv -->
  
 Vous pourrez alors consulter l'historique depuis un outil de type tableur. Les informations s'afficheront comme dans l'exemple ci-dessous.
 
