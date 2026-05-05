@@ -1,7 +1,7 @@
 ---
 title: Migrate from Gen 2 to Gen 3 for Public Cloud Databases
 excerpt: "Learn how to upgrade your OVHcloud Public Cloud Database from Gen 2 to Gen 3 and take advantage of improved performance and features"
-updated: 2025-10-09
+updated: 2026-04-27
 ---
 
 ## Objective
@@ -95,7 +95,7 @@ Gen 3 provides improved performance, scalability, and reliability compared to Ge
 >>
 >> > [!primary]
 >> >
->> > To interact with your Public Cloud Databases services via the OVHcloud API, make sure you've mastered the basics first by consulting our guide: [Public Cloud Databases - Getting started with APIs](/pages/public_cloud/public_cloud_databases/databases_02_order_api).
+>> > To interact with your Public Cloud Databases services via the OVHcloud API, make sure you've mastered the basics first by consulting our guide: [Public Cloud Databases - Getting started](/pages/public_cloud/public_cloud_databases/databases_01_order_control_panel).
 >> >
 >>
 >> To find the backup ID of a service, use the following API call:
