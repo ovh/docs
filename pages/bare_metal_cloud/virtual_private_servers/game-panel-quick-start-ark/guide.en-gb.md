@@ -39,6 +39,7 @@ Once installation starts, a confirmation screen appears. Click `Open Logs`{.acti
 While the server is installing, the status displays **Installing**. Track detailed progress directly in the logs panel.
 
 <!-- SCREENSHOT-STATUS: playwright -->
+<div class="todo-image">🚧 Image pending</div>
 ![Monitoring ARK server installation in the logs panel](images/installation-logs.png){.thumbnail}
 
 ### Step 4 — Confirm installation is complete
@@ -46,6 +47,7 @@ While the server is installing, the status displays **Installing**. Track detail
 Once installation is finished, the server status changes to **Running**.
 
 <!-- SCREENSHOT-STATUS: playwright -->
+<div class="todo-image">🚧 Image pending</div>
 ![ARK server with Running status](images/server-running.png){.thumbnail}
 
 ### Step 5 — Retrieve connection information
@@ -53,6 +55,7 @@ Once installation is finished, the server status changes to **Running**.
 Once your server status is **Running**, copy the connection information from the Game Panel.
 
 <!-- SCREENSHOT-STATUS: playwright -->
+<div class="todo-image">🚧 Image pending</div>
 ![Connection details for the ARK server](images/connection-details.png){.thumbnail}
 
 ### Step 6 — Join your server in ARK

@@ -59,6 +59,7 @@ Choose the game you want to host from the available list (40+ games) and click `
 The panel automatically downloads and configures all required files. You can follow the installation progress directly from the log tab.
 
 <!-- SCREENSHOT-STATUS: playwright -->
+<div class="todo-image">🚧 Image pending</div>
 ![Installation progress in the log tab](images/deployment-progress.png){.thumbnail}
 
 ### Step 3 — Manage your server

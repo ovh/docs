@@ -50,6 +50,7 @@ Then click the launch button to start the server.
 Check that the server status displays **Running** and that CPU/RAM activity is visible.
 
 <!-- SCREENSHOT-STATUS: playwright -->
+<div class="todo-image">🚧 Image pending</div>
 ![Garrys Mod server with Running status](images/garrys-mod-running.png){.thumbnail}
 
 Available actions:
@@ -59,6 +60,7 @@ Available actions:
 - `Settings`{.action} > `Game Config`{.action}: Access game settings (startup map, tickrate, gamemode, player limit, RCON password, Workshop collection, GSLT).
 
 <!-- SCREENSHOT-STATUS: playwright -->
+<div class="todo-image">🚧 Image pending</div>
 ![Garrys Mod Game Config settings](images/garrys-mod-game-config.png){.thumbnail}
 
 ### Step 5 — Connect to the server

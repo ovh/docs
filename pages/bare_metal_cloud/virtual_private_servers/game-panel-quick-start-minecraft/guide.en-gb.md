@@ -39,6 +39,7 @@ Once the installation starts, you will see a confirmation screen. Click `Open Lo
 While the server is installing, the status will display **Installing**. You can track detailed progress directly in the logs panel.
 
 <!-- SCREENSHOT-STATUS: playwright -->
+<div class="todo-image">🚧 Image pending</div>
 ![Monitoring Minecraft server installation](images/installation-logs.png){.thumbnail}
 
 ### Step 4 — Confirm installation is complete

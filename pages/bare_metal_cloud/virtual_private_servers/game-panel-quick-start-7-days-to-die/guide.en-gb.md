@@ -53,6 +53,7 @@ Then click the launch button to start the server.
 Check that the server status displays **Running** and that CPU/RAM activity is visible.
 
 <!-- SCREENSHOT-STATUS: playwright -->
+<div class="todo-image">🚧 Image pending</div>
 ![7 Days to Die server with Running status](images/7-days-to-die-running.png){.thumbnail}
 
 Available actions:
@@ -62,6 +63,7 @@ Available actions:
 - `Settings`{.action} > `Game Config`{.action}: Access game settings.
 
 <!-- SCREENSHOT-STATUS: playwright -->
+<div class="todo-image">🚧 Image pending</div>
 ![7 Days to Die Game Config settings](images/7-days-to-die-game-config.png){.thumbnail}
 
 ### Step 5 — Connect to the server

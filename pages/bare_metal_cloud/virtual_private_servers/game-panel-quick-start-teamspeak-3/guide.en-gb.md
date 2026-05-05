@@ -61,6 +61,7 @@ The deployment starts automatically. Let the installation run without closing th
 Track the process in real time by clicking `Open Logs`{.action} to display the installation messages.
 
 <!-- SCREENSHOT-STATUS: playwright -->
+<div class="todo-image">🚧 Image pending</div>
 ![TeamSpeak 3 installation logs panel](images/teamspeak-installation-logs.png){.thumbnail}
 
 ### Step 5 — Verify the server is running
@@ -68,6 +69,7 @@ Track the process in real time by clicking `Open Logs`{.action} to display the i
 Once installation is complete, confirm that your server displays the **Running** status.
 
 <!-- SCREENSHOT-STATUS: playwright -->
+<div class="todo-image">🚧 Image pending</div>
 ![TeamSpeak 3 server with Running status](images/teamspeak-running.png){.thumbnail}
 
 Your server is live. Retrieve the IP address and port from the `Connection`{.action} section to connect from the TeamSpeak 3 client.

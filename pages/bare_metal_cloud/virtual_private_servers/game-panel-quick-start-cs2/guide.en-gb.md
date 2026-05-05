@@ -43,6 +43,7 @@ Click `Install`{.action}. The deployment will start automatically. Wait a few mi
 Then click the launch button to start the server.
 
 <!-- SCREENSHOT-STATUS: playwright -->
+<div class="todo-image">🚧 Image pending</div>
 ![Counter-Strike 2 server installation progress](images/cs2-installation.png){.thumbnail}
 
 ### Step 4 — Verify the server is running
@@ -56,6 +57,7 @@ Available actions:
 - `Settings`{.action} > `Game Config`{.action}: Access game settings.
 
 <!-- SCREENSHOT-STATUS: playwright -->
+<div class="todo-image">🚧 Image pending</div>
 ![Counter-Strike 2 server with Running status](images/cs2-running.png){.thumbnail}
 
 ### Step 5 — Connect to the server

@@ -37,6 +37,7 @@ Click `Add Game Server`{.action} and select **Valheim**.
 Once the installation starts, you will see a confirmation screen. Click `Open Logs`{.action} to follow the installation progress in real time.
 
 <!-- SCREENSHOT-STATUS: playwright -->
+<div class="todo-image">🚧 Image pending</div>
 ![Monitoring Valheim server installation](images/installation-logs.png){.thumbnail}
 
 ### Step 4 — Confirm installation is complete
@@ -44,6 +45,7 @@ Once the installation starts, you will see a confirmation screen. Click `Open Lo
 Once the installation is finished, a notification will appear: **Server status is now: Running**.
 
 <!-- SCREENSHOT-STATUS: playwright -->
+<div class="todo-image">🚧 Image pending</div>
 ![Valheim server with Running status](images/server-running.png){.thumbnail}
 
 ### Step 5 — Retrieve connection information

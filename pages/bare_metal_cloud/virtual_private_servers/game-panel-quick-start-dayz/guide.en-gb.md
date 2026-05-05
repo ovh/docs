@@ -71,6 +71,7 @@ Click `Install`{.action}. The deployment starts automatically. The panel will:
 Once installation is complete, click `Launch`{.action} to start your server.
 
 <!-- SCREENSHOT-STATUS: playwright -->
+<div class="todo-image">🚧 Image pending</div>
 ![DayZ server installation in progress](images/installation-progress.png){.thumbnail}
 
 ### Step 5 — Verify the server is running
@@ -84,6 +85,7 @@ The following controls are available:
 - `Settings`{.action} — access game configuration options.
 
 <!-- SCREENSHOT-STATUS: playwright -->
+<div class="todo-image">🚧 Image pending</div>
 ![DayZ server with Running status and management controls](images/server-running.png){.thumbnail}
 
 ### Step 6 — Configure game settings (optional)
@@ -107,6 +109,7 @@ To join from the DayZ client:
 4. Click **Connect**.
 
 <!-- SCREENSHOT-STATUS: playwright -->
+<div class="todo-image">🚧 Image pending</div>
 ![Game Servers list with connection IP and port highlighted](images/connection-details.png){.thumbnail}
 
 ## Go further
