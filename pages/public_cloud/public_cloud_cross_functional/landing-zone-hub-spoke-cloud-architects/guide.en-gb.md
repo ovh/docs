@@ -70,6 +70,17 @@ In this topology, each component has a distinct role:
       10.30.0.0/24         10.40.0.0/24
 ```
 
+**Running example — OrbitalEdge SAS:** The concrete examples throughout this guide are drawn from OrbitalEdge, a fictitious 45-person scale-up based in Paris that develops an edge computing platform for satellite constellation operators (LEO fleets, environmental monitoring). They deploy four spokes in the EU-WEST-PAR region: `constellation-dev`, `constellation-prod`, `signalvault-dev`, and `signalvault-prod`. Their four teams interact with the landing zone as follows:
+
+| Team | Size | Role in the landing zone |
+|------|------|--------------------------|
+| Platform | 2 engineers | Deploys and operates hub and spokes via IaC |
+| FleetOS | 4 developers | Deploys Constellation Manager (Kubernetes) on `constellation-*` spokes |
+| SignalVault | 3 engineers | Deploys telemetry workers and accesses managed databases on `signalvault-*` spokes |
+| Security | 1 CISO | Audits firewall rules and validates network opening requests |
+
+The full OrbitalEdge IaC configuration — including `terraform.tfvars` for all four spokes — is available under `examples/orbital-edge` in the [hub-and-spoke-public-cloud](https://github.com/ovhcloud-examples/hub-and-spoke-public-cloud) repository.
+
 Plan the full address space before deploying any infrastructure. The transit VLAN (200) and subnet (192.168.10.0/24) are fixed and shared across all projects:
 
 | Segment | VLAN | CIDR | Notes |
@@ -158,6 +169,8 @@ Create dedicated IAM groups and assign scoped policies to each Public Cloud proj
 | `{domain}_sre` | `{domain}_*_staging`, `{domain}_*_prod` | `globalWriteAccess` | Per domain |
 | `auditor` | All | `globalReadAccess` | Compliance/security team |
 
+In the OrbitalEdge example: the Platform team holds `platform_admin` on all projects; Camille (FleetOS) and Driss (SignalVault) each have a scoped `{domain}_developer` policy limited to their own spokes; Elena (CISO) holds `auditor` read-only access on the hub project.
+
 To create a policy:
 
 1. Go to `IAM`{.action} > `Policies`{.action} > `Create a policy`{.action}.
@@ -221,7 +234,7 @@ Create at least two projects to start:
 - **Hub project** — hosts the OPNsense HA firewall cluster, Internet gateway, and shared services.
 - **Spoke-QA project** — an initial spoke for validating the topology before going to production.
 
-Use a consistent naming convention to enable governance scoping, billing isolation, and automation — for example: `{domain}_{application}_{environment}` (e.g. `infra_hub_prod`, `finance_invoicing_qa`). Each project gets its own billing boundary, access scope, and OpenStack credential set.
+Use a consistent naming convention to enable governance scoping, billing isolation, and automation — for example: `{domain}_{application}_{environment}` (e.g. `infra_hub_prod`, `finance_invoicing_qa`). Each project gets its own billing boundary, access scope, and OpenStack credential set. OrbitalEdge uses `hubonevrack-orb`, `constellation-dev`, `constellation-prod`, `signalvault-dev`, and `signalvault-prod`.
 
 > [!primary]
 > After creating a project, OVHcloud requires a short propagation window (typically 30 seconds) before a vRack can be successfully attached. Account for this in any automation.
@@ -291,13 +304,13 @@ All other inbound traffic is blocked at the OpenStack layer before reaching OPNs
 
 Once the hub is deployed, record these values — every spoke will need them:
 
-| Parameter | Description |
-|-----------|-------------|
-| Hub Floating IP | SSH/HTTPS management access; also the OPNsense REST API endpoint |
-| Hub LAN CARP VIP | Default gateway for all spoke Neutron routers (192.168.10.99) |
-| Hub LAN CIDR | Transit subnet (192.168.10.0/24) — shared across all projects |
-| Hub vRack service name | Required to attach each new spoke project to the shared vRack |
-| Hub OPNsense API credentials | Key/secret pair for automated spoke routing via the REST API |
+| Parameter | Description | OrbitalEdge example |
+|-----------|-------------|---------------------|
+| Hub Floating IP | SSH/HTTPS management access; also the OPNsense REST API endpoint | `51.195.42.7` |
+| Hub LAN CARP VIP | Default gateway for all spoke Neutron routers | `192.168.10.99` |
+| Hub LAN CIDR | Transit subnet — shared across all projects | `192.168.10.0/24` |
+| Hub vRack service name | Required to attach each new spoke project to the shared vRack | `pn-123456` |
+| Hub OPNsense API credentials | Key/secret pair for automated spoke routing via the REST API | Generated at deploy time; store in Vault |
 
 Store these in your team's shared secrets manager or secure runbook.
 
@@ -362,16 +375,18 @@ Before adding a spoke, confirm you have:
 
 #### 6.2 Provision spoke resources
 
+> In the OrbitalEdge example, `constellation-dev` is the first spoke: transit router IP `192.168.10.10`, VLAN 300 (`10.30.0.0/24`) for its Kubernetes workload tier. The `signalvault-dev` spoke adds two LAN networks — app (VLAN 310, `10.31.0.0/24`) and data (VLAN 311, `10.31.1.0/24`) — with a single Neutron router at `192.168.10.11`.
+
 Perform these steps in order, waiting for each OVHcloud API operation to complete before proceeding:
 
-1. **Create a Public Cloud project** for the spoke (follow naming convention from section 4.1).
-2. **Attach the spoke project to the shared vRack** using the hub vRack service name. Wait for the propagation delay (30 seconds) before creating networks.
+1. **Create a Public Cloud project** for the spoke (follow naming convention from section 4.1) — e.g. `constellation-dev`.
+2. **Attach the spoke project to the shared vRack** using the hub vRack service name (e.g. `pn-123456`). Wait for the propagation delay (30 seconds) before creating networks.
 3. **Create the transit network** in the spoke project: VLAN 200, CIDR 192.168.10.0/24, **DHCP disabled**, no gateway. This exposes the hub transit segment inside the spoke's OpenStack context so the Neutron router can attach to it.
-4. **Create spoke LAN networks** — one network per workload tier (app, db, etc.), each on a unique VLAN with DHCP enabled.
+4. **Create spoke LAN networks** — one network per workload tier (app, db, etc.), each on a unique VLAN with DHCP enabled — e.g. VLAN 300, `10.30.0.0/24`.
 5. **Create an OpenStack Neutron router**:
-    - Attach the transit network with a **fixed IP** at the spoke's transit router IP (e.g. 192.168.10.10).
+    - Attach the transit network with a **fixed IP** at the spoke's transit router IP (e.g. `192.168.10.10` for `constellation-dev`).
     - Attach each spoke LAN subnet as an internal interface.
-    - Set the default route: `0.0.0.0/0` via the hub LAN CARP VIP (192.168.10.99).
+    - Set the default route: `0.0.0.0/0` via the hub LAN CARP VIP (`192.168.10.99`).
 6. **Create OpenStack users** (IaC operator and runtime operator) for the spoke project.
 
 #### 6.3 Configure hub routing
@@ -488,6 +503,8 @@ For audited access at scale, deploy [OVHcloud Bastion](https://ovh.github.io/the
 Repeat the onboarding process (section 6) for each new spoke. Assign a unique transit router IP and unique VLAN IDs from your network plan. Each spoke is independent — adding one has no impact on existing spokes, and only adds a gateway and static routes on the hub OPNsense.
 
 As the number of spokes grows, monitor hub OPNsense CPU and throughput. The hub handles all north-south and east-west traffic for every spoke — right-size it accordingly (`b3-16` for most deployments, `b3-64` for high-traffic environments or many spokes).
+
+When OrbitalEdge needed a fifth spoke for historical data archival (`telemetry-archive-prod`), the process took less than 30 minutes: reserve transit IP `192.168.10.30`, assign VLAN 510 (`10.51.0.0/24`) for the app tier and VLAN 511 (`10.51.1.0/24`) for the data tier, copy the spoke template directory, fill in `terraform.tfvars`, and run `tofu apply`. The four existing spokes were unaffected — no hub downtime, no firewall restart.
 
 #### 7.2 Removing a spoke
 
