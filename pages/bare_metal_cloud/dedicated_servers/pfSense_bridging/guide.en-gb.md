@@ -49,6 +49,7 @@ For the pfSense virtual machines network configuration, we will use the followin
 
 #### Assigning a virtual MAC address
 
+<!-- CP-STEPS-START:assign-virtual-mac -->
 Log in to the [OVHcloud Control Panel](/links/manager), open the `Network`{.action} menu in the left-hand sidebar and click `Public IP Addresses`{.action}.
 
 Click the `Additional IP`{.action} tab.
@@ -62,6 +63,7 @@ Next, locate your Additional IP address in the table and click the `...`{.action
 Select `ovh`{.action} from the `Type`{.action} dropdown box, type a name in the `Name of virtual machine`{.action} field, and then confirm your options.
 
 ![Virtual MAC type and name configuration dialog](images/addvmac2.png){.thumbnail}
+<!-- CP-STEPS-END:assign-virtual-mac -->
 
 #### Determining the gateway address
 

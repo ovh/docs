@@ -36,6 +36,7 @@ If you are configuring your dedicated server as a DNS server, you can make use o
 
 ### Adding a domain name <a name="addingdomain"></a>
 
+<!-- CP-STEPS-START:add-domain -->
 Switch to the tab `Secondary DNS`{.action} and click on the button `Add a domain`{.action}.
 
 ![Secondary DNS tab with Add a domain button](images/cp-01.png){.thumbnail}
@@ -53,6 +54,7 @@ After clicking on `Add`{.action} in the last window, the domain name will be add
 Added domain names will be listed in this tab and can be deleted by clicking on the `...`{.action} button. The name of the secondary DNS server will be displayed next to the domain name.
 
 ![List of added secondary DNS domains with delete option](images/cp-05.png){.thumbnail}
+<!-- CP-STEPS-END:add-domain -->
 
 > [!primary]
 >
@@ -66,6 +68,7 @@ Added domain names will be listed in this tab and can be deleted by clicking on 
 
 ### Verifying authorisation for the domain name <a name="verifyingdomain"></a>
 
+<!-- CP-STEPS-START:verify-domain-cancel -->
 It is necessary to confirm your authorisation to manage the domain name before it can be added to OVHcloud Secondary DNS. This is achieved via an automated DNS lookup on the subdomain *ownercheck.yourdomainname*. A unique string of characters is generated for this purpose and displayed in the OVHcloud Control Panel.
 
 - If the domain is managed by an external registrar or uses external DNS servers at this point, log in to the control panel of your DNS provider and add a TXT record with the subdomain "ownercheck" and the value provided in step 2 of the ["Add a domain" dialogue box](#addingdomain).
@@ -73,6 +76,7 @@ It is necessary to confirm your authorisation to manage the domain name before i
 - If the domain is managed by OVHcloud as its registrar and it uses OVHcloud DNS servers, close the window by clicking on `Cancel`{.action} first. Then you can follow the instructions in [this guide](/pages/web_cloud/domains/dns_zone_edit) to add the TXT record in your [OVHcloud Control Panel](/links/manager).
 
 ![Owner verification dialogue showing TXT record value](images/cp-04.png){.thumbnail}
+<!-- CP-STEPS-END:verify-domain-cancel -->
 
 After successfully adding the TXT record to the domain name's DNS zone, repeat the [steps above](#addingdomain) and finish the process.
 

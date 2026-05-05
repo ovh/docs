@@ -84,6 +84,7 @@ While requesting a new Additional IPv6 block, it's important to note that the al
 
 /// details | Request a new Additional IPv6 block
 
+<!-- CP-STEPS-START:request-additional-ipv6-block -->
 You can order your new additional IPv6 block [here](https://www.ovh.com/manager/#/dedicated/ip/agoraOrder/ipv6?catalogName=ip).
 
 ![configuration page](images/500.png){.thumbnail}
@@ -91,6 +92,7 @@ You can order your new additional IPv6 block [here](https://www.ovh.com/manager/
 Next, follow the step-by-step instructions.
 
 Your new Additional IPv6 will then be available on your vRack configuration page.
+<!-- CP-STEPS-END:request-additional-ipv6-block -->
 
 ///
 
@@ -106,6 +108,7 @@ The default gateway for the first /64 subnet (bridged one) is the first address 
 
 /// details | Via the OVHcloud Control Panel
 
+<!-- CP-STEPS-START:vrack-add-ipv6-cp -->
 ![vRack management](images/700.png){.thumbnail}
 
 On the left side, the possible options (eligible services to be configured) are listed.
@@ -131,6 +134,7 @@ To simplify IP addressing inside your network, you may want to use SLAAC. It can
 ![enabling SLAAC](images/702.png){.thumbnail}
 
 Don't forget to configure SLAAC on your host machine.
+<!-- CP-STEPS-END:vrack-add-ipv6-cp -->
 
 ///
 
@@ -220,6 +224,7 @@ As infrastructure requirements scale, users may require broader bandwidth to sup
 
 #### Choosing public bandwidth during an Additional IP order
 
+<!-- CP-STEPS-START:bandwidth-during-order -->
 The default public bandwidth can be changed when ordering a new Additional IP block with a vRack network as the backend.
 
 To order a new Additional IPv6 block:
@@ -232,6 +237,7 @@ To order a new Additional IPv6 block:
 - Select the region you want your Additional IP to be in.
 - Choose the public bandwidth you want to apply to your vRack for that specific region.
 - Fill in the other options as necessary, then proceed with your order.
+<!-- CP-STEPS-END:bandwidth-during-order -->
 
 ///
 
@@ -239,6 +245,7 @@ To order a new Additional IPv6 block:
 
 #### Modifying vRack public bandwidth on management page
 
+<!-- CP-STEPS-START:bandwidth-vrack-management -->
 For Additional IP blocks already attached to a vRack, bandwidth can be managed directly through the service configuration page.
 
 To access the management interface:
@@ -266,6 +273,7 @@ To modify the public bandwidth:
 >
 
 The selected bandwidth upgrade will apply to all IP addresses in that region for the chosen vRack.
+<!-- CP-STEPS-END:bandwidth-vrack-management -->
 
 ///
 
@@ -372,6 +380,7 @@ The default gateway for the host is the first address from the /56 block, which 
 
 /// details | OVHcloud Control Panel actions
 
+<!-- CP-STEPS-START:define-routed-subnet-cp -->
 After adding Additional IP to your vRack you can manage routed subnet by clicking the `Add subnet`{.action} button.
 
 ![vRack select](images/600.png){.thumbnail}
@@ -388,6 +397,7 @@ Please note that a given subnet cannot overlap with any other subnet defined and
 This created routed subnet `2001:41d0:abcd:ef10::/60` reachable via next hop `2001:41d0:abcd:ef00::2`. 
 
 ![Created routed subnet with next-hop displayed](images/801.png){.thumbnail}
+<!-- CP-STEPS-END:define-routed-subnet-cp -->
 
 ///
 

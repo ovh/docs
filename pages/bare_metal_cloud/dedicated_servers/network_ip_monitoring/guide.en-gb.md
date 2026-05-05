@@ -63,6 +63,7 @@ Reverse|IP|Protocol|
 
 ### Server monitoring
 
+<!-- CP-STEPS-START:configure-server-monitoring -->
 You can set the monitoring status for a dedicated server from the `General information`{.action} tab (section **Service status**).
 
 ![Monitoring status in server general information tab](images/monitoring-server.png){.thumbnail}
@@ -76,6 +77,7 @@ Click on the button `Configure`{.action}. In the popup window, you have three op
 ![Monitoring configuration popup with three options](images/monitoring-server2.png){.thumbnail}
 
 Click on `Confirm`{.action} to update your monitoring configuration.
+<!-- CP-STEPS-END:configure-server-monitoring -->
 
 ## Go further
 

@@ -52,6 +52,7 @@ The OVHcloud [vRack](/links/network/vrack) allows you to configure private netwo
 
 ### Add a Public Cloud project to the vRack
 
+<!-- CP-STEPS-START:add-project-to-vrack -->
 > [!primary]
 > This does not apply to newly created projects, which are automatically delivered with a vRack. Once the project has been created, you can view the vRack by opening the `Network`{.action} menu in the left-hand sidebar and selecting `vRack Private Network`{.action}.
 >
@@ -60,6 +61,7 @@ The OVHcloud [vRack](/links/network/vrack) allows you to configure private netwo
 From the list of eligible services, select the project you want to add to the vRack and click the `Add`{.action} button.
 
 ![Selecting a Public Cloud project to add to the vRack](images/addprojectvrack.png){.thumbnail}
+<!-- CP-STEPS-END:add-project-to-vrack -->
 
 ### Integrating an instance into the vRack
 
@@ -80,6 +82,7 @@ If you need assistance, follow this guide first: [Creating your first Public Clo
 
 #### In case of an existing instance
 
+<!-- CP-STEPS-START:create-and-attach-private-network -->
 Once your project is linked to a vRack, you can create a private network and attach it to existing instances.
 
 Go to the `Public Cloud`{.action} tab, then click `Private Network`{.action} under **Network** in the left sidebar.
@@ -152,6 +155,7 @@ In the dashboard of the instance concerned, locate the "Networks" section and cl
 In the popup window, select the private network(s) to attach to your instance and click on `Attach`{.action}.
 
 ![Popup to select and attach a private network to the instance](images/attach_network.png){.thumbnail}
+<!-- CP-STEPS-END:create-and-attach-private-network -->
 
 ### Configure your network interfaces
 

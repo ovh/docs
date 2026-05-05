@@ -39,17 +39,21 @@ The OVHcloud vRack (virtual rack) allows multiple servers to be grouped together
 
 ### Step 1: Ordering the vRack
 
+<!-- CP-STEPS-START:order-vrack -->
 Click the button `Add a service`{.action} (shopping cart icon) in the left-hand menu. Use the filter at the top of the page or scroll down to find the service `vRack`{.action}. 
 
 ![Order vrack](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/network/orderingvrack25.png){.thumbnail}
 
 Click on the `vRack`{.action} box to be redirected to the page where you can validate the order. It will take a few minutes for the vRack to be set up in your account.
+<!-- CP-STEPS-END:order-vrack -->
 
 ### Step 2: Adding your servers to the vRack
 
+<!-- CP-STEPS-START:add-servers-to-vrack -->
 Once the vRack is activated in your account, select your vRack from the list to display the list of eligible services. Click on each server you want to add to the vRack and then click the `Add`{.action} button.
 
 ![vRack selection](images/vrack_selection.png){.thumbnail}
+<!-- CP-STEPS-END:add-servers-to-vrack -->
 
 ### Step 3: Configuring your network interfaces
 
@@ -68,9 +72,11 @@ You can use any private IP range of your choice and any address within that rang
 
 The network interface names of your servers are not always the same.
 
+<!-- CP-STEPS-START:identify-vrack-interface -->
 The sure way to verify the correct interface for the vRack is to check the tab `Network interfaces`{.action} of your server in the [OVHcloud Control Panel](/links/manager). In the table at the bottom, take note of the MAC address which is also the **Name** of the **Private** interface.
 
 ![vRack interface](images/private_interface.png){.thumbnail}
+<!-- CP-STEPS-END:identify-vrack-interface -->
 
 Once connected to your server via SSH, you can list your network interfaces with the following command:
 

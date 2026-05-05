@@ -71,6 +71,7 @@ Once the issue has been resolved, you can unblock your IP by performing the foll
 
 #### Unblocking your IP from the OVHcloud Control Panel
 
+<!-- CP-STEPS-START:unblock-ip-cp -->
 You can use the drop-down menu underneath **My public IP addresses and associated services** to filter your services according to category, or directly type the desired IP address in the search bar.
 
 If you have an alert on any of your IP(s), there will be a red status icon in the **IP Alert** column.
@@ -88,6 +89,7 @@ In the window that appears, click on `Unblock the IP`{.action} at the bottom and
 The IP is being released, the operation may take several minutes.
 
 Once done, your IP will be unblocked.
+<!-- CP-STEPS-END:unblock-ip-cp -->
 
 #### Unblocking your IP from the OVHcloud API
 

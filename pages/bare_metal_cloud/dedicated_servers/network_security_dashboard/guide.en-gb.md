@@ -35,9 +35,11 @@ The Anti-DDoS infrastructure is constantly analysing incoming traffic (detection
 
 Every time an attack is detected towards any IP of your service, you are notified via email that traffic has been rerouted through the Anti-DDoS infrastructure. You can also monitor these periods on the Network Security Dashboard with additional details.
 
+<!-- CP-STEPS-START:active-mitigation-warning -->
 During an attack, an active mitigation action will be indicated by a warning icon on the IP listing page (in the `Manage IPs`{.action} section of your Control Panel).
 
 ![Active mitigation warning icon on the IP listing page](images/forced_blur.png){.thumbnail}
+<!-- CP-STEPS-END:active-mitigation-warning -->
 
 > [!primary]
 >
@@ -51,6 +53,7 @@ During an attack, an active mitigation action will be indicated by a warning ico
 
 ### Network security notifications
 
+<!-- CP-STEPS-START:network-security-notifications -->
 ![Network security notifications with Anti-DDoS status columns](images/nsd_04_blur.PNG){.thumbnail}
 
 Ensure that `Advanced mode` is enabled to see the Anti-DDoS infrastructure status and its components configuration.
@@ -72,9 +75,11 @@ The columns correspond to the Anti-DDoS scrubbing (**Mitigation**) status, the E
     - **(no status)** - The GAME firewall is not available for this IP. This means the listed IP is not configured on a supported product range.
 
 - The **Alerts** column may indicate an active scrubbing centre with a warning icon and appropriate hint.
+<!-- CP-STEPS-END:network-security-notifications -->
 
 ### Network Security Dashboard
 
+<!-- CP-STEPS-START:dashboard-tabs -->
 In the **scrubbing centre log** tab, you can retrieve all the information about attacks that were detected in the past (or that are ongoing).
 
 ![Scrubbing centre log showing detected attacks and timestamps](images/nsd_main_blur.png)
@@ -100,6 +105,7 @@ In the **Traffic chart** tab, you can see a graph showing traffic to your IP add
 It presents malicious traffic that was dropped (**in red**) and clean traffic delivered to your IP address (**in green**). There are also basic mitigation statistics displayed, i.e.: how many attacks were detected for a selected IP, how much traffic (or packets) was cleaned during attacks or how many times scrubbing centres took an action to inspect your traffic (number of events) in a selected period of time.
 
 **The data retention period for the traffic chart is 2 months.**
+<!-- CP-STEPS-END:dashboard-tabs -->
 
 ## FAQ
 

@@ -76,6 +76,7 @@ As well as private IP addressing, the [vRack](/links/network/vrack) also allows 
 
 ### Add the IP block to the vRack
 
+<!-- CP-STEPS-START:add-ip-block -->
 > [!warning]
 >
 > Once an IP block is added to the vRack, it is no longer attached to a physical server.
@@ -86,6 +87,7 @@ As well as private IP addressing, the [vRack](/links/network/vrack) also allows 
 Select your vRack from the list to display the list of eligible services. Click the IP block you wish to add to the vRack and click on the `Add`{.action} button.
 
 ![Add an IP block to the vRack](images/addIPblock.png){.thumbnail}
+<!-- CP-STEPS-END:add-ip-block -->
 
 ### Managing public IP bandwidth on vRack
 
@@ -93,6 +95,7 @@ By default, Additional IP blocks routed via a vRack benefit from a standard publ
 
 As infrastructure requirements scale, users may require broader bandwidth to support high-traffic public-oriented services, for which OVHcloud provides paid bandwidth options. It is important to note that bandwidth options are applied **per-vRack and per-region**. Since Additional IP addresses are tied to a region, any bandwidth modification will affect all IP addresses (both IPv4 and IPv6) routed to the specific vRack within that particular region.
 
+<!-- CP-STEPS-START:bandwidth-during-order -->
 /// details | During the Additional IP ordering process
 
 #### Choosing public bandwidth during an Additional IP order
@@ -110,7 +113,9 @@ To order a new Additional IP block:
 - Fill in the other options as necessary, then proceed with your order.
 
 ///
+<!-- CP-STEPS-END:bandwidth-during-order -->
 
+<!-- CP-STEPS-START:bandwidth-vrack-management -->
 /// details | From the vRack management page
 
 #### Modifying vRack public bandwidth on management page
@@ -142,6 +147,7 @@ To modify the public bandwidth:
 The selected bandwidth upgrade will apply to all IP addresses in that region for the chosen vRack.
 
 ///
+<!-- CP-STEPS-END:bandwidth-vrack-management -->
 
 ### Configure a usable IP address
 

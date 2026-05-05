@@ -73,6 +73,7 @@ Code samples in the following instructions have to be replaced with your own val
 
 ### Assign a virtual MAC address
 
+<!-- CP-STEPS-START:assign-virtual-mac -->
 > [!warning]
 > In the case of a block of IPs, virtual MAC addresses are created on each individual IP in the block.
 
@@ -89,6 +90,7 @@ Choose `ovh`{.action} from the "Type" drop-down menu unless you are using VMware
 ![Add a virtual MAC (2)](images/addvmac2_new.png){.thumbnail}
 
 After a few seconds, a virtual MAC will appear in the "Virtual MAC" column of your Additional IP row. This virtual MAC will be required when configuring your VM on the host.
+<!-- CP-STEPS-END:assign-virtual-mac -->
 
 ### Determine the gateway address <a name="determinegateway"></a>
 
@@ -96,6 +98,7 @@ To configure your virtual machines for Internet access, you need to know the gat
 
 You can retrieve the gateway address via [your customer area](#viacontrolpanel) or the [OVHcloud API](#viaapi).
 
+<!-- CP-STEPS-START:determine-gateway -->
 > [!tabs]
 > **Via the OVHcloud Control Panel**
 >>
@@ -114,6 +117,7 @@ You can retrieve the gateway address via [your customer area](#viacontrolpanel) 
 >> > @api {v1} /dedicated/server GET /dedicated/server/{serviceName}/specifications/network
 >> >
 >>
+<!-- CP-STEPS-END:determine-gateway -->
 
 ### Prepare the host
 

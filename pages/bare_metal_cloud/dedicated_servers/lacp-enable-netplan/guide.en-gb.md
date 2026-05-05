@@ -54,9 +54,11 @@ Link Aggregation Control Protocol (LACP) technology is designed to increase your
 
 ### Retrieving MAC addresses
 
+<!-- CP-STEPS-START:retrieve-mac-addresses -->
 Switch to the tab `Network Interfaces`{.action} and take note of the MAC addresses for each interface (public/private) which are displayed at the bottom of the menu.
 
 ![OVHcloud Control Panel](images/ControlPanel.png){.thumbnail}
+<!-- CP-STEPS-END:retrieve-mac-addresses -->
 
 > [!primary]
 > Please note that the MAC address of the **main public** interface is the one receiving DHCP offers, both in the server's operating system and in rescue mode. This interface handles public connectivity in the default configuration.

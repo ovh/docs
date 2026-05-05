@@ -145,6 +145,7 @@ After this, the server needs to be rebooted on the normal operating system.
 
 ### Step 3 - Reboot the server <a name="step3"></a>
 
+<!-- CP-STEPS-START:reboot-server -->
 First, change the netboot back to "Boot from the hard disk" in your OVHcloud Control Panel (see [step 1](#step1)).
 
 Then restart the server from the Control Panel.
@@ -152,6 +153,7 @@ Then restart the server from the Control Panel.
 Click the `...`{.action} button near "Status" in the "Service Status" section and click `Restart`{.action}.
 
 ![reboot](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/dedicated-servers/general-information/cp_dedicated_restart.png){.thumbnail}
+<!-- CP-STEPS-END:reboot-server -->
 
 ## Go further
 

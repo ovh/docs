@@ -61,9 +61,11 @@ The first step is to retrieve the IPv6 gateway assigned to your server. Two meth
 
 #### Via the OVHcloud Control Panel
 
+<!-- CP-STEPS-START:find-ipv6-gateway-cp -->
 The IPv6 gateway assigned to your server is displayed in the `Network` section of the `General information`{.action} tab.
 
 ![Server dashboard Network section showing IPv6 gateway](images/ipv6_information.png){.thumbnail}
+<!-- CP-STEPS-END:find-ipv6-gateway-cp -->
 
 #### Via OVHcloud APIs
 

@@ -265,9 +265,11 @@ The system is going down for reboot NOW!
 
 ### Step 5: Setting a new password (IPMI)
 
+<!-- CP-STEPS-START:ipmi-kvm-session -->
 In your [OVHcloud Control Panel](/links/manager), navigate to the `IPMI`{.action} tab to open a KVM session.
 
 ![IPMI tab in the OVHcloud Control Panel for KVM access](images/adminpw_win_03.png){.thumbnail}
+<!-- CP-STEPS-END:ipmi-kvm-session -->
 
 #### Step 5.1: For a newer version of Windows
 
@@ -310,9 +312,11 @@ For detailed instructions, please refer to the [rescue mode guide](/pages/bare_m
 
 #### Step 2: Clearing the current password
 
+<!-- CP-STEPS-START:ipmi-kvm-session-winrescue -->
 In your [OVHcloud Control Panel](/links/manager), navigate to the `IPMI`{.action} tab to open a KVM session.
 
 ![Opening a KVM session from the IPMI tab](images/adminpw_win_03.png){.thumbnail}
+<!-- CP-STEPS-END:ipmi-kvm-session-winrescue -->
 
 To reset passwords, the tool NTPWEdit is required. Once you are connected via KVM, open the browser and download it from the [official website](http://www.cdslow.org.ru/en/ntpwedit/). Navigate to the folder where the downloaded ZIP file is located and extract the contents. Next, open the *ntpwedit64* executable to start the application.
 

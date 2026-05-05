@@ -48,6 +48,7 @@ OVHcloud allows you to associate a virtual MAC address with an IP address, so th
 
 #### Via the OVHcloud Control Panel
 
+<!-- CP-STEPS-START:assign-mac-cp -->
 Click the `Additional IP`{.action} tab.
 
 ![Additional IP tab in the Control Panel](images/manageIPs2022.png){.thumbnail}
@@ -71,6 +72,7 @@ When the 'Add a virtual MAC' box appears, select a type from the dropdown list, 
 >
 > Do not forget to assign the virtual MAC address created in your virtual machine configuration.
 >
+<!-- CP-STEPS-END:assign-mac-cp -->
 
 #### Via the OVHcloud API
 
@@ -89,9 +91,12 @@ Use the following API call:
 
 #### Via the OVHcloud Control Panel
 
+<!-- CP-STEPS-START:delete-mac-cp -->
 Log in to the [OVHcloud Control Panel](/links/manager), open the `Network`{.action} menu in the left-hand sidebar and click `Public IP Addresses`{.action}. Select the correct server, so that the Additional IP (or IP block) attached to it appears.
 
 Finally, click on the `...`{.action} button on the right, then click `Delete a Virtual MAC`{.action}.
+<!-- CP-STEPS-END:delete-mac-cp -->
+
 
 #### Via the OVHcloud API
 

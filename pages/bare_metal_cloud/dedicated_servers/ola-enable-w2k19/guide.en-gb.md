@@ -28,12 +28,14 @@ Aggregation is based on IEEE 802.3ad, Link Aggregation Control Protocol (LACP) t
 
 ## Instructions
 
+<!-- CP-STEPS-START:launch-kvm -->
 Because you have a private-private configuration for your NICs in OLA, you will be unable to SSH into the server. Thus, you will need to leverage the IPMI tool to access the server.
 <br>To do so, click the `IPMI`{.action} tab (1).
 
 Next, click the `From a Java applet (KVM)`{.action} button (2).
 
 ![remote kvm](images/remote_kvm2022.png){.thumbnail}
+<!-- CP-STEPS-END:launch-kvm -->
 
 A JNLP program will download. Open the program once it is finished to enter the IPMI. Log in using valid credentials for the server.
 

@@ -36,6 +36,7 @@ For example, you can categorize your resources by site, service, or even securit
 
 ### Assign a tag to a dedicated server via the OVHcloud Control Panel
 
+<!-- CP-STEPS-START:assign-tag -->
 
 
 ![General information](images/general_information.png){.thumbnail}
@@ -70,9 +71,11 @@ Finally, click the `Add`{.action} button to create the tag, then click the `Assi
 You will receive a green confirmation message, then see the list of tags applied to the chosen server.
 
 ![Tags - list with example](images/tag_list_with_example.png){.thumbnail}
+<!-- CP-STEPS-END:assign-tag -->
 
 ### Delete a tag on a dedicated server
 
+<!-- CP-STEPS-START:delete-tag -->
 To find the list of tags assigned to your server:
 
 1. Log in to your [OVHcloud Control Panel](/links/manager).
@@ -88,6 +91,7 @@ Then click `Remove`{.action}.
 A confirmation window will appear. Click the `Confirm`{.action} button to unassign the tag.
 
 ![Remove tag](images/remove_tag.png){.thumbnail}
+<!-- CP-STEPS-END:delete-tag -->
 
 ## Go further
 

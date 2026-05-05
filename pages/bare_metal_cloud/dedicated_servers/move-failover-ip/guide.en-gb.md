@@ -74,6 +74,7 @@ If you order an additional IP block on a server but choose a different location 
 
 ### Moving an Additional IP from the OVHcloud Control Panel
 
+<!-- CP-STEPS-START:move-ip-cp -->
 > [!warning]
 > Only a single size block (/32) can be moved from a dedicated server to a VPS.
 >
@@ -97,6 +98,7 @@ Click `Next`{.action}, then `Confirm`{.action}.
 >
 > To move IP blocks to a specific vRack network, please use **the vRack management interface**, which you can access by opening the `Network`{.action} menu in the left-hand sidebar, then selecting `vRack private network`{.action}.
 >
+<!-- CP-STEPS-END:move-ip-cp -->
 
 ### Moving an Additional IP via the API
 
@@ -147,6 +149,7 @@ This will generate a code (token). Save it.
 
 ![Token code generated for the IP transfer](images/token-id.png){.thumbnail}
 
+<!-- CP-STEPS-START:import-sys-to-ovh -->
 Next, [log into your OVHcloud account](/links/manager), open the `Network`{.action} menu in the left-hand sidebar and click `Public IP Addresses`{.action}.
 
 Click on the cogwheel on the right side and select `Import IP addresses from SyS to OVHcloud`{.action}.
@@ -179,6 +182,7 @@ Take note of the order summary and click on `Confirm`{.action} to confirm it.
 You will be redirected to a new page to make the payment.
 
 Once the payment is done, your Additional IP will be transferred to your OVHcloud account and linked to the selected server. This process can take some time.
+<!-- CP-STEPS-END:import-sys-to-ovh -->
 
 ### Limitations <a name="limitations"></a>
 

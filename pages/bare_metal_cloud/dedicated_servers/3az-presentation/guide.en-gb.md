@@ -50,6 +50,7 @@ For optimal performance, a region should be selected closest to its users. For g
 ---
 <!-- CP-NAV-END:baremetal-dedicated-servers -->
 
+<!-- CP-STEPS-START:view-3az-clusters -->
 Switch to the tab `3-AZ clusters`{.action}.
 
 ![3-AZ clusters tab listing available clusters](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/dedicated-servers/general-information/clusters1.png){.thumbnail}
@@ -63,6 +64,7 @@ Click the tab `Nodes`{.action} to open the server list of the cluster.
 ![Nodes tab showing the list of servers in the cluster](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/dedicated-servers/general-information/clusters3.png){.thumbnail}
 
 Clicking on a server/node name in this list opens the `General information`{.action} tab of the server. You can find the details on this Control Panel section in our guide:
+<!-- CP-STEPS-END:view-3az-clusters -->
 
 [How to get started with a dedicated server](/pages/bare_metal_cloud/dedicated_servers/getting-started-with-dedicated-server)
 
