@@ -43,12 +43,12 @@ It is designed for test and development environments or non-critical projects.
 
 ### Business/Production
 
-The Business plan is more comprehensive and suitable for organizations with higher database demands.
+The Business/Production plan is more comprehensive and suitable for organizations with higher database demands.
 This is the first production-ready offering.
 
 ### Enterprise/Advanced
 
-The enterprise pricing plan is the most advanced and robust option available for managed databases.
+The Enterprise/Advanced pricing plan is the most advanced and robust option available for managed databases.
 It is dedicated to organizations with complex and high-performance database requirements.
 
 ### Plan capabilities overview
