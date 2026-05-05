@@ -143,6 +143,41 @@ L'augmentation de bande passante s'appliquera à toutes les adresses IP de cette
 
 ///
 
+### Gérer les priorités de basculement 3-AZ
+
+Certaines régions OVHcloud s'étendent sur trois zones de disponibilité (AZ) hébergées dans des emplacements physiquement indépendants au sein d'une même région. Lorsqu'une telle région intervient dans le routage des IP publiques de votre vRack, elle est identifiée dans l'espace client OVHcloud par un badge **3-AZ** affiché à côté du nom de la région dans l'onglet `Connectivité IP publique`{.action}.
+
+#### Avantages
+
+- **Résilience intégrée** : le trafic IP public routé via le vRack reste disponible si une zone de disponibilité devient indisponible, le routage basculant automatiquement vers l'AZ suivante dans l'ordre de priorité.
+- **Comportement de basculement prévisible** : chaque région 3-AZ expose pour votre vRack une zone de disponibilité primaire et deux positions de basculement ordonnées, ce qui rend la séquence de basculement déterministe.
+- **Alignement avec la charge de travail** : lorsque d'autres services OVHcloud sont déployés dans la même région 3-AZ, les priorités peuvent être alignées pour que l'AZ active du vRack corresponde à l'AZ qui héberge vos services. Votre trafic public reste ainsi dans la même AZ que votre charge de travail en fonctionnement normal.
+
+#### Mécanique et gestion des priorités
+
+Lorsqu'un vRack est rattaché pour la première fois à une région 3-AZ, OVHcloud lui attribue aléatoirement une **zone de disponibilité primaire**. La zone primaire est affichée dans la tuile correspondante de l'onglet `Connectivité IP publique`{.action}, à côté d'un lien `Configurer les priorités de basculement 3-AZ`{.action}. Les deux AZ restantes sont attribuées comme **Premier basculement** et **Basculement de dernier recours**.
+
+Vous pouvez modifier cette attribution aléatoire à tout moment, par exemple pour aligner les priorités de basculement sur la disposition AZ d'autres composants attachés à votre infrastructure.
+
+/// details | Modifier les priorités des zones de disponibilité
+
+Pour ajuster les priorités de basculement d'une région 3-AZ :
+
+- Dans la barre latérale gauche du Tableau de bord, ouvrez `Network`{.action}.
+- Sélectionnez `Réseau Privé vRack`{.action}.
+- Dans la colonne « Adresse IP publique et bande passante », cliquez sur le bouton `Gérer`{.action} correspondant au vRack souhaité.
+- Ouvrez l'onglet `Connectivité IP publique`{.action}.
+- Dans la tuile de la région 3-AZ à configurer, cliquez sur `Configurer les priorités de basculement 3-AZ`{.action}.
+- Dans le panneau qui s'ouvre à droite, attribuez chaque zone de disponibilité à l'un des trois emplacements : **Zone primaire**, **Premier basculement** et **Basculement de dernier recours**.
+- Validez votre sélection.
+
+> [!primary]
+>
+> Les modifications de priorité s'appliquent à tous les blocs d'Additional IP routés vers la région 3-AZ correspondante pour le vRack sélectionné, quelle que soit leur version d'IP.
+>
+
+///
+
 ### Configurer une adresse IP utilisable
 
 Dans le cas du vRack, la première, l'avant-dernière et la dernière adresse d'un bloc d'IP donné sont toujours réservées respectivement à l'adresse réseau, la passerelle réseau et au *broadcast* du réseau. Cela signifie que la première adresse utilisable est la deuxième adresse du bloc, comme indiqué ci-dessous :
