@@ -38,6 +38,7 @@ Before applying backup options, we recommend consulting the [product pages and F
 
 ### Step 1: Subscribing to the snapshot option
 
+<!-- CP-STEPS-START:subscribe-snapshot -->
 From the `Home`{.action} tab, scroll down to the box labelled **Backup**.  
 If "Snapshot" is already set to "Enabled", go directly to step 2. If "Snapshot" is not yet enabled, click on `...`{.action} next to the option "Snapshot" and in the context menu click on `Order`{.action}.
 
@@ -48,13 +49,17 @@ In the next step, note the pricing information, then click `Order`{.action}. You
 To cancel the service option, click on the button `...`{.action} next to the option "Snapshot" and choose `Close`{.action} from the context menu.
 
 ![snapshotvps](images/snapshot_vps_cancel.png){.thumbnail}
+<!-- CP-STEPS-END:subscribe-snapshot -->
 
 ### Step 2: Taking a snapshot
 
+<!-- CP-STEPS-START:take-snapshot -->
 Once the option is enabled, click on `...`{.action} next to the option "Snapshot" and in the context menu click `Take a snapshot`{.action}. You can write a description that will be attached to your snapshot. The time it takes to create the snapshot depends on the storage space in use. Afterwards, refresh your page to see the timestamp of the creation in the **Backup** box.
+<!-- CP-STEPS-END:take-snapshot -->
 
 ### Step 3: Deleting or restoring a snapshot
 
+<!-- CP-STEPS-START:delete-restore-snapshot -->
 Since you can only have one snapshot activated at a time, the existing snapshot has to be deleted before creating a new one. Simply choose `Delete the snapshot`{.action} from the context menu.
 
 ![snapshotvps](images/snapshot_vps_step2.png){.thumbnail}
@@ -66,9 +71,11 @@ If you are sure that you would like to reset your VPS to the status of the snaps
 > Please note that when you restore a VPS from a snapshot, the snapshot will be deleted. If you wish to keep the same snapshot, you should take a new one before making changes to the restored system.
 >
 > If the snapshot function is too limited for your project, consider switching to the option [Automated Backups](/pages/bare_metal_cloud/virtual_private_servers/using-automated-backups-on-a-vps).
+<!-- CP-STEPS-END:delete-restore-snapshot -->
 
 ### Downloading a snapshot
 
+<!-- CP-STEPS-START:download-snapshot -->
 The current snapshot can be retrieved via download link. Click on `...`{.action} next to the option "Snapshot" and choose `Download the snapshot`{.action} from the context menu.
 
 ![snapshotvps](images/snapshot_vps03.png){.thumbnail}
@@ -85,6 +92,7 @@ In the popup window, click on `Generate download link`{.action}.
 After a few seconds, a success message appears. Below it, you can copy the complete download command with one click.
 
 ![snapshotvps](images/snapshot_vps05.png){.thumbnail}
+<!-- CP-STEPS-END:download-snapshot -->
 
 The size of the snapshot and the expiration date of the link will also be displayed.
 

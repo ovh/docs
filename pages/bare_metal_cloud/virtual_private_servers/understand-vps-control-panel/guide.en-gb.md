@@ -47,14 +47,17 @@ This guide helps you **understand the VPS management interface in the OVHcloud C
 
 ### Dashboard <a name="controlpanel"></a>
 
+<!-- CP-STEPS-START:dashboard-overview -->
 The `Home`{.action} tab is the **main dashboard** of your VPS.
 
 It centralises **key information about the service** and provides access to **essential management actions**.
 
 ![VPS Home](images/vpshome.png){.thumbnail}
+<!-- CP-STEPS-END:dashboard-overview -->
 
 #### Your VPS <a name="myvps"></a>
 
+<!-- CP-STEPS-START:your-vps-tabs -->
 Find below the basic information about your VPS and the service status. Click on the tabs below to display the details.
 
 > [!tabs]
@@ -91,9 +94,11 @@ Find below the basic information about your VPS and the service status. Click on
 >>
 >> These sections provide information about the location of your VPS. This can be useful for identifying and assessing any potential impacts on your service, such as those mentioned in [incident or maintenance reports](https://bare-metal-servers.status-ovhcloud.com/).
 >>
+<!-- CP-STEPS-END:your-vps-tabs -->
 
 #### Your configuration <a name="myconf"></a>
 
+<!-- CP-STEPS-START:your-configuration-tabs -->
 <iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/BbyE52W7aBo?si=mmgSmaqIxx0zzGz2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 Click on the tabs below to display the details of this section.
@@ -110,9 +115,11 @@ Click on the tabs below to display the details of this section.
 > Additional disks
 >> 
 >> Add additional disks to your VPS to increase the server's storage capacity beyond that included in the initial configuration. You can, for example, store backup data on them.
+<!-- CP-STEPS-END:your-configuration-tabs -->
 
 #### IP <a name="ip"></a>
 
+<!-- CP-STEPS-START:ip-tabs -->
 Click on the tabs below to display the details of this section.
 
 > [!tabs]
@@ -127,9 +134,11 @@ Click on the tabs below to display the details of this section.
 > Secondary DNS
 >>
 >> This feature is useful for hosting DNS services. Consult our guide "[Configuring an OVHcloud secondary DNS on a VPS](/pages/bare_metal_cloud/virtual_private_servers/adding-secondary-dns-on-vps)" for more details on this subject.
+<!-- CP-STEPS-END:ip-tabs -->
 
 #### Backup <a name="save"></a>
 
+<!-- CP-STEPS-START:backup-tabs -->
 These options refer to additional VPS services for backing up and restoring your system.
 
 > [!tabs]
@@ -144,6 +153,7 @@ These options refer to additional VPS services for backing up and restoring your
 >>
 
 Find all information on the backup solutions available for your service on the [VPS product page](/links/bare-metal/vps-options) and in [our respective guides](/products/bare-metal-cloud-virtual-private-servers-configuration).
+<!-- CP-STEPS-END:backup-tabs -->
 
 #### My offer <a name="myoffer"></a>
 
@@ -168,12 +178,15 @@ A reboot may be necessary to apply configuration updates or to resolve a malfunc
 sudo reboot
 ```
 
+<!-- CP-STEPS-START:reboot-vps -->
 However, you can perform a forced reboot at any time in your [OVHcloud Control Panel](/links/manager). From the `Home`{.action} tab, click on the `...`{.action} button next to `Boot` in the **Your VPS** section. Select `Reboot my VPS`{.action} and click `Confirm`{.action} in the window that appears.
 
 ![Reboot](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/vps/cp_reboot.png){.thumbnail}
+<!-- CP-STEPS-END:reboot-vps -->
 
 #### Reinstall your VPS <a name="reinstallvps"></a>
 
+<!-- CP-STEPS-START:reinstall-vps -->
 The reinstallation of your VPS can be done from your Control Panel. This operation is generally used in case of system problems, environment change or to start with a clean installation.
 
 Click on the `...`{.action} button to the right of `OS/Distribution`{.action}, then on `Reinstall my VPS`{.action}.
@@ -188,6 +201,7 @@ If you have selected a compatible operating system, you can provide a **public k
 - If you have previously [stored a public key](/pages/bare_metal_cloud/dedicated_servers/import-keys-control-panel) in your [OVHcloud Control Panel](/links/manager), select the desired key from the `SSH Key to pre-install` drop-down menu.
 
 ![VPSnewreinstallation](images/reinstall.png){.thumbnail}
+<!-- CP-STEPS-END:reinstall-vps -->
 
 For more information on this topic, consult our guides:
 
@@ -201,6 +215,7 @@ If you have selected an SSH key and do not need a password to connect, enable th
 > Reinstallation will format all the server's disks. It is strongly recommended to create a snapshot of your VPS before proceeding, so that you can return to the previous state in case of a problem.
 >
 
+<!-- CP-STEPS-START:manage-licenses -->
 > [!primary]
 >
 > **Licenses**
@@ -209,6 +224,7 @@ If you have selected an SSH key and do not need a password to connect, enable th
 >
 > To have a **Windows** operating system running on a VPS, you must have previously chosen it **in the ordering process**. A VPS with another OS installed cannot be reinstalled with Windows via the method described above.
 >
+<!-- CP-STEPS-END:manage-licenses -->
 
 The reinstallation process can take a few minutes.
 
