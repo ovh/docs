@@ -1,40 +1,40 @@
 ---
-title: Understanding Public Cloud Databases Pricing
-excerpt: "Learn how Public Cloud database services are priced, including compute, storage, backups, and per-second billing."
-updated: 2026-05-04
+title: Understanding Public Cloud Databases pricing
+excerpt: "Find out how Public Cloud Databases are billed per second, including compute, storage and backups"
+updated: 2026-05-05
 ---
 
 ## Objective
 
-This guide explains how pricing works for OVHcloud Managed Databases. It covers the three main cost components (compute, storage, and backups), how per-second billing is applied, and how to interpret pricing across the website, order page, and billing usage in the Control Panel.
+This guide explains how pricing works for OVHcloud Public Cloud Databases. It covers the three main cost components (compute, storage and backups), how per-second billing is applied, and how to interpret pricing across the website, order page and billing usage in the OVHcloud Control Panel.
 
-## Database Pricing Components
+## Database pricing components
 
-### Compute (Virtual Machine)
+### Compute (virtual machine)
 
-Compute represents the virtual machine running your database service. It includes CPU and RAM resources, which directly impact performance, scalability, and the overall hourly cost of your service.
+Compute represents the virtual machine running your database service. It includes CPU and RAM resources, which directly impact performance, scalability and the overall hourly cost of your service.
 
 ### Storage (Block Storage)
 
-Storage corresponds to the block storage volume where your database data is stored. This component is billed based on the allocated capacity (in GB) and is independent from compute resources.
+Storage corresponds to the Block Storage volume where your database data is stored. This component is billed based on the allocated capacity (in GB) and is independent from compute resources.
 
-Databases such as Valkey are in-memory systems, meaning they store data primarily in RAM and therefore do not directly benefit from block storage for their core data operations.
+Databases such as Valkey are in-memory systems, meaning they store data primarily in RAM and therefore do not directly benefit from Block Storage for their core data operations.
 
 ### Backups (Object Storage)
 
-Backups are stored in object storage and ensure data durability and recovery. Pricing depends not only on the database engine and any associated retention policy, but also on the nature of the data files and how the database engine structures and organizes the data—while backup tools may optimize the final backup size through compression, these factors still directly influence the characteristics and overall size of the resulting backups.
+Backups are stored in Object Storage and ensure data durability and recovery. Pricing depends not only on the database engine and any associated retention policy, but also on the nature of the data files and how the database engine structures and organizes the data—while backup tools may optimize the final backup size through compression, these factors still directly influence the characteristics and overall size of the resulting backups.
 
-## Billing and Pricing Principles
+## Billing and pricing principles
 
-### Per-Second Billing
+### Per-second billing
 
-OVHcloud databases are billed on a per-second basis, meaning you only pay for the exact duration your resources are used. This provides flexibility and ensures accurate cost tracking, especially for short-lived or scaled workloads.
+Public Cloud Databases are billed on a per-second basis: you only pay for the exact duration your resources are used. This provides flexibility and ensures accurate cost tracking, especially for short-lived or scaled workloads.
 
-### Hourly Price (Source of Truth)
+### Hourly price (source of truth)
 
 The hourly price is the reference value used to calculate costs. It reflects the price of your resources per hour and serves as the basis for all billing calculations.
 
-### Monthly Price
+### Monthly price
 
 The monthly price is an estimation derived from the hourly price:
 
@@ -42,7 +42,7 @@ The monthly price is an estimation derived from the hourly price:
 
 This gives a standard approximation of monthly costs for comparison and planning purposes, even though actual billing remains based on per-second usage.
 
-### Invoice Structure
+### Invoice structure
 
 Invoices for database services are designed to clearly reflect how resources are billed.
 
@@ -59,24 +59,26 @@ As the billing model evolves toward greater transparency, invoices are being upd
 
 This evolution provides better visibility into how costs are distributed between compute, storage and backup resources.
 
-## Pricing Visibility Across Interfaces
+## Pricing visibility across interfaces
 
-### Website Pricing Page
+### Website pricing page
 
-The [pricing page on the OVHcloud website](https://www.ovhcloud.com/fr/public-cloud/prices/){.external} provides a high-level overview of database service costs. It displays hourly and estimated monthly prices, allowing users to compare different plans and configurations.
+The [pricing page on the OVHcloud website](/links/public-cloud/prices) provides a high-level overview of database service costs. It displays hourly and estimated monthly prices, allowing users to compare different plans and configurations.
 
-### OVHcloud Control Panel – Order Page
+### OVHcloud Control Panel – Order page
 
-When ordering a database service in the OVHcloud Control Panel, pricing is displayed in real time based on selected resources. The estimate updates dynamically as you adjust compute, storage, or backup options.
+When ordering a database service in the OVHcloud Control Panel, pricing is displayed in real time based on selected resources. The estimate updates dynamically as you adjust compute, storage or backup options.
 
-### OVHcloud Control Panel – Billing & Usage
+### OVHcloud Control Panel – Billing & usage
 
-In the billing section of the Control Panel, you can monitor your actual usage and costs. Charges are detailed per component and reflect the per-second billing model, giving full transparency into how your bill is calculated.
+In the billing section of the OVHcloud Control Panel, you can monitor your actual usage and costs. Charges are detailed per component and reflect the per-second billing model, giving full transparency into how your bill is calculated.
 
 ## We want your feedback
 
 We would love to help answer questions and appreciate any feedback you may have.
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for a custom analysis of your project.
+For training or technical assistance implementing our solutions, contact your sales representative or visit our [Professional Services](/links/professional-services) page to request a quote and have your project analyzed by our experts.
 
 Are you on Discord? Connect to our channel at <https://discord.gg/ovhcloud> and interact directly with the team that builds our databases service!
+
+Join our [community of users](/links/community).
