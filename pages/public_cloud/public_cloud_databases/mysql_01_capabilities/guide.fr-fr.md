@@ -1,7 +1,7 @@
 ---
 title: Capacités et limitations de Public Cloud Databases pour MySQL (EN)
 excerpt: Discover the capabilities and limitations of Public Cloud Databases for MySQL
-updated: 2026-04-15
+updated: 2026-05-05
 ---
 
 ## Objective
