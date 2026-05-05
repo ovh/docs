@@ -1,7 +1,7 @@
 ---
 title: Getting started with Public Cloud Databases
 excerpt: Find out how to order a Public Cloud managed database service using the OVHcloud Control Panel, OVHcloud API, OVHcloud CLI, or Terraform
-updated: 2026-04-27
+updated: 2026-05-05
 ---
 
 ## Objective

@@ -1,7 +1,7 @@
 ---
 title: Déployer un service avec Terraform pour Public Cloud Databases pour MongoDB (EN)
 excerpt: Find out how to set up an OVHcloud managed MongoDB service via Terraform within a vRack, as well as how to access it from other parts of your infrastructure.
-updated: 2026-04-27
+updated: 2026-05-05
 ---
 
 ## Objective
