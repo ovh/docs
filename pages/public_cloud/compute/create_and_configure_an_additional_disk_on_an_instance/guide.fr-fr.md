@@ -70,25 +70,31 @@ Dans les régions 3AZ, les volumes Classic sont des services régionaux qui util
 
 ///
 
-/// details | **High-Speed – Jusqu’à 3000 IOPS**
+/// details | **High-Speed Gen2 – 30 IOPS/GB et jusqu’à 20 000 IOPS**
 
-Le volume High-Speed est conçu pour des applications nécessitant un accès plus rapide aux données. Avec une performance pouvant atteindre 3000 IOPS, il convient parfaitement aux cas d’usage suivants :
+La génération 2 des volumes High-Speed est optimisée pour les workloads les plus exigeants. Les performances s’adaptent à la taille du volume :
 
-- Bases de données transactionnelles (MySQL, PostgreSQL, etc.)
-- Environnements de virtualisation et de conteneurs
-- Applications nécessitant une latence réduite et un débit élevé
+- **IOPS** : 30 IOPS/Go (base 3 000 IOPS pour 10–100 Go, jusqu’à 20 000 IOPS)
+- **Débit** : 0,5 Mo/s/Go (base 50 Mo/s pour 10–100 Go, jusqu’à 512 Mo/s)
+- **Taille maximale** : 12 To
 
-///
-
-/// details | **High-Speed Gen2 – 30 IOPS/GB et jusqu’à 20 000 IOPS**
-
-La génération 2 des volumes High-Speed est optimisée pour les workloads les plus exigeants. Avec une performance de 30 IOPS/GB, pouvant atteindre 20 000 IOPS, ce type de volume est recommandé pour les usages suivants :
+Ce type de volume est recommandé pour les usages suivants :
 
 - Big Data et analyses en temps réel
 - Intelligence artificielle et Machine Learning
 - Traitement de grandes bases de données et stockage haute performance
 
 ///
+
+> [!primary]
+>
+> **Les volumes High Speed (Gen1) ne sont plus disponibles à la commande depuis l’espace client OVHcloud.** Ils ont été remplacés par les volumes High Speed Gen2 au même tarif, avec de meilleures performances pour les volumes de plus de 100 Go. Les volumes High Speed restent disponibles via l’API, Terraform et OpenStack.
+>
+
+> [!primary]
+>
+> Les volumes High Speed existants continuent d’être pris en charge. Vous pouvez également [modifier le type de votre volume Block Storage](/pages/public_cloud/compute/switch_volume_type) pour les migrer vers le type High Speed Gen2.
+>
 
 ![volumes_types](images/volume-types.png){.thumbnail}
 
