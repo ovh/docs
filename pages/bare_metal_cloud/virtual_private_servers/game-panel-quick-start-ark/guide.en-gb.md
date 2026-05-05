@@ -1,7 +1,7 @@
 ---
 title: "Deploy an ARK Survival Evolved server on the Game Panel"
 excerpt: "Deploy an ARK: Survival Evolved server on the OVHcloud Game Panel with automated port configuration and real-time installation logs."
-updated: 2026-04-29
+updated: 2026-05-05
 ---
 
 ## Objective
@@ -25,7 +25,6 @@ Log in to your OVHcloud Game Panel.
 
 Click `Add Game Server`{.action} and select **ARK: Survival Evolved**.
 
-<!-- SCREENSHOT-STATUS: as-is -->
 ![Selecting ARK: Survival Evolved from the game list](images/select-ark.png){.thumbnail}
 
 > [!primary]
@@ -38,24 +37,18 @@ Once installation starts, a confirmation screen appears. Click `Open Logs`{.acti
 
 While the server is installing, the status displays **Installing**. Track detailed progress directly in the logs panel.
 
-<!-- SCREENSHOT-STATUS: playwright -->
-<div class="todo-image">🚧 Image pending</div>
 ![Monitoring ARK server installation in the logs panel](images/installation-logs.png){.thumbnail}
 
 ### Step 4 — Confirm installation is complete
 
 Once installation is finished, the server status changes to **Running**.
 
-<!-- SCREENSHOT-STATUS: playwright -->
-<div class="todo-image">🚧 Image pending</div>
 ![ARK server with Running status](images/server-running.png){.thumbnail}
 
 ### Step 5 — Retrieve connection information
 
 Once your server status is **Running**, copy the connection information from the Game Panel.
 
-<!-- SCREENSHOT-STATUS: playwright -->
-<div class="todo-image">🚧 Image pending</div>
 ![Connection details for the ARK server](images/connection-details.png){.thumbnail}
 
 ### Step 6 — Join your server in ARK

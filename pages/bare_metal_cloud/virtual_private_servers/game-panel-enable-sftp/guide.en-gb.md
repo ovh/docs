@@ -1,7 +1,7 @@
 ---
 title: "Enabling SFTP on the Game Panel"
 excerpt: "Enable SFTP access on your game server to transfer files using an SFTP client such as FileZilla, including connection details and password requirements."
-updated: 2026-04-29
+updated: 2026-05-05
 ---
 
 ## Objective
@@ -34,7 +34,6 @@ Once logged in:
 2. Click `Settings`{.action}.
 3. Go to the `SFTP`{.action} tab.
 
-<!-- SCREENSHOT-STATUS: as-is -->
 ![The SFTP settings tab](images/sftp-settings.png){.thumbnail}
 
 ### Step 3 — Enable SFTP
@@ -48,7 +47,6 @@ Password requirements:
 - At least one number
 - At least one special character
 
-<!-- SCREENSHOT-STATUS: playwright -->
 ![Enabling SFTP with password configuration](images/enable-sftp.png){.thumbnail}
 
 ### Step 4 — Connect using an SFTP client

@@ -1,7 +1,7 @@
 ---
 title: "Deploy a 7 Days to Die server on the Game Panel"
 excerpt: "Deploy a 7 Days to Die server on the Game Panel with automated installation, port configuration, and console connect steps."
-updated: 2026-04-29
+updated: 2026-05-05
 ---
 
 ## Objective
@@ -21,14 +21,12 @@ The Game Panel lets you deploy a 7 Days to Die server with automated installatio
 
 Log in to your Game Panel. Go to the **Game Servers** section in the left-hand menu.
 
-<!-- SCREENSHOT-STATUS: as-is -->
 ![Game Servers section with Add Game Server button](images/game-servers-list.png){.thumbnail}
 
 ### Step 2 — Create a 7 Days to Die server
 
 Click `Add Game Server`{.action} and select **7 Days to Die** from the list.
 
-<!-- SCREENSHOT-STATUS: as-is -->
 ![Selecting 7 Days to Die from the game list](images/select-7-days-to-die.png){.thumbnail}
 
 Configure the installation:
@@ -36,7 +34,6 @@ Configure the installation:
 - `Server Name`: Give your server a name (e.g., `7 Days to Die Server`).
 - `Network Ports`: Leave the default ports or add more if needed in the advanced section.
 
-<!-- SCREENSHOT-STATUS: as-is -->
 ![7 Days to Die installation form](images/7-days-to-die-install-form.png){.thumbnail}
 
 ### Step 3 — Launch the installation
@@ -52,8 +49,6 @@ Then click the launch button to start the server.
 
 Check that the server status displays **Running** and that CPU/RAM activity is visible.
 
-<!-- SCREENSHOT-STATUS: playwright -->
-<div class="todo-image">🚧 Image pending</div>
 ![7 Days to Die server with Running status](images/7-days-to-die-running.png){.thumbnail}
 
 Available actions:
@@ -62,8 +57,6 @@ Available actions:
 - `Logs`{.action}: Check logs if there are any issues.
 - `Settings`{.action} > `Game Config`{.action}: Access game settings.
 
-<!-- SCREENSHOT-STATUS: playwright -->
-<div class="todo-image">🚧 Image pending</div>
 ![7 Days to Die Game Config settings](images/7-days-to-die-game-config.png){.thumbnail}
 
 ### Step 5 — Connect to the server

@@ -1,7 +1,7 @@
 ---
 title: "Deploy a TeamSpeak 3 server on the Game Panel"
 excerpt: "Deploy and configure a TeamSpeak 3 voice server in minutes on the Game Panel — no command line or system knowledge required."
-updated: 2026-04-29
+updated: 2026-05-05
 ---
 
 ## Objective
@@ -22,10 +22,8 @@ The Game Panel lets you deploy and configure a TeamSpeak 3 voice server in a few
 
 From your Game Panel dashboard, click `Add Game Server`{.action}. In the list of available games, search for and select **TeamSpeak 3**.
 
-<!-- SCREENSHOT-STATUS: as-is -->
 ![Game Panel dashboard with Add Game Server button](images/teamspeak-add-server.png){.thumbnail}
 
-<!-- SCREENSHOT-STATUS: as-is -->
 ![Selecting TeamSpeak 3 from the game list](images/select-teamspeak-3.png){.thumbnail}
 
 ### Step 2 — Configure your server
@@ -40,7 +38,6 @@ Among the available settings, you can modify:
     - `10011` (TCP) — ServerQuery
     - `30033` (TCP) — file transfer
 
-<!-- SCREENSHOT-STATUS: as-is -->
 ![TeamSpeak 3 Network Ports configuration](images/teamspeak-network-ports.png){.thumbnail}
 
 > [!primary]
@@ -51,7 +48,6 @@ Among the available settings, you can modify:
 
 Once you have reviewed the configuration, click `Install`{.action} to start the deployment.
 
-<!-- SCREENSHOT-STATUS: as-is -->
 ![TeamSpeak 3 install configuration form with Install button](images/teamspeak-install-form.png){.thumbnail}
 
 ### Step 4 — Monitor the installation progress
@@ -60,16 +56,12 @@ The deployment starts automatically. Let the installation run without closing th
 
 Track the process in real time by clicking `Open Logs`{.action} to display the installation messages.
 
-<!-- SCREENSHOT-STATUS: playwright -->
-<div class="todo-image">🚧 Image pending</div>
 ![TeamSpeak 3 installation logs panel](images/teamspeak-installation-logs.png){.thumbnail}
 
 ### Step 5 — Verify the server is running
 
 Once installation is complete, confirm that your server displays the **Running** status.
 
-<!-- SCREENSHOT-STATUS: playwright -->
-<div class="todo-image">🚧 Image pending</div>
 ![TeamSpeak 3 server with Running status](images/teamspeak-running.png){.thumbnail}
 
 Your server is live. Retrieve the IP address and port from the `Connection`{.action} section to connect from the TeamSpeak 3 client.

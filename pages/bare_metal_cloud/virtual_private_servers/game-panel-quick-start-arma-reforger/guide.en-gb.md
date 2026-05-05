@@ -1,7 +1,7 @@
 ---
 title: "Deploy an Arma Reforger server on the Game Panel"
 excerpt: "Deploy an Arma Reforger server on the Game Panel with automated port configuration and real-time installation logs."
-updated: 2026-04-29
+updated: 2026-05-05
 ---
 
 ## Objective
@@ -25,7 +25,6 @@ Log in to your Game Panel.
 
 Click `Add Game Server`{.action} and select **Arma Reforger**.
 
-<!-- SCREENSHOT-STATUS: as-is -->
 ![Selecting Arma Reforger from the game list](images/select-arma-reforger.png){.thumbnail}
 
 > [!primary]
@@ -36,14 +35,10 @@ Click `Add Game Server`{.action} and select **Arma Reforger**.
 
 Once installation starts, a confirmation screen appears. Click `Open Logs`{.action} to follow the installation progress in real time.
 
-<!-- SCREENSHOT-STATUS: playwright -->
-<div class="todo-image">🚧 Image pending</div>
 ![Arma Reforger installation started screen with Open Logs button](images/arma-installation-started.png){.thumbnail}
 
 While the server is installing, the status displays **Installing**. Track detailed progress directly in the logs panel.
 
-<!-- SCREENSHOT-STATUS: playwright -->
-<div class="todo-image">🚧 Image pending</div>
 ![Arma Reforger server with Running status and installation logs](images/arma-installation-logs.png){.thumbnail}
 
 ### Step 4 — Confirm installation is complete
@@ -54,8 +49,6 @@ Once installation is finished, the server status changes to **Running**.
 
 Once your server status is **Running**, copy the connection information from the Game Panel.
 
-<!-- SCREENSHOT-STATUS: playwright -->
-<div class="todo-image">🚧 Image pending</div>
 ![Connection details for the Arma Reforger server](images/arma-connection-details.png){.thumbnail}
 
 ### Step 6 — Join your server in Arma Reforger

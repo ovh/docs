@@ -1,7 +1,7 @@
 ---
 title: "Install a PaperMC server and add plugins on the Game Panel"
 excerpt: "Install a PaperMC Minecraft server on the Game Panel and add plugins via SFTP for extended gameplay features."
-updated: 2026-04-29
+updated: 2026-05-05
 ---
 
 ## Objective

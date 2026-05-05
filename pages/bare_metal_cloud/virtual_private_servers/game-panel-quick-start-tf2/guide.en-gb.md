@@ -1,7 +1,7 @@
 ---
 title: "Deploy a Team Fortress 2 server on the Game Panel"
 excerpt: "Deploy a Team Fortress 2 server on the Game Panel with automated port configuration and real-time installation logs."
-updated: 2026-04-29
+updated: 2026-05-05
 ---
 
 ## Objective
@@ -25,7 +25,6 @@ Log in to your Game Panel.
 
 Click `Add Game Server`{.action} and select **Team Fortress 2**.
 
-<!-- SCREENSHOT-STATUS: as-is -->
 ![Selecting Team Fortress 2 from the game list](images/select-tf2.png){.thumbnail}
 
 > [!primary]
@@ -36,22 +35,16 @@ Click `Add Game Server`{.action} and select **Team Fortress 2**.
 
 Once installation starts, a confirmation screen appears. Click `Open Logs`{.action} to follow the installation progress in real time.
 
-<!-- SCREENSHOT-STATUS: playwright -->
-<div class="todo-image">🚧 Image pending</div>
 ![Team Fortress 2 installation started screen](images/tf2-installation-started.png){.thumbnail}
 
 While the server is installing, the status displays **Installing**. Track detailed progress directly in the logs panel.
 
-<!-- SCREENSHOT-STATUS: playwright -->
-<div class="todo-image">🚧 Image pending</div>
 ![Team Fortress 2 installation logs panel](images/tf2-installation-logs.png){.thumbnail}
 
 ### Step 4 — Confirm installation is complete
 
 Once installation is finished, the server status changes to **Running**.
 
-<!-- SCREENSHOT-STATUS: playwright -->
-<div class="todo-image">🚧 Image pending</div>
 ![Team Fortress 2 server with Running status](images/tf2-running.png){.thumbnail}
 
 ### Step 5 — Retrieve connection information

@@ -1,7 +1,7 @@
 ---
 title: "Edit Minecraft server configuration on the Game Panel"
 excerpt: "Edit your Minecraft server settings on the Game Panel including game mode, difficulty, and advanced server.properties options."
-updated: 2026-04-29
+updated: 2026-05-05
 ---
 
 ## Objective
@@ -21,14 +21,12 @@ The Game Panel exposes the Minecraft server configuration directly in the UI. Ba
 
 From the main Game Panel page, locate the Minecraft server you want to configure. In the `Management`{.action} column, click `Settings`{.action}.
 
-<!-- SCREENSHOT-STATUS: as-is -->
 ![Minecraft server with Settings button highlighted](images/minecraft-server-settings.png){.thumbnail}
 
 ### Step 2 — Open the Game Config tab
 
 In the **Server Settings** panel, select `Game Config`{.action} in the left sidebar.
 
-<!-- SCREENSHOT-STATUS: as-is -->
 ![Game Config tab in the Server Settings panel](images/minecraft-game-config.png){.thumbnail}
 
 ### Step 3 — Configure your game
@@ -42,7 +40,6 @@ The **Game Configuration** section lets you:
 
 The **Advanced Configuration** section gives you direct access to the `server.properties` file, providing more control than the basic UI options.
 
-<!-- SCREENSHOT-STATUS: as-is -->
 ![Advanced Configuration section showing server.properties editor](images/minecraft-advanced-config.png){.thumbnail}
 
 > [!primary]

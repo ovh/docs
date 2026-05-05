@@ -1,7 +1,7 @@
 ---
 title: "Deploy a Minecraft server on the Game Panel"
 excerpt: "Learn how to deploy a Minecraft server on the OVHcloud Game Panel, monitor installation progress, and connect from the Minecraft client."
-updated: 2026-04-29
+updated: 2026-05-05
 ---
 
 ## Objective
@@ -25,7 +25,6 @@ Log in to your OVHcloud Game Panel.
 
 Click `Add Game Server`{.action} and select **Minecraft**.
 
-<!-- SCREENSHOT-STATUS: as-is -->
 ![Selecting Minecraft from the game list](images/select-minecraft.png){.thumbnail}
 
 > [!primary]
@@ -38,15 +37,12 @@ Once the installation starts, you will see a confirmation screen. Click `Open Lo
 
 While the server is installing, the status will display **Installing**. You can track detailed progress directly in the logs panel.
 
-<!-- SCREENSHOT-STATUS: playwright -->
-<div class="todo-image">🚧 Image pending</div>
 ![Monitoring Minecraft server installation](images/installation-logs.png){.thumbnail}
 
 ### Step 4 — Confirm installation is complete
 
 Once the installation is finished, the server status will automatically change to **Running**.
 
-<!-- SCREENSHOT-STATUS: as-is -->
 ![Minecraft server with Running status](images/server-running.png){.thumbnail}
 
 ### Step 5 — Retrieve connection information

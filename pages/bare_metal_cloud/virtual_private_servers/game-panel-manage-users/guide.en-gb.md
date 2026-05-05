@@ -1,7 +1,7 @@
 ---
 title: "Managing users on the Game Panel"
 excerpt: "Create and manage user accounts with granular permissions on the OVHcloud Game Panel to control access to your game servers."
-updated: 2026-04-29
+updated: 2026-05-05
 ---
 
 ## Objective
@@ -21,7 +21,6 @@ The OVHcloud Game Panel lets you create and manage user accounts with granular p
 
 Click `User Administration`{.action} in the left menu of the Game Panel.
 
-<!-- SCREENSHOT-STATUS: as-is -->
 ![The user administration interface](images/user-administration.png){.thumbnail}
 
 You will see a list of existing users. Use the `Edit`{.action} and `Delete`{.action} buttons to modify or remove users.
@@ -36,7 +35,6 @@ Fill in the following fields:
 - **New password**: A secure password.
 - **Retype new password**: Confirm the password.
 
-<!-- SCREENSHOT-STATUS: as-is -->
 ![Creating a new user account](images/create-user.png){.thumbnail}
 
 ### Step 3 — Configure server-specific permissions
@@ -54,7 +52,6 @@ Quick presets are available:
 | **Operator** | Limited access. |
 | **Full access** | Full control (recommended for administrators). |
 
-<!-- SCREENSHOT-STATUS: as-is -->
 ![Configuring server-level permissions](images/server-permissions.png){.thumbnail}
 
 #### Customise permissions

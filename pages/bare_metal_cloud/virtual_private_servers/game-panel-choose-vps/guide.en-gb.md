@@ -1,7 +1,7 @@
 ---
 title: "Choose a VPS plan for your game server"
 excerpt: "Compare OVHcloud Gaming VPS plans game by game and choose the right configuration for your server, player count, and installed mods."
-updated: 2026-04-29
+updated: 2026-05-05
 ---
 
 ## Objective

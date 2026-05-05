@@ -1,7 +1,7 @@
 ---
 title: "Deploy a Valheim server on the Game Panel"
 excerpt: "Learn how to deploy a Valheim server on the OVHcloud Game Panel, track installation progress, and join your server from the Valheim client."
-updated: 2026-04-29
+updated: 2026-05-05
 ---
 
 ## Objective
@@ -25,7 +25,6 @@ Log in to your OVHcloud Game Panel.
 
 Click `Add Game Server`{.action} and select **Valheim**.
 
-<!-- SCREENSHOT-STATUS: as-is -->
 ![Selecting Valheim from the game list](images/select-valheim.png){.thumbnail}
 
 > [!primary]
@@ -36,16 +35,12 @@ Click `Add Game Server`{.action} and select **Valheim**.
 
 Once the installation starts, you will see a confirmation screen. Click `Open Logs`{.action} to follow the installation progress in real time.
 
-<!-- SCREENSHOT-STATUS: playwright -->
-<div class="todo-image">🚧 Image pending</div>
 ![Monitoring Valheim server installation](images/installation-logs.png){.thumbnail}
 
 ### Step 4 — Confirm installation is complete
 
 Once the installation is finished, a notification will appear: **Server status is now: Running**.
 
-<!-- SCREENSHOT-STATUS: playwright -->
-<div class="todo-image">🚧 Image pending</div>
 ![Valheim server with Running status](images/server-running.png){.thumbnail}
 
 ### Step 5 — Retrieve connection information

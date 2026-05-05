@@ -1,7 +1,7 @@
 ---
 title: "Deploy a DayZ server on the Game Panel"
 excerpt: "Deploy a DayZ server on the Game Panel, configure your Steam credentials and network ports, and connect to your server in minutes."
-updated: 2026-04-29
+updated: 2026-05-05
 ---
 
 ## Objective
@@ -24,7 +24,6 @@ Log in to your Game Panel.
 
 From the left-hand menu, go to the `Game Servers`{.action} section and click `Add Game Server`{.action}.
 
-<!-- SCREENSHOT-STATUS: as-is -->
 ![Game Servers section with the Add Game Server button](images/add-game-server.png){.thumbnail}
 
 Select **DayZ** from the game list. A configuration window opens.
@@ -40,7 +39,6 @@ In the configuration window:
 >
 > It is strongly recommended to use a dedicated Steam account for this purpose, not your personal one. Use a complex password and disable email-based two-factor authentication (Steam Guard) on that account before proceeding.
 
-<!-- SCREENSHOT-STATUS: as-is -->
 ![DayZ installation form showing server name and Steam credential fields](images/install-dayz-form.png){.thumbnail}
 
 ### Step 3 — Configure the network ports
@@ -58,7 +56,6 @@ The following UDP ports are pre-configured in the installation form:
 >
 > If this is your first DayZ server on the Game Panel and the default ports are available, no manual changes are needed.
 
-<!-- SCREENSHOT-STATUS: as-is -->
 ![Network ports section with pre-configured DayZ UDP ports](images/network-ports.png){.thumbnail}
 
 ### Step 4 — Launch the installation
@@ -70,10 +67,6 @@ Click `Install`{.action}. The deployment starts automatically. The panel will:
 
 Once installation is complete, click `Launch`{.action} to start your server.
 
-<!-- SCREENSHOT-STATUS: playwright -->
-<div class="todo-image">🚧 Image pending</div>
-![DayZ server installation in progress](images/installation-progress.png){.thumbnail}
-
 ### Step 5 — Verify the server is running
 
 Once started, confirm the server status is **Running**. CPU and RAM activity should be visible in the panel.
@@ -84,8 +77,6 @@ The following controls are available:
 - `Logs`{.action} — check logs if there are any issues.
 - `Settings`{.action} — access game configuration options.
 
-<!-- SCREENSHOT-STATUS: playwright -->
-<div class="todo-image">🚧 Image pending</div>
 ![DayZ server with Running status and management controls](images/server-running.png){.thumbnail}
 
 ### Step 6 — Configure game settings (optional)
@@ -94,7 +85,6 @@ Click `Settings`{.action} on your server, then open `Game Config`{.action} to ad
 
 For advanced configuration, use the **File Manager** to edit the DayZ server configuration file directly.
 
-<!-- SCREENSHOT-STATUS: as-is -->
 ![Server Settings panel with Game Config and File Manager options](images/game-config.png){.thumbnail}
 
 ### Step 7 — Connect to your server
@@ -108,8 +98,6 @@ To join from the DayZ client:
 3. Enter your IP address and port (e.g., `192.168.1.1:2302`).
 4. Click **Connect**.
 
-<!-- SCREENSHOT-STATUS: playwright -->
-<div class="todo-image">🚧 Image pending</div>
 ![Game Servers list with connection IP and port highlighted](images/connection-details.png){.thumbnail}
 
 ## Go further

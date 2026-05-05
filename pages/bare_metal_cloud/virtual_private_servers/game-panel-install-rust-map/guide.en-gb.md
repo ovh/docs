@@ -1,7 +1,7 @@
 ---
 title: "Install a custom map on a Rust server with the Game Panel"
 excerpt: "Install a custom Rust map on your game server by editing the server configuration file via SFTP and FileZilla."
-updated: 2026-04-29
+updated: 2026-05-05
 ---
 
 ## Objective

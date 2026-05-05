@@ -1,7 +1,7 @@
 ---
 title: "Deploy a Garrys Mod server on the Game Panel"
 excerpt: "Deploy a Garrys Mod server on the Game Panel with automated deployment, port configuration, and console connect steps."
-updated: 2026-04-29
+updated: 2026-05-05
 ---
 
 ## Objective
@@ -21,14 +21,12 @@ The Game Panel lets you deploy a Garry's Mod server with automated installation 
 
 Log in to your Game Panel. Go to the **Game Servers** section in the left-hand menu.
 
-<!-- SCREENSHOT-STATUS: as-is -->
 ![Game Servers section with Add Game Server button](images/game-servers-list.png){.thumbnail}
 
 ### Step 2 — Create a Garry's Mod server
 
 Click `Add Game Server`{.action} and select **Garrys Mod** from the list.
 
-<!-- SCREENSHOT-STATUS: as-is -->
 ![Selecting Garrys Mod from the game list](images/select-garrys-mod.png){.thumbnail}
 
 Configure the installation:
@@ -49,8 +47,6 @@ Then click the launch button to start the server.
 
 Check that the server status displays **Running** and that CPU/RAM activity is visible.
 
-<!-- SCREENSHOT-STATUS: playwright -->
-<div class="todo-image">🚧 Image pending</div>
 ![Garrys Mod server with Running status](images/garrys-mod-running.png){.thumbnail}
 
 Available actions:
@@ -59,8 +55,6 @@ Available actions:
 - `Logs`{.action}: Check logs if there are any issues.
 - `Settings`{.action} > `Game Config`{.action}: Access game settings (startup map, tickrate, gamemode, player limit, RCON password, Workshop collection, GSLT).
 
-<!-- SCREENSHOT-STATUS: playwright -->
-<div class="todo-image">🚧 Image pending</div>
 ![Garrys Mod Game Config settings](images/garrys-mod-game-config.png){.thumbnail}
 
 ### Step 5 — Connect to the server

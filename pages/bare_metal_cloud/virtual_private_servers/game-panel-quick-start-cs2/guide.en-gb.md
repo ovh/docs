@@ -1,7 +1,7 @@
 ---
 title: "Deploy a Counter-Strike 2 server on the Game Panel"
 excerpt: "Deploy a Counter-Strike 2 server using the OVHcloud Game Panel with automated deployment, port configuration, and console connect steps."
-updated: 2026-04-29
+updated: 2026-05-05
 ---
 
 ## Objective
@@ -25,7 +25,6 @@ Log in to your OVHcloud Game Panel. Go to the **Game Servers** section in the le
 
 Click `Add Game Server`{.action} and select **Counter-Strike 2** from the list.
 
-<!-- SCREENSHOT-STATUS: as-is -->
 ![Selecting Counter-Strike 2 from the game list](images/select-cs2.png){.thumbnail}
 
 Configure the installation:
@@ -42,10 +41,6 @@ Click `Install`{.action}. The deployment will start automatically. Wait a few mi
 
 Then click the launch button to start the server.
 
-<!-- SCREENSHOT-STATUS: playwright -->
-<div class="todo-image">🚧 Image pending</div>
-![Counter-Strike 2 server installation progress](images/cs2-installation.png){.thumbnail}
-
 ### Step 4 — Verify the server is running
 
 Check that the server status displays **Running** and that CPU/RAM activity is visible.
@@ -56,8 +51,6 @@ Available actions:
 - `Logs`{.action}: Check logs if there are any issues.
 - `Settings`{.action} > `Game Config`{.action}: Access game settings.
 
-<!-- SCREENSHOT-STATUS: playwright -->
-<div class="todo-image">🚧 Image pending</div>
 ![Counter-Strike 2 server with Running status](images/cs2-running.png){.thumbnail}
 
 ### Step 5 — Connect to the server

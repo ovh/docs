@@ -1,7 +1,7 @@
 ---
 title: "Log in to the Game Panel"
 excerpt: "Access the OVHcloud Game Panel login page and recover a lost password for standard or super admin accounts."
-updated: 2026-04-29
+updated: 2026-05-05
 ---
 
 ## Objective
@@ -21,14 +21,12 @@ The OVHcloud Game Panel provides a dedicated interface for managing your game se
 
 Go to your Game Panel. The access link depends on the domain you selected during installation.
 
-<!-- SCREENSHOT-STATUS: as-is -->
 ![The Game Panel login page](images/game-panel-login.png){.thumbnail}
 
 ### Step 2 — Log in
 
 Enter your username and the associated password to log in to the Game Panel.
 
-<!-- SCREENSHOT-STATUS: as-is -->
 ![Entering credentials on the login page](images/game-panel-login-form.png){.thumbnail}
 
 ### Recover a lost password

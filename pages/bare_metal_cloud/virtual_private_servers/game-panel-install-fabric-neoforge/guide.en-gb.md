@@ -1,7 +1,7 @@
 ---
 title: "Install Fabric or NeoForge on a Minecraft server"
 excerpt: "Install Fabric or NeoForge on your Minecraft server via the Game Panel to run modded content with custom mod loaders."
-updated: 2026-04-29
+updated: 2026-05-05
 ---
 
 ## Objective
