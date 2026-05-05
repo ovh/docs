@@ -1,7 +1,7 @@
 ---
 title: Choisir la bonne classe de Block Storage
 excerpt: Découvrez comment choisir la bonne classe de Block Storage OVHcloud. Comparez performances, coûts et cas d’usage pour optimiser votre stockage en termes de prix et d’efficacité.
-updated: 2026-04-14
+updated: 2026-05-05
 ---
 
 ## Objectif
@@ -34,20 +34,21 @@ La classe **Classic Volume** est idéale pour les besoins applicatifs quotidiens
 
 Cette classe convient aux workloads standards où la faible latence et la fiabilité sont importantes, mais où la réplication multi-zone n’est pas nécessaire.
 
-### High Speed Volume
+### High Speed Volume Gen2
 
-La classe **High Speed Volume** est proposée en deux générations, offrant des profils de performance différents :
+La classe **High Speed Volume Gen2** offre des performances évolutives qui augmentent avec la taille du volume, ce qui en fait une solution idéale pour les workloads intensifs :
 
-- Gen 1 : Jusqu’à 3 000 IOPS et 128 Mo/s – adaptée aux workloads standard nécessitant une vitesse élevée.
-- Gen 2 : 30 IOPS/Go (jusqu'à 20 000 IOPS) et 0,5 Mo/s par Go (jusqu'à 512 Mo/s) – recommandée pour les applications intensives nécessitant un maximum d’I/O et de débit.
+- **IOPS** : 30 IOPS/Go (base 3 000 IOPS pour 10–100 Go, jusqu’à 20 000 IOPS)
+- **Débit** : 0,5 Mo/s/Go (base 50 Mo/s pour 10–100 Go, jusqu’à 512 Mo/s)
+- **Taille maximale** : 12 To
 
-Choisissez Gen 1 pour les workloads haute vitesse classiques, et Gen 2 pour les workloads lourds tels que l’analytique, les grandes bases de données ou le calcul haute performance.
+Cette classe est recommandée pour les workloads lourds tels que l’analytique, les grandes bases de données et le calcul haute performance.
 
 ### Tableau comparatif
 
 | Classe de stockage | Cas d’usage | Performance | Régions disponibles | SLA de disponibilité | Réplication | Notes |
 | --- | --- | --- | --- | --- | --- | --- |
-| **High Speed Volume** | Workloads haute performance, analytique, grandes bases de données | **Gen 1** : jusqu’à 3 000 IOPS, 128 Mo/s <br><br> **Gen 2** : 30 IOPS/Go (jusqu'à 20 000 IOPS), 0,5 Mo/s par Go (jusqu'à 512 Mo/s) | 3-AZ, 1-AZ, Local Zones | 99,9 % | Zonale | NVMe optimisé, performance évolutive |
+| **High Speed Volume Gen2** | Workloads haute performance, analytique, grandes bases de données | 30 IOPS/Go (base 3 000 IOPS, jusqu’à 20 000 IOPS), 0,5 Mo/s/Go (base 50 Mo/s, jusqu’à 512 Mo/s), max 12 To | 3-AZ, 1-AZ, Local Zones | 99,9 % | Zonale | NVMe optimisé, performance évolutive |
 | **Regional Classic Volume** | Applications critiques, systèmes distribués | 500 IOPS garantis, 64 Mo/s | 3-AZ | 99,99 % | Multi-zone | NVMe over Fabric, haute disponibilité |
 | **Classic Volume** | Workloads quotidiens, machines virtuelles, sauvegardes | 500 IOPS garantis, 64 Mo/s | 1-AZ, Local Zones | 99,9 % | Zonale | NVMe over Fabric, performance standard |
 

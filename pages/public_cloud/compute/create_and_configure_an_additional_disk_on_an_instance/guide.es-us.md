@@ -1,7 +1,7 @@
 ---
 title: 'Crear y configurar un disco adicional en una instancia'
 excerpt: 'Cómo crear un volumen Block Storage adicional, asociarlo a su instancia de Public Cloud y configurarlo en Linux o Windows'
-updated: 2026-05-04
+updated: 2026-05-05
 ---
 
 <style>
@@ -67,25 +67,28 @@ En las regiones 3AZ, los volúmenes Classic son servicios regionales que utiliza
 
 ///
 
-/// details | **High-Speed - Hasta 3000 IOPS**
+/// details | **High Speed Gen2 – 30 IOPS/GB y hasta 20.000 IOPS**
 
-El volumen High-Speed está diseñado para aplicaciones que requieren un acceso más rápido a los datos. Con un rendimiento de hasta 3000 IOPS, es ideal para los siguientes casos de uso:
+La generación 2 de los volúmenes High Speed está optimizada para las cargas de trabajo más exigentes. Las prestaciones se adaptan al tamaño del volumen:
 
-- Bases de datos transaccionales (MySQL, PostgreSQL, etc.)
-- Entornos de virtualización y contenedores
-- Aplicaciones que requieren una latencia reducida y un rendimiento elevado
+- **IOPS**: 30 IOPS/GB (base 3.000 IOPS para 10–100 GB, hasta 20.000 IOPS)
+- **Rendimiento**: 0,5 MB/s/GB (base 50 MB/s para 10–100 GB, hasta 512 MB/s)
+- **Tamaño máximo**: 12 TB
 
-///
-
-/// details | **High-Speed Gen2 - 30 IOPS/GB y hasta 20.000 IOPS**
-
-La generación 2 de los volúmenes High-Speed está optimizada para las cargas de trabajo más exigentes. Con un rendimiento de 30 IOPS/GB, hasta 20.000 IOPS, este tipo de volumen se recomienda para los siguientes usos:
+Este tipo de volumen se recomienda para los siguientes usos:
 
 - Big Data y análisis en tiempo real
 - Inteligencia artificial y Machine Learning
 - Procesamiento de grandes bases de datos y almacenamiento de altas prestaciones
 
 ///
+
+> [!primary]
+>
+> **Ya no puede pedir volúmenes High Speed (Gen1) desde el área de cliente de OVHcloud.** Han sido sustituidos por los volúmenes High Speed Gen2 a la misma tarifa, con mejores prestaciones para los volúmenes de más de 100 GB. Los volúmenes High Speed siguen estando disponibles a través de la API, Terraform y OpenStack.
+>
+> Los volúmenes High Speed existentes siguen siendo compatibles. También puede [modificar el tipo de su volumen Block Storage](/pages/public_cloud/compute/switch_volume_type) para migrarlos al tipo High Speed Gen2.
+>
 
 ![volumes_types](images/volume-types.png){.thumbnail}
 

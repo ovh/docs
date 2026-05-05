@@ -1,7 +1,7 @@
 ---
 title: Zusätzliches Volume auf einer Instanz erstellen und konfigurieren
 excerpt: Erfahren Sie hier, wie Sie ein zusätzliches Block Storage Volume erstellen, an Ihre Public Cloud Instanz anhängen und unter Linux oder Windows konfigurieren
-updated: 2026-05-04
+updated: 2026-05-05
 ---
 
 <style>
@@ -67,25 +67,28 @@ In den 3AZ-Regionen sind Classic Volumes regionale Dienste, die *Distributed Era
 
 ///
 
-/// details | **High-Speed - Bis zu 3000 IOPS**
+/// details | **High Speed Gen2 – 30 IOPS/GB und bis zu 20.000 IOPS**
 
-Das High Speed-Volume wurde für Anwendungen entwickelt, die einen schnelleren Datenzugriff erfordern. Mit einer Leistung von bis zu 3000 IOPS ist es ideal für folgende Anwendungsfälle:
+High Speed Volumes der zweiten Generation sind für die anspruchsvollsten Workloads optimiert. Die Leistung skaliert mit der Volume-Größe:
 
-- Transaktionsdatenbanken (MySQL, PostgreSQL, etc.)
-- Virtualisierungs- und Containerumgebungen
-- Anwendungen, die eine geringe Latenz und einen hohen Durchsatz erfordern
+- **IOPS**: 30 IOPS/GB (Basis 3.000 IOPS für 10–100 GB, bis zu 20.000 IOPS)
+- **Durchsatz**: 0,5 MB/s/GB (Basis 50 MB/s für 10–100 GB, bis zu 512 MB/s)
+- **Maximale Größe**: 12 TB
 
-///
-
-/// details | **High-Speed Gen2 - 30 IOPS/GB und bis zu 20.000 IOPS**
-
-High Speed Volumes der zweiten Generation sind für die anspruchsvollsten Workloads optimiert. Mit einer Performance von 30 IOPS/GB bis zu 20.000 IOPS wird dieser Volume-Typ für folgende Anwendungen empfohlen:
+Dieser Volume-Typ wird für folgende Anwendungen empfohlen:
 
 - Big Data und Analysen in Echtzeit
 - Künstliche Intelligenz und Machine Learning
 - Verarbeitung großer Datenbanken und High Performance Storage
 
 ///
+
+> [!primary]
+>
+> **Sie können High Speed (Gen1) Volumes nicht mehr über das OVHcloud Kundencenter bestellen.** Sie wurden durch High Speed Gen2 Volumes zum gleichen Preis ersetzt, mit besserer Leistung für Volumes über 100 GB. High Speed Volumes bleiben über die API, Terraform und OpenStack verfügbar.
+>
+> Bestehende High Speed Volumes werden weiterhin unterstützt. Sie können auch [den Typ Ihres Block Storage Volumes ändern](/pages/public_cloud/compute/switch_volume_type), um diese auf Gen2 zu migrieren.
+>
 
 ![standardvolumes](images/volume-types.png){.thumbnail}
 

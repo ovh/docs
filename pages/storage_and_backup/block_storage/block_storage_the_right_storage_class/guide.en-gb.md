@@ -1,7 +1,7 @@
 ---
 title: Choosing the Right Block Storage Class
 excerpt: Find out how to choose the right OVHcloud Block Storage class. Compare performance, pricing, and use cases to optimize your storage for both cost and efficiency.
-updated: 2026-04-14
+updated: 2026-05-05
 ---
 
 ## Objective
@@ -32,20 +32,21 @@ The **Classic Volume** class is ideal for everyday application needs, including 
 
 This class is suitable for standard workloads where low-latency and reliability are important, but multi-zone replication is not required.
 
-### High Speed Volume
+### High Speed Volume Gen2
 
-The **High Speed Volume** class comes in two generations, offering different performance profiles:
+The **High Speed Volume Gen2** class offers performance that scales with volume size — ideal for intensive workloads:
 
-- Gen 1: Up to 3,000 IOPS and 128 MB/s – suitable for general high-speed workloads.
-- Gen 2: 30 IOPS/GB (max 20,000 IOPS) and 0.5 MB/s per GB (max 512 MB/s) – recommended for intensive applications requiring maximum I/O and throughput.
+- **IOPS**: 30 IOPS/GB (base 3,000 IOPS for 10–100 GB, up to 20,000 IOPS)
+- **Throughput**: 0.5 MB/s/GB (base 50 MB/s for 10–100 GB, up to 512 MB/s)
+- **Maximum size**: 12 TB
 
-Choose Gen 1 for standard high-speed use cases, and Gen 2 for heavy workloads like analytics, large databases, or high-performance computing.
+This class is recommended for heavy workloads such as analytics, large databases, and high-performance computing.
 
 ### Comparison Table
 
 | Storage Class | Use Cases | Performance | Supported Regions | Availability SLA | Replication | Notes |
 | --- | --- | --- | --- | --- | --- | --- |
-| **High Speed Volume** | High-performance workloads, analytics, large databases | **Gen 1**: Up to 3,000 IOPS, 128 MB/s <br><br> **Gen 2**: 30 IOPS/GB (max 20,000 IOPS), 0.5 MB/s per GB (max 512 MB/s) | 3-AZ, 1-AZ, Local Zones | 99.9% | Zonal | Optimized NVMe, scalable performance |
+| **High Speed Volume Gen2** | High-performance workloads, analytics, large databases | 30 IOPS/GB (base 3,000 IOPS, up to 20,000 IOPS), 0.5 MB/s/GB (base 50 MB/s, up to 512 MB/s), max 12 TB | 3-AZ, 1-AZ, Local Zones | 99.9% | Zonal | Optimized NVMe, scalable performance |
 | **Regional Classic Volume** | Critical applications, distributed systems | 500 IOPS guaranteed, 64 MB/s | 3-AZ | 99.99% | Multi-zone | NVMe over Fabric, high availability |
 | **Classic Volume** | Everyday workloads, VMs, backups | 500 IOPS guaranteed, 64 MB/s | 1-AZ, Local Zones | 99.9% | Zonal | NVMe over Fabric, standard performance |
 
