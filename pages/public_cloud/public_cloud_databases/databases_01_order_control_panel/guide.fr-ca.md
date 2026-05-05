@@ -1,7 +1,7 @@
 ---
 title: Premiers pas avec les bases de données Public Cloud (EN)
 excerpt: Find out how to order a Public Cloud managed database service using the OVHcloud Control Panel, OVHcloud API, OVHcloud CLI, or Terraform
-updated: 2026-04-27
+updated: 2026-05-05
 ---
 
 ## Objective

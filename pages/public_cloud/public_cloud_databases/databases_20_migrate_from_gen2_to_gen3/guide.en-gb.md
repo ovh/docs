@@ -1,7 +1,7 @@
 ---
 title: Migrate from Gen 2 to Gen 3 for Public Cloud Databases
 excerpt: "Learn how to upgrade your OVHcloud Public Cloud Database from Gen 2 to Gen 3 and take advantage of improved performance and features"
-updated: 2026-04-27
+updated: 2026-05-05
 ---
 
 ## Objective
