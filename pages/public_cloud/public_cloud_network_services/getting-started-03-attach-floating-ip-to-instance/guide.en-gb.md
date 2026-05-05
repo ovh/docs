@@ -1,7 +1,7 @@
 ---
 title: Attaching a Floating IP to a Public Cloud instance
 excerpt: Find out how a Floating IP address functions and how to configure it
-updated: 2025-07-17
+updated: 2026-05-05
 ---
 
 <style>
@@ -594,6 +594,52 @@ Once the information has been retrieved, use the following call to delete the Fl
 > - **serviceName**: The project ID
 > - **regionName**: The name of the region in which the Floating IP is located
 > - **floatingIpId**: The ID of the Floating IP
+
+///
+
+#### Via the ovhcloud CLI
+
+/// details | Unfold this section
+
+Use the [ovhcloud CLI](https://github.com/ovh/ovhcloud-cli) to manage Floating IPs. Set your cloud project with `--cloud-project <project_id>` or configure it in your profile.
+
+> [!primary]
+> Attaching a Floating IP to an **existing** instance is not supported by the ovhcloud CLI. A Floating IP can only be attached at instance **creation** time.
+>
+
+**Creating a new instance with a Floating IP**
+
+Create a new instance and automatically create and attach a new Floating IP:
+
+```bash
+ovhcloud cloud instance create <region> \
+  --name my-instance \
+  --flavor <flavor_id> \
+  --boot-from.image <image_id> \
+  --ssh-key.name <key_name> \
+  --network.private.id <network_id> \
+  --network.private.subnet-id <subnet_id> \
+  --network.private.gateway.id <gateway_id> \
+  --network.private.floating-ip.create.description "My Floating IP"
+```
+
+To attach an **existing** Floating IP to a new instance instead:
+
+```bash
+ovhcloud cloud instance create <region> \
+  --name my-instance \
+  --flavor <flavor_id> \
+  --boot-from.image <image_id> \
+  --ssh-key.name <key_name> \
+  --network.private.id <network_id> \
+  --network.private.floating-ip.id <floating_ip_id>
+```
+
+**Deleting a Floating IP**
+
+```bash
+ovhcloud cloud floating-ip delete <floating_ip_id> --region <region>
+```
 
 ///
 

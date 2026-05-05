@@ -1,7 +1,7 @@
 ---
 title: 'Configuring vRack for Public Cloud'
 excerpt: 'Find out how to set up vRack for your Public Cloud instances'
-updated: 2025-12-23
+updated: 2026-05-05
 ---
 
 <style>
@@ -43,7 +43,7 @@ The OVHcloud [vRack](/links/network/vrack) is a private network solution that en
 
 ## Interfaces
 
-Creating a vRack or adding an instance into the network can be done using the OVHcloud Control Panel, the OVHcloud APIv6, the OpenStack API, the Horizon interface or Terraform.
+Creating a vRack or adding an instance into the network can be done using the OVHcloud Control Panel, the OVHcloud APIv6, the OpenStack API, the Horizon interface, the ovhcloud CLI or Terraform.
 
 Depending on your technical profile and needs, it is mostly up to you which interface or method to use. For each option, the guide instructions below describe the necessary steps.
 
@@ -572,6 +572,32 @@ From the OVHcloud Control Panel and OVHcloud APIv6, you can customise all settin
 >> openstack subnet create --dhcp --network OS_CLI_private_network OS_CLI_subnet --subnet-range 10.1.0.0/16
 >> ```
 >>
+> Via the ovhcloud CLI
+>> Use the [ovhcloud CLI](https://github.com/ovh/ovhcloud-cli) to create your private network. Set your cloud project with `--cloud-project <project_id>` or configure it in your profile.
+>>
+>> **Create the private network**
+>>
+>> ```bash
+>> ovhcloud cloud network private create <region> \
+>>   --name my-vrack-network \
+>>   --vlan-id 42
+>> ```
+>>
+>> > [!primary]
+>> > The `--vlan-id` flag is optional. If omitted, an available VLAN ID is assigned automatically.
+>> >
+>>
+>> **Create a subnet**
+>>
+>> ```bash
+>> ovhcloud cloud network private subnet create <network_id> \
+>>   --region <region> \
+>>   --name my-subnet \
+>>   --cidr 10.1.0.0/16 \
+>>   --ip-version 4 \
+>>   --enable-dhcp
+>> ```
+>>
 <!-- CP-STEPS-END:create-private-network -->
 
 ### Step 3: Integrating an instance into vRack <a name="instance-integration"></a>
@@ -864,6 +890,55 @@ There are two possible scenarios:
 >> | xxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx   | [Name of instance] | ACTIVE | -          | Running     | Ext-Net=[IP_V4], [IP_V6]; MyVrack=[IP_V4_vRack]  |
 >> +--------------------------------------+--------------------+--------+------------+-------------+--------------------------------------------------+
 >> ```
+>>
+> Via the ovhcloud CLI
+>> Use the [ovhcloud CLI](https://github.com/ovh/ovhcloud-cli) to create an instance in your vRack. Set your cloud project with `--cloud-project <project_id>` or configure it in your profile.
+>>
+>> **Retrieve available networks**
+>>
+>> ```bash
+>> ovhcloud cloud network private list --region <region>
+>> ```
+>>
+>> **Create the instance**
+>>
+>> ```bash
+>> ovhcloud cloud instance create <region> \
+>>   --name my-instance \
+>>   --flavor <flavor_id> \
+>>   --boot-from.image <image_id> \
+>>   --ssh-key.name <key_name> \
+>>   --network.private.id <network_id> \
+>>   --network.public
+>> ```
+>>
+>> Remove `--network.public` if you want a private-only instance.
+>>
+> Via Terraform
+>> Use the [OpenStack Terraform provider](https://registry.terraform.io/providers/terraform-provider-openstack/openstack/latest/docs/resources/compute_instance_v2) to create an instance with vRack connectivity. This is consistent with the private network created in Step 2.
+>>
+>> ```hcl
+>> resource "openstack_compute_instance_v2" "instance" {
+>>   name      = "my-instance"
+>>   flavor_id = var.flavor_id
+>>   image_id  = var.image_id
+>>   key_pair  = var.key_pair
+>>
+>>   network {
+>>     uuid = var.ext_net_id
+>>   }
+>>
+>>   network {
+>>     uuid = openstack_networking_network_v2.tf_network.id
+>>   }
+>> }
+>> ```
+>>
+>> Remove the public `network` block if you want a private-only instance.
+>>
+>> > [!primary]
+>> > `openstack_networking_network_v2.tf_network` refers to the private network resource created in Step 2. If managing separately, replace with the network ID directly.
+>> >
 >>
 
 <!-- CP-STEPS-END:integrate-new-instance -->

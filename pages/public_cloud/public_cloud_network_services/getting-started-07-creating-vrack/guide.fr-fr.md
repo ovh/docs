@@ -1,7 +1,7 @@
 ---
 title: 'Configuration du vRack Public Cloud'
 excerpt: 'Découvrez comment configurer un vRack Public Cloud'
-updated: 2025-12-23
+updated: 2026-05-05
 ---
 
 <style>
@@ -43,7 +43,7 @@ Le [vRack](/links/network/vrack) est un réseau privé qui vous permet de config
 
 ## Présentation des interfaces
 
-Que ce soit pour créer votre vRack ou ajouter une instance au sein de ce réseau, vous pouvez être amenés à utiliser l'espace client OVHcloud, les APIv6 OVHcloud, les API OpenStack, l'interface Horizon ou Terraform.
+Que ce soit pour créer votre vRack ou ajouter une instance au sein de ce réseau, vous pouvez être amenés à utiliser l'espace client OVHcloud, les APIv6 OVHcloud, les API OpenStack, l'interface Horizon, le CLI ovhcloud ou Terraform.
 
 Selon votre profil technique et vos besoins, vous serez amenés à devoir choisir quelle interface ou méthode utiliser. Ainsi, pour chaque action, nous vous proposerons les différentes démarches envisageables.
 
@@ -573,7 +573,33 @@ Depuis l'espace client OVHcloud et les APIv6 OVHcloud, vous pourrez personnalise
 >> openstack network create --provider-network-type vrack --provider-segment 42 OS_CLI_private_network
 >> openstack subnet create --dhcp --network OS_CLI_private_network OS_CLI_subnet --subnet-range 10.1.0.0/16
 >> ```
->> 
+>>
+> Depuis le CLI ovhcloud
+>> Utilisez le [CLI ovhcloud](https://github.com/ovh/ovhcloud-cli) pour créer votre réseau privé. Définissez votre projet cloud avec `--cloud-project <project_id>` ou configurez-le dans votre profil.
+>>
+>> **Créer le réseau privé**
+>>
+>> ```bash
+>> ovhcloud cloud network private create <region> \
+>>   --name my-vrack-network \
+>>   --vlan-id 42
+>> ```
+>>
+>> > [!primary]
+>> > L'option `--vlan-id` est facultative. Si elle est omise, un ID de VLAN disponible est assigné automatiquement.
+>> >
+>>
+>> **Créer un sous-réseau**
+>>
+>> ```bash
+>> ovhcloud cloud network private subnet create <network_id> \
+>>   --region <region> \
+>>   --name my-subnet \
+>>   --cidr 10.1.0.0/16 \
+>>   --ip-version 4 \
+>>   --enable-dhcp
+>> ```
+>>
 
 
 ### Étape 3 : Intégrer une instance dans le vRack
@@ -863,6 +889,55 @@ Deux situations peuvent se présenter à vous :
 >> | xxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx   | [Nom-de-l'instance] | ACTIVE | -          | Running     | Ext-Net=[IP_V4], [IP_V6]; MonVrack=[IP_V4_vRack] |
 >> +--------------------------------------+---------------------+--------+------------+-------------+--------------------------------------------------+
 >> ```
+>>
+> Depuis le CLI ovhcloud
+>> Utilisez le [CLI ovhcloud](https://github.com/ovh/ovhcloud-cli) pour créer une instance dans votre vRack. Définissez votre projet cloud avec `--cloud-project <project_id>` ou configurez-le dans votre profil.
+>>
+>> **Lister les réseaux disponibles**
+>>
+>> ```bash
+>> ovhcloud cloud network private list --region <region>
+>> ```
+>>
+>> **Créer l'instance**
+>>
+>> ```bash
+>> ovhcloud cloud instance create <region> \
+>>   --name my-instance \
+>>   --flavor <flavor_id> \
+>>   --boot-from.image <image_id> \
+>>   --ssh-key.name <key_name> \
+>>   --network.private.id <network_id> \
+>>   --network.public
+>> ```
+>>
+>> Supprimez `--network.public` si vous souhaitez une instance privée uniquement.
+>>
+> Depuis Terraform
+>> Utilisez le [provider Terraform OpenStack](https://registry.terraform.io/providers/terraform-provider-openstack/openstack/latest/docs/resources/compute_instance_v2) pour créer une instance avec connectivité vRack. Cette approche est cohérente avec le réseau privé créé à l'étape 2.
+>>
+>> ```hcl
+>> resource "openstack_compute_instance_v2" "instance" {
+>>   name      = "my-instance"
+>>   flavor_id = var.flavor_id
+>>   image_id  = var.image_id
+>>   key_pair  = var.key_pair
+>>
+>>   network {
+>>     uuid = var.ext_net_id
+>>   }
+>>
+>>   network {
+>>     uuid = openstack_networking_network_v2.tf_network.id
+>>   }
+>> }
+>> ```
+>>
+>> Supprimez le bloc `network` public si vous souhaitez une instance privée uniquement.
+>>
+>> > [!primary]
+>> > `openstack_networking_network_v2.tf_network` fait référence à la ressource réseau privé créée à l'étape 2. Si vous la gérez séparément, remplacez-la par l'ID du réseau directement.
+>> >
 >>
 
 

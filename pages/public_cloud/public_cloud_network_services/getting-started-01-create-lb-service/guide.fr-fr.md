@@ -1,7 +1,7 @@
 ---
 title: Premiers pas avec le service Load Balancer pour Public Cloud
 excerpt: Découvrez comment débuter avec un Load Balancer Public Cloud
-updated: 2025-11-03
+updated: 2026-05-05
 ---
 
 ## Objectif
@@ -179,8 +179,170 @@ Notre Load Balancer Public Cloud est basé sur le service [Openstack Octavia](ht
 >> openstack loadbalancer member create --subnet-id my_subnet --address <private_ip_instance_2> --protocol-port 80 my_pool
 >> ```
 >>
-
-Vous pouvez maintenant accéder à votre Load Balancer via l'adresse Floating IP ou l'adresse IP privée depuis une instance dans votre réseau privé.
+>> Vous pouvez maintenant accéder à votre Load Balancer via l'adresse Floating IP ou l'adresse IP privée depuis une instance dans votre réseau privé.
+>>
+> Via l'API OVHcloud
+>> Utilisez l'[API OVHcloud](/pages/manage_and_operate/api/first-steps) pour créer un Load Balancer de façon programmatique.
+>>
+>> **Lister les flavors disponibles**
+>>
+>> ```bash
+>> GET /cloud/project/{serviceName}/region/{regionName}/loadbalancing/flavor
+>> ```
+>>
+>> **Créer le Load Balancer**
+>>
+>> ```bash
+>> POST /cloud/project/{serviceName}/region/{regionName}/loadbalancing/loadbalancer
+>> ```
+>>
+>> ```json
+>> {
+>>   "flavorId": "<flavor_id>",
+>>   "name": "my-load-balancer",
+>>   "network": {
+>>     "private": {
+>>       "network": {
+>>         "id": "<network_id>",
+>>         "subnetId": "<subnet_id>"
+>>       }
+>>     }
+>>   }
+>> }
+>> ```
+>>
+>> **Attacher une adresse Floating IP (trafic public)**
+>>
+>> ```bash
+>> POST /cloud/project/{serviceName}/region/{regionName}/loadbalancing/loadbalancer/{loadbalancerId}/floatingIp
+>> ```
+>>
+>> **Créer un listener**
+>>
+>> ```bash
+>> POST /cloud/project/{serviceName}/region/{regionName}/loadbalancing/listener
+>> ```
+>>
+>> ```json
+>> {
+>>   "loadbalancerId": "<loadbalancer_id>",
+>>   "name": "my-listener",
+>>   "port": 80,
+>>   "protocol": "http"
+>> }
+>> ```
+>>
+>> **Créer un pool**
+>>
+>> ```bash
+>> POST /cloud/project/{serviceName}/region/{regionName}/loadbalancing/pool
+>> ```
+>>
+>> ```json
+>> {
+>>   "algorithm": "roundRobin",
+>>   "listenerId": "<listener_id>",
+>>   "loadbalancerId": "<loadbalancer_id>",
+>>   "name": "my-pool",
+>>   "protocol": "http"
+>> }
+>> ```
+>>
+>> **Ajouter des membres au pool**
+>>
+>> ```bash
+>> POST /cloud/project/{serviceName}/region/{regionName}/loadbalancing/pool/{poolId}/member
+>> ```
+>>
+>> ```json
+>> {
+>>   "members": [
+>>     { "address": "<ip_privée_1>", "name": "member-1", "protocolPort": 80 },
+>>     { "address": "<ip_privée_2>", "name": "member-2", "protocolPort": 80 }
+>>   ]
+>> }
+>> ```
+>>
+> Via le CLI OVHcloud
+>> Utilisez le [CLI OVHcloud](https://github.com/ovh/ovhcloud-cli) pour gérer votre Load Balancer. Définissez votre projet cloud avec `--cloud-project <project_id>` ou configurez-le dans votre profil.
+>>
+>> **Créer le Load Balancer**
+>>
+>> ```bash
+>> ovhcloud cloud loadbalancer create <region> \
+>>   --name my-load-balancer \
+>>   --size small \
+>>   --network-id <network_id> \
+>>   --subnet-id <subnet_id>
+>> ```
+>>
+>> **Attacher une adresse Floating IP (trafic public)**
+>>
+>> ```bash
+>> ovhcloud cloud loadbalancer create-floating-ip <loadbalancer_id>
+>> ```
+>>
+>> **Créer un listener**
+>>
+>> ```bash
+>> ovhcloud cloud loadbalancer listener create <region> \
+>>   --loadbalancer-id <loadbalancer_id> \
+>>   --name my-listener \
+>>   --port 80 \
+>>   --protocol http
+>> ```
+>>
+>> **Créer un pool**
+>>
+>> ```bash
+>> ovhcloud cloud loadbalancer pool create <region> \
+>>   --loadbalancer-id <loadbalancer_id> \
+>>   --listener-id <listener_id> \
+>>   --name my-pool \
+>>   --algorithm roundRobin \
+>>   --protocol http
+>> ```
+>>
+>> **Ajouter des membres au pool**
+>>
+>> ```bash
+>> ovhcloud cloud loadbalancer pool member create <pool_id> \
+>>   --address <ip_privée_1> --name member-1 --protocol-port 80
+>> ovhcloud cloud loadbalancer pool member create <pool_id> \
+>>   --address <ip_privée_2> --name member-2 --protocol-port 80
+>> ```
+>>
+> Via Terraform
+>> Utilisez le [provider Terraform OVH](https://registry.terraform.io/providers/ovh/ovh/latest/docs/resources/cloud_project_loadbalancer) pour créer un Load Balancer avec la ressource `ovh_cloud_project_loadbalancer`.
+>>
+>> **Lister les flavors disponibles**
+>>
+>> ```hcl
+>> data "ovh_cloud_project_loadbalancer_flavors" "flavors" {
+>>   service_name = var.service_name
+>>   region_name  = var.region
+>> }
+>> ```
+>>
+>> **Créer le Load Balancer**
+>>
+>> ```hcl
+>> resource "ovh_cloud_project_loadbalancer" "lb" {
+>>   service_name = var.service_name
+>>   region_name  = var.region
+>>   flavor_id    = data.ovh_cloud_project_loadbalancer_flavors.flavors.flavors[0].id
+>>   name         = "my-load-balancer"
+>>   network = {
+>>     private = {
+>>       network = {
+>>         id        = var.network_id
+>>         subnet_id = var.subnet_id
+>>       }
+>>     }
+>>   }
+>> }
+>> ```
+>>
 
 ## Aller plus loin
 
