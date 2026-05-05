@@ -1,7 +1,7 @@
 ---
 title: 'Créer votre premier projet Public Cloud'
 excerpt: 'Découvrez comment créer votre premier projet Public Cloud depuis l’espace client OVHcloud'
-updated: 2025-04-28
+updated: 2026-05-05
 ---
 
 ## Objectif
@@ -57,16 +57,17 @@ Vous avez dorénavant accès à tout l'ecosystème Public Cloud OVHcloud, décou
 
 ### Activation du projet et essai gratuit
 
-Lorsque vous activez votre projet en enregistrant un moyen de paiement via `Activer le projet`{.action} depuis le mode découverte, un **crédit d'essai de 200 €** est automatiquement appliqué si vous êtes éligible.
+Lorsque vous cliquez sur `Activer le projet`{.action} depuis le `Mode découverte` et enregistrez un moyen de paiement, un **crédit d'essai de 200 €** est appliqué si vous êtes éligible.
 
 > [!primary]
 > **Conditions de l'essai gratuit**
 >
 > - Le crédit est activé au moment de l'activation du projet et est valable **un mois**.
-> - **Éligible :** tout client OVHcloud créant son premier projet Public Cloud (avoir un compte OVHcloud existant n'est pas un obstacle).
-> - **Non éligible :** les clients disposant déjà ou ayant déjà disposé d'un projet Public Cloud, ou ayant déjà bénéficié d'un crédit d'essai gratuit.
+> - **Éligible :** tout client OVHcloud créant son premier projet Public Cloud, même s'il dispose déjà d'un compte OVHcloud.
+> - **Non éligible :** les clients disposant déjà ou ayant déjà disposé d'un projet Public Cloud, ou ayant déjà bénéficié d'un crédit d'essai gratuit.
 >
-> En savoir plus sur la page [Essai gratuit Public Cloud OVHcloud](https://www.ovhcloud.com/fr/public-cloud/free-trial/).
+> En savoir plus sur la page [Essai gratuit Public Cloud OVHcloud](/links/public-cloud/free-trial).
+>
 
 ## Aller plus loin
 

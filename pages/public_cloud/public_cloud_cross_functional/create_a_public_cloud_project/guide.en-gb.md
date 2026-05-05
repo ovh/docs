@@ -1,7 +1,7 @@
 ---
 title: 'Creating your first OVHcloud Public Cloud project'
 excerpt: 'Find out how to create your first Public Cloud project via the OVHcloud Control Panel'
-updated: 2025-04-28
+updated: 2026-05-05
 ---
 
 ## Objective
@@ -61,16 +61,17 @@ You now have access to the entire OVHcloud Public Cloud ecosystem. To discover t
 
 ### Project activation and free trial
 
-When you activate your project by registering a payment method via `Activate project`{.action} from discovery mode, a **€200 free trial credit** is automatically applied if you are eligible.
+When you click `Activate project`{.action} from `discovery mode` and register a payment method, a **£175 free trial credit** is applied if you are eligible.
 
 > [!primary]
 > **Free trial conditions**
 >
 > - The credit is activated at the time of project activation and is valid for **one month**.
-> - **Eligible:** Any OVHcloud customer creating their first Public Cloud project (an existing OVHcloud account is not an obstacle).
-> - **Not eligible:** Customers who already have or have previously had a Public Cloud project, or who have already used a free trial credit.
+> - **Eligible:** Any OVHcloud customer creating their first Public Cloud project, even if they already have an OVHcloud account.
+> - **Not eligible:** Customers with a current or past Public Cloud project, or who have already used a free trial credit.
 >
-> Learn more on the [OVHcloud Public Cloud free trial](https://www.ovhcloud.com/en/public-cloud/free-trial/) page.
+> Learn more on the [OVHcloud Public Cloud free trial](/links/public-cloud/free-trial) page.
+>
 
 ## Go further
 

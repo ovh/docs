@@ -1,7 +1,7 @@
 ---
 title: 'Augmenter les quotas Public Cloud'
 excerpt: "Découvrez comment demander une augmentation de quota pour vos ressources Public Cloud (RAM, CPU, espace disque, instances) directement depuis votre espace client OVHcloud."
-updated: 2026-03-31
+updated: 2026-05-05
 ---
 
 ## Objectif
@@ -39,6 +39,11 @@ Cette page présente un récapitulatif des quotas actuels de votre projet par r�
 
 En accord avec des critères internes (ancienneté, existence de factures acquittées, etc.), vous pouvez demander des augmentations de quota pour vos projets Public Cloud directement depuis votre espace client OVHcloud.
 
+> [!primary]
+>
+> Les nouveaux utilisateurs Public Cloud bénéficient de [270 $ de crédit offert](/links/public-cloud/free-trial) activé automatiquement à la création du projet, valable un mois. L'éligibilité à l'augmentation de quota dépend de critères tels que l'ancienneté du compte et l'existence de factures acquittées. Les utilisateurs en période d'essai peuvent donc avoir des options d'augmentation de quota limitées tant que leur première facture n'a pas été réglée.
+>
+
 Vous pouvez augmenter votre quota de ressources manuellement ou automatiquement.
 
 #### Augmenter automatiquement votre quota de ressources avec la fonctionnalité « Quota autoscaling »
@@ -50,7 +55,7 @@ Cette option vous permet de demander une augmentation automatique et progressive
 > Ce processus n’est pas adapté pour des augmentations rapides de quota.
 >
 
-En haut à droite de la page, l'option **Quota autoscaling** est disponible :
+En haut à droite de la page, l’option **Quota autoscaling** est disponible :
 
 - Pour en savoir plus sur cette fonctionnalité, cliquez sur le `?`{.action} à côté de cette option.
 - Activez l’option en cliquant sur le bouton situé à droite de cette dernière. Son état passera de *Désactivé* à *Activé*.

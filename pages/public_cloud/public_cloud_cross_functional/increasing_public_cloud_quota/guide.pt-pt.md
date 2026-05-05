@@ -1,7 +1,7 @@
 ---
 title: 'Aumentar as quotas Public Cloud'
 excerpt: "Saiba como solicitar o aumento de quota para os seus recursos Public Cloud (RAM, CPU, espaço em disco, instâncias) diretamente a partir da sua Área de Cliente OVHcloud."
-updated: 2026-03-31
+updated: 2026-05-05
 ---
 
 ## Objetivo
@@ -38,6 +38,11 @@ Esta página apresenta um resumo das quotas atuais do seu projeto por região. U
 ### Aumentar a sua quota de recursos
 
 De acordo com critérios internos (antiguidade, existência de faturas pagas, etc.), pode solicitar aumentos de quota para os recursos dos seus projetos Public Cloud diretamente a partir da sua Área de Cliente OVHcloud.
+
+> [!primary]
+>
+> Os novos utilizadores Public Cloud beneficiam de [200 € de crédito oferecido](/links/public-cloud/free-trial) ativado automaticamente aquando da criação do projeto, válido durante um mês. A elegibilidade ao aumento de quota depende de critérios como a antiguidade da conta e a existência de faturas pagas. Os utilizadores em período de teste podem, por isso, ter opções de aumento de quota limitadas enquanto a sua primeira fatura não for liquidada.
+>
 
 Tem a possibilidade de aumentar a sua quota de recursos manualmente ou automaticamente.
 

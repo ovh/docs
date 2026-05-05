@@ -1,7 +1,7 @@
 ---
 title: 'Aumentar las cuotas de Public Cloud'
 excerpt: "Descubra cómo solicitar el aumento de cuota para sus recursos de Public Cloud (RAM, CPU, espacio en disco, instancias) directamente desde su área de cliente OVHcloud."
-updated: 2026-03-31
+updated: 2026-05-05
 ---
 
 ## Objetivo
@@ -38,6 +38,11 @@ Esta página presenta un resumen de las cuotas actuales de su proyecto por regi�
 ### Aumentar la cuota de recursos
 
 De acuerdo con criterios internos (antigüedad, existencia de facturas pagadas, etc.), puede solicitar aumentos de cuota para los recursos de sus proyectos de Public Cloud directamente desde el área de cliente de OVHcloud.
+
+> [!primary]
+>
+> Los nuevos usuarios de Public Cloud disfrutan de [200 € de crédito gratuito](/links/public-cloud/free-trial) que se activa automáticamente al crear el proyecto, válido durante un mes. La elegibilidad para el aumento de cuota depende de criterios como la antigüedad de la cuenta y la existencia de facturas pagadas. Por lo tanto, los usuarios en período de prueba pueden tener opciones de aumento de cuota limitadas mientras no se haya pagado su primera factura.
+>
 
 Puede aumentar la cuota de recursos de forma manual o automática.
 

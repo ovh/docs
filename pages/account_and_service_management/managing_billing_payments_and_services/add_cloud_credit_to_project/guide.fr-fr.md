@@ -1,7 +1,7 @@
 ---
 title: 'Ajouter du crédit cloud'
 excerpt: 'Découvrez comment ajouter du crédit ou des vouchers à votre projet Public Cloud'
-updated: 2026-03-31
+updated: 2026-05-05
 ---
 
 ## Objectif
@@ -72,7 +72,7 @@ Le solde du voucher apparaîtra dans la liste `Crédits & Vouchers`.
 
 > [!primary]
 >
-> Les nouveaux clients reçoivent automatiquement 200 € de crédit d'essai à l'**activation** de leur premier projet Public Cloud. Consultez notre guide « [Créer un premier projet Public Cloud](/pages/public_cloud/public_cloud_cross_functional/create_a_public_cloud_project) ».
+> Les nouveaux clients reçoivent automatiquement 200 € de crédit d'essai lors de l'activation de leur premier projet Public Cloud. Consultez notre guide « [Créer votre premier projet Public Cloud](/pages/public_cloud/public_cloud_cross_functional/create_a_public_cloud_project) ».
 >
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).

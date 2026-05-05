@@ -1,7 +1,7 @@
 ---
 title: 'Public Cloud Quota erhöhen'
 excerpt: 'Erfahren Sie hier, wie Sie eine Erhöhung Ihrer Kontingente für Public Cloud Ressourcen (RAM, CPU, Speicherplatz, Instanzen) direkt über das OVHcloud Kundencenter anfordern.'
-updated: 2026-03-31
+updated: 2026-05-05
 ---
 
 ## Ziel
@@ -38,6 +38,11 @@ Diese Seite zeigt eine Zusammenfassung der aktuellen Quoten Ihres Projekts nach 
 ### Erhöhung der Ressourcenquote
 
 Gemäß interner Kriterien (Dienstalter, bezahlte Rechnungen usw.) können Sie direkt vom OVHcloud Kundencenter aus Quotenerhöhungen für Ihre Public Cloud Projekte beantragen.
+
+> [!primary]
+>
+> Erstmalige Public Cloud Nutzer erhalten bei der Projekterstellung automatisch ein [Gratis-Guthaben von 200 €](/links/public-cloud/free-trial), das einen Monat lang gültig ist. Da die Berechtigung für eine Quotenerhöhung von Kriterien wie der Account-Dauer und bezahlten Rechnungen abhängt, stehen Nutzern des Gratis-Testguthabens möglicherweise nur eingeschränkte Optionen zur Quotenerhöhung zur Verfügung, bis ihre erste Rechnung beglichen wurde.
+>
 
 Sie können Ihre Ressourcenquote manuell oder automatisch erhöhen.
 
