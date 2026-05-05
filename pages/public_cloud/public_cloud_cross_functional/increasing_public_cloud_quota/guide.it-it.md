@@ -1,7 +1,7 @@
 ---
 title: 'Aumentare le quote Public Cloud'
 excerpt: "Scopri come richiedere un aumento di quota per le tue risorse Public Cloud (RAM, CPU, spazio disco, istanze) direttamente dal tuo Spazio Cliente OVHcloud."
-updated: 2026-03-31
+updated: 2026-05-05
 ---
 
 ## Obiettivo
@@ -38,6 +38,11 @@ Questa pagina presenta un riepilogo delle quote attuali del tuo progetto per reg
 ### Aumentare la quota di risorse
 
 In base a criteri interni (anzianità, esistenza di fatture pagate, ecc.), puoi richiedere aumenti di quota per le risorse dei tuoi progetti Public Cloud direttamente dallo Spazio Cliente OVHcloud.
+
+> [!primary]
+>
+> I nuovi utenti Public Cloud beneficiano di [200 € di credito offerto](/links/public-cloud/free-trial) attivato automaticamente alla creazione del progetto, valido per un mese. L'idoneità all'aumento della quota dipende da criteri quali l'anzianità dell'account e l'esistenza di fatture pagate. Gli utenti in periodo di prova possono quindi avere opzioni di aumento della quota limitate finché la loro prima fattura non è stata saldata.
+>
 
 È possibile aumentare la quota delle risorse manualmente o automaticamente.
 

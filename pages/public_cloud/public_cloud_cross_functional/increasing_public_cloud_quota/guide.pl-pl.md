@@ -1,7 +1,7 @@
 ---
 title: 'Zwiększenie limitów Public Cloud'
 excerpt: 'Dowiedz się, jak złożyć wniosek o zwiększenie limitu zasobów Public Cloud (RAM, CPU, miejsce na dysku, instancje) bezpośrednio w Panelu klienta OVHcloud.'
-updated: 2026-03-31
+updated: 2026-05-05
 ---
 
 ## Wprowadzenie
@@ -38,6 +38,11 @@ Ta strona przedstawia podsumowanie obecnych limitów projektu według regionów.
 ### Zwiększenie limitu zasobów
 
 Zgodnie z wewnętrznymi kryteriami (staż pracy, istnienie opłaconych faktur itp.) możesz wnioskować o zwiększenie limitu zasobów projektu Public Cloud bezpośrednio w Panelu klienta OVHcloud.
+
+> [!primary]
+>
+> Nowi użytkownicy Public Cloud otrzymują [1 000 PLN bezpłatnego kredytu](/links/public-cloud/free-trial) automatycznie aktywowanego przy tworzeniu projektu, ważnego przez jeden miesiąc. Ponieważ kwalifikacja do zwiększenia limitu zależy od kryteriów takich jak staż konta i opłacone faktury, użytkownicy korzystający z bezpłatnego okresu próbnego mogą mieć ograniczone możliwości zwiększenia limitu do czasu uregulowania pierwszej faktury.
+>
 
 Możesz zwiększyć limit zasobów ręcznie lub automatycznie.
 

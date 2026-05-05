@@ -1,7 +1,7 @@
 ---
 title: 'Cloud Guthaben aufladen'
 excerpt: 'Erfahren Sie hier, wie Sie Ihrem Public Cloud Projekt Guthaben oder Gutscheine hinzufügen'
-updated: 2026-03-31
+updated: 2026-05-05
 ---
 
 ## Ziel
@@ -69,5 +69,10 @@ Der Gutschein-Saldo erscheint in der Liste `Guthaben und Gutscheine` .
 >
 
 ## Weiterführende Informationen
+
+> [!primary]
+>
+> Neukunden erhalten automatisch ein Gratis-Testguthaben von 200 €, sobald sie ihr erstes Public Cloud Projekt aktivieren. Lesen Sie hierzu unsere Anleitung "[Erstellung Ihres ersten OVHcloud Public Cloud Projekts](/pages/public_cloud/public_cloud_cross_functional/create_a_public_cloud_project)".
+>
 
 Treten Sie unserer [User Community](/links/community) bei.

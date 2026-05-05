@@ -1,7 +1,7 @@
 ---
 title: 'Korzystanie z vouchera'
 excerpt: 'Dowiedz się, jak dodać zasilenie lub vouchery do Twojego projektu Public Cloud'
-updated: 2026-03-31
+updated: 2026-05-05
 ---
 
 ## Wprowadzenie
@@ -69,5 +69,10 @@ Pozostała część kodu pojawi się na liście `Kredyty i vouchery`.
 >
 
 ## Sprawdź również
+
+> [!primary]
+>
+> Nowi klienci automatycznie otrzymują 1 000 PLN bezpłatnego kredytu próbnego, gdy aktywują swój pierwszy projekt Public Cloud. Sprawdź nasz przewodnik "[Utworzenie pierwszego projektu Public Cloud](/pages/public_cloud/public_cloud_cross_functional/create_a_public_cloud_project)".
+>
 
 Dołącz do [grona naszych użytkowników](/links/community).

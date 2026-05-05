@@ -1,7 +1,7 @@
 ---
 title: 'Adding cloud credit'
 excerpt: 'Find out how to add credit or vouchers to your Public Cloud project'
-updated: 2026-03-31
+updated: 2026-05-05
 ---
 
 ## Objective
@@ -72,5 +72,10 @@ The voucher balance will appear in the `Credits & Vouchers` list.
 >
 
 ## Go further
+
+> [!primary]
+>
+> New customers automatically receive £175 of free trial credit when they activate their first Public Cloud project. See our guide on [Creating your first OVHcloud Public Cloud project](/pages/public_cloud/public_cloud_cross_functional/create_a_public_cloud_project).
+>
 
 Join our [community of users](/links/community).

@@ -1,7 +1,7 @@
 ---
 title: 'Adicionar um crédito cloud'
 excerpt: 'Saiba como adicionar crédito ou vouchers ao seu projeto Public Cloud'
-updated: 2026-03-31
+updated: 2026-05-05
 ---
 
 ## Objetivo
@@ -69,5 +69,10 @@ O saldo do voucher aparecerá na lista `Créditos e Vouchers`.
 >
 
 ## Quer saber mais?
+
+> [!primary]
+>
+> Os novos clientes recebem automaticamente 200 € de crédito de teste aquando da ativação do seu primeiro projeto Public Cloud. Consulte o nosso guia "[Criar o seu primeiro projeto Public Cloud da OVHcloud](/pages/public_cloud/public_cloud_cross_functional/create_a_public_cloud_project)".
+>
 
 Fale com nossa [comunidade de utilizadores](/links/community).

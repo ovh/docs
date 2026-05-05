@@ -1,7 +1,7 @@
 ---
 title: "Erstellung Ihres ersten OVHcloud Public Cloud Projekts"
 excerpt: "Erfahren Sie hier, wie Sie Ihr erstes Public Cloud Projekt über das OVHcloud Kundencenter erstellen"
-updated: 2025-04-28
+updated: 2026-05-05
 ---
 
 > [!primary]
@@ -28,6 +28,8 @@ Das Erstellen eines Projekts ist die Voraussetzung, um [Public Cloud Instanzen](
 <!-- CP-NAV-END:publiccloud-projects -->
 
 ## In der praktischen Anwendung
+
+### Erstellung des Projekts
 
 Nachdem Sie die Vertragsbedingungen gelesen haben, bestätigen Sie diese, indem Sie das entsprechende Kästchen ankreuzen und auf `Das Public-Cloud-Universun entdecken`{.action} klicken.
 
@@ -56,6 +58,20 @@ Sie haben ab sofort Zugriff auf das gesamte OVHcloud Public Cloud Ökosystem. En
 >![Projekt aktivieren](images/activate-project.png){.thumbnail width="400"}
 
 <iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/N7r_VCB7nmI?si=fcyToz1wK8Tw7skw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+### Projektaktivierung und Gratis-Testphase
+
+Wenn Sie im `Discovery-Modus` auf `Projekt aktivieren`{.action} klicken und ein Zahlungsmittel hinterlegen, wird Ihnen ein **Gratis-Testguthaben von 200 €** gutgeschrieben, sofern Sie dafür berechtigt sind.
+
+> [!primary]
+> **Bedingungen für das Gratis-Testguthaben**
+>
+> - Das Guthaben wird zum Zeitpunkt der Projektaktivierung freigeschaltet und ist **einen Monat** lang gültig.
+> - **Berechtigt:** Alle OVHcloud Kunden, die ihr erstes Public Cloud Projekt erstellen, auch wenn sie bereits einen OVHcloud Account besitzen.
+> - **Nicht berechtigt:** Kunden mit einem aktuellen oder früheren Public Cloud Projekt sowie Kunden, die bereits ein Gratis-Testguthaben in Anspruch genommen haben.
+>
+> Weitere Informationen finden Sie auf der Seite [OVHcloud Public Cloud Gratis-Testphase](/links/public-cloud/free-trial).
+>
 
 ## Weiterführende Informationen
 

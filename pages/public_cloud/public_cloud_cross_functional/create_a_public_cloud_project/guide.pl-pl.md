@@ -1,7 +1,7 @@
 ---
-title: 'Utworzenie pierwszego projekt Public Cloud'
+title: 'Utworzenie pierwszego projektu Public Cloud'
 excerpt: 'Dowiedz się, jak utworzyć pierwszy projekt Public Cloud w Panelu klienta OVHcloud'
-updated: 2025-04-28
+updated: 2026-05-05
 ---
 
 > [!primary]
@@ -10,7 +10,7 @@ updated: 2025-04-28
 
 ## Objective
 
-Utworzenie projekt jest pierwszym krokiem we wdrażaniu [instancji Public Cloud](/links/public-cloud/public-cloud).
+Utworzenie projektu jest pierwszym krokiem we wdrażaniu [instancji Public Cloud](/links/public-cloud/public-cloud).
 
 **Dowiedz się, jak utworzyć pierwszy projekt Public Cloud.**
 
@@ -28,6 +28,8 @@ Utworzenie projekt jest pierwszym krokiem we wdrażaniu [instancji Public Cloud]
 <!-- CP-NAV-END:publiccloud-projects -->
 
 ## Wskazówki
+
+### Tworzenie projektu
 
 Zapoznaj się z nimi i zaakceptuj warunki umów, zaznaczając odpowiednie pole, następnie kliknij `Poznaj naszą ofertę Public Cloud`{.action}.
 
@@ -56,6 +58,20 @@ Od tej pory będziesz miał dostęp do całego ekosystemu Public Cloud OVHcloud.
 > ![Włącz projekt](images/activate-project.png){.thumbnail width="400"}
 
 <iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/N7r_VCB7nmI?si=fcyToz1wK8Tw7skw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+### Aktywacja projektu i bezpłatny okres próbny
+
+Gdy klikniesz `Aktywuj projekt`{.action} z poziomu `Trybu Discovery` i zarejestrujesz metodę płatności, otrzymasz **bezpłatny kredyt próbny w wysokości 1 000 PLN**, jeśli spełniasz warunki kwalifikacji.
+
+> [!primary]
+> **Warunki bezpłatnego okresu próbnego**
+>
+> - Kredyt jest aktywowany w momencie aktywacji projektu i jest ważny przez **jeden miesiąc**.
+> - **Kwalifikujący się:** każdy klient OVHcloud tworzący swój pierwszy projekt Public Cloud, nawet jeśli posiada już konto OVHcloud.
+> - **Niekwalifikujący się:** klienci, którzy mają obecny lub miniony projekt Public Cloud lub którzy już skorzystali z bezpłatnego kredytu próbnego.
+>
+> Więcej informacji znajdziesz na stronie [Bezpłatny okres próbny OVHcloud Public Cloud](/links/public-cloud/free-trial).
+>
 
 ## Sprawdź również
 
