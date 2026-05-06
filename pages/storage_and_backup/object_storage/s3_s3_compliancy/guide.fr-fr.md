@@ -358,7 +358,7 @@ Ce guide a pour objectif d'énumérer les fonctionnalités supportées par l'Obj
     <tr>
         <td rowspan="3">Metadata mgt</td>
         <td>get attributes</td>
-        <td>no</td>
+        <td>yes</td>
         <td>no</td>
     </tr>
     <tr>
