@@ -26,7 +26,6 @@ L'inspection des métadonnées d'un objet nécessite traditionnellement au moins
 
 - **Aucun transfert de corps :** récupérez uniquement les métadonnées, quelle que soit la taille de l'objet.
 - **Réponse sélective :** recevez uniquement les attributs que vous demandez.
-- **Consolidation en un seul appel :** remplace le schéma `HeadObject` + `ListParts`.
 - **Tout client compatible S3 :** fonctionne avec AWS CLI, n'importe quel SDK S3 et les appels HTTP directs.
 
 ---
