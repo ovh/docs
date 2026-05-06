@@ -1,7 +1,7 @@
 ---
 title: "Technical capabilities and limitations of Public VCF as-a-Service"
 excerpt: "Learn about the technical capabilities and limitations of Public VCF aaS (aka Public VCF as-a-Service)"
-updated: 2025-09-25
+updated: 2026-05-06
 ---
 
 ## Objective
@@ -22,18 +22,19 @@ Before getting started, review the following guides to better understand Public 
 
 ### General limitations
 
-| Resource | Standard | Advanced | Premium | Comments |
-|----------|---------|----------|---------|----------|
-| vCPU (per VM) | 32 | 32 | 32 | Number of available vCPUs per VM. |
-| RAM (per VM) | 128 GB | 128 GB | 128 GB | Maximum RAM per VM (min. 0.5 GB). |
-| Network Cards (per VM) | 10 | 10 | 10 | Maximum number of network adapters per VM. |
-| Edge Gateway (per organization) | N/A | 5 | 5 | Maximum number of Edge Gateways per organization. |
-| Public IPs (per vDC) | N/A | 2 | 2 | Number of available public IPs per vDC. |
-| Snapshots (per VM) | 1 | 1 | 1 | Maximum of 1 snapshots per VM. |
-| VMs (per vApp) | 128 | 128 | 128 | Maximum number of VMs allowed per vApp. |
-| VMs (per organization) | 2000 | 4000 | 4000 | Maximum number of VMs per organization. |
-| vApps (per organization) | 10,000 | 10,000 | 10,000 | Maximum number of vApps per organization. |
-| Segments (per organization) | 40 | 40 | 40 | Maximum number of segments per organization. |
+| Resource | Standard | Advanced | Comments |
+|----------|---------|----------|----------|
+| vCPU (per VM) | 32 | 32 | Number of available vCPUs per VM. |
+| RAM (per VM) | 128 GB | 128 GB | Maximum RAM per VM (min. 0.5 GB). |
+| Network Cards (per VM) | 10 | 10 | Maximum number of network adapters per VM. |
+| Edge Gateway (per organization) | N/A | 5 | Maximum number of Edge Gateways per organization. |
+| Public IPs (per vDC) | N/A | 2 | Number of available public IPs per vDC. |
+| Snapshots (per VM) | 1 | 1 | Maximum of 1 snapshots per VM. |
+| VMs (per vApp) | 128 | 128 | Maximum number of VMs allowed per vApp. |
+| VMs (per organization) | 2000 | 4000 | Maximum number of VMs per organization. |
+| vApps (per organization) | 10,000 | 10,000 | Maximum number of vApps per organization. |
+| Segments (per organization) | 40 | 40 | Maximum number of segments per organization. |
+| vRack Segments (per organization) | 7 | 7 | Maximum number of vRack segments (1 public + 1 trunk + 5 private). |
 
 > **Note**: When creating a snapshot that includes the VM's memory, storage usage can quickly add up.
 > For example, if you have 1 VM with 1 GB of RAM and a 10 GB disk, and you create a snapshot that includes memory, your storage usage will be:
@@ -41,11 +42,11 @@ Before getting started, review the following guides to better understand Public 
 
 ### Hardware limitations
 
-| Resource | Standard | Advanced | Premium | Comments |
-|----------|---------|----------|---------|----------|
-| vCPU Frequency Min | 1 GHz | 1 GHz | 1 GHz | In Roadmap. |
-| vCPU Frequency Max | 3 GHz | 3 GHz | 3 GHz | By Default. |
-| Storage per VM (VMDK) | 1.5 TB | 1.5 TB | 1.5 TB | Storage limit on VMDK. |
+| Resource | Standard | Advanced | Comments |
+|----------|---------|----------|----------|
+| vCPU Frequency Min | 1 GHz | 1 GHz | In Roadmap. |
+| vCPU Frequency Max | 3 GHz | 3 GHz | By Default. |
+| Storage per VM (VMDK) | 1.5 TB | 1.5 TB | Storage limit on VMDK. |
 
 ## Limitations of integration with external applications
 
