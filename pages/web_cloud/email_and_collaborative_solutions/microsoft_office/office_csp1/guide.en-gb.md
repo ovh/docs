@@ -25,7 +25,7 @@ Here is the list of software included in the suite:
 
 ## Requirements
 
-- An [OVHcloud customer account](/links/manager)
+- An [OVHcloud customer account](/pages/account_and_service_management/account_information/ovhcloud-account-creation)
 
 <!-- CP-NAV-START:web-microsoft-365 -->
 ---
