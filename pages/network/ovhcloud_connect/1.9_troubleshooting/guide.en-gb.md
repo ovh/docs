@@ -570,16 +570,15 @@ For the full list of prerequisites and limitations, see [Prerequisites & Limitat
 
 If you have followed the troubleshooting steps above and the issue persists, open a support ticket:
 
-1. Log in to the [OVHcloud Control Panel](https://www.ovh.com/manager/).
-2. Go to **Support** → **Create a ticket**.
-3. Select **Network** → **OVHcloud Connect**.
-4. Include:
+1. From the [OVHcloud Control Panel](/links/manager), go to **Support** → **Create a ticket**.
+2. Select **Network** → **OVHcloud Connect**.
+3. Include:
    - Your OVHcloud Connect **service name/ID**
    - **Timestamp** of the issue (UTC)
    - **Symptoms** observed
    - **Diagnostic outputs** (BGP summary, interface status, traceroute, optical values)
    - **Steps already taken** to troubleshoot
-5. See [Declare and Follow Up Upon an Incident](../3.10_incident_followup/guide.en-gb.md) for the full incident management process.
+4. See [Declare and Follow Up Upon an Incident](../3.10_incident_followup/guide.en-gb.md) for the full incident management process.
 
 ---
 

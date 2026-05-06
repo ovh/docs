@@ -570,16 +570,15 @@ Pour la liste complète des prérequis et limitations, consultez [Prérequis et 
 
 Si vous avez suivi les étapes de dépannage ci-dessus et que le problème persiste, ouvrez un ticket de support :
 
-1. Connectez-vous à l'[espace client OVHcloud](https://www.ovh.com/manager/).
-2. Accédez à **Support** → **Créer un ticket**.
-3. Sélectionnez **Network** → **OVHcloud Connect**.
-4. Incluez :
+1. Depuis l'[espace client OVHcloud](/links/manager), allez dans **Support** → **Créer un ticket**.
+2. Sélectionnez **Network** → **OVHcloud Connect**.
+3. Incluez :
    - Le **nom/ID de service** de votre OVHcloud Connect
    - L'**horodatage** du problème (UTC)
    - Les **symptômes** observés
    - Les **sorties de diagnostic** (résumé BGP, état des interfaces, traceroute, valeurs optiques)
    - Les **étapes déjà entreprises** pour le dépannage
-5. Consultez [Déclarer et suivre un incident](../3.10_incident_followup/guide.fr-fr.md) pour le processus complet de gestion des incidents.
+4. Consultez [Déclarer et suivre un incident](../3.10_incident_followup/guide.fr-fr.md) pour le processus complet de gestion des incidents.
 
 ---
 

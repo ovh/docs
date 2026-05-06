@@ -15,6 +15,17 @@ This guide explains how to cancel an OVHcloud Connect Provider service. Since a 
 - **OVHcloud contract** — Check your OVHcloud commitment period and billing cycle.
 - **Alternative connectivity** — Ensure workloads are migrated or an alternative path is available.
 
+<!-- CP-NAV-START:network-ovhcloud-connect -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [OVHcloud Connect](/links/control-panel/network-ovhcloud-connect)
+- **Navigation path:** `Network`{.action} > `OVHcloud Connect`{.action}
+
+---
+<!-- CP-NAV-END:network-ovhcloud-connect -->
+
 ## Steps to cancel
 
 ### 1. Remove dependent configurations on OVHcloud
@@ -25,11 +36,9 @@ This guide explains how to cancel an OVHcloud Connect Provider service. Since a 
 
 ### 2. Cancel on the OVHcloud side
 
-1. Log in to the [OVHcloud Control Panel](https://www.ovh.com/manager/).
-2. Navigate to **Network** → **OVHcloud Connect**.
-3. Select the **Provider connection** you want to cancel.
-4. Click **Cancel** (or **Terminate service**).
-5. Confirm and note the effective cancellation date.
+1. Select the **Provider connection** you want to cancel.
+2. Click **Cancel** (or **Terminate service**).
+3. Confirm and note the effective cancellation date.
 
 ### 3. Cancel on the provider side
 

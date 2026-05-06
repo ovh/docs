@@ -28,12 +28,22 @@ Use static routing when you have a simple setup with a small number of stable pr
 
 ## Requirements
 
-- An active [OVHcloud account](/links/manager)
 - An active OVHcloud Connect service (status `active`)
 - OVHcloud Connect associated with a vRack — see [Associate OVHcloud Connect with your vRack](/pages/network/ovhcloud_connect_revamp/3.5_associate_vrack)
 - An AZ configuration created — see [Set up vRack networking](/pages/network/ovhcloud_connect_revamp/3.6_vrack_network_setup)
 - A /30 peering subnet (e.g. `192.0.2.0/30`)
 - OVHcloud API credentials (Application Key, Application Secret, Consumer Key). Refer to the [First steps with the OVHcloud API](/pages/manage-and-operate/api/first-steps) guide.
+
+<!-- CP-NAV-START:network-ovhcloud-connect -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [OVHcloud Connect](/links/control-panel/network-ovhcloud-connect)
+- **Navigation path:** `Network`{.action} > `OVHcloud Connect`{.action}
+
+---
+<!-- CP-NAV-END:network-ovhcloud-connect -->
 
 ## Instructions
 

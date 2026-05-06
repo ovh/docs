@@ -18,6 +18,17 @@ Assurez-vous de disposer de :
 - D'un **plan d'adressage IP** prévu (IPs de peering et préfixes à annoncer)
 - D'un **ASN** (Autonomous System Number) privé ou public
 
+<!-- CP-NAV-START:network-ovhcloud-connect -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [OVHcloud Connect](/links/control-panel/network-ovhcloud-connect)
+- **Pour accéder à vos services :** `Network`{.action} > `OVHcloud Connect`{.action}
+
+---
+<!-- CP-NAV-END:network-ovhcloud-connect -->
+
 ## Vue d'ensemble des étapes
 
 ```svg
@@ -65,12 +76,10 @@ Assurez-vous de disposer de :
 
 ### Étape 1 — Commander OVHcloud Connect Direct
 
-1. Connectez-vous à l'**espace client OVHcloud**.
-2. Rendez-vous dans **Network** puis **OVHcloud Connect**.
-3. Sélectionnez **Connexion Direct**.
-4. Choisissez votre **emplacement de PoP** et la **bande passante** (par exemple 1 Gbps ou 10 Gbps).
-5. Renseignez les détails techniques : votre ASN, vos coordonnées et toute instruction particulière pour le datacenter.
-6. Vérifiez la tarification et confirmez la commande.
+1. Sélectionnez **Connexion Direct**.
+2. Choisissez votre **emplacement de PoP** et la **bande passante** (par exemple 1 Gbps ou 10 Gbps).
+3. Renseignez les détails techniques : votre ASN, vos coordonnées et toute instruction particulière pour le datacenter.
+4. Vérifiez la tarification et confirmez la commande.
 
 Pour les étapes de commande détaillées, consultez [Commander OVHcloud Connect Direct](../3.1_order_direct/guide.fr-fr.md).
 

@@ -32,6 +32,17 @@ You need to have cleared steps 1 through 3 of one of the following guides:
 - [Quick Start: Direct Connection to OVHcloud](/pages/network/ovhcloud_connect_revamp/2.1_quick_start_direct)
 - [Quick Start: Connection to OVHcloud with a Provider](/pages/network/ovhcloud_connect_revamp/2.2_quick_start_provider)
 
+<!-- CP-NAV-START:network-ovhcloud-connect -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [OVHcloud Connect](/links/control-panel/network-ovhcloud-connect)
+- **Navigation path:** `Network`{.action} > `OVHcloud Connect`{.action}
+
+---
+<!-- CP-NAV-END:network-ovhcloud-connect -->
+
 ## Instructions
 
 ### Overview

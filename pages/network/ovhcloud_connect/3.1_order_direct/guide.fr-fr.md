@@ -21,21 +21,30 @@ Avant de passer commande, préparez les informations suivantes :
 | **Coordonnées** | Contacts techniques et de facturation pour la commande |
 | **Instructions de cross-connect** | Références de cage/baie si vous disposez de votre propre espace dans le datacenter |
 
+<!-- CP-NAV-START:network-ovhcloud-connect -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [OVHcloud Connect](/links/control-panel/network-ovhcloud-connect)
+- **Pour accéder à vos services :** `Network`{.action} > `OVHcloud Connect`{.action}
+
+---
+<!-- CP-NAV-END:network-ovhcloud-connect -->
+
 ## Commander depuis l'espace client OVHcloud
 
-1. **Connectez-vous** à l'[espace client OVHcloud](/links/manager).
-2. Rendez-vous dans **Network** → **OVHcloud Connect**.
-3. Cliquez sur **Commander une nouvelle connexion**.
-4. Sélectionnez **Connexion directe**.
-5. Choisissez la **localisation du PoP** dans la liste des sites disponibles.
-6. Sélectionnez la **bande passante** souhaitée (1 Gbps ou 10 Gbps).
-7. Renseignez les **détails techniques** :
+1. Cliquez sur **Commander une nouvelle connexion**.
+2. Sélectionnez **Connexion directe**.
+3. Choisissez la **localisation du PoP** dans la liste des sites disponibles.
+4. Sélectionnez la **bande passante** souhaitée (1 Gbps ou 10 Gbps).
+5. Renseignez les **détails techniques** :
    - Votre ASN
    - VLAN ID préféré (le cas échéant)
    - Coordonnées pour la livraison de la LOA
    - Toute instruction particulière pour le cross-connect en datacenter
-8. Vérifiez les **conditions tarifaires et contractuelles** (durée d'engagement minimale, redevance mensuelle).
-9. **Confirmez** la commande.
+6. Vérifiez les **conditions tarifaires et contractuelles** (durée d'engagement minimale, redevance mensuelle).
+7. **Confirmez** la commande.
 
 Vous recevrez un e-mail de confirmation contenant la référence de votre commande ainsi que le délai de livraison estimé.
 

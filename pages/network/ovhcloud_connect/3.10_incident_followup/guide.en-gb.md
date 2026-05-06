@@ -58,20 +58,30 @@ Before opening a ticket, verify whether the issue is already known:
 - **Provider status page** — If using a provider (Megaport, Equinix, Console Connect), check their status/maintenance pages.
 - **Your own monitoring** — Confirm the issue is not on your side (local router failure, ISP outage, etc.).
 
+<!-- CP-NAV-START:network-ovhcloud-connect -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [OVHcloud Connect](/links/control-panel/network-ovhcloud-connect)
+- **Navigation path:** `Network`{.action} > `OVHcloud Connect`{.action}
+
+---
+<!-- CP-NAV-END:network-ovhcloud-connect -->
+
 ## Step 3 — Open a support ticket
 
-1. Log in to the [OVHcloud Control Panel](https://www.ovh.com/manager/).
-2. Go to **Support** → **Create a ticket** (or navigate to the support section).
-3. Select the category related to **Network** / **OVHcloud Connect**.
-4. Provide a clear **subject line** (e.g. "OVHcloud Connect — BGP session down since 14:30 UTC").
-5. In the description, include:
+1. Go to **Support** → **Create a ticket** (or navigate to the support section).
+2. Select the category related to **Network** / **OVHcloud Connect**.
+3. Provide a clear **subject line** (e.g. "OVHcloud Connect — BGP session down since 14:30 UTC").
+4. In the description, include:
    - Your OVHcloud Connect **service name/ID**
    - **Timestamp** of the issue (UTC)
    - **Symptoms** observed
    - **Diagnostic outputs** (paste BGP summary, interface status, traceroute)
    - **Impact** on your business (number of users affected, critical services down)
-6. Attach any **screenshots** or log files.
-7. Submit the ticket and note the **ticket number**.
+5. Attach any **screenshots** or log files.
+6. Submit the ticket and note the **ticket number**.
 
 > **Tip:** The more detailed your initial report, the faster the support team can diagnose the issue.
 

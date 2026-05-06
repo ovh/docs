@@ -18,6 +18,17 @@ Make sure you have:
 - ✅ A planned **IP addressing scheme** (peering IPs and prefixes to advertise)
 - ✅ A private or public **ASN** (Autonomous System Number)
 
+<!-- CP-NAV-START:network-ovhcloud-connect -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [OVHcloud Connect](/links/control-panel/network-ovhcloud-connect)
+- **Navigation path:** `Network`{.action} > `OVHcloud Connect`{.action}
+
+---
+<!-- CP-NAV-END:network-ovhcloud-connect -->
+
 ## Steps overview
 
 ```svg
@@ -65,12 +76,10 @@ Make sure you have:
 
 ### Step 1 — Order OVHcloud Connect Direct
 
-1. Log in to the **OVHcloud Control Panel**.
-2. Navigate to **Network** → **OVHcloud Connect**.
-3. Select **Direct Connection**.
-4. Choose your **PoP location** and **bandwidth** (e.g. 1 Gbps or 10 Gbps).
-5. Fill in technical details: your ASN, contact information, and any special instructions for the data centre.
-6. Review pricing and confirm the order.
+1. Select **Direct Connection**.
+2. Choose your **PoP location** and **bandwidth** (e.g. 1 Gbps or 10 Gbps).
+3. Fill in technical details: your ASN, contact information, and any special instructions for the data centre.
+4. Review pricing and confirm the order.
 
 For detailed ordering steps, see [Order OVHcloud Connect Direct](../3.1_order_direct/guide.en-gb.md).
 

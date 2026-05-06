@@ -32,6 +32,17 @@ Vous devez avoir réalisé les étapes 1 à 3 de l'un des guides suivants :
 - [Démarrage rapide : connexion directe à OVHcloud](/pages/network/ovhcloud_connect_revamp/2.1_quick_start_direct)
 - [Démarrage rapide : connexion à OVHcloud via un opérateur](/pages/network/ovhcloud_connect_revamp/2.2_quick_start_provider)
 
+<!-- CP-NAV-START:network-ovhcloud-connect -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [OVHcloud Connect](/links/control-panel/network-ovhcloud-connect)
+- **Pour accéder à vos services :** `Network`{.action} > `OVHcloud Connect`{.action}
+
+---
+<!-- CP-NAV-END:network-ovhcloud-connect -->
+
 ## En pratique
 
 ### Vue d'ensemble

@@ -15,6 +15,17 @@ Ce guide explique comment résilier un service OVHcloud Connect Provider. Une co
 - **Contrat OVHcloud** — Vérifiez votre durée d'engagement OVHcloud et votre cycle de facturation.
 - **Connectivité alternative** — Assurez-vous que vos charges de travail sont migrées ou qu'un chemin alternatif est disponible.
 
+<!-- CP-NAV-START:network-ovhcloud-connect -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [OVHcloud Connect](/links/control-panel/network-ovhcloud-connect)
+- **Pour accéder à vos services :** `Network`{.action} > `OVHcloud Connect`{.action}
+
+---
+<!-- CP-NAV-END:network-ovhcloud-connect -->
+
 ## Étapes de résiliation
 
 ### 1. Supprimer les configurations dépendantes côté OVHcloud
@@ -25,11 +36,9 @@ Ce guide explique comment résilier un service OVHcloud Connect Provider. Une co
 
 ### 2. Résilier côté OVHcloud
 
-1. Connectez-vous à l'[espace client OVHcloud](https://www.ovh.com/manager/).
-2. Rendez-vous dans **Network** → **OVHcloud Connect**.
-3. Sélectionnez la **connexion via un opérateur** que vous souhaitez résilier.
-4. Cliquez sur **Annuler** (ou **Résilier le service**).
-5. Confirmez et notez la date effective de résiliation.
+1. Sélectionnez la **connexion via un opérateur** que vous souhaitez résilier.
+2. Cliquez sur **Annuler** (ou **Résilier le service**).
+3. Confirmez et notez la date effective de résiliation.
 
 ### 3. Résilier côté opérateur
 

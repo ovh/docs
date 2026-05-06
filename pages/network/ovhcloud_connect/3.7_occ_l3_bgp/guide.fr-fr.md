@@ -16,13 +16,23 @@ updated: 2026-04-14
 
 ## Prérequis
 
-- Un [compte OVHcloud](/links/manager) actif
 - Un service OVHcloud Connect actif (statut `active`)
 - OVHcloud Connect associé à un vRack — voir [Associer OVHcloud Connect à votre vRack](/pages/network/ovhcloud_connect_revamp/3.5_associate_vrack)
 - Une configuration AZ créée — voir [Configurer le réseau vRack](/pages/network/ovhcloud_connect_revamp/3.6_vrack_network_setup)
 - Votre ASN (un ASN public ou un ASN privé compris dans la plage 64512–65534)
 - Un sous-réseau de peering /30 (par exemple `192.0.2.0/30`)
 - Des identifiants de l’API OVHcloud (Application Key, Application Secret, Consumer Key). Consultez le guide [Premiers pas avec l’API OVHcloud](/pages/manage-and-operate/api/first-steps).
+
+<!-- CP-NAV-START:network-ovhcloud-connect -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [OVHcloud Connect](/links/control-panel/network-ovhcloud-connect)
+- **Pour accéder à vos services :** `Network`{.action} > `OVHcloud Connect`{.action}
+
+---
+<!-- CP-NAV-END:network-ovhcloud-connect -->
 
 ## En pratique
 

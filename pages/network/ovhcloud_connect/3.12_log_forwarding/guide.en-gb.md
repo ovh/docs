@@ -24,6 +24,26 @@ If you would like to find out more about Logs Data Platform before reading this 
 - An up-and-running [OVHcloud Connect service](../1.1_introduction_to_ovhcloud_connect/guide.en-gb.md).
 - Both the LDP account and the OVHcloud Connect account must belong to the same OVHcloud account.
 
+<!-- CP-NAV-START:network-ovhcloud-connect -->
+<!-- CP-NAV-START:logs-data-platform -->
+---
+
+### OVHcloud Control Panel Access
+
+**OVHcloud Connect:**
+
+- **Direct link:** [OVHcloud Connect](/links/control-panel/network-ovhcloud-connect)
+- **Navigation path:** `Network`{.action} > `OVHcloud Connect`{.action}
+
+**Logs Data Platform:**
+
+- **Direct link:** [Logs Data Platform](/links/control-panel/logs-data-platform)
+- **Navigation path:** `Identity, Security & Operations`{.action} > `Logs Data Platform`{.action} > Select the platform concerned
+
+---
+<!-- CP-NAV-END:logs-data-platform -->
+<!-- CP-NAV-END:network-ovhcloud-connect -->
+
 ## Concepts & limits
 
 **What are the logs of an OVHcloud Connect?**

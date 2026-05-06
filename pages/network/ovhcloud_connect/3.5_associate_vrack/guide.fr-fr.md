@@ -58,16 +58,26 @@ Lorsque vous associez OVHcloud Connect à un vRack :
 - Un service **vRack** provisionné sur votre compte OVHcloud. Si vous n'en disposez pas, vous pouvez le créer depuis l'espace client (gratuit).
 - Au moins un service OVHcloud (serveur, VM, etc.) rattaché au vRack.
 
+<!-- CP-NAV-START:network-ovhcloud-connect -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [OVHcloud Connect](/links/control-panel/network-ovhcloud-connect)
+- **Pour accéder à vos services :** `Network`{.action} > `OVHcloud Connect`{.action}
+
+---
+<!-- CP-NAV-END:network-ovhcloud-connect -->
+
 ## Étapes d'association
 
 ### Depuis l'espace client OVHcloud
 
-1. Connectez-vous à l'[espace client OVHcloud](https://www.ovh.com/manager/).
-2. Rendez-vous dans **Network** → **vRack**.
-3. Sélectionnez votre vRack.
-4. Cliquez sur **Ajouter un service**.
-5. Dans la liste des services éligibles, sélectionnez votre service **OVHcloud Connect**.
-6. Cliquez sur **Ajouter** pour confirmer.
+1. Rendez-vous dans **Network** → **vRack**.
+2. Sélectionnez votre vRack.
+3. Cliquez sur **Ajouter un service**.
+4. Dans la liste des services éligibles, sélectionnez votre service **OVHcloud Connect**.
+5. Cliquez sur **Ajouter** pour confirmer.
 
 L'association est généralement effective en quelques minutes.
 

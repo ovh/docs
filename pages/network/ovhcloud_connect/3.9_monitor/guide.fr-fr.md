@@ -8,17 +8,22 @@ updated: 2026-02-18
 
 La surveillance de votre service OVHcloud Connect garantit que la connexion est saine, performante et conforme à vos attentes. Ce guide présente les outils et les métriques disponibles.
 
+<!-- CP-NAV-START:network-ovhcloud-connect -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [OVHcloud Connect](/links/control-panel/network-ovhcloud-connect)
+- **Pour accéder à vos services :** `Network`{.action} > `OVHcloud Connect`{.action}
+
+---
+<!-- CP-NAV-END:network-ovhcloud-connect -->
+
 ## Outils de surveillance
 
 ### Espace client OVHcloud
 
-L’interface principale pour surveiller votre connexion :
-
-1. Connectez-vous à l’[espace client OVHcloud](https://www.ovh.com/manager/).
-2. Naviguez vers **Network** → **OVHcloud Connect**.
-3. Sélectionnez votre service.
-
-Vous pouvez consulter :
+L'interface principale de surveillance de votre connexion donne accès aux métriques suivantes :
 
 | Métrique | Description |
 |---|---|
@@ -81,11 +86,10 @@ Vous pouvez lancer des diagnostics à la demande depuis l’espace client OVHclo
 
 ### Lancer un diagnostic
 
-1. Connectez-vous à l’[espace client OVHcloud](/links/manager).
-2. Allez dans **Network** > `OVHcloud Connect`{.action} et ouvrez le service à diagnostiquer.
-3. En bas du panneau « POP Configuration », dans la section « Diagnostic POP », cliquez sur le bouton points de suspension `...`{.action}.
-4. Sélectionnez le diagnostic à exécuter — par exemple `BGP Peering Test`{.action} en mode Layer 3, ou `Obtenir la liste de mes adresses MAC`{.action} en mode Layer 2.
-5. Confirmez en cliquant sur `Lancer le diagnostic`{.action}.
+1. Ouvrez le service OVHcloud Connect que vous souhaitez diagnostiquer.
+2. En bas du panneau « POP Configuration », dans la section « Diagnostic POP », cliquez sur le bouton points de suspension `...`{.action}.
+3. Sélectionnez le diagnostic à exécuter — par exemple `BGP Peering Test`{.action} en mode Layer 3, ou `Obtenir la liste de mes adresses MAC`{.action} en mode Layer 2.
+4. Confirmez en cliquant sur `Lancer le diagnostic`{.action}.
 
 ### Récupérer un résultat
 

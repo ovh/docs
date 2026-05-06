@@ -17,6 +17,17 @@ Consider the following before proceeding:
 - **Cross-connect removal** — The physical cross-connect in the data centre needs to be decommissioned separately.
 - **Billing** — Understand the billing cycle. Cancellation typically takes effect at the end of the current billing period.
 
+<!-- CP-NAV-START:network-ovhcloud-connect -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [OVHcloud Connect](/links/control-panel/network-ovhcloud-connect)
+- **Navigation path:** `Network`{.action} > `OVHcloud Connect`{.action}
+
+---
+<!-- CP-NAV-END:network-ovhcloud-connect -->
+
 ## Steps to cancel
 
 ### 1. Remove dependent configurations
@@ -29,12 +40,10 @@ Before cancelling the OVHcloud Connect service:
 
 ### 2. Request cancellation in the OVHcloud Control Panel
 
-1. Log in to the [OVHcloud Control Panel](https://www.ovh.com/manager/).
-2. Navigate to **Network** → **OVHcloud Connect**.
-3. Select the **Direct connection** you want to cancel.
-4. Click **Cancel** (or **Terminate service**).
-5. Confirm the cancellation. You may be asked to provide a reason.
-6. You will receive a **confirmation email** with the effective cancellation date.
+1. Select the **Direct connection** you want to cancel.
+2. Click **Cancel** (or **Terminate service**).
+3. Confirm the cancellation. You may be asked to provide a reason.
+4. You will receive a **confirmation email** with the effective cancellation date.
 
 ### 3. Decommission the cross-connect
 

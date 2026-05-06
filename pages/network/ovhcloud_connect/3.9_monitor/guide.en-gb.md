@@ -8,17 +8,22 @@ updated: 2026-02-18
 
 Monitoring your OVHcloud Connect service ensures that the connection is healthy, performant, and meeting your expectations. This guide covers the tools and metrics available.
 
+<!-- CP-NAV-START:network-ovhcloud-connect -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [OVHcloud Connect](/links/control-panel/network-ovhcloud-connect)
+- **Navigation path:** `Network`{.action} > `OVHcloud Connect`{.action}
+
+---
+<!-- CP-NAV-END:network-ovhcloud-connect -->
+
 ## Monitoring tools
 
 ### OVHcloud Control Panel
 
-The primary interface for monitoring your connection:
-
-1. Log in to the [OVHcloud Control Panel](https://www.ovh.com/manager/).
-2. Navigate to **Network** → **OVHcloud Connect**.
-3. Select your service.
-
-You can view:
+The primary interface for monitoring your connection provides visibility into the following metrics:
 
 | Metric | Description |
 |---|---|
@@ -81,11 +86,10 @@ You can launch on-demand diagnostics from the OVHcloud Control Panel to get a po
 
 ### Launch a diagnostic
 
-1. Log in to the [OVHcloud Control Panel](/links/manager).
-2. Go to **Network** > `OVHcloud Connect`{.action} and open the service you want to diagnose.
-3. At the bottom of the "POP Configuration" panel, in the "Diagnostic POP" segment, click the ellipsis button `...`{.action}.
-4. Select the diagnostic to run — for example `BGP Peering Test`{.action} in Layer 3 mode, or `Get the list of my MAC addresses`{.action} in Layer 2 mode.
-5. Confirm by clicking `Launch diagnostic`{.action}.
+1. Open the OVHcloud Connect service you want to diagnose.
+2. At the bottom of the "POP Configuration" panel, in the "Diagnostic POP" segment, click the ellipsis button `...`{.action}.
+3. Select the diagnostic to run — for example `BGP Peering Test`{.action} in Layer 3 mode, or `Get the list of my MAC addresses`{.action} in Layer 2 mode.
+4. Confirm by clicking `Launch diagnostic`{.action}.
 
 ### Retrieve a result
 

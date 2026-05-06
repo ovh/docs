@@ -17,6 +17,17 @@ Assurez-vous de disposer de :
 - D'un **routeur** prenant en charge le peering BGP (OVHcloud Connect Provider est toujours un service Layer 3)
 - D'un **plan d'adressage IP** prévu et d'un **ASN**
 
+<!-- CP-NAV-START:network-ovhcloud-connect -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [OVHcloud Connect](/links/control-panel/network-ovhcloud-connect)
+- **Pour accéder à vos services :** `Network`{.action} > `OVHcloud Connect`{.action}
+
+---
+<!-- CP-NAV-END:network-ovhcloud-connect -->
+
 ## Vue d'ensemble des étapes
 
 ```svg
@@ -64,12 +75,10 @@ Assurez-vous de disposer de :
 
 ### Étape 1 — Commander OVHcloud Connect Provider
 
-1. Connectez-vous à l'**espace client OVHcloud**.
-2. Rendez-vous dans **Network** puis **OVHcloud Connect**.
-3. Sélectionnez **Connexion via Provider**.
-4. Choisissez votre **provider**, votre **emplacement de PoP** et la **bande passante**.
-5. Vérifiez la tarification et soumettez la commande.
-6. OVHcloud génère une **clé d'appairage** (également appelée clé de service) destinée à votre provider.
+1. Sélectionnez **Connexion via Provider**.
+2. Choisissez votre **provider**, votre **emplacement de PoP** et la **bande passante**.
+3. Vérifiez la tarification et soumettez la commande.
+4. OVHcloud génère une **clé d'appairage** (également appelée clé de service) destinée à votre provider.
 
 Pour les étapes détaillées, consultez [Commander OVHcloud Connect Provider](../3.2_order_provider).
 

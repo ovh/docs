@@ -17,6 +17,17 @@ Tenez compte des points suivants avant de poursuivre :
 - **Démantèlement du cross-connect** — Le cross-connect physique en datacenter doit être démantelé séparément.
 - **Facturation** — Comprenez le cycle de facturation. La résiliation prend généralement effet à la fin de la période de facturation en cours.
 
+<!-- CP-NAV-START:network-ovhcloud-connect -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [OVHcloud Connect](/links/control-panel/network-ovhcloud-connect)
+- **Pour accéder à vos services :** `Network`{.action} > `OVHcloud Connect`{.action}
+
+---
+<!-- CP-NAV-END:network-ovhcloud-connect -->
+
 ## Étapes de résiliation
 
 ### 1. Supprimer les configurations dépendantes
@@ -29,12 +40,10 @@ Avant de résilier le service OVHcloud Connect :
 
 ### 2. Demander la résiliation depuis l'espace client OVHcloud
 
-1. Connectez-vous à l'[espace client OVHcloud](https://www.ovh.com/manager/).
-2. Rendez-vous dans **Network** → **OVHcloud Connect**.
-3. Sélectionnez la **connexion directe** que vous souhaitez résilier.
-4. Cliquez sur **Annuler** (ou **Résilier le service**).
-5. Confirmez la résiliation. Un motif peut vous être demandé.
-6. Vous recevrez un **e-mail de confirmation** indiquant la date effective de résiliation.
+1. Sélectionnez la **connexion directe** que vous souhaitez résilier.
+2. Cliquez sur **Annuler** (ou **Résilier le service**).
+3. Confirmez la résiliation. Un motif peut vous être demandé.
+4. Vous recevrez un **e-mail de confirmation** indiquant la date effective de résiliation.
 
 ### 3. Démanteler le cross-connect
 

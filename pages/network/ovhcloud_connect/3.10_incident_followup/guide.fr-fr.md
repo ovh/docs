@@ -58,20 +58,30 @@ Avant d'ouvrir un ticket, vérifiez si le problème est déjà connu :
 - **Page de statut du fournisseur** — Si vous utilisez un fournisseur (Megaport, Equinix, Console Connect), consultez ses pages de statut/maintenance.
 - **Votre propre supervision** — Confirmez que le problème ne se situe pas de votre côté (panne du routeur local, panne du FAI, etc.).
 
+<!-- CP-NAV-START:network-ovhcloud-connect -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [OVHcloud Connect](/links/control-panel/network-ovhcloud-connect)
+- **Pour accéder à vos services :** `Network`{.action} > `OVHcloud Connect`{.action}
+
+---
+<!-- CP-NAV-END:network-ovhcloud-connect -->
+
 ## Étape 3 — Ouvrir un ticket de support
 
-1. Connectez-vous à l'[espace client OVHcloud](https://www.ovh.com/manager/).
-2. Allez dans **Support** puis **Créer un ticket** (ou rendez-vous dans la section support).
-3. Sélectionnez la catégorie liée à **Réseau** / **OVHcloud Connect**.
-4. Indiquez un **objet** clair (par exemple : « OVHcloud Connect — session BGP down depuis 14h30 UTC »).
-5. Dans la description, incluez :
+1. Allez dans **Support** puis **Créer un ticket** (ou rendez-vous dans la section support).
+2. Sélectionnez la catégorie liée à **Réseau** / **OVHcloud Connect**.
+3. Indiquez un **objet** clair (par exemple : « OVHcloud Connect — session BGP down depuis 14h30 UTC »).
+4. Dans la description, incluez :
    - Le **nom/ID du service** OVHcloud Connect
    - L'**horodatage** du problème (UTC)
    - Les **symptômes** observés
    - Les **sorties de diagnostic** (collez le résumé BGP, l'état d'interface, le traceroute)
    - L'**impact** sur votre activité (nombre d'utilisateurs concernés, services critiques indisponibles)
-6. Joignez toutes les **captures d'écran** ou fichiers de logs.
-7. Soumettez le ticket et notez le **numéro de ticket**.
+5. Joignez toutes les **captures d'écran** ou fichiers de logs.
+6. Soumettez le ticket et notez le **numéro de ticket**.
 
 > **Astuce :** plus votre rapport initial est détaillé, plus l'équipe de support pourra diagnostiquer le problème rapidement.
 

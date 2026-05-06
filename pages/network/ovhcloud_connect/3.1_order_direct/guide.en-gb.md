@@ -21,21 +21,30 @@ Before starting the order, prepare the following:
 | **Contact details** | Technical and billing contacts for the order |
 | **Cross-connect instructions** | Cage/cabinet references if you have your own space in the data centre |
 
+<!-- CP-NAV-START:network-ovhcloud-connect -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [OVHcloud Connect](/links/control-panel/network-ovhcloud-connect)
+- **Navigation path:** `Network`{.action} > `OVHcloud Connect`{.action}
+
+---
+<!-- CP-NAV-END:network-ovhcloud-connect -->
+
 ## Order via the OVHcloud Control Panel
 
-1. **Log in** to the [OVHcloud Control Panel](/links/manager).
-2. Go to **Network** → **OVHcloud Connect**.
-3. Click **Order a new connection**.
-4. Select **Direct Connection**.
-5. Choose your **PoP location** from the list of available sites.
-6. Select the desired **bandwidth** (1 Gbps or 10 Gbps).
-7. Fill in the **technical details**:
+1. Click **Order a new connection**.
+2. Select **Direct Connection**.
+3. Choose your **PoP location** from the list of available sites.
+4. Select the desired **bandwidth** (1 Gbps or 10 Gbps).
+5. Fill in the **technical details**:
    - Your ASN
    - Preferred VLAN ID (if applicable)
    - Contact information for LOA delivery
    - Any special instructions for the data centre cross-connect
-8. Review the **pricing and contract terms** (minimum commitment period, monthly fee).
-9. **Confirm** the order.
+6. Review the **pricing and contract terms** (minimum commitment period, monthly fee).
+7. **Confirm** the order.
 
 You will receive an email confirmation with your order reference and estimated delivery timeline.
 
