@@ -1,7 +1,7 @@
 ---
 title: How to create a Public Cloud instance and connect to it
 excerpt: Find out how to configure Public Cloud instances in the OVHcloud Control Panel and the first steps with your instances
-updated: 2026-02-24
+updated: 2026-05-06
 ---
 
 <style>
@@ -63,19 +63,6 @@ You can then go further with your Public Cloud project according to your needs.
   - [Step 2: Import SSH keys](#step-2-import-ssh-keys)
   - [Step 3: Prepare the network configuration](#step-3-prepare-the-network-configuration)
   - [Step 4: Create the instance](#step-4-create-the-instance)
-    - [Step 4.1: Instance Name](#step-41-instance-name)
-    - [Step 4.2: Select a location](#step-42-select-a-location)
-    - [Step 4.3: Select a model](#step-43-select-a-model)
-      - [Additional information](#additional-information)
-    - [Step 4.4: Select an image](#step-44-select-an-image)
-    - [Step 4.5: Select an SSH key (not applicable to Windows instances)](#step-45-select-an-ssh-key-not-applicable-to-windows-instances)
-    - [Step 4.6: Configure backup settings](#step-46-configure-backup-settings)
-    - [Step 4.7: Configure the network](#step-47-configure-the-network)
-    - [Step 4.8: Select a billing period](#step-48-select-a-billing-period)
-    - [Step 4.9: Configure advanced settings](#step-49-configure-advanced-settings)
-      - [Flexible instance](#flexible-instance)
-      - [Post-installation script](#post-installation-script)
-    - [Step 4.10: Finalizing your instance](#step-410-finalizing-your-instance)
   - [Step 5: Connect to the instance](#step-5-connect-to-the-instance)
     - [5.1: Verify the instance status in the OVHcloud Control Panel](#51-verify-the-instance-status-in-the-ovhcloud-control-panel)
     - [5.2: First login on an instance with a GNU/Linux OS installed](#52-first-login-on-an-instance-with-a-gnulinux-os-installed)
@@ -120,7 +107,7 @@ If you use an alternative software, refer to its user documentation. A usage exa
 
 ### Step 2: Import SSH keys
 
-You can store your public SSH keys in the `Public Cloud`{.action} section of the [OVHcloud Control Panel](/links/manager). This is not mandatory but makes the instance creation process more convenient.
+You can store your public SSH keys in your Public Cloud project. This is not mandatory but makes the instance creation process more convenient.
 
 > [!primary]
 >
@@ -129,15 +116,76 @@ You can store your public SSH keys in the `Public Cloud`{.action} section of the
 > Public SSH keys added to your OVHcloud Control Panel will be available for Public Cloud services of all [regions](/links/public-cloud/regions-pci). You can store keys encrypted with **RSA**, **ECDSA** and **ED25519**.
 >
 
-Open `SSH Keys`{.action} in the left-hand menu under **Settings**. Click on the button `Add an SSH key`{.action}.
-
-![ssh keys](/pages/assets/screens/control_panel/product-selection/public-cloud/cp_pci_sshkeys.png){.thumbnail}
-
-In the new window, enter a name for the key. Fill in the `Key` field with your public key string, for example the one created in [Step 1](#step-1-create-an-ssh-key-set). Confirm by clicking `Add`{.action}.
-
-![add key](images/24-addkey.png){.thumbnail}
-
-You can now select this key in [Step 4](#step-4-create-the-instance) to add it to a new instance.
+> [!tabs]
+> **Control Panel**
+>>
+>> Log in to the [OVHcloud Control Panel](/links/manager), navigate to the `Public Cloud`{.action} section and select your Public Cloud project.
+>>
+>> Open `SSH Keys`{.action} in the left-hand menu under **Settings**. Click on the button `Add an SSH key`{.action}.
+>>
+>> In the new window, enter a name for the key. Fill in the `Key` field with your public key string, for example the one created in [Step 1](#step-1-create-an-ssh-key-set). Confirm by clicking `Add`{.action}.
+>>
+>> You can now select this key in [Step 4](#step-4-create-the-instance) to add it to a new instance.
+>>
+> **OVHcloud API**
+>>
+>> Use the following call to import your public SSH key:
+>>
+>> > [!api]
+>> > @api {v1} /cloud POST /cloud/project/{serviceName}/sshkey
+>>
+>> Parameters:
+>>
+>> - `serviceName`: your Public Cloud project ID
+>> - `name`: name of the SSH key
+>> - `publicKey`: content of your public key
+>>
+>> Note the `id` returned — it will be needed when creating the instance.
+>>
+> **OVHcloud CLI**
+>>
+>> Make sure you have installed and configured the [OVHcloud CLI](https://github.com/ovh/ovhcloud-cli), then import your key:
+>>
+>> ```bash
+>> ovhcloud cloud ssh-key create \
+>>   --cloud-project <project_id> \
+>>   --name my-key \
+>>   --public-key "$(cat ~/.ssh/id_rsa.pub)"
+>> ```
+>>
+>> Verify the import and note the `name` of the key for [Step 4](#step-4-create-the-instance):
+>>
+>> ```bash
+>> ovhcloud cloud ssh-key list --cloud-project <project_id>
+>> ```
+>>
+> **OpenStack CLI**
+>>
+>> Make sure you have configured your OpenStack environment ([dedicated guide](/pages/public_cloud/public_cloud_cross_functional/prepare_the_environment_for_using_the_openstack_api)), then import your key:
+>>
+>> ```bash
+>> openstack keypair create --public-key ~/.ssh/id_rsa.pub my-key
+>> ```
+>>
+>> Verify the import:
+>>
+>> ```bash
+>> openstack keypair list
+>> ```
+>>
+> **Terraform**
+>>
+>> Declare the resource in your `.tf` file:
+>>
+>> ```hcl
+>> resource "openstack_compute_keypair_v2" "my_keypair" {
+>>   name       = "my-key"
+>>   public_key = file("~/.ssh/id_rsa.pub")
+>> }
+>> ```
+>>
+>> Refer to the [Terraform guide for OVHcloud Public Cloud](/pages/public_cloud/public_cloud_cross_functional/how_to_use_terraform) for the initial provider setup.
+>>
 
 ### Step 3: Prepare the network configuration
 
@@ -170,183 +218,188 @@ Find out more on the [Local Zones web page](/links/public-cloud/local-zones).
 
 ### Step 4: Create the instance
 
-> [!primary]
->
-> A public SSH key is required when creating an instance in the OVHcloud Control Panel (except for Windows instances).
->
-> Refer to [step 1](#step-1-create-an-ssh-key-set) and [step 2](#step-2-import-ssh-keys) in this guide if you do not have any SSH keys ready to use.
->
-
-On the **Home** page, click `Create an instance`{.action}.
-
-#### Step 4.1: Instance Name
-
-Enter a full name for your instance. The commercial reference of the instance model is the default value. If necessary, you can also add the region and date to facilitate the identification and management of your instances.
-
-#### Step 4.2: Select a location
-
-Select a [location](/links/public-cloud/regions-pci) closest to your users or customers. Note that if you select a **Local Zone** in this step, network limitations will apply to the instance (see [Step 3](#networking-modes)).
-
-Also refer to the information on the [Local Zones web page](/links/public-cloud/local-zones) and the [Local Zones capabilities documentation](/pages/public_cloud/compute/local-zones-capabilities-limitations).
-
-The choice of region determines how your instance is deployed (1-AZ, 3-AZ, or Local Zones). To understand the differences in terms of resilience, availability, and architecture, see our guide [Deployment Mode Comparison and Resilience – Understanding 3-AZ / 1-AZ / Local Zones](/pages/public_cloud/public_cloud_cross_functional/deployment_modes_comparison_resilience_details).
-
-#### Step 4.3: Select a model
-
-At this stage, you choose the instance model (also known as flavor), which determines the resources allocated to your instance: processor, memory, and associated capabilities. Open the `Instance Model` drop-down list, then select the model type that best suits your use case to access our range of optimized instances.
-
-The `Discovery` model type brings together instances with shared resources, offered at competitive prices. They are particularly well suited for discovering the OVHcloud Public Cloud, performing tests, or hosting light workloads such as web applications.
-
-`Metal Instances` models offer fully dedicated physical resources, guaranteeing consistent performance and maximum isolation for the most demanding workloads.
-
-> [!primary]
->
-> Your total Public Cloud resources will initially be limited for cost control and security reasons. You can check these quotas by clicking on `Quota & Regions`{.action} in the left navigation bar under **Settings**. See [the dedicated documentation](/pages/public_cloud/public_cloud_cross_functional/increasing_public_cloud_quota) for more information.
->
-> Note that you can **upgrade** your instance after creation to have more resources available. However, downgrading to a smaller model is not possible with a regular instance. You can find more information on this topic in **step 4.9** below.
->
-
-##### Additional information
-
-/// details | Instance model categories
-
-| Type | Guaranteed Resources | Usage notes |
-| :---         |     :---:      |          :--- |
-| Best Sellers   | ✓     | Most popular models.    |
-| General Purpose   | ✓     | Development servers, web or business applications    |
-| Compute Optimized     | ✓       | Video encoding or other high-performance computing      |
-| Memory Optimized    | ✓     | Databases, analysis, and in-memory calculations    |
-| GPU     | ✓       | Massively parallel processing power for specialized applications (rendering, big data, deep learning, etc.)       |
-| Discovery    | -       | Hosted on shared resources for testing and development environments      |
-| Storage Optimized   | ✓     | Optimized for disk data transfer    |
-| Metal Instances | ✓ | Dedicated resources with direct access to compute, storage and network resources|
-
-///
-
-/// details | Regions and Local Zones
-
-**Regions**
-
-A **region** is defined as a location in the world comprised of one or several data centres where OVHcloud services are hosted. You can find more information on regions, geographical division and availability of services on our [region web page](/links/public-cloud/regions-pci) and our [infrastructure web page](/links/infrareg).
-
-**Local Zones**
-
-Local Zones are an extension of **regions** that bring OVHcloud services closer to specific locations, offering reduced latency and improved performances for applications. You can find more information on the [Local Zones web page](/links/public-cloud/local-zones) and in the [Local Zones capabilities documentation](/pages/public_cloud/compute/local-zones-capabilities-limitations).
-
-///
-
-#### Step 4.4: Select an image
-
-Open the `Distribution Type` drop-down list, select the category that corresponds to your needs, then choose the operating system to deploy on your instance using the `Image Version` drop-down menu.
-
-The images available at this stage depend on the choices made in the previous stages, i.e., compatibility with the instance model and regional availability. For example, if you want to select a Windows operating system and there are no options in the Windows tab, you must change your choices from the previous stages.
-
-> [!primary]
->
-> If you choose an operating system that requires a paid license, these costs will be automatically included in the project invoice.
->
-
-#### Step 4.5: Select an SSH key (not applicable to Windows instances)
-
-With the exception of Windows instances, configuring your instance also requires **adding a public SSH key**. You have two options:
-
-- Use a public key already stored in the OVHcloud Control Panel
-- Enter a public key directly
-
-Click on the tabs below to view their presentation:
-
 > [!tabs]
-> **Using a stored key**
+> **Control Panel**
 >>
->> To add a key stored in your OVHcloud Control Panel (see [Step 2](#step-2-import-ssh-keys)), select it from the list.
+>> > [!primary]
+>> >
+>> > A public SSH key is required when creating an instance (except for Windows instances). Refer to [Step 1](#step-1-create-an-ssh-key-set) and [Step 2](#step-2-import-ssh-keys) if you do not have SSH keys ready to use.
 >>
-> **Enter a key directly**
+>> Log in to the [OVHcloud Control Panel](/links/manager), navigate to the `Public Cloud`{.action} section and select your Public Cloud project. On the **Home** page, click `Create an instance`{.action}.
 >>
->> To add a public key by pasting the key string, click the `Create a new SSH Key`{.action} button.
+>> **4.1 Name**
 >>
->> Enter a name for the key and the key string in the respective fields. Then click `Validate the key`{.action}.
+>> Enter a full name for your instance.
 >>
-
-#### Step 4.6: Configure backup settings
-
-[Automated backups](/pages/public_cloud/compute/save_an_instance) are enabled by default. Review the pricing information and additional details before proceeding.
-
-Next, select the rotation type, i.e., the maximum number of backups kept in the history: 7 or 14 days.
-
-#### Step 4.7: Configure the network
-
-In this step, you will configure the network for your instance.
-
-**Private network**
-
-You can connect your instance to a [private network](#networking-modes) and assign it a [floating IP](/links/public-cloud/floating-ip).
-
-By clicking on `Create a private network`{.action}, you can create one directly:
-
-- Name the network
-- **Select the VLAN ID:** identifier used to interconnect multiple services and resources within the same private network, via a common network segmentation number
-- **Define the CIDR:** range of IP addresses for the network
-- **Enable DHCP by checking the corresponding box, if necessary:** enable this option if you want IP addresses to be assigned automatically
-
-> [!primary]
->
-> The instance can remain fully private if you do not assign it a public IP address.
->
-
-**Gateway**
-
-You can enable the option to assign a gateway to your network. By default, the gateway is size S, but you can adjust its size later in the settings.
-
-**Assign public connectivity**
-
-You can enable or disable this feature as needed. If you choose to enable it, you have two options:
-
-- **Basic Public IP:** a temporary public IP address that does not persist beyond the lifetime of the instance. Note that using a Basic Public IP is not compatible with a gateway.
-- **Floating IP:** You can create a new Floating IP or reuse an existing address, allowing for a persistent public IP that can be detached from the instance.
-
-#### Step 4.8: Select a billing period
-
-> [!primary]
->
-> Please note that, depending on the instance model you choose, **hourly** billing may be the only option displayed. This is a temporary limitation; new Public Cloud billing options will be available soon.
->
-
-> [!tabs]
-> **Monthly billing**
+>> **4.2 Location**
 >>
->> Monthly billing will result in lower costs over time, but **cannot be changed** to hourly billing once the instance has been created.
+>> Select a [location](/links/public-cloud/regions-pci) closest to your users. Note that selecting a **Local Zone** applies network limitations (see [Step 3](#networking-modes)). Refer to the guide [Deployment Mode Comparison](/pages/public_cloud/public_cloud_cross_functional/deployment_modes_comparison_resilience_details) for differences between 3-AZ, 1-AZ and Local Zones.
 >>
-> **Hourly billing**
+>> **4.3 Model**
 >>
->> Hourly billing is the best choice if you have not clearly determined the length of the usage period. If you decide to keep the instance for long-term use, you can always [switch to a monthly subscription](/pages/account_and_service_management/managing_billing_payments_and_services/changing_hourly_monthly_billing).
+>> Choose the instance model (flavor) suited to your use case. The `Discovery` type offers shared resources at reduced prices. `Metal Instances` provide dedicated physical resources.
 >>
->> The instance will be billed as long as it is **not deleted**, regardless of the actual usage of the instance.
+>> > [!primary]
+>> >
+>> > Check your quotas via `Quota & Regions`{.action} in the left navigation bar under **Settings**.
 >>
-
-Find details in our dedicated billing documentation:
-
-- [Public Cloud Billing](/pages/public_cloud/public_cloud_cross_functional/analyze_billing)
-- [FAQ on monthly billing](/pages/public_cloud/compute/faq_change_of_monthly_billing_method)
-
-Once you have finished configuring your instance, you can choose to click the `Launch my instance`{.action} button, or configure advanced settings (see below). It may take a few minutes for your service to be delivered.
-
-#### Step 4.9: Configure advanced settings
-
-##### Flexible instance
-
-A Flex instance is a single 50 GB disk instance designed to offer faster snapshot creation and restoration.
-
-It allows resizing to higher or lower models while maintaining fixed storage. Classic models only allow resizing to higher models.
-
-##### Post-installation script
-
-You can add [your post-installation script](/pages/public_cloud/compute/launching_script_when_creating_instance) in this field.
-
-#### Step 4.10: Finalizing your instance
-
-On the right side of your screen, you will find a summary of your configuration. In this section, you can configure the number of instances to be created. You can create multiple instances based on the selections made during the creation steps, but resource [quota limits](/pages/public_cloud/public_cloud_cross_functional/increasing_public_cloud_quota) will apply.
-
-Once you have finished configuring your instance, click the `Launch my instance`{.action} button. Delivery of your service may take a few minutes.
+>> **4.4 Image**
+>>
+>> Select the OS via the `Distribution Type` and `Image Version` drop-down menus. Available options depend on the model and region chosen.
+>>
+>> **4.5 SSH key** *(not applicable to Windows instances)*
+>>
+>> Select a stored SSH key from the list (see [Step 2](#step-2-import-ssh-keys)), or click `Create a new SSH key`{.action} to paste a public key directly.
+>>
+>> **4.6 Backup**
+>>
+>> [Automated backups](/pages/public_cloud/compute/save_an_instance) are enabled by default. Select the rotation type (7 or 14 days).
+>>
+>> **4.7 Network**
+>>
+>> Configure the private network (VLAN ID, CIDR, DHCP), gateway and public connectivity (Basic Public IP or Floating IP) as needed (see [Step 3](#networking-modes)).
+>>
+>> **4.8 Billing**
+>>
+>> Choose between **monthly** (lower cost, non-reversible) or **hourly** (flexible, [convertible to monthly](/pages/account_and_service_management/managing_billing_payments_and_services/changing_hourly_monthly_billing)). Hourly billing runs until the **instance is deleted**. See the [billing documentation](/pages/public_cloud/public_cloud_cross_functional/analyze_billing).
+>>
+>> **4.9 Advanced settings** *(optional)*
+>>
+>> - **Flexible instance**: single 50 GB disk, allows resizing to higher or lower models.
+>> - **Post-installation script**: add your [post-installation script](/pages/public_cloud/compute/launching_script_when_creating_instance).
+>>
+>> **4.10 Finalize**
+>>
+>> Review the summary on the right side of the screen and configure the number of instances. Click `Launch my instance`{.action}. Delivery may take a few minutes.
+>>
+> **OVHcloud API**
+>>
+>> Retrieve the required identifiers:
+>>
+>> ```
+>> GET /cloud/project/{serviceName}/flavor     → flavorId
+>> GET /cloud/project/{serviceName}/image      → imageId
+>> GET /cloud/project/{serviceName}/region     → region
+>> GET /cloud/project/{serviceName}/sshkey     → sshKeyId
+>> ```
+>>
+>> Create the instance:
+>>
+>> > [!api]
+>> > @api {v1} /cloud POST /cloud/project/{serviceName}/instance
+>>
+>> Main parameters:
+>>
+>> - `name`: instance name
+>> - `flavorId`: model ID
+>> - `imageId`: OS image ID
+>> - `region`: deployment region
+>> - `sshKeyId`: SSH key ID (from [Step 2](#step-2-import-ssh-keys))
+>> - `monthlyBilling`: `true` for monthly billing
+>>
+>> Refer to the [OVHcloud API documentation](/pages/manage_and_operate/api/first-steps) to configure your API access.
+>>
+> **OVHcloud CLI**
+>>
+>> Retrieve the required identifiers:
+>>
+>> ```bash
+>> ovhcloud cloud reference list-flavors --cloud-project <project_id>
+>> ovhcloud cloud reference list-images --cloud-project <project_id>
+>> ovhcloud cloud ssh-key list --cloud-project <project_id>
+>> ```
+>>
+>> Create the instance:
+>>
+>> ```bash
+>> ovhcloud cloud instance create GRA9 \
+>>   --cloud-project <project_id> \
+>>   --name my-instance \
+>>   --boot-from.image <image_id> \
+>>   --flavor <flavor_id> \
+>>   --ssh-key.name my-key \
+>>   --network.public \
+>>   --wait
+>> ```
+>>
+>> Replace `GRA9` with your region. For interactive creation with guided selection:
+>>
+>> ```bash
+>> ovhcloud cloud instance create GRA9 \
+>>   --cloud-project <project_id> \
+>>   --editor \
+>>   --image-selector \
+>>   --flavor-selector
+>> ```
+>>
+>> Check the status after creation:
+>>
+>> ```bash
+>> ovhcloud cloud instance list --cloud-project <project_id>
+>> ```
+>>
+> **OpenStack CLI**
+>>
+>> Retrieve the required information:
+>>
+>> ```bash
+>> openstack flavor list
+>> openstack image list --property visibility=public
+>> openstack keypair list
+>> ```
+>>
+>> Create the instance:
+>>
+>> ```bash
+>> openstack server create \
+>>   --flavor b2-7 \
+>>   --image "Ubuntu 24.04" \
+>>   --key-name my-key \
+>>   --network Ext-Net \
+>>   my-instance
+>> ```
+>>
+>> Check the status:
+>>
+>> ```bash
+>> openstack server list
+>> openstack server show my-instance
+>> ```
+>>
+>> Refer to the [OpenStack environment setup guide](/pages/public_cloud/public_cloud_cross_functional/prepare_the_environment_for_using_the_openstack_api) for initial configuration.
+>>
+> **Terraform**
+>>
+>> Complete configuration example:
+>>
+>> ```hcl
+>> data "openstack_images_image_v2" "ubuntu" {
+>>   name        = "Ubuntu 24.04"
+>>   most_recent = true
+>> }
+>>
+>> resource "openstack_compute_instance_v2" "my_instance" {
+>>   name            = "my-instance"
+>>   flavor_name     = "b2-7"
+>>   key_pair        = openstack_compute_keypair_v2.my_keypair.name
+>>   security_groups = ["default"]
+>>
+>>   block_device {
+>>     uuid                  = data.openstack_images_image_v2.ubuntu.id
+>>     source_type           = "image"
+>>     destination_type      = "local"
+>>     boot_index            = 0
+>>     delete_on_termination = true
+>>   }
+>>
+>>   network {
+>>     name = "Ext-Net"
+>>   }
+>> }
+>> ```
+>>
+>> Refer to the [Terraform guide for OVHcloud Public Cloud](/pages/public_cloud/public_cloud_cross_functional/how_to_use_terraform) for the initial provider setup and authentication.
+>>
 
 ### Step 5: Connect to the instance
 
@@ -366,13 +419,18 @@ Note that we provide alternative ways of access (mainly used for troubleshooting
 
 Select `Instances`{.action} in the left-hand navigation bar under **Compute**. Your instance is ready when the status is set to `Enabled` in the table. If the instance was recently created and has a different status, click on the "Refresh" button located next to the search filter.
 
-![instances page](images/24-instance-connect01.png){.thumbnail}
-
 Click on the instance's name in this table to open the `Dashboard`{.action} on which you can find all information about the instance. To learn more about the functions available on this page, consult our guide on [managing instances in the Control Panel](/pages/public_cloud/compute/first_steps_with_public_cloud_instance).
 
 A **user with elevated permissions (*sudo*) is automatically created** on the instance. The username reflects the image installed, e.g "ubuntu", "debian", "fedora", etc. You can verify this on the right-hand side of the `Dashboard`{.action} in the section **Networks**.
 
-![instances page](images/24-instance-connect02.png){.thumbnail}
+> [!primary]
+>
+> Via the OVHcloud CLI, check the instance status and retrieve its IP address with:
+>
+> ```bash
+> ovhcloud cloud instance list --cloud-project <project_id>
+> ```
+>
 
 If your [SSH key pair is set up correctly](#step-1-create-an-ssh-key-set), you can now connect to the instance with the preconfigured user and your SSH key. You can find more detailed instructions in the subsequent paragraphs.
 
@@ -422,30 +480,24 @@ You will then need to complete the initial setup of your Windows OS. Follow the 
 > [!tabs]
 > 1. **Locale settings**
 >>
->> Configure your **country/region**, the preferred **Windows language**, and your **keyboard layout**. Then click on the button `Next`{.action} at the bottom right.<br><br>
->>![VNC](/pages/assets/screens/other/windows/windows_locale.png){.thumbnail}<br>
+>> Configure your **country/region**, the preferred **Windows language**, and your **keyboard layout**. Then click on the button `Next`{.action} at the bottom right.
 >>
 > 2. **Administrator password**
 >>
->> Set a password for your Windows `Administrator` account and confirm it, then click on `Finish`{.action}.<br><br>
->>![VNC](/pages/assets/screens/other/windows/windows_admin.png){.thumbnail}<br>
+>> Set a password for your Windows `Administrator` account and confirm it, then click on `Finish`{.action}.
 >>
 > 3. **Login screen**
 >>
->> Windows will apply your settings and then display the login screen. Click on the `Send CtrlAltDel`{.action} button in the top right corner to sign in.<br><br>
->>![VNC](/pages/assets/screens/other/windows/windows_vnc.png){.thumbnail}<br>
+>> Windows will apply your settings and then display the login screen. Click on the `Send CtrlAltDel`{.action} button in the top right corner to sign in.
 >>
 > 4. **Administrator login**
 >>
->> Enter the `Administrator` password you have created in the previous step and click on the `Arrow` button.<br><br>
->>![VNC](/pages/assets/screens/other/windows/windows_login.png){.thumbnail}
+>> Enter the `Administrator` password you have created in the previous step and click on the `Arrow` button.
 >>
 
 ##### 5.3.2: Log in remotely from Windows
 
 On your local Windows device, you can use the `Remote Desktop Connection` client application to connect to your instance.
-
-![rdp connection](/pages/assets/screens/other/windows/windows_rdp.png){.thumbnail}
 
 Enter the IPv4 address of your instance, then your username and passphrase. Usually a warning message will appear, asking to confirm the connection because of an unknown certificate. Click on `Yes`{.action} to log in.
 
@@ -464,23 +516,18 @@ Whichever client you are using, you only need the IP address of your instance an
 
 The free and open-source software `Remmina Remote Desktop Client` is available for many GNU/Linux desktop distributions. If you do not find Remmina in your desktop environment's software manager, you can obtain it from the [official website](https://remmina.org/).
 
-![linux remote](images/24-rem-connect01.png){.thumbnail}<br>
-
 > [!tabs]
 > 1. **Connection**
 >>
->> Open Remmina and make sure the connection protocol is set to "RDP". Enter the IPv4 address of your Public Cloud instance and press `Enter`.<br><br>
->>![linux remote](images/24-rem-connect02.png){.thumbnail}<br>
+>> Open Remmina and make sure the connection protocol is set to "RDP". Enter the IPv4 address of your Public Cloud instance and press `Enter`.
 >>
 > 2. **Authentication**
 >>
->> If a certificate warning message appears, click on `Yes`{.action}. Enter the username and your password for Windows and click on `OK`{.action} to establish the connection.<br><br>
->>![linux remote](images/24-rem-connect03.png){.thumbnail}<br>
+>> If a certificate warning message appears, click on `Yes`{.action}. Enter the username and your password for Windows and click on `OK`{.action} to establish the connection.
 >>
 > 3. **Settings**
 >>
->> You can find some useful items in the left-hand toolbar. For example, click on the icon `Toggle dynamic resolution update`{.action} to improve the window resolution.<br><br>
->>![linux remote](images/24-rem-connect04.png){.thumbnail}
+>> You can find some useful items in the left-hand toolbar. For example, click on the icon `Toggle dynamic resolution update`{.action} to improve the window resolution.
 >>
 
 #### 5.4: VNC console access
@@ -488,8 +535,6 @@ The free and open-source software `Remmina Remote Desktop Client` is available f
 The VNC console allows you to connect to your instances even when other means of access are not available.
 
 Select `Instances`{.action} in the left-hand navigation bar under **Compute**. Click on the instance name and open the tab `VNC console`{.action}.
-
-![vnc console](/pages/assets/screens/control_panel/product-selection/public-cloud/cp-pci-vnc-login.png){.thumbnail}
 
 > [!tabs]
 > **Instance with a GNU/Linux OS installed**

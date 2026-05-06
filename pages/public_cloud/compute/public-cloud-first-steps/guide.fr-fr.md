@@ -1,7 +1,7 @@
 ---
 title: "Comment créer une instance Public Cloud et s'y connecter"
 excerpt: "Découvrez comment configurer des instances Public Cloud dans votre espace client OVHcloud ainsi que les premières étapes avec vos instances"
-updated: 2026-04-23
+updated: 2026-05-06
 ---
 
 <style>
@@ -20,7 +20,7 @@ details[open]>summary::before {
 
 ## Objectif
 
-Les instances Public Cloud sont faciles à déployer et à gérer. Cependant, en tant que membre de l’écosystème Public Cloud d’OVHcloud, les instances offrent de nombreuses options de configuration et peuvent être adaptées à différents cas d'utilisation. Les instructions suivantes incluent toutes les étapes nécessaires (et aussi les étapes facultatives) pour créer une instance dans l’espace client OVHcloud et y accéder à distance.  
+Les instances Public Cloud sont faciles à déployer et à gérer. Cependant, en tant que membre de l'écosystème Public Cloud d'OVHcloud, les instances offrent de nombreuses options de configuration et peuvent être adaptées à différents cas d'utilisation. Les instructions suivantes incluent toutes les étapes nécessaires (et aussi les étapes facultatives) pour créer une instance dans l'espace client OVHcloud et y accéder à distance.  
 Vous pourrez ensuite aller plus loin avec votre projet Public Cloud en fonction de vos besoins.
 
 **Ce guide vous détaille les premiers pas avec une instance Public Cloud.**
@@ -29,10 +29,10 @@ Vous pourrez ensuite aller plus loin avec votre projet Public Cloud en fonction 
 ## Prérequis
 
 - Un [projet Public Cloud](/links/public-cloud/public-cloud) dans votre compte OVHcloud
-- Être connecté à l’[espace client OVHcloud](/links/manager)
+- Être connecté à l'[espace client OVHcloud](/links/manager)
 
 > [!success]
-> Bénéficiez de prix réduits en vous engageant sur une période de 1 à 36 mois sur vos ressources Public Cloud. Plus d’informations sur notre page [Savings Plans](/links/public-cloud/savings-plan).
+> Bénéficiez de prix réduits en vous engageant sur une période de 1 à 36 mois sur vos ressources Public Cloud. Plus d'informations sur notre page [Savings Plans](/links/public-cloud/savings-plan).
 
 ## En pratique
 
@@ -40,7 +40,7 @@ Vous pourrez ensuite aller plus loin avec votre projet Public Cloud en fonction 
 >
 > Si vous n'avez pas encore créé de projet Public Cloud, commencez par notre [guide sur la création d'un projet](/pages/public_cloud/public_cloud_cross_functional/create_a_public_cloud_project).
 >
-> **Les détails techniques** importants concernant le Public Cloud d’OVHcloud sont disponibles sur [cette page](/pages/public_cloud/public_cloud_cross_functional/00-essential-info-to-get-started-on-public-cloud).
+> **Les détails techniques** importants concernant le Public Cloud d'OVHcloud sont disponibles sur [cette page](/pages/public_cloud/public_cloud_cross_functional/00-essential-info-to-get-started-on-public-cloud).
 >
 
 ### Présentation du contenu
@@ -109,15 +109,9 @@ Vous pouvez stocker vos clés SSH publiques dans votre projet Public Cloud. Ce n
 >>
 >> Connectez-vous à l'[espace client OVHcloud](/links/manager), rendez-vous dans la section `Public Cloud`{.action} et sélectionnez le projet Public Cloud concerné.
 >>
->> ![control panel](/pages/assets/screens/control_panel/product-selection/public-cloud/select_project.png){.thumbnail}
->>
 >> Ouvrez `Clés SSH`{.action} dans le menu de gauche sous **Paramètres**. Cliquez sur le bouton `Ajouter une clé SSH`{.action}.
 >>
->> ![ssh keys](/pages/assets/screens/control_panel/product-selection/public-cloud/cp_pci_sshkeys.png){.thumbnail}
->>
 >> Dans la nouvelle fenêtre, entrez un nom pour la clé. Remplissez le champ `Clé` avec votre chaîne de clé publique, par exemple celle créée à l'[étape 1](#etape-1-creer-un-jeu-de-cles-ssh). Confirmez en cliquant sur `Ajouter`{.action}.
->>
->> ![add key](images/24-addkey.png){.thumbnail}
 >>
 >> Vous pouvez dorénavant sélectionner cette clé à l'[Étape 4](#etape-4-creer-linstance) pour l'ajouter à une nouvelle instance.
 >>
@@ -135,6 +129,23 @@ Vous pouvez stocker vos clés SSH publiques dans votre projet Public Cloud. Ce n
 >> - `publicKey` : contenu de votre clé publique
 >>
 >> Notez l'`id` retourné, il sera nécessaire lors de la création de l'instance.
+>>
+> **OVHcloud CLI**
+>>
+>> Assurez-vous d'avoir installé et configuré l'[OVHcloud CLI](https://github.com/ovh/ovhcloud-cli), puis importez votre clé :
+>>
+>> ```bash
+>> ovhcloud cloud ssh-key create \
+>>   --cloud-project <project_id> \
+>>   --name my-key \
+>>   --public-key "$(cat ~/.ssh/id_rsa.pub)"
+>> ```
+>>
+>> Vérifiez l'import et notez le `name` de la clé pour l'[Étape 4](#etape-4-creer-linstance) :
+>>
+>> ```bash
+>> ovhcloud cloud ssh-key list --cloud-project <project_id>
+>> ```
 >>
 > **CLI OpenStack**
 >>
@@ -169,7 +180,7 @@ Vous pouvez stocker vos clés SSH publiques dans votre projet Public Cloud. Ce n
 Avant de créer votre instance, nous vous recommandons d'étudier la manière dont l'instance sera utilisée en termes de mise en réseau.
 
 - Si vous n'avez pas besoin de configurer l'instance avec un réseau privé pour le moment, vous pouvez passer à l'[étape 4](#etape-4-creer-linstance). Vous pouvez créer une instance exposée à l'Internet public (voir le **Mode Public** [ci-dessous](#networking-modes).)
-- Si l'instance doit être connectée à un nouveau réseau privé (OVHcloud [vRack](/links/network/vrack)), notez que le vRack est créé automatiquement lors de la création de votre projet Public Cloud. Aucune action préalable n’est donc requise. Pour plus d’informations, consultez le [guide sur le vRack Public Cloud](/pages/public_cloud/public_cloud_network_services/getting-started-07-creating-vrack).
+- Si l'instance doit être connectée à un nouveau réseau privé (OVHcloud [vRack](/links/network/vrack)), notez que le vRack est créé automatiquement lors de la création de votre projet Public Cloud. Aucune action préalable n'est donc requise. Pour plus d'informations, consultez le [guide sur le vRack Public Cloud](/pages/public_cloud/public_cloud_network_services/getting-started-07-creating-vrack).
 
 <a name="networking-modes"></a>
 
@@ -193,16 +204,16 @@ Pour en savoir plus, consultez la [page web des Local Zones](/links/public-cloud
 
 ///
 
-### Étape 4 : créer l’instance
+### Étape 4 : créer l'instance
 
 > [!tabs]
 > **Espace client**
 >>
 >> > [!primary]
 >> >
->> > Une clé SSH publique est obligatoire lors de la création d’une instance (à l’exception des instances Windows). Reportez-vous à l’[étape 1](#etape-1-creer-un-jeu-de-cles-ssh) et l’[étape 2](#etape-2-importer-les-cles-ssh) si vous n’avez pas de clés prêtes à l’emploi.
+>> > Une clé SSH publique est obligatoire lors de la création d'une instance (à l'exception des instances Windows). Reportez-vous à l'[étape 1](#etape-1-creer-un-jeu-de-cles-ssh) et l'[étape 2](#etape-2-importer-les-cles-ssh) si vous n'avez pas de clés prêtes à l'emploi.
 >>
->> Connectez-vous à l’[espace client OVHcloud](/links/manager), rendez-vous dans la section `Public Cloud`{.action} et sélectionnez le projet Public Cloud concerné. Sur la page **Accueil**, cliquez sur `Créer une instance`{.action}.
+>> Connectez-vous à l'[espace client OVHcloud](/links/manager), rendez-vous dans la section `Public Cloud`{.action} et sélectionnez le projet Public Cloud concerné. Sur la page **Accueil**, cliquez sur `Créer une instance`{.action}.
 >>
 >> **4.1 Nom**
 >>
@@ -210,11 +221,11 @@ Pour en savoir plus, consultez la [page web des Local Zones](/links/public-cloud
 >>
 >> **4.2 Localisation**
 >>
->> Sélectionnez une [localisation](/links/public-cloud/regions-pci) proche de vos utilisateurs. Si vous sélectionnez une **Local Zone**, des limitations réseau s’appliquent (voir [Étape 3](#networking-modes)). Consultez le guide [Comparaison des modes de déploiement](/pages/public_cloud/public_cloud_cross_functional/deployment_modes_comparison_resilience_details) pour les différences entre 3-AZ, 1-AZ et Local Zones.
+>> Sélectionnez une [localisation](/links/public-cloud/regions-pci) proche de vos utilisateurs. Si vous sélectionnez une **Local Zone**, des limitations réseau s'appliquent (voir [Étape 3](#networking-modes)). Consultez le guide [Comparaison des modes de déploiement](/pages/public_cloud/public_cloud_cross_functional/deployment_modes_comparison_resilience_details) pour les différences entre 3-AZ, 1-AZ et Local Zones.
 >>
 >> **4.3 Modèle**
 >>
->> Choisissez le modèle (flavor) adapté à votre cas d’usage. Le type `Discovery` propose des ressources partagées à tarif réduit. Les `Metal Instances` offrent des ressources physiques dédiées.
+>> Choisissez le modèle (flavor) adapté à votre cas d'usage. Le type `Discovery` propose des ressources partagées à tarif réduit. Les `Metal Instances` offrent des ressources physiques dédiées.
 >>
 >> > [!primary]
 >> >
@@ -222,7 +233,7 @@ Pour en savoir plus, consultez la [page web des Local Zones](/links/public-cloud
 >>
 >> **4.4 Image**
 >>
->> Sélectionnez le système d’exploitation via les menus `Type de distribution` et `Version de l’image`. Les options disponibles dépendent du modèle et de la région choisis.
+>> Sélectionnez le système d'exploitation via les menus `Type de distribution` et `Version de l'image`. Les options disponibles dépendent du modèle et de la région choisis.
 >>
 >> **4.5 Clé SSH** *(non applicable aux instances Windows)*
 >>
@@ -238,7 +249,7 @@ Pour en savoir plus, consultez la [page web des Local Zones](/links/public-cloud
 >>
 >> **4.8 Facturation**
 >>
->> Choisissez entre **mensuelle** (coût réduit, non réversible) ou **à l’heure** (flexible, [convertible en mensuel](/pages/account_and_service_management/managing_billing_payments_and_services/changing_hourly_monthly_billing) ultérieurement). La facturation à l’heure court jusqu’à la **suppression de l’instance**. Consultez la [documentation de facturation](/pages/public_cloud/public_cloud_cross_functional/analyze_billing).
+>> Choisissez entre **mensuelle** (coût réduit, non réversible) ou **à l'heure** (flexible, [convertible en mensuel](/pages/account_and_service_management/managing_billing_payments_and_services/changing_hourly_monthly_billing) ultérieurement). La facturation à l'heure court jusqu'à la **suppression de l'instance**. Consultez la [documentation de facturation](/pages/public_cloud/public_cloud_cross_functional/analyze_billing).
 >>
 >> **4.9 Paramètres avancés** *(optionnel)*
 >>
@@ -247,7 +258,7 @@ Pour en savoir plus, consultez la [page web des Local Zones](/links/public-cloud
 >>
 >> **4.10 Finalisation**
 >>
->> Vérifiez le récapitulatif sur la droite de l’écran et configurez le nombre d’instances. Cliquez sur `Lancer mon instance`{.action}. La livraison peut prendre quelques minutes.
+>> Vérifiez le récapitulatif sur la droite de l'écran et configurez le nombre d'instances. Cliquez sur `Lancer mon instance`{.action}. La livraison peut prendre quelques minutes.
 >>
 > **API OVHcloud**
 >>
@@ -260,21 +271,60 @@ Pour en savoir plus, consultez la [page web des Local Zones](/links/public-cloud
 >> GET /cloud/project/{serviceName}/sshkey     → sshKeyId
 >> ```
 >>
->> Créez l’instance :
+>> Créez l'instance :
 >>
 >> > [!api]
 >> > @api {v1} /cloud POST /cloud/project/{serviceName}/instance
 >>
 >> Paramètres principaux :
 >>
->> - `name` : nom de l’instance
+>> - `name` : nom de l'instance
 >> - `flavorId` : ID du modèle
->> - `imageId` : ID de l’image OS
+>> - `imageId` : ID de l'image OS
 >> - `region` : région de déploiement
->> - `sshKeyId` : ID de la clé SSH (depuis l’[étape 2](#etape-2-importer-les-cles-ssh))
+>> - `sshKeyId` : ID de la clé SSH (depuis l'[étape 2](#etape-2-importer-les-cles-ssh))
 >> - `monthlyBilling` : `true` pour une facturation mensuelle
 >>
->> Consultez la [documentation API OVHcloud](/pages/manage_and_operate/api/first-steps) pour configurer votre accès à l’API.
+>> Consultez la [documentation API OVHcloud](/pages/manage_and_operate/api/first-steps) pour configurer votre accès à l'API.
+>>
+> **OVHcloud CLI**
+>>
+>> Récupérez les identifiants nécessaires :
+>>
+>> ```bash
+>> ovhcloud cloud reference list-flavors --cloud-project <project_id>
+>> ovhcloud cloud reference list-images --cloud-project <project_id>
+>> ovhcloud cloud ssh-key list --cloud-project <project_id>
+>> ```
+>>
+>> Créez l'instance :
+>>
+>> ```bash
+>> ovhcloud cloud instance create GRA9 \
+>>   --cloud-project <project_id> \
+>>   --name my-instance \
+>>   --boot-from.image <image_id> \
+>>   --flavor <flavor_id> \
+>>   --ssh-key.name my-key \
+>>   --network.public \
+>>   --wait
+>> ```
+>>
+>> Remplacez `GRA9` par votre région. Pour une création interactive avec sélection guidée :
+>>
+>> ```bash
+>> ovhcloud cloud instance create GRA9 \
+>>   --cloud-project <project_id> \
+>>   --editor \
+>>   --image-selector \
+>>   --flavor-selector
+>> ```
+>>
+>> Vérifiez l'état après création :
+>>
+>> ```bash
+>> ovhcloud cloud instance list --cloud-project <project_id>
+>> ```
 >>
 > **CLI OpenStack**
 >>
@@ -286,7 +336,7 @@ Pour en savoir plus, consultez la [page web des Local Zones](/links/public-cloud
 >> openstack keypair list
 >> ```
 >>
->> Créez l’instance :
+>> Créez l'instance :
 >>
 >> ```bash
 >> openstack server create \
@@ -297,14 +347,14 @@ Pour en savoir plus, consultez la [page web des Local Zones](/links/public-cloud
 >>   my-instance
 >> ```
 >>
->> Vérifiez l’état :
+>> Vérifiez l'état :
 >>
 >> ```bash
 >> openstack server list
 >> openstack server show my-instance
 >> ```
 >>
->> Consultez le [guide de préparation de l’environnement OpenStack](/pages/public_cloud/public_cloud_cross_functional/prepare_the_environment_for_using_the_openstack_api) pour la mise en place initiale.
+>> Consultez le [guide de préparation de l'environnement OpenStack](/pages/public_cloud/public_cloud_cross_functional/prepare_the_environment_for_using_the_openstack_api) pour la mise en place initiale.
 >>
 > **Terraform**
 >>
@@ -336,7 +386,7 @@ Pour en savoir plus, consultez la [page web des Local Zones](/links/public-cloud
 >> }
 >> ```
 >>
->> Consultez le [guide Terraform pour le Public Cloud OVHcloud](/pages/public_cloud/public_cloud_cross_functional/how_to_use_terraform) pour la configuration initiale du provider et l’authentification.
+>> Consultez le [guide Terraform pour le Public Cloud OVHcloud](/pages/public_cloud/public_cloud_cross_functional/how_to_use_terraform) pour la configuration initiale du provider et l'authentification.
 >>
 
 ### Étape 5 : Se connecter à l'instance
@@ -357,17 +407,20 @@ Notez que nous proposons des moyens d'accès alternatifs (principalement utilis�
 
 Connectez-vous à l'[espace client OVHcloud](/links/manager), rendez-vous dans la section `Public Cloud`{.action} et sélectionnez le projet Public Cloud concerné.
 
-![espace client](/pages/assets/screens/control_panel/product-selection/public-cloud/select_project.png){.thumbnail}
-
 Sélectionnez `Instances`{.action} dans la barre de navigation de gauche sous **Compute**. Votre instance est prête lorsque l'état est défini sur `Activé` dans le tableau. Si l'instance a été créée récemment et a un statut différent, cliquez sur le bouton « Actualiser » situé à côté du filtre de recherche.
 
-![page instances](images/24-instance-connect01.png){.thumbnail}
+Cliquez sur le nom de l'instance dans ce tableau pour ouvrir le `Tableau de bord`{.action} sur lequel vous pouvez trouver toutes les informations concernant l'instance. Pour en savoir plus sur les fonctions disponibles sur cette page, consultez notre guide sur [la gestion des instances dans l'espace client](/pages/public_cloud/compute/first_steps_with_public_cloud_instance).
 
-Cliquez sur le nom de l'instance dans ce tableau pour ouvrir le `Tableau de bord`{.action} sur lequel vous pouvez trouver toutes les informations concernant l'instance. Pour en savoir plus sur les fonctions disponibles sur cette page, consultez notre guide sur [la gestion des instances dans l’espace client](/pages/public_cloud/compute/first_steps_with_public_cloud_instance).
+Un **utilisateur avec des droits élevés (*sudo*) est automatiquement créé** sur l'instance. Le nom d'utilisateur reflète l'image installée, par exemple « ubuntu », « debian », « fedora », etc. Vous pouvez le vérifier dans le `Tableau de bord`{.action} dans la section **Réseaux**.
 
-Un **utilisateur avec des droits élevés (*sudo*) est automatiquement créé** sur l'instance. Le nom d'utilisateur reflète l'image installée, par exemple « ubuntu », « debian », « fedora », etc. Vous pouvez le vérifier sur le côté droit du `Tableau de bord`{.action} dans la section **Réseaux**.
-
-![page instances](images/24-instance-connect02.png){.thumbnail}
+> [!primary]
+>
+> Via l'OVHcloud CLI, vérifiez l'état et récupérez l'adresse IP de votre instance avec :
+>
+> ```bash
+> ovhcloud cloud instance list --cloud-project <project_id>
+> ```
+>
 
 Si votre [paire de clés SSH est correctement configurée](#etape-1-creer-un-jeu-de-cles-ssh), vous pouvez maintenant vous connecter à l'instance avec l'utilisateur préconfiguré et votre clé SSH. Vous trouverez des instructions plus détaillées dans les paragraphes suivants.
 
@@ -382,10 +435,10 @@ Si votre [paire de clés SSH est correctement configurée](#etape-1-creer-un-jeu
 
 > [!primary]
 >
-> Si vous recevez des messages d’erreur concernant vos **clés SSH**, vérifiez que votre appareil local dispose d’une clé SSH privée correctement configurée en utilisant les informations de [ce guide](/pages/public_cloud/compute/creating-ssh-keys-pci#create-ssh-key).<br>
+> Si vous recevez des messages d'erreur concernant vos **clés SSH**, vérifiez que votre appareil local dispose d'une clé SSH privée correctement configurée en utilisant les informations de [ce guide](/pages/public_cloud/compute/creating-ssh-keys-pci#create-ssh-key).<br>
 > Si vous rencontrez toujours des difficultés, vous pouvez remplacer la paire de clés à l'aide de [ce guide](/pages/public_cloud/compute/replacing_lost_ssh_key).
 >
-> Si vous avez créé une instance sans clé SSH, via l’[API OVHcloud](/pages/manage_and_operate/api/first-steps) ou l’[interface OpenStack Horizon](/pages/public_cloud/compute/create_instance_in_horizon), vous ne pouvez ajouter une clé SSH à votre instance que via le [mode rescue](/pages/public_cloud/compute/put_an_instance_in_rescue_mode) en suivant les instructions décrites dans [ce guide](/pages/public_cloud/compute/replacing_lost_ssh_key).
+> Si vous avez créé une instance sans clé SSH, via l'[API OVHcloud](/pages/manage_and_operate/api/first-steps) ou l'[interface OpenStack Horizon](/pages/public_cloud/compute/create_instance_in_horizon), vous ne pouvez ajouter une clé SSH à votre instance que via le [mode rescue](/pages/public_cloud/compute/put_an_instance_in_rescue_mode) en suivant les instructions décrites dans [ce guide](/pages/public_cloud/compute/replacing_lost_ssh_key).
 >
 
 Vous pouvez accéder à votre instance immédiatement après sa création via l'interface de ligne de commande de votre poste de travail local (`Terminal`, `Command prompt`, `Powershell`, etc.) via SSH.
@@ -412,35 +465,29 @@ Poursuivez à l'[étape 6 ci-dessous](#etape-6-premiers-pas-sur-une-nouvelle-ins
 
 Après avoir vérifié que l'instance Windows est [installée](#51-verifier-letat-de-linstance-dans-lespace-client), ouvrez l'onglet `Console VNC`{.action} dans votre [espace client OVHcloud](/links/manager).
 
-Il vous faudra ensuite finaliser la configuration initiale de votre système d’exploitation Windows. Suivez les étapes ci-dessous en parcourant les onglets :
+Il vous faudra ensuite finaliser la configuration initiale de votre système d'exploitation Windows. Suivez les étapes ci-dessous en parcourant les onglets :
 
 > [!tabs]
 > 1. **Paramètres régionaux**
 >>
->> Configurez votre **pays/région**, la **langue Windows** préférée et votre **disposition du clavier**. Cliquez ensuite sur le bouton `Suivant`{.action} en bas à droite.<br><br>
->>![VNC](/pages/assets/screens/other/windows/windows_locale.png){.thumbnail}<br>
+>> Configurez votre **pays/région**, la **langue Windows** préférée et votre **disposition du clavier**. Cliquez ensuite sur le bouton `Suivant`{.action} en bas à droite.
 >>
 > 2. **Mot de passe administrateur**
 >>
->> Définissez un mot de passe pour votre compte Windows `Administrator` et confirmez-le, puis cliquez sur `Terminer`{.action}.<br><br>
->>![VNC](/pages/assets/screens/other/windows/windows_admin.png){.thumbnail}<br>
+>> Définissez un mot de passe pour votre compte Windows `Administrator` et confirmez-le, puis cliquez sur `Terminer`{.action}.
 >>
 > 3. **Écran de connexion**
 >>
->> Windows appliquera vos paramètres, puis affichera l'écran de connexion. Cliquez sur le bouton `Send CtrlAltDel`{.action} en haut à droite pour vous connecter.<br><br>
->>![VNC](/pages/assets/screens/other/windows/windows_vnc.png){.thumbnail}<br>
+>> Windows appliquera vos paramètres, puis affichera l'écran de connexion. Cliquez sur le bouton `Send CtrlAltDel`{.action} en haut à droite pour vous connecter.
 >>
 > 4. **Login administrateur**
 >>
->> Entrez le mot de passe `Administrator` que vous avez créé à l'étape précédente et cliquez sur le bouton « Arrow ».<br><br>
->>![VNC](/pages/assets/screens/other/windows/windows_login.png){.thumbnail}
+>> Entrez le mot de passe `Administrator` que vous avez créé à l'étape précédente et cliquez sur le bouton « Arrow ».
 >>
 
 ##### 5.3.2 : Connectez-vous à distance depuis Windows
 
 Sur votre poste Windows local, vous pouvez utiliser l'application cliente `Remote Desktop Connection` pour vous connecter à votre instance.
-
-![rdp connection](/pages/assets/screens/other/windows/windows_rdp.png){.thumbnail}
 
 Renseignez l'adresse IPv4 de votre instance, puis votre identifiant et votre passphrase. Généralement, un message d'avertissement apparaît, vous demandant de confirmer la connexion en raison d'un certificat inconnu. Cliquez sur `Oui`{.action} pour vous connecter.
 
@@ -455,27 +502,22 @@ Les connexions à partir d'un système d'exploitation de bureau autre que Window
 
 Quel que soit le client que vous utilisez, vous n'avez besoin que de l'adresse IP de votre instance et de votre mot de passe pour que le compte `Administrator` puisse se connecter.
 
-**Exemple d’utilisation**
+**Exemple d'utilisation**
 
 Le logiciel libre et open source `Remmina Remote Desktop Client` est disponible pour de nombreuses distributions de bureau GNU/Linux. Si vous ne trouvez pas Remmina dans le gestionnaire de logiciels de votre environnement de bureau, vous pouvez l'obtenir sur le [site officiel](https://remmina.org/).
-
-![linux remote](images/24-rem-connect01.png){.thumbnail}<br>
 
 > [!tabs]
 > 1. **Connexion**
 >>
->> Ouvrez Remmina et assurez-vous que le protocole de connexion est défini sur « RDP ». Entrez l'adresse IPv4 de votre instance Public Cloud et appuyez sur « Entrée ».<br><br>
->>![linux remote](images/24-rem-connect02.png){.thumbnail}<br>
+>> Ouvrez Remmina et assurez-vous que le protocole de connexion est défini sur « RDP ». Entrez l'adresse IPv4 de votre instance Public Cloud et appuyez sur « Entrée ».
 >>
 > 2. **Authentification**
 >>
->> Si un message d'avertissement de certificat apparaît, cliquez sur `Yes`{.action}. Entrez le nom d'utilisateur et votre mot de passe pour Windows et cliquez sur `OK`{.action} pour établir la connexion.<br><br>
->>![linux remote](images/24-rem-connect03.png){.thumbnail}<br>
+>> Si un message d'avertissement de certificat apparaît, cliquez sur `Yes`{.action}. Entrez le nom d'utilisateur et votre mot de passe pour Windows et cliquez sur `OK`{.action} pour établir la connexion.
 >>
 > 3. **Paramètres**
 >>
->> Vous pouvez trouver des éléments utiles dans la barre d'outils de gauche. Par exemple, cliquez sur l'icône `Toggle dynamic resolution update`{.action} pour améliorer la résolution de la fenêtre.<br><br>
->>![linux remote](images/24-rem-connect04.png){.thumbnail}
+>> Vous pouvez trouver des éléments utiles dans la barre d'outils de gauche. Par exemple, cliquez sur l'icône `Toggle dynamic resolution update`{.action} pour améliorer la résolution de la fenêtre.
 >>
 
 #### 5.4 : accès console VNC
@@ -484,11 +526,7 @@ La console VNC vous permet de vous connecter à vos instances même lorsque d'au
 
 Connectez-vous à l'[espace client OVHcloud](/links/manager), rendez-vous dans la section `Public Cloud`{.action} et sélectionnez le projet Public Cloud concerné.
 
-![espace client](/pages/assets/screens/control_panel/product-selection/public-cloud/select_project.png){.thumbnail}
-
 Sélectionnez `Instances`{.action} dans la barre de navigation de gauche sous **Compute**. Cliquez sur le nom de l'instance et ouvrez l'onglet `Console VNC`{.action}.
-
-![console vnc](/pages/assets/screens/control_panel/product-selection/public-cloud/cp-pci-vnc-login.png){.thumbnail}
 
 > [!tabs]
 > **Instance avec un OS GNU/Linux installé**
@@ -506,9 +544,9 @@ Sélectionnez `Instances`{.action} dans la barre de navigation de gauche sous **
 >
 > **Instances Windows**
 >
-> Aucune étape supplémentaire n’est requise pour les instances sur lesquelles un système d’exploitation Windows est installé.
+> Aucune étape supplémentaire n'est requise pour les instances sur lesquelles un système d'exploitation Windows est installé.
 >
-> Retrouvez plus d’informations dans la section [Aller plus loin](#aller-plus-loin) ci-dessous.
+> Retrouvez plus d'informations dans la section [Aller plus loin](#aller-plus-loin) ci-dessous.
 >
 
 #### 6.1 : Gestion des utilisateurs
@@ -595,12 +633,12 @@ Consultez notre [guide dédié](/pages/public_cloud/compute/configuring_addition
 
 [Comment réinitialiser un mot de passe administrateur Windows](/pages/bare_metal_cloud/virtual_private_servers/resetting_a_windows_password)
 
-[Gestion des instances dans l’espace client](/pages/public_cloud/compute/first_steps_with_public_cloud_instance)
+[Gestion des instances dans l'espace client](/pages/public_cloud/compute/first_steps_with_public_cloud_instance)
 
 [Comment démarrer avec OpenStack](/pages/public_cloud/public_cloud_cross_functional/prepare_the_environment_for_using_the_openstack_api)
 
 [Comment démarrer avec Horizon](/pages/public_cloud/public_cloud_cross_functional/introducing_horizon)
 
-Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](/links/professional-services) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
+Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](/links/professional-services) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l'équipe Professional Services.
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).
