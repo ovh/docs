@@ -12,7 +12,7 @@ Office 365 Revendeurs (CSP2) est un service vous permettant de bénéficier de p
 
 ## Prérequis
 
-- Disposer d’un [compte client OVHcloud](/links/create-ovhcloud-account).
+- Disposer d’un [compte client OVHcloud](/links/manager).
 - Disposer d’un [MPN ID](https://learn.microsoft.com/partner-center/mpn-create-a-partner-center-account) (Microsoft Partner Network IDentifiant).
 - Être inscrit au programme CSP (Cloud Solution Provider) de Microsoft en tant que revendeur indirect dans la région où vous exercez (par exemple : « UE » pour l’Europe)
 
