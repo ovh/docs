@@ -1,7 +1,7 @@
 ---
 title: "Capacités techniques et limites de Public VCF as-a-Service"
 excerpt: "Découvrez les capacités techniques et les limites de Public VCF aaS (alias Public VCF as-a-Service)"
-updated: 2025-09-25
+updated: 2026-05-06
 ---
 
 ## Objectif
@@ -33,7 +33,7 @@ Avant de commencer, consultez les guides suivants pour mieux comprendre Public V
 | VMs (par organisation) | 2000 | 4000 | Nombre maximal de VMs par organisation. |
 | vApps (par organisation) | 10 000 | 10 000 | Nombre maximal de vApps par organisation. |
 | Segments (par organisation) | 40 | 40 | Nombre maximal de segments par organisation. |
-| Segments vRack (par organisation) | 7 | 7 | Nombre de segments vRack maximum (1 public + 1 trunk + 5 privés) |
+| Segments vRack (par organisation) | 7 | 7 | Nombre maximal de segments vRack (1 public + 1 trunk + 5 privés). |
 
 > **Remarque** : Lorsqu’un snapshot inclut la mémoire de la machine virtuelle, l’utilisation du stockage peut rapidement augmenter.
 > Par exemple, si vous avez une VM avec 1 Go de RAM et un disque de 10 Go, et que vous créez un snapshot incluant la mémoire, l’espace de stockage utilisé sera le suivant :
@@ -43,7 +43,7 @@ Avant de commencer, consultez les guides suivants pour mieux comprendre Public V
 
 | Ressource | Standard | Advanced | Commentaires |
 |-----------|---------|----------|--------------|
-| Fréquence vCPU Min | 1 GHz | 1 GHz | In Roadmap. |
+| Fréquence vCPU Min | 1 GHz | 1 GHz | Prévu sur la feuille de route. |
 | Fréquence vCPU Max | 3 GHz | 3 GHz | Par défaut. |
 | Stockage par VM (VMDK) | 1,5 To | 1,5 To | Limite de stockage sur VMDK. |
 
