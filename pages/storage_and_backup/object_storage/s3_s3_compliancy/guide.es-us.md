@@ -1,7 +1,7 @@
 ---
 title: Object Storage - Compliance
 excerpt: "Discover the list of features supported by our S3-compatible Object Storage."
-updated: 2025-06-27
+updated: 2026-05-06
 ---
 
 <style>
@@ -358,7 +358,7 @@ This guide lists the features supported by OVHcloud Object Storage.
     <tr>
         <td rowspan="3">Metadata mgt</td>
         <td>get attributes</td>
-        <td>no</td>
+        <td>yes</td>
         <td>no</td>
     </tr>
     <tr>
