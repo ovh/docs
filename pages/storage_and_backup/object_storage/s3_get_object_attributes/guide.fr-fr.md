@@ -1,12 +1,26 @@
 ---
-title: "Object Storage - GetObjectAttributes"
-excerpt: "Apprenez à récupérer les attributs de métadonnées de vos objets (ETag, taille, classe de stockage, checksum, parties multipart) sans télécharger le corps de l'objet"
-updated: 2026-05-05
+title: "Object Storage - Récupérer les métadonnées d'un objet avec GetObjectAttributes"
+excerpt: "Découvrez comment récupérer les attributs de métadonnées de vos objets (ETag, taille, classe de stockage, checksum, parties multipart) sans télécharger le corps de l'objet"
+updated: 2026-05-06
 ---
+
+<style>
+details>summary {
+    color:rgb(33, 153, 232) !important;
+    cursor: pointer;
+}
+details>summary::before {
+    content:'\25B6';
+    padding-right:1ch;
+}
+details[open]>summary::before {
+    content:'\25BC';
+}
+</style>
 
 ## Objectif
 
-**Ce guide explique comment utiliser l'opération API S3 `GetObjectAttributes` pour récupérer les attributs de métadonnées des objets de vos buckets OVHcloud Object Storage sans télécharger le corps de l'objet.**
+**Ce guide explique comment utiliser l'opération API S3<sup>1</sup> `GetObjectAttributes` pour récupérer les attributs de métadonnées des objets de vos buckets OVHcloud Object Storage sans télécharger le corps de l'objet.**
 
 ## Prérequis
 
@@ -16,40 +30,36 @@ updated: 2026-05-05
 
 ## En pratique
 
-### Pourquoi utiliser GetObjectAttributes ?
+### Pourquoi utiliser GetObjectAttributes ?
 
-L'inspection des métadonnées d'un objet nécessite traditionnellement au moins deux appels API distincts : `HeadObject` pour récupérer l'ETag, la taille et la classe de stockage, et `ListParts` pour énumérer les parties des objets multipart. Chaque appel supplémentaire ajoute de la latence, ce qui devient significatif à grande échelle dans les pipelines de données, les workflows de vérification d'intégrité ou les systèmes d'audit de stockage.
+L'inspection des métadonnées d'un objet nécessite traditionnellement au moins 2 appels API distincts : `HeadObject` pour récupérer l'ETag, la taille et la classe de stockage, et `ListParts` pour énumérer les parties des objets multipart. Chaque appel supplémentaire ajoute de la latence, ce qui devient significatif à grande échelle dans les pipelines de données, les workflows de vérification d'intégrité ou les systèmes d'audit de stockage.
 
-`GetObjectAttributes` consolide la récupération de tous les attributs en un **seul appel API sélectif**. Vous demandez exactement les attributs dont vous avez besoin, le service retourne uniquement ces champs - aucun corps d'objet n'est transféré.
+`GetObjectAttributes` consolide la récupération de tous les attributs en un **seul appel API sélectif**. Vous demandez exactement les attributs dont vous avez besoin ; le service retourne uniquement ces champs — aucun corps d'objet n'est transféré.
 
-**Bénéfices clés :**
+**Bénéfices clés :**
 
-- **Aucun transfert de corps :** récupérez uniquement les métadonnées, quelle que soit la taille de l'objet.
-- **Réponse sélective :** recevez uniquement les attributs que vous demandez.
-- **Tout client compatible S3 :** fonctionne avec AWS CLI, n'importe quel SDK S3 et les appels HTTP directs.
-
----
+- **Aucun transfert de corps :** récupérez uniquement les métadonnées, quelle que soit la taille de l'objet.
+- **Réponse sélective :** recevez uniquement les attributs que vous demandez.
+- **Tout client compatible S3 :** fonctionne avec AWS CLI, n'importe quel SDK S3 et les appels HTTP directs.
 
 ### Attributs supportés
 
-Vous sélectionnez les attributs à récupérer en les listant dans le header de requête `x-amz-object-attributes` (séparés par des espaces pour AWS CLI, par des virgules pour HTTP brut). Les attributs non listés sont absents de la réponse.
+Vous sélectionnez les attributs à récupérer en les listant dans l'en-tête de requête `x-amz-object-attributes` (séparés par des espaces pour AWS CLI, par des virgules pour HTTP brut). Les attributs non listés sont absents de la réponse.
 
 | Attribut | Description |
 |---|---|
 | `ETag` | Identifiant opaque représentant une version spécifique du contenu de l'objet |
 | `Checksum` | Valeur de checksum calculée avec l'algorithme stocké avec l'objet lors du téléversement |
-| `ObjectParts` | Structure multipart de l'objet : liste des parties avec leur numéro, taille et checksum optionnel |
+| `ObjectParts` | Structure multipart de l'objet : liste des parties avec leur numéro, taille et checksum optionnel |
 | `StorageClass` | Classe de stockage de l'objet (`STANDARD`, `STANDARD_IA`, `GLACIER_IR`, `DEEP_ARCHIVE`, `EXPRESS_ONEZONE`) |
 | `ObjectSize` | Taille totale de l'objet en octets |
 
-Le header de réponse `Last-Modified` est toujours retourné, quels que soient les attributs demandés.
+L'en-tête de réponse `Last-Modified` est toujours retourné, quels que soient les attributs demandés.
 
 > [!primary]
 >
-> Le header `x-amz-object-attributes` est **obligatoire**. Une requête sans ce header retourne `400 Bad Request`. Les noms d'attributs sont sensibles à la casse.
+> L'en-tête `x-amz-object-attributes` est **obligatoire**. Une requête sans cet en-tête retourne `400 Bad Request`. Les noms d'attributs sont sensibles à la casse.
 >
-
----
 
 ### Récupérer les attributs d'un objet
 
@@ -63,7 +73,7 @@ Le header de réponse `Last-Modified` est toujours retourné, quels que soient l
 >>   --object-attributes ETag ObjectSize
 >> ```
 >>
->> **Réponse en cas de succès :**
+>> **Réponse en cas de succès :**
 >>
 >> ```json
 >> {
@@ -73,7 +83,7 @@ Le header de réponse `Last-Modified` est toujours retourné, quels que soient l
 >> }
 >> ```
 >>
->> Pour demander tous les attributs à la fois :
+>> Pour demander tous les attributs à la fois :
 >>
 >> ```sh
 >> aws s3api get-object-attributes \
@@ -91,16 +101,14 @@ Le header de réponse `Last-Modified` est toujours retourné, quels que soient l
 >>   "https://s3.<région>.io.cloud.ovh.net/<nom_du_bucket>/<clé_de_l_objet>?attributes"
 >> ```
 >>
->> **Succès :** HTTP `200 OK` avec un corps XML contenant les attributs demandés.
+>> **Succès :** HTTP `200 OK` avec un corps XML contenant les attributs demandés.
 >>
-
----
 
 ### Attribut Checksum
 
-Lorsque `Checksum` est demandé, la réponse inclut l'algorithme et la valeur stockés avec l'objet lors du téléversement. Si l'objet a été téléversé sans checksum, l'élément `Checksum` est absent de la réponse - ce n'est pas une erreur.
+Lorsque `Checksum` est demandé, la réponse inclut l'algorithme et la valeur stockés avec l'objet lors du téléversement. Si l'objet a été téléversé sans checksum, l'élément `Checksum` est absent de la réponse — ce n'est pas une erreur.
 
-**Algorithmes de checksum supportés sur OVHcloud Object Storage :**
+**Algorithmes de checksum supportés sur OVHcloud Object Storage :**
 
 | Algorithme | Élément XML dans la réponse |
 |---|---|
@@ -119,7 +127,7 @@ Lorsque `Checksum` est demandé, la réponse inclut l'algorithme et la valeur st
 >>   --object-attributes Checksum
 >> ```
 >>
->> **Réponse (l'objet a un checksum CRC32) :**
+>> **Réponse (l'objet a un checksum CRC32) :**
 >>
 >> ```json
 >> {
@@ -130,7 +138,7 @@ Lorsque `Checksum` est demandé, la réponse inclut l'algorithme et la valeur st
 >> }
 >> ```
 >>
->> **Réponse (l'objet n'a pas de checksum) :**
+>> **Réponse (l'objet n'a pas de checksum) :**
 >>
 >> ```json
 >> {
@@ -148,13 +156,11 @@ Lorsque `Checksum` est demandé, la réponse inclut l'algorithme et la valeur st
 >> ```
 >>
 
----
-
 ### Attribut ObjectParts (objets multipart)
 
 Lorsque `ObjectParts` est demandé sur un objet multipart, la réponse liste toutes les parties avec leur numéro, taille et checksum optionnel. Pour les objets en une seule partie (non-multipart), `ObjectParts` est retourné comme un élément vide.
 
-**Pagination :** les résultats sont paginés à 1000 parties par réponse maximum.
+**Pagination :** les résultats sont paginés à 1000 parties par réponse maximum.
 
 > [!tabs]
 > Via AWS CLI
@@ -166,7 +172,7 @@ Lorsque `ObjectParts` est demandé sur un objet multipart, la réponse liste tou
 >>   --object-attributes ObjectParts
 >> ```
 >>
->> **Réponse :**
+>> **Réponse :**
 >>
 >> ```json
 >> {
@@ -240,8 +246,6 @@ Lorsqu'un objet possède plus de 1000 parties, `IsTruncated` vaut `true` et `Nex
 
 ///
 
----
-
 ### Objets versionnés
 
 Par défaut, `GetObjectAttributes` opère sur la **version courante** de l'objet. Pour récupérer les attributs d'une version spécifique, ajoutez `--version-id` à la requête.
@@ -256,7 +260,7 @@ Par défaut, `GetObjectAttributes` opère sur la **version courante** de l'objet
 >>   --object-attributes ETag ObjectSize StorageClass
 >> ```
 >>
->> Le header de réponse `x-amz-version-id` retourne l'identifiant de version de l'objet récupéré.
+>> L'en-tête de réponse `x-amz-version-id` retourne l'identifiant de version de l'objet récupéré.
 >>
 > Via curl (API REST S3)
 >> ```sh
@@ -270,14 +274,12 @@ Par défaut, `GetObjectAttributes` opère sur la **version courante** de l'objet
 
 > [!primary]
 >
-> **Permissions IAM avec versionId :** l'utilisation de `--version-id` requiert les permissions `s3:GetObjectVersion` et `s3:GetObjectVersionAttributes`, à la place des permissions par défaut `s3:GetObject` + `s3:GetObjectAttributes`.
+> **Permissions IAM avec versionId :** l'utilisation de `--version-id` requiert les permissions `s3:GetObjectVersion` et `s3:GetObjectVersionAttributes`, à la place des permissions par défaut `s3:GetObject` + `s3:GetObjectAttributes`.
 >
-
----
 
 ### Objets chiffrés (SSE-C)
 
-Pour les objets chiffrés avec SSE-C (clés fournies par le client), vous devez fournir les trois headers de chiffrement à chaque requête `GetObjectAttributes`. Le service ne stocke pas la clé.
+Pour les objets chiffrés avec SSE-C (clés fournies par le client), vous devez fournir les trois en-têtes de chiffrement à chaque requête `GetObjectAttributes`. Le service ne stocke pas la clé.
 
 > [!tabs]
 > Via AWS CLI
@@ -306,12 +308,10 @@ Pour les objets chiffrés avec SSE-C (clés fournies par le client), vous devez 
 
 > [!warning]
 >
-> Les trois headers SSE-C sont obligatoires pour les objets SSE-C. L'omission de l'un d'eux retourne `400 Bad Request`. Fournir une clé incorrecte retourne `403 Forbidden`.
+> Les trois en-têtes SSE-C sont obligatoires pour les objets SSE-C. L'omission de l'un d'eux retourne `400 Bad Request`. Fournir une clé incorrecte retourne `403 Forbidden`.
 >
-> Pour les objets non chiffrés et SSE-S3, n'incluez **pas** les headers SSE-C - les inclure retourne `400 Bad Request`.
+> Pour les objets non chiffrés et SSE-S3, n'incluez **pas** les en-têtes SSE-C — les inclure retourne `400 Bad Request`.
 >
-
----
 
 ### Permissions IAM
 
@@ -322,14 +322,12 @@ Pour les objets chiffrés avec SSE-C (clés fournies par le client), vous devez 
 
 Aucune permission supplémentaire n'est requise au-delà des permissions de lecture standard.
 
----
-
 ### Codes d'erreur
 
 | Code HTTP | Code d'erreur | Condition |
 |---|---|---|
 | `200 OK` | - | Requête réussie |
-| `400 Bad Request` | `InvalidArgument` | `x-amz-object-attributes` manquant, nom d'attribut invalide, ou combinaison de headers SSE-C invalide |
+| `400 Bad Request` | `InvalidArgument` | `x-amz-object-attributes` manquant, nom d'attribut invalide, ou combinaison d'en-têtes SSE-C invalide |
 | `403 Forbidden` | `AccessDenied` | Permission IAM manquante, ou clé SSE-C incorrecte |
 | `404 Not Found` | `NoSuchKey` | L'objet n'existe pas et le demandeur a `s3:ListBucket` |
 | `403 Forbidden` | `AccessDenied` | L'objet n'existe pas et le demandeur n'a PAS `s3:ListBucket` |
@@ -337,9 +335,11 @@ Aucune permission supplémentaire n'est requise au-delà des permissions de lect
 
 > [!primary]
 >
-> **Marqueurs de suppression :** dans un bucket versionné, si la version courante d'un objet (ou la version spécifiée par `--version-id`) est un marqueur de suppression, le service retourne `405 Method Not Allowed` avec le header de réponse `x-amz-delete-marker: true`.
+> **Marqueurs de suppression :** dans un bucket versionné, si la version courante d'un objet (ou la version spécifiée par `--version-id`) est un marqueur de suppression, le service retourne `405 Method Not Allowed` avec l'en-tête de réponse `x-amz-delete-marker: true`.
 >
 
 ## Aller plus loin
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).
+
+<sup>1</sup> : S3 est une marque déposée appartenant à Amazon Technologies, Inc. Les services de OVHcloud ne sont pas sponsorisés, approuvés, ou affiliés de quelque manière que ce soit.

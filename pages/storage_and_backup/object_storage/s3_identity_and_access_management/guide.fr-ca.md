@@ -1,7 +1,7 @@
 ---
 title: Object Storage - Gestion des identités et des accès
 excerpt: Ce guide a pour objectif de vous montrer la gestion de vos identités et accès à vos ressources Object Storage
-updated: 2026-04-14
+updated: 2026-05-06
 ---
 
 ## Objectif
@@ -289,6 +289,8 @@ La politique suivante visant à refuser l'accès en lecture à des objets à des
 | s3:GetLifecycleConfiguration | Bucket |
 | s3:GetObject | Object |
 | s3:GetObjectAcl | Object |
+| s3:GetObjectAttributes | Object |
+| s3:GetObjectVersionAttributes | Object |
 | s3:GetObjectLegalHold | Object |
 | s3:GetObjectRetention | Object |
 | s3:GetObjectTagging | Object |

@@ -1,12 +1,26 @@
 ---
-title: "Object Storage - GetObjectAttributes"
-excerpt: "Learn how to retrieve metadata attributes from your objects (ETag, size, storage class, checksum, multipart parts) without downloading the object body"
-updated: 2026-05-05
+title: "Object Storage - How to retrieve object metadata with GetObjectAttributes"
+excerpt: "Find out how to retrieve metadata attributes from your objects (ETag, size, storage class, checksum, multipart parts) without downloading the object body"
+updated: 2026-05-06
 ---
+
+<style>
+details>summary {
+    color:rgb(33, 153, 232) !important;
+    cursor: pointer;
+}
+details>summary::before {
+    content:'\25B6';
+    padding-right:1ch;
+}
+details[open]>summary::before {
+    content:'\25BC';
+}
+</style>
 
 ## Objective
 
-**This guide explains how to use the `GetObjectAttributes` S3 API operation to retrieve metadata attributes from objects in your OVHcloud Object Storage buckets without downloading the object body.**
+**This guide explains how to use the `GetObjectAttributes` S3<sup>1</sup> API operation to retrieve metadata attributes from objects in your OVHcloud Object Storage buckets without downloading the object body.**
 
 ## Requirements
 
@@ -18,17 +32,15 @@ updated: 2026-05-05
 
 ### Why use GetObjectAttributes?
 
-Inspecting an object's metadata traditionally requires at least two separate API calls: `HeadObject` to retrieve the ETag, size, and storage class, and `ListParts` to enumerate the parts of multipart objects. Each additional call adds latency, which becomes significant at scale in data pipelines, integrity verification workflows, or storage auditing systems.
+Inspecting an object's metadata traditionally requires at least 2 separate API calls: `HeadObject` to retrieve the ETag, size, and storage class, and `ListParts` to enumerate the parts of multipart objects. Each additional call adds latency, which becomes significant at scale in data pipelines, integrity verification workflows, or storage auditing systems.
 
-`GetObjectAttributes` consolidates all attribute retrieval into a **single selective API call**. You request exactly the attributes you need, the service returns only those fields - no object body is transferred.
+`GetObjectAttributes` consolidates all attribute retrieval into a **single selective API call**. You request exactly the attributes you need; the service returns only those fields — no object body is transferred.
 
 **Key benefits:**
 
 - **No body transfer:** retrieve metadata only, regardless of object size.
 - **Selective response:** receive only the attributes you request.
 - **Any S3-compatible client:** works with AWS CLI, any S3 SDK, and direct HTTP calls.
-
----
 
 ### Supported attributes
 
@@ -48,8 +60,6 @@ The `Last-Modified` response header is always returned regardless of which attri
 >
 > The `x-amz-object-attributes` header is **required**. A request without it returns `400 Bad Request`. Attribute names are case-sensitive.
 >
-
----
 
 ### Retrieve object attributes
 
@@ -94,11 +104,9 @@ The `Last-Modified` response header is always returned regardless of which attri
 >> **Success:** HTTP `200 OK` with an XML body containing the requested attributes.
 >>
 
----
-
 ### Checksum attribute
 
-When `Checksum` is requested, the response includes the algorithm and value stored with the object at upload time. If the object was uploaded without a checksum, the `Checksum` element is absent from the response - this is not an error.
+When `Checksum` is requested, the response includes the algorithm and value stored with the object at upload time. If the object was uploaded without a checksum, the `Checksum` element is absent from the response — this is not an error.
 
 **Supported checksum algorithms on OVHcloud Object Storage:**
 
@@ -147,8 +155,6 @@ When `Checksum` is requested, the response includes the algorithm and value stor
 >>   "https://s3.<region>.io.cloud.ovh.net/<bucket_name>/<object_key>?attributes"
 >> ```
 >>
-
----
 
 ### ObjectParts attribute (multipart objects)
 
@@ -240,8 +246,6 @@ When an object has more than 1000 parts, `IsTruncated` is `true` and `NextPartNu
 
 ///
 
----
-
 ### Versioned objects
 
 By default, `GetObjectAttributes` operates on the **current version** of the object. To retrieve attributes for a specific version, add `--version-id` to the request.
@@ -272,8 +276,6 @@ By default, `GetObjectAttributes` operates on the **current version** of the obj
 >
 > **IAM permissions with versionId:** using `--version-id` requires the `s3:GetObjectVersion` and `s3:GetObjectVersionAttributes` permissions, instead of the default `s3:GetObject` + `s3:GetObjectAttributes`.
 >
-
----
 
 ### Encrypted objects (SSE-C)
 
@@ -308,10 +310,8 @@ For objects encrypted with SSE-C (customer-provided keys), you must supply the t
 >
 > All three SSE-C headers are mandatory for SSE-C objects. Omitting any one of them returns `400 Bad Request`. Providing the wrong key returns `403 Forbidden`.
 >
-> For unencrypted and SSE-S3 objects, do **not** include SSE-C headers - including them returns `400 Bad Request`.
+> For unencrypted and SSE-S3 objects, do **not** include SSE-C headers — including them returns `400 Bad Request`.
 >
-
----
 
 ### IAM permissions
 
@@ -321,8 +321,6 @@ For objects encrypted with SSE-C (customer-provided keys), you must supply the t
 | With `versionId` | `s3:GetObjectVersion` + `s3:GetObjectVersionAttributes` |
 
 No additional permissions are required beyond the standard read permissions.
-
----
 
 ### Error codes
 
@@ -343,3 +341,5 @@ No additional permissions are required beyond the standard read permissions.
 ## Go further
 
 Join our [community of users](/links/community).
+
+<sup>1</sup>: S3 is a trademark of Amazon Technologies, Inc. OVHcloud's service is not sponsored by, endorsed by, or otherwise affiliated with Amazon Technologies, Inc.
