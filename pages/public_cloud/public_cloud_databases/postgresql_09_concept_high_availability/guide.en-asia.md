@@ -1,7 +1,7 @@
 ---
 title: High availability and failure scenarios for Public Cloud Databases for PostgreSQL
 excerpt: Learn the concepts of high-availability for PostgreSQL offers
-updated: 2025-07-31
+updated: 2026-05-06
 ---
 
 ## Objective
@@ -68,14 +68,14 @@ The table below summarizes the scenarios detailed in the following paragraphs.
 | Scenario                                   | Essential/Discovery (1 node)                                                                                             | Business/Production (2 nodes) or Enterprise/Advanced (3 nodes)                                                           |
 |--------------------------------------------|----------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------|
 | Primary node failure                       | **RPO**: approx. 5 minutes or 1 WAL file. **RTO**: multiple hours (time to restore your backup)                | **RPO**: Near zero. **RTO**: Approx. 60 seconds then auto failover                                   |
-| Replica node failure                       | N/A                                                                                                            | **RP0**: zero, no data loss. **RTO**: zero, no downtime                                              |
+| Replica node failure                       | N/A                                                                                                            | **RPO**: zero, no data loss. **RTO**: zero, no downtime                                              |
 | All-nodes failure                          | N/A                                                                                                            | **RPO**: approx. 5 minutes or 1 WAL file. **RTO**: multiple hours (time to restore your backup)      |
 | Datacenter outage (backups in same DC)     | **RPO**: depends of manual backups made by the customer. **RTO**: multiple hours/days (time to restore your backup) | **RPO**: depends of manual backups made by the customer. **RTO**: depends of customer actions            |
 | Datacenter outage (backups in another DC)  | **RPO**: approx. 5 minutes or 1 WAL file. **RTO**: multiple hours/days (time to restore your backup)           | **RPO**: approx. 5 minutes or 1 WAL file. **RTO:** multiple hours/days (time to restore your backup) |
 
 ### Scenarios for Essential/Discovery service plans with single-node
 
-Essential/Discovery plans provide a single node : there is no replica.
+Essential/Discovery plans provide a single node: there is no replica.
 
 #### Node failure
 

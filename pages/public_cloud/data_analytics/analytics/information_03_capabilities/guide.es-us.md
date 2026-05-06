@@ -1,7 +1,7 @@
 ---
 title: Capabilities and Limitations of Analytics
 excerpt: Discover the capabilities and limitations of Analytics services
-updated: 2025-02-03
+updated: 2026-05-06
 ---
 
 ## Analytics
@@ -56,7 +56,7 @@ It is dedicated to organizations with complex and high-performance database requ
 Here is an overview of the various plans' capabilities:
 
 | Feature           | Essential/Discovery | Business/Production Single AZ | Enterprise/Advanced Single AZ | Production Multi AZ | Advanced Multi AZ |
-|-------------------|-----------|-------------------------------|-------------------------------|---------------------|-------------------|
+|-------------------|---------------------|-------------------------------|-------------------------------|---------------------|-------------------|
 | SLA               | None      | 99.9%                         | 99.95%                        | 99.95%              | 99.99%            |
 | High availability |           | ✓                             | ✓                             | ✓                   | ✓                 |
 
