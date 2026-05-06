@@ -1,7 +1,7 @@
 ---
 title: Security overview for Analytics
 excerpt: Analytics security overview
-updated: 2025-12-04
+updated: 2026-05-06
 ---
 
 ## Objective
@@ -88,7 +88,8 @@ Once a VM is created by OVHcloud, on which the customer Analytics engines run, a
 
 ### 8.1 High availability
 
-Different plans are made available on the service: Essential, Business/Production and Enterprise/Advanced plans.<br>
+Different plans are made available on the service: Essential/Discovery, Business/Production and Enterprise/Advanced plans.
+
 You can choose a "Business/Production" or "Enterprise/Advanced" offer to benefit from a high availability service as your data will be replicated across multiple nodes following the chosen plan.
 
 ### 8.2 Data encryption
