@@ -1,5 +1,5 @@
 ---
-title: 'Troubleshooting OVHcloud Connect'
+title: 'Troubleshoot OVHcloud Connect'
 excerpt: 'Diagnose and resolve the most common issues encountered with OVHcloud Connect'
 updated: 2026-02-18
 ---

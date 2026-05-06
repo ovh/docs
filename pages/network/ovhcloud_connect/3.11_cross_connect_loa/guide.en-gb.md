@@ -1,5 +1,5 @@
 ---
-title: 'Ordering/Cancelling a Cross Connect with an LOA'
+title: 'Order or cancel a Cross Connect with an LOA'
 excerpt: 'Learn how to order or cancel a physical cross-connect using a Letter of Authorization'
 updated: 2026-02-18
 ---

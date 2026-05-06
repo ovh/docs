@@ -1,5 +1,5 @@
 ---
-title: 'OVHcloud Connect - Configure L3 with static routing'
+title: 'Configure OVHcloud Connect L3 with static routes'
 excerpt: 'Configure OVHcloud Connect L3 using static IP routes for predictable routing between your network and OVHcloud'
 updated: 2026-04-14
 ---

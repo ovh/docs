@@ -1,5 +1,5 @@
 ---
-title: 'OVHcloud Connect - Configurer le L3 avec routage statique'
+title: 'Configurer OVHcloud Connect L3 avec des routes statiques'
 excerpt: 'Configurez OVHcloud Connect L3 avec des routes IP statiques pour un routage prévisible entre votre réseau et OVHcloud'
 updated: 2026-04-14
 ---

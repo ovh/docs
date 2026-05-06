@@ -1,5 +1,5 @@
 ---
-title: 'OVHcloud Connect - Configurer le réseau vRack'
+title: 'Configurer le réseau vRack pour OVHcloud Connect'
 excerpt: 'Créez une configuration AZ pour OVHcloud Connect L3 et comprenez l''adressage IP ainsi que VRRP'
 updated: 2026-04-15
 ---

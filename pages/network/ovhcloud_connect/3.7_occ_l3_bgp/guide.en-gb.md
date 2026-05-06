@@ -1,5 +1,5 @@
 ---
-title: 'OVHcloud Connect - Configure L3 with BGP'
+title: 'Configure OVHcloud Connect L3 with BGP'
 excerpt: 'Configure OVHcloud Connect L3 using BGP for dynamic route exchange between your network and OVHcloud'
 updated: 2026-04-14
 ---

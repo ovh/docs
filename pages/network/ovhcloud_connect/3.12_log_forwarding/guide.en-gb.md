@@ -1,5 +1,5 @@
 ---
-title: 'OVHcloud Connect Logs Forwarding'
+title: 'Set up logs forwarding for OVHcloud Connect'
 excerpt: 'Forward your OVHcloud Connect event logs to Logs Data Platform for storage, querying, and visualisation'
 updated: 2026-04-22
 ---

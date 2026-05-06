@@ -1,5 +1,5 @@
 ---
-title: 'Commander/résilier un cross-connect avec une LOA'
+title: 'Commander ou résilier un cross-connect avec une LOA'
 excerpt: 'Découvrez comment commander ou résilier un cross-connect physique à l''aide d''une lettre d''autorisation'
 updated: 2026-02-18
 ---

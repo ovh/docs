@@ -1,5 +1,5 @@
 ---
-title: Setting up a simple OVHcloud Connect architecture
+title: Set up a simple OVHcloud Connect architecture
 excerpt: Connect a single on-premises site, branch WAN, or public cloud (AWS, Azure, GCP) environment to OVHcloud through one OVHcloud Connect link.
 updated: 2026-02-18
 ---

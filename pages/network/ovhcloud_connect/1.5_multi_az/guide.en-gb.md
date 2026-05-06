@@ -1,5 +1,5 @@
 ---
-title: 'OVHcloud Connect - Multi-AZ'
+title: 'Multi-AZ architectures for OVHcloud Connect'
 excerpt: 'Understand how Multi-AZ architectures enhance resilience for OVHcloud Connect'
 updated: 2026-02-18
 ---

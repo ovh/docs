@@ -1,5 +1,5 @@
 ---
-title: 'Transmission des logs OVHcloud Connect'
+title: 'Mettre en place la transmission des logs pour OVHcloud Connect'
 excerpt: 'Transmettez vos logs d''événements OVHcloud Connect vers Logs Data Platform pour les stocker, les interroger et les visualiser'
 updated: 2026-04-22
 ---

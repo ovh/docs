@@ -1,5 +1,5 @@
 ---
-title: 'OVHcloud Connect - Automation (API, CLI & Terraform)'
+title: 'Automate OVHcloud Connect with API, CLI, and Terraform'
 excerpt: 'Discover how to manage OVHcloud Connect programmatically using the API, CLI, and Terraform'
 updated: 2026-02-18
 ---

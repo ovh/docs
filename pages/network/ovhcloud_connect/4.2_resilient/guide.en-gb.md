@@ -1,5 +1,5 @@
 ---
-title: Setting up a resilient OVHcloud Connect architecture
+title: Set up a resilient OVHcloud Connect architecture
 excerpt: Connect your infrastructure to OVHcloud through two redundant OVHcloud Connect links for high availability and automatic failover.
 updated: 2026-02-18
 ---
