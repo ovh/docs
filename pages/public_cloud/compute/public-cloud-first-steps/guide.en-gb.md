@@ -117,7 +117,7 @@ You can store your public SSH keys in your Public Cloud project. This is not man
 >
 
 > [!tabs]
-> **Control Panel**
+> **via the Control Panel**
 >>
 >> Log in to the [OVHcloud Control Panel](/links/manager), navigate to the `Public Cloud`{.action} section and select your Public Cloud project.
 >>
@@ -127,7 +127,7 @@ You can store your public SSH keys in your Public Cloud project. This is not man
 >>
 >> You can now select this key in [Step 4](#step-4-create-the-instance) to add it to a new instance.
 >>
-> **OVHcloud API**
+> **via the OVHcloud API**
 >>
 >> Use the following call to import your public SSH key:
 >>
@@ -142,7 +142,7 @@ You can store your public SSH keys in your Public Cloud project. This is not man
 >>
 >> Note the `id` returned — it will be needed when creating the instance.
 >>
-> **OVHcloud CLI**
+> **via the OVHcloud CLI**
 >>
 >> Make sure you have installed and configured the [OVHcloud CLI](https://github.com/ovh/ovhcloud-cli), then import your key:
 >>
@@ -159,7 +159,7 @@ You can store your public SSH keys in your Public Cloud project. This is not man
 >> ovhcloud cloud ssh-key list --cloud-project <project_id>
 >> ```
 >>
-> **OpenStack CLI**
+> **via the OpenStack CLI**
 >>
 >> Make sure you have configured your OpenStack environment ([dedicated guide](/pages/public_cloud/public_cloud_cross_functional/prepare_the_environment_for_using_the_openstack_api)), then import your key:
 >>
@@ -173,7 +173,7 @@ You can store your public SSH keys in your Public Cloud project. This is not man
 >> openstack keypair list
 >> ```
 >>
-> **Terraform**
+> **via Terraform**
 >>
 >> Declare the resource in your `.tf` file:
 >>
@@ -219,7 +219,7 @@ Find out more on the [Local Zones web page](/links/public-cloud/local-zones).
 ### Step 4: Create the instance
 
 > [!tabs]
-> **Control Panel**
+> **via the Control Panel**
 >>
 >> > [!primary]
 >> >
@@ -272,7 +272,7 @@ Find out more on the [Local Zones web page](/links/public-cloud/local-zones).
 >>
 >> Review the summary on the right side of the screen and configure the number of instances. Click `Launch my instance`{.action}. Delivery may take a few minutes.
 >>
-> **OVHcloud API**
+> **via the OVHcloud API**
 >>
 >> Retrieve the required identifiers:
 >>
@@ -299,7 +299,7 @@ Find out more on the [Local Zones web page](/links/public-cloud/local-zones).
 >>
 >> Refer to the [OVHcloud API documentation](/pages/manage_and_operate/api/first-steps) to configure your API access.
 >>
-> **OVHcloud CLI**
+> **via the OVHcloud CLI**
 >>
 >> Retrieve the required identifiers:
 >>
@@ -338,7 +338,7 @@ Find out more on the [Local Zones web page](/links/public-cloud/local-zones).
 >> ovhcloud cloud instance list --cloud-project <project_id>
 >> ```
 >>
-> **OpenStack CLI**
+> **via the OpenStack CLI**
 >>
 >> Retrieve the required information:
 >>
@@ -368,7 +368,7 @@ Find out more on the [Local Zones web page](/links/public-cloud/local-zones).
 >>
 >> Refer to the [OpenStack environment setup guide](/pages/public_cloud/public_cloud_cross_functional/prepare_the_environment_for_using_the_openstack_api) for initial configuration.
 >>
-> **Terraform**
+> **via Terraform**
 >>
 >> Complete configuration example:
 >>

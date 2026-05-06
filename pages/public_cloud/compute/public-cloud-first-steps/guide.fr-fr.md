@@ -105,7 +105,7 @@ Vous pouvez stocker vos clés SSH publiques dans votre projet Public Cloud. Ce n
 >
 
 > [!tabs]
-> **Espace client**
+> **Via l'espace client**
 >>
 >> Connectez-vous à l'[espace client OVHcloud](/links/manager), rendez-vous dans la section `Public Cloud`{.action} et sélectionnez le projet Public Cloud concerné.
 >>
@@ -115,7 +115,7 @@ Vous pouvez stocker vos clés SSH publiques dans votre projet Public Cloud. Ce n
 >>
 >> Vous pouvez dorénavant sélectionner cette clé à l'[Étape 4](#etape-4-creer-linstance) pour l'ajouter à une nouvelle instance.
 >>
-> **API OVHcloud**
+> **Via l'API OVHcloud**
 >>
 >> Utilisez l'appel suivant pour importer votre clé SSH publique :
 >>
@@ -130,7 +130,7 @@ Vous pouvez stocker vos clés SSH publiques dans votre projet Public Cloud. Ce n
 >>
 >> Notez l'`id` retourné, il sera nécessaire lors de la création de l'instance.
 >>
-> **OVHcloud CLI**
+> **Via l'OVHcloud CLI**
 >>
 >> Assurez-vous d'avoir installé et configuré l'[OVHcloud CLI](https://github.com/ovh/ovhcloud-cli), puis importez votre clé :
 >>
@@ -147,7 +147,7 @@ Vous pouvez stocker vos clés SSH publiques dans votre projet Public Cloud. Ce n
 >> ovhcloud cloud ssh-key list --cloud-project <project_id>
 >> ```
 >>
-> **CLI OpenStack**
+> **Via le CLI OpenStack**
 >>
 >> Assurez-vous d'avoir configuré votre environnement OpenStack ([guide dédié](/pages/public_cloud/public_cloud_cross_functional/prepare_the_environment_for_using_the_openstack_api)), puis importez votre clé :
 >>
@@ -161,7 +161,7 @@ Vous pouvez stocker vos clés SSH publiques dans votre projet Public Cloud. Ce n
 >> openstack keypair list
 >> ```
 >>
-> **Terraform**
+> **Via Terraform**
 >>
 >> Déclarez la ressource dans votre fichier `.tf` :
 >>
@@ -207,7 +207,7 @@ Pour en savoir plus, consultez la [page web des Local Zones](/links/public-cloud
 ### Étape 4 : créer l'instance
 
 > [!tabs]
-> **Espace client**
+> **Via l'espace client**
 >>
 >> > [!primary]
 >> >
@@ -260,7 +260,7 @@ Pour en savoir plus, consultez la [page web des Local Zones](/links/public-cloud
 >>
 >> Vérifiez le récapitulatif sur la droite de l'écran et configurez le nombre d'instances. Cliquez sur `Lancer mon instance`{.action}. La livraison peut prendre quelques minutes.
 >>
-> **API OVHcloud**
+> **Via l'API OVHcloud**
 >>
 >> Récupérez les identifiants nécessaires :
 >>
@@ -287,7 +287,7 @@ Pour en savoir plus, consultez la [page web des Local Zones](/links/public-cloud
 >>
 >> Consultez la [documentation API OVHcloud](/pages/manage_and_operate/api/first-steps) pour configurer votre accès à l'API.
 >>
-> **OVHcloud CLI**
+> **Via l'OVHcloud CLI**
 >>
 >> Récupérez les identifiants nécessaires :
 >>
@@ -326,7 +326,7 @@ Pour en savoir plus, consultez la [page web des Local Zones](/links/public-cloud
 >> ovhcloud cloud instance list --cloud-project <project_id>
 >> ```
 >>
-> **CLI OpenStack**
+> **Via le CLI OpenStack**
 >>
 >> Récupérez les informations nécessaires :
 >>
@@ -356,7 +356,7 @@ Pour en savoir plus, consultez la [page web des Local Zones](/links/public-cloud
 >>
 >> Consultez le [guide de préparation de l'environnement OpenStack](/pages/public_cloud/public_cloud_cross_functional/prepare_the_environment_for_using_the_openstack_api) pour la mise en place initiale.
 >>
-> **Terraform**
+> **Via Terraform**
 >>
 >> Exemple de configuration complète :
 >>
