@@ -288,6 +288,8 @@ La politique suivante visant à refuser l'accès en lecture à des objets à des
 | s3:GetIntelligentTieringConfiguration | Bucket |
 | s3:GetLifecycleConfiguration | Bucket |
 | s3:GetObject | Object |
+| s3:GetObjectAttributes | Object |
+| s3:GetObjectVersionAttributes | Object |
 | s3:GetObjectAcl | Object |
 | s3:GetObjectLegalHold | Object |
 | s3:GetObjectRetention | Object |
