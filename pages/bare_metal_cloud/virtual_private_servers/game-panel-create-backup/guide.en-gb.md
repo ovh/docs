@@ -1,5 +1,5 @@
 ---
-title: "Creating a backup on the Game Panel"
+title: "Create a backup on the Game Panel"
 excerpt: "Create a backup of your game server instance using the OVHcloud Game Panel to save your server state and restore it if needed."
 updated: 2026-05-05
 ---
@@ -13,13 +13,13 @@ The OVHcloud Game Panel lets you create backups of your game server instances, s
 ## Requirements
 
 - A [VPS](/links/bare-metal/vps) in your OVHcloud account with the Game Panel feature enabled.
-- A game server instance deployed on the Game Panel. Refer to our guide on [Getting started with the Game Panel](/pages/bare_metal_cloud/virtual_private_servers/game-panel-getting-started).
+- A game server instance deployed on the Game Panel. Refer to [Getting started with the Game Panel](/pages/bare_metal_cloud/virtual_private_servers/game-panel-getting-started).
 
 ## Instructions
 
 ### Step 1 — Log in to the Game Panel
 
-Log in to your Game Panel. If you need help, refer to our guide on [Log in to the Game Panel](/pages/bare_metal_cloud/virtual_private_servers/game-panel-log-in).
+Log in to your Game Panel. If you need help, refer to [Log in to the Game Panel](/pages/bare_metal_cloud/virtual_private_servers/game-panel-log-in).
 
 ### Step 2 — Access backup settings
 
@@ -46,6 +46,6 @@ Once the backup is complete, the file is available for download in the same sett
 
 ## Go further
 
-To restore a backup, refer to our guide on [Uploading a backup on the Game Panel](/pages/bare_metal_cloud/virtual_private_servers/game-panel-upload-backup).
+To restore a backup, refer to [Upload a backup on the Game Panel](/pages/bare_metal_cloud/virtual_private_servers/game-panel-upload-backup).
 
 Join our [community of users](/links/community).

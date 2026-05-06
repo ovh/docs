@@ -13,7 +13,7 @@ The Game Panel lets you deploy a 7 Days to Die server with automated installatio
 ## Requirements
 
 - A [VPS](/links/bare-metal/vps) in your OVHcloud account with the Game Panel feature enabled.
-- Access to the Game Panel. Refer to our guide on [Log in to the Game Panel](/pages/bare_metal_cloud/virtual_private_servers/game-panel-log-in).
+- Access to the Game Panel. Refer to [Log in to the Game Panel](/pages/bare_metal_cloud/virtual_private_servers/game-panel-log-in).
 
 ## Instructions
 
@@ -38,12 +38,9 @@ Configure the installation:
 
 ### Step 3 — Launch the installation
 
-Click `Install`{.action}. The deployment will start automatically. Wait a few minutes while:
+Click `Install`{.action}. The deployment starts automatically. Wait a few minutes while the image downloads and the server installs.
 
-- The image is being downloaded.
-- The server is being installed.
-
-Then click the launch button to start the server.
+Then click `Launch`{.action} to start the server.
 
 ### Step 4 — Verify the server is running
 
@@ -85,6 +82,6 @@ In 7 Days to Die:
 ## Go further
 
 - [Getting started with the Game Panel](/pages/bare_metal_cloud/virtual_private_servers/game-panel-getting-started)
-- [Managing users on the Game Panel](/pages/bare_metal_cloud/virtual_private_servers/game-panel-manage-users)
+- [Manage users on the Game Panel](/pages/bare_metal_cloud/virtual_private_servers/game-panel-manage-users)
 
 Join our [community of users](/links/community).

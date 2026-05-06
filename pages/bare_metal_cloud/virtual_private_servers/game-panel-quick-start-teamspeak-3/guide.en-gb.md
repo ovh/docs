@@ -13,7 +13,7 @@ The Game Panel lets you deploy and configure a TeamSpeak 3 voice server in a few
 ## Requirements
 
 - A [VPS](/links/bare-metal/vps) in your OVHcloud account with the Game Panel feature enabled.
-- Access to the Game Panel. Refer to our guide on [Log in to the Game Panel](/pages/bare_metal_cloud/virtual_private_servers/game-panel-log-in).
+- Access to the Game Panel. Refer to [Log in to the Game Panel](/pages/bare_metal_cloud/virtual_private_servers/game-panel-log-in).
 - A TeamSpeak 3 client installed on your machine to test the connection.
 
 ## Instructions
@@ -32,8 +32,8 @@ A configuration page opens. Default values are ready to use for an immediate lau
 
 Among the available settings, you can modify:
 
-- `Server Name`: Give your server an instance name (e.g., `My TS3 server`).
-- `Network Ports`: Pre-configured automatically:
+- `Server Name`{.action}: Give your server an instance name (e.g., `My TS3 server`).
+- `Network Ports`{.action}: Pre-configured automatically:
     - `9987` (UDP) — voice
     - `10011` (TCP) — ServerQuery
     - `30033` (TCP) — file transfer
@@ -76,6 +76,6 @@ In the TeamSpeak 3 client:
 ## Go further
 
 - [Getting started with the Game Panel](/pages/bare_metal_cloud/virtual_private_servers/game-panel-getting-started)
-- [Managing users on the Game Panel](/pages/bare_metal_cloud/virtual_private_servers/game-panel-manage-users)
+- [Manage users on the Game Panel](/pages/bare_metal_cloud/virtual_private_servers/game-panel-manage-users)
 
 Join our [community of users](/links/community).

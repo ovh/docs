@@ -1,5 +1,5 @@
 ---
-title: "Managing users on the Game Panel"
+title: "Manage users on the Game Panel"
 excerpt: "Create and manage user accounts with granular permissions on the OVHcloud Game Panel to control access to your game servers."
 updated: 2026-05-05
 ---
@@ -13,7 +13,7 @@ The OVHcloud Game Panel lets you create and manage user accounts with granular p
 ## Requirements
 
 - A [VPS](/links/bare-metal/vps) in your OVHcloud account with the Game Panel feature enabled.
-- Administrator access to the Game Panel. Refer to our guide on [Log in to the Game Panel](/pages/bare_metal_cloud/virtual_private_servers/game-panel-log-in).
+- Administrator access to the Game Panel. Refer to [Log in to the Game Panel](/pages/bare_metal_cloud/virtual_private_servers/game-panel-log-in).
 
 ## Instructions
 
@@ -23,7 +23,7 @@ Click `User Administration`{.action} in the left menu of the Game Panel.
 
 ![The user administration interface](images/user-administration.png){.thumbnail}
 
-You will see a list of existing users. Use the `Edit`{.action} and `Delete`{.action} buttons to modify or remove users.
+A list of existing users is displayed. Use `Edit`{.action} or `Delete`{.action} to modify or remove a user.
 
 ### Step 2 — Create a new user
 

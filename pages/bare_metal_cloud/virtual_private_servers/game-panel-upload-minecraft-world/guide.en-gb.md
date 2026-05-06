@@ -1,5 +1,5 @@
 ---
-title: "Uploading a custom world to your Minecraft server"
+title: "Upload a custom world to your Minecraft server"
 excerpt: "Upload a custom Minecraft map to your game server via SFTP, configure the world folder name in Game Config, and switch between multiple maps."
 updated: 2026-05-05
 ---
@@ -13,8 +13,8 @@ The OVHcloud Game Panel lets you upload a custom Minecraft world by transferring
 ## Requirements
 
 - A [VPS](/links/bare-metal/vps) in your OVHcloud account with the Game Panel feature enabled.
-- A Minecraft server deployed on the Game Panel. Refer to our guide on [Deploy a Minecraft server on the Game Panel](/pages/bare_metal_cloud/virtual_private_servers/game-panel-quick-start-minecraft).
-- SFTP enabled on the Game Panel. Refer to our guide on [Enabling SFTP on the Game Panel](/pages/bare_metal_cloud/virtual_private_servers/game-panel-enable-sftp).
+- A Minecraft server deployed on the Game Panel. Refer to [Deploy a Minecraft server on the Game Panel](/pages/bare_metal_cloud/virtual_private_servers/game-panel-quick-start-minecraft).
+- SFTP enabled on the Game Panel. Refer to [Enable SFTP on the Game Panel](/pages/bare_metal_cloud/virtual_private_servers/game-panel-enable-sftp).
 - An SFTP client such as [FileZilla](https://filezilla-project.org/).
 
 > [!warning]
@@ -25,7 +25,7 @@ The OVHcloud Game Panel lets you upload a custom Minecraft world by transferring
 
 ### Step 1 — Connect to your server via SFTP
 
-Connect to your Minecraft server using SFTP. Refer to our guide on [Enabling SFTP on the Game Panel](/pages/bare_metal_cloud/virtual_private_servers/game-panel-enable-sftp) for setup instructions.
+Connect to your Minecraft server using SFTP. Refer to [Enable SFTP on the Game Panel](/pages/bare_metal_cloud/virtual_private_servers/game-panel-enable-sftp) for setup instructions.
 
 ### Step 2 — Locate the world folder
 
@@ -65,7 +65,7 @@ If your map folder is not named `world`, you must update the server configuratio
 
 > [!primary]
 >
-> **Using multiple maps**: You can store multiple maps on your server and switch between them easily. Simply change the **World folder name** in the Game Config section to load a different map. Don't forget to restart the server after changing the setting.
+> **Using multiple maps**: You can store multiple maps on your server and switch between them easily. Change the **World folder name** in the Game Config section to load a different map. Do not forget to restart the server after changing the setting.
 
 ### Step 6 — Start the server
 
@@ -74,6 +74,6 @@ Restart your server from the Game Panel. Your custom Minecraft map is now ready 
 ## Go further
 
 - [Deploy a Minecraft server on the Game Panel](/pages/bare_metal_cloud/virtual_private_servers/game-panel-quick-start-minecraft)
-- [Creating a backup on the Game Panel](/pages/bare_metal_cloud/virtual_private_servers/game-panel-create-backup)
+- [Create a backup on the Game Panel](/pages/bare_metal_cloud/virtual_private_servers/game-panel-create-backup)
 
 Join our [community of users](/links/community).

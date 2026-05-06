@@ -14,7 +14,7 @@ The Game Panel lets you customise your Rust server by installing a custom map. T
 
 - A [VPS](/links/bare-metal/vps) in your OVHcloud account with the Game Panel feature enabled.
 - A Rust server deployed on the Game Panel.
-- SFTP enabled on your server. Refer to our guide on [Enabling SFTP on the Game Panel](/pages/bare_metal_cloud/virtual_private_servers/game-panel-enable-sftp).
+- SFTP enabled on your server. Refer to [Enable SFTP on the Game Panel](/pages/bare_metal_cloud/virtual_private_servers/game-panel-enable-sftp).
 - An SFTP client such as [FileZilla](https://filezilla-project.org/).
 - A custom map file in `.map` format.
 
@@ -33,7 +33,7 @@ The Game Panel lets you customise your Rust server by installing a custom map. T
 
 ### Step 2 — Connect to your server via SFTP
 
-Connect to your Rust server using SFTP. Refer to our guide on [Enabling SFTP on the Game Panel](/pages/bare_metal_cloud/virtual_private_servers/game-panel-enable-sftp) for setup instructions.
+Connect to your Rust server using SFTP. Refer to [Enable SFTP on the Game Panel](/pages/bare_metal_cloud/virtual_private_servers/game-panel-enable-sftp) for setup instructions.
 
 This guide uses [FileZilla](https://filezilla-project.org/) as the SFTP client.
 
@@ -68,6 +68,6 @@ Close the SFTP client, then start your Rust server again from the Game Panel.
 ## Go further
 
 - [Getting started with the Game Panel](/pages/bare_metal_cloud/virtual_private_servers/game-panel-getting-started)
-- [Enabling SFTP on the Game Panel](/pages/bare_metal_cloud/virtual_private_servers/game-panel-enable-sftp)
+- [Enable SFTP on the Game Panel](/pages/bare_metal_cloud/virtual_private_servers/game-panel-enable-sftp)
 
 Join our [community of users](/links/community).

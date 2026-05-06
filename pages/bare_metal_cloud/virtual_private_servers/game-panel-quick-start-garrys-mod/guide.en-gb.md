@@ -1,6 +1,6 @@
 ---
-title: "Deploy a Garrys Mod server on the Game Panel"
-excerpt: "Deploy a Garrys Mod server on the Game Panel with automated deployment, port configuration, and console connect steps."
+title: "Deploy a Garry's Mod server on the Game Panel"
+excerpt: "Deploy a Garry's Mod server on the Game Panel with automated deployment, port configuration, and console connect steps."
 updated: 2026-05-05
 ---
 
@@ -13,13 +13,13 @@ The Game Panel lets you deploy a Garry's Mod server with automated installation 
 ## Requirements
 
 - A [VPS](/links/bare-metal/vps) in your OVHcloud account with the Game Panel feature enabled.
-- Access to the Game Panel. Refer to our guide on [Log in to the Game Panel](/pages/bare_metal_cloud/virtual_private_servers/game-panel-log-in).
+- Access to the Game Panel. Refer to [Log in to the Game Panel](/pages/bare_metal_cloud/virtual_private_servers/game-panel-log-in).
 
 ## Instructions
 
 ### Step 1 — Access the Game Panel
 
-Log in to your Game Panel. Go to the **Game Servers** section in the left-hand menu.
+Log in to your Game Panel. Go to the `Game Servers`{.action} section in the left-hand menu.
 
 ![Game Servers section with Add Game Server button](images/game-servers-list.png){.thumbnail}
 
@@ -27,27 +27,24 @@ Log in to your Game Panel. Go to the **Game Servers** section in the left-hand m
 
 Click `Add Game Server`{.action} and select **Garrys Mod** from the list.
 
-![Selecting Garrys Mod from the game list](images/select-garrys-mod.png){.thumbnail}
+![Selecting Garry's Mod from the game list](images/select-garrys-mod.png){.thumbnail}
 
 Configure the installation:
 
-- `Server Name`: Give your server a name (e.g., `Garrys Mod Server`).
-- `Network Ports`: Leave the default ports or add more if needed in the advanced section. Garry's Mod typically uses ports around `27015`.
+- `Server Name`{.action}: Give your server a name (e.g., `Garrys Mod Server`).
+- `Network Ports`{.action}: Leave the default ports or add more if needed in the advanced section. Garry's Mod typically uses ports around `27015`.
 
 ### Step 3 — Launch the installation
 
-Click `Install`{.action}. The deployment will start automatically. Wait a few minutes while:
+Click `Install`{.action}. The deployment starts automatically. Wait a few minutes while the image downloads and the server installs.
 
-- The image is being downloaded.
-- The server is being installed.
-
-Then click the launch button to start the server.
+Then click `Launch`{.action} to start the server.
 
 ### Step 4 — Verify the server is running
 
 Check that the server status displays **Running** and that CPU/RAM activity is visible.
 
-![Garrys Mod server with Running status](images/garrys-mod-running.png){.thumbnail}
+![Garry's Mod server with Running status](images/garrys-mod-running.png){.thumbnail}
 
 Available actions:
 
@@ -55,7 +52,7 @@ Available actions:
 - `Logs`{.action}: Check logs if there are any issues.
 - `Settings`{.action} > `Game Config`{.action}: Access game settings (startup map, tickrate, gamemode, player limit, RCON password, Workshop collection, GSLT).
 
-![Garrys Mod Game Config settings](images/garrys-mod-game-config.png){.thumbnail}
+![Garry's Mod Game Config settings](images/garrys-mod-game-config.png){.thumbnail}
 
 ### Step 5 — Connect to the server
 
@@ -77,6 +74,6 @@ In Garry's Mod:
 ## Go further
 
 - [Getting started with the Game Panel](/pages/bare_metal_cloud/virtual_private_servers/game-panel-getting-started)
-- [Managing users on the Game Panel](/pages/bare_metal_cloud/virtual_private_servers/game-panel-manage-users)
+- [Manage users on the Game Panel](/pages/bare_metal_cloud/virtual_private_servers/game-panel-manage-users)
 
 Join our [community of users](/links/community).

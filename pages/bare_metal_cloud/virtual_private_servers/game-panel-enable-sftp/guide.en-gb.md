@@ -1,12 +1,12 @@
 ---
-title: "Enabling SFTP on the Game Panel"
+title: "Enable SFTP on the Game Panel"
 excerpt: "Enable SFTP access on your game server to transfer files using an SFTP client such as FileZilla, including connection details and password requirements."
 updated: 2026-05-05
 ---
 
 ## Objective
 
-SFTP lets you connect to your game server and access its files and directories. It is more powerful than the Game Panel File Manager, making it useful for uploading larger files and managing your server.
+SFTP lets you connect to your game server and access its files and directories. It is more powerful than the Game Panel File Manager and useful for uploading larger files and managing your server.
 
 **This guide explains how to enable SFTP on a game server in the OVHcloud Game Panel.**
 
@@ -24,7 +24,7 @@ SFTP lets you connect to your game server and access its files and directories. 
 
 ### Step 1 — Log in to the Game Panel
 
-Log in to your Game Panel. If you need help, refer to our guide on [Log in to the Game Panel](/pages/bare_metal_cloud/virtual_private_servers/game-panel-log-in).
+Log in to your Game Panel. If you need help, refer to [Log in to the Game Panel](/pages/bare_metal_cloud/virtual_private_servers/game-panel-log-in).
 
 ### Step 2 — Access SFTP settings
 
@@ -53,7 +53,7 @@ Password requirements:
 
 Once SFTP is enabled, connect to your server using your SFTP client. The connection information (host, port, username) can be found in the `Connection Details`{.action} section of your Game Panel.
 
-For instructions on using FileZilla, refer to our guide on [How to use SFTP to transfer files](/pages/bare_metal_cloud/dedicated_servers/comment-deposer-ou-recuperer-des-donnees-sur-un-serveur-dedie-via-sftp).
+For instructions on using FileZilla, refer to [How to use SFTP to transfer files](/pages/bare_metal_cloud/dedicated_servers/comment-deposer-ou-recuperer-des-donnees-sur-un-serveur-dedie-via-sftp).
 
 ## Go further
 

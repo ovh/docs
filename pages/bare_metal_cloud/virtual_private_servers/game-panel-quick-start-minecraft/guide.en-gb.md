@@ -13,7 +13,7 @@ The OVHcloud Game Panel lets you deploy a Minecraft server with automated instal
 ## Requirements
 
 - A [VPS](/links/bare-metal/vps) in your OVHcloud account with the Game Panel feature enabled.
-- Access to the Game Panel. Refer to our guide on [Log in to the Game Panel](/pages/bare_metal_cloud/virtual_private_servers/game-panel-log-in).
+- Access to the Game Panel. Refer to [Log in to the Game Panel](/pages/bare_metal_cloud/virtual_private_servers/game-panel-log-in).
 
 ## Instructions
 
@@ -29,7 +29,7 @@ Click `Add Game Server`{.action} and select **Minecraft**.
 
 > [!primary]
 >
-> If this is your first Minecraft server on the Game Panel and the default Game Port is available, all required ports will be automatically configured during installation. No manual setup is needed in this case.
+> If this is your first Minecraft server on the Game Panel and the default Game Port is available, all required ports are configured automatically. No manual setup is needed.
 
 ### Step 3 — Monitor installation progress
 
@@ -57,7 +57,7 @@ Once your server status is **Running**, copy the connection information from the
 
 ## Go further
 
-- [Uploading a custom world to your Minecraft server](/pages/bare_metal_cloud/virtual_private_servers/game-panel-upload-minecraft-world)
+- [Upload a custom world to your Minecraft server](/pages/bare_metal_cloud/virtual_private_servers/game-panel-upload-minecraft-world)
 - [Getting started with the Game Panel](/pages/bare_metal_cloud/virtual_private_servers/game-panel-getting-started)
 
 Join our [community of users](/links/community).

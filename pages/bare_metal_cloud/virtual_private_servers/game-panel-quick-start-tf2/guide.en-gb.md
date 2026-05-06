@@ -13,7 +13,7 @@ The Game Panel lets you deploy a Team Fortress 2 server in a few steps. The pane
 ## Requirements
 
 - A [VPS](/links/bare-metal/vps) in your OVHcloud account with the Game Panel feature enabled.
-- Access to the Game Panel. Refer to our guide on [Log in to the Game Panel](/pages/bare_metal_cloud/virtual_private_servers/game-panel-log-in).
+- Access to the Game Panel. Refer to [Log in to the Game Panel](/pages/bare_metal_cloud/virtual_private_servers/game-panel-log-in).
 
 ## Instructions
 
@@ -29,7 +29,7 @@ Click `Add Game Server`{.action} and select **Team Fortress 2**.
 
 > [!primary]
 >
-> If this is your first Team Fortress 2 server on the Game Panel and the default Game Port is available, all required ports will be automatically configured during installation. No manual setup is needed in this case.
+> If this is your first Team Fortress 2 server on the Game Panel and the default Game Port is available, all required ports are configured automatically. No manual setup is needed.
 
 ### Step 3 — Monitor installation progress
 
@@ -60,6 +60,6 @@ Once your server status is **Running**, copy the connection information from the
 ## Go further
 
 - [Getting started with the Game Panel](/pages/bare_metal_cloud/virtual_private_servers/game-panel-getting-started)
-- [Managing users on the Game Panel](/pages/bare_metal_cloud/virtual_private_servers/game-panel-manage-users)
+- [Manage users on the Game Panel](/pages/bare_metal_cloud/virtual_private_servers/game-panel-manage-users)
 
 Join our [community of users](/links/community).

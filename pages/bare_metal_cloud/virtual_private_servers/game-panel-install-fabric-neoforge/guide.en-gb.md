@@ -13,8 +13,8 @@ Fabric and NeoForge are mod loaders for Minecraft servers. Installing one of the
 ## Requirements
 
 - A [VPS](/links/bare-metal/vps) in your OVHcloud account with the Game Panel feature enabled.
-- A Minecraft server deployed on the Game Panel. Refer to our guide on [Deploy a Minecraft server on the Game Panel](/pages/bare_metal_cloud/virtual_private_servers/game-panel-quick-start-minecraft).
-- SFTP enabled on your server. Refer to our guide on [Enabling SFTP on the Game Panel](/pages/bare_metal_cloud/virtual_private_servers/game-panel-enable-sftp).
+- A Minecraft server deployed on the Game Panel. Refer to [Deploy a Minecraft server on the Game Panel](/pages/bare_metal_cloud/virtual_private_servers/game-panel-quick-start-minecraft).
+- SFTP enabled on your server. Refer to [Enable SFTP on the Game Panel](/pages/bare_metal_cloud/virtual_private_servers/game-panel-enable-sftp).
 - An SFTP client such as [FileZilla](https://filezilla-project.org/).
 
 ## Instructions

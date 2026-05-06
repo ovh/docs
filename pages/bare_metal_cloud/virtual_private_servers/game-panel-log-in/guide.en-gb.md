@@ -33,7 +33,7 @@ Enter your username and the associated password to log in to the Game Panel.
 
 #### Non-admin accounts
 
-If a password has been lost, ask an administrator to reset it. Refer to our guide on [Managing users on the Game Panel](/pages/bare_metal_cloud/virtual_private_servers/game-panel-manage-users) for details.
+If a password has been lost, ask an administrator to reset it. Refer to [Manage users on the Game Panel](/pages/bare_metal_cloud/virtual_private_servers/game-panel-manage-users) for details.
 
 #### Super admin account
 
@@ -62,6 +62,6 @@ Reconnect to the application with the new admin password.
 
 ## Go further
 
-To get started with the Game Panel, refer to our guide on [Getting started with the Game Panel](/pages/bare_metal_cloud/virtual_private_servers/game-panel-getting-started).
+To get started with the Game Panel, refer to [Getting started with the Game Panel](/pages/bare_metal_cloud/virtual_private_servers/game-panel-getting-started).
 
 Join our [community of users](/links/community).

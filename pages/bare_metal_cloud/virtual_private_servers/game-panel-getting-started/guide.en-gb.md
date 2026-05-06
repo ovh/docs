@@ -1,6 +1,6 @@
 ---
 title: "Getting started with the Game Panel"
-excerpt: "Deploy and manage game servers on your OVHcloud VPS using the Game Panel. Supports 40+ popular titles including Minecraft, ARK, CS2, and Rust."
+excerpt: "Deploy and manage game servers on your OVHcloud VPS with the Game Panel. Supports 40+ titles including Minecraft, ARK, CS2, and Rust."
 updated: 2026-05-05
 ---
 
@@ -15,7 +15,7 @@ Why choose the OVHcloud Game Panel:
 - **Multi-game support**: Run several game servers on a single VPS.
 - **Resource visibility**: Keep full control over system performance.
 
-With OVHcloud infrastructure, hosting game servers becomes straightforward and reliable. Whether you're running sessions on Rust, ARK, Minecraft, Counter-Strike, or other titles, this guide gives you the foundation to start and manage your servers efficiently.
+With OVHcloud infrastructure, hosting game servers becomes straightforward and reliable. Whether you are running sessions on Rust, ARK, Minecraft, Counter-Strike, or other titles, this guide gives you the foundation to start and manage your servers efficiently.
 
 **This guide takes you through the first steps of using the OVHcloud Game Panel.**
 
@@ -98,7 +98,7 @@ The monitoring section shows your game server's health:
 
 ### Step 6 — Manage users
 
-The user management feature controls and customises access to your game servers. For full details, refer to our guide on [Managing users on the Game Panel](/pages/bare_metal_cloud/virtual_private_servers/game-panel-manage-users).
+The user management feature controls and customises access to your game servers. For full details, refer to [Manage users on the Game Panel](/pages/bare_metal_cloud/virtual_private_servers/game-panel-manage-users).
 
 Through this interface, you can create and manage user accounts, enable or disable access, and assign credentials. Each user can then be granted specific permissions, both at a global level and on a per-server basis.
 

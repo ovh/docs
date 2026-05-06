@@ -6,14 +6,14 @@ updated: 2026-05-05
 
 ## Objective
 
-The Game Panel exposes the Minecraft server configuration directly in the UI. Basic options such as game mode and difficulty are available through a graphical form, and advanced settings let you edit the underlying `server.properties` file for full control.
+The Game Panel exposes the Minecraft server configuration directly in the UI. Basic options such as game mode and difficulty are available through a graphical form, and advanced settings let you edit `server.properties` directly for full control.
 
 **This guide explains how to edit Minecraft server configuration on the Game Panel.**
 
 ## Requirements
 
 - A [VPS](/links/bare-metal/vps) in your OVHcloud account with the Game Panel feature enabled.
-- A Minecraft server deployed on the Game Panel. Refer to our guide on [Deploy a Minecraft server on the Game Panel](/pages/bare_metal_cloud/virtual_private_servers/game-panel-quick-start-minecraft).
+- A Minecraft server deployed on the Game Panel. Refer to [Deploy a Minecraft server on the Game Panel](/pages/bare_metal_cloud/virtual_private_servers/game-panel-quick-start-minecraft).
 
 ## Instructions
 
@@ -73,6 +73,6 @@ After saving your changes, restart the Minecraft server from the Game Panel for 
 
 - [Deploy a Minecraft server on the Game Panel](/pages/bare_metal_cloud/virtual_private_servers/game-panel-quick-start-minecraft)
 - [Install Fabric or NeoForge on a Minecraft server](/pages/bare_metal_cloud/virtual_private_servers/game-panel-install-fabric-neoforge)
-- [Uploading a custom world to your Minecraft server](/pages/bare_metal_cloud/virtual_private_servers/game-panel-upload-minecraft-world)
+- [Upload a custom world to your Minecraft server](/pages/bare_metal_cloud/virtual_private_servers/game-panel-upload-minecraft-world)
 
 Join our [community of users](/links/community).

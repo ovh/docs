@@ -13,8 +13,8 @@ PaperMC is a high-performance Minecraft server implementation that supports plug
 ## Requirements
 
 - A [VPS](/links/bare-metal/vps) in your OVHcloud account with the Game Panel feature enabled.
-- Access to the Game Panel. Refer to our guide on [Log in to the Game Panel](/pages/bare_metal_cloud/virtual_private_servers/game-panel-log-in).
-- SFTP enabled on your server. Refer to our guide on [Enabling SFTP on the Game Panel](/pages/bare_metal_cloud/virtual_private_servers/game-panel-enable-sftp).
+- Access to the Game Panel. Refer to [Log in to the Game Panel](/pages/bare_metal_cloud/virtual_private_servers/game-panel-log-in).
+- SFTP enabled on your server. Refer to [Enable SFTP on the Game Panel](/pages/bare_metal_cloud/virtual_private_servers/game-panel-enable-sftp).
 - An SFTP client such as [FileZilla](https://filezilla-project.org/).
 
 ## Instructions
@@ -23,7 +23,7 @@ PaperMC is a high-performance Minecraft server implementation that supports plug
 
 From the main Game Panel page, click `Add Game Server`{.action}, locate **PaperMC**, and click `Install`{.action}.
 
-For more details on server installation, refer to our guide on [Getting started with the Game Panel](/pages/bare_metal_cloud/virtual_private_servers/game-panel-getting-started).
+For more details on server installation, refer to [Getting started with the Game Panel](/pages/bare_metal_cloud/virtual_private_servers/game-panel-getting-started).
 
 ### Step 2 — Download plugins
 

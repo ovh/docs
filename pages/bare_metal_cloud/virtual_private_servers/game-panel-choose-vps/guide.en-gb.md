@@ -33,7 +33,7 @@ An underpowered game server causes lag, disconnections, and a poor experience fo
 
 OVHcloud offers six VPS plans with unlimited bandwidth. Plans VPS-1 through VPS-4 cover the vast majority of games for up to 10 players. Plans VPS-5 and VPS-6 are designed for more advanced use cases: running multiple game servers simultaneously, large communities, or multi-title platforms.
 
-| Plan | vCores | RAM | Storage | Bandwidth | Price / mo |
+| Plan | vCores | RAM | Storage | Bandwidth | Monthly price |
 |------|--------|-----|---------|-----------|------------|
 | VPS-1 | 4 | 8 GB | 75 GB SSD | 400 Mbit/s | $5.99 excl. tax |
 | VPS-2 *(Recommended)* | 6 | 12 GB | 100 GB SSD NVMe | 1 Gbit/s | $9.19 excl. tax |
@@ -53,7 +53,7 @@ The table below lists each game with its official minimum server requirements an
 >
 > The recommendations below apply to a vanilla installation (no mods). Adding plugins or resource-heavy mods may require upgrading to the next VPS tier.
 
-| Game | Genre | Min. requirements | Load | Recommended VPS | Price / mo |
+| Game | Genre | Min. requirements | Load | Recommended VPS | Monthly price |
 |------|-------|-------------------|------|-----------------|------------|
 | **VPS-1 — Very light** | | | | | |
 | Teamspeak 3 | VoIP | 1c · 1 GB · 5 GB | 10% | VPS-1 | $5.99 |
@@ -80,7 +80,7 @@ The table below lists each game with its official minimum server requirements an
 
 VPS-5 and VPS-6 are not required for a single game with 10 players. Their value lies in the ability to run multiple game servers simultaneously on a single machine, or to host large communities (50 to 100+ players). They are designed for community managers, independent studios, and hosting resellers.
 
-| Use case | Description | Min. requirements | Load | Recommended VPS | Price / mo |
+| Use case | Description | Min. requirements | Load | Recommended VPS | Monthly price |
 |----------|-------------|-------------------|------|-----------------|------------|
 | **VPS-5 — Simultaneous multi-server** | | | | | |
 | ARK + Minecraft | 2 parallel instances | 10c · 24 GB · 80 GB | 65% | VPS-5 | $50.69 |
