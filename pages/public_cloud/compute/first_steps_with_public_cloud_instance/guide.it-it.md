@@ -1,133 +1,169 @@
 ---
-title: Gestire le istanze Public Cloud
-excerpt: Come gestire le istanze Public Cloud dallo Spazio Cliente OVHcloud
-updated: 2025-04-28
+title: 'Gestire le istanze Public Cloud'
+excerpt: 'Scopri come gestire le istanze Public Cloud dallo Spazio Cliente OVHcloud'
+updated: 2026-02-24
 ---
-
-> [!primary]
-> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Contribuisci" di questa pagina.
->
 
 ## Obiettivo
 
-Le istanze Public Cloud possono essere gestite direttamente dallo [Spazio Cliente OVHcloud](/links/manager).
+Puoi gestire le tue istanze Public Cloud nel tuo [Spazio Cliente OVHcloud](/links/manager).
 
-**Questa guida ti mostra le operazioni disponibili nello Spazio Cliente OVHcloud per un'istanza Public Cloud.**
+**Questa guida descrive le operazioni disponibili nello Spazio Cliente OVHcloud per un'istanza Public Cloud.**
 
 ## Prerequisiti
 
 - Un [progetto Public Cloud](/links/public-cloud/public-cloud) nel tuo account OVHcloud
 - Un'[istanza Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps) nel tuo progetto
-- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Percorso di navigazione:** `Public Cloud`{.action} > Seleziona il tuo project
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## Procedura
 
-Accedi allo [Spazio Cliente OVHcloud](/links/manager), clicca su `Public Cloud`{.action} e seleziona il progetto Public Cloud interessato.
+### Utilizzare l'interfaccia di gestione delle istanze
 
-### Utilizza l'interfaccia di gestione delle istanze
+Clicca su `Istanze`{.action} nel menu a sinistra.
 
-Clicca su `Istanze`{.action} nel menu a sinistra. 
-
-![public-cloud](images/compute-2025.png){.thumbnail}
-
-In questa pagina sono elencate tutte le tue istanze Public Cloud e alcune delle loro proprietà:
+Questa pagina mostra tutte le tue istanze Public Cloud e alcune delle loro proprietà:
 
 - l'ID dell'istanza, necessario per alcune chiamate API;
-- localizzazione del datacenter, cioè la regione dell'istanza;
+- la localizzazione del datacenter, cioè la regione dell'istanza;
 - il modello dell'istanza;
 - l'immagine, cioè il sistema operativo installato sull'istanza;
-- indirizzo IPv4 dell'istanza;
-- l'indirizzo privato attualmente collegato all'istanza;
+- l'indirizzo IPv4 dell'istanza;
+- l'indirizzo privato attualmente associato all'istanza;
 - i volumi (dischi) aggiuntivi attualmente associati all'istanza;
-- lo stato dell'istanza, che indica se è allo stato `Attivato`.
+- lo stato dell'istanza, indicante se è nello stato `Attivato`.
 
-### Opzioni di gestione sul pannello di controllo dell'istanza
+### Opzioni di gestione sulla dashboard dell'istanza
 
-Nella pagina di gestione delle istanze, clicca sul nome dell'istanza.
+Dalla pagina di gestione delle istanze, clicca sul nome dell'istanza interessata.
 
-Seleziona l'opzione scelta nel riquadro di sinistra "Gestione".
+Accederai alla pagina `Informazioni generali`, che centralizza i principali dettagli e lo stato di funzionamento della tua istanza (stato, risorse, rete, accesso e metadati).
 
-![public-cloud](images/management.png){.thumbnail}
+Alcune di queste operazioni sono disponibili anche dalla pagina di gestione delle istanze, tramite il pulsante `...`{.action} nella tabella.
 
-Queste azioni sono disponibili anche sulla pagina di gestione delle istanze se cliccate sul pulsante `...`{.action} nella tabella.
+#### Modificare la configurazione di un'istanza
 
-#### Modifica la configurazione dell’istanza
+Clicca su `Modifica l'immagine`{.action} o `Modifica il modello`{.action}.
 
-Clicca su `Modifica`{.action}.
+Puoi anche aprire `Azioni aggiuntive`{.action} e selezionare `Modifica`{.action}.
 
-Visualizzi una nuova pagina con una versione modificata delle opzioni [di creazione dell'istanza](/pages/public_cloud/compute/public-cloud-first-steps), in cui puoi modificare questi elementi:
+La nuova pagina presenta una versione modificata delle opzioni [di creazione dell'istanza](/pages/public_cloud/compute/public-cloud-first-steps), in cui puoi modificare i seguenti elementi:
 
-- **Modifica il nome**: per facilitare l'identificazione, assegna un nome all'istanza.
-- **Modifica l'immagine**: è possibile scegliere un altro sistema operativo per l'istanza (ricordati che la reinstallazione di un'istanza comporta la cancellazione di tutti i dati).
-- **Modifica il modello**: è possibile modificare il modello di istanza Per maggiori informazioni sulle opzioni, consulta [questa guida](/pages/public_cloud/compute/public-cloud-first-steps#modela).
-- **Modifica il periodo di fatturazione**: è possibile modificare il periodo di fatturazione dell'istanza da una fatturazione oraria a mensile. Per maggiori informazioni, consulta [questa guida](/pages/account_and_service_management/managing_billing_payments_and_services/changing_hourly_monthly_billing).
+- **Modificare il nome**: puoi assegnare un nome all'istanza per facilitarne l'identificazione.
+- **Modificare l'immagine**: puoi scegliere un altro sistema operativo per l'istanza (ricorda che la reinstallazione di un'istanza comporterà l'eliminazione di tutti i dati in essa contenuti).
+- **Modificare il modello**: puoi cambiare il modello di istanza. Consulta [questa guida](/pages/public_cloud/compute/public-cloud-first-steps#model) per maggiori informazioni sulle opzioni.
+- **Modificare il periodo di fatturazione**: puoi modificare il periodo di fatturazione dell'istanza da una fatturazione oraria a mensile. Consulta [questa guida](/pages/account_and_service_management/managing_billing_payments_and_services/changing_hourly_monthly_billing) per maggiori informazioni.
 
-#### Crea un backup di un'istanza
+#### Creare un backup di un'istanza
 
 Clicca su `Crea un backup`{.action}.
 
-Per maggiori informazioni, consulta la guida [Salva un'istanza](/pages/public_cloud/compute/save_an_instance). 
+Consulta la guida [Salvare un'istanza](/pages/public_cloud/compute/save_an_instance) per maggiori informazioni.
 
-#### Crea un backup automatico di un'istanza
+#### Eliminare un'istanza
 
-Clicca su `Crea un backup automatizzato`{.action}.
+Clicca su `Elimina`{.action}.
 
-Per maggiori informazioni, consulta la guida [Salva un'istanza](/pages/public_cloud/compute/save_an_instance#creare-un-backup-automatizzato-di-unistanza).
+Questa azione comporterà l'eliminazione definitiva dell'istanza e di tutti i dati in essa contenuti.
 
-#### Arrestare un'istanza
+Conferma la richiesta di eliminazione nella finestra che appare.
+
+> [!warning]
+> L'eliminazione di un'istanza non comporta l'eliminazione automatica di tutte le opzioni ad essa associate (storage, snapshot, backup, ecc...). Assicurati che tutte le altre opzioni associate all'istanza siano eliminate per interrompere la fatturazione.
+>
+
+#### Associare un volume
+
+Clicca su `Associa un volume`{.action}.
+
+Seleziona il volume da associare all'istanza, quindi clicca su `Conferma`{.action}. Una volta associato, il volume è immediatamente disponibile e può essere montato dal sistema operativo dell'istanza.
+
+#### Modificare il reverse DNS
+
+Clicca su `⋮`{.action} e poi su `Modifica il reverse DNS`{.action}.
+
+Consulta la guida [Configurare il DNS inverso di un'istanza Public Cloud](/pages/public_cloud/compute/setup_instance_reverse) per maggiori informazioni.
+
+#### Configurare il firewall
+
+Clicca su `⋮`{.action} e poi su `Configura il firewall`{.action}.
+
+Consulta la guida [Attivare e configurare il Edge Network Firewall](/pages/bare_metal_cloud/dedicated_servers/firewall_network) per maggiori informazioni.
+
+#### Gestire le reti private
+
+Clicca su `⋮`{.action} e poi su `Gestisci le reti private`{.action}.
+
+Consulta la guida [Creare una rete privata con Gateway](/pages/public_cloud/public_cloud_network_services/getting-started-02-create-private-network-gateway) per maggiori informazioni.
+
+#### Associare una rete
+
+Clicca su `⋮`{.action} e poi su `Associa una rete`{.action}.
+
+Seleziona la rete desiderata dall'elenco a discesa, quindi clicca su `Conferma`{.action}.
+
+#### Azioni aggiuntive
+
+Clicca su `Azioni aggiuntive`{.action}
+
+##### Creare un backup automatico di un'istanza
+
+Clicca su `Crea un backup automatico`{.action}.
+
+Consulta la guida [Salvare un'istanza](/pages/public_cloud/compute/save_an_instance#creare-un-backup-automatizzato-di-unistanza) per maggiori informazioni.
+
+##### Arrestare un'istanza
 
 Clicca su `Arresta`{.action}.
 
-In questo modo l'istanza passerà allo stato `Spento`, ma all'utente verrà comunque addebitato lo stesso prezzo per l'istanza. Per maggiori informazioni, consulta la nostra guida [Sospendi o metti in pausa un’istanza](/pages/public_cloud/compute/suspend_or_pause_an_instance#nello-spazio-cliente-ovhcloud).
+Questa operazione metterà l'istanza nello stato `Spenta`, ma continuerai a pagare lo stesso prezzo per l'istanza. Consulta la nostra guida [Sospendere o mettere in pausa un'istanza](/pages/public_cloud/compute/suspend_or_pause_an_instance#arrestare-unistanza) per maggiori informazioni.
 
-Clicca su `Comincia ora`{.action} per riattivare l'istanza.
+Clicca su `Avvia`{.action} per riattivare l'istanza.
 
-#### Utilizza la modalità Rescue
+##### Utilizzare la modalità Rescue
 
 Clicca su `Riavvia in modalità Rescue`{.action}.
 
-Questa operazione attiverà la modalità Rescue dell'istanza. Per maggiori informazioni, consulta la guida [Attivare il Rescue mode su un’istanza Public Cloud](/pages/public_cloud/compute/put_an_instance_in_rescue_mode).
+Questa operazione attiverà la modalità Rescue dell'istanza. Consulta la nostra guida [Come attivare la modalità Rescue su un'istanza Public Cloud](/pages/public_cloud/compute/put_an_instance_in_rescue_mode) per informazioni dettagliate.
 
-#### Riavvia l’istanza
+##### Riavviare un'istanza
 
 > [!warning]
-> L'opzione di riavvia a caldo (soft) non è attualmente disponibile per le istanze Metal.
+> L'opzione di riavvio a caldo (soft) non è attualmente disponibile per le istanze Metal.
 >
 
 - Clicca su `Riavvia a caldo (soft)`{.action} per effettuare un riavvio a livello software.
 - Clicca su `Riavvia a freddo (hard)`{.action} per avviare un riavvio a livello hardware.
 
-Conferma la richiesta di riavvio nella nuova finestra.
+Conferma la richiesta di riavvio nella finestra che appare.
 
-#### Sospendere (*shelve*) un'istanza
+##### Sospendere (*shelve*) un'istanza
 
-Clicca su `Sospesa`{.action}.
+Clicca su `Sospendi`{.action}.
 
-Questa azione posizionerà l'istanza nello stato "*shelved*", visualizzato come `Sospesa`. Per maggiori informazioni sui diversi stati di sospensione dell'istanza, consulta la guida [Sospendi o metti in pausa un’istanza](/pages/public_cloud/compute/suspend_or_pause_an_instance#sospendere-shelve-unistanza).
+Questa operazione metterà l'istanza nello stato « *shelved* », visualizzato come `Sospesa`. Consulta la nostra guida [Sospendere o mettere in pausa un'istanza](/pages/public_cloud/compute/suspend_or_pause_an_instance#sospendere-shelve-unistanza) per maggiori informazioni sui diversi stati di sospensione di un'istanza.
 
 Clicca su `Riattiva`{.action} per ripristinare lo stato `Attivato` dell'istanza.
 
-#### Reinstalla l’istanza
+##### Reinstallare un'istanza
 
 Clicca su `Reinstalla`{.action}.
 
-Questa azione reinstallerà l'istanza con lo stesso sistema operativo, a condizione che l'immagine sia sempre supportata.
+Questa azione reinstallerà l'istanza con lo stesso sistema operativo, a condizione che l'immagine sia ancora supportata.
 
-Ti ricordiamo che la reinstallazione **elimina tutti i dati** archiviati sulla tua istanza.
+Ricorda che la reinstallazione **elimina tutti i dati** attualmente archiviati sulla tua istanza.
 
-#### Elimina l’istanza
-
-Clicca su `Elimina`{.action}.
-
-Questa azione comporta la cancellazione definitiva dell'istanza e di tutti i suoi dati.
-
-Nella nuova finestra, conferma l'operazione.
-
-> [!warning]
-> L'eliminazione di un'istanza non comporta l'eliminazione automatica di tutte le opzioni associate (storage, snapshot, backup, ecc...). Assicurati che tutte le altre opzioni associate all'istanza siano eliminate per interrompere la fatturazione.
->
-
-### Accedi alla console VNC <a name="accessvnc"></a>
+### Accedere alla console VNC <a name="accessvnc"></a>
 
 Clicca su `Istanze`{.action} nel menu a sinistra. Nella pagina di gestione delle istanze, clicca sul nome dell'istanza nella tabella.
 
@@ -135,13 +171,13 @@ Clicca sulla scheda `Console VNC`{.action}.
 
 ![public-cloud](images/vnc1.png){.thumbnail}
 
-La console VNC fornisce un accesso diretto all'istanza. Per il corretto funzionamento dell'accesso, è necessario configurare un nome utente e una password sull'istanza. 
+La console VNC fornisce un accesso diretto alla tua istanza. Per il corretto funzionamento di questo accesso, devi prima configurare un nome utente e una password sull'istanza.
 
-Per maggiori informazioni, consulta la nostra guida [Creare e connettersi a un’istanza Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps#vnc-console) a essa.
+Consulta la nostra guida [Creare e connettersi a un'istanza Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps#vnc-console) per maggiori informazioni.
 
 ## Per saperne di più
 
-[Creare e connettersi a un’istanza Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps)
+[Creare e connettersi a un'istanza Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps)
 
 [Presentazione di Horizon](/pages/public_cloud/public_cloud_cross_functional/introducing_horizon)
 

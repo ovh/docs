@@ -1,7 +1,7 @@
 ---
 title: Dashboards - Capabilities and Limitations
 excerpt: Discover the capabilities and limitations of Public Cloud Databases for Dashboards
-updated: 2025-07-31
+updated: 2026-04-15
 ---
 
 ## Objective
@@ -25,6 +25,8 @@ The Public Cloud Databases offer is available in the following regions:
 - `EU-SOUTH-MIL` (Milan, France)
 - `UK` (London, United Kingdom)
 - `WAW` (Warsaw, Poland)
+- `RBX` (Roubaix, France)
+- `AP-SOUTH-MUM` (Mumbai, India)
 
 Dashboards nodes have to be in the same region.
 
@@ -43,14 +45,12 @@ You can use your browser to access your Dashboards service.
 
 ### Plans
 
-Here is an overview of the *Essential* and *Production* plans capabilities:
+Here is an overview of the available plans:
 
-| Plan                  | Number of nodes by default | Additional nodes |
-| --------------------- | -------------------------- | ---------------- |
-| *Essential*           | 1                          | No               |
-| *Business*            | 1                          | No               |
+- **Essential**: 1 node
+- **Business**: 1 node
 
-Both plans offers an automatic backup retention of 2 days. It supports public or private networks (vRack).
+Both plans offer an automatic backup retention of 2 days. They support public or private networks (vRack).
 
 #### License type
 

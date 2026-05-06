@@ -1,6 +1,6 @@
 ---
-title: "Como recuperar o acesso ao servidor em caso de perda da palavra-passe do utilizador"
-excerpt: "Saiba como configurar uma nova palavra-passe para uma conta de utilizador num sistema operativo GNU/Linux com o modo rescue OVHcloud"
+title: "Recuperar uma palavra-passe perdida num servidor dedicado"
+excerpt: "Reinicialize uma palavra-passe de utilizador perdida num servidor dedicado GNU/Linux através do modo rescue OVHcloud para recuperar o acesso"
 updated: 2025-10-02
 ---
 
@@ -20,7 +20,7 @@ Neste caso, pode ligar-se ao seu servidor através do modo rescue da OVHcloud, q
 ## Requisitos
 
 - Ter um [servidor dedicado](/links/bare-metal/bare-metal) ou um [VPS](/links/bare-metal/vps) na sua conta OVHcloud
-- Ter acesso à [Área de Cliente OVHcloud](/links/manager)
+
 
 > [!primary]
 >

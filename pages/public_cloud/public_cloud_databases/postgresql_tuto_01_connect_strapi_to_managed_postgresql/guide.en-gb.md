@@ -1,5 +1,5 @@
 ---
-title: PostgreSQL - Tutorial - Build a Strapi app connected to OVHcloud Managed PostgreSQL service
+title: Build a Strapi app connected to Public Cloud Databases for PostgreSQL
 excerpt: "Find out how to build a Strapi application connected to an OVHcloud Managed PostgreSQL service"
 updated: 2021-01-11
 ---
@@ -21,13 +21,25 @@ You need to be able to order a database solution in the OVHcloud Control Panel, 
 
 As [Strapi](https://strapi.io/) is written in Javascript, packages like [nodejs](https://nodejs.org/), [nvm](https://github.com/nvm-sh/nvm) and [yarn](https://classic.yarnpkg.com/en/) are necessary for this tutorial.
 
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Navigation path:** `Public Cloud`{.action} > Select your project
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
+
 ## Instructions
 
 ### Create a PostgreSQL database
 
+<!-- CP-STEPS-START:create-a-postgresql-database -->
 #### Subscribing to the service
 
-Log in to your [OVHcloud Control Panel](/links/manager) and switch to `Public Cloud`{.action} in the top navigation bar. After selecting your Public Cloud project, click on `Databases`{.action} in the left-hand navigation bar under **Storage**.
+Click on `Databases`{.action} in the left-hand navigation bar under **Storage**.
 
 Click on the `Create a database instance`{.action} button. (`Create a service`{.action} if your project already contains databases.)
 
@@ -84,6 +96,7 @@ The last section will show a summary of your order as well as the API equivalent
 Click `Create a database service`{.action} to continue.
 
 Within a few minutes your new database service will be deployed. Messages in the OVHcloud Control Panel will inform you when the database is ready to use.
+<!-- CP-STEPS-END:create-a-postgresql-database -->
 
 Your database is ready when cluster status is "Ready", node status is green, and number of users is set to "1 user".
 
@@ -91,6 +104,7 @@ Your database is ready when cluster status is "Ready", node status is green, and
 
 ### Authorize your IP address
 
+<!-- CP-STEPS-START:authorize-your-ip-address -->
 > [!warning]
 > For security reasons the default network configuration doesn't allow any incoming connections.
 > To allow access from your application or development environment to your PostgreSQL database service, you must add your IP addresses to the service authorized list.
@@ -100,6 +114,7 @@ Your database is ready when cluster status is "Ready", node status is green, and
 Following the related documentation on how to [authorize the suitable IP addresses](/pages/public_cloud/public_cloud_databases/mongodb_02_manage_control_panel#configuring-authorized-ips), add your IPs to the authorized list.
 
 ![Green statuses and authorized IPs setted on Database Control Panel](images/postgresql-tuto-01-connect-strapi-to-managed-postgresql10.png){.thumbnail}
+<!-- CP-STEPS-END:authorize-your-ip-address -->
 
 ### Test connection to the PostgreSQL DataBase
 
@@ -122,6 +137,7 @@ A quick and easy way to test the connection is to use the Postgre Command Line I
 
 #### Connect to the database
 
+<!-- CP-STEPS-START:connect-to-the-database -->
 The useful parameters are:
 
 - The db Host, the db Port
@@ -134,6 +150,7 @@ The useful parameters are:
     - Get it after you reset it.
 
 ![Password reseted](images/postgresql-tuto-01-connect-strapi-to-managed-postgresql11.png){.thumbnail}
+<!-- CP-STEPS-END:connect-to-the-database -->
 
 Now connect to the database with the following command
 
@@ -325,9 +342,11 @@ Save and exit the file.
 
 Now, if you choose `Yes` when prompted to enable SSL connection, get the CA certificate from the OVHcloud Control Panel:
 
+<!-- CP-STEPS-START:setup-a-new-instance-of-strapi-ssl-certificate -->
 ![Download certificate](images/postgresql-tuto-01-connect-strapi-to-managed-postgresql16.png){.thumbnail}
 
 Save the generated file into the `config` folder, just beside the `database.js` file, and rename it as `ca-certificate.crt`
+<!-- CP-STEPS-END:setup-a-new-instance-of-strapi-ssl-certificate -->
 Now open the `config/database.js` file and modify the `ssl` block as follows:
 
 ```console
@@ -464,7 +483,9 @@ rm -rf /home/my/app/path/my-strapi/
 
 To clean your PostgreSQL, use the OVHcloud Control Panel to delete your managed PostgreSQL service:
 
+<!-- CP-STEPS-START:cleaning-up-postgresql -->
 ![delete service menu](images/postgresql-tuto-01-connect-strapi-to-managed-postgresql15.png){.thumbnail}
+<!-- CP-STEPS-END:cleaning-up-postgresql -->
 
 ## We want your feedback!
 

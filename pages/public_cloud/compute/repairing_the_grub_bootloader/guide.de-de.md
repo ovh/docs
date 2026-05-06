@@ -12,6 +12,17 @@ Es kann sein, dass Sie den GRUB Bootloader reparieren müssen. In dieser Anleitu
 
 - Sie verfügen über eine [Public Cloud Instanz](/links/public-cloud/public-cloud).
 
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direkter Link:** [Public Cloud Projekte](/links/control-panel/publiccloud-projects)
+- **Navigationspfad:** `Public Cloud`{.action} > Wählen Sie Ihr Projekt aus
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
+
 ## In der praktischen Anwendung
 
 > [!warning]
@@ -49,4 +60,4 @@ Sie können die Instanz nun aus dem Rescue-Modus entfernen (siehe Anleitung zum 
 
 ## Weiterführende Informationen
 
-Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.
+Treten Sie unserer [User Community](/links/community) bei.

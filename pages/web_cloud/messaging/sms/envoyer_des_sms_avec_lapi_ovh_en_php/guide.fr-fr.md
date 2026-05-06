@@ -1,6 +1,6 @@
 ---
-title: 'Envoyer des SMS avec l’API OVHcloud en PHP'
-excerpt: 'Comment envoyer des SMS avec l’API OVHcloud RESTful en PHP'
+title: "Envoyer des SMS avec l’API OVHcloud en PHP"
+excerpt: "Découvrez comment configurer un environnement de développement PHP et envoyer votre premier SMS avec l’API RESTful OVHcloud pas à pas"
 updated: 2020-06-25
 ---
 
@@ -17,9 +17,9 @@ Les SMS sont largement utilisés pour diffuser des informations pratiques, suivr
 
 ## En pratique
 
-### Étape 1 : Récupération du Wrapper PHP for OVH APIs
+### Étape 1 : Récupération du Wrapper PHP for OVHcloud APIs
 
-Rendez vous sur le projet [https://github.com/ovh/php-ovh](https://github.com/ovh/php-ovh)
+Rendez-vous sur le projet [https://github.com/ovh/php-ovh](https://github.com/ovh/php-ovh)
 
 Vous allez pouvoir intégrer le wrapper PHP rapidement grâce à composer : [https://getcomposer.org/](https://getcomposer.org/)
 
@@ -35,7 +35,7 @@ Vous allez récupérer dans votre projet le répertoire ./vendor/ovh/ovh/  ainsi
 Des identifiants sont nécessaires pour consommer l’API SMS. Ces identifiants sont créés une fois pour identifier l’application qui va envoyer des SMS. La durée de vie de ces identifiants est paramétrable.
 
 Créez vos identifiants de Script (all keys at once) sur cette page :
-[https://api.ovh.com/createToken](https://eu.api.ovh.com/createToken/index.cgi?GET=/sms/&GET=/sms/*/jobs&POST=/sms/*/jobs) (cette url vous permet d'avoir automatiquement les bons droits pour les étapes décrites dans ce guide).
+[https://auth.eu.ovhcloud.com/api/createToken](https://auth.eu.ovhcloud.com/api/createToken?GET=/sms/&GET=/sms/*/jobs&POST=/sms/*/jobs) (cette url vous permet d'avoir automatiquement les bons droits pour les étapes décrites dans ce guide).
 
 ![création des tokens](images/img_2451.jpg){.thumbnail}
 
@@ -45,7 +45,7 @@ Dans cet exemple simple, nous récupérons les droits pour avoir accès aux info
 - GET /sms/*/jobs
 - POST /sms/*/jobs
 
-L’étoile (\*) active les appels à ces méthodes pour tous vos comptes SMS. Vous pouvez également restreindre les appels à un seul compte, si vous gérez plusieurs comptes SMS sur votre compte OVHcloud, en remplaçant « /sms » par « /sms/NOM-DU-COMPTE » et « /sms/\*/ » par «/sms/NOM-DU-COMPTE/».
+L’étoile (\*) active les appels à ces méthodes pour tous vos comptes SMS. Vous pouvez également restreindre les appels à un seul compte, si vous gérez plusieurs comptes SMS sur votre compte OVHcloud, en remplaçant « /sms » par « /sms/NOM-DU-COMPTE » et « /sms/\*/ » par « /sms/NOM-DU-COMPTE/ ».
 
 Vous récupérez vos identifiants pour votre script :
 
@@ -59,18 +59,18 @@ L'environnement est prêt, les identifiants sont créés, vous êtes prêt pour 
 
 ### Étape 3 : Mise en place d'un SDK PHP
 
-Pour plus de simplicité nous avons mis en place un SDK PHP que vous pouvez retrouver [ici](https://github.com/ovh/php-ovh-sms).
+Pour plus de simplicité nous avons mis en place un SDK PHP que vous pouvez retrouver sur le [dépôt GitHub php-ovh-sms](https://github.com/ovh/php-ovh-sms).
 
 ### Étape 4 : Connexion basique à l'API
 
-Vous pouvez maintenant tester la bonne connexion à l’API en affichant les détails de chaque compte SMS:
+Vous pouvez maintenant tester la bonne connexion à l’API en affichant les détails de chaque compte SMS :
 
 ```
 <?php
 /**
  * Liste et affiche le détail de chaque compte SMS
  * 
- * Rendez-vous sur https://eu.api.ovh.com/createToken/index.cgi?GET=/sms/&GET=/sms/*/jobs&POST=/sms/*/jobs
+ * Rendez-vous sur https://auth.eu.ovhcloud.com/api/createToken?GET=/sms/&GET=/sms/*/jobs&POST=/sms/*/jobs
  * pour générer les clés d'accès API pour:
  *
  * GET /sms
@@ -120,7 +120,7 @@ Pour envoyer des SMS, utilisez la méthode POST jobs : [https://api.ovh.com/cons
 /**
  * Envoie un SMS puis affiche la liste des SMS en attente d’envoi.
  * 
- * Rendez-vous sur https://eu.api.ovh.com/createToken/index.cgi?GET=/sms/&GET=/sms/*/jobs&POST=/sms/*/jobs
+ * Rendez-vous sur https://auth.eu.ovhcloud.com/api/createToken?GET=/sms/&GET=/sms/*/jobs&POST=/sms/*/jobs
  * pour générer les clés d'accès API pour:
  *
  * GET /sms
@@ -195,7 +195,7 @@ Array
 )
 ```
 
-Vous récupérez bien le compte SMS (ServiceName). Vous obtenez une réponse avec 1 crédit consommé pour un numéro valide. Enfin, vous constatez qu'il n’y pas de SMS en attente d’envoi.
+Vous récupérez bien le compte SMS (ServiceName). Vous obtenez une réponse avec 1 crédit consommé pour un numéro valide. Enfin, vous constatez qu’il n’y a pas de SMS en attente d’envoi.
 
 #### Taille des SMS à caractère commercial
 

@@ -1,7 +1,7 @@
 ---
 title: FAQ OVHcloud emails
 excerpt: "Find the most frequently asked questions about emails"
-updated: 2025-04-07
+updated: 2026-03-24
 ---
 
 <style>
@@ -20,6 +20,40 @@ details[open]>summary::before {
   max-width:500px !important;
 }
 </style>
+
+<!-- CP-NAV-START:web-mx-plan -->
+<!-- CP-NAV-START:web-zimbra -->
+<!-- CP-NAV-START:web-email-pro -->
+<!-- CP-NAV-START:web-exchange -->
+---
+
+### OVHcloud Control Panel Access
+
+**MX Plan:**
+
+- **Direct link:** [MX Plan](/links/control-panel/web-mx-plan)
+- **Navigation path:** `Web Cloud`{.action} > `MX Plan`{.action} > Select your MX Plan service
+
+**Zimbra:**
+
+- **Direct link:** [Zimbra](/links/control-panel/web-zimbra)
+- **Navigation path:** `Web Cloud`{.action} > `Zimbra Mail`{.action} > Select your Zimbra service
+
+**Email Pro:**
+
+- **Direct link:** [Email Pro](/links/control-panel/web-email-pro)
+- **Navigation path:** `Web Cloud`{.action} > `Email Pro`{.action} > Select your platform
+
+**Exchange:**
+
+- **Direct link:** [Exchange](/links/control-panel/web-exchange)
+- **Navigation path:** `Web Cloud`{.action} > `Exchange`{.action} > Select your platform
+
+---
+<!-- CP-NAV-END:web-exchange -->
+<!-- CP-NAV-END:web-email-pro -->
+<!-- CP-NAV-END:web-zimbra -->
+<!-- CP-NAV-END:web-mx-plan -->
 
 ## Email FAQ
 
@@ -84,16 +118,14 @@ Below is a summary table of key email features, sorted by technology and configu
 
 /// details | How do I identify the technology used on my **MX Plan** solution?
 
-The email technology used for your MX Plan solution is characterized by its webmail interface. To identify it via the OVHcloud Control Panel, follow this path:
+The email technology used for your MX Plan solution is characterized by its webmail interface. To identify it via the OVHcloud Control Panel:
 
-1. Log in to your [OVHcloud Control Panel](/links/manager).
-1. Go to the `Web Cloud`{.action} section.
-1. Click `MX Plan`{.action}.
-1. Select the domain concerned.
+<!-- CP-STEPS-START:faq-identify-technology -->
 1. From the `General Information`{.action} tab, select by default.
 1. Note the technology used as **Webmail**.
 
 ![MX Plan](images/technology-email.png){.thumbnail .w-500}
+<!-- CP-STEPS-END:faq-identify-technology -->
 
 ///
 
@@ -271,8 +303,11 @@ For security and confidentiality reasons, it is not possible to **retrieve** a p
 
 /// details | How do I limit the amount of SPAM I receive?
 
-To limit the receipt of SPAM, you can set up filters on your emails (called "Filters" on the MX Plan solution). The purpose of these emails is to delete or move them into the SPAM folder as soon as they are received.  
-To do this, log in to your [OVHcloud Control Panel](/links/manager), go to the `Web Cloud`{.action} section, and click `MX Plan`{.action}. Select the domain concerned, then click on the `Emails`{.action} tab, then in the `Filters` column, click on the "Account filter management" icon.
+To limit the receipt of SPAM, you can set up filters on your emails (called “Filters” on the MX Plan solution). The purpose of these emails is to delete or move them into the SPAM folder as soon as they are received.
+
+<!-- CP-STEPS-START:faq-spam-filters -->
+To do this, click on the `Emails`{.action} tab, then in the `Filters` column, click on the “Account filter management” icon.
+<!-- CP-STEPS-END:faq-spam-filters -->
 
 If the `Filters` column is not present in your Control Panel, you will need to create filters via mailbox rules in the [webmail](/links/web/email). You can refer to the following guide for more details: “[Inbox rules from the OWA interface](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/creating-inbox-rules-in-owa-mx-plan)”.
 

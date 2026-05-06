@@ -27,6 +27,17 @@ Możesz dodać serwer zapasowy lub zastąpić tę konfigurację Twoją. Serwery 
 - Dostęp administratora do instancji przez SSH lub RDP
 - Podstawowa wiedza w zakresie sieci i administracji
 
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Ścieżka nawigacji:** `Public Cloud`{.action} > Wybierz projekt
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
+
 ## W praktyce
 
 Zaloguj się do instancji przez SSH. Więcej informacji na ten temat znajdziesz w przewodniku "[Logowanie do instancji Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps#connect-instance)".

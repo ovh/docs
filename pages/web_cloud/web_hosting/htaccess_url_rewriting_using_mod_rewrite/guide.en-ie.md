@@ -30,6 +30,18 @@ The **mod_rewrite** module offers an infinite number of possibilities. Below are
 
 - An [OVHcloud Web Hosting plan](/links/web/hosting)
   
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Web hosting](/links/control-panel/web-hosting)
+- **Navigation path:** `Web Cloud`{.action} > `Hosting plans`{.action} > Select your web hosting plan
+
+---
+<!-- CP-NAV-END:web-hosting -->
+
 ## Instructions
 
 > [!warning]

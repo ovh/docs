@@ -39,22 +39,35 @@ OVHcloud ist weltweit tätig, insbesondere in Europa, den USA, Kanada und im Asi
 
 Für eine optimale Leistung sollte eine Region so nah wie möglich an den Benutzern ausgewählt werden. Um weltweit verfügbar zu sein, müssen die Dienste über mehrere Regionen verteilt sein. Die 3-AZ-Region ist ideal für Kunden, die höchste Resilienz suchen, und sollte für die Erstellung von Multi-AZ-Anwendungsentwürfen verwendet werden.
 
-Im [OVHcloud Kundencenter](/links/manager) können Sie Ihre Cluster in der Liste der `Dedicated Server`{.action} im Menü `Bare Metal Cloud`{.action} sehen, indem Sie zum Tab `3-AZ Cluster`{.action} wechseln.
+<!-- CP-NAV-START:baremetal-dedicated-servers -->
+---
 
-![list_clusters](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/dedicated-servers/general-information/clusters1.png){.thumbnail}
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direkter Link:** [Dedicated Server](/links/control-panel/baremetal-dedicated-servers)
+- **Navigationspfad:** `Bare Metal Cloud`{.action} > `Dedicated Server`{.action} > Wählen Sie Ihren Server aus
+
+---
+<!-- CP-NAV-END:baremetal-dedicated-servers -->
+
+Wechseln Sie zum Tab `3-AZ Cluster`{.action}.
+
+![Tab "3-AZ Cluster" mit verfügbaren Clustern](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/dedicated-servers/general-information/clusters1.png){.thumbnail}
 
 Klicken Sie auf den Cluster-Namen in der Tabelle, um die Details anzuzeigen.
 
-![list_clusters](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/dedicated-servers/general-information/clusters2.png){.thumbnail}
+![Cluster-Detailseite mit Verfügbarkeitszonen-Informationen](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/dedicated-servers/general-information/clusters2.png){.thumbnail}
 
 Klicken Sie auf den Tab `Nodes`{.action}, um die Serverliste des Clusters zu öffnen.
 
-![list_clusters](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/dedicated-servers/general-information/clusters3.png){.thumbnail}
+![Tab "Nodes" mit der Liste der Server im Cluster](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/dedicated-servers/general-information/clusters3.png){.thumbnail}
 
 Durch Klicken auf einen Server-/Knotennamen in dieser Liste öffnet sich der Tab `Allgemeine Informationen`{.action} des Servers. Einzelheiten zu diesem Bereich finden Sie in unserer Anleitung:
 
 [Erste Schritte mit einem Dedicated Server](/pages/bare_metal_cloud/dedicated_servers/getting-started-with-dedicated-server)
 
 ## Weiterführende Informationen <a name="go-further"></a>
+
+- [vRack auf Ihren Dedicated Servern konfigurieren](/pages/bare_metal_cloud/dedicated_servers/vrack_configuring_on_dedicated_server)
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

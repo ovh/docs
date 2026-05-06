@@ -1,6 +1,6 @@
 ---
-title: "Come salvare le chiavi SSH nello Spazio Cliente"
-excerpt: "Scopri come importare chiavi SSH pubbliche nello Spazio Cliente OVHcloud"
+title: "Salvare le chiavi SSH di un server dedicato nello Spazio Cliente"
+excerpt: "Importa e gestisci le tue chiavi SSH pubbliche nello Spazio Cliente OVHcloud per un deploy rapido sui tuoi server dedicati"
 updated: 2024-12-04
 ---
 
@@ -13,13 +13,23 @@ Le coppie di chiavi vengono utilizzate per autenticare le connessioni SSH tra gl
 ## Prerequisiti
 
 - Un [server dedicato](/links/bare-metal/bare-metal) o un [VPS](/links/bare-metal/vps) nel tuo account OVHcloud
-- Accesso allo [Spazio Cliente OVHcloud](/links/manager)
 
 > [!primary]
 >
-> Per maggiori informazioni sull'utilizzo delle chiavi SSH con i servizi [Public Cloud](/links/public-cloud/public-cloud), consulta la nostra guida dedicata:
+> Per maggiori informazioni sull’utilizzo delle chiavi SSH con i servizi [Public Cloud](/links/public-cloud/public-cloud), consulta la nostra guida dedicata:
 >
 > [Come creare chiavi SSH con OpenSSH per le istanze Public Cloud](/pages/public_cloud/compute/creating-ssh-keys-pci)
+
+<!-- CP-NAV-START:billing-services -->
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [My services](/links/control-panel/billing-services)
+- **Percorso di navigazione:** Clicca sul tuo nome in alto a destra > `Le mie offerte e servizi`{.action}
+
+---
+<!-- CP-NAV-END:billing-services -->
 
 ## Procedura
 
@@ -27,8 +37,6 @@ Se non hai ancora creato coppie di chiavi SSH, consulta le nostre guide:
 
 - [Creare e utilizzare chiavi SSH](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated)
 - [Tutorial - Come utilizzare PuTTY per connessioni SSH e autenticazione](/pages/web_cloud/web_hosting/ssh_using_putty_on_windows)
-
-Accedi allo [Spazio Cliente OVHcloud](/links/manager), clicca sul nome dell’account in alto a destra e apri `Le mie offerte e servizi`{.action}.
 
 ![products and services](/pages/assets/screens/control_panel/product-selection/right-menu/my-solutions-and-services.png){.thumbnail}
 

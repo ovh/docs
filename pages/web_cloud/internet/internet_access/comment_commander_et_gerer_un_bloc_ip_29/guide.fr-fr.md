@@ -13,31 +13,39 @@ Un bloc IP vous permet d'associer des équipements de votre réseau interne à u
 ## Prérequis
 
 - Disposer d'un [accès Internet xDSL ou FTTH OVHcloud](/links/telecom/offre-internet).
-- Être connecté à l'[espace client OVHcloud](/links/manager) dans la partie `Telecom`{.action}.
 - Avoir la possibilité de se connecter à l'interface de votre box OVHcloud.
 - Disposer d'une box OVHcloud compatible avec la configuration d'un bloc IP.
 
 > [!primary]
 >
-> La configuration d'un bloc IP n'est pas possible sur le modèle de box suivant : Technicolor TG799vac. 
+> La configuration d'un bloc IP n'est pas possible sur le modèle de box suivant : Technicolor TG799vac.
 >
 > Si vous le possédez, vous pouvez utiliser votre propre routeur en adaptant les éléments de la documentation à votre situation.
 >
+
+<!-- CP-NAV-START:telecom-xdsl-fttx -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Accès Internet](/links/control-panel/telecom-xdsl-fttx)
+- **Pour accéder à vos services :** `Télécom`{.action} > `Offres Internet`{.action} > Sélectionnez votre accès
+
+---
+<!-- CP-NAV-END:telecom-xdsl-fttx -->
 
 ## En pratique
 
 ### Étape 1 : retrouver les IP associées à votre accès <a name="trouver-ip-associees"></a>
 
-1. Connectez-vous à votre [espace client OVHcloud](/links/manager) et cliquez sur `Télécom`{.action}.
-1. Cliquez sur `Offres Internet`{.action} puis sur le *Pack* contenant l'accès à Internet concerné.
-1. Cliquez sur votre accès à Internet FTTH ou xDSL dans le cadre `Accès Internet` à droite.
-1. Assurez-vous d'être positionné sur l'onglet `Mon accès`{.action}.
+<!-- CP-STEPS-START:etape-1-trouver-ip -->
+Depuis votre [espace client OVHcloud](/links/control-panel/telecom-xdsl-fttx), cliquez sur votre accès à Internet FTTH ou xDSL dans le cadre `Accès Internet` à droite, puis positionnez-vous sur l'onglet `Mon accès`{.action}.
 
 ![blocip](images/blocip-step01-edit-2022.png){.thumbnail}
 
 Sur la page, dans le cadre « Caractéristiques », reportez-vous aux éléments de la partie `IPs`. Vous retrouverez dans cette dernière les adresses IP associées à votre accès à Internet. Concernant les adresses IPv4, deux lignes peuvent apparaître :
 
-- l'adresse IP initiale de votre accès à Internet suivie du masque /32;
+- l'adresse IP initiale de votre accès à Internet suivie du masque /32 ;
 - une adresse IP associée à un bloc /29.
 
 Si vous ne possédez pas de bloc IP /29, vous pouvez en commander un en cliquant sur le bouton `Commander`{.action} puis en suivant les étapes.
@@ -46,7 +54,7 @@ Si vous ne possédez pas de bloc IP /29, vous pouvez en commander un en cliquant
 
 Collectez à présent les adresses IP qui serviront lors des étapes suivantes. Pour cela :
 
-- **récupérez l'adresse initiale de votre accès à Internet** : elle apparaît à côté du masque /32;
+- **récupérez l'adresse initiale de votre accès à Internet** : elle apparaît à côté du masque /32 ;
 - **récupérez les huit adresses IP (dont cinq associables à vos équipements)** : aidez-vous du tableau ci-dessous pour les retrouver.
 
 |Types d'adresses|Description|Exemple|
@@ -57,19 +65,22 @@ Collectez à présent les adresses IP qui serviront lors des étapes suivantes. 
 |Adresse de diffusion (_broadcast_)|Elle représente la dernière adresse de votre bloc IP /29. Celle-ci n'est pas associable à l'un de vos équipements.|1.1.1.7|
 
 Vous devez à présent avoir récupéré l'adresse IP initiale (mentionnée à côté du masque /32) et vos huit adresses du bloc /29.
+<!-- CP-STEPS-END:etape-1-trouver-ip -->
 
 ### Étape 2 : désactiver la prise en main à distance de la box
 
+<!-- CP-STEPS-START:etape-2-desactiver-prise-en-main -->
 > [!primary]
 >
 > Si vous possédez une box Technicolor ou Thomson (excepté le modèle Technicolor TG799vac) et souhaitez utiliser les API d'OVHcloud (utilisateurs experts) pour configurer le bloc IP : poursuivez directement vers l'étape 3.1 « [Configuration sur une box Technicolor ou Thomson](#conf-tecnhicolor) ».
 >
 
-Afin que la configuration du bloc IP puisse s'effectuer en local sur votre box OVHcloud, il est impératif de désactiver la prise en main à distance de celle-ci. Pour cela, toujours depuis votre [espace client OVHcloud](/links/manager) sur l’accès à Internet concerné, positionnez-vous sur l'onglet `Mon modem`{.action}.
+Afin que la configuration du bloc IP puisse s'effectuer en local sur votre box OVHcloud, il est impératif de désactiver la prise en main à distance de celle-ci. Pour cela, toujours depuis votre [espace client OVHcloud](/links/control-panel/telecom-xdsl-fttx) sur l'accès à Internet concerné, positionnez-vous sur l'onglet `Mon modem`{.action}.
 
 Sur la page, dans la partie « Configuration générale », assurez-vous de décocher la case à côté de `Configuration à distance activée`{.action} et confirmez le changement en cliquant sur `Ok`{.action}. Patientez alors le temps de la désactivation. 
 
 ![blocip](images/blocip-step04-edit-2022.png){.thumbnail}
+<!-- CP-STEPS-END:etape-2-desactiver-prise-en-main -->
 
 ### Étape 3 : configurer le bloc IP sur votre box
 
@@ -230,7 +241,9 @@ Toujours dans le menu `Network Settings`{.action}, sélectionnez le menu `Broadb
 
 En cas de doute, le type de votre connexion est disponible sur l’espace client OVHcloud.
 
+<!-- CP-STEPS-START:type-connexion-espace-client -->
 ![blocip](images/blocip-step10-2022.png){.thumbnail}
+<!-- CP-STEPS-END:type-connexion-espace-client -->
 
 Dans la fenêtre qui apparaît, descendez jusqu'à la partie « Routing feature ». Désactivez le curseur à droite de `NAT`{.action}. Cliquez enfin sur le bouton `Apply`{.action}.
 
@@ -242,8 +255,8 @@ Votre bloc IP /29 étant à présent paramétré sur votre box OVHcloud, vous po
 
 Pour réaliser une configuration sur l'un de vos équipements, vous aurez besoin des trois informations suivantes :
 
-- **l'une des cinq adresses IP associables de votre bloc /29** : vous les avez récupérées lors de [l'étape 1](#trouver-ip-associees);
-- **l'adresse de passerelle de votre bloc /29** : vous l'avez récupérée lors de [l'étape 1](#trouver-ip-associees);
+- **l'une des cinq adresses IP associables de votre bloc /29** : vous les avez récupérées lors de [l'étape 1](#trouver-ip-associees) ;
+- **l'adresse de passerelle de votre bloc /29** : vous l'avez récupérée lors de [l'étape 1](#trouver-ip-associees) ;
 - **le masque de sous-réseau** : vous l'avez configuré lors de l'étape précédente ; il doit correspondre à `255.255.255.248`.
 
 Une fois cette opération effectuée depuis un ordinateur, vous aurez la possibilité de tester l'attribution de nouvelles adresses IP en réalisant un test de débit depuis notre site <http://ovh.net/>. À la fin, celles-ci apparaîtront à côté de **IPv4** à gauche.
@@ -252,7 +265,9 @@ Une fois cette opération effectuée depuis un ordinateur, vous aurez la possibi
 
 ### Résiliation du bloc IP /29
 
+<!-- CP-STEPS-START:resiliation-bloc-ip -->
 Si vous souhaitez résilier votre bloc IP /29, suivez le cheminement décrit dans [l'étape 1](#trouver-ip-associees) puis cliquez sur l'icône `corbeille`{.action} à droite de votre bloc IP /29.
+<!-- CP-STEPS-END:resiliation-bloc-ip -->
 
 ## Aller plus loin
 

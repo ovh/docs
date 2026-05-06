@@ -1,7 +1,7 @@
 ---
 title: Object Storage - Utiliser Object Storage avec Rclone
 excerpt: Découvrez comment configurer Rclone afin de synchroniser vos fichiers vers et depuis Object Storage
-updated: 2024-12-19
+updated: 2026-03-06
 ---
 
 ## Objectif
@@ -20,14 +20,14 @@ updated: 2024-12-19
 ## Prérequis
 
 - Avoir créé un bucket
-- Avoir créé un utilisateur et avoir défini les droits d'accès requis sur le bucket
+- Avoir créé un utilisateur avec les droits d'accès requis sur le bucket
 - Connaître vos informations d'identification Object Storage (access_key et secret_access_key).
 
 Consultez notre guide « [Débuter avec Object Storage](/pages/storage_and_backup/object_storage/s3_getting_started_with_object_storage) » pour plus de détails.
 
 > [!primary]
 >
-> Afin d'identifier votre Endpoint correspondant à votre classe de stockage, veuillez vous référer à ce guide : [Object Storage - Endpoints et géo-disponibilité de l’Object Storage](/pages/storage_and_backup/object_storage/s3_location)
+> Pour identifier le point de terminaison correspondant à votre classe de stockage, consultez ce guide : [Object Storage - Endpoints et géo-disponibilité de l’Object Storage](/pages/storage_and_backup/object_storage/s3_location)
 >
 
 ## En pratique
@@ -54,37 +54,37 @@ RClone est maintenant prêt à être utilisé.
 Lister tous les buckets :
 
 ```bash
-$ rclone lsd <profile_name>:
+rclone lsd <remote_name>:
 ```
 
 Créer un nouveau bucket :
 
 ```bash
-$ rclone mkdir <profile_name>:mybucket
+rclone mkdir <remote_name>:<bucket_name>
 ```
 
 Lister le contenu d'un bucket :
 
 ```bash
-$ rclone ls <profile_name>:mybucket
+rclone ls <remote_name>:<bucket_name>
 ```
 
-Synchroniser `/home/user/documents` vers un bucket :
+Synchroniser un répertoire local vers un bucket :
 
 ```bash
-$ rclone sync /home/user/documents <profile_name>:mybucket
+rclone sync <source_directory> <remote_name>:<bucket_name>
 ```
 
-Copier un fichier `/home/user/file.txt` dans un bucket :
+Copier un fichier dans un bucket :
 
 ```bash
-$ rclone copy /home/user/file.txt <profile_name>:mybucket
+rclone copy <file_path> <remote_name>:<bucket_name>
 ```
 
-Télécharger un fichier `file.txt` depuis un bucket :
+Télécharger un fichier depuis un bucket :
 
 ```bash
-$ rclone copy <profile_name>:mybucket/file.txt fichier.txt
+rclone copy <remote_name>:<bucket_name>/<object_key> <destination_file_path>
 ```
 
 Vous trouverez sur le site officiel de Rclone une documentation précise des actions possibles: [Documentation officielle Rclone](https://rclone.org/docs/).

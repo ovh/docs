@@ -103,7 +103,7 @@ If you have any queries, please refer to [Nginx official website](https://www.ng
 >> Secure the installation:
 >> 
 >> ```bash
->> sudo mysql_secure_installation
+>> sudo mariadb-secure-installation
 >> ```
 >> 
 >> Set a password for your DBMS and follow the on-screen instructions. Once the MariaDB (or MySQL) installation is complete, the following message should appear:

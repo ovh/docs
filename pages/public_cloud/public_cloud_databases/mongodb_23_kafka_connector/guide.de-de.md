@@ -1,5 +1,5 @@
 ---
-title: MongoDB - Kafka Connector
+title: Set up a Kafka integration for Public Cloud Databases for MongoDB
 excerpt: Setup MongoDB Kafka Connector with OVHcloud
 updated: 2025-01-06
 ---

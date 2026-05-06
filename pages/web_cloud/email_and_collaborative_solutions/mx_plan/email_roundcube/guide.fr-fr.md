@@ -1,6 +1,6 @@
 ---
 title: 'Utiliser son adresse e-mail depuis le webmail Roundcube'
-updated: 2025-11-12
+updated: 2026-05-04
 ---
 
 ## Objectif
@@ -13,7 +13,7 @@ Avec l'offre MX Plan OVHcloud, vous pouvez envoyer et recevoir des e-mails depui
 
 - Disposer d'une solution e-mail OVHcloud **MX Plan**, proposée parmi nos [offres d’hébergement web](/links/web/hosting), incluse dans un [hébergement gratuit 100M](/links/web/domains-free-hosting), ou commandée séparément comme solution autonome.
 - Disposer des informations de connexion à l’adresse e-mail MX Plan que vous souhaitez consulter. Pour plus d'informations, consultez notre guide [Premiers pas avec l'offre MX Plan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities).
-- Votre solution e-mail OVHcloud **MX Plan** doit utiliser la technologie webmail **Roundcube**. Pour identifgier celle-ci, suivez les instructions ci-dessous.
+- Votre solution e-mail OVHcloud **MX Plan** doit utiliser la technologie webmail **Roundcube**. Pour l'identifier, suivez les instructions ci-dessous.
 
 > [!primary]
 > 
@@ -25,10 +25,20 @@ Avec l'offre MX Plan OVHcloud, vous pouvez envoyer et recevoir des e-mails depui
 > 1. Rendez-vous dans la partie `Web Cloud`{.action}.
 > 1. Cliquez sur `MX Plan`{.action}.
 > 1. Sélectionnez le domaine concerné.
-> 1. Depuis l'onglet `Informations Générales`{.action}, sélectionné par défaut.
-> 1. Relevez la technologie utilisée sous la mention **Webmail**.
+> 1. Depuis l'onglet `Informations générales`{.action} (sélectionné par défaut), relevez la technologie utilisée sous la mention **Webmail**.
 >
 > ![MX plan](images/technology-email.png){.thumbnail .w-500}
+
+<!-- CP-NAV-START:web-mx-plan -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [MX Plan](/links/control-panel/web-mx-plan)
+- **Pour accéder à vos services :** `Web Cloud`{.action} > `MX Plan`{.action} > Sélectionnez votre service MX Plan
+
+---
+<!-- CP-NAV-END:web-mx-plan -->
 
 ## En pratique
 
@@ -52,18 +62,18 @@ Avec l'offre MX Plan OVHcloud, vous pouvez envoyer et recevoir des e-mails depui
     - [Paramètres du serveur](#server-settings)
     - [Chiffrement](#encryption)
 - [Gérer les identités et leur signature](#identity-signature)
-    - [Identity](#identity)
+    - [Identité](#identity)
     - [Signature](#signature)
 - [Carnet de contacts](#contact-book)
     - [Groupes](#group)
     - [Contacts](#contacts)
-    - [Importer des Contacts](#import-contacts)
-    - [Exporter les Contacts Roundcube](#export-contacts)
+    - [Importer des contacts](#import-contacts)
+    - [Exporter les contacts](#export-contacts)
 - [Réponses (gabarits)](#responses)
 - [Ajouter un répondeur ou réponse automatique](#automatic-respond)
-- [Modifier le mot de passe de votre adresse-mail](#password)
+- [Modifier le mot de passe de votre adresse e-mail](#password)
 - [Rédaction d'un e-mail](#email-writing)
-- [Cas d'usages](#usecase)
+- [Cas d'usage](#usecase)
 
 ### Se connecter au webmail Roundcube <a name="roundcube-connexion"></a>
 
@@ -118,20 +128,32 @@ Les cases à cocher au niveau des dossiers correspondent aux « abonnements ». 
 
 Cette fenêtre affiche le contenu du dossier sélectionné dans la colonne de gauche. 
 
-##### **Type d'affichage** <a name="topwindow-display"></a>
+##### Type d'affichage <a name="topwindow-display"></a>
 
 Cette fenêtre est présentée sous une forme qui peut être personnalisée. Pour cela, cliquez sur la roue crantée située en haut à gauche de cette fenêtre.
 
 ![hosting](images/roundcube03.png){.thumbnail}
 
-Il est possible de paramétrer les éléments suivants :
+Quatre paramètres sont configurables :
 
-- **Disposition** : permet de déterminer la disposition des fenêtres de gestion d'un compte e-mail.
-- **Colonnes de la liste** : permet d'ajouter des colonnes à afficher (priorités des e-mails, etc.).
-- **Colonne de tri** : permet de choisir la colonne sur laquelle le tri par défaut sera effectué.
-- **Ordre de tri** : permet de choisir l'ordre de tri ascendant ou descendant, en fonction de la colonne de tri.
+- **Disposition** : définit l'agencement des fenêtres de gestion d'un compte e-mail. Trois options :
+    - `Écran large`{.action} (*Widescreen*) : trois panneaux côte à côte — dossiers, liste des e-mails et volet de lecture alignés horizontalement ;
+    - `Bureau`{.action} (*Desktop*) : liste des e-mails en haut, volet de lecture en dessous (disposition classique) ;
+    - `Liste`{.action} (*List*) : pas de volet de lecture — les e-mails s'ouvrent en pleine fenêtre au clic.
 
-##### **Action sur un e-mail sélectionné** <a name="topwindow-action"></a>
+- **Colonnes de la liste** : cases à cocher déterminant les colonnes affichées dans la liste des e-mails. Les colonnes **Sujet** et **Fils de discussion** sont toujours visibles. Colonnes optionnelles disponibles : `De`{.action}, `Pour`{.action}, `De/Pour`{.action}, `Répondre à`{.action}, `Copie`{.action}, `Date`{.action}, `Taille`{.action}, `État lu`{.action}, `Pièces jointes`{.action}, `Indicateur`{.action}, `Priorité`{.action}.
+
+- **Colonne de tri** : permet de choisir la colonne de tri par défaut. Options disponibles : `Aucun`{.action}, `Date d'arrivée`{.action}, `Date d'envoi`{.action}, `Sujet`{.action}, `De`{.action}, `Pour`{.action}, `De/Pour`{.action}, `Copie`{.action} ou `Taille`{.action}.
+
+- **Ordre de tri** : ascendant ou descendant.
+
+Cliquez sur `Enregistrer`{.action} pour appliquer vos choix.
+
+> [!primary]
+>
+> Vous pouvez aussi **trier dynamiquement la liste** en cliquant directement sur l'en-tête d'une colonne affichée (par exemple **Date**, **Sujet** ou **Taille**). Un second clic sur la même colonne inverse l'ordre.
+
+##### Action sur un e-mail sélectionné <a name="topwindow-action"></a>
 
 Lorsqu'un e-mail est sélectionné, il est possible d'agir sur celui-ci. Voici les actions possibles :
 
@@ -157,24 +179,26 @@ Lorsqu'un e-mail est sélectionné, il est possible d'agir sur celui-ci. Voici l
 > Si l'un de vos correspondants demande à ce qu'un accusé de lecture lui soit adressé lorsque vous lisez son e-mail, vous obtiendrez le message suivant : `l'expéditeur de ce message a demandé d'être prévenu quand vous lirez ce message. Souhaitez-vous prévenir l'expéditeur ?`.
 >
 
-##### **Rechercher un e-mail** <a name="topwindow-search"></a>
+##### Rechercher un e-mail <a name="topwindow-search"></a>
 
 Un outil de recherche est disponible dans la partie supérieure droite de l'interface.
 
-Cliquez sur la flèche située à droite de la loupe pour afficher les filtres de recherche.
+Saisissez un terme dans le champ de recherche, puis validez avec la touche `Entrée`{.action} : Roundcube effectue par défaut la recherche sur l'ensemble du dossier courant.
+
+Cliquez sur la flèche située à droite de la loupe pour afficher les filtres de recherche : vous pouvez restreindre la recherche à certains champs (sujet, corps du message, expéditeur, destinataires, etc.) ou étendre sa portée à tous les dossiers.
 
 #### Contenu d'un e-mail (fenêtre inférieure) <a name="lowerwindow"></a>
 
 Lorsqu'un e-mail est sélectionné dans la liste, celui-ci s'affiche dans la fenêtre inférieure.
 
-Retrouvez les raccourcies, sur la droite, des fonctions suivantes :
+Sur la droite, retrouvez les raccourcis des fonctions ci-dessous :
 
-- Afficher au format HTML (par défaut)
-- Afficher  au format texte en clair
-- Répondre
-- Répondre à tous
-- Transférer
-- Afficher dans une nouvelle fenêtre 
+- `Afficher au format HTML`{.action} (par défaut)
+- `Afficher au format texte en clair`{.action}
+- `Répondre`{.action}
+- `Répondre à tous`{.action}
+- `Transférer`{.action}
+- `Afficher dans une nouvelle fenêtre`{.action}
 
 ![hosting](images/roundcube05.png){.thumbnail}
 
@@ -186,18 +210,18 @@ Les chapitres suivants de ce guide correspondent aux onglets qui composent la pa
 
 #### Interface utilisateur <a name="user-interface-settings"></a>
 
-Définissez ici la `langue` d'usage de l'interface Roundcube, le `fuseau horaire`,le `format horaire` et le `format de date`.
+Définissez ici la `langue` d'usage de l'interface Roundcube, le `fuseau horaire`, le `format horaire` et le `format de date`.
 
 L'option `Jolies dates` permet d'afficher la date de réception/d'envoi avec des termes relatifs tels qu’« Aujourd’hui », « Hier », etc.<br>
-**Par exemple** : nous sommes le **19/05/2022**, un e-mail envoyé/reçu le **17/05/2022** à **17:38** sera affiché **Mar 17:38**, car l'email correspond au mardi qui précède.
+**Par exemple** : nous sommes le **19/05/2022**, un e-mail envoyé/reçu le **17/05/2022** à **17:38** sera affiché **Mar 17:38**, car l'e-mail correspond au mardi qui précède.
 
-La case `Afficher la prochaine entrée de la liste après suppression ou déplacement` signifie qu'après une action de suppression ou déplacement sur un e-mail, l'élément de la ligne inférieure sera alors systématiquement sélectionné, quelque soit l'ordre de tri.
+La case `Afficher la prochaine entrée de la liste après suppression ou déplacement` signifie qu'après une action de suppression ou déplacement sur un e-mail, l'élément de la ligne inférieure sera alors systématiquement sélectionné, quel que soit l'ordre de tri.
 
 Vous pouvez choisir l'esthétique d'affichage de votre interface. Vous avez le choix entre l'affichage **Classic** ou l'affichage **Larry**.
 
 #### Vue de la boîte de courriels <a name="mail-view-settings"></a>
 
-Définissez ici l'ergonomie pour visualiser et agir sur les e-mails. L'option `Disposition` permet d'agencer les 3 fenêtres décrites dans la partie [Interface générale du webmail Roundcube](#topwindow).
+Définissez ici l'ergonomie pour visualiser et agir sur les e-mails. L'option `Disposition` permet d'agencer les 3 fenêtres décrites dans la partie [Liste des e-mails reçus / envoyés](#topwindow).
 
 #### Affichage des courriels <a name="mail-display-settings"></a>
 
@@ -226,22 +250,22 @@ Nous ne conseillons pas de les modifier mais il est possible d'attribuer le comp
 
 #### Paramètres du serveur <a name="server-settings"></a>
 
-Dans cet onglet, vous pouvez optimiser l'espace occupé sur un compte e-mail. En effet, l'option `Vider la corbeille à la déconnexion` permet d'éviter le cumul des éléments qui ont été supprimés . L'option `Supprimer directement les pourriels` supprimera automatiquement tous les e-mail considérés comme SPAM.
+Dans cet onglet, vous pouvez optimiser l'espace occupé sur un compte e-mail. En effet, l'option `Vider la corbeille à la déconnexion` permet d'éviter le cumul des éléments qui ont été supprimés. L'option `Supprimer directement les pourriels` supprimera automatiquement tous les e-mails considérés comme spam.
 
 > [!warning]
 > 
-> Il est déconseillé d'activer l'option `Supprimer directement les pourriels`, dans le cas de figure où un faux positif (e-mail déclaré à tort comme « SPAM ») se retrouverait déclaré comme SPAM pour le serveur de réception. En effet, lorsqu'un e-mail est placé dans le dossier « Pourriels », il est encore possible de vérifier si l'e-mail est légitime.
+> Il est déconseillé d'activer l'option `Supprimer directement les pourriels`, dans le cas de figure où un faux positif (e-mail déclaré à tort comme « spam ») se retrouverait déclaré comme spam pour le serveur de réception. En effet, lorsqu'un e-mail est placé dans le dossier « Pourriels », il est encore possible de vérifier si l'e-mail est légitime.
 
 #### Chiffrement <a name="encryption"></a>
 
-Si votre navigateur vous le permet, vous pouvez installer et activer l'extension « Mailvelope ». Il s'agit d'une extension de navigateur qui intègre le PGP (**P**retty **G**ood **P**rivacy) dans votre messagerie web. Le système de chiffrement PGP et, par conséquent, l'extension « Mailveloppe » permettent de :
+Si votre navigateur vous le permet, vous pouvez installer et activer l'extension « Mailvelope ». Il s'agit d'une extension de navigateur qui intègre le PGP (**P**retty **G**ood **P**rivacy) dans votre messagerie web. Le système de chiffrement PGP et, par conséquent, l'extension « Mailvelope » permettent de :
 
 - Chiffrer et déchiffrer des e-mails dans votre navigateur.
-- Garder le contenu de vos e-mails privé vis à vis de votre fournisseur de messagerie.
+- Garder le contenu de vos e-mails privé vis-à-vis de votre fournisseur de messagerie.
 
 Vous êtes ainsi seul à pouvoir lire vos e-mails. Cette extension est un moyen de sécuriser votre webmail si vous recevez des e-mails de nature confidentielle.
 
-Pour plus d'informations, consultez la FAQ de « Mailvelope » à l'adresse <https://mailvelope.com/faq>.
+Pour plus d'informations, consultez la FAQ de « Mailvelope » à l'adresse <https://mailvelope.com/fr/faq>.
 
 ### Gérer les identités et leur signature <a name="identity-signature"></a>
 
@@ -251,7 +275,7 @@ Depuis Roundcube, cliquez sur `Paramètres`{.action} dans la barre supérieure, 
 
 #### Paramétrer les attributs d'une identité <a name="identity"></a>
 
-- **Nom d'affichage** : ce nom apparaîtra dans la partie « expéditeur » du destinataire
+- **Nom d'affichage** : ce nom apparaîtra dans la partie « expéditeur » du destinataire.
 - **Courriel** : correspond à l'adresse depuis laquelle est envoyé l'e-mail.
 - **Organisation** : champ destiné au nom de société, association, ou une autre entité.
 - **Répondre à** : attribuer une autre adresse e-mail de réponse que celle de l'expéditeur.
@@ -262,7 +286,7 @@ Depuis Roundcube, cliquez sur `Paramètres`{.action} dans la barre supérieure, 
 
 > [!alert]
 >
-> Compléter la case **Courriel** par une adresse e-mail différente de celle sur laquelle vous êtes connecté est considéré comme une usurpation d'identité électronique (*spoofing*). L'adresse IP utilisée pour l'envoi risque d'être « bannie » et/ou considérée comme « SPAM » auprès de vos destinataires.
+> Compléter la case **Courriel** par une adresse e-mail différente de celle sur laquelle vous êtes connecté est considéré comme une usurpation d'identité électronique (*spoofing*). L'adresse IP utilisée pour l'envoi risque d'être « bannie » et/ou considérée comme « spam » auprès de vos destinataires.
 
 #### Ajouter une signature <a name="signature"></a>
 
@@ -279,9 +303,8 @@ Pour insérer une image dans une signature, l'image doit être hébergée sur un
 
 Cliquez sur le bouton `< >`{.action} dans la barre d'outils HTML, puis insérez le code suivant, en remplaçant `your-image-url` par l'adresse (URL) de l'image et `text-if-image-is-not-displayed` par un texte qui remplace l'image si celle-ci ne peut pas s'afficher.
 
-```bash
+```html
 <img src="your-image-url" border="0" alt="text-if-image-is-not-displayed" />
-
 ```
 
 ![hosting](images/roundcube08.png){.thumbnail}
@@ -292,7 +315,7 @@ Cliquez sur `Contacts`{.action}, dans la barre supérieure, pour accéder au car
 
 - **Groupes** : dans le carnet d'adresses, vous pouvez créer des groupes pour classer les contacts.
 - **Contacts** : visualisez les contacts du carnet d'adresses ou du groupe sélectionné.
-- **Propriétés du contact** ou **Ajouter un contact** : cette fenêtre s'affiche lorsque qu'un contact est sélectionné ou lorsqu'il est en création. Vous pouvez y lire ou modifier les informations d'un contact.
+- **Propriétés du contact** ou **Ajouter un contact** : cette fenêtre s'affiche lorsqu'un contact est sélectionné ou lorsqu'il est en création. Vous pouvez y lire ou modifier les informations d'un contact.
 
 ![hosting](images/roundcube09.png){.thumbnail}
 
@@ -323,19 +346,19 @@ Complétez ensuite les informations du contact.
 > [!primary]
 > Vous pouvez ajouter des champs supplémentaires via le menu déroulant `Ajouter un champ...`{.action}, situé sous les champs `Prénom` et `Adresse`.
 
-#### Importer des Contacts <a name="import-contacts"></a>
+#### Importer des contacts <a name="import-contacts"></a>
 
 Depuis la fenêtre `Contacts`{.action}, dans la barre supérieure, cliquez sur `importer`{.action} pour ouvrir la fenêtre d'importation.
 
 - `Importer d’un fichier` : sélectionnez un fichier CSV ou un fichier vCard sur votre ordinateur. Les contacts au sein d'un fichier CSV doivent être séparés par des virgules. Le fichier ne doit pas faire plus de 20 Mo.
-- `Importer les affectations de groupe` : Si les contacts de votre fichier sont répartis par groupes, vous pouvez activer cette option pour retrouver cette organisaton ou bien laisser cette option sur `aucune` pour qu'aucun groupe ne soit affecté aux contacts.
+- `Importer les affectations de groupe` : Si les contacts de votre fichier sont répartis par groupes, vous pouvez activer cette option pour retrouver cette organisation ou bien laisser cette option sur `aucune` pour qu'aucun groupe ne soit affecté aux contacts.
 - `Remplacer le carnet d’adresses entier`: Si un carnet est déjà configuré, nous vous conseillons de l'exporter avant de cocher cette option ou d'être certain de vouloir définitivement le remplacer.
 
 ![hosting](images/roundcube-import-contact.png){.thumbnail}
 
-#### Exporter les Contacts <a name="export-contacts"></a>
+#### Exporter les contacts <a name="export-contacts"></a>
 
-Depuis la fenêtre `Contacts`{.action}, dans la barre supérieure, cliquez sur la flêche pointant vers le bas à droite du bouton `Exporter`{.action}.
+Depuis la fenêtre `Contacts`{.action}, dans la barre supérieure, cliquez sur la flèche pointant vers le bas à droite du bouton `Exporter`{.action}.
 
 Vous avez le choix entre :
 
@@ -362,7 +385,7 @@ Pour ajouter une réponse, cliquez sur le bouton `+`{.action} en bas de la colon
 
 Vous souhaitez ajouter une réponse automatique à votre adresse e-mail lorsque vous êtes absent ou indisponible. Cette fonction ne peut pas s'activer depuis le webmail mais depuis votre [espace client OVHcloud](/links/manager), dans l'interface de gestion de vos adresses e-mail. Consultez notre guide « [Créer un répondeur pour son adresse e-mail](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/feature_auto_responses/) ».
 
-### Modifier le mot de passe de votre adresse-mail <a name="password"></a>
+### Modifier le mot de passe de votre adresse e-mail <a name="password"></a>
 
 Pour modifier le mot de passe de votre adresse e-mail, vous devez vous connecter à votre [espace client OVHcloud](/links/manager), dans l'interface de gestion de vos adresses e-mail. Consultez notre guide « [Modifier le mot de passe d'une adresse e-mail](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_change_password/) ».
 
@@ -373,15 +396,15 @@ Depuis l'onglet `Courriel`{.action} dans la barre supérieure, cliquez sur `Réd
 Dans la fenêtre de rédaction d'un e-mail, on retrouve les champs suivants :
 
 - **De** : choisir une [identité](#identity) pour définir l'expéditeur.
-- **À+** : ajouter des destinataires et/ou un [groupe de destinataires](#group).
+- **À** : ajouter des destinataires et/ou un [groupe de destinataires](#group). Le bouton `+`{.action} à droite du champ permet de saisir plusieurs adresses.
 
 > [!primary]
 >
-> Le champ **«À»** ne doit pas excéder les 100 destinataires, cela inclut les contacts contenus dans un [groupe](#group).
+> Le champ **« À »** ne doit pas excéder les 100 destinataires, cela inclut les contacts contenus dans un [groupe](#group).
 
-- **Ajouter Cc+** : ajouter des destinataires en copie simple.
-- **Ajouter Cci+** : ajouter des destinataires en copie cachée. Les autres destinataires de l'e-mail ne verront pas ceux en Cci.
-- **Ajouter Transférer à** : faire suivre l'e-mail à des destinataires.
+- **Cc** : via le bouton `Ajouter Cc`{.action}, ajouter des destinataires en copie simple.
+- **Cci** : via le bouton `Ajouter Cci`{.action}, ajouter des destinataires en copie cachée. Les autres destinataires de l'e-mail ne verront pas ceux en Cci.
+- **Transférer à** : via le bouton `Ajouter Transférer à`{.action}, faire suivre l'e-mail à des destinataires.
 - **Type d'éditeur** :
     - `Texte en clair` : uniquement du texte sans mise en forme.
     - `HTML`: texte avec mise en forme. Une barre d'outils HTML apparaît au-dessus de la fenêtre de saisie.
@@ -394,7 +417,7 @@ Dans la barre supérieure, les actions suivantes sont disponibles :
 
 - `Annuler`{.action} la rédaction d'un e-mail avec une demande de confirmation.
 - `Envoyer`{.action} un e-mail.
-- `Enregistrer`{.action} un e-mail dans le dossier spécial « brouillon »
+- `Enregistrer`{.action} un e-mail dans le dossier spécial « brouillon ».
 - `Orthographe`{.action}, pour vérifier le texte, avec un menu permettant le choix de la langue.
 - `Joindre`{.action} un fichier à un e-mail.
 - `Signature`{.action} : ajoute la signature attachée à [l'identité](#identity) sélectionnée.
@@ -402,7 +425,7 @@ Dans la barre supérieure, les actions suivantes sont disponibles :
 
 ![hosting](images/roundcube13.png){.thumbnail}
 
-### Cas d'usages <a name="usecase"></a>
+### Cas d'usage <a name="usecase"></a>
 
 #### Échec de la vérification de la demande
 

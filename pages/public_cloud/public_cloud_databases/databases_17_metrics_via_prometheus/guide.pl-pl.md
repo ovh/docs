@@ -1,5 +1,5 @@
 ---
-title: Public Cloud Databases - How to fetch service metrics with Prometheus
+title: Fetch service metrics with Prometheus for Public Cloud Databases
 excerpt: Find out how to setup a Prometheus exporter for your Public Cloud databases service
 updated: 2024-12-11
 ---

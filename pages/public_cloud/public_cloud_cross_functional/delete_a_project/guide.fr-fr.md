@@ -21,11 +21,19 @@ Lorsque vous supprimez un projet, les ressources qu'il contient sont définitive
 ## Prérequis
 
 - Un [projet Public Cloud](/links/public-cloud/public-cloud) dans votre compte OVHcloud
-- Être connecté à votre [espace client OVHcloud](/links/manager)
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Accès à l’espace client OVHcloud
+
+- **Lien direct :** [Projets Public Cloud](/links/control-panel/publiccloud-projects)
+- **Pour accéder à vos services :** `Public Cloud`{.action} > Sélectionnez votre projet
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## En pratique
-
-Connectez-vous à l’[espace client OVHcloud](/links/manager), rendez-vous dans la section `Public Cloud`{.action} et sélectionnez le projet Public Cloud concerné.
 
 Cliquez sur `Paramètres du projet`{.action} dans la partie **Paramètres** tout en bas du menu latéral de gauche.
 

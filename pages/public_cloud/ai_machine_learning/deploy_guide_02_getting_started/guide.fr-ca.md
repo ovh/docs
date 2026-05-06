@@ -1,7 +1,7 @@
 ---
 title: AI Deploy - Premiers pas (EN)
 excerpt: Découvrez AI Deploy et lancez votre première application
-updated: 2025-12-17
+updated: 2026-03-18
 ---
 
 > [!primary]
@@ -24,7 +24,7 @@ This guide explains how to get started with OVHcloud AI Deploy, covering the dep
 
 ### Subscribe to AI Deploy
 
-Log in to the [OVHcloud Control Panel](/links/manager), navigate to the `Public Cloud`{.action} section, select your desired Public Cloud project, then go to the `AI & Machine Learning`{.action} category in the left menu and choose `AI Deploy`{.action}.
+Click [this link](/links/control-panel/publiccloud-projects) to access your Public Cloud project, then go to the `AI & Machine Learning`{.action} category in the left menu and choose `AI Deploy`{.action}.
 
 Click on the `Deploy an app`{.action} button and accept the terms and conditions if any.
 
@@ -101,7 +101,7 @@ Then you can modify the **Number of replicas** on which your AI Deploy app will 
 
 The **static scaling** strategy allows you to choose a fixed number of replicas on which the app will be deployed. For this method, the minimum number of replicas is **1** and the maximum is **10**. This strategy is useful when your consumption or inference load is fixed. Moreover, it allows you to have fixed costs.
 
-With the **autoscaling strategy**, it is possible to choose both the minimum number of replicas (1 by default) and the maximum number of replicas. **High availability** will measure the average resource usage across its replicas and add instances if this average exceeds the specified average usage percentage threshold. Conversely, it will remove instances when this average resource utilisation falls below the threshold. The monitored metric can either be `CPU` or `RAM`, or a custom metric. This solution might be better if you have irregular or sawtooth inference loads.
+With the **autoscaling strategy**, it is possible to choose both the minimum number of replicas (1 by default) and the maximum number of replicas. **High availability** will measure the average resource usage across its replicas and add instances if this average exceeds the specified average usage percentage threshold. Conversely, it will remove instances when this average resource utilisation falls below the threshold. You can even downscale to 0 if you have no usage, thereby limiting costs. The monitored metric can either be `CPU` or `RAM`, or a custom metric. This solution might be better if you have irregular or sawtooth inference loads.
 
 For more detailed information about scaling strategies, please refer to our dedicated guide: [AI Deploy - Scaling strategies](/pages/public_cloud/ai_machine_learning/deploy_guide_04_scaling_strategies).
 
@@ -290,11 +290,7 @@ You have the flexibility to keep your AI Deploy app running for an indefinite pe
 > [!tabs]
 > **Using the Control Panel (UI)**
 >>
->> First, go to the `Public Cloud`{.action} section of the [OVHcloud Control Panel](/links/manager).
->>
->> Then, select the `AI Deploy`{.action} section, which allows you to manage and access all your created apps.
->> 
->> Locate the specific AI Deploy app you want to stop. Click the `...`{.action} button and stop your AI Deploy application by selecting `Stop`{.action} from the context menu.
+>> Click [this link](/links/control-panel/publiccloud-projects) to access your Public Cloud project, then select the `AI Deploy`{.action} section. Locate the specific AI Deploy app you want to stop. Click the `...`{.action} button and stop your AI Deploy application by selecting `Stop`{.action} from the context menu.
 >>
 >> ![image](images/step-11-stop-app.png){.thumbnail}
 >>

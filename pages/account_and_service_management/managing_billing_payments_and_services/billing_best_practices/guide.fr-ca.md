@@ -13,7 +13,17 @@ Ce guide contient les éléments indispensables à une bonne gestion de votre co
 ## Prérequis
 
 - Disposer d'un ou plusieurs services OVHcloud actifs.
-- Être connecté à votre [espace client OVHcloud](/links/manager).
+
+<!-- CP-NAV-START:billing-services -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Mes offres et services](/links/control-panel/billing-services)
+- **Pour y accéder :** Cliquez sur votre nom en haut à droite > `Mes offres et services`{.action}
+
+---
+<!-- CP-NAV-END:billing-services -->
 
 ## En pratique
 
@@ -31,10 +41,7 @@ Pour que les mesures de sécurité soient efficaces, assurez-vous que vos adress
 
 Vos informations personnelles (adresse postale, e-mail, etc.) doivent être à jour sur votre compte client afin de garantir la sécurité et le bon fonctionnement de vos services.
 
-Vérifiez vos informations personnelles en cliquant, en haut à droite de votre [espace client OVHcloud](/links/manager), sur votre nom, puis sur `Mon compte`{.action}.<br>
-Dans la section `Mon profil`{.action} à droite de votre écran (cliquez à nouveau sur votre nom pour faire disparaître le menu de gauche), cliquez sur `...`{.action}, puis sur `Modifier mon profil`{.action}.
-
-![myprofile](images/myprofile.png){.thumbnail}
+Vérifiez vos informations personnelles sur la page [Mon profil](/links/control-panel/account-profile).
 
 Pour plus d'informations, consultez le guide [Sécuriser mon compte OVHcloud et gérer mes informations personnelles](/pages/account_and_service_management/account_information/all_about_username#comment-gerer-mes-informations-personnelles).
 
@@ -45,8 +52,7 @@ Assurez-vous que votre adresse e-mail est toujours **à jour, sécurisée et acc
 > Ajoutez également un **e-mail de secours** à vos informations personnelles pour vous prémunir de toute perte d’accès à votre compte client OVHcloud.
 >
 
-Les e-mails envoyés par OVHcloud sont également accessibles depuis votre [espace client OVHcloud](/links/manager).<br>
-Cliquez sur votre nom en haut à droite de votre écran puis sur `Mes communications`{.action} dans le menu de droite.
+Les e-mails envoyés par OVHcloud sont également accessibles depuis la page [Messages](/links/control-panel/account-messages).
 
 ![service_emails](/pages/assets/screens/control_panel/product-selection/right-menu/my-messages.png){.thumbnail}
 
@@ -56,7 +62,7 @@ Cliquez sur votre nom en haut à droite de votre écran puis sur `Mes communicat
 
 > [!primary]
 >
-> Afin d’éviter toute interruption de service et pour le bon fonctionnement du renouvellement automatique, [enregistrez un moyen de paiement](/pages/account_and_service_management/managing_billing_payments_and_services/manage-payment-methods) dans votre [espace client OVHcloud](/links/manager)
+> Afin d’éviter toute interruption de service et pour le bon fonctionnement du renouvellement automatique, [enregistrez un moyen de paiement](/pages/account_and_service_management/managing_billing_payments_and_services/manage-payment-methods) dans votre [espace client OVHcloud](/links/control-panel/billing-payment-methods)
 >
 > Assurez-vous régulièrement que votre moyen de paiement est **valide**.
 >
@@ -71,20 +77,17 @@ Si vous décidez de ne pas activer le renouvellement automatique, vous recevrez 
 
 ### Suivi de vos commandes
 
-Saviez-vous que vous pouviez [suivre vos commandes](/pages/account_and_service_management/managing_billing_payments_and_services/managing_ovh_orders) dans votre [espace client OVHcloud](/links/manager) ?<br>
-Il vous suffit de cliquer sur le logo d'OVHcloud en haut à gauche de votre écran puis de cliquer sur `Voir mes commandes`{.action}.
+Saviez-vous que vous pouviez [suivre vos commandes](/pages/account_and_service_management/managing_billing_payments_and_services/managing_ovh_orders) depuis la page [Mes commandes](/links/control-panel/billing-orders) ?
 
 Vous serez informé des étapes de la livraison et vous saurez si des actions sont nécessaires de votre côté.
 
 ### Résiliation de services
 
-Si vous souhaitez ne plus utiliser l'un de vos services, vous pouvez le résilier, passer son renouvellement en mode manuel ou le supprimer immédiatement depuis votre [espace client OVHcloud](/links/manager).
+Si vous souhaitez ne plus utiliser l’un de vos services, vous pouvez le résilier, passer son renouvellement en mode manuel ou le supprimer immédiatement depuis la page [Mes offres et services](/links/control-panel/billing-services). Cliquez sur le bouton `...`{.action} correspondant au service sur lequel vous souhaitez agir, puis cliquez sur l’un des boutons suivants :
 
-Cliquez d'abord sur votre nom en haut à droite de votre écran puis sur `Mes offres & services`{.action}. Sur le côté droit de votre écran, cliquez sur le bouton `...`{.action} correspondant au service sur lequel vous souhaitez agir puis cliquez sur l'un des boutons suivants :
-
-- `Configurer le renouvellement`{.action} : sur l'écran suivant, vous pourrez passer le `Type de renouvellement` de votre service à `Manuel`. Cliquez ensuite sur `Suivant`{.action} et `Confirmer`{.action}. Avant la date d'expiration de votre service, vous recevrez plusieurs notifications par e-mail. Si vous ne renouvelez pas votre service, il sera supprimé **définitivement**.
-- `Résilier mon service`{.action} : sur l'écran suivant, indiquez les raisons de votre demande de résiliation puis cliquez sur `Confirmer`{.action}. À la date d’expiration de votre service, il sera supprimé **définitivement**.
-- `Supprimer immédiatement`{.action} : sur l'écran suivant, cliquez sur `Confirmer`{.action}. Un e-mail de confirmation vous sera envoyé. Suite à votre validation, votre service sera supprimé **immédiatement et définitivement**.
+- `Configurer le renouvellement`{.action} : sur l’écran suivant, vous pourrez passer le `Type de renouvellement` de votre service à `Manuel`. Cliquez ensuite sur `Suivant`{.action} et `Confirmer`{.action}. Avant la date d’expiration de votre service, vous recevrez plusieurs notifications par e-mail. Si vous ne renouvelez pas votre service, il sera supprimé **définitivement**.
+- `Résilier mon service`{.action} : sur l’écran suivant, indiquez les raisons de votre demande de résiliation puis cliquez sur `Confirmer`{.action}. À la date d’expiration de votre service, il sera supprimé **définitivement**.
+- `Supprimer immédiatement`{.action} : sur l’écran suivant, cliquez sur `Confirmer`{.action}. Un e-mail de confirmation vous sera envoyé. Suite à votre validation, votre service sera supprimé **immédiatement et définitivement**.
 
 Pour obtenir plus d’informations sur la résiliation de vos services, consultez le guide [Comment résilier vos services OVHcloud](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_cancel_services).
 

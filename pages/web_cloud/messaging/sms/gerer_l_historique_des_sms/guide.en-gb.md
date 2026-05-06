@@ -5,12 +5,23 @@ updated: 2025-12-30
 ---
 
 ## Objective
+
 You can view and download a log of your sent SMS messages from your OVHcloud Control Panel. This guide will explain how to do this.
 
 ## Requirements
 
 - An OVHcloud SMS account with at least 1 sent SMS.
-- You must be logged in to [OVHcloud Control Panel](/links/manager), in the `Telecom`{.action} section, then `SMS`{.action}.
+
+<!-- CP-NAV-START:telecom-sms -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [SMS](/links/control-panel/telecom-sms)
+- **Navigation path:** `Telecom`{.action} > `SMS`{.action} > Select your SMS account
+
+---
+<!-- CP-NAV-END:telecom-sms -->
 
 ![SMS Control Panel](/pages/assets/screens/control_panel/product-selection/telecom/tpl-telecom-03-en-sms.png){.thumbnail}
 
@@ -25,10 +36,9 @@ The log records the date, time, sender, recipient and contents of the sent SMS.
 > To view older SMS messages (up to the last 12 months), you will need to download your SMS history in CSV format. See [Step 2 of this guide](#csv).
 >
 
-### Step 1: viewing the log in your Control Panel
+### Step 1: Viewing the log in your Control Panel
 
-Log in to the [OVHcloud Control Panel](/links/manager), then select `Telecom`{.action}. Next, click `SMS`{.action} and select your SMS account.
-
+<!-- CP-STEPS-START:view-sms-log -->
 In the tab bar, click `Message and campaign`{.action} then `SMS Management`{.action} to access your unit SMS history or `Campaign Management`{.action} to access your SMS campaign history.
 
 Then click on `Sending log`{.action} or `Statistics and history`{.action}.
@@ -50,14 +60,17 @@ To delete several SMS messages at once, tick the boxes next to each message. The
 The `Filter`{.action} button allows you to filter your search by sender (if you have several senders) or by recipient.
 
 ![sms-history](images/smshistory5.png){.thumbnail}
+<!-- CP-STEPS-END:view-sms-log -->
  
-### Step 2: downloading the sending log as a CSV <a name="csv"></a>
- 
+### Step 2: Downloading the sending log as a CSV <a name="csv"></a> 
+
+<!-- CP-STEPS-START:download-sms-csv -->
 Click on the `Actions`{.action} button above your log then on `Download`{.action} to download your SMS log in a .csv format. 
  
 ![sms-history](images/smshistory6.png){.thumbnail}
+<!-- CP-STEPS-END:download-sms-csv -->
  
-You can then view the log using a spreadsheet program. The information will be able to be displayed such as in the example below.
+You can then view the log using a spreadsheet program. The information will display as in the example below.
 
 ![sms-history](images/smshistory7.png){.thumbnail}
 

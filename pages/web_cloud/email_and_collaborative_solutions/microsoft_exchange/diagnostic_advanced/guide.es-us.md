@@ -1,9 +1,8 @@
 ---
 title: Uso del diagnóstico de errores Exchange
 excerpt: 'Cómo realizar un diagnóstico automatizado de los errores en las cuentas Exchange'
-updated: 2025-04-28
+updated: 2026-01-22
 ---
-
 
 ## Objetivo
 
@@ -15,17 +14,22 @@ Los errores en las cuentas de correo Exchange pueden tener múltiples causas. Un
 
 - Tener una [solución Exchange de OVHcloud](/links/web/emails-hosted-exchange) ya instalada.
 - Disponer de las claves de acceso para la cuenta Exchange que debe verificar.
-- Estar conectado al [área de cliente de OVHcloud.](/links/manager)
 - Estar actualizado en los [pagos](/pages/account_and_service_management/managing_billing_payments_and_services/invoice_management#pay-bills) de este servicio y del dominio asociado.
+
+<!-- CP-NAV-START:web-exchange -->
+---
+
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [Exchange](/links/control-panel/web-exchange)
+- **Ruta de navegación:** `Web Cloud`{.action} > `Exchange`{.action} > Seleccione su plataforma
+
+---
+<!-- CP-NAV-END:web-exchange -->
 
 ## Procedimiento
 
 ### Realizar un diagnóstico
-
-1. Conéctese al [área de cliente de OVHcloud](/links/manager).
-1. Acceda al apartado `Web Cloud`{.action}.
-1. En la sección `MICROSOFT`, haga clic en `Exchange`{.action}.
-1. Seleccione la plataforma correspondiente.
 
 ![Diagnóstico Exchange](images/img_4450.png){.thumbnail}
 
@@ -84,19 +88,7 @@ En función del uso de su servicio Exchange, son válidos los siguientes servido
 
 - Solo Exchange: mx0.mail.ovh.ca, mx1.mail.ovh.ca mx2.mail.ovh.ca, mx3.mail.ovh.ca & mx4.mail.ovh.ca
 - Exchange + Correo POP/IMAP alojado en OVHcloud: mx0.mail.ovh.ca, mx1.mail.ovh.ca mx2.mail.ovh.ca, mx3.mail.ovh.ca & mx4.mail.ovh.ca
-- Exchange + Correo POP/IMAP no alojado en OVHcloud: ex<b>?</b>.mail.ovh.ca
-
-<a name="hostname"></a>
-
-> [!warning]
-> En nuestras guías utilizamos como nombre de servidor: ex<b>?</b>.mail.ovh.ca. Debe reemplazar el "?" por el número correspondiente al servidor de su servicio Exchange.<br>
-> Puede consultar esta información en el área de cliente de OVHcloud, en la sección `Web Cloud`{.action}. Abra `Microsoft`{.action} y seleccione `Exchange`{.action}. El nombre del servidor aparece en la pestaña **Conexión** de la `Información general`{.action}.
->
-
-> [!primary]
->
-> El nombre técnico de un servicio Exchange de OVHcloud se compone de un prefijo (**hosted-** o **private-**), una parte de su "identificador de cliente" y un número incremental que indica el número de servicios Exchange alojados o privados registrados en su cuenta de cliente.
->
+- Exchange + Correo POP/IMAP no alojado en OVHcloud: `ex.mail.ovh.ca`
 
 ### El registro SRV del dominio no es válido
 
@@ -112,7 +104,7 @@ Subdominio | _autodiscover._tcp
 Prioridad | 0
 Peso | 0
 Puerto | 443
-Destino | [ex<b>?</b>.mail.ovh.ca](#hostname) (sustituya "?" por el número correspondiente al servidor de su servicio Exchange)
+Destino | ex.mail.ovh.ca
 
 ### El mensaje de correo de prueba no se ha podido enviar desde la cuenta
 

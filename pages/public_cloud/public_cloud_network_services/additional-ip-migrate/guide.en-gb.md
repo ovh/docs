@@ -19,11 +19,21 @@ Being able to migrate IP addresses generally limits or removes the possibility t
 
 - At least two [Public Cloud instances](/links/public-cloud/public-cloud) in your OVHcloud account
 - An Additional IP address
-- Access to the [OVHcloud Control Panel](/links/manager)
 
 > [!warning]
 > This feature is currently not available for Metal instances.
 >
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Navigation path:** `Public Cloud`{.action} > Select your project
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## Instructions
 
@@ -32,9 +42,8 @@ Being able to migrate IP addresses generally limits or removes the possibility t
 > An Additional IP cannot be moved between different zones. For example, an IP located in the SBG data centre can be moved to GRA or RBX, but cannot be moved to BHS.
 >
 
-Log in to the [OVHcloud Control Panel](/links/manager), go to the `Public Cloud`{.action} section and select the Public Cloud project concerned.
-
-In the left-hand menu, open `Public IPs`{.action} under **Network**. Click on the `Additional IP`{.action} tab.
+<!-- CP-STEPS-START:migrate-additional-ip -->
+In the left-hand menu, open `Public IPs`{.action} under **Network**, then click on the `Additional IP`{.action} tab.
 
 In this example, the Additional IP address routed to "Instance_A" will be migrated to "Instance_B".
 
@@ -56,6 +65,7 @@ After a few seconds, the Control Panel will be updated and a confirmation messag
 >
 The Additional IP can be configured on the destination server before or after carrying out the migration. If it was preconfigured, it will begin to respond as soon as the routing operation is completed.
 >
+<!-- CP-STEPS-END:migrate-additional-ip -->
 
 ## Go further
 

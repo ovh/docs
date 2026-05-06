@@ -1,6 +1,6 @@
 ---
-title: 'Backing up data and databases on a Storage Server'
-excerpt: 'Find out how to secure your data in five steps'
+title: "Back up Data and Databases on a Dedicated Server"
+excerpt: "Back up your data and databases to the integrated storage space on your OVHcloud dedicated server in five steps."
 updated: 2018-09-12
 ---
 
@@ -178,3 +178,11 @@ The syntax for a *crontab* is specific. We will not detail it here, but there ar
 You have configured an OVHcloud Storage Server that suits your needs, and automated a basic schedule for backing up the files stored on it. This is an important step to avoid data loss, and secure your business.
 
 As mentioned earlier, there are other free and paid methods you can use to further optimise your backups. If your data is sensitive, we also strongly advise encrypting it, and only transferring it via private networks such as the OVHcloud vRack.
+
+## Go further
+
+[How to use the backup storage on a Dedicated Server](/pages/bare_metal_cloud/dedicated_servers/services_backup_storage)
+
+[Customising Dedicated Server Partitions via OVHcloud API](/pages/bare_metal_cloud/dedicated_servers/partitioning_ovh)
+
+Join our [community of users](/links/community).

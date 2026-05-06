@@ -1,6 +1,6 @@
 ---
-title: 'Configuring IP aliasing'
-excerpt: 'Find out how to add Additional IP addresses to your server configuration'
+title: "Configure IP Aliasing on a Dedicated Server"
+excerpt: "Add and configure Additional IP addresses on your OVHcloud dedicated server for multi-site or service hosting."
 updated: 2025-12-04
 ---
 
@@ -55,7 +55,7 @@ IP aliasing is a special network configuration for your OVHcloud dedicated serve
 The following sections contain configurations for the distributions we currently offer and the most commonly used distributions/operating systems. The first step is always to log in to your server via SSH or a GUI login session (RDP for a Windows server). 
 
 > [!primary]
-> Concerning different distribution releases, please note that the proper procedure to configure your network interface as well as the file names may have been subject to change. We recommend to consult the manuals and knowledge resources of the respective OS versions if you experience any issues.
+> Concerning different distribution releases, the procedure for configuring your network interface and file names may have changed. We recommend consulting the manuals and knowledge resources of the respective OS versions if you experience any issues.
 > 
 
 **Please take note of the following terminology that will be used in code examples and instructions of the guide sections below:**
@@ -66,7 +66,7 @@ The following sections contain configurations for the distributions we currently
 |NETWORK_INTERFACE|The name of the network interface|*eth0*, *ens3*|
 |ID|ID of the IP alias, starting with *0* (depending on the number of additional IPs there are to configure)|*0*, *1*|
 
-In the examples below, we will use the `nano` text editor. With some operating systems, you will need to install it first before using it. If this is the case, you will be prompted to do so. You can, of course, use the text editor of your choice.
+In the examples below, we will use the `nano` text editor. With some operating systems, you will need to install it first. If this is the case, you will be prompted to do so. You can, of course, use the text editor of your choice.
 
 > [!success]
 > Select the tab corresponding to your operating system.
@@ -107,7 +107,7 @@ In the examples below, we will use the `nano` text editor. With some operating s
 >>
 >> Next, you need to add a virtual interface or ethernet alias. In our example, our interface is called `eth0`, so our alias is `eth0:0`. Do this for each additional IP you wish to configure.
 >>
->> Do not modify the existing lines in the configuration file, simply add your Additional IP to the file as follows, replacing `ADDITIONAL_IP/32` as well as the virtual interface (if your server is not using **eth0:0**) wih your own values:
+>> Do not modify the existing lines in the configuration file, simply add your Additional IP to the file as follows, replacing `ADDITIONAL_IP/32` as well as the virtual interface (if your server is not using **eth0:0**) with your own values:
 >>
 >> ```console
 >> auto eth0:0
@@ -223,7 +223,7 @@ In the examples below, we will use the `nano` text editor. With some operating s
 >> nmcli connection show
 >> ```
 >>
->> Do not modify the existing lines in the configuration file, add your Additional IP to the file as follows, replacing `ADDITIONAL_IP/32` wih your own values:
+>> Do not modify the existing lines in the configuration file, add your Additional IP to the file as follows, replacing `ADDITIONAL_IP/32` with your own values:
 >>
 >> ```bash
 >> sudo nano /etc/NetworkManager/system-connections/cloud-init-eno1.nmconnection
@@ -353,7 +353,7 @@ In the examples below, we will use the `nano` text editor. With some operating s
 >>
 >> The main configuration file is located in `/etc/sysconfig/network-scripts/`. In this example it is called `ifcfg-eth0`. Before making changes, verify the actual file name in this folder.
 >>
->> For each Additional IP to be configured, we create a seperate configuration file with the following parameters: `ifcfg-NETWORK_INTERFACE:ID`. Where `NETWORK_INTERFACE` is the physical interface and `ID` is the virtual network interface or ethernet alias starting with a value of 0. For example, for our interface named `eth0` the first alias is `eth0:0`, the second alias is `eth0:1`, etc...
+>> For each Additional IP to be configured, we create a separate configuration file with the following parameters: `ifcfg-NETWORK_INTERFACE:ID`. Where `NETWORK_INTERFACE` is the physical interface and `ID` is the virtual network interface or ethernet alias starting with a value of 0. For example, for our interface named `eth0` the first alias is `eth0:0`, the second alias is `eth0:1`, etc...
 >>
 >> **Step 1: Determine the interface**
 >>
@@ -494,13 +494,13 @@ In the examples below, we will use the `nano` text editor. With some operating s
 >>
 >> /// details | **Via the graphical user interface**
 >>
->> 1. Go to `Start`{.action}> `Control Panel`{.action}>` Network and Internet`{.action}> `Network and Sharing Centre`{.action}> `Change Adapter Settings `{.action}(in the left-hand menu).
+>> 1. Go to `Start`{.action} > `Control Panel`{.action} > `Network and Internet`{.action} > `Network and Sharing Centre`{.action} > `Change Adapter Settings`{.action} (in the left-hand menu).
 >> 2. Right-click on your network connection, in our example `Ethernet 2`{.action}.
 >> 3. Click on `Properties`{.action}.
 >> 4. Select `Internet Protocol Version 4 (TCP/IPv4)`{.action}, then click on `Properties`{.action}.
->> 5. Click on `Use the following IP address`{.action} and type in your server’s primary IP, subnet mask and default gateway information obtained by using the `ipconfig`{.action} command above. In the "Preferred DNS Server" box, type 213.186.33.99.
+>> 5. Click on `Use the following IP address`{.action} and type in your server’s primary IP, subnet mask and default gateway information obtained by using the `ipconfig` command above. In the "Preferred DNS Server" box, type 213.186.33.99.
 >>
->> ![Internet Protocol Version 4 (TCP/IPv4) Properties](images/configure-main-ip.png){.thumbnail}
+>> ![TCP/IPv4 Properties with primary IP address and DNS configured](images/configure-main-ip.png){.thumbnail}
 >>
 >> > [!warning]
 >> >
@@ -509,7 +509,7 @@ In the examples below, we will use the `nano` text editor. With some operating s
 >>
 >> Then click on `Advanced`{.action} (still in the `TCP/IP Settings`{.action}).
 >>
->> ![Internet Protocol Version 4 (TCP/IPv4) Properties](images/configure-main-ip-1.png){.thumbnail}
+>> ![TCP/IPv4 Properties with Advanced button highlighted](images/configure-main-ip-1.png){.thumbnail}
 >>
 >> In the `IP Address`{.action} section, click `Add`{.action}:
 >>
@@ -550,11 +550,11 @@ In the examples below, we will use the `nano` text editor. With some operating s
 >>
 >> In this section, click on the button `Add IP Address`{.action}.
 >>
->> ![add ip information](images/Plesk-2024.png){.thumbnail}
+>> ![Plesk Add IP Address button in the IP management section](images/Plesk-2024.png){.thumbnail}
 >>
 >> Enter your Additional IP in the form `xxx.xxx.xxx.xxx/32` into the field "IP address and subnet mask", then click on `OK`{.action}.
 >>
->> ![add ip information](images/Plesk-2024-1.png){.thumbnail}
+>> ![Plesk form with Additional IP and subnet mask fields](images/Plesk-2024-1.png){.thumbnail}
 >>
 >> **Step 3: Check the current IP configuration**
 >>
@@ -565,7 +565,7 @@ In the examples below, we will use the `nano` text editor. With some operating s
 
 ### Troubleshooting
 
-In some cases, you need to reboot your server if restarting the interface does not work. Restart your server from the command line or its GUI. If you are still unable to establish a connection from the public network to your Additional IP and suspect a network problem, you need to reboot the server in [rescue mode](/pages/bare_metal_cloud/dedicated_servers/rescue_mode). Then you can set up the Additional IP address directly on the server.
+If restarting the interface does not work, reboot your server from the command line or its GUI. If you are still unable to establish a connection from the public network to your Additional IP and suspect a network problem, you need to reboot the server in [rescue mode](/pages/bare_metal_cloud/dedicated_servers/rescue_mode). Then you can set up the Additional IP address directly on the server.
 
 Once you are connected to your server via SSH, enter the following command:
 
@@ -573,9 +573,7 @@ Once you are connected to your server via SSH, enter the following command:
 ifconfig eth0:0 ADDITIONAL_IP netmask 255.255.255.255 broadcast ADDITIONAL_IP up
 ```
 
-To test the connection, simply ping your Additional IP from the outside. If it responds in rescue mode, that probably means that there is a configuration error. If, however, the IP is still not working, please open a ticket with the support team via the [OVHcloud Help Center](https://help.ovhcloud.com/csm?id=csm_get_help) with the following information:
-
-It is necessary to provide:
+To test the connection, ping your Additional IP from outside. If it responds in rescue mode, this indicates a configuration error. If, however, the IP is still not working, please open a ticket with the support team via the [OVHcloud Help Center](https://help.ovhcloud.com/csm?id=csm_get_help) with the following information:
 
 - The operating system name and version you are using on your server.
 - The name and directory of the network configuration file.
@@ -585,5 +583,7 @@ It is necessary to provide:
 ## Go further
 
 [Configuring a network bridge](/pages/bare_metal_cloud/dedicated_servers/network_bridging)
+
+[Moving an Additional IP on a Dedicated Server](/pages/bare_metal_cloud/dedicated_servers/move-failover-ip)
 
 Join our [community of users](/links/community).

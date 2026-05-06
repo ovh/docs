@@ -14,6 +14,17 @@ Este guia explica-lhe como assegurar a continuidade dos seus serviços migrando 
 
 - Dispor de uma oferta [VPS](/links/bare-metal/vps) com uma [distribuição compatível](/links/bare-metal/vps-os).
 
+<!-- CP-NAV-START:baremetal-vps -->
+---
+
+### Acesso à Área de Cliente OVHcloud
+
+- **Ligação direta:** [VPS management](/links/control-panel/baremetal-vps)
+- **Caminho de navegação:** `Bare Metal Cloud`{.action} > `Servidores Privados Virtuais`{.action} > Selecione o seu VPS
+
+---
+<!-- CP-NAV-END:baremetal-vps -->
+
 ## Instruções
 
 Os editores **Plesk** e **cPanel** anunciam o fim do suporte para os seguintes sistemas operativos:
@@ -41,8 +52,6 @@ Para obter mais informações de apoio, consulte a documentação oficial:
 > - [as recomendações do Plesk](https://docs.plesk.com/en-US/obsidian/administrator-guide/plesk-administration/securing-plesk.59464/).
 
 #### 1. Verificar o sistema atual
-
-Aceda à [Área de Cliente OVHcloud](/links/manager), vá à secção `Bare Metal Cloud`{.action} e selecione o seu servidor na parte `Servidores privados virtuais`{.action}.
 
 ![EOS Plesk cPanel](images/vpshome.png){.thumbnail}
 

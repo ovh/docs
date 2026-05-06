@@ -31,11 +31,21 @@ For OVHcloud web hosting plans, the certification authority delivering DV SSL ce
 
 ## Requirements
 
-- You have access to the [OVHcloud Control Panel](/links/manager).
 - You plan to order or have an [OVHcloud web hosting plan](/links/web/hosting).
 - You manage a [domain name](/links/web/domains) for which you have exclusive rights. The domain name must not already be linked to an SSL certificate.
 
-## Requirements
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Hosting plans](/links/control-panel/web-hosting)
+- **Navigation path:** `Web Cloud`{.action} > `Hosting plans`{.action} > Select your web hosting plan
+
+---
+<!-- CP-NAV-END:web-hosting -->
+
+## Instructions
 
 > [!warning]
 >
@@ -73,40 +83,36 @@ To check if this is the case, please refer to our guides below:
 
 ### Order the Sectigo DV SSL certificate
 
-Click on the tabs below to view each of the **5** steps in succession:
+<!-- CP-STEPS-START:order-sectigo-dv -->
+Click on the tabs below to view each of the **4** steps.
 
 > [!tabs]
 > **Step 1**
 >>
->> Log in to the [OVHcloud Control Panel](/links/manager), then go to the `Web Cloud`{.action} section.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Step 2**
->>
->> Click the `Hosting plans`{.action} menu, then select the web hosting plan concerned.
+>> Go to the [Hosting plans](/links/control-panel/web-hosting) page, then select the web hosting plan concerned.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Step 3**
+> **Step 2**
 >>
 >> On the page that pops up, click on the `SSL certificates`{.action} tab.
 >>
 >> ![SSL certificates](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ssl-certificates.png){.thumbnail}
 >>
-> **Step 4**
+> **Step 3**
 >>
 >> When the content of the tab appears, click `Order a Sectigo SSL certificate`{.action}.
 >>
 >> ![Sectigo SSL](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ssl-certificates/order-a-sectigo-ssl-certificate.png){.thumbnail}
 >>
-> **Step 5**
+> **Step 4**
 >>
 >> In the new window that opens, select the domain or subdomain concerned using the dropdown menu, then click `Confirm`{.action} to be redirected to the purchase order for your Sectigo DV SSL certificate.
 >>
 >> ![SSL Sectigo domain selection](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ssl-certificates/order-a-sectigo-ssl-certificate-select-domain.png){.thumbnail}
 >>
 >> Proceed with the order until you pay in order to validate the request to create the Sectigo DV SSL certificate for your domain name and/or subdomain on your Web Hosting plan.
+<!-- CP-STEPS-END:order-sectigo-dv -->
 
 > [!alert]
 >
@@ -118,32 +124,28 @@ It may take up to **24** hours to install the Sectigo DV SSL certificate.
 
 ### Check the activation of the Sectigo DV SSL certificate
 
-To verify that the installation is complete, click on the tabs below to display each of the **4** steps in succession:
+<!-- CP-STEPS-START:check-sectigo-dv -->
+To verify that the installation is complete, click on the tabs below to view each of the **3** steps.
 
 > [!tabs]
 > **Step 1**
 >>
->> Log in to the [OVHcloud Control Panel](/links/manager), then go to the `Web Cloud`{.action} section.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Step 2**
->>
->> Click the `Hosting plans`{.action} menu, then select the web hosting plan concerned.
+>> Go to the [Hosting plans](/links/control-panel/web-hosting) page, then select the web hosting plan concerned.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Step 3**
+> **Step 2**
 >>
 >> On the page that pops up, click on the `SSL certificates`{.action} tab.
 >>
 >> ![SSL certificates](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ssl-certificates.png){.thumbnail}
 >>
-> **Step 4**
+> **Step 3**
 >>
 >> When the content of the tab appears, check that each domain name and/or subdomain concerned is listed in the table with the certificate type SSL `Sectigo`.
 >>
 >> ![SSL certificate management panel](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ssl-certificates/tab.png){.thumbnail}
+<!-- CP-STEPS-END:check-sectigo-dv -->
 
 Your Sectigo DV SSL certificate is now installed and active. You can now use it with your web hosting and, for example, [enable HTTPS for your website](/pages/web_cloud/web_hosting/ssl-activate-https-website).
 

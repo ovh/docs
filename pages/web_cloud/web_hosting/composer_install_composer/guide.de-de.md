@@ -19,7 +19,6 @@ updated: 2023-03-07
 ## Voraussetzungen
 
 - Sie haben ein [OVHcloud Webhosting](/links/web/hosting) mit SSH-Zugang in Ihrem Kunden-Account.
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 
 ## In der praktischen Anwendung
 

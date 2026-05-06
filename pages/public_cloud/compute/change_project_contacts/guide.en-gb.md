@@ -14,12 +14,24 @@ Modifying these contacts enables you to separate the technical management of ser
 ## Requirements
 
 - A [Public Cloud project](/links/public-cloud/public-cloud) in your OVHcloud account
-- Access to the [OVHcloud Control Panel](/links/manager)
 - Admin and billing contacts in the same OVHcloud subsidiary
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Navigation path:** `Public Cloud`{.action} > Select your project
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## Instructions
 
-Log in to the [OVHcloud Control Panel](/links/manager), go to the `Public Cloud`{.action} section and select the Public Cloud project concerned. Click on `Contacts & Rights`{.action} in the left-hand menu under **Settings**.
+<!-- CP-STEPS-START:change-project-contacts -->
+
+Click on `Contacts & Rights`{.action} in the left-hand menu under **Settings**.
 
 On this page you can see the administrative and billing contacts associated with your project.
 
@@ -38,6 +50,8 @@ In the new window, enter the desired NIC handle for each contact you wish to cha
 Once you have clicked `Confirm`{.action}, both OVHcloud accounts affected by the change will receive a confirmation email. This email contains a token with which the contact change can be accepted in the tab `My requests`{.action} of the **Contact management** section.
 
 For a more detailed explanation of this process, please consult our guide [Managing contacts for your services](/pages/account_and_service_management/account_information/managing_contacts).
+
+<!-- CP-STEPS-END:change-project-contacts -->
 
 ## Go further
 

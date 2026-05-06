@@ -21,7 +21,17 @@ However, you can still connect to your instance via the OVHcloud rescue mode, wh
 ## Requirements
 
 - A [Public Cloud instance](/links/public-cloud/compute) in your OVHcloud account
-- Access to the [OVHcloud Control Panel](/links/manager)
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Navigation path:** `Public Cloud`{.action} > Select your project
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## Instructions
 
@@ -70,7 +80,9 @@ EEFFFFFFFFFFFFFGGGGGGGGGGGGGhhhhhhhhhhhhhhhhhhhhhhhhhh== new@sshkey
 
 For security reasons, delete the obsolete "old" key string from the file. Save your changes and exit the editor.
 
+<!-- CP-STEPS-START:restart-instance-normal-mode -->
 Restart the instance in "normal" mode from your [OVHcloud Control Panel](/links/manager). Refer to the [rescue mode guide](/pages/public_cloud/compute/put_an_instance_in_rescue_mode) if needed.
+<!-- CP-STEPS-END:restart-instance-normal-mode -->
 
 You have now access to the instance with your new SSH key pair.
 

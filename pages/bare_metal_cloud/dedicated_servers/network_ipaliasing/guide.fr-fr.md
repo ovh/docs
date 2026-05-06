@@ -1,6 +1,6 @@
 ---
-title: 'Configurer son adresse IP en alias'
-excerpt: 'Découvrez comment ajouter des Additional IP à votre configuration'
+title: "Configurer l'IP aliasing sur un serveur dédié"
+excerpt: "Ajoutez et configurez des adresses Additional IP sur votre serveur dédié OVHcloud pour un hébergement multi-sites ou multi-services"
 updated: 2025-12-04
 ---
 
@@ -68,7 +68,7 @@ Les sections suivantes contiennent les configurations des distributions que nous
 |NETWORK_INTERFACE|Nom de l'interface réseau|*eth0*, *ens3*|
 |ID|ID de l'alias IP, commençant par *0* (en fonction du nombre d'IP supplémentaires à configurer)|*0*, *1*|
 
-Dans les exemples ci-dessous, nous utiliserons l'éditeur de texte `nano`. Avec certains systèmes d'exploitation, vous devrez d'abord l'installer avant de l'utiliser. Si c'est le cas, vous serez invité à le faire. Vous pouvez bien sûr utiliser l'éditeur de texte de votre choix.
+Dans les exemples ci-dessous, nous utiliserons l'éditeur de texte `nano`. Avec certains systèmes d'exploitation, vous devrez d'abord l'installer. Si c'est le cas, vous serez invité à le faire. Vous pouvez bien sûr utiliser l'éditeur de texte de votre choix.
 
 > [!success]
 > Sélectionnez l'onglet correspondant à votre système d'exploitation.
@@ -196,7 +196,7 @@ Dans les exemples ci-dessous, nous utiliserons l'éditeur de texte `nano`. Avec 
 >>
 >> Fedora utilise dorénavant des fichiers clés (*keyfiles*).
 >> Fedora utilisait auparavant des profils réseau stockés par NetworkManager au format ifcfg dans le répertoire `/etc/sysconfig/network-scripts/`.<br>
->> Le ifcfg étant à présent déprécié, NetworkManager ne crée plus par défaut les nouveaux profils dans ce format. Le fichier de configuration se trouve à présent dans `/etc/NetworkManager/system-connections/`.
+>> L'ifcfg étant désormais déprécié, NetworkManager ne crée plus par défaut les nouveaux profils dans ce format. Le fichier de configuration se trouve dans `/etc/NetworkManager/system-connections/`.
 >>
 >> **Étape 1 : créer une sauvegarde**
 >>
@@ -422,7 +422,7 @@ Dans les exemples ci-dessous, nous utiliserons l'éditeur de texte `nano`. Avec 
 >>
 >> ![Ajouter une nouvelle adresse IP](images/Cpanel-1.png){.thumbnail}
 >>
->> **Étape 2 : Ajouter les informations des Additional IP**
+>> **Étape 2 : ajouter les informations des Additional IP**
 >>
 >> Renseignez votre adresse Additional IP sous la forme « xxx.xxx.xxx.xxx » dans le champ « New IP or IP range to add ».
 >>
@@ -435,7 +435,7 @@ Dans les exemples ci-dessous, nous utiliserons l'éditeur de texte `nano`. Avec 
 >> > Attention, si vous avez plusieurs IP à configurer sur un même bloc et que vous les ajoutez toutes en même temps, le système WHM vous forcera à utiliser le masque de sous-réseau `255.255.255.0`. Il n'est pas recommandé d'utiliser cette configuration, il faut ajouter chaque IP individuellement pour pouvoir utiliser le masque de sous-réseau approprié `255.255.255.255`.
 >> >
 >>
->> **Étape 3 : Vérifier la configuration IP actuelle**
+>> **Étape 3 : vérifier la configuration IP actuelle**
 >>
 >> De retour dans la section `IP Functions`{.action}, cliquez sur `Show or Delete Current IP Addresses`{.action} pour vérifier que l'adresse Additional IP a été correctement ajoutée.
 >>
@@ -460,7 +460,7 @@ Dans les exemples ci-dessous, nous utiliserons l'éditeur de texte `nano`. Avec 
 >>
 >> Identifiez et notez votre adresse IPv4, votre masque de sous-réseau, votre passerelle par défaut et le nom du contrôleur d'interface réseau (carte réseau).
 >>
->> Dans notre exemple, l’adresse  IP du serveur est **192.0.2.28**.
+>> Dans notre exemple, l’adresse IP du serveur est **192.0.2.28**.
 >>
 >> Vous pouvez effectuer les prochaines étapes via des lignes de commande ou l’interface graphique.
 >>
@@ -505,7 +505,7 @@ Dans les exemples ci-dessous, nous utiliserons l'éditeur de texte `nano`. Avec 
 >>
 >> /// details | **Via l’interface graphique d’utilisateur**
 >>
->> 1. Allez dans le menu `Démarrer`{.action}, puis `Panneau de gestion`{.action}, `Réseau et Internet`{.action}, `Centre de réseau et Partage`{.action} et `Modifier les paramètres de la carte`{.action} dans la barre de gauche ;
+>> 1. Allez dans le menu `Démarrer`{.action}, puis `Panneau de configuration`{.action}, `Réseau et Internet`{.action}, `Centre de réseau et Partage`{.action} et `Modifier les paramètres de la carte`{.action} dans la barre de gauche ;
 >>
 >> 2. Effectuez un clic droit sur votre connexion réseau, dans notre exemple `Ethernet 2`{.action} ;
 >>
@@ -549,7 +549,7 @@ Dans les exemples ci-dessous, nous utiliserons l'éditeur de texte `nano`. Avec 
 > **Plesk**
 >> Plesk
 >>
->> **Étape 1 : accédez à la section Gestion des adresses IP de Plesk.**
+>> **Étape 1 : accédez à la section Gestion des adresses IP de Plesk**
 >>
 >> Dans le panneau de configuration Plesk, choisissez `Outils et paramètres`{.action} dans la barre latérale gauche.
 >>
@@ -574,11 +574,11 @@ Dans les exemples ci-dessous, nous utiliserons l'éditeur de texte `nano`. Avec 
 >> ![configuration IP actuelle](images/Plesk-2024-2.png){.thumbnail}
 >>
 
-#### Résolution des défauts
+### Résolution des défauts
 
 Si vous ne parvenez pas à établir une connexion entre le réseau public et votre alias IP et que vous soupçonnez un problème réseau, redémarrez le serveur en [mode rescue](/pages/bare_metal_cloud/dedicated_servers/rescue_mode) et configurez l'alias directement sur le serveur.
 
-Pour ce faire, une fois que vous avez redémarré votre serveur en mode rescue, veuillez exécuter la commande suivante :
+Une fois le serveur redémarré en mode rescue, exécutez la commande suivante :
 
 ```bash
 ifconfig eth0:0 ADDITIONAL_IP netmask 255.255.255.255 broadcast ADDITIONAL_IP up
@@ -586,7 +586,7 @@ ifconfig eth0:0 ADDITIONAL_IP netmask 255.255.255.255 broadcast ADDITIONAL_IP up
 
 Où vous remplacerez « ADDITIONAL_IP » par la véritable Additional IP.
 
-Il vous suffit ensuite d'effectuer un ping depuis votre Additional IP vers l'extérieur. Si cela fonctionne, cela signifie probablement qu'il y a une erreur de configuration devant être corrigée. Si, au contraire, l'adresse IP ne fonctionne toujours pas, veuillez ouvrir un ticket auprès de l'équipe d'assistance via le [Centre d'aide OVHcloud](https://help.ovhcloud.com/csm?id=csm_get_help) en précisant les informations suivantes :
+Effectuez ensuite un ping depuis votre Additional IP vers l'extérieur. Si cela fonctionne, cela indique probablement une erreur de configuration. Si, au contraire, l'adresse IP ne fonctionne toujours pas, veuillez ouvrir un ticket auprès de l'équipe d'assistance via le [Centre d'aide OVHcloud](https://help.ovhcloud.com/csm?id=csm_get_help) en précisant les informations suivantes :
 
 - Le nom et la version du système d'exploitation que vous utilisez sur votre serveur.
 - Le nom et le répertoire du fichier de configuration réseau.
@@ -595,5 +595,7 @@ Il vous suffit ensuite d'effectuer un ping depuis votre Additional IP vers l'ext
 ## Aller plus loin
 
 [Mode bridge IP](/pages/bare_metal_cloud/dedicated_servers/network_bridging)
+
+[Déplacer une Additional IP](/pages/bare_metal_cloud/dedicated_servers/move-failover-ip)
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).

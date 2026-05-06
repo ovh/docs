@@ -1,6 +1,6 @@
 ---
-title: 'Copiare dati da un server dedicato a un altro con rsync'
-excerpt: 'Come effettuare la copia dei dati tra server utilizzando il software rsync'
+title: "Copiare dati da un server dedicato a un altro con rsync"
+excerpt: "Copia facilmente i dati dal tuo server dedicato a un altro grazie a rsync"
 updated: 2022-02-16
 ---
 
@@ -109,4 +109,4 @@ A questo punto, dovresti essere in grado di copiare i dati del tuo server dedica
 
 ## Per saperne di più 
 
-Contatta la nostra community di utenti all’indirizzo <https://community.ovh.com/en/>.
+Contatta la nostra [Community di utenti](/links/community).

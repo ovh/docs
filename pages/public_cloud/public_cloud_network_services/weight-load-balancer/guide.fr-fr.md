@@ -30,6 +30,17 @@ En définissant le poids sur 0, le membre est effectivement retiré du pool de t
 
 ## En pratique
 
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Projets Public Cloud](/links/control-panel/publiccloud-projects)
+- **Pour accéder à vos services :** `Public Cloud`{.action} > Sélectionnez votre projet
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
+
 ### Étape 1 - Créer un Load Balancer avec deux membres
 
 Utilisez le référentiel suivant pour créer un Load Balancer avec deux membres :
@@ -119,7 +130,7 @@ Les réponses des deux membres doivent être alternées :
 >>
 >> Il existe deux façons d'accéder à l'interface Horizon :
 >>
->> - Pour vous connecter avec l'authentification unique OVHcloud (SSO) : utilisez le lien `Horizon`{.action} dans le menu de gauche sous « Interfaces de gestion » après avoir ouvert votre projet `Public Cloud`{.action} dans l'[espace client OVHcloud](/links/manager).
+>> - Pour vous connecter avec l'authentification unique OVHcloud (SSO) : utilisez le lien `Horizon`{.action} dans le menu de gauche sous « Interfaces de gestion » dans votre projet `Public Cloud`{.action}.
 >> - Pour vous connecter avec un utilisateur OpenStack spécifique : ouvrez la [page de connexion à Horizon](https://horizon.cloud.ovh.net/auth/login/) et entrez les [identifiants de l'utilisateur OpenStack](/pages/public_cloud/public_cloud_cross_functional/create_and_delete_a_user) précédemment créé, puis cliquez sur `Se connecter`{.action}.
 >>
 >> Sélectionnez la région appropriée dans le menu déroulant en haut à gauche.

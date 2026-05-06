@@ -1,7 +1,7 @@
 ---
-title: 'Configurar varios servidores dedicados en el vRack'
-excerpt: 'Cómo configurar varios servidores dedicados en el vRack'
-updated: 2025-04-28
+title: "Configurar el vRack en sus servidores dedicados"
+excerpt: "Configure la red privada vRack de OVHcloud en dos o más servidores dedicados para una comunicación entre servidores aislada"
+updated: 2026-02-20
 ---
 
 ## Objetivo
@@ -17,7 +17,6 @@ El vRack (rack virtual) de OVHcloud permite agrupar virtualmente varios servidor
 - Un servicio [vRack](/links/network/vrack) activado en su cuenta.
 - Varios [servidores dedicados](/links/bare-metal/bare-metal) (compatibles con el vRack).
 - Tener acceso de administrador (sudo) al servidor por SSH o RDP.
-- Tienes acceso a tu [área de cliente de OVHcloud](/links/manager).
 - Tener un rango de direcciones IP privadas.
 
 > [!warning]
@@ -25,11 +24,22 @@ El vRack (rack virtual) de OVHcloud permite agrupar virtualmente varios servidor
 >
 > Para más información, consulte nuestra [comparativa](/links/bare-metal/eco-compare).
 
+<!-- CP-NAV-START:network-vrack -->
+---
+
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [vRack](/links/control-panel/network-vrack)
+- **Ruta de navegación:** `Network`{.action} > `Red privada vRack`{.action}
+
+---
+<!-- CP-NAV-END:network-vrack -->
+
 ## Procedimiento
 
 ### Paso 1: contratar el vRack
 
-Conéctese a su área de cliente de OVHcloud y haga clic en el botón `Añadir un servicio`{.action} (icono del carrito de la compra) en el menú de la izquierda. Utilice el filtro de la parte superior de la página o desplácese hacia abajo para buscar el servicio `vRack`{.action}.
+Haga clic en el botón `Añadir un servicio`{.action} (icono del carrito de la compra) en el menú de la izquierda. Utilice el filtro de la parte superior de la página o desplácese hacia abajo para buscar el servicio `vRack`{.action}.
 
 ![Contratar vrack](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/network/orderingvrack25.png){.thumbnail}
 
@@ -37,9 +47,7 @@ Haga clic en el cuadro `vRack`{.action} para que le redirijan a la página en la
 
 ### Paso 2: añadir sus servidores al vRack
 
-Una vez que haya activado el vRack en su cuenta, abra el menú `Network`{.action} en la columna izquierda y haga clic en `Red privada vRack`{.action}.
-
-Seleccione el vRack en la lista para ver la lista de servicios compatibles. Haga clic en cada uno de los servidores que quiera añadir al vRack y, seguidamente, en el botón `Añadir`{.action}.
+Una vez que haya activado el vRack en su cuenta, seleccione el vRack en la lista para ver la lista de servicios compatibles. Haga clic en cada uno de los servidores que quiera añadir al vRack y, seguidamente, en el botón `Añadir`{.action}.
 
 ![Selección del vRack](images/vrack_selection.png){.thumbnail}
 
@@ -76,10 +84,12 @@ En la línea que empieza por ```link ether```, puede comprobar que esta interfaz
 link ether f0:00:00:ef:0e:f0
 ```
 
+A modo de ejemplo, utilizaremos el rango de direcciones IP `192.168.0.0/16` (**Máscara de subred**: `255.255.0.0`).
+
 #### Configuraciones GNU/Linux
 
 > [!tabs]
-> **Debian (excluyendo Debian 12)**
+> **Debian 11**
 >> 
 >> En un editor de texto, abra el archivo de configuración de red en `/etc/network/interfaces.d` para cambiarlo. El archivo se llama `50-cloud-init`.
 >>
@@ -110,7 +120,8 @@ link ether f0:00:00:ef:0e:f0
 >>
 >> Repita este procedimiento para los demás servidores y asígnele a cada uno de ellos una dirección IP no utilizada desde su rango privado. A continuación, los servidores podrán comunicarse entre sí en la red privada.
 >>
-> **Ubuntu & Debian 12**
+> **Ubuntu & Debian 12+**
+>>
 >> Utilice el editor de texto que desee para editar el archivo de configuración de red situado en `/etc/netplan/`. El archivo se llama `50-cloud-init.yaml`.
 >>
 >> ```bash
@@ -146,12 +157,26 @@ link ether f0:00:00:ef:0e:f0
 >>
 >> Repita este procedimiento para los demás servidores y asígnele a cada uno de ellos una dirección IP no utilizada desde su rango privado. A continuación, los servidores podrán comunicarse entre sí en la red privada.
 >>
-> **CentOS, AlmaLinux y RockyLinux**
+> **AlmaLinux y Rocky Linux (8/9)**
 >>
->> Una vez que haya identificado la interfaz de red privada, utilice el editor de texto que desee para crear el siguiente archivo de configuración de red. Sustituya `NETWORK_INTERFACE` por su propio valor.
+>> Una vez que haya identificado la interfaz de red privada, utilice el siguiente comando para crear un archivo de configuración de red.
+>>
+>> Sustituya `NETWORK_INTERFACE` por su propio valor.
 >>
 >> ```bash
 >> sudo touch /etc/sysconfig/network-scripts/ifcfg-NETWORK_INTERFACE
+>> ```
+>>
+>> Por ejemplo, si la interfaz privada se llama `eth1`, tenemos lo siguiente:
+>>
+>> ```bash
+>> sudo touch /etc/sysconfig/network-scripts/ifcfg-eth1
+>> ```
+>>
+>> A continuación, utilice el editor de texto que desee para editar este archivo.
+>>
+>> ```bash
+>> sudo nano /etc/sysconfig/network-scripts/ifcfg-eth1
 >> ```
 >>
 >> Añada estas líneas, sustituyendo `NETWORK_INTERFACE`, `IP_ADDRESS` y `NETMASK` por sus propios valores:
@@ -174,18 +199,12 @@ link ether f0:00:00:ef:0e:f0
 >> Reinicie el servicio de red para aplicar los cambios:
 >>
 >> ```bash
->> sudo systemctl restart networking
->> ```
->>
->> En **CentOS 8, AlmaLinux y RockyLinux** utilice el siguiente comando:
->>
->> ```bash
 >> sudo systemctl restart NetworkManager.service
 >> ```
 >>
 >> Repita este procedimiento para los demás servidores y asígnele a cada uno de ellos una dirección IP no utilizada desde su rango privado. A continuación, los servidores podrán comunicarse entre sí en la red privada.
 >>
-> **Fedora**
+> **Fedora 42+, AlmaLinux y Rocky Linux (10)**
 >>
 >> Una vez que haya identificado el nombre de su interfaz privada (como se explica [aquí](#vrack-interface)), ejecute el siguiente comando para comprobar que esté conectada. En nuestro ejemplo, nuestra interfaz se denomina `eno2`:
 >>
@@ -207,13 +226,13 @@ link ether f0:00:00:ef:0e:f0
 >> En nuestro ejemplo, hemos denominado nuestro perfil de configuración «private-interface».
 >>
 >> ```bash
->> nmcli connection add type ethernet con-name CONNECTION_NAME ifname INTERFACE_NAME
+>> sudo nmcli connection add type ethernet con-name CONNECTION_NAME ifname INTERFACE_NAME
 >> ```
 >>
 >> **Ejemplo:**
 >>
 >> ```bash
->> nmcli connection add type ethernet con-name private-interface ifname eno2
+>> sudo nmcli connection add type ethernet con-name private-interface ifname eno2
 >> ```
 >>
 >> - Compruebe que la interfaz se ha conectado correctamente:
@@ -240,13 +259,13 @@ link ether f0:00:00:ef:0e:f0
 >> - Añada su IP:
 >>
 >> ```bash
->> nmcli connection modify CONNECTION_NAME IPv4.address IP_ADDRESS/PREFIX
+>> sudo nmcli connection modify CONNECTION_NAME IPv4.address IP_ADDRESS/PREFIX
 >> ```
 >>
 >> **Ejemplo:**
 >>
 >> ```bash
->> nmcli connection modify private-interface IPv4.address 192.168.0.1/16
+>> sudo nmcli connection modify private-interface IPv4.address 192.168.0.1/16
 >> ```
 >>
 >> - Cambie la configuración de **auto** a **manual**:
@@ -283,33 +302,33 @@ link ether f0:00:00:ef:0e:f0
 
 A modo de ejemplo, las siguientes configuraciones utilizarán el rango de direcciones IP de `192.168.0.0/16` (**Máscara de subred**: `255.255.0.0`).
 
-Conéctese a su servidor Windows a través del escritorio remoto y acceda al **Panel de configuración**.
+Conéctese a su servidor Windows a través del escritorio remoto y acceda al **Panel do control**.
 
 ![Panel de control de Windows](images/windows_control_panel.png){.thumbnail}
 
-Haga clic en `Network and Internet`{.action}.
+Haga clic en `Redes e Internet`{.action}.
 
 ![Red e Internet](images/windows_network_and_internet.png){.thumbnail}
 
-Abra `Network and Sharing Center`{.action}.
+Abra `Centro de redes y recursos compartidos`{.action}.
 
 ![Network and Sharing Center](images/windows_network_and_sharing_centre.png){.thumbnail}
 
-Haga clic en `Change Adapter Settings`{.action}.
+Haga clic en `Cambiar configuración del adaptador`{.action}.
 
 ![Cambiar configuración del adaptador](images/windows_change_adapter_settings.png){.thumbnail}
 
-Haga clic derecho en la interfaz de red secundaria y seleccione `Properties`{.action}.
+Haga clic derecho en la interfaz de red secundaria y seleccione `Propiedades`{.action}.
 
 En nuestro ejemplo, `Ethernet 2` es la interfaz utilizada para el vRack. Sin embargo, es posible que la tarjeta de red vRack utilice una interfaz diferente. Utilice una interfaz que no posea la dirección IP principal del servidor o que utilice una dirección IP autoasignada.
 
 ![Propiedades de Windows](images/windows_properties_button.png){.thumbnail}
 
-Haga doble clic en Protocolo de `Internet versión 4 (TCP/IPv4)`{.action}.
+Haga doble clic en `Internet Protocol Version 4 (TCP/IPv4)`{.action}.
 
 ![Protocolo de Internet versión 4 (TCP/IPv4)](images/windows_ipv4.png){.thumbnail}
 
-Haga clic en **Usar la siguiente** dirección IP. Introduzca en el campo correspondiente cualquier dirección **IP** de su rango privado y la **máscara** de subred adecuada (`255.255.0.0` en este ejemplo).
+Haga clic en `Usar la siguente dirección IP`{.action}. Introduzca en el campo correspondiente cualquier **dirección IP** de su rango privado y la **Máscara de subred** adecuada (`255.255.0.0` en este ejemplo).
 
 ![Usar la siguiente dirección IP](images/windows_use_following_ip_address.png){.thumbnail}
 
@@ -319,6 +338,6 @@ Repita este procedimiento para los demás servidores y asígnele a cada uno de e
 
 ## Más información
 
-[Crear varias VLAN en el vRack](/pages/bare_metal_cloud/dedicated_servers/creating-multiple-vlans-in-a-vrack).
+[Crear varias VLAN en el vRack](/pages/bare_metal_cloud/dedicated_servers/creating-multiple-vlans-in-a-vrack)
 
-Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.
+Interactúe con nuestra [comunidad de usuarios](/links/community).

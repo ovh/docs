@@ -27,9 +27,19 @@ The OVHcloud [vRack](/links/network/vrack) is a private network solution that en
 ## Requirements
 
 - A [Public Cloud project](/pages/public_cloud/public_cloud_cross_functional/create_a_public_cloud_project) in your OVHcloud account
-- Access to the [OVHcloud Control Panel](/links/manager)
 - An [OpenStack user](/pages/public_cloud/public_cloud_cross_functional/create_and_delete_a_user) (optional)
 - Basic networking knowledge
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Navigation path:** `Public Cloud`{.action} > Select your project
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## Interfaces
 
@@ -154,6 +164,7 @@ For that you need to cherry-pick the correct terraform provider & resource. Find
 > The vRack is managed at the OVHcloud infrastructure level, which means that you can only administer it in your OVHcloud Control Panel and the OVHcloud APIv6.
 >
 
+<!-- CP-STEPS-START:activate-vrack -->
 > [!tabs]
 > Via the OVHcloud Control Panel
 >> > [!primary]
@@ -335,6 +346,7 @@ For that you need to cherry-pick the correct terraform provider & resource. Find
 >> > This call is optional and only allows you to check the status of the task. Once it is complete, you can proceed to the next step.
 >> >
 >>
+<!-- CP-STEPS-END:activate-vrack -->
 
 ### Step 2: Creating a private network in the vRack <a name="create-pn-in-vrack"></a>
 
@@ -360,6 +372,7 @@ From the OVHcloud Control Panel and OVHcloud APIv6, you can customise all settin
 > Because OpenStack is not located at the same level, you will not be able to customise VLANs through the Horizon interface or OpenStack APIs.
 >
 
+<!-- CP-STEPS-START:create-private-network -->
 > [!tabs]
 > Via the OVHcloud Control Panel
 >> Once you have your vRack set, the next step is to create a private network.
@@ -559,6 +572,7 @@ From the OVHcloud Control Panel and OVHcloud APIv6, you can customise all settin
 >> openstack subnet create --dhcp --network OS_CLI_private_network OS_CLI_subnet --subnet-range 10.1.0.0/16
 >> ```
 >>
+<!-- CP-STEPS-END:create-private-network -->
 
 ### Step 3: Integrating an instance into vRack <a name="instance-integration"></a>
 
@@ -569,6 +583,7 @@ There are two possible scenarios:
 
 /// details | **In case of a new instance**
 
+<!-- CP-STEPS-START:integrate-new-instance -->
 > [!tabs]
 > Via the OVHcloud Control Panel
 >> If you need assistance, follow this guide first: [Creating an instance in the OVHcloud Control Panel](/pages/public_cloud/compute/public-cloud-first-steps). When creating an instance, you can choose, in Step 5, a network mode, followed by a private network to integrate your instance into. 
@@ -851,6 +866,8 @@ There are two possible scenarios:
 >> ```
 >>
 
+<!-- CP-STEPS-END:integrate-new-instance -->
+
 ///
 
 /// details | **In case of an existing instance**
@@ -866,11 +883,10 @@ For example, if you have a public interface *eth0*, you will add the interface *
 > You will therefore need to set a static IP or configure DHCP, depending on your infrastructure.
 >
 
+<!-- CP-STEPS-START:integrate-existing-instance -->
 > [!tabs]
 > Via the OVHcloud Control Panel
->> Log in to the [OVHcloud Control Panel](/links/manager), go to the `Public Cloud`{.action} section and select the Public Cloud project concerned.
->>
->> Click on `Instances`{.action} in the left-hand navigation bar and then on `⁝`{.action} to the right of the instance. Select `Instance details`{.action}.
+>> In your Public Cloud project, click on `Instances`{.action} in the left-hand navigation bar and then on `⁝`{.action} to the right of the instance. Select `Instance details`{.action}.
 >>
 >> ![detail instance](images/instance_details.png){.thumbnail}
 >>
@@ -1135,6 +1151,8 @@ For example, if you have a public interface *eth0*, you will add the interface *
 >> [...]
 >> ```
 >>
+
+<!-- CP-STEPS-END:integrate-existing-instance -->
 
 ### Removing a network interface
 

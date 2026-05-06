@@ -1,7 +1,7 @@
 ---
 title: AI Endpoints - Create a code assistant with Continue
 excerpt: Build your own code assistant directly in VSCode or JetBrains IDEs using the Continue plugin
-updated: 2025-12-19
+updated: 2026-04-15
 ---
 
 > [!primary]
@@ -13,7 +13,7 @@ updated: 2025-12-19
 
 ### What is Continue?
 
-**[Continue](https://www.continue.dev/)** is an IDE‑agnostic AI assistant that brings chat, code generation, and autocomplete capabilities directly into your editor. Compatible with VS Code and JetBrains IDEs (e.g., IntelliJ, PyCharm), Continue empowers you to plug in any compatible LLM hosted on **[AI Endpoints](https://endpoints.ai.cloud.ovh.net/)**.
+**[Continue](https://www.continue.dev/)** is an IDE‑agnostic AI assistant that brings chat, code generation, and autocomplete capabilities directly into your editor. Compatible with VS Code and JetBrains IDEs (e.g., IntelliJ, PyCharm), Continue empowers you to plug in any compatible LLM hosted on **[AI Endpoints](/links/public-cloud/ai-endpoints)**.
 
 Continue enables you to configure and use your own LLMs, giving you full control over the models you use and how they interact with your code.
 
@@ -67,7 +67,7 @@ models:
 > When you have modified your config file, make sure to reload it before trying to interact with your configured models!
 >
 
-Try out different LLMs from [our catalog](https://endpoints.ai.cloud.ovh.net/catalog) and choose the one that best fits your use case. You can switch between them easily in the IDE UI.
+Try out different LLMs from [our catalog](/links/public-cloud/ai-endpoints-catalog) and choose the one that best fits your use case. You can switch between them easily in the IDE UI.
 
 ### Try It Out
 
@@ -93,7 +93,7 @@ Just start typing in your editor. The autocomplete model will complete code as y
 
 ## Conclusion
 
-By using Continue and AI Endpoints, you now have access to a fully customizable code assistant, support for cutting-edge open-source large language models such as Qwen, Mixtral, and LLaMA 3, and the ability to manage your own configuration and resources on AI Endpoints.
+By using Continue and AI Endpoints, you now have access to a fully customizable code assistant, support for cutting-edge open-source large language models such as Qwen, gpt-oss-120b, and LLaMA 3, and the ability to manage your own configuration and resources on AI Endpoints.
 
 If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for a custom analysis of your project.
 

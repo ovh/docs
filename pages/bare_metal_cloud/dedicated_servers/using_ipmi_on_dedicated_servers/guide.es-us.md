@@ -1,7 +1,7 @@
 ---
-title: 'Utilizar IPMI en un servidor dedicado'
-excerpt: 'Cómo conectarse a un servidor mediante IPMI, sin necesidad de utilizar software externo'
-updated: 2024-07-23
+title: "Cómo utilizar la consola IPMI con un servidor dedicado"
+excerpt: "Acceda a su servidor dedicado de forma remota a través de la consola IPMI/KVM del área de cliente de OVHcloud sin software externo"
+updated: 2026-01-29
 ---
 
 > [!primary]
@@ -14,7 +14,16 @@ La consola IPMI (Intelligent Platform Management Interface) permite establecer u
 
 ## Requisitos
 
-- Haber iniciado sesión en el [área de cliente de OVHcloud](/links/manager).
+<!-- CP-NAV-START:baremetal-dedicated-servers -->
+---
+
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [Servidores dedicados](/links/control-panel/baremetal-dedicated-servers)
+- **Ruta de navegación:** `Bare Metal Cloud`{.action} > `Servidores dedicados`{.action} > Seleccione su servidor
+
+---
+<!-- CP-NAV-END:baremetal-dedicated-servers -->
 
 > [!warning]
 > Esta funcionalidad puede no estar disponible o estar limitada en los [servidores dedicados **Eco**](/links/bare-metal/eco-about).
@@ -41,9 +50,13 @@ Existen varios métodos para conectarse a IPMI¹. Las claves SSH almacenadas en 
 ⁵ Si el SO que desea instalar no está disponible en el [catálogo de sistemas operativos disponibles en los servidores dedicados OVHcloud](/links/bare-metal/os), tenga en cuenta que también puede utilizar una imagen personalizada: ver [Comparación entre Bring Your Own Image (BYOI) y Bring Your Own Linux (BYOLinux)](/pages/bare_metal_cloud/dedicated_servers/bring-your-own-image-versus-bring-your-own-linux) para más detalles<br />
 ⁶ SoL = Serial over Lan
 
-Para activar uno de estos métodos, conéctese al [área de cliente de OVHcloud](/links/manager). En la pestaña `Bare Metal Cloud`{.action}, haga clic en `Servidores dedicados`{.action} y seleccione su servidor. A continuación, abra la pestaña `IPMI/KVM`{.action}.
+Para activar uno de estos métodos, abra la pestaña `IPMI/KVM`{.action}.
 
 ### Abrir un KVM a través de un applet Java <a name="applet-java"></a>
+
+> [!primary]
+> Recomendamos instalar la última versión de Java.
+>
 
 Para que el applet funcione, debe tener Java instalado en su equipo. Si todavía no lo ha hecho, visite la [página oficial](https://www.java.com/en/download/).
 

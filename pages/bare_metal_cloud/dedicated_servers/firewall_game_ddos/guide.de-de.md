@@ -1,7 +1,7 @@
 ---
-title: Game Server mit der Application Firewall schützen
-excerpt: Erfahren Sie hier, wie Sie die OVHcloud Game DDoS Protection Firewall konfigurieren
-updated: 2026-01-06
+title: "Dedicated Server - Game DDoS Protection Firewall"
+excerpt: "Konfigurieren Sie die OVHcloud Game DDoS Protection Firewall, um Ihren Game Server vor Angriffen auf der Anwendungsebene zu schützen."
+updated: 2026-03-24
 ---
 
 <style>
@@ -35,7 +35,17 @@ Unsere Bare Metal Game Dedicated Server sind mit einem zusätzlichen Schutz vor 
 ## Voraussetzungen
 
 - Sie haben einen [OVHcloud **Game** Dedicated Server](/links/bare-metal/game).
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
+
+<!-- CP-NAV-START:network-public-ip -->
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direkter Link:** [Public IP](/links/control-panel/network-public-ip)
+- **Navigationspfad:** `Network`{.action} > `Öffentliche IP`{.action}
+
+---
+<!-- CP-NAV-END:network-public-ip -->
 
 > [!warning]
 > Diese Funktion kann nur eingeschränkt oder nicht verfügbar sein, falls ein Dedicated Server der [**Eco** Produktlinie](/links/bare-metal/eco-about) eingesetzt wird.
@@ -56,62 +66,64 @@ Die Hauptvorteile:
 
 ### Aktivieren und Konfigurieren der Game DDoS Protection
 
-> [!primary]
-> Die *Game Firewall* schützt die einem Server zugeordnete IP-Adresse. Wenn Sie einen Server mit mehreren IP-Adressen ([Additional IPs](/links/network/additional-ip)) einsetzen, müssen diese separat konfiguriert werden.
+> [!warning]
+> Die *Game Firewall* schützt die einem Server zugeordnete IP-Adresse. Wenn Sie einen Server mit mehreren IP-Adressen (d. h. [Additional IP-Adressen](/links/network/additional-ip)) einsetzen, müssen diese separat konfiguriert werden.
+>
+> Für jede Adresse, die Sie mit der Game Firewall schützen möchten, **muss** der Game Firewall-Status auf `Konfiguriert` gesetzt sein, damit die Regeln angewendet werden.
 >
 
-Melden Sie sich im OVHcloud Kundencenter an und befolgen Sie die folgenden Schritte, um die Spielschutzregeln für Ihren Game Dedicated Server zu konfigurieren:
+Befolgen Sie die folgenden Schritte, um die Spielschutzregeln für Ihren Bare Metal Game Server zu konfigurieren:
 
 - Klicken Sie im Menü links auf `Network`{.action}.
 - Klicken Sie auf `Öffentliche IP-Adressen`{.action}.
 
 Sie können IP-Adressen filtern, indem Sie das Dropdown-Menü `Alle Arten von Diensten`{.action} verwenden oder die gewünschte IP-Adresse direkt in die Suchleiste eingeben. Geben Sie den Namen oder die Kategorie des entsprechenden Servers ein:
 
-| ![configure-game-firewall](images/ip_listing_new.png) |
-|:--:|
-| IP-Liste: Finden Sie Ihre IP-Adresse über den entsprechenden Dienst. |
+#### Liste der IP-Adressen Ihres Game Servers
 
-Navigieren Sie zur *Game Firewall* Konfiguration:
+> [!tabs]
+> Über die Seite **Dedicated Servers**
+>> - Öffnen Sie den Bereich `Bare Metal Cloud`{.action} im linken Menü.
+>> - Wählen Sie `Dedicated Server`{.action}.
+>> - Klicken Sie auf den Game Server, den Sie konfigurieren möchten.
+>> - Suchen Sie im Abschnitt `Netzwerk` des Tabs `Allgemeine Informationen` den Bereich "Game DDoS-Schutz".
+>> - Klicken Sie auf die Schaltfläche `...`{.action} und wählen Sie `Game Protection konfigurieren`{.action}. Sie werden zur Liste der Ihrem Server zugewiesenen IP-Adressen weitergeleitet.
+> Über die Seite **Öffentliche IP-Adressen**
+>> - Öffnen Sie den Bereich `Network`{.action} im linken Menü.
+>> - Wählen Sie `Öffentliche IP-Adressen`{.action}.
+>> - Suchen Sie im Dropdown-Menü `Alle Arten von Diensten`{.action} den Bare Metal Game Server, den Sie konfigurieren möchten, und wählen Sie ihn aus.
+>> - Eine Liste der Ihrem Server zugewiesenen IP-Adressen wird angezeigt.
 
-| ![game-server](images/firewall_game_01_blur_new.png) |
-|:--:|
-| Klicken Sie auf `⁝`{.action} neben der IP-Adresse Ihres Game Dedicated Servers. |
+#### Game Firewall-Regeln aktivieren und konfigurieren
 
-| ![configure-game-firewall](images/firewall_game_02_new.png) |
-|:--:|
-| Klicken Sie auf `GAME Firewall konfigurieren`{.action}. |
+Überprüfen Sie für jede Adresse, die Ihrem Server zugewiesen ist und Schutz benötigt, ob der *Game Firewall*-Status auf `Verfügbar`{.action} gesetzt ist. Sie müssen die *Game Firewall*-Regeln für jede Adresse separat konfigurieren.
 
-Nun können Sie die Spielschutzregeln für die ausgewählte IP-Adresse konfigurieren.
+- Klicken Sie auf die Schaltfläche `⁝`{.action} rechts in der Tabelle und wählen Sie `Game-Firewall konfigurieren`{.action}.
+- Fügen Sie Regeln hinzu, die das Protokoll und den Portbereich für jede Gaming-Anwendung angeben, die über die ausgewählte IP-Adresse erreichbar sein soll. Weitere Informationen finden Sie im Abschnitt [Spielspezifische Hinweise](#game_specific).
+- Aus Sicherheitsgründen empfehlen wir dringend, die Option `Richtlinie "Standard-Ablehnung" anwenden`{.action} oben rechts in der Regeltabelle zu aktivieren. Diese Option blockiert den gesamten Traffic, der nicht den von Ihnen für die Game Firewall festgelegten Regeln entspricht, d. h. alle aufgeführten Spielanwendungen werden geschützt und keine anderen Verbindungen können Ihren Server erreichen. Diese Option reduziert die Angriffsfläche, die potenziellen Angreifern ausgesetzt ist, erheblich.
 
-> [!primary]
-> Beachten Sie, dass Game DDoS Protection keine Aktion ausführt, solange keine Spielschutzregeln konfiguriert sind.
->
+Mit der Game DDoS Protection können Sie bis zu **100 Regeln pro IP-Adresse** konfigurieren, die auf die aktuellen Bare Metal Game Server GAME-1 und GAME-2 (2024 und später) verweisen, oder bis zu **30 Regeln pro IP-Adresse** für die älteren Bare Metal Game Server (in der Regel als RISE-GAME oder SYS-GAME gekennzeichnet).
 
-Um Game DDoS Protection zu aktivieren, definieren Sie die Spieleanwendungen und die zugehörigen Netzwerk-Ports:
-
-| ![add-rule-btn](images/firewall_game_03_new.png) |
-|:--:|
-| Klicken Sie auf die Schaltfläche `Regel hinzufügen`{.action}, um eine Regel zur *Game Firewall* hinzuzufügen. |
-
-Mit der Game DDoS Protection können Sie bis zu **100 Regeln pro IP-Adresse** konfigurieren, die auf die aktuellen Game Dedicated Server GAME-1 und GAME-2 (2024 und später) verweisen, oder bis zu **30 Regeln pro IP-Adresse** für die älteren Game Dedicated Server (in der Regel als RISE-GAME oder SYS-GAME gekennzeichnet).
-
-Beachten Sie, dass sich die unterstützten Spielprotokolle (Spieltitel und -versionen, die geschützt werden können) im Laufe der Zeit ändern. Darüber hinaus können sie sich zwischen älteren Bare Metal Game Serverreihen und neueren Modellen unterscheiden. Die aktuellste Liste der unterstützten Spielprofile finden Sie [hier](/links/security/ddos).
-
-| ![confirm-new-rule](images/firewall_game_04_new.png) |
-|:--:|
-| Konfigurieren Sie den Schutz, indem Sie ein **Protokoll** aus der Liste auswählen und den **Portbereich** definieren, über den Ihre Spielanwendung Verbindungen empfängt (weitere Informationen finden Sie in der Einrichtungsdokumentation des Spiels). Klicken Sie dann auf die Schaltfläche `Bestätigen`{.action}, um zu speichern. Sie haben damit erfolgreich *Game Firewall* Regeln konfiguriert. |
+Beachten Sie, dass sich die unterstützten Spielprotokolle (Spieltitel und -versionen, die geschützt werden können) im Laufe der Zeit ändern können. Darüber hinaus können sie sich zwischen älteren Bare Metal Game Serverreihen und neueren Modellen unterscheiden. Die aktuellste Liste der unterstützten Spielprofile finden Sie auf der [Game DDoS Protection-Seite](/links/security/ddos).
 
 Die Schutzregeln der *Game Firewall* dürfen sich hinsichtlich der definierten Ports nicht überschneiden.
 
-Die Option **Andere** kann für Anwendungen auf nicht gelisteten Ports ausgewählt werden (für die kein Schutz verfügbar ist), um den Client-Datenverkehr passieren zu lassen. Beachten Sie, dass der mit der Regel **Andere** empfangene Traffic nicht besonders sicher ist und diese Option mit Vorsicht verwendet werden sollte.
+Die Option **Andere** kann für Anwendungen auf spezifischen Ports ausgewählt werden (für die kein Schutz verfügbar ist), um den Client-Traffic passieren zu lassen. Beachten Sie, dass der mit der Regel **Andere** übereinstimmende Traffic keine besondere zusätzliche Sicherheit bietet und diese Option mit Vorsicht verwendet werden sollte.
 
-Außerdem empfehlen wir dringend, die Regel **"Default policy = DROP"** für jede IP, die auf Ihren Game Dedicated Server verweist, einzurichten. Mit dieser Option kann Game DDoS Protection jeglichen Traffic löschen, der nicht den festgelegten Regeln entspricht. Das heißt, alle aufgeführten Spielanwendungen werden geschützt und keine anderen Verbindungen können Ihren Server erreichen.
+Einige Minuten nachdem Sie die Game Firewall für eine IP-Adresse konfiguriert haben, werden alle neu erstellten Regeln angewendet und der *Game Firewall*-Status dieser IP-Adresse wechselt von `Verfügbar` zu `Konfiguriert`.
 
 > [!warning]
 > Game DDoS Protection wird erst hinter den Regeln der [Edge Network Firewall](/pages/bare_metal_cloud/dedicated_servers/firewall_network) wirksam. Damit beide ordnungsgemäß funktionieren, darf die Edge Network Firewall nicht zu strikt eingestellt sein und muss Traffic an die Game DDoS Protection weiterleiten.
 >
 
-### Spielspezifische Hinweise
+#### Konfiguration überprüfen
+
+Überprüfen Sie nach der Konfiguration, ob Ihr Server durch die Game Firewall geschützt ist:
+
+- Auf der Seite **Öffentliche IP-Adressen** muss jede IP-Adresse, die Ihrem Bare Metal Game Server zugewiesen ist und Schutz benötigt, den Game Firewall-Status `Konfiguriert` aufweisen.
+- Auf der Verwaltungsseite Ihres Bare Metal Game Servers, im Abschnitt `Netzwerk` des Tabs `Allgemeine Informationen`, muss der Game Anti-DDoS-Schutzstatus entweder `All IP addresses are protected` oder `Some IP addresses are protected` lauten. Falls Letzteres der Fall ist, stellen Sie bitte sicher, dass Sie alle relevanten IP-Adressen konfiguriert haben.
+
+### Spielspezifische Hinweise <a name="game_specific"></a>
 
 #### Ark Survival Evolved
 
@@ -253,5 +265,7 @@ Sichern Sie relevante Traffic Dumps (*.pcap*-Datei) die beispielhaft für solche
 ## Weiterführende Informationen
 
 Wenn Sie Schulungen oder technische Unterstützung bei der Implementierung unserer Lösungen benötigen, wenden Sie sich an Ihren Vertriebsmitarbeiter oder klicken Sie auf [diesen Link](/links/professional-services), um einen Kostenvoranschlag zu erhalten und eine persönliche Analyse Ihres Projekts durch unsere Experten des Professional Services Teams anzufordern.
+
+- [Dedicated Server - Network Security Dashboard](/pages/bare_metal_cloud/dedicated_servers/network_security_dashboard)
 
 Treten Sie unserer [User Community](/links/community) bei.

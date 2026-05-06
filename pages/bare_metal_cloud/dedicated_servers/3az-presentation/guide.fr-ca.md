@@ -1,6 +1,6 @@
 ---
 title: "Bare Metal 3-AZ Region - Présentation de l'offre"
-excerpt: 'Découvrez le service Bare Metal 3-AZ, qui offre une haute disponibilité et une redondance inégalées entre trois datacenters'
+excerpt: "Découvrez le service Bare Metal 3-AZ, qui offre une haute disponibilité et une redondance inégalées entre trois datacenters"
 updated: 2025-06-04
 ---
 
@@ -39,20 +39,33 @@ OVHcloud est présent dans le monde entier, notamment en Europe, aux États-Unis
 
 Pour des performances optimales, une région doit être sélectionnée au plus près de ses utilisateurs. Pour une disponibilité mondiale, les services doivent être répartis sur plusieurs régions. La région 3-AZ est idéale pour les clients à la recherche de la plus haute résilience et doit être utilisée pour créer des conceptions d'applications multi-AZ.
 
-Pour visualiser vos clusters depuis l'[espace client OVHcloud](/links/manager), cliquez sur `Bare Metal Cloud`{.action} dans le menu situé à gauche de l'écran, puis sur `Serveurs dédiés`{.action}. Enfin, cliquez sur l'onglet `Clusters 3-AZ`{.action}.
+<!-- CP-NAV-START:baremetal-dedicated-servers -->
+---
 
-![list_clusters](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/dedicated-servers/general-information/clusters1.png){.thumbnail}
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Serveurs dédiés](/links/control-panel/baremetal-dedicated-servers)
+- **Pour accéder à vos services :** `Bare Metal Cloud`{.action} > `Serveurs dédiés`{.action} > Sélectionnez votre serveur
+
+---
+<!-- CP-NAV-END:baremetal-dedicated-servers -->
+
+Cliquez sur l'onglet `Clusters 3-AZ`{.action}.
+
+![Onglet clusters 3-AZ listant les clusters disponibles](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/dedicated-servers/general-information/clusters1.png){.thumbnail}
 
 Cliquez sur le nom du cluster dans le tableau pour en afficher les détails.
 
-![list_clusters](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/dedicated-servers/general-information/clusters2.png){.thumbnail}
+![Page de details du cluster avec informations sur les zones de disponibilité](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/dedicated-servers/general-information/clusters2.png){.thumbnail}
 
 Cliquez sur l'onglet `Noeuds`{.action} pour ouvrir la liste des serveurs du cluster.
 
-![list_clusters](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/dedicated-servers/general-information/clusters3.png){.thumbnail}
+![Onglet Nodes affichant la liste des serveurs du cluster](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/dedicated-servers/general-information/clusters3.png){.thumbnail}
 
 Cliquer sur un nom de serveur/nœud dans cette liste ouvre l'onglet `Informations générales`{.action} du serveur. Retrouvez les détails sur cette section de l'espace client dans notre guide « [Comment démarrer avec un serveur dédié](/pages/bare_metal_cloud/dedicated_servers/getting-started-with-dedicated-server) ».
 
 ## Aller plus loin
+
+[Configurer le vRack sur vos serveurs dédiés](/pages/bare_metal_cloud/dedicated_servers/vrack_configuring_on_dedicated_server)
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).

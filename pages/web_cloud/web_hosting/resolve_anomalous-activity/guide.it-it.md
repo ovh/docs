@@ -1,7 +1,7 @@
 ---
 title: "Come reagire a un'attività anomala rilevata sul tuo hosting web"
 excerpt: "Scopri i passaggi da seguire quando viene rilevata un'attività anomala sul tuo hosting web OVHcloud"
-updated: 2025-10-02
+updated: 2026-04-01
 ---
 
 ## Obiettivo
@@ -14,6 +14,17 @@ Questo manuale spiega perché può essere rilevata un'**attività anomala** sul 
 
 - Disporre di un'offerta di [hosting web OVHcloud](/links/web/hosting).
 - Essere connesso al tuo [spazio clienti OVHcloud](/links/manager).
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [Hosting](/links/control-panel/web-hosting)
+- **Percorso di navigazione:** `Web Cloud`{.action} > `Hosting`{.action} > Seleziona il tuo hosting web
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## Procedura
 
@@ -69,11 +80,27 @@ Il tuo sito web effettua molte connessioni esterne (API, aggiornamenti, chiamate
 >
 > Esegui questo passaggio **solo dopo aver applicato le raccomandazioni sopra** (diagnosi, correzioni/aggiornamenti, sicurezza). Se un'attività anomala viene rilevata nuovamente durante un prossimo scan, le **misure di sicurezza verranno riassegnate automaticamente**. Riceverai una nuova notifica e i blocchi rimarranno attivi fino alla **risoluzione definitiva** della situazione.
 
-1. Accedi al tuo [spazio clienti OVHcloud](/links/manager), vai su `Web Cloud`{.action} e clicca sul tuo hosting web.
-2. Una **finestra di allerta** appare: `Attività anomala sul tuo hosting`. Se clicchi sul pulsante `Più tardi`{.action}, una **bandiera di allerta** `Attività anomala rilevata` appare in alto sulla pagina. Clicca su `Scopri di più`{.action} per riaprire la finestra di allerta.
-3. **Seleziona** la casella: `Confermo di aver eseguito tutte le azioni necessarie per risolvere il problema`.
-4. Clicca su `Rimuovere le misure di sicurezza`{.action}.
-5. Una **bandiera di conferma** appare in alto sulla pagina: `Il tuo hosting è in analisi per rimuovere le misure di sicurezza.` Segui il progresso cliccando sul link `Vedi le attività in corso`{.action} o direttamente dall'etichetta `Attività in corso`{.action}.
+<!-- CP-STEPS-START:lift-security-measures -->
+Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **4** passi.
+
+> [!tabs]
+> **Passaggio 1**
+>>
+>> Accedi alla pagina [Hosting](/links/control-panel/web-hosting) e seleziona l'hosting web interessato.
+>>
+> **Passaggio 2**
+>>
+>> Una **finestra di allerta** appare: `"Attività anomala sul tuo hosting"`. Se clicchi sul pulsante `Più tardi`{.action}, una **bandiera di allerta** `"Attività anomala rilevata"` appare in alto sulla pagina. Clicca su `Scopri di più`{.action} per riaprire la finestra di allerta.
+>>
+> **Passaggio 3**
+>>
+>> **Seleziona** la casella: `Confermo di aver eseguito tutte le azioni necessarie per risolvere il problema`, poi clicca su `Rimuovere le misure di sicurezza`{.action}.
+>>
+> **Passaggio 4**
+>>
+>> Una **bandiera di conferma** appare in alto sulla pagina: `Il tuo hosting è in analisi per rimuovere le misure di sicurezza.` Segui il progresso cliccando sul link `Vedi le attività in corso`{.action} o direttamente dall'etichetta `Attività in corso`{.action}.
+>>
+<!-- CP-STEPS-END:lift-security-measures -->
 
 > [!warning]
 >

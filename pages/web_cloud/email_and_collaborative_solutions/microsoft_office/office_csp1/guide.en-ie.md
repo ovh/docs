@@ -18,23 +18,31 @@ Your Microsoft 365 licences are collected into a group, also called `Service`. A
 
 Here is the list of software included in the suite:
 
-- Apps for Business licences: Excel, Word, PowerPoint, Outlook, Note, Publisher.
-- Apps for Enterprise licences: Excel, Word, PowerPoint, Outlook, Note, Publisher, Access.
+- Apps for Business licences: Excel, Word, PowerPoint, Outlook, OneNote, Publisher.
+- Apps for Enterprise licences: Excel, Word, PowerPoint, Outlook, OneNote, Publisher, Access.
 
 **This guide explains how to subscribe to a Microsoft 365 licence and manage it in the OVHcloud Control Panel.**
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](/links/manager)
+- An [OVHcloud customer account](/links/create-ovhcloud-account)
+
+<!-- CP-NAV-START:web-microsoft-365 -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Microsoft 365](/links/control-panel/web-microsoft-365)
+- **Navigation path:** `Web Cloud`{.action} > `Microsoft 365`{.action}
+
+---
+<!-- CP-NAV-END:web-microsoft-365 -->
 
 ## Instructions
 
 ### Order a license
 
-1. Go to the [Microsoft 365 sales page](/links/web/ms365), or to the [OVHcloud Control Panel](/links/manager):
-    - Go to the `Web Cloud`{.action} section.
-    - In the `MICROSOFT` section, click `Microsoft 365`{.action}.
-    - Click `Order`{.action}.
+1. Go to the [Microsoft 365 sales page](/links/web/ms365), or from the Microsoft 365 section of the OVHcloud Control Panel, click `Order`{.action}.
 1. Choose from our available solutions, namely "Apps for Business" and "Apps for Enterprise".
 1. Set the renewal frequency for your license group.
 1. Define the number of licenses you want, then finalize your order.
@@ -43,9 +51,6 @@ Here is the list of software included in the suite:
 
 To activate the license ordered:
 
-1. Log in to your [OVHcloud Control Panel](/links/manager).
-1. Go to the `Web Cloud`{.action} section.
-1. In the `MICROSOFT` section, click `Microsoft 365`{.action}.
 1. Select the Microsoft 365 service concerned.
 1. Click the `Licenses`{.action} tab.
 1. Click the `⁝`{.action} button on the license line for the activation, then click `Edit account`{.action}.
@@ -76,9 +81,6 @@ To install your license on several devices, simply reproduce [the previous step]
 
 If you would like to set your own license password:
 
-1. Log in to your [OVHcloud Control Panel](/links/manager).
-1. Go to the `Web Cloud`{.action} section.
-1. In the `MICROSOFT` section, click `Microsoft 365`{.action}.
 1. Select the Microsoft 365 service concerned.
 1. Click the `Licenses`{.action} tab.
 1. Click the `⁝`{.action} button to the right of the license concerned, then `Change password`{.action}.
@@ -89,9 +91,6 @@ If you would like to set your own license password:
 
 If you want to add one or more licenses to your existing license group:
 
-1. Log in to your [OVHcloud Control Panel](/links/manager).
-1. Go to the `Web Cloud`{.action} section.
-1. In the `MICROSOFT` section, click `Microsoft 365`{.action}.
 1. Select the Microsoft 365 service concerned.
 1. Click the `Order more licenses`{.action} button on the right.
 1. Determine the **number** and **license type** you wish to order, then click `Confirm`{.action}.
@@ -124,7 +123,7 @@ To terminate your Microsoft Office 365 CSP1 license group:
 >
 > Usage for the current month will be billed at the end of the month.
 
-## Go further
+## Go further <a name="go-further"></a>
 
 [Using Remote Desktop with Microsoft 365 apps](/pages/web_cloud/email_and_collaborative_solutions/microsoft_office/office_proplus)
 

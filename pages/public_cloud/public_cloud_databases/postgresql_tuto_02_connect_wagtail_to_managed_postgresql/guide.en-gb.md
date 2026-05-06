@@ -1,5 +1,5 @@
 ---
-title: PostgreSQL - Tutorial - Install Wagtail and connect it to OVHcloud Managed PostgreSQL service
+title: Install and connect Wagtail to Public Cloud Databases for PostgreSQL
 excerpt: "Find out how to install Wagtail and connect it to an OVHcloud Managed PostgreSQL service"
 updated: 2022-02-11
 ---
@@ -19,10 +19,20 @@ In this tutorial, we are going to show you how to install [Wagtail](https://wagt
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](/links/manager)
 - A [Public Cloud project](/links/public-cloud/public-cloud) in your OVHcloud account.
 - An up and running Public Cloud Database for PostgreSQL.
 - A Python environment with a stable version and public network connectivity (Internet). This tutorial was made using Python 3.9.7.
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Navigation path:** `Public Cloud`{.action} > Select your project
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 > [!primary]
 >
@@ -33,10 +43,11 @@ In this tutorial, we are going to show you how to install [Wagtail](https://wagt
 
 Before making a connection, we need to verify that our PostgreSQL instance is correctly configured.
 
-Log in to your [OVHcloud Control Panel](/links/manager) and open your `Public Cloud`{.action} project. Click on `Databases`{.action} in the left-hand navigation bar and select your PostgreSQL instance.
+Click on `Databases`{.action} in the left-hand navigation bar and select your PostgreSQL instance.
 
 ### Step 1: Verify your user roles and password
 
+<!-- CP-STEPS-START:verify-your-user-roles-and-password -->
 Select the `Users`{.action} tab. Verify that you have a user with sufficient rights and a configured password. If you don't remember the user's password, you can either create a new user or regenerate the password of an existing user. Be careful! By doing so you will need to update all the places where you already use this user/password pair.
 
 This first user **avnadmin** comes with the following privileges:
@@ -60,9 +71,11 @@ In our example, we will simply reset the **avnadmin** password.
 Once created or updated, the user has to be ready and have the status "Enabled" in the Control Panel.
 
 ![User ready](images/user_enabled.png){.thumbnail}
+<!-- CP-STEPS-END:verify-your-user-roles-and-password -->
 
 ### Step 2: Authorise incoming connections from the PostgreSQL client
 
+<!-- CP-STEPS-START:authorise-incoming-connections-from-the-postgresql-client -->
 In this step, select the `Authorised IP's`{.action} tab (Access Control List).
 By default, a Public Cloud Database does not accept any form of connection from the outside world.
 This way we can help prevent intrusive connection attempts.
@@ -70,6 +83,7 @@ This way we can help prevent intrusive connection attempts.
 Click to authorise a new IP, and enter the previously found IP of your Python environment. In our case we will enter 109.190.200.59.
 
 ![Add an IP](images/ip_authorize.png){.thumbnail}
+<!-- CP-STEPS-END:authorise-incoming-connections-from-the-postgresql-client -->
 
 > [!primary]
 >
@@ -130,6 +144,7 @@ If you keep wagtail on default settings, a local SQLlite database will be used i
 
 Before creating the database, let's edit the `mysite/mysite/settings/base.py` file and adapt the connection parameters to the database.
 
+<!-- CP-STEPS-START:create-the-database-cp-params -->
 The useful parameters, available in the [OVHcloud Control Panel](/links/manager) are:
 
 - The db Host, the db Port
@@ -142,6 +157,7 @@ The useful parameters, available in the [OVHcloud Control Panel](/links/manager)
     - Get it after you reset it.
 
 ![Password reseted](images/postgresql_tuto_02_connect_wagtail_to_managed_postgresql-2022040814593090.png){.thumbnail}
+<!-- CP-STEPS-END:create-the-database-cp-params -->
 
 ```python
 DATABASES = {

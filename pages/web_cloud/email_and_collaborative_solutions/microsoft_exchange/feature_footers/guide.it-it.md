@@ -12,26 +12,29 @@ Nello Spazio Cliente OVHcloud, è possibile creare firme universali (footers) pe
 
 ## Prerequisiti
 
-- avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
 - Disporre di una [soluzione Exchange OVHcloud](/links/web/emails-hosted-exchange) o [Email Pro](/links/web/email-pro) attive 
 
-## Procedura
+<!-- CP-NAV-START:web-exchange -->
+<!-- CP-NAV-START:web-email-pro -->
+---
 
-> [!tabs]
-> **Exchange**
->>
->> 1. Accedi allo [Spazio Cliente OVHcloud](/links/manager).
->> 1. Accedi alla sezione `Web Cloud`{.action}.
->> 1. Nella sezione `MICROSOFT`, clicca su `Exchange`{.action}.
->> 1. Seleziona la piattaforma interessata.
->>
-> **Email Pro**
->>
->> 1. Accedi allo [Spazio Cliente OVHcloud](/links/manager).
->> 1. Clicca sulla scheda `Web Cloud`{.action}.
->> 1. Clicca su `Email Pro`{.action}.
->> 1. Seleziona la piattaforma interessata.
->>
+### Accesso allo Spazio Cliente OVHcloud
+
+**Exchange:**
+
+- **Link diretto:** [Exchange](/links/control-panel/web-exchange)
+- **Percorso di navigazione:** `Web Cloud`{.action} > `Exchange`{.action} > Seleziona la tua piattaforma
+
+**Email Pro:**
+
+- **Link diretto:** [Email Pro](/links/control-panel/web-email-pro)
+- **Percorso di navigazione:** `Web Cloud`{.action} > `Email Pro`{.action} > Seleziona la tua piattaforma
+
+---
+<!-- CP-NAV-END:web-email-pro -->
+<!-- CP-NAV-END:web-exchange -->
+
+## Procedura
 
 Clicca sulla scheda `Altre opzioni`{.action} nel menu orizzontale e seleziona `Footers`{.action}.
 
@@ -62,7 +65,7 @@ Prima di creare una firma per utenti, prendi in considerazione queste informazio
 - L’editor supporta la formattazione HTML, gli hyperlinks, le immagini, ecc. Tuttavia, le firme non dovrebbero fare troppo affidamento su queste opzioni. I destinatari potrebbero utilizzare client di posta elettronica incompatibili con HTML e immagini incorporate, oppure la firma potrebbe apparire in modo diverso dal previsto. Attenzione: se un messaggio viene inviato come “Testo normale” da OWA, i tag HTML saranno completamente rimossi.
 - Il servizio non prende in considerazione le “iniziali”, pertanto aggiungere questa variabile potrebbe rivelarsi inutile.
 
-## Per saperne di più
+## Per saperne di più <a name="go-further"></a>
 
 [Guida all’utilizzo di Outlook Web App con un account Exchange](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa)
 

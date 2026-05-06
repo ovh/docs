@@ -26,9 +26,9 @@ details[open]>summary::before {
 
 Internet Protocol version 6 (IPv6) è la versione più recente dell’Internet Protocol (IP), sviluppato per risolvere il problema (a lungo anticipato) dell'esaurimento degli indirizzi IPv4. Infatti, mentre IPv4 utilizza indirizzi IP a 32 bit, IPv6 utilizza indirizzi a 128-bit.
 
-Tutte le istanze Public Cloud vengono consegnate  con un indirizzo IPv4 e un indirizzo IPv6.
+Tutte le istanze Public Cloud vengono consegnate con un indirizzo IPv4 e un indirizzo IPv6.
 
-Di default è configurato soltanto l’IPv4 perciò.
+Di default è configurato soltanto l’IPv4.
 
 **Questa guida ti mostra come configurare un indirizzo IPv6 su un’istanza Public Cloud.**
 
@@ -42,7 +42,16 @@ Di default è configurato soltanto l’IPv4 perciò.
 * Disporre di un qualsiasi modello di istanza Public Cloud
 * Avere accesso amministrativo (sudo) via SSH o desktop remoto (Windows) al server
 * Possedere conoscenze base di rete
-* Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Percorso di navigazione:** `Public Cloud`{.action} > Seleziona il tuo project
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## Procedura
 
@@ -65,7 +74,7 @@ Ecco una lista di termini impiegati in questa guida:
 
 ### Recupera le informazioni di rete
 
-Accedi al tuo Spazio Cliente, vai alla sezione `Public Cloud`{.action}, seleziona il tuo progetto Public Cloud e clicca su `Istanze`{.action} nella barra di navigazione a sinistra. Poi clicca su `...`{.action} accanto all'istanza corrispondente e clicca su `Dettagli dell’istanza`{.action}.
+Nel tuo progetto Public Cloud, clicca su `Istanze`{.action} nella barra di navigazione a sinistra. Poi clicca su `...`{.action} accanto all’istanza corrispondente e clicca su `Dettagli dell’istanza`{.action}.
 
 ![public-cloud ipv6](images/pci2022.png){.thumbnail}
 
@@ -107,7 +116,7 @@ Tutte le informazioni necessarie saranno visibili nella sezione **Reti**.
 >>
 >> In questo modo è possibile separare la configurazione IPv6 e annullare le modifiche in caso di errore.
 >>
->> Aggiungere le righe seguenti al file. Sostituisci i valori generici (*YOUR_IPV6*, *IPV6_PREFIX* e *IPV6_GATEWAY*) e l’interfaccia di rete (se il tuo server non utilizza **eth0**) con valori specifici:
+>> Aggiungere le righe seguenti al file. Sostituisci i valori generici (`YOUR_IPV6`, `IPV6_PREFIX` e `IPV6_GATEWAY`) e l’interfaccia di rete (se il tuo server non utilizza **eth0**) con valori specifici:
 >>
 >> ```console
 >> iface eth0 inet6 static
@@ -140,7 +149,8 @@ Tutte le informazioni necessarie saranno visibili nella sezione **Reti**.
 >>
 >> ```bash
 >> sudo systemctl restart networking
->> ``` 
+>> ```
+>>
 > **Ubuntu e Debian 12**
 >>
 >> I file di configurazione di rete si trovano nella directory `/etc/netplan/`.
@@ -153,7 +163,7 @@ Tutte le informazioni necessarie saranno visibili nella sezione **Reti**.
 >>
 >> In questo modo è possibile separare la configurazione IPv6 e annullare le modifiche in caso di errore.
 >>
->> Aggiungere le righe seguenti al file. Sostituisci i valori generici (ad esempio *YOUR_IPV6*, *IPV6_PREFIX* e *IPV6_GATEWAY*) e l’interfaccia di rete (se il tuo server non utilizza **eth0**) con valori specifici:
+>> Aggiungere le righe seguenti al file. Sostituisci i valori generici (ad esempio `YOUR_IPV6`, `IPV6_PREFIX` e `IPV6_GATEWAY`) e l’interfaccia di rete (se il tuo server non utilizza **eth0**) con valori specifici:
 >>
 >> ```bash
 >> sudo nano /etc/netplan/51-cloud-init-ipv6.yaml
@@ -173,7 +183,7 @@ Tutte le informazioni necessarie saranno visibili nella sezione **Reti**.
 >>               - to: ::/0
 >>                 via: IPv6_GATEWAY
 >> ```
->> 
+>>
 >> /// details | **Esempio**
 >>
 >> ```yaml
@@ -194,7 +204,7 @@ Tutte le informazioni necessarie saranno visibili nella sezione **Reti**.
 >>
 >> > [!warning]
 >> >
->> > È importante rispettare l'allineamento di ciascun elemento del file, come indicato nell'esempio di cui sopra. Non utilizzare il tasto di tabulazione per creare la tua spaziatura. E' necessario solo il tasto spazio.
+>> > È importante rispettare l'allineamento di ciascun elemento del file, come indicato nell'esempio di cui sopra. Non utilizzare il tasto di tabulazione per creare la tua spaziatura. È necessario solo il tasto spazio.
 >> >
 >>
 >> Per testare la tua configurazione utilizza questo comando:
@@ -207,9 +217,9 @@ Tutte le informazioni necessarie saranno visibili nella sezione **Reti**.
 >>
 >> ```bash
 >> sudo netplan apply
->> ``` 
+>> ```
 >>
-> **RedHat / CloudLinux / Rocky Linux (8 & 9) / AlmaLinux (8 & 9)**
+> **Red Hat / CloudLinux / Rocky Linux (8 & 9) / AlmaLinux (8 & 9)**
 >>
 >> I file di configurazione di rete si trovano nella directory `/etc/sysconfig/network-scripts/`. Prima di iniziare ti consigliamo di effettuare un backup dei file di configurazione.
 >>
@@ -228,7 +238,7 @@ Tutte le informazioni necessarie saranno visibili nella sezione **Reti**.
 >> sudo cp /etc/sysconfig/network-scripts/backup/ifcfg-eth0 /etc/sysconfig/network-scripts/ifcfg-eth0
 >> ```
 >>
->> In seguito modifichiamo il file `ifcfg-eth0`, aggiungendo solo le linee per la configurazione IPv6 del server. Sostituire gli elementi generici (*YOUR_IPV6*, *IPV6_PREFIX* e *IPV6_GATEWAY*) per valori specifici.
+>> In seguito modifichiamo il file `ifcfg-eth0`, aggiungendo solo le linee per la configurazione IPv6 del server. Sostituire gli elementi generici (`YOUR_IPV6`, `IPV6_PREFIX` e `IPV6_GATEWAY`) per valori specifici.
 >>
 >> ```console
 >> IPV6INIT=yes
@@ -255,7 +265,7 @@ Tutte le informazioni necessarie saranno visibili nella sezione **Reti**.
 >>
 >> ```bash
 >> sudo systemctl restart networking
->> ``` 
+>> ```
 >>
 > **Fedora / Rocky Linux (10) / AlmaLinux (10)**
 >>
@@ -269,7 +279,7 @@ Tutte le informazioni necessarie saranno visibili nella sezione **Reti**.
 >> sudo cp cloud-init-eth0.nmconnection backup/cloud-init-eth0.nmconnection
 >> ```
 >>
->> In seguito modifichiamo il file `cloud-init-eth0.nmconnection`, aggiungendo solo le linee per la configurazione IPv6 del server. Sostituire gli elementi generici (*YOUR_IPV6*, *IPV6_PREFIX* e *IPV6_GATEWAY*) per valori specifici.
+>> In seguito modifichiamo il file `cloud-init-eth0.nmconnection`, aggiungendo solo le linee per la configurazione IPv6 del server. Sostituire gli elementi generici (`YOUR_IPV6`, `IPV6_PREFIX` e `IPV6_GATEWAY`) per valori specifici.
 >>
 >> ```console
 >> [ipv6]
@@ -296,7 +306,7 @@ Tutte le informazioni necessarie saranno visibili nella sezione **Reti**.
 >>
 >> ```bash
 >> sudo systemctl restart NetworkManager
->> ``` 
+>> ```
 >>
 > **Windows**
 >>
@@ -323,7 +333,7 @@ Tutte le informazioni necessarie saranno visibili nella sezione **Reti**.
 
 ### Diagnostica
 
-Hai configurato il tuo IPv6 ma non funziona? 
+Hai configurato il tuo IPv6 ma non funziona?
 
 Esiste una semplice operazione per stabilire se l’errore si trova nella configurazione effettuata oppure sulla rete di OVHcloud.
 
@@ -342,9 +352,10 @@ Fai un test della tua connessione tramite un ping6, ad esempio:
 ```bash
 ping6 ipv6.google.com
 ```
+
 Se la tua istanza risponde, significa che uno degli step della configurazione iniziale non è stato seguito accuratamente.
 
-In ogni caso, se necessario, invia una richiesta di assistenza con gli elementi testati di cui sopra per ottenere un’analisi da parte nostra.
+In ogni caso, se necessario, invia una [richiesta di assistenza](https://help.ovhcloud.com/csm?id=csm_get_help) con gli elementi testati di cui sopra per ottenere un’analisi da parte nostra.
 
 ## Per saperne di più
 

@@ -21,18 +21,23 @@ Usługa Hosted Exchange pozwala na korzystanie z profesjonalnej poczty elektroni
 - Wykupienie usługi [Hosted Exchange](/links/web/emails-hosted-exchange).
 - Otrzymanie wiadomość e-mail z potwierdzeniem, że usługa Hosted Exchange została zainstalowana.
 - Zarejestrowana domena.
-- Dostęp [do Panelu klienta OVHcloud](/links/manager).
+
+<!-- CP-NAV-START:web-exchange -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Exchange](/links/control-panel/web-exchange)
+- **Ścieżka nawigacji:** `Web Cloud`{.action} > `Exchange`{.action} > Wybierz platformę
+
+---
+<!-- CP-NAV-END:web-exchange -->
 
 ## W praktyce
 
 ### Dostęp do zarządzania usługą
 
 Po utworzeniu i udostępnieniu usługi Hosted Exchange :
-
-1. Zaloguj się do [Panelu klienta OVHcloud](/links/manager).
-1. Przejdź do sekcji `Web Cloud`{.action}.
-1. W sekcji `MICROSOFT` kliknij `Exchange`{.action}.
-1. Wybierz odpowiednią platformę.
 
 > [!primary]
 >
@@ -53,9 +58,9 @@ Wybierz jedną z Twoich domen z listy lub zaznacz kratkę `Moja domena nie figur
 
 ![email](images/exchange-wizard01.png){.thumbnail}
 
-#### Czy zamierzasz korzystać wyłącznie z oferty Exchange OVH z tą domeną?
+#### Czy zamierzasz korzystać wyłącznie z oferty Exchange OVHcloud z tą domeną?
 
-Pytanie "Czy **zamierzasz korzystać z domeny wyłącznie w ramach usługi Exchange OVH?** "określi typ konfiguracji Twojej domeny. 
+Pytanie "Czy **zamierzasz korzystać z domeny wyłącznie w ramach usługi Exchange OVHcloud?** "określi typ konfiguracji Twojej domeny. 
 
 - Jeśli korzystasz z oferty Exchange samodzielnie lub z innych ofert **e-mail OVHcloud**, konfiguracja może zostać przeprowadzona automatycznie lub ręcznie, wyłącznie za pomocą serwerów e-mail OVHcloud.
 - Jeśli korzystasz z Twojej usługi Exchange jako uzupełnienie **zewnętrznej usługi e-mail o ofertę e-mail OVHcloud**, zostaniesz poproszony o podanie, pod pozycją `Serwer przekazujący (SMTP)`, adresu URL serwera, na który ma zostać wysłana Twoja zewnętrzna usługa e-mail.
@@ -112,7 +117,7 @@ Więcej informacji znajdziesz w dokumentacji [Dodawanie domeny do usługi Exchan
 > Jeśli któraś z domen wymaga wykonania jakiegoś szczególnego działania związanego z jej konfiguracją, w kolumnie `Diagnostyka`{.action} w tabeli zobaczysz czerwony przycisk. Po kliknięciu w czerwony przycisk wyświetlą się modyfikacje, jakie należy przeprowadzić. Jeśli domena nie używa konfiguracji OVHcloud (serwery DNS OVHcloud), wprowadź zmiany w interfejsie do zarządzania konfiguracją Twojej domeny. 
 >
 
-![Dodanie domeny](images/first-steps-hosted-exchange-add-domain.png)
+![Dodanie domeny](images/first-steps-hosted-exchange-add-domain.png){.thumbnail}
 
 ### Konfiguracja dodatkowych kont Exchange (opcjonalnie)
 
@@ -127,7 +132,7 @@ Konta oczekujące na konfigurację wyświetlane są w tabeli w postaci “*@conf
 > Powtórz ten etap tyle razy, ile będzie to konieczne, w zależności od liczby posiadanych kont. Możesz zamówić nowe konta, klikając przycisk `Operacje`{.action}, a następnie `Zamów konta`{.action}.
 >
 
-![Dodanie konta](images/first-steps-hosted-exchange-add-account.png)
+![Dodanie konta](images/first-steps-hosted-exchange-add-account.png){.thumbnail}
 
 ### Korzystanie z kont e-mail
 
@@ -163,7 +168,7 @@ Aby aktywować te różne funkcje, wybierz odpowiednią usługę Hosted Exchange
 
 Jeśli potrzebujesz pomocy odnośnie którejś z funkcji, skorzystaj z [naszej dokumentacji](/products/web-cloud-email-collaborative-solutions-microsoft-exchange).
 
-## Sprawdź również
+## Sprawdź również <a name="go-further"></a>
 
 [Utwórz grupę kontaktów](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/feature_groups)
 

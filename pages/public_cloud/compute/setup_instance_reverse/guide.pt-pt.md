@@ -16,11 +16,21 @@ Configurar a resolução **Reverse DNS** de uma instância é particularmente ú
 
 - Ter uma [instância Public Cloud](/links/public-cloud/public-cloud) na sua conta OVHcloud.
 - Um domínio com o seu campo `A` apontando para a instância.
-- Estar ligado à [Área de Cliente OVHcloud](/links/manager).
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Acesso à Área de Cliente OVHcloud
+
+- **Ligação direta:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Caminho de navegação:** `Public Cloud`{.action} > Selecione o seu projeto
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## Instruções
 
-Aceda à [Área de Cliente OVHcloud](/links/manager), aceda à secção `Network`{.action} e clique em `Endereços IP públicos`{.action}.
+Aceda à secção `Network`{.action} e clique em `Endereços IP públicos`{.action}.
 
 O menu suspenso em "**Os meus endereços IP públicos e serviços associados**" permite-lhe filtrar os seus serviços por categoria. Também pode pesquisar um endereço IP específico através da barra de pesquisa localizada à esquerda do menu suspenso.
 

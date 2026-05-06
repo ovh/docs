@@ -1,5 +1,5 @@
 ---
-title: Como Instalar a plataforma CUDA num servidor dedicado GPU
+title: "Instalar CUDA num servidor dedicado GPU"
 updated: 2017-12-14
 ---
 

@@ -1,6 +1,6 @@
 ---
-title: Como configurar um IP alias
-excerpt: Descubra como adicionar endereços Additional IP à configuração de rede
+title: "Configurar o IP aliasing num servidor dedicado"
+excerpt: "Adicione e configure endereços Additional IP no seu servidor dedicado OVHcloud para um alojamento multi-sites ou multi-serviços"
 updated: 2025-12-04
 ---
 
@@ -30,13 +30,13 @@ details[open]>summary::before {
 
 O IP aliasing é uma configuração de rede para servidores dedicados que permite associar vários endereços IP à mesma interface de rede.
 
-**Este guia explica como realizar o IP aliasing**
+**Este guia explica como realizar o IP aliasing.**
 
 > [!warning]
 >
 > A OVHcloud oferece-lhe serviços pelos quais é responsável. Uma vez que não temos acesso a estas máquinas, não podemos administrá-las nem fornecer-lhe assistência. O cliente é o único responsável pela gestão e pela segurança do serviço.
 >
-> Este guia fornece as instruções necessárias para realizar as operações mais habituais. Se encontrar dificuldades ou dúvidas relativamente à administração, à utilização ou à segurança de um servidor, deverá contactar um [fornecedor especializado](/links/partner). Mais informações na secção « Ir mais longe » deste guia.
+> Este guia fornece as instruções necessárias para realizar as operações mais habituais. Se encontrar dificuldades ou dúvidas relativamente à administração, à utilização ou à segurança de um servidor, deverá contactar um [fornecedor especializado](/links/partner). Mais informações na secção "Ir mais longe" deste guia.
 >
 
 ## Requisitos
@@ -196,7 +196,7 @@ Nos exemplos abaixo, utilizaremos o editor de texto `nano`. Para alguns sistemas
 >>
 >> Fedora utiliza agora ficheiros chave (*keyfiles*).
 >> Fedora utilizava anteriormente perfis de rede armazenados pela NetworkManager no formato ifcfg no diretório `/etc/sysconfig/network-scripts/`.<br>
->> Uma vez que o ifcfg se encontra agora em imparidade, NetworkManager não cria de forma padrão os novos perfis neste formato. O ficheiro de configuração encontra-se agora no `/etc/NetworkManager/system-connections/`.
+>> Uma vez que o ifcfg está agora obsoleto, NetworkManager não cria de forma padrão os novos perfis neste formato. O ficheiro de configuração encontra-se agora no `/etc/NetworkManager/system-connections/`.
 >>
 >> **1 - Fazer cópia do ficheiro de configuração (*source file*)**
 >>
@@ -278,7 +278,7 @@ Nos exemplos abaixo, utilizaremos o editor de texto `nano`. Para alguns sistemas
 > **Debian 12+ e Ubuntu 20.04+**
 >> Debian 12, Ubuntu 20.04 e versões seguintes
 >>
->> Por padrão, os arquivos de configuração estão localizados no diretório `/etc/netplan`.
+>> Por predefinição, os ficheiros de configuração estão localizados no diretório `/etc/netplan`.
 >>
 >> A melhor abordagem é criar um ficheiro de configuração separado para configurar os endereços Additional IP. Isto permite um retrocesso fácil em caso de erro.
 >>
@@ -295,7 +295,7 @@ Nos exemplos abaixo, utilizaremos o editor de texto `nano`. Para alguns sistemas
 >> De seguida, crie um ficheiro de configuração com uma extensão `.yaml`. No nosso exemplo, o nosso ficheiro chama-se `51-cloud-init.yaml`.
 >>
 >> ```sh
->> sudo nano /etc/netplan/50-cloud-init.yaml
+>> sudo nano /etc/netplan/51-cloud-init.yaml
 >> ```
 >>
 >> De seguida, edite o ficheiro com o conteúdo abaixo, substituindo `INTERFACE_NAME` e `ADDITIONAL_IP` pelos seus próprios valores:
@@ -356,13 +356,13 @@ Nos exemplos abaixo, utilizaremos o editor de texto `nano`. Para alguns sistemas
 >> ```
 >>
 >> > [!primary]
->> > Quando utilizar o comando `netplan try`, é possível que o sistema envie uma mensagem de aviso tal como `Permissions for /etc/netplan/xx-cloud-init.yaml are too open. Netplan configuration should NOT be access by others`. Isso simplesmente significa que o arquivo não tem permissões restritivas. Isto não afeta a configuração do seu Additional IP. Para mais informações sobre as permissões dos ficheiros, consulte a [documentação oficial do ubuntu](https://help.ubuntu.com/community/FilePermissions).
+>> > Quando utilizar o comando `netplan try`, é possível que o sistema envie uma mensagem de aviso tal como `Permissions for /etc/netplan/xx-cloud-init.yaml are too open. Netplan configuration should NOT be access by others`. Isso simplesmente significa que o ficheiro não tem permissões restritivas. Isto não afeta a configuração do seu Additional IP. Para mais informações sobre as permissões dos ficheiros, consulte a [documentação oficial do Ubuntu](https://help.ubuntu.com/community/FilePermissions).
 >> >
 >>
 > **AlmaLinux / Rocky Linux**
 >> AlmaLinux (8/9) & Rocky Linux (8/9)
 >>
->> O ficheiro de configuração principal encontra-se em `/etc/sysconfig/network-scripts/`. No nosso exemplo, é chamado `ifcfg-eth0`. Antes de fazer alterações, verifique o nome real do arquivo nessa pasta.
+>> O ficheiro de configuração principal encontra-se em `/etc/sysconfig/network-scripts/`. No nosso exemplo, é chamado `ifcfg-eth0`. Antes de fazer alterações, verifique o nome real do ficheiro nessa pasta.
 >>
 >> Para cada Additional IP a configurar, criamos um ficheiro de configuração separado com os seguintes parâmetros: `ifcfg-NETWORK_INTERFACE:ID`. Onde "NETWORK_INTERFACE" representa a interface física e "ID" é a interface de rede virtual ou o alias ethernet que começa por um valor de 0. Por exemplo, para a nossa interface chamada `eth0`, o primeiro alias é `eth0:0`, o segundo alias é `eth0:1`, etc...
 >>
@@ -425,7 +425,7 @@ Nos exemplos abaixo, utilizaremos o editor de texto `nano`. Para alguns sistemas
 >>
 >> **2 - Adicionar as informações dos Adicionais IP**
 >>
->> Insira o seu endereço Additional IP sob a forma "xxx.xxx.xxx.xxx" no campo "New IP or IP range to add".
+>> Insira o seu endereço Additional IP sob a forma "xxx.xxx.xxx.xxx" no campo `New IP or IP range to add`.
 >>
 >> Selecione `255.255.255.255` como máscara de sub-rede e clique em `Submit`{.action}.
 >>
@@ -433,14 +433,14 @@ Nos exemplos abaixo, utilizaremos o editor de texto `nano`. Para alguns sistemas
 >>
 >> > [!warning]
 >> >
->> > Atenção: se tiver vários endereços IP a configurar num bloco e os adicionar ao mesmo tempo, o sistema WHM irá obrigar-lo a utilizar a máscara de sub-rede `255.255.255.0`.Não é recomendado que utilize esta configuração, deve adicionar cada IP individualmente para utilizar a máscara de sub-rede apropriada `255.255.255.255`.
+>> > Atenção: se tiver vários endereços IP a configurar num bloco e os adicionar ao mesmo tempo, o sistema WHM irá obrigar-lo a utilizar a máscara de sub-rede `255.255.255.0`. Não é recomendado que utilize esta configuração, deve adicionar cada IP individualmente para utilizar a máscara de sub-rede apropriada `255.255.255.255`.
 >> >
 >>
 >> **3 - Verificar a configuração IP atual**
 >>
 >> De volta para a secção `IP Functions`{.action}, clique em `Show or Delete Current IPs`{.action} para verificar que o endereço Additional IP foi corretamente adicionado.
 >>
->> ![check configurgured IP](images/Cpanel-2024-1.png){.thumbnail}
+>> ![check configured IP](images/Cpanel-2024-1.png){.thumbnail}
 >>
 > **Windows Server**
 >> Windows Server
@@ -513,7 +513,7 @@ Nos exemplos abaixo, utilizaremos o editor de texto `nano`. Para alguns sistemas
 >>
 >> 4. Selecione o `Internet Protocol Version 4 (TCP/IPv4)`{.action}, e clique em `Properties`{.action}.
 >>
->> 5. Clique em `Use the following IP address`{.action} e introduza o IP principal do servidor, a máscara de sub-rede e o *gateway* predefinido, apresentados após a execução do comando `ipconfig`{.action} (ver exemplo acima). Em `Preferred DNS Server`, introduza 213.186.33.99.
+>> 5. Clique em `Use the following IP address`{.action} e introduza o IP principal do servidor, a máscara de sub-rede e o *gateway* predefinido, apresentados após a execução do comando `ipconfig` (ver exemplo acima). Em `Preferred DNS Server`, introduza 213.186.33.99.
 >>
 >> ![Internet Protocol Version 4 (TCP/IPv4) Properties](images/guides-network-ipaliasing-windows-2008-2.png){.thumbnail}
 >>
@@ -557,7 +557,7 @@ Nos exemplos abaixo, utilizaremos o editor de texto `nano`. Para alguns sistemas
 >>
 >> ![acesso à gestão dos endereços IP](images/pleskip1.png){.thumbnail}
 >>
->> Clique em `IP Addresses`{.action} em **Tools & Settings**.
+>> Clique em `IP Addresses`{.action} em **Tools & Resources**.
 >>
 >> **2 - Adicionar informações IP suplementares**
 >>
@@ -565,18 +565,18 @@ Nos exemplos abaixo, utilizaremos o editor de texto `nano`. Para alguns sistemas
 >>
 >> ![adicionar informações IP](images/Plesk-2024.png){.thumbnail}
 >>
->> Introduza o seu endereço Additional IP sob a forma `xxx.xxx.xxx.xxx/32` no campo "IP address and subnet mask", e clique em `OK`{.action}.
+>> Introduza o seu endereço Additional IP sob a forma `xxx.xxx.xxx.xxx/32` no campo `IP address and subnet mask`, e clique em `OK`{.action}.
 >>
 >> ![adicionar informações IP](images/Plesk-2024-1.png){.thumbnail}
 >> 
 >> **3 - Verificar a configuração IP atual**
 >>
->> Na secção "IP Addresses", verifique se o endereço Additional IP foi adicionado corretamente.
+>> Na secção `IP Addresses`, verifique se o endereço Additional IP foi adicionado corretamente.
 >>
 >> ![configuração IP atual](images/Plesk-2024-2.png){.thumbnail}
 >>
 
-### Resolução das deficiências
+### Resolução de problemas
 
 Se não conseguir estabelecer uma ligação entre a rede pública e o seu alias IP e suspeitar de um problema de rede, reinicie o servidor em [modo rescue](/pages/bare_metal_cloud/dedicated_servers/rescue_mode) e configure o alias diretamente no servidor.
 
@@ -586,9 +586,9 @@ Para isso, execute o seguinte comando depois de reiniciar o servidor em modo res
 ifconfig eth0:0 ADDITIONAL_IP netmask 255.255.255.255 broadcast ADDITIONAL_IP up
 ```
 
-Onde irá substituir "ADDITIONAL_IP" pelo verdadeiro Additional IP.
+Onde irá substituir `ADDITIONAL_IP` pelo verdadeiro Additional IP.
 
-De seguida,efetuar um ping a partir do seu Additional IP para o exterior. Se isso funcionar, provavelmente significa que há um erro de configuração que precisa ser corrigido. Se, pelo contrário, o endereço IP não funcionar, abra um ticket junto da equipa de assistência através do [Centro de Ajuda da OVHcloud](https://help.ovhcloud.com/csm?id=csm_get_help) com as seguintes informações:
+De seguida, efetuar um ping a partir do seu Additional IP para o exterior. Se isso funcionar, provavelmente significa que há um erro de configuração que precisa ser corrigido. Se, pelo contrário, o endereço IP não funcionar, abra um ticket junto da equipa de assistência através do [Centro de Ajuda da OVHcloud](https://help.ovhcloud.com/csm?id=csm_get_help) com as seguintes informações:
 
 - O nome e a versão do sistema operativo que utiliza no seu servidor.
 - Nome e diretório do ficheiro de configuração de rede.

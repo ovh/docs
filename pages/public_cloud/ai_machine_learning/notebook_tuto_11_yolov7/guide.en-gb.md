@@ -14,10 +14,20 @@ It is based on the YOLOv7 open source [repository](https://github.com/WongKinYiu
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](/links/manager)
 - An AI Notebooks project created inside a [Public Cloud project](/links/public-cloud/public-cloud) in your OVHcloud account
 - A user for AI Notebooks
 - A [Public Roboflow](https://public.roboflow.com/) account to access and download the [American Sign Language Letters Dataset](https://public.roboflow.com/object-detection/american-sign-language-letters/1)
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Navigation path:** `Public Cloud`{.action} > Select your project
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## Instructions
 
@@ -32,9 +42,11 @@ This tutorial is based on the [American Sign Language Letters Dataset](https://p
 
 ### Create Object Storage containers
 
+<!-- CP-STEPS-START:create-object-storage-containers -->
 If you want to create it from the [OVHcloud Control Panel](/links/manager), go to the Object Storage section and create a new object container by clicking `Object Storage` > `Create an object container`.
 
 ![image](images/new-object-container.png){.thumbnail}
+<!-- CP-STEPS-END:create-object-storage-containers -->
 
 If you want to run it with the CLI, just follow this [guide](/pages/public_cloud/ai_machine_learning/cli_17_how_to_cli_data_notebooks). You have to choose the region, the name of your container and the path where your data is located and use the following commands.
 
@@ -64,6 +76,7 @@ ovhai bucket create <region> asl-volov7-model
 
 You need to attach a volume if your data is in your OVHcloud Object Storage and you want to use it during your experiment, or if you need to save the results of your work in the Object Storage. For more information on data, volumes and permissions, see [our guide on data](/pages/public_cloud/ai_machine_learning/cli_17_how_to_cli_data_notebooks).
 
+<!-- CP-STEPS-START:launch-notebook-cp -->
 If you want to launch it from the [OVHcloud Control Panel](/links/manager), just follow this [guide](/pages/public_cloud/ai_machine_learning/notebook_guide_introduction_definition).
 
 1. `Name your notebook`
@@ -75,6 +88,7 @@ If you want to launch it from the [OVHcloud Control Panel](/links/manager), just
 7. `Attach your two containers`
 8. `Attach public ssh keys only if you want to`
 9. `Check that everything is ok and launch your notebook`
+<!-- CP-STEPS-END:launch-notebook-cp -->
 
 Once the repository has been cloned, find the YOLOv7 notebook by following this path: `ai-training-examples` > `notebooks` > `computer-vision` > `object-detection` > `miniconda` > `yolov7` > `notebook_object_detection_yolov7.ipynb`.
 

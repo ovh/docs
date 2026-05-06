@@ -1,6 +1,6 @@
 ---
-title: "Récupération des bases de données en mode rescue"
-excerpt: "Découvrez comment accéder à vos bases de données et les enregistrer en mode rescue"
+title: "Récupérer des bases de données en mode rescue sur un serveur dédié"
+excerpt: "Accédez à vos bases de données et exportez-les depuis un serveur dédié en mode rescue pour récupérer vos données après un incident"
 updated: 2023-04-13
 ---
 
@@ -13,7 +13,17 @@ Le mode Rescue permet d'accéder à vos données en permanence, même si le syst
 ## Prérequis
 
 - Un [serveur dédié](/links/bare-metal/bare-metal), un [VPS](/links/bare-metal/vps) ou une instance [Public Cloud](/links/public-cloud/public-cloud) dans votre compte OVHcloud (hors systèmes Windows)
-- Être connecté à votre [espace client OVHcloud](/links/manager)
+
+<!-- CP-NAV-START:baremetal-dedicated-servers -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Serveurs dédiés](/links/control-panel/baremetal-dedicated-servers)
+- **Pour accéder à vos services :** `Bare Metal Cloud`{.action} > `Serveurs dédiés`{.action} > Sélectionnez votre serveur
+
+---
+<!-- CP-NAV-END:baremetal-dedicated-servers -->
 
 > [!warning]
 >
@@ -258,5 +268,7 @@ root@rescue:/# scp -P SSH_Port_Number dump.sql user@IP_address:/home/backup
 ```
 
 ## Aller plus loin
+
+[Diagnostiquer des dysfonctionnements matériels sur un serveur dédié](/pages/bare_metal_cloud/dedicated_servers/hardware-diagnose)
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).

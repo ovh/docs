@@ -26,17 +26,27 @@ Lors de la création d’une instance Public Cloud, vous pouvez choisir entre un
 ## Prérequis
 
 - Vous devez avoir créé une [instance Public Cloud](/links/public-cloud/public-cloud).
-- Vous devez être connecté à votre [espace client OVHcloud](/links/manager).
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Projets Public Cloud](/links/control-panel/publiccloud-projects)
+- **Pour accéder à vos services :** `Public Cloud`{.action} > Sélectionnez votre projet
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## En pratique
 
-### Depuis l'espace client OVHcloud
+### Depuis l’espace client OVHcloud
 
 > [!warning]
 > La procédure suivante ne fonctionne pas pour les instances de troisième génération (exemple : B3-32). Pour être facturé mensuellement pour ce type d’instance, vous devez créer un [Savings Plan](/pages/public_cloud/public_cloud_cross_functional/savings_plans) pour ce modèle d’instance.
 >
 
-Dans [votre espace client](/links/manager), cliquez sur `Public cloud`{.action}, choisissez le projet Public cloud concerné puis cliquez sur `Instances`{.action} dans le menu `Compute`. Cliquez sur le bouton `...`{.action} à droite de l'instance pour laquelle vous souhaitez modifier la facturation. Vous verrez alors le bouton `Passer au forfait mensuel`{.action} :
+Cliquez sur `Instances`{.action} dans le menu `Compute`. Cliquez sur le bouton `...`{.action} à droite de l'instance pour laquelle vous souhaitez modifier la facturation. Vous verrez alors le bouton `Passer au forfait mensuel`{.action} :
 
 ![Modifier le mode de calcul des factures](images/switch_to_monthly_updated.png){.thumbnail}
 

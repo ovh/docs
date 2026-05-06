@@ -1,5 +1,5 @@
 ---
-title: "Public Cloud Databases - Comment migrer vos bases de données à OVHcloud DBaaS"
+title: Migrer vers les bases de données Public Cloud OVHcloud
 excerpt: "Découvrez comment transférer vos bases de données vers OVHcloud via un dump et restore ou une migration PostgreSQL en direct"
 updated: 2025-09-03
 ---
@@ -11,7 +11,18 @@ Ce guide vous fournit des instructions étape par étape pour migrer vos bases d
 ## Prérequis
 
 - Un projet [Public Cloud](/links/public-cloud/public-cloud) dans votre compte OVHcloud
-- Être connecté à l'[espace client OVHcloud](/links/manager) ou à l'[API OVHcloud](/links/api)
+- Accès à l'[API OVHcloud](/links/api) (facultatif)
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Projets Public Cloud](/links/control-panel/publiccloud-projects)
+- **Pour accéder à vos services :** `Public Cloud`{.action} > Sélectionnez votre projet
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## En pratique
 

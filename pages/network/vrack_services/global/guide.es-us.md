@@ -140,7 +140,7 @@ Here is the command line :
 ```bash
 curl -X GET "https://ca.api.ovh.com/v2/vrackServices/resource" \
  -H "accept: application/json"\
- -H "authorization: Bearer eyJhbGciOiJFZERTGSIsImtpZCI6IkVGNThFMkUxMTFBODNCREFEMDE4OUUzMzZERTM3MDhFNjRDMDA4MDEiLCJraW5kIjoib9F1dGgyIiwidHlwIjoiSldUIn0.eyJBY2Nlc3NUb2tlbiI6Ijc1MDE4MWFkODQ2MDVhYTA2MTY2ODNkNDIxOGEzMWZjMzZkZjM1NzExODFhYmM4ODY4OTliMmRlZjUwZTcxNDEiLCJpYXQiOjE3MTI3NTQ4Mzd9.TKbH0KW7stkOLWfNYMUdFfMSOYHubFLWWrF6CodVFDGHFE4yWiehGUqdgdUN1g9CC23sqr7M-fUvfHMmcpfPCg" \
+ -H "authorization: Bearer <YOUR_BEARER_TOKEN>" \
 ```
 
 The ID used in our example is `vrs-a8y-v9a-x5m-f4u`
@@ -157,7 +157,7 @@ Here is the command line :
 ```bash
 curl -X GET "https://ca.api.ovh.com/v2/vrackServices/resource/vrs-a8y-v9a-x5m-f4u/eligibleManagedService" \
  -H "accept: application/json"\
- -H "authorization: Bearer eyJhbGciOiJFZERTGSIsImtpZCI6IkVGNThFMkUxMTFBODNCREFEMDE4OUUzMzZERTM3MDhFNjRDMDA4MDEiLCJraW5kIjoib9F1dGgyIiwidHlwIjoiSldUIn0.eyJBY2Nlc3NUb2tlbiI6Ijc1MDE4MWFkODQ2MDVhYTA2MTY2ODNkNDIxOGEzMWZjMzZkZjM1NzExODFhYmM4ODY4OTliMmRlZjUwZTcxNDEiLCJpYXQiOjE3MTI3NTQ4Mzd9.TKbH0KW7stkOLWfNYMUdFfMSOYHubFLWWrF6CodVFDGHFE4yWiehGUqdgdUN1g9CC23sqr7M-fUvfHMmcpfPCg" \
+ -H "authorization: Bearer <YOUR_BEARER_TOKEN>" \
 ```
 
 The IDs of the managed services used in our example below are as follows:
@@ -225,7 +225,7 @@ Action formulated with a `GET`{.action} :
 ```bash
 curl -X GET "https://ca.api.ovh.com/v2/vrackServices/resource/vrs-a9y-v91-xnm-f5u" \
  -H "accept: application/json"\
- -H "authorization: Bearer eyJhbGciOiJFZERTQSIsImtpZCI6IkVGNThFMkUxMTFBODNCREFEMDE4OUUzMzZERTk3MDhFNjRDMDA4MDEiLCJraW5kIjoib2F1dGgyIiwidHlwIjoiSldUIn0.eyJBY2Nlc3NUb2tlbiI6ImNkNDg5Mzg2ZTAyOGEzNjA1NDQ0ZmUwZTFjZjU5ZWI4ZTdmMzhkNjMwNmJhNzFlZDdhZWY1YmNmNGIxNWU5OGQiLCJpYXQiOjE3MTMxNzE2MTB9.h7HWtfCRhXV51P8QZSZfl0OEI_nagATzaI9lvYKOp4IV_-Jew5HFh970TWFtZnGoLTgY9DVP6qyCvB5qu2RZAg" \
+ -H "authorization: Bearer <YOUR_BEARER_TOKEN>" \
 ```
 
 Output:
@@ -287,7 +287,7 @@ Action formulated with the `PUT`{.action} - Update in progress:
 ```bash
 curl -X PUT "https://ca.api.ovh.com/v2/vrackServices/resource/vrs-a9y-v91-xnm-f5u" \
  -H "accept: application/json"\
- -H "authorization: Bearer eyJhbGciOiJFZERTQSIsImtpZCI6IkVGNThFMkUxMTFBODNCREFEMDE4OUUzMzZERTk3MDhFNjRDMDA4MDEiLCJraW5kIjoib2F1dGgyIiwidHlwIjoiSldUIn0.eyJBY2Nlc3NUb2tlbiI6ImNkNDg5Mzg2ZTAyOGEzNjA1NDQ0ZmUwZTFjZjU5ZWI4ZTdmMzhkNjMwNmJhNzFlZDdhZWY1YmNmNGIxNWU5OGQiLCJpYXQiOjE3MTMxNzE2MTB9.h7HWtfCRhXV51P8QZSZfl0OEI_nagATzaI9lvYKOp4IV_-Jew5HFh970TWFtZnGoLTgY9DVP6qyCvB5qu2RZAg"\
+ -H "authorization: Bearer <YOUR_BEARER_TOKEN>"\
  -H "content-type: application/json" \
  -d '{"checksum":"609cf69014e57abfb3d892133692ac6f","targetSpec":{"displayName":"My_vRackServices_updated","subnets":[{"cidr":"10.120.0.0/16","displayName":null,"serviceEndpoints":[{"managedServiceURN":"urn:v1:eu:resource:storageNetApp:f88c7410-f920-443b-ab1b-8c699a1c3xxx"}],"serviceRange":{"cidr":"10.120.0.0/29"},"vlan":null}]}}' \
 ```
@@ -372,7 +372,7 @@ Action formulated with `GET`{.action}:
 ```bash
 curl -X GET "https://ca.api.ovh.com/v2/vrackServices/resource/vrs-a9y-v91-xnm-f5u" \
  -H "accept: application/json"\
- -H "authorization: Bearer eyJhbGciOiJFZERTQSIsImtpZCI6IkVGNThFMkUxMTFBODNCREFEMDE4OUUzMzZERTk3MDhFNjRDMDA4MDEiLCJraW5kIjoib2F1dGgyIiwidHlwIjoiSldUIn0.eyJBY2Nlc3NUb2tlbiI6ImNkNDg5Mzg2ZTAyOGEzNjA1NDQ0ZmUwZTFjZjU5ZWI4ZTdmMzhkNjMwNmJhNzFlZDdhZWY1YmNmNGIxNWU5OGQiLCJpYXQiOjE3MTMxNzE2MTB9.h7HWtfCRhXV51P8QZSZfl0OEI_nagATzaI9lvYKOp4IV_-Jew5HFh970TWFtZnGoLTgY9DVP6qyCvB5qu2RZAg" \
+ -H "authorization: Bearer <YOUR_BEARER_TOKEN>" \
 ```
 
 Output:

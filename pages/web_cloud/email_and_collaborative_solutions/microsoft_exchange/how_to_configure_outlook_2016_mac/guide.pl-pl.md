@@ -10,9 +10,20 @@ Konta Exchange mogą być skonfigurowane w jednym z kompatybilnych programów po
 
 ## Wymagania początkowe
 
-- Wykupienie usługi [Exchange](/links/web/emails)
+- Wykupienie usługi [Exchange](/links/web/emails-exchange)
 - Instalacja aplikacji Microsoft Outlook na Twoim urządzeniu Mac
 - Dane do logowania do konta e-mail, które chcesz skonfigurować
+
+<!-- CP-NAV-START:web-exchange -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Exchange](/links/control-panel/web-exchange)
+- **Ścieżka nawigacji:** `Web Cloud`{.action} > `Exchange`{.action} > Wybierz platformę
+
+---
+<!-- CP-NAV-END:web-exchange -->
 
 > [!primary]
 >
@@ -39,7 +50,7 @@ Wpisz Twój adres e-mail, po czym kliknij `Dalej`{.action}. Jeśli pojawi się l
 |Adres poczty elektronicznej|Wpisz nazwę pozwalającą odróżnić to konto od Twoich pozostałych kont wyświetlających się w aplikacji Outlook.|
 |DOMENA\nazwa użytkownika lub adres poczty elektronicznej|Wpisz pełny adres e-mail.|
 |Hasło|Wpisz hasło wybrane dla tego konta e-mail.|
-|Serwer|W zależności od konfiguracji DNS Twojej domeny wskazanie serwera, na którym hostujesz usługę Exchange może być fakultatywne. Jeśli jest to wymagane, wskaż serwer, na którym hostowana jest Twoja usługa Exchange. Możesz znaleźć go w [Panelu klienta](/links/manager) > zakładka `Informacje ogólne`{.action} dotyczące danej usługi Exchange > `Logowanie`{.action}.|
+|Serwer|W zależności od konfiguracji DNS Twojej domeny wskazanie serwera, na którym hostujesz usługę Exchange może być fakultatywne. Jeśli jest to wymagane, wskaż serwer, na którym hostowana jest Twoja usługa Exchange. Kliknij [ten link](/links/control-panel/web-exchange), aby przejść do sekcji `Exchange`{.action}. Nazwa serwera wyświetla się w strefie **Połączenie** w zakładce `Informacje ogólne`{.action}.|
 
 Po uzupełnieniu informacji kliknij przycisk `Dodaj konto`{.action}. Jeśli dane są prawidłowe, logowanie zakończy się sukcesem.
 

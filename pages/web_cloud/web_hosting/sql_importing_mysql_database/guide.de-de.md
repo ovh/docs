@@ -1,7 +1,7 @@
 ---
 title: 'Backup in eine Webhosting-Datenbank importieren'
 excerpt: 'In dieser Anleitung erfahren Sie, wie Sie ein Backup in die Datenbank Ihres OVHcloud Webhostings importieren.'
-updated: 2025-10-08
+updated: 2026-04-01
 ---
 
 ## Einleitung
@@ -13,9 +13,20 @@ Fast alle Content-Management-Systeme (CMS) wie WordPress oder Joomla! verwenden 
 ## Voraussetzungen
 
 - Sie haben ein [OVHcloud Webhosting](/links/web/hosting) Angebot.
-- Ihr [OVHcloud Webhosting](/links/web/hosting) Angebot beinhaltet eine Datenbank.
+- Sie verfügen über ein [OVHcloud Webhosting](/links/web/hosting) mit einer Datenbank.
 - Sie haben Zugriff auf das Backup, das Sie in Ihre Datenbanken importieren möchten.
-- Je nach der verwendeten Import-Methode benötigen Sie Zugriff auf die Verwaltung Ihres Webhosting Angebots über das [OVHcloud Kundencenter](/links/manager), oder die erforderlichen Login-Daten, um sich mit der Datenbank zu verbinden.
+- Sie benötigen je nach der verwendeten Import-Methode Zugriff auf das OVHcloud Kundencenter oder die Login-Daten, um sich mit der Datenbank zu verbinden.
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direkter Link:** [Hosting-Pakete](/links/control-panel/web-hosting)
+- **Navigationspfad:** `Web Cloud`{.action} > `Hosting-Pakete`{.action} > Wählen Sie Ihr Webhosting aus
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## Beschreibung
 
@@ -44,64 +55,102 @@ Folgen Sie dieser Anleitung nun entsprechend der von Ihnen gewählten Import-Met
 
 ### Backup über das Kundencenter wiederherstellen
 
-Loggen Sie sich hierfür im [OVHcloud Kundencenter](/links/manager) ein, klicken Sie auf `Hosting-Pakete`{.action} und wählen Sie das betreffende Hosting aus. Gehen Sie dann auf den Tab `Datenbanken`{.action}.
+<!-- CP-STEPS-START:restore-backup-control-panel -->
+Klicken Sie auf die Tabs, um die **4** Schritte anzuzeigen.
 
-![Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases.png){.thumbnail}
-
-Die angezeigte Tabelle enthält alle Datenbanken, die im Rahmen Ihres Webhosting Angebots erstellt wurden. Klicken Sie nun auf die drei Punkte rechts neben der Datenbank, die Sie wieder auf eine ältere Version zurücksetzen möchten, und wählen Sie dann `Eine Sicherung wiederherstellen`{.action}. Bitte beachten Sie, dass der aktuelle Inhalt der Datenbank durch den Inhalt des ausgewählten Backups ersetzt wird.
-
-![Datenbankimport](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/restore-backup.png){.thumbnail}
-
-Es werden Ihnen nun alle verfügbaren Backups der ausgewählten Datenbank angezeigt. In der Tabelle finden Sie das genaue Erstellungsdatum des jeweiligen Backups sowie das Datum, zu dem dieses vom OVHcloud Backup-Tool wieder gelöscht wird.
-
-Klicken Sie auf die drei Punkte rechts neben dem Backup, das Sie wiederherstellen möchten, und gehen Sie dann auf `Sicherung wiederherstellen`{.action}. Vergewissern Sie sich, dass die Informationen im angezeigten Fenster korrekt sind, und klicken Sie dann auf `Bestätigen`{.action}. Warten Sie, bis die Wiederherstellung abgeschlossen ist.
-
-![Datenbankimport](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/restore-the-backup.png){.thumbnail}
+> [!tabs]
+> **Schritt 1**
+>>
+>> Rufen Sie die Seite [Hosting-Pakete](/links/control-panel/web-hosting) auf und wählen Sie das betreffende Webhosting aus.
+>>
+> **Schritt 2**
+>>
+>> Klicken Sie auf der angezeigten Seite auf den Tab `Datenbanken`{.action}.
+>>
+> **Schritt 3**
+>>
+>> Klicken Sie auf die drei Punkte rechts neben der Datenbank, die Sie wiederherstellen möchten, und wählen Sie `Backup wiederherstellen`{.action}. Bitte beachten Sie, dass der aktuelle Inhalt der Datenbank durch den Inhalt des ausgewählten Backups ersetzt wird.
+>>
+>> ![Datenbankimport](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/restore-backup.png){.thumbnail}
+>>
+>> Es werden Ihnen nun alle verfügbaren Backups der ausgewählten Datenbank angezeigt. Klicken Sie auf die drei Punkte rechts neben dem Backup, das Sie wiederherstellen möchten, und gehen Sie dann auf `Backup wiederherstellen`{.action}.
+>>
+> **Schritt 4**
+>>
+>> Vergewissern Sie sich, dass die Informationen im angezeigten Fenster korrekt sind, und klicken Sie dann auf `Bestätigen`{.action}. Warten Sie, bis die Wiederherstellung abgeschlossen ist.
+>>
+>> ![Datenbankimport](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/restore-the-backup.png){.thumbnail}
+<!-- CP-STEPS-END:restore-backup-control-panel -->
 
 ### Eigene Backup-Datei über das Kundencenter importieren
 
-Loggen Sie sich hierfür im [OVHcloud Kundencenter](/links/manager) ein, klicken Sie auf `Hosting-Pakete`{.action} und wählen Sie das betreffende Hosting aus. Gehen Sie dann auf den Tab `Datenbanken`{.action}.
+<!-- CP-STEPS-START:import-own-backup-control-panel -->
+Klicken Sie auf die Tabs, um die **5** Schritte anzuzeigen.
 
-![Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases.png){.thumbnail}
-
-Die angezeigte Tabelle enthält alle Datenbanken, die im Rahmen Ihres Webhosting Angebots erstellt wurden. Klicken Sie nun auf die drei Punkte rechts neben der Datenbank, in die Sie die Daten importieren möchten, und wählen Sie dann `Datei importieren`{.action}.
-
-![Datenbankimport](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/import-file.png){.thumbnail}
-
-Wählen Sie im angezeigten Fenster `Eine neue Datei importieren`{.action} und klicken Sie anschließend auf `Weiter`{.action}.
-
-> [!primary]
->
-> Über den Button `Bestehende Datei verwenden`{.action} können Sie die Daten einer bereits an das Import-Tool versendeten Datei erneut importieren.
->
-
-![Datenbankimport](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/database-import-step-1-new-file.png){.thumbnail}
-
-Geben Sie einen Dateinamen ein (über den Sie das Backup zu einem späteren Zeitpunkt finden und wiederherstellen können). Wählen Sie dann unter `Datei` die Backup-Datei der Datenbank auf Ihrem Computer aus. Klicken Sie auf `Absenden`{.action}.
-
-Warten Sie, bis die Meldung erscheint, dass die Datei erfolgreich übermittelt wurde, und klicken Sie dann auf `Weiter`{.action}.
-
-![Datenbankimport](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/database-import-step-2-new-file.png){.thumbnail}
-
-Wenn Sie möchten, können Sie nun die angezeigten Zusatzoptionen auswählen:
-
-- **Aktuelle Datenbank leeren**: Setzen Sie hier einen Haken, um den gesamten aktuellen Inhalt Ihrer Datenbank zu löschen und durch den Inhalt Ihres Backups zu ersetzen. Setzen Sie den Haken wirklich nur, wenn Sie den aktuellen Inhalt Ihrer Datenbank vollständig mit dem Inhalt der Backup-Datei ersetzen möchten.
-
-- **E-Mail-Benachrichtigung, wenn der Import abgeschlossen ist**: Setzen Sie hier einen Haken, um per E-Mail über den Abschluss des Datenbankimports benachrichtigt zu werden.
-
-Nachdem Sie Ihre Auswahl getroffen haben, klicken Sie auf `Bestätigen`{.action} und warten Sie, bis der Import abgeschlossen ist.
-
-![Datenbankimport](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/database-import-step-3.png){.thumbnail}
+> [!tabs]
+> **Schritt 1**
+>>
+>> Rufen Sie die Seite [Hosting-Pakete](/links/control-panel/web-hosting) auf und wählen Sie das betreffende Webhosting aus.
+>>
+> **Schritt 2**
+>>
+>> Klicken Sie auf der angezeigten Seite auf den Tab `Datenbanken`{.action}.
+>>
+> **Schritt 3**
+>>
+>> Klicken Sie auf die drei Punkte rechts neben der Datenbank, in die Sie die Daten importieren möchten, und wählen Sie dann `Datei importieren`{.action}.
+>>
+>> ![Datenbankimport](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/import-file.png){.thumbnail}
+>>
+> **Schritt 4**
+>>
+>> Wählen Sie im angezeigten Fenster `Neue Datei importieren`{.action} und klicken Sie anschließend auf `Weiter`{.action}.
+>>
+>> ![Datenbankimport](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/database-import-step-1-new-file.png){.thumbnail}
+>>
+>> Geben Sie einen Dateinamen ein (über den Sie das Backup zu einem späteren Zeitpunkt finden und wiederherstellen können). Wählen Sie dann unter `Datei` die Backup-Datei der Datenbank auf Ihrem Computer aus. Klicken Sie auf `Absenden`{.action}.
+>>
+>> Warten Sie, bis die Meldung erscheint, dass die Datei erfolgreich übermittelt wurde, und klicken Sie dann auf `Weiter`{.action}.
+>>
+>> ![Datenbankimport](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/database-import-step-2-new-file.png){.thumbnail}
+>>
+> **Schritt 5**
+>>
+>> Wenn Sie möchten, können Sie nun die angezeigten Zusatzoptionen auswählen:
+>>
+>> - **Aktuelle Datenbank leeren**: Setzen Sie hier einen Haken, um den gesamten aktuellen Inhalt Ihrer Datenbank zu löschen und durch den Inhalt Ihres Backups zu ersetzen. Setzen Sie den Haken wirklich nur, wenn Sie den aktuellen Inhalt Ihrer Datenbank vollständig mit dem Inhalt der Backup-Datei ersetzen möchten.
+>> - **E-Mail-Benachrichtigung, wenn der Import abgeschlossen ist**: Setzen Sie hier einen Haken, um per E-Mail über den Abschluss des Datenbankimports benachrichtigt zu werden.
+>>
+>> Nachdem Sie Ihre Auswahl getroffen haben, klicken Sie auf `Bestätigen`{.action} und warten Sie, bis der Import abgeschlossen ist.
+>>
+>> ![Datenbankimport](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/database-import-step-3.png){.thumbnail}
+>>
+>> > [!primary]
+>> >
+>> > Über den Button `Vorhandene Datei verwenden`{.action} können Sie die Daten einer bereits an das Import-Tool versendeten Datei erneut importieren.
+>> >
+<!-- CP-STEPS-END:import-own-backup-control-panel -->
 
 ### Backup über das phpMyAdmin-Webinterface importieren
 
-Loggen Sie sich auf phpMyAdmin ein, um den Import durchzuführen. Loggen Sie sich hierfür zunächst im [OVHcloud Kundencenter](/links/manager) ein, klicken Sie auf `Hosting-Pakete`{.action} und wählen Sie das betreffende Hosting aus. Gehen Sie dann auf den Tab `Datenbanken`{.action}.
+<!-- CP-STEPS-START:import-phpmyadmin -->
+Loggen Sie sich auf phpMyAdmin ein, um den Import durchzuführen. Klicken Sie dazu auf die Tabs, um die **3** Schritte anzuzeigen.
 
-![Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases.png){.thumbnail}
-
-Die angezeigte Tabelle enthält alle Datenbanken, die im Rahmen Ihres Webhosting Angebots erstellt wurden. Klicken Sie auf die drei Punkte rechts neben der betreffenden Datenbank und gehen Sie dann auf `Zugang zu phpMyAdmin`{.action}.
-
-![Datenbankimport](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/go-to-phpmyadmin.png){.thumbnail}
+> [!tabs]
+> **Schritt 1**
+>>
+>> Rufen Sie die Seite [Hosting-Pakete](/links/control-panel/web-hosting) auf und wählen Sie das betreffende Webhosting aus.
+>>
+> **Schritt 2**
+>>
+>> Klicken Sie auf der angezeigten Seite auf den Tab `Datenbanken`{.action}.
+>>
+> **Schritt 3**
+>>
+>> Klicken Sie auf die drei Punkte rechts neben der betreffenden Datenbank und gehen Sie dann auf `Zugang zu phpMyAdmin`{.action}.
+>>
+>> ![Datenbankimport](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/go-to-phpmyadmin.png){.thumbnail}
+<!-- CP-STEPS-END:import-phpmyadmin -->
 
 Geben Sie im phpMyAdmin-Webinterface die Informationen zu Ihrer Datenbank ein, wählen Sie über das Drop-down-Menü die aktuellen Daten der Datenbank (Current) und loggen Sie sich ein. Gehen Sie nach dem Login auf den Tab `Importieren`{.action} und vervollständigen Sie die angeforderten Informationen. Zur Erinnerung: Die Backup-Datei darf eine bestimmte Größe nicht überschreiten.
 
@@ -119,7 +168,7 @@ Für diese Methode sind mehrere Schritte notwendig. Vergewissern Sie sich, dass 
 > Für diese Methode sind Programmierkenntnisse erforderlich. Im Folgenden geben wir Ihnen einige Informationen zur Vorgehensweise, empfehlen Ihnen aber dennoch, einen [spezialisierten Dienstleister](/links/partner) zu kontaktieren, falls Sie Hilfe brauchen. Für externe Dienstleistungen bietet OVHcloud leider keine Unterstützung.
 >
 
-#### Schritt 1: Importskript schreiben
+#### 1 - Importskript schreiben
 
 Im ersten Schritt wird ein Skript geschrieben, um den Import in die Datenbank durchzuführen. Im Folgenden finden Sie ein Beispielskript, um Ihnen hierbei zu helfen. Es ersetzt allerdings nicht die Hilfe eines Webmasters.
 
@@ -129,7 +178,7 @@ system("cat name_backup_datei.sql | mysql --host=server_adresse --user=name_benu
 ?>
 ```
 
-Achten Sie darauf, die allgemeinen Informationen im Beispielskript mit den Informationen der betreffenden Datenbank zu ersetzen. Die folgende Tabelle listet die zu ersetzenden Elemente auf. Wir empfehlen Ihnen, das Skript am Ende zum Beispiel „import.php“ zu nennen.
+Achten Sie darauf, die allgemeinen Informationen im Beispielskript mit den Informationen der betreffenden Datenbank zu ersetzen. Die folgende Tabelle listet die zu ersetzenden Elemente auf. Wir empfehlen Ihnen, das Skript am Ende zum Beispiel „import.php" zu nennen.
 
 |Information|Ersetzen durch|
 |---|---|
@@ -139,19 +188,19 @@ Achten Sie darauf, die allgemeinen Informationen im Beispielskript mit den Infor
 |benutzer_passwort|Zugehöriges Passwort zum oben genannten Benutzernamen.|
 |name_datenbank|Name der betreffenden Datenbank.|
 
-#### Schritt 2: Skript und Backup auf Ihren Speicherplatz hochladen
+#### 2 - Skript und Backup auf Ihren Speicherplatz hochladen
 
-Nachdem Sie das Importskript erstellt haben, laden Sie es zusammen mit der Backup-Datei hoch, die Sie in den Speicherplatz Ihres Webhostings importieren möchten. Loggen Sie sich hierfür in Ihren Speicherplatz ein. Sollten Sie nicht wissen, wie der Login funktioniert, lesen Sie Schritt 2 der Anleitung „[Log in to your storage space](/pages/web_cloud/web_hosting/hosting_how_to_get_my_website_online#2-log-in-to-your-storage-space)“ (Englisch).
+Nachdem Sie das Importskript erstellt haben, laden Sie es zusammen mit der Backup-Datei hoch, die Sie in den Speicherplatz Ihres Webhostings importieren möchten. Loggen Sie sich hierfür in Ihren Speicherplatz ein. Sollten Sie nicht wissen, wie der Login funktioniert, lesen Sie Schritt 2 der Anleitung „[Log in to your storage space](/pages/web_cloud/web_hosting/hosting_how_to_get_my_website_online#2-log-in-to-your-storage-space)" (Englisch).
 
-Laden Sie das Importskript und die Backup-Datei in den „www“-Ordner, um die folgenden Schritte durchzuführen. **Achten Sie bitte besonders auf den Dateinamen des Importskripts.** Stellen Sie sicher, dass Sie beim Hochladen des Skripts keine bereits im Speicherplatz vorhandene Datei löschen, die denselben Namen trägt. Erscheint ein entsprechender Warnhinweis, ändern Sie den Skriptnamen und laden Sie es anschließend erneut hoch.
+Laden Sie das Importskript und die Backup-Datei in den „www"-Ordner, um die folgenden Schritte durchzuführen. **Achten Sie bitte besonders auf den Dateinamen des Importskripts.** Stellen Sie sicher, dass Sie beim Hochladen des Skripts keine bereits im Speicherplatz vorhandene Datei löschen, die denselben Namen trägt. Erscheint ein entsprechender Warnhinweis, ändern Sie den Skriptnamen und laden Sie es anschließend erneut hoch.
 
-#### Schritt 3: Skript aufrufen
+#### 3 - Skript aufrufen
 
 Nachdem das Importskript und die Backup-Datei auf den Speicherplatz hochgeladen wurden, kann der Import gestartet werden. Hierzu muss zunächst das Skript aufgerufen werden.
 
-Um das Skript aufzurufen, geben Sie die vollständige Skript-URL in Ihrem Webbrowser ein (zum Beispiel: mypersonaldomain.ovh/import.php, wenn Sie Ihr Skript „import.php“ genannt haben). Wenn die im Skript eingegebenen Informationen korrekt sind, startet der Import. Warten Sie nun noch einen Moment, bis der Import abgeschlossen ist. Sollte der Import nicht starten, überprüfen Sie die im Skript eingegeben Informationen und starten Sie den Vorgang erneut.
+Um das Skript aufzurufen, geben Sie die vollständige Skript-URL in Ihrem Webbrowser ein (zum Beispiel: mypersonaldomain.ovh/import.php, wenn Sie Ihr Skript „import.php" genannt haben). Wenn die im Skript eingegebenen Informationen korrekt sind, startet der Import. Warten Sie nun noch einen Moment, bis der Import abgeschlossen ist. Sollte der Import nicht starten, überprüfen Sie die im Skript eingegeben Informationen und starten Sie den Vorgang erneut.
 
-Wir empfehlen Ihnen dringend, nach dem Import die Backup-Datei und das Skript aus dem „www“-Verzeichnis zu löschen.
+Wir empfehlen Ihnen dringend, nach dem Import die Backup-Datei und das Skript aus dem „www"-Verzeichnis zu löschen.
 
 ### Backup via SSH importieren
 

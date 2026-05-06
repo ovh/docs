@@ -1,5 +1,5 @@
 ---
-title: MongoDB - Best Practices To Operate an OVHcloud managed MongoDB
+title: Operational Best Practices with Public Cloud Databases for MongoDB
 excerpt: Best practice to operate an OVHcloud managed MongoDB
 updated: 2025-01-06
 ---

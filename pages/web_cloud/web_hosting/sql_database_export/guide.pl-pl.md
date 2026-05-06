@@ -1,7 +1,7 @@
 ---
 title: "Tworzenie i pobieranie kopii zapasowej bazy danych na hostingu WWW"
 excerpt: "Dowiedz się, jak pobrać kopię zapasową bazy danych Twojego hostingu WWW OVHcloud"
-updated: 2025-10-08
+updated: 2026-04-01
 ---
 
 ## Wprowadzenie 
@@ -15,6 +15,17 @@ Bazy danych są używane przez większość stron WWW i serwerów **C**ontent **
 - Posiadanie [hostingu OVHcloud](/links/web/hosting)
 - Posiadanie bazy danych utworzonej w ramach pakietu [hostingowego WWW OVHcloud](/links/web/hosting)
 - W zależności od metody tworzenia kopii zapasowej, jakiej użyjesz, posiadanie dostępu do interfejsu zarządzania usługą hostingu WWW w [Panelu klienta](/links/manager) lub posiadanie informacji umożliwiających zalogowanie do bazy danych
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Hosting](/links/control-panel/web-hosting)
+- **Ścieżka nawigacji:** `Web Cloud`{.action} > `Hosting`{.action} > Wybierz hosting WWW
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## W praktyce
 
@@ -41,71 +52,114 @@ Przejdź do metody tworzenia kopii zapasowej, która Cię interesuje opisanej w 
 >
 > OVHcloud udostępnia różnorodne usługi, jednak to Ty odpowiadasz za ich konfigurację i zarządzanie nimi. Ponosisz więc odpowiedzialność za ich prawidłowe funkcjonowanie.
 >
-> Oddajemy w Twoje ręce niniejszy przewodnik, którego celem jest pomoc w jak najbardziej optymalnym wykonywaniu bieżących zadań. Jeśli jednak napotkasz trudności, zalecamy skontaktowanie się z [wyspecjalizowanym dostawcą](/links/partner). Niestety firma OVH nie jest w stanie udzielić Ci wsparcia w tym zakresie. Więcej informacji znajduje się w sekcji ["Sprawdź również"](#go-further) niniejszego przewodnika.
+> Oddajemy w Twoje ręce niniejszy przewodnik, którego celem jest pomoc w jak najbardziej optymalnym wykonywaniu bieżących zadań. Jeśli jednak napotkasz trudności, zalecamy skontaktowanie się z [wyspecjalizowanym dostawcą](/links/partner). Niestety firma OVHcloud nie jest w stanie udzielić Ci wsparcia w tym zakresie. Więcej informacji znajduje się w sekcji ["Sprawdź również"](#go-further) niniejszego przewodnika.
 >
 
 ### Pobierz kopię zapasową, korzystając z narzędzia OVHcloud
 
-Aby uzyskać dostęp do narzędzia do tworzenia kopii zapasowych OVHcloud, kliknij poniższe zakładki, aby wyświetlić kolejne **4** kroki.
+<!-- CP-STEPS-START:retrieve-backup-ovhcloud-tool -->
+Aby uzyskać dostęp do narzędzia do tworzenia kopii zapasowych OVHcloud, kliknij poniższe zakładki, aby wyświetlić kolejne **3** kroki.
 
 > [!tabs]
-> **Etap 1**
+> **Krok 1**
 >>
->> Zaloguj się do [Panelu klienta OVHcloud](/links/manager) i przejdź do sekcji `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Etap 2**
->>
->> Kliknij menu `Hosting`{.action}, następnie wybierz odpowiedni hosting.
+>> Przejdź na stronę [Hosting](/links/control-panel/web-hosting) i wybierz odpowiedni hosting WWW.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Etap 3**
+> **Krok 2**
 >>
 >> Na stronie, która się wyświetli kliknij zakładkę `Bazy danych`{.action}.
 >>
 >> ![Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases.png){.thumbnail}
 >>
-> **Etap 4**
+> **Krok 3**
 >>
 >> Na nowej stronie pojawi się tabela zawierająca utworzone bazy danych.
 >>
 >> ![Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/tab.png){.thumbnail}
 >>
 >> Tabela, która się wyświetla zawiera listę wszystkich baz danych utworzonych w ramach Twojego pakietu hostingowego. Teraz możesz wybrać jedną z dwóch dostępnych metod tworzenia nowej kopii zapasowej lub odzyskania kopii już istniejącej.
+<!-- CP-STEPS-END:retrieve-backup-ovhcloud-tool -->
 
-### Krok 1: utwórz nową kopię zapasową bazy danych
+#### 1 - Utwórz nową kopię zapasową bazy danych
 
-W zakładce `Bazy danych`{.action} kliknij przycisk `...`{.action} po prawej stronie bazy danych, którą chcesz skopiować, a następnie kliknij `Utwórz kopię zapasową`{.action}.
+<!-- CP-STEPS-START:create-new-backup -->
+Aby utworzyć nową kopię zapasową, kliknij poniższe zakładki, aby wyświetlić kolejne **4** kroki.
 
-![databasedump](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/create-a-backup.png){.thumbnail}
+> [!tabs]
+> **Krok 1**
+>>
+>> Przejdź na stronę [Hosting](/links/control-panel/web-hosting) i wybierz odpowiedni hosting WWW.
+>>
+> **Krok 2**
+>>
+>> Na stronie, która się wyświetli kliknij zakładkę `Bazy danych`{.action}.
+>>
+> **Krok 3**
+>>
+>> Kliknij przycisk `...`{.action} po prawej stronie bazy danych, którą chcesz skopiować, a następnie kliknij `Utwórz kopię zapasową`{.action}.
+>>
+>> ![databasedump](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/create-a-backup.png){.thumbnail}
+>>
+> **Krok 4**
+>>
+>> W oknie, które się pojawi wybierz datę utworzenia kopii zapasowej, następnie kliknij przycisk `Dalej`{.action}. Upewnij się, że informacje w podsumowaniu są poprawne, następnie kliknij `Zatwierdź`{.action}, aby rozpocząć operację.
+>>
+>> ![databasedump](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/create-a-database-backup-step-1.png){.thumbnail}
+>>
+>> Odczekaj chwilę, aż kopia zapasowa zostanie utworzona. Kiedy kopia będzie już dostępna, będziesz mógł ją pobrać.
+<!-- CP-STEPS-END:create-new-backup -->
 
-W oknie, które się pojawi wybierz datę utworzenia kopii zapasowej, następnie kliknij przycisk `Dalej`{.action}. Upewnij się, że informacje w podsumowaniu są poprawne, następnie kliknij `Zatwierdź`{.action}, aby rozpocząć operację.
+#### 2 - Przywracanie kopii bazy danych
 
-Odczekaj chwilę, aż kopia zapasowa zostanie utworzona. Kiedy kopia będzie już dostępna, będziesz mógł ją pobrać.
+<!-- CP-STEPS-START:retrieve-existing-backup -->
+Aby pobrać istniejącą kopię zapasową, kliknij poniższe zakładki, aby wyświetlić kolejne **4** kroki.
 
-![databasedump](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/create-a-database-backup-step-1.png){.thumbnail}
-
-### Etap 2: przywracanie kopii bazy danych
-
-W zakładce `Bazy danych`{.action} kliknij przycisk `...`{.action} po prawej stronie bazy danych, którą chcesz skopiować, a następnie kliknij `Przywróć kopię zapasową`{.action}.
-
-![databasedump](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/restore-backup.png){.thumbnail}
-
-Tabela, która się wyświetla zawiera wszystkie dostępne kopie zapasowe bazy danych. Możesz wyświetlić dokładną datę utworzenia kopii zapasowych, a także datę, kiedy zostaną one usunięte z narzędzia OVHcloud.
-
-Aby pobrać kopię zapasową, kliknij przycisk `...`{.action} po prawej stronie kopii, którą chcesz pobrać, a następnie kliknij `Pobierz kopię zapasową`{.action}. Pojawi się okno z prośbą, abyś zapisał ją na Twoim komputerze. Zaakceptuj, po czym odczekaj, aż kopia zapasowa zostanie pobrana.
-
-![databasedump](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/download-the-backup.png){.thumbnail}
+> [!tabs]
+> **Krok 1**
+>>
+>> Przejdź na stronę [Hosting](/links/control-panel/web-hosting) i wybierz odpowiedni hosting WWW.
+>>
+> **Krok 2**
+>>
+>> Na stronie, która się wyświetli kliknij zakładkę `Bazy danych`{.action}.
+>>
+> **Krok 3**
+>>
+>> Kliknij przycisk `...`{.action} po prawej stronie odpowiedniej bazy danych, a następnie kliknij `Przywróć kopię zapasową`{.action}.
+>>
+>> ![databasedump](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/restore-backup.png){.thumbnail}
+>>
+>> Tabela, która się wyświetla zawiera wszystkie dostępne kopie zapasowe bazy danych. Możesz wyświetlić dokładną datę utworzenia kopii zapasowych, a także datę, kiedy zostaną one usunięte z narzędzia OVHcloud.
+>>
+> **Krok 4**
+>>
+>> Aby pobrać kopię zapasową, kliknij przycisk `...`{.action} po prawej stronie kopii, którą chcesz pobrać, a następnie kliknij `Pobierz kopię zapasową`{.action}. Zaakceptuj, po czym odczekaj, aż kopia zapasowa zostanie pobrana.
+>>
+>> ![databasedump](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/download-the-backup.png){.thumbnail}
+<!-- CP-STEPS-END:retrieve-existing-backup -->
 
 ### Pobierz kopię zapasową, używając interfejsu phpMyAdmin
 
-Aby przeprowadzić operację, zaloguj się do *phpMyAdmin*. Aby uzyskać link dostępowy do phpMyAdmin, zaloguj się do [Panelu klienta OVHcloud](/links/manager) i przejdź do sekcji `Web Cloud`{.action}. W lewej kolumnie kliknij `Hosting`{.action}, następnie wybierz odpowiednią nazwę hostingu. Teraz przejdź do zakładki `Bazy danych`{.action}.
+<!-- CP-STEPS-START:retrieve-backup-phpmyadmin -->
+Aby przeprowadzić operację, zaloguj się do *phpMyAdmin*. W tym celu kliknij poniższe zakładki, aby wyświetlić kolejne **3** kroki.
 
-Tabela, która się wyświetla zawiera listę wszystkich baz danych utworzonych w ramach Twojego pakietu hostingowego. Kliknij przycisk `...`{.action} po prawej stronie odpowiedniej bazy danych, a następnie `Dostęp do phpMyAdmin`{.action}.
-
-![databasedump](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/go-to-phpmyadmin.png){.thumbnail}
+> [!tabs]
+> **Krok 1**
+>>
+>> Przejdź na stronę [Hosting](/links/control-panel/web-hosting) i wybierz odpowiedni hosting WWW.
+>>
+> **Krok 2**
+>>
+>> Na stronie, która się wyświetli kliknij zakładkę `Bazy danych`{.action}.
+>>
+> **Krok 3**
+>>
+>> Kliknij przycisk `...`{.action} po prawej stronie odpowiedniej bazy danych, a następnie `Dostęp do phpMyAdmin`{.action}.
+>>
+>> ![databasedump](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/go-to-phpmyadmin.png){.thumbnail}
+<!-- CP-STEPS-END:retrieve-backup-phpmyadmin -->
 
 Po zalogowaniu się do *phpMyAdmin* wprowadź informacje dotyczące bazy danych, następnie zaloguj się. Po zalogowaniu przejdź do zakładki `Eksportuj`{.action}, gdzie dostępne są dwie metody eksportu:
 
@@ -127,7 +181,7 @@ Operacja składa się z kilku etapów. Upewnij się, czy posiadasz informacje po
 > Rozwiązanie to wymaga umiejętności programowania. Poniżej zamieszczamy kilka informacji dotyczących sposobu postępowania. Jednak w przypadku trudności zalecamy skorzystanie z pomocy [wyspecjalizowanego usługodawcy](/links/partner). Niestety firma OVHcloud nie jest w stanie udzielić wsparcia w tym zakresie.
 >
 
-### Etap 1: utwórz skrypt kopii zapasowej
+#### 1 - Utwórz skrypt kopii zapasowej
 
 Pierwszy krok to utworzenie skryptu, dzięki któremu będziesz mógł utworzyć kopię zapasową bazy danych. Poniżej przykład skryptu, który może być pomocny w przeprowadzanej przez Ciebie operacji. Jeśli jednak napotkasz trudności, przykład ten nie może zastąpić wsparcia, które może zapewnić webmaster.
 
@@ -147,19 +201,19 @@ Pamiętaj, aby zastąpić informacje ogólne występujące w skrypcie informacja
 |name_of_database|Nazwa odpowiedniej bazy danych.|
 |backup_file_name|Nazwa pliku kopii zapasowej po jego utworzeniu.|
 
-### Etap 2: pobierz skrypt na przestrzeń dyskową FTP
+#### 2 - Pobierz skrypt na przestrzeń dyskową FTP
 
 Po poprawnym utworzeniu skryptu kopii zapasowej pobierz go na przestrzeń dyskową FTP Twojego hostingu. W tym celu zapoznaj się z informacjami zawartymi w opisie etapu 2 dokumentacji "[Logowanie do przestrzeni dyskowej](/pages/web_cloud/web_hosting/hosting_how_to_get_my_website_online)".
 
 Aby wykonać kolejne kroki, pobierz skrypt do folderu zawierającego witrynę sieci Web, która używa bazy danych. **Należy zwrócić szczególną uwagę na nazwę pliku skryptu kopii zapasowej.** Nie nadpisuj istniejącego wcześniej na przestrzeni dyskowej FTP pliku noszącego tę samą nazwę, gdy pobierasz skrypt. Jeśli pojawi się tego typu komunikat ostrzegawczy, zmień nazwę nowo utworzonego skryptu, a następnie spróbuj ponownie go pobrać.
 
-#### Etap 3: wywoływanie skryptu
+#### 3 - Wywołaj skrypt
 
 Kiedy skrypt zostanie pobrany na przestrzeń dyskową FTP, wywołaj skrypt i zainicjuj kod znajdujący się w skrypcie.
 
 Aby to zrobić, przejdź do przeglądarki internetowej pod pełny adres URL skryptu (na przykład: mypersonaldomain.ovh/kopia_zapasowa.php, jeśli nazwałeś skrypt "kopia_zapasowa.php"). Jeśli informacje wprowadzone do skryptu są poprawne, kopia zapasowa zostanie wykonana. Odczekaj chwilę, aż to nastąpi. Jeśli tak się nie stanie, sprawdź informacje zawarte w skrypcie, po czym spróbuj ponownie.
 
-### Etap 4: pobieranie kopii zapasowej z przestrzeni FTP
+#### 4 - Pobieranie kopii zapasowej z przestrzeni FTP
 
 Po utworzeniu kopii zapasowej, zapisz ją w folderze, do którego zapisany został skrypt kopii zapasowej. Nazwa kopii zapasowej bazy danych musi brzmieć, jak nazwa wprowadzona wcześniej do skryptu. Teraz pobierz kopię zapasową na Twoje urządzenie.
 

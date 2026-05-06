@@ -1,6 +1,6 @@
 ---
-title: 'E-mail Pro - Configure your email account on Thunderbird for macOS'
-excerpt: 'Find out how to configure your E-mail Pro address on Thunderbird for macOS'
+title: 'Email Pro - Configure your email account on Thunderbird for macOS'
+excerpt: 'Find out how to configure your Email Pro address on Thunderbird for macOS'
 updated: 2025-09-19
 ---
 
@@ -25,13 +25,24 @@ details[open]>summary::before {
 
 Email Pro accounts can be configured on different compatible email clients. This allows you to use your email address from the device of your choice. Thunderbird is a free and open-source email client.
 
-**This guide explains how to configure your E-mail Pro address on Thunderbird for macOS.**
+**This guide explains how to configure your Email Pro address on Thunderbird for macOS.**
 
 ## Requirements
 
 - An [Email Pro](/links/web/email-pro) account
 - The Thunderbird software installed on your Mac device
 - The credentials for the email account you want to configure
+
+<!-- CP-NAV-START:web-email-pro -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Email Pro](/links/control-panel/web-email-pro)
+- **Navigation path:** `Web Cloud`{.action} > `Email Pro`{.action} > Select your platform
+
+---
+<!-- CP-NAV-END:web-email-pro -->
 
 /// details | Information regarding the administration and configuration of OVHcloud services
 
@@ -47,11 +58,7 @@ If you experience any difficulties carrying out these operations, we recommend t
 >
 > In our examples, we will use as the server name: pro?.mail.ovh.net. You will need to replace the "?" with the number designating the server of your Email Pro service.
 >
-> 1. Log in to your [OVHcloud Control Panel](/links/manager).
-> 1. Go to the `Web Cloud`{.action} section.
-> 1. Click on `Email Pro`{.action}.
-> 1. Select the platform concerned.
-> 1. The server name is visible in the **Connection** section of the `General Information`{.action} tab.
+> Click [this link](/links/control-panel/web-email-pro) to access the `Email Pro`{.action} section. The server name is visible in the **Connection** section of the `General information`{.action} tab.
 
 ### Add the account
 

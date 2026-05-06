@@ -1,6 +1,6 @@
 ---
-title: "Netzwerk auf Windows Server mit Hyper-V konfigurieren"
-excerpt: "Erfahren Sie hier, wie Sie das Netzwerk auf Windows Server mit Hyper-V konfigurieren"
+title: "Dedicated Server - Hyper-V Netzwerk auf HG/Scale Servern"
+excerpt: "Konfigurieren Sie Netzwerkinterfaces auf einem Windows Server mit Hyper-V auf High Grade oder Scale Dedicated Servern."
 updated: 2025-05-16
 ---
 
@@ -30,7 +30,7 @@ Es ist auch möglich, diese Konfiguration auf jedem der Hyper-V Server (ein priv
 
 - Sie haben einen [Dedicated Server](/links/bare-metal/bare-metal) in Ihrem Kunden-Account.
 - Sie verfügen über eine [Additional IP](/links/network/additional-ip)-Adresse oder einen Additional IP-Block.
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
+
 
 > [!warning]
 >
@@ -81,11 +81,11 @@ In diesem Beispiel bedeutet das folgendes:
 
 Öffnen Sie den Server Manager, gehen Sie zu `Local Server`{.action} und klicken Sie auf `Disabled`{.action} neben "NIC Teaming".
 
-![NIC Teaming](images/nic_teaming_1.png){.thumbnail}
+![Server Manager – NIC Teaming für vRack-Konfiguration](images/nic_teaming_1.png){.thumbnail}
 
 Klicken Sie auf der nächsten Seite mit der rechten Maustaste auf eine der zuvor identifizierten öffentlichen Interfaces und klicken Sie dann auf `Add to New Team`{.action}.
 
-![NIC Teaming](images/nic_teaming_2.png){.thumbnail}
+![Kontextmenü zum Hinzufügen des privaten Interfaces zu einem neuen Team](images/nic_teaming_2.png){.thumbnail}
 
 Geben Sie einen Namen für Ihr Team ein und fügen Sie das zweite Interface hinzu. Öffnen Sie anschließend die erweiterten Einstellungen, stellen Sie "Teaming Mode" auf `LACP` ein und klicken Sie auf `OK`{.action}.
 
@@ -95,15 +95,15 @@ Um einen Verbindungsverlust beim Neustart zu vermeiden, muss die IP-Adresse stat
 
 Drücken Sie `Windows Key` \+ `R`, um ein *Run*-Fenster ("Ausführen") zu öffnen. Geben Sie `ncpa.cpl` ein und klicken Sie auf `OK`{.action}. Die Systemsteuerung für die Netzwerkverbindungen öffnet sich.
 
-![static IP](images/static_ip_1.png){.thumbnail}
+![Netzwerkverbindungen für Hyper-V-Interface öffnen](images/static_ip_1.png){.thumbnail}
 
 Klicken Sie rechts auf das von Ihnen erstellte Team und klicken Sie auf `Properties`{.action}.
 
-![static IP](images/static_ip_2.png){.thumbnail}
+![NIC Team Eigenschaften in den Netzwerkverbindungen](images/static_ip_2.png){.thumbnail}
 
 Doppelklicken Sie auf `Internet Protocol Version 4 (TCP/IPv4)`{.action}.
 
-![static IP](images/static_ip_3.png){.thumbnail}
+![vEthernet-Adaptereigenschaften mit ausgewähltem IPv4-Protokoll](images/static_ip_3.png){.thumbnail}
 
 Geben Sie unter `Use the following IP address` Ihre IP-Adresse ein.
 
@@ -113,25 +113,25 @@ Die DNS-Server können Sie selbst auswählen. In unserem Beispiel verwenden wir 
 
 Klicken Sie auf `OK`{.action}, um das Fenster zu schließen, und erneut auf `OK`{.action}, um das Fenster der Adaptereigenschaften zu schließen.
 
-![static IP](images/static_ip_4.png){.thumbnail}
+![Hyper-V Interface IP-Konfiguration mit Gateway](images/static_ip_4.png){.thumbnail}
 
 #### Server-Rollen Hyper-V und RRAS hinzufügen
 
 Gehen Sie im Server Manager zum `Dashboard`{.action} und klicken Sie auf `Add Roles and Features`{.action}.
 
-![Install Roles](images/install_roles_1.png){.thumbnail}
+![Server Manager Dashboard mit "Rollen und Features hinzufügen"](images/install_roles_1.png){.thumbnail}
 
 Folgen Sie dem Assistenten bis zum Abschnitt "Server Roles". Wählen Sie dann `Hyper-V` und `Remote Access` aus.
 
-![Install Roles](images/install_roles_2.png){.thumbnail}
+![Serverrollen-Auswahl mit Hyper-V und Remotezugriff](images/install_roles_2.png){.thumbnail}
 
 Gehen Sie dann zum Unterbereich "Virtual Switches" von "Hyper-V" und stellen Sie sicher, dass keine Schnittstelle ausgewählt ist.
 
-![Install roles](images/install_roles_3_2.png){.thumbnail}
+![Hyper-V – Virtuelle Switches ohne ausgewählte Interfaces](images/install_roles_3_2.png){.thumbnail}
 
 Gehen Sie dann zum Unterbereich "Role Services" von "Remote Access" und haken Sie `Routing` an.
 
-![Install Roles](images/install_roles_4.png){.thumbnail}
+![Remotezugriff-Rollendienste mit ausgewähltem Routing](images/install_roles_4.png){.thumbnail}
 
 Wählen Sie im Bereich "Confirmation" die Option `Restart the destination server automatically if required` aus und klicken Sie auf `Install`{.action}.
 
@@ -149,19 +149,19 @@ New-VMSwitch -Name "vSwitch_Name" -NetAdapterName "NIC_Team_Name" -AllowNetLbfoT
 
 Öffnen Sie die neue Anwendung "Routing and Remote Access" und rechtsklicken Sie auf Ihren Server. Klicken Sie hier auf `Configure and Enable Routing and Remote Access`{.action}.
 
-![RRAS Config](images/configure_rras_1.png){.thumbnail}
+![RRAS-Konsole mit Option "Konfigurieren und aktivieren"](images/configure_rras_1.png){.thumbnail}
 
 Wählen Sie `Custom configuration` aus und klicken Sie auf `Next`{.action}.
 
-![RRAS Config](images/configure_rras_2.png){.thumbnail}
+![RRAS-Assistent mit benutzerdefinierter Konfiguration](images/configure_rras_2.png){.thumbnail}
 
 Wählen Sie dann `LAN Routing` aus und klicken Sie auf `Next`{.action}.
 
-![RRAS Config](images/configure_rras_3.png){.thumbnail}
+![RRAS-Assistent mit ausgewähltem LAN-Routing](images/configure_rras_3.png){.thumbnail}
 
 Klicken Sie auf `Finish`{.action} und im neuen Fenster auf `Start Service`{.action}.
 
-![RRAS Config](images/configure_rras_4.png){.thumbnail}
+![RRAS-Konfiguration abgeschlossen mit Aufforderung zum Dienststart](images/configure_rras_4.png){.thumbnail}
 
 #### Die primären und zusätzlichen IP-Adressen im Hyper-V Interface statisch konfigurieren
 
@@ -173,7 +173,7 @@ Drücken Sie `Windows Key` \+ `R`, um ein *Run*-Fenster ("Ausführen") zu öffne
 
 Klicken Sie rechts auf den "vEthernet"-Adapter und klicken Sie dann auf `Properties`{.action}.
 
-![static IP](images/static_ip_5.png){.thumbnail}
+![vEthernet-Adaptereigenschaften in den Netzwerkverbindungen](images/static_ip_5.png){.thumbnail}
 
 Doppelklicken Sie `Internet Protocol Version 4 (TCP/IPv4)`{.action}.
 
@@ -191,7 +191,7 @@ Klicken Sie dann auf `Advanced...` und klicken Sie im neuen Fenster auf `Add...`
 
 Fügen Sie die IP-Adresse und die Subnetzmaske Ihrer Additional IP hinzu und klicken Sie auf `Add`{.action}.
 
-![static IP](images/static_ip_6.png){.thumbnail}
+![Erweiterte TCP/IP-Einstellungen mit Additional IP](images/static_ip_6.png){.thumbnail}
 
 Wenn Sie alle Adressen angegeben haben, klicken Sie auf `OK`{.action}, um das Einstellungsfenster zu schließen und erneut auf `OK`{.action}, um die TCP/IPv4-Einstellungen zu schließen. Klicken Sie nochmals auf `OK`{.action}, um die Adaptereinstellungen zu schließen.
 
@@ -366,4 +366,10 @@ network:
 
 ## Weiterführende Informationen
  
+- [Proxmox VE Networking on HG/Scale Dedicated Servers](/pages/bare_metal_cloud/dedicated_servers/proxmox-network-HG-Scale)
+
+- [Hardware-Upgrade auf einem High Grade oder Scale Dedicated Server](/pages/bare_metal_cloud/dedicated_servers/hardware-upgrade-HG-Scale)
+
+- [Hyper-V VMs mit Additional IPs im vRack (Dedicated)](/pages/bare_metal_cloud/dedicated_servers/ipfo-vrack-hyperv)
+
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

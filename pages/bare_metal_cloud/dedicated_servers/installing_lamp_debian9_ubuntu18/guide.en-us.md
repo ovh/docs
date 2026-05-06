@@ -1,6 +1,6 @@
 ---
-title: How to set up a web server (LAMP) on Debian or Ubuntu
-excerpt: Find out how to configure a LAMP-based web server
+title: "How to set up a web server (LAMP) on Debian or Ubuntu"
+excerpt: "Set up a LAMP web server (Linux, Apache, MySQL, PHP) on a Debian or Ubuntu dedicated server step by step."
 updated: 2023-05-10
 ---
 
@@ -13,8 +13,18 @@ Setting up a web server and related software enables your cloud server to host d
 ## Requirements
 
 - A [dedicated server](/links/bare-metal/bare-metal), a [VPS](/links/bare-metal/vps) or a [Public Cloud instance](/links/public-cloud/public-cloud) in your OVHcloud account (excluding Windows systems)
-- Access to the [OVHcloud Control Panel](/links/manager)
 - Administrative access to your service via SSH
+
+<!-- CP-NAV-START:baremetal-dedicated-servers -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Dedicated Servers](/links/control-panel/baremetal-dedicated-servers)
+- **Navigation path:** `Bare Metal Cloud`{.action} > `Dedicated servers`{.action} > Select your server
+
+---
+<!-- CP-NAV-END:baremetal-dedicated-servers -->
 
 > [!warning]
 > This tutorial will show you how to use one or more OVHcloud solutions with external tools, and the changes you need to make in specific contexts. You may need to adapt the instructions according to your situation.
@@ -76,12 +86,12 @@ sudo apt install -y php php-pdo php-mysql php-zip php-gd php-mbstring php-curl p
 
 ### Step 4: Configuring the database server <a name="sqlconf"></a>
 
-MariaDB provides a script to assist with the initial configuration and to apply some security-related settings.
+MariaDB [provides a script](https://mariadb.com/docs/server/clients-and-utilities/deployment-tools/mariadb-secure-installation) to assist with the initial configuration and to apply some security-related settings.
 
 To run it, enter this command:
 
 ```bash
-sudo mysql_secure_installation
+sudo mariadb-secure-installation
 ```
 
 Confirm the first prompt by pressing `Enter`{.action}.
@@ -163,13 +173,13 @@ MariaDB [(none)]> exit;
 
 [Configuring a firewall](/pages/bare_metal_cloud/dedicated_servers/firewall-Linux-iptable) (*iptables*) will enhance the security of your server. This process can be simplified by using the frontend "Uncomplicated Firewall" (UFW) and its preset of profiles. Install UFW:
 
-```bash
+``` {.bash}
 sudo apt install ufw
 ```
 
 The relevant profiles are labelled as "WWW" in the application list:
 
-```bash
+``` {.bash}
 sudo ufw app list | grep WWW
   WWW
   WWW Cache
@@ -189,13 +199,13 @@ sudo ufw allow 'WWW Full'
 
 Since all ports not explicitly allowed will be **blocked** after enabling the firewall, make sure to allow SSH connections (port 22 in a default configuration) as well:
 
-``` {.bash}
+```bash
 sudo ufw allow 'SSH'
 ```
 
 Finally, activate the firewall rules and verify the configuration:
 
-```bash
+``` {.bash}
 sudo ufw enable
 ```
 
@@ -231,7 +241,7 @@ Please refer to our guide on [Editing a DNS zone](/pages/web_cloud/domains/dns_z
 >
 > In order to establish secure connections (`https`), the web server has to be secured via an official Certificate Authority such as "[Let’s Encrypt](https://letsencrypt.org/)" which offers free certificates. You will need to install a client tool (such as "Certbot") and configure Apache accordingly. Without this step, your website or application can only accept unencrypted `http` requests.
 > 
-> As an alternative, OVHcloud offers the solution [SSL Gateway](https://www.ovh.com/world/ssl-gateway/). Refer to the [guide pages](/pages/web_cloud/ssl_gateway/order-ssl-gateway) as well for further information.
+> As an alternative, OVHcloud offers the solution [SSL Gateway](/links/web/ssl-gateway). Refer to the [guide pages](/pages/web_cloud/ssl_gateway/order-ssl-gateway) as well for further information.
 > 
 
 First make sure that your domain name has the correct records in the DNS zone, i.e. is mapped to the IP address of your server.
@@ -271,5 +281,7 @@ Certbot will automatically renew the certificates. There are no further steps ne
 [Certbot documentation](https://eff-certbot.readthedocs.io/en/stable/)
 
 [NGINX documentation](https://nginx.org/en/docs/) (Apache alternative)
+
+[How to secure a Dedicated Server](/pages/bare_metal_cloud/dedicated_servers/securing-a-dedicated-server)
 
 Join our [community of users](/links/community).

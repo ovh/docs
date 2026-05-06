@@ -1,7 +1,7 @@
 ---
 title: AI Notebooks - Getting started
 excerpt: Learn how to simply bootstrap an AI Notebook
-updated: 2025-11-17
+updated: 2026-01-28
 ---
 
 ## Introduction
@@ -14,25 +14,32 @@ The advantage compared to doing your own setup is that everything is already ins
 
 ## Objective
 
-The objective of this guide is to demonstrate how to create, configure, access, stop, restart, and delete AI Notebooks.
+This guide demonstrates how to create, configure, access, stop, restart and delete AI Notebooks from multiple interfaces:
 
-## Requirements
-
-- A [Public Cloud project](/links/public-cloud/public-cloud) in your OVHcloud account
-- Access to the [OVHcloud Control Panel](/links/manager)
-- A Public Cloud user with the **Administrator** or **AI Training Operator & Objectstore Operator** roles, see [here](/pages/public_cloud/ai_machine_learning/gi_01_manage_users) for more information
-
-## Instructions
-
-For the creation of your first AI Notebook, we highly recommend using the **OVHcloud Control Panel (UI)**. This method is user-friendly and ideal for beginners.
-
-However, you can also choose to utilize one of the three alternative methods:
-
+- The **OVHcloud Control Panel (UI)** is user-friendly and ideal for beginners.
 - The **ovhai** command-line interface (CLI)
 - The **AI API** 
 - The **ovhai** Python SDK
 
 Each method offers its distinct advantages, depending on your expertise and preferred workflow.
+
+## Requirements
+
+- A [Public Cloud project](/links/public-cloud/public-cloud) in your OVHcloud account
+- A Public Cloud user with the **Administrator** or **AI Training Operator & Objectstore Operator** roles, see [here](/pages/public_cloud/ai_machine_learning/gi_01_manage_users) for more information
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Navigation path:** `Public Cloud`{.action} > Select your project
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
+
+## Instructions
 
 ### OVHcloud AI Solutions Authorization Process 
 
@@ -47,7 +54,7 @@ Each method offers its distinct advantages, depending on your expertise and pref
 >>
 >> However, if this is the first time you are using the AI Products on your Public Cloud project, you will need to complete an authorization process before using the AI API, ovhai CLI, or Python SDK. To do so, please follow these steps:
 >>
->> Log in to the [OVHcloud Control Panel](/links/manager), and navigate to the `Public Cloud`{.action} section, in the horizontal menu at the top of the website. Select the Public Cloud project you want to use. Then, click on the `AI & Machine Learning`{.action} category in the left-hand vertical menu to access the `AI Notebooks`{.action} section.
+>> Click [this link](/links/control-panel/publiccloud-projects) to access your Public Cloud project, then click on the `AI & Machine Learning`{.action} category in the left-hand vertical menu to access the `AI Notebooks`{.action} section.
 >>
 >> From there, click the `Create a Notebook`{.action} button. The authorization process will take place silently in the background.
 >>
@@ -57,16 +64,14 @@ Each method offers its distinct advantages, depending on your expertise and pref
 
 ### Launch your first AI Notebook
 
-In the following table, we will walk you through the AI Notebook creation process for each of the available methods:
+To create an AI Notebook, follow these steps:
 
 > [!tabs]
 > **Using the Control Panel (UI)**
 >>
 >> The manager is the more intuitive way to launch an AI Notebook. To get started, follow these steps:
 >>
->> First, navigate to the `Public Cloud`{.action} section of the [OVHcloud Control Panel](/links/manager) by clicking on it in the horizontal menu at the top of the website.
->>
->> From there, click on the `AI & Machine Learning`{.action} category in the left-hand vertical menu to access the `AI Notebooks`{.action} section.
+>> Click [this link](/links/control-panel/publiccloud-projects) to access your Public Cloud project, then click on the `AI & Machine Learning`{.action} category in the left-hand vertical menu to access the `AI Notebooks`{.action} section.
 >>
 >> Once there, you can create your first Notebook by clicking the `Create a Notebook`{.action} button.
 >>
@@ -74,76 +79,76 @@ In the following table, we will walk you through the AI Notebook creation proces
 >>
 >> Once you have clicked this button, you will be prompted to provide some information to specify the configuration of your AI Notebook (code editor, pre-installed framework, compute resources, etc.).
 >>
->> **1\. Notebook Name**
+>> **1\. Notebook name**
 >>
->> First, give a name to your AI Notebook. This will make it easier to manage when you have multiple AI Notebooks created.
->>
->> After that, you have the option to set labels. This allows to specify one of yours AI tokens and apply it to this new AI Notebook. This AI token can then be shared with anyone who should have access to the Notebook, allowing them to access it without requiring your own Public Cloud project credentials. This is useful if you want to provide access to the AI Notebook outside your Public Cloud project. More information [here](/pages/public_cloud/ai_machine_learning/cli_13_howto_app_token_cli).
->>
->> Then, click the `Next`{.action} button.
+>> Give a name to your AI Notebook. This will make it easier to manage when you have multiple AI Notebooks created.
 >>
 >> ![Create a Notebook Control Panel manager 02](images/creating-a-notebook-using-UI-02.png){.thumbnail}
 >>
->> **2\. Live-code editor**
+>> **2\. Notebook location**
+>>
+>> Next, select a location.
+>>
+>> ![Create a Notebook Control Panel manager 03](images/creating-a-notebook-using-UI-03.png){.thumbnail}
+>>
+>> **3\. Compute Resources**
+>>
+>> Specify and adjust the type and amount of computing resources (CPU / GPU) for your AI Notebook. Use the `+`{.action} and `-`{.action} buttons to increase or decrease the number of CPUs and GPUs, depending on your needs.
+>>
+>> ![Create a Notebook Control Panel manager 04](images/creating-a-notebook-using-UI-04.png){.thumbnail}
+>>
+>> **4\. Pre-configured Frameworks**
+>>
+>> Then, choose the AI framework you want to use, which will be pre-installed and ready to use when your AI Notebook is launched. A wide range of Machine Learning frameworks are available, in different versions. Select the version that suits your needs. This guide will use _PyTorch_ as an example.
+>>
+>> ![Create a Notebook Control Panel manager 05](images/creating-a-notebook-using-UI-05.png){.thumbnail}
+>>
+>> **5\. Live-code editor**
 >>
 >> Choose the code editor you want.
 >>
 >> In this example, we use *JupyterLab*, but you have the option to choose *Visual Studio Code* as well. Both of them have their own pros and cons. Jupyter Notebook is generally considered easier to use for beginners.
 >>
->> With your code editor selected, proceed to the next step by clicking the `Next`{.action} button.
+>> ![Create a Notebook Control Panel manager 06](images/creating-a-notebook-using-UI-06.png){.thumbnail}
 >>
->> ![Create a Notebook Control Panel manager 03](images/creating-a-notebook-using-UI-03.png){.thumbnail}
+>> **6\. Privacy Settings**
 >>
->> **3\. Pre-configured Frameworks**
->>
->> Then, choose the AI framework you want to use, which will be pre-installed and ready to use when your AI Notebook is launched. A wide range of Machine Learning frameworks are available, in different versions. Select the version that suits your needs. Then, click on the `Next`{.action} button to continue. This guide will use _PyTorch_ as an example.
->>
->> ![Create a Notebook Control Panel manager 04](images/creating-a-notebook-using-UI-04.png){.thumbnail}
->>
->> **4\. Privacy Settings**
->>
->> Next, select your privacy settings and click the `Next`{.action} button.
+>> Next, select your privacy settings.
 >>
 >> > [!warning]
 >> >
 >> > *Public access* will expose your data and code to anyone getting the AI Notebook link. Be careful and don't use it with sensitive data. On the other hand, *Restricted access* will ask a user and password combination or an AI token to access the Notebook content, ensuring a secure environment.
 >> >
 >>
->> ![Create a Notebook Control Panel manager 05](images/creating-a-notebook-using-UI-05.png){.thumbnail}
->> 
->> **5\. Notebook location**
->>
->> Next, select a location.
->>
->> ![Create a Notebook Control Panel manager 06](images/creating-a-notebook-using-UI-06.png){.thumbnail}
->>
->> **6\. Compute Resources**
->>
->> Specify and adjust the type and amount of computing resources (CPU / GPU) for your AI Notebook. Use the `+`{.action} and `-`{.action} buttons to increase or decrease the number of CPUs and GPUs, depending on your needs.
->> 
->> Click the `Next`{.action} button.
->>
 >> ![Create a Notebook Control Panel manager 07](images/creating-a-notebook-using-UI-07.png){.thumbnail}
 >>
->> **7\. Remote Volumes**
+>> **7\. Notebook lifecycle**
+>> 
+>> > [!warning]
+>> >
+>> > Our main motivation is to keep the platform up-to-date in terms of security patches and new feature alignment. To achieve this, we need to update and restart hosts from time to time, which requires them to be free from any customer workload.
+>> 
+>> By default, your AI notebook will automatically shut down after 7 consecutive days of being in a RUNNING state. Rest assured that all your settings and data will be preserved. You have the option to enable Automatic Restart, which will automatically restart your notebook every 7 days, ensuring minimal disruption to your workflow. Alternatively, you can also contact [our support](/links/support-contact) to extend this automatic restart period from 7 to 28 days.
+>> 
+>> ![Create a Notebook Control Panel manager 08](images/creating-a-notebook-using-UI-08.png){.thumbnail}
+>> 
+>> **8\. Advanced configuration**
 >>
->> By default, your AI Notebook comes with ephemeral storage (local storage). But in this step, you can also link Object Storage containers and Git repositories to your AI Notebook, to easily access your remote data.
+>> *This step is optional.*
+>>
+>> By default, your AI Notebook comes with **ephemeral storage** (local storage). But in this step, you can also link Object Storage containers and Git repositories to your AI Notebook, to easily access your remote data.
 >>
 >> If you want to learn more about configuring containers and Git repositories in the Notebook, you can refer to this [documentation](/pages/public_cloud/ai_machine_learning/notebook_guide_data_ui). For now, we will launch a classic Notebook without any external volumes added to it.
 >>
->> Click the `Next`{.action} button.
+>> After that, you have the option to set labels. This allows to specify one of your AI tokens and apply it to this new AI Notebook. This AI token can then be shared with anyone who should have access to the Notebook, allowing them to access it without requiring your own Public Cloud project credentials. This is useful if you want to provide access to the AI Notebook outside your Public Cloud project. More information [here](/pages/public_cloud/ai_machine_learning/cli_13_howto_app_token_cli).
 >>
->> ![Create a Notebook Control Panel manager 08](images/creating-a-notebook-using-UI-08.png){.thumbnail}
->>
->> **8\. SSH Keys**
->>
->> SSH public keys allow you to access your Notebook remotely. This section is optional, click the `Next`{.action} button.
+>> Finally, **SSH public keys** allow you to access your Notebook remotely. 
 >>
 >> ![Create a Notebook Control Panel manager 09](images/creating-a-notebook-using-UI-09.png){.thumbnail}
 >>
 >> **9\. Launch the AI Notebook**
 >>
->> At the end of the process, review your settings and click the `Create a notebook`{.action} button to confirm and launch the creation of your Notebook.
+>> At the end of the process, review your settings and click the `Order`{.action} button to confirm and launch the creation of your Notebook.
 >> 
 >> ![Create a Notebook Control Panel manager 10](images/creating-a-notebook-using-UI-10.png){.thumbnail}
 >>
@@ -416,7 +421,7 @@ There are two methods of authentication for a restricted Notebook: using a **use
 >>
 >> Click the `Connect`{.action} button to log in to your AI Notebook.
 >>
->> ![Notebook Authentication Token](images//notebook-authentication-token.png){.thumbnail}
+>> ![Notebook Authentication Token](images/notebook-authentication-token.png){.thumbnail}
 >>
 
 Once you have successfully reached JupyterLab, you can create your first Notebook by clicking on the `Pytorch 2.4.0`{.action} button (or a similar button name depending on the framework you have selected).
@@ -479,7 +484,7 @@ Indeed, when you stop a Notebook, it will be unavailable for a certain period wh
 >>
 >> Then, select the Notebook you want to stop by clicking on its `Name`. 
 >> 
->> From there, you will be able to click the `...`{.action} button, and stop your AI Notebook by clicking `Stop`{.action}.
+>> From there, you will be able to click the `🔴`{.action} stop button:
 >>
 >> ![Stop a Notebook Control Panel manager](images/stopping-a-notebook-using-UI.png){.thumbnail}
 >>
@@ -527,24 +532,24 @@ Indeed, when you stop a Notebook, it will be unavailable for a certain period wh
 >> Please replace `YOUR_AI_TOKEN` with your actual AI token and `YOUR_NOTEBOOK_UUID` with the `UUID` of the Notebook you want to stop.
 >>
 
-### Restarting a stopped Notebook
+### Starting a stopped Notebook
 
-Once the Notebook has reached the `Stopped` state, you may be interested in restarting it in order to continue your work.
+Once the Notebook has reached the `Stopped` state, you may be interested in starting it in order to continue your work.
 
 > [!tabs]
 > **Using the Control Panel (UI)**
 >>
 >> Go back to the `AI Notebooks`{.action} board, from the `Public Cloud`{.action} section of the [OVHcloud Control Panel](/links/manager).
 >>
->> Then, select the Notebook you want to restart by clicking on its `Name`. 
+>> Then, select the Notebook you want to start by clicking on its `Name`. 
 >> 
->> From there, you will be able to click the `...`{.action} button, and stop your AI Notebook by clicking `Start`{.action}.
+>> From there, you will be able to click the `▶️`{.action} button:
 >>
->> ![Restart a Notebook Control Panel manager](images/restarting-a-notebook-using-UI.png){.thumbnail}
+>> ![Start a Notebook Control Panel manager](images/starting-a-notebook-using-UI.png){.thumbnail}
 >>
 > **Using ovhai CLI**
 >>
->> Use the following command and replace `<NOTEBOOK_UUID>` with your Notebook UUID to restart your stopped Notebook:
+>> Use the following command and replace `<NOTEBOOK_UUID>` with your Notebook UUID to start your stopped Notebook:
 >>
 >> ```bash
 >> ovhai notebook start <NOTEBOOK_UUID>
@@ -552,11 +557,11 @@ Once the Notebook has reached the `Stopped` state, you may be interested in rest
 >>
 > **Using the AI API**
 >>
->> Select the `Start a stopped notebook`{.action} endpoint, which is a PUT method. Provide the UUID of the Notebook you wish to restart as an input parameter. Then, click the `Send API request`{.action} button to send the request.
+>> Select the `Start a stopped notebook`{.action} endpoint, which is a PUT method. Provide the UUID of the Notebook you wish to start as an input parameter. Then, click the `Send API request`{.action} button to send the request.
 >>
->>If the request is successful, the Notebook will be restarted and a 'No content' message will be displayed in the 'Response' panel. If the request is unsuccessful, an error message will be displayed there.
+>> If the request is successful, the Notebook will be started and a 'No content' message will be displayed in the 'Response' panel. If the request is unsuccessful, an error message will be displayed there.
 >>
->> ![Restart a Notebook API](images/restarting-a-notebook-using-API.png){.thumbnail}
+>> ![Start a Notebook API](images/starting-a-notebook-using-API.png){.thumbnail}
 >>
 > **Using the Python SDK**
 >>
@@ -580,7 +585,43 @@ Once the Notebook has reached the `Stopped` state, you may be interested in rest
 >> Please replace `YOUR_AI_TOKEN` with your actual AI token and `YOUR_NOTEBOOK_UUID` with the `UUID` of the Notebook you want to stop.
 >>
 
-Restarting a Notebook will transition its state to `RUNNING`, once the Notebook is restarted. However, there will be a short waiting period while your data synchronizes back to your Notebook (internal workspace and remotely mounted volumes if any). During this data synchronization, the Notebook's state will display as `Pending` or `Starting` before entering the `RUNNING` state.
+Starting a Notebook will transition its state to `RUNNING`, once the Notebook is started. However, there will be a short waiting period while your data synchronizes back to your Notebook (internal workspace and remotely mounted volumes if any). During this data synchronization, the Notebook's state will display as `Pending` or `Starting` before entering the `RUNNING` state.
+
+### Restarting a Notebook
+
+When your Notebook is in the `RUNNING` state, you may want to restart it to refresh the environment or apply updates while preserving all your data and settings.
+
+The restart operation **will not trigger a datasync process**, which means your notebook's data and settings will be preserved without requiring the time consuming process of copying data.
+
+If you have enabled the Automatic Restart feature, your Notebook will automatically restart every 7 days without requiring manual intervention. You also have the option to extend this period to 28 days by contacting our [support](/links/support-contact).
+
+> [!tabs]
+> **Using the Control Panel (UI)**
+>>
+>> Go back to the `AI Notebooks`{.action} board, from the `Public Cloud`{.action} section of the [OVHcloud Control Panel](/links/manager).
+>>
+>> Then, select the Notebook you want to start by clicking on its `Name`. 
+>> 
+>> From there, you will be able to click the `🔄`{.action} restart button:
+>>
+>> ![Restart a Notebook Control Panel manager](images/restarting-a-notebook-using-UI.png){.thumbnail}
+>>
+> **Using ovhai CLI**
+>>
+>> Use the following command and replace `<NOTEBOOK_UUID>` with your Notebook UUID to restart your running Notebook:
+>>
+>> ```bash
+>> ovhai notebook restart <NOTEBOOK_UUID>
+>> ```
+>>
+> **Using the AI API**
+>>
+>> Select the `Restart a stopped notebook`{.action} endpoint, which is a PUT method. Provide the UUID of the Notebook you wish to start as an input parameter. Then, click the `Send API request`{.action} button to send the request.
+>>
+>> If the request is successful, the Notebook will be started and a 'No content' message will be displayed in the 'Response' panel. If the request is unsuccessful, an error message will be displayed there.
+>>
+>> ![Restart a Notebook API](images/restarting-a-notebook-using-API.png){.thumbnail}
+>>
 
 ### Deleting a Notebook
 
@@ -609,7 +650,7 @@ Deleting a Notebook also means that you will delete the Notebook's local storage
 >>
 >> Select the `Delete permanently a notebook`{.action} endpoint, which is a DELETE method. Provide the UUID of the Notebook you wish to delete. Use the `force` parameter if your Notebook is not `STOPPED` and still `RUNNING`. Then, click the `Send API request`{.action} button to send the request.
 >>
->> If the request is successful, the Notebook will be restarted and a 'No content' message will be displayed in the 'Response' panel. If the request is unsuccessful, an error message will be displayed there.
+>> If the request is successful, the Notebook will be deleted and a 'No content' message will be displayed in the 'Response' panel. If the request is unsuccessful, an error message will be displayed there.
 >>
 >> ![Delete a Notebook API](images/deleting-a-notebook-using-API.png){.thumbnail}
 >>

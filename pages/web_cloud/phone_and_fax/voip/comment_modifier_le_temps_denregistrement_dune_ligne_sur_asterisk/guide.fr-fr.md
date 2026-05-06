@@ -1,6 +1,6 @@
 ---
-title: Comment modifier le temps d’enregistrement d’une ligne sur Asterisk
-excerpt: Comment modifier le temps d’enregistrement (Register expire) sur Asterisk
+title: "Comment modifier le temps d’enregistrement d’une ligne sur Asterisk"
+excerpt: "Comment modifier le temps d’enregistrement (Register expire) sur Asterisk"
 updated: 2018-03-26
 flag: hidden
 ---
@@ -136,3 +136,6 @@ Contact: <sip:s@5.135.15x.x>
 Content-Length: 0
 ```
 
+## Aller plus loin
+
+Échangez avec notre [communauté d'utilisateurs](/links/community).

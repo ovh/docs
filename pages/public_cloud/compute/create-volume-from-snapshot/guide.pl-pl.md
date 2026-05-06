@@ -22,16 +22,23 @@ Może to być przydatne w następujących przypadkach:
 
 ## Wymagania początkowe
 
-- Dostęp do [Panelu klienta OVHcloud](/links/manager)
 - Posiadanie [instancji Public Cloud](/links/public-cloud/public-cloud) na koncie OVHcloud
 - Posiadanie kopii zapasowej dysku w tym samym regionie OpenStack
 - Dostęp do instancji przez SSH jako administrator (sudo)
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+### Dostęp do Panelu klienta OVHcloud
+- **Link bezpośredni:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Ścieżka nawigacji:** `Public Cloud`{.action} > Wybierz projekt
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## W praktyce
 
 ### Utwórz dysk z kopii zapasowej
 
-Zaloguj się do [Panelu klienta OVHcloud](/links/manager), przejdź do sekcji `Public Cloud`{.action} i wybierz odpowiedni projekt Public Cloud. Następnie kliknij `Snapshoty wolumenów`{.action} na pasku nawigacji po lewej stronie w **Storage i Backup**.
+Kliknij `Snapshoty wolumenów`{.action} na pasku nawigacji po lewej stronie w **Storage i Backup**.
 
 Po prawej stronie wybranej kopii zapasowej kliknij przycisk `...`{.action} a następnie `Utwórz wolumen`{.action}.
 

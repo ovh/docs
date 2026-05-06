@@ -1,6 +1,6 @@
 ---
 title: Tutorial - Using Zonemaster
-updated: 2024-06-18
+updated: 2026-02-10
 ---
 
 > [!warning]
@@ -12,7 +12,7 @@ updated: 2024-06-18
 
 ## Objective
 
-[Zonemaster](https://zonemaster.net/en/run-test) is a tool created by the collaboration between [AFNIC](https://www.afnic.fr/en/) (French registry) and [The Swedish Internet Foundation](https://internetstiftelsen.se/en/) (Swedish registry). It allows you to analyse the Domain Name System (DNS) configuration of a domain name and identify what can be improved or corrected.
+[Zonemaster](https://zonemaster.net/en/) is a tool created by the collaboration between [AFNIC](https://www.afnic.fr/en/) (French registry) and [The Swedish Internet Foundation](https://internetstiftelsen.se/en/) (Swedish registry). It allows you to analyse the Domain Name System (DNS) configuration of a domain name and identify what can be improved or corrected.
 
 > [!primary]
 >
@@ -39,7 +39,7 @@ To check a DNS configuration that has been prepared but not yet applied to the d
 
 You can also force checks on a specific IP protocol by using the `Disable IPv6` and `Disable IPv4` checkboxes.
 
-> **Example**:<br><br> You have the domain name domain.tld, which currently uses the DNS servers "dnsXX.ovh.net" and "nsXX.ovh.net".
+> **Example**:<br><br> You are the holder of the domain name "domain.tld", which currently uses the DNS servers "dnsXX.ovh.net" and "nsXX.ovh.net".
 >
 > You have configured a DNS zone for this domain name on the DNS servers "dns1.test.tld" and "dns2.test.tld".<br>
 > Before you change the DNS servers, you can perform an advanced search by enabling `Options`{.action}, then entering "dns1.test.tld" and "dns2.test.tld" into the `Nameservers` fields.<br>

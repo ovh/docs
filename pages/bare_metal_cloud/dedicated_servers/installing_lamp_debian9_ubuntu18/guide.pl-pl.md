@@ -1,6 +1,6 @@
 ---
-title: Tutorial - Instalacja serwera www (LAMP) na Debian lub Ubuntu
-excerpt: "Dowiedz się, jak skonfigurować serwer WWW LAMP"
+title: "Tutorial - Instalacja serwera www (LAMP) na Debian lub Ubuntu"
+excerpt: "Zainstaluj stos LAMP (Linux, Apache, MySQL, PHP) na serwerze dedykowanym OVHcloud z systemem Debian lub Ubuntu."
 updated: 2023-05-10
 ---
 
@@ -17,12 +17,25 @@ Uruchomienie serwera www i powiązanych z nim aplikacji pozwala serwerowi cloud 
 ## Wymagania początkowe
 
 - Serwer [dedykowany](/links/bare-metal/bare-metal), [VPS](/links/bare-metal/vps) lub instancja [Public Cloud](/links/public-cloud/public-cloud) na Twoim koncie OVHcloud (z wyłączeniem systemu Windows)
-- Dostęp do [Panelu klienta OVHcloud](/links/manager)
 - Dostęp administracyjny do Twojej usługi przez SSH
+
+<!-- CP-NAV-START:baremetal-dedicated-servers -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Bezpośredni link:** [Serwery dedykowane](/links/control-panel/baremetal-dedicated-servers)
+- **Ścieżka nawigacji:** `Bare Metal Cloud`{.action} > `Serwery dedykowane`{.action} > Wybierz swój serwer
+
+---
+<!-- CP-NAV-END:baremetal-dedicated-servers -->
 
 > [!warning]
 > Tutorial przedstawia zastosowanie jednego lub kilku rozwiązań OVHcloud w powiązaniu z zewnętrznymi narzędziami i opisuje operacje, jakie należy wykonać w konkretnym przypadku. Być może będziesz musiał dostosować instrukcję do Twojego przypadku.
 >
+
+- [Jak zabezpieczyć serwer dedykowany](/pages/bare_metal_cloud/dedicated_servers/securing-a-dedicated-server)
+
 > W przypadku trudności lub wątpliwości związanych z administrowaniem, użytkowaniem lub wdrażaniem usług na serwerze zalecamy skorzystanie z pomocy [wyspecjalizowanego](/links/partner) usługodawcy lub zbliżenie się do [naszej społeczności](https://community.ovh.com/en/).
 >
 
@@ -80,12 +93,12 @@ sudo apt install -y php php-pdo php-mysql php-zip php-gd php-mbstring php-curl p
 
 ### Etap 4: konfiguracja serwera bazy danych <a name="sqlconf"></a>
 
-MariaDB zapewnia skrypt, który pomoże Ci w początkowej konfiguracji i zastosować niektóre parametry związane z bezpieczeństwem.
+MariaDB [zapewnia skrypt](https://mariadb.com/docs/server/clients-and-utilities/deployment-tools/mariadb-secure-installation), który pomoże Ci w początkowej konfiguracji i zastosować niektóre parametry związane z bezpieczeństwem.
 
 Aby go wykonać, wprowadź następującą komendę:
 
 ```bash
-sudo mysql_secure_installation
+sudo mariadb-secure-installation
 ```
 
 Potwierdź pierwszą prośbę, naciskając `Enter`{.action}.

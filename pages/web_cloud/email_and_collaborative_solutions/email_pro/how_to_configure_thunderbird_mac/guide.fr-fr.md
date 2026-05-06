@@ -1,6 +1,6 @@
 ---
-title: 'E-mail Pro - Configurer son adresse e-mail sur Thunderbird pour macOS'
-excerpt: 'Découvrez comment configurer votre adresse E-mail Pro sur Thunderbird pour macOS'
+title: 'Email Pro - Configurer son adresse e-mail sur Thunderbird pour macOS'
+excerpt: 'Découvrez comment configurer votre adresse Email Pro sur Thunderbird pour macOS'
 updated: 2025-09-19
 ---
 
@@ -23,15 +23,26 @@ details[open]>summary::before {
 
 ## Objectif
 
-Les comptes E-mail Pro peuvent être configurés sur différents logiciels de messagerie compatibles. Cela vous permet d’utiliser votre adresse e-mail depuis l’appareil de votre choix. Thunderbird est un client de messagerie libre et gratuit.
+Les comptes Email Pro peuvent être configurés sur différents logiciels de messagerie compatibles. Cela vous permet d’utiliser votre adresse e-mail depuis l’appareil de votre choix. Thunderbird est un client de messagerie libre et gratuit.
 
-**Découvrez comment configurer votre adresse E-mail Pro sur Thunderbird pour macOS.**
+**Découvrez comment configurer votre adresse Email Pro sur Thunderbird pour macOS.**
 
 ## Prérequis
 
-- Disposer d’une adresse [E-mail Pro](/links/web/email-pro).
+- Disposer d’une adresse [Email Pro](/links/web/email-pro).
 - Disposer du logiciel Thunderbird installé sur votre Mac.
 - Posséder les identifiants relatifs à l'adresse e-mail que vous souhaitez paramétrer.
+
+<!-- CP-NAV-START:web-email-pro -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Email Pro](/links/control-panel/web-email-pro)
+- **Pour accéder à vos services :** `Web Cloud`{.action} > `Email Pro`{.action} > Sélectionnez votre plateforme
+
+---
+<!-- CP-NAV-END:web-email-pro -->
 
 /// details | Informations relatives à la gestion et configuration des services OVHcloud
 
@@ -45,13 +56,9 @@ Si vous éprouvez des difficultés à effectuer ces opérations, nous vous recom
 
 > [!warning]
 >
-> Dans notre exemple, nous utilisons la mention serveur : pro?.mail.ovh.net. Vous devrez remplacer le « ? » par le chiffre désignant le serveur de votre service E-mail Pro.
+> Dans notre exemple, nous utilisons la mention serveur : pro?.mail.ovh.net. Vous devrez remplacer le « ? » par le chiffre désignant le serveur de votre service Email Pro.
 >
-> 1. Connectez-vous à votre [espace client OVHcloud](/links/manager).
-> 1. Rendez-vous dans la partie `Web Cloud`{.action}.
-> 1. Cliquez sur `Email Pro`{.action}.
-> 1. Sélectionnez la plateforme concernée.
-> 1. Le nom du serveur est visible dans le cadre **Connexion** de l'onglet `Informations Générales`{.action}.
+> Cliquez sur [ce lien](/links/control-panel/web-email-pro) pour accéder à la section `Email Pro`{.action}. Le nom du serveur est visible dans le cadre **Connexion** de l'onglet `Informations générales`{.action}.
 
 ### Ajouter le compte
 
@@ -172,7 +179,7 @@ Si votre compte e-mail est déjà paramétré et que vous devez accéder aux par
 >
 > Pour plus d'informations sur la configuration d'une adresse e-mail depuis le client de messagerie Thunderbird, consultez [le centre d'aide de Mozilla](https://support.mozilla.org/products/thunderbird).
 
-[Premiers pas avec la solution E-mail Pro](/pages/web_cloud/email_and_collaborative_solutions/email_pro/first_config)
+[Premiers pas avec la solution Email Pro](/pages/web_cloud/email_and_collaborative_solutions/email_pro/first_config)
 
 Pour des prestations spécialisées (référencement, développement, etc.), contactez les [partenaires OVHcloud](/links/partner).
 

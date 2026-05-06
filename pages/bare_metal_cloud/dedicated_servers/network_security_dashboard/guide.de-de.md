@@ -1,6 +1,6 @@
 ---
-title: Monitoring von DDoS-Angriffen mit dem Network Security Dashboard
-excerpt: Erfahren Sie hier, wie Sie das Network Security Dashboard im OVHcloud Kundencenter verwenden
+title: "Dedicated Server - Network Security Dashboard"
+excerpt: "Überwachen Sie DDoS-Angriffe und Trafficmuster auf Ihrem Dedicated Server mit dem OVHcloud Network Security Dashboard."
 updated: 2025-10-31
 ---
 
@@ -11,7 +11,17 @@ In dieser Anleitung wird das Network Security Dashboard erläutert. Außerdem er
 ## Voraussetzungen 
 
 - Sie haben eine OVHcloud Dienstleistung abonniert, die über eine dedizierte öffentliche IP-Adresse erreichbar ist ([Dedicated Server](/links/bare-metal/bare-metal), [VPS](/links/bare-metal/vps), [Public Cloud Instanz](/links/public-cloud/public-cloud), [Hosted Private Cloud](/links/hosted-private-cloud/hosted-private-cloud), [Additional IP](/links/network/additional-ip), etc.).
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
+
+<!-- CP-NAV-START:network-security-dashboard -->
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direkter Link:** [Security Dashboard](/links/control-panel/network-security-dashboard)
+- **Navigationspfad:** `Network`{.action} > `Network Security Dashboard`{.action}
+
+---
+<!-- CP-NAV-END:network-security-dashboard -->
 
 ## In der praktischen Anwendung
 
@@ -27,7 +37,7 @@ Jedes Mal, wenn ein Angriff auf eine IP-Adresse Ihres Dienstes entdeckt wird, we
 
 Während eines Angriffs wird eine aktive Abwehraktion durch ein Warnsymbol auf der Seite IP-Liste (im Bereich `IPs verwalten`{.action} in Ihrem Kundencenter) angezeigt.
 
-![red-line-attack](images/forced_blur.png){.thumbnail}{.thumbnail}
+![Warnsymbol für aktive Mitigation auf der IP-Listenseite](images/forced_blur.png){.thumbnail}{.thumbnail}
 
 > [!primary]
 >
@@ -41,7 +51,7 @@ Während eines Angriffs wird eine aktive Abwehraktion durch ein Warnsymbol auf d
 
 ### Netzwerksicherheitsbenachrichtigungen
 
-![red-line-attack](images/nsd_04_blur.PNG){.thumbnail}
+![Netzwerksicherheits-Benachrichtigungen mit Anti-DDoS-Statusspalten](images/nsd_04_blur.PNG){.thumbnail}
 
 Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein, klicken Sie auf `Network`{.action} in der linken Seitenleiste und dann auf `Öffentliche IP-Adressen`{.action}. Stellen Sie sicher, dass der `Erweiterte Modus` aktiviert ist, um den Status der Anti-DDoS-Infrastruktur und die Konfiguration ihrer Komponenten anzuzeigen.
 
@@ -65,11 +75,9 @@ Die Spalten entsprechen dem Status des Anti-DDoS-Scrubbing (**Mitigation**) sowi
 
 ### Dashboard Netzwerksicherheit
 
-Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein, klicken Sie auf `Network`{.action} in der linken Seitenleiste und dann auf `Network Security Dashboard`{.action}.
-
 Auf **Scrubbing Center-Protokoll** können Sie alle Informationen zu Angriffen abrufen, die in der Vergangenheit entdeckt wurden (oder zurzeit aktiv sind).
 
-![red-line-attack](images/nsd_main_blur.png){.thumbnail}
+![Scrubbing-Center-Log mit erkannten Angriffen und Zeitstempeln](images/nsd_main_blur.png){.thumbnail}
 
 In der Tabelle sind die folgenden Spalten vorhanden: 
 
@@ -87,7 +95,7 @@ In der Tabelle sind die folgenden Spalten vorhanden:
 
 Auf **Traffic Chart** sehen Sie ein Diagramm, das den Traffic zu Ihrer IP-Adresse (bps oder pps) anzeigt.
 
-![red-line-attack](images/nsd_graph_tab_blur.png){.thumbnail}
+![Traffic-Diagramm mit verworfenem bösartigem und sauberem Traffic](images/nsd_graph_tab_blur.png){.thumbnail}
 
 Sie zeigt schädlichen Datenverkehr, der verworfen wurde (**in rot**) und gesäuberten Datenverkehr, der an Ihre IP-Adresse übertragen wurde (**in grün**).  Darüber hinaus werden grundlegende Abwehrstatistiken angezeigt, z.B. wie viele Angriffe für eine ausgewählte IP entdeckt wurden, wie viel Traffic (oder Pakete) während der Angriffe gesäubert wurde oder wie oft die Scrubbing Center in einem bestimmten Zeitraum eine Aktion zur Überprüfung Ihres Traffics (Anzahl der Ereignisse) durchgeführt haben.
 

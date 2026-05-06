@@ -1,7 +1,7 @@
 ---
 title: "Poprawa bezpieczeństwa e-maili dzięki rejestracji DKIM"
-excerpt: "Dowiedz się, jak skonfigurować rekord DKIM w Twojej domenie i platformie e-mail OVHcloud"
-updated: 2025-11-28
+excerpt: "Dowiedz się, jak skonfigurować rekord DKIM w Twojej nazwy domeny i platformie e-mail OVHcloud"
+updated: 2026-02-10
 ---
 
 <style>
@@ -56,13 +56,23 @@ Wpis DKIM (**D**omain**K**eys **I**dentified **M**ail) pozwala na podpisanie e-m
 ## Wymagania początkowe
 
 - Posiadanie dostępu do interfejsu zarządzania domeną w [Panelu klienta OVHcloud](/links/manager) lub u operatora domeny, jeśli jest zarejestrowany poza OVHcloud.
-- Dostęp do [Panelu klienta OVHcloud](/links/manager).
 - Zamówienie jednej z poniższych ofert e-mail:
     - MX Plan OVHcloud (dostępny w ramach [oferty hostingu Cloud](/links/web/hosting), [bezpłatny hosting 100M](/links/web/domains-free-hosting) lub w ramach oferty MX Plan zamówionej oddzielnie).
     - [Exchange](/links/web/emails-hosted-exchange) lub [Private Exchange](/links/web/emails-hosted-exchange).
     - [E-mail Pro](/links/web/email-pro).
     - [Zimbra](/links/web/zimbra).
     - Oferta e-mail poza OVHcloud z DKIM.
+
+<!-- CP-NAV-START:web-dns-zone -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Strefy DNS](/links/control-panel/web-dns-zone)
+- **Ścieżka nawigacji:** `Web Cloud`{.action} > `Strefy DNS`{.action} > Wybierz nazwę domeny
+
+---
+<!-- CP-NAV-END:web-dns-zone -->
 
 > [!warning]
 >
@@ -121,15 +131,15 @@ Funkcja siekania jest przydatna, gdy chcesz sprawdzić integralność wiadomośc
 
 Szyfrowanie **danych**, jak sama nazwa wskazuje, ma na celu zaszyfrowanie ich danych. Jest "**asymetryczny**", ponieważ klucz szyfrujący nie jest taki sam jak klucz w przeciwieństwie do symetrycznego szyfrowania, które będzie używać tego samego klucza do szyfrowania i rozszyfrowania.
 
-W asymetrycznym szyfrowaniu używamy **klucza publicznego** i **klucza prywatnego**. Klucz publiczny jest widoczny i możliwy do wykorzystania przez wszystkich. Klucz prywatny jest używany tylko przez właściciela i nie jest widoczny dla wszystkich. 
+W asymetrycznym szyfrowaniu używamy **klucza publicznego** i **klucza prywatnego**. Klucz publiczny jest widoczny i możliwy do wykorzystania przez wszystkich. Klucz prywatny jest używany tylko przez abonent i nie jest widoczny dla wszystkich. 
 
 Istnieją dwa sposoby szyfrowania asymetrycznego:
 
-- **Dane wejściowe są szyfrowane kluczem publicznym i odczytywane przez właściciela klucza prywatnego**. Na przykład chcesz, aby osoba trzecia przekazywała dane w bezpieczny sposób. Przekazujesz klucz publiczny, nie martwiąc się, że ktoś go odbierze, ta osoba trzecia zaszyfruje jego dane przy pomocy klucza publicznego. Dane liczbowe mogą być odczytywane wyłącznie przez właściciela klucza prywatnego.
+- **Dane wejściowe są szyfrowane kluczem publicznym i odczytywane przez abonent klucza prywatnego**. Na przykład chcesz, aby osoba trzecia przekazywała dane w bezpieczny sposób. Przekazujesz klucz publiczny, nie martwiąc się, że ktoś go odbierze, ta osoba trzecia zaszyfruje jego dane przy pomocy klucza publicznego. Dane liczbowe mogą być odczytywane wyłącznie przez abonent klucza prywatnego.
 
 ![hash](/pages/assets/schemas/emails/dns-dkim-crypto01.png){.thumbnail .w-400 .h-600}
 
-- **Dane wejściowe są szyfrowane przez właściciela klucza prywatnego i odczytywane kluczem publicznym**. To zastosowanie ma do uwierzytelnienia wymiany danych. Na przykład Twoi odbiorcy chcą mieć pewność, że jesteś autorem wiadomości, którą im przekazujesz. W takim przypadku szyfrujesz wiadomość kluczem prywatnym. Wiadomość ta może zostać odszyfrowana tylko przy użyciu klucza publicznego, który otrzymasz od każdego, co gwarantuje odbiorcom jej autentyczność. Faktycznie, wiadomość odszyfrowana kluczem publicznym może pochodzić wyłącznie od właściciela klucza prywatnego.
+- **Dane wejściowe są szyfrowane przez abonent klucza prywatnego i odczytywane kluczem publicznym**. To zastosowanie ma do uwierzytelnienia wymiany danych. Na przykład Twoi odbiorcy chcą mieć pewność, że jesteś autorem wiadomości, którą im przekazujesz. W takim przypadku szyfrujesz wiadomość kluczem prywatnym. Wiadomość ta może zostać odszyfrowana tylko przy użyciu klucza publicznego, który otrzymasz od każdego, co gwarantuje odbiorcom jej autentyczność. Faktycznie, wiadomość odszyfrowana kluczem publicznym może pochodzić wyłącznie od abonent klucza prywatnego.
 
 ![hash](/pages/assets/schemas/emails/dns-dkim-crypto02.png){.thumbnail .w-400 .h-600}
 
@@ -181,7 +191,7 @@ Odbiorca **recipient@otherdomain.ovh** będzie mógł odszyfrować ten podpis kl
 Automatyczna konfiguracja DKIM jest dostępna dla wszystkich naszych ofert e-mail:
 
 - MX Plan wchodzący w skład [hostingu Web Cloud](/links/web/hosting), [darmowego 100M hostingu](/links/web/domains-free-hosting) lub zamówiony osobno.
-- [Exchange](/links/web/emails).
+- [Exchange](/links/web/emails-exchange).
 - [E-mail Pro](/links/web/email-pro).
 - [Zimbra](/links/web/zimbra).
 
@@ -1124,7 +1134,7 @@ Odbiorca musi zignorować tę rejestrację, jeśli nie został określony odpowi
 Znacznik "s=" ma na celu ograniczenie wykorzystania kluczy do innych celów, w przypadku gdy wykorzystanie DKIM byłoby określone dla innych usług w przyszłości.<br>
 Typami usług obecnie zdefiniowanymi są: "\*" (wszystkie rodzaje usług), "e-mail" (e-mail).
 
-- **Tryb testowy (t=y)**: umożliwia właścicielom domeny przetestowanie wdrożenia DKIM bez ryzyka, że wiadomości odrzucone lub oznaczone jako SPAM zostaną wykryte w przypadku niepowodzenia weryfikacji podpisu DKIM.<br>
+- **Tryb testowy (t=y)**: umożliwia abonentom domeny przetestowanie wdrożenia DKIM bez ryzyka, że wiadomości odrzucone lub oznaczone jako SPAM zostaną wykryte w przypadku niepowodzenia weryfikacji podpisu DKIM.<br>
 W przypadku gdy stosowany jest flag "t=y", odbiorca nie może przetwarzać w inny sposób podpisanych wiadomości w trybie testowym i niepodpisanych komunikatów. Odbiorca może jednak śledzić wynik testu, aby pomóc sygnatariuszom.
 
 - **Subdomeny (t=s)**: pozwala na ograniczenie używania podpisu DKIM wyłącznie w nazwie domeny (np.: @mydomain.ovh) lub zezwolić na wysyłkę z nazwy domeny i jej subdomen (na przykład: @mydomain.ovh, @test.mydomain.ovh, @other.mydomain.ovh, etc.)

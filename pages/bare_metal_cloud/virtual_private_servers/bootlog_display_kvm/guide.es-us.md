@@ -28,7 +28,17 @@ Si su VPS no responde, siempre debería poder acceder a él desde el área de cl
 ## Requisitos
 
 - Disponer de un [VPS](/links/bare-metal/vps) en su cuenta de OVHcloud
-- Tener acceso al [Panel de configuración de OVHcloud](/links/manager)
+
+<!-- CP-NAV-START:baremetal-vps -->
+---
+
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [VPS management](/links/control-panel/baremetal-vps)
+- **Ruta de navegación:** `Bare Metal Cloud`{.action} > `Servidores privados virtuales`{.action} > Seleccione su VPS
+
+---
+<!-- CP-NAV-END:baremetal-vps -->
 
 ## Procedimiento
 
@@ -41,7 +51,7 @@ Si todavía tiene acceso a su VPS por SSH, puede pasar a [la etapa 6](#step6).
 
 ### Paso 1: reiniciar el VPS en modo de rescate
 
-Inicie sesión en el [Panel de configuración de OVHcloud](/links/manager) y reinicie el servidor en modo de rescate. Si lo necesita, consulte nuestra [guía sobre el modo de rescate](/pages/bare_metal_cloud/virtual_private_servers/rescue).
+Reinicie el servidor en modo de rescate desde el área de cliente. Si lo necesita, consulte nuestra [guía sobre el modo de rescate](/pages/bare_metal_cloud/virtual_private_servers/rescue).
 
 ### Paso 2: efectuar la verificación inicial
 

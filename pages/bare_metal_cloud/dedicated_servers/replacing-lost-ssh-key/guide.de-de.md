@@ -1,6 +1,6 @@
 ---
-title: Austauschen eines SSH-Schlüsselpaars
-excerpt: Erfahren Sie hier, wie Sie Zugriff auf Ihren Server mit einem neuen SSH-Schlüsselpaar wiederherstellen, falls der private Schlüssel verloren ist
+title: "Verlorenen SSH-Schlüssel auf einem Dedicated Server ersetzen"
+excerpt: "Stellen Sie den SSH-Zugriff auf Ihren Dedicated Server wieder her, indem Sie ein neues Schlüsselpaar im Rescue-Modus erstellen und bereitstellen."
 updated: 2024-04-04
 ---
 
@@ -25,7 +25,6 @@ Sie können sich jedoch weiterhin über den [OVHcloud Rescue-Modus](/pages/bare_
 ## Voraussetzungen
 
 - Sie haben einen [Dedicated Server](/links/bare-metal/bare-metal) oder einen [VPS](/links/bare-metal/vps) in Ihrem Kunden-Account.
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 
 ## In der praktischen Anwendung
 

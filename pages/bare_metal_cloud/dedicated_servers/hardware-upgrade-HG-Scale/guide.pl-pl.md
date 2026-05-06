@@ -1,6 +1,6 @@
 ---
-title: "Modernizacja sprzętu na serwerze dedykowanym High Grade lub Scale"
-excerpt: "Dowiedz się, jak przeprowadzić modernizację sprzętu zarówno dla gam High Grade, jak i Scale, z poziomu Panelu klienta"
+title: "Serwer dedykowany - Wymiana sprzętu na serwerach HG/Scale"
+excerpt: "Zamów wymianę lub upgrade sprzętu (RAM, dyski, karty sieciowe) na serwerach dedykowanych OVHcloud HG i Scale."
 updated: 2024-01-04
 ---
 
@@ -20,13 +20,19 @@ Nasze serwery High Grade i Scale oferują opcję skalowalną, która pozwala na 
 ## Wymagania początkowe
 
 - Serwer [High Grade](https://www.ovhcloud.com/pl/bare-metal/high-grade/) lub [SCALE](https://www.ovhcloud.com/pl/bare-metal/scale/)
-- Dostęp do [panelu klienta OVHcloud](/links/manager)
+
+<!-- CP-NAV-START:baremetal-dedicated-servers -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Bezpośredni link:** [Serwery dedykowane](/links/control-panel/baremetal-dedicated-servers)
+- **Ścieżka nawigacji:** `Bare Metal Cloud`{.action} > `Serwery dedykowane`{.action} > Wybierz swój serwer
+
+---
+<!-- CP-NAV-END:baremetal-dedicated-servers -->
 
 ## W praktyce
-
-Zaloguj się do [Panelu klienta OVHcloud](/links/manager).
-
-W sekcji `Bare Metal Cloud`{.action} wybierz serwer spośród **Serwery dedykowane**.
 
 ### Zwiększ pamięć RAM
 
@@ -36,7 +42,7 @@ W zakładce `Hardware`{.action} kliknij `Zwiększ pamięć RAM`{.action}.
 
 W następnej karcie wybierz odpowiednią opcję pamięci RAM i kliknij na `Zamów`{.action}.
 
-![storage option](images/selectram.png){.thumbnail}
+![Wybór opcji RAM i kliknięcie Zamów](images/selectram.png){.thumbnail}
 
 Po opłaceniu zamówienia do Twojego konta zostanie wysłana wiadomość e-mail z potwierdzeniem z linkiem do planowania interwencji w celu aktualizacji pamięci RAM.
 
@@ -48,7 +54,7 @@ Zaznacz kratkę poniżej `Czy sporządziłaś/-eś kopię zapasową swoich danyc
 
 Następnie kliknij `Zatwierdź`{.action}.
 
-![confirm intervention](images/ramconfirm.png){.thumbnail}
+![Potwierdzenie daty i godziny interwencji wymiany RAM](images/ramconfirm.png){.thumbnail}
 
 Otrzymasz wówczas e-mail z potwierdzeniem daty i godziny interwencji.
 
@@ -60,7 +66,7 @@ W zakładce `Hardware`{.action} kliknij `Zwiększ przestrzeń dyskową`{.action}
 
 W następnej karcie wybierz odpowiednią opcję przestrzeni dyskowej i kliknij na `Zamów`{.action}.
 
-![option de stockage](images/selectstorage.png){.thumbnail}
+![Wybór opcji dysku i kliknięcie Zamów](images/selectstorage.png){.thumbnail}
 
 Po opłaceniu zamówienia na konto użytkownika zostanie wysłana wiadomość e-mail z potwierdzeniem i łączem umożliwiającym zaplanowanie aktualizacji sprzętu.
 
@@ -72,7 +78,7 @@ Zaznacz kratkę poniżej `Czy sporządziłaś/-eś kopię zapasową swoich danyc
 
 Następnie kliknij `Zatwierdź`{.action}.
 
-![confirm intervention](images/confirmintervention.png){.thumbnail}
+![Potwierdzenie daty i godziny interwencji wymiany dysku](images/confirmintervention.png){.thumbnail}
 
 Otrzymasz wówczas e-mail z potwierdzeniem daty i godziny interwencji.
 
@@ -84,4 +90,8 @@ W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj
  
 Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](/links/support).
  
+
+- [Konfiguracja sieci na Proxmox VE w ofercie High Grade, Scale & Advance (EN)](/pages/bare_metal_cloud/dedicated_servers/proxmox-network-HG-Scale)
+- [Konfiguracja sieci Hyper-V na serwerach dedykowanych HG/Scale](/pages/bare_metal_cloud/dedicated_servers/hyperv-network-HG-Scale)
+
 Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

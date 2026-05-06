@@ -18,7 +18,17 @@ Si configura su VPS como servidor DNS, puede utilizar el servicio DNS secundario
 
 - Un dominio al que puede acceder como administrador
 - Un servidor [VPS](/links/bare-metal/vps) desde el área de cliente de OVHcloud
-- Haber iniciado sesión en el [Panel de configuración de OVHcloud](/links/manager)
+
+<!-- CP-NAV-START:baremetal-vps -->
+---
+
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [VPS management](/links/control-panel/baremetal-vps)
+- **Ruta de navegación:** `Bare Metal Cloud`{.action} > `Servidores privados virtuales`{.action} > Seleccione su VPS
+
+---
+<!-- CP-NAV-END:baremetal-vps -->
 
 > [!warning]
 > La configuración, la gestión y la responsabilidad de los servicios que OVHcloud pone a su disposición recaen sobre usted. Por lo tanto, usted deberá asegurarse de que estos funcionan correctamente.
@@ -29,8 +39,6 @@ Si configura su VPS como servidor DNS, puede utilizar el servicio DNS secundario
 ## Procedimiento
 
 ### Paso 1: recuperación del código de verificación <a name="retrievecode"></a>
-
-Conéctese al [Panel de configuración de OVHcloud](/links/manager), acceda a la sección `Bare Metal Cloud`{.action} de la barra de metal y seleccione el servidor en **servidores virtuales** privados en el menú de la izquierda.
 
 Abra la pestaña `DNS secundario`{.action} y haga clic en el botón `Añadir un dominio`{.action}.
 

@@ -12,7 +12,17 @@ Learn how to create a snapshot policy, apply it to your volume, modify and delet
 ## Requirements
 
 - An OVHcloud Enterprise File Storage service with an available volume
-- Access to the [OVHcloud Control Panel](/links/manager)
+
+<!-- CP-NAV-START:storage-enterprise-file-storage -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Enterprise File Storage](/links/control-panel/storage-enterprise-file-storage)
+- **Navigation path:** `Bare Metal Cloud`{.action} > `Enterprise File Storage`{.action}
+
+---
+<!-- CP-NAV-END:storage-enterprise-file-storage -->
 
 ## Basics
 
@@ -22,7 +32,7 @@ A snapshot policy allows you to automate the snapshot creation using different p
 
 ## Instructions
 
-Log in to your [OVHcloud Control Panel](/links/manager) and switch to `Bare Metal Cloud`{.action} in the top navigation bar. Open `Storage and Backup`{.action} and `Enterprise File Storage`{.action} in the left-hand menu, then select your service from the list.
+Select your service from the list.
 
 ### Creating your snapshot policy
 

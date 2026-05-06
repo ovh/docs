@@ -1,7 +1,7 @@
 ---
 title: 'Configurar la red en Proxmox VE en las gamas High Grade, Scale & Advance (EN)'
 excerpt: 'Cómo configurar la red en Proxmox VE'
-updated: 2025-07-22
+updated: 2026-01-23
 ---
 
 > [!primary]
@@ -33,7 +33,7 @@ updated: 2025-07-22
 
 - An [OVHcloud dedicated server](/links/bare-metal/bare-metal)
 - One or more [Additional IP addresses](/links/network/additional-ip)
-- Access to the [OVHcloud Control Panel](/links/manager)
+
 
 > [!warning]
 >
@@ -51,7 +51,7 @@ With this configuration, Additional IP addresses must be attached to a dedicated
 > [!tabs]
 > High Grade & Scale ranges
 >>
->> ![schema route](images/schema_route2022.png){.thumbnail}
+>> ![schema route](images/schema_route.png){.thumbnail}
 >>
 > Advance range
 >>
@@ -111,7 +111,7 @@ sysctl -p
 >> # Public interfaces
 >> auto bond0
 >> iface bond0 inet manual
->>         bond-slaves ens33f0 ens33f1
+>>         bond-slaves ens33f0 ens35f1
 >>         bond-mode 802.3ad
 >>         bond-lacp-rate fast
 >>         bond-xmit-hash-policy layer3+4
@@ -134,7 +134,7 @@ sysctl -p
 >> # Private interfaces
 >> auto bond1
 >> iface bond1 inet manual
->>         bond-slaves ens35f0 ens35f1
+>>         bond-slaves ens35f0 ens33f1
 >>         bond-mode 802.3ad
 >>         bond-lacp-rate fast
 >>         bond-xmit-hash-policy layer3+4
@@ -267,7 +267,7 @@ This configuration is more flexible as you do not need to associate an Additiona
 
 #### Target configuration schema
 
-![schema vrack](images/schema_vrack2022.png){.thumbnail}
+![schema vrack](images/Schema_vrack.png){.thumbnail}
 
 #### Explanations
 
@@ -334,7 +334,7 @@ ssh PUB_IP_DEDICATED_SERVER
 >> iface bond0 inet static
 >>         address PUB_IP_DEDICATED_SERVER/32
 >>         gateway 100.64.0.1
->>         bond-slaves ens33f0 ens33f1
+>>         bond-slaves ens33f0 ens35f1
 >>         bond-mode 802.3ad
 >>         bond-lacp-rate fast
 >>         bond-xmit-hash-policy layer3+4
@@ -342,7 +342,7 @@ ssh PUB_IP_DEDICATED_SERVER
 >> # Private interfaces
 >> auto bond1
 >> iface bond1 inet manual
->>         bond-slaves ens35f0 ens35f1
+>>         bond-slaves ens35f0 ens33f1
 >>         bond-mode 802.3ad
 >>         bond-lacp-rate fast
 >>         bond-xmit-hash-policy layer3+4

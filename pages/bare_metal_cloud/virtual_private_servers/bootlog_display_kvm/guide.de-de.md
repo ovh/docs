@@ -29,7 +29,17 @@ Wenn Ihr VPS nicht mehr antwortet, können Sie diesen in der Regel immer noch ü
 ## Voraussetzungen
 
 - Sie haben einen OVHcloud [VPS](/links/bare-metal/vps) in Ihrem Kunden-Account.
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
+
+<!-- CP-NAV-START:baremetal-vps -->
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direkter Link:** [VPS-Verwaltung](/links/control-panel/baremetal-vps)
+- **Navigationspfad:** `Bare Metal Cloud`{.action} > `Virtual Private Server`{.action} > Wählen Sie Ihren VPS aus
+
+---
+<!-- CP-NAV-END:baremetal-vps -->
 
 ## In der praktischen Anwendung
 
@@ -42,7 +52,7 @@ Wenn Sie noch regulär Zugriff auf Ihren VPS über SSH haben, können Sie zu [Sc
 
 ### Schritt 1: VPS im Rescue-Modus neu starten
 
-Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein und starten Sie den Server im Rescue-Modus neu. Wenn nötig lesen Sie [unsere Anleitung zum Rescue-Modus](/pages/bare_metal_cloud/virtual_private_servers/rescue).
+Starten Sie den Server im Rescue-Modus über das Kundencenter neu. Wenn nötig lesen Sie [unsere Anleitung zum Rescue-Modus](/pages/bare_metal_cloud/virtual_private_servers/rescue).
 
 ### Schritt 2: Durchführung der ersten Überprüfung
 

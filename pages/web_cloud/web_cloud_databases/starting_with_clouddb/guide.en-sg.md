@@ -1,218 +1,296 @@
 ---
 title: 'Getting started with the Web Cloud Databases service'
 excerpt: 'Find out how to get started with the Web Cloud Databases service'
-updated: 2025-02-20
+updated: 2026-03-24
 ---
 
 ## Objective
 
-With the Web Cloud Databases solution, you get a database instance with dedicated, guaranteed resources that gives you performance and flexibility.
-Your Web Cloud Databases solution is linked to the OVHcloud web hosting network by default. You can link it to any other network, via a list of authorised IP addresses.
+The Web Cloud Databases solution provides a database instance with dedicated and guaranteed resources, offering performance and flexibility.
+By default, your Web Cloud Databases solution is linked to the OVHcloud web hosting network. You can also link it to any other network via a list of authorised IP addresses.
 
-**Find out how to get started with a Web Cloud Databases service.**
+**Find out how to get started with the Web Cloud Databases service.**
 
 ## Requirements
 
-- A [Web Cloud Databases instance](https://www.ovh.ie/cloud-databases/) (included in [Performance web hosting plans](/links/web/hosting)).
-- Access to the [OVHcloud Control Panel](/links/manager)
+- A [Web Cloud Databases instance](/links/web/databases) (included in a [Performance web hosting plan](/links/web/hosting)).
+
+<!-- CP-NAV-START:web-cloud-databases -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Web Cloud Databases](/links/control-panel/web-cloud-databases)
+- **Navigation path:** `Web Cloud`{.action} > `Web Cloud Databases`{.action} > Select your database service
+
+---
+<!-- CP-NAV-END:web-cloud-databases -->
 
 ## Instructions
 
-### Web Cloud Databases server activation included with your Web Hosting plan
+### Activating your Web Cloud Databases server included with your web hosting plan
 
-If your hosting plan includes the Web Cloud Databases option, click on the tabs below to view each of the **4** steps.
+<!-- CP-STEPS-START:activating-wcdb-server -->
+If your hosting plan includes the Web Cloud Databases option, click on the tabs below to view each of the **3** steps.
 
 > [!tabs]
 > **Step 1**
 >>
->> Log in to the [OVHcloud Control Panel](/links/manager), then go to the `Web Cloud`{.action} section.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Step 2**
->>
->> Click the `Hosting plans`{.action} menu, then select the web hosting plan concerned.
+>> Go to the [Hosting plans](/links/control-panel/web-hosting) page, then select the web hosting plan concerned.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
+> **Step 2**
+>>
+>> In the `General information` tab, under `Configuration`, click `...`{.action} next to **Web Cloud Databases**, then click `Enable`{.action}.
+>>
+>> ![General information](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/web-cloud-databases-enable.png){.thumbnail}
+>>
 > **Step 3**
 >>
->> In the `General information` tab, in the `Configuration` box, click the `...`{.action} button to the right of **Web Cloud Databases**. Then click `Enable`{.action} to start the activation process.
+>> Follow the instructions to choose the type and version. Your server will then appear in the left-hand column under `Web Cloud Databases`{.action}.
+<!-- CP-STEPS-END:activating-wcdb-server -->
+
+### Viewing the general information of the instance
+
+<!-- CP-STEPS-START:viewing-general-information -->
+Click on the tabs below to view each of the **2** steps.
+
+> [!tabs]
+> **Step 1**
 >>
->> ![Informations générales](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/web-cloud-databases-enable.png){.thumbnail}
+>> Go to the [Web Cloud Databases](/links/control-panel/web-cloud-databases) page, then select the solution concerned.
+>>
+>> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases.png){.thumbnail}
+>>
+>> > [!primary]
+>> >
+>> > The name of the Web Cloud Databases service in your OVHcloud Control Panel contains part of your customer reference and ends with three digits (001 for the first Web Cloud Databases service installed, 002 for the second, etc.).
+>>
+> **Step 2**
+>>
+>> Make sure you are on the `General information`{.action} tab.
+>>
+>> Check that the displayed information is correct or matches the details below.
+>>
+>> |Information|Details|
+>> |---|---|
+>> |Service status|Shows whether the instance is started, restarting, or suspended. Your instance must be started to perform actions on it.|
+>> |Type|Shows the database system used by the server.|
+>> |Version|Shows the version of the database system used by the server. Make sure your website is compatible with the chosen version.|
+>> |CPU saturation|Shows CPU time spent in saturation. Your Web Cloud Databases instance is not limited in terms of CPU, but you must ensure you do not overload it.|
+>> |RAM|Shows the RAM available for your instance, as well as any memory overflows. Your Web Cloud Databases instance has dedicated and guaranteed resources: its RAM. If needed, you can upgrade it and be notified if you are consuming all the memory resources of your instance.|
+>> |Infrastructure|Shows the infrastructure used by your instance. This is information inherent to the OVHcloud infrastructure.|
+>> |Datacenter|Shows the data centre where the instance was created.|
+>> |Host|Shows the OVHcloud server on which your instance was created. This is information inherent to the OVHcloud infrastructure and may be used in communications related to [OVHcloud incidents](https://www.status-ovhcloud.com/).|
+>>
+>> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/general-information/general-information.png){.thumbnail}
+<!-- CP-STEPS-END:viewing-general-information -->
+
+### Creating a database
+
+> [!primary]
+>
+> This step does not apply to the Redis database system.
+
+<!-- CP-STEPS-START:creating-a-database -->
+Click on the tabs below to view each of the **4** steps.
+
+> [!tabs]
+> **Step 1**
+>>
+>> Go to the [Web Cloud Databases](/links/control-panel/web-cloud-databases) page, then select the solution concerned.
+>>
+>> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases.png){.thumbnail}
+>>
+> **Step 2**
+>>
+>> Click on the `Databases`{.action} tab.
+>>
+> **Step 3**
+>>
+>> Click `Add a database`{.action}.
+>>
+>> ![web-cloud-databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/databases/add-database.png){.thumbnail}
+>>
+>> > [!primary]
+>> >
+>> > PostgreSQL schema creation is currently unavailable on Web Cloud Databases servers.
 >>
 > **Step 4**
 >>
->> To complete the activation, follow the instructions to determine the type and version of your Web Cloud Databases server. It will then be accessible from the left column in `Web Cloud Databases`{.action}.
+>> Fill in the fields following the criteria listed. You can create a user directly by ticking the **"Create a user"** box:
+>>
+>> - **Database name** (required): this will be the name of your future database.
+>> - **Username** (only if the `Create a user` box is ticked): the user who will be able to log in to your database and perform queries.
+>> - **Rights** (only if the `Create a user` box is ticked): the permissions associated with the user on the database. For standard usage, select `Administrator`{.action}. The permissions can be modified afterwards.
+>> - **Password**/**Confirm password** (only if the `Create a user` box is ticked): select a password, then confirm it.
+>>
+>> Click `Confirm`{.action}.
+>>
+>> ![web-cloud-databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/databases/add-database-confirmation.png){.thumbnail}
+<!-- CP-STEPS-END:creating-a-database -->
 
-### View general information about the instance
-
-In the services bar on the left-hand side of the [OVHcloud Control Panel](/links/manager), go to the `Web Cloud Databases`{.action} section, then to the instance. Click on the `General information`{.action} tab.
-
-> [!primary]
->
-> The name of the Web Cloud Databases service in your OVHcloud Control Panel contains part of your NIC handle (username), and ends with three figures (001 for the first Web Cloud Databases service installed, 002 for the second, etc.).
->
-
-You can also view important information about your instance. Please take a few moments to ensure that the information displayed is correct, and corresponds to the instructions below.
-
-|Information|Details|
-|---|---|
-|Service status|Mainly shows whether the instance has been rebooted, is in the process of rebooting, or is suspended. Your instance must be rebooted if you need to carry out any actions. |
-|Type|Shows the database system used by the server.|
-|Version|Shows the database system version used by the server. Check that your website is compatible with the version you have chosen.|
-|CPU throttling|Displays the CPU time spent in saturation. Your Web Cloud Databases instance is not limited in terms of CPU, but you must be careful not to overload the CPU of your Web Cloud Databases.|
-|RAM|Shows the RAM available for your instance and indicates RAM overflow. Your Web Cloud Databases instance uses dedicated, guaranteed RAM resources. If required, you can scale the RAM and receive warnings when your RAM usage exceeds the limit.|
-|Infrastructure|Shows the infrastructure that your instance uses. This information relates to the OVHcloud infrastructure.|
-|Datacenter|Shows the data centre where the instance has been created.|
-|Host|Shows the OVHcloud server where your instance is. This information relates to the OVHcloud infrastructure, and we may use it in our communication on [OVHcloud incidents](http://status.ovh.net/).|
-
-![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/general-information/general-information.png){.thumbnail}
-
-### Create a database
+### Creating a user
 
 > [!primary]
 >
 > This step does not apply to the Redis database system.
->
 
-To create your first database on your Web Cloud Databases instance, click on the `Databases`{.action} tab, then on the `Add a database`{.action} button.
+If you created the user at the same time as your database in the previous step, this step is optional. However, a project may require several users with different rights (for example, read/write for one and read-only for another).
 
-![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/databases/add-database.png){.thumbnail}
+If your project does not require an additional user, you can skip to the next step. Otherwise, click on the tabs below to view each of the **4** steps.
 
-In the window that pops up, and at the same time as you create the database, you can choose to:
+<!-- CP-STEPS-START:creating-a-user -->
 
--  **Create a user**: this user will be able to submit requests to your database (such as reading, adding or deleting data).
+> [!tabs]
+> **Step 1**
+>>
+>> Go to the [Web Cloud Databases](/links/control-panel/web-cloud-databases) page, then select the solution concerned.
+>>
+>> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases.png){.thumbnail}
+>>
+> **Step 2**
+>>
+>> Click on the `Users and Rights`{.action} tab.
+>>
+> **Step 3**
+>>
+>> Click `Add a user`{.action}.
+>>
+>> ![web-cloud-databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/users-and-rights/add-user.png){.thumbnail}
+>>
+> **Step 4**
+>>
+>> Enter a "username" and a "password", then click `Confirm`{.action}.
 
-- **Add an authorised IP address**: requests coming from this address will be allowed to access your database.
+If you need to modify an existing user's rights, refer to our guide "[Web Cloud Databases - Modifying a user's rights](/pages/web_cloud/web_cloud_databases/modify_rights_for_users)".
+<!-- CP-STEPS-END:creating-a-user -->
 
-Fill in the information requested depending on what you choose to do, and click `Confirm`{.action}.
-
-|Information|Description|
-|---|---|
-|Database name|This is the name of your future database.|
-|Username|This is the user that can log in to your database and perform requests (optional if the “*Create a user*” box has not been ticked).|
-|Permissions|These are the permissions that will be associated with the user. For standard usage, select `Administrator`{.action} (optional if the “*Create a user*” box has not been ticked).|
-|Password|Select a password, then confirm it (optional if the “*Create a user*” box has not been ticked).|
-|IP/mask|This is the IP address or the IP mask for the server(s) that is/are authorised to access your databases (optional if the “*Add an authorised IP address*” box has not been ticked). |
-
-> [!warning]
->
-> For security reasons, please follow the conditions required when you enter information.
->
-
-![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/databases/add-database-create-user-confirmation.png){.thumbnail}
-
-### Create a user
-
-> [!primary]
->
-> This step does not apply to the Redis database system.
->
-
-If you created a user whilst creating a database in the previous step, this step is optional. However, for more specific projects, you may need several users to be able to access your database. For example, one user associated with a database may need to have read and write permissions, whilst another may need only read permissions.
-
-If you do not need an additional user for your project, you can move straight to the following step. If you do need to create a user in your Web Cloud Databases instance, you can click on the `Users and permissions`{.action} tab, then on the `Add a user`{.action} button.
-
-![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/users-and-rights/add-user.png){.thumbnail}
-
-In the window that pops up, fill in the information requested, and click `Confirm`{.action}.
-
-|Information|Description|
-|---|---|
-|Username|This is the user that can log in to your instance. You can give them permissions on your database in the next step.|
-|Password|Enter a password, then confirm it.|
-
-> [!warning]
->
-> For security reasons, please follow the conditions required when you enter information.
->
-
-![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/users-and-rights/add-user-confirmation.png){.thumbnail}
-
-Once you have created a user, you will need to assign rights that allow them to perform actions on your database (such as reading, adding or deleting data). To do this, click on the cog wheel icon, then `Manage rights`{.action}. On the new page, select the right by clicking on it. For standard usage, select Administrator.
-
-![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/users-and-rights/manage-rights-2.png){.thumbnail}
-
-### Import a database
+### Importing a database
 
 > [!primary]
 >
-> This step applies if you want to import the backup of an existing database. Otherwise, please go to the next step.
->
+> This step applies if you want to import a backup of an existing database. If not, skip to the next step.
 
-There are several methods you can choose from to import a database. There is a tool available in your OVHcloud Control Panel, and we are going to focus on this method. However, you may of course use another method, if you prefer to do so and are familiar with it.
+To import a database, refer to our guide "[Restoring and importing a database to your database server](/pages/web_cloud/web_cloud_databases/restore-import-on-database-server)".
 
-The steps below show how to import a database using the tool available in your OVHcloud Control Panel.
+Several import methods are described there.
 
-#### Step 1: Access the import interface.
+### Authorising an IP address
 
-Go to the `Databases`{.action} tab, click on the cog wheel icon, then `Import a file`{.action}. On the window that opens, tick the `Import a new file`{.action} box, then click `Next`{.action}.
+For your Web Cloud Databases instance to work, you must specify the IPs or IP ranges that are allowed to connect to your databases.
 
-![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/databases/import-file.png){.thumbnail}
+<!-- CP-STEPS-START:authorising-an-ip-address -->
+To do this, click on the tabs below to view each of the **4** steps.
 
-#### Step 2: Select and send the backup file.
+> [!tabs]
+> **Step 1**
+>>
+>> Go to the [Web Cloud Databases](/links/control-panel/web-cloud-databases) page, then select the solution concerned.
+>>
+>> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases.png){.thumbnail}
+>>
+> **Step 2**
+>>
+>> On the page that appears, click on the `Authorised IPs`{.action} tab.
+>>
+>> ![Authorised IPs](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/authorised-ips.png){.thumbnail}
+>>
+> **Step 3**
+>>
+>> Click the `Add an IP address/mask`{.action} button above the table.
+>>
+>> ![Authorised IPs interface](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/authorized-ips/tab-0000-sftp-hosting-enabled.png){.thumbnail}
+>>
+>> > [!success]
+>> >
+>> > If you want to modify an already authorised IP address or range, click the `...`{.action} button to the right of the corresponding line in the table, then click `Edit the whitelist`{.action}.
+>>
+> **Step 4**
+>>
+>> In the window that opens, several fields need to be completed:
+>>
+>> ![Add an IP address or mask](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/authorized-ips/add-an-ip-address-mask-confirmation.png){.thumbnail}
+>>
+>> - `IP/mask *`{.action}: Enter the IP address (e.g. `203.0.113.44`) or IP range (e.g. `203.0.113.0/24` representing all IP addresses from `203.0.113.0` to `203.0.113.255`) that you want to authorise on your Web Cloud Databases solution.
+>> - `Description`{.action} (optional): You can add information about the role of the IP address or range concerned.
+>> - `Databases`{.action}: Tick this box to allow the IP address or range to access the databases on your Web Cloud Databases solution.
+>> - `SFTP`{.action}: Tick this box to allow the IP address or range to access the logs of your Web Cloud Databases solution.
+>>
+>> > [!warning]
+>> >
+>> > It is strongly advised not to tick the `Databases`{.action} box to authorise the IP range `0.0.0.0/0` to access your databases.
+>> >
+>> > This would allow all existing IPv4 addresses to access your databases.
+>>
+>> Once the information is entered, click the `Confirm`{.action} button.
+<!-- CP-STEPS-END:authorising-an-ip-address -->
 
-Enter a filename that will allow you to identify this backup later, if you want to restore it again. Then, next to **File**, select the database backup file from your computer, and click `Send`{.action}. Wait until the interface confirms that the file has been sent successfully, then click `Next`{.action}.
+### Authorising connections from an OVHcloud web hosting plan <a name="trustip"></a>
 
-![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/databases/database-import-new-file-step-2.png){.thumbnail}
+By default, your Web Cloud Databases solution is automatically linked to OVHcloud web hosting plans. If you wish, you can disable access from OVHcloud web hosting plans to your Web Cloud Databases.
 
-#### Step 3: Launch the database importation.
+To do this, refer to the specific cases in our guide "[Web Cloud Databases - How to authorise an IP address?](/pages/web_cloud/web_cloud_databases/authorise_IP)" to enable or disable access from OVHcloud web hosting plans to your Web Cloud Databases.
 
-Finally, choose whether or not the additional options set out below should apply, and click `Confirm`{.action}.
+### Linking your website to the database
 
-|Additional options|Description|
-|---|---|
-|Empty the current database|The content in the database will be deleted entirely, and replaced by the content in your backup.|
-|Send an email once the importation is complete|You will be sent an email notification when the database import is complete.|
+Now that your database is created, one or more users have rights on it, and at least one IP address or OVHcloud web hosting plans have been authorised on your Web Cloud Databases instance, all that remains is to link your website to your database. This step can be done in several ways, depending on the website or CMS (WordPress, Joomla!, etc.) used, and the stage you are at if you are installing a website.
 
-![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/databases/database-import-new-file-step-3-send-email.png){.thumbnail} 
-
-### Authorise an IP address <a name="trustip"></a>
-
-In order for your Web Cloud Databases instance to be accessible, you must enter the IP addresses or ranges that can connect to your database. To do this, click on the `Authorised IPs`{.action} tab, then click `Add an IP address/mask`{.action}.
-
-![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/authorized-ips/add-an-ip-address-mask-2.png){.thumbnail}
-
-In the window that pops up, enter the IP address or mask that you wish to authorise in `IP/mask`{.action} together with a description if you wish. You can then decide if you want to grant access to the databases only, or to the SFTP as well. Finally, click `Confirm`{.action}.
-
-![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/authorized-ips/add-an-ip-address-mask-confirmation.png){.thumbnail}
-
-#### Authorise the connection for an OVHcloud Web Hosting plan <a name="trustip"></a>
-
-By default, your Web Cloud Databases solution is automatically linked to OVHcloud web hosting plans. However, you can disable access to your Web Cloud Databases database for OVHcloud web hosting plans if you wish.
-
-To do this, click on the `authorised IPs`{.action} tab then on the `Access to OVHcloud web hosting plans`{.action} button.
-
-![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/authorized-ips/access-to-ovhcloud-web-hosting.png){.thumbnail}
-
-### Link your website to the database
-
-Now that you have created your database, created one or more users with access to it, and authorised at least one IP address or OVHcloud web hosting plans on your Web Cloud Databases instance, you just need to link your website to your database. You can use several methods to do this, depending on your website, the CMS you are using (WordPress, Joomla! etc.), or the stage you are at if you are setting up a website.
-
-No matter which method you choose to follow, you must have the following five pieces of information to hand, to ensure that you do this successfully:
+<!-- CP-STEPS-START:linking-website-to-database -->
+To do this, you need the following 5 pieces of information:
 
 |Information|Description|
 |---|---|
-|Database name|The name you entered when you created your database. You can view all the databases created in your Web Cloud Databases instance under the `Databases`{.action} tab.|
-|Username|The name of the user you entered when you created the database, or the name of an additional user that you created at a later stage. You can view all the users created in your Web Cloud Databases instance under the `Users and permissions`{.action} tab.|
-|User password|The password associated with the user, which was defined during the previous steps.|
-|Server hostname|The server that needs to be entered for your website to be connected to your database. You can access this information in your Control Panel by going to the `Connections`{.action} section, then the General information tab.|
-|Server port|The port for connecting to your Web Cloud Databases instance, so that your website can connect to your database. You can access this information in your Control Panel by going to the `Connections`{.action} section, then the `General information`{.action} tab.|
+|Database name|The name you defined when creating the database.|
+|Username|The username you defined when creating the database, or any additional user you may have added.|
+|User password|The password linked to the user, which you defined during previous steps.|
+|Server hostname|The server to enter so that your website can connect to your database.|
+|Server port|The connection port to your Web Cloud Databases instance, so that your website can connect to your database.|
+
+To find them, click on the tabs below to view each of the **2** steps.
+
+> [!tabs]
+> **Step 1**
+>>
+>> Go to the [Web Cloud Databases](/links/control-panel/web-cloud-databases) page, then select the solution concerned.
+>>
+>> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases.png){.thumbnail}
+>>
+> **Step 2**
+>>
+>> Retrieve the following connection details:
+>>
+>> - **Server (hostname) and port:** visible in the `General information`{.action} tab, in the `Connection information` section.
+>> - **Username:** visible in the `Users and Rights`{.action} tab.
+>> - **Password:** the password associated with the user. If you have forgotten it, go to the `Users and Rights`{.action} tab, click `...`{.action} to the right of the user concerned, then click `Change password`{.action}.
+>>
+>> > [!warning]
+>> >
+>> > If you change a database user's password, all applications/websites that access this database must be updated accordingly.
 
 > [!warning]
 >
-> The field `Server port`{.action} may not be available in your site configuration. In this case, add this value after the hostname of your server, separated by a *:*. <br><br>
-> For example, for the hostname `zz1111111-002.eu.clouddb.ovh.net` with SQL port `34567`, you will need to enter `zz1111111-002.eu.clouddb.ovh.net:34567` as the host/hostname ("Server hostname").
+> The `port`{.action} field may not be available in your website's configuration. You must add this field after the server hostname, separated by a *:*.
 >
+> For example, for the hostname `aaXXXXX-XXX.eu.clouddb.ovh.net` with SQL port `12345`, you would enter `aaXXXXX-XXX.eu.clouddb.ovh.net:12345` in the "Host" / "Hostname" section.
+<!-- CP-STEPS-END:linking-website-to-database -->
 
-![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/general-information/login-information.png){.thumbnail}
+### Retrieving the logs for your Web Cloud Databases server
 
-### Retrieve your Web Cloud Databases server logs
-
-To access the logs for your Web Cloud Databases solution, please refer to our guide "[Web Cloud Databases - How to retrieve logs](/pages/web_cloud/web_cloud_databases/retrieve-logs)".
+To access the logs for your Web Cloud Databases solution, refer to our guide "[Web Cloud Databases - How to manage logs](/pages/web_cloud/web_cloud_databases/retrieve-logs)".
 
 ## Go further
+
+[Creating databases and users on your database server](/pages/web_cloud/web_cloud_databases/create-db-and-user-on-db-server)
+
+[Connecting to a database on your database server](/pages/web_cloud/web_cloud_databases/connecting-to-database-on-database-server)
+
+[Backing up and exporting a database on your database server](/pages/web_cloud/web_cloud_databases/save-export-on-database-server)
+
+[Restoring and importing a database to your database server](/pages/web_cloud/web_cloud_databases/restore-import-on-database-server)
+
+[Configuring your database server](/pages/web_cloud/web_cloud_databases/configure-database-server)
 
 For specialised services (SEO, development, etc.), contact [OVHcloud partners](/links/partner).
 

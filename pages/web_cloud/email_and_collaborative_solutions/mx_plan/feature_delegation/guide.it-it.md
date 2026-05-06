@@ -17,7 +17,6 @@ La delega offre all'utente di un account email la possibilità di gestire autono
 ## Prerequisiti
 
 - Disporre di una soluzione MX Plan Puoi effettuare questa operazione tramite: un'[offerta di hosting Web Cloud](/links/web/hosting), un [Hosting gratuito 100M](/links/web/domains-free-hosting) o una soluzione MX Plan ordinata separatamente.
-- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager), sezione `Web Cloud`{.action}.
 
 > [!warning]
 >
@@ -29,6 +28,17 @@ La delega offre all'utente di un account email la possibilità di gestire autono
 |![email](images/mxplan-starter-legacy-step1.png){.thumbnail}<br> Il servizio è indicato nel riquadro “Abbonamento”|![email](images/mxplan-starter-new-step1.png){.thumbnail}<br>Nel riquadro "Riepilogo", individua il "Referenza server"|
 |Prosegui nella lettura di questa guida nella sezione "[Procedura](#oldmxplan)"|Consulta la nostra guida "[Consulta il tuo account Exchange dall'interfaccia OWA](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa#modificare-la-password)"|
 
+<!-- CP-NAV-START:web-mx-plan -->
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [MX Plan](/links/control-panel/web-mx-plan)
+- **Percorso di navigazione:** `Web Cloud`{.action} > `MX Plan`{.action} > Seleziona il tuo servizio MX Plan
+
+---
+<!-- CP-NAV-END:web-mx-plan -->
+
 ## Procedura <a name="oldmxplan"></a>
 
 > [!primary]
@@ -36,11 +46,7 @@ La delega offre all'utente di un account email la possibilità di gestire autono
 > La creazione di una delega su un account email lo mostra nello [Spazio Cliente](/links/manager) interessato. Tuttavia, in questa situazione saranno possibili solo le modifiche indicate nella sezione [Obiettivo](#objective) della guida.
 >
 
-1. Accedi allo [Spazio Cliente OVHcloud](/links/manager).
-1. Accedi alla sezione `Web Cloud`{.action}.
-1. Clicca su `MX Plan`{.action}.
-1. Seleziona il dominio.
-1. Per visualizzare la lista degli account email della tua offerta MX Plan, clicca sulla scheda `Email`{.action}.
+Per visualizzare la lista degli account email della tua offerta MX Plan, clicca sulla scheda `Email`{.action}.
 
 ![Delega](images/mxplan-delegation-01.png){.thumbnail}
 
@@ -72,7 +78,7 @@ Inserisci l'identificativo OVHcloud che usufruirà di questa delega e conferma l
 
 Per gestire ogni account email è possibile aggiungere diverse credenziali OVHcloud.
 
-## Per saperne di più
+## Per saperne di più <a name="go-further"></a>
 
 [Iniziare a utilizzare la soluzione MX Plan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities)
 

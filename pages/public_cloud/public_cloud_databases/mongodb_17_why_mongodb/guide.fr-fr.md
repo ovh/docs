@@ -1,5 +1,5 @@
 ---
-title: MongoDB - Why MongoDB?
+title: Pourquoi choisir MongoDB ? (EN)
 excerpt: Discover the main reasons to choose mongoDB as your database engine
 updated: 2025-01-06
 ---

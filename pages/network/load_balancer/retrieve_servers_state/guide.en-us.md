@@ -21,11 +21,20 @@ This tutorial explains how to find out the health status of each server for each
 ## Requirements
 
 - An [OVHcloud Load Balancer](/links/network/load-balancer) offer in your OVHcloud account
-- Access to the [OVHcloud Control Panel](/links/manager)
 - Access to the [OVHcloud API](/links/api)
 - A configured farm
 - A configured front-end
 
+<!-- CP-NAV-START:network-load-balancer -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Load Balancer](/links/control-panel/network-load-balancer)
+- **Navigation path:** `Network`{.action} > `Load Balancer`{.action} > Select your service
+
+---
+<!-- CP-NAV-END:network-load-balancer -->
 ## Instructions
 
 > [!primary]

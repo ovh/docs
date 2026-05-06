@@ -12,29 +12,34 @@ updated: 2025-05-22
 
 ## Obiettivo
 
-OVHcloud **Microsoft 365 apps for business** o **Microsoft 365 apps for entreprise**. La fatturazione è mensile e puoi installare una licenza su 5 PC/Mac, 5 tablet e 5 smartphone.
+OVHcloud **Microsoft 365 apps for business** o **Microsoft 365 apps for Enterprise**. La fatturazione è mensile e puoi installare una licenza su 5 PC/Mac, 5 tablet e 5 smartphone.
 
-Le tue licenze Microsoft 365 sono raggruppate in un gruppo chiamato anche "Service". Un gruppo di licenze Apps for business può contenere al massimo 300 licenze, un gruppo di licenze Apps for entreprise è illimitato.
+Le tue licenze Microsoft 365 sono raggruppate in un gruppo chiamato anche "Service". Un gruppo di licenze Apps for business può contenere al massimo 300 licenze, un gruppo di licenze Apps for Enterprise è illimitato.
 
 Ecco l'elenco dei software inclusi nella suite:
 
-- Licenze Apps for business: Excel, Word, PowerPoint, Outlook, Note, Publisher.
-- Licenze Apps for entreprise: Excel, Word, PowerPoint, Outlook, Note, Publisher, Access.
+- Licenze Apps for business: Excel, Word, PowerPoint, Outlook, OneNote, Publisher.
+- Licenze Apps for Enterprise: Excel, Word, PowerPoint, Outlook, OneNote, Publisher, Access.
 
 **Come attivare una licenza Microsoft 365 e gestirlo nello Spazio Cliente OVHcloud**
 
 ## Prerequisiti
 
-- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
+<!-- CP-NAV-START:web-microsoft-365 -->
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [Microsoft 365](/links/control-panel/web-microsoft-365)
+- **Percorso di navigazione:** `Web Cloud`{.action} > `Microsoft 365`{.action}
+
+---
+<!-- CP-NAV-END:web-microsoft-365 -->
 
 ## Procedura
 
 ### Ordina una licenza
 
-1. Accedi alla pagina commerciale [Microsoft 365 OVHcloud](/links/web/ms365) o dallo [Spazio Cliente OVHcloud](/links/manager):
-    - Accedi alla sezione `Web Cloud`{.action}.
-    - Nella sezione `MICROSOFT`, clicca su `Microsoft 365`{.action}.
-    - Clicca su `Ordina`{.action}.
 1. Scegli tra le offerte disponibili, "Apps for Business" e "Apps for Enterprise".
 1. Definisci la frequenza di rinnovo del gruppo di licenze.
 1. Definisci il numero di licenze desiderate e completa l’ordine.
@@ -43,16 +48,9 @@ Ecco l'elenco dei software inclusi nella suite:
 
 Per attivare la licenza ordinata:
 
-1. Accedi allo [Spazio Cliente OVHcloud](/links/manager).
-1. Accedi alla sezione `Web Cloud`{.action}.
-1. Nella sezione `MICROSOFT`, clicca su `Microsoft 365`{.action}.
-1. Selezionare il servizio Microsoft 365 appropriato.
-1. Clicca sulla scheda `Licenze`{.action}.
-1. Clicca sul pulsante `⁝`{.action} sulla linea della licenza per cui vuoi attivare il servizio, poi su `Modifica l’account`{.action}.
-
     ![email](images/Outlook-cps1-01.png){.thumbnail .w-500}
 
-1. Inserisci le informazioni relative all’utente della licenza e clicca su `Conferma`{.action}.
+Inserisci le informazioni relative all’utente della licenza e clicca su `Conferma`{.action}.
 
     ![email](images/Outlook-cps1-02.png){.thumbnail .w-500}
 
@@ -76,26 +74,11 @@ Per installare la licenza su più macchine, è sufficiente riprodurre [step prec
 
 Per impostare in autonomia la password della licenza:
 
-1. Accedi allo [Spazio Cliente OVHcloud](/links/manager).
-1. Accedi alla sezione `Web Cloud`{.action}.
-1. Nella sezione `MICROSOFT`, clicca su `Microsoft 365`{.action}.
-1. Selezionare il servizio Microsoft 365 appropriato.
-1. Clicca sulla scheda `Licenze`{.action}.
-1. Clicca sul pulsante `⁝`{.action} a destra della licenza in questione e poi su `Modifica la password`{.action}.
-
 ![email](images/Outlook-cps1-03.png){.thumbnail .w-500}
 
 ### Aggiungere una licenza a un gruppo esistente
 
 Per aggiungere una o più licenze al gruppo di licenze esistente:
-
-1. Accedi allo [Spazio Cliente OVHcloud](/links/manager).
-1. Accedi alla sezione `Web Cloud`{.action}.
-1. Nella sezione `MICROSOFT`, clicca su `Microsoft 365`{.action}.
-1. Selezionare il servizio Microsoft 365 appropriato.
-1. Clicca sulla scheda `Licenze`{.action}.
-1. Clicca sul pulsante `Ordina più licenze`{.action} a destra.
-1. Determina il **numero** e il **tipo di licenza** che vuoi ordinare, poi clicca su `Conferma`{.action}.
 
 ![email](images/Outlook-cps1-05.png){.thumbnail .w-500}
 
@@ -125,9 +108,9 @@ Per disattivare il gruppo di licenze CSP1 di Microsoft Office 365:
 >
 > I consumi del mese in corso saranno fatturati alla fine di quest'ultimo.
 
-## Per saperne di più
+## Per saperne di più <a name="go-further"></a>
 
-[Utilizza il desktop remoto con Microsoft 365 aps](/pages/web_cloud/email_and_collaborative_solutions/microsoft_office/office_proplus)
+[Utilizza il desktop remoto con Microsoft 365 apps](/pages/web_cloud/email_and_collaborative_solutions/microsoft_office/office_proplus)
 
 Per prestazioni specializzate (referenziamento, sviluppo, ecc.), contatta i [partner OVHcloud](/links/partner).
 

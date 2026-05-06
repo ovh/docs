@@ -31,6 +31,17 @@ Os endereços de e-mail do serviço E-mail Pro podem ser configurados em vários
 - Ter a aplicação Gmail no seu dispositivo. Pode instalá-la a partir da Google Play Store.
 - Dispor de credenciais relativas ao endereço de e-mail que pretende configurar.
 
+<!-- CP-NAV-START:web-email-pro -->
+---
+
+### Acesso à Área de Cliente OVHcloud
+
+- **Ligação direta:** [E-mail Pro](/links/control-panel/web-email-pro)
+- **Caminho de navegação:** `Web Cloud`{.action} > `E-mail Pro`{.action} > Selecione a sua plataforma
+
+---
+<!-- CP-NAV-END:web-email-pro -->
+
 > [!primary]
 >
 > Esta documentação foi feita a partir de um dispositivo que utiliza a versão 13 do Android.
@@ -43,12 +54,7 @@ Os endereços de e-mail do serviço E-mail Pro podem ser configurados em vários
 >
 > Neste exemplo, utilizamos a menção servidor: pro?.mail.ovh.net. Deverá substituir o « ? » pelo número que identifica o servidor do seu serviço E-mail Pro.
 >
-> 1. Aceda à [Área de Cliente OVHcloud](/links/manager).
-> 1. Aceda à secção `Web Cloud`{.action}.
-> 1. Clique em `Email Pro`{.action}.
-> 1. Selecione a plataforma em causa.
-> 1. O nome do servidor está visível na tabela **Ligação** do separador `Informações gerais`{.action}.
->
+> Clique [neste link](/links/control-panel/web-email-pro) para aceder à secção `E-mail Pro`{.action}. O nome do servidor é apresentado na zona **Ligação** do separador `Informações gerais`{.action}.
 
 No ecrã inicial do seu dispositivo, aceda à aplicação `Gmail`{.action}.
 

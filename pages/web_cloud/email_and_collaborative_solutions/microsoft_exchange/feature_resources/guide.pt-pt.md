@@ -1,6 +1,6 @@
 ---
 title: 'Utilização das contas de recurso'
-excerpt: Insert Here A Short Desc
+excerpt: 'Saiba como criar e gerir contas de recurso com o Exchange'
 updated: 2025-04-28
 ---
 
@@ -13,16 +13,20 @@ Esta função colaborativa do Exchange permite criar endereços de e-mail dedica
 ## Requisitos
 
 - Dispor de uma [solução Exchange OVHcloud](/links/web/emails-hosted-exchange) já configurada
-- Ter acesso à [Área de Cliente OVHcloud](/links/manager)
 - Dispor de dados de acesso para a(s) conta(s) de e-mail com acesso ao recurso.
 
-## Instruções
+<!-- CP-NAV-START:web-exchange -->
+---
 
-1. Aceda à [Área de Cliente OVHcloud](/links/manager).
-1. Aceda à secção `Web Cloud`{.action}.
-1. Na rubrica `MICROSOFT`, clique em `Exchange`{.action}.
-1. Selecione a plataforma em causa.
-1. Clique no separador `Mais +`{.action} e, a seguir, em `Recursos`{.action}.
+### Acesso à Área de Cliente OVHcloud
+
+- **Ligação direta:** [Exchange](/links/control-panel/web-exchange)
+- **Caminho de navegação:** `Web Cloud`{.action} > `Exchange`{.action} > Selecione a sua plataforma
+
+---
+<!-- CP-NAV-END:web-exchange -->
+
+## Instruções
 
 ### 1 - criar um recurso
 
@@ -52,7 +56,7 @@ Os seus recursos podem ser geridos a partir da tabela do separador "Recursos". C
 
 > [!primary]
 >
-Consulte também o nosso manual sobre [Partilha de calendários a partir da interface OWA](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/owa_calendar_sharing).
+> Consulte também o nosso manual sobre [Partilha de calendários a partir da interface OWA](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/owa_calendar_sharing).
 >
 
 Ligue-se à sua conta Exchange através do [webmail OVHcloud](/links/web/email). Migre para a interface "Calendário" clicando no "aplicador" no canto superior esquerdo e selecionando o ícone `Calendário`{.action}.
@@ -115,7 +119,7 @@ Depois de criar o evento (ao clicar em `Enviar`{.action} para a barra de menu su
 
 ![mensagem de recusa](images/exchange-resources-step8.png){.thumbnail}
 
-## Quer saber mais?
+## Quer saber mais? <a name="go-further"></a>
 
 [Consultar a sua conta Exchange a partir da interface OWA](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa)
 

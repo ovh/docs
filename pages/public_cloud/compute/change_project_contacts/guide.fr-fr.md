@@ -14,14 +14,24 @@ La modification de ces contacts permet de dissocier la gestion technique de la g
 ## Prérequis
 
 - Avoir un projet [Public Cloud](/links/public-cloud/public-cloud) dans votre compte OVHcloud
-- Être connecté à votre [espace client OVHcloud](/links/manager)
 - Contacts administrateur et facturation dans la même filiale OVHcloud
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Projets Public Cloud](/links/control-panel/publiccloud-projects)
+- **Pour accéder à vos services :** `Public Cloud`{.action} > Sélectionnez votre projet
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## En pratique
 
 ### Modifier les contacts
 
-Connectez-vous à [l’espace client OVHcloud](/links/manager), rendez-vous dans la section `Public Cloud`{.action} et sélectionnez le projet Public Cloud concerné. Cliquez sur `Contacts & droits`{.action} dans le menu de gauche sous **Paramètres**.
+Cliquez sur `Contacts & droits`{.action} dans le menu de gauche sous **Paramètres**.
 
 Cette page vous permet de voir les contacts administrateur et facturation associés à votre projet.
 

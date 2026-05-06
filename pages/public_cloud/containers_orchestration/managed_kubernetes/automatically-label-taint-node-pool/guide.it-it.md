@@ -1,7 +1,7 @@
 ---
 title: Adding Labels & Taint on Node Pool (Node Pool template)
 excerpt: 'Find out how to add labels, annotations and taints on Nodes thanks to Node Pools template on OVHcloud Managed Kubernetes'
-updated: 2023-06-06
+updated: 2026-02-25
 ---
 
 <style>
@@ -44,7 +44,7 @@ Thanks to the `Node Pool's template`, you will:
 ## Requirements
 
 - a [Public Cloud project](/links/public-cloud/public-cloud) in your OVHcloud account
-- access to the [OVHcloud Control Panel](/links/manager)
+
 
 ## Instructions
 
@@ -70,7 +70,7 @@ Because, behind the scenes, the "OVH Terraform provider" is doing requests to OV
 
 In order to retrieve this necessary information, please follow our [First steps with the OVHcloud APIs](/pages/manage_and_operate/api/first-steps) tutorial.
 
-Specifically, you have to generate these credentials via the [OVHcloud token generation page](https://api.ovh.com/createToken/?GET=/*&POST=/*&PUT=/*&DELETE=/*) with the following rights:
+Specifically, you have to generate these credentials via the [OVHcloud token generation page](https://auth.eu.ovhcloud.com/api/createToken?GET=/*&POST=/*&PUT=/*&DELETE=/*) with the following rights:
 
 ![OVHcloud API rights](images/api-rights.png){.thumbnail}
 
@@ -447,7 +447,7 @@ Let's display our node. We should have 1 node running:
 ```bash
 $ kubectl get nodes
 NAME                       STATUS   ROLES    AGE     VERSION
-my-node-pool-node-5781fa   Ready    <none>   7m55s   v1.22.9
+my-node-pool-node-5781fa   Ready    <none>   7m55s   v1.34.0
 ```
 
 Check that the label, annotation and taint you defined are well propageted to the node:

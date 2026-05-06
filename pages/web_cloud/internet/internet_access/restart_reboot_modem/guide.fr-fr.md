@@ -13,7 +13,16 @@ En cas de difficultés avec votre accès à Internet, il est parfois nécessaire
 ## Prérequis
 
 - Être à proximité de votre box pour effectuer les actions.
-- Être connecté à l’[espace client OVHcloud](/links/manager), partie `Accès Internet`{.action}.
+<!-- CP-NAV-START:telecom-xdsl-fttx -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Accès Internet](/links/control-panel/telecom-xdsl-fttx)
+- **Pour accéder à vos services :** `Télécom`{.action} > `Offres Internet`{.action} > Sélectionnez votre accès
+
+---
+<!-- CP-NAV-END:telecom-xdsl-fttx -->
 
 ## En pratique
 
@@ -35,7 +44,7 @@ La manipulation est différente selon le modèle de votre box. Rapprochez-vous d
 
 Le redémarrage électrique de votre box consiste simplement à mettre celle-ci hors tension, puis à l'alimenter de nouveau. Pour cela, deux solutions sont disponibles :
 
-- Débrancher puis rebrancher électriquement la box;
+- Débrancher puis rebrancher électriquement la box ;
 - Actionner le bouton ON/OFF à l'arrière comme indiqué ci-dessous.
 
 ![Redémarrage TG788vn et TG788vn V2](images/tg788_power.png){.thumbnail}
@@ -44,7 +53,7 @@ Le redémarrage électrique de votre box consiste simplement à mettre celle-ci 
 
 Le redémarrage électrique de votre box consiste simplement à mettre celle-ci hors tension, puis à l'alimenter de nouveau. Pour cela, deux solutions sont disponibles :
 
-- Débrancher puis rebrancher électriquement la box;
+- Débrancher puis rebrancher électriquement la box ;
 - Actionner le bouton ON/OFF à l'arrière comme indiqué ci-dessous.
 
 ![Redémarrage TG789vn](images/tg789n_power.png){.thumbnail}
@@ -53,7 +62,7 @@ Le redémarrage électrique de votre box consiste simplement à mettre celle-ci 
 
 Le redémarrage électrique de votre box consiste simplement à mettre celle-ci hors tension, puis à l'alimenter de nouveau. Pour cela, deux solutions sont disponibles :
 
-- Débrancher puis rebrancher électriquement la box;
+- Débrancher puis rebrancher électriquement la box ;
 - Actionner le bouton ON/OFF à l'arrière comme indiqué ci-dessous.
 
 ![Redémarrage TG789vn](images/tg799_power.png){.thumbnail}
@@ -62,7 +71,7 @@ Le redémarrage électrique de votre box consiste simplement à mettre celle-ci 
 
 Le redémarrage électrique de votre box consiste simplement à mettre celle-ci hors tension, puis à l'alimenter de nouveau. Pour cela, deux solutions sont disponibles :
 
-- Débrancher puis rebrancher électriquement la box;
+- Débrancher puis rebrancher électriquement la box ;
 - Actionner le bouton ON/OFF à l'arrière comme indiqué ci-dessous.
 
 ![Redémarrage Zyxel DX3301-T0](images/zyxeldx3301t0-reboot.png){.thumbnail}
@@ -71,7 +80,7 @@ Le redémarrage électrique de votre box consiste simplement à mettre celle-ci 
 
 Le redémarrage électrique de votre box consiste simplement à mettre celle-ci hors tension, puis à l'alimenter de nouveau. Pour cela, deux solutions sont disponibles :
 
-- Débrancher puis rebrancher électriquement la box;
+- Débrancher puis rebrancher électriquement la box ;
 - Actionner le bouton ON/OFF à l'arrière comme indiqué ci-dessous.
 
 ![Redémarrage Zyxel VMG8924-B10D](images/zyxelb10d_power.jpg){.thumbnail}
@@ -80,7 +89,7 @@ Le redémarrage électrique de votre box consiste simplement à mettre celle-ci 
 
 Le redémarrage électrique de votre box consiste simplement à mettre celle-ci hors tension, puis à l'alimenter de nouveau. Pour cela, deux solutions sont disponibles :
 
-- Débrancher puis rebrancher électriquement la box;
+- Débrancher puis rebrancher électriquement la box ;
 - Actionner le bouton ON/OFF à l'arrière comme indiqué ci-dessous.
 
 ![Redémarrage Zyxel VMG8823-B50B](images/zyxelb50b_power.jpg){.thumbnail}
@@ -89,7 +98,7 @@ Le redémarrage électrique de votre box consiste simplement à mettre celle-ci 
 
 Le redémarrage électrique de votre box consiste simplement à mettre celle-ci hors tension, puis à l'alimenter de nouveau. Pour cela, deux solutions sont disponibles :
 
-- Débrancher puis rebrancher électriquement la box;
+- Débrancher puis rebrancher électriquement la box ;
 - Actionner le bouton ON/OFF à l'arrière comme indiqué ci-dessous.
 
 ![Redémarrage Zyxel VMG8825-T50](images/zyxelVMG8825T50_power.jpg){.thumbnail}
@@ -98,7 +107,7 @@ Le redémarrage électrique de votre box consiste simplement à mettre celle-ci 
 
 Le redémarrage électrique de votre box consiste simplement à mettre celle-ci hors tension, puis à l'alimenter de nouveau. Pour cela, deux solutions sont disponibles :
 
-- Débrancher puis rebrancher électriquement la box;
+- Débrancher puis rebrancher électriquement la box ;
 - Actionner le bouton ON/OFF à l'arrière comme indiqué ci-dessous.
 
 ![Redémarrage Zyxel VMG8623-T50B](images/zyxelVMG8623T50B_power.jpg){.thumbnail}
@@ -115,7 +124,9 @@ Le redémarrage électrique de votre box consiste simplement à mettre celle-ci 
 
 Il existe deux possibilités pour réinitialiser votre box OVHcloud :
 
-- **Depuis l'[espace client](/links/manager)** : Positionnez-vous sur l'onglet `Mon modem`{.action} de l'accès à Internet concerné, puis utilisez le bouton `Réinitialiser le modem`{.action}. Cette solution est commune à tous les modèles de box. Si nécessaire, reportez-vous à notre guide « [Configurer sa box à partir de l'espace client OVHcloud](/pages/web_cloud/internet/internet_access/configuration_du_modem_a_partir_de_votre_espace_client#22-configuration-generale) » ;
+<!-- CP-STEPS-START:reinitialiser-via-espace-client -->
+- **Depuis l'[espace client](/links/control-panel/telecom-xdsl-fttx)** : Positionnez-vous sur l'onglet `Mon modem`{.action} de l'accès à Internet concerné, puis utilisez le bouton `Réinitialiser le modem`{.action}. Cette solution est commune à tous les modèles de box. Si nécessaire, reportez-vous à notre guide « [Configurer sa box à partir de l'espace client OVHcloud](/pages/web_cloud/internet/internet_access/configuration_du_modem_a_partir_de_votre_espace_client#22-configuration-generale) » ;
+<!-- CP-STEPS-END:reinitialiser-via-espace-client -->
 
 - **Par le biais d'une manipulation manuelle sur votre box** : La marche à suivre est différente selon le modèle de votre box. Rapprochez-vous de celle-ci afin de pouvoir l'identifier, en vous aidant du tableau ci-dessous. Puis poursuivez vers le modèle concerné.
 

@@ -1,6 +1,6 @@
 ---
-title: 'Virtuelle MAC-Adresse einer Additional IP zuweisen'
-excerpt: 'Erfahren Sie hier, wie Sie eine virtuelle MAC-Adresse erstellen und mit einer Additional IP verbinden'
+title: "Virtuelle MAC-Adresse auf einem Dedicated Server zuweisen"
+excerpt: "Erstellen Sie eine virtuelle MAC-Adresse und weisen Sie sie einer Additional IP für transparentes VM-Networking auf Dedicated Servern zu."
 updated: 2025-05-16
 ---
 
@@ -12,10 +12,19 @@ Bei OVHcloud können Sie eine virtuelle MAC-Adresse mit einer IP-Adresse verbind
 
 ## Voraussetzungen
 
-- Sie haben einen [Dedicated Server](/links/bare-metal/bare-metal) in Ihrem Kunden-Account, der [virtuelle MACs unterstützt](/pages/bare_metal_cloud/dedicated_servers/network_support_virtual_mac).
+- Sie haben einen [Dedicated Server](/links/bare-metal/bare-metal) in Ihrem Kunden-Account. Ihr Server muss virtuelle MAC-Adressen unterstützen. Überprüfen Sie dies mithilfe [unserer Anleitung](/pages/bare_metal_cloud/dedicated_servers/network_support_virtual_mac).
 - Sie verfügen über eine [Additional IP](/links/network/additional-ip).
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager) oder die [OVHcloud API](/links/api).
-- Ihr Server muss virtuelle MAC-Adressen unterstützen. Überprüfen Sie dies mithilfe [unserer Anleitung](/pages/bare_metal_cloud/dedicated_servers/network_support_virtual_mac).
+
+<!-- CP-NAV-START:network-public-ip -->
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direkter Link:** [Public IP](/links/control-panel/network-public-ip)
+- **Navigationspfad:** `Network`{.action} > `Öffentliche IP`{.action}
+
+---
+<!-- CP-NAV-END:network-public-ip -->
 
 > [!warning]
 > - Diese Funktion kann nur eingeschränkt oder nicht verfügbar sein, falls ein Dedicated Server der [**Eco** Produktlinie](/links/bare-metal/eco-about) eingesetzt wird. Weitere Informationen finden Sie auf der [Vergleichsseite](/links/bare-metal/eco-compare).
@@ -38,15 +47,13 @@ Bei OVHcloud können Sie eine virtuelle MAC-Adresse mit einer IP-Adresse verbind
 
 #### Über das OVHcloud Kundencenter
 
-Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein, klicken Sie auf `Network`{.action} in der linken Seitenleiste und dann auf `Öffentliche IP-Adressen`{.action}.
-
 Klicken Sie auf den Tab `Additional IP`{.action}.
 
-![manage IPs](images/manageIPs2022.png){.thumbnail}
+![Tab "Additional IP" im Kundencenter](images/manageIPs2022.png){.thumbnail}
 
 Suchen Sie nun in der Liste nach Ihrer Additional IP (oder Ihrem Block) und klicken Sie auf den Button `...`{.action}, um die Optionen anzuzeigen.
 
-![IP](images/addvmac.png){.thumbnail}
+![Optionsmenü für Additional IP-Adresse](images/addvmac.png){.thumbnail}
 
 Wenn das Dialogfeld “Virtuelle MAC-Adresse hinzufügen” erscheint, wählen Sie einen Typ in der Drop-down-Liste aus, geben Sie den Namen einer virtuellen Maschine ein und klicken Sie anschließend auf `Bestätigen`{.action}.
 
@@ -57,7 +64,7 @@ Wenn das Dialogfeld “Virtuelle MAC-Adresse hinzufügen” erscheint, wählen S
 > **Name der virtuellen Maschine**: Das ist der gewünschte Name für die virtuelle MAC-Adresse, damit das IP/MAC-Paar später einfacher gefunden werden kann.
 >
 
-![Additional IP](images/addvmac2.png){.thumbnail}
+![Dialog "Virtuelle MAC hinzufügen" mit Typ und VM-Name](images/addvmac2.png){.thumbnail}
 
 > [!primary]
 >
@@ -103,5 +110,7 @@ Der Block wird nicht verschoben.
 Beispiel: Wenn Sie versuchen, einen Block mit 4 IPs zu verschieben, wobei verschiedene vMACs an einen Server mit bereits 30 vMACs angehängt sind, wird der Block nicht verschoben, da die Gesamtanzahl der vMACs die erlaubten 32 vMACs übersteigen würde.
 
 ## Weiterführende Informationen
+
+- [Dedicated Server - IP-Aliasing konfigurieren](/pages/bare_metal_cloud/dedicated_servers/network_ipaliasing)
 
 Treten Sie unserer [User Community](/links/community) bei.

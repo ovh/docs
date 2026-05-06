@@ -1,11 +1,11 @@
 ---
 title: Object Storage - Gérer un bucket Object Storage avec Terraform
-updated: 2025-10-16
+updated: 2026-03-06
 ---
 
 ## Objectif
 
-Ce tutoriel va vous permettre d'automatiser et d'orchestrer des actions pour utiliser l'[Object Storage](/pages/storage_and_backup/object_storage/s3_getting_started_with_object_storage) - S3* API avec Terraform. Terraform est un outil open source permettant d'orchestrer la provision et la mise à disposition des ressources.
+Ce tutoriel vous montre comment utiliser l'API compatible [Object Storage](/pages/storage_and_backup/object_storage/s3_getting_started_with_object_storage) - S3<sup>1</sup> avec Terraform. Terraform est un outil open source permettant d'orchestrer la provision et la mise à disposition des ressources.
 
 ## Prérequis
 
@@ -14,7 +14,7 @@ Ce tutoriel va vous permettre d'automatiser et d'orchestrer des actions pour uti
 - Un [projet Public Cloud](/links/public-cloud/public-cloud) dans votre compte OVHcloud.
 - OVHcloud fournit un [Terraform provider](https://registry.terraform.io/providers/ovh/ovh/latest) qui est disponible dans le registre officiel de Terraform. Vous devez avoir installé une version >= 2.0. Vous pouvez suivre le guide [Comment utiliser Terraform sur le Public Cloud OVHcloud](/pages/public_cloud/public_cloud_cross_functional/how_to_use_terraform).
 
-## Obtenir des informations sur vos jetons cluster/API
+## Obtenir des informations sur vos jetons API
 
 Le « provider OVH » doit être configuré avec un ensemble d'informations d'identification :
 
@@ -62,28 +62,28 @@ terraform {
 
 provider "ovh" {
   endpoint           = "ovh-eu"
-  application_key    = "<your_access_key>"
-  application_secret = "<your_application_secret>"
-  consumer_key       = "<your_consumer_key>"
+  application_key    = "<application_key>"
+  application_secret = "<application_secret>"
+  consumer_key       = "<consumer_key>"
 }
 ```
 
 Ici, nous avons défini le point de terminaison `ovh-eu` parce que nous voulons appeler l'API OVHcloud Europe, mais d'autres points de terminaison existent, en fonction de vos besoins :
 
-- `ovh-eu` pour OVHcloud Europe API
-- `ovh-us` pour OVHcloud US API
-- `ovh-ca` pour OVHcloud North-America API
+- `ovh-eu` pour l'API OVHcloud Europe
+- `ovh-us` pour l'API OVHcloud US
+- `ovh-ca` pour l'API OVHcloud Amérique du Nord
 
 ### Créer un bucket
 
-Vous pouvez créer un fichier nommé 'object_storage_simple.tf' et écrire ce qui suit :
+Vous pouvez créer un fichier nommé `object_storage_simple.tf` et écrire ce qui suit :
 
 ```python
 # Créer un bucket Object Storage
-resource "ovh_cloud_project_storage" "my-bucket" {
-  service_name = "my_service_name" # Remplacer par votre OVHcloud project ID
-  region_name = "GRA" # Remplacer par la région voulue en majuscule.
-  name = "object-storage-simple"
+resource "ovh_cloud_project_storage" "my_bucket" {
+  service_name = "<service_name>" # Remplacer par votre OVHcloud project ID
+  region_name  = "GRA" # Remplacer par la région voulue en majuscule.
+  name         = "object-storage-simple"
   versioning = {
     status = "enabled"
   }
@@ -118,4 +118,4 @@ Si vous avez besoin d'une formation ou d'une assistance technique pour la mise e
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).
 
-**\*** : S3 est une marque déposée appartenant à Amazon Technologies, Inc. Les services de OVHcloud ne sont pas sponsorisés, approuvés, ou affiliés de quelque manière que ce soit.
+<sup>1</sup> : S3 est une marque déposée appartenant à Amazon Technologies, Inc. Les services de OVHcloud ne sont pas sponsorisés, approuvés, ou affiliés de quelque manière que ce soit.

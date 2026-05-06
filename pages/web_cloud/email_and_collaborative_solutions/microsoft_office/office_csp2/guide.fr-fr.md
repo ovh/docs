@@ -12,8 +12,8 @@ Office 365 Revendeurs (CSP2) est un service vous permettant de bénéficier de p
 
 ## Prérequis
 
-- Être connecté à l'[espace client OVHcloud](/links/manager)
-- Disposer d’un [MPN ID](https://learn.microsoft.com/partner-center/mpn-create-a-partner-center-account) (Microsoft Partner Network IDentifiant) 
+- Disposer d’un [compte client OVHcloud](/links/create-ovhcloud-account).
+- Disposer d’un [MPN ID](https://learn.microsoft.com/partner-center/mpn-create-a-partner-center-account) (Microsoft Partner Network IDentifiant).
 - Être inscrit au programme CSP (Cloud Solution Provider) de Microsoft en tant que revendeur indirect dans la région où vous exercez (par exemple : « UE » pour l’Europe)
 
 > [!warning]
@@ -29,11 +29,20 @@ Pour vous inscrire ensuite en tant que revendeur indirect, nous vous invitons à
 
 Le MPN ID vous permettra d'obtenir un cashback sur les abonnements que vous commanderez via l'espace client OVHcloud. Ce cashback est soumis à des règles définies par Microsoft, en fonction des volumes d'abonnements que vous générerez.
 
+<!-- CP-NAV-START:web-microsoft-365 -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Microsoft 365](/links/control-panel/web-microsoft-365)
+- **Pour accéder à vos services :** `Web Cloud`{.action} > `Microsoft 365`{.action}
+
+---
+<!-- CP-NAV-END:web-microsoft-365 -->
+
 ## En pratique
 
 ### Commander un service Office 365 Revendeurs
-
-Pour commander un service Office 365 Revendeurs, rendez-vous dans votre [espace client OVHcloud](/links/manager). Une fois connecté, sélectionnez `Sunrise`{.action} dans le bandeau supérieur puis cliquez sur `Office 365 Revendeurs`{.action}.
 
 - *Facultatif* : vous pouvez définir un **sous-domaine personnalisé** lors de la création d'une nouvelle plateforme en cochant la case prévue à cet effet (sous réserve des noms disponibles).
 - Saisissez votre MPN ID préalablement créé auprès de Microsoft.
@@ -53,9 +62,7 @@ Pour commander un service Office 365 Revendeurs, rendez-vous dans votre [espace 
 
 ### Gérer votre service Office 365 Revendeur
 
-Une fois le service Office 365 créé et disponible, vous pouvez le gérer depuis votre [espace client OVHcloud](/links/manager).
-
-Pour cela, rendez-vous dans la section `Sunrise`{.action}. Dans le menu de gauche, choisissez `Office 365 Revendeurs`{.action} puis sélectionnez le service.
+Une fois le service Office 365 créé et disponible, vous pouvez le gérer depuis votre espace client OVHcloud. Sélectionnez le service concerné.
 
 Les informations suivantes apparaissent:
 

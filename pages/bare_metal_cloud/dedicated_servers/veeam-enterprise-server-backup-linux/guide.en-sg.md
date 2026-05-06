@@ -1,6 +1,6 @@
 ---
-title: Backing up a Bare Metal Linux Server with Veeam Enterprise
-excerpt: Learn how to back up your Bare Metal Linux Server using Veeam Backup and Replication (Enterprise)
+title: "Back up a Bare Metal Linux Server with Veeam Enterprise"
+excerpt: "Back up your Bare Metal Linux server using Veeam Backup and Replication Enterprise with agent-based protection."
 updated: 2024-04-05
 ---
 
@@ -88,5 +88,9 @@ Once the job is complete, you will have created your backup.
 For information about restoring a Bare Metal Server, please check out our [Restoring a Bare Metal Server with Veeam Enterprise](/pages/bare_metal_cloud/dedicated_servers/veeam-enterprise-server-restore) guide.
 
 ## Go further
+
+[Getting Started with a Dedicated Server](/pages/bare_metal_cloud/dedicated_servers/getting-started-with-dedicated-server)
+
+[Activating and Using Rescue Mode](/pages/bare_metal_cloud/dedicated_servers/rescue_mode)
 
 Join our [community of users](/links/community).

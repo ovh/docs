@@ -1,13 +1,15 @@
 ---
-title: Intégration CTI de la téléphonie OVHcloud aux CRM et ERP - exemple avec SugarCRM
-excerpt: Ce guide montre un exemple de remontée de fiche avec le CRM SugarCRM
+title: "Intégration CTI de la téléphonie OVHcloud aux CRM et ERP - exemple avec SugarCRM"
+excerpt: "Ce guide montre un exemple de remontée de fiche avec le CRM SugarCRM"
 updated: 2018-03-26
 flag: hidden
 ---
 
 ## Objectif
 
-Ce guide montre un exemple de remontée de fiche avec le CRM [SugarCRM](http://www.sugarcrm.com/fr). Il peut servir d'exemple pour le couplage avec d'autres logiciels.
+Ce guide montre un exemple de remontée de fiche avec le CRM [SugarCRM](https://www.sugarcrm.com/fr/). Il peut servir d'exemple pour le couplage avec d'autres logiciels.
+
+**Ce guide vous montre comment intégrer la téléphonie OVHcloud avec le CRM SugarCRM pour réaliser une remontée de fiche automatique.**
 
 ## Définitions
 
@@ -24,11 +26,11 @@ Ce guide montre un exemple de remontée de fiche avec le CRM [SugarCRM](http://w
 ## Contexte
 
 De nombreuses entreprises utilisent des logiciels tels que les CRM et ERP pour gérer les données de leurs contacts : clients, fournisseurs,...
-Avec les fonctionnalités CTI d'OVHcloud, il est possible de coupler la téléphonie avec les logiciels de gestion afin notamment de gagner en rapidité. L'usage le plus courant est la remontée de fiche, nous allons expliquer dans ce guide comment récupérer le numéro de l'appelant pour lancer automatiquement une recherche de contact dans le CRM SugarCRM.
+Avec les fonctionnalités CTI d'OVHcloud, vous pouvez coupler la téléphonie avec les logiciels de gestion afin notamment de gagner en rapidité. L'usage le plus courant est la remontée de fiche, nous allons expliquer dans ce guide comment récupérer le numéro de l'appelant pour lancer automatiquement une recherche de contact dans le CRM SugarCRM.
 
 ## Descriptif technique du fonctionnement
 
-- Création d'un token pour récupérer tous les évenements d'une ligne téléphonique
+- Création d'un token pour récupérer tous les événements d'une ligne téléphonique
 - Réglage du poste informatique pour lier le token de la ligne et le CRM
 - Déclenchement d'un événement lors d'un appel sur la ligne
 - Ouverture d'une recherche dans le CRM pour tous les événements d'appels entrants
@@ -73,7 +75,7 @@ Pour récupérer votre *serviceName* vous pouvez utiliser :
 > @api {v1} /telephony GET /telephony/{billingAccount}/service
 > 
 
-Exécutez la requete *POST* et en retour vous recevez votre token pour votre ligne. Par exemple : "XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX"
+Exécutez la requête *POST* et en retour vous recevez votre token pour votre ligne. Par exemple : "XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX"
 
 ![appel API POST](images/img_2581.jpg){.thumbnail}
 
@@ -95,13 +97,13 @@ Le site propose trois types d’exécution d'URL :
 - *Popup* => pour ouvrir une page dans un nouvel onglet du navigateur
 - *Silencieux* => pour ouvrir un script sans affichage
 
-Dans l'url vous allez devoir indiquer l'url de recherche d'un contact dans SugarCRM avec un champ dynamique
+Dans l'URL vous allez devoir indiquer l'URL de recherche d'un contact dans SugarCRM avec un champ dynamique
 
 - *CALLING* => Le numéro de l'appelant
 - *CALLED* => Le numéro de l'appelé
 - *EVENT* => Le type d’événement (start_ringing)
 
-Voici l'url avec le champ dynamique : <http://www.monsite.ovh/sugarCRM/index.php?action=UnifiedSearch&query_string=*CALLED*>.
+Voici l'URL avec le champ dynamique : <http://www.monsite.ovh/sugarCRM/index.php?action=UnifiedSearch&query_string=*CALLED*>.
 
 ![URL](images/img_2585.jpg){.thumbnail}
 
@@ -111,7 +113,7 @@ Si les informations téléphoniques sont enregistrées sous ce format, le coupla
 
 ### Étape 3 : adapter au format de saisie du téléphone
 
-Si vous avez stocké vos informations téléphoniques suivant le format "+33XX...", nous vous proposons cette améliorations à intégrer dans le fichier *./js/cti.js*.
+Si vous avez stocké vos informations téléphoniques suivant le format "+33XX...", nous vous proposons cette amélioration à intégrer dans le fichier *./js/cti.js*.
 
 Remplacez ce morceau de code à partir de la ligne 180 :
 

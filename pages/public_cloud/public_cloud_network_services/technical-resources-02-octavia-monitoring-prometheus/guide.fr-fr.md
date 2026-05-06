@@ -14,6 +14,17 @@ This guide will discuss those options to monitor your Octavia Load Balancer.
 
 - A Load Balancer created. If this is not the case, please check this [guide](/pages/public_cloud/public_cloud_network_services/getting-started-01-create-lb-service).
 
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Projets Public Cloud](/links/control-panel/publiccloud-projects)
+- **Pour accéder à vos services :** `Public Cloud`{.action} > Sélectionnez votre projet
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
+
 ## Instructions
 
 ### Monitoring using CLI
@@ -84,6 +95,7 @@ The default pool is greyed out because the `prometheus` listener does not need a
 Click `Add`{.action} to trigger the listener creation. The new listener is added to the listeners list.
 
 ![Listener list in OVHcloud Control Panel](images/listener_list.png){.thumbnail}
+
 
 #### Create a Prometheus listener via OpenStack GUI (Horizon)
 

@@ -1,7 +1,7 @@
 ---
 title: "OVHcloud VPS - często zadawane pytania"
 excerpt: "Znajdź odpowiedzi na najczęściej zadawane pytania dotyczące ofert VPS"
-updated: 2025-10-30
+updated: 2026-03-24
 ---
 
 <style>
@@ -76,7 +76,7 @@ Jeśli potrzebujesz przydzielonych zasobów, ale nie chcesz mieć do czynienia z
 
 Tak, możesz uaktualnić swoją konfigurację z poziomu Panelu Kontrolnego OVHcloud, bez ręcznego migracji danych. Dostępne opcje uaktualnienia zależą od zakresu i modelu VPS.
 
-Jednak aby obniżyć konfigurację, musisz zasubskrybować nowy plan, przenieść swoje dane, a następnie anulować stary usługę. Nasz zespół wsparcia jest dostępny, aby pomóc Ci w razie potrzeby.
+Jednak aby obniżyć konfigurację, musisz zasubskrybować nowy plan, przenieść swoje dane, a następnie anulować starą usługę. Nasz zespół wsparcia jest dostępny, aby pomóc Ci w razie potrzeby.
 
 ///
 
@@ -103,7 +103,7 @@ Dla jeszcze lepszej ochrony możesz również wybrać naszą opcję premium back
 
 Dodatkowo oferujemy:
 
-- Zrzuty ekranu: Możesz tworzyć ręczne, natychmiastowe zrzuty ekranu, które przechwytują dokładny stan Twojego VPS tuż przed aktualizacją lub istotną zmianą.
+- Migawki: Możesz tworzyć ręczne, natychmiastowe migawki, które przechwytują dokładny stan Twojego VPS tuż przed aktualizacją lub istotną zmianą.
 - Zewnętrzny backup: Przechowuj swoje dane na osobnym, zabezpieczonym dysku, umożliwiając łatwe odzyskanie w przypadku dużego incydentu.
 
 Korzystając z tych rozwiązań, możesz dostosować zarządzanie kopiami zapasowymi do swoich potrzeb bezpieczeństwa i ciągłości działania.
@@ -138,7 +138,7 @@ Hosting usług webowych na VPS pozwala Ci zainstalować preferowane oprogramowan
 
 ///
 
-/// details | Jakie jest różnice między VPS a rozwiązaniami Public Cloud?
+/// details | Jaka jest różnica między VPS a rozwiązaniami Public Cloud?
 
 **VPS**
 
@@ -189,7 +189,7 @@ VPS z Local Zone spełnia również potrzeby projektów z wymaganiami dotyczący
 
 /// details | Czy mogę przenieść swój VPS z Local Zone do centrum danych i odwrotnie?
 
-Nie, nie możesz bezpośrednio migrować usług. Musisz zasubskrybować wybrany VPS, przenieść swoje dane, a następnie anulować stary usługę. Nasz zespół wsparcia może Ci w tym pomóc, jeśli to konieczne.
+Nie, nie możesz bezpośrednio migrować usług. Musisz zasubskrybować wybrany VPS, przenieść swoje dane, a następnie anulować starą usługę. Nasz zespół wsparcia może Ci w tym pomóc, jeśli to konieczne.
 
 ///
 
@@ -229,6 +229,20 @@ Jednak w przypadku specyficznej pomocy w konfiguracji oprogramowania, zalecamy s
 
 ///
 
+/// details | Jakie są najlepsze praktyki wysyłania e-maili z serwera VPS?
+
+Aby zapobiec oznaczaniu Twoich e-maili jako spam, musisz prawidłowo skonfigurować swój serwer.
+
+Obejmuje to:
+
+- uwierzytelnianie e-maili (SPF, DKIM, DMARC),
+- konfigurację reverse DNS (PTR),
+- przestrzeganie najlepszych praktyk dostawców poczty elektronicznej.
+
+Więcej informacji znajdziesz w naszym przewodniku: [Jak zapobiec oznaczaniu e-maili jako spam](/pages/bare_metal_cloud/dedicated_servers/mail_sending_optimization).
+
+///
+
 /// details | Czy mogę zainstalować kilka systemów operacyjnych na moim serwerze VPS?
 
 Instalacja OVHcloud jest możliwa tylko dla jednego systemu operacyjnego.  
@@ -259,7 +273,7 @@ Wybierz serwer [VPS model](/links/bare-metal/vps) zgodnie z Twoimi minimalnymi p
 
 Aby rozwiązać problemy z wydajnością na serwerze VPS, przekaż naszemu zespołowi obsługi klienta konkretne wyniki testów.
 
-Należy pamiętać, że serwer VPS musi zostać uruchomiony w [tryb rescue](/pages/bare_metal_cloud/virtual_private_servers/rescue), aby wykluczyć ewentualne problemy z oprogramowaniem.
+Należy pamiętać, że serwer VPS musi zostać uruchomiony w [trybie rescue](/pages/bare_metal_cloud/virtual_private_servers/rescue), aby wykluczyć ewentualne problemy z oprogramowaniem.
 
 Skontaktuj się z zespołem pomocy, [tworząc zgłoszenie w Centrum pomocy OVHcloud](https://help.ovhcloud.com/csm?id=csm_get_help), aby uzyskać pełną listę testów niezbędnych do prawidłowej oceny.
 
@@ -279,8 +293,8 @@ Nie można przenieść VPS do innego centrum danych. W tym celu możesz przeprow
 
 - Pobierz dane z aktualnego VPS.
 - Zamów nowy VPS.
-- Zapisanie danych na nowym VPS.
-- [Rezygnacja z serwera VPS poprzedniej generacji](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_cancel_services).
+- Prześlij dane na nowy VPS.
+- [Anuluj stary VPS](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_cancel_services).
 
 ///
 
@@ -334,7 +348,7 @@ Jeśli wynik jest ujemny (`false`), powód zostanie uwzględniony w polu `RESPON
 
 ![Licencja API](images/getlicense_response.png){.thumbnail}
 
-Jeśli IP docelowe jest kompatybilne z Twoją licencją ('true`), możesz przenieść je za pomocą odpowiedniego wywołania:
+Jeśli IP docelowe jest kompatybilne z Twoją licencją (`true`), możesz przenieść je za pomocą odpowiedniego wywołania:
 
 **Plesk**
 
@@ -428,8 +442,8 @@ Aby sprawdzić, czy adres IP jest dozwolony, użyj następującego wywołania:
 Chociaż OVHcloud stosuje środki bezpieczeństwa w celu ochrony całej infrastruktury, administrator serwera VPS jest odpowiedzialny za bezpieczeństwo aplikacji i danych na nim hostowanych.
 
 - Zapoznaj się z przewodnikiem [Aktywacja i konfiguracja Edge Network Firewall](/pages/bare_metal_cloud/dedicated_servers/firewall_network), który jest zintegrowany z naszą infrastrukturą Anty-DDoS, ograniczając ekspozycję Twoich usług na ataki DDoS.
-- Ponadto, zapoznaj się z naszymi przewodnikami dotyczącymi [jak skonfigurować własny firewall](/pages/bare_metal_cloud/virtual_private_servers/firewall-Linux-iptable) z `iptable` dla dystrybucji opartych na systemie Linux oraz [jak włączyć firewall w systemie Windows](/pages/bare_metal_cloud/virtual_private_servers/activate-port-firewall-soft-win).
-- W przypadku dystrybucji opartych na systemie Linux na serwerze VPS należy postępować zgodnie z instrukcjami zawartymi w przewodniku [How to secure a VPS](/pages/bare_metal_cloud/virtual_private_servers/secure_your_vps), aby zastosować dodatkowe środki bezpieczeństwa.
+- Ponadto, zapoznaj się z naszymi przewodnikami dotyczącymi [jak skonfigurować własny firewall](/pages/bare_metal_cloud/virtual_private_servers/firewall-Linux-iptable) z `iptables` dla dystrybucji opartych na systemie Linux oraz [jak włączyć firewall w systemie Windows](/pages/bare_metal_cloud/virtual_private_servers/activate-port-firewall-soft-win).
+- W przypadku dystrybucji opartych na systemie Linux na serwerze VPS należy postępować zgodnie z instrukcjami zawartymi w przewodniku [Zabezpieczenie serwera VPS](/pages/bare_metal_cloud/virtual_private_servers/secure_your_vps), aby zastosować dodatkowe środki bezpieczeństwa.
 
 ///
 

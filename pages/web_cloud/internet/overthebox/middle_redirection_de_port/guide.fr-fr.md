@@ -29,7 +29,7 @@ Découvrez ainsi :
 > [!warning]
 >
 > - Les ports **5006 à 5009** et **1090** ne peuvent pas être utilisés ou redirigés car ils sont utilisés pour le fonctionnement interne de l'OverTheBox.
-> - Il est impératif que l'appareil local cible de la redirection possède comme passerelle par défaut l'IP de l' **OverTheBox**.
+> - Il est impératif que l'appareil local cible de la redirection possède comme passerelle par défaut l'IP de l'**OverTheBox**.
 >
 
 Une redirection de ports permet aux appareils externes de se connecter sur une plage de ports d'un appareil du réseau local. Dans cet exemple, nous souhaitons rendre accessible depuis l'extérieur un site web hébergé sur notre réseau local.
@@ -90,7 +90,7 @@ Une règle de pare-feu permet de contrôler le trafic entrant et sortant de votr
 ![overthebox](images/step3-pm-4-addTR-2024.png){.thumbnail}
 
 - Modifiez le paramètre `Name`{.action} pour donner un nom à la règle. Pour notre exemple, la règle se nomme `Disallow-FTP-Lan`.
-- Modifiez le paramètre `Protocol`{.action} pour restreindre la redirection sur un protocole. Pour notre exemple, nous ne souhaitons bloquer le port `21` globalement, nous renseignons donc `TCP+UDP`.
+- Modifiez le paramètre `Protocol`{.action} pour restreindre la redirection sur un protocole. Pour notre exemple, nous souhaitons bloquer le port `21` globalement, nous renseignons donc `TCP+UDP`.
 - Modifiez le paramètre `Source zone`{.action} pour changer la zone firewall de la règle. Pour notre exemple, nous souhaitons bloquer le trafic sortant du réseau local, il faut donc renseigner la zone `lan`.
 - Les paramètres `Source address`{.action} et `Source Port` peuvent être modifiés pour mettre une règle sur un équipement spécifique. Ce n'est pas ce que nous souhaitons faire dans cet exemple, nous laissons donc les champs vides.
 - Modifiez le paramètre `Destination zone`{.action} pour configurer la zone de destination sur laquelle s'applique la règle. Nous ne souhaitons aucun trafic sortant, nous renseignons donc `Any Zone`.
@@ -129,4 +129,4 @@ Dans cet exemple, nous souhaitons configurer un serveur VPN PPTP sans passer par
 
 **OverTheBox** étant basé sur **OpenWRT**, vous pouvez également consulter la [documentation OpenWRT](https://openwrt.org/docs/start).
 
-Échangez avec notre [communauté d'utilisateurs](/links/community)..
+Échangez avec notre [communauté d'utilisateurs](/links/community).

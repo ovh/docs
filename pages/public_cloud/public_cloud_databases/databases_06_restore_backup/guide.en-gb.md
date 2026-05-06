@@ -1,5 +1,5 @@
 ---
-title: Public Cloud Databases - How to restore a backup
+title: Restore a backup of Public Cloud Databases
 excerpt: Find out how to restore a backup
 updated: 2024-07-31
 ---
@@ -14,25 +14,40 @@ We continuously improve our offers. You can follow and submit ideas to add to ou
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](/links/manager)
 - A [Public Cloud database service](/links/public-cloud/databases) up and running
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Navigation path:** `Public Cloud`{.action} > Select your project
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## Instructions
 
 ### Step 1: Select the database service you want to restore data from
 
+<!-- CP-STEPS-START:step-1-select-database-service -->
 First, you need to go to the overview page of the service you want to restore the backup from.
 
 ![Select service](images/service-selection-20230331.png){.thumbnail}
+<!-- CP-STEPS-END:step-1-select-database-service -->
 
 ### Step 2: Go to the backup tab
 
+<!-- CP-STEPS-START:step-2-go-to-backup-tab -->
 In the tab list, click on `Backups`{.action}.
 
 ![Service overview](images/service-overview-20230331.png){.thumbnail}
+<!-- CP-STEPS-END:step-2-go-to-backup-tab -->
 
 ### Step 3: Select the backup to restore from
 
+<!-- CP-STEPS-START:step-3-select-backup-to-restore -->
 Select the backup from which you want to restore. To help you choose, observe the dates at which the backups have been performed in the "Creation date" column.
 
 Click on the `...`{.action} button corresponding to the chosen backup. Then click on `Duplicate (Fork)`{.action} to go to the configuration page of the new service.
@@ -41,9 +56,11 @@ Click on the `...`{.action} button corresponding to the chosen backup. Then clic
 > The MongoDB service has the option to restore a backup in place, meaning restoring the backup on the same service. This option will rollback ALL data to the state it was in when the backup was done. This can induce data loss.
 
 ![Backup tab](images/backup-tab-20230511.png){.thumbnail}
+<!-- CP-STEPS-END:step-3-select-backup-to-restore -->
 
 ### Step 4: Configure the target service
 
+<!-- CP-STEPS-START:step-4-configure-target-service -->
 As seen before, when restoring a backup, you create a new separate database service on which the backup data will be imported. You are able to configure this new service as you wish.
 
 #### Immutable options
@@ -111,9 +128,11 @@ You can update the network options.
 ![Options selection](images/option-selection-20230331.png){.thumbnail}
 
 Now click on `Create a fork`{.action} and the new service will be created. Please note that depending on the backup size, it can take some time before the service is available.
+<!-- CP-STEPS-END:step-4-configure-target-service -->
 
 ### Step 5: Wait for service creation
 
+<!-- CP-STEPS-START:step-5-wait-for-service-creation -->
 Now all you have to do is wait for your service to be ready.
 This new service is now completely independent from the one you forked the backup from. You can safely delete the old service without impacting the new one.
 
@@ -121,6 +140,7 @@ This new service is now completely independent from the one you forked the backu
 > The newly created service does not duplicate IP restrictions nor users which were created on the old service. You will have to recreate those before using your new service.
 
 ![Forked service](images/forked-service-20230331.png){.thumbnail}
+<!-- CP-STEPS-END:step-5-wait-for-service-creation -->
 
 ## Go further
 

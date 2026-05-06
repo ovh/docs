@@ -43,26 +43,15 @@ Alle für diese Anleitung verwendeten API-Routen sind im Bereich `/storage` verf
 
 Alle vorhandenen ACL eines Volumes können über folgende Route abgerufen werden:
 
-> [!faq]
+> [!api]
 >
-> API:
+> @api {v1} /storage GET /storage/netapp/{serviceName}/share/{shareId}/acl
 >
->> > [!api]
->> >
->> > @api {v1} /storage GET /storage/netapp/{serviceName}/share/{shareId}/acl
->> >
->>
->
-> Parameter:
->
->> > **serviceName** *
->> >
->> >> Service ID
->> >
->> > **shareId** *
->> >
->> >> Volume ID
->
+
+| Parameter | Required | Description |
+|-----------|----------|-------------|
+| `serviceName` | Yes | Service ID |
+| `shareId` | Yes | Volume ID |
 
 Ersetzen Sie `serviceName` mit der ID Ihres Dienstes und `shareId` mit der Volume-ID.
 
@@ -72,36 +61,17 @@ Wenn Sie diesen API-Aufruf für ein neues Volume verwenden, wird nichts zurückg
 
 Um eine neue ACL zu erstellen, verwenden Sie folgende Route:
 
-> [!faq]
+> [!api]
 >
-> API:
+> @api {v1} /storage POST /storage/netapp/{serviceName}/share/{shareId}/acl
 >
->> > [!api]
->> >
->> > @api {v1} /storage POST /storage/netapp/{serviceName}/share/{shareId}/acl
->> >
->>
->
-> Parameter:
->
->> > **serviceName** *
->> >
->> >> Service ID
->> >
->> > **shareId** *
->> >
->> >> Volume ID
->> >
->> > **NetAppShareACLRule** *
->> >
->> >> **accessLevel** *
->> >> >
->> >> > ACL Zugriff. Kann **rw** (Lesen und Schreiben) oder **ro** (nur Lesen) sein.
->> >>
->> >> **accessTo** *
->> >> >
->> >> > IP-Adresse oder IP-Adressbereich mit CIDR-Notation.
->
+
+| Parameter | Required | Description |
+|-----------|----------|-------------|
+| `serviceName` | Yes | Service ID |
+| `shareId` | Yes | Volume ID |
+| `NetAppShareACLRule.accessLevel` | Yes | ACL Zugriff. Kann **rw** (Lesen und Schreiben) oder **ro** (nur Lesen) sein. |
+| `NetAppShareACLRule.accessTo` | Yes | IP-Adresse oder IP-Adressbereich mit CIDR-Notation. |
 
 Ersetzen Sie `serviceName` mit der ID Ihres Dienstes und `shareId` mit der Volume-ID.
 
@@ -115,30 +85,16 @@ Die Löschung einer ACL verhindert den Zugriff auf die darin angegebenen IP-Adre
 
 Um eine ACL zu löschen, verwenden Sie folgende Route:
 
-> [!faq]
+> [!api]
 >
-> API:
+> @api {v1} /storage DELETE /storage/netapp/{serviceName}/share/{shareId}/acl/{aclRuleId}
 >
->> > [!api]
->> >
->> > @api {v1} /storage DELETE /storage/netapp/{serviceName}/share/{shareId}/acl/{aclRuleId}
->> >
->>
->
-> Parameter:
->
->> > **serviceName** *
->> >
->> >> Service ID
->> >
->> > **shareId** *
->> >
->> >> Volume ID
->> >
->> > **aclRuleId** *
->> >
->> >> ACL ID
->
+
+| Parameter | Required | Description |
+|-----------|----------|-------------|
+| `serviceName` | Yes | Service ID |
+| `shareId` | Yes | Volume ID |
+| `aclRuleId` | Yes | ACL ID |
 
 Ersetzen Sie `serviceName` mit der ID Ihres Dienstes und `shareId` mit der Volume-ID.
 

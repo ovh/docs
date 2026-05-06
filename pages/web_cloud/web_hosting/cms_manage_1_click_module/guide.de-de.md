@@ -20,7 +20,17 @@ updated: 2024-11-15
 
 - Sie verfügen über ein [OVHcloud Webhosting](/links/web/hosting), auf dem Sie 1-Klick-Module installieren können (ausgenommen  [Kostenloses Hosting 100M](/pages/web_cloud/web_hosting/activate_start10m)).
 - Sie haben ein 1-Klick-Modul auf Ihrem Hosting erstellt (Wenn Sie diese Installation noch nicht durchgeführt haben, folgen Sie den Anweisungen in dieser [Anleitung](/pages/web_cloud/web_hosting/cms_install_1_click_modules)).
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direkter Link:** [Webhosting](/links/control-panel/web-hosting)
+- **Navigationspfad:** `Web Cloud`{.action} > `Hosting-Pakete`{.action} > Wählen Sie Ihr Webhosting aus
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## In der praktischen Anwendung
 

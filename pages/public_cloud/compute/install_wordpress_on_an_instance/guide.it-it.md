@@ -27,8 +27,18 @@ Questa guida ti mostra gli step fondamentali per l'installazione manuale di Word
 
 - Un [progetto Public Cloud](/links/public-cloud/public-cloud) nel tuo account OVHcloud.
 - Disporre di un'[istanza Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps) con Debian o Ubuntu installato.
-- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager).
 - Un accesso amministratore (sudo) alla tua istanza via SSH.
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Percorso di navigazione:** `Public Cloud`{.action} > Seleziona il tuo project
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## Procedura
 
@@ -64,12 +74,12 @@ debian@instance:~$ sudo apt install apache2 mariadb-server php libapache2-mod-ph
 
 ### Step 2: configurazione del server del database <a name="sqlconf"></a>
 
-MariaDB fornisce uno script per aiutarti nella configurazione iniziale e applicare alcuni parametri legati alla sicurezza.
+MariaDB [fornisce uno script](https://mariadb.com/docs/server/clients-and-utilities/deployment-tools/mariadb-secure-installation) per aiutarti nella configurazione iniziale e applicare alcuni parametri legati alla sicurezza.
 
 Per eseguirlo, esegui questo comando:
 
 ```bash
-debian@instance:~$ sudo mysql_secure_installation
+debian@instance:~$ sudo mariadb-secure-installation
 ```
 
 Conferma il primo invito cliccando su `Entrata`{.action}.

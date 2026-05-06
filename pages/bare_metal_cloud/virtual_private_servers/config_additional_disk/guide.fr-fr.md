@@ -13,16 +13,24 @@ Avec les VPS OVHcloud, vous avez la possibilité d'ajouter un espace de stockage
 ## Prérequis
 
 - Disposer d'un [VPS](/links/bare-metal/vps) dans votre compte OVHcloud
-- Être connecté à votre [espace client OVHcloud](/links/manager)
 - Disposer d'un accès administratif via SSH ou RDP à votre VPS
+
+<!-- CP-NAV-START:baremetal-vps -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Gestion VPS](/links/control-panel/baremetal-vps)
+- **Pour accéder à vos services :** `Bare Metal Cloud`{.action} > `Serveurs Privés Virtuels`{.action} > Sélectionnez votre VPS
+
+---
+<!-- CP-NAV-END:baremetal-vps -->
 
 > [!warning]
 > Cette fonctionnalité est actuellement indisponible pour les serveurs privés virtuels dans les [Local Zones](/links/bare-metal/vps-lz).
 >
 
 ## En pratique
-
-Connectez-vous à votre [espace client OVHcloud](/links/manager), rendez-vous dans la section `Bare Metal Cloud`{.action} et sélectionnez votre serveur sous la partie `Serveur privés virtuels`{.action}.
 
 ### Commander un disque additionnel
 

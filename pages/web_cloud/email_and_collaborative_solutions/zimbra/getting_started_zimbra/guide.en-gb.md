@@ -22,13 +22,22 @@ With the Zimbra solution, OVHcloud offers an open-source collaborative messaging
 
 - An email account on our Zimbra OVHcloud email solution
 - An [OVHcloud domain name](/links/web/domains)
-- Access to the [OVHcloud Control Panel](/links/manager)
+
+<!-- CP-NAV-START:web-zimbra -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Zimbra](/links/control-panel/web-zimbra)
+- **Navigation path:** `Web Cloud`{.action} > `Zimbra Mail`{.action}
+
+---
+<!-- CP-NAV-END:web-zimbra -->
 
 ## Instructions
 
 **Summary**
 
-- [Access your service management](#zimbra-access)
 - [Configure your Zimbra service](#zimbra-conf)
 - [Organizations](#organizations)
     - [Create an organization](#organizations-create)
@@ -43,14 +52,6 @@ With the Zimbra solution, OVHcloud offers an open-source collaborative messaging
 - [Redirections](#redirections)
 - [Alias](#alias)
 - [Automatic Replies](#autoreply)
-
-### Access your service management <a name="zimbra-access"></a>
-
-1. Log in to your [OVHcloud Control Panel](/links/manager).
-1. Open the `Web Cloud`{.action} section.
-1. Click `Zimbra Mail`{.action}.
-
-![zimbra](images/zimbra_general_information.png){.thumbnail .w-500}
 
 ### Configure your Zimbra service <a name="zimbra-conf"></a>
 
@@ -70,6 +71,7 @@ The diagram below summarizes the hierarchical link between the above-mentioned e
 
 ### Organizations <a name="organizations"></a>
 
+<!-- CP-STEPS-START:organizations -->
 If you are adding a large number of domain names to your Zimbra service, it may be useful to group them together by associating them with an "Organization". From your Zimbra service, click `Organization`{.action}.
 
 ![zimbra](images/zimbra_organization_tab.png){.thumbnail .w-500}
@@ -89,9 +91,11 @@ You can see that the filter is applied when the label appears next to the name o
 To remove the filter, simply click on the cross of the filter.
 
 ![zimbra](images/zimbra_organization_filter.png){.thumbnail .w-500}
+<!-- CP-STEPS-END:organizations -->
 
 ### Domains <a name="domains"></a>
 
+<!-- CP-STEPS-START:domains -->
 > [!warning]
 >
 > For optimal operation when you use the same domain name between OVHcloud solutions [Exchange](/links/web/emails-hosted-exchange), [Email Pro](/links/web/email-pro) and Zimbra, it is necessary to configure the domain name in `non-authoritative`. To find out how to configure a non-authoritative domain name on an Exchange or Email Pro platform, please read our guide on [Adding a domain name on an email platform](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_adding_domain).
@@ -172,9 +176,11 @@ In the `Domain`{.action} tab of your Zimbra service, click on the "&#8285;" icon
     - **SRV**: Facilitates the configuration of your Zimbra account when you configure it on an email software (Outlook, Mail for Mac, Thunderbird, etc.).
 
 ![zimbra](images/zimbra_domain_modify02.png){.thumbnail .w-500}
+<!-- CP-STEPS-END:domains -->
 
 ### Email accounts <a name="emails"></a>
 
+<!-- CP-STEPS-START:email-accounts -->
 You can manage your Zimbra service email addresses from the `Email accounts`{.action} tab. The table displays the list of email accounts on your service, as well as 3 pieces of information for each:
 
 - **Organization**: If your email account domain name is linked to an organization, you will automatically find its label in this column.
@@ -221,14 +227,11 @@ Click `Confirm`{.action} to start creating the account.
 
 ![zimbra](images/zimbra_emailaccounts_add.png){.thumbnail .w-500}
 
-### Change plan <a name="emails-offer"></a>
+#### Change plan <a name="emails-offer"></a>
 
 It is possible to upgrade or downgrade any Zimbra account.
 
-1. Log in to your [OVHcloud Control Panel](/links/manager).
-1. Go to the `Web Cloud`{.action} section.
-1. Click on `Zimbra Mail`{.action}.
-1. Click on the `Email account`{.action} tab.
+1. Click on the `Email accounts`{.action} tab.
 1. To the right of the email account for which you want to switch to a higher plan, click on `⁝`{.action}.
 1. Click on `Change plan`{.action}.
 
@@ -240,6 +243,7 @@ It is possible to upgrade or downgrade any Zimbra account.
 >
 > - No file is stored on your storage volume "Briefcase" if you are switching to the Starter plan.
 > - The content of your email account must be less than 15 GB if you are switching to the Starter plan.
+<!-- CP-STEPS-END:email-accounts -->
 
 ### View your email account <a name="mail-consult"></a>
 
@@ -289,9 +293,10 @@ For more details on using Zimbra webmail, please read our guide on [Using Zimbra
 
 ### Alias <a name="alias"></a>
 
+<!-- CP-STEPS-START:alias -->
 Alias addresses for your email account allow you to keep your account's email address private. You can disclose alias addresses to your contacts and emails sent to these addresses will then be redirected to your email account.
 
-You can create an alias in the [OVHcloud Control Panel](/links/manager). Click on the steps below:
+Click on the steps below to create an alias:
 
 > [!tabs]
 > **Step 1**
@@ -320,6 +325,7 @@ You can create an alias in the [OVHcloud Control Panel](/links/manager). Click o
 >>
 >>![zimbra](images/zimbra_alias04.png){.thumbnail .w-500}
 >>
+<!-- CP-STEPS-END:alias -->
 
 ### Automatic replies <a name="autoreply"></a>
 

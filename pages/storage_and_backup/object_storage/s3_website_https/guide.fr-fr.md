@@ -1,7 +1,7 @@
 ---
 title: Object Storage - Activer HTTPS sur un site web statique en utilisant un domaine personnalisé
 excerpt: Découvrez comment configurer votre site web et le Load Balancer OVHcloud pour activer le HTTPS
-updated: 2023-06-06
+updated: 2026-03-06
 ---
 
 ## Objectif
@@ -17,21 +17,29 @@ Par défaut, le protocole HTTPS n'est pas pris en charge sur un site web statiqu
 
 ## Prérequis
 
-Voici les prérequis à avoir pour activer le protocole HTTPS :
+Pour activer le HTTPS, vous avez besoin de :
 
-- Disposer d’un [Load Balancer OVHcloud](/links/network/load-balancer), qui jouera le rôle de passerelle SSL et pourra offrir une protection contre les attaques DDOS.
+- Un [Load Balancer OVHcloud](/links/network/load-balancer), qui jouera le rôle de passerelle SSL et pourra offrir une protection contre les attaques DDoS.
 - Un [nom de domaine](/links/web/domains).
 - Commander un certificat TLS associé à votre nom de domaine chez OVHcloud (facultatif si vous disposez déjà d’un certificat TLS de confiance associé à votre nom de domaine).
 - Vous devez [activer l'hébergement sur votre bucket Object Storage](/pages/storage_and_backup/object_storage/s3_website).
-- Être connecté à votre [espace client OVHcloud](/links/manager).
+
+<!-- CP-NAV-START:network-load-balancer -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Load Balancer](/links/control-panel/network-load-balancer)
+- **Pour accéder à vos services :** `Network`{.action} > `Load Balancer`{.action} > Sélectionnez votre service
+
+---
+<!-- CP-NAV-END:network-load-balancer -->
 
 ## En pratique
 
 ### Étape 1 - Configurer votre Load Balancer
 
 #### Étape 1.1 - Ajouter votre certificat
-
-Connectez-vous à votre [espace client OVHcloud](/links/manager), rendez-vous dans la section `Bare Metal Cloud`{.action} et cliquez sur `Load Balancer`{.action}.
 
 Sélectionnez votre Load Balancer dans la liste, cliquez sur l'onglet `Certificats SSL`{.action} puis sur `Ajouter un certificat SSL`{.action}.
 
@@ -66,14 +74,18 @@ Vous devez à présent ajouter des serveurs à votre ferme de serveurs. Cliquez 
 Renseignez les informations de configuration de votre serveur :
 
 - Nom (facultatif)
-- Adresse IPv4 : Entrez l'adresse IP publique associée à l'URL par défaut de votre site web statique sous la forme `{bucket}.s3-website.{region}.io.cloud.ovh.net`
+- Adresse IPv4 : Entrez l'adresse IP publique associée à l'URL par défaut de votre site web statique sous la forme `<bucket_name>.s3-website.<region>.io.cloud.ovh.net`
 
 *Vous pouvez récupérer cette adresse IP en effectuant une commande dig sur l'URL.*
 
-**Exemple**: via une commande `dig`
+**Exemple** : via une commande `dig`
 
 ```sh
-lxxxx@LWI1XXXXXX:~$ dig my-site.s3-website.gra.io.cloud.ovh.net
+dig <bucket_name>.s3-website.<region>.io.cloud.ovh.net
+```
+
+```text
+
 ; <<>> DiG 9.16.1-Ubuntu <<>> my-site.s3-website.gra.io.cloud.ovh.net
 ;; global options: +cmd
 ;; Got answer:
@@ -91,10 +103,13 @@ my-site.s3-website.gra.io.cloud.ovh.net. 3600 IN A 141.95.161.77
 ;; MSG SIZE  rcvd: 84
 ```
 
-**Example**: via une commande `host`
+**Exemple** : via une commande `host`
 
 ```sh
-lxxxx@LWI1XXXXXX:~$ host my-site.s3-website.gra.io.cloud.ovh.net
+host <bucket_name>.s3-website.<region>.io.cloud.ovh.net
+```
+
+```text
 my-site.s3-website.gra.io.cloud.ovh.NET has address 141.95.161.77
 ```
 
@@ -102,7 +117,7 @@ my-site.s3-website.gra.io.cloud.ovh.NET has address 141.95.161.77
 
 #### Étape 1.3 - Configurer vos frontends
 
-L'étape suivante consiste à ajouter des frontends à votre Load Balancer. Un frontend sera l'élément Internet de votre Load Balancer et sera responsable du traitement et de l'acheminement des requêtes entrantes.
+L'étape suivante est d'ajouter des frontends à votre Load Balancer. Un frontend sera l'élément Internet de votre Load Balancer et sera responsable du traitement et de l'acheminement des requêtes entrantes.
 
 Dans la section Load Balancer de votre espace client, cliquez sur l'onglet `Frontends`{.action} puis sur `Ajouter un frontend`{.action}.
 
@@ -116,7 +131,7 @@ Ajouter 2 frontends :
     - port : 80
     - datacenter : all
     - ferme par défaut : none
-    - paramètres avancés > HTTP Redirection : `https://<nom_de_votre_domaine>`
+    - paramètres avancés > HTTP Redirection : `https://<domain_name>`
 - Un frontend qui va gérer toutes les requêtes HTTPS entrantes et jouer le rôle de passerelle SSL
     - nom (facultatif)
     - protocole : HTTPS
@@ -124,7 +139,7 @@ Ajouter 2 frontends :
     - datacenter : la région où se trouve votre bucket
     - ferme de serveurs par défaut : la ferme de serveurs créée au préalable
     - certificate: le certificat que vous avez créé
-    - paramètres avancés > HTTP Header : Host `<default_website_url>` sous la forme `<bucket>.s3-website.<region>.io.cloud.ovh.net`
+    - paramètres avancés > HTTP Header : Host `<website_endpoint>` sous la forme `<bucket_name>.s3-website.<region>.io.cloud.ovh.net`
 
 ![configuration du frontend](images/front-2.PNG){.thumbnail}
 

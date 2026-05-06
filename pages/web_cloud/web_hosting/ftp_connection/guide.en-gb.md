@@ -1,7 +1,7 @@
 ---
 title: "Logging in to your web hosting plan’s FTP storage space"
 excerpt: "Find out how to log in to your OVHcloud web hosting plan’s FTP storage space"
-updated: 2025-06-15
+updated: 2026-03-31
 ---
 
 ## Objective
@@ -13,12 +13,22 @@ OVHcloud web hosting plans provide you with access to an FTP storage space, whic
 ## Requirements
 
 - An [OVHcloud web hosting plan](/links/web/hosting)
-- Access to the [OVHcloud Control Panel](/links/manager)
 
 > [!primary]
 > Only **Pro** and **Performance** web hosting plans allow SSH connections and multiple FTP users to be activated.
 >
 > For web hosting plans, you can no longer log in to your FTP storage space via the FTP Explorer/Net2FTP online tool. To continue connecting to your web hosting plan via FTP, use the [Filezilla](https://filezilla-project.org/download.php) or [Cyberduck](https://cyberduck.io/) software.
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Hosting plans](/links/control-panel/web-hosting)
+- **Navigation path:** `Web Cloud`{.action} > `Hosting plans`{.action} > Select your web hosting plan
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## Instructions
 
@@ -37,28 +47,23 @@ To connect to your FTP storage space, you will need the following:
 >
 > **If you already have these items**, proceed directly to part 2 "[Access your storage space](#ftp_storage_access)" in this guide.
 
+<!-- CP-STEPS-START:get-ftp-credentials -->
 If you do not have this information at hand, click on the tabs below to view each of the **4** steps.
 
 > [!tabs]
 > **Step 1**
 >>
->> Log in to the [OVHcloud Control Panel](/links/manager), then go to the `Web Cloud`{.action} section.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Step 2**
->>
->> Click the `Hosting plans`{.action} menu, then select the Web Hosting plan concerned.
+>> Go to the [Hosting plans](/links/control-panel/web-hosting) page, then select the web hosting plan concerned.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Step 3**
+> **Step 2**
 >>
 >> On the page that pops up, click on the `FTP - SSH`{.action} tab.
 >>
 >> ![FTP - SSH](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh.png){.thumbnail}
 >>
-> **Step 4**
+> **Step 3**
 >>
 >> The information associated with your storage space will then appear, along with a table listing the FTP and SSH users created on your web hosting plan.
 >>
@@ -71,27 +76,27 @@ If you do not have this information at hand, click on the tabs below to view eac
 >> > Choose a password for this new user account, click `Next`{.action} and then click `Confirm`{.action}.
 >>
 >> All the elements required to log in to the FTP storage space are present on this page.
+>>
+> **Step 4**
+>>
+>> Below is a description of the essential information displayed on the `FTP - SSH` page:
+>>
+>> - **FTP and SFTP server**: FTP server address of your web hosting plan to access your FTP storage space via FTP or SFTP software.
+>>
+>> > The standard connection port is “21”. Use port “22” for a connection via SFTP (if it is enabled).
+>>
+>> - **SSH Server**: SSH server address of your web hosting plan to access your FTP storage space via a terminal and SSH protocol.
+>>
+>> > The SSH connection port is “22”.
+>>
+>> - **Main login**: Primary FTP username created on your web hosting plan. You can find all of your web hosting plan’s FTP users in the “Login” column of the table.
+>>
+>> > [!primary]
+>> >
+>> > Depending on which OVHcloud [web hosting plan](/links/web/hosting) you have, some of the information listed above (particularly concerning SSH) may not appear.
+<!-- CP-STEPS-END:get-ftp-credentials -->
 
-Below is a description of the essential information displayed on the `FTP - SSH` page:
-
-- **FTP and SFTP server**: FTP server address of your web hosting plan to access your FTP storage space. You can do this by using, for example, client software capable of the (S)FTP protocol.
-
-> The standard connection port is "21". Use port "22" for a connection via SFTP (if it is enabled).
-
-- **SSH Server**: SSH server address of your web hosting plan to access your FTP storage space. This is done using a terminal via SSH protocol.
-
-> The SSH connection port is "22".
-
-- **Main login**: Primary FTP username created on your web hosting plan. You can find all of your web hosting plan’s FTP users in the “Login” column of the table.
-
-> [!primary]
->
-> Depending on which OVHcloud [web hosting plan](/links/web/hosting) you have, some of the information listed above (particularly concerning SSH) may not appear.
->
-
-If you have forgotten your FTP or SSH user password, please refer to our guide on [Modifying a FTP user password](/pages/web_cloud/web_hosting/ftp_change_password).
-
-![ftpconnect](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/change-password.png){.thumbnail}
+If you have forgotten your FTP or SSH user password, please refer to our guide “[Modifying a FTP user password](/pages/web_cloud/web_hosting/ftp_change_password)”.
 
 At this stage, you have everything you need to log in to your FTP storage space.
 

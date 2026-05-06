@@ -1,6 +1,6 @@
 ---
-title: 'Cambiar la contraseña de administrador en un servidor dedicado Windows'
-excerpt: 'Cómo cambiar la contraseña de administrador en un servidor dedicado Windows'
+title: "Cambiar la contraseña de administrador en un servidor dedicado Windows"
+excerpt: "Restablezca la contraseña de administrador en un servidor dedicado Windows a través del modo rescue de OVHcloud en caso de pérdida"
 updated: 2024-06-26
 flag: hidden
 ---
@@ -21,7 +21,17 @@ Al instalar o reinstalar un sistema operativo Windows, recibirá una contraseña
 ## Requisitos
 
 - Tener un [servidor dedicado](/links/bare-metal/bare-metal) con Windows instalado.
-- Haber iniciado sesión en el [área de cliente de OVHcloud](/links/manager).
+
+<!-- CP-NAV-START:baremetal-dedicated-servers -->
+---
+
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [Servidores Dedicados](/links/control-panel/baremetal-dedicated-servers)
+- **Ruta de navegación:** `Bare Metal Cloud`{.action} > `Servidores Dedicados`{.action} > Seleccione su servidor
+
+---
+<!-- CP-NAV-END:baremetal-dedicated-servers -->
 
 ## Procedimiento
 

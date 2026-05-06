@@ -24,13 +24,13 @@ details[open]>summary::before {
 
 ## Obiettivo
 
-L’IPv6 è la versione più recente dell’*Internet Protocol*(IP). Ogni server VPS OVHcloud viene consegnato con un indirizzo IPv4 e un indirizzo IPv6. Di default è configurato soltanto l’IPv4 ma, Se devi configurare l'IPv6, devi farlo manualmente sul tuo sistema.
+L’IPv6 è la versione più recente dell’*Internet Protocol* (IP). Ogni server VPS OVHcloud viene consegnato con un indirizzo IPv4 e un indirizzo IPv6. Di default è configurato soltanto l’IPv4 ma, se devi configurare l’IPv6, devi farlo manualmente sul tuo sistema.
 
 **Questa guida ti mostra come configurare l'IPv6 sul tuo server VPS OVHcloud utilizzando diversi metodi.**
 
 > [!warning]
 >
-> OVHcloud mette a disposizione i server,  ma non è autorizzata ad accedervi e non si occupa quindi della loro amministrazione. Garantire quotidianamente la gestione software e la sicurezza di queste macchine è quindi responsabilità dell’utente. Questa guida ti aiuta a realizzare le operazioni più ricorrenti. Tuttavia, in caso di difficoltà o dubbi relativi ad amministrazione e sicurezza, ti consigliamo di contattare un fornitore specializzato. Per maggiori informazioni consulta la sezione [Per saperne di più](#go-further).
+> OVHcloud mette a disposizione i server, ma non è autorizzata ad accedervi e non si occupa quindi della loro amministrazione. Garantire quotidianamente la gestione software e la sicurezza di queste macchine è quindi responsabilità dell’utente. Questa guida ti aiuta a realizzare le operazioni più ricorrenti. Tuttavia, in caso di difficoltà o dubbi relativi ad amministrazione e sicurezza, ti consigliamo di contattare un fornitore specializzato. Per maggiori informazioni consulta la sezione [Per saperne di più](#go-further).
 > 
 
 ## Prerequisiti
@@ -38,7 +38,18 @@ L’IPv6 è la versione più recente dell’*Internet Protocol*(IP). Ogni server
 - Disporre di un [server VPS OVHcloud](/links/bare-metal/vps)
 - Essere connesso al tuo VPS in SSH (accesso root) o tramite desktop remoto (Windows)
 - Possedere conoscenze base di rete
-- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager) o all'[API OVHcloud](/links/api)
+- Accesso all'[API OVHcloud](/links/api) (facoltativo)
+
+<!-- CP-NAV-START:baremetal-vps -->
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [VPS management](/links/control-panel/baremetal-vps)
+- **Percorso di navigazione:** `Bare Metal Cloud`{.action} > `Server Privati Virtuali`{.action} > Seleziona il tuo VPS
+
+---
+<!-- CP-NAV-END:baremetal-vps -->
 
 ## Procedura
 
@@ -49,7 +60,7 @@ Le sezioni seguenti contengono le configurazioni per le distribuzioni che offria
 > Tieni presente che sui sistemi operativi Linux più recenti che offriamo per i VPS, l'indirizzo IPv6 è configurato di default. In questo caso, non è necessario configurarla. Prima di apportare qualsiasi modifica, assicurati di controllare il file di configurazione del sistema operativo.
 >
 
-Configurare un IPv6 su un VPS è un’operazione che prevede diversi step, Ti verrà chiesto regolarmente di eseguire comandi o personalizzare la configurazione del tuo server. 
+Configurare un IPv6 su un VPS è un’operazione che prevede diversi step. Ti verrà chiesto regolarmente di eseguire comandi o personalizzare la configurazione del tuo server. 
 
 Prima di iniziare ti consigliamo di consultare la tabella qui sotto, che contiene i termini utilizzati in questa guida e la loro descrizione: 
 
@@ -61,12 +72,10 @@ Prima di iniziare ti consigliamo di consultare la tabella qui sotto, che contien
 
 ### Step 1: recupera le informazioni relative alla rete
 
-Per prima cosa, è necessario avere a disposizione l’indirizzo IPV6 e il gateway IPv6 assegnati al server.
+Per prima cosa, è necessario avere a disposizione l’indirizzo IPv6 e il gateway IPv6 assegnati al server.
 
 > [!tabs]
 > **Dallo Spazio Cliente OVHcloud**
->>
->> Accedi allo [Spazio Cliente OVHcloud](/links/manager), clicca su `Bare Metal Cloud`{.action} e seleziona il tuo server nella sezione `Server Privati Virtuali`{.action}.
 >>
 >> Nel riquadro `IP` è possibile visualizzare l’indirizzo IP e il gateway IPv6 assegnato al server. Una volta recuperate queste informazioni è possibile passare allo [Step 2: applica la configurazione IPv6](#applyipv6).
 >>
@@ -76,7 +85,7 @@ Per prima cosa, è necessario avere a disposizione l’indirizzo IPV6 e il gatew
 >>
 >> Accedi alla pagina delle [API OVHcloud](/links/console):
 >>
->> - Clicca su `Autentication`{.action} in alto a sinistra.
+>> - Clicca su `Authentication`{.action} in alto a sinistra.
 >> - Clicca su `Login with OVHcloud SSO`{.action}.
 >> - Inserisci le tue credenziali OVHcloud.
 >> - Clicca sul pulsante `Authorize`{.action} per autorizzare le chiamate alle API da questo sito.
@@ -114,12 +123,12 @@ La configurazione IPv6 può essere applicata in diversi modi. Prosegui nella let
 
 > [!warning]
 >
-> Lo modalità non persistente implica che la configurazione applicata non verrà mantenuta dopo il riavvio del server. 
+> La modalità non persistente implica che la configurazione applicata non verrà mantenuta dopo il riavvio del server. 
 > 
 
 Una volta effettuato l’accesso al VPS in SSH, esegui questi comandi ricordandoti di personalizzare:
 
-- i valori generici (*YOUR_IPV6*,*IPV6_PREFIX* e *IPV6_GATEWAY*) con i dati recuperati precedentemente
+- i valori generici (*YOUR_IPV6*, *IPV6_PREFIX* e *IPV6_GATEWAY*) con i dati recuperati precedentemente
 - l’interfaccia di rete, se quella utilizzata non è **eth0**
 
 ```bash
@@ -275,7 +284,7 @@ In alcuni casi, il metodo da utilizzare potrebbe non essere quello indicato sopr
 >>
 >> > [!warning]
 >> >
->> > È importante rispettare l'allineamento di ciascun elemento del file, come indicato nell'esempio di cui sopra. Non utilizzare il tasto di tabulazione per creare la tua spaziatura. E' necessario solo il tasto spazio.
+>> > È importante rispettare l'allineamento di ciascun elemento del file, come indicato nell'esempio di cui sopra. Non utilizzare il tasto di tabulazione per creare la tua spaziatura. È necessario solo il tasto spazio.
 >> >
 >>
 >> Per testare la tua configurazione utilizza questo comando:
@@ -446,11 +455,11 @@ Seleziona `Protocol Internet version 6 (TCP/IPv6)`{.action} e clicca sul pulsant
 
 ![configureipv6](images/configure-ipv6-step3.png){.thumbnail}
 
-Nella finestra Proprietà IPv6 seleziona `Utilizza questo indirizzo IPv6`. Inserisci gli indirizzi IP recuperati nel primo step.
+Nella finestra Proprietà IPv6 seleziona `Utilizza il seguente indirizzo IPv6`{.action}. Inserisci gli indirizzi IP recuperati nel primo step.
 
-Puoi anche inserire le risoluzioni DNS IPv6 che preferisci `utilizzando questo` indirizzo server DNS. Ciò non è obbligatorio se i resolver DNS della configurazione IPv4 sono già operativi.
+Puoi anche inserire le risoluzioni DNS IPv6 che preferisci utilizzando `Utilizza il seguente indirizzo server DNS IPv6`{.action}. Ciò non è obbligatorio se i resolver DNS della configurazione IPv4 sono già operativi.
 
-Seleziona la casella `Conferma le impostazioni lasciando` e clicca su `OK`{.action} per confermare le modifiche. Se il gateway specificato non si trova sulla stessa sottorete IPv6 (ad esempio, /128 e /64), può essere visualizzato un messaggio di errore. Puoi ignorare questo messaggio e passare allo step successivo.
+Seleziona la casella `Conferma le impostazioni all'uscita`{.action} e clicca su `OK`{.action} per confermare le modifiche. Se il gateway specificato non si trova sulla stessa sottorete IPv6 (ad esempio, /128 e /64), può essere visualizzato un messaggio di errore. Puoi ignorare questo messaggio e passare allo step successivo.
 
 ![configureipv6](images/configure-ipv6-step4.png){.thumbnail}
 
@@ -458,7 +467,7 @@ Seleziona la casella `Conferma le impostazioni lasciando` e clicca su `OK`{.acti
 
 A seconda del sistema operativo, è possibile verificare la funzionalità tramite diversi comandi.
 
-- **Per un impianto GNU/Linux**, ecco due esempi per l'interfaccia **eth0** (da adattare se necessario):
+- **Per un sistema GNU/Linux**, ecco due esempi per l'interfaccia **eth0** (da adattare se necessario):
 
 ```bash
 ip -6 addr show eth0
@@ -525,7 +534,7 @@ Puoi anche testare la connessione a un altro server remoto. Per il corretto funz
 
 > [!primary]
 >
-> Questo step non si è valido per i sistemi Windows.
+> Questo step non è valido per i sistemi Windows.
 >
 
 Cloud-init è un pacchetto installato di default sulle istanze VPS. È un framework che permette di eseguire gli script indicati al momento della creazione o del riavvio del server. Il meccanismo implementato consente all’infrastruttura OpenStack di inserire script nell’ambiente cloud-init e quindi nella configurazione della macchina.
@@ -534,7 +543,7 @@ In base al sistema operativo, cloud-init sarà in grado di gestire la rete, l’
 
 Nelle distribuzioni più recenti (come CentOS, Debian 9, Ubuntu 16.x e versioni successive), la configurazione di default di cloud.init può a volte reinizializzare automaticamente la configurazione di rete all'avvio del server.
 
-In casi specifici di utilizzo, ti consigliamo di evitare la reinizializzazione disattivando la gestione automatica della rete in Cloud-Init. tramite un comando che permetterà di creare un file `/etc/cloud/cloud.cfg.d/98-disable-network-config.cfg` contenente il valore `network: {config: disabled}`:
+In casi specifici di utilizzo, ti consigliamo di evitare la reinizializzazione disattivando la gestione automatica della rete in Cloud-Init tramite un comando che permetterà di creare un file `/etc/cloud/cloud.cfg.d/98-disable-network-config.cfg` contenente il valore `network: {config: disabled}`:
 
 ```bash
 sudo echo "network: {config: disabled}" > /etc/cloud/cloud.cfg.d/98-disable-network-config.cfg

@@ -17,6 +17,7 @@ It also assumes you have an OVHcloud Cloud Disk Array already available. If you 
 
 You also need to have [Helm](https://docs.helm.sh/) installed on your workstation, please refer to the [How to install Helm on OVHcloud Managed Kubernetes Service](/pages/public_cloud/containers_orchestration/managed_kubernetes/installing-helm) tutorial.
 
+
 ## Instructions
 
 To configure OVHcloud Cloud Disk Array, you need to use the [OVHcloud API](/links/api). If you have never used it, you can find the basics here: [First steps with the OVHcloud API](/pages/manage_and_operate/api/first-steps).

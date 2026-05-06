@@ -27,7 +27,6 @@ La configuración, la gestión y la responsabilidad de los servicios que OVHclou
 ## Requisitos
 
 - Tener un [plan de hosting](/links/web/hosting).
-- Estar conectado a su [área de cliente de OVHcloud](/links/manager).
 - Disponer de las claves de conexión al [espacio FTP de su alojamiento](/pages/web_cloud/web_hosting/ftp_connection).
 
 ## Procedimiento

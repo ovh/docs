@@ -1,7 +1,7 @@
 ---
 title: "Utilizar el webmail Zimbra"
 excerpt: "Descubra la interfaz del webmail Zimbra para sus cuentas MX Plan OVHcloud"
-updated: 2025-10-22
+updated: 2026-02-26
 ---
 
 <style>
@@ -45,6 +45,9 @@ OVHcloud ofrece un servicio de webmail denominado Zimbra para acceder a una cuen
     - [Gestión de calendarios](#calendar-management)
     - [Tareas](#tasks)
 - [Almacenamiento](#storage)
+    - [Añadir un archivo](#storage-add)
+    - [Compartir un archivo o carpeta](#storage-share)
+    - [Editar un documento](#storage-onlyoffice)
 - [Filtros](#filters)
     - [Cómo configurar los filtros](#filters-howto)
     - [Crear un filtro](#filters-creation)
@@ -472,10 +475,6 @@ A continuación, haga clic en `Guardar`{.action} para terminar de crear la tarea
 >
 > La funcionalidad de almacenamiento denominada "Maletín" solo está disponible a partir del producto Zimbra Pro.
 
-> [!warning]
->
-> La oferta Zimbra Pro está actualmente en versión beta, algunas funcionalidades todavía se están mejorando.
-
 Haga clic en el icono `Maletín`{.action} situado en la barra superior para acceder a su espacio de almacenamiento. Desde ahí podrá subir sus archivos y compartirlos.
 
 1. En la columna de la izquierda, encontrará las carpetas de su espacio de almacenamiento.
@@ -489,7 +488,7 @@ Haga clic en el icono `Maletín`{.action} situado en la barra superior para acce
 
 ![Zimbra - storage](images/zimbra-storage-01.png){.thumbnail .w-600}
 
-#### Añadir un archivo
+#### Añadir un archivo <a name="storage-add"></a>
 
 Para añadir un archivo a su espacio de almacenamiento, siga estos pasos:
 
@@ -499,7 +498,7 @@ Para añadir un archivo a su espacio de almacenamiento, siga estos pasos:
 
 ![Zimbra - storage](images/zimbra-storage-add-01.png){.thumbnail .w-600}
 
-#### Compartir un archivo o carpeta
+#### Compartir un archivo o carpeta <a name="storage-share"></a>
 
 El uso compartido le permite dar acceso a una carpeta o un archivo en su almacenamiento a otra persona, fuera de su cuenta Zimbra.
 
@@ -531,6 +530,30 @@ El uso compartido le permite dar acceso a una carpeta o un archivo en su almacen
 El invitado recibirá un mensaje de correo electrónico invitándole a crear una cuenta Zimbra compuesta por un usuario y una contraseña. Esta cuenta permite acceder a una interfaz Zimbra limitada a lo que se ha compartido.
 
 ![Zimbra - storage](images/zimbra-storage-share-invite-01.png){.thumbnail .w-600}
+
+#### Editar un documento <a name="storage-onlyoffice"></a>
+
+> [!success]
+>
+> La funcionalidad de edición de documentos desde el espacio "Maletín" solo está disponible a partir del producto Zimbra Pro.
+
+Desde el Maletín de su cuenta Zimbra, puede editar sus archivos de texto, hojas de cálculo o presentaciones con la suite ONLYOFFICE integrada. Para editar un documento:
+
+- Haga clic en el icono `Maletín`{.action} situado en la barra superior para acceder a su espacio de almacenamiento.
+- Seleccione el archivo que desea editar.
+- En la barra superior, haga clic en `Editar`{.action}.
+
+![Zimbra - storage](images/zimbra-storage-onlyoffice-01.png){.thumbnail .w-600}
+
+- El editor ONLYOFFICE se abre en una nueva pestaña.
+
+![Zimbra - storage](images/zimbra-storage-onlyoffice-02.png){.thumbnail .w-600}
+
+Los cambios que realice en el editor se guardan automáticamente durante la edición o cuando cierra la pestaña.
+
+> [!success]
+>
+> Si desea más información sobre la edición de documentos en ONLYOFFICE, [consulte la documentación oficial](https://helpcenter.onlyoffice.com/docs).
 
 ### Filtres <a name="filters"></a>
 

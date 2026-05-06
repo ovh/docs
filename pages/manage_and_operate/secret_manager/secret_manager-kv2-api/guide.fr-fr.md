@@ -41,7 +41,7 @@ Il est possible de communiquer avec le domaine OKMS en utilisant :
 
 ### Utilisation de l'API OKMS via l'interface utilisateur Swagger
 
-Il est possible d'accéder au Swagger correspondant à votre domaine OKMS en cliquant sur le lien présent dans [l'espace client OVHcloud](/links/manager) au niveau du dashboard de votre domaine OKMS.
+Il est possible d'accéder au Swagger correspondant à votre domaine OKMS en cliquant sur le lien présent dans le [dashboard de votre domaine OKMS](/links/control-panel/security-kms).
 
 ![swagger](images/swagger.png){.thumbnail}
 

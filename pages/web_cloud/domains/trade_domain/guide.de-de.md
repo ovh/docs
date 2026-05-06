@@ -1,12 +1,12 @@
 ---
 title: "Domainnamen - Inhaber eines Domainnamens ändern"
 excerpt: "Erfahren Sie hier, wie Sie den Inhaber eines Domainnamens ändern oder die zugehörigen Informationen aktualisieren"
-updated: 2025-06-11
+updated: 2026-02-10
 ---
 
 ## Ziel
 
-Neben der Angabe von [Kontakten](/pages/account_and_service_management/account_information/managing_contacts) erfordert die Registrierung eines Domainnamens die Angabe von Informationen zu dessen Inhaber. In diesem Zusammenhang bezeichnet der **Inhaber** entweder eine natürliche Person oder eine Organisation (Unternehmen, Verein, etc.), die über Nutzungsrechte an diesem Domainnamen verfügt. Unter einem **Inhaberwechsel** (*domain trade*) versteht man eine rechtsverbindliche Änderung dieser Daten bzw. die Übertragung von Nutzungsrechten an einen neuen Inhaber. Zum Beispiel ist der Inhaberwechsel das obligatorische Verfahren bei einer Namensänderung eines Unternehmens.
+Neben der Angabe von [Kontakten](/pages/account_and_service_management/account_information/managing_contacts) erfordert die Registrierung eines Domainnamens die Angabe von Informationen zu dessen Inhaber. In diesem Zusammenhang bezeichnet der **Inhaber** entweder eine natürliche Person oder eine Organisation (Unternehmen, Verein, etc.), die über Nutzungsrechte an diesem Domainnamen verfügt. Unter einem **Inhaberwechsel** (Domainnamen-Übertragung) versteht man eine rechtsverbindliche Änderung dieser Daten bzw. die Übertragung von Nutzungsrechten an einen neuen Inhaber. Zum Beispiel ist der Inhaberwechsel das obligatorische Verfahren bei einer Namensänderung eines Unternehmens.
 
 > [!primary]
 > Bei dieser Operation wird Ihr Domainname nicht auf einen anderen OVHcloud Kunden-Account übertragen.
@@ -22,16 +22,26 @@ Neben der Angabe von [Kontakten](/pages/account_and_service_management/account_i
 
 ## Voraussetzungen
 
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 - Sie verwalten einen bei OVHcloud registrierten Domainnamen, für den keine Operation (Inhaberwechsel, Transfer, Erstellung) im Gange ist. Wenn vor kurzem ein solcher Vorgang für Ihren Domainnamen abgeschlossen wurde, gilt regulär eine Frist von 60 Kalendertagen, bevor eine neue Operation gestartet werden kann.
 - Ihr Kunden-Account ist der [Kontakt für Administrator und Abrechnung](/pages/account_and_service_management/account_information/managing_contacts) des entsprechenden Domainnamens.
 - Sie haben die Zustimmung des aktuellen Inhabers des Domainnamens, den Inhaberwechsel durchzuführen oder Daten zu aktualisieren.
+
+<!-- CP-NAV-START:web-domains -->
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direkter Link:** [Domainnamen](/links/control-panel/web-domains)
+- **Navigationspfad:** `Web Cloud`{.action} > `Domainnamen`{.action} > Wählen Sie Ihren Domainnamen aus
+
+---
+<!-- CP-NAV-END:web-domains -->
 
 ## In der praktischen Anwendung
 
 > [!warning]
 >
-> Die folgenden Anweisungen beschreiben die gängigste Methode um den Inhaber eines Domainnamens zu ändern und gelten für die meisten **T**op **L**evel **D**omains (**TLD**). Als **TLD** wird der letzte Teil des Domainamens bzw. dessen Endung bezeichnet, also *.com*, *.net*, *.de* etc.
+> Die folgenden Anweisungen beschreiben die gängigste Methode um den Inhaber eines Domainnamens zu ändern und gelten für die meisten **T**op **L**evel **D**omains (**TLD**). Als **TLD** wird der letzte Teil des Domainnamens bzw. dessen Endung bezeichnet, also *.com*, *.net*, *.de* etc.
 >
 > Die besonderen Verfahrensvorschriften für **TLD**s werden von der zuständigen Vergabestelle, d.h. der **Registry**, festgelegt. Registrare wie OVHcloud müssen diese Regeln einhalten und haben keinen Einfluss auf Registry-Entscheidungen.
 >
@@ -43,39 +53,34 @@ Neben der Angabe von [Kontakten](/pages/account_and_service_management/account_i
 >
 > - Die Webseite der zuständigen **TLD**-Registry.
 > - Die [Beschreibungen der bei OVHcloud verfügbaren **TLD**s](/links/web/domains-tld).
-> - Statusaktualisierungen des Domainnamens. Loggen Sie sich in Ihrem [OVHcloud Kundencenter](/links/manager) ein und gehen Sie dann in den Bereich `Web Cloud`{.action}. Klicken Sie auf `Laufende Operationen`{.action}.
+> - Statusaktualisierungen des Domainnamens. Öffnen Sie dazu die Seite [Laufende Vorgänge](/links/control-panel/web-ongoing-operations).
 >
 
 ### Initiieren des Inhaberwechsels oder Ändern der Inhaberinformationen
 
-Klicken Sie jeweils auf die Tabs, um die **7** Schritte anzuzeigen.
+<!-- CP-STEPS-START:change-domain-owner -->
+Klicken Sie auf die Tabs, um die **6** Schritte anzuzeigen.
 
 > [!tabs]
 > **Schritt 1**
 >>
->> Loggen Sie sich in Ihre [OVHcloud Kundencenter](/links/manager) ein und gehen Sie in den Bereich `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Schritt 2**
->>
->> Klicken Sie auf das Menü `Domainnamen`{.action} und wählen Sie den Domainnamen aus.
+>> Gehen Sie auf die Seite [Domainnamen](/links/control-panel/web-domains), und wählen Sie den betreffenden Domainnamen aus.
 >>
 >> ![Domain Names](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
 >>
-> **Schritt 3**
+> **Schritt 2**
 >>
 >> Im Bereich **Abo** finden Sie den Abschnitt **Kontakte**. Klicken Sie rechts auf den Button `...`{.action} und anschließend auf `Die Kontakte verwalten`{.action}.
 >>
 >> ![Change owner](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/manage-contacts.png){.thumbnail}
 >>
-> **Schritt 4**
+> **Schritt 3**
 >>
->> Auf der neuen Seite klicken Sie auf den Button `Ändern`{.action} im Bereich **Inhaber**. 
+>> Auf der neuen Seite klicken Sie auf den Button `Ändern`{.action} im Bereich **Inhaber**.
 >>
 >> ![Manage contacts and owners](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/manage-contacts-and-owners.png){.thumbnail}
 >>
-> **Schritt 5**
+> **Schritt 4**
 >>
 >> > [!warning]
 >> >
@@ -87,7 +92,7 @@ Klicken Sie jeweils auf die Tabs, um die **7** Schritte anzuzeigen.
 >>
 >> ![Owner informations](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/owner.png){.thumbnail}
 >>
-> **Schritt 6**
+> **Schritt 5**
 >>
 >> Es öffnet sich ein neuer Browser-Tab mit allen in Frage kommenden Domains. Wählen Sie einen Domainnamen in der Liste aus, indem Sie das Feld links davon ankreuzen. Dieser Schritt kann auch verwendet werden, um eine Gruppenoperation zu starten. So ist es beispielsweise möglich, einen Inhaberwechsel für mehrere Domainnamen gleichzeitig durchzuführen, zum Beispiel um den Inhaber aller Domainnamen mit der Endung *.ovh* zu ändern, sofern deren aktuelle Inhaber identisch sind.
 >>
@@ -95,7 +100,7 @@ Klicken Sie jeweils auf die Tabs, um die **7** Schritte anzuzeigen.
 >>
 >> Klicken Sie nach der Auswahl auf `Weiter`{.action}.
 >>
-> **Schritt 7**
+> **Schritt 6**
 >>
 >> Achten Sie im Formular für die Angaben des Inhabers darauf, dass alle Pflichtfelder gültige Informationen enthalten. Achten Sie auf Eingabefehler und vermeiden Sie möglichst Zeichen außerhalb des *[ASCII printable](http://facweb.cs.depaul.edu/sjost/it212/documents/ascii-pr.htm)*-Bereichs. Beachten Sie auch, dass falsche oder ungenaue Angaben zu einem technischen Fehler und damit zu einer Verzögerung des gesamten Prozesses führen können.
 >>
@@ -104,10 +109,11 @@ Klicken Sie jeweils auf die Tabs, um die **7** Schritte anzuzeigen.
 >> - Eine E-Mail an den aktuellen Inhaber
 >> - Eine E-Mail an den zukünftigen Inhaber
 >>
->> Wenn die E-Mail-Adresse im Rahmen des Inhaberwechsels nicht geändert wird, werden beide E-Mails and die Referenz-E-Mail-Adresse gesendet. Beide müssen jeweils bestätigt werden.
+>> Wenn die E-Mail-Adresse im Rahmen des Inhaberwechsels nicht geändert wird, werden beide E-Mails an die Referenz-E-Mail-Adresse gesendet. Beide müssen jeweils bestätigt werden.
 >>
 >> Sobald beide Empfänger die Anfrage per E-Mail bestätigt haben, wird die Änderung des Inhabers des Domainnamens wirksam.
 >>
+<!-- CP-STEPS-END:change-domain-owner -->
 
 > [!warning]
 >

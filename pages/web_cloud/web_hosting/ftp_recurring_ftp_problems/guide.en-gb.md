@@ -1,7 +1,7 @@
 ---
 title: "Troubleshooting recurring errors when using FTP software"
 excerpt: "Find out how to resolve the most common FTP software related issues"
-updated: 2025-10-20
+updated: 2026-03-31
 ---
 
 ## Objective
@@ -19,7 +19,17 @@ Using FTP software when logging in to your [Web Hosting plan](/links/web/hosting
 ## Requirements
 
 - An OVHcloud [Web Hosting plan](/links/web/hosting)
-- Access to the [OVHcloud Control Panel](/links/manager)
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Hosting plans](/links/control-panel/web-hosting)
+- **Navigation path:** `Web Cloud`{.action} > `Hosting plans`{.action} > Select your web hosting plan
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## Instructions
 
@@ -31,18 +41,11 @@ This message coming from [FileZilla](/pages/web_cloud/web_hosting/ftp_filezilla_
 
 If the data you want to exchange via this link is not confidential, click `OK`{.action}.
 
-Otherwise, go to the [OVHcloud Control Panel](/links/manager), go to the `Web Cloud`{.action} section, then `Hosting plans`{.action}. Select the hosting plan concerned, then choose the `FTP-SSH`{.action} tab.
-
-If you have a [Personal](/links/web/hosting-personal-offer) Web Hosting plan, tick the `Disabled`{.action} box in the `SFTP`{.action} column, then wait a few minutes.
-
-If you have a [Pro](/links/web/hosting-professional-offer) or [Performance](/links/web/hosting-performance-offer) Web Hosting plan, click on the `...`{.action} button to the right of the FTP user concerned, then on `Edit`{.action}.
-
-Choose `SFTP`{.action} or `Enabled`{.action} (to enable SSH on your hosting), click `Next`{.action} and then click on `Confirm`{.action}. Wait a few minutes.
+Otherwise, enable the SFTP protocol by following our guide "[Web Hosting - How to enable SFTP access](/pages/web_cloud/web_hosting/enable_sftp)".
 
 > [!primary]
 >
 > For any other error messages, see the `Troubleshooting` section of our [Web Hosting guides](/products/web-cloud-hosting).
->
 
 ### I transferred my files with FTP software, but my website does not appear.
 
@@ -58,26 +61,22 @@ If you are unable to log in, change your FTP password as described in this [guid
 
 A lack of file storage capacity on your Web Hosting plan may cause your site to malfunction when you try to modify or update it.
 
-To check the remaining storage space on your hosting, click on the tabs below to view each of the **3** steps.
+<!-- CP-STEPS-START:check-disk-space -->
+To check the remaining storage space on your hosting, click on the tabs below to view each of the **2** steps.
 
 > [!tabs]
 > **Step 1**
 >>
->> Log in to the [OVHcloud Control Panel](/links/manager), then go to the `Web Cloud`{.action} section.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Step 2**
->>
->> Click the `Hosting plans`{.action} menu, then select the web hosting plan concerned.
+>> Go to the [Hosting plans](/links/control-panel/web-hosting) page, then select the web hosting plan concerned.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Step 3**
+> **Step 2**
 >>
 >> You can find the storage space utilization of your hosting in the **General information** box, under **Disk space**.
 >>
 >> ![disk_space](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-disk-space.png){.thumbnail}
+<!-- CP-STEPS-END:check-disk-space -->
 
 ### I can't transfer my files to the FTP server.
 

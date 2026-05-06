@@ -1,7 +1,7 @@
 ---
 title: 'Exchange - Konfiguracja konta e-mail w programie Outlook dla systemu Windows'
 excerpt: 'Dowiedz się, jak skonfigurować konto Exchange w programie Outlook dla systemu Windows'
-updated: 2026-01-09
+updated: 2026-01-30
 ---
 
 <style>
@@ -34,10 +34,21 @@ Konta Exchange mogą być skonfigurowane w jednym z kompatybilnych programów po
 
 ## Wymagania początkowe
 
-- Wykupienie usługi [Exchange](/links/web/emails).
+- Wykupienie usługi [Exchange](/links/web/emails-exchange).
 - Posiadanie aplikacji [klasyczny program Outlook](https://support.microsoft.com/pl-pl/office/instalowanie-lub-ponowne-instalowanie-klasycznego-programu-outlook-na-komputerze-z-systemem-windows-5c94902b-31a5-4274-abb0-b07f4661edf5) w systemie Windows.
 - Dane do logowania do konta e-mail, które chcesz skonfigurować
 - Pole SRV OVHcloud musi być poprawnie skonfigurowane w strefie DNS domeny. Sprawdź nasz przewodnik [Dodaj domenę do usługi Exchange](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_adding_domain).
+
+<!-- CP-NAV-START:web-exchange -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Exchange](/links/control-panel/web-exchange)
+- **Ścieżka nawigacji:** `Web Cloud`{.action} > `Exchange`{.action} > Wybierz platformę
+
+---
+<!-- CP-NAV-END:web-exchange -->
 
 /// details | Informacje dotyczące zarządzania i konfiguracji usług OVHcloud
 
@@ -71,21 +82,55 @@ Dostarczamy ten przewodnik, aby pomóc Ci w wykonywaniu codziennych zadań. Niem
 
 ![Outlook](images/config-outlook-exchange01.png){.thumbnail .h-500}
 
-- Zaznacz `Konto poczty` i uzupełnij poniższe informacje:
-    - **Imię i nazwisko**: ustaw nazwę do wyświetlenia.
-    - **Adres poczty**: wpisz pełny adres e-mail.
-    - **Hasło**: wpisz hasło przypisane do adresu e-mail.
-    - **Potwierdź hasło**: ponownie wpisz hasło przypisane do adresu e-mail.
-- Kliknij `Dalej`{.action}, aby kontynuować.
+**Na Windowsie 11 interfejs klasycznego Outlooka może się różnić, gdy dodajesz konto.**
 
-![exchange](images/config-outlook-exchange02.png){.thumbnail .h-500}
+W zależności od historii korzystania z Outlooka na danym komputerze, konkretna konfiguracja może spowodować wyświetlenie innego interfejsu. W niektórych przypadkach może być wyłączony tzw. „nowoczesny” interfejs (**interfejs 1**) na korzyść klasycznego interfejsu (**interfejs 2**).
 
-- Jeśli konfiguracja Twojej nazwy domeny jest poprawna, może pojawić się komunikat o autoryzacji połączenia z serwerem Exchange OVHcloud. Kliknij `Autoryzuj`{.action} **(1)**, aby umożliwić automatyczną konfigurację konta Exchange.
-- Pojawia się drugie okno uwierzytelniania, wpisz hasło do swojego adresu e-mail **(2)**.
+Dlatego zachęcamy, aby sprawdzić rozdział odpowiadający interfejsowi, który widzisz na ekranie.
 
-![exchange](images/config-outlook-exchange03.png){.thumbnail .h-500}
-
-Po autoryzacji i uwierzytelnieniu na serwerze Exchange OVHcloud konfiguracja zostanie zakończona, a konto będzie gotowe do użytku.
+> [!tabs]
+> **Interfejs 1**
+>>
+>> - Podaj swój adres e-mail, a następnie kliknij `Zaawansowane opcje`{.action}.
+>> - Zaznacz pole `Skonfiguruj moje konto ręcznie`{.action} i kliknij `Połączenie`{.action}.
+>>
+>> ![exchange](images/config-outlook-legacy-exchange02.png){.thumbnail}
+>>
+>> - Spośród dostępnych typów kont wybierz **Exchange**.
+>> - W następnym oknie wprowadź hasło do swojego adresu e-mail, zaznacz pole pozwalające zapamiętać dane logowania i kliknij `OK`{.action}.
+>>
+>> ![exchange](images/config-outlook-legacy-exchange03.png){.thumbnail}
+>>
+>> > [!primary]
+>> > 
+>> > Jeśli pojawi się komunikat informujący, że Outlook nie mógł skonfigurować Twojego konta, może to oznaczać, że wpis SRV OVHcloud nie został poprawnie skonfigurowany w strefie DNS Twojej nazwy domeny.
+>> >
+>> > ![exchange](images/config-outlook-legacy-exchange04.png){.thumbnail}
+>> >
+>> > Zalecamy sprawdzenie konfiguracji nazwy domeny skonfigurowanej w Twojej usłudze Exchange w Twoim [Panelu klienta OVHcloud](/links/manager), zakładka `Przypisane domeny`{.action}, następnie kolumna `Diagnostyka`{.action} w tabeli.
+>>
+>> - Jeśli konfiguracja Twojej nazwy domeny jest poprawna, może pojawić się komunikat o autoryzacji połączenia z serwerami OVHcloud. Zaakceptuj go, aby umożliwić automatyczną konfigurację Twojego konta Exchange.
+>> - Ustaw następnie okres przechowywania elementów Twojego konta Exchange, **lokalnie na Twoim komputerze**. Kliknij `Dalej`{.action}, a następnie `Zakończ`{.action}.
+>>
+>> ![exchange](images/config-outlook-legacy-exchange05.png){.thumbnail}
+>>
+> **Interfejs 2**
+>>
+>> - Zaznacz `Konto poczty` i uzupełnij poniższe informacje:
+>>     - **Imię i nazwisko**: ustaw nazwę do wyświetlenia.
+>>     - **Adres poczty**: wpisz pełny adres e-mail.
+>>     - **Hasło**: wpisz hasło przypisane do adresu e-mail.
+>>     - **Potwierdź hasło**: ponownie wpisz hasło przypisane do adresu e-mail.
+>> - Kliknij `Dalej`{.action}, aby kontynuować.
+>>
+>> ![exchange](images/config-outlook-exchange02.png){.thumbnail .h-500}
+>>
+>> - Jeśli konfiguracja Twojej nazwy domeny jest poprawna, może pojawić się komunikat o autoryzacji połączenia z serwerem Exchange OVHcloud. Kliknij `Autoryzuj`{.action} **(1)**, aby umożliwić automatyczną konfigurację konta Exchange.
+>> - Pojawia się drugie okno uwierzytelniania, wpisz hasło do swojego adresu e-mail **(2)**.
+>>
+>> ![exchange](images/config-outlook-exchange03.png){.thumbnail .h-500}
+>>
+>> Po autoryzacji i uwierzytelnieniu na serwerze Exchange OVHcloud konfiguracja zostanie zakończona, a konto będzie gotowe do użytku.
 
 ### Użyj konta e-mail
 

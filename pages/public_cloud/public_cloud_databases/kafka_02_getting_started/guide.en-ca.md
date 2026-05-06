@@ -1,5 +1,5 @@
 ---
-title: Kafka - Getting started
+title: Getting started with Analytics with Kafka
 excerpt: Discover Kafka on OVHcloud Public Cloud
 updated: 2025-08-25
 ---

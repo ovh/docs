@@ -26,7 +26,17 @@ La configuración, la gestión y la responsabilidad de los servicios que OVHclou
 
 - Disponer de un [dominio](/links/web/domains)
 - Tener un [plan de hosting](/links/web/hosting).
-- Haber iniciado sesión en el [área de cliente de OVHcloud](/links/manager).
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [Web hosting](/links/control-panel/web-hosting)
+- **Ruta de navegación:** `Web Cloud`{.action} > `Alojamientos`{.action} > Seleccione su alojamiento web
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## Procedimiento
 

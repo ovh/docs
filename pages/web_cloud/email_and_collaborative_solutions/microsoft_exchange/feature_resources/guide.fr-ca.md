@@ -6,45 +6,51 @@ updated: 2025-04-28
 
 ## Objectif
 
-Cette fonction collaborative de Exchange permet de créer des adresses de messagerie dédiées aux ressources de votre organisation, telles que les salles de conférence et les équipements partagés. L'utilisation de ces comptes de ressources permet d'optimiser  l'organisation d'événements dans un environnement de travail collaboratif, en fournissant des contrôles de disponibilité et en intégrant les ressources de manière transparente à vos calendriers Exchange.
+Cette fonction collaborative de Exchange permet de créer des adresses de messagerie dédiées aux ressources de votre organisation, telles que les salles de conférence et les équipements partagés. L'utilisation de ces comptes de ressources permet d'optimiser l'organisation d'événements dans un environnement de travail collaboratif, en fournissant des contrôles de disponibilité et en intégrant les ressources de manière transparente à vos calendriers Exchange.
 
 **Ce guide explique la gestion des ressources à l'aide de l'espace client OVHcloud et de l'application Outlook Web App (OWA).**
 
 ## Prérequis
 
 - Disposer d'une [solution Exchange OVHcloud](/links/web/emails-hosted-exchange) déjà configurée
-- Être connecté votre [espace client OVHcloud](/links/manager)
 - Disposer des identifiants de connexion pour le ou les comptes de messagerie ayant accès à la ressource
+
+<!-- CP-NAV-START:web-exchange -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Exchange](/links/control-panel/web-exchange)
+- **Pour accéder à vos services :** `Web Cloud`{.action} > `Exchange`{.action} > Sélectionnez votre plateforme
+
+---
+<!-- CP-NAV-END:web-exchange -->
 
 ## En pratique
 
-1. Connectez-vous à votre [espace client OVHcloud](/links/manager).
-1. Rendez-vous dans la partie `Web Cloud`{.action}.
-1. Dans la rubrique `MICROSOFT`, cliquez sur `Exchange`{.action}.
-1. Sélectionnez la plateforme concernée.
-1. Cliquez sur l'onglet `Plus +`{.action} , puis sur `Ressources`{.action}.
+Cliquez sur l'onglet `Plus+`{.action}, puis sur `Ressources`{.action}.
 
 ### Étape 1 : créer une ressource
 
 ![créer ressource](images/exchange-resources-step1.png){.thumbnail}
 
-Cliquez sur le bouton `Ajouter un compte de ressource`{.action} pour créer votre première ressource. Dans la nouvelle fenêtre, renseignez les champs suivants:
+Cliquez sur le bouton `Ajouter un compte de ressource`{.action} pour créer votre première ressource. Dans la nouvelle fenêtre, renseignez les champs suivants :
 
 ![créer ressource](images/exchange-resources-step2.png){.thumbnail}
 
 |Nom|Description|
 |---|---|
 |E-mail de la ressource|Entrez l'adresse de la ressource. Notez que vous ne pouvez pas choisir une adresse de messagerie existante.|
-|Nom de la ressource|Nom complet qui apparaît dans votre  [espace client OVHcloud](/links/manager) et dans [le webmail OVHcloud](/links/web/email) (OWA).|
+|Nom de la ressource|Nom complet qui apparaît dans votre [espace client OVHcloud](/links/manager) et dans [le webmail OVHcloud](/links/web/email) (OWA).|
 |Capacité|Vous pouvez définir la taille maximale d'une ressource (en spécifiant par exemple le nombre de places assises d'une pièce ou les sièges d'un véhicule de société partagé).|
 |Permettre les conflits|Si cette case est cochée, vous pourrez créer des événements de calendrier se chevauchant et impliquant la même ressource.|
-|Type de ressource|Choisissez le type de ressource: « Équipement » ou « Salle ».|
+|Type de ressource|Choisissez le type de ressource : « Équipement » ou « Salle ».|
 
 Cliquez sur `Suivant`{.action} pour passer au résumé, puis confirmez la tâche en cliquant sur `Créer`{.action}.
 
 ### Étape 2 : utiliser des ressources
 
-Vos ressources peuvent être gérées à partir du tableau de l'onglet « Ressources ». Cliquez sur `...`{.action} pour modifier ou supprimer une ressource. L'option  `Configurer les délégations`{.action} s'affichera également. Avec cette option, vous pourrez déléguer l'accès de la même manière que pour un compte Exchange. Retrouvez les détails dans [ce guide](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/feature_delegation).
+Vos ressources peuvent être gérées à partir du tableau de l'onglet « Ressources ». Cliquez sur `...`{.action} pour modifier ou supprimer une ressource. L'option `Configurer les délégations`{.action} s'affichera également. Avec cette option, vous pourrez déléguer l'accès de la même manière que pour un compte Exchange. Retrouvez les détails dans [ce guide](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/feature_delegation).
 
 ![utiliser ressources](images/exchange-resources-step3.png){.thumbnail}
 
@@ -52,7 +58,7 @@ Vos ressources peuvent être gérées à partir du tableau de l'onglet « Ressou
 
 > [!primary]
 >
-Consultez également notre guide sur le [Partage de calendriers depuis l'interface OWA](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/owa_calendar_sharing).
+> Consultez également notre guide sur le [Partage de calendriers depuis l'interface OWA](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/owa_calendar_sharing).
 >
 
 Connectez-vous à votre compte Exchange via le [webmail OVHcloud](/links/web/email). Basculez vers l'interface « Calendrier » en cliquant sur le « lanceur d'application » dans le coin supérieur gauche, puis en sélectionnant l'icône `Calendrier`{.action}.
@@ -83,7 +89,7 @@ Le gestionnaire d'événements se compose de trois volets :
 - (6) Afficher comme : choisissez un état pour votre calendrier de disponibilité.
 - (7) Ajouter un rappel par courrier : une option permettant d'envoyer des rappels par e-mail à vous-même ou à tous les participants.
 
-Saisissez votre message d'invitation dans l'éditeur  (8) et continuez à ajouter des participants à votre événement.
+Saisissez votre message d'invitation dans l'éditeur (8) et continuez à ajouter des participants à votre événement.
 
 Si vous tentez d'ajouter une ressource déjà réservée (« occupée »), un message s'affiche et suggère d'utiliser l'[Assistant de planification](./#planification) (9), qui fournit une vue d'ensemble plus large du calendrier de la période choisie.
 
@@ -115,7 +121,7 @@ Après avoir créé l'événement (en cliquant sur `Envoyer`{.action} dans la ba
 
 ![message de refus](images/exchange-resources-step8.png){.thumbnail}
 
-## Aller plus loin
+## Aller plus loin <a name="go-further"></a>
 
 [Consulter son compte Exchange depuis l’interface OWA](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa)
 

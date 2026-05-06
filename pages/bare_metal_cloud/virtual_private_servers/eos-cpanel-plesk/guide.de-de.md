@@ -14,6 +14,17 @@ In dieser Anleitung erfahren Sie, wie Sie die Kontinuität Ihrer lizenzbasierten
 
 - Sie haben einen [VPS](/links/bare-metal/vps) mit einer [kompatiblen Distribution](/links/bare-metal/vps-os).
 
+<!-- CP-NAV-START:baremetal-vps -->
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direkter Link:** [VPS-Verwaltung](/links/control-panel/baremetal-vps)
+- **Navigationspfad:** `Bare Metal Cloud`{.action} > `Virtual Private Server`{.action} > Wählen Sie Ihren VPS aus
+
+---
+<!-- CP-NAV-END:baremetal-vps -->
+
 ## In der praktischen Anwendung
 
 Die Herausgeber von **Plesk** und **cPanel** kündigen das Ende der Unterstützung für die folgenden Betriebssysteme an:
@@ -41,8 +52,6 @@ Weitere Informationen zum Support finden Sie in der offiziellen Dokumentation:
 > - [Plesk Recommendations](https://docs.plesk.com/en-US/obsidian/administrator-guide/plesk-administration/securing-plesk.59464/)
 
 #### 1. Aktuelles System überprüfen
-
-Loggen Sie sich in Ihrem [OVHcloud Kundencenter](/links/manager), gehen Sie zum Bereich `Bare Metal Cloud`{.action} und wählen Sie Ihren Server im Bereich `Virtual Private Server`{.action} aus.
 
 ![EOS Plesk cPanel](images/vpshome.png){.thumbnail}
 

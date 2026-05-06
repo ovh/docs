@@ -1,7 +1,7 @@
 ---
 title: "Liste des adresses IP à autoriser pour votre CDN Infrastructure"
 excerpt: "Découvrez l'ensemble des adresses IP à autoriser pour votre CDN Infrastructure"
-updated: 2024-06-20
+updated: 2026-02-17
 ---
 
 ## Objectif
@@ -25,7 +25,7 @@ Retrouvez ci-dessous la liste des adresses IP :
 |Adresse IP|
 |---|
 |144.217.2.0/23|
-|46.105.196.0/20|
+|46.105.192.0/20|
 |51.254.41.128/25|
 |137.74.120.0/22|
 |51.68.15.224/27|

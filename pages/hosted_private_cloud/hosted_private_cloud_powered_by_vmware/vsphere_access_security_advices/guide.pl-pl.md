@@ -12,7 +12,16 @@ Zalecamy ograniczenie dostępu do infrastruktury w celu zapewnienia jej optymaln
 
 ## Wymagania początkowe
 
-- Dostęp do [panelu klienta OVHcloud](/links/manager).
+<!-- CP-NAV-START:privatecloud-vmware-vsphere -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [VMware vSphere](/links/control-panel/privatecloud-vmware-vsphere)
+- **Ścieżka nawigacji:** `Hosted Private Cloud`{.action} > `Managed VMware vSphere`{.action} > Wybierz usługę vSphere
+
+---
+<!-- CP-NAV-END:privatecloud-vmware-vsphere -->
 
 ## W praktyce
 

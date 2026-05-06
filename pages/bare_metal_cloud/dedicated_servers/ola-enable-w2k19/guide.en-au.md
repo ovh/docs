@@ -1,22 +1,35 @@
 ---
-title: How to Configure Your NIC for OVHcloud Link Aggregation in Windows Server 2019
-excerpt: Enable OVHcloud Link Aggregation in your "Windows Server 2019" server
-updated: 2021-03-25
+title: "Configure OVHcloud Link Aggregation on a Dedicated Server (Windows)"
+excerpt: "Enable OVHcloud Link Aggregation in your \"Windows Server 2019\" server"
+updated: 2026-04-20
 ---
 
 ## Objective
 
-OVHcloud Link Aggregation (OLA) technology is designed by our teams to increase your server’s availability, and boost the efficiency of your network connections. In just a few clicks, you can aggregate your network cards and make your network links redundant. This means that if one link goes down, traffic is automatically redirected to another available link.
+OVHcloud Link Aggregation (OLA) technology is designed by our teams to increase your server's availability, and boost the efficiency of your network connections. In just a few clicks, you can aggregate your network cards and make your network links redundant. This means that if one link goes down, traffic is automatically redirected to another available link. The available bandwidth is also doubled thanks to aggregation.
+Aggregation is based on IEEE 802.3ad, Link Aggregation Control Protocol (LACP) technology.
+
+**This guide explains how to configure NIC Teaming for OLA in Windows Server 2019.**
 
 ## Requirements
 
 - [Configuring OVHcloud Link Aggregation in the OVHcloud Control Panel](/pages/bare_metal_cloud/dedicated_servers/ola-enable-manager)
-- Access to the [OVHcloud Control Panel](/links/manager)
+
+<!-- CP-NAV-START:baremetal-dedicated-servers -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Dedicated Servers](/links/control-panel/baremetal-dedicated-servers)
+- **Navigation path:** `Bare Metal Cloud`{.action} > `Dedicated servers`{.action} > Select your server
+
+---
+<!-- CP-NAV-END:baremetal-dedicated-servers -->
 
 ## Instructions
 
 Because you have a private-private configuration for your NICs in OLA, you will be unable to SSH into the server. Thus, you will need to leverage the IPMI tool to access the server.
-<br>To do so, first log in to your [OVHcloud Control Panel](/links/manager). In the `Bare Metal Cloud`{.action} section, select your server from `Dedicated Servers`{.action} and click the `IPMI`{.action} tab (1).
+<br>To do so, click the `IPMI`{.action} tab (1).
 
 Next, click the `From a Java applet (KVM)`{.action} button (2).
 
@@ -54,7 +67,7 @@ Next, right-click on your NIC team and select **Properties** from the drop-down 
 
 On the ensuing pop-up window, double-click the **Internet Protocol Version 4 (TCP/IPv4)** button.
 
-![ipv4](images/ipv4.png){.thumbnail}
+![Internet Protocol Version 4 TCP/IPv4 properties](images/ipv4.png){.thumbnail}
 
 Click the button next to "Use the following IP address" and add your chosen private IP and subnet. Click the **OK** button once you have confirmed that your settings are correct.
 
@@ -64,10 +77,12 @@ To test that your NIC team is working, ping another server on the same vRack.  I
 
 ## Go further
 
-[Configuring OVHcloud Link Aggregation in the OVHcloud Control Panel](/pages/bare_metal_cloud/dedicated_servers/ola-enable-manager).
+[Configuring OVHcloud Link Aggregation in the OVHcloud Control Panel](/pages/bare_metal_cloud/dedicated_servers/ola-enable-manager)
 
-[How to Configure Your NIC for OVHcloud Link Aggregation in Debian 9](/pages/bare_metal_cloud/dedicated_servers/ola-enable-debian9).
+[How to configure your NIC for OVHcloud Link Aggregation in Debian 12 or Ubuntu 24.04 using Netplan](/pages/bare_metal_cloud/dedicated_servers/lacp-enable-netplan)
 
-[How to Configure Your NIC for OVHcloud Link Aggregation in SLES 15](/pages/bare_metal_cloud/dedicated_servers/ola-enable-sles15).
+[How to configure your NIC for OVHcloud Link Aggregation in Debian 9 to 11](/pages/bare_metal_cloud/dedicated_servers/ola-enable-debian9)
+
+[How to Configure Your NIC for OVHcloud Link Aggregation in SLES 15](/pages/bare_metal_cloud/dedicated_servers/ola-enable-sles15)
 
 Join our [community of users](/links/community).

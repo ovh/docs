@@ -23,18 +23,26 @@ Indeed, you will learn how to:
 
 To follow this guide, ensure you meet the following requirements:
 
-- Access to the [OVHcloud Control Panel (UI)](/links/manager).
 - A **Public Cloud project**.
 - A user account created on this Public Cloud project, with the **AI** and **Object Storage** roles assigned. For more information on how to create such a user, please consult the [Manage AI users and roles](/pages/public_cloud/ai_machine_learning/gi_01_manage_users) documentation.
 - The `ovhai` CLI installed. Please refer to our guide on [how to install ovhai CLI](/pages/public_cloud/ai_machine_learning/cli_10_howto_install_cli) for assistance.
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Navigation path:** `Public Cloud`{.action} > Select your project
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## Instructions
 
 ### Create an S3 compatible bucket
 
-To create your first **S3 compatible Object Storage bucket**, first log in to the [OVHcloud Control Panel (UI)](/links/manager) and navigate to the `Public Cloud`{.action} section, in the horizontal menu at the top of the website and select the Public Cloud project you want to use.
-
-Then, click the `Object Storage`{.action} button in the left-hand side bar, in the `Storage`{.action} section:
+To create your first **S3 compatible Object Storage bucket**, click [this link](/links/control-panel/publiccloud-projects) to access your Public Cloud project, then click the `Object Storage`{.action} button in the left-hand side bar, in the `Storage`{.action} section:
 
 ![S3 compatible bucket creation](images/s3-bucket-object-storage.png)
 

@@ -21,13 +21,24 @@ Este guia fornece instruções passo a passo para implementar e configurar o SNS
 ## Requisitos
 
 - Um [projeto Public Cloud](/pages/public_cloud/public_cloud_cross_functional/create_a_public_cloud_project) na sua conta OVHcloud.
-- Ter acesso à [Área de Cliente OVHcloud](/links/manager).
 - Um [utilizador OpenStack](/pages/public_cloud/public_cloud_cross_functional/create_and_delete_a_user) (facultativo).
 - Conhecimentos básicos em rede.
 - Uma conta Stormshield criada através do [site Stormshield](https://documentation.stormshield.eu/SNS/v4/en/Content/Installation_and_first_time_configuration/Firewall_license_installation.htm).
 - Assegurar que o vRack está ativado e configurado para permitir uma comunicação segura entre os componentes da infraestrutura.
 - Um bloco de endereços [Additional IP](/links/network/additional-ip) (/29) para permitir o failover e a configuração de alta disponibilidade.
 - Uma licença Stormshield Elastic Virtual Appliance BYOL (**B**ring **Y**our **O**wn **L**icence), obtida junto de [parceiros ou revendedores terceiros](https://www.stormshield.com/partner/partner-finder/), que deverá fornecer aquando da instalação e da configuração.
+
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Acesso à Área de Cliente OVHcloud
+
+- **Ligação direta:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Caminho de navegação:** `Public Cloud`{.action} > Selecione o seu projeto
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## Instruções
 
@@ -131,7 +142,7 @@ openstack server create --flavor b3-32 --image stormshield-SNS-EVA-4.8.3 --netwo
 
 #### Configurar as instâncias SNS EVA
 
-Aceda à [Área de Cliente OVHcloud](/links/manager), vá à secção `Public Cloud`{.action} e selecione o projeto Public Cloud em causa. No menu à esquerda, clique em `Instâncias`{.action} no separador **Compute** e encontre as suas duas instâncias SNS EVA.
+Na secção `Public Cloud`{.action}, selecione o seu projeto. No menu à esquerda, clique em `Instâncias`{.action} no separador **Compute** e encontre as suas duas instâncias SNS EVA.
 
 Aceda à consola VNC para as duas instâncias SNS EVA e configure a disposição do teclado e a palavra-passe.
 

@@ -61,7 +61,7 @@ You will be guided through the entire process, from selecting the Storage Server
 
     ![activate worm mode](images/activate_worm_mode.png){.thumbnail}
 
-10. Enter the name of the bucket you want to use, or create a new one {.action}.
+10. Enter the name of the bucket you want to use, or create a new one.
 
     ![bucket name](images/bucket_name.png){.thumbnail}
 

@@ -12,14 +12,18 @@ Al crear su cuenta de OVHcloud, especificó una dirección de correo electrónic
 
 ## Requisitos
 
-- Tener acceso al [área de cliente de OVHcloud](/links/manager)
+<!-- CP-NAV-START:account-messages -->
+---
+
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [Mis mensajes](/links/control-panel/account-messages)
+- **Ruta de navegación:** Haga clic en su nombre en la parte superior derecha > `Mis mensajes`{.action}
+
+---
+<!-- CP-NAV-END:account-messages -->
 
 ## Procedimiento
-
-Para acceder a la gestión de mensajes en su espacio cliente OVHcloud:
-
-1. Inicie sesión en su [área de cliente de OVHcloud](/links/manager).
-1. Haga clic en su nombre en la parte superior derecha y luego en `Mis mensajes`{.action}.
 
 ### Mis mensajes
 

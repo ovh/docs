@@ -1,5 +1,5 @@
 ---
-title: Public Cloud Databases - How to configure your Private Network
+title: Configure the private network for Public Cloud Databases
 excerpt: Connect a Public Cloud Database to vRack
 updated: 2023-08-17
 ---
@@ -14,8 +14,18 @@ The OVHcloud vRack is a private network solution that enables our customers to r
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](/links/manager)
 - A [Public Cloud project](/links/public-cloud/public-cloud) in your OVHcloud account.
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Navigation path:** `Public Cloud`{.action} > Select your project
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## Considerations
 Here are some considerations to take into account when using private network:

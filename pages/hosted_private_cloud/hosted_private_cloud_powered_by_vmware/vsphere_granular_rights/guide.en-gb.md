@@ -14,6 +14,17 @@ In addition to global datacenter rights, you can assign granular rights to users
 - Access to the [OVHcloud API](/links/api)
 - A [user](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vsphere_interface_connexion) already created in your Hosted Private Cloud service
 
+<!-- CP-NAV-START:privatecloud-vmware-vsphere -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [VMware vSphere](/links/control-panel/privatecloud-vmware-vsphere)
+- **Navigation path:** `Hosted Private Cloud`{.action} > `Managed VMware vSphere`{.action} > Select your vSphere service
+
+---
+<!-- CP-NAV-END:privatecloud-vmware-vsphere -->
+
 ## Instructions
 
 ### Add rights to a vSphere object
@@ -49,9 +60,7 @@ In addition to global datacenter rights, you can assign granular rights to users
 
 ### Viewing rights in the OVHcloud Control Panel
 
-1. Open the [OVHcloud Control Panel](/links/manager). Click `Hosted Private Cloud`{.action} in the top bar, then `Managed VMware vSphere`{.action} in the left menu, and select your PCC service.
-
-2. Go to the `Users`{.action} tab. On the desired user row, open the `…`{.action} menu and click `View/Edit the rights for each DC`{.action}.
+1. Click [this link](/links/control-panel/privatecloud-vmware-vsphere) to access the `VMware vSphere`{.action} section, then go to the `Users`{.action} tab. On the desired user row, open the `…`{.action} menu and click `View/Edit the rights for each DC`{.action}.
 
     ![Users tab and actions menu](images/users-actions-menu.png){.thumbnail}
 

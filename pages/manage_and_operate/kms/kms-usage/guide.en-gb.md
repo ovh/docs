@@ -31,7 +31,7 @@ It's possible to communicate with the KMS using:
 
 ### Using the KMS API via the Swagger UI
 
-You can access the KMS Swagger UI by clicking on the link in the [OVHcloud Control Panel](/links/manager), in your KMS dashboard.
+You can access the KMS Swagger UI by clicking on the link in your [Key Management Service](/links/control-panel/security-kms) domain dashboard.
 
 ![swagger](images/swagger.png){.thumbnail}
 

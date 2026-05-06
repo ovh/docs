@@ -1,42 +1,52 @@
 ---
-title: Verbinden eines OVHcloud Domainnamens mit einem Webflow Hosting
-excerpt: Erfahren Sie hier, wie Sie die DNS-Zone Ihres OVHcloud Domainnamens konfigurieren, um sie mit einem Webflow Hosting zu verwenden
-updated: 2024-06-13
+title: "Verbinden eines OVHcloud Domainnamens mit einem Webflow Hosting"
+excerpt: "Erfahren Sie hier, wie Sie die DNS-Zone Ihres OVHcloud Domainnamens konfigurieren, um sie mit einem Webflow Hosting zu verwenden"
+updated: 2026-03-18
 ---
 
 ## Ziel
 
-Sie haben bereits einen Domainnamen bei OVHcloud und möchten ihn mit einem Webflow Hosting verbinden. In dieser Anleitung erfahren Sie, wie Sie die OVHcloud DNS-Zone bearbeiten, um die Konfiguration Ihres Webflow Hostings zu ermöglichen.
+Sie sind Inhaber eines Domainnamens bei OVHcloud und möchten diesen mit einem Webflow Hosting verbinden. In dieser Anleitung erfahren Sie, wie Sie die OVHcloud DNS-Zone bearbeiten, um die Konfiguration Ihres Webflow Hostings zu ermöglichen.
 
 **Erfahren Sie hier, wie Sie Ihren OVHcloud Domainnamen mit einem Webflow Hosting verbinden.**
 
 > [!warning]
 >
 > - Der Webflow Support hat keinen Zugriff auf die Einstellungen Ihrer OVHcloud Domainnamen und kann Sie deshalb nicht diesbezüglich beraten.
->
-> - OVHcloud stellt Ihnen Dienstleistungen zur Verfügung, für deren Konfiguration und Verwaltung Sie die alleinige Verantwortung tragen. Es liegt somit bei Ihnen, sicherzustellen, dass diese ordnungsgemäß funktionieren.<br><br> Diese Anleitung soll Sie bei allgemeinen Aufgaben bestmöglich unterstützen. Dennoch empfehlen wir Ihnen, einen [spezialisierten Dienstleister](/links/partner) oder den Herausgeber der verwendeten Software zu kontaktieren, falls Sie auf Schwierigkeiten stoßen. Leider können wir Ihnen keine weitergehende technische Unterstützung hierzu anbieten. Weitere Informationen finden Sie am [Ende dieser Anleitung](#gofurther).
+> - OVHcloud stellt Ihnen Dienstleistungen zur Verfügung, für deren Konfiguration und Verwaltung Sie die alleinige Verantwortung tragen. Es liegt somit bei Ihnen, sicherzustellen, dass diese ordnungsgemäß funktionieren.<br><br> Diese Anleitung soll Sie bei allgemeinen Aufgaben bestmöglich unterstützen. Dennoch empfehlen wir Ihnen, einen [spezialisierten Dienstleister](/links/partner) und/oder den Herausgeber der verwendeten Software zu kontaktieren, falls Sie auf Schwierigkeiten stoßen. Leider können wir Ihnen keine weitergehende technische Unterstützung hierzu anbieten. Weitere Informationen finden Sie am [Ende dieser Anleitung](#go-further).
 >
 
 ## Voraussetzungen
 
 - Sie verfügen über einen bei OVHcloud registrierten [Domainnamen](/links/web/domains).
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager) mit den erforderlichen [Berechtigungen zur Verwaltung](/pages/account_and_service_management/account_information/managing_contacts) des Domainnamens.
-- Sie verfügen über ein Hosting bei Webflow.
+- Sie verfügen über die [erforderlichen Berechtigungen zur Verwaltung](/pages/account_and_service_management/account_information/managing_contacts) des Domainnamens.
+- Sie verfügen über ein Webflow Hosting.
 - Sie haben Zugriff auf die Verwaltung dieses Hostings bei Webflow.
+
+<!-- CP-NAV-START:web-dns-zone -->
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direkter Link:** [DNS-Zone](/links/control-panel/web-dns-zone)
+- **Navigationspfad:** `Web Cloud`{.action} > `DNS-Zone`{.action} > Wählen Sie Ihren Domainnamen aus
+
+---
+<!-- CP-NAV-END:web-dns-zone -->
 
 ## In der praktischen Anwendung
 
-Bevor Sie dieser Anleitung folgen, empfehlen wir, sich mit der Konfiguration von DNS-Zonen vertraut machen. Nutzen Sie dazu unsere Anleitung "[Bearbeiten einer OVHcloud DNS-Zone](/pages/web_cloud/domains/dns_zone_edit)".
+Bevor Sie die Schritte dieser Anleitung durchführen, empfehlen wir Ihnen, unsere Anleitung "[Bearbeiten einer OVHcloud DNS-Zone](/pages/web_cloud/domains/dns_zone_edit)" zu lesen.
 
 > [!warning]
 >
-> Ihre DNS-Zone ist möglicherweise bereits konfiguriert oder mit einem Hosting verbunden. In dieser Anleitung erfahren Sie, wie Sie die DNS-Einträge zur Verbindung mit Ihrem Webflow Hosting konfigurieren. Einige müssen gelöscht werden, um Konflikte mit den erforderlichen DNS-Einträgen zu vermeiden. Andere müssen nur noch geändert oder neu erstellt werden. Für ein besseres Verständnis verwenden wir als Beispiel den Domainnamen "**mydomain.ovh**". Ersetzen Sie ihn bei der Konfiguration durch Ihren Domainnamen.
+> Ihre DNS-Zone ist möglicherweise bereits vorkonfiguriert oder mit einem Hosting verbunden. In dieser Anleitung erfahren Sie, wie Sie die DNS-Einträge zur Verbindung mit Ihrem Webflow Hosting konfigurieren. Einige Einträge müssen gelöscht werden, um Konflikte mit den in dieser Konfiguration erforderlichen DNS-Einträgen zu vermeiden. Andere müssen nur geändert oder neu erstellt werden. Für ein besseres Verständnis verwenden wir als Beispiel den Domainnamen "**mydomain.ovh**". Ersetzen Sie ihn bei der Konfiguration durch Ihren Domainnamen.
 
 ### 1. Ihr Webflow Hosting konfigurieren
 
-Wenn Sie ein Webflow-Hosting mit einem OVHcloud Domainnamen verwenden, müssen Sie Ihr Hosting zunächst gemäß den Anweisungen im Abschnitt **How to connect your custom domain** von [**dieser Seite der Webflow-Dokumentation**](https://university.webflow.com/lesson/manually-connect-a-custom-domain?topics=hosting-code-export#how-to-connect-your-custom-domain) vorbereiten.
+Bereiten Sie zunächst Ihr Webflow Hosting vor, indem Sie den Anweisungen im Abschnitt **How to connect your custom domain** auf [**dieser Seite der Webflow-Dokumentation**](https://university.webflow.com/lesson/manually-connect-a-custom-domain?topics=hosting-code-export#how-to-connect-your-custom-domain) folgen.
 
-### 2. DNS-Einträge in Ihrem OVHcloud Kunden-Account konfigurieren
+### 2. DNS-Einträge in Ihrem OVHcloud Account konfigurieren
 
 > [!warning]
 >
@@ -47,58 +57,89 @@ Wenn Sie ein Webflow-Hosting mit einem OVHcloud Domainnamen verwenden, müssen S
 > - Gehen Sie zum Abschnitt "**How to set your DNS records**" der Webflow-Dokumentation.<br>
 > Die folgenden Anweisungen helfen Ihnen bei der Konfiguration Ihrer OVHcloud DNS-Zone.
 
-Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein und gehen Sie in den Bereich `Web Cloud`{.action}. Klicken Sie in der linken Spalte auf `Domainnamen`{.action} und wählen Sie den Domainnamen aus der Liste aus. Gehen Sie dann auf den Tab `DNS-Zone`{.action}.
-
-Die Tabelle listet alle DNS-Einträge des ausgewählten Domainnamens auf.
-
-![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/tab-mydomain-anycast.png){.thumbnail}
-
-Jeder DNS-Eintrag kann geändert werden, indem Sie rechts in der Zeile auf den Button `...`{.action} und dann auf `Eintrag bearbeiten`{.action} klicken.
-
-Folgen Sie den in den Tabs aufgeführten Schritten:
+<!-- CP-STEPS-START:configure-dns-records -->
+Klicken Sie auf die nachstehenden Tabs, um die **5** Schritte nacheinander anzuzeigen.
 
 > [!tabs]
 > **Schritt 1**
->> **A-Eintrag**<br><br>
->> Klicken Sie oben in der DNS-Eintragstabelle auf das Filtermenü, und wählen Sie `A`.<br> aus, um die vorhandenen A-Einträge zu identifizieren
+>>
+>> Gehen Sie auf die Seite [DNS-Zone](/links/control-panel/web-dns-zone), und wählen Sie den betreffenden Domainnamen aus.
+>>
+>> ![DNS-Zone](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
+>>
+>> Die angezeigte Tabelle listet alle DNS-Einträge des ausgewählten Domainnamens auf.
+>>
+> **Schritt 2**
+>>
+>> **Konfiguration der A-Einträge**
+>>
+>> **1 - Identifikation:** Filtern Sie die DNS-Einträge, indem Sie oben rechts in der Tabelle im Filtermenü den Typ `A` auswählen.
+>>
 >> ![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/filter-a.png){.thumbnail}
 >>
->> - Klicken Sie auf den Button `...`{.action} rechts in der Tabellenzeile, die Ihrer Domain ohne Subdomain entspricht (Beispiel: `mydomain.ovh.`), und klicken Sie dann auf `Eintrag bearbeiten`{.action}.<br>
->> - Wenn ein Eintrag für die Subdomain "www" vorhanden ist (Beispiel: `www.mydomain.ovh.`), müssen Sie diesen löschen, damit er nicht in Konflikt mit dem CNAME-Eintrag steht, den Sie in Schritt 4 eingeben. Klicken Sie auf den Button `...`{.action} Tabellenzeile zu Ihrer Domain mit der Subdomain "www" und dann auf `Eintrag löschen`{.action}.<br>
->> - Wenn Sie keinen A-Eintrag haben, klicken Sie auf den Button `Eintrag hinzufügen`{.action} oben rechts und wählen Sie `A`{.action}.<br><br>
->> Sie müssen nacheinander zwei A-Einträge erstellen, um die zwei IPv4-Adressen von Webflow anzugeben.
->> Lassen Sie das Feld **Subdomain** leer und geben Sie die erste IPv4-Adresse `75.2.70.75` für Webflow in das Feld **Ziel** ein.
->> Klicken Sie auf `Weiter`{.action} und bestätigen Sie Ihren A-Eintrag. Wiederholen Sie den Vorgang für die zweite IPv4-Adresse `99.83.190.102`, und fahren Sie mit Schritt 2 fort.
-> **Schritt 2**
->> **AAAA-Eintrag**<br><br>
->> Klicken Sie oben in der DNS-Eintragstabelle auf das Filtermenü, und wählen Sie `AAAA`.<br> aus, um die vorhandenen AAAA-Einträge zu identifizieren.
+>> Identifizieren Sie alle vorhandenen "A"-Einträge für Ihren Domainnamen allein (z.B. `mydomain.ovh.`) und für die Subdomain "www" (z.B. `www.mydomain.ovh.`).
+>>
+>> **2 - Löschung:** Löschen Sie alle vorhandenen "A"-Einträge für die Subdomain "www". Wenn mehr als 2 "A"-Einträge für den Domainnamen allein vorhanden sind, löschen Sie die überzähligen Einträge, sodass nur 2 übrig bleiben. Klicken Sie für jeden zu löschenden Eintrag auf den Button `...`{.action} rechts in der entsprechenden Zeile und dann auf `Eintrag löschen`{.action}.
+>>
+>> **3 - Änderung:** Ändern Sie jeden verbleibenden "A"-Eintrag für den Domainnamen allein, indem Sie auf den Button `...`{.action} und dann auf `Eintrag bearbeiten`{.action} klicken. Ersetzen Sie das Ziel durch eine der 2 Webflow IPv4-Adressen (eine andere Adresse pro Eintrag):
+>>
+>> - `75.2.70.75`
+>> - `99.83.190.102`
+>>
+>> Klicken Sie auf `Weiter`{.action} und bestätigen Sie.
+>>
+>> **4 - Hinzufügen:** Wenn weniger als 2 "A"-Einträge vorhanden waren, erstellen Sie die fehlenden Einträge. Klicken Sie oben rechts auf `Eintrag hinzufügen`{.action}, wählen Sie den Eintragstyp `A`{.action}, lassen Sie das Feld **Subdomain** leer und geben Sie im Feld **Ziel** jede noch nicht zugewiesene IPv4-Adresse ein. Klicken Sie auf `Weiter`{.action} und bestätigen Sie.
+>>
+>> Fahren Sie dann mit Schritt 3 fort.
+>>
+> **Schritt 3**
+>>
+>> **Löschung der AAAA-Einträge**
+>>
+>> **1 - Identifikation:** Filtern Sie die DNS-Einträge, indem Sie oben rechts in der Tabelle im Filtermenü den Typ `AAAA` auswählen.
+>>
 >> ![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/filter-aaaa.png){.thumbnail}
 >>
->> - Klicken Sie auf den Button `...`{.action} rechts in der Tabellenzeile, die Ihrer Domain ohne Subdomain entspricht (Beispiel: `mydomain.ovh.`), und klicken Sie dann auf `Eintrag löschen`{.action}.<br>
->> - Wenn ein Eintrag für die Subdomain "www" vorhanden ist (Beispiel: `www.mydomain.ovh.`), löschen Sie diesen ebenfalls, damit er nicht in Konflikt mit dem CNAME-Eintrag steht, den Sie in Schritt 4 eingeben. Klicken Sie auf den Button `...`{.action} rechts in der Tabellenzeile Ihrer Domain mit der Subdomain "www" und dann auf `Eintrag löschen`{.action}.<br>
->> - Wenn Sie keinen existierenden AAAA-Eintrag haben, fahren Sie mit Schritt 3 fort.
-> **Schritt 3**
->> **TXT-Eintrag**<br><br>
->> Klicken Sie oben in der DNS-Eintragstabelle auf das Filtermenü, und wählen Sie `TXT`.<br> aus, um vorhandene TXT-Einträge zu identifizieren.
+>> Identifizieren Sie alle vorhandenen "AAAA"-Einträge für Ihren Domainnamen allein (z.B. `mydomain.ovh.`) und für die Subdomain "www" (z.B. `www.mydomain.ovh.`).
+>>
+>> **2 - Löschung:** Löschen Sie alle identifizierten "AAAA"-Einträge (Domainname allein und Subdomain "www"), um Konflikte mit den neuen DNS-Einträgen zu vermeiden. Klicken Sie für jeden Eintrag auf den Button `...`{.action} rechts in der entsprechenden Zeile und dann auf `Eintrag löschen`{.action}.
+>>
+>> Wenn keine "AAAA"-Einträge vorhanden sind, fahren Sie mit Schritt 4 fort.
+>>
+> **Schritt 4**
+>>
+>> **Konfiguration des TXT-Eintrags**
+>>
+>> **1 - Identifikation:** Filtern Sie die DNS-Einträge, indem Sie oben rechts in der Tabelle im Filtermenü den Typ `TXT` auswählen.
+>>
 >> ![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/filter-txt.png){.thumbnail}
 >>
->> - Sind für den Domainnamen (Beispiel: `mydomain.ovh.`) und für dessen Subdomain "www" (Beispiel: `www.mydomain.ovh.`) TXT-Einträge vorhanden, müssen diese gelöscht werden, damit sie nicht in Konflikt mit dem CNAME-Eintrag stehen, den Sie in Schritt 4 eingeben. Klicken Sie auf den Button `...`{.action} rechts in den Tabellenzeile für den Domainnamen und der Subdomain "www" und dann auf `Eintrag löschen`{.action}.<br>
->> - Sie müssen einen Eintrag vom Typ TXT erstellen. Klicken Sie auf den Button `Einen Eintrag hinzufügen`{.action} oben rechts und wählen Sie `TXT`{.action}.
->> Füllen Sie das Feld **Subdomain** mit dem Wert `_webflow` aus, und geben Sie den Wert im Feld **Ziel** im Bereich `Site settings > Publishing tab > Production`{.action} Ihres Webflow Accounts vom Typ `one-time-verification=XXXXXXXX` ein. Ersetzen Sie `XXXXXXXX` durch den Wert in Ihrem Webflow-Konto.<br>
->> ![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/add-an-entry-to-the-dns-zone-txt-webflow.png){.thumbnail}<br><br>
->> Klicken Sie auf `Weiter`{.action}, um Ihren TXT-Eintrag zu bestätigen und mit Schritt 4 fortzufahren.
-> **Schritt 4**
->> **CNAME-Eintrag**<br><br>
->> Klicken Sie oben in der DNS-Eintragstabelle auf das Filtermenü und wählen Sie `CNAME`.<br>
+>> Identifizieren Sie alle vorhandenen "TXT"-Einträge für Ihren Domainnamen allein (z.B. `mydomain.ovh.`) und für die Subdomain "www" (z.B. `www.mydomain.ovh.`).
+>>
+>> **2 - Löschung:** Löschen Sie alle identifizierten "TXT"-Einträge (Domainname allein und Subdomain "www"), um Konflikte mit den neuen DNS-Einträgen zu vermeiden. Klicken Sie für jeden Eintrag auf den Button `...`{.action} rechts in der entsprechenden Zeile und dann auf `Eintrag löschen`{.action}.
+>>
+>> **3 - Hinzufügen:** Erstellen Sie einen TXT-Verifizierungseintrag. Klicken Sie oben rechts auf `Eintrag hinzufügen`{.action}, wählen Sie den Eintragstyp `TXT`{.action}, geben Sie `_webflow` im Feld **Subdomain** und im Feld **Ziel** den Wert vom Typ `one-time-verification=XXXXXXXX` ein, den Sie im Bereich `Site settings > Publishing tab > Production`{.action} Ihres Webflow Accounts finden. Klicken Sie auf `Weiter`{.action} und bestätigen Sie.
+>>
+>> Fahren Sie dann mit Schritt 5 fort.
+>>
+> **Schritt 5**
+>>
+>> **Konfiguration des CNAME-Eintrags**
+>>
+>> **1 - Identifikation:** Filtern Sie die DNS-Einträge, indem Sie oben rechts in der Tabelle im Filtermenü den Typ `CNAME` auswählen.
+>>
 >> ![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/filter-cname.png){.thumbnail}
 >>
->> - Klicken Sie auf den Button `...`{.action} rechts in der Tabellenzeile der Subdomain "www" (Beispiel: `mydomain.ovh.`) und klicken Sie dann auf `Eintrag bearbeiten`{.action}.<br>
->> - Wenn Sie keinen existierenden CNAME-Eintrag haben, klicken Sie auf den Button `Eintrag hinzufügen`{.action} oben rechts und wählen Sie `CNAME`{.action}.
->> Geben Sie im Feld **Subdomain** `www` ein und `proxy-ssl.webflow.com` im Feld **Ziel**.<br>
->> ![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/add-an-entry-to-the-dns-zone-cname-webflow.png){.thumbnail}<br><br>
->> Klicken Sie auf `Weiter`{.action}, um Ihren CNAME-Eintrag zu bestätigen.
+>> Identifizieren Sie alle vorhandenen "CNAME"-Einträge für die Subdomain "www" (z.B. `www.mydomain.ovh.`).
+>>
+>> **2 - Löschung:** Wenn mehrere "CNAME"-Einträge für die Subdomain "www" vorhanden sind, löschen Sie alle bis auf einen. Klicken Sie für jeden zu löschenden Eintrag auf den Button `...`{.action} rechts in der entsprechenden Zeile und dann auf `Eintrag löschen`{.action}.
+>>
+>> **3 - Änderung:** Wenn ein "CNAME"-Eintrag für die Subdomain "www" vorhanden ist, klicken Sie auf den Button `...`{.action} und dann auf `Eintrag bearbeiten`{.action}. Ersetzen Sie nur das **Ziel** durch `proxy-ssl.webflow.com.`. Klicken Sie auf `Weiter`{.action} und bestätigen Sie.
+>>
+>> Wenn kein "CNAME"-Eintrag für die Subdomain "www" vorhanden ist, klicken Sie oben rechts auf `Eintrag hinzufügen`{.action}, wählen Sie den Eintragstyp `CNAME`{.action}, geben Sie `www` im Feld **Subdomain** und `proxy-ssl.webflow.com.` im Feld **Ziel** ein. Klicken Sie auf `Weiter`{.action} und bestätigen Sie.
+<!-- CP-STEPS-END:configure-dns-records -->
 
-Die DNS-Zone ist nun zur Verwendung mit einem Webflow Hosting konfiguriert.
+Die DNS-Zone ist nun so konfiguriert, dass sie auf Ihr Webflow Hosting verweist.
 
 > [!primary]
 >
@@ -106,7 +147,7 @@ Die DNS-Zone ist nun zur Verwendung mit einem Webflow Hosting konfiguriert.
 
 Wenn Sie einen E-Mail-Dienst von OVHcloud nutzen oder eines [unserer E-Mail-Angebote](/links/web/emails) abonnieren möchten, müssen Sie auch Ihre DNS-Zone entsprechend konfigurieren. Lesen Sie dazu unsere Anleitung zur [Konfiguration eines MX-Eintrags](/pages/web_cloud/domains/dns_zone_mx).
 
-## Weiterführende Informationen <a name="gofurther"></a>
+## Weiterführende Informationen <a name="go-further"></a>
 
 [DNS-Server von OVHcloud Domainnamen ändern](/pages/web_cloud/domains/dns_server_general_information)
 
@@ -114,7 +155,7 @@ Wenn Sie einen E-Mail-Dienst von OVHcloud nutzen oder eines [unserer E-Mail-Ange
 
 [Bearbeiten einer OVHcloud DNS-Zone](/pages/web_cloud/domains/dns_zone_edit)
 
-Um die Verwaltung Ihrer Domainnamen auf einen anderen OVHcloud Kunden-Account zu delegieren, folgen Sie der Anleitung zur [Kontaktverwaltung](/pages/account_and_service_management/account_information/managing_contacts)".
+Um die Verwaltung Ihrer Domainnamen auf einen anderen OVHcloud Kunden-Account zu delegieren, folgen Sie der Anleitung zur [Kontaktverwaltung](/pages/account_and_service_management/account_information/managing_contacts).
 
 Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](/links/partner).
 

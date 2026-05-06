@@ -1,6 +1,6 @@
 ---
 title: 'Everything you need to know about SMS users'
-excerpt: 'Explore the features for API users to send SMS messages'
+excerpt: 'Find out how to create, configure and manage API users for sending SMS messages, including setting permissions and restrictions'
 updated: 2022-08-05
 ---
 
@@ -11,12 +11,23 @@ This guide will explain how to create and manage API users.
 ## Requirements
 
 - an active OVHcloud SMS account
-- You must be logged in to [OVHcloud Control Panel](/links/manager), in the `Telecom`{.action} section, then `SMS`{.action}.
+
+<!-- CP-NAV-START:telecom-sms -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [SMS](/links/control-panel/telecom-sms)
+- **Navigation path:** `Telecom`{.action} > `SMS`{.action} > Select your SMS account
+
+---
+<!-- CP-NAV-END:telecom-sms -->
 
 ![SMS Telecom Control Panel](/pages/assets/screens/control_panel/product-selection/telecom/tpl-telecom-03-en-sms.png){.thumbnail}
 
 ## Instructions
 
+<!-- CP-STEPS-START:instructions-overview -->
 ![sms-users](images/smsusers.png){.thumbnail}
 
 An SMS API user can be useful for a number of reasons:
@@ -35,19 +46,21 @@ To better manage credit for your SMS accounts, you can set a limit and quota for
 - The **quota** is the number of available SMS credits for each API user.
 
 - The **limit** corresponds to the minimum threshold of SMS credits that an API user must have before receiving an alert to recharge or not the balance of these credits.
+<!-- CP-STEPS-END:instructions-overview -->
 
 ### Step 1: Create an API user.
 
-Log in to the [OVHcloud Control Panel](/links/manager), then select `Telecom`{.action}. Next, click `SMS`{.action} and select your SMS account.
-
-Then click on the `API users`{.action} tab. To add a user, click `Actions`{.action}, then `Add`{.action}.
+<!-- CP-STEPS-START:create-api-user -->
+Click on the `API users`{.action} tab. To add a user, click `Actions`{.action}, then `Add`{.action}.
 
 ![sms-users](images/smsusers01e-2021.png){.thumbnail}
 
 You can enter a name for the API user. The password for an API user must contain 8 alpha-numeric characters.
+<!-- CP-STEPS-END:create-api-user -->
 
 ### Step 2: Set a quota for an API user
 
+<!-- CP-STEPS-START:set-quota -->
 You can manage quotas in the `API users`{.action} tab. Click `...`{.action} next to the user concerned, then `Quota`{.action}.
 
 ![sms-users](images/smsusers03e-2021.png){.thumbnail}
@@ -65,9 +78,11 @@ You can then perform two actions.
 >
 > As an example: an SMS account has a total of 200 credits. Assigning 150 credits to an API user will deduct 150 credits from the SMS account. It will then have 50 credits.
 >
+<!-- CP-STEPS-END:set-quota -->
 
 ### Step 3: Set a limit for an API user
 
+<!-- CP-STEPS-START:set-limit -->
 To configure a limit for a user, stay in the same menu, click `...`{.action}, then `Limit`{.action}.
 
 The following settings are now available:
@@ -82,9 +97,11 @@ The following settings are now available:
 >
 
 ![sms-users](images/smsusers05-2021.png){.thumbnail}
+<!-- CP-STEPS-END:set-limit -->
 
 ### Step 4: Define a restriction by IP for the http2sms feature
 
+<!-- CP-STEPS-START:ip-restriction -->
 You can secure the http2sms feature by applying IP restrictions for each API user.
 
 To enable it, click `...`{.action} to the right of the user, then `Restrictions`{.action}.
@@ -94,9 +111,11 @@ You can enter up to 5 different IP addresses for sending HTTPS requests.
 ![sms-users](images/smsusers06-2021.png){.thumbnail}
 
 For further details on the http2sms feature, please refer to our guide on [Sending SMS messages via a URL](/pages/web_cloud/messaging/sms/envoyer_des_sms_depuis_une_url_-_http2sms).
+<!-- CP-STEPS-END:ip-restriction -->
 
 ### Step 5: Specify a callback URL
 
+<!-- CP-STEPS-START:callback-url -->
 To set up custom tracking for SMS delivery (Delivery reporting or DLR), you can specify a callback URL by clicking `...`{.action} to the right of a user, then `Callback`{.action}.
 
 ![sms-users](images/smsusers07-2021.png){.thumbnail}
@@ -108,6 +127,7 @@ When the send status of an SMS message is updated, we call the specified URL. Th
 - date: The DLR date.
 - description: The DLR ID. The various ptt codes are explained in the table below.
 - descriptionDlr: The DLR status description.
+<!-- CP-STEPS-END:callback-url -->
 
 #### The ptt codes
 
@@ -124,7 +144,7 @@ The table below provides a **non-exhaustive** list of the main ptt codes.
 
 |Code|Description|
 |---|---|
-|1|An intermediary status notification indicating that the message has not yet been delivered due to a phone-related problem, but delivery is being re-tried.|
+|1|An intermediary status indicating that the message is being retried due to a phone-related issue.|
 |2|Used to indicate that the message has not yet been delivered due to an operator-related problem, but delivery is being re-tried within the network.|
 |3|Used to indicate that the message has been accepted by the operator.|
 |4|The message has been delivered.|

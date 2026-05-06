@@ -20,8 +20,18 @@ Para funcionar, cada servidor guarda na sua memória cache uma parte do seu webs
 
 ## Requisitos
 
-- Estar ligado à [Área de Cliente OVHcloud](/links/manager).
 - Ter um serviço de [alojamento Web da OVHcloud](/links/web/hosting).
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Acesso à Área de Cliente OVHcloud
+
+- **Ligação direta:** [Web hosting](/links/control-panel/web-hosting)
+- **Caminho de navegação:** `Web Cloud`{.action} > `Alojamentos`{.action} > Selecione o seu alojamento web
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## Instruções
 

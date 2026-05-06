@@ -1,7 +1,7 @@
 ---
-title: Bring Your Own Image (BYOI)
-excerpt: Découvrez comment déployer facilement vos propres images sur des serveurs dédiés
-updated: 2025-04-29
+title: "Déployer des images personnalisées avec le service Bring Your Own Image (BYOI) sur un serveur dédié"
+excerpt: "Déployez vos propres images OS personnalisées sur un serveur dédié OVHcloud grâce à la fonctionnalité Bring Your Own Image (BYOI)"
+updated: 2026-02-10
 ---
 
 ## Objectif
@@ -18,9 +18,19 @@ En plus des prérequis et limitations mentionnés ci-dessous, vous devez vous as
 ## Prérequis
 
 - Un [serveur dédié](/links/bare-metal/bare-metal) dans votre compte OVHcloud
-- Être connecté à l'[espace client OVHcloud](/links/manager) (pour la méthode de [déploiement via l'espace client](#viacontrolpanel) de ce guide)
 - Avoir accès à l'[API OVHcloud](/pages/manage_and_operate/api/first-steps) (pour la méthode de [déploiement via l'API](#viaapi) de ce guide)
 - Votre image doit être inférieure à la RAM du serveur moins 3 Gio
+
+<!-- CP-NAV-START:baremetal-dedicated-servers -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Serveurs dédiés](/links/control-panel/baremetal-dedicated-servers)
+- **Pour accéder à vos services :** `Bare Metal Cloud`{.action} > `Serveurs dédiés`{.action} > Sélectionnez votre serveur
+
+---
+<!-- CP-NAV-END:baremetal-dedicated-servers -->
 
 > [!warning]
 >
@@ -52,15 +62,13 @@ Certaines limites techniques sont liées à l’utilisation de produits physique
 
 ### Déploiement de votre image via l’espace client <a name="viacontrolpanel"></a>
 
-Connectez-vous à l'[espace client OVHcloud](/links/manager) et rendez-vous dans la section `Bare Metal Cloud`{.action} puis sélectionnez votre serveur sous `Serveurs dédiés`{.action}.
-
 Dans l'onglet `Informations générales`{.action}, cliquez sur le bouton `...`{.action} à côté de « Système (OS) » puis cliquez sur `Installer`{.action}.
 
-![BringYourOwnImage Control Panel 01](images/byoi-controlpanel01.png){.thumbnail}
+![Bouton d'installation Bring Your Own Image dans l'espace client](images/byoi-controlpanel01.png){.thumbnail}
 
-A l'étape suivante, sélectionnez `Personnalisé` dans le menu puis `Bring Your Own Image - byoi` et cliquez sur `Suivant`{.action}.
+À l'étape suivante, sélectionnez `Personnalisé` dans le menu puis `Bring Your Own Image - byoi` et cliquez sur `Suivant`{.action}.
 
-![BringYourOwnImage Control Panel 03](images/byoi-controlpanel03.png){.thumbnail}
+![Sélection d'image personnalisee Bring Your Own Image dans l'espace client](images/byoi-controlpanel03.png){.thumbnail}
 
 Vous allez être redirigé vers la page de configuration. Assurez-vous que l'URL de votre image est au bon format. Remplissez le reste des champs obligatoires de cette page. Une fois que vous avez confirmé que les informations sont correctes, cliquez sur `Confirmer`{.action}.
 
@@ -68,9 +76,9 @@ Vous trouverez plus de détails sur les options dans la section « [options de d
 
 Pour plus d'informations et des exemples sur ConfigDrive de Cloud-Init, consultez la documentation officielle sur [cette page](https://cloudinit.readthedocs.io/en/22.1_a/topics/examples.html).
 
-![BringYourOwnImage Control Panel 04](images/byoi-controlpanel04.png){.thumbnail}
+![Page de configuration Bring Your Own Image dans l'espace client](images/byoi-controlpanel04.png){.thumbnail}
 
-### Déploiement de votre image via les API <a name="viaapi"></a>
+### Déploiement de votre image via l'API <a name="viaapi"></a>
 
 Connectez-vous sur [https://api.ovh.com/](/links/api) puis rendez-vous dans la section `/dedicated/server`{.action}.
 
@@ -151,17 +159,23 @@ Une fois les champs complétés, démarrez le déploiement en cliquant sur `Exec
 | customizations/httpHeaders?Value | Valeur des en-têtes HTTP | ❌² |
 | userMetadata/efiBootloaderPath | Le chemin du bootloader EFI | ✅³ |
 
-¹ Il peut s'agir d'un `#cloud-config` ou d'un script. Il doit être sur une ligne et avoir `\n` pour la ligne-retour.<br />
+¹ Il peut s'agir d'un `#cloud-config` ou d'un script. Sa représentation JSON doit être sur une seule ligne avec `\n` pour les retours à la ligne, car les chaînes JSON ne peuvent pas contenir de retours à la ligne littéraux.<br />
 ² À utiliser uniquement si vous avez besoin d'en-têtes HTTP, tels que `Basic Auth`<br />
-³ Exemples de chemin EFI :
+³ Le chemin du bootloader EFI est utilisé par iPXE pour démarrer votre système d'exploitation. Pour plus d'informations, consultez notre guide « [Comprendre le processus de démarrage des serveurs dédiés](/pages/bare_metal_cloud/dedicated_servers/boot-process) ». Exemples :
+
+> [!primary]
+>
+> Les chemins ci-dessous utilisent l'échappement JSON : `\\` représente un seul antislash. Par exemple, `\\efi\\debian\\grubx64.efi` correspond au chemin `\efi\debian\grubx64.efi`.
+>
 
 | Système d'exploitation | efiBootloaderPath | 
 |-|-|
 | Debian | `\\efi\\debian\\grubx64.efi` |
 | Ubuntu | `\\efi\\ubuntu\\grubx64.efi` |
-| Windows | `\\efi\microsoft\\boot\\bootmgfw.efi` |
+| Windows | `\\efi\\microsoft\\boot\\bootmgfw.efi` |
 | FreeBSD | `\\efi\\FreeBSD\\loader.efi` |
 | Alma | `\\efi\\almalinux\\shimx64.efi` |
+| Arch Linux | `\\efi\\arch\\grubx64.efi` |
 | Gentoo | `\\efi\\boot\\bootx64.efi` |
 
 > [!primary]
@@ -175,9 +189,9 @@ Le tableau suivant donne un aperçu des erreurs clients les plus connues et de l
 
 |Message d'erreur|Détails|Solution(s)|
 |---|---|---|
-|Please provide checkSum AND checkSumType or none of them|Vous avez précisé l'un des 2 champs parmi : `imageCheckSum` et `imageCheckSumType`.|Précisez les 2 valeurs ou aucune d'entre elle.|
+|Please provide checkSum AND checkSumType or none of them|Vous avez précisé l'un des 2 champs parmi : `imageCheckSum` et `imageCheckSumType`.|Précisez les 2 valeurs ou aucune d'entre elles.|
 |image provided format is `x` which does not match expected qcow2 format|Peu importe l'extension du fichier, son format réel doit être qcow2.|- Changer la valeur de `imageType` à `raw`.<br />- Convertissez votre image au format qcow2.|
-|image provided has a size of `n` bytes which is larger than `device` of `m` bytes|L'image spécifiée a une taille supérieure à celle du disque choisi pour l'installation.|- Si votre serveur possède plusieurs grappes de disques, vous pouvez réessayez une installation sur une autre grappe de disques à l'aide de l'argument `diskgroupid`.<br />- Vous devez réduire la taille de votre image.|
+|image provided has a size of `n` bytes which is larger than `device` of `m` bytes|L'image spécifiée a une taille supérieure à celle du disque choisi pour l'installation.|- Si votre serveur possède plusieurs grappes de disques, vous pouvez réessayer une installation sur une autre grappe de disques à l'aide de l'argument `diskgroupid`.<br />- Vous devez réduire la taille de votre image.|
 |Can't write `t` on disk|Impossible d'écrire l'image qcow2/raw sur le disque.|Modifier votre image de telle sorte que la commande `qemu-img convert -f "$imageType" -O raw $pathToImageFile "$device"` fonctionne.|
 |Could not download, `t` image is too big to download in memory.|Il n'y a pas assez d'espace en RAM pour télécharger l'image.|Réduisez la taille de votre image.|
 |Could not download image: `<message d'erreur>`|Impossible de télécharger l'image depuis `imageURL`.|Vérifiez qu'un téléchargement avec `curl` depuis votre serveur en rescue fonctionne. Si des en-têtes HTTP sont requis, vous devez les spécifier à l'aide des paramètres `httpHeaders`.|
@@ -191,5 +205,7 @@ Le tableau suivant donne un aperçu des erreurs clients les plus connues et de l
 [Bring Your Own Linux (BYOLinux)](/pages/bare_metal_cloud/dedicated_servers/bring-your-own-linux)
 
 [Comparaison entre Bring Your Own Image (BYOI) et Bring Your Own Linux (BYOLinux)](/pages/bare_metal_cloud/dedicated_servers/bring-your-own-image-versus-bring-your-own-linux)
+
+[Comprendre le processus de démarrage des serveurs dédiés](/pages/bare_metal_cloud/dedicated_servers/boot-process)
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).

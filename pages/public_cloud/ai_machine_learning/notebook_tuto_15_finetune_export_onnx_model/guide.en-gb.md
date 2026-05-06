@@ -38,10 +38,20 @@ Exporting your model in ONNX format allows you to **optimize the inference** of 
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](/links/manager)
 - An AI Notebooks project created inside a [Public Cloud project](/links/public-cloud/public-cloud) in your OVHcloud account
 - A user for AI Notebooks
 - A [Kaggle](https://www.kaggle.com/) account to download the dataset
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Navigation path:** `Public Cloud`{.action} > Select your project
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## Instructions
 
@@ -49,6 +59,7 @@ You can launch the notebook from the [OVHcloud Control Panel](/links/manager) or
 
 ### Launching a Jupyter notebook with "Conda" via UI (Control Panel)
 
+<!-- CP-STEPS-START:launch-notebook-ui -->
 To launch your notebook from the [OVHcloud Control Panel](/links/manager), refer to the following steps.
 
 #### Code editor
@@ -67,6 +78,7 @@ Using GPUs is recommended to train the image classification model: **densenet121
 >
 > Here, using `1 GPU` is sufficient.
 >
+<!-- CP-STEPS-END:launch-notebook-ui -->
 
 ### Launching a Jupyter notebook with "conda" via CLI
 

@@ -1,7 +1,7 @@
 ---
 title: Exchange - Configurer son compte e-mail sur Outlook classique pour Windows
 excerpt: Découvrez comment configurer un compte Exchange sur Outlook classique pour Windows
-updated: 2026-01-09
+updated: 2026-01-30
 ---
 
 <style>
@@ -34,10 +34,21 @@ Les comptes Exchange peuvent être configurés sur différents logiciels de mess
 
 ## Prérequis
 
-- Disposer d'une offre [Exchange](/links/web/emails).
+- Disposer d'une offre [Exchange](/links/web/emails-exchange).
 - Disposer de l'application [Outlook classique](https://support.microsoft.com/fr-fr/office/installer-ou-r%C3%A9installer-outlook-classique-sur-un-pc-windows-5c94902b-31a5-4274-abb0-b07f4661edf5) sur Windows.
 - Posséder les identifiants relatifs à l'adresse e-mail que vous souhaitez paramétrer.
 - Le champ SRV d'OVHcloud doit être correctement configuré dans la zone DNS du nom de domaine, n'hésitez pas à consulter notre guide [Ajouter un nom de domaine sur son service Exchange](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_adding_domain).
+
+<!-- CP-NAV-START:web-exchange -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Exchange](/links/control-panel/web-exchange)
+- **Pour accéder à vos services :** `Web Cloud`{.action} > `Exchange`{.action} > Sélectionnez votre plateforme
+
+---
+<!-- CP-NAV-END:web-exchange -->
 
 /// details | Informations relatives à la gestion et la configuration des services OVHcloud
 
@@ -71,21 +82,55 @@ Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur
 
 ![Outlook](images/config-outlook-exchange01.png){.thumbnail .h-500}
 
-- Laissez `Compte de courrier` coché et complétez les informations suivantes :
-    - **Nom** : définissez un nom d'affichage.
-    - **Adresse de courrier** : saisissez votre adresse e-mail complète.
-    - **Mot de passe** : saisissez le mot de passe associé à votre adresse e-mail.
-    - **Confirmer le mot de passe** : saisissez à nouveau le mot de passe associé à votre adresse e-mail.
-- Cliquez sur `Suivant`{.action} pour continuer.
+**Sur Windows 11, l'interface d'Outlook classique peut différer lorsque vous ajoutez un compte.**
 
-![exchange](images/config-outlook-exchange02.png){.thumbnail .h-500}
+Selon l’historique d’utilisation d’Outlook sur le poste concerné, une configuration spécifique peut entraîner l’affichage d’une interface différente. Dans certains cas, l’interface dite « moderne » (**interface 1**) peut être désactivée au profit de l’interface historique (**interface 2**).
 
-- Si la configuration de votre nom de domaine est valide, un message d'autorisation de connexion au serveur Exchange OVHcloud peut apparaître. Cliquez sur `Autoriser`{.action} **(1)** pour permettre la configuration automatique de votre compte Exchange.
-- Une seconde fenêtre d'authentification apparait, saisissez le mot de passe de votre adresse e-mail **(2)**.
+C’est pourquoi nous vous invitons à consulter le chapitre correspondant à l’interface affichée sur votre écran.
 
-![exchange](images/config-outlook-exchange03.png){.thumbnail .h-500}
-
-Après l'autorisation et l'authentification au serveur Exchange OVhcloud, la configuration sera terminée et votre compte opérationnel.
+> [!tabs]
+> **Interface 1**
+>>
+>> - Renseignez votre adresse e-mail, puis cliquez sur `Options avancées`{.action}.
+>> - Cochez ensuite la case `Configurer mon compte manuellement`{.action} et cliquez sur `Connexion`{.action}.
+>>
+>> ![exchange](images/config-outlook-legacy-exchange02.png){.thumbnail}
+>>
+>> - Parmi les types de comptes proposés, choisissez **Exchange**.
+>> - Dans la fenêtre suivante, saisissez le mot de passe de votre adresse e-mail, cochez la case permettant de mémoriser vos informations d'identification et cliquez sur `OK`{.action}.
+>>
+>> ![exchange](images/config-outlook-legacy-exchange03.png){.thumbnail}
+>>
+>> > [!primary]
+>> > 
+>> > Si un message vous indique qu'Outlook n'a pas pu configurer votre compte, cela peut signifier que l'enregistrement SRV d'OVHcloud n'est pas correctement configuré dans la zone DNS de votre nom de domaine.
+>> >
+>> > ![exchange](images/config-outlook-legacy-exchange04.png){.thumbnail}
+>> >
+>> > Nous vous recommandons de vérifier la configuration du nom de domaine paramétré sur votre service Exchange dans votre [espace client OVHcloud](/links/manager), onglet `Domaines associés`{.action}, puis colonne `Diagnostic`{.action} du tableau.
+>>
+>> - Si la configuration de votre nom de domaine est correcte, un message d'autorisation de connexion aux serveurs d'OVHcloud peut s'afficher. Acceptez-le pour permettre la configuration automatique de votre compte Exchange.
+>> - Définissez ensuite la période de conservation des éléments de vote compte Exchange, **en local sur votre ordinateur**. Cliquez sur `Suivant`{.action}, puis sur `Terminé`{.action}.
+>>
+>> ![exchange](images/config-outlook-legacy-exchange05.png){.thumbnail}
+>>
+> **Interface 2**
+>>
+>> - Laissez `Compte de courrier` sélectionné et complétez les informations suivantes :
+>>     - **Nom** : définissez un nom d'affichage.
+>>     - **Adresse de courrier** : saisissez votre adresse e-mail complète.
+>>     - **Mot de passe** : saisissez le mot de passe associé à votre adresse e-mail.
+>>     - **Confirmer le mot de passe** : saisissez à nouveau le mot de passe associé à votre adresse e-mail.
+>> - Cliquez sur `Suivant`{.action} pour continuer.
+>> 
+>> ![exchange](images/config-outlook-exchange02.png){.thumbnail .h-500}
+>>
+>> - Si la configuration de votre nom de domaine est correcte, un message d'autorisation de connexion au serveur Exchange d'OVHcloud peut s'afficher. Cliquez sur `Autoriser`{.action} **(1)** pour permettre la configuration automatique de votre compte Exchange.
+>> - Une seconde fenêtre d'authentification apparaît : saisissez le mot de passe de votre adresse e-mail **(2)**.
+>>
+>> ![exchange](images/config-outlook-exchange03.png){.thumbnail .h-500}
+>>
+>> Une fois l’autorisation et l’authentification effectuées sur le serveur Exchange d’OVHcloud, la configuration sera terminée et votre compte pleinement opérationnel.
 
 ### Utiliser l'adresse e-mail
 
@@ -126,6 +171,6 @@ Si vous devez effectuer une manipulation qui risquerait d'entrainer la perte des
 
 [Configurer son adresse e-mail comprise dans l’offre MX Plan ou dans une offre d’hébergement web sur Outlook pour Windows](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_outlook_2016)
 
-[Configurer son compte E-mail Pro sur Outlook pour Windows](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_outlook_2016)
+[Configurer son compte Email Pro sur Outlook pour Windows](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_outlook_2016)
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).

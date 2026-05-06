@@ -1,6 +1,6 @@
 ---
-title: "Jak zastąpić parę kluczy SSH"
-excerpt: "Dowiedz się, jak przywrócić dostęp do serwera w przypadku utraty klucza prywatnego przez wygenerowanie nowej pary kluczy SSH"
+title: "Jak wymienić utracony klucz SSH na serwerze dedykowanym"
+excerpt: "Odzyskaj dostęp do serwera dedykowanego OVHcloud, wymieniając utracony lub naruszony klucz SSH w trybie rescue."
 updated: 2024-04-04
 ---
 
@@ -26,7 +26,6 @@ Możesz jednak zalogować się do swojego serwera w [trybie Rescue OVHcloud](/pa
 ## Wymagania początkowe
 
 - Posiadanie [serwera dedykowanego](/links/bare-metal/bare-metal) lub [VPS](/links/bare-metal/vps) na koncie OVHcloud
-- Dostęp do [Panelu client OVHcloud](/links/manager)
 
 ## W praktyce
 

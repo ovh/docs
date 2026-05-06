@@ -21,15 +21,25 @@ Es posible configurar sus cuentas Email Pro en el cliente de correo que usted ut
 - Disponer de una dirección [Email Pro](/links/web/email-pro).
 - Tener el programa Mail instalado en su Mac.
 - Disponer del nombre de usuario y la contraseña de la cuenta de correo electrónico que quiera configurar.
- 
+
+<!-- CP-NAV-START:web-email-pro -->
+---
+
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [Email Pro](/links/control-panel/web-email-pro)
+- **Ruta de navegación:** `Web Cloud`{.action} > `Email Pro`{.action} > Seleccione su plataforma
+
+---
+<!-- CP-NAV-END:web-email-pro -->
+
 ## Procedimiento
 
 > [!primary]
 >
 > En nuestro ejemplo, hemos utilizado la mención servidor: pro<b>?</b>.mail.ovh.net. Sustituya la «?» por la cifra que designa al servidor de su servicio Email Pro.
 >
-> Puede consultar esta cifra en su [área de cliente de OVHcloud](/links/manager), en la sección `Web Cloud`{.action} y `Email Pro`{.action}. El nombre del servidor aparece en el marco **Conexión** de la pestaña `Información general`{.action}.
->
+> Haga clic en [este enlace](/links/control-panel/web-email-pro) para acceder a la sección `Email Pro`{.action}. El nombre del servidor aparece en la zona **Conexión** de la pestaña `Información general`{.action}.
 
 ### Añadir la cuenta
 

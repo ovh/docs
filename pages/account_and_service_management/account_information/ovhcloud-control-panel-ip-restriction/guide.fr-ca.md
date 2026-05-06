@@ -20,8 +20,18 @@ La mise en place de cette option, couplée à la sécurisation de votre compte p
 
 ## Prérequis
 
-- Être connecté à l'[espace client OVHcloud](/links/manager).
 - Avoir pris connaissance des [recommandations sur la gestion du mot de passe d'accès à votre compte](/pages/account_and_service_management/account_information/manage-ovh-password).
+
+<!-- CP-NAV-START:account-security -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Sécurité du compte](/links/control-panel/account-security)
+- **Pour y accéder :** Cliquez sur votre nom en haut à droite > `Mon compte`{.action} > `Sécurité`{.action}
+
+---
+<!-- CP-NAV-END:account-security -->
 
 ## En pratique
 
@@ -51,9 +61,7 @@ Si vous utilisez un réseau 4G/5G en complément, n'oubliez pas de récupérer �
 
 ### Etape 2 - Mettre en place une restriction d'accès par IP
 
-Connectez-vous à votre [espace client OVHcloud](/links/manager), cliquez sur votre nom en haut à droite, puis sur `Mon Compte`{.action}.
-
-Cliquez ensuite sur l'onglet `Sécurité`{.action} pour arriver sur la page suivante :
+Sur la page [Sécurité du compte](/links/control-panel/account-security), repérez la section **Restriction d'accès par IP**.
 
 ![Access from Manager](images/ip2.png){.thumbnail}
 

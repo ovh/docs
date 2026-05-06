@@ -21,6 +21,17 @@ Es posible configurar sus cuentas Email Pro en el cliente de correo que usted ut
 - Tener la aplicación Microsoft Outlook instalada en su dispositivo Mac.
 - Disponer del nombre de usuario y la contraseña de la cuenta de correo electrónico que quiera configurar.
 
+<!-- CP-NAV-START:web-email-pro -->
+---
+
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [Email Pro](/links/control-panel/web-email-pro)
+- **Ruta de navegación:** `Web Cloud`{.action} > `Email Pro`{.action} > Seleccione su plataforma
+
+---
+<!-- CP-NAV-END:web-email-pro -->
+
 > [!primary]
 >
 > Si utiliza Outlook para Windows, consulte nuestra guía [Configurar una cuenta Email Pro en Outlook para Windows](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_outlook_2016).
@@ -34,11 +45,7 @@ Es posible configurar sus cuentas Email Pro en el cliente de correo que usted ut
 >
 > En nuestro ejemplo, hemos utilizado la mención servidor: pro?.mail.ovh.net. Sustituya la «?» por la cifra que designa al servidor de su servicio Email Pro.
 >
-> 1. Conéctese a su [área de cliente de OVHcloud](/links/manager).
-> 1. Acceda al apartado `Web Cloud`{.action}.
-> 1. Haga clic en `Email Pro`{.action}.
-> 1. Seleccione la plataforma correspondiente.
-> 1. El nombre del servidor aparece en el marco **Conexión** de la pestaña `Información general`{.action}.
+> Haga clic en [este enlace](/links/control-panel/web-email-pro) para acceder a la sección `Email Pro`{.action}. El nombre del servidor aparece en el marco **Conexión** de la pestaña `Información general`{.action}.
 >
 
 Abra la aplicación Outlook en su dispositivo. Puede añadir una cuenta de dos formas distintas:

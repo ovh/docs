@@ -14,7 +14,17 @@ Możesz użyć uwierzytelnienia SSO (*Single Sign-On*), aby zalogować się do T
 
 - Posiadanie statusu administratora usługi Okta
 - Posiadanie [konta OVHcloud](/pages/account_and_service_management/account_information/ovhcloud-account-creation)
-- Dostęp do [Panelu klienta OVHcloud](/links/manager)
+
+<!-- CP-NAV-START:iam-saml-sso -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [SAML SSO](/links/control-panel/iam-saml-sso)
+- **Ścieżka nawigacji:** `Tożsamość, bezpieczeństwo i operacje`{.action} > `Users`{.action} > `SSO connection`{.action}
+
+---
+<!-- CP-NAV-END:iam-saml-sso -->
 
 ## W praktyce
 
@@ -78,13 +88,7 @@ Twoja usługa Okta jest od tej pory zaufana w OVHcloud jako dostawca usług. Nas
 
 ### Zapisz Okta na koncie OVHcloud i skonfiguruj połączenie
 
-Aby dodać Okta jako zaufanego dostawcę tożsamości, należy dostarczyć metadane dostawcy tożsamości w [Panelu klienta OVHcloud](/links/manager).
-
-Na pasku bocznym kliknij pozycję `Tożsamość, bezpieczeństwo i operacje`{.action}, a następnie na `Tożsamości`{.action}.
-
-![Dostęp do menu IAM](images/access_to_the_IAM_menu_01.png){.thumbnail}
-
-Następnie kliknij zakładkę `SSO`{.action} i kliknij przycisk `Logowanie SSO`{.action}.
+Aby dodać Okta jako zaufanego dostawcę tożsamości, należy dostarczyć metadane dostawcy tożsamości. Otwórz stronę [SAML SSO](/links/control-panel/iam-saml-sso) i kliknij przycisk `Logowanie SSO`{.action}.
 
 ![Dostęp do menu IAM](images/access_to_the_IAM_menu_03.png){.thumbnail}
 
@@ -116,7 +120,7 @@ Twoja usługa Okta jest teraz uważana za zaufanego dostawcę tożsamości. Jedn
 
 Należy teraz przypisać **roles** grupom użytkowników Okta w OVHcloud. W przeciwnym razie Twoje konto OVHcloud nie wie, co użytkownik może zrobić i domyślnie nie przyznaje mu żadnych uprawnień.
 
-Aby dodać grupę z poziomu [Panelu klienta OVHcloud](/links/manager) przejdź do sekcji `Tożsamości`{.action} i w zakładce `Grupy użytkowników`{.action}. Następnie kliknij przycisk `Zadeklaruj grupę`{.action} i wypełnij pola:
+W sekcji `Tożsamości`{.action} otwórz zakładkę `Grupy użytkowników`{.action}. Następnie kliknij przycisk `Zadeklaruj grupę`{.action} i wypełnij pola:
 
 - **Group name**: Nazwa grupy w Okta
 - **Role**: Poziom praw przyznanych tej grupie

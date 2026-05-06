@@ -1,7 +1,7 @@
 ---
 title: "Mise en place de Multicloud Snapshot Technology (MST) sur une infrastructure Nutanix on OVHcloud"
 excerpt: 'Comment activer MST avec un container Object Storage OVHcloud'
-updated: 2025-09-19
+updated: 2026-03-31
 ---
 
 ## Objectif
@@ -30,8 +30,8 @@ MST permet de **répliquer les snapshots** (UVM / Volume Groups) vers des stocka
 
 ### Cluster Nutanix
 
-- AOS 7.3 minimum 
-- Prism Central 7.3 minimum
+- AOS 7.5.1 minimum 
+- Prism Central 7.5.1 minimum
 
 ### Réseau
 
@@ -157,7 +157,7 @@ Configurez ensuite l’instance MST :
 
 ![13 Deploy mst parameters](images/mst13.png){.thumbnail}
 
-- **Object Store Provider** : Sélectionnez `Nutanix Object Store`{.action}.
+- **Object Store Provider** : Sélectionnez `S3 Compatible (Nutanix certified)`{.action}.
 - **Object Store Endpoint** : Indiquez l'endpoint URL de votre container, dans notre exemple [https://s3.gra.io.cloud.ovh.net/](https://s3.gra.io.cloud.ovh.net/).
 - **Bucket Name** : Indiquez le nom de votre container. Dans notre exemple, *mst-dr-gra*.
 - **Access Key** : Indiquez l'`Access Key` de votre container.

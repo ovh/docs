@@ -1,6 +1,6 @@
 ---
-title: 'How to assign a tag to a Bare Metal server'
-excerpt: 'Find out how to create and modify tags for each dedicated server via the OVHcloud Control Panel'
+title: "How to assign a tag to a Bare Metal server"
+excerpt: "Create and assign tags to your OVHcloud dedicated servers via the Control Panel for organised resource management."
 updated: 2025-07-01
 ---
 
@@ -20,19 +20,24 @@ For example, you can categorize your resources by site, service, or even securit
 ## Requirements
 
 - A [dedicated server](/links/bare-metal/bare-metal) in your OVHcloud account.
-- Access to the [OVHcloud Control Panel](/links/manager).
+
+<!-- CP-NAV-START:baremetal-dedicated-servers -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Dedicated Servers](/links/control-panel/baremetal-dedicated-servers)
+- **Navigation path:** `Bare Metal Cloud`{.action} > `Dedicated servers`{.action} > Select your server
+
+---
+<!-- CP-NAV-END:baremetal-dedicated-servers -->
 
 ## Instructions
 
 ### Assign a tag to a dedicated server via the OVHcloud Control Panel
 
-To tag a server:
+<!-- CP-STEPS-START:assign-tag -->
 
-1. Log in to your [OVHcloud Control Panel](/links/manager).
-1. Go to the `Bare Metal Cloud`{.action} section.
-1. Click `Dedicated servers`{.action} and select your server from the list.
-
-By default, you are redirected to the `General information`{.action} tab.
 
 ![General information](images/general_information.png){.thumbnail}
 
@@ -66,9 +71,11 @@ Finally, click the `Add`{.action} button to create the tag, then click the `Assi
 You will receive a green confirmation message, then see the list of tags applied to the chosen server.
 
 ![Tags - list with example](images/tag_list_with_example.png){.thumbnail}
+<!-- CP-STEPS-END:assign-tag -->
 
 ### Delete a tag on a dedicated server
 
+<!-- CP-STEPS-START:delete-tag -->
 To find the list of tags assigned to your server:
 
 1. Log in to your [OVHcloud Control Panel](/links/manager).
@@ -84,7 +91,12 @@ Then click `Remove`{.action}.
 A confirmation window will appear. Click the `Confirm`{.action} button to unassign the tag.
 
 ![Remove tag](images/remove_tag.png){.thumbnail}
+<!-- CP-STEPS-END:delete-tag -->
 
 ## Go further
+
+[How to get started with a Dedicated Server](/pages/bare_metal_cloud/dedicated_servers/getting-started-with-dedicated-server)
+
+[OVHcloud Monitoring IP Addresses for Dedicated Servers](/pages/bare_metal_cloud/dedicated_servers/network_ip_monitoring)
 
 Join our [community of users](/links/community).

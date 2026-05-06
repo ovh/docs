@@ -1,18 +1,18 @@
 ---
 title: "Choosing the right OVHcloud Managed Kubernetes Plan: Free or Standard"
 excerpt: "Explore OVHcloud Managed Kubernetes plans: Free and Standard. Discover which plan suits your cloud projects and get started quickly."
-updated: 2025-12-01
+updated: 2026-02-03
 ---
 
 ## Objective
 
 This guide provides an overview of OVHcloud Managed Kubernetes Service (MKS) plans, aiming to present the available plan options **Free** and **Standard** and their primary characteristics. It is intended to help readers understand the purpose of each plan and navigate the differences without making recommendations.
 
-## Free vs Standard Plan Comparison
+## Free vs Standard plan comparison
 
 OVHcloud Managed Kubernetes Service (MKS) offers two plans, **Free Plan** and **Standard Plan**, designed to address different workloads and use cases. This section highlights their key differences, focusing on architecture, availability, and scalability.
 
-### Control Plane
+### Control plane
 
 The control plane orchestrates the Kubernetes cluster, handling scheduling, scaling, and API requests. The Free plan provides a single zone managed control plane suitable for development or small projects. In contrast, the Standard plan includes cross-availability-zone (AZ) resilience, ensuring the cluster continues to operate even if one AZ experiences an outage.
 
@@ -24,19 +24,35 @@ Availability measures the expected uptime of the service. The Free plan offers a
 
 Example: A Free plan cluster may experience roughly 43 minutes of downtime per month, while a Standard plan cluster reduces this to about 4 minutes.
 
-### etcd Storage
+### etcd storage
 
 etcd maintains cluster state and configuration. The Free plan uses a shared etcd storage with a maximum capacity of 400 MB, which suffices for small deployments. The Standard plan uses dedicated etcd storage up to 8 GB, supporting larger clusters and heavier workloads.
 
-### Maximum Cluster Size
+### Maximum cluster size
 
 Cluster size defines the number of worker nodes in the Kubernetes cluster. The Free plan supports up to 100 nodes, suitable for learning, testing, or small-scale projects. The Standard plan scales up to 500 nodes, enabling medium to large production deployments.
 
 ### Regional availability
 
-Regional availability determines the number of zones on which the cluster is deployed. The Free plan is limited to a single zone, while the Standard plan is deployed across three availability zones, improving resilience and minimising the impact of outages at the zone level.
+Regional availability determines the number of zones on which the cluster is deployed. The Free plan is limited to a single zone, while the Standard plan is deployed across three availability zones (in 3-AZ regions), improving resilience and minimising the impact of outages at the zone level.
 
-Example: A cluster with the Standard plan can maintain application continuity if a zone goes down, while a cluster with the Free plan would go down.
+Example: A cluster with the Standard plan deployed in a 3-AZ region can maintain application continuity if a zone goes down, while a cluster with the Free plan would go down.
+
+#### Supported regions by plan
+
+The availability of OVHcloud Managed Kubernetes varies by plan. The Free plan is available in multiple single-zone regions worldwide, while the Standard plan is available in both single-zone and multi-zone regions for enhanced resilience.
+
+For a complete list of supported regions by plan and their deployment architecture (1-AZ vs 3-AZ), see the following guide: [Datacenters, nodes and storage flavors - Regional availability by MKS plan](/pages/public_cloud/containers_orchestration/managed_kubernetes/datacenters-nodes-storage-flavors).
+
+#### Standard plan exclusive features
+
+In addition to multi-zone deployment, the Standard plan includes advanced features not available on the Free plan:
+
+- **Floating IPs per node**: Automatically assign public Floating IPs to worker nodes in a node pool for direct public access and node bandwidth usage. This feature is exclusively available on the Standard plan. For more information, see the [Using Floating IPs on MKS Standard](/pages/public_cloud/containers_orchestration/managed_kubernetes/using-floating-ips) guide.
+- **Cross-AZ resilience**: Enhanced cluster availability across multiple availability zones (in 3-AZ regions).
+- **Production-grade SLA**: 99.9% SLA for 1-AZ regions, 99.99% SLA for 3-AZ regions.
+- **Dedicated etcd storage**: Up to 8GB for larger clusters.
+- **Up to 500 nodes**: Support for large-scale production deployments.
 
 ### Summary
 
@@ -44,11 +60,11 @@ The following table summarizes the key differences between the Free plan and the
 
 | Plan                  | Free                                                | Standard                                  |
 | --------------------- | --------------------------------------------------- | ----------------------------------------- |
-| ControlPlane          | Managed                                             | Managed & Cross-AZ resilient              |
-| Availability          | 99,5% SLO                                           | 99,99 SLA (at General Availability stage) |
+| ControlPlane          | Managed                                             | Managed & Cross-AZ resilient (3-AZ)       |
+| Availability          | 99.5% SLO                                           | 99.9% SLA (1-AZ) / 99.99% SLA (3-AZ)      |
 | etcd                  | Shared, up to 400MB                                 | Dedicated, up to 8GB                      |
 | Max cluster size      | Up to 100 nodes                                     | Up to 500 nodes                           |
-| Regional availability | Single-zone regions for now                         | 3-AZ region for now                       |
+| Regional availability | Single-zone regions only                            | 1-AZ and 3-AZ regions available           |
 
 This summary provides a quick overview of the differences between the Free plan and the Standard plan, highlighting architecture, availability, storage, cluster size, and regional deployment.
 

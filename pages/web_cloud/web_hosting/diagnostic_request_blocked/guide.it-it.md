@@ -31,7 +31,6 @@ Se sul tuo sito Web è visualizzata una pagina "Your request has been blocked", 
 
 - Disporre di una [soluzione di hosting Web](/links/web/hosting) OVHcloud.
 - Disporre delle [credenziali di accesso](/pages/web_cloud/web_hosting/ftp_connection) allo spazio di storage FTP dell'hosting.
-- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager).
 
 ## Procedura
 

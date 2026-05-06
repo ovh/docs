@@ -1,7 +1,7 @@
 ---
 title: E-Mail-Sicherheit durch DKIM-Eintrag verbessern
 excerpt: Erfahren Sie hier, wie Sie einen DKIM-Eintrag für Domainnamen und E-Mail-Dienste bei OVHcloud einrichten
-updated: 2025-11-28
+updated: 2026-02-10
 ---
 
 <style>
@@ -55,14 +55,23 @@ Der DKIM-Eintrag (**D**omain**K**eys **I**dentified **M**ail) ermöglicht die Si
 
 ## Voraussetzungen
 
-- Sie haben über das [OVHcloud Kundencenter](/links/manager) Zugriff auf die Konfiguration des betreffenden Domainnamens oder entsprechenden Verwaltungszugriff bei Ihrem DNS-Anbieter, wenn der Domainname nicht über OVHcloud registriert ist.
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 - Sie verfügen über einen der folgenden E-Mail-Dienste:
     - OVHcloud MX Plan E-Mail, verfügbar mit den Angeboten [Webhosting](/links/web/hosting), [Kostenloses Hosting 100M](/links/web/domains-free-hosting) oder als separater Dienst
     - [Hosted Exchange](/links/web/emails-hosted-exchange) oder [Private Exchange](/links/web/emails-hosted-exchange)
     - [E-Mail Pro](/links/web/email-pro)
     - [Zimbra](/links/web/zimbra)
     - Ein E-Mail-Angebot außerhalb von OVHcloud, das über DKIM verfügt
+
+<!-- CP-NAV-START:web-dns-zone -->
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direkter Link:** [DNS-Zone](/links/control-panel/web-dns-zone)
+- **Navigationspfad:** `Web Cloud`{.action} > `DNS-Zone`{.action} > Wählen Sie Ihren Domainnamen aus
+
+---
+<!-- CP-NAV-END:web-dns-zone -->
 
 > [!warning]
 >
@@ -121,7 +130,7 @@ Die Hash-Funktion ist nützlich zum Überprüfen der Integrität einer Nachricht
 
 **Verschlüsselung** sorgt für die Chiffrierung der Eingabedaten. Sie ist **asymmetrisch**, da zum Ver- und Entschlüsseln der Nachricht nicht derselbe Schlüssel verwendet wird, im Gegensatz zu einer symmetrischen Verschlüsselung mit identischem Schlüssel.
 
-Bei der asymmetrischen Verschlüsselung werden ein **öffentlicher Schlüssel** und ein **privater Schlüssel** eingesetzt. Der öffentliche Schlüssel ist für jeden sicht- und nutzbar. Der private Schlüssel wird nur von dessen Eigentümer verwendet und ist nicht öffentlich sichtbar.
+Bei der asymmetrischen Verschlüsselung werden ein **öffentlicher Schlüssel** und ein **privater Schlüssel** eingesetzt. Der öffentliche Schlüssel ist für jeden sicht- und nutzbar. Der private Schlüssel wird nur von dessen Inhaber verwendet und ist nicht öffentlich sichtbar.
 
 Es gibt zwei Verwendungszwecke für asymmetrische Verschlüsselung:
 
@@ -181,7 +190,7 @@ Der Empfänger **recipient@otherdomain.ovh** kann diese Signatur mit dem in der 
 Die automatische DKIM-Konfiguration ist für alle unsere E-Mail-Angebote verfügbar:
 
 - MX Plan enthalten in einem [Webhosting](/links/web/hosting), [Kostenloses Hosting 100M](/links/web/domains-free-hosting) oder separat bestellt
-- [Exchange](/links/web/emails)
+- [Exchange](/links/web/emails-exchange)
 - [E-mail Pro](/links/web/email-pro)
 - [Zimbra](/links/web/zimbra)
 
@@ -1316,4 +1325,4 @@ Im Folgenden finden Sie die Zustände, die den Betrieb Ihres DKIM blockieren kö
 
 ## Weiterführende Informationen
 
-Treten Sie unserer [User Community](/links/community) bei.
+Treten Sie unserer [User Community](/links/community) bei.

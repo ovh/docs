@@ -1,7 +1,7 @@
 ---
 title: "Transférer un nom de domaine"
-excerpt: "Utilisez l'API publique OVHcloud pour transférer vos noms de domaines"
-updated: 2022-07-21
+excerpt: "Utilisez l'API publique OVHcloud pour transférer vos noms de domaine"
+updated: 2026-02-10
 ---
 
 <!-- Rappel à mettre au début de chaque page -->
@@ -29,7 +29,7 @@ updated: 2022-07-21
 Un transfert entrant correspond au transfert de la gestion d'un nom de domaine depuis un autre registrar vers OVHcloud.
 C'est très semblable à la commande d'un nouveau nom de domaine, si ce n'est que le nom de domaine n'est pas affiché comme étant disponible, puisqu'il appartient déjà à quelqu'un.
 
-Si vous êtes le propriétaire du domaine, vous pouvez déléguer sa gestion à OVHcloud comme ceci.
+Si vous êtes le titulaire du nom de domaine, vous pouvez déléguer sa gestion à OVHcloud comme ceci.
 
 1. **Récupérer le code d'autorisation confidentiel** (parfois appelé "_auth code_" ou "_auth info_") associé à votre nom de domaine depuis le tableau de bord du registrar actuel.
 
@@ -56,7 +56,7 @@ Dans ce cas, il convient de se référer à la documentation du registre.
 
 ### Domaine lock
 
-Un domain lock est une sécurité permettant d'éviter que votre domaine soit la cible de tentatives de transfert vers un autre registrar.
+Un domain lock est une sécurité permettant d'éviter que votre nom de domaine soit la cible de tentatives de transfert vers un autre registrar.
 
 Cela signifie que si cette option est activée sur votre nom de domaine, ce dernier ne peut être transféré sans avoir été unlocked au préalable.
 
@@ -110,7 +110,7 @@ Les actions sur ces routes ne sont pas instantanées, c'est pourquoi en réexéc
 
 ### Authcode
 
-Après avoir *unlocked* votre domaine, il vous faut un authcode afin de garantir que vous en avez la propriété, pour pouvoir procéder au transfert sortant. Vous devrez le fournir à votre nouveau registrar.
+Après avoir *unlocked* votre nom de domaine, il vous faut un authcode afin de garantir que vous en avez la propriété, pour pouvoir procéder au transfert sortant. Vous devrez le fournir à votre nouveau registrar.
 
 La route suivante vous permet de le récupérer :
 

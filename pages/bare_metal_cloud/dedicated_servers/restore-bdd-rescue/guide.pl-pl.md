@@ -1,6 +1,6 @@
 ---
-title: "Odzyskiwanie baz danych w trybie Rescue"
-excerpt: "Dowiedz się, jak uzyskać dostęp do baz danych i zapisać je w trybie rescue"
+title: "Odzyskiwanie baz danych w trybie rescue na serwerze dedykowanym"
+excerpt: "Uzyskaj dostęp do baz danych i wyeksportuj je z serwera dedykowanego w trybie rescue, aby odzyskać dane po awarii."
 updated: 2023-04-13
 ---
 
@@ -17,12 +17,25 @@ Tryb Rescue pozwala na stały dostęp do Twoich danych, nawet jeśli system oper
 ## Wymagania początkowe
 
 - Serwer [dedykowany](/links/bare-metal/bare-metal), [VPS](/links/bare-metal/vps) lub instancja [Public Cloud](/links/public-cloud/public-cloud) na Twoim koncie OVHcloud (z wyłączeniem systemu Windows)
-- Dostęp do [Panelu client OVHcloud](/links/manager)
+
+<!-- CP-NAV-START:baremetal-dedicated-servers -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Serwery dedykowane](/links/control-panel/baremetal-dedicated-servers)
+- **Ścieżka nawigacji:** `Bare Metal Cloud`{.action} > `Serwery dedykowane`{.action} > Wybierz serwer
+
+---
+<!-- CP-NAV-END:baremetal-dedicated-servers -->
 
 > [!warning]
 >
 > OVHcloud udostępnia różnorodne usługi, jednak to Ty odpowiadasz za ich konfigurację i zarządzanie nimi. Ponosisz więc odpowiedzialność za ich prawidłowe funkcjonowanie.
 >
+
+- [Serwer dedykowany - Diagnostyka sprzętowa](/pages/bare_metal_cloud/dedicated_servers/hardware-diagnose)
+
 > Celem tego tutoriala jest pomoc w jak najlepszym wykonywaniu bieżących zadań. W przypadku trudności lub wątpliwości związanych z administrowaniem, użytkowaniem lub wdrażaniem usług na serwerze zalecamy skorzystanie z pomocy wyspecjalizowanego [usługodawcy](/links/partner) lub zbliżenie się do [naszej społeczności](https://community.ovh.com/en/).
 >
 

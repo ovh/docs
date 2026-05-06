@@ -1,21 +1,31 @@
 ---
-title: Object Storage - Zarządzanie tożsamością i dostępem (EN)
+title: Object Storage - Identity and access management
 excerpt: The purpose of this guide is to show you how to manage your identities and access your Object Storage resources
-updated: 2025-09-25
+updated: 2026-04-14
 ---
 
 ## Objective
 
-The purpose of this guide is to show you how to manage your identities and access your Object Storage resources.
+This guide explains how to manage identities and access to your Object Storage resources.
 
 ## Requirements
 
 - A [Public Cloud project](/links/public-cloud/public-cloud) in your OVHcloud account
-- Access to your [OVHcloud Control Panel](/links/manager)
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Navigation path:** `Public Cloud`{.action} > Select your project
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## Instructions
 
-Log in to [the OVHcloud Control Panel](/links/manager), go to the `Public Cloud`{.action} section, and select the Public Cloud project concerned. Then click on `Object Storage`{.action} in the left-hand menu.
+Click on `Object Storage`{.action} in the left-hand menu.
 
 ### Creating a user
 
@@ -63,36 +73,20 @@ Set access to your bucket for this user and click on `Confirm`{.action}.
 
 ![Add a user to my container - Role](images/highperf-identity-and-access-management-20220928083800300.png){.thumbnail}
 
-### Manage access to an object via a profile
-
-You can also set access to your objects via predefined profiles.
-
-Click on the `...`{.action} at the end of your object line, then `Add user to my object`{.action}.
-
-![object menu](images/highperf-identity-and-access-management-20220928084137918.png){.thumbnail}
-
-Select the user and click `Next`{.action}.
-
-![add user to my object](images/highperf-identity-and-access-management-20220928084222940.png){.thumbnail}
-
-Select the access profile for this user and click `Confirm`{.action}.
-
-![add role to my object](images/highperf-identity-and-access-management-20220928084308265.png){.thumbnail}
-
 ### Advanced resource access management
 
 #### Overview
 
-By default, all resources (buckets, objects) and sub-resources (lifecycle configuration, webite configuration, etc.) are private in Object Storage. Only the resource owner, i.e the user account that creates it, has full control.
+By default, all resources (buckets, objects) and sub-resources (lifecycle configuration, website configuration, etc.) are private in Object Storage. Only the resource owner, i.e., the user account that creates it, has full control.
 
-Access to private resources can be granted via access policies. Access policies can be categorized broadly into 2 types :
+Access to private resources can be granted via access policies. Access policies can be categorized broadly into two types:
 
-- user based: access policies attached to a specific user are called user policies. A user policy is evaluated using Object Storage IAM permissions and applies only to the specific user it is attached to.
-- resource based : bucket policies and ACLs are policies that are attached directly to specific resources
+- user-based: access policies attached to a specific user are called user policies. A user policy is evaluated using Object Storage IAM permissions and applies only to the specific user it is attached to.
+- resource-based: bucket policies and ACLs are policies that are attached directly to specific resources.
 
 > [!primary]
 >
-> Bucket policies is a feature that is not yet available for Object Storage. This article is about user policies.
+> Bucket policies are a feature that is not yet available for Object Storage. This article is about user policies.
 >
 
 You can refine your permissions by importing a JSON configuration file. To do this, go to the `Object Storage Policy Users`{.action} tab.
@@ -131,7 +125,7 @@ At the moment, user permissions are evaluated as follows:
     "Sid": "RWContainer",
     "Effect": "Allow",
     "Action":["s3:GetObject", "s3:PutObject", "s3:DeleteObject", "s3:ListBucket", "s3:ListMultipartUploadParts", "s3:ListBucketMultipartUploads", "s3:AbortMultipartUpload", "s3:GetBucketLocation"],
-    "Resource":["arn:aws:s3:::hp-bucket", "arn:aws:s3:::hp-bucket/*"]
+    "Resource":["arn:aws:s3:::<bucket_name>", "arn:aws:s3:::<bucket_name>/*"]
   }]
 }
 ```
@@ -144,7 +138,7 @@ At the moment, user permissions are evaluated as follows:
     "Sid": "ROContainer",
     "Effect": "Allow",
     "Action":["s3:GetObject", "s3:ListBucket", "s3:ListMultipartUploadParts", "s3:ListBucketMultipartUploads"],
-    "Resource":["arn:aws:s3:::hp-bucket", "arn:aws:s3:::hp-bucket/*"]
+    "Resource":["arn:aws:s3:::<bucket_name>", "arn:aws:s3:::<bucket_name>/*"]
   }]
 }
 ```
@@ -153,7 +147,7 @@ At the moment, user permissions are evaluated as follows:
 
 > [!primary]
 >
-> The (`s3:ListAllMyBuckets`) action is allowed by default for a given user. Add the `deny`{.action} effect if you want to explictly refuse the use of the `ListBuckets`{.action} API operation.
+> The (`s3:ListAllMyBuckets`) action is allowed by default for a given user. Add the `Deny` effect if you want to explicitly refuse the use of the `ListBuckets` API operation.
 >  
 
 ```json
@@ -180,7 +174,7 @@ At the moment, user permissions are evaluated as follows:
 }
 ```
 
-**Read/write access to all objects in a specific folder (`/home/user2`) in a specific bucket (`companybucket`)**
+**Read/write access to all objects in a specific folder (`/home/user2`) in a specific bucket (`<bucket_name>`)**
 
 ```json
 {
@@ -188,7 +182,7 @@ At the moment, user permissions are evaluated as follows:
     "Sid": "RWContainer",
     "Effect": "Allow",
     "Action":["s3:GetObject", "s3:PutObject", "s3:DeleteObject", "s3:ListBucket", "s3:ListMultipartUploadParts", "s3:ListBucketMultipartUploads", "s3:AbortMultipartUpload", "s3:GetBucketLocation"],
-    "Resource":["arn:aws:s3:::companybucket", "arn:aws:s3:::companybucket/home/user2/*"]
+    "Resource":["arn:aws:s3:::<bucket_name>", "arn:aws:s3:::<bucket_name>/home/user2/*"]
   }]
 }
 ```
@@ -202,8 +196,8 @@ At the moment, user permissions are evaluated as follows:
     "Effect": "Allow",
     "Action": "s3:*",
     "Resource": [
-      "arn:aws:s3:::companybucket",
-      "arn:aws:s3:::companybucket/*"
+      "arn:aws:s3:::<bucket_name>",
+      "arn:aws:s3:::<bucket_name>/*"
     ],
     "Condition": {
       "IpAddress": {
@@ -216,10 +210,10 @@ At the moment, user permissions are evaluated as follows:
 
 > [!primary]
 >
-> As a consequence of the current authorization process, **implicit** deny is **not** supported by OVHcloud Object Storage if the user is the bucket owner i.e since ACLs are evaluated by default and since the bucket owner has FULL_CONTROL ACL, if the user is the bucket owner and even if there is no explicit allow in the policy file, he will be authorized.
+> As a consequence of the current authorization process, **implicit** deny is **not** supported by OVHcloud Object Storage if the user is the bucket owner i.e., since ACLs are evaluated by default and since the bucket owner has FULL_CONTROL ACL, if the user is the bucket owner and even if there is no explicit allow in the policy file, the user will be authorized.
 > 
 
-The following policy to attempt to allow read access to objects only to specific IPs will **not** work under current conditions if attached to the **bucket owner** i.e even if the bucket owner makes his requests from IPs that are **not** in the specified range, he will be **authorized**.
+The following policy to attempt to allow read access to objects only to specific IPs will **not** work under current conditions if attached to the **bucket owner** i.e., even if the bucket owner makes requests from IPs that are **not** in the specified range, the bucket owner will be **authorized**.
 
 ```json
 {
@@ -232,7 +226,7 @@ The following policy to attempt to allow read access to objects only to specific
       "s3:ListBucketVersions"
     ],
     "Resource": [
-      "arn:aws:s3:::companybucket/*"
+      "arn:aws:s3:::<bucket_name>/*"
     ],
     "Condition": {
       "IpAddress": {
@@ -243,7 +237,7 @@ The following policy to attempt to allow read access to objects only to specific
 }
 ```
 
-The following policy to attempt to deny read access to objects to specific IPs by blacklisting unauthorized IPs will **not** work under current conditions if attached to the **bucket owner** because there is no explicit deny and requests from the specified IPs will not match the allow, therefore, we fallback to the ACLs.
+The following policy to attempt to deny read access to objects to specific IPs by blacklisting unauthorized IPs will **not** work under current conditions if attached to the **bucket owner** because there is no explicit deny and requests from the specified IPs will not match the allow, therefore, we fall back to the ACLs.
 
 ```json
 {
@@ -256,7 +250,7 @@ The following policy to attempt to deny read access to objects to specific IPs b
       "s3:ListBucketVersions"
     ],
     "Resource": [
-      "arn:aws:s3:::companybucket/*"
+      "arn:aws:s3:::<bucket_name>/*"
     ],
     "Condition": {
       "NotIpAddress": {
@@ -327,3 +321,4 @@ The following policy to attempt to deny read access to objects to specific IPs b
 If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
 
 Join our [community of users](/links/community).
+

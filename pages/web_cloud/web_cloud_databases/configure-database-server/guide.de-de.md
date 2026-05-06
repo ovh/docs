@@ -1,69 +1,148 @@
 ---
 title: 'Konfigurieren Ihres Datenbankservers'
-excerpt: 'Erfahren Sie hier, wie Sie Ihren Datenbankserver konfigurieren und optimieren können'
-updated: 2025-02-20
+excerpt: 'Erfahren Sie, wie Sie Ihren Datenbankserver konfigurieren und optimieren'
+updated: 2026-03-24
 ---
+
+<style>
+details>summary {
+    color:rgb(33, 153, 232) !important;
+    cursor: pointer;
+}
+details>summary::before {
+    content:'\25B6';
+    padding-right:1ch;
+}
+details[open]>summary::before {
+    content:'\25BC';
+}
+</style>
 
 ## Ziel
 
-Web Cloud Databases Datenbanken geben Ihnen die Möglichkeit, auf die globalen Einstellungen Ihres Servers einzuwirken. Sie können auch die Aktivität Ihres Servers sehen.
+Web Cloud Databases Datenbankserver ermöglichen es Ihnen, die globalen Einstellungen Ihres Servers zu ändern. Sie können auch die Aktivität Ihres Servers einsehen.
 
-**Diese Anleitung erklärt, wie Sie Ihren Datenbankserver konfigurieren und optimieren können.**
+**Diese Anleitung erklärt, wie Sie Ihren Datenbankserver konfigurieren und optimieren.**
 
 ## Voraussetzungen
 
-- Sie verfügen über eine [Web Cloud Databases Instanz](/links/web/databases) (auch in einem [Performance Web Hosting](/links/web/hosting) Angebot enthalten).
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
+- Sie verfügen über eine [Web Cloud Databases Instanz](/links/web/databases) (auch in einem [Performance Webhosting](/links/web/hosting) Angebot enthalten).
+
+<!-- CP-NAV-START:web-cloud-databases -->
+---
+
+### Zugang zum OVHcloud Kundencenter
+
+- **Direkter Link:** [Web Cloud Databases](/links/control-panel/web-cloud-databases)
+- **Navigationspfad:** `Web Cloud`{.action} > `Web Cloud Databases`{.action} > Wählen Sie Ihren Datenbankdienst aus
+
+---
+<!-- CP-NAV-END:web-cloud-databases -->
 
 ## In der praktischen Anwendung
 
-### Abrufen der allgemeinen Informationen eines Datenbank-Servers
+### Allgemeine Informationen Ihres Datenbankservers anzeigen
 
-Gehen Sie In Ihrem [OVHcloud Kundencenter](/links/manager) in den Bereich `Web Cloud Databases`{.action} und klicken Sie anschließend auf die entsprechende SQL-Instanz. Vergewissern Sie sich, dass Sie sich im Tab `Allgemeine Informationen`{.action} befinden.
+Klicken Sie auf die unten stehenden Tabs, um die **2** Schritte nacheinander anzuzeigen.
 
-Hier können Sie wichtige Informationen zu Ihrer SQL-Instanz einsehen. Wir bitten Sie, sich einen Moment Zeit zu nehmen und zu überprüfen, dass die angezeigten Daten korrekt sind bzw. mit den nachfolgenden Angaben übereinstimmen.
+<!-- CP-STEPS-START:general-information -->
 
-|Information|Details|
-|---|---|
-|Status der Dienstleistung|Zeigt an, ob die Instanz gestartet wurde, gerade neu gestartet wird oder gesperrt wurde. Ihre Instanz muss gestartet worden sein, damit Sie Aktionen durchführen können.|
-|Typ|Zeigt das vom Server verwendete Datenbanksystem an. Wenn Sie nicht wissen, ob der verwendete Typ korrekt ist, beachten Sie, dass MySQL das am weitesten verbreitete System ist. Es gibt jedoch auch andere Datenbanksysteme (PostgreSQL, MariaDB). Wurde Ihre Website zum Beispiel mit WordPress erstellt, ist ein MySQL-System die richtige Wahl.|
-|Version|Zeigt die Version des vom Server verwendeten Datenbanksystems an. Achten Sie auf die Kompatibilität Ihrer Website mit der gewählten Version.|
-|CPU Auslastung|Zeigt Auslastungsspitzen der CPU über die letzten 24 Stunden an.|
-|RAM|Zeigt den für Ihre Instanz verfügbaren Arbeitsspeicher sowie eventuelle Überschreitungen der RAM-Kapazität. Ihr Datenbankserver verfügt über dedizierte und garantierte Ressourcen: den RAM-Speicher. Falls nötig, können Sie Ihren RAM skalieren und eine Warnmeldung erhalten, wenn Sie sämtliche RAM-Ressourcen Ihrer Instanz verwenden.|
-|Infrastruktur|Zeigt die von Ihrer Instanz verwendete Infrastruktur an. Hierbei handelt es es sich um eine interne Information der OVHcloud Infrastruktur.|
-|Datacenter|Zeigt das Rechenzentrum an, in dem Ihre Instanz angelegt wurde. Vergewissern Sie sich, dass das Rechenzentrum Ihrer Instanz mit dem Rechenzentrum des Webhostings übereinstimmt, auf dem Ihre Website aktuell (oder in Zukunft) gehostet wird.|
-|Host|Zeigt den OVHcloud Server an, auf dem Ihre Instanz angelegt wurde. Hierbei handelt es sich um eine interne Information der OVHcloud Infrastruktur, die im Rahmen unserer Kommunikation zu [OVHcloud Störungen](https://web-cloud.status-ovhcloud.com/) verwendet werden kann.|
+> [!tabs]
+> **Schritt 1**
+>>
+>> Gehen Sie auf die Seite [Web Cloud Databases](/links/control-panel/web-cloud-databases), und wählen Sie die betreffende Lösung aus.
+>>
+>> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases.png){.thumbnail}
+>>
+> **Schritt 2**
+>>
+>> Vergewissern Sie sich, dass Sie sich im Tab `Allgemeine Informationen`{.action} befinden.
+>>
+>> Hier können Sie wichtige Informationen zu Ihrer SQL-Instanz einsehen. Nehmen Sie sich einen Moment Zeit, um zu überprüfen, dass die angezeigten Daten korrekt sind und mit den nachfolgenden Angaben übereinstimmen.
+>>
+>> |Information|Details|
+>> |---|---|
+>> |Status der Dienstleistung|Zeigt an, ob die Instanz gestartet wurde, gerade neu gestartet wird oder gesperrt ist. Ihre Instanz muss gestartet sein, damit Sie Aktionen durchführen können.|
+>> |Typ|Zeigt das vom Server verwendete Datenbanksystem an. Wenn Sie nicht wissen, ob der verwendete Typ korrekt ist, beachten Sie, dass MySQL das am weitesten verbreitete System ist. Es gibt jedoch auch andere Datenbanksysteme (PostgreSQL, MariaDB). Wurde Ihre Website zum Beispiel mit WordPress erstellt, ist ein MySQL-System die richtige Wahl.|
+>> |Version|Zeigt die Version des vom Server verwendeten Datenbanksystems an. Achten Sie auf die Kompatibilität Ihrer Website mit der gewählten Version.|
+>> |CPU-Auslastung|Zeigt die CPU-Zeit an, die in den letzten 24 Stunden in Sättigung verbracht wurde.|
+>> |RAM|Zeigt den für Ihre Instanz verfügbaren Arbeitsspeicher sowie eventuelle Überschreitungen der RAM-Kapazität an. Ihr Datenbankserver verfügt über dedizierte und garantierte Ressourcen: den RAM-Speicher. Falls nötig, können Sie diesen skalieren und werden gewarnt, wenn Sie sämtliche RAM-Ressourcen Ihrer Instanz verbrauchen.|
+>> |Infrastruktur|Zeigt die von Ihrer Instanz verwendete Infrastruktur an. Hierbei handelt es sich um eine interne Information der OVHcloud Infrastruktur.|
+>> |Datacenter|Zeigt das Rechenzentrum an, in dem Ihre Instanz angelegt wurde. Vergewissern Sie sich, dass das Rechenzentrum Ihrer Instanz mit dem des OVHcloud Webhostings übereinstimmt, auf dem Ihre Website aktuell gehostet wird oder in Zukunft gehostet werden soll.|
+>> |Host|Zeigt den OVHcloud Server an, auf dem Ihre Instanz angelegt wurde. Hierbei handelt es sich um eine interne Information der OVHcloud Infrastruktur, die im Rahmen unserer Kommunikation zu [OVHcloud Störungen](https://web-cloud.status-ovhcloud.com/) verwendet werden kann.|
+>>
+>> ![Allgemeine Informationen](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/general-information/general-information.png){.thumbnail}
 
-![Allgemeine Informationen](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/general-information/general-information.png){.thumbnail}
+<!-- CP-STEPS-END:general-information -->
 
-### Zugangsverwaltung
+### Zugriff verwalten
 
-Ihre Web Cloud Databases ist über Ihre OVHcloud Webhostings oder/und über das öffentliche Netzwerk erreichbar.
+Ihre Web Cloud Databases ist über Ihre OVHcloud Webhostings und/oder über das öffentliche Netzwerk erreichbar.
 
-#### Eine IP-Adresse erlauben
+**Klicken Sie auf jeden Titel, um den Inhalt anzuzeigen.**
 
-Damit auf Ihre Web Cloud Databases Instanz zugegriffen werden kann, müssen zunächst die IP-Adressen oder IP-Bereiche festgelegt werden, die sich mit dieser verbinden dürfen.
+/// details | Eine IP-Adresse autorisieren
 
-Gehen Sie In Ihrem [OVHcloud Kundencenter](/links/manager) in den Bereich `Web Cloud Databases`{.action} und klicken Sie anschließend auf die entsprechende Web Cloud Databases Instanz.
+Um auf Ihre Web Cloud Databases Instanz zuzugreifen, müssen die IP-Adressen oder IP-Bereiche festgelegt werden, die sich mit Ihren Datenbanken verbinden dürfen.
 
-Klicken Sie hierzu im Tab `Autorisierte IPs`{.action} auf den Button `IP-Adresse / Maske hinzufügen`{.action}.
+Klicken Sie auf die unten stehenden Tabs, um die **3** Schritte nacheinander anzuzeigen.
 
-![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/authorized-ips/add-an-ip-address-mask.png){.thumbnail}
+<!-- CP-STEPS-START:ip-autorisieren -->
 
-Geben Sie im angezeigten Fenster im Feld `IP / Maske`{.action} die IP-Adresse oder Maske ein, der Sie den Zugriff erlauben möchten. Legen Sie anschließend fest, ob Sie nur Zugriff auf die Datenbanken oder auch auf den SFTP-Port erlauben möchten. Klicken Sie dann auf `Bestätigen`{.action}.
+> [!tabs]
+> **Schritt 1**
+>>
+>> Gehen Sie auf die Seite [Web Cloud Databases](/links/control-panel/web-cloud-databases), und wählen Sie die betreffende Lösung aus.
+>>
+>> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases.png){.thumbnail}
+>>
+> **Schritt 2**
+>>
+>> Klicken Sie auf den Tab `Autorisierte IPs`{.action} und dann auf den Button `IP-Adresse / Maske hinzufügen`{.action}.
+>>
+>> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/authorized-ips/add-an-ip-address-mask.png){.thumbnail}
+>>
+> **Schritt 3**
+>>
+>> Geben Sie im angezeigten Fenster die IP-Adresse oder Maske, die Sie autorisieren möchten, unter `IP / Maske`{.action} ein und fügen Sie bei Bedarf eine Beschreibung hinzu. Legen Sie dann fest, ob Sie nur Zugriff auf die Datenbanken oder auch auf SFTP gewähren möchten. Klicken Sie abschließend auf `Bestätigen`{.action}.
+>>
+>> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/authorized-ips/add-an-ip-address-mask-confirmation.png){.thumbnail}
 
-![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/authorized-ips/add-an-ip-address-mask-confirmation.png){.thumbnail}
+<!-- CP-STEPS-END:ip-autorisieren -->
 
-#### Autorisieren der Anbindung eines OVHcloud Webhostings
+///
 
-Für ein OVHcloud Webhosting können Sie einfach `Den OVHcloud Webhostings den Zugriff auf die Datenbank erlauben` auswählen.
+/// details | Verbindungen von OVHcloud Webhostings autorisieren
 
-![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/authorized-ips/tab-empty.png){.thumbnail}
+Klicken Sie auf die unten stehenden Tabs, um die **3** Schritte nacheinander anzuzeigen.
 
-#### Ihren Web Cloud Databases Dienst ändern <a name="modify-ram-web-cloud-db"></a>
+<!-- CP-STEPS-START:hosting-autorisieren -->
+
+> [!tabs]
+> **Schritt 1**
+>>
+>> Gehen Sie auf die Seite [Web Cloud Databases](/links/control-panel/web-cloud-databases), und wählen Sie die betreffende Lösung aus.
+>>
+>> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases.png){.thumbnail}
+>>
+> **Schritt 2**
+>>
+>> Klicken Sie auf den Tab `Autorisierte IPs`{.action}.
+>>
+> **Schritt 3**
+>>
+>> Setzen Sie einen Haken bei `Den OVHcloud Webhostings den Zugriff auf die Datenbank erlauben`{.action}.
+>>
+>> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/authorized-ips/tab-empty.png){.thumbnail}
+
+<!-- CP-STEPS-END:hosting-autorisieren -->
+
+///
+
+### Ihren Web Cloud Databases Dienst ändern <a name="modify-ram-web-cloud-db"></a>
 
 > [!warning]
-> 
+>
 > Wenn Ihr Web Cloud Databases Dienst an ein **Performance** Webhosting gebunden ist, müssen Sie ihn zuerst von Ihrem **Performance** Hosting trennen, um den Dienst hochzustufen.
 >
 > Um einen Web Cloud Databases Dienst vom Webhosting **Performance** abzutrennen, lesen Sie unsere Anleitung "[Web Cloud Databases von einem Webhosting abtrennen](/pages/web_cloud/web_cloud_databases/detach-from-web-hosting)".
@@ -71,137 +150,194 @@ Für ein OVHcloud Webhosting können Sie einfach `Den OVHcloud Webhostings den Z
 > **Diese Aktion ist unwiderruflich. Der Web Cloud Databases Dienst wird anschließend unabhängig von Ihrem Performance Webhosting abgerechnet.**
 >
 
-Um Ihren Web Cloud Databases Dienst zu bearbeiten, melden Sie sich in Ihrem [OVHcloud Kundencenter](/links/manager) an. Klicken Sie auf `Web Cloud`{.action} und dann auf `Web Cloud Databases`{.action}. Wählen Sie den Namen Ihres Datenbankservers aus.
+Klicken Sie auf die unten stehenden Tabs, um die **3** Schritte nacheinander anzuzeigen.
 
-In der Standardansicht **Allgemeine Informationen** klicken Sie auf `...`{.action} rechts neben "RAM" und dann auf `RAM Menge ändern`{.action}, um zur Bestellung geleitet zu werden.
+<!-- CP-STEPS-START:change-service -->
 
-![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/general-information/change-the-amount-of-ram.png){.thumbnail}
+> [!tabs]
+> **Schritt 1**
+>>
+>> Gehen Sie auf die Seite [Web Cloud Databases](/links/control-panel/web-cloud-databases), und wählen Sie die betreffende Lösung aus.
+>>
+>> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases.png){.thumbnail}
+>>
+> **Schritt 2**
+>>
+>> Im standardmäßig angezeigten Tab **Allgemeine Informationen** klicken Sie auf `...`{.action} rechts neben "RAM" und dann auf `RAM-Menge ändern`{.action}, um zur Bestellung für diese Änderung geleitet zu werden.
+>>
+>> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/general-information/change-the-amount-of-ram.png){.thumbnail}
+>>
+> **Schritt 3**
+>>
+>> Wählen Sie die gewünschte RAM-Größe aus und klicken Sie auf `Weiter`{.action}. Danach können Sie die gewünschte Laufzeit wählen.
+>>
+>> > [!primary]
+>> >
+>> > Eine anteilige Berechnung erfolgt basierend auf der Restlaufzeit des Dienstes. Diese Berechnung basiert auf dem Ablaufdatum der Web Cloud Databases Instanz, nicht auf dem Datum des Bestellscheins.
+>>
+>> Nach Bestätigung der Verträge werden Sie auf den Bestellschein umgeleitet, um die Änderung zu bezahlen. Diese wird dann innerhalb weniger Stunden wirksam.
+>>
+>> > [!warning]
+>> >
+>> > Wenn Sie derzeit über eine kostenfreie, in einem Performance Hosting inkludierte Web Cloud Databases Instanz verfügen, wird diese mit dem Wechsel des Dienstes kostenpflichtig.
 
-Wählen Sie die gewünschte RAM-Größe aus und klicken Sie auf `Weiter`{.action}. Danach können Sie die Laufzeit wählen.
+<!-- CP-STEPS-END:change-service -->
 
-> [!primary]
->
-> Eine anteilige Berechnung erfolgt basierend auf der Restlaufzeit des Dienstes. Diese Berechnung basiert auf dem Ablaufdatum der Web Cloud Databases Instanz, nicht auf dem Datum des Bestellscheins.
-> 
+### Konfiguration des Datenbankservers ändern
 
-Nach Bestätigung der Verträge werden Sie auf den Bestellschein umgeleitet, um die Änderung auszuführen. Die Anpassung erfolgt innerhalb einiger Stunden.
+**Klicken Sie auf jeden Titel, um den Inhalt anzuzeigen.**
 
-> [!warning]
->
-> Wenn Sie derzeit über eine kostenfreie, in einem Performance Hosting inkludierte Web Cloud Databases Instanz verfügen, wird diese mit dem Wechsel des Dienstes hinfällig.
-> 
+/// details | MySQL und MariaDB Instanz
 
-### Die Konfiguration meines Datenbankservers ändern
+Klicken Sie auf die unten stehenden Tabs, um die **3** Schritte nacheinander anzuzeigen.
 
-Loggen Sie sich in Ihrem OVHcloud Kundencenter ein Klicken Sie auf `Web Cloud`{.action} und dann auf `Web Cloud Databases`{.action}. und wählen Sie den Namen Ihres Web Cloud Databases Servers aus. 
+<!-- CP-STEPS-START:mysql-mariadb-konfigurieren -->
 
-#### MySQL und MariaDB Instanzen
-
-- Gehen Sie zum Tab `Konfiguration`{.action}.
-
-Im Kasten **Allgemeine Konfiguration von MySQL** finden Sie die derzeit für Ihre Datenbank festgelegte Konfiguration. Sie können hier direkt Änderungen durchführen und dann auf `Anwenden`{.action} klicken.
-
-![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/configuration/general-configuration-of-mysql.png){.thumbnail}
-
-- **Tmpdir**: Verzeichnis temporärer Dateien. **/dev/shm** entspricht dem RAM Speicher der Instanz. **/tmp** entspricht der Festplatte der Instanz.
-- **MaxAllowedPacket**: Maximale Paketgröße.
-- **max_user_connections**: Anzahl der erlaubten Simultanverbindungen je Benutzer.
-- **AutoCommit**: Legt fest, ob die SQL-Transaktionen automatisch bestätigt werden oder nicht.
-- **Interactive_timeout**: Zeit (in Sekunden), während der der Server auf eine Aktivität auf einer interaktiven Verbindung wartet, bevor er diese schließt.
-- **InnodbBufferPoolSize**: Größe des Pufferspeichers auswählen (in Megabyte).
-- **MaxLines**: Anzahl der erlaubten Simultanverbindungen auf Web Cloud Databases.
-- **Wait_timeout**: Zeit (in Sekunden), während der der Server auf eine Aktivität auf einer nicht interaktiven Verbindung wartet, bevor er diese schließt.
-- **Event_scheduler**: Wird verwendet, um die Ausführung programmierter Anfragen direkt im MySQL-Server zu starten.
-- **sql_mode**: Die Option **sql_mode** betrifft die jeweilige SQL-Syntax und die Überprüfungen der Datenvalidierung durch MySQL/MariaDB.
-
-> [!primary]
-> Wenn Sie auf Ihrer Webseite einen Fehler feststellen, der **"Too many connections"** anzeigt, ist dies auf die Überschreitung der Anzahl der gleichzeitigen Verbindungen auf Ihrer Datenbank zurückzuführen.
-> Dann können Sie die **MaxConnections**-Variable erhöhen, wenn sie nicht bereits am Limit ist.
->
-
-> [!primary]
->
-> <b>Tmpdir</b>:
->
-> - /dev/shm: Der Datenbankserver wird die Hälfte seines RAM-Speichers diesem Verzeichnis für mehr Leistung zuweisen.
->
-> - /tmp: Der Server wird auf seiner Festplatte unbegrenzten Speicherplatz für dieses Verzeichnis freigeben, aber deutlich zu Lasten der Performance. Wir empfehlen Ihnen, dieses Verzeichnis nur gelegentlich für größere Operationen zu verwenden.
->
-
-> [!primary]
->
-> <b>sql_mode</b>:
->  
-> &emsp;&emsp;Standardmodus von MariaDB 10.1:
-> <pre class="highlight language-console"><code class="language-console">NO_ENGINE_SUBSTITUTION,NO_AUTO_CREATE_USER</code></pre>
-> 
-> &emsp;&emsp;Standardmodus von MariaDB 10.2 und spätere Versionen:
-> <pre class="highlight language-console"><code class="language-console">STRICT_TRANS_TABLES,ERROR_FOR_DIVISION_BY_ZERO,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION</code></pre>
->
-> &emsp;&emsp;Standardmodus von MySQL 5.6:
-> <pre class="highlight language-console"><code class="language-console">NO_ENGINE_SUBSTITUTION</code></pre>
->
-> &emsp;&emsp;Standardmodus von MySQL 5.7 und spätere Versionen:
-> <pre class="highlight language-console"><code class="language-console">ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION</code></pre>
->
-> Wir empfehlen Ihnen, immer den Standardmodus zu nutzen, sofern Ihre Datenbank nicht auf Basis einer Version aktualisiert wurde, die einen anderen Standardmodus hat, als die aktuelle Version.
->
-
-Nachdem Sie die notwendigen Änderungen durchgeführt haben, klicken Sie auf `Bestätigen`{.action}.
+> [!tabs]
+> **Schritt 1**
+>>
+>> Gehen Sie auf die Seite [Web Cloud Databases](/links/control-panel/web-cloud-databases), und wählen Sie die betreffende Lösung aus.
+>>
+>> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases.png){.thumbnail}
+>>
+> **Schritt 2**
+>>
+>> Klicken Sie auf den Tab `Konfiguration`{.action}.
+>>
+> **Schritt 3**
+>>
+>> Im Bereich **Allgemeine Konfiguration von MySQL** finden Sie die derzeit für Ihre Datenbank festgelegte Konfiguration. Sie können diese direkt bearbeiten und dann auf `Anwenden`{.action} klicken.
+>>
+>> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/configuration/general-configuration-of-mysql.png){.thumbnail}
+>>
+>> - **MaxAllowedPacket**: Maximale Paketgröße.
+>> - **Max_user_connections**: Anzahl der erlaubten gleichzeitigen Verbindungen pro Benutzer.
+>> - **AutoCommit**: Legt fest, ob die Anfragen automatisch bestätigt werden oder nicht.
+>> - **Interactive_timeout**: Zeit (in Sekunden), die der Server auf eine Aktivität auf einer interaktiven Verbindung wartet, bevor er diese schließt.
+>> - **InnodbBufferPoolSize**: Größe des ausgewählten Pufferspeichers.
+>> - **MaxConnections:** Anzahl der erlaubten gleichzeitigen Verbindungen auf dem Datenbankserver.
+>> - **Wait_timeout**: Zeit (in Sekunden), die der Server auf eine Aktivität auf einer nicht interaktiven Verbindung wartet, bevor er diese schließt.
+>> - **Event_scheduler**: Löst die Ausführung von programmierten Anfragen direkt auf dem MySQL-Server aus.
+>> - **sql_mode**: Die Option **sql_mode** beeinflusst die unterstützte SQL-Syntax und die Datenvalidierungsprüfungen durch MySQL/MariaDB.
+>>
+>> > [!primary]
+>> > Wenn auf Ihrer Website der Fehler **"Too many connections"** angezeigt wird, ist dies auf die Überschreitung der gleichzeitigen Verbindungen auf Ihrem Datenbankserver zurückzuführen. Sie können dann die Variable **"MaxConnections"** erhöhen, wenn sie nicht bereits den Maximalwert erreicht hat.
+>>
+>> > [!primary]
+>> >
+>> > <b>sql_mode</b>:
+>> >
+>> > &emsp;&emsp;Standardmodus von MariaDB 10.1:
+>> > <pre class="highlight language-console"><code class="language-console">NO_ENGINE_SUBSTITUTION,NO_AUTO_CREATE_USER</code></pre>
+>> >
+>> > &emsp;&emsp;Standardmodus von MariaDB 10.2 und höher:
+>> > <pre class="highlight language-console"><code class="language-console">STRICT_TRANS_TABLES,ERROR_FOR_DIVISION_BY_ZERO,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION</code></pre>
+>> >
+>> > &emsp;&emsp;Standardmodus von MySQL 5.6:
+>> > <pre class="highlight language-console"><code class="language-console">NO_ENGINE_SUBSTITUTION</code></pre>
+>> >
+>> > &emsp;&emsp;Standardmodus von MySQL 5.7 und höher:
+>> > <pre class="highlight language-console"><code class="language-console">ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION</code></pre>
+>> >
+>> > Wir empfehlen, immer den Standardmodus zu verwenden, es sei denn, Ihre Datenbank wurde von einer Version aktualisiert, deren Standardmodus sich vom aktuellen unterscheidet.
+>>
+>> Nehmen Sie die erforderlichen Änderungen vor und klicken Sie auf `Bestätigen`{.action}.
 
 > [!warning]
 >
 > Jede Änderung erfordert einen Neustart des Datenbankservers.
-> 
+>
 
-#### PostgreSQL Instanzen
+<!-- CP-STEPS-END:mysql-mariadb-konfigurieren -->
 
-- Klicken Sie auf den Tab `Konfiguration`{.action}.
+///
 
-Im Feld **Allgemeine Konfiguration von PostgreSQL** finden Sie die derzeit für Ihre Datenbank festgelegte Konfiguration. Sie können diese direkt bearbeiten und dann auf `Anwenden`{.action} klicken.
+/// details | PostgreSQL Instanz
 
-![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/configuration/general-configuration-of-postgresql.png){.thumbnail}
+Klicken Sie auf die unten stehenden Tabs, um die **3** Schritte nacheinander anzuzeigen.
 
-- **log_min_messages**: Steuert die Ebenen der Nachrichten, die in den Serverlogs protokolliert werden sollen. Für eine Web Cloud Databases Lösung sind folgende Level verfügbar: 
-    - **WARNING**: Stellt Warnmeldungen zu potenziellen Problemen bereit.
-    - **ERROR**: Sendet den Fehler, der zur Stornierung einer laufenden Bestellung geführt hat.
-    - **LOG**: Speichert Informationen für Serveradministratoren.
-    - **FATAL**: Sendet den Fehler, der zum Beenden der aktuellen Sitzung geführt hat.
-    - **PANIC**: Sendet den Fehler, der zum Beenden aller Sitzungen geführt hat.
+<!-- CP-STEPS-START:postgresql-konfigurieren -->
 
-Jede Ebene enthält alle nachfolgenden Ebenen. Je höher die Stufe, desto weniger Meldungen werden in den Logs des Servers gespeichert.
+> [!tabs]
+> **Schritt 1**
+>>
+>> Gehen Sie auf die Seite [Web Cloud Databases](/links/control-panel/web-cloud-databases), und wählen Sie die betreffende Lösung aus.
+>>
+>> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases.png){.thumbnail}
+>>
+> **Schritt 2**
+>>
+>> Klicken Sie auf den Tab `Konfiguration`{.action}.
+>>
+> **Schritt 3**
+>>
+>> Im Bereich **Allgemeine Konfiguration von PostgreSQL** finden Sie die derzeit für Ihre Datenbank festgelegte Konfiguration. Sie können diese direkt bearbeiten und dann auf `Anwenden`{.action} klicken.
+>>
+>> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/configuration/general-configuration-of-postgresql.png){.thumbnail}
+>>
+>> - **log_min_messages**: Steuert die Ebenen der Nachrichten, die in den Serverlogs protokolliert werden sollen. Für eine Web Cloud Databases Lösung sind folgende Ebenen verfügbar:
+>>     - **"WARNING"**: Stellt Warnmeldungen zu potenziellen Problemen bereit.
+>>     - **"ERROR"**: Sendet den Fehler, der zum Abbruch eines laufenden Befehls geführt hat.
+>>     - **"LOG"**: Speichert Informationen für Serveradministratoren.
+>>     - **"FATAL"**: Sendet den Fehler, der zum Beenden der aktuellen Sitzung geführt hat.
+>>     - **"PANIC"**: Sendet den Fehler, der zum Beenden aller Sitzungen geführt hat.
+>>
+>> Jede Ebene enthält alle nachfolgenden Ebenen. Je höher die Stufe, desto weniger Meldungen werden in den Serverlogs gespeichert.
+>>
+>> Der Standardwert ist **"WARNING"**, da er die Werte **"ERROR"**, **"LOG"**, **"FATAL"** und **"PANIC"** enthält.
+>>
+>> Außerdem können Sie Erweiterungen für Ihre Datenbanken aktivieren. Klicken Sie hierzu auf den Tab `Datenbanken`{.action} und dann auf das Tabellensymbol der betreffenden Datenbank in der Spalte **"Erweiterungen"**.
+>>
+>> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/databases/extensions.png){.thumbnail}
 
-Der Standardwert ist **WARNING**, da er die Werte **ERROR**, **LOG**, **FATAL** und **PANIC** enthält.
+<!-- CP-STEPS-END:postgresql-konfigurieren -->
 
-Außerdem können Sie Erweiterungen für Ihre Datenbanken aktivieren. Klicken Sie hierzu auf den Tab `Datenbanken`{.action} und dann auf das Tabellensymbol der betreffenden Datenbank in der Spalte **Erweiterungen**.
+///
 
-![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/databases/extensions.png){.thumbnail}
+### MySQL-, PostgreSQL- oder MariaDB-Version des Datenbankservers ändern
 
-### Ändern der MySQL-, PostgreSQL- oder MariaDB-Version des Datenbankservers
+Klicken Sie auf die unten stehenden Tabs, um die **3** Schritte nacheinander anzuzeigen.
 
-Um die MySQL-, PostgreSQL- oder MariaDB-Version des Datenbankservers zu erfahren, überpüfen Sie nach der Wahl Ihres Datenbankservers den Tab **Allgemeine Informationen**.
+<!-- CP-STEPS-START:change-version -->
 
-Die aktuelle Version wird unter **Version** angezeigt.
+> [!tabs]
+> **Schritt 1**
+>>
+>> Gehen Sie auf die Seite [Web Cloud Databases](/links/control-panel/web-cloud-databases), und wählen Sie die betreffende Lösung aus.
+>>
+>> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases.png){.thumbnail}
+>>
+> **Schritt 2**
+>>
+>> Im Tab **Allgemeine Informationen** wird die aktuelle Version in der Zeile **Version** angezeigt.
+>>
+> **Schritt 3**
+>>
+>> Um die Version zu ändern, klicken Sie auf `Die Version ändern`{.action}.
+>>
+>> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/general-information/postgre-12-update-version.png){.thumbnail}
 
-Um die Version anzupassen, klicken Sie auf `Die Version ändern`{.action}.
+<!-- CP-STEPS-END:change-version -->
 
-![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/general-information/postgre-12-update-version.png){.thumbnail}
+/// details | Wie erfahre ich die genaue PostgreSQL-Version, die ich verwende?
 
-#### Wie kann ich die genaue Version von PostgreSQL erfahren, die verwendet wird?
-
-Geben Sie diesen Befehl in phpPgAdmin ein, nachdem Sie auf **Ihre Datenbank** im Bereich **SQL** geklickt haben und klicken Sie dann auf `Ausführen`{.action}:
+Geben Sie diesen Befehl in phpPgAdmin ein, nachdem Sie auf **Ihre Datenbank** im Bereich **"SQL"** geklickt haben, und klicken Sie dann auf `Starten`{.action}:
 
 ```sql
 select version();
 ```
 
-#### Woher weiß ich, welche Version von MySQL oder MariaDB ich benutze?
+///
 
-Hierzu geben Sie in phpMyAdmin unter der Rubrik **SQL** den folgenden Befehl ein und klicken Sie dann auf `Ausführen`{.action}:
+/// details | Wie erfahre ich die genaue MySQL- oder MariaDB-Version, die ich verwende?
+
+Geben Sie diesen Befehl in phpMyAdmin im Bereich **"SQL"** ein und klicken Sie dann auf `Ausführen`{.action}:
 
 ```sql
 show variables like "version";
 ```
+
+///
 
 > [!primary]
 >
@@ -211,75 +347,119 @@ show variables like "version";
 
 > [!warning]
 >
-> Es ist nicht möglich, direkt von einer älteren Version zur neuesten zu wechseln. Die Zwischenversionen müssen einbezogen werden.
+> Es ist nicht möglich, direkt von einer älteren Version zur neuesten zu wechseln. Alle Zwischenversionen müssen durchlaufen werden.
 >
 
-### Logs und Messwerte
+### Logs und Metriken
 
-#### Zugang zu den Logs
+**Klicken Sie auf jeden Titel, um den Inhalt anzuzeigen.**
 
-Um die Logs Ihrer Web Cloud Databases Lösung einzusehen, folgen Sie unserer Anleitung „[Web Cloud Databases - Logs abrufen](/pages/web_cloud/web_cloud_databases/retrieve-logs)“.
+/// details | Zugang zu den Logs
 
-#### Überprüfung der RAM Nutzung
+Um die Logs Ihrer Web Cloud Databases Lösung einzusehen, lesen Sie unsere Anleitung "[Web Cloud Databases - Logs abrufen](/pages/web_cloud/web_cloud_databases/retrieve-logs)".
 
-Loggen Sie sich in Ihrem OVHcloud Kundencenter ein Klicken Sie auf `Web Cloud`{.action} und dann auf `Web Cloud Databases`{.action}. Wählen Sie den Namen Ihres Datenbankservers aus.
+///
 
-Gehen Sie zum Tab `Messwerte` Ihres Datenbankservers. Hier finden Sie die Grafik **Statistiken zum verwendeten RAM**.
+/// details | RAM-Nutzung überwachen
 
-![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/metrics/ram-memory-usage-statistics.png){.thumbnail}
+Klicken Sie auf die unten stehenden Tabs, um die **2** Schritte nacheinander anzuzeigen.
 
-#### Verbindungen pro Minute überprüfen
+<!-- CP-STEPS-START:ram-ueberwachen -->
 
-Diese Anzeige ermöglicht es, die Verbindungslast pro Minute während der letzten 24 Stunden auf Ihrem Datenbankserver zu verfolgen.
+> [!tabs]
+> **Schritt 1**
+>>
+>> Gehen Sie auf die Seite [Web Cloud Databases](/links/control-panel/web-cloud-databases), und wählen Sie die betreffende Lösung aus.
+>>
+>> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases.png){.thumbnail}
+>>
+> **Schritt 2**
+>>
+>> Klicken Sie auf den Tab `Metriken`{.action}. Sie finden dort die Grafik **"Statistiken zum verwendeten RAM"**.
+>>
+>> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/metrics/ram-memory-usage-statistics.png){.thumbnail}
 
-Loggen Sie sich in Ihrem OVHcloud Kundencenter ein Klicken Sie auf `Web Cloud`{.action} und dann auf `Web Cloud Databases`{.action}. Wählen Sie den Namen Ihres Datenbankservers aus.
+<!-- CP-STEPS-END:ram-ueberwachen -->
 
-Gehen Sie zum Tab `Messwerte` Ihres Datenbankservers. Hier finden Sie die Grafik **Statistiken der Gesamtzahl der Verbindungen pro Minute**.
+///
 
-![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/metrics/statistics-for-total-connections-per-minute.png){.thumbnail}
+/// details | Anzahl der Verbindungen pro Minute überwachen
+
+Diese Grafik ermöglicht es, die Verbindungslast pro Minute während der letzten 24 Stunden auf Ihrem Datenbankserver zu verfolgen.
+
+Klicken Sie auf die unten stehenden Tabs, um die **2** Schritte nacheinander anzuzeigen.
+
+<!-- CP-STEPS-START:verbindungen-ueberwachen -->
+
+> [!tabs]
+> **Schritt 1**
+>>
+>> Gehen Sie auf die Seite [Web Cloud Databases](/links/control-panel/web-cloud-databases), und wählen Sie die betreffende Lösung aus.
+>>
+>> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases.png){.thumbnail}
+>>
+> **Schritt 2**
+>>
+>> Klicken Sie auf den Tab `Metriken`{.action}. Sie finden dort die Grafik **"Statistiken der Gesamtzahl der Verbindungen pro Minute"**.
+>>
+>> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/metrics/statistics-for-total-connections-per-minute.png){.thumbnail}
+
+<!-- CP-STEPS-END:verbindungen-ueberwachen -->
+
+///
 
 ### Ihre Datenbanken optimieren
 
-Es wird empfohlen, die Datenbank so zu administrieren, dass sie effizient ist. Effizienz (Performance) bezieht sich hier auf die möglichst schnelle Rückgabe der Information an das anfragende Skript. Dazu bedarf es einer strukturierten und optimierten Datenbank.
+Pflegen Sie Ihre Datenbank, um eine gute Leistung beizubehalten und schnelle Rückgaben an die Skripte zu gewährleisten. Dies erfordert eine strukturierte und optimierte Datenbank.
 
-#### Datenbank indexieren
+**Klicken Sie auf jeden Titel, um den Inhalt anzuzeigen.**
 
-Um die Bearbeitungsgeschwindigkeit einer Anfrage zu erhöhen, sollte ein Index auf die in den **"WHERE"**-Klauseln verwendeten Felder gesetzt werden.
+/// details | Datenbank indexieren
 
-Beispiel: Sie suchen regelmäßig nach „Person“ in Verbindung mit „Stadt“. Indexieren Sie das Feld "Stadt" folgendermaßen:
+Um die Geschwindigkeit der Suche bei einer Abfrage zu erhöhen, müssen Sie einen Index auf die Felder setzen, die in WHERE-Klauseln verwendet werden.
+
+Beispiel: Sie suchen regelmäßig nach Personen in Verbindung mit einer Stadt. Indexieren Sie das Feld "city" mit folgender Abfrage:
 
 ```sql
-ALTER TABLE 'test' ADD INDEX ('Stadt');
+ALTER TABLE 'test' ADD INDEX ('city')
 ```
 
-#### Datenbank bereinigen
+///
 
-Daten, auf die nicht mehr zugegriffen wird, sollten archiviert werden. Archivieren von Daten hilft, Ihre Tabellen kleiner und damit schneller durchsuchbar zu halten.
+/// details | Datenbank bereinigen
 
-#### Anzeigebegrenzung
+Auf einige Ihrer Daten wird nicht mehr zugegriffen? Durch deren Archivierung werden Ihre Tabellen kleiner und Suchen schneller.
 
-Beschränken Sie die Anzeige der Datensätze auf eine begrenzte Zahl (z.B. 10 pro Seite) mit dem **"LIMIT"**-Teil Ihrer SQL-Abfrage.
+///
 
-#### Gruppieren von Anfragen
+/// details | Anzeigebegrenzung
 
-Gruppieren Sie Anfragen zu Beginn des Skriptes wie folgt:
+Beschränken Sie die Anzeige der Datensätze auf eine feste Anzahl (z.B. 10 pro Seite) mit dem LIMIT-Teil Ihrer SQL-Abfrage.
+
+///
+
+/// details | Anfragen gruppieren
+
+Gruppieren Sie Ihre Anfragen zu Beginn des Skripts folgendermaßen:
 
 ```bash
-verbindung_db
-anfrage1
-anfrage2
+open_connection
+request1
+request2
 ...
-abmeldung_db
-Anzeige …
-Datenverarbeitung
-Schleife …
-Anzeige …
+close_connection
+Display...
+Process data
+Loop through data...
+Display...
 ...
 ```
 
-#### Nur notwendige Daten abrufen
+///
 
-Prüfen Sie in Ihren SQL-Anfragen, ob Sie nur die tatsächlich benötigten Daten abfragen und vergessen Sie insbesondere nicht die Tabellenverlinkung.
+/// details | Nur nützliche Daten abrufen
+
+Stellen Sie in Ihren SQL-Abfragen sicher, dass Sie nur die benötigten Daten auswählen und die Verknüpfungen zwischen den Tabellen nicht vergessen haben.
 
 Beispiel:
 
@@ -287,9 +467,13 @@ Beispiel:
 (where table1.champs = table2.champs2)
 ```
 
-#### Vermeidung von Optionen mit zu hohem Ressourcenverbrauch
+///
 
-Verwenden Sie beispielsweise nicht **"HAVING"**. Dies erhöht die Zahl der Abfragen. Vermeiden Sie ebenso die Verwendung von **"GROUP BY"**, es sei denn, dies ist unbedingt erforderlich.
+/// details | Optionen mit zu hohem Ressourcenverbrauch vermeiden
+
+Verwenden Sie beispielsweise nicht **"HAVING"**. Dies erhöht die Anzahl der Anfragen. Vermeiden Sie ebenso die Verwendung von **"GROUP BY"**, es sei denn, dies ist unbedingt erforderlich.
+
+///
 
 ## Weiterführende Informationen
 

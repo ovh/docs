@@ -20,8 +20,18 @@ Die Einrichtung dieser Option, kombiniert mit der [Zwei-Faktor-Authentifizierung
 
 ## Voraussetzungen
 
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 - Sie haben die [Empfehlungen zur Verwaltung des Account-Passworts](/pages/account_and_service_management/account_information/manage-ovh-password) zur Kenntnis genommen.
+
+<!-- CP-NAV-START:account-security -->
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direkter Link:** [Sicherheit](/links/control-panel/account-security)
+- **Navigationspfad:** Klicken Sie oben rechts auf Ihren Namen > `Zu meinem Account`{.action} > `Sicherheit`{.action}
+
+---
+<!-- CP-NAV-END:account-security -->
 
 ## In der praktischen Anwendung
 
@@ -51,9 +61,7 @@ Wenn Sie zusätzlich ein 4G/5G-Netzwerk verwenden, vergessen Sie nicht, auch die
 
 ### Schritt 2: Einschränkung des Zugangs nach IP einrichten
 
-Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein, klicken Sie oben rechts auf Ihren Namen und dann auf `Zu meinem Account`{.action}.
-
-Klicken Sie anschließend auf den Tab `Sicherheit`{.action}, um auf folgende Seite zu gelangen:
+Öffnen Sie die Seite [Kontosicherheit](/links/control-panel/account-security) und suchen Sie den Bereich **IP-Zugangsbeschränkung**.
 
 ![Access from Manager](images/ip2.png){.thumbnail}
 

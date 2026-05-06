@@ -1,0 +1,33 @@
+flowchart TD
+    subgraph NETBOOT["Network Boot (every boot)"]
+        A["1. PXE boot via DHCP<br/>on public interface"]
+        A --> B["2. Download iPXE"]
+        B --> C["3. Query boot service"]
+    end
+
+    C --> D{"4. Execute script"}
+
+    subgraph RESCUE["Customer Rescue"]
+        G1[Download, verify and apply<br/>CPU microcode]
+        G1 --> G2[Boot live<br/>rescue system]
+    end
+
+    subgraph DISK["Boot to Disk"]
+        H[Download, verify and apply<br/>CPU microcode]
+        H --> I{Firmware?}
+        I -->|UEFI boot| J[sanboot to<br/>efiBootloaderPath]
+        I -->|Legacy boot| K[sanboot to<br/>first disk]
+        J --> L{Success?}
+        L -->|Yes| M[OS loads]
+        L -->|No| N[rEFInd fallback<br/>auto-detects EFI bootloaders]
+        K --> M
+        N --> M
+    end
+
+    subgraph CUSTOM["Custom boot script"]
+        O[Execute user-defined<br/>iPXE script<br/>no microcode loading]
+    end
+
+    D -->|Customer rescue| G1
+    D -->|Boot to disk| H
+    D -->|Custom script| O

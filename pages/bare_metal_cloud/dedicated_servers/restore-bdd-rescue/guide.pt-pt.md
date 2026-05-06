@@ -1,6 +1,6 @@
 ---
-title: "Recuperação das bases de dados em modo rescue"
-excerpt: "Descubra como aceder às suas bases de dados e registá-las em modo rescue"
+title: "Recuperar bases de dados em modo rescue num servidor dedicado"
+excerpt: "Aceda às suas bases de dados e exporte-as a partir de um servidor dedicado em modo rescue para recuperar dados após um incidente."
 updated: 2023-04-13
 ---
 
@@ -17,7 +17,17 @@ O modo Rescue permite aceder aos seus dados de forma permanente, mesmo que o sis
 ## Requisitos
 
 - Um [servidor dedicado](/links/bare-metal/bare-metal), um [VPS](/links/bare-metal/vps) ou uma instância [Public Cloud](/links/public-cloud/public-cloud) na sua conta OVHcloud (exceto sistemas Windows)
-- Ter acesso à [Área de Cliente OVHcloud](/links/manager)
+
+<!-- CP-NAV-START:baremetal-dedicated-servers -->
+---
+
+### Acesso à Área de Cliente OVHcloud
+
+- **Ligação direta:** [Servidores dedicados](/links/control-panel/baremetal-dedicated-servers)
+- **Caminho de navegação:** `Bare Metal Cloud`{.action} > `Servidores dedicados`{.action} > Selecione o seu servidor
+
+---
+<!-- CP-NAV-END:baremetal-dedicated-servers -->
 
 > [!warning]
 >

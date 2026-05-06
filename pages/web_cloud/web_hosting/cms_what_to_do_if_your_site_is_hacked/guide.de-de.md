@@ -27,7 +27,6 @@ Ein Hack kann diverse Folgen haben (nicht erschöpfende Liste):
 ## Voraussetzungen
 
 - Ihre Webseite befindet sich auf einem [OVHcloud Webhosting](/links/web/hosting).
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 
 ## In der praktischen Anwendung
 

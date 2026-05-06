@@ -34,9 +34,20 @@ OVHcloud Managed Private Registry service provides you a managed, authenticated 
 
 - An OVHcloud Managed Private Registry (see the [creating a private registry](/pages/public_cloud/containers_orchestration/managed_private_registry/creating-a-private-registry) guide for more information)
 
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Navigation path:** `Public Cloud`{.action} > Select your project
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
+
 ## Instructions
 
-1. In your [OVHcloud Control Panel](/links/manager), select your `Managed Private Registry`{.action}, click on the *more options* (`...`{.action}) button at the right end and click on `Harbor user interface`{.action}:
+1. In the `Managed Private Registry`{.action} section, click on the *more options* (`...`{.action}) button at the right end and click on `Harbor user interface`{.action}:
 
     ![Managing users and projects](images/connecting-to-the-ui-002.png){.thumbnail}
 

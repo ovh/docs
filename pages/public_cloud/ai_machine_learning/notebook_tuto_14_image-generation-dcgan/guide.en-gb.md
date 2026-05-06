@@ -23,16 +23,28 @@ At the end of this tutorial, you will have learnt the concepts of generative mod
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](/links/manager)
 - An AI Notebooks project created inside a [Public Cloud project](/links/public-cloud/public-cloud) in your OVHcloud account
 - A user for AI Notebooks
 - A [Kaggle](https://www.kaggle.com/) account to download the dataset
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Navigation path:** `Public Cloud`{.action} > Select your project
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## Instructions
 
 You can launch the notebook from the [OVHcloud Control Panel](/links/manager) or via the ovhai [CLI](/pages/public_cloud/ai_machine_learning/cli_11_howto_run_notebook_cli).
 
 ### Launching a Jupyter notebook with "Conda" via UI (Control Panel)
+
+<!-- CP-STEPS-START:launch-notebook-ui-control-panel -->
 
 To launch your notebook from the [OVHcloud Control Panel](/links/manager), refer to the following steps.
 
@@ -52,6 +64,8 @@ Using GPUs is recommended because manipulating images is a training intensive ta
 >
 > Here, using `1 GPU` is sufficient.
 >
+
+<!-- CP-STEPS-END:launch-notebook-ui-control-panel -->
 
 ### Launching a Jupyter notebook with "conda" via CLI
 

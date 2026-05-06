@@ -1,6 +1,6 @@
 ---
-title: 'Seriennummer einer Festplatte ermitteln'
-excerpt: 'Hier erfahren Sie, wie Sie die Seriennummer einer Festplatte ermitteln, um diese auszutauschen.'
+title: "Festplatten-Seriennummer auf einem Dedicated Server"
+excerpt: "Ermitteln Sie die Seriennummer einer Festplatte auf Ihrem Dedicated Server, um diese für einen Austauschantrag zu identifizieren."
 updated: 2018-08-21
 ---
 
@@ -166,5 +166,7 @@ Wenn Sie das Gerät ermittelt haben, das mit der Festplatte, die Sie analysieren
 Die Nummer des sg-Geräts wird wie folgt angezeigt: `/dev/sg0`, `/dev/sg1` etc.
 
 ## Weiterführende Informationen
+
+- [Defekte Festplatte auf einem Dedicated Server austauschen](/pages/bare_metal_cloud/dedicated_servers/disk_replacement)
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

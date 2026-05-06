@@ -30,6 +30,17 @@ By setting the weight to 0, the member is effectively removed from the traffic p
 
 ## Instructions
 
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Navigation path:** `Public Cloud`{.action} > Select your project
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
+
 ### Step 1 - Create a Load Balancer with two members
 
 Use the following repository to create a Load Balancer with two members:
@@ -56,6 +67,7 @@ You should see alternating responses from the two members:
 
 ### Step 2 - Set the Weight of a member to 0
 
+<!-- CP-STEPS-START:step2-set-weight-horizon-access -->
 > [!tabs]
 > OVHcloud API
 >> Log in to the OVHcloud APIv6 interface according to the relevant guide ([First steps with the OVHcloud API](/pages/manage_and_operate/api/first-steps)).
@@ -119,7 +131,7 @@ You should see alternating responses from the two members:
 >>
 >> There are two ways to access the Horizon interface:
 >>
->> - Log in with OVHcloud Single Sign-On: use the `Horizon`{.action} link in the left-hand menu under "Management Interfaces" after opening your `Public Cloud`{.action} project in the [OVHcloud Control Panel](/links/manager).
+>> - Log in with OVHcloud Single Sign-On: use the `Horizon`{.action} link in the left-hand menu under "Management Interfaces" in your `Public Cloud`{.action} project.
 >> - To log in with a specific OpenStack user: Open the [Horizon login page](https://horizon.cloud.ovh.net/auth/login/) and enter the [OpenStack user credentials](/pages/public_cloud/public_cloud_cross_functional/create_and_delete_a_user) previously created, then click on `Connect`{.action}.
 >>
 >> Select the appropriate region from the top left drop-down menu.
@@ -147,6 +159,7 @@ You should see alternating responses from the two members:
 >> $ openstack loadbalancer member set --weight 0 <pool> <member_0>
 >> ```
 >>
+<!-- CP-STEPS-END:step2-set-weight-horizon-access -->
 
 ### Step 3 - Verify Member Status
 

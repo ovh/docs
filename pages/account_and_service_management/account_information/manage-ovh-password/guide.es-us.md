@@ -14,6 +14,17 @@ La contraseña de acceso al área de cliente de OVHcloud es la llave de acceso a
 - Disponer de una cuenta de OVHcloud activa.
 - Conocer su id. de cliente y/o su dirección de correo electrónico.
 
+<!-- CP-NAV-START:account-security -->
+---
+
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [Seguridad](/links/control-panel/account-security)
+- **Ruta de navegación:** Haga clic en su nombre en la parte superior derecha > `Acceder a mi cuenta`{.action} > `Seguridad`{.action}
+
+---
+<!-- CP-NAV-END:account-security -->
+
 ## Procedimiento
 
 ### Generar una contraseña adecuada
@@ -67,9 +78,7 @@ Si estuviese comprometida, le recomendamos encarecidamente [que la cambie de inm
 
 #### Desde el área de cliente de OVHcloud
 
-- Conéctese a su [área de cliente de OVHcloud](/links/manager), haga clic en su nombre en la parte superior derecha y seleccione `Acceder a mi cuenta`{.action}.
-
-- Luego, haga clic en `Seguridad`{.action} y, seguidamente, en `Editar`{.action} (a la derecha de "Contraseña").
+- En la página [Seguridad de la cuenta](/links/control-panel/account-security), haga clic en `Editar`{.action} (a la derecha de "Contraseña").
 
 ![manage-ovh-password](/pages/assets/screens/control_panel/product-selection/right-column/access-my-account/edit-account-password.png){.thumbnail}
 
@@ -82,6 +91,7 @@ Si estuviese comprometida, le recomendamos encarecidamente [que la cambie de inm
 ![manage-ovh-password](images/account-password-modif-manager-step4.png){.thumbnail}
 
 - A continuación, aparece un mensaje indicando que la operación se ha realizado satisfactoriamente. Haga clic en el botón `Continuar`{.action} debajo de este mensaje para ser redirigido a la página de identificación. A continuación, introduzca su usuario y su nueva contraseña.
+
 
 <a name="lost-password"></a>
 
@@ -109,6 +119,7 @@ Si estuviese comprometida, le recomendamos encarecidamente [que la cambie de inm
 > 
 > Al guardar la nueva contraseña, todas las sesiones activas en su cuenta de OVHcloud se cerrarán automáticamente.
 > 
+
 
 ## Más información
 

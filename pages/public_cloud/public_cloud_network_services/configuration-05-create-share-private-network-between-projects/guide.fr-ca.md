@@ -1,7 +1,7 @@
 ---
 title: 'Comment partager un réseau privé entre 2 projets Public Cloud'
 excerpt: 'Découvrez comment partager un réseau privé entre deux projets Public Cloud OVHcloud.'
-updated: 2024-07-31
+updated: 2026-02-10
 ---
 
 ## Objectif
@@ -11,6 +11,7 @@ Ce tutoriel vous montre comment connecter deux projets sur un réseau interne. I
 ## Prérequis
 
 - Vous avez 2 projets Public Cloud ou plus.
+- Les deux projets doivent être placés dans le même vRack.
 
 Référez-vous aux guides suivants :
 

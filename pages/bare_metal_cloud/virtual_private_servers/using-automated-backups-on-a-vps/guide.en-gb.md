@@ -24,14 +24,24 @@ The Automated backup option for VPS offers a convenient way to have complete sys
 **This guide explains the Automated backup option for your OVHcloud VPS.**
 
 > [!primary]
-> Before applying a backup strategy, we recommend to consult the [product pages and FAQ](/links/bare-metal/vps-options) for pricing comparisons and further details.
+> Before applying a backup strategy, we recommend consulting the [product pages and FAQ](/links/bare-metal/vps-options) for pricing comparisons and further details.
 >
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](/links/manager).
 - An active [Virtual Private Server](/links/bare-metal/vps) in your OVHcloud account
 - Administrative access (sudo) via SSH to your VPS (optional).
+
+<!-- CP-NAV-START:baremetal-vps -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [VPS management](/links/control-panel/baremetal-vps)
+- **Navigation path:** `Bare Metal Cloud`{.action} > `Virtual private servers`{.action} > Select your VPS
+
+---
+<!-- CP-NAV-END:baremetal-vps -->
 
 > [!warning]
 > This feature is currently unavailable for Virtual Private Servers in [Local Zones](/links/bare-metal/vps-lz).
@@ -59,16 +69,15 @@ When you order a VPS, a single daily Automated backup is included as a free serv
 - Mount and restore the daily backup.
 - Set the time of day this backup will be created.
 
-For more flexiblity with your backups, you can activate the Premium Automated Backup option.
+For more flexibility with your backups, you can activate the Premium Automated Backup option.
 
 <a name="premium"></a>
 
 ### How to subscribe to Premium Automated Backup
 
+<!-- CP-STEPS-START:subscribe-premium -->
 The Premium Automated Backup option creates a backup of your VPS every 24 hours at the specified time.  
 You will have access to all daily backups of the last 7 days. Once 7 backups are created, each new backup will replace the oldest one.
-
-Log in to your [OVHcloud Control Panel](/links/manager), open the `Bare Metal Cloud`{.action} section, select `Virtual Private Servers`{.action} and then click the name of your VPS.
 
 Click the `Automated backup`{.action} tab in the horizontal menu.
 
@@ -79,12 +88,14 @@ Click the link `Order a premium backup`{.action} (for services ordered from 7 AU
   <img src="images/backup_vps_leg.png" alt="autobackup vps">
 </div>
 
-In the next step, please take note of the pricing information, then click on `Order`{.action}. You will be guided through the order process and receive a confirmation email.
+In the next step, note the pricing information, then click `Order`{.action}. You will be guided through the order process and receive a confirmation email.
+<!-- CP-STEPS-END:subscribe-premium -->
 
 <a name="time"></a>
 
 ### How to configure the backup time
 
+<!-- CP-STEPS-START:configure-backup-time -->
 You can change the time of day at which the backup will take place.
 
 After selecting your VPS, click on the `Automated backup`{.action} tab in the horizontal menu.
@@ -99,13 +110,15 @@ In the window that appears, edit the time of day (24-hour UTC time standard). Cl
 
 > [!primary]
 >
-Once confirmed in the Control Panel, the change will come into effect after 24 to 48 hours.
+> Once confirmed in the Control Panel, the change will come into effect after 24 to 48 hours.
 >
+<!-- CP-STEPS-END:configure-backup-time -->
 
 <a name="restore"></a>
 
 ### How to restore a backup from the OVHcloud Control Panel
 
+<!-- CP-STEPS-START:restore-backup -->
 After selecting your VPS, click on the `Automated backup`{.action} tab in the horizontal menu.  
 Click the button `...`{.action} next to the backup you would like to restore and select `Restoration`{.action}.
 
@@ -117,6 +130,7 @@ If you recently changed your root password, make sure to tick the option "Modify
 >
 > Please note that the automated backups will not include your additional disks.
 >
+<!-- CP-STEPS-END:restore-backup -->
 
 <a name="mount"></a>
 
@@ -131,10 +145,12 @@ It is not necessary to completely overwrite your existing service with a restora
 > This guide is designed to help you with common tasks. Nevertheless, we recommend contacting a [specialist service provider](/links/partner) or reaching out to the [OVHcloud community](/links/community) if you encounter any difficulties. You can find more information in the [Go further](#go-further) section of this guide.
 >
 
+<!-- CP-STEPS-START:mount-backup -->
 After selecting your VPS, click on the `Automated backup`{.action} tab in the horizontal menu.  
 Click on `...`{.action} next to the backup you need to access and select `Mounting`{.action}.
 
 ![autobackupvps](images/backup_vps_step2.png){.thumbnail}
+<!-- CP-STEPS-END:mount-backup -->
 
 When you use this option, a read-write copy of the backup is created and mounted. The original backup will remain available unchanged for future restorations.
 
@@ -176,9 +192,11 @@ sudo mount /dev/sdb1 /mnt/restore
 
 You can now switch to this folder and access your backup data.
 
+<!-- CP-STEPS-START:unmount-backup-ssh -->
 Remember to unmount the backup once you have finished using it. Click on the button `Unmount the backup`{.action} in the `Automated backup`{.action} tab, then confirm in the popup window.
 
 ![unmount](images/backup_vps_unmount.png){.thumbnail}
+<!-- CP-STEPS-END:unmount-backup-ssh -->
 
 <a name="windows"></a>
 
@@ -202,9 +220,11 @@ Once done, your mounted backup will be accessible in the `File Explorer`.
 
 ![file explorer](images/windowsbackup4.png){.thumbnail}
 
+<!-- CP-STEPS-START:unmount-backup-windows -->
 Remember to unmount the backup once you have finished using it. Click on the button `Unmount the backup`{.action} in the `Automated backup`{.action} tab, then confirm in the popup window.
 
 ![unmount](images/backup_vps_unmount.png){.thumbnail}
+<!-- CP-STEPS-END:unmount-backup-windows -->
 
 > [!warning]
 >
@@ -215,7 +235,7 @@ Remember to unmount the backup once you have finished using it. Click on the but
 
 ### Best practice for using Automated backups
 
-The Automated Backup functionality is based on VPS snapshots. We recommend to follow the steps below to prevent any issues before using this option.
+The Automated Backup functionality is based on VPS snapshots. We recommend following the steps below to prevent any issues before using this option.
 
 <a name="qemu"></a>
 
@@ -223,7 +243,7 @@ The Automated Backup functionality is based on VPS snapshots. We recommend to fo
 
 Snapshots are instantaneous images of your running system ("live snapshot"). To ensure the availability of your system when the snapshot is created, the QEMU agent is used to prepare the filesystem for the process.
 
-The "**qemu-guest-agent**" agent is not installed by default on most distributions. Moreover, licensing restrictions may prevent OVHcloud from including it in the available OS images. Therefore, it is best practice to verify and install the agent in case it is not activated on your VPS. Connect to your VPS via SSH and follow the instructions below, according to your operating system.
+The "**qemu-guest-agent**" agent is not installed by default on most distributions. Moreover, licensing restrictions may prevent OVHcloud from including it in the available OS images. Therefore, it is best practice to verify and install the agent if it is not activated on your VPS. Connect to your VPS via SSH and follow the instructions below, according to your operating system.
 
 <a name="deb"></a>
 
@@ -302,7 +322,7 @@ sudo service qemu-guest-agent status
 
 You can install the agent via MSI file, available from the Fedora project website: <https://fedorapeople.org/groups/virt/virtio-win/direct-downloads/latest-qemu-ga/>.
 
-Verify that the service is running by using this powershell command:
+Verify that the service is running by using this PowerShell command:
 
 ```console
 PS C:\Users\Administrator> Get-Service QEMU-GA

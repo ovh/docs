@@ -155,7 +155,7 @@ If your files exceed the maximum size allowed, or if you need to share an unsupp
 
 /// details | Where can I find my support level?
 
-To find out the level of support associated with your NIC handle, log in to your [OVHcloud Control Panel](/links/manager), then click on your name in the top right-hand corner. The support level appears to the right of **Support**. If you have not subscribed to a paid support service, you will receive the Standard level by default.
+To find out the level of support associated with your NIC handle, open your [My account](/links/control-panel/account-dashboard) page. The support level appears to the right of **Support**. If you have not subscribed to a paid support service, you will receive the Standard level by default.
 
 Explore and compare the different support levels available [here](/links/support).
 
@@ -218,7 +218,7 @@ Explore and compare the different support levels available [here](/links/support
 
 /// details | Where can I find my support level?
 
-To find out the level of support associated with your account, log in to your [OVHcloud Control Panel](/links/manager), then click on your name in the top right-hand corner. The support level appears to the right of **Support**. If you have not subscribed to a paid support service, you will receive the Standard level by default.
+To find out the level of support associated with your account, open your [My account](/links/control-panel/account-dashboard) page. The support level appears to the right of **Support**. If you have not subscribed to a paid support service, you will receive the Standard level by default.
 
 Discover and compare the different support levels available [here](/links/support).
 

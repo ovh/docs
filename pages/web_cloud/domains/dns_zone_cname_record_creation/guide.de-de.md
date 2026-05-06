@@ -1,7 +1,7 @@
 ---
 title: "Hinzufügen eines CNAME DNS-Eintrags für eine Subdomain"
-excerpt: "Erfahren Sie, wie Sie einen DNS-Eintrag vom Typ CNAME zu einer von OVHcloud verwalteten DNS-Zone für die Subdomain einer Domain hinzufügen"
-updated: 2025-06-25
+excerpt: "Erfahren Sie, wie Sie einen DNS-Eintrag vom Typ CNAME zu einer von OVHcloud verwalteten DNS-Zone für die Subdomain eines Domainnamens hinzufügen"
+updated: 2026-03-24
 ---
 
 <style>
@@ -28,13 +28,24 @@ CNAME-Einträge sind nützlich, um zu vermeiden, dass die IP-Adressen für Ihre 
 
 **Diese Anleitung erklärt, wie Sie einen CNAME-Eintrag in Ihre OVHcloud DNS-Zone eintragen.**
 
-> **Sie haben bereits einen CNAME Eintrag in Ihrer DNS-Zone?** Folgen Sie unserer Anleitung "[Bearbeiten der OVHcloud DNS-Zone](/pages/web_cloud/domains/dns_zone_edit)".
+> **Sie haben bereits einen CNAME-Eintrag in Ihrer DNS-Zone?** Folgen Sie unserer Anleitung "[Bearbeiten der OVHcloud DNS-Zone](/pages/web_cloud/domains/dns_zone_edit)".
 
 ## Voraussetzungen
 
 - Sie haben einen [Domainnamen](/links/web/domains).
 - Sie nutzen eine diesem Domainnamen zugeordnete DNS-Zone bei OVHcloud.
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager), im Bereich `Web Cloud`{.action}.
+
+<!-- CP-NAV-START:web-dns-zone -->
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direkter Link:** [DNS-Zone](/links/control-panel/web-dns-zone)
+- **Navigationspfad:** `Web Cloud`{.action} > `DNS-Zone`{.action} > Wählen Sie Ihren Domainnamen aus
+
+---
+<!-- CP-NAV-END:web-dns-zone -->
+
 
 > [!warning]
 >
@@ -43,13 +54,34 @@ CNAME-Einträge sind nützlich, um zu vermeiden, dass die IP-Adressen für Ihre 
 
 ## In der praktischen Anwendung
 
-### Einen CNAME DNS-Eintrag für die Subdomain einer Domain hinzufügen
+### Einen CNAME DNS-Eintrag für die Subdomain eines Domainnamens hinzufügen
 
-1. Klicken Sie auf das Menü `DNS-Zone`{.action} und wählen Sie den Domainnamen aus.
-2. Klicken Sie auf der angezeigten Seite auf die Schaltfläche `Eintrag hinzufügen`{.action}.
-3. Wählen Sie im angezeigten Fenster das Feld `CNAME`{.action} aus.
-4. Geben Sie anschließend im Feld `Subdomain` die betreffende Subdomain (zum Beispiel `www` für die Subdomain `www.domain.tld`) und im Feld `Ziel *` den Domainnamen oder die Subdomain (zum Beispiel `domain.tld`) ein, auf die Sie mit dem CNAME Eintrag zeigen möchten. Klicken Sie anschließend auf `Weiter`{.action}.
-5. Überprüfen Sie die Zusammenfassung, und klicken Sie auf `Bestätigen`{.action}. Warten Sie bis zu **24** Stunden, bis die Propagation im DNS-Netzwerk voll wirksam ist.
+<!-- CP-STEPS-START:add-cname-record -->
+Klicken Sie auf die unten stehenden Tabs, um die **5** Schritte nacheinander anzuzeigen.
+
+> [!tabs]
+> **Schritt 1**
+>>
+>> Gehen Sie auf die Seite [DNS-Zone](/links/control-panel/web-dns-zone), und wählen Sie den betreffenden Domainnamen aus.
+>>
+>> ![DNS zones](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
+>>
+> **Schritt 2**
+>>
+>> Klicken Sie auf die Schaltfläche `Eintrag hinzufügen`{.action}.
+>>
+> **Schritt 3**
+>>
+>> Wählen Sie im angezeigten Fenster das Feld `CNAME`{.action} aus.
+>>
+> **Schritt 4**
+>>
+>> Geben Sie im Feld `Subdomain` die betreffende Subdomain ein (zum Beispiel: `www` für die Subdomain `www.domain.tld`) und im Feld `Ziel *` den Domainnamen oder die Subdomain (zum Beispiel: `domain.tld`), auf die Sie mit dem CNAME-Eintrag zeigen möchten. Klicken Sie auf `Weiter`{.action}.
+>>
+> **Schritt 5**
+>>
+>> Überprüfen Sie die Zusammenfassung, und klicken Sie auf `Bestätigen`{.action}. Warten Sie bis zu **24** Stunden, bis die Propagation im DNS-Netzwerk voll wirksam ist.
+<!-- CP-STEPS-END:add-cname-record -->
 
 /// details | Lesen Sie unsere detaillierten Anleitungen:
 
@@ -80,12 +112,12 @@ Eine DNS-Abfrage für *www.domain.tld* gibt entweder das Ziel des CNAME-Eintrags
 
 ///
 
-/// details | CNAME auf einer Domain in ihrer eigenen DNS-Zone
+/// details | CNAME auf einem Domainnamen in seiner eigenen DNS-Zone
 
-Gemäß der Konvention **können CNAME Einträge nicht für einen Domainnamen in seiner eigenen DNS-Zone verwendet werden**. Der Domainname muss nämlich direkt auf eine IP-Adresse mit einem Eintrag vom Typ [A](/pages/web_cloud/domains/dns_zone_a_record_creation) für eine IPv4 oder [AAAA](/pages/web_cloud/domains/dns_zone_aaaa_record_creation) für eine IPv6 verweisen.
+Gemäß der Konvention **können CNAME-Einträge nicht für einen Domainnamen in seiner eigenen DNS-Zone verwendet werden**. Der Domainname muss nämlich direkt auf eine IP-Adresse mit einem Eintrag vom Typ [A](/pages/web_cloud/domains/dns_zone_a_record_creation) für eine IPv4 oder [AAAA](/pages/web_cloud/domains/dns_zone_aaaa_record_creation) für eine IPv6 verweisen.
 
-Wie bereits erwähnt, können Sie in der DNS-Zone, die Sie für die Domain *domain.tld* erstellt haben, keinen CNAME-Eintrag für diese Domain erstellen.  
-Sie können jedoch CNAME-Einträge für alle Subdomains (zum Beispiel: *subdomain.domain.tld* oder *www.domain.tld*) der Domain *domain.tld* in der für *domain.tld* erstellten DNS-Zone erstellen.
+Wie bereits erwähnt, können Sie in der DNS-Zone, die Sie für den Domainnamen *domain.tld* erstellt haben, keinen CNAME-Eintrag für diesen Domainnamen erstellen.  
+Sie können jedoch CNAME-Einträge für alle Subdomains (zum Beispiel: *subdomain.domain.tld* oder *www.domain.tld*) des Domainnamens *domain.tld* in der für *domain.tld* erstellten DNS-Zone erstellen.
 
 ///
 

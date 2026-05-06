@@ -1,7 +1,7 @@
 ---
-title: Object Storage - Optimice el envío de sus ficheros a Object Storage (EN)
+title: Object Storage - Optimise the sending of your files to Object Storage
 excerpt: Learn how to optimise the sending of your files to your bucket
-updated: 2021-12-08
+updated: 2026-03-06
 ---
 
 ## Objective
@@ -10,7 +10,7 @@ Learn how to optimise the sending of your files to your bucket.
 
 ## Requirements
 
-- [awscli](/pages/storage_and_backup/object_storage/s3_getting_started_with_object_storage) installed
+- [AWS CLI](/pages/storage_and_backup/object_storage/s3_getting_started_with_object_storage) installed
 
 ## Instructions
 
@@ -31,7 +31,7 @@ In some scenarios, you may want Object Storage transfers to complete as quickly 
 This value should be set under the top-level s3 key in the AWS configuration file, whose default location is `~/.aws/config`.
 
 ```bash
-user@host:~$ cat ~/.aws/config
+cat ~/.aws/config
 
 [profile default]
 region = <region_in_lowercase>
@@ -54,3 +54,4 @@ aws configure set default.s3.max_concurrent_requests 20
 If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
 
 Join our [community of users](/links/community).
+

@@ -1,7 +1,7 @@
 ---
 title: "How to use Zimbra webmail"
 excerpt: "Discover the Zimbra webmail interface for your OVHcloud MX Plan email accounts"
-updated: 2025-10-22
+updated: 2026-02-26
 ---
 
 <style>
@@ -45,6 +45,9 @@ OVHcloud provides a webmail service called Zimbra to access MX Plan email accoun
     - [Calendar management](#calendar-management)
     - [Tasks](#tasks)
 - [Storage](#storage)
+    - [Add a file](#storage-add)
+    - [Share a file/folder](#storage-share)
+    - [Edit a document](#storage-onlyoffice)
 - [Filters](#filters)
     - [How to set filters](#filters-howto)
     - [Create a filter](#filters-creation)
@@ -472,10 +475,6 @@ Then click `Save`{.action} to finish creating your task.
 >
 > The storage feature called "Briefcase" is only available with the Zimbra Pro solution.
 
-> [!warning]
->
-> The Zimbra Pro solution is currently in beta version. Some features are still being improved.
-
 Click the `Briefcase`{.action} icon in the top bar to access your storage space. You can upload your files and share them there.
 
 1. In the left-hand column, you will see the folders for your storage space.
@@ -489,7 +488,7 @@ Click the `Briefcase`{.action} icon in the top bar to access your storage space.
 
 ![Zimbra - storage](images/zimbra-storage-01.png){.thumbnail .w-600}
 
-#### Add a file
+#### Add a file <a name="storage-add"></a>
 
 To add a file to your storage space, follow the steps below:
 
@@ -499,7 +498,7 @@ To add a file to your storage space, follow the steps below:
 
 ![Zimbra - storage](images/zimbra-storage-add-01.png){.thumbnail .w-600}
 
-#### Share a file/folder
+#### Share a file/folder <a name="storage-share"></a>
 
 Sharing allows you to give access to a folder or file on your storage to a third party, outside your Zimbra account.
 
@@ -531,6 +530,30 @@ Sharing allows you to give access to a folder or file on your storage to a third
 The guest receives an email inviting them to create a Zimbra account with a username and password. This account provides access to a Zimbra interface limited to the shared content only.
 
 ![Zimbra - storage](images/zimbra-storage-share-invite-01.png){.thumbnail .w-600}
+
+#### Edit a document <a name="storage-onlyoffice"></a>
+
+> [!success]
+>
+> The document editing feature from the "Briefcase" space is only available with the Zimbra Pro solution.
+
+From your Zimbra account's Briefcase, you can edit your text files, spreadsheets or presentations with the integrated ONLYOFFICE suite. To edit a document:
+
+- Click the `Briefcase`{.action} icon in the top bar to access your storage space.
+- Select the file you want to edit.
+- In the top bar, click `Edit`{.action}.
+
+![Zimbra - storage](images/zimbra-storage-onlyoffice-01.png){.thumbnail .w-600}
+
+- The ONLYOFFICE editor opens in a new tab.
+
+![Zimbra - storage](images/zimbra-storage-onlyoffice-02.png){.thumbnail .w-600}
+
+Changes you make in the editor are automatically saved during editing or when you close the tab.
+
+> [!success]
+>
+> For more information on editing documents in ONLYOFFICE, [see the official documentation](https://helpcenter.onlyoffice.com/docs).
 
 ### Filters <a name="filters"></a>
 

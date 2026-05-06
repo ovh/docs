@@ -40,7 +40,18 @@ IPv6 is the latest version of the *Internet Protocol*. Each OVHcloud VPS server 
 - A [Virtual Private Server](/links/bare-metal/vps) in your OVHcloud account
 - Administrative access (sudo) via SSH or remote desktop (Windows) to your server
 - A basic understanding of networking
-- Access to the [OVHcloud Control Panel](/links/manager) / to the [OVHcloud API](/links/api)
+- Access to the [OVHcloud API](/links/api) (optional)
+
+<!-- CP-NAV-START:baremetal-vps -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [VPS management](/links/control-panel/baremetal-vps)
+- **Navigation path:** `Bare Metal Cloud`{.action} > `Virtual private servers`{.action} > Select your VPS
+
+---
+<!-- CP-NAV-END:baremetal-vps -->
 
 ## Instructions
 
@@ -63,10 +74,9 @@ Please take note of the following terminology that will be used in code examples
 
 The first step is to identify the IPv6 address and the IPv6 gateway assigned to your server.
 
+<!-- CP-STEPS-START:retrieve-ipv6-info -->
 > [!tabs]
 > **Via the OVHcloud Control Panel**
->>
->> Log in to the [OVHcloud Control Panel](/links/manager), go to the `Bare Metal Cloud`{.action} section and select your server from `Virtual Private Servers`{.action}.
 >>
 >> The IPv6 address and the IPv6 gateway assigned to your server will appear in the `IP` section of the `Home`{.action} tab. Once you have copied them, continue with [applying the IPv6 configuration](#applyipv6).
 >>
@@ -95,6 +105,7 @@ The first step is to identify the IPv6 address and the IPv6 gateway assigned to 
 >> > @api {v1} /vps GET /vps/{serviceName}/ips/{ipAddress}
 >> >
 >>
+<!-- CP-STEPS-END:retrieve-ipv6-info -->
 
 Once you have retrieved these addresses, continue with [applying the IPv6 configuration](#applyipv6).
 
@@ -106,7 +117,7 @@ There are several ways to apply the IPv6 configuration. Use whichever method bes
 
 - [Non-persistent application](#nonpersistent)
 - [Persistent application on Debian and its derivatives (Ubuntu, Crunchbang, SteamOS, etc.)](#persistentdebian)
-- [Persistent application on Red Hat and its derivatives (CentOS, Rocky Linux, Alma Linux, etc.)](#persistentredhat)
+- [Persistent application on Red Hat and its derivatives (CentOS, Rocky Linux, AlmaLinux, etc.)](#persistentredhat)
 - [Persistent application on Fedora 42 and later](#persistentfedora)
 - [Persistent application on Windows Server](#persistentwindows)
 
@@ -128,7 +139,7 @@ ip -6 route add IPV6_GATEWAY dev eth0
 ip -6 route add default via IPV6_GATEWAY dev eth0
 ```
 
-#### Persistent appplication on Debian and its derivatives (Ubuntu, Crunchbang, SteamOS, etc) <a name="persistentdebian"></a>
+#### Persistent application on Debian and its derivatives (Ubuntu, Crunchbang, SteamOS, etc) <a name="persistentdebian"></a>
  
 > [!warning]
 >
@@ -155,7 +166,7 @@ Moreover, keep in mind that the exact file names may vary.
 >> sudo nano /etc/network/interfaces.d/51-cloud-init-ipv6
 >> ```
 >>
->> Creating a seperate file allows you to easily revert the changes in case of an error.
+>> Creating a separate file allows you to easily revert the changes in case of an error.
 >>
 >> Add the following lines to the file. Replace the generic elements (i.e. *YOUR_IPV6*, *IPV6_PREFIX* and *IPV6_GATEWAY*) as well as the network interface (if your server is not using **eth0**) with your specific values:
 >>
@@ -506,7 +517,7 @@ You can also test the connection to another remote server. However, IPv6 must be
 
 > [!primary]
 >
-> If, despite these changes, IPv6 does not seem work on your server, it is possible (in rare cases) that you will have to carry out additional modifications. In such cases, try the following steps:
+> If, despite these changes, IPv6 does not seem to work on your server, you may need to make additional modifications (in rare cases). In such cases, try the following steps:
 >
 > - Depending on the operating system, try to change the prefix (or *netmask*) of your IP address from /128 to /64. This will include the IPv6 gateway in your subnet.
 >
@@ -538,7 +549,7 @@ sudo echo "network: {config: disabled}" > /etc/cloud/cloud.cfg.d/98-disable-netw
 > It might be necessary to reboot the server for the change to take effect.
 >
 
-In order to return to automatic management of your network by Cloud-init, delete the newly created file or move it to another directory.
+To re-enable automatic network management by Cloud-init, delete the newly created file or move it to another directory.
 
 ///
 

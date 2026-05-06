@@ -1,7 +1,7 @@
 ---
 title: 'Using email aliases and redirections'
 excerpt: 'Find out how to manage aliases and email redirections'
-updated: 2025-06-03
+updated: 2026-03-31
 ---
 
 <style>
@@ -72,65 +72,41 @@ Click on the tabs below for an illustrated explanation of how aliases and redire
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](/links/manager).
 - A preconfigured OVHcloud email solution:
     - **MX Plan** available with a [web hosting plan](/links/web/hosting).
-    - [Exchange](/links/web/emails).
+    - [Exchange](/links/web/emails-exchange).
+
+<!-- CP-NAV-START:web-mx-plan -->
+<!-- CP-NAV-START:web-exchange -->
+---
+
+### OVHcloud Control Panel Access
+
+**MX Plan:**
+
+- **Direct link:** [MX Plan](/links/control-panel/web-mx-plan)
+- **Navigation path:** `Web Cloud`{.action} > `MX Plan`{.action} > Select your MX Plan service
+
+**Exchange:**
+
+- **Direct link:** [Exchange](/links/control-panel/web-exchange)
+- **Navigation path:** `Web Cloud`{.action} > `Exchange`{.action} > Select your platform
+
+---
+<!-- CP-NAV-END:web-exchange -->
+<!-- CP-NAV-END:web-mx-plan -->
 
 ## Instructions
 
 **Contents**
 
 - [Create a redirection](#redirect)
-    - [Via the Control Panel](#redirect-manager)
     - [Via webmail](#redirect-webmail)
 - [Delete a redirection](#redirect-delete)
 - [Create an alias](#alias)
 - [Delete an alias](#alias-delete)
 
 ### Creating a redirection <a name="redirect"></a>
-
-#### Via the OVH Control Panel <a name="redirect-manager"></a>
-
-Currently, only the **MX Plan** and **Redirect** plans have a redirection management interface via the OVHcloud Control Panel.
-
-##### MX Plan / redirect <a name="redirect-manager-mxplan"></a>
-
-1. Log in to your [OVHcloud Control Panel](/links/manager).
-1. Go to the `Web Cloud`{.action} section.
-1. Click `MX Plan`{.action}.
-1. Select the domain concerned.
-
-In our example, this is a **redirection with a local copy** (see [diagram 2](#diagram) at the beginning of this guide). If this is what you need, follow the steps below by clicking on the tab corresponding to the webmail technology used by your MX Plan:
-
-By default, you are in the `General information`{.action} tab of your MX Plan. Click on the `Emails`{.action} tab, then on the right-hand side on the `Manage redirections`{.action} button.
-
-![emails](images/mxplan-legacy-1.png){.thumbnail .w-640}
-
-The table of redirections that are already active appears. On the right, click `Add a redirection`{.action}.
-
-![emails](images/mxplan-legacy-2.png){.thumbnail .w-640}
-
-In the form `Create a redirection`, enter the following information:
-
-- **From address**: Enter the email address you would like to redirect.
-- **To the address**: Enter the destination address for your redirection here. This can be one of your OVHcloud email addresses, or an external email address.
-- **Choose a copy mode**: Choose if you want to:
-     - **Keep a copy of the email with OVHcloud**: Receive the email on your main address as well as the redirection address (see [diagram 2](#diagram) at the beginning of this guide).
-     - **Do not store a copy of the email**: Send directly to the redirection address without the primary address receiving it (see [diagram 1](#diagram) at the beginning of this guide).
-
-Then click `Confirm`{.action} to confirm the addition of this redirection.
-
-![emails](images/mxplan-legacy-3.png){.thumbnail .w-640}
-
-> [!primary]
->
-> To modify the destination address or delete a redirection, click `...`{.action}, to the right of the redirection concerned.
-
-> [!primary]
->
-> When you choose the "**Keep a copy of the email with OVHcloud**" copy mode, a redirection from the email address to itself is created automatically in the redirections list, and it materializes this local copy.
->
 
 #### Via webmail <a name="redirect-webmail"></a>
 
@@ -195,24 +171,6 @@ Browse the tabs below to set up your redirection via Outlook Web App:
 
 #### Delete a redirection <a name="redirect-delete"></a>
 
-##### MX Plan via the OVHcloud Control Panel <a name="redirect-delete-mxplan"></a>
-
-1. Log in to your [OVHcloud Control Panel](/links/manager).
-1. Go to the `Web Cloud`{.action} section.
-1. Click `MX Plan`{.action}.
-1. Select the domain concerned.
-
-Select the tab below for the email technology used by your MX Plan service:
-
-- By default, you are in the `General information`{.action} tab of your MX Plan.
-- Click the `Emails`{.action} tab, then on the right-hand side the `Manage redirections`{.action} button.
-
-![emails](images/mxplan-legacy-1.png){.thumbnail .w-640}
-
-- Click `...`{.action}, to the right of the redirection concerned, then `Delete redirection`{.action}.
-
-![emails](images/mxplan-redirect-delete01.png){.thumbnail .w-640}
-
 ##### Outlook Web App (OWA) <a name="redirect-delete-owa"></a>
 
 Go to [webmail](/links/web/email). Enter **the email address** and the **password** to log in. From the OWA webmail interface, follow the steps by clicking on the tabs below:
@@ -243,11 +201,7 @@ Go to [webmail](/links/web/email). Enter **the email address** and the **passwor
 
 Creating an alias for your email address allows you to provide a "mask" address to your contacts, without having to provide your personal email address to the sender.
 
-Log in to your [OVHcloud Control Panel](/links/manager) and go to the `Web Cloud` section. Then choose the menu according to your email solution:
-
-- **Exchange**: Go to the `Microsoft`{.action} section, click `Exchange`{.action} and select the platform concerned. Click the `Email accounts`{.action} tab.
-
-- **MX Plan**: Go to the `MX Plan`{.action} section, select the platform concerned, then click the `Email accounts`{.action} tab.
+From your email service (Exchange or MX Plan), click the `Email accounts`{.action} tab.
 
 To add an alias to your email account, follow the steps described by clicking on each tab below:
 
@@ -272,11 +226,7 @@ To add an alias to your email account, follow the steps described by clicking on
 
 ### Delete an alias <a name="alias-delete"></a>
 
-Log in to your [OVHcloud Control Panel](/links/manager) and go to the `Web Cloud` section. Then choose the menu according to your email solution:
-
-- **Exchange**: Go to the `Microsoft`{.action} section, click `Exchange`{.action} and select the platform concerned. Click on the `Email accounts`{.action} tab.
-
-- **MX Plan**: Go to the `MX Plan`{.action} section, select the platform concerned, then click on the `Email accounts`{.action} tab.
+From your email service (Exchange or MX Plan), click the `Email accounts`{.action} tab.
 
 In the `Email accounts`{.action} tab, click the `...`{.action} button to the right of the email address concerned. Then click `Configure aliases`{.action} (or `Manage aliases`{.action}).
 

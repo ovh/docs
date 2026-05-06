@@ -37,7 +37,7 @@ Este tutorial tem como objetivo ajudá-lo a instalar manualmente um CMS (Content
 
 - Ter um plano de [alojamento web](/links/web/hosting) que contenha, pelo menos, uma base de dados.
 - Dispor de um [nome de domínio](/links/web/domains)
-- Ter acesso à [Área de Cliente OVHcloud](/links/manager)
+
 
 ## Instruções
 
@@ -101,14 +101,14 @@ Encontre mais informações na nossa página sobre o [módulo PrestaShop](/links
 
 **SPIP** é um CMS concebido principalmente para a publicação e gestão de websites editoriais, tais como jornais e revistas online. Baseado em PHP e baseado numa base de dados SQL, facilita a criação de websites enriquecidos com conteúdos textuais, gráficos e / ou multimédia.
 
-- Site oficial de [SPIP](https://www.spip.net/en_rubrica25.html)
+- Site oficial de [SPIP](https://www.spip.net/pt_rubrique25.html)
 
 > [!warning]
 >
 > Independentemente do CMS que escolher, lembramos que a OVHcloud não fornece nenhuma assistência na utilização destes CMS. Se precisar de ajuda, contacte diretamente o editor do CMS que escolheu através dos links indicados neste tutorial.
 >
 
-### Etapa 1 - preparar a instalação <a name="step1"></a>
+### 1 - Preparar a instalação <a name="step1"></a>
 
 Para instalar um CMS na sua oferta de[alojamento web](/links/web/hosting), é necessário efetuar alguns preparativos.
 
@@ -127,15 +127,14 @@ Consulte a nossa documentação que descreve [como adicionar um site ao seu aloj
 
 - Certifique-se de que o domínio que utiliza para aceder ao seu CMS, bem como o subdomínio "www" apontam para o endereço IP do seu serviço de [alojamento web](/links/web/hosting).
 
-Para obter o endereço IP da sua oferta de alojamento web, aceda à [Área de Cliente OVHcloud](/links/manager) na parte `Web Cloud`{.action} e selecione a sua oferta de alojamento web na secção `Alojamentos`{.action}.<br>
-Na caixa `Informações gerais`{.action} à direita, encontrará o endereço IP do seu alojamento web no formulário `IPv4`{.action}.
-
-Se a zona DNS ativa do seu domínio for gerida no seu [Área de Cliente OVHcloud](/links/manager), compare o endereço IP do seu alojamento com o endereço IP presente na zona DNS do seu domínio, através da nossa documentação sobre as [zonas DNS da OVHcloud](/pages/web_cloud/domains/dns_zone_edit).
+Para obter o endereço IPv4 (ou IPv6) do seu alojamento web, consulte o nosso guia "[Alojamento web - Lista de endereços IP por cluster](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP)".
 
 > [!warning]
 >
-> Se ativou as opções `CDN`{.action} ou `IP do país`{.action} com o seu domínio, utilize o endereço IP adaptado através da nossa documentação que regista [o conjunto dos endereços IP dos nossos alojamentos partilhados](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP).
+> Se utilizou a opção de endereço IP geolocalizado por país ou ativou uma opção CDN entre o seu domínio e o seu alojamento web, utilize o endereço IP adequado indicado no guia acima mencionado.
 >
+
+Se a zona DNS ativa do seu domínio for gerida na sua [Área de Cliente OVHcloud](/links/control-panel/web-dns-zone), compare o endereço IP do seu alojamento com o endereço IP presente na zona DNS do seu domínio, através da nossa documentação sobre as [zonas DNS da OVHcloud](/pages/web_cloud/domains/dns_zone_edit).
 
 Se não conseguir realizar estas verificações, contacte o alojador da sua zona DNS ativa para atualizar o apontamento do seu nome de domínio.
 
@@ -169,7 +168,7 @@ Utilize o nosso manual para [criar uma base de dados a partir do seu alojamento 
 
 Se tiver à sua disposição uma oferta Web Cloud Databases em MySQL ou MariaDB e pretender utilizá-la para instalar manualmente o seu CMS, consulte o nosso manual sobre a [criação de uma base de dados num serviço Web Cloud Databases](/pages/web_cloud/web_cloud_databases/create-db-and-user-on-db-server#criar-uma-base-de-dados).
 
-Depois de criar a base de dados, recupere os parâmetros de ligação (servidor, nome da base de dados, nome de utilizador e palavra-passe) e guarde-os para [etapa 3](#step3) deste guia.
+Depois de criar a base de dados, recupere os parâmetros de ligação (servidor, nome da base de dados, nome de utilizador e palavra-passe) e guarde-os para [parte 3](#step3) deste guia.
 
 > [!primary]
 >
@@ -183,7 +182,7 @@ Depois de criar a base de dados, recupere os parâmetros de ligação (servidor,
 > - Para aceder a uma base de dados presente numa Web Cloud Databases, consulte [este guia](/pages/web_cloud/web_cloud_databases/connecting-to-database-on-database-server).
 >
 
-### Etapa 2 - iniciar a instalação manual
+### 2 - Iniciar a instalação manual
 
 #### 2.1 - Recuperar os ficheiros de origem do seu CMS
 
@@ -242,7 +241,7 @@ Indique a pasta "**CMS**" no destino para extrair os seus ficheiros desta pasta.
 
 #### 2.3 - Migrar os ficheiros de origem do dossier "CMS" para o "dossier raiz" no seu alojamento web
 
-Depois de descomprimir os ficheiros na pasta "**CMS**", [ligue-se ao espaço de armazenamento com FTP](/pages/web_cloud/web_hosting/ftp_connection) através do [cliente FTP FileZilla](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide), e depois copie os ficheiros na pasta "**CMS**" para a pasta raiz que definiu no seu alojamento durante a [etapa 1](#step1)) deste guia.
+Depois de descomprimir os ficheiros na pasta "**CMS**", [ligue-se ao espaço de armazenamento com FTP](/pages/web_cloud/web_hosting/ftp_connection) através do [cliente FTP FileZilla](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide), e depois copie os ficheiros na pasta "**CMS**" para a pasta raiz que definiu no seu alojamento durante a [parte 1](#step1)) deste guia.
 
 Abaixo, um exemplo com o CMS *WordPress*:
 
@@ -255,7 +254,7 @@ Abaixo, um exemplo com o CMS *WordPress*:
 
 > [!primary]
 >
-> Se a pasta raiz que definiu não tiver sido criada automaticamente durante as ações descritas na [etapa 1](#step1), pode criá-la através do FileZilla.
+> Se a pasta raiz que definiu não tiver sido criada automaticamente durante as ações descritas na [parte 1](#step1), pode criá-la através do FileZilla.
 >
 > O depósito dos ficheiros no seu alojamento pode levar alguns minutos.
 >
@@ -376,7 +375,7 @@ rmdir ./CMS/
 >> ```
 >> 
 
-### Etapa 3 - finalizar a instalação manual <a name="step3"></a>
+### 3 - Finalizar a instalação manual <a name="step3"></a>
 
 > [!success]
 >

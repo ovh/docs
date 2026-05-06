@@ -1,7 +1,7 @@
 ---
 title: 'Optimizar el rendimiento de su sitio web'
 excerpt: 'Descubra cómo analizar la latencia de su sitio web y cómo mejorarla'
-updated: 2025-10-09
+updated: 2026-04-01
 ---
 
 ## Objetivo
@@ -16,7 +16,17 @@ Esta guía le ayudará a obtener un entendimiento básico de los puntos que pued
 - Un [plan de hospedaje web de OVHcloud](/links/web/hosting)
 - Un mensaje de correo electrónico que confirme que su plan de hospedaje web ha sido contratado
 - Un [nombre de dominio](/links/web/domains) que pueda utilizarse para acceder a su sitio web
-- Haber iniciado sesión en el [área de cliente de OVHcloud para tener acceso al panel de control](/links/manager)
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [Alojamientos](/links/control-panel/web-hosting)
+- **Ruta de navegación:** `Web Cloud`{.action} > `Alojamientos`{.action} > Seleccione su alojamiento web
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## Procedimiento
 
@@ -45,7 +55,7 @@ Compruebe si se generan errores para identificar la causa de la latencia. Para o
 Responder a estas preguntas puede ayudarle a centrarse en puntos concretos y áreas de diagnóstico susceptibles de mejoras.
 
 El uso de un sistema de gestión de contenidos (CMS) como WordPress, PrestaShop, Drupal o Joomla! necesita muchas librerías, por lo que una única página web puede involucrar una gran cantidad de elementos.
-Los navegadores de internet deben cargar y leer todos esos elementos.
+Los navegadores de Internet deben cargar y leer todos esos elementos.
 Proporcionamos recomendaciones sobre qué oferta de hospedaje web utilizar para los sistemas de gestión de contenidos antes mencionados en [la página del producto](/links/web/hosting).
 
 Puede encontrar más información sobre qué plan elegir en [esta página](/links/web/hosting-best-web).
@@ -90,65 +100,60 @@ Puede encontrar más información sobre este tema más adelante, en el paso 5.
 
 Correlacione los gráficos de recursos utilizados de su hospedaje (más información a continuación) para descubrir el origen de los retrasos y consulte los registros de las fechas de dichos picos.
 
-Puede acceder a sus registros, estadísticas y gráficos directamente desde el panel de control, iniciando sesión en el [área de cliente de OVHcloud](/links/manager).
-
-Cómo acceder a las estadísticas y logs:
-
-Haga clic en las fichas siguientes para ver cada una de las **4** etapas.
+<!-- CP-STEPS-START:access-stats-and-logs -->
+Para acceder a las estadísticas y logs, haga clic en las fichas siguientes para ver cada una de las **3** etapas.
 
 > [!tabs]
 > **Etapa 1**
 >>
->> Conéctese a su [área de cliente de OVHcloud](/links/manager) y acceda a la sección `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Etapa 2**
->>
->> Haga clic en el menú `Alojamientos`{.action} y seleccione el alojamiento web correspondiente.
+>> Acceda a la página [Alojamientos](/links/control-panel/web-hosting) y elija el alojamiento web correspondiente.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Etapa 3**
+> **Etapa 2**
 >>
 >> En la nueva página, haga clic en la pestaña `Estadísticas y logs`{.action}.
 >>
 >> ![statistics-and-logs](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/statistics-and-logs.png){.thumbnail}
 >>
-> **Etapa 4**
+> **Etapa 3**
 >>
 >> Haga clic en el botón `Ver las estadísticas`{.action} mostradas para acceder a las estadísticas de visita del sitio web o en `Ver los logs`{.action} para consultar los logs disponibles para su alojamiento web.
 >>
 >> ![logs](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/statistics-and-logs/tab.png){.thumbnail}
+<!-- CP-STEPS-END:access-stats-and-logs -->
 
-Cómo acceder a los gráficos:
+<!-- CP-STEPS-START:access-resource-charts -->
+Para acceder a los gráficos, haga clic en las fichas siguientes para ver cada una de las **3** etapas.
 
-1. Haga clic en `Alojamiento`{.action} en la columna de la izquierda y seleccione el alojamiento web correspondiente.
-2. En la nueva página, haga clic en la pestaña `Estadísticas y logs`{.action} y desplácese hasta la parte inferior de la página en la que se encuentra el gráfico relativo al uso del alojamiento.
-3. Seleccione el **tipo** de información y el **período** de los datos mostrados.
-
-![graphs](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/statistics-and-logs/infrastructure-statistics-graph.png){.thumbnail}
-
-¿Qué tipo de información puede mostrarse?
-
-- **Peticiones HTTP**: indica el número promedio de visitas del sitio web. Las visitas se clasifican según los códigos de estado HTTP 2xx/3xx/4xx/5xx.
-
-- **Tiempo medio de respuesta**: Hace referencia al tiempo medio de respuesta de la página. Se hace la distinción entre páginas dinámicas y estáticas.
-
-- **Superación del umbral de recursos**: Este gráfico muestra la utilización de los «PHP workers» para poder dirigirle a un paquete de hospedaje web diferente en caso necesario. Utilizar PHP-FPM podría ayudarle a reducir el uso de los PHP workers.
-
-- **Uso de la CPU**: Muestra el uso de la CPU de su sitio web. Esto puede ayudarle a localizar una posible sobrecarga de la CPU.
-
-- **Conexiones salientes**: Esto le permite ver las peticiones TCP salientes realizadas por el servidor, por ejemplo, si su sitio web es hackeado, se podría usar el servidor para atacar a otros sitios web externos. También puede comprobar llamadas externas realizadas por módulos como Facebook, Twitter, etc. Disminuir el número de peticiones TCP salientes es una buena manera de reducir el tiempo de carga, ya que tomará más tiempo la carga del sitio web si el servidor al que se le está solicitando contenido tarda en responder.
-
-- **Comandos FTP**: Muestra los diferentes comandos FTP que se han utilizado en el hospedaje. Por ejemplo, intentos de conexión satisfactorios y no satisfactorios; descargas; cargas y eliminación de archivos.
-
-Las siguientes dos categorías solo se muestran si está utilizando actualmente una base de datos en su oferta de hospedaje.
-No se olvide de seleccionar el nombre de su base de datos y el periodo deseado.
-
-- **Tiempo de respuesta del SQL**: Muestra el tiempo de respuesta de las consultas.
-
-- **Peticiones SQL**: Muestra el número de peticiones.
+> [!tabs]
+> **Etapa 1**
+>>
+>> Acceda a la página [Alojamientos](/links/control-panel/web-hosting) y elija el alojamiento web correspondiente.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Etapa 2**
+>>
+>> En la nueva página, haga clic en la pestaña `Estadísticas y logs`{.action} y desplácese hasta la parte inferior de la página en la que se encuentra el gráfico relativo al uso del alojamiento.
+>>
+> **Etapa 3**
+>>
+>> Seleccione el **tipo** de información y el **período** de los datos mostrados.
+>>
+>> ![Gráfico de estadísticas de infraestructura](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/statistics-and-logs/infrastructure-statistics-graph.png){.thumbnail}
+>>
+>> Los diferentes tipos de información disponibles:
+>>
+>> - **Peticiones HTTP**: indica el número promedio de visitas del sitio web. Las visitas se clasifican según los códigos de estado HTTP 2xx/3xx/4xx/5xx.
+>> - **Tiempo medio de respuesta**: Hace referencia al tiempo medio de respuesta de la página. Se hace la distinción entre páginas dinámicas y estáticas.
+>> - **Superación del umbral de recursos**: Este gráfico muestra la utilización de los «PHP workers» para poder dirigirle a un paquete de hospedaje web diferente en caso necesario. Utilizar PHP-FPM podría ayudarle a reducir el uso de los PHP workers.
+>> - **Uso de la CPU**: Muestra el uso de la CPU de su sitio web. Esto puede ayudarle a localizar una posible sobrecarga de la CPU.
+>> - **Conexiones salientes**: Esto le permite ver las peticiones TCP salientes realizadas por el servidor, por ejemplo, si su sitio web es hackeado, se podría usar el servidor para atacar a otros sitios web externos. También puede comprobar llamadas externas realizadas por módulos como Facebook, Twitter, etc. Disminuir el número de peticiones TCP salientes es una buena manera de reducir el tiempo de carga, ya que tomará más tiempo la carga del sitio web si el servidor al que se le está solicitando contenido tarda en responder.
+>> - **Comandos FTP**: Muestra los diferentes comandos FTP que se han utilizado en el hospedaje. Por ejemplo, intentos de conexión satisfactorios y no satisfactorios; descargas; cargas y eliminación de archivos.
+>> - **Tiempo de respuesta del SQL**: Muestra el tiempo de respuesta de las consultas (visible solo si utiliza una base de datos).
+>> - **Peticiones SQL**: Muestra el número de peticiones (visible solo si utiliza una base de datos).
+<!-- CP-STEPS-END:access-resource-charts -->
 
 ### 5 - Comprobar las peticiones de la red
 
@@ -185,11 +190,7 @@ _Este paso es opcional si no está usando una base de datos._
 Puede acceder a su base de datos usando PHPMyAdmin. Las instrucciones sobre cómo usar PHPMyAdmin escapan del ámbito de esta guía, por lo que no se proporcionan más detalles.
 Sin embargo, existe una gran cantidad de guías externas sobre este tema.
 
-**Cómo acceder a la base de datos mediante phpMyAdmin:** A continuación, se detalla el procedimiento para acceder a su base de datos mediante phpMyAdmin, disponible en el panel de control una vez iniciada sesión en el [área de cliente de OVHcloud](/links/manager):
-
-- En la sección `Hospedaje`{.action}, haga clic en su dominio.
-- Acceda a la pestaña `Base de datos`{.action}.
-- Haga clic en los 3 puntos, `...`{.action}, en el lado derecho de su base de datos para acceder a phpMyAdmin.
+**Cómo acceder a la base de datos mediante phpMyAdmin:** consulte la sección dedicada en nuestra guía «[Gestionar una base de datos en un paquete de hospedaje web](/pages/web_cloud/web_hosting/sql_create_database)».
 
 **¿Qué objetivo tiene la optimización de una base de datos?** Es necesario realizar el mantenimiento de una base de datos para que esta funcione bien. Dicho de otro modo, la información contenida en la base de datos debe devolverse a la secuencia de comandos que la ha solicitado lo antes posible. Para lograrlo, una base de datos debe estar bien estructurada y optimizada. Abordaremos cuál es la mejor manera optimizar su base de datos.
 

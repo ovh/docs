@@ -12,21 +12,29 @@ Crear una instantánea (<i>snapshot</i>) es una forma simple y rápida de proteg
 
 > [!primary]
 >
-Antes de aplicar las opciones de copia de seguridad, le recomendamos que consulte las [preguntas frecuentes y demás páginas del producto](/links/bare-metal/vps-options) para acceder a una comparativa de los precios y otras informaciones.
+> Antes de aplicar las opciones de copia de seguridad, le recomendamos que consulte las [preguntas frecuentes y demás páginas del producto](/links/bare-metal/vps-options) para acceder a una comparativa de los precios y otras informaciones.
 >
 
 ## Requisitos
 
-- Tener acceso al [panel de control de OVHcloud](/links/manager).
 - Tener un [servicio de servidor virtual privado (VPS)](/links/bare-metal/vps) de OVHcloud configurado.
 
 > [!warning]
 > Esta funcionalidad no está disponible actualmente para los servidores virtuales en las [Local Zones](/links/bare-metal/vps-lz).
 >
 
-## Procedimiento
+<!-- CP-NAV-START:baremetal-vps -->
+---
 
-Conéctese al [Panel de configuración de OVHcloud](/links/manager), acceda a la sección `Bare Metal Cloud`{.action} y seleccione el servidor en la sección `Servidores Privados Virtuales`{.action}.
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [VPS management](/links/control-panel/baremetal-vps)
+- **Ruta de navegación:** `Bare Metal Cloud`{.action} > `Servidores privados virtuales`{.action} > Seleccione su VPS
+
+---
+<!-- CP-NAV-END:baremetal-vps -->
+
+## Procedimiento
 
 ### Paso 1: Suscribirse a la opción "Snapshot"
 
@@ -110,7 +118,7 @@ temp_url_sig=f508cacda60256d5f211ddddf3f81130e935f0e4&temp_url_expires=167824757
 
 #### Configuración del software QEMU en un VPS
 
-Los snapshots son imágenes instantáneas de su sistema en ejecución (« live snapshots »). Para garantizar la disponibilidad de su sistema durante la creación del snapshot, el software QEMO permite preparar el sistema de archivos para este proceso.
+Los snapshots son imágenes instantáneas de su sistema en ejecución (« live snapshots »). Para garantizar la disponibilidad de su sistema durante la creación del snapshot, el software QEMU permite preparar el sistema de archivos para este proceso.
 
 El *qemu-guest-agent* necesario no está instalado por defecto en la mayoría de distribuciones. Además, las restricciones de licencia pueden impedir que OVHcloud lo incluya en las imágenes de los SO disponibles. Por lo tanto, le recomendamos que compruebe si este agente está activado en su VPS y, en caso negativo, que lo instale. Para ello, conéctese a su VPS por SSH y siga las instrucciones que se indican en función de su sistema operativo.
 
@@ -130,13 +138,13 @@ sudo apt-get update
 sudo apt-get install qemu-guest-agent
 ```
 
-Reiniciar el VPS:
+Reinicie el VPS:
 
 ```bash
 sudo reboot
 ```
 
-Verifique  el servicio para garantizar que está en ejecución:
+Verifique el servicio para garantizar que está en ejecución:
 
 ```bash
 sudo service qemu-guest-agent status
@@ -158,7 +166,7 @@ sudo yum install qemu-guest-agent
 sudo chkconfig qemu-guest-agent on
 ```
 
-Reiniciar el VPS:
+Reinicie el VPS:
 
 ```bash
 sudo reboot
@@ -188,4 +196,4 @@ Running  QEMU-GA            QEMU Guest Agent
 
 [Usar copias de seguridad automatizadas en un servidor virtual privado (VPS)](/pages/bare_metal_cloud/virtual_private_servers/using-automated-backups-on-a-vps)
 
-Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.
+Interactúe con nuestra [comunidad de usuarios](/links/community).

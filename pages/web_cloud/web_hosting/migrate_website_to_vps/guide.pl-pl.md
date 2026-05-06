@@ -14,7 +14,6 @@ Twoja strona WWW zmienia się, a zużycie zasobów zmienia się w taki sposób, 
 
 - Posiadanie aktywnego [hostingu](/links/web/hosting).
 - Wykupienie usługi [VPS](/links/bare-metal/vps) na Twoim koncie OVHcloud.
-- Dostęp do [panelu klienta OVHcloud](/links/manager).
 
 ## W praktyce
 
@@ -22,7 +21,7 @@ Twoja strona WWW zmienia się, a zużycie zasobów zmienia się w taki sposób, 
 >
 > OVHcloud udostępnia różnorodne usługi, jednak to Ty odpowiadasz za ich konfigurację i zarządzanie nimi. Ponosisz więc odpowiedzialność za ich prawidłowe funkcjonowanie.
 >
-> Oddajemy w Twoje ręce niniejszy przewodnik, którego celem jest pomoc w jak najbardziej optymalnym wykonywaniu bieżących zadań. Jednak w przypadku trudności zalecamy skontaktowanie się z [wyspecjalizowanym dostawcą](/links/partner). Niestety firma OVH nie jest w stanie udzielić Ci wsparcia w tym zakresie. Więcej informacji znajduje się w sekcji ["Sprawdź również"](#go-further) niniejszego przewodnika.
+> Oddajemy w Twoje ręce niniejszy przewodnik, którego celem jest pomoc w jak najbardziej optymalnym wykonywaniu bieżących zadań. Jednak w przypadku trudności zalecamy skontaktowanie się z [wyspecjalizowanym dostawcą](/links/partner). Niestety firma OVHcloud nie jest w stanie udzielić Ci wsparcia w tym zakresie. Więcej informacji znajduje się w sekcji ["Sprawdź również"](#go-further) niniejszego przewodnika.
 >
 
 ### Etap 1 - Wykonaj kopię zapasową plików i bazy danych Twojej strony WWW <a name="step1"></a>

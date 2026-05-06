@@ -1,12 +1,12 @@
 ---
 title: Creating a volume backup
 excerpt: Discover how to back up your Block Storage volume in the OVHcloud Control Panel
-updated: 2025-12-15
+updated: 2026-02-24
 ---
 
 ## Objective
 
-If you value the data stored in you Block Storage volumes, it is worth organising the backup of this data to prevent the potential impact of any issue on this data, whether it is a human error or a cluster incident.
+If you value the data stored in your Block Storage volumes, it is worth organising the backup of this data to prevent the potential impact of any issue on this data, whether it is a human error or a cluster incident.
 
 A **volume snapshot** is a recovery point stored within the same storage cluster as the original volume. Operations will be fast, but in case of an incident on the cluster, both volume and volume snapshot might be unavailable. Volume snapshot creation does not require the volume to be detached from the instance.
 
@@ -23,14 +23,27 @@ Both volume snapshot and volume backup allow you to:
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](/links/manager)
 - A detached [Block Storage volume](/pages/public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance) created in your [Public Cloud project](/links/public-cloud/public-cloud)
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Navigation path:** `Public Cloud`{.action} > Select your project
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
+
+## Limitations
+
+Backups of encrypted LUKS volume types can only be restored to the same encrypted LUKS volume type.
 
 ## Instructions
 
-Log in to the [OVHcloud Control Panel](/links/manager), go to the `Public Cloud`{.action} section and select the Public Cloud project concerned.
-
-Then open `Block Storage`{.action} in the left-hand navigation bar under **Storage & backup**.
+<!-- CP-STEPS-START:create-backup -->
+Open `Block Storage`{.action} in the left-hand navigation bar under **Storage & backup**.
 
 In the row of the volume concerned, click the `...`{.action} button, then select `Create a backup`{.action}.
 
@@ -43,12 +56,12 @@ In the row of the volume concerned, click the `...`{.action} button, then select
 
 ![Volume Backup creation](images/volumebackup01.png){.thumbnail}
 
-Select the volume you want create a backup from.
+Select the volume you want to create a backup from.
 
 Then select the type of backup you want to create: volume snapshot or volume backup.
 
 - Choosing volume snapshot, you will have the possibility to modify the name of the volume snapshot to be created. Then click `Create backup`{.action}.
-- Choosing volume backup, you will be asked to detach your volume from the instance in order to continue. You will be then able to modify the name of the volume backup to be created. Finally, click `Create backup`{.action}.
+- Choosing volume backup, you will be asked to detach your volume from the instance in order to continue. You will then be able to modify the name of the volume backup to be created. Finally, click `Create backup`{.action}.
 
 ![Volume Backup or Snapshot creation](images/volumebackup02.png){.thumbnail}
 
@@ -77,6 +90,8 @@ Click the `...`{.action} button to `Delete`{.action} or to `Create a volume`{.ac
 You can find further information in [this guide](/pages/public_cloud/compute/create-volume-from-snapshot).
 
 ![Create volume from backup](images/volumebackup05.png){.thumbnail}
+
+<!-- CP-STEPS-END:create-backup -->
 
 ## Go further
 

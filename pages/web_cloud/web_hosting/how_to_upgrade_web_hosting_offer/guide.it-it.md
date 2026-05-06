@@ -1,7 +1,7 @@
 ---
 title: "Hosting Web - Come far evolvere la tua offerta"
 excerpt: "Questa guida ti mostra come modificare il piano di abbonamento di un hosting Web OVHcloud"
-updated: 2025-10-21
+updated: 2026-04-01
 ---
 
 ## Obiettivo
@@ -21,8 +21,18 @@ Il tuo [Spazio Cliente OVHcloud](/links/manager) permette di aumentare la capaci
 ## Prerequisiti
 
 - Disporre di una [soluzione di hosting Web](/links/web/hosting)
-- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
 - essere almeno contatto "[Amministratore](/pages/account_and_service_management/account_information/managing_contacts)" dei servizi per i quali si desidera modificare l'abbonamento.
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [Hosting](/links/control-panel/web-hosting)
+- **Percorso di navigazione:** `Web Cloud`{.action} > `Hosting`{.action} > Seleziona il tuo hosting web
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## Procedura
 
@@ -38,28 +48,24 @@ Il tuo [Spazio Cliente OVHcloud](/links/manager) permette di aumentare la capaci
 
 ### Modificare il piano di hosting Web <a name="modify"></a>
 
-Per modificare l’abbonamento, clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **3** passi.
+<!-- CP-STEPS-START:modify-subscription -->
+Per modificare l’abbonamento, clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **2** passi.
 
 > [!tabs]
-> **Step 1**
+> **Passaggio 1**
 >>
->> Accedi allo [Spazio Cliente OVHcloud](/links/manager) e clicca su `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Step 2**
->>
->> Clicca sul menu `Hosting`{.action} e seleziona l’hosting Web interessato.
+>> Accedi alla pagina [Hosting](/links/control-panel/web-hosting), poi seleziona l’hosting Web interessato.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Step 3**
+> **Passaggio 2**
 >>
 >> Nel riquadro **Abbonamento**, clicca sul pulsante `...`{.action} a destra di **Servizio** e poi su `Modifica offerta`{.action}.
 >>
 >> ![change_plan](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/pro-change-plan.png){.thumbnail}
 >>
 >> Seleziona il nuovo abbonamento e la durata. Conferma i contratti corrispondenti e clicca su `Invia`{.action}.
+<!-- CP-STEPS-END:modify-subscription -->
 
 ### Verifica la compatibilità dell’hosting Web con una soluzione della gamma inferiore <a name="checks"></a>
 
@@ -77,34 +83,29 @@ Assicurati che la nuova offerta includa un numero sufficiente di [database](/lin
 
 In caso contrario, eliminare i database inutilizzati e, se necessario, ridurre la quantità di dati in essi contenuti. Questa quantità non dovrà superare la dimensione massima dei database della nuova offerta. Per assistenza sulle operazioni da effettuare, contatta i [partner OVHcloud](/links/partner).
 
-In seguito alla cancellazione dei dati sui database, ricalcola la quota utilizzata. Per farlo, clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **5** passi.
+<!-- CP-STEPS-START:recalculate-db-quota -->
+In seguito alla cancellazione dei dati sui database, ricalcola la quota utilizzata. Per farlo, clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **4** passi.
 
 > [!tabs]
-> **Step 1**
+> **Passaggio 1**
 >>
->> Accedi allo [Spazio Cliente OVHcloud](/links/manager) e clicca su `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Step 2**
->>
->> Clicca sul menu `Hosting`{.action} e seleziona l’hosting Web interessato.
+>> Accedi alla pagina [Hosting](/links/control-panel/web-hosting), poi seleziona l'hosting Web interessato.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Step 3**
+> **Passaggio 2**
 >>
 >> Nella nuova pagina clicca sulla scheda `Database`{.action}.
 >>
 >> ![Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases.png){.thumbnail}
 >>
-> **Step 4**
+> **Passaggio 3**
 >>
 >> Sulla nuova pagina appare una tabella con i database creati. A destra del database, clicca sul pulsante `...`{.action} e poi su `Ricalcola la quota`{.action}.
 >>
 >> ![Recalculate quota shared SQL](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/recalculate-quota.png){.thumbnail}
 >>
-> **Step 5**
+> **Passaggio 4**
 >>
 >> Nella nuova finestra, clicca direttamente sul pulsante `Conferma`{.action}.
 >>
@@ -112,6 +113,7 @@ In seguito alla cancellazione dei dati sui database, ricalcola la quota utilizza
 >>
 >> Una volta avviata, l'operazione potrebbe richiedere alcuni minuti. Al termine, lo stato "READ ONLY" del database scompare.
 >> Il database sarà di nuovo pienamente operativo.
+<!-- CP-STEPS-END:recalculate-db-quota -->
 
 > [!primary]
 >
@@ -122,98 +124,130 @@ In seguito alla cancellazione dei dati sui database, ricalcola la quota utilizza
 
 Se utilizzi l’offerta [Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb) inclusa con il tuo hosting Web [Performance](/links/web/hosting-performance-offer) e vuoi passare il tuo hosting Web su un’offerta [Pro](/links/web/hosting-professional-offer), dovrai innanzitutto dissociare l’offerta Web Cloud dal tuo hosting Web.
 
-Per farlo, clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **3** passi.
+<!-- CP-STEPS-START:detach-wcdb -->
+Per farlo, clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **2** passi.
 
 > [!tabs]
-> **Step 1**
+> **Passaggio 1**
 >>
->> Accedi allo [Spazio Cliente OVHcloud](/links/manager) e clicca su `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Step 2**
->>
->> Clicca sul menu `Hosting`{.action} e seleziona l’hosting Web interessato.
+>> Accedi alla pagina [Hosting](/links/control-panel/web-hosting), poi seleziona l'hosting Web interessato.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Step 3**
+> **Passaggio 2**
 >>
 >> Nel riquadro **Configurazione**, clicca sul pulsante `...`{.action} a destra della voce **Web Cloud Databases** e poi su `Scollega`{.action}.
 >>
 >> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/wcdb-detach.png){.thumbnail}
+<!-- CP-STEPS-END:detach-wcdb -->
 
 Questa azione permette di ordinare una soluzione Web Cloud Databases indipendente dal proprio abbonamento *Performance*. I dati del tuo server saranno conservati.
 
 Se non vuoi conservare questi dati, puoi anche eliminare la tua soluzione Web Cloud Databases prima di passare all'offerta *Pro*: 
 
 1. Esegui il backup dei dati seguendo le istruzioni riportate in questa [guida](/pages/web_cloud/web_cloud_databases/save-export-on-database-server).<br>
-2. Elimina il server Web Cloud Databases dallo [Spazio Cliente OVHcloud](/links/manager). Accedi allo [Spazio Cliente OVHcloud](/links/manager), clicca in alto a destra sul tuo nome e poi sull `Le mie offerte e servizi`{.action}. Clicca sul pulsante `...`{.action} a destra della linea della soluzione Web Cloud Databases/SQL Privato in questione e poi su `Elimina il tuo hosting SQL Privato`{.action}.
+2. Elimina il server Web Cloud Databases dallo [Spazio Cliente OVHcloud](/links/manager). Per farlo, clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **2** passaggi.
+
+<!-- CP-STEPS-START:delete-wcdb -->
+> [!tabs]
+> **Passaggio 1**
+>> Accedi alla pagina [Le mie offerte e servizi](/links/control-panel/billing-services).
+> **Passaggio 2**
+>> Clicca sul pulsante `...`{.action} a destra della linea della soluzione Web Cloud Databases/SQL Privato in questione e poi su `Elimina il mio hosting SQL privato`{.action}.
+<!-- CP-STEPS-END:delete-wcdb -->
 
 #### 3 - Spazio di archiviazione FTP
 
 Assicurati che la nuova soluzione offra [spazio di storage FTP](/pages/web_cloud/web_hosting/ftp_connection) sufficiente per importare i file dell’hosting corrente.
 
-Per verificare lo spazio di storage FTP utilizzato sull’hosting Web, clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **3** passi.
+<!-- CP-STEPS-START:check-ftp-storage -->
+Per verificare lo spazio di storage FTP utilizzato sull’hosting Web, clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **2** passi.
 
 > [!tabs]
-> **Step 1**
+> **Passaggio 1**
 >>
->> Accedi allo [Spazio Cliente OVHcloud](/links/manager) e clicca su `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Step 2**
->>
->> Clicca sul menu `Hosting`{.action} e seleziona l’hosting Web interessato.
+>> Accedi alla pagina [Hosting](/links/control-panel/web-hosting), poi seleziona l’hosting Web interessato.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Step 3**
+> **Passaggio 2**
 >>
 >> Nel riquadro **Informazioni generali**, trovi la dicitura **Spazio disco**.
 >>
 >> ![disk_space](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-disk-space.png){.thumbnail}
 >>
 >> Lo spazio di storage utilizzato compare sotto questa voce.
+<!-- CP-STEPS-END:check-ftp-storage -->
 
 #### 4 - Indirizzi email
 
 Verifica che la nuova offerta includa un numero sufficiente di indirizzi email disponibili. In caso contrario, elimina gli indirizzi email inutilizzati dopo aver [salvato](/pages/web_cloud/email_and_collaborative_solutions/migrating/manual_email_migration) il loro contenuto, se necessario.
 
-Per conservare lo stesso numero di caselle email **prima di passare l’hosting Web su un’offerta inferiore**, è possibile ordinare anche una nuova soluzione di posta **MX Plan**. Per farlo, accedi al tuo [Spazio Cliente OVHcloud](/links/manager) e clicca sulla sezione `Web Cloud`{.action}. Nella colonna di sinistra, clicca su `Email`{.action} e seleziona il servizio di posta in questione. Nella nuova pagina, nel riquadro `Abbonamento`{.action} e a destra della voce `Servizio`{.action}, clicca sul pulsante `...`{.action} e poi su `Modifica offerta`{.action}.
+Per conservare lo stesso numero di caselle email **prima di passare l’hosting Web su un’offerta inferiore**, è possibile ordinare anche una nuova soluzione di posta **MX Plan**. Per farlo, clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **2** passaggi.
 
-![mxplan](/pages/assets/screens/control_panel/product-selection/web-cloud/emails/general-information/change-solution.png){.thumbnail}
+<!-- CP-STEPS-START:upgrade-email-plan-accounts -->
+> [!tabs]
+> **Passaggio 1**
+>> Accedi alla pagina [MX Plan](/links/control-panel/web-mx-plan) e seleziona il dominio interessato.
+> **Passaggio 2**
+>> Nel riquadro **Abbonamento** e a destra di **Servizio**, clicca sul pulsante `...`{.action} e poi su `Modifica soluzione`{.action}.
+>> ![Modifica offerta MX Plan](/pages/assets/screens/control_panel/product-selection/web-cloud/emails/general-information/change-solution.png){.thumbnail}
+<!-- CP-STEPS-END:upgrade-email-plan-accounts -->
 
->[!primary]
->
-> Se il pulsante `...`{.action} non è disponibile sul tuo servizio di posta, puoi scollegare il servizio di posta dal tuo hosting Web. Resta connesso allo [Spazio Cliente OVHcloud](/links/manager) nella sezione `Web Cloud`{.action}. Nella colonna di sinistra, clicca su `Hosting`{.action} e seleziona l’hosting Web interessato. Nella nuova pagina `Informazioni generali`{.action} e nel riquadro `Configurazione`{.action}, clicca sul pulsante `...`{.action} a destra della dicitura `Account email`{.action} e poi su `Scollega la tua opzione email`{.action}.
->
+Se la modifica dell’offerta non è disponibile sul tuo servizio di posta, è collegato a un hosting Web.
+
+Puoi scollegare il servizio di posta dal tuo hosting Web. Per farlo, clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **2** passaggi.
+
+<!-- CP-STEPS-START:detach-email-option-accounts -->
+> [!tabs]
+> **Passaggio 1**
+>> Accedi alla pagina [Hosting](/links/control-panel/web-hosting) e seleziona l’hosting Web interessato.
+> **Passaggio 2**
+>> Nel riquadro **Configurazione**, clicca sul pulsante `...`{.action} a destra di **Indirizzi email** e poi su `Scollega la tua opzione email`{.action}.
+<!-- CP-STEPS-END:detach-email-option-accounts -->
 
 #### 5 - Mailing list
 
 La funzionalità [Mailing list](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/feature_mailing_list) è in opzione sugli hosting [Personale](/links/web/hosting-personal-offer).
 
-Per attivare l’hosting Web su una soluzione [Personale](/links/web/hosting-personal-offer), è necessario eliminare le mailing list o ordinare un servizio di posta elettronica che includa questa funzionalità (**MX Plan 100** o **MX Plan Full***) dallo [Spazio Cliente OVHcloud](/links/manager).
+Per attivare l’hosting Web su una soluzione [Personale](/links/web/hosting-personal-offer), è necessario eliminare le mailing list o ordinare un servizio di posta elettronica che includa questa funzionalità (**MX Plan 100** o **MX Plan Full**) dallo [Spazio Cliente OVHcloud](/links/manager). Per farlo, clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **2** passaggi.
 
-Per farlo, accedi al tuo [Spazio Cliente OVHcloud](/links/manager) e clicca sulla sezione `Web Cloud`{.action}. Nella colonna di sinistra, clicca su `Email`{.action} e seleziona il servizio di posta in questione. Nella nuova pagina, nel riquadro `Abbonamento`{.action} e a destra della voce `Servizio`{.action}, clicca sul pulsante `...`{.action} e poi su `Modifica offerta`{.action}.
+<!-- CP-STEPS-START:upgrade-email-plan-lists -->
+> [!tabs]
+> **Passaggio 1**
+>> Accedi alla pagina [MX Plan](/links/control-panel/web-mx-plan) e seleziona il dominio interessato.
+> **Passaggio 2**
+>> Nel riquadro **Abbonamento** e a destra di **Servizio**, clicca sul pulsante `...`{.action} e poi su `Modifica soluzione`{.action}.
+<!-- CP-STEPS-END:upgrade-email-plan-lists -->
 
->[!primary]
->
-> Se il pulsante `...`{.action} non è disponibile sul tuo servizio di posta, puoi scollegare il servizio di posta dal tuo hosting Web. Resta connesso allo [Spazio Cliente OVHcloud](/links/manager) nella sezione `Web Cloud`{.action}. Nella colonna di sinistra, clicca su `Hosting`{.action} e seleziona l’hosting Web interessato. Nella nuova pagina `Informazioni generali`{.action} e nel riquadro `Configurazione`{.action}, clicca sul pulsante `...`{.action} a destra della dicitura `Account email`{.action} e poi su `Scollega la tua opzione email`{.action}.
->
+Se la modifica dell’offerta non è disponibile sul tuo servizio di posta, è collegato a un hosting Web.
+
+Puoi scollegare il servizio di posta dal tuo hosting Web. Per farlo, clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **2** passaggi.
+
+<!-- CP-STEPS-START:detach-email-option-lists -->
+> [!tabs]
+> **Passaggio 1**
+>> Accedi alla pagina [Hosting](/links/control-panel/web-hosting) e seleziona l’hosting Web interessato.
+> **Passaggio 2**
+>> Nel riquadro **Configurazione**, clicca sul pulsante `...`{.action} a destra di **Indirizzi email** e poi su `Scollega la tua opzione email`{.action}.
+<!-- CP-STEPS-END:detach-email-option-lists -->
 
 #### 6 - Utenti FTP
 
 Assicurati che la nuova offerta contenga un numero sufficiente di utenti FTP.
 
-Il numero di utenti FTP è visibile nello Spazio Cliente OVHcloud. Accedi alla sezione `Web Cloud`{.action}. Nella colonna di sinistra, clicca su `Hosting`{.action} e seleziona l’hosting Web interessato. Clicca sulla scheda `FTP-SSH`{.action}.
+Il numero di utenti FTP è visibile nello Spazio Cliente OVHcloud. Per verificarlo, clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **3** passaggi.
 
-Visualizzi una tabella nella parte inferiore della pagina con tutti gli utenti FTP creati per il tuo hosting Web.
-
-Per eliminare utenti FTP, clicca sul pulsante `...`{.action} a destra dell’utente FTP che vuoi eliminare e poi su `Elimina`{.action}.
-
-![user FTP deletion](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/edit-ftp-user-2.png){.thumbnail} 
+<!-- CP-STEPS-START:check-ftp-users -->
+> [!tabs]
+> **Passaggio 1**
+>> Accedi alla pagina [Hosting](/links/control-panel/web-hosting) e seleziona l’hosting Web interessato.
+> **Passaggio 2**
+>> Nella pagina che si apre, clicca sulla scheda `FTP - SSH`{.action}. Nella parte inferiore della pagina, una tabella elenca tutti gli utenti FTP creati per il tuo hosting Web.
+> **Passaggio 3**
+>> Per eliminare utenti FTP, clicca sul pulsante `...`{.action} a destra dell’utente FTP interessato e poi su `Elimina`{.action}.
+>> ![Eliminazione utente FTP](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/edit-ftp-user-2.png){.thumbnail}
+<!-- CP-STEPS-END:check-ftp-users -->
 
 #### Completamento
 
@@ -237,43 +271,34 @@ Con l'[opzione Boost](/links/web/hosting-options-boost), disponibile sulle nostr
 
 Se l’opzione **Boost** è adatta alle tue esigenze, trovi qui sotto le istruzioni per **attivare** o **disattivare** questa opzione sul tuo hosting.
 
-Per **attivare l’opzione Boost**, clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **3** passi.
+<!-- CP-STEPS-START:enable-boost -->
+Per **attivare l’opzione Boost**, clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **2** passi.
 
 > [!tabs]
 > **Passaggio 1**
 >>
->> Accedi allo [Spazio Cliente OVHcloud](/links/manager) e clicca su `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Passaggio 2**
->>
->> Clicca sul menu `Hosting`{.action} e seleziona l’hosting Web interessato.
+>> Accedi alla pagina [Hosting](/links/control-panel/web-hosting), poi seleziona l’hosting Web interessato.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Passaggio 3**
+> **Passaggio 2**
 >>
 >> Nel riquadro **Informazioni generali** della pagina che appare, clicca sul pulsante `...`{.action} a destra di **Boost** e poi su `Boost`{.action}.
 >>
 >> ![boost enable](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/boost-my-hosting-plan.png){.thumbnail}
+<!-- CP-STEPS-END:enable-boost -->
 
-Per **disattivare l’opzione Boost**, clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **4** passi.
+<!-- CP-STEPS-START:disable-boost -->
+Per **disattivare l’opzione Boost**, clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **3** passi.
 
 > [!tabs]
 > **Passaggio 1**
 >>
->> Accedi allo [Spazio Cliente OVHcloud](/links/manager) e clicca su `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Passaggio 2**
->>
->> Clicca sul menu `Hosting`{.action} e seleziona l’hosting Web interessato.
+>> Accedi alla pagina [Hosting](/links/control-panel/web-hosting), poi seleziona l’hosting Web interessato.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Passaggio 3**
+> **Passaggio 2**
 >>
 >> Nella nuova pagina clicca sulla scheda `Più`{.action} e clicca su `Boost`{.action}.
 >>
@@ -281,11 +306,12 @@ Per **disattivare l’opzione Boost**, clicca sulle schede qui sotto per visuali
 >>
 >> ![More tab 2](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/more-2.png){.thumbnail}
 >>
-> **Passaggio 4**
+> **Passaggio 3**
 >>
 >> Visualizzi la tabella di utilizzo dell’opzione Boost e clicca su `Disattiva l’offerta Boost`{.action}.
 >>
 >> ![boost disable](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/boost-my-hosting-plan/deactivate-the-boost-plan.png){.thumbnail}
+<!-- CP-STEPS-END:disable-boost -->
 
 #### La fatturazione in caso di modifica dell'offerta <a name="billing"></a>
 

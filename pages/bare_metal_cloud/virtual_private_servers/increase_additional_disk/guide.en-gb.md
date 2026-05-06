@@ -14,8 +14,18 @@ If you have reached the maximum capacity on your additional disk, you can add mo
 
 - A [VPS](/links/bare-metal/vps) in your OVHcloud account
 - An [additional disk](/pages/bare_metal_cloud/virtual_private_servers/config_additional_disk) configured on the VPS
-- Access to the [OVHcloud Control Panel](/links/manager)
 - Administrative access via SSH or RDP to your VPS
+
+<!-- CP-NAV-START:baremetal-vps -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [VPS management](/links/control-panel/baremetal-vps)
+- **Navigation path:** `Bare Metal Cloud`{.action} > `Virtual private servers`{.action} > Select your VPS
+
+---
+<!-- CP-NAV-END:baremetal-vps -->
 
 > [!warning]
 > This feature is currently unavailable for Virtual Private Servers in [Local Zones](/links/bare-metal/vps-lz).
@@ -27,8 +37,7 @@ The following steps presume that you have configured an additional disk accordin
 
 ### Modifying the size of the disk <a name="extend"></a>
 
-Log in to the [OVHcloud Control Panel](/links/manager), go to the `Bare Metal Cloud`{.action} section and select your server from `Virtual Private Servers`{.action}.
-
+<!-- CP-STEPS-START:modifying-disk-size -->
 In the `Home`{.action} tab, go to the section labelled **Your configuration**. Click on `...`{.action} next to the option `Additional disks` and in the context menu click on `Increase the disk size`{.action}.
 
 ![size-disk-vps](images/increase_disk_vps01.png){.thumbnail}
@@ -44,6 +53,7 @@ A message will appear to confirm your request. Click on the link inside the mess
 After the payment is confirmed, the disk upgrade will take a few minutes. You can check the progress in the tab `Additional disks`{.action}: If your chosen new size is displayed, the disk is ready.
 
 ![size-disk-vps](images/increase_disk_vps04.png){.thumbnail}
+<!-- CP-STEPS-END:modifying-disk-size -->
 
 > [!warning]
 >

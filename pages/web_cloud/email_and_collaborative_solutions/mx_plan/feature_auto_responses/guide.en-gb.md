@@ -13,7 +13,17 @@ This OVHcloud feature allows you to set up an automatic email responder (auto-re
 ## Requirements
 
 - An OVHcloud MX Plan, available as part of our [web hosting plans](/links/web/hosting), the [100M free hosting](/links/web/domains-free-hosting) included with a domain name (activated in advance), or ordered separately as a standalone solution
-- Access to the [OVHcloud Control Panel](/links/manager)
+
+<!-- CP-NAV-START:web-mx-plan -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [MX Plan](/links/control-panel/web-mx-plan)
+- **Navigation path:** `Web Cloud`{.action} > `MX Plan`{.action} > Select your MX Plan service
+
+---
+<!-- CP-NAV-END:web-mx-plan -->
 
 ## Instructions
 
@@ -23,11 +33,8 @@ This OVHcloud feature allows you to set up an automatic email responder (auto-re
 
 ### Creating an auto-reply
 
-1. Log in to your [OVHcloud Control Panel](/links/manager).
-1. Open the `Web Cloud`{.action} section.
-1. Click `MX Plan`{.action}.
-1. Select the domain concerned.
-1. Open the tab `Emails`{.action}, then click on the button `Manage auto-replies`{.action} on the right.
+<!-- CP-STEPS-START:create-auto-reply -->
+Open the tab `Emails`{.action}, then click on the button `Manage auto-replies`{.action} on the right.
 
 You will be redirected to the `Manage auto-replies` section where all of the email responders for this domain name are listed.
 
@@ -39,8 +46,8 @@ The window `Add an auto-reply` appears. Fill out the form according to the infor
 
 - `Auto-replies type`:
 
-**Associated with an email inbox**: To use if it concerns an existing email account of your email solution.<br>
-**Free**: To use in the case of an email alias address. It is not linked to an existing account.
+    - **Associated with an email inbox**: To use if it concerns an existing email account of your email solution.
+    - **Free**: To use in the case of an email alias address. It is not linked to an existing account.
 
 - `Mailbox` or `Auto-reply name`:  Select the email account or alias address concerned by the automatic reply.
 - `Auto-reply duration`:
@@ -56,6 +63,7 @@ The window `Add an auto-reply` appears. Fill out the form according to the infor
 - `Message`: This will be the reply to incoming mails while the responder is active.
 
 Then click `Confirm`{.action} to finish configuring your automatic reply.
+<!-- CP-STEPS-END:create-auto-reply -->
 
 > [!success]
 >
@@ -63,11 +71,13 @@ Then click `Confirm`{.action} to finish configuring your automatic reply.
 
 ### Modifying or deleting an automatic reply
 
+<!-- CP-STEPS-START:modify-delete-auto-reply -->
 Once your automatic reply has been created, it will appear in the table in the `Manage auto-replies`{.action} section of your email service. You can delete or modify a responder by clicking on `...`{.action} to the right of it.
 
 ![hosting](images/email_responder02.png){.thumbnail}
+<!-- CP-STEPS-END:modify-delete-auto-reply -->
 
-## Go further
+## Go further <a name="go-further"></a>
 
 [Email FAQ](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/faq-emails)
 

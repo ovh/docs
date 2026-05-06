@@ -31,6 +31,17 @@ As contas E-mail Pro podem ser configuradas em vários softwares de e-mail e int
 - Dispor das credenciais relativas à conta E-mail Pro que pretende configurar.
 - Dispor dos dados de acesso à conta Gmail na qual pretende configurar a conta E-mail Pro da OVHcloud.
 
+<!-- CP-NAV-START:web-email-pro -->
+---
+
+### Acesso à Área de Cliente OVHcloud
+
+- **Ligação direta:** [E-mail Pro](/links/control-panel/web-email-pro)
+- **Caminho de navegação:** `Web Cloud`{.action} > `E-mail Pro`{.action} > Selecione a sua plataforma
+
+---
+<!-- CP-NAV-END:web-email-pro -->
+
 > [!primary]
 >
 > Esta documentação foi realizada a partir da nova interface do Gmail. Se as imagens forem um pouco diferentes da sua versão, as instruções permanecerão as mesmas e poderão ser seguidas.
@@ -44,12 +55,7 @@ As contas E-mail Pro podem ser configuradas em vários softwares de e-mail e int
 >
 > Neste exemplo, utilizamos a menção servidor: pro?.mail.ovh.net. Deverá substituir o « ? » pelo número que identifica o servidor do seu serviço E-mail Pro.
 >
-> 1. Aceda à [Área de Cliente OVHcloud](/links/manager).
-> 1. Aceda à secção `Web Cloud`{.action}.
-> 1. Clique em `Email Pro`{.action}.
-> 1. Selecione a plataforma em causa.
-> 1. O nome do servidor está visível na tabela **Ligação** do separador `Informações gerais`{.action}.
->
+> Clique [neste link](/links/control-panel/web-email-pro) para aceder à secção `E-mail Pro`{.action}. O nome do servidor é apresentado na zona **Ligação** do separador `Informações gerais`{.action}.
 
 Para começar, aceda à interface de gestão do Gmail a partir do browser. Uma vez nesta última, introduza as informações da sua conta Gmail e ligue-se.
 
@@ -109,7 +115,7 @@ Depois de preencher as informações, selecione a caixa ao lado de `Ligação se
 
 Só precisa de validar esta adição introduzindo um código de confirmação enviado para o seu endereço de E-mail Pro OVHcloud. Para o obter, ligue-se à sua conta de e-mail como de costume a partir da nossa interface online acessível a partir de: <https://pro1.mail.ovh.net>.
 
-Após a validação efetuada, o endereço de E-mail Pro OVHcloud será apresentado no separador Contas e importação {.action}, ao qual acedeu no início da operação.
+Após a validação efetuada, o endereço de E-mail Pro OVHcloud será apresentado no separador `Contas e importação`{.action}, ao qual acedeu no início da operação.
 
 ### 2 - Utilizar uma conta E-mail Pro a partir da interface do Gmail
 

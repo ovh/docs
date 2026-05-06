@@ -1,7 +1,7 @@
 ---
 title: "E-Mail-Accounts mit dem OVHcloud Mail Migrator migrieren"
 excerpt: "Erfahren Sie, wie Sie Ihre E-Mail-Accounts mit dem OVHcloud Mail Migrator zu OVHcloud migrieren"
-updated: 2025-11-25
+updated: 2026-03-30
 ---
 
 <style>
@@ -17,17 +17,17 @@ updated: 2025-11-25
 
 [OVHcloud Mail Migrator](/links/web/omm) ist ein von OVHcloud entwickeltes Tool, das den Bedarf nach Reversibilität abdeckt. Sie können damit E-Mail-Accounts auf Ihre OVHcloud E-Mail-Accounts oder einen externen E-Mail-Dienst migrieren. Dabei können verschiedene Inhalte wie E-Mails, Kontakte, Kalender und Aufgaben übertragen werden, sofern diese mit Ihren E-Mail-Accounts kompatibel sind.
 
-**Diese Anleitung erklärt, wie Sie Ihre E-Mail--Accounts mit unserem OVHcloud Mail Migrator-Tool zu OVHcloud migrieren können.**
+**Diese Anleitung erklärt, wie Sie Ihre E-Mail-Accounts mit unserem OVHcloud Mail Migrator-Tool zu OVHcloud migrieren können.**
 
 ## Voraussetzungen
 
-- Sie haben einen externen E-Mail-Dienst oder einen Dienst von OVHcloud: [Zimbra](/links/web/zimbra), [Exchange](/links/web/emails), [E-Mail Pro](/links/web/email-pro) oder eine MX Plan Lösung (als MX Plan Angebot oder enthalten in einem [OVHcloud Webhosting Angebot](/links/web/hosting)).
+- Sie haben einen externen E-Mail-Dienst oder einen Dienst von OVHcloud: [Zimbra](/links/web/zimbra), [Exchange](/links/web/emails-exchange), [E-Mail Pro](/links/web/email-pro) oder eine MX Plan Lösung (als MX Plan Angebot oder enthalten in einem [OVHcloud Webhosting Angebot](/links/web/hosting)).
 - Sie verfügen über die Login-Daten für die Quell-Accounts, die Sie migrieren möchten.
 - Sie verfügen über die Login-Daten der Ziel-Accounts.
 
 ## In der praktischen Anwendung
 
-Um auf OMM zuzugreifen, verwenden Sie die Adresse: <omm.ovhcloud.com>
+Um auf OMM zuzugreifen, verwenden Sie die Adresse: <https://omm.ovhcloud.com/>
 
 ![omm](images/omm-01.png){.thumbnail .w-600}
 
@@ -71,7 +71,7 @@ Eine neue Seite wird angezeigt, auf der Sie die Zugangsdaten für den Quell-Acco
 
 Bevor Sie Ihre Migration starten, ist es wichtig, die 3 Arten von Accounts zu kennen, die migriert werden können und wohin Sie migrieren können:
 
-- **OVHcloud**: Die `Auto detection` wird empfohlen, wenn Sie einen Account migrieren müssen, der auf einem E-Mail-Dienst bei OVHcloud gehostet wird. Wenn Sie viele OVHcloud E-Mail-Accounts haben, wählen Sie aus den Angeboten `MX Plan`, `E-mail Pro`, `Exchange` und `Zimbra`. Sie werden aufgefordert, sich zum Ihrem OVHcloud Kunden-Account anzumelden. Weitere Informationen finden Sie im Abschnitt "[Über eine Anmeldung beim OVHcloud Kunden-Account migrieren](#sso-migration)".
+- **OVHcloud**: Die `Auto detection` wird empfohlen, wenn Sie einen Account migrieren müssen, der auf einem E-Mail-Dienst bei OVHcloud gehostet wird. Wenn Sie viele OVHcloud E-Mail-Accounts haben, wählen Sie aus den Angeboten `MX Plan`, `E-Mail Pro`, `Exchange` und `Zimbra`. Sie werden aufgefordert, sich zum Ihrem OVHcloud Kunden-Account anzumelden. Weitere Informationen finden Sie im Abschnitt "[Über eine Anmeldung beim OVHcloud Kunden-Account migrieren](#sso-migration)".
 - **Others**: E-Mail-Dienste, die außerhalb von OVHcloud abgeschlossen wurden. Eine nicht erschöpfende Liste der von OMM unterstützten E-Mail-Dienste wird angezeigt. Wenn Ihr E-Mail-Account-Typ nicht aufgelistet ist, verwenden Sie die Protokolle `IMAP` oder `POP`, die mit den meisten E-Mail-Servern kompatibel sind.
 - **Importing files**: Es ist möglich, den Inhalt von PST-, ICS-, CSV- und XML-Dateien über OMM zu einem Ziel-E-Mail-Account zu migrieren. Wenn diese Funktion ausgewählt wird, genügt es, Ihre Datei in das Feld zu ziehen oder über den Button `Browse your files`{.action} Ihre Dateien zu durchsuchen.
 
@@ -100,7 +100,7 @@ Füllen Sie die Informationen entsprechend des Accounttyps aus:
     - **Service** *(je nach Typ)*: Wählen Sie den Dienst aus, der mit dem Ziel-E-Mail-Account verbunden ist.
     - **Advanced settings** > **Delegation account ID** *(je nach Typ)*: Wenn der zu migrierende E-Mail-Account ein geteilter Account ist, müssen Sie die E-Mail-Adresse des Administrator-Accounts des Delegation-Accounts eingeben.
 - **Start of Transfers**: Sie können die Migration unmittelbar über `Immediately` starten oder `Later` ankreuzen, um die Migration zu verschieben. Eine verschobene Migration ermöglicht es, Datum und Uhrzeit des Starts zu definieren.
-- **Data to transfer**: Abhängig vom Typ des zu migrierenden E-Mail-Accounts und des Ziel-Accountss zeigt Ihnen dieser Abschnitt die verschiedenen Arten von Daten an, die bei der Migration unterstützt werden. Dies hängt vom Quell-Account und vom Ziel-Accounts ab.
+- **Data to transfer**: Abhängig vom Typ des zu migrierenden E-Mail-Accounts und des Ziel-Accounts zeigt Ihnen dieser Abschnitt die verschiedenen Arten von Daten an, die bei der Migration unterstützt werden. Dies hängt vom Quell-Account und vom Ziel-Account ab.
 
 ![omm](images/omm-create-migration-04.png){.thumbnail .w-600}
 
@@ -115,7 +115,7 @@ Sobald die Parameter der Quell- und Ziel-Accounts ausgefüllt sind, klicken Sie 
 
 ### Über eine Anmeldung beim OVHcloud Kunden-Account migrieren <a name="sso-migration"></a>
 
-Bei einer Migration zu oder von einem OVHcloud Kunden-Account können Sie unserere Angebote `MX Plan`, `E-mail Pro`, `Exchange` und `Zimbra` auswählen.
+Bei einer Migration zu oder von einem OVHcloud Kunden-Account können Sie unsere Angebote `MX Plan`, `E-Mail Pro`, `Exchange` und `Zimbra` auswählen.
 
 ![omm](images/omm-migration-sso-00.png){.thumbnail .w-300}
 
@@ -194,7 +194,7 @@ Beispiel für die Nachverfolgung einer Migration:
 
 [Mit E-Mail-Adresse manuell migrieren](/pages/web_cloud/email_and_collaborative_solutions/migrating/manual_email_migration)
 
-[E-Mail-Adresse MX Plan zu einem E-mail Pro- oder Exchange Account migrieren](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_control_panel)
+[E-Mail-Adresse MX Plan zu einem E-Mail Pro- oder Exchange Account migrieren](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_control_panel)
 
 Für spezialisierte Dienstleistungen (Suchmaschinenoptimierung, Entwicklung etc.) kontaktieren Sie die [OVHcloud Partner](/links/partner).
 

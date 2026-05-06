@@ -1,6 +1,6 @@
 ---
 title: "Bare Metal 3-AZ Region - Presentación del producto"
-excerpt: 'Descubra el servicio Bare Metal 3-AZ, que ofrece una alta disponibilidad y redundancia sin igual entre tres datacenters'
+excerpt: "Descubra el servicio Bare Metal 3-AZ, que ofrece una alta disponibilidad y redundancia sin igual entre tres datacenters"
 updated: 2025-06-04
 ---
 
@@ -39,17 +39,28 @@ OVHcloud tiene presencia en todo el mundo, especialmente en Europa, Estados Unid
 
 Para obtener un rendimiento óptimo, debe seleccionar una región lo más cerca posible de sus usuarios. Para garantizar la disponibilidad mundial, los servicios deben distribuirse en varias regiones. La región 3-AZ es ideal para los clientes que buscan la máxima resiliencia y debe utilizarse para crear diseños de aplicaciones multi-AZ.
 
-En el [área de cliente de OVHcloud](/links/manager), puede ver sus clusters en la lista de `Servidores dedicados`{.action} del menú `Bare Metal Cloud`{.action} pasando a la pestaña `Clusters 3-AZ`{.action}.
+<!-- CP-NAV-START:baremetal-dedicated-servers -->
+---
 
-![list_clusters](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/dedicated-servers/general-information/clusters1.png){.thumbnail}
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [Servidores dedicados](/links/control-panel/baremetal-dedicated-servers)
+- **Ruta de navegación:** `Bare Metal Cloud`{.action} > `Servidores dedicados`{.action} > Seleccione su servidor
+
+---
+<!-- CP-NAV-END:baremetal-dedicated-servers -->
+
+Pase a la pestaña `Clusters 3-AZ`{.action}.
+
+![Pestaña clusters 3-AZ mostrando los clusters disponibles](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/dedicated-servers/general-information/clusters1.png){.thumbnail}
 
 Haga clic en el nombre del cluster en la tabla para ver los detalles.
 
-![list_clusters](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/dedicated-servers/general-information/clusters2.png){.thumbnail}
+![Página de detalles del cluster con información sobre las zonas de disponibilidad](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/dedicated-servers/general-information/clusters2.png){.thumbnail}
 
 Haga clic en la pestaña `Nodos`{.action} para abrir la lista de servidores del cluster.
 
-![list_clusters](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/dedicated-servers/general-information/clusters3.png){.thumbnail}
+![Pestaña Nodes mostrando la lista de servidores del cluster](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/dedicated-servers/general-information/clusters3.png){.thumbnail}
 
 Haciendo clic en un nombre de servidor/nodo de esta lista se abre la pestaña `Información general`{.action} Puede consultar los detalles en esta sección del área de cliente en nuestra guía:
 

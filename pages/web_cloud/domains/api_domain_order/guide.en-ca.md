@@ -1,7 +1,7 @@
 ---
 title: "Order a Domain Name"
 excerpt: "Find out how to use the OVHcloud Public API to order your domain names"
-updated: 2023-08-30
+updated: 2026-02-10
 ---
 
 <!-- Reminder to put at the beginning of each page -->
@@ -193,9 +193,9 @@ The second step consists in fetching available offers for a domain name.
 There are 4 important values in this payload:
 
 1. `action`: what can be done on the domain name, it could be a `create` or a `transfer`
-2. `duration`: represents the period during which the domain name may be ordered, in ISO 8601 format. For a domain, P1Y (**P**eriod **1** **Y**ear) orders the domain for 1 year, P2Y for 2 years, etc.
-3. `offerId`: name of the offer, which should be included when adding the domain to the cart
-4. `pricing-mode`: offer detail, which will also be included when adding the domain
+2. `duration`: represents the period during which the domain name may be ordered, in ISO 8601 format. For a domain name, P1Y (**P**eriod **1** **Y**ear) orders the domain name for 1 year, P2Y for 2 years, etc.
+3. `offerId`: name of the offer, which should be included when adding the domain name to the cart
+4. `pricing-mode`: offer detail, which will also be included when adding the domain name
 
 To determine the domain name status, the following mapping table can be used, according to the pricing-mode.
 
@@ -203,9 +203,9 @@ To determine the domain name status, the following mapping table can be used, ac
 | ------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------- |
 | `create-default`                                 | Domain is available at the standard price                                                                                             |
 | `create-premium`                                 | Domain is available, but with premium pricing. Its price depends on the domain name                                                   |
-| `transfer-default`                               | Domain is not available, but transferable if you are the owner. Transfer comes at standard price                                      |
-| `transfer-premium`                               | Domain is not available, but transferable if you are the owner. Transfer comes with premium pricing, which depends on the domain name |
-| `transfer-aftermarket1`, `transfer-aftermarket2` | Domain is available on an aftermarket platform. Its price depends on the domain                                                       |
+| `transfer-default`                               | Domain is not available, but transferable if you are the holder. Transfer comes at standard price                                      |
+| `transfer-premium`                               | Domain is not available, but transferable if you are the holder. Transfer comes with premium pricing, which depends on the domain name |
+| `transfer-aftermarket1`, `transfer-aftermarket2` | Domain is available on an aftermarket platform. Its price depends on the domain name                                                  |
 
 > [!primary]
 >
@@ -226,10 +226,10 @@ The following call allows to add the desired domain to the cart:
 | ------------- | -------- | ------------------------------------------------------------------------------------------------------- |
 | `domain`      | yes      | The desired domain name                                                                                 |
 | `duration`    | no       | Duration of the order. Values higher than P1Y may be used on some extensions, but can never exceed P10Y |
-| `offerId`     | no       | Available offer for the domain. Only one value is allowed, see step above to fetch it (deprecated)      |
+| `offerId`     | no       | Available offer for the domain name. Only one value is allowed, see step above to fetch it (deprecated)      |
 | `quantity`    | no       | Only value "1" is allowed                                                                               |
 | `planCode`    | no       | Represents the order plan for the domain                                                                |
-| `pricingMode` | no       | Represents the offer related to the domain plan                                                         |
+| `pricingMode` | no       | Represents the offer related to the domain name plan                                                         |
 
 <!-- prettier-ignore -->
 > [!tabs]
@@ -487,7 +487,7 @@ Without looking into the details of this payload, a couple of things are worth n
 > [!primary]
 >
 > You may be surprised by the returned DNS zone (represented with two lines of details), since it was not added to the cart.
-> This is a frequently ignored notion. A domain name and a DNS zone are two distinct things (products in the cart): the domain name may be managed by OVHcloud while the DNS zone may be hosted elsewhere.
+> This is a frequently ignored notion. A domain name and a DNS zone are two distinct things (products in the cart): the domain name may be registered with OVHcloud while the DNS zone may be hosted elsewhere.
 >
 > However, since the two are strongly tied and to ease the order process, we chose to add a DNS zone automatically when a domain name is ordered.
 > Of course, you may add it manually to add options such as DNSSEC or DNS Anycast. We will write about it later, when considering product options.
@@ -556,14 +556,14 @@ Below is the exhaustive list of required configurations for a domain name.
 | ------------------- | ------------------------------ | -------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `ADMIN_ACCOUNT`     | string                         | no                   | Represents the OVHcloud nic which will be able to administrate the domain, and which will be its administrator on the Whois. If empty, the nic used to call the API will be used. Expects a valid nic value of the form xxx-ovh                                                                                   |
 | `TECH_ACCOUNT`      | string                         | no                   | Represents the OVHcloud nic which will be able to technically manage the domain, and which will be its technical manager on the Whois. If empty, the nic used to call the API will be used. Expects a valid nic value of the form xxx-ovh                                                                         |
-| `OWNER_CONTACT`     | /me/contact or /domain/contact | no                   | Represents the domain name owner. If empty, the nic used to call the API will be used as a template to create this contact. Expects a string following pattern `/me/contact/1234` or `/domain/contact/12345`                                                                                                      |
+| `OWNER_CONTACT`     | /me/contact or /domain/contact | no                   | Represents the domain name holder. If empty, the nic used to call the API will be used as a template to create this contact. Expects a string following pattern `/me/contact/1234` or `/domain/contact/12345`                                                                                                      |
 | `DOMAIN_CONFIG`     | json                           | depends on extension | Usually not present, it is related to some extension constraints (gov.uk, for example)                                                                                                                                                                                                                            |
 | `ACCEPT_CONDITIONS` | bool                           | yes, if present      | Indicates that particular conditions of the extension have been accepted before ordering                                                                                                                                                                                                                          |
 | `REASON`            | string                         | yes, if present      | Indicates the reason why the domain is ordered to the registry. It is usually used for reserved domain names, like city names                                                                                                                                                                                     |
-| `CLAIMS_NOTICE`     | string                         | yes, if present      | Indicates that a claim notice (related to a trademark) is present on the domain. If so, then the domain is protected by some company holding the trademark, which will be notified of the order request. If the registrant is not the trademark holder, the domain name may be removed at any time without refund |
-| `PROTECTED_CODE`    | string                         | yes, if present      | Some domains are reserved by the registry and require a specific code to order them                                                                                                                                                                                                                               |
-| `OWNER_LEGAL_AGE`   | bool                           | yes                  | Used to legally certify that the domain registrant is old enough to order a domain name                                                                                                                                                                                                                           |
-| `AUTH_INFO`         | string                         | no                   | Authorization code used to prove that you are the domain owner. Used for domain name transfers.                                                                                                                                                                                                                   |
+| `CLAIMS_NOTICE`     | string                         | yes, if present      | Indicates that a claim notice (related to a trademark) is present on the domain. If so, then the domain is protected by some company holding the trademark, which will be notified of the order request. If the holder is not the trademark holder, the domain name may be removed at any time without refund |
+| `PROTECTED_CODE`    | string                         | yes, if present      | Some domain names are reserved by the registry and require a specific code to order them                                                                                                                                                                                                                               |
+| `OWNER_LEGAL_AGE`   | bool                           | yes                  | Used to legally certify that the domain name holder is old enough to order a domain name                                                                                                                                                                                                                           |
+| `AUTH_INFO`         | string                         | no                   | Authorization code used to prove that you are the domain name holder. Used for domain name transfers.                                                                                                                                                                                                                   |
 | `DNS`               | string                         | no                   | Enter the DNS servers to use for the domain name. These will be active as soon as the domain is delivered. To enter the DNS servers, separate them with a `;` without spaces. *Example*: `dnsXX.ovh.net;nsXX.ovh.net` |
 | `KEEP_DNS`          | bool                           | no                   | Only for incoming domain name transfers. Used to indicate that you want to keep the DNS servers initially declared at the old registrar. |
 
@@ -573,7 +573,7 @@ Below is the exhaustive list of required configurations for a domain name.
 > Domain names have specific and much more complex rules regarding some configuration values.
 > It is the case for the `ADMIN_ACCOUNT`, `OWNER_CONTACT` and `DOMAIN_CONFIG` in particular, since they are related to specific registry rules.
 >
-> For example, to obtain a .berlin domain name, either the owner or the admin contact must be based in Berlin.
+> For example, to obtain a .berlin domain name, either the holder or the admin contact must be based in Berlin.
 > However, this API can not describe such constraints.
 >
 > In order to handle these cases, there are other API routes to send required data in a more precise way.
@@ -663,7 +663,7 @@ This step is probably the most important of the order process, and can be perfor
 It allows to get the final purchase order, without generating it (it is a "dry-run").
 The returned object contains the contracts associated with the different products.
 
-This call also validates the configurations, like owner eligibility for a domain name.
+This call also validates the configurations, like holder eligibility for a domain name.
 
 ## Create Purchase Order <a name="order-creation"></a>
 

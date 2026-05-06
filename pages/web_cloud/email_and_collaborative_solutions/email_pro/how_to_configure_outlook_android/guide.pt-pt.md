@@ -1,6 +1,6 @@
 ---
 title: "E-mail Pro - Configurar um endereço de e-mail no Outlook para Android"
-excerpt: "Saiba como configurar uma conta Email Pro no Adroid com a aplicação Microsoft Outlook"
+excerpt: "Saiba como configurar uma conta E-mail Pro no Adroid com a aplicação Microsoft Outlook"
 updated: 2025-08-18
 ---
 
@@ -25,6 +25,17 @@ As contas E-mail Pro podem ser configuradas em vários softwares de e-mail compa
 - Ter a aplicação Outlook no seu dispositivo móvel [Android](https://play.google.com/store/apps/details?id=com.microsoft.office.outlook&hl=pt).
 - Dispor das credenciais relativas ao endereço de e-mail que pretende configurar.
 
+<!-- CP-NAV-START:web-email-pro -->
+---
+
+### Acesso à Área de Cliente OVHcloud
+
+- **Ligação direta:** [E-mail Pro](/links/control-panel/web-email-pro)
+- **Caminho de navegação:** `Web Cloud`{.action} > `E-mail Pro`{.action} > Selecione a sua plataforma
+
+---
+<!-- CP-NAV-END:web-email-pro -->
+
 > [!warning]
 >
 > A OVHcloud disponibiliza serviços cuja configuração, gestão e responsabilidade lhe incumbem. Assim, deverá certificar-se de que estes funcionam corretamente.
@@ -39,7 +50,7 @@ As contas E-mail Pro podem ser configuradas em vários softwares de e-mail compa
 >
 > Nos nossos exemplos, utilizamos a menção servidor: pro?.mail.ovh.net. Deverá substituir o «?" pelo número que identifica o servidor do seu serviço E-mail Pro.
 >
-> Encontre este algarismo na sua área de cliente OVHcloud(/links/manager), na rubrica `Web Cloud`{.action} e depois `E-mail Pro`{.action}. O nome do servidor está visível na tabela **Ligação** do separador ‘Informações gerais`{.action}.
+> Clique [neste link](/links/control-panel/web-email-pro) para aceder à secção `E-mail Pro`{.action}. O nome do servidor está visível na tabela **Ligação** do separador `Informações gerais`{.action}.
 
 - **Ao iniciar pela primeira vez a aplicação** : será apresentado um assistente de configuração, prima 'Adicionar uma conta`{.action}'.
 

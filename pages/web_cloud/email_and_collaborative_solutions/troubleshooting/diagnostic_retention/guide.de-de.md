@@ -1,7 +1,7 @@
 ---
 title: Die aus Ihrem E-Mail-Account gelöschten Elemente wiederherstellen
 excerpt: Erfahren Sie hier, wie Sie gelöschte Elemente Ihres E-Mail-Accounts über Webmail (OWA) wiederherstellen
-updated: 2022-02-08
+updated: 2026-03-24
 ---
 
  

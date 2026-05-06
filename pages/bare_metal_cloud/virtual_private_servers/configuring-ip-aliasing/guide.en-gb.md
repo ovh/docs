@@ -47,10 +47,10 @@ The following sections contain the configurations for the most commonly used dis
 
 > [!primary]
 >
-Concerning different distribution releases, please note that the proper procedure to configure your network interface as well as the file names may have been subject to change. We recommend to consult the manuals and knowledge resources of the respective OS versions if you experience any issues.
-> 
+> Concerning different distribution releases, please note that the proper procedure to configure your network interface as well as the file names may have been subject to change. We recommend consulting the manuals and knowledge resources of the respective OS versions if you experience any issues.
+>
 
-**Please take note of the following terminology that will be used in code examples and instructions of the guide sections below:**
+**The following terminology is used in code examples and instructions throughout this guide:**
 
 |Term|Description|Examples|
 |---|---|---|
@@ -58,7 +58,7 @@ Concerning different distribution releases, please note that the proper procedur
 |NETWORK_INTERFACE|The name of the network interface|*eth0*, *ens3*|
 |ID|ID of the IP alias, starting with *0* (depending on the number of additional IPs there are to configure)|*0*, *1*|
 
-In the examples below, we will use the `nano` text editor. With some operating systems, you will need to install it first before using it. If this is the case, you will be prompted to do so. You can, of course, use the text editor of your choice.
+In the examples below, we will use the `nano` text editor. With some operating systems, you will need to install it first. If this is the case, you will be prompted to do so. You can, of course, use the text editor of your choice.
 
 > [!success]
 > Select the tab corresponding to your operating system.
@@ -86,7 +86,7 @@ In the examples below, we will use the `nano` text editor. With some operating s
 >>
 >> **Step 2: Create a backup**
 >>
->> By default, the configuration file is located in the path `etc\network\interfaces.d`.
+>> By default, the configuration file is located in the path `etc/network/interfaces.d`.
 >>
 >> In our example, our file is called `50-cloud-init`, so we make a copy of the `50-cloud-init` file using the following command:
 >>
@@ -116,7 +116,7 @@ In the examples below, we will use the `nano` text editor. With some operating s
 >>
 >> To configure your Additional IP, you need to add a virtual interface or ethernet alias to your network interface. In our example, our interface is called `eth0`, so our first alias is `eth0:0`. Do this for each Additional IP you wish to configure.
 >>
->> Do not modify the existing lines in the configuration file, simply add your Additional IP to the file as follows, replacing `NETWORK_INTERFACE`, `ID` and `ADDITIONAL_IP` wih your own values:
+>> Do not modify the existing lines in the configuration file, simply add your Additional IP to the file as follows, replacing `NETWORK_INTERFACE`, `ID` and `ADDITIONAL_IP` with your own values:
 >>
 >> ```console
 >> auto NETWORK_INTERFACE:ID
@@ -163,7 +163,7 @@ In the examples below, we will use the `nano` text editor. With some operating s
 >>
 >> **Step 1: Create the network configuration file**
 >>
->> In our example, our file is call `51-cloud-init.yaml`:
+>> In our example, our file is called `51-cloud-init.yaml`:
 >>
 >> ```bash
 >> sudo touch /etc/netplan/51-cloud-init.yaml
@@ -247,7 +247,7 @@ In the examples below, we will use the `nano` text editor. With some operating s
 >>
 >> The main configuration file is located in `/etc/sysconfig/network-scripts/`. In this example it is called `ifcfg-eth0`. Before making changes, verify the actual file name in this folder.
 >> 
->> For each Additional IP to be configured, we create a seperate configuration file with the following parameters: `ifcfg-NETWORK_INTERFACE:ID`. Where `NETWORK_INTERFACE` is the physical interface and `ID` is the virtual network interface or ethernet alias starting with a value of 0. For example, for our interface named `eth0` the first alias is `eth0:0`, the second alias is `eth0:1`, etc...
+>> For each Additional IP to be configured, we create a separate configuration file with the following parameters: `ifcfg-NETWORK_INTERFACE:ID`. Where `NETWORK_INTERFACE` is the physical interface and `ID` is the virtual network interface or ethernet alias starting with a value of 0. For example, for our interface named `eth0` the first alias is `eth0:0`, the second alias is `eth0:1`, etc...
 >>
 >> **Step 1: Determine the interface**
 >>
@@ -328,7 +328,7 @@ In the examples below, we will use the `nano` text editor. With some operating s
 >> sudo nano /etc/NetworkManager/system-connections/cloud-init-eno1.nmconnection
 >> ```
 >>
->> Do not modify the existing lines in the configuration file, add your Additional IP to the file as follows, replacing `ADDITIONAL_IP/32` wih your own values:
+>> Do not modify the existing lines in the configuration file, add your Additional IP to the file as follows, replacing `ADDITIONAL_IP/32` with your own values:
 >>
 >> ```console
 >> [ipv4]
@@ -400,7 +400,7 @@ In the examples below, we will use the `nano` text editor. With some operating s
 >>
 >> In the Plesk control panel, choose `Tools & Settings`{.action} from the left-hand sidebar.
 >>
->> ![acces to the ip addresses management](images/pleskip1.png){.thumbnail}
+>> ![access to the IP addresses management](images/pleskip1.png){.thumbnail}
 >>
 >> Click on `IP Addresses`{.action} under **Tools & Resources**.
 >>
@@ -431,7 +431,7 @@ In the examples below, we will use the `nano` text editor. With some operating s
 >>
 >> ![cmdprompt](images/vps_win07.png){.thumbnail}
 >>
->> In order to retrieve the current IP configuration, enter `ipconfig` at the command prompt.
+>> To retrieve the current IP configuration, enter `ipconfig` at the command prompt.
 >>
 >> ```console
 >> C:\Users\Administrator>ipconfig
@@ -451,7 +451,7 @@ In the examples below, we will use the `nano` text editor. With some operating s
 >>
 >> Now you need to change the IP properties to a static configuration.
 >>
->> 1. Go to `Start`{.action}> `Control Panel`{.action}>` Network and Internet`{.action}> `Network and Sharing Centre`{.action}> `Change Adapter Settings`{.action}(in the left-hand menu).
+>> 1. Go to `Start`{.action} > `Control Panel`{.action} > `Network and Internet`{.action} > `Network and Sharing Centre`{.action} > `Change Adapter Settings`{.action} (in the left-hand menu).
 >> 2. Right-click on `Ethernet`{.action}.
 >> 3. Click on `Properties`{.action}.
 >> 4. Select `Internet Protocol Version 4 (TCP/IPv4)`{.action}, then click on `Properties`{.action}.
@@ -470,7 +470,7 @@ In the examples below, we will use the `nano` text editor. With some operating s
 >>
 >> In the new window, click on `Add...`{.action} under "IP addresses". Enter your Additional IP address and the subnet mask (255.255.255.255).
 >>
->> ![advance configuration section](images/configure-additional-ip.png){.thumbnail}
+>> ![advanced configuration section](images/configure-additional-ip.png){.thumbnail}
 >>
 >> Confirm by clicking on `Add`{.action}.
 >>
@@ -512,7 +512,7 @@ Once you are connected to your server via SSH, enter the following command:
 ifconfig ens3:0 ADDITIONAL_IP netmask 255.255.255.255 broadcast ADDITIONAL_IP up
 ```
 
-To test the connection, simply ping your Additional IP from the outside. If it responds in rescue mode, that probably means that there is a configuration error. If, however, the IP is still not working, please inform our support teams by creating a [support request](https://help.ovhcloud.com/csm?id=csm_get_help) for further investigations.
+To test the connection, ping your Additional IP from the outside. If it responds in rescue mode, this likely indicates a configuration error. If, however, the IP is still not working, please inform our support teams by creating a [support request](https://help.ovhcloud.com/csm?id=csm_get_help) for further investigations.
  
 ## Go further <a name="go-further"></a>
 

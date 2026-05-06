@@ -12,13 +12,39 @@ Chaque compte e-mail OVHcloud dispose d'un espace de stockage dédié. Bien gér
 
 ## Prérequis
 
-- Être connecté à l'[espace client OVHcloud](/links/manager).
-- Disposer d'une solution e-mail OVHcloud préalablement configurée, parmi les suivantes :
+- Disposer d’une solution e-mail OVHcloud préalablement configurée, parmi les suivantes :
     - **MX Plan** proposée avec nos [offres d’hébergement web](/links/web/hosting) ou incluse dans un [hébergement gratuit 100M](/links/web/domains-free-hosting).
-    - [Exchange](/links/web/emails).
+    - [Exchange](/links/web/emails-exchange).
     - [Email Pro](/links/web/email-pro).
     - [Zimbra](/links/web/emails-zimbra).
 - Disposer des informations de connexion aux adresses e-mails concernées.
+
+<!-- CP-NAV-START:web-mx-plan -->
+<!-- CP-NAV-START:web-email-pro -->
+<!-- CP-NAV-START:web-exchange -->
+---
+
+### Accès à l’espace client OVHcloud
+
+**MX Plan :**
+
+- **Lien direct :** [MX Plan](/links/control-panel/web-mx-plan)
+- **Pour accéder à vos services :** `Web Cloud`{.action} > `MX Plan`{.action} > Sélectionnez votre service MX Plan
+
+**Email Pro :**
+
+- **Lien direct :** [Email Pro](/links/control-panel/web-email-pro)
+- **Pour accéder à vos services :** `Web Cloud`{.action} > `Email Pro`{.action} > Sélectionnez votre plateforme
+
+**Exchange :**
+
+- **Lien direct :** [Exchange](/links/control-panel/web-exchange)
+- **Pour accéder à vos services :** `Web Cloud`{.action} > `Exchange`{.action} > Sélectionnez votre plateforme
+
+---
+<!-- CP-NAV-END:web-exchange -->
+<!-- CP-NAV-END:web-email-pro -->
+<!-- CP-NAV-END:web-mx-plan -->
 
 > [!primary]
 >
@@ -63,7 +89,7 @@ Depuis votre [espace client OVHcloud](/links/manager), dirigez-vous dans la part
 >>
 > **Email Pro**
 >>
->> Cliquez sur `E-mail Pro`{.action}, puis choisissez le nom de la plateforme concernée. Positionnez-vous sur l'onglet `Comptes e-mail`{.action}. La fenêtre qui apparaît affiche les comptes e-mail existants. Vous pouvez observer, dans la colonne `Taille`, la consommation en cours du stockage de votre adresse e-mail .<br><br>
+>> Cliquez sur `Email Pro`{.action}, puis choisissez le nom de la plateforme concernée. Positionnez-vous sur l'onglet `Comptes e-mail`{.action}. La fenêtre qui apparaît affiche les comptes e-mail existants. Vous pouvez observer, dans la colonne `Taille`, la consommation en cours du stockage de votre adresse e-mail .<br><br>
 >>![email](images/email-quota-quotacontrolpanel02.png){.thumbnail}<br>
 >>
 > **Exchange**
@@ -94,7 +120,7 @@ Pour vous connecter au webmail, rendez-vous sur la page [Webmail](/links/web/ema
 >>
 > **Zimbra** : **MX Plan** / **Zimbra Starter** / **Zimbra Pro**
 >>
->> Lorsque vous êtes connecté au webmail Zimbra, cliquez sur la roue crantée `&#9881;` en haut à droite de votre interface, puis cliquez sur `Paramètres`{.action}. Dans l'onglet `Général`{.action}, le quota utilisé est visible sous la mention « Espace de rangement ».<br><br>
+>> Lorsque vous êtes connecté au webmail Zimbra, cliquez sur la roue crantée &#9881; en haut à droite de votre interface, puis cliquez sur `Paramètres`{.action}. Dans l'onglet `Général`{.action}, le quota utilisé est visible sous la mention « Espace de rangement ».<br><br>
 >>![email](images/email-quota-webmail03.png){.thumbnail}<br>
 >>
 
@@ -104,7 +130,7 @@ Si votre compte e-mail est saturé, cela signifie que vous n'êtes plus en mesur
 Lorsque qu'une personne vous envoie un e-mail, elle reçoit, en réponse automatique, un e-mail d'erreur du type *« 552, "5.2.2", Le compte de messagerie auquel vous avez envoyé un message a épuisé son quota. »*.<br>
 Lorsque votre compte e-mail est saturé, vous pouvez toujours envoyer des e-mails de votre côté. En revanche, ces e-mails ne pourront pas être stockés dans « messages envoyés ».
 
-#### Optimiser l'espace aloué de votre compte e-mail
+#### Optimiser l'espace alloué de votre compte e-mail
 
 Avant toute autre opération sur votre compte e-mail, il est nécessaire de bien prendre connaissance du contenu de votre compte e-mail afin de supprimer tous les éléments superflus. Nous vous invitons à en vérifier certains en particulier :
 
@@ -163,7 +189,7 @@ En effet, le logiciel de messagerie aura pour rôle de convertir vos e-mails en 
 
 Vous trouverez ci-dessous une liste non-exhaustive des guides de configuration pour les clients de messagerie utilisant:
 
-- le protocole IMAP sur les offres **MXplan** et **E-mail Pro** ;
+- le protocole IMAP sur les offres **MXplan** et **Email Pro** ;
 - le protocole MAPI sur l'offre **Exchange** pour Outlook Windows ;
 - le protocole EWS sur l'offre **Exchange** pour Outlook macOS.
 
@@ -179,13 +205,13 @@ Vous trouverez ci-dessous une liste non-exhaustive des guides de configuration p
 >> - [Outlook](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_outlook_2016_mac)<br>
 >> - [Thunderbird](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_thunderbird_mac) (gratuit)<br>
 >>
-> **E-mail Pro**
+> **Email Pro**
 >>
->> Configuration d'un compte E-mail Pro sur **Windows** :<br><br>
+>> Configuration d'un compte Email Pro sur **Windows** :<br><br>
 >> - [Courrier sur Windows 10](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_windows_10) (inclus avec Windows)<br>
 >> - [Outlook](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_outlook_2016)<br>
 >> - [Thunderbird](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_thunderbird) (gratuit)<br><br>
->> Configuration d'un compte E-mail Pro sur **macOS** :<br><br>
+>> Configuration d'un compte Email Pro sur **macOS** :<br><br>
 >> - [Mail](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_mail_macos) (inclus avec macOS)<br>
 >> - [Outlook](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_outlook_2016_mac)<br>
 >> - [Thunderbird](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_thunderbird_mac) (gratuit)<br>
@@ -237,7 +263,7 @@ Sélectionnez, dans le menu ci-dessous, l'offre actuelle de votre compte e-mail 
 > [!tabs]
 > **MX Plan**
 >>
->> Si la capacité de votre compte e-mail est déjà à son maximum de 5 Go, vous pouvez opter pour une migration vers une offre [**Email Pro** de 10 Go](/links/web/email-pro), [**Hosted Exchange** de 50 Go](/links/web/emails-hosted-exchange) ou [**Zimbra** de 15 Go ou 50 Go](/links/web/emails-zimbra). Pour cela, nous vous invitons à commander l'offre qui vous convient et suivre notre documentation « [Migrer une adresse e-mail MX Plan vers un compte E-mail Pro ou Exchange](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_control_panel) ».
+>> Si la capacité de votre compte e-mail est déjà à son maximum de 5 Go, vous pouvez opter pour une migration vers une offre [**Email Pro** de 10 Go](/links/web/email-pro), [**Hosted Exchange** de 50 Go](/links/web/emails-hosted-exchange) ou [**Zimbra** de 15 Go ou 50 Go](/links/web/emails-zimbra). Pour cela, nous vous invitons à commander l'offre qui vous convient et suivre notre documentation « [Migrer une adresse e-mail MX Plan vers un compte Email Pro ou Exchange](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_control_panel) ».
 >>
 > **Email Pro**
 >>
@@ -256,7 +282,7 @@ Sélectionnez, dans le menu ci-dessous, l'offre actuelle de votre compte e-mail 
 
 ## Aller plus loin
 
-[Migrer une adresse e-mail MX Plan vers un compte E-mail Pro ou Exchange](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_control_panel)
+[Migrer une adresse e-mail MX Plan vers un compte Email Pro ou Exchange](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_control_panel)
 
 [Migrer manuellement votre adresse e-mail](/pages/web_cloud/email_and_collaborative_solutions/migrating/manual_email_migration)
 

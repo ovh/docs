@@ -1,5 +1,5 @@
 ---
-title: "Hébergement Web - Copier des fichiers avec la commande SCP"
+title: "Hébergement web - Copier des fichiers avec la commande SCP"
 excerpt: "Découvrez comment utiliser la commande Secure Copy Protocol (SCP) en SSH pour copier des fichiers depuis ou vers votre hébergement web"
 updated: 2024-01-30
 ---
@@ -28,7 +28,6 @@ Il permet, depuis un terminal et à l'aide d'une commande Linux, de copier un fi
 - Disposer d'un terminal compatible avec les commandes Linux et SSH (par exemple, le *terminal* de MacOS ou l'émulateur *Ubuntu* sur Windows)
 - Être familiarisé avec les commandes Linux et SSH
 - Disposer d'une offre d'[hébergement web](/links/web/hosting) bénéficiant d'un accès en SSH
-- Avoir accès à votre [espace client OVHcloud](/links/manager)
 
 ## En pratique
 

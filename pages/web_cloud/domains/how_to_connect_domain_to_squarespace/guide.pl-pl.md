@@ -1,119 +1,169 @@
 ---
-title: "Jak powiązać domenę OVHcloud z hostingiem SquareSpace"
-excerpt: "Przygotuj i skonfiguruj strefę DNS Twojej domeny OVHcloud, aby połączyć ją z hostingiem SquareSpace"
-updated: 2024-05-15
+title: "Jak powiązać nazwę domeny OVHcloud z hostingiem SquareSpace"
+excerpt: "Przygotuj i skonfiguruj strefę DNS Twojej nazwy domeny OVHcloud, aby połączyć ją z hostingiem SquareSpace"
+updated: 2026-03-18
 ---
 
 ## Wprowadzenie
 
-Posiadasz domenę w OVHcloud i chcesz ją połączyć z hostingiem SquareSpace. W tym przewodniku znajdziesz etapy przygotowania i konfiguracji strefy DNS OVHcloud, aby umożliwić konfigurację hostingu SquareSpace.
+Jesteś posiadaczem nazwy domeny w OVHcloud i chcesz połączyć ją z hostingiem SquareSpace. W tym przewodniku znajdziesz informacje o tym, jak przygotować i skonfigurować strefę DNS OVHcloud dla Twojego hostingu SquareSpace.
 
-**Dowiedz się, jak powiązać domenę OVHcloud z hostingiem SquareSpace**
+**Dowiedz się, jak powiązać nazwę domeny OVHcloud z hostingiem SquareSpace.**
 
 > [!warning]
 >
-> - Pomoc SquareSpace nie ma dostępu do ustawień Twojej domeny OVHcloud i nie może udzielić Ci porad dotyczących informacji, które należy jej dostarczyć.
+> - Pomoc techniczna SquareSpace nie ma dostępu do ustawień Twojej nazwy domeny OVHcloud i nie może udzielić Ci porad dotyczących informacji, które należy jej dostarczyć.
 >
-> - OVHcloud udostępnia różnorodne usługi, jednak to Ty odpowiadasz za ich konfigurację i zarządzanie nimi. Ponosisz więc odpowiedzialność za ich prawidłowe funkcjonowanie.<br><br> Oddajemy w Twoje ręce niniejszy przewodnik, którego celem jest pomoc w wykonywaniu bieżących zadań. Niemniej jednak, w przypadku trudności zalecamy skontaktowanie się z wyspecjalizowanym [usługodawcą](/links/partner) lub skontaktuj się z dostawcą usługi. Niestety firma OVH nie będzie mogła udzielić wsparcia w tym zakresie. Więcej informacji znajduje się w sekcji [Sprawdź również](#go-further) ten przewodnik.
+> - OVHcloud udostępnia różnorodne usługi, jednak to Ty odpowiadasz za ich konfigurację i zarządzanie nimi. Ponosisz więc odpowiedzialność za ich prawidłowe funkcjonowanie.<br><br> Oddajemy w Twoje ręce niniejszy przewodnik, którego celem jest pomoc w wykonywaniu bieżących zadań. Niemniej jednak, w przypadku trudności zalecamy skontaktowanie się z wyspecjalizowanym [usługodawcą](/links/partner) i/lub wydawcą usługi. Niestety firma OVHcloud nie będzie mogła udzielić wsparcia w tym zakresie. Więcej informacji znajduje się w sekcji [Sprawdź również](#go-further) niniejszego przewodnika.
 >
 
 ## Wymagania początkowe
 
-- Dostęp do [Panelu klienta OVHcloud](/links/manager).
-- Posiadanie [domeny](/links/web/domains) zarejestrowanej w OVHcloud.
-- Posiadanie odpowiednich [uprawnień do zarządzania](/pages/account_and_service_management/account_information/managing_contacts) domeną w [Panelu klienta OVHcloud](/links/manager).
+- Posiadanie [nazwy domeny](/links/web/domains) zarejestrowanej w OVHcloud.
+- Posiadanie odpowiednich [uprawnień do zarządzania](/pages/account_and_service_management/account_information/managing_contacts) nazwą domeny.
 - Posiadanie hostingu w SquareSpace.
 - Dostęp do interfejsu zarządzania hostingiem w SquareSpace.
 
+<!-- CP-NAV-START:web-dns-zone -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Strefy DNS](/links/control-panel/web-dns-zone)
+- **Ścieżka nawigacji:** `Web Cloud`{.action} > `Strefy DNS`{.action} > Wybierz nazwę domeny
+
+---
+<!-- CP-NAV-END:web-dns-zone -->
+
 ## W praktyce
 
-Zalecamy, abyś przed przystąpieniem do dwóch kroków, zapoznał się z konfiguracją strefy DNS za pomocą przewodnika "[Edycja strefy DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit)".
+Przed przystąpieniem do wykonywania kolejnych kroków tego przewodnika zalecamy zapoznanie się z przewodnikiem dotyczącym [edycji strefy DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit).
 
 > [!warning]
 >
-> Strefa DNS jest już wstępnie skonfigurowana lub powiązana z hostingiem. Zobaczymy, jak zidentyfikować każdy rekord DNS niezbędny do połączenia z hostingiem SquareSpace. Niektóre z nich będą musiały zostać usunięte, aby uniknąć konfliktu z wymaganymi rekordami DNS w tej konfiguracji. Pozostałe zostaną po prostu zmodyfikowane lub utworzone. Aby lepiej zrozumieć, jako przykład posłużymy się nazwą domeny "**mydomain.ovh**". Zastąp go nazwą domeny podczas konfiguracji.
+> Twoja strefa DNS jest potencjalnie już wstępnie skonfigurowana lub powiązana z hostingiem. Zobaczymy, jak zidentyfikować każdy rekord DNS niezbędny do połączenia z hostingiem SquareSpace. Niektóre z nich będą musiały zostać usunięte, aby uniknąć konfliktu z wymaganymi rekordami DNS w tej konfiguracji. Pozostałe zostaną po prostu zmodyfikowane lub utworzone. Aby lepiej zrozumieć, jako przykład posłużymy się nazwą domeny "**mydomain.ovh**". Zastąp ją nazwą Twojej domeny podczas konfiguracji.
 
-### Konfiguracja wpisów DNS na koncie OVHcloud
+### Konfiguracja rekordów DNS na koncie OVHcloud
 
-Zaloguj się do Twojego panelu [klienta OVHcloud](/links/manager) w sekcji `Web Cloud`{.action}. Kliknij `Domeny`{.action}, następnie nazwę wybranej domeny. Teraz przejdź do zakładki `Strefa DNS`{.action}.
-
-Tabela, która się wyświetla zawiera listę wszystkich rekordów DNS wybranej domeny.
-
-![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/tab-mydomain-anycast.png){.thumbnail}
-
-Każdy rekord DNS można zmienić, klikając przycisk `...`{.action} znajdujący się po prawej stronie odpowiedniego wiersza tabeli, a następnie klikając `Zmień rekord`{.action}.
-
-Postępuj zgodnie z kolejnością kroków, przechodząc przez następujące karty:
+<!-- CP-STEPS-START:configure-dns-records -->
+Kliknij poniższe karty, aby wyświetlić kolejno każdy z **5** kroków.
 
 > [!tabs]
-> **Etap 1**
->> **Rekord A**<br><br>
->> Aby zidentyfikować istniejące rekordy "A", kliknij menu filtrów w górnej części tabeli rekordów DNS i wybierz opcję `A`.<br>
->> ![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/filter-a.png){.thumbnail}<br>
->> - Kliknij przycisk `...`{.action} po prawej stronie wiersza tabeli, który odnosi się tylko do Twojej domeny, bez subdomeny (na przykład: `mydomain.ovh.`), a następnie kliknij `Zmień rekord`{.action}.<br>
->> - Jeśli istnieje rekord dla subdomeny "www." (przykład: `www.mydomain.ovh.`), należy go usunąć, aby nie kolidował z rekordem CNAME, który wprowadzisz w etapie 4. Kliknij przycisk `...`{.action} po prawej stronie wiersza tabeli odpowiadającego nazwie Twojej domeny z subdomeną "www.", a następnie kliknij `Usuń rekord`{.action}.<br>
->> - Jeśli nie masz istniejącego rekordu "A", kliknij przycisk `Dodaj rekord`{.action} w prawym górnym rogu ekranu i wybierz "Pole wskaźnika" `A`{.action}<br><br>
->> Kolejno utwórz 4 rekordy typu "A", aby wpisać 4 adresy IPv4 związane z usługą SquareSpace.
->> Pozostaw puste pole **Subdomena** i wprowadź pierwszy adres IPv4 domeny SquareSpace `198.185.159.144` w polu **Adres docelowy**.
->> Kliknij przycisk `Dalej`{.action}, zatwierdź rejestrację "A", powtórz operację dla 3 pozostałych adresów IPv4 `198.185.159.145`; `198.49.23.144`; `198.49.23.145` i przejdź do etapu 2.
-> **Etap 2**
->> **Rekord AAAA**<br><br>
->>  Aby zidentyfikować istniejące rekordy "AAAA", kliknij menu filtrów u góry tabeli rekordów DNS i wybierz opcję `AAAA`.<br>
->> ![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/filter-aaaa.png){.thumbnail}<br>
->> - Kliknij przycisk `...`{.action} po prawej stronie wiersza tabeli, który pasuje tylko do Twojej domeny, bez subdomeny (przykład: `mydomain.ovh.`), a następnie kliknij `Usuń wpis`{.action}.<br>
->> - Jeśli jest obecny rekord dla subdomeny "www" (przykład: `www.mydomain.ovh.`), usuń go również, aby nie kolidował z rekordem CNAME, który wprowadzisz w kroku 4. Kliknij przycisk `...`{.action} po prawej stronie wiersza tabeli odpowiadającego Twojej domenie z subdomeną "www", a następnie kliknij `Usuń rekord`{.action}.<br>
->> - Jeśli nie masz istniejącego rekordu "AAAA", przejdź do etapu 3.
-> **Etap 3**
->> **Rekord TXT**<br><br>
->> Aby zidentyfikować istniejące rekordy "TXT", kliknij menu filtrów u góry tabeli rekordów DNS i wybierz opcję `TXT`.<br>
->> ![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/filter-txt.png){.thumbnail}<br>
->> - Jeśli dla samej domeny istnieją rekordy "TXT" (na przykład: `mydomain.ovh.`), a dla jej subdomeny na "www" (na przykład: `www.mydomain.ovh.`), musisz je usunąć, aby nie kolidowały z rekordem CNAME, który wprowadzisz w etapie 4. Kliknij przycisk`...`{.action} po prawej stronie wiersza tabeli odpowiadającego nazwie Twojej domeny wraz z subdomeną "www", a następnie kliknij `Usuń rekord`{.action}.<br>
-> **Etap 4**
->> **Rekord CNAME**<br><br>
->> Aby zidentyfikować istniejące rekordy "CNAME", kliknij menu filtrów u góry tabeli rekordów DNS i wybierz opcję `CNAME`.<br>
+> **Krok 1**
+>>
+>> Przejdź na stronę [Strefy DNS](/links/control-panel/web-dns-zone), następnie wybierz odpowiednią nazwę domeny.
+>>
+>> ![Strefy DNS](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
+>>
+>> Wyświetlona tabela zawiera listę wszystkich rekordów DNS dla wybranej nazwy domeny.
+>>
+> **Krok 2**
+>>
+>> **Konfiguracja rekordów A**
+>>
+>> **1 - Identyfikacja:** Przefiltruj rekordy DNS, wybierając typ `A` w menu filtrów w prawym górnym rogu tabeli.
+>>
+>> ![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/filter-a.png){.thumbnail}
+>>
+>> Zidentyfikuj istniejące rekordy "A" dla samej nazwy domeny (np. `mydomain.ovh.`) oraz dla subdomeny "www" (np. `www.mydomain.ovh.`).
+>>
+>> **2 - Usuwanie:** Usuń wszystkie istniejące rekordy "A" dla subdomeny "www". Jeśli dla samej nazwy domeny istnieje więcej niż 4 rekordy "A", usuń nadmiarowe rekordy, aby pozostały tylko 4. Aby usunąć rekord, kliknij przycisk `...`{.action} po prawej stronie odpowiedniego wiersza, a następnie kliknij `Usuń wpis`{.action}.
+>>
+>> **3 - Modyfikacja:** Zmodyfikuj każdy pozostały rekord "A" dla samej nazwy domeny, klikając przycisk `...`{.action}, a następnie klikając `Zmień wpis`{.action}. Zastąp cel jednym z 4 adresów IPv4 SquareSpace (inny adres dla każdego rekordu):
+>>
+>> - `198.185.159.144`
+>> - `198.185.159.145`
+>> - `198.49.23.144`
+>> - `198.49.23.145`
+>>
+>> Kliknij `Dalej`{.action} i zatwierdź.
+>>
+>> **4 - Dodawanie:** Jeśli istniało mniej niż 4 rekordy "A", utwórz brakujące rekordy. Kliknij `Dodaj wpis`{.action} w prawym górnym rogu, wybierz typ rekordu `A`{.action}, pozostaw pole **Subdomena** puste i wprowadź w polu **Cel** każdy adres IPv4, który nie został jeszcze przypisany. Kliknij `Dalej`{.action} i zatwierdź.
+>>
+>> Następnie przejdź do kroku 3.
+>>
+> **Krok 3**
+>>
+>> **Usuwanie rekordów AAAA**
+>>
+>> **1 - Identyfikacja:** Przefiltruj rekordy DNS, wybierając typ `AAAA` w menu filtrów w prawym górnym rogu tabeli.
+>>
+>> ![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/filter-aaaa.png){.thumbnail}
+>>
+>> Zidentyfikuj istniejące rekordy "AAAA" dla samej nazwy domeny (np. `mydomain.ovh.`) oraz dla subdomeny "www" (np. `www.mydomain.ovh.`).
+>>
+>> **2 - Usuwanie:** Usuń wszystkie zidentyfikowane rekordy "AAAA" (sama nazwa domeny i subdomena "www"), aby uniknąć konfliktów z nowymi rekordami DNS. Dla każdego rekordu kliknij przycisk `...`{.action} po prawej stronie odpowiedniego wiersza, a następnie kliknij `Usuń wpis`{.action}.
+>>
+>> Jeśli nie istnieją żadne rekordy "AAAA", przejdź do kroku 4.
+>>
+> **Krok 4**
+>>
+>> **Usuwanie rekordów TXT**
+>>
+>> **1 - Identyfikacja:** Przefiltruj rekordy DNS, wybierając typ `TXT` w menu filtrów w prawym górnym rogu tabeli.
+>>
+>> ![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/filter-txt.png){.thumbnail}
+>>
+>> Zidentyfikuj istniejące rekordy "TXT" dla samej nazwy domeny (np. `mydomain.ovh.`) oraz dla subdomeny "www" (np. `www.mydomain.ovh.`).
+>>
+>> **2 - Usuwanie:** Usuń wszystkie zidentyfikowane rekordy "TXT" (sama nazwa domeny i subdomena "www"), aby uniknąć konfliktów z nowymi rekordami DNS. Dla każdego rekordu kliknij przycisk `...`{.action} po prawej stronie odpowiedniego wiersza, a następnie kliknij `Usuń wpis`{.action}.
+>>
+>> Jeśli nie istnieją żadne rekordy "TXT", przejdź do kroku 5.
+>>
+> **Krok 5**
+>>
+>> **Konfiguracja rekordów CNAME**
+>>
+>> **1 - Identyfikacja:** Przefiltruj rekordy DNS, wybierając typ `CNAME` w menu filtrów w prawym górnym rogu tabeli.
+>>
 >> ![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/filter-cname.png){.thumbnail}
->> - Kliknij przycisk `...`{.action} po prawej stronie wiersza tabeli odpowiadającego Twojej subdomenie'' www' (przykład: `mydomain.ovh.`), a następnie kliknij `Zmień rekord`{.action}.<br>
->> - Jeśli nie posiadasz istniejącego rekordu "CNAME", kliknij przycisk `Dodaj rekord`{.action} w prawym górnym rogu ekranu i wybierz "Pole wpisu" `CNAME`{.action}.
->> Uzupełnij pole **Subdomena** wartością `www` i wprowadź `verify.squarespace.com.` w polu **Adres docelowy**.<br>
->>![CNAME-entry](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/add-an-entry-to-the-dns-zone-cname-squarespace.png){.thumbnail}
->> Kliknij na `Dalej`{.action}, następnie zatwierdź rekord "CNAME".
->> Dodaj drugi rekord CNAME, wprowadzając `ext-cust.squarespace.com.` w polu **Adres docelowy**.<br>
+>>
+>> Zidentyfikuj istniejące rekordy "CNAME" dla subdomeny "www" (np. `www.mydomain.ovh.`).
+>>
+>> **2 - Usuwanie:** Jeśli istnieje więcej niż jeden rekord "CNAME" dla subdomeny "www", usuń wszystkie z wyjątkiem jednego. Aby usunąć rekord, kliknij przycisk `...`{.action} po prawej stronie odpowiedniego wiersza, a następnie kliknij `Usuń wpis`{.action}.
+>>
+>> **3 - Modyfikacja:** Jeśli istnieje rekord "CNAME" dla subdomeny "www", kliknij przycisk `...`{.action}, a następnie kliknij `Zmień wpis`{.action}. Zastąp jedynie **Cel** wartością `ext-cust.squarespace.com.`. Kliknij `Dalej`{.action} i zatwierdź.
+>>
+>> Jeśli nie istnieje żaden rekord "CNAME" dla subdomeny "www", kliknij `Dodaj wpis`{.action} w prawym górnym rogu, wybierz typ rekordu `CNAME`{.action}, wprowadź `www` w polu **Subdomena** i `ext-cust.squarespace.com.` w polu **Cel**. Kliknij `Dalej`{.action} i zatwierdź.
+>>
+>> **4 - Dodawanie:** Utwórz weryfikacyjny rekord CNAME, wprowadzając `unikalny kod pobrany z SquareSpace` w polu **Subdomena**, a następnie `verify.squarespace.com.` w polu **Cel**. Kliknij `Dalej`{.action} i zatwierdź.
+<!-- CP-STEPS-END:configure-dns-records -->
 
-Strefa DNS jest teraz skonfigurowana do łączenia z hostingiem SquareSpace.
+Strefa DNS jest teraz skonfigurowana tak, aby wskazywała na hosting SquareSpace.
 
-### Połącz swoją domenę z SquareSpace
+### Połącz nazwę domeny z SquareSpace
 
-Operacje na tym etapie należy wykonać w panelu zarządzania SquareSpace.
+Poniższe kroki należy wykonać z poziomu interfejsu zarządzania SquareSpace.
 
 > [!primary]
 >
-> - Możesz połączyć swoją domenę z testową lub płatną witryną SquareSpace. Nie można połączyć go z wygasłą witryną.
-> - Jeśli posiadasz konto e-mail powiązane z Twoją domeną, możesz z niego nadal korzystać po zalogowaniu domeny do SquareSpace. Przed połączeniem domeny zalecamy zapoznanie się z tym [przewodnikiem dotyczącym platformy SquareSpace](https://support.squarespace.com/hc/en-us/articles/217601877-Using-a-custom-domain-email-you-already-own-with-Squarespace).
-> - Możesz używać kilku niestandardowych nazw domen dla swojej strony www. Możesz się z nimi połączyć lub zapisać dowolną ich liczbę.
-> - Nie można połączyć domeny niestandardowej z usługą SquareSpace, jeśli nazwa domeny zawiera słowo "squarespace" lub "sqsp".
+> - Możesz połączyć swoją nazwę domeny z testową lub płatną witryną SquareSpace. Nie można połączyć jej z wygasłą witryną.
+> - Jeśli posiadasz konto e-mail powiązane z Twoją nazwą domeny, możesz z niego nadal korzystać po połączeniu nazwy domeny z SquareSpace. Przed połączeniem nazwy domeny zalecamy zapoznanie się z tym [przewodnikiem SquareSpace](https://support.squarespace.com/hc/pl/articles/217601877-Using-a-custom-domain-email-you-already-own-with-Squarespace).
+> - Możesz używać kilku niestandardowych nazw domen dla swojej strony WWW. Możesz je połączyć lub zarejestrować w dowolnej liczbie.
+> - Nie można połączyć niestandardowej nazwy domeny z SquareSpace, jeśli nazwa domeny zawiera słowo "squarespace" lub "sqsp".
 
-Aby rozpocząć, wykonaj kroki połączenia opisane w etapie 1 tego [przewodnika SquareSpace](https://support.squarespace.com/hc/en-us/articles/12880712406797-Connecting-an-OVHcloud-domain-to-your-Squarespace-site).
+Aby rozpocząć, wykonaj kroki połączenia opisane w etapie 1 tego [przewodnika SquareSpace](https://support.squarespace.com/hc/pl/articles/12880712406797-Connecting-an-OVHcloud-domain-to-your-Squarespace-site).
 
 > [!warning]
 >
-> Jeśli otrzymasz alert "This domain is already connected to another Squarespace site" (Ta domena jest już połączona z inną stroną Squarespace), sprawdź na innych stronach WWW Squarespace, czy domena jest połączona z inną stroną. Następnie wyloguj go z tej witryny.
+> Jeśli otrzymasz alert "This domain is already connected to another Squarespace site", sprawdź na innych stronach SquareSpace, do której witryny jest połączona nazwa domeny. Następnie odłącz ją od tej witryny.
 
-Aby kontynuować proces, przejdź do etapu 2 niniejszego [przewodnika SquareSpace](https://support.squarespace.com/hc/en-us/articles/12880712406797-Connecting-an-OVHcloud-domain-to-your-Squarespace-site).
+Kontynuuj, przechodząc do etapu 2 tego [przewodnika SquareSpace](https://support.squarespace.com/hc/pl/articles/12880712406797-Connecting-an-OVHcloud-domain-to-your-Squarespace-site).
 
-Jeśli korzystasz z oferty e-mail OVHcloud lub zamierzasz zamówić jedną z [naszych usług e-mail](/links/web/emails), przygotuj odpowiednio Twoją strefę DNS. Zapoznaj się z przewodnikiem dotyczącym "[Konfiguracja rekordu MX](/pages/web_cloud/domains/dns_zone_mx)".
+Jeśli korzystasz z rozwiązania e-mail OVHcloud lub zamierzasz zamówić jedną z [naszych usług e-mail](/links/web/emails), musisz również odpowiednio przygotować Twoją strefę DNS. Zapoznaj się z przewodnikiem dotyczącym [konfiguracji rekordu MX](/pages/web_cloud/domains/dns_zone_mx).
 
 ## Sprawdź również <a name="go-further"></a>
 
-[Zmiana serwerów DNS domeny OVHcloud](/pages/web_cloud/domains/dns_server_edit)
+[Zmiana serwerów DNS nazwy domeny OVHcloud](/pages/web_cloud/domains/dns_server_edit)
 
-[Utworzenie strefy DNS OVHcloud](/pages/web_cloud/domains/dns_zone_create)
+[Utworzenie strefy DNS OVHcloud dla nazwy domeny](/pages/web_cloud/domains/dns_zone_create)
 
 [Edycja strefy DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit)
 
-Aby zmienić sposób zarządzania domeną na inne konto klienta OVHcloud, zapoznaj się z przewodnikiem "[Zarządzanie kontaktami dla usług](/pages/account_and_service_management/account_information/managing_contacts) OVHcloud".
+Aby przekazać zarządzanie nazwą domeny na inne konto klienta OVHcloud, zapoznaj się z przewodnikiem "[Zarządzanie kontaktami dla usług OVHcloud](/pages/account_and_service_management/account_information/managing_contacts)".
 
 W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](/links/partner).
- 
+
 Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](/links/support).
- 
+
 Dołącz do [grona naszych użytkowników](/links/community).

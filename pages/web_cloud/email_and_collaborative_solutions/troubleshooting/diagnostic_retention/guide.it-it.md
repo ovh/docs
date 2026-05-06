@@ -1,7 +1,7 @@
 ---
 title: Ripristina gli elementi eliminati dal tuo account email
 excerpt: Come ripristinare gli elementi eliminati dal tuo account email tramite la Webmail (OWA)
-updated: 2022-02-08
+updated: 2026-03-24
 ---
 
  

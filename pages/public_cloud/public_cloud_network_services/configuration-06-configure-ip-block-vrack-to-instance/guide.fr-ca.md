@@ -1,6 +1,6 @@
 ---
 title: Configurer un bloc IP dans un vRack sur une instance Public Cloud
-excerpt: Découvrez comment associer un bloc d’adresses IP publiques au vRack pour une configuration sur une Instance Public Cloud
+excerpt: Découvrez comment associer un bloc d’adresses IP publiques au vRack pour une configuration sur une instance Public Cloud
 updated: 2025-04-28
 ---
 
@@ -8,14 +8,13 @@ updated: 2025-04-28
 
 En plus de l’adressage IP privé, le [vRack](/links/network/vrack) vous permet également de router le trafic IP public via le port [vRack](/links/network/vrack) de votre serveur à l’aide d’un bloc d’adresses IP publiques.
 
-**Ce guide vous montrera comment configurer un bloc d'adresses IP publiques à utiliser avec le vRack sur une instance Public Cloud.**
+**Ce guide explique comment configurer un bloc d'adresses IP publiques à utiliser avec le vRack sur une instance Public Cloud.**
 
 ## Prérequis
 
 - Un bloc public d'adresses IP dans votre compte, avec un minimum de quatre adresses
 - Une [instance Public Cloud OVHcloud](/pages/public_cloud/compute/public-cloud-first-steps)
 - Un service [vRack](/links/network/vrack) activé dans votre compte
-- Être connecté à [l'espace client OVHcloud](/links/manager)
 - Être connecté à [l'interface Horizon](/pages/public_cloud/public_cloud_cross_functional/introducing_horizon)
 
 ### Sommaire
@@ -33,20 +32,31 @@ En plus de l’adressage IP privé, le [vRack](/links/network/vrack) vous permet
 
 ## En pratique
 
-Avant de commencer, veuillez noter que plusieurs étapes sont à suivre pour cette configuration. Une partie de la configuration se fera via l'espace client OVHcloud et une autre via l'interface Horizon.
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Projets Public Cloud](/links/control-panel/publiccloud-projects)
+- **Pour accéder à vos services :** `Public Cloud`{.action} > Sélectionnez votre projet
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
+
+Cette configuration comprend plusieurs étapes, via l'espace client OVHcloud et l'interface Horizon.
 
 <a name="addproject"></a>
 
 ### Ajouter le projet Public Cloud au vRack
 
 > [!primary]
-> Ceci ne s’applique pas aux projets nouvellement créés, qui sont automatiquement livrés avec un vRack. Pour visualiser le vRack une fois le projet créé, connectez-vous à [l'espace client OVHcloud](/links/manager), rendez-vous dans la section `Network`{.action} puis cliquez sur `Réseau privé vRack`{.action} pour voir le(s) vRack(s).
+> Ceci ne s’applique pas aux projets nouvellement créés, qui sont automatiquement livrés avec un vRack. Pour visualiser le vRack une fois le projet créé, rendez-vous dans la section `Network`{.action} puis cliquez sur `Réseau privé vRack`{.action} pour voir le(s) vRack(s).
 >
 > Vous pouvez également supprimer le projet de son vRack alloué et l'attacher à un autre vRack si vous le souhaitez.
 
 Pour les projets plus anciens, allez dans la section `Network`{.action} puis cliquez sur `Réseau privé vRack`{.action} et sélectionnez votre vRack dans la liste.
 
-Dans la liste des services éligibles, sélectionnez le projet que vous souhaitez ajouter au vRack et cliquez sur le bouton `Ajouter`{.action} .
+Dans la liste des services éligibles, sélectionnez le projet que vous souhaitez ajouter au vRack et cliquez sur le bouton `Ajouter`{.action}.
 
 ![ajouter le projet à vRack](images/addprojectvrack.png){.thumbnail}
 
@@ -61,7 +71,7 @@ Dans la liste des services éligibles, sélectionnez le projet que vous souhaite
 > Cette configuration vous permet de configurer des adresses IP d’un même bloc sur plusieurs serveurs, à condition que ces serveurs soient tous dans le même vRack que ce bloc. Le bloc d'adresses IP doit avoir au moins 2 adresses IP utilisables ou plus pour que cela soit possible.
 >
 
-Dans votre [espace client OVHcloud](/links/manager), rendez-vous dans la section `Network`{.action} et cliquez sur `Réseau privé vRack`{.action} pour voir le(s) vRack(s).
+Rendez-vous dans la section `Network`{.action} et cliquez sur `Réseau privé vRack`{.action} pour voir le(s) vRack(s).
 
 Sélectionnez votre vRack dans la liste pour afficher la liste des services éligibles. Cliquez sur le bloc IP que vous souhaitez ajouter au vRack et cliquez sur `Ajouter`{.action}.
 
@@ -71,7 +81,7 @@ Sélectionnez votre vRack dans la liste pour afficher la liste des services éli
 
 ### Créer un réseau privé
 
-Une fois votre projet ajouté au vRack, l’étape suivante consiste à créer un réseau privé. Ce réseau privé sera lié à l'instance Public Cloud.
+Une fois votre projet ajouté au vRack, créez un réseau privé à rattacher à l’instance Public Cloud.
 
 Dans l'onglet `Public Cloud`{.action}, cliquez sur `Private Network`{.action} sous **Network**.
 
@@ -85,7 +95,7 @@ La page suivante vous permet de personnaliser plusieurs paramètres.
 
 ![select region](images/vrack2024-01.png){.thumbnail}
 
-Ensuite, définissez un ID de VLAN. Pour cette configuration, vous devez « tagguer » votre réseau privé avec l'ID de VLAN 0.
+Ensuite, définissez un ID de VLAN. Pour cette configuration, vous devez « taguer » votre réseau privé avec l'ID de VLAN 0.
 
 Celui-ci peut être configuré à l'étape 2.
 
@@ -93,7 +103,7 @@ Celui-ci peut être configuré à l'étape 2.
 
 Cette étape offre plusieurs options de configuration. Pour les besoins de ce guide, nous allons nous concentrer sur les éléments nécessaires :
 
-- **Nom du réseau privé** : Entrez un nom pour votre réseau privé.
+- **Nom du réseau privé** : entrez un nom pour votre réseau privé.
 - **Option réseau du layer 2** : Cochez la case **Définir un ID de VLAN** et sélectionnez VLAN ID **0**.
 - **Options de distribution des adresses DHCP** : Vous pouvez conserver la plage IP privée par défaut ou en utiliser une autre. Laissez toutefois la case **DHCP** désactivée.
 
@@ -114,7 +124,7 @@ Pour la configuration, vous devez créer un sous-réseau dans le réseau privé 
 
 #### Depuis l’interface Horizon
 
-Connectez-vous à l'[interface Horizon](https://horizon.cloud.ovh.net/auth/login/) et assurez-vous de vous situer dans la bonne région. Vous pouvez le vérifier en haut à gauche.
+Connectez-vous à l'[interface Horizon](https://horizon.cloud.ovh.net/auth/login/) et vérifiez que vous êtes dans la bonne région (indiquée en haut à gauche).
 
 ![Sélection de la région](images/region2021.png){.thumbnail}
 
@@ -126,12 +136,12 @@ Cliquez sur la flèche déroulante à côté du réseau privé et sélectionnez 
 
 ![Créer un sous-réseau](images/create_subnet.png){.thumbnail}
 
-Dans la fenêtre qui s'affiche, complétez les champs :
+Dans la fenêtre, complétez les champs :
 
 ![Créer un sous-réseau](images/create_subnet_1.png){.thumbnail}
 
-- **Nom du sous-réseau** (**Subnet Name**) : entrez le nom de votre choix.<br>
-- **Adresse réseau** (**Network address**) : entrez le CIDR complet de votre bloc IP public (dans cet exemple : 203.0.113.0/29).<br>
+- **Nom du sous-réseau** (**Subnet Name**) : entrez le nom de votre choix.
+- **Adresse réseau** (**Network address**) : entrez le CIDR complet de votre bloc IP public (dans cet exemple : 203.0.113.0/29).
 - **IP de la passerelle** (**Gateway IP**) : avant-dernière IP du bloc d'adresses IP (dans cet exemple 203.0.113.6). Lorsque vous achetez votre bloc IP, ces informations vous sont communiquées par e-mail.
 
 Cliquez sur `Next`{.action} et décochez la case `Enable DHCP`{.action}. 
@@ -160,7 +170,7 @@ Nous vous recommandons de consulter les guides suivants si vous créez une insta
 
 Si vous disposez déjà d'une instance, vous pouvez passer à l'étape suivante.
 
-Connectez-vous à l'[interface Horizon](https://horizon.cloud.ovh.net/auth/login/) et assurez-vous de vous situer dans la bonne région. Vous pouvez le vérifier en haut à gauche.
+Connectez-vous à l'[interface Horizon](https://horizon.cloud.ovh.net/auth/login/) et vérifiez que vous êtes dans la bonne région (indiquée en haut à gauche).
 
 ![region](images/region2021.png){.thumbnail}
 
@@ -176,7 +186,7 @@ Dans le menu déroulant, sélectionnez les options appropriées :
 
 ![attach network](images/attach_public_IP.png){.thumbnail}
 
-- **Réseau** (**Network**) : sélectionnez le réseau privé créé<br>
+- **Réseau** (**Network**) : sélectionnez le réseau privé créé
 - **Adresse IP fixe** (**Fixed IP Address**) : spécifiez une adresse IP publique à partir de votre bloc (si vous ne le faites pas, le système attribuera automatiquement une IP privée).
 
 > [!warning]
@@ -189,7 +199,7 @@ Dans le menu déroulant, sélectionnez les options appropriées :
 
 ### Configurer une adresse IP utilisable
 
-Dans le cas du vRack, la première, l'avant-dernière et la dernière adresses d'un bloc d'IP donné sont toujours réservées respectivement à l'adresse réseau, la passerelle réseau et au *broadcast* du réseau. Cela signifie que la première adresse utilisable est la deuxième adresse du bloc, comme indiqué ci-dessous :
+Dans le cas du vRack, la première, l'avant-dernière et la dernière adresses d'un bloc d'IP donné sont toujours réservées respectivement à l'adresse réseau, à la passerelle réseau et au *broadcast* du réseau. Cela signifie que la première adresse utilisable est la deuxième adresse du bloc, comme indiqué ci-dessous :
 
 ```sh
 203.0.113.0   # Réservée : adresse réseau
@@ -212,7 +222,7 @@ Pour configurer la première adresse IP utilisable, vous devez éditer le fichie
 
 ### Créer une nouvelle table de routage IP
 
-Tout d'abord, nous devons télécharger et installer **iproute2**, qui est un paquet qui nous permettra de configurer manuellement le routage IP sur le serveur. Dans la plupart des cas, ce paquet sera déjà disponible sur votre serveur. Si tel est le cas, passez à l'étape suivante.
+Téléchargez et installez **iproute2**, un paquet de configuration du routage IP. Ce paquet est probablement déjà disponible sur votre serveur — si c'est le cas, passez à l'étape suivante.
 
 Établissez une connexion SSH à votre instance et exécutez la commande suivante à partir de la ligne de commande. Cela téléchargera et installera iproute2.
 
@@ -220,7 +230,7 @@ Tout d'abord, nous devons télécharger et installer **iproute2**, qui est un pa
 sudo apt-get install iproute2
 ```
 
-Ensuite, nous devons créer une nouvelle route IP pour le vRack. Nous allons ajouter une nouvelle règle de trafic en modifiant le fichier, comme indiqué ci-dessous :
+Créez une route IP pour le vRack en ajoutant la règle suivante au fichier :
 
 > [!tabs]
 > **Linux**
@@ -281,7 +291,7 @@ ip route add default via GATEWAY_IP dev NETWORK_INTERFACE
 
 #### Application persistante par distribution
 
-Cliquez sur l'onglet correspondant à votre distribution
+Cliquez sur l'onglet correspondant à votre distribution :
 
 > [!tabs]
 > **Debian (hors Debian 12)**
@@ -371,7 +381,7 @@ Cliquez sur l'onglet correspondant à votre distribution
 >> **Exemple de configuration :**
 >>
 >> ```bash
->>   ens7:
+>>   eno2:
 >>     dhcp4: false
 >>     addresses:
 >>     - 203.0.113.1/29
@@ -386,7 +396,7 @@ Cliquez sur l'onglet correspondant à votre distribution
 >> sudo netplan apply
 >> ```
 >>
-> **CentOS, AlmaLinux & RockyLinux**
+> **CentOS, AlmaLinux & Rocky Linux**
 >>
 >> La configuration ci-dessous est basée sur CentOS 7.
 >>
@@ -480,7 +490,7 @@ Cliquez sur l'onglet correspondant à votre distribution
 >> sudo nmcli connection modify 'Wired connection 1' IPv4.gateway 203.0.113.6
 >> ```
 >>
->> Ajouter un serveur DNS :
+>> Ajoutez un serveur DNS :
 >>
 >> ```bash
 >> sudo nmcli connection modify INTERFACE_NAME IPv4.dns 213.186.33.99
@@ -523,6 +533,6 @@ Cliquez sur l'onglet correspondant à votre distribution
 >> ```
 >>
 
-## Allez plus loin
+## Aller plus loin
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).

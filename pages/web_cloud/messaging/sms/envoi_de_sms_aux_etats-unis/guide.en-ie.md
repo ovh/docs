@@ -1,6 +1,6 @@
 ---
 title: Sending SMS messages to the USA
-excerpt: Find out how to send SMS messages to the USA
+excerpt: Find out how to comply with the specific rules for sending SMS messages to the United States and apply them via the OVHcloud Control Panel
 updated: 2022-08-05
 ---
 
@@ -12,13 +12,23 @@ There are specific rules for sending SMS to the United States. The guide will ex
 
 - An OVHcloud SMS account with SMS credits.
 - Access to the [OVHcloud API](/links/api) (for the API method only)
-- You must be logged in to [OVHcloud Control Panel](/links/manager), in the `Telecom`{.action} section, then `SMS`{.action}.
+
+<!-- CP-NAV-START:telecom-sms -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [SMS](/links/control-panel/telecom-sms)
+- **Navigation path:** `Telecom`{.action} > `SMS`{.action} > Select your SMS account
+
+---
+<!-- CP-NAV-END:telecom-sms -->
 
 ![SMS Telecom Control Panel](/pages/assets/screens/control_panel/product-selection/telecom/tpl-telecom-03-en-sms.png){.thumbnail}
 
 ## Instructions
 
-### Step 1: understanding the restrictions
+### Step 1: Understanding the restrictions
 
 In accordance with the US SMS regulation authority (Neustar), a message template must be validated through our services before an SMS can be sent to this destination.
 Only alert and two-factor authentication messages are authorised, and advertising SMS templates are not accepted. Once you have set your templates, the SMS will be sent the same way as for other countries.
@@ -27,14 +37,14 @@ You can request the validation of multiple message templates.
 
 > [!primary]
 >
-Setting message templates is free and is carried out by the OVHcloud teams within two working days.
+> Setting message templates is free and is carried out by the OVHcloud teams within two working days.
 >
 
-### Step 2: adding a template
+### Step 2: Adding a template
 
 #### 2.1 Via the Control Panel
 
-Log in to your [OVHcloud Control Panel](/links/manager), then select `Telecom`{.action}. Next, click `SMS`{.action} and select your SMS account. Click on the `Message and campaign`{.action} tab then click `SMS management`{.action}.
+Click on the `Message and campaign`{.action} tab and click `SMS management`{.action}.
 
 Finally, click `Manage templates`{.action}.
 
@@ -54,6 +64,7 @@ A pop-up will appear with fields to complete.
 | Activity    | Select the template type:<br>\- Alert<br>\- Authentication<br>\- Transaction processing system |
 | Description | Template description                                                                                            |
 | Template      | Write the template, including the variable between #                                                                  |
+
 
 #### 2.2 Via APIs
 
@@ -87,13 +98,13 @@ Your security code is: #CODE#. Have a good day!
 Our monitoring system detected your server #SERVER# doesn't respond to ping requests
 ```
 
-### Step 3: analysing returns
+### Step 3: Analysing returns
 
 Once your message template has been created and validated, the outgoing SMS automatically compares your content with your templates. If the comparison is positive, the SMS is sent in the same way as one sent to another recipient.
 
 If you send an SMS to the US without creating and validating a template, the SMS will be rejected and the Premium Tracking Transaction Code (PTT code) 1999 will be sent to you, which corresponds to the “No templates available” error message.
 
-You can view the other possible return codes in [this guide](/pages/web_cloud/messaging/sms/tout_savoir_sur_les_utilisateurs_sms).
+You can view the other possible return codes in the [SMS users guide](/pages/web_cloud/messaging/sms/tout_savoir_sur_les_utilisateurs_sms).
 
 ## Go further
 

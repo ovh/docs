@@ -21,7 +21,6 @@ La solución MX Plan le permite disfrutar de direcciones de correo asociadas a u
 - Tener una solución MX Plan. Esta está disponible a través de:
     - Un [plan de hosting](/links/web/hosting).
     - Una solución MX Plan contratada por separado.
-- Estar conectado al [área de cliente de OVHcloud](/links/manager), en la sección `Web Cloud`{.action}.
 
 > [!primary]
 >
@@ -30,12 +29,19 @@ La solución MX Plan le permite disfrutar de direcciones de correo asociadas a u
 > - En el caso del Alojamiento gratuito 100M, es necesario activar previamente el alojamiento para poder crear una dirección de correo. Puede realizar esta operación desde el [área de cliente de OVHcloud](/links/manager), accediendo al dominio correspondiente.
 > - Si tiene un [alojamiento web](/links/web/hosting), deberá activar su solución MX Plan incluida antes de continuar la lectura de esta guía. Para ello, consulte nuestra guía [Activar las direcciones de correo incluidas en su alojamiento web](/pages/web_cloud/web_hosting/activate-email-hosting).
 
+<!-- CP-NAV-START:web-mx-plan -->
+---
+
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [MX Plan](/links/control-panel/web-mx-plan)
+- **Ruta de navegación:** `Web Cloud`{.action} > `MX Plan`{.action} > Seleccione su servicio MX Plan
+
+---
+<!-- CP-NAV-END:web-mx-plan -->
+
 ## Procedimiento <a name="instructions"></a>
 
-1. Conéctese a su [área de cliente de OVHcloud](/links/manager).
-1. Acceda al apartado `Web Cloud`{.action}.
-1. Haga clic en `MX Plan`{.action}.
-1. Seleccione el dominio.
 
 #### Crear una cuenta de correo
 
@@ -57,7 +63,7 @@ A continuación, introduzca la información solicitada:
 > - Sin caracteres especiales, excepto los siguientes: `.`, `,`, `-` y `_`
 
 - **Nombre**: Introduzca un nombre.
-- **Nombre**: Introduzca los apellidos.
+- **Apellidos**: Introduzca los apellidos.
 - **Nombre mostrado**: Introduzca el nombre que quiera que figure como remitente cuando envíe mensajes de correo desde esa dirección.
 - **Contraseña**: Introduzca una contraseña y luego confírmela en el último campo. Por motivos de seguridad, le recomendamos que no utilice dos veces la misma contraseña, que la contraseña no guarde ninguna relación con sus datos personales (evite mencionar su nombre, apellidos o fecha de nacimiento, por ejemplo) y que la cambie periódicamente.
 
@@ -69,7 +75,7 @@ A continuación, introduzca la información solicitada:
 > - Máximo 30 caracteres
 > - Sin caracteres acentuados
 
-Una vez que haya completado todos los campos, haga clic en `Siguiente`{.action}. 
+Una vez que haya completado todos los campos, haga clic en `Siguiente`{.action}.
 
 ![Correo electrónico](images/mxplan-creation-new-step3.png){.thumbnail .w-400}
 
@@ -106,7 +112,7 @@ En la pestaña `Cuentas de correo`{.action}, haga clic en el botón `...`{.actio
 **Ha utilizado todas las direcciones incluidas en su plan?**
 
 - Consulte las preguntas de [nuestras FAQ de correo](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/faq-emails).
-- Consulte nuestra solución de correo electrónico [Exchange] (/links/web/emails) para completar su MX Plan con el mismo dominio.
+- Consulte nuestra solución de correo electrónico [Exchange](/links/web/emails-exchange) para completar su MX Plan con el mismo dominio.
 
 
 ## Más información <a name="go-further"></a>

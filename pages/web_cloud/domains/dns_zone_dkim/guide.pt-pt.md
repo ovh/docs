@@ -1,7 +1,7 @@
 ---
 title: "Melhorar a segurança dos e-mails através do registo DKIM"
-excerpt: "Saiba como configurar um registo DKIM no seu domínio e na sua plataforma de e-mail OVHcloud"
-updated: 2025-11-28
+excerpt: "Saiba como configurar um registo DKIM no seu nome de domínio e na sua plataforma de e-mail OVHcloud"
+updated: 2026-02-10
 ---
 
 <style>
@@ -55,14 +55,23 @@ O registo DKIM (**D**omain**K**eys **I**dentified **M**ail) permite assinar os e
 
 ## Requisitos
 
-- Ter acesso à secção de gestão do domínio na [Área de Cliente OVHcloud](/links/manager) ou na Área de Cliente, caso esteja registado fora da OVHcloud.
-- Ter acesso à [Área de Cliente OVHcloud](/links/manager).
 - Ter adquirido uma das ofertas de correio eletrónico abaixo:
     - MX Plan OVHcloud (disponível através de uma [oferta de alojamento Web Cloud](/links/web/hosting), um [alojamento gratuito 100M](/links/web/domains-free-hosting) ou uma oferta MX Plan encomendada separadamente).
     - [Exchange](/links/web/emails-hosted-exchange) ou [Private Exchange](/links/web/emails-hosted-exchange).
     - [E-mail Pro](/links/web/email-pro).
     - [Zimbra](/links/web/zimbra).
     - Uma oferta de e-mail fora da OVHcloud que dispõe do DKIM.
+
+<!-- CP-NAV-START:web-dns-zone -->
+---
+
+### Acesso à Área de Cliente OVHcloud
+
+- **Ligação direta:** [Zonas DNS](/links/control-panel/web-dns-zone)
+- **Caminho de navegação:** `Web Cloud`{.action} > `Zonas DNS`{.action} > Selecione o seu nome de domínio
+
+---
+<!-- CP-NAV-END:web-dns-zone -->
 
 > [!warning]
 >
@@ -121,15 +130,15 @@ A função de triagem é útil quando deseja verificar a integridade de uma mens
 
 A **encriptação**, como o seu nome indica, tem como objetivo encriptar os dados que lhe são dados. É "**assimétrica**" porque a chave de encriptação não é a mesma que a chave de decifrar, ao contrário de uma encriptação simétrica que vai usar a mesma chave para encriptar e decifrar.
 
-Na encriptação assimétrica, utilizamos uma **chave pública** e uma **chave privada**. A chave pública é visível e utilizável por todos. A chave privada só é utilizada por proprietário e não é visível de todos. 
+Na encriptação assimétrica, utilizamos uma **chave pública** e uma **chave privada**. A chave pública é visível e utilizável por todos. A chave privada só é utilizada por titular e não é visível de todos. 
 
 Existem duas utilizações da encriptação assimétrica:
 
-- **O dado de entrada é encriptado com a chave pública e decifrado por quem possui a chave privada**. Por exemplo, deseja que um terceiro lhe transmita dados de forma segura. Transmite a sua chave pública sem se preocupar que alguém a recupere, este terceiro encriptará os seus dados com a sua chave pública. Os números só poderão ser decifrados pelo proprietário da chave privada.
+- **O dado de entrada é encriptado com a chave pública e decifrado por quem possui a chave privada**. Por exemplo, deseja que um terceiro lhe transmita dados de forma segura. Transmite a sua chave pública sem se preocupar que alguém a recupere, este terceiro encriptará os seus dados com a sua chave pública. Os números só poderão ser decifrados pelo titular da chave privada.
 
 ![hash](/pages/assets/schemas/emails/dns-dkim-crypto01.png){.thumbnail .w-400 .h-600}
 
-- **O dado de entrada é encriptado pelo proprietário da chave privada e decifrado pela chave pública**. Esta utilização aplica-se para autenticar uma troca de dados. Por exemplo, os seus destinatários pretendem assegurar-se de que é o autor da mensagem que lhes transmite. Nesse caso, irá encriptar a sua mensagem com a sua chave privada. Esta mensagem só poderá ser decifrada através da chave pública que transmitir a todos, o que garante aos seus destinatários a autenticidade da sua mensagem. De facto, uma mensagem decifrada pela chave pública só pode provir do proprietário da chave privada.
+- **O dado de entrada é encriptado pelo titular da chave privada e decifrado pela chave pública**. Esta utilização aplica-se para autenticar uma troca de dados. Por exemplo, os seus destinatários pretendem assegurar-se de que é o autor da mensagem que lhes transmite. Nesse caso, irá encriptar a sua mensagem com a sua chave privada. Esta mensagem só poderá ser decifrada através da chave pública que transmitir a todos, o que garante aos seus destinatários a autenticidade da sua mensagem. De facto, uma mensagem decifrada pela chave pública só pode provir do titular da chave privada.
 
 ![hash](/pages/assets/schemas/emails/dns-dkim-crypto02.png){.thumbnail .w-400 .h-600}
 
@@ -181,14 +190,13 @@ O destinatário **recipient@otherdomain.ovh** poderá decifrar esta assinatura c
 A configuração automática do DKIM está disponível para todas as nossas ofertas de correio eletrónico:
 
 - MX Plan incluída com um [alojamento Web Cloud](/links/web/hosting), um [alojamento gratuito 100M](/links/web/domains-free-hosting) ou adquirida separadamente.
-- [Exchange](/links/web/emails).
+- [Exchange](/links/web/emails-exchange).
 - [E-mail Pro](/links/web/email-pro).
 - [Zimbra](/links/web/zimbra).
 
 Quando configura o seu nome de domínio numa solução de correio eletrónico OVHcloud, a configuração automática do DKIM é proposta e realizada por defeito se não a desativar.
 
 Se o DKIM não foi ativado quando adicionou um nome de domínio à sua plataforma de correio eletrónico, terá de iniciar o processo de configuração automática através do espaço cliente.
-
 
 Clique no separador seguinte da sua oferta.
 
@@ -1124,7 +1132,7 @@ O destinatário deve ignorar este registo se o tipo de serviço adequado não es
 A baliza "s=" destina-se a restringir a utilização das chaves para outros fins, no caso de a utilização do DKIM ser definida para outros serviços no futuro.<br>
 Os tipos de serviços atualmente definidos são "\*" (todos os tipos de serviços), "e-mail" (correio eletrónico).
 
-- **Modo de teste (t=y)**: permite aos proprietários do domínio testar a implementação do DKIM sem correr o risco de ver as mensagens rejeitadas ou marcadas como SPAM se a verificação de assinatura DKIM falhar.<br>
+- **Modo de teste (t=y)**: permite aos titulares do domínio testar a implementação do DKIM sem correr o risco de ver as mensagens rejeitadas ou marcadas como SPAM se a verificação de assinatura DKIM falhar.<br>
 Quando se utiliza a flag "t=y", o destinatário não deve tratar de forma diferente as mensagens assinadas em modo de teste e as mensagens não assinadas. No entanto, o destinatário pode seguir o resultado do método de teste para ajudar os signatários.
 
 - **Subdomínios (t=s)**: permite restringir a utilização da assinatura DKIM apenas ao nome de domínio (por exemplo: @mydomain.ovh) ou permitir o envio a partir do nome de domínio e dos seus subdomínios (por exemplo: @mydomain.ovh, @test.mydomain.ovh, @other.mydomain.ovh, etc.).

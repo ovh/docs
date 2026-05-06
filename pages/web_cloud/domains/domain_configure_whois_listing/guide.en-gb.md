@@ -1,7 +1,7 @@
 ---
 title: "How do I configure the WHOIS display for a domain name?"
 excerpt: "Find out how to show or hide certain information contained in a domain name's WHOIS in your OVHcloud Control Panel"
-updated: 2025-06-23
+updated: 2026-02-10
 ---
 
 ## Objective
@@ -22,8 +22,19 @@ When using your domain name, you may find that you need to show or hide certain 
 
 ## Requirements
 
-- Access to your [OVHcloud Control Panel](/links/manager)
 - A [domain name](/links/web/domains)
+
+<!-- CP-NAV-START:web-domains -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Domain names](/links/control-panel/web-domains)
+- **Navigation path:** `Web Cloud`{.action} > `Domain names`{.action} > Select your domain name
+
+---
+<!-- CP-NAV-END:web-domains -->
+
 
 > [!warning]
 >
@@ -34,38 +45,32 @@ When using your domain name, you may find that you need to show or hide certain 
 
 ## Instructions
 
-Click on the tabs below to view each of the **4** steps.
+<!-- CP-STEPS-START:configure-whois -->
+Click on the tabs below to view each of the **3** steps.
 
 > [!tabs]
 > **Step 1**
 >>
->> Log in to the [OVHcloud Control Panel](/links/manager), then go to the `Web Cloud`{.action} section.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Step 2**
->>
->> Click the `Domain names`{.action} menu, then choose the domain name concerned.
+>> Go to the [Domain names](/links/control-panel/web-domains) page, then choose the domain name concerned.
 >>
 >> ![Domain Names](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
 >>
-> **Step 3** 
+> **Step 2** 
 >>
->> On the page that pops up, in the **Security** box, click the `Configure WHOIS listing`{.action} button.
+>> On the page that pops up, in the **Configuration** box, click the `Managing data protection`{.action} button.
 >>
->> ![Configure WHOIS listing](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/configure-whois-listing.png){.thumbnail}
+>> ![Configure Data protection](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/configure-data-protection.png){.thumbnail}
 >>
-> **Step 4**
+> **Step 3**
 >>
->> On the new page that pops up, you can choose to `Display` or `Hide` the information relating to the owner, administrator and technical contacts of the domain name, subject to the actions authorized by the registry managing the extension.
+>> On the new page that pops up, you can choose to `Display` or `Hide` the information relating to the holder, administrator and technical contacts of the domain name, subject to the actions authorized by the registry managing the extension.
 >>
->> For each of the 3 contacts, tick the `Manage listing by field`{.action} box to get more options.
+>> ![Configure listing in WHOIS](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/configure-data-protection/configure-data-protection-in-drawer.png){.thumbnail}
 >>
->> ![Configure listing in WHOIS](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/configure-whois-listing/configure-listing-in-whois.png){.thumbnail}
->>
->> Once you have made your choices, click the `Save the changes`{.action} button.
+>> Once you have made your choices, click the `Confirm`{.action} button.
 >>
 >> Changes may take up to **48** hours to take effect. These changes will only be applied **if authorized by the registry managing your domain name extension**.
+<!-- CP-STEPS-END:configure-whois -->
 
 ## Go further
  
@@ -73,4 +78,4 @@ For specialised services (SEO, development, etc.), contact [OVHcloud partners](/
  
 If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](/links/support).
  
-Join our [community of users](/links/community).
+Join our [community of users](/links/community).

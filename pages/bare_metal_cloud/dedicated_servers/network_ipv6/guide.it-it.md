@@ -1,7 +1,7 @@
 ---
-title: 'Configurare IPv6 sur un server dedicato'
-excerpt: 'Scopri come configurare indirizzi IPv6 sulla nostra infrastruttura'
-updated: 2025-12-09
+title: "Configurare IPv6 su un server dedicato"
+excerpt: "Configura indirizzi IPv6 sul tuo server dedicato OVHcloud con esempi per le principali distribuzioni Linux e Windows"
+updated: 2026-04-13
 ---
 
 <style>
@@ -20,7 +20,7 @@ details[open]>summary::before {
 
 ## Obiettivo
 
-La versione 6 del Protocollo Internet (IPv6) è l’ultima versione del Protocollo Internet (IP). È stata studiata per sopperire alla prevista saturazione degli indirizzi del suo predecessore, IPv4, utilizzando indirizzi a 128-bit invece che a 32-bit. I server di gamma High Grade, Scale e Advance (da luglio 2024) vengono consegnati con un blocco /56 IPv6, mentre i vecchi server con un blocco/64 IPv6. Un server consegnato con un blocco /56 IPv6, permette di disporre fino a 18 quintilioni di indirizzi IP.
+La versione 6 del Protocollo Internet (IPv6) è l’ultima versione del Protocollo Internet (IP). È stata studiata per sopperire alla prevista saturazione degli indirizzi del suo predecessore, IPv4, utilizzando indirizzi a 128-bit invece che a 32-bit. I server di gamma High Grade, Scale e Advance (da luglio 2024) vengono consegnati con un blocco /56 IPv6, mentre i vecchi server con un blocco /64 IPv6. Un server consegnato con un blocco /56 IPv6, permette di disporre fino a 18 quintilioni di indirizzi IP.
 
 **Questa guida spiega con vari esempi come configurare indirizzi IPv6 sul tuo server.**
 
@@ -29,7 +29,7 @@ La versione 6 del Protocollo Internet (IPv6) è l’ultima versione del Protocol
 > In questo articolo viene descritta la configurazione di un indirizzo IP primario. Sui server compatibili con la vRack è inoltre possibile configurare indirizzi Additional IP su una vRack invece che sull’interfaccia pubblica del server. Per istruzioni dettagliate, consultare i seguenti articoli:
 >
 > - IPv4: [Configurare un blocco di indirizzi IP nella vRack](/pages/bare_metal_cloud/dedicated_servers/configuring-an-ip-block-in-a-vrack).
-> - IPv6: [Configuring an IPv6 block in a vRack](/pages/bare_metal_cloud/dedicated_servers/configure-an-ipv6-in-a-vrack).
+> - IPv6: [Configurare un blocco IPv6 in una vRack (EN)](/pages/bare_metal_cloud/dedicated_servers/configure-an-ipv6-in-a-vrack).
 >
 
 > [!warning]
@@ -44,6 +44,17 @@ La versione 6 del Protocollo Internet (IPv6) è l’ultima versione del Protocol
 - Tutti i dati del tuo IPv6 (prefisso, gateway, etc.).
 - Una conoscenza basilare di reti e [SSH](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction).
 
+<!-- CP-NAV-START:baremetal-dedicated-servers -->
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [Server dedicati](/links/control-panel/baremetal-dedicated-servers)
+- **Percorso di navigazione:** `Bare Metal Cloud`{.action} > `Server dedicati`{.action} > Seleziona il tuo server
+
+---
+<!-- CP-NAV-END:baremetal-dedicated-servers -->
+
 > [!warning]
 > Ti ricordiamo che i server Kimsufi sono forniti con un solo blocco IPv6 (/128). L'IPv6 sarà configurato automaticamente al momento dell'installazione del sistema operativo.
 >
@@ -52,11 +63,11 @@ La versione 6 del Protocollo Internet (IPv6) è l’ultima versione del Protocol
 
 Le sezioni seguenti contengono le configurazioni delle distribuzioni che attualmente offriamo e delle distribuzioni/sistemi operativi più comunemente utilizzati. Il primo passo è sempre quello di connettersi al server utilizzando SSH o una sessione di connessione GUI (RDP per un server Windows).
 
-Sui server dedicati, il primo IPv6 viene dichiarato come 2607:5300:xxxx:xxxx::/64. Ad esempio, se abbiamo assegnato al vostro server l'intervallo IPv6: `2607:5300:abcd:efgh::/64`, il primo IPv6 sul vostro server è: `2607:5300:abcd:efgh::`.
+Sui server dedicati, il primo IPv6 viene dichiarato come 2607:5300:xxxx:xxxx::/64. Ad esempio, se abbiamo assegnato al tuo server l'intervallo IPv6: `2607:5300:abcd:efgh::/64`, il primo IPv6 sul tuo server è: `2607:5300:abcd:efgh::`.
 
 Di default, il primo IPv6 è configurato sulla maggior parte delle distribuzioni Linux recenti che offriamo all'installazione, quindi il gateway è già incluso nel file di configurazione. Nella maggior parte dei casi, non sarà necessario aggiungerlo manualmente.
 
-Prima di iniziare, e al fine di utilizzare la stessa terminologia in tutta la documentazione, vi invitiamo a dare un'occhiata alla tabella seguente. Essa si riferisce ai termini che utilizzeremo in questa documentazione:
+Prima di iniziare, e al fine di utilizzare la stessa terminologia in tutta la documentazione, ti invitiamo a consultare la tabella seguente. Essa si riferisce ai termini che utilizzeremo in questa documentazione:
 
 |Termine|Descrizione|Esempio|
 |---|---|---|
@@ -72,8 +83,6 @@ Il primo step consiste nel recuperare il gateway IPv6 assegnato al tuo server.
 
 > [!tabs]
 > **Dallo Spazio Cliente OVHcloud**
->>
->> Accedi allo [Spazio Cliente OVHcloud](/links/manager), clicca su `Bare Metal Cloud`{.action} e seleziona il tuo server nella sezione `Server dedicati`{.action}.
 >>
 >> Il gateway IPv6 assegnato al tuo server è visualizzato nella sezione `Rete` della scheda `Informazioni generali`{.action}. Una volta copiata, proseguire con l'applicazione di configurazione IPv6.
 >>
@@ -94,7 +103,7 @@ Ti ricordiamo che gli "0" di testa possono essere eliminati in un gateway IPv6.
 
 Esempio:
 
-IPv6_GATEWAY: `2607:5300:60:62FF:00FF:00FF:00FF:00FF` può anche essere scritto come `2607:5300:60:62FF:FF:FF:FF`.
+IPv6_GATEWAY: `2607:5300:60:62FF:00FF:00FF:00FF:00FF` può anche essere scritto come `2607:5300:60:62FF:FF:FF:FF:FF`.
 
 > [!warning]
 > 
@@ -112,7 +121,7 @@ IPv6_GATEWAY: `2607:5300:60:62FF:00FF:00FF:00FF:00FF` può anche essere scritto 
 >>
 >> > [!warning]
 >> >
->> > Prima di seguire i passaggi qui indicati, consigliamo vivamente di disabilitare l’auto-configurazione dell’IPv6 e gli annunci del router per non incorrere in problemi noti. Puoi farlo aggiungendo le righe che seguono al tuo file `sysctl.conf`, che trovi in /etc/sysctl.conf:
+>> > Prima di seguire i passaggi qui indicati, consigliamo vivamente di disabilitare l’auto-configurazione dell’IPv6 e gli annunci del router per non incorrere in problemi noti. Puoi farlo aggiungendo le righe che seguono al tuo file `sysctl.conf`, che trovi in `/etc/sysctl.conf`:
 >> >
 >> > `net.ipv6.conf.all.autoconf=0`
 >> > 
@@ -495,7 +504,7 @@ IPv6_GATEWAY: `2607:5300:60:62FF:00FF:00FF:00FF:00FF` può anche essere scritto 
 >> sudo systemctl restart NetworkManager
 >> ```
 >>
->> **Cent0S 7**
+>> **CentOS 7**
 >>
 >> ```sh
 >> sudo systemctl restart network
@@ -517,7 +526,7 @@ IPv6_GATEWAY: `2607:5300:60:62FF:00FF:00FF:00FF:00FF` può anche essere scritto 
 >>
 >> Clicca su `Modifica impostazioni scheda di rete`{.action}.
 >>
->> ![Modifica impostazioni scheda di rete](images/ipv6_change_adapter_settings.png){.thumbnail}.
+>> ![Modifica impostazioni scheda di rete](images/ipv6_change_adapter_settings.png){.thumbnail}
 >>
 >> Clicca con il tasto destro sulla tua scheda di rete, quindi su `Proprietà`{.action}.
 >>
@@ -533,8 +542,24 @@ IPv6_GATEWAY: `2607:5300:60:62FF:00FF:00FF:00FF:00FF` può anche essere scritto 
 >>
 >> ![Proprietà](images/ipv6_configuration.png){.thumbnail}
 >>
+>> **Passaggio 4: Disabilitare gli identificatori di interfaccia IPv6 casuali**
+>>
+>> Aprire il menu Start, cercare `Windows PowerShell`{.action}, fare clic con il tasto destro e selezionare `Esegui come amministratore`{.action}.
+>>
+>> ![Eseguire PowerShell come amministratore](images/ipv6_powershell_admin.png){.thumbnail}
+>>
+>> Nella finestra di PowerShell, eseguire il comando seguente:
+>>
+>> ```powershell
+>> Set-NetIPv6Protocol -RandomizeIdentifiers Disabled
+>> ```
+>>
+>> ![Disabilitare gli identificatori casuali](images/ipv6_powershell_randomize_identifiers.png){.thumbnail}
+>>
+>> Questo passaggio è necessario per la connettività IPv6 sull'infrastruttura OVHcloud. Consente a Windows di costruire i propri indirizzi IPv6 link-local dall'indirizzo MAC dell'adattatore (EUI-64) invece di utilizzare valori casuali. La modifica ha effetto immediato e persiste dopo il riavvio.
+>>
 
-### Verifica la configurazione e prova la connessione.
+### Verifica la configurazione e prova la connessione
 
 A seconda del sistema operativo, è possibile verificare la funzionalità tramite diversi comandi.
 
@@ -606,9 +631,9 @@ Esiste una semplice procedura per determinare se il difetto è nella configurazi
 
 Innanzitutto, [metti il tuo server in modalità di salvataggio](/pages/bare_metal_cloud/dedicated_servers/rescue_mode).
 
-Quindi utilizzare i seguenti comandi per configurare il proprio IPv6 in modo non persistente, sostituendo "YOUR_IPV6", "IPV6_PREFIX" e "IPV6_GATEWAY" con le proprie informazioni:
+Quindi utilizzare i seguenti comandi per configurare il proprio IPv6 in modo non persistente, sostituendo `YOUR_IPV6`, `IPV6_PREFIX` e `IPV6_GATEWAY` con le proprie informazioni:
 
-Se dopo aver testato la tua connessione riscontri ancora dei problemi, crea una richiesta di assistenza per l’esame delle tue configurazioni. È necessario fornire quando segue:
+Se dopo aver testato la tua connessione riscontri ancora dei problemi, crea una richiesta di assistenza per l’esame delle tue configurazioni. È necessario fornire quanto segue:
 
 ```sh
 ip addr add YOUR_IPV6/IPV6_PREFIX dev eth0

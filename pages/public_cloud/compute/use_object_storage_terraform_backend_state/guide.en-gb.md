@@ -16,9 +16,19 @@ In this tutorial you will:
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](/links/manager)
 - A [Public Cloud Instance](/links/public-cloud/public-cloud) in your OVHcloud account
 - [Terraform CLI](https://www.terraform.io/downloads) installed
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Navigation path:** `Public Cloud`{.action} > Select your project
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## Before you begin
 
@@ -57,6 +67,7 @@ In order to do that you need to configure a `backend` in your Terraform HCL conf
 
 ### Creating an Object Storage container/bucket
 
+<!-- CP-STEPS-START:creating-an-object-storage-containerbucket -->
 First, you need to have an Object Storage container. If you don't already have one, you can follow the [Getting started with Object Storage](/pages/storage_and_backup/object_storage/s3_getting_started_with_object_storage) tutorial.
 
 For this guide, our Object Storage container is named `terraform-state-hp`, its storage class is `High Performance` and its region is `GRA`.
@@ -72,6 +83,7 @@ $ aws s3 ls
 2022-07-11 16:20:48 my-container
 2022-07-11 16:55:20 terraform-state-hp
 ```
+<!-- CP-STEPS-END:creating-an-object-storage-containerbucket -->
 
 ### Initializing Terraform configuration
 

@@ -1,5 +1,5 @@
 ---
-title: MySQL - Connect with Python
+title: Connect using Python for Public Cloud Databases for MySQL
 excerpt: Connect to your Public Cloud Databases for MySQL using the Python programming language
 updated: 2022-03-08
 ---

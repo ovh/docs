@@ -21,18 +21,25 @@ Exchange groups enable multiple participants to communicate by sending emails to
 
 ## Requirements
 
-- access to the [OVHcloud Control Panel](/links/manager)
 - an [OVHcloud Exchange solution](/links/web/emails-hosted-exchange) already set up
+
+<!-- CP-NAV-START:web-exchange -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Exchange](/links/control-panel/web-exchange)
+- **Navigation path:** `Web Cloud`{.action} > `Exchange`{.action} > Select your platform
+
+---
+<!-- CP-NAV-END:web-exchange -->
 
 ## Instructions
 
 ### Creating a new group
 
-1. Log in to your [OVHcloud Control Panel](/links/manager).
-1. Open the `Web Cloud`{.action} section.
-1. In the `MICROSOFT` section, click `Exchange`{.action}.
-1. Select the service concerned.
-1. Click on the `Groups`{.action} tab in the horizontal menu.
+<!-- CP-STEPS-START:create-group -->
+Click on the `Groups`{.action} tab in the horizontal menu.
 
 ![contactgroups](images/exchange-groups-create01.png){.thumbnail .w-600 .h-600}
 
@@ -60,15 +67,19 @@ On the second page, select the **Contacts** for the group and designate the **Ad
 ![contactgroups](images/exchange-groups-create03.png){.thumbnail .w-600 .h-600}
 
 Click `Next`{.action} to continue and click `Confirm`{.action} to finalize your choices.
+<!-- CP-STEPS-END:create-group -->
 
 ### Managing groups
 
+<!-- CP-STEPS-START:manage-groups -->
 After your group is created, you can adjust the settings described above by clicking `...`{.action} to the right of the group in the table.
 
 ![contactgroups](images/exchange-groups-options01.png){.thumbnail .w-600 .h-600}
+<!-- CP-STEPS-END:manage-groups -->
 
 #### Managing users in a group
 
+<!-- CP-STEPS-START:configure-users -->
 To add `Contacts` to your group or define `Administrators`, click the `...`{.action} button, then `Configure users`{.action}. Select the attributes that you want to attach to the email addresses in the `Email account` column.
 
 > [!primary]
@@ -76,9 +87,11 @@ To add `Contacts` to your group or define `Administrators`, click the `...`{.act
 > A group can contain a maximum number of 10,000 contacts.
 
 ![contactgroups](images/exchange-group-options-users01.png){.thumbnail .w-600 .h-600}
+<!-- CP-STEPS-END:configure-users -->
 
 #### Managing group delegations
 
+<!-- CP-STEPS-START:manage-delegations -->
 Additionally, the menu item `Manage delegations`{.action} will be displayed. This option allows you to delegate access in the same way as for an Exchange account. Find all the details in [this guide](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/feature_delegation).
 
 ![contactgroups](images/exchange-groups-options-delegation01.png){.thumbnail .w-600 .h-600}
@@ -86,12 +99,13 @@ Additionally, the menu item `Manage delegations`{.action} will be displayed. Thi
 > [!primary]
 >
 > Please note that any changes to this service may take a few minutes to be applied. You can check the status of most operations by selecting the `More`{.action} and `Recent tasks`{.action} options from the horizontal menu.
+<!-- CP-STEPS-END:manage-delegations -->
 
 ### Messaging a group in OWA
 
 You can now test your mailing list via [OVHcloud webmail](/links/web/email) (OWA): simply send an email to the group address.
 
-## Go further
+## Go further <a name="go-further"></a>
 
 [Delegating permissions on an Exchange account](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/feature_delegation)
 

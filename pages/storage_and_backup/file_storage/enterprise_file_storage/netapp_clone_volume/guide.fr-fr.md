@@ -37,9 +37,20 @@ En créant des points de sauvegarde réguliers avec l'aide d'une [Politique de S
 
 ## Prérequis
 
-- Disposer d'une offre OVHcloud [Enterprise File Storage](/links/storage/enterprise-file-storage)
+- Disposer d’une offre OVHcloud [Enterprise File Storage](/links/storage/enterprise-file-storage)
 - Être connecté à l’[API OVHcloud](/links/api)
-- Disposer d'un volume Enterprise File Storage avec un snapshot `manual`
+- Disposer d’un volume Enterprise File Storage avec un snapshot `manual`
+
+<!-- CP-NAV-START:storage-enterprise-file-storage -->
+---
+
+### Accès à l’espace client OVHcloud
+
+- **Lien direct :** [Enterprise File Storage](/links/control-panel/storage-enterprise-file-storage)
+- **Pour accéder à vos services :** `Bare Metal Cloud`{.action} > `Enterprise File Storage`{.action}
+
+---
+<!-- CP-NAV-END:storage-enterprise-file-storage -->
 
 > [!primary]
 >

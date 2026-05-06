@@ -178,8 +178,8 @@ Pour l'envoi des e-mails, si vous devez renseigner manuellement les paramètres 
 
 [MX Plan - Configurer son compte e-mail sur Mail pour iPhone et iPad](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_ios)
 
-[E-mail Pro - Configurer son compte e-mail sur Mail pour macOS](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_mail_macos)<br>
-[E-mail Pro - Configurer son compte e-mail sur Mail pour iPhone et iPad](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_ios)
+[Email Pro - Configurer son compte e-mail sur Mail pour macOS](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_mail_macos)<br>
+[Email Pro - Configurer son compte e-mail sur Mail pour iPhone et iPad](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_ios)
 
 [Exchange - Configurer son compte e-mail sur Mail de macOS](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_ios)<br>
 [Exchange - Configurer son compte e-mail sur Mail pour iPhone et iPad](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_mail_macos)

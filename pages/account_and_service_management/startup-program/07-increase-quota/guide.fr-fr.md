@@ -19,7 +19,17 @@ Ce guide vous explique les étapes à suivre pour demander une augmentation de q
 - Vous êtes membre du [Startup Program](/links/transversal/startup-program).
 - Votre compte OVHcloud dispose d'un moyen de paiement valide. Consultez [ce guide](/pages/account_and_service_management/managing_billing_payments_and_services/manage-payment-methods) pour vous aider à ajouter un moyen de paiement valide.
 - Votre compte est enregistré sous le statut `Entreprise`. Consultez [ce guide](/pages/account_and_service_management/account_information/all_about_username) pour vous aider à modifier vos informations.
-- Être connecté à votre [espace client OVHcloud](/links/manager).
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Projets Public Cloud](/links/control-panel/publiccloud-projects)
+- **Pour accéder à vos services :** `Public Cloud`{.action} > Sélectionnez votre projet
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## En pratique
 
@@ -29,9 +39,7 @@ Cette procédure vous permet de demander manuellement une augmentation de quota 
 
 Une fois les prérequis ci-dessus remplis, vous pouvez créer un ticket de support en suivant ces étapes :
 
-Connectez-vous à votre [espace client OVHcloud](/links/manager), accédez à la section `Public Cloud`{.action} et sélectionnez votre projet Public Cloud.
-
-Dans la rubrique `Project Management`, cliquez sur `Quota and Regions`{.action}. Cliquez sur `Contacter le support`{.action}.
+Dans votre [projet Public Cloud](/links/control-panel/publiccloud-projects), accédez à la rubrique `Project Management` et cliquez sur `Quota and Regions`{.action}. Cliquez sur `Contacter le support`{.action}.
 
 ![Contacter le support](images/01-quota.png){.thumbnail width="800"}
 

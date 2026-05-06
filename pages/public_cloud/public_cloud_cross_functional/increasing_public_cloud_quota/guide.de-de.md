@@ -1,49 +1,66 @@
 ---
 title: 'Public Cloud Quota erhöhen'
-excerpt: 'Erfahren Sie hier, wie Sie eine Erhöhung Ihrer Kontingente für Public Cloud beantragen'
-updated: 2025-12-17
+excerpt: 'Erfahren Sie hier, wie Sie eine Erhöhung Ihrer Kontingente für Public Cloud Ressourcen (RAM, CPU, Speicherplatz, Instanzen) direkt über das OVHcloud Kundencenter anfordern.'
+updated: 2026-05-05
 ---
 
 ## Ziel
 
-Standardmäßig ist die Anzahl der Ressourcen (RAM, CPU, Speicherplatz, Anzahl der Instanzen, etc.) und der Projekte, die Sie erstellen können, aus Sicherheitsgründen begrenzt.
+Standardmäßig ist die Anzahl der Public Cloud Projekte sowie der Ressourcen insgesamt (RAM, CPU, Speicherplatz, Anzahl der Instanzen, etc.), die Sie nutzen können, aus Sicherheitsgründen begrenzt.
 
-Um zusätzliche Ressourcen und Instanzen nutzen zu können, müssen deren Quotas erhöht werden.
+Um zusätzliche Ressourcen und Projekte nutzen zu können, müssen die Quotas erhöht werden.
 
 **Diese Anleitung erklärt, wie Sie über Ihr OVHcloud Kundencenter eine Erhöhung von Public Cloud Quotas anfordern.**
 
 ## Voraussetzungen
 
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 - Sie haben eine [gültige Zahlungsart](/pages/account_and_service_management/managing_billing_payments_and_services/manage-payment-methods) in Ihrem OVHcloud Kundencenter hinterlegt.
 
 ## In der praktischen Anwendung
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direkter Link:** [Public Cloud Projekte](/links/control-panel/publiccloud-projects)
+- **Navigationspfad:** `Public Cloud`{.action} > Wählen Sie Ihr Projekt aus
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
+
+Klicken Sie in der linken Seitenleiste unter **Einstellungen** auf `Quota und Regionen`{.action}.
+
+![Seite "Quota und Regionen" mit aktuellen Projektkontingenten nach Region](images/raisepciquota1.png){.thumbnail}
+
+Diese Seite zeigt eine Zusammenfassung der aktuellen Quoten Ihres Projekts nach Region. Ein Hinweis wird angezeigt, sobald eine Ressource 80 % ihrer Quote erreicht.
 
 ### Erhöhung der Ressourcenquote
 
 Gemäß interner Kriterien (Dienstalter, bezahlte Rechnungen usw.) können Sie direkt vom OVHcloud Kundencenter aus Quotenerhöhungen für Ihre Public Cloud Projekte beantragen.
 
+> [!primary]
+>
+> Erstmalige Public Cloud Nutzer erhalten bei der Projekterstellung automatisch ein [Gratis-Guthaben von 200 €](/links/public-cloud/free-trial), das einen Monat lang gültig ist. Da die Berechtigung für eine Quotenerhöhung von Kriterien wie der Account-Dauer und bezahlten Rechnungen abhängt, stehen Nutzern des Gratis-Testguthabens möglicherweise nur eingeschränkte Optionen zur Quotenerhöhung zur Verfügung, bis ihre erste Rechnung beglichen wurde.
+>
+
 Sie können Ihre Ressourcenquote manuell oder automatisch erhöhen.
 
-#### Automatische Erhöhung Ihrer Ressourcenquoten mit der Funktion „Quota autoscaling“
+#### Automatische Erhöhung Ihrer Ressourcenquoten mit der Funktion "Quota Autoscaling"
 
 Diese Option ermöglicht Ihnen, eine automatische und schrittweise Erhöhung Ihrer Ressourcenquote zu beantragen. Die Quote wird basierend auf Ihrer realen Nutzung angepasst, **wenn Sie 60 % Ihrer aktuellen Quote 30 aufeinanderfolgende Tage überschreiten**, sowie anhand einer Reihe interner und finanzieller Kriterien.
 
 > [!primary]
 >
-> **Hinweis**: Dieser Prozess eignet sich nicht für schnelle Anpassungen der Quote.
+> Dieser Prozess eignet sich nicht für schnelle Anpassungen der Quote.
 >
 
-Melden Sie sich im [OVHcloud Kundencenter](/links/manager) an, wechseln Sie in den Bereich `Public Cloud`{.action} und wählen Sie Ihr Public Cloud Projekt aus.
-
-Klicken Sie im linken Menü auf `Quota und Regionen`{.action} unter **Einstellungen**.
-
-Im oberen rechten Bereich der angezeigten Seite finden Sie die Option **Quota autoscaling**:
+Im oberen rechten Bereich der Seite ist die Option **Quota Autoscaling** verfügbar:
 
 - Um weitere Informationen zu dieser Funktion zu erhalten, klicken Sie auf das Symbol `?`{.action} neben dieser Option.
 - Aktivieren Sie die Option, indem Sie auf die Schaltfläche rechts neben dieser Option klicken. Der Status ändert sich von *Deaktiviert* zu *Aktiviert*.
 
-![auto scaling](images/autoscaling.png){.thumbnail}
+![Schaltfläche zum Aktivieren/Deaktivieren des Quota Autoscalings im Status "Aktiviert"](images/autoscaling.png){.thumbnail}
 
 Sobald aktiviert, erhöht sich die Quote Ihres Projekts automatisch und schrittweise basierend auf Ihren tatsächlichen Anforderungen.
 
@@ -54,31 +71,23 @@ Sobald aktiviert, erhöht sich die Quote Ihres Projekts automatisch und schrittw
 > Wenn Sie Ihre Quota erhöhen möchten und die Schaltfläche `Quota erhöhen`{.action} in Ihrem Kundencenter nicht verfügbar ist, klicken Sie auf die Schaltfläche `Kundendienst kontaktieren`{.action}.
 >
 
-![Contact Support](images/contact_support_quota.png){.thumbnail}
+![Schaltfläche "Kundendienst kontaktieren" auf der Quota-Seite im Kundencenter](images/contact_support_quota.png){.thumbnail}
 
 Dieser Vorgang ermöglicht eine schnelle und erhebliche Erhöhung Ihrer Quoten (z. B. schnelles Skalieren, GPU-Instanzen usw.). Dieses Verfahren basiert auf dem sofortigen Kauf von Cloud-Guthaben, aus denen alle relevanten Kosten automatisch abgebucht werden.
 
-Es ist möglich, unterschiedliche Gutschriftsbeträge zu erwerben.
+Sie können verschiedene Gutschriftsbeträge erwerben.
 
-Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein, gehen Sie in den Bereich `Public Cloud`{.action} und wählen Sie das betreffende Public Cloud Projekt aus.
+Klicken Sie auf die Schaltfläche `Quota erhöhen`{.action}.
 
-Klicken Sie im linken Menü auf `Quota und Regionen`{.action} unter **Einstellungen**.
+![Schaltfläche "Quota erhöhen" im Bereich Public Cloud Quota](images/raisepciquota2.png){.thumbnail}
 
-![access quota](images/raisepciquota1.png){.thumbnail}
+Klicken Sie dann auf den Dropdown-Pfeil neben `Wählen Sie die Menge aus`{.action}, um die Liste der derzeit verfügbaren Kontingente anzuzeigen, auf die Sie Ihre Ressourcen aktualisieren können. In diesem Abschnitt wird auch der fällige Betrag angezeigt, um diese Ressourcen nutzen zu können.
 
-Diese Seite zeigt eine Zusammenfassung der aktuellen Quoten Ihres Projekts nach Region. Ein Hinweis wird angezeigt, sobald eine Ressource 80 % ihrer Quote erreicht.
-
-Um eine Quota-Erhöhung zu beantragen, klicken Sie auf `Quota erhöhen`{.action}.
-
-![raise-pci-quota](images/raisepciquota2.png){.thumbnail}
-
-Klicken Sie dann auf den Dropdown-Pfeil neben „Wählen Sie die Menge aus“, um die Liste der derzeit verfügbaren Kontingente anzuzeigen, auf die Sie Ihre Ressourcen aktualisieren können. In diesem Abschnitt wird auch der fällige Betrag angezeigt, um diese Ressourcen nutzen zu können.
-
-![select quota](images/selectquotas.png){.thumbnail}
+![Dropdown-Liste mit verfügbaren Quota-Stufen und zugehörigen Kosten](images/selectquotas.png){.thumbnail}
 
 Die nachstehende Tabelle zeigt die Ressourcen, die Sie für jedes Kontingent erhalten:
 
-|Quota|Instanzen|CPU/Cores|RAM (GB)|Größe Disk (TB)|Anzahl Disk|Backups|Größe Backup (TB)|Floating IPs|Octavia Load Balancer|Gateway (Routers)|
+|Quota|Instanzen|CPU/Cores|RAM (GB)|Größe des Volumes (TB)|Volumes (Maximale Anzahl)|Backups|Größe Backup (TB)|Floating IPs|Octavia Load Balancer|Gateway (Routers)|
 |---|---|---|---|---|---|---|---|---|---|---|
 |20 VMs|20|40|430|20|200|1200|120|30|10|4|
 |50 VMs|50|64|507|20|500|3000|300|75|25|10|
@@ -94,6 +103,8 @@ Klicken Sie nach Auswahl der gewünschten Kapazität auf `Bestätigen`{.action}.
 > Nachdem Sie auf die Schaltfläche `Bestätigen`{.action} geklickt haben, wird die Bestellung automatisch erstellt und der Betrag wird von Ihrer Standardzahlungsmethode abgebucht.
 >
 
+Für eine detailliertere Ansicht Ihrer Ressourcen besuchen Sie die [Horizon-Oberfläche](https://horizon.cloud.ovh.net/auth/login/). Klicken Sie nach der Anmeldung auf `Project`{.action} und dann auf `Overview`{.action}.
+
 ### Erhöhung der Quoten Ihres Public Cloud Projekts
 
 Es gibt zwei Hauptfälle, in denen Sie möglicherweise eine Anpassung der Quote benötigen:
@@ -104,24 +115,24 @@ Es gibt zwei Hauptfälle, in denen Sie möglicherweise eine Anpassung der Quote 
 
 > [!primary]
 >
-> **Hinweis**: Quotenanfragen werden manuell von unserem Team bearbeitet. Die Bearbeitungsdauer kann je nach Komplexität der Anfrage variieren. Wir empfehlen Ihnen, Ihre Anfrage so früh wie möglich einzureichen, um Verzögerungen bei Ihren Projekten zu vermeiden.
+> Quotenanfragen werden manuell von unserem Team bearbeitet. Die Bearbeitungsdauer kann je nach Komplexität der Anfrage variieren. Wir empfehlen Ihnen, Ihre Anfrage so früh wie möglich einzureichen, um Verzögerungen bei Ihren Projekten zu vermeiden.
 
 Um die Bearbeitung zu beschleunigen, geben Sie bitte Folgendes in Ihrer Anfrage an:
 
-- Den Typ der zu erhöhenden Quote (Anzahl der Projekte, Ressourcen usw.)
-- Die beabsichtigte Verwendung und Begründung der Erhöhung
-- Den gewünschten Zeitraum oder die Dauer der Erhöhung
+- Den Typ der zu erhöhenden Quote (Anzahl der Projekte, Ressourcen usw.);
+- Die beabsichtigte Verwendung und Begründung der Erhöhung;
+- Den gewünschten Zeitraum oder die Dauer der Erhöhung.
 
 ### Spezifische Quoten und spezielle Ressourcen
 
 Für bestimmte Ressourcen oder Dienste können spezifische Quoten gelten. Weitere Informationen finden Sie hier:
 
-**S3 Quoten**<sup>1</sup>: siehe die offizielle Dokumentation „[Object Storage - Technische Grenzen (EN)](/pages/storage_and_backup/object_storage/s3_limitations)“.
+**S3 Quoten**<sup>1</sup>: siehe die offizielle Dokumentation "[Object Storage - Technische Grenzen (EN)](/pages/storage_and_backup/object_storage/s3_limitations)".
 
-**Quoten für den Managed Kubernetes Service (MKS)**: siehe die offizielle Dokumentation „[ETCD Quotas, usage, troubleshooting and error](/pages/public_cloud/containers_orchestration/managed_kubernetes/etcd-quota-error)“.
+**Quoten für den Managed Kubernetes Service (MKS)**: siehe die offizielle Dokumentation "[ETCD Quotas, usage, troubleshooting and error (EN)](/pages/public_cloud/containers_orchestration/managed_kubernetes/etcd-quota-error)".
 
 ## Weiterführende Informationen
 
 Treten Sie unserer [User Community](/links/community) bei.
 
-<sup>1</sup>: S3 is a trademark of Amazon Technologies, Inc. OVHcloud’s service is not sponsored by, endorsed by, or otherwise affiliated with Amazon Technologies, Inc.
+<sup>1</sup>: S3 is a trademark of Amazon Technologies, Inc. OVHcloud's service is not sponsored by, endorsed by, or otherwise affiliated with Amazon Technologies, Inc.

@@ -1,7 +1,7 @@
 ---
-title: "Sincronizzare un calendario CalDAV Zimbra in un'applicazione"
+title: "Zimbra - Sincronizzare un calendario CalDAV in un'applicazione"
 excerpt: "Questa guida ti mostra come aggiungere un calendario Zimbra a un'applicazione tramite il protocollo CalDAV"
-updated: 2025-02-12
+updated: 2026-01-29
 ---
 
 <style>
@@ -15,25 +15,99 @@ updated: 2025-02-12
 
 ## Obiettivo
 
-Gli account email Zimbra possono essere configurati su client di posta compatibili. per permetterti di utilizzare il tuo indirizzo email dal dispositivo che preferisci. Zimbra include la funzionalità di calendario condiviso, che può quindi essere sincronizzata da un software compatibile con CalDAV.
+I conti email Zimbra possono essere configurati su diversi software di posta elettronica compatibili. Questo ti permette di utilizzare il tuo indirizzo email dal dispositivo che preferisci. Zimbra include la funzionalità di calendario online, sincronizzabile da un software compatibile con il protocollo CalDAV.
 
 **Questa guida ti mostra aggiungere un calendario Zimbra a un'applicazione tramite il protocollo CalDAV.**
 
 ## Prerequisiti
 
 - Disporre di un indirizzo email Zimbra OVHcloud.
-- Aver installato un'applicazione che supporta il protocollo di calendario CalDAV
+- Aver installato un'applicazione che supporta il protocollo di calendario CalDAV.
 - Disporre delle credenziali associate all’indirizzo email associato al calendario da configurare.
 
 ## Procedura
 
 ### Cos'è il protocollo CalDAV?
 
-CalDAV è un protocollo per la condivisione di calendari e attività online. Gli indirizzi email Zimbra dispongono di calendari che utilizzano il protocollo CalDAV.
+CalDAV è un protocollo per la modifica di calendari e attività online. Gli indirizzi email Zimbra dispongono di calendari che utilizzano il protocollo CalDAV.
 
 La configurazione del calendario CalDAV è simile a quella di un indirizzo email e richiede un'applicazione che supporti questo protocollo.
 
-### Configurare il Calendario CalDAV su un software compatibile
+### Condividere un calendario
+
+> [!warning]
+>
+> Questa sezione riguarda esclusivamente le offerte [Zimbra Starter o Pro](/links/web/emails) che dispongono della funzione di condivisione del calendario.
+
+#### Condivisione pubblica in formato ICS
+
+> [!primary]
+>
+> Il formato file ICS utilizzato qui è statico: la versione del file corrisponde al momento in cui l'utente genera il link. Ciò significa che un evento aggiunto dopo la generazione del link verso il file ICS non sarà presente né nel file né nel calendario in cui è importato. Non c'è sincronizzazione.
+
+Per generare un link al file ICS, segui le seguenti fasi:
+
+- Accedi al tuo indirizzo email Zimbra tramite il [webmail](/links/web/email).
+- Vai alla scheda `Calendario`{.action}.
+- Fai clic destro sul calendario interessato e clicca su `Condividi...`{.action}.
+- Clicca sulla scheda `Rendere pubblico`{.action}.
+- Seleziona la casella `Genera un collegamento pubblico`{.action}, copia o apri il link in un nuovo tab e scarica il file ICS.
+
+![zimbra_app](images/zimbra-calendar-webmail-01.png){.thumbnail .w-600 .h-600}
+
+Il file ICS che hai scaricato può essere importato in un calendario esistente o appena creato.
+
+#### Condivisione tramite invito via email
+
+A differenza della condivisione del file ICS, la condivisione tramite invito via email permette di condividere dinamicamente un calendario con altri account email dello stesso nome di dominio. Gli eventi e le azioni sul calendario condiviso saranno sincronizzati.
+
+> [!warning]
+>
+> Solo gli indirizzi email dello stesso nome di dominio possono ricevere questo tipo di condivisione.
+
+Per iniziare una condivisione su un'altro indirizzo email:
+
+- Accedi al tuo indirizzo email Zimbra tramite il [webmail](/links/web/email).
+- Vai alla scheda `Calendario`{.action}.
+- Fai clic destro sul calendario interessato e clicca su `Condividi...`{.action}.
+- Clicca sulla scheda `Invita tramite e-mail`{.action}.
+
+![zimbra_app](images/zimbra-calendar-webmail-02.png){.thumbnail .w-600 .h-600}
+
+Segui le seguenti fasi per condividere un calendario con uno o più account email:
+
+> [!tabs]
+> **Fase 1**
+>>
+>> Inserisci l'indirizzo email con cui desideri condividere il calendario.
+>>
+>> ![zimbra_app](images/zimbra-calendar-webmail-03.png){.thumbnail .w-600 .h-600}
+>>
+> **Fase 2**
+>>
+>> Imposta le autorizzazioni dell'account email sul calendario, quindi clicca su `Aggiungi`{.action}.
+>>
+>> ![zimbra_app](images/zimbra-calendar-webmail-04.png){.thumbnail .w-600 .h-600}
+>>
+> **Fase 3**
+>>
+>> Ripeti le fasi 1 e 2 per condividere lo stesso calendario con altri account email dello stesso nome di dominio, quindi clicca su `Salva`{.action}.
+>>
+>> ![zimbra_app](images/zimbra-calendar-webmail-05.png){.thumbnail .w-600 .h-600}
+>>
+> **Fase 4**
+>>
+>> Un'email viene inviata a ciascun destinatario della condivisione e permette di accettare o rifiutare il calendario condiviso. Indica inoltre i diritti attribuiti su questo calendario.
+>>
+>> ![zimbra_app](images/zimbra-calendar-webmail-06.png){.thumbnail .w-600 .h-600}
+
+> [!primary]
+>
+> Se condividi il tuo calendario con un account email dello stesso nome di dominio che utilizza il webmail Roundcube (offerta MX Plan) o OWA (offerte Email Pro e Exchange), l'indirizzo email destinatario riceve un link per accedere al webmail Zimbra, permettendo di creare un account "ospite" per visualizzare il calendario.
+>
+> ![zimbra_app](images/zimbra-calendar-webmail-07.png){.thumbnail .w-600 .h-600}
+
+### Configurare il calendario CalDAV su un software compatibile
 
 Abbiamo selezionato applicazioni stabili e compatibili con il protocollo CalDAV.
 
@@ -47,7 +121,7 @@ Abbiamo selezionato applicazioni stabili e compatibili con il protocollo CalDAV.
 >
 > I dispositivi Android non offrono attualmente il supporto nativo CalDAV. Inoltre non abbiamo trovato un'applicazione di terze parti stabile in grado di sincronizzare i calendari Zimbra delle nostre offerte.
 >
-> Solo l'app Zimbra, basata sulla sua Webmail, è in grado di visualizzare i calendari condivisi su un dispositivo Android.
+> L'unica applicazione Zimbra, basata sul suo Webmail, è in grado di consultare i calendari online su un dispositivo Android.
 
 #### Impostazioni generali per un calendario CalDAV Zimbra <a name="general-settings"></a>
 

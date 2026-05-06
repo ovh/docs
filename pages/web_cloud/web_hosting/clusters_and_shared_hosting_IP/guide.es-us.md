@@ -1,8 +1,22 @@
 ---
 title: "Web hosting - Lista de direcciones IP por cluster"
 excerpt: "Descubra todas las direcciones IP disponibles con nuestros alojamientos web"
-updated: 2026-01-07
+updated: 2026-02-23
 ---
+
+<style>
+details>summary {
+    color:rgb(33, 153, 232) !important;
+    cursor: pointer;
+}
+details>summary::before {
+    content:'\25B6';
+    padding-right:1ch;
+}
+details[open]>summary::before {
+    content:'\25BC';
+}
+</style>
 
 ## Objetivo
 
@@ -22,33 +36,43 @@ Esta guía recoge todas las direcciones IP de los alojamientos web de OVHcloud. 
 
 ## Requisitos
 
-- Haber iniciado sesión en el [área de cliente de OVHcloud](/links/manager).
 - Tener contratado un [plan de alojamiento web](/links/web/hosting).
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [Hosting plans](/links/control-panel/web-hosting)
+- **Ruta de navegación:** `Web Cloud`{.action} > `Alojamientos`{.action} > Seleccione su alojamiento web
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## Procedimiento
 
-Para conocer el cluster de alojamiento web en el que se encuentra su servicio, haga clic en las fichas siguientes para ver cada uno de los **3** etapas.
+<!-- CP-STEPS-START:instructions-find-cluster -->
+
+Para conocer el cluster de alojamiento web en el que se encuentra su servicio, haga clic en las fichas siguientes para ver cada una de las **2** etapas.
 
 > [!tabs]
 > **Etapa 1**
 >>
->> Conéctese a su [área de cliente de OVHcloud](/links/manager) y acceda a la sección `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Etapa 2**
->>
->> Haga clic en el menú `Alojamientos`{.action} y seleccione el alojamiento web correspondiente.
+>> Acceda a la página [Hosting plans](/links/control-panel/web-hosting) y seleccione el alojamiento web correspondiente.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Etapa 3**
+> **Etapa 2**
 >>
 >> En el recuadro **Información general** de la página que se abre, obtenga el número del cluster bajo la mención **Clúster** (3 cifras comprendidas entre `0` y `9`).
 >>
 >> ![Números de cluster y filer](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-cluster-and-filer.png){.thumbnail}
+<!-- CP-STEPS-END:instructions-find-cluster -->
 
-### Cluster 024
+
+**Haga clic a continuación en el número del clúster donde se encuentra su alojamiento web para mostrar las direcciones IP correspondientes.**
+
+/// details | Cluster 024
 
 A continuación se indican las direcciones IP del **cluster** para cada país (para la geolocalización):
 
@@ -80,27 +104,9 @@ Si necesita la IP de la **puerta de enlace** (gateway) del alojamiento, debe uti
 91.134.248.230
 ```
 
-### Cluster 051
+///
 
-A continuación indicamos las direcciones IP del **cluster** para cada país (para la geolocalización):
-
-|País|Código de país|IPv4|IPv6|
-|---|---|----|---|
-|Canadá|CA|51.161.122.78|2607:5300:202:0:0::51|
-
-Si el servicio **Shared CDN** está activado en su alojamiento, debe utilizar la siguiente dirección IP:
-
-```bash
-46.105.204.51
-```
-
-Si necesita la IP de la **puerta de enlace** (gateway) del alojamiento, debe utilizar la siguiente dirección IP:
-
-```bash
-51.161.94.36
-```
-
-### Cluster 100
+/// details | Cluster 100
 
 A continuación se indican las direcciones IP del **cluster** para cada país (para la geolocalización):
 
@@ -132,7 +138,9 @@ Si necesita la IP de la **puerta de enlace** (gateway) del alojamiento, debe uti
 54.36.142.130
 ```
 
-### Cluster 102
+///
+
+/// details | Cluster 102
 
 A continuación se indican las direcciones IP del **cluster** para cada país (para la geolocalización):
 
@@ -163,7 +171,9 @@ Si necesita la IP de la **puerta de enlace** (gateway) del alojamiento, debe uti
 5.39.29.130
 ```
 
-### Cluster 103
+///
+
+/// details | Cluster 103
 
 A continuación se indican las direcciones IP del **cluster** para cada país (para la geolocalización):
 
@@ -194,7 +204,9 @@ Si necesita la IP de la **puerta de enlace** (gateway) del alojamiento, debe uti
 5.135.52.162
 ```
 
-### Cluster 105
+///
+
+/// details | Cluster 105
 
 A continuación se indican las direcciones IP del **cluster** para cada país (para la geolocalización):
 
@@ -225,7 +237,9 @@ Si necesita la IP de la **puerta de enlace** (gateway) del alojamiento, debe uti
 5.135.37.162
 ```
 
-### Cluster 106
+///
+
+/// details | Cluster 106
 
 A continuación se indican las direcciones IP del **cluster** para cada país (para la geolocalización):
 
@@ -256,7 +270,9 @@ Si necesita la IP de la **puerta de enlace** (gateway) del alojamiento, debe uti
 5.135.47.98
 ```
 
-### Cluster 107
+///
+
+/// details | Cluster 107
 
 A continuación se indican las direcciones IP del **cluster** para cada país (para la geolocalización):
 
@@ -287,7 +303,9 @@ Si necesita la IP de la **puerta de enlace** (gateway) del alojamiento, debe uti
 5.135.52.18
 ```
 
-### Cluster 110
+///
+
+/// details | Cluster 110
 
 A continuación se indican las direcciones IP del **cluster** para cada país (para la geolocalización):
 
@@ -318,7 +336,9 @@ Si necesita la IP de la **puerta de enlace** (gateway) del alojamiento, debe uti
 5.135.39.194
 ```
 
-### Cluster 111
+///
+
+/// details | Cluster 111
 
 A continuación se indican las direcciones IP del **cluster** para cada país (para la geolocalización):
 
@@ -349,7 +369,9 @@ Si necesita la IP de la **puerta de enlace** (gateway) del alojamiento, debe uti
 5.135.38.50
 ```
 
-### Cluster 112
+///
+
+/// details | Cluster 112
 
 A continuación se indican las direcciones IP del **cluster** para cada país (para la geolocalización):
 
@@ -380,7 +402,9 @@ Si necesita la IP de la **puerta de enlace** (gateway) del alojamiento, debe uti
 5.39.53.162
 ```
 
-### Cluster 113
+///
+
+/// details | Cluster 113
 
 A continuación se indican las direcciones IP del **cluster** para cada país (para la geolocalización):
 
@@ -411,7 +435,9 @@ Si necesita la IP de la **puerta de enlace** (gateway) del alojamiento, debe uti
 5.135.39.18
 ```
 
-### Cluster 114
+///
+
+/// details | Cluster 114
 
 A continuación se indican las direcciones IP del **cluster** para cada país (para la geolocalización):
 
@@ -442,7 +468,9 @@ Si necesita la IP de la **puerta de enlace** (gateway) del alojamiento, debe uti
 5.135.42.162
 ```
 
-### Cluster 115
+///
+
+/// details | Cluster 115
 
 A continuación se indican las direcciones IP del **cluster** para cada país (para la geolocalización):
 
@@ -473,7 +501,9 @@ Si necesita la IP de la **puerta de enlace** (gateway) del alojamiento, debe uti
 5.135.41.162
 ```
 
-### Cluster 117
+///
+
+/// details | Cluster 117
 
 A continuación se indican las direcciones IP del **cluster** para cada país (para la geolocalización):
 
@@ -504,7 +534,9 @@ Si necesita la IP de la **puerta de enlace** (gateway) del alojamiento, debe uti
 5.135.50.34
 ```
 
-### Cluster 120
+///
+
+/// details | Cluster 120
 
 A continuación se indican las direcciones IP del **cluster** para cada país (para la geolocalización):
 
@@ -536,7 +568,9 @@ Si necesita la IP de la **puerta de enlace** (gateway) del alojamiento, debe uti
 5.135.48.162
 ```
 
-### Cluster 121
+///
+
+/// details | Cluster 121
 
 A continuación se indican las direcciones IP del **cluster** para cada país (para la geolocalización):
 
@@ -568,7 +602,9 @@ Si necesita la IP de la **puerta de enlace** (gateway) del alojamiento, debe uti
 5.135.48.114
 ```
 
-### Cluster 123
+///
+
+/// details | Cluster 123
 
 A continuación se indican las direcciones IP del **cluster** para cada país (para la geolocalización):
 
@@ -600,7 +636,9 @@ Si necesita la IP de la **puerta de enlace** (gateway) del alojamiento, debe uti
 5.135.41.82
 ```
 
-### Cluster 126
+///
+
+/// details | Cluster 126
 
 A continuación se indican las direcciones IP del **cluster** para cada país (para la geolocalización):
 
@@ -632,7 +670,9 @@ Si necesita la IP de la **puerta de enlace** (gateway) del alojamiento, debe uti
 5.135.42.226
 ```
 
-### Cluster 127
+///
+
+/// details | Cluster 127
 
 A continuación se indican las direcciones IP del **cluster** para cada país (para la geolocalización):
 
@@ -664,7 +704,9 @@ Si necesita la IP de la **puerta de enlace** (gateway) del alojamiento, debe uti
 5.135.54.114
 ```
 
-### Cluster 128
+///
+
+/// details | Cluster 128
 
 A continuación se indican las direcciones IP del **cluster** para cada país (para la geolocalización):
 
@@ -696,7 +738,9 @@ Si necesita la IP de la **puerta de enlace** (gateway) del alojamiento, debe uti
 5.135.37.210
 ```
 
-### Cluster 129
+///
+
+/// details | Cluster 129
 
 A continuación se indican las direcciones IP del **cluster** para cada país (para la geolocalización):
 
@@ -728,7 +772,9 @@ Si necesita la IP de la **puerta de enlace** (gateway) del alojamiento, debe uti
 5.135.48.82
 ```
 
-### Cluster 130
+///
+
+/// details | Cluster 130
 
 A continuación se indican las direcciones IP del **cluster** para cada país (para la geolocalización):
 
@@ -760,7 +806,9 @@ Si necesita la IP de la **puerta de enlace** (gateway) del alojamiento, debe uti
 5.135.43.82
 ```
 
-### Cluster 131
+///
+
+/// details | Cluster 131
 
 A continuación se indican las direcciones IP del **cluster** para cada país (para la geolocalización):
 
@@ -792,7 +840,9 @@ Si necesita la IP de la **puerta de enlace** (gateway) del alojamiento, debe uti
 5.135.42.194
 ```
 
-### Cluster 151
+///
+
+/// details | Cluster 151
 
 A continuación indicamos las direcciones IP del **cluster** para cada país (para la geolocalización):
 
@@ -811,6 +861,8 @@ Si necesita la IP de la **puerta de enlace** (gateway) del alojamiento, debe uti
 ```bash
 15.235.26.178
 ```
+
+///
 
 ## Más información
 

@@ -1,6 +1,6 @@
 ---
 title: "Cómo gestionar Intel SGX en un servidor dedicado"
-excerpt: "Descubra cómo activar la opción SGX en su servidor dedicado e instalar la pila de software SGX para Linux"
+excerpt: "Active Intel SGX en su servidor dedicado OVHcloud e instale la pila de software Linux para las aplicaciones con enclaves seguros"
 updated: 2025-11-20
 ---
 
@@ -12,10 +12,21 @@ La activación de las Intel Software Guard Extensions (SGX) en su servidor le pe
 
 ## Requisitos
 
-- Tener acceso al [área de cliente de OVHcloud](/links/manager) o a la [API de OVHcloud](/links/api)
+- Acceso a la [API de OVHcloud](/links/api) (opcional)
 - Tener un servidor dedicado compatible con la [opción SGX](/links/bare-metal/sgx) en su cuenta de OVHcloud
 - Disponer de las credenciales recibidas por correo electrónico tras la instalación
 - Tener instalado Ubuntu 24.04 o equivalente en el servidor
+
+<!-- CP-NAV-START:baremetal-dedicated-servers -->
+---
+
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [Servidores dedicados](/links/control-panel/baremetal-dedicated-servers)
+- **Ruta de navegación:** `Bare Metal Cloud`{.action} > `Servidores dedicados`{.action} > Seleccione su servidor
+
+---
+<!-- CP-NAV-END:baremetal-dedicated-servers -->
 
 ## Procedimiento
 
@@ -28,7 +39,7 @@ La activación de SGX es posible desde el área de cliente de OVHcloud, la API d
 >>
 >> **1 - Conexión al área de cliente de OVHcloud**
 >>
->> Inicie sesión en el [área de cliente de OVHcloud](/links/manager), vaya a la sección `Bare Metal Cloud`{.action} y haga clic en `Servidores dedicados`{.action}. Seleccione a continuación el servidor en el que desea activar SGX.
+>> Seleccione el servidor en el que desea activar SGX.
 >>
 >> **2 - Activar SGX**
 >>
@@ -111,7 +122,7 @@ La activación de SGX es posible desde el área de cliente de OVHcloud, la API d
 >>
 >> **1 - Iniciar una sesión Remote KVM**
 >>
->> Inicie sesión en el [área de cliente de OVHcloud](/links/manager), vaya a la sección `Bare Metal Cloud`{.action} y haga clic en `Servidores dedicados`{.action}. Seleccione a continuación el servidor en el que desea activar SGX.
+>> Seleccione el servidor en el que desea activar SGX.
 >>
 >> Desde la pestaña `IPMI / KMV`{.action}, inicie una sesión Remote KVM:
 >>

@@ -148,7 +148,7 @@ For more information about AI Training billing and pricing examples, please chec
 
 ### How long can I use my AI Training job?
 
-An AI Training job runs continuously until manually interrupted by the user or until it is done, unless it exceeds **7 days of running**. It will then be automatically stopped. You can choose to automatically restart it using the `auto-restart` option (set this parameter to `True`). The job will then restart as is. To increase this 7-day limit, you will have to contact the support to ask for an upgrade of this quota for your Public Cloud project.
+An AI Training job runs continuously until manually interrupted by the user or until it is done, unless it exceeds **7 consecutive days of being in a RUNNING state**. It will then be automatically stopped. You can choose to automatically restart it using the `auto-restart` option (set this parameter to `True`). The job will then restart as is. To increase this 7-day limit, you will have to contact the support to ask for an upgrade of this quota for your Public Cloud project.
 
 ## Feedback
 

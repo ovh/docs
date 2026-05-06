@@ -1,7 +1,7 @@
 ---
 title: "Hébergement web - Activer les adresses e-mails incluses"
 excerpt: "Découvrez comment activer les adresses e-mails incluses avec votre offre d'hébergement web"
-updated: 2025-08-11
+updated: 2026-01-19
 ---
 
 ## Objectif
@@ -16,44 +16,49 @@ Si vous avez commandé un hébergement web sans l'attacher directement à un nom
 
 - Disposer d'un [nom de domaine](/links/web/domains) dans votre espace client OVHcloud.
 - Posséder une [offre d'hébergement web](/links/web/hosting).
-- Être connecté à votre [espace client OVHcloud](/links/manager).
-
 > [!warning]
 >
-> Si vous souhaitez activer l'option « adresse(s) e-mail incluse(s) avec votre hébergement web » pour un nom de domaine externe (non enregistré chez OVHcloud) **dont vous devez être obligatoirement l'administrateur**, vous devez créer (a minima) une zone DNS chez OVHcloud pour votre nom de domaine externe. Consultez notre guide « [Créer une zone DNS chez OVHcloud](/pages/web_cloud/domains/dns_zone_create) » si nécessaire. Cela permettra à votre nom de domaine d'apparaître dans la liste des noms de domaine disponibles lors de l'activation de l'option.
+> L'option « adresse(s) e-mail incluse(s) avec votre hébergement web » est indisponible pour un nom de domaine externe (non enregistré chez OVHcloud ou enregistré sur un compte OVHcloud différent du vôtre).
 >
-> Par ailleurs, si votre nom de domaine est déjà enregistré chez OVHcloud ou si une zone DNS existe déjà pour ce dernier dans un autre [compte OVHcloud](/links/manager) que le vôtre, consultez notre documentation « [Gérer les contacts de ses services](/pages/account_and_service_management/account_information/managing_contacts) » pour en récupérer la gestion.
+> Pour migrer un domaine externe chez OVHcloud, suivez [ce guide](/pages/web_cloud/domains/transfer_incoming_generic_domain).
+Si votre nom de domaine est déjà enregistré chez OVHcloud ou si une zone DNS existe déjà pour ce dernier dans un autre compte OVHcloud que le vôtre, consultez notre documentation « [Gérer les contacts de ses services](/pages/account_and_service_management/account_information/managing_contacts) » pour en récupérer la gestion.
 >
-> Enfin, si votre nom de domaine est déjà lié à l'option « adresse(s) e-mail incluse(s) avec votre hébergement web » d'un autre hébergement web, vous ne pourrez pas l'associer à votre propre hébergement web directement. Faites le point avec l'actuel gestionnaire de l'hébergement web en vous aidant de ce guide.
->
+> Enfin, si votre nom de domaine est déjà lié à l'option « adresse(s) e-mail incluse(s) » d'un autre hébergement web, vous ne pourrez pas l'associer à votre propre hébergement web directement. Faites le point avec l'actuel gestionnaire de l'hébergement web en vous aidant de ce guide.
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Hébergements](/links/control-panel/web-hosting)
+- **Pour accéder à vos services :** `Web Cloud`{.action} > `Hébergements`{.action} > Sélectionnez votre hébergement web
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## En pratique
 
 ### Activation de vos adresses e-mail incluses avec votre offre d'hébergement web
 
-Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4** étapes.
+<!-- CP-STEPS-START:activation-email -->
+
+Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3** étapes.
 
 > [!tabs]
 > **Étape 1**
 >>
->> Connectez-vous à votre [espace client OVHcloud](/links/manager), puis rendez-vous dans la partie `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Étape 2**
->>
->> Cliquez sur le menu `Hébergements`{.action}, puis choisissez l'hébergement web concerné.
+>> Accédez à la page [Hébergements](/links/control-panel/web-hosting), puis choisissez l'hébergement web concerné.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Étape 3**
+> **Étape 2**
 >>
 >> Dans le cadre **Configuration**, vous trouverez la mention **Adresses e-mails**.
 >> Cliquez sur le bouton `...`{.action} à droite puis sur `Activer mon offre e-mail`{.action}.
 >>
 >> ![email-activation](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/enable-email-included-webhosting.png){.thumbnail}
 >>
-> **Étape 4**
+> **Étape 3**
 >>
 >> La fenêtre d'activation s'affiche. Choisissez le nom de domaine auquel vous souhaitez attacher vos adresses e-mail puis validez votre choix.
 >>
@@ -65,8 +70,12 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4*
 >
 > Attention : l'activation de l'option e-mail peut prendre quelques minutes. Vous recevrez un e-mail pour vous confirmer l'installation et l'activation de l'offre MXPLAN. Elle inclut notamment la gestion et la configuration de vos adresses e-mail.
 >
+<!-- CP-STEPS-END:activation-email -->
+
 
 ### Suppression de l'offre e-mail liée à votre hébergement web
+
+<!-- CP-STEPS-START:suppression-email -->
 
 Il est possible de supprimer définitivement l'offre e-mail associée à votre hébergement web.
 
@@ -74,22 +83,16 @@ Il est possible de supprimer définitivement l'offre e-mail associée à votre h
 >
 > Attention, cette action est irréversible. Les comptes e-mail et leur contenu seront supprimés.
 
-Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3** étapes.
+Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **2** étapes.
 
 > [!tabs]
 > **Étape 1**
 >>
->> Connectez-vous à votre [espace client OVHcloud](/links/manager), puis rendez-vous dans la partie `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Étape 2**
->>
->> Cliquez sur le menu `Hébergements`{.action}, puis choisissez l'hébergement web concerné.
+>> Accédez à la page [Hébergements](/links/control-panel/web-hosting), puis choisissez l'hébergement web concerné.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Étape 3**
+> **Étape 2**
 >>
 >> Dans le cadre **Configuration**, vous trouverez la mention **Adresses e-mails**.
 >> Cliquez sur le bouton `...`{.action} à droite puis sur `Résilier l'option e-mail`{.action}.
@@ -99,6 +102,8 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3*
 >> > [!warning]
 >> >
 >> > Pour confirmer la suppression de l'offre e-mail associée à votre hébergement web, un lien de validation vous est envoyé par e-mail. Vous devez obligatoirement cliquer sur ce lien pour que l'opération de suppression soit lancée.
+<!-- CP-STEPS-END:suppression-email -->
+
 
 #### Cas particulier - Suppression de l'offre e-mail liée à votre hébergement web (afin de l'associer à un autre nom de domaine)
 

@@ -1,6 +1,6 @@
 ---
-title: 'Configurare Additional IP in modalità bridge sulle proprie macchine virtuali'
-excerpt: Come configurare l'accesso a Internet delle macchine virtuali utilizzando la modalità bridge
+title: "Configurare Additional IP in modalità bridge su un server dedicato"
+excerpt: "Configura le tue macchine virtuali su un server dedicato per l'accesso pubblico a Internet tramite la modalità bridge di rete."
 updated: 2026-01-06
 ---
 
@@ -36,7 +36,17 @@ La connessione di rete in modalità bridge può essere utilizzata per configurar
 
 - Disporre di un server dedicato con un hypervisor installato (ad esempio Citrix Xen Server, Proxmox)
 - Disporre di almeno un indirizzo [Additional IP](/links/network/additional-ip) connesso al server
-- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager) o all ['API OVHcloud](/pages/manage_and_operate/api/first-steps)
+
+<!-- CP-NAV-START:network-public-ip -->
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [Public IP](/links/control-panel/network-public-ip)
+- **Percorso di navigazione:** `Network`{.action} > `Indirizzi IP pubblici`{.action}
+
+---
+<!-- CP-NAV-END:network-public-ip -->
 
 > [!warning]
 > Questa funzionalità può non essere disponibile o limitata sui [server dedicati **Eco**](/links/bare-metal/eco-about).
@@ -65,8 +75,6 @@ Per questo esempio, nei nostri esempi di codice utilizzeremo i seguenti valori: 
 
 > [!warning]
 > Nel caso di un blocco di IP, gli indirizzi MAC virtuali vengono creati su ogni IP individuale all'interno del blocco.
-
-Accedi allo [Spazio Cliente OVHcloud](/links/manager), clicca su `Network`{.action} nel menu a sinistra dello schermo e poi su `Indirizzi IP Pubblici`{.action}.
 
 È possibile utilizzare il menu a tendina sotto **I tuoi indirizzi IP pubblici e servizi associati** e selezionare **Tutti gli Additional IP** per filtrare i servizi, oppure digitare direttamente l'indirizzo IP desiderato nella barra di ricerca.
 

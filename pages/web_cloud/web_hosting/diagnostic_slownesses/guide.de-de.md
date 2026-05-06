@@ -36,7 +36,7 @@ In seltenen Fällen können die Verzögerungen bei der Anzeige auch mit Ihrem In
 ## Voraussetzungen
 
 - Sie hosten eine Website auf einem [OVHcloud Webhosting](/links/web/hosting).
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
+
 
 ## In der praktischen Anwendung
 
@@ -89,7 +89,7 @@ Alle Diagnosen in Schritt 1 sind **ausnahmslos** durchzuführen, um festzustelle
 
 Um sicherzustellen, dass Ihre Dienste (Webhosting **und** Datenbank) derzeit von keiner Störung oder Wartung beeinträchtigt werden, benötigen Sie die Cluster- und Filer-Nummer des Hostings sowie die allgemeinen Daten zur entsprechenden Datenbank. Damit können Sie den Status auf [status.ovhcloud.com](https://web-cloud.status-ovhcloud.com/) überprüfen.
 
-Um den Cluster und den Filer zu ermitteln, auf dem sich Ihr Webhosting befindet, konsultieren Sie: „[Webhosting - Cluster und Filer eines Webhostings finden](/pages/web_cloud/web_hosting/how_to_know_cluster_and_filer)“.
+Um den Cluster und den Filer zu ermitteln, auf dem sich Ihr Webhosting befindet, konsultieren Sie: "[Webhosting - Cluster und Filer eines Webhostings finden](/pages/web_cloud/web_hosting/how_to_know_cluster_and_filer)“.
 
 > [!success]
 >
@@ -141,7 +141,7 @@ Wenn Sie eine Datenbank mit **Web Cloud Databases** nutzen, lesen Sie unsere Anl
 
 Wenn die Verbindung erfolgreich war, gelangen Sie auf folgendes Interface:
 
-![PHPMyAdmin](/pages/assets/screens/other/web-tools/phpmyadmin/pma-main-page.png){.thumbnail}
+![phpMyAdmin](/pages/assets/screens/other/web-tools/phpmyadmin/pma-main-page.png){.thumbnail}
 
 > [!warning]
 >
@@ -185,7 +185,7 @@ Wenn Sie auf Ihrem Webhosting eine überholte PHP-Version einsetzen, sowie die E
 
 Um die verfügbaren PHP-Versionen je nach Ausführungsumgebung zu vergleichen, lesen Sie **Schritt 2** der Anleitung zur [Konfiguration der PHP-Version auf Ihrem Hosting](/pages/web_cloud/web_hosting/configure_your_web_hosting).
 
-Die Verwendung einer aktuellen PHP-Version, die Ausführungsumgebung **stable** oder **stable64** mit der Engine **PHP** (PHP FPM) macht Ihre Website deutlich flüssiger und schneller. Zur Information: Die Engine **PHP** (PHP FPM) kann bis zu 50 Mal leistungsfähiger bei Auführungen sein als die Engine **PHP CGI**.
+Die Verwendung einer aktuellen PHP-Version, die Ausführungsumgebung **stable** oder **stable64** mit der Engine **PHP** (PHP FPM) macht Ihre Website deutlich flüssiger und schneller. Zur Information: Die Engine **PHP** (PHP FPM) kann bis zu 50 Mal leistungsfähiger bei Ausführungen sein als die Engine **PHP CGI**.
 
 #### 2.2 - Analysieren Sie ausgehende Verbindungen / TCP Verbindungen von Ihrem Webhosting
 

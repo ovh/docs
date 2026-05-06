@@ -1,6 +1,6 @@
 ---
 title: Crear una campaña de SMS
-excerpt: Cómo crear una campaña de envío de SMS
+excerpt: Descubra cómo crear y lanzar su primera campaña de envío de SMS utilizando las herramientas integradas en el área de cliente de OVHcloud
 updated: 2022-08-05
 ---
 
@@ -15,13 +15,21 @@ OVHcloud ofrece una serie de herramientas, disponibles en el área de cliente, q
 ## Requisitos
 
 - Disponer de una cuenta de SMS en OVHcloud con saldo de SMS.
-- Haber iniciado sesión en el [área de cliente de OVHcloud](/links/manager), en la sección `Telecom`{.action} > `SMS`{.action}.
+
+<!-- CP-NAV-START:telecom-sms -->
+---
+
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [SMS](/links/control-panel/telecom-sms)
+- **Ruta de navegación:** `Telecom`{.action} > `SMS`{.action} > Seleccione su cuenta SMS
+
+---
+<!-- CP-NAV-END:telecom-sms -->
 
 ![área de cliente Telecom SMS](/pages/assets/screens/control_panel/product-selection/telecom/tpl-telecom-03-en-sms.png){.thumbnail}
 
 ## Procedimiento
-
-Conéctese al [área de cliente de OVHcloud](/links/manager) y seleccione `Telecom`{.action}. Haga clic en `SMS`{.action} y seleccione su cuenta de SMS.
 
 La barra de herramientas y los accesos rápidos le permitirán acceder a las principales funcionalidades para enviar su campaña de SMS.
 

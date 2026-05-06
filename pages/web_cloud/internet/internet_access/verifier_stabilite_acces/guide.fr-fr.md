@@ -8,12 +8,22 @@ updated: 2025-04-28
 
 Les *logs radius* disponibles via les API OVHcloud permettent de vérifier la stabilité d'un accès à Internet.
 
-**Découvrez comment vérifier la stabilité d'un lien xDSL ou FTTH en utilisant les logs fournis par les API OVHcloud**
+**Découvrez comment vérifier la stabilité d'un lien xDSL ou FTTH en utilisant les logs fournis par les API OVHcloud.**
 
 ## Prérequis
 
 - Disposer d'un [accès Internet xDSL ou FTTH OVHcloud](/links/telecom/offre-internet) actif.
-- Être connecté à l'[espace client OVHcloud](/links/manager).
+<!-- CP-NAV-START:telecom-xdsl-fttx -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Accès Internet](/links/control-panel/telecom-xdsl-fttx)
+- **Pour accéder à vos services :** `Télécom`{.action} > `Offres Internet`{.action} > Sélectionnez votre accès
+
+---
+<!-- CP-NAV-END:telecom-xdsl-fttx -->
+
 - Être connecté aux [API OVHcloud](/links/api).
 - Consulter le guide [Premiers pas avec les API OVHcloud](/pages/manage_and_operate/api/first-steps) pour vous familiariser avec l'utilisation des APIv6 OVHcloud.
 
@@ -26,10 +36,10 @@ Lors de chaque connexion de votre routeur sur les équipements OVHcloud, une tra
 Lors de chaque reconnexion du lien, une nouvelle trace horodatée de la connexion est créée.<br>
 Une reconnexion peut avoir l'une des causes suivantes :
 
-* Un redémarrage de votre modem;
-* Une perte de synchronisation;
-* Un incident générique;
-* L'envoi manuel de [nouveaux identifiants de connexion](/pages/web_cloud/internet/internet_access/obtenir_id_ppp).
+- Un redémarrage de votre modem ;
+- Une perte de synchronisation ;
+- Un incident générique ;
+- L'envoi manuel de [nouveaux identifiants de connexion](/pages/web_cloud/internet/internet_access/obtenir_id_ppp).
 
 > [!primary]
 >
@@ -41,14 +51,13 @@ La période de récupération des logs radius est de trois mois maximum.
 
 ### Récupérer le serviceName de votre accès xDSL ou FTTH
 
+<!-- CP-STEPS-START:recup-servicename-espace-client -->
 Le *serviceName* correspond à la référence interne de votre accès. Pour la retrouver, suivez ces étapes :
 
-1. Connectez-vous à votre [espace client OVHcloud](/links/manager) et cliquez sur `Télécom`{.action}.
-1. Cliquez sur `Offres Internet`{.action} puis sur le *Pack* contenant l'accès à Internet concerné.
-
-La référence interne est affichée dans le cadre `Accès Internet` à droite.
+Depuis votre [espace client OVHcloud](/links/control-panel/telecom-xdsl-fttx), sélectionnez le *Pack* contenant l'accès à Internet concerné. La référence interne est affichée dans le cadre `Accès Internet` à droite.
 
 ![serviceName dans espace client](images/servicename-2022.png){.thumbnail}
+<!-- CP-STEPS-END:recup-servicename-espace-client -->
 
 ### Utiliser les API OVHcloud
 
@@ -67,9 +76,9 @@ Voici un exemple de retour :
 
 Vous retrouvez, dans l'encadré orange ci-dessus, les informations d'un log de reconnexion. La première partie détaille les informations suivantes :
 
-- Date: La date au format AAAA-MM-JJTHH:mm:ss+GMT;
-- Message : Lié à l'opérateur de collecte;
-- State : L'état de connexion, ici fonctionnel car `OK`. À noter qu'un refus d'authentification donnera `KO` ainsi que, le plus souvent, un message `wrong login or password`;
+- Date : La date au format AAAA-MM-JJTHH:mm:ss+GMT ;
+- Message : Lié à l'opérateur de collecte ;
+- State : L'état de connexion, ici fonctionnel car `OK`. À noter qu'un refus d'authentification donnera `KO` ainsi que, le plus souvent, un message `wrong login or password` ;
 - Login : L'identifiant PPPoE de votre accès.
 
 La seconde partie, telle qu'affichée dans l'encadré orange, est l'effet miroir sur les équipements OVHcloud qui finalisent l'authentification.

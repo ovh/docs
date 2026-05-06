@@ -1,7 +1,7 @@
 ---
 title: "OPCP - How to setup LACP on a Node"
 excerpt: Learn how to setup a node in OpenStack to use LACP (Link Aggregation Control Protocol)
-updated: 2025-11-10
+updated: 2026-02-25
 ---
 
 ## Objective
@@ -133,19 +133,26 @@ openstack baremetal node maintenance set <node-id>
 
 A **port group** allows enabling LACP aggregation between multiple network interfaces.
 
-Use the `--mode 802.3ad` parameter to enable LACP. If you don’t specify a MAC address with `--address`, one of the ports’ addresses will be used automatically.
-
 > [!success]
-> You can create:<br>
+> You can create:
+>
 > - a **single port group** for a 1×4 bond, or<br>
 > - two **port groups** for 2×2 bonds.
+
+Use the `--mode 802.3ad` parameter to enable LACP.
+
+The `--address <MAC>` parameter must be equal to the MAC address of the PXE port only if it's being used. Otherwise, you can omit the parameter or set the MAC value from one of the physical interfaces you will use.
+
+You can list all ports with `openstack baremetal port list --node <node> --long` and verify if PXE is used or not.
+
+Note: We recommend prefixing the portgroup name with the node name for clearer identification when listing portgroups (e.g. `<node-name>-<name>`).
 
 **Example:**
 
 ```bash
 openstack baremetal port group create \
   --node 88830859-5b16-4935-8f41-d381b754cbe5 \
-  --name portgroup-lacp \
+  --name node_name-pg-lacp \
   --mode 802.3ad \
   --address 00:00:00:20:00:01
 ```
@@ -159,7 +166,7 @@ openstack baremetal port group create \
 | uuid                       | d082c2ab-5960-44e3-920d-3d6dfb6811e9      |
 | address                    | 00:00:00:20:00:01                         |
 | node_uuid                  | 88830859-5b16-4935-8f41-d381b754cbe5      |
-| name                       | portgroup-lacp                            |
+| name                       | node_name-pg-lacp                         |
 | mode                       | 802.3ad                                   |
 | standalone_ports_supported | True                                      |
 +----------------------------+-------------------------------------------+

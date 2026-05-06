@@ -1,0 +1,114 @@
+name: Screenshot change tracker
+
+on:
+  pull_request:
+    types: [opened, synchronize]
+    paths:
+      - '**/images/**'
+      - 'pages/assets/**'
+      - '**/guide.en-gb.md'
+
+permissions:
+  pull-requests: write
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Detect screenshot changes
+        uses: actions/github-script@v9
+        with:
+          script: |
+            const MARKER = '<!-- screenshot-change-tracker -->';
+            const IMAGE_EXT = /\.(png|jpe?g|gif|svg|webp)$/i;
+            const IMG_LINK = /!\[.*?\]\(|<img\s/;
+
+            // Get all changed files in the PR
+            const files = [];
+            for (let page = 1; ; page++) {
+              const { data } = await github.rest.pulls.listFiles({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                pull_number: context.issue.number,
+                per_page: 100,
+                page
+              });
+              files.push(...data);
+              if (data.length < 100) break;
+            }
+
+            // 1. Image files changed (in images/ dirs or pages/assets/)
+            const imageFiles = files
+              .filter(f => IMAGE_EXT.test(f.filename) &&
+                (f.filename.includes('/images/') || f.filename.startsWith('pages/assets/')))
+              .map(f => `| \`${f.filename}\` | ${f.status} |`);
+
+            // 2. Image link changes in guide.en-gb.md files
+            const guidesWithImgChanges = [];
+            for (const f of files) {
+              if (!f.filename.endsWith('/guide.en-gb.md') || !f.patch) continue;
+              const changedImgLines = f.patch
+                .split('\n')
+                .filter(line => /^[+-]/.test(line) && !/^[+-]{3}/.test(line))
+                .filter(line => IMG_LINK.test(line));
+              if (changedImgLines.length > 0) {
+                guidesWithImgChanges.push({
+                  file: f.filename,
+                  lines: changedImgLines.map(l => `\`${l.substring(0, 120)}\``)
+                });
+              }
+            }
+
+            // Nothing to report
+            if (imageFiles.length === 0 && guidesWithImgChanges.length === 0) return;
+
+            // Build comment body
+            const sections = [MARKER, '## Screenshot Changes Detected\n'];
+
+            if (imageFiles.length > 0) {
+              sections.push(
+                `### Image files (${imageFiles.length})\n`,
+                '| File | Status |',
+                '|------|--------|',
+                ...imageFiles,
+                ''
+              );
+            }
+
+            if (guidesWithImgChanges.length > 0) {
+              sections.push(
+                `### Image link changes in guides (${guidesWithImgChanges.length} file(s))\n`
+              );
+              for (const g of guidesWithImgChanges) {
+                sections.push(`**${g.file}**`);
+                sections.push(...g.lines.map(l => `- ${l}`), '');
+              }
+            }
+
+            const body = sections.join('\n');
+
+            // Find existing comment (create once, update thereafter)
+            const { data: comments } = await github.rest.issues.listComments({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number
+            });
+            const existing = comments.find(c =>
+              c.user.type === 'Bot' && c.body.includes(MARKER)
+            );
+
+            if (existing) {
+              await github.rest.issues.updateComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                comment_id: existing.id,
+                body
+              });
+            } else {
+              await github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: context.issue.number,
+                body
+              });
+            }

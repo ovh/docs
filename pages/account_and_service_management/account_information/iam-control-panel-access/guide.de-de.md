@@ -14,6 +14,17 @@ This guide explains how to provide a user with the minimum rights to allow them 
 - You know [how to manage account users](/pages/account_and_service_management/account_information/ovhcloud-users-management).
 - You know [how to configure policies for IAM](/pages/account_and_service_management/account_information/iam-policy-ui).
 
+<!-- CP-NAV-START:iam-policies -->
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direkter Link:** [IAM Richtlinien](/links/control-panel/iam-policies)
+- **Navigationspfad:** `Identität, Sicherheit und Operationen`{.action} > `Richtlinien`{.action}
+
+---
+<!-- CP-NAV-END:iam-policies -->
+
 ## Instructions
 
 To be able to log in to the OVHcloud Control Panel, a user should have at least this set of rights on the account resource:

@@ -1,7 +1,7 @@
 ---
 title: "Transfer a Domain Name"
 excerpt: "Use the OVHcloud public API to transfer your domain names"
-updated: 2022-07-21
+updated: 2026-02-10
 ---
 
 <!-- Reminder to put at the beginning of each page -->
@@ -32,9 +32,9 @@ Do not forget to replace [https://eu.api.ovh.com](https://eu.api.ovh.com) with [
 ## Incoming transfer
 
 An incoming transfer corresponds to transferring the domain name management from another registrar to OVHcloud.
-This is pretty much the same as a new domain name order, except that the domain is not listed as available since it is already owned.
+This is pretty much the same as a new domain name order, except that the domain name is not listed as available since it is already owned.
 
-If you are the domain owner, you may transfer its management to OVHcloud as follows.
+If you are the domain name holder, you may transfer its management to OVHcloud as follows.
 
 1. **Fetch the confidential authorization code** (sometimes referred to as "auth code" or "auth info") associated to your domain name on your current registrar dashboard.
 
@@ -61,7 +61,7 @@ In this case, please consult registrar documentation.
 
 ### Domain lock
 
-A domain lock is a security that prevents your domain from being the target of attempts to transfer to another regitrar.
+A domain lock is a security that prevents your domain name from being the target of attempts to transfer to another regitrar.
 It means that if this option is activated on your domain name, it cannot be transferred without first being unlocked.
 You can check what state your domain name is in by using the following route:
 
@@ -113,7 +113,7 @@ Actions on theses routes are not instantaneous, which is why when re-executing a
 
 ### Authcode
 
-After unlocking your domain, you need an authcode to ensure that you own it, in order to transfer out. You will have to provide this code to your new registrar.
+After unlocking your domain name, you need an authcode to ensure that you own it, in order to transfer out. You will have to provide this code to your new registrar.
 
 The following route allows you to retrieve it:
 

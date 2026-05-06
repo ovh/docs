@@ -1,6 +1,6 @@
 ---
-title: "Monitorización de los ataques DDoS con el Network Security Dashboard"
-excerpt: "Aprenda a navegar por el panel de control de seguridad de red"
+title: "Network Security Dashboard para servidores dedicados"
+excerpt: "Supervise la actividad DDoS y los flujos de tráfico en su servidor dedicado con el Network Security Dashboard de OVHcloud"
 updated: 2025-10-31
 ---
 
@@ -12,7 +12,17 @@ Esta guía explica el panel de control de seguridad de la red y proporciona una 
 ## Requisitos
 
 - Un servicio de OVHcloud expuesto en una dirección IP pública dedicada ([Servidor Dedicado](/links/bare-metal/bare-metal), [VPS](/links/bare-metal/vps), [instancia de Public Cloud](/links/public-cloud/public-cloud), [Hosted Private Cloud](/links/hosted-private-cloud/hosted-private-cloud), [Additional IP](/links/network/additional-ip), etc.)
-- Acceso al [área de cliente de OVHcloud](/links/manager)
+
+<!-- CP-NAV-START:network-security-dashboard -->
+---
+
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [Security Dashboard](/links/control-panel/network-security-dashboard)
+- **Ruta de navegación:** `Network`{.action} > `Network Security Dashboard`{.action}
+
+---
+<!-- CP-NAV-END:network-security-dashboard -->
 
 ## Instrucciones
 
@@ -57,7 +67,7 @@ Las columnas corresponden al estado de limpieza anti-DDoS (**Mitigación**), la 
     - **Desactivado** - El firewall está **desactivado** para esta IP.
     - **(sin estado)** - No se ha creado la configuración del cortafuegos. Para configurar las reglas, haga clic en el botón `...`{.action} y seleccione `Crear firewall`{.action}.
 
-- El estado del firewall **GAME** (disponible únicamente para los [servidores dedicados OVHcloud **Game**](https://www.ovhcloud.com/es/bare-metal/prices/#filterType=range_element&filterValue=game#filterType=range_element&filterValue=game)) puede ser:
+- El estado del firewall **GAME** (disponible únicamente para los [servidores dedicados OVHcloud **Game**](https://www.ovhcloud.com/es-es/bare-metal/prices/#filterType=range_element&filterValue=game#filterType=range_element&filterValue=game)) puede ser:
     - **Activado** - La protección DDoS GAME está **activada** en esta IP.
     - **Desactivado** - El firewall GAME está **disponible** pero **desactivado** en esta IP.
     - **(sin estado)** - El firewall GAME no está disponible para esta IP. Esto significa que la IP de la lista no está configurada en una gama de productos compatible.
@@ -65,8 +75,6 @@ Las columnas corresponden al estado de limpieza anti-DDoS (**Mitigación**), la 
 - La columna **Alertas** puede indicar un centro de limpieza activo con un icono de advertencia y una sugerencia adecuada.
 
 ### Network Security Dashboard
-
-Conéctese a su [área de cliente de OVHcloud](/links/manager), haga clic en `Network`{.action} en el menú situado a la izquierda de la pantalla y seleccione `Network Security Dashboard`{.action}.
 
 En la pestaña **registro del centro de limpieza**, puede recuperar toda la información sobre los ataques detectados en el pasado (o que están en curso).
 

@@ -1,7 +1,7 @@
 ---
 title: 'Exchange - Configure your email account on Thunderbird for macOS'
 excerpt: 'Discover how to configure your Exchange email address on Thunderbird for macOS'
-updated: 2025-09-19
+updated: 2026-03-24
 ---
 
 <style>
@@ -29,9 +29,20 @@ Exchange accounts can be configured on various compatible email clients. This al
 
 ## Requirements
 
-- A [Hosted Exchange](/links/web/emails-hosted-exchange) or [Private Exchange](/links/web/emails-private-exchange) email account
+- A [Hosted Exchange](/links/web/emails-hosted-exchange) email account
 - The Thunderbird software installed on your Windows device
 - The credentials for the email account you want to configure
+
+<!-- CP-NAV-START:web-exchange -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Exchange](/links/control-panel/web-exchange)
+- **Navigation path:** `Web Cloud`{.action} > `Exchange`{.action} > Select your platform
+
+---
+<!-- CP-NAV-END:web-exchange -->
 
 /// details | Information regarding the administration and configuration of OVHcloud services
 
@@ -42,18 +53,6 @@ If you experience any difficulties carrying out these operations, we recommend t
 ///
 
 ## Instructions
-
-> [!primary]
->
-> In our example, we use the server reference: ex?.mail.ovh.net. The "?" must be replaced with the number corresponding to your Exchange service's server.
->
-> To find the server name:
->
-> 1. Log in to your [OVHcloud Control Panel](/links/manager).
-> 2. Go to the `Web Cloud`{.action} section.
-> 3. In the `MICROSOFT` section, click on `Exchange`{.action}.
-> 4. Select the relevant platform.
-> 5. The server name is visible in the **Connection** section of the `General Information`{.action} tab.
 
 ### Add the account
 
@@ -92,7 +91,7 @@ Follow the configuration steps by clicking successively on the **5** tabs below:
 >> Incoming server settings:
 >>
 >>  - **Protocol**: IMAP
->>  - **Hostname**: ex?.mail.ovh.net (replace the "?" with your server number)
+>>  - **Hostname**: ex.mail.ovh.ca
 >>  - **Port**: 993
 >>  - **Connection security**: SSL/TLS
 >>  - **Authentication method**: Normal password
@@ -105,7 +104,7 @@ Follow the configuration steps by clicking successively on the **5** tabs below:
 >> Outgoing server settings:
 >>
 >>  - **Protocol**: SMTP 
->>  - **Hostname**: ex?.mail.ovh.net (replace the "?" with your server number)
+>>  - **Hostname**: ex.mail.ovh.ca
 >>  - **Port**: 587
 >>  - **Connection security**: STARTTLS
 >>  - **Authentication method**: Normal password
@@ -132,7 +131,7 @@ Follow the configuration steps by clicking successively on the **5** tabs below:
 > Incoming server settings:
 >
 > - **Protocol**: POP3
-> - **Hostname**: ex?.mail.ovh.net (replace the "?" with your server number)
+> - **Hostname**: ex.mail.ovh.ca
 > - **Port**: 995
 > - **Connection security**: SSL/TLS
 > - **Authentication method**: Normal password
@@ -173,8 +172,6 @@ If your email account is already configured and you need to access the account s
 > For more information on configuring an email address from the Thunderbird email client, consult [Mozilla's help center](https://support.mozilla.org/products/thunderbird).
 
 [Getting started with Hosted Exchange](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_starting_hosted)
-
-[Getting started with Private Exchange](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_starting_private)
 
 For specialised services (SEO, development, etc.), contact [OVHcloud partners](/links/partner).
 

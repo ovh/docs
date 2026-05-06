@@ -1,6 +1,6 @@
 ---
-title: "Monitoring des attaques DDoS avec le Network Security Dashboard"
-excerpt: "Apprenez à naviguer dans le Network Security Dashboard"
+title: "Network Security Dashboard pour serveurs dédiés"
+excerpt: "Surveillez l'activité DDoS et les flux de trafic sur votre serveur dédié avec le Network Security Dashboard OVHcloud"
 updated: 2025-10-31
 ---
 
@@ -11,7 +11,17 @@ Ce guide a pour but de présenter le tableau de bord de sécurité réseau (*Net
 ## Prérequis
 
 - Un service OVHcloud exposé sur une adresse IP publique dédiée ([Serveur dédié](/links/bare-metal/bare-metal), [VPS](/links/bare-metal/vps), [Instance Public Cloud](/links/public-cloud/public-cloud), [Hosted Private Cloud](/links/hosted-private-cloud/vmware), [Additional IP](/links/network/additional-ip), etc.)
-- Être connecté à votre [espace client OVHcloud](/links/manager)
+
+<!-- CP-NAV-START:network-security-dashboard -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Security Dashboard](/links/control-panel/network-security-dashboard)
+- **Pour accéder à vos services :** `Network`{.action} > `Network Security Dashboard`{.action}
+
+---
+<!-- CP-NAV-END:network-security-dashboard -->
 
 ## En pratique
 
@@ -27,7 +37,7 @@ Chaque fois qu'une attaque est détectée sur une adresse IP de votre service, v
 
 Lors d'une attaque, une action de mitigation active sera indiquée par une icône d'avertissement sur la page qui liste vos adresses IP (dans la section `Gérer les IPs`{.action} de votre espace client).
 
-![red-line-attack](images/forced_blur.png){.thumbnail}
+![Icone d'alerte de mitigation activé sur la page de listing des IP](images/forced_blur.png){.thumbnail}
 
 > [!primary]
 >
@@ -41,9 +51,9 @@ Lors d'une attaque, une action de mitigation active sera indiquée par une icôn
 
 ### Notifications de sécurité réseau
 
-![red-line-attack](images/nsd_04_blur.PNG){.thumbnail}
+![Notifications de sécurité réseau avec colonnes de statut Anti-DDoS](images/nsd_04_blur.PNG){.thumbnail}
 
-Connectez-vous à votre [espace client OVHcloud](/links/manager), cliquez sur `Network`{.action} dans le menu situé à gauche de l'écran, puis sur `Adresses IP Publiques`{.action}. Assurez-vous que le « mode avancé » est activé pour voir l'état de l'infrastructure anti-DDoS et la configuration de ses composants.
+Assurez-vous que le « mode avancé » est activé pour voir l'état de l'infrastructure anti-DDoS et la configuration de ses composants.
 
 Les colonnes correspondent à la disponibilité et aux états de l'anti-DDoS Scrubbing (**Mitigation**), du Edge Network **Firewall** et du **GAME firewall**.
 
@@ -65,11 +75,9 @@ Les colonnes correspondent à la disponibilité et aux états de l'anti-DDoS Scr
 
 ### Network Security Dashboard
 
-Connectez-vous à votre [espace client OVHcloud](/links/manager), cliquez sur `Network`{.action} dans le menu situé à gauche de l'écran, puis sur `Network Security Dashboard`{.action}.
-
 Dans l'onglet **Journal du Centre de nettoyage**, vous pouvez récupérer toutes les informations sur les attaques détectées dans le passé (ou en cours).
 
-![red-line-attack](images/nsd_main_blur.png)
+![Journal du centre de nettoyage affichant les attaques detectees et horodatages](images/nsd_main_blur.png)
 
 Dans le tableau, les colonnes suivantes sont présentes : 
 
@@ -87,7 +95,7 @@ Dans le tableau, les colonnes suivantes sont présentes :
 
 Dans l'onglet **Graphique du trafic**, vous pouvez voir un graphique illustrant le trafic vers votre adresse IP (bit/s ou pps).
 
-![red-line-attack](images/nsd_graph_tab_blur.png)
+![Graphique de trafic affichant le trafic malveillant bloque et le trafic propre](images/nsd_graph_tab_blur.png)
 
 Il présente le trafic malveillant qui a été supprimé (**en rouge**) et le trafic « propre » livré à votre adresse IP (**en vert**). Des statistiques de mitigation de base sont également affichées, c'est-à-dire : combien d'attaques ont été détectées pour une IP sélectionnée, quel volume de trafic (ou de paquets) a été nettoyé pendant les attaques ou combien de fois les centres de nettoyage ont entrepris une action pour inspecter votre trafic (nombre d'événements) dans une période de temps sélectionnée.
 

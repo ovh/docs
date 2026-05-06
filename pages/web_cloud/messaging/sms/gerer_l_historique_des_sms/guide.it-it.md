@@ -15,7 +15,17 @@ Dallo Spazio Cliente è possibile consultare e scaricare la cronologia degli SMS
 ## Prerequisiti
 
 - Disporre di un account SMS OVHcloud con almeno 1 SMS inviato
-- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager), sezione `Télécom`{.action} > `SMS`{.action}
+
+<!-- CP-NAV-START:telecom-sms -->
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [SMS](/links/control-panel/telecom-sms)
+- **Percorso di navigazione:** `Telecom`{.action} > `SMS`{.action} > Seleziona il tuo SMS account
+
+---
+<!-- CP-NAV-END:telecom-sms -->
 
 ![Spazio Cliente Telecom SMS](/pages/assets/screens/control_panel/product-selection/telecom/tpl-telecom-03-en-sms.png){.thumbnail}
 
@@ -27,12 +37,10 @@ I dettagli elencati nella cronologia includono la data, l’ora, il mittente, il
 >
 > Lo Spazio Cliente OVHcloud ti permette di consultare gli SMS inviati negli ultimi 6 mesi (o gli ultimi 5000 SMS se hai inviato più di 5000 SMS negli ultimi 6 mesi).
 >
-> Per consultare SMS meno recenti (fino agli ultimi 12 mesi), è necessario scaricare la cronologia degli SMS in formato CSV. Consulta [lo Step 2 di questa guida](#csv).
+> Per consultare SMS meno recenti (fino agli ultimi 12 mesi), è necessario scaricare la cronologia degli SMS in formato CSV. Consulta [il Passaggio 2 di questa guida](#csv).
 >
 
-### Step 1: consulta la cronologia dal tuo Spazio Cliente
-
-Accedi al tuo [Spazio Cliente OVHcloud](/links/manager) e seleziona `Telecom`{.action}. Clicca su `SMS`{.action} e seleziona il tuo account SMS.
+### Passaggio 1: Consulta la cronologia dal tuo Spazio Cliente
 
 Nella barra delle schede, clicca su `Messaggio e campagna`{.action} e poi su `Gestisci gli SMS`{.action} per accedere allo storico dei tuoi SMS unitari o su `Gestisci le campagne`{.action} per accedere allo storico delle tue campagne di SMS.
 
@@ -56,7 +64,7 @@ Il pulsante `Filtra`{.action} consente di filtrare la ricerca in base al mittent
 
 ![sms-history](images/smshistory5.png){.thumbnail}
  
-### Step 2: scarica la cronologia degli SMS in formato CSV <a name="csv"></a>
+### Passaggio 2: Scarica la cronologia degli SMS in formato CSV <a name=”csv”></a>
 
 Per scaricare la cronologia degli SMS inviati in formato “.csv”, clicca sul pulsante `Azioni`{.action} nell’angolo in alto a sinistra e poi clicca su `Scarica`{.action} 
  

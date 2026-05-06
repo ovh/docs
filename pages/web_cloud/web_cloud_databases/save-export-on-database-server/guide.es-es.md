@@ -1,121 +1,189 @@
 ---
 title: 'Guardar y exportar una base de datos en un servidor de bases de datos'
-excerpt: 'Cómo realizar el backup y la exportación de la base de datos'
-updated: 2023-10-26
+excerpt: 'Cómo realizar el backup y la exportación de una base de datos en su servidor Web Cloud Databases desde el área de cliente de OVHcloud o a través de phpMyAdmin'
+updated: 2026-03-24
 ---
+
+<style>
+details>summary {
+    color:rgb(33, 153, 232) !important;
+    cursor: pointer;
+}
+details>summary::before {
+    content:'\25B6';
+    padding-right:1ch;
+}
+details[open]>summary::before {
+    content:'\25BC';
+}
+</style>
 
 ## Objetivo
 
-Su base de datos puede contener una gran cantidad de información esencial para su sitio web. Por lo tanto, es muy importante que podamos realizar una copia de seguridad o exportarla.
+Su base de datos puede contener una gran cantidad de información esencial para su sitio web. Por lo tanto, es muy importante poder realizar una copia de seguridad o exportarla.
 
 **Esta guía explica cómo realizar el backup y la exportación de la base de datos desde un servidor de bases de datos.**
 
 ## Requisitos
 
-- Tener una [instancia Web Cloud Databases](/links/web/databases) (incluida en un plan de [hosting Performance](/links/web/hosting))
-- Haber iniciado sesión en el [área de cliente de OVHcloud](/links/manager).
+- Tener una [instancia Web Cloud Databases](/links/web/databases) (incluida en un plan de [hosting Performance](/links/web/hosting)).
+
+<!-- CP-NAV-START:web-cloud-databases -->
+---
+
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [Web Cloud Databases](/links/control-panel/web-cloud-databases)
+- **Ruta de navegación:** `Web Cloud`{.action} > `Web Cloud Databases`{.action} > Seleccione su servicio de base de datos
+
+---
+<!-- CP-NAV-END:web-cloud-databases -->
 
 ## Procedimiento
 
-> Tenga en cuenta que las soluciones [Web Cloud Databases](/links/web/databases) no permiten acceder al sistema de gestión de bases de datos, sino a las bases de datos alojadas en él.
-> <br> - Tenga en cuenta que no hay acceso "root".
-> <br> - Los comandos genéricos SQL funcionan con normalidad, y software como HeidiSQL, SQLuireL o Admin es totalmente compatible.
+> [!primary]
+>
+> Las soluciones [Web Cloud Databases](/links/web/databases) no permiten acceder al sistema de gestión de bases de datos, sino a las bases de datos alojadas en él.
+>
+> - No hay acceso de superusuario "root".
+> - Los comandos SQL genéricos funcionan con normalidad, y software como HeidiSQL, SQuirreL SQL o Adminer es totalmente compatible.
+>
 
 ### Guardar y exportar una base de datos desde el área de cliente
 
-Acceda al [área de cliente de OVHcloud](/links/manager). Haga clic en la pestaña `Web` y seleccione `Web Cloud Databases`{.action}. Seleccione el nombre del servidor de bases de datos. Acceda a la pestaña `Bases de datos`.
-
-En la columna **"Copias de seguridad"**, la cifra corresponde al número de copias de seguridad disponibles para la base de datos.
-
 > [!primary]
 >
-> - Las copias de seguridad se realizan automáticamente una vez al día.
+> - Las copias de seguridad se realizan automáticamente una vez al día
 > en todas sus bases de datos.
 > - Las copias de seguridad automáticas y manuales se conservan durante 30 días.
 > Una vez transcurrido este plazo, se eliminarán automáticamente.
 
-#### 1\. Realizar una copia de seguridad manual 
+#### Realizar una copia de seguridad manual
 
-Haga clic en el botón `...`{.action} a la derecha de la base de datos y, a continuación, en `Guardar`{.action}.
+<!-- CP-STEPS-START:manual-backup -->
+Haga clic en las fichas siguientes para ver cada una de las **3** etapas.
 
-![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/databases/back-up-now.png){.thumbnail}
+> [!tabs]
+> **Etapa 1**
+>>
+>> Acceda a la página [Web Cloud Databases](/links/control-panel/web-cloud-databases) y seleccione la solución correspondiente.
+>>
+>> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases.png){.thumbnail}
+>>
+> **Etapa 2**
+>>
+>> Haga clic en la pestaña `Bases de datos`{.action}.
+>>
+>> En la columna **Copias de seguridad**, la cifra corresponde al número de copias de seguridad disponibles para su base de datos.
+>>
+> **Etapa 3**
+>>
+>> Haga clic en el botón `...`{.action} a la derecha de la base de datos y, a continuación, en `Guardar`{.action}.
+>>
+>> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/databases/back-up-now.png){.thumbnail}
+<!-- CP-STEPS-END:manual-backup -->
 
-#### 2\. Exportar una copia de seguridad
+#### Exportar una copia de seguridad
 
-Haga clic en el botón `...`{.action} a la derecha de la base de datos y, seguidamente, en `Mostrar las copias de seguridad`{.action}.
+<!-- CP-STEPS-START:export-backup -->
+Haga clic en las fichas siguientes para ver cada una de las **4** etapas.
 
-![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/databases/show-backups.png){.thumbnail}
-
-Se mostrará una lista de las copias de seguridad disponibles. Haga clic en el botón `...`{.action} a la derecha de la copia de seguridad seleccionada y, seguidamente, en `Descargar la copia de seguridad`{.action} para descargar la copia de seguridad.
+> [!tabs]
+> **Etapa 1**
+>>
+>> Acceda a la página [Web Cloud Databases](/links/control-panel/web-cloud-databases) y seleccione la solución correspondiente.
+>>
+>> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases.png){.thumbnail}
+>>
+> **Etapa 2**
+>>
+>> Haga clic en la pestaña `Bases de datos`{.action}.
+>>
+>> En la columna **Copias de seguridad**, la cifra corresponde al número de copias de seguridad disponibles para su base de datos.
+>>
+> **Etapa 3**
+>>
+>> Haga clic en el botón `...`{.action} a la derecha de la base de datos y, a continuación, en `Mostrar las copias de seguridad`{.action}.
+>>
+>> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/databases/show-backups.png){.thumbnail}
+>>
+> **Etapa 4**
+>>
+>> Se mostrará la lista de las copias de seguridad disponibles. Haga clic en el botón `...`{.action} a la derecha de la copia de seguridad seleccionada y, a continuación, en `Descargar la copia de seguridad`{.action}.
+<!-- CP-STEPS-END:export-backup -->
 
 ### Copia de seguridad y exportación de una base de datos fuera del área de cliente
 
-#### 1\. Exportar una base de datos MySQL o MariaDB
+Si la RAM disponible en su servidor no permite realizar la exportación deseada, utilice la herramienta OVHcloud en el área de cliente, que utiliza recursos externos a su solución. Consulte el apartado "[Guardar y exportar una base de datos desde el área de cliente](./#guardar-y-exportar-una-base-de-datos-desde-el-area-de-cliente)" de esta guía.
 
- En algunos casos, la RAM disponible en el servidor de bases de datos puede no permitir la exportación deseada. En ese caso, le recomendamos que utilice la herramienta OVHcloud en el área de cliente. que le permitirá utilizar recursos externos a su solución. Consulte el apartado ["Guardar y exportar una base de datos desde el área de cliente"](./#guardar-y-exportar-una-base-de-datos-desde-el-area-de-cliente) de esta guía.
+**Haga clic en el método de exportación que desee para ver el contenido.**
 
-##### 1\.1 Exportar mi base de datos MySQL o MariaDB desde phpMyAdmin OVHcloud
+/// details | Exportar una base de datos MySQL o MariaDB desde phpMyAdmin OVHcloud
 
-Para exportar su base de datos directamente desde phpMyAdmin, es necesario conectarse previamente. Para ello, consulte la guía ["Conectarse a una base de datos".](/pages/web_cloud/web_cloud_databases/connecting-to-database-on-database-server).
+Para exportar su base de datos directamente desde phpMyAdmin, es necesario conectarse previamente. Para ello, consulte la guía "[Conectarse a una base de datos](/pages/web_cloud/web_cloud_databases/connecting-to-database-on-database-server)".
 
-Una vez conectado a phpMyAdmin, haga clic en el nombre de la base de datos que quiere exportar y, seguidamente, en la pestaña `Exportar`{.action}.
+Una vez conectado a phpMyAdmin, haga clic en el nombre de la base de datos que quiera exportar y, a continuación, en la pestaña `Exportar`{.action} en la parte superior.
 
-Hay dos modos de exportación posibles. Si no necesita ayuda específica, le recomendamos que utilice el modo **rápido** en formato **SQL**.
+Existen dos modos de exportación. Si no tiene necesidades específicas, le recomendamos que utilice el modo **rápido** en formato **SQL**.
 
 ![Web Cloud Databases](/pages/assets/screens/other/web-tools/phpmyadmin/pma-export-backup-web-cloud-db.png){.thumbnail}
 
-##### 1\.2 Exportar la base de datos MySQL o MariaDB en línea de comandos
+///
+
+/// details | Exportar una base de datos MySQL o MariaDB en línea de comandos
 
 ```bash
-mysqldump —host=servidor —user=usuario —port=puerto —contraseña=contraseña nombre_de_la_BD > nombre_de_la_BD.sql
+mysqldump --host=servidor --user=usuario --port=puerto --password=contraseña nombre_de_la_BD > nombre_de_la_BD.sql
 ```
 
-##### 1\.3 Exportar mi base de datos MySQL o MariaDB desde un script PHP
+///
+
+/// details | Exportar una base de datos MySQL o MariaDB desde un script PHP
 
 ```php
-1. <?php echo "Se está guardando la base.......";
-2. system("mysqldump --host=serveur --user=utilisateur --port=port --password=password nom_de_la_base > nom_de_la_base.sql");
-3. echo "Ya se acabó. Puede consultar la base de datos por FTP".
+1. <?php echo "Se está guardando la base de datos.......";
+2. system("mysqldump --host=servidor --user=usuario --port=puerto --password=contraseña nombre_de_la_BD > nombre_de_la_BD.sql");
+3. echo "Completado. Puede recuperar la base de datos por FTP.";
 4. ?>
 ```
 
 > [!warning]
 >
-> - Si desea evitar que un tercero acceda a este archivo de datos sensibles, consulte la guía Proteger el acceso a él: [Proteger el panel de administración del sitio web con un archivo .htaccess](/pages/web_cloud/web_hosting/htaccess_protect_directory_by_password).
-> - Esta acción solo es posible desde un alojamiento de OVHcloud compartido.
->
+> - Para evitar que un tercero acceda a este archivo con datos sensibles, proteja su acceso con la ayuda de la guía: [Proteger el acceso a un directorio con .htaccess](/pages/web_cloud/web_hosting/htaccess_protect_directory_by_password).
+> - Esta acción solo es posible desde un alojamiento compartido de OVHcloud.
 
-#### 2\. Exportación e importación de bases de datos PostgreSQL fuera del área de cliente
+///
 
- En algunos casos, la RAM disponible en el servidor de bases de datos puede no permitir la exportación deseada. En ese caso, le recomendamos que utilice la herramienta OVHcloud en el área de cliente. que le permitirá utilizar recursos externos a su solución. Consulte el apartado ["Guardar y exportar una base de datos desde el área de cliente"](./#guardar-y-exportar-una-base-de-datos-desde-el-area-de-cliente) de esta guía.
- 
-##### 2\.1 Exportar la base de datos PostgreSQL en línea de comandos
+/// details | Exportar una base de datos PostgreSQL en línea de comandos
 
 ```bash
-pg_dump —host=servidor —port=puerto —user=usuario —password=contraseña nombre_de_la_BD > nombre_de_la_BD.sql
+pg_dump --host=servidor --port=puerto --user=usuario --password=contraseña nombre_de_la_BD > nombre_de_la_BD.sql
 ```
 
-##### 2\.2 Exportar mi base PostgreSQL desde un script PHP
+///
+
+/// details | Exportar una base de datos PostgreSQL desde un script PHP
 
 ```php
-1. <?php echo "Se está guardando la base.......";
-2. system("PGPASSWORD=contraseña pg_dump —host=servidor —port=puerto —user=usuario —password=contraseña nombre_de_la_BD > nombre_de_la_BD.sql");
-3. echo "Ya se acabó. Puede consultar la base de datos por FTP".
+1. <?php echo "Se está guardando la base de datos.......";
+2. system("PGPASSWORD=contraseña pg_dump --host=servidor --port=puerto --user=usuario --password=contraseña nombre_de_la_BD > nombre_de_la_BD.sql");
+3. echo "Completado. Puede recuperar la base de datos por FTP.";
 4. ?>
 ```
 
 > [!warning]
 >
-> - Si desea evitar que un tercero acceda a este archivo de datos sensibles, consulte la guía Proteger el acceso a él: [Proteger el panel de administración del sitio web con un archivo .htaccess](/pages/web_cloud/web_hosting/htaccess_protect_directory_by_password).
-> - Esta acción solo es posible desde un alojamiento de OVHcloud compartido.
->
+> - Para evitar que un tercero acceda a este archivo con datos sensibles, proteja su acceso con la ayuda de la guía: [Proteger el acceso a un directorio con .htaccess](/pages/web_cloud/web_hosting/htaccess_protect_directory_by_password).
+> - Esta acción solo es posible desde un alojamiento compartido de OVHcloud.
+
+///
 
 ## Más información
 
-[Restaurar e importar una base de datos en su servidor de bases de datos](/pages/web_cloud/web_cloud_databases/restore-import-on-database-server)
+[Guardar y exportar una base de datos desde el área de cliente](./#guardar-y-exportar-una-base-de-datos-desde-el-area-de-cliente)
 
 Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](/links/partner).
 
-Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](/links/support).
+Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas [ofertas de soporte](/links/support).
 
 Interactúe con nuestra [comunidad de usuarios](/links/community).

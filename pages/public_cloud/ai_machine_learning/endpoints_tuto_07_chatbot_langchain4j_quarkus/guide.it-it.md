@@ -11,7 +11,7 @@ updated: 2025-12-19
 
 ## Introduction
 
-Looking to build an AI-powered chatbot with Java? In this tutorial, you will learn how to create a chatbot using **[LangChain4j](https://github.com/langchain4j/langchain4j)**, **[Quarkus](https://github.com/quarkusio/quarkus)**, and **[AI Endpoints](https://endpoints.ai.cloud.ovh.net/)**.
+Looking to build an AI-powered chatbot with Java? In this tutorial, you will learn how to create a chatbot using **[LangChain4j](https://github.com/langchain4j/langchain4j)**, **[Quarkus](https://github.com/quarkusio/quarkus)**, and **[AI Endpoints](/links/public-cloud/ai-endpoints)**.
 
 ## Objective
 
@@ -27,7 +27,7 @@ This tutorial demonstrates how to:
 
 - **[LangChain4j](https://github.com/langchain4j/langchain4j)**: Java-based framework inspired by [LangChain](https://github.com/langchain-ai/langchain), designed to simplify the integration of LLMs (Large Language Models) into applications. It offers abstractions and annotations for building intelligent agents and chatbots. Note that LangChain4j is not officially maintained by the LangChain team, despite the similar name.
 - **[Quarkus](https://quarkus.io/)**: A Kubernetes-native Java framework designed to optimize Java applications for containers and the cloud. In this tutorial we will use the [quarkus-langchain4j](https://github.com/quarkiverse/quarkus-langchain4j/) extension.
-- **[AI Endpoints](https://endpoints.ai.cloud.ovh.net/)**: A serverless platform by OVHcloud providing easy access to a variety of world-renowned AI models including Mistral, LLaMA, and more. This platform is designed to be simple, secure, and intuitive, with data privacy as a top priority.
+- **[AI Endpoints](/links/public-cloud/ai-endpoints)**: A serverless platform by OVHcloud providing easy access to a variety of world-renowned AI models including Mistral, LLaMA, and more. This platform is designed to be simple, secure, and intuitive, with data privacy as a top priority.
 
 ## Requirements
 
@@ -241,7 +241,7 @@ This answer describes OVHcloud as a global integrated cloud hosting platform off
 
 ## Conclusion
 
-In just a few steps, you have created your own AI chatbot powered by [LangChain4j](https://github.com/langchain4j/langchain4j), [Quarkus](https://github.com/quarkusio/quarkus), and [OVHcloud AI Endpoints](https://endpoints.ai.cloud.ovh.net/).
+In just a few steps, you have created your own AI chatbot powered by [LangChain4j](https://github.com/langchain4j/langchain4j), [Quarkus](https://github.com/quarkusio/quarkus), and [OVHcloud AI Endpoints](/links/public-cloud/ai-endpoints).
 
 ## Going further
 

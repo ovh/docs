@@ -25,14 +25,24 @@ L’opzione di Backup automatico per VPS offre un modo pratico per avere backup 
 
 > [!primary]
 >
-Prima di applicare le opzioni di backup, consigliamo di fare riferimento alle pagine prodotto [e alle domande frequenti](/links/bare-metal/vps-options) per confrontare i prezzi e per visualizzare ulteriori dettagli.
+> Prima di applicare le opzioni di backup, consigliamo di fare riferimento alle pagine prodotto [e alle domande frequenti](/links/bare-metal/vps-options) per confrontare i prezzi e per visualizzare ulteriori dettagli.
 >
 
 ## Prerequisiti
 
-- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager).
 - Disporre di un [VPS OVHcloud](/links/bare-metal/vps) già configurato.
-- Avere accesso in SSH al tuo VPS (facoltativo) in SSH.
+- Avere accesso in SSH al tuo VPS (facoltativo).
+
+<!-- CP-NAV-START:baremetal-vps -->
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [VPS management](/links/control-panel/baremetal-vps)
+- **Percorso di navigazione:** `Bare Metal Cloud`{.action} > `Server Privati Virtuali`{.action} > Seleziona il tuo VPS
+
+---
+<!-- CP-NAV-END:baremetal-vps -->
 
 > [!warning]
 > Questa funzionalità non è attualmente disponibile per i server privati virtuali nelle [Local Zones](/links/bare-metal/vps-lz).
@@ -51,7 +61,7 @@ Prima di applicare le opzioni di backup, consigliamo di fare riferimento alle pa
 - [Best practice per l'utilizzo del Backup automatico](#bestpractice)
     - [Configurazione dell'agente QEMU su un VPS](#qemu)
         - [Distribuzioni Debian](#deb)
-        - [Distribuzioni Debian Redhat](#red)
+        - [Distribuzioni Redhat](#red)
         - [Windows](#win)
 
 
@@ -69,8 +79,6 @@ Per una maggiore flessibilità con i backup, è possibile attivare l'opzione Bac
 L'opzione di Backup automatico Premium crea un backup del tuo VPS ogni 24 ore all'ora specificata.  
 Avrai accesso a tutti i backup giornalieri degli ultimi 7 giorni. Una volta creati 7 backup, ogni nuovo backup sostituirà il più vecchio.
 
-Accedi al tuo [Spazio Cliente OVHcloud](/links/manager), apri la sezione `Bare Metal Cloud`{.action}, seleziona `Server Privati Virtual`{.action} e clicca quindi sul nome del tuo VPS.
-
 Clicca sulla scheda `Backup automatico`{.action} nel menu orizzontale.
 
 Clicca sul link `Ordina un backup Premium`{.action} (per i servizi ordinati a partire dal 7 AGO, 2025) o sul pulsante `Attiva il Backup automatico`{.action}.
@@ -80,7 +88,7 @@ Clicca sul link `Ordina un backup Premium`{.action} (per i servizi ordinati a pa
   <img src="images/backup_vps_leg.png" alt="autobackup vps">
 </div>
 
-Nello step successivo, esamina le informazioni sul prezzo, quindi clicca su `Ordina`{.action}. Sarai guidato attraverso la procedura d’ordine e riceverai una email di conferma.
+Nello step successivo, esamina le informazioni sul prezzo, quindi clicca su `Ordina`{.action}. Sarai guidato attraverso la procedura d’ordine e riceverai una e-mail di conferma.
 
 <a name="time"></a>
 
@@ -112,7 +120,7 @@ Clicca su `...`{.action} accanto al backup che desideri ripristinare e seleziona
 
 ![autobackupvps](images/backup_vps_step1.png){.thumbnail}
 
-Se hai modificato la tua password root di recente, spunta l’opzione "Modifica la password root quando ripristini" nella finestra di popup, per mantenere la tua attuale password root, e clicca su `Conferma`{.action}. Riceverai una email una volta terminata l’azione. Per il rispristino potrebbe essere necessario un po’ di tempo, a seconda dello spazio utilizzato su disco.
+Se hai modificato la tua password root di recente, spunta l’opzione "Modifica la password root quando ripristini" nella finestra di popup, per mantenere la tua attuale password root, e clicca su `Conferma`{.action}. Riceverai una e-mail una volta terminata l’azione. Per il ripristino potrebbe essere necessario un po’ di tempo, a seconda dello spazio utilizzato su disco.
 
 > [!alert]
 >
@@ -123,13 +131,13 @@ Se hai modificato la tua password root di recente, spunta l’opzione "Modifica 
 
 ### Come montare un backup e accedervi
 
-Non è necessario sovrascrivere completamente il tuo servizio esistente con un rispristino. L’opzione "Montaggio" ti consente di accedere ai dati di backup per ripristinare i tuoi file. 
+Non è necessario sovrascrivere completamente il tuo servizio esistente con un ripristino. L’opzione "Montaggio" ti consente di accedere ai dati di backup per ripristinare i tuoi file. 
 
 > [!warning]
 >
 > OVHcloud fornisce servizi la cui gestione e configurazione sono sotto la tua completa supervisione. Pertanto spetta a te garantire che tali servizi funzionino correttamente.
 >
-> Questa guida ti aiuta a eseguire le operazioni necessarie alla configurazione del tuo account. Tuttavia, in caso di difficoltà o dubbi, ti consigliamo di contattare un [provider specializzato](/links/partner) o il fornitore del servizio. OVH non sarà infatti in grado di fornirti assistenza. Per maggiori informazioni consulta la sezione [Per saperne di più](#go-further) di questa guida.
+> Questa guida ti aiuta a eseguire le operazioni necessarie alla configurazione del tuo account. Tuttavia, in caso di difficoltà o dubbi, ti consigliamo di contattare un [provider specializzato](/links/partner) o il fornitore del servizio. OVHcloud non sarà infatti in grado di fornirti assistenza. Per maggiori informazioni consulta la sezione [Per saperne di più](#go-further) di questa guida.
 >
 
 Seleziona il tuo VPS e clicca sulla scheda `Backup automatico`{.action} nel menu orizzontale.
@@ -139,7 +147,7 @@ Clicca su `...`{.action} accanto al backup a cui desideri accedere e seleziona `
 
 Quando si utilizza questa opzione, viene creata e montata una copia di backup di lettura e scrittura. Il backup originale resta disponibile per i ripristini futuri.
 
-A completamento del processo riceverai una email. A questo punto puoi connetterti al tuo VPS e aggiungere la partizione in cui è localizzato il tuo backup.
+A completamento del processo riceverai una e-mail. A questo punto puoi connetterti al tuo VPS e aggiungere la partizione in cui è localizzato il tuo backup.
 
 <a name="shell"></a>
 
@@ -167,7 +175,7 @@ sdb       8:16   0   25G  0 disk
 └─sdb15   8:31   0  106M  0 part /boot/efi
 ```
 
-In questi esempio, la partizione che contiene il tuo filesystem di backup è nominata “sdb1”.
+In questo esempio, la partizione che contiene il tuo filesystem di backup è nominata “sdb1”.
 Quindi, crea una directory per questa partizione e stabilisci che è il punto di montaggio:
 
 ```bash
@@ -222,7 +230,7 @@ La funzionalità di backup automatico è basata sugli Snapshot VPS. Prima di uti
 
 #### Configurazione dell'agente QEMU su un VPS
 
-Gli Snapshot sono istantanee del proprio sistema in esecuzione (“live snapshot”). Per garantire la disponibilità del sistema durante la creazione dello Snapshot è necessario utilizzare il software QEMU, che  prepara il filesystem al processo.
+Gli Snapshot sono istantanee del proprio sistema in esecuzione (“live snapshot”). Per garantire la disponibilità del sistema durante la creazione dello Snapshot è necessario utilizzare il software QEMU, che prepara il filesystem al processo.
 
 L'agente "**qemu-guest-agent**" non è installato di default sulla maggior parte delle distribuzioni. e le eventuali restrizioni delle licenze possono impedire a OVHcloud di includerlo nelle immagini degli OS disponibili. Consigliamo pertanto di verificare la presenza del software sul VPS e, in caso contrario, di installarlo. Per eseguire queste operazioni, accedi in SSH al VPS e segui le istruzioni indicate, in base al sistema operativo utilizzato.
 
@@ -242,7 +250,7 @@ Il risultato atteso è il seguente:
 /dev/virtio-ports/org.qemu.guest_agent.0: symbolic link to ../vport2p1
 ```
 
-Se il risultato è diverso, ad esempio "No such file or directory", installare l'ultima versione del pacchetto:
+Se il risultato è diverso, ad esempio "No such file or directory", installa l'ultima versione del pacchetto:
 
 ```bash
 sudo apt-get update
@@ -303,7 +311,7 @@ sudo service qemu-guest-agent status
 
 Puoi installare l'agente tramite un file MSI, disponibile sul sito del progetto Fedora: <https://fedorapeople.org/groups/virt/virtio-win/direct-downloads/latest-qemu-ga/>
 
-Per verificare che il servizio sia in esecuzione, esegui questo comando powershell:
+Per verificare che il servizio sia in esecuzione, esegui questo comando PowerShell:
 
 ```console
 PS C:\Users\Administrator> Get-Service QEMU-GA

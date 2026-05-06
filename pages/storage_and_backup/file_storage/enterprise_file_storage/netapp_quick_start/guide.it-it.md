@@ -50,40 +50,18 @@ Un volume è un'unità di storage con dimensioni e protocollo.
 
 Per creare un volume, utilizza la rotta API seguente:
 
-> [!faq]
+> [!api]
 >
-> API:
+> @api {v1} /storage POST /storage/netapp/{serviceName}/share
 >
->> > [!api]
->> >
->> > @api {v1} /storage POST /storage/netapp/{serviceName}/share
->> >
->>
->
-> Impostazioni:
->
->> > **serviceName** *
->> >
->> >> ID del servizio
->> >
->> > **NetAppShare** *
->> >
->> >> **description**
->> >>
->> >> > Descrizione del volume
->> >>
->> >> **name**
->> >>
->> >> > Nome del volume
->> >>
->> >> **protocol** *
->> >>
->> >> > Protocollo utilizzato dal volume
->> >>
->> >> **size**
->> >>
->> >> > Dimensione in GB del volume
->
+
+| Parameter | Required | Description |
+|-----------|----------|-------------|
+| `serviceName` | Yes | ID del servizio |
+| `NetAppShare.description` |  | Descrizione del volume |
+| `NetAppShare.name` |  | Nome del volume |
+| `NetAppShare.protocol` | Yes | Protocollo utilizzato dal volume |
+| `NetAppShare.size` |  | Dimensione in GB del volume |
 
 Seleziona il protocollo `NFS` e una dimensione di `10` gigabyte, ad esempio.
 
@@ -100,36 +78,17 @@ Dopo aver creato un volume, è necessario creare una nuova ACL per accedervi.
 
 Per creare una nuova ACL che ti permetterà di connetterti al tuo volume, utilizza la rotta API seguente:
 
-> [!faq]
+> [!api]
 >
-> API:
+> @api {v1} /storage POST /storage/netapp/{serviceName}/share/{shareId}/acl
 >
->> > [!api]
->> >
->> > @api {v1} /storage POST /storage/netapp/{serviceName}/share/{shareId}/acl
->> >
->>
->
-> Impostazioni:
->
->> > **serviceName** *
->> >
->> >> ID del servizio
->> >
->> > **shareId** *
->> >
->> >> ID del volume
->> >
->> > **NetAppShareACLRule** *
->> >
->> >> **accessLevel** *
->> >>
->> >> > Livello di accesso ACL. Può essere **rw** (lettura e scrittura) o **ro** (sola lettura).
->> >>
->> >> **accessoTo** *
->> >>
->> >> > Indirizzo IP o intervallo di indirizzi IP in notazione CIDR.
->
+
+| Parameter | Required | Description |
+|-----------|----------|-------------|
+| `serviceName` | Yes | ID del servizio |
+| `shareId` | Yes | ID del volume |
+| `NetAppShareACLRule.accessLevel` | Yes | Livello di accesso ACL. Può essere **rw** (lettura e scrittura) o **ro** (sola lettura). |
+| `NetAppShareACLRule.accessoTo` | Yes | Indirizzo IP o intervallo di indirizzi IP in notazione CIDR. |
 
 > [!primary]
 >
@@ -141,30 +100,16 @@ Per creare una nuova ACL che ti permetterà di connetterti al tuo volume, utiliz
 
 Verifica lo stato di creazione dell'ACL utilizzando la seguente via API:
 
-> [!faq]
+> [!api]
 >
-> API:
+> @api {v1} /storage GET /storage/netapp/{serviceName}/share/{shareId}/acl/{aclRuleId}
 >
->> > [!api]
->> >
->> > @api {v1} /storage GET /storage/netapp/{serviceName}/share/{shareId}/acl/{aclRuleId}
->> >
->>
->
-> Impostazioni:
->
->> > **serviceName** *
->> >
->> >> ID del servizio
->> >
->> > **shareId** *
->> >
->> >> ID del volume
->> >
->> > **aclRuleId** *
->> >
->> >> ID ACL
->
+
+| Parameter | Required | Description |
+|-----------|----------|-------------|
+| `serviceName` | Yes | ID del servizio |
+| `shareId` | Yes | ID del volume |
+| `aclRuleId` | Yes | ID ACL |
 
 Sostituisci `aclRuleId` con l'ID dell'ACL creata per il tuo volume.
 
@@ -175,26 +120,15 @@ Sostituisci `aclRuleId` con l'ID dell'ACL creata per il tuo volume.
 
 Una volta attivata l'ACL, recupera i percorsi di accesso del volume utilizzando questa API:
 
-> [!faq]
+> [!api]
 >
-> API:
+> @api {v1} /storage GET /storage/netapp/{serviceName}/share/{shareId}/accessPath
 >
->> > [!api]
->> >
->> > @api {v1} /storage GET /storage/netapp/{serviceName}/share/{shareId}/accessPath
->> >
->>
->
-> Impostazioni:
->
->> > **serviceName** *
->> >
->> >> ID del servizio
->> >
->> > **shareId** *
->> >
->> >> ID del volume
->
+
+| Parameter | Required | Description |
+|-----------|----------|-------------|
+| `serviceName` | Yes | ID del servizio |
+| `shareId` | Yes | ID del volume |
 
 Per il tuo volume saranno disponibili uno o più accessi.
 
@@ -215,26 +149,15 @@ Una volta montato, il tuo volume è utilizzabile per archiviare i tuoi file.
 
 Puoi eliminare il tuo volume utilizzando la strada API seguente:
 
-> [!faq]
+> [!api]
 >
-> API:
+> @api {v1} /storage DELETE /storage/netapp/{serviceName}/share/{shareId}
 >
->> > [!api]
->> >
->> > @api {v1} /storage DELETE /storage/netapp/{serviceName}/share/{shareId}
->> >
->>
->
-> Impostazioni:
->
->> > **serviceName** *
->> >
->> >> ID del servizio
->> >
->> > **shareId** *
->> >
->> >> ID del volume
->
+
+| Parameter | Required | Description |
+|-----------|----------|-------------|
+| `serviceName` | Yes | ID del servizio |
+| `shareId` | Yes | ID del volume |
 
 ## Per saperne di più
 

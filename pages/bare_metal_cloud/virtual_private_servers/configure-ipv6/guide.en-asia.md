@@ -40,7 +40,18 @@ IPv6 is the latest version of the *Internet Protocol*. Each OVHcloud VPS server 
 - A [Virtual Private Server](/links/bare-metal/vps) in your OVHcloud account
 - Administrative access (sudo) via SSH or remote desktop (Windows) to your server
 - A basic understanding of networking
-- Access to the [OVHcloud Control Panel](/links/manager) / to the [OVHcloud API](/links/api)
+- Access to the [OVHcloud API](/links/api) (optional)
+
+<!-- CP-NAV-START:baremetal-vps -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [VPS management](/links/control-panel/baremetal-vps)
+- **Navigation path:** `Bare Metal Cloud`{.action} > `Virtual private servers`{.action} > Select your VPS
+
+---
+<!-- CP-NAV-END:baremetal-vps -->
 
 ## Instructions
 
@@ -65,8 +76,6 @@ The first step is to identify the IPv6 address and the IPv6 gateway assigned to 
 
 > [!tabs]
 > **Via the OVHcloud Control Panel**
->>
->> Log in to the [OVHcloud Control Panel](/links/manager), go to the `Bare Metal Cloud`{.action} section and select your server from `Virtual Private Servers`{.action}.
 >>
 >> The IPv6 address and the IPv6 gateway assigned to your server will appear in the `IP` section of the `Home`{.action} tab. Once you have copied them, continue with [applying the IPv6 configuration](#applyipv6).
 >>
@@ -105,8 +114,8 @@ Once you have gathered the necessary information for the IPv6 configuration, log
 There are several ways to apply the IPv6 configuration. Use whichever method best suits your situation and requirements:
 
 - [Non-persistent application](#nonpersistent)
-- [Persistent application on Debian and its derivatives](#persistentdebian)
-- [Persistent application on Red Hat and its derivatives](#persistentredhat)
+- [Persistent application on Debian and its derivatives (Ubuntu, Crunchbang, SteamOS, etc.)](#persistentdebian)
+- [Persistent application on Red Hat and its derivatives (CentOS, Rocky Linux, AlmaLinux, etc.)](#persistentredhat)
 - [Persistent application on Fedora 42 and later](#persistentfedora)
 - [Persistent application on Windows Server](#persistentwindows)
 
@@ -128,7 +137,7 @@ ip -6 route add IPV6_GATEWAY dev eth0
 ip -6 route add default via IPV6_GATEWAY dev eth0
 ```
 
-#### Persistent appplication on Debian and its derivatives (Ubuntu, Crunchbang, SteamOS, etc) <a name="persistentdebian"></a>
+#### Persistent application on Debian and its derivatives (Ubuntu, Crunchbang, SteamOS, etc) <a name="persistentdebian"></a>
  
 > [!warning]
 >
@@ -145,7 +154,7 @@ In some cases, the appropriate method may not be the one specified above. To mak
 Moreover, keep in mind that the exact file names may vary.
 
 > [!tabs]
-> **Configuration using *interfaces* files**
+> **Configuring *interfaces* files**
 >>
 >> By default, the configuration files are located in `/etc/network/interfaces.d/`.
 >>
@@ -155,7 +164,7 @@ Moreover, keep in mind that the exact file names may vary.
 >> sudo nano /etc/network/interfaces.d/51-cloud-init-ipv6
 >> ```
 >>
->> Creating a seperate file allows you to easily revert the changes in case of an error.
+>> Creating a separate file allows you to easily revert the changes in case of an error.
 >>
 >> Add the following lines to the file. Replace the generic elements (i.e. *YOUR_IPV6*, *IPV6_PREFIX* and *IPV6_GATEWAY*) as well as the network interface (if your server is not using **eth0**) with your specific values:
 >>
@@ -171,7 +180,7 @@ Moreover, keep in mind that the exact file names may vary.
 >> pre-down /sbin/ip -6 route del IPV6_GATEWAY dev eth0
 >> ```
 >>
->> **Configuration example**:
+>> **Configuration example:**
 >>
 >> ```console
 >> auto eth0
@@ -213,7 +222,7 @@ Moreover, keep in mind that the exact file names may vary.
 >> sudo cp /etc/network/interfaces.bak /etc/network/interfaces
 >> ```
 >>
-> **Configuration using *Netplan***
+> **Configuration using Netplan**
 >>
 >> The network configuration files are located in the `/etc/netplan/` directory. By default, the main configuration file is called `50-cloud-init.yaml`. Before continuing, first check this file to see if the IPv6 address has already been configured. If so, you don't need to configure the IPv6 address again as you only have one IPv6 with your VPS server.
 >>
@@ -290,10 +299,10 @@ There are two ways to configure your network depending on the operating system i
 
 - **For CentOS 7, Rocky Linux & AlmaLinux (8/9)**: use the method based on *network-scripts* files.
 
-- **For Rocky Linux & AlmaLinux (10)**: use the method based on the *system-connections* files.
+- **For Rocky Linux & AlmaLinux (10)**: use the method based on *system-connections* files.
 
 > [!tabs]
-> **Configuration based on *network-scripts* files**
+> **Configuring *network-scripts* files**
 >>
 >> The network configuration files are located in the `/etc/sysconfig/network-scripts/` directory. We recommend that you start by backing up the relevant configuration file. In our example, our file is called `ifcfg-eth0`, so we copy the `ifcfg-eth0` file using the following commands. Remember to replace **eth0** with your actual interface if necessary.
 >>
@@ -358,7 +367,7 @@ There are two ways to configure your network depending on the operating system i
 >> sudo systemctl restart networking
 >> ```
 >>
-> **Configuration based on *system-connections* files**
+> **Configuring *system-connections* files**
 >>
 >> The network configuration file is located in the `/etc/NetworkManager/system-connections/`. We recommend that you start by backing up the relevant configuration file. In our example, our file  is called `cloud-init-eth0.nmconnection`, so we copy the `cloud-init-eth0.nmconnection` file using the following commands. Remember to replace **eth0** with your actual interface if necessary. 
 >>
@@ -506,7 +515,7 @@ You can also test the connection to another remote server. However, IPv6 must be
 
 > [!primary]
 >
-> If, despite these changes, IPv6 does not seem work on your server, it is possible (in rare cases) that you will have to carry out additional modifications. In such cases, try the following steps:
+> If, despite these changes, IPv6 does not seem to work on your server, you may need to make additional modifications (in rare cases). In such cases, try the following steps:
 >
 > - Depending on the operating system, try to change the prefix (or *netmask*) of your IP address from /128 to /64. This will include the IPv6 gateway in your subnet.
 >
@@ -514,7 +523,7 @@ You can also test the connection to another remote server. However, IPv6 must be
 > 
 > - In Windows, verify that the firewall allows ICMP requests for IPv6.
 
-///  details | **Step 4: Disable Cloud-init network management (optional)**
+/// details | **Step 4: Disable Cloud-init network management (optional)**
 
 > [!primary]
 >
@@ -538,10 +547,9 @@ sudo echo "network: {config: disabled}" > /etc/cloud/cloud.cfg.d/98-disable-netw
 > It might be necessary to reboot the server for the change to take effect.
 >
 
-In order to return to automatic management of your network by Cloud-init, delete the newly created file or move it to another directory.
+To re-enable automatic network management by Cloud-init, delete the newly created file or move it to another directory.
 
 ///
-
 
 ## Go further <a name="go-further"></a>
 

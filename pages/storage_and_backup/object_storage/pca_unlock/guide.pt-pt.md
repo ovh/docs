@@ -16,17 +16,26 @@ Destinado aos dados raramente consultados, é necessário um pedido de desbloque
 
 ## Requisitos
 
-- A partir da Área de Cliente OVHcloud:
-    - Ter acesso à [Área de Cliente OVHcloud](/links/manager).
 - Degel através de python-swiftclient:
     - [Preparar o ambiente para utilizar a API OpenStack](/pages/public_cloud/public_cloud_cross_functional/prepare_the_environment_for_using_the_openstack_api) instalando python-swiftclient.
     - [Carregar as variáveis de ambiente OpenStack](/pages/public_cloud/public_cloud_cross_functional/loading_openstack_environment_variables).
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Acesso à Área de Cliente OVHcloud
+
+- **Ligação direta:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Caminho de navegação:** `Public Cloud`{.action} > Selecione o seu projeto
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## Instruções
 
 ### Libertar os seus objetos a partir da Área de Cliente
 
-Na [Área de Cliente OVHcloud](/links/manager), clique no separador `Public Cloud`{.action}, selecione o seu projeto Public Cloud e clique na secção `Cloud Archive`{.action} no menu à esquerda.
+Clique na secção `Cloud Archive`{.action} no menu à esquerda.
 
 Para descongelar um arquivo, clique no botão `...`{.action} à direita desta e, a seguir, em `Descongelar`{.action} a fim de dar início ao processo de recuperação.
 

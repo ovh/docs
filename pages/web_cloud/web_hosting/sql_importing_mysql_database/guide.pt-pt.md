@@ -1,7 +1,7 @@
 ---
 title: 'Importar um backup para a base de dados de um alojamento web'
 excerpt: 'Saiba como importar um backup para a base de dados de um alojamento web da OVHcloud'
-updated: 2025-10-08
+updated: 2026-04-01
 ---
 
 ## Sumário
@@ -15,7 +15,18 @@ As bases de dados, utilizadas pela maioria dos sistemas de gestão de conteúdos
 - Ter um serviço de [alojamento web da OVHcloud](/links/web/hosting).
 - Possuir uma base de dados criada no âmbito de uma oferta de [alojamento web da OVHcloud](/links/web/hosting).
 - Ter acesso ao backup que pretende importar na base de dados.
-- Consoante o método de importação utilizado, ter acesso à gestão do alojamento web a partir da [Área de Cliente OVHcloud](/links/manager) ou às informações que lhe permitem aceder à base de dados.
+- Consoante o método de importação utilizado, ter acesso à gestão do alojamento web a partir da Área de Cliente OVHcloud ou às informações que lhe permitem aceder à base de dados.
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Acesso à Área de Cliente OVHcloud
+
+- **Ligação direta:** [Alojamentos](/links/control-panel/web-hosting)
+- **Caminho de navegação:** `Web Cloud`{.action} > `Alojamentos`{.action} > Selecione o seu alojamento web
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## Instruções
 
@@ -39,71 +50,109 @@ Consulte a documentação correspondente ao método de importação pretendido.
 >
 > A responsabilidade sobre a configuração e a gestão dos serviços que a OVHcloud disponibiliza recai sobre o utilizador. Assim, deverá certificar-se de que estes funcionam corretamente.
 >
-> Este manual fornece as instruções necessárias para realizar as operações mais habituais. No entanto, recomendamos que recorra a um fornecedor especializado e/ou que contacte o editor do serviço se encontrar dificuldades. Não poderemos proporcionar-lhe assistência técnica. Para mais informações, aceda à secção deste guia intitulada: “Quer saber mais?”
+> Este manual fornece as instruções necessárias para realizar as operações mais habituais. No entanto, recomendamos que recorra a um fornecedor especializado e/ou que contacte o editor do serviço se encontrar dificuldades. Não poderemos proporcionar-lhe assistência técnica. Para mais informações, aceda à secção deste guia intitulada: "Quer saber mais?"
 >
 
 ### Restaurar um backup a partir da Área de Cliente
 
-Aceda à [Área de Cliente OVHcloud](/links/manager), clique em `Alojamentos`{.action} e escolha o nome do alojamento correspondente. Por fim, clique no separador `Base de dados`{.action}.
+<!-- CP-STEPS-START:restore-backup-control-panel -->
+Para efetuar esta operação, clique nos separadores abaixo para visualizar cada uma das **4** etapas.
 
-![Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases.png){.thumbnail}
-
-Aparecerá uma tabela com todas as bases de dados criadas com o plano de alojamento. Clique nos três pontos à direita da linha correspondente à base de dados que pretende restaurar numa data anterior e selecione `Restaurar um backup`{.action}. Tenha em atenção que esta ação substituirá o conteúdo atual da base de dados pelo backup.
-
-![databaseimport](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/restore-backup.png){.thumbnail}
-
-Todos os backups ficarão disponíveis na base de dados selecionada.  Poderá consultar a data exata das cópias de segurança, assim como a data em que estas cópias de segurança serão eliminadas da ferramenta da OVHcloud.
-
-Clique nos três pontos à direita da linha correspondente à base de dados que pretende restaurar e selecione `Restaurar um backup`{.action}. Na janela que aparece, certifique-se de que as informações estão corretas e clique em `Confirmar`{.action}. Aguarde uns instantes para que a restauração seja realizada. 
-
-![databaseimport](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/restore-the-backup.png){.thumbnail}
+> [!tabs]
+> **Etapa 1**
+>>
+>> Aceda à página [Alojamentos](/links/control-panel/web-hosting) e selecione o alojamento web em causa.
+>>
+> **Etapa 2**
+>>
+>> Na página que aparece, clique no separador `Bases de dados`{.action}.
+>>
+> **Etapa 3**
+>>
+>> Clique nos três pontos à direita da base de dados que pretende restaurar e selecione `Restaurar um backup`{.action}. Tenha em atenção que esta ação substituirá o conteúdo atual da base de dados pelo backup.
+>>
+>> ![databaseimport](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/restore-backup.png){.thumbnail}
+>>
+>> Todos os backups disponíveis serão apresentados. Clique nos três pontos à direita do backup que pretende restaurar e selecione `Restaurar backup`{.action}.
+>>
+> **Etapa 4**
+>>
+>> Na janela que aparece, certifique-se de que as informações estão corretas e clique em `Confirmar`{.action}. Aguarde uns instantes para que a restauração seja realizada.
+>>
+>> ![databaseimport](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/restore-the-backup.png){.thumbnail}
+<!-- CP-STEPS-END:restore-backup-control-panel -->
 
 ### Importar o seu próprio backup a partir da Área de Cliente
 
-Aceda à [Área de Cliente OVHcloud](/links/manager), clique em `Alojamentos`{.action} e escolha o nome do alojamento correspondente. Por fim, clique no separador `Base de dados`{.action}.
+<!-- CP-STEPS-START:import-own-backup-control-panel -->
+Para efetuar esta operação, clique nos separadores abaixo para visualizar cada uma das **5** etapas.
 
-![Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases.png){.thumbnail}
-
-Aparecerá uma tabela com todas as bases de dados criadas com o plano de alojamento. Clique nos três pontos à direita da linha correspondente à base de dados na qual pretende importar dados e selecione `Importar ficheiro`{.action}.
-
-![databaseimport](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/import-file.png){.thumbnail}
-
-Na nova janela, selecione `Importar um novo ficheiro`{.action} e clique em `Seguinte`{.action}.
-
-> [!primary]
->
-> A opção `Utilizar um ficheiro existente`{.action} permite importar novamente os dados de um ficheiro que já foi enviado na ferramenta de importação.
->
-
-![databaseimport](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/database-import-step-1-new-file.png){.thumbnail}
-
-Introduza o nome do ficheiro (que lhe permitirá identificar este backup mais tarde, caso pretenda voltar a restaurá-lo) e selecione o ficheiro de backup no seu computador. Clique em `Enviar`{.action}.
-
-Aguarde a confirmação de envio e, de seguida, clique em `Seguinte`{.action}.
-
-![databaseimport](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/database-import-step-2-new-file.png){.thumbnail}
-
-Por último, selecione as opções adicionais que pretende aplicar:
-
-- **eliminar conteúdos da base de dados**: o conteúdo da BD será completamente eliminado e substituído pelo conteúdo do backup. Recomendamos que selecione esta opção apenas e exclusivamente se pretende substituir o conteúdo atual da base de dados pelo conteúdo do ficheiro de backup.
-
-- **enviar um e-mail no final da importação**: no final do processo, é enviado um e-mail para informar que a importação foi concluída.
-
-Uma vez selecionada a opção, clique em `Confirmar`{.action} e aguarde até que a importação seja concluída.
-
-![databaseimport](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/database-import-step-3.png){.thumbnail}
+> [!tabs]
+> **Etapa 1**
+>>
+>> Aceda à página [Alojamentos](/links/control-panel/web-hosting) e selecione o alojamento web em causa.
+>>
+> **Etapa 2**
+>>
+>> Na página que aparece, clique no separador `Bases de dados`{.action}.
+>>
+> **Etapa 3**
+>>
+>> Clique nos três pontos à direita da base de dados na qual pretende importar dados e selecione `Importar ficheiro`{.action}.
+>>
+>> ![databaseimport](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/import-file.png){.thumbnail}
+>>
+> **Etapa 4**
+>>
+>> Na nova janela, selecione `Importar um novo ficheiro`{.action} e clique em `Seguinte`{.action}.
+>>
+>> ![databaseimport](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/database-import-step-1-new-file.png){.thumbnail}
+>>
+>> Introduza o nome do ficheiro (que lhe permitirá identificar este backup mais tarde, caso pretenda voltar a restaurá-lo) e selecione o ficheiro de backup no seu computador. Clique em `Enviar`{.action}.
+>>
+>> Aguarde a confirmação de envio e, de seguida, clique em `Seguinte`{.action}.
+>>
+>> ![databaseimport](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/database-import-step-2-new-file.png){.thumbnail}
+>>
+> **Etapa 5**
+>>
+>> Por último, selecione as opções adicionais que pretende aplicar:
+>>
+>> - **eliminar conteúdos da base de dados**: o conteúdo da BD será completamente eliminado e substituído pelo conteúdo do backup. Recomendamos que selecione esta opção apenas e exclusivamente se pretende substituir o conteúdo atual da base de dados pelo conteúdo do ficheiro de backup.
+>> - **enviar um e-mail no final da importação**: no final do processo, é enviado um e-mail para informar que a importação foi concluída.
+>>
+>> Uma vez selecionada a opção, clique em `Confirmar`{.action} e aguarde até que a importação seja concluída.
+>>
+>> ![databaseimport](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/database-import-step-3.png){.thumbnail}
+>>
+>> > [!primary]
+>> >
+>> > A opção `Utilizar um ficheiro existente`{.action} permite importar novamente os dados de um ficheiro que já foi enviado na ferramenta de importação.
+>> >
+<!-- CP-STEPS-END:import-own-backup-control-panel -->
 
 ### Realizar a importação a partir da interface phpMyAdmin
 
-Em primeiro lugar, deverá aceder a phpMyAdmin. Para isso, aceda à [Área de Cliente OVHcloud](/links/manager), clique em `Alojamentos`{.action} e selecione o nome do alojamento correspondente. Por fim, clique no separador `Base de dados`{.action}.
+<!-- CP-STEPS-START:import-phpmyadmin -->
+Em primeiro lugar, deverá aceder a phpMyAdmin. Para isso, clique nos separadores abaixo para visualizar cada uma das **3** etapas.
 
-![Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases.png){.thumbnail}
+> [!tabs]
+> **Etapa 1**
+>>
+>> Aceda à página [Alojamentos](/links/control-panel/web-hosting) e selecione o alojamento web em causa.
+>>
+> **Etapa 2**
+>>
+>> Na página que aparece, clique no separador `Bases de dados`{.action}.
+>>
+> **Etapa 3**
+>>
+>> Clique nos três pontos à direita da base de dados e selecione `Aceder ao phpMyAdmin`{.action}.
+>>
+>> ![databaseimport](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/go-to-phpmyadmin.png){.thumbnail}
+<!-- CP-STEPS-END:import-phpmyadmin -->
 
-Aparecerá uma tabela com todas as bases de dados criadas com o plano de alojamento. Clique nos três pontos à direita da linha correspondente à base de dados e selecione `Aceder ao phpMyAdmin`{.action}.
-
-![databaseimport](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/go-to-phpmyadmin.png){.thumbnail}
-
-Uma vez na página de phpMyAdmin, introduza as informações da base de dados, selecione a opção de aceder aos dados atuais da base de dados no menu pendente e, em seguida, conecte-se.  Depois de se conectar, na barra superior direita, selecione a opção `Importar`{.action} e introduza a informação que lhe é solicitada. Recordamos que existe um limite para o tamanho do ficheiro de configuração.
+Uma vez na página de phpMyAdmin, introduza as informações da base de dados, selecione a opção de aceder aos dados atuais da base de dados no menu pendente e, em seguida, conecte-se. Depois de se conectar, na barra superior direita, selecione a opção `Importar`{.action} e introduza a informação que lhe é solicitada. Recordamos que existe um limite para o tamanho do ficheiro de configuração.
 
 > [!warning]
 >
@@ -129,7 +178,7 @@ system("cat nome_ficheiro_backup.sql | mysql --host=endereço_do_servidor --user
 ?>
 ```
 
-Substitua a informação genérica do script pela informação da base de dados correspondente. Depois de concluir o script, recomendamos que atribua um nome (“ import.php”, por exemplo).
+Substitua a informação genérica do script pela informação da base de dados correspondente. Depois de concluir o script, recomendamos que atribua um nome (" import.php", por exemplo).
 
 |Informações|Substituir por|
 |---|---|
@@ -141,17 +190,17 @@ Substitua a informação genérica do script pela informação da base de dados 
 
 #### 2 - Carregar o script e o backup no espaço de armazenamento
 
-Depois de criar o script de importação, deverá carregá-lo juntamente com o ficheiro de backup que quer importar no espaço de armazenamento do seu alojamento web. Para isso, ligue-se ao seu espaço de armazenamento. Se precisar de ajuda, consulte o passo 2 do nosso manual “[Publicar um website no alojamento web](/pages/web_cloud/web_hosting/hosting_how_to_get_my_website_online)”.
+Depois de criar o script de importação, deverá carregá-lo juntamente com o ficheiro de backup que quer importar no espaço de armazenamento do seu alojamento web. Para isso, ligue-se ao seu espaço de armazenamento. Se precisar de ajuda, consulte o passo 2 do nosso manual "[Publicar um website no alojamento web](/pages/web_cloud/web_hosting/hosting_how_to_get_my_website_online)".
 
-Para poder realizar as seguintes ações, carregue o script de importação e o ficheiro de backup na pasta “www”. **Preste especial atenção ao nome do ficheiro do script de importação.** Certifique-se de que não apaga um ficheiro já existente com o mesmo nome no espaço de armazenamento quando carregar o script. Se aparecer uma mensagem de aviso, altere o nome do script que acabou de criar por outro diferente e tente carregá-lo novamente.
+Para poder realizar as seguintes ações, carregue o script de importação e o ficheiro de backup na pasta "www". **Preste especial atenção ao nome do ficheiro do script de importação.** Certifique-se de que não apaga um ficheiro já existente com o mesmo nome no espaço de armazenamento quando carregar o script. Se aparecer uma mensagem de aviso, altere o nome do script que acabou de criar por outro diferente e tente carregá-lo novamente.
 
 #### 3 - Chamar um script
 
 Depois de carregar o script de importação e o ficheiro de backup no espaço de armazenamento, só terá de iniciar a operação. Para isso, é necessário chamar o script.
 
-Introduza no browser o URL completo do script (por exemplo, “mypersonaldomain.ovh/import.php”, se o nome do script for “import.php”). Se as informações introduzidas no script estiverem corretas, iniciará a importação. Só precisará de esperar alguns segundos. Caso contrário, verifique as informações introduzidas no script e tente novamente.
+Introduza no browser o URL completo do script (por exemplo, "mypersonaldomain.ovh/import.php", se o nome do script for "import.php"). Se as informações introduzidas no script estiverem corretas, iniciará a importação. Só precisará de esperar alguns segundos. Caso contrário, verifique as informações introduzidas no script e tente novamente.
 
-Uma vez concluída a importação, recomendamos vivamente que elimine o ficheiro de backup assim como o script do diretório “www”.
+Uma vez concluída a importação, recomendamos vivamente que elimine o ficheiro de backup assim como o script do diretório "www".
 
 ### Importar um backup por SSH
 

@@ -1,7 +1,7 @@
 ---
 title: "Web Cloud Databases - Modifier les droits d'un utilisateur"
 excerpt: "Découvrez comment modifier les droits d'un utilisateur sur votre solution Web Cloud Databases"
-updated: 2025-06-23
+updated: 2026-03-24
 ---
 
 ## Objectif
@@ -13,48 +13,54 @@ Au cours de l'utilisation du produit, vous pouvez être amené à modifier les d
 
 ## Prérequis
 
-- Être connecté à votre [espace client OVHcloud](/links/manager).
 - Disposer d'une solution [Web Cloud Databases](/links/web/databases) et d'un ou plusieurs utilisateurs.
+
+<!-- CP-NAV-START:web-cloud-databases -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Web Cloud Databases](/links/control-panel/web-cloud-databases)
+- **Pour accéder à vos services :** `Web Cloud`{.action} > `Web Cloud Databases`{.action} > Sélectionnez votre service de base de données
+
+---
+<!-- CP-NAV-END:web-cloud-databases -->
 
 ## En pratique
 
 > [!primary]
 > Pour créer un nouvel utilisateur sur votre solution Web Cloud Databases, consultez la section **Créer un utilisateur** de notre guide « [Créer vos bases de données et vos utilisateurs sur votre serveur de bases de données](/pages/web_cloud/web_cloud_databases/create-db-and-user-on-db-server) ».
 
-Cliquez sur les onglets ci-dessous afin d'afficher successivement chacune des **5** étapes.
+<!-- CP-STEPS-START:modify-rights-tabs -->
+Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4** étapes.
 
 > [!tabs]
 > **Étape 1**
 >>
->> Connectez-vous à votre [espace client OVHcloud](/links/manager), puis rendez-vous dans la partie `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Étape 2**
->>
->> Cliquez sur le menu `Web Cloud Databases`{.action}, puis choisissez la solution Web Cloud Databases concernée.
+>> Accédez à la page [Web Cloud Databases](/links/control-panel/web-cloud-databases), puis choisissez la solution concernée.
 >>
 >> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases.png){.thumbnail}
 >>
-> **Étape 3**
+> **Étape 2**
 >>
 >> Sur la page qui s'affiche, cliquez sur l'onglet `Utilisateurs et droits`{.action}.
 >>
 >> ![Users and rights](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/users-and-rights.png){.thumbnail}
 >>
-> **Étape 4**
+> **Étape 3**
 >>
->> Dans le tableau apparaît, cliquez sur le bouton `...`{.action} situé à droite de l'utilisateur concerné, puis sur `Gérer les droits`{.action}.
+>> Cliquez sur le bouton `...`{.action} situé à droite de l'utilisateur concerné, puis sur `Gérer les droits`{.action}.
 >>
 >> ![Manage rights](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/users-and-rights/manage-rights-user-alone.png){.thumbnail}
 >>
-> **Étape 5**
+> **Étape 4**
 >>
 >> Sur la nouvelle page qui s'affiche, vous trouverez un tableau recensant toutes les bases de données présentes sur votre solution Web Cloud Databases. Vous visualiserez dans ce tableau l'ensemble des droits dont votre utilisateur dispose pour chacune des bases de données présentes sur votre solution Web Cloud Databases.
 >>
 >> ![Changing user rights](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/users-and-rights/changing-user-rights-db-alone.png){.thumbnail}
 >>
 >> C'est à cet endroit que vous pourrez modifier les droits de votre utilisateur pour chacune de vos bases de données. Pour cela et pour chacune des bases de données concernées, il vous suffit de cliquer sur les cercles vides correspondants aux droits que vous souhaitez redéfinir pour votre utilisateur. La modification est effective en quelques instants.
+<!-- CP-STEPS-END:modify-rights-tabs -->
 
 Retrouvez ci-dessous un tableau récapitulatif des types de requêtes possibles sur une base de données en fonction du droit attribué à l'utilisateur :
 
@@ -111,7 +117,7 @@ Retrouvez ci-dessous un tableau récapitulatif des types de requêtes possibles 
 ## Aller plus loin
 
 Pour des prestations spécialisées (référencement, développement, etc.), contactez les [partenaires OVHcloud](/links/partner).
- 
+
 Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](/links/support).
- 
+
 Échangez avec notre [communauté d'utilisateurs](/links/community).

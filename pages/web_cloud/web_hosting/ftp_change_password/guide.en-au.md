@@ -1,8 +1,22 @@
 ---
 title: "Changing an FTP user password"
 excerpt: "Find out how to change the password for an FTP user created on your OVHcloud Web Hosting plan"
-updated: 2025-10-14
+updated: 2026-03-31
 ---
+
+<style>
+details>summary {
+    color:rgb(33, 153, 232) !important;
+    cursor: pointer;
+}
+details>summary::before {
+    content:'\25B6';
+    padding-right:1ch;
+}
+details[open]>summary::before {
+    content:'\25BC';
+}
+</style>
 
 ## Objective
 
@@ -24,68 +38,98 @@ This access allows you to [put your website online](/pages/web_cloud/web_hosting
 ## Requirements
 
 - An OVHcloud [Web Hosting plan](/links/web/hosting)
-- Access to the [OVHcloud Control Panel](/links/manager)
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Hosting plans](/links/control-panel/web-hosting)
+- **Navigation path:** `Web Cloud`{.action} > `Hosting plans`{.action} > Select your web hosting plan
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## Instructions
 
-### 1 - Access the FTP user management interface
+### Modify the FTP user password
 
-Click on the tabs below to view each of the **4** steps.
+> [!primary]
+>
+> For more information on password management best practices, please refer to the guide "[Setting and managing an account password](/pages/account_and_service_management/account_information/manage-ovh-password)".
+
+Depending on which OVHcloud [Web Hosting plan](/links/web/hosting) you have, there are two different ways to change your FTP user password.
+
+**Click on your plan to view the content.**
+
+<!-- CP-STEPS-START:change-ftp-password-perso -->
+/// details | Personal and 100M free hosting plans (single FTP user)
+
+Click on the tabs below to view each of the **3** steps.
 
 > [!tabs]
 > **Step 1**
 >>
->> Log in to the [OVHcloud Control Panel](/links/manager), then go to the `Web Cloud`{.action} section.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Step 2**
->>
->> Click the `Hosting plans`{.action} menu, then select the Web Hosting plan concerned.
+>> Go to the [Hosting plans](/links/control-panel/web-hosting) page, then select the web hosting plan concerned.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Step 3**
+> **Step 2**
 >>
->> On the page that pops up, click on the `FTP - SSH`{.action} tab.
+>> Click on the `FTP - SSH`{.action} tab.
 >>
 >> ![FTP - SSH](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh.png){.thumbnail}
 >>
-> **Step 4**
+> **Step 3**
 >>
->> A table will display the *FTP users* created on your Web Hosting plan. These users allow you to access your FTP storage space to put your website files online. When you set up your Web Hosting plan, a user account will be created automatically.
+>> A table will display the *FTP users* created on your Web Hosting plan. Click on the *pencil icon* in the `Password`{.action} column, enter the new password **in accordance with the password policy**, then confirm the change by clicking on the *green* validation button.
+>>
+>> ![change-ftp-password-step1-perso](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/change-password-perso.png){.thumbnail}
 
-### 2 - Modify the FTP user password
+///
+<!-- CP-STEPS-END:change-ftp-password-perso -->
 
-> [!primary]
->
-> For more information on password management best practices, follow the instructions in this [guide](/pages/account_and_service_management/account_information/manage-ovh-password).
->
+<!-- CP-STEPS-START:change-ftp-password-pro-performance -->
+/// details | Pro and Performance plans (multiple FTP users)
 
-Depending on which OVHcloud [Web Hosting plan](/links/web/hosting) you have, there are two different paths for changing your FTP user password user via the `FTP - SSH`{.action} tab:
+Click on the tabs below to view each of the **3** steps.
 
-- **For Web Hosting plans that do not allow you to create a second FTP user** (*Personal hosting*): Click on the *pencil icon* in the `Password`{.action} column of the table that appears, enter the new password **in accordance with the password policy**, then confirm the change by clicking on the *green* validation button.
+> [!tabs]
+> **Step 1**
+>>
+>> Go to the [Hosting plans](/links/control-panel/web-hosting) page, then select the web hosting plan concerned.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Step 2**
+>>
+>> Click on the `FTP - SSH`{.action} tab.
+>>
+>> ![FTP - SSH](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh.png){.thumbnail}
+>>
+> **Step 3**
+>>
+>> A table will display the *FTP users* created on your Web Hosting plan. Click on the `...`{.action} button to the right of the FTP user concerned, then `Change password`{.action}. In the window that pops up, enter the new password you want **by following the password policy**, enter it again and click the `Confirm`{.action} button.
+>>
+>> ![change-ftp-password-pro](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/change-password-pro.png){.thumbnail}
 
-![change-ftp-password-step1-perso](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/change-password-perso.png){.thumbnail}
-
-- **For plans that allow you to create multiple FTP users** (*Pro* and *Performance*): Click on the `...`{.action} button to the right of the FTP user concerned, then `Change password`{.action}. In the window that pops up, enter the new password you want **by following the password policy**, enter it again and click the `Confirm`{.action} button.
-
-![change-ftp-password-pro](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/change-password-pro.png){.thumbnail}
+///
+<!-- CP-STEPS-END:change-ftp-password-pro-performance -->
 
 > [!primary]
 >
 > Your new password must respect the following **password policy**:
 >
->- Minimum 9 characters
->- Maximum 30 characters
->- At least one capital letter
->- At least one lower-case letter
->- At least one number
->- Be composed only of numbers and letters
+> - Minimum 9 characters
+> - Maximum 30 characters
+> - At least one capital letter
+> - At least one lower-case letter
+> - At least one number
+> - Be composed only of numbers and letters
 
 Then go to the `Ongoing tasks`{.action} tab and refresh the page regularly. Your change will be effective within a few minutes.
 
-### 3 - Access your storage space
+### Access your storage space
 
 To access your FTP storage space, please refer to our guide ["Logging in to your Web Hosting plan’s storage space"](/pages/web_cloud/web_hosting/ftp_connection).
 

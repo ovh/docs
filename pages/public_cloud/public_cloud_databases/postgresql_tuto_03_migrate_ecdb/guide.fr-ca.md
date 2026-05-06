@@ -1,5 +1,5 @@
 ---
-title: PostgreSQL - Tutoriel - Comment migrer de Enterprise Cloud Databases vers Public Cloud Databases (EN)
+title: Migrer une base de données sur site vers Public Cloud Databases pour PostgreSQL (EN)
 excerpt: Learn how to migrate a on-premises PostgreSQL database instance to Public Cloud Databases for PostgreSQL
 updated: 2022-03-16
 ---

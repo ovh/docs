@@ -1,12 +1,8 @@
 ---
 title: "Lista degli indirizzi IP da autorizzare per la CDN Infrastructure"
 excerpt: "Scopri tutti gli indirizzi IP autorizzati per la tua CDN Infrastructure"
-updated: 2024-06-20
+updated: 2026-02-17
 ---
-
-> [!primary]
-> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Contribuisci" di questa pagina.
->
 
 ## Obiettivo
 
@@ -29,7 +25,7 @@ Qui sotto trovi la lista degli indirizzi IP:
 |Indirizzo IP|
 |---|
 |144.217.2.0/23|
-|46.105.196.0/20|
+|46.105.192.0/20|
 |51.254.41.128/25|
 |137.74.120.0/22|
 |51.68.15.224/27|

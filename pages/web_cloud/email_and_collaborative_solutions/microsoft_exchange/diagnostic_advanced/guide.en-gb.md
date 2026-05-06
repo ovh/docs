@@ -14,21 +14,25 @@ Since there is a multitude of reasons why errors might occur on Exchange email a
 
 - an [OVHcloud Exchange solution](/links/web/emails-hosted-exchange) already set up
 - credentials for the Exchange account to be checked
-- access to the [OVHcloud Control Panel](/links/manager)
 - being up to date in the [payments](/pages/account_and_service_management/managing_billing_payments_and_services/invoice_management#pay-bills) for this service and the related domain name.
+
+<!-- CP-NAV-START:web-exchange -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Exchange](/links/control-panel/web-exchange)
+- **Navigation path:** `Web Cloud`{.action} > `Exchange`{.action} > Select your platform
+
+---
+<!-- CP-NAV-END:web-exchange -->
 
 ## Instructions
 
 ### Running the diagnostic
 
-1. Log in to your [OVHcloud Control Panel](/links/manager).
-1. Open the `Web Cloud`{.action} section.
-1. In the `MICROSOFT` section, click `Exchange`{.action}.
-1. Select the service concerned.
-
-![Exchange Diagnostic](images/img_4450.png){.thumbnail}
-
-Click on the tab `Diagnostics`{.action} and choose the Exchange account concerned from the drop-down menu. Enter the account password in the field below, then click on `Launch diagnostic`{.action}. 
+<!-- CP-STEPS-START:run-diagnostic -->
+Click on the tab `Diagnostics`{.action} and choose the Exchange account concerned from the drop-down menu. Enter the account password in the field below, then click on `Launch diagnostic`{.action}.
 
 ![Exchange Diagnostic](images/img_4451.png){.thumbnail}
 
@@ -40,7 +44,8 @@ The results page offers two actions to continue:
 
 - `New diagnostic`{.action}: starts another diagnostic check.
 
-- `Open a support ticket`{.action}: allows you to create a request to our technical support which will include the diagnostic results. 
+- `Open a support ticket`{.action}: allows you to create a request to our technical support which will include the diagnostic results.
+<!-- CP-STEPS-END:run-diagnostic -->
 
 ### Error explanations
 
@@ -50,7 +55,9 @@ Refer to the following summary of possible errors to find the quickest resolutio
 
 A blocked account still receives emails but sending has been disabled by the automatic spam protection system.
 
+<!-- CP-STEPS-START:check-spam-status -->
 You can verify this in the `Email accounts`{.action} tab of your Exchange service. The account will have the `SPAM`{.action} status displayed in the table.
+<!-- CP-STEPS-END:check-spam-status -->
 
 Please follow the instructions in [this guide](/pages/web_cloud/email_and_collaborative_solutions/troubleshooting/locked_for_spam) to enable our security teams to re-enable the account.
 
@@ -73,7 +80,9 @@ You can find more information about this topic in the [security policy guide](/p
 
 This can be caused by entering an incorrect account password. First verify via a [webmail login](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa) that the password is correct, then restart the diagnostics.
 
+<!-- CP-STEPS-START:change-account-password -->
 If necessary, you can change the password of the account concerned in the Exchange tab `Email accounts`{.action} of your [OVHcloud Control Panel](/links/manager). If the issue persists, create a support request.
+<!-- CP-STEPS-END:change-account-password -->
 
 ### The domain MX record is not valid
 
@@ -86,10 +95,13 @@ Depending on your Exchange service usage, the following MX servers are valid:
 - Exchange & POP/IMAP email not hosted by OVHcloud: ex<b>?</b>.mail.ovh.net
 <a name="hostname"></a>
 
+<!-- CP-STEPS-START:find-exchange-hostname -->
 > [!warning]
 > In our guides, we use as the server name: ex<b>?</b>.mail.ovh.net. You will need to replace the "?" with the actual number indicating the appropriate server  for your Exchange service.
 >
-> You can find this information in the OVHcloud Control Panel, in the `Web Cloud`{.action} >
+> You can find this information in the OVHcloud Control Panel, in the `Web Cloud`{.action} section. Open `Exchange`{.action} and select your service. The server name is displayed in the **Connection** section of the `General information`{.action} tab.
+>
+<!-- CP-STEPS-END:find-exchange-hostname -->
 
 ### The domain's SRV record is not valid
 

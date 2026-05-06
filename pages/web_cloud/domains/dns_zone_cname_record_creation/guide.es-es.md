@@ -1,7 +1,7 @@
 ---
 title: "Cómo añadir un registro DNS de tipo CNAME para un subdominio"
-excerpt: "Descubra cómo añadir un registro DNS de tipo CNAME en una zona DNS gestionada en OVHcloud para el subdominio de un dominio"
-updated: 2025-06-25
+excerpt: "Descubra cómo añadir un registro DNS de tipo CNAME en una zona DNS gestionada en OVHcloud para el subdominio de un nombre de dominio"
+updated: 2026-03-24
 ---
 
 <style>
@@ -20,7 +20,7 @@ details[open]>summary::before {
 
 ## Objetivo
 
-Un registro CNAME permite asociar un subdominio a un dominio o subdominio sin tener que especificar una dirección IP. Esto significa que el subdominio será redirigido a la dirección IP del dominio o subdominio de destino, sin necesidad de configuración adicional.
+Un registro CNAME permite asociar un subdominio a un nombre de dominio o subdominio sin tener que especificar una dirección IP. Esto significa que el subdominio será redirigido a la dirección IP del nombre de dominio o subdominio de destino, sin necesidad de configuración adicional.
 
 Por ejemplo, si crea un registro CNAME para *www.domain.tld* que apunta a *domain.tld*, *www.domain.tld* utilizará la misma dirección IP que *domain.tld*.
 
@@ -32,9 +32,20 @@ Los registros CNAME son útiles para evitar tener que modificar las direcciones 
 
 ## Requisitos
 
-- Tener un [dominio](/links/web/domains).
-- Tener una zona DNS asociada al dominio en OVHcloud.
-- Estar conectado a su [área de cliente de OVHcloud](/links/manager), en la sección `Web Cloud`{.action}.
+- Tener un [nombre de dominio](/links/web/domains).
+- Tener una zona DNS asociada al nombre de dominio en OVHcloud.
+
+<!-- CP-NAV-START:web-dns-zone -->
+---
+
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [Zonas DNS](/links/control-panel/web-dns-zone)
+- **Ruta de navegación:** `Web Cloud`{.action} > `Zonas DNS`{.action} > Seleccione su nombre de dominio
+
+---
+<!-- CP-NAV-END:web-dns-zone -->
+
 
 > [!warning]
 > 
@@ -43,13 +54,34 @@ Los registros CNAME son útiles para evitar tener que modificar las direcciones 
 
 ## Procedimiento
 
-### Añadir un registro DNS de tipo CNAME para el subdominio de un dominio
+### Añadir un registro DNS de tipo CNAME para el subdominio de un nombre de dominio
 
-1. Haga clic en el menú `Zonas DNS`{.action} y seleccione el dominio correspondiente.
-2. En la nueva página, haga clic en el botón `Añadir un registro`{.action}.
-3. En la ventana que se abre, seleccione el tipo de registro `CNAME`{.action}.
-4. Introduzca a continuación en el campo `Subdominio` el subdominio de que se trate (por ejemplo: `www` para el subdominio `www.domain.tld`) y, en el campo `Destino *`, el nombre de dominio o subdominio (por ejemplo: `domain.tld`) que desee identificar mediante el registro de tipo CNAME. Haga clic en `Siguiente`{.action}.
-5. Revise el resumen y haga clic en `Aceptar`{.action}. Espere hasta **24** horas para que la propagación de la adición en la red DNS sea plenamente efectiva.
+<!-- CP-STEPS-START:add-cname-record -->
+Haga clic en las pestañas de abajo para ver cada uno de los **5** pasos.
+
+> [!tabs]
+> **Paso 1**
+>>
+>> Acceda a la página [Zonas DNS](/links/control-panel/web-dns-zone) y seleccione el dominio correspondiente.
+>>
+>> ![DNS zones](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
+>>
+> **Paso 2**
+>>
+>> Haga clic en el botón `Añadir un registro`{.action}.
+>>
+> **Paso 3**
+>>
+>> En la ventana que se abre, seleccione el tipo de registro `CNAME`{.action}.
+>>
+> **Paso 4**
+>>
+>> Introduzca en el campo `Subdominio` el subdominio correspondiente (por ejemplo: `www` para el subdominio `www.domain.tld`) y, en el campo `Destino *`, el nombre de dominio o subdominio (por ejemplo: `domain.tld`) que desee identificar mediante el registro de tipo CNAME. Haga clic en `Siguiente`{.action}.
+>>
+> **Paso 5**
+>>
+>> Revise el resumen y haga clic en `Aceptar`{.action}. Espere hasta **24** horas para que la propagación de la adición en la red DNS sea plenamente efectiva.
+<!-- CP-STEPS-END:add-cname-record -->
 
 /// details | Consulte nuestras guías detalladas:
 
@@ -58,7 +90,7 @@ Los registros CNAME son útiles para evitar tener que modificar las direcciones 
 - [¿Cómo crear un subdominio?](/pages/web_cloud/domains/domain_create_subdomains)
 - [Editar una zona DNS de OVHcloud](/pages/web_cloud/domains/dns_zone_edit)
 - [Alojar varios sitios web en un mismo hosting](/pages/web_cloud/web_hosting/multisites_configure_multisite)
-- [Web hosting - Modificar un dominio ya asociado a un alojamiento](/pages/web_cloud/web_hosting/multisites_modify_domain)
+- [Web hosting - Modificar un nombre de dominio ya asociado a un alojamiento](/pages/web_cloud/web_hosting/multisites_modify_domain)
 
 ///
 
@@ -80,11 +112,11 @@ Una consulta DNS para *www.domain.tld* devolverá el destino del registro CNAME 
 
 ///
 
-/// details | CNAME en un dominio de su propia zona DNS
+/// details | CNAME en un nombre de dominio de su propia zona DNS
 
-Por convención, **los registros de tipo CNAME no pueden utilizarse en un dominio de su propia zona DNS**. En efecto, el nombre de dominio debe apuntar obligatoriamente directamente a una dirección IP con un registro de tipo [A](/pages/web_cloud/domains/dns_zone_a_record_creation) para una IPv4, o [AAAA](/pages/web_cloud/domains/dns_zone_aaaa_record_creation) para una IPv6.
+Por convención, **los registros de tipo CNAME no pueden utilizarse en un nombre de dominio de su propia zona DNS**. En efecto, el nombre de dominio debe apuntar obligatoriamente directamente a una dirección IP con un registro de tipo [A](/pages/web_cloud/domains/dns_zone_a_record_creation) para una IPv4, o [AAAA](/pages/web_cloud/domains/dns_zone_aaaa_record_creation) para una IPv6.
 
-Siguiendo el ejemplo anterior, no podrá crear un registro de tipo CNAME para el dominio *domain.tld* en la zona DNS que haya creado para este dominio.
+Siguiendo el ejemplo anterior, no podrá crear un registro de tipo CNAME para el nombre de dominio *domain.tld* en la zona DNS que haya creado para este nombre de dominio.
 No obstante, podrá crear registros de tipo CNAME para todos los subdominios (por ejemplo, *subdomain.domain.tld* o *www.domain.tld*) del nombre de dominio *domain.tld* en la zona DNS creada para *domain.tld*.
 
 ///

@@ -9,13 +9,13 @@ updated: 2026-01-05
 > AI Endpoints is covered by the [OVHcloud AI Endpoints Conditions](https://storage.gra.cloud.ovh.net/v1/AUTH_325716a587c64897acbef9a4a4726e38/contracts/48743bf-AI_Endpoints-ALL-1.1.pdf) and the [OVHcloud Public Cloud Special Conditions](https://storage.gra.cloud.ovh.net/v1/AUTH_325716a587c64897acbef9a4a4726e38/contracts/d2a208c-Conditions_particulieres_OVH_Stack-WE-9.0.pdf).
 >
 
-🎉 **New Integration Available!** We're excited to announce a new integration for [AI Endpoints](https://endpoints.ai.cloud.ovh.net/) with [LiteLLM](https://litellm.ai). It will significantly simplify the use of our AI models in your Python applications, and continues our commitment to integrating AI Endpoints into as many open-source tools as possible to simplify its usage.
+🎉 **New Integration Available!** We're excited to announce a new integration for [AI Endpoints](/links/public-cloud/ai-endpoints) with [LiteLLM](https://litellm.ai). It will significantly simplify the use of our AI models in your Python applications, and continues our commitment to integrating AI Endpoints into as many open-source tools as possible to simplify its usage.
 
 ## Objective
 
-OVHcloud [AI Endpoints](https://endpoints.ai.cloud.ovh.net/) allows developers to easily add AI features to their day to day developments.
+OVHcloud [AI Endpoints](/links/public-cloud/ai-endpoints) allows developers to easily add AI features to their day to day developments.
 
-In this guide, we will show how to use [LiteLLM](https://litellm.ai) to integrate OVHcloud [AI Endpoints](https://endpoints.ai.cloud.ovh.net/) directly into your Python applications.
+In this guide, we will show how to use [LiteLLM](https://litellm.ai) to integrate OVHcloud [AI Endpoints](/links/public-cloud/ai-endpoints) directly into your Python applications.
 
 With LiteLLM’s unified interface and OVHcloud’s scalable AI infrastructure, you can quickly experiment, switch between models, and streamline the development of your AI-powered applications.
 
@@ -24,7 +24,7 @@ With LiteLLM’s unified interface and OVHcloud’s scalable AI infrastructure, 
 ## Definition
 
 - [LiteLLM](https://litellm.ai): A Python library that simplifies using Large Language Model (LLM) by providing a unified interface for different AI providers. Instead of managing the specifics of each API, LiteLLM gives you access to over 100 different models using OpenAI format.
-- [AI Endpoints](https://endpoints.ai.cloud.ovh.net/): A serverless platform by OVHcloud providing easy access to a variety of world-renowned AI models including Mistral, LLaMA, and more. This platform is designed to be simple, secure, and intuitive with data privacy as a top priority.
+- [AI Endpoints](/links/public-cloud/ai-endpoints): A serverless platform by OVHcloud providing easy access to a variety of world-renowned AI models including Mistral, LLaMA, and more. This platform is designed to be simple, secure, and intuitive with data privacy as a top priority.
 
 ### Why is this integration important?
 
@@ -375,7 +375,7 @@ print(response.choices[0].message.content)
 
 ### Available Models
 
-OVHcloud AI Endpoints offers a wide range of models accessible via LiteLLM. For the complete and up-to-date list, visit our [model catalog](https://endpoints.ai.cloud.ovh.net/catalog).
+OVHcloud AI Endpoints offers a wide range of models accessible via LiteLLM. For the complete and up-to-date list, visit our [model catalog](/links/public-cloud/ai-endpoints-catalog).
 
 #### Popular Models
 
@@ -406,7 +406,7 @@ In this article, we explored how to integrate OVHcloud AI Endpoints with LiteLLM
 
 ## Go further
 
-You can find more informations about LiteLLM on their [official documentation](https://docs.litellm.ai). You can also navigate in the [AI Endpoints catalog](https://endpoints.ai.cloud.ovh.net/catalog) to explore the models that are available through LiteLLM.
+You can find more informations about LiteLLM on their [official documentation](https://docs.litellm.ai). You can also navigate in the [AI Endpoints catalog](/links/public-cloud/ai-endpoints-catalog) to explore the models that are available through LiteLLM.
 
 To take your use of LiteLLM even further and get the most out of **OVHcloud AI Endpoints**, you can easily implement intelligent request routing. LiteLLM allows you to manage the **routing** and **load balancing** of incoming requests. Refer to this [tutorial](https://github.com/ovh/public-cloud-examples/blob/main/ai/ai-endpoints/litellm-router-loadbalancing/tutorial_litellm_routing_ai_endpoints.ipynb).
 

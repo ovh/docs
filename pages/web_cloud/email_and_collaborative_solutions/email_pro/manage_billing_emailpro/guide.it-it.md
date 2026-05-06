@@ -12,17 +12,22 @@ L'offerta Email Pro dispone di una gestione flessibile riguardante la fatturazio
 
 ## Prerequisiti
 
-- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
 - Disporre di un [account Email Pro](/links/web/email-pro)
+
+<!-- CP-NAV-START:web-email-pro -->
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [Email Pro](/links/control-panel/web-email-pro)
+- **Percorso di navigazione:** `Web Cloud`{.action} > `Email Pro`{.action} > Seleziona la tua piattaforma
+
+---
+<!-- CP-NAV-END:web-email-pro -->
 
 ## Procedura
 
 ### Ordina account aggiuntivi
-
-1. Accedi allo [Spazio Cliente OVHcloud](/links/manager).
-1. Clicca sulla scheda `Web Cloud`{.action}.
-1. Clicca su `Email Pro`{.action}.
-1. Seleziona la piattaforma interessata.
 
 Clicca sulla scheda `Account email`{.action} e poi sul pulsante `Ordina account`{.action} in alto a destra.
 

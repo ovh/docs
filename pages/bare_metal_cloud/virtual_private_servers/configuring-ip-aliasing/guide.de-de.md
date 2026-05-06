@@ -20,7 +20,7 @@ details[open]>summary::before {
 
 ## Ziel
 
-Bei *IP Aliasing* handelt es sich um eine spezielle Netzwerkkonfiguration für bestimme OVHcloud Dienste, mit der Sie mehrere IP-Adressen über ein einziges Netzwerkinterface verbinden können.
+Bei *IP Aliasing* handelt es sich um eine spezielle Netzwerkkonfiguration für bestimmte OVHcloud Dienste, mit der Sie mehrere IP-Adressen über ein einziges Netzwerkinterface verbinden können.
 
 **Diese Anleitung erklärt, wie Sie Additional IPs zu Ihrer Netzwerkkonfiguration hinzufügen.**
 
@@ -47,7 +47,7 @@ Die folgenden Abschnitte enthalten die Konfigurationen für die am häufigsten v
 
 > [!primary]
 >
-Bitte beachten Sie, dass sich bei unterschiedlichen Distributionen die korrekte Vorgehensweise zur Konfiguration Ihrer Netzwerkschnittstelle sowie die Dateinamen geändert haben können. Wir empfehlen Ihnen, bei Problemen die Dokumentationen und Wissensressourcen der jeweiligen Betriebssystemversionen zu konsultieren. 
+> Bitte beachten Sie, dass sich bei unterschiedlichen Distributionen die korrekte Vorgehensweise zur Konfiguration Ihrer Netzwerkschnittstelle sowie die Dateinamen geändert haben können. Wir empfehlen Ihnen, bei Problemen die Dokumentationen und Wissensressourcen der jeweiligen Betriebssystemversionen zu konsultieren.
 >
 
 **Bitte beachten Sie die Terminologie, die in den nachfolgenden Codebeispielen und Anweisungen dieser Anleitung verwendet wird:**
@@ -87,7 +87,7 @@ In den folgenden Beispielen verwenden wir den Texteditor `nano`. Auf einigen Bet
 >>
 >> **Schritt 2: Backup erstellen**
 >>
->> Standardmäßig ist der Pfad zur Konfigurationsdatei: `etc/network/interfaces.d`.
+>> Standardmäßig ist der Pfad zur Konfigurationsdatei: `/etc/network/interfaces.d`.
 >>
 >> In unserem Beispiel heißt die Datei `50-cloud-init`, also erstellen wir eine Kopie der Datei `50-cloud-init` mit folgenden Befehlen:
 >>
@@ -245,7 +245,7 @@ In den folgenden Beispielen verwenden wir den Texteditor `nano`. Auf einigen Bet
 >>
 >> Erstellen Sie für jede zu konfigurierende Additional IP-Adresse eine separate Konfigurationsdatei mit den folgenden Einstellungen: `ifcfg-NETWORK_INTERFACE:ID`. Dabei steht `NETWORK_INTERFACE` für die physische Schnittstelle und `ID` für die virtuelle Netzwerkschnittstelle oder den Ethernet-Alias, der mit einem Wert von 0 beginnt. Für unsere Schnittstelle `eth0` ist der erste Alias beispielsweise `eth0:0`, der zweite Alias ist `eth0:1` usw.
 >>
->> **Schritt 1: Netzwerkkonfigurationsdatei bearbeiten**
+>> **Schritt 1: Netzwerkinterface identifizieren**
 >>
 >> Um den Namen Ihres Netzwerkinterfaces zu überprüfen, verwenden Sie folgenden Befehl:
 >>
@@ -468,7 +468,7 @@ In den folgenden Beispielen verwenden wir den Texteditor `nano`. Auf einigen Bet
 >>
 >> Klicken Sie im neuen Fenster auf `Add...`{.action} unter "IP addresses". Geben Sie Ihre Additional IP und die Subnetzmaske (255.255.255.255) ein.
 >>
->> ![Advance Configuration section](images/configure-additional-ip.png){.thumbnail}
+>> ![Abschnitt für erweiterte TCP/IP-Einstellungen](images/configure-additional-ip.png){.thumbnail}
 >>
 >> Bestätigen Sie, indem Sie auf `Add`{.action} klicken.
 >>

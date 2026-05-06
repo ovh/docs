@@ -12,16 +12,22 @@ Access to your vCenter is restricted only to authorized IP addresses.
 
 ## Requirements
 
-- a [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/en-ca/enterprise/products/hosted-private-cloud/)
-- access to the [OVHcloud Control Panel](/links/manager)
+- A [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/)
+
+<!-- CP-NAV-START:privatecloud-vmware-vsphere -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [VMware vSphere](/links/control-panel/privatecloud-vmware-vsphere)
+- **Navigation path:** `Hosted Private Cloud`{.action} > `Managed VMware vSphere`{.action} > Select your vSphere service
+
+---
+<!-- CP-NAV-END:privatecloud-vmware-vsphere -->
 
 ## Instructions
 
-Log into your [OVHcloud Control Panel](/links/manager). Switch to the `Hosted Private Cloud`{.action} tab and click again on `Hosted Private Cloud`{.action} to the left. 
-
-Select your infrastructure and go to the `Security`{.action} tab.
-
-Click `Add a new IP address range`{.action}.
+Go to the `Security`{.action} tab and click `Add a new IP address range`{.action}.
 
 ![vCenter](images/restrictIP.JPG){.thumbnail}
 

@@ -1,7 +1,7 @@
 ---
 title: Exchange - Configurer son compte e-mail sur Mail de macOS
 excerpt: Apprenez à configurer votre compte Exchange sur Mail de macOS
-updated: 2025-04-28
+updated: 2026-01-22
 ---
 
 <style>
@@ -36,17 +36,6 @@ Les comptes Exchange peuvent être configurés sur différents logiciels de mess
 
 ### Ajouter le compte <a name="addaccount"></a>
 
-> [!warning]
->
-> Dans notre exemple, nous utilisons la mention serveur : ex?.mail.ovh.ca. Vous devrez remplacer le « ? » par le chiffre désignant le serveur de votre service Exchange.
->
-> 1. Connectez-vous à votre [espace client OVHcloud](/links/manager).
-> 1. Rendez-vous dans la partie `Web Cloud`{.action}.
-> 1. Dans la rubrique `MICROSOFT`, cliquez sur `Exchange`{.action}.
-> 1. Sélectionnez la plateforme concernée.
-> 1. Le nom du serveur est visible dans le cadre **Connexion** de l'onglet `Informations Générales`{.action}.
->
-
 - **Lors du premier démarrage de l'application** : un assistant de configuration s'affiche directement et vous invite à choisir votre type de compte.
 
 - **Si un compte a déjà été paramétré** : cliquez sur `Mail`{.action} dans la barre de menu en haut de votre écran, puis sur `Comptes`{.action}.
@@ -69,7 +58,7 @@ Les comptes Exchange peuvent être configurés sur différents logiciels de mess
 >>
 > **Etape 4**
 >>
->> Saisissez: <br><br>- Adresse e-mail : laissez votre adresse e-mail complète<br>- Nom d'utilisateur : laissez votre adresse e-mail complète <br>- Mot de passe : laissez votre **mot de passe**<br> - URL interne : **ex?.mail.ovh.ca** (remplacez le **?** par [le numéro de votre serveur Exchange](#addaccount))<br>- URL externe : **ex?.mail.ovh.ca** (remplacez le **?** par [le numéro de votre serveur Exchange](#addaccount))<br><br>
+>> Saisissez: <br><br>- Adresse e-mail : laissez votre adresse e-mail complète<br>- Nom d'utilisateur : laissez votre adresse e-mail complète <br>- Mot de passe : laissez votre **mot de passe**<br> - URL interne : **ex.mail.ovh.ca**<br>- URL externe : **ex.mail.ovh.ca**<br><br>
 >>
 >> > [!warning]
 >> >
@@ -85,7 +74,7 @@ Les comptes Exchange peuvent être configurés sur différents logiciels de mess
 
 Une fois l'adresse e-mail configurée, il ne reste plus qu’à l'utiliser ! Vous pouvez dès à présent envoyer et recevoir des messages.
 
-OVHcloud propose aussi une application web permettant d'accéder à votre adresse e-mail depuis un navigateur internet. Celle-ci est accessible à l’adresse [Webmail](/links/web/email). Vous pouvez vous y connecter grâce aux identifiants de votre adresse e-mail. Pour toute question relative à son utilisation, aidez-vous de notre guide [Consulter son compte Exchange depuis l’interface OWA](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa) ou [Utiliser son adresse e-mail depuis le webmail RoundCube](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_roundcube#ou-et-comment-se-connecter-au-webmail-roundcube).
+OVHcloud propose aussi une application web permettant d'accéder à votre adresse e-mail depuis un navigateur internet. Celle-ci est accessible à l’adresse [Webmail](/links/web/email). Vous pouvez vous y connecter grâce aux identifiants de votre adresse e-mail. Pour toute question relative à son utilisation, aidez-vous de notre guide [Consulter son compte Exchange depuis l’interface OWA](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa).
 
 ### Récupérer une sauvegarde de votre adresse e-mail
 
@@ -107,8 +96,6 @@ Si votre compte e-mail est déjà paramétré et que vous devez accéder aux par
 > Pour plus d'informations sur la configuration d'une adresse e-mail depuis l'application Mail sur macOS, consultez [le centre d'aide Apple](https://support.apple.com/fr-fr/guide/mail/mail35803/mac).
 
 [FAQ e-mails](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/faq-emails)
-
-[Configurer votre compte E-mail Pro sur Mail de macOS](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_mail_macos)
 
 [Configurer votre compte e-mail MX plan sur Mail de macOS](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_mail_macos)
 

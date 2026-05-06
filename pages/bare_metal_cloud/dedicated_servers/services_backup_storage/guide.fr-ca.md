@@ -1,7 +1,7 @@
 ---
-title: 'Utiliser Backup Storage sur un serveur dédié'
-excerpt: 'Découvrez comment activer et accéder à votre espace de stockage supplémentaire'
-updated: 2025-10-09
+title: "Utiliser Backup Storage sur un serveur dédié"
+excerpt: "Activez et accédez à l'espace de sauvegarde inclus avec votre serveur dédié OVHcloud pour vos sauvegardes de fichiers"
+updated: 2026-03-25
 ---
 
 ## Objectif
@@ -19,7 +19,17 @@ Les serveurs dédiés OVHcloud comprennent un espace de sauvegarde supplémentai
 ## Prérequis
 
 - Posséder un [serveur dédié](/links/bare-metal/bare-metal) dans votre compte OVHcloud.
-- Être connecté à votre [espace client OVHcloud](/links/manager).
+
+<!-- CP-NAV-START:baremetal-dedicated-servers -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Serveurs dédiés](/links/control-panel/baremetal-dedicated-servers)
+- **Pour accéder à vos services :** `Bare Metal Cloud`{.action} > `Serveurs dédiés`{.action} > Sélectionnez votre serveur
+
+---
+<!-- CP-NAV-END:baremetal-dedicated-servers -->
 
 > [!warning]
 > Cette fonctionnalité peut être indisponible ou limitée sur les [serveurs dédiés **Eco**](/links/bare-metal/eco-about).
@@ -31,13 +41,13 @@ Les serveurs dédiés OVHcloud comprennent un espace de sauvegarde supplémentai
 
 ### Activer votre Backup Storage
 
-Connectez-vous à votre [espace client OVHcloud](/links/manager). Sélectionnez votre serveur en allant dans la partie `Bare Metal Cloud`{.action}, puis `Serveurs dédiés`{.action}. Sous l'onglet `Backup Storage`{.action}, cliquez sur le bouton `Activer le Backup Storage`{.action}.
+Sous l'onglet `Backup Storage`{.action}, cliquez sur le bouton `Activer le Backup Storage`{.action}.
 
-![Activer votre Backup Storage](images/backup-storage01.png){.thumbnail}
+![Bouton d'activation du backup storage dans l'onglet Backup storage](images/backup-storage01.png){.thumbnail}
 
 Cliquez sur `Confirmer`{.action} dans le menu contextuel qui s'affiche.
 
-![Activer votre Backup Storage](images/backup-storage02.png){.thumbnail}
+![Confirmation de l'activation du backup storage dans la fenêtre popup](images/backup-storage02.png){.thumbnail}
 
 Votre Backup Storage sera configuré en quelques minutes. Vous recevrez un e-mail de confirmation dès que la configuration sera terminée.
 
@@ -47,9 +57,9 @@ L'accès à votre espace de stockage est restreint par adresses IP à l'aide d'u
 
 #### Ajouter un accès backup
 
-Connectez-vous à votre [espace client OVHcloud](/links/manager). Sélectionnez votre serveur en allant dans la partie `Bare Metal Cloud`{.action}, puis `Serveurs dédiés`{.action}. Sélectionnez ensuite l'onglet `Backup Storage`{.action} puis cliquez sur le bouton `Ajouter un accès`{.action}.
+Sélectionnez l'onglet `Backup Storage`{.action} puis cliquez sur le bouton `Ajouter un accès`{.action}.
 
-![Ajouter un accès backup](images/backup-storage03.png){.thumbnail}
+![Bouton Ajouter un acces dans l'onglet Backup storage](images/backup-storage03.png){.thumbnail}
 
 Sélectionnez le bloc IP que vous souhaitez autoriser. Une fois celui-ci sélectionné, choisissez le(s) protocole(s) à autoriser, puis cliquez sur `Suivant`{.action}.
 
@@ -58,7 +68,7 @@ Sélectionnez le bloc IP que vous souhaitez autoriser. Une fois celui-ci sélect
 > Seuls des blocs d'adresses IP de votre compte OVHcloud peuvent être ajoutés à l'ACL depuis votre espace client.
 >
 
-![Ajouter un accès backup](images/backup-storage04.png){.thumbnail}
+![Selectionner le bloc IP et les protocoles pour l'acces backup](images/backup-storage04.png){.thumbnail}
 
 Confirmez en cliquant sur `Terminer`{.action}.
 
@@ -68,7 +78,7 @@ Vous pourrez alors accéder au Backup Storage de votre serveur à partir du bloc
 
 Une fois le service activé, votre table ACL s'affiche dans l'onglet `Backup storage`{.action}. Cliquez sur `...`{.action} à droite d'un bloc IP pour ouvrir le menu d'accès.
 
-![Ajouter un accès backup](images/backup-storage05.png){.thumbnail}
+![Tableau des ACL d'acces backup avec options modifier et supprimer](images/backup-storage05.png){.thumbnail}
 
 Pour modifier les protocoles d'un bloc IP autorisé, cliquez sur `Modifier l'accès`{.action} et sélectionnez/désélectionnez les protocoles dans le menu qui apparaît. Enregistrez les modifications en cliquant sur `Confirmer`{.action}.
 
@@ -112,21 +122,21 @@ Afin de vérifier que votre adresse IP est bien autorisée, utilisez l'appel sui
 
 ### Réinitialiser votre mot de passe
 
-Connectez-vous à votre [espace client OVHcloud](/links/manager). Sélectionnez votre serveur en allant dans la partie `Bare Metal Cloud`{.action}, puis `Serveurs dédiés`{.action}. Sélectionnez ensuite l'onglet `Backup Storage`{.action} puis cliquez sur le bouton `Mot de passe oublié ?`{.action}.
+Sélectionnez l'onglet `Backup Storage`{.action} puis cliquez sur le bouton `Mot de passe oublié ?`{.action}.
 
 Après avoir cliqué sur `Confirmer`{.action} dans la fenêtre qui apparaît alors, un e-mail de récupération de mot de passe sera envoyé à l'adresse e-mail enregistrée sur votre compte administrateur. Suivez les instructions qui y sont contenues pour réinitialiser votre mot de passe.
 
 ### Supprimer le Backup Storage
 
-Connectez-vous à votre [espace client OVHcloud](/links/manager). Sélectionnez votre serveur en allant dans la partie `Bare Metal Cloud`{.action}, puis `Serveurs dédiés`{.action}. Sélectionnez ensuite l'onglet `Backup Storage`{.action} puis cliquez sur le bouton `Supprimer le Backup Storage`{.action}.
+Sélectionnez l'onglet `Backup Storage`{.action} puis cliquez sur le bouton `Supprimer le Backup Storage`{.action}.
 
 Cliquez sur `Confirmer`{.action} sur le message d'avertissement pour procéder à la suppression. Votre Backup Storage sera supprimé après quelques minutes. Toutes les données de l'espace de stockage seront supprimées.
 
 ### Commander de l'espace disque supplémentaire
 
-Connectez-vous à votre [espace client OVHcloud](/links/manager). Sélectionnez votre serveur en allant dans la partie `Bare Metal Cloud`{.action}, puis `Serveurs dédiés`{.action}. Sélectionnez ensuite l'onglet `Backup Storage`{.action} puis cliquez sur le bouton `Commander de l’espace disque`{.action}.
+Sélectionnez l’onglet `Backup Storage`{.action} puis cliquez sur le bouton `Commander de l’espace disque`{.action}.
 
-![Commander de l'espace disque supplémentaire](images/backup-storage06.png){.thumbnail}
+![Commander de l'espace disque supplementaire pour le backup storage](images/backup-storage06.png){.thumbnail}
 
 Sélectionnez la capacité de stockage que vous souhaitez commander, puis cliquez sur `Suivant`{.action}.
 
@@ -202,7 +212,7 @@ L'exemple de code ci-dessus contient des variables que vous devrez remplacer par
 > [!primary]
 >
 > Pour utiliser FTPS, vous devez changer le nom du Backup Storage. Par exemple, si le nom du Backup Storage est « ftpback-rbxX-YYY.ip-Z.Z.Z.Z.net », vous devrez le changer sous la forme « ftpback-rbxX-YYY.mybackup.ovh.net ». Il vous faudra également ajouter l’argument \`-ssl\` à la commande ci-dessous.  
-> Si le Backup Storage est situé au Canada (BHS), vous devrez le changer sous la forme « ftpback-bhsX-YYY.mybackup.ovh.ca ».
+> Attention, si le Backup Storage est situé au Canada (BHS), vous devrez le changer sous la forme « ftpback-bhsX-YYY.mybackup.ovh.ca ».
 >
 
 Pour sauvegarder un seul fichier, vous pouvez utiliser la commande suivante :
@@ -254,7 +264,7 @@ L'exemple de code ci-dessus contient des variables que vous devrez remplacer par
 > [!primary]
 >
 > lftp utilise FTP+SSL/TLS par défaut. Vous devez donc changer le nom de votre Backup Storage. Par exemple, si son nom est « ftpback-rbxX-YYY.ip-Z.Z.Z.Z.net », vous devrez le changer sous la forme « ftpback-rbxX-YYY.mybackup.ovh.net ».  
-> Si le Backup Storage est situé au Canada (BHS), vous devrez le changer sous la forme « ftpback-bhsX-YYY.mybackup.ovh.ca ».
+> Attention, si le Backup Storage est situé au Canada (BHS), vous devrez le changer sous la forme « ftpback-bhsX-YYY.mybackup.ovh.ca ».
 >
 
 Pour sauvegarder un seul fichier, vous pouvez utiliser la commande suivante :
@@ -307,12 +317,13 @@ Après avoir installé FileZilla sur votre serveur, vous pouvez le configurer po
 
 #### NFS
 
+Le backup storage est compatible uniquement avec NFSv3.
 Assurez-vous d'abord d’avoir autorisé vos blocs d’IP à accéder au stockage et à utiliser le protocole NFS. Selon votre système d'exploitation Linux, il est possible que vous deviez installer le client NFS et démarrer le service NFS/portmap.
 
 Une fois le client NFS installé et le service portmap lancé, vous pouvez monter le partage NFS comme une partition normale comme indiqué ci-dessous :
 
 ```sh
-mount -t nfs HostName:/export/ftpbackup/ServiceName /FolderMount
+mount -t nfs -o vers=3 HostName:/export/ftpbackup/ServiceName /FolderMount
 ```
 
 L'exemple de code ci-dessus contient des variables que vous devrez remplacer par vos propres valeurs.
@@ -348,9 +359,9 @@ You can't access this shared folder because your organization's security policie
 
 > [!primary]
 >
-> Pour corriger cette erreur, il convient de modifier le registre Windows. Pour cela, ouvrez l’éditeur de registre (regedit), puis accédez à la clé `HKLM\SYSTEM\CurrentControlSet\Services\LanmanWorkstation\Parameters`.<br>
+> Pour corriger cette erreur, il convient de modifier la base de registre de Windows. Pour cela, ouvrez l’éditeur de registre (regedit), puis accédez à la clé `HKLM\SYSTEM\CurrentControlSet\Services\LanmanWorkstation\Parameters`.<br>
 > Attribuez ensuite la valeur « 1 » au paramètre `AllowInsecureGuestAuth`.<br>
-> Retrouvez plus d'informations sur ce sujet sur les [pages d'assistance de Microsoft](https://learn.microsoft.com/fr-ca/windows-server/storage/file-server/enable-insecure-guest-logons-smb2-and-smb3).
+> Retrouvez plus d'informations sur ce sujet sur les [pages d'assistance de Microsoft](https://learn.microsoft.com/fr-fr/windows-server/storage/file-server/enable-insecure-guest-logons-smb2-and-smb3).
 
 ##### Linux
 
@@ -384,5 +395,9 @@ L'exemple de code ci-dessus contient des variables que vous devrez remplacer par
 - **FolderMount** : le répertoire où vous souhaitez monter le partage (il doit déjà exister).
 
 ## Aller plus loin
+
+[Sauvegarder mes informations et mes bases de données dans un serveur de stockage](/pages/bare_metal_cloud/dedicated_servers/save_datas_database_on_storage_ds)
+
+[Configuration du stockage d'un serveur HGR-STOR-2](/pages/bare_metal_cloud/dedicated_servers/hgrstor2_system_configuration)
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).

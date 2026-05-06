@@ -12,16 +12,22 @@ El área de cliente de OVHcloud le permite crear firmas genéricas (pies de mens
 
 ## Requisitos
 
-- Tener acceso al [área de cliente de OVHcloud](/links/manager).
-- Tener una solución [Exchange](/links/web/emails-hosted-exchange) ya configuradas.
+- Tener una solución [Exchange](/links/web/emails-hosted-exchange) ya configurada.
+
+<!-- CP-NAV-START:web-exchange -->
+---
+
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [Exchange](/links/control-panel/web-exchange)
+- **Ruta de navegación:** `Web Cloud`{.action} > `Exchange`{.action} > Seleccione su plataforma
+
+---
+<!-- CP-NAV-END:web-exchange -->
 
 ## Procedimiento
 
-1. Conéctese al [área de cliente de OVHcloud](/links/manager).
-1. Acceda al apartado `Web Cloud`{.action}.
-1. En la sección `MICROSOFT`, haga clic en `Exchange`{.action}.
-1. Seleccione la plataforma correspondiente.
-1. Haga clic en la pestaña `Más +`{.action} en la barra horizontal y seleccione `Pies de página`{.action}.
+Haga clic en la pestaña `Más+`{.action} en el menú horizontal y seleccione `Pies de mensaje`{.action}.
 
 ![exchangesig](images/exchange-footer-step1.png){.thumbnail}
 
@@ -50,7 +56,7 @@ Tenga en cuenta los siguientes datos antes de introducir firmas para los usuario
 - El editor admite formato HTML, hipervínculos, imágenes, etc. Sin embargo, las firmas no deben abusar de estas opciones. Es posible que los destinatarios utilicen clientes de correo electrónico incompatibles con HTML y las imágenes incrustadas, o que las firmas se muestren de forma diferente a la previsualizada. Tenga en cuenta que las etiquetas HTML se eliminarán por completo si se envía un mensaje como «Texto sin formato» desde OWA.
 - Las «iniciales» no están activadas en el servicio, por lo que agregar esta variable no tendrá ningún efecto.
 
-## Más información
+## Más información <a name="go-further"></a>
 
 [Usar Outlook Web App con una cuenta Exchange](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa)
 

@@ -17,7 +17,7 @@ updated: 2025-12-17
 
 ## Ziel
 
-Es kann nowendig werden, Additional IPs auf Ihren Instanzen konfigurieren, zum Beispiel, wenn Sie eine große Anzahl an Websites oder internationale Projekte hosten. Mit den Additional IPs von OVHcloud können Sie mehrere IP-Adressen einem einzigen Netzwerkinterface zuweisen.
+Es kann notwendig werden, Additional IPs auf Ihren Instanzen konfigurieren, zum Beispiel, wenn Sie eine große Anzahl an Websites oder internationale Projekte hosten. Mit den Additional IPs von OVHcloud können Sie mehrere IP-Adressen einem einzigen Netzwerkinterface zuweisen.
 
 **In dieser Anleitung erfahren Sie, wie Sie Additional IPs zu Ihrer Netzwerkkonfiguration hinzufügen.**
 
@@ -39,11 +39,23 @@ Es kann nowendig werden, Additional IPs auf Ihren Instanzen konfigurieren, zum B
 
 ## In der praktischen Anwendung
 
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direkter Link:** [Public Cloud Projekte](/links/control-panel/publiccloud-projects)
+- **Navigationspfad:** `Public Cloud`{.action} > Wählen Sie Ihr Projekt aus
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
+
+
 Die folgenden Abschnitte enthalten die Konfigurationen für die am häufigsten verwendeten Distributionen/Betriebssysteme. Der erste Schritt ist immer die Anmeldung auf Ihrer Instanz über SSH oder einen GUI-Login (VNC für eine Windows-Instanz). Die folgenden Beispiele setzen voraus, dass Sie als Benutzer mit erhöhten Berechtigungen (Administrator/sudo) angemeldet sind.
 
 > [!primary]
 >
-Bitte beachten Sie, dass sich bei unterschiedlichen Distributionen die korrekte Vorgehensweise zur Konfiguration Ihrer Netzwerkschnittstelle sowie die Dateinamen geändert haben können. Wir empfehlen Ihnen, bei Problemen die Dokumentationen und Wissensressourcen der jeweiligen Betriebssystemversionen zu konsultieren. 
+> Bitte beachten Sie, dass sich bei unterschiedlichen Distributionen die korrekte Vorgehensweise zur Konfiguration Ihrer Netzwerkschnittstelle sowie die Dateinamen geändert haben können. Wir empfehlen Ihnen, bei Problemen die Dokumentationen und Wissensressourcen der jeweiligen Betriebssystemversionen zu konsultieren.
 >
 
 **Bitte beachten Sie die Terminologie, die in den nachfolgenden Codebeispielen und Anweisungen dieser Anleitung verwendet wird:**
@@ -51,7 +63,7 @@ Bitte beachten Sie, dass sich bei unterschiedlichen Distributionen die korrekte 
 |Bezeichnung|Beschreibung|Beispiele|
 |---|---|---|
 |ADDITIONAL_IP|Ihrem Dienst zugewiesene Additional IP|169.254.10.254|
-|NETWORK_INTERFACE|Name des Netzwerkinterfaces|*eth*, *ens3*|
+|NETWORK_INTERFACE|Name des Netzwerkinterfaces|*eth0*, *ens3*|
 |ID|ID der Additional IP, beginnend mit *0* (abhängig von der Anzahl der zu konfigurierenden zusätzlichen IP-Adressen)|*0*, *1*|
 
 > [!primary]
@@ -241,7 +253,7 @@ Bitte beachten Sie, dass sich bei unterschiedlichen Distributionen die korrekte 
 >> Ändern Sie die vorhandenen Zeilen in der Konfigurationsdatei nicht, fügen Sie Ihre Additional IP wie folgt hinzu und ersetzen Sie `ADDITIONAL_IP/32` durch Ihre eigenen Werte:
 >>
 >> ```console
->> [IPv4]
+>> [ipv4]
 >> method=auto
 >> may-fail=false
 >> address1=ADDITIONAL_IP/32
@@ -250,7 +262,7 @@ Bitte beachten Sie, dass sich bei unterschiedlichen Distributionen die korrekte 
 >> Wenn Sie zwei Additional IPs konfigurieren müssen, sollte die Konfiguration wie folgt aussehen:
 >>
 >> ```console
->> [IPv4]
+>> [ipv4]
 >> method=auto
 >> may-fail=false
 >> address1=ADDITIONAL_IP1/32
@@ -288,14 +300,14 @@ Bitte beachten Sie, dass sich bei unterschiedlichen Distributionen die korrekte 
 >>
 >> **Schritt 3: Aktuelle IP-Konfiguration überprüfen**
 >>
->> Überprüfen Sie im Bereich "IP Addresses" ob die Additional IP korrekt hinzugefügt wurde.
+>> Überprüfen Sie im Bereich "IP Addresses", ob die Additional IP korrekt hinzugefügt wurde.
 >>
 >> ![aktuelle IP-Konfiguration](images/pleskip4-4.png){.thumbnail}
 >>
 > **Windows Server**
 >> Windows Server
 >>
->> Öffnen Sie im Public Cloud Bereich im linken Menü `Instances`{.action} und klicken Sie dann auf den Namen der betreffenden Instanz. Wechseln Sie zum Tab `VNC Konsole`{.action}.
+>> Öffnen Sie In Ihrem Public Cloud Projekt im linken Menü `Instances`{.action} und klicken Sie dann auf den Namen der betreffenden Instanz. Wechseln Sie zum Tab `VNC Konsole`{.action}.
 >>
 >> **Schritt 1: Netzwerkkonfiguration überprüfen**
 >>
@@ -335,7 +347,7 @@ Bitte beachten Sie, dass sich bei unterschiedlichen Distributionen die korrekte 
 >>
 >> ![Netzwerkdeaktivierung](images/image6.png){.thumbnail}
 >>
->> Um es neu zu starten klicken Sie mit der rechten Maustaste darauf und wählen Sie `Aktivieren`{.action}.
+>> Um es neu zu starten, klicken Sie mit der rechten Maustaste darauf und wählen Sie `Aktivieren`{.action}.
 >>
 >> ![Netzwerkaktivierung](images/image7.png){.thumbnail}
 >>
@@ -356,7 +368,7 @@ Wenn Sie über SSH im Rescue-Modus eingeloggt sind, geben Sie folgenden Befehl e
 ifconfig ens3:0 ADDITIONAL_IP netmask 255.255.255.255 broadcast ADDITIONAL_IP up
 ```
 
-Um die Verbindung zu testen senden Sie einfach von außerhalb einen Ping an Ihre Additional IP. Wenn sie im Rescue-Modus antwortet, bedeutet dies wahrscheinlich, dass ein Konfigurationsfehler vorliegt. Wenn die IP jedoch noch nach wie vor nicht funktioniert, informieren Sie bitte unsere Support-Teams, indem Sie ein Support-Ticket über Ihr [OVHcloud Kundencenter](/links/manager) erstellen.
+Um die Verbindung zu testen, senden Sie einfach von außerhalb einen Ping an Ihre Additional IP. Wenn sie im Rescue-Modus antwortet, bedeutet dies wahrscheinlich, dass ein Konfigurationsfehler vorliegt. Wenn die IP jedoch noch nach wie vor nicht funktioniert, informieren Sie bitte unsere Support-Teams, indem Sie ein Support-Ticket über Ihr [OVHcloud Kundencenter](/links/manager) erstellen.
 
 ## Weiterführende Informationen
 

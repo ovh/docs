@@ -1,7 +1,7 @@
 ---
 title: "Exchange - Configure an email address in Gmail for Android"
 excerpt: "Find out how to configure an Exchange account on Android, via the Gmail app"
-updated: 2025-04-28
+updated: 2026-01-22
 ---
 
 <style>
@@ -38,17 +38,6 @@ Email accounts of the Exchange solution can be configured on various compatible 
 
 ### How to add your email account <a name="addaccount"></a>
 
-> [!primary]
->
-> In this guide, we use as the hostname: ex?.mail.ovh.ca. You will need to replace the "?" with the actual number indicating the appropriate server for your Email Pro service.
->
-> 1. Log in to your [OVHcloud Control Panel](/links/manager).
-> 1. Open the `Web Cloud`{.action} section.
-> 1. In the `MICROSOFT` section, click `Exchange`{.action}.
-> 1. Select the service concerned.
-> 1. The server name is displayed in the **Connection** box in the `General Information`{.action} tab.
->
-
 On your device’s homepage, open the `Gmail`{.action} app.
 
 ![Android Exchange](images/exchange-android-00.png){.thumbnail .h-600 .w-600}
@@ -84,7 +73,7 @@ Follow the next steps in the configuration process by clicking on the tabs below
 >> ![Android Exchange](images/exchange-android-03.png){.thumbnail .h-600 .w-600}
 >>
 > **Step 4**
->> Complete the "**Address configuration**" page.<br><br>- **Email**: Your full email address<br>- **Password**: Your email password<br>- **Certificate**: Leave "None"<br>- **Domain\Username**: Your full email address<br>- **Server**: **ex?.mail.ovh.ca** (replace the **?** by [your Exchange server number](#addaccount))<br>- **Port**: 443<br>- **Security type**: SSL/TLS<br><br>Press `Next`{.action} to confirm the configuration.<br><br>
+>> Complete the "**Address configuration**" page.<br><br>- **Email**: Your full email address<br>- **Password**: Your email password<br>- **Certificate**: Leave "None"<br>- **Domain\Username**: Your full email address<br>- **Server**: **ex.mail.ovh.ca**<br>- **Port**: 443<br>- **Security type**: SSL/TLS<br><br>Press `Next`{.action} to confirm the configuration.<br><br>
 >> ![Android Exchange](images/exchange-android-04.png){.thumbnail .h-600 .w-600}
 >>
 > **Step 5**
@@ -104,8 +93,6 @@ Once you have configured your email account, you can start using it! You can now
 > For more information on setting up an email address from the Gmail app on Android, see the [Google Help Center](https://support.google.com/mail/answer/21289?hl=en&co=GENIE.Platform%3DAndroid&oco=1#zippy=%2Cadd-an-account).
 
 [MX Plan - Configuring an email address in Gmail for Android](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_android).
-
-[Email Pro - Configuring an email address in Gmail for Android](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_android).
 
 For specialised services (SEO, development, etc.), contact [OVHcloud partners](/links/partner).
 

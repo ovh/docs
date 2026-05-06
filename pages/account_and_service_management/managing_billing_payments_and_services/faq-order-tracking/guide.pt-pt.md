@@ -14,19 +14,19 @@ Só pode efetuar o pagamento depois de identificar à sua encomenda através da 
 
 #### Truques e dicas
 
-Saiu da página da encomenda? Aceda à sua [Área de Cliente OVHcloud](/links/manager), clique no seu nome em cima à direita e, a seguir, clique em `Encomendas`{.action}. Poderá depois visualizar à sua encomenda e pagá-la.
+Saiu da página da encomenda? Abra a página [Encomendas](/links/control-panel/billing-orders). Poderá depois visualizar à sua encomenda e pagá-la.
 
 ### Como consultar o estado do pagamento?
 
-Aceda à sua [Área de Cliente OVHcloud](/links/manager), clique no seu nome no canto superior direito e, a seguir, em `As minhas faturas`{.action}. Se uma fatura está a aguardar pagamento, diretamente no seu painel de controlo, ser-lhe-á proposta a possibilidade de pagar o seu saldo.
+Abra a página [As minhas faturas](/links/control-panel/billing-invoices). Se uma fatura está a aguardar pagamento, ser-lhe-á proposta a possibilidade de pagar o seu saldo.
 
 #### Truques e dicas
 
-Aceda à sua [Área de Cliente OVHcloud](/links/manager), clique no seu nome em cima à direita e, a seguir, clique em `Os meus métodos de pagamento`{.action}. Poderá então registar o seu método de pagamento. Desta forma, as suas faturas serão automaticamente regularizadas.
+Na página [Os meus métodos de pagamento](/links/control-panel/billing-payment-methods), poderá registar o seu método de pagamento. Desta forma, as suas faturas serão automaticamente regularizadas.
 
 ### Como acompanhar o estado da encomenda?
 
-Aceda à [Área de Cliente OVHcloud](/links/manager) e clique em `Ver as minhas encomendas`{.action}.
+Abra a página [Encomendas](/links/control-panel/billing-orders).
 
 ### Truques e dicas
 
@@ -60,7 +60,7 @@ Uma fatura com pagamento pendente também pode causar este atraso. Se for o seu 
 
 #### Truques e dicas:
 
-Aceda à sua [Área de Cliente OVHcloud](/links/manager), clique no seu nome em cima à direita e, a seguir, clique em `Os meus métodos de pagamento`{.action}. Poderá então registar o seu método de pagamento. Desta forma, as suas faturas serão automaticamente regularizadas.
+Na página [Os meus métodos de pagamento](/links/control-panel/billing-payment-methods), poderá registar o seu método de pagamento. Desta forma, as suas faturas serão automaticamente regularizadas.
 
 ## Quer saber mais?
 

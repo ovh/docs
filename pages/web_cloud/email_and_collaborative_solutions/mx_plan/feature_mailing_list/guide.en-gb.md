@@ -35,23 +35,28 @@ The sender sends an email to the mailing list. The moderator receives an email w
 ## Requirements
 
 - an MX Plan 100 minimum or [web hosting plan](/links/web/hosting) eligible for mailing lists
-- access to the [OVHcloud Control Panel](/links/manager)
+
+<!-- CP-NAV-START:web-mx-plan -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [MX Plan](/links/control-panel/web-mx-plan)
+- **Navigation path:** `Web Cloud`{.action} > `MX Plan`{.action} > Select your MX Plan service
+
+---
+<!-- CP-NAV-END:web-mx-plan -->
 
 ## Instructions
 
 ### Create a mailing list
 
+<!-- CP-STEPS-START:create-mailing-list -->
 > [!success]
 >
 > A mailing list behaves like an email address. You cannot change its name. If you no longer like the name of a mailing list, you will need to create a new one and delete the old one.
 
-To create a mailing list:
-
-1. Log in to your [OVHcloud Control Panel](/links/manager).
-1. Open the `Web Cloud`{.action} section.
-1. Click `MX Plan`{.action}.
-1. Select the domain concerned.
-1. Go to the `Mailing lists`{.action} tab for your email service.
+To create a mailing list, go to the `Mailing lists`{.action} tab for your email service.
 
 ![emails](images/manage_mailing-lists_01.png){.thumbnail}
 
@@ -84,14 +89,20 @@ Fill in the form with the information listed in the table below:
 > - 250 if emails are not moderated
 >
 
+<!-- CP-STEPS-END:create-mailing-list -->
+
 ### Manage mailing list options
 
-To modify the mailing list options, click the `...`{.action} to the right-hand side of it. You can then update the options, delete the mailing list, or share the list of subscribers via email. 
+<!-- CP-STEPS-START:manage-mailing-list-options -->
+To modify the mailing list options, click the `...`{.action} to the right-hand side of it. You can then update the options, delete the mailing list, or share the list of subscribers via email.
 
 ![emails](images/manage_mailing-lists_04.png){.thumbnail}
 
+<!-- CP-STEPS-END:manage-mailing-list-options -->
+
 ### Manage subscribers
 
+<!-- CP-STEPS-START:manage-subscribers -->
 To manage subscribers to your mailing list, click on the silhouette next to the “Subscribers” column.
 
 ![emails](images/manage_mailing-lists_05.png){.thumbnail}
@@ -116,8 +127,11 @@ There are two ways of adding and removing subscribers:
 
 Click `Export subscribers in CSV format`{.action} to generate a CSV file containing all of your subscribers. This option is not available in our example, because no subscribers have been added.
 
+<!-- CP-STEPS-END:manage-subscribers -->
+
 ### Manage moderators
 
+<!-- CP-STEPS-START:manage-moderators -->
 To manage moderators on your mailing list, click on the silhouette in the “Moderators” column.
 
 ![emails](images/manage_mailing-lists_08.png){.thumbnail}
@@ -144,6 +158,7 @@ There are two ways of adding and removing moderators:
 >
 
 Depending on the number of subscribers you need to add, this may take some time to do.
+<!-- CP-STEPS-END:manage-moderators -->
 
 ### Subscribe to a mailing list
 
@@ -251,6 +266,6 @@ Below is a list of files containing the reply texts, and a brief description of 
 > Example: If you would like to edit the default footer for emails sent to your mailing list, you will need to send an email to the address `name_of_your_ML-edit.bottom@mydomain.ovh`. You will then receive a new email explaining how to customise the footer.
 >
 
-## Go further
+## Go further <a name="go-further"></a>
 
 Join our [community of users](/links/community).

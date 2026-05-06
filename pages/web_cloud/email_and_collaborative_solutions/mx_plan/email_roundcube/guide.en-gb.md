@@ -1,51 +1,61 @@
 ---
-title: Using your email account via the Roundcube webmail interface
-updated: 2025-11-12
+title: 'Using your email address from the Roundcube webmail interface'
+updated: 2026-05-04
 ---
 
 ## Objective
 
-With the OVHcloud MX Plan, you can send and receive emails from third-party software or via webmail. OVHcloud provides an online email service called Roundcube that allows you to access an email account via a web browser.
+With the OVHcloud MX Plan solution, you can send and receive emails from third-party software or via webmail. OVHcloud provides an online email service called Roundcube that lets you access an email account through a web browser.
 
-**Find out how to use the Roundcube webmail interface for your OVHcloud email addresses**
+**Find out how to use the Roundcube webmail interface for your OVHcloud email addresses.**
 
 ## Requirements
 
-- An OVHcloud **MX Plan** email solution, included in our [web hosting plans](/links/web/hosting), included in a [100M free hosting](/links/web/domains-free-hosting) hosting plan, or ordered separately as a standalone solution.
-- Access to the MX Plan email account you would like to use; for more information, please refer to our guide [Getting started with an MX Plan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities).
-- Your OVHcloud email solution **MX Plan** must use the webmail technology **Roundcube**. To identify it, follow the instructions below.
+- An OVHcloud **MX Plan** email solution, included in our [web hosting plans](/links/web/hosting), included with a [100M free hosting plan](/links/web/domains-free-hosting), or ordered separately as a standalone solution.
+- Access to the login details for the MX Plan email address you want to consult. For more information, see our guide [Getting started with the MX Plan solution](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities).
+- Your OVHcloud **MX Plan** email solution must use the **Roundcube** webmail technology. To identify it, follow the instructions below.
 
 > [!primary]
 > 
 > **How do I identify the technology used on my MX Plan solution?**
 >
-> The email technology used for your MX Plan solution is characterized by its webmail interface. To identify it via the OVHcloud Control Panel, follow this path:
+> The email technology used for your MX Plan solution is identified by its webmail interface. To identify it from your Control Panel, follow this path:
 >
 > 1. Log in to your [OVHcloud Control Panel](/links/manager).
 > 1. Go to the `Web Cloud`{.action} section.
 > 1. Click `MX Plan`{.action}.
-> 1. Select the domain concerned.
-> 1. From the `General Information`{.action} tab, select by default.
-> 1. Note the technology used as **Webmail**.
+> 1. Select the relevant domain.
+> 1. From the `General information`{.action} tab (selected by default), check the technology used under the **Webmail** entry.
 >
-> ![MX Plan](images/technology-email.png){.thumbnail .w-500}
+> ![MX plan](images/technology-email.png){.thumbnail .w-500}
+
+<!-- CP-NAV-START:web-mx-plan -->
+---
+
+### OVHcloud Control Panel access
+
+- **Direct link:** [MX Plan](/links/control-panel/web-mx-plan)
+- **Navigation path:** `Web Cloud`{.action} > `MX Plan`{.action} > Select your MX Plan service
+
+---
+<!-- CP-NAV-END:web-mx-plan -->
 
 ## Instructions
 
 **Summary**
 
-- [Logging in to Roundcube](#roundcube-connexion)
+- [Logging in to the Roundcube webmail interface](#roundcube-connexion)
 - [Roundcube webmail main page](#general-interface)
     - [Folder management (left column)](#leftcolumn)
-    - [List of emails received/sent (top window)](#topwindow)
+    - [List of received/sent emails (top window)](#topwindow)
         - [Display type](#topwindow-display)
-        - [Actions on a selected email](#topwindow-action)
-        - [Search for an emai](#topwindow-search)
+        - [Action on a selected email](#topwindow-action)
+        - [Searching for an email](#topwindow-search)
     - [Email content (bottom window)](#lowerwindow)
 - [Configuring Roundcube interface preferences](#roundcube-settings)
     - [User interface](#user-interface-settings)
     - [Mailbox view](#mail-view-settings)
-    - [Displaying messagess](#mail-display-settings)
+    - [Displaying messages](#mail-display-settings)
     - [Composing messages](#mail-writing-settings)
     - [Contacts](#contacts-settings)
     - [Special folders](#special-folder-settings)
@@ -63,11 +73,11 @@ With the OVHcloud MX Plan, you can send and receive emails from third-party soft
 - [Adding an autoresponder](#automatic-respond)
 - [Changing your email password](#password)
 - [Writing an email](#email-writing)
-- [Use cases](#usecase)
+- [Use case](#usecase)
 
-### Logging in to Roundcube <a name="roundcube-connexion"></a>
+### Logging in to the Roundcube webmail interface <a name="roundcube-connexion"></a>
 
-Go to the page [Webmail](/links/web/email). Enter your email address and password, then click `Login`{.action}. 
+Go to the [Webmail](/links/web/email) page. Enter an email address and the password, then click `Login`{.action}. 
 
 ![hosting](images/webmail_login.png){.thumbnail}
 
@@ -77,209 +87,223 @@ You will then be redirected to the Roundcube interface.
 
 > [!primary]
 > 
-> When you first log in to the Roundcube interface, the appearance may be different from what you will see in this documentation. This means that the "classic" appearance has been set on your interface. To change it, follow the steps to access the [user interface settings](#user-interface-settings) and select the "Larry" view.
-> The appearance of the interface will not affect the explanations in this documentation.
+> When you first log in to the Roundcube interface, the appearance may be different from what you will see in this documentation. This means that the "classic" appearance has been set on your interface. To change it, follow the "[User interface](#user-interface-settings)" section and select the "Larry" view.
+> The appearance of the interface will not affect the explanations that follow in this documentation.
 
 > [!warning]
 > 
-> If you are redirected to an **O**utlook **W**eb **A**pp (OWA) interface, this means that you are on the latest version of the MX Plan solution. To find out more about your MX Plan solution, go to our guide [Getting started with an MX Plan solution](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities).
+> If you are redirected to an **O**utlook **W**eb **A**pp (OWA) interface, this means that you are on the latest version of the MX Plan solution. To find out more about your MX Plan solution, see our [Getting started with the MX Plan solution](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities) page.
 >
-> To familiarise yourself with the **OWA** interface, please refer to our guide on [Using an email account in the OWA interface](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa).
+> To familiarise yourself with the **OWA** interface, see our guide [Using an email account from the OWA interface](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa).
 
 ### Roundcube webmail main page <a name="general-interface"></a>
 
-Once logged in to your email account, you have access to the main Roundcube interface, which consists of 3 zones:
+Once logged in to your email account, you have access to the main Roundcube window, which consists of 3 zones:
 
-- [**Left column**](#leftcolumn): Your email account tree, made up of folders and subfolders. The primary folder is the `Inbox`.
+- [**Left column**](#leftcolumn): the tree view of your email account, made up of folders and subfolders. The primary folder is the `Inbox`.
 
-- [**Top window**](#topwindow): The list of emails in the folder selected in the left-hand column.
+- [**Top window**](#topwindow): the list of emails contained in the folder selected in the left column.
 
-- [**Lower window**](#lowerwindow): The content of the email selected in the top window.
+- [**Bottom window**](#lowerwindow): the content of the email selected in the top window.
 
 #### Folder management (left column) <a name="leftcolumn"></a>
 
-In this zone, you will see the folders of your email account.
+In this zone, the folders of your email account are displayed.
 
-To manage folders more precisely, click on the cog at the bottom of the column, then `Manage folders`{.action}
+To manage folders more precisely, click the cog icon at the bottom of the column, then click `Manage folders`{.action}.
 
 ![hosting](images/roundcube02.png){.thumbnail}
 
 To create a folder, click the `+`{.action} button at the bottom of the `Folders` column.
 
-To delete a folder, select it and click the cog at the bottom of the `Folders` column. Click on `Delete`{.action}. To clear the contents but keep the folder, click on `Clear`{.action}.
+To delete a folder, select the relevant folder, click the cog icon at the bottom of the `Folders` column, then click `Delete`{.action}. To clear the contents but keep the folder, click `Empty`{.action}.
 
-The check boxes at the folder level correspond to "subscriptions". The subscription determines whether the folder should be displayed at the webmail interface or the email software level while retaining the folder contents. The only purpose is to hide or display a folder on the email account.
+The check boxes next to the folders correspond to "subscriptions". The subscription determines whether the folder is displayed, or not, in the webmail interface or the email software, while still keeping the folder content. The aim is only to hide or show a folder on the email account.
 
 > [!primary]
 >
-> Folders with a grey check box are special folders. You cannot delete them or remove them from subscriptions.
+> Folders with a grey check box are special folders. You cannot delete them or unsubscribe from them.
 
-#### List of emails received/sent (top window) <a name="topwindow"></a>
+#### List of received/sent emails (top window) <a name="topwindow"></a>
 
-This window displays the contents of the selected folder in the left column. 
+This window displays the contents of the folder selected in the left column. 
 
 ##### Display type <a name="topwindow-display"></a>
 
-This window can be customised by clicking on the cogwheel icon in the top left-hand corner of the window.
+This window is presented in a form that can be customised. To do so, click the cog icon at the top left of the window.
 
 ![hosting](images/roundcube03.png){.thumbnail}
 
-You can set the following:
+Four parameters can be configured:
 
-- **Layout**: Allows you to determine the layout of the management windows for an email account.
-- **List columns**: Allows you to add columns to display (email priorities, etc.).
-- **Sorting column**: Allows you to choose the column by which messages are sorted.
-- **Sorting order**: Allows you to choose the ascending or descending sort order, depending on the sorting column.
+- **Layout**: defines how the email account management windows are arranged. Three options:
+    - `Widescreen`{.action}: three panels side by side — folders, email list and reading pane aligned horizontally;
+    - `Desktop`{.action}: email list at the top, reading pane below (classic layout);
+    - `List`{.action}: no reading pane — emails open in full window when clicked.
 
-##### Actions on a selected email <a name="topwindow-search"></a>
+- **List columns**: check boxes that determine the columns displayed in the email list. The **Subject** and **Threads** columns are always visible. Optional columns available: `From`{.action}, `To`{.action}, `From/To`{.action}, `Reply-To`{.action}, `Cc`{.action}, `Date`{.action}, `Size`{.action}, `Status`{.action}, `Attachment`{.action}, `Flag`{.action}, `Priority`{.action}.
 
-When an email is selected, you can choose an action it. Here are the possible actions:
+- **Sort column**: lets you choose the default sorting column. Available options: `None`{.action}, `Arrival date`{.action}, `Sent date`{.action}, `Subject`{.action}, `From`{.action}, `To`{.action}, `From/To`{.action}, `Cc`{.action} or `Size`{.action}.
 
-- `Reply`{.action}: Reply directly to the sender.
-- `Reply all`{.action}: Reply directly to all recipients listed in the To and Copy fields.
-- `Forward`{.action}: Forward the selected email to one or more recipients.
-- `Delete`{.action}: Move the selected email into the “Trash”.
-- `Spam`{.action}: Place the selected email directly in the Junk folder, labelling it as **Spam**.
-- `Mark`{.action}: Determine the status of an email manually.
+- **Sort order**: ascending or descending.
+
+Click `Save`{.action} to apply your choices.
+
+> [!primary]
+>
+> You can also **sort the list dynamically** by clicking directly on the header of a displayed column (for example **Date**, **Subject** or **Size**). A second click on the same column reverses the order.
+
+##### Action on a selected email <a name="topwindow-action"></a>
+
+When an email is selected, you can perform actions on it. The possible actions are:
+
+- `Reply`{.action}: reply directly to the sender.
+- `Reply all`{.action}: reply directly to all the recipients listed in the "To" and "Cc" fields.
+- `Forward`{.action}: forward the selected email to one or more recipients.
+- `Delete`{.action}: move the selected email to the "Trash".
+- `Mark as junk`{.action}: place the selected email directly in the junk mail folder (Junk), labelling it as **spam**.
+- `Mark`{.action}: manually set the status of an email.
 - `More`{.action} 
     - `Print this message`{.action}.
-    - `Download (.eml)`{.action}: Retrieve the header and the content of the email as a file.
-    - `Edit as new`{.action}: Create a new email based on the selected email.
-    - `Show source`{.action}: Display the email in its raw format, including the header.
-    - `Move to`{.action} : Move the email to a folder.
-    - `Copy to`{.action}: Copy the email to a folder.
+    - `Download (.eml)`{.action}: retrieve the email header and its content.
+    - `Edit as new`{.action}: create a new email based on the selected email.
+    - `Show source`{.action}: display the email in its raw form, including the header.
+    - `Move to`{.action}: move the email to a folder.
+    - `Copy to`{.action}: copy the email to a folder.
     - `Open in a new window`{.action}.
 
 ![hosting](images/roundcube04.png){.thumbnail}
 
 > [!primary]
 >
-> If one of your contacts requests that an acknowledgement be sent back when you read their email, you will get the following message: `The sender of this message has asked to be notified when you read this message. Do you want to notify the sender?`.
-> 
+> If one of your contacts requests an acknowledgement of receipt when you read their email, you will get the following message: `The sender of this message has asked to be notified when you read this message. Do you want to notify the sender?`.
+>
 
-##### Search for an email <a name="topwindow-action"></a>
+##### Searching for an email <a name="topwindow-search"></a>
 
-A search tool is available in the upper right corner of the interface.
+A search tool is available in the upper right-hand part of the interface.
 
-Click the arrow to the right of the magnifying glass to display the search filters.
+Enter a term in the search field, then confirm with the `Enter`{.action} key: by default, Roundcube searches the entire current folder.
+
+Click the arrow to the right of the magnifying glass to display the search filters: you can restrict the search to specific fields (subject, message body, sender, recipients, etc.) or extend its scope to all folders.
 
 #### Email content (bottom window) <a name="lowerwindow"></a>
 
-When an email is selected in the list, it is displayed in the lower window.
+When an email is selected in the list, it is displayed in the bottom window.
 
-On the right-hand side you can find shortcuts for the following functions:
+On the right-hand side, you will find shortcuts for the following functions:
 
-- Display in HTML format (default)
-- Display in plain text format
-- Reply
-- Reply all
-- Forward
-- Open in new window 
+- `Show in HTML format`{.action} (default)
+- `Show in plain text format`{.action}
+- `Reply`{.action}
+- `Reply all`{.action}
+- `Forward`{.action}
+- `Open in a new window`{.action}
 
 ![hosting](images/roundcube05.png){.thumbnail}
 
 ### Configuring Roundcube interface preferences <a name="roundcube-settings"></a>
 
-The following sections in this guide correspond to the tabs that make up the `Preferences`{.action} section of the Roundcube `Settings`{.action}. Their description is not exhaustive.
+The following sections of this guide correspond to the tabs that make up the `Preferences`{.action} part of the Roundcube `Settings`{.action}. Their description is not exhaustive.
 
 ![hosting](images/roundcube06.png){.thumbnail}
 
-#### User Interface <a name="user-interface-settings"></a>
+#### User interface <a name="user-interface-settings"></a>
 
-Set here the `Language` of the Roundcube interface as well as the `Time zone`, the `Time format` and the `Date format`.
+Here, set the `Language` of the Roundcube interface, the `Time zone`, the `Time format` and the `Date format`.
 
-The `Pretty Dates` option allows you to display the received/sent date with relative terms such as `Today`, `Yesterday`, etc.<br>
+The `Pretty dates` option lets you display the date received/sent with relative terms such as "Today", "Yesterday", etc.<br>
+**For example**: today's date is **19/05/2022**, an email sent/received on **17/05/2022** at **17:38** will be displayed as **Tue 17:38**, because the email corresponds to the previous Tuesday.
 
-The `Show next entry in the list after deletion or move` check box means that after a delete or move action on an email, the item in the lower row will then always be selected, regardless of the sort order. 
+The `Display the next message after marking as read or moving` check box means that after a delete or move action on an email, the item in the row below will then always be selected, regardless of the sort order.
 
-You can choose the display style of your interface. You can choose between the **Classic** display or the **Larry** display.
+You can choose the look of your interface display. You have a choice between the **Classic** display or the **Larry** display.
 
-#### Mailbox View <a name="mail-view-settings"></a>
+#### Mailbox view <a name="mail-view-settings"></a>
 
-Set here the usability to view and act on emails. The `Layout` option allows you to arrange the 3 windows described in the [Roundcube webmail main interface section](#topwindow) .
+Here, set the layout used to view and act on emails. The `Layout` option lets you arrange the 3 windows described in the [List of received/sent emails](#topwindow) section.
 
-#### Displaying Messages <a name="mail-display-settings"></a>
+#### Displaying messages <a name="mail-display-settings"></a>
 
-Define how emails are displayed.<br>
-We recommend that you tick the `Display HTML` box, to ensure that emails formatted by the sender are displayed correctly.<br>
-It is also advisable to keep the `Allow remote resources (images, styles)` option on `never`. This avoids loading elements of an email that seems malicious.
+Set how emails are displayed.<br>
+We recommend keeping the `Display HTML` box ticked, to ensure that emails formatted by the sender are displayed correctly.<br>
+We also recommend keeping the `Allow remote resources (images, styles)` option set to `never`. This avoids loading the elements of an email that may seem malicious.
 
-#### Composing Messages <a name="mail-writing-settings"></a>
+#### Composing messages <a name="mail-writing-settings"></a>
 
-Set the default shape when writing an email or reply.<br>
-It is recommended to pass the `Compose HTML messages` option on `always`, to benefit by default from HTML editing tools and not to alter an HTML signature.
+Set the default form when writing an email or a reply.<br>
+We recommend setting the `Compose HTML messages` option to `always`, to benefit from HTML editing tools by default and to avoid altering an HTML signature.
 
 #### Contacts <a name="contacts-settings"></a>
 
-Customise the arrangement of information in your address book here.
+Customise the layout of the information in your address book here.
 
-#### Special Folders <a name="special-folder-settings"></a>
+#### Special folders <a name="special-folder-settings"></a>
 
-Roundcube has 4 special folders: `Drafts`, `Sent`, `Spam`, `Deleted Items`.
+Roundcube has 4 special folders: `Drafts`, `Sent`, `Junk`, `Trash`.
 
-We do not recommend changing them, but you can assign the behaviour of a special folder to another folder created later, using the drop-down menus.
+We do not recommend modifying them, but you can assign the behaviour of a special folder to another folder created later, using the drop-down menus.<br>
 
-You can assign the `Drafts` behaviour to another folder that you created by clicking the drop-down list and choosing that folder. If no folder is assigned, it will be automatically set to the "Drafts" option. The emails saved in there will be considered drafts until they are sent.
+**For example**, you can assign the "Drafts" behaviour to another folder you have created by clicking the drop-down list and choosing that folder. If no folder is assigned to it, it will automatically be set to the "Drafts" option. Emails saved there will then be considered drafts until they are actually sent.
 
-> Example: Create a subfolder called "Drafts client emails". Open `My preferences`{.action} and `Special folders`{.action} and choose the "Drafts" option. In the drop-down menu, select the "Drafts client emails" folder to replace "Drafts". Emails in this folder will be considered drafts.
+> In practice, you create a subfolder called "Client email drafts". Go to `My preferences`{.action} / `Special folders`{.action} and choose the "Drafts" option. In the drop-down menu, select the "Client email drafts" folder to replace "Drafts". Emails written in this folder will be considered drafts.
 
-#### Server Settings <a name="server-settings"></a>
+#### Server settings <a name="server-settings"></a>
 
-In this tab, you can optimise the space occupied by an email account. The option `Clear "Deleted Items" on logout` prevents the messages that have been deleted from accumulating in this folder. The option `Permanently delete messages in the spam folder` will automatically delete all emails marked as spam.
+In this tab, you can optimise the space used by an email account. The `Clear Trash on logout` option helps prevent the build-up of items that have been deleted. The `Directly delete junk` option will automatically delete all emails considered as spam.
 
 > [!warning]
 > 
-> It is not recommended to enable the `Permanently delete messages in the spam folder` option, in the event that false positives (emails falsely declared as "SPAM") are marked as SPAM for the receiving server. When emails are placed in the `Spam` folder, it is still possible to check for legitimate messages.
+> We do not recommend enabling the `Directly delete junk` option in case a false positive (an email wrongly classified as "spam") is flagged as spam by the receiving server. When an email is placed in the "Junk" folder, you can still check whether the email is legitimate.
 
 #### Encryption <a name="encryption"></a>
 
-If your browser allows it, you can install and activate the "Mailvelope" extension. This is a browser extension that integrates PGP (**P**retty **G**ood **P**privacy) into your web mail. The PGP encryption system and, therefore, the "Mailevelope" extension allow you to:
+If your browser allows it, you can install and enable the "Mailvelope" extension. This is a browser extension that integrates PGP (**P**retty **G**ood **P**rivacy) into your webmail. The PGP encryption system, and consequently the "Mailvelope" extension, lets you:
 
 - Encrypt and decrypt emails in your browser.
-- Keep the content of your emails private to your email provider.
+- Keep the content of your emails private from your email provider.
 
-This way, only you can read your emails. This extension is a way to secure your webmail if you receive confidential emails.
+This way, only you can read your emails. This extension is a way to secure your webmail if you receive emails of a confidential nature.
 
-For more information, see the Mailvelope FAQ at <https://mailvelope.com/faq>.
+For more information, see the "Mailvelope" FAQ at <https://mailvelope.com/faq>.
 
 ### Managing identities and their signatures <a name="identity-signature"></a>
 
-In Roundcube, click `Settings`{.action} in the top bar, then `Identities`{.action} in the left column. "Identity" allows you to customise information sent to recipients such as the display name or a signature.
+In Roundcube, click `Settings`{.action} in the top bar, then `Identities`{.action} in the left column. The "Identity" lets you customise the information sent to recipients, such as the display name or the signature.
 
 ![hosting](images/roundcube07.png){.thumbnail}
 
-#### Setting attributes for an identity <a name="identity"></a>
+#### Setting the attributes of an identity <a name="identity"></a>
 
-- **Display Name**: This name will appear in the “sender” section of the recipient.
-- **Email**: This will be displayed as the address from which the email is sent.
-- **Company**: A field for a company name, association, or another entity.
-- **Reply-To**: Assign a reply email address different from the sender.
-- **Bcc**: Send a blind copy to an email address.
-- **Set default**: If there are multiple identities (signatures), assign this one by default.
-- **Signature**: Customise the footer of your emails (surname, first name, job title, sentences, images, etc.).
-- **HTML signature**: Activates the HTML format on the signature. 
+- **Display Name**: this name will appear in the "sender" section for the recipient.
+- **Email**: the address from which the email is sent.
+- **Organization**: a field for a company name, association, or another entity.
+- **Reply-To**: assign a different reply email address from the sender's.
+- **Bcc**: send a blind copy to an email address when sending.
+- **Set default**: when there are several identities (signatures), set this one as the default.
+- **Signature**: customise the footer of an email when writing it (surname, first name, job title, sentences, images, etc.).
+- **HTML signature**: enables HTML format on the signature.
 
 > [!alert]
-> 
-> Filling in the **Email** box with an email address different from the one you are logged in to is considered to be *spoofing*. The IP address used for sending may be banned and/or considered "SPAM" by your recipients. 
+>
+> Filling in the **Email** field with an email address different from the one you are logged in with is considered electronic identity theft (*spoofing*). The IP address used for sending may be "banned" and/or considered "spam" by your recipients.
 
 #### Adding a signature <a name="signature"></a>
 
-By default, the `Signature` box is set to plain text. This format does not allow advanced editing or inserting an image into your signature. For advanced editing options for a signature, it is recommended that you enable HTML mode by clicking **HTML Signature**  under the text frame.
+By default, the `Signature` field is in "plain text". This format does not allow advanced editing or inserting an image into your signature. To benefit from advanced editing options for a signature, we recommend enabling HTML mode by clicking **HTML signature** below the input frame.
 
 > [!warning]
-> 
-> If the signature is in HTML format, it will be necessary to switch to HTML mode for writing an email. You can enable this option by default for each email editing session, in the `Settings`{.action} section of the Roundcube interface.
-> 
-> Click `Preferences`{.action} in the left-hand column, then click `Composing Messages`{.action}. At **Compose HTML messages**, select `Always`.
+>
+> As a result, if the signature is in HTML format, you will need to switch to HTML mode when writing an email. You can enable this option by default for each email you write, from the `Settings`{.action} section of the Roundcube interface.
+> Click `Preferences`{.action} in the left-hand column, then `Composing messages`{.action}. For the **Compose HTML messages** entry, select `Always`.
 >
 
-To insert an image into a signature, the image must be hosted on a server (OVHcloud hosting or another).<br>
-**Uploading an image from your device will not display it.**
+To insert an image into a signature, the image must be hosted on a server (an OVHcloud hosting plan or another).<br>
+**Uploading an image from a computer will not allow it to be displayed**.
 
-Click the `< >`{.action} button in the HTML toolbar, then insert the following code, replacing `your-image-url` with the URL of the image, and `text-if-image-is-not-displayed` with text that replaces the image if it cannot be displayed.
+Click the `< >`{.action} button in the HTML toolbar, then insert the following code, replacing `your-image-url` with the URL of the image and `text-if-image-is-not-displayed` with text that replaces the image if it cannot be displayed.
 
-```bash
+```html
 <img src="your-image-url" border="0" alt="text-if-image-is-not-displayed" />
 ```
 
@@ -289,29 +313,29 @@ Click the `< >`{.action} button in the HTML toolbar, then insert the following c
 
 Click `Contacts`{.action} in the top bar to access the contact book. It is divided into **3 columns**:
 
-- **Groups**: In the address book, you can create groups to classify contacts.
-- **Contacts**: View the contacts for the selected address book or group.
-- **Contact Properties** or **Add Contact**: This window appears when a contact is selected or is being created. You can read or edit contact information.
+- **Groups**: in the address book, you can create groups to organise contacts.
+- **Contacts**: view the contacts of the address book or the selected group.
+- **Contact properties** or **Add contact**: this window appears when a contact is selected or being created. You can read or edit the contact information.
 
 ![hosting](images/roundcube09.png){.thumbnail}
 
 #### Groups <a name="group"></a>
 
-Groups are subcategories of the address book. They can be used to classify contacts into subsets. For example, it is easier to find a contact in a group you have created than in your entire address book. This also allows you to send an email by adding a group as a recipient, instead of adding the group contacts individually.
+Groups are subcategories of the address book. They let you organise contacts into subsets. For example, it is easier to find a contact in a group you have created than in your entire address book. They also let you send an email by adding a group as a recipient, instead of adding the contacts of the group one by one.
 
-To create a group, click the `+`{.action} button at the bottom of the `Groups` column. Set the group name and click `Save`{.action} to validate.
+To create a group, click the `+`{.action} button at the bottom of the `Groups` column. Set the name of the group, then click `Save`{.action} to confirm.
 
 ![hosting](images/roundcube10.png){.thumbnail}
 
-To assign a contact to a group, select a contact in the `Contacts` column. In the window that appears, click on the `Groups`{.action} tab. Select the group you want to assign to the contact.
+To assign a contact to one of the groups, select a contact in the `Contacts` column, then in the window that appears, click the `Groups`{.action} tab. Tick the group you want to assign to the contact.
 
 #### Contacts <a name="contacts"></a>
 
 In the `Groups` column, select the address book or one of the groups.
 
 > [!primary]
-> 
-> When you create a contact from a selected group, the contact will be automatically added to the group.
+>
+> When you create a contact from a selected group, the contact will automatically be added to the group.
 
 Click the `+`{.action} button at the bottom of the `Contacts` column to create a contact.
 
@@ -320,110 +344,110 @@ Click the `+`{.action} button at the bottom of the `Contacts` column to create a
 Then fill in the contact information.
 
 > [!primary]
-> You can add additional fields via the `Add Field...`{.action} drop-down menu, located under the `First name` and `Address` sections.
+> You can add additional fields via the `Add field...`{.action} drop-down menu, located below the `First name` and `Address` fields.
 
-#### Importing Contacts <a name="import-contacts"></a>
+#### Importing contacts <a name="import-contacts"></a>
 
-In the `Contacts`{.action} window in the top bar, click `Import`{.action} to open the import window.
+In the `Contacts`{.action} window, in the top bar, click `Import`{.action} to open the import window.
 
-- `Import from file`: Select a CSV or vCard file on your computer. Contacts within a CSV file must be separated by commas. The file should not be larger than 20 MB.
-- `Import group assignments`: If the contacts in your file are sorted by groups, you can enable this option to import this organisation. If you leave this option on `None`, no groups are assigned to the contacts.
-- `Replace the entire address book`: If you have already configured a contact book, we recommend exporting it before ticking this option, or ensuring that you want to replace it permanently.
+- `Import from file`: select a CSV or vCard file from your computer. Contacts in a CSV file must be separated by commas. The file must not be larger than 20 MB.
+- `Import group assignments`: if the contacts in your file are sorted by groups, you can enable this option to keep this organisation, or leave this option set to `none` so that no group is assigned to the contacts.
+- `Replace the entire address book`: if a contact book is already configured, we recommend exporting it before ticking this option, or making sure you want to replace it permanently.
 
 ![hosting](images/roundcube-import-contact.png){.thumbnail}
 
-#### Exporting Roundcube Contacts <a name="export-contacts"></a>
+#### Exporting contacts <a name="export-contacts"></a>
 
-In the `Contacts`{.action} window in the top bar, click the down arrow to the right of the `Export`{.action} button.
+In the `Contacts`{.action} window, in the top bar, click the down arrow to the right of the `Export`{.action} button.
 
-You can choose between:
+You have the choice between:
 
-- `Export all`{.action}: All contacts will be exported to a **.vcf** file.
-- `Export selected`{.action}: Export only the items you have selected in the `Contacts`{.action} column.
+- `Export all`{.action}: all contacts will be exported in a **.vcf** file.
+- `Export selected`{.action}: export only the items you have selected in the `Contacts`{.action} column.
 
 ![hosting](images/roundcube-export-contact.png){.thumbnail}
 
 ### Responses (templates) <a name="responses"></a>
 
-This feature allows you to create response templates for composing an email.
+This feature lets you create response templates when writing an email.
 
 In Roundcube, click `Settings`{.action} in the top bar, then `Responses`{.action} in the left column.
 
-To add a response, click the `+`{.action} button at the bottom of the `Replies` column.
+To add a response, click the `+`{.action} button at the bottom of the `Responses` column.
 
 ![hosting](images/roundcube12.png){.thumbnail}
 
 > [!primary]
-> 
-> `Responses` are written in plain text format.
+>
+> "Responses" are written in "plain text" format.
 
 ### Adding an autoresponder <a name="automatic-respond"></a>
 
-You want to add an automatic reply to your email account when you are absent or unavailable. This feature cannot be enabled via webmail, but via your [OVHcloud Control Panel](/links/manager), in the management interface for your email accounts. Read our guide "[Creating an autoresponder for your email addresses](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/feature_auto_responses/)".
+You want to add an automatic reply to your email address when you are away or unavailable. This feature cannot be enabled from the webmail interface, but from your [OVHcloud Control Panel](/links/manager), in the management interface for your email addresses. See our guide "[Creating an autoresponder for your email address](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/feature_auto_responses/)".
 
 ### Changing your email password <a name="password"></a>
 
-To change your email password, you will need to log in to your [OVHcloud Control Panel](/links/manager), in the interface for managing your email addresses. Read our guide "[Changing an email password](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_change_password/)".
+To change your email password, you must log in to your [OVHcloud Control Panel](/links/manager), in the management interface for your email addresses. See our guide "[Changing the password of an email address](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_change_password/)".
 
 ### Writing an email <a name="email-writing"></a>
 
-From the `Email`{.action} tab in the top bar, click `Write`{.action}.
+From the `Mail`{.action} tab in the top bar, click `Compose`{.action}.
 
-In the email editing window, you will see the following fields: 
+In the email composition window, you will find the following fields:
 
-- **From**: Choose an [identity](#identity) to define the sender.
-- **To+**: Add recipients and/or a recipient [group](#group).
+- **From**: choose an [identity](#identity) to set the sender.
+- **To**: add recipients and/or a [recipient group](#group). The `+`{.action} button to the right of the field lets you enter several addresses.
 
 > [!primary]
 >
-> The "**To**" field must not exceed 100 recipients, this includes contacts in a [group](#group).
+> The **"To"** field must not exceed 100 recipients, this includes contacts within a [group](#group).
 
-- **Add Cc+**: Add single copy recipients.
-- **Add Bcc+**: Add blind copy recipients. Other recipients of the email will not see addresses in BCC.
-- **Add Followup-To**: Forward the email to recipients.
-- **Editor type**:  
-    - `Plain text`: Text only, without formatting.
-    - `HTML`: Text with formatting. An HTML toolbar appears above the input window.
+- **Cc**: via the `Add Cc`{.action} button, add recipients in simple copy.
+- **Bcc**: via the `Add Bcc`{.action} button, add recipients in blind copy. The other recipients of the email will not see those in Bcc.
+- **Followup-To**: via the `Add Followup-To`{.action} button, forward the email to recipients.
+- **Editor type**:
+    - `Plain text`: text only, without formatting.
+    - `HTML`: text with formatting. An HTML toolbar appears above the input window.
 - **Priority** of the email.
-- **Return receipt**: Acknowledgement of receipt is requested from the recipient.
-- **Delivery status notification** Status notification when the email has been successfully sent to the recipient.
-- **Save sent message in**: Choose the folder where a copy of the email will be stored.
+- **Return receipt**: an acknowledgement of receipt is requested from the recipient.
+- **Delivery status notification** when the email has been successfully delivered to the recipient.
+- **Save sent message in**: choose the folder where a copy of the email will be stored.
 
 In the top bar, the following actions are available:
 
-- `Cancel`{.action} writing an email with a confirmation request.
+- `Cancel`{.action} writing an email, with a confirmation prompt.
 - `Send`{.action} an email.
-- `Save`{.action} an email in the "Draft" special folder.
+- `Save`{.action} an email in the "Drafts" special folder.
 - `Spell`{.action} check the text, with a menu allowing the choice of language.
 - `Attach`{.action} a file to an email.
-- `Signature`{.action} adds the signature attached to [the selected identity](#identity).
-- `Responses`{.action} adds a pre-saved template from the [Responses](#responses) section.
+- `Signature`{.action}: adds the signature attached to the selected [identity](#identity).
+- `Responses`{.action}: adds a pre-saved template from the [Responses](#responses) section.
 
 ![hosting](images/roundcube13.png){.thumbnail}
 
-### Use cases <a name="usecase"></a>
+### Use case <a name="usecase"></a>
 
-#### Request verification failed
+#### Request check failed
 
-When you try to access your Roundcube webmail, you will receive the following message:
+You are getting the following message when trying to access your Roundcube webmail interface:
 
 ```console
 REQUEST CHECK FAILED
-For your protection, access to this resource is secured against CSRF.
-If you see this, you probably didn't log out before leaving the web application.
+For your protection, access to this resource is protected against CSRF attacks.
+If you see this, you probably did not log out before leaving the web application.
 Human interaction is now required to continue.
-Please contact your server-administrator.
+Please contact your server administrator.
 ```
 
-As you will see in the email, your account will be considered as already logged in. This is called a session. It means that your email account is already being used by the email server, and that the previous session must be closed. Check that your email account has not already been opened on Roundcube. You can also clear cached data in your web browser.
+As stated in the message, your email account is considered to be already logged in. This is referred to as a "session". It means that your email account is already in use as far as the email server is concerned, and that this previous session must be closed. Check that your email account is not already open on Roundcube. Also clear the cached data in your web browser.
 
-## Go further <a name="gofurther"></a>
+## Go further
 
 [Getting started with the MX Plan solution](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities)
 
-[Changing your password for an MX Plan email address](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_change_password)
+[Changing the password of an MX Plan email address](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_change_password)
 
-[Creating an auto-reply for an email address](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/feature_auto_responses/)
+[Creating an autoresponder for your email address](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/feature_auto_responses/)
 
 [Creating filters for your email addresses](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/feature_filters)
 

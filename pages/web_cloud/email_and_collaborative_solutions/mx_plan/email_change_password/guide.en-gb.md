@@ -15,12 +15,46 @@ You can access your OVHcloud email accounts using the password associated with t
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](/links/manager) or access to the email account via [webmail](/links/web/email), depending on the method used.
+- Access to the email account via [webmail](/links/web/email), depending on the method used.
 - A preconfigured OVHcloud email solution:
     - **MX Plan** available with a [web hosting plan](/links/web/hosting), or included in a [100M free hosting](/links/web/domains-free-hosting).
-    - [Exchange](/links/web/emails).
+    - [Exchange](/links/web/emails-exchange).
     - [Email Pro](/links/web/email-pro).
     - [Zimbra](/links/web/emails-zimbra).
+
+<!-- CP-NAV-START:web-mx-plan -->
+<!-- CP-NAV-START:web-zimbra -->
+<!-- CP-NAV-START:web-email-pro -->
+<!-- CP-NAV-START:web-exchange -->
+---
+
+### OVHcloud Control Panel Access
+
+**MX Plan:**
+
+- **Direct link:** [MX Plan](/links/control-panel/web-mx-plan)
+- **Navigation path:** `Web Cloud`{.action} > `MX Plan`{.action} > Select your MX Plan service
+
+**Zimbra:**
+
+- **Direct link:** [Zimbra](/links/control-panel/web-zimbra)
+- **Navigation path:** `Web Cloud`{.action} > `Zimbra Mail`{.action} > Select your Zimbra service
+
+**Email Pro:**
+
+- **Direct link:** [Email Pro](/links/control-panel/web-email-pro)
+- **Navigation path:** `Web Cloud`{.action} > `Email Pro`{.action} > Select your platform
+
+**Exchange:**
+
+- **Direct link:** [Exchange](/links/control-panel/web-exchange)
+- **Navigation path:** `Web Cloud`{.action} > `Exchange`{.action} > Select your platform
+
+---
+<!-- CP-NAV-END:web-exchange -->
+<!-- CP-NAV-END:web-email-pro -->
+<!-- CP-NAV-END:web-zimbra -->
+<!-- CP-NAV-END:web-mx-plan -->
 
 ## Instructions
 
@@ -34,6 +68,9 @@ You can access your OVHcloud email accounts using the password associated with t
 >
 > For security reasons, we recommend not using the same password twice, and choosing one that does not contain any personal information (e.g. your surname, first name and date of birth). We also recommend renewing your password regularly.
 
+<!-- CP-STEPS-START:cp-password-identification -->
+<a name="whichmxplan"></a>
+
 > [!primary]
 >
 > **Identify the email technology for your MX Plan solution.**
@@ -43,9 +80,11 @@ You can access your OVHcloud email accounts using the password associated with t
 > - In the `General information`{.action} tab, note the technology used under the **Webmail** comment in the `Subscription`{.action} or `Connection`{.action} box.
 >
 > ![mx plan](images/technology-email.png){.thumbnail .w-500}Webmail
+<!-- CP-STEPS-END:cp-password-identification -->
 
-In the [OVHcloud Control Panel](/links/manager), go to the `Web Cloud`{.action} section, then follow the instructions for your solution:
+Follow the instructions for your solution:
 
+<!-- CP-STEPS-START:cp-password-change-tabs -->
 > [!tabs]
 > **MX Plan email (legacy version)**
 >>
@@ -79,6 +118,7 @@ In the [OVHcloud Control Panel](/links/manager), go to the `Web Cloud`{.action} 
 >> Click the `...`{.action} button, then `Modify`{.action}.<br><br>
 >>![email](images/email-password-zimbra01.png){.thumbnail}<br>
 >>
+<!-- CP-STEPS-END:cp-password-change-tabs -->
 
 ### Changing the password via webmail
 
@@ -99,7 +139,7 @@ Changing your password via webmail is available for OVHcloud email offers using 
 
 <iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/msmUN7cLSNI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-Go to the [webmail page](/links/web/email). Enter your full email address and password, then click the `Login`{.action} button. 
+Go to the [webmail page](/links/web/email). Enter your full email address and password, then click the `Login`{.action} button.
 
 ![email](images/mxplan-password-new-step2.png){.thumbnail}
 
@@ -136,7 +176,7 @@ For security and confidentiality reasons, it is not possible to **retrieve** a p
 >
 > If you want to store a password, we recommend using a password manager, such as **KeePass**.
 
-## Go further
+## Go further <a name="go-further"></a>
 
 [Getting started with the MX Plan solution](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities)
 

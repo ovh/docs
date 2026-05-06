@@ -1,6 +1,6 @@
 ---
-title: Tutorial - Installare un server Web (LAMP) su Debian o Ubuntu
-excerpt: "Come configurare un server Web LAMP"
+title: "Tutorial - Installare un server Web (LAMP) su Debian o Ubuntu"
+excerpt: "Installa un server web LAMP (Linux, Apache, MySQL, PHP) su un server dedicato Debian o Ubuntu passo dopo passo"
 updated: 2023-05-10
 ---
 
@@ -17,8 +17,18 @@ La realizzazione di un server Web e dei software associati permette al tuo serve
 ## Prerequisiti
 
 - Un [server dedicato](/links/bare-metal/bare-metal), un [VPS](/links/bare-metal/vps) o un'istanza [Public Cloud](/links/public-cloud/public-cloud) nel tuo account OVHcloud (Windows escluso)
-- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
 - Un accesso amministrativo al tuo servizio tramite SSH
+
+<!-- CP-NAV-START:baremetal-dedicated-servers -->
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [Server Dedicati](/links/control-panel/baremetal-dedicated-servers)
+- **Percorso di navigazione:** `Bare Metal Cloud`{.action} > `Server Dedicati`{.action} > Seleziona il tuo server
+
+---
+<!-- CP-NAV-END:baremetal-dedicated-servers -->
 
 > [!warning]
 > Questa guida ti mostra come utilizzare una o più soluzioni OVHcloud con tool esterni per descrivere le operazioni eseguite in un contesto preciso. Forse dovrai adattare le istruzioni alla tua situazione.
@@ -80,12 +90,12 @@ sudo apt install -y php php-pdo php-mysql php-zip php-gd php-mbstring php-curl p
 
 ### Step 4: configurazione del server del database <a name="sqlconf"></a>
 
-MariaDB fornisce uno script per aiutarti nella configurazione iniziale e applicare alcuni parametri legati alla sicurezza.
+MariaDB [fornisce uno script](https://mariadb.com/docs/server/clients-and-utilities/deployment-tools/mariadb-secure-installation) per aiutarti nella configurazione iniziale e applicare alcuni parametri legati alla sicurezza.
 
 Per eseguirlo, esegui questo comando:
 
 ```bash
-sudo mysql_secure_installation
+sudo mariadb-secure-installation
 ```
 
 Conferma il primo invito cliccando su `Entrata`{.action}.
@@ -278,4 +288,4 @@ Cerbot rinnova automaticamente i certificati. Non sono necessari ulteriori passi
 
 [Documentazione NGINX](https://nginx.org/en/docs/) (alternativa Apache)
 
-Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.
+Contatta la nostra [Community di utenti](/links/community).

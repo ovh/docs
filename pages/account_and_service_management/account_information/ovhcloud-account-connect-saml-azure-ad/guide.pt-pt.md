@@ -14,7 +14,17 @@ Pode utilizar a autenticação **SSO** (*Single Sign-On*) para se ligar à sua c
 
 - Ter acesso às funções de **Administrador de aplicações** e **Administrador de utilizadores** de um serviço Entra ID
 - Ter uma [conta OVHcloud](/pages/account_and_service_management/account_information/ovhcloud-account-creation)
-- Ter acesso à [Área de Cliente OVHcloud](/links/manager)
+
+<!-- CP-NAV-START:iam-saml-sso -->
+---
+
+### Acesso à Área de Cliente OVHcloud
+
+- **Ligação direta:** [SAML SSO](/links/control-panel/iam-saml-sso)
+- **Caminho de navegação:** `Identidade, Segurança e Operações`{.action} > `Users`{.action} > `SSO connection`{.action}
+
+---
+<!-- CP-NAV-END:iam-saml-sso -->
 
 ## Instruções
 
@@ -199,17 +209,9 @@ Utilize esta ligação para descarregar o ficheiro de metadados da aplicação E
 
 ### Criar a confiança de uma conta OVHcloud e configurar a ligação
 
-A adição da sua aplicação Entra ID como fornecedor de identidade aprovado é efetuada na [Área de Cliente OVHcloud](/links/manager), onde poderá fornecer os metadados do fornecedor de identidade.
+A adição da sua aplicação Entra ID como fornecedor de identidade aprovado é efetuada na página [SAML SSO](/links/control-panel/iam-saml-sso) da sua Área de Cliente OVHcloud, onde poderá fornecer os metadados do fornecedor de identidade.
 
 #### Criar confiança na OVHcloud
-
-Na barra lateral, clique em `Identidade, Segurança e Operações`{.action} e, a seguir, em `Identidades`{.action}.
-
-![Para aceder ao menu IAM](images/access_to_the_IAM_menu_01.png){.thumbnail}
-
-Clique no separador `SSO`{.action} e no botão `Ligação SSO`{.action}.
-
-![Para aceder ao menu IAM](images/access_to_the_IAM_menu_03.png){.thumbnail}
 
 Complete o campo **Nome de Atributo de utilizador** com a aplicação Entra ID **UPN** nome do pedido e no campo **Nome de atributo de grupo** com o valor de nome de pedido **groups** guardado antes.
 

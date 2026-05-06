@@ -1,7 +1,7 @@
 ---
 title: FAQ e-mails OVHcloud
 excerpt: "Retrouvez les questions les plus fréquemment posées sur les e-mails"
-updated: 2025-05-21
+updated: 2026-03-24
 ---
 
 <style>
@@ -20,6 +20,40 @@ details[open]>summary::before {
   max-width:500px !important;
 }
 </style>
+
+<!-- CP-NAV-START:web-mx-plan -->
+<!-- CP-NAV-START:web-zimbra -->
+<!-- CP-NAV-START:web-email-pro -->
+<!-- CP-NAV-START:web-exchange -->
+---
+
+### Accès à l'espace client OVHcloud
+
+**MX Plan :**
+
+- **Lien direct :** [MX Plan](/links/control-panel/web-mx-plan)
+- **Pour accéder à vos services :** `Web Cloud`{.action} > `MX Plan`{.action} > Sélectionnez votre service MX Plan
+
+**Zimbra :**
+
+- **Lien direct :** [Zimbra](/links/control-panel/web-zimbra)
+- **Pour accéder à vos services :** `Web Cloud`{.action} > `Zimbra Mail`{.action} > Sélectionnez votre service Zimbra
+
+**Email Pro :**
+
+- **Lien direct :** [Email Pro](/links/control-panel/web-email-pro)
+- **Pour accéder à vos services :** `Web Cloud`{.action} > `Email Pro`{.action} > Sélectionnez votre plateforme
+
+**Exchange :**
+
+- **Lien direct :** [Exchange](/links/control-panel/web-exchange)
+- **Pour accéder à vos services :** `Web Cloud`{.action} > `Exchange`{.action} > Sélectionnez votre plateforme
+
+---
+<!-- CP-NAV-END:web-exchange -->
+<!-- CP-NAV-END:web-email-pro -->
+<!-- CP-NAV-END:web-zimbra -->
+<!-- CP-NAV-END:web-mx-plan -->
 
 ## FAQ e-mail
 
@@ -51,7 +85,7 @@ OVHcloud propose actuellement 4 offres e-mail. Pour comprendre leurs spécificit
 >> ![Email Pro](images/emailpro01_fr.png){.thumbnail .w-500}
 >>
 >> 1. Offre e-mail basée sur la technologie Exchange, offrant des fonctionnalités essentielles avec un espace de stockage de 10 Go.
->> 2. Vous pouvez commander un compte E-mail Pro via l'[espace client OVHcloud](/links/manager) ou directement sur [ovhcloud.com](/links/web/email).
+>> 2. Vous pouvez commander un compte Email Pro via l'[espace client OVHcloud](/links/manager) ou directement sur [ovhcloud.com](/links/web/email).
 >> 3. Cette offre utilise l'interface webmail **OWA** (Outlook Web Access).
 >>
 > **Exchange**
@@ -85,12 +119,8 @@ Ci-dessous, vous trouverez un tableau récapitulatif des principales fonctionnal
 
 /// details | Comment identifier la technologie utilisée sur mon offre **MX Plan** ?
 
-La technologie e-mail utilisée pour votre offre MX Plan est caractérisée par l'interface de son webmail. Pour l'identifier depuis votre espace client suivez le chemin suivant :
+La technologie e-mail utilisée pour votre offre MX Plan est caractérisée par l'interface de son webmail. Pour l'identifier depuis votre espace client :
 
-1. Connectez-vous à votre [espace client OVHcloud](/links/manager).
-1. Rendez-vous dans la partie `Web Cloud`{.action}.
-1. Cliquez sur `MX Plan`{.action}.
-1. Sélectionnez le domaine concerné.
 1. Depuis l'onglet `Informations Générales`{.action}, sélectionné par défaut.
 1. Relevez la technologie utilisée sous la mention **Webmail**.
 
@@ -274,7 +304,7 @@ Pour des raisons de sécurité et de confidentialité, il n'est pas possible de 
 /// details | Comment limiter la réception de spams ?
 
 Pour limiter la réception de SPAMS, vous pouvez mettre en place des filtres sur vos e-mails (appelés « Filtres » sur l'offre MX Plan). Ils auront pour but de supprimer des e-mails ou de les déplacer dans le dossier « courriers indésirables » dès leur réception.
-Pour ce faire, connectez-vous à votre [espace client OVHcloud](/links/manager), rendez-vous dans la partie `Web Cloud`{.action} et cliquez sur `MX Plan`{.action}. Sélectionnez le domaine concerné, cliquez ensuite sur l'onglet `Emails`{.action}, puis dans la colonne `Filtres`, cliquez sur l'icône « Gestion des filtres du compte ».
+Pour ce faire, cliquez sur l'onglet `Emails`{.action}, puis dans la colonne `Filtres`, cliquez sur l'icône « Gestion des filtres du compte ».
 
 Si la colonne `Filtres` n'est pas présente dans votre espace-client, la création de filtres doit alors s'effectuer via des règles de gestion de boîte de réception dans le [webmail](/links/web/email). Vous pouvez consulter le guide suivant pour plus de détails : « [Règles de boîte de réception depuis l'interface OWA](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/creating-inbox-rules-in-owa-mx-plan) ».
 
@@ -293,7 +323,7 @@ Si vous avez souscrit à l'une de nos [offres e-mail OVHcloud](/links/web/emails
 
 Vous souhaitez changer d'[offre e-mail](/links/web/emails) pour bénéficier de plus d'espace et de fonctionnalités, mais vous souhaitez conserver le contenu de votre adresse existante ? Pour cela nous vous invitons à suivre le guide de migration correspondant à votre besoin :
 
-- [Migrer une adresse e-mail MX Plan vers un compte E-mail Pro ou Exchange](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_control_panel).
+- [Migrer une adresse e-mail MX Plan vers un compte Email Pro ou Exchange](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_control_panel).
 - [Migrer vos adresses e-mail d'une plateforme e-mail OVHcloud vers une autre](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_control_panel).
 - [Migrer manuellement votre adresse e-mail](/pages/web_cloud/email_and_collaborative_solutions/migrating/manual_email_migration).
 - [Migrer des comptes e-mail via OVHcloud Mail Migrator](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_omm).

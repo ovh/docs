@@ -1,7 +1,7 @@
 ---
 title: 'Adding cloud credit'
 excerpt: 'Find out how to add credit or vouchers to your Public Cloud project'
-updated: 2025-04-28
+updated: 2026-05-05
 ---
 
 ## Objective
@@ -13,18 +13,28 @@ With the *cloud credit* option you can allocate a specific amount to your Public
 ## Requirements
 
 - A [Public Cloud project](/links/public-cloud/public-cloud) in your OVHcloud account
-- Access to the [OVHcloud Control Panel](/links/manager)
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Navigation path:** `Public Cloud`{.action} > Select your project
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## Instructions
 
-Log in to the [OVHcloud Control Panel](/links/manager), go to the `Public Cloud`{.action} section and select the Public Cloud project concerned. Open `Credit & Vouchers`{.action} in the left-hand menu under **Settings**.
+### Adding credit
+
+Open `Credit & Vouchers`{.action} in the left-hand menu under **Settings**.
 
 > [!warning]
 >
 > Note that credit added in this section cannot be transferred or refunded. It does not have monetary value, and any credit that has not been used within 13 months of purchase will be lost.
 >
-
-### Adding credit
 
 Click on the button `Buy Public Cloud credit`{.action}.
 
@@ -54,9 +64,14 @@ The voucher balance will appear in the `Credits & Vouchers` list.
 
 > [!primary]
 >
-> Since the validity periods of vouchers are usually more limited, the voucher balance will be used before the regular Public Cloud credit.
+> Vouchers are generally valid for only one month; you should use the voucher as soon as possible. The voucher balance will be applied before the Public Cloud credit.
 >
 
 ## Go further
+
+> [!primary]
+>
+> New customers automatically receive US$200 of free trial credit when they activate their first Public Cloud project. See our guide on [Creating your first OVHcloud Public Cloud project](/pages/public_cloud/public_cloud_cross_functional/create_a_public_cloud_project).
+>
 
 Join our [community of users](/links/community).

@@ -25,11 +25,19 @@ Al eliminar un proyecto, los recursos que contiene se pierden definitivamente. E
 ## Requisitos
 
 - Un [proyecto de Public Cloud](/links/public-cloud/public-cloud) en su cuenta de OVHcloud
-- Tienes acceso a tu [Panel de configuración de OVHcloud](/links/manager)
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Ruta de navegación:** `Public Cloud`{.action} > Seleccione su proyecto
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## Procedimiento
-
-Conéctese al [área de cliente de OVHcloud](/links/manager), acceda a la sección de `Public Cloud`{.action} y seleccione el proyecto de Public Cloud correspondiente.
 
 Haga clic en `Configuración del proyecto`{.action} en la sección **Ajustes**, situada en la esquina inferior izquierda.
 

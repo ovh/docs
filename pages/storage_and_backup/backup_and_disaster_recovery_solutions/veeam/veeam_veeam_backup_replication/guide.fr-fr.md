@@ -1,7 +1,7 @@
 ---
 title: "Installer Veeam Backup & Replication"
 excerpt: "Découvrez comment installer un serveur Veeam Backup & Replication avec Veeam Enterprise"
-updated: 2024-12-19
+updated: 2026-04-07
 ---
 
 ## Objectif
@@ -9,6 +9,13 @@ updated: 2024-12-19
 Veeam Backup & Replication est un logiciel de protection des données. Il offre diverses possibilités de sauvegarde, de réplication et de restauration.
 
 **Apprenez à installer un serveur Veeam Backup & Replication, puis à l'enregistrer auprès du serveur de licences Veeam Enterprise de OVHcloud.**
+
+> [!warning]
+>
+> Si une machine virtuelle est protégée à l'aide de plusieurs méthodes de sauvegarde (par exemple [VM backup](https://helpcenter.veeam.com/docs/vbr/qsg/vm_backup.html?ver=13) et [Agent backup](https://helpcenter.veeam.com/docs/vbr/userguide/protect_comp.html?ver=13)), chaque méthode consomme une licence distincte et est facturée indépendamment.
+>
+> Pour éviter des frais supplémentaires, protégez chaque machine virtuelle en utilisant **une seule méthode de sauvegarde**.
+>
 
 ## Prérequis
 
@@ -72,11 +79,20 @@ Vous serez redirigé vers l'assistant d'installation, il vous suffit de fermer l
 
 #### Étape 1 - Lancer un compte de service
 
-Au préalable, il est nécessaire de générer un mot de passe **complexe**.
+Vous devez créer un **mot de passe complexe** pour votre compte de service.
 
-Pour commencer, lancez Windows Powershell en tant qu'administrateur.
+Pour garantir le bon fonctionnement de l'activation de la licence Veeam, le nom d'utilisateur et le mot de passe doivent utiliser uniquement les caractères pris en charge :
 
-Créez ensuite un compte de service, en entrant ces lignes de commande :
+- Lettres minuscules et majuscules **sans accents** (a-z, A-Z)
+- Chiffres (0-9)
+- Caractères spéciaux : `! @ = # % & ' " { } * ( ) [ ] ? . , ; : - _ \ / +`
+
+> [!warning]
+>
+> Si le nom d'utilisateur ou le mot de passe contient des caractères non pris en charge, l'activation de la licence risque d'échouer.
+>
+
+Ensuite, lancez Windows PowerShell en tant qu'administrateur et créez le compte de service, par exemple :
 
 ```powershell
 New-LocalUser "OVHVeeamEnterprise" -Password (ConvertTo-SecureString -AsPlainText "P@ssword01" -Force) -Description "OVH Service Account for Veeam Enterprise" -PasswordNeverExpires:$true -UserMayNotChangePassword:$true -AccountNeverExpires:$true
@@ -252,7 +268,7 @@ Allez dans le menu, puis cliquez sur `Licence`{.action}.
 
 Dans les informations, vérifiez qu'il s'agit bien de votre licence OVHcloud.
 
-Si tout s'est bien passé, vous devriez voir "Edition : Entreprise Plus".
+Si l'enregistrement a réussi, vous devriez voir apparaître `Edition : Enterprise Plus`.
 
 > [!primary]
 > Vous pouvez maintenant désactiver l'utilisateur que vous avez créé pour créer l'enregistrement.
@@ -263,4 +279,4 @@ Si tout s'est bien passé, vous devriez voir "Edition : Entreprise Plus".
 
 Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en œuvre de nos solutions, contactez votre Technical Account Manager ou rendez-vous sur [cette page](/links/professional-services) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
 
-Échangez avec notre [communauté d'utilisateurs(/links/community), ou sur le channel dédié [Discord](https://discord.gg/ovhcloud).
+Échangez avec notre [communauté d'utilisateurs](/links/community), ou sur le channel dédié [Discord](https://discord.gg/ovhcloud).

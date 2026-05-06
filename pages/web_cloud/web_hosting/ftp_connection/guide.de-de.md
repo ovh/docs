@@ -1,7 +1,7 @@
 ---
 title: "Mit dem FTP-Speicherplatz eines Webhostings verbinden"
 excerpt: "Erfahren Sie hier, wie Sie sich im FTP-Speicherplatz Ihres OVHcloud Webhostings einloggen"
-updated: 2025-06-15
+updated: 2026-03-31
 ---
 
 ## Ziel 
@@ -13,12 +13,22 @@ Die OVHcloud Webhostings bieten Zugriff auf einen FTP-Speicherplatz, um die Date
 ## Voraussetzungen
 
 - Sie haben ein [OVHcloud Webhosting](/links/web/hosting).
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager). 
 
 > [!primary]
 > Nur die Webhosting-Angebote **Pro** und **Performance** erlauben die Aktivierung mehrerer FTP-Benutzer und verfügen über SSH-Verbindungen.
 >
 > Bei Webhostings ist es nicht mehr möglich, sich mit dem FTP-Speicherplatz über das Online-Tool FTP Explorer/Net2FTP zu verbinden. Um sich weiterhin per FTP mit Ihrem Webhosting zu verbinden, verwenden Sie die Programme [Filezilla](https://filezilla-project.org/download.php) oder [Cyberduck](https://cyberduck.io/).
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direkter Link:** [Hosting-Pakete](/links/control-panel/web-hosting)
+- **Navigationspfad:** `Web Cloud`{.action} > `Hosting-Pakete`{.action} > Wählen Sie Ihr Webhosting aus
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## In der praktischen Anwendung
 
@@ -37,28 +47,23 @@ Um sich mit Ihrem FTP-Speicherplatz zu verbinden, benötigen Sie folgende Inform
 >
 > **Wenn Sie diese Daten bereits haben**, gehen Sie direkt zu Teil 2: [Zugang zu Ihrem FTP-Speicherplatz](#ftp_storage_access).
 
+<!-- CP-STEPS-START:get-ftp-credentials -->
 Wenn Sie die Verbindungsdaten nicht zur Hand haben, klicken Sie auf die Tabs, um die **4** Schritte anzuzeigen.
 
 > [!tabs]
 > **Schritt 1**
 >>
->> Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein und gehen Sie in den Bereich `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Schritt 2**
->>
->> Klicken Sie auf das Menü `Hosting-Pakete`{.action} und wählen Sie das betreffende Webhosting aus.
+>> Gehen Sie auf die Seite [Hosting-Pakete](/links/control-panel/web-hosting), und wählen Sie das betreffende Webhosting aus.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Schritt 3**
+> **Schritt 2**
 >>
 >> Klicken Sie auf den Tab `FTP - SSH`{.action}.
 >>
 >> ![FTP - SSH](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh.png){.thumbnail}
 >>
-> **Schritt 4**
+> **Schritt 3**
 >>
 >> Die Informationen zu Ihrem Speicherplatz sowie eine Tabelle mit den auf Ihrem Webhosting erstellten FTP- und SSH-Benutzern werden angezeigt.
 >>
@@ -71,27 +76,27 @@ Wenn Sie die Verbindungsdaten nicht zur Hand haben, klicken Sie auf die Tabs, um
 >> > Wählen Sie ein Passwort für diesen neuen Benutzer-Account aus, klicken Sie auf `Weiter`{.action} und dann auf `Bestätigen`{.action}.
 >>
 >> Alle für die Verbindung mit dem FTP-Speicherplatz erforderlichen Elemente finden Sie auf dieser Seite.
-
-Nachstehend finden Sie eine Beschreibung der wesentlichen Informationen, die auf `FTP - SSH`{.action} angezeigt werden:
-
-- **FTP- und SFTP-Server**: Adresse des FTP-Servers Ihres Webhostings, damit Sie auf Ihren FTP-Speicherplatz zugreifen können. Hierzu wird beispielsweise eine Client-Software eingesetzt, die über das (S)FTP-Protokoll verfügt.
-
-> Der Standardport für SSH ist "21". Verwenden Sie den Port "22" für eine Verbindung über das SFTP-Protokoll (falls dieses aktiviert ist).
-
-- **SSH-Server**: SSH-Server-Adresse Ihres Webhostings, damit Sie auf Ihren FTP-Speicherplatz zugreifen können. Verwenden Sie hierzu das SSH-Protokoll in einer Kommandozeile.
-
-> Die Portnummer für SSH-Verbindungen ist "22".
-
-- **Haupt-Login**: Haupt-FTP-Kennung auf Ihrem Webhosting. Sie finden alle erstellten FTP-Benutzer Ihres Hostings in der Tabelle in der Spalte "Login".
-
-> [!primary]
->
-> Je nach Ihrem [OVHcloud Webhosting-Angebot](/links/web/hosting) werden einige der oben beschriebenen Informationen (insbesondere bezüglich SSH) möglicherweise nicht angezeigt.
->
+>>
+> **Schritt 4**
+>>
+>> Nachstehend finden Sie eine Beschreibung der wesentlichen Informationen, die auf der Seite `FTP - SSH` angezeigt werden:
+>>
+>> - **FTP- und SFTP-Server**: Adresse des FTP-Servers Ihres Webhostings, damit Sie über eine FTP- oder SFTP-Software auf Ihren FTP-Speicherplatz zugreifen können.
+>>
+>> > Der Standardport für die Verbindung ist "21". Verwenden Sie den Port "22" für eine Verbindung über das SFTP-Protokoll (falls dieses aktiviert ist).
+>>
+>> - **SSH-Server**: SSH-Server-Adresse Ihres Webhostings, damit Sie über ein Terminal und das SSH-Protokoll auf Ihren FTP-Speicherplatz zugreifen können.
+>>
+>> > Die Portnummer für SSH-Verbindungen ist "22".
+>>
+>> - **Haupt-Login**: Haupt-FTP-Kennung auf Ihrem Webhosting. Sie finden alle erstellten FTP-Benutzer Ihres Hostings in der Tabelle in der Spalte "Login".
+>>
+>> > [!primary]
+>> >
+>> > Je nach Ihrem [OVHcloud Webhosting-Angebot](/links/web/hosting) werden einige der oben beschriebenen Informationen (insbesondere bezüglich SSH) möglicherweise nicht angezeigt.
+<!-- CP-STEPS-END:get-ftp-credentials -->
 
 Wenn Sie das Passwort eines FTP- oder SSH-Benutzers nicht mehr kennen, lesen Sie unsere Anleitung "[Passwort eines FTP-Benutzers ändern](/pages/web_cloud/web_hosting/ftp_change_password)".
-
-![ftp login](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/change-password.png){.thumbnail}
 
 An diesem Punkt verfügen Sie über alle notwendigen Elemente, um sich mit Ihrem FTP-Speicherplatz zu verbinden.
 
@@ -112,9 +117,9 @@ Geben Sie in den dafür vorgesehenen Feldern die Verbindungsdaten ein.
 
 Hier eine Erinnerung an die Informationen, die Sie eingeben müssen:
 
-- **FTP- und SFTP-Server**: FTP-Server-Adresse, mit der auf Ihren FTP-Speicherplatz zugegriffen werden kann. Je nach verwendetem Client sind verschiedene Bezeichnungen möglich: „Server“, „Serveradresse“, „Host“ „Hostname“, etc.
-- **Haupt-Login**: ID für den Zugriff auf Ihren FTP Speicherplatz. Je nach verwendetem Client sind verschiedene Bezeichnungen möglich: „Benutzer“, „Benutzername“, „Kennung“, „Login“, „Username“, etc.
-- **Passwort des FTP-Benutzers**: Passwort für den FTP-Login. Je nach verwendetem Client sind verschiedene Bezeichnungen wie „Passwort“ oder „Password“ möglich.
+- **FTP- und SFTP-Server**: FTP-Server-Adresse, mit der auf Ihren FTP-Speicherplatz zugegriffen werden kann. Je nach verwendetem Client sind verschiedene Bezeichnungen möglich: "Server“, "Serveradresse“, "Host“ "Hostname“, etc.
+- **Haupt-Login**: ID für den Zugriff auf Ihren FTP Speicherplatz. Je nach verwendetem Client sind verschiedene Bezeichnungen möglich: "Benutzer“, "Benutzername“, "Kennung“, "Login“, "Username“, etc.
+- **Passwort des FTP-Benutzers**: Passwort für den FTP-Login. Je nach verwendetem Client sind verschiedene Bezeichnungen wie "Passwort“ oder "Password“ möglich.
 - **Verbindungsport**: Der Verbindungsport wird meistens automatisch angegeben. Falls Sie diesen jedoch selbst eingeben müssen:
     - Verwenden Sie den Port "21" für eine Verbindung über das FTP-Protokoll.
     - Verwenden Sie den Port "22" für eine Verbindung, die das SFTP-Protokoll verwendet (sofern dieses aktiviert ist).

@@ -1,7 +1,7 @@
 ---
 title: "Deploy a virtual machine with SAP HANA and OVHcloud Backint Agent pre-installed"
 excerpt: "This guide provides instructions for deploying a SLES for SAP virtual machine with SAP HANA and OVHcloud Backint Agent pre-installed"
-updated: 2025-09-16
+updated: 2026-01-13
 ---
 
 ## Objective
@@ -25,19 +25,46 @@ This guide provides instructions for deploying a SLES for SAP virtual machine wi
 
 ### Deployment
 
-OVHcloud provides an OVF template that includes the SUSE Linux Enterprise Server for SAP Applications operating system, which is pre-configured to receive an SAP HANA installation.
+The number of vCPUs depends on the number of vCPUs for a half socket or an entire socket. It is important to note that VMware and SAP do not support configurations with an odd multiple of 0.5 socket, such as 1.5 socket, 2.5 socket, etc.
 
-In order to meet the vCPU/RAM ratio requirements for OLAP and OLTP workloads in a production environment, OVHcloud recommends three models of virtual machines.
+Below, you will find tables showing the sizes of SAP HANA virtual machines that meet this recommendation and use all of the memory for each number of vCPUs.
 
-| Host               | vCPU   | Socket  | Memory    |
-|--------------------|--------|---------|-----------|
-| SAP HANA vSAN 1536 | 24     | 0.5     | 384 GB    |
-| SAP HANA vSAN 1536 | 48     | 1       | 768 GB    |
-| SAP HANA vSAN 1536 | 96     | 2       | 1436 GB<sup>1</sup>  |
+**First generation**
 
-<sup>[1] We suggest reserving 100 GB of memory for the ESXi host.</sup>
+| Host          | Socket | vCPUs | Memory | SAPS    |
+|---------------|:------:|:-----:--------:|:-------:|
+| SAP HANA 1536 | 0.5    | 24    | 384    | 41,664  |
+| SAP HANA 1536 | 1      | 48    | 768    | 83,329  |
+| SAP HANA 1536 | 2      | 96    | 1536*  | 166,658 |
 
-This OVF template offers the possibility to automatically install SAP HANA, the OVHcloud Backint Agent for SAP HANA, and SAP logs on OVHcloud Logs Data Platform, reducing the time required to deliver an SAP HANA database.
+**Second generation**
+
+| Host          | Socket | vCPUs | Memory (GiB) | SAPS    |
+|---------------|:------:|:-----:|:------------:|:-------:|
+| H1-I1-32-1024 | 0.5    | 16    | 256          | 36,189  |
+| H1-I2-72-1024 | 0.5    | 36    | 256          | 70,564  |
+| H1-I1-32-2048 | 0.5    | 16    | 512          | 36,189  |
+| H1-I2-72-2048 | 0.5    | 36    | 512          | 70,564  |
+| H1-I1-32-1024 | 1      | 32    | 512          | 72,379  |
+| H1-I2-72-1024 | 1      | 72    | 512          | 141,129 |
+| H1-I1-32-4096 | 0.5    | 16    | 1024         | 36,189  |
+| H1-I2-72-4096 | 0.5    | 36    | 1024         | 70,564  |
+| H1-I1-32-2048 | 1      | 32    | 1024         | 72,379  |
+| H1-I2-72-2048 | 1      | 72    | 1024         | 141,129 |
+| H1-I1-32-1024 | 2      | 64    | 1024*        | 144,759 |
+| H1-I2-72-1024 | 2      | 144   | 1024*        | 282,259 |
+| H1-I1-32-4096 | 1      | 32    | 2048         | 72,379  |
+| H1-I2-72-4096 | 1      | 72    | 2048         | 141,129 |
+| H1-I1-32-2048 | 2      | 64    | 2048*        | 144,759 |
+| H1-I2-72-2048 | 2      | 144   | 2048*        | 282,259 |
+| H1-I1-32-4096 | 2      | 64    | 4096*        | 144,759 |
+| H1-I2-72-4096 | 2      | 144   | 4096*        | 282,259 |
+
+**We recommend reserving 100GB of memory for the ESXi host.*
+
+OVHcloud provides an OVF template that includes the SUSE Linux Enterprise Server for SAP Applications operating system, which is pre-configured to receive a SAP HANA installation.
+
+This OVF template offers the possibility to automatically install SAP HANA, the OVHcloud Backint Agent for SAP HANA, and SAP logs on OVHcloud Logs Data Platform, reducing the time required to deliver a SAP HANA database.
 
 First, you must upload SAP HANA sources to your first Object Storage bucket, as described in the 'Requirements' section. The sources must be uploaded in the same format as the original download, for example, « 51056821.ZIP ».
 

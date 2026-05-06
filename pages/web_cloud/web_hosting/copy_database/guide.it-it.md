@@ -1,14 +1,28 @@
 ---
 title: "Duplicare il contenuto di un database in un altro"
 excerpt: "Questa guida ti mostra come copiare il contenuto di un database OVHcloud in un altro database OVHcloud"
-updated: 2025-02-20
+updated: 2026-03-31
 ---
+
+<style>
+details>summary {
+    color:rgb(33, 153, 232) !important;
+    cursor: pointer;
+}
+details>summary::before {
+    content:'\25B6';
+    padding-right:1ch;
+}
+details[open]>summary::before {
+    content:'\25BC';
+}
+</style>
 
 ## Obiettivo
 
 Il database è un elemento centrale nella costruzione di un sito Web dinamico. Durante il ciclo di vita del sito Web, per motivi pratici o tecnici, potrebbe essere necessario copiare il contenuto del database in un altro database [start SQL](/links/web/hosting-options-startsql) o [Web Cloud Databases](/links/web/databases).
 
-**Questa guida ti mostra come copiare il contenuto di un database OVHcloud in un altro database OVHcloud**
+**Questa guida ti mostra come copiare il contenuto di un database OVHcloud in un altro database OVHcloud.**
 
 > [!primary]
 >
@@ -18,144 +32,157 @@ Il database è un elemento centrale nella costruzione di un sito Web dinamico. D
 ## Prerequisiti
 
 - Disporre di offerte di database [start SQL](/links/web/hosting-options-startsql) e/o [Web Cloud Databases](/links/web/databases). Prima di poter utilizzare lo strumento di replica è necessario creare preventivamente i due database interessati.
-- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
-- di disporre dei diritti sufficienti su tutti i servizi di database interessati. Per maggiori informazioni consulta la nostra guida [Gestire i contatti dei servizi](/pages/account_and_service_management/account_information/managing_contacts).
+- Disporre dei diritti sufficienti su tutti i servizi di database interessati. Per maggiori informazioni consulta la nostra guida [Gestire i contatti dei servizi](/pages/account_and_service_management/account_information/managing_contacts).
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [Hosting](/links/control-panel/web-hosting)
+- **Percorso di navigazione:** `Web Cloud`{.action} > `Hosting`{.action} > Seleziona il tuo hosting web
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## Procedura
 
 Prima di iniziare, assicurati che:
 
-- Il vostro **D**ata**b**ase **M**anagement **S**ystem (MySQL, PostgreSQL, ecc...) è lo stesso per i vostri due database (sorgente e destinazione).
-- La versione del tuo DBMS è la stessa per i tuoi due database (sorgente e destinazione). Anche se la copia può funzionare con versioni diverse, è consigliabile utilizzare le stesse versioni.
+- Il **D**ata**b**ase **M**anagement **S**ystem (MySQL, PostgreSQL, ecc.) è lo stesso per i due database (sorgente e destinazione).
+- La versione del DBMS è la stessa per i due database (sorgente e destinazione). Anche se la copia può funzionare con versioni diverse, è consigliabile utilizzare le stesse versioni.
 - Il contenuto del database di origine non deve superare le dimensioni del database di destinazione.
 
-### Identificare il database sorgente
+### Copiare il contenuto di un database
 
-Questa funzionalità è disponibile per la copia: 
+Questa funzionalità è disponibile per la copia:
 
-- un database [Start SQL](/links/web/hosting-options-startsql) (incluso in alcuni dei nostri [hosting Web](/links/web/hosting) o [ordinato separatamente](/links/web/hosting-options-startsql);
-- di un database presente su un server [Web Cloud Databases](/links/web/databases) (incluso con i nostri [hosting Performance](/links/web/hosting-performance-offer) o [ordinato separatamente](/links/web/databases). 
+- di un database [Start SQL](/links/web/hosting-options-startsql) (incluso in alcuni dei nostri [hosting Web](/links/web/hosting) o [ordinato separatamente](/links/web/hosting-options-startsql));
+- di un database presente su un server [Web Cloud Databases](/links/web/databases) (incluso con i nostri [hosting Performance](/links/web/hosting-performance-offer) o [ordinato separatamente](/links/web/databases)).
 
 Il percorso per accedere al database di origine è diverso in base alla situazione.
 
-#### Database Start SQL
+**Clicca sulla situazione corrispondente per visualizzare il contenuto.**
 
-Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **4** passi.
+<!-- CP-STEPS-START:copy-from-startsql -->
+/// details | Da un database Start SQL
+
+Clicca sulle schede qui sotto per visualizzare ciascuno dei **6** passaggi.
 
 > [!tabs]
-> **Step 1**
+> **Passaggio 1**
 >>
->> Accedi allo [Spazio Cliente OVHcloud](/links/manager) e clicca su `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Step 2**
->>
->> Clicca sul menu `Hosting`{.action} e seleziona l’hosting Web interessato.
+>> Accedi alla pagina [Hosting](/links/control-panel/web-hosting), poi seleziona l'hosting Web interessato.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Step 3**
+> **Passaggio 2**
 >>
->> Nella nuova pagina clicca sulla scheda `Database`{.action}.
->>
->> ![Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases.png){.thumbnail}
->>
-> **Step 4**
->>
->> Compare la lista dei database Start SQL.
+>> Clicca sulla scheda `Databases`{.action}. La tabella elenca i database creati sul tuo piano di hosting Web.
 >>
 >> ![Lista dei BDD Start SQL](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/sharedsql-dashboard-db-list.png){.thumbnail}
+>>
+> **Passaggio 3**
+>>
+>> Clicca sul pulsante `...`{.action} a destra della riga corrispondente al database di cui vuoi copiare il contenuto, poi seleziona `Copiare il database`{.action}.
+>>
+>> ![CTA_copiare_BDD](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/databases/copy-db-tool.png){.thumbnail}
+>>
+> **Passaggio 4**
+>>
+>> Verrà visualizzata una finestra per scegliere il database di destinazione.
+>>
+>> ![Interfaccia copia BDD](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/copy-db-tool-step-1.png){.thumbnail}
+>>
+>> > [!primary]
+>> >
+>> > Se non disponi di un database di destinazione, clicca sul link nella finestra per acquistarne uno. Ricordati di attivarlo:
+>> >
+>> > - Per un database Shared SQL: consulta la nostra guida « [Creare un database sul proprio hosting Web](/pages/web_cloud/web_hosting/sql_create_database) ».
+>> > - Per un database su un server Web Cloud Databases: consulta la nostra guida « [Creare un database su un server Web Cloud Databases](/pages/web_cloud/web_cloud_databases/create-db-and-user-on-db-server) ».
+>>
+>> - **Scelta 1 - Copiare verso un database Start SQL**: seleziona `Copiare verso un database`{.action} e scegli il database di destinazione nell'elenco a discesa.
+>> - **Scelta 2 - Copiare verso un server Web Cloud Databases**: seleziona `Copiare verso un Web Cloud Databases`{.action}. Vengono visualizzati due elenchi a discesa. Clicca sul primo per selezionare la soluzione Web Cloud Databases, poi sul secondo per scegliere il database di destinazione.
+>>
+> **Passaggio 5**
+>>
+>> Clicca su `Continua`{.action}. Viene visualizzato il seguente messaggio di conferma:
+>>
+>> ![Messaggio di conferma copia BDD](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/copy-db-tool-step-2.png){.thumbnail}
+>>
+>> Se non si desidera sovrascrivere il database di destinazione selezionato, clicca su `Indietro`{.action} per modificare la scelta o su `Annulla`{.action} per annullare tutto. In caso contrario, clicca su `Conferma`{.action} per confermare la duplicazione.
+>>
+> **Passaggio 6**
+>>
+>> La copia del database potrebbe richiedere alcuni minuti. Nella scheda `Operazioni in corso`{.action} viene visualizzata una nuova riga con lo stato "Pianificato" per la copia. Al termine dell'operazione, la riga scompare.
+>>
+>> ![Task in corso](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/copy-db-tool-ongoing-tasks.png){.thumbnail}
 
-#### Web Cloud Databases
+///
+<!-- CP-STEPS-END:copy-from-startsql -->
 
-Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **3** passi.
+<!-- CP-STEPS-START:copy-from-wcdb -->
+/// details | Da un server Web Cloud Databases
+
+Clicca sulle schede qui sotto per visualizzare ciascuno dei **6** passaggi.
 
 > [!tabs]
-> **Step 1**
+> **Passaggio 1**
 >>
->> Accedi allo [Spazio Cliente OVHcloud](/links/manager) e clicca su `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Step 2**
->>
->> Clicca sul menu `Web Cloud Databases`{.action} e seleziona la soluzione Web Cloud Databases interessata.
+>> Accedi alla pagina [Web Cloud Databases](/links/control-panel/web-cloud-databases), poi seleziona la soluzione interessata.
 >>
 >> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases.png){.thumbnail}
 >>
-> **Step 3**
+> **Passaggio 2**
 >>
->> Clicca sulla scheda `Database`{.action} per visualizzare la lista dei database presenti sul tuo server Web Cloud Databases.
+>> Clicca sulla scheda `Databases`{.action}. La lista dei database presenti sul server Web Cloud Databases viene visualizzata.
 >>
 >> ![Lista dei database WCD](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/databases/wcdb-dashboard-db-list.png){.thumbnail}
+>>
+> **Passaggio 3**
+>>
+>> Clicca sul pulsante `...`{.action} a destra della riga corrispondente al database di cui vuoi copiare il contenuto, poi seleziona `Copiare il database`{.action}.
+>>
+>> ![CTA_copiare_BDD](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/databases/copy-db-tool.png){.thumbnail}
+>>
+> **Passaggio 4**
+>>
+>> Verrà visualizzata una finestra per scegliere il database di destinazione.
+>>
+>> ![Interfaccia copia BDD](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/copy-db-tool-step-1.png){.thumbnail}
+>>
+>> > [!primary]
+>> >
+>> > Se non disponi di un database di destinazione, clicca sul link nella finestra per acquistarne uno. Ricordati di attivarlo:
+>> >
+>> > - Per un database Shared SQL: consulta la nostra guida « [Creare un database sul proprio hosting Web](/pages/web_cloud/web_hosting/sql_create_database) ».
+>> > - Per un database su un server Web Cloud Databases: consulta la nostra guida « [Creare un database su un server Web Cloud Databases](/pages/web_cloud/web_cloud_databases/create-db-and-user-on-db-server) ».
+>>
+>> - **Scelta 1 - Copiare verso un database Start SQL**: seleziona `Copiare verso un database`{.action} e scegli il database di destinazione nell'elenco a discesa.
+>> - **Scelta 2 - Copiare verso un server Web Cloud Databases**: seleziona `Copiare verso un Web Cloud Databases`{.action}. Vengono visualizzati due elenchi a discesa. Clicca sul primo per selezionare la soluzione Web Cloud Databases, poi sul secondo per scegliere il database di destinazione.
+>>
+> **Passaggio 5**
+>>
+>> Clicca su `Continua`{.action}. Viene visualizzato il seguente messaggio di conferma:
+>>
+>> ![Messaggio di conferma copia BDD](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/copy-db-tool-step-2.png){.thumbnail}
+>>
+>> Se non si desidera sovrascrivere il database di destinazione selezionato, clicca su `Indietro`{.action} per modificare la scelta o su `Annulla`{.action} per annullare tutto. In caso contrario, clicca su `Conferma`{.action} per confermare la duplicazione.
+>>
+> **Passaggio 6**
+>>
+>> La copia del database potrebbe richiedere alcuni minuti. Nella scheda `Operazioni in corso`{.action} viene visualizzata una nuova riga con lo stato "Pianificato" per la copia. Al termine dell'operazione, la riga scompare.
+>>
+>> ![Task in corso](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/copy-db-tool-ongoing-tasks.png){.thumbnail}
 
-### Copia il contenuto di un database
-
-Sempre nella scheda `Database`{.action} e qualunque sia la tua offerta, clicca sul pulsante `...`{.action} a destra della riga corrispondente al database di cui vuoi copiare il contenuto, poi seleziona `Copia il database`{.action}.
-
-![CTA_copiare_BDD](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/databases/copy-db-tool.png){.thumbnail}
-
-Verrà visualizzata una finestra che consente di identificare il database di destinazione.
-
-![Interfaccia copia BDD](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/copy-db-tool-step-1.png){.thumbnail}
-
-Se non si dispone di un database di destinazione e come illustrato nella schermata seguente, fare clic sul collegamento per acquistare un nuovo database:
-
-![Lista dei database WCD](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/copy-db-tool-link-to-buy-db.png){.thumbnail}
-
-È possibile scegliere se acquistare un'offerta "[start SQL](/links/web/hosting-options-startsql)" o un server di database "[Web Cloud Databases](/links/web/databases)".
-
-> [!primary]
->
-> Il nuovo database acquistato non è abilitato per impostazione predefinita. Ricordati di attivarla. Per farlo, accedi al tuo [Spazio Cliente OVHcloud](/links/manager), sezione `Web Cloud`{.action}.
-> 
-> - Per un database "Shared SQL": consulta la nostra guida "[Creare un database sul proprio hosting Web](/pages/web_cloud/web_hosting/sql_create_database)";
-> - Per creare un database che sarà presente su un server "Web Cloud Databases": consulta la nostra guida "[Creare un database su un server Web Cloud Databases](/pages/web_cloud/web_cloud_databases/create-db-and-user-on-db-server)".
->
-
-Se si dispone già di un database di destinazione, scegliere innanzitutto il tipo di database:
-
-- `Copiare verso un database`{.action}: per copiare il contenuto del database di origine in un database **Start SQL** (destinazione).
-- `Copiare verso un Web Cloud Databases`{.action}: per copiare il contenuto del database di origine in un database **Web Cloud Databases** (destinazione).
-
-#### Scelta 1 - Copiare verso un database Start SQL
-
-Hai selezionato `Copiare verso un database`{.action}. Vengono visualizzati due elenchi a discesa. Clicca sulla prima e seleziona l’hosting Web sul quale si trova il database Start SQL di destinazione. Una volta selezionato l'hosting Web, clicca sul secondo elenco a discesa per scegliere il database Start SQL di destinazione.
-
-Clicca su `Continua`{.action}. Viene visualizzato il seguente messaggio di conferma:
-
-![Messaggio di conferma copia BDD](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/copy-db-tool-step-2.png){.thumbnail}
-
-Se non si desidera sovrascrivere il database di destinazione selezionato, fare clic su `Indietro`{.action} per modificare la scelta o su `Annulla`{.action} per annullare tutto. In caso contrario, clicca su `Conferma`{.action} per confermare la duplicazione del contenuto del database di origine verso il database di destinazione.
-
-Viene visualizzato il seguente messaggio di conferma:
-
-![Messaggio di riuscita BDD](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/copy-db-tool-copied-successfull.png){.thumbnail}
-
-La copia del database potrebbe richiedere alcuni minuti. Per verificare che la copia sia stata presa in carico, clicca sulla scheda `Task in corso`{.action}. Nella tabella viene visualizzata una nuova riga con lo stato "Pianificato" per la copia. Al termine dell'operazione, la linea scompare.
-
-![Attività in corso](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/copy-db-tool-ongoing-tasks.png){.thumbnail}
-
-#### Scelta 2 - Copia in un database presente su un server Web Cloud Databases
-
-Hai selezionato `Copiare verso un Web Cloud Databases`{.action}. Vengono visualizzati due elenchi a discesa. Clicca sulla prima e seleziona il servizio Web Cloud Databases sul quale si trova il database di destinazione. Una volta selezionata la soluzione Web Cloud Databases, clicca sul secondo elenco a discesa per scegliere il database di destinazione presente sul tuo server Web Cloud Databases.
-
-Clicca su `Continua`{.action}. Viene visualizzato il seguente messaggio di conferma:
-
-![Messaggio di conferma copia BDD](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/copy-db-tool-step-2.png){.thumbnail}
-
-Se non si desidera sovrascrivere il database di destinazione selezionato, fare clic su `Indietro`{.action} per modificare la scelta o su `Annulla`{.action} per annullare tutto. In caso contrario, clicca su `Conferma`{.action} per confermare la duplicazione del contenuto del database di origine verso il database di destinazione.
-
-La copia del database potrebbe richiedere alcuni minuti. Per verificare che la copia sia stata presa in carico, clicca sulla scheda `Task in corso`{.action}. Nella tabella viene visualizzata una nuova riga con lo stato "Pianificato" per la copia. Al termine dell'operazione, la linea scompare.
-
-![Attività in corso](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/copy-db-tool-ongoing-tasks.png){.thumbnail}
+///
+<!-- CP-STEPS-END:copy-from-wcdb -->
 
 ### Configura il tuo sito Web con il nuovo database
 
-Una volta effettuata la copia del database di origine, sarà necessario effettuare un’ultima operazione per utilizzare il nuovo database.
+Una volta effettuata la copia del database di origine, sarà necessario effettuare un'ultima operazione per utilizzare il nuovo database.
 
-Nella scheda `Task in corso`{.action}, assicurati che la copia sia terminata (la riga corrispondente alla copia è scomparsa).
+Nella scheda `Operazioni in corso`{.action}, assicurati che la copia sia terminata (la riga corrispondente alla copia è scomparsa).
 
 Per connettere il nuovo database al sito Web, modifica il file di configurazione del tuo **C**ontent **M**anagement **S**ystem (**CMS**) e inserisci le informazioni di connessione del nuovo database.
 
@@ -174,37 +201,47 @@ Per maggiori informazioni o se utilizzi un altro CMS, consulta la nostra guida [
 
 > [!primary]
 >
-> Copiare il database non è una migrazione. Il database di origine esiste ancora fino a quando non viene eliminato. Ciò significa che, se necessario, potrete sempre riconfigurare il vostro sito web con il vecchio database.
+> Copiare il database non è una migrazione. Il database di origine esiste ancora fino a quando non viene eliminato. Ciò significa che potrai sempre riconfigurare il tuo sito Web con il vecchio database, se necessario.
 >
 
 ### Casi d'uso
 
 Durante il processo di copia del contenuto del database potrebbero verificarsi problemi.
 
-#### Nell'elenco non compare alcun database
+**Clicca sulla situazione corrispondente per visualizzare il contenuto.**
+
+/// details | Nell'elenco non compare alcun database
 
 Questa notifica indica che è attivo un solo database. Per copiare il database di origine, è necessario disporre anche di un database di destinazione attivo. Per farlo, puoi:
 
-- Configura un nuovo database disponibile sul tuo hosting Web;
-- Configura un nuovo database sul tuo server [Web Cloud Databases](/links/web/databases);
-- Ordinare un'offerta "[start SQL](/links/web/hosting-options-startsql)" o un server di database "[Web Cloud Databases](/links/web/databases)"
+- Configurare un nuovo database disponibile sul tuo hosting Web.
+- Configurare un nuovo database sul tuo server [Web Cloud Databases](/links/web/databases).
+- Ordinare un'offerta [start SQL](/links/web/hosting-options-startsql) o un server di database [Web Cloud Databases](/links/web/databases).
 
-#### Hai già un'azione in corso
+///
 
-Questo messaggio indica che sul database è già in corso un'operazione. Clicca sulla scheda `Task in corso`{.action} e verifica di avere un'operazione già in corso. In caso affermativo, attendi il completamento dell’operazione per riprovare a copiare il database.
+/// details | Hai già un'azione in corso
 
-#### Il database di destinazione non contiene spazio sufficiente
+Questo messaggio indica che sul database è già in corso un'operazione. Clicca sulla scheda `Operazioni in corso`{.action} e verifica di avere un'operazione già in corso. In caso affermativo, attendi il completamento dell'operazione per riprovare a copiare il database.
+
+///
+
+/// details | Il database di destinazione non contiene spazio sufficiente
 
 Spazio insufficiente nel database di destinazione. Le soluzioni disponibili sono due:
 
 - Ordinare un nuovo database [start SQL](/links/web/hosting-options-startsql) con più spazio.
 - Se possiedi un server [Web Cloud Databases](/links/web/databases), scegli un'offerta Web Cloud Databases con più spazio di storage.
 
-#### I database di origine e di destinazione sono incompatibili
+///
+
+/// details | I database di origine e di destinazione sono incompatibili
 
 Questa notifica significa che il **D**ata**b**ase **M**anagement **S**ystem (**DBMS**) del database di origine non è lo stesso del DBMS del database di destinazione.
 
 Ad esempio, questo errore può verificarsi quando si utilizza MySQL per il database di origine e PostgreSQL per il database di destinazione.
+
+///
 
 ## Per saperne di più
 

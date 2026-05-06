@@ -1,7 +1,7 @@
 ---
 title: FAQ e-mails OVHcloud
 excerpt: "Consulte as perguntas mais frequentes sobre os e-mails"
-updated: 2025-05-21
+updated: 2026-03-24
 ---
 
 <style>
@@ -20,6 +20,40 @@ details[open]>summary::before {
   max-width:500px !important;
 }
 </style>
+
+<!-- CP-NAV-START:web-mx-plan -->
+<!-- CP-NAV-START:web-zimbra -->
+<!-- CP-NAV-START:web-email-pro -->
+<!-- CP-NAV-START:web-exchange -->
+---
+
+### Acesso à Área de Cliente OVHcloud
+
+**MX Plan:**
+
+- **Ligação direta:** [MX Plan](/links/control-panel/web-mx-plan)
+- **Caminho de navegação:** `Web Cloud`{.action} > `MX Plan`{.action} > Selecione o seu serviço MX Plan
+
+**Zimbra:**
+
+- **Ligação direta:** [Zimbra](/links/control-panel/web-zimbra)
+- **Caminho de navegação:** `Web Cloud`{.action} > `Zimbra Mail`{.action} > Selecione o seu serviço Zimbra
+
+**E-mail Pro:**
+
+- **Ligação direta:** [E-mail Pro](/links/control-panel/web-email-pro)
+- **Caminho de navegação:** `Web Cloud`{.action} > `E-mail Pro`{.action} > Selecione a sua plataforma
+
+**Exchange:**
+
+- **Ligação direta:** [Exchange](/links/control-panel/web-exchange)
+- **Caminho de navegação:** `Web Cloud`{.action} > `Exchange`{.action} > Selecione a sua plataforma
+
+---
+<!-- CP-NAV-END:web-exchange -->
+<!-- CP-NAV-END:web-email-pro -->
+<!-- CP-NAV-END:web-zimbra -->
+<!-- CP-NAV-END:web-mx-plan -->
 
 ## FAQ de e-mail
 
@@ -48,7 +82,7 @@ A OVHcloud oferece atualmente 4 ofertas de e-mail. Para compreender as suas espe
 >>
 > **E-mails Pro**
 >>
->>![Email Pro](images/emailpro01.png){.thumbnail .w-500}
+>>![E-mail Pro](images/emailpro01.png){.thumbnail .w-500}
 >>
 >> 1. Oferta de e-mail baseada na tecnologia Exchange, com funcionalidades essenciais e um espaço de armazenamento de 10 GB.
 >> 2. Pode encomendar uma conta E-mail Pro através da [Área de Cliente OVHcloud](/links/manager) ou diretamente através de [ovhcloud.com](/links/web/email).
@@ -87,17 +121,12 @@ Pode encontrar em seguida um quadro recapitulativo das principais funcionalidade
 
 A tecnologia de e-mail utilizada para a oferta MX Plan é caracterizada pela interface do seu webmail. Para o identificar a partir da Área de Cliente, siga o seguinte caminho:
 
-1. Aceda à [Área de Cliente OVHcloud](/links/manager).
-1. Aceda à secção `Web Cloud`{.action}.
-1. Clique em `MX Plan`{.action}.
-1. Selecione o domínio em questão.
 1. No separador `Informações gerais`{.action}, selecione por predefinição.
 1. Registe a tecnologia utilizada como **Webmail**.
 
 ![MX plan](images/technology-email.png){.thumbnail .w-500}
 
 ///
-
 
 /// details | O que é preciso saber antes de criar um endereço de e-mail?
 
@@ -145,7 +174,6 @@ Encontrará abaixo as principais razões de uma falha na receção dos seus e-ma
 
 ///
 
-
 /// details | Porquê configurar os registos SPF e DKIM?
 
 **SPF (Sender Policy Framework)**
@@ -161,7 +189,6 @@ Permite assinar os e-mails para evitar o furto de identidade. Esta assinatura fu
 Para saber como configurar um registo DKIM no seu serviço de e-mail, consulte o guia: "[Melhorar a segurança dos e-mails através de um registo DKIM](/pages/web_cloud/domains/dns_zone_dkim)".
 
 ///
-
 
 /// details | Como configurar o meu endereço de e-mail e utilizá-lo com o webmail?
 
@@ -280,7 +307,6 @@ Se não visualiza a coluna `Filtros`, a criação de filtros deverá ser feita a
 
 ///
 
-
 /// details | O meu endereço de e-mail está cheio, já não tenho espaço. O que posso fazer?
 
 Se subscreveu [um dos nossos serviços de e-mail OVHcloud](/links/web/emails) e uma das suas contas de e-mail está saturada, consulte o nosso guia "[Gerir o espaço de armazenamento de uma conta de e-mail](/pages/web_cloud/email_and_collaborative_solutions/troubleshooting/email_manage_quota)". Este guia ajuda-o a determinar se pode otimizar o espaço existente ou se é necessário mudar de oferta de e-mail para aumentar a capacidade de armazenamento.
@@ -309,8 +335,6 @@ Office 365 Pro Plus no tiene licencia de Skype. Solo se incluye el software de S
 Para más información, consulte la guía "[Migrar un sitio web y los servicios asociados a OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh)".
 
 ///
-
-
 
 ## Quer saber mais? <a name="go-further"></a>
 

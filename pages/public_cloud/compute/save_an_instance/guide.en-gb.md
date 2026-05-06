@@ -27,8 +27,18 @@ You can create a single backup of an instance or configure a schedule in order t
 ## Requirements
 
 - A [Public Cloud instance](/links/public-cloud/public-cloud) in your OVHcloud account
-- Access to the [OVHcloud Control Panel](/links/manager)
 - OpenStack CLI. Use [our guide to know how to prepare the environment to use the OpenStack API](/pages/public_cloud/public_cloud_cross_functional/prepare_the_environment_for_using_the_openstack_api). (optional)
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Navigation path:** `Public Cloud`{.action} > Select your project
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## Instructions
 
@@ -50,10 +60,11 @@ You can create a single backup of an instance or configure a schedule in order t
 > **Note:** Local Zones are not eligible for distant backups.
 >
 
+<!-- CP-STEPS-START:creating-a-backup-of-an-instance -->
 > [!tabs]
 > Via the OVHcloud Control Panel
 >>
->> Log in to the [OVHcloud Control Panel](/links/manager), access the `Public Cloud`{.action} section and select the relevant Public Cloud project. Then click on `Instances`{.action} in the left-hand menu.
+>> Click on `Instances`{.action} in the left-hand menu.
 >>
 >> Click on the `...`{.action} button to the right of the instance and select `Create backup`{.action}.
 >>
@@ -163,6 +174,7 @@ You can create a single backup of an instance or configure a schedule in order t
 >>
 >> ![public-cloud-instance-backup-horizon2](images/createbackuphorizon2.png){.thumbnail}
 >>
+<!-- CP-STEPS-END:creating-a-backup-of-an-instance -->
 
 ### Creating an automated backup of an instance
 
@@ -171,6 +183,7 @@ You can create a single backup of an instance or configure a schedule in order t
 > If you want to automate this functionality directly via OpenStack, you can create a Mistral workflow associated with a cron trigger.
 >
 
+<!-- CP-STEPS-START:creating-an-automated-backup-of-an-instance -->
 Click on the `...`{.action} button to the right of the instance and select `Create an automatic backup`{.action}.
 
 ![public-cloud-instance-backup](images/createbackup4.png){.thumbnail}
@@ -211,9 +224,11 @@ Click the `Add a remote backup`{.action} button, select a location, review the p
 ![public-cloud-instance-backup-distant](images/createbackup8distant.png){.thumbnail}
 
 ///
+<!-- CP-STEPS-END:creating-an-automated-backup-of-an-instance -->
 
 ### Managing backups and schedules
 
+<!-- CP-STEPS-START:managing-backups-and-schedules -->
 Schedules can be created and deleted in the `Workflow Management`{.action} section, which is located under **Compute** in the left-hand menu.
 
 ![public-cloud-instance-backup](images/createbackup9.png){.thumbnail}
@@ -229,6 +244,7 @@ Your instance backups are managed in the Public Cloud `Instance Backup`{.action}
 > [!warning]
 > **Note that you cannot delete an instance backup if an instance that has been spawned from this backup is running at the time of the delete action.**
 
+<!-- CP-STEPS-END:managing-backups-and-schedules -->
 Find out how to use backups to clone or restore instances in [this guide](/pages/public_cloud/compute/create_restore_a_virtual_server_with_a_backup).
 
 ## Go further

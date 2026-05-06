@@ -13,7 +13,26 @@ El servicio de correo de OVHcloud permite disfrutar de direcciones de correo pro
 ## Requisitos
 
 - Tener un [plan de correo en OVHcloud](/links/web/emails).
-- Haber iniciado sesión en el [área de cliente de OVHcloud](/links/manager) y accedido a la sección `Web Cloud`{.action}.
+
+<!-- CP-NAV-START:web-mx-plan -->
+<!-- CP-NAV-START:web-exchange -->
+---
+
+### Acceso al área de cliente de OVHcloud
+
+**MX Plan:**
+
+- **Enlace directo:** [MX Plan](/links/control-panel/web-mx-plan)
+- **Ruta de navegación:** `Web Cloud`{.action} > `MX Plan`{.action} > Seleccione su servicio MX Plan
+
+**Exchange:**
+
+- **Enlace directo:** [Exchange](/links/control-panel/web-exchange)
+- **Ruta de navegación:** `Web Cloud`{.action} > `Exchange`{.action} > Seleccione su plataforma
+
+---
+<!-- CP-NAV-END:web-exchange -->
+<!-- CP-NAV-END:web-mx-plan -->
 
 ## Procedimiento
 
@@ -24,11 +43,11 @@ En un servicio de correo, es posible configurar la política de seguridad para a
 - reforzar la comprobación de los mensajes entrantes en nuestros servidores destinados a sus direcciones de correo (solo para las cuentas [Exchange](/links/web/emails-hosted-exchange));
 - determinar cómo se mostrarán los mensajes no deseados en sus buzones de correo (solo para las cuentas [Exchange](/links/web/emails-hosted-exchange)).
 
-Para acceder a la política de seguridad de su servicio de correo, conéctese al [área de cliente de OVHcloud](/links/manager), y diríjase a la sección `Web Cloud`{.action}.
+Para acceder a la política de seguridad de su servicio de correo, siga las indicaciones que se indican a continuación.
 
 |MX Plan|Exchange|
 |---|---|
-|Haga clic en `MX Plan`{.action} y seleccione el servicio correspondiente. Haga clic en `Más`{.action} y seleccione `Editar la política de seguridad`{.action}.| Haga clic en `Microsoft`{.action}, después en `Exchange`{.action}, y seleccione el servicio correspondiente. Haga clic en `Más` y seleccione `Editar la política de seguridad`{.action}|
+|Haga clic en la pestaña `Más` y seleccione `Editar la política de seguridad`{.action}.|Haga clic en `Seguridad`{.action}.|
 |![Política de seguridad Exchange](images/manage-security01.png){.thumbnail}|![Política de seguridad Exchange](images/manage-security02.png){.thumbnail}|
 
 > [!primary]

@@ -20,13 +20,12 @@ SSL encryption levels are the same between these certificate types.
 
 The main difference lies in the level of checks that will be carried out by the Certificate Authority (CA) that issues the SSL certificate and attests to its authenticity.
 
-Let's Encrypt is a free, automated, open, non-profit certification authority. You can find more information on <https://letsencrypt.org/en/about/>.
+Let's Encrypt is a free, automated, open, non-profit certification authority. You can find more information on <https://letsencrypt.org/about/>.
 
 **Find out how to activate a free Let's Encrypt SSL certificate on your OVHcloud web hosting plan.**
 
 ## Requirements
 
-- You have access to the [OVHcloud Control Panel](/links/manager).
 - You plan to order or have an [OVHcloud web hosting plan](/links/web/hosting).
 - You manage a [domain name](/links/web/domains) for which you have exclusive rights. The domain name must not already be linked to an SSL certificate.
 
@@ -39,6 +38,17 @@ Let's Encrypt is a free, automated, open, non-profit certification authority. Yo
 >
 > The goal is to save you time configuring your services. You can always disable the Let's Encrypt SSL certificate from your [OVHcloud Control Panel](/links/manager) if you want to install another SSL certificate (Sectigo DV, Sectigo EV or a custom SSL certificate).  
 > Find more information in our guide "[How to configure an SSL certificate](/pages/web_cloud/web_hosting/ssl_on_webhosting)", part **Disable an SSL certificate on a web hosting plan**.
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Hosting plans](/links/control-panel/web-hosting)
+- **Navigation path:** `Web Cloud`{.action} > `Hosting plans`{.action} > Select your web hosting plan
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## Instructions
 
@@ -59,65 +69,57 @@ Let's Encrypt is a free, automated, open, non-profit certification authority. Yo
 
 ### Activate the Let's Encrypt SSL certificate
 
-Click on the tabs below to view each of the **4** steps in succession:
+<!-- CP-STEPS-START:activate-letsencrypt -->
+Click on the tabs below to view each of the **3** steps.
 
 > [!tabs]
 > **Step 1**
 >>
->> Log in to the [OVHcloud Control Panel](/links/manager), then go to the `Web Cloud`{.action} section.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Step 2**
->>
->> Click the `Hosting plans`{.action} menu, then select the web hosting plan concerned.
+>> Go to the [Hosting plans](/links/control-panel/web-hosting) page, then select the web hosting plan concerned.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Step 3**
+> **Step 2**
 >>
 >> On the page that pops up, click on the `SSL certificates`{.action} tab.
 >>
 >> ![SSL certificates](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ssl-certificates.png){.thumbnail}
 >>
-> **Step 4**
+> **Step 3**
 >>
 >> When the content of the tab appears, select the domain or subdomain for which you want to activate the free Let's Encrypt (DV) SSL certificate, under the mention `Enable SSL certificate`.
 >>
 >> ![Let's Encrypt SSL](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ssl-certificates/enable-ssl-lets-encrypt.png){.thumbnail}
 >>
 >> Then click the `Enable Let's Encrypt SSL`{.action} button.
+<!-- CP-STEPS-END:activate-letsencrypt -->
 
 It may take several hours to set up the Let's Encrypt SSL certificate.
 
 ### Verify activation of the free Let's Encrypt (DV) SSL certificate
 
-To verify that the installation is complete, click on the tabs below to display each of the **4** steps in succession:
+<!-- CP-STEPS-START:verify-letsencrypt -->
+To verify that the installation is complete, click on the tabs below to view each of the **3** steps.
 
 > [!tabs]
 > **Step 1**
 >>
->> Log in to the [OVHcloud Control Panel](/links/manager), then go to the `Web Cloud`{.action} section.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Step 2**
->>
->> Click the `Hosting plans`{.action} menu, then select the web hosting plan concerned.
+>> Go to the [Hosting plans](/links/control-panel/web-hosting) page, then select the web hosting plan concerned.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Step 3**
+> **Step 2**
 >>
 >> On the page that pops up, click on the `SSL certificates`{.action} tab.
 >>
 >> ![SSL certificates](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ssl-certificates.png){.thumbnail}
 >>
-> **Step 4**
+> **Step 3**
 >>
 >> When the contents of the tab appear, check that each domain and/or subdomain concerned is listed in the table with the SSL certificate type `Let's Encrypt`.
 >>
 >>![SSL certificate management panel](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ssl-certificates/tab.png){.thumbnail}
+<!-- CP-STEPS-END:verify-letsencrypt -->
 
 Your Let's Encrypt SSL certificate is now installed and active. You can now use it with your new website(s) by switching, for example, your new [website(s) to HTTPS](/pages/web_cloud/web_hosting/ssl-activate-https-website).
 

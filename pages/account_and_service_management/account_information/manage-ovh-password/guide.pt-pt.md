@@ -15,6 +15,17 @@ A palavra-passe da sua Área de Cliente OVHcloud é a chave de acesso a todos os
 - Ter uma conta OVHcloud ativa.
 - Conhecer a sua ID de cliente e/ou o seu endereço de e-mail.
 
+<!-- CP-NAV-START:account-security -->
+---
+
+### Acesso à Área de Cliente OVHcloud
+
+- **Ligação direta:** [Segurança](/links/control-panel/account-security)
+- **Caminho de navegação:** Clique no seu nome no canto superior direito > `Aceder à minha conta`{.action} > `Segurança`{.action}
+
+---
+<!-- CP-NAV-END:account-security -->
+
 ## Instruções
 
 ### Gerar uma boa palavra-passe
@@ -68,9 +79,7 @@ Se a sua palavra-passe estiver comprometida, recomendamos vivamente que a [alter
 
 #### A partir da sua Área de Cliente OVHcloud
 
-- Aceda à sua [Área de Cliente OVHcloud](/links/manager), clique no seu nome no canto superior direito e, a seguir, em `Aceder à minha conta`{.action}.
-
-- Clique então em `Segurança`{.action} e em `Alterar`{.action} à direita de "Palavra-passe".
+- Na página [Segurança da conta](/links/control-panel/account-security), clique em `Alterar`{.action} à direita de "Palavra-passe".
 
 ![manage-ovh-password](/pages/assets/screens/control_panel/product-selection/right-column/access-my-account/edit-account-password.png){.thumbnail}
 
@@ -83,6 +92,7 @@ Se a sua palavra-passe estiver comprometida, recomendamos vivamente que a [alter
 ![manage-ovh-password](images/account-password-modif-manager-step4.png){.thumbnail}
 
 - Surge então uma mensagem que lhe indica o êxito da operação. Clique no botão `Continuar`{.action} na zona inferior desta mensagem para ser encaminhado para a página de identificação. Introduza então a sua ID de utilizador e a sua nova palavra-passe.
+
 
 <a name="lost-password"></a>
 
@@ -110,6 +120,7 @@ Se a sua palavra-passe estiver comprometida, recomendamos vivamente que a [alter
 >
 > O reconhecimento da alteração da palavra-passe leva automaticamente ao encerramento de todas as sessões ativas na sua conta OVHcloud.
 >
+
 
 ## Quer saber mais?
 

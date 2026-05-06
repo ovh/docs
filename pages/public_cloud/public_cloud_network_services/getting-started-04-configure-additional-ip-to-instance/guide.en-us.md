@@ -4,10 +4,12 @@ excerpt: "Find out how to add Additional IP addresses to your instance's configu
 updated: 2025-12-17
 ---
 
+## Objective
+
 > [!primary]
 > This article is about Additional IPv4 configuration on a public interface. You can also configure IPv6 addresses on your Public Cloud instances using [this guide](/pages/public_cloud/public_cloud_network_services/configuration-02-how-to-configure-ipv6).
 > 
-> Please note that Additional IP addresses can also be configured in a vRack (private network), which allows interconnection over a wide range of OVHcloud services, offering more flexibility.
+> Additional IP addresses can also be configured in a vRack (private network), which allows interconnection over a wide range of OVHcloud services, offering more flexibility.
 >
 > You can find more information about configuring Additional IP addresses in a vRack for usage with Public Cloud instances in the following guides:
 >
@@ -34,14 +36,26 @@ You may need to configure Additional IP addresses on your instances, for example
 
 ## Instructions
 
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Navigation path:** `Public Cloud`{.action} > Select your project
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
+
+
 The following sections contain the configurations for the most commonly used distributions/operating systems. The first step is always to log in to your instance via SSH or a GUI login session (VNC for a Windows instance). The examples below presume you are logged in as a user with elevated permissions (Administrator/sudo).
 
 > [!primary]
 >
-Concerning different distribution releases, please note that the proper procedure to configure your network interface as well as the file names may have been subject to change. We recommend to consult the manuals and knowledge resources of the respective OS versions if you experience any issues.
+> Concerning different distribution releases, the procedure to configure your network interface and the file names may have changed. We recommend consulting the manuals and knowledge resources of the respective OS versions if you experience any issues.
 > 
 
-**Please take note of the following terminology that will be used in code examples and instructions of the guide sections below:**
+**The following terminology is used in code examples and instructions below:**
 
 |Term|Description|Examples|
 |---|---|---|
@@ -231,7 +245,7 @@ Concerning different distribution releases, please note that the proper procedur
 >> sudo nano /etc/NetworkManager/system-connections/cloud-init-eno1.nmconnection
 >> ```
 >>
->> Do not modify the existing lines in the configuration file, add your Additional IP to the file as follows, replacing `ADDITIONAL_IP/32` wih your own values:
+>> Do not modify the existing lines in the configuration file, add your Additional IP to the file as follows, replacing `ADDITIONAL_IP/32` with your own values:
 >>
 >> ```console
 >> [ipv4]
@@ -252,7 +266,7 @@ Concerning different distribution releases, please note that the proper procedur
 >>
 >> **Step 2: Restart the interface**
 >>
->> You now need to restart your interface:
+>> Restart your interface:
 >>
 >> ```bash
 >> sudo systemctl restart NetworkManager
@@ -265,7 +279,7 @@ Concerning different distribution releases, please note that the proper procedur
 >>
 >> In the Plesk control panel, choose `Tools & Settings`{.action} from the left-hand sidebar.
 >>
->> ![acces to the ip addresses management](images/pleskip1.png){.thumbnail}
+>> ![access to the IP addresses management](images/pleskip1.png){.thumbnail}
 >>
 >> Click on `IP Addresses`{.action} under **Tools & Resources**.
 >>
@@ -288,7 +302,7 @@ Concerning different distribution releases, please note that the proper procedur
 > **Windows Server**
 >> Windows Server
 >>
->> In the Public Cloud area, open `Instances`{.action} in the left-hand menu and click on the name of your instance. Navigate to the `VNC Console`{.action} tab.
+>> In your Public Cloud project, open `Instances`{.action} in the left-hand menu and click on the name of your instance. Navigate to the `VNC Console`{.action} tab.
 >>
 >> **Step 1: Verify the network configuration**
 >>
@@ -298,13 +312,13 @@ Concerning different distribution releases, please note that the proper procedur
 >>
 >> ![cmdprompt](images/pci_win07.png){.thumbnail}
 >>
->> In order to retrieve the current IP configuration, enter `ipconfig` at the command prompt.
+>> To retrieve the current IP configuration, enter `ipconfig` at the command prompt.
 >>
 >> ![check main IP configuration](images/image1-1.png){.thumbnail}
 >>
 >> **Step 2: Change the IPv4 Properties**
 >>
->> Now you need to change the IP properties to a static configuration.
+>> Change the IP properties to a static configuration.
 >>
 >> Open the adapter settings in the Windows control panel and then open the `Properties`{.action} of `Internet Protocol Version 4 (TCP/IPv4)`{.action}.
 >>
@@ -316,7 +330,7 @@ Concerning different distribution releases, please note that the proper procedur
 >>
 >> In the new window, click on `Add...`{.action} under "IP addresses". Enter your Additional IP address and the subnet mask (255.255.255.255).
 >>
->> ![advance configuration section](images/image4-4.png){.thumbnail}
+>> ![advanced configuration section](images/image4-4.png){.thumbnail}
 >>
 >> Confirm by clicking on `Add`{.action}.
 >>
@@ -341,7 +355,7 @@ Concerning different distribution releases, please note that the proper procedur
 
 ### Troubleshooting
 
-First, soft-reboot your instance via the instance's OS or from the [OVHcloud Control Panel](/links/manager). If you are still unable to establish a connection from the public network to your Additional IP and suspect a network problem, you need to reboot the instance in [rescue mode](/pages/public_cloud/compute/put_an_instance_in_rescue_mode). Then you can set up the Additional IP address directly on the instance.
+First, soft-reboot your instance via the instance's OS or from the [OVHcloud Control Panel](/links/manager). If you are still unable to connect to your Additional IP from the public network and suspect a network problem, reboot the instance in [rescue mode](/pages/public_cloud/compute/put_an_instance_in_rescue_mode). Then you can set up the Additional IP address directly on the instance.
 
 Once you are connected in rescue mode via SSH, enter the following command:
 
@@ -357,6 +371,6 @@ To test the connection, simply ping your Additional IP from the outside. If it r
 
 [Migrating an Additional IP](/pages/public_cloud/public_cloud_network_services/additional-ip-migrate)
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for assistance with your project.
 
 Join our [community of users](/links/community).

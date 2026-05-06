@@ -1,7 +1,7 @@
 ---
 title: "Comment réagir face à une activité anormale détectée sur votre hébergement web"
 excerpt: "Découvrez les étapes à suivre lorsqu’une activité anormale est détectée sur votre hébergement web OVHcloud"
-updated: 2025-10-02
+updated: 2026-04-01
 ---
 
 ## Objectif
@@ -13,7 +13,17 @@ Ce guide vous explique pourquoi une **activité anormale** peut être détectée
 ## Prérequis
 
 - Disposer d’une offre d’[hébergement web OVHcloud](/links/web/hosting).
-- Être connecté à votre [espace client OVHcloud](/links/manager).
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Hébergements](/links/control-panel/web-hosting)
+- **Pour accéder à vos services :** `Web Cloud`{.action} > `Hébergements`{.action} > Sélectionnez votre hébergement web
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## En pratique
 
@@ -69,11 +79,26 @@ Votre site web effectue de nombreuses connexions externes (API, mises à jour, a
 >
 > N’effectuez cette étape **qu’après avoir appliqué les recommandations ci-dessus** (diagnostic, corrections/mises à jour, sécurisation). Si une activité anormale est à nouveau détectée lors d’un prochain scan, les **mesures de sécurité seront automatiquement réactivées**. Vous recevrez une nouvelle notification et les blocages resteront en place jusqu’à la **résolution définitive** de la situation.
 
-1. Connectez-vous à votre [espace client OVHcloud](/links/manager), rendez-vous dans `Web Cloud`{.action} puis cliquez sur votre hébergement web.
-2. Une **fenêtre d’alerte** s’affiche : `« Activité anormale sur votre hébergement »`. Si vous cliquez sur le bouton `Plus tard`{.action}, une **bannière d’alerte** `« Activité anormale détectée »` apparaît en haut de la page. Cliquez sur `En savoir plus`{.action} pour rouvrir la fenêtre d’alerte.
-3. **Cochez** la case : `Je confirme avoir effectué toutes les actions nécessaires pour résoudre le problème`.
-4. Cliquez sur `Lever les mesures de sécurité`{.action}.
-5. Une **bannière de confirmation** s’affiche en haut de la page : `Votre hébergement est en cours d’analyse afin de lever les mesures de sécurité.` Suivez la progression en cliquant sur le lien `Voir les tâches en cours`{.action} ou directement depuis l’onglet `Tâches en cours`{.action}.
+<!-- CP-STEPS-START:lift-security-measures -->
+Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4** étapes.
+
+> [!tabs]
+> **Étape 1**
+>>
+>> Accédez à la page [Hébergements](/links/control-panel/web-hosting), puis choisissez l’hébergement web concerné.
+>>
+> **Étape 2**
+>>
+>> Une **fenêtre d’alerte** s’affiche : `« Activité anormale sur votre hébergement »`. Si vous cliquez sur le bouton `Plus tard`{.action}, une **bannière d’alerte** `« Activité anormale détectée »` apparaît en haut de la page. Cliquez sur `En savoir plus`{.action} pour rouvrir la fenêtre d’alerte.
+>>
+> **Étape 3**
+>>
+>> **Cochez** la case : `Je confirme avoir effectué toutes les actions nécessaires pour résoudre le problème`, puis cliquez sur `Lever les mesures de sécurité`{.action}.
+>>
+> **Étape 4**
+>>
+>> Une **bannière de confirmation** s’affiche en haut de la page : `Votre hébergement est en cours d’analyse afin de lever les mesures de sécurité.` Suivez la progression en cliquant sur le lien `Voir les tâches en cours`{.action} ou directement depuis l’onglet `Tâches en cours`{.action}.
+<!-- CP-STEPS-END:lift-security-measures -->
 
 > [!warning]
 >

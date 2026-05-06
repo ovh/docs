@@ -12,6 +12,17 @@ L'objectif de ce guide est de présenter les différentes étapes pour mettre en
 
 - Disposer d'un [compte client OVHcloud](/pages/account_and_service_management/account_information/ovhcloud-account-creation).
 
+<!-- CP-NAV-START:security-kms -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Key Management Service](/links/control-panel/security-kms)
+- **Pour accéder à vos services :** `Identité, Sécurité & Opérations`{.action} > `Key Management Service`{.action} > Sélectionnez votre domaine OKMS
+
+---
+<!-- CP-NAV-END:security-kms -->
+
 ## En pratique
 
 ### Commander votre KMS
@@ -22,7 +33,7 @@ Il est possible de commander plusieurs KMS, que ce soit dans des régions diffé
 
 La facturation d'un KMS étant basée sur le nombre de clés y étant stockées, la commande d'un KMS ne génère pas de facturation en elle-même.
 
-Vous pouvez commander un KMS depuis [l'espace client OVHcloud](/links/manager) en vous rendant dans le menu `Identité, Sécurité & Opérations`{.action} puis `Key Management Service`{.action}. Cliquez alors sur le bouton `Commander un KMS`{.action}.
+Cliquez sur le bouton `Commander un domaine OKMS`{.action}.
 
 ![Accès au menu KMS](images/access_to_the_KMS_menu_01.png){.thumbnail}
 
@@ -42,7 +53,7 @@ Après quelques secondes, le KMS est bien disponible dans votre espace client.
 
 #### Créer une clé de chiffrement
 
-Vous pouvez créer une clé de chiffrement depuis le menu dédié de la console d'administration, en cliquant sur le bouton `Créer une clé`{.action}.
+Dans l'onglet `Service Keys`{.action}, cliquez sur le bouton `Créer une Service Key`{.action}.
 
 ![Créer une clé](images/create_key_01.png){.thumbnail}
 

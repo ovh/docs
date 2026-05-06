@@ -16,9 +16,19 @@ En suivant ce guide, les utilisateurs pourront construire une infrastructure rob
 
 ## Prérequis
 
-- Être connecté à votre [espace client OVHcloud](/links/manager).
 - [Charger les variables d'environnement OpenStack](/pages/public_cloud/public_cloud_cross_functional/loading_openstack_environment_variables).
 - Connaître le fonctionnement de [Terraform](/pages/public_cloud/public_cloud_cross_functional/how_to_use_terraform), si vous souhaitez l'utiliser.
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Projets Public Cloud](/links/control-panel/publiccloud-projects)
+- **Pour accéder à vos services :** `Public Cloud`{.action} > Sélectionnez votre projet
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## En pratique
 

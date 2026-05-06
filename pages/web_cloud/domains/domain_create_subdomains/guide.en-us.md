@@ -1,7 +1,7 @@
 ---
 title: "How to create a subdomain"
 excerpt: "Find out how to define a subdomain and how to create one at OVHcloud"
-updated: 2025-10-27
+updated: 2026-02-10
 ---
 
 <style>
@@ -32,9 +32,19 @@ You can create an infinite number of subdomains from a single domain name.
 
 - You have at least one [domain name](/links/web/domains).
 - You have an active DNS zone for your domain name. If you need further guidance, please refer to our guide on "[Creating an OVHcloud DNS zone](/pages/web_cloud/domains/dns_zone_create)".
-- You have access to the [OVHcloud Control Panel](/links/manager).
 - You have sufficient rights to all of the services concerned. You can find more information in our guide [Managing contacts for your services](/pages/account_and_service_management/account_information/managing_contacts).
   
+<!-- CP-NAV-START:web-domains -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Domain names](/links/control-panel/web-domains)
+- **Navigation path:** `Web Cloud`{.action} > `Domain names`{.action} > Select your domain name
+
+---
+<!-- CP-NAV-END:web-domains -->
+
 ## Instructions
 
 **Content overview**
@@ -79,13 +89,13 @@ A domain name can only be associated with one website at a time.
 
 However, some users or organizations need to segment their websites or email services while keeping the same domain name.
 
-Subdomains (sometimes called **prefixes**) meet the need to segment a domain name. They offer the owner the ability to choose from several subcategories of web services associated with their domain name, without having to sign up to a new domain name.
+Subdomains (sometimes called **prefixes**) meet the need to segment a domain name. They offer the holder the ability to choose from several subcategories of web services associated with their domain name, without having to sign up to a new domain name.
 
 In other words, subdomains make it easy to structure all of the web services (DNS servers, website, intranet, email, etc.) associated with the same domain name.
 
 As mentioned above, subdomains are the third level (*Third Level Domain*) of a domain name. The most well-known subdomain of the internet is **W**orld **W**ide **W**eb (**www**). Indeed, many websites still use this subdomain on the Internet.
 
-For example, *www.ovhcloud.com* is a subdomain of the *ovhcloud.com* domain.
+For example, *www.ovhcloud.com* is a subdomain of the *ovhcloud.com* domain name.
 
 For example, if you have the domain name *example.com*, you can create the following subdomains:
 
@@ -208,7 +218,7 @@ For more details on configuring an Exchange platform, please refer to the follow
 
 [Adding a domain name on an email platform](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_adding_domain)
 
-[Adding a CNAME record to validate your domain on your email solution](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_dns_cname)
+[Adding a CNAME record to validate your domain name on your email solution](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_dns_cname)
 
 For specialised services (SEO, development, etc.), contact [OVHcloud partners](/links/partner).
 

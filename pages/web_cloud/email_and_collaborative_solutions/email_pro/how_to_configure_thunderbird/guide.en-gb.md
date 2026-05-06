@@ -1,5 +1,5 @@
 ---
-title: 'E-mail Pro - Configure your email account in Thunderbird for Windows'
+title: 'Email Pro - Configure your email account in Thunderbird for Windows'
 excerpt: 'Find out how to configure your Email Pro address in Thunderbird for Windows'
 updated: 2025-09-19
 ---
@@ -33,6 +33,17 @@ Email Pro accounts can be configured on different compatible email clients. This
 - The Thunderbird software installed on your Windows device
 - The credentials for the email account you want to configure
 
+<!-- CP-NAV-START:web-email-pro -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Email Pro](/links/control-panel/web-email-pro)
+- **Navigation path:** `Web Cloud`{.action} > `Email Pro`{.action} > Select your platform
+
+---
+<!-- CP-NAV-END:web-email-pro -->
+
 /// details | Information regarding the administration and configuration of OVHcloud services
 
 This guide will show you how to use OVHcloud solutions with external tools, and the changes you need to make in specific contexts. You may need to adapt the instructions according to your situation.
@@ -43,15 +54,13 @@ If you experience any difficulties carrying out these operations, we recommend t
 
 ## Instructions
 
+<!-- CP-STEPS-START:find-server-name -->
 > [!warning]
 >
 > In our examples, we will use as the server name: pro?.mail.ovh.net. You will need to replace the "?" with the number designating the server of your Email Pro service.
 >
-> 1. Log in to your [OVHcloud Control Panel](/links/manager).
-> 1. Go to the `Web Cloud`{.action} section.
-> 1. Click on `Email Pro`{.action}.
-> 1. Select the platform concerned.
-> 1. The server name is visible in the **Connection** section of the `General Information`{.action} tab.
+> Click [this link](/links/control-panel/web-email-pro) to access the `Email Pro`{.action} section. The server name is visible in the **Connection** section of the `General information`{.action} tab.
+<!-- CP-STEPS-END:find-server-name -->
 
 ### Add the account
 

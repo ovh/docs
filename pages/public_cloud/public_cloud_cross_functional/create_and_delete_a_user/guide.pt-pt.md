@@ -17,13 +17,23 @@ A partir da interface Horizon, pode definir uma palavra-passe para cada utilizad
 ## Requisitos
 
 - Um projeto [Public Cloud](/pages/public_cloud/public_cloud_cross_functional/create_a_public_cloud_project) na sua conta OVHcloud
-- Estar ligado à [Área de Cliente OVHcloud](/links/manager)
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Acesso à Área de Cliente OVHcloud
+
+- **Ligação direta:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Caminho de navegação:** `Public Cloud`{.action} > Selecione o seu projeto
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## Instruções
 
 ### Criação de um utilizador OpenStack
 
-Aceda à [Área de Cliente OVHcloud](/links/manager), vá à secção `Public Cloud`{.action} e selecione o projeto Public Cloud em causa. Clique em `Utilizadores & Funções`{.action} no menu à esquerda em **Parâmetros**. 
+Clique em `Utilizadores & Funções`{.action} no menu à esquerda em **Parâmetros**.
 
 Clique no botão `Criar um utilizador`{.action}.
 
@@ -80,7 +90,7 @@ Atenção: a alteração da palavra-passe de uma conta de utilizador implica a a
 
 ### Eliminação do utilizador OpenStack
 
-A eliminação do utilizador OpenStack é efetuada a partir da [Área de Cliente OVHcloud](/links/manager). Clique em `Utilizadores & Funções`{.action} no menu à esquerda em **Parâmetros**. 
+Clique em `Utilizadores & Funções`{.action} no menu à esquerda em **Parâmetros**.
 
 ![public-cloud](images/delete.png){.thumbnail}
 

@@ -13,7 +13,17 @@ If your Private Cloud offer no longer suits you, or if you have ordered a new in
 ## Requirements
 
 - A [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/)
-- Access to the [OVHcloud Control Panel](/links/manager)
+
+<!-- CP-NAV-START:privatecloud-vmware-vsphere -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [VMware vSphere](/links/control-panel/privatecloud-vmware-vsphere)
+- **Navigation path:** `Hosted Private Cloud`{.action} > `Managed VMware vSphere`{.action} > Select your vSphere service
+
+---
+<!-- CP-NAV-END:privatecloud-vmware-vsphere -->
 
 ## Instructions
 
@@ -26,8 +36,7 @@ The Private Cloud offer is without obligation. However, as laid out in the [Spec
 
 ### Step 1: Request termination from the OVHcloud Control Panel
 
-Log in to your [OVHcloud Control Panel](/links/manager), go to `Hosted Private Cloud`{.action} (1), click on `Private Cloud`{.action} (2) and select your offer from the list (3).
-
+<!-- CP-STEPS-START:cancel-step1 -->
 In the "Service management" section of the "General Information" tab, click the button `...`{.action} (4) to the right of the renewal date. Finally, click on `Delete the service`{.action} (5).
 
 ![Control Panel Cancel](images/resiliation1.png){.thumbnail}
@@ -41,14 +50,17 @@ Click on `Confirm`{.action} to request termination.
 You will then receive a confirmation notice of your request. The procedure for confirming the termination is sent to you by email, to the address linked to the OVHcloud customer account.
 
 ![Cancellation validation](images/resiliation3.png){.thumbnail}
+<!-- CP-STEPS-END:cancel-step1 -->
 
 ### Step 2: Confirm termination
 
 Following your request, a termination confirmation email is sent to you at the address linked to the OVHcloud account.
 
+<!-- CP-STEPS-START:cancel-step2 -->
 You can also find this email in your OVHcloud client space. Click on your name at the top right and then on `My messages`{.action}.
 
 ![Cancellation validation](/pages/assets/screens/control_panel/product-selection/right-menu/my-messages.png){.thumbnail}
+<!-- CP-STEPS-END:cancel-step2 -->
 
 The subject of the email is:
 

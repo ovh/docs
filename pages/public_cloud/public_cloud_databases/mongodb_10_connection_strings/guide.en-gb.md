@@ -1,5 +1,5 @@
 ---
-title: MongoDB - Understand the connection strings URI format
+title: Understand the connection strings URI format of Public Cloud Databases for MongoDB
 excerpt: Find out how connections syntax work for MongoDB
 updated: 2023-03-02
 ---
@@ -15,10 +15,20 @@ MongoDB 3.6 introduced the concept of a seed list that is specified using DNS re
 ## Requirements
 
 - A [Public Cloud project](/links/public-cloud/public-cloud) in your OVHcloud account
-- Access to the [OVHcloud Control Panel](/links/manager)
 - A MongoDB instance running on your OVHcloud Public Cloud Databases ([this guide](/pages/public_cloud/public_cloud_databases/databases_01_order_control_panel) can help you to meet this requirement)
 - [Configure your MongoDB instance](/pages/public_cloud/public_cloud_databases/mongodb_02_manage_control_panel) to accept incoming connections
 - A MongoDB Compass stable version installed and public network connectivity (Internet). This guide was made in MongoDB Compass version 1.30.1
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Navigation path:** `Public Cloud`{.action} > Select your project
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## Concepts
 
@@ -81,13 +91,13 @@ _mongodb._tcp.mongodb-708c0af6-o1b33fa01.database.cloud.ovh.net. 1440 IN SRV   0
 
 ### Retrieve MongoDB DNS Seed List connection string
 
-To retrieve the MongoDB URI (`mongodbSrv`), log in to your OVHcloud Control Panel and open your Public Cloud project.
-
-Click on `Databases`{.action} in the left-hand navigation bar and select your MongoDB instance.
+<!-- CP-STEPS-START:retrieve-mongodb-dns-seed-list-connection-string -->
+To retrieve the MongoDB URI (`mongodbSrv`), open your Public Cloud project and click on `Databases`{.action} in the left-hand navigation bar and select your MongoDB instance.
 
 From the central `Login information` panel, select `mongodbSrv` as **Service** and copy the URI.
 
 ![Copy SRV URI from the OVHcloud manager](images/copy-srv-ovhcloud-control-panel.png){.thumbnail}
+<!-- CP-STEPS-END:retrieve-mongodb-dns-seed-list-connection-string -->
 
 ### Test the connection to MongoDB
 
@@ -102,10 +112,12 @@ MongoDB Compass establishes the connection and you should now be able to explore
 
 ### Add a node to a cluster
 
+<!-- CP-STEPS-START:add-a-node-to-a-cluster -->
 Imagine you want to scale your cluster up to support additional load.<br>
 From the OVHcloud Control Panel, click the `Add node`{.action} button and confirm.
 
 ![Add node from OVHcloud Control Panel](images/add-node-ovhcloud-control-panel.png){.thumbnail}
+<!-- CP-STEPS-END:add-a-node-to-a-cluster -->
 
 Once the new node is spawned, no need to reconfigure your connection.
 
@@ -120,9 +132,11 @@ Your MongoDB Compass is now connected to the 4 nodes of the cluster.
 
 You now want to scale the cluster down by removing a node.
 
+<!-- CP-STEPS-START:remove-a-node-from-the-cluster -->
 Go back to the OVHcloud Control Panel, click on the `Delete node`{.action} button and confirm.
 
 ![Remove node from OVHcloud Control Panel](images/remove-node-ovhcloud-control-panel.png){.thumbnail}
+<!-- CP-STEPS-END:remove-a-node-from-the-cluster -->
 
 After a few seconds, the node is effectively deleted from the cluster.
 Return to MongoDB Compass and open the `Connection info`{.action}.

@@ -1,6 +1,6 @@
 ---
-title: Configurare un Alias IP
-excerpt: 'Scopri come aggiungere uno o più Additional IP alla tua configurazione'
+title: "Configurare l'IP aliasing su un server dedicato"
+excerpt: "Aggiungi e configura indirizzi Additional IP sul tuo server dedicato OVHcloud per un hosting multi-sito o multi-servizio"
 updated: 2025-12-04
 ---
 
@@ -48,7 +48,7 @@ L'alias IP (o IP aliasing) è un tipo di configurazione del tuo server dedicato 
 > [!warning]
 > Questa funzionalità può non essere disponibile o limitata sui [server dedicati **Eco**](/links/bare-metal/eco-about).
 >
-> Per maggiori informazioni, consulta la nostra [a confronto](/links/bare-metal/eco-compare).
+> Per maggiori informazioni, consulta la nostra [pagina comparativa](/links/bare-metal/eco-compare).
 
 ## Procedura
 
@@ -107,7 +107,7 @@ Negli esempi che seguono, utilizzeremo l’editor di testo `nano`. Con alcuni si
 >> sudo nano /etc/network/interfaces.d/50-cloud-init
 >> ```
 >>
->> È quindi necessario aggiungere un'interfaccia virtuale o un alias ethernet. Nel nostro esempio, la nostra interfaccia si chiama `eth0`, quindi il nostro alias è `eth0:0`. Per ogni indirizzo Additional IP che vuoi configurare.
+>> È quindi necessario aggiungere un'interfaccia virtuale o un alias ethernet. Nel nostro esempio, la nostra interfaccia si chiama `eth0`, quindi il nostro alias è `eth0:0`. Ripeti questa operazione per ogni indirizzo Additional IP da configurare.
 >>
 >> Non modificare le linee esistenti nel file di configurazione, è sufficiente aggiungere l’Additional IP al file come indicato qui di seguito, sostituendo `ADDITIONAL_IP/32` e l’interfaccia virtuale (se il server non utilizza **eth0:0**) con i tuoi valori:
 >>
@@ -258,7 +258,7 @@ Negli esempi che seguono, utilizzeremo l’editor di testo `nano`. Con alcuni si
 >> address2=ADDITIONAL_IP2/32
 >> ```
 >>
->> /// details |  **Esempio di configurazione**
+>> /// details | **Esempio di configurazione**
 >>
 >> ```console
 >> [ipv4]
@@ -558,7 +558,7 @@ Negli esempi che seguono, utilizzeremo l’editor di testo `nano`. Con alcuni si
 >>
 >> ![accesso alla gestione degli indirizzi IP](images/pleskip1.png){.thumbnail}
 >>
->> Clicca su `IP Indirizzi`{.action} con **Tools & Settings**.
+>> Clicca su `IP Addresses`{.action} sotto **Tools & Resources**.
 >>
 >> **Step 2: aggiungi le informazioni IP supplementari**
 >>
@@ -577,7 +577,7 @@ Negli esempi che seguono, utilizzeremo l’editor di testo `nano`. Con alcuni si
 >> ![configurazione IP attuale](images/Plesk-2024-2.png){.thumbnail}
 >>
 
-#### Risoluzione dei difetti
+### Risoluzione dei difetti
 
 Se non riesci a stabilire una connessione tra la rete pubblica e il tuo alias IP e riscontri un problema di rete, riavvia il server in [modalità Rescue](/pages/bare_metal_cloud/dedicated_servers/rescue_mode) e configura l'alias direttamente sul server.
 
@@ -587,7 +587,7 @@ Una volta riavviato il server in Rescue mode, esegui questo comando:
 ifconfig eth0:0 ADDITIONAL_IP netmask 255.255.255.255 broadcast ADDITIONAL_IP up
 ```
 
-In cui sostituirai "ADDITIONAL_IP" con il vero Additional IP.
+In cui sostituirai `ADDITIONAL_IP` con il vero Additional IP.
 
 In seguito, ti basta effettuare un ping dal tuo Additional IP verso l'esterno. Se funziona, significa probabilmente che è necessario correggere un errore di configurazione. Se, al contrario, l’indirizzo IP continua a non funzionare, apri un ticket presso il team di assistenza tramite il [Help Center di OVHcloud](https://help.ovhcloud.com/csm?id=csm_get_help), precisando le informazioni seguenti:
 

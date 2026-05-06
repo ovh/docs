@@ -1,7 +1,7 @@
 ---
-title: "Como configurar a apresentação do WHOIS de um domínio?"
-excerpt: "Saiba como apresentar ou ocultar certas informações contidas no WHOIS de um domínio a partir da Área de Cliente OVHcloud"
-updated: 2025-06-23
+title: "Como configurar a apresentação do WHOIS de um nome de domínio?"
+excerpt: "Saiba como apresentar ou ocultar certas informações contidas no WHOIS de um nome de domínio a partir da Área de Cliente OVHcloud"
+updated: 2026-02-10
 ---
 
 ## Objetivo
@@ -16,14 +16,25 @@ Por exemplo, pode encontrar as seguintes informações (lista não exaustiva):
 - Estado (criado, bloqueado, expirado, etc.).
 - Etc.
 
-Durante a utilização do domínio, poderá ser necessário mostrar ou ocultar algumas informações presentes no WHOIS.
+Durante a utilização do nome de domínio, poderá ser necessário mostrar ou ocultar algumas informações presentes no WHOIS.
 
-**Saiba como apresentar ou ocultar determinadas informações contidas no WHOIS de um domínio a partir da Área de Cliente OVHcloud.**
+**Saiba como apresentar ou ocultar determinadas informações contidas no WHOIS de um nome de domínio a partir da Área de Cliente OVHcloud.**
 
 ## Requisitos
 
-- Ter acesso à [Área de Cliente OVHcloud](/links/manager).
 - Ter um [nome de domínio](/links/web/domains).
+
+<!-- CP-NAV-START:web-domains -->
+---
+
+### Acesso à Área de Cliente OVHcloud
+
+- **Ligação direta:** [Nomes de domínio](/links/control-panel/web-domains)
+- **Caminho de navegação:** `Web Cloud`{.action} > `Nomes de domínio`{.action} > Selecione o seu nome de domínio
+
+---
+<!-- CP-NAV-END:web-domains -->
+
 
 > [!warning]
 >
@@ -34,38 +45,32 @@ Durante a utilização do domínio, poderá ser necessário mostrar ou ocultar a
 
 ## Instruções
 
-Clique nas guias abaixo para exibir sucessivamente cada um dos **4** etapas.
+<!-- CP-STEPS-START:configure-whois -->
+Clique nos separadores abaixo para visualizar cada uma das **3** etapas.
 
 > [!tabs]
 > **Etapa 1**
 >>
->> Aceda à [Área de Cliente OVHcloud](/links/manager) e aceda à secção `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Etapa 2**
->>
->> Clique no menu `Nomes de domínios`{.action} e escolha o domínio em causa.
+>> Aceda à página [Nomes de domínio](/links/control-panel/web-domains) e escolha o nome de domínio correspondente.
 >>
 >> ![Domain Names](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
 >>
+> **Etapa 2**
+>>
+>> Na página que se abrir, na caixa **Configuração**, clique no botão `Gerir la proteção de dados`{.action}.
+>>
+>> ![Configure Data protection](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/configure-data-protection.png){.thumbnail}
+>>
 > **Etapa 3**
 >>
->> Na página que se abrir, na caixa **Segurança**, clique no botão `Configurar a visualização do WHOIS`{.action}.
+>> Na nova página que aparece, poderá escolher `Mostrar` ou `Ocultar` as informações relativas aos contactos titular, administrador e técnico do nome de domínio, no limite das ações autorizadas pelo registry gestor da extensão.
 >>
->> ![Configure WHOIS listing](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/configure-whois-listing.png){.thumbnail}
+>> ![Configure listing in WHOIS](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/configure-data-protection/configure-data-protection-in-drawer.png){.thumbnail}
 >>
-> **Etapa 4**
+>> Depois de fazer as suas escolhas, clique no botão `Validar`{.action}.
 >>
->> Na nova página que aparece, poderá escolher `Mostrar` ou `Ocultar` as informações relativas aos contactos proprietário, administrador e técnico do nome de domínio, no limite das ações autorizadas pelo registry gestor da extensão.
->>
->> Para cada um dos 3 contactos, selecione a opção `Gerir a visualização campo a campo`{.action} para obter mais opções.
->>
->> ![Configure listing in WHOIS](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/configure-whois-listing/configure-listing-in-whois.png){.thumbnail}
->>
->> Depois de fazer as suas escolhas, clique no botão `Registar as modificações`{.action}.
->>
->> As alterações podem ser aplicadas até **48** horas. Estas alterações apenas serão aplicadas **se forem autorizadas pelo agente de registo responsável pela extensão do seu domínio**.
+>> As alterações podem ser aplicadas até **48** horas. Estas alterações apenas serão aplicadas **se forem autorizadas pelo agente de registo responsável pela extensão do seu nome de domínio**.
+<!-- CP-STEPS-END:configure-whois -->
 
 ## Quer saber mais?
  
@@ -73,4 +78,4 @@ Para serviços especializados (referenciamento, desenvolvimento, etc.), contacte
  
 Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](/links/support).
  
-Fale com a nossa [comunidade de utilizadores](/links/community).
+Fale com a nossa [comunidade de utilizadores](/links/community).

@@ -39,7 +39,7 @@ Hier erfahren Sie, wie Sie Ihr SSL Gateway verwenden.
 
 ![Informationen](images/8.PNG){.thumbnail}
 
-|---|---|
+|Option|Beschreibung|
 |---|---|
 |IPv4|IPv4-Adresse des OVHcloud Gateways, auf die Sie verweisen müssen|
 |IPv6|IPv6-Adresse des OVHcloud Gateways, auf die Sie verweisen müssen|
@@ -56,7 +56,7 @@ Hier erfahren Sie, wie Sie Ihr SSL Gateway verwenden.
 
 ![Konfigurationsteil](images/9.PNG){.thumbnail}
 
-|---|---|
+|Option|Beschreibung|
 |---|---|
 |Konfiguration|Button, um die Konfiguration Ihrer SSL Gateway Dienstleistung zu bearbeiten|
 |HSTS [[1]](#id5){.note-ref #id1}|Zwingt den Browser dazu, die nächsten Verbindungen mit Ihrer Website über HTTPS durchzuführen|
@@ -94,54 +94,24 @@ Der folgende Block enthält 4 Tabs:
 In dem Tab **„Domains“** können Sie Ihre Domains und Subdomains zu Ihrem SSL Gateway hinzufügen.
 
 - Klicken Sie auf `+ Domain`{.action}, um eine Domain oder Subdomain hinzuzufügen.
-    - 
 
-> [!faq]
+| Name | URL |
+|---|---|
+| Domain | example.com |
+| Subdomain www | www.example.com |
+| Subdomain Ihrer Wahl | blog.example.com |
+
+> [!warning]
 >
-> Sie haben ein SSL Gateway **„Free“**
->> 
->> Sie besitzen die Rechte für eine **Domain**, deren Subdomain beginnend mit www, sowie eine weitere Subdomain Ihrer Wahl:
->> 
->> 
->> 
->> > [!primary]
->> >
->> > |---|---|
->> > |---|---|
->> > |Domain|example.com|
->> > |Subdomain www|www.example.com|
->> > |Subdomain Ihrer Wahl|blog.example.com|
->> > 
->> 
+> **SSL Gateway Free**: Sie können nur Domains bis zur dritten Ebene (www.example.org) verwenden.
 
->> 
->> > [!warning]
->> >
->> > - SSL Gateway Free:
->> > 
->> > Sie können nur Domains bis zur dritten Ebene (www.example.org) verwenden.
->> > 
->> 
->>         - Wählen Sie die Domain und klicken Sie zur Bestätigung auf `Hinzufügen`{.action}.
+> [!primary]
+>
+> **SSL Gateway Advanced**: Sie können jegliche Domains und Subdomains Ihrer Wahl verwenden, einschließlich Fourth-Level-Domains (blog.germany.example.org) und tiefer.
+
+Wählen Sie die Domain und klicken Sie zur Bestätigung auf `Hinzufügen`{.action}.
 
 ![Free Domain hinzufügen](images/11.PNG){.thumbnail}
-
-> [!faq]
->
-> Sie haben ein SSL Gateway **„Advanced“**
->> 
->> Sie können jegliche Domains und Subdomains Ihrer Wahl verwenden.
->> 
->> 
->> 
->> > [!primary]
->> >
->> > - Advanced Angebot
->> > 
->> > Sie können auch Fourth-Level-Domains (blog.germany.example.org) oder Domains einer tieferen Ebene verwenden.
->> > 
->> 
->>         - Wählen Sie die Domain und klicken Sie zur Bestätigung auf `Hinzufügen`{.action}.
 
 ![Advanced Domain hinzufügen](images/12.PNG){.thumbnail}
 
@@ -157,34 +127,14 @@ In dem Tab **„Server“** können Sie die IP-Adresse(n) des bzw. der Server ve
 
 ![Tab Server](images/13.PNG){.thumbnail}
 
-> [!faq]
+> [!primary]
 >
-> Sie haben ein SSL Gateway **„Free“**
->> 
->> Sie können nur eine IP/PORT-Adresse verwenden.
->> 
->> 
->
+> - **SSL Gateway Free**: Sie können nur eine IP/PORT-Adresse verwenden.
+> - **SSL Gateway Advanced**: Sie können bis zu 3 IP/Port-Adressen für Ihre Domains bzw. Subdomains hinzufügen. Wenn Sie mehrere Adressen angeben, verteilt Ihr SSL Gateway den Traffic automatisch nach dem Round Robin System.
 
-> [!faq]
->
-> Sie haben ein SSL Gateway **„Advanced“**
->> 
->> Sie können bis zu 3 IP/Port-Adressen für Ihre Domains bzw. Subdomains hinzufügen.
->> 
->> 
->> 
->> > [!primary]
->> >
->> > Wenn Sie mehrere IP/PORT-Adressen angeben, verteilt Ihr SSL Gateway den Traffic automatisch nach dem Round Robin System.
->> > Weitere Informationen zu Round Robin DNS
->> > 
->> 
->>         - Wählen Sie die Domain und klicken Sie zur Bestätigung auf `Hinzufügen`{.action}.
+Wählen Sie Ihre Einstellung und klicken Sie zur Bestätigung auf `Hinzufügen`{.action}.
 
 ![Advanced IP/PORT hinzufügen (intern)](images/15.PNG){.thumbnail}
-
->
 
 > [!warning]
 >
@@ -208,26 +158,10 @@ In dem Tab **„Graphen“** werden die Verbindungen und Anfragen auf Ihr SSL Ga
 
 ![Tab Graphen](images/17.PNG){.thumbnail}
 
-- 
-
-> [!faq]
+> [!primary]
 >
-> Sie haben ein SSL Gateway **„Free“**
->> 
->> Sie können sich die Metriken für 24 Stunden anzeigen lassen.
->> 
->> 
->
-- 
-
-> [!faq]
->
-> Sie haben ein SSL Gateway **„Advanced“**
->> 
->> Sie können sich die Metriken für 1 Monat anzeigen lassen.
->> 
->> 
->
+> - **SSL Gateway Free**: Sie können sich die Metriken für 24 Stunden anzeigen lassen.
+> - **SSL Gateway Advanced**: Sie können sich die Metriken für 1 Monat anzeigen lassen.
 
 ## Verlangerung des SSL-Zertifikats
 
@@ -261,7 +195,7 @@ Diese Felder können auch gefälscht werden. Daher kann den Angaben nur vertraut
 - Gehen Sie dort zu Ihrem SSL Gateway.
 - Die IPs stehen in dem Bereich „Ausgehende IPv4“
 
-Zum Zeitpunkt der Erstellung dieser Anleitung lauten diese Adressen **10.108.0.0/19**, **10.108.32.0/19**, **10.108.64.0/19**, **10.108.192.0/19** und **10.108.128.0/19**. Es können noch weitere Adressen hinzukommen.
+Zum Zeitpunkt der Erstellung dieser Anleitung lauten diese Adressen **213.32.4.0/24** und **144.217.9.0/24**. Es können noch weitere Adressen hinzukommen.
 
 Wenn Ihr Server die Option zulässt, können Sie einstellen, dass er diese Information automatisch anstelle der IP des SSL Gateways verwendet.
 

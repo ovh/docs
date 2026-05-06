@@ -13,12 +13,22 @@ W dzisiejszym świecie cyfrowym społeczeństwa stają się coraz bardziej dynam
 ## Wymagania początkowe
 
 - Posiadanie hostingu [OVHcloud](/links/web/hosting).
-- Dostęp do [Panelu klienta OVHcloud](/links/manager), sekcja Web Cloud.
 - Posiadanie konta [GitHub](https://github.com/) i logowanie.
 
 > [!primary]
 >
 > W dniu dotychczasowym w ramach współpracy z usługami hostingowymi OVHcloud obsługiwana jest tylko platforma GitHub.
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Web hosting](/links/control-panel/web-hosting)
+- **Ścieżka nawigacji:** `Web Cloud`{.action} > `Hosting`{.action} > Wybierz hosting WWW
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## W praktyce
 

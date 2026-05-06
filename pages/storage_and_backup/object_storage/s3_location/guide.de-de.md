@@ -1,7 +1,7 @@
 ---
-title: Object Storage - Endpunkte und Objektspeicher mit Geo-Verfügbarkeit (EN)
-excerpt: Discover OVHcloud Object Storage endpoints and regions
-updated: 2025-11-19
+title: Object Storage - Endpoints and Object Storage geoavailability
+excerpt: Discover OVHcloud Object Storage endpoints and regions.
+updated: 2026-03-06
 ---
 
 <style>
@@ -10,11 +10,11 @@ td:nth-of-type(2) {
 }
 </style>
 
-We have designed the Object Storage storage classes to be **compatible with S3<sup>1</sup>API**, considered as a benchmark in the object storage market. You can therefore use Object Storage with most data management tools via the endpoints defined by region and not storage class.
+We have designed the Object Storage storage classes to be compatible with the S3<sup>1</sup>-compatible API, considered as a benchmark in the object storage market. You can therefore use Object Storage with most data management tools via the endpoints defined by region, not storage class.
 
 ## Object Storage
 
-OVHcloud Object Storage can be accessed through a unique endpoint: `https://s3.<region>.io.cloud.ovh.net`. This unique endpoint can address all buckets and all objects in both Standard and High Performance storage classes. All operations are supported with this unique endpoint.
+OVHcloud Object Storage can be accessed through a unique endpoint: `https://s3.<region>.io.cloud.ovh.net`. This unique endpoint can address all buckets and all objects in both Standard and High Performance storage classes. All operations are supported through this unique endpoint.
 
 ### List of available regions
 
@@ -59,7 +59,7 @@ OVHcloud Object Storage can be accessed through a unique endpoint: `https://s3.<
         <td>HTTPS</td>
         <td>4</td>
         <td>3-AZ region</td>
-        <td>Standard, Infrequent Access, Cold Archive</td>
+        <td>Standard, Infrequent Access, Active Archive and Cold Archive</td>
     </tr>
     <tr>
         <td>Milan</td>
@@ -67,15 +67,7 @@ OVHcloud Object Storage can be accessed through a unique endpoint: `https://s3.<
         <td>HTTPS</td>
         <td>4</td>
         <td>3-AZ region</td>
-        <td>Standard, Infrequent Access</td>
-    </tr>
-    <tr>
-        <td>Milan</td>
-        <td>eu-south-mil</td>
-        <td>HTTPS</td>
-        <td>4</td>
-        <td>3-AZ region</td>
-        <td>Standard only</td>
+        <td>Standard, Infrequent Access and Active Archive</td>
     </tr>
     <tr>
         <td>Frankfurt</td>
@@ -145,87 +137,165 @@ OVHcloud Object Storage can be accessed through a unique endpoint: `https://s3.<
     </tr>
 </table>
 
-The bucket endpoint is a URL, for example `https://my-bucket.s3.gra.io.cloud.ovh.net` that represents a virtual host style endpoint.
+The bucket endpoint is a URL, for example `https://<bucket_name>.s3.<region>.io.cloud.ovh.net`, that represents a virtual-host-style endpoint.
 
 ### Mapping from AWS S3 tiers to OVHcloud Storage tiers
 
 The mapping for **WRITE(PUT)** operations on the **io** endpoint is the following:
 
-<table>
-    <tr>
-        <th>AWS</th>
-        <th>OVHcloud</th>
-    </tr>
-    <tr>
-        <td>EXPRESS_ONEZONE</td> 
-        <td>High Performance</td>
-    </tr>
-    <tr>
-        <td>STANDARD</td>
-        <td rowspan=3>Standard</td>
-    </tr>
-    <tr>
-        <td>INTELLIGENT_TIERING</td>
-    </tr>
-    <tr>
-        <td>default<sup>2</sup></td>
-    </tr>
-    <tr>
-        <td>STANDARD_IA</td>
-        <td rowspan=4>Standard, Infrequent Access</td>
-    </tr>
-    <tr>
-        <td>ONEZONE_IA</td>
-    </tr>
-    <tr>
-        <td>GLACIER_IR</td>
-    </tr>
-    <tr>
-        <td>GLACIER</td>
-    </tr>
-    <tr>
-        <td>DEEP_ARCHIVE</td>
-        <td>Cold Archive</td>
-    </tr>
-</table>
+> [!tabs]
+> 3-AZ regions
+>> <table>
+>>     <tr>
+>>         <th>AWS</th>
+>>         <th>OVHcloud before 2026-01-03</th>
+>>         <th>OVHcloud from 2026-01-03</th>
+>>     </tr>
+>>     <tr>
+>>         <td>EXPRESS_ONEZONE</td> 
+>>         <td>High Performance</td>
+>>         <td>High Performance</td>
+>>     </tr>
+>>     <tr>
+>>         <td>STANDARD</td>
+>>         <td rowspan=3>Standard</td>
+>>         <td rowspan=3>Standard</td>
+>>     </tr>
+>>     <tr>
+>>         <td>INTELLIGENT_TIERING</td>
+>>     </tr>
+>>     <tr>
+>>         <td>default<sup>2</sup></td>
+>>     </tr>
+>>     <tr>
+>>         <td>STANDARD_IA</td>
+>>         <td rowspan=4>Infrequent Access</td>
+>>         <td rowspan=2>Infrequent Access</td>
+>>     </tr>
+>>     <tr>
+>>         <td>ONEZONE_IA</td>
+>>     </tr>
+>>     <tr>
+>>         <td>GLACIER_IR</td>
+>>         <td rowspan=2>Active Archive</td>
+>>     </tr>
+>>     <tr>
+>>         <td>GLACIER</td>
+>>     </tr>
+>>     <tr>
+>>         <td>DEEP_ARCHIVE</td>
+>>         <td>Cold Archive<sup>3</sup></td>
+>>         <td>Cold Archive<sup>3</sup></td>
+>>     </tr>
+>> </table>
+> 1-AZ regions
+>> <table>
+>>     <tr>
+>>         <th>AWS</th>
+>>         <th>OVHcloud</th>
+>>     </tr>
+>>     <tr>
+>>         <td>EXPRESS_ONEZONE</td> 
+>>         <td>High Performance</td>
+>>     </tr>
+>>     <tr>
+>>         <td>STANDARD</td>
+>>         <td rowspan=3>Standard</td>
+>>     </tr>
+>>     <tr>
+>>         <td>INTELLIGENT_TIERING</td>
+>>     </tr>
+>>     <tr>
+>>         <td>default<sup>2</sup></td>
+>>     </tr>
+>>     <tr>
+>>         <td>STANDARD_IA</td>
+>>         <td rowspan=5>Infrequent Access</td>
+>>     </tr>
+>>     <tr>
+>>         <td>ONEZONE_IA</td>
+>>     </tr>
+>>     <tr>
+>>         <td>GLACIER_IR</td>
+>>     </tr>
+>>     <tr>
+>>         <td>GLACIER</td>
+>>     </tr>
+>>     <tr>
+>>         <td>DEEP_ARCHIVE</td>
+>>     </tr>
+>> </table>
 
 _<sup>2</sup>: The default storage class on the **io** endpoint will be Standard, i.e. if you don't specify a storage class, your object will be stored in our Standard tier._
 
 The mapping for **READ(GET/LIST/HEAD)** operations on the **io** endpoint is the following:
 
-<table>
-    <tr>
-        <th>AWS</th>
-        <th>OVHcloud</th>
-    </tr>
-    <tr>
-        <td>EXPRESS_ONEZONE</td> 
-        <td>High Performance</td>
-    </tr>
-    <tr>
-        <td>STANDARD</td>
-        <td>Standard</td>
-    </tr>
-    <tr>
-        <td>STANDARD_IA</td>
-        <td>Standard, Infrequent Access</td>
-    </tr>
-    <tr>
-        <td>DEEP_ARCHIVE</td>
-        <td>Cold Archive</td>
-    </tr>
-</table>
+> [!tabs]
+> 3-AZ regions
+>> <table>
+>>     <tr>
+>>         <th>AWS</th>
+>>         <th>OVHcloud before 2026-01-03</th>
+>>         <th>OVHcloud from 2026-01-03</th>
+>>     </tr>
+>>     <tr>
+>>         <td>EXPRESS_ONEZONE</td> 
+>>         <td>High Performance</td>
+>>         <td>High Performance</td>
+>>     </tr>
+>>     <tr>
+>>         <td>STANDARD</td>
+>>         <td>Standard</td>
+>>         <td>Standard</td>
+>>     </tr>
+>>     <tr>
+>>         <td>STANDARD_IA</td>
+>>         <td>Infrequent Access</td>
+>>         <td>Infrequent Access</td>
+>>     </tr>
+>>      <tr>
+>>         <td>GLACIER_IR</td>
+>>      <td>-</td>
+>>         <td>Active Archive</td>
+>>     </tr>
+>>     <tr>
+>>         <td>DEEP_ARCHIVE</td>
+>>         <td>Cold Archive<sup>3</sup></td>
+>>         <td>Cold Archive<sup>3</sup></td>
+>>     </tr>
+>> </table>
+> 1-AZ regions
+>> <table>
+>>     <tr>
+>>         <th>AWS</th>
+>>         <th>OVHcloud</th>
+>>     </tr>
+>>     <tr>
+>>         <td>EXPRESS_ONEZONE</td> 
+>>         <td>High Performance</td>
+>>     </tr>
+>>     <tr>
+>>         <td>STANDARD</td>
+>>         <td>Standard</td>
+>>     </tr>
+>>     <tr>
+>>         <td>STANDARD_IA</td>
+>>         <td>Infrequent Access</td>
+>>     </tr>
+>> </table>
 
+
+_<sup>3</sup>: The Cold Archive storage class is only available in Paris (`eu-west-par`).
 
 > [!warning]
-> Unlike AWS, Express One Zone is treated as a regular storage class by OVHcloud and all our supported S3 compatible features and API operations are available.
+> Unlike AWS, Express One Zone is treated as a regular storage class by OVHcloud and all our supported S3-compatible features and API operations are available.
 
-### Endpoint retrocompatibility
+### Endpoint backward compatibility
 
 > [!warning]
-> The **perf** endpoint will be maintained for backward compatibility purposes only, to allow tools that don't support AWS's recent Express_One_Zone storage class to continue operating on our object storage thus we strongly encourage you to migrate to the target **io** endpoint whenever possible.
+> The **perf** endpoint is maintained for backward compatibility purposes only, to allow tools that don't support AWS's recent Express_One_Zone storage class to continue operating on our Object Storage. We strongly encourage you to migrate to the **io** endpoint whenever possible.
 
-Although the **io** endpoint is be the preferred endpoint to access the OVHcloud Object Storage service, the **legacy** endpoint `https://s3.<region>.perf.cloud.ovh.net` will still be maintained for retrocompatibility purposes for tools and applications that do not support the latest AWS Express One Zone storage class. This legacy endpoint will also be able to address all buckets and all objects in both Standard and High Performance storage classes and will support all API operations including `listBucket`.
+Although the **io** endpoint is the preferred endpoint to access OVHcloud Object Storage, the legacy endpoint `https://s3.<region>.perf.cloud.ovh.net` is maintained for backward compatibility for tools and applications that do not support the latest AWS Express One Zone storage class. This legacy endpoint can also address all buckets and all objects in both Standard and High Performance storage classes and supports all API operations, including `listBucket`.
 
 The mapping for **WRITE(PUT)** operations on the **perf** endpoint is the following:
 
@@ -242,10 +312,10 @@ The mapping for **WRITE(PUT)** operations on the **perf** endpoint is the follow
         <td>STANDARD</td>
     </tr>
     <tr>
-        <td>default<sup>3</sup></td>
+        <td>default<sup>4</sup></td>
     </tr>
     <tr>
-         <td>STANDARD_IA</td>
+        <td>STANDARD_IA</td>
         <td rowspan=3>Standard</td>
     </tr>
     <tr>
@@ -256,18 +326,17 @@ The mapping for **WRITE(PUT)** operations on the **perf** endpoint is the follow
     </tr>
     <tr>
         <td>GLACIER_IR</td>
-        <td rowspan=2>Standard, Infrequent Access</td>
+        <td rowspan=3>Infrequent Access</td>
     </tr>
     <tr>
         <td>GLACIER</td>
     </tr>
     <tr>
         <td>DEEP_ARCHIVE</td>
-        <td>Cold Archive</td>
     </tr>
 </table>
 
-_<sup>3</sup>: The default storage tier on the **perf** endpoint will be High Performance, i.e. if you don't specify a storage class, your object will be stored in our High Performance tier._
+_<sup>4</sup>: The default storage tier on the **perf** endpoint will be High Performance, i.e. if you don't specify a storage class, your object will be stored in our High Performance tier._
 
 The mapping for **READ(GET/LIST/HEAD)** operations on the **perf** endpoint is the following:
 
@@ -286,19 +355,16 @@ The mapping for **READ(GET/LIST/HEAD)** operations on the **perf** endpoint is t
     </tr>
     <tr>
         <td>GLACIER_IR</td>
-        <td>Standard, Infrequent Access</td>
-    </tr>
-    <tr>
-        <td>DEEP_ARCHIVE</td>
-        <td>Cold Archive</td>
+        <td>Infrequent Access</td>
     </tr>
 </table>
+
 
 ## Object Storage Swift
 
 | Storage solution | endpoint URL | Region available<br><b><i>To be entered in lower case</i></b> |
 | ------ | ------ | ------ |
-| Object Storage SWIFT - Standard - Legacy |`https://s3.<region>.cloud.ovh.net` | Strasbourg: sbg<br>London: uk<br>Frankfurt: de<br>Warsaw: waw<br>Beauharnois: bhs<br>Gravelines: gra |
+| Object Storage Swift - Standard - Legacy | `https://s3.<region>.cloud.ovh.net` | Strasbourg: sbg<br>London: uk<br>Frankfurt: de<br>Warsaw: waw<br>Beauharnois: bhs<br>Gravelines: gra |
 
 ## Go further
 

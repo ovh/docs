@@ -1,7 +1,7 @@
 ---
 title: "Augmenter la taille d’un disque supplémentaire"
 excerpt: "Découvrez comment augmenter la taille d'un volume supplémentaire et agrandir sa partition principale"
-updated: 2025-04-28
+updated: 2026-02-26
 ---
 
 <style>
@@ -28,8 +28,18 @@ Si vous avez atteint la capacité maximale de votre disque supplémentaire, vous
 
 - Une [instance Public Cloud](/links/public-cloud/compute) dans votre projet Public Cloud.
 - Un [disque supplémentaire](/pages/public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance) créé dans votre projet.
-- Être connecté à votre [espace client OVHcloud](/links/manager).
 - Avoir un accès administratif (sudo) à votre instance via SSH (Linux) ou RDP (Windows).
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Projets Public Cloud](/links/control-panel/publiccloud-projects)
+- **Pour accéder à vos services :** `Public Cloud`{.action} > Sélectionnez votre projet
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## En pratique
 
@@ -99,7 +109,7 @@ Pour vous assurer de redimensionner votre disque au bon moment, il est essentiel
 
 ### Modifier la taille du disque
 
-Connectez-vous à [l’espace client OVHcloud](/links/manager), rendez-vous dans la section `Public Cloud`{.action} et sélectionnez le projet Public Cloud concerné. Cliquez ensuite sur `Block Storage`{.action} dans le menu de gauche sous **Storage & Backup**.
+Cliquez sur `Block Storage`{.action} dans le menu de gauche sous **Storage & Backup**.
 
 Si le volume est attaché à une **instance Windows**, cliquez sur le bouton `...`{.action} à droite du volume concerné et sélectionnez `Détacher de l'instance`{.action}.
 
@@ -110,8 +120,6 @@ Cliquez sur le bouton `...`{.action} à droite du volume concerné et sélection
 Dans la fenêtre qui apparaît, indiquez la nouvelle taille du volume et cliquez sur `Modifier le volume`{.action}.
 
 ![tableau de bord](images/increase-disk-03.png){.thumbnail}
-
-Assurez-vous que le volume est attaché à votre instance avant de continuer. Si ce n'est pas le cas, cliquez sur `...`{.action} dans la ligne du volume et sélectionnez `Attacher à l'instance`{.action}.
 
 ### Etendre la partition (instance Linux)
 
@@ -205,7 +213,11 @@ tmpfs 982M 0 982M 0% /sys/fs/cgroup
 /dev/vdb1 69G 52M 66G 1% /mnt/disk
 ```
 
+Une fois cette opération terminée, détachez le volume de l'instance et rattachez-le afin de vous assurer que les paramètres QoS mis à jour (IOPS et bande passante) soient correctement appliqués.
+
 ### Etendre la partition (instance Windows)
+
+Avant de continuer, rattachez le volume à l'instance. Cliquez sur `...`{.action} dans la ligne du volume et sélectionnez `Attacher à l'instance`{.action}.
 
 Établissez une connexion RDP (Remote Desktop) sur votre instance Windows.
 
@@ -234,6 +246,8 @@ Cliquez sur `Terminer`{.action} pour terminer le processus.
 Le volume redimensionné inclut désormais l'espace disque supplémentaire.
 
 ![windows](images/resize-win-05.png){.thumbnail}
+
+Une fois cette opération terminée, détachez le volume de l'instance et rattachez-le afin de vous assurer que les paramètres QoS mis à jour (IOPS et bande passante) soient correctement appliqués.
 
 ## Aller plus loin
 

@@ -1,7 +1,7 @@
 ---
 title: Object Storage - Gestion intelligente du stockage avec des règles lifecycle
 excerpt: "Découvrez comment optimiser vos coûts de stockage avec les règles lifecycle d'OVHcloud"
-updated: 2025-12-29
+updated: 2026-04-08
 ---
 
 <style>
@@ -29,9 +29,9 @@ details[open]>summary::before {
 
 ## Introduction
 
-### Qu'est ce qu'un lifecycle ?
+### Qu'est-ce qu'un lifecycle ?
 
-Le bucket lifecycle dans OVHcloud Object Storage est une fonctionnalité qui vous permet d'optimiser vos coûts de stockages en gérant vos objets tout au long de leur cycle de vie (**lifecycle**). En téléchargeant une configuration de lifecycle vers un bucket, vous définissez un ensemble de règles que la solution Object Storage applique aux objets du bucket en question pour effectuer des actions spécifiques.
+Le bucket lifecycle dans OVHcloud Object Storage est une fonctionnalité qui vous permet d'optimiser vos coûts de stockage en gérant vos objets tout au long de leur cycle de vie (**lifecycle**). En téléversant une configuration de lifecycle vers un bucket, vous définissez un ensemble de règles que la solution Object Storage applique aux objets du bucket pour effectuer des actions spécifiques.
 
 Il y a 2 types d'actions qu'OVHcloud Object Storage effectue sur vos objets :
 
@@ -40,11 +40,11 @@ Il y a 2 types d'actions qu'OVHcloud Object Storage effectue sur vos objets :
 
 ### Exemples de cas d'usage
 
-En tirant parti de la fonctionnalité de configuration du lifecycle, vous pouvez demander à OVHcloud Object Storage de :
+La configuration du lifecycle vous permet de demander à OVHcloud Object Storage de :
 
-- **nettoyer les téléchargements multi-parties incomplets** : supposons que vous ayez téléchargé un grand nombre d'objets volumineux (>5GB) en utilisant des téléchargements multi-parties, mais que pour certaines raisons, pour de nombreux objets, le téléchargement multi-parties ne s'est pas terminé avec succès. Dans ce cas, même si vous n'avez pas téléchargé toutes les parties d'un objet, vous devez quand même payer le coût de stockage des parties téléchargées. Dans ce cas, vous pourriez vouloir nettoyer les parties de tous les téléchargements multi-parties incomplets afin d'économiser de l'argent.
+- **nettoyer les téléversements multi-parties incomplets** : supposons que vous ayez téléversé un grand nombre d'objets volumineux (>5GB) en utilisant des téléversements multi-parties, mais que pour certaines raisons, pour de nombreux objets, le téléversement multi-parties ne s'est pas terminé avec succès. Dans ce cas, même si vous n'avez pas téléversé toutes les parties d'un objet, vous devez quand même payer le coût de stockage des parties téléversées. Dans ce cas, vous pourriez vouloir nettoyer les parties de tous les téléversements multi-parties incomplets afin d'économiser de l'argent.
 - **nettoyer les anciennes données inutilisées** : supposons que vous ayez une application qui stocke ses logs dans un bucket. Votre organisation peut définir une politique de conservation des logs de 30 jours. Passé ce délai, les logs ne sont plus nécessaires et vous voudrez peut-être les supprimer pour économiser de l'argent.
-- **optimiser les coûts de stockage en transférant les données rarement consultées vers un niveau de stockage moins coûteux** : supposons que vous ayez certains fichiers qui sont souvent utilisés pendant une brève période avant d'être à peine réutilisés. Il se peut que vous n'ayez plus besoin d'y accéder immédiatement, mais votre organisation ou la législation peut vous obliger à les conserver pendant un certain temps. Une fois ce délai écoulé, vous pouvez les supprimer pour économiser de l'argent.
+- **optimiser les coûts de stockage en transférant les données rarement consultées vers un niveau de stockage moins coûteux** : supposons que vous ayez certains fichiers qui sont souvent utilisés pendant une brève période avant d'être à peine réutilisés. Vous n'aurez peut-être plus besoin d'y accéder immédiatement, mais votre organisation ou la législation peut vous obliger à les conserver pendant un certain temps. Une fois ce délai écoulé, vous pouvez les supprimer pour économiser de l'argent.
 
 ### Considérations particulières
 
@@ -52,7 +52,7 @@ Lorsqu'un objet atteint la fin de sa durée de vie selon la configuration de son
 
 - **non versionné** : il n'existe qu'une seule version de l'objet, la version courante, et elle est supprimée définitivement.
 - **versionné** : un marqueur de suppression est créé et devient la version courante. Vous pouvez également choisir le nombre d'anciennes versions que vous souhaitez conserver. Si la version courante de l'objet est la seule version de l'objet et qu'il s'agit également d'un marqueur de suppression, ce dernier sera supprimé.
-- **versioning suspendu** : actuellement, nous ne permettons pas la suspension du versioning si vous avez une configuration de lifecycle en vigueur. De la même manière, nous ne permettons pas le téléchargement d'une configuration de lifecycle si le versioning est suspendu sur le bucket.
+- **versioning suspendu** : actuellement, nous ne permettons pas la suspension du versioning si vous avez une configuration de lifecycle en vigueur. De la même manière, nous ne permettons pas le téléversement d'une configuration de lifecycle si le versioning est suspendu sur le bucket.
 
 ## Expiration
 
@@ -83,7 +83,7 @@ Dans un bucket versionné, chaque objet a une version courante et zéro ou plusi
 > La version 1 de la configuration d'un lifecycle (avec l'attribut Prefix en dehors de Filter) est obsolète. Nous tolérons la version 1 en transformant automatiquement le json pour qu'il corresponde au format de la version 2. Cependant, nous vous conseillons vivement de n'utiliser que la version 2, comme décrit ci-dessous.
 >
 
-/// details | Voici la structure de base d'une configuration JSON pour un lifecycle contenant des règles d'expiration
+Voici la structure de base d'une configuration JSON pour un lifecycle contenant des règles d'expiration
 
 
 ```json
@@ -142,18 +142,17 @@ Dans un bucket versionné, chaque objet a une version courante et zéro ou plusi
 | Filter.ObjectSizeGreaterThan                        | non       | Taille minimale de l'objet auquel la règle s'applique. |
 | Filter.ObjectSizeLessThan                           | non       | Taille maximale de l'objet auquel la règle s'applique. |
 | Filter.And                                          | non       | Vous pouvez appliquer plusieurs critères de sélection dans le filtre. Un AND logique s'applique à plusieurs critères de filtrage. |
-| Filter.And.Tags                                     | non       | Un tableau de filtres de tag. Tout les tags du tableau doivent exister dans les tags de l'objet pour que la règle s'applique. |
+| Filter.And.Tags                                     | non       | Un tableau de filtres de tag. Tous les tags du tableau doivent exister dans les tags de l'objet pour que la règle s'applique. |
 | Expiration                                          | oui*     | Une action de lifecycle qui applique une opération de suppression à l'ensemble des objets filtrés. <br><br> ⚠️ Obligatoire si Transitions ou AbortIncompleteMultipartUpload n'est pas présent. |
 | Expiration.Date                                     | non*      | Indique la date à laquelle les objets doivent être supprimés. La valeur de la date doit être au format ISO 8601 et l'heure doit toujours être fixée à minuit UTC. <br><br> ⚠️ Cet attribut n'est pas obligatoire si Days est présent.  <br> ⚠️ Cet attribut s'exclut mutuellement avec Days, c'est-à-dire que vous avez soit Date, soit Days, mais vous ne pouvez pas spécifier les deux. |
 | Expiration.Days                                     | oui*     | Indique la durée en jours après laquelle les objets doivent être supprimés. La valeur doit être un nombre entier égal ou supérieur à 1. <br><br> ⚠️ Cet attribut est obligatoire si Date n'est pas présent. <br> ⚠️ Cet attribut s'exclut mutuellement avec Date, c'est-à-dire que vous avez soit Date, soit Days, mais vous ne pouvez pas spécifier les deux. |
 | Expiration.ExpiredObjectDeleteMarker                | non       | Indique si OVHcloud Object Storage doit immédiatement supprimer les marqueurs de suppression qui n'ont pas de versions non courantes (marqueurs de suppression expirés). <br><br> ⚠️ Vous ne pouvez pas spécifier Days ou Date avec ExpiredObjectDeleteMarker dans la même règle. Lorsque vous spécifiez Days/Date, les marqueurs de suppression expirés sont automatiquement supprimés comme des objets normaux lorsqu'ils satisfont aux critères d'âge. ExpiredObjectDeleteMarker est utilisé pour nettoyer les marqueurs de suppression dès qu'ils deviennent la seule version. Vous devez créer une règle séparée avec uniquement l'attribut ExpiredObjectDeleteMarker dans Expiration. <br> ⚠️ Lorsque vous utilisez l'action de lifecycle ExpiredObjectDeleteMarker, la règle ne peut pas spécifier un filtre basé sur un tag. |
-| NoncurrentVersionExpiration                         | non       | Une Action de lifecycle qui indique quand les versions d'objets non courantes doivent être supprimées. Cette action n'affecte pas les versions courantes. Elle supprime uniquement les versions qui ne sont pas à jour. |
+| NoncurrentVersionExpiration                         | non       | Une action de lifecycle qui indique quand les versions d'objets non courantes doivent être supprimées. Cette action n'affecte pas les versions courantes. Elle supprime uniquement les versions qui ne sont pas à jour. |
 | NoncurrentVersionExpiration.NoncurrentDays          | non       | Indique le nombre de jours avant qu'une version non courante soit éligible à la suppression après qu'elle soit devenue non courante, c'est-à-dire l'âge minimum d'une version non courante. |
 | NoncurrentVersionExpiration.NewerNoncurrentVersions | non       | Indique le nombre de versions non courantes les plus récentes à conserver. Le maximum est de 100. <br><br> Exemple: <br> Supposons que vous ayez un objet B avec 10 versions : <br> - B v10 (current version, creation date: 2024-10-23) <br> - B v9 (non-current version, creation date: 2024-10-22) <br> - B v8 (non-current version, creation date: 2024-10-21) <br> - B v7 (non-current version, creation date: 2024-10-20) <br> - B v6 (non-current version, creation date: 2024-10-19) <br> - B v5 (non-current version, creation date: 2024-10-18) <br> - B v4 (non-current version, creation date: 2024-10-17) <br> - B v3 (non-current version, creation date: 2024-10-16) <br> - B v2 (non-current version, creation date: 2024-10-15) <br> - B v1 (non-current version, creation date: 2024-10-14) <br><br> Si **NewerNoncurrentVersions**=3, la règle de lifecycle supprimera toutes les versions non courantes à l'exception des trois plus récentes, à savoir v9, v8 et v7. |
-| AbortIncompleteMultipartUpload                      | non       | Une action de lifecycle qui applique une opération de suppression sur les parties d'un téléchargement multi-parties incomplet. |
-| AbortIncompleteMultipartUpload.DaysAfterInitiation  | non       | Indique le nombre de jours après lequel toutes les parties de tous les téléchargements multi-parties incomplets sont supprimées et interrompt les téléchargements multi-parties sous-jacents. |
+| AbortIncompleteMultipartUpload                      | non       | Une action de lifecycle qui applique une opération de suppression sur les parties d'un téléversement multi-parties incomplet. |
+| AbortIncompleteMultipartUpload.DaysAfterInitiation  | non       | Indique le nombre de jours après lequel toutes les parties de tous les téléversements multi-parties incomplets sont supprimées et interrompt les téléversements multi-parties sous-jacents. |
 
-///
 
 ### Comprendre le paramètre NoncurrentDays
 
@@ -200,7 +199,7 @@ Si la date actuelle est 2024-10-29 et **NoncurrentDays**=5, la règle de lifecyc
 
 Si un objet est programmé pour être supprimé, un appel HEAD-OBJECT renvoie un en-tête de réponse http spécial x-amz-expiration qui contient un timestamp indiquant sa date d'expiration et un identifiant de la règle du lifecycle qui a été appliquée.
 
-Le format de l'en-tête est le suivant : `x-amz-expiration: expiry-date=<timestamp>, rule-id=<rule-id>`
+Le format de l'en-tête est le suivant : `x-amz-expiration: expiry-date=<timestamp>, rule-id=<rule_id>`
 
 - expiry-date : obtenue en additionnant la date de création et le délai d'expiration
 - rule-id : l'identifiant de la règle correspondante qui déclenche la suppression
@@ -220,7 +219,7 @@ x-amz-expiration: expiry-date="Fri, 21 Dec 2024 00:00:00 GMT", rule-id="12345678
 **Exemple** : Obtenir la date d'expiration via le CLI
 
 ```bash
-~$ aws s3api head-object --bucket $bucket --key $object_name
+aws s3api head-object --bucket <bucket_name> --key <object_key>
 {
   ...
   "Expiration" : "expiry-date=\"Fri, 21 Dec 2024 00:00:00 GMT\", rule-id=\"123456789\"",
@@ -232,7 +231,8 @@ x-amz-expiration: expiry-date="Fri, 21 Dec 2024 00:00:00 GMT", rule-id="12345678
 
 /// details | Supprimer tous les objets d'un bucket non versionné
 
-Étant donné que le bucket n'est pas versionné, la configuration suivante supprimera définitivement tous les objets du bucket au bout de 30 jours :
+Étant donné que le bucket n'est pas versionné, la configuration suivante supprimera définitivement tous les objets du bucket au bout de 1 jour.
+Cependant, si vous avez des téléversements multi-parties incomplets, ceux-ci ne seront pas supprimés : pour vider complètement votre bucket, vous aurez besoin de règles supplémentaires.
 
 ```json
 {
@@ -242,7 +242,7 @@ x-amz-expiration: expiry-date="Fri, 21 Dec 2024 00:00:00 GMT", rule-id="12345678
       "Status": "Enabled",
       "Filter": { },
       "Expiration": {
-        "Days": 30
+        "Days": 1
       }
     }
   ]
@@ -251,9 +251,9 @@ x-amz-expiration: expiry-date="Fri, 21 Dec 2024 00:00:00 GMT", rule-id="12345678
 
 ///
 
-/// details | Abandonner les téléchargements multi-parties incomplets
+/// details | Abandonner les téléversements multi-parties incomplets
 
-La configuration suivante demandera à OVHcloud Object Storage d'annuler tous les téléchargements incomplets identifiés par le préfixe « /mpus » et de supprimer les parties déjà téléchargées dans les 7 jours suivant leur lancement :
+La configuration suivante demandera à OVHcloud Object Storage d'annuler tous les téléversements incomplets identifiés par le préfixe « /mpus » et de supprimer les parties déjà téléversées dans les 7 jours suivant leur lancement :
 
 ```json
 {
@@ -319,7 +319,7 @@ Dans la configuration suivante, il y a 2 règles de lifecycle :
 - La règle « 123456 » supprime définitivement tous les objets tagués « age » avec la valeur « old » 30 jours après leur création.
 - La règle « 456789 » supprime définitivement tous les objets tagués « type » avec la valeur « logs » 65 jours après leur création.
 
-Si un objet porte les deux tags, c'est-à-dire si un objet est tagué « âge » avec la valeur « old » et « type » avec la valeur « logs », la première règle s'appliquera après 30 jours et la deuxième règle sera alors ignorée parce que l'objet aura déjà été retiré.
+Si un objet porte les deux tags, c'est-à-dire si un objet est tagué « age » avec la valeur « old » et « type » avec la valeur « logs », la première règle s'appliquera après 30 jours et la deuxième règle sera alors ignorée parce que l'objet aura déjà été retiré.
 
 ```json
 {
@@ -344,7 +344,8 @@ Si un objet porte les deux tags, c'est-à-dire si un objet est tagué « âge »
         "Tag": {
            "Key": "type",
            "Value": "logs"
-        }       },
+        }
+      },
       "Expiration": {
         "Days": 65
       }
@@ -355,12 +356,9 @@ Si un objet porte les deux tags, c'est-à-dire si un objet est tagué « âge »
 
 ///
 
-/// details | Expirer des objets dans un bucket versionné
+/// details | Vider un bucket non-versionné
 
-Dans un bucket versionné, la configuration suivante effectue ces actions :
-
-- Après 45 jours, tous les objets portant le préfixe « old/ » expirent automatiquement en créant des marqueurs de suppression pour chacune des versions courantes de l'objet : la version courante devient non courante et le marqueur de suppression devient la version courante.
-- Toutes les versions non courantes datant de plus de 15 jours des objets sélectionnés sont alors supprimées, à l'exception des 3 versions non courantes les plus récentes. S'il y a moins de 3 versions non courantes, l'action NoncurrentVersionExpiration ne sera pas appliquée.
+Étant donné que le bucket n'est pas versionné, la configuration suivante supprimera définitivement tous les objets et les téléversements multi-parties incomplets du bucket au bout de 1 jour:
 
 ```json
 {
@@ -368,15 +366,62 @@ Dans un bucket versionné, la configuration suivante effectue ces actions :
     {
       "ID": "123456",
       "Status": "Enabled",
-      "Filter": {
-        "Prefix": "old/"
-      },
+      "Filter": { },
       "Expiration": {
-        "Days": 45
+        "Days": 1
+      }
+    },
+    {
+      "ID": "78910",
+      "Status": "Enabled",
+      "Filter": { },
+      "AbortIncompleteMultipartUpload": {
+        "DaysAfterInitiation": 1
+      }
+    }
+  ]
+}
+```
+
+///
+
+/// details | Vider un bucket versionné.
+
+Dans la configuration suivante, il existe 3 règles de cycle de vie :
+
+- la première règle expirera (insérera un marqueur de suppression) la version courante de tous les objets 1 jour après leur date de création et supprimera définitivement toutes les versions non courantes 1 jour après qu'elles soient devenues non courantes
+- la deuxième règle supprimera automatiquement tous les marqueurs de suppression expirés
+- la troisième règle supprimera automatiquement tous les téléversements multi-parties incomplets 1 jour après leur date de création
+
+```json
+
+{
+  "Rules": [
+    {
+      "ID": "123456",
+      "Status": "Enabled",
+      "Filter": { },
+      "Expiration": {
+        "Days": 1
       },
       "NoncurrentVersionExpiration": {
-        "NoncurrentDays": 15,
-        "NewerNoncurrentVersions": 3
+        "NoncurrentDays": 1
+      }
+    },
+    {
+      "ID": "654789",
+      "Status": "Enabled",
+      "Filter": { },
+      "Expiration": {
+        "ExpiredObjectDeleteMarker": true
+      }
+    },
+    {
+      "ID": "963852",
+      "Status": "Enabled",
+      "Filter": { },
+      "AbortIncompleteMultipartUpload": {
+        "DaysAfterInitiation": 1
       }
     }
   ]
@@ -396,12 +441,13 @@ Dans un bucket versionné, la configuration suivante effectue ces actions :
 
 Les transitions actuellement prises en charge sont les suivantes :
 
-| de/vers          | High Performance | Standard  | Infrequent Access |Cold Archive |
-| ---------------- | ---------------- | --------- | -------------------------- |------------ |
-| High Performance |        -         | oui       |             oui            | oui          |
-| Standard         | interdit        | -         |             oui            | oui          |
-| Infrequent Access         | interdit        | interdit         |             -            | oui          |
-| Cold Archive     | interdit        | interdit |             interdit      | -           |
+| de/vers          | High Performance | Standard  | Infrequent Access |Active Archive | Cold Archive  |
+| ---------------- | ---------------- | --------- | ----------------- |-------------- | ------------- |
+| High Performance |        -         | oui       |    oui            | oui           | oui           |
+| Standard         | interdit         | -         |    oui            | oui           | oui           |
+| Infrequent Access| interdit         | interdit  |    -              | oui           | oui           |
+| Active Archive   | interdit         | interdit  |    interdit       | -             | oui           |
+| Cold Archive     | interdit         | interdit  |    interdit       | interdit      | -             |
 
 ### Taille minimale de l'objet
 
@@ -446,7 +492,7 @@ Comme nous l'avons déjà mentionné, lorsque vous avez plusieurs règles dans u
 
 ### Configuration
 
-/// details | Voici la structure de base d'une configuration d'un lifecycle JSON contenant des règles de transition :
+Voici la structure de base d'une configuration d'un lifecycle JSON contenant des règles de transition :
 
 ```json
 {
@@ -475,15 +521,14 @@ Comme nous l'avons déjà mentionné, lorsque vous avez plusieurs règles dans u
 
 | Attribut                                             | Requis   | Description 
 | ---------------------------------------------------- | -------- | ------------
-| Transitions                                          | oui*     | Un tableau d'opérations lifecycle qui copient automatiquement tous les objets sélectionnés de leur niveau de stockage actuel vers le niveau de stockage le plus efficace. |
-| Transitions.Date                                     | no*      | Indique la date à laquelle les objets doivent être transférés. La valeur de la date doit être au format ISO 8601 et l'heure doit toujours être fixée à minuit UTC. <br><br> ⚠️ Cet attribut n'est pas obligatoire si Days est présent. <br> ⚠️ cet attribut s'exclut mutuellement avec Days, c'est-à-dire que vous avez soit Date, soit Days, mais vous ne pouvez pas spécifier les deux. |
+| Transitions                                          | oui*     | Un tableau d'opérations lifecycle qui copient automatiquement tous les objets sélectionnés (seulement les versions courantes si le bucket est versionné) de leur niveau de stockage actuel vers le niveau de stockage le plus efficace. |
+| Transitions.Date                                     | non*     | Indique la date à laquelle les objets doivent être transférés. La valeur de la date doit être au format ISO 8601 et l'heure doit toujours être fixée à minuit UTC. <br><br> ⚠️ Cet attribut n'est pas obligatoire si Days est présent. <br> ⚠️ cet attribut s'exclut mutuellement avec Days, c'est-à-dire que vous avez soit Date, soit Days, mais vous ne pouvez pas spécifier les deux. |
 | Transitions.Days                                     | oui*     | Indique la durée en jours après laquelle les objets doivent être transférés. La valeur doit être un nombre entier égal ou supérieur à 30. <br><br> ⚠️ Cet attribut est obligatoire si Date n'est pas présent. <br> ⚠️ cet attribut s'exclut mutuellement avec Date, c'est-à-dire que vous avez soit Date, soit Days, mais vous ne pouvez pas spécifier les deux. |
 | Transitions.StorageClass                             | oui      | Indique la classe de stockage cible. Actuellement, seul « STANDARD » est disponible. |
-| NoncurrentVersionTransitions                         | no       | Un tableau d'actions de lifecycle qui indique quand les versions d'objets non courantes doivent être transférées. Ces actions n'affectent pas les versions courantes. Elles n'assurent la transition que pour les versions qui ne sont pas courantes. |
-| NoncurrentVersionTransitions.NoncurrentDays          | no       | Indique le nombre de jours avant qu'une version non courante soit éligible à la transition après être devenue non courante, c'est-à-dire l'âge minimum d'une version non courante. |
-| NoncurrentVersionTransitions.NewerNoncurrentVersions | no       | Indique le nombre de versions non courantes les plus récentes à conserver dans leur niveau de stockage actuel. Le maximum est de 100. |
+| NoncurrentVersionTransitions                         | non      | Un tableau d'actions de lifecycle qui indique quand les versions d'objets non courantes doivent être transférées. Ces actions n'affectent pas les versions courantes. Elles n'assurent la transition que pour les versions qui ne sont pas courantes. |
+| NoncurrentVersionTransitions.NoncurrentDays          | non      | Indique le nombre de jours avant qu'une version non courante soit éligible à la transition après être devenue non courante, c'est-à-dire l'âge minimum d'une version non courante. |
+| NoncurrentVersionTransitions.NewerNoncurrentVersions | non      | Indique le nombre de versions non courantes les plus récentes à conserver dans leur niveau de stockage actuel. Le maximum est de 100. |
 
-///
 
 ### Exemples de configurations de transition
 
@@ -520,7 +565,7 @@ La configuration suivante spécifie les actions suivantes :
 - La version courante de tous les objets sera transférée du niveau Haute performance au niveau Standard 30 jours après leur création.
 - Si les objets ont des versions non courantes, toutes les versions non courantes datant de plus de 5 jours seront transférées du niveau Haute performance au niveau Standard.
 
-Dans ce scénario, supposons que vous téléchargiez un objet comportant plusieurs versions :
+Dans ce scénario, supposons que vous téléversiez un objet comportant plusieurs versions :
 
 - v5 (current version, creation date 2024-10-23)
 - v4 (current version, creation date 2024-10-23)
@@ -531,7 +576,7 @@ Dans ce scénario, supposons que vous téléchargiez un objet comportant plusieu
 Si la date actuelle est 2024-10-23 :
 
 - v5 sera transférée 30 jours après le 2024-10-23
-- v1 sera transférée 30 jours après sa date de création (2024-10-18)
+- v1 sera transférée 30 jours après sa date de création (2024-10-17)
 
 ```json
 {
@@ -561,7 +606,7 @@ Si la date actuelle est 2024-10-23 :
 
 /// details | Combinaison d'expiration et de transition
 
-La configuration du lifecycle suivante s'applique à tous les objets dont le préfixe est « old » et dont le tag« type » a pour valeur « logs ». Elle spécifie les actions suivantes :
+La configuration du lifecycle suivante s'applique à tous les objets dont le préfixe est « old » et dont le tag « type » a pour valeur « logs ». Elle spécifie les actions suivantes :
 
 - 30 jours après leur création, les objets seront transférés du niveau High Performance au niveau Standard.
 - 90 jours après leur création, les objets seront supprimés.
@@ -601,10 +646,10 @@ Dans ce scénario, les objets seront stockés dans le niveau haute performance p
 
 /// details | Combinaison de règles d'expiration et de transition avec des règles contradictoires
 
-La configuration suivante du lifecycle est téléchargée dans un bucket non versionné. Elle définit deux règles qui s'appliquent à tous les objets ayant le préfixe « old » et le tag « type » avec la valeur « logs » :
+La configuration suivante du lifecycle est téléversée dans un bucket non versionné. Elle définit deux règles qui s'appliquent à tous les objets ayant le préfixe « old » et le tag « type » avec la valeur « logs » :
 
 - 90 jours après leur création, les objets seront expirés.
-- 90 jours après leur création, les objets seront transitonnés.
+- 90 jours après leur création, les objets seront transitionnés.
 
 Dans ce scénario, deux règles imposent à OVHcloud Object Storage d'effectuer simultanément deux actions différentes sur le même ensemble d'objets. La suppression permanente étant prioritaire sur la transition, les objets sont supprimés au bout de 90 jours et il n'y a plus d'intérêt à changer de classe de stockage.
 
@@ -631,7 +676,7 @@ Dans ce scénario, deux règles imposent à OVHcloud Object Storage d'effectuer 
       "ID": "456789",
       "Status": "Enabled",
       "Filter": {
-            "And":{
+        "And":{
             "Prefix": "old/",
             "Tag": {
               "Key": "type",
@@ -660,37 +705,29 @@ Comme prérequis, vous devez avoir un bucket contenant des données sur lesquell
 
 /// details | Créez un fichier de configuration de lifecycle à l'aide de votre éditeur préféré.
 
-**Exemple** : La configuration suivante vise à vider un bucket après 30 jours.
+**Exemple** : Expirer les objets avec un préfixe spécifique dans un bucket versionné.
+
+La configuration suivante effectue les actions suivantes :
+
+- après 45 jours, elle expire automatiquement tous les objets avec le préfixe « old/ » en créant des marqueurs de suppression pour chacune des versions courantes de l'objet : la version courante devient non courante et le marqueur de suppression devient la version courante.
+- toutes les versions non courantes datant de plus de 15 jours des objets sélectionnés sont ensuite supprimées, à l'exception des 3 versions non courantes les plus récentes. S'il y a moins de 3 versions non courantes, l'action NoncurrentVersionExpiration ne sera pas appliquée.
 
 ```bash
-$ cat lifecycle.json
+cat lifecycle.json
 {
   "Rules": [
     {
       "ID": "123456",
       "Status": "Enabled",
-      "Filter": { },
+      "Filter": {
+        "Prefix": "old/"
+      },
       "Expiration": {
-        "Days": 20
+        "Days": 45
       },
       "NoncurrentVersionExpiration": {
-        "NoncurrentDays": 10
-      }
-    },
-    {
-      "ID": "654789",
-      "Status": "Enabled",
-      "Filter": { },
-      "Expiration": {
-        "ExpiredObjectDeleteMarker": true
-      }
-    },
-    {
-      "ID": "963852",
-      "Status": "Enabled",
-      "Filter": { },
-      "AbortIncompleteMultipartUpload": {
-        "DaysAfterInitiation": 10
+        "NoncurrentDays": 15,
+        "NewerNoncurrentVersions": 3
       }
     }
   ]
@@ -700,7 +737,7 @@ $ cat lifecycle.json
 Transférez le fichier dans le bucket :
 
 ```bash
-$ aws s3api put-bucket-lifecycle-configuration --bucket my-bucket --lifecycle-configuration file://lifecycle.json
+aws s3api put-bucket-lifecycle-configuration --bucket my-bucket --lifecycle-configuration file://lifecycle.json
 ```
 
 ///
@@ -718,9 +755,9 @@ Les règles de cycle de vie sont traitées de manière asynchrone et dans la mes
 
 Lorsqu'une opération de suppression (**expiration**) d'un objet est effectuée dans un bucket versionné, l'objet n'est pas directement supprimé. Un marqueur de suppression est créé sur l'objet. Ce marqueur de suppression devient la version la plus récente de l'objet avec un nouvel identifiant de version, ce qui augmente le nombre d'objets dans le bucket.
 
-Une configuration supplémentaire est nécessaire pour supprimer définitivement les objets, y compris les téléchargements en plusieurs parties *(multipart uploads)* incomplets, les marqueurs de suppression expirés et les versions antérieures des objets.
+Une configuration supplémentaire est nécessaire pour supprimer définitivement les objets, y compris les téléversements en plusieurs parties *(multipart uploads)* incomplets, les marqueurs de suppression expirés et les versions antérieures des objets.
 
-### Comment vider mon bucket S3 à l'aide des règles de cycle de vie ?
+### Comment vider mon bucket S3<sup>1</sup> à l'aide des règles de cycle de vie ?
 
 Pour vider un bucket S3, vous devez prendre en compte les éléments suivants :
 
@@ -751,3 +788,5 @@ Les opérations de suppression résultant de l'application des règles de cycle 
 Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](/links/professional-services) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).
+
+<sup>1</sup> : S3 est une marque déposée appartenant à Amazon Technologies, Inc. Les services de OVHcloud ne sont pas sponsorisés, approuvés, ou affiliés de quelque manière que ce soit.

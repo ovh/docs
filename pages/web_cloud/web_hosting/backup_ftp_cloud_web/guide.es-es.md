@@ -1,7 +1,7 @@
 ---
 title: "Exportar la copia de seguridad del espacio FTP de su hosting Cloud Web"
 excerpt: "Descubra cómo descargar una copia de seguridad del espacio FTP de un alojamiento Cloud Web"
-updated: 2023-11-16
+updated: 2026-03-31
 ---
 
 ## Objetivo
@@ -22,8 +22,18 @@ Su hosting Cloud Web dispone de un espacio de almacenamiento en el que podrá al
 ## Requisitos
 
 - Tener un [hosting Cloud Web.](/links/web/hosting-cloud-web-offer)
-- Haber iniciado sesión en el [área de cliente de OVHcloud](/links/manager).
 - Tener acceso a la dirección de correo electrónico de contacto asociada a su ID de cliente.
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [Alojamientos](/links/control-panel/web-hosting)
+- **Ruta de navegación:** `Web Cloud`{.action} > `Alojamientos`{.action} > Seleccione su alojamiento web
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## Procedimiento
 
@@ -38,40 +48,56 @@ OVHcloud solo podrá ofrecer las copias de seguridad antes mencionadas, siempre 
 
 ### Obtener una copia de seguridad
 
-A diferencia de los alojamientos compartidos de OVHcloud, no es posible restaurar el espacio FTP en un clic desde el [área de cliente de OVHcloud](/links/manager).
+A diferencia de los alojamientos compartidos de OVHcloud, no es posible restaurar el espacio FTP en un clic desde el área de cliente de OVHcloud.
 
 Se genera un enlace de descarga de la copia de seguridad y se envía por correo electrónico a la dirección de correo electrónico asociada al ID de cliente administrador del hosting Cloud Web.
 
-#### Paso 1 - Generar el enlace de recuperación enviado por correo electrónico
+<!-- CP-STEPS-START:access-ftp-backup -->
+Haga clic en las fichas siguientes para ver cada una de las **5** etapas.
 
-Para generar el enlace de recuperación, conéctese al [área de cliente de OVHcloud](/links/manager), acceda a la sección `Web Cloud`{.action}, haga clic en `Alojamientos`{.action} y seleccione el Cloud Web correspondiente. 
+> [!tabs]
+> **Etapa 1**
+>>
+>> Acceda a la página [Alojamientos](/links/control-panel/web-hosting) y seleccione el Cloud Web correspondiente.
+>>
+>> ![Alojamientos](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Etapa 2**
+>>
+>> Seleccione la pestaña `FTP - SSH`{.action} y haga clic en el botón `Generar una copia de seguridad`{.action} a la derecha.
+>>
+>> ![Botón Generar una copia de seguridad](/pages/assets/screens/control_panel/product-selection/web-cloud/cloud-web/ftp-ssh/generate-a-backup.png){.thumbnail}
+>>
+> **Etapa 3**
+>>
+>> En la nueva ventana, seleccione una de las copias de seguridad disponibles y haga clic en `Siguiente`{.action}.
+>>
+>> ![Selección de la copia de seguridad](/pages/assets/screens/control_panel/product-selection/web-cloud/cloud-web/ftp-ssh/generate-a-backup-step-1.png){.thumbnail}
+>>
+> **Etapa 4**
+>>
+>> Se abrirá una segunda ventana indicándole que el enlace de descarga del archivo de backup se enviará por correo electrónico y que OVHcloud no restaurará el alojamiento Cloud Web automáticamente.
+>>
+>> ![Confirmación de generación de la copia de seguridad](/pages/assets/screens/control_panel/product-selection/web-cloud/cloud-web/ftp-ssh/generate-a-backup-step-2.png){.thumbnail}
+>>
+>> Haga clic en `Aceptar`{.action} para confirmar su solicitud.
+>>
+> **Etapa 5**
+>>
+>> Si la generación de la copia de seguridad se ha iniciado correctamente, aparecerá el siguiente mensaje en su área de cliente de OVHcloud:
+>>
+>> ![Mensaje de progreso de la copia de seguridad](/pages/assets/screens/control_panel/product-selection/web-cloud/cloud-web/ftp-ssh/message-backup-progress.png){.thumbnail}
+>>
+>> La generación de la copia de seguridad tarda entre 10 y 15 minutos.
+<!-- CP-STEPS-END:access-ftp-backup -->
 
-Seleccione la pestaña `FTP - SSH`{.action} y haga clic en el botón `Generar una copia de seguridad`{.action} a la derecha.
+### Descargar la copia de seguridad
 
-![backupftpcw](/pages/assets/screens/control_panel/product-selection/web-cloud/cloud-web/ftp-ssh/generate-a-backup.png){.thumbnail}
+Una vez finalizada la generación del backup, recibirá un mensaje de correo electrónico en la dirección asociada al usuario de administrador de su hosting Cloud Web.
 
-En la nueva ventana, seleccione una de las copias de seguridad disponibles y haga clic en `Siguiente`{.action}.
-
-![backupftpcw](/pages/assets/screens/control_panel/product-selection/web-cloud/cloud-web/ftp-ssh/generate-a-backup-step-1.png){.thumbnail}
-
-Se abrirá una segunda ventana en la que deberá indicar que el enlace de recuperación del archivo de backup se enviará por correo electrónico y que OVHcloud no restaurará el alojamiento Cloud Web automáticamente.
-
-![backupftpcw](/pages/assets/screens/control_panel/product-selection/web-cloud/cloud-web/ftp-ssh/generate-a-backup-step-2.png){.thumbnail}
-
-Haga clic en `Confirmar`{.action} para aceptar su solicitud.
-
-Si la generación de la copia de seguridad se ha iniciado correctamente, aparecerá el siguiente mensaje en el [área de cliente de OVHcloud](/links/manager):
-
-![backupftpcw](/pages/assets/screens/control_panel/product-selection/web-cloud/cloud-web/ftp-ssh/message-backup-progress.png){.thumbnail}
-
-La generación de la copia de seguridad tarda entre 10 y 15 minutos en realizarse.
-
-#### Paso 2 - Descargar la copia de seguridad
-
-Una vez finalizada la generación del backup, recibirá un mensaje de correo electrónico en la dirección asociada al usuario de administrador de su hosting Cloud Web.<br>
 El mensaje de correo electrónico incluye un enlace de descarga **válido durante 9 días** desde la recepción del mensaje de correo electrónico:
 
-![backupftpcw](/pages/assets/screens/email-sending-to-customer/cloud-web/backup-information.png){.thumbnail}
+![E-mail de descarga del backup](/pages/assets/screens/email-sending-to-customer/cloud-web/backup-information.png){.thumbnail}
 
 El archivo así descargado está en formato *.tar.gz*.
 

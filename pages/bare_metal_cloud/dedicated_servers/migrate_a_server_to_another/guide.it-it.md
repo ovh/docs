@@ -1,6 +1,6 @@
 ---
-title: Migrare i dati da un server dedicato a un altro
-excerpt: Come migrare i dati da un server dedicato a un altro
+title: "Migrare i dati da un server dedicato a un altro"
+excerpt: "Migra i dati tra server dedicati OVHcloud con rsync, SFTP o il backup storage per una transizione fluida"
 updated: 2021-09-16
 ---
 
@@ -95,4 +95,4 @@ Per maggiori informazioni sulla migrazione del tuo server, contatta [il nostro n
 
 Se avete bisogno di formazione o di assistenza tecnica per implementare le nostre soluzioni, contattate il vostro rappresentante o cliccate su [questo link](/links/professional-services) per ottenere un preventivo e richiedere un'analisi personalizzata del vostro progetto da parte dei nostri esperti del team Professional Services.
 
-Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.
+Contatta la nostra [Community di utenti](/links/community).

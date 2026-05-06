@@ -12,20 +12,31 @@ OVHcloud provides a space for you to view, manage and pay your various bills.
 
 > [!primary]
 >
-> Depending on your place of residence and its local legislation, as well as the products concerned, some details may vary from the information provided in this guide, and some information may not apply to your situation. If you have any doubts, please refer to the OVHcloud contracts available in your [OVHcloud Control Panel](/links/manager) (click on your name in the top right-hand corner of the screen, then `My solutionss & services`{.action} . Finally, click on the `Contracts`{.action}) tab.
+> Depending on your place of residence and its local legislation, as well as the products concerned, some details may vary from the information provided in this guide, and some information may not apply to your situation. If you have any doubts, please refer to the OVHcloud contracts (available on the [Contract list](/links/control-panel/billing-contracts) page).
 >
 
 <iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/iiQmopMhzik" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](/links/manager) as the [Billing contact](/pages/account_and_service_management/account_information/managing_contacts) of your service
+- Being the [Billing contact](/pages/account_and_service_management/account_information/managing_contacts) of your service
+
+<!-- CP-NAV-START:billing-invoices -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [My bills](/links/control-panel/billing-invoices)
+- **Navigation path:** Click your name in the top right > `My bills`{.action}
+
+---
+<!-- CP-NAV-END:billing-invoices -->
 
 ## Instructions
 
 > [!primary]
 >
-> Each invoice is sent to you by email and accessible via a clickable link. You can then access it by logging in to your [OVHcloud Control Panel](/links/manager). All invoices are also available from the homepage of your Control Panel.
+> Each invoice is sent to you by email and accessible via a clickable link. You can then access it on the [My bills](/links/control-panel/billing-invoices) page. All invoices are also available from the homepage of your Control Panel.
 >
 
 ### Understanding your bill
@@ -48,7 +59,8 @@ Your OVHcloud service bill is sent to you following the payment of an order or a
 
 #### View and manage bills
 
-To view your invoices, go to your [OVHcloud Control Panel](/links/manager). Click on your name in the top right-hand corner of your screen, then in the new menu that appears, click on `My bills`{.action}.
+<!-- CP-STEPS-START:view-manage-bills -->
+To view your invoices, open the [My bills](/links/control-panel/billing-invoices) page.
 
 ![Billing](/pages/assets/screens/control_panel/product-selection/right-menu/my-bills.png){.thumbnail}
 
@@ -102,14 +114,17 @@ If you want to export all of your invoices, use the `Export all as CSV`{.action}
 If you want to export only selected invoices, use the corresponding check boxes in the first column of the table to select the invoices you want to export. Two new actions, `Export selection in CSV format`{.action} and `Export selection in PDF format`{.action}, will then be available in the `Batch actions`{.action}.
 
 ![export_selection](images/export_selection.png){.thumbnail}
+<!-- CP-STEPS-END:view-manage-bills -->
 
 #### Pay your bills <a name="pay-bills"></a>
 
+<!-- CP-STEPS-START:pay-bills -->
 To pay bills that are awaiting payment, simply click on the `Batch actions`{.action} menu, then select `Pay balance immediately`{.action}.
 
 ![Pay a due amount](images/pay_debt.png){.thumbnail}
 
 A [settlement purchase order](/pages/account_and_service_management/managing_billing_payments_and_services/managing_ovh_orders#purchase-order) will then be created. Once the payment has been made, your account will be balanced again.
+<!-- CP-STEPS-END:pay-bills -->
 
 #### Request invoice cancellation
 
@@ -118,10 +133,13 @@ A [settlement purchase order](/pages/account_and_service_management/managing_bil
 > To request that your service be cancelled on the expiry date, follow the instructions in [this guide](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_cancel_services).
 >
 
+<!-- CP-STEPS-START:request-cancellation-ticket -->
 If you have received an invoice that you do not consider to be legitimate and you wish to request a refund, or submit your claim click on your name in the top right-hand corner of your screen, then on `Create a ticket`{.action}.
+<!-- CP-STEPS-END:request-cancellation-ticket -->
 
 ### Track your payments
 
+<!-- CP-STEPS-START:track-payments -->
 You can find the payment history in `My bills`{.action} if you click on the `Payment tracking`{.action} tab. You can then link each invoice to the associated payment.
 
 ![Track payments](images/payment_tracking.png){.thumbnail}
@@ -132,6 +150,7 @@ In this section, you can also export your payment receipts in *.csv* format, by 
 >
 > If you notice a discrepancy between a payment and the total amount listed on a bill, it means that an account balance automatically reduced the amount debited.
 >
+<!-- CP-STEPS-END:track-payments -->
 
 ## Go further
 

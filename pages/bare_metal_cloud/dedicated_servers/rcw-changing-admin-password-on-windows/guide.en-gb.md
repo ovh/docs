@@ -1,6 +1,6 @@
 ---
-title: "How to reset the Windows Administrator password with the Windows customer rescue system"
-excerpt: "Find out how to use the OVHcloud Windows rescue mode to reset the password of the Administrator account on a Windows dedicated server"
+title: "Reset a Windows Password on a Dedicated Server"
+excerpt: "Reset the Windows Administrator password on a dedicated server using the OVHcloud Windows customer rescue system."
 updated: 2025-10-22
 ---
 
@@ -12,7 +12,17 @@ This guide will help you to reset your `Administrator` account password with the
 
 - Microsoft Windows Server 2016 or greater installed on your [dedicated server](/links/bare-metal/bare-metal)
 - At least 16 GB of RAM installed on the server
-- Access to the [OVHcloud Control Panel](/links/manager)
+
+<!-- CP-NAV-START:baremetal-dedicated-servers -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Dedicated Servers](/links/control-panel/baremetal-dedicated-servers)
+- **Navigation path:** `Bare Metal Cloud`{.action} > `Dedicated servers`{.action} > Select your server
+
+---
+<!-- CP-NAV-END:baremetal-dedicated-servers -->
 
 > [!warning]
 >
@@ -135,6 +145,7 @@ After this, the server needs to be rebooted on the normal operating system.
 
 ### Step 3 - Reboot the server <a name="step3"></a>
 
+<!-- CP-STEPS-START:reboot-server -->
 First, change the netboot back to "Boot from the hard disk" in your OVHcloud Control Panel (see [step 1](#step1)).
 
 Then restart the server from the Control Panel.
@@ -142,7 +153,12 @@ Then restart the server from the Control Panel.
 Click the `...`{.action} button near "Status" in the "Service Status" section and click `Restart`{.action}.
 
 ![reboot](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/dedicated-servers/general-information/cp_dedicated_restart.png){.thumbnail}
+<!-- CP-STEPS-END:reboot-server -->
 
 ## Go further
+
+[Getting Started with a Dedicated Server](/pages/bare_metal_cloud/dedicated_servers/getting-started-with-dedicated-server)
+
+[Securing a Dedicated Server](/pages/bare_metal_cloud/dedicated_servers/securing-a-dedicated-server)
 
 Join our [community of users](/links/community).

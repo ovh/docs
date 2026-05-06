@@ -17,7 +17,17 @@ W niniejszym przewodniku wyjaśnimy, jak zarządzać politykami wykonywania snap
 ## Wymagania początkowe
 
 - Usługa Enterprise File Storage od OVHcloud z dostępnym wolumenem
-- Dostęp do [Panelu client OVHcloud](/links/manager)
+
+<!-- CP-NAV-START:storage-enterprise-file-storage -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Enterprise File Storage](/links/control-panel/storage-enterprise-file-storage)
+- **Ścieżka nawigacji:** `Bare Metal Cloud`{.action} > `Enterprise File Storage`{.action}
+
+---
+<!-- CP-NAV-END:storage-enterprise-file-storage -->
 
 ## Podstawowe zasady
 
@@ -27,7 +37,7 @@ Polityka wykonywania snapshotów pozwala na zautomatyzowanie tworzenia snapshot�
 
 ## W praktyce
 
-Zaloguj się do [Panelu klienta OVHcloud](/links/manager) i na górnym pasku nawigacji wybierz zakładkę `Bare Metal Cloud`{.action}. Otwórz `Storage i Backup`{.action}, następnie `Enterprise File Storage`{.action} w menu po lewej stronie i wybierz swoją usługę z listy.
+Wybierz Twoją usługę z listy.
 
 ### Utwórz politykę wykonywania snapshotów
 

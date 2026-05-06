@@ -1,6 +1,6 @@
 ---
-title: 'Zmiana hasła administratora na serwerze dedykowanym z systemem Windows'
-excerpt: 'Dowiedz się, jak zmienić hasło administratora na serwerze dedykowanym z systemem Windows'
+title: "Jak zmienić hasło administratora w systemie Windows Server"
+excerpt: "Zmień hasło administratora na serwerze dedykowanym OVHcloud z systemem Windows Server za pomocą pulpitu zdalnego."
 updated: 2024-06-26
 flag: hidden
 ---
@@ -21,7 +21,17 @@ Podczas instalacji lub reinstalacji systemu operacyjnego Windows otrzymujesz has
 ## Wymagania początkowe
 
 - Posiadanie [serwera dedykowanego](/links/bare-metal/bare-metal) z zainstalowanym systemem Windows
-- Dostęp do [panelu klienta OVHcloud](/links/manager).
+
+<!-- CP-NAV-START:baremetal-dedicated-servers -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Bezpośredni link:** [Serwery dedykowane](/links/control-panel/baremetal-dedicated-servers)
+- **Ścieżka nawigacji:** `Bare Metal Cloud`{.action} > `Serwery dedykowane`{.action} > Wybierz swój serwer
+
+---
+<!-- CP-NAV-END:baremetal-dedicated-servers -->
 
 ## W praktyce
 
@@ -261,7 +271,7 @@ System is going down for reboot NOW!
 
 W [Panelu klienta OVHcloud](/links/manager) przejdź do zakładki `IPMI`{.action}, aby otworzyć sesję KVM.
 
-![IPMI](images/adminpw_win_03.png){.thumbnail}
+![Zakładka IPMI w Panelu klienta OVHcloud do dostępu KVM](images/adminpw_win_03.png){.thumbnail}
 
 #### Etap 5.1: dla najnowszej wersji systemu Windows
 
@@ -313,13 +323,13 @@ Aby zresetować hasła, narzędzie NTPWEdit jest niezbędne. Po zalogowaniu się
 
 Przeglądaj do katalogu, w którym znajduje się pobrany plik ZIP i pobierz zawartość. Następnie otwórz plik *ntpwedit64*, aby rozpocząć działanie aplikacji.
 
-![ntpwedit](images/adminpw_win_09.png){.thumbnail}
+![Aplikacja NTPWEdit otwarta w trybie WinRescue](images/adminpw_win_09.png){.thumbnail}
 
 W tym interfejsie możesz manipulować plikiem *SAM*, aby usunąć hasło użytkownika administratora. Domyślna ścieżka dostępu do katalogu *WINDOWS* jest wstępnie wypełniona. Otwórz plik, aby wyświetlić listę użytkowników, klikając przycisk `Otwórz`{.action}.
 
 Użytkownik będzie albo "admin" albo "Administrator", w zależności od wersji systemu Windows. Jeśli oba są obecne, wybierz "admin". Następnie kliknij `Zmień hasło`{.action}.
 
-![ntpwedit](images/adminpw_win_10.png){.thumbnail}
+![NTPWEdit pokazujący listę kont użytkowników Windows](images/adminpw_win_10.png){.thumbnail}
 
 W oknie, które się wyświetli zostaw puste pola i kliknij `OK`{.action}. Zakończ, klikając `Zapisz zmiany`{.action}, a następnie `Opuść`{.action}.
 

@@ -35,7 +35,17 @@ The sender sends an email to the mailing list. The moderator receives an email w
 ## Requirements
 
 - an MX Plan 100 minimum or [web hosting plan](/links/web/hosting) eligible for mailing lists
-- access to the [OVHcloud Control Panel](/links/manager)
+
+<!-- CP-NAV-START:web-mx-plan -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [MX Plan](/links/control-panel/web-mx-plan)
+- **Navigation path:** `Web Cloud`{.action} > `MX Plan`{.action} > Select your MX Plan service
+
+---
+<!-- CP-NAV-END:web-mx-plan -->
 
 ## Instructions
 
@@ -45,13 +55,7 @@ The sender sends an email to the mailing list. The moderator receives an email w
 >
 > A mailing list behaves like an email address. You cannot change its name. If you no longer like the name of a mailing list, you will need to create a new one and delete the old one.
 
-To create a mailing list:
-
-1. Log in to your [OVHcloud Control Panel](/links/manager).
-1. Open the `Web Cloud`{.action} section.
-1. Click `MX Plan`{.action}.
-1. Select the domain concerned.
-1. Go to the `Mailing lists`{.action} tab for your email service.
+To create a mailing list, go to the `Mailing lists`{.action} tab for your email service.
 
 ![emails](images/manage_mailing-lists_01.png){.thumbnail}
 
@@ -248,9 +252,9 @@ Below is a list of files containing the reply texts, and a brief description of 
 
 > [!primary]
 >
-> Example: If you would like to edit the default footer for emails sent to your mailing list, you will need to send an email to the address `name_of_your_ML-edit.bottom@mydomain.ovh`.  You will then receive a new email explaining how to customise the footer.
-> 
+> Example: If you would like to edit the default footer for emails sent to your mailing list, you will need to send an email to the address `name_of_your_ML-edit.bottom@mydomain.ovh`. You will then receive a new email explaining how to customise the footer.
+>
 
-## Go further
+## Go further <a name="go-further"></a>
 
 Join our [community of users](/links/community).

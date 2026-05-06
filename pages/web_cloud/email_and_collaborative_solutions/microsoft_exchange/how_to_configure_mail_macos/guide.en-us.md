@@ -1,7 +1,7 @@
 ---
 title: 'Exchange - Configure your email account on Mail for macOS'
 excerpt: Find out how to configure your Exchange account on macOS Mail
-updated: 2025-04-28
+updated: 2026-01-22
 ---
 
 <style>
@@ -36,17 +36,6 @@ You can configure Exchange accounts on email clients, if they are compatible. By
 
 ### How to add your account <a name="addaccount"></a>
 
-> [!primary]
->
-> In this guide, we use as the hostname: ex?.mail.ovh.ca. You will need to replace the "?" with the actual number indicating the appropriate server for your Email Pro service.
->
-> 1. Log in to your [OVHcloud Control Panel](/links/manager).
-> 1. Open the `Web Cloud`{.action} section.
-> 1. In the `MICROSOFT` section, click `Exchange`{.action}.
-> 1. Select the service concerned.
-> 1. The server name is displayed in the **Connection** box in the `General Information`{.action} tab.
->
-
 - **When you start the application for the first time**: A configuration wizard will appear, prompting you to choose your account type.
 
 - **If an account has already been set up**: Click on `Mail`{.action} in the menu bar at the top of your screen, then on `Accounts`{.action}.
@@ -69,7 +58,7 @@ You can configure Exchange accounts on email clients, if they are compatible. By
 >>
 > **Step 4**
 >>
->> Type: <br><br>- Email address: Leave your full email address.<br>- User name: Leave your full email address. <br>- Password: Leave your **Password**.<br> - Internal URL: **ex?.mail.ovh.ca** (replace **?** with [your Exchange server number](#addaccount))<br>- External URL: **ex?.mail.ovh.ca** (replace **?** with [your Exchange server number](#addaccount))<br><br>
+>> Type: <br><br>- Email address: Leave your full email address.<br>- User name: Leave your full email address. <br>- Password: Leave your **Password**.<br> - Internal URL: **ex.mail.ovh.ca**<br>- External URL: **ex.mail.ovh.ca**<br><br>
 >>
 >> > [!warning]
 >> >
@@ -107,8 +96,6 @@ If your email account is already set up and you need to access the account setti
 > For more information on configuring an email address from the Mail app on macOS, see [the Apple Help Center](https://support.apple.com/en-gb/guide/mail/mail35803/mac).
 
 [FAQ emails](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/faq-emails)
-
-[Configure your Email Pro account on macOS Mail](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_mail_macos)
 
 [Configure your MX Plan email account on macOS Mail](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_mail_macos)
 

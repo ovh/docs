@@ -12,7 +12,7 @@ You can configure Exchange accounts on email clients, if they are compatible. By
 
 ## Requirements
 
-- You must have an [Exchange](/links/web/emails) account.
+- You must have an [Exchange](/links/web/emails-exchange) account.
 - You must have Microsoft Outlook installed on your device.
 - You need to have the required credentials for the email address you would like to configure.
 
@@ -63,7 +63,5 @@ OVHcloud also offers a web application that includes various [collaborative feat
 > For more information about setting up an email address from the Mail on Windows email client, see [Microsoft Help Center](https://support.microsoft.com/en-gb/office/setting-email-in-mail-application-7ff79e8b-439b-4b47-8ff9-3f9a33166c60).
 
 [Configuring an email address included in an MX Plan or web hosting plan on the Mail application for Windows](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_windows_10)
-
-[Configuring your Email Pro account in the Mail app for Windows](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_windows_10)
 
 Join our [community of users](/links/community).

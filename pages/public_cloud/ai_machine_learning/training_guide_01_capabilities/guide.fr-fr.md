@@ -1,11 +1,11 @@
 ---
 title: AI Training - Caractéristiques, capacités et limites (EN)
 excerpt: "Découvrez les principales caractéristiques, capacités et limites de AI Training"
-updated: 2023-11-21
+updated: 2026-01-27
 ---
 
 > [!primary]
->
+> 
 > AI Training is covered by **[OVHcloud Public Cloud Special Conditions](https://storage.gra.cloud.ovh.net/v1/AUTH_325716a587c64897acbef9a4a4726e38/contracts/d2a208c-Conditions_particulieres_OVH_Stack-WE-9.0.pdf)**.
 >
 
@@ -133,7 +133,11 @@ Attached storage allows you to work on several TB of data, while being persisten
 
 #### Maximum execution time
 
-There is no duration limitation on AI Training job execution.
+> [!warning]
+>
+> There is no duration limitation on AI Training job execution.
+>
+> However, by default, your AI Training job will automatically shut down after **7 consecutive days of being in a RUNNING state**. You can also enable **Automatic Restart** to have it restart every 7 days, or contact [our support](/links/support-contact) to extend this period to **28 days**.
 
 ### Pre-installed AI environments
 
@@ -155,7 +159,7 @@ List of available AI Environments:
 
 Each environment can be customized directly with PIP or CONDA (we support almost any package and library).
 
-You can also use your own Docker images.
+You can also use your own Docker images. 
 
 Docker images can be hosted in a public or private registry.
 
@@ -173,19 +177,9 @@ Learn how to build and use your custom Docker image in this [tutorial](/pages/pu
 
 #### Available ports to public network
 
-Each job has a public URL, by default this URL accesses the port 8080 of the job. The default port can be configured when you submit a new job.
+Each AI Training job exposes a public URL that defaults to port `8080`. This default port can be configured when you submit a new job. This URL is mapped to only one port, but you can access other ports than the default one by appending the port number to your job URL. 
 
-You can also access other ports by appending them to the URL.
-
-Job URL for accessing the default port (starting with the job's ID):
-
--   https://00000000-0000-0000-0000-000000000000.job.gra.ai.cloud.ovh.net
-
-Job URL for accessing the port 9000 (starting with the job's ID followed by the port number):
-
--   https://00000000-0000-0000-0000-000000000000-9000.job.gra.ai.cloud.ovh.net
-
-Only the HTTP layer is accessible.
+For example, if you want to access port `9000` from your job, you will have to add `-9000` to your job URL. Your job URL for accessing the `9000` port will then be https://00000000-0000-0000-0000-000000000000-9000.job.gra.ai.cloud.ovh.net/
 
 ### Quotas per Public Cloud project
 

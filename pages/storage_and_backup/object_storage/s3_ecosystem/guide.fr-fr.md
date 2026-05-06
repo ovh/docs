@@ -1,17 +1,17 @@
 ---
 title: Object Storage - Compatibilité avec les applications tierces
 excerpt: "Ce guide fournit une liste d'applications tierces testées et certifiées compatibles avec OVHcloud Object Storage"
-updated: 2025-12-02
+updated: 2026-01-14
 ---
 
 ## Objectif
 
 Chez OVHcloud, nous comprenons l'importance de la compatibilité et de l'interopérabilité avec les outils et logiciels tiers.
-Notre service **Object Storage compatible S3<sup>*</sup>** est conçu pour être flexible et adaptable à divers cas d'utilisation et flux de travail. Ce guide vise à fournir une vue d'ensemble de la compatibilité de notre service de stockage d'objets avec des outils et logiciels tiers populaires, vous aidant ainsi à intégrer notre service de manière transparente dans votre infrastructure existante.
+Notre service **Object Storage compatible S3<sup>1</sup>** est conçu pour être flexible et adaptable à divers cas d'utilisation et flux de travail. Ce guide vise à fournir une vue d'ensemble de la compatibilité de notre service de stockage d'objets avec des outils et logiciels tiers populaires, vous aidant ainsi à intégrer notre service de manière transparente dans votre infrastructure existante.
 
 ## Tableau de compatibilité
 
-Le tableau suivant fournit une vue d'ensemble de la compatibilité de notre service de stockage d'objets avec les outils, logiciels et/ou applications tiers :
+Le tableau suivant fournit une vue d'ensemble de la compatibilité de notre service de stockage d'objets avec les outils, logiciels et applications tiers :
 
 ### Protection des données
 
@@ -20,10 +20,11 @@ Le tableau suivant fournit une vue d'ensemble de la compatibilité de notre serv
 | **Veeam** | Compatible - Certifié | Certifié Veeam Ready, les détails peuvent être trouvés sur la page[Veeam Alliance Technical Program](https://www.veeam.com/partners/alliance-partner-technical-programs.html) | [Guide](/pages/storage_and_backup/object_storage/s3_veeam) |
 | **Acronis Cyber Protect Cloud** | Compatible - Certifié | Officiellement pris en charge, détails disponibles sur la [page d’intégration Acronis S3](https://solutions.acronis.com/en-us/integrations/amazon-s3/) | À venir |
 | **IBM Storage Protect** | Compatible - Certifié | Officiellement pris en charge, détails sur [IBM Storage Protect Support Page](https://www.ibm.com/support/pages/ibm-spectrum-protect-object-storage-support) | À venir |
-| **Cohesity, Veritas NetBackup**  | Compatible - Certifié | Officiellement pris en charge, détails sur [NetBackup Support Page - Compatibility Matrix](https://www.veritas.com/support/fr_FR/dpp.NetBackup)  | [Guide](/pages/storage_and_backup/object_storage/s3_cohesity_netbackup) | À venir |
+| **Cohesity, Veritas NetBackup**  | Compatible - Certifié | Officiellement pris en charge, détails sur [NetBackup Support Page - Compatibility Matrix](https://www.veritas.com/support/fr_FR/dpp.NetBackup) | [Guide](/pages/storage_and_backup/object_storage/s3_cohesity_netbackup) |
 | **Arctera, Veritas BackupExec** | Compatible - Certifié | Officiellement pris en charge, détails sur [BackupExec Support Page - Hardware and Cloud Storage Compatibility List](https://www.veritas.com/support/fr_FR/dpp.BackupExec) | À venir |
 | **HYCU R-Cloud™** | Compatible - Certifié | Officiellement pris en charge, détails sur [HYCU R-Cloud User Guide](https://docs.r-cloud.hycu.com/HYCU-R-Cloud-User-Guide.pdf) | [Guide](/pages/hosted_private_cloud/nutanix_on_ovhcloud/40-hycu-backup) |
 | **Backint for SAP HANA™** | Compatible - Certifié | Officiellement pris en charge, détails sur le [SAP Certified Solutions Directory](https://www.sap.com/dmc/exp/sap-certified-solutions/#/solutions?search=backint&id=s:c5927e8a-cf79-40c1-84ad-cdd354554389) | [Guide](/pages/hosted_private_cloud/sap_on_ovhcloud/cookbook_install_ovhcloud_backint_agent/) |
+| **Nutanix Prism Central Backup Restore™** | Compatible - Certifié | Officiellement pris en charge, détails sur la [documentation Prism Central Backup Restore HCL](https://portal.nutanix.com/page/compatibility-interoperability-matrix/software?partnerName=OVHcloud&solutionType=all&componentVersion=all&hypervisor=all&validationType=all) | À venir |
 
 ### Protection des données - Sauvegarde Kubernetes
 
@@ -32,7 +33,7 @@ Le tableau suivant fournit une vue d'ensemble de la compatibilité de notre serv
 | **Veeam Kasten** | Compatible | N/A | [Guide](/pages/storage_and_backup/object_storage/s3_veeam) |
 | **Cloud Casa** | Compatible | Officiellement pris en charge, détails sur la page [produit Cloud Casa](https://cloudcasa.io/partners/ovhcloud-kubernetes-backup-and-dr/) | [Guide](/pages/public_cloud/containers_orchestration/managed_kubernetes/backup-and-restore-cluster-using-cloudcasa) |
 | **Trilio** | Compatible | Officiellement pris en charge, détails sur la page [d'assistance de Trilio](https://docs.trilio.io/kubernetes/appendix/configure-ovh-object-storage-as-a-target) | [Guide](/pages/public_cloud/containers_orchestration/managed_kubernetes/backup-and-restore-cluster-namespace-and-applications-with-trilio) |
-|**Velereo** | Compatible | N/A | [Guide](/pages/public_cloud/containers_orchestration/managed_kubernetes/backup-and-restore-cluster-using-cloudcasa) |
+| **Velero** | Compatible | N/A | [Guide](/pages/public_cloud/containers_orchestration/managed_kubernetes/backup-and-restore-cluster-using-cloudcasa) |
 
 ### Intégrations d'interface de ligne de commande
 

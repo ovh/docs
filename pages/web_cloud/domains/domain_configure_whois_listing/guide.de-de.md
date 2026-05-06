@@ -1,7 +1,7 @@
 ---
 title: "Wie konfiguriere ich die Anzeige des WHOIS einer Domain?"
 excerpt: "Erfahren Sie, wie Sie bestimmte Informationen im WHOIS einer Domain über Ihr OVHcloud Kundencenter ein- oder ausblenden"
-updated: 2025-06-23
+updated: 2026-02-10
 ---
 
 ## Ziel
@@ -22,8 +22,19 @@ Bei der Verwendung Ihres Domainnamens kann es vorkommen, dass Sie bestimmte Info
 
 ## Voraussetzungen
 
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 - Sie verfügen über einen [Domainnamen](/links/web/domains).
+
+<!-- CP-NAV-START:web-domains -->
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direkter Link:** [Domainnamen](/links/control-panel/web-domains)
+- **Navigationspfad:** `Web Cloud`{.action} > `Domainnamen`{.action} > Wählen Sie Ihren Domainnamen aus
+
+---
+<!-- CP-NAV-END:web-domains -->
+
 
 > [!warning]
 >
@@ -34,38 +45,32 @@ Bei der Verwendung Ihres Domainnamens kann es vorkommen, dass Sie bestimmte Info
 
 ## In der praktischen Anwendung
 
-Klicken Sie jeweils auf die Tabs, um die **4** Schritte anzuzeigen.
+<!-- CP-STEPS-START:configure-whois -->
+Klicken Sie auf die Tabs, um die **3** Schritte anzuzeigen.
 
 > [!tabs]
 > **Schritt 1**
 >>
->> Loggen Sie sich in Ihrem [OVHcloud Kundencenter](/links/manager) ein und gehen Sie dann in den Bereich `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Schritt 2**
->>
->> Klicken Sie auf das Menü `Domainnamen`{.action} und wählen Sie den Domainnamen aus.
+>> Gehen Sie auf die Seite [Domainnamen](/links/control-panel/web-domains), und wählen Sie den Domainnamen aus.
 >>
 >> ![Domain Names](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
 >>
+> **Schritt 2**
+>>
+>> Klicken Sie auf der angezeigten Seite in der Randleiste **Konfiguration** auf den Button `Den Datenschutz verwalten`{.action}.
+>>
+>> ![Configure Data protection](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/configure-data-protection.png){.thumbnail}
+>>
 > **Schritt 3**
->>
->> Klicken Sie auf der angezeigten Seite in der Randleiste **Sicherheit** auf den Button `WHOIS-Anzeige konfigurieren`{.action}.
->>
->> ![Configure WHOIS listing](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/configure-whois-listing.png){.thumbnail}
->>
-> **Schritt 4**
 >>
 >> Auf der neu geöffneten Seite können Sie im Rahmen der von der Registry, die die Domainendung verwaltet, genehmigten Aktionen auswählen, ob die Informationen zu den Inhabern, Administratoren und technischen Kontakten der Domain `angezeigt` oder `verborgen` werden sollen.
 >>
->> Aktivieren Sie für jeden der 3 Kontakte die Option `Anzeige für jedes Feld einzeln verwalten`{.action}, um weitere Optionen anzuzeigen.
+>> ![Configure listing in WHOIS](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/configure-data-protection/configure-data-protection-in-drawer.png){.thumbnail}
 >>
->> ![Configure listing in WHOIS](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/configure-whois-listing/configure-listing-in-whois.png){.thumbnail}
->>
->> Nachdem Sie Ihre Auswahl getroffen haben, klicken Sie auf `Änderungen speichern`{.action}.
+>> Nachdem Sie Ihre Auswahl getroffen haben, klicken Sie auf `Bestätigen`{.action}.
 >>
 >> Die Übernahme der Änderungen kann bis zu **48** Stunden dauern. Diese Änderungen werden **nur angewendet, wenn sie von der Registry, die die Domainendung verwaltet, genehmigt wurden**.
+<!-- CP-STEPS-END:configure-whois -->
 
 ## Weiterführende Informationen
  
@@ -73,4 +78,4 @@ Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.
  
 Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](/links/support).
  
-Treten Sie unserer [User Community](/links/community) bei.
+Treten Sie unserer [User Community](/links/community) bei.

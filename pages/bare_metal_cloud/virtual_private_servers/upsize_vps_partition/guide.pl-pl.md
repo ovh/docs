@@ -40,7 +40,7 @@ Następnie możesz sprawdzić konfigurację dysków:
 lsblk
 ```
 
-Partycja odpowiadająca trybowi Rescue (`sda1` w tym przykładzie) jest zamontowana w katalogu `/` .Dysk VPS ma nazwę `sdb` i nie może mieć punktu montowania.
+Partycja odpowiadająca trybowi Rescue (`sda1` w tym przykładzie) jest zamontowana w katalogu `/`. Dysk VPS ma nazwę `sdb` i nie może mieć punktu montowania.
 
 Przykład:
 

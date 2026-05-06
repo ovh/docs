@@ -1,6 +1,6 @@
 ---
 title: 'Sending SMS messages with the OVHcloud API in Java'
-excerpt: 'Find out how to send SMS messages with the OVHcloud RESTful API in Java'
+excerpt: 'Find out how to set up a Java development environment and send your first SMS message using the OVHcloud RESTful API step by step'
 updated: 2020-06-01
 ---
 
@@ -30,7 +30,7 @@ In this guide, two methods will be called:
 
 Credentials are required to use the SMS API. These credentials are created once, to identify the application that will be sending SMS messages. The lifespan of these credentials can be configured.
 
-Create your script credentials (all keys at once) on this page: [https://eu.api.ovh.com/createToken/](https://eu.api.ovh.com/createToken/?GET=/sms/&GET=/sms/*/jobs&POST=/sms/*/jobs) (this URL will automatically give you the correct rights for the steps described in this guide).
+Create your script credentials (all keys at once) on this page: [https://auth.eu.ovhcloud.com/api/createToken](https://auth.eu.ovhcloud.com/api/createToken?GET=/sms/&GET=/sms/*/jobs&POST=/sms/*/jobs) (this URL will automatically give you the correct rights for the steps described in this guide).
 
 ![create tokens](images/img_2479.jpg){.thumbnail}
 

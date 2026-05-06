@@ -1,7 +1,7 @@
 ---
 title: Restoring deleted items from your email account
 excerpt: Find out how to restore deleted items from your email account via webmail (OWA)
-updated: 2022-02-08
+updated: 2026-03-24
 ---
 
  
@@ -41,10 +41,6 @@ Deleted items can be recovered from webmail (OWA) and the Outlook email software
 <iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/msmUN7cLSNI?start=117" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 Log in to your email account via webmail (OWA): [Webmail](/links/web/email).
-
-> [!primary]
->
-> For a **Private Exchange** service, the link to log in to webmail can be found under **Connection** in the `General information`{.action} tab of your platform.
 
 Once connected, click `Deleted Items`{.action} in the left column, and then click `Recover deleted items`{.action} at the top of the middle column.
 

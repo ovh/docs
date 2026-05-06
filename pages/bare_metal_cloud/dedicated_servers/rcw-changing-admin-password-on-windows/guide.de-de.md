@@ -1,6 +1,6 @@
 ---
-title: "Administrator-Passwort eines Windows Servers mit dem Windows Customer Rescue System zurücksetzen"
-excerpt: "Erfahren Sie hier, wie Sie den OVHcloud Windows-Rescue-Modus verwenden, um das Passwort des Administrator-Accounts auf einem Windows Dedicated Server zurückzusetzen"
+title: "Windows-Passwort auf einem Dedicated Server zurücksetzen"
+excerpt: "Setzen Sie das Windows-Administratorpasswort auf einem Dedicated Server mit dem OVHcloud Windows Customer Rescue System zurück."
 updated: 2025-10-22
 ---
 
@@ -12,7 +12,17 @@ Diese Anleitung erklärt, wie Sie das Passwort für den Administrator-Account mi
 
 - Sie haben einen [Dedicated Server](/links/bare-metal/bare-metal), auf dem Microsoft Windows Server 2016 oder höher installiert ist.
 - Der Server verfügt über mindestens 16 GB RAM.
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
+
+<!-- CP-NAV-START:baremetal-dedicated-servers -->
+---
+
+### Zugang zum OVHcloud Kundencenter
+
+- **Direktlink:** [Dedicated Server](/links/control-panel/baremetal-dedicated-servers)
+- **Navigationspfad:** `Bare Metal Cloud`{.action} > `Dedicated Server`{.action} > Wählen Sie Ihren Server aus
+
+---
+<!-- CP-NAV-END:baremetal-dedicated-servers -->
 
 > [!warning]
 >
@@ -143,5 +153,9 @@ Wechseln Sie wieder zum Fenster der KVM-Sitzung und wählen Sie die Herunterfahr
 ![reboot](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/dedicated-servers/general-information/cp_dedicated_restart.png){.thumbnail}
 
 ## Weiterführende Informationen
+
+- [Erste Schritte mit einem Dedicated Server](/pages/bare_metal_cloud/dedicated_servers/getting-started-with-dedicated-server)
+
+- [Dedicated Server absichern](/pages/bare_metal_cloud/dedicated_servers/securing-a-dedicated-server)
 
 Treten Sie unserer [User Community](/links/community) bei.

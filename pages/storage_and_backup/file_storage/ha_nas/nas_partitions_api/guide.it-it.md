@@ -41,113 +41,60 @@ Tutti i tuoi servizi attivi possono essere recuperati utilizzando la strada segu
 
 Per recuperare le partizioni di un servizio, utilizza la seguente rotta:
 
-> [!faq]
+> [!api]
 >
-> API:
+> @api {v1} /dedicated/nasha GET /dedicated/nasha/{serviceName}/partition
 >
->> > [!api]
->> >
->> > @api {v1} /dedicated/nasha GET /dedicated/nasha/{serviceName}/partition
->> >
->>
->
-> Impostazioni:
->
->> > **serviceName** *
->> >
->> >> Il nome interno del tuo servizio NAS-HA
->
+
+| Parameter | Required | Description |
+|-----------|----------|-------------|
+| `serviceName` | Yes | Il nome interno del tuo servizio NAS-HA |
 
 ### Recupera le proprietà di una partizione
 
 Per visualizzare i dettagli di una partizione, utilizza questa strada:
 
-> [!faq]
+> [!api]
 >
-> API:
+> @api {v1} /dedicated/nasha GET /dedicated/nasha/{serviceName}/partition/{partitionName}
 >
->> > [!api]
->> >
->> > @api {v1} /dedicated/nasha GET /dedicated/nasha/{serviceName}/partition/{partitionName}
->> >
->>
->
-> Impostazioni:
->
->> > **serviceName** *
->> >
->> >> Il nome interno del tuo servizio NAS-HA
->> >
->> > **partitionName** *
->> >
->> >> Nome della partizione
->
+
+| Parameter | Required | Description |
+|-----------|----------|-------------|
+| `serviceName` | Yes | Il nome interno del tuo servizio NAS-HA |
+| `partitionName` | Yes | Nome della partizione |
 
 ### Recupero delle statistiche di una partizione
 
 Per recuperare le informazioni relative all'utilizzo di una partizione, utilizza questa pagina:
 
-> [!faq]
+> [!api]
 >
-> API:
+> @api {v1} /dedicated/nasha GET /dedicated/nasha/{serviceName}/partition/{partitionName}/use
 >
->> > [!api]
->> >
->> > @api {v1} /dedicated/nasha GET /dedicated/nasha/{serviceName}/partition/{partitionName}/use
->> >
->>
->
-> Impostazioni:
->
->> > **serviceName** *
->> >
->> >> Il nome interno del tuo servizio NAS-HA
->> >
->> > **partitionName** *
->> >
->> >> Nome della partizione
->> >
->> > **type** *
->> >
->> >> Il tipo di statistica da recuperare: *size*, *used* o *usedbysnapshot*
->
+
+| Parameter | Required | Description |
+|-----------|----------|-------------|
+| `serviceName` | Yes | Il nome interno del tuo servizio NAS-HA |
+| `partitionName` | Yes | Nome della partizione |
+| `type` | Yes | Il tipo di statistica da recuperare: *size*, *used* o *usedbysnapshot* |
 
 ### Crea una partizione
 
 Per creare una nuova partizione, utilizza la seguente strada:
 
-> [!faq]
+> [!api]
 >
-> API:
+> @api {v1} /dedicated/nasha POST /dedicated/nasha/{serviceName}/partition
 >
->> > [!api]
->> >
->> > @api {v1} /dedicated/nasha POST /dedicated/nasha/{serviceName}/partition
->> >
->>
->
-> Impostazioni:
->
->> > **serviceName** *
->> >
->> >> Il nome interno del tuo servizio NAS
->> >
->> > **partizioneDescrizione** 
->> >
->> >> Descrizione facoltativa
->> >
->> > **partitionName** *
->> >
->> >> Un nome per la partizione
->> >
->> > **protocol** *
->> >
->> >> *NFS*, *CIFS* o *NFS_CIFS* per entrambi 
->> >
->> > **size** *
->> >
->> >> La dimensione della partizione
->
+
+| Parameter | Required | Description |
+|-----------|----------|-------------|
+| `serviceName` | Yes | Il nome interno del tuo servizio NAS |
+| `partizioneDescrizione` |  | Descrizione facoltativa |
+| `partitionName` | Yes | Un nome per la partizione |
+| `protocol` | Yes | *NFS*, *CIFS* o *NFS_CIFS* per entrambi |
+| `size` | Yes | La dimensione della partizione |
 
 Scegli `NFS` come protocollo e una dimensione di `10` Gigabyte, ad esempio.
 
@@ -155,59 +102,31 @@ Scegli `NFS` come protocollo e una dimensione di `10` Gigabyte, ad esempio.
 
 Per modificare una partizione, utilizza questa pagina:
 
-> [!faq]
+> [!api]
 >
-> API:
+> @api {v1} /dedicated/nasha PUT /dedicated/nasha/{serviceName}/partition/{partitionName}
 >
->> > [!api]
->> >
->> > @api {v1} /dedicated/nasha PUT /dedicated/nasha/{serviceName}/partition/{partitionName}
->> >
->>
->
-> Impostazioni:
->
->> > **serviceName** *
->> >
->> >> Il nome interno del tuo servizio NAS
->> >
->> > **partitionName** *
->> >
->> >> Nome della partizione
->> >
->> > **partizioneDescrizione**
->> >
->> >> La nuova descrizione
->> >
->> > **size**
->> >
->> >> La nuova dimensione della partizione
->
+
+| Parameter | Required | Description |
+|-----------|----------|-------------|
+| `serviceName` | Yes | Il nome interno del tuo servizio NAS |
+| `partitionName` | Yes | Nome della partizione |
+| `partizioneDescrizione` |  | La nuova descrizione |
+| `size` |  | La nuova dimensione della partizione |
 
 ### Recupera le impostazioni ZFS di una partizione
 
 Per recuperare i parametri ZFS, utilizza questa rotta:
 
-> [!faq]
+> [!api]
 >
-> API:
+> @api {v1} /dedicated/nasha GET /dedicated/nasha/{serviceName}/partition/{partitionName}/options
 >
->> > [!api]
->> >
->> > @api {v1} /dedicated/nasha GET /dedicated/nasha/{serviceName}/partition/{partitionName}/options
->> >
->>
->
-> Impostazioni:
->
->> > **serviceName** *
->> >
->> >> Il nome interno del tuo servizio NAS
->> >
->> > **partitionName** *
->> >
->> >> Nome della partizione
->
+
+| Parameter | Required | Description |
+|-----------|----------|-------------|
+| `serviceName` | Yes | Il nome interno del tuo servizio NAS |
+| `partitionName` | Yes | Nome della partizione |
 
 ### Modifica dei parametri ZFS di una partizione
 
@@ -218,63 +137,32 @@ Per recuperare i parametri ZFS, utilizza questa rotta:
 
 Per modificare i parametri ZFS, utilizza questa rotta:
 
-> [!faq]
+> [!api]
 >
-> API:
+> @api {v1} /dedicated/nasha POST /dedicated/nasha/{serviceName}/partition/{partitionName}/options
 >
->> > [!api]
->> >
->> > @api {v1} /dedicated/nasha POST /dedicated/nasha/{serviceName}/partition/{partitionName}/options
->> >
->>
->
-> Impostazioni:
->
->> > **serviceName** *
->> >
->> >> Il nome interno del tuo servizio NAS-HA
->> >
->> > **partitionName** *
->> >
->> >> Nome della partizione
->> >
->> > **atime**
->> >
->> >> Parametro di aggiornamento dei tempi di accesso: *on* (default) o *off*
->> >
->> > **recordsize**
->> >
->> >> Dimensione massima del blocco: *131072* (di default), *16384*, *32768*, *4096*, *65536* o *8129*
->> >
->> > **sync**
->> >
->> >> Parametro di sincronizzazione del file: *always*, *disabled* o *standard* (valore predefinito)
->
+
+| Parameter | Required | Description |
+|-----------|----------|-------------|
+| `serviceName` | Yes | Il nome interno del tuo servizio NAS-HA |
+| `partitionName` | Yes | Nome della partizione |
+| `atime` |  | Parametro di aggiornamento dei tempi di accesso: *on* (default) o *off* |
+| `recordsize` |  | Dimensione massima del blocco: *131072* (di default), *16384*, *32768*, *4096*, *65536* o *8129* |
+| `sync` |  | Parametro di sincronizzazione del file: *always*, *disabled* o *standard* (valore predefinito) |
 
 ### Elimina una partizione
 
 Per eliminare una partizione, utilizza questa pagina:
 
-> [!faq]
+> [!api]
 >
-> API:
+> @api {v1} /dedicated/nasha DELETE /dedicated/nasha/{serviceName}/partition/{partitionName}
 >
->> > [!api]
->> >
->> > @api {v1} /dedicated/nasha DELETE /dedicated/nasha/{serviceName}/partition/{partitionName}
->> >
->>
->
-> Impostazioni:
->
->> > **serviceName** *
->> >
->> >> Il nome interno del tuo servizio NAS-HA
->> >
->> > **partitionName** *
->> >
->> >> Nome della partizione
->
+
+| Parameter | Required | Description |
+|-----------|----------|-------------|
+| `serviceName` | Yes | Il nome interno del tuo servizio NAS-HA |
+| `partitionName` | Yes | Nome della partizione |
 
 ## Per saperne di più
 

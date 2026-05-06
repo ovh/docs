@@ -47,9 +47,19 @@ Eis o contexto do diagrama acima:
 ## Requisitos
 
 - Ter subscrito uma plataforma [Private Exchange OVHcloud](/links/web/emails-private-exchange) ou [Trusted Exchange OVHcloud](/links/web/emails-trusted-exchange).
-- Ter acesso à [Área de Cliente OVHcloud](/links/manager).
 - Ter acesso às [API da OVHcloud](/links/api).
 - Ter os parâmetros necessários para configurar o conector de envio. Aproxime-se do prestador que lhe entrega o serviço.
+
+<!-- CP-NAV-START:web-exchange -->
+---
+
+### Acesso à Área de Cliente OVHcloud
+
+- **Ligação direta:** [Exchange](/links/control-panel/web-exchange)
+- **Caminho de navegação:** `Web Cloud`{.action} > `Exchange`{.action} > Selecione a sua plataforma
+
+---
+<!-- CP-NAV-END:web-exchange -->
 
 ## Instruções
 
@@ -216,7 +226,7 @@ o endereço de e-mail **newsletter@mydomain.ovh** envia um e-mail para **john.sm
 
 Eis um exemplo de cabeçalho de um e-mail enviado a partir de um Private Exchange que utiliza um conector de envio, no contexto acima:
 
-<robert@hisdomain.ovh>
+&lt;robert@hisdomain.ovh&gt;
 
 <pre class="bgwhite"><code>Return-Path: &lt;bounces-249164590-newsletter=mydomain.ovh@sender-id.exemplo.com>
 Delivered-To: john.smith@guias.ovh
@@ -309,7 +319,7 @@ Na secção **PATH PARAMETERS**:
 
 No separador **EXAMPLE** na secção **REQUEST BODY**, complete os campos com os seus valores:
 
-- `sbrDefault `: deixe em branco.
+- `sbrDefault`: deixe em branco.
 - `sendConnectorIdDefault` : introduza a ID do seu conector de envio, que é um número [nesta etapa](#idconnector).
 
 Clique em `Execute`{.action} para lançar a chamada API.
@@ -358,7 +368,7 @@ Obtém o seguinte resultado:
 >
 > @api {v1} /email/exchange POST /email/exchange/{organizationName}/service/{exchangeService}/sendConnector/{id}/changeAuthentication
 
-## Saiba mais
+## Saiba mais <a name="go-further"></a>
 
 [Editar uma zona DNS](/pages/web_cloud/domains/dns_zone_edit)
 

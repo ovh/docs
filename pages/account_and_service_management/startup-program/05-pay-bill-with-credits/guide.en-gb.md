@@ -15,8 +15,18 @@ As a member of the OVHcloud Startup Program, you have credits to support your pr
 - Your Startup Program application must have been validated, and your contract signed. Find more information in our guides:
     - [How to optimise your application to the Startup Program](/pages/account_and_service_management/startup-program/01-optimise-application)
     - [How to sign your Startup Program contrac](/pages/account_and_service_management/startup-program/02-sign-agreement)
-- Access to the [OVHcloud Control Panel](/links/manager).
 - Knowledge of the [balance of your Startup Program credits](/pages/account_and_service_management/startup-program/04-view-credits).
+
+<!-- CP-NAV-START:billing-invoices -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [My bills](/links/control-panel/billing-invoices)
+- **Navigation path:** Click your name in the top right > `My bills`{.action}
+
+---
+<!-- CP-NAV-END:billing-invoices -->
 
 ## Key Points
 
@@ -43,6 +53,7 @@ Depending on the type of service you want to order, here's how to use your credi
 
 #### For other eligible products
 
+<!-- CP-STEPS-START:place-order-other-products -->
 1. Place your order: Select the eligible services you want to purchase.
 1. Select the payment method:
     1. At the end of the order, when prompted to choose a payment method, go to the `Voucher`{.action} section.
@@ -51,6 +62,7 @@ Depending on the type of service you want to order, here's how to use your credi
 1. Proceed to payment: Click `Pay`{.action} to finalize the order using your credits.
 
 ![Order](images/01-pay-bill.png){.thumbnail width="800"}
+<!-- CP-STEPS-END:place-order-other-products -->
 
 > [!success]
 > 💡 Need to know which products are eligible? Find the complete list [here](/pages/account_and_service_management/startup-program/06-available-products).

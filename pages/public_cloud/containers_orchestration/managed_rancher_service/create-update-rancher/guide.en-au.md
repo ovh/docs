@@ -12,15 +12,23 @@ Managed Rancher Service by OVHcloud provides a powerful platform for orchestrati
 ## Requirements
 
 - A [Public Cloud project](/links/public-cloud/public-cloud) in your OVHcloud account
-- Access to the [OVHcloud Control Panel](/links/manager)
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Navigation path:** `Public Cloud`{.action} > Select your project
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## Instructions
 
 ### Creating a Managed Rancher Service
 
-To initiate your journey, log in to the [OVHcloud Control Panel](/links/manager) and open the `Public Cloud`{.action} section.
-Then access the `Managed Rancher Service`{.action} under the `Containers & Orchestration` section.
-Using the OVHcloud Control Panel you can trigger the creation of a Rancher which will be operated and managed by OVHcloud.
+In the left-hand menu under **Containers & Orchestration**, click on `Managed Rancher Service`{.action}. You can trigger the creation of a Rancher which will be operated and managed by OVHcloud.
 
 ![Create an OVHcloud Managed Rancher Service](images/create-rancher.png){.thumbnail}
 

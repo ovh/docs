@@ -15,9 +15,19 @@ In this tutorial you will:
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](/links/manager)
 - A [Public Cloud Instance](/links/public-cloud/public-cloud) in your OVHcloud account
 - [Pulumi CLI](https://www.pulumi.com/docs/install/) installed
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Projets Public Cloud](/links/control-panel/publiccloud-projects)
+- **Pour accéder à vos services :** `Public Cloud`{.action} > Sélectionnez votre projet
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 **Before you begin**
 

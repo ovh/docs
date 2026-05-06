@@ -1,12 +1,8 @@
 ---
 title: "Zabezpieczenie serwera VPS"
 excerpt: "Dowiedz się, jak wdrożyć podstawowe środki bezpieczeństwa, aby chronić Twój serwer VPS przed atakami i nieautoryzowanym dostępem"
-updated: 2025-11-04
+updated: 2026-01-21
 ---
-
-> [!primary]
-> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłóś propozycję modyfikacji" na tej stronie.
-> 
 
 ## Wprowadzenie
 
@@ -36,7 +32,18 @@ Kiedy zamawiasz serwer VPS, możesz wybrać dystrybucję lub system operacyjny d
 
 Poniższe przykłady zakładają, że jesteś zalogowany jako [użytkownik z dużymi uprawnieniami](/pages/bare_metal_cloud/dedicated_servers/changing_root_password_linux_ds).
 
-### Aktualizacja systemu operacyjnego
+**Spis treści:**
+
+- [Aktualizacja systemu operacyjnego](#os-update)
+- [Utwórz i użyj klucza SSH](#sshkey)
+- [Zmień domyślny port SSH](#changesshport)
+- [Utworzenie użytkownika z ograniczonymi prawami](#createuser)
+- [Konfiguracja wewnętrznej zapory sieciowej (iptables)](#iptables)
+- [Zainstaluj Fail2ban](#fail2ban)
+- [Konfiguracja Network Firewall OVHcloud](#networkfirewall)
+- [Tworzenie kopii zapasowej systemu i danych](#backup)
+
+### Aktualizacja systemu operacyjnego <a name="os-update"></a>
 
 Producenci dystrybucji i systemów operacyjnych proponują często aktualizacje pakietów ze względów bezpieczeństwa.<br>
 Aktualizacja dystrybucji lub systemu operacyjnego jest kluczowa dla zabezpieczenia serwera VPS.
@@ -76,7 +83,29 @@ Aktualizacja dystrybucji lub systemu operacyjnego jest kluczowa dla zabezpieczen
 
 Operacja ta musi być wykonywana regularnie, aby utrzymać system na bieżąco.
 
+### Utwórz i użyj klucza SSH <a name="sshkey"></a>
+
+Uwierzytelnianie za pomocą klucza SSH to jedna z najskuteczniejszych metod zabezpieczenia dostępu do Twojego VPS.<br>
+Na przeciwieństwo uwierzytelniania hasłem, opiera się ono na parze kluczy kryptograficznych i znacząco zmniejsza ryzyko ataków typu brute-force.
+
+Zalecamy bardzo, aby skonfigurować klucz SSH podczas pierwszego połączenia z Twoim serwerem, a następnie priorytetyzować tę metodę dla swojego dostępu administracyjnego.
+
+W zależności od Twojego środowiska i narzędzia, którego używasz do łączenia się z Twoim VPS, odnieś się do jednego z poniższych przewodników:
+
+- [Jak utworzyć i używać kluczy uwierzytelniania do połączeń SSH z serwerami OVHcloud](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated)
+- [Samouczek - Jak używać PuTTY do połączeń i uwierzytelniania SSH](/pages/web_cloud/web_hosting/ssh_using_putty_on_windows)
+
+Te przewodniki opisują kroki:
+
+- generowania pary kluczy SSH;
+- wdrażania klucza publicznego na Twoim serwerze;
+- bezpiecznego łączenia się przez SSH.
+
+Po skonfigurowaniu i uruchomieniu uwierzytelniania kluczem SSH możesz przejść dalej, poprawiając konfigurację usługi SSH, na przykład zmieniając port nasłuchiwania lub wyłączając uwierzytelnianie hasłem.
+
 ### Zmień domyślny port SSH <a name="changesshport"></a>
+
+Przed wprowadzeniem jakichkolwiek zmian w usłudze SSH upewnij się, że masz działający dostęp SSH za pomocą klucza, aby uniknąć utraty dostępu do swojego serwera.
 
 > [!primary]
 >
@@ -191,7 +220,7 @@ Jeśli nie masz dostępu do swojego systemu, możesz skorzystać z naszego środ
 
 Zadania, które nie wymagają uprawnień root, powinny być wykonywane za pomocą standardowego użytkownika. Więcej informacji znajdziesz w [tym przewodniku](/pages/bare_metal_cloud/dedicated_servers/changing_root_password_linux_ds).
 
-### Konfiguracja wewnętrznej zapory sieciowej (iptables)
+### Konfiguracja wewnętrznej zapory sieciowej (iptables) <a name="iptables"></a>
 
 Dystrybucje GNU/Linux są dostarczane wraz z zaporą sieciową o nazwie iptables. Usługa ta nie posiada domyślnie żadnej aktywnej reguły. Możesz się o tym przekonać, wpisując następującą komendę:
 
@@ -203,7 +232,7 @@ Więcej informacji na temat iptables znajdziesz w naszym [przewodniku](/pages/ba
 
 Zalecamy utworzenie reguł firewalla i dostosowanie ich do Twojego trybu użytkowania. Więcej informacji na temat różnych możliwych operacji znajdziesz w oficjalnej dokumentacji dotyczącej używanej dystrybucji.
 
-### Zainstaluj Fail2ban
+### Zainstaluj Fail2ban <a name="fail2ban"></a>
 
 Fail2ban to oprogramowanie zapobiegające włamaniom, które blokuje adresy IP, z których atakujący lub bojownicy próbują dostać się do Twojego systemu.<br>
 Pakiet ten jest zalecany, a w niektórych przypadkach nawet niezbędny, do ochrony Twojego serwera przed atakami typu *Brute Force* lub *Denial of Service*.
@@ -295,13 +324,13 @@ Fail2ban ma wiele ustawień i filtrów personalizacji oraz wstępnie zdefiniowan
 
 W celu uzyskania dodatkowych informacji oraz uzyskania zaleceń dotyczących Fail2ban zapoznaj się [z oficjalną](https://www.fail2ban.org/wiki/index.php/Main_Page) dokumentacją tego narzędzia.
 
-### Konfiguracja Network Firewall OVHcloud 
+### Konfiguracja Network Firewall OVHcloud <a name="networkfirewall"></a>
 
 Rozwiązania OVHcloud obejmują możliwość aktywacji firewalla w punkcie wejścia infrastruktury, zwanym Network Firewall. Prawidłowa konfiguracja zapory sieciowej pozwala zablokować połączenia jeszcze przed ich wejściem na Twój serwer.
 
 Sprawdź przewodnik “[Konfiguracja Network Firewall](/pages/bare_metal_cloud/dedicated_servers/firewall_network)”, jeśli chcesz włączyć tą opcję.
 
-### Tworzenie kopii zapasowej systemu i danych
+### Tworzenie kopii zapasowej systemu i danych <a name="backup"></a>
 
 Koncepcja bezpieczeństwa nie ogranicza się do ochrony systemu przed atakami.
 

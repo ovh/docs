@@ -1,5 +1,5 @@
 ---
-title: Public Cloud Databases - Comment dépanner vos services (EN)
+title: Dépanner votre base de données Public Cloud (EN)
 excerpt: Troubleshooting tips for Public Cloud Databases
 updated: 2021-09-27
 ---

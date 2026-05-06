@@ -39,7 +39,7 @@ Questa guida ti mostra come configurare e rinnovare il tuo servizio SSL Gateway 
 
 ![riquadro informazioni](images/8.PNG){.thumbnail}
 
-|||
+| Campo | Descrizione |
 |---|---|
 |IPv4|Indirizzo IPv4 del gateway OVHcloud a cui deve puntare il tuo servizio|
 |IPv6|Indirizzo IPv6 del gateway OVHcloud a cui deve puntare il tuo servizio|
@@ -56,7 +56,7 @@ Questa guida ti mostra come configurare e rinnovare il tuo servizio SSL Gateway 
 
 ![riquadro configurazione](images/9.PNG){.thumbnail}
 
-|||
+| Campo | Descrizione |
 |---|---|
 |Configurazione|Pulsante che permette di modificare i parametri del tuo servizio SSL Gateway|
 |HSTS [[1]](#id5){.note-ref #id1}|Forza il browser a effettuare le prossime connessioni al tuo sito in HTTPS|
@@ -98,52 +98,25 @@ La scheda **Domini** permette di aggiungere ed eliminare i tuoi domini e sottodo
 
 - Per aggiungere un dominio o sottodominio, clicca sul pulsante `+ Domini`{.action}.
 
-> [!faq]
+| Nome | URL |
+|---|---|
+| Dominio | esempio.com |
+| Sottodominio www | www.esempio.com |
+| Sottodominio di tua scelta | blog.esempio.com |
+
+> [!warning]
 >
-> Hai attivato un’offerta **Free**
->> 
->> Potrai disporre esclusivamente di un **dominio**, del suo **sottodominio "www"** e di un secondo **sottodominio a tua scelta**:
->> 
->> 
->> > [!primary]
->> >
->> > |||
->> > |---|---|
->> > | Dominio | esempio.com |
->> > | Sottodominio www | www.esempio.com |
->> > | Sottodominio di tua scelta | blog.esempio.com |
->> > 
->> 
->> 
->> > [!warning]
->> >
->> > Offerta Free:
->> > 
->> > Disponibile solo per i domini fino al 3° livello (www.esempio.org).
->> > 
->> 
->> Indica la tua scelta e clicca su `Aggiungi`{.action} per confermare.
->> 
->> ![aggiunta dominio free](images/11.PNG){.thumbnail}
->>
+> **Offerta Free**: Disponibile solo per i domini fino al 3° livello (www.esempio.org).
+
+> [!primary]
 >
-> Hai attivato un’offerta **Advanced**
->> 
->> Potrai aggiungere qualsiasi dominio o sottodominio attivo
->> 
->> 
->> > [!primary]
->> >
->> > Offerta Advanced:
->> > 
->> > Disponibile per i domini di 4° livello (blog.italia.esempio.org) e superiori.
->> > 
->> 
->> Indica la tua scelta e clicca su `Aggiungi`{.action} per confermare.
->>
->> ![aggiunta dominio advanced](images/12.PNG){.thumbnail}
->>
->
+> **Offerta Advanced**: Potrai aggiungere qualsiasi dominio o sottodominio attivo, inclusi i domini di 4° livello (blog.italia.esempio.org) e superiori.
+
+Indica la tua scelta e clicca su `Aggiungi`{.action} per confermare.
+
+![aggiunta dominio free](images/11.PNG){.thumbnail}
+
+![aggiunta dominio advanced](images/12.PNG){.thumbnail}
 
 > [!warning]
 >
@@ -157,29 +130,14 @@ La scheda **Server** permette di gestire gli indirizzi IP dei server che ospitan
 
 ![scheda server](images/13.PNG){.thumbnail}
 
-> [!faq]
+> [!primary]
 >
-> Hai attivato un’offerta **Free**
->> 
->> Potrai utilizzare un solo indirizzo IP/PORTA.
->> 
->
-> Hai attivato un’offerta **Advanced**
->> 
->> Potrai aggiungere fino a 3 indirizzi IP/PORTE per i tuoi domini e sottodomini.
->> 
->> 
->> > [!primary]
->> >
->> > Se indichi più indirizzi IP/PORTE, il tuo SSL Gateway distribuirà il traffico con il sistema Round Robin.
->> > Maggiori informazioni sul DNS Round Robin
->> > 
->> 
->> Indica la tua scelta e clicca su `Aggiungi`{.action} per confermare.
->> 
->> ![aggiunta IP/PORTA advanced (interna)](images/15.PNG){.thumbnail}
->>
->
+> - **Offerta Free**: Potrai utilizzare un solo indirizzo IP/PORTA.
+> - **Offerta Advanced**: Potrai aggiungere fino a 3 indirizzi IP/PORTE per i tuoi domini e sottodomini. Se indichi più indirizzi IP/PORTE, il tuo SSL Gateway distribuirà il traffico con il sistema Round Robin.
+
+Indica la tua scelta e clicca su `Aggiungi`{.action} per confermare.
+
+![aggiunta IP/PORTA advanced (interna)](images/15.PNG){.thumbnail}
 
 > [!warning]
 >
@@ -203,18 +161,10 @@ La scheda **Grafici** permette di visualizzare il numero di connessioni e di ric
 
 ![schede metriche](images/17.PNG){.thumbnail}
 
-> [!faq]
+> [!primary]
 >
-> Hai attivato un’offerta **Free**
->> 
->> Potrai visualizzare le metriche delle ultime 24 ore.
->> 
->
-> Hai attivato un’offerta **Advanced**
->> 
->> Potrai visualizzare le metriche dell’ultimo mese.
->> 
->
+> - **Offerta Free**: Potrai visualizzare le metriche delle ultime 24 ore.
+> - **Offerta Advanced**: Potrai visualizzare le metriche dell’ultimo mese.
 
 ## Rinnovo del certificato SSL
 

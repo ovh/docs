@@ -20,9 +20,19 @@ Uruchomienie tej opcji, w połączeniu z zabezpieczeniem Twojego konta przez [we
 
 ## Wymagania początkowe
 
-- Dostęp do [Panelu klienta OVHcloud](/links/manager).
 - Zapoznanie się z [zaleceniami dotyczącymi zarządzania hasłem dostępu do konta](/pages/account_and_service_management/account_information/manage-ovh-password).
-  
+
+<!-- CP-NAV-START:account-security -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Bezpieczeństwo](/links/control-panel/account-security)
+- **Ścieżka nawigacji:** Kliknij swoją nazwę w prawym górnym rogu > `Dostęp do konta`{.action} > `Bezpieczeństwo`{.action}
+
+---
+<!-- CP-NAV-END:account-security -->
+
 ## W praktyce
 
 ### Etap 1 - Pobranie publicznych adresów IP upoważnionych do dostępu do Panelu klienta OVHcloud
@@ -51,9 +61,7 @@ Jeśli używasz sieci 4G/5G jako uzupełnienie, pamiętaj o pobraniu również a
 
 ### Etap 2 - Wprowadzenie ograniczenia dostępu dla adresu IP
 
-Zaloguj się do [Panelu klienta OVHcloud](/links/manager), kliknij Twoją nazwę użytkownika w prawym górnym rogu, a następnie kliknij `Dostęp do konta`{.action}.
-
-Następnie kliknij zakładkę `Bezpieczeństwo`{.action}, aby przejść na następującą stronę:
+Na stronie [Bezpieczeństwo konta](/links/control-panel/account-security) znajdź sekcję **Ograniczenie dostępu po IP**.
 
 ![Access from Manager](images/ip2.png){.thumbnail}
 

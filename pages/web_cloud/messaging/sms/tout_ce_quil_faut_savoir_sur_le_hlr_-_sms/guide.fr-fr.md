@@ -1,81 +1,118 @@
 ---
-title: Tout ce qu’il faut savoir sur le HLR - SMS
-excerpt: Tout ce qu’il faut savoir sur le HLR - SMS
-updated: 2018-03-26
+title: "SMS - Vérifier la validité des numéros mobiles avec le HLR Lookup"
+excerpt: "Découvrez comment utiliser le HLR Lookup pour vérifier la validité des numéros mobiles de vos destinataires avant l'envoi de SMS depuis votre espace client OVHcloud"
+updated: 2026-03-25
 ---
 
-## Principes
-Les requêtes HLR vous permettent de savoir si un numéro de téléphone mobile est valide avant de lui envoyer un SMS.
-Si le numéro est valide, le résultat vous permettra de connaître l'opérateur sur lequel le téléphone est enregistré.
+## Objectif
 
-## Usages
-Optimisation de campagne SMS : Vous envoyer un nombre important de SMS, vous souhaitez vous assurer un haut niveau de délivrabilité et éviter les échecs d'envoi ?
-En utilisant le HLR Lookup vous vérifiez la validité du numéro avant de consommer un SMS.
+Avant d'envoyer un SMS, une requête [Home Location Register (HLR) Lookup](https://www.ovhcloud.com/fr/sms/home-location-register/) permet de vérifier si le numéro de téléphone mobile du destinataire est toujours valide et actif. Le résultat indique également l'opérateur auquel le numéro est rattaché.
 
-![](images/img_4065.jpg){.thumbnail}
-Nettoyer des listes de numéros : Vous disposez de fichiers clients, vous souhaitez qualifier les numéros de mobiles ?
-Le HLR Lookup vous indique si le numéro est actif et attribué.
-Vous tenez ainsi à jour votre fichier client et vos données conservent leur valeur.
+En vérifiant vos numéros avec le HLR Lookup, vous améliorez la délivrabilité de vos campagnes SMS et évitez les échecs d'envoi.
 
-![](images/img_4067.jpg){.thumbnail}
+![Schéma du flux HLR : tri des numéros valides et inactifs avant envoi](images/img_4065.png){.thumbnail}
 
-## Connexion à l'interface
-Connectez-vous à votre [espace client](https://www.ovhtelecom.fr/manager/), rubrique Telecom. Sélectionnez ensuite SMS dans les menus de gauche.
+Le HLR Lookup permet également de nettoyer vos listes de numéros en identifiant les numéros inactifs ou non attribués, afin de maintenir un fichier client à jour.
 
-Cliquez ensuite sur le compte SMS désiré.
+![Schéma du nettoyage d'une liste de numéros via HLR](images/img_4067.png){.thumbnail}
 
-![](images/img_4068.jpg){.thumbnail}
+> [!primary]
+>
+> Le HLR Lookup est une action indépendante de l'envoi de SMS. C'est à vous de l'effectuer avant chaque campagne ou lors du nettoyage de vos listes de contacts.
 
-## Section HLR
-Sélectionnez l'onglet SMS.
+**Ce guide vous explique comment utiliser le HLR Lookup depuis votre espace client OVHcloud.**
 
-![](images/img_4791.jpg){.thumbnail}
-Cliquez ensuite sur la partie HLR
+## Prérequis
 
-![](images/img_4792.jpg){.thumbnail}
+- Disposer d'un [compte SMS OVHcloud](/links/control-panel/telecom-sms) avec des crédits SMS.
 
-## Nouvelle requête HLR
-Renseignez le numéro que vous souhaitez tester puis cliquez sur Envoyer la requête.
+## En pratique
 
-![](images/img_4793.jpg){.thumbnail}
-Chaque requête est facturée 0.1 crédit SMS. Vous pouvez retrouver nos tarifs SMS sur notre [page dédiée](https://www.ovhtelecom.fr/sms/tarifs.xml).
+<!-- CP-NAV-START:telecom-sms -->
+---
 
-## Consulter les requêtes passées
-Vous retrouverez les résultats de vos requêtes dans le tableau ci-dessous :
+### Accès à l'espace client OVHcloud
 
-![](images/img_4794.jpg){.thumbnail}
+- **Lien direct :** [SMS](/links/control-panel/telecom-sms)
+- **Pour accéder à vos services :** `Télécom`{.action} > `SMS`{.action} > Sélectionnez votre compte SMS
 
-## Les différents états
-Les rapport HLR vous informeront des points suivants :
+---
+<!-- CP-NAV-END:telecom-sms -->
 
-- la date de la requête HLR
-- le coût de la requête HLR
-- le statut de la requête HLR
-- le numéro du destinataire
-- l'opérateur du destinataire
-- le statut actif/inactif du destinataire
-- la joignabilité du destinataire
-- le statut porté du destinataire
+<!-- CP-STEPS-START:hlr-access -->
+![espace client Telecom SMS](/pages/assets/screens/control_panel/product-selection/telecom/tpl-telecom-03-fr-sms.png){.thumbnail}
+
+Sélectionnez l'onglet `Message et campagne`{.action} > `Gestion des SMS`{.action}.
+
+![Gestion SMS](images/gestion-des-sms.png){.thumbnail}
+
+Cliquez sur `HLR`{.action}.
+
+![Section HLR dans l'espace client](images/img_4792.png){.thumbnail}
+<!-- CP-STEPS-END:hlr-access -->
+
+### Nouvelle requête HLR
+
+<!-- CP-STEPS-START:hlr-new-request -->
+Renseignez le numéro à tester puis cliquez sur `Envoyer la requête`{.action}.
+
+![Formulaire de nouvelle requête HLR](images/img_4793.png){.thumbnail}
+
+Chaque requête est facturée 0,1 crédit SMS. Consultez la [grille tarifaire SMS](/links/telecom/sms-prices) pour plus de détails.
+<!-- CP-STEPS-END:hlr-new-request -->
+
+### Consulter les requêtes passées
+
+<!-- CP-STEPS-START:hlr-past-requests -->
+Les résultats de vos requêtes apparaissent dans le tableau en bas de page.
+
+![Tableau des résultats de requêtes HLR](images/tableau-historique.png){.thumbnail}
+<!-- CP-STEPS-END:hlr-past-requests -->
+
+### Les différents états
+
+Les rapports HLR indiquent :
+
+- la date de la requête HLR ;
+- le coût de la requête HLR ;
+- le statut de la requête HLR ;
+- le numéro du destinataire ;
+- l'opérateur du destinataire ;
+- le statut actif/inactif du destinataire ;
+- la joignabilité du destinataire ;
+- le statut porté du destinataire ;
 - le statut en itinérance du destinataire.
 
-## Importation du fichier de destinataires
-Rendez vous dans la partie Contacts et ajoutez votre fichier .csv que vous aurez préalablement hébergé sur un [service adapté](https://plik.root.gg).
+### Importation du fichier de destinataires
 
-Le fichier .csv devra comporter une colonne numbers afin d'être reconnu.
-Vous avez également la possibilité de créer un fichier numbers.txt avec la liste de numéros de vos contacts, au format international, avec un contact par ligne.
+<!-- CP-STEPS-START:import-contacts -->
+Rendez-vous dans la partie `Contacts`{.action} > `Créer une liste de contacts`{.action} et ajoutez votre fichier au format `.csv` ou `.txt`.
 
-![](images/img_4795.jpg){.thumbnail}
+![Créer une liste de contacts](images/creer-liste-contacts.png){.thumbnail}
 
-## Nettoyer le fichier
-Une fois votre carnet chargé sur l'espace client, sélectionnez le et procédez au nettoyage.
+![Ajout fichier contacts](images/ajouter-fichier-contacts.png){.thumbnail}
 
-![](images/img_4796.jpg){.thumbnail}
-Deux options vous sont proposées :
+Consultez le guide « [Liste de destinataires SMS](/pages/web_cloud/messaging/sms/liste_de_destinataire_sms) » pour plus de détails.
+<!-- CP-STEPS-END:import-contacts -->
 
-- Freemium : Dédoublonnage et vérifications syntaxiques (Gratuit).
-- Premium : Dédoublonnage et vérification de la validité des contacts via une requête HLR (Cette action sera facturée 0.1 crédit SMS par contact)
+### Nettoyer le fichier
 
-![](images/img_4797.jpg){.thumbnail}
+<!-- CP-STEPS-START:clean-contact-list -->
+Une fois votre carnet chargé sur l'espace client, sélectionnez-le et procédez au nettoyage.
+
+![Sélection du carnet de contacts à nettoyer](images/nettoyer-liste.png){.thumbnail}
+
+2 options sont disponibles :
+
+- Freemium : dédoublonnage et vérifications syntaxiques (gratuit).
+- Premium : dédoublonnage et vérification de la validité des contacts via une requête HLR (cette action sera facturée 0,1 crédit SMS par contact).
+
+![Options de nettoyage Freemium et Premium](images/options-de-nettoyage.png){.thumbnail}
+
 Le nettoyage de la base dédoublonnera vos contacts et éliminera ceux qui sont invalides.
 Le fichier nettoyé remplacera l'ancien qui sera sauvegardé et accessible. Vous recevrez un rapport par e-mail à la fin de l'opération.
+<!-- CP-STEPS-END:clean-contact-list -->
 
+## Aller plus loin
+
+Échangez avec notre [communauté d'utilisateurs](/links/community).

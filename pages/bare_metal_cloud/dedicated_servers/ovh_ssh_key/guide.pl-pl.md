@@ -1,6 +1,6 @@
 ---
-title: Instalacja klucza SSH OVHcloud
-excerpt: Przewodnik opisuje instalację klucza SSH OVHcloud umożliwiającego naszym administratorom dokonywanie interwencji oraz jego dezaktywację
+title: "Serwer dedykowany - Zarządzanie kluczami SSH w Panelu klienta"
+excerpt: "Zarządzaj kluczami SSH w Panelu klienta OVHcloud do instalacji i reinstalacji serwerów dedykowanych."
 updated: 2018-02-12
 ---
 
@@ -115,5 +115,7 @@ cat /root/.ssh/authorized_keys2
 ## Sprawdź również
 
 [Wprowadzenie do protokołów SSH](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction).
+
+- [Jak dodać klucz SSH w Panelu klienta OVHcloud](/pages/bare_metal_cloud/dedicated_servers/import-keys-control-panel)
 
 Przyłącz się do społeczności naszych użytkowników na <https://community.ovh.com>.

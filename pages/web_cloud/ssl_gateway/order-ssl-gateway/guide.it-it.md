@@ -73,21 +73,20 @@ Una volta convalidato l’ordine, se non hai selezionato la casella `Gestisco la
 > Se non modifichi la tua zona DNS entro 3 giorni, il tuo ordine verrà annullato.
 >
 
-> [!faq]
+> [!primary]
 >
-> Caso 1: la zona DNS è gestita dai server DNS condivisi OVHcloud.
->>
->> - Se il tuo identificativo è contatto *amministratore* o *tecnico* della zona DNS, è necessario modificarla dallo [Spazio Cliente OVHcloud](/links/manager).
->> - Se non sei contatto *amministratore* o *tecnico* della zona DNS, contatta il responsabile della zona DNS per modificarla.
->>
->> Se necessario, consulta le istruzioni contenute nella guida "[Creare una zona DNS OVHcloud per un dominio](/pages/web_cloud/domains/dns_zone_create)".
->>
+> **Caso 1: la zona DNS è gestita dai server DNS condivisi OVHcloud.**
 >
-> Caso 2: la zona DNS non è gestita dai server DNS condivisi OVHcloud.
->>
->> - In questo caso, modifica l'IP nella tua zona DNS accedendo all'interfaccia del tuo provider o del tuo server dedicato.
->>
+> - Se il tuo identificativo è contatto *amministratore* o *tecnico* della zona DNS, è necessario modificarla dallo [Spazio Cliente OVHcloud](/links/manager).
+> - Se non sei contatto *amministratore* o *tecnico* della zona DNS, contatta il responsabile della zona DNS per modificarla.
 >
+> Se necessario, consulta le istruzioni contenute nella guida "[Creare una zona DNS OVHcloud per un dominio](/pages/web_cloud/domains/dns_zone_create)".
+
+> [!primary]
+>
+> **Caso 2: la zona DNS non è gestita dai server DNS condivisi OVHcloud.**
+>
+> - In questo caso, modifica l'IP nella tua zona DNS accedendo all'interfaccia del tuo provider o del tuo server dedicato.
 
 Una volta effettuate le operazioni necessarie, riceverai un’email di conferma.
 

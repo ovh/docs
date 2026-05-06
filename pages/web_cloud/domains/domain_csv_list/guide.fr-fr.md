@@ -13,26 +13,31 @@ Vous souhaitez récupérer la liste de tous les noms de domaine présents sur vo
 ## Prérequis
 
 - Disposer d'un [nom de domaine](/links/web/domains) enregistré chez OVHcloud.
-- Être connecté à votre [espace client OVHcloud](/links/manager).
+
+<!-- CP-NAV-START:web-domains -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Noms de domaine](/links/control-panel/web-domains)
+- **Pour accéder à vos services :** `Web Cloud`{.action} > `Noms de domaine`{.action} > Sélectionnez votre nom de domaine
+
+---
+<!-- CP-NAV-END:web-domains -->
 
 ## En pratique
 
-Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4** étapes.
+<!-- CP-STEPS-START:export-csv -->
+Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3** étapes.
 
 > [!tabs]
 > **Étape 1**
 >>
->> Connectez-vous à votre [espace client OVHcloud](/links/manager), puis rendez-vous dans la partie `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Étape 2**
->>
->> Cliquez sur le menu `Noms de domaine`{.action}. Au-dessus du tableau qui s'affiche, cliquez sur le bouton `Exporter en CSV`{.action}.
+>> Accédez à la page [Noms de domaine](/links/control-panel/web-domains). Au-dessus du tableau qui s'affiche, cliquez sur le bouton `Exporter en CSV`{.action}.
 >>
 >> ![Domain Names](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
 >>
-> **Étape 3**
+> **Étape 2**
 >>
 >> Dans la fenêtre qui s'ouvre, cochez les informations que vous souhaitez inclure dans le fichier CSV pour tous vos noms de domaine.
 >>
@@ -40,7 +45,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4*
 >>
 >> Cliquez ensuite sur le bouton `Exporter`{.action} pour démarrer la génération du fichier au format CSV.
 >>
-> **Étape 4**
+> **Étape 3**
 >>
 >> Une fenêtre de chargement apparaît. Patientez jusqu'à ce que la barre de progression atteigne 100 %.
 >>
@@ -51,6 +56,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4*
 >> ![Export domains in CSV format step 2 done](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/export-csv/export-domains-in-csv-format-step-2b.png){.thumbnail}
 >>
 >> Si le téléchargement du fichier CSV ne s'est pas lancé automatiquement, cliquez sur le lien `télécharger manuellement`{.action} afin de le récupérer.
+<!-- CP-STEPS-END:export-csv -->
 
 ## Aller plus loin
 
@@ -58,4 +64,4 @@ Pour des prestations spécialisées (référencement, développement, etc.), con
 
 Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](/links/support).
 
-Échangez avec notre [communauté d'utilisateurs](/links/community).
+Échangez avec notre [communauté d'utilisateurs](/links/community).

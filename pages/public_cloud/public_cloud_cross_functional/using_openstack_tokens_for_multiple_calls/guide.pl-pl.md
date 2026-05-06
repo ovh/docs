@@ -33,8 +33,18 @@ Niniejszy przewodnik wyjaśnia, jak emitować token OpenStack, używać go do wy
 
 ## Wymagania początkowe 
 
-- Dostęp do [Panelu klienta OVHcloud](/links/manager).
 - Niniejszy przewodnik wymaga instalacji narzędzia OpenStack CLI na Twoim komputerze.
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Ścieżka nawigacji:** `Public Cloud`{.action} > Wybierz projekt
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 > [!primary]
 >
@@ -57,8 +67,6 @@ sudo yum install python3-openstackclient
 ## W praktyce
 
 ### Etap 1: pobierz i utwórz plik OpenRC
-
-Zaloguj się do [Panelu klienta OVHcloud](/links/manager) i otwórz swój projekt `Public Cloud`{.action}.
 
 Kliknij `Użytkownicy i role`{.action} w sekcji **Ustawienia**, a następnie przycisk `...`{.action} po prawej stronie użytkownika OpenStack.<br>
 Pobierz plik OpenRC tego użytkownika i podaj region, w którym chcesz wykonywać operacje.

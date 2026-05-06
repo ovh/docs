@@ -14,7 +14,6 @@ The **CMS** (**C**ontent **M**anagement **S**ystem) Typo3 enables the developmen
 
 - An [OVHcloud web hosting plan](/links/web/hosting) that contains at least one database
 - A [domain name](/links/web/domains).
-- Access to the [OVHcloud Control Panel](/links/manager).
 
 ## Instructions
 

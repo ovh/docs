@@ -14,6 +14,17 @@ La password associata allo Spazio Cliente è la chiave di accesso a tutti i serv
 - Disporre di un account OVHcloud attivo
 - Conoscere l’identificativo cliente e l’indirizzo email associato all’account
 
+<!-- CP-NAV-START:account-security -->
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [Sicurezza](/links/control-panel/account-security)
+- **Percorso di navigazione:** Clicca sul tuo nome in alto a destra > `Accedere al mio account`{.action} > `Sicurezza`{.action}
+
+---
+<!-- CP-NAV-END:account-security -->
+
 ## Procedura
 
 ### Genera una password efficace
@@ -67,9 +78,7 @@ Nel caso in cui la password risulti compromessa, consigliamo di [modificarla imm
 
 #### Dallo Spazio Cliente
 
-- Accedi allo [Spazio Cliente OVHcloud](/links/manager), clicca sul tuo nome in alto a destra e poi su `Accedere al mio account`{.action}.
-
-- Clicca sulla scheda `Sicurezza`{.action} e poi sul pulsante `Modificare`{.action} in corrispondenza della voce “Password”.
+- Nella pagina [Sicurezza dell'account](/links/control-panel/account-security), clicca sul pulsante `Modificare`{.action} in corrispondenza della voce “Password”.
 
 ![manage-ovh-password](/pages/assets/screens/control_panel/product-selection/right-column/access-my-account/edit-account-password.png){.thumbnail}
 
@@ -82,6 +91,7 @@ Nel caso in cui la password risulti compromessa, consigliamo di [modificarla imm
 ![manage-ovh-password](images/account-password-modif-manager-step4.png){.thumbnail}
 
 - A questo punto compare un messaggio che conferma che l’operazione eseguita è andata a buon fine. Clicca su `Continua`{.action} per essere reindirizzato alla pagina di login. Inserisci l’identificativo e la nuova password.
+
 
 <a name="lost-password"></a>
 
@@ -109,6 +119,7 @@ Nel caso in cui la password risulti compromessa, consigliamo di [modificarla imm
 > 
 > Durante la propagazione della modifica tutte le sessioni attive sull’account OVHcloud verranno chiuse automaticamente.
 > 
+
 
 ## Per saperne di più
 

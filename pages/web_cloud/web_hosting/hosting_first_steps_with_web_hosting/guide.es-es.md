@@ -33,7 +33,17 @@ details[open]>summary::before {
 - Haber recibido el email de confirmación de la instalación de su alojamiento web.
 - Tener un [dominio](/links/web/domains) y una zona DNS asociada en OVHcloud.
 - Todos los servicios (alojamiento web, dominio, zona DNS) deben ser accesibles desde una única cuenta de OVHcloud.
-- Estar conectado a su [área de cliente de OVHcloud](/links/manager), en la sección `Web Cloud`{.action}.
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [Web hosting](/links/control-panel/web-hosting)
+- **Ruta de navegación:** `Web Cloud`{.action} > `Alojamientos`{.action} > Seleccione su alojamiento web
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## Procedimiento
 

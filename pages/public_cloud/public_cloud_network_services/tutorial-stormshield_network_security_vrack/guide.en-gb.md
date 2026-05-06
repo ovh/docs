@@ -21,13 +21,23 @@ This guide provides step-by-step instructions for deploying and configuring SNS 
 ## Requirements
 
 - A [Public Cloud project](/pages/public_cloud/public_cloud_cross_functional/create_a_public_cloud_project) in your OVHcloud account
-- Access to the [OVHcloud Control Panel](/links/manager)
 - An [OpenStack user](/pages/public_cloud/public_cloud_cross_functional/create_and_delete_a_user) (optional)
 - Basic networking knowledge
 - A Stormshield account on the [Stormshield website](https://documentation.stormshield.eu/SNS/v4/en/Content/Installation_and_first_time_configuration/Firewall_license_installation.htm)
 - Ensure that the vRack is enabled and configured to allow secure communication between the components of the infrastructure.
 - An [Additional IP block](/links/network/additional-ip) (/29) for ensuring network failover and high availability setup.
 - Stormshield Elastic Virtual Appliance licence BYOL (**B**ring **Y**our **O**wn **L**icence), obtained through [third-party partners or resellers](https://www.stormshield.com/partner/partner-finder/), as you will need to provide it during the installation and configuration process.
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Navigation path:** `Public Cloud`{.action} > Select your project
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## Instructions
 
@@ -129,9 +139,12 @@ openstack server create --flavor b3-32 --image stormshield-SNS-EVA-4.8.3 --netwo
 
 #### Configure the SNS EVA instances
 
-Log into the [OVHcloud Control Panel](/links/manager), go to the `Public Cloud`{.action} section, and select the relevant Public Cloud project. In the left menu, click on `Instances`{.action} under the **Compute** tab, then find your two SNS EVA instances.
+<!-- CP-STEPS-START:configure-sns-eva-instances -->
+In the `Public Cloud`{.action} section, select your project. In the left menu, click on `Instances`{.action} under the **Compute** tab, then find your two SNS EVA instances.
 
 Access the VNC console for both SNS EVA instances and configure the keyboard layout and the password.
+
+<!-- CP-STEPS-END:configure-sns-eva-instances -->
 
 Configure the default gateway on the first SNS EVA with our IP block gateway:
 

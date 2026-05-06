@@ -1,7 +1,7 @@
 ---
 title: AI Endpoints - Build a JavaScript Chatbot with LangChain
 excerpt: Learn how to build a chatbot using JavaScript, LangChain, and AI Endpoints
-updated: 2025-12-19
+updated: 2026-04-15
 ---
 
 > [!primary]
@@ -13,7 +13,7 @@ updated: 2025-12-19
 
 **[LangChain](https://github.com/langchain-ai/langchain)** is a leading framework for building applications powered by Large Language Models (LLMs). While it's well-known for Python, LangChain also provides support for JavaScript/TypeScript—ideal for frontend and fullstack applications.
 
-In this tutorial, we'll show you how to build a simple command-line chatbot using LangChain and OVHcloud **[AI Endpoints](https://endpoints.ai.cloud.ovh.net/)**, first in **blocking mode**, and then with **streaming** for real-time responses.
+In this tutorial, we'll show you how to build a simple command-line chatbot using LangChain and OVHcloud **[AI Endpoints](/links/public-cloud/ai-endpoints)**, first in **blocking mode**, and then with **streaming** for real-time responses.
 
 ## Objective
 
@@ -93,7 +93,7 @@ async function chatCompletion(question) {
     ["human", "{question}"]
   ]);
 
-  // Use Mixtral-8x22B as LLM
+  // Use gpt-oss-120b as LLM
   const model = new ChatMistralAI({
     modelName: process.env.OVH_AI_ENDPOINTS_MODEL_NAME,
     model: process.env.OVH_AI_ENDPOINTS_MODEL_NAME,
@@ -164,7 +164,7 @@ async function chatCompletion(question) {
     ["human", "{question}"]
   ]);
 
-  // Use Mixtral-8x22B as LLM
+  // Use gpt-oss-120b as LLM
   const model = new ChatMistralAI({
     modelName: process.env.OVH_AI_ENDPOINTS_MODEL_NAME,
     model: process.env.OVH_AI_ENDPOINTS_MODEL_NAME,

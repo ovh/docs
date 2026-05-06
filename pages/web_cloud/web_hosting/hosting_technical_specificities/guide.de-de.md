@@ -1,7 +1,7 @@
 ---
 title: "Technische Eigenschaften von Webhostings"
 excerpt: Erfahren Sie hier verschiedene Informationen und technische Details zu Webhostings
-updated: 2023-12-08
+updated: 2026-04-01
 ---
 
 ## Ziel
@@ -13,7 +13,6 @@ Die OVHcloud Webhosting-Angebote basieren auf einer geteilten Infrastruktur (*sh
 ## Voraussetzungen
 
 - Sie verfügen über ein [OVHcloud Webhosting](https://www.ovh.com/de/hosting/) in Ihrem Kunden-Account.
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 
 ## In der praktischen Anwendung
 
@@ -27,13 +26,7 @@ Die OVHcloud Webhosting-Angebote basieren auf einer geteilten Infrastruktur (*sh
 
 - Für FTP-Verbindungen ist der **passive Modus** zu verwenden. Stellen Sie sicher, dass Ihr Skript oder Ihr FTP-Client entsprechend konfiguriert ist.
 
-- Wenn beim Anmelden bei Ihrem FTP-Speicherplatz der Zugriffsfehler "Fehler 530: Login-Authentifizierung fehlgeschlagen" auftritt: Stellen Sie sicher, dass die Zugangsdaten für Ihren FTP-Speicherplatz korrekt sind. Loggen Sie sich hierzu in Ihr [OVHcloud Kundencenter](/links/manager) ein und gehen Sie in den Bereich `Web Cloud`{.action}. Klicken Sie in der linken Spalte auf `Hosting-Pakete`{.action} und wählen Sie das betreffende Webhosting aus. Klicken Sie auf der angezeigten Seite auf `FTP - SSH`{.action}.
-
-Dort finden Sie alle Login-Daten zu Ihrem FTP-Speicherplatz mit Ausnahme des Passworts.
-
-Kennwörter werden nicht angezeigt, können aber geändert werden.
-
-Weitere Informationen zu diesem Thema finden Sie in unserer Anleitung „[Mit dem FTP-Speicherplatz Ihres Webhostings verbinden](/pages/web_cloud/web_hosting/ftp_connection)“.
+- Wenn beim Anmelden bei Ihrem FTP-Speicherplatz der Zugriffsfehler “Fehler 530: Login-Authentifizierung fehlgeschlagen” auftritt, stellen Sie sicher, dass die Zugangsdaten für Ihren FTP-Speicherplatz korrekt sind. In unserer Anleitung „[Mit dem FTP-Speicherplatz Ihres Webhostings verbinden](/pages/web_cloud/web_hosting/ftp_connection)” finden Sie alle Login-Daten zu Ihrem FTP-Speicherplatz. Kennwörter werden nicht angezeigt, können aber geändert werden.
 
 ### E-Mails <a name="emails"></a>
 

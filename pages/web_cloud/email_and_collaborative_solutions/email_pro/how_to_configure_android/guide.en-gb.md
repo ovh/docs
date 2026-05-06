@@ -32,6 +32,17 @@ You can configure Email Pro accounts on email clients, if they are compatible. B
 - You have the Gmail app installed on your device. You can install the app from the Google Play Store.
 - You have the required credentials for the email account you would like to configure.
 
+<!-- CP-NAV-START:web-email-pro -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Email Pro](/links/control-panel/web-email-pro)
+- **Navigation path:** `Web Cloud`{.action} > `Email Pro`{.action} > Select your platform
+
+---
+<!-- CP-NAV-END:web-email-pro -->
+
 > [!primary]
 >
 > This guide was created using a device with Android version 13.
@@ -40,16 +51,13 @@ You can configure Email Pro accounts on email clients, if they are compatible. B
 
 ### How to add your email account
 
+<!-- CP-STEPS-START:find-server-name-in-cp -->
 > [!primary]
 >
 > In this guide, we will use as the server name: pro?.mail.ovh.net. You will need to replace the "?" with the actual number indicating the appropriate server for your Email Pro service.
 >
-> 1. Log in to your [OVHcloud Control Panel](/links/manager).
-> 1. Open the `Web Cloud`{.action} section.
-> 1. Click `Email Pro`{.action}.
-> 1. Select the service concerned.
-> 1. The server name is displayed in the **Connection** box in the `General Information`{.action} tab.
->
+> Click [this link](/links/control-panel/web-email-pro) to access the `Email Pro`{.action} section. The server name is visible in the **Connection** section of the `General information`{.action} tab.
+<!-- CP-STEPS-END:find-server-name-in-cp -->
 
 On your device's homepage, go to the `Gmail`{.action} app.
 

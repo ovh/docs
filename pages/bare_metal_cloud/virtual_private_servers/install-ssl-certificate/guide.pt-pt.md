@@ -156,11 +156,11 @@ server {
     ssl_certificate /etc/letsencrypt/live/your_domain/fullchain.pem;
     ssl_certificate_key /etc/letsencrypt/live/your_domain/privkey.pem;
 
-    # Paramètres de sécurité supplémentaires
+    # Parâmetros de segurança adicionais
     ssl_protocols TLSv1.2 TLSv1.3;
     ssl_ciphers HIGH:!aNULL:!MD5;
 
-    # Redirection HTTP vers HTTPS
+    # Redirecionamento HTTP para HTTPS
     location / {
         try_files $uri $uri/ =404;
     }
@@ -217,12 +217,12 @@ sudo a2enmod headers
     ServerName your_domain
     DocumentRoot /var/www/your_domain
 
-    # Activer SSL
+    # Ativar SSL
     SSLEngine on
     SSLCertificateFile /etc/letsencrypt/live/your_domain/fullchain.pem
     SSLCertificateKeyFile /etc/letsencrypt/live/your_domain/privkey.pem
 
-    # Paramètres de sécurité supplémentaires
+    # Parâmetros de segurança adicionais
     SSLProtocol all -SSLv3 -TLSv1 -TLSv1.1
     SSLCipherSuite HIGH:!aNULL:!MD5
     SSLHonorCipherOrder on

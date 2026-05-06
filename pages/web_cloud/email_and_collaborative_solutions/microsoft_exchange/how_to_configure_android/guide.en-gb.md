@@ -30,6 +30,17 @@ Email accounts of the Exchange solution can be configured on various compatible 
 - You have the Gmail app installed on your device. You can install the app from the Google Play Store.
 - You have the login credentials for the Exchange account to be configured.
 
+<!-- CP-NAV-START:web-exchange -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Exchange](/links/control-panel/web-exchange)
+- **Navigation path:** `Web Cloud`{.action} > `Exchange`{.action} > Select your platform
+
+---
+<!-- CP-NAV-END:web-exchange -->
+
 > [!primary]
 >
 > The instructions in this guide are based on a device that uses Android version 13.
@@ -38,16 +49,13 @@ Email accounts of the Exchange solution can be configured on various compatible 
 
 ### How to add your email account <a name="addaccount"></a>
 
+<!-- CP-STEPS-START:exchange-server-lookup -->
 > [!primary]
 >
 > In this guide, we use as the hostname: ex?.mail.ovh.net. You will need to replace the "?" with the actual number indicating the appropriate server for your Email Pro service.
 >
-> 1. Log in to your [OVHcloud Control Panel](/links/manager).
-> 1. Open the `Web Cloud`{.action} section.
-> 1. In the `MICROSOFT` section, click `Exchange`{.action}.
-> 1. Select the service concerned.
-> 1. The server name is displayed in the **Connection** box in the `General Information`{.action} tab.
->
+> Click [this link](/links/control-panel/web-exchange) to access the `Exchange`{.action} section. The server name is displayed in the **Connection** section of the `General information`{.action} tab.
+<!-- CP-STEPS-END:exchange-server-lookup -->
 
 On your device’s homepage, open the `Gmail`{.action} app.
 

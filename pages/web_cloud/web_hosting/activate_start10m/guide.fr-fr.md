@@ -21,36 +21,42 @@ Ce guide vous présente comment activer cette offre sur votre [nom de domaine](/
 ## Prérequis
 
 - Disposer d'un [nom de domaine](/links/web/domains) dans votre [espace client OVHcloud](/links/manager), détaché de tout hébergement Web et sans aucun [MX Plan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities) associé.
-- Être connecté à votre [espace client OVHcloud](/links/manager).
 
 > [!primary]
 >
 > L'hébergement gratuit 100M est **uniquement** disponible pour nos clients en Europe.
 
+<!-- CP-NAV-START:web-domains -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Noms de domaine](/links/control-panel/web-domains)
+- **Pour accéder à vos services :** `Web Cloud`{.action} > `Noms de domaine`{.action} > Sélectionnez votre nom de domaine
+
+---
+<!-- CP-NAV-END:web-domains -->
+
+
 ## En pratique
 
-Pour activer votre hébergement gratuit 100M, cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4** étapes.
+<!-- CP-STEPS-START:activate-100m-steps -->
+Pour activer votre hébergement gratuit 100M, cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3** étapes.
 
 > [!tabs]
-> **Etape 1**
+> **Étape 1**
 >>
->> Connectez-vous à votre [espace client OVHcloud](/links/manager), puis rendez-vous dans la partie `Web Cloud`{.action}.
+>> Accédez à la page [Noms de domaine](/links/control-panel/web-domains), puis choisissez le nom de domaine concerné.
 >>
->> ![enable 100m](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
+>> ![Domain Names](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
 >>
-> **Etape 2**
->>
->> Cliquez sur le menu `Noms de domaine`{.action}, puis choisissez le nom de domaine concerné.
->>
->> ![enable 100m](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
->>
-> **Etape 3**
+> **Étape 2**
 >>
 >> Dans le cadre **Informations générales** vous trouverez la mention **Hébergement Web et e-mail gratuit**. Cliquez sur le bouton `...`{.action} à droite puis sur `Activer`{.action}.
 >>
 >> ![enable 100m](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/enable-100m.png){.thumbnail}
 >>
-> **Etape 4**
+> **Étape 3**
 >>
 >> La fenêtre d'activation s'affiche. La section **1** vous rappelle l'offre et son tarif, cliquez sur `Suivant`{.action}.
 >> Pour la section **2**, choisissez les modifications à apporter sur votre zone DNS :
@@ -74,6 +80,7 @@ Pour activer votre hébergement gratuit 100M, cliquez sur les onglets ci-dessous
 >> La section **3** vous rappelle la tarification de l'offre. 
 >>
 >> Dans la section **4**, prenez connaissance des contrats, puis validez votre commande pour terminer la demande d'activation de votre hébergement gratuit 100M.
+<!-- CP-STEPS-END:activate-100m-steps -->
 
 > [!primary]
 >

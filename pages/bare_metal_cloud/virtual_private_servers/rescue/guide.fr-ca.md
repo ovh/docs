@@ -1,18 +1,18 @@
 ---
 title: Activer et utiliser le mode rescue sur un VPS
 excerpt: Découvrez comment utiliser le mode rescue OVHcloud pour dépanner votre VPS et effectuer des vérifications système
-updated: 2025-03-27
+updated: 2025-01-12
 ---
 
 ## Objectif
 
-Le mode secours (*rescue*) est un outil fourni par OVHcloud pour démarrer votre VPS dans un système d'exploitation temporaire. Vous pouvez alors accéder à votre système afin d'exécuter des tâches de diagnostic et résoudre différents problèmes, par exemple :
+Le mode secours (*rescue*) est un outil fourni par OVHcloud pour démarrer votre VPS dans un système d'exploitation temporaire. Vous pouvez alors accéder à votre système pour exécuter des tâches de diagnostic et résoudre différents problèmes, par exemple :
 
-- [Réinitialisation du mot de passe de l'utilisateur pour récupérer l'accès](/pages/bare_metal_cloud/dedicated_servers/replacing-user-password)
-- Diagnostic des problèmes réseau
+- [Réinitialiser le mot de passe de l'utilisateur pour récupérer l'accès](/pages/bare_metal_cloud/dedicated_servers/replacing-user-password)
+- Diagnostiquer des problèmes réseau
 - Réparer un système d'exploitation défectueux
-- Réparer un firewall logiciel mal configuré
-- Test des performances du disque
+- Réparer un pare-feu logiciel mal configuré
+- Tester les performances du disque
 
 Si vous rencontrez un problème avec votre système, effectuer des vérifications en mode rescue permet de déterminer s'il est lié à un logiciel installé sur le VPS ou s'il y a une cause plus profonde. Avant de contacter nos équipes de support, nous vous recommandons d'utiliser le mode rescue pour collecter les résultats des tests et exclure toute erreur logicielle.
 
@@ -26,7 +26,17 @@ Si vous rencontrez un problème avec votre système, effectuer des vérification
 ## Prérequis
 
 - Un [VPS](/links/bare-metal/vps) dans votre compte OVHcloud
-- Accès à l’[espace client OVHcloud](/links/manager)
+
+<!-- CP-NAV-START:baremetal-vps -->
+---
+
+### Accès à l’espace client OVHcloud
+
+- **Lien direct :** [Gestion VPS](/links/control-panel/baremetal-vps)
+- **Pour accéder à vos services :** `Bare Metal Cloud`{.action} > `Serveurs Privés Virtuels`{.action} > Sélectionnez votre VPS
+
+---
+<!-- CP-NAV-END:baremetal-vps -->
 
 > [!warning]
 > OVHcloud fournit des services dont la configuration et la gestion relèvent de votre responsabilité. Il est donc de votre responsabilité de vous assurer de leur bon fonctionnement.
@@ -37,8 +47,6 @@ Si vous rencontrez un problème avec votre système, effectuer des vérification
 ## En pratique
 
 ### Activation du mode rescue
-
-Connectez-vous à votre [espace client OVHcloud](/links/manager), rendez-vous dans la section `Bare Metal Cloud`{.action} et sélectionnez votre serveur sous la partie `Serveur privés virtuels`{.action}.
 
 Sous l'onglet `Accueil`{.action}, cliquez sur `...`{.action} à côté de « Boot » dans la zone **Votre VPS**.
 
@@ -53,6 +61,10 @@ Une fois le redémarrage initié, une barre de progression vous indiquera la dur
 > [!primary]
 >
 > Vous recevrez un e-mail automatique contenant les informations d'identification SSH pour accéder au mode rescue. Veuillez attendre la réception de l'e-mail avant de poursuivre toute action. Cet e-mail est également disponible dans votre [espace client OVHcloud](/links/manager). Pour le retrouver, cliquez sur le nom associé à votre identifiant OVHcloud dans la barre de menus située dans le coin supérieur droit, puis sélectionnez `E-mails de service`{.action}.
+>
+
+> [!warning]
+> Veuillez noter que si vous n'êtes plus le contact technique du serveur, vous ne recevrez pas l'e-mail. Pour plus d'informations, consultez notre guide : « [Gérer les contacts de ses services](/pages/account_and_service_management/account_information/managing_contacts) ».
 >
 
 Vous devrez ensuite [accéder à votre serveur via SSH](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction), en utilisant le mot de passe temporaire généré pour le mode rescue.
@@ -79,7 +91,7 @@ root@vps-x11x11xyy.vps.ovh.net's password:
 
 
 
-Pour effectuer la plupart des modifications sur votre serveur via SSH en mode rescue, vous devrez monter la partition système.
+Pour la plupart des modifications via SSH en mode rescue, vous devez monter la partition système.
 
 Une fois connecté, vérifiez les disques attachés avec cette commande :
 
@@ -126,7 +138,7 @@ Vous devriez alors voir votre système de fichiers s'afficher :
 bin  boot  dev  etc  home  lib  lib32  lib64  libx32  lost+found  media  mnt  opt  proc  root  run  sbin  snap  srv  sys  tmp  usr  var
 ```
 
-Cependant, avant de pouvoir manipuler cette partition, vous devez l'ouvrir pour un accès en écriture, ce que vous pouvez faire avec la commande suivante :
+Avant de pouvoir écrire sur cette partition, ouvrez-la en écriture avec la commande suivante :
 
 ```bash
 chroot /mnt
@@ -142,7 +154,7 @@ Une fois vos actions terminées en mode rescue, redémarrez le VPS en mode norma
 
 En cas d'erreur lors du redémarrage d'un VPS, suivez ces étapes :
 
-- Vérifiez le KVM dans votre espace client pour obtenir des informations pertinentes sur les raisons pour lesquelles le VPS ne peut pas démarrer. Consultez notre [guide KVM](/pages/bare_metal_cloud/virtual_private_servers/using_kvm_for_vps) pour obtenir de l’aide sur cette fonctionnalité.
+- Vérifiez le KVM dans votre espace client pour identifier pourquoi le VPS ne démarre pas. Consultez notre [guide KVM](/pages/bare_metal_cloud/virtual_private_servers/using_kvm_for_vps) pour obtenir de l’aide sur cette fonctionnalité.
 - Si le KVM indique que le VPS est bloqué au démarrage ou ne parvient pas à trouver le disque, assurez-vous que [les logs de démarrage sont activés](/pages/bare_metal_cloud/virtual_private_servers/bootlog_display_kvm). Relayez les logs pertinents à nos équipes support pour de plus amples investigations en [créant une demande d'assistance](https://help.ovhcloud.com/csm?id=csm_get_help).
 
 <a name="gofurther"></a>

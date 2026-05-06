@@ -21,7 +21,17 @@ In your [OVHcloud Control Panel](/links/manager), you can increase the capacity 
 ## Requirements
 
 - An [OVHcloud web hosting plan](/links/web/hosting)
-- Access to the [OVHcloud Control Panel](/links/manager) with the required permissions to manage the Web Hosting plan ([Administrator contact](/pages/account_and_service_management/account_information/managing_contacts))
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Hosting plans](/links/control-panel/web-hosting)
+- **Navigation path:** `Web Cloud`{.action} > `Hosting plans`{.action} > Select your web hosting plan
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## Instructions
 
@@ -41,28 +51,24 @@ In your [OVHcloud Control Panel](/links/manager), you can increase the capacity 
 > If you would like to change your subscription to a lower plan, please follow the steps in our guide on "[Migrating your website and emails to OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh)".
 >
 
-To modify your subscription, click on the tabs below to view each of the **3** steps.
+<!-- CP-STEPS-START:modify-subscription -->
+To modify your subscription, click on the tabs below to view each of the **2** steps.
 
 > [!tabs]
 > **Step 1**
 >>
->> Log in to the [OVHcloud Control Panel](/links/manager), then go to the `Web Cloud`{.action} section.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Step 2**
->>
->> Click the `Hosting plans`{.action} menu, then select the web hosting plan concerned.
+>> Go to the [Hosting plans](/links/control-panel/web-hosting) page, then select the web hosting plan concerned.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Step 3**
+> **Step 2**
 >>
 >> In the **Plan** box, click the `...`{.action} button to the right of **Solution**, then `Change plan`{.action}.
 >>
 >> ![change_plan](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/pro-change-plan.png){.thumbnail}
 >>
 >> Then select your new subscription and its duration. Confirm the corresponding contracts, then click `Send`{.action}.
+<!-- CP-STEPS-END:modify-subscription -->
 
 ### Special cases
 
@@ -76,43 +82,34 @@ With the [Boost option](/links/web/hosting-options-boost), available on our *Per
 
 If the **Boost** option is right for you, please find instructions below on how to **enable** or **disable** this option on your web hosting plan.
 
-To **enable the Boost option**, click on the tabs below to view each of the **3** steps.
+<!-- CP-STEPS-START:enable-boost -->
+To **enable the Boost option**, click on the tabs below to view each of the **2** steps.
 
 > [!tabs]
 > **Step 1**
 >>
->> Log in to the [OVHcloud Control Panel](/links/manager), then go to the `Web Cloud`{.action} section.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Step 2**
->>
->> Click the `Hosting plans`{.action} menu, then select the web hosting plan concerned.
+>> Go to the [Hosting plans](/links/control-panel/web-hosting) page, then select the web hosting plan concerned.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Step 3**
+> **Step 2**
 >>
 >>  In the **General information** box on the page that opens, click the `...`{.action} button to the right of **Boost**, then `Boost my hosting plan`{.action}.
 >>
 >> ![boost enable](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/boost-my-hosting-plan.png){.thumbnail}
+<!-- CP-STEPS-END:enable-boost -->
 
-To **disable the Boost option**, click on the tabs below to view each of the **4** steps.
+<!-- CP-STEPS-START:disable-boost -->
+To **disable the Boost option**, click on the tabs below to view each of the **3** steps.
 
 > [!tabs]
 > **Step 1**
 >>
->> Log in to the [OVHcloud Control Panel](/links/manager), then go to the `Web Cloud`{.action} section.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Step 2**
->>
->> Click the `Hosting plans`{.action} menu, then select the Web Hosting plan concerned.
+>> Go to the [Hosting plans](/links/control-panel/web-hosting) page, then select the web hosting plan concerned.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Step 3**
+> **Step 2**
 >>
 >> On the page that pops up, click on the `More`{.action} tab, then click `Boost my hosting plan`{.action}.
 >>
@@ -120,11 +117,12 @@ To **disable the Boost option**, click on the tabs below to view each of the **4
 >>
 >> ![More tab 2](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/more-2.png){.thumbnail}
 >>
-> **Step 4**
+> **Step 3**
 >>
 >> The usage table for the Boost option will appear. Click `Disable boost plan`{.action}.
 >>
 >> ![boost disable](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/boost-my-hosting-plan/deactivate-the-boost-plan.png){.thumbnail}
+<!-- CP-STEPS-END:disable-boost -->
 
 #### Billing when you change plans <a name="billing"></a>
 

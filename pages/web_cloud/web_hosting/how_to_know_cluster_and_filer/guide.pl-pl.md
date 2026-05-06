@@ -15,30 +15,36 @@ Podczas korzystania z hostingu może być konieczne poznanie numeru klastra i/lu
 ## Wymagania początkowe
 
 - Zakupienie [hostingu OVHcloud](/links/web/hosting).
-- Dostęp do [Panelu klienta OVHcloud](/links/manager).
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Hosting plans](/links/control-panel/web-hosting)
+- **Ścieżka nawigacji:** `Web Cloud`{.action} > `Hosting`{.action} > Wybierz hosting WWW
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## W praktyce
 
-Kliknij poniższe zakładki, aby wyświetlić kolejno wszystkie **3** etapy.
+<!-- CP-STEPS-START:find-cluster-and-filer -->
+Kliknij poniższe zakładki, aby wyświetlić kolejne **2** kroki.
 
 > [!tabs]
-> **Etap 1**
+> **Krok 1**
 >>
->> Zaloguj się do [Panelu klienta OVHcloud](/links/manager) i przejdź do sekcji `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Etap 2**
->>
->> Kliknij menu `Hosting`{.action}, następnie wybierz odpowiedni hosting.
+>> Przejdź na stronę [Hosting plans](/links/control-panel/web-hosting), następnie wybierz odpowiedni hosting.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Etap 3**
+> **Krok 2**
 >>
 >> W ramce **Informacje ogólne** na stronie, która się wyświetla, pobierz numer klastra oznaczony jako **Klaster** (3 cyfry zawarte między `0` i `9`) oraz numer kolejki oznaczony jako **Serwer Filer**.
 >>
 >>![Numery klastra i pliku](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-cluster-and-filer.png){.thumbnail}
+<!-- CP-STEPS-END:find-cluster-and-filer -->
 
 ## Sprawdź również
 

@@ -17,7 +17,17 @@ By creating a delegation, you can enable an email account user to manage their o
 ## Requirements
 
 - an MX Plan solution, available as part of our [Web Hosting plans](/links/web/hosting), the [100M free hosting](/links/web/domains-free-hosting), or ordered separately as a standalone solution
-- access to the [OVHcloud Control Panel](/links/manager)
+
+<!-- CP-NAV-START:web-mx-plan -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [MX Plan](/links/control-panel/web-mx-plan)
+- **Navigation path:** `Web Cloud`{.action} > `MX Plan`{.action} > Select your MX Plan service
+
+---
+<!-- CP-NAV-END:web-mx-plan -->
 
 > [!warning]
 >
@@ -36,16 +46,15 @@ By creating a delegation, you can enable an email account user to manage their o
 > When you set up a delegation on an email account, it will appear in the relevant [Control Panel](/links/manager). However, only the modifications listed in the [Objective](#objective) section of this guide will be possible in this situation.
 >
 
-1. Log in to your [OVHcloud Control Panel](/links/manager).
-1. Open the `Web Cloud`{.action} section.
-1. Click `MX Plan`{.action}.
-1. Select the domain concerned.
-1. Switch to the tab `Emails`{.action} to view the list of email accounts in your MX Plan solution.
+<!-- CP-STEPS-START:emails-tab-switch -->
+Switch to the tab `Emails`{.action} to view the list of email accounts in your MX Plan solution.
 
 ![delegation](images/mxplan-delegation-01.png){.thumbnail}
+<!-- CP-STEPS-END:emails-tab-switch -->
 
 ### Delegating all of your email accounts to one or more OVHcloud accounts
 
+<!-- CP-STEPS-START:delegate-all-accounts -->
 This type of delegation allows its recipient to manage passwords, filters, email auto-replies, redirections/aliases, and mailing lists.
 
 Click the button `Manage the elements shared by all email addresses`{.action}.
@@ -57,9 +66,11 @@ This opens a new section. Click the `+`{.action} button to the right of `Add a u
 ![delegation](images/mxplan-delegation-03.png){.thumbnail}
 
 You can delegate the management of your MX Plan service to multiple OVHcloud customer accounts.
+<!-- CP-STEPS-END:delegate-all-accounts -->
 
 ### Delegating one or more email accounts to a user
 
+<!-- CP-STEPS-START:delegate-single-account -->
 With this delegation, the user can change the password for the email account concerned, and manage its filters.
 
 To the right of the email account you want to delegate, click on the `...`{.action} button, then `Delegation management`{.action}.
@@ -71,8 +82,9 @@ Enter the OVHcloud NIC handle that will benefit from this delegation, and confir
 ![delegation](images/mxplan-delegation-05.png){.thumbnail}
 
 You can add multiple OVHcloud customer accounts to manage each email address.
+<!-- CP-STEPS-END:delegate-single-account -->
 
-## Go further
+## Go further <a name="go-further"></a>
 
 [Getting started with the MX Plan solution](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities)
 

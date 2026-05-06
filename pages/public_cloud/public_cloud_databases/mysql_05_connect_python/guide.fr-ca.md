@@ -1,5 +1,5 @@
 ---
-title: MySQL - Connectez-vous avec Python (EN)
+title: Se connecter avec Python au service Public Cloud Databases pour MySQL (EN)
 excerpt: Connect to your Public Cloud Databases for MySQL using the Python programming language
 updated: 2022-03-08
 ---

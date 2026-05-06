@@ -18,11 +18,21 @@ W tym celu możesz przekazać innym kontom klienta OVHcloud uprawnienia do odczy
 ## Wymagania początkowe
 
 - Posiadanie instancji [Public Cloud](/links/public-cloud/public-cloud) na Twoim koncie OVHcloud
-- Dostęp do [Panelu klienta OVHcloud](/links/manager)
 
-## W praktyce 
+## W praktyce
 
-Zaloguj się do [Panelu klienta OVHcloud](/links/manager), przejdź do sekcji `Public Cloud`{.action} i wybierz odpowiedni projekt Public Cloud. Kliknij `Kontakty i uprawnienia`{.action} w sekcji **Ustawienia**.
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Ścieżka nawigacji:** `Public Cloud`{.action} > Wybierz projekt
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
+
+Kliknij `Kontakty i uprawnienia`{.action} w sekcji **Ustawienia**.
 
 Na tej stronie możesz sprawdzić kontakty przypisane do Twojego projektu.
 

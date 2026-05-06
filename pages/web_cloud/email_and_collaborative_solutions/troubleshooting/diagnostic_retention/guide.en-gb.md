@@ -1,7 +1,7 @@
 ---
 title: Restoring deleted items from your email account
 excerpt: Find out how to restore deleted items from your email account via webmail (OWA)
-updated: 2022-02-08
+updated: 2026-03-24
 ---
 
  

@@ -1,7 +1,7 @@
 ---
 title: Object Storage - Optimiser les performances
 excerpt: "Ce guide vous présente différentes méthodes pour optimiser les performances de vos buckets Object Storage, notamment la recherche par plage d'octets, le multipart upload ainsi que d'autres méthodes"
-updated: 2025-06-04
+updated: 2026-03-06
 ---
 
 ## Objectif
@@ -17,10 +17,10 @@ Le principal avantage est qu'il vous permet de paralléliser les requêtes `GET`
 
 ![Schema 1](images/sharding1.png){.thumbnail}
 
-Pour télécharger une partie d'un objet, vous devez utiliser des paramètres supplémentaires pour spécifier la partie de l'objet à récupérer. L'exemple suivant télécharge la première partie, comprise entre 0 et 500 octets, d'un objet nommé « filename » stocké dans le compartiment « test-bucket » et écrit la sortie dans un fichier nommé « object_part » :
+Pour télécharger une partie d'un objet, vous devez utiliser des paramètres supplémentaires pour spécifier la partie de l'objet à récupérer. L'exemple suivant télécharge la première partie, comprise entre 0 et 500 octets, d'un objet nommé `<object_key>` stocké dans le bucket `<bucket_name>` et écrit la sortie dans un fichier nommé `object_part` :
 
 ```bash
-user@host:~$ aws s3api get-object --bucket test-bucket --key filename --range bytes=0-500 object_part
+aws s3api get-object --bucket <bucket_name> --key <object_key> --range bytes=0-500 object_part
 ```
 
 ### Utilisation des MPU
@@ -58,11 +58,11 @@ La section suivante explique comment effectuer un *multipart upload** à l'aide 
 Tout d'abord, vous devez lancer un *multipart upload** :
 
 ```bash
-user@host:~$ aws s3api create-multipart-upload --bucket test-bucket --key filename
+aws s3api create-multipart-upload --bucket <bucket_name> --key <object_key>
 {
-    "Bucket": "test-bucket",
-    "Key": "filename",
-    "UploadId": "YjgxYmRmODItOWRiMi00YmI2LTk1NTMtODBhYWYwYmFjZGYx"
+        "Bucket": "<bucket_name>",
+        "Key": "<object_key>",
+        "UploadId": "<upload_id>"
 }
 ```
 
@@ -77,7 +77,7 @@ Pour chaque partie, vous devez exécuter la commande `upload-part` dans laquelle
 >
 
 ```bash
-user@host:~$ aws s3api upload-part --bucket test-bucket --key filename --part-number 1 --body filename_part1 --upload-id "YjgxYmRmODItOWRiMi00YmI2LTk1NTMtODBhYWYwYmFjZGYx"
+aws s3api upload-part --bucket <bucket_name> --key <object_key> --part-number 1 --body <part_file_path> --upload-id <upload_id>
 {
     "ETag": "\"6769849e543eeb257675b65e7a199aa2\""
 }
@@ -90,12 +90,12 @@ user@host:~$ aws s3api upload-part --bucket test-bucket --key filename --part-nu
 Une fois toutes les pièces téléchargées, vous devez exécuter la commande `complete-multipart-upload` pour terminer le processus et pour que le OVHcloud Object Storage reconstruise l'objet final :
 
 ```bash
-user@host:~$ aws s3api complete-multipart-upload --bucket test-bucket --key filename --upload-id "YjgxYmRmODItOWRiMi00YmI2LTk1NTMtODBhYWYwYmFjZGYx" --multipart-upload file://mpu.json
+aws s3api complete-multipart-upload --bucket <bucket_name> --key <object_key> --upload-id <upload_id> --multipart-upload file://mpu.json
 ```
 
 Où `mpu.json` est :
 
-```bash
+```json
 {
     "Parts": [
         {
@@ -150,25 +150,25 @@ Où `mpu.json` est :
 Pour éviter des coûts inutiles, vous pouvez interrompre le *multipart upload* à l'aide de la commande CLI AWS suivante :
 
 ```bash
-user@host:~$ aws s3api abort-multipart-upload \
-  --bucket test-bucket \
-  --key filename \
-  --upload-id <upload-id>
+aws s3api abort-multipart-upload \
+        --bucket <bucket_name> \
+        --key <object_key> \
+        --upload-id <upload_id>
 ```
 
 L'ID de l'upload est renvoyé par la commande `create-multipart-upload` ou peut être récupéré en listant les *multipart uploads* en cours :
 
 ```bash
-user@host:~$ aws s3api list-multipart-uploads --bucket my-bucket
+aws s3api list-multipart-uploads --bucket <bucket_name>
 ```
 
 Exemple d'interruption d'un *multipart upload* spécifique après avoir récupéré son ID d'upload :
 
 ```bash
-user@host:~$ aws s3api abort-multipart-upload \
-  --bucket my-bucket \
-  --upload-id "OWZiZTA4YzUtODExZC00ZjE5LTkyMjUtZGVmNjcwNjBiYWQ1" \
-  --key <my-file> # name or path of the object
+aws s3api abort-multipart-upload \
+        --bucket <bucket_name> \
+        --upload-id <upload_id> \
+        --key <object_key>
 ```
 
 ### Via d'autres outils tiers
@@ -178,7 +178,7 @@ La liste suivante décrit les options permettant d'effectuer des *multipart uplo
 #### s3cmd
 
 ```bash
-$ multipart-chunk-size-mb=SIZE_
+multipart-chunk-size-mb=<size_mb>
 ```
 
 Cette commande représente la taille de chaque segment d'un *multipart upload*.<br>
@@ -188,7 +188,7 @@ SIZE est exprimé en méga-octets, la taille de bloc par défaut est de 15 Mo, l
 <u> Exemple : </u>
 
 ```bash
-$ s3cmd put --multipart-chunk-size-mb=500 big-file.zip s3://some-bucket/
+s3cmd put --multipart-chunk-size-mb=500 <file_path> s3://<bucket_name>/
 ```
 
 Pour plus d'informations sur *s3cmd*, consultez la documentation officielle [ici](https://s3tools.org/usage).
@@ -196,19 +196,19 @@ Pour plus d'informations sur *s3cmd*, consultez la documentation officielle [ici
 #### rclone
 
 ```bash
-$ s3-upload-cutoff=SIZE
+s3-upload-cutoff=<size>
 ```
 
 Cette commande représente le seuil de taille à partir duquel rclone passe d'un upload d'un fichier unique au *multipart upload*.
 
 ```bash
-$ s3-chunk-size=SIZE
+s3-chunk-size=<size>
 ```
 
 Cette commande représente la taille de chaque segment utilisé dans les *multipart uploads*.
 
 ```bash
-$ s3-upload-concurrency
+s3-upload-concurrency=<concurrency>
 ```
 
 Cette commande représente le nombre de segments uploadés simultanément.
@@ -216,7 +216,7 @@ Cette commande représente le nombre de segments uploadés simultanément.
 <u> Exemple : </u>
 
 ```bash
-$ rclone copy --s3-upload-concurrency 300 --s3-chunk-size 100M --s3-upload-cutoff 100M testfile s3:test-bucket
+rclone copy --s3-upload-concurrency 300 --s3-chunk-size 100M --s3-upload-cutoff 100M <file_path> s3:<bucket_name>
 ```
 
 Pour plus d'informations sur *rclone*, consultez la [documentation officielle](https://rclone.org/s3/).
@@ -235,7 +235,7 @@ Il est également possible d’optimiser considérablement les performances en a
 
 **Qu’est-ce que le *sharding- ?**
 
-OpenIO est une solution de *Software Defined Storage- sur laquelle repose l’Object Storage d’OVHcloud.
+OpenIO est une solution de *Software-Defined Storage* sur laquelle repose l’Object Storage d’OVHcloud.
 
 Dans OpenIO, un **conteneur*- est essentiellement une entité logique interne qui contient tous les objets d'un bucket donné. Chaque conteneur est associé à une base de données de métadonnées interne qui répertorie toutes les adresses du cluster des objets qu'il contient. Par défaut, un bucket Object Storage est associé à un conteneur, mais cela peut changer avec le mécanisme de *sharding*.
 

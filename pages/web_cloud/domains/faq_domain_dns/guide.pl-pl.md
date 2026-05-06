@@ -1,7 +1,7 @@
 ---
-title: "FAQ dotyczący domen & DNS"
-excerpt: "Znajdź najważniejsze pytania dotyczące domen, serwerów DNS i stref DNS"
-updated: 2025-12-16
+title: "FAQ dotyczący nazw domen i DNS"
+excerpt: "Znajdź odpowiedzi na najczęściej zadawane pytania dotyczące nazw domen, serwerów DNS i stref DNS"
+updated: 2026-03-27
 ---
 
 <style>
@@ -18,51 +18,51 @@ details[open]>summary::before {
 }
 </style>
 
-**Kliknij na pytania poniżej, aby zobaczyć wyjaśnienia.**
+**Kliknij poniższe pytania, aby wyświetlić wyjaśnienia.**
 
 ## Subskrypcja nazwy domeny
 
-/// details | Jak mogę zasubskrybować nazwę domeny w OVHcloud?
+/// details | Jak mogę zamówić nazwę domeny w OVHcloud?
 
-Postępuj zgodnie z poniższymi krokami:
+Wykonaj poniższe kroki:
 
-1. Wejdź na naszą stronę internetową [OVHcloud](/links/website).
-2. Na stronie, która się wyświetli i w odpowiednim polu, wpisz nazwę domeny, którą chcesz zarezerwować (np. `domain.tld`), a następnie kliknij przycisk `Szukaj`{.action}.
-3. Na nowo otwartej stronie nasz interfejs poinformuje Cię, czy wybrana nazwa domeny jest dostępna do zakupu. Jeśli jest już zarezerwowana z użyciem składni, którą wpisałeś, zmień ją i ponownie uruchom wyszukiwanie dostępności.
-4. Gdy znajdziesz nazwę domeny, która jest dostępna, kliknij przycisk `Kup`{.action}, a następnie przycisk `Kontynuuj zamówienie`{.action} w prawym słupku.
-5. Wybierz opcjonalne opcje lub usługi, do których chcesz zasubskrybować w dodatku do swojej nazwy domeny, a następnie kliknij `Dalej`{.action} aż do momentu, gdy tunel zakupowy poprosi Cię o zalogowanie się lub utworzenie konta klienta OVHcloud.
-6. Po zalogowaniu się na swoim koncie klienta OVHcloud, możesz dostosować informacje kontaktowe (właściciel/posiadacz, administrator, techniczny) dla swojej nazwy domeny. Następnie kliknij przycisk `Kontynuuj`{.action}, aby przejść do podsumowania swojego zamówienia.
-7. Na stronie `Podsumowanie zamówienia` i jeśli to konieczne, możesz zmodyfikować konfigurację DNS, która zostanie zastosowana do Twojej nazwy domeny, klikając link oznaczony `Zmień konfigurację`{.action}. Po zakończeniu swoich zmian kliknij przycisk `Zapłać`{.action}, aby przejść do ostatniego etapu swojego zamówienia.
+1. Przejdź na [stronę OVHcloud](/links/website).
+2. Na wyświetlonej stronie, w odpowiednim polu, wpisz nazwę domeny, którą chcesz zarezerwować (np. `domain.tld`), a następnie kliknij przycisk `Szukaj`{.action}.
+3. Na nowej stronie nasz interfejs wskaże, czy wybrana nazwa domeny jest dostępna do zakupu. Jeśli jest już zarezerwowana z wpisaną składnią, zmień ją i uruchom nowe wyszukiwanie dostępności.
+4. Po znalezieniu dostępnej nazwy domeny kliknij przycisk `Kup`{.action}, a następnie kliknij przycisk `Kontynuuj zamówienie`{.action} w prawej kolumnie.
+5. Wybierz dodatkowe opcje lub usługi, które chcesz zamówić wraz z nazwą domeny, a następnie klikaj `Dalej`{.action}, aż proces zamówienia poprosi Cię o zalogowanie się lub utworzenie konta klienta OVHcloud.
+6. Po zalogowaniu się na konto klienta OVHcloud możesz dostosować dane kontaktowe (właściciel, administrator, kontakt techniczny) swojej nazwy domeny. Kliknij przycisk `Dalej`{.action}, aby przejść do podsumowania zamówienia.
+7. Na stronie `Podsumowanie zamówienia`, w razie potrzeby, możesz zmienić konfigurację DNS, która będzie stosowana do Twojej nazwy domeny, klikając link `Zmień konfigurację`{.action}. Po zakończeniu zmian kliknij przycisk `Zapłać`{.action}, aby przejść do ostatniego etapu zamówienia.
 
-Zapłać swoje zamówienie, aby rozpocząć rezerwację swojej nazwy domeny oraz instalację usług i opcji, do których zasubskrybowałeś się jako dodatek.
+Zapłać za zamówienie, aby rozpocząć rezerwację nazwy domeny i instalację zamówionych usług i opcji.
 
-Kilka chwil później otrzymasz potwierdzenie e-mailowe dotyczące swojego zamówienia.
-Następnie możesz zarządzać swoją nazwą domeny, logując się do swojego [Panelu klienta OVHcloud](/links/manager).
+Po chwili otrzymasz e-mail z potwierdzeniem zamówienia.
+Następnie możesz zarządzać swoją nazwą domeny, logując się do [Panelu klienta OVHcloud](/links/manager).
 
-Jeśli to konieczne, nie wahaj się utworzyć zgłoszenie wsparcia z [centrum pomocy](https://help.ovhcloud.com/csm?id=csm_get_help).
+W razie potrzeby utwórz zgłoszenie do działu wsparcia w [Centrum pomocy](https://help.ovhcloud.com/csm?id=csm_get_help).
 
 ///
 
 /// details | Jak mogę kupić nazwę domeny na rynku wtórnym?
 
-Kupowanie nazwy domeny na rynku wtórnym przebiega w ten sam sposób, co subskrypcja tej samej nazwy domeny.
+Zakup nazwy domeny na rynku wtórnym przebiega tak samo jak subskrypcja nazwy domeny.
 
-Postępuj zgodnie z poniższymi krokami:
+Wykonaj poniższe kroki:
 
-1. Wejdź na naszą stronę internetową [OVHcloud](/links/website).
-2. Na stronie, która się wyświetli i w odpowiednim polu, wpisz nazwę domeny, którą chcesz zarezerwować (np. `domain.tld`), a następnie kliknij przycisk `Szukaj`{.action}.
-3. Na nowo otwartej stronie nasz interfejs poinformuje Cię, czy wybrana nazwa domeny jest dostępna do zakupu. Jeśli jest już zarezerwowana z użyciem składni, którą wpisałeś, zmień ją i ponownie uruchom wyszukiwanie dostępności.
-4. Gdy znajdziesz nazwę domeny, która jest dostępna, kliknij przycisk `Kup`{.action}, a następnie przycisk `Kontynuuj zamówienie`{.action} w prawym słupku.
-5. Wybierz opcjonalne opcje lub usługi, do których chcesz zasubskrybować w dodatku do swojej nazwy domeny, a następnie kliknij `Dalej`{.action} aż do momentu, gdy tunel zakupowy poprosi Cię o zalogowanie się lub utworzenie konta klienta OVHcloud.
-6. Po zalogowaniu się na swoim koncie klienta OVHcloud, możesz dostosować informacje kontaktowe (właściciel/posiadacz, administrator, techniczny) dla swojej nazwy domeny. Następnie kliknij przycisk `Kontynuuj`{.action}, aby przejść do podsumowania swojego zamówienia.
-7. Na stronie `Podsumowanie zamówienia` i jeśli to konieczne, możesz zmodyfikować konfigurację DNS, która zostanie zastosowana do Twojej nazwy domeny, klikając link oznaczony `Zmień konfigurację`{.action}. Po zakończeniu swoich zmian kliknij przycisk `Zapłać`{.action}, aby przejść do ostatniego etapu swojego zamówienia.
+1. Przejdź na [stronę OVHcloud](/links/website).
+2. Na wyświetlonej stronie, w odpowiednim polu, wpisz nazwę domeny, którą chcesz zarezerwować (np. `domain.tld`), a następnie kliknij przycisk `Szukaj`{.action}.
+3. Na nowej stronie nasz interfejs wskaże, czy wybrana nazwa domeny jest dostępna do zakupu. Jeśli jest już zarezerwowana z wpisaną składnią, zmień ją i uruchom nowe wyszukiwanie dostępności.
+4. Po znalezieniu dostępnej nazwy domeny kliknij przycisk `Kup`{.action}, a następnie kliknij przycisk `Kontynuuj zamówienie`{.action} w prawej kolumnie.
+5. Wybierz dodatkowe opcje lub usługi, które chcesz zamówić wraz z nazwą domeny, a następnie klikaj `Dalej`{.action}, aż proces zamówienia poprosi Cię o zalogowanie się lub utworzenie konta klienta OVHcloud.
+6. Po zalogowaniu się na konto klienta OVHcloud możesz dostosować dane kontaktowe (właściciel, administrator, kontakt techniczny) swojej nazwy domeny. Kliknij przycisk `Dalej`{.action}, aby przejść do podsumowania zamówienia.
+7. Na stronie `Podsumowanie zamówienia`, w razie potrzeby, możesz zmienić konfigurację DNS, która będzie stosowana do Twojej nazwy domeny, klikając link `Zmień konfigurację`{.action}. Po zakończeniu zmian kliknij przycisk `Zapłać`{.action}, aby przejść do ostatniego etapu zamówienia.
 
-Zapłać swoje zamówienie, aby rozpocząć rezerwację swojej nazwy domeny oraz instalację usług i opcji, do których zasubskrybowałeś się jako dodatek.
+Zapłać za zamówienie, aby rozpocząć rezerwację nazwy domeny i instalację zamówionych usług i opcji.
 
-Kilka chwil później otrzymasz potwierdzenie e-mailowe dotyczące swojego zamówienia.
-Następnie możesz zarządzać swoją nazwą domeny, logując się do swojego [Panelu klienta OVHcloud](/links/manager).
+Po chwili otrzymasz e-mail z potwierdzeniem zamówienia.
+Następnie możesz zarządzać swoją nazwą domeny, logując się do [Panelu klienta OVHcloud](/links/manager).
 
-Jeśli to konieczne, nie wahaj się utworzyć zgłoszenie wsparcia z [centrum pomocy](https://help.ovhcloud.com/csm?id=csm_get_help).
+W razie potrzeby utwórz zgłoszenie do działu wsparcia w [Centrum pomocy](https://help.ovhcloud.com/csm?id=csm_get_help).
 
 ///
 
@@ -70,256 +70,280 @@ Jeśli to konieczne, nie wahaj się utworzyć zgłoszenie wsparcia z [centrum po
 
 /// details | Jak mogę sprawdzić, czy moja nazwa domeny jest zarejestrowana w OVHcloud?
 
-Aby to zrobić, możesz wykonać zapytanie [WHOIS](/links/web/domains-whois), aby sprawdzić, gdzie jest zarejestrowana Twoja nazwa domeny i upewnić się, że jesteś faktycznie zadeklarowany jako jej posiadacz.
+Możesz wykonać zapytanie [WHOIS](/links/web/domains-whois), aby dowiedzieć się, gdzie Twoja nazwa domeny jest zarejestrowana, i zweryfikować, czy jesteś zadeklarowany jako właściciel nazwy domeny.
 
-Każdy rejestrator (taki jak OVHcloud) ma możliwość wyboru, jak wyświetlać informacje dotyczące nazwy domeny w WHOIS.
+Każdy rejestrator (taki jak OVHcloud) może wybrać sposób wyświetlania informacji związanych z nazwą domeny w bazie WHOIS.
 
-Po wykonaniu zapytania WHOIS, poszukaj w wyniku przynajmniej jednej z poniższych linii:
+Po wykonaniu zapytania WHOIS poszukaj w wynikach co najmniej jednego z następujących wierszy:
 
 - Domain Name: ovhcloud.com
 - Registrar WHOIS Server: whois.ovh.com
 - Registrar URL: https://ovh.com
 - Registrar: OVH sas
 
-Jeśli zobaczysz przynajmniej jedną z tych linii w wyniku, Twoja nazwa domeny jest zarejestrowana w OVHcloud.
+Jeśli widzisz co najmniej jeden z tych wierszy w wynikach, Twoja nazwa domeny jest zarejestrowana w OVHcloud.
 
-W przeciwnym razie, Twoja nazwa domeny jest zarejestrowana u innego rejestratora. Poszukaj wtedy linii dotyczących `Registrar`, aby zidentyfikować rejestratora, u którego Twoja nazwa domeny jest zarejestrowana.
-
-///
-
-/// details | Jak mogę poznać datę wygaśnięcia nazwy domeny?
-
-Najprostsze rozwiązanie to wykonanie zapytania [WHOIS](/links/web/domains-whois) na nazwę domeny. Po wykonaniu zapytania, poszukaj w wyniku linii odpowiadającej daty wygaśnięcia (np. `Expiry Date: 2025-09-22T08:00:00Z`, `Registry Expiry Date: 2025-09-22T08:00:00Z`, itp.).
-
-Jeśli Twoja nazwa domeny jest zarejestrowana w OVHcloud, możesz również postępować zgodnie z poniższymi krokami:
-
-1. Zaloguj się do [Panelu klienta OVHcloud](/links/manager).
-2. Kliknij swoje imię w prawym górnym rogu, a następnie wybierz `Moje rozwiązania i usługi`{.action}.
-3. W tabeli, która się pojawi, znajdź linię odpowiadającą Twojej nazwie domeny, a następnie zwróć uwagę na datę w kolumnie `Data wejścia w życie`. Ta data odpowiada dacie wygaśnięcia Twojej nazwy domeny.
+W przeciwnym razie Twoja nazwa domeny jest zarejestrowana u innego rejestratora. Poszukaj wierszy związanych z terminem `Registrar`, aby zidentyfikować rejestratora, u którego zarejestrowana jest Twoja nazwa domeny.
 
 ///
+
+<!-- CP-STEPS-START:expiry-date -->
+/// details | Jak mogę sprawdzić datę wygaśnięcia nazwy domeny?
+
+Najszybszym rozwiązaniem jest wykonanie zapytania [WHOIS](/links/web/domains-whois) dla nazwy domeny. Po wykonaniu zapytania poszukaj w wynikach wiersza odpowiadającego dacie wygaśnięcia (np. `Expiry Date: 2025-09-22T08:00:00Z`, `Registry Expiry Date: 2025-09-22T08:00:00Z` itp.).
+
+Jeśli Twoja nazwa domeny jest zarejestrowana w OVHcloud, kliknij poniższe karty, aby wyświetlić kolejne **2** kroki.
+
+> [!tabs]
+> **Krok 1**
+>>
+>> Przejdź na stronę [Moje rozwiązania i usługi](/links/control-panel/billing-services).
+>>
+> **Krok 2**
+>>
+>> W wyświetlonej tabeli znajdź wiersz odpowiadający Twojej nazwie domeny, a następnie zanotuj datę w kolumnie `Data obowiązywania`. Ta data odpowiada dacie wygaśnięcia Twojej nazwy domeny.
+
+///
+<!-- CP-STEPS-END:expiry-date -->
 
 /// details | Jak mogę zmienić roczną datę wygaśnięcia nazwy domeny?
 
-Roczna data wygaśnięcia nazwy domeny (np. 24 września) jest ustalona z góry na podstawie daty rejestracji (utworzenia) nazwy domeny.
+Roczna data wygaśnięcia nazwy domeny (np. 24 września) jest ustalana na podstawie daty rejestracji (utworzenia) nazwy domeny.
 
-Zazwyczaj roczna data wygaśnięcia nazwy domeny jest taka sama jak data, w której zarejestrowałeś nazwę domeny.
+Zazwyczaj roczna data wygaśnięcia nazwy domeny jest taka sama jak data rejestracji nazwy domeny.
 
-Dlatego nie jest możliwe zmienienie rocznej daty wygaśnięcia nazwy domeny.
+Dlatego nie jest możliwa zmiana rocznej daty wygaśnięcia nazwy domeny.
 
 ///
 
 <br>
 
-/// details | Jak mogę poprawić literówkę w mojej nazwie domeny?
+/// details | Jak mogę poprawić literówkę w nazwie domeny?
 
-Od momentu subskrypcji nazwy domeny, ta jest zarejestrowana na podstawie znaków, które jej nadałeś podczas składania zamówienia. Rejestracja odbywa się u rejestratora rozszerzenia Twojej nazwy domeny (np. rejestratora *.com*) i obowiązują opłaty za rezerwację po stronie rejestratora (np. OVHcloud).
+Po zamówieniu nazwy domeny jest ona rejestrowana na podstawie znaków zdefiniowanych podczas zamówienia. Rejestracja jest przetwarzana przez rejestr rozszerzenia nazwy domeny (np. rejestr *.com*), a opłaty za rezerwację ponosi rejestrator (taki jak OVHcloud).
 
-Nazwa domeny to unikalny adres na Internecie, np. `ovhcloud.com`.
-Każda zmiana w tej nazwie, czy to znak, czy rozszerzenie (.com, .fr, .net itp.), czyni z niej zupełnie inną nazwę domeny.
+Nazwa domeny to unikalny adres w Internecie, na przykład: `ovhcloud.com`.
+Każda zmiana tej nazwy, czy to znaku, czy rozszerzenia (.com, .fr, .net itp.), tworzy zupełnie inną nazwę domeny.
 
-Dlatego, jeśli popełniłeś błąd pisowni podczas składania zamówienia, nie będzie on mógł zostać zmieniony ani poprawiony. Musisz zamówić nową nazwę domeny niezależnie od poprzedniej (pod warunkiem, że nowa pisownia, jaką sobie życzysz, nie jest jeszcze zarezerwowana przez kogoś innego).
+Dlatego jeśli podczas zamówienia popełniono literówkę, nie można jej zmienić ani poprawić. Konieczne będzie zamówienie nowej nazwy domeny niezależnie od poprzedniej (pod warunkiem, że nowa żądana pisownia nie jest już zarezerwowana przez kogoś innego).
 
-Nazwy domeny są traktowane jako produkty personalizowane, ponieważ są zarejestrowane specjalnie dla właściciela i zablokowane dla innych od momentu zamówienia. Dlatego, po rejestracji, nie mogą być zwrotne.
-
-///
-
-/// details | Jak mogę zmienić już zasubskrybowaną nazwę domeny?
-
-Od momentu subskrypcji nazwy domeny, ta jest zarejestrowana na podstawie znaków, które jej nadałeś podczas składania zamówienia. Rejestracja odbywa się u rejestratora rozszerzenia Twojej nazwy domeny (np. rejestratora *.com*) i obowiązują opłaty za rezerwację po stronie rejestratora (np. OVHcloud).
-
-Nazwa domeny to unikalny adres na Internecie, np. `ovhcloud.com`.
-Każda zmiana w tej nazwie, czy to znak, czy rozszerzenie (.com, .fr, .net itp.), czyni z niej zupełnie inną nazwę domeny.
-
-Dlatego, jeśli popełniłeś błąd pisowni podczas składania zamówienia, nie będzie on mógł zostać zmieniony ani poprawiony. Musisz zamówić nową nazwę domeny niezależnie od poprzedniej (pod warunkiem, że nowa pisownia, jaką sobie życzysz, nie jest jeszcze zarezerwowana przez kogoś innego).
-
-Nazwy domeny są traktowane jako produkty personalizowane, ponieważ są zarejestrowane specjalnie dla właściciela i zablokowane dla innych od momentu zamówienia. Dlatego, po rejestracji, nie mogą być zwrotne.
+Nazwy domen są uznawane za produkty niestandardowe, ponieważ są rejestrowane specjalnie dla właściciela i zablokowane dla innych od momentu zamówienia. Dlatego po rejestracji nie podlegają zwrotowi.
 
 ///
 
+/// details | Jak mogę zmienić już zamówioną nazwę domeny?
+
+Po zamówieniu nazwy domeny jest ona rejestrowana na podstawie znaków zdefiniowanych podczas zamówienia. Rejestracja jest przetwarzana przez rejestr rozszerzenia nazwy domeny (np. rejestr *.com*), a opłaty za rezerwację ponosi rejestrator (taki jak OVHcloud).
+
+Nazwa domeny to unikalny adres w Internecie, na przykład: `ovhcloud.com`.
+Każda zmiana tej nazwy, czy to znaku, czy rozszerzenia (.com, .fr, .net itp.), tworzy zupełnie inną nazwę domeny.
+
+Dlatego jeśli podczas zamówienia popełniono literówkę, nie można jej zmienić ani poprawić. Konieczne będzie zamówienie nowej nazwy domeny niezależnie od poprzedniej (pod warunkiem, że nowa żądana pisownia nie jest już zarezerwowana przez kogoś innego).
+
+Nazwy domen są uznawane za produkty niestandardowe, ponieważ są rejestrowane specjalnie dla właściciela i zablokowane dla innych od momentu zamówienia. Dlatego po rejestracji nie podlegają zwrotowi.
+
+///
+
+<!-- CP-STEPS-START:delete-domain -->
 /// details | Jak mogę usunąć nazwę domeny?
 
-Postępuj zgodnie z poniższymi krokami:
+Kliknij poniższe karty, aby wyświetlić kolejne **3** kroki.
 
-1. Zaloguj się do [Panelu klienta OVHcloud](/links/manager).
-2. Kliknij swoje imię w prawym górnym rogu, a następnie wybierz `Moje rozwiązania i usługi`{.action}.
-3. W tabeli, która się pojawi, znajdź linię odpowiadającą Twojej nazwie domeny, kliknij przycisk `...`{.action} po prawej stronie, a następnie `Rezygnuję z usługi`{.action}.
-4. Na stronie, która się pojawi, wybierz tryb anulowania (natychmiast lub w dniu wygaśnięcia usługi) i kliknij w dół na przycisku `Tak, chcę`{.action}.
-
-Twoja nazwa domeny zostanie wtedy zawieszona w dacie wygaśnięcia, a następnie, od tej daty, zostanie **trwale** usunięta w maksymalnym terminie 60 dni. Ten termin jest ustalony przez **I**nternet **C**orporation for **A**ssigned **N**ames and **N**umbers (**ICANN**), aby nazwa domeny została całkowicie usunięta i ponownie dostępna do rejestracji dla innego właściciela/posiadacza.
+> [!tabs]
+> **Krok 1**
+>>
+>> Przejdź na stronę [Moje rozwiązania i usługi](/links/control-panel/billing-services).
+>>
+> **Krok 2**
+>>
+>> W wyświetlonej tabeli znajdź wiersz odpowiadający Twojej nazwie domeny, kliknij przycisk `...`{.action} po prawej stronie, a następnie kliknij `Anuluj subskrypcję`{.action}.
+>>
+> **Krok 3**
+>>
+>> Na wyświetlonej stronie wybierz tryb anulowania (natychmiast lub w dniu wygaśnięcia usługi), a następnie kliknij przycisk `Tak, anuluję`{.action} na dole.
+>>
+>> Twoja nazwa domeny zostanie zawieszona w dniu wygaśnięcia. Po tej dacie zostanie **trwale** usunięta w ciągu maksymalnie 60 dni. Termin ten jest określony przez **I**nternet **C**orporation for **A**ssigned **N**ames and **N**umbers (**ICANN**), aby zapewnić pełne usunięcie nazwy domeny i udostępnienie jej do rejestracji przez innego właściciela.
 
 > [!primary]
 >
-> Po złożeniu wniosku o zakończenie usługi, możesz przyspieszyć usunięcie, tworząc zgłoszenie wsparcia z [centrum pomocy](https://help.ovhcloud.com/csm?id=csm_get_help). Należy dostarczyć dokumenty potwierdzające, aby przyspieszyć to usunięcie.
+> Po złożeniu wniosku o anulowanie możesz przyspieszyć usunięcie, tworząc zgłoszenie do działu wsparcia w [Centrum pomocy](https://help.ovhcloud.com/csm?id=csm_get_help). W celu przyspieszenia usunięcia konieczne będzie dostarczenie dokumentów potwierdzających.
 
 > [!success]
 >
-> Znajdziesz wszystkie szczegóły w naszym przewodniku "[Jak zrezygnować z usług OVHcloud](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_cancel_services)".
+> Wszystkie szczegóły znajdziesz w naszym przewodniku "[Jak anulować usługi OVHcloud](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_cancel_services)".
 
 ///
+<!-- CP-STEPS-END:delete-domain -->
 
-/// details | Otrzymałem e-mail dotyczący weryfikacji danych właściciela przypisanych do mojej nazwy domeny, co mam zrobić?
+/// details | Otrzymałem e-mail dotyczący potwierdzenia informacji o właścicielu mojej nazwy domeny. Co powinienem zrobić?
 
-Najpierw, jeśli masz wątpliwości co do autentyczności otrzymanego e-maila, zapoznaj się z naszym przewodnikiem "[Rozpoznawanie e-maili typu phishing](/pages/account_and_service_management/account_information/phishing_care)".
+Jeśli masz wątpliwości co do autentyczności otrzymanego e-maila, zapoznaj się z naszym przewodnikiem "[Uwaga na oszustwa — rozpoznawanie fałszywych e-maili i phishingu](/pages/account_and_service_management/account_information/phishing_care)".
 
-Zgodnie z dyrektywą **I**nternet **C**orporation for **A**ssigned **N**ames and **N**umbers (**ICANN**) z dnia 01/09/2014, rejestratory (np. OVHcloud) są zobowiązani do weryfikacji ważności danych właścicieli/nosicieli nazw domen. OVHcloud wysyła wtedy e-mail do właścicieli/nosicieli nazwy domeny zarejestrowanej na adres e-mail kontaktowy podany w OVHcloud.
+Zgodnie z dyrektywą **I**nternet **C**orporation for **A**ssigned **N**ames and **N**umbers (**ICANN**) z dnia 01.09.2014, rejestratorzy nazw domen (np. OVHcloud) są zobowiązani do weryfikacji ważności danych kontaktowych właścicieli nazw domen. OVHcloud wysyła wówczas e-mail do właściciela nazwy domeny na adres kontaktowy zadeklarowany w OVHcloud.
 
-Otrzymasz ten e-mail, gdy wykonasz jedną z poniższych czynności:
+Otrzymasz ten e-mail po wykonaniu jednej z następujących czynności:
 
 - Rejestracja nowej nazwy domeny.
-- Przeniesienie nazwy domeny.
-- Modyfikacja danych kontaktowych przypisanych do Twojej nazwy domeny.
+- Transfer nazwy domeny.
+- Zmiana danych kontaktowych powiązanych z nazwą domeny.
 
-E-mail zawiera link umożliwiający szybką weryfikację Twoich danych jako właściciela/nosiciela legalnego nazwy domeny.
+Ten e-mail zawiera link do szybkiej weryfikacji danych kontaktowych jako prawowitego właściciela nazwy domeny.
 
-Uwaga: Weryfikacja musi zostać wykonana w ciągu 15 dni. Po tym terminie nazwa domeny zostanie technicznie zawieszona. Nadal będzie ona umownie Twoja, ale nie będzie dostępna w Internecie. Dla odwiedzających stronę pojawi się komunikat błędu.
+**Ważne:** Weryfikacja musi zostać zakończona w ciągu 15 dni. W przeciwnym razie nazwa domeny zostanie technicznie zawieszona. Pozostanie ona umownie na Twoje nazwisko, ale nie będzie już dostępna w Internecie. Odwiedzający Twoją stronę internetową zobaczą komunikat o błędzie.
 
-Możesz otrzymać poniższe e-maile w ciągu pierwszych 15 dni:
+W ciągu pierwszych 15 dni możesz otrzymać następujące e-maile:
 
-- **Dzień 0**: Natychmiast po złożeniu zamówienia na nazwę domeny lub zmodyfikowaniu jej danych, ty (lub osoba zarejestrowana jako właściciel/nosiciel nazwy domeny) otrzymasz pierwszy e-mail z linkiem weryfikacyjnym.
-- **Dni 4, 9 i 13 (e-maile przypominające)**: Jeśli nie zweryfikowałeś jeszcze nazwy domeny, ponownie otrzymasz e-mail.
-- **Dzień 14**: Jeśli nadal nie zweryfikowałeś nazwy domeny, e-mail zostanie wysłany ponownie. Ponadto, e-mail zostanie również wysłany na adres e-mail administratora/nosiciela nazwy domeny, aby poinformować go, że dane tego ostatniego nie zostały potwierdzone.
-- **Dzień 15**: Jeśli właściciel/nosiciel nazwy domeny nadal nie odpowiedział, wysyłamy e-mail do administratora nazwy domeny, aby poinformować go o sytuacji i dezaktywacji nazwy domeny.
+- **Dzień 0**: Natychmiast po zamówieniu nazwy domeny lub zmianie jej danych kontaktowych Ty (lub osoba zarejestrowana jako właściciel nazwy domeny) otrzymasz pierwszy e-mail z linkiem weryfikacyjnym.
+- **Dni 4, 9 i 13 (e-maile przypominające)**: Jeśli nazwa domeny nie została jeszcze zweryfikowana, otrzymasz e-mail ponownie.
+- **Dzień 14**: Jeśli nazwa domeny nadal nie została zweryfikowana, e-mail zostanie wysłany po raz ostatni. Ponadto e-mail zostanie również wysłany na adres administratora, aby poinformować go, że dane kontaktowe nie zostały potwierdzone.
+- **Dzień 15**: Jeśli właściciel nazwy domeny jeszcze nie odpowiedział, wysyłamy e-mail do administratora nazwy domeny, informując go o sytuacji i dezaktywacji nazwy domeny.
 
-Po upływie 15 dni, system wysyła dodatkowe e-maile (do 9 e-maili) przed usunięciem Twojej nazwy domeny. Usunięcie zostanie wykonane po 60 dniach od dnia 0.
+Po upływie tych 15 dni system wysyła dodatkowe e-maile (do 9 e-maili) przed usunięciem nazwy domeny. Usunięcie nastąpi 60 dni po dniu 0.
 
 > [!warning]
 >
-> W zależności od rozszerzenia nazwy domeny (np. *.com*, *.net* itp.) niektóre z powyższych terminów mogą się różnić. Zalecamy, abyś sprawdził u rejestratora rozszerzenia Twojej nazwy domeny proces weryfikacji kontroli kontaktów.
+> W zależności od rozszerzenia nazwy domeny (np. *.com*, *.net* itp.) niektóre z wyżej wymienionych terminów mogą się różnić. Zdecydowanie zalecamy przeprowadzenie weryfikacji danych kontaktowych w rejestrze rozszerzenia Twojej nazwy domeny.
 
 ///
 
-/// details | Nie otrzymałem e-maila weryfikacyjnego właściciela przypisanego do mojej nazwy domeny i ta została zawieszona, co mam zrobić?
+/// details | Nie otrzymałem e-maila z potwierdzeniem informacji o właścicielu mojej nazwy domeny i jest ona zawieszona. Co powinienem zrobić?
 
-Jeśli nie otrzymałeś e-maila weryfikacyjnego właściciela swojej nazwy domeny, sprawdź poniższe punkty:
+Jeśli nie otrzymałeś e-maila weryfikacyjnego dotyczącego właściciela nazwy domeny, sprawdź następujące punkty:
 
-1. Adres e-mail podany dla właściciela nazwy domeny jest poprawny i działa.
-2. E-mail weryfikacyjny nie znajduje się w folderze spamu.
+1. Adres e-mail zadeklarowany dla właściciela nazwy domeny jest prawidłowy i funkcjonalny.
+2. E-mail weryfikacyjny nie znajduje się w folderze spam/śmieci.
 
-Po sprawdzeniu i potwierdzeniu powyższych dwóch punktów, jeśli nadal nie możesz odzyskać e-maila weryfikacyjnego właściciela, prosimy, abyś otworzył zgłoszenie wsparcia z [centrum pomocy](https://help.ovhcloud.com/csm?id=csm_get_help), aby zażądać ponownego wysłania tego e-maila.
+Po potwierdzeniu powyższych dwóch punktów, jeśli nadal nie możesz odnaleźć e-maila weryfikacyjnego, zalecamy utworzenie zgłoszenia do działu wsparcia w [Centrum pomocy](https://help.ovhcloud.com/csm?id=csm_get_help) w celu ponownego wysłania e-maila.
 
 ///
 
-/// details | Co to jest nazwa domeny w formacie IDN?
+/// details | Czym jest IDN (Internationalized Domain Name)?
 
-Początkowo nazwy domen mogły zawierać tylko określone znaki **ASCII** (w tym 26 liter alfabetu łacińskiego). **I**nternationalized **D**omain **N**ame (**IDN**) umożliwia m.in. użycie znaków specjalnych lub ze znakami diakrytycznymi, a nawet innych alfabetów (np. cyryliczny).
+Początkowo nazwy domen mogły zawierać jedynie określone znaki **ASCII** (takie jak 26 liter alfabetu łacińskiego). **I**nternationalized **D**omain **N**ame (**IDN**) umożliwia użycie znaków specjalnych lub akcentowanych, a także innych alfabetów (np. *cyrylicy*).
 
-W OVHcloud możesz bez problemu zamówić IDN i używać ich jako pełnoprawnych nazw domen z naszymi innymi usługami (np. hosting webowy, strefa DNS itd.<sup>1</sup>).
+W OVHcloud można zamawiać nazwy IDN i używać ich jak zwykłych nazw domen z naszymi innymi usługami (hosting, strefy DNS itp.<sup>1</sup>).
 
-Po zamówieniu IDN będą one wyświetlane w Twoim [Panelu klienta OVHcloud](/links/manager) w formacie **xn--**.
+Po zamówieniu nazwy IDN wyświetlają się w [Panelu klienta OVHcloud](/links/manager) w formacie **xn--**.
 
-Choć Twoja domena będzie wyświetlana w [notacji międzynarodowej (IDN)](https://pl.wikipedia.org/wiki/Internationalized_Domain_Name) w Twoim [Panelu klienta OVHcloud](/links/manager), będzie działać i wyświetlać się w całkowicie normalny sposób w innych miejscach. Adres Twojej strony internetowej będzie wyświetlany dokładnie tak, jak go zażądałeś. Twoje adresy e-mail będą również wyświetlane tak, jak chcesz u swoich kontaktów.
+Mimo że Twoja nazwa domeny jest wyświetlana w [notacji międzynarodowej (IDN)](https://en.wikipedia.org/wiki/Internationalized_domain_name) w [Panelu klienta OVHcloud](/links/manager), będzie funkcjonować i wyświetlać się normalnie w innych miejscach. Adres Twojej strony internetowej będzie wyświetlany zgodnie z żądaniem. Adresy e-mail również będą wyświetlane Twoim kontaktom zgodnie z oczekiwaniami.
 
 > [!alert]
 >
-> <sup>1</sup>: Nie zaleca się używania adresu e-mail z nazwą domeny IDN w kliencie poczty (Outlook, Mail macOS itp.). W rzeczywistości niektóre klienci poczty nie interpretują jeszcze nazw domen z znakami diakrytycznymi, co blokuje przesyłanie wiadomości e-mail. Gdy nadawca wysyła Ci wiadomość e-mail, otrzymuje automatyczną wiadomość informującą, że Twój adres e-mail nie istnieje.
+> <sup>1</sup>: Nie zaleca się używania adresu e-mail z nazwą domeny IDN w kliencie poczty (Outlook, macOS Mail itp.). Niektóre klienty poczty nie obsługują jeszcze nazw domen ze znakami akcentowanymi, co blokuje transmisję e-maili. Gdy nadawca próbuje wysłać do Ciebie e-mail, otrzymuje automatyczną wiadomość, że Twój adres e-mail nie istnieje.
 >
-> **Zaleca się zarezerwować dodatkowo swoją nazwę domeny z literami bez znaków diakrytycznych, aby uniknąć niekompatybilności w wymianie wiadomości e-mail.**
+> **Zalecamy zarezerwowanie tej samej nazwy domeny bez znaków akcentowanych oprócz nazwy domeny z akcentami, aby uniknąć problemów z kompatybilnością e-maili.**
 
 ///
 
-/// details | Jak poprawić nazwę domeny w formacie IDN?
+/// details | Jak mogę poprawić IDN (Internationalized Domain Name)?
 
-Podobnie jak w przypadku klasycznych nazw domen, nazwa domeny lub IDN, od momentu jej zasubskrybowania, jest zarejestrowana na podstawie znaków, które jej nadałeś podczas składania zamówienia.
+Podobnie jak w przypadku zwykłych nazw domen, po zamówieniu nazwa domeny lub IDN jest rejestrowana na podstawie znaków zdefiniowanych podczas zamówienia.
 
-Dlatego, jeśli popełniłeś błąd pisowni podczas składania zamówienia, nie będzie on mógł zostać poprawiony. Musisz zamówić nową nazwę domeny niezależnie od poprzedniej (pod warunkiem, że nowa pisownia, jaką sobie życzysz, nie jest jeszcze zarezerwowana przez kogoś innego).
+Dlatego jeśli podczas zamówienia popełniono literówkę, nie można jej poprawić. Konieczne będzie zamówienie nowej nazwy domeny niezależnie od poprzedniej (pod warunkiem, że nowa żądana pisownia nie jest już zarezerwowana przez kogoś innego).
 
 ///
 
-/// details | Jak odnowić tylko jedną nazwę domeny w pakiecie Alldom?
+<!-- CP-STEPS-START:renew-alldom -->
+/// details | Jak mogę odnowić pojedynczą nazwę domeny w pakiecie Alldom?
 
-Aby to zrobić, musisz być przynajmniej zadeklarowany jako [kontakt "Fakturacja"](/pages/account_and_service_management/account_information/managing_contacts) dla danej nazwy domeny. Następnie musisz zmienić tryb odnawiania nazwy domeny na **automatyczne odnawianie**.
+W tym celu musisz być zadeklarowany co najmniej jako [kontakt "Płatności"](/pages/account_and_service_management/account_information/managing_contacts) dla danej nazwy domeny. Następnie musisz zmienić tryb odnawiania nazwy domeny na **automatyczne odnawianie**.
 
-Aby to zrobić, postępuj zgodnie z poniższymi krokami:
+W tym celu kliknij poniższe karty, aby wyświetlić kolejne **2** kroki.
 
-1. Zaloguj się do [Panelu klienta OVHcloud](/links/manager).
-2. Kliknij swoje imię w prawym górnym rogu, a następnie wybierz `Moje rozwiązania i usługi`{.action}.
-3. W tabeli, która się pojawi i po prawej stronie danej nazwy domeny, kliknij przycisk `...`{.action} w kolumnie `Operacje`, a następnie `Skonfiguruj odnowienie`{.action}. Możesz następnie skonfigurować odnawianie tej nazwy domeny w trybie **automatycznego odnawiania**.
+> [!tabs]
+> **Krok 1**
+>>
+>> Przejdź na stronę [Moje rozwiązania i usługi](/links/control-panel/billing-services).
+>>
+> **Krok 2**
+>>
+>> W wyświetlonej tabeli, po prawej stronie odpowiedniej nazwy domeny, kliknij przycisk `...`{.action} w kolumnie `Działania`, a następnie kliknij `Konfiguruj odnawianie`{.action}. Możesz następnie skonfigurować odnawianie tej nazwy domeny w trybie **automatycznego odnawiania**.
 
 > [!primary]
 >
-> Jeśli posiadasz stary pakiet hostingowy webowy z darmową nazwą domeny i zmodyfikujesz ten pakiet hostingowy, może to w niektórych przypadkach anulować darmowość nazwy domeny.
+> Jeśli posiadasz starszy plan hostingowy z bezpłatną nazwą domeny i zmodyfikujesz ten plan, w niektórych przypadkach może to spowodować utratę bezpłatnego statusu nazwy domeny.
 >
-> W przypadku wątpliwości, prosimy, abyś otworzył zgłoszenie wsparcia z [centrum pomocy](https://help.ovhcloud.com/csm?id=csm_get_help), wskazując nazwę domeny i pakiet hostingowy webowy.
+> W razie wątpliwości zalecamy utworzenie zgłoszenia do działu wsparcia w [Centrum pomocy](https://help.ovhcloud.com/csm?id=csm_get_help), podając nazwę domeny i odpowiedni hosting.
 
 > [!success]
 >
-> Znajdziesz wszystkie szczegóły w naszym przewodniku "[Jak odnawiać usługi OVHcloud](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal)".
+> Wszystkie szczegóły znajdziesz w naszym przewodniku "[Jak odnawiać usługi OVHcloud](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal)".
 
 ///
+<!-- CP-STEPS-END:renew-alldom -->
 
-## Przeniesienie nazwy domeny
+## Transfer nazwy domeny
 
 /// details | Czy moja nazwa domeny jest transferowalna po zmianie właściciela?
 
-**I**nternet **C**orporation for **A**ssigned **N**ames and **N**umbers (**ICANN**) wprowadziła zasady bezpieczeństwa, aby zapobiec nieautoryzowanym lub nadużywającym transferom lub zmianom właścicieli nazw domen.
+**I**nternet **C**orporation for **A**ssigned **N**ames and **N**umbers (**ICANN**) wdrożyła środki bezpieczeństwa zapobiegające nieautoryzowanym lub nadużywającym transferom lub zmianom właściciela nazw domen.
 
-ICANN określiła m.in. nieodwracalny okres **60** dni między każdą operacją, która może mieć miejsce na nazwie domeny (utworzenie, zmiana właściciela, transfer).
+ICANN określiła niezbywalny okres **60** dni pomiędzy każdą operacją, która może zostać wykonana na nazwie domeny (utworzenie, zmiana właściciela, transfer).
 
-Zasady określone przez ICANN muszą być ściśle przestrzegane przez rejestratory (np. OVHcloud).
+Zasady określone przez ICANN muszą być ściśle przestrzegane przez rejestratorów (takich jak OVHcloud).
 
-Nie masz zatem innej opcji, jak czekać do końca okresu 60 dni, aby móc przenieść swoją nazwę domeny po zmianie jej właściciela.
-
-///
-
-/// details | Moja nazwa domeny jest zablokowana na 60 dni przed transferem, co mam zrobić?
-
-**I**nternet **C**orporation for **A**ssigned **N**ames and **N**umbers (**ICANN**) wprowadziła zasady bezpieczeństwa, aby zapobiec nieautoryzowanym lub nadużywającym transferom lub zmianom właścicieli nazw domen.
-
-ICANN określiła m.in. nieodwracalny okres **60** dni między każdą operacją, która może mieć miejsce na nazwie domeny (utworzenie, zmiana właściciela, transfer).
-
-Zasady określone przez ICANN muszą być ściśle przestrzegane przez rejestratory (np. OVHcloud).
-
-Nie masz zatem innej opcji, jak czekać do końca okresu 60 dni, aby móc wykonać nową operację (zmiana właściciela lub transfer) na swojej nazwie domeny.
+Dlatego nie masz innego wyjścia, jak poczekać do końca 60-dniowego okresu, aby przetransferować nazwę domeny po zmianie właściciela.
 
 ///
 
-/// details | Nie mogę znaleźć swojej nazwy domeny w Panelu klienta, co mam zrobić?
+/// details | Moja nazwa domeny jest zablokowana przed transferem na 60 dni. Co powinienem zrobić?
 
-Najpierw wykonaj zapytanie [WHOIS](/links/web/domains-whois), aby sprawdzić, gdzie jest zarejestrowana Twoja nazwa domeny i upewnić się, że jesteś zadeklarowany jako jej właściciel.
+**I**nternet **C**orporation for **A**ssigned **N**ames and **N**umbers (**ICANN**) wdrożyła środki bezpieczeństwa zapobiegające nieautoryzowanym lub nadużywającym transferom lub zmianom właściciela nazw domen.
 
-Przypadek n°1.A - Twoja nazwa domeny jest zarejestrowana w OVHcloud i jesteś zadeklarowany jako jej właściciel:
+ICANN określiła niezbywalny okres **60** dni pomiędzy każdą operacją, która może zostać wykonana na nazwie domeny (utworzenie, zmiana właściciela, transfer).
 
-Wykonaj [procedurę odzyskania kontaktów](/links/transversal/procedure-contact-change), aby Twoja nazwa domeny była całkowicie zarządzana w Twoim [Panelu klienta OVHcloud](/links/manager). Dzięki temu nie będziesz już musiał kontaktować się z osobą, która wcześniej zarządzała Twoją nazwą domeny.
+Zasady określone przez ICANN muszą być ściśle przestrzegane przez rejestratorów (takich jak OVHcloud).
 
-Przypadek n°1.B - Twoja nazwa domeny jest zarejestrowana w OVHcloud, ale nie jesteś zadeklarowany jako jej właściciel:
-
-Zgodnie z **R**ozporządzeniem **O**gólnym o Ochronie **D**anych **O**sobowych (**RODO**), OVHcloud nie będzie mógł dostarczyć informacji dotyczących osoby lub organizacji zarządzającej nazwą domeny w OVHcloud.
-
-Możesz jednak spróbować skontaktować się z osobą lub organizacją zarządzającą, postępując zgodnie z instrukcjami [tego formularza](/links/web/contact-domain-owner).
-
-Przypadek n°2 - Twoja nazwa domeny nie jest zarejestrowana w OVHcloud:
-
-Skontaktuj się bezpośrednio z rejestratorem (wskazanym w liniach zaczynających się od słowa `Registrar`) swojej nazwy domeny, aby kontynuować swoje badania. W rzeczywistości, jeśli nazwa domeny nie jest zarejestrowana w OVHcloud, nie będziemy mogli Ci pomóc w tej kwestii.
+Dlatego nie masz innego wyjścia, jak poczekać do końca 60-dniowego okresu, aby wykonać nową operację (zmianę właściciela lub transfer) na nazwie domeny.
 
 ///
 
-/// details | Nie mogę skontaktować się z osobą zarządzającą moją nazwą domeny, co mam zrobić?
+/// details | Nie mogę znaleźć mojej nazwy domeny w Panelu klienta. Co powinienem zrobić?
 
-Najpierw wykonaj zapytanie [WHOIS](/links/web/domains-whois), aby upewnić się, że jesteś zadeklarowany jako jej właściciel.
+Najpierw wykonaj zapytanie [WHOIS](/links/web/domains-whois), aby dowiedzieć się, gdzie Twoja nazwa domeny jest zarejestrowana, i zweryfikować, czy jesteś zadeklarowany jako właściciel nazwy domeny.
 
-Przypadek n°1 - Jesteś zadeklarowany jako właściciel nazwy domeny:
+Przypadek 1.A — Twoja nazwa domeny jest zarejestrowana w OVHcloud i jesteś zadeklarowany jako właściciel:
 
-Wykonaj [procedurę odzyskania kontaktów](/links/transversal/procedure-contact-change), aby Twoja nazwa domeny była całkowicie zarządzana w Twoim [Panelu klienta OVHcloud](/links/manager). Dzięki temu nie będziesz już musiał kontaktować się z osobą, która wcześniej zarządzała Twoją nazwą domeny.
+Wykonaj [procedurę odzyskania kontaktu](/links/transversal/procedure-contact-change), aby Twoja nazwa domeny była w pełni zarządzana w [Panelu klienta OVHcloud](/links/manager). W ten sposób nie będziesz musiał kontaktować się z osobą, która wcześniej zarządzała Twoją nazwą domeny.
 
-Przypadek n°2 - Nie jesteś zadeklarowany jako właściciel nazwy domeny:
+Przypadek 1.B — Twoja nazwa domeny jest zarejestrowana w OVHcloud i nie jesteś zadeklarowany jako właściciel:
 
-Zgodnie z **R**ozporządzeniem **O**gólnym o Ochronie **D**anych **O**sobowych (**RODO**), OVHcloud nie będzie mógł dostarczyć informacji dotyczących osoby lub organizacji zarządzającej nazwą domeny w OVHcloud.
+Zgodnie z **O**gólnym **R**ozporządzeniem o **O**chronie **D**anych (**RODO**) OVHcloud nie może udostępniać informacji o osobie lub organizacji zarządzającej nazwą domeny w OVHcloud.
 
-Możesz jednak spróbować skontaktować się z osobą lub organizacją zarządzającą, postępując zgodnie z instrukcjami [tego formularza](/links/web/contact-domain-owner).
+Możesz jednak spróbować skontaktować się z osobą lub organizacją zarządzającą nazwą domeny, postępując zgodnie z instrukcjami w [tym formularzu](/links/web/contact-domain-owner).
+
+Przypadek 2 — Twoja nazwa domeny nie jest zarejestrowana w OVHcloud:
+
+Skontaktuj się bezpośrednio z rejestratorem (wskazanym w wierszach zaczynających się od terminu `Registrar`) Twojej nazwy domeny, aby kontynuować poszukiwania. Jeśli nazwa domeny nie jest zarejestrowana w OVHcloud, nie będziemy w stanie pomóc w tej kwestii.
+
+///
+
+/// details | Nie mogę skontaktować się z osobą zarządzającą moją nazwą domeny. Co powinienem zrobić?
+
+Najpierw wykonaj zapytanie [WHOIS](/links/web/domains-whois), aby zweryfikować, czy jesteś zadeklarowany jako właściciel nazwy domeny.
+
+Przypadek 1 — Jesteś zadeklarowany jako właściciel nazwy domeny:
+
+Wykonaj [procedurę odzyskania kontaktu](/links/transversal/procedure-contact-change), aby Twoja nazwa domeny była w pełni zarządzana w [Panelu klienta OVHcloud](/links/manager). W ten sposób nie będziesz musiał kontaktować się z osobą, która wcześniej zarządzała Twoją nazwą domeny.
+
+Przypadek 2 — Nie jesteś zadeklarowany jako właściciel nazwy domeny:
+
+Zgodnie z **O**gólnym **R**ozporządzeniem o **O**chronie **D**anych (**RODO**) OVHcloud nie może udostępniać informacji o osobie lub organizacji zarządzającej nazwą domeny w OVHcloud.
+
+Możesz jednak spróbować skontaktować się z osobą lub organizacją zarządzającą nazwą domeny, postępując zgodnie z instrukcjami w [tym formularzu](/links/web/contact-domain-owner).
 
 ///
 
 /// details | Czy mogę sprzedać swoją nazwę domeny?
 
-Obecnie OVHcloud nie obsługuje bezpośrednio procesu sprzedaży już zarejestrowanych nazw domen. Nie oferujemy tego typu usług.
+Obecnie OVHcloud nie obsługuje bezpośrednio sprzedaży już zarejestrowanych nazw domen. Nie oferujemy tego typu usługi.
 
-Jednak, jeśli chcesz sprzedawać swoją nazwę domeny na rynku wtórnym, skontaktuj się z jednym z naszych partnerów:
+Jeśli jednak chcesz wystawić swoją nazwę domeny na sprzedaż na rynku wtórnym, skontaktuj się z jednym z naszych partnerów:
 
 - [Afternic](https://www.afternic.com).
 - [Sedo](https://sedo.com).
 
-Jeśli chcesz sprzedać swoją nazwę domeny, możesz ją dodać do tych platform. Po dodaniu, uprawnieni dostawcy będą oferować Twoją nazwę domeny za cenę, jaką ustalisz na jednej z powyższych platform.
+Jeśli chcesz sprzedać swoją nazwę domeny, możesz dodać ją na tych platformach. Po dodaniu autoryzowani dostawcy zaoferują Twoją nazwę domeny po cenie ustalonej przez Ciebie na jednej z powyższych platform.
 
 ///
 
@@ -327,252 +351,281 @@ Jeśli chcesz sprzedać swoją nazwę domeny, możesz ją dodać do tych platfor
 
 > [!primary]
 >
-> Modyfikacja strefy DNS to czynność wrażliwa i może spowodować przerwę w działaniu usług związanych z Twoją nazwą domeny (hosting webowy, poczta itp.). W przypadku wątpliwości, nie wahaj się skontaktować z [specjalistycznym dostawcą](/links/partner).
+> Modyfikacja strefy DNS jest wrażliwą operacją i może spowodować przerwy w działaniu usług powiązanych z nazwą domeny (hosting, e-mail itp.). W razie wątpliwości skontaktuj się ze [specjalistycznym dostawcą](/links/partner).
 
-/// details | Co to jest strefa DNS?
+/// details | Czym jest strefa DNS?
 
-Strefa DNS nazwy domeny zawiera konfigurację stosowaną do tej nazwy. Składa się z informacji technicznych, zwanych *rekordami DNS*. Strefa DNS działa jak centrum kierowania ruchem, kierującym ruch do odpowiednich usług związanych z domeną.
+Strefa DNS nazwy domeny zawiera konfigurację mającą do niej zastosowanie. Składa się z informacji technicznych zwanych *rekordami DNS*. Strefa DNS pełni funkcję centrum routingu, kierując ruch do odpowiednich usług powiązanych z nazwą domeny.
 
 Możesz na przykład określić:
 
-- Adres IP (rekordy DNS typu *A* i *AAAA*) swojego hostingu webowego, aby wyświetlić swoją stronę internetową z użyciem swojej nazwy domeny.
-- Serwery poczty (rekordy DNS typu *MX*), do których Twoja nazwa domeny powinna kierować otrzymywane e-maile.
-- Informacje związane z bezpieczeństwem / uwierzytelnieniem Twoich usług (hosting webowy, serwer webowy, serwer poczty itp.) przypisanych do Twojej nazwy domeny (rekordy DNS typu *SPF*, *DKIM*, *DMARC* itp.).
+- Adres IP (rekordy DNS typu *A* i *AAAA*) Twojego hostingu, aby wyświetlić stronę internetową pod nazwą domeny.
+- Serwery e-mail (rekordy DNS typu *MX*), na które nazwa domeny powinna przekierowywać otrzymywane e-maile.
+- Informacje związane z bezpieczeństwem/uwierzytelnianiem usług (hosting, serwer WWW, serwer e-mail itp.) powiązanych z nazwą domeny (rekordy DNS typu *SPF*, *DKIM*, *DMARC* itp.).
 
-Strefa DNS jest hostowana / zarejestrowana na **serwerach DNS**. Te **serwery DNS** muszą być zadeklarowane u rejestratora nazwy domeny, aby móc używać strefy DNS, którą hostują.
+Strefa DNS jest hostowana/zarejestrowana na **serwerach DNS**. Te **serwery DNS** muszą być zadeklarowane u rejestratora nazwy domeny, aby korzystać ze strefy DNS, którą hostują.
 
 > [!success]
 >
-> Znajdziesz wszystkie szczegóły w naszym przewodniku "[Wszystko o strefie DNS](/pages/web_cloud/domains/dns_zone_general_information)".
+> Wszystkie szczegóły znajdziesz w naszym przewodniku "[Wszystko o strefach DNS](/pages/web_cloud/domains/dns_zone_general_information)".
 
 ///
 
-/// details | Co to jest rekord DNS?
+/// details | Czym jest rekord DNS?
 
-Rekordy DNS są używane, m.in. do:
+Rekordy DNS służą na przykład do:
 
-- Przypisania nazwy domeny do adresu IP, co umożliwia użytkownikom dostęp do strony internetowej lub odległego serwera.
-- Przypisania nazwy domeny do innych zasobów online, używając nazwy domeny (łatwiejszej do zapamiętania) zamiast adresu IP.
-- Weryfikacji konfiguracji przypisania lub bezpieczeństwa, w szczególności dla usług poczty e-mail i hostingu współdzielonego.
+- Powiązania nazwy domeny z adresem IP, umożliwiając użytkownikom dostęp do strony internetowej lub serwera zdalnego.
+- Powiązania nazwy domeny z innymi zasobami online za pomocą nazwy domeny (łatwiejszej do zapamiętania) zamiast adresu IP.
+- Walidacji konfiguracji powiązania lub bezpieczeństwa, w szczególności dla usług e-mail i hostingu współdzielonego.
 
-Istnieje wiele rekordów DNS. Każdy z nich ma określony cel w rozwiązywaniu DNS. W OVHcloud są one podzielone na trzy części:
+Istnieje wiele rekordów DNS. Każdy z nich ma określoną funkcję w rozwiązywaniu DNS. W OVHcloud są one podzielone na trzy kategorie:
 
-- **Pola wskazujące**: `A`, `AAAA`, `NS`, `CNAME` i `DNAME`.
-- **Pola rozszerzone**: `CAA`, `TXT`, `NAPTR`, `SRV`, `LOC`, `SSHFP`, `TLSA`, `RP`, `SVCB` i `HTTPS`.
-- **Pola pocztowe**: `MX`, `SPF`, `DKIM` i `DMARC`.
+- **Rekordy wskaźnikowe**: `A`, `AAAA`, `NS`, `CNAME` i `DNAME`.
+- **Rekordy rozszerzone**: `CAA`, `TXT`, `NAPTR`, `SRV`, `LOC`, `SSHFP`, `TLSA`, `RP`, `SVCB` i `HTTPS`.
+- **Rekordy e-mail**: `MX`, `SPF`, `DKIM` i `DMARC`.
 
 > [!success]
 >
-> Znajdziesz więcej szczegółów w poniższych przewodnikach:
+> Więcej szczegółów znajdziesz w następujących przewodnikach:
 >
 > - Informacje ogólne:
 >     - [Wszystko o rekordach DNS](/pages/web_cloud/domains/dns_zone_records)
-> - Rekordy DNS wskazujące:
->     - [Dodaj rekord DNS typu A dla domeny](/pages/web_cloud/domains/dns_zone_a_record_creation)
->     - [Dodaj rekord DNS typu AAAA dla domeny](/pages/web_cloud/domains/dns_zone_aaaa_record_creation)
->     - [Dodaj rekord DNS typu CNAME dla domeny](/pages/web_cloud/domains/dns_zone_cname_record_creation)
-> - Rekordy DNS rozszerzone:
->     - [Dodaj rekord DNS typu TXT dla domeny](/pages/web_cloud/domains/dns_zone_txt_record_creation)
-> - Rekordy DNS pocztowe:
->     - [Konfiguracja rekordu MX dla emaili](/pages/web_cloud/domains/dns_zone_mx)
->     - [Poprawa bezpieczeństwa e-maili poprzez rekord SPF](/pages/web_cloud/domains/dns_zone_spf)
->     - [Poprawa bezpieczeństwa e-maili poprzez rekord DKIM](/pages/web_cloud/domains/dns_zone_dkim)
->     - [Poprawa bezpieczeństwa e-maili poprzez rekord DMARC](/pages/web_cloud/domains/dns_zone_dmarc)
+> - Rekordy wskaźnikowe DNS:
+>     - [Jak dodać rekord DNS A dla nazwy domeny](/pages/web_cloud/domains/dns_zone_a_record_creation)
+>     - [Jak dodać rekord DNS AAAA dla nazwy domeny](/pages/web_cloud/domains/dns_zone_aaaa_record_creation)
+>     - [Jak dodać rekord DNS CNAME dla nazwy domeny](/pages/web_cloud/domains/dns_zone_cname_record_creation)
+> - Rozszerzone rekordy DNS:
+>     - [Jak dodać rekord DNS TXT dla nazwy domeny](/pages/web_cloud/domains/dns_zone_txt_record_creation)
+> - Rekordy DNS e-mail:
+>     - [Konfiguracja rekordu MX do zarządzania e-mailem](/pages/web_cloud/domains/dns_zone_mx)
+>     - [Jak poprawić bezpieczeństwo e-maili za pomocą rekordu SPF](/pages/web_cloud/domains/dns_zone_spf)
+>     - [Jak poprawić bezpieczeństwo e-maili za pomocą rekordu DKIM](/pages/web_cloud/domains/dns_zone_dkim)
+>     - [Jak poprawić bezpieczeństwo e-maili za pomocą rekordu DMARC](/pages/web_cloud/domains/dns_zone_dmarc)
 
 ///
 
+<!-- CP-STEPS-START:dns-records-available -->
 /// details | Jakie rekordy DNS są dostępne w strefie DNS OVHcloud?
 
-Postępuj zgodnie z poniższymi krokami:
+Kliknij poniższe karty, aby wyświetlić kolejne **2** kroki.
 
-1. Zaloguj się do [Panelu klienta OVHcloud](/links/manager) i przejdź do sekcji `Web Cloud`{.action}.
-2. Kliknij menu `Strefy DNS`{.action}, następnie wybierz odpowiednią domenę.
-3. Na prawej stronie lub poniżej tabeli kliknij `Dodaj rekord`{.action}.
-
-W tym miejscu zobaczysz wszystkie rekordy DNS, które możesz dodać za pomocą asystenta konfiguracji OVHcloud.
-
-Dzięki temu asystentowi konfiguracji możesz dodać następujące typy rekordów DNS:
-
-- **Pola wskazujące**: `A`, `AAAA`, `NS`, `CNAME` i `DNAME`.
-- **Pola rozszerzone**: `CAA`, `TXT`, `NAPTR`, `SRV`, `LOC`, `SSHFP`, `TLSA`, `RP`, `SVCB` i `HTTPS`.
-- **Pola pocztowe**: `MX`, `SPF`, `DKIM` i `DMARC`.
-
-> [!primary]
->
-> Jeśli chcesz dodać rekord DNS, którego nie ma na liście, zamknij okno, które się otworzyło po kliknięciu przycisku `Dodaj rekord`{.action}, a następnie kliknij przycisk `Modyfikacja w trybie tekstowym`{.action} po prawej stronie lub poniżej tabeli.
->
-> Dzięki temu możesz ręcznie dodać wybrany rekord DNS.
+> [!tabs]
+> **Krok 1**
+>>
+>> Przejdź na stronę [Strefy DNS](/links/control-panel/web-dns-zone), następnie wybierz odpowiednią nazwę domeny.
+>>
+>> ![Strefy DNS](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
+>>
+> **Krok 2**
+>>
+>> Po prawej stronie lub poniżej tabeli kliknij `Dodaj rekord`{.action}.
+>>
+>> Zobaczysz wszystkie rekordy DNS, które możesz dodać za pomocą asystenta konfiguracji OVHcloud:
+>>
+>> - **Rekordy wskaźnikowe**: `A`, `AAAA`, `NS`, `CNAME` i `DNAME`.
+>> - **Rekordy rozszerzone**: `CAA`, `TXT`, `NAPTR`, `SRV`, `LOC`, `SSHFP`, `TLSA`, `RP`, `SVCB` i `HTTPS`.
+>> - **Rekordy e-mail**: `MX`, `SPF`, `DKIM` i `DMARC`.
+>>
+>> > [!primary]
+>> >
+>> > Jeśli chcesz dodać rekord DNS, który nie jest wymieniony na liście, zamknij okno otwarte po kliknięciu przycisku `Dodaj rekord`{.action} i kliknij przycisk `Zmień w trybie tekstowym`{.action} po prawej stronie lub poniżej tabeli.
+>> >
+>> > Możesz następnie ręcznie dodać wybrany rekord DNS.
 
 > [!success]
 >
-> Znajdziesz więcej szczegółów w poniższych przewodnikach:
+> Więcej szczegółów znajdziesz w następujących przewodnikach:
 >
 > - Informacje ogólne:
 >     - [Wszystko o rekordach DNS](/pages/web_cloud/domains/dns_zone_records)
-> - Rekordy DNS wskazujące:
->     - [Dodaj rekord DNS typu A dla domeny](/pages/web_cloud/domains/dns_zone_a_record_creation)
->     - [Dodaj rekord DNS typu AAAA dla domeny](/pages/web_cloud/domains/dns_zone_aaaa_record_creation)
->     - [Dodaj rekord DNS typu CNAME dla domeny](/pages/web_cloud/domains/dns_zone_cname_record_creation)
-> - Rekordy DNS rozszerzone:
->     - [Dodaj rekord DNS typu TXT dla domeny](/pages/web_cloud/domains/dns_zone_txt_record_creation)
-> - Rekordy DNS pocztowe:
->     - [Konfiguracja rekordu MX dla emaili](/pages/web_cloud/domains/dns_zone_mx)
->     - [Poprawa bezpieczeństwa e-maili poprzez rekord SPF](/pages/web_cloud/domains/dns_zone_spf)
->     - [Poprawa bezpieczeństwa e-maili poprzez rekord DKIM](/pages/web_cloud/domains/dns_zone_dkim)
->     - [Poprawa bezpieczeństwa e-maili poprzez rekord DMARC](/pages/web_cloud/domains/dns_zone_dmarc)
+> - Rekordy wskaźnikowe DNS:
+>     - [Jak dodać rekord DNS A dla nazwy domeny](/pages/web_cloud/domains/dns_zone_a_record_creation)
+>     - [Jak dodać rekord DNS AAAA dla nazwy domeny](/pages/web_cloud/domains/dns_zone_aaaa_record_creation)
+>     - [Jak dodać rekord DNS CNAME dla nazwy domeny](/pages/web_cloud/domains/dns_zone_cname_record_creation)
+> - Rozszerzone rekordy DNS:
+>     - [Jak dodać rekord DNS TXT dla nazwy domeny](/pages/web_cloud/domains/dns_zone_txt_record_creation)
+> - Rekordy DNS e-mail:
+>     - [Konfiguracja rekordu MX do zarządzania e-mailem](/pages/web_cloud/domains/dns_zone_mx)
+>     - [Jak poprawić bezpieczeństwo e-maili za pomocą rekordu SPF](/pages/web_cloud/domains/dns_zone_spf)
+>     - [Jak poprawić bezpieczeństwo e-maili za pomocą rekordu DKIM](/pages/web_cloud/domains/dns_zone_dkim)
+>     - [Jak poprawić bezpieczeństwo e-maili za pomocą rekordu DMARC](/pages/web_cloud/domains/dns_zone_dmarc)
 
 ///
+<!-- CP-STEPS-END:dns-records-available -->
 
-/// details | Czy mogę zmienić serwery DNS zadeklarowane w mojej strefie DNS w OVHcloud?
+<!-- CP-STEPS-START:change-ns-in-dns-zone -->
+/// details | Czy mogę zmienić serwery DNS zadeklarowane w mojej strefie DNS OVHcloud?
 
-Ręczna modyfikacja rekordów DNS typu NS dla nazwy domeny w strefie DNS OVHcloud nie jest zalecana, ponieważ uniemożliwiłoby to rozwiązywanie DNS dla odpowiedniej strefy DNS.
+Ręczna modyfikacja rekordów DNS typu NS dla nazwy domeny w strefie DNS OVHcloud nie jest zalecana, ponieważ uniemożliwiłoby to rozwiązywanie odpowiedniej strefy DNS.
 
-Jeśli chcesz zmienić konfigurację rekordów DNS typu NS dla swojej nazwy domeny, prawdopodobnie chcesz zmienić serwery DNS zadeklarowane dla tej nazwy domeny.
-
-> [!primary]
->
-> Aby zmienić serwery DNS dla swojej nazwy domeny w OVHcloud, musi już istnieć strefa DNS na nowych, pożądanych serwerach DNS.
-> Ponadto, musisz upewnić się, że w tej samej strefie DNS rekordy DNS typu NS odpowiadają odpowiednim serwerom DNS.
-
-Aby to zrobić, postępuj zgodnie z poniższymi krokami:
-
-1. Zaloguj się do [Panelu klienta OVHcloud](/links/manager) i przejdź do sekcji `Web Cloud`{.action}.
-2. Kliknij menu `Domeny`{.action}, następnie wybierz odpowiednią domenę.
-3. Po wybraniu nazwy domeny wybierz kartę `Serwery DNS`{.action}.
-4. Aby zmienić serwery DNS, kliknij przycisk `Zmień serwery DNS`{.action} po prawej stronie tabeli "serwery DNS". W zależności od rozdzielczości ekranu, przycisk może znajdować się poniżej tabeli.
-
-Na stronie, która się pojawi, możesz zmienić serwery DNS dla swojej nazwy domeny.
+Jeśli chcesz zmodyfikować konfigurację rekordów DNS typu NS dla swojej nazwy domeny, prawdopodobnie chcesz zmienić zadeklarowane serwery DNS.
 
 > [!primary]
 >
-> Propagacja zmiany serwerów DNS zadeklarowanych dla nazwy domeny może zająć do **48** godzin.
+> Aby zmienić serwery DNS dla nazwy domeny w OVHcloud, strefa DNS musi już istnieć na nowych serwerach DNS.
+> Ponadto musisz zweryfikować w tej samej strefie DNS, czy rekordy DNS typu NS odpowiadają odpowiednim serwerom DNS.
 
-W przypadku wystąpienia błędu, prosimy, abyś otworzył zgłoszenie wsparcia z [centrum pomocy](https://help.ovhcloud.com/csm?id=csm_get_help), wskazując poniższe informacje:
+W tym celu kliknij poniższe karty, aby wyświetlić kolejne **3** kroki.
+
+> [!tabs]
+> **Krok 1**
+>>
+>> Przejdź na stronę [Domeny](/links/control-panel/web-domains), następnie wybierz odpowiednią nazwę domeny.
+>>
+>> ![Domeny](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
+>>
+> **Krok 2**
+>>
+>> Wybierz zakładkę `Serwery DNS`{.action} po przejściu na odpowiednią nazwę domeny.
+>>
+> **Krok 3**
+>>
+>> Kliknij przycisk `Zmień serwery DNS`{.action} znajdujący się po prawej stronie tabeli "Serwery DNS". W zależności od rozdzielczości ekranu przycisk może znajdować się poniżej tabeli.
+>>
+>> Na wyświetlonej stronie możesz zmienić serwery DNS swojej nazwy domeny.
+
+> [!primary]
+>
+> Propagacja zmian serwerów DNS zadeklarowanych dla nazwy domeny może trwać do **48** godzin.
+
+Jeśli wystąpi błąd, zalecamy utworzenie zgłoszenia do działu wsparcia w [Centrum pomocy](https://help.ovhcloud.com/csm?id=csm_get_help), podając następujące informacje:
 
 - Nazwy serwerów DNS, które chcesz skonfigurować.
-- Komunikat o błędzie, który wystąpił.
+- Napotkany komunikat o błędzie.
 
 > [!success]
 >
-> Znajdziesz wszystkie szczegóły w naszym przewodniku "[Zmiana serwerów DNS domeny OVHcloud](/pages/web_cloud/domains/dns_server_edit)".
+> Wszystkie szczegóły znajdziesz w naszym przewodniku "[Jak zmienić serwery DNS nazwy domeny OVHcloud](/pages/web_cloud/domains/dns_server_edit)".
 
 ///
+<!-- CP-STEPS-END:change-ns-in-dns-zone -->
 
-/// details | Jaka jest różnica między rekordem DNS typu A (IPv4) a AAAA (IPv6)?
+/// details | Jaka jest różnica między rekordem A (IPv4) a rekordem AAAA (IPv6)?
 
-Sieć Internet działa od początku lat 90. zgodnie z normą IPv4. Ta norma umożliwia przypisanie adresu IP X.X.X.X (gdzie każdy "X" to liczba od 0 do 255) każdej maszynie podłączonej do sieci Internet (serwerom, komputerom, smartfonom, tabletom itp.). Jednak ta norma ogranicza liczbę urządzeń podłączonych do sieci Internet do około 4 miliardów.
+Internet działa od początku lat 90. w oparciu o standard IPv4. Standard ten przypisuje adres IP w formacie X.X.X.X (gdzie każde "X" to liczba od 0 do 255) każdemu urządzeniu podłączonemu do Internetu (serwery, komputery, smartfony, tablety itp.). Standard ten ogranicza jednak liczbę podłączonych urządzeń do około 4 miliardów.
 
-W związku z tym wprowadzono protokół IPv6, który umożliwia podłączenie do sieci Internet aż 340 sekstylionów urządzeń.
+Aby rozwiązać ten problem, wprowadzono protokół IPv6, umożliwiający podłączenie do Internetu do 340 sekstylionów urządzeń.
 
-Adresy IPv4 są obecnie mniej dostępne, więc trudniej jest dodawać nowe maszyny do sieci Internet zgodnie z normą IPv4. Jednak połączenia z adresem IPv6 są przydatne tylko wtedy, gdy np. Twoja strona internetowa jest również dostępna z tym samym protokołem.
+Adresy IPv4 są obecnie mniej dostępne, co utrudnia dodawanie nowych urządzeń do Internetu za pomocą IPv4. Jednak połączenia IPv6 są przydatne tylko wtedy, gdy np. Twoja strona internetowa jest również dostępna za pośrednictwem tego protokołu.
 
-Rekordy DNS typu A i AAAA to dwa typy rekordów zasobów używane do przypisywania nazwy domeny do adresu IP.
+Rekordy DNS A i AAAA to dwa typy rekordów zasobów służących do powiązania nazwy domeny z adresem IP.
 
-Ich główne różnice polegają na typie adresu IP, który wykorzystują:
+Ich główne różnice dotyczą typu używanego adresu IP:
 
-- **Rekord A** (nazywany również "rekordem hosta"): Przypisuje nazwę domeny do adresu IPv4 (np. 213.0.113.0). Adresy IPv4 to adresy 32-bitowe, zazwyczaj zapisywane w notacji dziesiętnej z kropkami.
-- **Rekord AAAA** (nazywany również "czterokrotnym rekordem A"): Przypisuje nazwę domeny do adresu IPv6 (np. 2001:db8:1:1b00:213:0:113:0). Adresy IPv6 to adresy 128-bitowe, zazwyczaj zapisywane w notacji heksadecymalnej.
+- **Rekord A** (zwany też "rekordem hosta"): Wiąże nazwę domeny z adresem IPv4 (np. 213.0.113.0). Adresy IPv4 to adresy 32-bitowe, zazwyczaj zapisywane w notacji dziesiętnej z kropkami.
+- **Rekord AAAA** (zwany też "rekordem quad A"): Wiąże nazwę domeny z adresem IPv6 (np. 2001:db8:1:1b00:213:0:113:0). Adresy IPv6 to adresy 128-bitowe, zazwyczaj zapisywane w notacji szesnastkowej.
 
-Innymi słowy, rekordy A są używane dla adresów IPv4, a rekordy AAAA dla adresów IPv6. Oba typy rekordów służą do kierowania ruchu do konkretnego adresu IP, ale są używane do różnych wersji protokołu Internet.
+Innymi słowy, rekordy A są używane dla adresów IPv4, a rekordy AAAA dla adresów IPv6. Oba typy rekordów kierują ruch do określonego adresu IP, ale są używane dla różnych wersji protokołu internetowego.
 
-Warto zauważyć, że domena może mieć zarówno rekordy A, jak i AAAA, co umożliwia jej dostępność na sieciach IPv4 i IPv6. Tę praktykę nazywa się "podwójnym stosowaniem", a jest powszechnie stosowana w przypadku stron internetowych i usług, które chcą być dostępne dla użytkowników na sieciach IPv4 i IPv6.
+Należy pamiętać, że nazwa domeny może mieć zarówno rekordy A, jak i AAAA, co pozwala na dostępność zarówno w sieciach IPv4, jak i IPv6. Jest to znane jako "dual stack" i stanowi powszechną praktykę dla stron internetowych i usług, które mają być dostępne zarówno w sieciach IPv4, jak i IPv6.
 
 > [!success]
 >
-> Znajdziesz więcej szczegółów w poniższych przewodnikach:
+> Więcej szczegółów znajdziesz w następujących przewodnikach:
 >
-> - [Dodaj rekord DNS typu A dla domeny](/pages/web_cloud/domains/dns_zone_a_record_creation)
-> - [Dodaj rekord DNS typu AAAA dla domeny](/pages/web_cloud/domains/dns_zone_aaaa_record_creation)
-> - [Skonfiguruj adres IPv6 dla swojej strony www](/pages/web_cloud/web_hosting/configure_ipv6)
+> - [Jak dodać rekord DNS A dla nazwy domeny](/pages/web_cloud/domains/dns_zone_a_record_creation)
+> - [Jak dodać rekord DNS AAAA dla nazwy domeny](/pages/web_cloud/domains/dns_zone_aaaa_record_creation)
+> - [Konfiguracja IPv6 dla strony internetowej](/pages/web_cloud/web_hosting/configure_ipv6)
 
 ///
 
-/// details | Jak skonfigurować rekord PTR dla mojej zewnętrznej adresu IP w OVHcloud?
+/// details | Jak mogę skonfigurować rekord PTR dla mojego zewnętrznego adresu IP w OVHcloud?
 
-W OVHcloud konfiguracje **P**oin**T**er **R**ecord (**PTR**) nie można bezpośrednio zarządzać w naszych strefach DNS.
+W OVHcloud konfiguracje **P**oin**T**er **R**ecord (**PTR**) nie mogą być zarządzane bezpośrednio w naszych strefach DNS.
 
-Aby skonfigurować rekord odwrotny/PTR dla zewnętrznego adresu IP, skontaktuj się ze swoim **I**nternet **S**ervice **P**rovider (**ISP**), ponieważ on jest odpowiedzialny za zarządzanie rekordami DNS odwrotnymi dla adresów IP, które przydziela.
+Aby skonfigurować rekord reverse/PTR dla zewnętrznego adresu IP, skontaktuj się ze swoim **d**ostawcą **u**sług **i**nternetowych (**ISP**), ponieważ jest on odpowiedzialny za zarządzanie rekordami reverse DNS dla przydzielonych przez niego adresów IP.
 
 > [!success]
 >
-> Znajdziesz wszystkie szczegóły w naszym przewodniku "[Wszystko o rekordach DNS](/pages/web_cloud/domains/dns_zone_records)".
+> Wszystkie szczegóły znajdziesz w naszym przewodniku "[Wszystko o rekordach DNS](/pages/web_cloud/domains/dns_zone_records)".
 
 ///
 
-/// details | Jak zmienić TTL domyślny w mojej strefie DNS OVHcloud?
+<!-- CP-STEPS-START:change-ttl -->
+/// details | Jak mogę zmienić domyślny TTL w mojej strefie DNS OVHcloud?
 
-Postępuj zgodnie z poniższymi krokami:
+Kliknij poniższe karty, aby wyświetlić kolejne **3** kroki.
 
-1. Zaloguj się do [Panelu klienta OVHcloud](/links/manager) i przejdź do sekcji `Web Cloud`{.action}.
-2. Kliknij menu `Strefy DNS`{.action}, następnie wybierz odpowiednią domenę.
-3. Na prawej stronie lub poniżej tabeli kliknij `Zmień domyślny TTL`{.action}.
-4. W oknie, które się otworzy, dostosuj wartość pod opisem `Domyślny TTL` zgodnie z Twoimi potrzebami, a następnie kliknij `Zmień`{.action}.
+> [!tabs]
+> **Krok 1**
+>>
+>> Przejdź na stronę [Strefy DNS](/links/control-panel/web-dns-zone), następnie wybierz odpowiednią nazwę domeny.
+>>
+>> ![Strefy DNS](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
+>>
+> **Krok 2**
+>>
+>> Po prawej stronie lub poniżej tabeli kliknij `Zmień domyślny TTL`{.action}.
+>>
+> **Krok 3**
+>>
+>> W otwartym oknie dostosuj wartość pod etykietą `Domyślny TTL` do swoich potrzeb, a następnie kliknij `Zmień`{.action}.
 
 > [!primary]
 >
-> Propagacja zmiany strefy DNS może zająć do **24** godzin.
+> Propagacja zmiany strefy DNS może trwać do **24** godzin.
 
 ///
+<!-- CP-STEPS-END:change-ttl -->
 
-/// details | Co to jest rekord DNS typu SOA?
+/// details | Czym jest rekord SOA DNS?
 
-Rekord DNS typu **S**tart **O**f **A**uthority (**SOA**) zawiera zestaw elementów dotyczących konfiguracji DNS dla nazwy domeny.
+Rekord DNS **S**tart **O**f **A**uthority (**SOA**) zawiera zestaw elementów związanych z konfiguracją DNS nazwy domeny.
 
-Poniżej znajduje się wynik zapytania SOA dla nazwy domeny `domain.tld`.
+Poniżej wynik zapytania SOA dla nazwy domeny `domain.tld`.
 
 ```bash
-              ;; ANSWER SECTION:                                                                                                     
+              ;; ANSWER SECTION:
 
-domain.tld.           3600    IN      SOA     dns200.anycast.me. tech.ovh.net. 2025091801 86400 3600 3600000 300   
+domain.tld.           3600    IN      SOA     dns200.anycast.me. tech.ovh.net. 2025091801 86400 3600 3600000 300
 ```
 
 |Element w wyniku|Opis|Odpowiednik w powyższym przykładzie|
 |---|---|---|
-|**NS (Name Server)**|Główny serwer DNS zadeklarowany dla nazwy domeny `domain.tld`.|`dns200.anycast.me`.|
-|**Email address**|Adres e-mail osoby odpowiedzialnej za strefę DNS.|`tech.ovh.net` (kropka między słowami `tech` i `ovh` powinna zostać zastąpiona znakiem `@`).|
-|**Serial number**|Unikalny numer seryjny, który zwiększa się o 1 przy każdej modyfikacji strefy DNS.<br>Zwykle składa się z daty aktualizacji w formacie `YYYYMMDD` i liczby aktualizacji dokonanych tego dnia.|`2025091801`: W tym przypadku 2 aktualizacje (`00` dla 1, `01` dla 2 itd.) zostały wykonane 18/09/2025.|
-|**Refresh time**|Interwał (w sekundach) między każdą aktualizacją serwerów DNS wtórnych (składających się na sieć DNS) z serwerem DNS głównym.|`86400` (24 godziny).|
-|**Retry time**|Interwał (w sekundach) między każdą próbą ponownego odświeżenia ustawień serwerów DNS wtórnych (składających się na sieć DNS) z serwerem DNS głównym, jeśli ten nie odpowiada lub jest niedostępny.|`3600` (1 godzina).|
-|**Expire time**|Czas (w sekundach), po którym serwery DNS wtórne (składające się na sieć DNS) przestają odpowiadać na zapytania DNS, jeśli serwer DNS główny nie aktualizuje się z nimi.|`3600000` (1000 godzin, 41,67 dni).|
-|**Minimum TTL**|Minimalny czas życia (w sekundach), przez który rekordy DNS strefy DNS są buforowane na serwerach DNS wtórnych (składających się na sieć DNS).|`300` (5 minut).|
+|**NS (Name Server)**|Główny serwer DNS zadeklarowany dla nazwy domeny `domain.tld`.|`dns200.anycast.me.`|
+|**Adres e-mail**|Adres e-mail administratora strefy DNS.|`tech.ovh.net.` (kropkę pomiędzy `tech` a `ovh` należy zastąpić znakiem `@`).|
+|**Numer seryjny**|Unikalny numer, który jest inkrementowany przy każdej modyfikacji strefy DNS.<br>Zazwyczaj składa się z daty aktualizacji w formacie `RRRRMMDD`, po której następuje liczba aktualizacji wykonanych tego dnia.|`2025091801`: Tutaj 2 aktualizacje (`00` oznacza 1, `01` oznacza 2 itd.) zostały wykonane 18.09.2025.|
+|**Czas odświeżania**|Interwał (w sekundach) między każdym odświeżeniem wtórnych serwerów DNS (część sieci DNS) z głównym serwerem DNS.|`86400` (24 godziny).|
+|**Czas ponownej próby**|Interwał (w sekundach) między każdą ponowną próbą odświeżenia ustawień wtórnych serwerów DNS (część sieci DNS) z głównym serwerem DNS, jeśli ten nie odpowiada lub jest niedostępny.|`3600` (1 godzina).|
+|**Czas wygaśnięcia**|Czas (w sekundach), po którym wtórne serwery DNS (część sieci DNS) przestają odpowiadać na zapytania DNS, jeśli główny serwer DNS nie aktualizuje ich już.|`3600000` (1000 godzin, 41,67 dnia).|
+|**Minimalny TTL**|Minimalny czas życia (w sekundach), przez który rekordy DNS w strefie są buforowane na wtórnych serwerach DNS (część sieci DNS).|`300` (5 minut).|
 
 ///
 
 <br>
 
-/// details | Jak sprawdzić konfigurację mojej strefy DNS?
+/// details | Jak mogę zweryfikować konfigurację mojej strefy DNS?
 
-Oto różne rozwiązania, aby sprawdzić konfigurację strefy DNS:
+Oto kilka metod weryfikacji konfiguracji strefy DNS:
 
-- **Narzędzie weryfikacji online**: Wiele narzędzi online umożliwia sprawdzenie konfiguracji Twojej strefy DNS. Znajdź je bezpośrednio za pomocą przeglądarki internetowej (Chrome, Edge, Firefox, Safari itp.), wpisując odpowiednie słowa kluczowe (np. "sprawdź propagację DNS") w wyszukiwarce.
+- **Narzędzie weryfikacji online**: Kilka narzędzi online może zweryfikować konfigurację strefy DNS. Użyj przeglądarki internetowej (Chrome, Edge, Firefox, Safari itp.), aby wyszukać odpowiednie słowa kluczowe (np. "weryfikacja propagacji DNS") w wyszukiwarce.
 
-- **Komenda "dig"**: Jeśli masz dostęp do *terminala* z systemu Linux lub macOS, możesz użyć komendy `dig`, aby sprawdzić konfigurację Twojej strefy DNS na sieci DNS.
+- **Polecenie "dig"**: Jeśli masz dostęp do *terminala* w systemie Linux lub macOS, możesz użyć polecenia `dig`, aby zweryfikować konfigurację strefy DNS w sieci DNS.
 
-- **Komenda "nslookup"**: Komenda `nslookup` jest dostępna na większości systemów operacyjnych i umożliwia również sprawdzenie konfiguracji Twojej strefy DNS.
+- **Polecenie "nslookup"**: Polecenie `nslookup` jest dostępne w większości systemów operacyjnych i może być również używane do weryfikacji konfiguracji strefy DNS.
 
-- **Z Twojego Panelu klienta OVHcloud**: Aby to zrobić, postępuj zgodnie z poniższymi krokami (jeśli aktywna strefa DNS Twojej nazwy domeny jest zarządzana w OVHcloud): 
-    1. Zaloguj się do [Panelu klienta OVHcloud](/links/manager) i przejdź do sekcji `Web Cloud`{.action}.
-    2. Kliknij menu `Strefy DNS`{.action}, następnie wybierz odpowiednią domenę.
-    3. W tabeli na stronie, która się pojawi, zobaczysz wszystkie zadeklarowane rekordy DNS dla swojej nazwy domeny.
+- **Z Panelu klienta OVHcloud**: Jeśli aktywna strefa DNS Twojej nazwy domeny jest zarządzana przez OVHcloud, przejdź na stronę [Strefy DNS](/links/control-panel/web-dns-zone), aby wyświetlić wszystkie rekordy DNS zadeklarowane dla Twojej nazwy domeny.
 
 > [!success]
 >
-> Znajdziesz wszystkie szczegóły w naszym przewodniku "[Modyfikacja strefy DNS](/pages/web_cloud/domains/dns_zone_edit)".
+> Wszystkie szczegóły znajdziesz w naszym przewodniku "[Edycja strefy DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit)".
 
 ///
 
-/// details | Jak sprawdzić propagację zmian wprowadzonych w mojej strefie DNS?
+<!-- CP-STEPS-START:verify-dns-propagation -->
+/// details | Jak mogę sprawdzić propagację zmian dokonanych w mojej strefie DNS?
 
 > [!primary]
 >
-> Przed kontynuowaniem, wiedz, że:
+> Przed kontynuowaniem pamiętaj, że:
 >
-> - Propagacja zmiany wprowadzonej w strefie DNS może zająć do **24** godzin.
-> - Propagacja zmiany serwerów DNS dla nazwy domeny może zająć do **48** godzin.
+> - Propagacja zmiany dokonanej w strefie DNS może trwać do **24** godzin.
+> - Propagacja zmiany serwera DNS dla nazwy domeny może trwać do **48** godzin.
 
-Możesz jednak sprawdzić, czy propagacja DNS przebiega poprawnie, używając rekordu DNS typu **S**tart **O**f **A**uthority (**SOA**).
+Możesz zweryfikować prawidłowość propagacji DNS za pomocą rekordu DNS **S**tart **O**f **A**uthority (**SOA**).
 
-Najpierw otwórz kompatybilny terminal na swoim komputerze, a następnie wykonaj poniższą linię komend (zastąp `domain.tld` swoją własną nazwą domeny):
+Najpierw otwórz kompatybilny terminal na swoim komputerze i wykonaj następujące polecenie (zastąp `domain.tld` swoją nazwą domeny):
 
 ```bash
 dig domain.tld soa
@@ -580,255 +633,376 @@ dig domain.tld soa
 
 > [!primary]
 >
-> Systemy operacyjne Linux i macOS mają natywnie zainstalowany kompatybilny terminal do uruchamiania tego typu komend. Jeśli używasz innego systemu operacyjnego, np. Windows, musisz wcześniej zainstalować kompatybilny terminal, aby uruchomić komendę.
+> Systemy operacyjne Linux i macOS natywnie obsługują kompatybilny terminal do wykonania tego polecenia. Jeśli używasz innego systemu operacyjnego, takiego jak Windows, musisz najpierw zainstalować kompatybilny terminal, aby wykonać polecenie.
 >
-> Ponadto, wiedz, że istnieją również narzędzia dostępne online do sprawdzania propagacji DNS.
+> Ponadto istnieją również narzędzia online do weryfikacji propagacji DNS.
 
-Po wykonaniu komendy otrzymasz wynik podobny do poniższego:
+Po wykonaniu polecenia otrzymasz wynik podobny do następującego:
 
 ```bash
-              ;; ANSWER SECTION:                                                                                                     
+              ;; ANSWER SECTION:
 
-domain.tld.           3600    IN      SOA     dns200.anycast.me. tech.ovh.net. 2025091801 86400 3600 3600000 300   
+domain.tld.           3600    IN      SOA     dns200.anycast.me. tech.ovh.net. 2025091801 86400 3600 3600000 300
 ```
 
-W tym wyniku pobierz **numer seryjny** (w naszym przykładzie: `2025091801`).
+Z tego wyniku pobierz **numer seryjny** (w naszym przykładzie: `2025091801`).
 
-Ma on postać `YYYYMMDDRR`, gdzie:
+Ma on format `RRRRMMDDNN`, gdzie:
 
-- `YYYYMMDD`: Reprezentuje datę (rok, miesiąc i dzień) ostatniej aktualizacji DNS dla nazwy domeny.
-- `RR`: Reprezentuje liczbę aktualizacji, które zostały wykonane w dniu wskazanym. Na przykład, jeśli została wykonana tylko jedna aktualizacja w ciągu dnia, będzie miała wartość `00`. Jeśli 2 aktualizacje zostały wykonane tego samego dnia, będzie miała wartość `01` i tak dalej.
+- `RRRRMMDD`: Oznacza datę (rok, miesiąc i dzień) ostatniej propagowanej aktualizacji DNS dla nazwy domeny.
+- `NN`: Oznacza liczbę aktualizacji wykonanych w danym dniu. Na przykład, jeśli w danym dniu wykonano tylko jedną aktualizację, będzie miała wartość `00`. Jeśli dwie aktualizacje zostały wykonane tego samego dnia, będzie miała wartość `01` itd.
 
-Po pobraniu numeru seryjnego, postępuj zgodnie z poniższymi krokami:
+Po pobraniu numeru seryjnego kliknij poniższe karty, aby wyświetlić kolejne **4** kroki.
 
-1. Zaloguj się do [Panelu klienta OVHcloud](/links/manager) i przejdź do sekcji `Web Cloud`{.action}.
-2. Kliknij menu `Strefy DNS`{.action}, następnie wybierz odpowiednią domenę.
-3. Na prawej stronie lub poniżej tabeli kliknij `Modyfikacja w trybie tekstowym`{.action}.
-4. W oknie, które się otworzy, znajdź drugi wiersz, który w naszym przykładzie będzie wyglądał tak: `@	IN SOA dns200.anycast.me. tech.ovh.net. (2025091801 86400 3600 3600000 60)`.
-5. Porównaj numer seryjny pobrany z terminala z tym, który wyświetla się w Twoim Panelu klienta OVHcloud.
-
-Przypadek n°1 - Dwa numery seryjne są identyczne:
-
-Oznacza to, że propagacja DNS przebiega poprawnie. Nie musisz nic więcej robić.
-
-Przypadek n°2 - Dwa numery seryjne są różne: 
-
-Oznacza to, że albo:
-
-- Propagacja DNS Twoich zmian nie została jeszcze całkowicie zakończona (jesteś wciąż w standardowym okresie propagacji DNS). W takim przypadku, poczekaj, aż propagacja DNS zostanie całkowicie zakończona (**24** godziny dla zmiany strefy DNS i **48** godzin dla zmiany serwerów DNS), a następnie powtórz operację.
-- Propagacja DNS nie przebiega poprawnie. W takim przypadku, z okna `Modyfikacja w trybie tekstowym`{.action}, który się otworzył w kroku **4**, kliknij bezpośrednio **bez wprowadzania żadnych zmian** przycisk `Dalej`{.action}, a następnie `Zatwierdź`{.action}. Zostanie wtedy uruchomiona nowa propagacja DNS.
+> [!tabs]
+> **Krok 1**
+>>
+>> Przejdź na stronę [Strefy DNS](/links/control-panel/web-dns-zone), następnie wybierz odpowiednią nazwę domeny.
+>>
+>> ![Strefy DNS](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
+>>
+> **Krok 2**
+>>
+>> Po prawej stronie lub poniżej tabeli kliknij `Zmień w trybie tekstowym`{.action}.
+>>
+> **Krok 3**
+>>
+>> W otwartym oknie znajdź drugi wiersz, który w naszym przykładzie odpowiadałby: `@	IN SOA dns200.anycast.me. tech.ovh.net. (2025091801 86400 3600 3600000 60)`.
+>>
+> **Krok 4**
+>>
+>> Porównaj numer seryjny pobrany z terminala z numerem wyświetlonym w Panelu klienta OVHcloud.
+>>
+>> **Przypadek 1** — Oba numery seryjne są zgodne:
+>>
+>> Oznacza to, że propagacja DNS przebiega prawidłowo. Nie musisz nic więcej robić.
+>>
+>> **Przypadek 2** — Oba numery seryjne są różne:
+>>
+>> Oznacza to, że:
+>>
+>> - Propagacja DNS Twoich zmian nie została jeszcze zakończona (jesteś w standardowym okresie propagacji). W takim przypadku poczekaj, aż propagacja DNS zostanie w pełni zakończona (**24** godziny na zmianę strefy DNS i **48** godzin na zmianę serwera DNS), a następnie powtórz procedurę.
+>> - Propagacja DNS nie przebiega prawidłowo. W takim przypadku, w oknie `Zmień w trybie tekstowym`{.action} otwartym w kroku **3**, kliknij bezpośrednio **bez dokonywania żadnych zmian** na `Dalej`{.action}, a następnie na `Potwierdź`{.action}. Zostanie wówczas zainicjowana nowa propagacja DNS.
 
 ///
+<!-- CP-STEPS-END:verify-dns-propagation -->
 
-/// details | Jak przywrócić strefę DNS?
+<!-- CP-STEPS-START:restore-dns-zone -->
+/// details | Jak mogę przywrócić strefę DNS?
 
-Postępuj zgodnie z poniższymi krokami:
+Kliknij poniższe karty, aby wyświetlić kolejne **3** kroki.
 
-1. Zaloguj się do [Panelu klienta OVHcloud](/links/manager) i przejdź do sekcji `Web Cloud`{.action}.
-2. Kliknij menu `Strefy DNS`{.action}, następnie wybierz odpowiednią domenę.
-3. Na prawej stronie lub poniżej tabeli kliknij `Wyświetl historię strefy DNS`{.action}.
-4. W tabeli na stronie, która się pojawi, zidentyfikuj linię odpowiadającą kopii zapasowej strefy DNS, którą chcesz przywrócić, a następnie kliknij ikonę w kolumnie `Przywróć`{.action}. Obecna konfiguracja strefy DNS zostanie zastąpiona wybraną kopią zapasową.
+> [!tabs]
+> **Krok 1**
+>>
+>> Przejdź na stronę [Strefy DNS](/links/control-panel/web-dns-zone), następnie wybierz odpowiednią nazwę domeny.
+>>
+>> ![Strefy DNS](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
+>>
+> **Krok 2**
+>>
+>> Po prawej stronie lub poniżej tabeli kliknij `Wyświetl historię strefy DNS`{.action}.
+>>
+> **Krok 3**
+>>
+>> W tabeli na wyświetlonej stronie zidentyfikuj wiersz odpowiadający kopii zapasowej strefy DNS, którą chcesz przywrócić, a następnie kliknij ikonę w kolumnie `Przywróć`{.action}. Bieżąca konfiguracja strefy DNS zostanie zastąpiona wybraną kopią zapasową.
 
 > [!primary]
 >
-> Propagacja zmiany strefy DNS może zająć do **24** godzin.
+> Propagacja zmiany strefy DNS może trwać do **24** godzin.
 
 > [!success]
 >
-> Znajdziesz wszystkie szczegóły w naszym przewodniku "[Zarządzanie historią strefy DNS](/pages/web_cloud/domains/dns_zone_history)".
+> Wszystkie szczegóły znajdziesz w naszym przewodniku "[Zarządzanie historią strefy DNS](/pages/web_cloud/domains/dns_zone_history)".
 
 ///
+<!-- CP-STEPS-END:restore-dns-zone -->
 
-/// details | Jak pobrać kopię mojej strefy DNS?
+<!-- CP-STEPS-START:get-dns-zone-copy -->
+/// details | Jak mogę pobrać kopię mojej strefy DNS?
 
-Postępuj zgodnie z poniższymi krokami:
+Kliknij poniższe karty, aby wyświetlić kolejne **3** kroki.
 
-1. Zaloguj się do [Panelu klienta OVHcloud](/links/manager) i przejdź do sekcji `Web Cloud`{.action}.
-2. Kliknij menu `Strefy DNS`{.action}, następnie wybierz odpowiednią domenę.
-3. Na prawej stronie lub poniżej tabeli kliknij `Wyświetl historię strefy DNS`{.action}.
-4. W tabeli na stronie, która się pojawi, zidentyfikuj linię odpowiadającą kopii zapasowej strefy DNS, którą chcesz pobrać, a następnie kliknij ikonę w kolumnie `Pobierz`{.action}. Kopia strefy DNS zostanie pobrana w formacie *.txt*.
+> [!tabs]
+> **Krok 1**
+>>
+>> Przejdź na stronę [Strefy DNS](/links/control-panel/web-dns-zone), następnie wybierz odpowiednią nazwę domeny.
+>>
+>> ![Strefy DNS](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
+>>
+> **Krok 2**
+>>
+>> Po prawej stronie lub poniżej tabeli kliknij `Wyświetl historię strefy DNS`{.action}.
+>>
+> **Krok 3**
+>>
+>> W tabeli na wyświetlonej stronie zidentyfikuj wiersz odpowiadający kopii zapasowej strefy DNS, którą chcesz pobrać, a następnie kliknij ikonę w kolumnie `Pobierz`{.action}. Kopia strefy DNS zostanie pobrana w formacie *.txt*.
 
 > [!success]
 >
-> Znajdziesz wszystkie szczegóły w naszym przewodniku "[Zarządzanie historią strefy DNS](/pages/web_cloud/domains/dns_zone_history)".
+> Wszystkie szczegóły znajdziesz w naszym przewodniku "[Zarządzanie historią strefy DNS](/pages/web_cloud/domains/dns_zone_history)".
 
 ///
+<!-- CP-STEPS-END:get-dns-zone-copy -->
 
+<!-- CP-STEPS-START:create-dns-zone-subdomain -->
 /// details | Czy mogę utworzyć strefę DNS dla subdomeny?
 
 Możesz utworzyć strefę DNS dla subdomeny.
 
-Aby to zrobić, postępuj zgodnie z poniższymi krokami:
+W tym celu kliknij poniższe karty, aby wyświetlić kolejne **4** kroki.
 
-1. Zaloguj się do [Panelu klienta OVHcloud](/links/manager) i przejdź do sekcji `Web Cloud`{.action}.
-2. Kliknij menu `Strefy DNS`{.action}, a następnie kliknij przycisk `Zamów`{.action} w prawym górnym rogu tabeli, która się pojawi.
-3. Na stronie, która się wyświetli, wprowadź Subdomenę (np. *www.domain.tld*), dla której chcesz utworzyć strefę DNS OVHcloud. Poczekaj kilka chwil, aż narzędzie wykona weryfikacje dotyczące poddomeny.
-4. Gdy weryfikacja się powiedzie, wybierz, czy chcesz włączyć wpisy minimalne dla strefy DNS, którą chcesz utworzyć. Ta decyzja nie jest ostateczna, ponieważ zawsze będziesz mógł [edytować wpisy strefy DNS](/pages/web_cloud/domains/dns_zone_edit) później.
-5. Po podjęciu decyzji, kontynuuj kroki aż do utworzenia strefy DNS.
+> [!tabs]
+> **Krok 1**
+>>
+>> Przejdź na stronę [Strefy DNS](/links/control-panel/web-dns-zone), następnie kliknij przycisk `Zamów`{.action} w prawym górnym rogu wyświetlonej tabeli.
+>>
+> **Krok 2**
+>>
+>> Na wyświetlonej stronie wpisz subdomenę (np. *www.domain.tld*), dla której chcesz utworzyć strefę DNS OVHcloud. Poczekaj chwilę, aż narzędzie zweryfikuje subdomenę.
+>>
+> **Krok 3**
+>>
+>> Po pomyślnej weryfikacji wybierz, czy chcesz aktywować minimalne wpisy dla tworzonej strefy DNS. Ten wybór nie jest ostateczny, ponieważ zawsze możesz później [edytować rekordy strefy DNS](/pages/web_cloud/domains/dns_zone_edit).
+>>
+> **Krok 4**
+>>
+>> Po dokonaniu wyboru przejdź przez kolejne etapy aż do utworzenia strefy DNS.
 
-Ta strefa DNS zostanie zainstalowana na 2 serwerach DNS OVHcloud. Musisz zadeklarować nazwy tych dwóch serwerów w aktywnej strefie DNS nazwy domeny, z której pochodzi Twoja poddomena (np. *www.domain.tld* jest poddomeną nazwy domeny *domain.tld*).
+Ta strefa DNS zostanie zainstalowana na 2 serwerach DNS OVHcloud. Musisz zadeklarować nazwy tych dwóch serwerów w aktywnej strefie DNS nazwy domeny, z której pochodzi Twoja subdomena (np. *www.domain.tld* jest subdomeną nazwy domeny *domain.tld*).
 
-Aby uzyskać nazwy dwóch serwerów DNS, postępuj zgodnie z poniższymi krokami:
+Aby pobrać nazwy 2 serwerów DNS, kliknij poniższe karty, aby wyświetlić kolejne **2** kroki.
 
-1. Zaloguj się do [Panelu klienta OVHcloud](/links/manager) i przejdź do sekcji `Web Cloud`{.action}.
-2. Kliknij menu `Strefy DNS`{.action}, następnie wybierz odpowiednią subdomenę.
-3. W lewym górnym rogu strony, która się pojawi, pobierz nazwy dwóch serwerów DNS pod opisem `Name Servers`. Mają one jedną z dwóch poniższych form:
+> [!tabs]
+> **Krok 1**
+>>
+>> Przejdź na stronę [Strefy DNS](/links/control-panel/web-dns-zone), następnie wybierz odpowiednią subdomenę.
+>>
+>> ![Strefy DNS](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
+>>
+> **Krok 2**
+>>
+>> W lewym górnym rogu wyświetlonej strony pobierz 2 nazwy serwerów DNS wymienione pod etykietą `Name Servers`. Mają one jeden z dwóch następujących formatów:
+>>
+>> - `dnsXXX.ovh.net` i `nsXXX.ovh.net` **lub** `dnsXXX.ovh.ca` i `nsXXX.ovh.ca` (gdzie każde `X` oznacza cyfrę od `0` do `9`).
+>> - `dns200.ovh.me` i `ns200.anycast.me`.
 
-- `dnsXXX.ovh.net` i `nsXXX.ovh.net` **lub** `dnsXXX.ovh.ca` i `nsXXX.ovh.ca` (gdzie każdy `X` reprezentuje cyfrę od `0` do `9`).
-- `dns200.ovh.me` i `ns200.anycast.me`.
+Po uzyskaniu 2 serwerów DNS zadeklaruj je za pomocą dwóch rekordów DNS typu NS w aktywnej strefie DNS nazwy domeny, z której pochodzi Twoja subdomena.
 
-Po uzyskaniu dwóch serwerów DNS, zadeklaruj je za pomocą dwóch wpisów typu NS w aktywnej strefie DNS nazwy domeny, z której pochodzi Twoja Subdomena.
+Przypadek 1 — Aktywna strefa DNS nazwy domeny, z której pochodzi Twoja subdomena, jest w OVHcloud:
 
-Przypadek n°1 - Aktywna strefa DNS nazwy domeny, z której pochodzi Twoja Subdomena, znajduje się w OVHcloud:
+Kliknij poniższe karty, aby wyświetlić kolejne **4** kroki.
 
-Postępuj zgodnie z poniższymi krokami:
+> [!tabs]
+> **Krok 1**
+>>
+>> Przejdź na stronę [Strefy DNS](/links/control-panel/web-dns-zone), następnie wybierz odpowiednią nazwę domeny.
+>>
+>> ![Strefy DNS](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
+>>
+> **Krok 2**
+>>
+>> Po prawej stronie lub poniżej tabeli kliknij `Dodaj rekord`{.action}, a następnie wybierz typ rekordu DNS `NS`{.action}, aby zadeklarować serwer DNS.
+>>
+> **Krok 3**
+>>
+>> W otwartym oknie wpisz subdomenę w polu `Sub-domain *`{.action} (np. wpisz **tylko** *www*, jeśli Twoja nazwa domeny to *domain.tld*, a pełna subdomena to *www.domain.tld*). W polu `Target *`{.action} wpisz **jeden** z 2 serwerów DNS.
+>>
+> **Krok 4**
+>>
+>> Kliknij `Dalej`{.action}, a następnie `Potwierdź`{.action}.
+>>
+>> Powtórz procedurę dla drugiego serwera DNS do zadeklarowania.
 
-1. Zaloguj się do [Panelu klienta OVHcloud](/links/manager) i przejdź do sekcji `Web Cloud`{.action}.
-2. Kliknij menu `Strefy DNS`{.action}, następnie wybierz odpowiednią domenę.
-3. Na prawej stronie lub poniżej tabeli kliknij `Dodaj rekord`{.action}, a następnie wybierz typ wpisu DNS typu `NS`{.action}, aby zadeklarować serwer DNS.
-4. W oknie, które się otworzy, wprowadź odpowiednią poddomenę w polu `Subdomena *`{.action} (np. wpisz **tylko** *www*, jeśli Twoja nazwa domeny to *domain.tld*, a Twoja pełna poddomena to *www.domain.tld*). W polu `Adres docelowy *`{.action} wprowadź **jeden** z dwóch serwerów DNS.
-5. Kliknij `Dalej`{.action}, a następnie `Zatwierdź`{.action}.
+Przypadek 2 — Aktywna strefa DNS nazwy domeny, z której pochodzi Twoja subdomena, nie jest w OVHcloud:
 
-Powtórz operację dla drugiego serwera DNS, który został do zadeklarowania.
-
-Przypadek n°2 - Aktywna strefa DNS nazwy domeny, z której pochodzi Twoja poddomena, nie znajduje się w OVHcloud:
-
-W takim przypadku musisz zadeklarować dwa serwery DNS bezpośrednio u dostawcy DNS Twojej nazwy domeny (z której pochodzi Twoja poddomena).
-
-> [!primary]
->
-> W obu przypadkach propagacja zmiany strefy DNS może zająć do **24** godzin.
-
-> [!success]
->
-> Znajdziesz więcej szczegółów w poniższych przewodnikach:
->
-> - [Tworzenie strefy DNS OVHcloud dla domeny](/pages/web_cloud/domains/dns_zone_create)
-> - [Modyfikacja strefy DNS](/pages/web_cloud/domains/dns_zone_edit)
-
-///
-
-/// details | Jak przekierować wszystkie poddomeny tej samej nazwy domeny na tę samą adres IP?
-
-Postępuj zgodnie z poniższymi krokami:
-
-1. Zaloguj się do [Panelu klienta OVHcloud](/links/manager) i przejdź do sekcji `Web Cloud`{.action}.
-2. Kliknij menu `Strefy DNS`{.action}, następnie wybierz odpowiednią domenę.
-3. Na prawej stronie lub poniżej tabeli kliknij `Dodaj rekord`{.action}, a następnie wybierz typ wpisu DNS typu `A`{.action} dla IPv4 (np. `203.0.113.0`) lub typu `AAAA`{.action} dla IPv6 (np. `2001:db8:1:1b00:203:0:113:0`).
-4. W oknie, które się otworzy i w polu wprowadzania oznaczonym `Subdomena *`{.action}, wprowadź wartość `*`. Gwiazdka `*` będzie reprezentować wszystkie poddomeny (np. `www.domain.tld` lub `ovhcloud.domain.tld`) Twojej nazwy domeny. Uzupełnij pole `Adres decelowy *`{.action} o żądaną adres IP.
-5. Kliknij `Dalej`{.action}, a następnie `Zatwierdź`{.action}.
-
-> [!primary]
->
-> Propagacja zmiany strefy DNS może zająć do **24** godzin.
-
-> [!success]
->
-> Znajdziesz wszystkie szczegóły w naszym przewodniku "[Modyfikacja strefy DNS](/pages/web_cloud/domains/dns_zone_edit)".
-
-///
-
-/// details | Czy mogę wdrożyć wildcard w mojej strefie DNS?
-
-Można wdrożyć wildcard w strefie DNS OVHcloud.
-
-Aby to zrobić, postępuj zgodnie z poniższymi krokami:
-
-1. Zaloguj się do [Panelu klienta OVHcloud](/links/manager) i przejdź do sekcji `Web Cloud`{.action}.
-2. Kliknij menu `Strefy DNS`{.action}, następnie wybierz odpowiednią domenę.
-3. Na prawej stronie lub poniżej tabeli kliknij `Dodaj rekord`{.action}, a następnie wybierz typ wpisu DNS, dla którego chcesz wdrożyć wildcard.
-4. W oknie, które się otworzy i w polu wprowadzania oznaczonym `Subdomena *`{.action}, wprowadź wartość `*`. Gwiazdka `*` będzie reprezentować wszystkie poddomeny (np. `www.domain.tld` lub `ovhcloud.domain.tld`) Twojej nazwy domeny. Uzupełnij pozostałe pola wartościami, które chcesz.
-5. Kliknij `Dalej`{.action}, a następnie `Zatwierdź`{.action}.
+Musisz zadeklarować 2 serwery DNS dla swojej subdomeny bezpośrednio u dostawcy DNS Twojej nazwy domeny (z której pochodzi Twoja subdomena).
 
 > [!primary]
 >
-> Propagacja zmiany strefy DNS może zająć do **24** godzin.
+> W obu przypadkach propagacja zmiany strefy DNS może trwać do **24** godzin.
 
 > [!success]
 >
-> Znajdziesz wszystkie szczegóły w naszym przewodniku "[Modyfikacja strefy DNS](/pages/web_cloud/domains/dns_zone_edit)".
+> Więcej szczegółów znajdziesz w następujących przewodnikach:
+>
+> - [Tworzenie strefy DNS OVHcloud dla nazwy domeny](/pages/web_cloud/domains/dns_zone_create)
+> - [Edycja strefy DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit)
 
 ///
+<!-- CP-STEPS-END:create-dns-zone-subdomain -->
+
+<!-- CP-STEPS-START:redirect-all-subdomains -->
+/// details | Jak mogę przekierować wszystkie subdomeny tej samej nazwy domeny na ten sam adres IP?
+
+Kliknij poniższe karty, aby wyświetlić kolejne **4** kroki.
+
+> [!tabs]
+> **Krok 1**
+>>
+>> Przejdź na stronę [Strefy DNS](/links/control-panel/web-dns-zone), następnie wybierz odpowiednią nazwę domeny.
+>>
+>> ![Strefy DNS](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
+>>
+> **Krok 2**
+>>
+>> Po prawej stronie lub poniżej tabeli kliknij `Dodaj rekord`{.action}, a następnie wybierz typ rekordu DNS `A`{.action} dla adresu IPv4 (np. `203.0.113.0`) lub typ rekordu DNS `AAAA`{.action} dla adresu IPv6 (np. `2001:db8:1:1b00:203:0:113:0`).
+>>
+> **Krok 3**
+>>
+>> W otwartym oknie, w polu `Sub-domain *`{.action}, wpisz wartość `*`. Gwiazdka `*` reprezentuje wszystkie subdomeny (np. `www.domain.tld` lub `ovhcloud.domain.tld`) Twojej nazwy domeny. Uzupełnij pole `Target *`{.action} żądanym adresem IP.
+>>
+> **Krok 4**
+>>
+>> Kliknij `Dalej`{.action}, a następnie `Potwierdź`{.action}.
+
+> [!primary]
+>
+> Propagacja zmiany strefy DNS może trwać do **24** godzin.
+
+> [!success]
+>
+> Wszystkie szczegóły znajdziesz w naszym przewodniku "[Edycja strefy DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit)".
+
+///
+<!-- CP-STEPS-END:redirect-all-subdomains -->
+
+<!-- CP-STEPS-START:wildcard-dns -->
+/// details | Czy mogę skonfigurować wildcard w mojej strefie DNS?
+
+Skonfigurowanie wildcard w strefie DNS OVHcloud jest możliwe.
+
+W tym celu kliknij poniższe karty, aby wyświetlić kolejne **4** kroki.
+
+> [!tabs]
+> **Krok 1**
+>>
+>> Przejdź na stronę [Strefy DNS](/links/control-panel/web-dns-zone), następnie wybierz odpowiednią nazwę domeny.
+>>
+>> ![Strefy DNS](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
+>>
+> **Krok 2**
+>>
+>> Po prawej stronie lub poniżej tabeli kliknij `Dodaj rekord`{.action}, a następnie wybierz typ rekordu DNS, dla którego chcesz skonfigurować wildcard.
+>>
+> **Krok 3**
+>>
+>> W otwartym oknie, w polu `Sub-domain *`{.action}, wpisz wartość `*`. Gwiazdka `*` reprezentuje wszystkie subdomeny (np. `www.domain.tld` lub `ovhcloud.domain.tld`) Twojej nazwy domeny. Uzupełnij pozostałe pola żądanymi wartościami.
+>>
+> **Krok 4**
+>>
+>> Kliknij `Dalej`{.action}, a następnie `Potwierdź`{.action}.
+
+> [!primary]
+>
+> Propagacja zmiany strefy DNS może trwać do **24** godzin.
+
+> [!success]
+>
+> Wszystkie szczegóły znajdziesz w naszym przewodniku "[Edycja strefy DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit)".
+
+///
+<!-- CP-STEPS-END:wildcard-dns -->
 
 <br>
 
-/// details | Usunąłem przypadkowo moją strefę DNS i chcę ją przywrócić, co mam zrobić?
+<!-- CP-STEPS-START:restore-deleted-dns-zone -->
+/// details | Przypadkowo usunąłem moją strefę DNS i chcę ją przywrócić. Co powinienem zrobić?
 
-OVHcloud wysyła e-mail zawierający kopię strefy DNS w formacie tekstowym po usunięciu Twojej strefy DNS, abyś mógł ją później przywrócić, jeśli będzie to konieczne.
-E-mail jest wysyłany na adres e-mail przypisany do Twojego konta klienta OVHcloud.
+OVHcloud wysyła e-mail z tekstową kopią strefy DNS po jej usunięciu, abyś mógł ją później przywrócić w razie potrzeby.
+Ten e-mail jest wysyłany na adres e-mail powiązany z Twoim kontem klienta OVHcloud.
 
 > [!success]
 >
-> Jeśli nie otrzymałeś tego e-maila, sprawdź folder spamu lub postępuj zgodnie z poniższymi krokami:
->
-> 1. Zaloguj się do swojego [Panelu klienta OVHcloud](/links/manager), kliknij swoje imię w prawym górnym rogu, a następnie `Dostęp do konta`{.action}.
-> 2. Na stronie, która się wyświetli, kliknij kartę `Otrzymane e-maile`{.action}.
-> 3. W tabeli, która się pojawi i wśród listy otrzymanych e-maili, kliknij odpowiedni e-mail, aby wyświetlić jego zawartość.
+> Jeśli nie otrzymałeś tego e-maila, sprawdź folder spam lub przejdź na stronę [Moje konto](/links/control-panel/account-dashboard), następnie kliknij zakładkę `Otrzymane e-maile`{.action}.
 
-Aby przywrócić swoją strefę DNS, postępuj zgodnie z poniższymi krokami:
+Aby przywrócić strefę DNS, pobierz plik zawierający strefę DNS z otrzymanego e-maila.
 
-1. Pobierz plik zawierający strefę DNS z otrzymanego e-maila.
-2. Zaloguj się do [Panelu klienta OVHcloud](/links/manager) i przejdź do sekcji `Web Cloud`{.action}.
-3. Kliknij menu `Domeny`{.action}, następnie wybierz odpowiednią domenę.
-4. Po wybraniu nazwy domeny wybierz kartę `Strefa DNS`{.action}. **Jeśli strefa DNS jest nieaktywna, aktywuj ją z tej karty.**
-5. Na prawej stronie lub poniżej tabeli kliknij `Modyfikacja w trybie tekstowym`{.action}.
-6. W oknie, które się otworzy, zastąp cały wyświetlany zawartość kopią usuniętej strefy DNS. Następnie kliknij `Dalej`{.action}, a następnie `Zatwierdź`{.action}.
+Kliknij poniższe karty, aby wyświetlić kolejne **4** kroki.
+
+> [!tabs]
+> **Krok 1**
+>>
+>> Przejdź na stronę [Domeny](/links/control-panel/web-domains), następnie wybierz odpowiednią nazwę domeny.
+>>
+>> ![Domeny](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
+>>
+> **Krok 2**
+>>
+>> Wybierz zakładkę `Strefa DNS`{.action} po przejściu na odpowiednią nazwę domeny. **Jeśli strefa DNS jest nieaktywna, aktywuj ją z tej zakładki.**
+>>
+> **Krok 3**
+>>
+>> Po prawej stronie lub poniżej tabeli kliknij `Zmień w trybie tekstowym`{.action}.
+>>
+> **Krok 4**
+>>
+>> W otwartym oknie zastąp całą wyświetloną zawartość kopią usuniętej strefy DNS. Kliknij `Dalej`{.action}, a następnie `Potwierdź`{.action}.
 
 > [!primary]
 >
-> Propagacja zmiany strefy DNS może zająć do **24** godzin.
+> Propagacja zmiany strefy DNS może trwać do **24** godzin.
 
 > [!success]
 >
-> Znajdziesz więcej szczegółów w poniższych przewodnikach:
+> Więcej szczegółów znajdziesz w następujących przewodnikach:
 >
-> - [Tworzenie strefy DNS OVHcloud dla domeny](/pages/web_cloud/domains/dns_zone_create)
-> - [Modyfikacja strefy DNS](/pages/web_cloud/domains/dns_zone_edit)
+> - [Tworzenie strefy DNS OVHcloud dla nazwy domeny](/pages/web_cloud/domains/dns_zone_create)
+> - [Edycja strefy DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit)
 > - [Zarządzanie historią strefy DNS](/pages/web_cloud/domains/dns_zone_history)
 
 ///
+<!-- CP-STEPS-END:restore-deleted-dns-zone -->
 
-/// details | Jak anulować żądanie usunięcia mojej strefy DNS?
+/// details | Jak mogę anulować żądanie usunięcia strefy DNS?
 
-Dla każdego żądania usunięcia usługi, e-mail z prośbą o potwierdzenie usunięcia jest wysyłany na adres e-mail przypisany do Twojego konta klienta OVHcloud.
+Dla każdego żądania usunięcia usługi e-mail z potwierdzeniem usunięcia jest wysyłany na adres e-mail powiązany z kontem klienta OVHcloud.
 
-Jeśli nie kliknąłeś linku potwierdzenia w tym e-mailu, nie martw się, Twoja strefa DNS nie zostanie usunięta.
+Jeśli nie kliknąłeś linku potwierdzającego w tym e-mailu, Twoja strefa DNS nie zostanie usunięta.
 
-W przeciwnym razie, usunięcie zostanie uruchomione i nie będzie można go anulować. Operacja usunięcia może zająć do 3 dni, zanim będziesz mógł ponownie utworzyć strefę DNS OVHcloud dla swojej nazwy domeny.
-
-///
-
-/// details | Nie mogę aktywować strefy DNS dla mojej nazwy domeny, co mam zrobić?
-
-Ta sytuacja występuje, gdy strefa DNS już istnieje dla Twojej nazwy domeny w OVHcloud.
-
-Postępuj zgodnie z poniższymi krokami:
-
-1. Zaloguj się do swojego [Panelu klienta OVHcloud](/links/manager), a następnie przejdź do sekcji `Web Cloud`{.action}.
-2. Kliknij menu `Strefy DNS`{.action}, a następnie sprawdź, czy nazwa domeny, która Cię interesuje, się pojawia.
-
-Przypadek n°1 - Nazwa domeny, która Cię interesuje, się pojawia w liście:
-
-Oznacza to, że strefa DNS dla nazwy domeny już istnieje w Twoim [Panelu klienta OVHcloud](/links/manager). Możesz ją zarządzać bezpośrednio w tym miejscu.
-
-Przypadek n°2 - Nazwa domeny, która Cię interesuje, nie się pojawia w liście:
-
-Oznacza to, że strefa DNS dla nazwy domeny jest zarządzana przez inny identyfikator klienta OVHcloud niż Twój.
-
-Zgodnie z **R**ozporządzeniem **O**gólnym o Ochronie **D**anych **O**sobowych (**RODO**), identyfikator klienta, na którym znajduje się strefa DNS, pozostanie poufny.
-
-W tej sytuacji i jeśli nie znasz tego innego identyfikatora klienta, prosimy, abyś otworzył zgłoszenie wsparcia z [centrum pomocy](https://help.ovhcloud.com/csm?id=csm_get_help), aby odzyskać zarządzanie strefą DNS.
+W przeciwnym razie usunięcie zostało zainicjowane i nie można go już anulować. Proces usuwania może trwać do 3 dni, zanim będzie można ponownie utworzyć strefę DNS OVHcloud dla nazwy domeny.
 
 ///
 
-/// details | Dlaczego nie mogę znaleźć karty "GLUE" w moim Panelu klienta OVHcloud?
+<!-- CP-STEPS-START:activate-dns-zone -->
+/// details | Nie mogę aktywować strefy DNS dla mojej nazwy domeny. Co powinienem zrobić?
 
-Funkcja nie jest dostępna dla wszystkich rozszerzeń nazw domen.
-Jeśli karta nie się pojawia w Twoim [Panelu klienta OVHcloud](/links/manager), oznacza to, że opcja "GLUE" jest niedostępna dla Twojej nazwy domeny.
+Ta sytuacja występuje, gdy strefa DNS dla Twojej nazwy domeny już istnieje w OVHcloud.
+
+Kliknij poniższe karty, aby wyświetlić kolejne **2** kroki.
+
+> [!tabs]
+> **Krok 1**
+>>
+>> Przejdź na stronę [Strefy DNS](/links/control-panel/web-dns-zone), a następnie sprawdź, czy odpowiednia nazwa domeny jest wyświetlana.
+>>
+>> ![Strefy DNS](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
+>>
+> **Krok 2**
+>>
+>> **Przypadek 1** — Odpowiednia nazwa domeny pojawia się na liście:
+>>
+>> Oznacza to, że strefa DNS dla nazwy domeny już istnieje w Twoim Panelu klienta OVHcloud. Możesz nią zarządzać bezpośrednio z tego miejsca.
+>>
+>> **Przypadek 2** — Odpowiednia nazwa domeny nie pojawia się na liście:
+>>
+>> Oznacza to, że strefa DNS dla nazwy domeny jest zarządzana przez inne konto klienta OVHcloud.
+>>
+>> Zgodnie z **O**gólnym **R**ozporządzeniem o **O**chronie **D**anych (**RODO**) identyfikator konta klienta, w którym znajduje się strefa DNS, pozostaje poufny.
+>>
+>> W tej sytuacji, jeśli nie znasz identyfikatora tego innego konta klienta, zalecamy utworzenie zgłoszenia do działu wsparcia w [Centrum pomocy](https://help.ovhcloud.com/csm?id=csm_get_help), aby odzyskać zarządzanie strefą DNS.
+
+///
+<!-- CP-STEPS-END:activate-dns-zone -->
+
+/// details | Dlaczego nie mogę znaleźć zakładki "GLUE" w moim Panelu klienta OVHcloud?
+
+Ta funkcja nie jest dostępna dla wszystkich rozszerzeń nazw domen.
+Jeśli zakładka nie pojawia się w [Panelu klienta OVHcloud](/links/manager), oznacza to, że opcja "GLUE" jest niedostępna dla Twojej nazwy domeny.
 
 > [!success]
 >
-> Znajdziesz wszystkie szczegóły w naszym przewodniku "[Dostosowanie serwerów DNS dla nazwy domeny (Glue records)](/pages/web_cloud/domains/glue_registry)".
+> Wszystkie szczegóły znajdziesz w naszym przewodniku "[Personalizacja serwerów DNS nazwy domeny (Glue Records)](/pages/web_cloud/domains/glue_registry)".
 
 ///
 
@@ -836,124 +1010,168 @@ Jeśli karta nie się pojawia w Twoim [Panelu klienta OVHcloud](/links/manager),
 
 > [!primary]
 >
-> Modyfikacja serwerów DNS to czynność wrażliwa i może spowodować przerwę w działaniu usług związanych z Twoją nazwą domeny (hosting webowy, poczta itp.). W przypadku wątpliwości, nie wahaj się skontaktować z [specjalistycznym dostawcą](/links/partner).
+> Modyfikacja serwerów DNS jest wrażliwą operacją i może spowodować przerwy w działaniu usług powiązanych z nazwą domeny (hosting, e-mail itp.). W razie wątpliwości skontaktuj się ze [specjalistycznym dostawcą](/links/partner).
 
-/// details | Jak zmienić moje serwery DNS?
+<!-- CP-STEPS-START:change-dns-servers -->
+/// details | Jak mogę zmienić moje serwery DNS?
 
-Postępuj zgodnie z poniższymi krokami:
+Kliknij poniższe karty, aby wyświetlić kolejne **3** kroki.
 
-1. Zaloguj się do swojego [Panelu klienta OVHcloud](/links/manager), a następnie przejdź do sekcji `Web Cloud`{.action}.
-2. Kliknij menu `Domeny`{.action}, następnie wybierz odpowiednią domenę.
-3. Po wybraniu nazwy domeny wybierz kartę `Serwery DNS`{.action}.
-4. Aby zmienić serwery DNS, kliknij przycisk `Zmień serwery DNS`{.action} po prawej stronie tabeli "serwery DNS". W zależności od rozdzielczości ekranu, przycisk może znajdować się poniżej tabeli.
-
-Możesz zmienić serwery DNS dla swojej domeny na stronie, która się pojawia.
-
-> [!primary]
->
-> Propagacja zmiany serwerów DNS może zająć do **48** godzin.
-
-> [!success]
->
-> Znajdź wszystkie szczegóły w naszym przewodniku: [Zmiana serwerów DNS domeny OVHcloud](/pages/web_cloud/domains/dns_server_edit).
-
-///
-
-/// details | Jak spersonalizować moje serwery DNS?
-
-Wykonaj poniższe kroki:
-
-1. Zaloguj się do [Panelu klienta OVHcloud](/links/manager), a następnie przejdź do sekcji `Web Cloud`{.action}.
-2. Kliknij menu `Domeny`{.action}, następnie wybierz odpowiednią domenę.
-3. Po wybraniu domeny kliknij kartę `Serwery DNS`{.action}.
-4. Aby zmienić serwery DNS, kliknij przycisk `Zmień serwery DNS`{.action} po prawej stronie tabeli "serwery DNS". W zależności od rozdzielczości ekranu, przycisk może znajdować się pod tabelą.
-
-Możesz spersonalizować serwery DNS dla swojej domeny na stronie, która się pojawia.
+> [!tabs]
+> **Krok 1**
+>>
+>> Przejdź na stronę [Domeny](/links/control-panel/web-domains), następnie wybierz odpowiednią nazwę domeny.
+>>
+>> ![Domeny](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
+>>
+> **Krok 2**
+>>
+>> Wybierz zakładkę `Serwery DNS`{.action} po przejściu na odpowiednią nazwę domeny.
+>>
+> **Krok 3**
+>>
+>> Kliknij przycisk `Zmień serwery DNS`{.action} znajdujący się po prawej stronie tabeli "Serwery DNS". W zależności od rozdzielczości ekranu przycisk może znajdować się poniżej tabeli.
+>>
+>> Na wyświetlonej stronie możesz zmienić serwery DNS swojej nazwy domeny.
 
 > [!primary]
 >
-> Propagacja zmiany serwerów DNS może zająć do **48** godzin.
+> Propagacja zmian serwerów DNS zadeklarowanych dla nazwy domeny może trwać do **48** godzin.
 
 > [!success]
 >
-> Znajdź wszystkie szczegóły w naszym przewodniku: [Zmiana serwerów DNS domeny OVHcloud](/pages/web_cloud/domains/dns_server_edit).
+> Wszystkie szczegóły znajdziesz w naszym przewodniku "[Jak zmienić serwery DNS nazwy domeny OVHcloud](/pages/web_cloud/domains/dns_server_edit)".
 
 ///
+<!-- CP-STEPS-END:change-dns-servers -->
 
-/// details | Jak zastąpić moje serwery DNS serwerami OVHcloud?
+<!-- CP-STEPS-START:customize-dns-servers -->
+/// details | Jak mogę spersonalizować moje serwery DNS?
 
-Wykonaj poniższe kroki:
+Kliknij poniższe karty, aby wyświetlić kolejne **3** kroki.
 
-1. Zaloguj się do [Panelu klienta OVHcloud](/links/manager), a następnie przejdź do sekcji `Web Cloud`{.action}.
-2. Kliknij menu `Domeny`{.action}, następnie wybierz odpowiednią domenę.
-3. Po wybraniu domeny kliknij kartę `Serwery DNS`{.action}.
-4. Aby zmienić serwery DNS, kliknij przycisk `Zmień serwery DNS`{.action} po prawej stronie tabeli "serwery DNS". W zależności od rozdzielczości ekranu, przycisk może znajdować się pod tabelą.
-
-Możesz zastąpić swoje serwery DNS serwerami OVHcloud na stronie, która się pojawia.
+> [!tabs]
+> **Krok 1**
+>>
+>> Przejdź na stronę [Domeny](/links/control-panel/web-domains), następnie wybierz odpowiednią nazwę domeny.
+>>
+>> ![Domeny](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
+>>
+> **Krok 2**
+>>
+>> Wybierz zakładkę `Serwery DNS`{.action} po przejściu na odpowiednią nazwę domeny.
+>>
+> **Krok 3**
+>>
+>> Kliknij przycisk `Zmień serwery DNS`{.action} znajdujący się po prawej stronie tabeli "Serwery DNS". W zależności od rozdzielczości ekranu przycisk może znajdować się poniżej tabeli.
+>>
+>> Na wyświetlonej stronie możesz spersonalizować serwery DNS swojej nazwy domeny.
 
 > [!primary]
 >
-> Propagacja zmiany serwerów DNS może zająć do **48** godzin.
+> Propagacja zmian serwerów DNS zadeklarowanych dla nazwy domeny może trwać do **48** godzin.
 
 > [!success]
 >
-> Znajdź wszystkie szczegóły w naszym przewodniku: [Zmiana serwerów DNS domeny OVHcloud](/pages/web_cloud/domains/dns_server_edit).
+> Wszystkie szczegóły znajdziesz w naszym przewodniku "[Jak zmienić serwery DNS nazwy domeny OVHcloud](/pages/web_cloud/domains/dns_server_edit)".
 
 ///
+<!-- CP-STEPS-END:customize-dns-servers -->
 
-/// details | W moim Panelu klienta pojawił się komunikat błędu informujący, że nie korzystam z serwerów DNS OVHcloud dla mojej domeny, co mam zrobić?
+<!-- CP-STEPS-START:replace-with-ovhcloud-dns -->
+/// details | Jak mogę zastąpić moje serwery DNS serwerami dostarczonymi przez OVHcloud?
 
-W [Panelu klienta OVHcloud](/links/manager) ten komunikat oznacza jedynie, że strefa DNS utworzona dla Twojej domeny nie jest strefą aktywną.
+Kliknij poniższe karty, aby wyświetlić kolejne **3** kroki.
 
-Innymi słowy, oznacza to, że konfiguracja zawarta w tej strefie DNS nie jest obecnie stosowana do Twojej domeny.
+> [!tabs]
+> **Krok 1**
+>>
+>> Przejdź na stronę [Domeny](/links/control-panel/web-domains), następnie wybierz odpowiednią nazwę domeny.
+>>
+>> ![Domeny](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
+>>
+> **Krok 2**
+>>
+>> Wybierz zakładkę `Serwery DNS`{.action} po przejściu na odpowiednią nazwę domeny.
+>>
+> **Krok 3**
+>>
+>> Kliknij przycisk `Zmień serwery DNS`{.action} znajdujący się po prawej stronie tabeli "Serwery DNS". W zależności od rozdzielczości ekranu przycisk może znajdować się poniżej tabeli.
+>>
+>> Na wyświetlonej stronie możesz zastąpić serwery DNS swojej nazwy domeny serwerami dostarczonymi przez OVHcloud.
 
-Sprawdź jednak, czy serwery DNS wymienione w komunikacie błędu odpowiadają serwerom DNS, które chcesz zastosować do swojej domeny. Następnie sprawdź konfigurację strefy DNS zadeklarowanej na tych samych serwerach DNS u swojego dostawcy DNS.
-
-Jeśli chcesz korzystać z serwerów DNS OVHcloud dla swojej domeny, możesz przygotować konfigurację DNS strefy DNS znajdującej się w OVHcloud, aby odpowiadała Twoim potrzebom, a następnie ją aktywować dla swojej domeny.
+> [!primary]
+>
+> Propagacja zmian serwerów DNS zadeklarowanych dla nazwy domeny może trwać do **48** godzin.
 
 > [!success]
 >
-> Znajdź więcej szczegółów w poniższych przewodnikach:
+> Wszystkie szczegóły znajdziesz w naszym przewodniku "[Jak zmienić serwery DNS nazwy domeny OVHcloud](/pages/web_cloud/domains/dns_server_edit)".
+
+///
+<!-- CP-STEPS-END:replace-with-ovhcloud-dns -->
+
+/// details | W moim Panelu klienta pojawia się komunikat o błędzie informujący, że nie używam serwerów DNS OVHcloud dla mojej nazwy domeny. Co powinienem zrobić?
+
+W [Panelu klienta OVHcloud](/links/manager) ten komunikat wskazuje jedynie, że strefa DNS utworzona dla Twojej nazwy domeny nie jest jej aktywną strefą DNS.
+
+Innymi słowy oznacza to, że konfiguracja obecna w tej strefie DNS nie jest tą aktualnie stosowaną do Twojej nazwy domeny.
+
+Upewnij się jednak, że serwery DNS wymienione w komunikacie o błędzie są rzeczywiście tymi, które chcesz zastosować do swojej nazwy domeny. Następnie sprawdź konfigurację strefy DNS zadeklarowanej na tych samych serwerach DNS u dostawcy DNS.
+
+Jeśli chcesz korzystać z serwerów DNS OVHcloud dla swojej nazwy domeny, możesz przygotować konfigurację DNS strefy DNS obecnej w OVHcloud tak, aby odpowiadała Twoim potrzebom, a następnie aktywować ją dla swojej nazwy domeny.
+
+> [!success]
 >
-> - [Edytowanie strefy DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit)
-> - [Zmiana serwerów DNS dla domeny OVHcloud](/pages/web_cloud/domains/dns_server_edit)
+> Więcej szczegółów znajdziesz w następujących przewodnikach:
+>
+> - [Edycja strefy DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit)
+> - [Jak zmienić serwery DNS nazwy domeny OVHcloud](/pages/web_cloud/domains/dns_server_edit)
 
 ///
 
-/// details | Nie mogę zmienić serwerów DNS dla domeny z mojego Panelu klienta OVHcloud, co mam zrobić?
+<!-- CP-STEPS-START:cannot-change-dns-servers -->
+/// details | Nie mogę zmienić serwerów DNS nazwy domeny z Panelu klienta OVHcloud. Co powinienem zrobić?
 
-Oznacza to, że masz tylko uprawnienia do zarządzania strefą DNS dla tej domeny, ale nie samą domeną.
+Oznacza to, że zarządzasz jedynie strefą DNS nazwy domeny, ale nie samą nazwą domeny.
 
-Aby to sprawdzić, wykonaj poniższe kroki:
+Aby to zweryfikować, kliknij poniższe karty, aby wyświetlić kolejne **2** kroki.
 
-1. Zaloguj się do [Panelu klienta OVHcloud](/links/manager), a następnie przejdź do sekcji `Web Cloud`{.action}.
-2. Kliknij menu `Domeny`{.action}, a następnie sprawdź, czy domena, której dotyczy problem, znajduje się na liście.
-
-Przypadek nr 1 - Domena nie pojawia się na liście:
-
-Oznacza to, że domena nie jest zarządzana z Twojego [Panelu klienta OVHcloud](/links/manager). Wykonaj zapytanie [WHOIS](/links/web/domains-whois), aby dowiedzieć się, gdzie jest zarejestrowana.
-
-Następnie możesz wykonać jedną z poniższych czynności (jeśli jesteś właścicielem domeny zgodnie z WHOIS):
-
-- Domena jest zarejestrowana u OVHcloud: Możesz przeprowadzić [procedurę odzyskania kontaktów](/links/transversal/procedure-contact-change), aby Twoja domena była zarządzana w Twoim [Panelu klienta OVHcloud](/links/manager).
-- Domena nie jest zarejestrowana u OVHcloud: Możesz przeprowadzić [przesunięcie domeny](/pages/web_cloud/domains/transfer_incoming_generic_domain) do OVHcloud, aby Twoja domena była zarządzana w Twoim [Panelu klienta OVHcloud](/links/manager).
-
-Przypadek nr 2 - Domena pojawia się na liście:
-
-Oznacza to, że nie masz wystarczających uprawnień do zarządzania domeną z Twojego [Panelu klienta OVHcloud](/links/manager). Wykonaj zapytanie [WHOIS](/links/web/domains-whois), aby sprawdzić, czy jesteś faktycznie właścicielem domeny.
-
-Następnie możesz przeprowadzić [procedurę odzyskania kontaktów](/links/transversal/procedure-contact-change), aby Twoja domena była całkowicie zarządzana w Twoim [Panelu klienta OVHcloud](/links/manager).
+> [!tabs]
+> **Krok 1**
+>>
+>> Przejdź na stronę [Domeny](/links/control-panel/web-domains), a następnie sprawdź, czy odpowiednia nazwa domeny jest wyświetlana.
+>>
+>> ![Domeny](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
+>>
+> **Krok 2**
+>>
+>> **Przypadek 1** — Nazwa domeny nie pojawia się na liście:
+>>
+>> Oznacza to, że nazwa domeny nie jest zarządzana z Twojego Panelu klienta OVHcloud. Wykonaj zapytanie [WHOIS](/links/web/domains-whois), aby dowiedzieć się, gdzie jest zarejestrowana.
+>>
+>> Możesz następnie wykonać jedną z poniższych czynności (jeśli jesteś właścicielem zadeklarowanym w WHOIS nazwy domeny):
+>>
+>> - Nazwa domeny jest zarejestrowana w OVHcloud: Możesz wykonać [procedurę odzyskania kontaktu](/links/transversal/procedure-contact-change), aby Twoja nazwa domeny była zarządzana w [Panelu klienta OVHcloud](/links/manager).
+>> - Nazwa domeny nie jest zarejestrowana w OVHcloud: Możesz wykonać [transfer przychodzący](/pages/web_cloud/domains/transfer_incoming_generic_domain) do OVHcloud, aby Twoja nazwa domeny była zarządzana w [Panelu klienta OVHcloud](/links/manager).
+>>
+>> **Przypadek 2** — Nazwa domeny pojawia się na liście:
+>>
+>> Oznacza to, że nie masz wystarczających uprawnień do zarządzania nazwą domeny z Panelu klienta OVHcloud. Wykonaj zapytanie [WHOIS](/links/web/domains-whois), aby zweryfikować, czy jesteś zadeklarowany jako właściciel nazwy domeny.
+>>
+>> Możesz następnie wykonać [procedurę odzyskania kontaktu](/links/transversal/procedure-contact-change), aby Twoja nazwa domeny była w pełni zarządzana w [Panelu klienta OVHcloud](/links/manager).
 
 ///
+<!-- CP-STEPS-END:cannot-change-dns-servers -->
 
 ## Sprawdź również <a name="go-further"></a>
 
-[FAQ e-mail OVHcloud](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/faq-emails)
+[FAQ dotyczący e-maili OVHcloud](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/faq-emails)
 
-[FAQ Web Hosting](/pages/web_cloud/web_hosting/faq-web_hosting)
+[FAQ dotyczący hostingu](/pages/web_cloud/web_hosting/faq-web_hosting)
 
-W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, itp.) skontaktuj się z [partnerami OVHcloud](/links/partner).
+W przypadku wyspecjalizowanych usług (SEO, programowanie itp.) skontaktuj się z [partnerami OVHcloud](/links/partner).
 
-Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](/links/support).
+Jeśli chcesz uzyskać wsparcie w zakresie użytkowania i konfiguracji Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami wsparcia](/links/support).
 
-Dołącz do [grona naszych użytkowników](/links/community).
+Dołącz do naszej [społeczności użytkowników](/links/community).

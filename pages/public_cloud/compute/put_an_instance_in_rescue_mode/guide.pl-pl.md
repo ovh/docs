@@ -19,7 +19,17 @@ W takiej sytuacji można ponownie skonfigurować instancję lub odzyskać dane p
 ## Wymagania początkowe
 
 - [Instancja Public Cloud](/links/public-cloud/compute) utworzona na koncie OVHcloud
-- dostęp do [Panelu klienta OVHcloud](/links/manager)
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Ścieżka nawigacji:** `Public Cloud`{.action} > Wybierz projekt
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## W praktyce
 
@@ -29,9 +39,7 @@ W takiej sytuacji można ponownie skonfigurować instancję lub odzyskać dane p
 
 ### Aktywacja trybu ratunkowego
 
-Najpierw zaloguj się do [Panelu klienta OVHcloud](/links/manager), przejdź do sekcji `Public Cloud`{.action} i wybierz odpowiedni projekt Public Cloud.
-
-Następnie kliknij zakładkę `Instancje`{.action} na pasku nawigacji po lewej stronie.
+Kliknij zakładkę `Instancje`{.action} na pasku nawigacji po lewej stronie.
 
 Kliknij ikonę z trzema kropkami (po prawej stronie instancji) i wybierz `Restartuj w trybie Rescue`{.action}.
 

@@ -23,7 +23,6 @@ Se organiza por etapas en un orden creciente de importancia y dificultad técnic
 
 - un [plan OVHcloud Web Hosting](/links/web/hosting)
 - tener los detalles de [inicio de sesión](/pages/web_cloud/web_hosting/ftp_connection#1-obtener-los-datos-de-conexion) para acceder al espacio de almacenamiento de su plan de alojamiento
-- acceso al [panel de control de OVHcloud](/links/manager)
 - acceso a la [interfaz de administración de su sitio web](https://codex.wordpress.org/es:First_Steps_With_WordPress)
 
 ## Procedimiento

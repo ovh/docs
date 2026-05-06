@@ -1,8 +1,42 @@
 ---
 title: 'Tworzenie strefy DNS OVHcloud dla domeny'
 excerpt: 'Dowiedz się, jak utworzyć strefę DNS w OVHcloud dla Twojej domeny w Panelu klienta'
-updated: 2025-04-28
+updated: 2026-03-10
 ---
+
+<style>
+details>summary {
+    color:rgb(33, 153, 232) !important;
+    cursor: pointer;
+}
+details>summary::before {
+    content:'\25B6';
+    padding-right:1ch;
+}
+details[open]>summary::before {
+    content:'\25BC';
+}
+pre {
+    font-size: 14px !important;
+}
+pre.bgwhite {
+    background-color: #fff !important;
+    color: #000 !important;
+    font-family: monospace !important;
+    padding: 5px !important;
+    margin-bottom: 5px !important;
+}
+pre.bgwhite code {
+    background-color: #fff !important;
+    border: solid 0px transparent !important;
+    font-family: monospace !important;
+    font-size: 0.90em !important;
+    color: #000 !important;
+}
+.small {
+   font-size: 0.90em !important;
+}
+</style>
 
 ## Wprowadzenie
 
@@ -22,7 +56,17 @@ Może zaistnieć konieczność utworzenia strefy DNS dla Twojej domeny w OVHclou
 
 - Posiadanie domeny
 - Nazwa domeny nie może mieć strefy DNS (aktywnej lub nieaktywnej) w OVHcloud ani podlegać operacji lub zamówieniu w trakcie realizacji.
-- Dostęp do [Panelu klienta OVHcloud](/links/manager).
+
+<!-- CP-NAV-START:web-dns-zone -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Strefy DNS](/links/control-panel/web-dns-zone)
+- **Ścieżka nawigacji:** `Web Cloud`{.action} > `Strefy DNS`{.action} > Wybierz nazwę domeny
+
+---
+<!-- CP-NAV-END:web-dns-zone -->
 
 ## W praktyce
 
@@ -40,28 +84,41 @@ Może zaistnieć konieczność utworzenia strefy DNS dla Twojej domeny w OVHclou
 > Przed zmianą** serwerów DNS* zadeklarowanych u Twojej domeny sprawdź, czy konfiguracja nowej strefy DNS odpowiada Twoim oczekiwaniom.
 >
 
-### Etap 1: utworzyć strefę DNS w Panelu klienta OVHcloud
+### 1 - Utworzyć strefę DNS w Panelu klienta OVHcloud
 
-Zaloguj się do [Panelu klienta OVHcloud](/links/manager) i przejdź do sekcji `Web cloud`{.action}. W lewej kolumnie kliknij `Strefy DNS`{.action}, a następnie przycisk `Zamów`{.action} w prawym górnym rogu tabeli, która się wyświetli.
+<!-- CP-STEPS-START:create-dns-zone -->
+W tym celu kliknij poniższe zakładki, aby wyświetlić kolejne **3** kroki.
 
-Na stronie, która się wyświetla wprowadź nazwę domeny (przykład: *domain.tld*), dla której chcesz utworzyć strefę DNS. Odczekaj kilka chwil, aż narzędzie przeprowadzi weryfikację domeny.
+> [!tabs]
+> **Krok 1**
+>>
+>> Przejdź na stronę [Strefy DNS](/links/control-panel/web-dns-zone), a następnie w przycisk `Zamów`{.action}.
+>>
+>> ![DNS zones](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
+>>
+> **Krok 2**
+>>
+>> Na stronie, która się pojawi, wprowadź nazwę domeny (np. *domain.tld*), dla której chcesz utworzyć strefę DNS OVHcloud. Poczekaj kilka chwil, dopóki narzędzie nie przeprowadzi weryfikacji domeny.
+>>
+>> ![dnszonecreate](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/adding-a-dns-zone.png){.thumbnail}
+>>
+>> Jeśli pojawi się komunikat informujący, że strefa DNS nie może zostać utworzona, upewnij się, że domena spełnia wymagania wstępne lub skontaktuj się z osobą, która ją zarządza. Gdy wszystko będzie poprawne, spróbuj ponownie.
+>>
+> **Krok 3**
+>>
+>> Po zakończeniu weryfikacji, wybierz opcję aktywacji lub nie dodawania wpisów minimalnych w strefie DNS, którą utworzysz. Wybór ten nie jest ostateczny, ponieważ w przyszłości będziesz mógł [edytować rekordy strefy DNS](/pages/web_cloud/domains/dns_zone_edit).
+>>
+>> ![dnszonecreate](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/adding-a-dns-zone-step-2.png){.thumbnail}
+>>
+>> |Włącz minimalne wpisy?|Szczegóły|
+>> |---|---|
+>> |Tak|Wybierz ten wybór, jeśli chcesz samodzielnie spersonalizować strefę DNS.<br>![minimum-dns-entries](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/dashboard-minimal-entries.png){.thumbnail}|
+>> |Nie|Wybierz ten wybór, jeśli planujesz korzystać z usług OVHcloud takich jak [hosting WWW](/links/web/hosting), strefa jest wstępnie skonfigurowana do tego celu.<br>![no-minimum-dns-entries](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/dashboard-ovh-full-entries.png){.thumbnail}|
+>>
+>> Po dokonaniu wyboru, postępuj zgodnie z etapami wyświetlanymi w Panelu klienta OVHcloud, aż do utworzenia strefy DNS.
+<!-- CP-STEPS-END:create-dns-zone -->
 
-Jeśli pojawi się komunikat informujący, że strefa DNS nie może zostać utworzona, sprawdź, czy domena spełnia niezbędne wymagania lub poproś osobę, która ją zarządza, o zrobienie tego dla Ciebie. Kiedy wszystko jest poprawne, spróbuj ponownie.
-
-![dnszonecreate](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/adding-a-dns-zone.png){.thumbnail}
-
-Po zakończeniu weryfikacji, wybierz opcję aktywacji lub nie dodawania wpisów minimalnych w strefie DNS, którą utworzysz. Wybór ten nie jest ostateczny, ponieważ w przyszłości będziesz mógł [edytować rekordy strefy DNS](/pages/web_cloud/domains/dns_zone_edit).
-
-![dnszonecreate](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/adding-a-dns-zone-step-2.png){.thumbnail}
-
-|Włącz minimalne wpisy?|Szczegóły|
-|---|---|
-|Tak|Wybierz ten wybór, jeśli chcesz samodzielnie spersonalizować strefę DNS.<br>![minimum-dns-entries](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/dashboard-minimal-entries.png){.thumbnail}|
-|Nie|Wybierz ten wybór, jeśli planujesz korzystać z usług OVHcloud takich jak [hosting WWW](/links/web/hosting), strefa jest wstępnie skonfigurowana do tego celu.<br>![no-minimum-dns-entries](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/dashboard-ovh-full-entries.png){.thumbnail}|
-
-Po dokonaniu wyboru wykonaj kolejne kroki, aż do utworzenia strefy DNS.
-
-### Etap 2: edycja strefy DNS (opcjonalnie)
+### 2 - Edycja strefy DNS (opcjonalnie)
 
 Po utworzeniu strefy DNS Twojej domeny możesz ją edytować. Operacja ta jest opcjonalna, ale może okazać się konieczna, jeśli chcesz zapewnić nieprzerwaną dostępność usług powiązanych z tą domeną (takich jak strona WWW i/lub konta e-mail).
 
@@ -69,37 +126,75 @@ Aby edytować strefę DNS, zapoznaj się z naszym przewodnikiem "[Edytuj strefę
 
 > [!primary]
 >
-> Jeśli właśnie utworzyłeś strefę DNS i nazwa domeny nie wyświetla się jeszcze na liście Twoich usług (w części `Web cloud`{.action} w Panelu klienta OVHcloud, a następnie w sekcji `Strefy DNS`{.action}), odczekaj 15-20 minut, a następnie przeładuj stronę.
+> Jeśli właśnie utworzyłeś strefę DNS i nazwa domeny nie wyświetla się jeszcze na liście Twoich usług, odczekaj 15-20 minut, a następnie przeładuj stronę.
 >
 
-### Etap 3: zmień serwery DNS domeny
+### 3 - Zmień serwery DNS domeny
 
 Kiedy strefa DNS OVHcloud jest gotowa do użytku, powiąż ją z Twoją domeną, aby zastosować konfigurację, którą ona zawiera. 
 
 Należy zatem pobrać z wyprzedzeniem **serwery DNS** OVHcloud, na których strefa DNS OVHcloud została utworzona dla Twojej domeny.
 
-W tym celu zaloguj się do [Panelu klienta OVHcloud](/links/manager) i przejdź do sekcji `Web cloud`{.action}. W lewej kolumnie kliknij `Domeny`{.action} i wybierz odpowiednią strefę DNS. 
+<!-- CP-STEPS-START:find-dns-servers -->
+Aby je odnaleźć, kliknij poniższe zakładki, aby wyświetlić kolejne **2** kroki.
 
-Po lewej stronie widnieje nazwa Twojej domeny, a po lewej stronie widnieje logo w kształcie globu oznaczone symbolem *DNS*. 
+> [!tabs]
+> **Krok 1**
+>>
+>> Przejdź na stronę [Strefy DNS](/links/control-panel/web-dns-zone), następnie wybierz odpowiednią domenę.
+>>
+>> ![DNS zones](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
+>>
+> **Krok 2**
+>>
+>> W tabeli na stronie, która się pojawi, zwróć uwagę na dwie kolumny **Typ** i **Adres docelowy**.
+>>
+>> ![DNS zones](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/tab.png){.thumbnail}
+>>
+>> Znajdź dwie linie typu **NS** i zanotuj dwie wartości w kolumnie **Adres docelowy**.
+>> Nazwy serwerów DNS powinny mieć jedną z poniższych trzech form:
+>>
+>> - `nsXX.ovh.net` i `dnsXX.ovh.net` lub `nsXXX.ovh.net` i `dnsXXX.ovh.net` (gdzie każdy `X` reprezentuje cyfrę od **0** do **9**).
+>> - `nsXX.ovh.ca` i `dnsXX.ovh.ca` lub `nsXXX.ovh.ca` i `dnsXXX.ovh.ca` (gdzie każdy `X` reprezentuje cyfrę od **0** do **9**).
+>> - `ns200.anycast.me` i `dns200.anycast.me` (jeśli podpisałeś się na opcję [DNS anycast](/links/web/domains-options)).
+<!-- CP-STEPS-END:find-dns-servers -->
 
-> [!primary]
-> W tym momencie, jeśli posiadasz tylko globalne logo (bez nazwy *DNS* napisanej wewnątrz), nazwa domeny jest już zarządzana w Panelu klienta OVHcloud. 
->
-> Jeśli jesteś kontaktem *Administrator* tego kontaktu, w tym przypadku możesz zmienić serwery DNS** za pomocą naszego [przewodnika](/pages/web_cloud/domains/dns_server_edit) na ten temat.
->
-> Przypominamy, że przed zmianą* serwerów DNS** zadeklarowanych u Twojej domeny sprawdź, czy konfiguracja nowej strefy DNS odpowiada Twoim oczekiwaniom.
->
-
-Na stronie, która się wyświetla, serwery DNS używane z Twoją domeną do aktywowania strefy DNS OVHcloud wyświetlają się poniżej `Name Servers`{.action}.
-
-![dnszonecreate](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/name-servers.png){.thumbnail}
-
-Po uzyskaniu informacji o domenie **modyfikuj serwery DNS Twojej domeny w interfejsie dostawcy zarządzającego domeną**. Czas propagacji **48 godziny** jest niezbędny, aby modyfikacja stała się efektywna.
+Po odzyskaniu dwóch nazw serwerów DNS, mogą zajść dwie sytuacje.
 
 > [!primary]
 >
 > Przypominamy, że przed zmianą **serwerów DNS** zadeklarowanych u Twojej domeny sprawdź, czy konfiguracja nowej strefy DNS odpowiada Twoim oczekiwaniom.
->
+
+**Kliknij jedną z dwóch sytuacji, aby wyświetlić zawartość.**
+
+/// details | Domena ma aktywną strefę DNS w OVHcloud
+
+Zapoznaj się z [tym przewodnikiem](/pages/web_cloud/domains/dns_server_edit), aby zweryfikować lub zmodyfikować serwery DNS zadeklarowane dla Twojej domeny.
+
+///
+
+/// details | Domena ma aktywną strefę DNS u innego dostawcy
+
+W takim przypadku skontaktuj się ze swoim dostawcą DNS, informując go, że chcesz zastąpić rekordy DNS typu NS dla Twojej domeny.
+
+Oto przykład żądania do przesłania do dostawcy DNS:
+
+<pre class="bgwhite"><code>
+Dzień dobry,
+
+Dla mojej domeny <b>domain.tld</b> chciałbym zastąpić obecne serwery DNS następującymi serwerami DNS:
+
+ - nsXX.ovh.net.
+ - dnsXX.ovh.net.
+
+Z poważaniem,
+</code></pre>
+
+W powyższym przykładzie zastąp wartości **domain.tld**, **nsXX.ovh.net** i **dnsXX.ovh.net** własnymi wartościami.
+
+///
+
+Po zmianie serwerów DNS domeny propagacja zmian może potrwać do **48 godzin**.
 
 > [!success]
 >

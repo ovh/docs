@@ -1,7 +1,7 @@
 ---
 title: 'Configure the authentication via an OIDC provider on an OVHcloud Managed Private Registry'
 excerpt: 'Find out how to configure the authentication via an OIDC provider on an OVHcloud Managed Private Registry'
-updated: 2023-08-25
+updated: 2026-02-25
 ---
 
 <style>
@@ -112,7 +112,7 @@ OIDCPost:
 null
 ```
 
-Go to the [Harbor documentation](https://goharbor.io/docs/2.8.0/administration/configure-authentication/oidc-auth/) to see the details of the needed information.
+Go to the [Harbor documentation](https://goharbor.io/docs/2.14.0/administration/configure-authentication/oidc-auth/) to see the details of the needed information.
 
 > [!primary]
 >

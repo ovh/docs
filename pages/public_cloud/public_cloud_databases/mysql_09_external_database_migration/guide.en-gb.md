@@ -1,5 +1,5 @@
 ---
-title: MySQL - External database migration
+title: Migrate to OVHcloud Public Cloud Databases for MySQL
 excerpt: This guide explains how to migrate an external MySQL database to an OVHcloud managed MySQL database
 updated: 2025-12-12
 ---

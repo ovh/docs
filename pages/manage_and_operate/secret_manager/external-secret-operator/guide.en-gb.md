@@ -1,11 +1,8 @@
 ---
-title: "How to use Kubernetes External Secret Operator with Secret Manager"
+title: "How to use Kubernetes External Secrets Operator with Secret Manager"
 excerpt: "Configure External Secret Operator to store Kubernetes secrets on the OVHcloud Secret Manager"
-updated: 2026-01-07
+updated: 2026-01-15
 ---
-
-> [!primary]
-> Secret Manager is currently in Beta phase. This guide can be updated in the future with the advancements made by our teams in charge of this product.
 
 ## Objective
 
@@ -95,7 +92,7 @@ Keep the value of the `token` field as it will never be prompted again and will 
 
 #### Secret Manager information
 
-You will also need the `region` and the `okms-id` of the OKMS domain you want to use. This ID and this region can be found in the [OVHcloud Control Panel](/links/manager) or via the [OVHcloud CLI](https://github.com/ovh/ovhcloud-cli):
+You will also need the `region` and the `okms-id` of the OKMS domain you want to use. This ID and this region can be found in the [OKMS domain dashboard](/links/control-panel/security-kms) or via the [OVHcloud CLI](https://github.com/ovh/ovhcloud-cli):
 
 ```bash
 $ ovhcloud okms list

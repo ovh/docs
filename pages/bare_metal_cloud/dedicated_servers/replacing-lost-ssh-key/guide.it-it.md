@@ -1,6 +1,6 @@
 ---
-title: "Sostituzione del vostro paio di chiavi SSH"
-excerpt: "Come ripristinare l’accesso al server in caso di perdita della chiave privata generando una nuova coppia di chiavi SSH"
+title: "Sostituire una chiave SSH persa su un server dedicato"
+excerpt: "Ripristina l’accesso SSH al tuo server dedicato generando e distribuendo una nuova coppia di chiavi in modalità rescue"
 updated: 2024-04-04
 ---
 
@@ -26,7 +26,6 @@ Per accedere al tuo server in [modalità Rescue OVHcloud](/pages/bare_metal_clou
 ## Prerequisiti
 
 - Disporre di un [server dedicato](/links/bare-metal/bare-metal) o di un [VPS](/links/bare-metal/vps) nel proprio account OVHcloud
-- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
 
 ## Procedura
 

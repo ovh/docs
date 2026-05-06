@@ -1,7 +1,7 @@
 ---
 title: 'Optymalizacja wydajności witryny internetowej'
 excerpt: 'Dowiedz się, jak analizować opóźnienia w witrynie internetowej i ulepszyć jej działanie'
-updated: 2025-10-09
+updated: 2026-04-01
 ---
 
 ## Wprowadzenie 
@@ -16,7 +16,17 @@ Zawiera podstawowe informacje o tym, co wpływa na wydajność witryn internetow
 - [plan hostingu WWW OVHcloud](/links/web/hosting)
 - e-mail potwierdzający skonfigurowanie planu hostingu WWW
 - [nazwa domeny](/links/web/domains) umożliwiająca dostęp do witryny internetowej
-- dostęp do [Panelu klienta OVHcloud](/links/manager)
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Hosting](/links/control-panel/web-hosting)
+- **Ścieżka nawigacji:** `Web Cloud`{.action} > `Hosting`{.action} > Wybierz hosting WWW
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## W praktyce
 
@@ -90,65 +100,60 @@ Więcej informacji na ten temat zawiera poniższy krok 5.
 
 Aby znaleźć źródło opóźnień, przejrzyj wykresy wykorzystania zasobów hostingu (więcej informacji poniżej). Następnie sprawdź w logach wpisy z okresów, w których wystąpiło szczytowe wykorzystanie.
 
-Logi, statystyki i wykresy są dostępne bezpośrednio w [Panelu klienta OVHcloud](/links/manager).
-
-Dostęp do statystyk i logów:
-
-Kliknij poniższe zakładki, aby wyświetlić kolejne **4** etapy.
+<!-- CP-STEPS-START:access-stats-and-logs -->
+Aby uzyskać dostęp do statystyk i logów, kliknij poniższe zakładki, aby wyświetlić kolejne **3** kroki.
 
 > [!tabs]
-> **Etap 1**
+> **Krok 1**
 >>
->> Zaloguj się do [Panelu klienta OVHcloud](/links/manager) i przejdź do sekcji `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Etap 2**
->>
->> Kliknij menu `Hosting`{.action}, następnie wybierz odpowiedni hosting.
+>> Przejdź do strony [Hosting](/links/control-panel/web-hosting) i wybierz odpowiedni hosting WWW.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Etap 3**
+> **Krok 2**
 >>
->> Na stronie, która się wyświetli kliknij zakładkę `Statystyki i logi`{.action}.
+>> Na stronie, która się wyświetli, kliknij zakładkę `Statystyki i logi`{.action}.
 >>
 >> ![statistics-and-logs](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/statistics-and-logs.png){.thumbnail}
 >>
-> **Etap 4**
+> **Krok 3**
 >>
 >> Kliknij przycisk `Wyświetl statystyki`{.action} wyświetlone, aby uzyskać dostęp do statystyk odwiedzin strony www lub `Sprawdź logi`{.action}, aby sprawdzić logi dostępne dla Twojego hostingu www.
 >>
 >> ![logi](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/statistics-and-logs/tab.png){.thumbnail}
+<!-- CP-STEPS-END:access-stats-and-logs -->
 
-Dostęp do wykresów:
+<!-- CP-STEPS-START:access-resource-charts -->
+Aby uzyskać dostęp do wykresów, kliknij poniższe zakładki, aby wyświetlić kolejne **3** kroki.
 
-1. W kolumnie po lewej stronie kliknij `Hosting`{.action}, po czym wybierz odpowiedni hosting www.
-2. na stronie, która się wyświetli kliknij zakładkę `Statystyki i logi`{.action}. Przewiń w dół strony, na której znajduje się grafika związana z korzystaniem z hostingu.
-3. Wybierz **typ** informacji oraz **okres** wyświetlanych danych.
-
-![graphs](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/statistics-and-logs/infrastructure-statistics-graph.png){.thumbnail}
-
-Jakie typy informacji można wyświetlić?
-
-- **Żądania HTTP**: wskazują średnią liczbę zapytań na witrynie internetowej. Zapytania są klasyfikowane według statusu HTTP — jako kody 2xx/3xx/4xx/5xx.
-
-- **Średni czas odpowiedzi**: dotyczy średniego czasu odpowiedzi strony. Rozróżniane są strony dynamiczne i statyczne.
-
-- **Przekroczenie progu zasobów**: wykres pokazuje użycie procesów worker PHP. Stanowi wskazówkę, czy byłaby potrzebna inna oferta hostingu WWW. Korzystając z mechanizmu PHP-FPM, można ograniczyć użycie procesów PHP worker.
-
-- **Użycie procesora**: pokazuje użycie procesora witryny internetowej. Pomaga w wykryciu potencjalnego przeciążenia procesora.
-
-- **Połączenia wychodzące**: umożliwia sprawdzenie wychodzących żądań TCP realizowanych przez serwera. Jeśli na przykład dostęp do witryny internetowej uzyskają hakerzy, serwer może im posłużyć do atakowania innych witryn zewnętrznych. Sprawdzić można też wywołania zewnętrzne innych modułów, takich jak Facebook, Twitter itp. Zmniejszenie liczby wychodzących żądań TCP wpływa na skrócenie czasu ładowania, ponieważ jeśli odpowiedzi serwera na żądania pobrania treści zajmują czas, załadowanie witryny trwa dłużej.
-
-- **Polecenia FTP**: pokazuje różne polecenia FTP używane w hostingu, Na przykład udane i nieudane próby zalogowania, pobranie, przesłanie lub usunięcie plików.
-
-Poniższe dwie kategorie są widoczne tylko wtedy, gdy w ramach oferty hostingu korzystasz z bazy danych.
-Aby je wyświetlić, wybierz nazwę bazy danych i okres.
-
-- **Czas odpowiedzi SQL**: wyświetla czas odpowiedzi na zapytania.
-
-- **Żądania SQL**: wyświetla liczbę żądań.
+> [!tabs]
+> **Krok 1**
+>>
+>> Przejdź na stronę [Hosting](/links/control-panel/web-hosting), następnie wybierz odpowiedni hosting.
+>>
+>> ![Hosting WWW](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Krok 2**
+>>
+>> Na stronie, która się wyświetli, kliknij zakładkę `Statystyki i logi`{.action}. Przewiń w dół strony, na której znajduje się grafika związana z korzystaniem z hostingu.
+>>
+> **Krok 3**
+>>
+>> Wybierz **typ** informacji oraz **okres** wyświetlanych danych.
+>>
+>> ![Wykres statystyk infrastruktury](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/statistics-and-logs/infrastructure-statistics-graph.png){.thumbnail}
+>>
+>> Dostępne typy informacji:
+>>
+>> - **Żądania HTTP**: wskazują średnią liczbę zapytań na witrynie internetowej. Zapytania są klasyfikowane według statusu HTTP — jako kody 2xx/3xx/4xx/5xx.
+>> - **Średni czas odpowiedzi**: dotyczy średniego czasu odpowiedzi strony. Rozróżniane są strony dynamiczne i statyczne.
+>> - **Przekroczenie progu zasobów**: wykres pokazuje użycie procesów worker PHP. Stanowi wskazówkę, czy byłaby potrzebna inna oferta hostingu WWW. Korzystając z mechanizmu PHP-FPM, można ograniczyć użycie procesów PHP worker.
+>> - **Użycie procesora**: pokazuje użycie procesora witryny internetowej. Pomaga w wykryciu potencjalnego przeciążenia procesora.
+>> - **Połączenia wychodzące**: umożliwia sprawdzenie wychodzących żądań TCP realizowanych przez serwera. Jeśli na przykład dostęp do witryny internetowej uzyskają hakerzy, serwer może im posłużyć do atakowania innych witryn zewnętrznych. Sprawdzić można też wywołania zewnętrzne innych modułów, takich jak Facebook, Twitter itp. Zmniejszenie liczby wychodzących żądań TCP wpływa na skrócenie czasu ładowania, ponieważ jeśli odpowiedzi serwera na żądania pobrania treści zajmują czas, załadowanie witryny trwa dłużej.
+>> - **Polecenia FTP**: pokazuje różne polecenia FTP używane w hostingu. Na przykład udane i nieudane próby zalogowania, pobranie, przesłanie lub usunięcie plików.
+>> - **Czas odpowiedzi SQL**: wyświetla czas odpowiedzi na zapytania (widoczne tylko, jeśli korzystasz z bazy danych).
+>> - **Żądania SQL**: wyświetla liczbę żądań (widoczne tylko, jeśli korzystasz z bazy danych).
+<!-- CP-STEPS-END:access-resource-charts -->
 
 ### 5 - Sprawdzenie żądań sieciowych
 
@@ -185,11 +190,7 @@ _Ten krok jest opcjonalny, jeśli nie korzystasz z bazy danych._
 Dostęp do bazy danych umożliwia narzędzie PHPMyAdmin. Instrukcja korzystania z narzędzia PHPMyAdmin wykracza poza zakres tego przewodnika, więc to zagadnienie nie zostanie rozwinięte.
 Szczegółowe informacje można znaleźć w wielu przewodnikach zewnętrznych.
 
-**Dostęp do bazy danych za pośrednictwem narzędzia phpMyAdmin:** Aby uzyskać dostęp do bazy danych za pomocą narzędzia phpMyAdmin, skorzystaj z[Panelu klienta OVHcloud](/links/manager):
-
-- Kliknij domenę w sekcji `Hosting`{.action}.
-- Przejdź do karty `Baza danych`{.action}.
-- Aby uzyskać dostęp do narzędzia phpMyAdmin, kliknij ikonę z trzema kropkami `...`{.action} po prawej stronie bazy danych.
+**Dostęp do bazy danych za pośrednictwem narzędzia phpMyAdmin:** zapoznaj się z dedykowaną sekcją w naszym przewodniku "[Zarządzanie bazą danych w hostingu WWW](/pages/web_cloud/web_hosting/sql_create_database)".
 
 **Dlaczego warto zoptymalizować bazę danych?** Aby baza danych dobrze działała, należy ją konserwować. Innymi słowy, informacje zawarte w bazie danych powinny być zwracane do żądającego ich skryptu możliwie jak najszybciej. Aby to uzyskać, baza danych powinna być dobrze zorganizowana i zoptymalizowana. Sprawdźmy, jak zoptymalizować bazę danych.
 

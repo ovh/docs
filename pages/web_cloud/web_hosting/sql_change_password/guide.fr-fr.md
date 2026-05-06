@@ -39,9 +39,19 @@ La modification du mot de passe de la base de données de votre site nécessite 
 ## Prérequis
 
 - Disposer d'une [offre d'hébergement web OVHcloud](/links/web/hosting).
-- Être connecté à votre [espace client OVHcloud](/links/manager).
 - Utiliser une [base de données associée à votre offre d'hébergement mutualisé](/links/web/hosting-options-startsql) ou à un [serveur Web Cloud Databases](/links/web/databases).
 - Être en possession des identifiants FTP permettant de se connecter à l'[espace de stockage](/pages/web_cloud/web_hosting/ftp_connection) de votre hébergement.
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Hébergement web](/links/control-panel/web-hosting)
+- **Pour accéder à vos services :** `Web Cloud`{.action} > `Hébergements`{.action} > Sélectionnez votre hébergement web
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## En pratique
 

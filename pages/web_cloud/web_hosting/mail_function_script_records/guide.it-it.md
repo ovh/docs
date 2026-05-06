@@ -1,7 +1,7 @@
 ---
-title: "Gestire l’invio delle email automatiche"
-excerpt: "Questa guida ti mostra come monitorare e gestire le email automatiche inviate da un hosting Web OVHcloud"
-updated: 2025-10-21
+title: "Monitorare e gestire le email automatiche del tuo hosting web"
+excerpt: "Scopri come monitorare e gestire le email automatiche inviate dal tuo hosting web OVHcloud"
+updated: 2026-04-01
 ---
 
 ## Obiettivo
@@ -10,89 +10,95 @@ Le email automatiche sono messaggi inviati tramite script. Generalmente utilizza
 
 > [!primary]
 >
-> Questa guida ti mostra come utilizzare la funzione "mail()" di PHP per inviare messaggi da script siti sul tuo [hosting Web OVHcloud](/links/web/hosting).
+> Questa guida riguarda principalmente le email inviate tramite script presenti sul tuo [hosting web OVHcloud](/links/web/hosting) tramite la funzione "mail()" di PHP.
 >
-> Per gestire gli indirizzi email inclusi nella soluzione MX Plan o nella soluzione di [hosting web OVHcloud](/links/web/hosting), consulta la nostra guida sugli [email condivisi - MX Plan](/products/web-cloud-email-collaborative-solutions-mx-plan).
+> Per gestire gli account email inclusi nell'offerta MX Plan o nell'offerta di [hosting web OVHcloud](/links/web/hosting), consulta la nostra documentazione sulle [Email condivise - MX Plan](/products/web-cloud-email-collaborative-solutions-mx-plan).
 >
 
 > [!success]
 >
-> Anche se consigliamo vivamente di utilizzare la funzione "email()" di PHP, potrai inviare email dal tuo hosting condiviso passando per uno script che utilizza [protocollo SMTP (Simple Mail Transfer Protocol)](#SMTP).
+> Pur raccomandando vivamente di utilizzare la funzione "mail()" di PHP, puoi anche inviare email dal tuo hosting condiviso tramite uno script che utilizza il [protocollo SMTP (Simple Mail Transfer Protocol)](#SMTP).
 >
 
-**Questa guida ti mostra come monitorare e gestire le email automatiche inviate dal tuo hosting Web OVHcloud.**
+**Questa guida ti mostra come monitorare e gestire le email automatiche inviate dal tuo hosting web OVHcloud.**
 
 ## Prerequisiti
 
-- Disporre di una soluzione di [hosting Web OVHcloud](/links/web/hosting)
-- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
+- Disporre di un'offerta di [hosting web OVHcloud](/links/web/hosting).
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [Hosting](/links/control-panel/web-hosting)
+- **Percorso di navigazione:** `Web Cloud`{.action} > `Hosting`{.action} > Seleziona il tuo hosting web
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## Procedura
 
-Il monitoraggio e la gestione delle email automatiche dell'hosting Web OVHcloud sono disponibili nello [Spazio Cliente OVHcloud](/links/manager).
+### Panoramica della sezione «Script email»
 
-Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **3** passi.
+<!-- CP-STEPS-START:email-scripts-overview -->
+Per accedere alla sezione «Script email», clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **3** passi.
 
 > [!tabs]
 > **Passaggio 1**
 >>
->> Accedi allo [Spazio Cliente OVHcloud](/links/manager) e clicca su `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Passaggio 2**
->>
->> Clicca sul menu `Hosting`{.action} e seleziona l’hosting Web interessato.
+>> Accedi alla pagina [Hosting](/links/control-panel/web-hosting) e seleziona l'hosting web interessato.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Passaggio 3**
+> **Passaggio 2**
 >>
->> Nella nuova pagina clicca sulla scheda `Più`{.action} e clicca su `Script email`{.action}.
+>> Nella pagina che appare, clicca sulla scheda `Più`{.action} e poi su `Script email`{.action}.
 >>
 >> ![More tab](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/more.png){.thumbnail}
 >>
 >> ![More tab 2](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/more-2.png){.thumbnail}
 >>
->> La nuova pagina ti permette di seguire e gestire le email automatiche inviate dal tuo [hosting Web OVHcloud](/links/web/hosting).
-
-### Presentazione della sezione "Script email"
-
-![hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/email-scripts/tab.png){.thumbnail}
-
-Visualizzi una serie di informazioni per visualizzare l'attività dell'invio di email automatiche generate dai tuoi script:
-
-- **Stato del servizio**: stato attuale del servizio che esegue l'invio di email automatiche dal tuo hosting Web:
-    - Se è verde (*"Attivo"* o *"Force"*), significa che gli invii sono operativi. 
-    - Se è rosso (*"Non attivo"*, *"Bounce"* o *"SPAM"*), gli invii non sono più effettuati. <br>
-
-    In base a questo stato, la gestione degli invii sarà diversa.
-
-- **Rapporto di errore a**: riceverlo quotidianamente all'indirizzo email di tua scelta. Inseriscila cliccando su `Modifica il destinatario`{.action}. Il report contiene le email inviate dal tuo hosting Web che risultano in errore presso OVHcloud. `Email in errore`{.action} permette di visualizzare i report in qualsiasi momento a destra della pagina `Scripts email`{.action}.
-- **Totale email inviate**: numero totale delle email automatiche inviate dalla creazione del tuo hosting Web OVHcloud.
-- **E-mail inviate oggi**: numero totale delle email automatiche inviate solo oggi.
-- **Totale email in errore**: numero totale delle email automatiche inviate dalla creazione del tuo hosting che sono tornate in errore in OVHcloud.
-- **Storico delle email inviate**: grafico che mostra lo storico delle email inviate dal tuo hosting Web nei giorni precedenti.
-
-Sulla destra, diversi pulsanti permettono di gestire l'invio di email automatiche dal tuo hosting Web. A seconda dello stato del servizio, alcuni potrebbero non essere disponibili.
-
-- **Elimina le email**: cancella le email presenti nella coda di attesa e sblocca l'invio delle email. Per motivi di riservatezza, le email in coda non sono raggiungibili da parte di OVHcloud. È possibile visualizzare queste email solo se sono state precedentemente salvate nel database del sito Web prima di essere inviate.
-- **Email in errore**: permette l'accesso ai log delle ultime email inviate in errore. in cui sono indicati gli indirizzi email associati all’errore. Attenzione: la cronologia non verrà ripristinata anche se decidi di `Blocca l'invio`{.action} o di `Sblocca l'invio`{.action}.
-- **Blocca l'invio**: blocca la distribuzione dell'invio delle email automatiche dal tuo hosting Web. Le email generate dai tuoi script dopo il blocco non saranno inviate, ma conservate in coda per un massimo di 72 ore.
-- **Sblocca l'invio**: sblocca l'invio delle email automatiche dal tuo hosting Web. Le email in coda verranno rimesse in distribuzione.
-
-Per effettuare l'azione desiderata, clicca sul pulsante corrispondente e poi su `Conferma`{.action}. In alcuni casi l'azione desiderata può richiedere decine di minuti per essere pienamente efficace.
+> **Passaggio 3**
+>>
+>> Questa pagina ti permette di monitorare e gestire le email automatiche inviate dal tuo [hosting web OVHcloud](/links/web/hosting).
+>>
+>> ![Pagina Script email dell'hosting web](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/email-scripts/tab.png){.thumbnail}
+>>
+>> La pagina mostra diverse informazioni che ti permettono di visualizzare l'attività degli invii di email automatiche generate dai tuoi script:
+>>
+>> - **Stato del servizio**: stato attuale del servizio che esegue gli invii di email automatiche del tuo hosting web:
+>>     - Se è verde (*«Attivo»* o *«Force»*), significa che gli invii sono operativi.
+>>     - Se è rosso (*«Disattivato»*, *«Bounce»* o *«spam»*), gli invii non vengono più effettuati.
+>>
+>>     A seconda di questo stato, la gestione degli invii sarà diversa.
+>>
+>> - **Report errori a**: ricevi un report giornaliero all'indirizzo email che preferisci. Impostalo tramite il pulsante `Modifica destinatario`{.action}. Questo report contiene le email inviate dal tuo hosting web che sono tornate con errore a OVHcloud. Il pulsante `Email in errore`{.action} permette anche di consultare questi report in qualsiasi momento a destra della pagina `Script email`{.action}.
+>> - **Totale email inviate**: numero totale delle email automatiche inviate dalla creazione del tuo hosting web OVHcloud.
+>> - **Email inviate oggi**: numero totale delle email automatiche inviate oggi.
+>> - **Totale email in errore**: numero totale delle email automatiche inviate dalla creazione del tuo hosting web che sono tornate con errore a OVHcloud.
+>> - **Storico delle email inviate**: grafico che rappresenta lo storico delle email inviate dal tuo hosting web nei giorni precedenti.
+>>
+>> A destra, diversi pulsanti permettono di gestire gli invii di email automatiche dal tuo hosting web. A seconda dello stato del servizio, alcuni potrebbero non essere disponibili.
+>>
+>> - **Elimina le email**: cancella le email presenti nella coda di attesa e sblocca l'invio delle email. Per motivi di riservatezza, le email presenti nella coda non sono accessibili lato OVHcloud. Puoi visualizzare queste email solo se sono state precedentemente registrate nel database del tuo sito web prima di essere inviate.
+>> - **Email in errore**: permette l'accesso ai log delle ultime email che hanno avuto errori di invio. Troverai gli indirizzi email interessati con l'errore associato. Attenzione, questo storico non verrà reimpostato, anche se decidi di `Elimina le email`{.action} o di `Sblocca l'invio`{.action}.
+>> - **Blocca l'invio**: blocca la distribuzione degli invii di email automatiche del tuo hosting web. Le email generate dai tuoi script dopo il blocco non verranno inviate, ma conservate in una coda di attesa per un massimo di 72 ore.
+>> - **Sblocca l'invio**: sblocca l'invio delle email automatiche del tuo hosting web. Le email presenti nella coda di attesa verranno anch'esse rimesse in distribuzione.
+>>
+>> Per eseguire l'azione desiderata, clicca sul pulsante corrispondente e poi su `Conferma`{.action}. In alcuni casi, l'azione richiesta potrebbe richiedere diversi minuti per essere pienamente efficace.
+<!-- CP-STEPS-END:email-scripts-overview -->
 
 > [!primary]
 >
-> Per evitare un utilizzo improprio delle email automatiche dell'hosting, ti consigliamo vivamente di configurare un sistema di sicurezza, ad esempio un "captcha da inserire nei form di contatto del tuo sito Web.
+> Per evitare un utilizzo indesiderato delle email automatiche del tuo hosting web, ti consigliamo vivamente di implementare un sistema di sicurezza, come un «captcha» nei form del tuo sito web che effettuano invii di email (ad esempio un form di contatto).
 >
 
-Se rilevi che le email generate dai tuoi script non sono più inviate mentre lo stato del servizio consente sempre l'invio (*"Attivo"* o *"Force"*), ti consigliamo di:
+Se noti che le email generate dai tuoi script non vengono più inviate mentre lo stato del servizio consente ancora l'invio (*«Attivo»* o *«Force»*), ti consigliamo di:
 
-- **verificare gli script che eseguono gli invii**: gli script potrebbero non riuscire a inviare le email a causa di un errore di sintassi. Verifica il contenuto dei tuoi script, correggili se necessario ed effettua un nuovo test.
+- **verificare gli script che effettuano gli invii**: gli script potrebbero non riuscire ad inviare le email a causa di un errore di sintassi. Verifica il contenuto dei tuoi script, correggili se necessario e poi effettua un nuovo tentativo.
 
-- **provare l'invio di un'email tramite uno script di test**: crea uno script di test che esegue l'emissione di un'email al tuo indirizzo personale utilizzando questo codice:
+- **testare l'invio di un'email tramite uno script di test**: crea uno script di test che effettua l'invio di un'email al tuo indirizzo personale utilizzando il seguente codice:
 
 ```bash
 <?php
@@ -108,144 +114,194 @@ echo "Email did not leave correctly!";
 ?>
 ```
 
-Per la `$headers` inserisci due volte lo stesso indirizzo email mittente.
+Per il `$headers`, inserisci due volte lo stesso indirizzo email mittente.
 
-Se ricevete correttamente il messaggio *The email has been sent successfully!* sull'indirizzo email che avete definito alla linea `$to`, ciò indica che gli script che inviano le vostre email contengono degli errori.
+Se ricevi correttamente il messaggio *The email has been sent successfully!* all'indirizzo email che hai definito nella riga `$to`, significa che gli script che effettuano i tuoi invii contengono errori.
 
-- **Assicurati che le tue spedizioni non utilizzino server SMTP**: non specificare server SMTP nei parametri dei tuoi script quando utilizzi la funzione "mail()" di PHP. Se disponi di un'interfaccia per amministrare l'invio delle email dal tuo sito Web, modifica questa impostazione nella configurazione di quest'ultimo.
+- **Assicurati che i tuoi invii non utilizzino un server SMTP**: non specificare un server SMTP nei parametri dei tuoi script quando utilizzi la funzione "mail()" di PHP. Se disponi di un'interfaccia per amministrare gli invii di email dal tuo sito web, modifica questo parametro nella configurazione di quest'ultimo.
 
-- **Verifica la dimensione totale della tua email**: L'email inviata non deve superare la dimensione totale di **10 MB** (inclusa incapsulazione e intestazione). Il contenuto stesso della tua email non dovrà quindi superare i **7/8 MB**.
+- **Verifica la dimensione totale della tua email**: l'email inviata non deve superare la dimensione totale di **10 MB** (incapsulamento e intestazione inclusi). Il contenuto della tua email non dovrà quindi superare **7/8 MB**.
 
-### gestire gli stati "Non attivo", "Bounce" e "SPAM"
+### Gestire gli stati «Disattivato», «Bounce» e «spam» <a name="block-state"></a>
 
-In questa sezione sono disponibili i dettagli di ogni stato che ha bloccato la funzionalità email.
+In questa sezione troverai i dettagli di ogni stato all'origine del blocco della tua funzione email.
 
 > [!warning]
 >
-> Prima di descrivere nei dettagli ogni stato, è necessario comprendere i punti che possono danneggiare la reputazione del dominio o impedire la ricezione delle email.
+> Prima di descrivere nel dettaglio ciascuno di questi stati, è necessario comprendere i punti che possono deteriorare la reputazione del tuo dominio o impedire la ricezione delle tue email.
 >
-> Verificare quanto segue:
+> Verifica preventivamente i seguenti punti:
 >
-> - la configurazione del [record SPF](/pages/web_cloud/domains/dns_zone_spf) nella zona DNS del nome di dominio.
-> - la configurazione di [il record DMARC](/pages/web_cloud/domains/dns_zone_dmarc) nella zona DNS del nome di dominio, **solo se il server di destinazione lo richiede**.
-> - Verifica la reputazione dell'indirizzo IP che invia ([quella del tuo hosting Web](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_ip)), utilizzando uno strumento come [MXtoolbox](https://mxtoolbox.com/) o [Spamhaus](https://check.spamhaus.org/).
-> - L'email non contiene elementi che possono essere interpretati come SPAM. Per maggiori informazioni, consulta la sezione "[Caso 3: Invio di email legittime considerate come SPAM](#elements-list-spam)" di questa guida.
-> - In caso di assenza di blocco da parte di OVHcloud e se l’email non è stata ricevuta o rifiutata dal destinatario, contatta il destinatario per chiedere di verificare se l’email è stata bloccata a livello del server di destinazione.
+> - La configurazione del [record SPF](/pages/web_cloud/domains/dns_zone_spf) nella zona DNS del dominio.
+> - La configurazione del [record DMARC](/pages/web_cloud/domains/dns_zone_dmarc) nella zona DNS del dominio, **solo se il server di destinazione lo richiede**.
+> - Verifica la reputazione dell'indirizzo IP all'origine dell'invio ([quello del tuo hosting web](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_ip) nel tuo caso), tramite uno strumento come [MXtoolbox](https://mxtoolbox.com/) o [Spamhaus](https://check.spamhaus.org/).
+> - L'email non contiene elementi suscettibili di essere interpretati come spam. Trovi un elenco non esaustivo di questi elementi nella sezione «[Caso n°3: Invio di email legittime considerate come spam](#elements-list-spam)» di questa guida.
+> - In assenza di blocco da parte di OVHcloud e se l'email non è stata ricevuta o rifiutata dal destinatario, contatta il destinatario affinché verifichi se l'email non è stata bloccata a livello del server di ricezione.
 
-#### Lo stato "Non attivo"
+#### Lo stato «Disattivato»
 
 Questo stato si verifica quando:
 
-- sono state inviate troppe email molto rapidamente
-- troppe email sono tornate in errore
-- hai disattivato la funzionalità dallo [Spazio Cliente OVHcloud](/links/manager).
+- sono state inviate troppe email molto rapidamente;
+- troppe email sono tornate in errore;
+- hai disattivato la funzionalità dal tuo [Spazio Cliente OVHcloud](/links/manager).
 
-Per sbloccare la situazione, accedi alla sezione `Web Cloud`{.action}, clicca su `Hosting`{.action} e seleziona l'hosting interessato nella lista. Clicca sulla scheda `Plus`{.action} e poi su `Script email`{.action}.
+<!-- CP-STEPS-START:resolve-disabled-status -->
+Per sbloccare la situazione, clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **3** passi.
 
-Infine clicca su `Sblocca l'invio`{.action} e attendi qualche minuto fino a quando il servizio di invio non sarà nuovamente attivo.
+> [!tabs]
+> **Passaggio 1**
+>>
+>> Accedi alla pagina [Hosting](/links/control-panel/web-hosting) e seleziona l'hosting web interessato.
+>>
+> **Passaggio 2**
+>>
+>> Nella pagina che appare, clicca sulla scheda `Più`{.action} e poi su `Script email`{.action}.
+>>
+> **Passaggio 3**
+>>
+>> Clicca su `Sblocca l'invio`{.action} e attendi qualche minuto affinché il servizio di invio sia di nuovo attivo.
+<!-- CP-STEPS-END:resolve-disabled-status -->
 
-#### Lo stato "Bounce"
+#### Lo stato «Bounce»
 
-Questa condizione si verifica quando una certa percentuale delle tue email inviate automaticamente è tornata in errore.
+Questo stato si verifica quando una certa percentuale delle tue email inviate automaticamente è tornata in errore.
 
-Per sbloccare la situazione, accedi alla sezione `Web Cloud`{.action}, clicca su `Hosting`{.action} e seleziona l'hosting interessato nella lista. Clicca sulla scheda `Plus`{.action} e poi su `Script email`{.action}.
+<!-- CP-STEPS-START:resolve-bounce-status -->
+Per sbloccare la situazione, clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **3** passi.
 
-Sono possibili due opzioni:
+> [!tabs]
+> **Passaggio 1**
+>>
+>> Accedi alla pagina [Hosting](/links/control-panel/web-hosting) e seleziona l'hosting web interessato.
+>>
+> **Passaggio 2**
+>>
+>> Nella pagina che appare, clicca sulla scheda `Più`{.action} e poi su `Script email`{.action}.
+>>
+> **Passaggio 3**
+>>
+>> Sono possibili due opzioni:
+>>
+>> - Se clicchi su `Sblocca l'invio`{.action}, lo stato del servizio passerà a *«Force»*. Il rapporto **email tornate in errore / numero totale di email inviate** autorizzato prima di un blocco sarà raddoppiato. L'invio sarà di nuovo operativo qualche minuto dopo lo sblocco.
+>> - Se clicchi su `Elimina le email`{.action}, verranno eliminate tutte le email dalla coda di attesa e lo stato del servizio tornerà a *«Attivo»* senza raddoppiare il rapporto.
+<!-- CP-STEPS-END:resolve-bounce-status -->
 
-- Se clicchi su `Sblocca l'invio`{.action}, lo stato del servizio passerà in *"Force"*. Il rapporto **email fuorviato / numero totale di invio di email inviate** autorizzato prima di un blocco sarà raddoppiato. L'invio sarà nuovamente operativo pochi minuti dopo lo sblocco.
-- Se clicchi su `Rimuovi le email`{.action}, eliminerai tutte le email dalla coda di attesa e il servizio tornerà in *"Attivo"* senza raddoppiare il rapporto.
+#### Lo stato «spam»
 
-#### Lo stato "SPAM"
+Questo stato si verifica quando dal tuo hosting vengono inviate email considerate come spam.
 
-Questo stato di cose si verifica quando le email considerate SPAM sono state emesse dal tuo hosting.
-
-In genere, questo blocco è accompagnato dall'invio di un'email intitolata **"Abuso con il tuo hosting domain.tld"** generato automaticamente dai nostri sistemi di sicurezza:
+Generalmente, questo blocco è accompagnato dall'invio di un'email dal titolo **«Abuso con il tuo hosting domain.tld»** generata automaticamente dai nostri robot di sicurezza:
 
 ![hosting](/pages/assets/screens/email-sending-to-customer/webhosting/email-script-disabled.png){.thumbnail}
 
-A fronte di questa situazione, sono possibili tre casi:
+Sono possibili tre scenari in relazione a questa situazione:
 
-- **Caso 1: utilizzo di un modulo di contatto da parte di un robot**:
+- **Caso n°1: utilizzo di un form di contatto da parte di un robot**:
 
-Per correggere questa situazione, è necessario proteggere tutti gli script in grado di inviare email dal tuo hosting, con l'aiuto di un sistema di tipo "Captcha".
+Per risolvere questa situazione, devi proteggere tutti gli script in grado di inviare email dal tuo hosting tramite un sistema di tipo «Captcha».
 
-Accedi alla sezione `Web Cloud`{.action}, clicca su `Hosting`{.action} e seleziona l'hosting interessato nella lista. Clicca sulla scheda `Plus`{.action} e poi su `Script email`{.action}.
+<!-- CP-STEPS-START:resolve-spam-case-1 -->
+Dopodiché accedi alla sezione «Script email» del tuo hosting. Per farlo, clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **3** passi.
 
-Clicca su `Rimuovi le email`{.action}, cancella tutte le email dalla coda di attesa e il servizio torna in*"Attivo"*.
+> [!tabs]
+> **Passaggio 1**
+>>
+>> Accedi alla pagina [Hosting](/links/control-panel/web-hosting) e seleziona l'hosting web interessato.
+>>
+> **Passaggio 2**
+>>
+>> Nella pagina che appare, clicca sulla scheda `Più`{.action} e poi su `Script email`{.action}.
+>>
+> **Passaggio 3**
+>>
+>> Clicca su `Elimina le email`{.action}: verranno eliminate tutte le email dalla coda di attesa e lo stato del servizio tornerà a *«Attivo»*. In questo caso, l'eliminazione è obbligatoria per cancellare gli spam in attesa di invio.
+<!-- CP-STEPS-END:resolve-spam-case-1 -->
 
-In questo caso è necessario effettuare un spurgo per cancellare gli SPAM in attesa di invio.
+- **Caso n°2: iniezione di file malevoli nel tuo hosting**:
 
-- **Caso 2: file malevoli iniettati nel tuo hosting**:
-
-Per correggere questa situazione, è necessario effettuare almeno le seguenti azioni:
+Per risolvere questa situazione, devi eseguire almeno le seguenti operazioni:
 
 - Analizza i [log del tuo hosting](/pages/web_cloud/web_hosting/logs_and_statistics) per identificare le falle di sicurezza e i file infetti.
-- Elimina o correggi i file/moduli malevoli
-- Per i CMS (Wordpress, Joomla, Prestashop, Drupal, ecc...), aggiorna il CMS, il plugin e il tema associati.
-- Proteggi i tuoi form di contatto con un "captcha".
+- Elimina o correggi il/i file/moduli malevoli.
+- Per i CMS (WordPress, Joomla!, PrestaShop, Drupal, ...), aggiorna il CMS, i plugin e il tema associati.
+- Proteggi i tuoi form di contatto con un «captcha».
 
-Se utilizzi un CMS, scegli i plugin/i/i/i tema/i "ufficiale/i".
-Aggiorna il CMS, i plugin e il tema associati il più regolarmente possibile per evitare che si ripeta.
+Se utilizzi un CMS, privilegia l'utilizzo di plugin/temi «ufficiali».
+Aggiorna il CMS, i plugin e il tema associati il più regolarmente possibile per evitare che ciò si ripeta.
 
-Una volta attivato l'hosting, accedi alla sezione `Web Cloud`{.action}, clicca su `Hosting`{.action} e seleziona l'hosting interessato nella lista. Clicca sulla scheda `Plus`{.action} e poi su `Script email`{.action}.
+<!-- CP-STEPS-START:resolve-spam-case-2 -->
+Una volta protetto il tuo hosting, clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **3** passi.
 
-Clicca su `Rimuovi le email`{.action}, cancella tutte le email dalla coda di attesa e il servizio torna in*"Attivo"*.
+> [!tabs]
+> **Passaggio 1**
+>>
+>> Accedi alla pagina [Hosting](/links/control-panel/web-hosting) e seleziona l'hosting web interessato.
+>>
+> **Passaggio 2**
+>>
+>> Nella pagina che appare, clicca sulla scheda `Più`{.action} e poi su `Script email`{.action}.
+>>
+> **Passaggio 3**
+>>
+>> Clicca su `Elimina le email`{.action}: verranno eliminate tutte le email dalla coda di attesa e lo stato del servizio tornerà a *«Attivo»*.
+<!-- CP-STEPS-END:resolve-spam-case-2 -->
 
-In questo caso è necessario effettuare un spurgo per cancellare gli SPAM in attesa di invio.
+In questo caso, l'eliminazione è obbligatoria per cancellare gli spam in attesa di invio.
 
-- **Caso 3: Invio di email legittime considerate SPAM**: <a name="elements-list-spam"></a>
+- **Caso n°3: Invio di email legittime considerate come spam** <a name="elements-list-spam"></a>
 
-Se all'origine delle email che hanno causato il blocco, trovi qui di seguito alcuni esempi di**modalità da evitare** durante l'invio di un'email (in modo che non sia considerato troppo "facilmente" come SPAM):
+Se sei all'origine delle email che hanno generato il blocco, troverai qui di seguito alcuni esempi di **pratiche da evitare** durante l'invio di un'email (affinché non venga considerata «troppo facilmente» come spam):
 
-- 3 parole o più in maiuscolo nel soggetto/oggetto dell'email
-- Nessun soggetto/testo inserito nell'email
-- L'email contiene solo un'immagine di dimensione superiore a 1 MB e qualche parola.
-- L'oggetto dell'email inizia con: Hi, FREE, BUY, BUYING....
-- L'email contiene più del 70% di bianco (errore sul tasto "SPAZIO" o "INGRESSO" della tastiera).
-- La polizia di scrittura utilizzata per la redazione dell'email è estremamente elevata.
-- Il colore della scrittura e il colore dello sfondo sono gli stessi per scrivere l'email
-- L'indirizzo IP pubblico (ad esempio, IP del tuo punto di accesso Internet) è registrato presso le organizzazioni di rinomanza.
-- L'intestazione dell'email inviata non rispetta gli RFC "email" (standard o standard email).
-- I link presenti nell'email non sono corretti
-- Un URL nell'email non è sicuro (esempio: dichiarata in `https://` quando l'URL esiste solo in `http://`)
-- L'email contiene termini pornografici o che si avvicinano.
-- L'email contiene un eseguibile (EXE, BAT, PIF, XML, XLSX o documenti con "macros"), anche se è "zippato".
+- 3 parole o più in maiuscolo nell'oggetto dell'email.
+- Nessun oggetto/testo indicato nell'email.
+- L'email contiene solo un'immagine di dimensioni superiori a 1 MB e poche parole.
+- L'oggetto dell'email inizia con: Hi, FREE, BUY, BUYING,....
+- L'email contiene più del 70% di spazio bianco (abuso del tasto «SPAZIO» o «INVIO» della tastiera).
+- Il carattere utilizzato per la redazione dell'email è estremamente grande.
+- Il colore del testo e il colore dello sfondo sono identici per la redazione dell'email.
+- L'indirizzo IP pubblico (IP del tuo punto di accesso internet, ad esempio) è elencato presso organismi di reputazione.
+- L'intestazione dell'email inviata non rispetta le RFC «email» (standard email).
+- I link presenti nell'email sono errati.
+- Un URL nell'email non è sicuro (ad esempio: dichiarato in `https://` mentre l'URL esiste solo in `http://`).
+- L'email contiene termini di carattere pornografico o simili.
+- L'email contiene un eseguibile (EXE, BAT, PIF, XML, XLSX o documenti con «macro»), anche se «zippato».
 
-Se, nonostante questo, lo stato del servizio torna allo stato *"SPAM"*, rispondi all'email automatica ricevuta precisando di aver effettuato le azioni necessarie.
+Se nonostante ciò lo stato del servizio ritorna allo stato *«spam»*, rispondi all'email automatica che hai ricevuto specificando che hai fatto il necessario.
 
-Il nostro servizio anti-spam analizzerà la situazione e il nostro supporto ti riferirà sulla procedura di sblocco.
+Il nostro servizio antispam analizzerà la situazione e il nostro supporto ti ricontatterà per spiegarti la procedura di sblocco.
 
-### Invio email con uno script "SMTP" <a name="SMTP"></a>
+### Invio di email tramite uno script «SMTP» <a name="SMTP"></a>
 
 > [!warning]
 >
-> OVHcloud mette a tua disposizione servizi di cui tu sei responsabile per la configurazione e la gestione. Assicurarne il corretto funzionamento è quindi responsabilità dell'utente.
-> 
-> Mettiamo a tua disposizione la sezione che seguirà per supportarti in caso di necessità. Tuttavia, in caso di difficoltà o dubbi, ti consigliamo di rivolgerti a uno [specialista del settore](/links/partner). OVHcloud non potrà fornirti alcuna assistenza. Per maggiori informazioni consulta la sezione "Per saperne di più" di questa guida.
+> OVHcloud mette a tua disposizione servizi di cui sei responsabile per la configurazione e la gestione. Spetta quindi a te garantirne il corretto funzionamento.
+>
+> Tuttavia, ti raccomandiamo di rivolgerti a un [provider specializzato](/links/partner) se incontri delle difficoltà. Noi non saremo in grado di fornirti assistenza. Per maggiori informazioni, consulta la sezione [«Per saperne di più»](#go-further) di questa guida.
 >
 
-Anche se ti consigliamo vivamente di privilegiare l'utilizzo della funzione "mail()" di PHP, gli hosting condivisi permettono di inviare email passando per uno script che utilizza il protocollo SMTP (Simple Mail Transfer Protocol). La dimensione totale della tua email non potrà superare i **10 MB** (cioè **7/8 MB senza incapsulamento**).
+Pur raccomandando vivamente di privilegiare l'utilizzo della funzione "mail()" di PHP, gli hosting condivisi permettono di inviare email tramite uno script che utilizza il protocollo SMTP (Simple Mail Transfer Protocol). La dimensione totale della tua email non può superare **10 MB** (cioè **7/8 MB senza incapsulamento**).
 
 > [!warning]
 > 
-> Le email emesse con uno script che utilizzano una configurazione SMTP non potranno essere gestite e monitorate dal tuo [Spazio Cliente OVHcloud](/links/manager).
+> Le email inviate con uno script che utilizza una configurazione SMTP non possono essere gestite e monitorate dal tuo [Spazio Cliente OVHcloud](/links/manager).
 > 
 
 > [!primary]
 >
-> Se utilizzi un indirizzo email OVHcloud e solo in questo caso, puoi anche utilizzare `SMTPSecure` *"startls"* o *"tls"* con `Port` **587**. Tuttavia, il `SMTPSecure` *"ssl"* con il `Port` **465** resta la configurazione da privilegiare sulla nostra infrastruttura.
->
+> Se utilizzi un indirizzo email OVHcloud e solo in questo caso, puoi anche utilizzare `SMTPSecure` *«starttls»* o *«tls»* con il `Port` **587**. Tuttavia, `SMTPSecure` *«ssl»* con il `Port` **465** rimane la configurazione da privilegiare sulla nostra infrastruttura.
+> 
 
 ## Per saperne di più <a name="go-further"></a>
 
-[Consultare i log del vostro hosting](/pages/web_cloud/web_hosting/logs_and_statistics)
+[Consultare i log del tuo hosting](/pages/web_cloud/web_hosting/logs_and_statistics)
 
-[Correggere la pagina "403 Forbidden" che compare sul tuo sito](/pages/web_cloud/web_hosting/diagnostic_403_forbidden)
+[Correggere la pagina «403 Forbidden» visualizzata sul tuo sito](/pages/web_cloud/web_hosting/diagnostic_403_forbidden)
 
-[Ripristina lo spazio di storage FTP del tuo hosting](/pages/web_cloud/web_hosting/ftp_save_and_backup)
+[Ripristinare lo spazio di storage FTP del tuo hosting](/pages/web_cloud/web_hosting/ftp_save_and_backup)
 
 Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](/links/partner).
 
-Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](/links/support).
+Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, consulta le nostre [soluzioni di supporto](/links/support).
 
-Contatta la nostra [Community di utenti](/links/community).
+Partecipa alla nostra [community di utenti](/links/community).

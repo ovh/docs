@@ -1,6 +1,6 @@
 ---
-title: "Monitoring DDoS attacks with the Network Security Dashboard"
-excerpt: "Learn how to navigate through the Network Security Dashboard"
+title: "Network Security Dashboard for Dedicated Servers"
+excerpt: "Monitor DDoS attack activity and traffic patterns on your dedicated server using the OVHcloud Network Security Dashboard."
 updated: 2025-10-31
 ---
 
@@ -11,7 +11,17 @@ This guide explains the Network Security Dashboard and provides an overview of c
 ## Requirements
 
 - An OVHcloud service exposed on a dedicated public IP address ([Dedicated Server](/links/bare-metal/bare-metal), [VPS](/links/bare-metal/vps), [Public Cloud instance](/links/public-cloud/public-cloud), [Hosted Private Cloud](/links/hosted-private-cloud/vmware), [Additional IP](/links/network/additional-ip), etc.)
-- Access to the [OVHcloud Control Panel](/links/manager)
+
+<!-- CP-NAV-START:network-security-dashboard -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Security Dashboard](/links/control-panel/network-security-dashboard)
+- **Navigation path:** `Network`{.action} > `Network Security Dashboard`{.action}
+
+---
+<!-- CP-NAV-END:network-security-dashboard -->
 
 ## Instructions
 
@@ -27,7 +37,7 @@ Every time an attack is detected towards any IP of your service, you are notifie
 
 During an attack, an active mitigation action will be indicated by a warning icon on the IP listing page (in the `Manage IPs`{.action} section of your Control Panel).
 
-![red-line-attack](images/forced_blur.png){.thumbnail}
+![Active mitigation warning icon on the IP listing page](images/forced_blur.png){.thumbnail}
 
 > [!primary]
 >
@@ -41,9 +51,9 @@ During an attack, an active mitigation action will be indicated by a warning ico
 
 ### Network security notifications
 
-![red-line-attack](images/nsd_04_blur.PNG){.thumbnail}
+![Network security notifications with Anti-DDoS status columns](images/nsd_04_blur.PNG){.thumbnail}
 
-Log in to the [OVHcloud Control Panel](/links/manager), open the `Network`{.action} menu in the left-hand sidebar and click `Public IP Addresses`{.action}. Ensure that `Advanced mode` is enabled to see the Anti-DDoS infrastructure status and its components configuration.
+Ensure that `Advanced mode` is enabled to see the Anti-DDoS infrastructure status and its components configuration.
 
 The columns correspond to the Anti-DDoS scrubbing (**Mitigation**) status, the Edge Network **Firewall** and **GAME firewall** features availability and their statuses.
 
@@ -56,7 +66,7 @@ The columns correspond to the Anti-DDoS scrubbing (**Mitigation**) status, the E
     - **Disabled** -  Firewall is **disabled** for this IP.
     - **(no status)** - Firewall configuration is not created. To configure rules, click on the `...`{.action} button then select `Create Firewall`{.action}.
 
-- The **GAME firewall** (only available for [OVHcloud **Game** dedicated servers](https://www.ovhcloud.com/en/bare-metal/prices/#filterType=range_element&filterValue=game#filterType=range_element&filterValue=game)) state can be:
+- The **GAME firewall** (only available for [OVHcloud **Game** dedicated servers](https://www.ovhcloud.com/en-gb/bare-metal/prices/#filterType=range_element&filterValue=game#filterType=range_element&filterValue=game)) state can be:
     - **On** - The GAME DDoS protection is **enabled** on this IP.
     - **Off** - The GAME firewall is **available** but **disabled** on this IP.
     - **(no status)** - The GAME firewall is not available for this IP. This means the listed IP is not configured on a supported product range.
@@ -65,11 +75,9 @@ The columns correspond to the Anti-DDoS scrubbing (**Mitigation**) status, the E
 
 ### Network Security Dashboard
 
-Log in to the [OVHcloud Control Panel](/links/manager), open the `Network`{.action} menu in the left-hand sidebar and click `Network Security Dashboard`{.action}. 
-
 In the **scrubbing centre log** tab, you can retrieve all the information about attacks that were detected in the past (or that are ongoing).
 
-![red-line-attack](images/nsd_main_blur.png)
+![Scrubbing centre log showing detected attacks and timestamps](images/nsd_main_blur.png)
 
 In the table, the following columns are present: 
 
@@ -87,7 +95,7 @@ In the table, the following columns are present:
 
 In the **Traffic chart** tab, you can see a graph showing traffic to your IP address (bps or pps).
 
-![red-line-attack](images/nsd_graph_tab_blur.png)
+![Traffic chart showing dropped malicious and clean traffic](images/nsd_graph_tab_blur.png)
 
 It presents malicious traffic that was dropped (**in red**) and clean traffic delivered to your IP address (**in green**). There are also basic mitigation statistics displayed, i.e.: how many attacks were detected for a selected IP, how much traffic (or packets) was cleaned during attacks or how many times scrubbing centres took an action to inspect your traffic (number of events) in a selected period of time.
 

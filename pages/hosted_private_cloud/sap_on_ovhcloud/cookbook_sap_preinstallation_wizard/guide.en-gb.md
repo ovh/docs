@@ -4,6 +4,50 @@ excerpt: "This guide provides instructions for using the SAP pre-installation wi
 updated: 2025-09-03
 ---
 
+<style>
+/* ---FAQ only--- */
+details {
+    margin: 0.1rem 1;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    background: #ffffffff;
+}
+details > summary {
+    padding: 0.1rem 1rem;
+    font-weight: 500;
+    color: #268fd4ff;
+    cursor: pointer;
+    list-style: none;
+}
+details > summary::before {
+    content: '\25B6';
+    display: inline-block;
+    margin-right: 0.5ch;
+    transition: transform 0.2s;
+}
+details[open] > summary::before {
+    content: '\25BC';
+}
+details:hover {
+    border: 1px solid #147DE8;
+    border-radius: 4px;
+    transition: border-color 0.5s ease;
+}
+details[open] > summary {
+    background: #ffffffff;
+}
+details > :not(summary) {
+    padding: 0.25rem 0.5rem;
+    box-sizing: border-box;
+    list-style-position: inside;
+}
+.smallish-gap {
+    display: block;
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
+}
+</style>
+
 ## Introduction
 
 The SAP pre-installation wizard offered by OVHcloud simplifies the deployment of an SAP system on your VMware service on OVHcloud already configured in your customer account. It allows you to set up SAP NetWeaver 7.50 or S/4HANA environments, either in ABAP or Java configuration, and according to standard, distributed, or highly available schemes.
@@ -13,8 +57,6 @@ The SAP pre-installation wizard offered by OVHcloud simplifies the deployment of
 > It is essential to note that the term "pre-installation" here refers to the installation of the technical stack only. This includes the SAP HANA database as well as the SAP NetWeaver 7.50 or S/4HANA technical stack. After this pre-installation phase, you will need to install the specific SAP module for your needs and finalize the configurations as part of a post-installation.
 
 ## First Steps
-
-To access our SAP pre-installation wizard, go to the `SAP Features Hub`{.action} section of the `Hosted Private Cloud`{.action} menu, available from the [OVHcloud Control Panel](/links/manager).
 
 ![sap-features-hub](images/sap-features-hub.png){.thumbnail}
 
@@ -32,6 +74,17 @@ You have two options: start a blank wizard to manually enter all the necessary i
 - A Public Cloud project must be created in your OVHcloud account.
     - In this Public Cloud project, an Object Storage container must be created to store your SAP sources<sup>2</sup>.
 - A DHCP server must be configured in the network where you want to deploy your SAP system for the OVHcloud virtual machine<sup>3</sup> that will be deployed during the installation process.
+
+<!-- CP-NAV-START:privatecloud-sap-hana -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [SAP HANA](/links/control-panel/privatecloud-sap-hana)
+- **Navigation path:** `Hosted Private Cloud`{.action} > `SAP Features Hub`{.action} > Select your service
+
+---
+<!-- CP-NAV-END:privatecloud-sap-hana -->
 
 It is essential to note that our SAP pre-installation wizard only supports installations using the SAP HANA database. Therefore, only SAPEXEDB sources for SAP HANA are supported. All other SAPEXEDB files must be removed from your Object Storage container if they were selected via the SAP Maintenance Planner.
 
@@ -122,57 +175,73 @@ Once you are satisfied with the provided information, you have the option to dow
 
 ![sap-preinstallation-wizard-step-8](images/step-8.png){.thumbnail}
 
-After validating the information, you will be redirected to the pre-installation tracking page. You can also find the list of all your pre-installation tasks and their details in the `SAP Feature Hub`{.action} section in the `Hosted Private Cloud`{.action} menu, `List of pre-installations`{.action}.
+After validating the information, you will be redirected to the pre-installation tracking page. You can also find the list of all your pre-installation tasks and their details by clicking `List of pre-installations`{.action} in the SAP Features Hub.
 
 ![installation_report](images/installation_report.png){.thumbnail}
 
 ## Troubleshooting Common Issues
 
-> [!faq]
-> **The error message indicates that the requested configuration exceeds the capabilities of my datacenter.**
->>
->> If you have recently deleted virtual machines to free up capacity within your datacenter, it may be that the capacity information has not yet been updated. Please wait a few minutes before trying again. If the problem persists, do not hesitate to contact OVHcloud support for assistance.
->>
-> **The imported JSON file contains syntax errors.**
->>
->> Ensure that the JSON file is correctly formatted. You can use a JSON validator to check the file's validity before importing it into the wizard.
->>
-> **The SAP sources are not accessible from the Object Storage container.**
->>
->> Check that the Object Storage container is correctly configured and that the access permissions are appropriate. An Object Storage user with read rights is necessary for downloading the sources to your virtual machines.
->>
-> **The allocated memory parameters for the virtual machines are insufficient.**
->>
->> Increase the amount of RAM allocated to the virtual machines based on SAP's requirements for your configuration. Consult SAP documentation for recommendations on memory.
->>
-> **An error message indicates that an internal error occurred during installation, and I cannot start a new installation because a previous task is still in progress.**
->>
->> If an internal error occurs and the task status has not been correctly updated, please delete the task in question via our API.
->>
->> > [!api]
->> >
->> > @api {v1} /dedicatedCloud POST /dedicatedCloud/{serviceName}/sap/{taskId}
->>
->> This action will remove the task in error that is blocking new installations. Also, delete the virtual machines that were created by the failed installation task.
+/// details | The error message indicates that the requested configuration exceeds the capabilities of my datacenter.
+
+If you have recently deleted virtual machines to free up capacity within your datacenter, it may be that the capacity information has not yet been updated. Please wait a few minutes before trying again. If the problem persists, do not hesitate to contact OVHcloud support for assistance.
+
+///
+
+/// details | The imported JSON file contains syntax errors.
+
+Ensure that the JSON file is correctly formatted. You can use a JSON validator to check the file's validity before importing it into the wizard.
+
+///
+
+/// details | The SAP sources are not accessible from the Object Storage container.
+
+Check that the Object Storage container is correctly configured and that the access permissions are appropriate. An Object Storage user with read rights is necessary for downloading the sources to your virtual machines.
+
+///
+
+/// details | The allocated memory parameters for the virtual machines are insufficient.
+
+Increase the amount of RAM allocated to the virtual machines based on SAP's requirements for your configuration. Consult SAP documentation for recommendations on memory.
+
+///
+
+/// details | An error message indicates that an internal error occurred during installation, and I cannot start a new installation because a previous task is still in progress.
+
+If an internal error occurs and the task status has not been correctly updated, please delete the task in question via our API.
+
+> [!api]
+>
+> @api {v1} /dedicatedCloud POST /dedicatedCloud/{serviceName}/sap/{taskId}
+
+This action will remove the task in error that is blocking new installations. Also, delete the virtual machines that were created by the failed installation task.
+
+///
 
 ## Frequently Asked Questions (FAQ)
 
-> [!faq]
-> **Can I use a VMware on OVHcloud service other than the SAP HANA on Private Cloud range?**
->>
->> Although our SAP pre-installation wizard is optimized for the SAP HANA on Private Cloud range, it is possible to use a VMware on OVHcloud service from another range. However, we strongly recommend the SAP HANA on Private Cloud range for a solution specifically designed and certified to host SAP systems with an SAP HANA database.
->>
-> **Can I use my OVA/OVF virtual machine templates to deploy the SAP system?**
->>
->> You cannot currently use your OVA/OVF virtual machine templates to deploy your SAP system via our wizard.
->>
-> **Can I resume my installation if it failed?**
->>
->> In the event of an installation failure, you will not be able to resume the installation. You will need to delete the constructed SAP system and launch a new installation. If necessary, you can also contact [OVHcloud support](https://help.ovhcloud.com/csm?id=csm_get_help) for assistance.
->>
-> **Can I add an SAP application server to an existing SAP system?**
->>
->> The OVHcloud SAP pre-installation wizard does not support adding additional components to an existing SAP system.
+/// details | Can I use a VMware on OVHcloud service other than the SAP HANA on Private Cloud range?
+
+Although our SAP pre-installation wizard is optimized for the SAP HANA on Private Cloud range, it is possible to use a VMware on OVHcloud service from another range. However, we strongly recommend the SAP HANA on Private Cloud range for a solution specifically designed and certified to host SAP systems with an SAP HANA database.
+
+///
+
+/// details | Can I use my OVA/OVF virtual machine templates to deploy the SAP system?
+
+You cannot currently use your OVA/OVF virtual machine templates to deploy your SAP system via our wizard.
+
+///
+
+/// details | Can I resume my installation if it failed?
+
+In the event of an installation failure, you will not be able to resume the installation. You will need to delete the constructed SAP system and launch a new installation. If necessary, you can also contact [OVHcloud support](https://help.ovhcloud.com/csm?id=csm_get_help) for assistance.
+
+///
+
+/// details | Can I add an SAP application server to an existing SAP system?
+
+The OVHcloud SAP pre-installation wizard does not support adding additional components to an existing SAP system.
+
+///
 
 ## Go Further
 

@@ -21,7 +21,7 @@ updated: 2025-11-25
 
 ## Requisitos
 
-- Dispor de um serviço de e-mail externo ou da OVHcloud, tais como uma oferta [Zimbra](/links/web/zimbra), [Exchange](/links/web/emails), [E-mail Pro](/links/web/email-pro) ou MX Plan (via oferta MX Plan única ou incluída numa oferta de [alojamento web OVHcloud](/links/web/hosting)).
+- Dispor de um serviço de e-mail externo ou da OVHcloud, tais como uma oferta [Zimbra](/links/web/zimbra), [Exchange](/links/web/emails-exchange), [E-mail Pro](/links/web/email-pro) ou MX Plan (via oferta MX Plan única ou incluída numa oferta de [alojamento web OVHcloud](/links/web/hosting)).
 - Dispor das credenciais das contas de e-mail que pretende migrar (as contas de e-mail fonte).
 - Dispor das credenciais das contas de e-mail de destino.
 

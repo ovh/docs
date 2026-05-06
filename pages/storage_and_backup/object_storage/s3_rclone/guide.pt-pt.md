@@ -1,7 +1,7 @@
 ---
-title: Object Storage - Utilizar Object Storage com Rclone (EN)
-excerpt: Learn how to set up Rclone to synchronize your files to and from Object Storage
-updated: 2024-12-19
+title: Object Storage - Use Object Storage with Rclone
+excerpt: Learn how to set up Rclone to synchronize your files to and from Object Storage.
+updated: 2026-03-06
 ---
 
 ## Objective
@@ -20,14 +20,14 @@ updated: 2024-12-19
 ## Requirements
 
 - A bucket
-- A user and defined the required access rights on the bucket
+- A user with the required access rights on the bucket
 - Your Object Storage credentials (access_key and secret_access_key)
 
 See our [Getting started with Object Storage](/pages/storage_and_backup/object_storage/s3_getting_started_with_object_storage) guide.
 
 > [!primary]
 >
-> In order to identify your endpoint corresponding to your storage class, please refer to this guide: [Object Storage - Endpoints and Object Storage geoavailability](/pages/storage_and_backup/object_storage/s3_location).
+> To identify the endpoint for your storage class, refer to this guide: [Object Storage - Endpoints and Object Storage geoavailability](/pages/storage_and_backup/object_storage/s3_location).
 >
 
 ## Instructions
@@ -54,37 +54,37 @@ Rclone is now ready for use.
 List all buckets:
 
 ```bash
-$ rclone lsd <remote_name>:
+rclone lsd <remote_name>:
 ```
 
 Create a new bucket:
 
 ```bash
-$ rclone mkdir <remote_name>:mybucket
+rclone mkdir <remote_name>:<bucket_name>
 ```
 
 List the contents of a bucket:
 
 ```bash
-$ rclone ls <remote_name>:mybucket
+rclone ls <remote_name>:<bucket_name>
 ```
 
-Synchronise `/home/user/documents` to a bucket:
+Synchronise a local directory to a bucket:
 
 ```bash
-$ rclone sync /home/user/documents <remote_name>:mybucket
+rclone sync <source_directory> <remote_name>:<bucket_name>
 ```
 
-Copy a file `/home/user/file.txt` into a bucket:
+Copy a file into a bucket:
 
 ```bash
-$ rclone copy /home/user/file.txt <remote_name>:mybucket
+rclone copy <file_path> <remote_name>:<bucket_name>
 ```
 
-Download a file `file.txt` from a bucket:
+Download a file from a bucket:
 
 ```bash
-$ rclone copy <remote_name>:mybucket/file.txt fichier.txt
+rclone copy <remote_name>:<bucket_name>/<object_key> <destination_file_path>
 ```
 
 You will find on the official Rclone website a detailed documentation of the possible actions: [Official Rclone documentation](https://rclone.org/docs/).

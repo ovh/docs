@@ -27,8 +27,18 @@ Możesz utworzyć kopię zapasową instancji lub skonfigurować harmonogram, aby
 ## Wymagania początkowe
 
 - Posiadanie instancji [Public Cloud](/links/public-cloud/public-cloud) na Twoim koncie OVHcloud.
-- Dostęp do [Panelu client OVHcloud](/links/manager).
 - CLI OpenStack. Skorzystaj z naszego przewodnika "[Przygotowanie środowiska do korzystania z API OpenStack](/pages/public_cloud/public_cloud_cross_functional/prepare_the_environment_for_using_the_openstack_api)". (opcjonalnie)
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Ścieżka nawigacji:** `Public Cloud`{.action} > Wybierz projekt
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## W praktyce
 
@@ -52,7 +62,6 @@ Możesz utworzyć kopię zapasową instancji lub skonfigurować harmonogram, aby
 > [!tabs]
 > Przez Panelu Klienta OVHcloud
 >>
->> Zaloguj się do [Panelu Klienta OVHcloud](/links/manager), przejdź do sekcji `Public Cloud`{.action} i wybierz odpowiedni projekt Public Cloud.<br>
 >> Kliknij `Instancje`{.action} w lewym menu.<br>
 >> Na stronie instancji kliknij przycisk `...`{.action} obok instancji i wybierz `Utwórz kopię zapasową`{.action}.
 >>

@@ -1,7 +1,7 @@
 ---
 title: "Adicionar um registo DNS do tipo A para um domínio"
 excerpt: "Saiba como adicionar um registo DNS do tipo A numa zona DNS gerida na OVHcloud para o seu domínio"
-updated: 2025-05-12
+updated: 2026-03-24
 ---
 
 <style>
@@ -32,7 +32,17 @@ Deseja que o seu website esteja acessível através do seu nome de domínio? Par
 
 - Ter um [nome de domínio](/links/web/domains).
 - Ter uma zona DNS associada a este domínio na OVHcloud.
-- Ter acesso à [Área de Cliente OVHcloud](/links/manager), secção `Web Cloud`{.action}.
+
+<!-- CP-NAV-START:web-dns-zone -->
+---
+
+### Acesso à Área de Cliente OVHcloud
+
+- **Ligação direta:** [Zonas DNS](/links/control-panel/web-dns-zone)
+- **Caminho de navegação:** `Web Cloud`{.action} > `Zonas DNS`{.action} > Selecione o seu nome de domínio
+
+---
+<!-- CP-NAV-END:web-dns-zone -->
 
 ## Instruções
 
@@ -42,11 +52,31 @@ Deseja que o seu website esteja acessível através do seu nome de domínio? Par
 
 ### Adicionar um registo DNS do tipo A para um domínio
 
-1. Clique no menu `Zonas DNS`{.action} e escolha o domínio em causa.
-2. Na página que se abrir, clique no botão `Adicionar uma entrada`{.action}.
-3. Na janela que aparecer, selecione o campo de apontamento do tipo `A`{.action}.
-4. De seguida, introduza no campo `Alvo *` o endereço IP (por exemplo: `203.0.113.0`) do serviço em que se situa o seu website (alojamento web, servidor dedicado, VPS, etc.) e clique em `Seguinte`{.action}.
-5. Verifique o resumo e, em seguida, clique em `Validar`{.action}. Aguarde até **24** horas para que a propagação da adição na rede DNS seja plenamente efetiva.
+<!-- CP-STEPS-START:add-a-record-domain -->
+Clique nos separadores abaixo para ver cada um dos **5** passos.
+
+> [!tabs]
+> **Passo 1**
+>>
+>> Aceda à página [Zonas DNS](/links/control-panel/web-dns-zone) e escolha o domínio correspondente.
+>>
+>> ![DNS zones](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
+>>
+> **Passo 2**
+>>
+>> Clique no botão `Adicionar uma entrada`{.action}.
+>>
+> **Passo 3**
+>>
+>> Na janela que aparecer, selecione o campo de apontamento do tipo `A`{.action}.
+>>
+> **Passo 4**
+>>
+>> Introduza no campo `Alvo *` o endereço IP (por exemplo: `203.0.113.0`) do serviço em que se situa o seu website (alojamento web, servidor dedicado, VPS, etc.) e clique em `Seguinte`{.action}.
+>>
+> **Passo 5**
+>>
+>> Verifique o resumo e clique em `Validar`{.action}. Aguarde até **24** horas para que a propagação da adição na rede DNS seja plenamente efetiva.
 
 /// details | Clique aqui para mais informações.
 
@@ -59,14 +89,35 @@ Consulte os nossos guias detalhados:
 - [Alojamento web - Alterar um nome de domínio já associado a um alojamento](/pages/web_cloud/web_hosting/multisites_modify_domain).
 
 ///
+<!-- CP-STEPS-END:add-a-record-domain -->
 
 ### Adicionar um registo DNS do tipo A para o subdomínio de um domínio
 
-1. Clique no menu `Zonas DNS`{.action} e escolha o domínio em causa.
-2. Na página que se abrir, clique no botão `Adicionar uma entrada`{.action}.
-3. Na janela que aparecer, selecione o campo de apontamento do tipo `A`{.action}.
-4. De seguida, introduza no campo `Subdomínio` o subdomínio em causa (por exemplo: `www` para o subdomínio `www.domain.tld`) e, nos campos `Alvo *`, o endereço IP (por exemplo: `203.0.113.0`) do serviço em que se situa o seu website (alojamento web, servidor dedicado, VPS, etc.). Por fim, clique em `Seguinte`{.action}.
-5. Verifique o resumo e, em seguida, clique em `Validar`{.action}. Aguarde até **24** horas para que a propagação da adição na rede DNS seja plenamente efetiva.
+<!-- CP-STEPS-START:add-a-record-subdomain -->
+Clique nos separadores abaixo para ver cada um dos **5** passos.
+
+> [!tabs]
+> **Passo 1**
+>>
+>> Aceda à página [Zonas DNS](/links/control-panel/web-dns-zone) e escolha o domínio correspondente.
+>>
+>> ![DNS zones](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
+>>
+> **Passo 2**
+>>
+>> Clique no botão `Adicionar uma entrada`{.action}.
+>>
+> **Passo 3**
+>>
+>> Na janela que aparecer, selecione o campo de apontamento do tipo `A`{.action}.
+>>
+> **Passo 4**
+>>
+>> Introduza no campo `Subdomínio` o subdomínio em causa (por exemplo: `www` para o subdomínio `www.domain.tld`) e, no campo `Alvo *`, o endereço IP (por exemplo: `203.0.113.0`) do serviço em que se situa o seu website (alojamento web, servidor dedicado, VPS, etc.). Clique em `Seguinte`{.action}.
+>>
+> **Passo 5**
+>>
+>> Verifique o resumo e clique em `Validar`{.action}. Aguarde até **24** horas para que a propagação da adição na rede DNS seja plenamente efetiva.
 
 /// details | Clique aqui para mais informações.
 
@@ -80,6 +131,7 @@ Consulte os nossos guias detalhados:
 - [Alojamento web - Alterar um nome de domínio já associado a um alojamento](/pages/web_cloud/web_hosting/multisites_modify_domain).
 
 ///
+<!-- CP-STEPS-END:add-a-record-subdomain -->
 
 ## Quer saber mais?
 

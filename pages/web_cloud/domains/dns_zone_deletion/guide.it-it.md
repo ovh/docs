@@ -1,7 +1,7 @@
 ---
 title: "Come eliminare una zona DNS OVHcloud?"
 excerpt: "Questa guida ti mostra come eliminare una zona DNS per il tuo dominio dallo Spazio Cliente OVHcloud"
-updated: 2025-10-14
+updated: 2026-03-11
 ---
 
 ## Obiettivo
@@ -22,15 +22,25 @@ Ad esempio, una zona DNS per un dominio può essere eliminata in OVHcloud nei se
 
 > [!primary]
 >
-> La creazione / modifica / eliminazione di una zona DNS dallo [Spazio Cliente OVHcloud](/links/manager) è totalmente gratuita.
+> La creazione / modifica / eliminazione di una zona DNS dallo [Spazio Cliente OVHcloud](/links/control-panel/web-dns-zone) è totalmente gratuita.
 
 **Questa guida ti mostra come eliminare una zona DNS per un dominio dallo Spazio Cliente OVHcloud.**
 
 ## Prerequisiti
 
-- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager).
 - Disporre di una zona DNS nello Spazio Cliente.
 - Disporre di diritti sufficienti sulla zona DNS da eliminare. Per maggiori informazioni consulta la nostra guida "[Gestire i contatti dei propri servizi](/pages/account_and_service_management/account_information/managing_contacts)".
+
+<!-- CP-NAV-START:billing-services -->
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [Le mie offerte e servizi](/links/control-panel/billing-services)
+- **Percorso di navigazione:** Clicca sul tuo nome in alto a destra > `Le mie offerte e servizi`{.action}
+
+---
+<!-- CP-NAV-END:billing-services -->
 
 > [!primary]
 >
@@ -48,35 +58,31 @@ Ad esempio, una zona DNS per un dominio può essere eliminata in OVHcloud nei se
 >
 > Se la zona DNS attiva per il tuo nome di dominio è quella presente in OVHcloud e vuoi sostituirla con una zona DNS ospitata altrove, consulta la nostra guida "[Modificare i server DNS di un nome di dominio OVHcloud](/pages/web_cloud/domains/dns_server_edit)" prima di effettuare qualsiasi eliminazione di zona DNS.
 
-Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **4** passi.
+<!-- CP-STEPS-START:delete-dns-zone -->
+Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **3** passi.
 
 > [!tabs]
 > **Passaggio 1**
 >>
->> Accedi al tuo [Spazio Cliente OVHcloud](/links/manager), clicca sul tuo nome nell'angolo in alto a destra e poi su `Le mie offerte e servizi`{.action}.
->>
->> ![Le mie offerte e servizi](/pages/assets/screens/control_panel/product-selection/right-menu/my-solutions-and-services.png){.thumbnail}
->>
-> **Passaggio 2**
->>
->> Nella tabella presente sulla pagina visualizzata, clicca sul pulsante `...`{.action} a destra della zona DNS che desideri annullare, quindi su `Disattivare il servizio`{.action}.
+>> Accedi alla pagina [Le mie offerte e servizi](/links/control-panel/billing-services), poi clicca sul pulsante `...`{.action} a destra della zona DNS che desideri annullare, quindi su `Disattivare il servizio`{.action}.
 >>
 >> ![Annulla](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/dns-zone-cancel-my-subscription.png){.thumbnail}
 >>
-> **Passaggio 3**
+> **Passaggio 2**
 >>
 >> Nella nuova pagina che appare, specifica il motivo della tua richiesta di annullamento e il tuo progetto, quindi clicca su `Conferma`{.action}.
 >>
 >> ![Annulla il servizio](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/dns-zone-delete-your-service.png){.thumbnail}
 >>
-> **Passaggio 4**
+> **Passaggio 3**
 >>
 >> L'annullamento del tuo servizio avverrà nella **Data di entrata in vigore** indicata nella tabella "Gestione delle mie offerte e servizi". Se non vedi apparire lo stato "Disattivazione programmata", aggiorna la pagina.
 >>
 >> > [!primary]
 >> >
->> > Se desideri eliminare immediatamente una zona DNS dal tuo [Spazio Cliente OVHcloud](/links/manager), esegui i 4 passi per richiedere l'annullamento alla data di entrata in vigore, quindi contatta il supporto OVHcloud creando un ticket di assistenza dal [centro assistenza](https://help.ovhcloud.com/csm?id=csm_get_help).
+>> > Se desideri eliminare immediatamente una zona DNS dal tuo Spazio Cliente OVHcloud, esegui i 3 passi per richiedere l'annullamento alla data di entrata in vigore, quindi contatta il supporto OVHcloud creando un ticket di assistenza dal [centro assistenza](/links/support-contact).
 >> > Nella richiesta specifica la zona DNS interessata e dichiara chiaramente il tuo desiderio di eliminarla immediatamente senza attendere la data di entrata in vigore.
+<!-- CP-STEPS-END:delete-dns-zone -->
 
 ## Per saperne di più
 

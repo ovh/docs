@@ -13,11 +13,21 @@ Ce guide a pour but de vous aider à configurer et à utiliser OVHcloud Object S
 ## Prérequis
 
 - Un conteneur/bucket OVHcloud Object Storage.
-- ëtre connecté à [l'espace client OVHcloud](/links/manager)
 - Un utilisateur avec les droits d'accès requis sur le bucket.
 - Vos identifiants Object Storage (`access_key` et `secret_access_key`).
 
 Consultez notre guide [Object Storage - Premiers pas avec Object Storage](/pages/storage_and_backup/object_storage/s3_getting_started_with_object_storage).
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Projets Public Cloud](/links/control-panel/publiccloud-projects)
+- **Pour accéder à vos services :** `Public Cloud`{.action} > Sélectionnez votre projet
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## En pratique
 

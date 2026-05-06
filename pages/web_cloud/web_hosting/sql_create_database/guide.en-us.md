@@ -1,7 +1,7 @@
 ---
 title: "Creating a database on your web hosting plan"
 excerpt: "Find out how to create a database on your OVHcloud web hosting plan"
-updated: 2025-10-08
+updated: 2026-04-01
 ---
 
 ## Objective
@@ -14,19 +14,42 @@ A database is used to store dynamic elements (connection data, user data, displa
 
 - You have an [OVHcloud web hosting plan](/links/web/hosting) that includes at least one database.
 - You have a database available for creation from the databases included in your web hosting plan. If required, you can add [Start SQL](/links/web/hosting-options-startsql) databases to your web hosting plan.
-- You have access to the [OVHcloud Control Panel](/links/manager) with the [necessary permissions](/pages/account_and_service_management/account_information/managing_contacts) to manage your web hosting plan.
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Hosting plans](/links/control-panel/web-hosting)
+- **Navigation path:** `Web Cloud`{.action} > `Hosting plans`{.action} > Select your web hosting plan
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## Instructions
 
-### Step 1 - Access the web hosting database management tab
+### 1 - Access the web hosting database management tab
 
-Log in to your [OVHcloud Control Panel](/links/manager) and go to the `Web Cloud`{.action} section. Click `Hosting plans`{.action} in the left-hand column, select the hosting plan on which you want to create a database, then click on the `Databases`{.action} tab.
+<!-- CP-STEPS-START:access-databases-tab -->
+Click on the tabs below to view each of the **2** steps.
 
-![Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases.png){.thumbnail}
-
-The table in this section contains all of the databases created with your web hosting plan.
-
-![databasecreation](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/tab.png){.thumbnail}
+> [!tabs]
+> **Step 1**
+>>
+>> Go to the [Hosting plans](/links/control-panel/web-hosting) page, then select the web hosting plan concerned.
+>>
+>> ![Selecting a web hosting plan in the OVHcloud Control Panel](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Step 2**
+>>
+>> On the page that appears, click on the `Databases`{.action} tab.
+>>
+>> ![Databases tab of the web hosting plan](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases.png){.thumbnail}
+>>
+>> The table in this section contains all of the databases created with your web hosting plan.
+>>
+>> ![List of web hosting plan databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/tab.png){.thumbnail}
+<!-- CP-STEPS-END:access-databases-tab -->
 
 Databases in the table can have several different types:
 
@@ -40,40 +63,57 @@ Databases in the table can have several different types:
 > To quickly duplicate the content of a "**Included - Discontinued**" or "**Optional - Discontinued**" database in a new database that has not yet been scheduled for obsolescence, please read our guide on "[Duplicating the content of an OVHcloud database in another](/pages/web_cloud/web_hosting/copy_database)".
 >
 
-### Step 2 - Create the database
+### 2 - Create the database
 
-There are two ways to create a new database:
+<!-- CP-STEPS-START:create-database -->
+To create a database, click on the tabs below to view each of the **5** steps.
 
-- **If you have not yet created a database**: Click the `Create a database`{.action} button.
-
-- **If you have already created a database**: Click the `Actions`{.action} button, then `Create a database`{.action}.
-
-In the window that opens, select the following information:
-
-![database-creation-step1](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/create-a-database-step-1.png){.thumbnail}
-
-|Information|Description|  
-|---|---|
-|**Select the type of database**|Choose the size of the database. This size refers to the space available to your database for storing data.|
-|**Select the database engine to be added**|Choose the engine you want the database to use. Currently, the databases included in your [OVHcloud web hosting plan](/links/web/hosting) are only available with the MySQL engine.|
-|**Select the version of the database to be added**|Choose the version used by the database engine. Make sure your website is compatible with the version you have chosen.|
-
-> [!primary]
->
-> Engine version update for a database already created is currently unavailable.
->
-
-Click on `Next`{.action}.
-
-A new window will appear:
-
-![database-creation-step2](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/create-a-database-step-2.png){.thumbnail}
-
-|Information|Description|
-|---|---|
-|**Username**|Enter a user name that will be associated with your database (6 characters maximum in addition to the user prefix already entered).|
-|**Password**|Enter a password for this user using the *criteria* listed below.|
-|**Confirmation**|Enter the password for this user again.|
+> [!tabs]
+> **Step 1**
+>>
+>> Go to the [Hosting plans](/links/control-panel/web-hosting) page, then select the web hosting plan concerned.
+>>
+> **Step 2**
+>>
+>> On the page that appears, click on the `Databases`{.action} tab, then:
+>>
+>> - **If you have not yet created a database**: click the `Create a database`{.action} button.
+>> - **If you have already created a database**: click the `Actions`{.action} button, then `Create a database`{.action}.
+>>
+> **Step 3**
+>>
+>> In the window that opens, select the following information, then click `Next`{.action}:
+>>
+>> ![Step 1 of database creation: choosing type and engine](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/create-a-database-step-1.png){.thumbnail}
+>>
+>> |Information|Description|
+>> |---|---|
+>> |**Select the type of database**|Choose the size of the database. This size refers to the space available to your database for storing data.|
+>> |**Select the database engine to be added**|Choose the engine you want the database to use. Currently, the databases included in your [OVHcloud web hosting plan](/links/web/hosting) are only available with the MySQL engine.|
+>> |**Select the version of the database to be added**|Choose the version used by the database engine. Make sure your website is compatible with the version you have chosen.|
+>>
+> **Step 4**
+>>
+>> Fill in the required information, then click `Next`{.action}:
+>>
+>> ![Step 2 of database creation: choosing username and password](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/create-a-database-step-2.png){.thumbnail}
+>>
+>> |Information|Description|
+>> |---|---|
+>> |**Username**|Enter a user name that will be associated with your database (6 characters maximum in addition to the user prefix already entered). The database name will be identical to the username.|
+>> |**Password**|Enter a password for this user using the *criteria* listed below.|
+>> |**Confirmation**|Enter the password for this user again.|
+>>
+> **Step 5**
+>>
+>> Verify that all information displayed in the summary is correct. If this is the case, click `Confirm`{.action} to launch the creation of your database.
+>>
+>> ![Step 3 of database creation: confirmation summary](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/create-a-database-step-3.png){.thumbnail}
+>>
+>> > [!primary]
+>> >
+>> > Engine version update for a database already created is currently unavailable.
+<!-- CP-STEPS-END:create-database -->
 
 > [!primary]
 >
@@ -84,38 +124,26 @@ A new window will appear:
 > - Set a different password for each of your services.
 > - Create a password that contains no personal information (surname, first name, date of birth, etc.).
 > - Renew your password regularly.
-> - Do not kepp written records of your password or sending it to other people (including via email).
+> - Do not keep written records of your password or sending it to other people (including via email).
 > - Do not save your password in your web browser, even if your browser offers to do so.
->
 
 > [!warning]
 >
 > Remember that if you change a database password, all applications that access the database must be updated accordingly.
->
 
-Fill in the required information and click `Next`{.action}.
-
-![database-creation-step3](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/create-a-database-step-3.png){.thumbnail}
-
-Verify that all information displayed in the summary is correct. If this is the case, click `Confirm`{.action} to launch the creation of your database.
-
-> [!primary]
->
-> When you click `Confirm`{.action}, it may take up to **15 minutes** to create the database. Reload your [OVHcloud Control Panel](/links/manager) webpage if the database does not automatically appear in the table listing your databases.
->
+The creation of the database can take up to **15 minutes**. Reload your [OVHcloud Control Panel](/links/manager) webpage if the database does not automatically appear in the table listing your databases.
 
 Repeat this process as needed in order to create several databases (the total number of databases is limited by your web hosting plan).
 
 > [!warning]
 >
 > Once the database creation is validated, the user name and database name cannot be changed.
->
 
-### Step 3 - Manage your database <a name="step3"></a>
+### 3 - Manage your database <a name="step3"></a>
 
 > [!warning]
 >
-> This guide does not replace the support of a professional, such as a web developer. We recommend contacting the a [specialist provider](/links/partner) or your solution’s software publisher if you encounter any difficulties. OVHcloud cannot provide you with technical support in this regard. You can find more information in the [Go further](#go-further) section of this guide.
+> This guide does not replace the support of a professional, such as a web developer. We recommend contacting a [specialist provider](/links/partner) or your solution's software publisher if you encounter any difficulties. OVHcloud cannot provide you with technical support in this regard. You can find more information in the [Go further](#go-further) section of this guide.
 >
 
 You can now use your database. To do this, you will need your login details:
@@ -131,16 +159,25 @@ You can now use your database. To do this, you will need your login details:
 
 This information is essential for your website to connect to the database.
 
-If you need to retrieve this connection information, log in to your [OVHcloud Control Panel](/links/manager) and go to the `Web Cloud`{.action} section. Click `Hosting plans`{.action} in the left-hand column, select the hosting plan on which you want to retrieve the information for connecting to your database, then click on the `Databases`{.action} tab.
+<!-- CP-STEPS-START:get-connection-info -->
+If you need to retrieve this connection information, click on the tabs below to view each of the **2** steps.
 
-You will find the information required to connect to your database in the table that appears. This excludes passwords for security reasons.
+> [!tabs]
+> **Step 1**
+>>
+>> Go to the [Hosting plans](/links/control-panel/web-hosting) page, then select the web hosting plan concerned.
+>>
+> **Step 2**
+>>
+>> On the page that appears, click on the `Databases`{.action} tab. You will find the information required to connect to your database in the table that appears. This excludes passwords for security reasons.
+<!-- CP-STEPS-END:get-connection-info -->
 
 > [!warning]
 >
 > If you do not have the password for your database connection, please read our guide on [Changing your database password](/pages/web_cloud/web_hosting/sql_change_password).
 >
 
-Depending on the software used, this connection may need to be configured manually, or via an interface generated by the website’s configuration interface (backend). Since this procedure concerns your website’s configuration, and not your OVHcloud hosting plan, we recommend that you consult the resources available online, or contact a [specialist provider](/links/partner).
+Depending on the software used, this connection may need to be configured manually, or via an interface generated by the website's configuration interface (backend). Since this procedure concerns your website's configuration, and not your OVHcloud hosting plan, we recommend that you consult the resources available online, or contact a [specialist provider](/links/partner).
 
 > [!primary]
 >
@@ -149,21 +186,53 @@ Depending on the software used, this connection may need to be configured manual
 
 #### Accessing the phpMyAdmin interface
 
-OVHcloud provides an online database management tool, phpMyAdmin. To find the access link for this application, log in to your [OVHcloud Control Panel](/links/manager) and go to the `Web Cloud`{.action} section. Click `Hosting plans`{.action} in the left-hand column, choose the hosting plan concerned, then click on the `Databases`{.action} tab.
+<!-- CP-STEPS-START:access-phpmyadmin -->
+OVHcloud provides an online database management tool, phpMyAdmin. To find the access link for this application, click on the tabs below to view each of the **4** steps.
 
-In the table on this page, click on the `...`{.action} button to the right of the database concerned, then click on `Go to phpMyAdmin`{.action} in the dropdown menu.
-
-![phpMyAdmin Go Login](/pages/assets/screens/other/web-tools/phpmyadmin/pma-interface-login.png){.thumbnail}
-
-Enter the information for accessing your database, then click `Log in`{.action}.
-
-If you need any further information, please refer to [step 3](#step3) of this guide to find the information required to connect to your database.
+> [!tabs]
+> **Step 1**
+>>
+>> Go to the [Hosting plans](/links/control-panel/web-hosting) page, then select the web hosting plan concerned.
+>>
+> **Step 2**
+>>
+>> On the page that appears, click on the `Databases`{.action} tab.
+>>
+> **Step 3**
+>>
+>> In the table that appears, click on the `...`{.action} button to the right of the database concerned, then click on `Go to phpMyAdmin`{.action} in the dropdown menu.
+>>
+> **Step 4**
+>>
+>> Enter the information for accessing your database, then click `Log in`{.action}.
+>>
+>> ![phpMyAdmin login page](/pages/assets/screens/other/web-tools/phpmyadmin/pma-interface-login.png){.thumbnail}
+>>
+>> If you need any further information, please refer to [part 3](#step3) of this guide to find the information required to connect to your database.
+<!-- CP-STEPS-END:access-phpmyadmin -->
 
 #### Using database backups
 
 For each web hosting database, snapshots are created automatically every day (up to a maximum of 32). This means you can quickly restore an earlier version of a database from the OVHcloud Control Panel.
 
-To check which snapshots are available, and when they were created, log in to your [OVHcloud Control Panel](/links/manager), then go to the `Web Cloud`{.action} section. Click `Hosting plans`{.action} in the left-hand column, choose the hosting plan concerned, then click on the `Databases`{.action} tab. In the table that appears, click the symbol next to the green circle. You can also download each backup of a database from here. You can find more information on this in our guide on "[Backing up your web hosting plan database](/pages/web_cloud/web_hosting/sql_database_export)".
+<!-- CP-STEPS-START:check-database-snapshots -->
+To check which snapshots are available, and when they were created, click on the tabs below to view each of the **3** steps.
+
+> [!tabs]
+> **Step 1**
+>>
+>> Go to the [Hosting plans](/links/control-panel/web-hosting) page, then select the web hosting plan concerned.
+>>
+> **Step 2**
+>>
+>> On the page that appears, click on the `Databases`{.action} tab.
+>>
+> **Step 3**
+>>
+>> In the table that appears, click the symbol next to the green circle. You can also download each backup of a database from here.
+<!-- CP-STEPS-END:check-database-snapshots -->
+
+You can find more information on this in our guide on "[Backing up your web hosting plan database](/pages/web_cloud/web_hosting/sql_database_export)".
 
 #### Understanding common issues
 
@@ -187,11 +256,11 @@ Once the database has been optimised (purged), recalculate its quota in the OVHc
 
 [Changing the password for a web hosting plan database](/pages/web_cloud/web_hosting/sql_change_password)
 
-[Retrieving the backup of a Web Hosting plan’s database](/pages/web_cloud/web_hosting/sql_database_export)
+[Retrieving the backup of a Web Hosting plan's database](/pages/web_cloud/web_hosting/sql_database_export)
 
 [Importing a backup into a Web Hosting plan database](/pages/web_cloud/web_hosting/sql_importing_mysql_database)
 
-[Optimising your website’s performance](/pages/web_cloud/web_hosting/optimise_your_website_performance)
+[Optimising your website's performance](/pages/web_cloud/web_hosting/optimise_your_website_performance)
 
 For specialised services (SEO, development, etc.), contact [OVHcloud partners](/links/partner).
 

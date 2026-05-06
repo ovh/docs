@@ -31,19 +31,26 @@ Konta E-mail Pro mogą być skonfigurowane w jednym z kompatybilnych programów 
 - Instalacja aplikacji Outlook na urządzeniu przenośnym [iOS](https://apps.apple.com/app/microsoft-outlook/id951937596).
 - Dane do logowania do konta e-mail, które chcesz skonfigurować.
 
+<!-- CP-NAV-START:web-email-pro -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [E-mail Pro](/links/control-panel/web-email-pro)
+- **Ścieżka nawigacji:** `Web Cloud`{.action} > `E-mail Pro`{.action} > Wybierz platformę
+
+---
+<!-- CP-NAV-END:web-email-pro -->
+
 ## W praktyce
 
-### Dodaj konto <a name="add-account"></a>
+### Dodaj konto <a name=”add-account”></a>
 
 > [!primary]
 >
 > W przewodniku używamy oznaczenia serwera: pro?.mail.ovh.net. Zastąp “?” cyfrą oznaczającą serwer powiązany z Twoją usługą E-mail Pro.
 >
-> 1. Zaloguj się do [Panelu klienta OVHcloud](/links/manager).
-> 1. Przejdź do sekcji `Web Cloud`{.action}.
-> 1. Kliknij `Email Pro`{.action}.
-> 1. Wybierz odpowiednią platformę.
-> 1. Nazwa serwera jest widoczna w ramce **Logowanie** w zakładce `Informacje ogólne`{.action}.
+> Kliknij [ten link](/links/control-panel/web-email-pro), aby uzyskać dostęp do sekcji `E-mail Pro`{.action}. Nazwa serwera jest widoczna w ramce **Logowanie** w zakładce `Informacje ogólne`{.action}.
 >
 
 - **Podczas pierwszego uruchomienia aplikacji** : wyświetli się asystent konfiguracji, po czym kliknij `Dodaj konto`{.action}.
@@ -53,7 +60,7 @@ Konta E-mail Pro mogą być skonfigurowane w jednym z kompatybilnych programów 
 - **Jeśli konto zostało już skonfigurowane**:
     1. Stuknij okrąg zawierający inicjały przeglądanego konta e-mail lub ikonę domu " &#8962;" w lewym górnym rogu ekranu.
     2. Stuknij koło zębate " &#9881;" w lewym dolnym rogu ekranu.
-    3. Następnie kliknij `Konta {.action} w menu **Ustawienia**.
+    3. Następnie kliknij `Konta`{.action} w menu **Ustawienia**.
     4. Kliknij `Dodaj konto`{.action}.
     5. Naciśnij `Konto pocztowe`{.action}.
 

@@ -1,5 +1,5 @@
 ---
-title: MongoDB Discovery - Getting started
+title: Premiers pas avec Public Cloud Databases pour MongoDB (EN)
 excerpt: Get started with MongoDB Free Tier through the OVHcloud Control Panel
 updated: 2024-02-05
 ---
@@ -12,12 +12,22 @@ updated: 2024-02-05
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](/links/manager)
 - A [Public Cloud project](/links/public-cloud/public-cloud) in your OVHcloud account
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Navigation path:** `Public Cloud`{.action} > Select your project
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## Instructions
 
-Log in to your [OVHcloud Control Panel](/links/manager) and switch to the `Public Cloud`{.action} section. After selecting your Public Cloud project, click on `Databases`{.action} in the left-hand navigation bar under **Databases & Analytics**.
+Click on `Databases`{.action} in the left-hand navigation bar under **Databases & Analytics**.
 
 Click the `Create a database instance`{.action} button (click `Create a service`{.action} if your project already contains databases).
 

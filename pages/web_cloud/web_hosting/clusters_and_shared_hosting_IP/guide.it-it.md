@@ -1,8 +1,22 @@
 ---
 title: "Hosting Web - Lista degli indirizzi IP per cluster"
-excerpt: "Questa guida ti mostra comme tutti gli indirizzi IP disponibili con i nostri hosting Web"
-updated: 2026-01-07
+excerpt: "Questa guida elenca tutti gli indirizzi IP disponibili con i nostri hosting Web"
+updated: 2026-02-23
 ---
+
+<style>
+details>summary {
+    color:rgb(33, 153, 232) !important;
+    cursor: pointer;
+}
+details>summary::before {
+    content:'\25B6';
+    padding-right:1ch;
+}
+details[open]>summary::before {
+    content:'\25BC';
+}
+</style>
 
 ## Obiettivo
 
@@ -12,7 +26,7 @@ In questa guida sono elencati tutti gli indirizzi IP degli hosting Web OVHcloud.
 - opzioni (CDN, SSL a pagamento, SSL gratuito, ecc.)
 - Paese
 
-**Questa guida ti mostra comme tutti gli indirizzi IP disponibili con i nostri hosting Web.**
+**Questa guida elenca tutti gli indirizzi IP disponibili con i nostri hosting Web.**
 
 > [!primary]
 >
@@ -23,32 +37,39 @@ In questa guida sono elencati tutti gli indirizzi IP degli hosting Web OVHcloud.
 ## Prerequisiti
 
 - Disporre di un piano di [hosting Web](/links/web/hosting) attivo
-- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [Hosting plans](/links/control-panel/web-hosting)
+- **Percorso di navigazione:** `Web Cloud`{.action} > `Hosting`{.action} > Seleziona il tuo hosting web
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## Procedura
 
-Per conoscere il cluster di hosting Web su cui si trova il tuo servizio, clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **3** passi.
+<!-- CP-STEPS-START:instructions-find-cluster -->
+Per conoscere il cluster di hosting Web su cui si trova il tuo servizio, clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **2** passi.
 
 > [!tabs]
 > **Passaggio 1**
 >>
->> Accedi allo [Spazio Cliente OVHcloud](/links/manager) e clicca su `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Passaggio 2**
->>
->> Clicca sul menu `Hosting`{.action} e seleziona l’hosting Web interessato.
+>> Accedi alla pagina [Hosting plans](/links/control-panel/web-hosting), poi seleziona l'hosting Web interessato.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Passaggio 3**
+> **Passaggio 2**
 >>
 >> Nel riquadro **Informazioni generali** della pagina che appare, recupera il numero del cluster sotto la dicitura **Cluster** (3 cifre comprese tra `0` e `9`).
 >>
 >> ![Numeri del cluster e del filer](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-cluster-and-filer.png){.thumbnail}
+<!-- CP-STEPS-END:instructions-find-cluster -->
 
-### Cluster 024
+**Fai clic qui sotto sul numero del cluster in cui si trova il tuo hosting web per visualizzare gli indirizzi IP corrispondenti.**
+
+/// details | Cluster 024
 
 Qui di seguito trovi gli indirizzi IP del **cluster** per ciascun Paese (per la geolocalizzazione):
 
@@ -80,27 +101,9 @@ Se hai bisogno dell’indirizzo IP del **gateway di uscita** del tuo hosting, è
 91.134.248.230
 ```
 
-### Cluster 051
+///
 
-Qui di seguito trovi gli indirizzi IP del **cluster** per ciascun Paese (per la geolocalizzazione):
-
-|Paese|Codice Paese|IPv4|IPv6|
-|---|---|----|---|
-|Canada|CA|51.161.122.78|2607:5300:202:0:0::51|
-
-Se il **Shared CDN** è attivo sul tuo hosting, devi utilizzare questo indirizzo IP:
-
-```bash
-46.105.204.51
-```
-
-Se hai bisogno dell’indirizzo IP del **gateway di uscita** del tuo hosting, è necessario utilizzare questo indirizzo IP:
-
-```bash
-51.161.94.36
-```
-
-### Cluster 100
+/// details | Cluster 100
 
 Qui di seguito trovi gli indirizzi IP del **cluster** per ciascun Paese (per la geolocalizzazione):
 
@@ -132,7 +135,9 @@ Se hai bisogno dell’indirizzo IP del **gateway di uscita** del tuo hosting, è
 54.36.142.130
 ```
 
-### Cluster 102
+///
+
+/// details | Cluster 102
 
 Qui di seguito trovi gli indirizzi IP del **cluster** per ciascun Paese (per la geolocalizzazione):
 
@@ -163,7 +168,9 @@ Se hai bisogno dell’indirizzo IP del **gateway di uscita** del tuo hosting, è
 5.39.29.130
 ```
 
-### Cluster 103
+///
+
+/// details | Cluster 103
 
 Qui di seguito trovi gli indirizzi IP del **cluster** per ciascun Paese (per la geolocalizzazione):
 
@@ -194,7 +201,9 @@ Se hai bisogno dell’indirizzo IP del **gateway di uscita** del tuo hosting, è
 5.135.52.162
 ```
 
-### Cluster 105
+///
+
+/// details | Cluster 105
 
 Qui di seguito trovi gli indirizzi IP del **cluster** per ciascun Paese (per la geolocalizzazione):
 
@@ -225,7 +234,9 @@ Se hai bisogno dell’indirizzo IP del **gateway di uscita** del tuo hosting, è
 5.135.37.162
 ```
 
-### Cluster 106
+///
+
+/// details | Cluster 106
 
 Qui di seguito trovi gli indirizzi IP del **cluster** per ciascun Paese (per la geolocalizzazione):
 
@@ -256,7 +267,9 @@ Se hai bisogno dell’indirizzo IP del **gateway di uscita** del tuo hosting, è
 5.135.47.98
 ```
 
-### Cluster 107
+///
+
+/// details | Cluster 107
 
 Qui di seguito trovi gli indirizzi IP del **cluster** per ciascun Paese (per la geolocalizzazione):
 
@@ -287,7 +300,9 @@ Se hai bisogno dell’indirizzo IP del **gateway di uscita** del tuo hosting, è
 5.135.52.18
 ```
 
-### Cluster 110
+///
+
+/// details | Cluster 110
 
 Qui di seguito trovi gli indirizzi IP del **cluster** per ciascun Paese (per la geolocalizzazione):
 
@@ -318,7 +333,9 @@ Se hai bisogno dell’indirizzo IP del **gateway di uscita** del tuo hosting, è
 5.135.39.194
 ```
 
-### Cluster 111
+///
+
+/// details | Cluster 111
 
 Qui di seguito trovi gli indirizzi IP del **cluster** per ciascun Paese (per la geolocalizzazione):
 
@@ -349,7 +366,9 @@ Se hai bisogno dell’indirizzo IP del **gateway di uscita** del tuo hosting, è
 5.135.38.50
 ```
 
-### Cluster 112
+///
+
+/// details | Cluster 112
 
 Qui di seguito trovi gli indirizzi IP del **cluster** per ciascun Paese (per la geolocalizzazione):
 
@@ -380,7 +399,9 @@ Se hai bisogno dell’indirizzo IP del **gateway di uscita** del tuo hosting, è
 5.39.53.162
 ```
 
-### Cluster 113
+///
+
+/// details | Cluster 113
 
 Qui di seguito trovi gli indirizzi IP del **cluster** per ciascun Paese (per la geolocalizzazione):
 
@@ -411,7 +432,9 @@ Se hai bisogno dell’indirizzo IP del **gateway di uscita** del tuo hosting, è
 5.135.39.18
 ```
 
-### Cluster 114
+///
+
+/// details | Cluster 114
 
 Qui di seguito trovi gli indirizzi IP del **cluster** per ciascun Paese (per la geolocalizzazione):
 
@@ -442,7 +465,9 @@ Se hai bisogno dell’indirizzo IP del **gateway di uscita** del tuo hosting, è
 5.135.42.162
 ```
 
-### Cluster 115
+///
+
+/// details | Cluster 115
 
 Qui di seguito trovi gli indirizzi IP del **cluster** per ciascun Paese (per la geolocalizzazione):
 
@@ -473,7 +498,9 @@ Se hai bisogno dell’indirizzo IP del **gateway di uscita** del tuo hosting, è
 5.135.41.162
 ```
 
-### Cluster 117
+///
+
+/// details | Cluster 117
 
 Qui di seguito trovi gli indirizzi IP del **cluster** per ciascun Paese (per la geolocalizzazione):
 
@@ -504,7 +531,9 @@ Se hai bisogno dell’indirizzo IP del **gateway di uscita** del tuo hosting, è
 5.135.50.34
 ```
 
-### Cluster 120
+///
+
+/// details | Cluster 120
 
 Qui di seguito trovi gli indirizzi IP del **cluster** per ciascun Paese (per la geolocalizzazione):
 
@@ -536,7 +565,9 @@ Se hai bisogno dell’indirizzo IP del **gateway di uscita** del tuo hosting, è
 5.135.48.162
 ```
 
-### Cluster 121
+///
+
+/// details | Cluster 121
 
 Qui di seguito trovi gli indirizzi IP del **cluster** per ciascun Paese (per la geolocalizzazione):
 
@@ -568,7 +599,9 @@ Se hai bisogno dell’indirizzo IP del **gateway di uscita** del tuo hosting, è
 5.135.48.114
 ```
 
-### Cluster 123
+///
+
+/// details | Cluster 123
 
 Qui di seguito trovi gli indirizzi IP del **cluster** per ciascun Paese (per la geolocalizzazione):
 
@@ -600,7 +633,9 @@ Se hai bisogno dell’indirizzo IP del **gateway di uscita** del tuo hosting, è
 5.135.41.82
 ```
 
-### Cluster 126
+///
+
+/// details | Cluster 126
 
 Qui di seguito trovi gli indirizzi IP del **cluster** per ciascun Paese (per la geolocalizzazione):
 
@@ -632,7 +667,9 @@ Se hai bisogno dell’indirizzo IP del **gateway di uscita** del tuo hosting, è
 5.135.42.226
 ```
 
-### Cluster 127
+///
+
+/// details | Cluster 127
 
 Qui di seguito trovi gli indirizzi IP del **cluster** per ciascun Paese (per la geolocalizzazione):
 
@@ -664,7 +701,9 @@ Se hai bisogno dell’indirizzo IP del **gateway di uscita** del tuo hosting, è
 5.135.54.114
 ```
 
-### Cluster 128
+///
+
+/// details | Cluster 128
 
 Qui di seguito trovi gli indirizzi IP del **cluster** per ciascun Paese (per la geolocalizzazione):
 
@@ -696,7 +735,9 @@ Se hai bisogno dell’indirizzo IP del **gateway di uscita** del tuo hosting, è
 5.135.37.210
 ```
 
-### Cluster 129
+///
+
+/// details | Cluster 129
 
 Qui di seguito trovi gli indirizzi IP del **cluster** per ciascun Paese (per la geolocalizzazione):
 
@@ -728,7 +769,9 @@ Se hai bisogno dell’indirizzo IP del **gateway di uscita** del tuo hosting, è
 5.135.48.82
 ```
 
-### Cluster 130
+///
+
+/// details | Cluster 130
 
 Qui di seguito trovi gli indirizzi IP del **cluster** per ciascun Paese (per la geolocalizzazione):
 
@@ -760,7 +803,9 @@ Se hai bisogno dell’indirizzo IP del **gateway di uscita** del tuo hosting, è
 5.135.43.82
 ```
 
-### Cluster 131
+///
+
+/// details | Cluster 131
 
 Qui di seguito trovi gli indirizzi IP del **cluster** per ciascun Paese (per la geolocalizzazione):
 
@@ -792,7 +837,9 @@ Se hai bisogno dell’indirizzo IP del **gateway di uscita** del tuo hosting, è
 5.135.42.194
 ```
 
-### Cluster 151
+///
+
+/// details | Cluster 151
 
 Qui di seguito trovi gli indirizzi IP del **cluster** per ciascun Paese (per la geolocalizzazione):
 
@@ -811,6 +858,8 @@ Se hai bisogno dell’indirizzo IP del **gateway di uscita** del tuo hosting, è
 ```bash
 15.235.26.178
 ```
+
+///
 
 ## Per saperne di più
 

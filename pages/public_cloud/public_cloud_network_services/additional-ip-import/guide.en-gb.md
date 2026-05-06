@@ -24,8 +24,18 @@ Instead of buying more public IP addresses, you can import an Additional IP addr
 ## Requirements
 
 - A [Public Cloud project](/links/public-cloud/public-cloud) in your OVHcloud account
-- Access to the [OVHcloud Control Panel](/links/manager)
 - An [Additional IP address](/links/bare-metal/ip)
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Navigation path:** `Public Cloud`{.action} > Select your project
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 > [!warning]
 > This feature is not currently available for Metal instances.
@@ -33,8 +43,7 @@ Instead of buying more public IP addresses, you can import an Additional IP addr
 
 ## Instructions
 
-Log in to the [OVHcloud Control Panel](/links/manager), go to the `Public Cloud`{.action} section and select the Public Cloud project concerned.
-
+<!-- CP-STEPS-START:import-additional-ip -->
 In the left-hand menu, open `Public IPs`{.action} under **Network**.
 
 Open the `Additional IP`{.action} tab and click on the `Actions`{.action} button. Select `Import an Additional IP`{.action} to display all the IP addresses that can be imported into your Public Cloud project.
@@ -67,6 +76,7 @@ Click on `Attach`{.action} to confirm. The page will display a modification mess
 >
 > An Additional IP cannot be moved between different zones. For example, an IP located in the SBG data centre can be moved to GRA or RBX, but cannot be moved to BHS.
 >
+<!-- CP-STEPS-END:import-additional-ip -->
 
 The IP address is now associated with your instance.
 The next step will be the IP configuration in your OS; please refer to our [guide](/pages/public_cloud/public_cloud_network_services/getting-started-04-configure-additional-ip-to-instance).

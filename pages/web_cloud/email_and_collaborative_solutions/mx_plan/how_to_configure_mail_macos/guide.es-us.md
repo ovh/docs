@@ -82,7 +82,7 @@ Siga los etapas de instalación haciendo clic en las fichas siguientes:
 
 Una vez que haya configurado la dirección de correo electrónico, ya puede empezar a utilizarla enviando y recibiendo mensajes.
 
-OVHcloud también ofrece una aplicación web que permite acceder a su dirección de correo electrónico desde un navegador de internet. y está disponible en la dirección [Webmail](/links/web/email). Puede conectarse con las credenciales de acceso de su dirección de correo electrónico. Si tiene cualquier duda sobre su uso, consulte nuestra guía [Usar Outlook Web App con una cuenta Exchange](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa) o [Roundcube](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_roundcube).
+OVHcloud también ofrece una aplicación web que permite acceder a su dirección de correo electrónico desde un navegador de internet. y está disponible en la dirección [Webmail](/links/web/email). Puede conectarse con las credenciales de acceso de su dirección de correo electrónico. Si tiene cualquier duda sobre su uso, consulte nuestra guía [Usar Outlook Web App con una cuenta Exchange](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa).
 
 ### Obtener una copia de seguridad de su dirección de correo
 
@@ -177,9 +177,6 @@ Para el envío de mensajes de correo electrónico, si debe introducir manualment
 > Para más información sobre la configuración de una dirección de correo electrónico desde la aplicación Mail en macOS, consulte [el centro de ayuda de Apple](https://support.apple.com/es-es/guide/mail/mail35803/mac).
 
 [MX Plan - Configurar una cuenta de correo electrónico en Mail para iPhone e iPad](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_ios)
-
-[Email Pro - Configurar una cuenta de correo electrónico en Mail para macOS](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_mail_macos)<br>
-[Email Pro - Configurar una cuenta de correo electrónico en Mail para iPhone e iPad](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_ios)
 
 [Exchange - Configurar una cuenta de correo electrónico en Mail de macOS](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_ios)<br>
 [Exchange - Configurar una cuenta de correo electrónico en Mail para iPhone e iPad](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_mail_macos)

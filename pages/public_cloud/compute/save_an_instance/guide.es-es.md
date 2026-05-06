@@ -27,8 +27,18 @@ Puede crear una copia de seguridad única de una instancia o configurar una plan
 ## Requisitos
 
 - Tener una instancia de [Public Cloud](/links/public-cloud/public-cloud) en su cuenta de OVHcloud.
-- Tienes acceso a tu [área de cliente de OVHcloud](/links/manager).
 - CLI OpenStack. Consulte nuestro guía "[Preparar el entorno para utilizar la API de OpenStack](/pages/public_cloud/public_cloud_cross_functional/prepare_the_environment_for_using_the_openstack_api)". (opcional)
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Ruta de navegación:** `Public Cloud`{.action} > Seleccione su proyecto
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## Procedimiento
 
@@ -53,7 +63,6 @@ Puede crear una copia de seguridad única de una instancia o configurar una plan
 > [!tabs]
 > A través del área de cliente de OVHcloud
 >>
->> Inicie sesión en su [área de cliente de OVHcloud](/links/manager), vaya a la sección `Public Cloud`{.action} y seleccione el proyecto Public Cloud correspondiente.<br>
 >> Haga clic en `Instancias`{.action} en el menú de la izquierda.<br>
 >> En la página de instancias, haga clic en el botón `...`{.action} a la derecha de la instancia y seleccione `Crear un backup`{.action}.
 >>

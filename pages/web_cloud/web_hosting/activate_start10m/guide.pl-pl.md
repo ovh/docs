@@ -21,36 +21,42 @@ Z tego przewodnika dowiesz się, jak włączyć Darmowy hosting 100M w swojej [d
 ## Wymagania początkowe
 
 - Posiadanie [domeny](/links/web/domains) w [Panelu klienta OVHcloud](/links/manager), odłączone od hostingu www i bez żadnego [MX Plan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities).
-- Dostęp do [Panelu klienta OVHcloud](/links/manager).
 
 > [!primary]
 >
 > Darmowe zakwaterowanie 100M jest **tylko** dostępne dla naszych gości w Europie.
 
+<!-- CP-NAV-START:web-domains -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Domeny](/links/control-panel/web-domains)
+- **Ścieżka nawigacji:** `Web Cloud`{.action} > `Domeny`{.action} > Wybierz nazwę domeny
+
+---
+<!-- CP-NAV-END:web-domains -->
+
+
 ## W praktyce
 
-Aby włączyć darmowy hosting 100M, kliknij na poniższe zakładki, aby wyświetlić wszystkie **4** etapy.
+<!-- CP-STEPS-START:activate-100m-steps -->
+Aby włączyć darmowy hosting 100M, kliknij poniższe zakładki, aby wyświetlić kolejne **3** kroki.
 
 > [!tabs]
-> **Etap 1**
+> **Krok 1**
 >>
->> Zaloguj się do [Panelu klienta OVHcloud](/links/manager) i przejdź do sekcji `Web Cloud`{.action}.
+>> Przejdź na stronę [Domeny](/links/control-panel/web-domains), następnie wybierz odpowiednią domenę.
 >>
->> ![enable 100m](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
+>> ![Domain Names](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
 >>
-> **Etap 2**
->>
->> Kliknij menu `Domeny`{.action}, następnie wybierz odpowiednią domenę.
->>
->> ![enable 100m](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
->>
-> **Etap 3**
+> **Krok 2**
 >>
 >> W ramce **Informacje ogólne** znajduje się pozycja **Darmowy hosting WWW i e-mail**. Kliknij przycisk `...`{.action} po prawej stronie, a następnie przycisk `Włącz`{.action}.
 >>
 >> ![enable 100m](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/enable-100m.png){.thumbnail}
 >>
-> **Etap 4**
+> **Krok 3**
 >>
 >> Pojawi się okno aktywacyjne. W sekcja **1** wyświetla się przypomnienie oferty i cennika. Kliknij przycisk `Dalej`{.action}.
 >> W sekcja **2** wybierz zmiany, jakie mają zostać wprowadzone w strefie DNS:
@@ -74,6 +80,7 @@ Aby włączyć darmowy hosting 100M, kliknij na poniższe zakładki, aby wyświe
 >> Sekcja **3** przypomina o cenniku oferty. 
 >>
 >> Podczas sekcja **4** zapoznaj się z regulaminami i zatwierdź zamówienie.
+<!-- CP-STEPS-END:activate-100m-steps -->
 
 > [!primary]
 >

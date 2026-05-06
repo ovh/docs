@@ -1,6 +1,6 @@
 ---
-title: "Monitoring ataków DDoS za pomocą Network Security Dashboard"
-excerpt: "Dowiedz się, jak nawigować za pomocą pulpitu nawigacyjnego zabezpieczeń sieciowych"
+title: "Serwer dedykowany - Panel bezpieczeństwa sieci"
+excerpt: "Monitoruj i zarządzaj ustawieniami ochrony DDoS i Network Firewall za pomocą panelu bezpieczeństwa sieci OVHcloud."
 updated: 2025-10-31
 ---
 
@@ -11,7 +11,17 @@ Z tego przewodnika dowiesz się, jak korzystać z Dashboardu zabezpieczeń sieci
 ## Wymagania początkowe
 
 - Usługa OVHcloud udostępniona na dedykowanym publicznym adresie IP ([Dedicated Server](/links/bare-metal/bare-metal), [VPS](/links/bare-metal/vps), [Public Cloud instance](/links/public-cloud/public-cloud), [Hosted Private Cloud](/links/hosted-private-cloud/hosted-private-cloud), [Additional IP](/links/network/additional-ip) itd.)
-- Dostęp do [OVHcloud Control Panel](/links/manager)
+
+<!-- CP-NAV-START:network-security-dashboard -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Security Dashboard](/links/control-panel/network-security-dashboard)
+- **Ścieżka nawigacji:** `Network`{.action} > `Network Security Dashboard`{.action}
+
+---
+<!-- CP-NAV-END:network-security-dashboard -->
 
 ## W praktyce
 
@@ -27,7 +37,7 @@ W przypadku wykrycia ataku na dowolny adres IP Twojej usługi otrzymujesz e-mail
 
 W trakcie ataku, aktywne filtrowanie jest wskazane przez ikonę ostrzegawczą na stronie z listą adresów IP (w sekcji `Zarządzaj adresami IP`{.action} w Panelu klienta).
 
-![red-line-attack](images/forced_blur.png){.thumbnail}
+![Ikona ostrzeżenia o aktywnej mitygacji na stronie listy IP](images/forced_blur.png){.thumbnail}
 
 > [!primary]
 >
@@ -41,7 +51,7 @@ W trakcie ataku, aktywne filtrowanie jest wskazane przez ikonę ostrzegawczą na
 
 ### Powiadomienia o zabezpieczeniach sieci
 
-![red-line-attack](images/nsd_04_blur.PNG){.thumbnail}
+![Powiadomienia bezpieczeństwa sieci z kolumnami statusu Anti-DDoS](images/nsd_04_blur.PNG){.thumbnail}
 
 Zaloguj się do [Panelu klienta OVHcloud](/links/manager), kliknij `Network`{.action} w menu po lewej stronie ekranu, a następnie `Publiczne adresy IP`{.action}. Upewnij się, że `Tryb zaawansowany` jest włączony, aby sprawdzić stan infrastruktury anty-DDoS i konfigurację jej komponentów
 
@@ -64,8 +74,6 @@ Kolumny odpowiadają statusowi oczyszczania Anty-DDoS (**Mitygacja**), Edge Netw
 - Kolumna **Alerty** może wskazywać aktywne centrum oczyszczania z ikoną ostrzeżenia i odpowiednią wskazówką.
 
 ### Pulpit nawigacyjny zabezpieczeń sieciowych
-
-Zaloguj się do [Panelu klienta OVHcloud](/links/manager), kliknij `Network`{.action} w menu po lewej stronie ekranu, a następnie `Network Security Dashboard`{.action}.
 
 Karta **dziennik centrum oczyszczania** umożliwia pobranie wszystkich informacji o atakach wykrytych w przeszłości (lub w toku).
 

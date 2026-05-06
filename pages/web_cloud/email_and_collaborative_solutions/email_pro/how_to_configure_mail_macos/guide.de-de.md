@@ -22,14 +22,24 @@ E-Mail Pro Accounts können auf verschiedenen, kompatiblen E-Mail-Clients einger
 - Sie verfügen über das auf Ihrem Mac installierte Mail-Programm.
 - Sie haben die Login-Daten der E-Mail-Adresse, die Sie einrichten möchten.
 
+<!-- CP-NAV-START:web-email-pro -->
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direkter Link:** [E-Mail Pro](/links/control-panel/web-email-pro)
+- **Navigationspfad:** `Web Cloud`{.action} > `E-Mail Pro`{.action} > Wählen Sie Ihre Plattform aus
+
+---
+<!-- CP-NAV-END:web-email-pro -->
+
 ## In der praktischen Anwendung
 
 > [!primary]
 >
-> In dieser Anleitung verwenden wir als Serverbezeichnung: pro<b>?</b>.mail.ovh.net. Das „?“ muss mit der jeweils passenden Nummer Ihres zuständigen Servers für den einzurichtenden Email Pro Dienst ersetzt werden.
+> In dieser Anleitung verwenden wir als Serverbezeichnung: pro<b>?</b>.mail.ovh.net. Das „?” muss mit der jeweils passenden Nummer Ihres zuständigen Servers für den einzurichtenden E-Mail Pro Dienst ersetzt werden.
 >
-> Sie finden diese Information im [OVHcloud Kundencenter](/links/manager), wenn Sie den betreffenden `E-Mail Pro`{.action} Dienst auswählen. Der Servername wird im Kasten **Verbindung** auf der Seite `Allgemeine Informationen`{.action} angezeigt.
->
+> Klicken Sie auf [diesen Link](/links/control-panel/web-email-pro), um auf den Bereich `E-Mail Pro`{.action} zuzugreifen. Der Servername wird im Bereich **Verbindung** des Tabs `Allgemeine Informationen`{.action} angezeigt.
 
 ### Account hinzufügen
 

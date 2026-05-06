@@ -31,6 +31,17 @@ Gli indirizzi email del servizio Email Pro possono essere configurati su client 
 - Aver installato l’applicazione Gmail sul proprio dispositivo, che puoi scaricare da Google Play Store
 - Disporre delle credenziali associate all’account email da configurare
 
+<!-- CP-NAV-START:web-email-pro -->
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [Email Pro](/links/control-panel/web-email-pro)
+- **Percorso di navigazione:** `Web Cloud`{.action} > `Email Pro`{.action} > Seleziona la tua piattaforma
+
+---
+<!-- CP-NAV-END:web-email-pro -->
+
 > [!primary]
 >
 > Questa guida è stata realizzata da un dispositivo che utilizza la versione 13 di Android.
@@ -43,12 +54,7 @@ Gli indirizzi email del servizio Email Pro possono essere configurati su client 
 >
 > Nel nostro esempio abbiamo utilizzato come nome del server "pro?.mail.ovh.net", dove "?" dovrà essere sostituito con il numero che indica il server del servizio Email Pro.
 >
-> 1. Accedi allo [Spazio Cliente OVHcloud](/links/manager).
-> 1. Accedi alla sezione `Web Cloud`{.action}.
-> 1. Clicca su `Email Pro`{.action}.
-> 1. Seleziona la piattaforma interessata. 
-> 1. Il nome del server è visibile nel riquadro **Connessione** della scheda `Informazioni generali`{.action}.
->
+> Clicca su [questo link](/links/control-panel/web-email-pro) per accedere alla sezione `Email Pro`{.action}. Il nome del server viene visualizzato nella zona **Connessione** della scheda `Informazioni generali`{.action}.
 
 Sulla schermata Home del tuo dispositivo clicca sull’applicazione `Gmail`{.action}.
 

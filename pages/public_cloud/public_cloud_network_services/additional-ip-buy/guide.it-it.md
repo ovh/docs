@@ -28,16 +28,24 @@ Questi indirizzi possono essere trasferiti esclusivamente verso le istanze di un
 
 ## Prerequisiti
 
-- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager).
 - Disporre di almeno un’istanza. A questo proposito, consulta [la guida per creare un’istanza dallo Spazio Cliente](/pages/public_cloud/compute/public-cloud-first-steps).
 
 > [!warning]
 > Questa funzionalità al momento non è disponibile per le istanze Metal.
 >
 
-## Procedura
+<!-- CP-NAV-START:publiccloud-projects -->
+---
 
-Accedi allo [Spazio Cliente OVHcloud](/links/manager), clicca su `Public Cloud`{.action} e seleziona il progetto Public Cloud interessato.
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Percorso di navigazione:** `Public Cloud`{.action} > Seleziona il tuo project
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
+
+## Procedura
 
 Nel menu a sinistra, apri `IP pubblici`{.action} in **Network**.
 

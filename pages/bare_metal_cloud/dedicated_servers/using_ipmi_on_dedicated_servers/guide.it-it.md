@@ -1,7 +1,7 @@
 ---
 title: "Come utilizzare la console IPMI con un server dedicato"
-excerpt: "Scopri come accedere al tuo server dal tuo Spazio Cliente senza utilizzare software esterno"
-updated: 2024-07-23
+excerpt: "Accedi al tuo server dedicato da remoto tramite la console IPMI/KVM dello Spazio Cliente OVHcloud senza software esterno"
+updated: 2026-01-29
 ---
 
 > [!primary]
@@ -14,7 +14,16 @@ La console IPMI (Intelligent Platform Management Interface) permette di stabilir
 
 ## Prerequisiti
 
-- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
+<!-- CP-NAV-START:baremetal-dedicated-servers -->
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [Server dedicati](/links/control-panel/baremetal-dedicated-servers)
+- **Percorso di navigazione:** `Bare Metal Cloud`{.action} > `Server dedicati`{.action} > Seleziona il tuo server
+
+---
+<!-- CP-NAV-END:baremetal-dedicated-servers -->
 
 > [!warning]
 > Questa funzionalità può non essere disponibile o limitata sui [server dedicati **Eco**](/links/bare-metal/eco-about).
@@ -41,9 +50,13 @@ Per connettersi all’IPMI è possibile utilizzare diversi metodi¹. Le chiavi S
 ⁵ Se il sistema operativo che vuoi installare non è disponibile nel [catalogo dei sistemi operativi disponibili sui server dedicati OVHcloud](/links/bare-metal/os), ti ricordiamo che puoi anche utilizzare un'immagine personalizzata: per maggiori dettagli, consulta [Bring Your Own Image (BYOI) e Bring Your Own Linux (BYOLinux)](/pages/bare_metal_cloud/dedicated_servers/bring-your-own-image-versus-bring-your-own-linux).<br />
 ⁶ SoL = Serial over Lan
 
-Per attivare uno di questi metodi, accedi allo [Spazio Cliente OVHcloud](/links/manager). Nella sezione `Bare Metal Cloud`{.action}, clicca su `Server dedicati`{.action} e seleziona il tuo server, poi clicca sulla scheda `IPMI/KVM`{.action}.
+Per attivare uno di questi metodi, clicca sulla scheda `IPMI/KVM`{.action}.
 
 ### Aprire un KVM tramite applet Java <a name="applet-java"></a>
+
+> [!primary]
+> Si consiglia di installare l'ultima versione di Java.
+>
 
 Per il corretto funzionamento dell'applet, è necessario che Java sia installato sul dispositivo. Se non lo hai ancora fatto, accedi alla [pagina ufficiale](https://www.java.com/en/download/).
 

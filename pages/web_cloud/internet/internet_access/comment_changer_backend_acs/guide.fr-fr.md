@@ -18,21 +18,30 @@ L'Auto Configuration Server (ACS) est une couche de traduction entre votre modem
 ## Prérequis
 
 - Disposer d’un [accès Internet xDSL ou fibre OVHcloud](/links/telecom/offre-internet).
-- Être connecté à l'[espace client OVHcloud](/links/manager) dans la partie `Accès Internet`{.action}.
 - Cette fonctionnalité est disponible même si la configuration à distance est désactivée.
+
+<!-- CP-NAV-START:telecom-xdsl-fttx -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Accès Internet](/links/control-panel/telecom-xdsl-fttx)
+- **Pour accéder à vos services :** `Télécom`{.action} > `Offres Internet`{.action} > Sélectionnez votre accès
+
+---
+<!-- CP-NAV-END:telecom-xdsl-fttx -->
 
 ## En pratique
 
 ### Étape 1 : Accéder à l'outil de configuration à distance
 
-1. Connectez-vous à votre [espace client OVHcloud](/links/manager) et cliquez sur `Télécom`{.action}.
-1. Cliquez sur `Offres Internet`{.action} puis sur le *Pack* contenant l'accès à Internet concerné.
-1. Cliquez sur votre accès à Internet FTTH ou xDSL dans le cadre `Accès Internet` à droite.
-1. Assurez-vous d'être positionné sur l'onglet `Mon modem`{.action}.
+<!-- CP-STEPS-START:acces-outil-configuration -->
+Depuis votre [espace client OVHcloud](/links/control-panel/telecom-xdsl-fttx), cliquez sur votre accès à Internet FTTH ou xDSL dans le cadre `Accès Internet` à droite, puis positionnez-vous sur l'onglet `Mon modem`{.action}.
 
 ![changeACS](images/changeACS-step1-2022.png){.thumbnail}
 
 Dans le cadre « Configurations avancées », reportez-vous aux éléments de la partie `ACS`. Vous retrouverez dans cette dernière une liste déroulante vous permettant de choisir le backend cible.
+<!-- CP-STEPS-END:acces-outil-configuration -->
 
 ### Étape 2 : Choisir un backend ACS
 
@@ -44,6 +53,7 @@ Trois backends sont disponibles, vous devez choisir celui sur lequel vous souhai
 
 ### Étape 3 : Appliquer la modification
 
+<!-- CP-STEPS-START:appliquer-modification -->
 > [!warning]
 >
 > Changer le backend ACS réinitialise le modem. Si vous n'utilisez pas notre outil de configuration à distance, la configuration du modem sera perdue. Pensez à la sauvegarder au préalable.
@@ -54,6 +64,7 @@ Une fois le backend choisi, sélectionnez-le dans la liste déroulante et clique
 Une tâche va alors modifier l'URL du serveur ACS sur le modem, puis va initier une réinitialisation du modem. Si vous utilisez notre outil de configuration à distance, la configuration présente dans l'espace client OVHcloud sera de nouveau appliquée quand le modem aura terminé la réinitialisation.
 
 ![changeACS](images/changeACS-step2.png){.thumbnail}
+<!-- CP-STEPS-END:appliquer-modification -->
 
 ### Expert : Modifier le backend directement via l'API OVHcloud
 

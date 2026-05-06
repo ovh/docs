@@ -13,38 +13,44 @@ Les solutions [Web Cloud Databases](/links/web/databases) peuvent être activée
 ## Prérequis
 
 - Disposer d'une [instance Web Cloud Databases](/links/web/databases) associée à une offre d'[hébergement web Performance](/links/web/hosting).
-- Être connecté à votre [espace client OVHcloud](/links/manager).
 - Être, a minima, contact « [Administrateur](/pages/account_and_service_management/account_information/managing_contacts) » des services sur lesquels vous souhaitez agir.
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Hébergements](/links/control-panel/web-hosting)
+- **Pour accéder à vos services :** `Web Cloud`{.action} > `Hébergements`{.action} > Sélectionnez votre hébergement web
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## En pratique
 
-Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4** étapes.
+<!-- CP-STEPS-START:detach-wcdb-tabs -->
+Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3** étapes.
 
 > [!tabs]
-> **Etape 1**
+> **Étape 1**
 >>
->> Connectez-vous à votre [espace client OVHcloud](/links/manager), puis rendez-vous dans la partie `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Etape 2**
->>
->> Cliquez sur le menu `Hébergements`{.action}, puis choisissez l'hébergement web concerné.
+>> Accédez à la page [Hébergements](/links/control-panel/web-hosting), puis choisissez l'hébergement web concerné.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Etape 3**
+> **Étape 2**
 >>
 >> Dans le cadre **Configuration** vous trouverez la mention **Web Cloud Databases**. Cliquez sur le bouton `...`{.action} à droite puis sur `Délier`{.action}.
 >>
 >> ![Detach Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/wcdb-detach.png){.thumbnail}
 >>
-> **Etape 4**
+> **Étape 3**
 >>
 >> Sur la nouvelle page qui s'affiche, choisissez la nouvelle tarification désirée pour votre solution Web Cloud Databases, puis suivez les étapes indiquées jusqu'au paiement.
 >>
 >> ![Detach Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/detach-my-web-cloud-databases.png){.thumbnail}
 >>
+<!-- CP-STEPS-END:detach-wcdb-tabs -->
 
 Un fois les 4 étapes réalisées, votre solution Web Cloud Databases sera déliée dans un délai de quelques heures maximum.
 

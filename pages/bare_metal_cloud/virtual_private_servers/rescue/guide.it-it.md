@@ -1,18 +1,18 @@
 ---
 title: Attivare e utilizzare il Rescue mode su un VPS
 excerpt: Scopri come utilizzare il Rescue mode OVHcloud per risolvere i problemi del VPS ed effettuare verifiche di sistema
-updated: 2025-03-27
+updated: 2025-01-12
 ---
 
 ## Obiettivo
 
 La modalità di ripristino (*rescue*) è uno strumento fornito da OVHcloud per avviare il tuo VPS in un sistema operativo temporaneo. È quindi possibile accedere al sistema per eseguire attività di diagnostica e risolvere diversi problemi, ad esempio:
 
-- [Reimposta la password dell'utente per recuperare l'accesso](/pages/bare_metal_cloud/dedicated_servers/replacing-user-password)
-- Diagnosi di problemi di rete
+- [Reimpostare la password dell'utente per recuperare l'accesso](/pages/bare_metal_cloud/dedicated_servers/replacing-user-password)
+- Diagnosticare problemi di rete
 - Riparare un sistema operativo difettoso
 - Riparare un firewall software mal configurato
-- Test delle prestazioni del disco
+- Testare le prestazioni del disco
 
 In caso di problemi al sistema, eseguire controlli in Rescue mode permette di determinare se è associato a software installato sul VPS o se c’è una causa più profonda. Prima di contattare i nostri team di supporto, ti consigliamo di utilizzare il Rescue mode per raccogliere i risultati dei test ed escludere eventuali errori software.
 
@@ -25,20 +25,28 @@ In caso di problemi al sistema, eseguire controlli in Rescue mode permette di de
 
 ## Prerequisiti
 
-- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
 - Disporre di un [VPS OVHcloud](/links/bare-metal/vps) già configurato
+
+<!-- CP-NAV-START:baremetal-vps -->
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [VPS management](/links/control-panel/baremetal-vps)
+- **Percorso di navigazione:** `Bare Metal Cloud`{.action} > `Server Privati Virtuali`{.action} > Seleziona il tuo VPS
+
+---
+<!-- CP-NAV-END:baremetal-vps -->
 
 > [!warning]
 > OVHcloud fornisce servizi la cui configurazione e gestione sono di vostra responsabilità. È quindi vostra responsabilità assicurarvi che funzionino correttamente.
 >
-> Questa guida ti aiuta a eseguire le operazioni necessarie alla configurazione del tuo account. Tuttavia, in caso di difficoltà o dubbi relativamente all’amministrazione, all’utilizzo o all’implementazione dei servizi di un server, ti consigliamo di contattare un [provider di servizi specializzato](/links/partner) o [la nostra Community](https://community.ovh.com/en/).
+> Questa guida ti aiuta a eseguire le operazioni necessarie alla configurazione del tuo account. Tuttavia, in caso di difficoltà o dubbi relativamente all’amministrazione, all’utilizzo o all’implementazione dei servizi di un server, ti consigliamo di contattare un [provider di servizi specializzato](/links/partner) o [la nostra Community](/links/community).
 >
 
 ## Procedura
 
 ### Attivazione della modalità Rescue
-
-Accedi allo [Spazio Cliente OVHcloud](/links/manager), clicca sulla sezione `Bare Metal Cloud`{.action} e seleziona il tuo server nella sezione `Server privati virtuali`{.action}.
 
 Nella scheda `Home`{.action}, clicca su `...`{.action} accanto a "Boot" nella casella **Il tuo VPS**.
 
@@ -52,7 +60,11 @@ Una volta avviato il riavvio, comparirà un indicatore di stato che indica la du
 
 > [!primary]
 >
-> Riceverai un’email automatica con le credenziali SSH per accedere in Rescue mode. Attendi la ricezione dell'email prima di proseguire con qualsiasi operazione. Questa email è disponibile anche nello [Spazio Cliente OVHcloud](/links/manager). Per recuperarlo, clicca sul nome associato al tuo identificativo OVHcloud nella barra dei menu situata nell’angolo in alto a destra e seleziona `Email di servizio`{.action}.
+> Riceverai un’email automatica con le credenziali SSH per accedere in Rescue mode. Attendi la ricezione dell'email prima di proseguire con qualsiasi operazione. Questa email è disponibile anche nello [Spazio Cliente OVHcloud](/links/manager). Per recuperarla, clicca sul nome associato al tuo identificativo OVHcloud nella barra dei menu situata nell’angolo in alto a destra e seleziona `Email di servizio`{.action}.
+>
+
+> [!warning]
+> Si prega di notare che se non si è più il contatto tecnico del server, non si riceverà l'e-mail. Per ulteriori informazioni, consultare la nostra guida: [Gestire i contatti dei servizi OVHcloud](/pages/account_and_service_management/account_information/managing_contacts).
 >
 
 In seguito, dovrai [accedere al tuo server via SSH](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction), utilizzando la password temporanea generata per la modalità rescue.
@@ -72,7 +84,7 @@ root@vps-x11x11xyy.vps.ovh.net's password:
 > Il tuo client SSH bloccherà normalmente la connessione all'inizio a causa di un'incompatibilità dell'impronta ECDSA. Questo è normale perché la modalità Rescue utilizza il proprio server SSH temporaneo. Per risolvere il problema, modificare il file `known_hosts` nella cartella locale `.ssh`.  
 > Le opzioni disponibili sono due:
 >
-> - **Elimina il timbro del file.** Il client SSH aggiungerà una nuova impronta digitale per il server quando non utilizzerai più il Rescue mode. Per una spiegazione dettagliata, consulta la sezione "Login et fingerprint" nella nostra [guida d'introduzione a SSH](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction).
+> - **Elimina l'impronta digitale dal file.** Il client SSH aggiungerà una nuova impronta digitale per il server quando non utilizzerai più il Rescue mode. Per una spiegazione dettagliata, consulta la sezione "Login et fingerprint" nella nostra [guida d'introduzione a SSH](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction).
 >
 > - **Disattiva temporaneamente l’impronta digitale.** Apri il file `known_hosts` con un editor di testo e identifica la stringa dell’impronta digitale del tuo server con il suo indirizzo IP. Aggiungere il carattere `#` all'inizio della riga. Di conseguenza, questa riga è ora un "commento" e verrà ignorata dalle applicazioni che leggono il file. Ricordati di annullare la modifica prima di riavviare il VPS.
 >
@@ -141,7 +153,7 @@ Una volta terminata l’operazione, riavvia il VPS in modalità normale dallo Sp
 In caso di errore durante il riavvio di un VPS, segui questi step:
 
 - Consulta il KVM nel tuo Spazio Cliente per ottenere informazioni utili sulle ragioni per cui il VPS non può essere avviato. Per maggiori informazioni su questa funzionalità, consulta la nostra [guida KVM](/pages/bare_metal_cloud/virtual_private_servers/using_kvm_for_vps).
-- Se il KVM indica che il VPS è bloccato all'avvio o che non riesce a trovare il disco, assicurati che [i log di avvio sono attivati](/pages/bare_metal_cloud/virtual_private_servers/bootlog_display_kvm). Per ulteriori indagini, invia i log rilevanti al nostro team di supporto [crea una richiesta di assistenza](https://help.ovhcloud.com/csm?id=csm_get_help).
+- Se il KVM indica che il VPS è bloccato all'avvio o che non riesce a trovare il disco, assicurati che [i log di avvio sono attivati](/pages/bare_metal_cloud/virtual_private_servers/bootlog_display_kvm). Per ulteriori indagini, invia i log rilevanti al nostro team di supporto [creando una richiesta di assistenza](https://help.ovhcloud.com/csm?id=csm_get_help).
 
 <a name="gofurther"></a>
 
@@ -155,4 +167,4 @@ In caso di errore durante il riavvio di un VPS, segui questi step:
 
 [Controllare il file system su un VPS](/pages/bare_metal_cloud/virtual_private_servers/check-filesystem)
 
-Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.
+Contatta la nostra [Community di utenti](/links/community).

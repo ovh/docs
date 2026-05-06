@@ -1,7 +1,7 @@
 ---
 title: "Tutorial - Como usar o PuTTY para conexões SSH e autenticação"
 excerpt: "Saiba como aceder ao servidor cloud ou ao alojamento web e gerir as chaves SSH com o software cliente SSH PuTTY"
-updated: 2024-11-11
+updated: 2026-04-01
 ---
 
 <style>
@@ -28,7 +28,6 @@ O [PuTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html) é um 
 
 - [PuTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html) instalado no seu equipamento local
 - Conhecimentos de base do [protocolo SSH e da sua utilização](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction)
-- Ter acesso à [Área de Cliente OVHcloud](/links/manager)
 
 > [!warning]
 > A OVHcloud fornece serviços cuja configuração e gestão são da sua responsabilidade. Este tutorial explica como utilizar as soluções da OVHcloud com ferramentas externas. Poderá ser necessário adaptar algumas instruções específicas ao sistema operativo da estação de trabalho local ou do servidor.

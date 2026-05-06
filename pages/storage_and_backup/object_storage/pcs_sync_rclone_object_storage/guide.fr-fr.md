@@ -5,9 +5,9 @@ updated: 2021-10-27
 
 ## Objectif
 
-L'Object Storage d'OVH peut être synchronisé via rClone.
+L'Object Storage d'OVHcloud peut être synchronisé via rClone.
 
-**Ce guide a pour objectif de vous rappeler les étapes pour effectuer cette synchronisation sur votre espace client OVH.**
+**Ce guide a pour objectif de vous rappeler les étapes pour effectuer cette synchronisation sur votre espace client OVHcloud.**
 
 rClone étant un logiciel de synchronisation externe, les détails d'utilisation de celui-ci sont à découvrir directement sur sa [documentation officielle](https://Rclone.org/).
 

@@ -1,14 +1,26 @@
 ---
 title: "Odnowienie domen OVHcloud"
 excerpt: "Dowiedz się, dlaczego i jak odnawiać domeny OVHcloud"
-updated: 2025-06-13
+updated: 2026-03-13
 ---
+
+<style>
+details>summary {
+    color:rgb(33, 153, 232) !important;
+    cursor: pointer;
+}
+details>summary::before {
+    content:'\25B6';
+    padding-right:1ch;
+}
+details[open]>summary::before {
+    content:'\25BC';
+}
+</style>
 
 ## Wprowadzenie
 
-Niniejszy przewodnik ułatwi Ci zarządzanie domenami, wyjaśniając wszystkie aspekty związane z ich odnawianiem.
-
-Tutaj znajdziesz wszystkie informacje, które pozwolą Ci:
+Niniejszy przewodnik ułatwi Ci zarządzanie domenami, wyjaśniając wszystkie aspekty związane z ich odnawianiem:
 
 - Rozróżnienie między odnowieniem automatycznym a ręcznym
 - Zmiana trybu odnowienia domen
@@ -21,8 +33,18 @@ Tutaj znajdziesz wszystkie informacje, które pozwolą Ci:
 ## Wymagania początkowe
 
 - Posiadanie domeny zarejestrowanej w OVHcloud.
-- Dostęp do [panelu klienta OVHcloud](/links/manager), sekcja `Web Cloud`{.action}.
 - Posiadanie statusu kontaktu księgowego usług OVHcloud.
+
+<!-- CP-NAV-START:billing-services -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Moje rozwiązania i usługi](/links/control-panel/billing-services)
+- **Ścieżka nawigacji:** Kliknij swoją nazwę w prawym górnym rogu > `Moje rozwiązania i usługi`{.action}
+
+---
+<!-- CP-NAV-END:billing-services -->
 
 ## W praktyce
 
@@ -43,69 +65,86 @@ Jeśli opcja automatycznego odnowienia jest włączona, Twój sposób płatnośc
 
 ### Rodzaje odnowienia
 
-#### Odnowienie automatyczne
-
-Oto główne zalety automatycznego odnawiania:
-
-- **Prostota**: dzięki temu nie musisz się martwić o daty odnowienia usługi.
-- **Ciągłość usługi** : Twoje usługi pozostają aktywne, bez przerw w ciągłości usługi.
-- **Oszczędność czasu**: nie musisz wykonywać kroków ręcznych.
-
-> [!warning]
->
-> W przypadku braku ważnego sposobu płatności odnowienie nie będzie możliwe i grozi Ci utrata nazwy domeny. Sprawdź poprawność Twojego sposobu płatności.
->
-
-#### Odnowienie ręczne
-
-Jeśli nie chcesz automatycznego odnawiania i tym samym automatycznego pobrania środków, możesz zmienić typ odnowienia na **manual**.
-
-Tryb odnowienia może być przydatny:
-
-- Jeśli nie jesteś pewien, czy chcesz zachować usługę po terminie wygaśnięcia;
-- Jeśli nie chcesz, aby należności za faktury były pobierane automatycznie za pomocą ustawionego sposobu płatności.
-
-Jeśli wybierzesz odnowienie ręczne, przed terminem wygaśnięcia otrzymasz kilka przypomnień zawierających link pozwalający na odnowienie wygasającej usługi online.
-Płatności będzie można również dokonać w prosty sposób z Panelu klienta.
-
-**Uwaga**, jeśli nie opłacisz usługi odnawianej ręcznie, ryzykujesz utratę domeny lub uregulowanie opłaty za jej przywrócenie (jeśli domena jest zawieszona).
-Natomiast jeśli nie chcesz przedłużać tej usługi, nie musisz zlecać rezygnacji z niej.
+> [!tabs]
+> **Odnowienie automatyczne**
+>> Oto główne zalety automatycznego odnawiania:
+>>
+>> - **Prostota**: dzięki temu nie musisz się martwić o daty odnowienia usługi.
+>> - **Ciągłość usługi**: Twoje usługi pozostają aktywne, bez przerw w ciągłości usługi.
+>> - **Oszczędność czasu**: nie musisz wykonywać kroków ręcznych.
+>>
+>> > [!warning]
+>> >
+>> > W przypadku braku ważnego sposobu płatności odnowienie nie będzie możliwe i grozi Ci utrata nazwy domeny. Sprawdź poprawność Twojego sposobu płatności.
+>>
+> **Odnowienie ręczne**
+>> Jeśli nie chcesz automatycznego odnawiania i tym samym automatycznego pobrania środków, możesz zmienić typ odnowienia na **ręczne**.
+>>
+>> Tryb odnowienia może być przydatny:
+>>
+>> - Jeśli nie jesteś pewien, czy chcesz zachować usługę po terminie wygaśnięcia;
+>> - Jeśli nie chcesz, aby należności za faktury były pobierane automatycznie za pomocą ustawionego sposobu płatności.
+>>
+>> Jeśli wybierzesz odnowienie ręczne, przed terminem wygaśnięcia otrzymasz kilka przypomnień zawierających link pozwalający na odnowienie wygasającej usługi online.
+>> Płatności będzie można również dokonać w prosty sposób z Panelu klienta.
+>>
+>> **Uwaga**, jeśli nie opłacisz usługi odnawianej ręcznie, ryzykujesz utratę domeny lub uregulowanie opłaty za jej przywrócenie (jeśli domena jest zawieszona).
+>> Natomiast jeśli nie chcesz przedłużać tej usługi, nie musisz zlecać rezygnacji z niej.
 
 ### Zmiana sposobu odnawiania domen
 
-W [panelu klienta](/links/manager) kliknij Twoją nazwę w prawym górnym rogu ekranu, a następnie wybierz `Moje rozwiązania i usługi`{.action}. W tabeli, która się wyświetli określ domenę lub domeny, dla których chcesz zmienić tryb odnowienia.
+<!-- CP-STEPS-START:zmiana-sposobu-odnawiania-domen -->
+Kliknij zakładki poniżej, aby wyświetlić każdy z **2** kroków.
 
-#### Dla jednej domeny
-
-Wykonaj następujące czynności:
-
-- W tabeli podaj nazwę domeny, dla której chcesz zmienić tryb odnowienia
-- Kliknij przycisk `...`{.action} po prawej stronie linii.
-- Kliknij na akcję `Skonfiguruj odnowienie`{.action}.
-- Skonfiguruj odnowienie `Ręcznie`{.action} lub `Automaticznie`{.action}.
-- Jeśli wybrałeś automatyczne odnawianie, wybierz częstotliwość automatycznego odnawiania.
-- Zatwierdź i zapłać.
-
-#### Dla kilku domen
-
-Wykonaj następujące czynności:
-
-- W tabeli określ nazwy domen, dla których chcesz zmienić tryb odnowienia.
-- Wybierz odpowiednie wiersze w tabeli, zaznaczając pola wyboru na początku wiersza.
-- Kliknij przycisk `Actions`{.action} w lewym górnym rogu tabeli.
-- Wybierz `Włącz płatność automatyczną`{.action} lub `Wyłącz płatność automatyczną`{.action}.
+> [!tabs]
+> **Krok 1**
+>>
+>> Przejdź na stronę [Moje rozwiązania i usługi](/links/control-panel/billing-services). W tabeli, która się wyświetli, określ domenę lub domeny, dla których chcesz zmienić tryb odnowienia.
+>>
+>> ![Moje rozwiązania i usługi](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/my-services-en.png){.thumbnail}
+>>
+> **Krok 2**
+>>
+>> **Dla jednej domeny:**
+>>
+>> - Kliknij przycisk `...`{.action} po prawej stronie linii.
+>> - Kliknij na akcję `Skonfiguruj odnowienie`{.action}.
+>> - Skonfiguruj odnowienie `Ręcznie`{.action} lub `Automaticznie`{.action}.
+>> - Jeśli wybrałeś automatyczne odnawianie, wybierz częstotliwość automatycznego odnawiania.
+>> - Zatwierdź i zapłać.
+>>
+>> **Dla kilku domen:**
+>>
+>> - Wybierz odpowiednie wiersze w tabeli, zaznaczając pola wyboru na początku wiersza.
+>> - Kliknij przycisk `Actions`{.action} w lewym górnym rogu tabeli.
+>> - Wybierz `Włącz płatność automatyczną`{.action} lub `Wyłącz płatność automatyczną`{.action}.
+<!-- CP-STEPS-END:zmiana-sposobu-odnawiania-domen -->
 
 ### Odnów domenę przed datą wygaśnięcia
 
-Wykonaj następujące czynności:
+<!-- CP-STEPS-START:odnow-domene-przed-data-wygasniecia -->
+Kliknij zakładki poniżej, aby wyświetlić każdy z **3** kroków.
 
-- W tabeli podaj nazwę domeny, którą chcesz odnowić.
-- Kliknij przycisk `...`{.action} po prawej stronie linii.
-- Kliknij na działanie `Prognoza płatności`{.action}.
-- Po przekierowaniu do interfejsu płatności online, postępuj zgodnie z instrukcjami.
-
-Możesz odnowić usługę w dowolnym momencie przed jej wygaśnięciem a także wybrać czas odnowienia.
-W tym przypadku zamówiony czas ważności zostanie dodany do bieżącego czasu ważności. Nie tracisz pozostałego czasu ważności usługi.
+> [!tabs]
+> **Krok 1**
+>>
+>> Przejdź na stronę [Moje rozwiązania i usługi](/links/control-panel/billing-services). W tabeli podaj nazwę domeny, którą chcesz odnowić.
+>>
+>> ![Moje rozwiązania i usługi](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/my-services-en.png){.thumbnail}
+>>
+> **Krok 2**
+>>
+>> Kliknij przycisk `...`{.action} po prawej stronie linii, a następnie kliknij `Prognoza płatności`{.action}.
+>>
+>> ![Opcja Prognoza płatności](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/forward-payment-en.png){.thumbnail}
+>>
+> **Krok 3**
+>>
+>> Po przekierowaniu do interfejsu płatności online, postępuj zgodnie z instrukcjami.
+>>
+>> Możesz odnowić usługę w dowolnym momencie przed jej wygaśnięciem, a także wybrać czas odnowienia.
+>> W tym przypadku zamówiony czas ważności zostanie dodany do bieżącego czasu ważności. Nie tracisz pozostałego czasu ważności usługi.
+<!-- CP-STEPS-END:odnow-domene-przed-data-wygasniecia -->
 
 ### Monitoruj odnowienie domeny
 
@@ -113,38 +152,71 @@ Po opłaceniu odnowienia domena zostanie odnowiona na dzień przed jej wygaśni�
 
 Dane wyświetlane w bazie WHOIS są aktualizowane w celu potwierdzenia poprawnego odnowienia domeny.
 
-Aby sprawdzić status odnowienia domeny:
+<!-- CP-STEPS-START:monitoruj-odnowienie-domeny -->
+Aby sprawdzić status odnowienia domeny, kliknij zakładki poniżej, aby wyświetlić każdy z **2** kroków.
 
-1. Zaloguj się do [Panelu klienta OVHcloud](/links/manager).
-1. Przejdź do sekcji `Web Cloud`{.action}.
-1. Kliknij na `Domeny`{.action} w sekcji `Domeny i DNS`{.action}.
-1. W tabeli, która się wyświetla sprawdź status odnowienia w kolumnie `Status` danej domeny.
-
-Informacja `Odnowienie w trakcie` będzie pojawiać się po dokonaniu płatności, do momentu odnowienia domeny przez registry.
+> [!tabs]
+> **Krok 1**
+>>
+>> Przejdź na stronę [Domeny](/links/control-panel/web-domains), następnie wybierz odpowiednią domenę.
+>>
+>> ![Domeny](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
+>>
+> **Krok 2**
+>>
+>> W sekcji **Informacje ogólne** sprawdź status odnowienia pod pozycją **Status domeny**.
+>>
+>> Informacja `Odnowienie w trakcie` będzie pojawiać się po dokonaniu płatności, do momentu odnowienia domeny przez registry.
+<!-- CP-STEPS-END:monitoruj-odnowienie-domeny -->
 
 ### Rezygnacja z domeny
 
-- W tabeli podaj nazwę domeny, którą chcesz odnowić.
-- Kliknij przycisk `...`{.action} po prawej stronie linii.
-- Kliknij na akcję `Rezygnuję z usługi`{.action}.
+<!-- CP-STEPS-START:rezygnacja-z-domeny -->
+Kliknij zakładki poniżej, aby wyświetlić każdy z **2** kroków.
 
-To działanie jest dostępne w przypadku usług z opcją **automatycznego odnowienia**. Jeśli wybierzesz to działanie, dla wybranych usług zostanie wyłączone automatyczne odnawianie i pobieranie środków.
+> [!tabs]
+> **Krok 1**
+>>
+>> Przejdź na stronę [Moje rozwiązania i usługi](/links/control-panel/billing-services). W tabeli podaj nazwę domeny, z której chcesz zrezygnować.
+>>
+>> ![Moje rozwiązania i usługi](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/my-services-en.png){.thumbnail}
+>>
+> **Krok 2**
+>>
+>> Kliknij przycisk `...`{.action} po prawej stronie linii, a następnie kliknij `Rezygnuję z usługi`{.action}.
+>>
+>> To działanie jest dostępne w przypadku usług z opcją **automatycznego odnowienia**. Jeśli wybierzesz to działanie, dla wybranych usług zostanie wyłączone automatyczne odnawianie i pobieranie środków.
+<!-- CP-STEPS-END:rezygnacja-z-domeny -->
 
 > [!primary]
 >
 > Rezygnacja z domeny zakończy się wraz z jej wygaśnięciem.
->
 
-Aby uzyskać więcej informacji na temat rezygnacji z usług OVHcloud, postępuj zgodnie z instrukcjami zawartymi w przewodniku "**[Jak zrezygnować z usług OVHcloud](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_cancel_services)**".
+Więcej informacji znajdziesz w przewodniku "**[Jak zrezygnować z usług OVHcloud](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_cancel_services)**".
 
-### Dostęp do faktury za odnowienie domeny
+### Opłacenie faktury za odnowienie domeny
 
-Pojawi się informacja `Płatność do uregulowania`, gdy faktura oczekuje na płatność i gdy:
+<!-- CP-STEPS-START:oplacenie-faktury-za-odnowienie-domeny -->
+Kliknij zakładki poniżej, aby wyświetlić każdy z **2** kroków.
 
- - posiadasz usługi z opcją automatycznego odnawiania;
- - nie masz ustawionego sposobu płatności umożliwiającego pobranie środków w celu uregulowania faktur.
-
-Wystarczy, że wybierzesz działanie `Opłać fakturę`{.action}, które przekieruje Cię do platformy płatności online.
+> [!tabs]
+> **Krok 1**
+>>
+>> Przejdź na stronę [Moje rozwiązania i usługi](/links/control-panel/billing-services). W tabeli podaj nazwę domeny, dla której musisz opłacić fakturę za odnowienie.
+>>
+>> ![Moje rozwiązania i usługi](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/my-services-en.png){.thumbnail}
+>>
+> **Krok 2**
+>>
+>> Kliknij przycisk `...`{.action} po prawej stronie linii, a następnie kliknij `Opłać fakturę`{.action}.
+>> Zostaniesz przekierowany do platformy płatności online.
+>>
+>> > [!primary]
+>> > Informacja **Płatność do uregulowania** pojawi się, gdy faktura oczekuje na płatność i gdy:
+>> >
+>> > - Posiadasz usługi z opcją automatycznego odnawiania.
+>> > - Nie masz ustawionego sposobu płatności umożliwiającego pobranie środków w celu uregulowania faktur.
+<!-- CP-STEPS-END:oplacenie-faktury-za-odnowienie-domeny -->
 
 ## FAQ
 
@@ -176,18 +248,26 @@ Możesz otrzymać automatyczny zwrot płatności do 10 dni przed datą faktyczne
 
 Po opłaceniu opłaty za odnowienie usługi wyślemy wniosek do odpowiedniego rejestru.
 
-Status Twojej domeny zmieni się na `Odnowienie w trakcie`.
+Twoja domena przejdzie w status **odnowienie w trakcie**.
 
-Po odnowieniu domeny przez registry (około miesiąc po uregulowaniu opłat za odnowienie), domena będzie miała status `Zarejestrowana`.
+Po odnowieniu domeny przez registry (około miesiąc po uregulowaniu opłat za odnowienie), Twoja domena powróci do statusu wskazującego, że jest ponownie **zarejestrowana**.
 
 Dane WHOIS są aktualizowane.
 
-Aby sprawdzić status odnowienia domeny:
+<!-- CP-STEPS-START:faq-sprawdz-status-odnowienia -->
+Aby sprawdzić status odnowienia domeny, kliknij zakładki poniżej, aby wyświetlić każdy z **2** kroków.
 
-1. Zaloguj się do [Panelu klienta OVHcloud](/links/manager).
-1. Przejdź do sekcji `Web Cloud`{.action}.
-1. Kliknij na `Domeny`{.action} w sekcji `Domeny i DNS`{.action}.
-1. W tabeli, która się wyświetla sprawdź status odnowienia w kolumnie `Status` danej domeny.
+> [!tabs]
+> **Krok 1**
+>>
+>> Przejdź na stronę [Domeny](/links/control-panel/web-domains), następnie wybierz odpowiednią domenę.
+>>
+>> ![Domeny](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
+>>
+> **Krok 2**
+>>
+>> W sekcji **Informacje ogólne** sprawdź status odnowienia pod pozycją **Status domeny**.
+<!-- CP-STEPS-END:faq-sprawdz-status-odnowienia -->
 
 ///
 

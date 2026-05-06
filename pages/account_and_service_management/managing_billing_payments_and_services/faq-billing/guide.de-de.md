@@ -10,7 +10,7 @@ Hier finden Sie die häufigsten Fragen zur Abrechnung und Bezahlung Ihrer OVHclo
 
 ### Welcher ist mein hinterlegter Rechnungskontakt?
 
-Die Liste der Kontakte Ihrer Dienste ist direkt über Ihr [OVHcloud Kundencenter](/links/manager) verfügbar. Klicken Sie oben rechts auf Ihren Namen und dann auf `Meine Kontakte`{.action}.
+Die Liste der Kontakte Ihrer Dienste finden Sie auf der Seite [Kontaktverwaltung](/links/control-panel/account-contacts).
 
 #### Tipps und Tricks
 
@@ -18,7 +18,7 @@ Mehr Informationen zur Verwaltung der Kontakte finden Sie in der folgenden ausf�
 
 ### Wie kann ich meine Zahlungsdaten ändern?
 
-Ihre Abrechnungsdaten sind Ihre Kundenkennung. Für Ihre nächsten Rechnungen genügt es daher, diese Angaben zu aktualisieren. Verbinden Sie sich mit Ihr [OVHcloud Kundencenter](/links/manager) ein, klicken Sie oben rechts auf Ihren Namen und dann auf `Mein Account`{.action}.
+Ihre Abrechnungsdaten sind Ihre Kundenkennung. Für Ihre nächsten Rechnungen genügt es daher, diese Angaben auf der Seite [Mein Profil](/links/control-panel/account-profile) zu aktualisieren.
 
 Aus rechtlichen Gründen können Sie die Daten für bereits erstellte Rechnungen nicht mehr ändern. Sollte Ihre Anfrage auf einen Fehler unserer Dienste zurückgehen, kontaktieren Sie uns bitte über ein [Support-Ticket](https://help.ovhcloud.com/csm?id=csm_get_help).
 
@@ -31,14 +31,14 @@ Verlängern Sie Ihren Dienst nicht vor dem Ablaufdatum, wird er gesperrt und nac
 
 #### Gut zu wissen:
 
-Um den Status Ihrer Dienste einzusehen, loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein, klicken Sie oben rechts auf Ihren Namen und dann auf `Meine Angebote und Dienste`{.action}.
-Nach Anmeldung auf der Seite <https://www.ovh.de/cgi-bin/order/renew.cgi> lassen sich hier Ihre Dienste manuell verlängern.
+Um den Status Ihrer Dienste einzusehen, öffnen Sie die Seite [Meine Angebote und Dienste](/links/control-panel/billing-services).
+Auf der Seite <https://www.ovh.de/cgi-bin/order/renew.cgi> lassen sich Ihre Dienste manuell verlängern.
 
 Diese Anleitung beschreibt die Verlängerung ausführlich: [Verlängerung Ihrer OVHcloud Dienste verwalten](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal)
 
 ### Wie kann ich die automatische Verlängerung aktivieren?
 
-Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein, klicken Sie oben rechts auf Ihren Namen und dann auf `Meine Angebote und Dienste`{.action}. Wählen Sie dann den betreffenden Dienst aus, klicken Sie auf die drei Punkte und wählen Sie `Automatische Zahlung aktivieren`{.action} aus. Standardmäßig wird die automatische Verlängerung bei der Bestellung des Dienstes aktiviert.
+Auf der Seite [Meine Angebote und Dienste](/links/control-panel/billing-services) wählen Sie den betreffenden Dienst aus, klicken Sie auf die drei Punkte und wählen Sie `Automatische Zahlung aktivieren`{.action} aus. Standardmäßig wird die automatische Verlängerung bei der Bestellung des Dienstes aktiviert.
 
 #### Tipps und Tricks
 
@@ -47,7 +47,7 @@ Wenn Sie detaillierte Erläuterungen wünschen, empfehlen wir Ihnen dazu die fol
 
 ### Wie kann ich die automatische Verlängerung deaktivieren?
 
-oggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein, klicken Sie oben rechts auf Ihren Namen und dann auf `Meine Angebote und Dienste`{.action}. Wählen Sie dann den betreffenden Dienst aus, klicken Sie auf die drei Punkte in der letzten Tabellenspalte und wählen Sie `Konfigurieren der Verlängerung`{.action} aus. Sie können nun den manuellen Modus auswählen. Dieser Modus steht nur für bestimmte Dienstleistungen zur Verfügung, wie Domainnamen, Webhosting, VPS und Dedicated Server.
+Auf der Seite [Meine Angebote und Dienste](/links/control-panel/billing-services) wählen Sie den betreffenden Dienst aus, klicken Sie auf die drei Punkte in der letzten Tabellenspalte und wählen Sie `Konfigurieren der Verlängerung`{.action} aus. Sie können nun den manuellen Modus auswählen. Dieser Modus steht nur für bestimmte Dienstleistungen zur Verfügung, wie Domainnamen, Webhosting, VPS und Dedicated Server.
 
 Um einen Dienst zu kündigen, informieren Sie sich bitte hier [Wie kann ich einen Dienst kündigen?](#cancelservice)
 
@@ -58,11 +58,11 @@ Wenn Sie detaillierte Erläuterungen wünschen, empfehlen wir Ihnen dazu die fol
 
 ### Wie kann ich ein Zahlungsmittel hinzufügen?
 
-Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein, klicken Sie auf Ihren Namen oben rechts, klicken Sie auf `Meine Zahlungsarten`{.action} und dann auf `Zahlungsart hinzufügen`{.action}.
+Auf der Seite [Zahlungsarten](/links/control-panel/billing-payment-methods) klicken Sie auf `Zahlungsart hinzufügen`{.action}.
 
 ### Wie kann ich mein Zahlungsmittel aktualisieren?
 
-Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein, klicken Sie auf Ihren Namen oben rechts und dann auf `Meine Zahlungsarten`{.action}. Sie können ein Zahlungsmittel hinzufügen oder entfernen (Kreditkarte, PayPal oder SEPA-Lastschrift).
+Auf der Seite [Zahlungsarten](/links/control-panel/billing-payment-methods) können Sie ein Zahlungsmittel hinzufügen oder entfernen (Kreditkarte, PayPal oder SEPA-Lastschrift).
 
 Wenn Sie eine SEPA-Lastschrift beantragen, erhalten Sie innerhalb von 24 bis 48 Stunden eine E-Mail an die mit Ihrem OVHcloud-Account verbundene Adresse. Dort finden Sie einen elektronischen Signaturlink für Ihr Lastschriftmandat. Bitte beachten Sie: Der Inhaber des Bankkontos muss mit dem Inhaber des OVHcloud-Accounts identisch sein.
 
@@ -74,7 +74,7 @@ Damit Ihre Dienste reibungslos verlängert werden können, sollte im Kundencente
 
 ### Wie kann ich ein Zahlungsmittel löschen?
 
-Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein, klicken Sie auf Ihren Namen oben rechts und dann auf `Meine Zahlungsarten`{.action}. Wählen Sie dann das Zahlungsmittel aus, das Sie löschen möchten, und klicken Sie auf das Papierkorb-Symbol.
+Auf der Seite [Zahlungsarten](/links/control-panel/billing-payment-methods) wählen Sie das Zahlungsmittel aus, das Sie löschen möchten, und klicken Sie auf das Papierkorb-Symbol.
 
 #### Tipps und Tricks
 
@@ -92,13 +92,13 @@ Wenn Ihr OVHcloud Prepaid Account ein Guthaben aufweist, wird er standardmäßig
 
 ### Wann erfolgt meine nächste Abbuchung?
 
-Die Daten aller Verlängerungen finden Sie unter „Meine Angebote und Dienste“, direkt zugänglich auf dem Dashboard in Ihrem OVHcloud Kundencenter.
+Die Daten aller Verlängerungen finden Sie unter „Meine Angebote und Dienste”, direkt zugänglich auf dem Dashboard in Ihrem OVHcloud Kundencenter.
 
 Bei Diensten mit automatischer Verlängerung wird der Rechnungsbetrag am Ersten des Monats abgebucht. Die Abbuchungen können jedoch entsprechend Ihren Dienstleistungen unterschiedlich häufig erfolgen.
 
 #### Tipps und Tricks
 
-Loggen Sie sich mit Ihr [OVHcloud Kundencenter](/links/manager)ein, klicken Sie oben rechts auf Ihren Namen und dann auf `Meine Angebote und Dienste`{.action}. Hier können Sie die Häufigkeit der Verlängerung Ihrer Lösungen ändern.
+Auf der Seite [Meine Angebote und Dienste](/links/control-panel/billing-services) können Sie die Häufigkeit der Verlängerung Ihrer Lösungen ändern.
 Wenn Sie detaillierte Erläuterungen wünschen, empfehlen wir Ihnen dazu die folgende Anleitung: [Verlängerung meiner Dienste verwalten](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal)
 
 ### Welches meiner Zahlungsmittel wird belastet?
@@ -111,11 +111,11 @@ Wenn Ihr OVHcloud Prepaid Account ein Guthaben aufweist, wird er standardmäßig
 
 ### Wo kann ich meine Rechnungen einsehen?
 
-Loggen Sie sich mit Ihr [OVHcloud Kundencenter](/links/manager) ein, klicken Sie auf Ihren Namen oben rechts und dann auf `Meine Rechnungen`{.action}.
+Öffnen Sie die Seite [Meine Rechnungen](/links/control-panel/billing-invoices).
 
 #### Tipps und Tricks
 
-Wenn in Ihrem Kundencenter keine Rechnung angezeigt wird, sind Sie möglicherweise nicht der Rechnungskontakt für die betreffende Dienstleistung. Um ihn zu kennen und gegebenenfalls zu ändern, loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein, klicken Sie oben rechts auf Ihren Namen und dann auf `Meine Kontakte`{.action}.
+Wenn keine Rechnung angezeigt wird, sind Sie möglicherweise nicht der Rechnungskontakt für die betreffende Dienstleistung. Um ihn zu kennen und gegebenenfalls zu ändern, öffnen Sie die Seite [Kontaktverwaltung](/links/control-panel/account-contacts).
 
 ### Wie kann ich meine Rechnungen begleichen?
 
@@ -136,7 +136,7 @@ Das Dashboard Ihres OVHcloud Kundencenters zeigt die ausstehenden Rechnungen an.
 
 #### Tipps und Tricks
 
-Loggen Sie sich mit Ihr [OVHcloud Kundencenter](/links/manager)ein, klicken Sie auf Ihren Namen oben rechts und dann auf `Meine Zahlungsarten`{.action}. Dort können Sie dann Ihre Zahlungsart eintragen. So werden Ihre Rechnungen automatisch beglichen.
+Auf der Seite [Zahlungsarten](/links/control-panel/billing-payment-methods) können Sie Ihre Zahlungsart eintragen. So werden Ihre Rechnungen automatisch beglichen.
 
 ### Wie kann ich meine Zahlungen nachverfolgen?
 
@@ -144,9 +144,7 @@ Die Zahlungen, die Sie über unsere Seite vornehmen, sowie automatische Abrechnu
 
 ### Wie kann ich einen Dienst kündigen? <a name="cancelservice"></a>
 
-Für Lösungen wie Domainnamen, Webhostings, Dedicated Server und VPS, loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein, klicken Sie oben rechts auf Ihren Namen und dann auf `Meine Angebote und Dienste`{.action}.
-
-Gehen Sie im OVHcloud Kundencenter in die Rubrik `Meine Angebote und Dienste`{.action}, um Lösungen wie Domainnamen, Webhosting, Dedicated Server und VPS zu kündigen. Wählen Sie dann den betreffenden Dienst aus, klicken Sie auf die drei Punkte ganz rechts daneben und dann auf `Meinen Dienst kündigen`{.action}. Sollten Sie den Dienst bereits gekündigt haben, wird Ihnen die Option `Kündigung der Dienstes stornieren`{.action} angeboten.
+Für Lösungen wie Domainnamen, Webhostings, Dedicated Server und VPS öffnen Sie die Seite [Meine Angebote und Dienste](/links/control-panel/billing-services). Wählen Sie den betreffenden Dienst aus, klicken Sie auf die drei Punkte ganz rechts daneben und dann auf `Meinen Dienst kündigen`{.action}. Sollten Sie den Dienst bereits gekündigt haben, wird Ihnen die Option `Kündigung der Dienstes stornieren`{.action} angeboten.
 
 Die Kündigung wird mit dem Ablauf der Geltungsdauer oder der Vertragslaufzeit des Dienstes wirksam. Sie können Ihren Dienst bis 24 Stunden vor Ablauf kündigen oder aber die Kündigung stornieren.
 
@@ -174,7 +172,7 @@ Das gesamte Rechnungsbuch wird ausschließlich von der Buchhaltung des Antragste
 
 OVHcloud stellt Ihnen dennoch eine Exceldatei (.csv) zur Verfügung, in der Ihnen alle Ihre Rechnungen aufgelistet werden.
 
-Um ihn herunterzuladen, loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein, klicken Sie oben rechts auf Ihren Namen und dann auf `Meine Rechnungen`{.action}. Klicken Sie auf `Aktionen`{.action} und wählen Sie dann `als CSV exportieren`{.action} aus.
+Um die Datei herunterzuladen, öffnen Sie die Seite [Meine Rechnungen](/links/control-panel/billing-invoices). Klicken Sie auf `Aktionen`{.action} und wählen Sie dann `als CSV exportieren`{.action} aus.
 
 ## Weiterführende Informationen
  

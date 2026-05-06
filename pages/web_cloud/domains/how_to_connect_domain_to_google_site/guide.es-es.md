@@ -1,124 +1,164 @@
 ---
-title: "Cómo conectar un dominio de OVHcloud a un Google Site"
-excerpt: "Prepare y configure la zona DNS de su dominio OVHcloud para conectarla a un Google Site"
-updated: 2024-10-03
+title: "Conectar un nombre de dominio de OVHcloud a un Google Site"
+excerpt: "Prepare y configure la zona DNS de su nombre de dominio OVHcloud para conectarla a un Google Site"
+updated: 2026-03-18
 ---
 
 ## Objetivo
 
-Si tiene un dominio con OVHcloud y quiere conectarlo a un Google Site, Esta guía explica los pasos necesarios para preparar y configurar la zona DNS de OVHcloud con el fin de permitir la configuración de un Google Site.
+Si es titular de un nombre de dominio en OVHcloud y quiere conectarlo a un Google Site, esta guía explica cómo preparar y configurar su zona DNS de OVHcloud para su Google Site.
 
-**Cómo conectar un dominio de OVHcloud a un Google Site**
+**Cómo conectar un nombre de dominio de OVHcloud a un Google Site.**
 
 > [!warning]
 >
-> - El servicio de asistencia Google Site no tiene acceso a los parámetros de su dominio de OVHcloud y, por lo tanto, no puede aconsejarle sobre la información que deba proporcionarle.
->
-> - La configuración, la gestión y la responsabilidad de los servicios que OVHcloud pone a su disposición recaen sobre usted. Por lo tanto, usted deberá asegurarse de que estos funcionen correctamente.<br><br> Esta guía le ayudará a realizar las operaciones más habituales. No obstante, si necesita ayuda, le recomendamos que contacte con un [proveedor especializado](/links/partner) o con el editor del servicio. Nosotros no podremos asistirle al respecto. Para más información, consulte la sección [Más información](#gofurther) de esta guía.
+> - El servicio de asistencia de Google Site no tiene acceso a los parámetros de su nombre de dominio de OVHcloud y, por lo tanto, no puede aconsejarle sobre la información que deba proporcionarle.
+> - La configuración, la gestión y la responsabilidad de los servicios que OVHcloud pone a su disposición recaen sobre usted. Por lo tanto, usted deberá asegurarse de que estos funcionen correctamente.<br><br> Esta guía le ayudará a realizar las operaciones más habituales. No obstante, si necesita ayuda, le recomendamos que contacte con un [proveedor especializado](/links/partner) o con el editor del servicio. Nosotros no podremos asistirle al respecto. Para más información, consulte la sección [Más información](#go-further) de esta guía.
 >
 
 ## Requisitos
 
-- Haber iniciado sesión en el [área de cliente de OVHcloud](/links/manager).
-- Tener un [dominio](/links/web/domains) registrado con OVHcloud.
-- Disponer de los [permisos necesarios para gestionar](/pages/account_and_service_management/account_information/managing_contacts) el dominio desde el [área de cliente de OVHcloud](/links/manager).
+- Disponer de un [nombre de dominio](/links/web/domains) registrado en OVHcloud.
+- Disponer de los [permisos necesarios](/pages/account_and_service_management/account_information/managing_contacts) para gestionar el nombre de dominio.
 - Disponer de un Google Site y ser su propietario.
+
+<!-- CP-NAV-START:web-dns-zone -->
+---
+
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [Zonas DNS](/links/control-panel/web-dns-zone)
+- **Ruta de navegación:** `Web Cloud`{.action} > `Zonas DNS`{.action} > Seleccione su nombre de dominio
+
+---
+<!-- CP-NAV-END:web-dns-zone -->
 
 ## Procedimiento
 
-Antes de seguir los dos pasos de esta guía, le recomendamos que se familiarice con la configuración de una zona DNS mediante la guía [Editar una zona DNS de OVHcloud](/pages/web_cloud/domains/dns_zone_edit).
+Antes de seguir los pasos de esta guía, le recomendamos que consulte nuestra guía "[Editar una zona DNS de OVHcloud](/pages/web_cloud/domains/dns_zone_edit)".
 
 > [!warning]
 >
-> Su zona DNS podría estar ya preconfigurada o asociada a un alojamiento. Esta guía explica cómo identificar cada registro DNS necesario para conectarse al Google Site. Es necesario eliminar algunos registros para evitar conflictos con los registros DNS necesarios en esta configuración. Otros se pueden editar o crear fácilmente. Para una mejor comprensión, utilizaremos el nombre de dominio "**mydomain.ovh**" como ejemplo. Sustituya el dominio por su nombre de dominio durante la configuración.
+> Su zona DNS podría estar ya preconfigurada o asociada a un alojamiento web. A continuación explicamos cómo identificar cada registro DNS necesario para la conexión con su Google Site. Será necesario eliminar algunos registros para evitar conflictos con los registros DNS requeridos en esta configuración. Otros simplemente deberán modificarse o crearse. Para una mejor comprensión, utilizaremos el nombre de dominio "**mydomain.ovh**" como ejemplo. Sustitúyalo por su nombre de dominio durante la configuración.
 
-### Etapa 1 - Configurar su Google Site
+### 1. Configurar su Google Site
 
 > [!warning]
 >
-> Solo el propietario de un Google Site puede conectarlo a un nombre de dominio. Si lo necesita, consulte cómo [cambiar el propietario del sitio web de Google](https://support.google.com/sites/answer/97934).
+> Solo el propietario de un Google Site puede conectarlo a un nombre de dominio. Si lo necesita, consulte cómo [cambiar el propietario del Google Site](https://support.google.com/sites/answer/97934?hl=es).
 
-Si utiliza un sitio web de Google con un dominio de OVHcloud, deberá configurar su alojamiento siguiendo las instrucciones de la sección **Configurar un dominio personalizado** desde [**esta página de soporte de Google**](https://support.google.com/sites/answer/9068867?hl=es#zippy=).
+Prepare primero su Google Site siguiendo las instrucciones de la sección **Configurar un nombre de dominio personalizado** desde [**esta página del soporte de Google**](https://support.google.com/sites/answer/9068867?hl=es#zippy=).
 
-### Etapa 2 - Configurar los registros DNS en su cuenta de OVHcloud
+### 2. Configurar sus registros DNS en su cuenta de OVHcloud
 
-Conéctese al [área de cliente de OVHcloud](/links/manager) en la sección `Web Cloud`{.action}. Haga clic en `Dominios`{.action} y seleccione el dominio correspondiente. A continuación, abra la pestaña `Zona DNS`{.action}.
-
-Se mostrará una tabla con todos los registros DNS del dominio seleccionado.
-
-![Zona DNS](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/tab-mydomain-anycast.png){.thumbnail}
-
-Cada registro DNS puede modificarse haciendo clic en el botón `...`{.action} a la derecha de la fila de la tabla correspondiente y haciendo clic en `Modificar el registro`{.action}.
-
-Siga los pasos en el orden indicado en las fichas siguientes:
+<!-- CP-STEPS-START:configure-dns-records -->
+Haga clic en las pestañas siguientes para visualizar sucesivamente cada uno de los **5** pasos.
 
 > [!tabs]
-> **Etapa 1**
->> **Registro A**<br><br>
->> Para identificar los registros "A" existentes, haga clic en el menú de filtros situado en la parte superior de la tabla de registros DNS y seleccione "A".
+> **Paso 1**
+>>
+>> Acceda a la página [Zonas DNS](/links/control-panel/web-dns-zone) y seleccione el nombre de dominio correspondiente.
+>>
+>> ![Zonas DNS](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
+>>
+>> La tabla lista los registros DNS del nombre de dominio seleccionado.
+>>
+> **Paso 2**
+>>
+>> **Configuración de los registros A**
+>>
+>> **1 - Identificación:** filtre los registros DNS seleccionando el tipo `A` en el menú de filtros situado en la parte superior derecha de la tabla.
 >>
 >> ![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/filter-a.png){.thumbnail}
 >>
->> - Haga clic en el botón `...`{.action} a la derecha de la fila de la tabla que corresponde únicamente a su nombre de dominio, sin subdominio (por ejemplo, `mydomain.ovh.`) y seleccione `Modificar el registro`{.action}.<br>
->> - Si hay un registro para el subdominio "www" (por ejemplo, `www.mydomain.ovh.`), elimínelo para que no entre en conflicto con el registro CNAME que vaya a introducir en el etapa 4. Haga clic en el botón `...`{.action} a la derecha de la fila de la tabla correspondiente a su subdominio en "www" y, seguidamente, en `Eliminar el registro`{.action}.<br>
->> - Si no tiene un registro "A" existente, haga clic en el botón `Añadir un registro`{.action} en la parte superior derecha de su pantalla y seleccione el "Campo de punteo" `A`{.action}<br><br>
->> Cree 4 registros de tipo "A" sucesivamente para indicar las 4 direcciones IPv4 relativas a Google Site.
->> Deje el campo **Subdominio** vacío e introduzca la primera dirección IPv4 de Google Site `216.239.32.21` en el campo **Destino**.
->> Haga clic en `Siguiente`{.action} y acepte el registro "A". Repita la operación para las otras tres direcciones IPv4 `216.239.34.21`, `216.239.36.21` y `216.239.38.21` y continúe con el etapa 2. Debido a que los valores de estas direcciones IP pueden cambiar, compruebe en la documentación oficial [el valor de los registros A](https://support.google.com/a/answer/2579934?hl=es&ref_topic=2721296&sjid=1037374977980680534-EU).
+>> Localice los registros "A" existentes para su nombre de dominio solo (ejemplo: `mydomain.ovh.`) y para el subdominio "www" (ejemplo: `www.mydomain.ovh.`).
 >>
-> **Etapa 2**
->> **Registro AAAA**<br><br>
->> Para identificar los registros "AAAA" existentes, haga clic en el menú de filtros situado en la parte superior de la tabla de registros DNS y seleccione "AAAA".
+>> **2 - Eliminación:** elimine todos los registros "A" existentes para el subdominio "www". Si existen más de 4 registros "A" para el nombre de dominio solo, elimine los registros excedentes para conservar solo 4. Para cada registro que deba eliminar, haga clic en el botón `...`{.action} a la derecha de la línea correspondiente y luego en `Eliminar el registro`{.action}.
+>>
+>> **3 - Modificación:** modifique cada registro "A" conservado para el nombre de dominio solo haciendo clic en el botón `...`{.action} y luego en `Editar el registro`{.action}. Sustituya el destino por una de las 4 direcciones IPv4 de Google Site (una dirección diferente por registro):
+>>
+>> - `216.239.32.21`
+>> - `216.239.34.21`
+>> - `216.239.36.21`
+>> - `216.239.38.21`
+>>
+>> Haga clic en `Siguiente`{.action} y confirme.
+>>
+>> **4 - Adición:** si existían menos de 4 registros "A", cree los registros que faltan. Haga clic en `Añadir un registro`{.action} en la parte superior derecha, seleccione el campo de apuntado `A`{.action}, deje el campo **Subdominio** vacío e introduzca en el campo **Destino** cada dirección IPv4 aún no asignada. Haga clic en `Siguiente`{.action} y confirme.
+>>
+>> Dado que los valores de estas direcciones IP pueden cambiar, compruébelos en la documentación oficial [valor de los registros A](https://support.google.com/a/answer/2579934?hl=es&ref_topic=2721296&sjid=10373374977980680534-EU).
+>>
+>> A continuación, pase al paso 3.
+>>
+> **Paso 3**
+>>
+>> **Eliminación de los registros AAAA**
+>>
+>> **1 - Identificación:** filtre los registros DNS seleccionando el tipo `AAAA` en el menú de filtros situado en la parte superior derecha de la tabla.
 >>
 >> ![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/filter-aaaa.png){.thumbnail}
 >>
->> - Haga clic en el botón `...`{.action} a la derecha de la fila de la tabla correspondiente a su dominio solo, sin subdominio (por ejemplo, `mydomain.ovh.`) y seleccione `Eliminar el registro`{.action}.<br>
->> - Si hay un registro para el subdominio "www" (por ejemplo, "www.mydomain.ovh."), elimínelo también para que no entre en conflicto con el registro CNAME que vaya a introducir en el etapa 4. Haga clic en el botón `...`{.action} a la derecha de la fila de la tabla correspondiente a su subdominio en "www" y seleccione "`Eliminar el registro`{.action}.<br>
->> - Si no tiene un registro "AAAA" existente, vaya al etapa 3.
+>> Localice los registros "AAAA" existentes para su nombre de dominio solo (ejemplo: `mydomain.ovh.`) y para el subdominio "www" (ejemplo: `www.mydomain.ovh.`).
 >>
-> **Etapa 3**
->> **Registro TXT**<br><br>
->> Para identificar los registros "TXT" existentes, haga clic en el menú de filtros situado en la parte superior de la tabla de registros DNS y seleccione " TXT ".
+>> **2 - Eliminación:** elimine todos los registros "AAAA" identificados (nombre de dominio solo y subdominio "www") para evitar un conflicto con los nuevos registros DNS. Para cada registro, haga clic en el botón `...`{.action} a la derecha de la línea correspondiente y luego en `Eliminar el registro`{.action}.
+>>
+>> Si no existe ningún registro "AAAA", pase al paso 4.
+>>
+> **Paso 4**
+>>
+>> **Configuración del registro TXT**
+>>
+>> **1 - Identificación:** filtre los registros DNS seleccionando el tipo `TXT` en el menú de filtros situado en la parte superior derecha de la tabla.
 >>
 >> ![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/filter-txt.png){.thumbnail}
 >>
->> - Si existen registros "TXT" para el dominio solo (por ejemplo, `mydomain.ovh.`) y para su subdominio "www" (por ejemplo, `www.mydomain.ovh.`), elimínelos para que no entren en conflicto con el registro CNAME que vaya a introducir en el etapa 4. Haga clic en el botón `...`{.action}" a la derecha de la fila de la tabla correspondiente a su subdominio en "www" y seleccione `Eliminar el registro`{.action}.<br>
->> - Debe crear un registro de tipo TXT. Haga clic en el botón `Añadir un registro`{.action} en la parte superior derecha de la pantalla y seleccione el "Campo de punteo" `TXT`{.action}.
->> Rellene los campos **Subdominio** y **Destino** con la información de la página "[Valores de registro TXT](https://support.google.com/a/answer/2716802?hl=es&ref_topic=2716886&sjid=3052810298579211755-EU)" de la documentación oficial. Por lo general, el valor del campo **Subdominio** está vacío y el del campo **Destino** es de tipo `google-site-verification=XXXXXXXXXXXX`.<br>
->> Haga clic en `Siguiente`{.action} para validar su registro TXT y continúe en el etapa 4.
+>> Localice los registros "TXT" existentes para su nombre de dominio solo (ejemplo: `mydomain.ovh.`) y para el subdominio "www" (ejemplo: `www.mydomain.ovh.`).
 >>
-> **Etapa 4**
->> **Registro CNAME**<br><br>
->> Para identificar los registros CNAME existentes, haga clic en el menú de filtros situado en la parte superior de la tabla de registros DNS y seleccione " CNAME ".
+>> **2 - Eliminación:** elimine todos los registros "TXT" identificados (nombre de dominio solo y subdominio "www") para evitar un conflicto con los nuevos registros DNS. Para cada registro, haga clic en el botón `...`{.action} a la derecha de la línea correspondiente y luego en `Eliminar el registro`{.action}.
+>>
+>> **3 - Adición:** cree un registro TXT de verificación. Haga clic en `Añadir un registro`{.action} en la parte superior derecha, seleccione el campo de apuntado `TXT`{.action}. Complete los campos **Subdominio** y **Destino** con la información presente en la página "[Valores de los registros TXT](https://support.google.com/a/answer/2716802?hl=es&ref_topic=2716886&sjid=3052810298579211755-EU)" de la documentación oficial. Generalmente, el campo **Subdominio** está vacío y el campo **Destino** es de tipo `google-site-verification=XXXXXXXXXXXX`. Haga clic en `Siguiente`{.action} y confirme.
+>>
+>> A continuación, pase al paso 5.
+>>
+> **Paso 5**
+>>
+>> **Configuración del registro CNAME**
+>>
+>> **1 - Identificación:** filtre los registros DNS seleccionando el tipo `CNAME` en el menú de filtros situado en la parte superior derecha de la tabla.
 >>
 >> ![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/filter-cname.png){.thumbnail}
 >>
->> - Haga clic en el botón `...`{.action} a la derecha de la fila de la tabla correspondiente a su subdominio en "www" (por ejemplo: `www.mydomain.ovh.`) y seleccione `Modificar el registro`{.action}.<br>
->> - Si no tiene un registro "CNAME" existente, haga clic en el botón `Añadir un registro`{.action} en la parte superior derecha de su pantalla y seleccione el "Campo de punteo" `CNAME`{.action}.
+>> Localice los registros "CNAME" existentes para el subdominio "www" (ejemplo: `www.mydomain.ovh.`).
 >>
->> Complete el campo **Subdominio** con el valor `www` e introduzca `ghs.googlehosted.com.` en el campo **Destino**. Estos valores pueden cambiar, por lo que deberá revisarlos en la página "[Valores de los registros CNAME](https://support.google.com/a/answer/112038?sjid=305281029857921755-EU)" de la documentación oficial<br>
->> Haga clic en `Siguiente`{.action} para validar su registro CNAME.
+>> **2 - Eliminación:** si existen varios registros "CNAME" para el subdominio "www", elimínelos todos excepto uno. Para cada registro que deba eliminar, haga clic en el botón `...`{.action} a la derecha de la línea correspondiente y luego en `Eliminar el registro`{.action}.
+>>
+>> **3 - Modificación:** si existe un registro "CNAME" para el subdominio "www", haga clic en el botón `...`{.action} y luego en `Editar el registro`{.action}. Sustituya únicamente el **Destino** por `ghs.googlehosted.com.`. Haga clic en `Siguiente`{.action} y confirme.
+>>
+>> Si no existe ningún registro "CNAME" para el subdominio "www", haga clic en `Añadir un registro`{.action} en la parte superior derecha, seleccione el campo de apuntado `CNAME`{.action}, introduzca `www` en el campo **Subdominio** y `ghs.googlehosted.com.` en el campo **Destino**. Haga clic en `Siguiente`{.action} y confirme.
+>>
+>> Dado que estos valores pueden cambiar, compruébelos en la página "[Valores de los registros CNAME](https://knowledge.workspace.google.com/admin/support/troubleshooting/cname-record-values?hl=es)" de la documentación oficial.
+<!-- CP-STEPS-END:configure-dns-records -->
 
-La zona DNS ya está configurada para asociarse a un Google Site.
+La zona DNS ya está configurada para apuntar a su Google Site.
 
 > [!primary]
 >
-> La comprobación del dominio puede tardar hasta 48 horas.
+> La verificación de su nombre de dominio puede tardar hasta 48 horas.
 
-Si utiliza un servicio de correo de OVHcloud o tiene previsto contratar uno de [nuestros servicios de correo](/links/web/emails), deberá preparar su zona DNS en consecuencia. Para más información, consulte nuestra guía sobre la [configuración de un registro MX](/pages/web_cloud/domains/dns_zone_mx).
+Si utiliza un servicio de correo de OVHcloud o tiene previsto contratar uno de [nuestros servicios de correo](/links/web/emails), prepare su zona DNS en consecuencia. Consulte nuestra guía sobre la [configuración de un registro MX](/pages/web_cloud/domains/dns_zone_mx).
 
 ## Más información <a name="go-further"></a>
 
-[Cambiar los servidores DNS de un dominio en OVHcloud](/pages/web_cloud/domains/dns_server_general_information)
+[Cambiar los servidores DNS de un nombre de dominio en OVHcloud](/pages/web_cloud/domains/dns_server_general_information)
 
-[Crear una zona DNS de OVHcloud para un dominio](/pages/web_cloud/domains/dns_zone_create)
+[Crear una zona DNS de OVHcloud para un nombre de dominio](/pages/web_cloud/domains/dns_zone_create)
 
 [Editar una zona DNS de OVHcloud](/pages/web_cloud/domains/dns_zone_edit)
 
-Para cambiar la gestión de un dominio a otra cuenta de cliente de OVHcloud, consulte la guía [Gestionar los contactos de los servicios](/pages/account_and_service_management/account_information/managing_contacts) de OVHcloud.
+Para cambiar la gestión de un nombre de dominio a otra cuenta de cliente de OVHcloud, consulte la guía "[Gestionar los contactos de los servicios](/pages/account_and_service_management/account_information/managing_contacts)".
 
-Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](/links/partner).
+Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con los [partners de OVHcloud](/links/partner).
 
-Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](/links/support).
+Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas [ofertas de soporte](/links/support).
 
 Interactúe con nuestra [comunidad de usuarios](/links/community).

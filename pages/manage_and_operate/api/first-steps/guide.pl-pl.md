@@ -132,7 +132,7 @@ Zakładki `PHP` i `Python` zawierają elementy, które należy dodać do skryptu
 
 Każda aplikacja, która chce komunikować się z API OVHcloud, musi zostać zgłoszona z wyprzedzeniem.
 
-W tym celu kliknij link: [https://eu.api.ovh.com/createToken/](https://eu.api.ovh.com/createToken/).
+W tym celu kliknij link: [https://auth.eu.ovhcloud.com/api/createToken](https://auth.eu.ovhcloud.com/api/createToken).
 
 Wpisz identyfikator klienta, hasło i nazwę aplikacji. Nazwa będzie pomocna później, jeśli chcesz zezwolić innym na jej używanie.
 
@@ -190,7 +190,7 @@ Przykład zastosowania sekcji `/me`, która pozwala na zarządzanie kontem OVHcl
 ```python
 import ovh
 
-# Instantiate. Visit https://api.ovh.com/createToken/?GET=/me
+# Instantiate. Visit https://auth.eu.ovhcloud.com/api/createToken?GET=/me
 # to get your credentials
 client = ovh.Client(
     endpoint='ovh-eu',
@@ -212,28 +212,28 @@ Do wyświetlania i odwoływania kluczy możesz użyć [portalu API](/links/api) 
 >>
 >> - Wyświetl identyfikatory kluczy, korzystając z następującego wywołania:
 >>
->> > [!API]
+>> > [!api]
 >> >
 >> > @api {v1} /me GET /me/api/application
 >> >
 >>
 >> - Uzyskaj szczegóły klucza za pomocą następującego wywołania:
 >>
->> > [!API]
+>> > [!api]
 >> >
 >> > @api {v1} /me GET /me/api/application/{applicationId}
 >> >
 >>
 >> - Unieważnij klucz za pomocą następującego wywołania:
 >>
->> > [!API]
+>> > [!api]
 >> >
 >> > @api {v1} /me DELETE /me/api/application/{applicationId}
 >> >
 >>
 > W Panelu klienta OVHcloud
 >>
->> Przejdź do menu `Tożsamość, bezpieczeństwo i operacje`{.action} a następnie `Klucze API`{.action}.
+>> Przejdź do strony [Klucze API](/links/control-panel/iam-api-keys).
 >>
 >> ![API keys manager](images/api-keys-manager.png){.thumbnail}
 >>

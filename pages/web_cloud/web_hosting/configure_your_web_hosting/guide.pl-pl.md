@@ -45,7 +45,17 @@ Zmiana konfiguracji hostingu w [Panelu klienta OVHcloud](/links/manager) lub zmi
 ## Wymagania początkowe
 
 - Posiadanie [hostingu OVHcloud](/links/web/hosting), z wyjątkiem [hostingu Cloud Web](/links/web/hosting-cloud-web-offer).
-- Dostęp do hostingu z poziomu [Panelu klienta OVHcloud](/links/manager) lub informacje potrzebne do zalogowania się do [przestrzeni dyskowej FTP](/pages/web_cloud/web_hosting/ftp_connection).
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Web hosting](/links/control-panel/web-hosting)
+- **Ścieżka nawigacji:** `Web Cloud`{.action} > `Hosting`{.action} > Wybierz hosting WWW
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## W praktyce
 

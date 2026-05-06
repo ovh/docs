@@ -1,6 +1,6 @@
 ---
 title: "Guides d'utilisation de nos précédentes gammes de téléphones"
-excerpt: 'Retrouvez les guides des précédents téléphones fournis par OVHcloud'
+excerpt: "Retrouvez les guides d'utilisation, de branchement et de dépannage des précédentes gammes de téléphones VoIP fournis par OVHcloud"
 updated: 2024-02-15
 ---
 

@@ -1,7 +1,7 @@
 ---
-title: Valkey - Capabilities and Limitations
+title: Capabilities and Limitations of Public Cloud Databases for Valkey
 excerpt: Discover the capabilities and limitations of Public Cloud Databases for Valkey
-updated: 2025-07-31
+updated: 2026-04-15
 ---
 
 ## Objective
@@ -25,6 +25,8 @@ The Public Cloud Databases offer is available in the following regions:
 - `EU-SOUTH-MIL` (Milan, France)
 - `UK` (London, United Kingdom)
 - `WAW` (Warsaw, Poland)
+- `RBX` (Roubaix, France)
+- `AP-SOUTH-MUM` (Mumbai, India)
 
 Database nodes have to be in the same region.
 
@@ -34,6 +36,7 @@ The Public Cloud Databases offer uses the following Redis® open source and Valk
 
 - Valkey 7.2
 - Valkey 8.0
+- Valkey 8.1
 
 Please refer to the [DBMS lifecycle policy guide](/pages/public_cloud/public_cloud_databases/information_02_lifecycle_policy) for recommendations on version upgrades and end of life announcements of major versions. Additionally, you can follow Redis® release cycle on their official page: <https://redis.io/topics/releases>
 
@@ -45,25 +48,10 @@ You can use any of the [clients recommended by Redis®](https://redis.io/clients
 
 Two plans are available:
 
-- *Essential*
-- *Business/Production*
+- **Essential**: 1 node
+- **Business/Production**: 2 nodes
 
-Here is an overview of the various plans' capabilities:
-
-| Plan                  | Number of nodes by default | Additional nodes |
-| --------------------- | -------------------------- | ---------------- |
-| *Essential*           | 1                          | No               |
-| *Business/Production* | 2                          | No               |
-
-Your choice of plan affects the number of nodes your cluster can run, the SLA, and a few other features such as read replicas or backup retention.
-
-> [!primary]
-> Be aware that you will be able to upgrade your plan but you won't be able to downgrade it afterwards.
-
-#### Nodes and replicas
-
-- **Essential**: the cluster can support at most one node.
-- **Business/Production**: the cluster is delivered with 2 nodes by default.
+Your choice of plan affects the number of nodes your cluster can run, the SLA, and a few other features such as backup retention.
 
 #### License type
 
@@ -103,7 +91,7 @@ Once your service is up and running, you will be able to specify IP addresses (o
 
 The number of simultaneous connections in Public Cloud Databases for Valkey depends on the available total memory on the server. We allow 4 \* megabytes_of_bytes_memory connections per RAM GB, but at least 10000 connections, even on the smallest servers.
 
-So for example on a server with 7GB memory, you will get up to 7 \* 4096 = 28672 simultaneous connections.
+So for example on a server with 8GB memory, you will get up to 8 \* 4096 = 32768 simultaneous connections.
 
 #### Advanced parameters
 

@@ -27,9 +27,19 @@ details[open]>summary::before {
 ## Wymagania początkowe
 
 - [projekt Public Cloud](/pages/public_cloud/public_cloud_cross_functional/create_a_public_cloud_project) na koncie OVHcloud
-- dostęp do [Panelu klienta OVHcloud](/links/manager)
 - [użytkownika OpenStack](/pages/public_cloud/public_cloud_cross_functional/create_and_delete_a_user) (opcjonalnie)
 - podstawowa wiedza w zakresie sieci komputerowych
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Ścieżka nawigacji:** `Public Cloud`{.action} > Wybierz projekt
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## Interfejsy
 
@@ -868,7 +878,7 @@ Na przykład, jeśli masz publiczny interfejs *eth0*, dodasz interfejs *eth1*.
 
 > [!tabs]
 > Przez Panelu klienta OVHcloud
->> Zaloguj się do [Panelu klienta OVHcloud](/links/manager), przejdź do sekcji `Public Cloud`{.action} i wybierz odpowiedni projekt Public Cloud.
+>> W Twoim projekcie Public Cloud,
 >>
 >> Kliknij `Instancje`{.action} w lewym pasku nawigacyjnym, a następnie `⁝`{.action} po prawej stronie instancji. Wybierz `Dane dotyczące instancji`{.action}.
 >>

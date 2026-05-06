@@ -24,6 +24,18 @@ Bevor Sie beginnen, sollten Sie unbedingt diese Leitfäden lesen, um Ihre OpenSt
 
 ## In der praktischen Anwendung
 
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direkter Link:** [Public Cloud Projekte](/links/control-panel/publiccloud-projects)
+- **Navigationspfad:** `Public Cloud`{.action} > Wählen Sie Ihr Projekt aus
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
+
+
 ### Inhaltsübersicht
 
 - [Schritt 1: vRack aktivieren und verwalten](#activating-vrack)
@@ -53,7 +65,7 @@ Bevor Sie beginnen, sollten Sie unbedingt diese Leitfäden lesen, um Ihre OpenSt
 
 Wenn Sie ein älteres Projekt haben und kein vRack besitzen, müssen Sie eines bestellen. Dieses Produkt ist kostenlos und die Bereitstellung dauert nur wenige Minuten.
 
-Loggen Sie sich in Ihrem OVHcloud Kundencenter ein und klicken Sie im linken Menü auf den Button `Dienst hinzufügen`{.action} (Warenkorbsymbol). Benutzen Sie den Filter oben auf der Seite oder scrollen Sie nach unten, um den Dienst `vRack`{.action} zu finden.
+Klicken Sie im linken Menü auf den Button `Dienst hinzufügen`{.action} (Warenkorbsymbol). Benutzen Sie den Filter oben auf der Seite oder scrollen Sie nach unten, um den Dienst `vRack`{.action} zu finden.
 
 ![vRack bestellen](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/network/orderingvrack25.png){.thumbnail}
 

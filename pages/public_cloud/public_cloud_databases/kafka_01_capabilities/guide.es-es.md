@@ -1,7 +1,7 @@
 ---
-title: Kafka - Capabilities and Limitations
-excerpt: Discover the capabilities and limitations of Public Cloud Analytics for Kafka
-updated: 2025-08-04
+title: Capabilities and Limitations of Analytics with Kafka
+excerpt: Discover the capabilities and limitations of Analytics for Kafka
+updated: 2026-04-15
 ---
 
 ## Objective
@@ -25,6 +25,8 @@ The Public Cloud Analytics offer is available in the following regions:
 - `EU-SOUTH-MIL` (Milan, France)
 - `UK` (London, United Kingdom)
 - `WAW` (Warsaw, Poland)
+- `RBX` (Roubaix, France)
+- `AP-SOUTH-MUM` (Mumbai, India)
 
 ### Kafka versions
 
@@ -44,22 +46,10 @@ Kafka Connect and Kafka Mirrormaker 2 are available at OVHcloud.
 
 Different plans are available:
 
-- *Business/Production*
-- *Enterprise/Advanced*
+- **Business/Production**: 3 nodes
+- **Enterprise/Advanced**: 6 nodes
 
-Here is an overview of the various plans' capabilities:
-
-| Plan                  | Number of nodes by default | Additional nodes |
-| --------------------- | -------------------------- | ---------------- |
-| *Business/Production* | 3                          | No               |
-| *Enterprise/Advanced* | 6                          | No               |
-
-Your choice of plan affects the number of nodes your cluster can run, the SLA, and a few other features such as read replicas or backup retention.
-
-#### Nodes and replicas
-
-- **Business/Production**: the cluster is delivered with 3 nodes by default.
-- **Enterprise/Advanced**: the cluster is delivered with 6 nodes by default.
+Your choice of plan affects the number of nodes your cluster can run, the SLA, and a few other features such as backup retention.
 
 #### License type
 

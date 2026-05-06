@@ -1,5 +1,5 @@
 ---
-title: 'Email Pro - Skonfiguruj swoje konto e-mail w programie Outlook dla systemu macOS'
+title: 'E-mail Pro - Skonfiguruj swoje konto e-mail w programie Outlook dla systemu macOS'
 excerpt: 'Dowiedz się, jak skonfigurować konto E-mail Pro w programie Outlook na urządzeniu Mac'
 updated: 2025-04-28
 ---
@@ -23,6 +23,17 @@ Konta E-mail Pro mogą być skonfigurowane w jednym z kompatybilnych programów 
 - Instalacja aplikacji Microsoft Outlook na Twoim urządzeniu Mac
 - Dane do logowania do konta e-mail, które chcesz skonfigurować
 
+<!-- CP-NAV-START:web-email-pro -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [E-mail Pro](/links/control-panel/web-email-pro)
+- **Ścieżka nawigacji:** `Web Cloud`{.action} > `E-mail Pro`{.action} > Wybierz platformę
+
+---
+<!-- CP-NAV-END:web-email-pro -->
+
 > [!primary]
 >
 > Używasz programu Outlook na urządzeniu z systemem Windows ? Zapoznaj się z naszą dokumentacją: [Konfiguracja konta e-mail w programie Outlook na urządzeniu z systemem Windows](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_outlook_2016).
@@ -36,11 +47,7 @@ Konta E-mail Pro mogą być skonfigurowane w jednym z kompatybilnych programów 
 >
 > W przewodniku używamy oznaczenia serwera: pro?.mail.ovh.net. Zastąp “?” cyfrą oznaczającą serwer powiązany z Twoją usługą E-mail Pro.
 >
-> 1. Zaloguj się do [Panelu klienta OVHcloud](/links/manager).
-> 1. Przejdź do sekcji `Web Cloud`{.action}.
-> 1. Kliknij `Email Pro`{.action}.
-> 1. Wybierz odpowiednią platformę.
-> 1. Nazwa serwera jest widoczna w ramce **Logowanie** w zakładce `Informacje ogólne`{.action}.
+> Kliknij [ten link](/links/control-panel/web-email-pro), aby uzyskać dostęp do sekcji `E-mail Pro`{.action}. Nazwa serwera jest widoczna w ramce **Logowanie** w zakładce `Informacje ogólne`{.action}.
 >
 
 Po uruchomieniu aplikacji Mail na Twoim urządzeniu możesz dodać konto, korzystając z jednej z dwóch dostępnych metod.

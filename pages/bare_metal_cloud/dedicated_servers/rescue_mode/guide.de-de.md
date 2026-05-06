@@ -1,6 +1,6 @@
 ---
-title: "OVHcloud Rescue-Modus aktivieren und verwenden"
-excerpt: "Erfahren Sie hier, wie Sie das <i>Customer Rescue System</i> zur Fehlerbehebung bei einem Dedicated Server einsetzen"
+title: "Rescue-Modus auf einem Dedicated Server"
+excerpt: "Starten Sie Ihren Dedicated Server im OVHcloud Rescue-Modus, um Probleme zu diagnostizieren, Dateisysteme zu reparieren und Passwörter zurückzusetzen."
 updated: 2026-01-09
 ---
 
@@ -43,13 +43,21 @@ Der Rescue-Modus ist generell für folgende Aufgaben einzusetzen:
 ## Voraussetzungen
 
 - Sie haben einen [Dedicated Server](/links/bare-metal/bare-metal) in Ihrem Kunden-Account.
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
+
+<!-- CP-NAV-START:baremetal-dedicated-servers -->
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direkter Link:** [Dedicated Server](/links/control-panel/baremetal-dedicated-servers)
+- **Navigationspfad:** `Bare Metal Cloud`{.action} > `Dedicated Server`{.action} > Wählen Sie Ihren Server aus
+
+---
+<!-- CP-NAV-END:baremetal-dedicated-servers -->
 
 ## In der praktischen Anwendung
 
 Um den Rescue-Modus zu verwenden, müssen die Einstellung des `Netboot` für den Server geändert werden. Der Server muss anschließend neu gestartet werden.
-
-Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein und öffnen Sie den Bereich `Bare Metal Cloud`{.action} und dann `Dedicated Server`{.action}.
 
 Klicken Sie auf den Namen Ihres Servers, um den Tab `Allgemeine Informationen`{.action} zu öffnen.
 
@@ -57,7 +65,7 @@ Klicken Sie auf den Namen Ihres Servers, um den Tab `Allgemeine Informationen`{.
 
 Klicken Sie im Feld **Allgemeine Informationen** auf den Button `...`{.action} neben `Boot`. Klicken Sie im Kontextmenü auf `Bearbeiten`{.action}.
 
-![Startmodus ändern](images/rescue-mode-001.png){.thumbnail}
+![Boot-Option im Kontextmenü "Allgemeine Informationen" bearbeiten](images/rescue-mode-001.png){.thumbnail}
 
 <a name="netboot"></a>
 
@@ -65,7 +73,7 @@ Klicken Sie im Feld **Allgemeine Informationen** auf den Button `...`{.action} n
 
 Wählen Sie auf der Seite **Netboot-Modus ändern** `Im Rescue-Modus booten`{.action} aus.
 
-![Startmodus ändern](images/rescue-mode-002.png){.thumbnail}
+![Netboot-Seite mit ausgewähltem Boot im Rescue-Modus](images/rescue-mode-002.png){.thumbnail}
 
 Die verfügbaren Optionen für den Rescue-Modus hängen vom Servertyp und dem installierten **Betriebssystem** ab.
 

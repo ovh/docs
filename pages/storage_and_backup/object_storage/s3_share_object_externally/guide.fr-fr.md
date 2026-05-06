@@ -1,7 +1,7 @@
 ---
 title: Object Storage – Comment partager un objet ou fichier en externe
 excerpt: Découvrez comment partager en toute sécurité des fichiers Object Storage en externe dans OVHcloud, en utilisant des URLs signées, des objets public-read ou des politiques de bucket pour un accès contrôlé
-updated: 2025-12-19
+updated: 2026-03-06
 ---
 
 ## Objectif
@@ -22,7 +22,7 @@ Lorsque vous partagez des objets dans l'Object Storage OVHcloud, il est importan
 
 | Fonctionnalité             | URL Path-style                                                                | URL Virtual-hosted-style                                     |
 | -------------------------- | ------------------------------------------------------------------------------ | ------------------------------------------------------------ |
-| Format                     | `https://s3.<region>.io.cloud.ovh.net/<bucket>/<object-key>/<generated-code>` | `https://<bucket>.s3.<region>.io.cloud.ovh.net/<object-key>` |
+| Format                     | `https://s3.<region>.io.cloud.ovh.net/<bucket_name>/<object_key>/<generated_code>` | `https://<bucket_name>.s3.<region>.io.cloud.ovh.net/<object_key>` |
 | Utilisation typique        | URLs signées générées via l'API                                               | URLs provenant du panneau de configuration ou des objets publics                |
 | Emplacement du nom de bucket | Dans le chemin de l'URL                                                       | Dans le sous-domaine                                             |
 | Adapté pour                | Accès temporaire ou programmation                                              | Partage public ou liens stables                               |
@@ -50,15 +50,14 @@ L'Object Storage OVHcloud propose trois méthodes principales pour partager des 
 >>
 >> Étapes :
 >>
->> - Générez une URL signée via l'API OVHcloud ou un SDK compatible S3.
+>> - Générez une URL signée via l'API OVHcloud ou un SDK compatible S3<sup>1</sup>.
 >> - Définissez une date d'expiration.
 >> - Partagez l'URL avec l'utilisateur externe.
 >>
->> Exemple (compatible AWS CLI) :
+>> Exemple (AWS CLI) :
 >>
 >> ```bash
->> aws s3 presign s3://my-bucket/reports/data.csv --expires-in 3600 \
->>  --endpoint-url https://s3.gra.io.cloud.ovh.net
+>> aws s3 presign s3://<bucket_name>/<object_key> --expires-in 3600 --endpoint-url https://s3.<region>.io.cloud.ovh.net
 >> ```
 >>
 >> Cette commande retourne un lien temporaire valide pendant 1 heure.
@@ -74,17 +73,17 @@ L'Object Storage OVHcloud propose trois méthodes principales pour partager des 
 >> - Appliquez l'ACL public-read.
 >> - Partagez l'URL de l'objet.
 >>
->> Exemple (compatible AWS CLI) :
+>> Exemple (AWS CLI) :
 >>
 >> ```bash
 >> aws s3api put-object-acl \
->>  --bucket my-bucket \
->>  --key docs/manual.pdf \
+>>  --bucket <bucket_name> \
+>>  --key <object_key> \
 >>  --acl public-read \
->>  --endpoint-url https://s3.gra.io.cloud.ovh.net
+>>  --endpoint-url https://s3.<region>.io.cloud.ovh.net
 >> ```
 >>
->> L'objet devient accessible à l'adresse : `https://my-bucket.s3.gra.io.cloud.ovh.net/docs/manual.pdf`
+>> L'objet devient accessible à l'adresse : `https://<bucket_name>.s3.<region>.io.cloud.ovh.net/<object_key>`
 >>
 
 ## Aller plus loin
@@ -92,3 +91,5 @@ L'Object Storage OVHcloud propose trois méthodes principales pour partager des 
 Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](/links/professional-services) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).
+
+<sup>1</sup> : S3 est une marque déposée appartenant à Amazon Technologies, Inc. Les services de OVHcloud ne sont pas sponsorisés, approuvés, ou affiliés de quelque manière que ce soit.

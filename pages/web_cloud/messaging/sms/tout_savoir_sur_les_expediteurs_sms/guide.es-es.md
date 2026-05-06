@@ -11,15 +11,21 @@ Este guía le explica cómo crear y utilizar remitentes para el envío de sus SM
 ## Requisitos
 
 - Disponer de una [cuenta SMS de OVHcloud](/links/telecom/sms).
-- Estar conectado a la [área de cliente de OVHcloud](/links/manager), parte `Telecom`{.action} y luego `SMS`{.action}.
+
+<!-- CP-NAV-START:telecom-sms -->
+---
+
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [SMS](/links/control-panel/telecom-sms)
+- **Ruta de navegación:** `Telecom`{.action} > `SMS`{.action} > Seleccione su cuenta SMS
+
+---
+<!-- CP-NAV-END:telecom-sms -->
 
 ![espace client Telecom SMS](/pages/assets/screens/control_panel/product-selection/telecom/tpl-telecom-03-fr-sms.png){.thumbnail}
 
 ## Procedimiento
-
-Conéctese a su [área de cliente de OVHcloud](/links/manager) y seleccione `Telecom`{.action}.
-
-Haga clic a continuación en `SMS`{.action} y luego en su cuenta SMS.
 
 ### Tipos de remitentes disponibles
 
@@ -44,11 +50,11 @@ Permite recibir una respuesta a través de la pestaña SMS recibidos.
 
 #### Remitente alfanumérico
 
-Puede personalizar su remitente. A partir de ese momento, ya no será posible recibir una respuesta por parte del destinatario de su SMS. Para acceder a la gestión de los remitentes SMS, seleccione la pestaña `Remitentes`{.action}(1) cuando esté en la cuenta SMS correspondiente.
+Puede personalizar su remitente. A partir de ese momento, ya no será posible recibir una respuesta por parte del destinatario de su SMS. Para acceder a la gestión de los remitentes SMS, seleccione la pestaña `Remitentes`{.action} (1) cuando esté en la cuenta SMS correspondiente.
 
 ![envoi sms manager](images/sms-send-control-panel04E.png){.thumbnail}
 
-Si desea añadir un remitente SMS adicional, haga clic en el botón `Acciones`{.action} en el centro y luego en `Añadir`{.action}(2).
+Si desea añadir un remitente SMS adicional, haga clic en el botón `Acciones`{.action} en el centro y luego en `Añadir`{.action} (2).
 
 ![envoi sms manager](images/sms-send-control-panel05E.png){.thumbnail}
 

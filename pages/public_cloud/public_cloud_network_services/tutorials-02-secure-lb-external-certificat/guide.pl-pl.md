@@ -35,6 +35,18 @@ After setting up your Load Balancer, you can configure it with a certificate in 
 
 If you are not yet familiar with creating a Load Balancer, please follow our guide on [Getting started with Load Balancer on Public Cloud](/pages/public_cloud/public_cloud_network_services/getting-started-01-create-lb-service) before you continue with this tutorial.
 
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Ścieżka nawigacji:** `Public Cloud`{.action} > Wybierz projekt
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
+
 ## Instructions
 
 ### Attaching a Floating IP address to a Load Balancer

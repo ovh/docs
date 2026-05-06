@@ -23,7 +23,17 @@ Este tutorial explica los pasos que debe seguir para cambiar el dominio de su si
 
 - Tener un [dominio](/links/web/domains).
 - Disponer de un [hosting OVHcloud](/links/web/hosting).
-- Estar conectado a su [área de cliente de OVHcloud](/links/manager).
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [Web hosting](/links/control-panel/web-hosting)
+- **Ruta de navegación:** `Web Cloud`{.action} > `Alojamientos`{.action} > Seleccione su alojamiento web
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## Procedimiento
 

@@ -21,33 +21,35 @@ To use the accounts included with an Exchange service, you will need to add a do
 
 ## Requirements
 
-- An [Exchange](/links/web/emails) or [Email Pro](/links/web/email-pro) solution
+- An [Exchange](/links/web/emails-exchange) or [Email Pro](/links/web/email-pro) solution
 - One or more domain names
 - Administrative access to your domain name’s configuration (in order to [modify the DNS zone](/pages/web_cloud/domains/dns_zone_edit))
-- Access to the [OVHcloud Control Panel](/links/manager)
+
+<!-- CP-NAV-START:web-exchange -->
+<!-- CP-NAV-START:web-email-pro -->
+---
+
+### OVHcloud Control Panel Access
+
+**Exchange:**
+
+- **Direct link:** [Exchange](/links/control-panel/web-exchange)
+- **Navigation path:** `Web Cloud`{.action} > `Exchange`{.action} > Select your platform
+
+**Email Pro:**
+
+- **Direct link:** [Email Pro](/links/control-panel/web-email-pro)
+- **Navigation path:** `Web Cloud`{.action} > `Email Pro`{.action} > Select your platform
+
+---
+<!-- CP-NAV-END:web-email-pro -->
+<!-- CP-NAV-END:web-exchange -->
 
 ## Instructions
 
-### Access your service management
-
-> [!tabs]
-> **Exchange**
->>
->> 1. Log in to your [OVHcloud Control Panel](/links/manager).
->> 1. Open the `Web Cloud`{.action} section.
->> 1. In the `MICROSOFT` section, click `Exchange`{.action}.
->> 1. Select the service concerned.
->>
-> **Email Pro**
->>
->> 1. Log in to your [OVHcloud Control Panel](/links/manager).
->> 1. Open the `Web Cloud`{.action} section.
->> 1. Click `Email Pro`{.action}.
->> 1. Select the service concerned.
->>
-
 ### Add a domain name
 
+<!-- CP-STEPS-START:add-domain -->
 1. Click on the `Associated domains`{.action} tab of your Exchange or Email Pro service.
 1. The table will show you the domain names currently associated with your service.
 1. Click the `Add a domain`{.action} button.
@@ -89,9 +91,11 @@ The window now displays information about configuring modes.
 ![Add Domain](images/add_domain_exchange_step2-2.png){.thumbnail .w-600}
 
 At the end of the configuration process, please check the information displayed, then click the `Confirm`{.action} button to confirm the domain addition.
+<!-- CP-STEPS-END:add-domain -->
 
 ### Configure the domain name (DNS zone)
 
+<!-- CP-STEPS-START:configure-dns-zone -->
 Once you have added the domain name as an associated domain, check that its configuration is correct using the table that appears. A green box indicates that the domain name is correctly configured.
 
 If the box is red:
@@ -110,9 +114,11 @@ If the box is red:
 >
 
 To check that a domain name is correctly configured, go to the `Associated domains`{.action} table on your service. If the box is now green, the domain name is correctly configured. Otherwise, the propagation may not be complete yet.
+<!-- CP-STEPS-END:configure-dns-zone -->
 
 ### Modify the mode of an associated domain
 
+<!-- CP-STEPS-START:modify-domain-mode -->
 You can change the mode of an associated domain on your service. First, it is necessary to understand the difference in operation between authoritative and non-authoritative modes.
 
 > [!primary]
@@ -133,21 +139,25 @@ You can change the mode of an associated domain on your service. First, it is ne
 > [!warning]
 >
 > If you get the message "**authoritative domain detected**" when adding your domain name to your email service, this means that this domain name is declared in **authoritative** mode on another email service. You will need to switch it to **non-authoritative** mode on both services in order for them to coexist.
+<!-- CP-STEPS-END:modify-domain-mode -->
 
 ### Configure and use accounts
 
+<!-- CP-STEPS-START:configure-use-accounts -->
 Now that you have added the domain names to your service, you can configure your email accounts. You can do this in the `Email accounts`{.action} tab. If required, you can order additional accounts using the `Action`{.action}/`Order accounts`{.action} or `Add account`{.action}.
 
 As a reminder, all of the addresses created on your service will be able to view all of the addresses for that service in the directory, including those with a different domain name.
 
 Once the accounts are fully configured, you can start using them. To do this, OVHcloud offers **webmail**, accessible [here](/links/web/email). To optimize the use of your email accounts on a software application, ensure that it is compatible with the service.
 
-If you would like to configure your email accounts on an email client or device such as a smartphone or tablet, or if you would like assistance with the features of your email service, please refer to our documentation, which is accessible from the [Exchange](/links/web/emails) and [Email Pro](/links/web/email-pro) pages.
+If you would like to configure your email accounts on an email client or device such as a smartphone or tablet, or if you would like assistance with the features of your email service, please refer to our documentation, which is accessible from the [Exchange](/links/web/emails-exchange) and [Email Pro](/links/web/email-pro) pages.
 
 You can purchase Outlook licenses in the [OVHcloud Control Panel](/links/manager) and Office 365 licenses on the [Microsoft 365](/links/web/ms365) page. We recommend using one of these solutions if you would like to use Outlook email software, or more software from the Office suite, depending on your needs.
+<!-- CP-STEPS-END:configure-use-accounts -->
 
 ### Delete a domain name from a service
 
+<!-- CP-STEPS-START:delete-domain -->
 If you would like to remove a domain name from your Exchange or Email Pro service, you will need to ensure that it is not linked to any email accounts, aliases, resources, shared accounts (only on Exchange), groups, external contacts or footers that are still configured. In this case, you will need to **attach these accounts to another domain name** on your service, or **delete them**.
 
 > [!warning]
@@ -183,6 +193,7 @@ Once the accounts have been reassigned to another domain name, or after their re
 In the `Associated domains`{.action} tab of your service, click the `...`{.action} button to the right of the domain name concerned, then `Delete this domain`{.action}.
 
 ![exchange](images/add_domain_exchange_step10.png){.thumbnail .w-600}
+<!-- CP-STEPS-END:delete-domain -->
 
 ## Go further
 

@@ -1,19 +1,29 @@
 ---
-title: 'Filtrer et renvoyer ses appels'
-excerpt: 'Découvrez comment filtrer et renvoyer les appels entrants et sortants de votre ligne SIP OVHcloud'
+title: "Filtrer et renvoyer ses appels"
+excerpt: "Découvrez comment filtrer et renvoyer les appels entrants et sortants de votre ligne SIP OVHcloud"
 updated: 2025-04-28
 ---
 
 ## Objectif
 
-Votre ligne SIP OVHcloud vous permet de recevoir et d'émettre des appels. Pour diverses raisons, comme vos disponibilités, vous pouvez être amené à devoir filtrer et/ou renvoyer les appels entrants et sortants. Ceci passe par la mise en place de trois solutions : le verrouillage des appels sortants, les renvois d'appel et le filtrage d'appels.
+Votre ligne SIP OVHcloud vous permet de recevoir et d'émettre des appels. Pour diverses raisons, comme vos disponibilités, vous pouvez être amené à filtrer et/ou renvoyer les appels entrants et sortants. Ceci passe par la mise en place de trois solutions : le verrouillage des appels sortants, les renvois d'appel et le filtrage d'appels.
 
 **Découvrez comment filtrer et renvoyer les appels entrants et sortants de votre ligne SIP OVHcloud.**
 
 ## Prérequis
 
 - Disposer d'une [ligne SIP OVHcloud](/links/telecom/telephonie-voip).
-- Disposer d'un accès à la gestion de la ligne SIP concernée depuis votre [espace client OVHcloud](/links/manager), partie `Télécom`{.action}.
+
+<!-- CP-NAV-START:telecom-voip-fax -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [VoIP & Fax](/links/control-panel/telecom-voip-fax)
+- **Pour accéder à vos services :** `Télécom`{.action} > `VoIP & Fax`{.action} > Sélectionnez votre groupe de téléphonie
+
+---
+<!-- CP-NAV-END:telecom-voip-fax -->
 
 ![espace client Telecom VoIP](/pages/assets/screens/control_panel/product-selection/telecom/tpl-telecom-02-fr-voip.png){.thumbnail}
 
@@ -35,44 +45,41 @@ Poursuivez la lecture de cette documentation en fonction de la solution que vous
 
 ### Activer le verrouillage des appels sortants <a name="verrouillage"></a>
 
-1. Connectez-vous à votre [espace client OVHcloud](/links/manager) et cliquez sur `Télécom`{.action}.
-1. Cliquez sur `VoIP & Fax`{.action} puis sur le groupe de facturation contenant votre ligne SIP.
-1. Cliquez sur l'onglet `Services`{.action} puis sur la ligne SIP concernée.
-1. Positionnez-vous sur l'onglet `Gestion des appels`{.action} et cliquez sur `Verrouillage des appels sortants`{.action}.
+<!-- CP-STEPS-START:verrouillage-des-appels-sortants -->
+Dans l'onglet `Gestion des appels`{.action}, cliquez sur `Verrouillage des appels sortants`{.action}.
 
 ![gerer-appels-verrouillage](images/manage-calls-locking-step1.png){.thumbnail}
 
 Sur la page qui s'affiche, cochez la case `Activer le verrouillage`{.action} et renseignez un code à 4 chiffres. Celui-ci vous permettra d'émettre tout de même des appels sortants depuis la ligne que vous verrouillez.
 
-Vous avez la possibilité d'appliquer ce verrouillage à plusieurs lignes grâce au bouton `Appliquer à plusieurs lignes`{.action}. Cliquez finalement sur le bouton `Valider`{.action} pour appliquer la nouvelle configuration.
+Vous pouvez appliquer ce verrouillage à plusieurs lignes grâce au bouton `Appliquer à plusieurs lignes`{.action}. Cliquez finalement sur le bouton `Valider`{.action} pour appliquer la nouvelle configuration.
 
 ![gerer-appels-verrouillage](images/manage-calls-locking-step2.png){.thumbnail}
+<!-- CP-STEPS-END:verrouillage-des-appels-sortants -->
 
 ### Activer le renvoi d'appel <a name="renvoi"></a>
 
 > [!warning]
-> Le renvoi d'appel est différent du transfert d'appel. Ce dernier consiste à transférer un appel en cours vers un autre destinataires. Pour connaître les méthodes de transfert d'appel, consultez la documentation constructeur de votre téléphone.
+> Le renvoi d'appel est différent du transfert d'appel. Ce dernier consiste à transférer un appel en cours vers un autre destinataire. Pour connaître les méthodes de transfert d'appel, consultez la documentation constructeur de votre téléphone.
 
 > [!primary]
 >
 > Si vous souhaitez renvoyer les appels **en fonction de plages horaires**, consultez notre guide « [Configurer des plages horaires et des fermetures exceptionnelles sur une ligne](/pages/web_cloud/phone_and_fax/voip/configure-time-slot-and-closing-time)».
 >
 
-1. Connectez-vous à votre [espace client OVHcloud](/links/manager) et cliquez sur `Télécom`{.action}.
-1. Cliquez sur `VoIP & Fax`{.action} puis sur le groupe de facturation contenant votre ligne SIP.
-1. Cliquez sur l'onglet `Services`{.action} puis sur la ligne SIP concernée.
-1. Positionnez-vous sur l'onglet `Gestion des appels`{.action} et cliquez sur `Renvoi d'appel`{.action}.
+<!-- CP-STEPS-START:renvoi-d-appel -->
+Dans l'onglet `Gestion des appels`{.action}, cliquez sur `Renvoi d'appel`{.action}.
 
 ![gerer-appels-renvoi](images/manage-calls-fowarding-step1.png){.thumbnail}
 
-Sur la page qui s'affiche, vous avez la possibilité de mettre en place un renvoi d'appel selon quatre configurations :
+Sur la page qui s'affiche, vous pouvez mettre en place un renvoi d'appel selon quatre configurations :
 
 |Configurations|Description|
 |---|---|  
 |Renvoi de tous les appels|L'intégralité des appels est renvoyée de façon inconditionnelle.|
 |Renvoi quand il n'y a pas de réponse|Les appels sont renvoyés en cas de non-réponse sur le téléphone contacté. Vous devez définir le temps avant que l'appel ne soit renvoyé.|
 |Renvoi quand la ligne est occupée|Les appels sont renvoyés si la ligne est occupée (c'est-à-dire lorsque tous vos appels simultanés sont en cours).|
-|Renvoi quand la ligne est injoignable ou déconnectée|Les appels sont renvoyés dans le cas où notre serveur de téléphonie ne détecte aucune connexion vers votre ligne (par exemple, lors d'une interruption de votre connexion internet).|
+|Renvoi quand la ligne est injoignable ou déconnectée|Les appels sont renvoyés dans le cas où notre serveur de téléphonie ne détecte aucune connexion vers votre ligne (par exemple, lors d'une interruption de votre connexion Internet).|
 
 Pour activer une configuration, cochez la case à côté de cette dernière puis sélectionnez où renvoyer l'appel ainsi que le numéro correspondant.
 
@@ -83,11 +90,11 @@ Pour activer une configuration, cochez la case à côté de cette dernière puis
 |Répondeur|Permet de renvoyer l'appel vers la boîte vocale d'une des lignes présentes dans votre parc téléphonique.|
 |Téléphone|Permet de renvoyer l'appel vers une autre ligne présente dans votre parc téléphonique.|
 
-Vous avez la possibilité d'appliquer vos choix de configuration à plusieurs lignes, grâce au bouton `Appliquer à plusieurs lignes`{.action}. Cliquez enfin sur le bouton `Valider`{.action} pour terminer l'opération.
+Vous pouvez appliquer vos choix de configuration à plusieurs lignes, grâce au bouton `Appliquer à plusieurs lignes`{.action}. Cliquez enfin sur le bouton `Valider`{.action} pour terminer l'opération.
 
 > [!success]
 >
-> Si vous disposez d'un grand nombre de lignes et/ou de numéros, vous avez la possibilité de réduire les résultats qui s'affichent dans les champs de recherche. Pour cela, appliquez un filtrage via la section « Filtrer les numéros » à droite de la page.
+> Si vous disposez d'un grand nombre de lignes et/ou de numéros, vous pouvez réduire les résultats qui s'affichent dans les champs de recherche. Pour cela, appliquez un filtrage via la section « Filtrer les numéros » à droite de la page.
 >
 
 ![gerer-appels-renvoi](images/manage-calls-fowarding-step2.png){.thumbnail}
@@ -103,25 +110,24 @@ Vous avez la possibilité d'appliquer vos choix de configuration à plusieurs li
 > - Vous avez configuré, sur votre ligne OVHcloud **A**, un renvoi de tous les appels vers un numéro de mobile **B**
 > - Un interlocuteur (**C**) vous appelle sur la ligne OVHcloud **A**.
 > - Vous recevez l'appel (via le renvoi d'appels) sur le mobile **B**. Peuvent alors être présentés à l'écran, suivant votre opérateur de téléphonie mobile, le numéro de l'appelant (**C**) et/ou le numéro de la ligne appelée (**B**).
+<!-- CP-STEPS-END:renvoi-d-appel -->
 
 ### Activer le filtrage d'appels <a name="filtrage"></a>
 
-1. Connectez-vous à votre [espace client OVHcloud](/links/manager) et cliquez sur `Télécom`{.action}.
-1. Cliquez sur `VoIP & Fax`{.action} puis sur le groupe de facturation contenant votre ligne SIP.
-1. Cliquez sur l'onglet `Services`{.action} puis sur la ligne SIP concernée.
-1. Positionnez-vous sur l'onglet `Gestion des appels`{.action} et cliquez sur `Filtrage d'appels`{.action}.
+<!-- CP-STEPS-START:filtrage-d-appels -->
+Dans l'onglet `Gestion des appels`{.action}, cliquez sur `Filtrage d'appels`{.action}.
 
 ![gerer-appels-filtrage](images/manage-calls-filtering-step1.png){.thumbnail}
 
-Sur la page qui s'affiche, vous avez la possibilité de mettre en place un filtrage s'appliquant aux appels entrants et/ou sortants selon cinq configurations :
+Sur la page qui s'affiche, vous pouvez mettre en place un filtrage s'appliquant aux appels entrants et/ou sortants selon cinq configurations :
 
 |Configurations|Description|
 |---|---|  
 |Filtrage appel entrant|Permet de filtrer les appels reçus sur votre ligne selon une liste blanche ou noire que vous devez configurer.|
 |Filtrage appel sortant|Permet de filtrer les appels émis depuis votre ligne selon une liste blanche ou noire que vous devez configurer.|
 |Rejet des appels anonymes|Permet de rejeter automatiquement les appels entrants provenant d'un correspondant anonyme.|
-|Ne pas déranger|Permet de bloquer automatiquement la réception des appels entrants sur votre ligne et d'indiquer aux interlocuteurs qui vont contactent que vous ne souhaitez pas être dérangé par le biais d'un message vocal (du type : « votre correspondant ne souhaite pas être dérangé, merci de le rappeler ultérieurement »).|
-|Abonné absent|Permet de bloquer automatiquement la réception des appels entrants sur votre ligne et d'indiquer aux interlocuteurs qui vont contactent que vous êtes absent par le biais d'un message vocal (du type : « votre correspondant est momentanément absent, merci de le rappeler ultérieurement »).|
+|Ne pas déranger|Permet de bloquer automatiquement la réception des appels entrants sur votre ligne et d'indiquer aux interlocuteurs qui vous contactent que vous ne souhaitez pas être dérangé par le biais d'un message vocal (du type : « votre correspondant ne souhaite pas être dérangé, merci de le rappeler ultérieurement »).|
+|Abonné absent|Permet de bloquer automatiquement la réception des appels entrants sur votre ligne et d'indiquer aux interlocuteurs qui vous contactent que vous êtes absent par le biais d'un message vocal (du type : « votre correspondant est momentanément absent, merci de le rappeler ultérieurement »).|
 
 Pour activer ou désactiver une configuration parmi le « rejet des appels anonymes », « ne pas déranger » et l'« abonné absent », cochez ou décochez la case à côté de la configuration souhaitée.
 
@@ -159,6 +165,7 @@ Enfin, dans la partie « Configuration actuelle », vous pouvez visualiser les f
 >
 
 ![gerer-appels-filtrage](images/manage-calls-filtering-step3.png){.thumbnail}
+<!-- CP-STEPS-END:filtrage-d-appels -->
 
 ## Aller plus loin
 

@@ -22,16 +22,23 @@ Tal pode ser útil nos seguintes casos:
 
 ## Requisitos
 
-- Ter acesso à [Área de Cliente OVHcloud](/links/manager).
 - Ter uma [instância Public Cloud](/links/public-cloud/public-cloud) na sua conta OVHcloud.
 - Ter um backup de disco na mesma região OpenStack.
 - Ter acesso à instância via SSH enquanto administrador (sudo).
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+### Acesso à Área de Cliente OVHcloud
+- **Ligação direta:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Caminho de navegação:** `Public Cloud`{.action} > Selecione o seu projeto
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## Instruções
 
 ### Criar o disco a partir de um backup
 
-Aceda à [Área de Cliente OVHcloud](/links/manager), aceda à secção `Public Cloud`{.action} e selecione o projeto Public Cloud em questão. A seguir, clique em `Volume Snapshot`{.action} na barra de navegação da esquerda, na secção **Backup Storage**.
+Clique em `Volume Snapshot`{.action} na barra de navegação da esquerda, na secção **Backup Storage**.
 
 À direita do backup à sua escolha, clique no botão `...`{.action} e em `Criar um volume`{.action}.
 

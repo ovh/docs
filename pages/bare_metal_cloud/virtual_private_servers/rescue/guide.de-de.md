@@ -1,17 +1,17 @@
 ---
 title: Rescue-Modus für einen VPS aktivieren und verwenden
 excerpt: Erfahren Sie hier, wie Sie den OVHcloud Rescue-Modus für Ihren VPS zur Fehlerbehebung und zur Durchführung von Systemprüfungen verwenden
-updated: 2025-03-27
+updated: 2025-01-12
 ---
 
 ## Ziel
 
 Der Rescue-Modus ist ein von OVHcloud bereitgestelltes Tool, um Ihren VPS über ein temporäres Betriebssystem zu starten. Sie können dann auf Ihr System zugreifen, um Diagnoseaufgaben auszuführen und verschiedene Probleme zu beheben, beispielsweise:
 
-- [Zurücksetzen von Benutzerkennwörtern, um den Zugriff wiederherzustellen](/pages/bare_metal_cloud/dedicated_servers/replacing-user-password)
+- [Benutzerkennwörter zurücksetzen, um den Zugriff wiederherzustellen](/pages/bare_metal_cloud/dedicated_servers/replacing-user-password)
 - Netzwerkprobleme diagnostizieren
-- Reparatur eines fehlerhaften Betriebssystems
-- Fehlkonfiguration der Firewall korrigieren
+- Ein fehlerhaftes Betriebssystem reparieren
+- Eine Fehlkonfiguration der Firewall korrigieren
 - Leistung der Datenträger testen
 
 Wenn Sie ein Problem mit Ihrem System feststellen, können Sie mithilfe des Rescue-Modus herausfinden, ob es mit einer auf dem VPS installierten Software zusammenhängt oder von einem tiefergehenden Fehler verursacht wird. Bevor Sie sich an unsere Support-Teams wenden, empfehlen wir Ihnen, den Rescue-Modus zu verwenden, um Testergebnisse zu erfassen und Softwarefehler auszuschließen.
@@ -19,27 +19,35 @@ Wenn Sie ein Problem mit Ihrem System feststellen, können Sie mithilfe des Resc
 > [!warning]
 >
 > Wenn Sie Dienste auf Ihrem VPS im laufenden Betrieb haben, wird der Rescue-Modus diese Dienste unterbrechen, da der VPS in das Hilfsbetriebssystem neu gestartet wird.
-> 
+>
 
 **Diese Anleitung erklärt, wie Sie den Rescue-Modus über Ihr OVHcloud Kundencenter aktivieren und damit auf Ihr VPS-Dateisystem zugreifen.**
 
 ## Voraussetzungen
 
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 - Sie haben einen [VPS](/links/bare-metal/vps) in Ihrem OVHcloud Kunden-Account.
+
+<!-- CP-NAV-START:baremetal-vps -->
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direkter Link:** [VPS-Verwaltung](/links/control-panel/baremetal-vps)
+- **Navigationspfad:** `Bare Metal Cloud`{.action} > `Virtual Private Server`{.action} > Wählen Sie Ihren VPS aus
+
+---
+<!-- CP-NAV-END:baremetal-vps -->
 
 > [!warning]
 >
 > OVHcloud stellt Ihnen Dienstleistungen zur Verfügung, für deren Konfiguration und Verwaltung Sie die alleinige Verantwortung tragen. Es liegt somit bei Ihnen, sicherzustellen, dass diese ordnungsgemäß funktionieren.
-> 
-> Wir stellen Ihnen diese Anleitung zur Verfügung, um Ihnen bei der Bewältigung alltäglicher Verwaltungsaufgaben zu helfen. Dennoch empfehlen wir Ihnen, einen [spezialisierten Dienstleister](/links/partner) zu kontaktieren oder Ihre Fragen an die [OVHcloud Community](https://community.ovh.com/en/) zu richten, wenn Sie Schwierigkeiten oder Zweifel hinsichtlich der Verwaltung, Nutzung oder Implementierung der Dienste auf einem Server haben. 
+>
+> Wir stellen Ihnen diese Anleitung zur Verfügung, um Ihnen bei der Bewältigung alltäglicher Verwaltungsaufgaben zu helfen. Dennoch empfehlen wir Ihnen, einen [spezialisierten Dienstleister](/links/partner) zu kontaktieren oder Ihre Fragen an die [OVHcloud Community](/links/community) zu richten, wenn Sie Schwierigkeiten oder Zweifel hinsichtlich der Verwaltung, Nutzung oder Implementierung der Dienste auf einem Server haben.
 >
 
 ## In der praktischen Anwendung
 
 ### Rescue-Modus aktivieren
-
-Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein, gehen Sie in den Bereich `Bare Metal Cloud`{.action} und wählen Sie Ihren VPS unter `Virtual Private Server`{.action} aus.
 
 Klicken Sie im Tab `Start`{.action} auf `...`{.action} neben "Boot" im Bereich **Ihr VPS**.
 
@@ -55,6 +63,10 @@ Nach dem Neustart zeigt eine Statusleiste den Fortschritt des Tasks an. Bitte be
 > [!primary]
 >
 > Sie erhalten eine automatische E-Mail mit den SSH-Login-Daten, um im Rescue-Modus auf den VPS zuzugreifen. Bitte warten Sie auf den Eingang der E-Mail, bevor Sie weitere Maßnahmen ergreifen. Diese E-Mail ist auch in Ihrem [OVHcloud Kundencenter](/links/manager) verfügbar. Klicken Sie in der rechten oberen Ecke auf den mit Ihrem OVHcloud Kunden-Account assoziierten Namen und wählen Sie `E-Mails von OVHcloud`{.action} aus.
+>
+
+> [!warning]
+> Beachten Sie, dass Sie die E-Mail nicht erhalten, wenn Sie nicht mehr der technische Kontakt für den Server sind. Weitere Informationen finden Sie in unserer Anleitung: [Die Kontakte Ihrer Dienste verwalten](/pages/account_and_service_management/account_information/managing_contacts).
 >
 
 Anschließend müssen Sie [über SSH auf Ihren Server zugreifen](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction), indem Sie das für den Rescue-Modus generierte temporäre Root-Passwort verwenden.
@@ -156,4 +168,4 @@ Wenn beim Neustart eines VPS ein Fehler auftritt, folgen Sie diesen Schritten:
 
 [Dateisystem auf einem VPS überprüfen](/pages/bare_metal_cloud/virtual_private_servers/check-filesystem)
 
-Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.
+Für den Austausch mit unserer User Community besuchen Sie [unsere Community](/links/community).

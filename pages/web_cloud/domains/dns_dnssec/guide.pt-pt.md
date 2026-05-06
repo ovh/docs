@@ -29,15 +29,26 @@ Não hesite também em consultar os nossos manuais sobre [os servidores DNS da O
 
 - Dispor de um nome de domínio.
 - O domínio afetado deve dispor de uma extensão compatível com o DNSSEC.
-- Ter acesso à [Área de Cliente OVHcloud](/links/manager), secção `Web Cloud`{.action}.
+
+<!-- CP-NAV-START:web-domains -->
+---
+
+### Acesso à Área de Cliente OVHcloud
+
+- **Ligação direta:** [Nomes de domínio](/links/control-panel/web-domains)
+- **Caminho de navegação:** `Web Cloud`{.action} > `Nomes de domínio`{.action} > Selecione o seu nome de domínio
+
+---
+<!-- CP-NAV-END:web-domains -->
 
 ## Instruções
 
-Para verificar se o domínio utiliza a configuração DNS da OVHcloud, clique nas guias abaixo para exibir sucessivamente cada um dos **3** etapas.
+Para verificar se o domínio utiliza a configuração DNS da OVHcloud, clique nos separadores abaixo para visualizar cada uma das **2** etapas.
 
+<!-- CP-STEPS-START:instrucoes-verificacao-servidores-dns -->
 > [!warning]
 >
-> **Estas 3 etapas só são válidas se o seu domínio estiver registado na OVHcloud.** Caso contrário, deverá efetuar a verificação junto do agente de registo do seu domínio.
+> **Estas 2 etapas só são válidas se o seu domínio estiver registado na OVHcloud.** Caso contrário, deverá efetuar a verificação junto do agente de registo do seu domínio.
 >
 > Se os nomes dos servidores DNS terminarem com *ovh.net* (com exceção do servidor *snds2.ovh.net*), *ovh.ca* ou *anycast.me*, o seu domínio utiliza bem os servidores DNS da OVHcloud.
 >
@@ -45,21 +56,16 @@ Para verificar se o domínio utiliza a configuração DNS da OVHcloud, clique na
 > [!tabs]
 > **Etapa 1**
 >>
->> Aceda à [Área de Cliente OVHcloud](/links/manager) e aceda à secção `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Etapa 2**
->>
->> Clique no menu `Nomes de domínios`{.action} e escolha o domínio em causa.
+>> Aceda à página [Nomes de domínio](/links/control-panel/web-domains) e escolha o domínio correspondente.
 >>
 >> ![Domain Names](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
 >>
-> **Etapa 3**
+> **Etapa 2**
 >> 
 >> Selecione o separador `Servidores DNS`{.action} quando posicionado no domínio em questão.
 >>
 >> Se os nomes dos servidores DNS terminarem com *ovh.net* (com exceção do servidor *snds2.ovh.net*), *ovh.ca* ou *anycast.me*, o seu domínio utiliza bem os servidores DNS da OVHcloud.
+<!-- CP-STEPS-END:instrucoes-verificacao-servidores-dns -->
 
 > [!primary]
 >
@@ -74,22 +80,17 @@ Há três cenários detalhados abaixo que permitem ativar o **DNSSEC**.
 
 ### Casos n°1 - O seu domínio está registado na OVHcloud e utiliza os servidores DNS da OVHcloud
 
-Para ativar (ou desativar) a solução **DNSSEC** para o seu domínio, clique nas guias abaixo para exibir sucessivamente cada um dos **4** etapas.
+Para ativar (ou desativar) a solução **DNSSEC** para o seu domínio, clique nos separadores abaixo para visualizar cada uma das **3** etapas.
 
+<!-- CP-STEPS-START:casos-1-ativar-dnssec-servidores-ovhcloud -->
 > [!tabs]
 > **Etapa 1**
 >>
->> Aceda à [Área de Cliente OVHcloud](/links/manager) e aceda à secção `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Etapa 2**
->>
->> Clique no menu `Nomes de domínios`{.action} e escolha o domínio em causa.
+>> Aceda à página [Nomes de domínio](/links/control-panel/web-domains) e escolha o domínio correspondente.
 >>
 >> ![Domain Names](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
 >>
-> **Etapa 3**
+> **Etapa 2**
 >>
 >> A nova página apresenta as informações gerais sobre o domínio. Aqui, pode verificar o estado de ativação do **DNSSEC** no mesmo.
 >>
@@ -97,46 +98,43 @@ Para ativar (ou desativar) a solução **DNSSEC** para o seu domínio, clique na
 >>
 >> ![Secured Delegation DNSSEC](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/activate-dnssec.png){.thumbnail}
 >>
-> **Etapa 4**
+> **Etapa 3**
 >>
 >> Graças ao botão de ativação situado por cima da menção `Delegação Segura - DNSSEC`{.action}, poderá ativar ou desativar o **DNSSEC** no seu domínio. Ao efetuar esta ação, aparecerá uma nova janela a partir da qual poderá validar a modificação.
 >>
 >> ![Enable DNSSEC](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/activate-dnssec-confirmation.png){.thumbnail}
+<!-- CP-STEPS-END:casos-1-ativar-dnssec-servidores-ovhcloud -->
 
 ### Casos n°2 - O seu domínio está registado na OVHcloud e não utiliza os servidores DNS da OVHcloud
 
 Nesta situação, contacte o prestador que gere a configuração DNS do seu domínio para lhe pedir os parâmetros de ativação do DNSSEC ("Key Tag" / "Flag" / "Algoritmo" / "Chave pública (codificada em base64)").
 
-Quando tiver concluído a obtenção destes 4 parâmetros, clique nas guias abaixo para exibir sucessivamente cada um dos **5** etapas.
+Quando tiver concluído a obtenção destes 4 parâmetros, clique nos separadores abaixo para visualizar cada uma das **4** etapas.
 
+<!-- CP-STEPS-START:casos-2-ativar-dnssec-servidores-externos -->
 > [!tabs]
 > **Etapa 1**
 >>
->> Aceda à [Área de Cliente OVHcloud](/links/manager) e aceda à secção `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Etapa 2**
->>
->> Clique no menu `Nomes de domínios`{.action} e escolha o domínio em causa.
+>> Aceda à página [Nomes de domínio](/links/control-panel/web-domains) e escolha o domínio correspondente.
 >>
 >> ![Domain Names](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
 >>
-> **Etapa 3**
+> **Etapa 2**
 >>
 >> Na página que vai aparecer, clique no separador `DS records`{.action}. **Esta janela só é apresentada se o domínio utilizar servidores DNS externos**.
 >>
-> **Etapa 4**
+> **Etapa 3**
 >>
 >> Na nova página que aparece, clique no botão `Alterar`{.action} à direita e, a seguir, no botão `+`{.action}.
 >>
-> **Etapa 5**
+> **Etapa 4**
 >>
 >> Introduza os 4 formulários `Key Tag`, `Flag`, `Algoritmo` e `Chave pública (codificada em base64)` com os dados comunicados pelo seu prestador atual.
 >>
 >> ![DS records](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/ds-records/edit-plus-dashboard.png){.thumbnail}
 >>
 >> Depois de preencher os 4 formulários, clique no botão azul `Validar`{.action} à direita da tabela.
+<!-- CP-STEPS-END:casos-2-ativar-dnssec-servidores-externos -->
 
 ### Casos n°3 - O seu domínio não está registado na OVHcloud e utiliza os servidores DNS da OVHcloud
 

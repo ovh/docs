@@ -17,9 +17,18 @@ Une infrastructure **blue-green** vous permet d'éviter toute interruption de se
 Pour déployer une infrastructure **blue-green**, vous avez besoin des composants suivants :
 
 - Un service [Load Balancer OVHcloud](/links/network/load-balancer)
-- Un accès à l'[espace client OVHcloud](/links/manager)
 - Deux [serveurs dédiés](/links/bare-metal/bare-metal), l'un hébergeant votre environnement de production, l'autre, un serveur de configuration similaire hébergeant votre environnement de développement.
 
+<!-- CP-NAV-START:network-load-balancer -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Load Balancer](/links/control-panel/network-load-balancer)
+- **Pour accéder à vos services :** `Network`{.action} > `Load Balancer`{.action} > Sélectionnez votre service
+
+---
+<!-- CP-NAV-END:network-load-balancer -->
 ## En pratique
 
 ### Scénario

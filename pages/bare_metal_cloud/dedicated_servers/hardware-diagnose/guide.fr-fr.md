@@ -1,6 +1,6 @@
 ---
-title: 'Diagnostiquer des dysfonctionnements matériels sur un serveur dédié'
-excerpt: 'Découvrez comment utiliser les outils de diagnostic pour identifier des dysfonctionnements matériels sur votre serveur'
+title: "Effectuer un diagnostic matériel en mode rescue sur un serveur dédié"
+excerpt: "Exécutez des diagnostics matériels sur votre serveur dédié OVHcloud en mode rescue pour identifier les pannes disque, RAM ou CPU"
 updated: 2025-10-16
 ---
 
@@ -82,5 +82,9 @@ hdparm -t /dev/sd(x)
 ```
 
 ## Aller plus loin
+
+[Récupération des bases de données en mode rescue](/pages/bare_metal_cloud/dedicated_servers/restore-bdd-rescue)
+
+[Comment vérifier la version du firmware BMC sur un serveur dédié](/pages/bare_metal_cloud/dedicated_servers/bmc_fw_update)
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).

@@ -1,7 +1,7 @@
 ---
-title: Analytics - Automated Backups
+title: Sauvegardes automatiques des services Analytics (EN)
 excerpt: Discover the automated backup methods for each engine
-updated: 2025-11-27
+updated: 2026-05-04
 ---
 
 ## Objective
@@ -20,10 +20,14 @@ Whether you encounter an issue or simply want to view your data from a previous 
 
 ## Engine Specifications
 
-| Engine | Backup Method(s) | Location(s) | Frequency | RPO | Encrypted | 
-| --- | --- | --- | --- | --- | --- | 
-| OpenSearch | Incremental | On-Site, Off-Site | Hourly | 1h | Yes | 
-| Kafka | N/A | N/A | N/A | N/A | N/A | 
+| Engine | Backup Method(s) | Location(s) | Frequency | RPO | Encrypted |
+| --- | --- | --- | --- | --- | --- |
+| ClickHouse | Backup on object storage | On-Site, Off-Site | Daily | 24h | Yes |
+| OpenSearch | Incremental backup on object storage | On-Site, Off-Site | Hourly | 1h | Yes |
+| Grafana | N/A | N/A | N/A | N/A | N/A |
+| Kafka | N/A | N/A | N/A | N/A | N/A |
+| Kafka Connect | N/A | N/A | N/A | N/A | N/A |
+| Kafka MirrorMaker | N/A | N/A | N/A | N/A | N/A |
 
 ## Off-site backup
 
@@ -46,6 +50,8 @@ Analytics services provide a default configuration for remote backups based on t
 | SGP (Singapore, Singapore) | BHS (Beauharnois, Canada) |
 | UK (London, United Kingdom) | GRA (Gravelines, France) |
 | WAW (Warsaw, Poland) | GRA (Gravelines, France) |
+| RBX (Roubaix, France) | GRA (Gravelines, France) |
+| AP-SOUTH-MUM (Mumbai, Inde) | BHS (Beauharnois, Canada) |
 
 ### Custom settings
 

@@ -1,7 +1,7 @@
 ---
 title: 'Augmenter les quotas Public Cloud'
-excerpt: 'Découvrez comment demander l’augmentation de vos quotas Public Cloud'
-updated: 2025-12-17
+excerpt: "Découvrez comment demander une augmentation de quota pour vos ressources Public Cloud (RAM, CPU, espace disque, instances) directement depuis votre espace client OVHcloud."
+updated: 2026-05-05
 ---
 
 ## Objectif
@@ -14,71 +14,80 @@ Si vous souhaitez en créer davantage, une augmentation de quota est alors néce
 
 ## Prérequis
 
-- Être connecté à votre [espace client OVHcloud](/links/manager)
 - [Disposer d'un moyen de paiement valide](/pages/account_and_service_management/managing_billing_payments_and_services/manage-payment-methods) dans votre espace client OVHcloud
 
 ## En pratique
 
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Projets Public Cloud](/links/control-panel/publiccloud-projects)
+- **Pour accéder à vos services :** `Public Cloud`{.action} > Sélectionnez votre projet
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
+
+Dans le menu de gauche, cliquez sur `Quota & Régions`{.action} sous **Paramètres**.
+
+![Page Quota & Régions affichant les quotas actuels du projet par région](images/raisepciquota1.png){.thumbnail}
+
+Cette page présente un récapitulatif des quotas actuels de votre projet par région. Un avertissement apparaît dès qu'une ressource atteint 80 % de son quota.
+
 ### Augmenter votre quota de ressources
 
-En accord avec des critères internes (ancienneté, existence de factures acquitées, etc.), vous êtes désormais autonome sur les demandes d’augmentation de quotas en lien avec vos projets Public Cloud.
+En accord avec des critères internes (ancienneté, existence de factures acquittées, etc.), vous pouvez demander des augmentations de quota pour vos projets Public Cloud directement depuis votre espace client OVHcloud.
 
-Vous avez la possibilté d'augmenter votre quota de ressources manuellement ou automatiquement.
+> [!primary]
+>
+> Les nouveaux utilisateurs Public Cloud bénéficient de [270 $ de crédit offert](/links/public-cloud/free-trial) activé automatiquement à la création du projet, valable un mois. L'éligibilité à l'augmentation de quota dépend de critères tels que l'ancienneté du compte et l'existence de factures acquittées. Les utilisateurs en période d'essai peuvent donc avoir des options d'augmentation de quota limitées tant que leur première facture n'a pas été réglée.
+>
 
-#### Augmenter automatiquement votre quota de ressources via l'option « Quota autoscaling »
+Vous pouvez augmenter votre quota de ressources manuellement ou automatiquement.
+
+#### Augmenter automatiquement votre quota de ressources avec la fonctionnalité « Quota autoscaling »
 
 Cette option vous permet de demander une augmentation automatique et progressive de votre quota de ressources. Le quota sera ajusté en fonction de votre utilisation réelle **si vous dépassez 60 % de votre quota actuel pendant 30 jours consécutifs**, ainsi que selon un ensemble de critères internes et financiers.
 
 > [!primary]
 >
-> **Note** : Ce processus n’est pas adapté pour des augmentations rapides de quota.
+> Ce processus n’est pas adapté pour des augmentations rapides de quota.
 >
 
-Connectez-vous à votre [espace client OVHcloud](/links/manager), accédez à la section `Public Cloud`{.action} et sélectionnez votre projet Public Cloud.
-
-Dans le menu de gauche, cliquez sur `Quota & Régions`{.action} sous **Paramètres**.
-
-En haut à droite de la page qui s'affiche, retrouvez l'option **Quota autoscaling** :
+En haut à droite de la page, l’option **Quota autoscaling** est disponible :
 
 - Pour en savoir plus sur cette fonctionnalité, cliquez sur le `?`{.action} à côté de cette option.
 - Activez l’option en cliquant sur le bouton situé à droite de cette dernière. Son état passera de *Désactivé* à *Activé*.
 
-![auto scaling](images/autoscaling.png){.thumbnail}
+![Bouton de bascule Auto-scaling quota réglé sur Activé](images/autoscaling.png){.thumbnail}
 
-Une fois activé, l’auto-scaling augmentera progressivement le quota de votre projet en fonction de vos besoins réels.
+Une fois activé, l’auto-scaling augmente progressivement le quota de votre projet en fonction de vos besoins réels.
 
 #### Augmenter manuellement votre quota de ressources
 
 > [!primary]
 >
-> Si vous avez besoin d'augmenter votre quota et que le bouton `Augmenter mes quotas!`{.action} n'est pas disponible dans votre espace client, cliquez sur le bouton `Contacter le support`{.action}.
+> Si vous avez besoin d'augmenter votre quota et que le bouton `Augmenter mes quotas`{.action} n'est pas disponible dans votre espace client, cliquez sur le bouton `Contacter le support`{.action}.
 >
 
-![Contact Support](images/contact_support_quota.png){.thumbnail}
+![Bouton Contacter le support visible sur la page des quotas de l'espace client](images/contact_support_quota.png){.thumbnail}
 
 Cette procédure permet une augmentation rapide et importante de vos quotas (par exemple : scaling rapide, instances GPU, etc.). Cette méthode repose sur l'achat immédiat d'un crédit, dont toutes les consommations cloud seront automatiquement déduites.
 
-Il est possible d'acheter différents crédits.
+Vous pouvez acheter différents montants de crédit.
 
-Connectez-vous à votre [espace client OVHcloud](/links/manager), accédez à la section `Public Cloud`{.action} et sélectionnez votre projet Public Cloud.
+Cliquez sur le bouton `Augmenter mes quotas`{.action}.
 
-Dans le menu de gauche, cliquez sur `Quota & Régions`{.action} sous **Paramètres**.
+![Bouton Augmenter mon quota dans la section des quotas Public Cloud](images/raisepciquota2.png){.thumbnail}
 
-![access quota](images/raisepciquota1.png){.thumbnail}
+Cliquez ensuite sur la flèche déroulante à côté de `Sélectionnez le volume`{.action} pour afficher la liste des quotas disponibles. Cette section indique également le montant à payer pour bénéficier de ces ressources.
 
-Cette page présente un récapitulatif des quotas actuels de votre projet par région. Un avertissement apparaît dès qu'une ressource atteint 80 % de son quota.
-
-Cliquez sur `Augmenter mes quotas`{.action}.
-
-![raise-pci-quota](images/raisepciquota2.png){.thumbnail}
-
-Cliquez sur la flèche à côté de « Sélectionnez le volume » pour afficher la liste des quotas actuellement disponibles. Ce menu déroulant affiche également le montant à payer pour bénéficier de ces ressources.
-
-![select quota](images/selectquotas.png){.thumbnail}
+![Liste déroulante affichant les niveaux de quota disponibles avec les coûts associés](images/selectquotas.png){.thumbnail}
 
 Le tableau ci-dessous présente les ressources obtenues pour chaque quota :
 
-|Quota|Instances|CPU/Cores|RAM (Go)|Taille du volume (To)|Volumes|Sauvegardes|Taille des sauvegardes (To)|Floating IPs|Load Balancer Octavia|Gateway (Routers)|
+|Quota|Instances|CPU/Cores|RAM (Go)|Taille des volumes (To)|Volumes (nombre maximum)|Sauvegardes|Taille des sauvegardes (To)|Floating IPs|Octavia Load Balancer|Gateway (Routers)|
 |---|---|---|---|---|---|---|---|---|---|---|
 |20 VMs|20|40|430|20|200|1200|120|30|10|4|
 |50 VMs|50|64|507|20|500|3000|300|75|25|10|
@@ -94,17 +103,19 @@ Une fois votre volume sélectionné, cliquez sur `Confirmer`{.action}. Votre pai
 > Après avoir cliqué sur le bouton `Confirmer`{.action}, la commande est automatiquement créée et le montant est prélevé sur votre moyen de paiement par défaut.
 >
 
+Pour une vue plus détaillée de vos ressources, accédez à l'[interface Horizon](https://horizon.cloud.ovh.net/auth/login/). Une fois connecté, cliquez sur `Projet`{.action}, puis sur `Présentation`{.action}.
+
 ### Augmenter le quota de vos projets Public Cloud
 
 Il existe deux situations principales où vous pourriez avoir besoin d’un ajustement de quota :
 
-1. **Nombre maximum de projets atteints** : Si vous avez atteint le nombre maximum de projets Public Cloud autorisés dans votre espace client et que vous souhaitez en créer de nouveaux, vous devez soumettre une demande auprès de notre équipe support.
+1. **Nombre maximum de projets atteint** : si vous avez atteint le nombre maximum de projets Public Cloud autorisés dans votre espace client et que vous souhaitez en créer de nouveaux, vous devez soumettre une demande auprès de notre équipe support.
 
-2. **Autres types de demandes de quota** : Pour toute autre limite (CPU, RAM, stockage, etc.) ou besoin spécifique concernant vos projets Public Cloud, vous pouvez également contacter le support pour demander une augmentation.
+2. **Autres types de demandes de quota** : pour toute autre limite (CPU, RAM, stockage, etc.) ou besoin spécifique concernant vos projets Public Cloud, vous pouvez également contacter le support pour demander une augmentation.
 
 > [!primary]
 >
-> **Note** : Les demandes de quota sont traitées manuellement par notre équipe. Le délai de traitement peut varier selon la complexité de la demande. Nous vous recommandons de soumettre votre demande dès que possible pour éviter tout blocage dans vos projets.
+> Les demandes de quota sont traitées manuellement par notre équipe. Le délai de traitement peut varier selon la complexité de la demande. Nous vous recommandons de soumettre votre demande dès que possible pour éviter tout blocage dans vos projets.
 
 Pour accélérer le traitement, merci de préciser dans votre demande :
 
@@ -116,9 +127,9 @@ Pour accélérer le traitement, merci de préciser dans votre demande :
 
 Pour certaines ressources ou services, des quotas spécifiques peuvent s’appliquer. Pour plus d’informations :
 
-**Quota S3**<sup>1</sup> : Consultez la documentation officielle "[Object Storage - Limites techniques](/pages/storage_and_backup/object_storage/s3_limitations)".
+**Quota S3**<sup>1</sup> : consultez la documentation officielle « [Object Storage - Limites techniques](/pages/storage_and_backup/object_storage/s3_limitations) ».
 
-**Quota Managed Kubernetes Service (MKS)** : Consultez la documentation officielle "[ETCD Quotas, usage, troubleshooting and error](/pages/public_cloud/containers_orchestration/managed_kubernetes/etcd-quota-error)".
+**Quota Managed Kubernetes Service (MKS)** : consultez la documentation officielle « [Quotas ETCD, utilisation, dépannage et erreurs (EN)](/pages/public_cloud/containers_orchestration/managed_kubernetes/etcd-quota-error) ».
 
 ## Aller plus loin
 

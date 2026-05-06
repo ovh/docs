@@ -12,14 +12,18 @@ Lors de la création de votre compte OVHcloud, vous avez spécifié une adresse 
 
 ## Prérequis
 
-- Avoir accès à [l'espace client OVHcloud](/links/manager).
+<!-- CP-NAV-START:account-messages -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Mes communications](/links/control-panel/account-messages)
+- **Pour y accéder :** Cliquez sur votre nom en haut à droite > `Mes communications`{.action}
+
+---
+<!-- CP-NAV-END:account-messages -->
 
 ## En pratique
-
-Pour accéder à la gestion des communications sur votre espace client OVHcloud :
-
-1. Connectez-vous à votre [espace client OVHcloud](/links/manager).
-1. Cliquez sur votre nom en haut à droite, puis sur `Mes communications`{.action}.
 
 ### Mes communications
 

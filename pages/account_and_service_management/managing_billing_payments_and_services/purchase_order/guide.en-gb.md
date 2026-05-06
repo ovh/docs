@@ -8,6 +8,17 @@ updated: 2025-04-28
 
 This guide explains the Purchase Order (PO) number applied to OVHcloud billing.
 
+<!-- CP-NAV-START:billing-orders -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [My orders](/links/control-panel/billing-orders)
+- **Navigation path:** Click your name in the top right > `My orders`{.action}
+
+---
+<!-- CP-NAV-END:billing-orders -->
+
 ## Instructions
 
 ### Purchase Order (PO) number
@@ -48,7 +59,8 @@ For OVHcloud, the document must contain at least the following information:
 
 ### How to enter a Purchase Order (PO) reference in your OVHcloud Control Panel
 
-Log in to your [OVHcloud Control Panel](/links/manager), then, directly on the page that pops up, click `View my orders`{.action}.
+<!-- CP-STEPS-START:enter-po-reference -->
+Open the [My orders](/links/control-panel/billing-orders) page.
 
 ![Control Panel](images/huborders.png){.thumbnail}
 
@@ -76,6 +88,7 @@ From the `My internal references`{.action} tab, you can edit or deactivate a ref
 
 > [!primary]
 > If you want to disable/modify one reference for another **on the same time interval**, you must use the `Edit`{.action} option to change the time interval of the first reference.
+<!-- CP-STEPS-END:enter-po-reference -->
 
 ## Go further
 

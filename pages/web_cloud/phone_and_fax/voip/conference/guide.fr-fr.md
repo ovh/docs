@@ -1,7 +1,7 @@
 ---
 title: 'Créer et gérer des conférences téléphoniques'
 excerpt: 'Apprenez à gérer des conférences téléphoniques avec votre numéro OVHcloud'
-updated: 2025-04-28
+updated: 2026-01-22
 ---
 
 ## Objectif
@@ -19,7 +19,17 @@ Une interface spécifique vous propose également de suivre en temps réel les d
 ## Prérequis
 
 - Disposer d'un [numéro alias](/links/telecom/telephonie-numeros).
-- Être connecté à l'[espace client OVHcloud](/links/manager-telecom), partie `Télécom`{.action}.
+
+<!-- CP-NAV-START:telecom-voip-fax -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [VoIP & Fax](/links/control-panel/telecom-voip-fax)
+- **Pour accéder à vos services :** `Télécom`{.action} > `VoIP & Fax`{.action} > Sélectionnez votre groupe de téléphonie
+
+---
+<!-- CP-NAV-END:telecom-voip-fax -->
 
 ![espace client Telecom VoIP](/pages/assets/screens/control_panel/product-selection/telecom/tpl-telecom-02-fr-voip.png){.thumbnail}
 
@@ -30,44 +40,60 @@ Une interface spécifique vous propose également de suivre en temps réel les d
 
 ## En pratique
 
-### Étape 1 : accéder à la configuration du numéro
+### Étape 1 : Appliquer la configuration « Conférence »
 
-1. Connectez-vous à votre [espace client OVHcloud](/links/manager) et cliquez sur `Télécom`{.action}.
-1. Cliquez sur `VoIP & Fax`{.action} puis sur le groupe de facturation contenant votre numéro Alias.
-1. Cliquez sur l'onglet `Services`{.action} puis sur le numéro alias concerné.
-1. Dans l'onglet `Configuration`{.action}, cliquez sur `Conférence`{.action} puis sur `Paramétrer`{.action}.<br>
+<!-- CP-STEPS-START:appliquer-configuration-conference -->
+- Si votre numéro n’est actuellement pas configuré, cliquez sur l’onglet `Configuration`{.action}, sélectionnez `Conférence`{.action} puis cliquez sur `Paramétrer`{.action}.
 
-L'application de la configuration prend quelques secondes.
+- Si votre numéro a déjà une configuration en place, cliquez sur l’onglet `Configuration`{.action} puis sur `Changer de configuration`{.action}. Sélectionnez ensuite `Conférence`{.action} et cliquez sur `Paramétrer`{.action}. Vous devrez alors confirmer la perte de la configuration actuellement en place.
 
-![conférence](images/conference2022-01.png){.thumbnail}
+L’application de la configuration prend quelques secondes.
 
-Si une autre configuration est déjà appliquée sur votre numéro, cliquez sur `Configuration`{.action} puis `Changer de configuration`{.action}.
+![conférence](images/conference2026-01.png){.thumbnail}
 
+> [!primary]
+>
+> Pour appliquer le même type de configuration à plusieurs numéros, cliquez sur `Appliquer à plusieurs numéros`{.action}, sélectionnez les numéros concernés puis cliquez sur `Valider`{.action}.
+> 
+> ![configurationnumeroalias](images/selection-alias-conf.png){.thumbnail}
+>
+> Cliquez sur le bouton `Paramétrer`{.action} et patientez quelques instants pendant l’application du paramétrage.
+>
+> Si vous appliquez le même type de configuration à plusieurs numéros, vous devrez finaliser la configuration sur chacun des numéros concernés.
+<!-- CP-STEPS-END:appliquer-configuration-conference -->
+
+### Étape 2 : Accéder à la configuration de la conférence
+
+<!-- CP-STEPS-START:acceder-configuration-conference -->
 Une fois la configuration appliquée, vous accédez directement aux paramètres de la conférence.
 
 Pour retrouver ce menu ultérieurement, cliquez sur l'onglet `Configuration`{.action} puis sur `Conférence`{.action}.
+<!-- CP-STEPS-END:acceder-configuration-conference -->
 
-### Étape 2 : gérer les paramètres de la conférence
+### Étape 3 : Gérer les paramètres de la conférence
 
 #### Configurer la conférence
 
+<!-- CP-STEPS-START:configurer-conference -->
 Dans la partie « Configuration », définissez les paramètres de la conférence.
 
 ![conference](images/conference2022-02.png){.thumbnail}
 
 |Paramètres|Description|
 |---|---|
-|Code PIN d’accès|Le code PIN défini devra être renseigné lorsqu'un participant rejoindra la conférence. Celui-ci doit être compris entre 1 et 8 numéros. Indiquez « 0 » ou laissez la case vide pour ne pas utiliser de code PIN.|
-|Annonce personnalisée|Permet de personnaliser l'annonce d'entrée d'un nouveau participant dans la conférence. Pour cela, cliquez sur `Ajouter un son`{.action} puis suivez les étapes qui apparaissent.|
-|Enregistrement de la conférence|Permet d'activer ou non l'enregistrement des conférences réalisées sur le numéro.|
-|Microphone des participants à l’entrée|Permet d'activer ou de rendre muet le microphone des participants lorsqu'ils rejoignent la conférence.|
-|Appels anonymes|Permet d'autoriser ou d'interdire l'accès à la conférence aux numéros anonymes.|
+|Code PIN d’accès|Le code PIN défini devra être renseigné lorsqu’un participant rejoindra la conférence. Celui-ci doit être compris entre 1 et 8 numéros. Indiquez « 0 » ou laissez la case vide pour ne pas utiliser de code PIN.|
+|Annonce personnalisée|Permet de personnaliser l’annonce d’entrée d’un nouveau participant dans la conférence. Pour cela, cliquez sur `Ajouter un son`{.action} puis suivez les étapes qui apparaissent.|
+|Enregistrement de la conférence|Permet d’activer ou non l’enregistrement des conférences réalisées sur le numéro.|
+|Microphone des participants à l’entrée|Permet d’activer ou de rendre muet le microphone des participants lorsqu’ils rejoignent la conférence.|
+|Appels anonymes|Permet d’autoriser ou d’interdire l’accès à la conférence aux numéros anonymes.|
 |Langue de votre conférence|Permet de définir la langue de la conférence parmi plusieurs options.|
 
 Cliquez enfin sur le bouton `Valider`{.action} en bas de la page afin de confirmer les changements.
+<!-- CP-STEPS-END:configurer-conference -->
 
 #### Administrer la conférence
 
+<!-- CP-STEPS-START:administrer-conference -->
 Dans la partie « Administration », définissez également vos paramètres.
 
 ![conference](images/conference2022-03.png){.thumbnail}
@@ -75,11 +101,12 @@ Dans la partie « Administration », définissez également vos paramètres.
 |Paramètres|Description|
 |---|---|
 |Rapport de la conférence|Permet de définir si vous souhaitez recevoir un rapport concernant l'activité de la conférence ; et si oui, l'adresse e-mail sur laquelle le recevoir.|
-|Suivi et contrôle de la conférence|Permet d'activer des liens pour suivre et contrôler la conférence. Pour les activer, cliquez sur `Générer les URL`{.action}. Un bouton à droite de chaque URL vous permet de la copier.<br><br> Si des URL sont déjà générées, vous avez la possibilité de :<br><br> - **Regénérer les URL** : permet de remplacer les URL existantes par d'autres ;<br> - **Supprimer les URL** : permet de désactiver le suivi et le contrôle de la conférence.|
+|Suivi et contrôle de la conférence|Permet d'activer des liens pour suivre et contrôler la conférence. Pour les activer, cliquez sur `Générer les URL`{.action}. Un bouton à droite de chaque URL vous permet de la copier.<br><br> Si des URL sont déjà générées, vous avez la possibilité de :<br><br> - **Régénérer les URL** : permet de remplacer les URL existantes par d'autres ;<br> - **Supprimer les URL** : permet de désactiver le suivi et le contrôle de la conférence.|
 
 Cliquez enfin sur le bouton `Valider`{.action} pour confirmer les changements.
+<!-- CP-STEPS-END:administrer-conference -->
 
-### Étape 3 : utiliser la conférence
+### Étape 4 : Utiliser la conférence
 
 Une fois votre conférence active et paramétrée, celle-ci est prête à être utilisée. Les participants peuvent donc appeler le numéro défini en tant que conférence, puis interagir selon la configuration que vous avez mise en place.
 

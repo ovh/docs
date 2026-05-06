@@ -1,7 +1,7 @@
 ---
-title: 'E-mail Pro - Configurer un compte e-mail sur Outlook classique pour Windows'
-excerpt: 'Découvrez comment configurer votre compte E-mail Pro sur Outlook classique pour Windows'
-updated: 2026-01-09
+title: 'Email Pro - Configurer un compte e-mail sur Outlook classique pour Windows'
+excerpt: 'Découvrez comment configurer votre compte Email Pro sur Outlook classique pour Windows'
+updated: 2026-01-30
 ---
 
 <style>
@@ -26,15 +26,26 @@ details[open]>summary::before {
 
 ## Objectif
 
-Les comptes E-mail Pro peuvent être configurés sur différents logiciels de messagerie compatibles. Cela vous permet d’utiliser votre adresse e-mail depuis l’appareil de votre choix.
+Les comptes Email Pro peuvent être configurés sur différents logiciels de messagerie compatibles. Cela vous permet d’utiliser votre adresse e-mail depuis l’appareil de votre choix.
 
-**Découvrez comment configurer votre adresse e-mail E-mail Pro sur Outlook ou ultérieur pour Windows.**
+**Découvrez comment configurer votre adresse e-mail Email Pro sur Outlook ou ultérieur pour Windows.**
 
 ## Prérequis
 
-- Disposer d’un compte e-mail [E-mail Pro](/links/web/email-pro).
+- Disposer d’un compte e-mail [Email Pro](/links/web/email-pro).
 - Disposer de l'application [Outlook classique](https://support.microsoft.com/fr-fr/office/installer-ou-r%C3%A9installer-outlook-classique-sur-un-pc-windows-5c94902b-31a5-4274-abb0-b07f4661edf5) sur Windows.
 - Posséder les identifiants relatifs à l'adresse e-mail que vous souhaitez paramétrer.
+
+<!-- CP-NAV-START:web-email-pro -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Email Pro](/links/control-panel/web-email-pro)
+- **Pour accéder à vos services :** `Web Cloud`{.action} > `Email Pro`{.action} > Sélectionnez votre plateforme
+
+---
+<!-- CP-NAV-END:web-email-pro -->
 
 /// details | Informations relatives à la gestion et la configuration des services OVHcloud
 
@@ -48,7 +59,7 @@ Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur
 
 > [!warning]
 >
-> Cette documentation s’applique uniquement à **Outlook classique** disponible dans la suite Microsoft 365. Si vous utilisez le nouvel Outlook, consultez notre guide « [E-mail Pro - Ajouter un compte e-mail sur le nouvel Outlook pour Windows](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_windows_10) ».
+> Cette documentation s’applique uniquement à **Outlook classique** disponible dans la suite Microsoft 365. Si vous utilisez le nouvel Outlook, consultez notre guide « [Email Pro - Ajouter un compte e-mail sur le nouvel Outlook pour Windows](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_windows_10) ».
 >
 > Pour installer Outlook classique sur votre ordinateur Windows, téléchargez-le depuis la page Microsoft « [Installer ou réinstaller Outlook classique sur un PC Windows](https://support.microsoft.com/fr-fr/office/installer-ou-r%C3%A9installer-outlook-classique-sur-un-pc-windows-5c94902b-31a5-4274-abb0-b07f4661edf5) » et installez-le.
 >
@@ -56,17 +67,13 @@ Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur
 >
 > ![outlook Windows](images/outlook-windows-identify01.png){.thumbnail .h-500}
 
-### Ajouter le compte <a name="add-account"></a>
+### Ajouter le compte
 
 > [!primary]
 >
-> Dans notre exemple, nous utilisons la mention serveur : pro?.mail.ovh.net. Vous devrez remplacer le « ? » par le chiffre désignant le serveur de votre service E-mail Pro.
+> Dans notre exemple, nous utilisons la mention serveur : pro?.mail.ovh.net. Vous devrez remplacer le « ? » par le chiffre désignant le serveur de votre service Email Pro.
 >
-> 1. Connectez-vous à votre [espace client OVHcloud](/links/manager).
-> 1. Rendez-vous dans la partie `Web Cloud`{.action}.
-> 1. Cliquez sur `Email Pro`{.action}.
-> 1. Sélectionnez la plateforme concernée.
-> 1. Le nom du serveur est visible dans le cadre **Connexion** de l'onglet `Informations Générales`{.action}.
+> Cliquez sur [ce lien](/links/control-panel/web-email-pro) pour accéder à la section `Email Pro`{.action}. Le nom du serveur s'affiche dans la zone **Connexion** de l'onglet `Informations générales`{.action}.
 
 - **Lors du premier démarrage de l'application** : un assistant de configuration s'affiche et vous invite à renseigner votre adresse e-mail. Passez directement à l'étape 1 plus bas sur cette page.
 
@@ -74,8 +81,71 @@ Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur
 
 ![Outlook](images/config-outlook-emailpro01.png){.thumbnail .h-500}
 
+**Sur Windows 11, l'interface d'Outlook classique peut différer lorsque vous ajoutez un compte.**
+
+Selon l’historique d’utilisation d’Outlook sur le poste concerné, une configuration spécifique peut entraîner l’affichage d’une interface différente. Dans certains cas, l’interface dite « moderne » (**interface 1**) peut être désactivée au profit de l’interface historique (**interface 2**).
+
+C’est pourquoi nous vous invitons à consulter le chapitre correspondant à l’interface affichée sur votre écran.
+
+#### Configuration avec l'interface 1 <a name="add-account-int1"></a>
+
 Pour configurer votre adresse e-mail, suivez les étapes en cliquant sur les onglets ci-dessous.
 
+> [!tabs]
+> **Étape 1**
+>>
+>> Renseignez votre adresse e-mail, puis cliquez sur `Options avancées`{.action}.
+>>
+>> Cochez ensuite la case `Configurer mon compte manuellement`{.action} et cliquez sur `Connexion`{.action}.
+>>
+>> ![Outlook](images/config-outlook-legacy-emailpro02.png){.thumbnail .h-500}
+>>
+> **Étape 2**
+>>
+>> Parmi les types de comptes proposés, choisissez IMAP ou POP.
+>>
+>> Nous recommandons l’utilisation du protocole IMAP.
+>>
+>> ![Outlook](images/config-outlook-legacy-emailpro03.png){.thumbnail .h-500}
+>>
+> **Étape 3**
+>>
+>> Saisissez le mot de passe de votre adresse e-mail, puis cliquez sur `Se connecter`{.action}.
+>>
+>> ![Outlook](images/config-outlook-legacy-emailpro04.png){.thumbnail .h-500}
+>>
+> **Étape 4**
+>>
+>> Si Outlook ne parvient pas à configurer automatiquement le compte, la fenêtre suivante s’affiche.
+>>
+>> Cliquez sur `Modifier les paramètres du compte`{.action}.
+>>
+>> ![Outlook](images/config-outlook-legacy-emailpro05.png){.thumbnail .h-500}
+>>
+> **Étape 5**
+>>
+>> Dans la section **Courrier entrant**, renseignez :
+>> 
+>> - Serveur : **pro**?**.mail.ovh.net** (remplacez bien «**?**» par le numéro de votre serveur)
+>> - Port : **993**
+>> - Méthode de chiffrement : **SSL/TLS**
+>>
+>> Dans la section **Courrier sortant**, renseignez :
+>>
+>> - Serveur : **pro**?**.mail.ovh.net** (remplacez bien «**?**» par le numéro de votre serveur)
+>> - Port : **587**
+>> - Méthode de chiffrement : **STARTTLS**
+>>
+>> Cliquez sur `Suivant`{.action} pour valider.
+>>
+>> ![Outlook](images/config-outlook-legacy-emailpro06.png){.thumbnail .h-500}
+>>
+
+#### Configuration avec l'interface 2 <a name="add-account-int2"></a>
+
+Pour configurer votre adresse e-mail, suivez les étapes en cliquant sur les onglets ci-dessous.
+
+> [!tabs]
 > **Étape 1**
 >>
 >> - Depuis la fenêtre **Ajouter un compte**, sélectionnez `Configuration manuelle ou types de serveurs supplémentaires`{.action}.
@@ -140,20 +210,49 @@ Si vous devez effectuer une manipulation qui risquerait d'entrainer la perte des
 
 ### Modifier les paramètres existants
 
-Si votre compte e-mail est déjà paramétré et que vous devez accéder aux paramètres du compte pour les modifier :
+**Sur Windows 11, l'interface d'Outlook classique peut différer lorsque vous modifiez un compte.**
 
-- Allez dans `Fichier`{.action} depuis la barre de menu en haut de votre écran.
-- Sélectionnez le compte à modifier dans le menu déroulant **(1)**.
-- Cliquez sur `Paramètres du compte`{.action} **(2)** en dessous.
-- Cliquez sur `Paramètres du compte...`{.action} **(3)** pour accéder à la fenêtre de paramètres.
+Selon l’historique d’utilisation d’Outlook sur le poste concerné, une configuration spécifique peut entraîner l’affichage d’une interface différente. Dans certains cas, l’interface dite « moderne » (**interface 1**) peut être désactivée au profit de l’interface historique (**interface 2**).
 
-![Outlook](images/config-outlook-emailpro06.png){.thumbnail .h-500}
+C’est pourquoi nous vous invitons à consulter le chapitre correspondant à l’interface affichée sur votre écran.
 
-- La fenêtre de paramètres des comptes s'affiche, sélectionnez le compte e-mail concerné et cliquez sur `Modifier...`{.action}.
-
-![Outlook](images/config-outlook-emailpro07.png){.thumbnail .h-500}
-
-Pour configurer votre compte, suivez les instructions à partir de **l'étape 2** dans la partie [Ajouter le compte](#add-account) de ce guide.
+> [!tabs]
+> **Interface 1**
+>>
+>> Si votre compte e-mail est déjà configuré et que vous devez accéder à ses paramètres pour les modifier :
+>>
+>> - Cliquez sur `Fichier`{.action} dans la barre de menu en haut de l’écran, puis sélectionnez le compte à modifier dans le menu déroulant **(1)**.
+>> - Cliquez sur `Paramètres du compte`{.action } **(2)** en dessous.
+>> - Sélectionnez `Paramètres du serveur`{.action} **(3)** pour afficher la fenêtre de configuration.
+>>
+>> ![Outlook](images/config-outlook-legacy-emailpro07.png){.thumbnail}
+>>
+>> La fenêtre est divisée en deux parties, **Courrier entrant** et **Courrier sortant**. Cliquez sur la partie que vous souhaitez modifier.
+>>
+>> > [!primary]
+>> >
+>> > Dans notre exemple, le nom de serveur utilisé est « pro**?**.mail.ovh.net ». Vous devrez remplacer le caractère « ? » par le chiffre correspondant au serveur de votre service Email Pro.
+>> >
+>> > Cliquez sur [ce lien](/links/control-panel/web-email-pro) pour accéder à la section `Email Pro`{.action}. Le nom du serveur s'affiche dans la zone **Connexion** de l'onglet `Informations générales`{.action}.
+>>
+>> ![Outlook](images/config-outlook-legacy-emailpro08.png){.thumbnail}
+>>
+> **Interface 2**
+>>
+>> Si votre compte e-mail est déjà configuré et que vous devez accéder à ses paramètres pour les modifier :
+>>
+>> - Cliquez sur `Fichier`{.action} dans la barre de menu en haut de l’écran, puis sélectionnez le compte à modifier dans le menu déroulant **(1)**.
+>> - Cliquez sur `Paramètres du compte`{.action} **(2)** en dessous.
+>> - Cliquez sur `Paramètres du compte...`{.action} **(3)** pour accéder à la fenêtre de configuration.
+>>
+>> ![Outlook](images/config-outlook-emailpro06.png){.thumbnail .h-500}
+>>
+>> - La fenêtre de paramètres de comptes s'affiche : sélectionnez le compte e-mail concerné, puis cliquez sur `Modifier...`{.action}.
+>>
+>> ![Outlook](images/config-outlook-emailpro07.png){.thumbnail .h-500}
+>>
+>> Pour configurer votre compte, suivez les instructions à partir de **l'étape 2** dans la partie « [Ajouter le compte - Configuration avec l'interface 2](#add-account-int2) » de ce guide.
+>>
 
 ### Paramètres généraux d'envoi et de réception <a name="settings-account"></a>
 

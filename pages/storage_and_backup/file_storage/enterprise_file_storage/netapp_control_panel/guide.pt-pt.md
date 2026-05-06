@@ -13,11 +13,21 @@ Os serviços Enterprise File Storage podem ser geridos [através das API OVHclou
 ## Requisitos
 
 - Ter um serviço Enterprise File Storage na sua conta OVHcloud. O serviço pode ser encomendado a partir da [página produto](/links/storage/enterprise-file-storage) ou a partir da [Área de Cliente OVHcloud](/links/manager).
-- Ter acesso à [Área de Cliente OVHcloud](/links/manager).
+
+<!-- CP-NAV-START:storage-enterprise-file-storage -->
+---
+
+### Acesso à Área de Cliente OVHcloud
+
+- **Ligação direta:** [Enterprise File Storage](/links/control-panel/storage-enterprise-file-storage)
+- **Caminho de navegação:** `Bare Metal Cloud`{.action} > `Enterprise File Storage`{.action}
+
+---
+<!-- CP-NAV-END:storage-enterprise-file-storage -->
 
 ## Instruções <a name="instructions"></a>
 
-Ligue-se à sua [Área de Cliente OVHcloud](/links/manager) e selecione `Bare Metal Cloud`{.action} na barra de navegação superior. Abra o `Storage e o Backup`{.action}, depois o `Enterprise File Storage`{.action} no menu à esquerda e selecione o seu serviço na lista.
+Selecione o seu serviço na lista.
 
 ![Informações gerais](images/manage_enterprise01.png){.thumbnail}
 
@@ -88,7 +98,7 @@ Para configurar as suas [políticas de snapshot](#snapshot_policy), volte à sec
 
 #### Criação de uma snapshot <a name="create_snapshot"></a>
 
-Para criar uma nova snapshot de um volume no seu estado atual, clique no botão `Ações`{.action} e, a seguir, em Criar uma snapshot {.action}.
+Para criar uma nova snapshot de um volume no seu estado atual, clique no botão `Ações`{.action} e, a seguir, em `Criar uma snapshot`{.action}.
 
 ![Snapshot create](images/manage_enterprise08.png){.thumbnail}
 
@@ -120,7 +130,7 @@ Pode eliminar uma snapshot clicando no botão `...`{.action} na tabela e, a segu
 
 ![Snapshot delete](images/manage_enterprise12.png){.thumbnail}
 
-Clique em Eliminar uma snapshot {.action} para validar a eliminação.
+Clique em `Eliminar uma snapshot`{.action} para validar a eliminação.
 
 ![Snapshot delete confirmation](images/manage_enterprise13.png){.thumbnail}
 

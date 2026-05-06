@@ -1,7 +1,7 @@
 ---
 title: "Gestion des tâches"
-excerpt: "Fonctionnement des tâches asynchrones sur les noms de domaines"
-updated: 2022-05-05
+excerpt: "Fonctionnement des tâches asynchrones sur les noms de domaine"
+updated: 2026-02-10
 ---
 
 <!-- Rappel à mettre au début de chaque page -->
@@ -26,7 +26,7 @@ updated: 2022-05-05
 
 ## Gestion des tâches
 
-La plupart des actions effectuées sur les noms de domaines se traduisent par des modifications chez le registrar (OVHcloud), ainsi que chez le registre.
+La plupart des actions effectuées sur les noms de domaine se traduisent par des modifications chez le registrar (OVHcloud), ainsi que chez le registre.
 Par souci de robustesse et de performance, elles sont lancées de manière asynchrone.
 
 Pour permettre le suivi de ces changements asynchrones, les actions sont abstraites sous forme de **tâches**. Lorsqu'une action asynchrone est lancée,
@@ -185,7 +185,7 @@ Il existe un grand nombre de types de tâches différentes (plus d'une trentaine
 
 - `DomainCreate` : création d'un nom de domaine. Les erreurs seront généralement liées aux conditions d'éligibilité, notamment dans le cas des ccTLDs.
 - `DomainIncomingTransfer`, `DomainAfterMarket` : transfert d'un nom de domaine depuis un autre registrar ou un marché secondaire. Les erreurs seront généralement liées à la demande de l'`auth code` permettant la validation du transfert.
-- `DomainTrade` : changement de contact propriétaire. Les erreurs seront généralement liées à des incompatibilités d'éligibilité sur le contact receveur.
+- `DomainTrade` : changement de contact titulaire. Les erreurs seront généralement liées à des incompatibilités d'éligibilité sur le contact receveur.
 - `DomainContactUpdate` : modification des informations d'un contact. Les erreurs seront généralement liées à des informations sémantiquement invalides, à des erreurs de formatage ou encore à des incompatibilités d'éligibilité.
 - `DomainDnsUpdate` : changements liés aux configurations DNS. Les erreurs seront généralement liées à des serveurs DNS invalides ou à la configuration des _glue records_.
 - `DomainDsUpdate` : changements liés aux clés DNSSEC. Les erreurs seront généralement liées à des problèmes de synchronisation entre notre système et le registre.

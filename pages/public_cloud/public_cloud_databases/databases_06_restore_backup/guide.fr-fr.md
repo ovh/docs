@@ -1,5 +1,5 @@
 ---
-title: Public Cloud Databases - How to restore a backup
+title: Restaurer la sauvegarde d'une base de données Public Cloud (EN)
 excerpt: Find out how to restore a backup
 updated: 2024-07-31
 ---
@@ -14,10 +14,21 @@ We continuously improve our offers. You can follow and submit ideas to add to ou
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](/links/manager)
 - A [Public Cloud database service](/links/public-cloud/databases) up and running
 
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Navigation path:** `Public Cloud`{.action} > Select your project
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
+
 ## Instructions
+
 
 ### Step 1: Select the database service you want to restore data from
 
@@ -121,6 +132,7 @@ This new service is now completely independent from the one you forked the backu
 > The newly created service does not duplicate IP restrictions nor users which were created on the old service. You will have to recreate those before using your new service.
 
 ![Forked service](images/forked-service-20230331.png){.thumbnail}
+
 
 ## Go further
 

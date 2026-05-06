@@ -14,7 +14,6 @@ updated: 2024-03-28
 
 - Posiadanie hostingu [OVHcloud](/links/web/hosting).
 - Posiadanie [domeny](/links/web/domains).
-- Dostęp do [panelu klienta OVHcloud](/links/manager).
 
 ## W praktyce
 

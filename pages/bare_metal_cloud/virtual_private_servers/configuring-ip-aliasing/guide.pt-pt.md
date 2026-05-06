@@ -39,7 +39,7 @@ O alias de IP (*IP aliasing* em inglês) é uma configuração especial da rede 
 - Ter conhecimentos básicos sobre as redes e a sua administração
 
 > [!warning]
-> Os endereços Additional IP atualmente indisponíveis para os servidores privados virtuais nas [Local Zones](/links/bare-metal/vps-lz).
+> Os endereços Additional IP estão atualmente indisponíveis para os servidores privados virtuais nas [Local Zones](/links/bare-metal/vps-lz).
 >
 
 ## Instruções
@@ -48,7 +48,7 @@ Este guia contém as configurações das distribuições/sistemas operativos mai
 
 > [!primary]
 >
-No que diz respeito às diferentes versões de distribuições, tenha em conta que o procedimento adequado para configurar a sua interface de rede, bem como os nomes de ficheiros, podem ter sido alterados. Se encontrar dificuldades, recomendamos que consulte a documentação relativa ao seu sistema operativo.
+> No que diz respeito às diferentes versões de distribuições, tenha em conta que o procedimento adequado para configurar a sua interface de rede, bem como os nomes de ficheiros, podem ter sido alterados. Se encontrar dificuldades, recomendamos que consulte a documentação relativa ao seu sistema operativo.
 >
 
 **Queira tomar nota da seguinte terminologia que será utilizada nos exemplos de código e as instruções detalhadas neste guia:**
@@ -87,7 +87,7 @@ Nos exemplos abaixo, utilizaremos o editor de texto `nano`. Em alguns sistemas o
 >>
 >> **Etapa 2: criar um backup**
 >>
->> Por predefinição, o ficheiro de configuração está localizado no caminho `etc/network/interfaces.d`.
+>> Por predefinição, o ficheiro de configuração está localizado no caminho `/etc/network/interfaces.d`.
 >>
 >> No nosso exemplo, o nosso ficheiro chama-se `50-cloud-init`, pelo que fazemos uma cópia do ficheiro `50-cloud-init` utilizando o seguinte comando:
 >>
@@ -95,7 +95,7 @@ Nos exemplos abaixo, utilizaremos o editor de texto `nano`. Em alguns sistemas o
 >> sudo cp /etc/network/interfaces.d/50-cloud-init /etc/network/interfaces.d/50-cloud-init.bak
 >> ```
 >>
->> Em caso de erro, poderá voltar às modificações utilizando os comandos abaixo :
+>> Em caso de erro, poderá voltar às modificações utilizando os comandos abaixo:
 >>
 >> ```bash
 >> sudo rm -f /etc/network/interfaces.d/50-cloud-init
@@ -314,7 +314,7 @@ Nos exemplos abaixo, utilizaremos o editor de texto `nano`. Em alguns sistemas o
 >> sudo cp -r /etc/NetworkManager/system-connections/cloud-init-eno1.nmconnection /etc/NetworkManager/system-connections/cloud-init-eno1.nmconnection.bak
 >> ```
 >>
->> Em caso de erro, poderá voltar às modificações utilizando os comandos abaixo :
+>> Em caso de erro, poderá voltar às modificações utilizando os comandos abaixo:
 >>
 >> ```bash
 >> sudo rm -f /etc/NetworkManager/system-connections/cloud-init-eno1.nmconnection
@@ -401,9 +401,9 @@ Nos exemplos abaixo, utilizaremos o editor de texto `nano`. Em alguns sistemas o
 >>
 >> No painel de configuração Plesk, selecione `Tools & Settings`{.action} na barra lateral esquerda.
 >>
->> ![acces to the ip addresses management](images/pleskip1.png){.thumbnail}
+>> ![acesso à gestão dos endereços IP](images/pleskip1.png){.thumbnail}
 >>
->> Clique em `IP Addresses`{.action} em **Tools & Settings**.
+>> Clique em `IP Addresses`{.action} em **Tools & Resources**.
 >>
 >> **Etapa 2: adicionar as informações dos Additional IP**
 >>
@@ -432,7 +432,7 @@ Nos exemplos abaixo, utilizaremos o editor de texto `nano`. Em alguns sistemas o
 >>
 >> ![cmdprompt](images/vps_win07.png){.thumbnail}
 >>
->> Para obter a configuração IP atual, insira o `ipconfig` na encomenda.
+>> Para obter a configuração IP atual, introduza o `ipconfig` na linha de comandos.
 >>
 >> ```console
 >> C:\Users\Administrator>ipconfig
@@ -467,7 +467,7 @@ Nos exemplos abaixo, utilizaremos o editor de texto `nano`. Em alguns sistemas o
 >>
 >> Na nova janela, clique em `Add...`{.action} em "IP addresses". Introduza o seu endereço Additional IP e a máscara de sub-rede (255.255.255.255).
 >>
->> ![advance configuration section](images/configure-additional-ip.png){.thumbnail}
+>> ![secção de configuração TCP/IP avançada](images/configure-additional-ip.png){.thumbnail}
 >>
 >> Confirme ao clicar em `Add`{.action}.
 >>
@@ -509,7 +509,7 @@ Uma vez ligado ao servidor por SSH, insira o seguinte comando:
 ifconfig ens3:0 ADDITIONAL_IP netmask 255.255.255.255 broadcast ADDITIONAL_IP up
 ```
 
-Para testar a ligação, basta enviar um ping ao seu endereço Additional IP a partir do exterior. Se ele responder em modo de rescue, isso provavelmente significa que existe um erro de configuração. No entanto, se o IP ainda não funcionar, queira informar as nossas equipas de suporte criando um [ticket de assistência a partir](https://help.ovhcloud.com/csm?id=csm_get_help).
+Para testar a ligação, basta enviar um ping ao seu endereço Additional IP a partir do exterior. Se ele responder em modo de rescue, isso provavelmente significa que existe um erro de configuração. No entanto, se o IP ainda não funcionar, queira informar as nossas equipas de suporte criando um [ticket de assistência](https://help.ovhcloud.com/csm?id=csm_get_help).
  
 ## Quer saber mais?
 
@@ -517,4 +517,4 @@ Para testar a ligação, basta enviar um ping ao seu endereço Additional IP a p
 
 Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](/links/support).
 
-Fale com nossa [comunidade de utilizadores](/links/community).
+Fale com a nossa [comunidade de utilizadores](/links/community).

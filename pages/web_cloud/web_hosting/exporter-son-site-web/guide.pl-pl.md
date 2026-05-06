@@ -13,7 +13,17 @@ Niniejszy przewodnik przedstawia etapy procedury eksportu wszystkich elementów 
 ## Wymagania początkowe
 
 - Posiadanie [hostingu WWW OVHcloud](/links/web/hosting)
-- Dostęp do [panelu klienta OVHcloud](/links/manager).
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Web hosting](/links/control-panel/web-hosting)
+- **Ścieżka nawigacji:** `Web Cloud`{.action} > `Hosting`{.action} > Wybierz hosting WWW
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## W praktyce
 

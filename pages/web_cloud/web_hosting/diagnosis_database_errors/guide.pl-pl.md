@@ -1,10 +1,24 @@
 ---
 title: "Rozwiąż najczęstsze błędy związane z bazami danych"
 excerpt: "Zdiagnozuj najczęstsze przypadki błędów związanych z bazami danych"
-updated: 2024-09-26
+updated: 2026-03-31
 ---
 
-## Wprowadzenie 
+<style>
+details>summary {
+    color:rgb(33, 153, 232) !important;
+    cursor: pointer;
+}
+details>summary::before {
+    content:'\25B6';
+    padding-right:1ch;
+}
+details[open]>summary::before {
+    content:'\25BC';
+}
+</style>
+
+## Wprowadzenie
 
 Korzystanie z baz danych może spowodować pewne nieprawidłowości na Twojej stronie WWW lub w [Panelu klienta OVHcloud](/links/manager), jak również w interfejsie [phpMyAdmin](/pages/web_cloud/web_hosting/sql_create_database).
 
@@ -14,14 +28,24 @@ Korzystanie z baz danych może spowodować pewne nieprawidłowości na Twojej st
 >
 > OVHcloud udostępnia różnorodne usługi, jednak to Ty odpowiadasz za ich konfigurację i zarządzanie nimi. Ponosisz więc odpowiedzialność za ich prawidłowe funkcjonowanie.
 >
-> Oddajemy w Twoje ręce niniejszy przewodnik, którego celem jest pomoc w wykonywaniu bieżących zadań. W przypadku trudności zalecamy skorzystanie z pomocy wyspecjalizowanego webmastera lub kontakt z producentem oprogramowania. Niestety firma OVHcloud nie będzie mogła udzielić wsparcia w tym zakresie. Więcej informacji znajduje się w sekcji [Sprawdź również](#go-further) ten przewodnik.
+> Oddajemy w Twoje ręce niniejszy przewodnik, którego celem jest pomoc w wykonywaniu bieżących zadań. Jednakże w przypadku trudności zalecamy skorzystanie z pomocy [wyspecjalizowanego usługodawcy](/links/partner) lub kontakt z producentem oprogramowania. Niestety firma OVHcloud nie będzie mogła udzielić wsparcia w tym zakresie. Więcej informacji znajduje się w sekcji [Sprawdź również](#go-further) tego przewodnika.
 >
 
 ## Wymagania początkowe
 
-- Posiadanie [hostingu](/links/web/hosting) OVHcloud
-- Dostęp do [Panelu klienta OVHcloud](/links/manager).
-- Korzystanie z jednej z naszych ofert baz danych [Web Cloud](/links/web/hosting-options-startsql) lub [Web Cloud Databases](/links/web/databases)
+- Posiadanie [hostingu www OVHcloud](/links/web/hosting).
+- Korzystanie z jednej z naszych ofert baz danych [Web Cloud](/links/web/hosting-options-startsql) lub [Web Cloud Databases](/links/web/databases).
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Hosting](/links/control-panel/web-hosting)
+- **Ścieżka nawigacji:** `Web Cloud`{.action} > `Hosting`{.action} > Wybierz hosting WWW
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## W praktyce
 
@@ -31,16 +55,59 @@ Korzystanie z baz danych może spowodować pewne nieprawidłowości na Twojej st
 
 #### Zweryfikuj zdarzenia w trakcie
 
-Sprawdź najpierw na stronie [https://web-cloud.status-ovhcloud.com/](https://web-cloud.status-ovhcloud.com/), że Twoje centrum danych, klaster hostingu, Twój Web Cloud Databases lub Cloud Databases nie są związane z awariami infrastruktury OVHcloud.
+Sprawdź najpierw na stronie [Web Cloud Status](https://web-cloud.status-ovhcloud.com/), czy Twój datacenter, klaster hostingu sieciowego, serwer Web Cloud Databases lub baza danych nie są dotknięte awarią infrastruktury OVHcloud.
 
-> [!primary]
->
-> Aby odnaleźć te informacje, zaloguj się do [Panelu klienta OVHcloud](/links/manager), w części `Web Cloud`{.action} :
->
-> - Aby znaleźć `Datacenter` Twojego hostingu, wraz z `Filer` (serwer plików), wybierz `Hosting`{.action}, a następnie wybierz odpowiedni hosting. Informacje te można znaleźć w zakładce `Informacje ogólne`{.action}.
-> - Aby odnaleźć **cluster** serwerów, na których hostowany jest Twój hosting, kliknij zakładkę `FTP-SSH`{.action}. Informacja ta pojawi się w nazwie Twojego `Serwer FTP`.
-> - Aby odnaleźć nazwę serwera **Web Cloud Databases**, kliknij przycisk `Web Cloud Databases`{.action}, a następnie wybierz odpowiednią ofertę. Informacja ta znajduje się pod pozycją `Nazwa hosta` w polu `SQL` `Informacje na temat połączenia`.
->
+**Kliknij poszukiwaną informację, aby wyświetlić treść.**
+
+<!-- CP-STEPS-START:find-datacenter -->
+/// details | Znaleźć datacenter Twojego hostingu
+
+Kliknij na poniższe karty, aby wyświetlić kolejno każdy z **2** kroków.
+
+> [!tabs]
+> **Krok 1**
+>>
+>> Przejdź na stronę [Hosting](/links/control-panel/web-hosting), a następnie wybierz odpowiedni hosting.
+>>
+>> ![Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Krok 2**
+>>
+>> W zakładce `Informacje ogólne`{.action} odszukaj `Data center`.
+
+///
+<!-- CP-STEPS-END:find-datacenter -->
+
+/// details | Znaleźć klaster i filer Twojego hostingu
+
+Zapoznaj się z naszym przewodnikiem "[Poznaj klaster i filer Twojego hostingu](/pages/web_cloud/web_hosting/how_to_know_cluster_and_filer)".
+
+///
+
+<!-- CP-STEPS-START:find-wcdb-server-name -->
+/// details | Znaleźć nazwę serwera Web Cloud Databases
+
+Kliknij na poniższe karty, aby wyświetlić kolejno każdy z **2** kroków.
+
+> [!tabs]
+> **Krok 1**
+>>
+>> Przejdź na stronę [Web Cloud Databases](/links/control-panel/web-cloud-databases), a następnie wybierz odpowiednią usługę.
+>>
+>> ![Wybór serwera Web Cloud Databases w Panelu klienta OVHcloud](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases.png){.thumbnail}
+>>
+> **Krok 2**
+>>
+>> Odszukaj `Nazwa hosta` w sekcji `SQL` w polu `Informacje na temat połączenia`.
+
+///
+<!-- CP-STEPS-END:find-wcdb-server-name -->
+
+/// details | Znaleźć serwer bazy danych hostingu
+
+Zapoznaj się z naszym przewodnikiem "[Odnaleźć serwer bazy danych](/pages/web_cloud/web_hosting/sql_find_server)".
+
+///
 
 #### Sprawdź dane do logowania do bazy danych <a name="config_file"></a>
 
@@ -50,10 +117,10 @@ Zaloguj się przez [FTP](/pages/web_cloud/web_hosting/ftp_connection) do przestr
 >
 > Wybór i konfiguracja pliku zawierającego dane do logowania do bazy danych jest ściśle związana z wybranym edytorem treści, a nie z OVHcloud.
 >
-> Zalecamy zatem skontaktowanie się z wydawcą [CMS](/pages/web_cloud/web_hosting/cms_install_1_click_modules) używanym do założenia strony lub do skorzystania z pomocy [[wyspecjalizowanego usługodawcy](/links/partner)](/links/partner) w razie potrzeby. Nie będziemy w stanie udzielić wsparcia w tym zakresie.
+> Zalecamy zatem skontaktowanie się z wydawcą [CMS](/pages/web_cloud/web_hosting/cms_install_1_click_modules) używanym do założenia strony lub skorzystanie z pomocy [wyspecjalizowanego usługodawcy](/links/partner) w razie potrzeby. Nie będziemy w stanie udzielić wsparcia w tym zakresie.
 >
 
-Następnie sprawdź zgodność **dokładna** między identyfikatorami logowania do [phpMyAdmin](/pages/web_cloud/web_hosting/sql_create_database#dostep-do-interfejsu-phpmyadmin) a danymi w pliku konfiguracyjnym Twojej strony.
+Następnie sprawdź **dokładną** zgodność między identyfikatorami logowania do [phpMyAdmin](/pages/web_cloud/web_hosting/sql_create_database#dostep-do-interfejsu-phpmyadmin) a danymi w pliku konfiguracyjnym Twojej strony.
 
 W razie potrzeby zmień [hasło do Twojej bazy danych](/pages/web_cloud/web_hosting/sql_change_password).
 
@@ -76,18 +143,31 @@ define('DB_PASSWORD', 'my_password');
 define('DB_HOST', 'my_server.mysql.db:port');
 ```
 
-W [Panelu klienta OVHcloud](/links/manager), w części `Hosting`{.action}, kliknij zakładkę `Bazy danych`{.action}, następnie sprawdź zgodność między elementami wyświetlanymi i znajdującymi się w pliku `wp-config.php`:
+<!-- CP-STEPS-START:check-wp-db-credentials -->
+Kliknij na poniższe karty, aby wyświetlić kolejno każdy z **2** kroków.
 
-- **my_database** musi odpowiadać temu, co jest zapisane w `Nazwa bazy`;
-- **my_user** musi odpowiadać temu, co jest zapisane w `Nazwa użytkownika`;
-- **my_password** odnosi się do [hasło do bazy danych](/pages/web_cloud/web_hosting/sql_change_password);
-- **my_server.mysql.db** musi odpowiadać temu, co jest zapisane w `Adres serwera`.
+> [!tabs]
+> **Krok 1**
+>>
+>> Przejdź na stronę [Hosting](/links/control-panel/web-hosting), a następnie wybierz odpowiedni hosting.
+>>
+>> ![Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Krok 2**
+>>
+>> Kliknij zakładkę `Bazy danych`{.action}, następnie sprawdź zgodność między elementami wyświetlanymi a znajdującymi się w pliku `wp-config.php`:
+>>
+>> - **my_database** musi odpowiadać temu, co jest zapisane w `Nazwa bazy`;
+>> - **my_user** musi odpowiadać temu, co jest zapisane w `Nazwa użytkownika`;
+>> - **my_password** odnosi się do [hasła bazy danych](/pages/web_cloud/web_hosting/sql_change_password);
+>> - **my_server.mysql.db** musi odpowiadać temu, co jest zapisane w `Adres serwera`.
+<!-- CP-STEPS-END:check-wp-db-credentials -->
 
 > [!primary]
 >
-> Jeśli operacje te nie pozwalają przywrócić dostępu do Twojej strony WWW, [zapisz bazę danych](/pages/web_cloud/web_hosting/sql_database_export), a następnie [przywróć ją w wcześniejszej dacie](/pages/web_cloud/web_cloud_databases/restore-import-on-database-server#1-przywroc-istniejaca-kopie-zapasowa) w [Panelu klienta OVHcloud](/links/manager).
+> Jeśli operacje te nie pozwalają przywrócić dostępu do Twojej strony WWW, [zapisz bazę danych](/pages/web_cloud/web_hosting/sql_database_export), a następnie [przywróć ją do wcześniejszej daty](/pages/web_cloud/web_cloud_databases/restore-import-on-database-server#1-przywroc-istniejaca-kopie-zapasowa) w [Panelu klienta OVHcloud](/links/manager).
 >
-> W razie potrzeby należy skontaktować się z [wyspecjalizowanym dostawcą usług](/links/partner). Nie będziemy w stanie udzielić wsparcia w tym zakresie.
+> W razie potrzeby skontaktuj się z [wyspecjalizowanym dostawcą usług](/links/partner). Nie będziemy w stanie udzielić wsparcia w tym zakresie.
 >
 
 ### Przekroczenie dozwolonego rozmiaru bazy danych
@@ -100,7 +180,7 @@ Odblokuj bazę danych na trzy sposoby:
 
 #### Metoda 1: przejdź na wyższą ofertę
 
-Jeśli posiadasz wzór **Starter** lub **Perso**, w tej sytuacji zalecamy przejście na górną [ofertę hostingową](/links/web/hosting). Zmiana abonamentu zwiększy rozmiar bazy danych, dzięki czemu będzie ona automatycznie odnawiana. Metoda ta jest najprostsza i nie wymaga szczególnych kompetencji technicznych.
+Jeśli posiadasz formułę **Starter** lub **Perso**, w tej sytuacji zalecamy przejście na [wyższą ofertę hostingową](/links/web/hosting). Zmiana abonamentu zwiększy rozmiar bazy danych, dzięki czemu będzie ona automatycznie odblokowana. Metoda ta jest najprostsza i nie wymaga szczególnych kompetencji technicznych.
 
 > [!warning]
 >
@@ -108,19 +188,36 @@ Jeśli posiadasz wzór **Starter** lub **Perso**, w tej sytuacji zalecamy przej�
 >
 > Nieprawidłowości mogą spowodować stały wzrost rozmiaru bazy danych. W takim przypadku zmiana oferty hostingowej byłaby nieskuteczna.
 >
-> Zalecamy zatem, aby w przypadku zaobserwowania nagłego wzrostu rozmiaru bazy danych lub gdy posiadasz stronę typu "blog", która w normalnych warunkach nie jest konsumentem danych, niezwłocznie skontaktował się z [wyspecjalizowanym dostawcą](/links/partner). Nie będziemy w stanie udzielić Ci wsparcia w tym zakresie.
+> Zalecamy zatem, aby w przypadku zaobserwowania nagłego wzrostu rozmiaru bazy danych lub gdy posiadasz stronę typu "blog", która w normalnych warunkach nie jest konsumentem danych, niezwłocznie skontaktować się z [wyspecjalizowanym dostawcą](/links/partner). Nie będziemy w stanie udzielić Ci wsparcia w tym zakresie.
 >
 
-W celu dokonania tej zmiany zaloguj się do [Panelu klienta OVHcloud](/links/manager), następnie kliknij przycisk `Hosting`{.action}, a następnie wybierz odpowiedni hosting. Kliknij przycisk `...`{.action} w rubryce `Pakiet` po prawej stronie ekranu, a następnie kliknij `Zmień ofertę`{.action}.
+<!-- CP-STEPS-START:upgrade-plan -->
+Aby dokonać tej zmiany, kliknij na poniższe karty, aby wyświetlić kolejno każdy z **3** kroków.
 
-Jeśli korzystasz z oferty **Performance**, sprawdź [metoda 2](#methode2).
+> [!tabs]
+> **Krok 1**
+>>
+>> Przejdź na stronę [Hosting](/links/control-panel/web-hosting), a następnie wybierz odpowiedni hosting.
+>>
+>> ![Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Krok 2**
+>>
+>> Kliknij przycisk `...`{.action} w rubryce `Pakiet` po prawej stronie ekranu.
+>>
+> **Krok 3**
+>>
+>> Kliknij `Zmień ofertę`{.action}.
+<!-- CP-STEPS-END:upgrade-plan -->
+
+Jeśli korzystasz z oferty **Performance**, sprawdź [metodę 2](#methode2).
 
 #### Metoda 2: migracja danych na wyższą bazę danych <a name="methode2"></a>
 
 Możesz również przenieść dane na nową bazę:
 
-- Zamów w razie potrzeby [bazę danych](/links/web/hosting-options-startsql) o wyższej wielkości, a następnie uruchom [kreacja](/pages/web_cloud/web_hosting/sql_create_database);
-- [Zduplikuj zawartość starej bazy danych](/pages/web_cloud/web_hosting/copy_database) w nowej **lub** wykonaj [eksport swoich danych](/pages/web_cloud/web_hosting/sql_database_export), następnie [je importować](/pages/web_cloud/web_hosting/sql_importing_mysql_database) w nowej bazie;
+- Zamów w razie potrzeby [bazę danych](/links/web/hosting-options-startsql) o wyższej wielkości, a następnie uruchom [tworzenie](/pages/web_cloud/web_hosting/sql_create_database).
+- [Zduplikuj zawartość starej bazy danych](/pages/web_cloud/web_hosting/copy_database) w nowej **lub** wykonaj [eksport swoich danych](/pages/web_cloud/web_hosting/sql_database_export), następnie [zaimportuj je](/pages/web_cloud/web_hosting/sql_importing_mysql_database) w nowej bazie.
 - Wprowadź dane dostępowe nowej bazy danych do [pliku konfiguracyjnego](#config_file) swojej strony.
 
 > [!primary]
@@ -132,44 +229,95 @@ Możesz również przenieść dane na nową bazę:
 
 Po utworzeniu [kopii zapasowej bazy danych](/pages/web_cloud/web_hosting/sql_database_export) zaloguj się do swojego interfejsu [phpMyAdmin](/pages/web_cloud/web_hosting/sql_create_database#dostep-do-interfejsu-phpmyadmin), aby usunąć niepotrzebne dane za pomocą poleceń Drop, Delete i Truncate.
 
-Następnie upamiętaj obliczenie rozmiaru używanego w zakładce `Bazy danych`{.action} dla wybranego hostingu: kliknij przycisk `...`{.action} a następnie na `Przelicz rozmiar`{.action}.
+<!-- CP-STEPS-START:recalculate-quota-method3 -->
+Aby ponownie przeliczyć rozmiar, kliknij na poniższe karty, aby wyświetlić kolejno każdy z **3** kroków.
+
+> [!tabs]
+> **Krok 1**
+>>
+>> Przejdź na stronę [Hosting](/links/control-panel/web-hosting), a następnie wybierz odpowiedni hosting.
+>>
+>> ![Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Krok 2**
+>>
+>> Kliknij zakładkę `Bazy danych`{.action}, a następnie przycisk `...`{.action} obok odpowiedniej bazy danych.
+>>
+> **Krok 3**
+>>
+>> Kliknij `Przelicz rozmiar bazy`{.action}.
+<!-- CP-STEPS-END:recalculate-quota-method3 -->
 
 > [!warning]
 >
-> Operacja ta wymaga wysokich umiejętności technicznych. W razie potrzeby zalecamy skorzystanie z pomocy [[wyspecjalizowanego usługodawcy](/links/partner)](/links/partner). Nie będziemy w stanie udzielić wsparcia w tym zakresie.
+> Operacja ta wymaga wysokich umiejętności technicznych. W razie potrzeby zalecamy skorzystanie z pomocy [wyspecjalizowanego usługodawcy](/links/partner). Nie będziemy w stanie udzielić wsparcia w tym zakresie.
 >
 
 #### Metoda 4: zoptymalizuj bazę danych
 
-Aby zoptymalizować bazę danych, postępuj zgodnie z instrukcjami zawartymi w przewodniku "[Konfiguracja serwera baz danych](/pages/web_cloud/web_cloud_databases/configure-database-server#optymalizacja-baz-danych)". Następnie ponownie zastosuj rozmiar w zakładce `Bazy danych`{.action} Twojego hostingu, klikając przycisk `...`{.action} odpowiedniej bazy danych.
+Aby zoptymalizować bazę danych, postępuj zgodnie z instrukcjami zawartymi w przewodniku "[Konfiguracja serwera baz danych](/pages/web_cloud/web_cloud_databases/configure-database-server#optymalizacja-baz-danych)".
+
+<!-- CP-STEPS-START:recalculate-quota-method4 -->
+Aby ponownie przeliczyć rozmiar, kliknij na poniższe karty, aby wyświetlić kolejno każdy z **3** kroków.
+
+> [!tabs]
+> **Krok 1**
+>>
+>> Przejdź na stronę [Hosting](/links/control-panel/web-hosting), a następnie wybierz odpowiedni hosting.
+>>
+>> ![Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Krok 2**
+>>
+>> Kliknij zakładkę `Bazy danych`{.action}, a następnie przycisk `...`{.action} obok odpowiedniej bazy danych.
+>>
+> **Krok 3**
+>>
+>> Kliknij `Przelicz rozmiar bazy`{.action}.
+<!-- CP-STEPS-END:recalculate-quota-method4 -->
 
 > [!warning]
 >
-> Jeśli dostarczone porady dotyczące optymalizacji Twojej bazy danych nie wystarczą, aby odblokować dostęp do Twojej strony, zalecamy kontakt z naszym [społecznością użytkowników](/links/community) lub [partnerami OVHcloud](/links/partner). Niestety firma OVHcloud nie będzie mogła udzielić wsparcia w tym zakresie.
+> Jeśli dostarczone porady dotyczące optymalizacji Twojej bazy danych nie wystarczą, aby odblokować dostęp do Twojej strony, zalecamy kontakt z naszą [społecznością użytkowników](/links/community) lub [partnerami OVHcloud](/links/partner). Niestety firma OVHcloud nie będzie mogła udzielić wsparcia w tym zakresie.
 >
 
 ### Przekroczenie pojemności pamięci RAM (tylko Web Cloud Databases)
 
-Poniższy komunikat w części `Web Cloud Databases`{.action} Twojego [Panelu klienta OVHcloud](/links/manager) wskazuje, że Twój serwer [Web Cloud Databases](/links/web/databases) wykorzystał zbyt dużą ilość zasobów w infrastrukturze OVHcloud:
+Poniższy komunikat wskazuje, że Twój serwer [Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb) wykorzystał zbyt dużą ilość zasobów w infrastrukturze OVHcloud:
 
 ![ram-exceeded](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/general-information/ram-exceeded.png){.thumbnail}
 
-W tej sytuacji możesz zwiększyć [ilość pamięci RAM](/pages/web_cloud/web_cloud_databases/configure-database-server#zmiana-oferty-serwera-baz-danych) dostępny w części `Web Cloud Databases`{.action} [Panelu klienta OVHcloud](/links/manager). W karcie `Informacje ogólne`{.action} kliknij przycisk `...`{.action} w rubryce `RAM`.
+<!-- CP-STEPS-START:increase-ram-wcdb -->
+Aby zwiększyć [ilość pamięci RAM](/pages/web_cloud/web_cloud_databases/configure-database-server#zmiana-oferty-serwera-baz-danych), kliknij na poniższe karty, aby wyświetlić kolejno każdy z **3** kroków.
+
+> [!tabs]
+> **Krok 1**
+>>
+>> Przejdź na stronę [Web Cloud Databases](/links/control-panel/web-cloud-databases), a następnie wybierz odpowiednią usługę.
+>>
+>> ![Wybór serwera Web Cloud Databases w Panelu klienta OVHcloud](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases.png){.thumbnail}
+>>
+> **Krok 2**
+>>
+>> W zakładce `Informacje ogólne`{.action} odszukaj rubrykę `RAM`.
+>>
+> **Krok 3**
+>>
+>> Kliknij przycisk `...`{.action} w rubryce `RAM`, a następnie `Zmień ilość pamięci RAM`{.action}.
+<!-- CP-STEPS-END:increase-ram-wcdb -->
 
 > [!warning]
 >
-> Aby zwiększyć pamięć RAM, nie należy włączać usługi Web Cloud Databases za pomocą hostingu Performance. Jeśli chcesz zwiększyć ilość pamięci RAM bazy danych zawartej w [ofertach wydajności](/links/web/hosting-performance-offer), musisz ją odłączyć.
-> 
-> Aby odłączyć bazę danych, zaloguj się do [Panelu klienta OVHcloud](/links/manager) i wybierz `Web Cloud`{.action}. Kliknij polecenie `Hosting`{.action}, następnie wybierz hosting, na którym aktywowana jest usługa Web Cloud Databases.
+> Aby zwiększyć pamięć RAM, nie należy włączać usługi Web Cloud Databases za pomocą hostingu Performance. Jeśli chcesz zwiększyć ilość pamięci RAM bazy danych zawartej w [ofertach Performance](/links/web/hosting-performance-offer), musisz ją odłączyć.
 >
-> W obszarze `Konfiguracja` kliknij na `...`{.action} po prawej stronie pozycji `Web Cloud Databases`, następnie kliknij przycisk `Odłącz`{.action}.
+> Aby odłączyć bazę danych, zapoznaj się z naszym przewodnikiem "[Odłączenie Web Cloud Databases od hostingu](/pages/web_cloud/web_cloud_databases/detach-from-web-hosting)".
 >
 
 Możesz również zoptymalizować bazę danych, postępując zgodnie z instrukcjami zawartymi w przewodniku "[Konfiguracja serwera baz danych](/pages/web_cloud/web_cloud_databases/configure-database-server#optymalizacja-bazy-danych)".
 
 > [!primary]
 >
-> Jeśli napotkasz trudności z ograniczeniem wykorzystania zasobów na serwerze baz danych i nie chcesz ich zwiększać, skontaktuj się z naszym [społecznością użytkowników](/links/community) lub [partnerami OVHcloud](/links/partner). Nie będziemy w stanie udzielić wsparcia w tym zakresie.
+> Jeśli napotkasz trudności z ograniczeniem wykorzystania zasobów na serwerze baz danych i nie chcesz ich zwiększać, skontaktuj się z naszą [społecznością użytkowników](/links/community) lub [partnerami OVHcloud](/links/partner). Nie będziemy w stanie udzielić wsparcia w tym zakresie.
 >
 
 ### Błędy w imporcie baz danych
@@ -180,24 +328,43 @@ Możesz również zoptymalizować bazę danych, postępując zgodnie z instrukcj
 > **"#1044 - Access denied for user to database"**
 >
 
-Upewnij się, że baza danych jest pusta w zakładce `Bazy danych`{.action} odpowiedniego hostingu (kliknij przycisk `...`{.action} a następnie na `Przelicz kwotę`{.action}) w celu [zapisz obecne dane](/pages/web_cloud/web_hosting/sql_database_export).
+Ten komunikat błędu oznacza, że baza danych, którą chcesz importować, zawiera nieautoryzowane elementy na infrastrukturze współdzielonej OVHcloud.
 
-Możesz również zaznaczyć kratkę `Wyczyść aktualną bazę danych`{.action} tuż przed [uruchomieniem importu](/pages/web_cloud/web_hosting/sql_importing_mysql_database#import-twojej-kopii-zapasowej-w-panelu-klienta):
+<!-- CP-STEPS-START:check-db-empty-before-import -->
+Upewnij się najpierw, że baza danych jest pusta. W tym celu kliknij na poniższe karty, aby wyświetlić kolejno każdy z **3** kroków.
 
-![import-empty-current-db](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/import-empty-current-db.png){.thumbnail}
+> [!tabs]
+> **Krok 1**
+>>
+>> Przejdź na stronę [Hosting](/links/control-panel/web-hosting), a następnie wybierz odpowiedni hosting.
+>>
+>> ![Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Krok 2**
+>>
+>> Kliknij zakładkę `Bazy danych`{.action}, a następnie przycisk `...`{.action} obok odpowiedniej bazy danych i `Przelicz rozmiar bazy`{.action}.
+>>
+> **Krok 3**
+>>
+>> Jeśli baza danych nie jest pusta, [zapisz obecne dane](/pages/web_cloud/web_hosting/sql_database_export) i usuń je przed ponownym uruchomieniem importu.
+>>
+>> Możesz również zaznaczyć kratkę `Usuń aktualną zawartość bazy danych`{.action} tuż przed [uruchomieniem importu](/pages/web_cloud/web_hosting/sql_importing_mysql_database#import-twojej-kopii-zapasowej-w-panelu-klienta):
+>>
+>> ![import-empty-current-db](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/import-empty-current-db.png){.thumbnail}
+<!-- CP-STEPS-END:check-db-empty-before-import -->
 
-Ten komunikat błędu oznacza, że baza danych, którą chcesz importować zawiera nieautoryzowane elementy na infrastrukturze współdzielonej OVHcloud. W razie potrzeby skontaktuj się z [społecznością użytkowników](/links/community) lub [wyspecjalizowanym dostawcą](/links/partner). Nie będziemy w stanie udzielić wsparcia w zakresie korekty tej nieprawidłowości.
+W razie potrzeby skontaktuj się z naszą [społecznością użytkowników](/links/community) lub [wyspecjalizowanym dostawcą](/links/partner). Nie będziemy w stanie udzielić wsparcia w zakresie korekty tej nieprawidłowości.
 
-> [!faq]
+> [!primary]
 >
-> Jakie elementy w skrypcie importu bazy danych mogą spowodować błąd "#1044 - Access denied for user to database"?
+> **Jakie elementy w skrypcie importu bazy danych mogą spowodować błąd "#1044 - Access denied for user to database"?**
 
 Posiadanie **"trigger"** w skrypcie importu bazy danych nie jest dozwolone na serwerach hostingu www OVHcloud. W takiej sytuacji zaimportuj bazę danych na serwer [Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb).
 
 Ponadto nie zezwala się na następujące zapytanie:
 
 ```sql
-CREATE DATABASE IF NOT EXISTS `Database-Name` DEFAULT CHARACTER SET LATIN1 COLLATE LATIN1_swedish_ci; 
+CREATE DATABASE IF NOT EXISTS `Database-Name` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
 ```
 
 Zastąp ją:
@@ -206,25 +373,42 @@ Zastąp ją:
 USE `Database-Name`;
 ```
 
-(`Database-Name`: wpisz nazwę bazy danych [Panel klienta OVHcloud](/links/manager)
+(`Database-Name`: wpisz nazwę bazy danych z [Panelu klienta OVHcloud](/links/manager))
 
 #### "MySQL server has gone away"
 
 >
-> **"ERROR MySQL server has gone away"**
+> **"ERROR 2006 : MySQL server has gone away"**
 >
 
-Ten komunikat błędu pojawia się podczas [importu bazy danych](/pages/web_cloud/web_cloud_databases/restore-import-on-database-server#1-przywroc-istniejaca-kopie-zapasowa) na serwerze [Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb). Wiąże się to głównie z zbyt dużą ilością danych do importu lub z brakiem optymalizacji zapytań SQL w skrypcie importu.
+Ten komunikat błędu pojawia się podczas [importu bazy danych](/pages/web_cloud/web_cloud_databases/restore-import-on-database-server#1-przywroc-istniejaca-kopie-zapasowa) na serwerze [Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb). Wiąże się to głównie ze zbyt dużą ilością danych do importu lub z brakiem optymalizacji zapytań SQL w skrypcie importu.
 
 Aby usunąć tę anomalię, możesz:
 
-- Zwiększyć [ilość pamięci RAM](/pages/web_cloud/web_cloud_databases/configure-database-server#monitoruj-zuzyta-pamiec-ram). W tym celu przejdź do [Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb) w sekcji `Bazy danych`{.action} twojego [Panel klienta OVHcloud](/links/manager). Następnie kliknij przycisk `...`{.action} w części `RAM`, a następnie na `Zmień ilość pamięci RAM`{.action}.
+<!-- CP-STEPS-START:increase-ram-for-import -->
+- Zwiększyć [ilość pamięci RAM](/pages/web_cloud/web_cloud_databases/configure-database-server#monitoruj-zuzyta-pamiec-ram). W tym celu kliknij na poniższe karty, aby wyświetlić kolejno każdy z **3** kroków.
+
+> [!tabs]
+> **Krok 1**
+>>
+>> Przejdź na stronę [Web Cloud Databases](/links/control-panel/web-cloud-databases), a następnie wybierz odpowiednią usługę.
+>>
+>> ![Wybór serwera Web Cloud Databases w Panelu klienta OVHcloud](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases.png){.thumbnail}
+>>
+> **Krok 2**
+>>
+>> W zakładce `Informacje ogólne`{.action} odszukaj rubrykę `RAM`.
+>>
+> **Krok 3**
+>>
+>> Kliknij przycisk `...`{.action} w rubryce `RAM`, a następnie `Zmień ilość pamięci RAM`{.action}.
+<!-- CP-STEPS-END:increase-ram-for-import -->
 
 - Podziel bazę danych, aby ją importować na kilka operacji zamiast jednej (w przypadku pytań dotyczących operacji, które należy przeprowadzić, skontaktuj się z naszą [społecznością użytkowników](/links/community) lub [partnerami OVHcloud](/links/partner). Niestety firma OVHcloud nie będzie mogła udzielić wsparcia w tym zakresie.)
 
-- [Zoptymalizuj bazę danych](/pages/web_cloud/web_cloud_databases/configure-database-server#optymalizacja-bazy-danych), a następnie powtórzyć operacje eksportu / importu.
+- [Zoptymalizuj bazę danych](/pages/web_cloud/web_cloud_databases/configure-database-server#optymalizacja-bazy-danych), a następnie powtórz operacje eksportu/importu.
 
-### Nie można uzyskać dostępu do PhpMyAdmin
+### Nie można uzyskać dostępu do phpMyAdmin
 
 #### "Access denied for user"
 
@@ -232,7 +416,7 @@ Aby usunąć tę anomalię, możesz:
 > **"mysqli::real_connect(): (HY000/1045): Access denied for user"**
 >
 
-Ten komunikat błędu może pojawić się podczas logowania do bazy danych przez [phpMyAdmin](/pages/web_cloud/web_hosting/sql_create_database#dostep-do-interfejsu-phpmyadmin). Wskazuje ona, że dane identyfikacyjne są błędne.
+Ten komunikat błędu może pojawić się podczas logowania do bazy danych przez [phpMyAdmin](/pages/web_cloud/web_hosting/sql_create_database#dostep-do-interfejsu-phpmyadmin). Wskazuje, że dane identyfikacyjne są błędne.
 
 ![access_denied_for_user](/pages/assets/screens/other/web-tools/phpmyadmin/pma-error-hy000-1045.png){.thumbnail}
 
@@ -246,7 +430,7 @@ W takiej sytuacji [sprawdź wpisane dane](/pages/web_cloud/web_cloud_databases/c
 
 Maksymalna liczba aktywnych połączeń dla baz danych dostarczanych na hostingu ([StartSQL](/links/web/hosting-options-startsql)) wynosi **30**.
 
-Liczba ta wynosi **200** dla baz serwerów [Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb) (Ten parametr można zmienić w części `Konfiguracja`{.action} twojego serwera bazy danych).
+Liczba ta wynosi **200** dla baz serwerów [Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb). (Ten parametr można zmienić w części `Konfiguracja`{.action} twojego serwera bazy danych).
 
 Wiadomość ta pojawia się podczas [logowania do phpMyAdmin](/pages/web_cloud/web_hosting/sql_create_database#dostep-do-interfejsu-phpmyadmin), gdy ta maksymalna liczba połączeń jest przekroczona.
 
@@ -267,14 +451,47 @@ Ten komunikat błędu pojawia się podczas [logowania do phpMyAdmin](/pages/web_
 
 ![name_or_service_not_known](/pages/assets/screens/other/web-tools/phpmyadmin/pma-error-hy000-2002.png){.thumbnail}
 
-Sprawdź nazwę serwera, który chcesz zarejestrować w [Panelu klienta OVHcloud](/links/manager).
+Sprawdź nazwę odpowiedniego serwera.
 
-> [!success]
->
-> Jeśli baza danych, do której chcesz się zalogować, wyświetla się w zakładce `Bazy danych`{.action} w części `Hosting`{.action} w Twoim [Panelu klienta OVHcloud](/links/manager), nazwa, którą należy wpisać jest wpisana w kolumnie `Adres serwera`.
->
-> Jeśli chcesz zalogować się do bazy danych na serwerze [Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb), nazwa serwera, która ma zostać wprowadzona jest w zakładce `Informacje ogólne`{.action}, w części `Informacje na temat połączenia`{.action}, `SQL`{.action} i w sekcji `Nazwa hosta`{.action}.
->
+**Kliknij odpowiednią sytuację, aby wyświetlić treść.**
+
+<!-- CP-STEPS-START:find-server-name-hosting -->
+/// details | Baza danych na hostingu
+
+Kliknij na poniższe karty, aby wyświetlić kolejno każdy z **2** kroków.
+
+> [!tabs]
+> **Krok 1**
+>>
+>> Przejdź na stronę [Hosting](/links/control-panel/web-hosting), a następnie wybierz odpowiedni hosting.
+>>
+>> ![Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Krok 2**
+>>
+>> Kliknij zakładkę `Bazy danych`{.action}. Nazwa serwera, którą należy wpisać, jest zapisana w kolumnie `Adres serwera`.
+
+///
+<!-- CP-STEPS-END:find-server-name-hosting -->
+
+<!-- CP-STEPS-START:find-server-name-wcdb -->
+/// details | Baza danych na serwerze Web Cloud Databases
+
+Kliknij na poniższe karty, aby wyświetlić kolejno każdy z **2** kroków.
+
+> [!tabs]
+> **Krok 1**
+>>
+>> Przejdź na stronę [Web Cloud Databases](/links/control-panel/web-cloud-databases), a następnie wybierz odpowiednią usługę.
+>>
+>> ![Wybór serwera Web Cloud Databases w Panelu klienta OVHcloud](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases.png){.thumbnail}
+>>
+> **Krok 2**
+>>
+>> W zakładce `Informacje ogólne`{.action} nazwa serwera do wpisania znajduje się w sekcji `Informacje na temat połączenia`, pod `SQL`, w polu `Nazwa hosta`.
+
+///
+<!-- CP-STEPS-END:find-server-name-wcdb -->
 
 ### Nie można nawiązać połączenia z bazą danych Cloud Databases
 

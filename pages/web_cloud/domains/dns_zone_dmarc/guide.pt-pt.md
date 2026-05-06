@@ -1,7 +1,7 @@
 ---
 title: "Melhorar a segurança dos e-mails através do registo DMARC"
 excerpt: Saiba como o DMARC funciona e como configurá-lo para o seu serviço de e-mail
-updated: 2023-12-13
+updated: 2026-02-10
 ---
 
 ## Objetivo
@@ -19,12 +19,22 @@ O registo **D**omain-based **M**essage **A**uthentication, **R**eporting, and **
 
 ## Requisitos
 
-- Ter acesso à secção de gestão do domínio (associada à sua solução de e-mail) a partir da [Área de Cliente OVHcloud](/links/manager).
 - Um dos mecanismos de autenticação, [SPF](/pages/web_cloud/domains/dns_zone_spf) e/ou [DKIM](/pages/web_cloud/domains/dns_zone_dkim) deve estar configurado na zona DNS do nome de domínio da oferta de e-mail.
+
+<!-- CP-NAV-START:web-dns-zone -->
+---
+
+### Acesso à Área de Cliente OVHcloud
+
+- **Ligação direta:** [Zonas DNS](/links/control-panel/web-dns-zone)
+- **Caminho de navegação:** `Web Cloud`{.action} > `Zonas DNS`{.action} > Selecione o seu nome de domínio
+
+---
+<!-- CP-NAV-END:web-dns-zone -->
 
 ## Instruções
 
-O DMARC permite ao proprietário de um nome de domínio gerir a segurança dos e-mails emitidos com o seu nome de domínio. O seu objetivo é:
+O DMARC permite ao titular de um nome de domínio gerir a segurança dos e-mails emitidos com o seu nome de domínio. O seu objetivo é:
 
 - Declarar, ao servidor destinatário, as ações a realizar em caso de falha dos mecanismos de autenticação SPF e/ou DKIM.
 - Controlar melhor a utilização do seu nome de domínio e detetar as tentativas de usurpação através dos relatórios enviados em caso de falha de autenticação dos e-mails. Além disso, melhora igualmente a segurança ao criar a ligação entre os protocolos SPF e DKIM.
@@ -64,8 +74,8 @@ A seguir, poderá encontrar uma descrição completa das tags utilizadas para **
 
 - **Version (v=)**: campo obrigatório que determina a versão do protocolo DMARC.
 
-- **Regra para o domínio (p=)**: política a adotar pelo destinatário a pedido do proprietário do domínio remetente. A política aplica-se ao domínio inquirido e aos subdomínios, exceto se a marca de subdomínio **sp=** indicar instruções diferentes. Os valores possíveis são os seguintes:
-    - *none* : o proprietário do domínio não pede nenhuma ação específica relativa à entrega das mensagens.
+- **Regra para o domínio (p=)**: política a adotar pelo destinatário a pedido do titular do domínio remetente. A política aplica-se ao domínio inquirido e aos subdomínios, exceto se a marca de subdomínio **sp=** indicar instruções diferentes. Os valores possíveis são os seguintes:
+    - *none* : o titular do domínio não pede nenhuma ação específica relativa à entrega das mensagens.
     - *quarantine*: Se a verificação do mecanismo DMARC falhar, os destinatários devem considerar as mensagens de correio eletrónico como suspeitas. Dependendo das capacidades do servidor destinatário, isto pode significar « colocar na pasta de spam » e/ou « indicar como suspeito ».
     - *reject* : rejeição dos e-mails que falham na verificação do mecanismo DMARC.
 
@@ -73,7 +83,7 @@ A seguir, poderá encontrar uma descrição completa das tags utilizadas para **
 >
 > A configuração do parâmetro `p=` pode ter um impacto importante na possibilidade de entrega dos e-mails do seu domínio. É aconselhável configurar `p=none` e efetuar uma análise dos relatórios de falha durante várias semanas, de forma a resolver eventuais anomalias. Passar para `p=quarantine` ou `p=reject` requer um controlo total dos parâmetros de segurança do e-mail, relativamente ao [SPF](/pages/web_cloud/domains/dns_zone_spf) e ao [DKIM](/pages/web_cloud/domains/dns_zone_dkim). A utilização do fator `pct=`, apresentado abaixo, permite uma transição progressiva.
 
-- **Percentagem de mensagens filtradas (pct=)** (valor entre 0 e 100, o padrão é 100) - a percentagem do fluxo de mensagens ao qual a política DMARC deve ser aplicada. O objetivo da marca « pct » é permitir aos proprietários de domínios uma implementação lenta do mecanismo DMARC.
+- **Percentagem de mensagens filtradas (pct=)** (valor entre 0 e 100, o padrão é 100) - a percentagem do fluxo de mensagens ao qual a política DMARC deve ser aplicada. O objetivo da marca « pct » é permitir aos titulares de domínios uma implementação lenta do mecanismo DMARC.
 
 - **URI de criação de relatórios globais (rua=)** - endereços para os quais os relatórios devem ser enviados (lista de texto simples, separada por vírgulas). Qualquer URI válido pode ser especificado. A menção « mailto:» deve preceder o destinatário de e-mail (exemplo: `mailto:address@example.com`).
 
@@ -109,7 +119,7 @@ Abaixo, poderá encontrar a lista das tags utilizadas para criar um **registo TX
     - `r`(relaxed) para o modo flexível: Os e-mails que falham na autenticação DKIM são marcados como « indesejados » pelo servidor destinatário.
     - `s`(strict) para o modo strict: os e-mails que falham na autenticação DKIM são rejeitados pelo servidor destinatário.
 
-- **ruf** - Endereços aos quais devem ser comunicadas as informações de erro específicas da mensagem, incluindo uma lista de texto simples separada por vírgulas Se esta tag estiver presente, o proprietário do domínio remetente pede aos destinatários que enviem relatórios de falhas detalhados sobre os e-mails que falham na avaliação DMARC de forma específica (ver a tag `fo` abaixo). O formato da mensagem a gerar deve seguir o formato especificado para a etiqueta `rf`. A menção « mailto:» deve preceder o destinatário de e-mail (exemplo: `mailto:address@example.com`).
+- **ruf** - Endereços aos quais devem ser comunicadas as informações de erro específicas da mensagem, incluindo uma lista de texto simples separada por vírgulas Se esta tag estiver presente, o titular do domínio remetente pede aos destinatários que enviem relatórios de falhas detalhados sobre os e-mails que falham na avaliação DMARC de forma específica (ver a tag `fo` abaixo). O formato da mensagem a gerar deve seguir o formato especificado para a etiqueta `rf`. A menção « mailto:» deve preceder o destinatário de e-mail (exemplo: `mailto:address@example.com`).
 
 - **fo** (texto simples; o padrão é `0`) - Opções detalhadas do relatório de falha. Os geradores de relatórios podem optar por cumprir as opções solicitadas. O conteúdo desta tag deve ser ignorado se uma tag `ruf` (acima) não for igualmente especificada. O valor desta tag é uma lista de caracteres separados por dois pontos (`:`) que mostram as seguintes opções de geração de relatórios de falhas:
      - **0** : gera um relatório de falha DMARC se todos os mecanismos de autenticação (DKIM **ET** SPF) não conseguem produzir um resultado « não » alinhado.
@@ -159,22 +169,21 @@ Obtemos o seguinte resultado:
 
 - **p=quarantine**: As mensagens de correio eletrónico que não passem os testes DMARC são tratadas como « suspeitas ».
 
-- **pct=100** : a política DMARC aplica-se a 50% das mensagens provenientes do fluxo de e-mail do proprietário do domínio.
+- **pct=100** : a política DMARC aplica-se a 50% das mensagens provenientes do fluxo de e-mail do titular do domínio.
 
 - **ruf=mailto:report@mydomain.ovh** : endereço de e-mail para o qual devem ser enviados os relatórios de falha detalhados através do argumento « mailto ».
 
 - **fo=0** Opções de relatório de falhas. O valor « 0 » indica que os relatórios de falhas do DMARC só devem ser gerados se os mecanismos de autenticação SPF e DKIM falharem em produzir um resultado alinhado « pass ».
 
-- **adkim=r**: o modo de alinhamento do identificador DKIM requerido pelo proprietário do domínio é "relaxed" (modo flexível). Neste modo, o DKIM deve fornecer uma assinatura válida e o identificador do cabeçalho "From" pode ser parcialmente alinhado.
+- **adkim=r**: o modo de alinhamento do identificador DKIM requerido pelo titular do nome de domínio é "relaxed" (modo flexível). Neste modo, o DKIM deve fornecer uma assinatura válida e o identificador do cabeçalho "From" pode ser parcialmente alinhado.
 
-- **aspf=s**: O modo de alinhamento do SPF é « strict ». Isto significa que o nome de utilizador do domínio alinhado deve corresponder exatamente ao endereço IP de origem da mensagem.
+- **aspf=s**: O modo de alinhamento do SPF é « strict ». Isto significa que o nome de utilizador do nome de domínio alinhado deve corresponder exatamente ao endereço IP de origem da mensagem.
 
-- **adkim=r**: o modo de alinhamento do identificador DKIM requerido pelo proprietário do domínio é « relaxed » (modo flexível). Neste modo, o DKIM deve fornecer uma assinatura válida e o identificador do cabeçalho « From » pode ser parcialmente alinhado.
+- **adkim=r**: o modo de alinhamento do identificador DKIM requerido pelo titular do nome de domínio é « relaxed » (modo flexível). Neste modo, o DKIM deve fornecer uma assinatura válida e o identificador do cabeçalho « From » pode ser parcialmente alinhado.
 
 - **ri=86400** : define o intervalo solicitado entre as relações agregadas, em segundos. Neste caso, deve ser gerada, pelo menos, uma relação de transmissão agregada a cada 86400 segundos (ou seja, uma vez por dia).
 
 ## Quer saber mais? <a name="go-further"></a>
-
 Para serviços especializados (referenciamento, desenvolvimento, etc.), contacte os [parceiros OVHcloud](/links/partner).
 
 Se pretender beneficiar de uma assistência ao uso e à configuração das suas soluções OVHcloud, sugerimos que consulte as nossas diferentes [ofertas de suporte](/links/support).

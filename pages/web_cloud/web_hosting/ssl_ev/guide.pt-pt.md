@@ -35,7 +35,6 @@ Para os alojamentos partilhados da OVHcloud, a autoridade de certificação que 
     
 ## Requisitos <a name="requirements"></a>
 
-- Ter acesso à [Área de Cliente OVHcloud](/links/manager).
 - Encomendar ou dispor de um [alojamento partilhado OVHcloud](/links/web/hosting).
 - Encomendar ou dispor de um [nome de domínio](/links/web/domains) e dispor dos direitos exclusivos sobre a sua utilização. O domínio não deve estar associado a um certificado SSL.
 - ser uma organização (empresa, agência governamental, etc.) registada num registo oficial.
@@ -44,6 +43,17 @@ Para os alojamentos partilhados da OVHcloud, a autoridade de certificação que 
 
 Para verificar se é elegível para a subscrição de um certificado SSL Sectigo EV, aceda a [este link](https://help.sectigostore.com/support/solutions/articles/22000218717-extended-validation-ev-).
   
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Acesso à Área de Cliente OVHcloud
+
+- **Ligação direta:** [Hosting plans](/links/control-panel/web-hosting)
+- **Caminho de navegação:** `Web Cloud`{.action} > `Alojamentos`{.action} > Selecione o seu alojamento web
+
+---
+<!-- CP-NAV-END:web-hosting -->
+
 ## Instruções
 
 > [!warning]
@@ -92,40 +102,35 @@ Para confirmar, consulte os guias abaixo sempre que necessário:
 
 #### 1.1 - Para um domínio e um alojamento já existentes na OVHcloud
 
-Clique nos separadores abaixo para exibir sucessivamente cada um dos **6** passos:
+<!-- CP-STEPS-START:order-sectigo-ev -->
+Clique nos separadores abaixo para visualizar cada uma das **5** etapas.
 
 > [!tabs]
 > **Etapa 1**
 >>
->> Aceda à [Área de Cliente OVHcloud](/links/manager) e aceda à secção `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Etapa 2**
->>
->> Clique no menu `Alojamentos`{.action} e escolha o alojamento web em causa.
+>> Aceda à página [Hosting plans](/links/control-panel/web-hosting) e escolha o alojamento web correspondente.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Etapa 3**
+> **Etapa 2**
 >>
 >> Na página que se abrir, clique no separador `Certificados SSL`{.action}.
 >>
 >> ![Certificados SSL](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ssl-certificates.png){.thumbnail}
 >>
-> **Etapa 4**
+> **Etapa 3**
 >>
 >> Quando o conteúdo do separador aparecer, clique no botão `Encomendar um certificado SSL Sectigo`{.action}.
 >>
 >> ![SSL Sectigo](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ssl-certificates/order-a-sectigo-ssl-certificate.png){.thumbnail}
 >>
-> **Etapa 5**
+> **Etapa 4**
 >>
 >> Na nova janela que se abrir, selecione o domínio ou subdomínio em causa através do menu pendente e clique em `Validar`{.action} para ser reencaminhado para a nota de encomenda do seu certificado SSL Sectigo EV.
 >>
 >> ![SSL Sectigo Seleção do domínio](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ssl-certificates/order-a-sectigo-ssl-certificate-select-domain.png){.thumbnail}
 >>
-> **Etapa 6**
+> **Etapa 5**
 >>
 >> Selecione o **Certificado SSL Sectigo EV** uma vez chegado o túnel de encomenda e prossiga a encomenda.
 >>
@@ -136,6 +141,7 @@ Clique nos separadores abaixo para exibir sucessivamente cada um dos **6** passo
 >> Clique em `Continuar`{.action} depois de **todos os elementos** estarem corretamente inseridos.
 >>
 >> Continue a encomenda até ao pagamento para validar o pedido de criação do certificado SSL.
+<!-- CP-STEPS-END:order-sectigo-ev -->
 
 > [!alert]
 >

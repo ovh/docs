@@ -1,7 +1,7 @@
 ---
 title: 'Gérer la facturation de vos comptes Exchange'
 excerpt: 'Découvrez comment gérer la facturation de votre service Exchange'
-updated: 2025-09-22
+updated: 2026-03-24
 ---
 
 ## Objectif
@@ -12,15 +12,20 @@ Les services Hosted Exchange et Private Exchange disposent d'une gestion flexibl
 
 ## Prérequis
 
-- Être connecté à votre [espace client OVHcloud](/links/manager).
 - Avoir souscrit une offre [Exchange](/links/web/emails-hosted-exchange).
 
-## En pratique
+<!-- CP-NAV-START:web-exchange -->
+---
 
-1. Connectez-vous à votre [espace client OVHcloud](/links/manager).
-1. Rendez-vous dans la partie `Web Cloud`{.action}.
-1. Dans la rubrique `MICROSOFT`, cliquez sur `Exchange`{.action}.
-1. Sélectionnez la plateforme concernée.
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Exchange](/links/control-panel/web-exchange)
+- **Pour accéder à vos services :** `Web Cloud`{.action} > `Exchange`{.action} > Sélectionnez votre plateforme
+
+---
+<!-- CP-NAV-END:web-exchange -->
+
+## En pratique
 
 ### Hosted Exchange
 
@@ -44,7 +49,7 @@ Cliquez sur `...`{.action} à droite de la plateforme Exchange puis sur `Modifie
 
 Sur cette nouvelle fenêtre, vous pouvez visualiser et modifier la facturation de chacun de vos comptes. Il est possible d'effectuer des changements depuis la colonne « **Renouvellement** » sur un ou plusieurs comptes à la fois. Chaque modification sur un compte sera appliquée à la date indiquée dans la colonne « **Expiration** ».
 
-Dans l'exemple ci-dessous, voici les actions à mener pour passer un compte en renouvellement mensuel:
+Dans l'exemple ci-dessous, voici les actions à mener pour passer un compte en renouvellement mensuel :
 
 > Sur la première étape, cliquez sur la mention « **Mensuelle** » à droite du compte de votre choix puis cliquez sur `Suivant`{.action} plus bas à gauche.
 >

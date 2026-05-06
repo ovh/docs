@@ -10,9 +10,19 @@ Cette documentation a pour but d'expliquer les options de configuration des NSX 
 
 ## Prérequis
 
-- Être connecté à l'[espace client OVHcloud](/links/manager) pour gérer vos NSX Edges.
 - Utiliser **VMware NSX 4.1.1** pour accéder aux options de personnalisation.
 - Avoir des connaissances de base sur les concepts de VMware et les fonctionnalités des NSX Edges.
+
+<!-- CP-NAV-START:privatecloud-vmware-vsphere -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [VMware vSphere](/links/control-panel/privatecloud-vmware-vsphere)
+- **Pour accéder à vos services :** `Hosted Private Cloud`{.action} > `Managed VMware vSphere`{.action} > Sélectionnez votre service vSphere
+
+---
+<!-- CP-NAV-END:privatecloud-vmware-vsphere -->
 
 ## Principe général
 
@@ -50,7 +60,6 @@ Vous pouvez adapter votre infrastructure en fonction de vos besoins spécifiques
 
 ### Étapes pour personnaliser les NSX Edges
 
-Connectez-vous à l'[espace client OVHcloud](/links/manager).<br>
 Depuis le tableau de bord Datacentres, accédez à votre datacentre puis cliquez sur l'onglet `NSX Edge Nodes`{.action}.
 
 1. **Commander de nouveaux NSX Edges** :
@@ -81,7 +90,7 @@ Depuis le tableau de bord Datacentres, accédez à votre datacentre puis cliquez
 
 3. **Supprimer des NSX Edges inutilisés** :
 
-    Identifiez l’Edge à supprimer dans l'[espace client OVHcloud](/links/manager).
+    Identifiez l’Edge à supprimer.
 
     ![List of available NSX Edges](images/list-nsx-edges.png)
 

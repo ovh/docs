@@ -7,12 +7,12 @@ updated: 2018-07-03
 
 ## Objectif
 
-**Ce guide vous présente les différentes fonctionnalités de votre téléphone Gigaset C530IP fourni par OVH.**
+**Ce guide vous présente les différentes fonctionnalités de votre téléphone Gigaset C530IP fourni par OVHcloud.**
 
 ## Prérequis
 
-- Posséder [une ligne téléphonique OVH](/links/telecom/telephonie).
-- Avoir réceptionné et installé le téléphone Gigaset C530IP fourni par OVH.
+- Posséder [une ligne téléphonique OVHcloud](/links/telecom/telephonie).
+- Avoir réceptionné et installé le téléphone Gigaset C530IP fourni par OVHcloud.
 
 ## En pratique
 
@@ -24,7 +24,7 @@ updated: 2018-07-03
 |---|---|
 |Via le combiné ou un casque|Composez le numéro sur le clavier et appuyez sur la touche `Décroché`{.action} (1).|
 |Via le haut-parleur|Lors d'une communication, vous pouvez activer ou désactiver le haut-parleur en appuyant sur la touche `Décroché`{.action} (1).|
-|Vers un autre combiné de la même base|Dans les touches de navigation, appuyez d'abord  sur `INT`{.action} (2) pour visualiser la liste des combinés. Positionnez-vous ensuite sur le combiné à appeler à l’aide des touches de navigation, puis appuyez sur la touche `Décroché`{.action} (1).|
+|Vers un autre combiné de la même base|Dans les touches de navigation, appuyez d'abord sur `INT`{.action} (2) pour visualiser la liste des combinés. Positionnez-vous ensuite sur le combiné à appeler à l’aide des touches de navigation, puis appuyez sur la touche `Décroché`{.action} (1).|
 
 ### Répondre à un appel
 
@@ -67,7 +67,7 @@ Transférer un appel en raccrochant est possible grâce à un paramètre à acti
 
 Pour l'activer, vous devez dans un premier temps relever l'adresse IP locale de votre téléphone. Pour cela, appuyez sur le `Bouton central de la base`{.action} (4) faisant sonner le combiné. Sur l'écran rétroéclairé de ce dernier, relevez l'adresse IP locale qui s'affiche.
 
-Depuis votre ordinateur, renseignez cette adresse IP dans la barre d'adresse de votre navigateur internet. Renseignez le code PIN de votre téléphone (0000 étant le code par défaut). Une fois connecté, rendez vous dans l'onglet `Paramètres`{.action}, cliquez sur `Téléphonie`{.action}, puis sur `Paramètres VoIP avancés`{.action}. Cliquez à présent sur `Oui`{.action} à coté de `Transférer l'appel en raccrochant`.
+Depuis votre ordinateur, renseignez cette adresse IP dans la barre d'adresse de votre navigateur Internet. Renseignez le code PIN de votre téléphone (0000 étant le code par défaut). Une fois connecté, rendez-vous dans l'onglet `Paramètres`{.action}, cliquez sur `Téléphonie`{.action}, puis sur `Paramètres VoIP avancés`{.action}. Cliquez à présent sur `Oui`{.action} à côté de `Transférer l'appel en raccrochant`.
 
 ![Interface Web Gigaset C530IP](images/c530ip-web.png){.thumbnail}
 

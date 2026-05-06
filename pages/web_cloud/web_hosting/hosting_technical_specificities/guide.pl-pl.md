@@ -1,7 +1,7 @@
 ---
 title: "Informacje techniczne związane z hostingiem współdzielonym"
 excerpt: "Zapoznaj się z różnego rodzaju informacjami technicznymi dotyczącymi hostingu WWW"
-updated: 2023-12-08
+updated: 2026-04-01
 ---
 
 ## Wprowadzenie
@@ -13,7 +13,6 @@ Pakiety hostingowe OVHcloud są współdzielone. W związku z tym konfiguracja t
 ## Wymagania początkowe
 
 - Posiadanie kompatybilnego [hostingu WWW](/links/web/hosting)
-- Dostęp do [Panelu klienta OVHcloud](/links/manager).
 
 ## W praktyce
 
@@ -21,20 +20,14 @@ Pakiety hostingowe OVHcloud są współdzielone. W związku z tym konfiguracja t
 >
 > OVHcloud udostępnia różnorodne usługi, jednak to Ty odpowiadasz za ich konfigurację i zarządzanie nimi. Ponosisz więc odpowiedzialność za ich prawidłowe funkcjonowanie.
 >
-> Oddajemy w Twoje ręce niniejszy przewodnik, którego celem jest pomoc w jak najbardziej optymalnym wykonywaniu bieżących zadań. Niemniej jednak, w przypadku trudności zalecamy skontaktowanie się z [wyspecjalizowanym dostawcą](/links/partner) i/lub skontaktowanie się z dostawcą usługi. Niestety firma OVHcloud nie jest w stanie udzielić Ci wsparcia w tym zakresie. Więcej informacji znajduje się w sekcji "[Sprawdź również](#go-further)" tego przewodnika.
+> Oddajemy w Twoje ręce niniejszy przewodnik, którego celem jest pomoc w jak najbardziej optymalnym wykonywaniu bieżących zadań. Jednak w przypadku trudności zalecamy skontaktowanie się z [wyspecjalizowanym dostawcą](/links/partner) i/lub skontaktowanie się z dostawcą usługi. Niestety firma OVHcloud nie jest w stanie udzielić Ci wsparcia w tym zakresie. Więcej informacji znajduje się w sekcji "[Sprawdź również](#go-further)" tego przewodnika.
 >
 
 ### FTP
 
 - Użyj pasywnego **trybu** dla połączeń FTP. Upewnij się, że Twój skrypt lub klient FTP jest odpowiednio skonfigurowany.
 
-- Jeśli napotkasz błąd dostępu "Uwierzytelnienie połączenia 530 się nie powiodło" podczas logowania do przestrzeni dyskowej FTP: Upewnij się, że informacje dotyczące dostępu do przestrzeni FTP są poprawne. W tym celu zaloguj się do [Panelu klienta OVHcloud](/links/manager) i przejdź do sekcji `Web Cloud`{.action}. W lewej kolumnie kliknij `Hosting`{.action}, a następnie wybierz odpowiedni hosting. Na stronie, która się wyświetli kliknij zakładkę `FTP - SSH`{.action}.
-
-Znajdziesz tam wszystkie informacje dotyczące logowania do Twojej przestrzeni dyskowej FTP z wyjątkiem hasła.
-
-Dzieje się tak, ponieważ hasła nigdy nie są wyświetlane, ale można je zmieniać.
-
-Więcej informacji na ten temat znajdziesz w naszym przewodniku "[Logowanie do przestrzeni dyskowej FTP hostingu WWW](/pages/web_cloud/web_hosting/ftp_connection)".
+- Jeśli napotkasz błąd dostępu "Uwierzytelnienie połączenia 530 się nie powiodło" podczas logowania do przestrzeni dyskowej FTP, upewnij się, że informacje dotyczące dostępu do przestrzeni FTP są poprawne. Zapoznaj się z przewodnikiem "[Logowanie do przestrzeni dyskowej FTP hostingu WWW](/pages/web_cloud/web_hosting/ftp_connection)", aby znaleźć wszystkie informacje dotyczące logowania do Twojej przestrzeni dyskowej FTP. Hasła nigdy nie są wyświetlane, ale można je zmieniać.
 
 ### Emaile <a name="emails"></a>
 

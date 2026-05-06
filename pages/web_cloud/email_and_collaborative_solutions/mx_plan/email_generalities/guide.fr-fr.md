@@ -1,7 +1,7 @@
 ---
 title: "Premiers pas avec l'offre MX Plan"
 excerpt: 'Découvrez comment bien débuter avec votre offre MX Plan'
-updated: 2025-06-26
+updated: 2026-03-05
 ---
 
 <style>
@@ -30,15 +30,21 @@ Vous venez d'acquérir une solution MX Plan. Celle-ci vous permet de bénéficie
 ## Prérequis
 
 - Posséder une offre MX Plan liée à une offre d’[hébergement web](/links/web/hosting), un [hébergement gratuit 100M](/links/web/domains-free-hosting), ou seule.
-- Être connecté à l'[espace client OVHcloud](/links/manager).
+
+<!-- CP-NAV-START:web-mx-plan -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [MX Plan](/links/control-panel/web-mx-plan)
+- **Pour accéder à vos services :** `Web Cloud`{.action} > `MX Plan`{.action} > Sélectionnez votre service MX Plan
+
+---
+<!-- CP-NAV-END:web-mx-plan -->
 
 ## En pratique <a name="instructions"></a>
 
-1. Connectez-vous à votre [espace client OVHcloud](/links/manager).
-1. Rendez-vous dans la partie `Web Cloud`{.action}.
-1. Cliquez sur `MX Plan`{.action}.
-1. Sélectionnez le domaine concerné.
-1. **Poursuivez selon la technologie e-mail utilisée par votre service MX Plan**.
+**Poursuivez selon la technologie e-mail utilisée par votre service MX Plan**.
 
 > [!primary]
 >
@@ -116,7 +122,7 @@ Sélectionnez l'onglet correspondant à la technologie e-mail de votre offre MX 
 > [!tabs]
 > **Roundcube**
 >>
->> Vous devriez obtenir une interface ressemblante à l'image ci-dessous avec la mention « Rouncube » en haut à gauche.
+>> Vous devriez obtenir une interface ressemblante à l'image ci-dessous avec la mention « Roundcube » en haut à gauche.
 >> Pour découvrir l'interface Roundcube et son utilisation, consultez notre guide « [Utiliser son adresse e-mail depuis le webmail Roundcube](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_roundcube) ».
 >>
 >> ![email](images/mxplan-webmail-roundcube01.png){.thumbnail .w-500}
@@ -167,7 +173,7 @@ Retrouvez ci-dessous les liens des guides de configuration selon votre type d'ap
 
 Si vous désirez simplement obtenir les éléments nécessaires pour configurer votre adresse e-mail, retrouvez ci-dessous les paramètres à utiliser.
 
-##### Paramètres de réception IMAP et POP <a name="imap-pop"></a>
+#### Paramètres de réception IMAP et POP <a name="imap-pop"></a>
 
 Pour la réception des e-mails, lors du choix du type de compte, nous vous conseillons une utilisation en **IMAP**. Vous pouvez cependant sélectionner **POP**.
 
@@ -196,7 +202,7 @@ Sélectionnez l'onglet correspondant à votre type de configuration :
 >> - **Port** : 995.
 >> - **Type de sécurité** : SSL/TLS.
 
-##### Paramètres d'envoi SMTP <a name="smtp"></a>
+#### Paramètres d'envoi SMTP <a name="smtp"></a>
 
 Pour l'envoi des e-mails, retrouvez ci-dessous les paramètres **SMTP** à utiliser :
 
@@ -264,7 +270,7 @@ Sélectionnez l'onglet correspondant à la technologie e-mail de votre offre MX 
 >> La mise en place d'une réponse automatique se réalise directement en se connectant à l'adresse e-mail depuis le Webmail. Pour obtenir les détails, référez-vous à notre guide « [Utiliser son adresse e-mail depuis le webmail Outlook Web App (OWA)](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa) », allez directement au chapitre « Ajouter la réponse automatique ».
 >>
 
-## Aller plus loin
+## Aller plus loin <a name="go-further"></a>
 
 [Utiliser le webmail Roundcube](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_roundcube)
 
@@ -275,8 +281,6 @@ Sélectionnez l'onglet correspondant à la technologie e-mail de votre offre MX 
 [Utiliser les redirections e-mail](/pages/web_cloud/email_and_collaborative_solutions/common_email_features/feature_redirections)
 
 [MX Plan - Créer une réponse automatique sur une adresse e-mail](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/feature_auto_responses)
-
-[Utiliser les redirections e-mail](/pages/web_cloud/email_and_collaborative_solutions/common_email_features/feature_redirections)
 
 Pour des prestations spécialisées (référencement, développement, etc.), contactez les [partenaires OVHcloud](/links/partner).
 

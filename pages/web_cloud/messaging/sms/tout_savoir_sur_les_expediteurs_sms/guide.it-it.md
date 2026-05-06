@@ -11,15 +11,21 @@ Questo manuale ti spiega come creare e utilizzare mittenti per l'invio dei tuoi 
 ## Prerequisiti
 
 - Avere un [account SMS OVHcloud](/links/telecom/sms).
-- Essere connesso all'[Spazio Cliente OVHcloud](/links/manager), sezione `Telecom`{.action} e quindi `SMS`{.action}.
+
+<!-- CP-NAV-START:telecom-sms -->
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [SMS](/links/control-panel/telecom-sms)
+- **Percorso di navigazione:** `Telecom`{.action} > `SMS`{.action} > Seleziona il tuo SMS account
+
+---
+<!-- CP-NAV-END:telecom-sms -->
 
 ![Spazio Cliente Telecom SMS](/pages/assets/screens/control_panel/product-selection/telecom/tpl-telecom-03-fr-sms.png){.thumbnail}
 
 ## Procedura
-
-Accedi al tuo [Spazio Cliente OVHcloud](/links/manager) e seleziona `Telecom`{.action}.
-
-Fai clic su `SMS`{.action} e quindi sul tuo account SMS.
 
 ### Tipi di mittenti disponibili
 
@@ -44,11 +50,11 @@ Consente di ricevere una risposta tramite l'opzione SMS ricevuti.
 
 #### Mittente alfanumerico
 
-Puoi personalizzare il tuo mittente. Non sarà però più possibile ricevere una risposta dal destinatario del tuo SMS. Per accedere alla gestione dei mittenti SMS, seleziona l'opzione `Mittenti`{.action}(1) quando sei sul relativo account SMS.
+Puoi personalizzare il tuo mittente. Non sarà però più possibile ricevere una risposta dal destinatario del tuo SMS. Per accedere alla gestione dei mittenti SMS, seleziona l'opzione `Mittenti`{.action} (1) quando sei sul relativo account SMS.
 
 ![invio sms manager](images/sms-send-control-panel04E.png){.thumbnail}
 
-Se desideri aggiungere un mittente SMS aggiuntivo, fai clic sul pulsante `Azioni`{.action} al centro e quindi su `Aggiungi`{.action}(2).
+Se desideri aggiungere un mittente SMS aggiuntivo, fai clic sul pulsante `Azioni`{.action} al centro e quindi su `Aggiungi`{.action} (2).
 
 ![invio sms manager](images/sms-send-control-panel05E.png){.thumbnail}
 

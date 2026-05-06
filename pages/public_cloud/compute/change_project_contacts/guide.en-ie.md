@@ -14,12 +14,19 @@ Modifying these contacts enables you to separate the technical management of ser
 ## Requirements
 
 - A [Public Cloud project](/links/public-cloud/public-cloud) in your OVHcloud account
-- Access to the [OVHcloud Control Panel](/links/manager)
 - Admin and billing contacts in the same OVHcloud subsidiary
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+### OVHcloud Control Panel Access
+- **Direct link:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Navigation path:** `Public Cloud`{.action} > Select your project
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## Instructions
 
-Log in to the [OVHcloud Control Panel](/links/manager), go to the `Public Cloud`{.action} section and select the Public Cloud project concerned. Click on `Contacts & Rights`{.action} in the left-hand menu under **Settings**.
+Click on `Contacts & Rights`{.action} in the left-hand menu under **Settings**.
 
 On this page you can see the administrative and billing contacts associated with your project.
 

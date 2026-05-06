@@ -1,7 +1,7 @@
 ---
 title: 'Cloud Guthaben aufladen'
 excerpt: 'Erfahren Sie hier, wie Sie Ihrem Public Cloud Projekt Guthaben oder Gutscheine hinzufügen'
-updated: 2025-04-28
+updated: 2026-05-05
 ---
 
 ## Ziel
@@ -14,11 +14,21 @@ Das bedeutet, dass dieses Guthabenkonto zuerst belastet wird und dann noch verbl
 ## Voraussetzungen
 
 - Sie verfügen über ein [Public Cloud Projekt](/links/public-cloud/public-cloud) in Ihrem OVHcloud Kunden-Account.
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direkter Link:** [Public Cloud Projekte](/links/control-panel/publiccloud-projects)
+- **Navigationspfad:** `Public Cloud`{.action} > Wählen Sie Ihr Projekt aus
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## In der praktischen Anwendung
 
-Loggen Sie sich in Ihr [OVHcloud Kundencenter ein](/links/manager), gehen Sie in den Bereich `Public Cloud`{.action} und wählen Sie Ihr Projekt aus. Öffnen Sie `Guthaben & Gutscheine`{.action} im linken Menü unter **Einstellungen**.
+Öffnen Sie `Guthaben & Gutscheine`{.action} im linken Menü unter **Einstellungen**.
 
 > [!warning]
 >
@@ -55,9 +65,14 @@ Der Gutschein-Saldo erscheint in der Liste `Guthaben und Gutscheine` .
 
 > [!primary]
 >
-> Da die Gültigkeitsdauer der Gutscheine in der Regel kürzer ist, wird der Guthaben des Gutscheins vor dem Public Cloud Guthaben verwendet.
+> Gutscheine sind in der Regel einen Monat gültig. Verwenden Sie den Gutschein so schnell wie möglich. Der Gutschein-Saldo wird vor dem Public Cloud Guthaben verwendet.
 >
 
 ## Weiterführende Informationen
+
+> [!primary]
+>
+> Neukunden erhalten automatisch ein Gratis-Testguthaben von 200 €, sobald sie ihr erstes Public Cloud Projekt aktivieren. Lesen Sie hierzu unsere Anleitung "[Erstellung Ihres ersten OVHcloud Public Cloud Projekts](/pages/public_cloud/public_cloud_cross_functional/create_a_public_cloud_project)".
+>
 
 Treten Sie unserer [User Community](/links/community) bei.

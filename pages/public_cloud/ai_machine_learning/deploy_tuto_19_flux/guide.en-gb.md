@@ -43,7 +43,6 @@ Full list is available on the [official repository](https://github.com/black-for
 
 Before proceeding, ensure you have the following:
 
-- Access to the [OVHcloud Control Panel](/links/manager)
 - An AI Deploy Project created inside a [Public Cloud project](/links/public-cloud/public-cloud) in your OVHcloud account
 - A [user for AI Training & Object Storage](/pages/public_cloud/ai_machine_learning/gi_01_manage_users)
 - [The OVHcloud AI CLI](/pages/public_cloud/ai_machine_learning/cli_10_howto_install_cli) installed on your computer

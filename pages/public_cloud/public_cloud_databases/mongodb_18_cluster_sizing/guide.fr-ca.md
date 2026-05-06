@@ -1,5 +1,5 @@
 ---
-title: MongoDB - Cluster Sizing
+title: Dimensionnement des clusters Public Cloud Databases pour MongoDB (EN)
 excerpt: I Currently Do Not Have MongoDB And I want Initial Sizing
 updated: 2025-01-06
 ---

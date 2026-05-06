@@ -1,12 +1,12 @@
 ---
 title: Object Storage - How to migrate from an S3-compatible object storage provider to OVHcloud Object Storage
 excerpt: This guide provides details on how to migrate from an S3-compatible object storage provider to OVHcloud Object Storage using Rclone
-updated: 2025-09-08
+updated: 2026-03-06
 ---
 
 ## Objective
 
-This guide provides detailed steps to help you migrate from a third-party S3-compatible object storage provider to OVHcloud Object Storage using the popular [Rclone](https://rclone.org/) tool, a command-line tool that can be used to manage cloud storage resources.
+This guide provides detailed steps to help you migrate from a third-party S3<sup>1</sup>-compatible object storage provider to OVHcloud Object Storage using the popular [Rclone](https://rclone.org/) tool, a command-line tool that can be used to manage cloud storage resources.
 
 > [!warning]
 >
@@ -28,6 +28,17 @@ This guide provides detailed steps to help you migrate from a third-party S3-com
 - An **OVHcloud virtual machine** with Rclone installed working as the management workstation in our scenario. To get the best results, within your budget, we suggest at least the following specifications:
     - b3-16: 4 v-cores and 16 GB of RAM
     - c3-16: 8 v-cores and 16 GB of RAM
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Navigation path:** `Public Cloud`{.action} > Select your project
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 > [!primary]
 >
@@ -58,11 +69,11 @@ This guide mainly **focuses on data migration for small to medium volumes (gener
 
 ### Step 1 - Preparing your S3-compatible source bucket
 
-As explained before you will need your `access key`, `secret key` but also the `region ID` in which your bucket is. Connect to your source bucket provider console to get those details.
+As explained earlier, you will need your `access key`, `secret key`, and the `region ID` where your bucket is located. Connect to your source bucket provider console to get those details.
 
 ### Step 2 - Preparing your OVHcloud destination bucket
 
-Similar to your source bucket, you will need your `access key`, `secret key` but also the `region ID` for your destination bucket. Log in to the [OVHcloud Control Panel](/links/manager) and navigate to the `Object Storage`{.action} section to collect those details.
+Similar to your source bucket, you will need your `access key`, `secret key` but also the `region ID` for your destination bucket. Navigate to the `Object Storage`{.action} section to collect those details.
 
 ### Step 3 - Installing, configuring and running Rclone
 
@@ -75,40 +86,40 @@ If you haven’t done it already, install **Rclone** by following the instructio
 After installing **Rclone** on your virtual machine, configure its connection to both the source and destination buckets.
 
 ```bash
-$ rclone config
+rclone config
 ```
 
-This command will open the configuration menu and will guide you step by step with the configuration. The official OVHcloud provider configuration is available and will guide you step by step. Follow the steps available [here](https://rclone.org/s3/#ovhcloud).
+This command opens an interactive configuration menu. For OVHcloud-specific steps, follow the [official Rclone guide](https://rclone.org/s3/#ovhcloud).
 
 You can also create/modify the configuration file yourself with the following command:
 
 ```bash
-$ rclone config file
+rclone config file
 ```
 
-If the configuration file doesn’t exist, you’ll be prompted to add the following configuration using your preferred editor. For example, on Linux you can use `nano` :
+If the configuration file doesn’t exist, you’ll be prompted to add the following configuration using your preferred editor. For example, on Linux you can use `nano`:
 
 ```bash
-$ nano /home/<your linux user>/.config/rclone/rclone.conf
+nano /home/<linux_username>/.config/rclone/rclone.conf
 ```
 
 Then, add your configuration blocks:
 
 ```bash
-[<your source remote provider name>]
+[<source_remote_name>]
 type = s3
-provider = <name of your source provider in rclone list>
+provider = <source_provider_name>
 env_auth = false
-access_key_id = <your source provider access key>
-secret_access_key = <your source provider secret key>
-region = <your source provider region name>
+access_key_id = <source_access_key>
+secret_access_key = <source_secret_key>
+region = <source_region>
 
 [ovhcloud]
 type = s3
 provider = OVHcloud
 env_auth = false
-access_key_id = OVH-ACCESS-KEY
-secret_access_key = OVH-SECRET-KEY
+access_key_id = <ovh_access_key>
+secret_access_key = <ovh_secret_key>
 endpoint = s3.<region>.io.cloud.ovh.net
 region = <region>
 ```
@@ -118,35 +129,35 @@ region = <region>
 > To get the list of OVHcloud region endpoints, see [Object Storage - Endpoints and Object Storage geoavailability](/pages/storage_and_backup/object_storage/s3_location).
 >
 
-You can then test your source provider and your OVHcloud connections using the `rclone config` command by as below:
+You can then test your source provider and your OVHcloud connections using the `rclone config` command:
 
 ```bash
-$ rclone config
+rclone config
 ```
 
 #### Step 3.3 - Running Rclone
 
-Depending on your strategy you can use two different commands to start the migration. Either you use the `rclone sync` command to start the migration of one or all buckets. As detailed in the documentation, the `rclone sync`command will make source and destination identical. Be careful then when using it.
+Depending on your strategy you can use two different commands to start the migration. Either you use the `rclone sync` command to start the migration of one or all buckets. As detailed in the documentation, the `rclone sync` command will make source and destination identical. Be careful then when using it.
 
 You can also use the `rclone copy` command that will copy files from your source to your destination.
-In both cases, remember to change `source-bucket-name` and `ovh-bucket-name` to your S3-compatible source provider and OVHcloud Object Storage bucket names, respectively:
+In both cases, remember to replace the source and destination values with your own bucket names:
 
 ```bash
-$ rclone sync <your source provider name>:source-bucket-name/ ovhcloud:ovh-bucket-name/ --progress
+rclone sync <source_remote_name>:<source_bucket_name>/ ovhcloud:<destination_bucket_name>/ --progress
 ```
 
 or:
 
 ```bash
-$ rclone copy <your source provider name>:source-bucket-name/ ovhcloud:ovh-bucket-name/ --progress
+rclone copy <source_remote_name>:<source_bucket_name>/ ovhcloud:<destination_bucket_name>/ --progress
 ```
 
 `--progress` shows progress during transfer.
 
-In order to leverage the rclone WebUI GUI you can also use the following command:
+To use the Rclone web GUI, run:
 
 ```bash
-$ rclone copy <your source provider name>:source-bucket-name/ ovhcloud:ovh-bucket-name/ --transfers 50 --rc --rc-addr :5572 --rc-web-gui --rc-user USERNAME --rc-pass PASSWORD
+rclone copy <source_remote_name>:<source_bucket_name>/ ovhcloud:<destination_bucket_name>/ --transfers 50 --rc --rc-addr :5572 --rc-web-gui --rc-user <username> --rc-pass <password>
 ```
 
 In this command we added specific flags to optimize and monitor the copy:
@@ -155,18 +166,18 @@ In this command we added specific flags to optimize and monitor the copy:
 - `--rc` enables the remote control server
 - `--rc-addr :5572` represents the address and the port used to access rclone’s WebUI GUI. Port 5572 is the default port used by Rclone to securely access the WebUI.
 - `--rc-web-gui` launches WebGUI on localhost
-- `--rc-user USERNAME` `--rc-pass PASSWORD` are your user and password for authentication. Make sure to enter the right credentials.
+- `--rc-user <username>` `--rc-pass <password>` are your user and password for authentication. Make sure to enter the right credentials.
 
 > [!primary]
 >
-> Many other flags are available with rRlone. You can get them on the [Rclone documentation](https://rclone.org/commands/rclone/).
+> Many other flags are available with rclone. You can find them in the [Rclone documentation](https://rclone.org/commands/rclone/).
 >
 
 With the copy process set up, you can now begin monitoring the migration process using Rclone’s WebUI GUI.
 
 In your preferred web browser, use port 5572 to reach your instance’s address: `http://IP-ADDRESS:5572`.
 
-You’ll need to log in using your rclone credentials: `--rc-user` and `–rc-pass`.
+You’ll need to log in using your rclone credentials: `--rc-user` and `--rc-pass`.
 
 Once you’re logged in, you can track the `rclone copy` command’s progress: check job status, throughput, bandwidth, object count, and total data volume. From the GUI, you can also manage new remotes and new actions.
 
@@ -177,8 +188,8 @@ We recommend comparing the source and destination buckets after migration. Your 
 You can check the size of both buckets and number of objects using this command line:
 
 ```bash
-rclone size <your source provider name>:source-bucket-name/
-rclone size ovhcloud:ovh-bucket-name/
+rclone size <source_remote_name>:<source_bucket_name>/
+rclone size ovhcloud:<destination_bucket_name>/
 ```
 
 ## Go further
@@ -186,3 +197,5 @@ rclone size ovhcloud:ovh-bucket-name/
 If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
 
 Join our [community of users](/links/community).
+
+<sup>1</sup>: S3 is a trademark of Amazon Technologies, Inc. OVHcloud's service is not sponsored by, endorsed by, or otherwise affiliated with Amazon Technologies, Inc.

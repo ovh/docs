@@ -1,7 +1,7 @@
 ---
 title: AI Endpoints - Transcrire et résumer des fichiers audio (EN)
 excerpt: "Résumer des heures de réunions et conversations audio avec des APIs d'ASR et de LLM"
-updated: 2025-12-19
+updated: 2026-04-15
 ---
 
 > [!primary]
@@ -17,7 +17,7 @@ Are you looking for a way to efficiently summarize your meetings, broadcasts, an
 
 In this tutorial, you will create an Audio Summarizer assistant that can not only transcribe but also summarize all your audio files.
 
-Indeed, thanks to [AI Endpoints](https://endpoints.ai.cloud.ovh.net/), it’s never been easier to create a virtual assistant that can help you stay on top of your meetings and keep track of important information.
+Indeed, thanks to [AI Endpoints](/links/public-cloud/ai-endpoints), it’s never been easier to create a virtual assistant that can help you stay on top of your meetings and keep track of important information.
 
 This tutorial will explore how AI APIs can be connected to create an advanced virtual assistant capable of transcribing and summarizing any audio file using **ASR (Automatic Speech Recognition)** technologies and popular **LLMs (Large Language Models)**. We will also build an app to use our assistant!
 
@@ -142,7 +142,7 @@ Now it’s time to call an LLM to summarize the transcribed text.
 
 ### Summarize audio with LLM
 
-In this second step, create the `chat_completion` function to use `Mixtral8x7B` effectively (or any other model):
+In this second step, create the `chat_completion` function to use `gpt-oss-120b` effectively (or any other model):
 
 **What to do?**
 
@@ -163,7 +163,7 @@ def chat_completion(oai_client, new_message):
         history_openai_format = [{"role": "user", "content": f"Summarize the following text in a few words: {new_message}"}]
         # return summary
         return oai_client.chat.completions.create(
-            model="Mixtral-8x7B-Instruct-v0.1",
+            model="gpt-oss-120b",
             messages=history_openai_format,
             temperature=0,
             max_tokens=1024

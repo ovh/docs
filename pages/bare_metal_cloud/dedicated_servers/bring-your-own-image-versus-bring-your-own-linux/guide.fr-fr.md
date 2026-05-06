@@ -1,7 +1,7 @@
 ---
-title: Comparaison entre Bring Your Own Image (BYOI) et Bring Your Own Linux (BYOLinux)
-excerpt: Trouvez le service d'images OS personnalisées qui convient le mieux à vos usages
-updated: 2024-01-31
+title: "Bring Your Own Image (BYOI) vs Bring Your Own Linux (BYOLinux) - Comparaison pour serveurs dédiés"
+excerpt: "Comparez les services Bring Your Own Image (BYOI) et Bring Your Own Linux (BYOLinux) pour choisir la bonne méthode de déploiement d'images personnalisées sur votre serveur dédié"
+updated: 2026-02-03
 ---
 
 ## Objectif
@@ -25,6 +25,7 @@ Cette page vous présente les différences entre **Bring Your Own Image** et **B
 |-|-|-|-|
 |Image personnalisée|Fournir une URL de téléchargement qui pointe vers l'image d'un OS personnalisé|✅|✅|
 |Personnalisation du partitionnement¹|Exploiter toutes les possibilités de l'[API de partitionnement OVHcloud](/pages/bare_metal_cloud/dedicated_servers/partitioning_ovh) afin de configurer les partitions, le RAID logiciel, LVM, ZFS dans votre image personnalisée lors de l'installation OS|❌|✅|
+|Multi-disques|Installer l'OS sur plusieurs disques²|❌|✅|
 |Format d'Image|l'URL de l'image fournie doit pointer vers un format de fichier qui est compatible|RAW, QCOW2|QCOW2|
 |Raid Matériel²|Exploiter l'API OVHcloud pour configurer la contrôleur RAID matériel de votre serveur dédié lors de l'installation OS|✅|✅|
 |OS autre que Linux|En plus des OS basés sur Linux, utilisez n'importe quel OS: UNIX, Windows, FreeBSD etc.|✅|❌|

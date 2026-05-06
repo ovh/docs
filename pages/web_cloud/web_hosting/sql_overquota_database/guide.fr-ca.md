@@ -1,7 +1,7 @@
 ---
 title: "Hébergement web - Ma base de données est saturée, que faire ?"
 excerpt: "Découvrez comment agir lorsque votre base de données est saturée"
-updated: 2025-02-19
+updated: 2026-04-01
 ---
 
 ## Objectif
@@ -18,16 +18,27 @@ Ce tutoriel vous propose des actions à entreprendre lorsque votre base de donn�
 
 ## Prérequis
 
-- Être connecté à votre [espace client OVHcloud](/links/manager).
 - Disposer d'une [offre d'hébergement web OVHcloud](/links/web/hosting) avec une base de données mutualisée OVHcloud associée.
   
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Hébergements](/links/control-panel/web-hosting)
+- **Pour accéder à vos services :** `Web Cloud`{.action} > `Hébergements`{.action} > Sélectionnez votre hébergement web
+
+---
+<!-- CP-NAV-END:web-hosting -->
+
 ## En pratique
 
 > [!warning]
 >
 > OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
 > 
-> Nous mettons à votre disposition ce tutoriel afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](/links/partner) si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section [« Aller plus loin »](#go-further) de ce guide.
+> Nous mettons à votre disposition ce tutoriel afin de vous accompagner au mieux sur des tâches courantes. Cependant, nous vous recommandons de faire appel à un [prestataire spécialisé](/links/partner) si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section [« Aller plus loin »](#go-further) de ce guide.
 >
 
 Lorsque votre base de données mutualisée OVHcloud arrive à saturation (**overquota**), nos robots vous avertissent par e-mail sur l'adresse e-mail du [contact « Administrateur »](/pages/account_and_service_management/account_information/managing_contacts) de la base de données. 
@@ -36,7 +47,7 @@ Un premier e-mail est envoyé lorsque votre base de données a consommé plus de
 
 Lorsque votre base de données est en **overquota**, un troisième e-mail d'avertissement vous est envoyé. Votre base de données bascule alors en « *READ ONLY* » (lecture seule). Vous ne pouvez plus ajouter ou modifier les entrées de votre base de données mais elle reste accessible en **lecture** et en **suppression**. 
 
-### Etape 1 : identifier la ou les table(s) volumineuse(s)
+### 1 - Identifier la ou les table(s) volumineuse(s)
 
 Une base de données est constituée d'une ou plusieurs **tables**, elles-mêmes constituées d'une ou plusieurs **lignes** organisées à l'aide de **colonnes** prédéterminées.
 
@@ -49,49 +60,45 @@ La première étape consiste à identifier la ou les tables volumineuses présen
 > [phpMyAdmin](https://www.phpmyadmin.net/) est disponible sur l'ensemble des bases de données mutualisées OVHcloud.
 > Cette application de gestion de base de données facilite la réalisation des actions manuelles que vous pouvez effectuer avec votre base de données.
 >
-> Si votre base de données est présente sur une solution [Web Cloud Databases](/links/web/databases), consultez notre guide « [Web Cloud Databases - Se connecter à votre base de données](/pages/web_cloud/web_cloud_databases/connecting-to-database-on-database-server) », puis passez directement à l'[étape 1.2](#step1.2) du présent guide.
+> Si votre base de données est présente sur une solution [Web Cloud Databases](/links/web/databases), consultez notre guide « [Web Cloud Databases - Se connecter à votre base de données](/pages/web_cloud/web_cloud_databases/connecting-to-database-on-database-server) », puis passez directement à la [partie 1.2](#step1.2) du présent guide.
 >
 
 #### 1.1 - Se connecter à la base de données via phpMyAdmin
 
-Récupérez les informations d'accès à votre base de données directement dans le fichier de configuration de votre site web. Réalisez cette action à l'aide de l'**étape 1** de notre guide sur [le changement du mot de passe d'une base de données](/pages/web_cloud/web_hosting/sql_change_password).
+Récupérez les informations d'accès à votre base de données directement dans le fichier de configuration de votre site web. Réalisez cette action à l'aide de la **partie 1** de notre guide sur [le changement du mot de passe d'une base de données](/pages/web_cloud/web_hosting/sql_change_password).
 
-Pour vous connectez à la base de données via phpMyAdmin, cliquez sur les onglets ci-dessous pour afficher successivement chacune des **5** étapes.
+<!-- CP-STEPS-START:connect-phpmyadmin -->
+Pour vous connecter à la base de données via phpMyAdmin, cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4** étapes.
 
 > [!tabs]
-> **Etape 1**
+> **Étape 1**
 >>
->> Connectez-vous à votre [espace client OVHcloud](/links/manager), puis rendez-vous dans la partie `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Etape 2**
->>
->> Cliquez sur le menu `Hébergements`{.action}, puis choisissez l'hébergement web concerné.
+>> Accédez à la page [Hébergements](/links/control-panel/web-hosting), puis choisissez l'hébergement web concerné.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Etape 3**
+> **Étape 2**
 >>
 >> Sur la page qui s'affiche, cliquez sur l'onglet `Bases de données`{.action}. 
 >>
 >> ![Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases.png){.thumbnail}
 >> 
-> **Etape 4**
+> **Étape 3**
 >>
 >> Sur la nouvelle page, un tableau contenant vos bases de données créées apparaît.
 >>
 >> ![Go to phpMyAdmin](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/go-to-phpmyadmin.png){.thumbnail}
 >>
->> Prenez note du `Nom d'utilisateur` et de l'`Adresse du serveur` **de votre base de données saturée**. Ces informations sont visibles dans le tableau listant vos bases de données.  
+>> Prenez note du `Nom d'utilisateur` et de l'`Adresse du serveur` **de votre base de données saturée**. Ces informations sont visibles dans le tableau listant vos bases de données. 
 >>
 >> A droite de la base de données concernée, cliquez sur le bouton `...`{.action}, puis sur `Accéder à phpMyAdmin`{.action}.
 >>
-> **Etape 5**
+> **Étape 4**
 >>
 >> ![phpMyAdmin Login interface](/pages/assets/screens/other/web-tools/phpmyadmin/pma-interface-login.png){.thumbnail}
 >>
 >> Renseignez les informations d'accès à votre base de données puis cliquez sur `Connexion`{.action}.
+<!-- CP-STEPS-END:connect-phpmyadmin -->
 
 #### 1.2 - Rechercher les tables les plus volumineuses <a name="step1.2"></a>
 
@@ -100,7 +107,6 @@ Pour vous connectez à la base de données via phpMyAdmin, cliquez sur les ongle
 > Désormais, vous intervenez directement sur le contenu de votre base de données. Les manipulations que vous réalisez dans phpMyAdmin peuvent avoir des conséquences irréversibles si celles-ci ne sont pas réalisées correctement.
 >
 > Assurez-vous des manipulations que vous effectuez. Si vous éprouvez la moindre difficulté, nous vous recommandons de faire appel à un [prestataire spécialisé](/links/partner). En effet, OVHcloud ne pourra pas vous fournir une assistance sur le contenu de votre base de données.
->
 
 Une fois connecté, la page suivante s'affiche :
 
@@ -110,9 +116,9 @@ Cliquez sur le `« Nom de votre base de données »`{.action} dans la colonne de
 
 ![phpMyAdmin Tables](/pages/assets/screens/other/web-tools/phpmyadmin/pma-check-size.png){.thumbnail}
 
-Les tables les plus volumineuses apparaissent en haut du tableau. Identifiez celles-ci puis passez à l'**étape 2**.
+Les tables les plus volumineuses apparaissent en haut du tableau. Identifiez celles-ci puis passez à la **partie 2**.
 
-### Etape 2 : déterminer l'utilité du contenu présent dans la ou les table(s) volumineuse(s)
+### 2 - Déterminer l'utilité du contenu présent dans la ou les table(s) volumineuse(s)
 
 Une fois les tables volumineuses identifiées, déterminez si l'intégralité de leur contenu est nécessaire au fonctionnement de votre site.
 
@@ -137,7 +143,7 @@ Retrouvez ci-dessous les liens vers les sites officiels des CMS proposés en ins
 > Si votre site a été développé « **manuellement** » par un prestataire spécialisé, nous vous recommandons de contacter ce dernier afin qu'il vous accompagne.
 >
 
-### Etape 3 : mener une action corrective
+### 3 - Mener une action corrective
 
 Une fois que vous avez déterminé si le contenu de vos tables est nécessaire ou non au fonctionnement de votre site, plusieurs options s'offrent à vous :
 
@@ -150,7 +156,7 @@ Vous devrez basculer votre base de données sur une base de données plus volumi
 > Pour augmenter la taille allouée à votre base de données, vous devrez obligatoirement créer une nouvelle base de données plus grande et copier le contenu de l'ancienne dans la nouvelle. En effet, il n'est pas possible d'augmenter directement la taille d'une base de données liée à un hébergement web.
 >
 
-Consultez notre offre de bases de données [Web Cloud Databasess](/links/web/databases) pour choisir votre nouveau service de base de données. 
+Consultez notre offre de bases de données [Web Cloud Databases](/links/web/databases) pour choisir votre nouveau service de base de données. 
 
 Nous recommandons cette offre pour les bases de données volumineuses.
 
@@ -159,8 +165,8 @@ Il est possible de dupliquer le contenu de votre base de données OVHcloud direc
 Dans le cas d'une migration vers une base de données externe aux offres [Start SQL](/links/web/hosting-options-startsql) et [Web Cloud Databases](/links/web/databases), vous pouvez déplacer manuellement le contenu de votre ancienne base de données vers une nouvelle à l'aide de nos guides:
 
 - [Exporter votre base de données existante](/pages/web_cloud/web_hosting/sql_database_export)
-- [Premiers pas avec l'offre Web Cloud Databasess](/pages/web_cloud/web_cloud_databases/starting_with_clouddb)
-- [Importer votre ancienne base de données dans votre offre Web Cloud Databasess](/pages/web_cloud/web_cloud_databases/restore-import-on-database-server)
+- [Premiers pas avec l'offre Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb)
+- [Importer votre ancienne base de données dans votre offre Web Cloud Databases](/pages/web_cloud/web_cloud_databases/restore-import-on-database-server)
 
 #### Cas n°2 - Une partie ou l'ensemble du contenu de la table volumineuse n'est pas nécessaire au fonctionnement de votre site
 
@@ -221,7 +227,7 @@ DROP TABLE `table_1`
 
 > Dans cet exemple, la commande supprime la table **table_1** et l'ensemble des lignes qu'elle contient.
 
-### Etape 4 : Sortir la base de donnée du statut « READ ONLY » (lecture seule)
+### 4 - Sortir la base de données du statut « READ ONLY » (lecture seule)
 
 Nos robots en charge des vérifications des quotas passent très régulièrement sur nos infrastructures.
 S'ils constatent, lors de leur passage sur vos services, que votre base de données n'est plus en **overquota**, ils retirent automatiquement le statut « READ ONLY » (lecture seule).
@@ -231,34 +237,29 @@ Cependant, vous pouvez forcer leur passage sur vos services pour accélérer le 
 
 #### Recalculer le quota pour une base de données incluse avec votre offre d'hébergement web
 
-Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **5** étapes.
+<!-- CP-STEPS-START:recalculate-quota-web-hosting -->
+Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4** étapes.
 
 > [!tabs]
-> **Etape 1**
+> **Étape 1**
 >>
->> Connectez-vous à votre [espace client OVHcloud](/links/manager), puis rendez-vous dans la partie `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Etape 2**
->>
->> Cliquez sur le menu `Hébergements`{.action}, puis choisissez l'hébergement web concerné.
+>> Accédez à la page [Hébergements](/links/control-panel/web-hosting), puis choisissez l'hébergement web concerné.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Etape 3**
+> **Étape 2**
 >>
 >> Sur la page qui s'affiche, cliquez sur l'onglet `Bases de données`{.action}. 
 >>
 >> ![Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases.png){.thumbnail}
 >> 
-> **Etape 4**
+> **Étape 3**
 >>
 >> Sur la nouvelle page, un tableau contenant vos bases de données créées apparaît. A droite de la base de données concernée, cliquez sur le bouton `...`{.action}, puis sur `Recalculer le quota`{.action}. 
 >>
 >> ![Recalculate quota shared SQL](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/recalculate-quota.png){.thumbnail}
 >> 
-> **Etape 5**
+> **Étape 4**
 >>
 >> Dans la fenêtre qui s'affiche, cliquez directement sur le bouton `Valider`{.action}.
 >>
@@ -266,26 +267,21 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **5*
 >>
 >> Une fois lancée, l'opération peut prendre plusieurs minutes. Lorsqu'elle se termine, le statut « READ ONLY » de votre base de données disparaît.
 >> Votre base de données est alors de nouveau pleinement opérationnelle.
->>
+<!-- CP-STEPS-END:recalculate-quota-web-hosting -->
 
 #### Recalculer le quota pour une base de données hébergée sur une solution Web Cloud Databases
 
-Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3** étapes.
+<!-- CP-STEPS-START:recalculate-quota-web-cloud-databases -->
+Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **2** étapes.
 
 > [!tabs]
-> **Etape 1**
+> **Étape 1**
 >>
->> Connectez-vous à votre [espace client OVHcloud](/links/manager), puis rendez-vous dans la partie `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Etape 2**
->>
->> Cliquez sur le menu `Web Cloud Databases`{.action}, puis choisissez la solution Web Cloud Databases concernée.
+>> Accédez à la page [Web Cloud Databases](/links/control-panel/web-cloud-databases), puis choisissez la solution Web Cloud Databases concernée.
 >>
 >> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases.png){.thumbnail}
 >>
-> **Etape 3**
+> **Étape 2**
 >>
 >> Dans le cadre **Informations générales** vous trouverez la mention **Espace utilisé**. Cliquez sur le bouton `...`{.action} à droite puis sur `Rafraîchir le quota de votre base de données`{.action}.
 >>
@@ -294,6 +290,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3*
 >> Une fois lancée, l'opération peut prendre plusieurs minutes. Lorsqu'elle se termine, le statut « READ ONLY » de votre base de données disparaît.
 >> Votre base de données est alors de nouveau pleinement opérationnelle.
 >>
+<!-- CP-STEPS-END:recalculate-quota-web-cloud-databases -->
 
 ## Aller plus loin <a name="go-further"></a>
 

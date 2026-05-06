@@ -34,13 +34,23 @@ HYCU for Nutanix is a backup software available for Nutanix.
 
 - A valid [HYCU for OVHcloud](/links/hosted-private-cloud/hycu) license in your OVHcloud account (the first step of this guide will detail the procedure to follow) or a HYCU license purchased from a third-party provider.
 - A Nutanix on OVHcloud cluster in your OVHcloud account.
-- Access to your [OVHcloud Control Panel](/links/manager).
 - Access to the cluster via Prism Central.
 - A Public Cloud project with a High Performance Object Storage type storage bucket, with a user with read and write permissions for this bucket. You can find more information on how to create a Public Cloud project and how to use the High Performance Object Storage service on the following pages:
     - [Creating your first OVHcloud Public Cloud project](/pages/public_cloud/public_cloud_cross_functional/create_a_public_cloud_project).
     - [Getting started with Object Storage](/pages/storage_and_backup/object_storage/s3_getting_started_with_object_storage).
     - [Object Storage - Managing object immutability with Object Lock (WORM)](/pages/storage_and_backup/object_storage/s3_managing_object_lock)
 - 60 GB of storage, 8 GB of memory, and 8 cores on your Nutanix Cluster for the HYCU Instance/Appliance.
+
+<!-- CP-NAV-START:network-load-balancer -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Load Balancer](/links/control-panel/network-load-balancer)
+- **Navigation path:** `Network`{.action} > `Load Balancer`{.action} > Select your service
+
+---
+<!-- CP-NAV-END:network-load-balancer -->
 
 ## Instructions
 
@@ -82,7 +92,7 @@ We offer different license packs based on the number of virtual machines (VMs) u
 > **You already have a HYCU license?**<br>
 > Continue reading this guide at the [Install and configure HYCU](#installation) step.
 
-Log in to the [OVHcloud Control Panel](/links/manager) and navigate to `Hosted Private Cloud`{.action} and `Storage and Backup`{.action}.
+Navigate to `Hosted Private Cloud`{.action} and `Storage and Backup`{.action}.
 
 Click on `HYCU`{.action} then `All My Licenses`{.action}.
 
@@ -147,7 +157,7 @@ If your HYCU technical configuration has changed, you will need to make a new re
 
 /// details | Regenerate a HYCU for OVHcloud license
 
-Log in to the [OVHcloud Control Panel](/links/manager) and navigate to `Hosted Private Cloud`{.action} and `Storage and Backup`{.action}. Click on `HYCU`{.action}.
+Navigate to `Hosted Private Cloud`{.action} and `Storage and Backup`{.action}. Click on `HYCU`{.action}.
 
 Once in your license dashboard, click the `Regenerate License`{.action} button (in the `Shortcuts` box).
 
@@ -166,7 +176,7 @@ Then follow the same process as for license activation:
 
 /// details | How to cancel a HYCU for OVHcloud subscription
 
-Log in to the [OVHcloud Control Panel](/links/manager) and navigate to `Hosted Private Cloud`{.action} and `Storage and Backup`{.action}. Click on `HYCU`{.action}.
+Navigate to `Hosted Private Cloud`{.action} and `Storage and Backup`{.action}. Click on `HYCU`{.action}.
 
 Once in your license dashboard, click `Cancel License`{.action} in the `Subscription` box.
 
@@ -377,7 +387,7 @@ The virtual machine is started and has the IP address defined in **cloud-init**.
 
 In this section, we will configure a redirection so that you can configure HYCU using the web interface from outside your cluster.
 
-In the OVHcloud Control Panel, select `Bare Metal Cloud`{.action}, then click on your `Load Balancer`{.action} in the menu bar on the left-hand side.
+In the `Network`{.action} section, click on `Load Balancer`{.action} and select your service.
 
 In the `Server clusters`{.action} tab, click `Add a server cluster`{.action}.
 

@@ -1,7 +1,7 @@
 ---
 title: 'Creando tu primer proyecto de Public Cloud de OVHcloud'
 excerpt: 'Cómo crear su primer proyecto de Public Cloud a través del área de cliente de OVHcloud'
-updated: 2025-04-28
+updated: 2026-05-05
 ---
 
 > [!primary]
@@ -16,11 +16,20 @@ Crear un proyecto es el primer paso para implementar [instancias Public Cloud](/
 
 ## Requisitos
 
-- Tener acceso al [área de cliente de OVHcloud](/links/manager)
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Ruta de navegación:** `Public Cloud`{.action} > Seleccione su proyecto
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## Procedimiento
 
-Inicie sesión en el [área de cliente de OVHcloud](/links/manager) y acceda a la sección`Public Cloud`{.action}.
+### Creación del proyecto
 
 Una vez que haya consultado la documentación disponible, acepte los términos del contrato marcando la casilla correspondiente y haga clic en `Descubrir el universo Public Cloud`{.action}.
 
@@ -49,6 +58,20 @@ Ya puede acceder a todo el ecosistema Public Cloud de OVHcloud y consultar nuest
 >![activar proyecto](images/activate-project.png){.thumbnail width="400"}
 
 <iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/N7r_VCB7nmI?si=fcyToz1wK8Tw7skw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+### Activación del proyecto y prueba gratuita
+
+Cuando haga clic en `Activar el proyecto`{.action} desde el `Modo Discovery` y registre un método de pago, se aplicará un **crédito de prueba de 200 €** si cumple los requisitos.
+
+> [!primary]
+> **Condiciones de la prueba gratuita**
+>
+> - El crédito se activa en el momento de la activación del proyecto y es válido durante **un mes**.
+> - **Elegible:** cualquier cliente de OVHcloud que cree su primer proyecto Public Cloud, aunque ya disponga de una cuenta OVHcloud.
+> - **No elegible:** los clientes que ya disponen o han dispuesto de un proyecto Public Cloud, o que ya se han beneficiado de un crédito de prueba gratuito.
+>
+> Más información en la página [Prueba gratuita Public Cloud OVHcloud](/links/public-cloud/free-trial).
+>
 
 ## Más información
 

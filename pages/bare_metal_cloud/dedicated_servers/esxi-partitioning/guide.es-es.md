@@ -1,6 +1,6 @@
 ---
-title: How to install VMware ESXi 8 on a dedicated server
-excerpt: Find out how to install and configure VMware ESXi 8 on a dedicated server using an OVHcloud provided image
+title: "Cómo instalar VMware ESXi 8 en un servidor dedicado"
+excerpt: "Instale y configure VMware ESXi 8 en un servidor dedicado de OVHcloud, seleccionando un esquema de particionamiento predefinido y configurando un datastore."
 updated: 2025-10-03
 ---
 
@@ -16,7 +16,18 @@ This guide will show you how to install ESXi 8 on your dedicated servers, and se
 ## Requirements
 
 - A [dedicated server](/links/bare-metal/bare-metal) **ready to be installed/reinstalled** in your OVHcloud account that is compatible with [ESXi 8 hardware requirements](https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/8-0/esxi-upgrade-8-0/upgrading-esxi-hosts-upgrade/esxi-requirements-upgrade/esxi-hardware-requirements-upgrade.html)
-- Access to the [OVHcloud Control Panel](/links/manager) and/or the [OVHcloud API](/links/api)
+- Access to the [OVHcloud API](/links/api) (optional)
+
+<!-- CP-NAV-START:baremetal-dedicated-servers -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Dedicated Servers](/links/control-panel/baremetal-dedicated-servers)
+- **Navigation path:** `Bare Metal Cloud`{.action} > `Dedicated servers`{.action} > Select your server
+
+---
+<!-- CP-NAV-END:baremetal-dedicated-servers -->
 
 > [!alert]
 >
@@ -67,7 +78,7 @@ The `default` partitioning scheme will be used unless another one is selected.
 > The procedure is very similar [to other operating systems](/pages/bare_metal_cloud/dedicated_servers/getting-started-with-dedicated-server), with the exception that you cannot tick the checkbox `Customise the partitioning configuration`{.action} and that you have a dropdown menu to choose the partitioning layout at the fourth and final step.
 >
 
-Log in to the [OVHcloud Control Panel](/links/manager). From the `General information`{.action} tab, click the `...`{.action} button next to the operating system and then click `Reinstall my server`{.action}.
+From the `General information`{.action} tab, click the `...`{.action} button next to the operating system and then click `Reinstall my server`{.action}.
 
 ![Reinstall button](images/reinstalling-your-server-00.png){.thumbnail}
 

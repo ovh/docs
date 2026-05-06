@@ -1,6 +1,6 @@
 ---
-title: "Pierwsze kroki z serwerem dedykowanym"
-excerpt: "Dowiedz się, jak zarządzać serwerem dedykowanym w Panelu klienta i jak rozpocząć konfigurację oraz zabezpieczenie serwera"
+title: "Pierwsze kroki z serwerem dedykowanym OVHcloud"
+excerpt: "Rozpocznij pracę z serwerem dedykowanym OVHcloud: logowanie SSH, instalacja systemu i podstawowa konfiguracja."
 updated: 2025-04-29
 ---
 
@@ -14,7 +14,17 @@ Serwer dedykowany to fizyczny serwer ("bare metal") zlokalizowany w jednym z nas
 
 - Posiadanie [serwera dedykowanego](/links/bare-metal/bare-metal).
 - Połączenie przez SSH z systemem Linux lub jako administrator z systemem Windows.
-- Zalogowanie do [Panelu klienta OVHcloud](/links/manager).
+
+<!-- CP-NAV-START:baremetal-dedicated-servers -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Bezpośredni link:** [Serwery dedykowane](/links/control-panel/baremetal-dedicated-servers)
+- **Ścieżka nawigacji:** `Bare Metal Cloud`{.action} > `Serwery dedykowane`{.action} > Wybierz swój serwer
+
+---
+<!-- CP-NAV-END:baremetal-dedicated-servers -->
 
 > [!primary]
 >
@@ -231,7 +241,7 @@ Jeśli korzystasz z serwera Windows, zapoznaj się z [tym przewodnikiem](/pages/
 
 Możesz włączyć lub wyłączyć monitoring serwera dedykowanego w zakładce `Informacje ogólne`{.action} w Twoim [Panelu klienta OVHcloud](/links/manager). Wariant ten znajduje się w sekcji `Status usług`.
 
-![Monitoring](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/dedicated-servers/general-information/monitoring-your-server.png){.thumbnail}
+![Status monitorowania w sekcji Stan usługi](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/dedicated-servers/general-information/monitoring-your-server.png){.thumbnail}
 
 Kliknij przycisk `Skonfiguruj`{.action}. W oknie, które się pojawi, masz trzy opcje dotyczące zachowania inwigilacji:
 
@@ -239,7 +249,7 @@ Kliknij przycisk `Skonfiguruj`{.action}. W oknie, które się pojawi, masz trzy 
 - **Aktywny z aktywną interwencją**: Jeśli serwer przestanie odpowiadać, otrzymasz wiadomość e-mail z alertem. Serwer zostanie zweryfikowany przez technika.
 - **Aktywny bez aktywnej interwencji**: Otrzymasz e-mail z komunikatem ostrzegawczym, jeśli serwer przestanie odpowiadać. Aby rozpocząć interwencję, należy aktywować opcję aktywną interwencją.
 
-![Monitoring](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/dedicated-servers/general-information/monitoring-your-server2.png){.thumbnail}
+![Okno konfiguracji monitorowania z trzema opcjami](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/dedicated-servers/general-information/monitoring-your-server2.png){.thumbnail}
 
 Kliknij na `Zatwierdź`{.action}, aby zaktualizować konfigurację monitorowania.
 
@@ -302,5 +312,8 @@ Aby włączyć i korzystać z opcji Backup Storage, zapoznaj się [z tym przewod
 [OVHcloud API & OS installation](/pages/bare_metal_cloud/dedicated_servers/api-os-installation) (EN)
 
 Jeśli potrzebujesz szkolenia lub pomocy technicznej w celu wdrożenia naszych rozwiązań, skontaktuj się z przedstawicielem handlowym lub kliknij [ten link](/links/professional-services), aby uzyskać wycenę i poprosić o spersonalizowaną analizę projektu od naszych ekspertów z zespołu Professional Services.
+
+- [Zakończenie interwencji konserwacyjnej na serwerze dedykowanym (EN)](/pages/bare_metal_cloud/dedicated_servers/intervention-support)
+- [Serwer dedykowany - Przypisywanie tagów zasobów](/pages/bare_metal_cloud/dedicated_servers/resource-tag-assign)
 
 Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

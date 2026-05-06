@@ -26,6 +26,17 @@ OVHcloud HA-NAS ermöglicht Ihnen die Verwaltung eines über Netzwerk zugänglic
 - [Sie haben einen ACL-Eintrag für die IP-Adresse des Servers angelegt](/pages/storage_and_backup/file_storage/ha_nas/nas_get_started#addaccess).
 - Sie haben administrativen Zugriff (sudo) auf Ihren Server über SSH oder GUI.
 
+<!-- CP-NAV-START:storage-nas-ha -->
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direkter Link:** [NAS-HA](/links/control-panel/storage-nas-ha)
+- **Navigationspfad:** `Bare Metal Cloud`{.action} > `HA-NAS`{.action} > Wählen Sie Ihr NAS-HA aus
+
+---
+<!-- CP-NAV-END:storage-nas-ha -->
+
 ## In der praktischen Anwendung
 
 Die folgenden Abschnitte enthalten Konfigurationsbeispiele für die am häufigsten verwendeten Distributionen/Betriebssysteme. Verbinden Sie sich zunächst per SSH mit Ihrem Server oder loggen Sie sich in die grafische Oberfläche Ihres installierten Betriebssystems ein. Die Beispiele und Instruktionen setzen voraus, dass Sie als Benutzer mit erhöhten Berechtigungen verbunden sind.

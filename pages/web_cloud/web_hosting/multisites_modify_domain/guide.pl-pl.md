@@ -17,10 +17,20 @@ W przypadku korzystania z hostingu lub aktualizacji strony WWW może być koniec
 
 ## Wymagania początkowe
 
-- Dostęp do [panelu klienta OVHcloud](/links/manager).
 - Posiadanie oferty [hostingu OVHcloud](/links/web/hosting).
 - Posiadanie jednej lub kilku [domen](/links/web/domains).
 - Wystarczające uprawnienia dotyczące wszystkich usług. Więcej informacji znajdziesz w przewodniku "[Zarządzanie kontaktami swoich usług](/pages/account_and_service_management/account_information/managing_contacts)".
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Web hosting](/links/control-panel/web-hosting)
+- **Ścieżka nawigacji:** `Web Cloud`{.action} > `Hosting`{.action} > Wybierz hosting WWW
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## W praktyce
 

@@ -1,6 +1,6 @@
 ---
-title: Administrator-Passwort eines Windows Servers ändern
-excerpt: Erfahren Sie hier, wie Sie den OVHcloud Rescue-Modus verwenden, um das Passwort des Administrator-Accounts auf einem Windows Dedicated Server zurückzusetzen
+title: "Admin-Passwort eines Windows Dedicated Servers ändern"
+excerpt: "Setzen Sie das Administratorpasswort eines Windows Dedicated Servers im OVHcloud Rescue-Modus zurück."
 updated: 2024-06-26
 flag: hidden
 ---
@@ -21,7 +21,17 @@ Bei der Installation oder Neuinstallation eines Windows-Betriebssystems wird Ihn
 ## Voraussetzungen
 
 - Sie verfügen über einen [Dedicated Server](/links/bare-metal/bare-metal), auf dem Windows installiert ist in Ihrem Kunden-Account.
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
+
+<!-- CP-NAV-START:baremetal-dedicated-servers -->
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direkter Link:** [Dedicated Server](/links/control-panel/baremetal-dedicated-servers)
+- **Navigationspfad:** `Bare Metal Cloud`{.action} > `Dedicated Server`{.action} > Wählen Sie Ihren Server aus
+
+---
+<!-- CP-NAV-END:baremetal-dedicated-servers -->
 
 ## In der praktischen Anwendung
 
@@ -261,7 +271,7 @@ System is going down for reboot NOW!
 
 Gehen Sie im [OVHcloud Kundencenter](/links/manager) auf den Tab `IPMI`{.action}, um eine KVM-Session zu öffnen.
 
-![IPMI](images/adminpw_win_03.png){.thumbnail}
+![Öffnen einer KVM-Sitzung über den Tab "IPMI"](images/adminpw_win_03.png){.thumbnail}
 
 #### Schritt 5.1: Neuere Version von Windows
 
@@ -313,13 +323,13 @@ Um Passwörter zurückzusetzen, ist das Tool NTPWEdit erforderlich. Wenn Sie üb
 
 Öffnen Sie den Ordner, in dem sich die heruntergeladene ZIP-Datei befindet, und extrahieren Sie den Inhalt. Öffnen Sie anschließend die ausführbare Datei *ntwedit64*, um die Anwendung zu starten.
 
-![ntpwedit](images/adminpw_win_09.png){.thumbnail}
+![NTPWEdit-Anwendung in WinRescue geöffnet](images/adminpw_win_09.png){.thumbnail}
 
 In diesem Interface können Sie die *SAM*-Datei bearbeiten, um das Passwort des Admin-Benutzers zu löschen. Deren Standardpfad im *WINDOWS*-Systemverzeichnis ist vorausgefüllt. Öffnen Sie die Datei, um die Liste der Benutzer anzuzeigen, indem Sie auf `Open`{.action} klicken.
 
 Der relevante Benutzer ist entweder "admin" oder "Administrator", entsprechend der Windows-Version. Sind beide vorhanden, wählen Sie "admin" aus. Klicken Sie anschließend auf `Change password`{.action}.
 
-![ntpwedit](images/adminpw_win_10.png){.thumbnail}
+![NTPWEdit mit der Liste der Windows-Benutzer-Accounts](images/adminpw_win_10.png){.thumbnail}
 
 Lassen Sie im nächsten Dialog die Felder leer und klicken Sie auf `OK`{.action}. Klicken Sie zum Abschluss auf `Save changes`{.action} und dann auf `Exit`{.action}.
 

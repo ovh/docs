@@ -9,7 +9,7 @@ updated: 2025-06-27
 The aim of the tutorial is to understand how to train a Rasa model with AI Training. 
 
 Deployment will be performed in the second part of the tutorial which you can find here: [How to deploy a chatbot](/pages/public_cloud/ai_machine_learning/deploy_tuto_11_rasa_chatbot_flask).
-If you want to access the code, you can find it [here](https://github.com/ovh/ai-training-examples/jobs/rasa-chatbot).
+If you want to access the code, you can find it [here](https://github.com/ovh/ai-training-examples/tree/main/jobs/rasa-chatbot).
 If you want to create a Rasa chatbot with a notebook, please follow this tutorial: [Create and train a Rasa chatbot](/pages/public_cloud/ai_machine_learning/notebook_tuto_10_create_chatbot).
 
 We will use the famous open source framework [Rasa](https://rasa.community/) to build the chatbot and the framework [Chatette](https://github.com/SimGus/Chatette) to generate examples of human sentences. 

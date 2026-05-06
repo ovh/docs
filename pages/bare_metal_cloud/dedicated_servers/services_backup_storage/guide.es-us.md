@@ -1,7 +1,7 @@
 ---
-title: 'Utilizar Backup Storage en un servidor dedicado'
-excerpt: 'Cómo activar y acceder al espacio de almacenamiento adicional'
-updated: 2025-10-09
+title: "Utilizar Backup Storage en un servidor dedicado"
+excerpt: "Active y acceda al espacio de backup incluido con su servidor dedicado OVHcloud para sus copias de seguridad de archivos"
+updated: 2026-03-25
 ---
 
 ## Objetivo
@@ -19,7 +19,17 @@ Los servidores dedicados de OVHcloud incluyen un espacio de backup adicional par
 ## Requisitos
 
 - Tener un [servidor dedicado](/links/bare-metal/bare-metal) en su cuenta de OVHcloud.
-- Haber iniciado sesión en el [área de cliente de OVHcloud](/links/manager).
+
+<!-- CP-NAV-START:baremetal-dedicated-servers -->
+---
+
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [Servidores dedicados](/links/control-panel/baremetal-dedicated-servers)
+- **Ruta de navegación:** `Bare Metal Cloud`{.action} > `Servidores dedicados`{.action} > Seleccione su servidor
+
+---
+<!-- CP-NAV-END:baremetal-dedicated-servers -->
 
 > [!warning]
 > Esta funcionalidad puede no estar disponible o estar limitada en los [servidores dedicados **Eco**](/links/bare-metal/eco-about).
@@ -30,7 +40,7 @@ Los servidores dedicados de OVHcloud incluyen un espacio de backup adicional par
 
 ### Activar el Backup Storage
 
-Inicie sesión en el [área de cliente de OVHcloud](/links/manager). Acceda a la sección  `Bare Metal Cloud`{.action} y seleccione su servidor de `Servidores dedicados`{.action}. En la pestaña `Backup Storage`{.action}, haga clic en el botón `Activar el Backup Storage`{.action}.
+En la pestaña `Backup Storage`{.action}, haga clic en el botón `Activar el Backup Storage`{.action}.
 
 ![Activar el Backup Storage](images/backup-storage01.png){.thumbnail}
 
@@ -46,7 +56,7 @@ El acceso a su espacio de almacenamiento está restringido por direcciones IP me
 
 #### Añadir la regla de acceso
 
-Inicie sesión en el [área de cliente de OVHcloud](/links/manager). Acceda a la sección  `Bare Metal Cloud`{.action} y seleccione su servidor de `Servidores dedicados`{.action}. A continuación, abra la pestaña `Backup Storage`{.action} y haga clic en el botón `Añadir acceso`{.action}.
+Abra la pestaña `Backup Storage`{.action} y haga clic en el botón `Añadir acceso`{.action}.
 
 ![Añadir la regla de acceso](images/backup-storage03.png){.thumbnail}
 
@@ -84,24 +94,24 @@ para así poder recuperar los backups desde un servicio de otra localización.
 > Solo es posible autorizar las direcciones IP de OVHcloud.
 >
 
-Accedi alla [console API OVHcloud](/links/api) con le credenziali del tuo account cliente e utilizza la chiamata seguente:
+Conéctese a la [consola API de OVHcloud](/links/api) con las claves de su cuenta de cliente y utilice la siguiente llamada:
 
 > [!api]
 >
 > @api {v1} /dedicated/server POST /dedicated/server/{serviceName}/features/backupFTP/access
 >
 
-Modificare le impostazioni come indicato di seguito:
+Cambie la configuración de la siguiente manera:
 
-- `serviceName`: inserisci il nome interno del tuo server (`ns1111111.ip-203-0-113.eu`).
-- `cifs`: se utilizzate questo protocollo, impostate questo parametro su `true`.
-- `ftp`: se utilizzate questo protocollo, impostate questo parametro su `true`.
-- `ipBlock`: inserisci l’indirizzo IP che vi avrà accesso, nella forma `203.0.113.100/32`.
-- `nfs`: se utilizzate questo protocollo, impostate questo parametro su `true`.
+- `serviceName`: introduzca el nombre interno del servidor (`ns11111111.ip-203-0-113.eu`).
+- `cifs`: establezca este parámetro en `true` si utiliza este protocolo.
+- `ftp`: establezca este parámetro en `true` si utiliza este protocolo.
+- `ipBlock`: introduzca la dirección IP que tendrá acceso, con el formato `203.0.113.100/32`.
+- `nfs`: establezca este parámetro en `true` si utiliza este protocolo.
 
-Clicca sul pulsante `EXECUTE`{.action}.
+Pulse el botón `EXECUTE`{.action}.
 
-Per verificare che il tuo indirizzo IP sia autorizzato, utilizza questa chiamata:
+Para comprobar que su dirección IP está autorizada, utilice la siguiente llamada:
 
 > [!api]
 >
@@ -110,19 +120,19 @@ Per verificare che il tuo indirizzo IP sia autorizzato, utilizza questa chiamata
 
 ### Restaurar la contraseña
 
-Inicie sesión en el [área de cliente de OVHcloud](/links/manager). Acceda a la sección  `Bare Metal Cloud`{.action} y seleccione su servidor de `Servidores dedicados`{.action}. A continuación, abra la pestaña `Backup Storage`{.action} y haga clic en el botón `¿Ha olvidado la contraseña?`{.action}.
+Abra la pestaña `Backup Storage`{.action} y haga clic en el botón `¿Ha olvidado la contraseña?`{.action}.
 
 Al hacer clic en `Confirmar`{.action} en la ventana que aparece, se enviará un mensaje de correo electrónico con la contraseña a la dirección de correo electrónico que haya guardado en su cuenta de administrador. Siga las instrucciones que contiene para restaurar la contraseña.
 
 ### Eliminar el Backup Storage
 
-Inicie sesión en el [área de cliente de OVHcloud](/links/manager). Acceda a la sección  `Bare Metal Cloud`{.action} y seleccione su servidor de `Servidores dedicados`{.action}. A continuación, abra la pestaña `Backup Storage`{.action} y haga clic en el botón `Eliminar el Backup Storage`{.action}.
+Abra la pestaña `Backup Storage`{.action} y haga clic en el botón `Eliminar el Backup Storage`{.action}.
 
 Haga clic en `Confirmar`{.action} el mensaje de aviso para proceder a la eliminación. El Backup Storage se eliminará en unos minutos. Todos los datos del espacio de almacenamiento se eliminarán.
 
 ### Contratar espacio en disco adicional
 
-Inicie sesión en el [área de cliente de OVHcloud](/links/manager). Acceda a la sección  `Bare Metal Cloud`{.action} y seleccione su servidor de `Servidores dedicados`{.action}. A continuación, abra la pestaña `Backup Storage`{.action} y haga clic en el botón `Contratar espacio en disco`{.action}.
+Abra la pestaña `Backup Storage`{.action} y haga clic en el botón `Contratar espacio en disco`{.action}.
 
 ![Contratar espacio en disco adicional](images/backup-storage06.png){.thumbnail}
 
@@ -305,12 +315,12 @@ Una vez que haya instalado FileZilla en el servidor, podrá configurarlo para co
 
 #### NFS
 
-En primer lugar, asegúrese de haber autorizado a sus bloques de IP a acceder al espacio de backup y a utilizar el protocolo NFS. Según el sistema operativo Linux, es posible que necesite instalar el cliente NFS e iniciar el servicio NFS/portmap.
+El backup storage solo es compatible con NFSv3. En primer lugar, asegúrese de haber autorizado a sus bloques de IP a acceder al espacio de backup y a utilizar el protocolo NFS. Según el sistema operativo Linux, es posible que necesite instalar el cliente NFS e iniciar el servicio NFS/portmap.
 
 Una vez que haya instalado el cliente NFS y que haya iniciado el servicio portmap, puede montar NFS como una partición normal con el siguiente comando:
 
 ```sh
-mount -t nfs HostName:/export/ftpbackup/ServiceName /FolderMount
+mount -t nfs -o vers=3 HostName:/export/ftpbackup/ServiceName /FolderMount
 ```
 
 En el comando anterior, sustituya las siguientes variables por el valor correspondiente:
@@ -349,8 +359,7 @@ You can't access this shared folder because your organization's security policie
 >
 > Para corregir este error, es necesario modificar el registro de Windows. Para ello, abra el editor del registro (regedit) y acceda a la clave `HKLM\SYSTEM\CurrentControlSet\Services\LanmanWorkstation\Parameters`.<br>
 > Asigne el valor "1" al parámetro `AllowInsecureGuestAuth`.<br>
-> Encuentre más información sobre este tema en las [páginas de asistencia de Microsoft](https://learn.microsoft.com/es-mx/windows-server/storage/file-server/enable-insecure-guest-logons-smb2-and-smb3).
-
+> Encuentre más información sobre este tema en las [páginas de asistencia de Microsoft](https://learn.microsoft.com/es-es/windows-server/storage/file-server/enable-insecure-guest-logons-smb2-and-smb3).
 
 ##### Linux
 

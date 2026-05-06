@@ -1,6 +1,6 @@
 ---
-title: Sécuriser un serveur avec service Memcached
-excerpt: Découvrez comment sécuriser votre service Memcached
+title: "Sécuriser un serveur dédié avec un service Memcached"
+excerpt: "Sécurisez le service Memcached sur votre serveur dédié pour empêcher les accès distants non autorisés et l'exposition des données"
 updated: 2018-03-02
 ---
 
@@ -115,5 +115,9 @@ sudo systemctl force-reload memcached
 ```
 
 ## Aller plus loin
+
+[Sécuriser un serveur dédié](/pages/bare_metal_cloud/dedicated_servers/securing-a-dedicated-server)
+
+[Configurer le pare-feu sous Linux avec Iptables](/pages/bare_metal_cloud/dedicated_servers/firewall-Linux-iptable)
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).

@@ -1,7 +1,7 @@
 ---
 title: "Transferring a Hostinger domain name to OVHcloud"
 excerpt: "Find out how to transfer a Hostinger domain name to OVHcloud"
-updated: 2024-06-28
+updated: 2026-02-10
 ---
 
 ## Objective
@@ -18,19 +18,19 @@ To transfer a Hostinger domain name, you will need to follow a specific procedur
 >
 > To transfer the domain name management to another OVHcloud customer account, a **change of contacts** must be made instead. The procedure is described in [our contact management guide](/pages/account_and_service_management/account_information/managing_contacts).
 >
-> If you also need to change the **domain name holder**, you should do so **before** you change the domain name contacts. To do this, use our [change of ownership for domain names instructions](/pages/web_cloud/domains/trade_domain).
+> If you also need to change the **domain name holder**, you should do so **before** you change the domain name contacts. To do this, use our [instructions for changing the holder of a domain name](/pages/web_cloud/domains/trade_domain).
 >
 
 ## Requirements
 
 - A domain name registered with another registrar.
 - The domain name is more than 60 days old.
-- The domain name has not been transferred or changed owners within the last 60 days.
+- The domain name has not been transferred or changed holders within the last 60 days.
 - The domain name status is "OK" or "Transferable".
 - The domain name is not expired and has an expiry date that allows to finish the transfer process in time - recommended are more than 60 days.
 - You can unlock the domain name and you have the transfer code or are able to retrieve it.
 - You have the authority to request a transfer for the domain name.
-- The domain name owner and/or its administrators must be informed of the transfer request.
+- The domain name holder and/or its administrators must be informed of the transfer request.
 
 
 > [!warning]
@@ -80,7 +80,7 @@ Follow the steps described in the [Hostinger dedicated documentation](https://su
 ### Get the EPP or Auth code
 
 If you would like to **transfer** your domain name from Hostinger to another registrar (such as OVHcloud), the new registrar can request an authorization code (“EPP” or “Auth”) to verify that you have the right to act on the domain name.
-To familiarize yourself with changing the owner of a domain name, please read this [guide](/pages/web_cloud/domains/trade_domain).
+To familiarize yourself with changing the holder of a domain name, please read this [guide](/pages/web_cloud/domains/trade_domain).
 
 > [!warning]
 >
@@ -91,7 +91,7 @@ To familiarize yourself with changing the owner of a domain name, please read th
 
 To get a **EPP** or **Auth** code from Hostinger, follow the steps described in the [Hostinger dedicated documentation](https://support.hostinger.com/en/articles/1583203-how-to-get-the-epp-code-at-hostinger).
 
-### Initiate domain transfer to OVHcloud
+### Initiate domain name transfer to OVHcloud
 
 Once you have obtained the authorization code, you can proceed with the transfer of your domain name by following the steps in our guide “[Transferring a domain name to OVHcloud](/pages/web_cloud/domains/transfer_incoming_generic_domain)”.
 

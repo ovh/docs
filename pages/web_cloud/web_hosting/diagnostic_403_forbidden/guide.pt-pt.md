@@ -43,21 +43,21 @@ Após a deteção de um funcionamento suspeito, os nossos robôs de segurança p
 
 - Ter um [serviço de alojamento web](/links/web/hosting) OVHcloud.
 - Dispor dos [dados de acesso](/pages/web_cloud/web_hosting/ftp_connection) ao espaço FTP de armazenamento do seu alojamento.
-- Ter acesso à [Área de Cliente OVHcloud](/links/manager).
+
 
 ## Instruções
 
-### Etapa 1: analisar a situação
+### 1 - Analisar a situação
 
 Se a página **"403 forbidden"** surgiu na sequência de uma modificação do seu website, [restaure todo ou parte do espaço de armazenamento FTP do seu alojamento](/pages/web_cloud/web_hosting/ftp_save_and_backup) numa data anterior.
 
 Se os backups disponíveis não lhe permitem restabelecer o acesso ao seu website, contacte um [fornecedor especializado](/links/partner).
 
-Se a página **"403 forbidden"** não aparecer após uma modificação do seu website, consulte o seu e-mail. Se recebeu um e-mail dos nossos serviços indicando que o seu alojamento web foi encerrado por razões de segurança, passe diretamente para [etapa 2](#step-2) deste manual.
+Se a página **"403 forbidden"** não aparecer após uma modificação do seu website, consulte o seu e-mail. Se recebeu um e-mail dos nossos serviços indicando que o seu alojamento web foi encerrado por razões de segurança, passe diretamente para a [parte 2](#step-2) deste manual.
 
 Se a página **"403 forbidden"** aparecer sem ação da sua parte e não tiver recebido um e-mail dos nossos serviços sobre o assumpto, verifique as permissões de acesso FTP (CHMOD) dos seus ficheiros/pastas bem como o código contido no(s) seu(s) ficheiro(s) **.htaccess**. Verifique também se esta situação não é gerada por um plugin de segurança ou por uma firewall de aplicação. Se necessário, contacte um [fornecedor especializado](/links/partner).
 
-### Etapa 2: proteger as suas soluções <a name="step-2"></a>
+### 2 - Proteger as suas soluções <a name="step-2"></a>
 
 Em primeiro lugar, verifique a segurança do(s) seu(s) posto(s)/aparelho(s) informático(s):
 
@@ -78,7 +78,7 @@ Em primeiro lugar, verifique a segurança do(s) seu(s) posto(s)/aparelho(s) info
 > Em caso de dúvida sobre as operações a realizar, contacte os [parceiros OVHcloud](/links/partner).
 >
 
-### Etapa 3: intervir no seu alojamento
+### 3 - Intervir no seu alojamento
 
 Em primeiro lugar, tome nota da data de envio do e-mail da OVHcloud que indica a desativação do seu alojamento web, assim como da(s) pasta(s) que contém os exemplos de ficheiros ilegítimos.
 
@@ -110,12 +110,12 @@ Para restaurar todo ou parte do seu espaço de armazenamento FTP, consulte o [no
 
 Se o seu alojamento foi encerrado há mais de duas semanas, contacte um [fornecedor especializado](/links/partner) para efetuar uma auditoria de segurança dos seus websites. 
 
-> [!success
+> [!success]
 >
-> Para mais informações sobre os [passos 2 e 3](#step-2) anteriores, consulte o nosso manual sobre [ações a realizar em caso de pirataria do seu website](/pages/web_cloud/web_hosting/cms_what_to_do_if_your_site_is_hacked).
+> Para mais informações sobre as [partes 2 e 3](#step-2) anteriores, consulte o nosso manual sobre [ações a realizar em caso de pirataria do seu website](/pages/web_cloud/web_hosting/cms_what_to_do_if_your_site_is_hacked).
 >
 
-### Etapa 4: reativar o alojamento com o FileZilla <a name="reactivate-web-hosting"></a>
+### 4 - Reativar o alojamento com o FileZilla <a name="reactivate-web-hosting"></a>
 
 > [!warning]
 >

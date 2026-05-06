@@ -1,14 +1,26 @@
 ---
 title: "Rinnovare i miei domini OVHcloud"
 excerpt: "Questa guida ti mostra perché e come rinnovare un dominio OVHcloud"
-updated: 2025-06-13
+updated: 2026-03-13
 ---
+
+<style>
+details>summary {
+    color:rgb(33, 153, 232) !important;
+    cursor: pointer;
+}
+details>summary::before {
+    content:'\25B6';
+    padding-right:1ch;
+}
+details[open]>summary::before {
+    content:'\25BC';
+}
+</style>
 
 ## Obiettivo
 
-Questa guida ti accompagna nella gestione dei domini e copre tutti gli aspetti legati al loro rinnovo.
-
-Troverai tutte le informazioni per:
+Questa guida ti accompagna nella gestione dei domini e copre tutti gli aspetti legati al loro rinnovo:
 
 - Differenziare il rinnovo automatico e il rinnovo manuale
 - Modificare la modalità di rinnovo dei domini
@@ -21,8 +33,18 @@ Troverai tutte le informazioni per:
 ## Prerequisiti
 
 - Disporre di un dominio registrato in OVHcloud.
-- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager), sezione `Web Cloud`{.action}.
 - Essere contatto di fatturazione dei servizi OVHcloud.
+
+<!-- CP-NAV-START:billing-services -->
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [Le mie offerte e servizi](/links/control-panel/billing-services)
+- **Percorso di navigazione:** Clicca sul tuo nome in alto a destra > `Le mie offerte e servizi`{.action}
+
+---
+<!-- CP-NAV-END:billing-services -->
 
 ## Procedura
 
@@ -30,7 +52,7 @@ Troverai tutte le informazioni per:
 
 Il corretto rinnovo del dominio è fondamentale per mantenere la visibilità online e salvaguardare l’immagine del marchio, evitando spese aggiuntive.
 
-Il dominio è l'indirizzo che permette ai tuoi contatti di accedere al tuo sito Internet e di comunicare con te via email. Se il dominio non viene rinnovato, il sito Web e gli indirizzi email non saranno più accessibili. Un sito Web non raggiungibile per qualche tempo può avere un impatto sulla visibilità Web e sull’indicizzazione naturale.
+Il dominio è l'indirizzo che permette ai tuoi contatti di accedere al tuo sito Internet e di comunicare con te via e-mail. Se il dominio non viene rinnovato, il sito Web e gli indirizzi e-mail non saranno più accessibili. Un sito Web non raggiungibile per qualche tempo può avere un impatto sulla visibilità Web e sull’indicizzazione naturale.
 
 Nel caso in cui il rinnovo del dominio non sia stato effettuato prima della data di scadenza ma si desideri mantenerlo, è possibile che vengano applicate spese aggiuntive.
 L’operazione di rinnovo non è più possibile e, una volta eliminato il dominio, è necessario ripristinarlo. Affinché il ripristino sia effettivo, saranno applicate delle spese di ripristino.
@@ -43,69 +65,86 @@ Se il rinnovo automatico è attivo, la modalità di pagamento deve essere valida
 
 ### I diversi tipi di rinnovo
 
-#### Il rinnovo automatico
-
-Ecco i principali vantaggi del rinnovo automatico:
-
-- **Semplicità**: non dovrete più preoccuparvi delle date di rinnovo, tutto sarà automatizzato per voi.
-- **Continuità del servizio**: i servizi restano attivi, senza interruzioni.
-- **Risparmio di tempo**: si risparmia ogni procedura manuale e si rischia di dimenticare.
-
-> [!warning]
->
-> In mancanza di un metodo di pagamento valido, il rinnovo non potrà essere effettuato e il dominio potrebbe andare perduto. Verifica la validità del metodo di pagamento.
->
-
-#### Il rinnovo manuale
-
-Se non vuoi il rinnovo automatico e quindi l’addebito automatico, puoi modificare il tipo di rinnovo cambiandolo in **manuale**.
-
-Questa modalità può essere utile per:
-
-- in caso di dubbi sulla conservazione del servizio alla data di scadenza;
-- Se non vuoi che l’importo delle tue fatture venga automaticamente addebitato sul metodo di pagamento scelto.
-
-Se scegli il rinnovo manuale, riceverai diverse notifiche prima della scadenza, contenenti un link che permette di rinnovare online il servizio in scadenza.
-Inoltre, è possibile effettuare semplicemente il pagamento dallo Spazio Cliente.
-
-**Attenzione**, se non effettui il pagamento del servizio con rinnovo manuale, rischi di perdere il tuo dominio o di pagare le spese di restauro (se il nome del dominio è sospeso).
-Se non vuoi più usufruire di questo servizio, non è necessario richiederne la disattivazione.
+> [!tabs]
+> **Il rinnovo automatico**
+>> Ecco i principali vantaggi del rinnovo automatico:
+>>
+>> - **Semplicità**: non dovrete più preoccuparvi delle date di rinnovo, tutto sarà automatizzato per voi.
+>> - **Continuità del servizio**: i servizi restano attivi, senza interruzioni.
+>> - **Risparmio di tempo**: si risparmia ogni procedura manuale e si rischia di dimenticare.
+>>
+>> > [!warning]
+>> >
+>> > In mancanza di un metodo di pagamento valido, il rinnovo non potrà essere effettuato e il dominio potrebbe andare perduto. Verifica la validità del metodo di pagamento.
+>>
+> **Il rinnovo manuale**
+>> Se non vuoi il rinnovo automatico e quindi l’addebito automatico, puoi modificare il tipo di rinnovo cambiandolo in **manuale**.
+>>
+>> Questa modalità può essere utile per:
+>>
+>> - in caso di dubbi sulla conservazione del servizio alla data di scadenza;
+>> - Se non vuoi che l’importo delle tue fatture venga automaticamente addebitato sul metodo di pagamento scelto.
+>>
+>> Se scegli il rinnovo manuale, riceverai diverse notifiche prima della scadenza, contenenti un link che permette di rinnovare online il servizio in scadenza.
+>> Inoltre, è possibile effettuare semplicemente il pagamento dallo Spazio Cliente.
+>>
+>> **Attenzione**, se non effettui il pagamento del servizio con rinnovo manuale, rischi di perdere il tuo dominio o di pagare le spese di restauro (se il nome del dominio è sospeso).
+>> Se non vuoi più usufruire di questo servizio, non è necessario richiederne la disattivazione.
 
 ### Modifica la modalità di rinnovo dei domini
 
-Nel tuo [Spazio Cliente](/links/manager), clicca sul tuo nome in alto a destra e poi su `Le mie offerte e servizi`{.action}. Nella nuova finestra, identifica il dominio o i domini di cui vuoi cambiare la modalità di rinnovo.
+<!-- CP-STEPS-START:modifica-modalita-rinnovo -->
+Clicca sulle schede qui sotto per visualizzare ciascuno dei **2** passaggi.
 
-#### Per un solo dominio
-
-Eseguire le operazioni seguenti:
-
-- Nella tabella, identifica il dominio di cui vuoi modificare la modalità di rinnovo
-- Clicca a destra della linea sul pulsante `...`{.action}.
-- Clicca sull’azione `Configura il rinnovo`{.action}.
-- Imposta il rinnovo in `Manuale`{.action} o `Automatico`{.action}.
-- Se scegli il rinnovo automatico, scegli la frequenza di rinnovo automatico.
-- Conferma e paga.
-
-#### Per più domini
-
-Eseguire le operazioni seguenti:
-
-- Nella tabella, identifica i domini di cui vuoi cambiare la modalità di rinnovo.
-- Selezionare le righe corrispondenti nella tabella selezionando le caselle di controllo all'inizio della riga.
-- Clicca sul pulsante `Azioni`{.action} in alto a sinistra della tabella.
-- Seleziona `Attiva il pagamento automatico`{.action} o `Disattiva il pagamento automatico`{.action}.
+> [!tabs]
+> **Passaggio 1**
+>>
+>> Accedi alla pagina [Le mie offerte e servizi](/links/control-panel/billing-services). Nella tabella che appare, identifica il dominio o i domini di cui vuoi cambiare la modalità di rinnovo.
+>>
+>> ![Le mie offerte e servizi](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/my-services-en.png){.thumbnail}
+>>
+> **Passaggio 2**
+>>
+>> **Per un solo dominio:**
+>>
+>> - Clicca a destra della linea sul pulsante `...`{.action}.
+>> - Clicca sull’azione `Configura il rinnovo`{.action}.
+>> - Imposta il rinnovo in `Manuale`{.action} o `Automatico`{.action}.
+>> - Se scegli il rinnovo automatico, scegli la frequenza di rinnovo automatico.
+>> - Conferma e paga.
+>>
+>> **Per più domini:**
+>>
+>> - Seleziona le righe corrispondenti nella tabella selezionando le caselle di controllo all’inizio della riga.
+>> - Clicca sul pulsante `Azioni`{.action} in alto a sinistra della tabella.
+>> - Seleziona `Attiva il pagamento automatico`{.action} o `Disattiva il pagamento automatico`{.action}.
+<!-- CP-STEPS-END:modifica-modalita-rinnovo -->
 
 ### Rinnova il tuo dominio prima della data di scadenza
 
-Eseguire le operazioni seguenti:
+<!-- CP-STEPS-START:rinnova-prima-scadenza -->
+Clicca sulle schede qui sotto per visualizzare ciascuno dei **3** passaggi.
 
-- Nella tabella, identifica il dominio che vuoi rinnovare.
-- Clicca a destra della linea sul pulsante `...`{.action}.
-- Clicca sull’azione `Anticipa il pagamento`{.action}.
-- Dopo essere stato reindirizzato verso un’interfaccia di pagamento online, segui le istruzioni.
-
-È possibile rinnovare il servizio in qualsiasi momento prima della sua scadenza e scegliere la durata di rinnovo.
-In questo caso, il periodo di validità sottoscritto sarà aggiunto a quello in corso. Il periodo di validità rimanente non andrà perso.
+> [!tabs]
+> **Passaggio 1**
+>>
+>> Accedi alla pagina [Le mie offerte e servizi](/links/control-panel/billing-services). Nella tabella, identifica il dominio che vuoi rinnovare.
+>>
+>> ![Le mie offerte e servizi](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/my-services-en.png){.thumbnail}
+>>
+> **Passaggio 2**
+>>
+>> Clicca a destra della linea sul pulsante `...`{.action}, poi su `Anticipa il pagamento`{.action}.
+>>
+>> ![Opzione Anticipa il pagamento](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/forward-payment-en.png){.thumbnail}
+>>
+> **Passaggio 3**
+>>
+>> Dopo essere stato reindirizzato verso un’interfaccia di pagamento online, segui le istruzioni.
+>>
+>> È possibile rinnovare il servizio in qualsiasi momento prima della sua scadenza e scegliere la durata di rinnovo.
+>> In questo caso, il periodo di validità sottoscritto sarà aggiunto a quello in corso. Il periodo di validità rimanente non andrà perso.
+<!-- CP-STEPS-END:rinnova-prima-scadenza -->
 
 ### Segui il rinnovo del tuo dominio
 
@@ -113,38 +152,71 @@ Una volta effettuato il rinnovo, il dominio verrà rinnovato il giorno prima del
 
 I dati visualizzati nel WHOIS saranno aggiornati, a conferma del corretto rinnovo del dominio.
 
-Per verificare lo stato del rinnovo del dominio:
+<!-- CP-STEPS-START:segui-rinnovo-dominio -->
+Per verificare lo stato del rinnovo del dominio, clicca sulle schede qui sotto per visualizzare ciascuno dei **2** passaggi.
 
-1. Accedi allo [Spazio Cliente OVHcloud](/links/manager).
-1. Accedi alla sezione `Web Cloud`{.action}.
-1. Clicca su `Domini`{.action} nella sezione `Domini e DNS`{.action}.
-1. Nella tabella che appare, verifica lo stato del rinnovo nella colonna `Stato` della riga del nome di dominio pertinente.
-
-Una volta effettuato il pagamento, comparirà la dicitura `Rinnovo in corso` fino al rinnovo effettivo del dominio presso il Registro.
+> [!tabs]
+> **Passaggio 1**
+>>
+>> Accedi alla pagina [Domini](/links/control-panel/web-domains), poi seleziona il dominio interessato.
+>>
+>> ![Domini](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
+>>
+> **Passaggio 2**
+>>
+>> Nella sezione **Informazioni generali**, verifica lo stato del rinnovo sotto la voce **Stato del dominio**.
+>>
+>> Una volta effettuato il pagamento, comparirà la dicitura `Rinnovo in corso` fino al rinnovo effettivo del dominio presso il Registro.
+<!-- CP-STEPS-END:segui-rinnovo-dominio -->
 
 ### Disattiva il tuo dominio
 
-- Nella tabella, identifica il dominio che vuoi rinnovare.
-- Clicca a destra della linea sul pulsante `...`{.action}.
-- Clicca sull’azione `Disattivare il servizio`{.action}.
+<!-- CP-STEPS-START:disattiva-dominio -->
+Clicca sulle schede qui sotto per visualizzare ciascuno dei **2** passaggi.
 
-Questa azione è consentita per i servizi attivati con il **rinnovo automatico**. Selezionando questa azione, il rinnovo e l’addebito automatico vengono disattivati per il servizio selezionato.
+> [!tabs]
+> **Passaggio 1**
+>>
+>> Accedi alla pagina [Le mie offerte e servizi](/links/control-panel/billing-services). Nella tabella, identifica il dominio che vuoi disattivare.
+>>
+>> ![Le mie offerte e servizi](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/my-services-en.png){.thumbnail}
+>>
+> **Passaggio 2**
+>>
+>> Clicca a destra della linea sul pulsante `...`{.action}, poi su `Disattivare il servizio`{.action}.
+>>
+>> Questa azione è consentita per i servizi attivati con il **rinnovo automatico**. Selezionando questa azione, il rinnovo e l’addebito automatico vengono disattivati per il servizio selezionato.
+<!-- CP-STEPS-END:disattiva-dominio -->
 
 > [!primary]
 >
 > La disattivazione del dominio termina alla sua scadenza.
->
 
-Per maggiori informazioni sulla disattivazione dei servizi OVHcloud, segui le istruzioni contenute nella guida "**[Come disattivare i servizi OVHcloud](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_cancel_services)**".
+Per maggiori informazioni, consulta la guida "**[Come disattivare i servizi OVHcloud](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_cancel_services)**".
 
-### Accedi alla fattura del rinnovo del tuo dominio
+### Saldare la fattura di rinnovo di un dominio
 
-Visualizzi la dicitura `Fatture da pagare` se una fattura è in attesa di pagamento e quando:
+<!-- CP-STEPS-START:salda-fattura-rinnovo -->
+Clicca sulle schede qui sotto per visualizzare ciascuno dei **2** passaggi.
 
-- Disponi di servizi con rinnovo automatico.
-- Non hai salvato nessun metodo di pagamento che consenta di effettuare un prelievo per il pagamento delle tue fatture.
-
-Ti basta scegliere l’azione `Salda la tua fattura`{.action} per essere reindirizzato a una piattaforma di pagamento online.
+> [!tabs]
+> **Passaggio 1**
+>>
+>> Accedi alla pagina [Le mie offerte e servizi](/links/control-panel/billing-services). Nella tabella, identifica il dominio per il quale devi saldare una fattura di rinnovo.
+>>
+>> ![Le mie offerte e servizi](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/my-services-en.png){.thumbnail}
+>>
+> **Passaggio 2**
+>>
+>> Clicca a destra della linea sul pulsante `...`{.action}, poi su `Salda la tua fattura`{.action}.
+>> Verrai reindirizzato a una piattaforma di pagamento online.
+>>
+>> > [!primary]
+>> > La dicitura **Fatture da pagare** viene visualizzata quando una fattura è in attesa di pagamento e quando:
+>> >
+>> > - Disponi di servizi con rinnovo automatico.
+>> > - Non hai salvato nessun metodo di pagamento che consenta di effettuare un prelievo per il pagamento delle tue fatture.
+<!-- CP-STEPS-END:salda-fattura-rinnovo -->
 
 ## FAQ
 
@@ -162,7 +234,7 @@ Al termine del periodo di redemption, il dominio entra in una fase di eliminazio
 
 ///
 
-/// details | Non voglio rinnovare il mio dominio ma trasferirlo verso un altro Registrar che non sia OVHcloud. Come fai?
+/// details | Non voglio rinnovare il mio dominio ma trasferirlo verso un altro Registrar che non sia OVHcloud. Come fare?
 
 Segui le istruzioni della nostra guida "[Trasferire un dominio verso un altro Registrar](/pages/web_cloud/domains/transfer_outgoing_domain)".
 
@@ -176,18 +248,26 @@ Fino a 10 giorni prima della data di rinnovo effettiva del dominio è possibile 
 
 Una volta effettuato il pagamento delle spese di rinnovo, trasmetteremo la richiesta al registro appropriato.
 
-Lo stato del dominio passa in `Rinnovo in corso`.
+Il dominio passerà in uno stato di **rinnovo in corso**.
 
-Una volta effettuato il rinnovo (circa un mese dopo il pagamento delle spese di rinnovo), lo stato del dominio passerà alla dicitura `registrato`.
+Una volta effettuato il rinnovo dal registro (circa un mese dopo il pagamento delle spese di rinnovo), il dominio tornerà in uno stato che indica che è nuovamente **registrato**.
 
 I dati del WHOIS si aggiorneranno in seguito.
 
-Per verificare lo stato del rinnovo del dominio:
+<!-- CP-STEPS-START:faq-verifica-stato-rinnovo -->
+Per verificare lo stato del rinnovo del dominio, clicca sulle schede qui sotto per visualizzare ciascuno dei **2** passaggi.
 
-1. Accedi allo [Spazio Cliente OVHcloud](/links/manager).
-1. Accedi alla sezione `Web Cloud`{.action}.
-1. Clicca su `Domini`{.action} nella sezione `Domini e DNS`{.action}.
-1. Nella tabella che appare, verifica lo stato del rinnovo nella colonna `Stato` della riga del nome di dominio pertinente.
+> [!tabs]
+> **Passaggio 1**
+>>
+>> Accedi alla pagina [Domini](/links/control-panel/web-domains), poi seleziona il dominio interessato.
+>>
+>> ![Domini](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
+>>
+> **Passaggio 2**
+>>
+>> Nella sezione **Informazioni generali**, verifica lo stato del rinnovo sotto la voce **Stato del dominio**.
+<!-- CP-STEPS-END:faq-verifica-stato-rinnovo -->
 
 ///
 

@@ -18,11 +18,21 @@ A questo scopo, è possibile delegare ad altri account cliente OVHcloud diritti 
 ## Prerequisiti
 
 - Disporre di un'istanza [Public Cloud](/links/public-cloud/public-cloud) sul proprio account OVHcloud
-- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
 
-## Procedura 
+## Procedura
 
-Accedi allo [Spazio Cliente OVHcloud](/links/manager), clicca su `Public Cloud`{.action} e seleziona il progetto Public Cloud interessato. Clicca su `Contatti e diritti`{.action} nella sezione **Impostazioni**.
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Percorso di navigazione:** `Public Cloud`{.action} > Seleziona il tuo project
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
+
+Clicca su `Contatti e diritti`{.action} nella sezione **Impostazioni**.
 
 Questa pagina ti permette di visualizzare i contatti associati al tuo progetto.
 

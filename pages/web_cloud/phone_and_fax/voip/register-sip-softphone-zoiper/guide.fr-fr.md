@@ -37,6 +37,17 @@ Le logiciel [Zoiper](https://www.zoiper.com/) est un softphone (logiciel de tél
 - [Disposer des identifiants de votre ligne SIP OVHcloud](/pages/web_cloud/phone_and_fax/voip/register-sip-softphone)
 - Disposer du logiciel [Zoiper](https://www.zoiper.com/en/voip-softphone/download/current) sur un smartphone ou un ordinateur
 
+<!-- CP-NAV-START:telecom-voip-fax -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [VoIP & Fax](/links/control-panel/telecom-voip-fax)
+- **Pour accéder à vos services :** `Télécom`{.action} > `VoIP & Fax`{.action} > Sélectionnez votre groupe de téléphonie
+
+---
+<!-- CP-NAV-END:telecom-voip-fax -->
+
 ## En pratique
 
 Ce tutoriel décrit la méthode pour enregistrer votre ligne sur la version gratuite de Zoiper5 pour Windows, macOS et Android, via l'assistant de configuration.
@@ -176,7 +187,7 @@ Vous avez alors accès à la configuration du compte SIP. Complétez les champs 
 Appuyez ensuite sur le bouton vert `S'enregistrer`{.action} situé **au-dessus** des champs complétés.
 
 > [!tabs]
-> Configuraiton de base
+> Configuration de base
 >> ![zoiper - iOS - informations SIP](images/zoiper-ios06.png){.thumbnail height="500"}
 > Proxy sortant différent du **Domain**
 >> ![zoiper - iOS - informations SIP](images/zoiper-ios06_proxy.png){.thumbnail height="500"}

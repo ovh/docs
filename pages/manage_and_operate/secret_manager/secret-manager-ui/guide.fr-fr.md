@@ -1,12 +1,8 @@
 ---
 title: "Utiliser le Secret Manager dans l'espace client OVHcloud"
 excerpt: "Découvrez comment utiliser le Secret Manager avec l'interface graphique"
-updated: 2025-10-15
+updated: 2025-01-30
 ---
-
-> [!primary]
-> Le Secret Manager est actuellement en phase bêta. Ce guide est susceptible d’être mis à jour ultérieurement avec les avancées de nos équipes en charge de ce produit.
->
 
 ## Objectif
 
@@ -113,7 +109,7 @@ Une version supprimée par le paramètre **Nombre maximum de versions** n'appara
 Le domaine OKMS du Secret Manager est commun avec le domaine OKMS du Key Management Service.
 La création ou la suppression d'un domaine OKMS a donc des conséquences sur les deux produits.
 
-Dans le cadre de la version bêta du Secret Manager, il n'est pas encore possible de modifier la configuration du domaine OKMS via l'interface graphique.
+Il n'est pas encore possible de modifier la configuration du domaine OKMS via l'interface graphique.
 
 #### Cas du multi-domaine OKMS
 
@@ -125,7 +121,7 @@ De plus, dans la liste des secrets, si une région contient plusieurs domaines O
 
 ![Secret Manager](images/Secret-multi-domaine-2.png){.thumbnail}
 
-Dans le cadre de la bêta du Secret Manager, il n'est pas encore possible d'ajouter un domaine OKMS dans une région via l'interface graphique.
+Il n'est pas encore possible d'ajouter un domaine OKMS dans une région via l'interface graphique.
 
 ### Utilisation du Secret Manager par API
 

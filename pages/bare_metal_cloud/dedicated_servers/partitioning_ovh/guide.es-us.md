@@ -1,17 +1,17 @@
 ---
-title: 'OVHcloud API and Storage (EN)'
-excerpt: 'Find out what the OVHcloud API provides in order to customize the disks, hardware/software RAID and partitioning configuration during the server OS reinstallation'
-updated: 2025-06-04
+title: "Customising Dedicated Server Partitioning via OVHcloud API"
+excerpt: "Use the OVHcloud API to customise disk partitions, hardware RAID, software RAID and file systems on your dedicated server."
+updated: 2026-02-18
 ---
 
 ## Objective
 
 > [!warning]
 >
-> This article is intended for experimented users that have at least basic Linux knowledge, but more importantly deeper technical knowledge on storage and especially on hardware, software RAID as well as Logical volume management (LVM)
+> This article is intended for experienced users with basic Linux knowledge, and more importantly, deeper technical knowledge of storage—particularly hardware and software RAID, as well as Logical Volume Management (LVM).
 >
 
-With [OVHcloud Dedicated Servers](/links/bare-metal/bare-metal), you can configure Disks, [hardware RAID](/pages/bare_metal_cloud/dedicated_servers/raid_hard), Partitions, [software RAID](/pages/bare_metal_cloud/dedicated_servers/raid_soft), LVM, ZFS, etc. during [OS reinstallation](/pages/bare_metal_cloud/dedicated_servers/getting-started-with-dedicated-server) from the [OVHcloud API](/links/api) as well as the [OVHcloud Control Panel](/links/manager). In this article, we will focus on the [OVHcloud API](/links/api). This will give us more details about the engine that is running in the background in order to create the storage customization on the dedicated server from the input data passed on to the OVHcloud API.
+With [OVHcloud Dedicated Servers](/links/bare-metal/bare-metal), you can configure Disks, [hardware RAID](/pages/bare_metal_cloud/dedicated_servers/raid_hard), Partitions, [software RAID](/pages/bare_metal_cloud/dedicated_servers/raid_soft), LVM, ZFS, etc. during [OS reinstallation](/pages/bare_metal_cloud/dedicated_servers/getting-started-with-dedicated-server) from the [OVHcloud API](/links/api) as well as the [OVHcloud Control Panel](/links/manager). In this article, we will focus on the [OVHcloud API](/links/api). This will give us more details about the engine that is running in the background in order to create the storage customisation on the dedicated server from the input data passed on to the OVHcloud API.
 
 Providing in-depth details about storage configuration can help customers understand why:
 
@@ -32,9 +32,9 @@ Providing in-depth details about storage configuration can help customers unders
 
 During the default OS installation, the user is interactively prompted by the OS installer (provided by the software editor) to specify on which disks the Operating System will be installed, the partitioning layout, etc. Once the OS is installed, it is possible to change the partitioning layout but it can be very tricky and risky, especially for partitions that are currently used by the system. For that reason, storage is a very important subject that needs to be considered **before** installing an Operating System.
 
-Apart from the simplicity offered by an API, the main advantage is the possibility to fully customize the disks and partitions on which the OS will be installed.
+Apart from the simplicity offered by an API, the main advantage is the possibility to fully customise the disks and partitions on which the OS will be installed.
 
-In this page we are focusing only on the `storage` sub-hash of the API call used to reinstall an OS on a dedicated server. For other customizations not related to storage, please read [OVHcloud API & OS installation](/pages/bare_metal_cloud/dedicated_servers/api-os-installation) for more details.
+In this page we are focusing only on the `storage` sub-hash of the API call used to reinstall an OS on a dedicated server. For other customisations not related to storage, please read [OVHcloud API & OS installation](/pages/bare_metal_cloud/dedicated_servers/api-os-installation) for more details.
 
 > [!api]
 >
@@ -140,7 +140,7 @@ Example reply:
 In this example, there are 2 disk groups:
 
 - the first one (diskGroupId=1) contains 2 x 480 GB disks.
-- the second one (diskGroupId=2) contains 2 x 1,9 TB disks.
+- the second one (diskGroupId=2) contains 2 x 1.9 TB disks.
 
 Example of Debian 12 (Bookworm) OS installation on the diskGroup 2:
 
@@ -169,12 +169,12 @@ Example of Debian 12 (Bookworm) OS installation on the diskGroup 2:
 
 > [!warning]
 >
-> For the moment API only supports OS installation and storage customization on 1 single disk group. From 1 up to all disks of the selected disk group can be involved in the storage customization. Nevertheless, all other disks will be erased but they will still be visible in the freshly new installed OS and can be used/configured afterwards for data.
+> For the moment, the API only supports OS installation and storage customisation on 1 single disk group. From 1 up to all disks of the selected disk group can be involved in the storage customisation. Nevertheless, all other disks will be erased but they will still be visible in the freshly new installed OS and can be used/configured afterwards for data.
 >
 
 ### Hardware RAID <a name="hard-raid"></a>
 
-This section is only applicable to servers having at least a hardware RAID controller in one of their [disk group](#disk-group).
+This section only applies to servers that have at least one hardware RAID controller in one of their [disk groups](#disk-group).
 
 #### Server & Hardware RAID Compatibility
 
@@ -233,7 +233,7 @@ Example of reply for a server with a hardware RAID controller:
 
 > [!warning]
 >
-> For the moment API only supports hardware RAID customization for 1 single hardware RAID controller. If your server has multiple hardware RAID controllers on which you want to customize their configuration, you can configure the other hardware RAID controller(s) than the one in the disk group targeted for OS reinstallation **before** the OS reinstallation (you can also do it once OS reinstallation is finished, but we recommend you to do it **before** in order to avoid any risk of wrong manipulation that could lead to data loss).
+> For the moment, the API only supports hardware RAID customisation for 1 single hardware RAID controller. If your server has multiple hardware RAID controllers whose configuration you want to customise, you can configure the controllers other than the one in the disk group targeted for OS reinstallation **before** the OS reinstallation (you can also do it after OS reinstallation is finished, but we recommend doing it **before** to avoid any risk of accidental data loss).
 >
 
 Example of OS installation with a hardware RAID 1 between the 2 first disks of the disk group:
@@ -291,11 +291,11 @@ In this example: all the 12 disks will be involved in a hardware RAID of level 1
 
 All disks involved in a hardware RAID configuration will be seen as 1 single virtual disk by the OS.
 
-This basically means that if you have involved all disks of the target disk group in a hardware RAID configuration, configuring a software RAID on top of it will not be applicable since the OS will see 1 single virtual disk.
+This means that if you have included all disks of the target disk group in a hardware RAID configuration, configuring software RAID on top of it is not possible since the OS will only see a single virtual disk.
 
 ### Partitioning <a name="partitioning"></a>
 
-Partitioning layout is about how your data will be organized and seen by the OS, i.e everything that comes on top of your physical disks (or virtual disk if you have configured hardware RAID), up to the filesystem that is mounted, from the lowest to the highest layer:
+Partitioning layout is about how your data will be organised and seen by the OS, i.e everything that comes on top of your physical disks (or virtual disk if you have configured hardware RAID), up to the filesystem that is mounted, from the lowest to the highest layer:
 
 - disk (physical/virtual disk, PD),
 - partition (physical partition, PP),
@@ -315,7 +315,7 @@ The following table provides an overview of the different partitioning component
 
 #### OS & Partitioning Compatibility <a name="os-partitioning-compatibility"></a>
 
-Since partitioning configuration will be visible by the OS, the chosen OS for reinstallation has an impact on the possibilities you have in your partitioning customization.
+Since partitioning configuration will be visible by the OS, the chosen OS for reinstallation has an impact on the possibilities you have in your partitioning customisation.
 
 In the `/dedicated/installationTemplate`{.action} section, you can display storage details such as LVM compatibility and filesystem availability for a specific OS:
 
@@ -349,14 +349,14 @@ Example:
 |noPartitioning|When true, operating system doesn't support custom partitioning|
 |softRaidOnlyMirroring|When true, operating system partially supports custom partitioning (only software RAID levels 0 and 1 can be configured and assigned to the 2 first disks of the disk group)|
 
-The following API call can be used to list the different operating system's partitioning scheme names. Most operating systems support custom partitioning configuration and therefore only have one single scheme named `default`. Only few of them that don't support custom partitioning configuration (`noPartitioning` set to `true`) and **can** therefore have multiple schemes.
+The following API call can be used to list the different operating system's partitioning scheme names. Most operating systems support custom partitioning configuration and therefore have only a single scheme named `default`. Only a few that don't support custom partitioning (`noPartitioning` set to `true`) **can** have multiple schemes.
 
 > [!api]
 >
 > @api {v1} /dedicated/installationTemplate GET  /dedicated/installationTemplate/{templateName}/partitionScheme
 >
 
-The following API calls can be used to know which partitioning will be applied by default, if not customized or not customizable by OS.
+The following API calls can be used to know which partitioning will be applied by default, if not customised or not customisable by OS.
 
 > [!api]
 >
@@ -393,7 +393,7 @@ The following table provides an overview of filesystem compatibility with RAID l
 
 #### ZFS vdevs vs standard RAID <a name="raidz2RAID"></a>
 
-ZFS does not support standard RAID levels. It refers to virtual devices (vdevs) to describe fault tolerance within a group of devices. See the [official OpenZFS documentation](https://openzfs.github.io/openzfs-docs/man/7/zpoolconcepts.7.html) for more details about vdevs.
+ZFS does not support standard RAID levels. It uses virtual devices (vdevs) to describe fault tolerance within a group of devices. See the [official OpenZFS documentation](https://openzfs.github.io/openzfs-docs/man/7/zpoolconcepts.7.html) for more details about vdevs.
 
 In order to make the OVHcloud API as simple as possible, customers must define a standard RAID within the API for ZFS filesystems. The standard RAID level will then be translated to an equivalent vdev definition. The following table illustrates the translation of the various RAID levels offered by the OVHcloud API as well as a reminder of their respective characteristics.
 
@@ -478,7 +478,7 @@ As you can see, a partitioning layout is a list of partitions. Here is an exampl
 }
 ```
 
-The `extras` sub-hash is optional. For the moment it can only be used to specify that the partition will be a logical volume and its logical volume. It can also be used for ZFS:
+The `extras` sub-hash is optional. It can be used to specify that the partition will be a logical volume (and its name). It can also be used for ZFS:
 
 ```json
 {
@@ -498,7 +498,7 @@ In this example, the `/` mount point will target a ZFS dataset in a zpool named 
 
 > [!primary]
 >
-> If zpool name not specified, a custom zpool name will be automatically generated.
+> If the zpool name is not specified, a custom zpool name will be automatically generated. By default, the algorithm attempts to group different datasets within the same zpool, except for datasets containing `/` or `/boot` which are placed in separate zpools. This allows advanced ZFS features that are incompatible with the bootloader to be enabled on the other zpools.
 >
 
 <br />
@@ -534,7 +534,7 @@ In the next section we will only focus on the **customer errors** types related 
 
 #### Common customer errors <a name="errors"></a>
 
-The following table gives an overview of well known customer errors and how to fix them.
+The following table gives an overview of well-known customer errors and how to fix them.
 
 |Error message|Details|Solution(s)|
 |---|---|---|

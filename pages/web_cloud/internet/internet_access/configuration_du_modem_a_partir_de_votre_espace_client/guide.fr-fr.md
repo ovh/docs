@@ -6,7 +6,7 @@ updated: 2025-04-28
 
 ## Objectif
 
-Afin de faciliter la gestion de votre accès à Internet, vous avez la possibilité de paramétrer votre box OVHcloud directement depuis votre espace client. Vous pouvez ainsi changer cette configuration à distance, sans devoir vous connecter à l'interface de votre box. Autre avantage, vous disposez toujours d'une sauvegarde de vos paramètres.
+Pour faciliter la gestion de votre accès à Internet, vous pouvez paramétrer votre box OVHcloud directement depuis l'espace client. Vous pouvez ainsi changer cette configuration à distance, sans devoir vous connecter à l'interface de votre box. Autre avantage, vous disposez toujours d'une sauvegarde de vos paramètres.
 
 **Découvrez comment configurer à distance votre box OVHcloud depuis l'espace client.**
 
@@ -14,18 +14,23 @@ Afin de faciliter la gestion de votre accès à Internet, vous avez la possibili
 
 - Disposer d'un [accès Internet xDSL ou FTTH OVHcloud](/links/telecom/offre-internet). 
 - Avoir activé la gestion de votre box à distance.
-- Être connecté à l’[espace client OVHcloud](/links/manager), partie `Télécom` :
+<!-- CP-NAV-START:telecom-xdsl-fttx -->
+---
 
-![espace client Telecom Accès Internet](/pages/assets/screens/control_panel/product-selection/telecom/tpl-telecom-01-fr-internet.png){.thumbnail}
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Accès Internet](/links/control-panel/telecom-xdsl-fttx)
+- **Pour accéder à vos services :** `Télécom`{.action} > `Offres Internet`{.action} > Sélectionnez votre accès
+
+---
+<!-- CP-NAV-END:telecom-xdsl-fttx -->
 
 ## En pratique
 
 ### Étape 1 : modifier la gestion de votre box
 
-1. Connectez-vous à votre [espace client OVHcloud](/links/manager) et cliquez sur `Télécom`{.action}.
-1. Cliquez sur `Offres Internet`{.action} puis sur le *Pack* contenant l'accès à Internet concerné.
-1. Cliquez sur votre accès à Internet FTTH ou xDSL dans le cadre `Accès Internet` à droite.
-1. Positionnez-vous alors sur l'onglet `Mon modem`{.action}.
+<!-- CP-STEPS-START:etape-1-modifier-gestion-box -->
+Depuis votre [espace client OVHcloud](/links/control-panel/telecom-xdsl-fttx), cliquez sur votre accès à Internet FTTH ou xDSL dans le cadre `Accès Internet` à droite, puis positionnez-vous sur l'onglet `Mon modem`{.action}.
 
 > [!warning]
 >
@@ -37,18 +42,20 @@ Afin de faciliter la gestion de votre accès à Internet, vous avez la possibili
 > [!primary]
 >
 > La désactivation de la configuration à distance n'écrase pas le paramétrage de votre box. Vous pourrez accéder localement au modem, sans perdre votre configuration actuelle.
-> Un nouveau mot de passe utilisateur vous sera communiqué par email. Il est possible qu'un redémarrage du modem soit nécessaire.
+> Un nouveau mot de passe utilisateur vous sera communiqué par e-mail. Il est possible qu'un redémarrage du modem soit nécessaire.
 >
 
 - Si vous souhaitez configurer votre modem localement sans utiliser l'outil de configuration à distance, vérifiez que la case `Configuration à distance activée` est bien décochée.
 
 ![configureremotelybox](images/configure-remotely-box-step1-2022.png){.thumbnail}
+<!-- CP-STEPS-END:etape-1-modifier-gestion-box -->
 
 <a name="custom-configuration"></a>
 
 ### Étape 2 : personnaliser la configuration de votre box
 
-Pour paramétrer votre box depuis l'[espace client OVHcloud](/links/manager), assurez-vous d'être positionné sur l'onglet `Mon modem`{.action} de l'accès à Internet concerné. **Pour rappel, il est impératif que la configuration à distance soit activée pour que cette gestion soit possible.**
+<!-- CP-STEPS-START:etape-2-personnaliser-configuration-box -->
+Pour paramétrer votre box depuis l'[espace client OVHcloud](/links/control-panel/telecom-xdsl-fttx), cliquez sur votre accès à Internet FTTH ou xDSL dans le cadre `Accès Internet` à droite, puis assurez-vous d'être positionné sur l'onglet `Mon modem`{.action}. **Pour rappel, il est impératif que la configuration à distance soit activée pour que cette gestion soit possible.**
 
 Depuis l'onglet `Mon modem`{.action}, vous retrouvez alors plusieurs sections. Chacune d'elles permet d'interagir avec la configuration de votre box. Poursuivez alors selon la manipulation que vous souhaitez effectuer :
 
@@ -59,9 +66,11 @@ Depuis l'onglet `Mon modem`{.action}, vous retrouvez alors plusieurs sections. C
 |[Configuration réseau](./#23-configuration-reseau)|- Configurer l'IP LAN de la box<br>- Configurer le DHCP et les baux DHCP de la box<br>- Configurer des redirections de ports|
 |[Configurations avancées](./#24-configurations-avancees)|- Réinitialiser votre box <br>- Activer le mode bridge<br>- Configurer le MTU<br>- Configurer une DMZ<br>- Choisir le fichier de configuration (_firmware_) de votre box|
 |[Services](./#25-services)|- Activer un service additionnel parmi ceux disponibles|
+<!-- CP-STEPS-END:etape-2-personnaliser-configuration-box -->
 
 #### 2.1 Réseau
 
+<!-- CP-STEPS-START:reseau -->
 Depuis cette partie, vous obtenez la liste des équipements connectés sur le réseau de votre box. Ces derniers apparaissent dans le tableau en dessous du nombre d'appareils connectés. Vous pouvez visualiser pour chaque équipement : 
 
 - le type de connexion (câble ou Wi-Fi) ;
@@ -70,12 +79,14 @@ Depuis cette partie, vous obtenez la liste des équipements connectés sur le r�
 - son adresse IP locale ;
 - son nom diffusé sur le réseau. 
 
-Vous avez la possibilité d'actualiser cette liste en cliquant sur le bouton `Rafraîchir`{.action}.
+Vous pouvez actualiser cette liste en cliquant sur le bouton `Rafraîchir`{.action}.
 
 ![configureremotelybox](images/configure-remotely-box-step2.png){.thumbnail}
+<!-- CP-STEPS-END:reseau -->
 
 #### 2.2 Configuration générale
 
+<!-- CP-STEPS-START:configuration-generale -->
 Depuis cette partie, plusieurs possibilités s'offrent à vous.
 
 - **Redémarrer à distance votre box** : pour cela, cliquez sur le bouton `Redémarrer le modem`{.action} puis confirmez l'action. Patientez alors le temps que votre box redémarre.
@@ -93,7 +104,7 @@ Personnalisez alors les champs pour modifier la configuration du réseau Wi-Fi. 
 |Champ|Description|
 |---|---|
 |Activer le Wi-Fi|Utilisez les boutons « Oui » ou « Non » pour activer ou désactiver le réseau Wi-Fi.|
-|Identifiant de réseau ou SSID|Il s'agit du nom de votre réseau Wi-Fi. Celui-ci apparaîtra sur vos appareils lorsque vous afficherez la liste des réseaux disponibles. Vous avez la possibilité de personnaliser ce nom si vous le souhaitez.|
+|Identifiant de réseau ou SSID|Il s'agit du nom de votre réseau Wi-Fi. Celui-ci apparaîtra sur vos appareils lorsque vous afficherez la liste des réseaux disponibles. Vous pouvez personnaliser ce nom si vous le souhaitez.|
 |Visibilité du réseau|Permet de rendre visible ou de masquer la diffusion du nom du réseau Wi-Fi. Si vous décidez de le masquer, celui-ci n'apparaîtra plus dans la liste des réseaux disponibles sur vos appareils. Pour vous connecter une première fois à ce réseau, vous devrez le paramétrer manuellement sur vos appareils.|
 |Sécurité|Il s'agit du type de sécurité de votre réseau Wi-Fi. Pour une utilisation optimale, nous vous recommandons le `WPA3` si votre modem le supporte ou le `WPA2`.|
 |Clé Wi-Fi|Permet de changer la clé Wi-Fi par celle de votre choix. Vous devrez également la confirmer.|
@@ -102,9 +113,11 @@ Personnalisez alors les champs pour modifier la configuration du réseau Wi-Fi. 
 Une fois le réseau Wi-Fi modifié, cliquez sur le bouton `Valider`{.action}.
 
 ![configureremotelybox](images/configure-remotely-box-step4.png){.thumbnail}
+<!-- CP-STEPS-END:configuration-generale -->
 
 #### 2.3 Configuration réseau (IP LAN, DHCP, redirections de ports)
 
+<!-- CP-STEPS-START:configuration-reseau -->
 Depuis cette partie, plusieurs possibilités de configuration s'offrent à vous.
 
 - **Configurer l'IP LAN de la box** : permet de personnaliser l'adresse IP privée de votre box. C'est avec celle-ci que vous pourrez communiquer sur votre réseau local avec votre box.
@@ -122,7 +135,7 @@ Une fois la configuration de l'IP LAN modifiée, validez le changement avec le b
 
 - **Configurer le DHCP** : permet de personnaliser la configuration du serveur DHCP de votre box. Modifiez-la uniquement dans le cas d'une utilisation avancée de votre service.
 
-Pour cela, cliquez sur l'icône en forme de crayon à droite du tableau. Vous pouvez alors choisir d'activer ou de désactiver le DHCP sur votre box, par le biais d'une case à cocher. Si le DHCP est actif, vous avez la possibilité de paramétrer des éléments supplémentaires :
+Pour cela, cliquez sur l'icône en forme de crayon à droite du tableau. Vous pouvez alors choisir d'activer ou de désactiver le DHCP sur votre box, par le biais d'une case à cocher. Si le DHCP est actif, vous pouvez paramétrer des éléments supplémentaires :
 
 |Configuration|Description|
 |---|---|
@@ -166,9 +179,11 @@ Pour cela, cliquez sur le bouton `Ajouter une Redirection de Ports`{.action} pui
 Une fois les informations complétées, validez l'ajout avec le bouton d'action correspondant.
 
 ![configureremotelybox](images/configure-remotely-box-step8.png){.thumbnail}
+<!-- CP-STEPS-END:configuration-reseau -->
 
 #### 2.4 Configurations avancées
 
+<!-- CP-STEPS-START:configurations-avancees -->
 Depuis cette partie, plusieurs possibilités s'offrent à vous.
 
 - **Réinitialiser votre box** : permet de réinitialiser les paramètres de votre box, tout en conservant les configurations définies dans votre espace client. Pour cela, cliquez sur le bouton `Réinitialiser le modem`{.action} puis confirmez l'action. Patientez alors le temps que la manipulation s'effectue.
@@ -201,10 +216,12 @@ Pour configurer une DMZ, cliquez sur le bouton `Configurer`{.action} en dessous 
 Pour cela, choisissez dans la liste le fichier de configuration que vous souhaitez appliquer, puis cliquez sur le bouton `Valider`{.action}.
 
 ![configureremotelybox](images/configure-remotely-box-step9.png){.thumbnail}
+<!-- CP-STEPS-END:configurations-avancees -->
 
 #### 2.5 Services
 
-Vous avez la possibilité dans cette partie d'activer ou de désactiver des services additionnels de votre box. Vous devrez alors utiliser le bouton d'activation à côté du service concerné. **Selon la box dont vous disposez, certains services de la liste ci-dessous peuvent ne pas être disponibles.**
+<!-- CP-STEPS-START:services -->
+Vous pouvez dans cette partie d'activer ou de désactiver des services additionnels de votre box. Vous devrez alors utiliser le bouton d'activation à côté du service concerné. **Selon la box dont vous disposez, certains services de la liste ci-dessous peuvent ne pas être disponibles.**
 
 |Services|Description|
 |---|---|
@@ -217,6 +234,7 @@ Vous avez la possibilité dans cette partie d'activer ou de désactiver des serv
 |IPsec ALG|Active ou désactive le processus ALG pour le tunneling IPsec.|
 
 ![configureremotelybox](images/configure-remotely-box-step10.png){.thumbnail}
+<!-- CP-STEPS-END:services -->
 
 ## Aller plus loin
 

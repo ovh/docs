@@ -13,12 +13,22 @@ Nel panorama digitale di oggi, le società sono sempre più dinamiche e innovati
 ## Prerequisiti
 
 - Disporre di una soluzione di [hosting Web OVHcloud](/links/web/hosting).
-- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager), sezione Web Cloud.
 - Disporre di un account [GitHub](https://github.com/) ed essere connesso.
 
 > [!primary]
 >
 > Alla data corrente, solo la piattaforma GitHub è supportata nell'utilizzo con i servizi di hosting Web OVHcloud.
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [Web hosting](/links/control-panel/web-hosting)
+- **Percorso di navigazione:** `Web Cloud`{.action} > `Hosting`{.action} > Seleziona il tuo hosting web
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## Procedura
 

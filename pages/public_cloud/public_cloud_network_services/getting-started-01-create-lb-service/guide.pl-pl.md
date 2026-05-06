@@ -20,11 +20,22 @@ Our Public Cloud Load Balancer  is based on [OpenStack Octavia](https://wiki.ope
 
 ## Instructions
 
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Ścieżka nawigacji:** `Public Cloud`{.action} > Wybierz projekt
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
+
 ### Creating the Load Balancer
 
 > [!tabs]
 > Via the OVHcloud Control Panel
->> Log in to the [OVHcloud Control Panel](/links/manager), go to the `Public Cloud`{.action} section and select the Public Cloud project concerned. Click `Load Balancer`{.action} (under **Network**) in the left menu, then click the `Create a Load Balancer`{.action} button.
+>> Click `Load Balancer`{.action} (under **Network**) in the left menu, then click the `Create a Load Balancer`{.action} button.
 >>
 >> The configuration page will open.
 >>

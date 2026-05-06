@@ -1,6 +1,6 @@
 ---
-title: Tutorial - Instalar um servidor web (LAMP) em Debian ou Ubuntu
-excerpt: "Saiba como configurar um servidor web LAMP"
+title: "Tutorial - Instalar um servidor web (LAMP) em Debian ou Ubuntu"
+excerpt: "Instale um servidor web LAMP (Linux, Apache, MySQL, PHP) num servidor dedicado Debian ou Ubuntu passo a passo"
 updated: 2023-05-10
 ---
 
@@ -17,8 +17,18 @@ A implementação de um servidor web e dos softwares associados permite ao seu s
 ## Requisitos
 
 - Um [servidor dedicado](/links/bare-metal/bare-metal), um [VPS](/links/bare-metal/vps) ou uma instância [Public Cloud](/links/public-cloud/public-cloud) na sua conta OVHcloud (exceto sistemas Windows)
-- Ter acesso à [Área de Cliente OVHcloud](/links/manager)
 - Um acesso administrativo ao seu serviço via SSH
+
+<!-- CP-NAV-START:baremetal-dedicated-servers -->
+---
+
+### Acesso à Área de Cliente OVHcloud
+
+- **Link direto:** [Servidores dedicados](/links/control-panel/baremetal-dedicated-servers)
+- **Caminho de navegação:** `Bare Metal Cloud`{.action} > `Servidores dedicados`{.action} > Selecione o seu servidor
+
+---
+<!-- CP-NAV-END:baremetal-dedicated-servers -->
 
 > [!warning]
 > Este tutorial explica a utilização de uma ou várias soluções da OVHcloud com ferramentas externas e descreve as operações realizadas num contexto preciso. Talvez tenha de adaptar as instruções à sua situação.
@@ -80,12 +90,12 @@ sudo apt install -y php php-pdo php-mysql php-zip php-gd php-mbstring php-curl p
 
 ### Etapa 4: configuração do servidor de base de dados <a name="sqlconf"></a>
 
-MariaDB fornece um script para o ajudar na configuração inicial e para aplicar certos parâmetros relacionados com a segurança.
+MariaDB [fornece um script](https://mariadb.com/docs/server/clients-and-utilities/deployment-tools/mariadb-secure-installation) para o ajudar na configuração inicial e para aplicar certos parâmetros relacionados com a segurança.
 
 Para o executar, insira o seguinte comando:
 
 ```bash
-sudo mysql_secure_installation
+sudo mariadb-secure-installation
 ```
 
 Confirme a primeira chamada apoiando-se na `Entrada`{.action}.

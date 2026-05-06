@@ -1,7 +1,7 @@
 ---
 title: 'Using Exchange error diagnostics'
 excerpt: 'Find out how to run automated error checks on Exchange accounts'
-updated: 2025-04-28
+updated: 2026-01-22
 ---
 
 ## Objective
@@ -14,17 +14,22 @@ Since there is a multitude of reasons why errors might occur on Exchange email a
 
 - an [OVHcloud Exchange solution](/links/web/emails-hosted-exchange) already set up
 - credentials for the Exchange account to be checked
-- access to the [OVHcloud Control Panel](/links/manager)
 - being up to date in the [payments](/pages/account_and_service_management/managing_billing_payments_and_services/invoice_management#pay-bills) for this service and the related domain name.
+
+<!-- CP-NAV-START:web-exchange -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Exchange](/links/control-panel/web-exchange)
+- **Navigation path:** `Web Cloud`{.action} > `Exchange`{.action} > Select your platform
+
+---
+<!-- CP-NAV-END:web-exchange -->
 
 ## Instructions
 
 ### Running the diagnostic
-
-1. Log in to your [OVHcloud Control Panel](/links/manager).
-1. Open the `Web Cloud`{.action} section.
-1. In the `MICROSOFT` section, click `Exchange`{.action}.
-1. Select the service concerned.
 
 ![Exchange Diagnostic](images/img_4450.png){.thumbnail}
 
@@ -83,13 +88,7 @@ Depending on your Exchange service usage, the following MX servers are valid:
 
 - Exchange only: mx0.mail.ovh.ca, mx1.mail.ovh.ca, mx2.mail.ovh.ca, mx3.mail.ovh.ca & mx4.mail.ovh.ca
 - Exchange & POP/IMAP email hosted by OVHcloud: mx0.mail.ovh.ca, mx1.mail.ovh.ca mx2.mail.ovh.ca, mx3.mail.ovh.ca & mx4.mail.ovh.ca
-- Exchange & POP/IMAP email not hosted by OVHcloud: ex<b>?</b>.mail.ovh.ca
-<a name="hostname"></a>
-
-> [!warning]
-> In our guides, we use as the server name: ex<b>?</b>.mail.ovh.ca. You will need to replace the "?" with the actual number indicating the appropriate server  for your Exchange service.
->
-> You can find this information in the OVHcloud Control Panel, in the `Web Cloud`{.action} >
+- Exchange & POP/IMAP email not hosted by OVHcloud: `ex.mail.ovh.ca`
 
 ### The domain's SRV record is not valid
 
@@ -105,7 +104,7 @@ Sub-domain   | _autodiscover._tcp
 Priority     | 0
 Weight       | 0
 Port         | 443
-Target       | [Your hostname](#hostname) (ex<b>?</b>.mail.ovh.ca)
+Target       | ex.mail.ovh.ca
 
 ### The test email could not be sent from this account 
 

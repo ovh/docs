@@ -1,6 +1,6 @@
 ---
 title: 'Zarządzanie książkami adresowymi SMS'
-excerpt: 'Dowiedz się, jak utworzyć książkę adresową SMS na Twoim koncie OVHcloud'
+excerpt: 'Dowiedz się, jak tworzyć, importować i zarządzać książkami adresowymi SMS na koncie OVHcloud za pomocą Panelu klienta i arkuszy kalkulacyjnych'
 updated: 2022-08-05
 ---
 
@@ -16,15 +16,23 @@ Wszystkie konta OVHcloud mogą używać jednej lub więcej książek adresowych.
 
 - Posiadanie aktywnego konta SMS OVHcloud.
 - Posiadanie arkusza kalkulacyjnego lub edytora tekstu.
-- Zalogowanie do[Panelu klienta OVHcloud](/links/manager), część `Telefonia`{.action}, następnie `SMS`{.action}.
+
+<!-- CP-NAV-START:telecom-sms -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [SMS](/links/control-panel/telecom-sms)
+- **Ścieżka nawigacji:** `Telecom`{.action} > `SMS`{.action} > Wybierz konto SMS
+
+---
+<!-- CP-NAV-END:telecom-sms -->
 
 ![Panel klienta Telecom SMS](/pages/assets/screens/control_panel/product-selection/telecom/tpl-telecom-03-en-sms.png){.thumbnail}
 
 ## W praktyce
 
-### Etap 1: tworzenie książki adresowej w Panelu klienta
-
-Zaloguj się do [Panelu klienta OVHcloud](/links/manager) i przejdź do rubryki `Telefonia`{.action}. Następnie z menu po lewej stronie wybierz `SMS`{.action}.
+### Etap 1: Tworzenie książki adresowej w Panelu klienta
 
 Kliknij żądane konto SMS i wybierz kartę `Kontakty`{.action}, a następnie `Książka adresowa`{.action}.
 
@@ -36,7 +44,7 @@ Kliknij polecenie `Dodaj książkę adresową`{.action} i nadaj jej nazwę.
 
 ![phonebook](images/smsphonebook2.png){.thumbnail}
 
-### Etap 2: dodawanie kontaktów do książki adresowej
+### Etap 2: Dodawanie kontaktów do książki adresowej
 
 Książka adresowa została utworzona, ale nie zawiera żadnego kontaktu. Możesz dodać kontakty na kilka sposobów.
 
@@ -96,7 +104,7 @@ Pojawi się wyskakujące okienko. Kliknij w nim pozycję `Plik kontaktów`{.acti
 
 Poczekaj kilka sekund, aż plik zostanie przesłany do Panelu klienta.
 
-### Etap 3: edytowanie lub usuwanie książki adresowej
+### Etap 3: Edytowanie lub usuwanie książki adresowej
 
 Jeśli chcesz zmienić nazwę książki adresowej, z rozwijanego menu (1) wybierz Twoją książkę adresową (jeśli masz więcej niż jedną), a następnie kliknij ikonę ołówka (2) znajdującą się przy nazwie książki. 
 

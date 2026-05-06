@@ -1,7 +1,7 @@
 ---
 title: "Como configurar a reverse DNS do seu servidor (registo PTR)"
-excerpt: Descubra como configurar a resolução reverse DNS do seu endereço IP a partir da Área de Cliente OVHcloud
-updated: 2026-01-06
+excerpt: Descubra como configurar a resolução reverse DNS do seu endereço IPv4 ou IPv6 a partir da Área de Cliente OVHcloud
+updated: 2026-02-23
 ---
 
 ## Objetivo
@@ -15,13 +15,20 @@ A configuração da reverse DNS de um servidor é particularmente útil durante 
 ## Requisitos
 
 - Um endereço IP associado a um serviço da sua conta OVHcloud
-– Um nome de domínio com o seu registo `A` ligado ao seu serviço
-- Ter acesso à [Área de Cliente OVHcloud](/links/manager)
+- Um nome de domínio com o seu registo `A` ou `AAAA` ligado ao seu serviço
+
+<!-- CP-NAV-START:network-public-ip -->
+---
+
+### Acesso à Área de Cliente OVHcloud
+
+- **Ligação direta:** [Public IP](/links/control-panel/network-public-ip)
+- **Caminho de navegação:** `Network`{.action} > `Endereços IP Públicos`{.action}
+
+---
+<!-- CP-NAV-END:network-public-ip -->
 
 ## Instruções
-
-Aceda à [Área de Cliente OVHcloud](/links/manager), clique em `Network`{.action} no menu à esquerda do ecrã e, a seguir, em `Endereços IP Públicos`{.action}.
-
 O menu suspenso sob "**Os meus endereços IP públicos e serviços associados**" permite-lhe filtrar os seus serviços por categoria. Também pode pesquisar um endereço IP específico através da barra de pesquisa localizada à esquerda do menu suspenso.
 
 ![Reverse DNS](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/network/filterip_new.png){.thumbnail}
@@ -37,7 +44,7 @@ Na nova janela, preencha o seu reverse e clique em `Confirmar`{.action}.
 Também pode editar o reverse diretamente através do ícone `lápis`{.action} na coluna **Reverse DNS** da tabela.
 
 > [!warning]
-> Quando introduz o seu nome de domínio no *reverse*, este verifica imediatamente se o registo A aponta para a mesma IP. Isto é utilizado nas procedimentos anti-spam, pelo que o seu registo A tem de ser válido e propagado. Existem algumas regras a seguir quando introduz o *reverse* :
+> Ao introduzir o seu nome de domínio na reverse, este verifica imediatamente se o registo `A` / `AAAA` remete para o mesmo IP. Isto é utilizado nos procedimentos antisspam, pelo que o seu registo DNS deve ser válido e propagado. Há certas regras a seguir aquando da introdução da reverse:
 >
 >  - o *reverse* não pode começar com um `-`
 >  - o *reverse* não pode conter mais de 63 caracteres
@@ -49,7 +56,7 @@ Também pode editar o reverse diretamente através do ícone `lápis`{.action} n
 
 > [!primary]
 >
-> Se a modificação não funcionar como esperado, verifique se o registo `A` está corretamente configurado na zona DNS do seu nome de domínio. A aplicação das alterações na zona DNS pode levar até 24 horas, no caso em que acabou de modificar o registo `A`.
+> Se a alteração não funcionar como esperado, verifique se o registo `A` / `AAAA` está corretamente configurado na zona DNS do seu domínio. A aplicação das alterações na zona DNS pode demorar até 24 horas, no caso de ter alterado recentemente o registo.
 >
 > Se o nome de domínio for gerido pela OVHcloud como um registo **e utilizar os servidores DNS da OVHcloud**, pode consultar [este guia](/pages/web_cloud/domains/dns_zone_edit).
 >

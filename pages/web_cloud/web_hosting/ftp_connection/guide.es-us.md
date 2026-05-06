@@ -1,7 +1,7 @@
 ---
 title: "Conectarse al espacio de almacenamiento FTP de un alojamiento web"
 excerpt: "Descubra cómo conectarse al espacio de almacenamiento FTP de un alojamiento web de OVHcloud"
-updated: 2025-06-15
+updated: 2026-03-31
 ---
 
 ## Objetivo
@@ -13,12 +13,21 @@ Los planes de hosting de OVHcloud proporcionan acceso a un espacio de almacenami
 ## Requisitos
 
 - Tener contratado un [plan de hosting de OVHcloud](/links/web/hosting)
-- Estar conectado al [área de cliente de OVHcloud](/links/manager), en la sección `Web Cloud`{.action}.
-
 > [!primary]
 > Solo los alojamientos web **Pro** o **Performance** permiten la activación de varios usuarios FTP y disponen de conexiones por SSH.
 >
 > Para los alojamientos web, ya no es posible conectarse al espacio de almacenamiento FTP mediante la herramienta en línea FTP Explorer/Net2FTP. Para seguir conectándose por FTP a su alojamiento web, utilice los programas [Filezilla](https://filezilla-project.org/download.php) o [Cyberduck](https://cyberduck.io/).
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [Alojamientos](/links/control-panel/web-hosting)
+- **Ruta de navegación:** `Web Cloud`{.action} > `Alojamientos`{.action} > Seleccione su alojamiento web
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## Procedimiento
 
@@ -37,28 +46,23 @@ Para conectarse a su espacio de almacenamiento FTP, descargue los siguientes ele
 >
 > **Si ya tiene estos elementos**, vaya directamente en la parte 2. "[Acceder a su espacio de almacenamiento](#ftp_storage_access)" de esta guía.
 
-Si no dispone de estos datos, Si no dispone de estos datos, haga clic en las fichas siguientes para ver cada una de las **4** etapas.
+<!-- CP-STEPS-START:get-ftp-credentials -->
+Si no dispone de estos datos, haga clic en las fichas siguientes para ver cada una de las **4** etapas.
 
 > [!tabs]
 > **Etapa 1**
 >>
->> Conéctese a su [área de cliente de OVHcloud](/links/manager) y acceda a la sección `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Etapa 2**
->>
->> Haga clic en el menú `Alojamientos`{.action} y seleccione el alojamiento web correspondiente.
+>> Acceda a la página [Alojamientos](/links/control-panel/web-hosting) y seleccione el alojamiento web correspondiente.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Etapa 3**
+> **Etapa 2**
 >>
 >> En la nueva página, haga clic en la pestaña `FTP - SSH`{.action}.
 >>
 >> ![FTP - SSH](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh.png){.thumbnail}
 >>
-> **Etapa 4**
+> **Etapa 3**
 >>
 >> Se mostrará la información relativa a su espacio de almacenamiento y una tabla con los usuarios FTP y SSH creados en su alojamiento web.
 >> ![FTP - SSH tab](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/tab-pro.png){.thumbnail}
@@ -70,27 +74,27 @@ Si no dispone de estos datos, Si no dispone de estos datos, haga clic en las fic
 >> > Seleccione una contraseña para la nueva cuenta de usuario, haga clic en `Siguiente`{.action} y, seguidamente, en `Confirmar`{.action}.
 >>
 >> Todos los elementos necesarios para conectarse al espacio de almacenamiento FTP están presentes en esta misma página.
-
-A continuación se muestra una descripción de la información esencial que se muestra en la página `FTP - SSH`{.action}:
-
-- **Servidor FTP y SFTP**: dirección del servidor FTP de su alojamiento web que permite acceder al espacio de almacenamiento FTP. Para ello, utilice, por ejemplo, un programa FTP a través del protocolo FTP o SFTP.
-
-> El puerto de conexión clásico es el puerto "21". Utilice el puerto "22" para conectarse mediante el protocolo SFTP (en caso de que esté activado).
-
-- **Servidor SSH**: dirección del servidor SSH de su alojamiento web que permite acceder al espacio de almacenamiento FTP. Para ello, utilice un terminal mediante el protocolo SSH.
-
-> El puerto de conexión SSH es el puerto "22".
-
-- **Usuario principal**: Identificador (S)FTP principal creado en su alojamiento web. Puede consultar todos los usuarios (S)FTP de su alojamiento en la columna "Usuario" de la tabla.
-
-> [!primary]
->
-> En función del plan de [hosting de OVHcloud](/links/web/hosting) que tenga, es posible que no aparezca alguna de las informaciones arriba descritas (en particular, relativas al SSH).
->
+>>
+> **Etapa 4**
+>>
+>> A continuación se muestra una descripción de la información esencial que se muestra en la página `FTP - SSH`:
+>>
+>> - **Servidor FTP y SFTP**: dirección del servidor FTP de su alojamiento web que permite acceder al espacio de almacenamiento FTP a través de un software FTP o SFTP.
+>>
+>> > El puerto de conexión clásico es el puerto "21". Utilice el puerto "22" para conectarse mediante el protocolo SFTP (en caso de que esté activado).
+>>
+>> - **Servidor SSH**: dirección del servidor SSH de su alojamiento web que permite acceder al espacio de almacenamiento FTP a través de un terminal y el protocolo SSH.
+>>
+>> > El puerto de conexión SSH es el puerto "22".
+>>
+>> - **Usuario principal**: Identificador (S)FTP principal creado en su alojamiento web. Puede consultar todos los usuarios (S)FTP de su alojamiento en la columna "Usuario" de la tabla.
+>>
+>> > [!primary]
+>> >
+>> > En función del plan de [hosting de OVHcloud](/links/web/hosting) que tenga, es posible que no aparezca alguna de las informaciones arriba descritas (en particular, relativas al SSH).
+<!-- CP-STEPS-END:get-ftp-credentials -->
 
 Si ya no conoce la contraseña de un usuario FTP o SSH, consulte nuestra guía "[Cambiar la contraseña de un usuario FTP](/pages/web_cloud/web_hosting/ftp_change_password)".
-
-![Conexión FTP](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/change-password.png){.thumbnail}
 
 En este punto, dispondrá de todos los elementos necesarios para conectarse a su espacio de almacenamiento FTP.
 

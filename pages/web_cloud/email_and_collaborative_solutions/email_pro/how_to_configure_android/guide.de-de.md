@@ -31,6 +31,17 @@ E-Mail-Accounts aus dem E-Mail Pro Angebot können auf allen kompatiblen E-Mail-
 - Sie haben die Gmail-App auf Ihrem Gerät. Sie können diese über den Google Play Store installieren.
 - Sie haben die Login-Daten des E-Mail-Accounts, den Sie einrichten möchten.
 
+<!-- CP-NAV-START:web-email-pro -->
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direkter Link:** [E-Mail Pro](/links/control-panel/web-email-pro)
+- **Navigationspfad:** `Web Cloud`{.action} > `E-Mail Pro`{.action} > Wählen Sie Ihre Plattform aus
+
+---
+<!-- CP-NAV-END:web-email-pro -->
+
 > [!primary]
 >
 > Diese Anleitung wurde anhand eines Geräts mit Android Version 13 erstellt.
@@ -41,14 +52,9 @@ E-Mail-Accounts aus dem E-Mail Pro Angebot können auf allen kompatiblen E-Mail-
 
 > [!primary]
 >
-> In dieser Anleitung verwenden wir als Serverbezeichnung: pro?.mail.ovh.net. Das „?“ muss mit der jeweils passenden Nummer Ihres zuständigen Servers für den einzurichtenden Email Pro Dienst ersetzt werden.
+> In dieser Anleitung verwenden wir als Serverbezeichnung: pro?.mail.ovh.net. Das „?” muss mit der jeweils passenden Nummer Ihres zuständigen Servers für den einzurichtenden E-Mail Pro Dienst ersetzt werden.
 >
-> 1. Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein.
-> 1. Öffnen Sie den Bereich `Web Cloud`{.action}.
-> 1. Klicken Sie auf `E-Mail Pro`{.action}.
-> 1. Wählen Sie den gewünschten Dienst aus.
-> 1. Der Servername wird im Kasten **Verbindung** auf der Seite `Allgemeine Informationen`{.action} angezeigt.
->
+> Klicken Sie auf [diesen Link](/links/control-panel/web-email-pro), um auf den Bereich `E-Mail Pro`{.action} zuzugreifen. Der Servername wird im Bereich **Verbindung** des Tabs `Allgemeine Informationen`{.action} angezeigt.
 
 Öffnen Sie die Anwendung `Gmail`{.action}.
 

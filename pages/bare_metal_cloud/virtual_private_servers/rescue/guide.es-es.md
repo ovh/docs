@@ -1,18 +1,18 @@
 ---
 title: Activar y utilizar el modo de rescate en un VPS
 excerpt: Descubra cómo utilizar el modo de rescate de OVHcloud para solucionar los problemas de su VPS y realizar comprobaciones del sistema
-updated: 2025-03-27
+updated: 2025-01-12
 ---
 
 ## Objetivo
 
 El modo de rescate (*rescue*) es una herramienta proporcionada por OVHcloud para arrancar su VPS en un sistema operativo temporal. A continuación, puede acceder al sistema para realizar tareas de diagnóstico y solucionar problemas como los siguientes:
 
-- [Restablecimiento de la contraseña del usuario para recuperar el acceso](/pages/bare_metal_cloud/dedicated_servers/replacing-user-password)
-- Diagnóstico de problemas de red
+- [Restablecer la contraseña del usuario para recuperar el acceso](/pages/bare_metal_cloud/dedicated_servers/replacing-user-password)
+- Diagnosticar problemas de red
 - Reparar un sistema operativo defectuoso
-- Reparar un firewall de software mal configurado
-- Prueba de rendimiento del disco
+- Reparar un cortafuegos de software mal configurado
+- Probar el rendimiento del disco
 
 Si experimenta algún problema con el sistema, la realización de comprobaciones en modo de rescate le permitirá determinar si está relacionado con un programa instalado en el VPS o si existe una causa más profunda. Antes de ponerse en contacto con nuestro equipo de soporte, le recomendamos que utilice el modo de rescate para recopilar los resultados de las pruebas y excluir los errores de software.
 
@@ -25,8 +25,18 @@ Si experimenta algún problema con el sistema, la realización de comprobaciones
 
 ## Requisitos
 
-- Haber iniciado sesión en el [área de cliente de OVHcloud](/links/manager).
 - Tener ya configurado su [VPS de OVHcloud](/links/bare-metal/vps).
+
+<!-- CP-NAV-START:baremetal-vps -->
+---
+
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [VPS management](/links/control-panel/baremetal-vps)
+- **Ruta de navegación:** `Bare Metal Cloud`{.action} > `Servidores privados virtuales`{.action} > Seleccione su VPS
+
+---
+<!-- CP-NAV-END:baremetal-vps -->
 
 > [!warning]
 > OVHcloud ofrece servicios cuya configuración y gestión son responsabilidad suya. Por lo tanto, es su responsabilidad asegurarse de que funcionen correctamente.
@@ -38,9 +48,7 @@ Si experimenta algún problema con el sistema, la realización de comprobaciones
 
 ### Activación del modo de rescate
 
-Conéctese a su [área de cliente de OVHcloud](/links/manager), acceda a la sección `Bare Metal Cloud`{.action} y seleccione su servidor en la sección `Servidores privados virtuales`{.action}.
-
-En la pestaña `Inicio`{.action}, haga clic en `...`{.action} junto al botón derecho en la zona **Su VPS**.
+En la pestaña `Inicio`{.action}, haga clic en `...`{.action} junto a « Boot » en la zona **Su VPS**.
 
 ![Rescue](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/vps/cp_rescue.png){.thumbnail}
 
@@ -53,6 +61,10 @@ Una vez iniciado el reinicio, aparecerá una barra de progreso que le indicará 
 > [!primary]
 >
 > Recibirá un mensaje de correo electrónico automático con las claves SSH para acceder al modo de rescate. Por favor, espere la recepción del email antes de continuar con cualquier acción. Este mensaje de correo electrónico también puede consultarse en el [área de cliente de OVHcloud](/links/manager). Para localizarlo, haga clic en el nombre asociado a su identificador de OVHcloud en la barra de menús situada en la esquina superior derecha y seleccione `Correo electrónico del servicio`{.action}.
+>
+
+> [!warning]
+> Tenga en cuenta que si ya no es el contacto técnico del servidor, no recibirá el correo electrónico. Para obtener más información, consulte nuestra guía: «[Gestionar los contactos de los servicios](/pages/account_and_service_management/account_information/managing_contacts)».
 >
 
 A continuación, deberá [acceder al servidor por SSH](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction), utilizando la contraseña temporal generada para el modo de rescate.
@@ -156,4 +168,4 @@ Si se produce un error al reiniciar un VPS, siga estos pasos:
 
 [Comprobar el sistema de archivos en un VPS](/pages/bare_metal_cloud/virtual_private_servers/check-filesystem)
 
-Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.
+Interactúe con nuestra [comunidad de usuarios](/links/community).

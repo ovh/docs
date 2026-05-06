@@ -21,36 +21,42 @@ Este guia explica como pode ativar o alojamento gratuito 100M no seu [domínio](
 ## Requisitos
 
 - Dispor de um [nome de domínio](/links/web/domains) no seu [Área de Cliente OVHcloud](/links/manager), desassociado de qualquer alojamento Web e sem nenhum [MX Plan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities) associado.
-- Ter acesso ao seu [Área de Cliente OVHcloud](/links/manager).
 
 > [!primary]
 >
 > O alojamento gratuito 100M é **unicamente** disponível para os nossos clientes na Europa.
 
+<!-- CP-NAV-START:web-domains -->
+---
+
+### Acesso à Área de Cliente OVHcloud
+
+- **Ligação direta:** [Nomes de domínio](/links/control-panel/web-domains)
+- **Caminho de navegação:** `Web Cloud`{.action} > `Nomes de domínio`{.action} > Selecione o seu nome de domínio
+
+---
+<!-- CP-NAV-END:web-domains -->
+
+
 ## Instruções
 
-Para ativar o alojamento gratuito 100M, clique nos separadores abaixo para visualizar cada um dos **4** passos.
+<!-- CP-STEPS-START:activate-100m-steps -->
+Para ativar o alojamento gratuito 100M, clique nos separadores abaixo para visualizar cada uma das **3** etapas.
 
 > [!tabs]
 > **Etapa 1**
 >>
->> Aceda à [Área de Cliente OVHcloud](/links/manager) e aceda à secção `Web Cloud`{.action}.
+>> Aceda à página [Nomes de domínio](/links/control-panel/web-domains) e escolha o domínio em causa.
 >>
->> ![enable 100m](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
+>> ![Domain Names](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
 >>
 > **Etapa 2**
->>
->> Clique no menu `Nomes de domínios`{.action} e escolha o domínio em causa.
->>
->> ![enable 100m](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
->>
-> **Etapa 3**
 >>
 >> No menu **Informações gerais**, encontrará **Alojamento web e e-mail gratuito**. À direita, clique no botão `...`{.action} e, a seguir, em `Ativar`{.action}.
 >>
 >> ![enable 100m](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/enable-100m.png){.thumbnail}
 >>
-> **Etapa 4**
+> **Etapa 3**
 >>
 >> Aparecerá a janela de ativação. A secção **1** faz menção ao serviço e ao seu custo. Clique em `Seguinte`{.action}. Na secção **2**, escolha as alterações a fazer à sua zona DNS:
 >>
@@ -74,6 +80,7 @@ Para ativar o alojamento gratuito 100M, clique nos separadores abaixo para visua
 >> A secção **3** recorda-lhe o preço da oferta. 
 >>
 >> Na secção **4**, deverá ler os contratos e validar a encomenda.
+<!-- CP-STEPS-END:activate-100m-steps -->
 
 > [!primary]
 >

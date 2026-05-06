@@ -12,13 +12,39 @@ Jeder OVHcloud E-Mail-Account verfügt über einen dedizierten Speicherplatz. Ei
 
 ## Voraussetzungen
 
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 - Sie verfügen über eine vorkonfigurierte OVHcloud E-Mail-Lösung, darunter:
     - **MX Plan** mit unseren [Webhosting Angeboten](/links/web/hosting) oder in einem [100M Gratis-Hosting](/links/web/domains-free-hosting) inklusive.
-    - [Exchange](/links/web/emails).
-    - [Email Pro](/links/web/email-pro).
+    - [Exchange](/links/web/emails-exchange).
+    - [E-Mail Pro](/links/web/email-pro).
     - [Zimbra](/links/web/emails-zimbra).
 - Sie verfügen über Anmeldeinformationen für den zu konfigurierenden E-Mail-Account.
+
+<!-- CP-NAV-START:web-mx-plan -->
+<!-- CP-NAV-START:web-email-pro -->
+<!-- CP-NAV-START:web-exchange -->
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+**MX Plan:**
+
+- **Direktlink:** [MX Plan](/links/control-panel/web-mx-plan)
+- **Navigationspfad:** `Web Cloud`{.action} > `MX Plan`{.action} > Wählen Sie Ihren MX Plan Dienst aus
+
+**E-Mail Pro:**
+
+- **Direktlink:** [E-Mail Pro](/links/control-panel/web-email-pro)
+- **Navigationspfad:** `Web Cloud`{.action} > `E-Mail Pro`{.action} > Wählen Sie Ihre Plattform aus
+
+**Exchange:**
+
+- **Direktlink:** [Exchange](/links/control-panel/web-exchange)
+- **Navigationspfad:** `Web Cloud`{.action} > `Exchange`{.action} > Wählen Sie Ihre Plattform aus
+
+---
+<!-- CP-NAV-END:web-exchange -->
+<!-- CP-NAV-END:web-email-pro -->
+<!-- CP-NAV-END:web-mx-plan -->
 
 > [!primary]
 >
@@ -94,7 +120,7 @@ Um sich im Webmail einzuloggen, gehen Sie auf die Seite [Webmail](/links/web/ema
 >>
 > **Zimbra**: **MX Plan** / **Zimbra Starter** / **Zimbra Pro**
 >>
->> Wenn Sie im Zimbra Webmail eingeloggt sind, klicken Sie auf das Zahnrad `&#9881;` oben rechts in Ihrem Interface und dann auf `Einstellungen`{.action}. Im Tab `Allgemein`{.action} wird das verwendete Quota unter dem Vermerk "Stauraum" angezeigt.<br><br>
+>> Wenn Sie im Zimbra Webmail eingeloggt sind, klicken Sie auf das Zahnrad ( &#9881;) oben rechts in Ihrem Interface und dann auf `Einstellungen`{.action}. Im Tab `Allgemein`{.action} wird das verwendete Quota unter dem Vermerk "Stauraum" angezeigt.<br><br>
 >> ![email](images/email-quota-webmail03.png){.thumbnail}<br>
 >>
 

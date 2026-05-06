@@ -17,13 +17,23 @@ W interfejsie Horizon możesz zdefiniować hasło dla każdego użytkownika. Uwa
 ## Wymagania początkowe
 
 - Projekt [Public Cloud](/pages/public_cloud/public_cloud_cross_functional/create_a_public_cloud_project) na Twoim koncie OVHcloud
-- Dostęp do [Panelu client OVHcloud](/links/manager)
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Ścieżka nawigacji:** `Public Cloud`{.action} > Wybierz projekt
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## W praktyce
 
 ### Tworzenie użytkownika OpenStack
 
-Zaloguj się do [Panelu klienta OVHcloud](/links/manager), przejdź do sekcji `Public Cloud`{.action} i wybierz odpowiedni projekt Public Cloud. W menu po lewej stronie kliknij `Użytkownicy i role`{.action} w rubryce **Ustawienia**. 
+W menu po lewej stronie kliknij `Użytkownicy i role`{.action} w rubryce **Ustawienia**.
 
 Kliknij przycisk `Utwórz użytkownika`{.action}.
 
@@ -80,7 +90,7 @@ Pamiętaj, że zmiana hasła do konta użytkownika skutkuje natychmiastowym odwo
 
 ### Usuwanie użytkownika OpenStack
 
-Użytkownik OpenStack zostaje usunięty [Panelu client OVHcloud](/links/manager). W menu po lewej stronie kliknij `Użytkownicy i role`{.action} w rubryce **Ustawienia**. 
+W menu po lewej stronie kliknij `Użytkownicy i role`{.action} w rubryce **Ustawienia**.
 
 ![public-cloud](images/delete.png){.thumbnail}
 

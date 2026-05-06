@@ -1,6 +1,6 @@
 ---
-title: SFTP zum Übertragen von Dateien verwenden
-excerpt: Erfahren Sie hier, wie Sie mit FileZilla Dateien übertragen
+title: "Dateien per SFTP auf einen Dedicated Server übertragen"
+excerpt: "Übertragen Sie Dateien von und zu Ihrem Dedicated Server über SFTP mit FileZilla für sichere Uploads und Downloads."
 updated: 2025-02-21
 ---
 
@@ -34,6 +34,17 @@ Es gibt verschiedene Optionen zum Übertragen von Dateien zwischen einem lokalen
 - Sie haben einen [Dedicated Server](/links/bare-metal/bare-metal) oder einen [VPS](/links/bare-metal/vps) in Ihrem Kunden-Account, auf dem eine GNU/Linux Distribution installiert ist.
 - Sie haben einen FTP-Client installiert, der SFTP-Verbindungen unterstützt (zum Beispiel [FileZilla](https://filezilla-project.org/)).
 - Sie haben administrativen Zugriff über SSH auf Ihren Server.
+
+<!-- CP-NAV-START:baremetal-dedicated-servers -->
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direkter Link:** [Dedicated Server](/links/control-panel/baremetal-dedicated-servers)
+- **Navigationspfad:** `Bare Metal Cloud`{.action} > `Dedicated Server`{.action} > Wählen Sie Ihren Server aus
+
+---
+<!-- CP-NAV-END:baremetal-dedicated-servers -->
 
 ## In der praktischen Anwendung
 

@@ -1,7 +1,7 @@
 ---
-title: "Backup Agent - Diagnostic et dépannage"
+title: "Backup Agent - Guide de diagnostic et dépannage"
 excerpt: "Découvrez comment résoudre les problèmes potentiels liés à Backup Agent"
-updated: 2026-01-09
+updated: 2026-02-09
 ---
 
 <style>
@@ -55,8 +55,18 @@ Retrouvez sur cette page une liste de potentielles problématiques que vous pouv
 
 ## Prérequis
 
-- Un serveur Bare Metal sur lequel Backup Agent est installé. Consultez notre guide [Comment configurer votre première sauvegarde](/pages/storage_and_backup/backup_agent/backup_agent_first_configuration) pour plus d'informations.
+- Un serveur Bare Metal sur lequel Backup Agent est installé. Consultez notre guide « [Comment configurer votre première sauvegarde](/pages/storage_and_backup/backup_agent/backup_agent_first_configuration) » pour plus d'informations.
 
+<!-- CP-NAV-START:baremetal-backup-agent -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Backup Agent](/links/control-panel/baremetal-backup-agent)
+- **Pour accéder à vos services :** `Bare Metal Cloud`{.action} > `Backup Agent`{.action}
+
+---
+<!-- CP-NAV-END:baremetal-backup-agent -->
 
 ## Liste des possibles problématiques
 
@@ -97,7 +107,8 @@ Afin de régler ce défaut, augmentez la taille du snapshot via le fichier `/etc
 diffStorageMinimum = 2097152
 ```
 
-Remplacez la valeur en bytes par le nombre de GB voulu (GB divisé par 512, pour 3GB il faut mettre 3221225472 / 512 = 6 291 456)
+Remplacez la valeur par le nombre secteurs souhaité en convertissant d’abord la taille voulue de gigaoctets en octets, puis en divisant ce nombre d'octets par 512.<br>
+Par exemple, pour une taille de 3 Go (3 221 225 472 octets), la valeur à indiquer est 6 291 456 (3 221 225 472 / 512).
 
 Enfin, redémarrez le service veeamservice.
 
@@ -105,7 +116,47 @@ Enfin, redémarrez le service veeamservice.
 
 /// details | Je n'arrive pas à lancer une sauvegarde manuelle.
 
-[Contactez le support OVHcloud](/links/support) qui pourra investiguer. Veillez à nous fournir des logs et des captures d'écrans.
+[Contactez le support OVHcloud](/links/support-contact) qui pourra investiguer. Veillez à nous fournir des logs et des captures d'écrans.
+
+///
+
+/// details | Mon backup est en erreur, comment voir le problème ?
+
+Si votre backup est en erreur, vous pouvez diagnostiquer le problème directement depuis l'agent. Cliquez sur l'onglet correspondant à votre système d'exploitation :
+
+> [!tabs]
+> Windows
+>>
+>> Pour voir les détails d'une erreur de backup sur Windows :
+>>
+>> 1. Ouvrez l'application "Veeam Agent" sur votre serveur Bare Metal.
+>> 2. Dans l'interface principale, vous verrez l'état de vos backups.
+>> 3. Cliquez sur le backup en erreur pour voir les détails de l'erreur.
+>> 4. Consultez la section **History** ou **Last Session** pour voir les messages d'erreur détaillés.
+>>
+>> L'interface vous affichera des informations précises sur la cause de l'erreur, ce qui vous permettra d'identifier rapidement le problème.
+>
+> Linux
+>>
+>> Pour voir les détails d'une erreur de backup sur Linux, vous pouvez utiliser l'interface utilisateur :
+>>
+>> 1\. Connectez-vous à votre serveur Bare Metal en SSH.
+>> 2\. Lancez l'interface Veeam en tapant la commande suivante :
+>>
+>> ```bash
+>> sudo veeam
+>> ```
+>>
+>> 3\. Dans l'interface, naviguez vers la section des backups pour voir l'état de vos jobs.
+>> 4\. Sélectionnez le backup en erreur pour consulter les détails de l'erreur.
+>>
+>> Vous pouvez également consulter les logs directement via la ligne de commande :
+>>
+>> ```bash
+>> sudo veeamconfig session list
+>> ```
+>>
+>> Cette commande vous affichera la liste des sessions de backup avec leur statut et les détails des erreurs éventuelles.
 
 ///
 
@@ -115,17 +166,86 @@ Nous gardons vos données durant 14 jours à la suite d'une suppression d'un age
 
 ///
 
-/// details | J'ai désinstallé mon Veeam Agent, comment le réinstaller ?
+/// details | Je souhaite modifier le mot de passe d’accès à la Veeam Service Provider Console (VSPC).
 
-[Contactez le support OVHcloud](/links/support) afin que notr équipe puisse vous aider à réinstaller votre agent.
+Le changement de mot de passe s’effectue via le lien « Mot de passe oublié ? » disponible sur la console VSPC.
+
+![Reset password 1](images/reset_password_1.png){.thumbnail}
+
+![Reset password 2](images/reset_password_2.png){.thumbnail}
 
 ///
 
 /// details | J'ai réinstallé mon serveur, comment réinstaller Backup Agent ?
 
-Vous devez supprimer votre agent dans la partie Agents de votre vspc-tenant, et ensuite télécharger et installer l'agent sur votre nouveau système d'exploitation.
+Vous devez télécharger l'agent depuis la section [Backup Agent](/links/control-panel/baremetal-backup-agent) de votre espace client OVHcloud et l'installer sur votre nouveau système d'exploitation.
 
 ///
+
+## Trouver et exporter les logs
+
+Pour résoudre les problèmes avec Backup Agent, il est souvent nécessaire de consulter et d'exporter les logs du produit. Cliquez sur l'onglet correspondant à votre système d'exploitation :
+
+> [!tabs]
+> Windows
+>>
+>> **Localiser les logs**
+>>
+>> Les logs de Veeam Agent pour Windows sont stockés dans le répertoire suivant :
+>>
+>> ```
+>> C:\ProgramData\Veeam\Endpoint\Logs
+>> ```
+>>
+>> **Exporter les logs**
+>>
+>> Pour exporter les logs sur Windows, vous pouvez utiliser l'interface graphique de Veeam Agent :
+>>
+>> 1. Ouvrez l'application "Veeam Agent" sur votre serveur.
+>> 2. Allez dans le menu `Help`{.action} > `Export Logs`{.action}.
+>> 3. Sélectionnez le répertoire de destination pour l'archive des logs.
+>> 4. Cliquez sur `Export`{.action} pour générer l'archive.
+>>
+>> L'archive sera créée au format `.zip` et contiendra tous les logs et fichiers de configuration nécessaires pour le diagnostic.
+>>
+>> Pour plus d'informations, consultez l'article [Veeam KB2404](https://www.veeam.com/kb2404).
+>
+> Linux
+>>
+>> **Localiser les logs**
+>>
+>> Les logs de Veeam Agent pour Linux sont stockés dans le répertoire suivant :
+>>
+>> ```bash
+>> /var/log/veeam/
+>> ```
+>>
+>> Vous pouvez également consulter les logs du service Veeam :
+>>
+>> ```bash
+>> /var/log/veeam/veeamservice.log
+>> ```
+>>
+>> **Exporter les logs**
+>>
+>> Pour exporter les logs sur Linux, vous avez deux options :
+>>
+>> 1\. Via la ligne de commande
+>>
+>> Utilisez la commande suivante pour exporter les logs. L'archive sera sauvegardée dans le répertoire de travail actuel :
+>>
+>> ```bash
+>> sudo veeamconfig grabLogs
+>> ```
+>>
+>>
+>> 2\. Via le panneau de contrôle
+>>
+>> Si vous avez accès à une interface graphique, vous pouvez exporter les logs via le panneau de contrôle de Veeam Agent en spécifiant le répertoire de destination.
+>>
+>> L'archive sera créée au format `.tar.gz` et contiendra tous les logs et fichiers de configuration nécessaires pour le diagnostic.
+>>
+>> Pour plus d'informations, consultez la [documentation Veeam](https://helpcenter.veeam.com/docs/agentforlinux/userguide/logs_export.html?ver=13).
 
 ## Aller plus loin
 

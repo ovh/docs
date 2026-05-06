@@ -15,38 +15,43 @@ OVHcloud le ofrece la opción [DNS Anycast](/links/web/domains-options-anycast).
 
 - Tener un [dominio](/links/web/domains).
 - El dominio debe tener una extensión compatible con la opción DNS Anycast.
-- Estar conectado a su [área de cliente de OVHcloud](/links/manager), en la sección `Web Cloud`{.action}.
+
+<!-- CP-NAV-START:web-domains -->
+---
+
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [Dominios](/links/control-panel/web-domains)
+- **Ruta de navegación:** `Web Cloud`{.action} > `Dominios`{.action} > Seleccione su nombre de dominio
+
+---
+<!-- CP-NAV-END:web-domains -->
 
 ## Procedimiento
 
-Haga clic en las fichas siguientes para ver cada uno de las **5** etapas.
+<!-- CP-STEPS-START:enable-anycast -->
+Haga clic en las fichas siguientes para ver cada una de las **4** etapas.
 
 > [!tabs]
 > **Etapa 1**
 >>
->> Conéctese a su [área de cliente de OVHcloud](/links/manager) y acceda a la sección `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Etapa 2**
->>
->> Haga clic en el menú `Dominios`{.action} y seleccione el dominio correspondiente.
+>> Acceda a la página [Dominios](/links/control-panel/web-domains) y seleccione el dominio correspondiente.
 >>
 >> ![Domain Names](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
 >>
-> **Etapa 3**
+> **Etapa 2**
 >>
 >> Abra la pestaña `Servidores DNS`{.action} y seleccione el dominio correspondiente.
 >>
 >> ![DNS Servers](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-servers.png){.thumbnail}
 >>
-> **Etapa 4**
+> **Etapa 3**
 >>
 >> En la nueva página, haga clic en el botón `Contratar DNS Anycast`{.action}.
 >>
 >> ![Order Anycast DNS](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-servers/order-anycast-dns.png){.thumbnail}
 >>
-> **Etapa 5**
+> **Etapa 4**
 >>
 >> En la nueva página que aparece:
 >>
@@ -58,6 +63,7 @@ Haga clic en las fichas siguientes para ver cada uno de las **5** etapas.
 >> En el mensaje que aparece en verde, haga clic en el botón `Orden de pedido`{.action} para ser redirigido a la orden de pedido de activación de la opción DNS Anycast.
 >>
 >> Desde el momento en que realice el pedido, continúe hasta su validación utilizando una forma de pago para finalizar el registro del pedido.
+<!-- CP-STEPS-END:enable-anycast -->
 
 La activación de la opción DNS Anycast puede tardar varios minutos.
 

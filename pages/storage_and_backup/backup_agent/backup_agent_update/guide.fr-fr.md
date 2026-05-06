@@ -10,7 +10,7 @@ Cette page détaille les mises à jour périodiques de Backup Agent et leur impa
 
 ## Prérequis
 
-- Un serveur Bare Metal sur lequel Backup Agent est installé. Consultez notre guide [Comment configurer votre première sauvegarde](/pages/storage_and_backup/backup_agent/backup_agent_first_configuration) pour plus d'informations.
+- Un serveur Bare Metal sur lequel Backup Agent est installé. Consultez notre guide « [Comment configurer votre première sauvegarde](/pages/storage_and_backup/backup_agent/backup_agent_first_configuration) » pour plus d'informations.
 
 ## En pratique
 
@@ -24,7 +24,7 @@ En pratique, au moment du déclenchement de la mise à jour le jour J, votre Bac
 
 Durant cette mise à jour, les opérations de sauvegarde et de restauration seront indisponibles. De ce fait, nous appliquerons les mises à jour sur la période de la journée (fuseaux horaires CET ou EST selon votre localisation) afin d'éviter d'interférer avec vos [sauvegardes automatiques](/pages/storage_and_backup/backup_agent/backup_agent_backup_restore).
 
-Si vous avez des demandes spécifiques, n'hésitez pas à [contacter le support OVHcloud](/links/support).
+Si vous avez des demandes spécifiques, n'hésitez pas à [contacter le support OVHcloud](/links/support-contact).
 
 ## Aller plus loin
 

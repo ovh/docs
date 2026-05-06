@@ -1,6 +1,6 @@
 ---
-title: "Cómo restablecer la contraseña de administrador con Rescue-Customer-Windows"
-excerpt: "Cómo restablecer la contraseña de administrador con Rescue-Customer-Windows"
+title: "Restablecer la contraseña Windows en un servidor dedicado"
+excerpt: "Restablezca la contraseña de administrador Windows en un servidor dedicado a través del sistema rescue Windows de OVHcloud"
 updated: 2025-10-22
 ---
 
@@ -12,7 +12,17 @@ Esta guía explica cómo restaurar la contraseña de `Administrator` con **Windo
 
 - Microsoft Windows Server 2016 o superior instalado en su [servidor dedicado](/links/bare-metal/bare-metal)
 - Al menos 16 GB de RAM instalados en el servidor
-- Acceso al [área de cliente de OVHcloud](/links/manager)
+
+<!-- CP-NAV-START:baremetal-dedicated-servers -->
+---
+
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [Servidores dedicados](/links/control-panel/baremetal-dedicated-servers)
+- **Ruta de navegación:** `Bare Metal Cloud`{.action} > `Servidores dedicados`{.action} > Seleccione su servidor
+
+---
+<!-- CP-NAV-END:baremetal-dedicated-servers -->
 
 > [!warning]
 >

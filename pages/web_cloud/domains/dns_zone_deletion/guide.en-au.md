@@ -1,7 +1,7 @@
 ---
 title: "How to delete an OVHcloud DNS zone?"
 excerpt: "Find out how to delete a DNS zone for your domain name via the OVHcloud Control Panel"
-updated: 2025-10-14
+updated: 2026-03-11
 ---
 
 ## Objective
@@ -22,15 +22,25 @@ For example, you may need to delete a DNS zone for your domain name at OVHcloud 
 
 > [!primary]
 >
-> The creation/modification/deletion of a DNS zone in your [OVHcloud Control Panel](/links/manager) is free of charge.
+> The creation/modification/deletion of a DNS zone in your [OVHcloud Control Panel](/links/control-panel/web-dns-zone) is free of charge.
 
 **This guide explains how to delete an OVHcloud DNS zone for your domain name via the OVHcloud Control Panel.**
 
 ## Requirements
 
-- You have access your [OVHcloud Control Panel](/links/manager).
 - You have a DNS zone in your OVHcloud Control Panel.
 - You have sufficient rights on the DNS zone to be deleted. You can find more information in our guide “[Managing contacts for your services](/pages/account_and_service_management/account_information/managing_contacts)”.
+
+<!-- CP-NAV-START:billing-services -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [My offers and services](/links/control-panel/billing-services)
+- **Navigation path:** Click your name in the top right > `My offers and services`{.action}
+
+---
+<!-- CP-NAV-END:billing-services -->
 
 > [!primary]
 >
@@ -48,35 +58,31 @@ For example, you may need to delete a DNS zone for your domain name at OVHcloud 
 >
 > If the active DNS zone for your domain name is the one at OVHcloud, and you would like to replace it with a DNS zone hosted elsewhere, please read our guide on [Modifying the DNS servers for an OVHcloud domain name](/pages/web_cloud/domains/dns_server_edit) before deleting any DNS zones.
 
-Click on the tabs below to view each of the **4** steps.
+<!-- CP-STEPS-START:delete-dns-zone -->
+Click on the tabs below to view each of the **3** steps.
 
 > [!tabs]
 > **Step 1**
 >>
->> Log in to your [OVHcloud Control Panel](/links/manager), click on your name in the top right corner, and then click on `My offers and services`{.action}.
->>
->> ![My offers and services](/pages/assets/screens/control_panel/product-selection/right-menu/my-solutions-and-services.png){.thumbnail}
->>
-> **Step 2**
->>
->> In the table on the displayed page, click on the `...`{.action} button to the right of the DNS zone you want to cancel, then click on `Cancel my subscription`{.action}.
+>> Go to the [My offers and services](/links/control-panel/billing-services) page, then click on the `...`{.action} button to the right of the DNS zone you want to cancel, then click on `Cancel my subscription`{.action}.
 >>
 >> ![Cancel](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/dns-zone-cancel-my-subscription.png){.thumbnail}
 >>
-> **Step 3**
+> **Step 2**
 >>
 >> On the new page that appears, specify the reason for your cancellation request and your project, then click on `Confirm`{.action}.
 >>
 >> ![Cancel the service](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/dns-zone-delete-your-service.png){.thumbnail}
 >>
-> **Step 4**
+> **Step 3**
 >>
 >> The cancellation of your service will take place on the **Date of effect** indicated in the "My offers and services" table. If you do not see the "Cancellation scheduled" status appear, refresh the page.
 >>
 >> > [!primary]
 >> >
->> > If you want to immediately delete a DNS zone from your [OVHcloud Control Panel](/links/manager), complete the 4 steps to request cancellation on the date of effect, then contact OVHcloud support by creating a support ticket from the [help center](https://help.ovhcloud.com/csm?id=csm_get_help).  
+>> > If you want to immediately delete a DNS zone from your OVHcloud Control Panel, complete the 3 steps to request cancellation on the date of effect, then contact OVHcloud support by creating a support ticket from the [help center](/links/support-contact).
 >> > In the ticket, specify the concerned DNS zone and clearly state your wish to delete it immediately without waiting for the date of effect.
+<!-- CP-STEPS-END:delete-dns-zone -->
 
 ## Go further
 

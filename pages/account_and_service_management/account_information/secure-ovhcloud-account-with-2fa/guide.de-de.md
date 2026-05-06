@@ -35,11 +35,21 @@ Diese Anleitung gliedert sich folgendermaßen:
 
 ## Voraussetzungen
 
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 - Sie haben ein Mobiltelefon (für die Methode per SMS), ein Smartphone oder Tablet (für die Methode über mobile Applikation) oder einen “Universal Second Factor (U2F)” Sicherheitsschlüssel.
 - Sie haben die [Empfehlungen zur Verwaltung des Zugangspassworts für Ihren Kunden-Account](/pages/account_and_service_management/account_information/manage-ovh-password) zur Kenntnis genommen.
 
-## In der praktischen Anwendung <a name="instructions"></a>
+<!-- CP-NAV-START:account-security -->
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direkter Link:** [Sicherheit](/links/control-panel/account-security)
+- **Navigationspfad:** Klicken Sie oben rechts auf Ihren Namen > `Zu meinem Account`{.action} > `Sicherheit`{.action}
+
+---
+<!-- CP-NAV-END:account-security -->
+
+## In der praktischen Anwendung <a name=”instructions”></a>
 
 Sie können eine oder mehrere Methoden der Zwei-Faktor-Authentifizierung aktivieren, um den Zugang zu Ihrem Kundencenter abzusichern und zu steuern.
 
@@ -86,9 +96,7 @@ Wir bieten vier verschiedene Methoden an (klicken Sie jeweils auf die Tabs, um d
 
 ### Schritt 1: Aktivieren Sie Ihre erste Methode der Zwei-Faktor-Authentifizierung <a name="enabling-2fa"></a>
 
-Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein, klicken Sie oben rechts auf Ihren Namen und dann auf `Zu meinem Account`{.action}.
-
-Klicken Sie danach auf `Sicherheit`{.action}, und schließlich auf `Die Zwei-Faktor-Authentifizierung aktivieren`{.action}.
+Klicken Sie auf der Seite [Kontosicherheit](/links/control-panel/account-security) auf `Die Zwei-Faktor-Authentifizierung aktivieren`{.action}.
 
 **Klicken Sie auf den Tab für die gewünschte Methode:**
 
@@ -193,9 +201,7 @@ Wenn Ihr Peripheriegerät (Mobiltelefon/Smartphone/Sicherheitsschlüssel) verlor
 > - Gültige Notfall-Codes.
 >
 
-Um ein Gerät zu entfernen, loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein, klicken Sie oben rechts auf Ihren Namen und dann auf `Zu meinem Account`{.action}.
-
-Klicken Sie danach auf `Sicherheit`{.action}, dann auf die `...`{.action} rechts vom zu löschenden Gerät und schließlich auf `Löschen`{.action}.
+Um ein Gerät zu entfernen, gehen Sie zur Seite [Kontosicherheit](/links/control-panel/account-security) und klicken Sie auf die `...`{.action} rechts vom zu löschenden Gerät und dann auf `Löschen`{.action}.
 
 ![2FA](images/2024-006-delete-device.png){.thumbnail}
 

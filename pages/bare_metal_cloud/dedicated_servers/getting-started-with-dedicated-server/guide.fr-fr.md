@@ -1,6 +1,6 @@
 ---
 title: "Premiers pas avec un serveur dédié"
-excerpt: "Découvrez comment gérer un serveur dédié dans votre espace client OVHcloud et comment démarrer avec la configuration et la sécurisation d'un serveur"
+excerpt: "Gérez votre serveur dédié OVHcloud depuis l'espace client : installez un OS, configurez l'accès SSH et supervisez votre service"
 updated: 2025-04-29
 ---
 
@@ -14,7 +14,17 @@ Un serveur dédié est un serveur physique (« bare metal ») situé dans l’un
 
 - Disposer d'un [serveur dédié](/links/bare-metal/bare-metal) dans votre espace client OVHcloud.
 - Être connecté à votre serveur en SSH sous Linux ou via un bureau distant sous Windows.
-- Être connecté à votre [espace client OVHcloud](/links/manager).
+
+<!-- CP-NAV-START:baremetal-dedicated-servers -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Serveurs dédiés](/links/control-panel/baremetal-dedicated-servers)
+- **Pour accéder à vos services :** `Bare Metal Cloud`{.action} > `Serveurs dédiés`{.action} > Sélectionnez votre serveur
+
+---
+<!-- CP-NAV-END:baremetal-dedicated-servers -->
 
 > [!primary]
 >
@@ -232,7 +242,7 @@ Si vous utilisez un serveur Windows, rendez-vous sur [ce guide](/pages/bare_meta
 
 Vous pouvez activer ou désactiver le monitoring d'un serveur dédié à partir de l'onglet `Informations générales`{.action} de votre [espace client OVHcloud](/links/manager). L'option se situe dans la section `État des services`.
 
-![Monitoring](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/dedicated-servers/general-information/monitoring-your-server.png){.thumbnail}
+![Statut du monitoring dans la section Etat des services](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/dedicated-servers/general-information/monitoring-your-server.png){.thumbnail}
 
 Cliquez sur le bouton `Configurer`{.action}. Dans la fenêtre qui apparaît, vous avez trois options pour le comportement du monitoring :
 
@@ -240,7 +250,7 @@ Cliquez sur le bouton `Configurer`{.action}. Dans la fenêtre qui apparaît, vou
 - **Activé avec intervention proactive** : si le serveur ne répond plus, un e-mail d'alerte vous est envoyé et le serveur est vérifié par un technicien.
 - **Activé sans intervention proactive** : vous recevrez un message d'alerte par e-mail au cas où le serveur ne répondrait plus. Pour lancer une intervention, il est nécessaire d'activer l'option avec intervention proactive.
 
-![Monitoring](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/dedicated-servers/general-information/monitoring-your-server2.png){.thumbnail}
+![Popup de configuration du monitoring avec trois options](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/dedicated-servers/general-information/monitoring-your-server2.png){.thumbnail}
 
 Cliquez sur `Confirmer`{.action} pour mettre à jour votre configuration du monitoring.
 
@@ -300,8 +310,12 @@ Pour activer et utiliser l'option Backup Storage, consultez [ce guide](/pages/ba
 
 [Activer et utiliser le mode rescue](/pages/bare_metal_cloud/dedicated_servers/rescue_mode)
 
-[API OVHcloud et installation d'un OS](/pages/bare_metal_cloud/dedicated_servers/api-os-installation)
+[API OVHcloud et installation d’un OS](/pages/bare_metal_cloud/dedicated_servers/api-os-installation)
 
-Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](/links/professional-services) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
+[Finaliser une intervention de maintenance réalisée sur votre serveur dédié](/pages/bare_metal_cloud/dedicated_servers/intervention-support)
 
-Échangez avec notre [communauté d'utilisateurs](/links/community).
+[Comment assigner un tag à un serveur Bare Metal](/pages/bare_metal_cloud/dedicated_servers/resource-tag-assign)
+
+Si vous avez besoin d’une formation ou d’une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](/links/professional-services) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
+
+Échangez avec notre [communauté d’utilisateurs](/links/community).

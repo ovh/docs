@@ -19,6 +19,17 @@ To use IAM, you must enable the feature in order to delegate rights management w
 - Guide 2: [IAM for VMware on OVHcloud - How to enable IAM](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_iam_activation)
 - Guide 3: [IAM for VMware on OVHcloud - How to create an IAM vSphere role](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_iam_role)
 
+<!-- CP-NAV-START:privatecloud-vmware-vsphere -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [VMware vSphere](/links/control-panel/privatecloud-vmware-vsphere)
+- **Navigation path:** `Hosted Private Cloud`{.action} > `Managed VMware vSphere`{.action} > Select your vSphere service
+
+---
+<!-- CP-NAV-END:privatecloud-vmware-vsphere -->
+
 ## Instructions
 
 To log in to the managed vSphere Web interface, you need OVHcloud login credentials. It can be either a vSphere user (with a local user), or a vSphere rôle (with IAM).
@@ -29,9 +40,7 @@ To log in to the managed vSphere Web interface, you need OVHcloud login credenti
 
 You can manage your login credentials via the OVHcloud Control Panel for your VMware product managed on OVHcloud.
 
-Log in to the [OVHcloud Control Panel](/links/manager) and click the `Hosted Private Cloud`{.action} tab.
-
-Click on the `Managed VMware vSphere`{.action} section, select your infrastructure, then go to the `Users`{.action} tab.
+From your vSphere service, go to the `Users`{.action} tab.
 
 ![Logging in to the vSphere HTML5 interface](images/managed_vsphere_all.png){.thumbnail}
 

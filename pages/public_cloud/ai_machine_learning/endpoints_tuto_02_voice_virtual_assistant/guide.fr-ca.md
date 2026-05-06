@@ -1,7 +1,7 @@
 ---
 title: AI Endpoints - Développer son assistant audio (EN)
 excerpt: "Créez un chatbot vocal en utilisant des APIs d'ASR, de LLM et de TTS en moins de 100 lignes de code"
-updated: 2025-12-19
+updated: 2026-04-15
 ---
 
 > [!primary]
@@ -11,7 +11,7 @@ updated: 2025-12-19
 
 ## Introduction
 
-Imagine having a virtual assistant that listens to your voice, understands your questions, and responds with spoken answers, in under 100 lines of code. Thanks to [AI Endpoints](https://endpoints.ai.cloud.ovh.net/), this is now easily achievable.
+Imagine having a virtual assistant that listens to your voice, understands your questions, and responds with spoken answers, in under 100 lines of code. Thanks to [AI Endpoints](/links/public-cloud/ai-endpoints), this is now easily achievable.
 
 ## Objective
 
@@ -51,7 +51,7 @@ OVH_AI_ENDPOINTS_ACCESS_TOKEN=<ai-endpoints-api-token>
 
 **Make sure to replace the token value (`OVH_AI_ENDPOINTS_ACCESS_TOKEN`) by yours.** If you do not have one yet, follow the instructions in the [AI Endpoints - Getting Started](/pages/public_cloud/ai_machine_learning/endpoints_guide_01_getting_started) guide.
 
-In this tutorial, we will be using the `Whisper-Large-V3` and `Mixtral-8x7b-Instruct-V01` models. Feel free to choose alternative models available on the [AI Endpoints catalog](https://catalog.endpoints.ai.ovh.net/).
+In this tutorial, we will be using the `Whisper-Large-V3` and `gpt-oss-120b` models. Feel free to choose alternative models available on the [AI Endpoints catalog](https://catalog.endpoints.ai.ovh.net/).
 
 Then, create a `requirements.txt` file with the following libraries:
 
@@ -142,7 +142,7 @@ Now, create a function that calls the LLM client to provide responses to questio
 ```python
 def llm_answer(input, oai_client):
     response = oai_client.chat.completions.create(
-                model="Mixtral-8x7B-Instruct-v0.1", 
+                model="gpt-oss-120b", 
                 messages=input,
                 temperature=0,
                 max_tokens=1024,
@@ -155,7 +155,7 @@ def llm_answer(input, oai_client):
 **In this function:**
 
 - The conversation/messages are retrieved as parameters.
-- A call is made to the chat completion LLM endpoint, using the `Mixtral8x7B` model.
+- A call is made to the chat completion LLM endpoint, using the `gpt-oss-120b` model.
 - The model's response is extracted and the final message text is returned.
 
 ⏳ Almost there! All that remains is to implement the TTS to transform the LLM response into spoken words.

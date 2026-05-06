@@ -12,8 +12,18 @@ Se à sua oferta de Hosted Private Cloud já não lhe convier, ou se encomendou 
 
 ## Requisitos
 
-- Estar ligado à [Área de Cliente OVHcloud](/links/manager) e aceder à secção `Hosted Private Cloud`{.action} e, depois, `Private Cloud`{.action}.
-- Ter um produto [Hosted Private Cloud](https://www.ovhcloud.com/pt/enterprise/products/hosted-private-cloud/).
+- Um produto [Hosted Private Cloud](https://www.ovhcloud.com/pt/enterprise/products/hosted-private-cloud/)
+
+<!-- CP-NAV-START:privatecloud-vmware-vsphere -->
+---
+
+### Acesso à Área de Cliente OVHcloud
+
+- **Ligação direta:** [VMware vSphere](/links/control-panel/privatecloud-vmware-vsphere)
+- **Caminho de navegação:** `Hosted Private Cloud`{.action} > `Managed VMware vSphere`{.action} > Selecione o seu serviço vSphere
+
+---
+<!-- CP-NAV-END:privatecloud-vmware-vsphere -->
 
 ## Instruções
 
@@ -25,8 +35,6 @@ A oferta Hosted Private Cloud não tem compromisso. No entanto, tal como indicad
 >
 
 ### 1 - Solicitar a rescisão através da Área de Cliente OVHcloud
-
-Aceda à [Área de Cliente OVHcloud](/links/manager), dirija-se à secção `Hosted Private Cloud`{.action} (1), clique em `Private Cloud`{.action} (2) e selecione à sua oferta na lista (3).
 
 Na tabela «Gestão do serviço» do separador «Informações gerais», clique no botão `...`{.action} (4) à direita da data de renovação. Clique em `Eliminar o serviço`{.action} (5).
 

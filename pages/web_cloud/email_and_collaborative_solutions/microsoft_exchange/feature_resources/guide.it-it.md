@@ -13,16 +13,20 @@ Questa funzione collaborativa di Exchange permette di creare indirizzi di posta 
 ## Prerequisiti
 
 - Disporre di una [soluzione Exchange OVHcloud](/links/web/emails-hosted-exchange) già configurata
-- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
 - Disporre delle credenziali di accesso per gli account di posta che hanno accesso alla risorsa
 
-## Procedura
+<!-- CP-NAV-START:web-exchange -->
+---
 
-1. Accedi allo [Spazio Cliente OVHcloud](/links/manager).
-1. Accedi alla sezione `Web Cloud`{.action}.
-1. Nella sezione `MICROSOFT`, clicca su `Exchange`{.action}.
-1. Seleziona la piattaforma interessata.
-1. Seleziona il servizio Exchange interessato. Clicca sulla scheda `Altre opzioni +`{.action} e poi su `Risorse`{.action}.
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [Exchange](/links/control-panel/web-exchange)
+- **Percorso di navigazione:** `Web Cloud`{.action} > `Exchange`{.action} > Seleziona la tua piattaforma
+
+---
+<!-- CP-NAV-END:web-exchange -->
+
+## Procedura
 
 ### Step 1: creare una risorsa
 
@@ -52,7 +56,7 @@ Le risorse possono essere gestite dalla tabella della scheda "Risorse". Clicca s
 
 > [!primary]
 >
-Consulta anche la nostra guida sulla [condivisione di calendari dall'interfaccia OWA](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/owa_calendar_sharing).
+> Consulta anche la nostra guida sulla [condivisione di calendari dall'interfaccia OWA](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/owa_calendar_sharing).
 >
 
 Accedi al tuo account Exchange tramite la [Webmail OVHcloud](/links/web/email). Clicca sul pulsante "Avanti" in alto a sinistra e seleziona l'icona `Calendario`{.action}.
@@ -115,7 +119,7 @@ Dopo aver creato l'evento (cliccando su `Invia`{.action} nella barra del menu su
 
 ![messaggio di rifiuto](images/exchange-resources-step8.png){.thumbnail}
 
-## Per saperne di più
+## Per saperne di più <a name="go-further"></a>
 
 [Consulta il tuo account Exchange dall'interfaccia OWA](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa)
 

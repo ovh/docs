@@ -1,6 +1,6 @@
 ---
-title: "How to get started with a Kimsufi, So You Start or Rise dedicated server"
-excerpt: "Find out how to manage a Kimsufi, So You Start or Rise in the OVHcloud Control Panel and how to start with configuring and securing a server"
+title: "Get Started with a Kimsufi, So You Start or Rise Server"
+excerpt: "Manage your Kimsufi, So You Start, or Rise server from the OVHcloud Control Panel: install an OS, set up SSH, and secure your service."
 updated: 2025-04-29
 ---
 
@@ -12,9 +12,19 @@ A dedicated server is a physical server ("bare metal") located in one of our dat
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](/links/manager)
 - A [dedicated server](/links/bare-metal/bare-metal) of the ranges Kimsufi, So You Start or Rise in your OVHcloud account
 - Administrative access via SSH or remote desktop (Windows) to your server
+
+<!-- CP-NAV-START:baremetal-dedicated-servers -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Dedicated Servers](/links/control-panel/baremetal-dedicated-servers)
+- **Navigation path:** `Bare Metal Cloud`{.action} > `Dedicated servers`{.action} > Select your server
+
+---
+<!-- CP-NAV-END:baremetal-dedicated-servers -->
 
 ## Instructions
 
@@ -34,6 +44,7 @@ A dedicated server is a physical server ("bare metal") located in one of our dat
 
 ### Installing or reinstalling an operating system
 
+<!-- CP-STEPS-START:reinstall-os -->
 > [!success]
 >
 > Find more information about server operating systems on [our web page](/links/bare-metal/os).
@@ -79,6 +90,7 @@ To find out more about this topic, consult our guides:
 - [How to create and use keys for SSH authentication with PuTTY](/pages/web_cloud/web_hosting/ssh_using_putty_on_windows)
 
 Finally, click `Confirm`{.action} to trigger the operating system installation on your dedicated server.
+<!-- CP-STEPS-END:reinstall-os -->
 
 <a name="connect"></a>
 
@@ -173,17 +185,17 @@ To activate them, follow the steps below by navigating through the tabs:
 > 2. **Open the "Run" utility**
 >>
 >> Open the Windows start menu and click on `Run`{.action}.<br><br>
->>![IPMI](/pages/assets/screens/other/windows/windows_start_run.png){.thumbnail}<br>
+>>![Windows Start menu with Run option highlighted](/pages/assets/screens/other/windows/windows_start_run.png){.thumbnail}<br>
 >>
 > 3. **Open "msconfig"**
 >>
 >> Enter "msconfig" and click on `OK`{.action}.<br><br>
->>![IPMI](/pages/assets/screens/other/windows/windows_msconfig.png){.thumbnail}<br>
+>>![Run dialog with msconfig command entered](/pages/assets/screens/other/windows/windows_msconfig.png){.thumbnail}<br>
 >>
 > 4. **Activate logs**
 >>
 >> In the new window, activate the logs option next to `Boot log`. Click on `OK`{.action}.<br><br>
->>![IPMI](/pages/assets/screens/other/windows/windows_log.png){.thumbnail}<br>
+>>![System Configuration window with Boot log option enabled](/pages/assets/screens/other/windows/windows_log.png){.thumbnail}<br>
 >>
 
 The next time your server boots, logs will be saved into a `.txt` file. The file path is: `C:\Windows\ntbtlog.txt`.
@@ -201,9 +213,11 @@ A reboot might become necessary in order to apply updated configurations or to f
 reboot
 ```
 
+<!-- CP-STEPS-START:hard-reboot -->
 However, you can carry out a "hard reboot" at any time in your [OVHcloud Control Panel](/links/manager). From the `General information`{.action} tab, click on `...`{.action} next to "Status" in the **Service status** box, then click `Restart`{.action} and `Confirm`{.action} the action in the popup window.
 
 ![Rebooting](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/dedicated-servers/general-information/rebooting-your-server.png){.thumbnail}
+<!-- CP-STEPS-END:hard-reboot -->
 
 <a name="secure"></a>
 
@@ -217,9 +231,10 @@ If your server runs Windows, use [this guide](/pages/bare_metal_cloud/dedicated_
 
 ### OVHcloud Monitoring
 
+<!-- CP-STEPS-START:configure-monitoring -->
 You can set the monitoring status for a dedicated server from the `General information`{.action} tab in your [OVHcloud Control Panel](/links/manager) (section **Service status**).
 
-![Monitoring](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/dedicated-servers/general-information/monitoring-your-server.png){.thumbnail}
+![Monitoring status in the Service status section](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/dedicated-servers/general-information/monitoring-your-server.png){.thumbnail}
 
 Click on the button `Configure`{.action}. In the popup window, you have three options for the monitoring behaviour:
 
@@ -227,9 +242,10 @@ Click on the button `Configure`{.action}. In the popup window, you have three op
 - **Enabled with proactive intervention**: If the server stops responding, an alert email is sent to you and the server will be checked by a technician.
 - **Enabled without proactive intervention**: You will receive an alert message by email in case the server stops responding. To initiate an intervention, you will need to create a support request.
 
-![Monitoring](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/dedicated-servers/general-information/monitoring-your-server2.png){.thumbnail}
+![Monitoring configuration popup with three options](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/dedicated-servers/general-information/monitoring-your-server2.png){.thumbnail}
 
 Click on `Confirm`{.action} to update your monitoring configuration.
+<!-- CP-STEPS-END:configure-monitoring -->
 
 You can find more information about OVHcloud Monitoring in [this guide](/pages/bare_metal_cloud/dedicated_servers/network_ip_monitoring).
 
@@ -303,6 +319,8 @@ To activate and use the backup storage, please refer to [this guide](/pages/bare
 [Activating and using rescue mode](/pages/bare_metal_cloud/dedicated_servers/rescue_mode)
 
 [OVHcloud API & OS installation](/pages/bare_metal_cloud/dedicated_servers/api-os-installation)
+
+[OVHcloud Control Panel for Kimsufi & So you Start Servers](/pages/bare_metal_cloud/dedicated_servers/getting-familiar-with-ovhcloud-control-panel)
 
 If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for a custom analysis of your project.
 

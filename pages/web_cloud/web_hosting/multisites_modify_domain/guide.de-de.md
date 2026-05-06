@@ -17,10 +17,20 @@ Bei der Verwendung Ihres Webhostings oder zur Aktualisierung Ihrer Website könn
 
 ## Voraussetzungen
 
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 - Sie verfügen über ein [OVHcloud Webhosting](/links/web/hosting).
 - Sie verwalten einen oder mehrere [Domainnamen](/links/web/domains).
-- Sie verfügen über die erforderlichen Berechtigungen für alle betroffenen Dienste. Weitere Informationen finden Sie in unserer Anleitung „[Die Kontakte Ihrer Dienste verwalten](/pages/account_and_service_management/account_information/managing_contacts)“.
+- Sie verfügen über die erforderlichen Berechtigungen für alle betroffenen Dienste. Weitere Informationen finden Sie in unserer Anleitung "[Die Kontakte Ihrer Dienste verwalten](/pages/account_and_service_management/account_information/managing_contacts)".
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direkter Link:** [Webhosting](/links/control-panel/web-hosting)
+- **Navigationspfad:** `Web Cloud`{.action} > `Hosting-Pakete`{.action} > Wählen Sie Ihr Webhosting aus
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## In der praktischen Anwendung
 

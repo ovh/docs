@@ -14,7 +14,17 @@ Vous pouvez utiliser l'authentification **SSO** (*Single Sign-On*) pour vous con
 
 - Les services AD FS (Active Directory Federation Services) doivent s'exécuter sur votre serveur
 - Disposer d'un [compte OVHcloud](/pages/account_and_service_management/account_information/ovhcloud-account-creation)
-- Être connecté à votre [espace client OVHcloud](/links/manager)
+
+<!-- CP-NAV-START:iam-saml-sso -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [SSO SAML](/links/control-panel/iam-saml-sso)
+- **Pour y accéder :** `Identité, Sécurité & Opérations`{.action} > `Utilisateurs`{.action} > `Connexion SSO`{.action}
+
+---
+<!-- CP-NAV-END:iam-saml-sso -->
 
 ## En pratique
 
@@ -121,25 +131,19 @@ Une fois le tableau de correspondances terminé, votre service AD FS fait désor
 
 L'ajout de votre AD FS en tant que fournisseur d'identité de confiance s'effectue dans [l'espace client OVHcloud](/links/manager) où vous pouvez fournir les métadonnées du fournisseur d'identité.
 
-Dans la barre latérale, cliquez sur `Identité, Sécurité & Opérations`{.action} puis sur `Identités`{.action}.
+Ouvrez la page [SAML SSO](/links/control-panel/iam-saml-sso).
 
-![Accès au menu IAM](images/access_to_the_IAM_menu_01.png){.thumbnail}
-
-Cliquez ensuite sur l'onglet `SSO`{.action} et sur le bouton `Connexion SSO`{.action}.
-
-![Accès au menu IAM](images/access_to_the_IAM_menu_03.png){.thumbnail}
-
-Renseignez les métadonnées XML de votre service AD FS. Le champ `Nom d'attribut de groupe` est facultatif dans ce cas. Cliquez sur `Confirmer`{.action}.
+Dans la section `Connexion SSO`{.action}, renseignez les métadonnées XML de votre service AD FS. Le champ `Nom d’attribut de groupe` est facultatif dans ce cas. Cliquez sur `Confirmer`{.action}.
 
 Il est possible de conserver les utilisateurs locaux en cochant la case `Conserver les utilisateurs OVHcloud actifs`.
 
 ![OVHcloud connexion SSO étape 2](images/ovhcloud_user_management_connect_sso_2.png){.thumbnail}
 
-Vous devez maintenant retrouver votre AD FS en tant que fournisseur d'identité, ainsi que les groupes par défaut.
+Vous devez maintenant retrouver votre AD FS en tant que fournisseur d’identité, ainsi que les groupes par défaut.
 
 ![OVHcloud connexion SSO étape 3](images/ovhcloud_user_management_connect_sso_3.png){.thumbnail}
 
-Pour plus d'informations, cliquez sur le lien situé sous l'`URL du service SSO`.
+Pour plus d’informations, cliquez sur le lien situé sous l’`URL du service SSO`.
 
 ![OVHcloud connexion SSO étape 4](images/ovhcloud_user_management_connect_sso_4.png){.thumbnail}
 
@@ -149,7 +153,7 @@ Le bouton `...`{.action} permet de mettre à jour ou de supprimer le SSO, et d�
 
 ![OVHcloud connexion SSO étape 6](images/ovhcloud_user_management_connect_sso_6.png){.thumbnail}
 
-Votre AD FS est maintenant considéré comme fournisseur d'identité de confiance. Cependant, vous devez tout de même ajouter des groupes à votre compte OVHcloud.
+Votre AD FS est maintenant considéré comme fournisseur d’identité de confiance. Cependant, vous devez tout de même ajouter des groupes à votre compte OVHcloud.
 
 > [!warning]
 > Si vous essayez à ce stade de vous connecter via SSO, un message d'erreur `Not in valid groups` s'affichera probablement.

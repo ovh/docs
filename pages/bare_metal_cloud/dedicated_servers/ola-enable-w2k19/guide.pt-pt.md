@@ -1,42 +1,55 @@
 ---
-title: 'Como configurar a NIC para o OVHcloud Link Aggregation em Windows Server 2019'
-excerpt: 'Ative o OVHcloud Link Aggregation no seu servidor Windows Server 2019'
-updated: 2021-03-25
+title: "Configurar OVHcloud Link Aggregation num servidor dedicado (Windows)"
+excerpt: "Ative o OVHcloud Link Aggregation no seu servidor dedicado Windows Server 2019."
+updated: 2026-04-20
 ---
 
-## Sumário
+## Objetivo
 
-A tecnologia OVHcloud Link Aggregation (OLA) foi criada pelas nossas equipas para aumentar a disponibilidade do seu servidor e aumentar a eficiência das suas ligações de rede. Em apenas alguns cliques, pode agregar as suas placas de rede e tornar as suas ligações de rede redundantes. Isto significa que se uma ligação for interrompida, o tráfego é automaticamente redirecionado para outra ligação disponível.
+A tecnologia OVHcloud Link Aggregation (OLA) foi criada pelas nossas equipas para aumentar a disponibilidade do seu servidor e melhorar a eficiência das suas ligações de rede. Em apenas alguns cliques, pode agregar as suas placas de rede e tornar as suas ligações de rede redundantes. Isto significa que se uma ligação for interrompida, o tráfego é automaticamente redirecionado para outra ligação disponível. A largura de banda disponível é também duplicada graças à agregação.
+A agregação baseia-se na tecnologia IEEE 802.3ad, Link Aggregation Control Protocol (LACP).
+
+**Este guia explica como configurar o NIC Teaming para OLA em Windows Server 2019.**
 
 ## Requisitos
 
-- [Como configurar a NIC para o OVHcloud Link Aggregation na Área de Cliente OVHcloud](/pages/bare_metal_cloud/dedicated_servers/ola-enable-manager)
-- Ter acesso à [Área de Cliente OVHcloud](/links/manager).
+- [Configurar o OVHcloud Link Aggregation na Área de Cliente OVHcloud](/pages/bare_metal_cloud/dedicated_servers/ola-enable-manager)
+
+<!-- CP-NAV-START:baremetal-dedicated-servers -->
+---
+
+### Acesso à Área de Cliente OVHcloud
+
+- **Ligação direta:** [Servidores dedicados](/links/control-panel/baremetal-dedicated-servers)
+- **Caminho de navegação:** `Bare Metal Cloud`{.action} > `Servidores dedicados`{.action} > Selecione o seu servidor
+
+---
+<!-- CP-NAV-END:baremetal-dedicated-servers -->
 
 ## Instruções
 
 A configuração private-private disponível no OLA para as nossas NIC não permite aceder ao servidor em SSH. Para aceder ao servidor, é necessário utilizar a ferramenta IPMI.
-<br>Para o fazer, aceda à [Área de Cliente OVHcloud](/links/manager). Na secção `Bare Metal Cloud`{.action}, selecione o seu servidor em `Servidores dedicados`{.action} e clique no separador `IPMI`{.action} (1).
+<br>Para tal, clique no separador `IPMI`{.action} (1).
 
-Em seguida, clique no botão `A partir de applet java (KVM)`{.action} (2).
+Em seguida, clique no botão `A partir de applet Java (KVM)`{.action} (2).
 
-![remote_kvm](images/remote_kvm2022.png){.thumbnail}
+![remote kvm](images/remote_kvm2022.png){.thumbnail}
 
-Um programa JNLP será descarregado: Abra-o  e introduza as credenciais associadas ao servidor.
+Um programa JNLP será descarregado. Abra-o e introduza as credenciais associadas ao servidor.
 
 Uma vez efetuado o login, abra o Server Manager (se não abriu por predefinição, está disponível no menu Start).
 
 ![server manager](images/local_server.png){.thumbnail}
 
-A seguir, clique no separador **Local Server** à esquerda e, a seguir, em **Disabled** junto de “NIC Teaming”.
+A seguir, clique no separador **Local Server** à esquerda e, a seguir, em **Disabled** junto de "NIC Teaming".
 
 ![local server](images/server_manager.png){.thumbnail}
 
-Na nova janela, clique em “**TASKS** na secção “TEAMS” e selecione “New Team” no menu pendente.
+Na nova janela, clique em **TASKS** na secção "TEAMS" e selecione **New Team** no menu pendente.
 
 ![nic teaming](images/nic_teaming.png){.thumbnail}
 
-Dê um nome à equipa e verifique as NIC a utilizar com o OLA. Clique na seta descendente junto de “Additional properties” e modifique o “Teaming mode” em LACP. Clique em **OK** depois de confirmar que a informação está correta.
+Dê um nome à equipa e verifique as NIC a utilizar com o OLA. Clique na seta descendente junto de "Additional properties" e modifique o "Teaming mode" em LACP. Clique em **OK** depois de confirmar que a informação está correta.
 
 ![new team](images/new_team.png){.thumbnail}
 
@@ -56,18 +69,20 @@ Na nova janela, clique duas vezes em **Internet Protocol Version 4 (TCP/IPv4)**.
 
 ![ipv4](images/ipv4.png){.thumbnail}
 
-Clique em “Use the following IP address” e adicione o IP privado e a subrede. Clique em **OK** depois de confirmar que as configurações estão corretas.
+Clique em "Use the following IP address" e adicione o IP privado e a subrede. Clique em **OK** depois de confirmar que as configurações estão corretas.
 
 ![ipv42](images/ipv42.png){.thumbnail}
 
 Para testar se a equipa NIC está a funcionar, faça um teste de ping noutro servidor da mesma rede vRack.  Se funcionar, está tudo pronto. Caso contrário, volte a verificar as suas configurações ou tente reiniciar o servidor.
 
-## Quer saber mais?
+## Saiba mais
 
-[Como configurar a NIC para o OVHcloud Link Aggregation na Área de Cliente OVHcloud](/pages/bare_metal_cloud/dedicated_servers/ola-enable-manager)
+[Configurar o OVHcloud Link Aggregation na Área de Cliente OVHcloud](/pages/bare_metal_cloud/dedicated_servers/ola-enable-manager)
 
-[Como configurar a NIC para o OVHcloud Link Aggregation em Debian 9](/pages/bare_metal_cloud/dedicated_servers/ola-enable-debian9)
+[Como configurar a NIC para o OVHcloud Link Aggregation em Debian 12 ou Ubuntu 24.04 com Netplan](/pages/bare_metal_cloud/dedicated_servers/lacp-enable-netplan)
 
-[Como configurar a NIC para o OVHcloud Link Aggregation em  SLES 15](/pages/bare_metal_cloud/dedicated_servers/ola-enable-sles15)
+[Como configurar a NIC para o OVHcloud Link Aggregation em Debian 9 a 11](/pages/bare_metal_cloud/dedicated_servers/ola-enable-debian9)
+
+[Como configurar a NIC para o OVHcloud Link Aggregation em SLES 15](/pages/bare_metal_cloud/dedicated_servers/ola-enable-sles15)
 
 Fale com nossa [comunidade de utilizadores](/links/community).

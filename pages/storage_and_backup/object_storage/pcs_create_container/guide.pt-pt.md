@@ -1,123 +1,126 @@
 ---
-title: Object Storage Swift - Criação de container Object Storage
-excerpt: Saiba como criar os seus containers Object Storage a partir da Área de Cliente OVHcloud
+title: Object Storage Swift - Creating an Object Storage container
+excerpt: Find out how to create your Object Storage containers in the OVHcloud Control Panel
 updated: 2021-10-27
 ---
 
-> [!primary]
-> Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
->
+## Objective
 
-## Objetivo
+The Object Storage solution for Public Cloud offers an unlimited storage solution with simple billing tailored to your needs. There are many types of object containers:
 
-A oferta Object Storage para o Public Cloud oferece uma solução de armazenamento ilimitada com uma faturação simples e adaptada às suas necessidades. Existem vários tipos de containers de objetos:
+- For static hosting (static website).
+- For private hosting (e.g. storage of personal data).
+- For public hosting (to store everything that is accessible to the public).
+- For cold storage (archiving).
 
-- alojamento estático (website estático);
-- para alojamento privado (exemplo: armazenamento de dados pessoais);
-- alojamento público (para armazenar tudo o que é acessível ao público);
-- para armazenamento a frio (arquivo).
+The first step is to create a container that will hold your files.
 
-O primeiro passo é a criação de um container que irá agrupar os seus ficheiros.
+**This guide explains how to create it from the OVHcloud Control Panel and from the Openstack Horizon interface.**
 
-**Este guia explica como criar o serviço a partir da Área de Cliente OVHcloud e da interface Horizon Openstack.**
+## Requirements
 
-## Requisitos
+If you use Horizon :
 
-- Estar ligado à [Área de Cliente OVHcloud](/links/manager).
+- An [OpenStack user](/pages/public_cloud/public_cloud_cross_functional/create_and_delete_a_user)
 
-Se utilizar o Horizon:
+<!-- CP-NAV-START:publiccloud-projects -->
+---
 
-- Ter criado um [utilizador OpenStack](/pages/public_cloud/public_cloud_cross_functional/create_and_delete_a_user).
+### OVHcloud Control Panel Access
 
-## Instruções
+- **Direct link:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Navigation path:** `Public Cloud`{.action} > Select your project
 
-### Criação de um container Object Storage a partir da Área de Cliente OVHcloud <a name="controlpanel"></a>
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
-Ligue-se à sua [Área de Cliente](/links/manager), aceda à secção `Public Cloud`{.action} e selecione o projeto Public Cloud em causa. A seguir, clique em `Object Storage`{.action} na barra de navegação à esquerda, na secção `Storage`.
+## Instructions
 
-A seguir, clique em `Criar um container de objetos`{.action}.
+### Creating an Object Storage container from the OVHcloud Control Panel <a name="controlpanel"></a>
 
-Se se tratar do seu primeiro container:
+Click on `Object Storage`{.action} in the left-hand navigation bar under "Storage". Then click `Create an object container`{.action}.
+
+If this is your first container:
 
 ![pcs dashboard](images/create-container-20211005102334181.png)
 
-Se já criou um(s) container(s):
+If this is not your first container:
 
 ![pcs dashboard](images/create-container-20211005115040834.png)
 
-Selecione a sua solução e clique em `Seguinte`{.action}:
+Select your solution and click on `Next`{.action}.
 
-![select your solução](images/create-container-20211005110710249.png)
+![select your solution](images/create-container-20211005110710249.png)
 
-Selecione a região do seu container e clique em `Seguinte`{.action}:
+Select the region of your container, then click `Next`{.action}:
 
 ![select a region](images/create-container-20211005110859551.png)
 
-Selecione o tipo de container e clique em `Seguinte`{.action}:
+Select the container type, then click `Next`{.action}:
 
 ![select a type of container](images/create-container-20211005111542718.png)
 
-Dê um nome ao seu container e clique em `Adicionar o container`{.action}:
+Name your container, then click `Create the container`{.action}:
 
 > [!warning]
 >
-> Se deseja associar o seu container a um nome de domínio, o nome do seu container de dados não deve conter os seguintes caracteres:
+> If you want to link your container to a domain name, your container name must not contain the following characters:
 >
 > - [ . ]  
 > - [ _ ]  
-> - e não deve utilizar maiúsculas.  
->
-> Para mais informações, consulte o nosso guia "[Associar um container a um nome de domínio](/pages/storage_and_backup/object_storage/pcs_link_domain) (EN)".
+> - And you must not use capital letters.  
+>  
+> See: [Linking a container to a domain name](/pages/storage_and_backup/object_storage/pcs_link_domain)
 >
 
 ![container name](images/create-container-20211005111805966.png)
 
-O seu container é criado:
+Your container is now created:
 
 ![container created](images/create-container-20211005112013807.png)
 
-### Criação de um container Object Storage a partir do Horizon <a name="horizon"></a>
+### Creating an Object Storage container from Horizon <a name="horizon"></a>
 
 > [!primary]
 >
-> Não é possível criar um container Public Cloud Archive a partir do Horizon
+> It is not possible to create a Public Cloud Archive container from Horizon.
 >
 
-Ligue-se ao seu [espaço Horizon](https://horizon.cloud.ovh.net):
+Log in to [Horizon](https://horizon.cloud.ovh.net) :
 
-![horizonte login](images/create-container-20211005155245752.png)
+![horizon login](images/create-container-20211005155245752.png)
 
-Desenvolva o menu `Object Store`{.action}, clique em `Containers`{.action} e depois em `+ Container`{.action}
+1. Expand the `Object Store`{.action} menu, click `Containers`{.action} then click `+ Container`{.action}.
 
 ![Horizon containers](images/create-container-20211005155704887.png)
 
-Dê um nome ao seu container.
+Name your container.
 
 > [!warning]
 >
-> Se deseja associar o seu container a um nome de domínio, o nome do seu container de dados não deve conter os seguintes caracteres:
+> If you want to link your container to a domain name, your container name must not contain the following characters:
 >
 > - [ . ]  
 > - [ _ ]  
-> - E não devem usar maiúsculas.  
->
-> Para mais informações, consulte o nosso guia "[Associar um container a um nome de domínio](/pages/storage_and_backup/object_storage/pcs_link_domain) (EN)".
+> - And you must not use capital letters.  
+>  
+> See: [Linking a container to a domain name](/pages/storage_and_backup/object_storage/pcs_link_domain)
 >
 
-Selecione a política de acesso do seu container e clique em `Next`{.action}
+Select the access policy for your container then click `Next`{.action}.
 
 ![horizon create container](images/create-container-20211005155824902.png)
 
-O seu container foi criado.
+Your container is now created:
 
 ![horizon container created](images/create-container-20211005155936971.png)
 
-Também pode vê-lo na Área de Cliente OVHcloud:
+You can also see it in your OVHcloud Control Panel.
 
 ![pcs dashboard](images/create-container-20211005160503200.png)
 
-## Saiba mais
+## Go further
 
-Se precisar de formação ou de assistência técnica para implementar as nossas soluções, contacte o seu representante comercial ou clique em [esta ligação](/links/professional-services) para obter um orçamento e solicitar uma análise personalizada do seu projecto aos nossos especialistas da equipa de Serviços Profissionais.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
 
-Fale com a nossa comunidade de utilizadores: [https://community.ovh.com](https://community.ovh.com/en/).
+Join our [community of users](/links/community).

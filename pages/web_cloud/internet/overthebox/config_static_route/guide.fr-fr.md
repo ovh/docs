@@ -17,7 +17,7 @@ Découvrez comment ajouter une route statique sur votre équipement OverTheBox, 
 
 ### Étape 1 : préparation
 
-Dans notre cas, notre OverTheBox possède trois interfaces WAN:
+Dans notre cas, notre OverTheBox possède trois interfaces WAN :
 
 - Une interface **LTE** avec comme IP de gateway `10.212.0.0`.
 - Une interface **FTTH** avec comme IP de gateway `192.168.3.1`.

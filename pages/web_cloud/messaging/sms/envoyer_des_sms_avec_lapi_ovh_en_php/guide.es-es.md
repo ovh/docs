@@ -1,6 +1,6 @@
 ---
 title: 'Enviar SMS con PHP usando la API de OVHcloud'
-excerpt: 'Cómo enviar SMS con PHP usando la API RESTful de OVHcloud'
+excerpt: 'Descubra cómo configurar un entorno de desarrollo PHP y enviar su primer SMS paso a paso utilizando la API RESTful de OVHcloud'
 updated: 2020-06-25
 ---
 
@@ -34,7 +34,7 @@ Descargue en su proyecto el directorio **./vendor/ovh/ovh/** y el archivo **auto
 Para utilizar el servicio de SMS con la API, es necesario disponer de unas claves. Dichas claves se generan una sola vez para identificar la aplicación que enviará SMS. Es posible configurar su validez.
 
 Genere las claves para su script (se crean todas a la vez) desde esta página:
-[https://api.ovh.com/createToken](https://eu.api.ovh.com/createToken/index.cgi?GET=/sms&GET=/sms/*/jobs/&POST=/sms/*/jobs/) (si accede desde este enlace, tendrá automáticamente los permisos necesarios para seguir los pasos que se explican en esta guía).
+[https://auth.eu.ovhcloud.com/api/createToken](https://auth.eu.ovhcloud.com/api/createToken?GET=/sms&GET=/sms/*/jobs/&POST=/sms/*/jobs/) (si accede desde este enlace, tendrá automáticamente los permisos necesarios para seguir los pasos que se explican en esta guía).
 
 ![Crear los tokens](images/img_2451.jpg){.thumbnail}
 
@@ -58,7 +58,7 @@ Una vez que el entorno esté listo y haya generado las claves, ya puede escribir
 
 ### 3. Utilizar un SDK para PHP
 
-Para simplificarle la tarea, hemos creado un SDK para PHP, que puede encontrar [aquí](https://github.com/ovh/php-ovh-sms).
+Para simplificarle la tarea, hemos creado un SDK para PHP, que puede encontrar en el [repositorio GitHub php-ovh-sms](https://github.com/ovh/php-ovh-sms).
 
 ### 4. Conectarse a la API
 
@@ -69,7 +69,7 @@ Pruebe la conexión a la API mostrando, por ejemplo, los detalles de cada cuenta
 /**
  * Muestra el detalle de cada cuenta de SMS.
  * 
- * Vaya a https://eu.api.ovh.com/createToken/index.cgi?GET=/sms&GET=/sms/*/jobs/&POST=/sms/*/jobs/
+ * Vaya a https://auth.eu.ovhcloud.com/api/createToken?GET=/sms&GET=/sms/*/jobs/&POST=/sms/*/jobs/
  * para generar las claves de acceso a la API para:
  *
  * GET /sms
@@ -124,7 +124,7 @@ Para enviar SMS, utilice la siguiente llamada a la API:
 /**
  * Envía un SMS y luego muestra la lista de SMS pendientes de envío.
  * 
- * Vaya a https://eu.api.ovh.com/createToken/index.cgi?GET=/sms&GET=/sms/*/jobs/&POST=/sms/*/jobs/
+ * Vaya a https://auth.eu.ovhcloud.com/api/createToken?GET=/sms&GET=/sms/*/jobs/&POST=/sms/*/jobs/
  * para generar las claves de acceso a la API para:
  *
  * GET /sms
@@ -203,6 +203,6 @@ En la respuesta anterior se indica la cuenta de SMS (ServiceName) y el crédito 
 
 ## Más información
 
-En la consola de la API ([https://api.ovh.com/console/#/sms](https://api.ovh.com/console/#/sms)) podrá descubrir otras llamadas que le permitirán integrar servicios de SMS, tales como permitir la respuesta a los SMS (solo para las cuentas de OVHcloud Francia), envío masivo con un archivo CSV, envío de publicidad, seguimiento de los acuses de recibo...
+En la [consola de la API](/links/console) podrá descubrir otras llamadas que le permitirán integrar servicios de SMS, tales como permitir la respuesta a los SMS (solo para las cuentas de OVHcloud Francia), envío masivo con un archivo CSV, envío de publicidad, seguimiento de los acuses de recibo...
 
 Interactúe con nuestra [comunidad de usuarios](/links/community).

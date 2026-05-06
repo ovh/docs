@@ -1,5 +1,5 @@
 ---
-title: MySQL - Advanced parameters references
+title: Advanced parameters for Public Cloud Databases for MySQL
 excerpt: This guide lists all the supported advanced parameters that allow you to configure your Public Cloud Databases for MySQL according to your use cases
 updated: 2025-06-19
 ---

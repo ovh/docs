@@ -18,16 +18,27 @@ This may be useful in the following cases:
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](/links/manager)
 - A [Public Cloud instance](/links/public-cloud/public-cloud) in your OVHcloud account
 - A volume snapshot in the same OpenStack region
 - Administrative access (sudo) to your instance via SSH or RDP
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Navigation path:** `Public Cloud`{.action} > Select your project
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## Instructions
 
 ### Creating the disk from a backup
 
-Log in to the [OVHcloud Control Panel](/links/manager), go to the `Public Cloud`{.action} section and select the Public Cloud project concerned. Then click `Volume Snapshot`{.action} in the left-hand navigation bar under **Storage & backup**.
+<!-- CP-STEPS-START:create-disk-from-backup -->
+Click `Volume Snapshot`{.action} in the left-hand navigation bar under **Storage & backup**.
 
 To the right of the backup you want to create a volume from, click the `...`{.action} button, then `Create a volume`{.action}.
 
@@ -38,9 +49,11 @@ Then enter the name and capacity of the new disk, and click `Create the volume`{
 ![create volume](images/volume02.png){.thumbnail}
 
 It may take a few minutes to create the disk, depending on its size.
+<!-- CP-STEPS-END:create-disk-from-backup -->
 
 ### Attaching the disk to an instance
 
+<!-- CP-STEPS-START:attach-disk-to-instance -->
 Once the disk has been created, you can choose to attach it to an instance. To do this, click `Block Storage`{.action} in the left-hand navigation bar under **Storage & backup**.
 
 To the right of the volume of your choice, click on the `...`{.action} button, then `Attach to instance`{.action}.
@@ -60,6 +73,7 @@ Make sure to not leave the current page in your OVHcloud Control Panel while the
 >
 
 Once the attachment is complete, you can follow these steps on how to configure the additional disk [using Linux](/pages/public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance#using-linux) or [using Windows](/pages/public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance#using-windows).
+<!-- CP-STEPS-END:attach-disk-to-instance -->
 
 ## Go further
 

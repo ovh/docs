@@ -27,9 +27,19 @@ The OVHcloud [vRack](/links/network/vrack) is a private network solution that en
 ## Requirements
 
 - A [Public Cloud project](/pages/public_cloud/public_cloud_cross_functional/create_a_public_cloud_project) in your OVHcloud account
-- Access to the [OVHcloud Control Panel](/links/manager)
 - An [OpenStack user](/pages/public_cloud/public_cloud_cross_functional/create_and_delete_a_user) (optional)
 - Basic networking knowledge
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Navigation path:** `Public Cloud`{.action} > Select your project
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## Interfaces
 
@@ -868,7 +878,7 @@ For example, if you have a public interface *eth0*, you will add the interface *
 
 > [!tabs]
 > Via the OVHcloud Control Panel
->> Log in to the [OVHcloud Control Panel](/links/manager), go to the `Public Cloud`{.action} section and select the Public Cloud project concerned.
+>> In your Public Cloud project,
 >>
 >> Click on `Instances`{.action} in the left-hand navigation bar and then on `⁝`{.action} to the right of the instance. Select `Instance details`{.action}.
 >>

@@ -14,6 +14,17 @@ This guide will discuss those options to monitor your Octavia Load Balancer.
 
 - A Load Balancer created. If this is not the case, please check this [guide](/pages/public_cloud/public_cloud_network_services/getting-started-01-create-lb-service).
 
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direkter Link:** [Public Cloud Projekte](/links/control-panel/publiccloud-projects)
+- **Navigationspfad:** `Public Cloud`{.action} > Wählen Sie Ihr Projekt aus
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
+
 ## Instructions
 
 ### Monitoring using CLI

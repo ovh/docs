@@ -24,13 +24,22 @@ These Additional IP addresses can only be migrated to instances in the same proj
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](/links/manager)
 - A [Public Cloud instance](/pages/public_cloud/compute/public-cloud-first-steps) in your Public Cloud project
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Navigation path:** `Public Cloud`{.action} > Select your project
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## Instructions
 
-Log in to the [OVHcloud Control Panel](/links/manager), go to the `Public Cloud`{.action} section and select the Public Cloud project concerned.
-
+<!-- CP-STEPS-START:buy-additional-ip -->
 In the left-hand menu, open `Public IPs`{.action} under **Network**.
 
 Open the `Additional IP`{.action} tab and click on the `Actions`{.action} button. Select `Add a new IP`{.action}.
@@ -77,6 +86,8 @@ The purchase order will open automatically for you to complete your purchase.
 See our guide on [managing OVHcloud orders](/pages/account_and_service_management/managing_billing_payments_and_services/managing_ovh_orders) for more details.
 
 You can also find the purchase order in your Control Panel, by going to the `Dashboard`{.action} section and clicking on `View my orders`{.action}.
+
+<!-- CP-STEPS-END:buy-additional-ip -->
 
 The next step will be the IP configuration in your OS; please refer to our [guide](/pages/public_cloud/public_cloud_network_services/getting-started-04-configure-additional-ip-to-instance).
 

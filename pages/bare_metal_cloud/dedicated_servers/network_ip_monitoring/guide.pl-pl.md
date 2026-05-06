@@ -1,7 +1,7 @@
 ---
-title: Jakie są adresy IP monitoringu OVHcloud?
-excerpt: W tej sekcji odnajdziesz adresy IP, które mają zostać wpisane podczas uruchamiania firewalla. Dzięki temu monitoring OVHcloud będzie nadal działać na Twoim serwerze.
-updated: 2025-06-04
+title: "Serwer dedykowany - Konfiguracja monitorowania IP"
+excerpt: "W tej sekcji odnajdziesz adresy IP, które mają zostać wpisane podczas uruchamiania firewalla. Dzięki temu monitoring OVHcloud będzie nadal działać na Twoim serwerze."
+updated: 2026-04-13
 ---
 
 ## Wprowadzenie
@@ -19,6 +19,17 @@ Aby wdrożyć restrykcyjny firewall, zwłaszcza w zakresie ICMP i nadal korzysta
 - Produkt OVHcloud, na którym zainstalowałeś Firewall.
 - Dostęp do reguł firewalla
 
+<!-- CP-NAV-START:baremetal-dedicated-servers -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Serwery dedykowane](/links/control-panel/baremetal-dedicated-servers)
+- **Ścieżka nawigacji:** `Bare Metal Cloud`{.action} > `Serwery dedykowane`{.action} > Wybierz serwer
+
+---
+<!-- CP-NAV-END:baremetal-dedicated-servers -->
+
 ## W praktyce
 
 ### Adresy IP, które chcesz autoryzować
@@ -26,7 +37,7 @@ Aby wdrożyć restrykcyjny firewall, zwłaszcza w zakresie ICMP i nadal korzysta
 |Rewers|IP|Protokół|
 |---|---|---|
 |netmon-rbx-probe|92.222.184.0/24|icmp|
-|netmon-sbg-probe|92.222.185.0/24|icmp|
+|netmon-sbg-probe|51.38.25.100/32|icmp|
 |netmon-gra-probe|92.222.186.0/24|icmp|
 |netmon-bhs-probe|167.114.37.0/24|icmp|
 |netmon-sgp-probe|139.99.1.144/28|icmp|
@@ -35,9 +46,8 @@ Aby wdrożyć restrykcyjny firewall, zwłaszcza w zakresie ICMP i nadal korzysta
 |netmon-syd-probe|139.99.187.247/32|icmp|
 |netmon-tor-probe|72.251.7.222/32|icmp|
 |netmon-eri-probe|51.195.135.163/32|icmp|
-|netmon-lim-probe|51.38.117.56|icmp|
-|netmon-sbg-probe|51.38.25.100|icmp|
-|netmon-par-probe|57.130.4.212|icmp|
+|netmon-lim-probe|51.38.117.56/32|icmp|
+|netmon-par-probe|57.130.4.212/32|icmp|
 |ping.ovh.net|213.186.33.13|icmp|
 |---|---|---|
 ||xxx.xxx.xxx.xxx.250 (z adresem IP serwera xxx.xxx.xxx.aaa)|icmp|
@@ -56,7 +66,7 @@ Po pierwsze, zaloguj się do [Panelu klienta OVHcloud](/links/manager) i wybierz
 
 Możesz włączyć lub wyłączyć monitoring serwera dedykowanego w zakładce `Informacje ogólne`{.action}. Wariant ten znajduje się w sekcji `Status usług`.
 
-![Monitoring](images/monitoring-server.png){.thumbnail}
+![Status monitorowania w zakładce informacji ogólnych serwera](images/monitoring-server.png){.thumbnail}
 
 Kliknij przycisk `Skonfiguruj`{.action}. W oknie, które się pojawi, masz trzy opcje dotyczące zachowania inwigilacji:
 
@@ -64,7 +74,7 @@ Kliknij przycisk `Skonfiguruj`{.action}. W oknie, które się pojawi, masz trzy 
 - **Aktywny z aktywną interwencją**: Jeśli serwer przestanie odpowiadać, otrzymasz wiadomość e-mail z alertem. Serwer zostanie zweryfikowany przez technika.
 - **Aktywny bez aktywnej interwencji**: Otrzymasz e-mail z komunikatem ostrzegawczym, jeśli serwer przestanie odpowiadać. Aby rozpocząć interwencję, należy utworzyć wniosek o pomoc.
 
-![Monitoring](images/monitoring-server2.png){.thumbnail}
+![Okno konfiguracji monitorowania z trzema opcjami](images/monitoring-server2.png){.thumbnail}
 
 Kliknij na `Zatwierdź`{.action}, aby zaktualizować konfigurację monitorowania.
 
@@ -72,4 +82,6 @@ Kliknij na `Zatwierdź`{.action}, aby zaktualizować konfigurację monitorowania
 
 [Konfiguracja zapory sieciowej Network Firewall](/pages/bare_metal_cloud/dedicated_servers/firewall_network).
 
+- [Pierwsze kroki z serwerem dedykowanym OVHcloud](/pages/bare_metal_cloud/dedicated_servers/getting-started-with-dedicated-server)
+- [Jak odinstalować RTM v1 na serwerze dedykowanym](/pages/bare_metal_cloud/dedicated_servers/rtm-uninstall)
 Dołącz do [grona naszych użytkowników](/links/community).

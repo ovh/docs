@@ -216,7 +216,7 @@ Scopri e confronta i diversi livelli di supporto disponibili [qui](/links/suppor
 
 /// details | Dove verificare il livello di supporto attivo?
 
-Per conoscere il livello di supporto associato all’identificativo cliente, accedi allo [Spazio Cliente OVHcloud](/links/manager) e clicca sul tuo nome in alto a destra. Il livello di supporto compare a destra della voce **Supporto**. Se non hai sottoscritto un servizio di supporto a pagamento, utilizzi di default il livello Standard.
+Per conoscere il livello di supporto associato all’identificativo cliente, apri la pagina [Il mio account](/links/control-panel/account-dashboard). Il livello di supporto compare a destra della voce **Supporto**. Se non hai sottoscritto un servizio di supporto a pagamento, utilizzi di default il livello Standard.
 
 Scopri e confronta i diversi livelli di supporto disponibili [qui](/links/support).
 

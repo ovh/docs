@@ -1,26 +1,34 @@
 ---
 title: How to configure reverse DNS for your server (PTR record)
-excerpt: Find out how to set up the reverse DNS resolution for your IP address in the OVHcloud Control Panel
-updated: 2026-01-06
+excerpt: Find out how to set up the reverse DNS resolution for your IPv4 or IPv6 address in the OVHcloud Control Panel
+updated: 2026-02-23
 ---
 
 ## Objective
 
 Reverse DNS (*rDNS*) is the complement to "forward" DNS resolution which resolves domain names into IP addresses. With reverse DNS resolution, an IP address can resolve into the domain name (or host name) it is mapped to. This means that DNS queries of the associated IP address will return this domain name.
 
-Configuring the reverse DNS resolution for a server is especially useful when sending emails. A mail server's validation by spam protection systems will improve if a DNS lookup of the IP address resolves properly.
+Configuring the reverse DNS resolution for a server is especially useful when sending emails. Spam protection systems will better validate a mail server if a reverse DNS lookup of the IP address resolves correctly.
 
 **This guide explains how to configure the reverse DNS path for your IP address in the OVHcloud Control Panel.**
 
 ## Requirements
 
 - An IP address attached to a service in your OVHcloud account
-- A domain name with its `A` record mapped to your service
-- Access to the [OVHcloud Control Panel](/links/manager)
+- A domain name with its `A` record or `AAAA` record mapped to your service
+
+<!-- CP-NAV-START:network-public-ip -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Public IP](/links/control-panel/network-public-ip)
+- **Navigation path:** `Network`{.action} > `Public IP Addresses`{.action}
+
+---
+<!-- CP-NAV-END:network-public-ip -->
 
 ## Instructions
-
-Log in to the [OVHcloud Control Panel](/links/manager), open the `Network`{.action} menu in the left-hand sidebar and click `Public IP Addresses`{.action}.
 
 The drop-down menu underneath **My public IP addresses and associated services** allows you to filter your services according to category. You can also search for a specific IP in the search bar left of the drop-down menu.
 
@@ -37,7 +45,7 @@ In the new window, enter your reverse path and click on `Confirm`{.action}.
 You can also edit the reverse path directly via the `pencil`{.action} icon in the **Reverse DNS** column of the table.
 
 > [!warning]
-> When you enter your domain name in the reverse, it double checks immediately if the A record is referring back to the same IP. This is used in anti-spam procedures, so your A record must be valid and propagated. There are certain rules to follow while entering the reverse:
+> When you enter your domain name in the reverse, it immediately double-checks whether the `A` / `AAAA` record refers back to the same IP. This is used in anti-spam procedures, so your DNS record must be valid and propagated. There are certain rules to follow while entering the reverse:
 > 
 >  - It cannot start with a `-`.
 >  - It cannot be longer than 63 characters.
@@ -49,7 +57,7 @@ You can also edit the reverse path directly via the `pencil`{.action} icon in th
 
 > [!primary]
 >
-> If the modification does not work as expected, verify that the `A` record is correctly configured in the DNS zone of your domain name. Bear in mind that it might take up to 24 hours for DNS zone changes to be effective, in case you have only recently edited the `A` record.
+> If the modification does not work as expected, verify that the `A` / `AAAA` record is correctly configured in the DNS zone of your domain name. Bear in mind that it might take up to 24 hours for DNS zone changes to be effective, in case you have only recently edited a record.
 >
 > If the domain name is managed by OVHcloud as its registrar **and it uses OVHcloud DNS servers**, you can refer to [this guide](/pages/web_cloud/domains/dns_zone_edit).
 >

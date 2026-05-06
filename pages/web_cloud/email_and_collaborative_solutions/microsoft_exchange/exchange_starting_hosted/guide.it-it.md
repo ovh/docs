@@ -21,18 +21,23 @@ Con Hosted Exchange puoi usufruire di account email professionali che semplifica
 - Disporre di una soluzione [Hosted Exchange](/links/web/emails-hosted-exchange)
 - Aver ricevuto l’email di conferma dell’installazione di Hosted Exchange
 - Disporre di un dominio
-- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
+
+<!-- CP-NAV-START:web-exchange -->
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [Exchange](/links/control-panel/web-exchange)
+- **Percorso di navigazione:** `Web Cloud`{.action} > `Exchange`{.action} > Seleziona la tua piattaforma
+
+---
+<!-- CP-NAV-END:web-exchange -->
 
 ## Procedura
 
 ### Accedi alla gestione del tuo servizio
 
 Una volta che il tuo Hosted Exchange è pronto per l’utilizzo :
-
-1. Accedi allo [Spazio Cliente OVHcloud](/links/manager).
-1. Accedi alla sezione `Web Cloud`{.action}.
-1. Nella sezione `MICROSOFT`, clicca su `Exchange`{.action}.
-1. Seleziona la piattaforma interessata.
 
 > [!primary]
 >
@@ -53,9 +58,9 @@ Scegli uno dei tuoi domini nella lista o spunta la casella `Il mio dominio non f
 
 ![email](images/exchange-wizard01.png){.thumbnail}
 
-#### Con questo dominio utilizzerai esclusivamente l'offerta Exchange OVH?
+#### Con questo dominio utilizzerai esclusivamente l'offerta Exchange OVHcloud?
 
-Con questo dominio **utilizzerai esclusivamente l'offerta Exchange OVH?** " determinerà il tipo di configurazione del tuo dominio. 
+Con questo dominio **utilizzerai esclusivamente l'offerta Exchange OVHcloud?** " determinerà il tipo di configurazione del tuo dominio. 
 
 - Se utilizzi una soluzione Exchange da sola o con altre soluzioni **email OVHcloud**, la configurazione può essere effettuata automaticamente o manualmente utilizzando esclusivamente i server di posta di OVHcloud.
 - Se utilizzi la tua soluzione Exchange in aggiunta a un servizio email **esterno alle offerte OVHcloud**, ti verrà chiesto di inserire l'URL del server di ricezione del tuo servizio email esterno, sotto la voce `Server relais (SMTP)`.
@@ -77,7 +82,7 @@ Determina il nome dei tuoi account email Exchange e aggiungi ulteriori informazi
 
 #### **Caso particolare**
 
-- Se configuri la tua piattaforma Exchange con un dominio non gestito sullo stesso Spazio Cliente OVH o presso un altro provider di domini, ottieni questa finestra:<br>
+- Se configuri la tua piattaforma Exchange con un dominio non gestito sullo stesso Spazio Cliente OVHcloud o presso un altro provider di domini, ottieni questa finestra:<br>
 
 ![email](images/exchange-wizard05.png){.thumbnail .w-640}<br>
 
@@ -112,7 +117,7 @@ Per saperne di più, consulta la guida [Aggiungere un dominio sul servizio Excha
 > Se un dominio richiede una configurazione specifica, appare una casellina rossa nella colonna `Diagnostica`{.action} della tabella. Cliccando sulla casellina, puoi visualizzare le modifiche da apportare. Se il dominio non utilizza i server DNS di OVHcloud, è necessario effettuare le modifiche attraverso l'interfaccia di gestione per la configurazione del dominio. 
 >
 
-![Ajout d'un domaine](images/first-steps-hosted-exchange-add-domain.png)
+![Aggiunta di un dominio](images/first-steps-hosted-exchange-add-domain.png){.thumbnail}
 
 ### Configura account Exchange supplementari (facoltativo)
 
@@ -127,7 +132,7 @@ Gli account in attesa di configurazione includono “*@configureme.me*” accant
 > Ripeti questa operazione per ogni numero di account che possiedi. Per ordinarne di nuovi, clicca sul pulsante `Azioni`{.action} e poi su `Ordina account`{.action}.
 >
 
-![Ajout d'un compte](images/first-steps-hosted-exchange-add-account.png)
+![Aggiunta di un account](images/first-steps-hosted-exchange-add-account.png){.thumbnail}
 
 ### Utilizza i tuoi indirizzi email
 
@@ -163,7 +168,7 @@ Per attivare queste diverse funzioni, seleziona il servizio Hosted Exchange dal 
 
 Per maggiori informazioni sulle funzionalità, consulta [la nostra documentazione](/products/web-cloud-email-collaborative-solutions-microsoft-exchange).
 
-## Per saperne di più
+## Per saperne di più <a name="go-further"></a>
 
 [Crea un gruppo di contatti](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/feature_groups)
 

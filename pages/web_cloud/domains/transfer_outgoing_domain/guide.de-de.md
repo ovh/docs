@@ -1,12 +1,12 @@
 ---
 title: "Einen Domainnamen zu einem anderen Registrar transferieren"
-excerpt: "Erfahren Sie hier, wie Sie Ihre Domain von OVHcloud zu einem Provider Ihrer Wahl transferieren"
-updated: 2025-07-31
+excerpt: "Erfahren Sie hier, wie Sie Ihre Domainnamen von OVHcloud zu einem Provider Ihrer Wahl transferieren"
+updated: 2026-03-24
 ---
 
 ## Ziel
 
-**Domaintransfer** bezeichnet den Umzug eines Domainnamens von einem Registrar zu einem anderen. Wenn Sie zum Beispiel einen Domainnamen auf unserer Website bestellt haben, ist OVHcloud der zuständige Registrar. Ein ausgehender Domaintransfer muss vom neuen Registrar gestartet werden.
+**Domainname-Transfer** bezeichnet den Umzug eines Domainnamens von einem Registrar zu einem anderen. Wenn Sie zum Beispiel einen Domainnamen auf unserer Website bestellt haben, ist OVHcloud der zuständige Registrar. Ein ausgehender Domaintransfer muss vom neuen Registrar gestartet werden.
 
 Um unbefugte Transferanfragen zu verhindern, sind Domainnamen in der Regel vom Registrar gesperrt, indem sie den Status *clientTransferProhibited* erhalten. Dieser Schutz muss im OVHcloud Kundencenter aufgehoben werden, bevor mit dem Transfer begonnen werden kann.
 
@@ -14,7 +14,7 @@ Um unbefugte Transferanfragen zu verhindern, sind Domainnamen in der Regel vom R
 
 > [!warning]
 >
-> Soll der betreffende Domainname bei OVHcloud registriert bleiben, aber hinsichtlich der Verwaltungs- oder Eigentumsverhältnisse bearbeitet werden, ist ein ausgehender Transfer der Domain nicht der geeignete Vorgang.
+> Soll der betreffende Domainname bei OVHcloud registriert bleiben, aber hinsichtlich der Verwaltungs- oder Inhabersverhältnisse bearbeitet werden, ist ein ausgehender Transfer der Domainname nicht der geeignete Vorgang.
 >
 > Um die Verwaltung des Domainnamens einem anderen OVHcloud Kunden-Account zu übertragen, muss stattdessen eine **Änderung der Kontakte** durchgeführt werden. Die Vorgehensweise wird in [dieser Anleitung](/pages/account_and_service_management/account_information/managing_contacts) beschrieben.
 >
@@ -24,97 +24,136 @@ Um unbefugte Transferanfragen zu verhindern, sind Domainnamen in der Regel vom R
 ## Voraussetzungen
 
 - Sie verfügen über einen bei OVHcloud registrierten [Domainnamen](/links/web/domains).
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager) mit den erforderlichen Berechtigungen zum Verwalten des Domainnamens (Domainadministrator).
 - Die Registrierung des Domainnamens erfolgte vor mindestens 60 Tagen **und** er wurde in den letzten 60 Tagen weder transferiert noch übertragen (Inhaberwechsel).
+
+<!-- CP-NAV-START:web-domains -->
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direkter Link:** [Domainnamen](/links/control-panel/web-domains)
+- **Navigationspfad:** `Web Cloud`{.action} > `Domainnamen`{.action} > Wählen Sie Ihren Domainnamen aus
+
+---
+<!-- CP-NAV-END:web-domains -->
 
 > [!primary]
 >
-> Wenn Sie der **Inhaber** des Domainnamens sind, dessen Verwaltung Ihnen im OVHcloud Kundencenter jedoch nicht möglich ist, weder über Ihren eigenen Zugang noch den Administrator-Kontakt des Domainnamens, konsultieren Sie [diese Anleitung](/pages/account_and_service_management/account_information/managing_contacts#sonderfall-bei-domaininhabern), bevor Sie fortfahren.
+> Wenn Sie der **Inhaber** des Domainnamens sind, dessen Verwaltung Ihnen im OVHcloud Kundencenter jedoch nicht möglich ist, weder über Ihren eigenen Zugang noch den Administrator-Kontakt des Domainnamens, konsultieren Sie [diese Anleitung](/pages/account_and_service_management/account_information/managing_contacts), bevor Sie fortfahren.
 >
 
 ## In der praktischen Anwendung
 
 > [!warning]
 >
-> Die folgenden Instruktionen beschreiben die gängigste Methode zum Transfer einer Domain, die für die meisten Top-Level-Domains (TLD) gültig ist. Die spezifischen Verfahrensvorschriften für TLDs werden jedoch ausschließlich von der zuständigen Vergabestelle, d.h. der **Registry** festgelegt. Registrare wie OVHcloud müssen diese Regeln einhalten und haben keinen Einfluss auf die Entscheidungen der Registry.
+> Die folgenden Instruktionen beschreiben die gängigste Methode zum Transfer eines Domainnamens, die für die meisten Top-Level-Domains (TLD) gültig ist. Die spezifischen Verfahrensvorschriften für TLDs werden jedoch ausschließlich von der zuständigen Vergabestelle, d.h. der **Registry** festgelegt. Registrare wie OVHcloud müssen diese Regeln einhalten und haben keinen Einfluss auf die Entscheidungen der Registry.
 >
-> Das genaue Verfahren für den Transfer von Domains kann daher variieren, insbesondere bei bestimmten Ländercode-TLDs (ccTLD, z.B. .lu, .uk, .hk, .ro) und einigen Spezial-TLDs (.am, .fm., etc.). Domaintransfers können auch aus außerordentlichen Gründen verhindert werden; hierzu zählen etwa: ausstehende Zahlung, Missbrauchsfall oder Registry-Sperre.
+> Das genaue Verfahren für den Transfer von Domainnamen kann daher variieren, insbesondere bei bestimmten Ländercode-TLDs (ccTLD, z.B. .lu, .uk, .hk, .ro) und einigen Spezial-TLDs (.am, .fm., etc.). Domainname-Transfers können auch aus außerordentlichen Gründen verhindert werden; hierzu zählen etwa: ausstehende Zahlung, Missbrauchsfall oder Registry-Sperre.
 >
 > Wir empfehlen, im Zweifelsfall folgende Ressourcen zu Rate zu ziehen:
 >
 > - Die Webseite der zuständigen TLD-Registry
 > - Die [Liste der bei OVHcloud verfügbaren TLDs](/links/web/domains-tld)
-> - [Erläuterungen der ICANN zu den EPP-Statuscodes](https://www.icann.org/resources/pages/epp-status-codes-2014-06-16-en) (um herauszufinden, welche Statuscodes derzeit für Ihre Domain gelten, führen Sie eine *Whois*-Suche aus, vorzugsweise unter Verwendung der Webseite der entsprechenden TLD-Registry)
+> - [Erläuterungen der ICANN zu den EPP-Statuscodes](https://www.icann.org/resources/pages/epp-status-codes-2014-06-16-en) (um herauszufinden, welche Statuscodes derzeit für Ihren Domainnamen gelten, führen Sie eine *Whois*-Suche aus, vorzugsweise unter Verwendung der Webseite der entsprechenden TLD-Registry)
 > - Die Webseite und das Verwaltungsinterface Ihres neuen Registrars, insbesondere für Fragen im Zusammenhang mit einem ausstehenden Transferprozess
 >
 > Je nachdem, welchen Registrar Sie gewählt haben, kann der Transfer eines Domainnamens auch kostenpflichtig sein. Erkundigen Sie sich hierzu an zuständiger Stelle, bevor Sie fortfahren.
 >
 
-### Schritt 1: Transfer-Schutz der Domain aufheben
+### 1 - Transfer-Schutz des Domainnamens aufheben
 
-Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein und gehen Sie im Bereich `Web Cloud`{.action} auf `Domainnamen`{.action}. Wählen Sie die betreffende Domain aus.
+<!-- CP-STEPS-START:unlock-domain-transfer -->
+Klicken Sie auf die Tabs, um die einzelnen **3** Schritte anzuzeigen.
 
-Im Tab `Allgemeine Informationen`{.action} finden Sie den Regler `Transfer-Schutz`{.action} unter **Sicherheit** mit der Standardeinstellung `Aktiviert`{.action}.
-
-> [!warning]
->
-> Wenn der Button `Transfer-Schutz` nicht vorhanden ist, bedeutet dies, dass Ihre Domainendung keinen Transfer-Code erfordert. Sie können dann direkt mit dem Transfer beginnen.
-
-![Schutz aktiviert](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/protection-against-domain-name-transfert-enabled.png){.thumbnail}
-
-Klicken Sie auf den Slider-Button und bestätigen Sie im Popup-Fenster, dass Sie diesen Schutz entfernen möchten. Warten Sie einige Minuten, bis der Status sich auf `Deaktiviert`{.action} ändert.
-
-> [!primary]
->
-> Wenn Sie diese Meldung erhalten: "**An error occurred when requesting to disable the domain protection (User not granted for this request)**", hat Ihr Kunden-Account nicht die notwendigen Rechte, um den Domainnamen freizugeben. 
->
-> Wenn Sie diese Meldung erhalten: "**AUTH/INFO code: Authcode is not managed by OVHcloud, contact the registry to claim it**" bedeutet das, der Transfer-Code Ihres Domainnamens kann nicht über Ihr [OVHcloud Kundencenter](/links/manager) abgerufen werden.  
-> 
-> Überprüfen Sie in beiden Fällen anhand unserer Anleitung zur [Verwaltung der Kontakte](/pages/account_and_service_management/account_information/managing_contacts), dass Sie der **Administrator**-Kontakt des Domainnamens sind, und überprüfen Sie, ob die Domainendung eine Entriegelung über das [OVHcloud Kundencenter](/links/manager) erlaubt.
-> 
-> Bestimmte Transfer-Codes werden direkt seitens der Registry der entsprechenden Domainendung verwaltet. Die Registry ist die Organisation, die eine oder mehrere TLDs und damit alle Domainnamen mit dieser Endung verwaltet. Zum Beispiel verwaltet die **AFNIC** alle Domainnamen mit der Endung *.fr*. In diesem Fall kontaktieren Sie die zuständige *Registry*, um Ihren Transfer-Code zu erhalten.
->
-
-![Deaktivierung](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/protection-against-domain-name-transfert-deactivating.png){.thumbnail}
+> [!tabs]
+> **Schritt 1**
+>>
+>> Gehen Sie auf die Seite [Domainnamen](/links/control-panel/web-domains), und wählen Sie den betreffenden Domainnamen aus.
+>>
+>> ![Domain names](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
+>>
+> **Schritt 2**
+>>
+>> Im Tab `Allgemeine Informationen`{.action} finden Sie den Regler `Transfer-Schutz`{.action} unter **Sicherheit** mit der Standardeinstellung `Aktiviert`{.action}.
+>>
+>> > [!warning]
+>> >
+>> > Wenn der Button `Transfer-Schutz` nicht vorhanden ist, bedeutet dies, dass Ihre Domainendung keinen Transfer-Code erfordert. Sie können dann direkt mit dem Transfer beginnen.
+>>
+>> ![Schutz aktiviert](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/protection-against-domain-name-transfert-enabled.png){.thumbnail}
+>>
+> **Schritt 3**
+>>
+>> Klicken Sie auf den Slider-Button und bestätigen Sie im Popup-Fenster, dass Sie diesen Schutz entfernen möchten. Warten Sie einige Minuten, bis der Status sich auf `Deaktiviert`{.action} ändert.
+>>
+>> > [!primary]
+>> >
+>> > Wenn Sie diese Meldung erhalten: "**An error occurred when requesting to disable the domain protection (User not granted for this request)**", hat Ihr Kunden-Account nicht die notwendigen Rechte, um den Domainnamen freizugeben.
+>> >
+>> > Wenn Sie diese Meldung erhalten: "**AUTH/INFO code: Authcode is not managed by OVHcloud, contact the registry to claim it**" bedeutet das, der Transfer-Code Ihres Domainnamens kann nicht über Ihr [OVHcloud Kundencenter](/links/manager) abgerufen werden.
+>> >
+>> > Überprüfen Sie in beiden Fällen anhand unserer Anleitung zur [Verwaltung der Kontakte](/pages/account_and_service_management/account_information/managing_contacts), dass Sie der **Administrator**-Kontakt des Domainnamens sind, und überprüfen Sie, ob die Domainendung eine Entriegelung über das [OVHcloud Kundencenter](/links/manager) erlaubt.
+>> >
+>> > Bestimmte Transfer-Codes werden direkt seitens der Registry der entsprechenden Domainendung verwaltet. Die Registry ist die Organisation, die eine oder mehrere TLDs und damit alle Domainnamen mit dieser Endung verwaltet. Zum Beispiel verwaltet die **AFNIC** alle Domainnamen mit der Endung *.fr*. In diesem Fall kontaktieren Sie die zuständige *Registry*, um Ihren Transfer-Code zu erhalten.
+>>
+>> ![Deaktivierung](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/protection-against-domain-name-transfert-deactivating.png){.thumbnail}
+<!-- CP-STEPS-END:unlock-domain-transfer -->
 
 > [!primary]
 >
 > Sobald der Schutz aufgehoben ist, bleibt der Domainname sieben Tage lang entsperrt. Nach diesem Zeitraum wird der Schutz automatisch reaktiviert. Wenn Sie in dieser Zeit keinen Transfer zu Ihrem neuen Registrar beantragen, muss der Schutz für den Domainnamen erneut aufgehoben werden.
 >
 
-### Schritt 2: Transfer-Code abrufen
+### 2 - Transfer-Code abrufen
 
 > [!warning]
 >
-> Beachten Sie, dass es möglich ist, den Transfercode auch nach dem Ablaufdatum Ihres Domainnamens abzurufen. Gemäß den Registry-Regeln muss eine Domain im Status [*redemptionPeriod*](https://www.icann.org/resources/pages/epp-status-codes-2014-06-16-en) unter Umständen wiederhergestellt werden, um übertragen zu werden. Wenden Sie sich an Ihren neuen Registrar, um Details zum individuellen Transferprozess zu erhalten.
+> Beachten Sie, dass es möglich ist, den Transfercode auch nach dem Ablaufdatum Ihres Domainnamens abzurufen. Gemäß den Registry-Regeln muss ein Domainname im Status [*redemptionPeriod*](https://www.icann.org/resources/pages/epp-status-codes-2014-06-16-en) unter Umständen wiederhergestellt werden, um übertragen zu werden. Wenden Sie sich an Ihren neuen Registrar, um Details zum individuellen Transferprozess zu erhalten.
 >
 
-Sobald der Transfer-Schutz aufgehoben ist, können Sie den Transfer-Code Ihres Domainnamens abrufen. Klicken Sie hierzu im Tab `Allgemeine Informationen`{.action} auf `AUTH/INFO`{.action} unter `Transfer-Schutz`{.action}. Wenn nötig, aktualisieren Sie die Seite.
+Sobald der Transfer-Schutz aufgehoben ist, können Sie den Transfer-Code Ihres Domainnamens abrufen.
 
-Es öffnet sich ein Fenster mit Ihrem AUTH/INFO-Code (auch Transfer-Code, Domainpasswort, AUTH-CODE oder EPP-Code genannt).
+<!-- CP-STEPS-START:get-transfer-code -->
+Klicken Sie auf die Tabs, um die einzelnen **3** Schritte anzuzeigen.
 
-![outgoingtransfer](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/protection-against-domain-name-transfert-disabled.png){.thumbnail}
-
-Dieser Code wird von Ihrem neuen Registrar angefordert werden, um den Transfer abzuschließen. Sie können die Details bei Ihrem Provider überprüfen.
-
-Anstatt den Code manuell einzugeben, empfehlen wir, diesen zu kopieren und einzufügen, da einige Zeichen leicht zu verwechseln sind.
+> [!tabs]
+> **Schritt 1**
+>>
+>> Gehen Sie auf die Seite [Domainnamen](/links/control-panel/web-domains), und wählen Sie den betreffenden Domainnamen aus.
+>>
+>> ![Domain names](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
+>>
+> **Schritt 2**
+>>
+>> Im Tab `Allgemeine Informationen`{.action} klicken Sie auf `AUTH/INFO`{.action} neben `Transfer-Schutz`{.action}. Wenn nötig, aktualisieren Sie die Seite.
+>>
+>> ![outgoingtransfer](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/protection-against-domain-name-transfert-disabled.png){.thumbnail}
+>>
+> **Schritt 3**
+>>
+>> Es öffnet sich ein Fenster mit Ihrem AUTH/INFO-Code (auch Transfer-Code, Domainpasswort, AUTH-CODE oder EPP-Code genannt).
+>>
+>> Dieser Code wird von Ihrem neuen Registrar angefordert werden, um den Transfer abzuschließen. Sie können die Details bei Ihrem Provider überprüfen.
+>>
+>> Anstatt den Code manuell einzugeben, empfehlen wir, diesen zu kopieren und einzufügen, da einige Zeichen leicht zu verwechseln sind.
+<!-- CP-STEPS-END:get-transfer-code -->
 
 Sobald der Transfer-Code abgerufen wurde, reaktivieren Sie den Transfer-Schutz **nicht, es sei denn, Sie möchten den Transfer verhindern**.
 
-### Schritt 3: Transfer zum neuen Registrar beauftragen
+### 3 - Transfer zum neuen Registrar beauftragen
 
-Nach erfolgreicher Durchführung der vorherigen Schritte können Sie den Transferprozess starten, in der Regel indem Sie eine Bestellung bei Ihrem neuen Registrar aufgeben. Der Transfer kann dann bis zu 10 Tage dauern. 
+Nach erfolgreicher Durchführung der vorherigen Schritte können Sie den Transferprozess starten, in der Regel indem Sie eine Bestellung bei Ihrem neuen Registrar aufgeben. Der Transfer kann dann bis zu 10 Tage dauern.
 
 Weitere Informationen hierzu erhalten Sie bei Ihren neuen Registrar.
 
 > [!warning]
 >
-> Wenn Ihr neuer Registrar einen neuen Transfer-Code anfordert, dann können Sie den Transfer-Schutz für Ihre Domain erneut aktivieren und ihn einige Minuten später wieder deaktivieren. So können Sie einen neuen Transfer-Code abrufen.
+> Wenn Ihr neuer Registrar einen neuen Transfer-Code anfordert, dann können Sie den **Transfer-Schutz** für Ihren Domainnamen erneut aktivieren und ihn einige Minuten später wieder deaktivieren. So können Sie einen neuen Transfer-Code abrufen.
 >
 
 ## Weiterführende Informationen
 
-[Transfer einer .co.uk Domain](/pages/web_cloud/domains/transfer_outgoing_couk)
+[Transfer einer .co.uk-Domainnamens](/pages/web_cloud/domains/transfer_outgoing_couk)
 
 Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](/links/partner).
 

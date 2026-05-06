@@ -1,9 +1,8 @@
 ---
 title: Ręczna migracja Twojego konta e-mail
 excerpt: Dowiedz się, jak ręcznie przenieść Twoje konto e-mail na inny adres e-mail
-updated: 2025-04-28
+updated: 2026-03-30
 ---
- 
 
 ## Wprowadzenie
 
@@ -20,9 +19,36 @@ updated: 2025-04-28
 
 ## Wymagania początkowe
 
-- Posiadanie usługi e-mail w OVHcloud, takiej jak oferta [Exchange](/links/web/emails), [E-mail Pro](/links/web/email-pro) lub MX Plan (w postaci pakietu MX Plan lub w postaci pakietu [hostingowego OVHcloud](/links/web/hosting))
+- Posiadanie usługi e-mail w OVHcloud, takiej jak oferta [Exchange](/links/web/emails-exchange), [E-mail Pro](/links/web/email-pro), [Zimbra](/links/web/zimbra) lub MX Plan (w postaci pakietu MX Plan lub w postaci pakietu [hostingowego OVHcloud](/links/web/hosting))
 - Posiadanie danych dostępowych do kont e-mail, które chcesz przenieść (konta źródłowe)
 - Posiadanie danych dostępowych do kont e-mail OVHcloud, na które przeniesione zostaną dane (konta docelowe)
+
+<!-- CP-NAV-START:web-mx-plan -->
+<!-- CP-NAV-START:web-email-pro -->
+<!-- CP-NAV-START:web-exchange -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+**MX Plan:**
+
+- **Link bezpośredni:** [MX Plan](/links/control-panel/web-mx-plan)
+- **Ścieżka nawigacji:** `Web Cloud`{.action} > `MX Plan`{.action} > Wybierz usługę MX Plan
+
+**E-mail Pro:**
+
+- **Link bezpośredni:** [E-mail Pro](/links/control-panel/web-email-pro)
+- **Ścieżka nawigacji:** `Web Cloud`{.action} > `E-mail Pro`{.action} > Wybierz platformę
+
+**Exchange:**
+
+- **Link bezpośredni:** [Exchange](/links/control-panel/web-exchange)
+- **Ścieżka nawigacji:** `Web Cloud`{.action} > `Exchange`{.action} > Wybierz platformę
+
+---
+<!-- CP-NAV-END:web-exchange -->
+<!-- CP-NAV-END:web-email-pro -->
+<!-- CP-NAV-END:web-mx-plan -->
 
 ## W praktyce
 
@@ -41,184 +67,188 @@ Poniższe instrukcje są podzielone na dwie części:
 
 Jeśli posiadasz konto e-mail [Exchange OVHcloud](/links/web/emails-hosted-exchange), możesz je wyeksportować bezpośrednio w formacie PST w Panelu klienta.
 
-1. Zaloguj się do [Panelu klienta OVHcloud](/links/manager).
-1. Przejdź do sekcji `Web Cloud`{.action}.
-1. W sekcji `MICROSOFT` kliknij `Exchange`{.action}.
-1. Wybierz odpowiednią platformę.
-1. W karcie `Konta e-mail`{.action} kliknij przycisk `...`{.action} po prawej stronie konta e-mail, które chcesz wyeksportować, a następnie wybierz opcję `Eksportuj w formacie PST`{.action}.
+Po przejściu do strony usługi Exchange, w karcie `Konta e-mail`{.action} kliknij przycisk `...`{.action} po prawej stronie konta e-mail, które chcesz wyeksportować, a następnie wybierz opcję `Eksportuj w formacie PST`{.action}.
 
-![emails](images/manager-export-pst01.png){.thumbnail}
+![emails](images/manager-export-pst01.png){.thumbnail .w-640}
 
 Następnie należy poczekać na eksport, który może trwać od kilku minut do kilku godzin, w zależności od wielkości eksportu. Po zakończeniu operacji wystarczy powrócić do przycisku `Eksportuj w formacie PST`{.action}, aby pobrać link do pobrania pliku.
 
-![emails](images/manager-export-pst02.png){.thumbnail}
+![emails](images/manager-export-pst02.png){.thumbnail .w-640}
 
-#### Eksport z systemu Windows
+#### Windows
 
-- Kliknij `plik` w lewym górnym rogu, a następnie `Otwórz i wyeksportuj`, a następnie wybierz `import/eksport`.
+> [!tabs]
+> **Eksport**
+>>
+>> - Kliknij `Plik`{.action} w lewym górnym rogu, a następnie `Otwórz i wyeksportuj`{.action}, a następnie wybierz `Import/Eksport`{.action}.
+>>
+>> ![emails](images/outlook-export-import-win.png){.thumbnail .w-640}
+>>
+>> - Wybierz `Eksportuj dane do pliku`{.action}, po czym kliknij `Dalej`{.action}.
+>>
+>> ![emails](images/outlook-export-win02.png){.thumbnail .w-640}
+>>
+>> - Wybierz `Plik danych Outlook (.pst)`{.action} i kliknij `Dalej`{.action}.
+>>
+>> ![emails](images/outlook-export-win03.png){.thumbnail .w-640}
+>>
+>> - Wybierz nazwę konta e-mail, które chcesz wyeksportować.
+>>
+>> > [!primary]
+>> > Możesz wyeksportować tylko jedno konto jednocześnie.
+>>
+>> Zaznacz dobrze `Dodaj podkatalogi`{.action}, a następnie kliknij `Dalej`{.action}.
+>>
+>> ![emails](images/outlook-export-win04.png){.thumbnail .w-640}
+>>
+>> - Wybierz docelowy folder kopii zapasowej i podaj nazwę kopii zapasowej klikając `Przeglądaj`{.action}. Wybierz odpowiednią opcję i kliknij `Zakończ`{.action}.
+>>
+>> ![emails](images/outlook-export-win05.png){.thumbnail .w-640}
+>>
+>> Rozpoczyna się eksport pliku. Podczas tworzenia pliku zostaniesz poproszony o określenie hasła. Jest on opcjonalny.
+>>
+>> ![emails](images/outlook-export-win06.png){.thumbnail .w-640}
+>>
+> **Import**
+>>
+>> - Kliknij `Plik`{.action} w lewym górnym rogu, a następnie `Otwórz i wyeksportuj`{.action}, a następnie wybierz `Import/Eksport`{.action}.
+>>
+>> ![emails](images/outlook-export-import-win.png){.thumbnail .w-640}
+>>
+>> - Wybierz `Importuj z innego programu lub pliku`{.action}, a następnie kliknij `Dalej`{.action}.
+>>
+>> ![emails](images/outlook-import-win02.png){.thumbnail .w-640}
+>>
+>> - Wybierz `Plik danych Outlook (.pst)`{.action} i kliknij `Dalej`{.action}.
+>>
+>> ![emails](images/outlook-import-win03.png){.thumbnail .w-640}
+>>
+>> - Wybierz plik kopii zapasowej, klikając `Przeglądaj`{.action}. Wybierz odpowiednią opcję i kliknij `Zakończ`{.action}.
+>>
+>> ![emails](images/outlook-import-win04.png){.thumbnail .w-640}
+>>
+>> - Jeśli ustaliłeś hasło do pliku kopii zapasowej, wprowadź je i kliknij `OK`{.action}.
+>>
+>> - Wybierz `Importuj elementy do aktywnego folderu`{.action}, a następnie kliknij `Zakończ`{.action}.
+>>
+>> Rozpoczyna się import kopii zapasowej.
 
-![emails](images/outlook-export-import-win.png){.thumbnail}
+#### Mac OS
 
-- Wybierz Eksportuj `dane do pliku`, po czym kliknij `Dalej`.
-
-![emails](images/outlook-export-win02.png){.thumbnail}
-
-- Wybierz `Plik danych Outlook (.pst)` i kliknij `Dalej`.
-
-![emails](images/outlook-export-win03.png){.thumbnail}
-
-- Wybierz nazwę konta e-mail, które chcesz wyeksportować.
-
-> [!primary]
-> Możesz wyeksportować tylko jedno konto jednocześnie.
-
-Zaznacz dobrze `Dodaj podkatalogi`, a następnie kliknij `Dalej`.
-
-![emails](images/outlook-export-win04.png){.thumbnail}
-
-- Wybierz docelowy folder kopii zapasowej i podaj nazwę kopii zapasowej klikając `Przeglądaj`. Wybierz odpowiednią opcję i kliknij `Zakończ`.
-
-![emails](images/outlook-export-win05.png){.thumbnail}
-
-Rozpoczyna się eksport pliku. Podczas tworzenia pliku zostaniesz poproszony o określenie hasła. Jest on opcjonalny.
-
-![emails](images/outlook-export-win06.png){.thumbnail}
-
-#### Import z systemu Windows
-
-- Kliknij `plik` w lewym górnym rogu, a następnie `Otwórz i wyeksportuj`, a następnie wybierz `import/eksport`.
-
-![emails](images/outlook-export-import-win.png){.thumbnail}
-
-- Wybierz Importuj `z innego programu lub pliku`, a następnie kliknij `Dalej`.
-
-![emails](images/outlook-import-win02.png){.thumbnail}
-
-- Wybierz `Plik danych Outlook (.pst)` i kliknij `Dalej`.
-
-![emails](images/outlook-import-win03.png){.thumbnail}
-
-- Wybierz plik kopii zapasowej, klikając `Przeglądaj`. Wybierz odpowiednią opcję i kliknij `Zakończ`.
-
-![emails](images/outlook-import-win04.png){.thumbnail}
-
-- Jeśli ustaliłeś hasło do pliku kopii zapasowej, wprowadź je i kliknij `OK`.
-
-- Wybierz `Importuj elementy do aktywnego` folderu, a następnie kliknij `Zakończ`.
-
-Rozpoczyna się import kopii zapasowej.
-
-#### Eksportuj z systemu Mac OS
-
-W zakładce `Narzędzia` w oknie Outlook kliknij `Eksportuj`.
-
-![emails](images/outlook-export-mac01.png){.thumbnail}
-
-W oknie "Eksport do pliku archiwum (.olm)" zaznacz elementy, które chcesz dodać do pliku kopii zapasowej, następnie kliknij `Dalej`.
-
-![emails](images/outlook-export-mac02.png){.thumbnail}
-
-Następnie wybierz docelowy folder dla kopii zapasowej, a następnie kliknij `Zapisz`.
-
-![emails](images/outlook-export-mac03.png){.thumbnail}
-
-Pojawi się okno postępu, kliknij `Dalej` po zakończeniu operacji. Twój plik kopii zapasowej znajdziesz w wybranym wcześniej katalogu.
-
-#### Import z systemu Mac OS
-
-W zakładce `Narzędzia` w oknie Outlook kliknij `Importuj`.
-
-![emails](images/outlook-import-mac01.png){.thumbnail}
-
-Wybierz format kopii zapasowej, którą chcesz importować, a następnie kliknij `Dalej`.
-
-![emails](images/outlook-import-mac02.png){.thumbnail}
-
-Wybierz Twój plik kopii zapasowej, po czym kliknij `importuj`.
-
-![emails](images/outlook-import-mac03.png){.thumbnail}
-
-Pojawi się okno postępu, kliknij `Dalej` po zakończeniu operacji. Twoja kopia zapasowa jest wdrażana w programie Outlook.
+> [!tabs]
+> **Eksport**
+>>
+>> W zakładce `Narzędzia`{.action} w oknie Outlook kliknij `Eksportuj`{.action}.
+>>
+>> ![emails](images/outlook-export-mac01.png){.thumbnail .w-640}
+>>
+>> W oknie "Eksport do pliku archiwum (.olm)" zaznacz elementy, które chcesz dodać do pliku kopii zapasowej, następnie kliknij `Dalej`{.action}.
+>>
+>> ![emails](images/outlook-export-mac02.png){.thumbnail .w-640}
+>>
+>> Następnie wybierz docelowy folder dla kopii zapasowej, a następnie kliknij `Zapisz`{.action}.
+>>
+>> ![emails](images/outlook-export-mac03.png){.thumbnail .w-640}
+>>
+>> Pojawi się okno postępu, kliknij `Dalej`{.action} po zakończeniu operacji. Twój plik kopii zapasowej znajdziesz w wybranym wcześniej katalogu.
+>>
+> **Import**
+>>
+>> W zakładce `Narzędzia`{.action} w oknie Outlook kliknij `Importuj`{.action}.
+>>
+>> ![emails](images/outlook-import-mac01.png){.thumbnail .w-640}
+>>
+>> Wybierz format kopii zapasowej, którą chcesz importować, a następnie kliknij `Dalej`{.action}.
+>>
+>> ![emails](images/outlook-import-mac02.png){.thumbnail .w-640}
+>>
+>> Wybierz Twój plik kopii zapasowej, po czym kliknij `Importuj`{.action}.
+>>
+>> ![emails](images/outlook-import-mac03.png){.thumbnail .w-640}
+>>
+>> Pojawi się okno postępu, kliknij `Dalej`{.action} po zakończeniu operacji. Twoja kopia zapasowa jest wdrażana w programie Outlook.
 
 ### Mail na Mac OS
 
-#### Eksport
-
-W kolumnie z lewej strony wybierz jedno lub kilka kont e-mail. Kliknij `Skrzynka na listy` w menu poziomym, a następnie kliknij `Eksportuj skrzynkę na listy`.
-
-![emails](images/mail-export-mac01.png){.thumbnail}
-
-Wybierz lub utwórz nowy folder, następnie kliknij `Wybierz`.
-
-![emails](images/mail-export-mac02.png){.thumbnail}
-
-Twój eksport to plik ".mbox".
-
-#### Import
-
-Kliknij `Plik` w menu poziomym, a następnie kliknij `Importuj skrzynki na listy`.
-
-![emails](images/mail-import-mac01.png){.thumbnail}
-
-Wybierz plik kopii zapasowej w formacie.mbox, po czym kliknij `Dalej`.
-
-![emails](images/mail-import-mac02.png){.thumbnail}
-
-Z lewej strony, importowane e-maile znajdują się na nowym koncie e-mail o nazwie "Import". Możesz przeciągnąć foldery i wiadomości z konta "Import" na Twoje skonfigurowane konta e-mail. Po zakończeniu transferu będziesz mógł usunąć konto "Import".
+> [!tabs]
+> **Eksport**
+>>
+>> W kolumnie z lewej strony wybierz jedno lub kilka kont e-mail. Kliknij `Skrzynka na listy`{.action} w menu poziomym, a następnie kliknij `Eksportuj skrzynkę na listy`{.action}.
+>>
+>> ![emails](images/mail-export-mac01.png){.thumbnail .w-640}
+>>
+>> Wybierz lub utwórz nowy folder, następnie kliknij `Wybierz`{.action}.
+>>
+>> ![emails](images/mail-export-mac02.png){.thumbnail .w-640}
+>>
+>> Twój eksport to plik ".mbox".
+>>
+> **Import**
+>>
+>> Kliknij `Plik`{.action} w menu poziomym, a następnie kliknij `Importuj skrzynki na listy`{.action}.
+>>
+>> ![emails](images/mail-import-mac01.png){.thumbnail .w-640}
+>>
+>> Wybierz plik kopii zapasowej w formacie.mbox, po czym kliknij `Dalej`{.action}.
+>>
+>> ![emails](images/mail-import-mac02.png){.thumbnail .w-640}
+>>
+>> Z lewej strony, importowane e-maile znajdują się na nowym koncie e-mail o nazwie "Import". Możesz przeciągnąć foldery i wiadomości z konta "Import" na Twoje skonfigurowane konta e-mail. Po zakończeniu transferu będziesz mógł usunąć konto "Import".
 
 ### Thunderbird
 
 Aktualnie nie istnieje funkcjonalność umożliwiająca eksportowanie lub importowanie konta e-mail z Thunderbird. Można jednak zapisać profil Thunderbirda. Zawiera ona wszystkie konta i e-maile znajdujące się lokalnie na Twoim komputerze. Zobaczymy, jak zapisać profil Thunderbird i ponownie włączyć go do nowej instancji Thunderbird.
 
-#### Eksport
-
-W oknie głównym kliknij menu w prawym górnym rogu, następnie `Pomoc`, a następnie `Informacje dotyczące rozwiązywania problemów`.
-
-![emails](images/thunderbird_menu.png){.thumbnail}
-
-Pojawi się tabela. Wyszukaj linię `Katalog Profilowy` i kliknij przycisk `Otwórz odpowiedni` katalog.
-
-![emails](images/thunderbird_open_folder.png){.thumbnail}
-
-Zostaniesz przekierowany do folderu profilu. Przejdź z folderu do drzewa.
-
-![emails](images/thunderbird_profil_folder1.png){.thumbnail}
-
-Skopiuj folder profilu za pomocą prawym przyciskiem myszy, a następnie wklej ten folder do wybranego folderu lub pomocy.
-
-![emails](images/thunderbird_profil_folder2.png){.thumbnail}
-
-#### Import
-
-Zamiast importowania, będzie tu o ładowanie profilu.
-Jeśli konta e-mail zostały już skonfigurowane w docelowej instancji Thunderbird, zostaną one wyświetlone w profilu A.
-Gdy Thunderbird załaduje nowy profil (profil B), może załadować **tylko** elementy tego profilu B.
-Dlatego zalecamy załadowanie najpierw nowego profilu (profil B), a następnie skonfigurowanie kont e-mail pochodzących z profilu A.
-
-Najpierw należy uruchomić Thunderbird za pomocą menedżera profili.
-
-- W systemie Windows przejdź do menu `Start`, a następnie do programu `Uruchom`. Wpisz `thunderbird.exe -ProfileManager` i kliknij `OK`.
-
-![emails](images/thunderbird-run-profil.png){.thumbnail}
-
-- W systemie Mac OS uruchom aplikację Terminal i przeciągnij i upuść aplikację Thunderbird w oknie terminala, dodając ją do linii `/Contents/MacOS/thunderbird-bin -ProfileManager`. Wpisz przycisk `Enter` ( ⏎), aby zatwierdzić.
-
-![emails](images/thunderbird-terminal-profil.png){.thumbnail}
-
-W następnym oknie wyświetlą się istniejące profile. Kliknij `Utwórz profil`, a następnie `Dalej`, gdy pojawi się komunikat informacyjny.
-
-![emails](images/thunderbird-profil-create01.png){.thumbnail}
-
-Na następnym etapie nadaj nazwę profilowi i podaj folder, w którym utworzony zostanie profil, poniżej zdania "Twoje ustawienia użytkownika, preferencje i wszystkie dane osobowe będą zapisane w":
-
-![emails](images/thunderbird-profil-create02.png){.thumbnail}
-
-> [!primary]
-> Zalecamy skopiowanie kopii zapasowej Twojego profilu Thunderbird do folderu z profilami Thunderbirda.
-
-Kliknij `Wybierz katalog...` aby wybrać folder z kopią zapasową. Kliknij `Zakończ`, aby utworzyć profil z kopii zapasowej.
-
-Okno wyboru profilu znajdziesz w nowym, wybranym profilu. Kliknij `Uruchom Thunderbird`, Thunderbird zostanie uruchomiony z wszystkimi elementami, które posiadasz w kopii zapasowej.
+> [!tabs]
+> **Eksport**
+>>
+>> W oknie głównym kliknij menu w prawym górnym rogu, następnie `Pomoc`{.action}, a następnie `Informacje dotyczące rozwiązywania problemów`{.action}.
+>>
+>> ![emails](images/thunderbird_menu.png){.thumbnail .w-640}
+>>
+>> Pojawi się tabela. Wyszukaj linię `Katalog Profilowy`{.action} i kliknij przycisk `Otwórz odpowiedni katalog`{.action}.
+>>
+>> ![emails](images/thunderbird_open_folder.png){.thumbnail .w-640}
+>>
+>> Zostaniesz przekierowany do folderu profilu. Przejdź z folderu do drzewa.
+>>
+>> ![emails](images/thunderbird_profil_folder1.png){.thumbnail .w-640}
+>>
+>> Skopiuj folder profilu za pomocą prawego przycisku myszy, a następnie wklej ten folder do wybranego folderu lub pomocy.
+>>
+>> ![emails](images/thunderbird_profil_folder2.png){.thumbnail .w-640}
+>>
+> **Import**
+>>
+>> Zamiast importowania, będzie tu o ładowanie profilu.
+>> Jeśli konta e-mail zostały już skonfigurowane w docelowej instancji Thunderbird, zostaną one wyświetlone w profilu A.
+>> Gdy Thunderbird załaduje nowy profil (profil B), może załadować **tylko** elementy tego profilu B.
+>> Dlatego zalecamy załadowanie najpierw nowego profilu (profil B), a następnie skonfigurowanie kont e-mail pochodzących z profilu A.
+>>
+>> Najpierw należy uruchomić Thunderbird za pomocą menedżera profili.
+>>
+>> - W systemie Windows przejdź do menu `Start`{.action}, a następnie do programu `Uruchom`{.action}. Wpisz `thunderbird.exe -ProfileManager` i kliknij `OK`{.action}.
+>>
+>> ![emails](images/thunderbird-run-profil.png){.thumbnail .w-640}
+>>
+>> - W systemie Mac OS uruchom aplikację Terminal i przeciągnij i upuść aplikację Thunderbird w oknie terminala, dodając ją do linii `/Contents/MacOS/thunderbird-bin -ProfileManager`. Wpisz przycisk `Enter` (⏎), aby zatwierdzić.
+>>
+>> ![emails](images/thunderbird-terminal-profil.png){.thumbnail .w-640}
+>>
+>> W następnym oknie wyświetlą się istniejące profile. Kliknij `Utwórz profil`{.action}, a następnie `Dalej`{.action}, gdy pojawi się komunikat informacyjny.
+>>
+>> ![emails](images/thunderbird-profil-create01.png){.thumbnail .w-640}
+>>
+>> Na następnym etapie nadaj nazwę profilowi i podaj folder, w którym utworzony zostanie profil, poniżej zdania "Twoje ustawienia użytkownika, preferencje i wszystkie dane osobowe będą zapisane w":
+>>
+>> ![emails](images/thunderbird-profil-create02.png){.thumbnail .w-640}
+>>
+>> > [!primary]
+>> > Zalecamy skopiowanie kopii zapasowej Twojego profilu Thunderbird do folderu z profilami Thunderbirda.
+>>
+>> Kliknij `Wybierz katalog...`{.action} aby wybrać folder z kopią zapasową. Kliknij `Zakończ`{.action}, aby utworzyć profil z kopii zapasowej.
+>>
+>> Okno wyboru profilu znajdziesz w nowym, wybranym profilu. Kliknij `Uruchom Thunderbird`{.action}, Thunderbird zostanie uruchomiony z wszystkimi elementami, które posiadasz w kopii zapasowej.
 
 ### Sprawdź import na nowy adres e-mail
 

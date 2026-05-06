@@ -1,7 +1,7 @@
 ---
 title: "Aggiungere un record DNS di tipo A per un dominio"
 excerpt: "Scopri come aggiungere un record DNS di tipo A a una zona DNS gestita in OVHcloud per il tuo dominio"
-updated: 2025-05-12
+updated: 2026-03-24
 ---
 
 <style>
@@ -32,7 +32,17 @@ Vuoi che il tuo sito sia accessibile tramite il tuo dominio? Per fare ciò, il d
 
 - Disporre di un [dominio](/links/web/domains).
 - Disporre di una zona DNS associata a questo dominio in OVHcloud.
-- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager), sezione `Web Cloud`{.action}.
+
+<!-- CP-NAV-START:web-dns-zone -->
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [Zone DNS](/links/control-panel/web-dns-zone)
+- **Percorso di navigazione:** `Web Cloud`{.action} > `Zone DNS`{.action} > Seleziona il tuo nome di dominio
+
+---
+<!-- CP-NAV-END:web-dns-zone -->
 
 ## Procedura
 
@@ -42,11 +52,32 @@ Vuoi che il tuo sito sia accessibile tramite il tuo dominio? Per fare ciò, il d
 
 ### Aggiungere un record DNS di tipo A per un dominio
 
-1. Fare clic sul menu `Zone DNS`{.action} e seleziona il dominio interessato.
-2. Fare clic sul pulsante `Aggiungi un record`{.action}.
-3. Nella finestra che si apre, seleziona il campo di puntamento di tipo `A`{.action}.
-4. Inserisci l’indirizzo IP (ad esempio, `203.0.113.0`) del servizio su cui è situato il tuo sito Web (hosting Web, server dedicato, VPS, ecc.) nel campo `Destinazione *` e fare clic su `Continua`{.action}.
-5. Verifica il riepilogo e fare clic su `Conferma`{.action}. Attendi fino a **24** ore affinché la propagazione dell'aggiunta sulla rete DNS sia pienamente effettiva.
+<!-- CP-STEPS-START:add-a-record-domain -->
+Clicca sulle schede qui sotto per visualizzare i **5** step in sequenza.
+
+> [!tabs]
+> **Step 1**
+>>
+>> Accedi alla pagina [Zone DNS](/links/control-panel/web-dns-zone), poi seleziona il dominio interessato.
+>>
+>> ![DNS zones](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
+>>
+> **Step 2**
+>>
+>> Clicca sul pulsante `Aggiungi un record`{.action}.
+>>
+> **Step 3**
+>>
+>> Nella finestra che si apre, seleziona il campo di puntamento di tipo `A`{.action}.
+>>
+> **Step 4**
+>>
+>> Inserisci l’indirizzo IP (ad esempio, `203.0.113.0`) del servizio su cui è situato il tuo sito Web (hosting Web, server dedicato, VPS, ecc.) nel campo `Destinazione *` e clicca su `Continua`{.action}.
+>>
+> **Step 5**
+>>
+>> Verifica il riepilogo e clicca su `Conferma`{.action}. Attendi fino a **24** ore affinché la propagazione dell’aggiunta sulla rete DNS sia pienamente effettiva.
+<!-- CP-STEPS-END:add-a-record-domain -->
 
 /// details | Per ulteriori informazioni, fare clic qui.
 
@@ -62,11 +93,32 @@ Consulta le nostre guide dettagliate:
 
 ### Aggiungere un record DNS di tipo A per il sottodominio di un dominio
 
-1. Fare clic sul menu `Zone DNS`{.action} e seleziona il dominio interessato.
-2. Fare clic sul pulsante `Aggiungi un record`{.action}.
-3. Nella finestra che si apre, seleziona il campo di puntamento di tipo `A`{.action}.
-4. Successivamente, inserisci nel campo `Sottodominio` il sottodominio interessato (ad esempio: `www` per il sottodominio `www.domain.tld`) e, nel campo `Destinazione *`, l’indirizzo IP (ad esempio: `203.0.113.0`) del servizio sul quale è situato il tuo sito Web (hosting Web, server dedicato, VPS, ecc.). Infine fare clic su `Continua`{.action}.
-5. Verifica il riepilogo e fare clic su `Conferma`{.action}. Attendi fino a **24** ore affinché la propagazione dell'aggiunta sulla rete DNS sia pienamente effettiva.
+<!-- CP-STEPS-START:add-a-record-subdomain -->
+Clicca sulle schede qui sotto per visualizzare i **5** step in sequenza.
+
+> [!tabs]
+> **Step 1**
+>>
+>> Accedi alla pagina [Zone DNS](/links/control-panel/web-dns-zone), poi seleziona il dominio interessato.
+>>
+>> ![DNS zones](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
+>>
+> **Step 2**
+>>
+>> Clicca sul pulsante `Aggiungi un record`{.action}.
+>>
+> **Step 3**
+>>
+>> Nella finestra che si apre, seleziona il campo di puntamento di tipo `A`{.action}.
+>>
+> **Step 4**
+>>
+>> Inserisci nel campo `Sottodominio` il sottodominio interessato (ad esempio: `www` per il sottodominio `www.domain.tld`) e, nel campo `Destinazione *`, l’indirizzo IP (ad esempio: `203.0.113.0`) del servizio sul quale è situato il tuo sito Web (hosting Web, server dedicato, VPS, ecc.). Clicca su `Continua`{.action}.
+>>
+> **Step 5**
+>>
+>> Verifica il riepilogo e clicca su `Conferma`{.action}. Attendi fino a **24** ore affinché la propagazione dell’aggiunta sulla rete DNS sia pienamente effettiva.
+<!-- CP-STEPS-END:add-a-record-subdomain -->
 
 /// details | Per ulteriori informazioni, fare clic qui.
 

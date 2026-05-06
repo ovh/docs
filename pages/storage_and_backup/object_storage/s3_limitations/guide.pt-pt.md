@@ -1,7 +1,7 @@
 ---
 title: Object Storage - Limites técnicos (EN)
 excerpt: Find here the technical limits of the Object Storage offer
-updated: 2024-11-12
+updated: 2026-03-13
 ---
 
 ## Objective
@@ -18,67 +18,39 @@ As **OVHcloud Object Storage** is a highly distributed system, using **parallel 
 
 Discover how to maximize your performance with [this guide](/pages/storage_and_backup/object_storage/s3_performance_optimization).
 
-### Maximum number of write requests per second on a bucket
+### Default maximum number of write and read requests per second on a bucket
 
-300 (beyond this number, the quality of service is no longer guaranteed).
+- PUT: 300 requests per second
+- GET: 900 requests per second
 
-This maximum value is a soft limit and can be easily overcome by adopting best practices to distribute the I/Os as widely as possible in the object storage cluster, taking advantage of the **sharding mechanism**.
+It is important to note that these maximum values are "soft limits" and can be easily overcome by adopting best practices to distribute the I/Os as widely as possible in the object storage cluster, taking advantage of the **sharding mechanism**. Indeed, a gradual ramp-up of requests allows you to maximize performance and capitalize on the native sharding of the infrastructure. In other words, limitations can be overcome through a good distribution of the names of the prefixes/object keys and reach multiple thousands of requests per second both in read and write.
 
 Discover how to maximize your performance with [this guide](/pages/storage_and_backup/object_storage/s3_performance_optimization).
 
-## Bucket limitations
+## Service default quotas and limitations
 
-### Maximum number of buckets per project
+| Resource | Default quota | Additional Details |
+| --- | --- | --- |
+| **Maximum number of buckets per project** | 100 | Up to 1,000 buckets through [support requests](https://help.ovhcloud.com/csm?id=csm_get_help) |
+| **Maximum number of objects in a bucket** | unlimited | - |
+| **Part size** | From 5 MiB to 5 GiB | - |
+| **Maximum parts per MPU** | 10,000 | - |
+| **Maximum Object size** | 48 TiB | This maximum can be achieved using Multi-Part Upload (MPU), via a single PUT request, the maximum object size is 5 GiB |
+| **Maximum number of users per project** | 1,000 | - |
+| **Maximum lifecycle rules** | 1,000 | Understanding [lifecycle rules](/pages/storage_and_backup/object_storage/s3_bucket_lifecycle) |
+| **Maximum replication rules** | 1,000 | Understanding [bucket replication](/pages/storage_and_backup/object_storage/s3_asynchronous_replication) |
+| **Maximum bucket tags** | 50 | - |
+| **Maximum object tags** | 10 | - |
+| **Maximum number of versions per object** | 100,000 | Beyond this value, a 403 error is returned with MaxVersionsReached code. Understanding [object versioning](/pages/storage_and_backup/object_storage/s3_versioning) |
 
-- 100 (default)
-- 1000 (requires a manual intervention, please [contact the support teams](https://help.ovhcloud.com/csm?id=csm_get_help))
 
-### Maximum number of objects in a bucket
-
-Unlimited
-
-### Name assignment
-
-- Must be between 3 and 63 characters long.
-- Must begin and end with lowercase alphanumeric characters (a to z and 0 to 9).
-- Must be unique within OVHcloud.
-- May contain the following punctuation marks: `.` and `-`.
-- Must not contain multiple punctuation marks in a row (e.g. `..` or `-.` or `.-` or `--`).
-- Must not look like an IP address (e.g. 192.168.1.1).
-
-> [!warning]
->
-> For best compatibility, we recommend that you avoid using dots (.) in bucket names, except for buckets that are used only for static website hosting. If you include dots in a bucket's name, you can't use virtual-host-style addressing over HTTPS, unless you perform your own certificate validation. This is because the security certificates used for virtual hosting of buckets don't work for buckets with dots in their names.
->
-
-## Object limitations
-
-### Maximum size per object / mpu / part
-
-#### Via a single PUT
-
-Maximum 5 GB per object (for an object which size is above 5GB, use a multi-part upload).
-
-#### Via a multi-part upload (MPU)
-
-- The size for a single part must be between 5MB (minimum) and 5GB (maximum)
-- 10000 parts maximum in a mpu
-
-The theoretical maximum size of a single large object uploaded via MPU is thus 48TB.
-
-## Project limitations
-
-### Maximum number of user accounts per project
-
-1,000
-
-### Name assignment
+### Bucket and object name assignment
 
 - Must be between 3 and 63 characters long.
 - Must begin and end with lower case alphanumeric characters (a to z and 0 to 9).
 - Must be unique within OVHcloud.
 - May contain the following punctuation marks: `.` and `-`.
-- Must not contain multiple punctuation marks in a row  (e.g. `..` or `-.` or `.-` or `--`).
+- Must not contain multiple punctuation marks in a row (e.g. `..` or `-.` or `.-` or `--`).
 - Must not look like an IP address (192.168.1.1).
 
 ### Features availability

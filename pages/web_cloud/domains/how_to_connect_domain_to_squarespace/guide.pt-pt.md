@@ -1,119 +1,169 @@
 ---
-title: "Como ligar um domínio OVHcloud a um alojamento SquareSpace"
-excerpt: "Prepare e configure a zona DNS do seu domínio OVHcloud para a ligar a um alojamento SquareSpace"
-updated: 2024-05-15
+title: "Ligar um nome de domínio OVHcloud ao SquareSpace"
+excerpt: "Prepare e configure a zona DNS do seu nome de domínio OVHcloud para a ligar a um alojamento SquareSpace"
+updated: 2026-03-18
 ---
 
 ## Objetivo
 
-Tem um nome de domínio na OVHcloud e deseja ligá-lo a um alojamento SquareSpace. Neste guia, encontrará as etapas de preparação e de configuração da sua zona DNS da OVHcloud para permitir a configuração do seu alojamento SquareSpace.
+É titular de um nome de domínio na OVHcloud e pretende ligá-lo a um alojamento SquareSpace. Este guia explica como preparar e configurar a sua zona DNS OVHcloud para o seu alojamento SquareSpace.
 
-**Saiba como conectar o seu domínio OVHcloud a um alojamento SquareSpace**
+**Saiba como ligar o seu nome de domínio OVHcloud a um alojamento SquareSpace**
 
 > [!warning]
 >
-> - O suporte SquareSpace não tem acesso aos parâmetros do seu domínio OVHcloud e, por isso, não pode aconselhá-lo sobre as informações que deve fornecer.
+> - O suporte SquareSpace não tem acesso aos parâmetros do seu nome de domínio OVHcloud e não pode, por isso, aconselhá-lo sobre as informações que deverá fornecer.
 >
-> - A responsabilidade sobre a configuração e a gestão dos serviços que a OVHcloud disponibiliza recai sobre o utilizador. Assim, deverá certificar-se de que estes funcionam corretamente.<br><br> Este guia fornece as instruções necessárias para realizar as operações mais habituais. No entanto, se encontrar dificuldades, recomendamos que recorra a um [prestador de serviços especializado](/links/partner) e/ou que contacte o editor do serviço. Não poderemos proporcionar-lhe assistência técnica. Para mais informações, consulte a secção [Quer saber mais?](#go-further) deste guia.
+> - A OVHcloud disponibiliza-lhe serviços cuja configuração, gestão e responsabilidade é da sua competência. Assim, deverá certificar-se de que estes funcionam corretamente.<br><br> Este guia fornece as instruções necessárias para realizar as operações mais habituais. No entanto, se encontrar dificuldades, recomendamos que recorra a um [prestador de serviços especializado](/links/partner) e/ou que contacte o editor do serviço. Não poderemos proporcionar-lhe assistência técnica. Para mais informações, consulte a secção [Quer saber mais?](#go-further) deste guia.
 >
 
 ## Requisitos
 
-- Ter acesso à [Área de Cliente OVHcloud](/links/manager).
 - Ter um [nome de domínio](/links/web/domains) registado na OVHcloud.
-- Dispor das [autorizações adequadas para gerir](/pages/account_and_service_management/account_information/managing_contacts) o nome de domínio a partir da sua [Área de Cliente OVHcloud](/links/manager).
+- Dispor das [autorizações adequadas para gerir](/pages/account_and_service_management/account_information/managing_contacts) o nome de domínio.
 - Ter um alojamento na SquareSpace.
 - Ter acesso à gestão deste alojamento na SquareSpace.
 
+<!-- CP-NAV-START:web-dns-zone -->
+---
+
+### Acesso à Área de Cliente OVHcloud
+
+- **Ligação direta:** [Zonas DNS](/links/control-panel/web-dns-zone)
+- **Para aceder aos seus serviços:** `Web Cloud`{.action} > `Zonas DNS`{.action} > Selecione o seu nome de domínio
+
+---
+<!-- CP-NAV-END:web-dns-zone -->
+
 ## Instruções
 
-Antes de seguir as duas etapas deste manual, deve familiarizar-se com a configuração de uma zona DNS através do nosso manual "[Editar uma zona DNS da OVHcloud](/pages/web_cloud/domains/dns_zone_edit)".
+Antes de seguir as etapas deste guia, aconselhamos que se familiarize com a configuração de uma zona DNS através do nosso guia "[Editar uma zona DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit)".
 
 > [!warning]
 >
-> A sua zona DNS já se encontra potencialmente pré-configurada ou associada a um alojamento. Vamos ver como identificar cada registo DNS necessário para estabelecer ligação com o seu alojamento SquareSpace. Alguns terão de ser eliminados para evitar entrar em conflito com os registos DNS requeridos nesta configuração. Outros serão simplesmente modificados ou criados. Para uma melhor compreensão, utilizaremos o domínio "**mydomain.ovh**" como exemplo. Substitua-o pelo seu domínio durante a configuração.
+> A sua zona DNS já se encontra potencialmente pré-configurada ou associada a um alojamento. Vamos ver como identificar cada registo DNS necessário para estabelecer a ligação com o seu alojamento SquareSpace. Alguns terão de ser eliminados para evitar entrar em conflito com os registos DNS requeridos nesta configuração. Outros serão simplesmente modificados ou criados. Para uma melhor compreensão, utilizaremos o nome de domínio "**mydomain.ovh**" como exemplo. Substitua-o pelo seu nome de domínio durante a configuração.
 
 ### Configurar os registos DNS na sua conta OVHcloud
 
-Aceda à [Área de Cliente OVHcloud](/links/manager), secção `Web Cloud`{.action}. Clique em `Nomes de domínio`{.action} e escolha o domínio em causa. De seguida, clique no separador `Zona DNS`{.action}.
-
-Aparecerá uma tabela com a lista de todos os registos DNS do nome de domínio selecionado.
-
-![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/tab-mydomain-anycast.png){.thumbnail}
-
-Cada registo DNS pode ser alterado clicando no botão `...`{.action} à direita da linha da tabela em causa e, a seguir, clicando em `Modificar entrada`{.action}.
-
-Siga as etapas em ordem nas seguintes guias:
+<!-- CP-STEPS-START:configure-dns-records -->
+Clique nos separadores abaixo para visualizar sucessivamente cada uma das **5** etapas.
 
 > [!tabs]
 > **Etapa 1**
->> **Registo A**<br><br>
->> Para identificar os registos "A" existentes, clique no menu Filtros na parte superior da tabela de registos DNS e selecione `A`.<br>
->> ![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/filter-a.png){.thumbnail}<br>
->> - Clique no botão `...`{.action} à direita da linha da tabela que corresponde ao seu nome de domínio apenas, sem um subdomínio (exemplo: `mydomain.ovh.`), e depois clique em `Modificar entrada`{.action}.<br>
->> - Se existir um registo para o subdomínio "www." (exemplo: `www.mydomain.ovh.`), deverá eliminá-lo para que não entre em conflito com o registo CNAME que vai introduzir no etapa 4. Clique no botão `...`{.action} à direita da linha correspondente ao seu nome de domínio apenas com o subdomínio "www." e clique em `Eliminar entrada`{.action}.<br>
->> - Se não possui um registo "A" existente, clique no botão `Adicionar uma entrada`{.action} no canto superior direito do ecrã e selecione o "Campo de apontamento" `A`{.action}<br><br>
->> Deverá criar 4 registos do tipo "A" sucessivamente a fim de introduzir os 4 endereços IPv4 relativos ao SquareSpace.
->> Deixe o campo **Subdomínio** vazio e insira o primeiro endereço IPv4 do SquareSpace `198.185.159.144` no campo **Destino**.
->> Clique em `Seguinte`{.action}, valide o seu registo "A", repita a operação para os outros 3 endereços IPv4 `198.185.159.145`; `198.49.23.144`; `198.49.23.145` e passe à etapa 2.
+>>
+>> Aceda à página [Zonas DNS](/links/control-panel/web-dns-zone) e escolha o nome de domínio correspondente.
+>>
+>> ![DNS zones](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
+>>
+>> A tabela apresentada lista o conjunto dos registos DNS do nome de domínio selecionado.
+>>
 > **Etapa 2**
->> **Registo AAAA**<br><br>
->>  Para identificar os registos "AAAA", clique no menu Filtros na parte superior da tabela de registos DNS e selecione `AAAA`.<br>
->> ![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/filter-aaaa.png){.thumbnail}<br>
->> - Clique no botão `...`{.action} à direita da linha da tabela que corresponde ao seu nome de domínio apenas, sem subdomínio (exemplo: `mydomain.ovh.`), e depois clique em `Eliminar entrada`{.action}.<br>
->> - Se estiver presente um registo para o subdomínio "www" (exemplo: `www.mydomain.ovh.`), elimine-o também para que não entre em conflito com o registo CNAME que vai introduzir no passo 4. Clique no botão `...`{.action} à direita da linha da tabela correspondente ao seu nome de domínio com o subdomínio "www" e depois clique em `Eliminar entrada`{.action}.<br>
->> - Se não tiver um registo "AAAA", prossiga para o passo 3.
+>>
+>> **Configuração dos registos A**
+>>
+>> **1 - Identificação:** filtre os registos DNS selecionando o tipo `A` no menu de filtros situado no canto superior direito da tabela.
+>>
+>> ![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/filter-a.png){.thumbnail}
+>>
+>> Identifique os registos "A" existentes para o seu nome de domínio apenas (exemplo: `mydomain.ovh.`) e para o subdomínio "www" (exemplo: `www.mydomain.ovh.`).
+>>
+>> **2 - Eliminação:** elimine todos os registos "A" existentes para o subdomínio "www". Se existirem mais de 4 registos "A" para o nome de domínio apenas, elimine os registos excedentários para conservar apenas 4. Para cada registo a eliminar, clique no botão `...`{.action} à direita da linha correspondente e depois em `Eliminar a entrada`{.action}.
+>>
+>> **3 - Modificação:** modifique cada registo "A" conservado para o nome de domínio apenas clicando no botão `...`{.action} e depois em `Alterar a entrada`{.action}. Substitua o destino por um dos 4 endereços IPv4 do SquareSpace (um endereço diferente por registo):
+>>
+>> - `198.185.159.144`
+>> - `198.185.159.145`
+>> - `198.49.23.144`
+>> - `198.49.23.145`
+>>
+>> Clique em `Seguinte`{.action} e valide.
+>>
+>> **4 - Adição:** se existirem menos de 4 registos "A", crie os registos em falta. Clique em `Adicionar uma entrada`{.action} no canto superior direito, selecione o campo de apontamento `A`{.action}, deixe o campo **Subdomínio** vazio e introduza no campo **Destino** cada endereço IPv4 ainda não atribuído. Clique em `Seguinte`{.action} e valide.
+>>
+>> Passe de seguida à etapa 3.
+>>
 > **Etapa 3**
->> **Registo TXT**<br><br>
->> Para identificar os registos "TXT" existentes, clique no menu Filtros na parte superior da tabela de registos DNS e selecione `TXT`.<br>
->> ![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/filter-txt.png){.thumbnail}<br>
->> - Se existirem registos "TXT" para o nome de domínio específico (exemplo: `mydomain.ovh.`) e para o seu subdomínio em "www" (exemplo: `www.mydomain.ovh.`), deverá eliminá-los para que não entrem em conflito com o registo CNAME que irá introduzir no passo 4. Clique no botão `...`{.action} à direita da linha da tabela correspondente ao seu nome de domínio apenas com o subdomínio "www" e depois clique em `Eliminar entrada`{.action}.<br>
+>>
+>> **Eliminação dos registos AAAA**
+>>
+>> **1 - Identificação:** filtre os registos DNS selecionando o tipo `AAAA` no menu de filtros situado no canto superior direito da tabela.
+>>
+>> ![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/filter-aaaa.png){.thumbnail}
+>>
+>> Identifique os registos "AAAA" existentes para o seu nome de domínio apenas (exemplo: `mydomain.ovh.`) e para o subdomínio "www" (exemplo: `www.mydomain.ovh.`).
+>>
+>> **2 - Eliminação:** elimine todos os registos "AAAA" identificados (nome de domínio apenas e subdomínio "www") para evitar um conflito com os novos registos DNS. Para cada registo, clique no botão `...`{.action} à direita da linha correspondente e depois em `Eliminar a entrada`{.action}.
+>>
+>> Se não existir nenhum registo "AAAA", passe à etapa 4.
+>>
 > **Etapa 4**
->> **Registo CNAME**<br><br>
->> Para identificar os registos "CNAME" existentes, clique no menu Filtros na parte superior da tabela de registos DNS e selecione `CNAME`.<br>
+>>
+>> **Eliminação dos registos TXT**
+>>
+>> **1 - Identificação:** filtre os registos DNS selecionando o tipo `TXT` no menu de filtros situado no canto superior direito da tabela.
+>>
+>> ![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/filter-txt.png){.thumbnail}
+>>
+>> Identifique os registos "TXT" existentes para o seu nome de domínio apenas (exemplo: `mydomain.ovh.`) e para o subdomínio "www" (exemplo: `www.mydomain.ovh.`).
+>>
+>> **2 - Eliminação:** elimine todos os registos "TXT" identificados (nome de domínio apenas e subdomínio "www") para evitar um conflito com os novos registos DNS. Para cada registo, clique no botão `...`{.action} à direita da linha correspondente e depois em `Eliminar a entrada`{.action}.
+>>
+>> Se não existir nenhum registo "TXT", passe à etapa 5.
+>>
+> **Etapa 5**
+>>
+>> **Configuração dos registos CNAME**
+>>
+>> **1 - Identificação:** filtre os registos DNS selecionando o tipo `CNAME` no menu de filtros situado no canto superior direito da tabela.
+>>
 >> ![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/filter-cname.png){.thumbnail}
->> - Clique no botão `...`{.action} à direita da linha da tabela correspondente ao seu subdomínio em "www" (exemplo: `mydomain.ovh.`) e depois clique em `Modificar entrada`{.action}.<br>
->> - Se não tiver um registo "CNAME" existente, clique no botão `Adicionar uma entrada`{.action} no canto superior direito do ecrã e selecione o "Campo de apontamento" `CNAME`{.action}.
->> Preencha o campo **Subdomínio** com o valor `www` e introduza `verify.squarespace.com.` no campo **Alvo**.<br>
->> ![cname-entry](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/add-an-entry-to-the-dns-zone-cname-squarespace.png){.thumbnail}
->> Clique em `Seguinte`{.action} e valide o seu registo "CNAME".
->> Adicione o segundo registo CNAME introduzindo `ext-cust.squarespace.com.` no campo **Alvo**.<br>
+>>
+>> Identifique os registos "CNAME" existentes para o subdomínio "www" (exemplo: `www.mydomain.ovh.`).
+>>
+>> **2 - Eliminação:** se existirem vários registos "CNAME" para o subdomínio "www", elimine-os todos exceto um. Para cada registo a eliminar, clique no botão `...`{.action} à direita da linha correspondente e depois em `Eliminar a entrada`{.action}.
+>>
+>> **3 - Modificação:** se existir um registo "CNAME" para o subdomínio "www", clique no botão `...`{.action} e depois em `Alterar a entrada`{.action}. Substitua apenas o **Destino** por `ext-cust.squarespace.com.`. Clique em `Seguinte`{.action} e valide.
+>>
+>> Se não existir nenhum registo "CNAME" para o subdomínio "www", clique em `Adicionar uma entrada`{.action} no canto superior direito, selecione o campo de apontamento `CNAME`{.action}, introduza `www` no campo **Subdomínio** e `ext-cust.squarespace.com.` no campo **Destino**. Clique em `Seguinte`{.action} e valide.
+>>
+>> **4 - Adição:** crie um registo CNAME de verificação introduzindo o seu `código único obtido no SquareSpace` no campo **Subdomínio** e `verify.squarespace.com.` no campo **Destino**. Clique em `Seguinte`{.action} e valide.
+<!-- CP-STEPS-END:configure-dns-records -->
 
-A zona DNS está configurada para fazer a ligação a um alojamento SquareSpace.
+A zona DNS está agora configurada para apontar para o seu alojamento SquareSpace.
 
-### Ligue o seu domínio ao SquareSpace
+### Ligar o seu nome de domínio ao SquareSpace
 
-As manipulações para esta etapa devem ser realizadas a partir da Área de Gestão do SquareSpace.
+As operações seguintes devem ser realizadas a partir do espaço de gestão SquareSpace.
 
 > [!primary]
 >
-> - Pode ligar o seu domínio a um site SquareSpace de teste ou pago. Não pode aceder a um site expirado.
-> - Se tiver uma conta de e-mail associada ao seu domínio, pode continuar a utilizá-la depois de o domínio se ligar à SquareSpace. Antes de iniciar sessão, recomendamos que consulte este [manual do SquareSpace](https://support.squarespace.com/hc/pt/articles/217601877-Usando-um-e-mail-de-dom%C3%ADnio-personalizado-que-voc%C3%AA-j%C3%A1-possui-com-o-Squarespace).
-> - Pode utilizar vários domínios personalizados para o seu website. Pode ligar ou guardar tantos quantos quiser.
-> - Não é possível conectar um nome de domínio personalizado ao SquareSpace se o nome de domínio incluir a palavra "squarespace" ou "sqsp".
+> - Pode ligar o seu nome de domínio a um site SquareSpace de teste ou pago. Não pode ligá-lo a um site expirado.
+> - Se tiver uma conta de e-mail associada ao seu nome de domínio, pode continuar a utilizá-la depois de o nome de domínio ser ligado ao SquareSpace. Antes de ligar o seu nome de domínio, recomendamos que consulte este [guia SquareSpace](https://support.squarespace.com/hc/pt/articles/217601877-Usando-um-e-mail-de-dom%C3%ADnio-personalizado-que-voc%C3%AA-j%C3%A1-possui-com-o-Squarespace).
+> - Pode utilizar vários nomes de domínio personalizados para o seu website. Pode ligar ou registar tantos quantos desejar.
+> - Não é possível ligar um nome de domínio personalizado ao SquareSpace se o nome de domínio incluir a palavra "squarespace" ou "sqsp".
 
-Para começar, siga os passos de ligação descritos no passo 1 deste [guia SquareSpace](https://support.squarespace.com/hc/pt/articles/12880712406797-Como-conectar-um-dom%C3%ADnio-OVHcloud-ao-seu-site-do-Squarespace).
+Para começar, siga as etapas de ligação descritas na etapa 1 deste [guia SquareSpace](https://support.squarespace.com/hc/pt/articles/12880712406797-Como-conectar-um-dom%C3%ADnio-OVHcloud-ao-seu-site-do-Squarespace).
 
 > [!warning]
 >
-> Se receber o alerta "This domain is already connected to another Squarespace site" (Este domínio já está ligado a outro site do Squarespace), verifique os outros sites do Squarespace para determinar o site ao qual o domínio está ligado. De seguida, desligue-o deste website.
+> Se receber o alerta "This domain is already connected to another Squarespace site" (Este domínio já está ligado a outro site Squarespace), verifique os seus outros sites Squarespace para determinar a que site o nome de domínio está ligado. De seguida, desligue-o desse website.
 
-Para continuar o processo, prossiga na etapa 2 deste [guia SquareSpace](https://support.squarespace.com/hc/pt/articles/12880712406797-Como-conectar-um-dom%C3%ADnio-OVHcloud-ao-seu-site-do-Squarespace).
+Prossiga para a etapa 2 deste [guia SquareSpace](https://support.squarespace.com/hc/pt/articles/12880712406797-Como-conectar-um-dom%C3%ADnio-OVHcloud-ao-seu-site-do-Squarespace).
 
 Se utiliza uma oferta de e-mail OVHcloud ou pretende subscrever uma das [nossas ofertas de e-mail](/links/web/emails), prepare a sua zona DNS em conformidade. Consulte o nosso guia sobre a "[Configuração de um registo MX](/pages/web_cloud/domains/dns_zone_mx)".
 
 ## Quer saber mais? <a name="go-further"></a>
 
-[Modificar os servidores DNS de um domínio OVHcloud](/pages/web_cloud/domains/dns_server_edit)
+[Modificar os servidores DNS de um nome de domínio OVHcloud](/pages/web_cloud/domains/dns_server_edit)
 
-[Criar uma zona DNS da OVHcloud para um domínio](/pages/web_cloud/domains/dns_zone_create)
+[Criar uma zona DNS OVHcloud para um nome de domínio](/pages/web_cloud/domains/dns_zone_create)
 
-[Editar uma zona DNS da OVHcloud](/pages/web_cloud/domains/dns_zone_edit)
+[Editar uma zona DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit)
 
-Para alterar a gestão do seu domínio para outra conta de cliente OVHcloud, siga o guia "[Gerir os contactos dos seus serviços](/pages/account_and_service_management/account_information/managing_contacts)".
- 
-Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](/links/partner).
- 
+Para alterar a gestão do seu nome de domínio para outra conta de cliente OVHcloud, siga o guia "[Gerir os contactos dos seus serviços](/pages/account_and_service_management/account_information/managing_contacts)".
+
+Para serviços especializados (referenciamento, desenvolvimento, etc.), contacte os [parceiros OVHcloud](/links/partner).
+
 Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](/links/support).
- 
-Fale com nossa [comunidade de utilizadores](/links/community).
+
+Fale com a nossa [comunidade de utilizadores](/links/community).

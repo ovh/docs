@@ -1,7 +1,7 @@
 ---
 title: "Retrieving the backup of the FTP space on your Cloud Web hosting plan"
 excerpt: "Find out how to retrieve a backup of the FTP space in your Cloud Web hosting plan"
-updated: 2023-11-16
+updated: 2026-03-31
 ---
 
 ## Objective
@@ -22,8 +22,18 @@ Your Cloud Web hosting plan has a storage space you can use to host your website
 ## Requirements
 
 - A [Cloud Web hosting plan](/links/web/hosting-cloud-web-offer)
-- Access to the [OVHcloud Control Panel](/links/manager)
 - Access to the contact email address linked to your OVHcloud customer account
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Hosting plans](/links/control-panel/web-hosting)
+- **Navigation path:** `Web Cloud`{.action} > `Hosting plans`{.action} > Select your web hosting plan
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## Instructions
 
@@ -38,40 +48,56 @@ Only the backups mentioned above can be offered by OVHcloud, provided that your 
 
 ### Retrieve a backup
 
-Unlike OVHcloud shared hosting, you cannot restore the FTP space in one click from the [OVHcloud Control Panel](/links/manager).
+Unlike OVHcloud shared hosting, you cannot restore the FTP space in one click from the OVHcloud Control Panel.
 
 A link to download the backup is generated, then sent by email to the email address associated with the Cloud Web hosting plan’s admin NIC handle.
 
-#### Step 1 - Generate the recovery link sent by email
+<!-- CP-STEPS-START:access-ftp-backup -->
+Click on the tabs below to view each of the **5** steps.
 
-To generate the recovery link, log in to the [OVHcloud Control Panel](/links/manager), go to the `Web Cloud`{.action} section, click `Hosting plans`{.action}, then click on the Cloud Web concerned. 
+> [!tabs]
+> **Step 1**
+>>
+>> Go to the [Hosting plans](/links/control-panel/web-hosting) page, then select the Cloud Web concerned.
+>>
+>> ![Hosting plans](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Step 2**
+>>
+>> Select the `FTP - SSH`{.action} tab and click the `Generate a backup`{.action} button on the right.
+>>
+>> ![Generate a backup button](/pages/assets/screens/control_panel/product-selection/web-cloud/cloud-web/ftp-ssh/generate-a-backup.png){.thumbnail}
+>>
+> **Step 3**
+>>
+>> In the window that opens, select one of the available backups, then click `Next`{.action}.
+>>
+>> ![Backup selection](/pages/assets/screens/control_panel/product-selection/web-cloud/cloud-web/ftp-ssh/generate-a-backup-step-1.png){.thumbnail}
+>>
+> **Step 4**
+>>
+>> A second window will appear, notifying you that the link to download the backup file will be sent to you by email, and that no automatic restore on your Cloud Web hosting plan will be done by OVHcloud.
+>>
+>> ![Backup generation confirmation](/pages/assets/screens/control_panel/product-selection/web-cloud/cloud-web/ftp-ssh/generate-a-backup-step-2.png){.thumbnail}
+>>
+>> Click `Confirm`{.action} to confirm your request.
+>>
+> **Step 5**
+>>
+>> If the backup generation has started successfully, the following message will appear in your OVHcloud Control Panel:
+>>
+>> ![Backup progress message](/pages/assets/screens/control_panel/product-selection/web-cloud/cloud-web/ftp-ssh/message-backup-progress.png){.thumbnail}
+>>
+>> The backup takes between 10 and 15 minutes.
+<!-- CP-STEPS-END:access-ftp-backup -->
 
-Select the `FTP - SSH`{.action} tab and click the `Generate a backup`{.action} button on the right.
+### Download the backup
 
-![backupftpcw](/pages/assets/screens/control_panel/product-selection/web-cloud/cloud-web/ftp-ssh/generate-a-backup.png){.thumbnail}
+When the backup is ready, you will receive an email via the email address associated with the admin NIC handle for your Cloud Web hosting plan.
 
-In the window that opens, select one of the available backups, then click `Next`{.action}.
-
-![backupftpcw](/pages/assets/screens/control_panel/product-selection/web-cloud/cloud-web/ftp-ssh/generate-a-backup-step-1.png){.thumbnail}
-
-A second window will appear, notifying you that the link to retrieve the backup file will be sent to you by email, and that no automatic restore on your Cloud Web hosting plan will be done by OVHcloud.
-
-![backupftpcw](/pages/assets/screens/control_panel/product-selection/web-cloud/cloud-web/ftp-ssh/generate-a-backup-step-2.png){.thumbnail}
-
-Click `Confirm`{.action} to confirm your request.
-
-If you have successfully generated the backup, the following message will appear in your [OVHcloud Control Panel](/links/manager):
-
-![backupftpcw](/pages/assets/screens/control_panel/product-selection/web-cloud/cloud-web/ftp-ssh/message-backup-progress.png){.thumbnail}
-
-The backup takes between 10 and 15 minutes to be generated.
-
-#### Step 2 - Retrieve the backup
-
-When the backup is ready, you will receive an email via the email address associated with the admin NIC handle for your Cloud Web hosting plan.<br>
 This email contains a download link **valid for 9 days** from receipt of the email:
 
-![backupftpcw](/pages/assets/screens/email-sending-to-customer/cloud-web/backup-information.png){.thumbnail}
+![Backup download email](/pages/assets/screens/email-sending-to-customer/cloud-web/backup-information.png){.thumbnail}
 
 The downloaded file is in the format *.tar.gz*.
 

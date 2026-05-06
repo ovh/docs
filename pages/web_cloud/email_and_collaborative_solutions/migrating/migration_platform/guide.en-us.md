@@ -1,7 +1,7 @@
 ---
 title: "Migrating your email addresses from one OVHcloud email platform to another"
 excerpt: "Find out how to migrate email addresses from one Exchange or Email Pro platform to another Exchange, Email Pro or MX Plan platform"
-updated: 2021-10-21
+updated: 2026-03-30
 ---
 
 ## Objective
@@ -24,19 +24,40 @@ You want to migrate your email addresses on an Exchange platform to another Exch
 
 - a "**source**" platform with configured [Exchange](/links/web/emails-hosted-exchange) accounts
 - a "**destination**" platform with [Exchange](/links/web/emails-hosted-exchange) or MX Plan accounts (via the MX Plan solution or included in [OVHcloud Web Hosting plans](/links/web/hosting)). This platform must have unconfigured accounts or be available to host the email accounts that need to be migrated.
-- access to the [OVHcloud Control Panel](/links/manager)
+
+<!-- CP-NAV-START:web-mx-plan -->
+<!-- CP-NAV-START:web-exchange -->
+---
+
+### OVHcloud Control Panel Access
+
+**MX Plan:**
+
+- **Direct link:** [MX Plan](/links/control-panel/web-mx-plan)
+- **Navigation path:** `Web Cloud`{.action} > `MX Plan`{.action} > Select your MX Plan service
+
+**Exchange:**
+
+- **Direct link:** [Exchange](/links/control-panel/web-exchange)
+- **Navigation path:** `Web Cloud`{.action} > `Exchange`{.action} > Select your platform
+
+---
+<!-- CP-NAV-END:web-exchange -->
+<!-- CP-NAV-END:web-mx-plan -->
 
 ## Instructions
 
 ### Configuring the destination platform
 
-Before you begin your migration, if you have just ordered your new email solution, first add the domain name to your [Exchange](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_adding_domain) platform. If you are migrating to an MX Plan platform, where the attached domain name is fixed, you can proceed directly to [the next step](#accountsmigration).
-
-> Select the `Associated domains`{.action} tab for your platform, then click on the button `Add a domain`{.action}. Configure your domain name as **non-authoritative**. Once you have added your domain name, ensure that `OK` appears in the `Status` column.
+> [!warning]
+>
+> Before starting your migration, if you have just ordered your new email offer, first add the domain name to your email platform. If you are migrating to an MX Plan platform, the attached domain name being "fixed", you can directly proceed to the [next step](#accountsmigration).
+>
+> Select the `Associated domains`{.action} or `Domain`{.action} tab on your platform, then click on `Add a domain`{.action}. Once the domain name is added, make sure the `OK` or `Active`{.action} mention is present in the `Status` column.
 >
 > ![email-migration](images/migration_platform02.png){.thumbnail}
 >
-> For more details on adding a domain name, follow the [Exchange guide](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_adding_domain).
+> For more details on adding a domain name, follow [the Exchange guide](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_adding_domain).
 
 ### Migrate email accounts <a name="accountsmigration"></a>
 
@@ -54,7 +75,7 @@ Your email accounts will be migrated in 3 main steps: **Rename** the original em
 
 Rename the email account to be migrated with a provisional name (example: to migrate the email account *john.smith@mydomain.ovh*, rename it to *john.smith01@mydomain.ovh*).
 
-In the `Email accounts`{.action} tab for your email platform, click on the `...`{.action} button, then `Modify`{.action}.
+In the `Email accounts`{.action} tab for your email platform, click on the `...`{.action} button, then `Edit`{.action}.
 
 ![email-migration](images/migration_platform04.png){.thumbnail}
 
@@ -62,7 +83,7 @@ In the `Email accounts`{.action} tab for your email platform, click on the `...`
 
 Re-create your email address on the new account for your Exchange or MX Plan platform. (Using the previous example, you will create *john.smith@mydomain.ovh* on your new platform.)
 
-In the `Email accounts`{.action} tab for your platform, click on the `...`{.action} button, to the right of the target email account, then `Modify`{.action}.
+In the `Email accounts`{.action} tab for your platform, click on the `...`{.action} button, to the right of the target email account, then `Edit`{.action}.
 
 ![email-migration](images/migration_platform05.png){.thumbnail}
 
@@ -79,8 +100,6 @@ In the `Email accounts`{.action} tab for your platform, click on the `...`{.acti
 > - [Footer](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/feature_footers)
 
 Migrate the source email account to your new platform account using our [OMM](/links/web/omm) tool (OVHcloud Mail Migrator).
-
-> If you need to migrate several email accounts, we recommend using the [Project](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_omm#project) mode via [OMM](/links/web/omm). You can use this mode to import a CSV table containing the information for the email accounts you want to migrate.
 
 For more information on OMM, please read our guide on [Migrating email accounts via the OVHcloud Mail Migrator](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_omm).
 
@@ -100,14 +119,13 @@ At this stage, your email addresses should already be migrated and functional. F
 
 To do this, select the Exchange service concerned, then go to the `Associated domains`{.action} tab. In the table shown, you can use the `Diagnostic` column to check if the DNS configuration is correct: a red box appears if the configuration needs to be modified.
 
+![email-migration](images/check_the_dns_records_associated_domains.png){.thumbnail}
+
 > [!primary]
 >
 > If you have just migrated or modified a DNS record for your domain, it may take a few hours to be updated when you go to the [OVHcloud Control Panel](/links/manager).
->
 
 To modify the configuration, click on the red box and carry out the requested operation. It can take between 4 and a maximum of 24 hours for DNS changes to propagate fully.
-
-![email-migration](images/check_the_dns_records_associated_domains.png){.thumbnail}
 
 ### Use your migrated email addresses
 
@@ -119,7 +137,6 @@ If you have configured one of the migrated accounts on a local email client (e.g
 > [!primary]
 >
 > You can also manually migrate external email addresses to OVHcloud by using our [OVHcloud Mail Migrator](/links/web/omm) tool (OMM). To do this, you must have the login details (user, password, servers) of the source email and the destination email.
->
 
 ## Go further
 

@@ -1,33 +1,43 @@
 ---
-title: 'Sécuriser sa ligne SIP OVHcloud'
-excerpt: 'Apprenez à sécuriser votre ligne SIP OVHcloud'
+title: "Sécuriser sa ligne SIP OVHcloud"
+excerpt: "Apprenez à sécuriser votre ligne SIP OVHcloud en modifiant le mot de passe, en restreignant les IP autorisées et en filtrant les appels"
 updated: 2025-04-28
 ---
 
 ## Objectif
 
-Votre ligne SIP OVHcloud vous permet de recevoir et d’émettre des appels. Afin d'éviter que votre ligne SIP puisse être utilisée de manière non souhaitée, nous vous recommandons de sécuriser cette dernière via plusieurs manipulations.
+Votre ligne SIP OVHcloud vous permet de recevoir et d’émettre des appels. Pour éviter toute utilisation non souhaitée, sécurisez-la via les manipulations suivantes.
 
 **Apprenez à sécuriser votre ligne SIP OVHcloud.**
 
 ## Prérequis
 
 - Disposer d'une [ligne SIP OVHcloud](/links/telecom/telephonie-voip).
-- Être connecté à l'[espace client OVHcloud](/links/manager), partie `Télécom`{.action} :
+
+<!-- CP-NAV-START:telecom-voip-fax -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [VoIP & Fax](/links/control-panel/telecom-voip-fax)
+- **Pour accéder à vos services :** `Télécom`{.action} > `VoIP & Fax`{.action} > Sélectionnez votre groupe de téléphonie
+
+---
+<!-- CP-NAV-END:telecom-voip-fax -->
 
 ![espace client Telecom VoIP](/pages/assets/screens/control_panel/product-selection/telecom/tpl-telecom-02-fr-voip.png){.thumbnail}
 
 ## En pratique
 
-### Étape 1 : comprendre pourquoi sécuriser sa ligne SIP
+### Étape 1 : Comprendre pourquoi sécuriser sa ligne SIP
 
 Le principe même d'une ligne SIP est de pouvoir être utilisée facilement sur n'importe quel accès Internet. Son utilisation est alors rendue possible grâce à un identifiant et un mot de passe renseignés dans la configuration d'un équipement. Ces éléments sont indispensables afin de pouvoir utiliser votre ligne SIP OVHcloud. 
 
-Afin de maîtriser au mieux l'utilisation de cette dernière, nous vous recommandons de vous assurer qu'elle est suffisamment sécurisée afin d'éviter toute utilisation non souhaitée qui pourrait entraîner des consommations hors forfait. 
+Assurez-vous que votre ligne est suffisamment sécurisée pour éviter toute utilisation non souhaitée qui pourrait entraîner des consommations hors forfait. 
 
-### Étape 2 : sécuriser sa ligne SIP
+### Étape 2 : Sécuriser sa ligne SIP
 
-La sécurisation de votre ligne SIP peut s'effectuer de plusieurs manières selon l'utilisation que vous souhaitez en avoir. Pour cela, sachez qu'il existe **des sécurités OVHcloud déjà actives sur votre ligne** et que vous avez la possibilité de **gérer des fonctionnalités depuis votre espace client**. Celles-ci vous **permettent de sécuriser un peu plus votre ligne**. 
+Vous pouvez sécuriser votre ligne SIP de plusieurs manières, selon vos besoins. Pour cela, sachez qu'il existe **des sécurités OVHcloud déjà actives sur votre ligne** et que vous avez la possibilité de **gérer des fonctionnalités depuis votre espace client**. Celles-ci vous **permettent de sécuriser un peu plus votre ligne**. 
 
 #### Les sécurités OVHcloud actives sur votre ligne
 
@@ -57,34 +67,33 @@ Notre système détecte automatiquement une activité suspecte, comme des appels
 
 Si vous disposez d'une ligne SIP que vous utilisez avec votre propre équipement, le mot de passe de la ligne peut être modifié à votre convenance. 
 
-Pour cela, vous devrez le modifier par le biais d'une manipulation à réaliser depuis votre espace client OVHcloud. Reportez-vous aux instructions décrites dans notre documentation « [Modifier le mot de passe d’une ligne SIP](/pages/web_cloud/phone_and_fax/voip/modifier-mot-de-passe-ligne-sip) » si nécessaire.
+Pour cela, modifiez-le depuis votre espace client OVHcloud. Reportez-vous aux instructions décrites dans notre documentation « [Modifier le mot de passe d’une ligne SIP](/pages/web_cloud/phone_and_fax/voip/modifier-mot-de-passe-ligne-sip) » si nécessaire.
 
 - **La restriction par IP de l'accès à votre ligne**
 
-Vous avez la possibilité de sécuriser l'accès à votre ligne SIP grâce à une restriction par IP et de pouvoir vérifier les tentatives d'authentification à celle-ci qui ont échoué. 
+Vous pouvez sécuriser l'accès à votre ligne SIP par restriction IP et vérifier les tentatives d'authentification à celle-ci qui ont échoué. 
 
-Pour cela, vous devrez activer la restriction et consulter les logs d'authentification depuis votre espace client. Reportez-vous aux instructions décrites dans notre documentation « [Restreindre sa ligne SIP OVHcloud par IP](/pages/web_cloud/phone_and_fax/voip/secure-sip-line-ovh) » si nécessaire.
+Pour cela, activez la restriction et consultez les logs d'authentification depuis votre espace client. Reportez-vous aux instructions décrites dans notre documentation « [Restreindre sa ligne SIP OVHcloud par IP](/pages/web_cloud/phone_and_fax/voip/secure-sip-line-ovh) » si nécessaire.
 
 - **Le filtrage des appels reçus et/ou émis**
 
-Vous avez la possibilité de définir des listes blanches ou noires, afin d'autoriser uniquement certains correspondants à vous joindre ou, au contraire, de rejeter automatiquement les appels en provenance de certains numéros.
+Vous pouvez définir des listes blanches ou noires, afin d'autoriser uniquement certains correspondants à vous joindre ou, au contraire, de rejeter automatiquement les appels en provenance de certains numéros.
 
-Pour cela, vous devrez gérer le filtrage d'appels depuis votre espace client OVHcloud. Reportez-vous aux instructions décrites dans notre documentation « [Filtrer et renvoyer ses appels](/pages/web_cloud/phone_and_fax/voip/comment_configurer_les_renvois_d_appels) » si nécessaire.
+Pour cela, gérez le filtrage d'appels depuis votre espace client OVHcloud. Reportez-vous aux instructions décrites dans notre documentation « [Filtrer et renvoyer ses appels](/pages/web_cloud/phone_and_fax/voip/comment_configurer_les_renvois_d_appels) » si nécessaire.
 
 ### Étape 3 : suivre vos consommations
 
+<!-- CP-STEPS-START:suivre-consommations -->
 Maintenant que vous avez appris à sécuriser votre ligne SIP OVHcloud ou que vous venez de le faire, il est intéressant de savoir où suivre en temps réel la consommation inhérente à votre ligne.
 
-1. Connectez-vous à votre [espace client OVHcloud](/links/manager) et cliquez sur `Télécom`{.action}.
-1. Cliquez sur `VoIP & Fax`{.action} puis sur le groupe de facturation contenant votre ligne SIP.
-1. Cliquez sur l'onglet `Services`{.action} puis sur la ligne SIP concernée.
-1. Positionnez-vous sur l'onglet `Consommation`{.action} et cliquez sur `Appels émis`{.action}.
+Dans l'onglet `Consommation`{.action}, cliquez sur `Appels émis`{.action}.
 
 ![securisersip](images/secure-sip-line-step1.png){.thumbnail}
 
 La page qui s'affiche alors vous permet de visionner l'historique des consommations du mois en cours, ainsi que le nombre d'appels hors forfait et le montant généré par ces derniers. Nous vous conseillons de consulter cette page régulièrement.
 
 ![securisersip](images/secure-sip-line-step2.png){.thumbnail}
+<!-- CP-STEPS-END:suivre-consommations -->
 
 ## Aller plus loin
 

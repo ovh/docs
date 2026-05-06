@@ -1,14 +1,14 @@
 ---
-title: 'Comment utiliser un domaine OVHcloud avec iCloud Mail'
+title: 'Comment utiliser un nom de domaine OVHcloud avec iCloud Mail'
 excerpt: 'Découvrez comment configurer votre nom de domaine OVHcloud avec iCloud pour créer des adresses e-mail personnalisées'
-updated: 2025-08-27
+updated: 2026-03-27
 ---
 
 > [!warning]
 >
 > OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
 >
-> Nous vous recommandons de faire appel à un [prestataire spécialisé](/links/partner) si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section [« Aller plus loin »](#go-further) de ce tutoriel.
+> Nous vous recommandons de faire appel à un [prestataire spécialisé](/links/partner) si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section « [Aller plus loin](#go-further) » de ce tutoriel.
 >
 
 ## Objectif
@@ -18,51 +18,68 @@ Ce guide vous explique comment utiliser un nom de domaine enregistré chez OVHcl
 ## Prérequis
 
 - Disposer d'un [nom de domaine](/links/web/domains) enregistré chez OVHcloud.
-- Être connecté à votre [espace client OVHcloud](/links/manager).
-- Disposer d'un accès à la gestion de la zone DNS du nom de domaine concerné depuis l'[espace client OVHcloud](/links/manager).
 - Un identifiant Apple avec un abonnement **iCloud+**.
+
+<!-- CP-NAV-START:web-dns-zone -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Zones DNS](/links/control-panel/web-dns-zone)
+- **Pour accéder à vos services :** `Web Cloud`{.action} > `Zones DNS`{.action} > Sélectionnez votre nom de domaine
+
+---
+<!-- CP-NAV-END:web-dns-zone -->
 
 ## En pratique
 
-### Étape 1 : Activer le nom de domaine dans iCloud <a name="step1"></a>
+### 1 - Activer le nom de domaine dans iCloud <a name="step1"></a>
 
 Pour activer votre nom de domaine dans iCloud, suivez les instructions de la page « Add a domain you own to iCloud Mail on iCloud.com » de la [documentation officielle Apple](https://support.apple.com/guide/icloud/add-a-domain-you-own-mma473945269/icloud). Concentrez-vous sur la section « Step 3: Update the records with your domain registrar » (Mettre à jour les enregistrements auprès de votre registraire de domaine), pour relever les enregistrements DNS à ajouter dans votre zone DNS OVHcloud.
 
 À l’issue de cette étape, une liste d’enregistrements DNS (MX, CNAME, TXT) à configurer dans votre zone DNS OVHcloud vous sera communiquée par Apple. Conservez-les pour l’étape suivante.
 
-### Étape 2 :  Configurer les enregistrements DNS dans votre espace client OVHcloud
+<!-- CP-STEPS-START:configure-dns-records -->
+### 2 - Configurer les enregistrements DNS dans votre espace client OVHcloud
 
-1. Connectez-vous à votre [espace client OVHcloud](/links/manager).
-2. Rendez-vous dans la partie `Web Cloud`{.action}.
-3. Cliquez sur `Zones DNS`{.action}, puis choisissez le nom de domaine concerné.
-4. Ajoutez ou modifiez les enregistrements ci-dessous.
+Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **2** étapes.
 
-Pour savoir comment ajouter, modifier ou supprimer chaque type d'enregistrement DNS (MX, CNAME, TXT, etc.), consultez notre guide [Tout savoir sur les enregistrements DNS](/pages/web_cloud/domains/dns_zone_records).
+> [!tabs]
+> **Étape 1**
+>>
+>> Accédez à la page [Zones DNS](/links/control-panel/web-dns-zone), puis choisissez le nom de domaine concerné.
+>>
+>> ![Zones DNS](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
+>>
+> **Étape 2**
+>>
+>> Pour savoir comment ajouter, modifier ou supprimer chaque type d’enregistrement DNS (MX, CNAME, TXT, etc.), consultez notre guide « [Tout savoir sur les enregistrements DNS](/pages/web_cloud/domains/dns_zone_records) ».
+>>
+>> À l’aide des enregistrements DNS relevés précédemment ([Partie 1](#step1)), créez ou mettez à jour les champs correspondants dans votre zone DNS OVHcloud :
+>>
+>> - **MX** : pour la réception des e-mails.
+>> - **CNAME** : pour les clefs DKIM (`sig1._domainkey...`, `sig2._domainkey...`).
+>> - **TXT** : pour le SPF (fusionnez si un enregistrement SPF existe déjà).
+>> - **TXT DMARC** : facultatif mais recommandé ([Partie 3](#step3)).
+>>
+>> > [!warning]
+>> >
+>> > Utilisez uniquement des guillemets droits `”` tels qu’ils apparaissent dans la documentation technique d’Apple (généralement en version anglaise). Les guillemets typographiques « » ou “ “ affichés dans certaines traductions ne doivent pas être utilisés dans la configuration DNS.
+<!-- CP-STEPS-END:configure-dns-records -->
 
-À l’aide des enregistrements DNS relevés précédemment ([Étape 1](#step1)), créez ou mettez à jour les champs correspondants dans votre zone DNS OVHcloud :
-
-- **MX** : pour la réception des e-mails.
-- **CNAME** : pour les clefs DKIM (`sig1._domainkey...`, `sig2._domainkey...`).
-- **TXT** : pour le SPF (fusionnez si un enregistrement SPF existe déjà).
-- **TXT DMARC** : facultatif mais recommandé ([Étape 3](#step3)).
-
-> [!warning]
->
-> Utilisez uniquement des guillemets droits `"` tels qu’ils apparaissent dans la documentation technique d’Apple (généralement en version anglaise). Les guillemets typographiques « » ou “ ” affichés dans certaines traductions ne doivent pas être utilisés dans la configuration DNS.
-
-### Étape 3 : Ajouter un enregistrement DMARC (facultatif) <a name="step3"></a>
+### 3 - Ajouter un enregistrement DMARC (facultatif) <a name="step3"></a>
 
 Pour améliorer la délivrabilité de vos e-mails et éviter que vos messages arrivent en SPAM, ajoutez un enregistrement **DMARC**.
 
-Pour savoir comment créer un enregistrement DMARC dans votre espace client OVHcloud, consultez notre guide [Améliorer la sécurité des e-mails via un enregistrement DMARC](/pages/web_cloud/domains/dns_zone_dmarc).
+Pour savoir comment créer un enregistrement DMARC dans votre espace client OVHcloud, consultez notre guide « [Améliorer la sécurité des e-mails via un enregistrement DMARC](/pages/web_cloud/domains/dns_zone_dmarc) ».
 
-### Étape 4 : Vérifier et activer le domaine dans iCloud
+### 4 - Vérifier et activer le domaine dans iCloud
 
 Une fois les enregistrements DNS (MX, CNAME, TXT, DMARC) correctement ajoutés dans votre zone DNS OVHcloud, retournez sur [iCloud.com](https://www.icloud.com).
 
 Suivez les instructions de la page « Add a domain you own to iCloud Mail on iCloud.com » de la [documentation officielle Apple](https://support.apple.com/guide/icloud/add-a-domain-you-own-mma473945269/icloud). Concentrez-vous sur la section « Step 4: Finish setting up the domain ».
 
-Une fois cette étape terminée, votre domaine personnalisé est pleinement activé et vous pouvez créer jusqu’à 3 adresses par personne, dans le cadre familial.
+Une fois cette étape terminée, votre nom de domaine personnalisé est pleinement activé et vous pouvez créer jusqu’à 3 adresses par personne, dans le cadre familial.
 
 > [!warning]
 >
@@ -85,7 +102,7 @@ Si votre nom de domaine est associé à des serveurs DNS externes à OVHcloud (W
 
 #### DKIM incomplet
 
-- Apple vous invite à enregistrer plusieurs clefs DKIM (`sig1`, `sig2`, etc.) dans votre zone DNS. 
+- Apple vous invite à enregistrer plusieurs clefs DKIM (`sig1`, `sig2`, etc.) dans votre zone DNS.
 
 #### Délai de propagation
 

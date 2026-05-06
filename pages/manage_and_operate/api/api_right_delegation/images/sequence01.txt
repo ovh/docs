@@ -14,7 +14,7 @@ note over dev
     I need first to register my application
 end note
 
-dev -> api: go to https://api.ovh.com/createApp/
+dev -> api: go to https://auth.eu.ovhcloud.com/api/createApp
 api -> dev: return a new AK / AS
 dev ->> app: deploy application code with AK / AS
 

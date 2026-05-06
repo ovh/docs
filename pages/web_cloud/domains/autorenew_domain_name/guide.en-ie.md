@@ -1,8 +1,22 @@
 ---
 title: "How to renew OVHcloud domain names"
 excerpt: "Find out why and how to renew your OVHcloud domain names"
-updated: 2025-06-13
+updated: 2026-03-13
 ---
+
+<style>
+details>summary {
+    color:rgb(33, 153, 232) !important;
+    cursor: pointer;
+}
+details>summary::before {
+    content:'\25B6';
+    padding-right:1ch;
+}
+details[open]>summary::before {
+    content:'\25BC';
+}
+</style>
 
 ## Objective
 
@@ -19,8 +33,18 @@ This guide will help you manage your domain names, covering all aspects of their
 ## Requirements
 
 - A [domain name](/links/web/domains) registered with OVHcloud
-- Access to the [OVHcloud Control Panel](/links/manager)
 - Access to the [billing contact](/pages/account_and_service_management/account_information/managing_contacts) account for your OVHcloud services
+
+<!-- CP-NAV-START:billing-services -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [My offers and services](/links/control-panel/billing-services)
+- **Navigation path:** Click your name in the top right > `My offers and services`{.action}
+
+---
+<!-- CP-NAV-END:billing-services -->
 
 ## Instructions
 
@@ -41,69 +65,86 @@ If automatic renewal is enabled, your payment method must be valid before automa
 
 ### The different types of renewal
 
-#### Automatic renewal
-
-Here are the main advantages of automatic renewal:
-
-- **Simplicity**: No need to worry about renewal dates, everything is automated for you.
-- **Service continuity**: Your services remain active, without interruption.
-- **Saves time**: You avoid any manual steps and risk of forgetting.
-
-> [!warning]
->
-> If you do not have a valid payment method, the renewal cannot be processed, and you may lose your domain name. Please check that your payment method is valid.
->
-
-#### Manual renewal
-
-If you do not want automatic renewal, you can change the renewal type to **manual**.
-
-This renewal method may be useful:
-
-- If you are not sure whether you want to keep the service until its expiry date.
-- If you do not want your bills to be paid automatically from your payment method.
-
-If you choose manual renewal, you will receive several reminders before the expiry date, containing a link to renew the service when it expires.  
-You can also pay via the OVHcloud Control Panel.
-
-**Warning**, if you do not pay for the service with manual renewal active, you risk losing your domain name or having to pay a restoration fee (if the domain name is suspended).  
-However, if you do not wish to keep this service, you do not need to request its cancelltion.
+> [!tabs]
+> **Automatic renewal**
+>> Here are the main advantages of automatic renewal:
+>>
+>> - **Simplicity**: No need to worry about renewal dates, everything is automated for you.
+>> - **Service continuity**: Your services remain active, without interruption.
+>> - **Saves time**: You avoid any manual steps and risk of forgetting.
+>>
+>> > [!warning]
+>> >
+>> > If you do not have a valid payment method, the renewal cannot be processed, and you may lose your domain name. Please check that your payment method is valid.
+>>
+> **Manual renewal**
+>> If you do not want automatic renewal, you can change the renewal type to **manual**.
+>>
+>> This renewal method may be useful:
+>>
+>> - If you are not sure whether you want to keep the service until its expiry date.
+>> - If you do not want your bills to be paid automatically from your payment method.
+>>
+>> If you choose manual renewal, you will receive several reminders before the expiry date, containing a link to renew the service when it expires.
+>> You can also pay via the OVHcloud Control Panel.
+>>
+>> **Warning**, if you do not pay for the service with manual renewal active, you risk losing your domain name or having to pay a restoration fee (if the domain name is suspended).
+>> However, if you do not wish to keep this service, you do not need to request its cancellation.
 
 ### Changing the renewal mode of domain names
 
-In your [Control Panel](/links/manager), click on your name in the top right-hand corner of your screen, then on `My offers and services`{.action}. In the table, identify the domain names for which you would like to change the renewal mode.
+<!-- CP-STEPS-START:change-renewal-mode -->
+Click the tabs below to view each of the **2** steps.
 
-#### For a single domain name
-
-Perform the following actions:
-
-- In the table, identify the domain name whose renewal mode you want to change.
-- Click on the `...`{.action} button on the right in the row of the domain name.
-- Click the `Configure renewal`{.action} action.
-- Set renewal to `Manual`{.action} or `Automatic`{.action}.
-- If you choose automatic renewal, choose the automatic renewal frequency.
-- Confirm and pay.
-
-#### For multiple domain names
-
-Perform the following actions:
-
-- In the table, identify the domain names whose renewal mode you want to change.
-- Select the corresponding rows in the table by ticking the boxes on the left.
-- Click the `Actions`{.action} button in the top left of the table.
-- Select `Enable automatic payment`{.action} or `Disable automatic payment`{.action}.
+> [!tabs]
+> **Step 1**
+>>
+>> Go to the [My offers and services](/links/control-panel/billing-services) page. In the table, identify the domain name(s) for which you would like to change the renewal mode.
+>>
+>> ![My offers and services](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/my-services-en.png){.thumbnail}
+>>
+> **Step 2**
+>>
+>> **For a single domain name:**
+>>
+>> - Click on the `...`{.action} button on the right in the row of the domain name.
+>> - Click the `Configure renewal`{.action} action.
+>> - Set renewal to `Manual`{.action} or `Automatic`{.action}.
+>> - If you choose automatic renewal, choose the automatic renewal frequency.
+>> - Confirm and pay.
+>>
+>> **For multiple domain names:**
+>>
+>> - Select the corresponding rows in the table by ticking the boxes on the left.
+>> - Click the `Actions`{.action} button in the top left of the table.
+>> - Select `Enable automatic payment`{.action} or `Disable automatic payment`{.action}.
+<!-- CP-STEPS-END:change-renewal-mode -->
 
 ### Renewing a domain name before the expiry date
 
-Perform the following actions:
+<!-- CP-STEPS-START:renew-before-expiry -->
+Click the tabs below to view each of the **3** steps.
 
-- In the table, identify the domain name you want to renew.
-- Click on the `...`{.action} button to the right of the line.
-- Click the `Bring forward payment`{.action} action.
-- After being redirected to an online payment interface, follow the instructions.
-
-You can renew the service at any time before its expiry and also choose the renewal duration.  
-In this case, the duration of validity subscribed to will be added to the current validity period. You will not lose any remaining validity time.
+> [!tabs]
+> **Step 1**
+>>
+>> Go to the [My offers and services](/links/control-panel/billing-services) page. In the table, identify the domain name you want to renew.
+>>
+>> ![My offers and services](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/my-services-en.png){.thumbnail}
+>>
+> **Step 2**
+>>
+>> Click the `...`{.action} button to the right of the line, then click `Bring forward payment`{.action}.
+>>
+>> ![Bring forward payment option](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/forward-payment-en.png){.thumbnail}
+>>
+> **Step 3**
+>>
+>> After being redirected to an online payment interface, follow the instructions.
+>>
+>> You can renew the service at any time before its expiry and also choose the renewal duration.
+>> In this case, the duration of validity subscribed to will be added to the current validity period. You will not lose any remaining validity time.
+<!-- CP-STEPS-END:renew-before-expiry -->
 
 ### Checking the renewal status of a domain name
 
@@ -111,38 +152,71 @@ Once you have paid for your renewal, the domain name will be renewed the day bef
 
 The data displayed in the WHOIS will then be updated, confirming the correct domain name renewal.
 
-To check the renewal status of your domain name:
+<!-- CP-STEPS-START:check-renewal-status -->
+To check the renewal status of your domain name, click the tabs below to view each of the **2** steps.
 
-1. Log in to your [OVHcloud Control Panel](/links/manager).
-1. Go to the `Web Cloud`{.action} section.
-1. Click `Domain names`{.action} in the `Domains and DNS`{.action} section.
-1. In the table, check the renewal status in the `Status` column of the domain name concerned.
-
-The status `Renewal in progress` will appear once the payment has been made, until your domain name has been renewed with the registry.
+> [!tabs]
+> **Step 1**
+>>
+>> Go to the [Domain names](/links/control-panel/web-domains) page, then choose the domain name concerned.
+>>
+>> ![Domain Names](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
+>>
+> **Step 2**
+>>
+>> In the **General information** section, check the renewal status under **Domain name status**.
+>>
+>> The status `Renewal in progress` will appear once the payment has been made, until your domain name has been renewed with the registry.
+<!-- CP-STEPS-END:check-renewal-status -->
 
 ### Cancelling a domain name
 
-- In the table, identify the domain name you want to cancel.
-- Click on the `...`{.action} button on the right in the row of the domain name.
-- Click the `Cancel my subscription`{.action} option.
+<!-- CP-STEPS-START:cancel-domain -->
+Click the tabs below to view each of the **2** steps.
 
-This action is available for services set to **automatic renewal**. By choosing this action, automatic payment and renewal will be disabled for the service you have selected.
+> [!tabs]
+> **Step 1**
+>>
+>> Go to the [My offers and services](/links/control-panel/billing-services) page. In the table, identify the domain name you want to cancel.
+>>
+>> ![My offers and services](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/my-services-en.png){.thumbnail}
+>>
+> **Step 2**
+>>
+>> Click the `...`{.action} button to the right of the line, then click `Cancel my subscription`{.action}.
+>>
+>> This action is available for services set to **automatic renewal**. By choosing this action, automatic payment and renewal will be disabled for the service you have selected.
+<!-- CP-STEPS-END:cancel-domain -->
 
 > [!primary]
 >
 > The domain name cancellation will end when it expires.
->
 
-For more information on cancelling OVHcloud services, follow the instructions in the guide “**[How to cancel my OVHcloud services](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_cancel_services)**”.
+For more information, refer to our guide “**[How to cancel my OVHcloud services](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_cancel_services)**”.
 
-### Access domain name renewal bills
+### Paying a domain name renewal bill
 
-A `Bill to pay` statement is displayed when an invoice is awaiting payment and when:
+<!-- CP-STEPS-START:pay-renewal-bill -->
+Click the tabs below to view each of the **2** steps.
 
- - You have services that renew automatically.
- - You have not registered a payment method that can be used to pay your bills.
-
-Simply click the `Pay my bill`{.action} option, which will redirect you to a payment form.
+> [!tabs]
+> **Step 1**
+>>
+>> Go to the [My offers and services](/links/control-panel/billing-services) page. In the table, identify the domain name for which you need to pay a renewal bill.
+>>
+>> ![My offers and services](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/my-services-en.png){.thumbnail}
+>>
+> **Step 2**
+>>
+>> Click the `...`{.action} button to the right of the line, then click `Pay my bill`{.action}.
+>> You will be redirected to an online payment platform.
+>>
+>> > [!primary]
+>> > The **Bill to pay** statement is displayed when an invoice is awaiting payment and when:
+>> >
+>> > - You have services that renew automatically.
+>> > - You have not registered a payment method that can be used to pay your bills.
+<!-- CP-STEPS-END:pay-renewal-bill -->
 
 ## FAQ
 
@@ -174,18 +248,26 @@ You can be automatically refunded up to 10 days before the effective renewal dat
 
 Once the renewal fee has been paid, we will send the request to the appropriate registry.
 
-Your domain name’s status will then change to `Renewal in progress`.
+Your domain name's status will then change to **renewal in progress**.
 
-Once the registry has renewed your domain name (approximately one month after the renewal fees have been paid), its status will change back to `registered`.
+Once the registry has renewed your domain name (approximately one month after the renewal fees have been paid), your domain name's status will change back to **registered**.
 
 WHOIS data will then be updated.
 
-To check the renewal status of your domain name:
+<!-- CP-STEPS-START:faq-check-renewal-status -->
+To check the renewal status of your domain name, click the tabs below to view each of the **2** steps.
 
-1. Log in to your [OVHcloud Control Panel](/links/manager).
-1. Go to the `Web Cloud`{.action} section.
-1. Click `Domain names`{.action} in the `Domains and DNS`{.action} section.
-1. In the table that pops up, check the renewal status in the `Status` column of the domain name concerned.
+> [!tabs]
+> **Step 1**
+>>
+>> Go to the [Domain names](/links/control-panel/web-domains) page, then choose the domain name concerned.
+>>
+>> ![Domain Names](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
+>>
+> **Step 2**
+>>
+>> In the **General information** section, check the renewal status under **Domain name status**.
+<!-- CP-STEPS-END:faq-check-renewal-status -->
 
 ///
 

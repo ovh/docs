@@ -14,11 +14,21 @@ This guide shows how to retrieve the correct gateway and add it to your VDC.
 
 - A [Public VCF as-a-Service](/links/hosted-private-cloud/vmware-vcd) organization with a delivered public IP block.
 - Technical administrator rights on [VMware vSphere on OVHcloud](/links/hosted-private-cloud/vmware).
-- Access to the [OVHcloud Control Panel](/links/manager).
+
+<!-- CP-NAV-START:privatecloud-vmware-vcf -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [VMware Cloud Foundation](/links/control-panel/privatecloud-vmware-vcf)
+- **Navigation path:** `Hosted Private Cloud`{.action} > `Public VCF as-a-Service`{.action} > Select your VCF service
+
+---
+<!-- CP-NAV-END:privatecloud-vmware-vcf -->
 
 ## Instructions
 
-1. Log in to your [OVHcloud Control Panel](/links/manager). Click `Hosted Private Cloud`{.action}, then `Public VCF as-a-Service`{.action}, and select your organization.
+1. Select your organization.
 
     ![Open organization](images/vcd-declare-public-gateway-01.png){.thumbnail}
 

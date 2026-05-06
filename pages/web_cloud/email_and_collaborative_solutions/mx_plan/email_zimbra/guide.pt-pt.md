@@ -1,7 +1,7 @@
 ---
 title: "Utilizar o webmail Zimbra"
 excerpt: "Descubra a interface do webmail Zimbra para os endereços de e-mail MX Plan da OVHcloud"
-updated: 2025-10-22
+updated: 2026-02-26
 ---
 
 <style>
@@ -45,6 +45,9 @@ A OVHcloud fornece um serviço de webmail chamado Zimbra para aceder a uma conta
     - [Gestão de calendários](#calendar-management)
     - [Tarefas](#tasks)
 - [Armazenamento](#storage)
+    - [Adicionar um ficheiro](#storage-add)
+    - [Partilhar um ficheiro ou uma pasta](#storage-share)
+    - [Editar um documento](#storage-onlyoffice)
 - [Filtros](#filters)
     - [Compreender como configurar os seus filtros](#filters-howto)
     - [Criar um filtro](#filters-creation)
@@ -469,10 +472,6 @@ De seguida, clique em `Guardar`{.action} para finalizar a criação da sua taref
 >
 > A funcionalidade de armazenamento chamada "Porta-documentos" só está disponível a partir da oferta Zimbra Pro.
 
-> [!warning]
->
-> O Zimbra Pro está disponível em versão beta e algumas funcionalidades estão ainda a ser melhoradas.
-
 Clique no ícone `Porta-documentos`{.action} situado na barra superior para aceder ao seu espaço de armazenamento. Poderá guardar os seus ficheiros e partilhá-los.
 
 1. Na coluna da esquerda, encontrará as pastas do seu espaço de armazenamento.
@@ -486,7 +485,7 @@ Clique no ícone `Porta-documentos`{.action} situado na barra superior para aced
 
 ![Zimbra - storage](images/zimbra-storage-01.png){.thumbnail .w-600}
 
-#### Adicionar um ficheiro
+#### Adicionar um ficheiro <a name="storage-add"></a>
 
 Para adicionar um ficheiro ao espaço de armazenamento, efetue os seguintes passos:
 
@@ -496,7 +495,7 @@ Para adicionar um ficheiro ao espaço de armazenamento, efetue os seguintes pass
 
 ![Zimbra - storage](images/zimbra-storage-add-01.png){.thumbnail .w-600}
 
-#### Partilhar um ficheiro ou uma pasta
+#### Partilhar um ficheiro ou uma pasta <a name="storage-share"></a>
 
 A partilha permite-lhe dar acesso a uma pasta ou a um ficheiro no seu armazenamento a uma pessoa terceira, fora da sua conta Zimbra.
 
@@ -528,6 +527,30 @@ A partilha permite-lhe dar acesso a uma pasta ou a um ficheiro no seu armazename
 O convidado recebe um e-mail convidando-o a criar uma conta Zimbra composta por um identificador de cliente e uma palavra-passe. Esta conta permite aceder a uma interface Zimbra limitada ao que foi partilhado.
 
 ![Zimbra - storage](images/zimbra-storage-share-invite-01.png){.thumbnail .w-600}
+
+#### Editar um documento <a name="storage-onlyoffice"></a>
+
+> [!success]
+>
+> A funcionalidade de edição de documentos a partir do espaço "Porta-documentos" só está disponível a partir da oferta Zimbra Pro.
+
+A partir do Porta-documentos da sua conta Zimbra, pode editar os seus ficheiros de texto, folhas de cálculo ou apresentações com a suite ONLYOFFICE integrada. Para editar um documento:
+
+- Clique no ícone `Porta-documentos`{.action} situado na barra superior para aceder ao seu espaço de armazenamento.
+- Selecione o ficheiro que pretende editar.
+- Na barra superior, clique em `Editar`{.action}.
+
+![Zimbra - storage](images/zimbra-storage-onlyoffice-01.png){.thumbnail .w-600}
+
+- O editor ONLYOFFICE abre-se num novo separador.
+
+![Zimbra - storage](images/zimbra-storage-onlyoffice-02.png){.thumbnail .w-600}
+
+As alterações efetuadas no editor são automaticamente guardadas durante a edição ou quando fecha o separador.
+
+> [!success]
+>
+> Se pretender mais informações sobre a edição de documentos no ONLYOFFICE, [consulte a documentação oficial](https://helpcenter.onlyoffice.com/docs).
 
 ### Filtros <a name="filters"></a>
 

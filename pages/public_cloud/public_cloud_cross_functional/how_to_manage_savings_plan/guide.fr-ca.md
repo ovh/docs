@@ -37,13 +37,24 @@ Ce guide a pour objectif de fournir une méthode claire et détaillée pour la c
 ## Prérequis
 
 - Un [projet Public Cloud OVHcloud](/links/public-cloud/public-cloud) dans votre compte OVHcloud.
-- Être connecté à l'[espace client OVHcloud](/links/manager) ou à l'[API OVHcloud](/links/api) (créez vos identifiants en consultant [ce guide](/pages/manage_and_operate/api/first-steps)).
+- Avoir accès à l'[API OVHcloud](/links/api) (créez vos identifiants en consultant [ce guide](/pages/manage_and_operate/api/first-steps)).
 - Être familier de l'utilisation de [Terraform](/pages/public_cloud/public_cloud_cross_functional/how_to_use_terraform) si vous souhaitez l'utiliser.
 - Connaitre les principes d'un [Savings Plan](/links/public-cloud/savings-plan)
 
 ## En pratique
 
-Connectez-vous à l'[espace client OVHcloud](/links/manager) et rendez-vous dans la section `Public Cloud`{.action}. Après avoir sélectionné votre projet Public Cloud, cliquez sur `Savings Plans`{.action} dans la barre de navigation de gauche sous **Paramètres**.
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Projets Public Cloud](/links/control-panel/publiccloud-projects)
+- **Pour accéder à vos services :** `Public Cloud`{.action} > Sélectionnez votre projet
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
+
+Cliquez sur `Savings Plans`{.action} dans la barre de navigation de gauche sous **Paramètres**.
 
 ### Créer un Savings plan
 

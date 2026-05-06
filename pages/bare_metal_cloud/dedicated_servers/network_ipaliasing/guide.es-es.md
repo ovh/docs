@@ -1,6 +1,6 @@
 ---
-title: 'Configurar una IP como alias'
-excerpt: 'Descubra cómo añadir direcciones Additional IP a la configuración de un servidor'
+title: "Configurar el IP aliasing en un servidor dedicado"
+excerpt: "Añada y configure direcciones Additional IP en su servidor dedicado OVHcloud para un alojamiento multisitio o multiservicio"
 updated: 2025-12-04
 ---
 
@@ -321,7 +321,7 @@ En los ejemplos siguientes utilizaremos el editor de texto `nano`. En algunos si
 >> > Es importante mantener la alineación de cada elemento de este archivo, como se muestra en el ejemplo anterior. No utilice el tabulador para crear el espacio. Sólo es necesaria la tecla de espacio.
 >> >
 >>
->>/// details | **Ejemplo**
+>> /// details | **Ejemplo**
 >>
 >> ```yaml
 >> network:
@@ -359,7 +359,7 @@ En los ejemplos siguientes utilizaremos el editor de texto `nano`. En algunos si
 >>
 >> Para cada Additional IP que vaya a configurar, crearemos un fichero de configuración independiente con los siguientes parámetros: `ifcfg-NETWORK_INTERFACE:ID`. Donde `NETWORK_INTERFACE` representa la interfaz física y `ID` es la interfaz de red virtual o el alias ethernet que empieza por un valor de 0. Por ejemplo, para nuestra interfaz llamada `eth0`, el primer alias es `eth0:0`, el segundo alias es `eth0:1`, etc...
 >>
->> **1. Crear una copia de seguridad del archivo de configuración**
+>> **1. Determinar la interfaz**
 >>
 >> ```sh
 >> ip a
@@ -430,7 +430,7 @@ En los ejemplos siguientes utilizaremos el editor de texto `nano`. En algunos si
 >>
 >> **3. Comprobar la configuración IP actual**
 >>
->> En la sección `IP Functions`{.action}, haga clic en `Show or Delete Current IP Addresses`{.action} para comprobar que la dirección Aditional IP se ha añadido correctamente.
+>> En la sección `IP Functions`{.action}, haga clic en `Show or Delete Current IP Addresses`{.action} para comprobar que la dirección Additional IP se ha añadido correctamente.
 >>
 >> ![check configurado por IP](images/Cpanel-2024-1.png){.thumbnail}
 >>
@@ -548,7 +548,7 @@ En los ejemplos siguientes utilizaremos el editor de texto `nano`. En algunos si
 >>
 >> ![acceso a la gestión de las direcciones IP](images/pleskip1.png){.thumbnail}
 >>
->> Haga clic en `IP Addresses`{.action} bajo **Tools & Settings**.
+>> Haga clic en `IP Addresses`{.action} bajo **Tools & Resources**.
 >>
 >> **2. Añadir la información IP adicional**
 >>
@@ -567,7 +567,7 @@ En los ejemplos siguientes utilizaremos el editor de texto `nano`. En algunos si
 >> ![configuración IP actual](images/Plesk-2024-2.png){.thumbnail}
 >>
 
-#### Resolución de fallos
+### Resolución de fallos
 
 Si no consigue establecer una conexión entre la red pública y su alias IP y si tiene algún problema de red, reinicie el servidor en [modo de rescate](/pages/bare_metal_cloud/dedicated_servers/rescue_mode) y configure el alias directamente en el servidor.
 
@@ -577,7 +577,7 @@ Para ello, una vez que haya reiniciado el servidor en modo de rescate, ejecute e
 ifconfig eth0:0 ADDITIONAL_IP netmask 255.255.255.255 broadcast ADDITIONAL_IP up
 ```
 
-Donde podrá sustituir "ADDITIONAL_IP" por la auténtica Additional IP.
+Donde podrá sustituir `ADDITIONAL_IP` por la auténtica Additional IP.
 
 A continuación, solo tiene que hacer ping desde su Additional IP hacia el exterior. Si funciona, es probable que haya un error de configuración que deba corregirse. Si, por el contrario, la dirección IP sigue sin funcionar, abra un tíquet con el equipo de soporte a través del [Centro de ayuda de OVHcloud](https://help.ovhcloud.com/csm?id=csm_get_help) y especifique lo siguiente:
 

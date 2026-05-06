@@ -13,7 +13,7 @@ updated: 2025-12-19
 
 After exploring how to use [AI Endpoints with LangChain4j](/pages/public_cloud/ai_machine_learning/endpoints_tuto_07_chatbot_langchain4j_quarkus), it's time to level up and build a chatbot that supports **real-time streaming responses**.
 
-In this tutorial, you'll learn how to use **[LangChain4j](https://github.com/langchain4j/langchain4j)** with **[Quarkus](https://github.com/quarkusio/quarkus)** to create a chatbot that streams LLM-generated responses using **[AI Endpoints](https://endpoints.ai.cloud.ovh.net/)**.
+In this tutorial, you'll learn how to use **[LangChain4j](https://github.com/langchain4j/langchain4j)** with **[Quarkus](https://github.com/quarkusio/quarkus)** to create a chatbot that streams LLM-generated responses using **[AI Endpoints](/links/public-cloud/ai-endpoints)**.
 
 ## Objective
 
@@ -28,7 +28,7 @@ This tutorial demonstrates how to:
 - **Streaming LLM Response**: Instead of waiting for a full response from the model, streaming allows the application to start processing output tokens as they’re generated. This creates a smoother, faster user experience—especially useful for chatbots.
 - **[LangChain4j](https://github.com/langchain4j/langchain4j)**: Java-based framework inspired by [LangChain](https://github.com/langchain-ai/langchain), designed to simplify the integration of LLMs (Large Language Models) into applications. It offers abstractions and annotations for building intelligent agents and chatbots. Note that LangChain4j is not officially maintained by the LangChain team, despite the similar name.
 - **[Quarkus](https://quarkus.io/)**: A Kubernetes-native Java framework designed to optimize Java applications for containers and the cloud. In this tutorial we will use the [quarkus-langchain4j](https://github.com/quarkiverse/quarkus-langchain4j/) extension.
-- **[AI Endpoints](https://endpoints.ai.cloud.ovh.net/)**: A serverless platform by OVHcloud providing easy access to a variety of world-renowned AI models including Mistral, LLaMA, and more. This platform is designed to be simple, secure, and intuitive, with data privacy as a top priority.
+- **[AI Endpoints](/links/public-cloud/ai-endpoints)**: A serverless platform by OVHcloud providing easy access to a variety of world-renowned AI models including Mistral, LLaMA, and more. This platform is designed to be simple, secure, and intuitive, with data privacy as a top priority.
 
 ## Requirements
 
@@ -178,7 +178,7 @@ You’ll see the response streamed directly from the AI model, token by token! �
 
 ## Conclusion
 
-In just a few steps, you have created your own **streaming AI chatbot** powered by [LangChain4j](https://github.com/langchain4j/langchain4j), [Quarkus](https://github.com/quarkusio/quarkus), and [OVHcloud AI Endpoints](https://endpoints.ai.cloud.ovh.net/).
+In just a few steps, you have created your own **streaming AI chatbot** powered by [LangChain4j](https://github.com/langchain4j/langchain4j), [Quarkus](https://github.com/quarkusio/quarkus), and [OVHcloud AI Endpoints](/links/public-cloud/ai-endpoints).
 
 This approach unlocks real-time user interactions, perfect for embedding in chat UIs or customer support tools.
 

@@ -1,7 +1,7 @@
 ---
 title: "Tasks Management"
 excerpt: "How asynchronous tasks on domain names work"
-updated: 2022-05-05
+updated: 2026-02-10
 ---
 
 <!-- Reminder to put at the beginning of each page -->
@@ -190,7 +190,7 @@ There are many different types of tasks (more than thirty), all with their own s
 
 - `DomainCreate`: creation of a domain name. Errors will generally be related to eligibility requirements, especially in the case of ccTLDs.
 - `DomainIncomingTransfer`, `DomainAfterMarket`: transfer of a domain name from another registrar or from an aftermarket. Errors will generally be related to the `auth code` allowing the validation of the transfer.
-- `DomainTrade`: change of owner contact. Errors will usually be related to eligibility incompatibilities on the receiving contact.
+- `DomainTrade`: change of holder contact. Errors will usually be related to eligibility incompatibilities on the receiving contact.
 - `DomainContactUpdate`: modification of contact information. Errors will generally be related to semantically invalid information, formatting errors or eligibility incompatibilities.
 - `DomainDnsUpdate`: changes regarding DNS configuration. Errors will generally be related to invalid DNS servers, or glue record configuration.
 - `DomainDsUpdate`: changes regarding DNSSEC keys. Errors will generally be related synchronizations issues between our system and the registry.

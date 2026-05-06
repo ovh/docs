@@ -1,6 +1,6 @@
 ---
 title: Creare la prima campagna SMS
-excerpt: Come creare la prima campagna di invio SMS
+excerpt: Scopri come creare e lanciare la tua prima campagna di invio SMS utilizzando gli strumenti integrati nello Spazio Cliente OVHcloud
 updated: 2022-08-05
 ---
 
@@ -15,19 +15,27 @@ OVHcloud mette a tua disposizione strumenti integrati nello Spazio Cliente per l
 ## Prerequisiti
 
 - Disporre di un account SMS OVHcloud con saldo SMS.
-- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager), sezione `Telecom`{.action} > `SMS`{.action}
+
+<!-- CP-NAV-START:telecom-sms -->
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [SMS](/links/control-panel/telecom-sms)
+- **Percorso di navigazione:** `Telecom`{.action} > `SMS`{.action} > Seleziona il tuo SMS account
+
+---
+<!-- CP-NAV-END:telecom-sms -->
 
 ![Spazio Cliente Telecom SMS](/pages/assets/screens/control_panel/product-selection/telecom/tpl-telecom-03-en-sms.png){.thumbnail}
 
 ## Procedura
 
-Accedi allo [Spazio Cliente OVHcloud](/links/manager) e seleziona `Telecom`{.action}. Clicca su `SMS`{.action} e poi seleziona il tuo account SMS.
-
 La barra degli strumenti e le scorciatoie ti permetteranno di accedere alle funzionalità principali per inviare la tua campagna di SMS.
 
 ![firstsms](images/firstsms01.png){.thumbnail}
 
-### Step 1: aggiungi contatti
+### Passaggio 1: Aggiungi contatti
 
 #### Aggiungi una lista di contatti
 
@@ -41,7 +49,7 @@ Questa guida ti mostra come [creare una lista di destinatari SMS](/pages/web_clo
 
 #### Aggiungi una rubrica indirizzi
 
-Contrariamente alle liste di contatti, le rubriche contengono contatti che potete nominare e quindi più facilmente identificabili per campagne mirate.
+Contrariamente alle liste di contatti, le rubriche contengono contatti che puoi nominare e quindi più facilmente identificabili per campagne mirate.
 
 Per aggiungere una rubrica indirizzi, clicca sulla scheda `Contatti`{.action} e poi su `Rubrica`{.action}.
 
@@ -49,7 +57,7 @@ Per aggiungere una rubrica indirizzi, clicca sulla scheda `Contatti`{.action} e 
 
 Per saperne di più, consulta la guida [Gestire le rubriche SMS](/pages/web_cloud/messaging/sms/gerer_mes_carnets_dadresses_sms).
 
-### Step 2: crea un mittente
+### Passaggio 2: Crea un mittente
 
 Di default, l’invio di SMS da un account OVHcloud in Francia si effettua da un numero breve che accetta risposte. Potrebbe essere più opportuno richiedere un mittente alfanumerico, dalla scheda `Mittenti`{.action} per consentire l’invio di SMS a nome della tua società o della tua organizzazione.
 
@@ -57,7 +65,7 @@ Di default, l’invio di SMS da un account OVHcloud in Francia si effettua da un
 
 A questo proposito, consulta la sezione dedicata alla scelta del mittente per i tuoi SMS della guida [“Inviare sms dallo Spazio Cliente”](/pages/web_cloud/messaging/sms/envoyer_des_sms_depuis_mon_espace_client#step-3-scegli-il-mittente-del-tuo-sms).
 
-### Step 3: invio di una campagna SMS
+### Passaggio 3: Invio di una campagna SMS
 
 La scheda `Messaggio e campagna`{.action} ti permette di accedere alle opzioni di invio, alla cronologia dei tuoi SMS inviati e ricevuti e all'invio di SMS pianificati nell'ambito di invii differiti.
 

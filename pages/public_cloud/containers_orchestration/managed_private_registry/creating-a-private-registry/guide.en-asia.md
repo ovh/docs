@@ -34,9 +34,18 @@ Today, OVHcloud allows you to spawn your own authenticated Docker Registry where
 
 OVHcloud Managed Private Registry service provides you a managed, authenticated Docker registry where you can privately store your Docker images. This guide will explain how to create your Private Registry.
 
-## Instructions
+<!-- CP-NAV-START:publiccloud-projects -->
+---
 
-1. First, log in to the [OVHcloud Control Panel](/links/manager).
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Navigation path:** `Public Cloud`{.action} > Select your project
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
+
+## Instructions
 
 1. In the left menu, in the `Containers & Orchestration`{.action} section, select `Managed Private Registry`{.action}.
 

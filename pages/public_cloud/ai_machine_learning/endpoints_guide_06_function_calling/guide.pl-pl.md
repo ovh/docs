@@ -1,7 +1,7 @@
 ---
 title: AI Endpoints - Function Calling
 excerpt: Learn how to use Function Calling with OVHcloud AI Endpoints
-updated: 2025-12-19
+updated: 2026-02-09
 ---
 
 > [!primary]
@@ -11,7 +11,7 @@ updated: 2025-12-19
 
 ## Introduction
 
-[AI Endpoints](https://endpoints.ai.cloud.ovh.net/) is a serverless platform provided by OVHcloud that offers easy access to a selection of world-renowned, pre-trained AI models. The platform is designed to be simple, secure, and intuitive, making it an ideal solution for developers who want to enhance their applications with AI capabilities without extensive AI expertise or concerns about data privacy.
+[AI Endpoints](/links/public-cloud/ai-endpoints) is a serverless platform provided by OVHcloud that offers easy access to a selection of world-renowned, pre-trained AI models. The platform is designed to be simple, secure, and intuitive, making it an ideal solution for developers who want to enhance their applications with AI capabilities without extensive AI expertise or concerns about data privacy.
 
 **Function Calling**, also known as tool calling, is a feature that enables a large language model (LLM) to trigger user-defined functions (also named tools). These tools are defined by the developer and implement specific behaviors such as calling an API, fetching data or calculating values, which extends the capabilities of the LLM.
 
@@ -19,10 +19,10 @@ The LLM will identify which tool(s) to call and the arguments to use. This featu
 
 ## Objective
 
-This documentation provides an overview on how to use function calling with the AI models offered on [AI Endpoints](https://endpoints.ai.cloud.ovh.net/).
+This documentation provides an overview on how to use function calling with the AI models offered on [AI Endpoints](/links/public-cloud/ai-endpoints).
 The examples provided in this guide will be using the [Mistral-Nemo-Instruct-2407](https://endpoints.ai.cloud.ovh.net/models/mistral-nemo-instruct-2407) model.
 
-Visit our [Catalog](https://endpoints.ai.cloud.ovh.net/catalog) to find out which models are compatible with Function Calling.
+Visit our [Catalog](/links/public-cloud/ai-endpoints-catalog) to find out which models are compatible with Function Calling.
 
 ## Requirements
 
@@ -33,12 +33,6 @@ Make sure you have a [Python](https://www.python.org/) environment configured, a
 ```sh
 pip install openai
 ```
-
-### Authentication & rate limiting
-
-All the examples provided in this guide use the anonymous authentication which makes it simpler to use but may cause rate limiting issues. If you wish to enable authentication using your own token, simply specify your API key within the requests.
-
-Follow the instructions in the [AI Endpoints - Getting Started](/pages/public_cloud/ai_machine_learning/endpoints_guide_01_getting_started) guide for more information on authentication.
 
 ## Function Calling overview
 
@@ -60,8 +54,8 @@ To illustrate the use of function calling and progressively introduce the import
 
 The assistant will be able to:
 
- * log time spent on a task
- * generate a time report
+* log time spent on a task
+* generate a time report
 
 Each task has a name, category and total duration in minutes. Categories are a fixed list of strings, for example "Code" or "Meetings". A time report can be generated for a category of task.
 
@@ -148,14 +142,19 @@ TOOLS = [
 
 With our tools ready, we can now try to call the model and see if it understands our tools definition. We use the OpenAI Python SDK to call the ``/v1/chat/completions`` route on the endpoint, passing the tools definition in the `tools` parameter.
 
-Let's send a simple user message: `log 1 hour team meeting` and see what the model answers.
+Let's send a simple user message: `log 1 hour team meeting` and see what the model answers. 
+
+> [!primary]
+>
+> To obtain an API access key for authenticated access, please follow the instructions given in the [AI Endpoints - Getting Started](/pages/public_cloud/ai_machine_learning/endpoints_guide_01_getting_started) guide. Otherwise, you will be rate limited.
+>
 
 ```python
 import os
 from openai import OpenAI
 
 MODEL_NAME = "Mistral-Nemo-Instruct-2407"
-API_KEY = os.environ.get("OVH_AI_ENDPOINTS_API_KEY")
+API_KEY = os.environ.get("OVH_AI_ENDPOINTS_ACCESS_TOKEN")
 
 # Initialize the OpenAI client
 client = OpenAI(
@@ -385,8 +384,8 @@ The assistant has generated a response acknowledging the creation of the task.
 
 To make our assistant more robust and powerful, it can be useful to add a system prompt that:
 
- * explains what is expected from the model.
- * provides useful information to the model, such as the current existing tasks and categories.
+* explains what is expected from the model.
+* provides useful information to the model, such as the current existing tasks and categories.
 
 ```python
 SYSTEM_PROMPT = \
@@ -614,62 +613,137 @@ Here are the available values for this parameter and the impact on the output.
 
 It is possible to use Function Calling in streaming mode, by setting `stream` to `true` in your request.
 
-Let's see an example with cURL and the LLaMa 3.1 8B model:
+Below are two cURL examples showing how to make such a request, using the LLaMa 3.1 8B model:
 
-```bash
-curl -X 'POST' \
-        'https://oai.endpoints.kepler.ai.cloud.ovh.net/v1/chat/completions' \
-        -H 'accept: application/json' \
-        -H 'Content-Type: application/json' \
-        -d '{ 
-            "max_tokens": 100,
-            "messages": [
-                {
-                    "content": "What is the current weather in Paris?",
-                    "role": "user"
-                }
-            ],
-            "model": "Llama-3.1-8B-Instruct",
-            "seed": null,
-            "stream": true,
-            "temperature": 0.1,
-            "tool_choice": "auto",
-            "tools": [
-                {
-                    "function": {
-                        "description": "Get the current weather in a given location",
-                        "name": "get_current_weather",
-                        "parameters": {
-                            "properties": {
-                                "country": {
-                                    "description": "The two-letters country code",
-                                    "type": "string"
-                                },
-                                "location": {
-                                    "description": "The city",
-                                    "type": "string"
-                                },
-                                "unit": {
-                                    "enum": [
-                                        "celsius",
-                                        "fahrenheit"
-                                    ],
-                                    "type": "string"
-                                }
-                            },
-                            "required": [
-                                "location",
-                                "country"
-                            ],
-                            "type": "object"
-                        }
-                    },
-                    "type": "function"
-                }
-            ],
-            "top_p": 1
-        }'
-```
+- One using **anonymous access**, which is subject to rate limits.
+- One using **AI Endpoints token authentication**, which avoids rate limiting.
+
+> [!primary]
+>
+> To obtain an API access token for authenticated access, please follow the instructions given in the [AI Endpoints - Getting Started](/pages/public_cloud/ai_machine_learning/endpoints_guide_01_getting_started) guide.
+>
+
+> [!tabs]
+> **Anonymous Mode (Rate-Limited)**
+>> ```bash
+>> curl -X 'POST' \
+>>   'https://oai.endpoints.kepler.ai.cloud.ovh.net/v1/chat/completions' \
+>>   -H 'accept: application/json' \
+>>   -H 'Content-Type: application/json' \
+>>   -d '{
+>>     "max_tokens": 100,
+>>     "messages": [
+>>       {
+>>         "content": "What is the current weather in Paris?",
+>>         "role": "user"
+>>       }
+>>     ],
+>>     "model": "Llama-3.1-8B-Instruct",
+>>     "seed": null,
+>>     "stream": true,
+>>     "temperature": 0.1,
+>>     "tool_choice": "auto",
+>>     "tools": [
+>>       {
+>>         "function": {
+>>           "description": "Get the current weather in a given location",
+>>           "name": "get_current_weather",
+>>           "parameters": {
+>>             "properties": {
+>>               "country": {
+>>                 "description": "The two-letter country code",
+>>                 "type": "string"
+>>               },
+>>               "location": {
+>>                 "description": "The city",
+>>                 "type": "string"
+>>               },
+>>               "unit": {
+>>                 "enum": [
+>>                   "celsius",
+>>                   "fahrenheit"
+>>                 ],
+>>                 "type": "string"
+>>               }
+>>             },
+>>             "required": [
+>>               "location",
+>>               "country"
+>>             ],
+>>             "type": "object"
+>>           }
+>>         },
+>>         "type": "function"
+>>       }
+>>     ],
+>>     "top_p": 1
+>>   }'
+>> ```
+> **Authenticated Mode (No Rate Limit)**
+>>
+>> First, export your token:
+>>
+>> ```bash
+>> export OVH_AI_ENDPOINTS_ACCESS_TOKEN="your_token_value"
+>> ```
+>>
+>> Then, execute the request:
+>>
+>> ```bash
+>> curl -X 'POST' \
+>>   'https://oai.endpoints.kepler.ai.cloud.ovh.net/v1/chat/completions' \
+>>   -H 'accept: application/json' \
+>>   -H 'Content-Type: application/json' \
+>>   -H "Authorization: Bearer $OVH_AI_ENDPOINTS_ACCESS_TOKEN" \
+>>   -d '{
+>>     "max_tokens": 100,
+>>     "messages": [
+>>       {
+>>         "content": "What is the current weather in Paris?",
+>>         "role": "user"
+>>       }
+>>     ],
+>>     "model": "Llama-3.1-8B-Instruct",
+>>     "seed": null,
+>>     "stream": true,
+>>     "temperature": 0.1,
+>>     "tool_choice": "auto",
+>>     "tools": [
+>>       {
+>>         "function": {
+>>           "description": "Get the current weather in a given location",
+>>           "name": "get_current_weather",
+>>           "parameters": {
+>>             "properties": {
+>>               "country": {
+>>                 "description": "The two-letter country code",
+>>                 "type": "string"
+>>               },
+>>               "location": {
+>>                 "description": "The city",
+>>                 "type": "string"
+>>               },
+>>               "unit": {
+>>                 "enum": [
+>>                   "celsius",
+>>                   "fahrenheit"
+>>                 ],
+>>                 "type": "string"
+>>               }
+>>             },
+>>             "required": [
+>>               "location",
+>>               "country"
+>>             ],
+>>             "type": "object"
+>>           }
+>>         },
+>>         "type": "function"
+>>       }
+>>     ],
+>>     "top_p": 1
+>>   }'
+>> ```
 
 You will get tool call deltas in the server-side events chunks, with this format:
 
@@ -730,14 +804,12 @@ Some additional considerations regarding prompts and model parameters:
 
 ## Conclusion
 
-In this guide, we have explained how to use Function Calling with the [AI Endpoints](https://endpoints.ai.cloud.ovh.net/) models.
+In this guide, we have explained how to use Function Calling with the [AI Endpoints](/links/public-cloud/ai-endpoints) models.
 We have provided a comprehensive overview of the feature which can help you perfect your integration of LLM for your own application.
 
 ## Go further
 
 Browse the full [AI Endpoints documentation](/products/public-cloud-ai-and-machine-learning-ai-endpoints) to further understand the main concepts and get started.
-
-To discover how to build complete and powerful applications using AI Endpoints, explore our dedicated [AI Endpoints guides](/products/public-cloud-ai-and-machine-learning-ai-endpoints).
 
 If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for a custom analysis of your project.
 

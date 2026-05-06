@@ -14,7 +14,17 @@ Sie können die Authentifizierungsmethode **Single Sign-On** (SSO) verwenden, um
 
 - Sie sind Administrator eines Okta Dienstes.
 - Sie verfügen über einen [OVHcloud Kunden-Account](/pages/account_and_service_management/account_information/ovhcloud-account-creation).
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
+
+<!-- CP-NAV-START:iam-saml-sso -->
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direkter Link:** [SAML SSO](/links/control-panel/iam-saml-sso)
+- **Navigationspfad:** `Identität, Sicherheit und Operationen`{.action} > `Benutzer`{.action} > `SSO-Verbindung`{.action}
+
+---
+<!-- CP-NAV-END:iam-saml-sso -->
 
 ## In der praktischen Anwendung
 
@@ -78,13 +88,7 @@ Ihr Okta Dienst vertraut nun OVHcloud als Service Provider. Stellen Sie im näch
 
 ### Das Vertrauen zum OVHcloud Account und die Verbindung konfigurieren
 
-Um Okta als vertrauenswürdigen Identity Provider hinzuzufügen, liefern Sie die Metadaten des Identity Providers in Ihrem [OVHcloud Kundencenter](/links/manager).
-
-Klicken Sie in der Seitenleiste auf `Identity, Security und Operations`{.action} und anschließend auf `Identitäten`{.action}.
-
-![IAM-Menüzugriff](images/access_to_the_IAM_menu_01.png){.thumbnail}
-
-Klicken Sie dann auf den Tab `SSO`{.action} und anschließend auf die Schaltfläche `SSO-Verbindung`{.action}.
+Um Okta als vertrauenswürdigen Identity Provider hinzuzufügen, liefern Sie die Metadaten des Identity Providers. Öffnen Sie die Seite [SAML SSO](/links/control-panel/iam-saml-sso) und klicken Sie auf die Schaltfläche `SSO-Verbindung`{.action}.
 
 ![IAM-Menüzugriff](images/access_to_the_IAM_menu_03.png){.thumbnail}
 
@@ -116,7 +120,7 @@ Ihr Okta gilt nun als vertrauenswürdiger Identity Provider. Dennoch müssen im 
 
 Sie müssen nun den Nutzergruppen in Okta **Rollen** bei OVHcloud zuweisen. Andernfalls weiß Ihr OVHcloud Account nicht, welche Berechtigungen ein Benutzer hat und es werden keine Rechte zugewiesen.
 
-Um eine Gruppe aus Ihrem [OVHcloud Kundencenter](/links/manager) hinzuzufügen, gehen Sie zum Abschnitt `Identitäten`{.action} und dann zum Tab `Nutzergruppen`{.action}. Klicken Sie dann auf die Schaltfläche `Eine Gruppe anmelden`{.action} und füllen Sie die Felder aus:
+Gehen Sie zum Abschnitt `Identitäten`{.action} und dann zum Tab `Nutzergruppen`{.action}. Klicken Sie dann auf die Schaltfläche `Eine Gruppe anmelden`{.action} und füllen Sie die Felder aus:
 
 - **Group name**: Name der Gruppe in Okta
 - **Role**: Berechtigungsstufe für diese Gruppe

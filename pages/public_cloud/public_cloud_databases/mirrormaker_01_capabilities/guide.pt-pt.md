@@ -1,7 +1,7 @@
 ---
-title: Kafka MirrorMaker - Capabilities and Limitations
-excerpt: Discover the capabilities and limitations of Public Cloud Analytics for Kafka MirrorMaker
-updated: 2025-08-04
+title: Capabilities and Limitations of Analytics with Kafka MirrorMaker
+excerpt: Discover the capabilities and limitations of Analytics for Kafka MirrorMaker
+updated: 2026-04-15
 ---
 
 ## Objective
@@ -25,6 +25,8 @@ The Public Cloud Analytics offer is available in the following regions:
 - `EU-SOUTH-MIL` (Milan, France)
 - `UK` (London, United Kingdom)
 - `WAW` (Warsaw, Poland)
+- `RBX` (Roubaix, France)
+- `AP-SOUTH-MUM` (Mumbai, India)
 
 Kafka MirrorMaker nodes have to be in the same region.
 
@@ -47,25 +49,11 @@ Additionally, Kafka Connect is available at OVHcloud.
 
 Three plans are available:
 
-- *Essential*
-- *Business/Production*
-- *Enterprise/Advanced*
-
-Here is an overview of the various plans' capabilities:
-
-| Plan                  | Number of nodes by default | Additional nodes |
-| --------------------- | -------------------------- | ---------------- |
-| *Essential*           | 1                          | No               |
-| *Business/Production* | 3                          | No               |
-| *Enterprise/Advanced* | 6                          | No               |
+- **Essential**: 1 node
+- **Business/Production**: 3 nodes
+- **Enterprise/Advanced**: 6 nodes
 
 Your choice of plan affects the number of nodes your cluster can run as well as the SLA.
-
-#### Nodes
-
-- **Essential**: the cluster is delivered with 1 node by default.
-- **Business/Production**: the cluster is delivered with 3 nodes by default.
-- **Enterprise/Advanced**: the cluster is delivered with 6 nodes by default.
 
 #### License type
 

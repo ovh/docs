@@ -1,7 +1,7 @@
 ---
 title: "Wie reagiere ich auf ungewöhnliche Aktivitäten auf meinem Webhosting?"
 excerpt: "Erfahren Sie, welche Schritte Sie unternehmen sollten, wenn auf Ihrem OVHcloud Webhosting verdächtige Aktivitäten erkannt werden"
-updated: 2025-10-02
+updated: 2026-04-01
 ---
 
 ## Ziel
@@ -13,7 +13,17 @@ Diese Anleitung erklärt die möglichen Gründe für eine Benachrichtigung über
 ## Voraussetzungen
 
 - Sie haben ein [OVHcloud Webhosting](/links/web/hosting).
-- Sie haben Zugriff auf das [OVHcloud Kundencenter](/links/manager).
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direkter Link:** [Hosting-Pakete](/links/control-panel/web-hosting)
+- **Navigationspfad:** `Web Cloud`{.action} > `Hosting-Pakete`{.action} > Wählen Sie Ihr Webhosting aus
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## In der praktischen Anwendung
 
@@ -72,11 +82,27 @@ Ihre Website stellt zahlreiche externe Verbindungen her (APIs, Updates, HTTP-Auf
 >
 > Führen Sie diesen Schritt **erst nach Anwendung der oben genannten Empfehlungen** (Diagnose, Korrekturen/Updates, Sicherheitsverbesserungen) aus. Wenn bei einer nachfolgenden Überprüfung erneut ungewöhnliche Aktivitäten erkannt werden, werden die **Sicherheitsmaßnahmen automatisch erneut aktiviert**. Sie erhalten eine neue Benachrichtigung, und die Blockaden bleiben bestehen, bis die **Situation dauerhaft gelöst** ist.
 
-1. Melden Sie sich in Ihrem [OVHcloud Kundencenter](/links/manager) an, gehen Sie zu `Web Cloud`{.action} und klicken Sie auf Ihr Webhosting.
-2. Ein **Warnfenster** erscheint: `Ungewöhnliche Aktivitäten auf Ihrem Hosting`. Wenn Sie auf die Schaltfläche `Später`{.action} klicken, erscheint eine **Warnleiste** `Ungewöhnliche Aktivitäten erkannt` oben auf der Seite. Klicken Sie auf `Mehr erfahren`{.action}, um das Warnfenster erneut zu öffnen.
-3. **Aktivieren Sie** das Feld: `Ich bestätige, dass ich alle notwendigen Maßnahmen ergriffen habe, um das Problem zu beheben`.
-4. Klicken Sie auf `Sicherheitsmaßnahmen aufheben`{.action}.
-5. Eine **Bestätigungsleiste** erscheint oben auf der Seite: `Ihr Hosting wird analysiert, um die Sicherheitsmaßnahmen aufzuheben.` Verfolgen Sie den Fortschritt, indem Sie auf den Link `Aktuelle Tasks anzeigen`{.action} klicken oder direkt über den Tab `Aktuelle Tasks`{.action}.
+<!-- CP-STEPS-START:lift-security-measures -->
+Klicken Sie auf die Tabs, um die **4** Schritte anzuzeigen.
+
+> [!tabs]
+> **Schritt 1**
+>>
+>> Rufen Sie die Seite [Hosting-Pakete](/links/control-panel/web-hosting) auf und wählen Sie das betreffende Webhosting aus.
+>>
+> **Schritt 2**
+>>
+>> Ein **Warnfenster** erscheint: `"Ungewöhnliche Aktivitäten auf Ihrem Hosting"`. Wenn Sie auf die Schaltfläche `Später`{.action} klicken, erscheint eine **Warnleiste** `"Ungewöhnliche Aktivitäten erkannt"` oben auf der Seite. Klicken Sie auf `Mehr erfahren`{.action}, um das Warnfenster erneut zu öffnen.
+>>
+> **Schritt 3**
+>>
+>> **Aktivieren Sie** das Feld: `Ich bestätige, dass ich alle notwendigen Maßnahmen ergriffen habe, um das Problem zu beheben`, dann klicken Sie auf `Sicherheitsmaßnahmen aufheben`{.action}.
+>>
+> **Schritt 4**
+>>
+>> Eine **Bestätigungsleiste** erscheint oben auf der Seite: `Ihr Hosting wird analysiert, um die Sicherheitsmaßnahmen aufzuheben.` Verfolgen Sie den Fortschritt, indem Sie auf den Link `Aktuelle Tasks anzeigen`{.action} klicken oder direkt über den Tab `Aktuelle Tasks`{.action}.
+>>
+<!-- CP-STEPS-END:lift-security-measures -->
 
 > [!warning]
 >

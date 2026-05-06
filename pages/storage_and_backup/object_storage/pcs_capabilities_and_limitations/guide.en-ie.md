@@ -1,7 +1,7 @@
 ---
 title: Object Storage Swift - Capabilities and limitations
 excerpt: Find here the main capacities and limitations for the management of your containers
-updated: 2021-09-23
+updated: 2026-03-06
 ---
 
 ## Objective
@@ -82,7 +82,7 @@ Show more via `marker`:
 curl -i "https://storage.gra.cloud.ovh.net/v1/AUTH_702xxxxxxxxxxxxxxxxxxxxxxxxxxdaf/<conteneur>?marker=container_listing_limit/10000" -X GET -H "X-Auth-Token: xxx"
 ```
 
-```output
+```text
 Content-Length: 10038
 X-Container-Object-Count: 10038
 X-Timestamp: 1627567737.86773
@@ -174,7 +174,7 @@ swift post -m "max_meta_count_$i:value" <container>
 done
 ```
 
-```output
+```text
 Container POST failed: https://storage.gra.cloud.ovh.net/v1/AUTH_702xxxxxxxxxxxxxxxxxxxxxxxxxxdaf/<container> 400 Bad Request  b'Too many metadata items; max 90'
 Failed Transaction ID: txef5aa187467c4c949c0d4-00610a35f0
 ```
@@ -183,7 +183,7 @@ Failed Transaction ID: txef5aa187467c4c949c0d4-00610a35f0
 swift stat <container>
 ```
 
-```output
+```text
 Container HEAD failed: https://storage.gra.cloud.ovh.net/v1/AUTH_702xxxxxxxxxxxxxxxxxxxxxxxxxxdaf/<container> 502 Bad Gateway
 ```
 

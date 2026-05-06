@@ -1,7 +1,7 @@
 ---
 title: "Dodaj rekord DNS typu TXT dla domeny"
 excerpt: "Dowiedz się, jak dodać rekord DNS typu TXT w strefie DNS zarządzanej przez OVHcloud w przypadku Twojej domeny"
-updated: 2025-06-23
+updated: 2026-03-24
 ---
 
 <style>
@@ -33,7 +33,17 @@ W tym celu utwórz rekord DNS typu TXT w aktywnej strefie DNS Twojej domeny.
 
 - Posiadanie [domeny](/links/web/domains).
 - Posiadanie strefy DNS powiązanej z tą domeną w OVHcloud.
-- Dostęp do [panelu klienta OVHcloud](/links/manager), sekcja `Web Cloud`{.action}.
+
+<!-- CP-NAV-START:web-dns-zone -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Strefy DNS](/links/control-panel/web-dns-zone)
+- **Ścieżka nawigacji:** `Web Cloud`{.action} > `Strefy DNS`{.action} > Wybierz nazwę domeny
+
+---
+<!-- CP-NAV-END:web-dns-zone -->
 
 ## W praktyce
 
@@ -41,13 +51,33 @@ W tym celu utwórz rekord DNS typu TXT w aktywnej strefie DNS Twojej domeny.
 >
 > Dodawanie, modyfikowanie lub usuwanie rekordów DNS w aktywnej strefie DNS jest operacją wymagającą odpowiedniej wiedzy. W razie wątpliwości skontaktuj się z [wyspecjalizowanym dostawcą](/links/partner).
 
-### Dodawanie rekord DNS typu TXT dla domeny
+<!-- CP-STEPS-START:add-txt-record-domain -->
+### Dodawanie rekordu DNS typu TXT dla domeny
 
-1. Kliknij menu `Strefy DNS`{.action}, następnie wybierz odpowiednią domenę.
-2. Na stronie, która się wyświetli kliknij przycisk `Dodaj rekord`{.action}.
-3. W wyświetlonym oknie wybierz rozszerzone pole typu `TXT`{.action}.
-4. Następnie w polu `Wartość *` wpisz ciąg TXT, który chcesz dodać (na przykład: `AbCdE-Value-of-TXT-fGhIjK`), po czym kliknij `Dalej`{.action}.
-5. Sprawdź podsumowanie i kliknij `Zatwierdź`{.action}. Odczekaj maksymalnie **24** godziny, aby dodanie w sieci DNS stało się w pełni skuteczne.
+Kliknij poniższe karty, aby wyświetlić kolejno każdy z **5** kroków.
+
+> [!tabs]
+> **Krok 1**
+>>
+>> Przejdź na stronę [Strefy DNS](/links/control-panel/web-dns-zone), następnie wybierz odpowiednią domenę.
+>>
+>> ![DNS zones](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
+>>
+> **Krok 2**
+>>
+>> Kliknij przycisk `Dodaj wpis`{.action}.
+>>
+> **Krok 3**
+>>
+>> W wyświetlonym oknie wybierz rozszerzone pole typu `TXT`{.action}.
+>>
+> **Krok 4**
+>>
+>> W polu `Wartość *` wpisz ciąg TXT, który chcesz dodać (na przykład: `AbCdE-Value-of-TXT-fGhIjK`), po czym kliknij `Dalej`{.action}.
+>>
+> **Krok 5**
+>>
+>> Sprawdź podsumowanie i kliknij `Zatwierdź`{.action}. Odczekaj maksymalnie **24** godziny, aby dodanie w sieci DNS stało się w pełni skuteczne.
 
 /// details | Kliknij tutaj, aby uzyskać więcej informacji.
 
@@ -58,14 +88,35 @@ Zapoznaj się ze szczegółowymi przewodnikami:
 - [Modyfikacja strefy DNS](/pages/web_cloud/domains/dns_zone_edit)
 
 ///
+<!-- CP-STEPS-END:add-txt-record-domain -->
 
-### Dodawanie rekord DNS typu TXT dla subdomeny domeny
+<!-- CP-STEPS-START:add-txt-record-subdomain -->
+### Dodawanie rekordu DNS typu TXT dla subdomeny domeny
 
-1. Kliknij menu `Strefy DNS`{.action}, następnie wybierz odpowiednią domenę.
-2. Na stronie, która się wyświetli kliknij przycisk `Dodaj rekord`{.action}.
-3. W wyświetlonym oknie wybierz rozszerzone pole typu `TXT`{.action}.
-4. W polu `Subdomena` wpisz odpowiednią subdomenę (na przykład: `www` dla subdomeny `www.domain.tld`), a w polu `Wartość *` wpisz ciąg TXT, który chcesz dodać (na przykład: `AbCdE-Value-of-TXT-fGhIjK`). Następnie kliknij przycisk `Dalej`{.action}.
-5. Sprawdź podsumowanie i kliknij `Zatwierdź`{.action}. Odczekaj maksymalnie **24** godziny, aby dodanie w sieci DNS stało się w pełni skuteczne.
+Kliknij poniższe karty, aby wyświetlić kolejno każdy z **5** kroków.
+
+> [!tabs]
+> **Krok 1**
+>>
+>> Przejdź na stronę [Strefy DNS](/links/control-panel/web-dns-zone), następnie wybierz odpowiednią domenę.
+>>
+>> ![DNS zones](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
+>>
+> **Krok 2**
+>>
+>> Kliknij przycisk `Dodaj wpis`{.action}.
+>>
+> **Krok 3**
+>>
+>> W wyświetlonym oknie wybierz rozszerzone pole typu `TXT`{.action}.
+>>
+> **Krok 4**
+>>
+>> W polu `Subdomena` wpisz odpowiednią subdomenę (na przykład: `www` dla subdomeny `www.domain.tld`), a w polu `Wartość *` wpisz ciąg TXT, który chcesz dodać (na przykład: `AbCdE-Value-of-TXT-fGhIjK`). Kliknij `Dalej`{.action}.
+>>
+> **Krok 5**
+>>
+>> Sprawdź podsumowanie i kliknij `Zatwierdź`{.action}. Odczekaj maksymalnie **24** godziny, aby dodanie w sieci DNS stało się w pełni skuteczne.
 
 /// details | Kliknij tutaj, aby uzyskać więcej informacji.
 
@@ -77,6 +128,7 @@ Zapoznaj się ze szczegółowymi przewodnikami:
 - [Modyfikacja strefy DNS](/pages/web_cloud/domains/dns_zone_edit)
 
 ///
+<!-- CP-STEPS-END:add-txt-record-subdomain -->
 
 ## Sprawdź również
 

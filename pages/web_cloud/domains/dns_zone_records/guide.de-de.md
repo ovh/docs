@@ -1,7 +1,7 @@
 ---
 title: "Alle Informationen zu DNS-Einträgen"
 excerpt: "Entdecken Sie die verschiedenen Arten von DNS-Einträgen, die in einer OVHcloud DNS-Zone verfügbar sind"
-updated: 2025-12-19
+updated: 2026-02-19
 ---
 
 ## Ziel
@@ -202,6 +202,21 @@ Wählen Sie den gewünschten Eintrag in den Tabs aus:
 >> - **Service-Modus**: Dieser Modus wird aktiviert, wenn Sie eine Priorität ungleich 0 angeben. In diesem Modus können Sie die Parameter definieren, die Sie für Ihren Domainnamen anwenden möchten (Beispiele für Parameter: *apln="h2,h3"*, *ipv4hint="203.0.113.0"*, *ipv6hint="2001:db8:1:1b00:203:0:113:0"*, *port="XXXX"*, usw.). Im **Service-Modus** können Sie diese Parameter direkt für Ihren Domainnamen anwenden, selbst wenn dieser nicht als Alias für einen anderen Domainnamen verwendet wird.
 >>
 >> Weitere Informationen finden Sie bei der [**I**nternet **E**ngineering **T**ask **F**orce (**IETF**)](https://datatracker.ietf.org/doc/html/rfc9460) (EN).
+>>
+>> > [!success]
+>> >
+>> > Unten finden Sie ein praktisches Beispiel für die Einrichtung eines Aliases (apex) über einen DNS-Eintrag vom Typ HTTPS:
+>> >
+>> > Die Website **domain.tld** wird hinter einer CDN-Infrastruktur (z. B. **cdn.provider.tld**) gehostet.
+>> > Dank des DNS-Eintrags vom Typ HTTPS kann der Domainname **domain.tld** direkt angeben, dass der HTTPS-Service bei CDN-Anbietern wie **cdn.provider.tld** aufgelöst werden soll. Dies geschieht ohne Umleitungen und ohne manuelle Verwaltung von IP-Adressen.
+>> >
+>> > Dazu muss der DNS-Eintrag vom Typ HTTPS folgende Angaben enthalten:
+>> >
+>> > - Priorität: *0*.
+>> > - Ziel: *cdn.provider.tld*.
+>> > - Einstellungen: **Lassen Sie das Feld leer**.
+>> >
+>> > Dadurch wird die Auflösung von **cdn.provider.tld** angeben, welche Parameter für **domain.tld** verwendet werden sollen.
 
 #### Anwendungsbeispiel: Verwendung von CNAME-Einträgen <a name="cnameusecase"></a>
 

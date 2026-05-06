@@ -26,7 +26,18 @@ Od kwietnia 2025 zespoły OVHcloud wprowadziły nową nawigację w Panelu klient
 
 ## Wymagania początkowe
 
-- Dostęp do [Panelu klienta OVHcloud](/links/manager).
+- Posiadanie aktywnego konta OVHcloud
+
+<!-- CP-NAV-START:account-dashboard -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Moje konto](/links/control-panel/account-dashboard)
+- **Ścieżka nawigacji:** Kliknij swoją nazwę w prawym górnym rogu > `Dostęp do konta`{.action}
+
+---
+<!-- CP-NAV-END:account-dashboard -->
 
 ## W praktyce
 

@@ -14,11 +14,21 @@ The purpose of this tutorial is to show you how it is possible to fine-tune LLaM
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](/links/manager)
 - An AI Notebooks project created inside a [Public Cloud project](/links/public-cloud/public-cloud) in your OVHcloud account
 - A user for AI Notebooks
 
 To access LLaMA 2 models, you will also need to follow the requirements indicated in the notebook.
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Navigation path:** `Public Cloud`{.action} > Select your project
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## Instructions
 
@@ -26,6 +36,7 @@ You can launch the notebook from the [OVHcloud Control Panel](/links/manager) or
 
 ### Launching a Jupyter notebook with "Conda" via UI (Control Panel)
 
+<!-- CP-STEPS-START:launch-jupyter-notebook-conda-ui -->
 To launch your notebook from the [OVHcloud Control Panel](/links/manager), refer to the following steps.
 
 #### Code editor
@@ -39,6 +50,7 @@ In this tutorial, the `conda` framework is used.
 #### Resources
 
 Using at least one **GPU is mandatory**, since fine-tuning LLMs is an intensive task.
+<!-- CP-STEPS-END:launch-jupyter-notebook-conda-ui -->
 
 ### Launching a Jupyter notebook with "conda" via CLI
 

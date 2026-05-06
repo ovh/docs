@@ -16,9 +16,16 @@ Déménager un accès xDSL/Fibre vous permet de recréer votre accès Internet �
 - Disposer d'un [accès Internet xDSL ou FTTH OVHcloud](/links/telecom/offre-internet) actif.
 - Disposer d'une offre xDSL ou Fibre récente (offres Pro, Connect, Express, Entreprise, Serenity).
 - La nouvelle adresse doit être différente de l'ancienne.
-- Être connecté à l’[espace client OVHcloud](/links/manager), partie `Télécom` :
+<!-- CP-NAV-START:telecom-xdsl-fttx -->
+---
 
-![espace client Telecom Accès Internet](/pages/assets/screens/control_panel/product-selection/telecom/tpl-telecom-01-fr-internet.png){.thumbnail}
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Accès Internet](/links/control-panel/telecom-xdsl-fttx)
+- **Pour accéder à vos services :** `Télécom`{.action} > `Offres Internet`{.action} > Sélectionnez votre accès
+
+---
+<!-- CP-NAV-END:telecom-xdsl-fttx -->
 
 > [!primary]
 >
@@ -29,22 +36,20 @@ Déménager un accès xDSL/Fibre vous permet de recréer votre accès Internet �
 
 ### Réaliser une demande de déménagement 
 
-Pour réaliser une demande de déménagement, suivez ces étapes :
-
-1. Connectez-vous à votre [espace client OVHcloud](/links/manager) et cliquez sur `Télécom`{.action}.
-1. Cliquez sur `Offres Internet`{.action} puis sur le *Pack* contenant l'accès à Internet concerné.
-1. Cliquez sur votre accès à Internet FTTH ou xDSL dans le cadre `Accès Internet` à droite.
-1. Cliquez ensuite sur `Déménager`{.action} dans le cadre « Informations Générales ».
+<!-- CP-STEPS-START:demenagement-initiation -->
+Pour réaliser une demande de déménagement, depuis votre [espace client OVHcloud](/links/control-panel/telecom-xdsl-fttx), cliquez sur votre accès à Internet FTTH ou xDSL dans le cadre `Accès Internet` à droite. Sélectionnez le *Pack* contenant l'accès à Internet concerné, puis cliquez sur `Déménager`{.action} dans le cadre « Informations Générales ».
 
 ![accès déménagement](images/move01-edit-2022.png){.thumbnail}
 
 Vous pourrez ensuite définir la date à laquelle votre accès (à votre adresse actuelle) sera fermé.
 <br>Un créneau de 30 jours vous est proposé afin de déterminer cette date.
+<!-- CP-STEPS-END:demenagement-initiation -->
 
 #### Choix de la nouvelle adresse
 
 ##### **Si vous disposez déjà du numéro de ligne à la nouvelle adresse**
 
+<!-- CP-STEPS-START:demenagement-choix-adresse-numero -->
 Cochez la case « Testez avec le numéro de téléphone correspondant à votre nouvelle adresse. » puis renseignez ce numéro dans le champ situé en dessous.
 <br>Cliquez ensuite sur le bouton `Valider`{.action}.
 
@@ -59,15 +64,17 @@ Suite à cette validation, un cadre vous indiquera l'adresse associée à ce num
 >
 
 ![validation adresse demenagement](images/move03-edit.png){.thumbnail}
+<!-- CP-STEPS-END:demenagement-choix-adresse-numero -->
 
 ##### **Si vous ne disposez d'aucun numéro à la nouvelle adresse**
 
+<!-- CP-STEPS-START:demenagement-choix-adresse-postale -->
 Cochez la case « Testez avec la nouvelle adresse » puis renseignez les champs requis (code postal, ville, numéro et rue).
 <br>Cliquez ensuite sur le bouton `Valider`{.action}.
 
 ![demenagement par adresse](images/move04-edit.png){.thumbnail}
 
-Dans le cas où une ou plusieurs lignes inactives existent à votre future adresse, un tableau s'affichera avec les numéros de lignes disponible à cette adresse.
+Dans le cas où une ou plusieurs lignes inactives existent à votre future adresse, un tableau s'affichera avec les numéros de lignes disponibles à cette adresse.
 
 <br>À l'aide des initiales des personnes rattachées à ces lignes, sélectionnez la ligne qui correspond à votre futur logement en cliquant sur le bouton `C'est ma ligne`{.action}.
 <br>Si aucun des choix proposés ne correspond, cliquez sur le bouton `Je n'ai pas trouvé ma ligne`{.action}
@@ -77,9 +84,11 @@ Dans le cas où une ou plusieurs lignes inactives existent à votre future adres
 En cliquant sur le bouton `Je n'ai pas trouvé ma ligne`{.action}, la création d'une nouvelle ligne sera alors demandée à cette adresse.
 
 ![creation de ligne](images/move06-edit.png){.thumbnail}
+<!-- CP-STEPS-END:demenagement-choix-adresse-postale -->
 
 #### Choix de l'offre
 
+<!-- CP-STEPS-START:demenagement-choix-offre -->
 Lors de votre demande de déménagement, vous avez la possibilité de conserver votre offre actuelle ou d'en choisir une nouvelle.
 
 Pour cela, il vous suffit de cliquer sur le bouton `Choisir cette offre`{.action} correspondant à l'offre souhaitée en bas du tableau.
@@ -101,9 +110,11 @@ Si vous souhaitez conserver votre offre et vos options actuelles (lignes VoIP su
 > Cependant, si un [bloc IP /29](/pages/web_cloud/internet/internet_access/comment_commander_et_gerer_un_bloc_ip_29) est actif sur l'offre actuelle, il sera automatiquement conservé. Vous recevrez un e-mail indiquant la date de migration des adresses IP du bloc vers le nouvel accès, et vous aurez la possibilité d'avancer cette migration via API si besoin.
 
 ![Choix de l'offre](images/move07-2022.png){.thumbnail}
+<!-- CP-STEPS-END:demenagement-choix-offre -->
 
 #### Conservation des numéros
 
+<!-- CP-STEPS-START:demenagement-conservation-numeros -->
 Dans certains cas, vous pourrez demander à conserver le numéro présent à votre adresse actuelle ainsi que le numéro de votre futur logement.
 Pour cela, il vous suffit de cocher la case « Je souhaite conserver le numéro : 0XXXXXXXXX ».
 <br>Si la conservation n'est pas possible, vous obtiendrez le message « Vous ne pouvez pas porter ce numéro » en dessous de cette case.
@@ -111,9 +122,11 @@ Pour cela, il vous suffit de cocher la case « Je souhaite conserver le numéro 
 Cliquez ensuite sur le bouton `Confirmer la sélection`{.action} pour passer à l'étape suivante.
 
 ![Conservation numéros](images/move09-edit.png){.thumbnail}
+<!-- CP-STEPS-END:demenagement-conservation-numeros -->
 
 #### Prise de rendez-vous pour la création de l'accès à la nouvelle adresse
 
+<!-- CP-STEPS-START:demenagement-rendez-vous -->
 Cette étape n'apparaît que si la création d'une nouvelle ligne est demandée à la nouvelle adresse ou lors de l'installation d'un abonnement Fibre. 
 <br>Cette création nécessite le déplacement d'un technicien sur place. 
 
@@ -128,12 +141,15 @@ Renseignez le nom de la personne qui sera présente sur site pour accueillir le 
 Cliquez ensuite sur le bouton `Confirmer la sélection`{.action} pour valider cette étape.
 
 ![Prise de Rendez-vous](images/move10-edit.png){.thumbnail}
+<!-- CP-STEPS-END:demenagement-rendez-vous -->
 
 #### Validation du déménagement
 
+<!-- CP-STEPS-START:demenagement-validation -->
 Une nouvelle fenêtre s'affiche, vous invitant à valider le réengagement de 12 mois lié à ce déménagement, la résiliation de votre accès actuel ainsi qu'à consulter les conditions générales de vente de l'offre. 
 
 Cochez alors les cases correspondantes et cliquez sur `Valider le déménagement`{.action}.
+<!-- CP-STEPS-END:demenagement-validation -->
 
 ### Suite à la demande de déménagement
 

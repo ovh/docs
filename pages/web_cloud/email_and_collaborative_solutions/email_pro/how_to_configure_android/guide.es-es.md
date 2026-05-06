@@ -32,6 +32,17 @@ Las direcciones de correo electrónico de la solución Email Pro pueden configur
 - Tener la aplicación Gmail instalada en su dispositivo. Puede instalarla desde Google Play Store.
 - Disponer del nombre de usuario y la contraseña de la cuenta de correo electrónico que quiera configurar.
 
+<!-- CP-NAV-START:web-email-pro -->
+---
+
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [Email Pro](/links/control-panel/web-email-pro)
+- **Ruta de navegación:** `Web Cloud`{.action} > `Email Pro`{.action} > Seleccione su plataforma
+
+---
+<!-- CP-NAV-END:web-email-pro -->
+
 > [!primary]
 >
 > Esta documentación se ha realizado desde un dispositivo que utiliza la versión 13 de Android.
@@ -44,12 +55,7 @@ Las direcciones de correo electrónico de la solución Email Pro pueden configur
 >
 > En nuestro ejemplo, hemos utilizado la mención servidor: pro?.mail.ovh.net. Sustituya la «?» por la cifra que designa al servidor de su servicio Email Pro.
 >
-> 1. Conéctese a su [área de cliente de OVHcloud](/links/manager).
-> 1. Acceda al apartado `Web Cloud`{.action}.
-> 1. Haga clic en `Email Pro`{.action}.
-> 1. Seleccione la plataforma correspondiente.
-> 1. El nombre del servidor aparece en el marco **Conexión** de la pestaña `Información general`{.action}.
->
+> Haga clic en [este enlace](/links/control-panel/web-email-pro) para acceder a la sección `Email Pro`{.action}. El nombre del servidor aparece en la zona **Conexión** de la pestaña `Información general`{.action}.
 
 En la pantalla de inicio de su dispositivo, acceda a la aplicación `Gmail`{.action}.
 

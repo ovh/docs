@@ -14,17 +14,22 @@ Os erros nas contas de e-mail Exchange podem ter várias causas. Um diagnóstico
 
 - Dispor de uma [solução Exchange OVHcloud](/links/web/emails-hosted-exchange) já instalada
 - Dispor das informações de identificação para a conta Exchange a verificar
-- Ter acesso à [Área de Cliente OVHcloud](/links/manager)
 - Estar atualizado nos [pagamentos](/pages/account_and_service_management/managing_billing_payments_and_services/invoice_management#pay-bills) deste serviço e do domínio associado.
+
+<!-- CP-NAV-START:web-exchange -->
+---
+
+### Acesso à Área de Cliente OVHcloud
+
+- **Ligação direta:** [Exchange](/links/control-panel/web-exchange)
+- **Caminho de navegação:** `Web Cloud`{.action} > `Exchange`{.action} > Selecione a sua plataforma
+
+---
+<!-- CP-NAV-END:web-exchange -->
 
 ## Instruções
 
 ### Realizar um diagnóstico
-
-1. Aceda à [Área de Cliente OVHcloud](/links/manager).
-1. Aceda à secção `Web Cloud`{.action}.
-1. Na rubrica `MICROSOFT`, clique em `Exchange`{.action}.
-1. Selecione a plataforma em causa.
 
 ![Diagnóstico Exchange](images/img_4450.png){.thumbnail}
 
@@ -89,7 +94,7 @@ Em função da utilização do seu serviço Exchange, os seguintes servidores MX
 
 > [!warning]
 > Nos nossos guias, utilizamos como nome de servidor: ex<b>?</b>.mail.ovh.net. Deverá substituir o "? " pelo número correspondente ao servidor do seu serviço Exchange.<br>
-> Encontrará estas informações na Área de Cliente OVHcloud, na secção `Web Cloud`{.action}. Abra `Microsoft`{.action}, depois `Exchange`{.action} e selecione o seu serviço. O nome do servidor aparece na zona **Ligação** do separador `Informações gerais`{.action}.
+> Encontrará estas informações na Área de Cliente OVHcloud, na secção `Web Cloud`{.action}. Abra `Exchange`{.action} e selecione o seu serviço. O nome do servidor aparece na zona **Ligação** do separador `Informações gerais`{.action}.
 >
 
 > [!primary]

@@ -24,8 +24,8 @@ Zdarza się to również w wyniku aktualizacji przeprowadzonej **automatycznie**
 ## Wymagania początkowe
 
 - Posiadanie [hostingu](/links/web/hosting)
-- Dostęp do [Panelu klienta OVHcloud](/links/manager)
 - Aktualizacja w [płatności](/pages/account_and_service_management/managing_billing_payments_and_services/invoice_management#pay-bills) i [odnowienie](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#renewal-management) powiązanych usług (domena i hosting)
+
 
 ## W praktyce
 

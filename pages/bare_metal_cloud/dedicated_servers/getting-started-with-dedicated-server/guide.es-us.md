@@ -1,6 +1,6 @@
 ---
 title: "Primeros pasos con un servidor dedicado"
-excerpt: "Cómo gestionar un servidor dedicado en su área de cliente y cómo empezar con la configuración y la seguridad de un servidor"
+excerpt: "Gestione su servidor dedicado OVHcloud desde el área de cliente: instale un SO, configure el acceso SSH y supervise su servicio"
 updated: 2025-04-29
 ---
 
@@ -14,7 +14,17 @@ Un servidor dedicado es un servidor físico ("bare metal") situado en uno de nue
 
 - Tener un [servidor dedicado](/links/bare-metal/bare-metal) en el área de cliente de OVHcloud.
 - Estar conectado al servidor por SSH en Linux o a través de un escritorio remoto en Windows.
-- Haber iniciado sesión en el [área de cliente de OVHcloud](/links/manager).
+
+<!-- CP-NAV-START:baremetal-dedicated-servers -->
+---
+
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [Servidores dedicados](/links/control-panel/baremetal-dedicated-servers)
+- **Ruta de navegación:** `Bare Metal Cloud`{.action} > `Servidores dedicados`{.action} > Seleccione su servidor
+
+---
+<!-- CP-NAV-END:baremetal-dedicated-servers -->
 
 > [!primary]
 >
@@ -45,7 +55,7 @@ Un servidor dedicado es un servidor físico ("bare metal") situado en uno de nue
 
 Puede reinstalar fácilmente su servidor o elegir otra imagen de SO para instalar en su [área de cliente de OVHcloud](/links/manager). En la pestaña `Información general`{.action}, haga clic en `...`{.action} delante del sistema operativo y seleccione `Instalar`{.action}.
 
-![Reinstalar](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/dedicated-servers/general-information/reinstalling-your-server-01.png){.thumbnail}
+![Botón Reinstalar](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/dedicated-servers/general-information/reinstalling-your-server-01.png){.thumbnail}
 
 > [!primary]
 >
@@ -215,7 +225,7 @@ reboot
 
 No obstante, puede realizar "hard reboot" en cualquier momento desde el [área de cliente de OVHcloud](/links/manager). En la pestaña `Información general`{.action}, haga clic en `...`{.action} frente a "Estado" en la zona **Estado de los servicios** y seleccione `Reiniciar`{.action} y `Aceptar`{.action} en la ventana emergente.
 
-![Reinicio](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/dedicated-servers/general-information/rebooting-your-server.png){.thumbnail}
+![Reiniciar](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/dedicated-servers/general-information/rebooting-your-server.png){.thumbnail}
 
 <a name="secure"></a>
 
@@ -231,7 +241,7 @@ Si utiliza un servidor Windows, consulte [esta guía](/pages/bare_metal_cloud/de
 
 Puede activar o desactivar la monitorización de un servidor dedicado desde la pestaña `Información general`{.action} de su [área de cliente de OVHcloud](/links/manager). La opción se encuentra en la sección `Estado de los servicios`.
 
-![Monitoring](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/dedicated-servers/general-information/monitoring-your-server.png){.thumbnail}
+![Estado de la monitorización en la sección Estado de los servicios](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/dedicated-servers/general-information/monitoring-your-server.png){.thumbnail}
 
 Haga clic en el botón `Configurar`{.action}. En el cuadro de diálogo, se mostrarán tres opciones para el comportamiento de la vigilancia:
 
@@ -239,7 +249,7 @@ Haga clic en el botón `Configurar`{.action}. En el cuadro de diálogo, se mostr
 - **Activado con intervención proactiva**: Si el servidor no responde, recibirá un mensaje de correo electrónico de alerta y el servidor será verificado por un técnico.
 - **Activado sin intervención proactiva**: Recibirá un mensaje de alerta por correo electrónico en caso de que el servidor deje de responder. Para iniciar una intervención, es necesario activar la opción con intervención proactiva.
 
-![Monitoring](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/dedicated-servers/general-information/monitoring-your-server2.png){.thumbnail}
+![Popup de configuración de la monitorización con tres opciones](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/dedicated-servers/general-information/monitoring-your-server2.png){.thumbnail}
 
 Haga clic en `Confirmar`{.action} para actualizar su configuración de monitorización.
 
@@ -297,10 +307,14 @@ Para activar y utilizar la opción Backup Storage, consulte [esta guía](/pages/
 
 [Proteger un servidor dedicado](/pages/bare_metal_cloud/dedicated_servers/securing-a-dedicated-server)
 
-[Activar y utilizar el modo de rescate](/pages/bare_metal_cloud/dedicated_servers/rescue_mode)
+[Activar y utilizar el modo rescue](/pages/bare_metal_cloud/dedicated_servers/rescue_mode)
 
-[OVHcloud API & OS installation](/pages/bare_metal_cloud/dedicated_servers/api-os-installation) (EN)
+[API de OVHcloud e instalación de un SO](/pages/bare_metal_cloud/dedicated_servers/api-os-installation)
+
+[Finalizar una intervención de mantenimiento realizada en su servidor dedicado](/pages/bare_metal_cloud/dedicated_servers/intervention-support)
+
+[Cómo asignar un tag a un servidor Bare Metal](/pages/bare_metal_cloud/dedicated_servers/resource-tag-assign)
 
 Si necesita formación o asistencia técnica para implantar nuestras soluciones, póngase en contacto con su representante de ventas o haga clic en [este enlace](/links/professional-services) para obtener un presupuesto y solicitar un análisis personalizado de su proyecto a nuestros expertos del equipo de Servicios Profesionales.
 
-Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.
+Interactúe con nuestra [comunidad de usuarios](/links/community).

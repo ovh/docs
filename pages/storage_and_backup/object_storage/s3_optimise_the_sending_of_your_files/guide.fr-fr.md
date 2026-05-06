@@ -1,7 +1,7 @@
 ---
 title: Object Storage - Optimisez l'envoi de vos fichiers vers Object Storage
 excerpt: Découvrez comment optimiser l'envoi de vos fichiers vers votre bucket
-updated: 2021-12-08
+updated: 2026-03-06
 ---
 
 ## Objectif
@@ -10,7 +10,7 @@ Découvrez comment optimiser l'envoi de vos fichiers vers votre bucket.
 
 ## Prérequis
 
-- [Avoir installé awscli](/pages/storage_and_backup/object_storage/s3_getting_started_with_object_storage)
+- [AWS CLI](/pages/storage_and_backup/object_storage/s3_getting_started_with_object_storage) installé
 
 ## En pratique
 
@@ -31,7 +31,7 @@ Dans certains scénarios, vous pouvez souhaiter que les transferts Object Storag
 Cette valeur doit être définie sous la clé s3 de premier niveau dans le fichier de configuration AWS, dont l'emplacement par défaut est `~/.aws/config`.
 
 ```bash
-user@host:~$ cat ~/.aws/config
+cat ~/.aws/config
 
 [profile default]
 region = <region_in_lowercase>

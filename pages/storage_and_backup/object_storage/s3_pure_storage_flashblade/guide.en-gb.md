@@ -13,11 +13,21 @@ This guide aims to help you configure and use OVHcloud Object Storage as a repli
 ## Requirements
 
 - An OVHcloud Object Storage container/bucket.
-- Access to the [OVHcloud Control Panel](/links/manager)
 - A user with the required access rights on the bucket.
 - Your Object Storage credentials (`access_key` and `secret_access_key`).
 
 See our [Getting started with Object Storage](/pages/storage_and_backup/object_storage/s3_getting_started_with_object_storage) guide.
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Navigation path:** `Public Cloud`{.action} > Select your project
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## Instructions
 

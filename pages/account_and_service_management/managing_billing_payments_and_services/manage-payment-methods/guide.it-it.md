@@ -10,12 +10,22 @@ Nello Spazio Cliente OVHcloud puoi salvare e gestire diversi metodi di pagamento
 
 ## Prerequisiti
 
-- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
 - Disporre di un metodo di pagamento valido
+
+<!-- CP-NAV-START:billing-payment-methods -->
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [Modalità di pagamento](/links/control-panel/billing-payment-methods)
+- **Percorso di navigazione:** Clicca sul tuo nome in alto a destra > `I miei metodi di pagamento`{.action}
+
+---
+<!-- CP-NAV-END:billing-payment-methods -->
 
 ## Procedura <a name="payment_methods"></a>
 
-Nello [Spazio Cliente OVHcloud](/links/manager), clicca sul tuo nome in alto a destra e seleziona `I miei metodi di pagamento`{.action}.
+Apri la pagina [I miei metodi di pagamento](/links/control-panel/billing-payment-methods).
 
 ![hubpayment](/pages/assets/screens/control_panel/product-selection/right-menu/my-payment-methods.png){.thumbnail}
 
@@ -120,20 +130,20 @@ Elimina il metodo di pagamento utilizzando l'ID precedentemente ottenuto:
 >
 > Per maggiori informazioni, consulta la guida [Iniziare a utilizzare le API OVHcloud](/pages/manage_and_operate/api/first-steps).
 >
-> In caso di difficoltà nell'identificazione dei metodi di pagamento tramite le API OVHcloud, utilizza la funzione `Modifica la descrizione`{.action} (pulsante `...`{.action} a destra dello schermo) nella sezione [Modalità di pagamento](#payment_methods) dello [Spazio Cliente OVHcloud](/links/manager).
+> In caso di difficoltà nell'identificazione dei metodi di pagamento tramite le API OVHcloud, utilizza la funzione `Modifica la descrizione`{.action} (pulsante `...`{.action} a destra dello schermo) nella sezione [Modalità di pagamento](#payment_methods) della pagina [I miei metodi di pagamento](/links/control-panel/billing-payment-methods).
 >
 
 ### Il conto prepagato
 
 #### Cos'è il conto prepagato?
 
-Il *conto prepagato* è presente nello [Spazio Cliente OVHcloud](/links/manager) al momento della creazione. che permette di accreditare in anticipo il tuo account cliente e utilizzare questi fondi per il pagamento degli ordini e delle fatture di rinnovo.
+Il *conto prepagato* è presente nella pagina [I miei metodi di pagamento](/links/control-panel/billing-payment-methods) al momento della creazione. che permette di accreditare in anticipo il tuo account cliente e utilizzare questi fondi per il pagamento degli ordini e delle fatture di rinnovo.
 
 Ricaricando regolarmente il tuo account, assicurati che il [rinnovo automatico](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#il-rinnovo-automatico) dei tuoi servizi non venga mai interrotto per mancato pagamento.
 
 Per effettuare questa operazione, accedi alla sezione `Modalità di pagamento` dello Spazio Cliente:
 
-- clicca sul tuo nome in alto a destra e poi sul `I miei metodi di pagamento`{.action} nel menu a destra.
+- Apri la pagina [I miei metodi di pagamento](/links/control-panel/billing-payment-methods).
 - seleziona la scheda `Il tuo conto prepagato`{.action}.
 
 ![prepaid-account](images/prepaid-account.png){.thumbnail}

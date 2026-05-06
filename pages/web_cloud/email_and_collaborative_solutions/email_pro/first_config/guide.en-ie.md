@@ -15,24 +15,27 @@ You have just purchased an Email Pro solution, which gives you affordable profes
 - An [Email Pro](/links/web/email-pro) solution
 - An email confirming that your Email Pro solution has been set up
 - A domain name
-- Access to the [OVHcloud Control Panel](/links/manager)
+
+<!-- CP-NAV-START:web-email-pro -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Email Pro](/links/control-panel/web-email-pro)
+- **Navigation path:** `Web Cloud`{.action} > `Email Pro`{.action} > Select your platform
+
+---
+<!-- CP-NAV-END:web-email-pro -->
 
 ## Instructions
 
-### Step 1: Log in to your service’s interface
-
-Once the Email Pro service has been created and is available, you can manage it from the [OVHcloud Control Panel](/links/manager).
-
-To do this, log in, then click on `Email Pro`{.action} and select the appropriate service.
+### Step 1: Add your domain name
 
 > [!primary]
 >
 > The name of an Email Pro service in the OVHcloud Control Panel begins with *emailpro-*, contains part of your NIC handle, and ends with a number (1 for the first Email Pro service installed, 2 for the second, etc.).
->
 
-### Step 2: Add your domain name
-
-If you have just ordered your Email Pro service, a window will automatically pop up, prompting you to `Add a domain`{.action}. If the window does not appear, go to the `Associated domains`{.action} tab, then click on the `Add a domain`{.action} button.
+After ordering your Email Pro service, a window will automatically appear prompting you to `Add a domain`{.action}. If the window does not appear, go to the `Associated domains`{.action} tab, then click on the `Add a domain`{.action} button.
 
 You will need to choose an option:
 
@@ -86,7 +89,7 @@ Click on the `Next`{.action} button to continue adding the domain.
 
 At the end of the configuration process, check the information displayed, then click on the `Confirm`{.action} button to start adding the domain.
 
-### Step 3: Configure your domain name
+### Step 2: Configure your domain name
 
 Once you have added the domain name as an associated domain, check its configuration using the table that pops up.
 
@@ -103,7 +106,7 @@ You can use the `Diagnosis`{.action} column to check the domain name’s DNS con
 
 ![emailpro](images/emailpro-04.png){.thumbnail}
 
-### Step 4: Configure the Email Pro accounts
+### Step 3: Configure the Email Pro accounts
 
 To configure your email accounts, go to the `Email accounts`{.action} tab. The table displays the accounts that you have ordered in this format: “*@configureme.me*”.
 
@@ -144,9 +147,11 @@ Once the information is complete, click on the `Next`{.action} button, check the
 > Repeat this step as necessary according to the number of accounts you have. You can order additional accounts using the `Order accounts`{.action} button.
 >
 
-### Step 5: Use your email addresses
+### Step 4: Use your email addresses
 
 Once you have configured your accounts, you can start using them straight away. To do this, OVHcloud offers an web application, available [here](/links/web/email). You will need to enter your email address and password to log in.
+
+If this is your first time logging in to OWA with this email address, you will be prompted to set the interface language and time zone. Next, click `Save`{.action} to continue.
 
 > [!primary]
 >
@@ -165,7 +170,7 @@ If you would like to configure your email address on an email client or device (
 >
 > In our guides, we use as the server name: pro?.mail.ovh.net. You will need to replace the "?" with the actual number indicating the appropriate server for your Email Pro service.
 > 
-> You can find this information in the [OVHcloud Control Panel](/links/manager), in the `Web Cloud`{.action} section, if you select `Email Pro`{.action}. The server name is displayed in the **Connection** box in the `General Information`{.action} tab.
+> You can find this information in the `General Information`{.action} tab of your Email Pro service, in the **Connection** box.
 >
 
 ## Go further

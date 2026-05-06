@@ -1,6 +1,6 @@
 ---
-title: "Substituição do par de chaves SSH"
-excerpt: "Saiba como restaurar o acesso ao servidor em caso de perda da sua chave privada, gerando um novo par de chaves SSH"
+title: "Substituir uma chave SSH perdida num servidor dedicado"
+excerpt: "Restaure o acesso SSH ao seu servidor dedicado gerando e implementando um novo par de chaves em modo rescue"
 updated: 2024-04-04
 ---
 
@@ -26,7 +26,6 @@ No entanto, pode ligar-se ao seu servidor através do [modo rescue OVHcloud](/pa
 ## Requisitos
 
 - Ter um [servidor dedicado](/links/bare-metal/bare-metal) ou um [VPS](/links/bare-metal/vps) na sua conta OVHcloud
-- Ter acesso à [Área de Cliente OVHcloud](/links/manager)
 
 ## Instruções
 

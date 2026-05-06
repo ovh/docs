@@ -19,9 +19,19 @@ At the end of this tutorial, you will have learnt the principal methods to build
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](/links/manager)
 - An AI Notebooks project created inside a [Public Cloud project](/links/public-cloud/public-cloud) in your OVHcloud account
 - A user for AI Notebooks
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Navigation path:** `Public Cloud`{.action} > Select your project
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## Instructions
 
@@ -29,6 +39,7 @@ You can launch your notebook from the [OVHcloud Control Panel](/links/manager) o
 
 ### Launching a Jupyter notebook with "Miniconda" via UI
 
+<!-- CP-STEPS-START:launch-notebook-ui -->
 To launch your notebook from the [OVHcloud Control Panel](/links/manager), refer to the following steps.
 
 #### Code editor
@@ -59,6 +70,8 @@ You can choose the number of CPUs or GPUs you want.
 >
 > Here, using `4 CPU` is sufficient.
 >
+
+<!-- CP-STEPS-END:launch-notebook-ui -->
 
 ### Launching a Jupyter notebook with "Miniconda" via CLI
 

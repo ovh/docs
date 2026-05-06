@@ -14,15 +14,25 @@ Vous n'avez actuellement pas accès à Internet ou rencontrez une dégradation d
 
 - Disposer d'un [accès Internet FTTH, FTTE ou FTTO OVHcloud](/links/telecom/offre-internet).
 - Selon les vérifications que vous allez devoir réaliser, vous devrez être à proximité des équipements Internet (ONT ou RAD et box OVHcloud) ou disposer d'un ordinateur relié à votre box OVHcloud via un câble Ethernet ou en Wi-Fi.
+<!-- CP-NAV-START:telecom-xdsl-fttx -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Accès Internet](/links/control-panel/telecom-xdsl-fttx)
+- **Pour accéder à vos services :** `Télécom`{.action} > `Offres Internet`{.action} > Sélectionnez votre accès
+
+---
+<!-- CP-NAV-END:telecom-xdsl-fttx -->
 
 > [!primary]
 >
-> Ce guide s'adresse uniquement aux clients disposant d'un [accès Internet FTTH, FTTE ou FTTO OVHcloud](/links/telecom/offre-internet). Si vous disposez d'un accès Internet xDSL OVHcloud, reportez-vous aux documentations xDSL correspondantes accessibles depuis [ce lien](/products/web-cloud-internet-internet-access).
+> Ce guide s'adresse uniquement aux clients disposant d'un [accès Internet FTTH, FTTE ou FTTO OVHcloud](/links/telecom/offre-internet). Si vous disposez d'un accès Internet xDSL OVHcloud, reportez-vous aux documentations xDSL correspondantes accessibles depuis la [page des guides Accès Internet](/products/web-cloud-internet-internet-access).
 >
 
 ## En pratique
 
-Afin de déterminer la cause précise du dysfonctionnement affectant votre accès Internet fibre, il est nécessaire de procéder étape par étape. Suivez ainsi les indications ci-dessous, dans l'ordre, jusqu'au rétablissement de votre accès.
+Pour déterminer la cause du dysfonctionnement affectant votre accès Internet fibre, procédez étape par étape. Suivez ainsi les indications ci-dessous, dans l'ordre, jusqu'au rétablissement de votre accès.
 
 ### Étape 1 : vérifier l'existence d'un incident déclaré (**uniquement pour les accès FTTH**)
 
@@ -77,8 +87,8 @@ Cliquez sur l'onglet correspondant à votre offre pour réaliser les vérificati
 >>
 >> - **L'état des voyants indique que tout fonctionne correctement** : cela signifie que l'ONT est allumé et que la connexion avec le signal optique est établie. Dans ce cas, poursuivez vers l'étape 3 « [vérifier le fonctionnement jusqu'à la box OVHcloud](#check-box) ».
 >>
->> ![diagnosticfibre](images/acces-internet-ont-huawei.jpg)
->> 
+>> ![diagnosticfibre](images/acces-internet-ont-huawei.jpg){.thumbnail}
+>>
 >> **ONT Nokia**
 >>
 >> Commencez en relevant l'état des quatre voyants mentionnés ci-dessous sur l'appareil :
@@ -100,7 +110,7 @@ Cliquez sur l'onglet correspondant à votre offre pour réaliser les vérificati
 >>
 >> - **L'état des voyants indique que tout fonctionne correctement** : cela signifie que l'ONT est allumé et que la connexion avec le signal optique est établie. Dans ce cas, poursuivez vers l'étape 3 « [vérifier le fonctionnement jusqu'à la box OVHcloud](#check-box) ».
 >>
->> ![diagnosticfibre](images/acces-internet-ont-nokia.jpg)
+>> ![diagnosticfibre](images/acces-internet-ont-nokia.jpg){.thumbnail}
 >>
 > **FTTE et FTTO** - Vérifications jusqu'au RAD
 >>
@@ -251,7 +261,9 @@ Il se peut qu'un élément basique de votre ordinateur (comme la configuration d
 
 - vérifiez que la date et l'heure sont à jour sur votre ordinateur. Si ce n'est pas le cas, l'accès à certains sites bénéficiant d'un certificat SSL pourrait ne plus fonctionner ;
 
+<!-- CP-STEPS-START:ftth-fix-ipv6-access -->
 - si vous avez activé le protocole **IPv6** sur votre accès Internet OVHcloud, assurez-vous que le ou les sites qui ne fonctionnent pas sont bien accessibles via ce protocole. Si ce n'est pas le cas, désactiver l'IPv6 pourrait rétablir l'accès à ces pages. Cette gestion s'effectue dans l'espace client, en cliquant sur l'onglet `Mon accès`{.action} de l'accès à Internet concerné, puis sur la section « Caractéristiques ».
+<!-- CP-STEPS-END:ftth-fix-ipv6-access -->
 
 Si votre connexion fonctionne de nouveau, c'est qu'un élément perturbe son fonctionnement. Reconfigurez, réinitialisez ou écartez cet élément afin de résoudre la panne. Si votre connexion ne fonctionne toujours pas, poursuivez la lecture de cette documentation.
 
@@ -329,12 +341,8 @@ Votre connexion Wi-Fi n'est toujours pas fonctionnelle ? Deux vérifications pe
 
 - **Modifier la clé Wi-Fi** : Votre réseau Wi-Fi étant accessible par le biais d'une clé, il est possible que celle que vous utilisez ne soit pas correcte. Il est alors conseillé de modifier la clé Wi-Fi, afin d'être sûr d'en utiliser une fonctionnelle.
 
-Pour accéder à la configuration de votre réseau Wi-Fi OVHcloud, suivez ces étapes :
-
-1. Connectez-vous à votre [espace client OVHcloud](/links/manager) et cliquez sur `Télécom`{.action}.
-1. Cliquez sur `Offres Internet`{.action} puis sur le *Pack* contenant l'accès à Internet concerné.
-1. Cliquez sur votre accès à Internet fibre ou xDSL dans le cadre `Accès Internet` à droite.
-1. Positionnez-vous sur l'onglet `Mon modem`{.action} et cliquez sur `Configurer les réseaux Wi-Fi`{.action} dans la section `Configuration générale`{.action}.
+<!-- CP-STEPS-START:ftth-fix-wifi-config -->
+Depuis votre [espace client OVHcloud](/links/control-panel/telecom-xdsl-fttx), cliquez sur votre accès à Internet FTTH ou xDSL dans le cadre `Accès Internet` à droite, puis positionnez-vous sur l'onglet `Mon modem`{.action} et cliquez sur `Configurer les réseaux Wi-Fi`{.action} dans la section `Configuration générale`{.action}.
 
 ![diagnosticfibre](images/espaceclient2022.png){.thumbnail}
 
@@ -342,18 +350,14 @@ Dans la page qui apparaît, cliquez sur le bouton représentant des points de su
 
 Validez vos changements grâce au bouton `Valider`{.action} et **patientez cinq minutes, le temps que la modification soit prise en compte par votre box OVHcloud.** Si nécessaire, effectuez plusieurs tests concernant le canal Wi-Fi afin de trouver le plus stable et le mieux adapté à votre situation.
 
-![diagnosticfibre](images/wifi-2022.png){.thumbnail}
+<!-- CP-STEPS-END:ftth-fix-wifi-config -->
 
 #### 4.5 Vérifier la configuration réseau de votre box OVHcloud <a name="check-box-network"></a>
 
+<!-- CP-STEPS-START:ftth-fix-network-config -->
 Si la connexion n'est toujours pas fonctionnelle, assurez-vous que la configuration réseau actuellement en place sur votre box OVHcloud permet toujours à vos équipements personnels de communiquer entre eux.
 
-Pour cela, suivez ces étapes :
-
-1. Connectez-vous à votre [espace client OVHcloud](/links/manager) et cliquez sur `Télécom`{.action}.
-1. Cliquez sur `Offres Internet`{.action} puis sur le *Pack* contenant l'accès à Internet concerné.
-1. Cliquez sur votre accès à Internet fibre ou xDSL dans le cadre `Accès Internet` à droite.
-1. Positionnez-vous sur l'onglet `Mon modem`{.action} et descendez dans la page jusqu'à voir la section `Configuration réseau`{.action}.
+Depuis votre [espace client OVHcloud](/links/control-panel/telecom-xdsl-fttx), cliquez sur votre accès à Internet FTTH ou xDSL dans le cadre `Accès Internet` à droite, puis positionnez-vous sur l'onglet `Mon modem`{.action} et descendez dans la page jusqu'à voir la section `Configuration réseau`{.action}.
 
 Nous allons nous intéresser spécifiquement aux tableaux « IP LAN » et « DHCP ».
 
@@ -379,7 +383,7 @@ Vous avez également la possibilité de réinitialiser la configuration de votre
 
 Pour réinitialiser la configuration de votre box OVHcloud, depuis l'onglet `Mon modem`{.action}, descendez dans la page jusqu'à voir la section `Configurations avancées`{.action}, puis cliquez sur `Réinitialiser la configuration OVHcloud`{.action}. **Patientez cinq minutes le temps que la modification soit prise en compte par votre modem.**
 
-![diagnosticfibre](images/acces-internet-laptop-test-step13-2022.png){.thumbnail}
+<!-- CP-STEPS-END:ftth-fix-network-config -->
 
 #### 4.6 Vérifier la configuration de la carte réseau de votre ordinateur
 

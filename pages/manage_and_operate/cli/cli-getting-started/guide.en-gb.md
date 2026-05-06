@@ -121,5 +121,5 @@ Most products offer basic commands to list services, retrieve and edit their det
 ## Resources
 
 - [OVHcloud CLI GitHub Repository](https://github.com/ovh/ovhcloud-cli)
-- [CLI Documentation](https://github.com/ovh/ovhcli#readme)
+- [CLI Documentation](https://github.com/ovh/ovhcloud-cli#readme)
 - [API Reference](/links/console)

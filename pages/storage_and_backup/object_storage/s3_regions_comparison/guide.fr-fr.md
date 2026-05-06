@@ -46,7 +46,7 @@ Une région 1-AZ se compose d'une **seule zone de disponibilité qui couvre plus
 | Spécification              | Description                                           |
 |------------------------|-------------------------------------------------------|
 | **Type de redondance** | 2N+1 entre plusieurs datacenters               |
-| **Tolérance aux pannes** | Niveau serveur et disque. Risque de panne du datacenter. |
+| **Tolérance aux pannes** | Niveau serveur et disque. Risque de panne du datacenter.  |
 | **Cas d'utilisation**  | Applications générales, sauvegardes                   |
 
 <a name="3azregion"></a>
@@ -117,4 +117,6 @@ Si vous avez besoin d'une formation ou d'une assistance technique pour la mise e
 
 Pour des détails supplémentaires et de l’assistance sur les modes de déploiement Object Storage, consultez [ce guide](/pages/storage_and_backup/object_storage/cold_archive_getting_started).
 
-Échangez avec notre [communauté d'utilisateurs](/links/community) et notre communauté sur [Discord](https://discord.gg/ovhcloud).
+Visitez notre canal [Discord](https://discord.gg/ovhcloud).
+
+Échangez avec notre [communauté d'utilisateurs](/links/community).

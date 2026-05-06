@@ -22,7 +22,16 @@ Os nossos alojamentos web são compatíveis com IPv6 desde 2011. Mas a ativaçã
 
 - Dispor de um [nome de domínio](/links/web/domains) na sua Área de Cliente OVHcloud.
 - Dispor de um [serviço de alojamento web](/links/web/hosting).
-- Ter acesso ao seu [Área de Cliente OVHcloud](/links/manager).
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Acesso à Área de Cliente OVHcloud
+
+- **Ligação direta:** [Hosting plans](/links/control-panel/web-hosting)
+- **Caminho de navegação:** `Web Cloud`{.action} > `Alojamentos`{.action} > Selecione o seu alojamento web
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## Instruções
 
@@ -41,28 +50,24 @@ Para verificar se o seu website já utiliza um endereço IPv6, utilize o site [i
 
 ### 2 - recuperar o endereço IPv6 do seu alojamento web
 
-Clique nas janelas abaixo para visualizar cada uma das etapas **3**.
+<!-- CP-STEPS-START:retrieve-ipv6-address -->
+Clique nos separadores abaixo para visualizar cada uma das **2** etapas.
 
 > [!tabs]
 > **Etapa 1**
 >>
->> Aceda à [Área de Cliente OVHcloud](/links/manager) e aceda à secção `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Etapa 2**
->>
->> Clique no menu `Alojamentos`{.action} e escolha o alojamento web em causa.
+>> Aceda à página [Hosting plans](/links/control-panel/web-hosting) e escolha o alojamento web correspondente.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Etapa 3**
+> **Etapa 2**
 >>
 >> No marco **Informações gerais**, encontrará **IPv6**.
 >>
 >> ![IPv6](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-ipv6.png){.thumbnail}
 >>
 >> Copie o endereço IP e continue a ler o guia.
+<!-- CP-STEPS-END:retrieve-ipv6-address -->
 
 ### 3 - configurar a zona DNS ativa do seu domínio
 

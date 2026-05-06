@@ -16,14 +16,24 @@ updated: 2025-04-28
 
 ## Objectif
 
-Lorsque vous disposez d'une ligne ou d'un numéro chez un opérateur, il est obligatoire d'y rattacher des coordonnées. Chez OVHcloud, vous avez la possibilité de réaliser cette démarche lors de votre commande ou par la suite, depuis votre espace client. Vous pouvez même choisir de publier ces informations dans les annuaires en ligne.
+Lorsque vous disposez d'une ligne ou d'un numéro chez un opérateur, il est obligatoire d'y rattacher des coordonnées. Chez OVHcloud, vous pouvez réaliser cette démarche lors de votre commande ou par la suite, depuis votre espace client. Vous pouvez même choisir de publier ces informations dans les annuaires en ligne.
 
 **Découvrez comment rattacher des informations à votre ligne ou numéro OVHcloud et les faire paraître dans les annuaires.**
 
 ## Prérequis
 
-- Disposer d’un [numéro alias](/links/telecom/telephonie-numeros) ou d'une [ligne VoIP OVHcloud](/links/telecom/telephonie).
-- Être connecté à l'[espace client OVHcloud](/links/manager), partie `Télécom`{.action} :
+- Disposer d'un [numéro alias](/links/telecom/telephonie-numeros) ou d'une [ligne VoIP OVHcloud](/links/telecom/telephonie).
+
+<!-- CP-NAV-START:telecom-voip-fax -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [VoIP & Fax](/links/control-panel/telecom-voip-fax)
+- **Pour accéder à vos services :** `Télécom`{.action} > `VoIP & Fax`{.action} > Sélectionnez votre groupe de téléphonie
+
+---
+<!-- CP-NAV-END:telecom-voip-fax -->
 
 ![espace client Telecom VoIP](/pages/assets/screens/control_panel/product-selection/telecom/tpl-telecom-02-fr-voip.png){.thumbnail}
 
@@ -43,10 +53,8 @@ Assurez-vous ainsi d'indiquer et de maintenir à jour les coordonnées de l'ense
 
 ### Étape 2 : modifier ses coordonnées et demander leur parution
 
-1. Connectez-vous à votre [espace client OVHcloud](/links/manager) et cliquez sur `Télécom`{.action}.
-1. Cliquez sur `VoIP & Fax`{.action} puis sur le groupe de facturation contenant votre ligne SIP ou votre numéro alias.
-1. Cliquez sur la ligne SIP ou le numéro alias concerné.
-1. Positionnez-vous ensuite sur l'onglet `Coordonnées`{.action}. L'image ci-dessous montre l'accès pour modifier les coordonnées d'un numéro OVHcloud. Vous pourriez avoir davantage d'onglets si vous réalisez la manipulation pour une ligne OVHcloud.
+<!-- CP-STEPS-START:modifier-coordonnees -->
+Cliquez sur l'onglet `Coordonnées`{.action}. L'image ci-dessous montre l'accès pour modifier les coordonnées d'un numéro OVHcloud. Vous pourriez avoir davantage d'onglets si vous réalisez la manipulation pour une ligne OVHcloud.
 
 ![telephonedirectory](images/manage-telephone-directory-step1.png){.thumbnail}
 
@@ -61,15 +69,17 @@ Dès lors, complétez ou modifiez avec précision les champs se trouvant dans le
 Une fois toutes les informations complétées, cliquez sur le bouton `Appliquer les modifications`{.action}. Si vous avez choisi de publier vos informations, la parution dans les annuaires en ligne sera effective sous 1 à 30 jours. Ce délai est inhérent aux annuaires eux-mêmes, qui mettent à jour leur base de données une fois par mois.
 
 ![telephonedirectory](images/manage-telephone-directory-step2.png){.thumbnail}
+<!-- CP-STEPS-END:modifier-coordonnees -->
 
 ### Étape 3 : suivre la parution de vos coordonnées
 
+<!-- CP-STEPS-START:suivre-parution -->
 > [!primary]
 >
 > Cette étape s'applique uniquement si vous avez choisi de publier vos informations dans les annuaires en ligne. 
 >
 
-Vous avez la possibilité de suivre la parution de vos informations dans les annuaires en ligne depuis votre [espace client OVHcloud](/links/manager), partie `Télécom`. Pour cela, une fois connecté, positionnez-vous sur l'onglet `Coordonnées`{.action} de la ligne ou du numéro OVHcloud concerné.
+Vous avez la possibilité de suivre la parution de vos informations dans les annuaires en ligne depuis l'onglet `Coordonnées`{.action} de la ligne ou du numéro OVHcloud concerné.
 
 Descendez en bas de la page jusqu'à la section `Parution dans les annuaires`. Vérifiez alors le statut qui s'affiche : 
 
@@ -82,6 +92,7 @@ Descendez en bas de la page jusqu'à la section `Parution dans les annuaires`. V
 Pour vérifier la parution de vos coordonnées, vous pouvez également vous rendre directement sur le site de l'annuaire concerné. Vous devrez alors rechercher votre ligne ou numéro OVHcloud.
 
 ![telephonedirectory](images/manage-telephone-directory-step3.png){.thumbnail}
+<!-- CP-STEPS-END:suivre-parution -->
 
 ## Aller plus loin
 

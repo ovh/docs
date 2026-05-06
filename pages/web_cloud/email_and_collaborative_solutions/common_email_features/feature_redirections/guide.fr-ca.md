@@ -1,7 +1,7 @@
 ---
 title: "Utiliser les alias et redirections e-mail"
 excerpt: "Découvrez comment gérer vos alias et redirections e-mail"
-updated: 2025-06-03
+updated: 2026-03-31
 ---
 
 <style>
@@ -72,65 +72,41 @@ Cliquez sur les onglets suivants pour des explications illustrées sur le foncti
 
 ## Prérequis
 
-- Être connecté à votre [espace client OVHcloud](/links/manager).
 - Disposer d'une solution e-mail OVHcloud préalablement configurée, parmi les suivantes :
     - **MX Plan** proposée avec nos [offres d’hébergement web](/links/web/hosting).
-    - [Exchange](/links/web/emails).
+    - [Exchange](/links/web/emails-exchange).
+
+<!-- CP-NAV-START:web-mx-plan -->
+<!-- CP-NAV-START:web-exchange -->
+---
+
+### Accès à l'espace client OVHcloud
+
+**MX Plan :**
+
+- **Lien direct :** [MX Plan](/links/control-panel/web-mx-plan)
+- **Pour accéder à vos services :** `Web Cloud`{.action} > `MX Plan`{.action} > Sélectionnez votre service MX Plan
+
+**Exchange :**
+
+- **Lien direct :** [Exchange](/links/control-panel/web-exchange)
+- **Pour accéder à vos services :** `Web Cloud`{.action} > `Exchange`{.action} > Sélectionnez votre plateforme
+
+---
+<!-- CP-NAV-END:web-exchange -->
+<!-- CP-NAV-END:web-mx-plan -->
 
 ## En pratique
 
 **Sommaire**
 
 - [Créer une redirection](#redirect)
-    - [Depuis l'espace client](#redirect-manager)
     - [Depuis le webmail](#redirect-webmail)
 - [Supprimer une redirection](#redirect-delete)
 - [Créer un alias](#alias)
 - [Supprimer un alias](#alias-delete)
 
 ### Créer une redirection <a name="redirect"></a>
-
-#### Depuis l'espace client <a name="redirect-manager"></a>
-
-Actuellement, seules les offres **MX plan** et **Redirect** disposent d'une interface de gestion des redirections via l'espace client OVHcloud.
-
-##### MX Plan / redirect <a name="redirect-manager-mxplan"></a>
-
-1. Connectez-vous à votre [espace client OVHcloud](/links/manager).
-1. Rendez-vous dans la partie `Web Cloud`{.action}.
-1. Cliquez sur `MX Plan`{.action}.
-1. Sélectionnez le domaine concerné.
-
-Dans notre exemple, il s'agit d'une **redirection avec copie locale** (voir le [schéma 2](#diagram) au début de ce guide). Si cela correspond à votre besoin, suivez les étapes ci-dessous.
-
-Par défaut, vous êtes dans l'onglet `Informations générales`{.action} de votre MX Plan. Cliquez sur l'onglet `Emails`{.action} puis à droite sur le bouton `Gestion des redirections`{.action}.
-
-![emails](images/mxplan-legacy-1.png){.thumbnail .w-640}
-
-Le tableau des redirections déjà actives s'affiche. À droite, cliquez sur le bouton `Ajouter une redirection`{.action}.
-
-![emails](images/mxplan-legacy-2.png){.thumbnail .w-640}
-
-Dans le formulaire `Créer une redirection`, complétez les éléments suivants :
-
-- **De l'adresse** : Renseignez ici l'adresse e-mail que vous souhaitez rediriger.
-- **Vers l'adresse** : Renseignez ici l'adresse de destination de votre redirection. Il peut s'agir de l'une de vos adresses e-mail OVHcloud, ou d'une adresse e-mail externe.
-- **Choisissez un mode de copie** : Choisissez si vous souhaitez :
-      - **Conserver une copie du mail chez OVHcloud** : Recevoir l'e-mail sur votre adresse principale ainsi que l'adresse de redirection (voir le [schéma 2](#diagram) au début de ce guide).
-      - **Ne pas conserver de copie du mail** : Renvoyer directement vers l'adresse de redirection sans que l'adresse principale ne le reçoive (voir le [schéma 1](#diagram) au début de ce guide).
-
-Cliquez ensuite sur `Valider`{.action} pour confirmer l'ajout de cette redirection.
-
-![emails](images/mxplan-legacy-3.png){.thumbnail .w-640}
-
-> [!primary]
->
-> Pour modifier l'adresse de destination ou supprimer une redirection, cliquez sur `...`{.action}, à droite de la redirection concernée.
-
-> [!primary]
->
-> Lorsque vous choisissez le mode de copie « **Conserver une copie du mail chez OVHcloud** », une redirection de l'adresse e-mail vers elle-même est créée automatiquement dans la liste des redirections, elle matérialise cette copie locale.
->
 
 #### Depuis le webmail <a name="redirect-webmail"></a>
 
@@ -195,24 +171,6 @@ Parcourez les onglets ci-dessous pour mettre en place votre redirection via Outl
 
 #### Supprimer une redirection <a name="redirect-delete"></a>
 
-##### MX Plan via espace client <a name="redirect-delete-mxplan"></a>
-
-1. Connectez-vous à votre [espace client OVHcloud](/links/manager).
-1. Rendez-vous dans la partie `Web Cloud`{.action}.
-1. Cliquez sur `MX Plan`{.action}.
-1. Sélectionnez le domaine concerné.
-
-Sélectionnez, ci-dessous, l'onglet correspondant à la technologie e-mail utilisée par votre service MX Plan :
-
-- Par défaut, vous êtes dans l'onglet `Informations générales`{.action} de votre MX Plan.
-- Cliquez sur l'onglet `Emails`{.action} puis à droite sur le bouton `Gestion des redirections`{.action}.
-
-![emails](images/mxplan-legacy-1.png){.thumbnail .w-640}
-
-- Cliquez sur `...`{.action}, à droite de la redirection concernée puis sur `Supprimer la redirection`{.action}.
-
-![emails](images/mxplan-redirect-delete01.png){.thumbnail .w-640}
-
 ##### Outlook Web App (OWA) <a name="redirect-delete-owa"></a>
 
 Rendez-vous sur le [webmail](/links/web/email). Saisissez **l'adresse e-mail** et le **mot de passe** pour vous y connecter. Depuis l'interface du webmail OWA, suivez les étapes en cliquant sur les onglets ci-dessous :
@@ -243,11 +201,7 @@ Rendez-vous sur le [webmail](/links/web/email). Saisissez **l'adresse e-mail** e
 
 Créer un alias pour votre adresse e-mail vous permet de communiquer une adresse « masque » à vos contacts, sans avoir à communiquer votre adresse e-mail personnelle à l'expéditeur. 
 
-Connectez-vous à votre [espace client OVHcloud](/links/manager) et dirigez-vous dans la section `Web Cloud`. Choisissez ensuite le menu en fonction de votre offre e-mail :
-
-- **Exchange** : Rendez-vous dans la section `Microsoft`{.action}, cliquez sur `Exchange`{.action} et sélectionnez la plateforme concernée. Cliquez sur l'onglet `Comptes e-mail`{.action}.
-
-- **MX Plan** : Rendez-vous dans la section `MX Plan`{.action}, sélectionnez la plateforme concernée puis cliquez sur l'onglet `Comptes e-mail`{.action}.
+Depuis votre service e-mail (Exchange ou MX Plan), cliquez sur l'onglet `Comptes e-mail`{.action}.
 
 Pour ajouter un alias à votre compte e-mail, suivez les étapes décrites en cliquant successivement sur chaque onglet ci-dessous :
 
@@ -272,11 +226,7 @@ Pour ajouter un alias à votre compte e-mail, suivez les étapes décrites en cl
 
 ### Supprimer un alias <a name="alias-delete"></a>
 
-Connectez-vous à votre [espace client OVHcloud](/links/manager) et dirigez-vous dans la section `Web Cloud`. Choisissez ensuite le menu en fonction de votre offre e-mail :
-
-- **Exchange** : Rendez-vous dans la section `Microsoft`{.action}, cliquez sur `Exchange`{.action} et sélectionnez la plateforme concernée. Cliquez sur l'onglet `Comptes e-mail`{.action}.
-
-- **MX Plan** : Rendez-vous dans la section `MX Plan`{.action}, sélectionnez la plateforme concernée puis cliquez sur l'onglet `Comptes e-mail`{.action}.
+Depuis votre service e-mail (Exchange ou MX Plan), cliquez sur l'onglet `Comptes e-mail`{.action}.
 
 Depuis l'onglet `Comptes e-mail`{.action}, cliquez sur le bouton `...`{.action} à droite de l'adresse e-mail concernée. Cliquez ensuite sur `Configurer les alias`{.action} (ou `Gérer les alias`{.action}).
 

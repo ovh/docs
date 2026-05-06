@@ -11,7 +11,7 @@ updated: 2025-12-19
 
 ## Introduction
 
-[AI Endpoints](https://endpoints.ai.cloud.ovh.net/) is a serverless platform provided by OVHcloud that offers easy access to a selection of world-renowned, pre-trained AI models. The platform is designed to be simple, secure, and intuitive, making it an ideal solution for developers who want to enhance their applications with AI capabilities without extensive AI expertise or concerns about data privacy.
+[AI Endpoints](/links/public-cloud/ai-endpoints) is a serverless platform provided by OVHcloud that offers easy access to a selection of world-renowned, pre-trained AI models. The platform is designed to be simple, secure, and intuitive, making it an ideal solution for developers who want to enhance their applications with AI capabilities without extensive AI expertise or concerns about data privacy.
 
 **Structured Output** is a powerful feature that allows you to enforce specific formats for the responses from AI models. By using the `response_format` parameter in your API calls, you can define how you want the output to be structured, ensuring consistency and ease of integration with your applications.
 This is particularly useful when you need the AI model to return data in a specific JSON format.
@@ -20,11 +20,11 @@ This feature allows for seamless integration of AI-generated data into your appl
 
 ## Objective
 
-This documentation provides an overview on how to use structured outputs with the various AI models offered on [AI Endpoints](https://endpoints.ai.cloud.ovh.net/).
+This documentation provides an overview on how to use structured outputs with the various AI models offered on [AI Endpoints](/links/public-cloud/ai-endpoints).
 
-The examples provided in this guide will be using the [Llama 3.3 70b model](https://endpoints.ai.cloud.ovh.net/models/c968b503-27fa-451d-b59d-1b0ff91d304d).
+The examples provided in this guide will be using the [Llama 3.3 70b model](https://www.ovhcloud.com/en/public-cloud/ai-endpoints/catalog/llama-3-3-70b-instruct/).
 
-Visit our [Catalog](https://endpoints.ai.cloud.ovh.net/catalog) to find out which models are compatible with Structured Output.
+Visit our [Catalog](/links/public-cloud/ai-endpoints-catalog) to find out which models are compatible with Structured Output.
 
 The output formats managed by each model are defined in the Response Format section:
 
@@ -555,7 +555,7 @@ Some additional considerations regarding prompts and model parameters:
 
 ## Conclusion
 
-In this guide, we have explained how to use Structured Output with the [AI Endpoints](https://endpoints.ai.cloud.ovh.net/) models. We have provided a comprehensive overview of the feature which can help you perfect your integration of LLM for your own application.
+In this guide, we have explained how to use Structured Output with the [AI Endpoints](/links/public-cloud/ai-endpoints) models. We have provided a comprehensive overview of the feature which can help you perfect your integration of LLM for your own application.
 
 ## Go further
 

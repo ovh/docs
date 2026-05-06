@@ -28,16 +28,24 @@ Diese Additional IPs können nur für Instanzen desselben Projekts migriert werd
 
 ## Voraussetzungen
 
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 - Sie haben mindestens eine [Public Cloud Instanz](/pages/public_cloud/compute/public-cloud-first-steps) in Ihrem Kunden-Account.
 
 > [!warning]
 > Diese Funktion ist derzeit für Metal Instanzen nicht verfügbar.
 >
 
-## In der praktischen Anwendung
+<!-- CP-NAV-START:publiccloud-projects -->
+---
 
-Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein, gehen Sie in den Bereich `Public Cloud`{.action} und wählen Sie das betreffende Public Cloud Projekt aus.
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direkter Link:** [Public Cloud Projekte](/links/control-panel/publiccloud-projects)
+- **Navigationspfad:** `Public Cloud`{.action} > Wählen Sie Ihr Projekt aus
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
+
+## In der praktischen Anwendung
 
 Öffnen Sie im linken Menü `Öffentliche IPs`{.action} unter **Network**.
 

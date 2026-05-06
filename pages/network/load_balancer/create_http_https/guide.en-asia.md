@@ -37,11 +37,20 @@ As a reminder, the OVHcloud Load Balancer service is composed of 4 elementary pa
 ## Requirements
 
 - Have an [OVHcloud Load balancer](/links/network/load-balancer) offer in your OVHcloud account
-- You must  be logged in to your [OVHcloud Control Panel](/links/manager)
 - Have a configured farm
 - Have a configured frontend
 - Have an SSL certificate
 
+<!-- CP-NAV-START:network-load-balancer -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Load Balancer](/links/control-panel/network-load-balancer)
+- **Navigation path:** `Network`{.action} > `Load Balancer`{.action} > Select your service
+
+---
+<!-- CP-NAV-END:network-load-balancer -->
 ## Instructions
 
 ## Table of contents

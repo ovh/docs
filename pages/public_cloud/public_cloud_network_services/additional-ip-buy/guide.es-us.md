@@ -28,16 +28,24 @@ Estas direcciones Additional IP solo pueden migrar a las instancias de un mismo 
 
 ## Requisitos
 
-- Tener acceso al [área de cliente de OVHcloud](/links/manager).
 - Disponer al menos de una instancia. A tal efecto, consulte [la guía para crear una instancia desde el área de cliente](/pages/public_cloud/compute/public-cloud-first-steps#3-crear-una-instancia).
 
 > [!warning]
 > Esta funcionalidad no está actualmente disponible para instancias Metal.
 >
 
-## Procedimiento
+<!-- CP-NAV-START:publiccloud-projects -->
+---
 
-Conéctese al [área de cliente de OVHcloud](/links/manager), acceda a la sección de  `Public Cloud`{.action} y seleccione el proyecto de Public Cloud correspondiente.
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Ruta de navegación:** `Public Cloud`{.action} > Seleccione su proyecto
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
+
+## Procedimiento
 
 En el menú de la izquierda, abra `IP públicas`{.action} en **Network**.
 

@@ -1,7 +1,7 @@
 ---
-title: "Cómo configurar la agregación de enlaces con LACP en Debian 12 o Ubuntu 24.04 (EN)"
-excerpt: "Enable Link Aggregation in your Debian 12 or Ubuntu 24.04 server (Netplan) to increase your server’s availability and boost the efficiency of your network connections"
-updated: 2026-01-09
+title: "Configure LACP Link Aggregation on a Dedicated Server (Debian/Ubuntu)"
+excerpt: "Configure LACP link aggregation on Debian 12 or Ubuntu 24.04 servers using Netplan for improved bandwidth and redundancy."
+updated: 2026-04-20
 ---
 
 <style>
@@ -20,7 +20,7 @@ details[open]>summary::before {
 
 ## Objective
 
-Link Aggregation Control Protocol (LACP) technology is designed to increase your server’s availability, and boost the efficiency of your network connections. You can aggregate your network cards and make your network links redundant. This means that if one link goes down, traffic is automatically redirected to another available link. The available bandwidth is also doubled thanks to aggregation.
+Link Aggregation Control Protocol (LACP) technology is designed to increase your server's availability, and boost the efficiency of your network connections. You can aggregate your network cards and make your network links redundant. This means that if one link goes down, traffic is automatically redirected to another available link. The available bandwidth is also doubled thanks to aggregation.
 
 **This guide explains how to bond your interfaces to use them for link aggregation in Debian 12 (*or newer*) / Ubuntu 24.04 (Netplan configuration).**
 
@@ -35,7 +35,16 @@ Link Aggregation Control Protocol (LACP) technology is designed to increase your
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](/links/manager)
+<!-- CP-NAV-START:baremetal-dedicated-servers -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Dedicated Servers](/links/control-panel/baremetal-dedicated-servers)
+- **Navigation path:** `Bare Metal Cloud`{.action} > `Dedicated servers`{.action} > Select your server
+
+---
+<!-- CP-NAV-END:baremetal-dedicated-servers -->
 
 ## Instructions
 
@@ -45,16 +54,12 @@ Link Aggregation Control Protocol (LACP) technology is designed to increase your
 
 ### Retrieving MAC addresses
 
-Log in to the [OVHcloud Control Panel](/links/manager), go to the `Bare Metal Cloud`{.action} section and select your server from **Dedicated Servers**.
-
 Switch to the tab `Network Interfaces`{.action} and take note of the MAC addresses for each interface (public/private) which are displayed at the bottom of the menu.
 
 ![OVHcloud Control Panel](images/ControlPanel.png){.thumbnail}
 
 > [!primary]
 > Please note that the MAC address of the **main public** interface is the one receiving DHCP offers, both in the server's operating system and in rescue mode. This interface handles public connectivity in the default configuration.
->
-> Additionally, the MAC address of the **main private** interface is the one with the lowest value. In the example image above, this is the address `a1:b2:c3:d4:e5:d6`.
 >
 
 Now that you know which MAC addresses are associated to each type (public/private) of interface, you need to retrieve the interfaces names.
@@ -104,123 +109,261 @@ Here's an output example:
 
 Once you have determined the names of your interfaces, you can configure interfaces bonding in the OS.
 
-### Static IP configuration
+### Configuring interface bonding
 
-Replace the content of `/etc/netplan/50-cloud-init.yaml` with the following:
+Select the tab below that matches your server configuration:
 
-```yaml
-network:
-    version: 2
-    ethernets:
-        ens22f0np0:
-            match:
-                macaddress: a1:b2:c3:d4:e5:c6
-        ens22f1np1:
-            match:
-                macaddress: a1:b2:c3:d4:e5:c7
-        ens33f0np0:
-            match:
-                macaddress: a1:b2:c3:d4:e5:d6
-        ens33f1np1:
-            match:
-                macaddress: a1:b2:c3:d4:e5:d7
-    bonds:
-        bond0:
-            # MAC address of the server's main public interface
-            macaddress: a1:b2:c3:d4:e5:c6
-            accept-ra: false
-            addresses:
-                - 203.0.113.1/32
-                - 2001:db8:1:1b00:203:0:112:0/56
-            routes:
-                - on-link: true
-                  to: default
-                  via: 100.64.0.1
-                - on-link: true
-                  to: default
-                  via: fe80::1
-            nameservers:
-                addresses:
-                - 213.186.33.99
-                - 2001:41d0:3:163::1
-            interfaces:
-                - ens22f0np0
-                - ens22f1np1
-            parameters:
-                mode: 802.3ad
-                lacp-rate: fast
-                transmit-hash-policy: layer3+4
-        # Optional: private bond configuration
-        bond1:
-            # MAC address of the first private interface
-            macaddress: a1:b2:c3:d4:e5:d6
-            accept-ra: false
-            interfaces:
-                - ens33f0np0
-                - ens33f1np1
-            parameters:
-                mode: 802.3ad
-                lacp-rate: fast
-                transmit-hash-policy: layer3+4
-```
+- **Two interfaces**: Advance servers with two physical NICs.
+- **Four interfaces - Double LAG**: Scale and High Grade servers with OLA in **Active - Double LAG** mode (public + private aggregates). This requires [OLA to be enabled](/pages/bare_metal_cloud/dedicated_servers/ola-enable-manager) in the OVHcloud Control Panel.
+- **Four interfaces - Fully Private**: Scale and High Grade servers with OLA in **Active - Fully Private** mode (single private aggregate for vRack). This requires [OLA to be enabled](/pages/bare_metal_cloud/dedicated_servers/ola-enable-manager) in the OVHcloud Control Panel.
 
-/// details | DHCP configuration
-
-Replace the content of `/etc/netplan/50-cloud-init.yaml` with the following:
-
-```yaml
-network:
-    version: 2
-    ethernets:
-        ens22f0np0:
-            match:
-                macaddress: a1:b2:c3:d4:e5:c6
-        ens22f1np1:
-            match:
-                macaddress: a1:b2:c3:d4:e5:c7
-        ens33f0np0:
-            match:
-                macaddress: a1:b2:c3:d4:e5:d6
-        ens33f1np1:
-            match:
-                macaddress: a1:b2:c3:d4:e5:d7
-    bonds:
-        bond0:
-            # MAC address of the server's main public interface
-            macaddress: a1:b2:c3:d4:e5:c6
-            accept-ra: false
-            dhcp4: true
-            addresses:
-                - 2001:db8:1:1b00:203:0:112:0/56
-            routes:
-                - on-link: true
-                  to: default
-                  via: fe80::1
-            nameservers:
-                addresses:
-                - 2001:41d0:3:163::1
-            interfaces:
-                - ens22f0np0
-                - ens22f1np1
-            parameters:
-                mode: 802.3ad
-                lacp-rate: fast
-                transmit-hash-policy: layer3+4
-        # Optional: private bond configuration
-        bond1:
-            # MAC address of the first private interface
-            macaddress: a1:b2:c3:d4:e5:d6
-            accept-ra: false
-            interfaces:
-                - ens33f0np0
-                - ens33f1np1
-            parameters:
-                mode: 802.3ad
-                lacp-rate: fast
-                transmit-hash-policy: layer3+4
-```
-
-///
+> [!tabs]
+> Two interfaces
+>> Replace the content of `/etc/netplan/50-cloud-init.yaml` with the following:
+>>
+>> **Static IP**
+>>
+>> ```yaml
+>> network:
+>>     version: 2
+>>     ethernets:
+>>         ens22f0np0:
+>>             match:
+>>                 macaddress: a1:b2:c3:d4:e5:c6
+>>         ens22f1np1:
+>>             match:
+>>                 macaddress: a1:b2:c3:d4:e5:c7
+>>     bonds:
+>>         bond0:
+>>             # MAC address of the server's main public interface
+>>             macaddress: a1:b2:c3:d4:e5:c6
+>>             accept-ra: false
+>>             addresses:
+>>                 - 203.0.113.1/32
+>>                 - 2001:db8:1:1b00:203:0:112:0/56
+>>             routes:
+>>                 - on-link: true
+>>                   to: default
+>>                   via: 100.64.0.1
+>>                 - on-link: true
+>>                   to: default
+>>                   via: fe80::1
+>>             nameservers:
+>>                 addresses:
+>>                 - 213.186.33.99
+>>                 - 2001:41d0:3:163::1
+>>             interfaces:
+>>                 - ens22f0np0
+>>                 - ens22f1np1
+>>             parameters:
+>>                 mode: 802.3ad
+>>                 lacp-rate: fast
+>>                 transmit-hash-policy: layer3+4
+>> ```
+>>
+>> /// details | DHCP
+>>
+>> ```yaml
+>> network:
+>>     version: 2
+>>     ethernets:
+>>         ens22f0np0:
+>>             match:
+>>                 macaddress: a1:b2:c3:d4:e5:c6
+>>         ens22f1np1:
+>>             match:
+>>                 macaddress: a1:b2:c3:d4:e5:c7
+>>     bonds:
+>>         bond0:
+>>             # MAC address of the server's main public interface
+>>             macaddress: a1:b2:c3:d4:e5:c6
+>>             accept-ra: false
+>>             dhcp4: true
+>>             addresses:
+>>                 - 2001:db8:1:1b00:203:0:112:0/56
+>>             routes:
+>>                 - on-link: true
+>>                   to: default
+>>                   via: fe80::1
+>>             nameservers:
+>>                 addresses:
+>>                 - 2001:41d0:3:163::1
+>>             interfaces:
+>>                 - ens22f0np0
+>>                 - ens22f1np1
+>>             parameters:
+>>                 mode: 802.3ad
+>>                 lacp-rate: fast
+>>                 transmit-hash-policy: layer3+4
+>> ```
+>>
+>> ///
+>>
+> Four interfaces - Double LAG
+>> This configuration bonds public interfaces into `bond0` (with public IP) and private interfaces into `bond1` (for vRack).
+>>
+>> Replace the content of `/etc/netplan/50-cloud-init.yaml` with the following:
+>>
+>> **Static IP**
+>>
+>> ```yaml
+>> network:
+>>     version: 2
+>>     ethernets:
+>>         ens22f0np0:
+>>             match:
+>>                 macaddress: a1:b2:c3:d4:e5:c6
+>>         ens22f1np1:
+>>             match:
+>>                 macaddress: a1:b2:c3:d4:e5:c7
+>>         ens33f0np0:
+>>             match:
+>>                 macaddress: a1:b2:c3:d4:e5:d6
+>>         ens33f1np1:
+>>             match:
+>>                 macaddress: a1:b2:c3:d4:e5:d7
+>>     bonds:
+>>         bond0:
+>>             # MAC address of the server's main public interface
+>>             macaddress: a1:b2:c3:d4:e5:c6
+>>             accept-ra: false
+>>             addresses:
+>>                 - 203.0.113.1/32
+>>                 - 2001:db8:1:1b00:203:0:112:0/56
+>>             routes:
+>>                 - on-link: true
+>>                   to: default
+>>                   via: 100.64.0.1
+>>                 - on-link: true
+>>                   to: default
+>>                   via: fe80::1
+>>             nameservers:
+>>                 addresses:
+>>                 - 213.186.33.99
+>>                 - 2001:41d0:3:163::1
+>>             interfaces:
+>>                 - ens22f0np0
+>>                 - ens22f1np1
+>>             parameters:
+>>                 mode: 802.3ad
+>>                 lacp-rate: fast
+>>                 transmit-hash-policy: layer3+4
+>>         # Optional: private bond configuration
+>>         bond1:
+>>             # MAC address of the first private interface
+>>             macaddress: a1:b2:c3:d4:e5:d6
+>>             accept-ra: false
+>>             interfaces:
+>>                 - ens33f0np0
+>>                 - ens33f1np1
+>>             parameters:
+>>                 mode: 802.3ad
+>>                 lacp-rate: fast
+>>                 transmit-hash-policy: layer3+4
+>> ```
+>>
+>> /// details | DHCP
+>>
+>> ```yaml
+>> network:
+>>     version: 2
+>>     ethernets:
+>>         ens22f0np0:
+>>             match:
+>>                 macaddress: a1:b2:c3:d4:e5:c6
+>>         ens22f1np1:
+>>             match:
+>>                 macaddress: a1:b2:c3:d4:e5:c7
+>>         ens33f0np0:
+>>             match:
+>>                 macaddress: a1:b2:c3:d4:e5:d6
+>>         ens33f1np1:
+>>             match:
+>>                 macaddress: a1:b2:c3:d4:e5:d7
+>>     bonds:
+>>         bond0:
+>>             # MAC address of the server's main public interface
+>>             macaddress: a1:b2:c3:d4:e5:c6
+>>             accept-ra: false
+>>             dhcp4: true
+>>             addresses:
+>>                 - 2001:db8:1:1b00:203:0:112:0/56
+>>             routes:
+>>                 - on-link: true
+>>                   to: default
+>>                   via: fe80::1
+>>             nameservers:
+>>                 addresses:
+>>                 - 2001:41d0:3:163::1
+>>             interfaces:
+>>                 - ens22f0np0
+>>                 - ens22f1np1
+>>             parameters:
+>>                 mode: 802.3ad
+>>                 lacp-rate: fast
+>>                 transmit-hash-policy: layer3+4
+>>         # Optional: private bond configuration
+>>         bond1:
+>>             # MAC address of the first private interface
+>>             macaddress: a1:b2:c3:d4:e5:d6
+>>             accept-ra: false
+>>             interfaces:
+>>                 - ens33f0np0
+>>                 - ens33f1np1
+>>             parameters:
+>>                 mode: 802.3ad
+>>                 lacp-rate: fast
+>>                 transmit-hash-policy: layer3+4
+>> ```
+>>
+>> ///
+>>
+> Four interfaces - Fully Private
+>> This configuration aggregates all physical interfaces into a single bond for vRack use only. There is no public IP connectivity.
+>>
+>> > [!warning]
+>> >
+>> > Following the implementation of OLA in Fully Private mode, the public IP is no longer accessible. Make sure you have an alternative means of access (e.g. through another server in the vRack, or via KVM/IPMI) before applying this configuration.
+>> >
+>>
+>> Replace the content of `/etc/netplan/50-cloud-init.yaml` with the following:
+>>
+>> ```yaml
+>> network:
+>>     version: 2
+>>     ethernets:
+>>         ens22f0np0:
+>>             match:
+>>                 macaddress: a1:b2:c3:d4:e5:c6
+>>         ens22f1np1:
+>>             match:
+>>                 macaddress: a1:b2:c3:d4:e5:c7
+>>         ens33f0np0:
+>>             match:
+>>                 macaddress: a1:b2:c3:d4:e5:d6
+>>         ens33f1np1:
+>>             match:
+>>                 macaddress: a1:b2:c3:d4:e5:d7
+>>     bonds:
+>>         bond0:
+>>             # MAC address of the server's main private interface
+>>             macaddress: a1:b2:c3:d4:e5:d6
+>>             accept-ra: false
+>>             interfaces:
+>>                 - ens22f0np0
+>>                 - ens22f1np1
+>>                 - ens33f0np0
+>>                 - ens33f1np1
+>>             parameters:
+>>                 mode: 802.3ad
+>>                 lacp-rate: fast
+>>                 transmit-hash-policy: layer3+4
+>> ```
+>>
+>> > [!primary]
+>> >
+>> > In Fully Private mode, the bond uses the MAC address of the **main private** interface. To assign an IP address to this bond for vRack communication, add an `addresses` block under `bond0` with your vRack private IP.
+>> >
 
 ### Applying the configuration
 
@@ -236,5 +379,7 @@ sudo netplan apply
 It may take several seconds for the bond interfaces to come up.
 
 ## Go further
+
+[Configuring OVHcloud Link Aggregation in the Control Panel](/pages/bare_metal_cloud/dedicated_servers/ola-enable-manager)
 
 Join our [community of users](/links/community).

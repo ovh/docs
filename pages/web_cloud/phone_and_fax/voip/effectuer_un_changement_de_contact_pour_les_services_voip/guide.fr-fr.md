@@ -6,7 +6,7 @@ updated: 2025-04-28
 
 ## Objectif
 
-OVHcloud vous permet de différencier la gestion administrative, technique et de facturation d'un service pour la confier à plusieurs contacts, chacun d'eux associé à un identifiant client. Cette gestion de contacts pour les services de téléphonie est partiellement différente de la [gestion de contacts des autres services OVHcloud](/pages/account_and_service_management/account_information/managing_contacts). En effet, la gestion de contacts VoIP peut être réalisée sur un groupe de téléphonie (le conteneur dans lequel sont stockés les lignes téléphoniques et numéros alias).
+OVHcloud vous permet de confier la gestion administrative, technique et de facturation d'un service à plusieurs contacts, chacun d'eux associé à un identifiant client. Cette gestion de contacts pour les services de téléphonie est partiellement différente de la [gestion de contacts des autres services OVHcloud](/pages/account_and_service_management/account_information/managing_contacts). En effet, la gestion de contacts VoIP peut être réalisée sur un groupe de téléphonie (le conteneur dans lequel sont stockés les lignes téléphoniques et numéros alias).
 
 **Découvrez comment modifier les contacts d'un groupe de téléphonie.**
 
@@ -27,11 +27,21 @@ OVHcloud vous permet de différencier la gestion administrative, technique et de
 
 ## Prérequis
 
-- Être connecté à  votre [espace client OVHcloud](/links/manager)
-- Disposer d’un accès à l’adresse e-mail renseignée dans votre profil.
-- Posséder l’identifiant client du nouveau contact (destinataire de la modification).
-- Le nouveau contact doit quant à lui disposer d’un accès à l’adresse e-mail renseignée dans son profil.
-- En cas de modification du contact facturation, l’ancien et le nouveau contacts facturation doivent avoir validé leurs comptes via [la procédure de validation VoIP](/pages/web_cloud/phone_and_fax/voip/la_procedure_de_validation_voip) et être à jour de leurs règlements.
+- Disposer d'un accès à l'adresse e-mail renseignée dans votre profil.
+- Posséder l'identifiant client du nouveau contact (destinataire de la modification).
+- Le nouveau contact doit quant à lui disposer d'un accès à l'adresse e-mail renseignée dans son profil.
+- En cas de modification du contact facturation, l'ancien et le nouveau contacts facturation doivent avoir validé leurs comptes via [la procédure de validation VoIP](/pages/web_cloud/phone_and_fax/voip/la_procedure_de_validation_voip) et être à jour de leurs règlements.
+
+<!-- CP-NAV-START:telecom-voip-fax -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [VoIP & Fax](/links/control-panel/telecom-voip-fax)
+- **Pour accéder à vos services :** `Télécom`{.action} > `VoIP & Fax`{.action} > Sélectionnez votre groupe de téléphonie
+
+---
+<!-- CP-NAV-END:telecom-voip-fax -->
 
 > [!success]
 >
@@ -41,29 +51,30 @@ OVHcloud vous permet de différencier la gestion administrative, technique et de
 
 ### Modifier les contacts
 
+<!-- CP-STEPS-START:modifier-les-contacts -->
 > [!primary]
 >
 > En cas de changement de tous les contacts pour un service, le contact administrateur est à modifier **en dernier**. En effet, si vous le modifiez en premier, vous ne disposerez plus des droits nécessaires pour modifier les contacts technique ou facturation.
 >
 
-1. Connectez-vous à votre [espace client OVHcloud](/links/manager) et cliquez sur `Télécom`{.action}.
-1. Cliquez sur `VoIP & Fax`{.action} puis sur le groupe de facturation souhaité.
-1. Cliquez sur l'onglet `Gestion des contacts`{.action}.
+Cliquez sur l'onglet `Gestion des contacts`{.action}.
 
 ![gestion des contacts](images/gestion-contacts01.png){.thumbnail}
 
 Vous pourrez alors cliquer sur le bouton d'édition à droite de votre groupe de téléphonie et renseigner le nouveau « NIC » (identifiant client) qui récupérera la gestion de ce groupe. Cliquez sur le bouton `V`{.action} de validation pour valider la modification. Ce changement s'appliquera à tous les services du groupe.
 
 Un e-mail va être envoyé aux contacts impliqués dans ce processus de modification.
+<!-- CP-STEPS-END:modifier-les-contacts -->
 
 ### Valider, refuser ou suivre un changement de contact
 
+<!-- CP-STEPS-START:valider-refuser-suivre-changement-contact -->
 > [!primary]
 >
 > Cette étape est identique à celle décrite dans le [guide de changement de contacts](/pages/account_and_service_management/account_information/managing_contacts#validation) pour tous les services OVHcloud.
 >
 
-Pour suivre et gérer les demandes en cours, cliquez d'abord sur le nom rattaché à votre identifiant client dans la barre de menu en haut à droite de l'espace client. Cliquez ensuite sur `Mes contacts`{.action} à gauche et enfin sur `Mes demandes`{.action}. C’est ici que vous pourrez accepter ou refuser une demande.
+Pour suivre et gérer les demandes en cours, cliquez d’abord sur le nom rattaché à votre identifiant client dans la barre de menu en haut à droite de l’espace client. Cliquez ensuite sur `Mes contacts`{.action} à gauche et enfin sur `Mes demandes`{.action}. C’est ici que vous pourrez accepter ou refuser une demande.
 
 ![gestion contacts VoIP](images/managing_contacts_05.png){.thumbnail}
 
@@ -72,17 +83,18 @@ Pour cela, vous devez être en possession du code de validation (aussi appelé t
 > [!primary]
 > Ce code est personnel, à usage unique et sa composition différera pour les deux contacts.
 
-L'e-mail reçu contient également un lien menant directement sur la page permettant de valider ou de refuser la demande. En passant par cet e-mail, le code de validation (token) sera automatiquement prérempli.
+L’e-mail reçu contient également un lien menant directement sur la page permettant de valider ou de refuser la demande. En passant par cet e-mail, le code de validation (token) sera automatiquement prérempli.
 
-Si l'un des contacts n'a pas reçu l'e-mail, il se peut que l'adresse de contact renseignée dans le profil ne soit pas à jour. Vous pouvez la vérifier dans votre profil, la modifier si nécessaire puis redemander l'envoi de l'e-mail en cliquant sur `Renvoyer la demande`{.action}.
+Si l’un des contacts n’a pas reçu l’e-mail, il se peut que l’adresse de contact renseignée dans le profil ne soit pas à jour. Vous pouvez la vérifier dans votre profil, la modifier si nécessaire puis redemander l’envoi de l’e-mail en cliquant sur `Renvoyer la demande`{.action}.
 
 ![gestion contacts VoIP](images/managing_contacts_06.png){.thumbnail}
 
-Si un seul contact a validé le changement, un message apparaîtra, vous informant que la demande est toujours en attente de validation par l'autre contact. Si l'un des contacts vient tout juste de valider une demande, l'affichage dans l'espace client se mettra à jour sous quelques minutes.
+Si un seul contact a validé le changement, un message apparaîtra, vous informant que la demande est toujours en attente de validation par l’autre contact. Si l’un des contacts vient tout juste de valider une demande, l’affichage dans l’espace client se mettra à jour sous quelques minutes.
 
 ![gestion contacts VoIP](images/managing_contacts_07.png){.thumbnail}
 
 Dès que les deux contacts ont validé la demande, le changement sera effectif sous quelques minutes. Les deux contacts recevront un e-mail les informant que la demande a bien été traitée.
+<!-- CP-STEPS-END:valider-refuser-suivre-changement-contact -->
 
 ## Aller plus loin
 

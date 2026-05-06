@@ -1,176 +1,250 @@
 ---
 title: 'Web Cloud Databases - Jak zarządzać logami?'
 excerpt: 'Dowiedz się, jak zarządzać logami baz danych hostowanych na serwerze Web Cloud Databases'
-updated: 2025-02-20
+updated: 2026-03-24
 ---
+
+<style>
+details>summary {
+    color:rgb(33, 153, 232) !important;
+    cursor: pointer;
+}
+details>summary::before {
+    content:'\25B6';
+    padding-right:1ch;
+}
+details[open]>summary::before {
+    content:'\25BC';
+}
+</style>
 
 ## Wprowadzenie
 
-Log to zdarzenie, które nastąpiło w systemie informatycznym (serwer, komputer, aplikacja, strona internetowa, baza danych, sieć komputerowa, etc.).
-Na przykład, log może zapisać i zawierać jeden lub więcej z następujących elementów:
+Log odpowiada zdarzeniu, które wystąpiło w systemie informatycznym (serwer, komputer, aplikacja, strona internetowa, baza danych, sieć informatyczna itp.).
+Log może na przykład rejestrować i zawierać jeden lub kilka z poniższych elementów:
 
-- Sygnatura czasowa zdarzenia (data, godzina, minuta, sekunda, etc.).
-- Rodzaj zdarzenia (połączenie, rozłączenie, błąd, download, upload, alert, itp.).
-- Dodatkowe informacje o zdarzeniu (odwiedzana strona lub plik, uruchomiona aplikacja, wywołany serwer zdalny, nazwa pobranego lub pobranego pliku, etc.)
-- Źródło zdarzenia (identyfikator użytkownika, źródłowy adres IP, program źródłowy, etc.).
-- stan systemu, w którym odbywa się zdarzenie (dostępne zasoby, pozostała pamięć, wykorzystanie procesora, etc.).
+- Znacznik czasu (data, godzina, minuta, sekunda itp.) zdarzenia.
+- Charakter zdarzenia (połączenie, rozłączenie, błąd, pobieranie, przesyłanie, alert itp.).
+- Dodatkowe informacje o zdarzeniu (odwiedzona strona lub plik, uruchomiona aplikacja, wywołany zdalny serwer, nazwa przesłanego lub pobranego pliku itp.)
+- Pochodzenie zdarzenia (identyfikator użytkownika, źródłowy adres IP, program źródłowy itp.).
+- Stan systemu, w którym występuje zdarzenie (dostępne zasoby, pozostała pamięć, użycie procesora itp.).
 
-Logi są zazwyczaj generowane bezpośrednio przez systemy komputerowe, w których realizowane są zdarzenia.
-Są one przechowywane i zapisywane w plikach tekstowych, zwanych również plikami logów.
+W większości przypadków logi są generowane bezpośrednio przez systemy informatyczne, w których zachodzą zdarzenia.
+Są przechowywane w plikach tekstowych, zwanych również plikami logów.
 
-W rezultacie pliki logów pozwalają na wykonanie następujących czynności:
+Pliki logów umożliwiają wykonywanie następujących czynności:
 
-- Analiza zachowania systemu informatycznego generującego logi.
-- Identyfikacja błędów, które wystąpiły w systemie informatycznym.
-- Napraw błędy w systemie informatycznym.
-- Optymalizacja i poprawa wydajności systemu informatycznego.
+- Analizowanie zachowania systemu informatycznego generującego logi.
+- Identyfikowanie błędów, które wystąpiły w systemie informatycznym.
+- Rozwiązywanie błędów napotkanych w systemie informatycznym.
+- Optymalizowanie i poprawianie wydajności systemu informatycznego.
 
-Twoja oferta [Web Cloud Databases](/links/web/databases) generuje zatem własne logi.
+Twoja usługa [Web Cloud Databases](/links/web/databases) generuje własne logi.
 
-W niektórych sytuacjach możesz sprawdzić/pobrać logi:
+W niektórych sytuacjach może zajść potrzeba przeglądania lub pobierania logów:
 
-- serwera Web Cloud Databases ;
-- dla jednej z baz danych hostowanych na serwerze Web Cloud Databases.
+- Z serwera Web Cloud Databases.
+- Dla jednej z baz danych hostowanych na serwerze Web Cloud Databases.
 
 **Dowiedz się, jak wyświetlać logi usługi Web Cloud Databases i zarządzać nimi.**
 
 ## Wymagania początkowe
 
-- Posiadanie rozwiązania [Web Cloud Databases](/links/web/databases).
-- Dostęp do [panelu klienta OVHcloud](/links/manager).
+- Posiadanie [instancji Web Cloud Databases](/links/web/databases).
+
+<!-- CP-NAV-START:web-cloud-databases -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Web Cloud Databases](/links/control-panel/web-cloud-databases)
+- **Ścieżka nawigacji:** `Web Cloud`{.action} > `Web Cloud Databases`{.action} > Wybierz usługę bazy danych
+
+---
+<!-- CP-NAV-END:web-cloud-databases -->
 
 ## W praktyce
 
 > [!warning]
 >
-> Oddajemy w Twoje ręce tutorial, którego celem jest pomoc w jak najbardziej optymalnym wykonywaniu bieżących zadań. Jeśli jednak napotkasz trudności, zalecamy skontaktowanie się z [wyspecjalizowanym dostawcą](/links/partner). Niestety OVH nie jest w stanie udzielić Ci wsparcia w interpretacji logów dostępnych w ramach Twojego rozwiązania Web Cloud Databases. Więcej informacji znajduje się w sekcji "[Sprawdź również](#go-further)" tego tutoriala.
+> Udostępniamy ten tutorial, aby pomóc Ci w realizacji typowych zadań. Zalecamy jednak skontaktowanie się z [wyspecjalizowanym dostawcą usług](/links/partner) w przypadku trudności. Nie będziemy w stanie udzielić wsparcia w zakresie interpretacji logów dostępnych w ramach Twojej usługi Web Cloud Databases. Więcej informacji znajdziesz w sekcji [Sprawdź również](#go-further) tego przewodnika.
 >
 
-### Wyświetl logi Web Cloud Databases w czasie rzeczywistym
+### Wyświetlanie logów w czasie rzeczywistym
 
-Aby w czasie rzeczywistym sprawdzać logi rozwiązania Web Cloud Databases, wykonaj następujące czynności:
+<!-- CP-STEPS-START:real-time-logs -->
+Kliknij na poniższe karty, aby wyświetlić kolejno każdy z **2** kroków.
 
-1. Zaloguj się do [Panelu klienta OVHcloud](/links/manager).
-2. Kliknij zakładkę `Web Cloud`{.action}.
-3. W lewej kolumnie kliknij menu `Web Cloud Databases`{.action}.
-4. Wybierz odpowiednią instancję Web Cloud Databases.
-5. Na stronie, która się wyświetli kliknij zakładkę `Logi`{.action}.
+> [!tabs]
+> **Krok 1**
+>>
+>> Przejdź na stronę [Web Cloud Databases](/links/control-panel/web-cloud-databases), następnie wybierz odpowiednie rozwiązanie.
+>>
+>> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases.png){.thumbnail}
+>>
+> **Krok 2**
+>>
+>> Kliknij kartę `Logi`{.action}.
+>>
+>> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/logs/tab.png){.thumbnail}
+>>
+>> W tej zintegrowanej konsoli znajdziesz logi Twojej usługi Web Cloud Databases w czasie rzeczywistym.
+>>
+>> > [!primary]
+>> >
+>> > Logi są dostępne tutaj wyłącznie w czasie rzeczywistym. Pojawią się tylko wtedy, gdy zostaną wygenerowane, gdy znajdujesz się na karcie `Logi`{.action}.
+>> >
+>> > Jeśli opuścisz kartę `Logi`{.action} i wrócisz do niej później, wcześniej wyświetlana historia zniknie.
+<!-- CP-STEPS-END:real-time-logs -->
 
-![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/logs/tab.png){.thumbnail}
+### Pobieranie historii logów usługi Web Cloud Databases
 
-To na tej wbudowanej konsoli znajdują się, w czasie rzeczywistym, logi rozwiązania Web Cloud Databases.
-
-> [!primary]
->
-> Jak wspomniano powyżej, logi są dostępne tutaj tylko w czasie rzeczywistym. Oznacza to, że logi te nie pojawią się, dopóki nie zostaną wygenerowane w momencie, gdy będziesz w zakładce `Logi`{.action}. 
->
-> Jeśli opuścisz zakładkę `Logi`{.action} i powrócisz do niej później, historia, która się wcześniej wyświetlała, zniknie.
->
-
-### Historia logów usługi Web Cloud Databases
-
-Aby pobrać historię logów rozwiązania Web Cloud Databases, należy połączyć się z nim za pomocą SFTP.
+Aby pobrać historię logów usługi Web Cloud Databases, musisz połączyć się przez SFTP.
 
 > [!warning]
 >
-> Przed zalogowaniem się upewnij się, że publiczny adres IP stacji, której używasz jest autoryzowany na Twoim serwerze Web Cloud Databases, zaznaczając opcję `SFTP`.
+> Przed połączeniem upewnij się, że publiczny adres IP komputera, którego używasz, jest autoryzowany na serwerze Web Cloud Databases z aktywowaną opcją `SFTP`.
 >
-> Aby to sprawdzić, pobierz publiczny adres IP punktu dostępu do Internetu i sprawdź sekcję **Autoryzuj adres IP** w [tym przewodniku](/pages/web_cloud/web_cloud_databases/starting_with_clouddb).
->
-
-Aby uzyskać informacje na temat logowania przez SFTP do rozwiązania Web Cloud Databases, wykonaj następujące czynności:
-
-1. Zaloguj się do [Panelu klienta OVHcloud](/links/manager).
-2. Kliknij zakładkę `Web Cloud`{.action}.
-3. W lewej kolumnie kliknij menu `Web Cloud Databases`{.action}.
-4. Wybierz odpowiednie rozwiązanie Web Cloud Databases.
-5. Na stronie, która się wyświetli pozostań w zakładce `Informacje ogólne`{.action} i przejdź do rubryki zatytułowanej `Informacje na temat połączenia`{.action}.
-6. Pod napisem `SFTP`{.action} znajdziesz wszystkie informacje niezbędne do logowania się przez SFTP.
-
-> [!primary]
->
-> Jeśli nie znasz `Hasło do serwera`, kliknij przycisk `...`{.action} po prawej stronie, aby je zmienić.
+> Aby to sprawdzić, pobierz publiczny adres IP swojego punktu dostępu do Internetu, a następnie zapoznaj się z sekcją **Autoryzacja adresu IP** w [tym przewodniku](/pages/web_cloud/web_cloud_databases/starting_with_clouddb).
 >
 
-![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/general-information/sftp-login.png){.thumbnail}
+<!-- CP-STEPS-START:sftp-logs -->
+Aby uzyskać informacje o połączeniu SFTP z usługą Web Cloud Databases, kliknij na poniższe karty, aby wyświetlić kolejno każdy z **2** kroków.
 
-Po pobraniu danych logowania SFTP zaloguj się za pomocą klienta FTP (FileZilla, Cyberduck, WinSCP, etc.).
+> [!tabs]
+> **Krok 1**
+>>
+>> Przejdź na stronę [Web Cloud Databases](/links/control-panel/web-cloud-databases), następnie wybierz odpowiednie rozwiązanie.
+>>
+>> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases.png){.thumbnail}
+>>
+> **Krok 2**
+>>
+>> Na karcie `Informacje ogólne`{.action} znajdź sekcję **Dane do logowania**. Pod pozycją `SFTP`{.action} znajdziesz informacje wymagane do połączenia przez SFTP.
+>>
+>> > [!primary]
+>> >
+>> > Jeśli nie znasz `Hasła do serwera`, kliknij przycisk `...`{.action} po prawej stronie, aby je zmienić.
+>>
+>> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/general-information/sftp-login.png){.thumbnail}
 
-W przypadku programu FileZilla przejdź do menu `file`{.action} w lewym górnym rogu i kliknij opcję `Site Manager`{.action}.
+Po uzyskaniu danych dostępowych SFTP połącz się za pośrednictwem klienta FTP (FileZilla, Cyberduck, WinSCP itp.).
 
-Kliknij `New site`{.action}, po czym wpisz wybrane wcześniej parametry.
+W FileZilla przejdź w lewym górnym rogu do menu `Plik`{.action}, a następnie kliknij `Menedżer stron`{.action}.
+
+Kliknij `Nowa strona`{.action} i wprowadź wcześniej uzyskane parametry.
 
 ![Web Cloud Databases](/pages/assets/screens/other/web-tools/filezilla/site-manager.png){.thumbnail}
 
 Plik logów o nazwie `stdout.log` znajduje się w katalogu głównym.
 
-Możesz go pobrać na swoje stanowisko i sprawdzić.
+Pobierz go na swój komputer, aby go przejrzeć.
 
 > [!primary]
 >
-> Dodatkowy plik logów o nazwie `slow-query.log` może pojawić się w katalogu głównym SFTP Twojego serwera Web Cloud Databases.
-> Ten plik zawiera historię powolnych zapytań uruchomionych na serwerze Web Cloud Databases. 
-> 
-> Domyślnie w przypadku rozwiązań Web Cloud Databases wartość ta jest ustawiona na 1 sekundę w zmiennej **long_query_time**.
-> 
-> Dzięki temu plikowi zoptymalizujesz skrypty i zawartość Twojej bazy (baz) danych, aby zwiększyć wydajność różnych przypisanych usług.
+> Dodatkowy plik logów o nazwie `slow-query.log` może pojawić się w katalogu głównym SFTP serwera Web Cloud Databases.
+> Plik ten zawiera historię wolnych zapytań wykonanych na serwerze Web Cloud Databases.
 >
+> Domyślnie wartość jest ustawiona na 1 sekundę w usługach Web Cloud Databases w zmiennej **long_query_time**.
+>
+> Dzięki temu plikowi możesz zoptymalizować skrypty i zawartość baz danych, aby poprawić wydajność powiązanych usług.
+>
+<!-- CP-STEPS-END:sftp-logs -->
 
-### Subskrybuj logi rozwiązania Web Cloud Databases dla Logs Data Platform <a name="wcdb-ldp"></a>
+### Subskrypcja logów usługi Web Cloud Databases w Logs Data Platform <a name="wcdb-ldp"></a>
 
-[Logs Data Platform](/links/manage-operate/ldp) to platforma do zarządzania logami. Jest to przydatne, jeśli dysponujesz bardzo dużą infrastrukturą lub jeśli Twoje usługi generują dużą liczbę logów. Platforma ta ma pomóc w agregacji logów i zarządzaniu nimi.
+[Logs Data Platform](/links/manage-operate/ldp) to platforma do zarządzania logami. Ułatwia agregację i zarządzanie logami, szczególnie w przypadku infrastruktur generujących dużą ilość logów.
 
-Działa poprzez pobieranie logów generowanych przez Twoją infrastrukturę / strony WWW lub aplikacje, na przykład do:
+Działa poprzez pobieranie logów generowanych przez Twoją infrastrukturę, strony internetowe lub aplikacje, na przykład w celu:
 
-- przechowywanie danych;
-- wyświetlanie ich na dashboardach w czasie rzeczywistym;
-- umożliwienie użytkownikom wykonywania złożonych zapytań;
-- filtrować według daty, aplikacji, typu lub zawartości;
+- przechowywania;
+- wyświetlania w panelach monitorujących w czasie rzeczywistym;
+- umożliwienia użytkownikom wykonywania złożonych zapytań;
+- filtrowania według daty, aplikacji, typu lub zawartości.
 
-Więcej informacji na temat Logs Data Platform znajdziesz w przewodniku wprowadzającym[Logs Data Platform](/pages/manage_and_operate/observability/logs_data_platform/getting_started_introduction_to_LDP) (EN).
+Aby uzyskać więcej informacji na temat Logs Data Platform, zapoznaj się z naszym przewodnikiem [Wprowadzenie do Logs Data Platform](/pages/manage_and_operate/observability/logs_data_platform/getting_started_introduction_to_LDP) (EN).
 
-Ponieważ rozwiązania [Web Cloud Databases](/links/web/databases) mogą być wykorzystywane z wieloma usługami (hosting, VPS, serwery dedykowane, etc.), mogą one, w uzupełnieniu dostępnych logów w czasie rzeczywistym, być subskrybowane przez strumień danych Logs Data Platform.
+Ponieważ usługi [Web Cloud Databases](/links/web/databases) mogą być używane z wieloma usługami (hosting, VPS, serwery dedykowane itp.), mogą one, oprócz logów w czasie rzeczywistym, być subskrybowane za pośrednictwem strumienia danych w Logs Data Platform.
 
-Aby subskrybować rozwiązanie Web Cloud Databases ze strumieniem danych Logs Data Platform, wykonaj następujące czynności:
+Aby subskrybować usługę Web Cloud Databases do strumienia danych w Logs Data Platform, mogą wystąpić dwa scenariusze.
 
-1. Zaloguj się do [Panelu klienta OVHcloud](/links/manager).
-2. Kliknij zakładkę `Web Cloud`{.action}.
-3. W lewej kolumnie kliknij menu `Web Cloud Databases`{.action}.
-4. Wybierz odpowiednią instancję Web Cloud Databases.
-5. Na stronie, która się wyświetli kliknij zakładkę `Logi`{.action}.
-6. Po prawej stronie ramki, w której wyświetlają się logi w czasie rzeczywistym, kliknij przycisk `Subskrybuj`{.action}.
+**Kliknij każdy przypadek, aby wyświetlić jego zawartość.**
 
-![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/logs/tab-subscribe.png){.thumbnail}
+<a name="wcdb-ldp-case1"></a>
 
-Na nowo otwartej stronie, jeśli dysponujesz kilkoma rozwiązaniami Logs Data Platform w [Panelu klienta OVHcloud](/links/manager), z rozwijanej listy znajdującej się tuż pod przyciskiem `Dodaj strumień danych` wybierz Logs Data Platform, którą chcesz subskrybować.
+<!-- CP-STEPS-START:ldp-subscribe-existing -->
+/// details | Przypadek 1 - Subskrypcja istniejącego strumienia danych w usłudze Logs Data Platform
 
-![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/logs/data-stream.png){.thumbnail}
+Kliknij na poniższe karty, aby wyświetlić kolejno każdy z **4** kroków.
 
-Aby zasubskrybować rozwiązanie Web Cloud Databases, pojawiają się dwa scenariusze.
+> [!tabs]
+> **Krok 1**
+>>
+>> Przejdź na stronę [Web Cloud Databases](/links/control-panel/web-cloud-databases), następnie wybierz odpowiednie rozwiązanie.
+>>
+>> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases.png){.thumbnail}
+>>
+> **Krok 2**
+>>
+>> Kliknij kartę `Logi`{.action}, a następnie przycisk `Subskrybuj`{.action} po prawej stronie sekcji logów w czasie rzeczywistym.
+>>
+>> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/logs/tab-subscribe.png){.thumbnail}
+>>
+> **Krok 3**
+>>
+>> Jeśli posiadasz kilka usług Logs Data Platform, wybierz żądane odniesienie z listy rozwijanej znajdującej się pod przyciskiem `Dodaj strumień danych`{.action}.
+>>
+>> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/logs/data-stream.png){.thumbnail}
+>>
+> **Krok 4**
+>>
+>> Istniejący strumień danych jest wyświetlany w tabeli na dole strony. Kliknij przycisk `Subskrybuj`{.action} po prawej stronie odpowiedniego wiersza.
+>>
+>> Po kilku sekundach pojawi się komunikat potwierdzający utworzenie subskrypcji.
 
-#### Przypadek nr 1 - Subskrybuj istniejący kanał informacyjny dotyczący Twojej usługi Logs Data Platform <a name="wcdb-ldp-case1"></a>
+///
+<!-- CP-STEPS-END:ldp-subscribe-existing -->
 
-Jeśli dany strumień już istnieje, jest wyświetlany jako wiersz w tabeli na dole strony.
-W tym przypadku i aby subskrybować rozwiązanie Web Cloud Databases dla tego istniejącego strumienia, wystarczy kliknąć przycisk `Subskrybuj`{.action} znajdujący się po prawej stronie linii odpowiadającej danemu strumieniowi.
+<!-- CP-STEPS-START:ldp-subscribe-new -->
+/// details | Przypadek 2 - Subskrypcja nowego strumienia danych w usłudze Logs Data Platform
 
-Po kilku sekundach, jeśli pozostaniesz na tej samej stronie, w Panelu klienta pojawi się komunikat informujący, że subskrypcja została utworzona.
+Kliknij na poniższe karty, aby wyświetlić kolejno każdy z **5** kroków.
 
-#### Przypadek nr 2 - Subskrybuj nowy strumień danych na Twojej usłudze Logs Data Platform
+> [!tabs]
+> **Krok 1**
+>>
+>> Przejdź na stronę [Web Cloud Databases](/links/control-panel/web-cloud-databases), następnie wybierz odpowiednie rozwiązanie.
+>>
+>> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases.png){.thumbnail}
+>>
+> **Krok 2**
+>>
+>> Kliknij kartę `Logi`{.action}, a następnie przycisk `Subskrybuj`{.action} po prawej stronie sekcji logów w czasie rzeczywistym.
+>>
+>> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/logs/tab-subscribe.png){.thumbnail}
+>>
+> **Krok 3**
+>>
+>> Jeśli posiadasz kilka usług Logs Data Platform, wybierz żądane odniesienie z listy rozwijanej znajdującej się pod przyciskiem `Dodaj strumień danych`{.action}.
+>>
+>> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/logs/data-stream.png){.thumbnail}
+>>
+> **Krok 4**
+>>
+>> Ponieważ strumień danych jeszcze nie istnieje, kliknij przycisk `Dodaj strumień danych`{.action}. Zostaniesz przekierowany na stronę, na której możesz utworzyć nowy strumień danych w usłudze Logs Data Platform.
+>>
+>> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/logs-data-platform/data-stream/add-data-stream.png){.thumbnail}
+>>
+>> W razie potrzeby zapoznaj się z naszymi przewodnikami "[Wprowadzenie do Logs Data Platform](/pages/manage_and_operate/observability/logs_data_platform/getting_started_introduction_to_LDP)" (EN) i "[Szybki start z Logs Data Platform](/pages/manage_and_operate/observability/logs_data_platform/getting_started_quick_start)" (EN).
+>>
+> **Krok 5**
+>>
+>> Po wypełnieniu formularzy kliknij `Zapisz`{.action}. Zostaniesz przekierowany na kartę `Strumień danych` usługi Logs Data Platform.
+>>
+>> Aby subskrybować usługę Web Cloud Databases do tego nowego strumienia, wróć na kartę `Logi`{.action} usługi Web Cloud Databases, a następnie postępuj zgodnie z [Przypadkiem 1](#wcdb-ldp-case1) opisanym powyżej.
 
-Jeśli dany strumień danych jeszcze nie istnieje, kliknij przycisk `Dodaj strumień danych`{.action}.
-Nastąpi przekierowanie do nowej strony w Panelu klienta OVHcloud, na której będziesz mógł utworzyć i dodać nowy strumień danych do rozwiązania Logs Data Platform.
-
-![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/logs-data-platform/data-stream/add-data-stream.png){.thumbnail}
-
-W razie potrzeby sprawdź przewodniki "[Wprowadzenie do Logs Data Platform](/pages/manage_and_operate/observability/logs_data_platform/getting_started_introduction_to_LDP)" (EN) i "[Szybkie uruchomienie z Logs Data Platform](/pages/manage_and_operate/observability/logs_data_platform/getting_started_quick_start)" (EN), aby przeprowadzić te działania.
-
-Po wypełnieniu poszczególnych formularzy i informacji, kliknij przycisk `Zapisz`{.action}.
-
-Zostaniesz wówczas przekierowany do zakładki `Strumień danych` Twojego rozwiązania Logs Data Platform.
-
-Subskrybuj Twoje rozwiązanie Web Cloud Databases do nowo utworzonego strumienia danych w Twoim rozwiązaniu Logs Data Platform.
-
-Aby to zrobić i, jak wyjaśniono [wcześniej](#wcdb-ldp), powróć do zakładki `Logi`{.action} Twojego rozwiązania Web Cloud Databases, aby subskrybować nowy strumień danych, a następnie postępuj zgodnie z instrukcjami z [Sprawa nr 1](#wcdb-ldp-case1) opisanymi powyżej.
+///
+<!-- CP-STEPS-END:ldp-subscribe-new -->
 
 ## Sprawdź również <a name="go-further"></a>
 
@@ -178,8 +252,8 @@ Aby to zrobić i, jak wyjaśniono [wcześniej](#wcdb-ldp), powróć do zakładki
 
 [Wprowadzenie do Logs Data Platform](/pages/manage_and_operate/observability/logs_data_platform/getting_started_introduction_to_LDP) (EN)
 
-[Szybkie uruchomienie z Logs Data Platform](/pages/manage_and_operate/observability/logs_data_platform/getting_started_quick_start) (EN)
- 
-W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](/links/partner).
- 
+[Szybki start z Logs Data Platform](/pages/manage_and_operate/observability/logs_data_platform/getting_started_quick_start) (EN)
+
+W przypadku wyspecjalizowanych usług (SEO, programowanie itp.) skontaktuj się z [partnerami OVHcloud](/links/partner).
+
 Dołącz do [grona naszych użytkowników](/links/community).

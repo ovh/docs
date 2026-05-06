@@ -25,7 +25,17 @@ No entanto, pode ligar-se à sua instância através do modo rescue da OVHcloud,
 ## Requisitos
 
 - Uma [instância Public Cloud](/links/public-cloud/compute) na sua conta OVHcloud
-- Ter acesso à [Área de Cliente OVHcloud](/links/manager)
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Acesso à Área de Cliente OVHcloud
+
+- **Ligação direta:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Caminho de navegação:** `Public Cloud`{.action} > Selecione o seu projeto
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## Instruções
 

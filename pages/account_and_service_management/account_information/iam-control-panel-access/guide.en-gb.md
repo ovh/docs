@@ -14,6 +14,17 @@ This guide explains how to provide a user with the minimum rights to allow them 
 - You know [how to manage account users](/pages/account_and_service_management/account_information/ovhcloud-users-management).
 - You know [how to configure policies for IAM](/pages/account_and_service_management/account_information/iam-policy-ui).
 
+<!-- CP-NAV-START:iam-policies -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [IAM Policies](/links/control-panel/iam-policies)
+- **Navigation path:** `Identity, Security & Operations`{.action} > `Policies`{.action}
+
+---
+<!-- CP-NAV-END:iam-policies -->
+
 ## Instructions
 
 To be able to log in to the OVHcloud Control Panel, a user should have at least this set of rights on the account resource:
@@ -27,6 +38,7 @@ With these rights, a user will be able to log in to the OVHcloud Control Panel. 
 
 ### Using UI
 
+<!-- CP-STEPS-START:iam-cp-access-ui -->
 Using the UI, you can set up a policy with the following configuration:
 
 Add the identites you want to give access to.
@@ -46,6 +58,7 @@ Or add the 4 rights listed above as an action.
 ![Add actions](images/add_actions.png){.thumbnail}
 
 You can now link your users to this policy to give them the right to log in to the OVHcloud Control Panel.
+<!-- CP-STEPS-END:iam-cp-access-ui -->
 
 ### Using API
 

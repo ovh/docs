@@ -4,9 +4,53 @@ excerpt: "Découvrez comment gérer vos services et leur renouvellement dans vot
 updated: 2025-01-28
 ---
 
+<style>
+/* ---FAQ only--- */
+details {
+    margin: 0.1rem 1;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    background: #ffffffff;
+}
+details > summary {
+    padding: 0.1rem 1rem;
+    font-weight: 500;
+    color: #268fd4ff;
+    cursor: pointer;
+    list-style: none;
+}
+details > summary::before {
+    content: '\25B6';
+    display: inline-block;
+    margin-right: 0.5ch;
+    transition: transform 0.2s;
+}
+details[open] > summary::before {
+    content: '\25BC';
+}
+details:hover {
+    border: 1px solid #147DE8;
+    border-radius: 4px;
+    transition: border-color 0.5s ease;
+}
+details[open] > summary {
+    background: #ffffffff;
+}
+details > :not(summary) {
+    padding: 0.25rem 0.5rem;
+    box-sizing: border-box;
+    list-style-position: inside;
+}
+.smallish-gap {
+    display: block;
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
+}
+</style>
+
 ## Objectif
 
-Le menu **Mes offres & services** de votre espace client OVHcloud vous permet de vérifier le statut de vos services, de les renouveler, de modifier leur type de renouvellement, de régulariser des factures ou d'anticiper leur paiement.
+Le menu **Mes offres et services** de votre espace client OVHcloud vous permet de vérifier le statut de vos services, de les renouveler, de modifier leur type de renouvellement, de régulariser des factures ou d'anticiper leur paiement.
 
 Ce guide vous permettra de :
 
@@ -19,7 +63,7 @@ Ce guide vous permettra de :
 
 > [!primary]
 >
-> Selon votre lieu de résidence, la législation locale, ainsi que les solutions concernées, certains détails de ce guide peuvent varier ou ne pas s'appliquer à votre situation. Pour toute information, consultez vos contrats OVHcloud depuis votre [espace client](/links/manager) : cliquez sur votre nom en haut à droite de votre écran, sur `Mes offres & services`{.action} puis sur l'onglet `Contrats`{.action}.
+> Selon votre lieu de résidence, la législation locale, ainsi que les solutions concernées, certains détails de ce guide peuvent varier ou ne pas s'appliquer à votre situation. Pour toute information, consultez vos contrats OVHcloud sur la page [Liste des contrats](/links/control-panel/billing-contracts).
 >
 
 <iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/dfpPCa0mUyo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -28,10 +72,20 @@ Ce guide vous permettra de :
 
 Avant de poursuivre la lecture de ce guide, vous devez remplir les conditions suivantes :
 
-- Avoir accès à votre [espace client OVHcloud](/links/manager)
 - Posséder des services OVHcloud actifs
 - Être [contact de facturation](/pages/account_and_service_management/account_information/managing_contacts#definition) de vos services OVHcloud
 - Disposer d'un moyen de paiement valide dans votre compte OVHcloud. Consultez notre guide « [Gérer vos moyens de paiement](/pages/account_and_service_management/managing_billing_payments_and_services/manage-payment-methods) ».
+
+<!-- CP-NAV-START:billing-services -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Mes offres et services](/links/control-panel/billing-services)
+- **Pour y accéder :** Cliquez sur votre nom en haut à droite > `Mes offres et services`{.action}
+
+---
+<!-- CP-NAV-END:billing-services -->
 
 <a name="auto-vs-manual"></a>
 
@@ -71,8 +125,7 @@ Avant de poursuivre la lecture de ce guide, vous devez remplir les conditions su
 
 ## En pratique
 
-Connectez-vous à votre [espace client OVHcloud](/links/manager).<br>
-Cliquez sur votre nom dans le coin supérieur droit puis choisissez `Mes offres & services`{.action}.
+Ouvrez la page [Mes offres et services](/links/control-panel/billing-services).
 
 ![produits et services](/pages/assets/screens/control_panel/product-selection/right-menu/my-solutions-and-services.png){.thumbnail}
 
@@ -196,33 +249,74 @@ Le tableau ci-dessous détaille les actions groupées possibles.
 
 ## FAQ
 
-> [!faq]
->
-> On me demande de saisir un  « NIC » et un mot de passe lorsque je veux anticiper le paiement de mon service. Qu'est-ce que le NIC ?
->> Le NIC (ou NIC-handle) désigne votre identifiant client OVHcloud qui se présente sous la forme **xx11111-ovh**. Le mot de passe demandé est le mot de passe d'accès à votre compte OVHcloud. Si vous ne le connaissez plus, modifiez-le en suivant [ces instructions](/pages/account_and_service_management/account_information/manage-ovh-password).
-> Où puis-je retrouver mon identifiant client (NIC) OVHcloud ?
->> Il est affiché dans votre espace client, en cliquant sur votre nom en haut à droite. Il figure également en haut à droite de toutes vos factures. Il est aussi renseigné dans l'e-mail de confirmation de création du compte, les messages de confirmation de commande ou de renouvellement, ainsi que dans les notifications de connexion à votre compte.
-> Je n'arrive pas à me connecter à mon compte OVHcloud pour renouveler mes services, que faire ?
->> Consultez la partie « [Que faire si je ne parviens pas à me connecter ?](/pages/account_and_service_management/account_information/ovhcloud-account-login#que-faire-si-je-ne-parviens-pas-a-me-connecter) » de notre guide « [Se connecter à l'espace client OVHcloud](/pages/account_and_service_management/account_information/ovhcloud-account-login) ».
-> Je veux activer le renouvellement automatique mais j'obtiens un message d'erreur. Que dois-je faire ?
->> Pour que le renouvellement automatique puisse être activé sur vos services, vous devez avoir ajouté un moyen de paiement valide dans votre compte OVHcloud. Si ce n'est pas le cas ou si le moyen de paiement est expiré, un message d'erreur appparaîtra dans l'espace client lors de vos tentatives d'activation du renouvellement automatique. Consultez notre guide « [Gérer vos moyens de paiement](/pages/account_and_service_management/managing_billing_payments_and_services/manage-payment-methods) » pour vérifier ou ajouter un moyen de paiement.
-> Mon moyen de paiement n'est plus valide. Comment ajouter un nouveau moyen de paiement ?
->> Consultez notre guide « [Gérer mes moyens de paiement](/pages/account_and_service_management/managing_billing_payments_and_services/manage-payment-methods) ». Avant de pouvoir supprimer un moyen de paiement obsolète, vous devez ajouter un nouveau moyen de paiement valide dans votre compte OVHcloud.
-> J'ai une question concernant le renouvellement de mon nom de domaine 
->> Consultez notre guide « [Comment renouveler ses noms de domaine OVHcloud](/pages/web_cloud/domains/autorenew_domain_name) ».
-> Je ne veux plus de prélèvement automatique mais je ne veux pas résilier mon service. Que dois-je faire ?
->> Si votre service le permet, vous pouvez utiliser l'action [Configurer le renouvellement](#actions) et ainsi choisir un renouvellement manuel.
-> J'ai renouvelé mon service pour 12 mois. Est-ce que je peux revenir sur mon choix ?
->> Une fois le renouvellement d'un service effectué, il n'est pas possible de l'annuler. Vous pouvez néanmoins choisir un autre type de renouvellement ou de résilier le service mais ces 2 options ne pourront être prises en compte qu'à la fin de l'abonnement en cours, c'est à dire à l'issue des 12 mois.
-> Mon site web est suspendu car je n'ai pas renouvelé mes services à temps. Je viens de renouveler mes services. Combien de temps dois-je attendre pour que mon site web soit de nouveau accessible ?
->> Le délai de rétablissement varie en fonction des services concernés.
->> Si uniquement votre Hébergement Web était suspendu et a été renouvelé, il faut compter un délai moyen de 2 heures pour que votre site soit de nouveau accessible.
->> Si votre nom de domaine était également suspendu et a été renouvelé, le délai peut alors être plus long et aller jusqu'à 48 heures, correspondant au délai de propagation DNS.
->> Afin de vous prémunir d'une indisponibilité d'accès pour tous vos services critiques, nous vous préconisons de privilégier le renouvellement automatique et de [vérifier régulièrement que vos moyens de paiement sont à jour](/pages/account_and_service_management/managing_billing_payments_and_services/manage-payment-methods).
-> L'abonnement de mon service expire en juillet 2024. Nous sommes en janvier 2024 et je veux le renouveler pour un an. Est-ce que l'abonnement expirera alors en juillet 2025 ou en janvier 2025 ?
->> Lorsque vous prolongez le renouvellement d'un service (pour 1 an ou une période plus courte), cette période s'ajoute à la prochaine date d'effet visible dans le tableau « Gestion de mes offres et services » . Dans votre cas, votre service sera renouvelé jusqu'en juillet 2025.
-> L'abonnement de mon service a expiré le 1er janvier 2024 et j'ai oublié de le renouveler. Je viens de le renouveler le 16 janvier 2024 pour 6 mois mais je constate qu'il expirera le 1er juillet 2024 et non le 16 juillet 2024. Est-ce que c'est normal ?
->> Oui, c'est en effet normal, le renouvellement commence à la date d'expiration de l'abonnement.
+/// details | On me demande de saisir un  « NIC » et un mot de passe lorsque je veux anticiper le paiement de mon service. Qu'est-ce que le NIC ?
+
+Le NIC (ou NIC-handle) désigne votre identifiant client OVHcloud qui se présente sous la forme **xx11111-ovh**. Le mot de passe demandé est le mot de passe d'accès à votre compte OVHcloud. Si vous ne le connaissez plus, modifiez-le en suivant [ces instructions](/pages/account_and_service_management/account_information/manage-ovh-password).
+
+///
+
+/// details | Où puis-je retrouver mon identifiant client (NIC) OVHcloud ?
+
+Il est affiché dans votre espace client, en cliquant sur votre nom en haut à droite. Il figure également en haut à droite de toutes vos factures. Il est aussi renseigné dans l'e-mail de confirmation de création du compte, les messages de confirmation de commande ou de renouvellement, ainsi que dans les notifications de connexion à votre compte.
+
+///
+
+/// details | Je n'arrive pas à me connecter à mon compte OVHcloud pour renouveler mes services, que faire ?
+
+Consultez la partie « [Que faire si je ne parviens pas à me connecter ?](/pages/account_and_service_management/account_information/ovhcloud-account-login#que-faire-si-je-ne-parviens-pas-a-me-connecter) » de notre guide « [Se connecter à l'espace client OVHcloud](/pages/account_and_service_management/account_information/ovhcloud-account-login) ».
+
+///
+
+/// details | Je veux activer le renouvellement automatique mais j'obtiens un message d'erreur. Que dois-je faire ?
+
+Pour que le renouvellement automatique puisse être activé sur vos services, vous devez avoir ajouté un moyen de paiement valide dans votre compte OVHcloud. Si ce n'est pas le cas ou si le moyen de paiement est expiré, un message d'erreur appparaîtra dans l'espace client lors de vos tentatives d'activation du renouvellement automatique. Consultez notre guide « [Gérer vos moyens de paiement](/pages/account_and_service_management/managing_billing_payments_and_services/manage-payment-methods) » pour vérifier ou ajouter un moyen de paiement.
+
+///
+
+/// details | Mon moyen de paiement n'est plus valide. Comment ajouter un nouveau moyen de paiement ?
+
+Consultez notre guide « [Gérer mes moyens de paiement](/pages/account_and_service_management/managing_billing_payments_and_services/manage-payment-methods) ». Avant de pouvoir supprimer un moyen de paiement obsolète, vous devez ajouter un nouveau moyen de paiement valide dans votre compte OVHcloud.
+
+///
+
+/// details | J'ai une question concernant le renouvellement de mon nom de domaine
+
+Consultez notre guide « [Comment renouveler ses noms de domaine OVHcloud](/pages/web_cloud/domains/autorenew_domain_name) ».
+
+///
+
+/// details | Je ne veux plus de prélèvement automatique mais je ne veux pas résilier mon service. Que dois-je faire ?
+
+Si votre service le permet, vous pouvez utiliser l'action [Configurer le renouvellement](#actions) et ainsi choisir un renouvellement manuel.
+
+///
+
+/// details | J'ai renouvelé mon service pour 12 mois. Est-ce que je peux revenir sur mon choix ?
+
+Une fois le renouvellement d'un service effectué, il n'est pas possible de l'annuler. Vous pouvez néanmoins choisir un autre type de renouvellement ou de résilier le service mais ces 2 options ne pourront être prises en compte qu'à la fin de l'abonnement en cours, c'est à dire à l'issue des 12 mois.
+
+///
+
+/// details | Mon site web est suspendu car je n'ai pas renouvelé mes services à temps. Je viens de renouveler mes services. Combien de temps dois-je attendre pour que mon site web soit de nouveau accessible ?
+
+Le délai de rétablissement varie en fonction des services concernés.
+Si uniquement votre Hébergement Web était suspendu et a été renouvelé, il faut compter un délai moyen de 2 heures pour que votre site soit de nouveau accessible.
+Si votre nom de domaine était également suspendu et a été renouvelé, le délai peut alors être plus long et aller jusqu'à 48 heures, correspondant au délai de propagation DNS.
+Afin de vous prémunir d'une indisponibilité d'accès pour tous vos services critiques, nous vous préconisons de privilégier le renouvellement automatique et de [vérifier régulièrement que vos moyens de paiement sont à jour](/pages/account_and_service_management/managing_billing_payments_and_services/manage-payment-methods).
+
+///
+
+/// details | L'abonnement de mon service expire en juillet 2024. Nous sommes en janvier 2024 et je veux le renouveler pour un an. Est-ce que l'abonnement expirera alors en juillet 2025 ou en janvier 2025 ?
+
+Lorsque vous prolongez le renouvellement d'un service (pour 1 an ou une période plus courte), cette période s'ajoute à la prochaine date d'effet visible dans le tableau « Gestion de mes offres et services » . Dans votre cas, votre service sera renouvelé jusqu'en juillet 2025.
+
+///
+
+/// details | L'abonnement de mon service a expiré le 1er janvier 2024 et j'ai oublié de le renouveler. Je viens de le renouveler le 16 janvier 2024 pour 6 mois mais je constate qu'il expirera le 1er juillet 2024 et non le 16 juillet 2024. Est-ce que c'est normal ?
+
+Oui, c'est en effet normal, le renouvellement commence à la date d'expiration de l'abonnement.
+
+///
 
 ## Aller plus loin
 

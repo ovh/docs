@@ -1,6 +1,6 @@
 ---
-title: "Sicherung Ihrer Datenbanken im Rescue-Modus"
-excerpt: "Erfahren Sie hier, wie Sie im Rescue-Modus Ihre Datenbanken abrufen und sichern"
+title: "Datenbanken im Rescue-Modus auf einem Dedicated Server wiederherstellen"
+excerpt: "Greifen Sie auf Ihre Datenbanken zu und exportieren Sie diese von einem Dedicated Server im Rescue-Modus, um Daten nach einem Vorfall wiederherzustellen."
 updated: 2023-04-13
 ---
 
@@ -17,7 +17,17 @@ Der Rescue-Modus stellt einen permanenten Zugriff auf Ihre Daten bereit, auch we
 ## Voraussetzungen
 
 - Sie haben einen [Dedicated Server](/links/bare-metal/bare-metal), [VPS](/links/bare-metal/vps) oder eine [Public Cloud Instanz](/links/public-cloud/public-cloud) in Ihrem Kunden-Account (ausgenommen Windows-Systeme).
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
+
+<!-- CP-NAV-START:baremetal-dedicated-servers -->
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direkter Link:** [Dedicated Server](/links/control-panel/baremetal-dedicated-servers)
+- **Navigationspfad:** `Bare Metal Cloud`{.action} > `Dedicated Server`{.action} > Wählen Sie Ihren Server aus
+
+---
+<!-- CP-NAV-END:baremetal-dedicated-servers -->
 
 > [!warning]
 >
@@ -263,5 +273,7 @@ root@rescue:/# scp -P SSH_Port_Number dump.sql user@IP_address:/home/backup
 ```
 
 ## Weiterführende Informationen
+
+- [Dedicated Server - Hardwarediagnose im Rescue-Modus](/pages/bare_metal_cloud/dedicated_servers/hardware-diagnose)
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

@@ -11,3 +11,7 @@ data
 pages/platform/kubernetes-k8s/monitoring-gpu-application/images/gpu-app-demo-video.mov
 llm-config/
 .claude/
+cp-extraction
+CLAUDE.md
+CLAUDE.local.md
+.mcp.json

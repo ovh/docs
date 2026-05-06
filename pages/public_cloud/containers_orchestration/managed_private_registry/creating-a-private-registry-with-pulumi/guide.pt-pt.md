@@ -1,7 +1,7 @@
 ---
 title: Creating a private registry with Pulumi
 excerpt: 'Create an OVHcloud Managed Private Registry (MPR) with Pulumi'
-updated: 2025-03-13
+updated: 2026-02-25
 ---
 
 ## Objective
@@ -24,6 +24,17 @@ Pulumi offers an intuitive command line interface (CLI), to provision, update or
 - An account in [Pulumi](https://www.pulumi.com/)
 - A [Pulumi access token](https://app.pulumi.com/account/tokens)
 - Installing the [kubectl CLI](https://kubernetes.io/docs/tasks/tools/)
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Navigation path:** `Public Cloud`{.action} > Select your project
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ### Before you begin
 
@@ -65,7 +76,7 @@ Behind the scenes, the provider is doing requests to OVHcloud APIs.
 
 In order to retrieve this necessary information, please follow our [first steps with the OVHcloud APIs](/pages/manage_and_operate/api/first-steps) guide.
 
-In concrete terms, you have to generate these credentials via the [OVH token generation page](https://api.ovh.com/createToken/?GET=/*&POST=/*&PUT=/*&DELETE=/*) with the following rights:
+In concrete terms, you have to generate these credentials via the [OVH token generation page](https://auth.eu.ovhcloud.com/api/createToken?GET=/*&POST=/*&PUT=/*&DELETE=/*) with the following rights:
 
 ![OVHcloud API rights](images/api-rights.png){.thumbnail}
 
@@ -341,7 +352,7 @@ Outputs:
     registryPassword: [secret]
     registryURL     : "https://034nl9k0.c1.gra9.container-registry.ovh.net"
     registryUser    : "myuser"
-    registryVersion : "2.12.2"
+    registryVersion : "2.14.2"
 
 Resources:
     + 5 created
@@ -349,8 +360,7 @@ Resources:
 Duration: 2m30s
 ```
 
-Log in to the [OVHcloud Control Panel](/links/manager), go to the `Public Cloud`{.action} section and click on `Managed Private Registry`. <br>
-As you can see, your registry has been successfuly created:
+Go to the `Managed Private Registry`{.action} section. Your registry has been successfully created:
 
 ![Managed private registry](images/private-registry.png){.thumbnail}
 
@@ -439,7 +449,7 @@ Outputs:
   - registryPassword: [secret]
   - registryURL     : "https://034nl9k0.c1.gra9.container-registry.ovh.net"
   - registryUser    : "myuser"
-  - registryVersion : "2.12.2"
+  - registryVersion : "2.14.2"
 
 Resources:
     - 5 to delete
@@ -464,7 +474,7 @@ Outputs:
   - registryPassword: [secret]
   - registryURL     : "https://034nl9k0.c1.gra9.container-registry.ovh.net"
   - registryUser    : "myuser"
-  - registryVersion : "2.12.2"
+  - registryVersion : "2.14.2"
 
 Resources:
     - 5 deleted

@@ -1,7 +1,7 @@
 ---
 title: 'OVHcloud Kunden-Account erstellen'
 excerpt: Erfahren Sie hier, wie Sie Ihren OVHcloud Kunden-Account anlegen
-updated: 2025-04-28
+updated: 2026-02-26
 ---
 
 ## Ziel
@@ -19,19 +19,24 @@ Die Erstellung eines Accounts kann vor oder während der Bestellung Ihres ersten
 
 ### Wie erstellt man einen OVHcloud Kunden-Account?
 
-Um einen OVHcloud Kunden-Account zu erstellen, gehen Sie einfach auf [diese Seite](/links/manager) und füllen Sie das Online-Formular aus.
+Um einen OVHcloud Kunden-Account zu erstellen, gehen Sie zu [dieser Seite](/links/manager) und klicken Sie auf `Account erstellen`{.action}.
 
-![Formular erstellen](images/account-creation.png){.thumbnail}
+![Account erstellen](images/account-creation-EN-01.png){.thumbnail}
+
+Geben Sie im OVHcloud Kundencenter Ihr Land mit Steuersitz, Ihre Währung und die Sprache ein, in der Sie Ihre Dienste verwalten möchten. Klicken Sie dann auf `Bestätigen`{.action}.
+
+![Erstellen Sie einen Account](images/account-creation-EN-02.png){.thumbnail}
+
+Geben Sie dann Ihre E-Mail-Adresse ein und erstellen Sie ein Passwort für den Zugriff auf Ihr OVHcloud Kunden-Account.
 
 |Information|Beschreibung|
 |---|---|
-|Vorname - Name|Geben Sie hier einen nachweisbaren Vor- und Nachnamen ein.|
-|E-Mail-Adresse|Geben Sie eine gültige **E-Mail-Adresse, auf die Sie Zugriff haben**, ein.<br><br>Vermeiden Sie hierbei generell E-Mail-Adressen mit Domainnamen, die über denselben Kunden-Account verwaltet werden. Sollte der Domainname eine Dienstunterbrechung erleiden, erhalten Sie unsere Benachrichtigungen nicht mehr.|
+|E-Mail-Adresse|Geben Sie eine gültige **E-Mail-Adresse, auf die Sie Zugriff haben**, ein.<br><br>Vermeiden Sie es, eine E-Mail-Adresse zu verwenden, die mit einer Domain verbunden ist, die Sie über diesen OVHcloud Kunden-Account verwalten. Sollte der Domainname eine Dienstunterbrechung erleiden, erhalten Sie unsere Benachrichtigungen nicht mehr.|
 |Passwort|Das Passwort muss einzigartig sein (erstellt und ausschließlich verwendet für Ihren OVHcloud Kunden-Account) und hinreichend komplex sein.<br><br>Um ein effizientes Passwort [zu erstellen, lesen Sie unsere](/pages/account_and_service_management/account_information/manage-ovh-password#in-der-praktischen-anwendung) Anleitung zur Passwortverwaltung.|
 
 Sobald Sie das erste Formular ausgefüllt haben, wird Ihnen ein Code zur einmaligen Verwendung an die von Ihnen angegebene E-Mail-Adresse zugesandt. Mit diesem Code können Sie Ihre E-Mail-Adresse validieren. Geben Sie ihn in die dafür vorgesehenen Felder ein.
 
-![Einmalcode](images/code.png){.thumbnail}
+![Einmalcode](images/code-EN.png){.thumbnail}
 
 > [!primary]
 > Wenn Sie die E-Mail mit dem Code nicht erhalten haben, überprüfen Sie bitte den Ordner "Spam" / "unerwünschte E-Mails" Ihres Accounts.
@@ -41,9 +46,16 @@ Sobald Sie das erste Formular ausgefüllt haben, wird Ihnen ein Code zur einmali
 > Ist die von Ihnen angegebene E-Mail-Adresse nicht gültig oder verfügbar, klicken Sie auf den Button `E-Mail-Adresse ändern`{.action}.
 >
 
-Nachdem Sie den Code eingegeben und bestätigt haben, füllen Sie bitte das Formular aus. Achten Sie insbesondere darauf, den **Account-Typ** korrekt auszuwählen.
+Nach Eingabe und Validierung des Codes müssen Sie den **Kontotyp** aus den verfügbaren Optionen auswählen:
 
-![Formular erstellen](images/account-type.png){.thumbnail}
+- **Verein**: Ein Account vom Typ "Verein" darf nur von Vereinen und anderen gemeinnützigen Organisationen wie Stiftungen, Berufsgewerkschaften oder religiösen Vereinigungen erstellt werden.
+- **Öffentliche Verwaltung**: Ein Account vom Typ "Behörde" darf nur von staatlichen Behörden, Gebietskörperschaften oder öffentlichen Einrichtungen eingerichtet werden.
+- **Unternehmen**: Ein Account vom Typ "Unternehmen" muss von allen juristischen Personen (mit Ausnahme von Behörden und Vereinen) und allen natürlichen Personen (Einzelunternehmer:innen) erstellt werden, die im Rahmen ihrer beruflichen Tätigkeit OVHcloud Produkte erwerben.
+- **Privatperson**: Ein Account vom Typ "Privat" darf nur von natürlichen Personen erstellt werden, die OVHcloud Produkte für ihren privaten Bedarf erwerben.
+
+![Wahl des Kontotyps](images/account-type-2025.png){.thumbnail}
+
+Anschließend werden Sie aufgefordert, Ihre Kontaktdaten anzugeben. Stellen Sie sicher, dass die eingegebenen Informationen korrekt sind.
 
 Ihr Account wird angelegt und Sie werden automatisch auf der Startseite ("Dashboard") Ihres Kundencenters eingeloggt.
 
@@ -60,8 +72,15 @@ Diese Kundenkennung erlaubt Ihnen:
 - sich in Ihrem Kundencenter einzuloggen, um alle Ihre Dienstleistungen zu verwalten
 - sich beim Kontakt mit dem OVHcloud Support zu identifizieren und so die Bearbeitung Ihrer Anfragen zu erleichtern.
 
-> [!warning]
+> [!success]
 > Sichern Sie Ihre Kundenkennung, da Sie diese für jede Verbindung zu Ihrem Account benötigen.
+>
+> **Tipp: Verwenden Sie einen Passwortmanager.**
+>
+> Mit spezieller Software können Sie Ihre Zugangsdaten (ID und Passwort) für den OVHcloud Account speichern und sichern.<br>
+> Beispielsweise können Sie den Passwort-Manager **KeePass** verwenden. Dies ist ein freies und von der französischen Nationalen Agentur für Sicherheit der Informationssysteme (ANSSI) empfohlenes Programm.<br>
+> Das Prinzip ist einfach: Ein Masterpasswort, das hinreichend komplex sein muss, das Sie sich aber merken müssen, ermöglicht den Zugriff auf eine Datenbank mit allen Ihren Kennungen und Passwörtern. Diese können hochgradig komplex sein, da sie im Programm gespeichert werden können.
+>
 
 ## Weiterführende Informationen
 

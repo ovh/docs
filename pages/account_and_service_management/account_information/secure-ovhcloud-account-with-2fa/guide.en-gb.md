@@ -35,9 +35,19 @@ This guide will help you:
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](/links/manager)
 - A phone (for the SMS method), a smartphone or tablet (for the mobile application method), or a Universal Second Factor (U2F) security key
 - An understanding of the [password management recommendations for accessing your account](/pages/account_and_service_management/account_information/manage-ovh-password)
+
+<!-- CP-NAV-START:account-security -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Account security](/links/control-panel/account-security)
+- **Navigation path:** Click your name in the top right > `Access my account`{.action} > `Security`{.action}
+
+---
+<!-- CP-NAV-END:account-security -->
 
 ## Instructions <a name="instructions"></a>
 
@@ -86,14 +96,13 @@ We offer four different methods (click on the tabs below to view their explanati
 
 ### Step 1 - Enable your first two-factor authentication method <a name="enabling-2fa"></a>
 
-Log in to the [OVHcloud Control Panel](/links/manager), click on your name in the top right-hand corner, then `Access my account`{.action}.
-
-Next, click `Security`{.action}, and finally `Enable two-factor authentication`{.action}.
+On the [Account security](/links/control-panel/account-security) page, click `Enable two-factor authentication`{.action}.
 
 **Click on the tab corresponding to the method of your choice:**
 
 > [!tabs]
 > SMS
+>> <!-- CP-STEPS-START:enable-2fa-sms -->
 >> Choose the SMS method and click `Next`{.action}.
 >>
 >>![2FA sms](images/2024-002-sms-choice.png){.thumbnail width="400"}<br>
@@ -106,7 +115,9 @@ Next, click `Security`{.action}, and finally `Enable two-factor authentication`{
 >>
 >>![2FA sms](images/2024-002-sms-code.png){.thumbnail width="400"}<br>
 >> Two-factor authentication is now enabled. You can also add other numbers.
+>> <!-- CP-STEPS-END:enable-2fa-sms -->
 > Mobile App
+>> <!-- CP-STEPS-START:enable-2fa-otp -->
 >> Choose the method by mobile application and click `Next`{.action}.
 >>
 >>![2FA mobileapp](images/2024-003-otp-choice.png){.thumbnail width="400"}<br>
@@ -116,7 +127,9 @@ Next, click `Security`{.action}, and finally `Enable two-factor authentication`{
 >>
 >>![2FA mobileapp](images/2024-003-otp-code.png){.thumbnail width="400"}<br>
 >> Two-factor authentication is now enabled.
+>> <!-- CP-STEPS-END:enable-2fa-otp -->
 > Security key
+>> <!-- CP-STEPS-START:enable-2fa-u2f -->
 >> Choose the security key method and click `Next`{.action}.
 >>
 >>![2FA securitykey](images/2024-004-u2f-choice.png){.thumbnail width="400"}<br>
@@ -129,11 +142,13 @@ Next, click `Security`{.action}, and finally `Enable two-factor authentication`{
 >>
 >> Once the key is recognized, you can also add a description.
 >> Two-factor authentication is now enabled.
+>> <!-- CP-STEPS-END:enable-2fa-u2f -->
 
 Once you have added the first method, you can also **add one or two other methods** to give you multiple ways of logging in to your account.
 
 ### Step 2 - Save backup codes <a name="codes"></a>
 
+<!-- CP-STEPS-START:save-backup-codes -->
 When you add two-factor authentication for the first time, you will see 10 single-use **backup codes** displayed in the OVHcloud Control Panel.
 
 **Please keep them safe**. We recommend saving them in a password manager, such as [KeePass](https://keepass.info/) or [Bitwarden](https://bitwarden.com/) (both applications are free).
@@ -143,6 +158,7 @@ When you add two-factor authentication for the first time, you will see 10 singl
 You can regenerate or delete backup codes from your Control Panel:
 
 ![2FA](images/emergency-codes.png){.thumbnail}
+<!-- CP-STEPS-END:save-backup-codes -->
 
 > [!warning]
 >
@@ -193,13 +209,13 @@ If your device (mobile phone/smartphone/security key) is lost, stolen or no long
 > - Valid backup codes
 >
 
-To remove a device, log in to the [OVHcloud Control Panel](/links/manager), click on your name in the top right-hand corner, then `Access my account`{.action}.
-
-Next, click `Security`{.action} then the `...`{.action} button to the right of the device you want to delete, then click `Delete`{.action}.
+<!-- CP-STEPS-START:delete-device -->
+To remove a device, go to the [Account security](/links/control-panel/account-security) page and click the `...`{.action} button to the right of the device you want to delete, then click `Delete`{.action}.
 
 ![2FA](images/2024-006-delete-device.png){.thumbnail}
 
 A final validation code will then be sent to the device you want to delete. Enter this code in the window that opens, then click `Confirm`{.action} to complete the deletion.
+<!-- CP-STEPS-END:delete-device -->
 
 If you no longer have access to the device you want to delete, you cannot delete it yourself from the OVHcloud Control Panel.
 In this case, **contact our support teams directly** by [creating a ticket from the Help Center](https://help.ovhcloud.com/csm?id=csm_get_help) or by following the process described [below](#2FA-deletion).
@@ -216,9 +232,11 @@ To disable two-factor authentication completely on your OVHcloud account, you wi
 
 To remove each device, please refer to the dedicated [part of this guide](#delete-device).
 
+<!-- CP-STEPS-START:disable-2fa-codes -->
 Once you have removed all your devices, disable the emergency codes by clicking the `Disable 2FA codes`{.action}  button.
 
 ![2FA codes](images/disabling-codes.png){.thumbnail}
+<!-- CP-STEPS-END:disable-2fa-codes -->
 
 #### If you no longer have access to your OVHcloud Control Panel <a name="2FA-deletion"></a>
 

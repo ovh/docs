@@ -1,8 +1,22 @@
 ---
 title: "¿Qué hacer si mi sitio web no está accesible?"
 excerpt: "Diagnóstico de las causas de la inaccesibilidad de su sitio web"
-updated: 2025-10-09
+updated: 2026-03-31
 ---
+
+<style>
+details>summary {
+    color:rgb(33, 153, 232) !important;
+    cursor: pointer;
+}
+details>summary::before {
+    content:'\25B6';
+    padding-right:1ch;
+}
+details[open]>summary::before {
+    content:'\25BC';
+}
+</style>
 
 ## Objetivo
 
@@ -27,12 +41,22 @@ En caso de que su sitio web no sea accesible, pueden aparecer varios errores en 
 ## Requisitos
 
 - Tener la gestión de los servidores y de la [zona DNS](/pages/web_cloud/domains/dns_zone_edit) del dominio.
-- Haber iniciado sesión en el [área de cliente de OVHcloud](/links/manager).
 - Estar actualizado en los [pagos](/pages/account_and_service_management/managing_billing_payments_and_services/invoice_management#pay-bills) y [renovaciones](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#renewal-management) de los servicios asociados (dominio y alojamiento web).
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [Alojamientos](/links/control-panel/web-hosting)
+- **Ruta de navegación:** `Web Cloud`{.action} > `Alojamientos`{.action} > Seleccione su alojamiento web
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## Procedimiento
 
-### 1: Comprobar la validez de su dominio
+### 1 - Comprobar la validez de su dominio
 
 > [!warning]
 >
@@ -42,39 +66,67 @@ En caso de que su sitio web no sea accesible, pueden aparecer varios errores en 
 > Por lo tanto, le recomendamos que active la [renovación automática](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#procedimiento) en todas sus suscripciones de OVHcloud.
 >
 
-Para comprobar la validez de la suscripción relativa a su nombre de dominio, haga clic en su nombre en la esquina superior derecha del [área de cliente de OVHcloud](/links/manager) y seleccione `Mis soluciones y servicios`{.action}.
+<!-- CP-STEPS-START:check-domain-renewal -->
+Para comprobar la validez de la suscripción relativa a su nombre de dominio, haga clic en las fichas siguientes para ver cada una de las **3** etapas.
 
-![control-panel](/pages/assets/screens/control_panel/product-selection/right-menu/my-solutions-and-services.png){.thumbnail}|
+> [!tabs]
+> **Etapa 1**
+>>
+>> Acceda a la página [Mis soluciones y servicios](/links/control-panel/billing-services).
+>>
+> **Etapa 2**
+>>
+>> Renueve su dominio si es necesario a través del botón `...`{.action} y luego `Renovar el servicio`{.action}.
+>>
+>> ![renew-service-button](/pages/assets/screens/control_panel/product-selection/web-cloud/order/renew-service-button.png){.thumbnail}
+>>
+> **Etapa 3**
+>>
+>> Una vez completada la renovación, su sitio web estará disponible en un plazo máximo de 48 horas.
+<!-- CP-STEPS-END:check-domain-renewal -->
 
-Renueve su dominio si es necesario a través del botón `...`{.action} a la derecha de la pantalla y luego `Renovar el servicio`{.action}.
+### 2 - Comprobar los servidores DNS
 
-![renew-service-button](/pages/assets/screens/control_panel/product-selection/web-cloud/order/renew-service-button.png){.thumbnail}
+Para comprobar la validez de sus [servidores DNS](/pages/web_cloud/domains/dns_server_edit), acceda a la página [Dominios](/links/control-panel/web-domains) y seleccione el dominio correspondiente.
 
-Una vez completada la renovación del plan, su sitio web estará disponible en un plazo máximo de 48 horas.
+**Haga clic en la situación correspondiente a su caso para ver el contenido.**
 
-### 2: Comprobar los servidores DNS
+<!-- CP-STEPS-START:check-dns-servers-scenario1 -->
+/// details | Situación 1 - No hay anomalías en los servidores DNS
 
-Para comprobar la validez de sus [servidores DNS](/pages/web_cloud/domains/dns_server_edit), haga clic en [área de cliente de OVHcloud](/links/manager) y seleccione el dominio del `Dominios`{.action}.
+Para comprobar los servidores DNS declarados, haga clic en las fichas siguientes para ver cada una de las **3** etapas.
 
-#### Situación 1: No hay anomalías en los servidores DNS
+> [!tabs]
+> **Etapa 1**
+>>
+>> Acceda a la página [Dominios](/links/control-panel/web-domains) y seleccione el dominio correspondiente.
+>>
+>> ![Domain Names](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
+>>
+> **Etapa 2**
+>>
+>> Compruebe los servidores indicados en la pestaña `Servidores DNS`{.action}:
+>>
+>> ![srv-dns-ok2](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-servers/name-dns-server.png){.thumbnail}
+>>
+> **Etapa 3**
+>>
+>> Si son idénticos a los objetivos de las entradas de tipo `NS` en la **Zona DNS**, vaya a la [parte 3](#step3):
+>>
+>> ![srv-dns-ok](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/dashboard-entry-ns.png){.thumbnail}
 
-Compruebe los servidores indicados en la pestaña `Servidores DNS`{.action}:
+///
+<!-- CP-STEPS-END:check-dns-servers-scenario1 -->
 
-![srv-dns-ok2](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-servers/name-dns-server.png){.thumbnail}
+/// details | Situación 2 - Aparecerá un aviso por encima de la zona DNS
 
-Si son idénticos a los objetivos de las entradas de tipo `NS` en la `Zona DNS`{.action}, vaya al [Etapa 3](#step3):
-
-![srv-dns-ok](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/dashboard-entry-ns.png){.thumbnail}
-
-#### Situación 2: Aparecerá un aviso por encima de la zona DNS
-
-Una advertencia en la pestaña `Zona DNS`{.action} indica que los servidores DNS utilizados por su dominio no son los indicados en su zona. Existen dos posibles situaciones:
+Una advertencia en la pestaña **Zona DNS** indica que los servidores DNS utilizados por su dominio no son los indicados en su zona. Existen dos posibles situaciones:
 
 - Bajo la frase "Actualmente utiliza los siguientes servidores DNS:", los servidores indicados son del tipo "ns **?** .ovh.net" y "dns **?** .ovh.net" (sustituya "**?**" por cualquier número):
 
 ![warning_other_ovh_dns_srv](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/message-other-ovh-dns-servers.png){.thumbnail}
 
-Modifique los servidores DNS siguiendo las instrucciones de [esta guía](/pages/web_cloud/domains/dns_server_edit) para que sean idénticos a los objetivos de los registros de tipo `NS` en la `Zona DNS`{.action}.
+Modifique los servidores DNS siguiendo las instrucciones de [esta guía](/pages/web_cloud/domains/dns_server_edit) para que sean idénticos a los objetivos de los registros de tipo `NS` en la **Zona DNS**.
 
 Su sitio web estará disponible en un plazo máximo de 48 horas.
 
@@ -87,54 +139,72 @@ Su sitio web estará disponible en un plazo máximo de 48 horas.
 > En ese caso, contacte con el proveedor de hosting de su zona DNS, su webmaster o los [partners de OVHcloud](/links/partner) antes de realizar cualquier operación.
 >
 > Es posible que los servidores DNS utilizados por el dominio sean funcionales y que el problema de acceso al sitio web esté relacionado con un registro que no se encuentra o que no está en la [zona DNS](/pages/web_cloud/domains/dns_zone_general_information). Cualquier modificación de los servidores DNS en esta situación puede hacer que sus direcciones de correo u otras aplicaciones en línea no estén disponibles.
->
 
-#### Situación 3: No aparece ningún registro de tipo NS en la zona DNS
+///
 
-La `Zona DNS`{.action} de su dominio no contiene ningún registro de tipo `NS`:
+<!-- CP-STEPS-START:fix-missing-ns-records -->
+/// details | Situación 3 - No aparece ningún registro de tipo NS en la zona DNS
+
+La **Zona DNS** de su dominio no contiene ningún registro de tipo `NS`:
 
 ![srv_dns_missing](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/dashboard-entry-ns-missing.png){.thumbnail}
 
-Haga una copia de seguridad del área actual haciendo clic en el botón `Editar en modo de texto`{.action} situado a la derecha de su pantalla:
-
-![change_DNS_zone_change_text_format](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/change-in-text-format.png){.thumbnail}
-
-Copie y pegue el contenido de su `Zona DNS`{.action} en un documento de texto. Guarde el documento de forma local.
-
-A continuación, haga clic en `Restaurar mi zona DNS`{.action} y seleccione `No, pero quiero restaurar la zona DNS.`{.action}. Indique los servidores de correo y de alojamiento y haga clic en `Aceptar`{.action}.
-
-![change_DNS_zone_reset](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/reset-my-dns-zone.png){.thumbnail}
-
-Su sitio web estará disponible en un plazo máximo de 24 horas.
-
-### 3: Comprobar la zona DNS <a name="step3"></a>
-
-En esta etapa, accederá a la dirección IP de su alojamiento y la añadirá a su `Zona DNS`{.action}.
-
-Si su sitio web no está alojado en la infraestructura de OVHcloud o si está gestionado por otro proveedor, contacte con el servicio de soporte correspondiente.
-
-Si su sitio web está alojado en uno de nuestros [planes de hosting](/links/web/hosting), haga clic en las fichas siguientes para ver cada uno de los **3** etapas.
+Haga clic en las fichas siguientes para ver cada una de las **4** etapas.
 
 > [!tabs]
 > **Etapa 1**
 >>
->> Conéctese a su [área de cliente de OVHcloud](/links/manager) y acceda a la sección `Web Cloud`{.action}.
+>> Acceda a la página [Zonas DNS](/links/control-panel/web-dns-zone) y seleccione el dominio correspondiente.
 >>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
+>> ![DNS zones](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
 >>
 > **Etapa 2**
 >>
->> Haga clic en el menú `Alojamientos`{.action} y seleccione el alojamiento web correspondiente.
+>> Haga una copia de seguridad de la zona actual haciendo clic en el botón `Editar en modo de texto`{.action}:
+>>
+>> ![change_DNS_zone_change_text_format](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/change-in-text-format.png){.thumbnail}
+>>
+>> Copie y pegue el contenido de su **Zona DNS** en un documento de texto. Guarde el documento de forma local.
+>>
+> **Etapa 3**
+>>
+>> Haga clic en `Restaurar mi zona DNS`{.action} y seleccione `No, pero quiero restaurar la zona DNS.`{.action}.
+>>
+>> Indique los servidores de correo y de alojamiento y haga clic en `Aceptar`{.action}.
+>>
+>> ![change_DNS_zone_reset](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/reset-my-dns-zone.png){.thumbnail}
+>>
+> **Etapa 4**
+>>
+>> Su sitio web estará disponible en un plazo máximo de 24 horas.
+
+///
+<!-- CP-STEPS-END:fix-missing-ns-records -->
+
+### 3 - Comprobar la zona DNS <a name="step3"></a>
+
+En esta etapa, accederá a la dirección IP de su alojamiento y la añadirá a su **Zona DNS**.
+
+Si su sitio web no está alojado en la infraestructura de OVHcloud o si está gestionado por otro proveedor, contacte con el servicio de soporte correspondiente.
+
+<!-- CP-STEPS-START:check-hosting-ip-for-dns -->
+Si su sitio web está alojado en uno de nuestros [planes de hosting](/links/web/hosting), haga clic en las fichas siguientes para ver cada una de las **2** etapas.
+
+> [!tabs]
+> **Etapa 1**
+>>
+>> Acceda a la página [Alojamientos](/links/control-panel/web-hosting) y seleccione el alojamiento web correspondiente.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Etapa 3**
+> **Etapa 2**
 >>
 >> En el cuadro **Información general**, encontrará las menciones **IPv4** y **IPv6**.
 >>
 >> ![IPv4-IPv6](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-ipv4-and-ipv6.png){.thumbnail}
 >>
->> Copie la dirección IPV4 y/o IPV6 de su dominio.
+>> Copie la dirección IPv4 y/o IPv6 de su dominio.
+<!-- CP-STEPS-END:check-hosting-ip-for-dns -->
 
 A continuación, cópiela en la [zona DNS](/pages/web_cloud/domains/dns_zone_edit) de su dominio modificando o creando uno o más registros de tipo `A`.
 

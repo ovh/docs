@@ -38,19 +38,23 @@ A sua oferta Private Exchange ou Trusted Exchange gera, portanto, os seus própr
 - Ter adquirido uma oferta [Private Exchange](/links/web/emails-hosted-exchange) ou [Trusted Exchange](/links/web/emails-trusted-exchange).
 - Uma conta Logs Data Platform (LDP) com pelo menos um *Stream* ativo configurado. Este guia vai guiá-lo em todas as etapas necessárias: [Quick start for Logs Data Platform](/pages/manage_and_operate/observability/logs_data_platform/getting_started_quick_start).
     - Se não conhecer todas as possibilidades de configuração de um *Stream* LDP, basta criar um novo com as opções por defeito (indexação & websocket ativados, armazenamento de longa duração desativado) para seguir este guia.
-- Estar ligado à sua [área de cliente OVHcloud](/links/manager).
+
+<!-- CP-NAV-START:web-exchange -->
+---
+
+### Acesso à Área de Cliente OVHcloud
+
+- **Ligação direta:** [Exchange](/links/control-panel/web-exchange)
+- **Caminho de navegação:** `Web Cloud`{.action} > `Exchange`{.action} > Selecione a sua plataforma
+
+---
+<!-- CP-NAV-END:web-exchange -->
 
 ## Instruções
 
 ### Visualizar os logs da sua plataforma Exchange em tempo real
 
-Para aceder aos logs em tempo real na sua oferta Private ou Trusted Exchange, siga as instruções seguintes:
-
-1. Conecte-se à sua [área de cliente OVHcloud](/links/manager).
-1. Dirija-se à secção `Web Cloud`{.action}.
-1. Na rubrica `MICROSOFT`, clique em `Exchange`{.action}.
-1. Selecione a plataforma em questão.
-1. À direita da série de separadores, clique no separador `Mais +`{.action} e depois em `Registos`{.action}.
+Para aceder aos logs em tempo real na sua oferta Private ou Trusted Exchange, à direita da série de separadores, clique no separador `Mais +`{.action} e depois em `Registos`{.action}.
 
 ![exchange - logs](images/exchange-logs01.png){.thumbnail}
 
@@ -62,7 +66,7 @@ Os serviços Exchange oferecem 2 tipos de logs:
 
 - **Access** : Permite consultar a atividade das ligações ao seu serviço Exchange.
 - **Messagetracking** : Permite consultar os logs detalhados do fluxo de correio eletrónico que atravessa o seu serviço Exchange. Encontrará as seguintes informações:
-    - o estado de entrega de correios nos seus contos Exchange;
+    - o estado de entrega de correios nas suas contas Exchange;
     - o estado de envio de correios a partir do seu serviço Exchange;
     - o tamanho dos correios transmitidos;
     - etc.
@@ -86,12 +90,8 @@ As soluções Exchange são compatíveis com diversos serviços tais como alojam
 
 Para subscrever os logs da sua solução Exchange a um fluxo de dados na Logs Data Platform, realize as seguintes ações:
 
-1. Conecte-se à sua [área de cliente OVHcloud](/links/manager).
-1. Dirija-se à secção `Web Cloud`{.action}.
-1. Na rubrica `MICROSOFT`, clique em `Exchange`{.action}.
-1. Selecione a plataforma em questão.
-1. À direita da série de separadores, clique no separador `Mais +`{.action} e depois em `Logs`{.action}.
-1. À direita do quadro onde aparecem os seus logs em tempo real, clique no botão `Subscrever`{.action}.
+1. À direita da série de separadores, clique no separador `Mais +`{.action} e depois em `Registos`{.action}.
+1. À direita do quadro onde são apresentados os logs em tempo real, clique no botão `Subscrever`{.action}.
 
 ![exchange - logs](images/exchange-logs02.png){.thumbnail}
 

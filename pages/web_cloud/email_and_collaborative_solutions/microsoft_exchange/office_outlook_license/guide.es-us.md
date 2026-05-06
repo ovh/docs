@@ -1,0 +1,72 @@
+---
+title: Obtener una licencia Outlook para Exchange
+excerpt: Cómo contratar una licencia Outlook desde una plataforma Exchange de OVHcloud e instalarla
+updated: 2025-04-28
+---
+
+## Objetivo
+
+Desea disfrutar de una licencia Outlook para consultar y gestionar sus emails en su cuenta Exchange.
+
+OVHcloud le ofrece el cliente de correo Outlook al precio de 2 euros (+IVA) al mes. Estará asociado a una cuenta Exchange de OVHcloud de la que usted es responsable.
+
+Una vez contratada, puede descargar Outlook de una de las 3 versiones siguientes:
+
+- Outlook para Windows 32 bits.
+- Outlook para Windows 64 bits.
+- Outlook para MAC 64 bits.
+
+**Esta guía explica cómo contratar e instalar una licencia Outlook desde una plataforma Exchange de OVHcloud.**
+
+<!-- CP-NAV-START:web-exchange -->
+---
+
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [Exchange](/links/control-panel/web-exchange)
+- **Ruta de navegación:** `Web Cloud`{.action} > `Exchange`{.action} > Seleccione su plataforma
+
+---
+<!-- CP-NAV-END:web-exchange -->
+
+## Procedimiento
+
+### Contratar una licencia Outlook
+
+#### Para una cuenta Hosted Exchange
+
+![Outlook](images/order-outlook01.png){.thumbnail}
+
+Indique la frecuencia de renovación de la licencia Outlook y acepte las condiciones. Haga clic en `Siguiente`{.action} para continuar.
+
+![Outlook](images/order-outlook02.png){.thumbnail}
+
+Una vez hecho el resumen del pedido, utilice el botón `Abonar`{.action} para generar la orden de pedido. Será redirigido a una nueva página en la que podrá abonar el pedido utilizando las formas de pago que tenga a su disposición.
+
+Espere a que se ponga a su disposición la licencia Outlook en el área de cliente.
+
+### Descargar e instalar Outlook
+
+Ya puede descargar el archivo de instalación de Outlook para su máquina.
+
+Desde la interfaz de gestión de su plataforma Exchange, haga clic en el icono `...`{.action} a la derecha de la cuenta correspondiente y, seguidamente, en `Utilizar la licencia Outlook`{.action}.
+
+Seleccione la versión en el menú desplegable, en función de su sistema operativo y del idioma, y haga clic en `Siguiente`{.action}.
+
+![Outlook](images/order-outlook05.png){.thumbnail}
+
+Al cabo de unos minutos, se generará un enlace de descarga y una clave de licencia para instalar en la máquina.
+
+![Outlook](images/order-outlook06.png){.thumbnail}
+
+El archivo descargado tiene el formato .ISO, es decir, una imagen de disco. Ejecute la instalación e introduzca la clave de licencia cuando se le pida.
+
+### Eliminar la licencia Outlook de su cuenta
+
+![Outlook](images/order-outlook07.png){.thumbnail}
+
+Tras la validación, le recordamos que la licencia se eliminará definitivamente en su fecha de expiración.
+
+## Más información <a name="go-further"></a>
+
+Interactúe con nuestra [comunidad de usuarios](/links/community).

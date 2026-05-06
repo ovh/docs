@@ -14,7 +14,6 @@ Mit dem Pico **CMS** (**C**ontent **M**anagement **S**ystem) können Sie schnell
 
 - Sie verfügen über ein [OVHcloud Webhosting](/links/web/hosting).
 - Sie verfügen über einen [Domainnamen](/links/web/domains).
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 
 ## In der praktischen Anwendung
 

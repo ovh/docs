@@ -1,6 +1,6 @@
 ---
-title: 'Tutoriel - Installer un serveur web (LAMP) sur Debian ou Ubuntu'
-excerpt: 'Découvrez comment configurer un serveur web LAMP'
+title: "Tutoriel - Installer un serveur web (LAMP) sur Debian ou Ubuntu"
+excerpt: "Installez un serveur web LAMP (Linux, Apache, MySQL, PHP) sur un serveur dédié Debian ou Ubuntu étape par étape"
 updated: 2023-05-10
 ---
 
@@ -13,8 +13,18 @@ La mise en place d'un serveur web et des logiciels associés permet à votre ser
 ## Prérequis
 
 - Un [serveur dédié](/links/bare-metal/bare-metal), un [VPS](/links/bare-metal/vps) ou une instance [Public Cloud](/links/public-cloud/public-cloud) dans votre compte OVHcloud (hors systèmes Windows)
-- Être connecté à votre [espace client OVHcloud](/links/manager)
 - Un accès administratif à votre service via SSH
+
+<!-- CP-NAV-START:baremetal-dedicated-servers -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Serveurs dédiés](/links/control-panel/baremetal-dedicated-servers)
+- **Pour accéder à vos services :** `Bare Metal Cloud`{.action} > `Serveurs dédiés`{.action} > Sélectionnez votre serveur
+
+---
+<!-- CP-NAV-END:baremetal-dedicated-servers -->
 
 > [!warning]
 > Ce tutoriel vous présente l’utilisation d’une ou de plusieurs solutions OVHcloud avec des outils externes et vous décrit des manipulations réalisées dans un contexte précis. Il vous faudra peut-être adapter les consignes à votre situation.
@@ -76,12 +86,12 @@ sudo apt install -y php php-pdo php-mysql php-zip php-gd php-mbstring php-curl p
 
 ### Étape 4 : configuration du serveur de base de données <a name="sqlconf"></a>
 
-MariaDB fournit un script pour vous aider dans la configuration initiale et pour appliquer certains paramètres liés à la sécurité.
+MariaDB [fournit un script](https://mariadb.com/docs/server/clients-and-utilities/deployment-tools/mariadb-secure-installation) pour vous aider dans la configuration initiale et pour appliquer certains paramètres liés à la sécurité.
 
 Pour l'exécuter, entrez la commande suivante :
 
 ```bash
-sudo mysql_secure_installation
+sudo mariadb-secure-installation
 ```
 
 Confirmez la première invite en appuyant sur `Entrée`{.action}.
@@ -273,5 +283,7 @@ Certbot renouvelle automatiquement les certificats. Aucune autre étape n'est n�
 [Documentation Certbot](https://eff-certbot.readthedocs.io/en/stable/)
 
 [Documentation NGINX](https://nginx.org/en/docs/) (alternative Apache)
+
+[Sécuriser un serveur dédié](/pages/bare_metal_cloud/dedicated_servers/securing-a-dedicated-server)
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).

@@ -13,7 +13,33 @@ Mit den E-Mail-Diensten von OVHcloud können Sie professionelle E-Mail-Adressen 
 ## Voraussetzungen
 
 - Sie verfügen über einen [OVHcloud E-Mail-Dienst](/links/web/emails).
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager) im Bereich `Web Cloud`{.action}.
+
+<!-- CP-NAV-START:web-mx-plan -->
+<!-- CP-NAV-START:web-email-pro -->
+<!-- CP-NAV-START:web-exchange -->
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+**MX Plan:**
+
+- **Direkter Link:** [MX Plan](/links/control-panel/web-mx-plan)
+- **Navigationspfad:** `Web Cloud`{.action} > `MX Plan`{.action} > Wählen Sie Ihren MX Plan Dienst aus
+
+**E-Mail Pro:**
+
+- **Direkter Link:** [E-Mail Pro](/links/control-panel/web-email-pro)
+- **Navigationspfad:** `Web Cloud`{.action} > `E-Mail Pro`{.action} > Wählen Sie Ihre Plattform aus
+
+**Exchange:**
+
+- **Direkter Link:** [Exchange](/links/control-panel/web-exchange)
+- **Navigationspfad:** `Web Cloud`{.action} > `Exchange`{.action} > Wählen Sie Ihre Plattform aus
+
+---
+<!-- CP-NAV-END:web-exchange -->
+<!-- CP-NAV-END:web-email-pro -->
+<!-- CP-NAV-END:web-mx-plan -->
 
 ## In der praktischen Anwendung
 
@@ -24,11 +50,11 @@ Mit den E-Mail-Diensten von OVHcloud können Sie professionelle E-Mail-Adressen 
 - Überprüfung von auf unseren Servern eingehenden Nachrichten zu Ihren E-Mail-Adressen verschärfen (nur für [Exchange](/links/web/emails-hosted-exchange) Accounts)
 - festlegen, wie „unerwünschte“ Nachrichten (Spam-Mails) in Ihren Posteingängen angezeigt werden (nur für [Exchange](/links/web/emails-hosted-exchange) Accounts)
 
-Um auf die Sicherheitseinstellungen Ihres E-Mail-Accounts zuzugreifen, loggen Sie sich in Ihrem [OVHcloud Kundencenter](/links/manager) ein und begeben Sie sich in den Bereich `Web Cloud`{.action}. 
+Um auf die Sicherheitseinstellungen Ihres E-Mail-Dienstes zuzugreifen, folgen Sie den nachstehenden Anweisungen.
 
-|E-Mails und E-Mail Pro|Exchange|
+|MX Plan und E-Mail Pro|Exchange|
 |---|---|
-|Klicken Sie auf `MX Plan`{.action} bzw. `E-Mail Pro`{.action} und wählen Sie die betreffende Lösung aus. Klicken Sie auf den Tab `Mehr`, dann auf `Verwaltung der Sicherheitseinstellungen`{.action}.|Klicken Sie auf `Microsoft`{.action}, dann auf `Exchange`{.action} und wählen Sie die betreffende Lösung aus. Klicken Sie auf `Sicherheit`{.action}.|
+|Klicken Sie auf den Tab `Mehr`, dann auf `Sicherheitseinstellungen verwalten`{.action}.|Klicken Sie auf `Sicherheit`{.action}.|
 |![Exchange Sicherheit](images/manage-security01.png){.thumbnail}|![Exchange Sicherheit](images/manage-security02.png){.thumbnail}|
 
 > [!primary]

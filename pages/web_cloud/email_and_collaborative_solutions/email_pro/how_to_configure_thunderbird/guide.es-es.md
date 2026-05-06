@@ -33,6 +33,17 @@ Las cuentas de Email Pro se pueden configurar en diferentes clientes de correo e
 - Debe tener el software Thunderbird instalado en su dispositivo con Windows.
 - Debe tener las credenciales para la dirección de correo electrónico que desea configurar.
 
+<!-- CP-NAV-START:web-email-pro -->
+---
+
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [Email Pro](/links/control-panel/web-email-pro)
+- **Ruta de navegación:** `Web Cloud`{.action} > `Email Pro`{.action} > Seleccione su plataforma
+
+---
+<!-- CP-NAV-END:web-email-pro -->
+
 /// details | Información sobre la gestión y configuración de los servicios de OVHcloud
 
 Esta guía le muestra cómo utilizar soluciones de OVHcloud con herramientas externas y los cambios que debe realizar en contextos específicos. Es posible que deba adaptar las instrucciones según su situación.
@@ -47,11 +58,7 @@ Si tiene dificultades para realizar estas operaciones, le recomendamos que conta
 >
 > En nuestro ejemplo, utilizamos la mención del servidor: pro?.mail.ovh.net. Debe reemplazar el "?" con el número que designa el servidor de su servicio de Email Pro.
 >
-> 1. Inicie sesión en su [área de cliente de OVHcloud](/links/manager).
-> 1. Vaya a la sección `Web Cloud`{.action}.
-> 1. Haga clic en `Email Pro`{.action}.
-> 1. Seleccione la plataforma correspondiente.
-> 1. El nombre del servidor es visible en el marco **Conexión** de la pestaña `Información general`{.action}.
+> Haga clic en [este enlace](/links/control-panel/web-email-pro) para acceder a la sección `Email Pro`{.action}. El nombre del servidor es visible en el marco **Conexión** de la pestaña `Información general`{.action}.
 
 ### Agregar la cuenta
 

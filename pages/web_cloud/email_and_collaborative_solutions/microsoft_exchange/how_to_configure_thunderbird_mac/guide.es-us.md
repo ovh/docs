@@ -1,7 +1,7 @@
 ---
 title: 'Exchange - Configurar su dirección de correo electrónico en Thunderbird para Windows'
 excerpt: 'Descubra cómo configurar su dirección de correo electrónico Exchange en Thunderbird para Windows'
-updated: 2025-09-19
+updated: 2026-03-24
 ---
 
 <style>
@@ -29,9 +29,20 @@ Las cuentas de Exchange pueden configurarse en diferentes clientes de correo com
 
 ## Requisitos
 
-- Tener una dirección de correo electrónico [Hosted Exchange](/links/web/emails-hosted-exchange) o [Private Exchange](/links/web/emails-private-exchange).
+- Tener una dirección de correo electrónico [Hosted Exchange](/links/web/emails-hosted-exchange).
 - Tener instalado el software Thunderbird en su dispositivo bajo Windows.
 - Poseer las credenciales relacionadas con la dirección de correo electrónico que desea configurar.
+
+<!-- CP-NAV-START:web-exchange -->
+---
+
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [Exchange](/links/control-panel/web-exchange)
+- **Ruta de navegación:** `Web Cloud`{.action} > `Exchange`{.action} > Seleccione su plataforma
+
+---
+<!-- CP-NAV-END:web-exchange -->
 
 /// details | Información relacionada con la gestión y configuración de los servicios OVHcloud
 
@@ -42,18 +53,6 @@ Le ofrecemos este guía para acompañarle en tareas cotidianas. Sin embargo, le 
 ///
 
 ## Procedimiento
-
-> [!primary]
->
-> En nuestro ejemplo, utilizamos la referencia del servidor: ex?.mail.ovh.net. Deberá reemplazar el "?" por el número que identifica su servidor de Exchange.
->
-> Para encontrar el nombre del servidor:
->
-> 1. Inicie sesión en su [área de cliente de OVHcloud](/links/manager).
-> 2. Vaya a la sección `Web Cloud`{.action}.
-> 3. En la sección `MICROSOFT`, haga clic en `Exchange`{.action}.
-> 4. Seleccione la plataforma correspondiente.
-> 5. El nombre del servidor es visible en el marco **Conexión** de la pestaña `Información general`{.action}.
 
 ### Añadir la cuenta
 
@@ -92,7 +91,7 @@ Siga los pasos de configuración haciendo clic sucesivamente en los **5** siguie
 >> Configuración del servidor de recepción:
 >>
 >>  - **Protocolo**: IMAP
->>  - **Nombre de host**: ex?.mail.ovh.net (reemplace el "?" por el número de su servidor)
+>>  - **Nombre de host**: ex.mail.ovh.ca
 >>  - **Puerto**: 993
 >>  - **Seguridad de la conexión**: SSL/TLS
 >>  - **Método de autenticación**: Contraseña normal
@@ -105,7 +104,7 @@ Siga los pasos de configuración haciendo clic sucesivamente en los **5** siguie
 >> Configuración del servidor de envío:
 >>
 >>  - **Protocolo**: SMTP 
->>  - **Nombre de host**: ex?.mail.ovh.net (reemplace el "?" por el número de su servidor)
+>>  - **Nombre de host**: ex.mail.ovh.ca
 >>  - **Puerto**: 587
 >>  - **Seguridad de la conexión**: STARTTLS
 >>  - **Método de autenticación**: Contraseña normal
@@ -132,7 +131,7 @@ Siga los pasos de configuración haciendo clic sucesivamente en los **5** siguie
 > Configuración del servidor de recepción:
 >
 > - **Protocolo**: POP3
-> - **Nombre de host**: ex?.mail.ovh.net (reemplace el "?" por el número de su servidor)
+> - **Nombre de host**: ex.mail.ovh.ca
 > - **Puerto**: 995
 > - **Seguridad de la conexión**: SSL/TLS
 > - **Método de autenticación**: Contraseña normal
@@ -173,8 +172,6 @@ Si su cuenta de correo ya está configurada y debe acceder a los ajustes de la c
 > Para más información sobre la configuración de una dirección de correo electrónico desde el cliente de correo Thunderbird, consulte [el centro de ayuda de Mozilla](https://support.mozilla.org/products/thunderbird).
 
 [Primeros pasos con el servicio Hosted Exchange](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_starting_hosted)
-
-[Primeros pasos con el servidor Private Exchange](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_starting_private)
 
 Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con los [partners de OVHcloud](/links/partner).
 

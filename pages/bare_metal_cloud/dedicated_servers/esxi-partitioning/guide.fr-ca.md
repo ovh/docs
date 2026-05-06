@@ -1,6 +1,6 @@
 ---
 title: "Installer VMware ESXi 8 sur un serveur dédié"
-excerpt: "Découvrez comment installer et configurer VMware ESXi 8 sur un serveur dédié en utilisant un template fourni par OVHcloud"
+excerpt: "Installez et configurez VMware ESXi 8 sur un serveur dédié OVHcloud, en sélectionnant un schéma de partitionnement prédéfini et en configurant un datastore."
 updated: 2025-10-03
 ---
 
@@ -16,7 +16,18 @@ Ce guide a pour objectif de vous montrer comment installer ESXi 8 sur vos serveu
 ## Prérequis
 
 - Un [serveur dédié](/links/bare-metal/bare-metal) **prêt à être installé/réinstallé** dans votre compte OVHcloud, compatible avec les [exigences matérielles d'ESXi 8](https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/8-0/esxi-upgrade-8-0/upgrading-esxi-hosts-upgrade/esxi-hardware-requirements-upgrade.html)
-- Avoir accès à l'[espace client OVHcloud](/links/manager) et/ou à l'[API OVHcloud](/links/api)
+- Accès à l'[API OVHcloud](/links/api) (facultatif)
+
+<!-- CP-NAV-START:baremetal-dedicated-servers -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Serveurs dédiés](/links/control-panel/baremetal-dedicated-servers)
+- **Pour accéder à vos services :** `Bare Metal Cloud`{.action} > `Serveurs dédiés`{.action} > Sélectionnez votre serveur
+
+---
+<!-- CP-NAV-END:baremetal-dedicated-servers -->
 
 > [!alert]
 >
@@ -67,7 +78,7 @@ Le schéma de partitionnement `default` sera utilisé sauf si un autre est séle
 > La procédure est très similaire [aux autres systèmes d'exploitation](/pages/bare_metal_cloud/dedicated_servers/getting-started-with-dedicated-server), à l'exception que vous ne pouvez pas cocher la case `Personnaliser la configuration des partitions`{.action} et qu'il y a une liste déroulante pour choisir le schéma de partitionnement à la quatrième et dernière étape.
 >
 
-Connectez-vous à l'[espace client OVHcloud](/links/manager). Depuis l'onglet `Informations générales`{.action}, cliquez sur le bouton `...`{.action} à côté du système d'exploitation, puis cliquez sur `Réinstaller mon serveur`{.action}.
+Depuis l'onglet `Informations générales`{.action}, cliquez sur le bouton `...`{.action} à côté du système d'exploitation, puis cliquez sur `Réinstaller mon serveur`{.action}.
 
 ![Bouton Réinstaller](images/reinstalling-your-server-00.png){.thumbnail}
 

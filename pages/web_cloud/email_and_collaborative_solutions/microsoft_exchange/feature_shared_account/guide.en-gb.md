@@ -13,18 +13,24 @@ A **shared account** is a mailbox shared between several Exchange accounts and c
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](/links/manager)
 - An [OVHcloud Exchange solution](/links/web/emails-hosted-exchange)
+
+<!-- CP-NAV-START:web-exchange -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Exchange](/links/control-panel/web-exchange)
+- **Navigation path:** `Web Cloud`{.action} > `Exchange`{.action} > Select your platform
+
+---
+<!-- CP-NAV-END:web-exchange -->
 
 ## Instructions
 
 ### Adding a shared account
 
-1. Log in to your [OVHcloud Control Panel](/links/manager).
-1. Open the `Web Cloud`{.action} section.
-1. In the `MICROSOFT` section, click `Exchange`{.action}.
-1. Select the service concerned.
-
+<!-- CP-STEPS-START:add-shared-account -->
 Select the `Shared accounts`{.action} tab in the horizontal menu and click on `Add a shared account`{.action}.
 
 ![emails](images/exchange-shared_accounts01.png){.thumbnail}
@@ -51,16 +57,18 @@ Fill in the requested fields:
 Click `Next`{.action} to proceed to the summary. Complete the operation by clicking on `Confirm`{.action}.
 
 ![emails](images/exchange-shared_accounts02.png){.thumbnail}
+<!-- CP-STEPS-END:add-shared-account -->
 
 ### Managing the delegation of a shared account
 
+<!-- CP-STEPS-START:manage-delegation -->
 Once you have created your shared account, you will need to grant access permissions to one or more accounts of the Exchange service.
 
 A shared account cannot be accessed directly because it does not have a password. It cannot be configured directly in an Outlook client, or accessed via webmail.
 
 You will need to set up a delegation between an Exchange account and the shared account.
 
-In the `Shared accounts`{.action} tab of your Exchange service, click on the `...`{.action} button next to the shared account, then click `Manage  delegations`{.action}. You can then choose which accounts can access the shared account.
+In the `Shared accounts`{.action} tab of your Exchange service, click on the `...`{.action} button next to the shared account, then click `Manage delegations`{.action}. You can then choose which accounts can access the shared account.
 
 ![emails](images/exchange-shared_accounts03.png){.thumbnail}
 
@@ -75,6 +83,7 @@ Choose the permissions for the selected account:
 Then click `Next`{.action} and `Confirm`{.action} to save the changes.
 
 ![emails](images/exchange-shared_accounts04.png){.thumbnail}
+<!-- CP-STEPS-END:manage-delegation -->
 
 In our example, we allow the accounts **guide-exchange@** and **test@** to access **shared_test@**.
 <br>The account **guide-exchange@** will also have the right to send mails "as" **shared_test@**.
@@ -85,7 +94,7 @@ In our example, we allow the accounts **guide-exchange@** and **test@** to acces
 Log in to [webmail](/links/web/email) with an Exchange account that has access to the shared account.
 <br>In our example, we connect with the **guide-exchange@** account.
 
-Once you have logged in, right-click on the main tree for your email address in the left-hand column. Select `Add shared folder...`{.action} from the context menu. 
+Once you have logged in, right-click on the main tree for your email address in the left-hand column. Select `Add shared folder...`{.action} from the context menu.
 
 ![emails](images/exchange-shared_accounts05.png){.thumbnail}
 
@@ -103,7 +112,7 @@ In the Outlook application, you will see your shared account in the left-hand co
 
 ![emails](images/exchange-shared_accounts10.png){.thumbnail}
 
-## Go further
+## Go further <a name="go-further"></a>
 
 [Using the Outlook Web App with an Exchange account](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa)
 

@@ -1,7 +1,7 @@
 ---
-title: Object Storage - Verschlüsseln Ihrer serverseitigen Objekte mit SSE-C oder SSE-OMK (EN)
+title: Object Storage - Encrypt your server-side objects with SSE-C or SSE-OMK
 excerpt: This guide explains how to encrypt your server-side objects with SSE-C or SSE-OMK
-updated: 2025-09-12
+updated: 2026-03-06
 ---
 
 <style>
@@ -44,9 +44,20 @@ Our goal is to help you choose the type of encryption that is best for you. This
 
 - An Object Storage bucket
 - A user with the required access rights on the bucket
-- Have installed and configured the AWS command line interface (aws-cli)
+- Have installed and configured the AWS CLI
 
 See our [Getting started with Object Storage](/pages/storage_and_backup/object_storage/s3_getting_started_with_object_storage) guide.
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Navigation path:** `Public Cloud`{.action} > Select your project
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## Instructions
 
@@ -58,9 +69,9 @@ When you use SSE-C, you must provide encryption key information using the follow
 
 | Name | Description |
 |:-----|:------------|
-| --sse​-customer-algorithm | Use this header to specify the encryption algorithm. The header value must be *AES256.* |
+| --sse-customer-algorithm | Use this header to specify the encryption algorithm. The header value must be *AES256.* |
 | --sse-customer-key | Use this header to provide the 256-bit, base64-encoded encryption key for Object Storage to use to encrypt or decrypt your data. |
-| --sse​-customer-key-md5 | Use this header to provide the base64-encoded 128-bit MD5 digest of the encryption key according to RFC 1321. Object Storage uses this header for a message integrity check to ensure that the encryption key was transmitted without error. |
+| --sse-customer-key-md5 | Use this header to provide the base64-encoded 128-bit MD5 digest of the encryption key according to RFC 1321. Object Storage uses this header for a message integrity check to ensure that the encryption key was transmitted without error. |
 
 ### SSE-C - Server-Side Encryption with Client Encryption Keys
 
@@ -69,20 +80,20 @@ When you use SSE-C, you must provide encryption key information using the follow
 Example of creating an encryption key ( *--sse-customer-key* ) with its MD5 hash:
 
 ```bash
-$ secret=$(openssl rand 32)
-$ encKey=$(echo -n $secret | base64)
-$ md5Key=$(echo -n $secret | openssl dgst -md5 -binary | base64)
+secret=$(openssl rand 32)
+encKey=$(echo -n $secret | base64)
+md5Key=$(echo -n $secret | openssl dgst -md5 -binary | base64)
 ```
 
 #### Uploading an object with SSE-C
 
-To upload an object with SSE-C and aws-cli, proceed as follows:
+To upload an object with SSE-C and the AWS CLI, proceed as follows:
 
 ```bash
-$ aws s3api put-object \
-  --body /etc/magic \
+aws s3api put-object \
+  --body <file_path> \
   --bucket <bucket_name> \
-  --key encrypt_magic \
+  --key <object_key> \
   --sse-customer-algorithm AES256 \
   --sse-customer-key $encKey \
   --sse-customer-key-md5 $md5Key
@@ -90,37 +101,37 @@ $ aws s3api put-object \
 
 #### Downloading an object with SSE-C
 
-To download an object with SSE-C and aws-cli, proceed as follows:
+To download an object with SSE-C and the AWS CLI, proceed as follows:
 
 ```bash
-$ aws s3api get-object \
+aws s3api get-object \
   --bucket <bucket_name> \
-  --key encrypt_magic \
+  --key <object_key> \
   --sse-customer-algorithm AES256 \
   --sse-customer-key $encKey \
   --sse-customer-key-md5 $md5Key \
-  decrypt_magic
+  <destination_file_path>
 ```
 
 Without encryption headers, you will get a `Bad Request` error:
 
 ```bash
-$ aws s3api get-object \
+aws s3api get-object \
   --bucket <bucket_name> \
-  --key encrypt_magic \
-  decrypt_magic
+  --key <object_key> \
+  <destination_file_path>
 
-$ An error occurred (400) when calling the HeadObject operation: Bad Request
+An error occurred (400) when calling the HeadObject operation: Bad Request
 ```
 
 #### Getting object metadata with SSE-C
 
-To get an object metadata with SSE-C and aws-cli, proceed as follows:
+To get object metadata with SSE-C and the AWS CLI, proceed as follows:
 
 ```bash
-$ aws s3api head-object \
+aws s3api head-object \
   --bucket <bucket_name> \
-  --key encrypt_magic \
+  --key <object_key> \
   --sse-customer-algorithm AES256 \
   --sse-customer-key $encKey \
   --sse-customer-key-md5 $md5Key
@@ -144,10 +155,10 @@ Without encryption headers, you will get a `Bad Request` error.
 
 #### Deleting an encrypted object with SSE-C
 
-To delete an encrypted object with SSE-C and aws-cli, proceed as follows:
+To delete an encrypted object with SSE-C and the AWS CLI, proceed as follows:
 
 ```bash
-$ aws s3 rm s3://<bucket_name>/encrypt_magic
+aws s3 rm s3://<bucket_name>/<object_key>
 ```
 
 #### Presigned URLs and SSE-C
@@ -207,14 +218,14 @@ The implementation of SSE-OMK encryption on Object Storage is designed to provid
 To send an object in your Object Storage bucket on OVHcloud with SSE-OMK encryption, use the following Bash command via the AWS CLI. This command includes the server-side encryption option to enhance the security of your stored data.
 
 ```bash
-aws s3api put-object --bucket your-bucket --key your-object --body path/to/your/file --server-side-encryption AES256 --endpoint-url https://s3.io.cloud.ovh.net
+aws s3api put-object --bucket <bucket_name> --key <object_key> --body <file_path> --server-side-encryption AES256 --endpoint-url https://s3.<region>.io.cloud.ovh.net
 ```
 
 When using the AWS CLI command to upload an object with SSE-OMK encryption to Object Storage, make sure to replace the following values based on your specific information:
 
-- `your-bucket`: replace this value with the name of your Object Storage bucket where you want to send the object.
-- `your-object`: replace with the key or name under which you want the object to be stored in the bucket.
-- `path/to/your/file`: Specify the full path to the file you plan to send.
+- `<bucket_name>`: the name of your Object Storage bucket.
+- `<object_key>`: the object key (name) in the bucket.
+- `<file_path>`: the path to the file you want to upload.
 
 The option `--server-side-encryption AES256` in the command indicates that you want to apply SSE-OMK encryption. This ensures that the sent object is securely encrypted directly on the OVHcloud server, providing an additional layer of protection for your data.
 
@@ -223,12 +234,12 @@ The option `--server-side-encryption AES256` in the command indicates that you w
 To download an object that has been encrypted with SSE-OMK from Object Storage, you do not need to specify encryption headers in the command. The object can be downloaded directly without any additional manipulation linked to the encryption, because the decryption is managed automatically on the server side. Here is an example of a download command:
 
 ```bash
-aws s3api get-object --bucket your-bucket --key your-object path/to/destination/file --endpoint-url https://s3.io.cloud.ovh.net
+aws s3api get-object --bucket <bucket_name> --key <object_key> <destination_file_path> --endpoint-url https://s3.<region>.io.cloud.ovh.net
 ```
 
-- Replace `your-bucket` with the name of your bucket.
-- Replace `your-object` with the key of the object you want to download.
-- Replace `path/to/destination/file` with the path where you want to save the downloaded file.
+- Replace `<bucket_name>` with the name of your bucket.
+- Replace `<object_key>` with the key of the object you want to download.
+- Replace `<destination_file_path>` with the path where you want to save the downloaded file.
 
 Be careful not to include specific encryption headers when downloading an encrypted object with SSE-OMK to avoid errors, such as a 400 Bad Request error. 
 
@@ -244,17 +255,15 @@ Be careful not to include specific encryption headers when downloading an encryp
 >> To add SSE-OMK encryption to an existing Object Storage bucket on OVHcloud, you must use the `put-bucket-encryption` command from the AWS CLI. This command configures bucket encryption so that all newly added objects are automatically encrypted with SSE-OMK. Here is the specific command you would use:
 >>
 >> ```bash
->> aws s3api put-bucket-encryption --bucket your-bucket --server-side-encryption-configuration '{"Rules":[{"ApplyServerSideEncryptionByDefault":{"SSEAlgorithm":"AES256"}}]}' --endpoint-url https://s3.io.cloud.ovh.net
+>> aws s3api put-bucket-encryption --bucket <bucket_name> --server-side-encryption-configuration '{"Rules":[{"ApplyServerSideEncryptionByDefault":{"SSEAlgorithm":"AES256"}}]}' --endpoint-url https://s3.<region>.io.cloud.ovh.net
 >> ```
 >>
->> - Replace `your-bucket` with the name of your Object Storage bucket.
+>> - Replace `<bucket_name>` with the name of your Object Storage bucket.
 >>
 >> This will configure the bucket to use SSE-OMK encryption with keys managed by Object Storage (AES256) for all new objects. 
 >>
 > Via the OVHcloud Control Panel
->> In your OVHcloud Control Panel, click on the `Public Cloud`{.action} tab, select your Public Cloud project, then click on` Object Storage`{.action} in the left-hand menu.
->>
->> Next, select the Object Storage bucket you want to manage, and in the information panel, click on `Enable encryption`{.action}.
+>> Click on `Object Storage`{.action} under `Storage & Backup` in the left-hand menu.  Select the Object Storage bucket you want to manage, and in the information panel, click on `Enable encryption`{.action}.
 >>
 >> ![Object Storage enabling encryption](images/object_storage_information_panel_encryption.png){.thumbnail}
 >>
@@ -275,7 +284,7 @@ After configuring bucket encryption using `PutBucketEncryption` or through the O
 > Via the AWS S3api
 >>
 >> ```bash
->> aws s3api get-bucket-encryption --bucket your-bucket --endpoint-url https://s3.io.cloud.ovh.net
+>> aws s3api get-bucket-encryption --bucket <bucket_name> --endpoint-url https://s3.<region>.io.cloud.ovh.net
 >> ```
 >>
 >> - Replace `your-bucket` with the name of your bucket.

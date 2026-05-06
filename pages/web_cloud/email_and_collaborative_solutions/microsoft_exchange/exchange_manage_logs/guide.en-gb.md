@@ -37,19 +37,24 @@ Your Private Exchange or Trusted Exchange offer therefore generates its own logs
 
 - You have subscribed to a [Private Exchange](/links/web/emails-hosted-exchange) or [Trusted Exchange](/links/web/emails-trusted-exchange) offer.
 - You have a Logs Data Platform (LDP) account. This guide will guide you through all the necessary steps: [Quick start for Logs Data Platform](/pages/manage_and_operate/observability/logs_data_platform/getting_started_quick_start).
-- You have access to the [OVHcloud Control Panel](/links/manager).
+
+<!-- CP-NAV-START:web-exchange -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Exchange](/links/control-panel/web-exchange)
+- **Navigation path:** `Web Cloud`{.action} > `Exchange`{.action} > Select your platform
+
+---
+<!-- CP-NAV-END:web-exchange -->
 
 ## Instructions
 
 ### View your Exchange platform logs in real-time
 
-To access real-time logs on your Private or Trusted Exchange offer, follow these instructions:
-
-1. Log in to the [OVHcloud Control Panel](/links/manager).
-1. Go to the `Web Cloud`{.action} section.
-1. In the `MICROSOFT` section, click on `Exchange`{.action}.
-1. Select the relevant platform.
-1. To the right of the series of tabs, click on the `More +`{.action} tab and then on `Logs`{.action}.
+<!-- CP-STEPS-START:view-logs-realtime -->
+To access real-time logs on your Private or Trusted Exchange offer, to the right of the series of tabs, click on the `More +`{.action} tab and then on `Logs`{.action}.
 
 ![exchange - logs](images/exchange-logs01.png){.thumbnail}
 
@@ -65,6 +70,7 @@ Exchange services offer two types of logs:
     - Sending status of emails from your Exchange service
     - Size of transmitted emails
     - etc.
+<!-- CP-STEPS-END:view-logs-realtime -->
 
 ### Integrate your Exchange solution logs on Logs Data Platform
 
@@ -85,10 +91,7 @@ Exchange solutions are compatible with various services such as web hosting, VPS
 
 To subscribe your Exchange solution logs to a data stream on Logs Data Platform, perform the following actions:
 
-1. Log in to your [OVHcloud Control Panel](/links/manager).
-1. Go to the `Web Cloud`{.action} section.
-1. In the `MICROSOFT` section, click on `Exchange`{.action}.
-1. Select the relevant platform.
+<!-- CP-STEPS-START:subscribe-ldp -->
 1. To the right of the series of tabs, click on the `More +`{.action} tab and then on `Logs`{.action}.
 1. On the right side of the box where your real-time logs are displayed, click on the `Subscribe`{.action} button.
 
@@ -122,6 +125,7 @@ Two scenarios are then available to subscribe your Exchange solution:
 >> You will then be redirected to the `Data stream`{.action} tab of your Logs Data Platform solution.
 >>
 >> You can now subscribe your Exchange solution to your new Logs Data Platform stream by following the instructions above.
+<!-- CP-STEPS-END:subscribe-ldp -->
 
 ## Go further <a name="go-further"></a>
 

@@ -50,7 +50,7 @@ De forma a poder ligar-se à base de dados, assegure-se que:
 - Ter a palavra-passe associada ao utilizador
 - Ter o nome da base de dados
 
-Todas estas informações estão disponíveis no seu [Espaço Cliente OVHcloud](/links/manager).
+Todas estas informações estão disponíveis na sua [Área de Cliente OVHcloud](/links/control-panel/web-cloud-databases).
 
 Temos á sua disposição um guia que será útil: [Web Cloud Databases - primeira utilização](/pages/web_cloud/web_cloud_databases/starting_with_clouddb).
 

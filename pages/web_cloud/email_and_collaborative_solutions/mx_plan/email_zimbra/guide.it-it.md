@@ -1,7 +1,7 @@
 ---
 title: "Utilizzare la webmail Zimbra"
 excerpt: "Scopri l'interfaccia della Webmail Zimbra per i tuoi indirizzi email MX Plan di OVHcloud"
-updated: 2025-10-22
+updated: 2026-02-26
 ---
 
 <style>
@@ -45,6 +45,9 @@ OVHcloud fornisce un servizio di webmail chiamato Zimbra per accedere a un accou
     - [Gestione calendari](#calendar-management)
     - [Impegni](#tasks)
 - [Archiviazione](#storage)
+    - [Aggiungi un file](#storage-add)
+    - [Condividi un file/cartella](#storage-share)
+    - [Modifica un documento](#storage-onlyoffice)
 - [Filtri](#filters)
     - [Come impostare i filtri](#filters-howto)
     - [Crea un filtro](#filters-creation)
@@ -472,10 +475,6 @@ Clicca su `Salva`{.action} per completare la creazione dell’operazione.
 >
 > La funzionalità di archiviazione chiamata "Valigetta" è disponibile solo a partire dall'offerta Zimbra Pro.
 
-> [!warning]
->
-> L'offerta Zimbra Pro è attualmente in versione beta, alcune funzionalità sono ancora in corso di miglioramento.
-
 Clicca sull’icona `Valigetta`{.action} nella barra superiore per accedere allo spazio di archiviazione. Potrete depositare i vostri file e condividerli.
 
 1. Nella colonna a sinistra sono riportate le cartelle del tuo spazio di archiviazione.
@@ -489,7 +488,7 @@ Clicca sull’icona `Valigetta`{.action} nella barra superiore per accedere allo
 
 ![Zimbra - storage](images/zimbra-storage-01.png){.thumbnail .w-600}
 
-#### Aggiungi un file
+#### Aggiungi un file <a name="storage-add"></a>
 
 Per aggiungere un file allo spazio di archiviazione, segui questi step:
 
@@ -499,7 +498,7 @@ Per aggiungere un file allo spazio di archiviazione, segui questi step:
 
 ![Zimbra - storage](images/zimbra-storage-add-01.png){.thumbnail .w-600}
 
-#### Condividi un file/cartella
+#### Condividi un file/cartella <a name="storage-share"></a>
 
 La condivisione vi permette di dare accesso ad una cartella o ad un file sul vostro archivio ad una persona terza, fuori dal vostro account Zimbra.
 
@@ -531,6 +530,30 @@ La condivisione vi permette di dare accesso ad una cartella o ad un file sul vos
 L'ospite riceve una e-mail che lo invita a creare un account Zimbra composto da un identificativo e una password. Questo account permette di accedere a un’interfaccia Zimbra limitata a ciò che è stato condiviso.
 
 ![Zimbra - storage](images/zimbra-storage-share-invite-01.png){.thumbnail .w-600}
+
+#### Modifica un documento <a name="storage-onlyoffice"></a>
+
+> [!success]
+>
+> La funzionalità di modifica dei documenti dallo spazio "Valigetta" è disponibile solo a partire dall'offerta Zimbra Pro.
+
+Dalla Valigetta del tuo account Zimbra, puoi modificare file di testo, fogli di calcolo o presentazioni con la suite ONLYOFFICE integrata. Per modificare un documento:
+
+- Clicca sull'icona `Valigetta`{.action} nella barra superiore per accedere allo spazio di archiviazione.
+- Seleziona il file che desideri modificare.
+- Nella barra superiore, clicca su `Modifica`{.action}.
+
+![Zimbra - storage](images/zimbra-storage-onlyoffice-01.png){.thumbnail .w-600}
+
+- L'editor ONLYOFFICE si apre in una nuova scheda.
+
+![Zimbra - storage](images/zimbra-storage-onlyoffice-02.png){.thumbnail .w-600}
+
+Le modifiche apportate nell'editor vengono salvate automaticamente durante la modifica o alla chiusura della scheda.
+
+> [!success]
+>
+> Per maggiori informazioni sulla modifica di documenti in ONLYOFFICE, [consulta la documentazione ufficiale](https://helpcenter.onlyoffice.com/docs).
 
 ### Filtri <a name="filters"></a>
 

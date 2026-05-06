@@ -12,9 +12,20 @@ You can configure Exchange accounts on email clients, if they are compatible. By
 
 ## Requirements
 
-- You must have an [Exchange](/links/web/emails) account.
+- You must have an [Exchange](/links/web/emails-exchange) account.
 - You must have Microsoft Outlook installed on your device.
 - You need to have the required credentials for the email address you would like to configure.
+
+<!-- CP-NAV-START:web-exchange -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Exchange](/links/control-panel/web-exchange)
+- **Navigation path:** `Web Cloud`{.action} > `Exchange`{.action} > Select your platform
+
+---
+<!-- CP-NAV-END:web-exchange -->
 
 ## Instructions
 
@@ -32,15 +43,17 @@ In the window that appears, click on `Advanced settings`{.action}, then select `
 
 Enter the following information:
 
+<!-- CP-STEPS-START:exchange-server-name-lookup -->
 |Information|Description|
 |---|---|
 |Email address|Enter your full email address.|
 |Password|Enter the password for your email address.|
 |User name|Enter your full email address.|
 |Domain|Leave this field blank.|
-|Server|Enter the details of the server your Exchange service is hosted on. You will find these in your [OVHcloud Control Panel](/links/manager) by going to the `General information`{.action} tab for the Exchange service concerned, then the `Connection`{.action} section.|
+|Server|Enter the details of the server your Exchange service is hosted on. Click [this link](/links/control-panel/web-exchange) to access the `Exchange`{.action} section. The server name is displayed in the **Connection** section of the `General information`{.action} tab.|
 |This server requires a secure connection (SSL)|You must leave this box ticked.|
 |Account name|Enter a name that will distinguish this account from any other accounts added in your Mail application.|
+<!-- CP-STEPS-END:exchange-server-name-lookup -->
 
 Once you have entered this information, click `Sign in`{.action}. If the information is correct, Outlook will successfully connect to the account.
 

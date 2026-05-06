@@ -1,7 +1,7 @@
 ---
-title: "Comment configurer l'agrégation de liens avec LACP dans Debian 12 ou Ubuntu 24.04"
-excerpt: "Activez l'agrégation de liens dans votre serveur Debian 12 ou Ubuntu 24.04 (Netplan) pour augmenter la disponibilité de votre serveur et augmenter l'efficacité de vos connexions réseau"
-updated: 2026-01-09
+title: "Configurer l'agrégation LACP sur un serveur dédié (Debian/Ubuntu)"
+excerpt: "Configurez l'agrégation de liens LACP sur un serveur dédié Debian 12 ou Ubuntu 24.04 avec Netplan pour la bande passante et la redondance"
+updated: 2026-04-20
 ---
 
 <style>
@@ -20,7 +20,7 @@ details[open]>summary::before {
 
 ## Objectif
 
-La technologie LACP (Link Aggregation Control Protocol) est conçue pour augmenter la disponibilité de votre serveur et améliorer l’efficacité de vos connexions réseau. Vous pouvez agréger vos cartes réseau et rendre vos liens réseau redondants. Cela signifie que si un lien tombe en panne, le trafic est automatiquement redirigé vers un autre lien disponible. La bande passante disponible est également doublée grâce à l’agrégation.
+La technologie LACP (Link Aggregation Control Protocol) est conçue pour augmenter la disponibilité de votre serveur et améliorer l'efficacité de vos connexions réseau. Vous pouvez agréger vos cartes réseau et rendre vos liens réseau redondants. Cela signifie que si un lien tombe en panne, le trafic est automatiquement redirigé vers un autre lien disponible. La bande passante disponible est également doublée grâce à l'agrégation.
 
 **Ce guide explique comment lier vos interfaces pour les utiliser pour l'agrégation de liens dans Debian 12 (*ou plus récent*) / Ubuntu 24.04 (configuration Netplan).**
 
@@ -35,26 +35,31 @@ La technologie LACP (Link Aggregation Control Protocol) est conçue pour augment
 
 ## Prérequis
 
-- Ëtre connecté à l’[espace client OVHcloud](/links/manager)
+<!-- CP-NAV-START:baremetal-dedicated-servers -->
+---
+
+### Accès à l’espace client OVHcloud
+
+- **Lien direct :** [Serveurs dédiés](/links/control-panel/baremetal-dedicated-servers)
+- **Pour accéder à vos services :** `Bare Metal Cloud`{.action} > `Serveurs dédiés`{.action} > Sélectionnez votre serveur
+
+---
+<!-- CP-NAV-END:baremetal-dedicated-servers -->
 
 ## En pratique
 
 > [!primary]
-> Les valeurs (adresses MAC, adresses IP, etc) indiquées dans les configurations et exemples ci-dessous le sont à titre d'exemples. Vous devez bien entendu remplacer ces valeurs par les vôtres.
+> Les valeurs (adresses MAC, adresses IP, etc.) indiquées dans les configurations et exemples ci-dessous le sont à titre d'exemples. Vous devez bien entendu remplacer ces valeurs par les vôtres.
 >
 
 ### Récupération des adresses MAC
 
-Connectez-vous à l'[espace client OVHcloud](/links/manager), rendez-vous dans la section `Bare Metal Cloud`{.action} et sélectionnez votre serveur parmi les **Serveurs dédiés**.
-
 Cliquez sur l'onglet `Interfaces réseau`{.action} et prenez note des adresses MAC de chaque interface (publique/privée) qui s'affichent en bas du menu.
 
-![OVHcloud Control Panel](images/ControlPanel.png){.thumbnail}
+![Espace client OVHcloud](images/ControlPanel.png){.thumbnail}
 
 > [!primary]
-> Veuillez noter que l'adresse MAC de l'interface **publique principale** est celle qui reçoit les offres DHCP à la fois dans le système d'exploitation du serveur et en mode rescue. Cette interface gère la connectivité publique dans la configuration par défaut.
->
-> Quant à l'adresse MAC de l'interface **privée principale**, il s'agit de celle dont la valeur est la plus faible. Dans l'image exemple ci-dessus, il s'agit de l'adresse `a1:b2:c3:d4:e5:d6`.
+> Veuillez noter que l'adresse MAC de l'interface **publique principale** est celle qui reçoit les offres DHCP, à la fois dans le système d'exploitation du serveur et en mode rescue. Cette interface gère la connectivité publique dans la configuration par défaut.
 >
 
 Maintenant que vous savez quelles adresses MAC sont associées à chaque type (public/privé) d'interface, vous devez récupérer les noms des interfaces.
@@ -104,123 +109,261 @@ Voici un exemple de sortie :
 
 Une fois que vous avez déterminé les noms de vos interfaces, vous pouvez configurer l'agrégation d'interfaces dans le système d'exploitation.
 
-### Configuration IP fixe
+### Configuration de l'agrégation d'interfaces
 
-Remplacez le contenu de `/etc/netplan/50-cloud-init.yaml` par ce qui suit :
+Sélectionnez l'onglet ci-dessous correspondant à la configuration de votre serveur :
 
-```yaml
-network:
-    version: 2
-    ethernets:
-        ens22f0np0:
-            match:
-                macaddress: a1:b2:c3:d4:e5:c6
-        ens22f1np1:
-            match:
-                macaddress: a1:b2:c3:d4:e5:c7
-        ens33f0np0:
-            match:
-                macaddress: a1:b2:c3:d4:e5:d6
-        ens33f1np1:
-            match:
-                macaddress: a1:b2:c3:d4:e5:d7
-    bonds:
-        bond0:
-            # Adresse MAC de l'interface publique principale du serveur
-            macaddress: a1:b2:c3:d4:e5:c6
-            accept-ra: false
-            addresses:
-                - 203.0.113.1/32
-                - 2001:db8:1:1b00:203:0:112:0/56
-            routes:
-                - on-link: true
-                  to: default
-                  via: 100.64.0.1
-                - on-link: true
-                  to: default
-                  via: fe80::1
-            nameservers:
-                addresses:
-                - 213.186.33.99
-                - 2001:41d0:3:163::1
-            interfaces:
-                - ens22f0np0
-                - ens22f1np1
-            parameters:
-                mode: 802.3ad
-                lacp-rate: fast
-                transmit-hash-policy: layer3+4
-        # Facultatif: configuration d'un agrégat privé
-        bond1:
-            # Adresse MAC de la première interface privée
-            macaddress: a1:b2:c3:d4:e5:d6
-            accept-ra: false
-            interfaces:
-                - ens33f0np0
-                - ens33f1np1
-            parameters:
-                mode: 802.3ad
-                lacp-rate: fast
-                transmit-hash-policy: layer3+4
-```
+- **Deux interfaces** : serveurs Advance avec deux cartes réseau physiques.
+- **Quatre interfaces - Double LAG** : serveurs Scale et High Grade avec OLA en mode **Active - Double LAG** (agrégats public + privé). Cela nécessite l'[activation d'OLA](/pages/bare_metal_cloud/dedicated_servers/ola-enable-manager) dans l'espace client OVHcloud.
+- **Quatre interfaces - Fully Private** : serveurs Scale et High Grade avec OLA en mode **Active - Fully Private** (agrégat privé unique pour le vRack). Cela nécessite l'[activation d'OLA](/pages/bare_metal_cloud/dedicated_servers/ola-enable-manager) dans l'espace client OVHcloud.
 
-/// details | Configuration DHCP
-
-Remplacez le contenu de `/etc/netplan/50-cloud-init.yaml` par ce qui suit :
-
-```yaml
-network:
-    version: 2
-    ethernets:
-        ens22f0np0:
-            match:
-                macaddress: a1:b2:c3:d4:e5:c6
-        ens22f1np1:
-            match:
-                macaddress: a1:b2:c3:d4:e5:c7
-        ens33f0np0:
-            match:
-                macaddress: a1:b2:c3:d4:e5:d6
-        ens33f1np1:
-            match:
-                macaddress: a1:b2:c3:d4:e5:d7
-    bonds:
-        bond0:
-            # Adresse MAC de l'interface publique principale du serveur
-            macaddress: a1:b2:c3:d4:e5:c6
-            accept-ra: false
-            dhcp4: true
-            addresses:
-                - 2001:db8:1:1b00:203:0:112:0/56
-            routes:
-                - on-link: true
-                  to: default
-                  via: fe80::1
-            nameservers:
-                addresses:
-                - 2001:41d0:3:163::1
-            interfaces:
-                - ens22f0np0
-                - ens22f1np1
-            parameters:
-                mode: 802.3ad
-                lacp-rate: fast
-                transmit-hash-policy: layer3+4
-        # Facultatif: configuration d'un agrégat privé
-        bond1:
-            # Adresse MAC de la première interface privée
-            macaddress: a1:b2:c3:d4:e5:d6
-            accept-ra: false
-            interfaces:
-                - ens33f0np0
-                - ens33f1np1
-            parameters:
-                mode: 802.3ad
-                lacp-rate: fast
-                transmit-hash-policy: layer3+4
-```
-
-///
+> [!tabs]
+> Deux interfaces
+>> Remplacez le contenu de `/etc/netplan/50-cloud-init.yaml` par ce qui suit :
+>>
+>> **IP fixe**
+>>
+>> ```yaml
+>> network:
+>>     version: 2
+>>     ethernets:
+>>         ens22f0np0:
+>>             match:
+>>                 macaddress: a1:b2:c3:d4:e5:c6
+>>         ens22f1np1:
+>>             match:
+>>                 macaddress: a1:b2:c3:d4:e5:c7
+>>     bonds:
+>>         bond0:
+>>             # Adresse MAC de l'interface publique principale du serveur
+>>             macaddress: a1:b2:c3:d4:e5:c6
+>>             accept-ra: false
+>>             addresses:
+>>                 - 203.0.113.1/32
+>>                 - 2001:db8:1:1b00:203:0:112:0/56
+>>             routes:
+>>                 - on-link: true
+>>                   to: default
+>>                   via: 100.64.0.1
+>>                 - on-link: true
+>>                   to: default
+>>                   via: fe80::1
+>>             nameservers:
+>>                 addresses:
+>>                 - 213.186.33.99
+>>                 - 2001:41d0:3:163::1
+>>             interfaces:
+>>                 - ens22f0np0
+>>                 - ens22f1np1
+>>             parameters:
+>>                 mode: 802.3ad
+>>                 lacp-rate: fast
+>>                 transmit-hash-policy: layer3+4
+>> ```
+>>
+>> /// details | DHCP
+>>
+>> ```yaml
+>> network:
+>>     version: 2
+>>     ethernets:
+>>         ens22f0np0:
+>>             match:
+>>                 macaddress: a1:b2:c3:d4:e5:c6
+>>         ens22f1np1:
+>>             match:
+>>                 macaddress: a1:b2:c3:d4:e5:c7
+>>     bonds:
+>>         bond0:
+>>             # Adresse MAC de l'interface publique principale du serveur
+>>             macaddress: a1:b2:c3:d4:e5:c6
+>>             accept-ra: false
+>>             dhcp4: true
+>>             addresses:
+>>                 - 2001:db8:1:1b00:203:0:112:0/56
+>>             routes:
+>>                 - on-link: true
+>>                   to: default
+>>                   via: fe80::1
+>>             nameservers:
+>>                 addresses:
+>>                 - 2001:41d0:3:163::1
+>>             interfaces:
+>>                 - ens22f0np0
+>>                 - ens22f1np1
+>>             parameters:
+>>                 mode: 802.3ad
+>>                 lacp-rate: fast
+>>                 transmit-hash-policy: layer3+4
+>> ```
+>>
+>> ///
+>>
+> Quatre interfaces - Double LAG
+>> Cette configuration lie les interfaces publiques dans `bond0` (avec l'IP publique) et les interfaces privées dans `bond1` (pour le vRack).
+>>
+>> Remplacez le contenu de `/etc/netplan/50-cloud-init.yaml` par ce qui suit :
+>>
+>> **IP fixe**
+>>
+>> ```yaml
+>> network:
+>>     version: 2
+>>     ethernets:
+>>         ens22f0np0:
+>>             match:
+>>                 macaddress: a1:b2:c3:d4:e5:c6
+>>         ens22f1np1:
+>>             match:
+>>                 macaddress: a1:b2:c3:d4:e5:c7
+>>         ens33f0np0:
+>>             match:
+>>                 macaddress: a1:b2:c3:d4:e5:d6
+>>         ens33f1np1:
+>>             match:
+>>                 macaddress: a1:b2:c3:d4:e5:d7
+>>     bonds:
+>>         bond0:
+>>             # Adresse MAC de l'interface publique principale du serveur
+>>             macaddress: a1:b2:c3:d4:e5:c6
+>>             accept-ra: false
+>>             addresses:
+>>                 - 203.0.113.1/32
+>>                 - 2001:db8:1:1b00:203:0:112:0/56
+>>             routes:
+>>                 - on-link: true
+>>                   to: default
+>>                   via: 100.64.0.1
+>>                 - on-link: true
+>>                   to: default
+>>                   via: fe80::1
+>>             nameservers:
+>>                 addresses:
+>>                 - 213.186.33.99
+>>                 - 2001:41d0:3:163::1
+>>             interfaces:
+>>                 - ens22f0np0
+>>                 - ens22f1np1
+>>             parameters:
+>>                 mode: 802.3ad
+>>                 lacp-rate: fast
+>>                 transmit-hash-policy: layer3+4
+>>         # Facultatif : configuration d'un agrégat privé
+>>         bond1:
+>>             # Adresse MAC de la première interface privée
+>>             macaddress: a1:b2:c3:d4:e5:d6
+>>             accept-ra: false
+>>             interfaces:
+>>                 - ens33f0np0
+>>                 - ens33f1np1
+>>             parameters:
+>>                 mode: 802.3ad
+>>                 lacp-rate: fast
+>>                 transmit-hash-policy: layer3+4
+>> ```
+>>
+>> /// details | DHCP
+>>
+>> ```yaml
+>> network:
+>>     version: 2
+>>     ethernets:
+>>         ens22f0np0:
+>>             match:
+>>                 macaddress: a1:b2:c3:d4:e5:c6
+>>         ens22f1np1:
+>>             match:
+>>                 macaddress: a1:b2:c3:d4:e5:c7
+>>         ens33f0np0:
+>>             match:
+>>                 macaddress: a1:b2:c3:d4:e5:d6
+>>         ens33f1np1:
+>>             match:
+>>                 macaddress: a1:b2:c3:d4:e5:d7
+>>     bonds:
+>>         bond0:
+>>             # Adresse MAC de l'interface publique principale du serveur
+>>             macaddress: a1:b2:c3:d4:e5:c6
+>>             accept-ra: false
+>>             dhcp4: true
+>>             addresses:
+>>                 - 2001:db8:1:1b00:203:0:112:0/56
+>>             routes:
+>>                 - on-link: true
+>>                   to: default
+>>                   via: fe80::1
+>>             nameservers:
+>>                 addresses:
+>>                 - 2001:41d0:3:163::1
+>>             interfaces:
+>>                 - ens22f0np0
+>>                 - ens22f1np1
+>>             parameters:
+>>                 mode: 802.3ad
+>>                 lacp-rate: fast
+>>                 transmit-hash-policy: layer3+4
+>>         # Facultatif : configuration d'un agrégat privé
+>>         bond1:
+>>             # Adresse MAC de la première interface privée
+>>             macaddress: a1:b2:c3:d4:e5:d6
+>>             accept-ra: false
+>>             interfaces:
+>>                 - ens33f0np0
+>>                 - ens33f1np1
+>>             parameters:
+>>                 mode: 802.3ad
+>>                 lacp-rate: fast
+>>                 transmit-hash-policy: layer3+4
+>> ```
+>>
+>> ///
+>>
+> Quatre interfaces - Fully Private
+>> Cette configuration agrège toutes les interfaces physiques dans un seul agrégat pour une utilisation vRack uniquement. Il n'y a pas de connectivité IP publique.
+>>
+>> > [!warning]
+>> >
+>> > Suite à la mise en œuvre d'OLA en mode Fully Private, l'IP publique n'est plus accessible. Assurez-vous de disposer d'un moyen d'accès alternatif (par exemple via un autre serveur dans le vRack, ou via KVM/IPMI) avant d'appliquer cette configuration.
+>> >
+>>
+>> Remplacez le contenu de `/etc/netplan/50-cloud-init.yaml` par ce qui suit :
+>>
+>> ```yaml
+>> network:
+>>     version: 2
+>>     ethernets:
+>>         ens22f0np0:
+>>             match:
+>>                 macaddress: a1:b2:c3:d4:e5:c6
+>>         ens22f1np1:
+>>             match:
+>>                 macaddress: a1:b2:c3:d4:e5:c7
+>>         ens33f0np0:
+>>             match:
+>>                 macaddress: a1:b2:c3:d4:e5:d6
+>>         ens33f1np1:
+>>             match:
+>>                 macaddress: a1:b2:c3:d4:e5:d7
+>>     bonds:
+>>         bond0:
+>>             # Adresse MAC de l'interface privée principale du serveur
+>>             macaddress: a1:b2:c3:d4:e5:d6
+>>             accept-ra: false
+>>             interfaces:
+>>                 - ens22f0np0
+>>                 - ens22f1np1
+>>                 - ens33f0np0
+>>                 - ens33f1np1
+>>             parameters:
+>>                 mode: 802.3ad
+>>                 lacp-rate: fast
+>>                 transmit-hash-policy: layer3+4
+>> ```
+>>
+>> > [!primary]
+>> >
+>> > En mode Fully Private, l'agrégat utilise l'adresse MAC de l'interface **privée principale**. Pour attribuer une adresse IP à cet agrégat pour la communication vRack, ajoutez un bloc `addresses` sous `bond0` avec votre IP privée vRack.
+>> >
 
 ### Application de la configuration
 
@@ -237,4 +380,6 @@ Un intervalle de quelques secondes peut être observé avant que les agrégats s
 
 ## Aller plus loin
 
-Rejoignez notre [communauté d'utilisateurs](/links/community).
+[Configuration de l'agrégation de liens OVHcloud dans l'espace client OVHcloud](/pages/bare_metal_cloud/dedicated_servers/ola-enable-manager)
+
+Échangez avec notre [communauté d'utilisateurs](/links/community).

@@ -1,6 +1,6 @@
 ---
 title: Wysyłanie SMS-ów do Stanów Zjednoczonych
-excerpt: Odkryj w jaki sposób wysyłać wiadomości SMS do Stanów Zjednoczonych
+excerpt: Dowiedz się, jak przestrzegać szczególnych zasad wysyłania wiadomości SMS do Stanów Zjednoczonych i stosować je z poziomu Panelu klienta OVHcloud
 updated: 2022-08-05
 ---
 
@@ -16,13 +16,23 @@ Wysyłanie SMS-ów do Stanów Zjednoczonych podlega szczególnym zasadom. Celem 
 
 - Posiadanie konta SMS OVHcloud z kredytami SMS.
 - Zalogowanie do [API OVHcloud](/links/api) (tylko dla metody wysyłki przez API)
-- Zalogowanie do[Panelu klienta OVHcloud](/links/manager), część `Telefonia`{.action}, następnie `SMS`{.action}.
+
+<!-- CP-NAV-START:telecom-sms -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [SMS](/links/control-panel/telecom-sms)
+- **Ścieżka nawigacji:** `Telecom`{.action} > `SMS`{.action} > Wybierz konto SMS
+
+---
+<!-- CP-NAV-END:telecom-sms -->
 
 ![Panel klienta Telecom SMS](/pages/assets/screens/control_panel/product-selection/telecom/tpl-telecom-03-en-sms.png){.thumbnail}
 
 ## W praktyce
 
-### Etap 1: zapoznanie się z ograniczeniami
+### Etap 1: Zapoznanie się z ograniczeniami
 
 W porozumieniu z organem regulacyjnym działającym w Stanach Zjednoczonych (Neustar), wysyłanie SMS-ów do tego kraju wymaga uprzedniego zatwierdzenia modelu wiadomości przez nasz zespół.
 Autoryzowane są wyłącznie wiadomości z ostrzeżeniami oraz wiadomości związane z weryfikacją dwuetapową, OVHcloud nie zaakceptuje żadnych modeli SMS-ów reklamowych. Po zatwierdzeniu Twojego modelu, wysyłka wiadomości odbywa się w taki sam sposób, jak w przypadku innych krajów.
@@ -31,14 +41,14 @@ Możesz poprosić o zatwierdzenie kilku modeli wiadomości.
 
 > [!primary]
 >
-Zatwierdzenie modeli wiadomości jest wykonywane nieodpłatne przez zespoły OVHcloud w ciągu jednego do dwóch dni roboczych.
+> Zatwierdzenie modeli wiadomości jest wykonywane nieodpłatnie przez zespoły OVHcloud w ciągu jednego do dwóch dni roboczych.
 >
 
 ### Etap 2: Dodawanie modelu
 
 #### 2.1 Za pośrednictwem Panelu klienta
 
-Zaloguj się do [Panelu klienta OVHcloud](/links/manager) i wybierz `Telefonia`{.action}. Następnie kliknij `SMS`{.action} i wybierz Twoje konto SMS. Kliknij kartę `Wiadomość SMS i kampania`{.action}, a następnie `Zarządzanie SMS-ami`{.action}.
+Kliknij kartę `Wiadomość SMS i kampania`{.action}, a następnie `Zarządzanie SMS-ami`{.action}.
 
 Następnie kliknij polecenie `Zarządzanie modelami`{.action}.
 
@@ -59,6 +69,7 @@ Pojawi się okienko pop-up zawierające pola do wypełnienia.
 | Opis | Opis modelu                                                                                            |
 | Model      | Napisz model zawierający zmienną między #                                                                  |
 
+
 #### 2.2 Za pośrednictwem API
 
 > [!success]
@@ -73,7 +84,7 @@ Zaloguj się na [api.ovh.com/](/links/api) i użyj następującego interfejsu AP
 
 ![Wiadomości SMS do Stanów Zjednoczonych](images/smstousa4.png){.thumbnail}
 
-Wypełnij wymagane pola i kliknij `Execute`{.action}
+Wypełnij wymagane pola i kliknij `Execute`{.action}.
 
 #### Przykłady modeli
 
@@ -91,7 +102,7 @@ Your security code is #CODE#, have a good day
 Our monitoring system detected your server #SERVER# doesn't respond to ping requests
 ```
 
-### Etap 3: analiza rezultatu
+### Etap 3: Analiza rezultatu
 
 Po utworzeniu i zatwierdzeniu Twojego modelu wiadomości, operacja wysyłania SMS-a generuje automatyczne porównanie jego treści z Twoimi modelami. Jeśli wynik tego porównania będzie pozytywny, SMS zostaje wysłany w taki sam sposób, jak ma to miejsce w przypadku wiadomości wysyłanej do innego kraju.
 

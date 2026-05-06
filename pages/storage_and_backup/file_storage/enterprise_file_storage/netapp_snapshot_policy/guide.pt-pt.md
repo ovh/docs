@@ -17,7 +17,17 @@ Neste guia, vamos dar-lhe uma visão geral da gestão das suas políticas de sna
 ## Requisitos
 
 - Um serviço Enterprise File Storage da OVHcloud com um volume disponível
-- Ter acesso à [Área de Cliente OVHcloud](/links/manager).
+
+<!-- CP-NAV-START:storage-enterprise-file-storage -->
+---
+
+### Acesso à Área de Cliente OVHcloud
+
+- **Ligação direta:** [Enterprise File Storage](/links/control-panel/storage-enterprise-file-storage)
+- **Caminho de navegação:** `Bare Metal Cloud`{.action} > `Enterprise File Storage`{.action}
+
+---
+<!-- CP-NAV-END:storage-enterprise-file-storage -->
 
 ## Princípios básicos
 
@@ -27,7 +37,7 @@ Uma política de snapshot permite automatizar a criação de snapshots graças a
 
 ## Instruções
 
-Aceda à [Área de Cliente OVHcloud](/links/manager) e selecione o separador `Bare Metal Cloud`{.action} na barra de navegação superior. Abra o `Armazenamento e backup`{.action} e depois o `Enterprise File Storage`{.action} no menu à esquerda e selecione o seu serviço na lista.
+Selecione o seu serviço na lista.
 
 ### Criar a política de snapshot
 

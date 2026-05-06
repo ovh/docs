@@ -1,5 +1,5 @@
 ---
-title: PostgreSQL - Detect and terminate long-running queries
+title: Detect and terminate long-running queries of Public Cloud Databases for PostgreSQL
 excerpt: This guide explains how to detect and terminate specific sessions via the OVHcloud Control Panel and Command Line Interface (CLI)
 updated: 2023-02-15
 ---
@@ -14,13 +14,25 @@ Queries on a PostgreSQL instance can run indefinitely, and OVHcloud will not sto
 
 - A [Public Cloud project](/links/public-cloud/public-cloud) in your OVHcloud account
 - A PostgreSQL database running on your OVHcloud Public Cloud Databases ([this guide](/pages/public_cloud/public_cloud_databases/databases_01_order_control_panel) can help you to meet this requirement)
-- Access to the [OVHcloud Control Panel](/links/manager)
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Navigation path:** `Public Cloud`{.action} > Select your project
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## Instructions
 
 ### Terminate long-running queries with OVHcloud Control Panel
 
-From your OVHcloud Control Panel, browse your Public Cloud Databases services, open the desired one and click the `Queries in progress`{.action} tab.
+Click on `Databases`{.action} in the left-hand navigation bar and select your PostgreSQL instance.
+
+Click the `Queries in progress`{.action} tab.
 This table is regrouping ongoing queries with some filtering options, such as showing idle or active connections.
 
 The query table shows the exact query, among with detailed information: PID (Process ID), Duration, Database, Client address and Application name.

@@ -69,21 +69,20 @@ Once your purchase order has been validated, and if you have not ticked the opti
 > Without modifying your DNS zone within 3 days, your order will be cancelled.
 >
 
-> [!faq]
+> [!primary]
 >
-> Case 1: Your DNS zone is managed by OVHcloud shared DNS servers.
->>
->> - If your NIC handle is an *administrator* or *technical* contact for this DNS zone, you will need to modify it in your [OVHcloud Control Panel](/links/manager).
->> - If you are not an *administrator* or *technical* contact for this DNS zone, contact the person in charge of this DNS zone to modify it.
->>
->> Refer to the instructions in the guide “[Creating an OVHcloud DNS zone for a domain name](/pages/web_cloud/domains/dns_zone_create)” if necessary.
->>
+> **Case 1: Your DNS zone is managed by OVHcloud shared DNS servers.**
 >
-> Case 2: Your DNS zone is not managed by OVHcloud shared DNS servers.
->>
->> - In this case, modify the IP in your DNS zone by using your service provider’s interface or configure it on your appropriate DNS server.
->>
+> - If your NIC handle is an *administrator* or *technical* contact for this DNS zone, you will need to modify it in your [OVHcloud Control Panel](/links/manager).
+> - If you are not an *administrator* or *technical* contact for this DNS zone, contact the person in charge of this DNS zone to modify it.
 >
+> Refer to the instructions in the guide “[Creating an OVHcloud DNS zone for a domain name](/pages/web_cloud/domains/dns_zone_create)” if necessary.
+
+> [!primary]
+>
+> **Case 2: Your DNS zone is not managed by OVHcloud shared DNS servers.**
+>
+> - In this case, modify the IP in your DNS zone by using your service provider’s interface or configure it on your appropriate DNS server.
 
 Once your modification has been processed by our infrastructure, you will receive a confirmation email.
 

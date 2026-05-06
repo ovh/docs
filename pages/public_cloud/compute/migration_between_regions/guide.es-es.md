@@ -11,7 +11,17 @@ Este guía explica cómo migrar una instancia de Public Cloud de una zona de dis
 ## Requisitos
 
 - Tener una [instancia Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps).
-- Estar conectado a su [área de cliente de OVHcloud](/links/manager).
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Ruta de navegación:** `Public Cloud`{.action} > Seleccione su proyecto
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## Procedimiento
 

@@ -23,16 +23,24 @@ Ces adresses Additional IP ne pourront être migrées que vers les instances d'u
 
 ## Prérequis
 
-- Être connecté à l’[espace client OVHcloud](/links/manager).
-- Disposer d'au moins une instance. Consultez à cet effet [le guide pour créer une instance depuis l'espace client](/pages/public_cloud/compute/public-cloud-first-steps).
+- Disposer d’au moins une instance. Consultez à cet effet [le guide pour créer une instance depuis l’espace client](/pages/public_cloud/compute/public-cloud-first-steps).
 
 > [!warning]
-> Cette fonctionnalité n'est actuellement pas disponible pour les instances Metal.
+> Cette fonctionnalité n’est actuellement pas disponible pour les instances Metal.
 >
 
-## En pratique
+<!-- CP-NAV-START:publiccloud-projects -->
+---
 
-Connectez-vous à l’[espace client OVHcloud](/links/manager), rendez-vous dans la section `Public Cloud`{.action} et sélectionnez le projet Public Cloud concerné.
+### Accès à l’espace client OVHcloud
+
+- **Lien direct :** [Projets Public Cloud](/links/control-panel/publiccloud-projects)
+- **Pour accéder à vos services :** `Public Cloud`{.action} > Sélectionnez votre projet
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
+
+## En pratique
 
 Dans le menu de gauche, ouvrez `IP Publiques`{.action} dans **Network**.
 

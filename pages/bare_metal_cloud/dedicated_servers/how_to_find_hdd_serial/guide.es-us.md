@@ -1,6 +1,6 @@
 ---
-title: 'Obtener el número de serie de un disco duro'
-excerpt: 'Cómo conocer el número de serie de un disco duro para sustituirlo'
+title: "Encontrar el número de serie de un disco en un servidor dedicado"
+excerpt: "Recupere el número de serie de un disco duro en su servidor dedicado para identificarlo durante una solicitud de sustitución"
 updated: 2018-08-21
 ---
 
@@ -171,4 +171,4 @@ No olvide sustituir en el comando anterior **sgX** por **/dev/sg0**, **/dev/sg1*
 
 ## Más información
 
-Interactúe con nuestra comunidad de usuarios en [https://community.ovh.com](https://community.ovh.com/en/).
+Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

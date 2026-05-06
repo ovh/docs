@@ -1,7 +1,7 @@
 ---
 title: FAQ e-mails OVHcloud
 excerpt: 'Retrouvez les questions les plus fréquemment posées sur les e-mails'
-updated: 2025-04-07
+updated: 2026-03-24
 ---
 
 <style>
@@ -20,6 +20,26 @@ details[open]>summary::before {
   max-width:500px !important;
 }
 </style>
+
+<!-- CP-NAV-START:web-mx-plan -->
+<!-- CP-NAV-START:web-exchange -->
+---
+
+### Accès à l'espace client OVHcloud
+
+**MX Plan :**
+
+- **Lien direct :** [MX Plan](/links/control-panel/web-mx-plan)
+- **Pour accéder à vos services :** `Web Cloud`{.action} > `MX Plan`{.action} > Sélectionnez votre service MX Plan
+
+**Exchange :**
+
+- **Lien direct :** [Exchange](/links/control-panel/web-exchange)
+- **Pour accéder à vos services :** `Web Cloud`{.action} > `Exchange`{.action} > Sélectionnez votre plateforme
+
+---
+<!-- CP-NAV-END:web-exchange -->
+<!-- CP-NAV-END:web-mx-plan -->
 
 ## FAQ e-mail
 
@@ -97,7 +117,6 @@ Ci-dessous vous retrouverez les principales raisons d'une absence de réception 
 
 ///
 
-
 /// details | Pourquoi configurer les enregistrements SPF et DKIM ?
 
 **SPF (Sender Policy Framework)**
@@ -113,7 +132,6 @@ Il permet de signer les e-mails pour éviter l'usurpation d'identité. Cette sig
 Pour savoir comment configurer un enregistrement DKIM sur votre service e-mail, consultez notre guide [Améliorer la sécurité des e-mails via un enregistrement DKIM](/pages/web_cloud/domains/dns_zone_dkim).
 
 ///
-
 
 /// details | Comment configurer mon adresse e-mail et l'utiliser avec le webmail ?
 
@@ -168,8 +186,6 @@ Grâce au [webmail](/links/web/email), vous pouvez accéder à tout moment à vo
 
 L'ensemble de vos adresses e-mail se gère depuis votre [espace client OVHcloud](/links/manager). Pour cela, une fois connecté, accédez au produit concerné. Vous pouvez ainsi modifier le mot de passe de vos adresses e-mail, vérifier leur taux de remplissage, créer de nouvelles adresses ou supprimer des adresses existantes.
 
-**Trucs et Astuces** : Sur les offres e-mail MX Plan, vous pouvez déléguer la gestion d'un compte e-mail à un autre compte OVHcloud tout en gardant vous-même la main sur celui-ci. Pour cela, il vous suffit de configurer une délégation, depuis votre [espace client OVHcloud](/links/manager). Vous pouvez vous appuyer sur [notre documentation](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/feature_delegation).
-
 ///
 
 /// details | Que faut-il savoir avant de créer une adresse e-mail ?
@@ -216,7 +232,6 @@ Si la colonne `Filtre` n'est pas présente dans votre espace-client, la créatio
 
 ///
 
-
 /// details | Mon adresse e-mail est saturée, je n'ai plus d'espace. Que puis-je faire ?
 
 Si vous avez souscrit à l'une de nos [offres e-mail OVHcloud](/links/web/emails) et que l'un de vos comptes e-mail est saturé, consultez notre guide « [Gérer l'espace de stockage d'un compte e-mail](/pages/web_cloud/email_and_collaborative_solutions/troubleshooting/email_manage_quota) ». Ce guide vous aidera à déterminer si vous pouvez optimiser l'espace existant ou s’il est nécessaire de changer d'offre e-mail pour augmenter la capacité de stockage.
@@ -227,16 +242,10 @@ Si vous avez souscrit à l'une de nos [offres e-mail OVHcloud](/links/web/emails
 
 Vous souhaitez changer d'[offre e-mail](/links/web/emails) pour bénéficier de plus d'espace et de fonctionnalités, mais vous souhaitez conserver le contenu de votre adresse existante ? Pour cela nous vous invitons à suivre le guide de migration correspondant à votre besoin :
 
-- [Migrer une adresse e-mail MX Plan vers un compte E-mail Pro ou Exchange](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_control_panel).
+- [Migrer une adresse e-mail MX Plan vers un compte Exchange](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_control_panel).
 - [Migrer vos adresses e-mail d'une plateforme e-mail OVHcloud vers une autre](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_control_panel).
 - [Migrer manuellement votre adresse e-mail](/pages/web_cloud/email_and_collaborative_solutions/migrating/manual_email_migration).
 - [Migrer des comptes e-mail via OVHcloud Mail Migrator](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_omm)..
-
-///
-
-/// details | L'offre Office 365 Pro Plus comprend-elle une licence Skype ?
-
-L’offre Office 365 Pro Plus ne contient pas de licence Skype. Seul le logiciel Skype for Business y est inclus.
 
 ///
 

@@ -1,7 +1,7 @@
 ---
 title: "Configure the Display of Contact Data in the Whois"
 excerpt: "Use the OVHcloud public API to configure the display of your contact data in the Whois"
-updated: 2022-05-05
+updated: 2026-02-10
 ---
 
 <!-- Reminder to put at the beginning of each page -->
@@ -32,14 +32,14 @@ Do not forget to replace [https://eu.api.ovh.com](https://eu.api.ovh.com) with [
 ## Introduction
 
 The Whois is a search service that provides information about a domain name.
-This information can have various uses but is often used to find and contact the owner of a domain name.
+This information can have various uses but is often used to find and contact the holder of a domain name.
 This information is displayed as a non-standardized text, which was displayed in plain text until recently.
 
 RDAP was designed as a successor to Whois and has several advantages over it, including:
 
--   Support for internationalization
--   Standardization of the data format
--   The ability to provide distinguished access to the data
+- Support for internationalization
+- Standardization of the data format
+- The ability to provide distinguished access to the data
 
 This section is dedicated to API routes used to set up the disclosure and obfuscation of
 the various contact data of a domain name in the Whois and the RDAP.
@@ -48,7 +48,7 @@ the various contact data of a domain name in the Whois and the RDAP.
 
 Since the implementation of the RGPD, the Whois data concerning `admin`, `tech`, `billing` and `owner` contacts are hidden by default
 if they are natural persons.
-However, it is possible to disclose some or all of the data according the optin rules applied to the domain name.
+However, it is possible to disclose all of the data according the optin rules applied to the domain name.
 
 ### Retrieving optin rules
 
@@ -93,9 +93,9 @@ The following API allows you to retrieve the disclosure rules applicable to a do
 
 The following response shows the three different types of rules that can be found:
 
--   The `admin` contact is omitted in the response, which means that it is not possible to configure the disclosure of its data.
--   The `tech` contact with an empty `field` table means that it is possible to disclose its information. However, the choice of the disclosed information is not customizable (it is all or nothing).
--   The `owner` contact has the most customizable rule. The list in the `field` node indicates that it is possible to choose from it the fields that will be disclosed in the Whois.
+- The `admin` contact is omitted in the response, which means that it is not possible to configure the disclosure of its data.
+- The `tech` contact with an empty `field` table means that it is possible to disclose its information. However, the choice of the disclosed information is not customizable (it is all or nothing).
+- Regarding the `owner` contact, the presence of fields in the `field` node means that the information is hidden. However, the choice of information disclosed cannot be customised: either all information is displayed, or none is displayed.
 
 ### Retrieving the optin configuration of a domain name
 
@@ -120,7 +120,18 @@ The following API is used to retrieve the disclosure configuration applied to a 
 >>   },
 >>   {
 >>     "type": "owner",
->>     "fields": ["email", "phone"]
+>>     "fields": [
+>>       "address",
+>>       "city",
+>>       "country",
+>>       "email",
+>>       "fax",
+>>       "name",
+>>       "organisation",
+>>       "phone",
+>>       "province",
+>>       "zip"
+>>     ]
 >>   }
 >> ]
 >> ```
@@ -129,9 +140,9 @@ The following API is used to retrieve the disclosure configuration applied to a 
 
 The above response can be read as follows:
 
--   The `admin` and `billing` contacts are not included in the response, which means that no information about them will be displayed in the Whois.
--   The `tech` contact with an empty array in the `fields` field means that the contact's information must be disclosed and will be displayed in the Whois.
--   About the `owner` contact, we can see that only the `email` and `phone` are configured to be disclosed and will be displayed in the Whois.
+- The `admin` and `billing` contacts are not included in the response, which means that no information about them will be displayed in the Whois.
+- The `tech` contact with an empty array in the `fields` field means that the contact's information must be disclosed and will be displayed in the Whois.
+- Regarding the `owner` contact, we can see that the fields are configured to be disclosed and will be displayed in the Whois.
 
 ### Updating the optin configuration
 
@@ -157,7 +168,18 @@ The following API allows you to update the disclosure configuration applied to a
 >>   },
 >>   {
 >>     "type": "owner",
->>     "fields": ["email", "phone"]
+>>     "fields": [
+>>       "address",
+>>       "city",
+>>       "country",
+>>       "email",
+>>       "fax",
+>>       "name",
+>>       "organisation",
+>>       "phone",
+>>       "province",
+>>       "zip"
+>>     ]
 >>   }
 >> ]
 >> ```
@@ -170,7 +192,18 @@ The following API allows you to update the disclosure configuration applied to a
 >>   },
 >>   {
 >>     "type": "owner",
->>     "fields": ["email", "phone"]
+>>     "fields": [
+>>       "address",
+>>       "city",
+>>       "country",
+>>       "email",
+>>       "fax",
+>>       "name",
+>>       "organisation",
+>>       "phone",
+>>       "province",
+>>       "zip"
+>>     ]
 >>   }
 >> ]
 >> ```
@@ -180,7 +213,7 @@ The following API allows you to update the disclosure configuration applied to a
 Beyond the disclosure of data on the Whois, OVHcloud gives the possibility to obfuscate the email addresses
 of the contacts in the Whois.
 
-Since the implementation of the RGPD, this feature is activated by default for all domains.
+Since the implementation of the RGPD, this feature is activated by default for all domain names.
 However, it is possible to disable this obfuscation depending on the domain name.
 
 ### Retrieving email obfuscation rules

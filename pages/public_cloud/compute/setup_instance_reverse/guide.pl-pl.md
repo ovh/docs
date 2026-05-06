@@ -16,11 +16,21 @@ Konfiguracja **rewersu DNS** instancji jest szczególnie przydatna przy wysyłan
 
 - Posiadanie [instancji Public Cloud](/links/public-cloud/public-cloud) na koncie OVHcloud
 - Nazwa domeny z polem `A` wskazującym na instancję
-- Dostęp do [Panelu client OVHcloud](/links/manager)
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Ścieżka nawigacji:** `Public Cloud`{.action} > Wybierz projekt
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## W praktyce
 
-Zaloguj się do [Panelu client OVHcloud](/links/manager), przejdź do sekcji `Sieć`{.action} i kliknij przycisk `Publiczne adresy IP`{.action}.
+Przejdź do sekcji `Sieć`{.action} i kliknij przycisk `Publiczne adresy IP`{.action}.
 
 W rozwijanym menu **Moje publiczne adresy IP i usługi powiązane** możesz podzielić Twoje usługi na kategorie. Możesz również wyszukać konkretny adres IP w pasku wyszukiwania po lewej stronie menu rozwijanego.
 

@@ -39,7 +39,7 @@ L'adresse e-mail **newsletter@mydomain.ovh** est attachée au connecteur d'envoi
 
 ![send connector](images/send-connector01.png){.thumbnail}
 
-Voici le contexte du schéma ci-dessus:
+Voici le contexte du schéma ci-dessus :
 
 - **contact@mydomain.ovh** envoie un e-mail à l'adresse **mary.johnson@guides.ovh** : il s'agit d'un envoi classique, car le connecteur d'envoi n'a pas été attaché à l'adresse **contact@mydomain.ovh**. **mary.johnson@guides.ovh** reçoit donc l'e-mail en provenance du serveur d'envoi de la plateforme Exchange (*Outgoing mail server*).
 - **newsletter@mydomain.ovh** envoie un e-mail à l'adresse **john.smith@guides.ovh** : **newsletter@mydomain.ovh** a été attaché au connecteur d'envoi, **john.smith@guides.ovh** recevra l'e-mail en provenance du serveur d'envoi du connecteur (*Send Connector*) paramétré sur la plateforme Exchange.
@@ -47,9 +47,19 @@ Voici le contexte du schéma ci-dessus:
 ## Prérequis
 
 - Avoir souscrit à une plateforme [Private Exchange OVHcloud](/links/web/emails-private-exchange) ou [Trusted Exchange OVHcloud](/links/web/emails-trusted-exchange).
-- Être connecté à [l'espace client OVHcloud](/links/manager).
 - Être connecté aux [API OVHcloud](/links/api).
 - Disposer des paramètres nécessaires au paramétrage du connecteur d'envoi. Rapprochez-vous du prestataire qui vous délivre le service.
+
+<!-- CP-NAV-START:web-exchange -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Exchange](/links/control-panel/web-exchange)
+- **Pour accéder à vos services :** `Web Cloud`{.action} > `Exchange`{.action} > Sélectionnez votre plateforme
+
+---
+<!-- CP-NAV-END:web-exchange -->
 
 ## En pratique
 
@@ -74,9 +84,9 @@ Vous trouverez aussi dans ce guide d'autres opérations utiles concernant les co
 Avant de commencer, munissez-vous des informations suivantes. Elles doivent être fournies par le prestataire délivrant le connecteur d'envoi.
 
 - L'adresse du serveur d'envoi (SMTP)
-- Le port utilisé pour l'envoi (exemple: 587)
-- Le nom d'utilisateur associé (exemple: une adresse e-mail) , **peut être optionnel selon votre connecteur d'envoi**.
-- Le mot de passe associé au nom d'utilisateur , **peut être optionnel selon votre connecteur d'envoi**.
+- Le port utilisé pour l'envoi (exemple : 587)
+- Le nom d'utilisateur associé (exemple : une adresse e-mail), **peut être optionnel selon votre connecteur d'envoi**.
+- Le mot de passe associé au nom d'utilisateur, **peut être optionnel selon votre connecteur d'envoi**.
 
 Ensuite, connectez-vous aux API OVHcloud avec vos identifiants. N'hésitez pas à vous appuyer de notre guide [Premiers pas avec les API OVHcloud](/pages/manage_and_operate/api/first-steps).
 
@@ -86,7 +96,7 @@ Pour ajouter un connecteur d'envoi à votre plateforme Exchange, utilisez l'appe
 >
 > @api {v1} /email/exchange POST /email/exchange/{organizationName}/service/{exchangeService}/sendConnector
 
-Dans la section **PATH PARAMETERS**:
+Dans la section **PATH PARAMETERS** :
 
 - `exchangeService` : Saisissez le nom de votre plateforme Exchange se présentant sous la forme « private-zz111111-1 » ou « dedicated-zz111111-1 ».
 - `organizationName` : Saisissez le nom de votre plateforme Exchange se présentant sous la forme « private-zz111111-1 » ou « dedicated-zz111111-1 ».
@@ -126,7 +136,7 @@ Une fois le connecteur d'envoi créé, utilisez l'appel API suivant pour récup�
 >
 > @api {v1} /email/exchange GET email/exchange/{organizationName}/service/{exchangeService}/sendConnector
 
-Dans la section **PATH PARAMETERS**:
+Dans la section **PATH PARAMETERS** :
 
 - `exchangeService` : Saisissez le nom de votre plateforme Exchange se présentant sous la forme « private-zz111111-1 » ou « dedicated-zz111111-1 ».
 - `organizationName` : Saisissez le nom de votre plateforme Exchange se présentant sous la forme « private-zz111111-1 » ou « dedicated-zz111111-1 ».
@@ -147,7 +157,7 @@ Vous pouvez retrouver le détail de votre connecteur d'envoi en utilisant cette 
 >
 > @api {v1} /email/exchange GET /email/exchange/{organizationName}/service/{exchangeService}/sendConnector/{id}
 
-Dans la section **PATH PARAMETERS**:
+Dans la section **PATH PARAMETERS** :
 
 - `exchangeService` : Saisissez le nom de votre plateforme Exchange se présentant sous la forme « private-zz111111-1 » ou « dedicated-zz111111-1 ».
 - `id` : Saisissez l'ID de votre connecteur d'envoi, obtenu sous forme de numéro à l'étape précédente.
@@ -183,7 +193,7 @@ Utilisez l'appel API de paramétrage d'un compte Exchange afin d'ajouter l'ID de
 >
 > @api {v1} /email/exchange PUT /email/exchange/{organizationName}/service/{exchangeService}/account/{primaryEmailAddress}
 
-Dans la section **PATH PARAMETERS**:
+Dans la section **PATH PARAMETERS** :
 
 - `exchangeService` : Saisissez le nom de votre plateforme Exchange se présentant sous la forme « private-zz111111-1 » ou « dedicated-zz111111-1 ».
 - `organizationName` : Saisissez le nom de votre plateforme Exchange se présentant sous la forme « private-zz111111-1 » ou « dedicated-zz111111-1 ».
@@ -208,13 +218,13 @@ Vous obtenez le résultat suivant :
 
 Si votre configuration est conforme aux informations transmises par le fournisseur du connecteur d'envoi, votre adresse e-mail enverra ses e-mails au travers de ce connecteur d'envoi. Il n'y a pas de manipulation particulière à faire pour l'envoi, simplement envoyer depuis la ou les adresses e-mails attachées au connecteur d'envoi.
 
-Pour tester votre envoi, envoyez un e-mail depuis une adresse qui est attachée au connecteur d'envoi vers une adresse de test que vous aurez choisi et que vous pouvez consulter. Une fois l'e-mail de test envoyé, connectez-vous à l'adresse destinataire et observez l'en-tête de l'e-mail pour vérifier que l'envoi s'est bien fait au travers du connecteur d'envoi. Si besoin , consultez notre guide [Récupérer l'en-tête d'un e-mail](/pages/web_cloud/email_and_collaborative_solutions/troubleshooting/diagnostic_headers).
+Pour tester votre envoi, envoyez un e-mail depuis une adresse qui est attachée au connecteur d'envoi vers une adresse de test que vous aurez choisi et que vous pouvez consulter. Une fois l'e-mail de test envoyé, connectez-vous à l'adresse destinataire et observez l'en-tête de l'e-mail pour vérifier que l'envoi s'est bien fait au travers du connecteur d'envoi. Si besoin, consultez notre guide [Récupérer l'en-tête d'un e-mail](/pages/web_cloud/email_and_collaborative_solutions/troubleshooting/diagnostic_headers).
 
 **Exemple d'en-tête**
 
 l'adresse e-mail **newsletter@mydomain.ovh** envoie un e-mail à l'adresse **john.smith@guides.ovh**. L'adresse e-mail **newsletter@mydomain.ovh** a été attachée au connecteur d'envoi. Le connecteur d'envoi a pour nom de domaine **sender-id.example.com**
 
-Voici un exemple d'en-tête d'un e-mail envoyé depuis un Private Exchange qui utilise un connecteur d'envoi, dans le contexte cité précédemment:
+Voici un exemple d'en-tête d'un e-mail envoyé depuis un Private Exchange qui utilise un connecteur d'envoi, dans le contexte cité précédemment :
 
 &lt;robert@hisdomain.ovh&gt;
 
@@ -270,7 +280,7 @@ Pour retirer un connecteur d'envoi attaché sur un compte de la plateforme Excha
 >
 > @api {v1} /email/exchange PUT /email/exchange/{organizationName}/service/{exchangeService}/account/{primaryEmailAddress}
 
-Dans la section **PATH PARAMETERS**:
+Dans la section **PATH PARAMETERS** :
 
 - `exchangeService` : Saisissez le nom de votre plateforme Exchange se présentant sous la forme « private-zz111111-1 » ou « dedicated-zz111111-1 ».
 - `organizationName` : Saisissez le nom de votre plateforme Exchange se présentant sous la forme « private-zz111111-1 » ou « dedicated-zz111111-1 ».
@@ -295,21 +305,21 @@ Vous obtenez le résultat suivant :
 
 Il est possible d'attacher automatiquement un connecteur d'envoi à chaque fois que vous ajoutez un compte Exchange sur votre plateforme. De cette manière, tous les comptes qui seront ajoutés passeront par défaut par le connecteur d'envoi que vous aurez défini.
 
-Pour cela, utilisez l'appel API suivant:
+Pour cela, utilisez l'appel API suivant :
 
 > [!api]
 >
 > @api {v1} /email/exchange PUT /email/exchange/{organizationName}/service/{exchangeService}/domain/{domainName}/changeDefaultSBR
 
-Dans la section **PATH PARAMETERS**:
+Dans la section **PATH PARAMETERS** :
 
 - `domainName` : Saisissez le nom de domaine qui bénéficiera du connecteur d'envoi.
 - `exchangeService` : Saisissez le nom de votre plateforme Exchange se présentant sous la forme « private-zz111111-1 » ou « dedicated-zz111111-1 ».
 - `organizationName` : Saisissez le nom de votre plateforme Exchange se présentant sous la forme « private-zz111111-1 » ou « dedicated-zz111111-1 ».
 
-Depuis l'onglet **EXAMPLE** dans la section **REQUEST BODY**, complétez les champs avec vos valeurs:
+Depuis l'onglet **EXAMPLE** dans la section **REQUEST BODY**, complétez les champs avec vos valeurs :
 
-- `sbrDefault ` : Laissez la valeur par défaut.
+- `sbrDefault` : Laissez la valeur par défaut.
 - `sendConnectorIdDefault` : Saisissez l'ID de votre connecteur d'envoi, obtenu sous forme de numéro à [cette étape](#idconnector).
 
 Cliquez sur `Execute`{.action} pour lancer l'appel API.
@@ -328,37 +338,37 @@ Vous obtenez le résultat suivant :
 
 ### Listes des autres appels API en lien avec les connecteurs d'envoi <a name="apilist"></a>
 
-- Récupérer les connecteurs d'envoi déjà créés sur un service Exchange:
+- Récupérer les connecteurs d'envoi déjà créés sur un service Exchange :
 
 > [!api]
 >
 > @api {v1} /email/exchange GET /email/exchange/{organizationName}/service/{exchangeService}/sendConnector
 
-- Supprimer un connecteur d'envoi existant:
+- Supprimer un connecteur d'envoi existant :
 
 > [!api]
 >
 > @api {v1} /email/exchange DELETE /email/exchange/{organizationName}/service/{exchangeService}/sendConnector/{id}
 
-- Récupérer les détails d'un connecteur d'envoi existant:
+- Récupérer les détails d'un connecteur d'envoi existant :
 
 > [!api]
 >
 > @api {v1} /email/exchange GET /email/exchange/{organizationName}/service/{exchangeService}/sendConnector/{id}
 
-- Éditer un connecteur d'envoi existant:
+- Éditer un connecteur d'envoi existant :
 
 > [!api]
 >
 > @api {v1} /email/exchange PUT /email/exchange/{organizationName}/service/{exchangeService}/sendConnector/{id}
 
-- Changer la méthode d'authentification d'un connecteur d'envoi existant:
+- Changer la méthode d'authentification d'un connecteur d'envoi existant :
 
 > [!api]
 >
 > @api {v1} /email/exchange POST /email/exchange/{organizationName}/service/{exchangeService}/sendConnector/{id}/changeAuthentication
 
-## Aller plus loin
+## Aller plus loin <a name="go-further"></a>
 
 [Éditer une zone DNS](/pages/web_cloud/domains/dns_zone_edit)
 

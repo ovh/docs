@@ -1,6 +1,6 @@
 ---
-title: Comment utiliser le SFTP pour transférer des fichiers
-excerpt: Découvrez comment vous connecter à votre serveur avec FileZilla pour uploader et télécharger des fichiers
+title: "Transférer des fichiers par SFTP sur un serveur dédié"
+excerpt: "Transférez des fichiers vers et depuis votre serveur dédié en utilisant SFTP avec FileZilla pour des uploads et téléchargements sécurisés"
 updated: 2025-02-21
 ---
 
@@ -35,6 +35,17 @@ Différentes options existent pour transférer des fichiers entre un périphéri
 - Un [serveur dédié](/links/bare-metal/bare-metal) ou un [VPS](/links/bare-metal/vps) dans votre compte OVHcloud, avec une distribution GNU/Linux installée
 - Un client FTP qui supporte les connexions SFTP (par exemple [FileZilla](https://filezilla-project.org/)) installé sur votre poste de travail local
 - Un accès administrateur en SSH à votre serveur
+
+<!-- CP-NAV-START:baremetal-dedicated-servers -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Serveurs dédiés](/links/control-panel/baremetal-dedicated-servers)
+- **Pour accéder à vos services :** `Bare Metal Cloud`{.action} > `Serveurs dédiés`{.action} > Sélectionnez votre serveur
+
+---
+<!-- CP-NAV-END:baremetal-dedicated-servers -->
 
 ## En pratique
 

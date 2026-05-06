@@ -3,7 +3,7 @@ title: Terraform Tutorial (EN)
 description: Procedure of use of Terraform
 keywords: infrastructure, instance, cloud, creation
 excerpt: Step-by-step documentation on how to use Terraform configurations for your infrastructure
-updated: 2025-07-21
+updated: 2026-01-14
 ---
 
 ## Objective
@@ -28,6 +28,17 @@ As an example, this video shows how to easily scale the number of instances whil
 - [Terraform OpenStack provider](https://registry.terraform.io/providers/terraform-provider-openstack/openstack/latest/docs)
 - [The OVHcloud Terraform provider](https://registry.terraform.io/providers/ovh/ovh/latest/docs)
 
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Navigation path:** `Public Cloud`{.action} > Select your project
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
+
 > [!primary]
 >
 > This tutorial is compatible with Terraform version 0.14.0 and later.
@@ -41,7 +52,7 @@ As an example, this video shows how to easily scale the number of instances whil
 
 ### Token creation
 
-Besides the API end-point, the required keys are the `application_key`, the `application_secret`, and the `consumer_key`. These keys can be generated via the [OVHcloud token generation page](https://api.ovh.com/createToken/?GET=/*&POST=/*&PUT=/*&DELETE=/*).
+Besides the API end-point, the required keys are the `application_key`, the `application_secret`, and the `consumer_key`. These keys can be generated via the [OVHcloud token generation page](https://auth.eu.ovhcloud.com/api/createToken?GET=/*&POST=/*&PUT=/*&DELETE=/*).
 
 ![token](images/first_step.png){.thumbnail}
 
@@ -112,7 +123,7 @@ $ export OVH_CONSUMER_KEY=Your_token(or_CK)
 
 The "alias" is a unique identifier for a provider. For example, if you have two OpenStack providers with different credentials, you must precise each provider in the resource.
 
-You now need to [create a new OpenStack user](/pages/public_cloud/public_cloud_cross_functional/create_and_delete_a_user), then [generate the OpenRC file](/pages/public_cloud/public_cloud_cross_functional/loading_openstack_environment_variables#step-1-recupera-le-variabili) containing all of the credentials you want to export as environment variables.
+You now need to [create a new OpenStack user](/pages/public_cloud/public_cloud_cross_functional/create_and_delete_a_user), then [generate the OpenRC file](/pages/public_cloud/public_cloud_cross_functional/loading_openstack_environment_variables#step-1-retrieve-the-variables) containing all of the credentials you want to export as environment variables.
 
 Load this file, then enter the password for the user you created earlier:
 
@@ -238,7 +249,7 @@ openstack_compute_instance_v2.test_terraform_instance: Creation complete after 2
 Apply complete! Resources: 1 added, 0 changed, 0 destroyed.
 ```
 
-Now, log in to the [OVHcloud Control Panel](/links/manager), go to the `Public Cloud`{.action} section and click on `Instances`{.action}.
+Click on `Instances`{.action}.
 As you can see, your compute instance named "terraform_instance" is creating.
 
 > [!primary]
@@ -565,19 +576,25 @@ terraform apply
 
 #### Creating a Public Cloud project
 
-You can also create an OVHcloud project directly as code, through Terraform.
+You can create an OVHcloud Public Cloud project programmatically using Terraform.
 
-Nevertheless, two conditions apply:
+Before creating a project via Terraform, you must have created **at least one Public Cloud project** through the OVHcloud Control Panel.
 
-- You must have at least 3 Public Cloud projects (note that there is a 3 project limit by default. To raise this limit, please submit a request to our support teams)
-- You must have created a Public Cloud project during the last 3 months.
+This initial project creation is required to:
 
-If one of these business rules is not met, you will receive the following error: `"Found eligibility issues: challengePaymentMethod"`.<br>
-In that case, the only solution is to use the [OVHcloud Control Panel](/links/manager) to create a project.<br>
-You will then be challenged to validate that you are indeed the owner of the payment means used on your account (this challenge depends on the payment means and other parameters).
+- Accept the Public Cloud Terms and Conditions
+- Register and validate a payment method on your account
 
-Please understand these rules and extra human steps have been put in place as an extra safety for customers that might have leaked their OVHcloud credentials.<br>
-We will try to continue improving those rules in the future to facilitate Infra-as-code scenarios, such as this "public cloud project as code" scenario.
+If this prerequisite is not met, the API will return the following error: `"Found eligibility issues: challengePaymentMethod"`.
+
+In this situation, project creation via Terraform is not possible.
+
+To resolve this issue, you must:
+
+1. [Create a Public Cloud project manually from the OVHcloud Control Panel](/pages/public_cloud/public_cloud_cross_functional/create_a_public_cloud_project)
+2. Complete the payment method ownership verification process (the exact challenge depends on the payment method and account configuration)
+
+Once this validation is completed, you will be able to create additional projects using Terraform.
 
 Create a file named `project.tf` and enter the following lines:
 

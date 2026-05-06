@@ -41,6 +41,17 @@ Ao criar pontos de backup regulares com a ajuda de uma [Política de Snapshots](
 - Estar ligado à [API OVHcloud](/links/api)
 - Dispor de um volume Enterprise File Storage com uma snapshot `manual`
 
+<!-- CP-NAV-START:storage-enterprise-file-storage -->
+---
+
+### Acesso à Área de Cliente OVHcloud
+
+- **Ligação direta:** [Enterprise File Storage](/links/control-panel/storage-enterprise-file-storage)
+- **Caminho de navegação:** `Bare Metal Cloud`{.action} > `Enterprise File Storage`{.action}
+
+---
+<!-- CP-NAV-END:storage-enterprise-file-storage -->
+
 > [!primary]
 >
 > Pode criar um volume e uma snapshot de tipo "manual" graças à [API OVHcloud](/links/api) ou a partir do seu [espaço cliente OVHcloud](/links/manager).

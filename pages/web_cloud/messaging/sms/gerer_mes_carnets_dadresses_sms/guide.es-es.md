@@ -1,6 +1,6 @@
 ---
 title: 'Agenda de contactos de SMS'
-excerpt: 'Cómo gestionar la agenda de contactos de SMS en OVHcloud'
+excerpt: 'Descubra cómo crear, importar y gestionar agendas de contactos SMS en su cuenta de OVHcloud desde el área de cliente y hojas de cálculo'
 updated: 2022-08-05
 ---
 
@@ -16,15 +16,23 @@ Todas las cuentas de SMS de OVHcloud permiten utilizar una o varias agendas de c
 
 - Disponer de una cuenta de SMS en OVHcloud.
 - Tener un programa de hojas de cálculo o un editor de texto.
-- Haber iniciado sesión en el [área de cliente de OVHcloud](/links/manager), en la sección `Telecom`{.action} > `SMS`{.action}.
+
+<!-- CP-NAV-START:telecom-sms -->
+---
+
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [SMS](/links/control-panel/telecom-sms)
+- **Ruta de navegación:** `Telecom`{.action} > `SMS`{.action} > Seleccione su cuenta SMS
+
+---
+<!-- CP-NAV-END:telecom-sms -->
 
 ![área de cliente Telecom SMS](/pages/assets/screens/control_panel/product-selection/telecom/tpl-telecom-03-en-sms.png){.thumbnail}
 
 ## Procedimiento
 
 ### 1. Crear una agenda de contactos en el área de cliente
-
-Conéctese al [área de cliente de OVH](/links/manager), en la pestaña `Telecom`{.action}. A continuación, haga clic en `SMS`{.action} en la columna izquierda
 
 Haga clic en la cuenta de SMS correspondiente y seleccione la pestaña `Contactos`{.action} y luego `Agenda de contactos`{.action}.
 

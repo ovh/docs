@@ -1,7 +1,7 @@
 ---
 title: "Hosting Web - Attiva gli indirizzi email inclusi"
 excerpt: "Questa guida ti mostra come attivare gli account di posta inclusi nella tua soluzione di hosting Web"
-updated: 2025-08-11
+updated: 2026-01-19
 ---
 
 ## Obiettivo
@@ -16,8 +16,6 @@ Ordinare un hosting Web senza associarlo direttamente a un dominio richiede l’
 
 - Aver registrato un [dominio](/links/web/domains) nello Spazio Cliente OVHcloud.
 - Disporre di una soluzione di [hosting Web](/links/web/hosting) attiva (escluse le offerte "Hosting gratuito 100M" e "Start10m").
-- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager).
-
 > [!warning]
 >
 > Per attivare l’opzione "indirizzo(i) email incluso(i) nell’hosting Web" per un dominio esterno (non registrato in OVHcloud) **di cui è obbligatorio essere l’amministratore**, è necessario creare (almeno) in OVHcloud una zona DNS per il dominio esterno. Se necessario, consulta la nostra guida "[Creare una zona DNS in OVHcloud](/pages/web_cloud/domains/dns_zone_create)". In questo modo, il tuo dominio comparirà nella lista dei domini disponibili al momento dell’attivazione dell’opzione.
@@ -27,33 +25,39 @@ Ordinare un hosting Web senza associarlo direttamente a un dominio richiede l’
 Se il dominio è già associato all’opzione "indirizzo/i email incluso/i con il tuo hosting Web" di un altro hosting Web, non sarà possibile associarlo direttamente al tuo hosting Web. Fai il punto della situazione con l’attuale gestore dell’hosting Web, consulta questa guida.
 >
 
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [Hosting plans](/links/control-panel/web-hosting)
+- **Percorso di navigazione:** `Web Cloud`{.action} > `Hosting`{.action} > Seleziona il tuo hosting web
+
+---
+<!-- CP-NAV-END:web-hosting -->
+
 ## Procedura
 
 ### Attivazione degli indirizzi email inclusi con il piano di hosting Web
 
-Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **4** passi.
+<!-- CP-STEPS-START:activation-email -->
+Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **3** passi.
 
 > [!tabs]
 > **Passaggio 1**
 >>
->> Accedi allo [Spazio Cliente OVHcloud](/links/manager) e clicca su `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Passaggio 2**
->>
->> Clicca sul menu `Hosting`{.action} e seleziona l’hosting Web interessato.
+>> Accedi alla pagina [Hosting plans](/links/control-panel/web-hosting), poi seleziona l’hosting Web interessato.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Passaggio 3**
+> **Passaggio 2**
 >>
 >> Nel riquadro **Configurazione**, trovi la dicitura **Account email**.
 >> Clicca sul pulsante `...`{.action} a destra e poi su `Attiva il tuo servizio di posta`{.action}.
 >>
 >> ![Attivazione email](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/enable-email-included-webhosting.png){.thumbnail}
 >>
-> **Passaggio 4**
+> **Passaggio 3**
 >>
 >> Si apre la pagina di attivazione. Seleziona il dominio a cui intendi associare gli indirizzi email e conferma la scelta effettuata.
 >>
@@ -64,34 +68,31 @@ Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **4** pa
 >> >
 >> > Attenzione: l’attivazione dell’opzione email potrebbe richiedere alcuni minuti. Riceverai un’email di conferma dell’installazione e dell’attivazione della soluzione MXPLAN. e include la gestione e la configurazione degli indirizzi email.
 >> >
+<!-- CP-STEPS-END:activation-email -->
 
 ### Conservazione degli indirizzi email dopo la scadenza dell’hosting Web
 
 In caso di scadenza imminente dell’hosting Web, è possibile richiedere la conservazione degli indirizzi email **prima** della data di scadenza.
 
-Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **3** passi.
+<!-- CP-STEPS-START:conservation-email -->
+Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **2** passi.
 
 > [!tabs]
 > **Passaggio 1**
 >>
->> Accedi allo [Spazio Cliente OVHcloud](/links/manager) e clicca su `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Passaggio 2**
->>
->> Clicca sul menu `Hosting`{.action} e seleziona l’hosting Web interessato.
+>> Accedi alla pagina [Hosting plans](/links/control-panel/web-hosting), poi seleziona l’hosting Web interessato.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Passaggio 3**
+> **Passaggio 2**
 >>
 >> Nel riquadro **Configurazione**, trovi la dicitura **Account email**.
 >> Clicca sul pulsante `...`{.action} a destra e poi su `Scollega la tua opzione email`{.action}.
 >>
 >> ![Attivazione email](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/detach-email-included-webhosting.png){.thumbnail}
+<!-- CP-STEPS-END:conservation-email -->
 
-Verrà proposto l’acquisto di un'offerta MX personalizzata. Una volta saldato l’ordine, gli account di posta continueranno a funzionare anche dopo la disattivazione dell’hosting Web.
+Verrà proposto l’acquisto di un’offerta MX personalizzata. Una volta saldato l’ordine, gli account di posta continueranno a funzionare anche dopo la disattivazione dell’hosting Web.
  
 ### Elimina il servizio email associato all’hosting Web
 
@@ -101,22 +102,17 @@ Il servizio di posta associato all’hosting Web può anche essere eliminato def
 >
 > Questa operazione è irreversibile: non è possibile riattivare il servizio di posta in seguito alla sua disattivazione.
 
-Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **3** passi.
+<!-- CP-STEPS-START:elimina-email -->
+Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **2** passi.
 
 > [!tabs]
 > **Passaggio 1**
 >>
->> Accedi allo [Spazio Cliente OVHcloud](/links/manager) e clicca su `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Passaggio 2**
->>
->> Clicca sul menu `Hosting`{.action} e seleziona l’hosting Web interessato.
+>> Accedi alla pagina [Hosting plans](/links/control-panel/web-hosting), poi seleziona l’hosting Web interessato.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Passaggio 3**
+> **Passaggio 2**
 >>
 >> Nel riquadro **Configurazione**, trovi la dicitura **Account email**.
 >> Clicca sul pulsante `...`{.action} a destra e poi su `Disattiva l’opzione email`{.action}.
@@ -125,7 +121,8 @@ Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **3** pa
 >>
 >> > [!warning]
 >> >
->> > Per confermare l’eliminazione del servizio di posta associato all’hosting Web, riceverai un link di conferma via email. Per avviare l'operazione di eliminazione, è necessario fare clic sul collegamento.
+>> > Per confermare l’eliminazione del servizio di posta associato all’hosting Web, riceverai un link di conferma via email. Per avviare l’operazione di eliminazione, è necessario fare clic sul collegamento.
+<!-- CP-STEPS-END:elimina-email -->
 
 #### Caso particolare - Elimina il servizio di posta associato all’hosting Web (per associarlo a un altro dominio)
 

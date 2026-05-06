@@ -39,9 +39,19 @@ La modificación de la contraseña de la base de datos del sitio web se realiza 
 ## Requisitos
 
 - Tener contratado un plan de [hosting de OVHcloud](/links/web/hosting).
-- Haber iniciado sesión en el [área de cliente de OVHcloud](/links/manager).
 - Utilizar una [base de datos asociada a su plan de hosting](/links/web/hosting-options-startsql) o a un [servidor Web Cloud Databases](/links/web/databases).
 - Disponer de las claves FTP para conectarse al [espacio de almacenamiento](/pages/web_cloud/web_hosting/ftp_connection) del alojamiento.
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [Web hosting](/links/control-panel/web-hosting)
+- **Ruta de navegación:** `Web Cloud`{.action} > `Alojamientos`{.action} > Seleccione su alojamiento web
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## Procedimiento
 

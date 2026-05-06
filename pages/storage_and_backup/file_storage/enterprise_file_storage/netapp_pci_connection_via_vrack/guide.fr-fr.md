@@ -34,7 +34,18 @@ Cela garantit que tout le trafic de données reste sur le réseau privé, sans e
 - Un [service Enterprise File Storage](/links/storage/enterprise-file-storage) dans votre compte OVHcloud.
 - Une [instance OVHcloud Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps) dans la même région.
 - Un [réseau privé vRack Private Network](/pages/public_cloud/public_cloud_network_services/getting-started-07-creating-vrack) actif dans la même région.
-- Avoir accès à l'[espace client OVHcloud](/links/manager) ou à la [CLI Openstack](/pages/public_cloud/public_cloud_cross_functional/loading_openstack_environment_variables).
+- Avoir accès à l'[espace client OVHcloud](/links/manager) ou à la [CLI OpenStack](/pages/public_cloud/public_cloud_cross_functional/loading_openstack_environment_variables).
+
+<!-- CP-NAV-START:storage-enterprise-file-storage -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Enterprise File Storage](/links/control-panel/storage-enterprise-file-storage)
+- **Pour accéder à vos services :** `Bare Metal Cloud`{.action} > `Enterprise File Storage`{.action}
+
+---
+<!-- CP-NAV-END:storage-enterprise-file-storage -->
 
 ## Vue d'ensemble
 
@@ -145,7 +156,7 @@ Pour des instructions détaillées, consultez la documentation officielle d'OVHc
 
 /// details | Seconde méthode : création via la section Enterprise File Storage
 
-1. Dans l'[espace client OVHcloud](/links/manager), accédez à la section `Bare Metal Cloud`{.action}. Cliquez sur `Enterprise File Storage`{.action} dans la rubrique **Stockage et sauvegarde**, puis sélectionnez votre service EFS.
+1. Sélectionnez votre service EFS.
 
 2. Dans l'encadré `Configuration du réseau`, cliquez sur `Configurer les paramètres réseaux`{.action}.
 

@@ -35,11 +35,20 @@ The OVHcloud Managed Kubernetes service provides you Kubernetes clusters without
 
 - An OVHcloud Managed Kubernetes cluster
 
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Navigation path:** `Public Cloud`{.action} > Select your project
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
+
 ## Instructions
 
 ### Configure security update policy through the OVHcloud Control Panel
-
-Log in to the [OVHcloud Control Panel](/links/manager), go to the `Public Cloud`{.action} section and select the Public Cloud project concerned.
 
 Access the administration UI for your OVHcloud Managed Kubernetes clusters by clicking on `Managed Kubernetes Service`{.action} in the left-hand menu.
 
@@ -85,7 +94,7 @@ Because, behind the scenes, the "OVH Terraform provider" is doing requests to OV
 
 In order to retrieve this necessary information, please follow our [First steps with the OVHcloud APIs](/pages/manage_and_operate/api/first-steps) tutorial.
 
-Specifically, you have to generate these credentials via the [OVHcloud token generation page](https://api.ovh.com/createToken/?GET=/*&POST=/*&PUT=/*&DELETE=/*) with the following rights:
+Specifically, you have to generate these credentials via the [OVHcloud token generation page](https://auth.eu.ovhcloud.com/api/createToken?GET=/*&POST=/*&PUT=/*&DELETE=/*) with the following rights:
 
 ![OVHcloud API rights](images/api-rights.png){.thumbnail}
 

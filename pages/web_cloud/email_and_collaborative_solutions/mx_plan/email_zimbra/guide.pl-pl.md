@@ -1,7 +1,7 @@
 ---
 title: "Korzystaj z interfejsu Webmail Zimbra"
 excerpt: "Poznaj interfejs Zimbra Webmail dla Twoich kont e-mail MX Plan OVHcloud"
-updated: 2025-10-22
+updated: 2026-02-26
 ---
 
 <style>
@@ -45,6 +45,9 @@ OVHcloud dostarcza usługę webmail o nazwie Zimbra umożliwiającą dostęp do 
     - [Zarządzanie kalendarzami](#calendar-management)
     - [Zadania](#tasks)
 - [Przestrzeń](#storage)
+    - [Dodaj plik](#storage-add)
+    - [Udostępnij plik lub katalog](#storage-share)
+    - [Edytuj dokument](#storage-onlyoffice)
 - [Filtry](#filters)
     - [Jak skonfigurować filtry](#filters-howto)
     - [Utwórz filtr](#filters-creation)
@@ -472,10 +475,6 @@ Następnie kliknij przycisk `Zapisz`{.action}, aby dokończyć tworzenie zadania
 >
 > Funkcja przechowywania "Aktówka" jest dostępna tylko w ofercie Zimbra Pro.
 
-> [!warning]
->
-> Oferta Zimbra Pro jest w wersji beta. Niektóre funkcje są nadal ulepszane.
-
 Kliknij ikonę `Aktówka`{.action} na górnym pasku, aby uzyskać dostęp do przestrzeni dyskowej. Możesz pobrać pliki i udostępnić je w tym miejscu.
 
 1. W lewej kolumnie widoczne są foldery przestrzeni dyskowej.
@@ -489,7 +488,7 @@ Kliknij ikonę `Aktówka`{.action} na górnym pasku, aby uzyskać dostęp do prz
 
 ![Zimbra - storage](images/zimbra-storage-01.png){.thumbnail .w-600}
 
-#### Dodaj plik
+#### Dodaj plik <a name="storage-add"></a>
 
 Aby dodać plik do przestrzeni dyskowej, wykonaj następujące kroki:
 
@@ -499,7 +498,7 @@ Aby dodać plik do przestrzeni dyskowej, wykonaj następujące kroki:
 
 ![Zimbra - storage](images/zimbra-storage-add-01.png){.thumbnail .w-600}
 
-#### Udostępnienie pliku/katalogu
+#### Udostępnienie pliku/katalogu <a name="storage-share"></a>
 
 Udostępnianie pozwala na udostępnienie katalogu lub pliku na Twojej przestrzeni dyskowej osobie trzeciej, poza Twoim kontem Zimbra.
 
@@ -531,6 +530,30 @@ Udostępnianie pozwala na udostępnienie katalogu lub pliku na Twojej przestrzen
 Gość otrzymuje e-mail z prośbą o utworzenie konta Zimbra z nazwą użytkownika i hasłem. To konto umożliwia dostęp do interfejsu Zimbra tylko w przypadku udostępniania treści.
 
 ![Zimbra - storage](images/zimbra-storage-share-invite-01.png){.thumbnail .w-600}
+
+#### Edytuj dokument <a name="storage-onlyoffice"></a>
+
+> [!success]
+>
+> Funkcja edycji dokumentów z poziomu przestrzeni „Aktówka" jest dostępna tylko w ofercie Zimbra Pro.
+
+Z poziomu Aktówki Twojego konta Zimbra możesz edytować pliki tekstowe, arkusze kalkulacyjne lub prezentacje za pomocą zintegrowanego pakietu ONLYOFFICE. Aby edytować dokument:
+
+- Kliknij ikonę `Aktówka`{.action} na górnym pasku, aby uzyskać dostęp do przestrzeni dyskowej.
+- Wybierz plik, który chcesz edytować.
+- Na górnym pasku kliknij przycisk `Edytuj`{.action}.
+
+![Zimbra - storage](images/zimbra-storage-onlyoffice-01.png){.thumbnail .w-600}
+
+- Edytor ONLYOFFICE otworzy się w nowej karcie.
+
+![Zimbra - storage](images/zimbra-storage-onlyoffice-02.png){.thumbnail .w-600}
+
+Zmiany wprowadzane w edytorze są automatycznie zapisywane podczas edycji lub po zamknięciu karty.
+
+> [!success]
+>
+> Jeśli chcesz uzyskać więcej informacji na temat edycji dokumentów w ONLYOFFICE, [zapoznaj się z oficjalną dokumentacją](https://helpcenter.onlyoffice.com/docs).
 
 ### Filtry <a name="filters"></a>
 

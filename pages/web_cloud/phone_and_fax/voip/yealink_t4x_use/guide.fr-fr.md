@@ -1,18 +1,29 @@
 ---
-title: 'Utiliser le Yealink T4X'
-excerpt: 'Découvrez comment utiliser votre téléphone Yealink T4X'
+title: "Utiliser le téléphone Yealink T4X"
+excerpt: "Découvrez comment utiliser votre téléphone Yealink T4X"
 flag: hidden
 updated: 2018-05-30
 ---
 
 ## Objectif
 
-**Ce guide vous présente les différentes fonctionnalités de votre téléphone Yealink T4X tel que fourni par OVH.**
+**Ce guide vous présente les différentes fonctionnalités de votre téléphone Yealink T4X tel que fourni par OVHcloud.**
 
 ## Prérequis
 
-- Posséder [une ligne téléphonique OVH](/links/telecom/telephonie).
-- Avoir réceptionné et installé le téléphone Yealing T4X fourni par OVH.
+- Posséder [une ligne téléphonique OVHcloud](/links/telecom/telephonie-voip).
+- Avoir réceptionné et installé le téléphone Yealink T4X fourni par OVHcloud.
+
+<!-- CP-NAV-START:telecom-voip-fax -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [VoIP & Fax](/links/control-panel/telecom-voip-fax)
+- **Pour accéder à vos services :** `Télécom`{.action} > `VoIP & Fax`{.action} > Sélectionnez votre groupe de téléphonie
+
+---
+<!-- CP-NAV-END:telecom-voip-fax -->
 
 ## En pratique
 
@@ -76,11 +87,12 @@ Enfin, appuyez sur la touche de fonction `transfert`{.action} (touche en bas à 
 
 #### Configurer la gestion des transferts d'appels depuis l'espace client
 
-Une fois connecté dans l'[espace client OVH](/links/manager), rendez-vous dans la partie `Télécom`{.action}, puis `VoIP & Fax`{.action}. Sélectionnez ensuite, dans l'onglet `Services`{.action} la ligne téléphonique concernée, puis cliquez sur le téléphone que vous souhaitez paramétrer. Cliquez ensuite sur `Téléphone`{.action} et `Paramètres Plug & Phone personnalisés`{.action}.
+<!-- CP-STEPS-START:configurer-transferts-appels-espace-client -->
+Dans l'onglet `Services`{.action}, sélectionnez la ligne téléphonique concernée, puis cliquez sur le téléphone que vous souhaitez paramétrer. Cliquez ensuite sur `Téléphone`{.action} et `Paramètres Plug & Phone personnalisés`{.action}.
 
 ![Espace client Telecom](images/control_panel_telecom.png){.thumbnail}
 
-Vous aurez accès à la section `Gestion des transferts d'appels`avec les éléments suivants :
+Vous aurez accès à la section `Gestion des transferts d'appels` avec les éléments suivants :
 
 - `Transfert à l'aveugle autorisé` : si l'option est positionnée sur `Non`{.action}, vous ne pourrez effectuer que des transferts accompagnés ;
 - `Transfert à l'aveugle sur raccroché` : si l'option est positionnée sur `Oui`{.action}, vous pourrez raccrocher le combiné au lieu d'appuyer sur `transfert`{.action} ;
@@ -92,6 +104,7 @@ Il existe trois modes de transfert :
 - `Transfert supervisé` : lorsque vous êtes en appel, vous appuyez sur la touche programmable. L'appel est mis en attente et vous appelez le second interlocuteur. Il faudra donc appuyer sur `transfert`{.action} pour transférer l'appel (les deux appels se trouvent sur deux touches programmables différentes) ;
 - `Transfert accompagné` : lorsque vous êtes en appel, vous appuyez sur la touche programmable. L'appel est mis en attente et vous appelez le second interlocuteur. Il faudra donc appuyer sur `transfert`{.action} pour transférer l'appel (les deux appels sont situés sur la même touche programmable) ;
 - `Transfert aveugle` : lorsque vous êtes en appel, vous appuyez sur la touche programmable et l'appel est transféré en aveugle sans autres actions.
+<!-- CP-STEPS-END:configurer-transferts-appels-espace-client -->
 
 ## Aller plus loin
 

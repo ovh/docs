@@ -15,12 +15,45 @@ Gli account email del servizio OVHcloud sono accessibili tramite la password ass
 
 ## Prerequisiti
 
-- In base al metodo utilizzato: essere connesso allo [Spazio Cliente OVHcloud](/links/manager) nella sezione `Web Cloud`{.action} o essere connesso all'indirizzo email dalla [Webmail](/links/web/email).
 - Disporre di una soluzione email OVHcloud precedentemente configurata, tra le seguenti:
     - **MX Plan** proposta con le nostre [offerte di hosting Web](/links/web/hosting) o inclusa in un [hosting gratuito 100M](/links/web/domains-free-hosting).
-    - [Exchange](/links/web/emails).
+    - [Exchange](/links/web/emails-exchange).
     - [Email Pro](/links/web/email-pro).
     - [Zimbra](/links/web/emails-zimbra).
+
+<!-- CP-NAV-START:web-mx-plan -->
+<!-- CP-NAV-START:web-zimbra -->
+<!-- CP-NAV-START:web-email-pro -->
+<!-- CP-NAV-START:web-exchange -->
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+**MX Plan:**
+
+- **Link diretto:** [MX Plan](/links/control-panel/web-mx-plan)
+- **Percorso di navigazione:** `Web Cloud`{.action} > `MX Plan`{.action} > Seleziona il tuo servizio MX Plan
+
+**Zimbra:**
+
+- **Link diretto:** [Zimbra](/links/control-panel/web-zimbra)
+- **Percorso di navigazione:** `Web Cloud`{.action} > `Zimbra Mail`{.action} > Seleziona il tuo servizio Zimbra
+
+**Email Pro:**
+
+- **Link diretto:** [Email Pro](/links/control-panel/web-email-pro)
+- **Percorso di navigazione:** `Web Cloud`{.action} > `Email Pro`{.action} > Seleziona la tua piattaforma
+
+**Exchange:**
+
+- **Link diretto:** [Exchange](/links/control-panel/web-exchange)
+- **Percorso di navigazione:** `Web Cloud`{.action} > `Exchange`{.action} > Seleziona la tua piattaforma
+
+---
+<!-- CP-NAV-END:web-exchange -->
+<!-- CP-NAV-END:web-email-pro -->
+<!-- CP-NAV-END:web-zimbra -->
+<!-- CP-NAV-END:web-mx-plan -->
 
 ## Procedura
 
@@ -34,6 +67,8 @@ Gli account email del servizio OVHcloud sono accessibili tramite la password ass
 >
 > Per motivi di sicurezza, ti consigliamo di non utilizzare due volte la stessa password, sceglierne una che non ha alcun rapporto con le tue informazioni personali (ad esempio, eviti le indicazioni del tuo cognome, nome e data di nascita) e rinnovarla regolarmente.
 
+<a name="whichmxplan"></a>
+
 > [!primary]
 >
 > **Identificare la tecnologia di posta elettronica della soluzione MX Plan.**
@@ -44,7 +79,7 @@ Gli account email del servizio OVHcloud sono accessibili tramite la password ass
 >
 > ![MX plan](images/technology-email.png){.thumbnail .w-500}
 
-Dallo [Spazio Cliente OVHcloud](/links/manager), seleziona la sezione `Web Cloud`{.action} e segui le indicazioni fornite:
+Segui le indicazioni fornite:
 
 > [!tabs]
 > **Email MX Plan (versione storica)**
@@ -92,14 +127,14 @@ La modifica della password tramite la Webmail è disponibile per le soluzioni em
 
 > [!warning]
 >
-> Para la solución **MX Plan Roundcube**, el cambio de contraseña solo se realiza [desde el área de cliente](#controlpanel).
+> Per l'offerta **MX Plan Roundcube**, la modifica della password avviene esclusivamente [dallo Spazio Cliente](#controlpanel).
 >
 
 #### OWA
 
 <iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/msmUN7cLSNI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-Accedi alla pagina [Webmail](/links/web/email), inserisci le tue credenziali e clicca sul pulsante `Connessione`{.action}. 
+Accedi alla pagina [Webmail](/links/web/email), inserisci le tue credenziali e clicca sul pulsante `Connessione`{.action}.
 
 ![email](images/mxplan-password-new-step2.png){.thumbnail}
 
@@ -136,7 +171,7 @@ Per motivi di sicurezza e riservatezza non è possibile **recuperare** una passw
 >
 > Se vuoi salvare una password, ti consigliamo di utilizzare un gestore di password come **Keepass** ad esempio.
 
-## Per saperne di più
+## Per saperne di più <a name="go-further"></a>
 
 [Iniziare a utilizzare la soluzione MX Plan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities)
 

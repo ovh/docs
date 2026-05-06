@@ -1,6 +1,6 @@
 ---
-title: Time2Chat, la messagerie conversationnelle par SMS pour les entreprises
-excerpt: Lancez vos premières conversations SMS bidirectionnelles avec un numéro dédié en 09
+title: "Time2Chat, la messagerie conversationnelle par SMS pour les entreprises"
+excerpt: "Découvrez comment lancer vos premières conversations SMS bidirectionnelles avec un numéro dédié en 09"
 updated: 2025-11-27
 ---
 
@@ -12,8 +12,20 @@ Ce guide présente le principe de Time2Chat, ses avantages, les conditions d’a
 
 ## Prérequis
 
-- Disposer d’un [compte SMS OVHcloud](/links/telecom/sms).
-- Être connecté à [l’espace client OVHcloud](/links/manager), partie `Télécom`{.action} puis `SMS`{.action}.
+- Disposer d'un [compte SMS OVHcloud](/links/telecom/sms).
+
+<!-- CP-NAV-START:telecom-sms -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [SMS](/links/control-panel/telecom-sms)
+- **Pour accéder à vos services :** `Télécom`{.action} > `SMS`{.action} > Sélectionnez votre compte SMS
+
+---
+<!-- CP-NAV-END:telecom-sms -->
+
+![espace client Telecom SMS](/pages/assets/screens/control_panel/product-selection/telecom/tpl-telecom-03-fr-sms.png){.thumbnail}
 
 ## En pratique
 
@@ -21,7 +33,7 @@ Ce guide présente le principe de Time2Chat, ses avantages, les conditions d’a
 
 Time2Chat est une solution de messagerie conversationnelle bidirectionnelle (marque ↔ client) permettant à une entreprise et à ses clients d’échanger par SMS en France.
 
-Contrairement à un envoi de SMS classique, le service repose sur un numéro dédié commençant par « 09 », attribué spécifiquement à chaque entreprise. Ce numéro peut être utilisé à la fois pour envoyer et recevoir des SMS.
+Contrairement à un envoi de SMS classique, le service repose sur un numéro dédié commençant par « 09 », attribué spécifiquement à chaque entreprise. Vous pouvez utiliser ce numéro pour envoyer et recevoir des SMS.
 
 Une « session » de conversation débute dès qu’un premier message est envoyé — qu’il provienne de la marque ou du client. À partir de cet instant, la session reste active pendant 24 heures. Durant ce laps de temps, les deux interlocuteurs peuvent échanger un nombre illimité de SMS via le même canal, sous réserve de crédits disponibles côté marque. Une fois la période écoulée, tout nouveau message provenant de la marque ou du client relance automatiquement une nouvelle session de 24 heures.
 
@@ -61,15 +73,18 @@ La phase de lancement de Time2Chat est réservée aux clients déjà détenteurs
 
 Nous proposerons prochainement ce service à tous les clients possédant un [compte SMS OVHcloud](/links/telecom/sms).
 
+<!-- CP-STEPS-START:buy-credits -->
 > [!primary]
 >
 > Les crédits SMS existants peuvent être utilisés sur Time2Chat.
 >
-> Vous pouvez également acheter un pack de crédits SMS depuis votre [espace client OVHcloud](/links/manager-telecom), rubrique `Télécom`{.action} puis section `SMS`{.action}. Cliquez sur votre compte SMS puis sur `Créditer mon compte`{.action} depuis l'onglet `Accueil`{.action}.
+> Vous pouvez également acheter un pack de crédits SMS depuis la [section SMS de votre espace client](/links/control-panel/telecom-sms). Cliquez sur votre compte SMS puis sur `Créditer mon compte`{.action} depuis l’onglet `Accueil`{.action}.
+<!-- CP-STEPS-END:buy-credits -->
 
 ### Commander un numéro Time2Chat
 
-Connectez-vous à votre [espace client OVHcloud](/links/manager) puis sélectionnez `Télécom`{.action}. Cliquez ensuite sur `SMS`{.action} et sur votre compte SMS. Dans l’onglet `Accueil`{.action}, cliquez sur le bouton `Commander un numéro Time2Chat`{.action}.
+<!-- CP-STEPS-START:order-time2chat -->
+Dans l’onglet `Accueil`{.action}, cliquez sur le bouton `Commander un numéro Time2Chat`{.action}.
 
 ![time2chat](images/time2chat_order_number_button.png){.thumbnail}
 
@@ -82,9 +97,11 @@ Dans le formulaire qui s’affiche, remplissez tous les champs puis cliquez sur 
 > Les informations saisies pourront être modifiées ultérieurement depuis l’espace client.
 
 Suivez toutes les étapes avant de procéder au paiement.
+<!-- CP-STEPS-END:order-time2chat -->
 
 ### Configurer un expéditeur Time2Chat
 
+<!-- CP-STEPS-START:configure-sender -->
 Une fois votre numéro Time2Chat commandé, cliquez sur l’onglet `Expéditeurs`{.action} de votre compte SMS. Le numéro Time2Chat apparaît automatiquement dans la liste des expéditeurs avec le type « Numéro virtuel ». Pour le configurer, cliquez à droite du numéro sur le bouton `...`{.action} puis sélectionnez `Configurer`{.action}. Vous accédez alors à la page de configuration du SMS conversationnel Time2Chat.
 
 ![time2chat](images/time2chat_configuration_number.png){.thumbnail}
@@ -99,6 +116,7 @@ Dans cette interface, vous pouvez :
 Ces éléments permettent de personnaliser votre numéro Time2Chat et de garantir le bon fonctionnement des échanges bidirectionnels entre votre marque et vos clients.
 
 Dès que le client répond, la **session de 24 heures** démarre. Tous les échanges effectués durant cette période sont décomptés de vos **crédits SMS disponibles**, qu’ils proviennent de votre pack initial ou d’achats complémentaires.
+<!-- CP-STEPS-END:configure-sender -->
 
 ## Aller plus loin
 

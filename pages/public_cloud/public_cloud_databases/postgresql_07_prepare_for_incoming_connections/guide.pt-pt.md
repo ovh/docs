@@ -1,5 +1,5 @@
 ---
-title: PostgreSQL - Configure your PostgreSQL instance to accept incoming connections
+title: Configure incoming connections of a Public Cloud Databases for PostgreSQL service
 excerpt: Find out how to configure your PostgreSQL instance to accept incoming connections
 updated: 2022-04-04
 ---
@@ -13,8 +13,18 @@ Public Cloud Databases allow you to focus on building and deploying cloud applic
 ## Requirements
 
 - A [Public Cloud project](/links/public-cloud/public-cloud) in your OVHcloud account
-- Access to the [OVHcloud Control Panel](/links/manager)
 - A PostgreSQL database running on your OVHcloud Public Cloud Databases ([this guide](/pages/public_cloud/public_cloud_databases/databases_01_order_control_panel) can help you to meet this requirement)
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Navigation path:** `Public Cloud`{.action} > Select your project
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## Instructions
 
@@ -22,7 +32,7 @@ Public Cloud Databases allow you to focus on building and deploying cloud applic
 
 Before making a connection, we need to verify that our PostgreSQL instance is correctly configured.
 
-Log in to your [OVHcloud Control Panel](/links/manager) and open your `Public Cloud`{.action} project. Click on `Databases`{.action} in the left-hand navigation bar and select your PostgreSQL instance.
+Click on `Databases`{.action} in the left-hand navigation bar and select your PostgreSQL instance.
 
 #### Step 1: Verify your user roles and password
 

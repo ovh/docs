@@ -1,6 +1,6 @@
 ---
-title: Migrieren von Daten von einem Dedicated Server auf einen anderen
-excerpt: Erfahren Sie hier, wie Sie Daten zwischen zwei dedizierten Servern migrieren können
+title: "Daten von einem Dedicated Server auf einen anderen migrieren"
+excerpt: "Migrieren Sie Daten zwischen OVHcloud Dedicated Servern mit rsync, SFTP oder Backup Storage für einen reibungslosen Serverwechsel."
 updated: 2021-09-16
 ---
 
@@ -93,5 +93,9 @@ Weitere Informationen finden Sie in unserer Dokumentation zu [Domains und DNS](/
 Kontaktieren Sie für spezialisierte Dienstleistungen die [OVHcloud Partner](/links/partner).
 
 Wenn Sie Schulungen oder technische Unterstützung bei der Implementierung unserer Lösungen benötigen, wenden Sie sich an Ihren Vertriebsmitarbeiter oder klicken Sie auf [diesen Link](/links/professional-services), um einen Kostenvoranschlag zu erhalten und eine persönliche Analyse Ihres Projekts durch unsere Experten des Professional Services Teams anzufordern.
+
+- [Erste Schritte mit SSH auf einem Dedicated Server](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction)
+
+- [Erste Schritte mit einem Dedicated Server](/pages/bare_metal_cloud/dedicated_servers/getting-started-with-dedicated-server)
 
 Für den Austausch mit unserer Community gehen Sie auf <https://community.ovh.com/en/>.

@@ -1,6 +1,6 @@
 ---
 title: 'Tutorial - Utilização de Zonemaster'
-updated: 2024-06-18
+updated: 2026-02-10
 ---
 
 > [!warning]
@@ -12,7 +12,7 @@ updated: 2024-06-18
 
 ## Objetivo
 
-[Zonemaster](https://zonemaster.net/en/run-test) é uma ferramenta originada pela colaboração entre a [AFNIC](https://www.afnic.fr/en/) (registo francês) e a [The Swedish Internet Foundation](https://internetstiftelsen.se/en/) (registo sueco). Permite analisar a configuração DNS (Domain Name System) de um nome de domínio e identificar os elementos que podem ser melhorados ou corrigidos.
+[Zonemaster](https://zonemaster.net/en/) é uma ferramenta originada pela colaboração entre a [AFNIC](https://www.afnic.fr/en/) (registo francês) e a [The Swedish Internet Foundation](https://internetstiftelsen.se/en/) (registo sueco). Permite analisar a configuração DNS (Domain Name System) de um nome de domínio e identificar os elementos que podem ser melhorados ou corrigidos.
 
 > [!primary]
 >
@@ -20,7 +20,7 @@ updated: 2024-06-18
 
 ## Requisitos
 
-- Ter um [domínio](/links/web/domains)
+- Ter um [nome de domínio](/links/web/domains)
 
 ## Instruções
 
@@ -30,25 +30,25 @@ A ferramenta Zonemaster permite verificar uma configuração DNS instalada num n
 
 Para verificar a configuração atual de um nome de domínio, introduza o seu nome de domínio e clique em `Run`{.action}
 
-![Captura de ecrã do formulário de introdução do Zonemaster. O domínio "domain.tld" já foi introduzido e está pronto para ser testado.](/pages/assets/screens/other/web-tools/zonemaster/run-domain-test.png){.thumbnail}
+![Captura de ecrã do formulário de introdução do Zonemaster. O nome de domínio "domain.tld" já foi introduzido e está pronto para ser testado.](/pages/assets/screens/other/web-tools/zonemaster/run-domain-test.png){.thumbnail}
 
-Para verificar uma configuração DNS que foi preparada, mas ainda não aplicada ao domínio em causa, selecione a opção `Options`{.action} e introduza as seguintes informações:
+Para verificar uma configuração DNS que foi preparada, mas ainda não aplicada ao nome de domínio em causa, selecione a opção `Options`{.action} e introduza as seguintes informações:
 
 - **Nameservers**: introduza as informações do servidor de nome associado a um nome de domínio. Clique em `+`{.action} para poder adicionar um servidor de nome suplementar. A introdução de um endereço IP é facultativa.
 - **DS records**: no quadro de uma proteção DNSSEC, introduza os elementos do registo DS. Clique em `+`{.action} para poder adicionar um registo DS suplementar. Se os servidores DNS não utilizarem o protocolo DNSSEC, pode deixar estes campos livres. No caso de uma zona assinada com DNSSEC, esta função permite verificar se a zona funciona corretamente com um resolvedor valioso, com os registos DS que estamos prestes a publicar, antes da sua publicação.
 
 Também pode forçar as verificações num protocolo IP específico através das células `Desativar IPv6` e `Desativar IPv4`
 
-> **Exemplo**:<br><br> Se possui o nome de domínio "domain.tld" que utiliza atualmente os servidores DNS "dnsXX.ovh.net" e "nsXX.ovh.net".
-> Configurou uma zona DNS para este domínio nos servidores DNS "dns1.test.tld" e "dns2.test.tld".<br>
+> **Exemplo**:<br><br> É titular do nome de domínio "domain.tld", que utiliza atualmente os servidores DNS "dnsXX.ovh.net" e "nsXX.ovh.net".
+> Configurou uma zona DNS para este nome de domínio nos servidores DNS "dns1.test.tld" e "dns2.test.tld".<br>
 > Antes de alterar os servidores DNS, pode efetuar uma pesquisa avançada através da opção `Options`{.action} introduzindo "dns1.test.tld" e "dns2.test.tld" nas casas `Nameservers`.<br>
 > Zonemaster realizará um teste como se estivesse a utilizar os servidores "dns1.test.tld" e "dns2.test.tld" em "domain.tld".<br>
-> ![Captura de tela das opções avançadas do formulário Zonemaster. Os dois servidores de nomes "dns1.test.tld" e "dns2.test.tld" foram introduzidos na secção "SNameservers" do formulário.](/pages/assets/screens/other/web-tools/zonemaster/run-domain-test-nameservers-option.png){.thumbnail}
+> ![Captura de tela das opções avançadas do formulário Zonemaster. Os dois servidores de nomes "dns1.test.tld" e "dns2.test.tld" foram introduzidos na secção "Nameservers" do formulário.](/pages/assets/screens/other/web-tools/zonemaster/run-domain-test-nameservers-option.png){.thumbnail}
 
 > [!primary]
 >
-> Ao introduzir um domínio e ao clicar no botão `Fetch NS from parent zone`{.action} e `Fetch DS from parent zone`{.action}, aparecerão os servidores DNS associados ao domínio, bem como as informações do registo DS (DNSSEC), se este tiver sido configurado.
-> ![Captura de ecrã das opções avançadas do formulário Zonemaster. O botão "Fetch NS from parent zone" (Obter NS da zona-mãe) está realçado e os servidores de nomes do domínio "domain.tld" são pré-preenchidos na secção Nameservers (Servidores de nomes) do formulário.](/pages/assets/screens/other/web-tools/zonemaster/fetch-ns-from-parent-zone.png){.thumbnail}
+> Ao introduzir um nome de domínio e ao clicar no botão `Fetch NS from parent zone`{.action} e `Fetch DS from parent zone`{.action}, aparecerão os servidores DNS associados ao nome de domínio, bem como as informações do registo DS (DNSSEC), se este tiver sido configurado.
+> ![Captura de ecrã das opções avançadas do formulário Zonemaster. O botão "Fetch NS from parent zone" (Obter NS da zona-mãe) está realçado e os servidores de nomes do nome de domínio "domain.tld" são pré-preenchidos na secção Nameservers (Servidores de nomes) do formulário.](/pages/assets/screens/other/web-tools/zonemaster/fetch-ns-from-parent-zone.png){.thumbnail}
 
 ### Resultado
 
@@ -61,7 +61,7 @@ Depois de validado o formulário, os resultados são classificados por código d
 
 Para cada teste, é possível obter mais pormenores, por exemplo para compreender o erro no caso de uma anomalia, ou apenas a título indicativo.
 
-![dominios](/pages/assets/screens/other/web-tools/zonemaster/domain-analysis.png){.thumbnail}
+![nome de domínio](/pages/assets/screens/other/web-tools/zonemaster/domain-analysis.png){.thumbnail}
 
 ### Informações úteis
 
@@ -73,7 +73,7 @@ Se tiver questões adicionais sobre Zonemaster, consulte a secção [FAQ](https:
 
 [Modificação de uma zona DNS da OVHcloud](/pages/web_cloud/domains/dns_zone_edit).
 
-[Proteja o seu domínio contra o Cache Poisoning graças ao DNSSEC](/links/web/domains-dnssec)
+[Proteja o seu nome de domínio contra o Cache Poisoning graças ao DNSSEC](/links/web/domains-dnssec)
 
 Para serviços especializados (referenciamento, desenvolvimento, etc.), contacte os [parceiros OVHcloud](/links/partner).
 

@@ -1,7 +1,7 @@
 ---
 title: "Hosting WWW - Włącz konta e-mail zawarte w ofercie"
 excerpt: "Dowiedz się, jak aktywować konta e-mail zawarte w hostingu"
-updated: 2025-08-11
+updated: 2026-01-19
 ---
 
 ## Wprowadzenie 
@@ -16,7 +16,6 @@ Jeśli zamówiłeś hosting i nie powiązałeś go bezpośrednio z nazwą domeny
 
 - Posiadanie [domeny](/links/web/domains) i możliwość zarządzania nią w Panelu klienta.
 - Posiadanie [hostingu WWW](/links/web/hosting) (poza ofertami "Darmowy hosting 100M" i "Start 10M").
-- Dostęp do [Panelu klienta OVHcloud](/links/manager).
 
 > [!warning]
 >
@@ -27,38 +26,45 @@ Jeśli zamówiłeś hosting i nie powiązałeś go bezpośrednio z nazwą domeny
 > Wreszcie, jeśli Twoja domena jest już powiązana z opcją "adres(y) e-mail zawarty(e) w Twoim hostingu" innego hostingu, nie będziesz mógł powiązać jej bezpośrednio z Twoim hostingiem. Zapoznaj się z aktualnym menedżerem hostingu i skorzystaj z tego przewodnika.
 >
 
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Hosting plans](/links/control-panel/web-hosting)
+- **Ścieżka nawigacji:** `Web Cloud`{.action} > `Hosting`{.action} > Wybierz hosting WWW
+
+---
+<!-- CP-NAV-END:web-hosting -->
+
 ## W praktyce
 
 ### Aktywacja kont e-mail zawartych w ofercie hostingu WWW
 
-Kliknij poniższe zakładki, aby wyświetlić kolejne **4** kroki.
+<!-- CP-STEPS-START:activate-email -->
+Kliknij poniższe zakładki, aby wyświetlić kolejne **3** kroki.
 
 > [!tabs]
-> **Etap 1**
+> **Krok 1**
 >>
->> Zaloguj się do [Panelu klienta OVHcloud](/links/manager) i przejdź do sekcji `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Etap 2**
->>
->> Kliknij menu `Hosting`{.action}, następnie wybierz odpowiedni hosting.
+>> Przejdź na stronę [Hosting plans](/links/control-panel/web-hosting), następnie wybierz odpowiedni hosting.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Etap 3**
+> **Krok 2**
 >>
 >> W ramce **Konfiguracja** znajduje się wzmianka **Adresy e-mail**.
 >> Kliknij przycisk `...`{.action} po prawej stronie, a następnie przycisk `Włącz mój pakiet e-mail`{.action}.
 >>
 >> ![email-activation](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/enable-email-included-webhosting.png){.thumbnail}
 >>
-> **Etap 4**
+> **Krok 3**
 >>
 >> Pojawi się okno aktywacyjne. Wybierz nazwę domeny, z którą chcesz powiązać konta e-mail i potwierdź swój wybór.
 >>
 >> ![email-activation](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/order-activate-email-included-webhosting-step-1.png){.thumbnail}
 >>
+<!-- CP-STEPS-END:activate-email -->
 
 > [!primary]
 > Jeśli chcesz korzystać z większej liczby kont e-mail zawartych w ofercie, zachęcamy do zamówienia wyższej [oferty hostingu www](/links/web/hosting) na naszej stronie handlowej.
@@ -70,28 +76,24 @@ Kliknij poniższe zakładki, aby wyświetlić kolejne **4** kroki.
 
 Jeśli Twój hosting www niebawem wygaśnie, możesz zażądać zachowania Twoich kont e-mail **przed** datą wygaśnięcia.
 
-Kliknij poniższe zakładki, aby wyświetlić kolejne **3** kroki.
+<!-- CP-STEPS-START:detach-email -->
+Kliknij poniższe zakładki, aby wyświetlić kolejne **2** kroki.
 
 > [!tabs]
-> **Etap 1**
+> **Krok 1**
 >>
->> Zaloguj się do [Panelu klienta OVHcloud](/links/manager) i przejdź do sekcji `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Etap 2**
->>
->> Kliknij menu `Hosting`{.action}, następnie wybierz odpowiedni hosting.
+>> Przejdź na stronę [Hosting plans](/links/control-panel/web-hosting), następnie wybierz odpowiedni hosting.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Etap 3**
+> **Krok 2**
 >>
 >> W ramce **Konfiguracja** znajduje się wzmianka **Adresy e-mail**.
 >> Kliknij przycisk `...`{.action} po prawej stronie, a następnie przycisk `Odłącz opcję e-mail`{.action}.
 >>
 >> ![email-detach](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/detach-email-included-webhosting.png){.thumbnail}
 >>
+<!-- CP-STEPS-END:detach-email -->
 
 Odpowiednia oferta MX zostanie Ci zaproponowana w momencie zakupu. Kiedy opłacisz zamówienie, Twoje konta e-mail będą nadal działać po zawieszeniu hostingu.
  
@@ -99,26 +101,21 @@ Odpowiednia oferta MX zostanie Ci zaproponowana w momencie zakupu. Kiedy opłaci
 
 Możesz trwale usunąć usługę e-mail powiązaną z Twoim hostingiem.
 
+<!-- CP-STEPS-START:cancel-email -->
 > [!warning]
 >
 > Uwaga: operacja ta jest nieodwracalna. Nie ma możliwości ponownej aktywacji usługi e-mail po zrezygnowaniu z tej opcji.
 
-Kliknij poniższe zakładki, aby wyświetlić kolejne **3** kroki.
+Kliknij poniższe zakładki, aby wyświetlić kolejne **2** kroki.
 
 > [!tabs]
-> **Etap 1**
+> **Krok 1**
 >>
->> Zaloguj się do [Panelu klienta OVHcloud](/links/manager) i przejdź do sekcji `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Etap 2**
->>
->> Kliknij menu `Hosting`{.action}, następnie wybierz odpowiedni hosting.
+>> Przejdź na stronę [Hosting plans](/links/control-panel/web-hosting), następnie wybierz odpowiedni hosting.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Etap 3**
+> **Krok 2**
 >>
 >> W ramce **Konfiguracja** znajduje się wzmianka **Adresy e-mail**.
 >> Kliknij przycisk `...`{.action} po prawej stronie, a następnie przycisk `Rezygnacja z opcji e-mail`{.action}.
@@ -128,6 +125,7 @@ Kliknij poniższe zakładki, aby wyświetlić kolejne **3** kroki.
 >> > [!warning]
 >> >
 >> > W celu potwierdzenia usunięcia oferty e-mail powiązanej z Twoim hostingiem, otrzymasz e-mail z linkiem weryfikacyjnym. Aby rozpocząć operację usuwania, należy kliknąć to łącze.
+<!-- CP-STEPS-END:cancel-email -->
 
 #### Przypadki szczególne - Usunięcie usługi e-mail powiązanej z Twoim hostingiem (w celu przypisania jej do innej domeny)
 

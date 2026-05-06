@@ -26,7 +26,6 @@ Verwenden Sie hierzu zwei Apache-Konfigurationsdateien (HTTP), die im [FTP-Berei
 ## Voraussetzungen
 
 - Sie haben ein [OVHcloud Webhosting](/links/web/hosting) in Ihrem Kunden-Account.
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager)
 - Sie verfügen über die Zugangsdaten zum [FTP-Bereich Ihres Hostings](/pages/web_cloud/web_hosting/ftp_connection).
 
 ## In der praktischen Anwendung

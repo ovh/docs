@@ -1,5 +1,5 @@
 ---
-title: Analytics - Maintenance operations
+title: Opérations de maintenance des services Analytics (EN)
 excerpt: Find out how your cluster is maintained
 updated: 2025-02-03
 ---

@@ -1,5 +1,5 @@
 ---
-title: Public Cloud Databases - How to configure your advanced parameters
+title: Configure the advanced parameters for Public Cloud Databases
 excerpt: Advanced configuration for Public Cloud Databases engines
 updated: 2025-02-03
 ---
@@ -21,7 +21,18 @@ Public cloud database engines are managed services, which means that they are no
 
 - A [Public Cloud project](/links/public-cloud/public-cloud) in your OVHcloud account
 - A database running on your OVHcloud Public Cloud Databases ([this guide](/pages/public_cloud/public_cloud_databases/databases_01_order_control_panel) can help you to meet this requirement)
-- Access to your [OVHcloud Control Panel](/links/manager) or to the [OVHcloud API](/links/api)
+- Access to the [OVHcloud API](/links/api) (optional)
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Navigation path:** `Public Cloud`{.action} > Select your project
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## Instructions
 
@@ -44,7 +55,8 @@ Public cloud database engines are managed services, which means that they are no
 
 ### Using the OVHcloud Control Panel
 
-To change the advanced configuration, you first need to log in to your [OVHcloud Control Panel](/links/manager) and open your `Public Cloud`{.action} project. Click on `Databases`{.action} in the left-hand navigation bar, select your engine instance then the `Advanced configuration`{.action} tab.
+<!-- CP-STEPS-START:using-the-ovhcloud-control-panel -->
+Click on `Databases`{.action} in the left-hand navigation bar, select your engine instance then the `Advanced configuration`{.action} tab.
 
 Select the key of the advanced setting you want to define, then set its value.
 
@@ -54,6 +66,8 @@ When ready, click on `Update advanced configuration`{.action}.
 >
 > On the top-right of the advanced configuration tab, you can see the settings which are already defined.
 >
+<!-- CP-STEPS-END:using-the-ovhcloud-control-panel -->
+
 
 ### Using API
 

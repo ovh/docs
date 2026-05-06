@@ -16,12 +16,22 @@ You can access your OVHcloud email accounts using the password associated with t
 ## Requirements
 
 - A preconfigured OVHcloud email solution (available with a [web hosting plan](/links/web/hosting)
-- Access to the [OVHcloud Control Panel](/links/manager) or access to the email account via [webmail](/links/web/email), depending on the method used
 
 > [!primary]
 >
 > When you change the password for your email account, you will also need to apply this change to all email clients that access this account. You can find the configuration guides for your email software on the guide homepage of your email offer [MX Plan](/products/web-cloud-email-collaborative-solutions-mx-plan)
 >
+
+<!-- CP-NAV-START:web-mx-plan -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [MX Plan](/links/control-panel/web-mx-plan)
+- **Navigation path:** `Web Cloud`{.action} > `MX Plan`{.action} > Select your MX Plan service
+
+---
+<!-- CP-NAV-END:web-mx-plan -->
 
 ## Instructions
 
@@ -40,7 +50,7 @@ Changing your password via webmail is available for OVHcloud email offer using *
 
 <iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/msmUN7cLSNI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-Go to the [webmail page](/links/web/email). Enter your full email address and password, then click the `Login`{.action} button. 
+Go to the [webmail page](/links/web/email). Enter your full email address and password, then click the `Login`{.action} button.
 
 ![email](images/mxplan-password-new-step2.png){.thumbnail}
 
@@ -69,7 +79,7 @@ For security and confidentiality reasons, it is not possible to **retrieve** a p
 >
 > If you want to store a password, we recommend using a password manager, such as **KeePass**.
 
-## Go further
+## Go further <a name="go-further"></a>
 
 If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](/links/support).
 

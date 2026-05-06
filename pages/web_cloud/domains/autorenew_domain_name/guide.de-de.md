@@ -1,8 +1,22 @@
 ---
 title: "OVHcloud Domainnamen verlängern"
 excerpt: "Erfahren Sie hier, wie Sie Ihre OVHcloud Domainnamen verlängern können"
-updated: 2025-06-13
+updated: 2026-03-13
 ---
+
+<style>
+details>summary {
+    color:rgb(33, 153, 232) !important;
+    cursor: pointer;
+}
+details>summary::before {
+    content:'\25B6';
+    padding-right:1ch;
+}
+details[open]>summary::before {
+    content:'\25BC';
+}
+</style>
 
 ## Ziel
 
@@ -20,6 +34,17 @@ Diese Anleitung hilft Ihnen bei der Verwaltung Ihrer Domainnamen und deckt alle 
 
 - Sie verfügen über einen bei OVHcloud registrierten [Domainnamen](/links/web/domains).
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager) mit den erforderlichen [Berechtigungen zur Verwaltung](/pages/account_and_service_management/account_information/managing_contacts) des Domainnamens (Rechnungskontakt).
+
+<!-- CP-NAV-START:billing-services -->
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direkter Link:** [Meine Angebote und Dienste](/links/control-panel/billing-services)
+- **Navigationspfad:** Klicken Sie oben rechts auf Ihren Namen > `Meine Angebote und Dienste`{.action}
+
+---
+<!-- CP-NAV-END:billing-services -->
 
 ## In der praktischen Anwendung
 
@@ -40,69 +65,86 @@ Wenn die automatische Verlängerung aktiviert ist, muss Ihr Zahlungsmittel gült
 
 ### Die verschiedenen Verlängerungsarten
 
-#### Die automatische Verlängerung
-
-Die wichtigsten Vorteile der automatischen Verlängerung sind:
-
-- **Einfachheit**: Sie müssen sich keine Gedanken mehr um die Verlängerungsdaten machen, alles erfolgt automatisch.
-- **Kontinuität des Dienstes**: Ihre Dienste bleiben ohne Unterbrechung aktiv.
-- **Zeitersparnis**: Sie ersparen sich manuelle Schritte.
-
-> [!warning]
->
-> Ohne gültiges Zahlungsmittel kann die Verlängerung nicht durchgeführt werden, und Sie riskieren den Verlust Ihrer Domain. Bitte überprüfen Sie die Gültigkeit Ihres Zahlungsmittels.
->
-
-#### Die manuelle Verlängerung
-
-Wenn Sie keine automatische Verlängerung wünschen, können Sie die Verlängerungsart in **Manuell** ändern.
-
-Dieser Verlängerungsmodus kann hilfreich sein:
-
-- Wenn Sie sich nicht sicher sind, ob Sie die Dienstleistung bei Ablauf behalten möchten.
-- Wenn Sie nicht möchten, dass Ihre Rechnungen automatisch von Ihrem Zahlungsmittel abgebucht werden.
-
-Wenn Sie sich für die manuelle Verlängerung entscheiden, erhalten Sie vor Ablauf mehrere Mahnungen mit einem Link zur Verlängerung des ablaufenden Dienstes.  
-Sie können die Zahlung auch einfach über Ihr Kundencenter vornehmen.
-
-Wenn Sie keine Zahlung für die Dienstleistung mit manueller Verlängerung vornehmen, riskieren Sie den Verlust Ihres Domainnamens oder eine Wiederherstellungsgebühr (wenn der Domainname gesperrt ist).  
-Wenn Sie diese Dienstleistung jedoch nicht weiter nutzen möchten, besteht keine Notwendigkeit, deren Kündigung zu beantragen.
+> [!tabs]
+> **Die automatische Verlängerung**
+>> Die wichtigsten Vorteile der automatischen Verlängerung sind:
+>>
+>> - **Einfachheit**: Sie müssen sich keine Gedanken mehr um die Verlängerungsdaten machen, alles erfolgt automatisch.
+>> - **Kontinuität des Dienstes**: Ihre Dienste bleiben ohne Unterbrechung aktiv.
+>> - **Zeitersparnis**: Sie ersparen sich manuelle Schritte.
+>>
+>> > [!warning]
+>> >
+>> > Ohne gültiges Zahlungsmittel kann die Verlängerung nicht durchgeführt werden, und Sie riskieren den Verlust Ihrer Domain. Bitte überprüfen Sie die Gültigkeit Ihres Zahlungsmittels.
+>>
+> **Die manuelle Verlängerung**
+>> Wenn Sie keine automatische Verlängerung wünschen, können Sie die Verlängerungsart in **Manuell** ändern.
+>>
+>> Dieser Verlängerungsmodus kann hilfreich sein:
+>>
+>> - Wenn Sie sich nicht sicher sind, ob Sie die Dienstleistung bei Ablauf behalten möchten.
+>> - Wenn Sie nicht möchten, dass Ihre Rechnungen automatisch von Ihrem Zahlungsmittel abgebucht werden.
+>>
+>> Wenn Sie sich für die manuelle Verlängerung entscheiden, erhalten Sie vor Ablauf mehrere Mahnungen mit einem Link zur Verlängerung des ablaufenden Dienstes.
+>> Sie können die Zahlung auch einfach über Ihr Kundencenter vornehmen.
+>>
+>> Wenn Sie keine Zahlung für die Dienstleistung mit manueller Verlängerung vornehmen, riskieren Sie den Verlust Ihres Domainnamens oder eine Wiederherstellungsgebühr (wenn der Domainname gesperrt ist).
+>> Wenn Sie diese Dienstleistung jedoch nicht weiter nutzen möchten, besteht keine Notwendigkeit, deren Kündigung zu beantragen.
 
 ### Verlängerungsmodus von Domainnamen ändern
 
-Klicken Sie in Ihrem [Kundencenter](/links/manager) rechts oben auf Ihren Namen und dann auf `Meine Angebote und Dienste`{.action}. Identifizieren Sie den Domainnamen, dessen Verlängerungsmodus Sie ändern möchten.
+<!-- CP-STEPS-START:verlängerungsmodus-ändern -->
+Klicken Sie auf die Tabs, um die **2** Schritte anzuzeigen.
 
-#### Für einen einzigen Domainnamen
-
-Führen Sie die folgenden Aktionen aus:
-
-- Identifizieren Sie in der Tabelle den Domainnamen, deren Verlängerungsmodus Sie ändern möchten.
-- Klicken Sie rechts in der Zeile auf `...`{.action}.
-- Klicken Sie auf die Aktion `Verlängerung konfigurieren`{.action}.
-- Die Verlängerung kann auf `Manuell`{.action} oder `Automatisch`{.action} eingestellt werden.
-- Wenn Sie sich für die automatische Verlängerung entscheiden, wählen Sie das Intervall für die automatische Verlängerung aus.
-- Bestätigen und bezahlen.
-
-#### Für mehrere Domainnamen
-
-Führen Sie die folgenden Aktionen aus:
-
-- Identifizieren Sie in der Tabelle die Domainnamen, für die Sie den Verlängerungsmodus ändern möchten.
-- Wählen Sie die entsprechenden Zeilen in der Tabelle aus, indem Sie die Kontrollkästchen am Zeilenanfang aktivieren.
-- Klicken Sie auf die Schaltfläche `Aktionen`{.action} oben links in der Tabelle.
-- Wählen Sie `Automatische Zahlung aktivieren`{.action} oder `Automatische Zahlung deaktivieren`{.action}.
+> [!tabs]
+> **Schritt 1**
+>>
+>> Gehen Sie auf die Seite [Meine Angebote und Dienste](/links/control-panel/billing-services). Identifizieren Sie in der Tabelle den oder die Domainnamen, deren Verlängerungsmodus Sie ändern möchten.
+>>
+>> ![Meine Angebote und Dienste](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/my-services-en.png){.thumbnail}
+>>
+> **Schritt 2**
+>>
+>> **Für einen einzigen Domainnamen:**
+>>
+>> - Klicken Sie rechts in der Zeile auf `...`{.action}.
+>> - Klicken Sie auf die Aktion `Verlängerung konfigurieren`{.action}.
+>> - Die Verlängerung kann auf `Manuell`{.action} oder `Automatisch`{.action} eingestellt werden.
+>> - Wenn Sie sich für die automatische Verlängerung entscheiden, wählen Sie das Intervall für die automatische Verlängerung aus.
+>> - Bestätigen und bezahlen.
+>>
+>> **Für mehrere Domainnamen:**
+>>
+>> - Wählen Sie die entsprechenden Zeilen in der Tabelle aus, indem Sie die Kontrollkästchen am Zeilenanfang aktivieren.
+>> - Klicken Sie auf die Schaltfläche `Aktionen`{.action} oben links in der Tabelle.
+>> - Wählen Sie `Automatische Zahlung aktivieren`{.action} oder `Automatische Zahlung deaktivieren`{.action}.
+<!-- CP-STEPS-END:verlängerungsmodus-ändern -->
 
 ### Domainnamen vor dem Ablaufdatum verlängern
 
-Führen Sie die folgenden Aktionen aus:
+<!-- CP-STEPS-START:verlängern-vor-ablauf -->
+Klicken Sie auf die Tabs, um die **3** Schritte anzuzeigen.
 
-- Identifizieren Sie in der Tabelle den Domainnamen, die Sie verlängern möchten.
-- Klicken Sie rechts in der Zeile auf `...`{.action}.
-- Klicken Sie auf die Option `Vorauszahlen`{.action}.
-- Nachdem Sie zum Zahlungsinterface weitergeleitet wurden, folgen Sie den Anweisungen.
-
-Sie können den Dienst jederzeit vor dem Ablaufdatum verlängern und auch die Dauer der Verlängerung auswählen.  
-In diesem Fall wird die abonnierte Gültigkeitsdauer der laufenden Gültigkeitsdauer hinzugefügt. Sie verlieren die verbleibende Gültigkeitsdauer nicht.
+> [!tabs]
+> **Schritt 1**
+>>
+>> Gehen Sie auf die Seite [Meine Angebote und Dienste](/links/control-panel/billing-services). Identifizieren Sie in der Tabelle den Domainnamen, den Sie verlängern möchten.
+>>
+>> ![Meine Angebote und Dienste](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/my-services-en.png){.thumbnail}
+>>
+> **Schritt 2**
+>>
+>> Klicken Sie rechts in der Zeile auf `...`{.action} und dann auf `Vorauszahlen`{.action}.
+>>
+>> ![Option Vorauszahlen](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/forward-payment-en.png){.thumbnail}
+>>
+> **Schritt 3**
+>>
+>> Nachdem Sie zum Zahlungsinterface weitergeleitet wurden, folgen Sie den Anweisungen.
+>>
+>> Sie können den Dienst jederzeit vor dem Ablaufdatum verlängern und auch die Dauer der Verlängerung auswählen.
+>> In diesem Fall wird die abonnierte Gültigkeitsdauer der laufenden Gültigkeitsdauer hinzugefügt. Sie verlieren die verbleibende Gültigkeitsdauer nicht.
+<!-- CP-STEPS-END:verlängern-vor-ablauf -->
 
 ### Verlängerung des Domainnamens überprüfen
 
@@ -110,38 +152,71 @@ Sobald Sie die Verlängerung bezahlt haben, wird der Domainname am Tag vor Ablau
 
 Die im WHOIS angezeigten Daten werden dann aktualisiert, um die korrekte Verlängerung zu bestätigen.
 
-So überprüfen Sie den Verlängerungsstatus Ihrer Domain:
+<!-- CP-STEPS-START:verlängerungsstatus-prüfen -->
+Um den Verlängerungsstatus Ihrer Domain zu überprüfen, klicken Sie auf die Tabs, um die **2** Schritte anzuzeigen.
 
-1. Loggen Sie sich in Ihrem [OVHcloud Kundencenter](/links/manager) ein.
-1. Gehen Sie in den Bereich `Web Cloud`{.action}.
-1. Klicken Sie im Bereich `Domains und DNS`{.action} auf `Domainnamen`{.action}.
-1. Überprüfen Sie in der Tabelle den Verlängerungsstatus in der Spalte `Status` des betreffenden Domainnamens.
-
-Der Status `Erneuerung in Bearbeitung` erscheint nach der Zahlung, bis Ihr Domainname bei der Registry verlängert wurde.
+> [!tabs]
+> **Schritt 1**
+>>
+>> Gehen Sie auf die Seite [Domainnamen](/links/control-panel/web-domains), und wählen Sie den betreffenden Domainnamen aus.
+>>
+>> ![Domainnamen](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
+>>
+> **Schritt 2**
+>>
+>> Im Bereich **Allgemeine Informationen** überprüfen Sie den Verlängerungsstatus unter **Status der Domain**.
+>>
+>> Der Status `Erneuerung in Bearbeitung` erscheint nach der Zahlung, bis Ihr Domainname bei der Registry verlängert wurde.
+<!-- CP-STEPS-END:verlängerungsstatus-prüfen -->
 
 ### Domainnamen kündigen
 
-- Identifizieren Sie in der Tabelle den Domainnamen, den Sie kündigen möchten.
-- Klicken Sie rechts in der Zeile auf `...`{.action}.
-- Klicken Sie auf die Aktion `Meinen Dienst kündigen`{.action}.
+<!-- CP-STEPS-START:domainnamen-kündigen -->
+Klicken Sie auf die Tabs, um die **2** Schritte anzuzeigen.
 
-Diese Aktion wird für Dienste vorgeschlagen, die mit **Automatische Verlängerung** eingestellt sind. Durch Auswahl dieser Aktion werden die automatische Verlängerung und die Zahlung für den ausgewählten Dienst deaktiviert.
+> [!tabs]
+> **Schritt 1**
+>>
+>> Gehen Sie auf die Seite [Meine Angebote und Dienste](/links/control-panel/billing-services). Identifizieren Sie in der Tabelle den Domainnamen, den Sie kündigen möchten.
+>>
+>> ![Meine Angebote und Dienste](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/my-services-en.png){.thumbnail}
+>>
+> **Schritt 2**
+>>
+>> Klicken Sie rechts in der Zeile auf `...`{.action} und dann auf `Meinen Dienst kündigen`{.action}.
+>>
+>> Diese Aktion wird für Dienste vorgeschlagen, die mit **Automatische Verlängerung** eingestellt sind. Durch Auswahl dieser Aktion werden die automatische Verlängerung und die Zahlung für den ausgewählten Dienst deaktiviert.
+<!-- CP-STEPS-END:domainnamen-kündigen -->
 
 > [!primary]
 >
 > Die Kündigung des Domainnamens endet mit Ablauf des Domainnamens.
->
 
-Weitere Informationen zur Kündigung von OVHcloud Diensten finden Sie in [unserer Anleitung](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_cancel_services).
+Weitere Informationen finden Sie in [unserer Anleitung](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_cancel_services).
 
-### Zugang zur Rechnung der Verlängerung eines Domainnamens
+### Rechnung für die Verlängerung eines Domainnamens bezahlen
 
-Eine Meldung der Art `Ausstehende Rechnung` erscheint, wenn eine Rechnung noch nicht beglichen wurde und außerdem folgendes zutrifft:
+<!-- CP-STEPS-START:verlängerungsrechnung-bezahlen -->
+Klicken Sie auf die Tabs, um die **2** Schritte anzuzeigen.
 
- - Sie verfügen über Dienstleistungen mit automatischer Verlängerung.
- - Sie haben noch kein Zahlungsmittel für automatische Zahlungen hinterlegt.
-
-Wählen Sie dann einfach die Aktion `Meine Rechnung bezahlen`{.action} aus, die Sie zum Zahlungsformular weiterleitet.
+> [!tabs]
+> **Schritt 1**
+>>
+>> Gehen Sie auf die Seite [Meine Angebote und Dienste](/links/control-panel/billing-services). Identifizieren Sie in der Tabelle den Domainnamen, für den Sie eine Verlängerungsrechnung bezahlen müssen.
+>>
+>> ![Meine Angebote und Dienste](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/my-services-en.png){.thumbnail}
+>>
+> **Schritt 2**
+>>
+>> Klicken Sie rechts in der Zeile auf `...`{.action} und dann auf `Meine Rechnung bezahlen`{.action}.
+>> Sie werden zum Zahlungsformular weitergeleitet.
+>>
+>> > [!primary]
+>> > Die Meldung **Ausstehende Rechnung** erscheint, wenn eine Rechnung noch nicht beglichen wurde und außerdem folgendes zutrifft:
+>> >
+>> > - Sie verfügen über Dienstleistungen mit automatischer Verlängerung.
+>> > - Sie haben noch kein Zahlungsmittel für automatische Zahlungen hinterlegt.
+<!-- CP-STEPS-END:verlängerungsrechnung-bezahlen -->
 
 ## FAQ
 
@@ -161,9 +236,9 @@ Nach der *Redemption*-Phase tritt der Domainname in eine Löschphase ein, die si
 
 /// details | Ich möchte meine Domain nicht verlängern, sondern zu einem anderen Registrar als OVHcloud transferieren. Wie gehe ich vor?
 
-Folgen Sie den Anweisungen in unserer Anleitung „[Transfer einer Domain zu einem anderen Registrar](/pages/web_cloud/domains/transfer_outgoing_domain)“.
+Folgen Sie den Anweisungen in unserer Anleitung “[Transfer einer Domain zu einem anderen Registrar](/pages/web_cloud/domains/transfer_outgoing_domain)”.
 
-Ich vewende die automatische Verlängerung und es wurde automatisch abgebucht. Ich möchte meinen Domainnamen nicht behalten und eine Rückerstattung erhalten.
+Ich verwende die automatische Verlängerung und es wurde automatisch abgebucht. Ich möchte meinen Domainnamen nicht behalten und eine Rückerstattung erhalten.
 
 Bis zu 10 Tage vor dem Datum der Verlängerung des Domainnamens kann eine automatische Rückerstattung erfolgen. Kündigen Sie hierzu den Domainnamen.
 
@@ -173,18 +248,26 @@ Bis zu 10 Tage vor dem Datum der Verlängerung des Domainnamens kann eine automa
 
 Sobald die Verlängerungsgebühr bezahlt wurde, senden wir die Anfrage an das zuständige Register.
 
-Der Status Ihres Domainnamens ändert sich dann in `Verlängerung läuft`.
+Ihr Domainname wechselt dann in den Status **Verlängerung läuft**.
 
-Sobald die Registry Ihren Domainnamen erneuert hat (etwa einen Monat nach Bezahlung der Verlängerungsgebühren), ändert sich sein Status wieder zu `Gespeichert`.
+Sobald die Registry Ihren Domainnamen erneuert hat (etwa einen Monat nach Bezahlung der Verlängerungsgebühren), wechselt Ihr Domainname wieder in einen Status, der anzeigt, dass er erneut **gespeichert** ist.
 
 WHOIS-Daten werden dann aktualisiert.
 
-So überprüfen Sie den Verlängerungsstatus Ihrer Domain:
+<!-- CP-STEPS-START:faq-verlängerungsstatus-prüfen -->
+Um den Verlängerungsstatus Ihrer Domain zu überprüfen, klicken Sie auf die Tabs, um die **2** Schritte anzuzeigen.
 
-1. Melden Sie sich in Ihrem [OVHcloud Kundencenter](/links/manager).
-1. Gehen Sie in den Bereich `Web Cloud`{.action}.
-1. Klicken Sie im Bereich `Domains und DNS`{.action} auf `Domainnamen`{.action}.
-1. Überprüfen Sie in der daraufhin angezeigten Tabelle den Verlängerungsstatus in der Spalte `Status` des betreffenden Domainnamens.
+> [!tabs]
+> **Schritt 1**
+>>
+>> Gehen Sie auf die Seite [Domainnamen](/links/control-panel/web-domains), und wählen Sie den betreffenden Domainnamen aus.
+>>
+>> ![Domainnamen](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
+>>
+> **Schritt 2**
+>>
+>> Im Bereich **Allgemeine Informationen** überprüfen Sie den Verlängerungsstatus unter **Status der Domain**.
+<!-- CP-STEPS-END:faq-verlängerungsstatus-prüfen -->
 
 ///
 

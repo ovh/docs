@@ -16,16 +16,29 @@ This guide explains how to migrate your data from a standard Block Storage volum
 - An existing Block Storage volume (source)
 - Administrator (root or sudo) access to your instance
 
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Navigation path:** `Public Cloud`{.action} > Select your project
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
+
 ## Instructions
 
 ### Step 1: Create a LUKS volume
 
+<!-- CP-STEPS-START:create-luks-volume -->
 In your [OVHcloud Control Panel](/links/manager), create a new Block Storage volume and select the `LUKS` type.
 
 > [!primary]
 > 
 > Once attached to your instance, the LUKS volume behaves like a standard volume. All encryption and unlocking are handled automatically by the OVHcloud infrastructure.
 >
+<!-- CP-STEPS-END:create-luks-volume -->
 
 ### Step 2: Attach the volumes to your instance
 
@@ -36,31 +49,31 @@ In your [OVHcloud Control Panel](/links/manager), create a new Block Storage vol
 
 2. Verify that both volumes are visible on your instance:
 
-    ```bash
-    lsblk
-    ```
+```bash
+lsblk
+```
 
     Example output:
 
-    ```bash
-    /dev/vdb # source volume 
-    /dev/vdc # target LUKS volume
-    ```
+```bash
+/dev/vdb # volume source
+/dev/vdc # volume cible LUKS
+```
 
 ### Step 3: Prepare the LUKS (encrypted) volume
 
 1. Format the LUKS volume with the filesystem of your choice (for example, ext4):
 
-    ```bash
-    sudo mkfs.ext4 /dev/vdc
-    ```
+```bash
+sudo mkfs.ext4 /dev/vdc
+```
 
 2. Mount the target volume:
 
-    ```bash
-    sudo mkdir -p /mnt/luks_target
-    sudo mount /dev/vdc /mnt/luks_target
-    ```
+```bash
+sudo mkdir -p /mnt/luks_target
+sudo mount /dev/vdc /mnt/luks_target
+```
 
 ### Step 4: Mount the source volume
 
@@ -89,10 +102,10 @@ sudo rsync -aAXHv --progress /mnt/source_volume/ /mnt/luks_target/
 
 2. Unmount both volumes:
 
-    ```bash
-    sudo umount /mnt/source_volume
-    sudo umount /mnt/luks_target
-    ```
+```bash
+sudo umount /mnt/source_volume
+sudo umount /mnt/luks_target
+```
 
 3. Detach the source volume if it is no longer needed.
 

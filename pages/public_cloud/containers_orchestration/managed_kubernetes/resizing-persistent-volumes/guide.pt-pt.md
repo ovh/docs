@@ -1,7 +1,7 @@
 ---
 title: Resizing Persistent Volumes
 excerpt: 'Find out how to resize Persistent Volumes on OVHcloud Managed Kubernetes'
-updated: 2021-10-19
+updated: 2026-01-30
 ---
 
 In this tutorial we are going to guide you with the resize of [Persistent Volumes](https://kubernetes.io/docs/concepts/storage/persistent-volumes/) (PVs) on your OVHcloud Managed Kubernetes Service.
@@ -12,6 +12,9 @@ Since Kubernetes 1.11, support for expanding PersistentVolumeClaims (PVCs) is en
 
 > [!warning]
 > Kubernetes PVCs resizing only allows to expand volumes, not to decrease them.
+
+> [!primary]
+> Volume resizing works with all storage classes, including LUKS encrypted volumes (`csi-cinder-high-speed-luks`, `csi-cinder-classic-luks`, `csi-cinder-high-speed-gen2-luks`). The encryption is transparently maintained during the resize operation.
 
 ## Before you begin
 

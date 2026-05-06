@@ -21,7 +21,7 @@ A gestão dos seus serviços efetua-se principalmente através da Área de Clien
 
 Aceda [à página de autenticação da OVHcloud](/links/manager), introduza o seu identificador de cliente (ou o seu endereço de e-mail principal) e a sua palavra-passe.
 
-![identificador de cliente](images/log-in.png){.thumbnail}
+![identificador de cliente](images/account-log-in-EN.png){.thumbnail}
 
 Se ativou a [dupla autenticação](/pages/account_and_service_management/account_information/secure-ovhcloud-account-with-2fa), deverá introduzir o código único de ligação gerado pelo seu periférico (telefone, tablet ou chave U2F).
 

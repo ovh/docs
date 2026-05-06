@@ -1,6 +1,6 @@
 ---
-title: 'Cambiar la contraseña de administrador en un servidor dedicado Windows'
-excerpt: 'Cómo cambiar la contraseña de administrador en un servidor dedicado Windows'
+title: "Cambiar la contraseña de administrador en un servidor dedicado Windows"
+excerpt: "Restablezca la contraseña de administrador en un servidor dedicado Windows a través del modo rescue de OVHcloud en caso de pérdida"
 updated: 2024-06-26
 flag: hidden
 ---
@@ -11,10 +11,27 @@ Al instalar o reinstalar un sistema operativo Windows, recibirá una contraseña
 
 **Esta guía le ayudará a cambiar la contraseña de su servidor a través de las configuraciones de modo de rescate disponibles para el sistema operativo Windows.**
 
+> [!warning]
+>
+> Esta guía no se aplica al arranque en modo de rescate denominado `Windows Customer Rescue System`.
+>
+> Consulte [esta guía](/pages/bare_metal_cloud/dedicated_servers/rcw-changing-admin-password-on-windows) al utilizar la opción `Windows Customer Rescue System (Windows2022-based)` en el área de cliente de OVHcloud.
+>
+
 ## Requisitos
 
-* Tener un [servidor dedicado](/links/bare-metal/bare-metal) con Windows instalado.
-* Haber iniciado sesión en el [área de cliente de OVHcloud](/links/manager).
+- Tener un [servidor dedicado](/links/bare-metal/bare-metal) con Windows instalado.
+
+<!-- CP-NAV-START:baremetal-dedicated-servers -->
+---
+
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [Servidores Dedicados](/links/control-panel/baremetal-dedicated-servers)
+- **Ruta de navegación:** `Bare Metal Cloud`{.action} > `Servidores Dedicados`{.action} > Seleccione su servidor
+
+---
+<!-- CP-NAV-END:baremetal-dedicated-servers -->
 
 ## Procedimiento
 
@@ -52,7 +69,7 @@ Device          Start        End    Sectors  Size Type
 /dev/sda5  3907028992 3907029134        143 71.5K Microsoft LDM data
 ```
 
-En este ejemplo, "sda4" es la partición del sistema, determinada por su tamaño. Por lo general, también existe una segunda partición espejo, que en este caso se denomina "/dev/sdb**X**". ya que, en la mayoría de los casos, el servidor tendrá varios discos con patrones de partición idénticos. Para el proceso de restauración de la contraseña, solo es importante el primero. 
+En este ejemplo, "sda4" es la partición del sistema, determinada por su tamaño. Por lo general, también existe una segunda partición espejo, que en este caso se denomina “/dev/sdb**X**”. ya que, en la mayoría de los casos, el servidor tendrá varios discos con patrones de partición idénticos. Para el proceso de restauración de la contraseña, solo es importante el primero. 
 
 monte esta partición:
 
@@ -178,7 +195,7 @@ Total  login count: 5
 Select: [q] >
 ```
 
-Introduzca "1" y pulse `Entrar`. (En primer lugar, utilice la opción 2 si aparece una "X" delante de "Disabled").
+Introduzca "1" y pulse ``Entrar``. (En primer lugar, utilice la opción 2 si aparece una "X" delante de "Disabled").
 
 ```text
 Select: [q] > 1
@@ -264,7 +281,7 @@ La interfaz de conexión debería mostrar un mensaje indicando la expiración de
 
 ![pwreset](images/adminpw_win_04.png){.thumbnail}
 
-La nueva contraseña del usuario admin debe introducirse dos veces. Sin embargo, el campo de confirmación todavía no está visible, lo que significa que debe dejar el primer campo vacío, introducir su nueva contraseña en el segundo campo y utilizar la tecla de tabulación (" ↹ ") del teclado (virtual) para pasar al tercer campo ("Confirmar la contraseña").
+La nueva contraseña del usuario admin debe introducirse dos veces. Sin embargo, el campo de confirmación todavía no está visible, lo que significa que debe dejar el primer campo vacío, introducir su nueva contraseña en el segundo campo y utilizar la tecla de tabulación (“ ↹ ”) del teclado (virtual) para pasar al tercer campo (“Confirmar la contraseña”).
 <br>Vuelva a introducir la contraseña y haga clic en la flecha para guardarla.
 
 ![enterpw](images/adminpw_win_05.png){.thumbnail}

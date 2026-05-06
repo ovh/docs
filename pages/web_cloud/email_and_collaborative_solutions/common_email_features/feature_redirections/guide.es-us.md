@@ -1,7 +1,7 @@
 ---
 title: 'Utilizar los alias y redirecciones de correo'
 excerpt: 'Cómo gestionar los alias y redirecciones de correo'
-updated: 2025-06-03
+updated: 2026-03-31
 ---
 
 <style>
@@ -72,65 +72,41 @@ Haga clic en las fichas siguientes para obtener una explicación ilustrada del f
 
 ## Requisitos
 
-- Haber iniciado sesión en el [área de cliente de OVHcloud](/links/manager).
 - Disponer de una solución de correo de OVHcloud previamente configurada, que incluya:
     - **MX Plan** ofrecido con nuestros [planes de hosting](/links/web/hosting).
-    - [Exchange](/links/web/emails).
+    - [Exchange](/links/web/emails-exchange).
+
+<!-- CP-NAV-START:web-mx-plan -->
+<!-- CP-NAV-START:web-exchange -->
+---
+
+### Acceso al área de cliente de OVHcloud
+
+**MX Plan:**
+
+- **Enlace directo:** [MX Plan](/links/control-panel/web-mx-plan)
+- **Ruta de navegación:** `Web Cloud`{.action} > `MX Plan`{.action} > Seleccione su servicio MX Plan
+
+**Exchange:**
+
+- **Enlace directo:** [Exchange](/links/control-panel/web-exchange)
+- **Ruta de navegación:** `Web Cloud`{.action} > `Exchange`{.action} > Seleccione su plataforma
+
+---
+<!-- CP-NAV-END:web-exchange -->
+<!-- CP-NAV-END:web-mx-plan -->
 
 ## Procedimiento
 
 **Contenido**
 
 - [Crear una redirección](#redirect)
-    - [Desde el área de cliente](#redirect-manager)
     - [Desde el webmail](#redirect-webmail)
 - [Eliminar una redirección](#redirect-delete)
 - [Crear alias](#alias)
 - [Eliminar alias](#alias-delete)
 
 ### Crear una redirección <a name="redirect"></a>
-
-#### Desde el área de cliente <a name="redirect-manager"></a>
-
-Actualmente, solo los planes **MX plan** y **Redirect** disponen de una interfaz de gestión de las redirecciones a través del área de cliente de OVHcloud.
-
-##### MX Plan / redirect <a name="redirect-manager-mxplan"></a>
-
-1. Conéctese a su [área de cliente de OVHcloud](/links/manager).
-1. Acceda a la sección `Web Cloud`{.action}.
-1. Haga clic en `MX Plan`{.action}.
-1. Seleccione el dominio correspondiente.
-
-En nuestro ejemplo, se trata de una **redirección con copia local** (consulte el [esquema 2](#diagram) al principio de esta guía). Si lo necesita, siga los pasos que se indican a continuación en la pestaña correspondiente a la tecnología webmail utilizada por su MX Plan:
-
-Por defecto, se encuentra en la pestaña `Información general`{.action} de su MX Plan. Haga clic en la pestaña `Correo electrónico`{.action} y seleccione el botón `Gestionar las redirecciones`{.action} en el lado derecho.
-
-![emails](images/mxplan-legacy-1.png){.thumbnail .w-640}
-
-Se mostrará una tabla con las redirecciones activas. A la derecha, haga clic en el botón `Crear una redirección`{.action}.
-
-![emails](images/mxplan-legacy-2.png){.thumbnail .w-640}
-
-En el formulario `Crear una redirección`, complete los siguientes elementos:
-
-- **De la dirección**: Introduzca aquí la dirección de correo electrónico que quiera redirigir.
-- **A la dirección**: Introduzca aquí la dirección de destino de su redirección. Puede ser una de sus direcciones de correo electrónico de OVHcloud o una dirección de correo electrónico externa.
-- **Seleccione un modo de copia**: Elija si desea:
-     - **Conservar una copia del correo en OVHcloud**: Recibir el correo en su dirección principal y la dirección de redirección (ver el [esquema 2](#diagram) al principio de esta guía).
-     - **No conservar copia del correo**: Reenviar directamente a la dirección de redirección sin que la dirección principal lo reciba (ver el [esquema 1](#diagram) al principio de esta guía).
-
-Haga clic en `Aceptar`{.action} para confirmar la redirección.
-
-![emails](images/mxplan-legacy-3.png){.thumbnail .w-640}
-
-> [!primary]
->
-> Para modificar la dirección de destino o eliminar una redirección, haga clic en `...`{.action}, a la derecha de la redirección correspondiente.
-
-> [!primary]
->
-> Al elegir el modo de copia "**Conservar una copia del correo en OVHcloud**", se crea automáticamente una redirección de la dirección de correo hacia ella misma en la lista de redirecciones, materializando esta copia local.
->
 
 #### Desde el webmail <a name="redirect-webmail"></a>
 
@@ -195,24 +171,6 @@ Desplácese por las fichas siguientes para configurar la redirección a través 
 
 #### Eliminar una redirección <a name="redirect-delete"></a>
 
-##### MX Plan desde el área de cliente <a name="redirect-delete-mxplan"></a>
-
-1. Conéctese a su [área de cliente de OVHcloud](/links/manager).
-1. Acceda a la sección `Web Cloud`{.action} de la columna.
-1. Haga clic en `MX Plan`{.action}.
-1. Seleccione el dominio correspondiente.
-
-A continuación, abra la pestaña correspondiente a la tecnología de correo que utiliza su servicio MX Plan:
-
-- Por defecto, se encuentra en la pestaña `Información general`{.action} de su MX Plan.
-- Haga clic en la pestaña `Correo electrónico`{.action} y seleccione el botón `Gestiónar las redirecciones`{.action}.
-
-![emails](images/mxplan-legacy-1.png){.thumbnail .w-640}
-
-- Haga clic en `...`{.action}, a la derecha de la redirección correspondiente y luego en `Eliminar la redirección`{.action}.
-
-![emails](images/mxplan-redirect-delete01.png){.thumbnail .w-640}
-
 ##### Outlook Web App (OWA) <a name="redirect-delete-owa"></a>
 
 Acceda al [webmail](/links/web/email). Introduzca **la dirección de correo electrónico** y **la contraseña** para conectarse. En la interfaz del webmail Outlook en la Web, siga los pasos en las pestañas que aparecen a continuación:
@@ -243,11 +201,7 @@ Acceda al [webmail](/links/web/email). Introduzca **la dirección de correo elec
 
 Crear un alias para su dirección de correo electrónico le permite comunicar una dirección "máscara" a sus contactos, sin tener que comunicar su dirección de correo electrónico personal al remitente.
 
-Conéctese a su [área de cliente de OVHcloud](/links/manager) y acceda a la sección `Web Cloud`. Seleccione el menú en función de su solución de correo:
-
-- **Exchange**: Acceda a la sección `Microsoft`{.action}, haga clic en `Exchange`{.action} y seleccione la plataforma correspondiente. Haga clic en la pestaña `Cuentas de correo`{.action}.
-
-- **MX Plan**: Acceda a la sección `MX Plan`{.action}, seleccione la plataforma correspondiente y haga clic en la pestaña `Cuentas de correo`{.action}.
+Desde su servicio de correo (Exchange o MX Plan), haga clic en la pestaña `Cuentas de correo`{.action}.
 
 Para añadir un alias a su cuenta de correo, siga los pasos que se indican en cada pestaña:
 
@@ -272,13 +226,9 @@ Para añadir un alias a su cuenta de correo, siga los pasos que se indican en ca
 
 ### Eliminar un alias <a name="alias-delete"></a>
 
-Conéctese a su [área de cliente de OVHcloud](/links/manager) y acceda a la sección `Web Cloud`. Seleccione el menú en función de su solución de correo:
+Desde su servicio de correo (Exchange o MX Plan), haga clic en la pestaña `Cuentas de correo`{.action}.
 
-- **Exchange**: Acceda a la sección `Microsoft`{.action}, haga clic en `Exchange`{.action} y seleccione la plataforma correspondiente. Haga clic en la pestaña `Cuentas de correo`{.action}.
-
-- **MX Plan**: Acceda a la sección `MX Plan`{.action}, seleccione la plataforma correspondiente y haga clic en la pestaña `Cuentas de correo`{.action}.
-
-En la pestaña `Cuentas de correo electrónico`{.action}, haga clic en el botón `...`{.action} a la derecha de la dirección de correo electrónico correspondiente. A continuación, haga clic en `Configurar alias`{.action} (o `Gestionar alias`{.action}).
+En la pestaña `Cuentas de correo`{.action}, haga clic en el botón `...`{.action} a la derecha de la dirección de correo electrónico correspondiente. A continuación, haga clic en `Configurar alias`{.action} (o `Gestionar alias`{.action}).
 
 Haga clic en el botón `...`{.action} situado al final de la línea correspondiente al alias en el menú de gestión de alias. Por último, haga clic en `Eliminar el alias`{.action}
 

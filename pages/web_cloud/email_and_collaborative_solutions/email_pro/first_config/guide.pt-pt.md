@@ -15,25 +15,25 @@ Adquiriu um serviço E-mail Pro, que lhe permite beneficiar de endereços de e-m
 - Ter o serviço [E-mail Pro](/links/web/email-pro).
 - Ter recebido o e-mail com a confirmação da instalação do serviço E-mail Pro.
 - Dispor de um domínio.
-- Ter acesso à [Área de Cliente OVHcloud](/links/manager).
+
+<!-- CP-NAV-START:web-email-pro -->
+---
+
+### Acesso à Área de Cliente OVHcloud
+
+- **Ligação direta:** [E-mail Pro](/links/control-panel/web-email-pro)
+- **Caminho de navegação:** `Web Cloud`{.action} > `E-mail Pro`{.action} > Selecione a sua plataforma
+
+---
+<!-- CP-NAV-END:web-email-pro -->
 
 ## Instruções
 
-### 1 - Aceder à interface de gestão do serviço
-
-Assim que o serviço E-mail Pro for criado e estiver disponível:
-
-1. Aceda à [Área de Cliente OVHcloud](/links/manager).
-1. Clique no separador `Web Cloud`{.action}.
-1. Clique em `Email Pro`{.action}.
-1. Selecione a plataforma em causa.
+### 1 - Adicionar o domínio
 
 > [!primary]
 >
 > Na Área de Cliente, o nome de um serviço E-mail Pro é composto por: *emailpro-*, uma parte do identificador de cliente e um algarismo (1 para o primeiro serviço E-mail Pro instalado, 2 para o segundo, etc.).
->
-
-### 2 - Adicionar o domínio
 
 Depois de contratar o serviço E-mail Pro, surge uma janela na Área de Cliente para `Adicionar domínio`{.action}. Se isso não acontecer, clique em `Domínios associados`{.action} e, depois, em `Adicionar domínio`{.action}.
 
@@ -58,8 +58,8 @@ A nova janela apresenta informações relativas à configuração dos modos.
 
 > **Compreender os modos autoritário e não autoritário**
 >
-> - Quando um e-mail é transmitido para a sua plataforma E-mail Pro (*Inbound mail server Email Pro*) em modo **autoritário**, isso significa que todos os endereços de e-mail do seu nome de domínio estão unicamente alojados nesta plataforma. <br> <br> Por exemplo, se enviarmos um e-mail para o endereço "*mary.johnson@mydomain.ovh*", o servidor E-mail Pro "*Inbound mail server Email Pro*" devolve uma mensagem de falha ao remetente, pois esse endereço não existe no servidor E-mail Pro "*Inbound mail server Email Pro*".
-> - Quando um e-mail é transmitido para a sua plataforma de e-mail E-mail Pro (*Inbound mail server Email Pro*) em modo **não autoritário**, isso significa que os endereços de e-mail do seu domínio são repartidos entre a sua plataforma de e-mail principal (*Inbound mail server Email Pro*) e outro serviço de e-mail (*Inbound mail server MX Plan*). <br> <br> Por exemplo, se enviarmos um e-mail para o endereço "*mary.johnson@mydomain.ovh*", o servidor E-mail Pro *Inbound mail server Email Pro* transmitirá o e-mail ao servidor MX Plan "*Inbound mail server MX Plan*" para que este último o possa entregar.
+> - Quando um e-mail é transmitido para a sua plataforma E-mail Pro (*Inbound mail server E-mail Pro*) em modo **autoritário**, isso significa que todos os endereços de e-mail do seu nome de domínio estão unicamente alojados nesta plataforma. <br> <br> Por exemplo, se enviarmos um e-mail para o endereço "*mary.johnson@mydomain.ovh*", o servidor E-mail Pro "*Inbound mail server E-mail Pro*" devolve uma mensagem de falha ao remetente, pois esse endereço não existe no servidor E-mail Pro "*Inbound mail server E-mail Pro*".
+> - Quando um e-mail é transmitido para a sua plataforma de e-mail E-mail Pro (*Inbound mail server E-mail Pro*) em modo **não autoritário**, isso significa que os endereços de e-mail do seu domínio são repartidos entre a sua plataforma de e-mail principal (*Inbound mail server E-mail Pro*) e outro serviço de e-mail (*Inbound mail server MX Plan*). <br> <br> Por exemplo, se enviarmos um e-mail para o endereço "*mary.johnson@mydomain.ovh*", o servidor E-mail Pro *Inbound mail server E-mail Pro* transmitirá o e-mail ao servidor MX Plan "*Inbound mail server MX Plan*" para que este último o possa entregar.
 >
 > ![Add Domain](images/authoritative-mode.png){.thumbnail}
 >
@@ -89,7 +89,7 @@ Clique em `Seguinte`{.action} para adicionar o domínio.
 
 No final do processo, verifique as informações apresentadas e clique em `Confirmar`{.action} para adicionar o domínio.
 
-### 3 - Configurar o domínio
+### 2 - Configurar o domínio
 
 Depois de adicionar o domínio enquanto domínio associado, verifique as configurações através da tabela apresentada.
 
@@ -106,7 +106,7 @@ A coluna `Diagnóstico`{.action} permite-lhe controlar a configuração DNS do d
 
 ![emailpro](images/emailpro-04.png){.thumbnail}
 
-### 4 - Configurar as contas E-mail Pro
+### 3 - Configurar as contas E-mail Pro
 
 Para configurar os endereços de e-mail, aceda a `Contas de e-mail`{.action}. Na tabela, as contas contratadas apresentam o seguinte formato: “*@configureme.me*”.
 
@@ -147,7 +147,7 @@ Depois, clique em `Seguinte`{.action}. Verifique as informações apresentadas e
 > Repita este passo sempre que necessário, de acordo com o número de contas disponíveis. Se precisar de mais contas, clique em `Encomendar contas`{.action}.
 >
 
-### 5 - Usar o serviço de e-mail
+### 4 - Usar o serviço de e-mail
 
 As contas foram configuradas e estão prontas a usar. Para isso, a OVHcloud disponibiliza uma aplicação online (uma *webapp*). Esta última encontra-se no endereço [Webmail](/links/web/email), onde deve introduzir os dados de acesso à sua conta.
 
@@ -170,7 +170,7 @@ Se desejar associar o seu endereço de e-mail a um software de correio eletróni
 >
 > No nosso exemplo, utilizamos a referência servidor: pro?.mail.ovh.net. Deve substituir o "?" pelo algarismo que designa o servidor do seu serviço E-mail Pro.
 >
-> Encontre esse algarismo na [Área de Cliente OVHcloud](/links/manager), na rubrica `Web Cloud`{.action}, em `Email Pro`{.action}. O servidor é visível na secção **Ligação** do separador `Informações gerais`{.action}.
+> O servidor é visível na secção **Ligação** do separador `Informações gerais`{.action} do serviço E-mail Pro.
 >
 
 ## Quer saber mais?

@@ -10,10 +10,20 @@ Ce guide explique comment identifier les datastores OmniOS de votre Hosted Priva
 
 ## Prérequis
 
-- Accès à l’[espace client OVHcloud](/links/manager)
 - Accès administrateur à votre environnement vSphere (via vScope)
 - Connaissances de base de VMware vSphere et de Storage vMotion
 - Datastores supportés disponibles comme cibles de migration
+
+<!-- CP-NAV-START:privatecloud-vmware-vsphere -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [VMware vSphere](/links/control-panel/privatecloud-vmware-vsphere)
+- **Pour accéder à vos services :** `Hosted Private Cloud`{.action} > `Managed VMware vSphere`{.action} > Sélectionnez votre service vSphere
+
+---
+<!-- CP-NAV-END:privatecloud-vmware-vsphere -->
 
 > [!primary]
 > OVHcloud mettra à disposition l’espace de stockage libre nécessaire (*freespare*) dans le cadre du processus de migration mené par nos équipes.
@@ -22,17 +32,13 @@ Ce guide explique comment identifier les datastores OmniOS de votre Hosted Priva
 
 ### Étape 1 - Identifier les datastores OmniOS
 
-1. Connectez-vous à [votre espace client OVHcloud](/links/manager).
+1. Cliquez sur [ce lien](/links/control-panel/privatecloud-vmware-vsphere) pour accéder à la section `VMware vSphere`{.action}, puis sélectionnez votre service PCC.
 
-2. Cliquez sur `Hosted Private Cloud`{.action} et sélectionnez votre service PCC.
-
-    ![Accéder au Hosted Private Cloud](images/omnios-01.png){.thumbnail}
-
-3. Rendez-vous dans l'onglet `Datacenters`{.action}.
+2. Rendez-vous dans l'onglet `Datacenters`{.action}.
 
     ![Page Datacenters](images/omnios-02.png){.thumbnail}
 
-4. Sur la page du datacenter, ouvrez l'onglet `Datastores`{.action}.
+3. Sur la page du datacenter, ouvrez l'onglet `Datastores`{.action}.
 
     ![Onglet Datastores](images/omnios-03.png){.thumbnail}
 
@@ -44,7 +50,7 @@ Ce guide explique comment identifier les datastores OmniOS de votre Hosted Priva
     > [!primary]
     > Les datastores OmniOS doivent être migrés vers un stockage supporté pour assurer la continuité du service.
 
-5. Avant de lancer un vMotion, assurez-vous de disposer d’un datastore supporté dans votre parc.
+4. Avant de lancer un vMotion, assurez-vous de disposer d’un datastore supporté dans votre parc.
 
     - Si vous devez ajouter un datastore, consultez le guide [Ajouter un datastore](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/how_to_add_storage).
     - Si vous souhaitez supprimer un datastore devenu inutile, consultez le guide [Supprimer un datastore](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/delete_datastore).

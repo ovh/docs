@@ -15,30 +15,36 @@ When using your web hosting plan, you may need to know the cluster and filer you
 ## Requirements
 
 - An [OVHcloud Web Hosting plan](/links/web/hosting)
-- Access to the [OVHcloud Control Panel](/links/manager)
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Hosting plans](/links/control-panel/web-hosting)
+- **Navigation path:** `Web Cloud`{.action} > `Hosting plans`{.action} > Select your web hosting plan
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## Instructions
 
-Click on the tabs below to view each of the **3** steps.
+<!-- CP-STEPS-START:find-cluster-and-filer -->
+Click on the tabs below to view each of the **2** steps.
 
 > [!tabs]
 > **Step 1**
 >>
->> Log in to the [OVHcloud Control Panel](/links/manager), then go to the `Web Cloud`{.action} section.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Step 2**
->>
->> Click the `Hosting plans`{.action} menu, then select the web hosting plan concerned.
+>> Go to the [Hosting plans](/links/control-panel/web-hosting) page, then select the web hosting plan concerned.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Step 3**
+> **Step 2**
 >>
 >> In the **General information** box on the page that appears, retrieve the cluster number under the mention **Cluster** (3 digits between `0` and `9`) and the filer number under the mention **Filer**.
 >>
 >> ![Cluster and Filer number](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-cluster-and-filer.png){.thumbnail}
+<!-- CP-STEPS-END:find-cluster-and-filer -->
 
 ## Go further
 

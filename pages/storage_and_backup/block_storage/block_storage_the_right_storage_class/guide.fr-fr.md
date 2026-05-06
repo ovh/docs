@@ -1,12 +1,14 @@
 ---
 title: Choisir la bonne classe de Block Storage
 excerpt: Découvrez comment choisir la bonne classe de Block Storage OVHcloud. Comparez performances, coûts et cas d’usage pour optimiser votre stockage en termes de prix et d’efficacité.
-updated: 2025-12-15
+updated: 2026-05-05
 ---
 
 ## Objectif
 
-Ce guide vous aide à comprendre les différentes classes de Block Storage OVHcloud et à choisir celle qui correspond le mieux à vos besoins. Découvrez les niveaux de performance, les considérations tarifaires et les cas d’usage recommandés afin de prendre des décisions de stockage éclairées. 
+**Ce guide vous aide à comprendre les différentes classes de Block Storage OVHcloud et à choisir celle qui correspond le mieux à vos besoins.**
+
+Découvrez les niveaux de performance, les considérations tarifaires et les cas d’usage recommandés pour prendre des décisions de stockage éclairées.
 
 ## Présentation du Block Storage
 
@@ -22,7 +24,7 @@ Nos classes de Block Storage sont conçues pour répondre aux différents besoin
 
 La classe **Regional Classic Volume** offre une haute disponibilité en répliquant automatiquement les données dans trois zones de disponibilité au sein d'une région (3-AZ). Les volumes sont pris en charge par le stockage NVMe over Fabric pour un accès rapide, cohérent et fiable.
 
-Afin de garantir la continuité du service même en cas de défaillance d'une zone de disponibilité, cette classe prend également en charge le [Multi-Attach](/pages/public_cloud/compute/classic_block_multi_az_limitations). Cela permet à plusieurs instances situées dans différentes zones de disponibilité de se connecter simultanément et d'utiliser le même volume.
+Pour garantir la continuité du service même en cas de défaillance d'une zone de disponibilité, cette classe prend également en charge le [Multi-Attach](/pages/public_cloud/compute/classic_block_multi_az_limitations). Cela permet à plusieurs instances situées dans différentes zones de disponibilité de se connecter simultanément et d'utiliser le même volume.
 
 Cette classe est adaptée aux workloads nécessitant une haute disponibilité et une forte résilience, comme les bases de données critiques et les applications distribuées.
 
@@ -32,20 +34,21 @@ La classe **Classic Volume** est idéale pour les besoins applicatifs quotidiens
 
 Cette classe convient aux workloads standards où la faible latence et la fiabilité sont importantes, mais où la réplication multi-zone n’est pas nécessaire.
 
-### High Speed Volume
+### High Speed Volume Gen2
 
-La classe **High Speed Volume** est proposée en deux générations, offrant des profils de performance différents :
+La classe **High Speed Volume Gen2** offre des performances évolutives qui augmentent avec la taille du volume, ce qui en fait une solution idéale pour les workloads intensifs :
 
-- Gen 1 : Jusqu’à 3 000 IOPS et 128 Mo/s – adaptée aux workloads standard nécessitant une vitesse élevée.
-- Gen 2 : 30 IOPS/Go (jusqu'à 20 000 IOPS) et 0,5 Mo/s par Go (jusqu'à 512 Mo/s) – recommandée pour les applications intensives nécessitant un maximum d’I/O et de débit.
+- **IOPS** : 30 IOPS/Go (base 3 000 IOPS pour 10–100 Go, jusqu’à 20 000 IOPS)
+- **Débit** : 0,5 Mo/s/Go (base 50 Mo/s pour 10–100 Go, jusqu’à 512 Mo/s)
+- **Taille maximale** : 12 To
 
-Choisissez Gen 1 pour les workloads haute vitesse classiques, et Gen 2 pour les workloads lourds tels que l’analytique, les grandes bases de données ou le calcul haute performance.
+Cette classe est recommandée pour les workloads lourds tels que l’analytique, les grandes bases de données et le calcul haute performance.
 
 ### Tableau comparatif
 
 | Classe de stockage | Cas d’usage | Performance | Régions disponibles | SLA de disponibilité | Réplication | Notes |
 | --- | --- | --- | --- | --- | --- | --- |
-| **High Speed Volume** | Workloads haute performance, analytique, grandes bases de données | **Gen 1** : jusqu’à 3 000 IOPS, 128 Mo/s <br><br> **Gen 2** : 30 IOPS/Go (jusqu'à 20 000 IOPS), 0,5 Mo/s par Go (jusqu'à 512 Mo/s) | 3-AZ, 1-AZ, Local Zones | 99,9 % | Zonale | NVMe optimisé, performance évolutive |
+| **High Speed Volume Gen2** | Workloads haute performance, analytique, grandes bases de données | 30 IOPS/Go (base 3 000 IOPS, jusqu’à 20 000 IOPS), 0,5 Mo/s/Go (base 50 Mo/s, jusqu’à 512 Mo/s), max 12 To | 3-AZ, 1-AZ, Local Zones | 99,9 % | Zonale | NVMe optimisé, performance évolutive |
 | **Regional Classic Volume** | Applications critiques, systèmes distribués | 500 IOPS garantis, 64 Mo/s | 3-AZ | 99,99 % | Multi-zone | NVMe over Fabric, haute disponibilité |
 | **Classic Volume** | Workloads quotidiens, machines virtuelles, sauvegardes | 500 IOPS garantis, 64 Mo/s | 1-AZ, Local Zones | 99,9 % | Zonale | NVMe over Fabric, performance standard |
 
@@ -73,7 +76,7 @@ Chaque type de volume Block Storage est également disponible en version chiffr�
 Les volumes chiffrés peuvent être créés directement depuis l’espace client OVHcloud ou via les outils CLI/API en précisant le type de volume avec le suffixe `-luks` (par exemple : classic-luks ou highspeed-luks). Cela permet de protéger facilement les données sensibles tout en conservant les mêmes performances et fonctionnalités que les volumes standard.
 
 > [!primary]
-> Les volumes chiffrés n’ont aucun impact sur les performances.
+> Pour les volumes chiffrés de grande taille (plus de 800 Gio), les performances peuvent être inférieures à la qualité de service (QoS) attendue pour le volume, avec une baisse pouvant atteindre 20 % du débit pour la technologie High Speed Gen2. L'impact varie en fonction de la mise en œuvre choisie par le client.
 
 ## Cas d’usage
 
@@ -101,6 +104,6 @@ Les volumes Block Storage peuvent être déployés avec différentes options de 
 
 [Modifier un Volume Block Storage](/pages/public_cloud/compute/switch_volume_type)
 
-Si vous avez besoin d’une formation ou d’une assistance technique pour la mise en œuvre de nos solutions, contactez votre représentant commercial ou cliquez sur [ce lien](/links/professional-services) pour obtenir un devis et demander une analyse personnalisée de votre projet par notre équipe Professional Services.
+Si vous avez besoin d’une formation ou d’une assistance technique pour la mise en œuvre de nos solutions, contactez votre représentant commercial ou adressez-vous à notre [équipe Professional Services](/links/professional-services) pour obtenir un devis et demander une analyse personnalisée de votre projet.
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).

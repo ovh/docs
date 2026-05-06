@@ -1,7 +1,7 @@
 ---
-title: Cold Archive - Getting started with Cold Archive (EN)
+title: Cold Archive - Getting started with Cold Archive
 excerpt: This guide shows you how to manage your data with Cold Archive
-updated: 2026-01-12
+updated: 2026-03-06
 ---
 
 > [!warning]
@@ -24,7 +24,14 @@ updated: 2026-01-12
 Cold Archive provides long-term data storage by archiving bucket objects onto physical tapes.
 Restoration may take some time since data is read from tapes.
 
-**This guide explains how to set up and manage storage on tapes with Cold Archive, in coexistence with your Object Storage.**
+As explained in detail in the [Cold Archive FAQ](/pages/storage_and_backup/object_storage/cold_archive_faq), there are two ways of consuming Cold Archive:
+
+- **Cold Archive v1, a standalone bucket-granular Cold Archive solution (legacy offering).**
+- **Cold Archive v2, an Object Storage class/tier that allows archiving individual objects within a container.**
+
+Although there are two underlying ways of consuming Cold Archive, we continue to refer to the solution as 'Cold Archive' in all customer-facing materials, including the product page and customer experience, without explicitly mentioning 'v1' or 'v2'.
+
+**This guide explains how to set up and manage storage on tapes with Cold Archive v1 (legacy offering), in coexistence with your Object Storage.**
 
 ## Requirements
 
@@ -35,10 +42,10 @@ Restoration may take some time since data is read from tapes.
 
 > [!primary]
 >
-> You can find the Cold Archive storage presentation and workflow [here](/pages/storage_and_backup/object_storage/cold_archive_overview).
+> You can find the Cold Archive v1 presentation and workflow [here](/pages/storage_and_backup/object_storage/cold_archive_overview).
 >
 
-This section explains the step-by-step process to configure, archive, restore, and delete buckets with Cold Archive, in coexistence with your Object Storage.
+This section explains the step-by-step process to configure, archive, restore, and delete buckets with Cold Archive v1, in coexistence with your Object Storage.
 
 In this tutorial, **awscli aliases** are used to simplify the commands.
 
@@ -85,7 +92,7 @@ aws --endpoint-url https://s3.rbx-archive.io.cloud.ovh.net s3api list-multipart-
 To add objects to the bucket you wish to archive, use the following command:
 
 ```bash
-aws --endpoint-url https://s3.rbx-archive.io.cloud.ovh.net s3api put-object --bucket <bucket-name> --key <object-name> --body <object-name>
+aws --endpoint-url https://s3.rbx-archive.io.cloud.ovh.net s3api put-object --bucket <bucket_name> --key <object_name> --body <object_name>
 ```
 
 > [!primary]
@@ -118,7 +125,7 @@ aws --endpoint-url https://s3.rbx-archive.io.cloud.ovh.net s3api put-object --bu
 
 ### Archive a bucket with retention lock (WORM Compliance)
 
-By default, an archive is not locked i.e you can still delete an archive after it has been written to tapes. To ensure your archive follows the WORM (Write Once Read Many) model, you can set a retention period in your intelligent tiering configuration using the `OVH_ARCHIVE_LOCK` access tier and a number of days. The archive will be then locked until the current date + the number of days specified.
+By default, an archive is not locked i.e., you can still delete an archive after it has been written to tapes. To ensure your archive follows the WORM (Write Once, Read Many) model, you can set a retention period in your intelligent tiering configuration using the `OVH_ARCHIVE_LOCK` access tier and a number of days. The archive is then locked until the current date + the number of days specified.
 
 > [!primary]
 >
@@ -126,12 +133,14 @@ By default, an archive is not locked i.e you can still delete an archive after i
 > Unlike the previous intelligent tiering configuration, by using the `OVH_ARCHIVE_LOCK` access tier, the `Days` attribute will be taken into account in calculating the lock duration and must be a positive integer.
 >
 
+Replace `30` with the number of days you want to lock the archive for.
+
 ```json
 {
     "Id": "myid",
     "Status": "Enabled",
     "Tierings": [
-        {"Days": <retention_in_days>, "AccessTier": "OVH_ARCHIVE_LOCK"}
+        {"Days": 30, "AccessTier": "OVH_ARCHIVE_LOCK"}
     ]
 }
 ```
@@ -139,7 +148,7 @@ By default, an archive is not locked i.e you can still delete an archive after i
 > [!primary]
 >
 > You cannot have multiple intelligent tiering configurations on your archive.
-> Similarly, you cannot have multiple access tiers in your intelligent tiering configuration i.e either you use the `OVH_ARCHIVE` access tier or you use the `OVH_ARCHIVE_LOCK` access tier but not both.
+> Similarly, you cannot have multiple access tiers in your intelligent tiering configuration i.e., either you use the `OVH_ARCHIVE` access tier or you use the `OVH_ARCHIVE_LOCK` access tier but not both.
 >
 
 ### Lock an already archived bucket
@@ -156,7 +165,7 @@ If you want to edit the retention period, similarly, re-apply the intelligent ti
 
 > [!primary]
 >
-> You cannot reduce a previously set retention period i.e the new retention period (current date + number of days) must be higher than the previous retention period.
+> You cannot reduce a previously set retention period i.e., the new retention period (current date + number of days) must be higher than the previous retention period.
 > Example:
 >
 > - On 2024-02-22 you have set up a 10 days lock, the retention period will be until the 2024-03-03. 
@@ -181,7 +190,7 @@ If you want to edit the retention period, similarly, re-apply the intelligent ti
 >>
 
 - Bucket status changes to "Restoring".
-- Once the restoration is complete, ojects become accessible in read-only mode for 30 days. After this period, a new restoration operation must be launched to access the archived objects.
+- Once the restoration is complete, objects become accessible in read-only mode for 30 days. After this period, a new restoration operation must be launched to access the archived objects.
 - Objects in the archived bucket can still be listed at any time.
 
 ### Delete an archive
@@ -234,7 +243,7 @@ aws s3 rb s3://<bucket_name>
 >> Once an intelligent-tiering configuration has been pushed (via a `put-bucket-intelligent-tiering-configuration` operation) and until it is removed (via a `delete-bucket-intelligent-tiering-configuration` operation), the status of a bucket is readable through:
 >>
 >> ```bash
->> aws --endpoint-url https://s3.rbx-archive.io.cloud.ovh.net >> s3api get-bucket-tagging --bucket <bucket_name>
+>> aws --endpoint-url https://s3.rbx-archive.io.cloud.ovh.net s3api get-bucket-tagging --bucket <bucket_name>
 >> ```
 >>
 >> If you have locked your archive, you can check the retention period using the `get-bucket-tagging command`.

@@ -15,7 +15,17 @@ In such circumstances, you can use the rescue mode to reconfigure your instance 
 ## Requirements
 
 - A [Public Cloud instance](/links/public-cloud/compute) in your OVHcloud account
-- Access to the [OVHcloud Control Panel](/links/manager)
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Navigation path:** `Public Cloud`{.action} > Select your project
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## Instructions
 
@@ -25,7 +35,7 @@ In such circumstances, you can use the rescue mode to reconfigure your instance 
 
 ### Step 1: Activating rescue mode
 
-Log in to the [OVHcloud Control Panel](/links/manager), go to the `Public Cloud`{.action} section and select the Public Cloud project concerned. Then click on `Instances`{.action} in the left-hand menu.
+Click on `Instances`{.action} in the left-hand menu.
 
 Click on `...`{.action} in the row of the instance concerned and select `Reboot in rescue mode`{.action}.
 

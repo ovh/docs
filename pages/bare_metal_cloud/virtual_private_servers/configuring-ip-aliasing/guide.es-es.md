@@ -48,7 +48,7 @@ Esta guía explica las configuraciones de las distribuciones y sistemas operativ
 
 > [!primary]
 >
-En cuanto a las distintas versiones de distribuciones, tenga en cuenta que puede haber cambiado el procedimiento adecuado para configurar la interfaz de red y los nombres de archivos. Si necesita ayuda, le recomendamos que consulte la documentación relativa a su sistema operativo.
+> En cuanto a las distintas versiones de distribuciones, tenga en cuenta que puede haber cambiado el procedimiento adecuado para configurar la interfaz de red y los nombres de archivos. Si necesita ayuda, le recomendamos que consulte la documentación relativa a su sistema operativo.
 >
 
 **Tome nota de la siguiente terminología que se utilizará en los ejemplos de código y en las instrucciones que se explican en esta guía:**
@@ -456,7 +456,7 @@ En los ejemplos siguientes, utilizaremos el editor de texto `nano`. En algunos s
 >> 2. Haga clic derecho en `Ethernet`{.action};
 >> 3. Haga clic en `Properties`{.action};
 >> 4. Seleccione `Internet Protocol Version 4 (TCP/IPv4)`{.action} y haga clic en `Properties`{.action};
->> 5. Haga clic en `Use the following IP address`{.action} e introduzca la IP principal del servidor, la máscara de subred y la puerta de enlace por defecto obtenidas con el comando `ipconfig`{.action} anterior. En el cuadro "Preferred DNS Server", escriba "213.186.33.99".
+>> 5. Haga clic en `Use the following IP address`{.action} e introduzca la IP principal del servidor, la máscara de subred y la puerta de enlace por defecto obtenidas con el comando `ipconfig`{.action} anterior. En el cuadro "Preferred DNS Server", escriba `213.186.33.99`.
 >>
 >> ![change the ip configuration](images/configure-main-ip.png){.thumbnail}
 >>

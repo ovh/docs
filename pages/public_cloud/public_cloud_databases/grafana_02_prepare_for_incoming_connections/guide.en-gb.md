@@ -13,16 +13,26 @@ Public Cloud Databases allow you to focus on building and deploying cloud applic
 ## Requirements
 
 - A [Public Cloud project](/links/public-cloud/public-cloud) in your OVHcloud account
-- Access to the [OVHcloud Control Panel](/links/manager)
 - A Dashboards service running on your OVHcloud Public Cloud Databases ([this guide](/pages/public_cloud/public_cloud_databases/databases_01_order_control_panel) can help you to meet this requirement)
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Navigation path:** `Public Cloud`{.action} > Select your project
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## Instructions
 
 ### Configure your Dashboards instance to accept incoming connections
 
+<!-- CP-STEPS-START:configure-dashboards-instance-accept-incoming-connections -->
 Before making a connection, we need to verify that our Dashboards instance is correctly configured.
-
-Log in to your [OVHcloud Control Panel](/links/manager) and open your `Public Cloud`{.action} project. Click on `Data Anlaysis`{.action} in the left-hand navigation bar and select your Dashboards instance.
+Click on `Data Analysis`{.action} in the left-hand navigation bar and select your Dashboards instance.
 
 #### Step 1: Verify your user roles and password
 
@@ -50,10 +60,12 @@ You can edit and retract database access via the `...`{.action} button in the IP
 >
 > If you want to allow connections from the outside, you can enter the IP 0.0.0.0/0. Please use it carefully.
 >
+<!-- CP-STEPS-END:configure-dashboards-instance-accept-incoming-connections -->
 
 ### Connect to your Dashboards Instance
 
-Log in to your [OVHcloud Control Panel](/links/manager) and open your `Public Cloud`{.action} project. Click on `Data Analysis`{.action} in the left-hand navigation bar and select your Dashboards instance, to collect the URI in the `Login informations` section of the `General information`{.action} tab.
+<!-- CP-STEPS-START:connect-to-your-dashboards-instance -->
+In your Dashboards instance, collect the URI in the `Login informations` section of the `General information`{.action} tab.
 
 ![Login information tab](images/grafana_02_prepare_for_incoming_connections-20220530065929522.png){.thumbnail}
 
@@ -64,6 +76,7 @@ Then connect to your Dashboards instance:
 Congratulations! You are now connected to your Dashboards instance.
 
 ![Grafana first connection](images/grafana_02_prepare_for_incoming_connections-20220530071725524.png)
+<!-- CP-STEPS-END:connect-to-your-dashboards-instance -->
 
 Learn more about Grafana® in the following tutorial: [Grafana fundamentals](https://grafana.com/tutorials/grafana-fundamentals/?utm_source=grafana_gettingstarted)
 

@@ -40,7 +40,7 @@ De seguida, poderá verificar a configuração dos discos:
 lsblk
 ```
 
-A partição correspondente ao modo rescue (`sda1`, neste exemplo) é montada no diretório `/` .Quanto a este, o disco do VPS é denominado `sdb` e não deve ter nenhum ponto de montagem.
+A partição correspondente ao modo rescue (`sda1`, neste exemplo) é montada no diretório `/`. Quanto a este, o disco do VPS é denominado `sdb` e não deve ter nenhum ponto de montagem.
 
 Por exemplo:
 

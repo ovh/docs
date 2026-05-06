@@ -18,14 +18,21 @@ Die Änderung dieser Kontakte erlaubt es, die technische Verwaltung der Dienste 
 ## Voraussetzungen
 
 - Sie haben ein [Public Cloud](/links/public-cloud/public-cloud) Projekt in Ihrem OVHcloud Kunden-Account.
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 - Administrator- und Rechnungskontakt gehören zu derselben OVHcloud Filiale.
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+### Zugriff auf das OVHcloud Kundencenter
+- **Direkter Link:** [Public Cloud Projekte](/links/control-panel/publiccloud-projects)
+- **Navigationspfad:** `Public Cloud`{.action} > Wählen Sie Ihr Projekt aus
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## In der praktischen Anwendung
 
 ### Die Kontakte ändern
 
-Loggen Sie sich in [OVHcloud Kundencenter](/links/manager) ein, gehen Sie in den Bereich `Public Cloud`{.action} und wählen Sie das betreffende Public Cloud Projekt aus. Klicken Sie auf `Kontakt & Rechte`{.action} im linken Menü unter **Einstellungen**.
+Klicken Sie auf `Kontakt & Rechte`{.action} im linken Menü unter **Einstellungen**.
 
 Auf dieser Seite können Sie die Administrator- und Rechnungskontakte Ihres Projekts einsehen.
 

@@ -4,6 +4,50 @@ excerpt: Découvrez comment déployer des applications préinstallées sur vos i
 updated: 2021-09-07
 ---
 
+<style>
+/* ---FAQ only--- */
+details {
+    margin: 0.1rem 1;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    background: #ffffffff;
+}
+details > summary {
+    padding: 0.1rem 1rem;
+    font-weight: 500;
+    color: #268fd4ff;
+    cursor: pointer;
+    list-style: none;
+}
+details > summary::before {
+    content: '\25B6';
+    display: inline-block;
+    margin-right: 0.5ch;
+    transition: transform 0.2s;
+}
+details[open] > summary::before {
+    content: '\25BC';
+}
+details:hover {
+    border: 1px solid #147DE8;
+    border-radius: 4px;
+    transition: border-color 0.5s ease;
+}
+details[open] > summary {
+    background: #ffffffff;
+}
+details > :not(summary) {
+    padding: 0.25rem 0.5rem;
+    box-sizing: border-box;
+    list-style-position: inside;
+}
+.smallish-gap {
+    display: block;
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
+}
+</style>
+
 ## Objectif
 
 OVHcloud offre aux clients Public Cloud des images d'applications préinstallées pour un déploiement rapide et facile en quelques clics.
@@ -13,6 +57,17 @@ OVHcloud offre aux clients Public Cloud des images d'applications préinstallée
 ## Prérequis
 
 - Une [instance Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps) dans votre compte OVHcloud.
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Accès à l’espace client OVHcloud
+
+- **Lien direct :** [Projets Public Cloud](/links/control-panel/publiccloud-projects)
+- **Pour accéder à vos services :** `Public Cloud`{.action} > Sélectionnez votre projet
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## En pratique
 
@@ -128,14 +183,23 @@ Vous trouverez ci-dessous les premières étapes relatives à la mise en service
 
 Aucune autre étape n'est nécessaire pour terminer la première configuration de cette application.
 
-> [!faq]
->
-> Puis-je utiliser mes propres serveurs DNS ?
->> Oui, vous le pouvez. Assurez-vous de créer des enregistrements « GLUE » avec votre bureau d'enregistrement de domaine. Par exemple, si vous voulez "ns1.mydomain.com" et "ns2.mydomain.com", vous devez configurer des enregistrements « GLUE » pour que les deux pointent sur l'adresse IP de votre serveur. Si votre domaine est enregistré avec OVHcloud, vous pouvez suivre [ce guide](/pages/web_cloud/domains/glue_registry#etape-1-ajouter-les-enregistrements-glue). Notez que la création peut prendre 24 heures.
-> Pourquoi définir le mot de passe root?
->> WHM utilise par défaut l'utilisateur root pour l'authentification. L'URL à usage unique permet d'accéder à la première configuration et de modifier le mot de passe root. La prochaine fois que vous vous connecterez à WHM, vous devrez utiliser l'utilisateur root et le mot de passe que vous avez défini.
-> Où est ma licence pour cPanel?
->> OVHcloud ne fournit actuellement aucune licence pour les serveurs Public Cloud autres que les licences Windows. Vous devez acheter une licence auprès d'un fournisseur tiers pour cPanel. Pour cela, nous vous recommandons de voir directement avec l'éditeur de cPanel.
+/// details | Puis-je utiliser mes propres serveurs DNS ?
+
+Oui, vous le pouvez. Assurez-vous de créer des enregistrements « GLUE » avec votre bureau d'enregistrement de domaine. Par exemple, si vous voulez "ns1.mydomain.com" et "ns2.mydomain.com", vous devez configurer des enregistrements « GLUE » pour que les deux pointent sur l'adresse IP de votre serveur. Si votre domaine est enregistré avec OVHcloud, vous pouvez suivre [ce guide](/pages/web_cloud/domains/glue_registry#etape-1-ajouter-les-enregistrements-glue). Notez que la création peut prendre 24 heures.
+
+///
+
+/// details | Pourquoi définir le mot de passe root?
+
+WHM utilise par défaut l'utilisateur root pour l'authentification. L'URL à usage unique permet d'accéder à la première configuration et de modifier le mot de passe root. La prochaine fois que vous vous connecterez à WHM, vous devrez utiliser l'utilisateur root et le mot de passe que vous avez défini.
+
+///
+
+/// details | Où est ma licence pour cPanel?
+
+OVHcloud ne fournit actuellement aucune licence pour les serveurs Public Cloud autres que les licences Windows. Vous devez acheter une licence auprès d'un fournisseur tiers pour cPanel. Pour cela, nous vous recommandons de voir directement avec l'éditeur de cPanel.
+
+///
 
 ### Plesk
 
@@ -152,10 +216,11 @@ Vous trouverez ci-dessous les premières étapes relatives à la mise en service
 
 Aucune autre étape n'est nécessaire pour terminer la première configuration de cette application.
 
-> [!faq]
->
-> Où est ma licence Plesk?
->> OVHcloud ne fournit actuellement aucune licence pour les serveurs Public Cloud autres que les licences Windows. Les clients doivent acheter une licence auprès d'un fournisseur tiers pour Plesk. Pour cela, nous vous recommandons de voir directement avec l'éditeur de Plesk.
+/// details | Où est ma licence Plesk?
+
+OVHcloud ne fournit actuellement aucune licence pour les serveurs Public Cloud autres que les licences Windows. Les clients doivent acheter une licence auprès d'un fournisseur tiers pour Plesk. Pour cela, nous vous recommandons de voir directement avec l'éditeur de Plesk.
+
+///
 
 ### Virtualmin
 

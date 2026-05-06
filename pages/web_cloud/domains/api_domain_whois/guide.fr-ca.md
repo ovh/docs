@@ -1,7 +1,7 @@
 ---
 title: "Configurer l'affichage de ses données dans le Whois"
 excerpt: "Utilisez l'API publique OVHcloud pour configurer l'affichage de vos données dans le Whois"
-updated: 2022-05-05
+updated: 2026-02-10
 ---
 
 <!-- Rappel à mettre au début de chaque page -->
@@ -33,7 +33,7 @@ Pensez à remplacer [https://eu.api.ovh.com](https://eu.api.ovh.com) par [https:
 
 Le Whois est un service de recherche permettant d'obtenir des informations sur un nom de domaine.
 Ces informations peuvent avoir des usages variés mais sont souvent utilisées pour retrouver et contacter
-le propriétaire d'un nom de domaine. Celles-ci sont présentées sous forme de texte non standardisé
+le titulaire d'un nom de domaine. Celles-ci sont présentées sous forme de texte non standardisé
 et étaient jusqu'à récemment affichées en clair.
 
 Le RDAP a été conçu comme un successeur au Whois et présente plusieurs avantages par rapport à celui-ci, notamment :
@@ -47,9 +47,9 @@ aux contacts d'un nom de domaine dans le Whois et le RDAP.
 
 ## Divulgation des informations (optin)
 
-Depuis la mise en place du RGPD, les données du Whois concernant les contacts `admin`, `tech`, `billing` et propriétaire (`owner`) sont cachées par défaut
+Depuis la mise en place du RGPD, les données du Whois concernant les contacts `admin`, `tech`, `billing` et `owner` (titulaire) sont cachées par défaut
 si ce sont des personnes physiques.
-Cependant, si l'utilisateur le souhaite, il est possible de divulguer une partie ou l'intégralité des données en fonction de
+Cependant, si l'utilisateur le souhaite, il est possible de divulguer l'intégralité des données en fonction de
 ce qui est permis par les règles d'optin appliquées sur le nom de domaine.
 
 ### Récupération des règles d'optin
@@ -95,9 +95,9 @@ L'API suivante permet de connaître les règles de divulgation applicables sur u
 
 La réponse ci-dessus indique les trois types de règles qu'il est possible de rencontrer :
 
--   Le contact `admin` est absent de la réponse, ce qui signifie qu'il n'est pas possible de configurer la divulgation des données Whois le concernant.
--   La présence du contact `tech` avec un tableau de `field` vide signifie qu'il est possible de divulguer les informations. Le choix des informations divulguées n'est cependant pas personnalisable (c'est tout ou rien).
--   Concernant le contact `owner`, c'est la règle la plus personnalisable. La présence des champs dans le nœud `field` indique qu'il est possible de choisir quels champs seront divulgués dans le Whois.
+- Le contact `admin` est absent de la réponse, ce qui signifie qu'il n'est pas possible de configurer la divulgation des données Whois le concernant.
+- La présence du contact `tech` avec un tableau de `field` vide signifie qu'il est possible de divulguer les informations. Le choix des informations divulguées n'est cependant pas personnalisable (c'est tout ou rien).
+- Concernant le contact `owner`, la présence des champs dans le nœud `field` signifie que les informations sont masquées. Le choix des informations divulguées n'est cependant pas personnalisable : l’affichage est soit intégral, soit inexistant.
 
 ### Récupération de la configuration d'optin d'un nom de domaine
 
@@ -122,7 +122,18 @@ L'API suivante permet de récupérer la configuration de divulgation appliquée 
 >>   },
 >>   {
 >>     "type": "owner",
->>     "fields": ["email", "phone"]
+>>     "fields": [
+>>       "address",
+>>       "city",
+>>       "country",
+>>       "email",
+>>       "fax",
+>>       "name",
+>>       "organisation",
+>>       "phone",
+>>       "province",
+>>       "zip"
+>>     ]
 >>   }
 >> ]
 >> ```
@@ -133,7 +144,7 @@ La réponse ci-dessus peut être interprétée de la manière suivante :
 
 - Les contact `admin` et `billing` sont absents de la réponse, ce qui signifie qu'aucune information les concernant ne sera affichée dans le Whois.
 - La présence du contact `tech` avec un tableau vide dans le champ `fields` signifie que toutes les informations du contact sont à divulguer et seront affichées dans le Whois.
-- Concernant le contact `owner`, on peut voir que seuls l'`email` et le `phone` sont configurés pour être divulgués et seront affichés dans le Whois.
+- Concernant le contact `owner`, on peut voir que les champs sont configurés pour être divulgués et seront affichés dans le Whois.
 
 ### Modification de la configuration optin
 
@@ -159,7 +170,18 @@ L'API suivante permet de modifier la configuration de divulgation appliquée sur
 >>   },
 >>   {
 >>     "type": "owner",
->>     "fields": ["email", "phone"]
+>>     "fields": [
+>>       "address",
+>>       "city",
+>>       "country",
+>>       "email",
+>>       "fax",
+>>       "name",
+>>       "organisation",
+>>       "phone",
+>>       "province",
+>>       "zip"
+>>     ]
 >>   }
 >> ]
 >> ```
@@ -172,7 +194,18 @@ L'API suivante permet de modifier la configuration de divulgation appliquée sur
 >>   },
 >>   {
 >>     "type": "owner",
->>     "fields": ["email", "phone"]
+>>     "fields": [
+>>       "address",
+>>       "city",
+>>       "country",
+>>       "email",
+>>       "fax",
+>>       "name",
+>>       "organisation",
+>>       "phone",
+>>       "province",
+>>       "zip"
+>>     ]
 >>   }
 >> ]
 >> ```
@@ -182,8 +215,8 @@ L'API suivante permet de modifier la configuration de divulgation appliquée sur
 Au-delà de la divulgation des données sur le Whois en fonction des différentes règles disponibles pour les extensions,
 OVHcloud donne la possibilité d'obfusquer les adresses e-mail des contacts dans le Whois.
 
-Avec la mise en place du RGPD, cette fonctionnalité est activée par défaut pour tous les domaines.
-Il est néanmoins possible de manipuler cette obfuscation pour la désactiver sur un domaine spécifique.
+Avec la mise en place du RGPD, cette fonctionnalité est activée par défaut pour tous les noms de domaine.
+Il est néanmoins possible de manipuler cette obfuscation pour la désactiver sur un nom de domaine spécifique.
 
 ### Récupération des règles d'obfuscation
 

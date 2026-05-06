@@ -15,12 +15,21 @@ Our VPS services offer flexibility, reliability, and performance for a variety o
 ## Requirements
 
 - A [Virtual Private Server](/links/bare-metal/vps) in your OVHcloud account
-- Access to the [OVHcloud Control Panel](/links/manager)
+
+<!-- CP-NAV-START:baremetal-vps -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [VPS management](/links/control-panel/baremetal-vps)
+- **Navigation path:** `Bare Metal Cloud`{.action} > `Virtual private servers`{.action} > Select your VPS
+
+---
+<!-- CP-NAV-END:baremetal-vps -->
 
 ## Instructions
 
-Log in to the [OVHcloud Control Panel](/links/manager), go to the `Bare Metal Cloud`{.action} section and select your server from `Virtual private servers`{.action}.
-
+<!-- CP-STEPS-START:upgrade-overview -->
 > [!primary]
 >
 > The upgrade options available in your Control Panel depend on the range and model of the selected VPS. The screenshots below are for the purpose of illustration and do not refer to a concrete VPS upgrade scenario.
@@ -28,9 +37,11 @@ Log in to the [OVHcloud Control Panel](/links/manager), go to the `Bare Metal Cl
 From here you can upgrade your vCores (`1`), memory (`2`), or storage (`3`).
 
 ![Upgrade resources](images/vps_upgrade01.png){.thumbnail}
+<!-- CP-STEPS-END:upgrade-overview -->
 
 ### 1. To add **vCores**
 
+<!-- CP-STEPS-START:add-vcores -->
 Under the **Home** tab in the **Your configuration** panel, click `Add vCores by upgrading to the higher range`{.action}.
 
 Choose a new model and click `Next`{.action}.
@@ -48,22 +59,27 @@ Accept (`☑`{.action}) the **Terms & conditions** and click `Next`{.action}.
 Review your changes and click `Order`{.action}.
 
 ![Upgrade resources](images/vps_upgrade05.png){.thumbnail}
+<!-- CP-STEPS-END:add-vcores -->
 
 ### 2. To upgrade **Memory**
 
+<!-- CP-STEPS-START:upgrade-memory -->
 Under the **Home** tab in the **Your configuration** panel, click on the amount of memory you want. The options available depend on the VPS range you currently have.
 
 In the pop‑up window, click `Confirm and pay`{.action} to finalize your order.
 
 ![Upgrade resources](images/vps_upgrade06.png){.thumbnail}
+<!-- CP-STEPS-END:upgrade-memory -->
 
 ### 3. To upgrade **Storage**
 
+<!-- CP-STEPS-START:upgrade-storage -->
 Under the **Home** tab in the **Your configuration** panel, click on the amount of storage you want. The options available depend on the VPS range you currently have.
 
 In the pop‑up window, click `Confirm and pay`{.action} to finalize your order.
 
 ![Upgrade resources](images/vps_upgrade07.png){.thumbnail}
+<!-- CP-STEPS-END:upgrade-storage -->
 
 See our dedicated guide for the next steps: [How to repartition a VPS after a storage upgrade](/pages/bare_metal_cloud/virtual_private_servers/upsize_vps_partition)
 

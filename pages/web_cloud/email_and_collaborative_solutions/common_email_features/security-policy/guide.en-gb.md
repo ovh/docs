@@ -13,7 +13,33 @@ With OVHcloud email services, you can create professional email accounts. In ord
 ## Requirements
 
 - An [OVHcloud email solution](/links/web/emails)
-- Access to the `Web Cloud`{.action} section of the [OVHcloud Control Panel](/links/manager)
+
+<!-- CP-NAV-START:web-mx-plan -->
+<!-- CP-NAV-START:web-email-pro -->
+<!-- CP-NAV-START:web-exchange -->
+---
+
+### OVHcloud Control Panel Access
+
+**MX Plan:**
+
+- **Direct link:** [MX Plan](/links/control-panel/web-mx-plan)
+- **Navigation path:** `Web Cloud`{.action} > `MX Plan`{.action} > Select your MX Plan service
+
+**Email Pro:**
+
+- **Direct link:** [Email Pro](/links/control-panel/web-email-pro)
+- **Navigation path:** `Web Cloud`{.action} > `Email Pro`{.action} > Select your platform
+
+**Exchange:**
+
+- **Direct link:** [Exchange](/links/control-panel/web-exchange)
+- **Navigation path:** `Web Cloud`{.action} > `Exchange`{.action} > Select your platform
+
+---
+<!-- CP-NAV-END:web-exchange -->
+<!-- CP-NAV-END:web-email-pro -->
+<!-- CP-NAV-END:web-mx-plan -->
 
 ## Instructions
 
@@ -24,16 +50,18 @@ The security policy management of your email service has four aspects:
 - strengthening the verification of incoming messages on our servers and to your email addresses (for [Exchange](/links/web/emails-hosted-exchange) accounts only)
 - configuring how so-called “unwanted” messages will be displayed in your inbox (for [Exchange](/links/web/emails-hosted-exchange) accounts only)
 
-To access the security policy of your email service, log in to your [OVHcloud Control Panel](/links/manager) and make sure you are in the `Web Cloud`{.action} section. 
+To access the security policy of your email service, follow the instructions below.
 
-|Emails and Email Pro|Exchange| 
-|---|---| 
-|Click on `MX Plan`{.action} or `Email Pro`{.action} , then click on the solution you want to manage. Click on the `More` tab, then on `Manage security policy`{.action}.|Click on `Microsoft`{.action}, then on `Exchange`{.action}, and select the solution you want to manage. Click on `Security`{.action}.|
+<!-- CP-STEPS-START:access-security-policy -->
+|MX Plan and Email Pro|Exchange|
+|---|---|
+|Click on the `More` tab, then on `Manage security policy`{.action}.|Click on `Security`{.action}.|
 |![exchangesecurity](images/manage-security01.png){.thumbnail}|![exchangesecurity](images/manage-security02.png){.thumbnail}|
 
 > [!primary]
 >
 > If you do not see the `More`{.action} tab appear in the control panel of your `MX Plan`{.action} service, this means that you are on a legacy MX Plan offer. There is no security policy management on the legacy MX Plan solution.
+<!-- CP-STEPS-END:access-security-policy -->
 
 Continue to the aspect(s) you want to modify.
 
@@ -52,7 +80,9 @@ To do this, complete the information below:
 - **Lockout counter reset time**: This field will only appear if a lockout threshold has been set. Specify the time in minutes it takes for the failed connection attempt counter to reset.
 - **Account lockout duration**: This field will only appear if a lockout threshold has been set. Specify the time period in minutes during which the Exchange account will remain locked if the lockout threshold has been reached.
 
+<!-- CP-STEPS-START:enhance-connection-security -->
 Once this information has been entered, you can save these changes for Email and Email Pro solutions by clicking on `Next`{.action}, then `Confirm`{.action}. For the Exchange solution, click `Save changes`{.action}.
+<!-- CP-STEPS-END:enhance-connection-security -->
 
 ### Add complexity to the security of passwords <a name="password-complexity"></a>
 
@@ -66,7 +96,9 @@ To do this, complete the information below:
 - **Keep password history**: This field will only appear if a maximum lifetime has been set. Specify whether previous passwords can be reused again, and if so, for how long.
 - **Minimum password length**: Allows to set a minimum size for password length when a user wants to change it.
 
+<!-- CP-STEPS-START:password-complexity -->
 Once this information has been entered, you can save these changes for Email and Email Pro solutions by clicking on `Next`{.action}, then `Confirm`{.action}. For the Exchange solution, click `Save changes`{.action}.
+<!-- CP-STEPS-END:password-complexity -->
 
 ### Strengthen the verification of incoming messages <a name="incoming-messages-verification"></a> (Exchange only)
 
@@ -77,7 +109,9 @@ To do this, tick the appropriate boxes:
 - **Activate DKIM signature verification**: Define whether our servers should check the DKIM signature of the messages you receive on your Exchange accounts. This action guarantees the authenticity of the sending domain and the integrity of the message, making it possible to identify non-legitimate mailings, which will then be marked as spam.
 - **Activate SPF protection verification**: Define whether our servers must verify that the source of the messages you receive is present in the SPF record of the sender domain. This verification can identify illegitimate mailings, which will then be marked as spam.
 
+<!-- CP-STEPS-START:incoming-messages-verification -->
 Once you have made your choice, confirm these changes by clicking `Save changes`{.action}.
+<!-- CP-STEPS-END:incoming-messages-verification -->
 
 ### Define the display of unwanted messages <a name="unwanted-messages-management"></a>	 (Exchange only)
 
@@ -88,7 +122,9 @@ To do this, tick the appropriate boxes:
 - **Identify SPAM email**: Specify whether our servers should add a tag to identify received messages that are considered "unwanted" as spam.
 - **Move SPAM to junk**: Specify whether our servers should automatically move any "unwanted" messages to the "Junk Email" folder.
 
+<!-- CP-STEPS-START:unwanted-messages-management -->
 Once you have made your choice, confirm these changes by clicking `Save changes`{.action}.
+<!-- CP-STEPS-END:unwanted-messages-management -->
 
 ## Go further
 

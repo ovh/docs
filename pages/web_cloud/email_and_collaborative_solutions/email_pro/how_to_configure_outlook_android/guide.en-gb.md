@@ -31,15 +31,28 @@ You can configure Email Pro accounts on email clients, if they are compatible. T
 - You need to have the Outlook app on your mobile device [Android](https://play.google.com/store/apps/details?id=com.microsoft.office.outlook&hl=en).
 - You must have the login details for the email address you would like to configure.
 
+<!-- CP-NAV-START:web-email-pro -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Email Pro](/links/control-panel/web-email-pro)
+- **Navigation path:** `Web Cloud`{.action} > `Email Pro`{.action} > Select your platform
+
+---
+<!-- CP-NAV-END:web-email-pro -->
+
 ## Instructions
 
-### Add the account <a name="add-account"></a>
+### Add the account <a name=”add-account”></a>
 
+<!-- CP-STEPS-START:server-name-lookup -->
 > [!warning]
 >
 > In our examples, we use the server hint: pro?.mail.ovh.net. You will need to replace the “?” with the number designating the server of your Email Pro service.
 >
-> Find this number in your [OVHcloud Control Panel](/links/manager), in the `Web Cloud`{.action} section, then `Email Pro`{.action}. The server name is visible in the **Connection** box in the `General information`{.action} tab.
+> Click [this link](/links/control-panel/web-email-pro) to access the `Email Pro`{.action} section. The server name is visible in the **Connection** box in the `General information`{.action} tab.
+<!-- CP-STEPS-END:server-name-lookup -->
 
 - **When you start the application for the first time**: A configuration wizard will appear. Tap `Add account`{.action}.
 

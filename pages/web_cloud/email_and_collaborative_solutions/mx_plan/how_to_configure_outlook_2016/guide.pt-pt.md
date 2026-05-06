@@ -1,7 +1,7 @@
 ---
 title: "MX Plan / Zimbra Starter - Configurar o seu endereço de e-mail no Outlook clássico para Windows"
 excerpt: "Descubra como configurar o seu endereço de e-mail MX Plan no Outlook clássico para Windows"
-updated: 2026-01-09
+updated: 2026-03-24
 ---
 
 <style>
@@ -37,6 +37,17 @@ Os endereços de e-mail das ofertas **MX Plan** e [Zimbra Starter](/links/web/em
     - [Zimbra](/links/web/emails-zimbra) Starter (apenas).
 - Ter a [nova versão do Outlook](https://support.microsoft.com/pt-pt/office/getting-started-with-the-new-outlook-for-windows-656bb8d9-5a60-49b2-a98b-ba7822bc7627) instalada no Windows.
 - Possuir as credenciais do endereço de e-mail que deseja configurar.
+
+<!-- CP-NAV-START:web-mx-plan -->
+---
+
+### Acesso à Área de Cliente OVHcloud
+
+- **Ligação direta:** [MX Plan](/links/control-panel/web-mx-plan)
+- **Caminho de navegação:** `Web Cloud`{.action} > `MX Plan`{.action} > Selecione o seu serviço MX Plan
+
+---
+<!-- CP-NAV-END:web-mx-plan -->
 
 /// details | Informações relativas à gestão e configuração dos serviços OVHcloud
 
@@ -79,7 +90,75 @@ Este manual fornece as instruções necessárias para realizar as operações ma
 
 ![Outlook](images/config-outlook-mxplan01.png){.thumbnail}
 
+**Em Windows 11, a interface clássica do Outlook pode variar quando adiciona uma conta.**
+
+Consoante a história de utilização do Outlook no computador em questão, uma configuração específica pode provocar a exibição de uma interface diferente. Em alguns casos, a interface dita "moderna" (**interface 1**) pode ser desativada a favor da interface clássica (**interface 2**).
+
+Por isso, convidamo-lo a consultar o capítulo correspondente à interface exibida no seu ecrã.
+
+#### Configuração com a interface 1 <a name="add-account-int1"></a>
+
 Para configurar o seu endereço de e-mail, siga as etapas clicando nos separadores abaixo.
+
+> [!warning]
+>
+> É necessário preencher corretamente o valor correspondente à sua localização (**EUROPA** ou **AMÉRICA / ÁSIA-PACÍFICO**).
+
+> [!tabs]
+> **Passo 1**
+>>
+>> Introduza o seu endereço de e-mail, depois clique em `Opções avançadas`{.action}.
+>>
+>> Marque a caixa `Configurar a minha conta manualmente`{.action} e clique em `Conexão`{.action}.
+>>
+>> ![Outlook](images/config-outlook-legacy-mxplan02.png){.thumbnail .h-500}
+>>
+> **Passo 2**
+>>
+>> Entre os tipos de contas propostos, escolha IMAP ou POP.
+>>
+>> Recomendamos a utilização do protocolo IMAP.
+>>
+>> ![Outlook](images/config-outlook-legacy-mxplan03.png){.thumbnail .h-500}
+>>
+> **Passo 3**
+>>
+>> Introduza a palavra-passe do seu endereço de e-mail, depois clique em `Conectar-se`{.action}.
+>>
+>> ![Outlook](images/config-outlook-legacy-mxplan04.png){.thumbnail .h-500}
+>>
+> **Passo 4**
+>>
+>> Se o Outlook não conseguir configurar automaticamente a conta, aparece a seguinte janela.
+>>
+>> Clique em `Modificar as definições da conta`{.action}.
+>>
+>> ![Outlook](images/config-outlook-legacy-mxplan05.png){.thumbnail .h-500}
+>>
+> **Passo 5**
+>>
+>> Na secção **Correio de entrada**, introduza:
+>>
+>> - Servidor:
+>>     - **EUROPA**: imap.mail.ovh.net **ou** ssl0.ovh.net
+>>     - **AMÉRICA/ÁSIA-PACÍFICO**: imap.mail.ovh.ca
+>> - Porta: **993**
+>> - Método de encriptação: **SSL/TLS**
+>>
+>> Na secção **Correio de saída**, introduza:
+>>
+>> - Servidor:
+>>     - **EUROPA**: smtp.mail.ovh.net **ou** ssl0.ovh.net
+>>     - **AMÉRICA/ÁSIA-PACÍFICO**: smtp.mail.ovh.ca
+>> - Porta: **465**
+>> - Método de encriptação: **SSL/TLS**
+>>
+>> Clique em `Seguinte`{.action} para validar.
+>>
+>> ![Outlook](images/config-outlook-legacy-mxplan06.png){.thumbnail .h-500}
+>>
+
+#### Configuração com a interface 2 <a name="add-account-int2"></a>
 
 > [!warning]
 >
@@ -156,18 +235,49 @@ Se tiver de efetuar uma operação suscetível de causar a perda dos dados da su
 
 ### Modificar os parâmetros existentes
 
-Se a sua conta de e-mail já está configurada e tem de aceder aos parâmetros da conta para os alterar:
+**Em Windows 11, a interface clássica do Outlook pode variar quando modifica uma conta.**
 
-- Vá a `Ficheiro`{.action} a partir da barra de menu no topo do seu ecrã.
-- Selecione a conta a modificar no menu pendente **(1)**.
-- Clique em `Definições da conta`{.action} **(2)** em baixo.
-- Clique em `Definições da conta...`{.action} **(3)** para aceder à janela de definições.
+Consoante a história de utilização do Outlook no computador em questão, uma configuração específica pode provocar a exibição de uma interface diferente. Em alguns casos, a interface dita "moderna" (**interface 1**) pode ser desativada a favor da interface clássica (**interface 2**).
 
-![Outlook](images/config-outlook-mxplan06.png){.thumbnail}
+Por isso, convidamo-lo a consultar o capítulo correspondente à interface exibida no seu ecrã.
 
-- A janela de definições das contas aparece, selecione a conta de e-mail em questão e clique em `Modificar...`{.action}.
-
-![Outlook](images/config-outlook-mxplan07.png){.thumbnail}
+> [!tabs]
+> **Interface 1**
+>>
+>> Se a sua conta de e-mail já estiver configurada e tiver de aceder às suas definições para as modificar:
+>>
+>> - Clique em `Ficheiro`{.action} na barra de menus no topo do ecrã, depois selecione a conta a modificar no menu pendente **(1)**.
+>> - Clique em `Definições da conta`{.action } **(2)** em baixo.
+>> - Selecione `Definições do servidor`{.action} **(3)** para abrir a janela de configuração.
+>>
+>> ![Outlook](images/config-outlook-legacy-mxplan07.png){.thumbnail}
+>>
+>> A janela está dividida em duas partes, **Correio de entrada** e **Correio de saída**. Clique na parte que deseja modificar.
+>>
+>> > [!primary]
+>> >
+>> > No nosso exemplo, o nome do servidor utilizado é "pro**?**.mail.ovh.net". Terá de substituir o caractere "?" pelo número correspondente ao servidor do seu serviço E-mail Pro.
+>> >
+>> > Encontre este número no seu [Área de Cliente OVHcloud](/links/manager), na rubrica `Web Cloud`{.action} depois `E-mail Pro`{.action}. O nome do servidor é visível no quadro **Ligação** do separador `Informações gerais`{.action}.
+>>
+>> ![Outlook](images/config-outlook-legacy-mxplan08.png){.thumbnail}
+>>
+> **Interface 2**
+>>
+>> Se a sua conta de e-mail já estiver configurada e tiver de aceder às suas definições para as modificar:
+>>
+>> - Clique em `Ficheiro`{.action} na barra de menus no topo do ecrã, depois selecione a conta a modificar no menu pendente **(1)**.
+>> - Clique em `Definições da conta`{.action} **(2)** em baixo.
+>> - Clique em `Definições da conta...`{.action} **(3)** para aceder à janela de configuração.
+>>
+>> ![Outlook](images/config-outlook-mxplan06.png){.thumbnail}
+>>
+>> - A janela de definições da conta aparece: selecione a conta de e-mail em questão, depois clique em `Modificar...`{.action}.
+>>
+>> ![Outlook](images/config-outlook-mxplan07.png){.thumbnail}
+>>
+>> Para configurar a sua conta, siga as instruções a partir do **passo 2** na secção "[Adicionar a conta - Configuração com a interface 2](#add-account-int2)" deste guia.
+>>
 
 ### Definições gerais de envio e receção <a name="settings-account"></a>
 
@@ -241,7 +351,7 @@ Para compreender a diferença entre a utilização do protocolo POP e IMAP, vamo
 >
 > Para obter mais informações sobre a configuração de um endereço de e-mail a partir da aplicação Outlook no macOS, consulte o [Centro de Ajuda da Microsoft](https://support.microsoft.com/pt-pt/office/adicionar-uma-conta-de-correio-em-outlook-6e27792a-9267-4aa4-8bb6-c84ef146101b).
 
-[Configurar uma conta Email Pro no Outlook para Windows](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_outlook_2016)
+[Configurar uma conta E-mail Pro no Outlook para Windows](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_outlook_2016)
 
 [Configurar uma conta Exchange no Outlook para Windows](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_outlook_2016)
 

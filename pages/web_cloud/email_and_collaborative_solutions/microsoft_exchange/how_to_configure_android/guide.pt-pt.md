@@ -31,6 +31,17 @@ Os endereços de e-mail da oferta Exchange podem ser configurados em diferentes 
 - Ter a aplicação Gmail no seu dispositivo. Pode instalá-la a partir da Google Play Store.
 - Ter acesso às credenciais do endereço de e-mail que pretende configurar.
 
+<!-- CP-NAV-START:web-exchange -->
+---
+
+### Acesso à Área de Cliente OVHcloud
+
+- **Ligação direta:** [Exchange](/links/control-panel/web-exchange)
+- **Caminho de navegação:** `Web Cloud`{.action} > `Exchange`{.action} > Selecione a sua plataforma
+
+---
+<!-- CP-NAV-END:web-exchange -->
+
 > [!primary]
 >
 > Esta documentação foi feita a partir de um dispositivo que utiliza a versão 13 do Android.
@@ -43,12 +54,7 @@ Os endereços de e-mail da oferta Exchange podem ser configurados em diferentes 
 >
 > No nosso exemplo, utilizamos a menção servidor: ex?.mail.ovh.net. Deverá substituir o "?" pelo número que designa o servidor do seu serviço Exchange.
 >
-> 1. Aceda à [Área de Cliente OVHcloud](/links/manager).
-> 1. Aceda à secção `Web Cloud`{.action}.
-> 1. Na rubrica `MICROSOFT`, clique em `Exchange`{.action}.
-> 1. Selecione a plataforma em causa.
-> 1. O servidor é visível na secção **Ligação** do separador `Informações gerais`{.action}.
->
+> Clique [neste link](/links/control-panel/web-exchange) para aceder à secção `Exchange`{.action}. O nome do servidor é apresentado na zona **Ligação** do separador `Informações gerais`{.action}.
 
 No ecrã principal do dispositivo, aceda à aplicação `Gmail`{.action}.
 

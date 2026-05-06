@@ -13,11 +13,21 @@ Wenn Sie die Sicherheit Ihres Accounts erhöhen möchten, können Sie die Zwei-F
 ## Voraussetzungen
 
 - Sie haben bereits einen [OVHcloud Exchange](/links/web/emails) Dienst eingerichtet.
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 - Sie haben eine OTP-Applikation auf einem Smartphone oder Tablet mit Android oder iOS installiert.
 
+<!-- CP-NAV-START:web-exchange -->
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direkter Link:** [Exchange](/links/control-panel/web-exchange)
+- **Navigationspfad:** `Web Cloud`{.action} > `Exchange`{.action} > Wählen Sie Ihre Plattform aus
+
+---
+<!-- CP-NAV-END:web-exchange -->
+
 > [!primary]
->**Die OTP-Applikationen**
+> **Die OTP-Applikationen**
 >
 > Es gibt zahlreiche OTP-Apps für Mobilgeräte. Die folgenden stehen kostenfrei zur Verfügung:
 > 
@@ -33,10 +43,6 @@ Wenn Sie die Sicherheit Ihres Accounts erhöhen möchten, können Sie die Zwei-F
 
 Bei der ersten Einrichtung muss die Zwei-Faktor-Authentifizierung zunächst für den Exchange Dienst aktiviert werden, bevor sie für dessen Accounts aktiviert werden kann.
 
-1. Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein.
-1. Öffnen Sie den Bereich `Web Cloud`{.action}.
-1. In der Rubrik `MICROSOFT`{.action}, klicken Sie auf `Exchange`{.action}.
-1. Wählen Sie den gewünschten Dienst aus.
 1. Gehen Sie dann auf den Tab `Sicherheit`{.action}.
 1. Klicken Sie unter „Zwei-Faktor-Authentifizierung“ auf `Aktiviert`{.action}.
 1. Zum Abschluss scrollen Sie nach unten zum Ende der Seite und klicken Sie auf `Änderungen speichern`{.action}.
@@ -63,12 +69,6 @@ Bei Ihren nachfolgenden Verbindungen werden Sie nur noch nach dem von Ihrer OTP-
 
 Die Zwei-Faktor-Authentifizierung Ihres Exchange Accounts kann auf drei Arten deaktiviert werden.
 
-1. Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein.
-1. Öffnen Sie den Bereich `Web Cloud`{.action}.
-1. In der Rubrik `MICROSOFT`{.action}, klicken Sie auf `Exchange`{.action}.
-1. Wählen Sie den gewünschten Dienst aus.
-1. Vom Tab `E-Mail-Accounts`{.action} aus, klicken Sie auf `...`{.action} rechts des Accounts, auf dem die Zwei-Faktor-Authentifizierung bereits aktiv ist.
-
 ![2fa-exchange](images/2fa-exchange-04.png){.thumbnail}
 
 Wählen Sie die Option, die Ihren Anforderungen entspricht, gemäß der folgenden Tabelle aus:
@@ -79,6 +79,6 @@ Wählen Sie die Option, die Ihren Anforderungen entspricht, gemäß der folgende
 | 2. | „Die Zwei-Faktor-Authentifizierung zurücksetzen“ | Ermöglicht das Zurücksetzen des QR-Codes, der beim ersten Herstellen einer Verbindung zum Webmail generiert wurde.<br> *Beispiel: Ein Benutzer hat sein Smartphone gewechselt und muss seine OTP-App neu konfigurieren.* |
 | 3. | „Die Zwei-Faktor-Authentifizierung löschen“ | Deaktiviert die Zwei-Faktor-Authentifizierung des Accounts vollständig. | 
 
-## Weiterführende Informationen
+## Weiterführende Informationen <a name="go-further"></a>
 
 Treten Sie unserer [User Community](/links/community) bei.

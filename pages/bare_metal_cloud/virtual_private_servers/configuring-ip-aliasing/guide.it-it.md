@@ -35,7 +35,7 @@ L'alias IP (*IP aliasing* in inglese) è una configurazione di rete speciale per
 
 - Disporre di una soluzione [VPS](/links/bare-metal/vps) nel tuo account OVHcloud
 - Disporre di un [indirizzo Additional IP](/links/bare-metal/ip)
-- Avere un accesso amministrator (sudo) via SSH o GUI sul tuo server
+- Avere un accesso amministratore (sudo) via SSH o GUI sul tuo server
 - Possedere conoscenze di base sulle reti e la loro amministrazione
 
 > [!warning]
@@ -44,11 +44,11 @@ L'alias IP (*IP aliasing* in inglese) è una configurazione di rete speciale per
 
 ## Procedura
 
-Questa guida ti mostra le configurazioni delle distribuzioni/dei sistemi operativi più comunemente utilizzati. Il primo step consiste sempre nell'connettersi al tuo server tramite SSH o tramite una sessione di connessione all'interfaccia grafica utente (RDP per un VPS Windows). Gli esempi che seguono presuppongono che tu sia connesso come utente con elevate autorizzazioni (Administratore/Sudo).
+Questa guida ti mostra le configurazioni delle distribuzioni/dei sistemi operativi più comunemente utilizzati. Il primo step consiste sempre nel connettersi al tuo server tramite SSH o tramite una sessione di connessione all'interfaccia grafica utente (RDP per un VPS Windows). Gli esempi che seguono presuppongono che tu sia connesso come utente con elevate autorizzazioni (Amministratore/sudo).
 
 > [!primary]
 >
-Per quanto riguarda le diverse versioni di distribuzione, ti ricordiamo che la procedura per configurare la tua interfaccia di rete e i nomi di file possono essere stati modificati. In caso di difficoltà o dubbi, consulta la documentazione relativa al tuo sistema operativo.
+> Per quanto riguarda le diverse versioni di distribuzione, ti ricordiamo che la procedura per configurare la tua interfaccia di rete e i nomi di file possono essere stati modificati. In caso di difficoltà o dubbi, consulta la documentazione relativa al tuo sistema operativo.
 >
 
 **Si prega di prendere nota della terminologia che verrà utilizzata negli esempi di codice e nelle istruzioni dettagliate contenute in questa guida:**
@@ -77,7 +77,7 @@ Negli esempi riportati di seguito utilizzeremo l'editor di testo `nano`. Su alcu
 >> sudo nano /etc/cloud/cloud.cfg.d/99-disable-network-config.cfg
 >> ```
 >>
->> Inserisci la riga seguente, poi registra e lascia l'editor.
+>> Inserisci la riga seguente, poi salva e chiudi l'editor.
 >>
 >> ```console
 >> network: {config: disabled}
@@ -87,7 +87,7 @@ Negli esempi riportati di seguito utilizzeremo l'editor di testo `nano`. Su alcu
 >>
 >> **Step 2: crea un backup**
 >>
->> Per impostazione predefinita, il file di configurazione si trova nel percorso `etc/network/interfaces.d`.
+>> Per impostazione predefinita, il file di configurazione si trova nel percorso `/etc/network/interfaces.d`.
 >>
 >> Nel nostro esempio, il nostro file si chiama `50-cloud-init`, quindi facciamo una copia del file `50-cloud-init` utilizzando il seguente comando:
 >>
@@ -162,7 +162,7 @@ Negli esempi riportati di seguito utilizzeremo l'editor di testo `nano`. Su alcu
 >>
 >> È consigliabile creare un file di configurazione separato per definire gli indirizzi Additional IP. In questo modo è possibile annullare le modifiche in caso di errore.
 >>
->> Step 1: Crea il file di configurazione di rete
+>> **Step 1: Crea il file di configurazione di rete**
 >>
 >> Nel nostro esempio, il nostro file si chiama `51-cloud-init.yaml`:
 >>
@@ -170,7 +170,7 @@ Negli esempi riportati di seguito utilizzeremo l'editor di testo `nano`. Su alcu
 >> sudo touch /etc/netplan/51-cloud-init.yaml
 >> ```
 >>
->> Step 2: modifica il file di configurazione
+>> **Step 2: modifica il file di configurazione**
 >>
 >> Per verificare il nome della tua interfaccia di rete, esegui questo comando:
 >>
@@ -405,7 +405,7 @@ Negli esempi riportati di seguito utilizzeremo l'editor di testo `nano`. Su alcu
 >>
 >> ![accesso alla gestione degli indirizzi IP](images/pleskip1.png){.thumbnail}
 >>
->> Clicca su `IP Addresses`{.action} con **Tools & Settings**.
+>> Clicca su `IP Addresses`{.action} sotto **Tools & Resources**.
 >>
 >> **Step 2: aggiungi le informazioni IP supplementari**
 >>
@@ -432,7 +432,7 @@ Negli esempi riportati di seguito utilizzeremo l'editor di testo `nano`. Su alcu
 >>
 >> Clicca su `cmd` e clicca su `OK`{.action} per aprire l'applicazione della riga di comando.
 >>
->> ![compromesso](images/vps_win07.png){.thumbnail}
+>> ![prompt dei comandi Windows](images/vps_win07.png){.thumbnail}
 >>
 >> Per recuperare la configurazione IP corrente, inserisci `ipconfig` nel prompt dei comandi.
 >>
@@ -456,7 +456,7 @@ Negli esempi riportati di seguito utilizzeremo l'editor di testo `nano`. Su alcu
 >> 2. clicca con il tasto destro su `Ethernet`{.action};
 >> 3. clicca su `Properties`{.action};
 >> 4. Seleziona `Internet Protocol Version 4 (TCP/IPv4)`{.action} e clicca su `Properties`{.action};
->> 5. Clicca su `Use the following IP address`{.action} e inserisci l'IP principale del tuo server, la subnet mask e il gateway predefinito ottenuto con il comando `ipconfig`{.action} qui sopra. Nella casella "Preferred DNS Server" digitare "213.186.33.99".
+>> 5. Clicca su `Use the following IP address`{.action} e inserisci l'IP principale del tuo server, la subnet mask e il gateway predefinito ottenuto con il comando `ipconfig`{.action} qui sopra. Nella casella "Preferred DNS Server" digitare `213.186.33.99`.
 >>
 >> ![change the ip configuration](images/configure-main-ip.png){.thumbnail}
 >>

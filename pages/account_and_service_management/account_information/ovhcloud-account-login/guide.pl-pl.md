@@ -21,7 +21,7 @@ Zarządzanie usługami odbywa się głównie w Panelu klienta OVHcloud.
 
 Przejdź [do strony uwierzytelniania OVHcloud](/links/manager), podaj identyfikator klienta (lub główny adres e-mail) i hasło.
 
-![identyfikator klienta](images/log-in.png){.thumbnail}
+![identyfikator klienta](images/account-log-in-EN.png){.thumbnail}
 
 Jeśli aktywowałeś weryfikację [dwuetapową](/pages/account_and_service_management/account_information/secure-ovhcloud-account-with-2fa), wpisz unikalny kod logowania wygenerowany przez Twoje urządzenie (telefon, tablet lub klucz U2F).
 

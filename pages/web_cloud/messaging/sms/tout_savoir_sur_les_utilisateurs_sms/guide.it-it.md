@@ -1,6 +1,6 @@
 ---
 title: Tutto sugli utenti SMS
-excerpt: Funzionalità degli utenti API per inviare SMS
+excerpt: "Scopri come creare, configurare e gestire gli utenti API per l'invio di SMS, incluse le autorizzazioni e le restrizioni"
 updated: 2022-08-05
 ---
 
@@ -15,7 +15,17 @@ Questa guida ti mostra come creare e aggiungere utenti API.
 ## Prerequisiti
 
 - Disporre di un account SMS OVHcloud attivo
-- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager), sezione `Télécom`{.action} > `SMS`{.action}
+
+<!-- CP-NAV-START:telecom-sms -->
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [SMS](/links/control-panel/telecom-sms)
+- **Percorso di navigazione:** `Telecom`{.action} > `SMS`{.action} > Seleziona il tuo SMS account
+
+---
+<!-- CP-NAV-END:telecom-sms -->
 
 ![Spazio Cliente Telecom SMS](/pages/assets/screens/control_panel/product-selection/telecom/tpl-telecom-03-en-sms.png){.thumbnail}
 
@@ -40,19 +50,17 @@ Per gestire al meglio il saldo del tuo account SMS, puoi fissare un limite e una
 
 - Il **limite** corrisponde alla soglia minima di crediti SMS che un utente API deve avere prima di ricevere un alert per ricaricare o meno il saldo dei crediti.
 
-### Step 1: crea un utente API
+### Passaggio 1: Crea un utente API
 
-Accedi allo [Spazio Cliente OVHcloud](/links/manager) e seleziona `Telecom`{.action}. Poi clicca su `SMS`{.action} e seleziona il tuo account SMS.
-
-Infine clicca sulla scheda `Utenti API`{.action}. Per aggiungere un utente, clicca sul pulsante `Azioni`{.action} e poi su `Aggiungi`{.action}.
+Clicca sulla scheda `Utenti API`{.action}. Per aggiungere un utente, clicca sul pulsante `Azioni`{.action} e poi su `Aggiungi`{.action}.
 
 ![sms-users](images/smsusers01e-2021.png){.thumbnail}
 
 Assegna un nome all’utente API. La password utente dell’utente API deve essere composta da 8 caratteri alfanumerici.
 
-### Step 2: attribuisci una quota a un utente API
+### Passaggio 2: Attribuisci una quota a un utente API
 
-È possibile gestire le quote dalla scheda `Utente API`{.action}. Clicca sui tre puntini `...`{.action}in corrispondenza dell’utente API e seleziona`Quota`{.action}.
+È possibile gestire le quote dalla scheda `Utente API`{.action}. Clicca sui tre puntini `...`{.action} in corrispondenza dell’utente API e seleziona `Quota`{.action}.
 
 ![sms-users](images/smsusers03e-2021.png){.thumbnail}
 
@@ -70,7 +78,7 @@ A questo punto, è possibile effettuare due operazioni:
 > Ad esempio: un account SMS dispone di un totale di 200 crediti. L’assegnazione di 150 crediti a un utente API andrà a dedurre 150 crediti dall’account SMS che, a quel punto disporrà, quindi di soli 50 crediti.
 >
 
-### Step 5: attribuisci un limite a un utente API
+### Passaggio 3: Attribuisci un limite a un utente API
 
 Per configurare un limite a un utente clicca sui tre puntini `...`{.action} e poi su `Limite`{.action}.
 
@@ -87,7 +95,7 @@ A questo punto saranno disponibili le seguenti impostazioni:
 
 ![sms-users](images/smsusers05-2021.png){.thumbnail}
 
-### Step 4: definisci una restrizione IP per la funzione http2sms
+### Passaggio 4: Definisci una restrizione IP per la funzione http2sms
 
 È possibile rendere sicura la funzione http2sms applicando alcune restrizioni IP per ciascun utente API.
 
@@ -99,9 +107,9 @@ Per l’invio delle richieste https, è possibile inserire fino a 5 diversi indi
 
 Per maggiori informazioni sulla funzione http2sms, consulta la guida [Inviare SMS da un URL](/pages/web_cloud/messaging/sms/envoyer_des_sms_depuis_une_url_-_http2sms).
 
-### Step 5: specifica un URL di Callback
+### Passaggio 5: Specifica un URL di Callback
 
-Per realizzare un follow-up personalizzato degli avvisi di ricevimento via SMS (Delivery reporting o DLR), è possibile specificare un URL chiamato Callback. Per farlo, clicca sui tre puntini `...`{.action} a destra in corrispondenza dell'utente e poi su `Callback`{.action}.
+Per realizzare un follow-up personalizzato degli avvisi di ricevimento via SMS (Delivery reporting o DLR), è possibile specificare un URL chiamato Callback. Per farlo, clicca sui tre puntini `...`{.action} a destra in corrispondenza dell’utente e poi su `Callback`{.action}.
 
 ![sms-users](images/smsusers07-2021.png){.thumbnail}
 
@@ -137,8 +145,8 @@ Nella tabella seguente è riportato un elenco **non esaustivo** dei codici ptt p
 |8|Il messaggio è scaduto (non poteva essere consegnato entro il suo periodo di validità) presso l'operatore SMSC, ma non viene indicato il motivo del mancato invio. (Used when a message expired (could not be delivered within the life time of the message) within the operator SMSC but is not associated with a reason for failure).|
 |20|Il messaggio non può essere consegnato nella sua forma attuale (Used when a message in its current form is undeliverable).|
 |21|Questo codice è utilizzato soltanto quando l’operatore accetta il messaggio prima di verificare il credito dell’abbonato. Se il saldo è sufficiente, l’operatore tenta nuovamente l’invio del messaggio finché il saldo è sufficiente o prima che il messaggio scada. Se il messaggio è scaduto e l’ultimo motivo del mancato invio è legato al credito, verrà utilizzato questo codice di errore (Only occurs where the operator accepts the message before performing the subscriber credit check. If there is insufficient credit then the operator will retry the message until the subscriber tops up or the message expires. If the message expires and the last failure reason is related to credit then this error code will be used).|
-|23|Il messaggio non può essere inviato a causa di un MSISDN errato/non valido/sulla ista nera/definitivamente vietato per questo operatore. Questo MSISDN non deve essere utilizzato nuovamente per le richieste di messaggi a questo operatore (Used when the message is undeliverable due to an incorrect / invalid / blacklisted / permanently barred MSISDN for this operator. This MSISDN should not be used again for message submissions to this operator).|
-|24|Il messaggio non può’ essere inviato perché l’abbonato è temporaneamente assente. Ad esempio, se il suo telefono è spento o non può essere localizzato sulla rete (Used when a message is undeliverable because the subscriber is temporarily absent, e.g. their phone is switch off, they cannot be located on the network).|
+|23|Il messaggio non può essere inviato a causa di un MSISDN errato/non valido/sulla lista nera/definitivamente vietato per questo operatore. Questo MSISDN non deve essere utilizzato nuovamente per le richieste di messaggi a questo operatore (Used when the message is undeliverable due to an incorrect / invalid / blacklisted / permanently barred MSISDN for this operator. This MSISDN should not be used again for message submissions to this operator).|
+|24|Il messaggio non può essere inviato perché l’abbonato è temporaneamente assente. Ad esempio, se il suo telefono è spento o non può essere localizzato sulla rete (Used when a message is undeliverable because the subscriber is temporarily absent, e.g. their phone is switch off, they cannot be located on the network).|
 |25|L’invio del messaggio non è riuscito a causa di uno stato temporaneo sulla rete dell’operatore. Questo può essere dovuto allo strato SS7, al gateway o al SMSC (Used when the message has failed due to a temporary condition in the operator network. This could be related to the SS7 layer, SMSC or gateway).|
 |26|L’invio del messaggio non è riuscito a causa di un errore temporaneo del telefono. Ad esempio: carta SIM piena, PME occupato, memoria piena, ecc. Questo non significa che il telefono non è in grado di ricevere questo tipo di messaggi/contenuto (vedi codice errore 27) (Used when a message has failed due to a temporary phone related error, e.g. SIM card full, SME busy, memory exceeded etc. This does not mean the phone is unable to receive this type of message/content (refer to error code 27)).|
 |27|Il telefono è definitivamente incompatibile o non è in grado di ricevere questo tipo di messaggi (Used when a handset is permanently incompatible or unable to receive this type of message).|

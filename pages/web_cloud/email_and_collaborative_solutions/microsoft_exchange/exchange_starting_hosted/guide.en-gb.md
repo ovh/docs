@@ -21,18 +21,23 @@ With the Hosted Exchange service, you can get professional email accounts to use
 - You need to have a subscription to a [Hosted Exchange](/links/web/emails-hosted-exchange) solution.
 - You need to have received an email confirming that your Hosted Exchange solution has been set up.
 - You must have a domain name.
-- You must be logged in to your [OVHcloud Control Panel](/links/manager).
+
+<!-- CP-NAV-START:web-exchange -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Exchange](/links/control-panel/web-exchange)
+- **Navigation path:** `Web Cloud`{.action} > `Exchange`{.action} > Select your platform
+
+---
+<!-- CP-NAV-END:web-exchange -->
 
 ## Instructions
 
 ### Access your service management
 
-Once your Hosted Exchange service has been created and is available:
-
-1. Log in to your [OVHcloud Control Panel](/links/manager).
-1. Open the `Web Cloud`{.action} section.
-1. In the `MICROSOFT` section, click `Exchange`{.action}.
-1. Select the service concerned.
+Once your Hosted Exchange service has been created and is available, select it in the OVHcloud Control Panel.
 
 > [!primary]
 >
@@ -41,6 +46,7 @@ Once your Hosted Exchange service has been created and is available:
 
 ### Configure your service for the first time
 
+<!-- CP-STEPS-START:configure-service-first-time -->
 Since you have not used your service yet, you will need to configure it for the first time. Once you have done so, you can then use your new Exchange email addresses.
 
 To do this, when you first access the management interface for your Hosted Exchange service, a configuration assistant will open. To get started, click the `Start`{.action} button.
@@ -93,9 +99,11 @@ This window will prompt you to add a **CNAME record** to the domain name’s DNS
 Here, you will find the values to enter into your DNS zone. The **MX records** correspond to the receiving servers of your emails. The **SRV field** corresponds to the automatic configuration of your email addresses.
 
 You can find the DNS zone configuration details for your email service on our [Add an MX record to your domain name’s configuration](/pages/web_cloud/domains/dns_zone_mx) page.
+<!-- CP-STEPS-END:configure-service-first-time -->
 
 ### Add additional domain names (optional)
 
+<!-- CP-STEPS-START:add-additional-domain-names -->
 Once you have finished configuring your domain name, you can also configure additional ones via the assistant, if you have not already done so.
 
 > [!warning]
@@ -112,10 +120,12 @@ To find out more, please refer to this guide on [Adding a domain name to an Exch
 > If a domain name requires a specific action for its configuration, a red box will appear in the `Diagnostic`{.action} column of the table. By clicking on it, you will see the modifications that need to be made. If this domain name does not use OVHcloud configuration (its DNS servers), you will need to carry out the modifications in the interface you use to manage your domain name’s configuration.
 >
 
-![Add a domain](images/first-steps-hosted-exchange-add-domain.png)
+![Add a domain](images/first-steps-hosted-exchange-add-domain.png){.thumbnail}
+<!-- CP-STEPS-END:add-additional-domain-names -->
 
 ### Configure additional Exchange accounts (optional)
 
+<!-- CP-STEPS-START:configure-additional-accounts -->
 You can configure additional accounts if you have not already done so via the wizard.
 
 To do this, click on the Hosted Exchange service concerned in your [OVHcloud Control Panel](/links/manager), then on `Email accounts`{.action}. You will see a table showing all of the accounts currently configured, or about to be configured on your service.
@@ -127,10 +137,12 @@ The accounts that have not yet been configured configuration will appear in the 
 > Repeat this step as required, depending on the number of accounts you have. You can order new ones by clicking on the `Actions`{.action} button, then `Order accounts`{.action}.
 >
 
-![Add an account](images/first-steps-hosted-exchange-add-account.png)
+![Add an account](images/first-steps-hosted-exchange-add-account.png){.thumbnail}
+<!-- CP-STEPS-END:configure-additional-accounts -->
 
 ### Use your email addresses
 
+<!-- CP-STEPS-START:use-email-addresses -->
 Once you have configured your accounts, you can now start using them. To do this, OVHcloud offers the **Outlook Web App** (OWA) webmail app. You can access this via the following address: [Webmail](/links/web/email). To log in, enter your email address credentials. If you require any assistance using OWA, please refer to [our documentation](/products/web-cloud-email-collaborative-solutions-microsoft-exchange).
 
 If this is your first time logging in to OWA with this email address, you will be prompted to set the interface language and time zone. Next, click `Save`{.action} to continue.
@@ -154,16 +166,19 @@ You can also get [Office 365 licences](/links/web/ms365). We recommend using one
 > With Exchange, you can sync all of your settings (filters, email signatures, folders, etc.), regardless of whether you were using a web application or a compatible email client.
 > This way, if you use Exchange on three devices via different login interfaces (webmail, compatible email software or client), all of your information will be available at the same time.
 >
+<!-- CP-STEPS-END:use-email-addresses -->
 
 ### Set up collaborative features (optional)
 
+<!-- CP-STEPS-START:set-up-collaborative-features -->
 Now that your Hosted Exchange service is configured and functional, you can set up the service’s collaborative features in your [OVHcloud Control Panel](/links/manager). You can use these features to create resources (meeting rooms, equipment, etc.), groups, and more.
 
 To enable these features, select the Hosted Exchange service concerned in your [OVHcloud Control Panel](/links/manager), then choose which action to perform from the tabs that appear.
 
 For assistance with these features, please refer to [our documentation](/products/web-cloud-email-collaborative-solutions-microsoft-exchange).
+<!-- CP-STEPS-END:set-up-collaborative-features -->
 
-## Go further
+## Go further <a name="go-further"></a>
 
 [Creating contact groups](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/feature_groups)
 

@@ -15,7 +15,17 @@ Dans de telles circonstances, vous pouvez utiliser le mode rescue pour reconfigu
 ## Prérequis
 
 - Une [instance Public Cloud](/links/public-cloud/compute) dans votre compte OVHcloud
-- Avoir accès à votre [espace client OVHcloud](/links/manager)
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Projets Public Cloud](/links/control-panel/publiccloud-projects)
+- **Pour accéder à vos services :** `Public Cloud`{.action} > Sélectionnez votre projet
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## En pratique
 
@@ -25,11 +35,9 @@ Dans de telles circonstances, vous pouvez utiliser le mode rescue pour reconfigu
 
 ### Activer le mode rescue
 
-Tout d’abord, connectez-vous à [l’espace client d’OVHcloud](/links/manager), accédez à la section `Public Cloud`{.action} et sélectionnez le projet Public Cloud concerné.
+Cliquez sur l’onglet `Instances`{.action} dans la barre de navigation à gauche.
 
-Cliquez ensuite sur l'onglet `Instances`{.action} dans la barre de navigation à gauche.
-
-Cliquez sur `...`{.action} à droite de l'instance et sélectionnez `Redémarrer en mode rescue`{.action}.
+Cliquez sur `...`{.action} à droite de l’instance et sélectionnez `Redémarrer en mode rescue`{.action}.
 
 ![tableau de bord](images/rescue2022.png){.thumbnail}
 

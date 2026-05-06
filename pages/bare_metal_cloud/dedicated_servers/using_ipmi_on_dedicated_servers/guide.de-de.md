@@ -1,7 +1,7 @@
 ---
-title: "Verwendung der IPMI-Konsole für Dedicated Server"
-excerpt: "Erfahren Sie hier, wie Sie sich über das OVHcloud Kundencenter auf Ihrem Server einloggen können, ohne externe Software zu verwenden"
-updated: 2024-07-23
+title: "IPMI-Konsole mit einem Dedicated Server verwenden"
+excerpt: "Greifen Sie per IPMI/KVM-Konsole im OVHcloud Kundencenter ohne externe Software remote auf Ihren Dedicated Server zu."
+updated: 2026-01-29
 ---
 
 > [!primary]
@@ -14,7 +14,16 @@ Die IPMI-Konsole (Intelligent Platform Management Interface) ermöglicht eine di
 
 ## Voraussetzungen
 
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
+<!-- CP-NAV-START:baremetal-dedicated-servers -->
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direkter Link:** [Dedicated Server](/links/control-panel/baremetal-dedicated-servers)
+- **Navigationspfad:** `Bare Metal Cloud`{.action} > `Dedicated Server`{.action} > Wählen Sie Ihren Server aus
+
+---
+<!-- CP-NAV-END:baremetal-dedicated-servers -->
 
 > [!warning]
 > Diese Funktion kann nur eingeschränkt oder nicht verfügbar sein, falls ein Dedicated Server der [**Eco** Produktlinie](/links/bare-metal/eco-about) eingesetzt wird.
@@ -41,9 +50,13 @@ Die Verbindung mit IPMI kann auf verschiedene Arten hergestellt werden¹. Auf de
 ⁵ Wenn das Betriebssystem, das Sie installieren möchten, nicht im [Katalog der für OVHcloud Dedicated Server verfügbaren Betriebssysteme](/links/bare-metal/os) ist, können Sie auch ein personalisiertes Image verwenden: siehe [Vergleich von Bring Your Own Image (BYOI) und Bring Your Own Linux (BYOLinux)](/pages/bare_metal_cloud/dedicated_servers/bring-your-own-image-versus-bring-your-own-linux) für weitere Details.<br />
 ⁶ SoL = Serial over LAN
 
-Um eine dieser Methoden zu aktivieren, loggen Sie sich in Ihrem [OVHcloud Kundencenter](/links/manager) ein. Klicken Sie im Bereich `Bare Metal Cloud`{.action} auf `Dedicated Server`{.action} und wählen Sie Ihren Server aus und klicken Sie dann auf den Tab `IPMI/KVM`{.action}.
+Um eine dieser Methoden zu aktivieren, klicken Sie auf den Tab `IPMI/KVM`{.action}.
 
 ### KVM über Java-Applet öffnen <a name="applet-java"></a>
+
+> [!primary]
+> Wir empfehlen die Installation der neuesten Java-Version.
+>
 
 Damit das Java Applet funktionieren kann, muss Java auf Ihrem Computer installiert sein. Ist das nicht der Fall, gehen Sie auf die [offizielle Seite](https://www.java.com/en/download/).
 
@@ -129,7 +142,7 @@ Der Neustart von IPMI dauert einige Minuten.
 
 Um zu beginnen, öffnen Sie [IPMI über Java-Applet](#applet-java) in Ihrem [OVHcloud Kundencenter](/links/manager). Klicken Sie anschließend im Menü auf `Device`{.action} und wählen Sie im Drop-down-Menü `Redirect ISO`{.action} aus.
 
-![Redirect_ISO](images/RedirectISO.jpg){.thumbnail}
+![Option "ISO umleiten" im Gerätemenü](images/RedirectISO.jpg){.thumbnail}
 
 Wählen Sie dann die ISO im Dateisystem Ihres lokalen Computers aus. Wenn Sie die ISO-Datei ausgewählt haben, klicken Sie auf `Ctrl Alt Del`{.action} in der oberen rechten Ecke des Bildschirms, um den Server neu zu starten. Tippen Sie auf die Taste `F`, um auf die Startoptionen zuzugreifen.
 
@@ -139,7 +152,7 @@ Wählen Sie dann die ISO im Dateisystem Ihres lokalen Computers aus. Wenn Sie di
 
 Wählen Sie `UEFI Virtual CDROM 1.00` im Startmenü (Boot) aus, um den Server von der zuvor verbundenen ISO zu starten.
 
-![UEFI_Virt](images/UEFIVirt.jpg){.thumbnail}
+![UEFI Virtual CDROM Boot-Option im Boot-Menü](images/UEFIVirt.jpg){.thumbnail}
 
 Folgen Sie den notwendigen Schritten für die Installation des Betriebssystems. Vergessen Sie nicht, die ISO aus der Option "Redirect ISO" zu löschen.
 
@@ -151,15 +164,15 @@ Folgen Sie den notwendigen Schritten für die Installation des Betriebssystems. 
 
 Um zu beginnen, öffnen Sie [IPMI mit einem Java-Applet](#applet-java) über Ihr [OVHcloud Kundencenter](/links/manager). Klicken Sie dann auf `Virtual Media`{.action} und auf `Virtual Storage`{.action}.
 
-![Virtual Storage](images/virtual_storage.png){.thumbnail}
+![Option "Virtual Storage" im Virtual Media Menü](images/virtual_storage.png){.thumbnail}
 
 Wählen Sie im angezeigten Fenster `ISO File` aus der Drop-down-Liste "Logical Drive Type". Klicken Sie anschließend auf `Open Image`{.action} und navigieren Sie zu Ihrer ISO-Datei. Klicken Sie abschließend auf `Plug-in`{.action} und `OK`{.action}.
 
-![ISO_file](images/iso_file.png){.thumbnail}
+![ISO-Datei in Virtual Storage auswählen und einbinden](images/iso_file.png){.thumbnail}
 
 Um von Ihrer ISO-Datei aus zu starten müssen Sie auf das BIOS zugreifen und die Startoptionen ändern. Klicken Sie hierzu auf `Power Control`{.action} und dann auf `Set Power Reset`{.action}.
 
-![Power_Reserver](images/power_reset.png){.thumbnail}
+![Power Control Menü mit Option "Set Power Reset"](images/power_reset.png){.thumbnail}
 
 > [!primary]
 > Möglicherweise müssen Sie die Software-Tastatur verwenden, um die Einträge in IPMI zu speichern. Um darauf zuzugreifen, klicken Sie oben im Fenster auf die Option `Virtual Media`{.action}. Wählen Sie dann `Virtual Keyboard`{.action} im Drop-down-Menü aus.
@@ -167,11 +180,11 @@ Um von Ihrer ISO-Datei aus zu starten müssen Sie auf das BIOS zugreifen und die
 
 Klicken Sie auf die `ENTF` Taste während des Startvorgangs, um zum BIOS-Interface zu gelangen. Sie können auch die Taste `F11` drücken und auf das BIOS zugreifen, indem Sie die Option `Enter Setup`{.action} auswählen.
 
-![Startmenü](images/boot_menu.png){.thumbnail}
+![Server-Boot-Menü mit Option "Enter Setup"](images/boot_menu.png){.thumbnail}
 
 Gehen Sie im BIOS zum Tab `Boot`{.action} und ändern Sie die `UEFI Boot Order #1` zu `UEFI USB CD/DVD:UEFI: CDROM virtual ATEN YSOJ`.
 
-![Bios](images/bios.png){.thumbnail}
+![BIOS Boot-Tab mit UEFI-Bootreihenfolge-Konfiguration](images/bios.png){.thumbnail}
 
 Klicken Sie auf die Taste `F4`, um die Änderungen zu speichern und den Server neu zu starten.
 
@@ -192,31 +205,31 @@ Hier haben Sie Zugriff auf die gleichen Informationen und Funktionen wie in den 
 
 Klicken Sie auf den Button `Browse File`{.action} und wählen Sie Ihre Image-Datei aus.
 
-![KVM installieren](images/kvm_install01.png){.thumbnail}
+![Schaltfläche "Datei durchsuchen" in der KVM-Webkonsole](images/kvm_install01.png){.thumbnail}
 
 Klicken Sie auf `Start Media`{.action}. Dadurch wird die ISO-Datei für den Installationsprozess vorbereitet.
 
-![KVM installieren](images/kvm_install02.png){.thumbnail}
+![Schaltfläche "Start Media" zur Vorbereitung der ISO](images/kvm_install02.png){.thumbnail}
 
 Die nun angezeigte Dateigröße ist nicht die echte Größe. Das ist normal, denn die Datei wird in diesem Schritt nicht vollständig übertragen.
 
-![KVM installieren](images/kvm_install03.png){.thumbnail}
+![ISO-Dateigröße während der Upload-Vorbereitung](images/kvm_install03.png){.thumbnail}
 
 Klicken Sie auf `Power`{.action} und wählen Sie `Reset Server`{.action} im Drop-down-Menü aus.
 
-![KVM installieren](images/kvm_install04.png){.thumbnail}
+![Power-Menü mit Option "Reset Server" in KVM](images/kvm_install04.png){.thumbnail}
 
 Warten Sie, bis die Anzeige zur Start-Auswahl erscheint, und drücken Sie die entsprechende Taste, um in das Boot-Menü zu gelangen (`F11` in diesem Beispiel).
 
-![KVM installieren](images/kvm_install05.png){.thumbnail}
+![Boot-Auswahlbildschirm mit F11-Tastenhinweis](images/kvm_install05.png){.thumbnail}
 
 Wählen Sie im Boot-Menü das optische Laufwerk (`UEFI: AMI Virtual CDROM0` in diesem Beispiel) und drücken Sie `Enter`.
 
-![KVM installieren](images/kvm_install06.png){.thumbnail}
+![Virtuelles CDROM-Laufwerk im Boot-Menü auswählen](images/kvm_install06.png){.thumbnail}
 
 Die ISO-Datei wird nun hochgeladen und der Server wird von der Datei aus starten.
 
-![KVM installieren](images/kvm_install07.png){.thumbnail}
+![ISO-Upload läuft und Server bootet von Datei](images/kvm_install07.png){.thumbnail}
 
 <a name="bios"></a>
 
@@ -243,5 +256,7 @@ Anschließend rufen Sie die [IPMI-Konsole](#procedure) in Ihrem [OVHcloud Kunden
 ## Weiterführende Informationen
 
 Wenn Sie Schulungen oder technische Unterstützung bei der Implementierung unserer Lösungen benötigen, wenden Sie sich an Ihren Vertriebsmitarbeiter oder klicken Sie auf [diesen Link](/links/professional-services), um einen Kostenvoranschlag zu erhalten und eine persönliche Analyse Ihres Projekts durch unsere Experten des Professional Services Teams anzufordern.
+
+- [Erste Schritte mit einem Dedicated Server](/pages/bare_metal_cloud/dedicated_servers/getting-started-with-dedicated-server)
 
 Für den Austausch mit unserer User Community gehen Sie auf [User Community](/links/community).

@@ -15,10 +15,21 @@ This can be created via the [OVHcloud Control Panel](/links/manager), the [OpenS
 ## Requirements
 
 - A [Public Cloud project](/links/public-cloud/public-cloud) in your OVHcloud account
-- Access to the [OVHcloud API](/links/api), the [OVHcloud Control Panel](/links/manager) or the OpenStack command line environment ([Tutorial](/pages/public_cloud/public_cloud_cross_functional/prepare_the_environment_for_using_the_openstack_api))
+- Access to the [OVHcloud API](/links/api) or the OpenStack command line environment ([Tutorial](/pages/public_cloud/public_cloud_cross_functional/prepare_the_environment_for_using_the_openstack_api))
 - The [OpenStack Command Line Interface](https://docs.openstack.org/newton/user-guide/common/cli-install-openstack-command-line-clients.html) tool installed on your working environment (optional)
 
 ## Instructions
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direkter Link:** [Public Cloud Projekte](/links/control-panel/publiccloud-projects)
+- **Navigationspfad:** `Public Cloud`{.action} > Wählen Sie Ihr Projekt aus
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ### Via the OVHcloud Control Panel
 
@@ -27,8 +38,6 @@ This can be created via the [OVHcloud Control Panel](/links/manager), the [OpenS
 
 > [!tabs]
 > **Step 1**
->>
->> Log in to the [OVHcloud Control Panel](/links/manager), go to the `Public Cloud`{.action} section and open your Public Cloud project.
 >>
 >> Click on `Gateway`{.action} in the left-hand menu under **Network**.
 >>

@@ -37,19 +37,23 @@ La tua offerta Private Exchange o Trusted Exchange genera quindi i propri log. P
 
 - Avere sottoscritto un'offerta [Private Exchange](/links/web/emails-hosted-exchange) o [Trusted Exchange](/links/web/emails-trusted-exchange).
 - Un account Logs Data Platform (LDP). Questa guida ti guiderà in tutte le fasi necessarie: [Quick start for Logs Data Platform](/pages/manage_and_operate/observability/logs_data_platform/getting_started_quick_start).
-- Essere connesso al tuo [Spazio Cliente OVHcloud](/links/manager).
+
+<!-- CP-NAV-START:web-exchange -->
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [Exchange](/links/control-panel/web-exchange)
+- **Percorso di navigazione:** `Web Cloud`{.action} > `Exchange`{.action} > Seleziona la tua piattaforma
+
+---
+<!-- CP-NAV-END:web-exchange -->
 
 ## Procedura
 
 ### Visualizzare i log della tua piattaforma Exchange in tempo reale
 
-Per accedere ai log in tempo reale sulla tua offerta Private o Trusted Exchange, segui le seguenti istruzioni:
-
-1. Accedi al tuo [Spazio Cliente OVHcloud](/links/manager).
-1. Vai alla sezione `Web Cloud`{.action}.
-1. Nella sezione `MICROSOFT`, clicca su `Exchange`{.action}.
-1. Seleziona la piattaforma interessata.
-1. A destra della serie di schede, clicca sulla scheda `Altre opzioni`{.action} e poi su `Log`{.action}.
+Per accedere ai log in tempo reale sulla tua offerta Private o Trusted Exchange, a destra della serie di schede, clicca sulla scheda `Altro +`{.action} e poi su `Log`{.action}.
 
 ![exchange - logs](images/exchange-logs01.png){.thumbnail}
 
@@ -85,12 +89,8 @@ Le soluzioni Exchange sono compatibili con diversi servizi come l'hosting condiv
 
 Per abbonare i log della tua soluzione Exchange a un flusso di dati su Logs Data Platform, effettua le seguenti azioni:
 
-1. Accedi al tuo [Spazio Cliente OVHcloud](/links/manager).
-1. Vai alla sezione `Web Cloud`{.action}.
-1. Nella sezione `MICROSOFT`, clicca su `Exchange`{.action}.
-1. Seleziona la piattaforma interessata.
-1. A destra della serie di schede, clicca sulla scheda `Altre opzioni`{.action} e poi su `Log`{.action}.
-1. A destra del riquadro in cui vengono visualizzati i tuoi log in tempo reale, clicca sul pulsante `Abbonati`{.action}.
+1. A destra della serie di schede, clicca sulla scheda `Altro +`{.action} e poi su `Log`{.action}.
+1. A destra del riquadro dove vengono visualizzati i log in tempo reale, clicca sul pulsante `Abbonati`{.action}.
 
 ![exchange - logs](images/exchange-logs02.png){.thumbnail}
 

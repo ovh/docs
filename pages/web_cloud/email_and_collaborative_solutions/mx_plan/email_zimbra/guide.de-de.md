@@ -1,7 +1,7 @@
 ---
 title: "Zimbra Webmail verwenden"
 excerpt: "Erfahren Sie hier, wie Sie das Zimbra Webmail-Interface mit OVHcloud MX Plan E-Mail-Accounts verwenden"
-updated: 2025-10-22
+updated: 2026-02-26
 ---
 
 <style>
@@ -45,6 +45,9 @@ OVHcloud bietet den Webmail-Dienst Zimbra an, um auf MX Plan E-Mail-Accounts zuz
     - [Kalenderverwaltung](#calendar-management)
     - [Aufgaben](#tasks)
 - [Speicherplatz](#storage)
+    - [Datei hinzufügen](#storage-add)
+    - [Datei oder Ordner freigeben](#storage-share)
+    - [Dokument bearbeiten](#storage-onlyoffice)
 - [Filter](#filters)
     - [Grundlegendes zum Einrichten von Filtern](#filters-howto)
     - [Filter erstellen](#filters-creation)
@@ -472,10 +475,6 @@ Klicken Sie dann auf `Speichern`{.action}, um die Erstellung Ihrer Aufgabe abzus
 >
 > Die Speicherplatzfunktion "Aktentasche" ist nur mit der Zimbra Pro Lösung verfügbar.
 
-> [!warning]
->
-> Die Zimbra Pro-Lösung ist derzeit in der Beta-Version verfügbar. Einige Funktionen werden noch verbessert.
-
 Klicken Sie auf das `Aktentasche`{.action} Symbol in der oberen Leiste, um auf Ihren Speicherplatz zuzugreifen. Sie können Ihre Dateien hochladen und dort freigeben.
 
 1. In der linken Spalte sehen Sie die Ordner für Ihren Speicherplatz.
@@ -489,7 +488,7 @@ Klicken Sie auf das `Aktentasche`{.action} Symbol in der oberen Leiste, um auf I
 
 ![Zimbra - storage](images/zimbra-storage-01.png){.thumbnail .w-600}
 
-#### Hinzufügen einer Datei
+#### Hinzufügen einer Datei <a name="storage-add"></a>
 
 So fügen Sie eine Datei zu Ihrem Speicherplatz hinzu:
 
@@ -499,7 +498,7 @@ So fügen Sie eine Datei zu Ihrem Speicherplatz hinzu:
 
 ![Zimbra - storage](images/zimbra-storage-add-01.png){.thumbnail .w-600}
 
-#### Freigeben von Dateien und Ordnern
+#### Freigeben von Dateien und Ordnern <a name="storage-share"></a>
 
 Die Freigabe ermöglicht es Ihnen, Dritten außerhalb Ihres Zimbra Accounts Zugriff auf einen Ordner oder eine Datei in Ihrem Speicher zu gewähren.
 
@@ -531,6 +530,30 @@ Die Freigabe ermöglicht es Ihnen, Dritten außerhalb Ihres Zimbra Accounts Zugr
 Der Gast erhält eine E-Mail, in der er aufgefordert wird, einen Zimbra Account mit Benutzername und Passwort zu erstellen. Dieses Konto ermöglicht den Zugriff auf eine Zimbra Oberfläche, die auf den gemeinsam genutzten Inhalt beschränkt ist.
 
 ![Zimbra - storage](images/zimbra-storage-share-invite-01.png){.thumbnail .w-600}
+
+#### Dokument bearbeiten <a name="storage-onlyoffice"></a>
+
+> [!success]
+>
+> Die Funktion zur Dokumentenbearbeitung im Bereich „Aktentasche" ist nur mit der Zimbra Pro Lösung verfügbar.
+
+Über die Aktentasche Ihres Zimbra Accounts können Sie Textdateien, Tabellen oder Präsentationen mit der integrierten ONLYOFFICE Suite bearbeiten. So bearbeiten Sie ein Dokument:
+
+- Klicken Sie auf das `Aktentasche`{.action} Symbol in der oberen Leiste, um auf Ihren Speicherplatz zuzugreifen.
+- Wählen Sie die Datei aus, die Sie bearbeiten möchten.
+- Klicken Sie in der oberen Leiste auf `Bearbeiten`{.action}.
+
+![Zimbra - storage](images/zimbra-storage-onlyoffice-01.png){.thumbnail .w-600}
+
+- Der ONLYOFFICE Editor wird in einem neuen Tab geöffnet.
+
+![Zimbra - storage](images/zimbra-storage-onlyoffice-02.png){.thumbnail .w-600}
+
+Die Änderungen, die Sie im Editor vornehmen, werden während der Bearbeitung oder beim Schließen des Tabs automatisch gespeichert.
+
+> [!success]
+>
+> Wenn Sie weitere Informationen zur Bearbeitung von Dokumenten in ONLYOFFICE benötigen, [lesen Sie die offizielle Dokumentation](https://helpcenter.onlyoffice.com/docs).
 
 ### Filter <a name="filters"></a>
 

@@ -74,7 +74,7 @@ Pour plus d'informations sur le chiffrement, cliquez sur [ce lien](https://fr.wi
 Le bloc suivant comprend quatre onglets :
 
 - noms de domaine ;
-- 10 000 serveurs ;
+- serveurs ;
 - tâches ;
 - graphiques ;
 
@@ -166,7 +166,7 @@ L'onglet « Graphiques » vous permet de visualiser le nombre de connexions et
 
 ## Renouveler votre certificat SSL
 
-###  
+### Note importante
 
 Afin de renouveler le certificat Let’s Encrypt, le nom de domaine ou le sous-domaine devra pointer vers l’adresse IP de l’offre SSL Gateway.
 

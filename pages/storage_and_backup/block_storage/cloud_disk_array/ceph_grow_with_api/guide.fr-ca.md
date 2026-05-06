@@ -32,6 +32,17 @@ Ce guide explique comment mettre à niveau votre cluster OVHcloud Cloud Disk Arr
 - Une solution [Cloud Disk Array](/links/storage/cloud-disk-array)
 - Être connecté à l’[API OVHcloud](/links/api)
 
+<!-- CP-NAV-START:storage-cloud-disk-array -->
+---
+
+### Accès à l’espace client OVHcloud
+
+- **Lien direct :** [Cloud Disk Array](/links/control-panel/storage-cloud-disk-array)
+- **Pour accéder à vos services :** `Bare Metal Cloud`{.action} > `Cloud Disk Array`{.action} > Sélectionnez votre service
+
+---
+<!-- CP-NAV-END:storage-cloud-disk-array -->
+
 > [!success]
 > Si vous n'êtes pas familier avec l'utilisation de l'API OVHcloud, consultez notre guide « [Premiers pas avec les API OVHcloud](/pages/manage_and_operate/api/first-steps) ».
 
@@ -82,9 +93,7 @@ Vous pouvez le récupérer via l'espace client OVHcloud ou l'appel API suivant :
 >> Cette commande renvoie une liste de vos services CDA. Chaque service est identifié par un UUID, par exemple 48e5f77f-427b-4261-9799-7861033659fb
 >>
 > Via l'espace client OVHcloud
->> Tout d'abord, connectez-vous à votre [espace client OVHcloud](/links/manager) et rendez-vous dans la section `Bare Metal Cloud`{.action}. Cliquez sur `Platformes et services`{.action} puis sur le service `ceph-cluster`{.action}.
->>
->> Dans les « Détails », localisez le champ « ID ». Cette valeur est le nom de votre service CDA.
+>> Dans la page de votre service Cloud Disk Array, rendez-vous dans la section « Détails » et localisez le champ « ID ». Cette valeur est le nom de votre service CDA.
 >>
 >> ![Ceph details](images/ceph_details.png){.thumbnail}
 >>

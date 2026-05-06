@@ -21,9 +21,18 @@ Das mit OpenStack ausgelieferte Horizon Interface wurde von OVHcloud angepasst, 
 
 ## In der praktischen Anwendung
 
-### In OpenStack Horizon einloggen
+<!-- CP-NAV-START:publiccloud-projects -->
+---
 
-- Für die Verbindung über OVHcloud SSO: Verwenden Sie den Link `Horizon`{.action} im linken Menü unter "Management Interfaces" nachdem Sie Ihr `Public Cloud`{.action} Projekt in Ihrem [OVHcloud Kundencenter](/links/manager) geöffnet haben.
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direkter Link:** [Public Cloud Projekte](/links/control-panel/publiccloud-projects)
+- **Navigationspfad:** `Public Cloud`{.action} > Wählen Sie Ihr Projekt aus
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
+
+### In OpenStack Horizon einloggen
 
 - Um sich mit einem bestimmten OpenStack Benutzer anzumelden: Öffnen Sie die Anmeldeseite für [Horizon](https://horizon.cloud.ovh.net/auth/login/), geben Sie die zuvor erstellten Daten des [OpenStack Users](/pages/public_cloud/public_cloud_cross_functional/create_and_delete_a_user) ein und klicken Sie auf `Connect`{.action}.
 

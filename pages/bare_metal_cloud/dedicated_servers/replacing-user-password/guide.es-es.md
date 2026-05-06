@@ -1,6 +1,6 @@
 ---
-title: "Cómo recuperar el acceso al servidor en caso de pérdida de la contraseña del usuario"
-excerpt: "Cómo configurar una nueva contraseña para una cuenta de usuario en un sistema operativo GNU/Linux con el modo de rescate de OVHcloud"
+title: "Recuperar una contraseña perdida en un servidor dedicado"
+excerpt: "Restablezca una contraseña de usuario perdida en un servidor dedicado GNU/Linux a través del modo rescue de OVHcloud para recuperar el acceso"
 updated: 2025-10-02
 ---
 
@@ -20,7 +20,7 @@ En ese caso, puede conectarse a su servidor a través del modo de rescate de OVH
 ## Requisitos
 
 - Tener un [servidor dedicado](/links/bare-metal/bare-metal) o un [VPS](/links/bare-metal/vps) en su cuenta de OVHcloud
-- Estar conectado a su [área de cliente de OVHcloud](/links/manager)
+
 
 > [!primary]
 > Esta guía no se aplica a las instalaciones de **Windows** Server. Consulte nuestras guías "[Cómo cambiar la contraseña de administrador en un servidor dedicado Windows](/pages/bare_metal_cloud/dedicated_servers/rcw-changing-admin-password-on-windows)" y "[Cómo cambiar la contraseña de administrador en un VPS Windows](/pages/bare_metal_cloud/virtual_private_servers/resetting_a_windows_password)".

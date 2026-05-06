@@ -82,7 +82,7 @@ Follow the installation steps by clicking on the tabs below:
 
 Once you have configured your email address, you can start using it! You can now send and receive emails.
 
-OVHcloud also has a web application you can use to access your email address from your browser. You can access this application at [Webmail](/links/web/email). You can log in using your email credentials. If you have any question about how to use it, you can refer to our guide on [Using an account in the OWA](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa) interface or use your email address via the RoundCube webmail.
+OVHcloud also has a web application you can use to access your email address from your browser. You can access this application at [Webmail](/links/web/email). You can log in using your email credentials. If you have any question about how to use it, you can refer to our guide on [Using an account in the OWA interface](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa).
 
 ### Retrieve a backup of your email address
 
@@ -177,9 +177,6 @@ For sending emails, if you have to enter the **SMTP** settings manually in your 
 > For more information on configuring an email address from the Mail app on macOS, see [the Apple Help Center](https://support.apple.com/en-gb/guide/mail/mail35803/mac).
 
 [MX Plan - Configuring your email account on Mail for iPhone and iPad](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_ios)
-
-[Email Pro - Configuring your email account on Mail for macOS](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_mail_macos)<br>
-[Email Pro - Configuring your email account on Mail for iPhone and iPad](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_ios)
 
 [Exchange - Configuring your email account on macOS Mail](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_ios)<br>
 [Exchange - Configuring your email account on Mail for iPhone and iPad](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_mail_macos)

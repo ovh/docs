@@ -1,7 +1,7 @@
 ---
 title: "Web Cloud Databases - Como autorizar um endereço IP?"
 excerpt: "Saiba como autorizar um ou vários endereços IP a aceder à sua solução Web Cloud Databases"
-updated: 2025-07-10
+updated: 2026-03-24
 ---
 
 <style>
@@ -35,38 +35,44 @@ Precisa de alterar estas permissões/restrições?
 
 - Dispor de uma solução [Web Cloud Databases](/links/web/databases).
 - Conhecer o endereço IP (ou o intervalo de endereços IP) a autorizar na sua solução.
-- Ter acesso à [Área de Cliente OVHcloud](/links/manager).
+
+<!-- CP-NAV-START:web-cloud-databases -->
+---
+
+### Acesso à Área de Cliente OVHcloud
+
+- **Ligação direta:** [Web Cloud Databases](/links/control-panel/web-cloud-databases)
+- **Caminho de navegação:** `Web Cloud`{.action} > `Web Cloud Databases`{.action} > Selecione o seu serviço de base de dados
+
+---
+<!-- CP-NAV-END:web-cloud-databases -->
 
 ## Instruções
 
 ### Autorizar um endereço IP ou um intervalo de endereços IP
 
+<!-- CP-STEPS-START:authorise-ip-address-range -->
+
 > [!primary]
 >
 > Lembrete: se acabou de ativar a sua solução [Web Cloud Databases](/links/web/databases) e pretende utilizá-la com uma oferta de [alojamento web OVHcloud](/links/web/hosting), os endereços IP dessas ofertas já são autorizados por predefinição.
 
-Clique nas guias abaixo para exibir sucessivamente cada um dos **5** etapas.
+Clique nos separadores abaixo para visualizar cada uma das **4** etapas.
 
 > [!tabs]
 > **Etapa 1**
 >>
->> Aceda à [Área de Cliente OVHcloud](/links/manager) e aceda à secção `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Etapa 2**
->>
->> Clique no menu `Web Cloud Databases`{.action} e escolha a solução Web Cloud Databases correspondente.
+>> Aceda à página [Web Cloud Databases](/links/control-panel/web-cloud-databases) e escolha a solução correspondente.
 >>
 >> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases.png){.thumbnail}
 >>
-> **Etapa 3**
+> **Etapa 2**
 >>
 >> Na página que se abrir, clique no separador `Endereços IP autorizados`{.action}.
 >>
 >> ![Authorised IPs](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/authorised-ips.png){.thumbnail}
 >>
-> **Etapa 4**
+> **Etapa 3**
 >>
 >> Na página que aparece, clique no botão `Adicionar um endereço IP / máscara`{.action} situado por cima da tabela.
 >>
@@ -76,7 +82,7 @@ Clique nas guias abaixo para exibir sucessivamente cada um dos **5** etapas.
 >> >
 >> > Se pretender alterar um endereço IP ou um intervalo de endereços IP já autorizados, clique diretamente na tabela no botão `...`{.action} situado à direita da linha correspondente ao endereço IP ou ao intervalo de endereços IP a alterar e, a seguir, em `Editar whitelist`{.action}.
 >>
-> **Etapa 5**
+> **Etapa 4**
 >>
 >> Na janela que se abre, vários campos devem ser preenchidos:
 >>
@@ -94,6 +100,8 @@ Clique nas guias abaixo para exibir sucessivamente cada um dos **5** etapas.
 >> > Isto permitirá autorizar o acesso às suas bases de dados de todos os endereços IPv4 existentes.
 >>
 >> Depois de inserir as informações, clique no botão `Validar`{.action}.
+
+<!-- CP-STEPS-END:authorise-ip-address-range -->
 
 ## Casos particulares
 
@@ -113,44 +121,41 @@ Efetivamente, isto permitiria autorizar o acesso às suas bases de dados a todos
 
 ///
 
-
 /// details | A autorização de acesso aos alojamentos web da OVHcloud
 
 Aquando da ativação da sua solução Web Cloud Databases, a autorização de acesso aos alojamentos web da OVHcloud é ativada por predefinição.
 
-Se deseja desativar esta autorização pois não utiliza um alojamento web com a sua solução Web Cloud Databases, siga sucessivamente as etapas **4** abaixo:
+Se deseja desativar esta autorização pois não utiliza um alojamento web com a sua solução Web Cloud Databases, clique nos separadores abaixo para visualizar cada uma das **3** etapas.
+
+<!-- CP-STEPS-START:special-cases-authorizing-web-hosting -->
 
 > [!tabs]
 > **Etapa 1**
 >>
->> Aceda à [Área de Cliente OVHcloud](/links/manager) e aceda à secção `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Etapa 2**
->>
->> Clique no menu `Web Cloud Databases`{.action} e escolha a solução Web Cloud Databases correspondente.
+>> Aceda à página [Web Cloud Databases](/links/control-panel/web-cloud-databases) e escolha a solução correspondente.
 >>
 >> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases.png){.thumbnail}
 >>
-> **Etapa 3**
+> **Etapa 2**
 >>
 >> Na página que se abrir, clique no separador `Endereços IP autorizados`{.action}.
 >>
 >> ![Authorised IPs](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/authorised-ips.png){.thumbnail}
 >>
-> **Etapa 4**
+> **Etapa 3**
 >>
 >> Na página que aparece, desmarque a caixa de verificação antes da menção `Autorizar o acesso dos alojamentos web da OVHcloud à base de dados`{.action}.
 >>
 >> ![Authorised IPs interface](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/authorized-ips/tab-0000-sftp-hosting-enabled.png){.thumbnail}
+
+<!-- CP-STEPS-END:special-cases-authorizing-web-hosting -->
 
 ///
 
 ## Quer saber mais?
  
 Para serviços especializados (referenciamento, desenvolvimento, etc.), contacte os [parceiros OVHcloud](/links/partner).
- 
+
 Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](/links/support).
- 
+
 Fale com a nossa [comunidade de utilizadores](/links/community).

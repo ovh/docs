@@ -1,7 +1,7 @@
 ---
 title: Object Storage - FAQ
 excerpt: "FAQ sur la solution Object Storage"
-updated: 2025-08-05
+updated: 2026-03-06
 ---
 
 ## Questions générales
@@ -10,7 +10,7 @@ updated: 2025-08-05
 
 Le stockage objet «Object Storage» est une famille d’offres de stockage proposant des espaces de stockage performant, scalable et sécurisé.
 
-Les offres de stockage objet permettent de déposer, à travers un point d’accès public appelé « endpoint », des fichiers statiques (vidéos, images, fichiers web, etc...) dans un espace illimité, pour les exploiter depuis une application ou pour les rendre accessibles sur le web. Ces espaces de stockages sont accessibles via une interface d’API standard compatible S3<sup>1</sup> pour les classes de stockage Object Storage et Swift pour les classes de stockage Object Storage SWIFT.
+Les offres de stockage objet permettent de déposer, à travers un point d’accès public appelé « endpoint », des fichiers statiques (vidéos, images, fichiers web, etc...) dans un espace illimité, pour les exploiter depuis une application ou pour les rendre accessibles sur le web. Ces espaces de stockages sont accessibles via une interface d’API standard compatible S3<sup>1</sup> pour les classes de stockage Object Storage et Swift pour les classes de stockage Object Storage Swift.
 
 <iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/8xXbL3Ftgwk?si=OaRx5koocA-OyRXC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
@@ -18,19 +18,20 @@ Les offres de stockage objet permettent de déposer, à travers un point d’acc
 
 Le stockage objet est adapté pour stocker de la donnée non structurée de manière illimitée en volume et en temps, pour des cas d'usage comme les websites, les plateformes d'e-commerce, le streaming de vidéos, les librairies d'images, l'analytique, les sauvegardes, les archives.
 
-### Quelle est la différence entre les classes de stockage objet compatible S3 et les classes de stockage objet SWIFT ?
+### Quelle est la différence entre les classes de stockage objet compatibles S3 et les classes de stockage objet Swift ?
 
 Les classes de stockage Object Storage sont largement compatibles avec le protocole S3 et bénéficient d'un design récent, performant et d'une bonne bande passante. Cette offre bénéficie régulièrement de mises à jour et de nouvelles fonctionnalités.
 
-Les classes de stockage SWIFT sont de générations plus anciennes et ne bénéficient plus d'évolutions. Elles sont accessibles à travers le protocole SWIFT d'OpenStack.
+Les classes de stockage Swift sont de générations plus anciennes et ne bénéficient plus d'évolutions. Elles sont accessibles à travers le protocole Swift d'OpenStack.
 
 ### Comment savoir quelle classe de stockage est adaptée à mes usages ?
 
-OVHcloud propose 3 classes de stockages compatibles S3 :
+OVHcloud propose les classes de stockage compatibles S3 suivantes :
 
 - **High Performance** pour vos applications exigeantes en termes de latence et de consommation de bande passante.
 - **Standard** pour vos stockages volumineux pour lesquels vous recherchez un meilleur ratio prix/performance, comme par exemple pour des sites web, des librairies de partage d'images ou des sauvegardes.
 - **Infrequent Access** pour vos données plus rarement consultées, aussi appelées données « froides », nécessitant toutefois une récupération rapide : stockage de données à long terme, sauvegardes, PRA.
+- **Active Archive** pour des données que vous ne consultez quasiment jamais (1 à 3 fois par an), mais qui exigent une disponibilité immédiate (en millisecondes) lorsque vous en avez besoin.
 - **Cold Archive** pour vos archives.
 
 Retrouvez la description des classes des stockage sur [cette page](/links/public-cloud/storage).
@@ -43,7 +44,7 @@ De nouvelles fonctionnalités sont à venir, nous vous invitons à consulter ré
 
 ### Quelles sont les API Amazon S3 compatibles avec les classes de stockage Object Storage ?
 
-Les classes Object Storage offrent un large support d'API S3. L'ensemble des API compatibles sont décrites dans notre [guide de compatibilité](/pages/storage_and_backup/object_storage/s3_s3_compliancy).
+Les classes Object Storage offrent un large support d'API compatibles S3. L'ensemble des API compatibles sont décrites dans notre [guide de compatibilité](/pages/storage_and_backup/object_storage/s3_s3_compliancy).
 
 ### Quels sont les outils compatibles avec Object Storage ?
 
@@ -84,13 +85,13 @@ Le coût de stockage mensuel est : 37 376 000 * 0.00001917 + (51 633 600 - 37 37
 
 Sur le mois de novembre, la volumétrie n'évolue plus, le coût de stockage mensuel est calculé comme suit : **Go-heure du mois de novembre** = 100 * 1024 * 720 = **73 728 000 Go-heure** (il y a 720 heures en novembre)
 
-Soit le coût du stockage mensuel : 37 376 000 * 0.00001917 + (73 728 000 - 37 376 000) * 0.00001712 = 716.49792 + 622,34624 = **1338,84 EUR**
+Soit le coût du stockage mensuel : 37 376 000 * 0.00001917 + (73 728 000 - 37 376 000) * 0.00001712 = 716.49792 + 622.34624 = **1338.84 EUR**
 
 ## Accès & sécurité
 
 ### Par quels API avoir accès aux offres de stockage ?
 
-Nous avons conçu les classes de stockage Object Storage pour qu’elles soient **compatibles avec S3**, considérée comme une référence dans le marché du stockage d’objets. Vous pouvez donc utiliser Object Storage avec la plupart des outils de gestion de données via les endpoints définis par région.
+Nous avons conçu les classes de stockage Object Storage pour qu’elles soient **compatibles avec l’API S3**, considérée comme une référence dans le marché du stockage d’objets. Vous pouvez donc utiliser Object Storage avec la plupart des outils de gestion de données via les endpoints définis par région.
 
 Munissez-vous de vos clés d'accès Object Storage et accédez en ligne de commande aux différentes classes de stockage par commandes AWS-CLI, [`s3cmd`](https://s3tools.org/s3cmd) ou autres.
 
@@ -140,20 +141,23 @@ Assurez-vous d'avoir les autorisations nécessaires en utilisant les credentials
 Pour générer une URL présignée afin de partager un objet à l'aide de la CLI AWS, vous pouvez utiliser la commande `presign` :
 
 ```bash
-$ aws s3 presign s3://<bucket>/<key>
+aws s3 presign s3://<bucket_name>/<object_key>
 ```
 
 - Exemple :
 
 ```bash
-$ aws s3 presign s3://gribs/grib-file
+aws s3 presign s3://gribs/grib-file
+```
+
+```text
 https://s3.gra.perf.cloud.ovh.net/gribs/grib-file?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=5ba255c12baf43be9d00289070faf936%2F20230221%2Fgra%2Fs3%2Faws4_request&X-Amz-Date=20230221T142726Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=a43dc63c483d469f6f747ef041a434145b3661541e95e4334eee3a96e059e15e
 ```
 
 Vous pouvez également définir une expiration du lien via l'option `--expire`. La commande ci-dessous définit une expiration au bout de 24h (la durée est exprimée en secondes) :
 
 ```bash
-aws s3 presign s3://<bucket>/<key> --expires-in 86400
+aws s3 presign s3://<bucket_name>/<object_key> --expires-in 86400
 ```
 
 ## Bande passante

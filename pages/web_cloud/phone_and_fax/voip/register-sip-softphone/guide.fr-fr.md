@@ -1,6 +1,6 @@
 ---
-title: 'Ligne SIP - Configuration sur un softphone / téléphone personnel'
-excerpt: 'Découvrez comment enregistrer une ligne SIP OVHcloud sur un softphone tel que Linphone ou Zoiper ou sur votre téléphone personnel'
+title: "Ligne SIP - Configuration sur un softphone / téléphone personnel"
+excerpt: "Découvrez comment enregistrer une ligne SIP OVHcloud sur un softphone tel que Linphone ou Zoiper ou sur votre téléphone personnel"
 updated: 2025-10-06
 ---
 
@@ -27,7 +27,17 @@ OVHcloud propose des lignes SIP sans matériel pouvant être enregistrées sur d
 ## Prérequis
 
 - Disposer d'une [ligne SIP OVHcloud](/links/telecom/telephonie-voip) sans téléphone OVHcloud associé.
-- Être connecté à l'[espace client OVHcloud](/links/manager), partie `Télécom`{.action}.
+
+<!-- CP-NAV-START:telecom-voip-fax -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [VoIP & Fax](/links/control-panel/telecom-voip-fax)
+- **Pour accéder à vos services :** `Télécom`{.action} > `VoIP & Fax`{.action} > Sélectionnez votre groupe de téléphonie
+
+---
+<!-- CP-NAV-END:telecom-voip-fax -->
 
 > [!primary]
 > Une ligne SIP **fournie avec un téléphone OVHcloud** ne peut pas être enregistrée sur un softphone ou sur votre propre téléphone personnel. Si c'est le cas de votre ligne et que vous souhaitez utiliser un softphone ou votre propre téléphone, nous vous invitons à [commander une ligne SIP supplémentaire](/links/telecom/telephonie-voip), fournie sans téléphone OVHcloud.
@@ -39,7 +49,7 @@ Avant toute utilisation d'une ligne SIP sans matériel fournie par OVHcloud, nou
 
 Contrairement aux lignes pré-configurées sur des téléphones OVHcloud, vous avez accès, depuis l'espace client OVHcloud, à la gestion du **mot de passe SIP** d'une ligne sans matériel. Il est primordial de définir un mot de passe SIP **fort**. Retrouvez plus d'informations sur notre guide pour [Modifier le mot de passe d'une ligne SIP](/pages/web_cloud/phone_and_fax/voip/modifier-mot-de-passe-ligne-sip).
 
-### Etape 1 : retrouver vos identifiants SIP
+### Étape 1 : Retrouver vos identifiants SIP
 
 Vous devez **impérativement** disposer des quatre informations suivantes afin de pouvoir enregistrer votre ligne :
 
@@ -48,16 +58,14 @@ Vous devez **impérativement** disposer des quatre informations suivantes afin d
 | Login / User name | Il s'agit du numéro de votre ligne, au format international.|
 | Mot de passe SIP | Vous pouvez modifier ce mot de passe depuis votre espace client OVHcloud.|
 | Domain / Registrar | Le nom du serveur de téléphonie qui héberge votre ligne.|
-| Proxy sortant | C'est l'adresse du serveur qui reçevra les requêtes de votre ligne.|
+| Proxy sortant | C'est l'adresse du serveur qui reçoit les requêtes de votre ligne.|
 
 #### Login, Domain et Proxy sortant
 
-Afin de retrouver votre **Login**, **Domain** et **Proxy sortant**, suivez les étapes ci-dessous :
+<!-- CP-STEPS-START:login-domain-proxy-sortant -->
+Afin de retrouver votre **Login**, **Domain** et **Proxy sortant**, suivez les étapes ci-dessous.
 
-1. Connectez-vous à votre [espace client OVHcloud](/links/manager) et cliquez sur `Télécom`{.action}.
-1. Cliquez sur `VoIP & Fax`{.action} puis sur le groupe de facturation contenant votre ligne SIP.
-1. Cliquez sur l'onglet `Services`{.action} puis sur la ligne SIP concernée.
-1. Dans l'onglet `Gestion`{.action}, cliquez sur `Informations générales`{.action}.
+Dans l'onglet `Gestion`{.action}, cliquez sur `Informations générales`{.action}.
 
 ![informations générales](images/general-information.png){.thumbnail}
 
@@ -69,6 +77,7 @@ Vous retrouvez alors, dans le cadre « Informations SIP », votre **Login**, **D
 > Dans l'exemple ci-dessus, le **Domain** est `sip-domain.io`. Prenez soin de vérifier quel est le **Domain** de votre ligne SIP, celui-ci pouvant être différent.
 > Le **Proxy sortant** est `outbound-ovh-1.sip-proxy.io`, mais il sera différent pour votre ligne SIP.
 >
+<!-- CP-STEPS-END:login-domain-proxy-sortant -->
 
 #### Mot de passe SIP
 
@@ -77,11 +86,11 @@ Si vous ne connaissez pas votre mot de passe SIP ou que vous ne l'avez jamais mo
 > [!success]
 > Vous pouvez utiliser un coffre-fort de mots de passe, comme [KeePass](https://keepass.info/) afin de sauvegarder en toute sécurité votre mot de passe SIP.
 
-### Étape 2 : enregistrer la ligne SIP
+### Étape 2 : Enregistrer la ligne SIP
 
 Une fois vos identifiants connus, vous pouvez procéder à l'enregistrement de votre ligne sur votre propre téléphone ou sur le softphone de votre choix.
 
-De nombreuses logiciels de ce type sont disponibles. Nous vous proposons de suivre des méthodes pour deux d'entre eux, **Linphone** et **Zoiper**.<br>
+De nombreux logiciels de ce type sont disponibles. Nous vous proposons de suivre des méthodes pour deux d'entre eux, **Linphone** et **Zoiper**.<br>
 Cliquez sur les liens ci-dessous pour lire les tutoriels :
 
 - [Tutoriel - Enregistrer une ligne SIP OVHcloud sur Linphone](/pages/web_cloud/phone_and_fax/voip/register-sip-softphone-linphone).

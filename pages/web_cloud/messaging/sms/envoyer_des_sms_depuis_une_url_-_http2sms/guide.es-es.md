@@ -1,6 +1,6 @@
 ---
 title: 'Enviar SMS desde una URL'
-excerpt: 'Cómo enviar SMS desde una dirección http'
+excerpt: 'Descubra cómo enviar SMS mediante la herramienta Wget y peticiones HTTP directamente desde la barra de direcciones de su navegador web'
 updated: 2020-05-20
 ---
 
@@ -101,8 +101,8 @@ Puede consultar a continuación la lista de códigos de respuesta de la API:
 
 En caso de error, se indicará la causa:
 
-* en el campo del mensaje, para JSON o XML;
-* en la segunda línea, para HTML o text/plain.
+- en el campo del mensaje, para JSON o XML;
+- en la segunda línea, para HTML o text/plain.
 
 #### XML
 

@@ -14,6 +14,17 @@ This guide will explain how you can ensure continuity for your services by migra
 
 - A [VPS](/links/bare-metal/vps) solution with a [compatible distribution](/links/bare-metal/vps-os).
 
+<!-- CP-NAV-START:baremetal-vps -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [VPS management](/links/control-panel/baremetal-vps)
+- **Navigation path:** `Bare Metal Cloud`{.action} > `Virtual private servers`{.action} > Select your VPS
+
+---
+<!-- CP-NAV-END:baremetal-vps -->
+
 ## Instructions
 
 The **Plesk** and **cPanel** publishers announce the end of support for the following operating systems:
@@ -42,11 +53,11 @@ For more details on support purposes, please refer to the official documentation
 
 #### 1. Check your current system
 
-Log in to your [OVHcloud Control Panel](/links/manager), go to the `Bare Metal Cloud`{.action} section, and select your server under the `Virtual private servers`{.action} section.
-
+<!-- CP-STEPS-START:check-current-system -->
 ![EOS Plesk cPanel](images/vpshome.png){.thumbnail}
 
 In the `Home`{.action} tab, find the details of your operating system in the `OS/Distribution` section in the `Your VPS` box.
+<!-- CP-STEPS-END:check-current-system -->
 
 #### 2. Identify a compatible OS
 

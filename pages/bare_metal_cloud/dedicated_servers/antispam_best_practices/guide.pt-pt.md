@@ -1,6 +1,6 @@
 ---
-title: OVHcloud AntiSpam - Boas práticas e desbloqueio de um endereço IP
-excerpt: Descubra as nossas boas práticas antisspam e como desbloquear um endereço IP bloqueado para SPAM
+title: "OVHcloud AntiSpam - Boas práticas e desbloqueio de um endereço IP"
+excerpt: "Aplique as boas práticas antispam OVHcloud e desbloqueie um endereço IP de servidor dedicado sinalizado para envio de spam"
 updated: 2026-01-06
 ---
 
@@ -11,6 +11,17 @@ Para cada endereço IP disponível nos produtos e serviços da OVHcloud, na qual
 Se um endereço IP é objeto de um relatório junto de organizações como Spamhaus, SpamCop, etc, que lutam contra o SPAM, os websites maliciosos e o phishing, é a reputação do conjunto da rede OVHcloud que está em jogo.
 
 Por isso, é importante que a OVHcloud se ocupe da reputação, qualidade e segurança da rede, que constitui igualmente uma parte importante do seu serviço.
+
+<!-- CP-NAV-START:network-public-ip -->
+---
+
+### Acesso à Área de Cliente OVHcloud
+
+- **Ligação direta:** [Public IP](/links/control-panel/network-public-ip)
+- **Caminho de navegação:** `Network`{.action} > `Endereços IP Públicos`{.action}
+
+---
+<!-- CP-NAV-END:network-public-ip -->
 
 ### Como funciona o sistema de proteção?
 
@@ -49,7 +60,7 @@ O processo envolve a identificação do problema, a sua resolução e o desbloqu
 - Elimine o envio de e-mail (por exemplo: parar todos os softwares de e-mail como o qmail, Postfix, Sendmail, etc.).
 - Verifique a fila de espera dos e-mails (por exemplo qmHandle para qmail, postqueue -p para Postfix) e esvazie-a.
 - Analise os logs graças à **Message-ID** presente no alerta de bloqueio.
-- Se enviar SPAM ou e-mails ilegítimos, recomendamos vivamente que resolva o problema **antes** de desbloquear o endereço IP. Consulte este guia para [melhores práticas (EN)](/pages/bare_metal_cloud/dedicated_servers/antispam_best_practices#bestpractices) no matéria de envio de e-mails. 
+- Se enviar SPAM ou e-mails ilegítimos, recomendamos vivamente que resolva o problema **antes** de desbloquear o endereço IP. Consulte este guia para [melhores práticas](/pages/bare_metal_cloud/dedicated_servers/antispam_best_practices#bestpractices) em matéria de envio de e-mails. 
 
 Uma vez o problema resolvido, pode desbloquear o seu endereço IP efetuando os passos seguintes.
 
@@ -61,8 +72,6 @@ Uma vez o problema resolvido, pode desbloquear o seu endereço IP efetuando os p
 ### Desbloquear o endereço IP
 
 #### Desbloquear o endereço IP a partir da Área de Cliente
-
-Aceda à [Área de Cliente OVHcloud](/links/manager), clique em `Network`{.action} no menu à esquerda do ecrã e, a seguir, em `Endereços IP Públicos`{.action}.
 
 Pode utilizar o menu suspenso sob **Os meus endereços IP públicos e serviços associados** para filtrar os seus serviços por categoria, ou escrever diretamente o endereço IP desejado na barra de pesquisa.
 

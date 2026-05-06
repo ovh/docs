@@ -1,7 +1,7 @@
 ---
 title: FAQ soluciones de correo electrónico de OVHcloud
 excerpt: "Encuentre las preguntas más frecuentes sobre el correo electrónico"
-updated: 2025-04-07
+updated: 2026-03-24
 ---
 
 <style>
@@ -20,6 +20,26 @@ details[open]>summary::before {
   max-width:500px !important;
 }
 </style>
+
+<!-- CP-NAV-START:web-mx-plan -->
+<!-- CP-NAV-START:web-exchange -->
+---
+
+### Acceso al área de cliente de OVHcloud
+
+**MX Plan:**
+
+- **Enlace directo:** [MX Plan](/links/control-panel/web-mx-plan)
+- **Ruta de navegación:** `Web Cloud`{.action} > `MX Plan`{.action} > Seleccione su servicio MX Plan
+
+**Exchange:**
+
+- **Enlace directo:** [Exchange](/links/control-panel/web-exchange)
+- **Ruta de navegación:** `Web Cloud`{.action} > `Exchange`{.action} > Seleccione su plataforma
+
+---
+<!-- CP-NAV-END:web-exchange -->
+<!-- CP-NAV-END:web-mx-plan -->
 
 ## FAQ e-mail
 
@@ -49,22 +69,6 @@ OVHcloud ofrece actualmente 4 soluciones de correo. Para entender sus especifica
 
 > [!success]
 > A menos que se indique lo contrario, las siguientes preguntas afectan a todos los servicios de correo de OVHcloud.
-
-/// details | ¿En qué se diferencian las tecnologías de correo electrónico de las ofertas **MX Plan**?
-
-La solución MX Plan se distingue por su evolución, que se basa en tres tecnologías de correo distintas. Cada una de ellas tiene su propia interfaz webmail:
-
-- **Roundcube**.
-- **OWA** (Outlook Web Access).
-- **Zimbra**.
-
-Esta diversidad de tecnologías implica una ergonomía de funcionamiento diferente para cada interfaz. Algunas funcionalidades pueden configurarse a través del área de cliente, mientras que otras pueden configurarse a través del webmail.
-
-A continuación, se ofrece un resumen de las principales funcionalidades de correo electrónico, clasificadas por tecnología y ubicación de configuración:
-
-![MX plan](images/email_feature_table.png){.thumbnail .w-500}
-
-///
 
 /// details | ¿Qué hay que saber antes de crear una dirección de correo electrónico?
 
@@ -111,7 +115,6 @@ A continuación se indican las principales razones por las que no ha recibido su
 
 ///
 
-
 /// details | ¿Por qué configurar los registros SPF y DKIM?
 
 **SPF (Sender Policy Framework)**
@@ -127,7 +130,6 @@ Permite firmar los mensajes de correo para evitar el robo de identidad. Esta fir
 Para saber cómo configurar un registro DKIM en su servicio de correo, consulte nuestra guía [Mejorar la seguridad del correo electrónico mediante un registro DKIM](/pages/web_cloud/domains/dns_zone_dkim).
 
 ///
-
 
 /// details | ¿Cómo configurar mi dirección de correo electrónico y utilizarla con el webmail?
 
@@ -182,8 +184,6 @@ Gracias al [webmail](/links/web/email), podrá acceder a su correo en cualquier 
 
 Todas sus direcciones de correo se gestionan desde el [área de cliente de OVHcloud](/links/manager). Para ello, una vez que se haya conectado, acceda al producto correspondiente. Puede de esta manera modificar la contraseña de sus direcciones de correo, verificar su índice de llenado, crear nuevas direcciones o eliminar direcciones existentes.
 
-**Trucos y consejos**: En los servicios MX Plan, puede delegar la gestión de una cuenta de correo en otra cuenta de OVHcloud, pero usted mismo podrá controlarla. Para ello, solo tiene que configurar una delegación desde su [área de cliente de OVHcloud](/links/manager). Puede basarse en [nuestra documentación](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/feature_delegation).
-
 ///
 
 /// details | ¿Qué hay que saber antes de crear una dirección de correo electrónico?
@@ -230,7 +230,6 @@ Si la columna `Filtro` no está presente en el área de cliente, deberá crear l
 
 ///
 
-
 /// details | Mi dirección de correo electrónico está llena, no tengo espacio. ¿Qué puedo hacer?
 
 Si ha contratado [una de nuestras soluciones de correo de OVHcloud](/links/web/emails) y tiene una cuenta de correo llena, consulte nuestra guía «[Gestionar el espacio de almacenamiento de una cuenta de correo](/pages/web_cloud/email_and_collaborative_solutions/troubleshooting/email_manage_quota) ». Esta guía le ayudará a determinar si puede optimizar el espacio existente o si es necesario cambiar de solución de correo para aumentar la capacidad de almacenamiento.
@@ -248,18 +247,11 @@ Si ha contratado [una de nuestras soluciones de correo de OVHcloud](/links/web/e
 
 ///
 
-/// details | ¿La solución Office 365 Pro Plus incluye licencia Skype?
-
-La solución Office 365 Pro Plus no incluye licencia Skype. Solo se incluye Skype for Business.
-
-///
-
 /// details | ¿Cómo transferir sin interrupción del servicio mi correo, sitio web, base de datos y dominio a los servidores de OVHcloud?
 
 Para más información, consulte la guía "[Migrar un sitio web y los servicios asociados a OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh)".
 
 ///
-
 
 ## Más información <a name="go-further"></a>
 

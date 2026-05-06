@@ -1,7 +1,7 @@
 ---
-title: 'Configurer et consulter le répondeur de sa ligne'
-excerpt: 'Apprenez à configurer et utiliser le répondeur de votre ligne téléphonique OVHcloud'
-updated: 2025-08-12
+title: "Configurer et consulter le répondeur de sa ligne"
+excerpt: "Apprenez à configurer et utiliser le répondeur de votre ligne téléphonique OVHcloud"
+updated: 2026-01-20
 ---
 
 ## Objectif
@@ -22,7 +22,17 @@ Chaque ligne OVHcloud est associée à un répondeur que vous pouvez personnalis
 ## Prérequis
 
 - Disposer d'une [ligne téléphonique OVHcloud](/links/telecom/telephonie).
-- Être connecté à l'[espace client OVHcloud](/links/manager), partie `Télécom`{.action}.
+
+<!-- CP-NAV-START:telecom-voip-fax -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [VoIP & Fax](/links/control-panel/telecom-voip-fax)
+- **Pour accéder à vos services :** `Télécom`{.action} > `VoIP & Fax`{.action} > Sélectionnez votre groupe de téléphonie
+
+---
+<!-- CP-NAV-END:telecom-voip-fax -->
 
 ![espace client Telecom VoIP](/pages/assets/screens/control_panel/product-selection/telecom/tpl-telecom-02-fr-voip.png){.thumbnail}
 
@@ -30,7 +40,7 @@ Chaque ligne OVHcloud est associée à un répondeur que vous pouvez personnalis
 
 Les lignes OVHcloud disposent par défaut d'un répondeur que vous pouvez consulter et personnaliser à votre guise. Si vous venez d'obtenir votre ligne téléphonique OVHcloud ou si vous n'avez pas modifié la configuration initiale de cette dernière, le répondeur de votre ligne est activé par défaut et enregistre déjà les messages de vos correspondants. 
 
-Vous avez également la possibilité de modifier l'association d'une ligne à son répondeur. Ceci vous permet en l'occurrence d'associer plusieurs lignes à un seul répondeur.
+Vous pouvez également modifier l'association d'une ligne à son répondeur. Ceci vous permet en l'occurrence d'associer plusieurs lignes à un seul répondeur.
 
 Poursuivez la lecture de cette documentation selon la manipulation que vous souhaitez réaliser avec votre répondeur.
 
@@ -67,25 +77,19 @@ Depuis votre ligne téléphonique OVHcloud, composez le **123** pour accéder au
 
 Une fois en communication avec le serveur de messagerie, laissez-vous guider par celui-ci en appuyant sur les touches correspondant aux actions que vous souhaitez réaliser. Sachez que si vous appelez depuis une autre ligne, vous devrez indiquer le numéro associé au répondeur que vous souhaitez consulter, ainsi que son mot de passe d'accès à distance préalablement défini. 
 
-Si vous n'avez pas défini de mot de passe d'accès à distance : 
-
-1. Connectez-vous à votre [espace client OVHcloud](/links/manager) et cliquez sur `Télécom`{.action}.
-1. Cliquez sur `VoIP & Fax`{.action} puis sur le groupe de facturation contenant votre ligne SIP.
-1. Cliquez sur l'onglet `Services`{.action} puis sur la ligne SIP concernée.
-1. Positionnez-vous ensuite sur l'onglet `Répondeur`{.action}, cliquez sur `Mot de passe accès répondeur`{.action} et suivez les indications.
+Si vous n'avez pas défini de mot de passe d'accès à distance, accédez à l'onglet `Répondeur`{.action}, cliquez sur `Mot de passe accès répondeur`{.action} et suivez les indications.
 
 #### Consulter son répondeur via votre espace client <a name="via-espace-client"></a>
 
-1. Connectez-vous à votre [espace client OVHcloud](/links/manager) et cliquez sur `Télécom`{.action}.
-1. Cliquez sur `VoIP & Fax`{.action} puis sur le groupe de facturation contenant votre ligne SIP.
-1. Cliquez sur l'onglet `Services`{.action} puis sur la ligne SIP pour laquelle vous souhaitez consulter le répondeur.
-1. Positionnez-vous ensuite sur l'onglet `Répondeur`{.action} et cliquez sur `Écoute et gestion des messages`{.action}.
+<!-- CP-STEPS-START:consulter-espace-client -->
+Dans l'onglet `Répondeur`{.action}, cliquez sur `Écoute et gestion des messages`{.action}.
 
 ![repondeur](images/voicemail-step7.png){.thumbnail}
 
 Sur la nouvelle page, un tableau apparaît, dans lequel se trouvent les messages actuellement enregistrés sur votre répondeur. Trois boutons vous permettent respectivement de les lire (voir **1** dans l'image ci-dessous), de les télécharger (voir **2**) et de les supprimer (voir **3**).
 
 ![repondeur](images/voicemail-step8.png){.thumbnail}
+<!-- CP-STEPS-END:consulter-espace-client -->
 
 #### Consulter son répondeur via les notifications e-mail <a name="via-notifications"></a>
 
@@ -95,10 +99,8 @@ Si vous souhaitez consulter ou modifier les adresses e-mail utilisées pour les 
 
 ### Personnaliser la configuration de son répondeur <a name="personnaliser"></a>
 
-1. Connectez-vous à votre [espace client OVHcloud](/links/manager) et cliquez sur `Télécom`{.action}.
-1. Cliquez sur `VoIP & Fax`{.action} puis sur le groupe de facturation contenant votre ligne SIP.
-1. Cliquez sur l'onglet `Services`{.action} puis sur la ligne SIP concernée.
-1. Positionnez-vous sur l'onglet `Répondeur`{.action} puis cliquez sur `Configuration du répondeur`{.action}. 
+<!-- CP-STEPS-START:personnaliser-repondeur -->
+Dans l'onglet `Répondeur`{.action}, cliquez sur `Configuration du répondeur`{.action}. 
 
 ![repondeur](images/voicemail-step3.png){.thumbnail}
 
@@ -109,7 +111,7 @@ Trois parties sont visibles sur la page qui apparaît alors. Configurez votre r�
 |Paramètres|Détails|
 |---|---|
 |Enregistrement des messages|Permet d'activer ou désactiver l'enregistrement de messages audio par vos appelants. Ceux-ci n'auront alors que votre message d'accueil du répondeur, sans possibilité de laisser un message.|
-|Message d'accueil du répondeur|Permet d'importer un message d'accueil personnalisé qui sera lu par votre répondeur.|
+|Message d'accueil du répondeur|Permet d'importer un message d'accueil personnalisé qui sera lu par votre répondeur.<br> - **Formats de fichiers pris en charge** : MP3, OGG, WAV et WMA.<br> - **Préconisations** : La taille du fichier ne doit pas excéder 10 Mo, avec une fréquence de 8 kHz, une résolution de 8 bits et un canal mono.|
 
 ![repondeur](images/voicemail-step4.png){.thumbnail}
 
@@ -129,18 +131,17 @@ Trois parties sont visibles sur la page qui apparaît alors. Configurez votre r�
 |Champs|Détails|
 |---|---|
 |E-mail|Renseignez l'adresse e-mail que vous souhaitez notifier.|
-|Type de notification|Choisissez « Notification uniquement » pour recevoir un e-mail vous avertissant d'un nouveau message sur le répondeur. Sélectionnez « Message joint en attachement » pour recevoir la notification par e-mail ainsi que le message au format souhaité en pièce jointe.<br><br>**Nouvelle fonctionnalité en Bêta** : Il est à présent possible de recevoir par e-mail une transcription écrite du message générée par Intelligence Artificielle.<br> Pour cela, choisissez « Transcription et message joint en attachement (Bêta, générée par Intelligence Artificielle.) » pour recevoir la transcription écrite et le message vocal au format souhaité en pièce jointe, ou « Transcription en attachement (Bêta, générée par Intelligence Artificielle.) » pour recevoir uniquement la transcription écrite du message en pièce jointe.|
+|Type de notification|Choisissez « Notification uniquement » pour recevoir un e-mail vous avertissant d'un nouveau message sur le répondeur. Sélectionnez « Message joint en attachement » pour recevoir la notification par e-mail ainsi que le message au format souhaité en pièce jointe.<br><br>**Nouvelle fonctionnalité en Bêta** : Vous pouvez recevoir par e-mail une transcription écrite du message générée par Intelligence Artificielle.<br> Pour cela, choisissez « Transcription et message joint en attachement (Bêta, générée par Intelligence Artificielle.) » pour recevoir la transcription écrite et le message vocal au format souhaité en pièce jointe, ou « Transcription en attachement (Bêta, générée par Intelligence Artificielle.) » pour recevoir uniquement la transcription écrite du message en pièce jointe.|
 
 ![repondeur](images/voicemail-step6.png){.thumbnail}
+<!-- CP-STEPS-END:personnaliser-repondeur -->
 
 ### Associer une ligne à un répondeur <a name="associer"></a>
 
+<!-- CP-STEPS-START:associer-ligne-repondeur -->
 Cette association s'effectue par le biais de deux manipulations : la première permet de choisir le répondeur qui pourra être consulté depuis la ligne et la seconde permet de définir vers quel répondeur les correspondants sont renvoyés.
 
-1. Connectez-vous à votre [espace client OVHcloud](/links/manager) et cliquez sur `Télécom`{.action}.
-1. Cliquez sur `VoIP & Fax`{.action} puis sur le groupe de facturation contenant votre ligne SIP.
-1. Cliquez sur l'onglet `Services`{.action} puis sur la ligne SIP concernée.
-1. Positionnez-vous sur l'onglet `Répondeur`{.action} puis cliquez sur `Choix de la messagerie par défaut`{.action}.
+Dans l'onglet `Répondeur`{.action}, cliquez sur `Choix de la messagerie par défaut`{.action}.
 
 ![repondeur](images/voicemail-step1.png){.thumbnail}
 
@@ -154,11 +155,12 @@ Retournez vers la gestion du répondeur et positionnez-vous maintenant sur l'ong
 
 Sélectionnez, pour les renvois vers le répondeur, le même numéro de ligne sélectionné précédemment. Assurez-vous de faire correspondre les numéros. Si besoin, aidez-vous de notre documentation intitulée « [Filtrer et renvoyer ses appels](/pages/web_cloud/phone_and_fax/voip/comment_configurer_les_renvois_d_appels) ».
 
-Vous pouvez notamment définir le délai (en secondes) au bout duquel un apppel sera renvoyé vers le répondeur.
+Vous pouvez notamment définir le délai (en secondes) au bout duquel un appel sera renvoyé vers le répondeur.
 
 Vous avez la possibilité d’appliquer vos choix de configuration à plusieurs lignes, grâce au bouton `Appliquer à plusieurs lignes`{.action}. Cliquez sur le bouton `Valider`{.action} pour terminer l'opération.
 
 ![repondeur](images/voicemail-step10.png){.thumbnail}
+<!-- CP-STEPS-END:associer-ligne-repondeur -->
 
 ## Aller plus loin
 

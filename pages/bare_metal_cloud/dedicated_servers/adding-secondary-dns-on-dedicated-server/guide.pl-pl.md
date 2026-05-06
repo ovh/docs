@@ -1,6 +1,6 @@
 ---
-title: 'Tworzenie DNS secondary na serwerze dedykowanym'
-excerpt: 'Dowiedz się, jak utworzyć DNS secondary dla Twojego serwera dedykowanego OVHcloud'
+title: "Konfiguracja secondary DNS OVHcloud na serwerze dedykowanym"
+excerpt: "Dodaj serwer secondary DNS dla domeny hostowanej na serwerze dedykowanym OVHcloud, aby zwiększyć odporność DNS."
 updated: 2021-01-08
 ---
 
@@ -18,7 +18,17 @@ Jeśli skonfigurujesz serwer dedykowany jako serwer DNS, możesz użyć DNS seco
 
 - Posiadanie [serwera dedykowanego](/links/bare-metal/bare-metal)
 - Posiadanie [domeny](/links/web/domains) podlegającej administracjom lub zarządzaniu technicznym
-- Dostęp do [Panelu klienta OVHcloud](/links/manager)
+
+<!-- CP-NAV-START:baremetal-dedicated-servers -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Serwery dedykowane](/links/control-panel/baremetal-dedicated-servers)
+- **Ścieżka nawigacji:** `Bare Metal Cloud`{.action} > `Serwery dedykowane`{.action} > Wybierz serwer
+
+---
+<!-- CP-NAV-END:baremetal-dedicated-servers -->
 
 > [!warning]
 >
@@ -31,25 +41,23 @@ Jeśli skonfigurujesz serwer dedykowany jako serwer DNS, możesz użyć DNS seco
 
 ### Dodanie domeny <a name="addingdomain"></a>
 
-Zaloguj się do [Panelu klienta OVHcloud](/links/manager), przejdź do sekcji `Bare Metal Cloud`{.action}, a następnie wybierz swój serwer z `Serwery dedykowane`{.action}.
+Kliknij zakładkę `DNS secondary`{.action}, a następnie przycisk `Dodaj domenę`{.action}.
 
-Następnie kliknij zakładkę `DNS secondary`{.action}, a następnie przycisk `Dodaj domenę`{.action}.
-
-![DNS secondary](images/cp-01.png){.thumbnail}
+![Zakładka Secondary DNS z przyciskiem Dodaj domenę](images/cp-01.png){.thumbnail}
 
 Wprowadź adres IP i domenę, którą chcesz dodać, następnie kliknij `Dalej`{.action}.
 
-![DNS secondary](images/cp-02.png){.thumbnail}
+![Formularz dodawania domeny z polami adresu IP i nazwy domeny](images/cp-02.png){.thumbnail}
 
 Po kliknięciu `Dalej`{.action} w tym etapie zostanie aktywowana weryfikacja domeny. Jeśli nie dodałeś jeszcze rekordu TXT do strefy DNS, postępuj zgodnie z instrukcjami [podanymi poniżej](#verifyingdomain). W przeciwnym razie kliknij Dalej, `klikając Dalej`{.action}.
 
-![DNS secondary](images/cp-03.png){.thumbnail}
+![Etap weryfikacji domeny z instrukcjami rekordu TXT](images/cp-03.png){.thumbnail}
 
 Po kliknięciu `Dodaj`{.action} w ostatnim oknie domena zostanie dodana do serwera DNS secondary OVHcloud.
 
 Dodane domeny zostaną wymienione w tej zakładce i mogą zostać usunięte po kliknięciu na przycisk `...`{.action}. Obok domeny wyświetla się nazwa serwera DNS secondary.
 
-![DNS secondary](images/cp-05.png){.thumbnail}
+![Lista dodanych domen secondary DNS z opcją usunięcia](images/cp-05.png){.thumbnail}
 
 > [!primary]
 >
@@ -69,7 +77,7 @@ Zanim dodasz domenę do DNS secondary OVHcloud, musisz potwierdzić, że zezwala
 
 - Jeśli domena jest zarządzana przez OVHcloud jako serwer do rejestracji i korzysta z serwerów DNS OVHcloud, zamknij okno klikając wcześniej na `Anuluj`{.action}. Następnie postępuj zgodnie z instrukcjami zawartymi w [tym przewodniku](/pages/web_cloud/domains/dns_zone_edit), aby dodać rekord TXT do Panelu [klienta OVHcloud](/links/manager).
 
-![DNS secondary](images/cp-04.png){.thumbnail}
+![Okno weryfikacji właściciela pokazujące wartość rekordu TXT](images/cp-04.png){.thumbnail}
 
 Po poprawnym dodaniu rekordu TXT do strefy DNS domeny powtórzyć [powyższe](#addingdomain) kroki i zakończyć procedurę.
 
@@ -77,4 +85,6 @@ Po poprawnym dodaniu rekordu TXT do strefy DNS domeny powtórzyć [powyższe](#a
 
 [Modyfikacja strefy DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit)
 
+- [Pierwsze kroki z serwerem dedykowanym OVHcloud](/pages/bare_metal_cloud/dedicated_servers/getting-started-with-dedicated-server)
+- [Konfiguracja IPv6 na serwerze dedykowanym](/pages/bare_metal_cloud/dedicated_servers/network_ipv6)
 Dołącz do [grona naszych użytkowników](/links/community).

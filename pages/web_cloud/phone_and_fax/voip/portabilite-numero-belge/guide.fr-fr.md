@@ -1,7 +1,7 @@
 ---
 title: 'Demander et suivre une portabilité de numéro belge'
 excerpt: 'Découvrez comment porter un ou plusieurs numéros belges chez OVHcloud'
-updated: 2025-04-28
+updated: 2026-02-18
 ---
 
 ## Objectif
@@ -15,15 +15,25 @@ La portabilité permet à un abonné de conserver son numéro de téléphone lor
 - Disposer d'au moins un numéro de téléphone chez un autre opérateur en Belgique.
 - Pour les numéros géographiques, justifier d'une adresse postale correspondant à la zone du ou des numéros concernés.
 - Disposer d'une offre [VoIP OVHcloud](/links/telecom/telephonie).
-- Être connecté à l'[espace client OVHcloud](/links/manager-telecom), partie `Télécom`{.action}.
+
+<!-- CP-NAV-START:telecom-voip-fax -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [VoIP & Fax](/links/control-panel/telecom-voip-fax)
+- **Pour accéder à vos services :** `Télécom`{.action} > `VoIP & Fax`{.action} > Sélectionnez votre groupe de téléphonie
+
+---
+<!-- CP-NAV-END:telecom-voip-fax -->
 
 ![espace client Telecom VoIP](/pages/assets/screens/control_panel/product-selection/telecom/tpl-telecom-02-fr-voip.png){.thumbnail}
- 
+
 ## En pratique
 
-### Étape 1 : préparer sa demande de portabilité
+### 1 - Préparer sa demande de portabilité
 
-Selon le type du ou des numéros que vous souhaitez porter chez OVHcloud, le processus à suivre sera différent. Afin que votre demande de portabilité arrive au plus vite à son terme, nous vous invitons à prendre en considération les recommandations suivantes :
+Selon le type du ou des numéros que vous souhaitez porter chez OVHcloud, le processus à suivre sera différent. Afin que votre demande de portabilité arrive au plus vite à son terme, suivez les recommandations suivantes :
 
 - assurez-vous de connaître les informations du titulaire actuel de la ou des lignes concernées (comme son nom et prénom, son adresse, etc.) ;
 
@@ -33,73 +43,94 @@ Selon le type du ou des numéros que vous souhaitez porter chez OVHcloud, le pro
 
 |Type de numéro|Description|
 |---|---|
-|Numéro isolé|Il s'agit d'un numéro ne faisant pas partie d'une tranche de numéros (comme celui d'une ligne ADSL ou d'une ligne téléphonique seule). Un mandat de portabilité est nécessaire pour effectuer la demande. Celui-ci vous sera transmis par OVHcloud durant les étapes du processus de portabilité.|
-|Tranche de numéros (SDA)|Comme son nom l'indique, il s'agit d'une tranche de plusieurs numéros. La totalité des numéros de la tranche doit être portée, la portabilité partielle étant impossible. Un mandat de portabilité est nécessaire pour effectuer la demande. Celui-ci vous sera transmis par OVHcloud durant les étapes du processus de portabilité.|
+|Numéro individuel|Il s'agit d'un numéro ne faisant pas partie d'une plage de numéros (comme celui d'une ligne ADSL ou d'une ligne téléphonique seule). Un mandat de portabilité est nécessaire pour effectuer la demande. Celui-ci vous sera transmis par OVHcloud durant les étapes du processus de portabilité.|
+|Plage de numéros (SDA)|Comme son nom l'indique, il s'agit d'une plage de plusieurs numéros. La totalité des numéros de la plage doit être portée, la portabilité partielle étant impossible. Un mandat de portabilité est nécessaire pour effectuer la demande. Celui-ci vous sera transmis par OVHcloud durant les étapes du processus de portabilité.|
 
-### Étape 2 : demander la portabilité
+### 2 - Demander la portabilité
 
-1. Connectez-vous à votre [espace client OVHcloud](/links/manager) et cliquez sur `Télécom`{.action}.
-1. Cliquez sur `VoIP & Fax`{.action} puis sur le groupe de facturation dans lequel le ou les numéros portés seront intégrés.
-1. Assurez-vous d'être positionné sur l'onglet `Tableau de bord`{.action} et cliquez sur `Demander une portabilité`{.action}.
+<!-- CP-STEPS-START:demander-la-portabilite -->
+Dans l'onglet `Tableau de bord`{.action}, cliquez sur `Demander une portabilité`{.action}.
 
 ![numberport](images/BE-porta-request.png){.thumbnail}
 
-Dans la page qui apparaît, les deux types de demandes de portabilité sont proposés.
+Cliquez sur les onglets ci-dessous pour afficher les 5 étapes.
 
-Choisissez la demande selon que votre demande concerne  **Un numéro isolé** ou **Un ou plusieurs numéros appartenant à une tranche de numéros (SDA)**.
+> [!tabs]
+> Étape 1
+>>
+>> Dans la page qui apparaît, les deux types de demandes de portabilité sont proposés.
+>>
+>> Choisissez si votre demande concerne **Un numéro individuel** ou **Une plage de numéros (SDA)**.
+>>
+>> - Pour un numéro individuel, renseignez le numéro à porter au format international (il doit nécessairement commencer par 0032). 
+>> - Dans le cas d'une plage de numéros, renseignez le numéro de tête de ligne de la plage concernée au format international (il doit nécessairement commencer par 0032). En cas de doute, votre opérateur actuel peut vous communiquer ce numéro. Sélectionnez ensuite `Porter votre numéro principal et une partie des numéros Sélection Directe à l'Arrivée (SDA)`{.action} et renseignez successivement, dans la case prévue à cet effet, **chacun des numéros de votre plage de numéros (SDA)**.
+>>
+>> Sélectionnez enfin la date souhaitée de la portabilité.
+>>
+>> ![numberport](images/BE-porta-request02.png){.thumbnail}
+>>
+> Étape 2
+>>
+>> Dans la page suivante, renseignez avec précision les informations personnelles du titulaire de la ligne.
+>>
+>> ![numberport](images/BE-porta-request03.png){.thumbnail}
+>>
+> Étape 3
+>>
+>> Saisissez ensuite l'adresse où la ligne sera installée. Précisez également si vous souhaitez voir apparaître votre numéro dans l'annuaire.
+>>
+>> ![numberport](images/BE-porta-request04.png){.thumbnail}
+>>
+> Étape 4
+>>
+>> Assurez-vous maintenant que le groupe de facturation qui apparaît est bien celui dans lequel les numéros portés doivent être intégrés. Si ce n'est pas le cas, modifiez-le en choisissant le bon groupe dans le menu déroulant.
+>>
+>> Vous pouvez également configurer une redirection, effective une fois le numéro de tête de ligne porté, des appels réceptionnés sur ce numéro uniquement vers une de vos lignes. Utilisez le bouton `Choisir une ligne`{.action} pour la définir.
+>>
+>> Si vous souhaitez utiliser un autre type de configuration pour ce numéro (comme une file d'appels par exemple), sachez que vous pourrez l'appliquer depuis votre espace client OVHcloud 48 heures avant la date effective de sa portabilité.
+>>
+>> Vos choix faits, cliquez sur `Valider`{.action}.
+>>
+>> ![numberport](images/BE-porta-request05.png){.thumbnail}
+>>
+> Étape 5
+>>
+>> La dernière étape consiste à finaliser votre demande de portabilité. Prenez connaissance des contrats liés à la portabilité et validez leur acceptation. Cliquez ensuite sur `Commander`{.action} et validez le bon de commande qui vous sera présenté.
+>>
+>> ![numberport](images/BE-porta-request06.png){.thumbnail}
+>>
 
-- Pour un numéro isolé, renseignez le numéro à porter au format international (il doit nécessairement commencer par 0032). 
-- Dans le cas d'une tranche de numéros, renseignez le numéro de tête de ligne de la tranche concernée au format international (il doit nécessairement commencer par 0032). En cas de doute, votre opérateur actuel peut vous communiquer ce numéro. Cochez ensuite le bouton `Porter votre numéro principal et une partie des numéros Sélection Directe à l'Arrivée (SDA)`{.action} et renseignez successivement, dans la case prévue à cet effet, **chacun des numéros de votre tranche de numéros (SDA)**.
+<!-- CP-STEPS-END:demander-la-portabilite -->
 
-Sélectionnez enfin la date souhaitée de la portabilité, puis cliquez sur `Suivant`{.action}.
+### 3 - Joindre votre mandat de portabilité
 
-![numberport](images/BE-porta-request02.png){.thumbnail}
-
-Dans la page suivante, renseignez avec précision les informations personnelles du titulaire de la ligne ainsi que l'adresse complète d'installation de cette dernière. Précisez également si vous souhaitez voir apparaître vos numéros dans l'annuaire. Une fois ces données complétées, cliquez sur le bouton `Suivant`{.action}.
-
-![numberport](images/BE-porta-request03.png){.thumbnail}
-
-![numberport](images/BE-porta-request04.png){.thumbnail}
-
-Assurez-vous maintenant que le groupe de facturation qui apparaît est bien celui dans lequel les numéros portés doivent être intégrés. Si ce n'est pas le cas, modifiez-le en choisissant le bon groupe dans le menu déroulant.
-
-Vous pouvez également configurer une redirection, effective une fois le numéro de tête de ligne porté, des appels réceptionnés sur ce numéro uniquement vers une de vos lignes. Utilisez le bouton `Choisir une ligne`{.action} pour la définir.
-
-Si vous souhaitez utiliser un autre type de configuration pour ce numéro (comme une file d'appels par exemple), sachez que vous pourrez l'appliquer depuis votre espace client OVHcloud 48 heures avant la date effective de sa portabilité.
-
-Vos choix faits, cliquez sur `Suivant`{.action}.
-
-![numberport](images/BE-porta-request05.png){.thumbnail}
-
-La dernière étape vérifie l'exactitude des informations que vous avez renseignées. Si celles-ci sont valides, il ne vous reste plus qu'à finaliser votre demande de portabilité en cliquant sur `Commander`{.action} puis en validant le bon de commande qui vous sera présenté. 
-
-### Étape 3 : joindre votre mandat de portabilité
-
+<!-- CP-STEPS-START:joindre-mandat-portabilite -->
 Une fois votre demande de portabilité validée, vous recevrez un mandat de portabilité autorisant OVHcloud à porter les numéros souhaités. Complétez puis retournez-nous ce mandat **depuis votre espace client**, au format PDF. 
 
 Pour cela, sélectionnez votre groupe de téléphonie dans la barre de services à gauche puis cliquez sur `Consulter mes portabilités en cours`{.action}. Cliquez alors sur `Attacher mon mandat de portabilité signé`{.action}, sous la demande de portabilité concernée, pour importer le mandat au format PDF. Celui-ci sera alors validé manuellement par nos services techniques.
 
 > [!warning]
 >
-> - Dans le cas d'une portabilité d'une tranche de numéros (SDA), l'ensemble des numéros de la tranche doit être noté sur le mandat de portabilité. Tout mandat incomplet serait rejeté par votre opérateur cédant, ce qui entraînerait une annulation de votre demande de portabilité.
+> - Dans le cas d'une portabilité d'une plage de numéros (SDA), l'ensemble des numéros de la plage doit être noté sur le mandat de portabilité. Tout mandat incomplet serait rejeté par votre opérateur cédant, ce qui entraînerait une annulation de votre demande de portabilité.
 >
 > - Le délai d'une portabilité pour un numéro belge étant relativement court, il est important de nous retourner votre mandat de portabilité le jour même de votre demande.
 
 Avant cette validation du mandat par nos soins, vous pouvez, en cas d'erreur, supprimer le mandat actuel pour en attacher un autre. Pour cela, cliquez sur `Liste des documents envoyés`{.action} puis sur le bouton `...`{.action} à droite du mandat actuel et enfin sur `Supprimer`{.action}. 
 
-![numberport](images/BE-porta-request06.png){.thumbnail}
-
-### Étape 4 : suivre une demande de portabilité <a name="suivi"></a>
-
-1. Connectez-vous à votre [espace client OVHcloud](/links/manager) et cliquez sur `Télécom`{.action}.
-1. Cliquez sur `VoIP & Fax`{.action} puis sur le groupe de facturation dans lequel a été demandée la portabilité.
-1. Assurez-vous d'être positionné sur l'onglet `Tableau de bord`{.action} et cliquez sur `Consulter mes portabilités en cours`{.action}.
-
 ![numberport](images/BE-porta-request07.png){.thumbnail}
+
+<!-- CP-STEPS-END:joindre-mandat-portabilite -->
+
+### 4 - Suivre une demande de portabilité <a name="suivi"></a>
+
+<!-- CP-STEPS-START:suivre-demande-portabilite -->
+Dans l'onglet `Tableau de bord`{.action}, cliquez sur `Consulter mes portabilités en cours`{.action}.
+
+![numberport](images/BE-porta-request08.png){.thumbnail}
 
 Dans la page qui apparaît, vous trouverez l'état de vos demandes de portabilité.
 
-![numberport](images/BE-porta-request08.png){.thumbnail}
+![numberport](images/BE-porta-request09.png){.thumbnail}
 
 Si, durant le processus, vous souhaitez annuler votre demande de portabilité, vous pouvez le faire grâce au bouton `Annuler la portabilité ?`{.action}.
 
@@ -113,17 +144,18 @@ Nous vous recommandons également de consulter régulièrement votre adresse e-m
 > Le cas échéant, vous pouvez contacter notre support en cliquant successivement, dans votre espace client, sur `Besoin d'aide`{.action} puis `Demande d'assistance`{.action}. Une facture récente (moins de 3 mois) de votre opérateur cédant vous sera alors systématiquement demandée par nos services techniques.
 > 
 
-<a name="steps"></a>
 Vous trouverez ci-dessous un récapitulatif des différentes étapes du processus de portabilité d'un numéro belge chez OVHcloud 
 
 |Avancement dans le processus|Description|Délai estimé|
 |---|---|---|
 |Demande envoyée à l'opérateur|La demande est envoyée à l'opérateur cédant|2 heures|
 |Rapport intermédiaire de l'opérateur reçu|Après vérification des informations, l'opérateur confirme le lancement de la procédure de portabilité vers OVHcloud|1 jour ouvré|
-|Numéro activé|48 heures avant la finalisation de la portabilité, le numéro est disponible dans votre espace client pour être configuré. Pour vous aider, reportez-vous aux informations décrites dans l'étape 5 « [Préparer la configuration des numéros portés](#configuration) »|2 jours ouvrés|
+|Numéro activé|48 heures avant la finalisation de la portabilité, le numéro est disponible dans votre espace client pour être configuré. Pour vous aider, reportez-vous aux informations décrites dans la partie 5 « [Préparer la configuration des numéros portés](#configuration) »|2 jours ouvrés|
 |Rapport final de l'opérateur cédant|L'opérateur cédant confirme la portabilité. OVHcloud configure le numéro sur son réseau (routage). La portabilité est terminée et le numéro opérationnel|3 jours ouvrés|
 
-### Étape 5 : préparer la configuration des numéros portés <a name="configuration"></a>
+<!-- CP-STEPS-END:suivre-demande-portabilite -->
+
+### 5 - Préparer la configuration des numéros portés <a name="configuration"></a>
 
 Vous avez la possibilité de préparer la configuration du ou des numéros portés 48 heures avant que celle-ci soit effective. Ceci peut vous permettre de limiter, voire d'éviter, une coupure de service lors de votre changement d'opérateur pour OVHcloud.
 

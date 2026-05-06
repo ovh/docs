@@ -13,6 +13,17 @@ The purpose of this guide is to show you the steps to follow to configure and ma
 - An [OVHcloud customer account](/pages/account_and_service_management/account_information/ovhcloud-account-creation).
 - An [OVHcloud KMS ordered](/pages/manage_and_operate/kms/quick-start)
 
+<!-- CP-NAV-START:security-kms -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Key Management Service](/links/control-panel/security-kms)
+- **Navigation path:** `Identity, Security & Operations`{.action} > `Key Management Service`{.action} > Select your OKMS domain
+
+---
+<!-- CP-NAV-END:security-kms -->
+
 ## Instructions
 
 ### OKMS access certificate description
@@ -33,7 +44,8 @@ An access certificate is only valid for the domain for which it was generated.
 #### From the Control Panel
 
 It's possible to create this certificate from the dedicated entry of the KMS.
-For that, log in to the [OVHcloud Control Panel](/links/manager) and access the administration console `Identity, Security & Operations`{.action}. Click on `Key Management Service`{.action}, then on `Generate an access certificate`{.action}.
+
+In the `Access certificates`{.action} tab, click on `Generate an access certificate`{.action}.
 
 ![Create a certificate](images/create_certificat_01.png){.thumbnail}
 

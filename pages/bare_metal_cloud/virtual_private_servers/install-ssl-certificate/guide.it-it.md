@@ -156,11 +156,11 @@ server {
     ssl_certificate /etc/letsencrypt/live/your_domain/fullchain.pem;
     ssl_certificate_key /etc/letsencrypt/live/your_domain/privkey.pem;
 
-    # Paramètres de sécurité supplémentaires
+    # Impostazioni di sicurezza aggiuntive
     ssl_protocols TLSv1.2 TLSv1.3;
     ssl_ciphers HIGH:!aNULL:!MD5;
 
-    # Redirection HTTP vers HTTPS
+    # Reindirizzamento HTTP verso HTTPS
     location / {
         try_files $uri $uri/ =404;
     }
@@ -217,12 +217,12 @@ sudo a2enmod headers
     ServerName your_domain
     DocumentRoot /var/www/your_domain
 
-    # Activer SSL
+    # Attivare SSL
     SSLEngine on
     SSLCertificateFile /etc/letsencrypt/live/your_domain/fullchain.pem
     SSLCertificateKeyFile /etc/letsencrypt/live/your_domain/privkey.pem
 
-    # Paramètres de sécurité supplémentaires
+    # Impostazioni di sicurezza aggiuntive
     SSLProtocol all -SSLv3 -TLSv1 -TLSv1.1
     SSLCipherSuite HIGH:!aNULL:!MD5
     SSLHonorCipherOrder on
@@ -256,7 +256,7 @@ Prova il rinnovo automatico:
 sudo certbot renew --dry-run
 ```
 
-Certbot configura automaticamente un’operazione `cron` o un timer system per gestire il rinnovo. Controlla lo stato con:
+Certbot configura automaticamente un’operazione `cron` o un timer systemd per gestire il rinnovo. Controlla lo stato con:
 
 ```bash
 sudo systemctl list-timers | grep certbot

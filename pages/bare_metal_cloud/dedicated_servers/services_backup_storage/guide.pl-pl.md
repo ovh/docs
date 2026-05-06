@@ -1,7 +1,7 @@
 ---
-title: 'Korzystanie z Backup Storage na serwerze dedykowanym'
-excerpt: 'Dowiedz się, jak aktywować i uzyskać dostęp do dodatkowej przestrzeni dyskowej'
-updated: 2025-10-09
+title: "Serwer dedykowany - Korzystanie z Backup Storage"
+excerpt: "Uzyskaj dostęp do przestrzeni Backup Storage na serwerze dedykowanym OVHcloud i zarządzaj nią przez NFS, CIFS lub FTP."
+updated: 2026-03-25
 ---
 
 ## Wprowadzenie
@@ -19,7 +19,17 @@ Serwery dedykowane OVHcloud dysponują dodatkową przestrzenią do przechowywani
 ## Wymagania początkowe
 
 * Posiadanie [serwera dedykowanego](/links/bare-metal/bare-metal) na koncie OVHcloud
-* Dostęp do [Panelu klienta OVHcloud](/links/manager).
+
+<!-- CP-NAV-START:baremetal-dedicated-servers -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Serwery dedykowane](/links/control-panel/baremetal-dedicated-servers)
+- **Ścieżka nawigacji:** `Bare Metal Cloud`{.action} > `Serwery dedykowane`{.action} > Wybierz serwer
+
+---
+<!-- CP-NAV-END:baremetal-dedicated-servers -->
 
 > [!warning]
 > Funkcja ta może być niedostępna lub ograniczona na [serwerach dedykowanych **Eco**](/links/bare-metal/eco-about).
@@ -31,13 +41,13 @@ Serwery dedykowane OVHcloud dysponują dodatkową przestrzenią do przechowywani
 
 ### Włącz Backup Storage
 
-Zaloguj się do [panelu klienta OVHcloud](/links/manager). Wybierz serwer, przechodząc do części `Bare Metal Cloud`{.action}, a następnie `Serwery dedykowane`{.action}. W zakładce `Backup Storage`{.action} kliknij przycisk `Aktywuj Backup Storage`{.action}.
+W zakładce `Backup Storage`{.action} kliknij przycisk `Aktywuj Backup Storage`{.action}.
 
-![Włącz Backup Storage](images/backup-storage01.png){.thumbnail}
+![Przycisk aktywacji Backup Storage w zakładce Backup storage](images/backup-storage01.png){.thumbnail}
 
 Kliknij `Zatwierdź`{.action} w menu, które się wyświetli.
 
-![Włącz Backup Storage](images/backup-storage02.png){.thumbnail}
+![Potwierdzenie aktywacji Backup Storage w oknie dialogowym](images/backup-storage02.png){.thumbnail}
 
 Backup Storage zostanie skonfigurowany w ciągu kilku minut. Po zakończeniu konfiguracji otrzymasz e-mail z potwierdzeniem.
 
@@ -47,7 +57,7 @@ Dostęp do Twojej przestrzeni dyskowej jest ograniczony do adresów IP z listą 
 
 #### Dodaj dostęp do backupu
 
-Zaloguj się do [panelu klienta OVHcloud](/links/manager). Wybierz serwer, przechodząc do części `Bare Metal Cloud`{.action}, a następnie `Serwery dedykowane`{.action}. Następnie wybierz kartę `Backup Storage`{.action}, po czym kliknij przycisk `Dodaj dostęp`{.action}.
+Następnie wybierz kartę `Backup Storage`{.action}, po czym kliknij przycisk `Dodaj dostęp`{.action}.
 
 ![Dodaj dostęp do backupu](images/backup-storage03.png){.thumbnail}
 
@@ -113,19 +123,19 @@ Aby sprawdzić, czy Twój adres IP jest poprawnie autoryzowany, użyj następuj�
 
 ### Zresetuj hasło
 
-Zaloguj się do [panelu klienta OVHcloud](/links/manager). Wybierz serwer, przechodząc do części `Bare Metal Cloud`{.action}, a następnie `Serwery dedykowane`{.action}. Następnie wybierz kartę `Backup Storage`{.action} i kliknij przycisk `Zapomniałeś hasła?`{.action}.
+Następnie wybierz kartę `Backup Storage`{.action} i kliknij przycisk `Zapomniałeś hasła?`{.action}.
 
 Po kliknięciu `Potwierdź`{.action} w oknie, które się wyświetli, otrzymasz e-mail z hasłem wysłany na adres e-mail zarejestrowany na Twoim koncie administratora. Postępuj zgodnie z instrukcjami zawartymi w tej instrukcji, aby zresetować Twoje hasło.
 
 ### Usuń Backup Storage
 
-Zaloguj się do [panelu klienta OVHcloud](/links/manager). Wybierz serwer, przechodząc do części `Bare Metal Cloud`{.action}, a następnie `Serwery dedykowane`{.action}. Następnie wybierz kartę `Backup Storage`{.action}, po czym kliknij przycisk `Usuń Backup Storage`{.action}.
+Następnie wybierz kartę `Backup Storage`{.action}, po czym kliknij przycisk `Usuń Backup Storage`{.action}.
 
 Kliknij `Zatwierdź`{.action} komunikat ostrzegawczy, aby przystąpić do usunięcia. Twój Backup Storage zostanie usunięty po kilku minutach. Wszystkie dane z przestrzeni dyskowej zostaną usunięte.
 
 ### Zamawianie dodatkowej przestrzeni dyskowej
 
-Zaloguj się do [panelu klienta OVHcloud](/links/manager). Wybierz serwer, przechodząc do części `Bare Metal Cloud`{.action}, a następnie `Serwery dedykowane`{.action}. Następnie wybierz kartę `Backup Storage`{.action} i kliknij przycisk `Zamów przestrzeń dyskową`{.action}.
+Następnie wybierz kartę `Backup Storage`{.action} i kliknij przycisk `Zamów przestrzeń dyskową`{.action}.
 
 ![Zamawianie dodatkowej przestrzeni dyskowej](images/backup-storage06.png){.thumbnail}
 
@@ -308,12 +318,12 @@ Zainstaluj klienta FileZilla na Twoim serwerze i skonfiguruj go, aby zalogować 
 
 #### NFS
 
-Upewnij się, że zezwalasz blokom IP na dostęp do przestrzeni dyskowej oraz używania protokołu NFS. W zależności od dystrybucji Linux, jaką posiadasz, być może powinieneś zainstalować klienta NFS i uruchomić usługę NFS/portmap.
+Backup storage jest kompatybilny wyłącznie z NFSv3. Upewnij się, że zezwalasz blokom IP na dostęp do przestrzeni dyskowej oraz używania protokołu NFS. W zależności od dystrybucji Linux, jaką posiadasz, być może powinieneś zainstalować klienta NFS i uruchomić usługę NFS/portmap.
 
 Po zainstalowaniu klienta NFS i uruchomieniu usługi portmap możesz zamontować zasób NFS jako zwykłą partycję, jak pokazano poniżej:
 
 ```sh
-mount -t nfs HostName:/export/ftpbackup/ServiceName /FolderMount
+mount -t nfs -o vers=3 HostName:/export/ftpbackup/ServiceName /FolderMount
 ```
 
 Poniższy przykład kodu zawiera zmienne, które należy zastąpić odpowiednimi danymi.
@@ -386,4 +396,6 @@ Poniższy przykład kodu zawiera zmienne, które należy zastąpić odpowiednimi
 
 ## Sprawdź również
 
+- [Jak wykonać kopię zapasową bazy danych na serwerze dedykowanym](/pages/bare_metal_cloud/dedicated_servers/save_datas_database_on_storage_ds)
+- [Configuring the storage on a HGR-STOR-2 server (EN)](/pages/bare_metal_cloud/dedicated_servers/hgrstor2_system_configuration)
 Dołącz do [grona naszych użytkowników](/links/community).

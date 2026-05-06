@@ -1,7 +1,7 @@
 ---
 title: 'Informações sobre o método de faturação Public Cloud'
 excerpt: 'Saiba mais sobre o método de faturação dos produtos Public Cloud'
-updated: 2025-04-28
+updated: 2026-03-13
 ---
 
 ## Introdução
@@ -20,7 +20,17 @@ Este sistema é semelhante ao de certas operadoras que faturam ao final do mês 
 
 * um projeto [Public Cloud](/links/public-cloud/public-cloud) criado na sua conta OVHcloud
 * uma [Instância Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps)
-* ter acesso à [Área de Cliente OVHcloud](/links/manager)
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Acesso à Área de Cliente OVHcloud
+
+- **Ligação direta:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Caminho de navegação:** `Public Cloud`{.action} > Selecione o seu projeto
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 > [!success]
 > Tire partido de preços reduzidos comprometendo-se com um período de 1 a 36 meses nos seus recursos Public Cloud. Mais informações na nossa página [Savings Plans](/links/public-cloud/savings-plan).
@@ -168,37 +178,17 @@ As snapshots de instâncias como as imagens (excluindo o catálogo de imagens fo
 
 #### Object Storage
 
-São faturados dois elementos para o Object Storage:
+O Object Storage é faturado em modo **pay-as-you-go** em função do volume médio armazenado por hora em cada classe de armazenamento (GiB-horas), com faturação no final do mês. O armazenamento é o principal componente de faturação — o tráfego de entrada, o tráfego interno da OVHcloud, as chamadas API e o tráfego de saída público estão incluídos.
 
-- o armazenamento dos objetos, ou seja o volume realmente consumido em GB
-- o tráfego de saída, ou seja, o volume de dados enviados do serviço, incluído no corpo dos pedidos (body HTTP)
-
-> [!primary]
->
-> O tráfego de saída entre o serviço de armazenamento de objetos e as instâncias é
-> faturado como se o tráfego de saída fosse enviado pela Internet.
-> 
-
-> [!warning]
->
-> A consulta de objetos através da Área de Cliente OVHcloud também é considerada
-> como sendo tráfego de saída.
-> 
-
-#### Arquivos
-
-São faturados três elementos para o armazenamento de arquivos:
-
-- o armazenamento dos arquivos, ou seja o volume realmente consumido em GB
-- o tráfego de entrada, ou seja, o volume de dados recebidos no serviço, incluído no corpo dos pedidos (body HTTP)
-- o tráfego de saída, ou seja, o volume de dados enviados do serviço, incluído no corpo dos pedidos (body HTTP)
+Para adaptar os custos aos seus padrões de acesso aos dados, disponibilizamos várias classes de Object Storage compatíveis com S3<sup>1</sup> (Standard, High Performance, Infrequent Access, Active Archive, Cold Archive). Para mais informações sobre estas classes, incluindo casos de utilização, desempenho e SLAs, consulte o manual dedicado: [Escolher a classe Object Storage adequada](/pages/storage_and_backup/object_storage/s3_choosing_the_right_storage_class_for_your_needs).
 
 > [!primary]
 >
-> O tráfego de saída entre o serviço de arquivamento e as instâncias é faturado
-> como se o tráfego de saída fosse enviado pela Internet.
-> 
+> Para as classes Infrequent Access, Active Archive e Cold Archive, aplicam-se uma duração mínima de armazenamento e taxas de recuperação.
+>
 
 ## Quer saber mais?
+
+<sup>1</sup>: S3 é uma marca registada da Amazon Technologies, Inc. O serviço OVHcloud não é patrocinado, endossado ou de outra forma afiliado à Amazon Technologies, Inc.
 
 Fale com nossa [comunidade de utilizadores](/links/community).

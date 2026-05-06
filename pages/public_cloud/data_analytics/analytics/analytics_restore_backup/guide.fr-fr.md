@@ -1,5 +1,5 @@
 ---
-title: Analytics - How to restore a backup
+title: "Restaurer la sauvegarde d'un service Analytics (EN)"
 excerpt: Find out how to restore a backup
 updated: 2025-02-03
 ---
@@ -14,8 +14,18 @@ We continuously improve our offers. You can follow and submit ideas to add to ou
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](/links/manager)
 - An [Analytics service](/links/public-cloud/analytics) up and running
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Navigation path:** `Public Cloud`{.action} > Select your project
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## Instructions
 

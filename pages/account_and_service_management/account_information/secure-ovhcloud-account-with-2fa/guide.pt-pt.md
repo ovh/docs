@@ -35,9 +35,19 @@ Este manual permitir-lhe-á:
 
 ## Requisitos
 
-- Ter acesso à [Área de Cliente OVHcloud](/links/manager).
 - Dispor de um telemóvel (para o método por SMS), um smartphone ou um tablet (para o método via aplicação móvel) ou uma chave de segurança Universal Second Factor (U2F).
 - Ter tomado conhecimento das [recomendações sobre a gestão da sua palavra-passe de acesso à sua conta](/pages/account_and_service_management/account_information/manage-ovh-password).
+
+<!-- CP-NAV-START:account-security -->
+---
+
+### Acesso à Área de Cliente OVHcloud
+
+- **Ligação direta:** [Segurança](/links/control-panel/account-security)
+- **Caminho de navegação:** Clique no seu nome no canto superior direito > `Aceder à minha conta`{.action} > `Segurança`{.action}
+
+---
+<!-- CP-NAV-END:account-security -->
 
 ## Instruções <a name="instructions"></a>
 
@@ -86,9 +96,7 @@ Existem quatro métodos diferentes (clique nos separadores abaixo para ver a apr
 
 ### Etapa 1 - Ativar o seu primeiro método de autenticação dupla <a name="enabling-2fa"></a>
 
-Aceda à sua [Área de Cliente OVHcloud](/links/manager), clique no seu nome no canto superior direito e, a seguir, em `Aceder à minha conta`{.action}.
-
-Clique então em `Segurança`{.action} e em `Ativar a dupla autenticação`{.action}.
+Na página [Segurança da conta](/links/control-panel/account-security), clique em `Ativar a dupla autenticação`{.action}.
 
 **Clique no separador correspondente ao método da sua escolha:**
 
@@ -193,9 +201,7 @@ Se o seu periférico (telemóvel/smartphone/chave de segurança) estiver perdido
 > - códigos de segurança válidos.
 >
 
-Para eliminar um periférico, aceda à sua [Área de Cliente OVHcloud](/links/manager), clique no seu nome no canto superior direito e, a seguir, em `Aceder à minha conta`{.action}.
-
-A seguir, clique em `Segurança`{.action}, depois nos `...`{.action} à direita do seu periférico a eliminar e, por fim, em `Eliminar`{.action}.
+Para eliminar um periférico, aceda à página [Segurança da conta](/links/control-panel/account-security) e clique nos `...`{.action} à direita do seu periférico a eliminar e, em seguida, em `Eliminar`{.action}.
 
 ![2FA](images/2024-006-delete-device.png){.thumbnail}
 

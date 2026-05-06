@@ -15,25 +15,25 @@ Sie haben gerade eine E-Mail Pro Lösung erworben. Nun können Sie zu einem gün
 - Sie haben einen [E-Mail Pro](/links/web/email-pro)-Dienst in Ihrem Kunden-Account.
 - Sie haben die E-Mail zur Installation von E-Mail Pro bereits erhalten.
 - Sie verfügen über einen [Domainnamen](/links/web/domains).
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
+
+<!-- CP-NAV-START:web-email-pro -->
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direkter Link:** [E-Mail Pro](/links/control-panel/web-email-pro)
+- **Navigationspfad:** `Web Cloud`{.action} > `E-Mail Pro`{.action} > Wählen Sie Ihre Plattform aus
+
+---
+<!-- CP-NAV-END:web-email-pro -->
 
 ## In der praktischen Anwendung
 
-### Schritt 1: Zugang zur Verwaltung Ihres Dienstes
-
-Wenn der E-Mail Pro Dienst eingerichtet und verfügbar ist:
-
-1. Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein.
-1. Öffnen Sie den Bereich `Web Cloud`{.action}.
-1. Klicken Sie auf `E-Mail Pro`{.action}.
-1. Wählen Sie den gewünschten Dienst aus.
+### Schritt 1: Ihre Domain hinzufügen
 
 > [!primary]
 >
 > Der Name eines E-Mail Pro Dienstes in Ihrem OVHcloud Kundencenter beginnt mit *emailpro-*, enthält dann einen Teil Ihrer Kundenkennung und endet mit einer Zahl (1 für den ersten eingerichteten E-Mail Pro Dienst, 2 für den zweiten, etc.).
->
-
-### Schritt 2: Ihre Domain hinzufügen
 
 Wenn Sie Ihren E-Mail Pro Dienst gerade bestellt haben, erscheint automatisch ein Fenster mit der Aufforderung `Eine Domain hinzufügen`{.action}. Sollte das Fenster nicht angezeigt werden, gehen Sie in den Tab `Assoziierte Domains`{.action} und klicken Sie auf den Button `Eine Domain hinzufügen`{.action}.
 
@@ -58,8 +58,8 @@ Das Fenster zeigt dann die Informationen zur Konfiguration eines Modus an.
 
 > **Autoritativer Modus und nicht-autoritativer Modus**
 >
-> - Wenn eine E-Mail im **autoritativen** Modus an Ihre E-Mail Pro Plattform (*Inbound Mail Server Email Pro*) übermittelt wird, werden alle E-Mail-Adressen Ihres Domainnamens ausschließlich auf dieser Plattform gehostet. <br> <br> Wenn Sie zum Beispiel eine E-Mail an die Adresse *mary.johnson@mydomain.ovh* senden, sendet der E-Mail Pro Server *Inbound mail server Email Pro* eine Fehlermeldung an den Absender, da diese Adresse auf dem E-Mail Pro Server *Inbound mail server Email Pro* nicht existiert.
-> - Wenn eine E-Mail im **nicht-autoritativen** Modus an Ihre E-Mail Pro Plattform (*Inbound Mail Server Email Pro*) gesendet wird, werden die E-Mail-Adressen Ihrer Domain zwischen Ihrer Haupt-E-Mail-Plattform (*Inbound Mail Server Email Pro*) und einem anderen E-Mail-Dienst (*Inbound Mail Server MX Plan*) aufgeteilt. <br> <br> Wenn Sie zum Beispiel eine E-Mail an die Adresse *mary.johnson@mydomain.ovh* senden, wird die E-Mail vom E-Mail Pro *Inbound Mail Server Email Pro* an den MX Plan Server *Inbound mail server MX Plan* weitergeleitet, damit dieser die E-Mail bereitstellen kann.
+> - Wenn eine E-Mail im **autoritativen** Modus an Ihre E-Mail Pro Plattform (*Inbound Mail Server E-Mail Pro*) übermittelt wird, werden alle E-Mail-Adressen Ihres Domainnamens ausschließlich auf dieser Plattform gehostet. <br> <br> Wenn Sie zum Beispiel eine E-Mail an die Adresse *mary.johnson@mydomain.ovh* senden, sendet der E-Mail Pro Server *Inbound mail server E-Mail Pro* eine Fehlermeldung an den Absender, da diese Adresse auf dem E-Mail Pro Server *Inbound mail server E-Mail Pro* nicht existiert.
+> - Wenn eine E-Mail im **nicht-autoritativen** Modus an Ihre E-Mail Pro Plattform (*Inbound Mail Server E-Mail Pro*) gesendet wird, werden die E-Mail-Adressen Ihrer Domain zwischen Ihrer Haupt-E-Mail-Plattform (*Inbound Mail Server E-Mail Pro*) und einem anderen E-Mail-Dienst (*Inbound Mail Server MX Plan*) aufgeteilt. <br> <br> Wenn Sie zum Beispiel eine E-Mail an die Adresse *mary.johnson@mydomain.ovh* senden, wird die E-Mail vom E-Mail Pro *Inbound Mail Server E-Mail Pro* an den MX Plan Server *Inbound mail server MX Plan* weitergeleitet, damit dieser die E-Mail bereitstellen kann.
 >
 > ![Add Domain](images/authoritative-mode.png){.thumbnail}
 >
@@ -89,7 +89,7 @@ Klicken Sie auf `Weiter`{.action}, um die Domain hinzuzufügen.
 
 Am Ende der Konfiguration überprüfen Sie die angezeigten Informationen. Klicken Sie danach auf `Bestätigen`{.action}, um die Domain hinzufügen.
 
-### Schritt 3: Ihre Domain konfigurieren
+### Schritt 2: Ihre Domain konfigurieren
 
 Sobald die Domain als assoziierte Domain hinzugefügt ist, überprüfen Sie in der angezeigten Tabelle, dass die Konfiguration korrekt ist.
 
@@ -106,7 +106,7 @@ In der Spalte `Diagnose`{.action} können Sie sehen, ob die Konfiguration der MX
 
 ![emailpro](images/emailpro-04.png){.thumbnail}
 
-### Schritt 4: E-Mail Pro Accounts konfigurieren
+### Schritt 3: E-Mail Pro Accounts konfigurieren
 
 Zur Konfiguration Ihrer E-Mail-Accounts gehen Sie in den Tab `E-Mail-Accounts`{.action}. Die Tabelle zeigt die bestellten Accounts als “*@configureme.me*” an.
 
@@ -147,7 +147,7 @@ Wenn alle Angaben vollständig sind, klicken Sie auf `Weiter`{.action}. Überpr�
 > Führen Sie diesen Schritt für alle zur Verfügung stehenden Accounts durch. Sie können weitere Accounts über den Button `Accounts bestellen`{.action} hinzufügen.
 >
 
-### Schritt 5: Ihre E-Mail-Adressen verwenden
+### Schritt 4: Ihre E-Mail-Adressen verwenden
 
 Nach Abschluss der Konfiguration können Sie Ihre E-Mail-Adressen verwenden. Dazu stellt Ihnen OVHcloud eine Online-Anwendung (*Web App*) zur Verfügung. Diese App ist über die Adresse [Webmail](/links/web/email) erreichbar. Geben Sie hier Ihre E-Mail-Adresse und das Passwort ein, um sich einzuloggen.
 
@@ -168,9 +168,9 @@ Wenn Sie Ihre E-Mail-Adresse auf einem E-Mail-Client oder einem Gerät (beispiel
 
 > [!primary]
 >
-> In den Anleitungen verwenden wir als Serverbezeichnung: pro?.mail.ovh.net. Das „?“ muss mit der jeweils passenden Nummer Ihres zuständigen Servers für den einzurichtenden Email Pro Dienst ersetzt werden.
+> In den Anleitungen verwenden wir als Serverbezeichnung: pro?.mail.ovh.net. Das „?“ muss mit der jeweils passenden Nummer Ihres zuständigen Servers für den einzurichtenden E-Mail Pro Dienst ersetzt werden.
 > 
-> Sie finden diese Information im [OVHcloud Kundencenter](/links/manager), wenn Sie den betreffenden `E-Mail Pro`{.action} Dienst auswählen. Der Servername wird im Kasten **Verbindung** auf der Seite `Allgemeine Informationen`{.action} angezeigt.
+> Der Servername wird im Kasten **Verbindung** auf der Seite `Allgemeine Informationen`{.action} Ihres E-Mail Pro Dienstes angezeigt.
 >
 
 ## Weiterführende Informationen

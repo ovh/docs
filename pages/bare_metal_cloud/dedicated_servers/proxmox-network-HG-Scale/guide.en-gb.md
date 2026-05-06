@@ -1,7 +1,7 @@
 ---
-title: 'Configuring the network on Proxmox VE on the High Grade, Scale & Advance ranges'
-excerpt: 'Find out how to configure the network on Proxmox VE'
-updated: 2025-07-22
+title: "Proxmox VE Networking on HG/Scale Dedicated Servers"
+excerpt: "Configure Proxmox VE network interfaces on High Grade, Scale, and Advance range dedicated servers step by step."
+updated: 2026-01-23
 ---
 
 > [!primary]
@@ -33,7 +33,6 @@ updated: 2025-07-22
 
 - An [OVHcloud dedicated server](/links/bare-metal/bare-metal)
 - One or more [Additional IP addresses](/links/network/additional-ip)
-- Access to the [OVHcloud Control Panel](/links/manager)
 
 > [!warning]
 >
@@ -51,11 +50,11 @@ With this configuration, Additional IP addresses must be attached to a dedicated
 > [!tabs]
 > High Grade & Scale ranges
 >>
->> ![schema route](images/schema_route2022.png){.thumbnail}
+>> ![Routed mode network schema for High Grade and Scale ranges](images/schema_route.png){.thumbnail}
 >>
 > Advance range
 >>
->> ![schema route](images/gamme-advance-01.png){.thumbnail}
+>> ![Routed mode network schema for Advance range](images/gamme-advance-01.png){.thumbnail}
 >>
 
 #### Explanations
@@ -111,7 +110,7 @@ sysctl -p
 >> # Public interfaces
 >> auto bond0
 >> iface bond0 inet manual
->>         bond-slaves ens33f0 ens33f1
+>>         bond-slaves ens33f0 ens35f1
 >>         bond-mode 802.3ad
 >>         bond-lacp-rate fast
 >>         bond-xmit-hash-policy layer3+4
@@ -134,7 +133,7 @@ sysctl -p
 >> # Private interfaces
 >> auto bond1
 >> iface bond1 inet manual
->>         bond-slaves ens35f0 ens35f1
+>>         bond-slaves ens35f0 ens33f1
 >>         bond-mode 802.3ad
 >>         bond-lacp-rate fast
 >>         bond-xmit-hash-policy layer3+4
@@ -263,11 +262,10 @@ This configuration is more flexible as you do not need to associate an Additiona
 * A [server compatible with vRack](/links/bare-metal/bare-metal)
 * A [vRack service](/links/network/vrack)
 * A block of Additional IPs
-* Access to the [OVHcloud Control Panel](/links/manager)
 
 #### Target configuration schema
 
-![schema vrack](images/schema_vrack2022.png){.thumbnail}
+![schema vrack](images/Schema_vrack.png){.thumbnail}
 
 #### Explanations
 
@@ -334,7 +332,7 @@ ssh PUB_IP_DEDICATED_SERVER
 >> iface bond0 inet static
 >>         address PUB_IP_DEDICATED_SERVER/32
 >>         gateway 100.64.0.1
->>         bond-slaves ens33f0 ens33f1
+>>         bond-slaves ens33f0 ens35f1
 >>         bond-mode 802.3ad
 >>         bond-lacp-rate fast
 >>         bond-xmit-hash-policy layer3+4
@@ -342,7 +340,7 @@ ssh PUB_IP_DEDICATED_SERVER
 >> # Private interfaces
 >> auto bond1
 >> iface bond1 inet manual
->>         bond-slaves ens35f0 ens35f1
+>>         bond-slaves ens35f0 ens33f1
 >>         bond-mode 802.3ad
 >>         bond-lacp-rate fast
 >>         bond-xmit-hash-policy layer3+4
@@ -436,6 +434,12 @@ ADDITIONAL_IP # must return your additional ip
 > You need to restart the VM's network services for the configuration to take effect.
 
 ## Go further
+
+[Hyper-V Networking on HG/Scale Dedicated Servers](/pages/bare_metal_cloud/dedicated_servers/hyperv-network-HG-Scale)
+
+[Hardware upgrade on a High Grade or Scale Dedicated Server](/pages/bare_metal_cloud/dedicated_servers/hardware-upgrade-HG-Scale)
+
+[Dedicated Server - Fixing Proxmox VE Slow Downloads](/pages/bare_metal_cloud/dedicated_servers/proxmox-broadcom-slow-downloads)
 
 Join our [community of users](/links/community).
 

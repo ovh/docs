@@ -1,7 +1,7 @@
 ---
 title: "Häufige FTP-Probleme beheben"
 excerpt: "Diese Anleitung erklärt, wie Sie Fehlermeldungen bei FTP-Verbindungen beheben"
-updated: 2025-10-20
+updated: 2026-03-31
 ---
 
 ## Ziel 
@@ -19,7 +19,17 @@ Die Verwendung von FTP-Software beim Login auf Ihr [Hosting-Pakete](/links/web/h
 ## Voraussetzungen
 
 - Sie verfügen über ein [OVHcloud Webhosting](/links/web/hosting).
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direkter Link:** [Hosting-Pakete](/links/control-panel/web-hosting)
+- **Navigationspfad:** `Web Cloud`{.action} > `Hosting-Pakete`{.action} > Wählen Sie Ihr Webhosting aus
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## In der praktischen Anwendung
 
@@ -31,18 +41,11 @@ Diese Nachricht im [FileZilla-Programm](/pages/web_cloud/web_hosting/ftp_filezil
 
 Wenn die Daten, die Sie über diese Verbindung austauschen möchten, nicht vertraulich sind, klicken Sie auf `OK`{.action}.
 
-Ist das nicht der Fall, gehen Sie in Ihr [OVHcloud Kundencenter](/links/manager), dann auf `Web Cloud`{.action} und `Hosting-Pakete`{.action}. Wählen Sie das betreffende Hosting aus und öffnen Sie den Tab `FTP-SSH`{.action}.
-
-Wenn Sie über ein Webhosting [Basic](/links/web/hosting-personal-offer) verfügen, setzen Sie in der Spalte `SFTP`{.action} den Haken bei der Feld `Deaktiviert`{.action} und warten Sie einige Minuten.
-
-Wenn Sie über ein Webhosting [Pro](/links/web/hosting-professional-offer) oder [Performance](/links/web/hosting-performance-offer) verfügen, klicken Sie auf die Schaltfläche `...`{.action} rechts neben dem betreffenden FTP-Benutzer und dann auf `Ändern`{.action}.
-
-Wählen Sie `SFTP`{.action} oder `Aktiviert`{.action} aus (um das SSH-Protokoll auf Ihrem Hosting zu aktivieren), klicken Sie auf `Weiter`{.action}, dann auf `Bestätigen`{.action}. Die Umstellung dauert einige Minuten.
+Aktivieren Sie andernfalls das SFTP-Protokoll mithilfe unserer Anleitung "[Webhosting - SFTP-Zugang aktivieren](/pages/web_cloud/web_hosting/enable_sftp)".
 
 > [!primary]
 >
 > Für sonstige Fehlermeldungen beachten Sie den Bereich `Diagnose` unserer [Webhosting-Anleitungen](/products/web-cloud-hosting).
->
 
 ### Ich habe meine Dateien mit einem FTP-Programm übertragen, aber meine Seite wird nicht angezeigt
 
@@ -58,28 +61,24 @@ Wenn Sie sich nicht authentifizieren können, ändern Sie Ihr FTP-Passwort entsp
 
 Wenn Sie den Speicherplatz Ihres Webhostings überschreiten, kann es zu Fehlfunktionen auf Ihrer Seite kommen.
 
-Um den verbleibenden Speicherplatz auf Ihrem Webhosting zu überprüfen, klicken Sie auf die Tabs, um die **3** Schritte anzuzeigen.
+<!-- CP-STEPS-START:check-disk-space -->
+Um den verbleibenden Speicherplatz auf Ihrem Webhosting zu überprüfen, klicken Sie auf die Tabs, um die **2** Schritte anzuzeigen.
 
 > [!tabs]
 > **Schritt 1**
 >>
->> Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein und gehen Sie dann in den Bereich `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Schritt 2**
->>
->> Klicken Sie auf das Menü `Hosting-Pakete`{.action} und wählen Sie das betreffende Webhosting aus.
+>> Gehen Sie auf die Seite [Hosting-Pakete](/links/control-panel/web-hosting), und wählen Sie das betreffende Webhosting aus.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Schritt 3**
+> **Schritt 2**
 >>
 >> Die Speicherplatzauslastung Ihres Webhostings finden Sie im Feld **Allgemeine Informationen** unter **Speicherplatz**.
 >>
 >> ![disk_space](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-disk-space.png){.thumbnail}
+<!-- CP-STEPS-END:check-disk-space -->
 
-### Ich kann meine Dateien nicht auf den FTP Server übertragen
+### Ich kann meine Dateien nicht auf den FTP-Server übertragen
 
 Überprüfen Sie, dass Ihr FTP-Programm im “Passivmodus“ (Konfigurationsmodus eines FTP-Servers, in dem der Server den Verbindungsport bestimmt) verbunden ist.
 
@@ -95,7 +94,7 @@ Dieser Link ist standardmäßig auf den Shared Hosting Paketen von OVHcloud inst
 
 ![site-under-construction](/pages/assets/screens/other/browsers/errors/site-under-construction.png){.thumbnail}
 
-Wenn Sie die Funktion “[1-Klick-Modul](/pages/web_cloud/web_hosting/cms_install_1_click_modules)“ nicht für Ihre Website verwendet haben, müssen Sie sich [mit dem FTP-Speicherplatz verbinden](/pages/web_cloud/web_hosting/ftp_connection) Ihres Webhostings einloggen, um die Seite „Site under construction“ manuell zu löschen.
+Wenn Sie die Funktion “[1-Klick-Modul](/pages/web_cloud/web_hosting/cms_install_1_click_modules)“ nicht für Ihre Website verwendet haben, müssen Sie sich [mit dem FTP-Speicherplatz verbinden](/pages/web_cloud/web_hosting/ftp_connection) Ihres Webhostings einloggen, um die Seite "Site under construction“ manuell zu löschen.
 
 ## Weiterführende Informationen <a name="go-further"></a>
 

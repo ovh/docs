@@ -4,7 +4,6 @@ excerpt: Esta guía describe cómo añadir y utilizar las cuentas de recursos co
 updated: 2025-04-28
 ---
  
-
 ## Objetivo
 
 Esta función colaborativa de Exchange permite crear direcciones de correo dedicadas a los recursos de su organización, como las salas de conferencias y los dispositivos compartidos. El uso de estas cuentas de recursos permite optimizar la organización de eventos en un entorno de trabajo colaborativo, proporcionando controles de disponibilidad e integrando los recursos de manera transparente a sus calendarios Exchange.
@@ -14,16 +13,20 @@ Esta función colaborativa de Exchange permite crear direcciones de correo dedic
 ## Requisitos
 
 - Tener una [solución Exchange de OVHcloud](/links/web/emails-hosted-exchange) ya configurada.
-- Estar conectado al [área de cliente de OVHcloud.](/links/manager)
 - Disponer de las claves de acceso para las cuentas de correo que tengan acceso al recurso.
 
-## Procedimiento
+<!-- CP-NAV-START:web-exchange -->
+---
 
-1. Conéctese al [área de cliente de OVHcloud](/links/manager).
-1. Acceda al apartado `Web Cloud`{.action}.
-1. En la sección `MICROSOFT`, haga clic en `Exchange`{.action}.
-1. Seleccione la plataforma correspondiente.
-1. Abra la pestaña `Más +`{.action} y haga clic en `Recursos`{.action}.
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [Exchange](/links/control-panel/web-exchange)
+- **Ruta de navegación:** `Web Cloud`{.action} > `Exchange`{.action} > Seleccione su plataforma
+
+---
+<!-- CP-NAV-END:web-exchange -->
+
+## Procedimiento
 
 ### 1\. crear un recurso
 
@@ -53,7 +56,7 @@ Los recursos pueden gestionarse desde la pestaña "Recursos". Haga clic en `...`
 
 > [!primary]
 >
-Consulte también nuestra guía [Compartir calendarios desde la interfaz OWA](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/owa_calendar_sharing).
+> Consulte también nuestra guía [Compartir calendarios desde la interfaz OWA](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/owa_calendar_sharing).
 >
 
 Conéctese a su cuenta Exchange a través del [webmail OVHcloud](/links/web/email). Vaya a la interfaz "Calendario" haciendo clic en el botón "Aplicación lanzada" en la esquina superior izquierda y seleccionando el icono "`Calendario`{.action}".
@@ -116,7 +119,7 @@ Después de crear el evento (haciendo clic en `Enviar`{.action} en la barra supe
 
 ![mensaje de rechazo](images/exchange-resources-step8.png){.thumbnail}
 
-## Más información
+## Más información <a name="go-further"></a>
 
 [Consultar una cuenta Exchange desde la interfaz OWA](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa)
 

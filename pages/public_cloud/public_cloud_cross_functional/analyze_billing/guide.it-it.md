@@ -1,7 +1,7 @@
 ---
 title: 'Sistema di fatturazione dei servizi Public Cloud'
 excerpt: 'Come funziona il sistema di fatturazione dei servizi Public Cloud'
-updated: 2025-04-28
+updated: 2026-03-13
 ---
 
 ## Obiettivo
@@ -20,7 +20,17 @@ Questo sistema è molto simile a quello adottato da alcuni operatori telefonici,
 
 * Aver già creato un progetto [Public Cloud](/links/public-cloud/public-cloud) nel tuo account OVHcloud
 * [Disporre di un’istanza Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps)
-* Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Percorso di navigazione:** `Public Cloud`{.action} > Seleziona il tuo project
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 > [!success]
 > Approfittate dei prezzi ridotti impegnandovi per un periodo da 1 a 36 mesi sulle vostre risorse Public Cloud. Maggiori informazioni sulla nostra pagina [Savings Plans](/links/public-cloud/savings-plan).
@@ -161,37 +171,17 @@ Gli Snapshot delle istanze e le immagini (escluso il catalogo di immagini fornit
 
 #### Object Storage
 
-L’Object Storage prevede la fatturazione di due elementi:
+Object Storage è fatturato su base **pay-as-you-go** in base al volume medio archiviato per ora in ciascuna classe di storage (GiB-ore), con fatturazione a fine mese. Lo storage è la componente principale della fatturazione — il traffico in entrata, il traffico interno OVHcloud, le chiamate API e il traffico in uscita pubblico sono inclusi.
 
-- lo storage di oggetti, cioè il volume in GB effettivamente utilizzato
-- il traffico in uscita, cioè la quantità di dati in uscita dal servizio incluso il contenuto delle richieste (body HTTP)
-
-> [!primary]
->
-> Il traffico in uscita tra il servizio di Object Storage e le istanze è
-> fatturato come se la destinazione fosse Internet.
-> 
-
-> [!alert]
->
-> Ti ricordiamo che la consultazione degli oggetti dallo Spazio Cliente OVHcloud è considerata
-> traffico in uscita.
-> 
-
-#### Archivi
-
-Lo storage di archivi prevede la fatturazione di tre elementi:
-
-- lo storage di archivi, cioè il volume in GB effettivamente utilizzato
-- il traffico in entrata, cioè la quantità di dati in entrata nel servizio incluso il contenuto delle richieste (body HTTP)
-- il traffico in uscita, cioè la quantità di dati in uscita dal servizio incluso il contenuto delle richieste (body HTTP)
+Per adattare i costi ai modelli di accesso ai dati, offriamo diverse classi Object Storage compatibili con S3<sup>1</sup> (Standard, High Performance, Infrequent Access, Active Archive, Cold Archive). Per maggiori informazioni su queste classi, inclusi casi d’uso, prestazioni e SLA, consulta la guida dedicata: [Scegliere la classe Object Storage giusta](/pages/storage_and_backup/object_storage/s3_choosing_the_right_storage_class_for_your_needs).
 
 > [!primary]
 >
-> Il traffico in uscita tra il servizio di archiviazione e le istanze è fatturato
-> come se la destinazione fosse Internet.
-> 
+> Per le classi Infrequent Access, Active Archive e Cold Archive si applicano una durata minima di archiviazione e costi di recupero.
+>
 
 ## Per saperne di più
+
+<sup>1</sup>: S3 è un marchio di Amazon Technologies, Inc. Il servizio OVHcloud non è sponsorizzato, approvato o altrimenti affiliato con Amazon Technologies, Inc.
 
 Contatta la nostra [Community di utenti](/links/community).

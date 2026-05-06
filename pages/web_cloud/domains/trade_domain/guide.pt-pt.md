@@ -1,37 +1,47 @@
 ---
 title: "Nome de domínio - Como alterar o titular?"
-excerpt: "Saiba como alterar o titular de um domínio ou atualizar as informações associadas ao mesmo"
-updated: 2025-06-11
+excerpt: "Saiba como alterar o titular de um nome de domínio ou atualizar as informações associadas ao mesmo"
+updated: 2026-02-10
 ---
 
 ## Objetivo
 
-Para além da [gestão dos contactos](/pages/account_and_service_management/account_information/managing_contacts), o registo de um nome de domínio requer a indicação das informações relativas ao titular do mesmo. Neste contexto, o **titular** designa uma pessoa, uma sociedade, uma organização ou ainda uma associação que detém os direitos sobre este nome de domínio. **A mudança de titular** refere-se à transferência de direitos de propriedade de uma pessoa ou empresa para outra. As informações do **titular** têm valor jurídico. Este processo é particularmente obrigatório se uma empresa mudar o nome.
+Para além da [gestão dos contactos](/pages/account_and_service_management/account_information/managing_contacts), o registo de um nome de domínio requer a indicação das informações relativas ao titular do mesmo. Neste contexto, o **titular** designa uma pessoa, uma sociedade, uma organização ou ainda uma associação que detém os direitos sobre este nome de domínio. **A mudança de titular** (transferência de nome de domínio) refere-se ao ato de modificar legalmente esta informação, ou seja, a transferência dos direitos de utilização para uma nova pessoa ou empresa. Por exemplo, este processo é obrigatório quando uma empresa altera a sua denominação.
 
 > [!primary]
-> Esta operação não transfere o seu domínio para outra conta de cliente OVHcloud.
+> Esta operação não transfere o seu nome de domínio para outra conta de cliente OVHcloud.
 >
 > Para isso, deve [modificar os contactos](/pages/account_and_service_management/account_information/managing_contacts) do nome de domínio.
 >
-> Se tiver de efetuar uma alteração de titular ou uma alteração de contacto para o mesmo domínio, recomenda-se vivamente que efetue **antes de mais** a alteração de titular para garantir uma transição ideal. No entanto, essas operações podem ser iniciadas por um contacto administrador. Assim, estas duas alterações ocorrem na Área de Cliente do contacto administrador do domínio.
+> Se tiver de efetuar uma alteração de titular ou uma alteração de contacto para o mesmo nome de domínio, recomenda-se vivamente que efetue **antes de mais** a alteração de titular para garantir uma transição ideal. No entanto, essas operações podem ser iniciadas por um contacto administrador. Assim, estas duas alterações ocorrem na Área de Cliente do contacto administrador do nome de domínio.
 >
-> De facto, as informações relativas ao titular de um nome de domínio têm apenas um valor administrativo e são totalmente independentes das informações que podem ser associadas a um identificador de cliente OVHcloud. Por conseguinte, um particular ou uma organização (sociedade, associação, etc.) apenas declarado titular de um domínio não tem acesso à Área de Cliente OVHcloud.
+> De facto, as informações relativas ao titular de um nome de domínio têm apenas um valor administrativo e são totalmente independentes das informações que podem ser associadas a um identificador de cliente OVHcloud. Por conseguinte, um particular ou uma organização (sociedade, associação, etc.) apenas declarado titular de um nome de domínio não tem acesso à Área de Cliente OVHcloud.
 >
 
-**Saiba como alterar o titular de um domínio ou atualizar as informações associadas ao mesmo.**
+**Saiba como alterar o titular de um nome de domínio ou atualizar as informações associadas ao mesmo.**
 
 ## Requisitos
 
-- Estar ligado à [Área de Cliente OVHcloud](/links/manager)
-- Ter um nome de domínio registado na OVHcloud e para o qual não está em curso nenhuma operação (mudança de titular, transferência, criação). Se uma operação foi finalizada recentemente no seu domínio, é necessário aguardar pelo menos 60 dias de calendário antes de realizar uma nova operação.
+- Ter um nome de domínio registado na OVHcloud e para o qual não está em curso nenhuma operação (mudança de titular, transferência, criação). Se uma operação foi finalizada recentemente no seu nome de domínio, é necessário aguardar pelo menos 60 dias de calendário antes de realizar uma nova operação.
 - A sua conta de cliente é [contacto administrador e de faturação](/pages/account_and_service_management/account_information/managing_contacts) do respetivo nome de domínio.
 - Ter o consentimento do titular atual do nome de domínio para realizar a alteração de titular.
+
+<!-- CP-NAV-START:web-domains -->
+---
+
+### Acesso à Área de Cliente OVHcloud
+
+- **Ligação direta:** [Nomes de domínio](/links/control-panel/web-domains)
+- **Caminho de navegação:** `Web Cloud`{.action} > `Nomes de domínio`{.action} > Selecione o seu nome de domínio
+
+---
+<!-- CP-NAV-END:web-domains -->
 
 ## Instruções
 
 > [!warning]
 >
-> As instruções a seguir descrevem o método mais comum para modificar o titular de um domínio. São válidas para a maior parte dos domínios de nível superior, vulgarmente designados **T**op **L**evel **D**omain (**TLD**). 
+> As instruções a seguir descrevem o método mais comum para modificar o titular de um nome de domínio. São válidas para a maior parte dos nomes de domínio de nível superior, vulgarmente designados **T**op **L**evel **D**omain (**TLD**). 
 >Os **TLD** designam o fim do seu nome de domínio, como por exemplo o *.com*, *.net*, *.fr*, etc.
 >
 > As regras específicas dos processos relativos aos nomes de domínio **TLD** são definidas unicamente pela autoridade de atribuição adequada, ou seja, o **registo**. Um agente de registo (ou registar) como a OVHcloud deve respeitar estas regras e não tem qualquer influência sobre as decisões de registo.
@@ -44,39 +54,34 @@ Para além da [gestão dos contactos](/pages/account_and_service_management/acco
 >
 > - O sítio Web do registo **TLD** correspondente;
 > - A [lista dos TLD disponíveis na OVHcloud](/links/web/domains-tld);
-> - Atualizações do estado do domínio. Para verificar isso, aceda à [Área de Cliente OVHcloud](/links/manager) e aceda à secção `Web Cloud`{.action}. Clique em `Operações em curso`{.action}.
+> - Atualizações do estado do nome de domínio. Para verificar, aceda à página [Operações em curso](/links/control-panel/web-ongoing-operations).
 >
 
 ### Iniciar o procedimento de alteração de titular ou alterar as informações associadas
 
-Clique nas guias abaixo para exibir sucessivamente cada um dos **7** etapas.
+<!-- CP-STEPS-START:change-domain-owner -->
+Clique nos separadores abaixo para visualizar cada uma das **6** etapas.
 
 > [!tabs]
 > **Etapa 1**
 >>
->> Aceda à [Área de Cliente OVHcloud](/links/manager) e aceda à secção `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Etapa 2**
->>
->> Clique no menu `Nomes de domínio`{.action} e escolha o domínio em causa.
+>> Aceda à página [Nomes de domínio](/links/control-panel/web-domains) e escolha o domínio correspondente.
 >>
 >> ![Domain Names](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
 >>
-> **Etapa 3**
+> **Etapa 2**
 >>
 >> Na página que é apresentada, encontra no quadro **Subscrição** a menção **Contactos**. Clique no botão `...`{.action} à direita e, a seguir, em `Gerir os contactos`{.action}.
 >>
 >> ![Change owner](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/manage-contacts.png){.thumbnail}
 >>
-> **Etapa 4**
+> **Etapa 3**
 >>
 >> Na nova página, aceda ao quadro **Titular** e clique no botão `Alterar`{.action}.
 >>
 >> ![Manage contacts and owners](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/manage-contacts-and-owners.png){.thumbnail}
 >>
-> **Etapa 5**
+> **Etapa 4**
 >>
 >> > [!warning]
 >> >
@@ -88,15 +93,15 @@ Clique nas guias abaixo para exibir sucessivamente cada um dos **7** etapas.
 >>
 >> ![Owner informations](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/owner.png){.thumbnail}
 >>
-> **Etapa 6**
+> **Etapa 5**
 >>
->> Um novo separador do seu browser será aberto com todos os domínios elegíveis para a mudança de titular. Selecione um domínio da lista selecionando a caixa à esquerda. Este passo também pode ser utilizado para iniciar uma operação em pacote. Assim, é possível iniciar uma mudança de titular para vários nomes de domínio de cada vez, por exemplo para alterar o titular de todos os domínios *.ovh* se os seus titulares atuais são idênticos.
+>> Um novo separador do seu browser será aberto com todos os nomes de domínio elegíveis para a mudança de titular. Selecione um nome de domínio da lista selecionando a caixa à esquerda. Este passo também pode ser utilizado para iniciar uma operação em pacote. Assim, é possível iniciar uma mudança de titular para vários nomes de domínio de cada vez, por exemplo para alterar o titular de todos os nomes de domínio *.ovh* se os seus titulares atuais são idênticos.
 >>
 >> ![Change owner domains list](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/available-domains.png){.thumbnail}
 >>
 >> Depois de fazer as suas escolhas, clique em `Continuar`{.action}.
 >>
-> **Etapa 7**
+> **Etapa 6**
 >>
 >> No formulário de detalhes do titular, certifique-se de que insere informações válidas em todos os campos obrigatórios. Tenha atenção aos erros de escrita e utilize [caracteres imprimíveis ASCII](http://facweb.cs.depaul.edu/sjost/it212/documents/ascii-pr.htm) sempre que possível. Queira ter em conta que qualquer informação incorreta ou incorreta pode levar a um erro técnico e, por conseguinte, a um atraso de todo o processo.
 >>
@@ -107,8 +112,9 @@ Clique nas guias abaixo para exibir sucessivamente cada um dos **7** etapas.
 >>
 >> Se o endereço de e-mail não for alterado como parte da mudança de titular, o endereço de e-mail de referência receberá os dois e-mails, mas cada um destes dois e-mails deve ser confirmado.
 >>
->> Depois de ambos os destinatários terem confirmado o pedido por e-mail, a alteração de titular do domínio ficará efetiva.
+>> Depois de ambos os destinatários terem confirmado o pedido por e-mail, a alteração de titular do nome de domínio ficará efetiva.
 >>
+<!-- CP-STEPS-END:change-domain-owner -->
 
 > [!warning]
 >

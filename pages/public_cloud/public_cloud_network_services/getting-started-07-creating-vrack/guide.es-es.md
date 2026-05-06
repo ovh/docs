@@ -27,9 +27,19 @@ El [vRack](/links/network/vrack) es una red privada que le permite configurar la
 ## Requisitos
 
 - Tener un [proyecto Public Cloud](/pages/public_cloud/public_cloud_cross_functional/create_a_public_cloud_project)
-- Estar conectado a su [área de cliente de OVHcloud](/links/manager)
 - Tener [creado un usuario OpenStack](/pages/public_cloud/public_cloud_cross_functional/create_and_delete_a_user) (opcional)
 - Conocimientos básicos de redes
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Ruta de navegación:** `Public Cloud`{.action} > Seleccione su proyecto
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## Presentación de las interfaces
 
@@ -869,7 +879,7 @@ Por ejemplo, si tiene una interfaz pública *eth0*, tendrá además una interfaz
 
 > [!tabs]
 > Desde el área de cliente de OVHcloud
->> Inicie sesión en su [área de cliente de OVHcloud](/links/manager), vaya a la sección `Public Cloud`{.action} y seleccione el proyecto Public Cloud correspondiente en la esquina superior izquierda.
+>> En su proyecto Public Cloud,
 >>
 >> Haga clic en `Instancias`{.action} en el menú lateral izquierdo. A continuación, haga clic en el botón `⁝`{.action} a la derecha de la instancia correspondiente y luego en `Detalles de la instancia`{.action}.
 >>

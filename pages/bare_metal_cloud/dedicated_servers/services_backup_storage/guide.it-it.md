@@ -1,7 +1,7 @@
 ---
-title: Utilizzare il Backup Storage su un server dedicato
-excerpt: Come attivare e accedere allo spazio di storage aggiuntivo
-updated: 2025-10-09
+title: "Utilizzare il Backup Storage su un server dedicato"
+excerpt: "Attiva e accedi allo spazio di backup incluso con il tuo server dedicato OVHcloud per i tuoi salvataggi di file"
+updated: 2026-03-25
 ---
 
 ## Obiettivo
@@ -19,7 +19,17 @@ I server dedicati OVHcloud includono uno spazio di backup aggiuntivo per salvare
 ## Prerequisiti
 
 * Disporre di un [server dedicato](/links/bare-metal/bare-metal) sul proprio account OVHcloud
-* Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
+
+<!-- CP-NAV-START:baremetal-dedicated-servers -->
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [Server dedicati](/links/control-panel/baremetal-dedicated-servers)
+- **Percorso di navigazione:** `Bare Metal Cloud`{.action} > `Server dedicati`{.action} > Seleziona il tuo server
+
+---
+<!-- CP-NAV-END:baremetal-dedicated-servers -->
 
 > [!warning]
 > Questa funzionalità può non essere disponibile o limitata sui [server dedicati **Eco**](/links/bare-metal/eco-about).
@@ -31,7 +41,7 @@ I server dedicati OVHcloud includono uno spazio di backup aggiuntivo per salvare
 
 ### Attiva il tuo Backup Storage
 
-Accedi allo [Spazio Cliente OVHcloud](/links/manager). Seleziona il tuo server nella sezione `Bare Metal Cloud`{.action} e poi `Server dedicati`{.action}. Nella scheda `Backup Storage`{.action}, clicca sul pulsante `Attiva il Backup Storage`{.action}.
+Nella scheda `Backup Storage`{.action}, clicca sul pulsante `Attiva il Backup Storage`{.action}.
 
 ![Attiva il tuo Backup Storage](images/backup-storage01.png){.thumbnail}
 
@@ -47,7 +57,7 @@ L'accesso allo spazio di storage è limitato per indirizzi IP tramite una lista 
 
 #### Aggiungere un accesso backup
 
-Accedi allo [Spazio Cliente OVHcloud](/links/manager). Seleziona il tuo server nella sezione `Bare Metal Cloud`{.action} e poi `Server dedicati`{.action}. Seleziona la scheda `Backup Storage`{.action} e clicca sul pulsante `Aggiungi un accesso`{.action}.
+Seleziona la scheda `Backup Storage`{.action} e clicca sul pulsante `Aggiungi un accesso`{.action}.
 
 ![Aggiungere un accesso backup](images/backup-storage03.png){.thumbnail}
 
@@ -113,19 +123,19 @@ Per verificare che il tuo indirizzo IP sia autorizzato, utilizza questa chiamata
 
 ### Reimposta la password
 
-Accedi allo [Spazio Cliente OVHcloud](/links/manager). Seleziona il tuo server nella sezione `Bare Metal Cloud`{.action} e poi `Server dedicati`{.action}. Seleziona la scheda `Backup Storage`{.action} e clicca sul pulsante `Password dimenticata`{.action}.
+Seleziona la scheda `Backup Storage`{.action} e clicca sul pulsante `Password dimenticata`{.action}.
 
 Dopo aver cliccato su `Conferma`{.action} nella nuova finestra, riceverai un'email di recupero password all'indirizzo email salvato sul tuo account amministratore. Segui le istruzioni riportate per reimpostare la password.
 
 ### Eliminare il Backup Storage
 
-Accedi allo [Spazio Cliente OVHcloud](/links/manager). Seleziona il tuo server nella sezione `Bare Metal Cloud`{.action} e poi `Server dedicati`{.action}. Seleziona la scheda `Backup Storage`{.action} e clicca sul pulsante `Elimina il Backup Storage`{.action}.
+Seleziona la scheda `Backup Storage`{.action} e clicca sul pulsante `Elimina il Backup Storage`{.action}.
 
 Clicca su `Conferma`{.action} sul messaggio di avvertimento per procedere all'eliminazione. Il tuo Backup Storage sarà eliminato dopo pochi minuti. Tutti i dati dello spazio di storage verranno eliminati.
 
 ### Ordina spazio disco aggiuntivo
 
-Accedi allo [Spazio Cliente OVHcloud](/links/manager). Seleziona il tuo server nella sezione `Bare Metal Cloud`{.action} e poi `Server dedicati`{.action}. Seleziona la scheda `Backup Storage`{.action} e clicca sul pulsante Ordina `spazio disco`{.action}.
+Seleziona la scheda `Backup Storage`{.action} e clicca sul pulsante `Ordina spazio disco`{.action}.
 
 ![Ordina spazio disco aggiuntivo](images/backup-storage06.png){.thumbnail}
 
@@ -308,10 +318,10 @@ Dopo aver installato FileZilla sul server, è possibile configurarlo per acceder
 
 #### NFS
 
-Per prima cosa, accertati di aver autorizzato i blocchi di indirizzi IP ad accedere allo spazio di storage e utilizzare il protocollo NFS. In base al sistema operativo Linux utilizzato, è possibile che sia necessario installare il client NFS e avviare il servizio NFS/portmap prima di eseguire il mount della share NFS come una normale partizione:
+Il backup storage è compatibile unicamente con NFSv3. Per prima cosa, accertati di aver autorizzato i blocchi di indirizzi IP ad accedere allo spazio di storage e utilizzare il protocollo NFS. In base al sistema operativo Linux utilizzato, è possibile che sia necessario installare il client NFS e avviare il servizio NFS/portmap prima di eseguire il mount della share NFS come una normale partizione:
 
 ```sh
-mount -t nfs HostName:/export/ftpbackup/ServiceName /FolderMount
+mount -t nfs -o vers=3 HostName:/export/ftpbackup/ServiceName /FolderMount
 ```
 
 Sostituisci le variabili dell’esempio con le informazioni dei tuoi servizi.

@@ -1,6 +1,6 @@
 ---
 title: "Atualização do hardware num servidor dedicado High Grade ou Scale"
-excerpt: "Saiba como solicitar uma atualização de hardware para as gamas High Grade e SCALE através da Área de Cliente"
+excerpt: "Solicite uma atualização de hardware (RAM, disco, NIC) no seu servidor dedicado High Grade ou SCALE através da área de cliente OVHcloud"
 updated: 2024-01-04
 ---
 
@@ -20,13 +20,19 @@ Os nossos servidores High Grade e Scale propõem-lhe uma opção escalável que 
 ## Requisitos
 
 - Um servidor [High Grade](https://www.ovhcloud.com/pt/bare-metal/high-grade/) ou [SCALE](https://www.ovhcloud.com/pt/bare-metal/scale/)
-- Ter acesso à [Área de Cliente OVHcloud](/links/manager)
+
+<!-- CP-NAV-START:baremetal-dedicated-servers -->
+---
+
+### Acesso à Área de Cliente OVHcloud
+
+- **Link direto:** [Servidores dedicados](/links/control-panel/baremetal-dedicated-servers)
+- **Caminho de navegação:** `Bare Metal Cloud`{.action} > `Servidores dedicados`{.action} > Selecione o seu servidor
+
+---
+<!-- CP-NAV-END:baremetal-dedicated-servers -->
 
 ## Instruções
-
-Aceda à [Área de Cliente OVHcloud](/links/manager).
-
-Na secção `Bare Metal Cloud`{.action}, seleccione o seu servidor em **Dedicated Servers**.
 
 ### Aumentar a RAM
 
@@ -36,19 +42,19 @@ No separador `Hardware`{.action}, clique em `Aumentar a RAM`{.action}.
 
 No próximo separador, selecione a opção de RAM desejada e clique em `Encomendar`{.action}.
 
-![storage option](images/selectram.png){.thumbnail}
+![Selecionar a opção de RAM desejada e clicar em Encomendar](images/selectram.png){.thumbnail}
 
 Uma vez a encomenda paga, será enviado um e-mail de confirmação à sua conta com uma ligação para planificar a intervenção para a atualização da RAM.
 
 Clique no link presente no e-mail e será reencaminhado para o painel de controlo do servidor dedicado. Desta vez, clique em `Planear a sua intervenção`{.action}.
 
-![schedule intervenção](images/ramintervention.png){.thumbnail}
+![Botão Planificar a sua intervenção para o upgrade de RAM](images/ramintervention.png){.thumbnail}
 
 Marque a caixa em `Efetuou um backup dos seus dados?`{.action} e selecione a data e a hora entre as faixas horárias propostas. Tenha em conta que a intervenção dos técnicos dos nossos datacenters requer um período de preparação. A primeira data de disponibilidade é definida após um período mínimo de 10 dias.
 
 A seguir, clique em `Confirmar`{.action}.
 
-![confirm intervenção](images/ramconfirm.png){.thumbnail}
+![Confirmar a data e a hora da intervenção para o upgrade de RAM](images/ramconfirm.png){.thumbnail}
 
 Receberá um e-mail a confirmar a data e a hora da intervenção.
 
@@ -60,19 +66,19 @@ No separador `Hardware`{.action}, clique em `Aumentar o armazenamento`{.action}.
 
 No próximo separador, selecione a opção de armazenamento desejada e clique em `Encomendar`{.action}.
 
-![opção de armazenamento](images/selectstorage.png){.thumbnail}
+![Selecionar a opção de armazenamento desejada e clicar em Encomendar](images/selectstorage.png){.thumbnail}
 
 Após o pagamento da encomenda, será enviado um e-mail de confirmação à sua conta com uma ligação para programar a intervenção para a atualização do armazenamento.
 
 Clique no link presente no e-mail e será reencaminhado para o painel de controlo do servidor dedicado. Desta vez, clique em ‘Planear a intervenção`{.action}.
 
-![schedule intervenção](images/storageintervention.png){.thumbnail}
+![Botão Planificar a sua intervenção para o upgrade de armazenamento](images/storageintervention.png){.thumbnail}
 
 Marque a caixa em `Efetuou um backup dos seus dados?`{.action} e selecione a data e a hora entre as faixas horárias propostas. Tenha em conta que a intervenção dos técnicos dos nossos datacenters requer um período de preparação. A primeira data de disponibilidade é definida após um período mínimo de 10 dias.
 
 A seguir, clique em `Confirmar`{.action}.
 
-![confirm intervenção](images/confirmintervention.png){.thumbnail}
+![Confirmar a data e a hora da intervenção para o upgrade de armazenamento](images/confirmintervention.png){.thumbnail}
 
 Receberá um e-mail a confirmar a data e a hora da intervenção.
 

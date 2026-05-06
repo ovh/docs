@@ -1,7 +1,7 @@
 ---
-title:  Mover una Additional IP
-excerpt: Cómo mover una Additional IP desde el área de cliente o a través de la API de OVHcloud
-updated: 2026-01-06
+title: "Mover una Additional IP en un servidor dedicado"
+excerpt: "Mueva una dirección Additional IP entre servidores dedicados a través del área de cliente de OVHcloud o la API"
+updated: 2026-01-21
 ---
 
 > [!primary]
@@ -28,13 +28,23 @@ Esta tecnología le permite mover las direcciones IP de un servidor a otro en me
 > Los bloques de IPs se tienen que mover en bloque. No es posible dividir un bloque o mover las IPs de un bloque a distintos servidores.
 >
 
-**Cómo mover una Additional IP desde el área de cliente de OVHcloud o a través de la API de OVHcloud**
+**Descubra cómo trasladar una Additional IP desde su espacio de cliente OVHcloud o a través de las API de OVHcloud. Descubra también cómo trasladar una Additional IP de una cuenta So you Start a una cuenta OVHcloud.**
 
 ## Requisitos
 
 - Tener un [servidor dedicado](/links/bare-metal/bare-metal) en el área de cliente de OVHcloud.
 - Tener una [dirección Additional IP](/links/network/additional-ip).
-- Haber iniciado sesión en el [área de cliente de OVHcloud](/links/manager).
+
+<!-- CP-NAV-START:network-public-ip -->
+---
+
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [Public IP](/links/control-panel/network-public-ip)
+- **Ruta de navegación:** `Network`{.action} > `IP pública`{.action}
+
+---
+<!-- CP-NAV-END:network-public-ip -->
 
 > [!warning]
 > Esta funcionalidad puede no estar disponible o estar limitada en los [servidores dedicados **Eco**](/links/bare-metal/eco-about).
@@ -64,13 +74,11 @@ La geolocalización de una dirección IP es independiente de su región de conex
 
 Si contrata un bloque de IP adicional en un servidor, pero elige una localización diferente (geolocalización) para el bloque de IP, dicho bloque no podrá trasladarse a otro servidor situado en el mismo país que dicho bloque. Por ejemplo, un bloque adicional de IP geolocalizado en Polonia (eu-central-war) y contratado en un servidor situado en un datacenter de Francia (eu-west-gra) no puede transferirse a un servidor situado en un datacenter de Polonia (eu-central-war). El bloque de IP solo puede moverse hacia un servidor elegible situado en un datacenter de Francia.
 
-### Migrar una IP desde el área de cliente de OVHcloud
+### Migrar una Additional IP desde el área de cliente de OVHcloud
 
 > [!warning]
 > Sólo se podrá trasladar un bloque de tamaño único (/32) de un servidor dedicado a un VPS.
 >
-
-Conéctese a su [área de cliente de OVHcloud](/links/manager), haga clic en `Network`{.action} en el menú situado a la izquierda de la pantalla y seleccione `Direcciones IP públicas`{.action}.
 
 Puede utilizar el menú desplegable en **Mis direcciones IP públicas y servicios asociados** y seleccionar `Todas las Additional IP`{.action} para filtrar sus servicios, o escribir directamente la dirección IP deseada en la barra de búsqueda.
 
@@ -78,13 +86,13 @@ Puede utilizar el menú desplegable en **Mis direcciones IP públicas y servicio
 
 Haga clic en el botón `⁝`{.action} situado a la derecha de la dirección IP que desea mover y, a continuación, en `Trasladar Additional IP`{.action}.
 
-![área de cliente](images/move_ip_1_new.png){.thumbnail}
+![Menú contextual para mover una Additional IP](images/move_ip_1_new.png){.thumbnail}
 
 En el menú contextual que aparece, seleccione el servicio al que desea mover la dirección IP.
 
 Haga clic en `Siguiente`{.action} y, seguidamente, en `Confirmar`{.action}.
 
-![área de cliente](images/move_ip_2_new.png){.thumbnail}
+![Seleccionar el servicio de destino para la Additional IP](images/move_ip_2_new.png){.thumbnail}
 
 > [!warning]
 > Tenga en cuenta que, para algunos productos, las direcciones IP (o bloques) deben trasladarse primero a un **aparcamiento de IP** (una ubicación de almacenamiento temporal) antes de poder trasladarse al producto deseado.
@@ -92,7 +100,7 @@ Haga clic en `Siguiente`{.action} y, seguidamente, en `Confirmar`{.action}.
 > Para mover bloques IP a una red vRack específica, utilice **la interfaz de gestión vRack**, a la que puede acceder haciendo clic en `Network`{.action} en el menú situado a la izquierda de la pantalla y, a continuación, en `Red privada vRack`{.action}.
 >
 
-### Mover una IP a través de las API
+### Mover una Additional IP a través de las API
 
 Conéctese a la página web de las [API de OVHcloud](/links/api).
 
@@ -116,6 +124,61 @@ Para mover la dirección IP, utilice la siguiente llamada:
 
 - `serviceName`: la referencia del servidor dedicado de destino
 - `ip`: la dirección Additional IP a mover
+
+### Mover una Additional IP de una cuenta So you Start a una cuenta OVHcloud
+
+Para mover una Additional IP de una cuenta SYS a una cuenta OVHcloud, debe tener en cuenta varios aspectos:
+
+- El movimiento de una Additional IP conlleva gastos de instalación. La dirección IP no se moverá si la factura sigue pendiente de pago.
+- No es posible mover una Additional IP de una cuenta OVHcloud a una cuenta So you Start.
+- Asegúrese de que el servidor al que transfiere la dirección Additional IP se encuentra en la misma región compatible que esta. Consulte la sección «Restricciones» más abajo.
+
+Para empezar, inicie sesión en su cuenta So you Start y haga clic en `IP`{.action} en el panel de control principal.
+
+![Sección IP So you Start en el panel de control](images/sys-ip-section.png){.thumbnail}
+
+Haga clic en el botón de configuración (con forma de engranaje `⚙`{.action}) junto a la dirección IP correspondiente y seleccione `Mover la IP Failover`{.action}.
+
+![Opción Mover la IP failover en el menú So you Start](images/move-ip-sys.png){.thumbnail}
+
+Seleccione `Mover a un servicio OVH`{.action}, introduzca su identificador de cliente OVHcloud y haga clic en `Siguiente`{.action}.
+
+![Seleccionar Mover hacia un servicio OVH e introducir el NIC handle](images/move-to-ovh.png){.thumbnail}
+
+Esto generará un código (token). Guárdelo.
+
+![Código token generado para la transferencia de IP](images/token-id.png){.thumbnail}
+
+A continuación, [inicie sesión en su cuenta OVHcloud](/links/manager), haga clic en `Network`{.action} en el menú situado a la izquierda de la pantalla y seleccione `Direcciones IP públicas`{.action}.
+
+Haga clic en el botón de configuración (con forma de engranaje `⚙`{.action}) a la derecha y seleccione `Importar mis direcciones IP de SyS a OVHcloud`{.action}.
+
+![Opción Importar direcciones IP de SyS a OVHcloud](images/import-ip-to-ovh.png){.thumbnail}
+
+Aparecerá una ventana emergente, introduzca la dirección Additional IP (o el bloque) y el código recuperado en la cuenta So you Start en el campo `Token`. A continuación, haga clic en `Siguiente`{.action}.
+
+![Introducir la Additional IP y el token para la importación](images/Step-1.png){.thumbnail}
+
+Seleccione el servidor de destino y haga clic en `Siguiente`{.action}. Si el servidor dedicado es compatible con la dirección IP, aparecerá un mensaje verde. De lo contrario, recibirá un mensaje de error.
+
+![Seleccionar el servidor de destino con verificación de compatibilidad](images/Step-2.png){.thumbnail}<br>
+![Mensaje de confirmación de compatibilidad del servidor](images/Step-2.1.png){.thumbnail}
+
+En la siguiente ventana, la duración se selecciona automáticamente y se muestran los gastos. Haga clic en `Siguiente`{.action} para continuar.
+
+![Resumen de la duración y los gastos para la transferencia de IP](images/Step-3.png){.thumbnail}
+
+Marque la casilla `Aceptar los contratos`{.action} para aceptar las condiciones de uso después de haberlas leído. A continuación, haga clic en `Siguiente`{.action}.
+
+![Casilla de aceptación de los contratos para la transferencia de IP](images/Step-4.png){.thumbnail}
+
+Tome nota del resumen del pedido y haga clic en `Confirmar`{.action} para validarlo.
+
+![Resumen y confirmación del pedido para la transferencia de IP](images/Step-5.png){.thumbnail}
+
+Se le redirigirá a una nueva página para realizar el pago.
+
+Una vez realizado el pago, su Additional IP se transferirá a su cuenta OVHcloud y se asociará al servidor seleccionado. Este proceso puede tardar algún tiempo.
 
 ### Restricciones <a name="limitations"></a>
 

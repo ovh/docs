@@ -1,6 +1,6 @@
 ---
-title: 'Assegnare un MAC virtuale a un Additional IP'
-excerpt: 'Scopri come aggiungere un indirizzo MAC virtuale e come associarlo a un Additional IP'
+title: "Assegnare un MAC virtuale su un server dedicato"
+excerpt: "Crea un indirizzo MAC virtuale e associalo a un Additional IP per una rete VM trasparente sui tuoi server dedicati"
 updated: 2025-05-16
 ---
 
@@ -12,10 +12,19 @@ OVHcloud ti permette di associare un indirizzo MAC virtuale a un indirizzo IP al
 
 ## Prerequisiti
 
-- Possedere un [server dedicato](/links/bare-metal/bare-metal)
+- Disporre di [un server dedicato](/links/bare-metal/bare-metal) che supporta i MAC virtuali. Per determinarlo, consulta [questa guida](/pages/bare_metal_cloud/dedicated_servers/network_support_virtual_mac).
 - Disporre di un [indirizzo Additional IP](/links/network/additional-ip) o di un blocco Additional IP (RIPE)
-- Essere connesso allo [Spazio Cliente OVHcloud](/links/manager) o all'[API OVHcloud](/links/api)
-- Il tuo server deve supportare i MAC virtuali. Consulta [questa guida](/pages/bare_metal_cloud/dedicated_servers/network_support_virtual_mac) per determinarlo
+
+<!-- CP-NAV-START:network-public-ip -->
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [Public IP](/links/control-panel/network-public-ip)
+- **Percorso di navigazione:** `Network`{.action} > `Indirizzi IP pubblici`{.action}
+
+---
+<!-- CP-NAV-END:network-public-ip -->
 
 > [!warning]
 > - Questa funzionalità può non essere disponibile o limitata sui [server dedicati **Eco**](/links/bare-metal/eco-about). Per maggiori informazioni, consulta la nostra [a confronto](/links/bare-metal/eco-compare).
@@ -37,8 +46,6 @@ OVHcloud ti permette di associare un indirizzo MAC virtuale a un indirizzo IP al
 >
 
 #### Tramite lo Spazio Cliente OVHcloud
-
-Accedi allo [Spazio Cliente OVHcloud](/links/manager), clicca su `Network`{.action} nel menu a sinistra dello schermo e poi su `Indirizzi IP Pubblici`{.action}.
 
 Clicca sulla scheda `Additional IP`{.action}.
 

@@ -1,5 +1,6 @@
 ---
-title: Envoyer des SMS permettant la réponse
+title: "Envoyer des SMS permettant la réponse"
+excerpt: "Découvrez comment envoyer des SMS avec réponse depuis votre espace client OVHcloud et gérer les options de réception des réponses"
 updated: 2023-12-29
 ---
 
@@ -19,8 +20,18 @@ L'expéditeur du SMS réponse sera un numéro court aléatoire. Son utilisation 
 
 ## Prérequis
 
-- Disposer d’un compte SMS OVHcloud crédité.
-- Être connecté à l'[espace client OVHcloud](/links/manager-telecom), partie `Télécom`{.action} puis `SMS`{.action}.
+- Disposer d'un compte SMS OVHcloud crédité.
+
+<!-- CP-NAV-START:telecom-sms -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [SMS](/links/control-panel/telecom-sms)
+- **Pour accéder à vos services :** `Télécom`{.action} > `SMS`{.action} > Sélectionnez votre compte SMS
+
+---
+<!-- CP-NAV-END:telecom-sms -->
 
 ![espace client Telecom SMS](/pages/assets/screens/control_panel/product-selection/telecom/tpl-telecom-03-fr-sms.png){.thumbnail}
 
@@ -46,9 +57,8 @@ La réponse (si vous l'activez) peut être ensuite :
 
 ### Gérer les options des réponses
 
+<!-- CP-STEPS-START:gerer-options-reponses -->
 Avant d'envoyer votre SMS réponse, nous vous conseillons de configurer les options de réception des réponses.
-
-Connectez-vous à votre [espace client](/links/manager) puis sélectionnez `Télécom`{.action}. Cliquez ensuite sur `SMS`{.action} et choisissez votre compte SMS.
 
 Dans la barre d'onglets, cliquez sur `Options`{.action} puis sur `Options des réponses`{.action}.
 
@@ -87,33 +97,38 @@ Configurez alors une notification par e-mail ou par SMS.
 
 - Notification par e-mail
     - Expéditeur : renseignez obligatoirement une adresse e-mail valide vous appartenant.
-    - Adresse e-mail: renseignez l'adresse e-mail destinataire de la notification.
+    - Adresse e-mail : renseignez l'adresse e-mail destinataire de la notification.
 
 - Notification par SMS
     - Expéditeur : choisissez un expéditeur parmi ceux déjà validés dans votre compte SMS.
     - Numéro : entrez le numéro du destinataire de la notification au **format international**.
 
 Une fois votre notification configurée, cliquez sur le bouton `Valider`{.action}. Vous pouvez ajouter plusieurs notifications, les éditer ou les supprimer.
+<!-- CP-STEPS-END:gerer-options-reponses -->
 
 ### Envoyer un SMS réponse
 
+<!-- CP-STEPS-START:envoyer-sms-reponse -->
 Dans l'espace client, sélectionnez l'onglet `Accueil`{.action} de votre compte SMS. Cliquez ensuite sur `Envoyer un SMS`{.action}.
 
 ![envoi SMS](images/SMSreponse-envoi.png){.thumbnail}
 
-Assurez-vous que votre expéditeur est bien le `Numéro permettant la réponse (France uniquement`.
+Assurez-vous que votre expéditeur est bien le `Numéro permettant la réponse (France uniquement)`.
 
 ![envoi SMS](images/SMSreponse-expediteur.png){.thumbnail}
 
 Complétez ensuite les champs dédiés au(x) destinataire(s) et à votre message. Pour plus de détails, consultez [notre guide sur l'envoi de SMS depuis l'espace client](/pages/web_cloud/messaging/sms/envoyer_des_sms_depuis_mon_espace_client).
+<!-- CP-STEPS-END:envoyer-sms-reponse -->
 
 ### Consulter les réponses
 
+<!-- CP-STEPS-START:consulter-reponses -->
 Dans l'espace client, cliquez sur l'onglet `Message et campagne`{.action} de votre compte SMS. Cliquez ensuite sur `SMS reçus`{.action}.
 
 ![SMS reçus](images/SMSreponse-recus.png){.thumbnail}
 
 Un tableau liste tous les SMS reçus en réponse de vos envois. Vous pouvez trier ces SMS en cliquant sur les en-têtes des colonnes du tableau.
+<!-- CP-STEPS-END:consulter-reponses -->
 
 ## Aller plus loin
 

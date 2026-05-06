@@ -93,9 +93,7 @@ Várias soluções estão à sua disposição para proteger a sua conta, tais co
 - a adição de uma [autenticação em dois fatores](/pages/account_and_service_management/account_information/secure-ovhcloud-account-with-2fa);
 - a configuração de uma [restrição por IP](/pages/account_and_service_management/account_information/ovhcloud-control-panel-ip-restriction).
 
-Para aceder a todas estas opções, ligue-se ao seu [Área de Cliente OVHcloud](/links/manager), clique no seu nome no canto superior direito, depois em `A minha Conta`{.action}.
-
-Clique no separador `Segurança`{.action} para as visualizar.
+Na página [Segurança](/links/control-panel/account-security) pode visualizá-las.
 
 ///
 
@@ -114,9 +112,7 @@ Para todos estes casos, consulte [esta documentação](/pages/account_and_servic
 
 /// details | Como modificar a palavra-passe da minha conta OVHcloud?
 
-Ligue-se ao seu [Área de Cliente OVHcloud](/links/manager), clique no seu nome no canto superior direito, depois em `A minha Conta`{.action}.
-
-Clique no separador `Segurança`{.action}, depois no botão `Alterar`{.action} situado à direita da menção **Palavra-passe**. Pode então modificar a sua palavra-passe atual. Uma mensagem de segurança aparece para lhe informar que está prestes a efetuar uma mudança de palavra-passe. Após a sua confirmação, vai receber (no endereço de correio eletrónico principal indicado na conta) um e-mail contendo a procedimento a seguir. 
+Na página [Segurança](/links/control-panel/account-security), clique no botão `Alterar`{.action} situado à direita da menção **Palavra-passe**. Pode então modificar a sua palavra-passe atual. Uma mensagem de segurança aparece para lhe informar que está prestes a efetuar uma mudança de palavra-passe. Após a sua confirmação, vai receber (no endereço de correio eletrónico principal indicado na conta) um e-mail contendo a procedimento a seguir. 
 
 Encontre mais informações no nosso guia "[Modificar a palavra-passe da sua conta](/pages/account_and_service_management/account_information/manage-ovh-password)".
 
@@ -172,9 +168,7 @@ Consulte a parte "[Que fazer se um dos meus dispositivos foi perdido/roubado ou 
 
 /// details | Como modificar as minhas informações pessoais?
 
-Para visualizar ou modificar as suas coordenadas, ligue-se ao seu [Área de Cliente OVHcloud](/links/manager), clique no seu nome no canto superior direito, depois em `A minha Conta`{.action}.
-
-Clique então em `Editar o meu perfil`{.action}, no quadro `O meu perfil`.
+Para visualizar ou modificar as suas coordenadas, abra a página [O meu perfil](/links/control-panel/account-profile).
 
 > [!success]
 > **Deseja modificar o endereço de correio eletrónico da sua conta OVHcloud?**
@@ -186,7 +180,7 @@ Clique então em `Editar o meu perfil`{.action}, no quadro `O meu perfil`.
 
 /// details | Como aceder aos contratos e condições gerais de serviço?
 
-Pode encontrar os contratos dos seus serviços OVHcloud diretamente no seu [Área de Cliente OVHcloud](/links/manager). Uma vez ligado, dirija-se ao menu `Minha conta`{.action} depois clique em `Ver os meus contratos`{.action}.
+Pode encontrar os contratos dos seus serviços OVHcloud diretamente na página [Lista de contratos](/links/control-panel/billing-contracts).
 
 Também pode consultar os contratos no nosso site, através [deste link](/links/terms-conditions-contracts).
 
@@ -286,7 +280,7 @@ Todos os nossos e-mails respeitam os nossos padrões de segurança (SPF, DKIM, D
 **Em caso de dúvida sobre a autenticidade de um e-mail**:
 
 - Saiba que nunca lhe pediremos uma palavra-passe ou coordenadas bancárias por e-mail.
-- Em primeiro lugar, verifique se o e-mail que recebeu também está visível na sua [área de cliente OVHcloud](/links/manager). Faça login, clique no seu nome no canto superior direito e em seguida em `E-mails de serviço`{.action} (ou `As minhas comunicações`{.action}). Ali encontrará cópias dos e-mails oficiais enviados pela OVHcloud.
+- Em primeiro lugar, verifique se o e-mail que recebeu também está visível na página [As minhas mensagens](/links/control-panel/account-messages). Ali encontrará cópias dos e-mails oficiais enviados pela OVHcloud.
 - Consulte também o nosso guia « [Phishing - Como reconhecer e-mails ou SMS fraudulentos?](/pages/account_and_service_management/account_information/phishing_care) ».
 
 ///
@@ -331,7 +325,7 @@ Substitua `{logId}` pelo identificador real do registo que deseja consultar. Ist
 
 /// details | Como delegar o acesso aos meus serviços a outras pessoas?
 
-Tem a possibilidade de delegar a gestão administrativa, técnica e faturação dos seus serviços a outros contos clientes OVHcloud a partir do seu Área de Cliente OVHcloud. Para isso, inicie sessão no seu [Área de Cliente OVHcloud](/links/manager), clique no seu nome no canto superior direito e, em seguida, em `Contactos`{.action}.
+Tem a possibilidade de delegar a gestão administrativa, técnica e faturação dos seus serviços a outros contos clientes OVHcloud a partir do seu Área de Cliente OVHcloud. Para isso, abra a página [Os meus contactos](/links/control-panel/account-contacts).
 
 A delegação de serviço terá de ser validada por e-mail tanto pelo administrador do serviço como pelo novo contacto.
 
@@ -346,7 +340,7 @@ Se desejar recuperar um nome de domínio de que é o proprietário registado jun
 
 /// details | Como configurar ou modificar um contacto de faturação?
 
-Inicie sessão no seu [Área de Cliente OVHcloud](/links/manager), clique no seu nome no canto superior direito e, em seguida, em `Contactos`{.action}.
+Abra a página [Os meus contactos](/links/control-panel/account-contacts).
 
 > [!success]
 > Se desejar saber mais sobre a gestão de contactos, convidamo-lo a consultar este guia detalhado: "[Gerir os contactos dos seus serviços](/pages/account_and_service_management/account_information/managing_contacts)".

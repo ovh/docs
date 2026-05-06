@@ -1,7 +1,7 @@
 ---
 title: Using a custom gateway on an OVHcloud Managed Kubernetes cluster
 excerpt: Find out how to use a custom gateway on an OVHcloud Managed Kubernetes working with vRack private network.
-updated: 2025-01-06
+updated: 2026-02-25
 ---
 
 ## Objectives
@@ -37,6 +37,17 @@ At the end of this tutorial you should have the following flow:
 - Being familiar with the [OVHcloud API](/pages/manage_and_operate/api/first-steps).
 - Being familiar with [Terraform](/pages/public_cloud/public_cloud_cross_functional/how_to_use_terraform) if you wish to use it.
 - The JSON parser tool [jq](https://stedolan.github.io/jq/) installed.
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Navigation path:** `Public Cloud`{.action} > Select your project
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## Initialization
 
@@ -319,7 +330,7 @@ Now the network is ready. Create an OVHcloud Managed Kubernetes cluster, specify
 > Note: until the end of this tutorial, we are only using the `GRA9` region, but you can repeat the exact same steps to create a cluster on the `GRA11` region.
 
 > [!primary]
-> In this guide we defined `1.23` version for the Kubernetes cluster but you can use another supported version.
+> In this guide we defined `1.34` version for the Kubernetes cluster but you can use another supported version.
 >
 
 First, get the private network IDs (pvnwGRA9Id & pvnwGRA11Id), then create the OVHcloud Managed Kubernetes Cluster, and finally get the cluster ID (kubeId):
@@ -332,7 +343,7 @@ First, get the private network IDs (pvnwGRA9Id & pvnwGRA11Id), then create the O
 >> {
 >> "region": "GRA9",
 >> "name": "demo",
->> "version": "1.23",
+>> "version": "1.34",
 >> "nodepool": {
 >>   "flavorName": "b2-7",
 >>   "antiAffinity": false,
@@ -369,7 +380,7 @@ First, get the private network IDs (pvnwGRA9Id & pvnwGRA11Id), then create the O
 >> {
 >>   "region": "GRA9",
 >>   "name": "demo",
->>   "version": "1.23",
+>>   "version": "1.34",
 >>   "nodepool": {
 >>     "flavorName": "b2-7",
 >>     "antiAffinity": false,
@@ -396,7 +407,6 @@ First, get the private network IDs (pvnwGRA9Id & pvnwGRA11Id), then create the O
 >> > 
 >> > @api {v1} /cloud GET /cloud/project/{serviceName}/kube
 > OVHcloud Control Panel
->> Log in to the [OVHcloud Control Panel](/links/manager), go to the `Public Cloud`{.action} section and select the Public Cloud project concerned.
 >> 
 >> Access the administration UI for your OVHcloud Managed Kubernetes clusters by clicking on `Managed Kubernetes Service`{.action} in the left-hand menu:
 >> 
@@ -444,8 +454,6 @@ Now wait until your OVHcloud Managed Kubernetes cluster is READY.
 
 For that, you can check its status in the OVHcloud Control Panel:
 
-Log in to the [OVHcloud Control Panel](/links/manager), go to the `Public Cloud`{.action} section and select the Public Cloud project concerned.
-
 Access the administration UI for your OVHcloud Managed Kubernetes clusters by clicking on `Managed Kubernetes Service`{.action} in the left-hand menu:
 
 ![Create a cluster](images/clusters.png){.thumbnail}
@@ -487,9 +495,9 @@ You should obtain a result like this:
 ```console
 $ kubectl --kubeconfig=kubeconfig-demo get no -o wide
 NAME                                         STATUS   ROLES    AGE   VERSION   INTERNAL-IP    EXTERNAL-IP      OS-IMAGE             KERNEL-VERSION       CONTAINER-RUNTIME
-nodepool-8f0b4d98-874a-4cfd-b8-node-c74f26   Ready    <none>   56m   v1.23.6   192.168.0.71   141.94.215.23    Ubuntu 18.04.6 LTS   4.15.0-189-generic   containerd://1.4.6
-nodepool-8f0b4d98-874a-4cfd-b8-node-c9bf60   Ready    <none>   57m   v1.23.6   192.168.0.96   141.94.208.78    Ubuntu 18.04.6 LTS   4.15.0-189-generic   containerd://1.4.6
-nodepool-8f0b4d98-874a-4cfd-b8-node-e666f5   Ready    <none>   56m   v1.23.6   192.168.0.31   141.94.212.214   Ubuntu 18.04.6 LTS   4.15.0-189-generic   containerd://1.4.6
+nodepool-8f0b4d98-874a-4cfd-b8-node-c74f26   Ready    <none>   56m   v1.34.0   192.168.0.71   141.94.215.23    Ubuntu 18.04.6 LTS   4.15.0-189-generic   containerd://1.4.6
+nodepool-8f0b4d98-874a-4cfd-b8-node-c9bf60   Ready    <none>   57m   v1.34.0   192.168.0.96   141.94.208.78    Ubuntu 18.04.6 LTS   4.15.0-189-generic   containerd://1.4.6
+nodepool-8f0b4d98-874a-4cfd-b8-node-e666f5   Ready    <none>   56m   v1.34.0   192.168.0.31   141.94.212.214   Ubuntu 18.04.6 LTS   4.15.0-189-generic   containerd://1.4.6
 ```
 
 Now test the cluster by running a simple container that requests its published IP address.

@@ -1,7 +1,7 @@
 ---
 title: 'Exchange - E-Mail-Account in Thunderbird für macOS konfigurieren'
 excerpt: 'Erfahren Sie, wie Sie Ihre Exchange E-Mail-Adresse in Thunderbird für macOS konfigurieren'
-updated: 2025-09-19
+updated: 2026-03-24
 ---
 
 <style>
@@ -33,9 +33,20 @@ Exchange Accounts können auf verschiedenen kompatiblen E-Mail-Clients eingerich
 - Thunderbird ist auf Ihrem Mac-System installiert.
 - Sie verfügen über Anmeldeinformationen für den E-Mail-Account, die Sie konfigurieren möchten.
 
+<!-- CP-NAV-START:web-exchange -->
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direkter Link:** [Exchange](/links/control-panel/web-exchange)
+- **Navigationspfad:** `Web Cloud`{.action} > `Exchange`{.action} > Wählen Sie Ihre Plattform aus
+
+---
+<!-- CP-NAV-END:web-exchange -->
+
 /// details | Informationen zur Verwaltung und Konfiguration von OVHcloud Diensten
 
-In dieser Anleitung erläutern wir die Verwendung einer oder mehrerer OVHcloud Lösungen mit externen Tools. Die durchgeführten Aktionen werden in einem bestimmten Kontext beschrieben. Denken Sie daran, diese an Ihre Situation anzupassen.  
+In dieser Anleitung erläutern wir die Verwendung einer oder mehrerer OVHcloud Lösungen mit externen Tools. Die durchgeführten Aktionen werden in einem bestimmten Kontext beschrieben. Denken Sie daran, diese an Ihre Situation anzupassen.
 Wir empfehlen, sich bei Schwierigkeiten an einen [spezialisierten Dienstleister](/links/partner) zu wenden, oder Ihre Fragen in der OVHcloud Community zu stellen. OVHcloud kann keine technische Unterstützung für die Nutzung externer Tools anbieten.
 
 Weitere Informationen finden Sie am [Ende dieser Anleitung](#gofurther).
@@ -48,11 +59,7 @@ Weitere Informationen finden Sie am [Ende dieser Anleitung](#gofurther).
 >
 > In dieser Anleitung verwenden wir den Servernamen: ex?.mail.ovh.net. Das "?" muss mit der jeweils passenden Nummer Ihres zuständigen Servers für den einzurichtenden Exchange Dienst ersetzt werden.
 >
-> 1. Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein.
-> 1. Öffnen Sie den Bereich `Web Cloud`{.action}.
-> 1. In der Rubrik `MICROSOFT`{.action}, klicken Sie auf `Exchange`{.action}.
-> 1. Wählen Sie den gewünschten Dienst aus.
-> 1. Der Servername wird im Kasten **Verbindung** auf der Seite `Allgemeine Informationen`{.action} angezeigt.
+> Klicken Sie auf [diesen Link](/links/control-panel/web-exchange), um auf den Bereich `Exchange`{.action} zuzugreifen. Der Servername wird im Bereich **Verbindung** des Tabs `Allgemeine Informationen`{.action} angezeigt.
 
 ### Account hinzufügen
 

@@ -14,7 +14,17 @@ Do zalogowania się do konta OVHcloud możesz użyć **unikalnego** uwierzytelni
 
 - Usługi AD FS (Active Directory Federation Services) muszą być wykonywane na serwerze
 - Posiadanie [konta OVHcloud](/pages/account_and_service_management/account_information/ovhcloud-account-creation)
-- Zalogowanie do [Panelu klienta OVHcloud](/links/manager)
+
+<!-- CP-NAV-START:iam-saml-sso -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [SAML SSO](/links/control-panel/iam-saml-sso)
+- **Ścieżka nawigacji:** `Tożsamość, bezpieczeństwo i operacje`{.action} > `Users`{.action} > `SSO connection`{.action}
+
+---
+<!-- CP-NAV-END:iam-saml-sso -->
 
 ## W praktyce
 
@@ -121,15 +131,9 @@ Po utworzeniu tabeli korelacji Twoja usługa AD FS stała się zaufana OVHcloud 
 
 Opcja dodawania AD FS jako zaufanego dostawcy danych jest dostępna w [panelu klienta OVHcloud](/links/manager), w którym możesz dostarczyć metadane dostawcy tożsamości.
 
-Na pasku bocznym kliknij `Tożsamość, bezpieczeństwo i operacje`{.action} a następnie `Tożsamości`{.action}.
+Otwórz stronę [SAML SSO](/links/control-panel/iam-saml-sso).
 
-![Dostęp do menu IAM](images/access_to_the_IAM_menu_01.png){.thumbnail}
-
-Następnie kliknij zakładkę `SSO`{.action} i kliknij przycisk `Logowanie SSO`{.action}.
-
-![Dostęp do menu IAM](images/access_to_the_IAM_menu_03.png){.thumbnail}
-
-Wpisz metadane XML Twojej usługi AD FS. W tym przypadku pole `Nazwa atrybutu grupy` jest opcjonalne. Kliknij na `Zatwierdź`{.action}.
+W sekcji `SSO connection`{.action} wpisz metadane XML Twojej usługi AD FS. W tym przypadku pole `Nazwa atrybutu grupy` jest opcjonalne. Kliknij na `Zatwierdź`{.action}.
 
 Użytkowników lokalnych można zachować, zaznaczając pole `Zachowaj status „aktywny” dla użytkowników OVHcloud`.
 

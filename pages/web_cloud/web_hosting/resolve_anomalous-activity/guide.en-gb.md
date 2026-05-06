@@ -1,7 +1,7 @@
 ---
 title: "How to react to abnormal activity detected on your web hosting"
 excerpt: "Find out which steps to follow when suspicious activity is detected on your OVHcloud web hosting"
-updated: 2025-10-02
+updated: 2026-04-01
 ---
 
 ## Objective
@@ -13,7 +13,17 @@ This guide explains the possible reasons why you might be notified about **abnor
 ## Requirements
 
 - An [OVHcloud web hosting](/links/web/hosting)
-- Access to the [OVHcloud Control Panel](/links/manager)
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Hosting plans](/links/control-panel/web-hosting)
+- **Navigation path:** `Web Cloud`{.action} > `Hosting plans`{.action} > Select your web hosting plan
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## Instructions
 
@@ -72,11 +82,27 @@ Your website is making numerous external connections (APIs, updates, HTTP calls,
 >
 > Perform this step **only after applying the recommendations above** (diagnosis, corrections/updates, security hardening). If abnormal activity is detected again during a subsequent scan, **security measures will be automatically reactivated**. You will receive a new notification, and the blocks will remain in place until the **situation is permanently resolved**.
 
-1. Log in to your [OVHcloud Control Panel](/links/manager), go to `Web Cloud`{.action}, then click on your web hosting.
-2. An **alert window** appears: `Abnormal Activity on Your Hosting`. If you click the `Later`{.action} button, an **alert banner** `Abnormal Activity Detected` appears at the top of the page. Click `Learn More`{.action} to reopen the alert window.
-3. **Check** the box: `I confirm I have performed all necessary actions to resolve the issue`.
-4. Click `Lift Security Measures`{.action}.
-5. A **confirmation banner** appears at the top of the page: `Your hosting is being analyzed to lift the security measures.` Track progress by clicking the link `View Ongoing Tasks`{.action} or directly from the `Ongoing Tasks`{.action} tab.
+<!-- CP-STEPS-START:lift-security-measures -->
+Click on the tabs below to view each of the **4** steps.
+
+> [!tabs]
+> **Step 1**
+>>
+>> Go to the [Hosting plans](/links/control-panel/web-hosting) page, then select the web hosting plan concerned.
+>>
+> **Step 2**
+>>
+>> An **alert window** appears: `"Abnormal Activity on Your Hosting"`. If you click the `Later`{.action} button, an **alert banner** `"Abnormal Activity Detected"` appears at the top of the page. Click `Learn More`{.action} to reopen the alert window.
+>>
+> **Step 3**
+>>
+>> **Check** the box: `I confirm I have performed all necessary actions to resolve the issue`, then click `Lift Security Measures`{.action}.
+>>
+> **Step 4**
+>>
+>> A **confirmation banner** appears at the top of the page: `Your hosting is being analyzed to lift the security measures.` Track progress by clicking the link `View Ongoing Tasks`{.action} or directly from the `Ongoing Tasks`{.action} tab.
+>>
+<!-- CP-STEPS-END:lift-security-measures -->
 
 > [!warning]
 >

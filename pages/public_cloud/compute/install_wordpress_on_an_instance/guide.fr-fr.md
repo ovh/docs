@@ -16,8 +16,18 @@ Ce tutoriel fournit les étapes de base pour une installation manuelle de WordPr
 
 - Un projet [Public Cloud](/links/public-cloud/public-cloud) dans votre compte OVHcloud
 - Avoir une [instance Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps) avec Debian ou Ubuntu installé
-- Être connecté à votre [espace client OVHcloud](/links/manager)
 - Disposer d’un accès administratif (sudo) à votre instance via SSH
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Accès à l’espace client OVHcloud
+
+- **Lien direct :** [Projets Public Cloud](/links/control-panel/publiccloud-projects)
+- **Pour accéder à vos services :** `Public Cloud`{.action} > Sélectionnez votre projet
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## En pratique
 
@@ -53,12 +63,12 @@ debian@instance:~$ sudo apt install apache2 mariadb-server php libapache2-mod-ph
 
 ### Étape 2 : configuration du serveur de base de données <a name="sqlconf"></a>
 
-MariaDB fournit un script pour vous aider dans la configuration initiale et pour appliquer certains paramètres liés à la sécurité.
+MariaDB [fournit un script](https://mariadb.com/docs/server/clients-and-utilities/deployment-tools/mariadb-secure-installation) pour vous aider dans la configuration initiale et pour appliquer certains paramètres liés à la sécurité.
 
 Pour l'exécuter, entrez la commande suivante :
 
 ```bash
-debian@instance:~$ sudo mysql_secure_installation
+debian@instance:~$ sudo mariadb-secure-installation
 ```
 
 Confirmez la première invite en appuyant sur `Entrée`{.action}.

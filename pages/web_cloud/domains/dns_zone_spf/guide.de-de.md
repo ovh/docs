@@ -1,7 +1,7 @@
 ---
 title: E-Mail-Sicherheit durch SPF-Eintrag verbessern
 excerpt: Erfahren Sie hier, wie Sie einen SPF-Eintrag für Ihre Domain konfigurieren, um die Sicherheit Ihrer E-Mails zu verbessern
-updated: 2024-09-05
+updated: 2026-02-10
 ---
 
 <style>
@@ -59,8 +59,18 @@ Stellen Sie daher sicher, dass Sie die Absenderquellen, die Sie für den Versand
 
 ## Voraussetzungen
 
-- Sie haben über das [OVHcloud Kundencenter](/links/manager)Zugriff auf die Verwaltung der betreffenden Domain.
 - Die ausgewählte Domain muss die OVHcloud-Konfiguration (d. h. die OVHcloud DNS-Server) verwenden.
+
+<!-- CP-NAV-START:web-dns-zone -->
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direkter Link:** [DNS-Zone](/links/control-panel/web-dns-zone)
+- **Navigationspfad:** `Web Cloud`{.action} > `DNS-Zone`{.action} > Wählen Sie Ihren Domainnamen aus
+
+---
+<!-- CP-NAV-END:web-dns-zone -->
 
 > [!warning]
 >
@@ -251,4 +261,4 @@ Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.
 
 Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](/links/support).
 
-Treten Sie unserer [User Community](/links/community) bei.
+Treten Sie unserer [User Community](/links/community) bei.

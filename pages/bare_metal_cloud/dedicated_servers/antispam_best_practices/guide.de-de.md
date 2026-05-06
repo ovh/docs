@@ -1,6 +1,6 @@
 ---
-title: OVHcloud AntiSpam - Best Practices und Entsperren einer IP-Adresse
-excerpt: Erfahren Sie hier unsere AntiSpam-Maßnahmen und wie Sie eine gesperrte IP-Adresse freigeben können
+title: "OVHcloud AntiSpam - Best Practices und IP-Entsperrung"
+excerpt: "Wenden Sie OVHcloud AntiSpam Best Practices an und entsperren Sie eine IP-Adresse Ihres Dedicated Servers, die wegen Spam-Versand markiert wurde."
 updated: 2026-01-06
 ---
 
@@ -11,6 +11,17 @@ Als Anbieter von Internetdiensten registriert und reserviert OVHcloud jegliche I
 Wenn eine IP-Adresse bei Organisationen wie Spamhaus, SpamCop etc., die gegen SPAM, Phishing und dergleichen missbräuchliche Praktiken kämpfen, gemeldet wird, verschlechtert dies den Ruf des gesamten OVHcloud Netzwerks.
 
 OVHcloud muss sich daher beständig um den Ruf, die Qualität und die Sicherheit des Netzwerks kümmern, das auch einen wichtigen Teil Ihrer Dienstleistungen ausmacht.
+
+<!-- CP-NAV-START:network-public-ip -->
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direkter Link:** [Public IP](/links/control-panel/network-public-ip)
+- **Navigationspfad:** `Network`{.action} > `Öffentliche IP`{.action}
+
+---
+<!-- CP-NAV-END:network-public-ip -->
 
 ### Wie funktioniert das Schutzsystem?
 
@@ -61,8 +72,6 @@ Wenn das Problem gelöst ist, können Sie Ihre IP-Adresse entsperren, indem Sie 
 ### Ihre IP-Adresse entsperren
 
 #### Ihre IP-Adresse über das Kundencenter entsperren
-
-Loggen Sie sich im [OVHcloud Kundencenter](/links/manager) ein, öffnen Sie das Menü `Network`{.action} in der linken Seitenleiste und klicken Sie auf `Öffentliche IP-Adressen`{.action}.
 
 Sie können das Dropdown-Menü unter **Meine öffentlichen IP-Adressen und dazugehörigen Dienste** verwenden, um Ihre Dienste nach Kategorie zu filtern, oder direkt die gewünschte IP-Adresse in die Suchleiste eingeben.
 
@@ -281,4 +290,6 @@ Sobald die Informationen gesendet wurden, wird unser Support mit Vade Secure kom
 
 ## Weiterführende Informationen
  
+- [Dedicated Server absichern](/pages/bare_metal_cloud/dedicated_servers/securing-a-dedicated-server)
+
 Treten Sie unserer [User Community](/links/community) bei.

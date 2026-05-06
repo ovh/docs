@@ -1,5 +1,5 @@
 ---
-title: Valkey - Connect with PHP
+title: Connect using PHP for Public Cloud Databases for Valkey
 excerpt: Connect to your Public Cloud Databases for Valkey using the PHP programming language
 updated: 2024-06-12
 ---

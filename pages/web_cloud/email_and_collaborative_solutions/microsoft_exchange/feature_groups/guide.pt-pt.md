@@ -4,6 +4,15 @@ excerpt: 'Saiba como gerir grupos de difusão (mailing lists) no Exchange'
 updated: 2025-04-28
 ---
 
+<style>
+.w-600 {
+  max-width:600px !important;
+}
+.h-600 {
+  max-height:600px !important;
+}
+</style>
+
 ## Objetivo
 
 Os grupos Exchange permitem que vários participantes comuniquem ao enviarem emails para um endereço coletivo único. Graças a esta característica colaborativa, é possível criar e gerir grupos de difusão (mailing lists) que incluem tanto utilizadores Exchange quanto contactos externos.
@@ -12,18 +21,24 @@ Os grupos Exchange permitem que vários participantes comuniquem ao enviarem ema
 
 ## Requisitos
 
-- Ter acesso à [Área de Cliente OVHcloud](/links/manager)
 - Dispor de uma [solução Exchange OVHcloud](/links/web/emails-hosted-exchange).
+
+<!-- CP-NAV-START:web-exchange -->
+---
+
+### Acesso à Área de Cliente OVHcloud
+
+- **Ligação direta:** [Exchange](/links/control-panel/web-exchange)
+- **Caminho de navegação:** `Web Cloud`{.action} > `Exchange`{.action} > Selecione a sua plataforma
+
+---
+<!-- CP-NAV-END:web-exchange -->
 
 ## Instruções
 
 ### Passo 1: Criar um novo grupo
 
-1. Aceda à [Área de Cliente OVHcloud](/links/manager).
-1. Aceda à secção `Web Cloud`{.action}.
-1. Na rubrica `MICROSOFT`, clique em `Exchange`{.action}.
-1. Selecione a plataforma em causa.
-1. De seguida clique em `Grupos`{.action}, no menu horizontal.
+Clique no separador `Grupos`{.action} no menu horizontal.
 
 ![contactgroups](images/exchange-groups-create01.png){.thumbnail .w-600 .h-600}
 
@@ -35,7 +50,7 @@ Ao clicar em `Criar um grupo de contacto`{.action}, aparecerá uma janela onde p
 - **Nome do Grupo** : Utilize o nome que aparecer na sua [Área de Cliente OVHcloud](/links/manager) e no seu [e-mail Web OVHcloud](/links/web/email) (OWA).
 - **Tamanho máximo de entrada ou saída**: Pode especificar o tamanho máximo dos e-mails de entrada e dos e-mails de saída.
 - **Ocultar no Outlook** : Quando esta opção está selecionada, o endereço do grupo não será apresentado na lista de endereços do serviço Exchange.
-- **Authentication required** : Quando esta opção está selecionada, apenas os utilizadores da mesma plataforma poderão enviar mensagens com o endereço do grupo.
+- **Autenticação necessária** : Quando esta opção está selecionada, apenas os utilizadores da mesma plataforma poderão enviar mensagens com o endereço do grupo.
 
 Clique em `Seguinte`{.action} para continuar.
 
@@ -70,7 +85,7 @@ Para adicionar `Contacts` ao seu grupo ou definir os `Administradores`, clique n
 
 #### Gerir as delegações de um grupo
 
-Será apresentada a opção `Configurar as delegações`{.action} do menu. Esta opção permite delegar o acesso da mesma forma que delegamos o acesso a uma conta Exchange. Consultar todos os detalhes em [este guia](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/feature_delegation).
+Será apresentada a opção `Configurar as delegações`{.action} do menu. Esta opção permite delegar o acesso da mesma forma que delegamos o acesso a uma conta Exchange. Consulte todos os detalhes em [este guia](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/feature_delegation).
 
 ![contactgroups](images/exchange-groups-options-delegation01.png){.thumbnail .w-600 .h-600}
 
@@ -82,7 +97,7 @@ Será apresentada a opção `Configurar as delegações`{.action} do menu. Esta 
 
 Já pode testar a sua lista de difusão (mailing list) através do [webmail OVHcloud](/links/web/email) (OWA). Para isso, basta enviar um email para o endereço coletivo.
 
-## Saiba mais
+## Saiba mais <a name="go-further"></a>
 
 [Atribuir permissões a uma conta Exchange](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/feature_delegation)
 

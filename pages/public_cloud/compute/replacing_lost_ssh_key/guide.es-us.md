@@ -26,7 +26,17 @@ Sin embargo, todavía puede conectarse a su instancia a través del modo de resc
 ## Requisitos
 
 - Una [instancia de Public Cloud](/links/public-cloud/compute) en su cuenta de OVHcloud
-- Tienes acceso a tu [área de cliente de OVHcloud](/links/manager)
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Ruta de navegación:** `Public Cloud`{.action} > Seleccione su proyecto
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## Procedimiento
 

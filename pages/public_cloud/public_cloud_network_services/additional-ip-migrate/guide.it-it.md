@@ -23,11 +23,21 @@ Questa guida ti mostra come trasferire un Additional IP da un’istanza all’al
 
 - Almeno due istanze Public Cloud attive
 - Un indirizzo Additional IP
-- Aver accesso allo [Spazio Cliente OVHcloud](/links/manager)
 
 > [!warning]
 > Questa funzionalità al momento non è disponibile per le istanze Metal.
 >
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Percorso di navigazione:** `Public Cloud`{.action} > Seleziona il tuo project
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## Procedura
 
@@ -35,8 +45,6 @@ Questa guida ti mostra come trasferire un Additional IP da un’istanza all’al
 >
 > Un Additional IP non può essere spostato tra diverse zone. Ad esempio, un IP localizzato nel datacenter di SBG può essere spostato verso GRA o RBX ma non verso BHS.
 >
-
-Accedi allo [Spazio Cliente OVHcloud](/links/manager), clicca su `Public Cloud`{.action} e seleziona il progetto Public Cloud interessato.
 
 Nel menu a sinistra, clicca sulla sezione **Network** e apri la sezione `IP pubblici`{.action}. Clicca sulla scheda `Additional IP`{.action}.
 

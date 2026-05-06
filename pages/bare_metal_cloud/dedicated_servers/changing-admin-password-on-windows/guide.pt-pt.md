@@ -1,6 +1,6 @@
 ---
-title: 'Alterar a palavra-passe administrador num servidor dedicado Windows'
-excerpt: 'Saiba como alterar a palavra-passe de um administrador num servidor dedicado Windows'
+title: "Alterar a palavra-passe administrador num servidor dedicado Windows"
+excerpt: "Reinicialize a palavra-passe de administrador num servidor dedicado Windows através do modo rescue OVHcloud em caso de perda"
 updated: 2024-06-26
 flag: hidden
 ---
@@ -22,7 +22,17 @@ Quando instalar ou reiniciar um sistema operativo Windows, irá receber uma pala
 ## Requisitos
 
 - Possuir um [servidor dedicado](/links/bare-metal/bare-metal) com o Windows instalado.
-- Ter acesso à [Área de Cliente OVHcloud](/links/manager).
+
+<!-- CP-NAV-START:baremetal-dedicated-servers -->
+---
+
+### Acesso à Área de Cliente OVHcloud
+
+- **Link direto:** [Servidores Dedicados](/links/control-panel/baremetal-dedicated-servers)
+- **Caminho de navegação:** `Bare Metal Cloud`{.action} > `Servidores Dedicados`{.action} > Selecione o seu servidor
+
+---
+<!-- CP-NAV-END:baremetal-dedicated-servers -->
 
 ## Instruções
 

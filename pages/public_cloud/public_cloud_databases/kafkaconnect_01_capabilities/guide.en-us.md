@@ -1,7 +1,7 @@
 ---
-title: Kafka Connect - Capabilities and Limitations
-excerpt: Discover the capabilities and limitations of Public Cloud Analytics for Kafka Connect
-updated: 2025-08-04
+title: Capabilities and Limitations of Analytics with Kafka Connect
+excerpt: Discover the capabilities and limitations of Analytics for Kafka Connect
+updated: 2026-02-17
 ---
 
 ## Objective
@@ -25,6 +25,8 @@ The Public Cloud Analytics offer is available in the following regions:
 - `EU-SOUTH-MIL` (Milan, France)
 - `UK` (London, United Kingdom)
 - `WAW` (Warsaw, Poland)
+- `RBX` (Roubaix, France)
+- `AP-SOUTH-MUM` (Mumbai, India)
 
 Nodes have to be in the same region.
 

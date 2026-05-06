@@ -1,6 +1,6 @@
 ---
-title: "Como ativar e utilizar o modo rescue Windows"
-excerpt: "Descubra como utilizar o sistema rescue OVHcloud para Windows para solucionar problemas com o seu servidor dedicado"
+title: "Modo rescue Windows num servidor dedicado"
+excerpt: "Inicie o seu servidor dedicado Windows em modo rescue OVHcloud para resolver problemas, reparar ou reinicializar palavras-passe"
 updated: 2025-01-28
 ---
 
@@ -44,13 +44,21 @@ A opção **Windows customer rescue system** só está disponível para os servi
 
 - Microsoft Windows instalado no seu [servidor dedicado](/links/bare-metal/bare-metal)
 - Pelo menos 16 GB de RAM instaladas no servidor
-- Acesso à [Área de Cliente OVHcloud](/links/manager)
+
+<!-- CP-NAV-START:baremetal-dedicated-servers -->
+---
+
+### Acesso à Área de Cliente OVHcloud
+
+- **Ligação direta:** [Servidores dedicados](/links/control-panel/baremetal-dedicated-servers)
+- **Caminho de navegação:** `Bare Metal Cloud`{.action} > `Servidores dedicados`{.action} > Selecione o seu servidor
+
+---
+<!-- CP-NAV-END:baremetal-dedicated-servers -->
 
 ## Instruções
 
 ### Ativação do modo rescue para Windows
-
-Aceda à [Área de Cliente OVHcloud](/links/manager), abra a secção `Bare Metal Cloud`{.action} e depois `Servidores dedicados`{.action}.
 
 Clique no nome do seu servidor para abrir o separador `Informações gerais`{.action}.
 

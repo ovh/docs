@@ -12,13 +12,39 @@ Każde konto e-mail OVHcloud dysponuje dedykowaną przestrzenią dyskową. Zarz�
 
 ## Wymagania początkowe
 
-- Dostęp do [Panelu klienta OVHcloud](/links/manager).
 - Posiadanie skonfigurowanego wcześniej rozwiązania e-mail OVHcloud, spośród następujących:
     - **MX Plan** w ofercie [pakietów hostingowych](/links/web/hosting) lub zawarta w ofercie [darmowy hosting 100M](/links/web/domains-free-hosting).
-    - [Exchange](/links/web/emails).
-    - [Email Pro](/links/web/email-pro).
+    - [Exchange](/links/web/emails-exchange).
+    - [E-mail Pro](/links/web/email-pro).
     - [Zimbra](/links/web/emails-zimbra).
 - Dostęp do danych adresów e-mail.
+
+<!-- CP-NAV-START:web-mx-plan -->
+<!-- CP-NAV-START:web-email-pro -->
+<!-- CP-NAV-START:web-exchange -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+**MX Plan:**
+
+- **Bezpośredni link:** [MX Plan](/links/control-panel/web-mx-plan)
+- **Ścieżka nawigacji:** `Web Cloud`{.action} > `MX Plan`{.action} > Wybierz swoją usługę MX Plan
+
+**E-mail Pro:**
+
+- **Bezpośredni link:** [E-mail Pro](/links/control-panel/web-email-pro)
+- **Ścieżka nawigacji:** `Web Cloud`{.action} > `E-mail Pro`{.action} > Wybierz swoją platformę
+
+**Exchange:**
+
+- **Bezpośredni link:** [Exchange](/links/control-panel/web-exchange)
+- **Ścieżka nawigacji:** `Web Cloud`{.action} > `Exchange`{.action} > Wybierz swoją platformę
+
+---
+<!-- CP-NAV-END:web-exchange -->
+<!-- CP-NAV-END:web-email-pro -->
+<!-- CP-NAV-END:web-mx-plan -->
 
 > [!primary]
 >
@@ -61,9 +87,9 @@ W [Panelu klienta OVHcloud](/links/manager) przejdź do sekcji `Web Cloud`{.acti
 >> Kliknij `MX Plan`{.action}, po czym wybierz odpowiednią usługę MX Plan. Przejdź do zakładki `Konta e-mail`{.action}. Pojawi się okno, w którym widoczne są istniejące konta e-mail. W kolumnie `Rozmiar` możesz sprawdzić zużycie przestrzeni dyskowej Twojego konta e-mail.<br><br>
 >>![email](images/email-quota-quotacontrolpanel01.png){.thumbnail}<br>
 >>
-> **Email Pro**
+> **E-mail Pro**
 >>
->> Kliknij `Email Pro`{.action}, po czym wybierz odpowiednią platformę. Przejdź do zakładki `Konta e-mail`{.action}. Pojawi się okno, w którym widoczne są istniejące konta e-mail. W kolumnie `Rozmiar` możesz sprawdzić zużycie przestrzeni dyskowej Twojego konta e-mail.<br><br>
+>> Kliknij `E-mail Pro`{.action}, po czym wybierz odpowiednią platformę. Przejdź do zakładki `Konta e-mail`{.action}. Pojawi się okno, w którym widoczne są istniejące konta e-mail. W kolumnie `Rozmiar` możesz sprawdzić zużycie przestrzeni dyskowej Twojego konta e-mail.<br><br>
 >>![email](images/email-quota-quotacontrolpanel02.png){.thumbnail}<br>
 >>
 > **Exchange**
@@ -94,7 +120,7 @@ Aby zalogować się do interfejsu Webmail, przejdź do strony [Webmail](/links/w
 >>
 > **Zimbra**: **MX Plan** / **Zimbra Starter** / **Zimbra Pro**
 >>
->> Po zalogowaniu do Zimbra Webmail kliknij na symbol koła zębatego`&#9881;` w prawym górnym rogu interfejsu, a następnie kliknij `Parametry`{.action}. W zakładce `Ogólne`{.action} wyświetla się wykorzystany limit pod napisem "Przestrzeń dyskowa".<br><br>
+>> Po zalogowaniu do Zimbra Webmail kliknij na symbol koła zębatego( &#9881;) w prawym górnym rogu interfejsu, a następnie kliknij `Parametry`{.action}. W zakładce `Ogólne`{.action} wyświetla się wykorzystany limit pod napisem "Przestrzeń dyskowa".<br><br>
 >>![email](images/email-quota-webmail03.png){.thumbnail}<br>
 >>
 
@@ -127,9 +153,9 @@ Zwiększ rozmiar przestrzeni dyskowej Twojego konta e-mail, jeśli konto nie osi
 >> W kratce `Quota`{.action} wybierz odpowiedni rozmiar, kliknij `Dalej`{.action}, a następnie `Zatwierdź`{.action}.<br><br>
 >> ![e-mail](images/email-quota-more01.png){.thumbnail}<br>
 >>
-> **Email Pro**
+> **E-mail Pro**
 >> 
->> Oferta Email Pro posiada unikalną pojemność 10 GB. Jeśli potrzebujesz większej przestrzeni dyskowej, zmień ofertę proponującą więcej przestrzeni dyskowej. W tym celu przeczytaj sekcję [zmiana oferty, aby zwiększyć jej wydajność](#switchingoffer) tego przewodnika.<br>
+>> Oferta E-mail Pro posiada unikalną pojemność 10 GB. Jeśli potrzebujesz większej przestrzeni dyskowej, zmień ofertę proponującą więcej przestrzeni dyskowej. W tym celu przeczytaj sekcję [zmiana oferty, aby zwiększyć jej wydajność](#switchingoffer) tego przewodnika.<br>
 >>
 > **Exchange**
 >>
@@ -237,11 +263,11 @@ Z poniższego menu wybierz aktualną ofertę Twojego konta e-mail:
 > [!tabs]
 > **MX Plan**
 >>
->> Jeśli rozmiar konta e-mail wynosi maksymalnie 5 GB, możesz przejść na ofertę [**Email Pro** o rozmiarze 10 GB](/links/web/email-pro) lub [**Hosted Exchange** 50 GB](/links/web/emails-hosted-exchange). W tym celu zachęcamy do zamówienia wybranej oferty i zapoznania się z naszą dokumentacją "[Migracja konta e-mail MX Plan na konto E-mail Pro lub Exchange](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_control_panel)". 
+>> Jeśli rozmiar konta e-mail wynosi maksymalnie 5 GB, możesz przejść na ofertę [**E-mail Pro** o rozmiarze 10 GB](/links/web/email-pro) lub [**Hosted Exchange** 50 GB](/links/web/emails-hosted-exchange). W tym celu zachęcamy do zamówienia wybranej oferty i zapoznania się z naszą dokumentacją "[Migracja konta e-mail MX Plan na konto E-mail Pro lub Exchange](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_control_panel)". 
 >>
-> **Email Pro**
+> **E-mail Pro**
 >>
->> Oferta Email Pro posiada unikalną pojemność 10GB. Możesz wybrać opcję migracji na ofertę [**Hosted Exchange** 50 GB](/links/web/emails-hosted-exchange). W tym celu zachęcamy do zamówienia wybranej oferty i zapoznania się z naszą dokumentacją "[Migracja kont e-mail z jednej platformy e-mail OVHcloud do innej](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_platform)".
+>> Oferta E-mail Pro posiada unikalną pojemność 10GB. Możesz wybrać opcję migracji na ofertę [**Hosted Exchange** 50 GB](/links/web/emails-hosted-exchange). W tym celu zachęcamy do zamówienia wybranej oferty i zapoznania się z naszą dokumentacją "[Migracja kont e-mail z jednej platformy e-mail OVHcloud do innej](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_platform)".
 >>
 > **Exchange**
 >>

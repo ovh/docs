@@ -1,6 +1,6 @@
 ---
-title: 'Dépanner son téléphone OVHcloud'
-excerpt: 'Apprenez à dépanner votre téléphone OVHcloud'
+title: "Dépanner son téléphone OVHcloud"
+excerpt: "Apprenez à dépanner votre téléphone OVHcloud"
 updated: 2025-04-28
 ---
 
@@ -12,31 +12,41 @@ Pour fonctionner correctement, comme votre ordinateur, un téléphone OVHcloud a
 
 Les causes d'un dysfonctionnement d'un téléphone VoIP sont donc variées :
 
-- un défaut d'alimentation électrique;
-- une problématique réseau;
+- un défaut d'alimentation électrique ;
+- une problématique réseau ;
 - un défaut temporaire de configuration du téléphone.
 
 **Découvrez comment diagnostiquer et dépanner votre téléphone OVHcloud.**
 
 ## Prérequis
 
-- Être connecté à l'[espace client OVHcloud](/links/manager), partie `Télécom`{.action}.
 - Disposer d'une [ligne téléphonique OVHcloud](/links/telecom/telephonie-voip).
 - Disposer d'un [téléphone fourni par OVHcloud](/links/telecom/telephonie-comparatif-telephones) et l'avoir installé.
+
+<!-- CP-NAV-START:telecom-voip-fax -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [VoIP & Fax](/links/control-panel/telecom-voip-fax)
+- **Pour accéder à vos services :** `Télécom`{.action} > `VoIP & Fax`{.action} > Sélectionnez votre groupe de téléphonie
+
+---
+<!-- CP-NAV-END:telecom-voip-fax -->
 
 ## En pratique
 
 Voici la table des matières de ce guide, vous pouvez cliquer sur une des entrées pour y arriver directement :
 
-[Etape 1 - Etablir un premier diagnostic](#step1)<br />
-[Etape 2 - Réinitialiser le téléphone](#step2)<br />
-[Etape 3 - Dépanner le téléphone depuis l'espace client OVHcloud](#step3)<br />
-[Etape 4 - Effectuer des tests complémentaires (facultatif)](#step4)<br />
+[Étape 1 - Établir un premier diagnostic](#step1)<br />
+[Étape 2 - Réinitialiser le téléphone](#step2)<br />
+[Étape 3 - Dépanner le téléphone depuis l'espace client OVHcloud](#step3)<br />
+[Étape 4 - Effectuer des tests complémentaires (facultatif)](#step4)<br />
 &emsp;&emsp;[4.1 - Réinitialiser votre routeur / modem / Box Internet](#step4-1)<br />
 &emsp;&emsp;[4.2 - Effectuer un test croisé](#step4-2)<br />
-[Etape 5 - Contacter l'assistance OVHcloud](#step5)<br />
+[Étape 5 - Contacter l'assistance OVHcloud](#step5)<br />
 
-Ce guide vous détaille les causes principales d'un défaut d'enregistrement de la ligne SIP associée à votre téléphone, suivant un ordre logique. 
+Ce guide détaille les causes principales d'un défaut d'enregistrement de la ligne SIP associée à votre téléphone, suivant un ordre logique. 
 Nous vous conseillons donc de **suivre l'ordre des étapes de diagnostic** afin de dépanner votre téléphone.<br>
 Si votre téléphone retrouve son fonctionnement normal après avoir suivi l'une des premières étapes de ce guide, il n'est pas indispensable de suivre les étapes ultérieures.
 
@@ -44,7 +54,7 @@ Cliquez sur l'image ci-dessous pour afficher un résumé des actions à mener en
 
 ![logigramme de dépannage](images/logigramme-voip-v2.png){.thumbnail}
 
-### Étape 1 - Etablir un premier diagnostic <a name="step1"></a>
+### Étape 1 - Établir un premier diagnostic <a name="step1"></a>
 
 **Question n°1 : Le défaut concerne-t-il un seul téléphone ?**
 
@@ -113,6 +123,8 @@ Les manipulations pour réinitialiser nos téléphones sont décrites ci-dessous
 
 ### Étape 3 - Dépanner le téléphone depuis l'espace client OVHcloud <a name="step3"></a>
 
+<!-- CP-STEPS-START:step3-depannage-plug-phone -->
+
 > **Prérequis nécessaire: connaître l'adresse IP publique de votre réseau**
 >
 > Pour procéder au dépannage, il est indispensable de connaître l'adresse IP publique du réseau sur lequel est raccordé votre téléphone.
@@ -120,10 +132,8 @@ Les manipulations pour réinitialiser nos téléphones sont décrites ci-dessous
 > Rendez-vous sur <http://monip.ovh> et prenez note de l'adresse IP publique qui vous est indiquée.
 >
 
-1. Connectez-vous à votre [espace client OVHcloud](/links/manager) et cliquez sur `Télécom`{.action}.
-1. Cliquez sur `VoIP & Fax`{.action} puis sur le groupe de facturation contenant votre ligne SIP.
-1. Cliquez sur l'onglet `Services`{.action} puis sur la ligne SIP concernée.
-1. Rendez-vous dans l'onglet `Assistance`{.action} et cliquez sur le bouton `Dépannage Plug & Phone`{.action}.
+Cliquez sur l'onglet `Services`{.action} puis sur la ligne SIP concernée.<br>
+Rendez-vous dans l'onglet `Assistance`{.action} et cliquez sur le bouton `Dépannage Plug & Phone`{.action}.
 
 ![dépannage-plug-and-phone](images/control-panel01.png){.thumbnail}
 
@@ -149,7 +159,9 @@ En fonction des informations sélectionnées, vous pourrez être amené à recon
 >
 > Si la reconfiguration de votre téléphone n'arrive pas à son terme, assurez-vous d'avoir bien respecté les manipulations précédentes.
 >
- 
+
+<!-- CP-STEPS-END:step3-depannage-plug-phone -->
+
 ### Étape 4 - Effectuer des tests complémentaires (facultatif) <a name="step4"></a>
 
 Si le dépannage de votre téléphone n'a pas permis de résoudre votre problématique, poursuivez en réalisant deux tests complémentaires. 

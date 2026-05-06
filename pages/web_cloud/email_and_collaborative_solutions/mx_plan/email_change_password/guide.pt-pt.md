@@ -15,12 +15,45 @@ As contas de e-mail da sua oferta OVHcloud são acessíveis graças à palavra-p
 
 ## Requisitos
 
-- Em função do método que utilizar: aceder à Área de [Cliente OVHcloud](/links/manager), na secção `Web Cloud`{.action}, ou aceder ao endereço de e-mail através do [webmail](/links/web/email).
 - Ter uma solução de e-mail OVHcloud previamente configurada, entre as seguintes:
     - **MX Plan** proposta com os nossos [oferta de alojamento web](/links/web/hosting) ou incluída num [alojamento gratuito 100M](/links/web/domains-free-hosting).
-    - [Exchange](/links/web/emails).
-    - [Email Pro](/links/web/email-pro).
+    - [Exchange](/links/web/emails-exchange).
+    - [E-mail Pro](/links/web/email-pro).
     - [Zimbra](/links/web/emails-zimbra).
+
+<!-- CP-NAV-START:web-mx-plan -->
+<!-- CP-NAV-START:web-zimbra -->
+<!-- CP-NAV-START:web-email-pro -->
+<!-- CP-NAV-START:web-exchange -->
+---
+
+### Acesso à Área de Cliente OVHcloud
+
+**MX Plan:**
+
+- **Ligação direta:** [MX Plan](/links/control-panel/web-mx-plan)
+- **Caminho de navegação:** `Web Cloud`{.action} > `MX Plan`{.action} > Selecione o seu serviço MX Plan
+
+**Zimbra:**
+
+- **Ligação direta:** [Zimbra](/links/control-panel/web-zimbra)
+- **Caminho de navegação:** `Web Cloud`{.action} > `Zimbra Mail`{.action} > Selecione o seu serviço Zimbra
+
+**E-mail Pro:**
+
+- **Ligação direta:** [E-mail Pro](/links/control-panel/web-email-pro)
+- **Caminho de navegação:** `Web Cloud`{.action} > `E-mail Pro`{.action} > Selecione a sua plataforma
+
+**Exchange:**
+
+- **Ligação direta:** [Exchange](/links/control-panel/web-exchange)
+- **Caminho de navegação:** `Web Cloud`{.action} > `Exchange`{.action} > Selecione a sua plataforma
+
+---
+<!-- CP-NAV-END:web-exchange -->
+<!-- CP-NAV-END:web-email-pro -->
+<!-- CP-NAV-END:web-zimbra -->
+<!-- CP-NAV-END:web-mx-plan -->
 
 ## Instruções
 
@@ -34,6 +67,8 @@ As contas de e-mail da sua oferta OVHcloud são acessíveis graças à palavra-p
 >
 > Por razões de segurança, recomendamos que não utilize duas vezes a mesma palavra-passe, selecione uma palavra-passe que não tenha qualquer relação com as suas informações pessoais (evite as menções do seu apelido, nome próprio e data de nascimento, por exemplo) e que a renove regularmente.
 
+<a name="whichmxplan"></a>
+
 > [!primary]
 >
 > **Identificar a tecnologia de e-mail da oferta MX Plan.**
@@ -44,7 +79,7 @@ As contas de e-mail da sua oferta OVHcloud são acessíveis graças à palavra-p
 >
 > ![MX plan](images/technology-email.png){.thumbnail .w-500}
 
-Na [Área de Cliente OVHcloud](/links/manager), aceda à secção `Web Cloud`{.action} e siga as instruções indicadas na oferta:
+Siga as instruções indicadas na oferta:
 
 > [!tabs]
 > **E-mails MX Plan (versão histórica)**
@@ -61,9 +96,9 @@ Na [Área de Cliente OVHcloud](/links/manager), aceda à secção `Web Cloud`{.a
 >> Clique no botão `...`{.action} e depois em `Alterar`{.action}.<br><br>
 >>![e-mail](images/email-password-mxplan-new01.png){.thumbnail}<br>
 >>
-> **Email Pro**
+> **E-mail Pro**
 >>
->> Clique em `Email Pro`{.action} e escolha o nome da plataforma em questão. Aceda ao separador `Contas de e-mail`{.action}. Na nova janela, podem ver-se as contas de e-mail existentes.<br>
+>> Clique em `E-mail Pro`{.action} e escolha o nome da plataforma em questão. Aceda ao separador `Contas de e-mail`{.action}. Na nova janela, podem ver-se as contas de e-mail existentes.<br>
 >> Clique no botão `...`{.action} e, a seguir, em `Alterar`{.action}.<br><br>
 >>![email](images/email-password-emailpro01.png){.thumbnail}<br>
 >>
@@ -76,7 +111,7 @@ Na [Área de Cliente OVHcloud](/links/manager), aceda à secção `Web Cloud`{.a
 > **Zimbra**
 >>
 >> Clique em `Zimbra Mail`{.action} e dirija-se ao separador `Conta de e-mail`{.action}. A janela que aparece apresenta as contas de e-mail existentes. <br>
->> Clique no botão `...`{.action} e, em seguida, em `Modificar`{.action}.<br><br>>
+>> Clique no botão `...`{.action} e, em seguida, em `Modificar`{.action}.<br><br>
 >>![email](images/email-password-zimbra01.png){.thumbnail}<br>
 >>
 
@@ -85,7 +120,7 @@ Na [Área de Cliente OVHcloud](/links/manager), aceda à secção `Web Cloud`{.a
 A modificação da sua palavra-passe através do webmail está disponível para as ofertas de e-mail OVHcloud que utilizam **OWA** (**O**utlook **W**eb **A**pp):
 
 - MX Plan OWA
-- Email Pro
+- E-mail Pro
 - Exchange
 - MX Plan Zimbra
 - Zimbra Starter / Pro
@@ -99,7 +134,7 @@ A modificação da sua palavra-passe através do webmail está disponível para 
 
 <iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/msmUN7cLSNI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-Aceda à página "[Webmail](/links/web/email)". Indique o seu endereço de e-mail completo e a respetiva palavra-passe. De seguida, clique no botão `Ligação`{.action}. 
+Aceda à página "[Webmail](/links/web/email)". Indique o seu endereço de e-mail completo e a respetiva palavra-passe. De seguida, clique no botão `Ligação`{.action}.
 
 ![email](images/mxplan-password-new-step2.png){.thumbnail}
 
@@ -124,7 +159,7 @@ Na nova janela, comece por indicar a sua palavra-passe atual. A seguir, escreva 
 
 Aceda à página [Webmail](/links/web/email). Introduza o seu endereço de e-mail e a palavra-passe e clique em `Connection`{.action}.
 
-Clique no nome da sua conta de e-mail na parte superior direita da sua interface. A partir deste menu, poderá "Alterar a palavra-passe" {.action}.
+Clique no nome da sua conta de e-mail na parte superior direita da sua interface. A partir deste menu, poderá `Alterar a palavra-passe`{.action}.
 
 ![Zimbra - preferências](images/zimbra-password.png){.thumbnail}
 
@@ -136,7 +171,7 @@ Por razões de segurança e de confidencialidade, não é possível **recuperar*
 >
 > Se pretender armazenar uma palavra-passe, é aconselhável utilizar um gestor de palavra-passe, como, por exemplo, **Keepass**.
 
-## Quer saber mais?
+## Quer saber mais? <a name="go-further"></a>
 
 [Primeiros passos com a solução MX Plan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities)
 

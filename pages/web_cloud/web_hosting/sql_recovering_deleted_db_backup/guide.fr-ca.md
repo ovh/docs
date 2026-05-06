@@ -1,7 +1,7 @@
 ---
 title: "Récupérer la sauvegarde d'une base de données supprimée"
 excerpt: "Découvrez comment retrouver la sauvegarde d'une base de données lorsque celle-ci a été supprimée depuis votre espace client OVHcloud"
-updated: 2025-02-20
+updated: 2026-04-01
 ---
 
 ## Objectif
@@ -14,13 +14,24 @@ La plupart de nos offres d'[hébergement web](/links/web/hosting) comprennent de
 >
 > OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
 > 
-> Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Toutefois, nous vous recommandons de faire appel à un [prestataire spécialisé](/links/partner) si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance complémentaire sur les API. Plus d'informations dans la section [« Aller plus loin »](#go-further) de ce guide.
+> Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Cependant, nous vous recommandons de faire appel à un [prestataire spécialisé](/links/partner) si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance complémentaire sur les API. Plus d'informations dans la section [« Aller plus loin »](#go-further) de ce guide.
 >
 
 ## Prérequis
 
 - Disposer d'une [offre d'hébergement web OVHcloud](/links/web/hosting) active comprenant une (ou plusieurs) base(s) de données mutualisée(s) OVHcloud associée(s).
 - La suppresion de la base de donnée doit dater de moins de 30 jours.
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Hébergements](/links/control-panel/web-hosting)
+- **Pour accéder à vos services :** `Web Cloud`{.action} > `Hébergements`{.action} > Sélectionnez votre hébergement web
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## En pratique
 
@@ -33,19 +44,24 @@ Les API OVHcloud sont mises à disposition pour permettre aux développeurs ou a
 > De plus, lorsqu'une base de données est supprimée par son utilisateur ou son administrateur, OVHcloud ne pourra pas garantir la récupération de la sauvegarde de celle-ci pour les raisons citées ci-dessus.
 >
 
-### Étape 1 - Récupérer le nom de l'hébergement web auquel était associée la base de données supprimée
+### 1 - Récupérer le nom de l'hébergement web auquel était associée la base de données supprimée
 
-Pour récupérer le nom de votre hébergement web, effectuez les actions suivantes :
+<!-- CP-STEPS-START:retrieve-webhosting-name -->
+Pour récupérer le nom de votre hébergement web, cliquez sur les onglets ci-dessous pour afficher successivement chacune des **2** étapes.
 
-1. Connectez-vous à votre [espace client OVHcloud](/links/manager).
-2. Cliquez sur l'onglet `Web Cloud`{.action}.
-3. Dans la colonne de gauche, cliquez sur le menu `Hébergements`{.action}.
-4. Sélectionnez l'hébergement web concerné.
-5. En haut à gauche de la page qui s'affiche, retrouvez le nom de votre hébergement web à droite de la mention `Hébergements /`{.action}.
+> [!tabs]
+> **Étape 1**
+>>
+>> Accédez à la page [Hébergements](/links/control-panel/web-hosting), puis choisissez l'hébergement web concerné.
+>>
+> **Étape 2**
+>>
+>> En haut à gauche de la page qui s'affiche, retrouvez le nom de votre hébergement web à droite de la mention `Hébergements /`.
+>>
+>> ![Nom de l'hébergement web dans l'espace client OVHcloud](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-webhosting-name.png){.thumbnail}
+<!-- CP-STEPS-END:retrieve-webhosting-name -->
 
-![API](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-webhosting-name.png){.thumbnail}
-
-### Étape 2 - Se connecter aux API OVHcloud et leur permettre l'accès à vos services
+### 2 - Se connecter aux API OVHcloud et leur permettre l'accès à vos services
 
 Pour cela, effectuez les actions suivantes : 
 
@@ -65,7 +81,7 @@ Pour cela, effectuez les actions suivantes :
 - Connectez-vous avec votre identifiant client, puis cliquez sur `Authorize`{.action} pour utiliser les API OVHcloud avec les services présents dans votre espace client.
 - Vous êtes ensuite automatiquement redirigé vers la page précédente de l'API **GET /hosting/web/{serviceName}/dump** tout en étant connecté à votre espace client OVHcloud.
 
-### Étape 3 - Vérifier la disponibilité des sauvegardes et récupérer l'ID de la dernière sauvegarde
+### 3 - Vérifier la disponibilité des sauvegardes et récupérer l'ID de la dernière sauvegarde
 
 Pour cela, remplissez les différents formulaires comme détaillé ci-dessous :
 
@@ -94,7 +110,7 @@ Si aucun ID n'apparait dans la fenêtre, vérifiez que vous êtes bien connecté
 
 Si malgré tout vous n'avez toujours pas d'ID qui apparaît, c'est qu'il n'y a pas ou plus de sauvegardes disponibles pour la base de données supprimée sur notre infrastructure.
 
-### Étape 4 - Récupérer la dernière sauvegarde
+### 4 - Récupérer la dernière sauvegarde
 
 Grâce au numéro d'identifiant de sauvegarde récupéré lors de l'étape 3, vous pourrez télécharger, à l'aide d'un lien généré par API, la dernière sauvegarde de votre base de données supprimée.
 
@@ -144,7 +160,7 @@ Si tout a été renseigné correctement, le résultat suivant apparaît dans la 
 
 Dans ce résultat, copiez l'intégralité de l'URL en « HTTPS » **sans les guillements** présente à droite de la mention `"url":`, puis collez-la dans la barre de recherche de votre navigateur internet pour initier le téléchargement de la sauvegarde.
 
-### Étape 5 - Créer une nouvelle base de données, importer le fichier de sauvegarde et rétablir la liaison entre votre site web et la nouvelle base de données
+### 5 - Créer une nouvelle base de données, importer le fichier de sauvegarde et rétablir la liaison entre votre site web et la nouvelle base de données
 
 Une fois la sauvegarde de votre base de données récupérée, vous devrez créer une nouvelle base de données. Pour cela, consultez notre guide « [Créer une base de données sur son hébergement web](/pages/web_cloud/web_hosting/sql_create_database) ».
 
@@ -155,7 +171,7 @@ Pour cela, remplacez les informations de connexion de la base de données suppri
 
 > [!success]
 >
-> Pour lier votre nouvelle base de données si vous utilisez un Content Management System (CMS) comme WordPress, Joomla!, Drupal ou PrestaShop, retrouvez les informations sur leurs fichiers de configuration depuis **l'étape 2** du guide « [Modifier le mot de passe d'une base de données](/pages/web_cloud/web_hosting/sql_change_password) ».
+> Pour lier votre nouvelle base de données si vous utilisez un Content Management System (CMS) comme WordPress, Joomla!, Drupal ou PrestaShop, retrouvez les informations sur leurs fichiers de configuration depuis la **partie 2** du guide « [Modifier le mot de passe d'une base de données](/pages/web_cloud/web_hosting/sql_change_password) ».
 >
 
 ## Aller plus loin <a name="go-further"></a>

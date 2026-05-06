@@ -18,25 +18,31 @@ Par exemple : vous souhaitez que tout e-mail contenant « [SPAM] » dans le suje
 ## Prérequis
 
 - Disposer d'une offre e-mail MX Plan (disponible via : une offre d’[hébergement web](/links/web/hosting), l'[hébergement gratuit 100M](/links/web/domains-free-hosting) compris avec un nom de domaine, ou l'offre MX Plan commandée séparément).
-- Avoir accès à votre [espace client OVHcloud](/links/manager).
+
+<!-- CP-NAV-START:web-mx-plan -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [MX Plan](/links/control-panel/web-mx-plan)
+- **Pour accéder à vos services :** `Web Cloud`{.action} > `MX Plan`{.action} > Sélectionnez votre service MX Plan
+
+---
+<!-- CP-NAV-END:web-mx-plan -->
 
 > [!warning]
 >
 > Le guide suivant s'adresse aux détenteurs de l'offre MX Plan « historique ». Pour la nouvelle offre, la gestion des filtres se fait directement via le webmail OWA (**O**utlook **W**eb **A**pp). Identifiez votre offre à l'aide du tableau ci-dessous.
 >
 
-Version historique de l'offre MX Plan|Nouvelle version de l'offre MX Plan|
+|Version historique de l'offre MX Plan|Nouvelle version de l'offre MX Plan|
 |---|---|
 |![email](images/mxplan-starter-legacy-step1.png){.thumbnail}<br> Repérez l'offre dans le cadre « Abonnement »|![email](images/mxplan-starter-new-step1.png){.thumbnail}<br>Repérez la « Référence serveur » dans le cadre « Résumé »|
 |Poursuivez la lecture de ce guide à partir de la section « [En pratique](#oldmxplan) ».|Poursuivez vers notre guide « [Règles de boîte de réception depuis l’interface OWA](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/creating-inbox-rules-in-owa-mx-plan) ».|
 
 ## En pratique <a name="oldmxplan"></a>
 
-1. Connectez-vous à votre [espace client OVHcloud](/links/manager).
-1. Rendez-vous dans la partie `Web Cloud`{.action}.
-1. Cliquez sur `MX Plan`{.action}.
-1. Sélectionnez le domaine concerné.
-1. Dans l'onglet `Emails`{.action} de votre service MX Plan, vous trouverez la liste de vos adresses e-mail. Une colonne `Filtres` est visible dans le tableau des comptes e-mail. Cliquez sur l'icône d'entonnoir.
+Dans l'onglet `Emails`{.action} de votre service MX Plan, vous trouverez la liste de vos adresses e-mail. Une colonne `Filtres` est visible dans le tableau des comptes e-mail. Cliquez sur l'icône d'entonnoir.
 
 ![emails](images/img_3239.png){.thumbnail}
 
@@ -105,7 +111,7 @@ Vous avez le choix entre :
 
 > [!warning]
 >
-> Dans notre exemple nous évoquons la mention [SPAM] dans l'object d'un e-mail. Cette mention apparait lorsque l'antispam du serveur de réception délivre les e-mails, qu'il considère comme indésirable, directement dans la boite de réception. Ce qui est le cas de la version historique de l'offre MX Plan.
+> Dans notre exemple nous évoquons la mention [SPAM] dans l'objet d'un e-mail. Cette mention apparait lorsque l'antispam du serveur de réception délivre les e-mails, qu'il considère comme indésirable, directement dans la boite de réception. Ce qui est le cas de la version historique de l'offre MX Plan.
 
 ||En-tête|Règle|Valeur|Action|
 |---|---|---|---|---|
@@ -119,7 +125,7 @@ Vous avez le choix entre :
 |Paramètres du filtre|De|contient|contact@domaintest.ovh|rediriger vers une adresse distante : jean@otherdomain.ovh|
 |Ce que le filtre va faire|Si l'expéditeur|est|contact@domaintest.ovh|alors, renvoyer l'e-mail vers jean@otherdomain.ovh|
 
-#### Rediriger les e-mails adressés a une Mailing-List
+#### Rediriger les e-mails adressés à une Mailing-List
 
 ||En-tête|Règle|Valeur|Action|
 |---|---|---|---|---|
@@ -139,7 +145,7 @@ Si le sujet du message contient le mot « money », **et que** l'expéditeur du 
 
 ![emails](images/img_3242.jpg){.thumbnail}
 
-## Aller plus loin
+## Aller plus loin <a name="go-further"></a>
 
 [Premiers pas avec l’offre MX Plan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities)
 

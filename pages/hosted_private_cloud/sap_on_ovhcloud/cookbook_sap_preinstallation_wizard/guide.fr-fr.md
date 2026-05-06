@@ -4,6 +4,50 @@ excerpt: "Ce guide fournit des instructions pour utiliser l'assistant de pré-in
 updated: 2025-09-03
 ---
 
+<style>
+/* ---FAQ only--- */
+details {
+    margin: 0.1rem 1;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    background: #ffffffff;
+}
+details > summary {
+    padding: 0.1rem 1rem;
+    font-weight: 500;
+    color: #268fd4ff;
+    cursor: pointer;
+    list-style: none;
+}
+details > summary::before {
+    content: '\25B6';
+    display: inline-block;
+    margin-right: 0.5ch;
+    transition: transform 0.2s;
+}
+details[open] > summary::before {
+    content: '\25BC';
+}
+details:hover {
+    border: 1px solid #147DE8;
+    border-radius: 4px;
+    transition: border-color 0.5s ease;
+}
+details[open] > summary {
+    background: #ffffffff;
+}
+details > :not(summary) {
+    padding: 0.25rem 0.5rem;
+    box-sizing: border-box;
+    list-style-position: inside;
+}
+.smallish-gap {
+    display: block;
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
+}
+</style>
+
 ## Introduction
 
 L'assistant de pré-installation SAP proposé par OVHcloud facilite le déploiement d'un système SAP sur votre service VMware on OVHcloud déjà configuré dans votre compte client. Il vous permet de mettre en place des environnements SAP NetWeaver 7.50 ou S/4HANA, que ce soit en configuration ABAP ou Java, et selon des schémas standard, distribué ou hautement disponible.
@@ -13,8 +57,6 @@ L'assistant de pré-installation SAP proposé par OVHcloud facilite le déploiem
 > Il est important de noter que le terme « pré-installation » désigne ici l'installation de la couche technique uniquement. Cela inclut la base de données SAP HANA ainsi que la couche technique SAP NetWeaver 7.50 ou S/4HANA. Après cette phase de pré-installation, il vous faudra installer le module SAP spécifique à vos besoins et finaliser les configurations dans le cadre d'une post-installation.
 
 ## Premiers pas
-
-Pour accéder à notre assistant de pré-installation SAP, rendez-vous dans la section `SAP Features Hub`{.action} du menu `Hosted Private Cloud`{.action}, disponible depuis [l'espace client](/links/manager) de votre compte OVHcloud.
 
 ![sap-features-hub](images/sap-features-hub.png){.thumbnail}
 
@@ -32,6 +74,17 @@ Vous avez deux options : démarrer un assistant vierge pour saisir manuellement 
 - Un projet Public Cloud doit être créé dans votre compte OVHcloud.
     - Dans ce projet Public Cloud, un conteneur Object Storage doit être créé pour y stocker vos sources SAP<sup>2</sup>.
 - Un serveur DHCP doit être configuré dans le réseau où vous souhaitez déployer votre système SAP pour la machine virtuelle OVHcloud<sup>3</sup> qui sera déployée le temps du processus d'installation.
+
+<!-- CP-NAV-START:privatecloud-sap-hana -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [SAP HANA](/links/control-panel/privatecloud-sap-hana)
+- **Pour accéder à vos services :** `Hosted Private Cloud`{.action} > `SAP Features Hub`{.action} > Sélectionnez votre service
+
+---
+<!-- CP-NAV-END:privatecloud-sap-hana -->
 
 Il est important de noter que notre assistant de pré-installation SAP prend uniquement en charge les installations utilisant la base de données SAP HANA. Par conséquent, seules les sources SAPEXEDB pour SAP HANA sont prises en charge. Tous les autres fichiers SAPEXEDB doivent être supprimés de votre conteneur Object Storage s'ils ont été sélectionnés via le SAP Maintenance Planner.
 
@@ -123,60 +176,79 @@ Une fois que vous êtes satisfait des informations fournies, vous avez la possib
 
 ![sap-preinstallation-wizard-step-8](images/step-8.png){.thumbnail}
 
-Suite à la validation des informations, vous serez redirigé vers la page de suivi de votre pré-installation. Vous pouvez également retrouver la liste de l'ensemble de vos tâches de pré-installation et leurs détails dans la section `SAP Feature Hub`{.action} dans le menu `Hosted Private Cloud`{.action}, `Liste des pré-installations`{.action}.
+Suite à la validation des informations, vous serez redirigé vers la page de suivi de votre pré-installation. Vous pouvez également retrouver la liste de l'ensemble de vos tâches de pré-installation et leurs détails en cliquant sur `Liste des pré-installations`{.action} dans le SAP Features Hub.
 
 ![installation_report](images/installation_report.png){.thumbnail}
 
 ## Résolution des problèmes courants
 
-> [!faq]
-> **Le message d'erreur indique que la configuration demandée dépasse les capacités de mon datacentre.**
->>
->> Si vous avez récemment supprimé des machines virtuelles pour libérer de la capacité au sein de votre datacentre, il se peut que les informations de capacité ne soient pas encore mises à jour. Veuillez patienter quelques minutes avant de réessayer. Si le problème persiste, n'hésitez pas à contacter le support OVHcloud pour obtenir de l'aide.
->>
-> **Le fichier JSON importé contient des erreurs de syntaxe.**
->>
->> Assurez-vous que le fichier JSON est correctement formaté. Vous pouvez utiliser un validateur JSON pour vérifier la validité du fichier avant de l'importer dans l'assistant.
->>
-> **Les sources SAP ne sont pas accessibles depuis le conteneur Object Storage.**
->>
->> Vérifiez que le conteneur Object Storage est correctement configuré et que les permissions d'accès sont appropriées. Un utilisateur Object Storage ayant les droits de lecture est nécessaire pour le téléchargement des sources sur vos machines virtuelles.
->>
-> **Les paramètres de mémoire alloués aux machines virtuelles sont insuffisants.**
->>
->> Augmentez la quantité de mémoire RAM allouée aux machines virtuelles en fonction des exigences de SAP pour votre configuration. Consultez la documentation SAP pour obtenir des recommandations sur la mémoire.
->>
-> **Un message d'erreur indique qu'une erreur interne s'est produite lors de l'installation et je ne peux pas démarrer une nouvelle installation car une tâche précédente est toujours en cours.**
->>
->> Si une erreur interne survient et que le statut de la tâche n'a pas correctement été mis à jour, veuillez supprimer la tâche en question via notre API.
->> > [!api]
->> >
->> > @api {v1} /dedicatedCloud POST /dedicatedCloud/{serviceName}/sap/{taskId}
->>
->> Cette action permettra de supprimer la tâche en erreur bloquant les nouvelles installations. Veuillez également supprimer les machines virtuelles qui ont été créées par la tâche d'installation en erreur.
->>
-> **L'installation SAP tombe en erreur car des paquets sont dans une version inférieure à celles exigées par SAP.**
->>
->> Vérifiez que le modèle OVA/OVF de machine virtuelle utilisé est conforme aux exigences de SAP pour la version que vous souhaitez installer. Si le modèle est supporté mais que certaines versions de paquets sont obsolètes, effectuez une mise à jour système en utilisant l'option disponible dans l'assistant. Vous devrez fournir une licence SUSE pour cette opération. Si le modèle OVA/OVF est trop ancien, envisagez de sélectionner un modèle plus récent.
+/// details | Le message d'erreur indique que la configuration demandée dépasse les capacités de mon datacentre.
+
+Si vous avez récemment supprimé des machines virtuelles pour libérer de la capacité au sein de votre datacentre, il se peut que les informations de capacité ne soient pas encore mises à jour. Veuillez patienter quelques minutes avant de réessayer. Si le problème persiste, n'hésitez pas à contacter le support OVHcloud pour obtenir de l'aide.
+
+///
+
+/// details | Le fichier JSON importé contient des erreurs de syntaxe.
+
+Assurez-vous que le fichier JSON est correctement formaté. Vous pouvez utiliser un validateur JSON pour vérifier la validité du fichier avant de l'importer dans l'assistant.
+
+///
+
+/// details | Les sources SAP ne sont pas accessibles depuis le conteneur Object Storage.
+
+Vérifiez que le conteneur Object Storage est correctement configuré et que les permissions d'accès sont appropriées. Un utilisateur Object Storage ayant les droits de lecture est nécessaire pour le téléchargement des sources sur vos machines virtuelles.
+
+///
+
+/// details | Les paramètres de mémoire alloués aux machines virtuelles sont insuffisants.
+
+Augmentez la quantité de mémoire RAM allouée aux machines virtuelles en fonction des exigences de SAP pour votre configuration. Consultez la documentation SAP pour obtenir des recommandations sur la mémoire.
+
+///
+
+/// details | Un message d'erreur indique qu'une erreur interne s'est produite lors de l'installation et je ne peux pas démarrer une nouvelle installation car une tâche précédente est toujours en cours.
+
+Si une erreur interne survient et que le statut de la tâche n'a pas correctement été mis à jour, veuillez supprimer la tâche en question via notre API.
+
+> [!api]
+>
+> @api {v1} /dedicatedCloud POST /dedicatedCloud/{serviceName}/sap/{taskId}
+
+Cette action permettra de supprimer la tâche en erreur bloquant les nouvelles installations. Veuillez également supprimer les machines virtuelles qui ont été créées par la tâche d'installation en erreur.
+
+///
+
+/// details | L'installation SAP tombe en erreur car des paquets sont dans une version inférieure à celles exigées par SAP.
+
+Vérifiez que le modèle OVA/OVF de machine virtuelle utilisé est conforme aux exigences de SAP pour la version que vous souhaitez installer. Si le modèle est supporté mais que certaines versions de paquets sont obsolètes, effectuez une mise à jour système en utilisant l'option disponible dans l'assistant. Vous devrez fournir une licence SUSE pour cette opération. Si le modèle OVA/OVF est trop ancien, envisagez de sélectionner un modèle plus récent.
+
+///
 
 ## Questions fréquentes (FAQ)
 
-> [!faq]
-> **Puis-je utiliser un service VMware on OVHcloud autre que celui de la gamme SAP HANA on Private Cloud ?**
->>
->> Bien que notre assistant de pré-installation SAP soit optimisé pour la gamme SAP HANA on Private Cloud, il est possible d'utiliser un service VMware on OVHcloud d'une autre gamme. Cependant, nous recommandons vivement la gamme SAP HANA on Private Cloud pour bénéficier d'une solution spécifiquement conçue et certifiée pour héberger des systèmes SAP avec une base de données SAP HANA.
->>
-> **Puis-je utiliser mes modèles OVA/OVF de machines virtuelles pour déployer le système SAP ?**
->>
->> Vous ne pouvez pour le moment pas utiliser vos modèles OVA/OVF de machines virtuelles pour déployer votre système SAP via notre assistant.
->>
-> **Puis-je reprendre mon installation si celle-ci a échoué ?**
->>
->> En cas d'échec de l'installation, vous ne pourrez pas reprendre l'installation. Il faudra supprimer le système SAP construit et lancer une nouvelle installation. Si nécessaire, vous pouvez également contacter le [support OVHcloud](https://help.ovhcloud.com/csm?id=csm_get_help) pour obtenir de l'aide.
->>
-> **Puis-je ajouter un serveur d'application SAP à un système SAP existant ?**
->>
->> L'assistant de pré-installation SAP d'OVHcloud ne prend pas en charge l'ajout de composants supplémentaires à un système SAP déjà existant.
+/// details | Puis-je utiliser un service VMware on OVHcloud autre que celui de la gamme SAP HANA on Private Cloud ?
+
+Bien que notre assistant de pré-installation SAP soit optimisé pour la gamme SAP HANA on Private Cloud, il est possible d'utiliser un service VMware on OVHcloud d'une autre gamme. Cependant, nous recommandons vivement la gamme SAP HANA on Private Cloud pour bénéficier d'une solution spécifiquement conçue et certifiée pour héberger des systèmes SAP avec une base de données SAP HANA.
+
+///
+
+/// details | Puis-je utiliser mes modèles OVA/OVF de machines virtuelles pour déployer le système SAP ?
+
+Vous ne pouvez pour le moment pas utiliser vos modèles OVA/OVF de machines virtuelles pour déployer votre système SAP via notre assistant.
+
+///
+
+/// details | Puis-je reprendre mon installation si celle-ci a échoué ?
+
+En cas d'échec de l'installation, vous ne pourrez pas reprendre l'installation. Il faudra supprimer le système SAP construit et lancer une nouvelle installation. Si nécessaire, vous pouvez également contacter le [support OVHcloud](https://help.ovhcloud.com/csm?id=csm_get_help) pour obtenir de l'aide.
+
+///
+
+/// details | Puis-je ajouter un serveur d'application SAP à un système SAP existant ?
+
+L'assistant de pré-installation SAP d'OVHcloud ne prend pas en charge l'ajout de composants supplémentaires à un système SAP déjà existant.
+
+///
 
 ## Aller plus loin
 

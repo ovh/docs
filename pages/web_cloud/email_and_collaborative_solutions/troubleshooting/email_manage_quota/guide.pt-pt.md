@@ -12,13 +12,39 @@ Cada conta de e-mail da OVHcloud dispõe de um espaço de armazenamento dedicado
 
 ## Requisitos
 
-- Ter acesso à [Área de Cliente OVHcloud](/links/manager).
 - Ter uma solução de e-mail OVHcloud previamente configurada, entre as seguintes:
     - **MX Plan** proposta com os nossos [oferta de alojamento web](/links/web/hosting) ou incluída num [alojamento gratuito 100M](/links/web/domains-free-hosting).
-    - [Exchange](/links/web/emails).
-    - [Email Pro](/links/web/email-pro).
+    - [Exchange](/links/web/emails-exchange).
+    - [E-mail Pro](/links/web/email-pro).
     - [Zimbra](/links/web/emails-zimbra).
 - Dispor das informações de ligação aos endereços de e-mail em causa.
+
+<!-- CP-NAV-START:web-mx-plan -->
+<!-- CP-NAV-START:web-email-pro -->
+<!-- CP-NAV-START:web-exchange -->
+---
+
+### Acesso à Área de Cliente OVHcloud
+
+**MX Plan:**
+
+- **Link direto:** [MX Plan](/links/control-panel/web-mx-plan)
+- **Caminho de navegação:** `Web Cloud`{.action} > `MX Plan`{.action} > Selecione o seu serviço MX Plan
+
+**E-mail Pro:**
+
+- **Link direto:** [E-mail Pro](/links/control-panel/web-email-pro)
+- **Caminho de navegação:** `Web Cloud`{.action} > `E-mail Pro`{.action} > Selecione a sua plataforma
+
+**Exchange:**
+
+- **Link direto:** [Exchange](/links/control-panel/web-exchange)
+- **Caminho de navegação:** `Web Cloud`{.action} > `Exchange`{.action} > Selecione a sua plataforma
+
+---
+<!-- CP-NAV-END:web-exchange -->
+<!-- CP-NAV-END:web-email-pro -->
+<!-- CP-NAV-END:web-mx-plan -->
 
 > [!primary]
 >
@@ -61,9 +87,9 @@ Na [Área de Cliente OVHcloud](/links/manager), aceda à secção `Web Cloud`{.a
 >> Clique em `MX Plan`{.action} e escolha o nome do serviço MX Plan em causa. Aceda ao separador `Contas de e-mail`{.action}. Na nova janela, podem ver-se as contas de e-mail existentes. Na coluna `Tamanho`, pode ver o consumo em curso do armazenamento do seu endereço de e-mail.<br><br>
 >>![email](images/email-quota-quotacontrolpanel01.png){.thumbnail}<br>
 >>
-> **Email Pro**
+> **E-mail Pro**
 >>
->> Clique em `Email Pro`{.action} e escolha o nome da plataforma em questão. Aceda ao separador `Contas de e-mail`{.action}. Na nova janela, podem ver-se as contas de e-mail existentes. Na coluna `Tamanho`, pode ver o consumo em curso do armazenamento do seu endereço de e-mail.<br><br>
+>> Clique em `E-mail Pro`{.action} e escolha o nome da plataforma em questão. Aceda ao separador `Contas de e-mail`{.action}. Na nova janela, podem ver-se as contas de e-mail existentes. Na coluna `Tamanho`, pode ver o consumo em curso do armazenamento do seu endereço de e-mail.<br><br>
 >>![email](images/email-quota-quotacontrolpanel02.png){.thumbnail}<br>
 >>
 > **Exchange**
@@ -82,7 +108,7 @@ Na [Área de Cliente OVHcloud](/links/manager), aceda à secção `Web Cloud`{.a
 Para se ligar ao webmail, aceda à página [Webmail](/links/web/email)e introduza as informações de ligação à sua conta de e-mail. De seguida, selecione o webmail correspondente à sua oferta:
 
 > [!tabs]
-> **OWA**: **MX Plan** / **Email Pro** / **Exchange**
+> **OWA**: **MX Plan** / **E-mail Pro** / **Exchange**
 >>
 >> Clique no botão <i class="icons-gear-concept icons-masterbrand-blue"></i>no canto superior direito do seu ecrã, clique em `Opções`{.action}. Clique em `A minha conta`{.action} na secção `Geral`{.action} na coluna da esquerda. Pode visualizar o limite atual da sua conta na parte inferior direita do formulário.<br><br>
 >>![email](images/email-quota-webmail01.png){.thumbnail}<br>
@@ -94,7 +120,7 @@ Para se ligar ao webmail, aceda à página [Webmail](/links/web/email)e introduz
 >>
 > **Zimbra**: **MX Plan** / **Zimbra Starter** / **Zimbra Pro**
 >>
->> Quando estiver ligado ao webmail Zimbra, clique na roda dentada `&#9881;` no canto superior direito da sua interface e, a seguir, clique em `Configurações`{.action}. No separador `Geral`{.action}, o limite utilizado é visível sob a menção «Espaço de armazenamento».<br><br>
+>> Quando estiver ligado ao webmail Zimbra, clique na roda dentada ( &#9881;) no canto superior direito da sua interface e, a seguir, clique em `Configurações`{.action}. No separador `Geral`{.action}, o limite utilizado é visível sob a menção «Espaço de armazenamento».<br><br>
 >>![email](images/email-quota-webmail03.png){.thumbnail}<br>
 >>
 
@@ -127,9 +153,9 @@ Antes de efetuar qualquer operação na sua conta de e-mail, é necessário toma
 >> Na casa `Quota`{.action}, selecione o tamanho que lhe convém, clique em `Seguinte`{.action} e depois `Validar`{.action}.<br><br>
 >> ![e-mail](images/email-quota-more01.png){.thumbnail}<br>
 >>
-> **Email Pro**
+> **E-mail Pro**
 >> 
->> A oferta Email Pro dispõe de uma capacidade única de 10 GB. Se precisar de um armazenamento maior, deverá passar para uma oferta com mais espaço. Para isso, leia a secção [mudar de oferta para aumentar a sua capacidade](#switchingoffer) deste guia.<br>
+>> A oferta E-mail Pro dispõe de uma capacidade única de 10 GB. Se precisar de um armazenamento maior, deverá passar para uma oferta com mais espaço. Para isso, leia a secção [mudar de oferta para aumentar a sua capacidade](#switchingoffer) deste guia.<br>
 >>
 > **Exchange**
 >>
@@ -237,11 +263,11 @@ Selecione, no menu abaixo, a oferta atual da sua conta de e-mail:
 > [!tabs]
 > **MX Plan**
 >>
->> Se a capacidade da sua conta de e-mail já está a um máximo de 5GB, pode optar por uma migração para uma oferta [**Email Pro** de 10GB](/links/web/email-pro) ou [**Hosted Exchange** de 50GB](/links/web/emails-hosted-exchange). Para isso, sugerimos que encomende a oferta mais adequada e siga a documentação "[Migrar um endereço de e-mail MX Plan para uma conta E-mail Pro ou Exchange](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_control_panel)". 
+>> Se a capacidade da sua conta de e-mail já está a um máximo de 5GB, pode optar por uma migração para uma oferta [**E-mail Pro** de 10GB](/links/web/email-pro) ou [**Hosted Exchange** de 50GB](/links/web/emails-hosted-exchange). Para isso, sugerimos que encomende a oferta mais adequada e siga a documentação "[Migrar um endereço de e-mail MX Plan para uma conta E-mail Pro ou Exchange](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_control_panel)". 
 >>
-> **Email Pro**
+> **E-mail Pro**
 >>
->> A oferta Email Pro dispõe de uma capacidade única de 10GB. Pode optar por uma migração para uma oferta [**Hosted Exchange** de 50GB](/links/web/emails-hosted-exchange). Para isso, sugerimos que encomende a oferta mais adequada e siga o nosso manual "[Migrar os endereços de e-mail de uma plataforma de e-mail da OVHcloud para outra](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_platform)".
+>> A oferta E-mail Pro dispõe de uma capacidade única de 10GB. Pode optar por uma migração para uma oferta [**Hosted Exchange** de 50GB](/links/web/emails-hosted-exchange). Para isso, sugerimos que encomende a oferta mais adequada e siga o nosso manual "[Migrar os endereços de e-mail de uma plataforma de e-mail da OVHcloud para outra](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_platform)".
 >>
 > **Exchange**
 >>

@@ -25,16 +25,24 @@ Voici la liste des logiciels compris dans la suite :
 
 ## Prérequis
 
-- Être connecté à l'[espace client OVHcloud](/links/manager).
+- Disposer d'un [compte client OVHcloud](/links/create-ovhcloud-account).
+
+<!-- CP-NAV-START:web-microsoft-365 -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Microsoft 365](/links/control-panel/web-microsoft-365)
+- **Pour accéder à vos services :** `Web Cloud`{.action} > `Microsoft 365`{.action}
+
+---
+<!-- CP-NAV-END:web-microsoft-365 -->
 
 ## En pratique
 
 ### Commander une licence
 
-1. Rendez-vous sur la page commerciale [Microsoft 365 OVHcloud](/links/web/ms365), ou depuis l'[espace client OVHcloud](/links/manager) :
-    - Rendez-vous dans la partie `Web Cloud`{.action}.
-    - Dans la rubrique `MICROSOFT`, cliquez sur `Microsoft 365`{.action}.
-    - Cliquez sur `Commander`{.action}.
+1. Rendez-vous sur la page commerciale [Microsoft 365 OVHcloud](/links/web/ms365), ou depuis la section Microsoft 365 de l'espace client OVHcloud, cliquez sur `Commander`{.action}.
 1. Choisissez parmi nos offres disponibles, à savoir « Apps for Business » et « Apps for Enterprise ».
 1. Définissez la fréquence de renouvellement de votre groupe de licences.
 1. Définissez le nombre de licences souhaitées, puis finalisez votre commande.
@@ -43,9 +51,6 @@ Voici la liste des logiciels compris dans la suite :
 
 Pour activer la licence commandée :
 
-1. Connectez-vous à votre [espace client OVHcloud](/links/manager).
-1. Rendez-vous dans la partie `Web Cloud`{.action}.
-1. Dans la rubrique `MICROSOFT`, cliquez sur `Microsoft 365`{.action}.
 1. Sélectionnez le service Microsoft 365 concerné.
 1. Cliquez sur l'onglet `Licences`{.action}.
 1. Cliquez sur le bouton `⁝`{.action} sur la ligne de la licence concernée par l'activation, puis sur `Editer le compte`{.action}.
@@ -76,9 +81,6 @@ Pour installer votre licence sur plusieurs machines, il vous faut simplement rep
 
 Si vous souhaitez définir vous-même le mot de passe de votre licence :
 
-1. Connectez-vous à votre [espace client OVHcloud](/links/manager).
-1. Rendez-vous dans la partie `Web Cloud`{.action}.
-1. Dans la rubrique `MICROSOFT`, cliquez sur `Microsoft 365`{.action}.
 1. Sélectionnez le service Microsoft 365 concerné.
 1. Cliquez sur l'onglet `Licences`{.action}.
 1. Cliquez sur le bouton `⁝`{.action} à droite de la licence concernée puis sur `Modifier le mot de passe`{.action}.
@@ -89,12 +91,8 @@ Si vous souhaitez définir vous-même le mot de passe de votre licence :
 
 Si vous souhaitez ajouter une ou plusieurs licences à votre groupe de licences existant :
 
-1. Connectez-vous à votre [espace client OVHcloud](/links/manager).
-1. Rendez-vous dans la partie `Web Cloud`{.action}.
-1. Dans la rubrique `MICROSOFT`, cliquez sur `Microsoft 365`{.action}.
 1. Sélectionnez le service Microsoft 365 concerné.
-1. Cliquez sur l'onglet `Licences`{.action}.
-1. Cliquez sur le bouton `Commander plus de licences`{.action} à droite. 
+1. Cliquez sur le bouton `Commander plus de licences`{.action} à droite.
 1. Déterminez le **nombre** et le **type de licence** que vous souhaitez commander, puis cliquez sur `Valider`{.action}.
 
 ![emails](images/Outlook-cps1-05.png){.thumbnail .w-500}
@@ -113,11 +111,11 @@ Depuis l'onglet `Licences`{.action} de votre groupe de licences, cliquez sur le 
 
 #### Résilier le groupe de licences
 
-Pour résilier votre groupe de licence Microsoft Office 365 CSP1 :
+Pour résilier votre groupe de licences Microsoft Office 365 CSP1 :
 
 1. Cliquez sur votre nom en haut à droite de l'espace client OVHcloud.
 1. Cliquez sur `Mes offres et services`{.action}.
-1. Identifiez votre groupe de licence dans le tableau de vos services.
+1. Identifiez votre groupe de licences dans le tableau de vos services.
 1. Cliquez sur le bouton `...`{.action} à droite du groupe de licences que vous souhaitez résilier, puis sur `Résilier`{.action}.
 1. Précisez les raisons de votre demande de résiliation puis cliquez sur `Valider`{.action}.
 
@@ -125,7 +123,7 @@ Pour résilier votre groupe de licence Microsoft Office 365 CSP1 :
 >
 > Les consommations du mois en cours seront facturées à la fin de ce dernier.
 
-## Aller plus loin
+## Aller plus loin <a name="go-further"></a>
 
 [Utiliser le bureau à distance avec Microsoft 365 apps](/pages/web_cloud/email_and_collaborative_solutions/microsoft_office/office_proplus).
 

@@ -1,6 +1,6 @@
 ---
-title: Configura il tuo MegaRAID in RAID 0
-excerpt: "Come configurare i dischi del tuo server in RAID 0, per sfruttare il massimo dello spazio disponibile"
+title: "Configurare MegaRAID in RAID 0 su un server dedicato"
+excerpt: "Configura il RAID 0 con il controller MegaRAID per utilizzare la capacità massima dei dischi del tuo server dedicato OVHcloud"
 updated: 2025-04-29
 ---
 
@@ -27,11 +27,20 @@ Il livello di RAID predefinito dei server OVHcloud è il RAID 1 che raddoppia il
 - Disporre di un [server dedicato](/links/bare-metal/bare-metal) con un RAID hardware
 - Avere accesso al server via SSH come amministratore (sudo)
 
+<!-- CP-NAV-START:baremetal-dedicated-servers -->
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [Server dedicati](/links/control-panel/baremetal-dedicated-servers)
+- **Percorso di navigazione:** `Bare Metal Cloud`{.action} > `Server dedicati`{.action} > Seleziona il tuo server
+
+---
+<!-- CP-NAV-END:baremetal-dedicated-servers -->
+
 ## Procedura
 
 ### Utilizza lo Spazio Cliente OVHcloud
-
-Nello [Spazio Cliente OVHcloud](/links/manager), seleziona il tuo server nella sezione `Bare Metal Cloud`{.action} e poi `Server dedicati`{.action}. 
 
 Nella scheda `Informazioni generali`{.action}, clicca sui tre puntini `...`{.action} in corrispondenza del Sistema operativo e seleziona `Installa`{.action}.
 
@@ -60,8 +69,6 @@ df -h
 ```
 
 ### Utilizza la modalità Rescue
-
-Nello [Spazio Cliente OVHcloud](/links/manager), seleziona il tuo server nella sezione `Bare Metal Cloud`{.action} e poi `Server dedicati`{.action}.
 
 Cerca "Boot" nel riquadro **Informazioni generali** e clicca su `...`{.action} poi su `Modifica`{.action} per cambiare il sistema di avvio.
 
@@ -120,4 +127,4 @@ MegaCli -LDInfo -Lall -a0 | grep -i size
 
 [Gestione del RAID hardware](/pages/bare_metal_cloud/dedicated_servers/raid_hard)
 
-Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.
+Contatta la nostra [Community di utenti](/links/community).

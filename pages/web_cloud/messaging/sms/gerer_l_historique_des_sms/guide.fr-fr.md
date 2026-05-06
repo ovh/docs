@@ -1,6 +1,6 @@
 ---
-title: 'Gérer l’historique des SMS'
-excerpt: 'Découvrez comment consulter l’historique de vos SMS envoyés depuis votre compte OVHcloud'
+title: "Gérer l’historique des SMS"
+excerpt: "Découvrez comment consulter l’historique de vos SMS envoyés depuis votre compte OVHcloud"
 updated: 2025-12-30
 ---
 
@@ -10,8 +10,18 @@ Votre espace client OVHcloud vous permet de consulter et télécharger l'histori
 
 ## Prérequis
 
-- Disposer d’un compte SMS OVHcloud avec au moins 1 SMS envoyé.
-- Être connecté à l'[espace client OVHcloud](/links/manager-telecom), partie `Télécom`{.action} puis `SMS`{.action}.
+- Disposer d'un compte SMS OVHcloud avec au moins 1 SMS envoyé.
+
+<!-- CP-NAV-START:telecom-sms -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [SMS](/links/control-panel/telecom-sms)
+- **Pour accéder à vos services :** `Télécom`{.action} > `SMS`{.action} > Sélectionnez votre compte SMS
+
+---
+<!-- CP-NAV-END:telecom-sms -->
 
 ![espace client Telecom SMS](/pages/assets/screens/control_panel/product-selection/telecom/tpl-telecom-03-fr-sms.png){.thumbnail}
 
@@ -26,11 +36,9 @@ L'historique comprend la date, l'heure, l'expéditeur, le destinataire ainsi que
 > Pour consulter des SMS plus anciens (jusqu'aux 12 derniers mois), vous devez télécharger l'historique de vos SMS au format CSV. Consultez [l'étape 2 de ce guide](#csv).
 >
 
-### Étape 1 : consulter l'historique dans votre espace client
+### Étape 1 : Consulter l'historique dans votre espace client
 
-Connectez-vous à votre [espace client](/links/manager) puis sélectionnez `Télécom`{.action}. Cliquez ensuite sur `SMS`{.action} et choisissez votre compte SMS.
-
-Dans la barre d'onglets, cliquez sur `SMS`{.action} puis sur `Gestions des SMS`{.action} pour accéder à l'historique de vos SMS unitaires ou sur `Gestions des campagnes`{.action} pour accéder à l'historique de vos campagnes de SMS.
+Dans la barre d'onglets, cliquez sur `Message et campagne`{.action} puis sur `Gestion des SMS`{.action} pour accéder à l'historique de vos SMS unitaires ou sur `Gestion des campagnes`{.action} pour accéder à l'historique de vos campagnes de SMS.
 
 Selon votre choix, cliquez ensuite sur `Historique des envois`{.action} ou `Statistiques et historique`{.action}.
 
@@ -44,7 +52,7 @@ La rubrique Actions `...`{.action} en face de chaque SMS vous permet de le consu
 
 ![sms-history](images/smshistory3.png){.thumbnail}
 
-Pour supprimer plusieurs SMS à la fois, il suffit de cocher les cases à côté de chacun d'entre eux. Le bouton `Supprimer les éléments sélectionnés`{.action} apparaitra alors au dessus de l'historique.
+Pour supprimer plusieurs SMS à la fois, il suffit de cocher les cases à côté de chacun d'entre eux. Le bouton `Supprimer les éléments sélectionnés`{.action} apparaîtra alors au-dessus de l'historique.
 
 ![sms-history](images/smshistory4.png){.thumbnail}
  
@@ -52,13 +60,13 @@ Le bouton `Filtrer`{.action} vous permet de filtrer la recherche par expéditeur
 
 ![sms-history](images/smshistory5.png){.thumbnail}
  
-### Étape 2 : télécharger l'historique de vos SMS en CSV <a name="csv"></a>
- 
-Cliquez sur le bouton `Actions`{.action} à gauche au dessus de votre historique puis sur `Télécharger`{.action} pour télécharger l'historique de vos SMS envoyés au format « .csv ». 
+### Étape 2 : Télécharger l'historique de vos SMS en CSV <a name="csv"></a>
+
+Cliquez sur le bouton `Actions`{.action} à gauche au-dessus de votre historique puis sur `Télécharger`{.action} pour télécharger l'historique de vos SMS envoyés au format « .csv ». 
  
 ![sms-history](images/smshistory6.png){.thumbnail}
  
-Vous pourrez alors consulter l'historique depuis un outil de type tableur. Les informations pourront être affichées comme dans l'exemple ci-dessous.
+Vous pourrez alors consulter l'historique depuis un outil de type tableur. Les informations s'afficheront comme dans l'exemple ci-dessous.
 
 ![sms-history](images/smshistory7.png){.thumbnail}
 
@@ -66,10 +74,10 @@ Voici le détail des informations contenues dans cet historique :
 
 |  Titre  |  Description  |
 |  :-----          |  :-----          |
-|  id |  l'idenfiant unique sur nos serveurs du SMS envoyé |
+|  id |  l'identifiant unique sur nos serveurs du SMS envoyé |
 |  date | la date et heure d'envoi du SMS  |
-|  sender |  l'expediteur depuis lequel le SMS a été envoyé |
-|  receiver |  le numero du mobile destinataire du SMS |
+|  sender |  l'expéditeur depuis lequel le SMS a été envoyé |
+|  receiver |  le numéro du mobile destinataire du SMS |
 |  ptt |  le code de retour sur le statut du SMS |
 |  operatorCode |  l'identifiant réseau de l'opérateur mobile à qui nous avons transmis le SMS |
 |  descriptionDlr |  la description du code ptt reçu et donc du statut du SMS |

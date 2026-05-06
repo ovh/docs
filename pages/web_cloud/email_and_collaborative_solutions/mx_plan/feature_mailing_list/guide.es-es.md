@@ -6,7 +6,7 @@ updated: 2025-04-28
 
 ## Objetivo
 
-Una lista de difusión permite contactar con los abonados en masa, es decir, transmitir un mensaje o una información a varios destinatarios a la vez. Dicha transmisión puede ser útil en el contexto de un email de información, por ejemplo, el lanzamiento de un nuevo producto (para un sitio web de <i>e-commerce</i>) o para informar sobre una próxima reunión (en el caso de un sitio web comunitario). 
+Una lista de difusión permite contactar con los abonados en masa, es decir, transmitir un mensaje o una información a varios destinatarios a la vez. Dicha transmisión puede ser útil en el contexto de un email de información, por ejemplo, el lanzamiento de un nuevo producto (para un sitio web de <i>e-commerce</i>) o para informar sobre una próxima reunión (en el caso de un sitio web comunitario).
 
 **Cómo gestionar las listas de difusión**
 
@@ -35,7 +35,17 @@ El remitente (<i>sender</i>) transmite el correo electrónico a la lista de difu
 ## Requisitos
 
 - Disponga al menos de una solución de correo electrónico MX Plan 100 o de un [Web hosting](/links/web/hosting) compatible con las listas de difusión.
-- Inicie sesión en el [área de cliente de OVHcloud](/links/manager).
+
+<!-- CP-NAV-START:web-mx-plan -->
+---
+
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [MX Plan](/links/control-panel/web-mx-plan)
+- **Ruta de navegación:** `Web Cloud`{.action} > `MX Plan`{.action} > Seleccione su servicio MX Plan
+
+---
+<!-- CP-NAV-END:web-mx-plan -->
 
 ## Procedimiento
 
@@ -47,11 +57,7 @@ El remitente (<i>sender</i>) transmite el correo electrónico a la lista de difu
 
 Para crear una lista de difusión:
 
-1. Conéctese a su [área de cliente de OVHcloud](/links/manager).
-1. Acceda al apartado `Web Cloud`{.action}.
-1. Haga clic en `MX Plan`{.action}.
-1. Seleccione el dominio.
-1. Acceda a la pestaña `Listas de difusión`{.action} de su servicio de correo electrónico.
+Acceda a la pestaña `Listas de difusión`{.action} de su servicio de correo electrónico.
 
 ![emails](images/manage_mailing-lists_01.png){.thumbnail}
 
@@ -86,7 +92,7 @@ Complete el formulario en función de la información recogida en la siguiente t
 
 ### Gestionar las opciones de la lista de difusión
 
-Para modificar las opciones de la lista de difusión, haga clic en `...`{.action} a la derecha de esta. Luego, podrá actualizar las opciones, eliminar la lista de difusión e, incluso, compartir la lista de abonados por correo electrónico. 
+Para modificar las opciones de la lista de difusión, haga clic en `...`{.action} a la derecha de esta. Luego, podrá actualizar las opciones, eliminar la lista de difusión e, incluso, compartir la lista de abonados por correo electrónico.
 
 ![emails](images/manage_mailing-lists_04.png){.thumbnail}
 
@@ -141,7 +147,7 @@ Hay dos métodos para añadir o eliminar moderadores:
 > [!primary]
 > - Cuando una lista de difusión tiene varios moderadores, solo se necesita la validación de uno de ellos para que el correo electrónico se transmita a todos los abonados.
 > - Cuando un moderador envía un correo electrónico a la lista de difusión, solo ese moderador recibe el correo electrónico de moderación.
-> 
+>
 
 La operación de adición de abonados tardará en función del número de abonados que se vaya a añadir.
 
@@ -251,6 +257,6 @@ A continuación, le presentamos una lista de archivos con los textos de las resp
 > Por ejemplo: Si desea modificar el pie de página por defecto de los correos electrónicos enviados a su lista de difusión, envíe un mensaje a la dirección `nombre_de_su_LD-edit.bottom@mydomain.ovh`. Luego, recibirá un nuevo correo electrónico en el que se explica cómo personalizar el pie de página.
 >
 
-## Más información
+## Más información <a name="go-further"></a>
 
 Interactúe con nuestra [comunidad de usuarios](/links/community).

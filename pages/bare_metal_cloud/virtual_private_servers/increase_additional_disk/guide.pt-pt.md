@@ -14,8 +14,18 @@ Se atingiu a capacidade máxima do seu disco adicional, pode adicionar armazenam
 
 - Um [VPS](/links/bare-metal/vps) na sua conta OVHcloud.
 - Um [disco adicional](/pages/bare_metal_cloud/virtual_private_servers/config_additional_disk) configurado no VPS.
-- Ter acesso à [Área de Cliente OVHcloud](/links/manager).
 - Ter acesso ao VPS por SSH ou RDP para a administração.
+
+<!-- CP-NAV-START:baremetal-vps -->
+---
+
+### Acesso à Área de Cliente OVHcloud
+
+- **Ligação direta:** [VPS management](/links/control-panel/baremetal-vps)
+- **Caminho de navegação:** `Bare Metal Cloud`{.action} > `Servidores Privados Virtuais`{.action} > Selecione o seu VPS
+
+---
+<!-- CP-NAV-END:baremetal-vps -->
 
 > [!warning]
 > Esta funcionalidade está atualmente indisponível para os servidores privados virtuais nas [Local Zones](/links/bare-metal/vps-lz).
@@ -27,9 +37,7 @@ Os passos abaixo sugerem que configurou um disco adicional seguindo as instruç�
 
 ### Modificar o tamanho do disco <a name="extend"></a>
 
-Ligue-se à sua [Área de Cliente OVHcloud](/links/manager), vá à secção `Bare Metal Cloud`{.action} e selecione o seu servidor entre os `Servidores privados virtuais`{.action}.
-
-No separador `Página Inicial` {.action}, na secção **A sua configuração**, clique em `...`{.action} ao lado da opção `Discos adicionais` e, a seguir, clique em `Aumentar o tamanho do disco`{.action}.
+No separador `Página Inicial`{.action}, na secção **A sua configuração**, clique em `...`{.action} ao lado da opção `Discos adicionais` e, a seguir, clique em `Aumentar o tamanho do disco`{.action}.
 
 ![size-disk-vps](images/increase_disk_vps01.png){.thumbnail}
 

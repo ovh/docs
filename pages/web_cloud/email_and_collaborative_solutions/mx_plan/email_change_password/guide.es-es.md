@@ -15,12 +15,45 @@ Es posible acceder a las cuentas de correo de su solución de OVHcloud mediante 
 
 ## Requisitos
 
-- Según el método utilizado: Estar conectado al [área de cliente de OVHcloud](/links/manager) en la sección `Web Cloud`{.action} o estar conectado a la dirección de correo electrónico desde el [webmail](/links/web/email).
 - Disponer de una solución de correo de OVHcloud previamente configurada, que incluya:
     - **MX Plan** ofrecido con nuestros [planes de hosting](/links/web/hosting) o incluido en un [alojamiento gratuito 100M](/links/web/domains-free-hosting).
-    - [Exchange](/links/web/emails).
+    - [Exchange](/links/web/emails-exchange).
     - [Email Pro](/links/web/email-pro).
     - [Zimbra](/links/web/emails-zimbra).
+
+<!-- CP-NAV-START:web-mx-plan -->
+<!-- CP-NAV-START:web-zimbra -->
+<!-- CP-NAV-START:web-email-pro -->
+<!-- CP-NAV-START:web-exchange -->
+---
+
+### Acceso al área de cliente de OVHcloud
+
+**MX Plan:**
+
+- **Enlace directo:** [MX Plan](/links/control-panel/web-mx-plan)
+- **Ruta de navegación:** `Web Cloud`{.action} > `MX Plan`{.action} > Seleccione su servicio MX Plan
+
+**Zimbra:**
+
+- **Enlace directo:** [Zimbra](/links/control-panel/web-zimbra)
+- **Ruta de navegación:** `Web Cloud`{.action} > `Zimbra Mail`{.action} > Seleccione su servicio Zimbra
+
+**Email Pro:**
+
+- **Enlace directo:** [Email Pro](/links/control-panel/web-email-pro)
+- **Ruta de navegación:** `Web Cloud`{.action} > `Email Pro`{.action} > Seleccione su plataforma
+
+**Exchange:**
+
+- **Enlace directo:** [Exchange](/links/control-panel/web-exchange)
+- **Ruta de navegación:** `Web Cloud`{.action} > `Exchange`{.action} > Seleccione su plataforma
+
+---
+<!-- CP-NAV-END:web-exchange -->
+<!-- CP-NAV-END:web-email-pro -->
+<!-- CP-NAV-END:web-zimbra -->
+<!-- CP-NAV-END:web-mx-plan -->
 
 ## Procedimiento
 
@@ -34,6 +67,8 @@ Es posible acceder a las cuentas de correo de su solución de OVHcloud mediante 
 >
 > Por motivos de seguridad, le recomendamos que no utilice dos veces la misma contraseña, que elija una que no guarde ninguna relación con sus datos personales (evite mencionar su nombre, apellidos y fecha de nacimiento, por ejemplo) y que la cambie periódicamente.
 
+<a name="whichmxplan"></a>
+
 > [!primary]
 >
 > **Identificar la tecnología de correo electrónico de su solución MX Plan.**
@@ -44,7 +79,7 @@ Es posible acceder a las cuentas de correo de su solución de OVHcloud mediante 
 >
 > ![MX plan](images/technology-email.png){.thumbnail .w-500}
 
-Desde el [área de cliente de OVHcloud](/links/manager), acceda al apartado `Web Cloud`{.action} y siga las indicaciones de su solución:
+Siga las indicaciones de su solución:
 
 > [!tabs]
 > **MXplan (versión histórica)**
@@ -99,7 +134,7 @@ La modificación de su contraseña a través del webmail está disponible para l
 
 <iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/xnq6wvANUFs" title="Vídeo de YouTube" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-Acceda a la página [Webmail](/links/web/email) e introduzca su dirección de correo electrónico completa y la contraseña actual. Haga clic en el botón `Conexión`{.action}. 
+Acceda a la página [Webmail](/links/web/email) e introduzca su dirección de correo electrónico completa y la contraseña actual. Haga clic en el botón `Conexión`{.action}.
 
 ![Correo electrónico](images/mxplan-password-new-step2.png){.thumbnail}
 

@@ -1,7 +1,7 @@
 ---
 title: "Cycle de vie de la solution VMware on OVHcloud"
-excerpt: "VMware on OVHcloud"
-updated: 2025-09-24
+excerpt: "Découvrez la politique de cycle de vie des services VMware on OVHcloud, incluant les phases de maintenance, sunset et fin de support"
+updated: 2026-05-06
 ---
 
 > [!warning]
@@ -15,12 +15,12 @@ updated: 2025-09-24
 
 Le service Hosted Private Cloud VMware on OVHcloud propose une infrastructure dédiée basée sur les technologies VMware SDDC ainsi que sur les technologies d'autres partenaires (Veeam, Zerto...).
 
-OVHcloud a une politique de cycle de vie du service afin de prendre en compte un certain nombre de facteurs, tels que :
+OVHcloud a une politique de cycle de vie du service pour prendre en compte plusieurs facteurs, tels que :
 
-* le cycle de vie des composants logiciels intégrés, tel que déterminé par leurs éditeurs (VMware, Veeam, Zerto, etc.) ;
-* le cycle de vie des composants matériels ;
-* la compatibilité entre composants matériels et/ou logiciels ;
-* les autres facteurs affectant la qualité du service.
+- le cycle de vie des composants logiciels intégrés, tel que déterminé par leurs éditeurs (VMware, Veeam, Zerto, etc.) ;
+- le cycle de vie des composants matériels ;
+- la compatibilité entre composants matériels et/ou logiciels ;
+- les autres facteurs affectant la qualité du service.
 
 Cette politique de cycle de vie est fournie pour aider les clients à comprendre les raisons sous-jacentes des changements de version ou de gamme, à évaluer l'impact de chaque phase du cycle de vie sur le service et à préparer la transition vers une nouvelle version ou gamme.
 
@@ -28,101 +28,90 @@ Cette politique de cycle de vie est fournie pour aider les clients à comprendre
 
 **Hosted Private Cloud VMware on OVHcloud** :
 
-- SDDC2014 et SDDC2016 (Intel Ivy Bridge, Intel Haswell).
-- SDDC2018 (Intel Broadwell, Intel Haswell).
-- Essentials (Intel Broadwell).
-- Premier (Intel Xeon Gold).
+- Public VMware Cloud Foundation as-a-Service
+- Managed VMware vSphere
+- Private VMware Cloud Foundation as-a-Service - 1AZ
+- Private VMware Cloud Foundation as-a-Service - Stretched Cluster 3AZ
 
 ## Chronologie du cycle de vie et définitions
 
 ### Définitions
 
-#### End of Sales
+#### Mode Maintenance
 
-Il s'agit de la date à laquelle les ventes d'un nouveau service pour une gamme ou une version commerciale sont arrêtées. Passé cette date, les clients ne pourront plus démarrer un service sur la gamme ou la version commerciale abandonnée.
+Dans le cadre de notre démarche d’innovation continue, nous avons décidé de concentrer nos efforts de développement sur des solutions plus récentes et avancées. Par conséquent, les services et fonctionnalités suivants passent en mode Maintenance. Cela signifie :
 
-Une fois qu'une gamme commerciale spécifique est déclarée en *End of Sales*, le client pourra toujours utiliser et développer des instances existantes du service et ajouter des serveurs hôtes individuels supplémentaires. Les packs de cette gamme commerciale précédente ou de toute autre gamme commerciale antérieure ne seront plus disponibles pour commander de nouvelles instances du service. Les packs seront commercialisés uniquement pour la nouvelle gamme commerciale lancée sur le marché.
+- Les clients existants utilisant ces fonctionnalités continueront de bénéficier du support, y compris des mises à jour critiques de sécurité et de disponibilité. Ils peuvent donc être assurés de la bonne continuité de leurs services.
+- Aucune nouvelle fonctionnalité ou amélioration ne sera ajoutée à ces services.
+- Les nouveaux clients ne pourront plus souscrire à ces services spécifiques.
 
-Les *End of Sales* sont généralement annoncées avec un préavis minimum de trente (30) jours.
+Nos équipes restent engagées pour vous accompagner dans cette transition et garantir une expérience fluide.
 
-Une gamme ou une version commerciale atteindra généralement sa fin de commercialisation trois (3) ans après le début de la phase de disponibilité générale.
+#### Mode Sunset
 
-#### End of Growth
+Le mode Sunset indique qu’un service ou une fonctionnalité approche de sa fin de support. À ce stade, le service ou la fonctionnalité reste disponible, mais ne bénéficie plus de mises à jour régulières, de nouvelles fonctionnalités ou de correctifs importants.
 
-Il s'agit de la date à laquelle la croissance d'une gamme ou d'une version commerciale est interrompue. Passé cette date, les clients ne pourront plus commander la gamme ou la version commerciale abandonnée.
+Durant cette phase, OVHcloud accompagne les clients dans la migration vers d’autres services ou solutions plus adaptées à leurs besoins en évolution. Notre objectif est d’assurer une transition fluide et de minimiser toute perturbation de l’activité.
 
-Les *End of Growth* sont généralement annoncées avec un préavis minimum de trente (30) jours.
+Pendant la phase Sunset, les clients peuvent s’attendre à :
 
-Une gamme ou une version commerciale atteindra généralement le niveau *End of Growth* cinq (5) ans après le début de la phase de disponibilité générale.
+- Un accès continu au service ou à la fonctionnalité, mais avec un support limité et sans nouveau développement.
+- Un accompagnement par OVHcloud pour la migration vers d’autres offres.
+- Une communication régulière sur la date de fin de support à venir et les prochaines étapes recommandées.
+- L’accès à la documentation et aux ressources dédiées pour faciliter la migration.
 
-#### End of Life
+#### Fin de Support
 
-Il s'agit de la date à laquelle une gamme ou une version commerciale est arrêtée.
-
-*End of Life* peut impliquer l'inapplicabilité des SLA, l'absence de services d'assistance et l'absence de pièces de rechange.
-
-Suite à la déclaration de *End of Life*, les serveurs concernés seront définitivement arrêtés. OVHcloud peut proposer un délai de grâce de quelques mois pour permettre aux derniers clients utilisant des serveurs de cette gamme de migrer vers des gammes plus récentes.
-
-Les clients doivent anticiper le changement de gamme en testant à l'avance et en s'assurant que leurs configurations et leurs logiciels sont compatibles avec la gamme vers laquelle ils migrent.
+Les services et fonctionnalités suivants ont atteint leur fin de support et ne sont plus disponibles.
 
 ### Chronologie
 
-![Cycle de vie typique](images/01_lifecycle_pcc.png){.thumbnail}
-
-### Résumé
-
-Le tableau suivant présente un résumé des différentes phases du cycle de vie du service. L'impact pour chaque gamme commerciale peut différer.
-
-|                    Phases                     | Disponibilité générale | Assistance générale | Période de grâce / Déclassement |
-|:---------------------------------------------:|:----------------------:|:-------------------:|:-------------------------------:|
-|    Ventes (démarrer de nouveaux services)     |           X            |                     |                                 |
-|        Croissance (services existants)        |           X            |          X          |                                 |
-| Mises à jour et mises à niveau de maintenance |           X            |          X          |                                 |
-|                  Assistance                   |           X            |          X          |                                 |
-|                      SLA                      |           X            |          X          |                                 |
-|              Corrections de bugs              |           X            |          X          |                                 |
-|  Assistance matérielle (pièces de rechange)   |           X            |          X          |                                 |
-|            Correctifs de sécurité             |           X            |          X          |                X                |
-|             Base de connaissances             |           X            |          X          |                X                |
+![Cycle de vie typique d'un service VMware on OVHcloud](images/01_lifecycle_pcc.png){.thumbnail}
 
 ## Statut de la gamme commerciale OVHcloud
 
-### Hôtes (calcul)
+### Produits (Plateformes)
 
-|                   Commercial Range                    | General Availability | End of Sales | End of Growth | End of Life |
+|                   Commercial Range                    | Disponibilité générale| Mode Maintenance | Mode Sunset | Fin de Support |
 |:-----------------------------------------------------:|:--------------------:|:------------:|:-------------:|:-----------:|
-| SDDC2014 & SDDC2016 (Intel Ivy Bridge, Intel Haswell) |          2016        |  2017-04-30  |  2026-03-30   | 2027-07-31  |
-|              SDDC2018 (Intel Broadwell)               |          2018        |  2018-11-30  |  2026-03-30   | 2027-07-31  |
-|             Essentials (Intel Broadwell)              |          2020        |  2026-02-28  |  2026-03-30   | 2027-07-31  |
-|               Premier (Intel Xeon Gold)               |          2020        |  2026-02-28  |  2027-03-31   | 2028-10-31  |
-|           Gen2 hardware (Intel Emerald Rapids)        |          2026        |              |               |             |
+|     Managed VMware vSphere                            |          2016        |  2027-05-31  |  2027-10-31   | 2027-10-31  |
+|     Public VMware Cloud Foundation as-a-Service       |          2025        |              |               |             |
+|Private VMware Cloud Foundation as-a-Service - 1AZ                  |          2027        |              |               |             |
+|Private VMware Cloud Foundation as-a-Service - Stretched Cluster 3AZ|          2027        |              |               |             |
+
+### Hôtes Managed VMware vSphere (calcul)
+
+Pour le produit Managed VMware vSphere, un cycle de vie matériel spécifique s’applique :
+
+- **Sales** désigne la date à partir de laquelle la création de nouveaux clusters n’est plus possible. Au-delà de cette date, les clients ne peuvent plus démarrer de service sur ce matériel.
+- **Growth** désigne la date à partir de laquelle l’ajout de nouveaux nœuds pour un cluster existant n’est plus possible. Au-delà de cette date, les clients ne peuvent plus commander cette génération matérielle. Cela n’affecte toutefois pas les engagements contractuels pour les clusters existants (mises à jour, pièces de rechange, SLA).
+
+|                   Génération matérielle               | General Availability |    Sales    |     Growth     | Fin de Support |
+|:-----------------------------------------------------:|:--------------------:|:------------:|:-------------:|:-----------:|
+| SDDC2014 & SDDC2016 (Intel Ivy Bridge, Intel Haswell) |          2016        |  2017-04-30  |  2026-06-01   | 2027-05-31  |
+|              SDDC2018 (Intel Broadwell)               |          2018        |  2018-11-30  |  2026-06-01   | 2027-05-31  |
+|             Essentials (Intel Broadwell)              |          2020        |  2026-06-01  |  2026-06-01   | 2027-05-31  |
+|               Premier (Intel Xeon Gold)               |          2020        |  2026-05-29  |  2027-03-30   | 2027-10-31  |
+|           Premier2026 (Intel Emerald Rapids)          |          2026        |  2027-06-30  |               |             |
+|           Premier2027 (Intel Granite Rapids)          |          2027        |              |               |             |
 
 ## Logiciels intégrés
 
 ### Cycle de vie VMware
 
-Pour connaître la politique de cycle de vie des produits VMware, merci de vous référer à la publication de l'éditeur accessible à l'url suivante :
+Pour connaître la politique de cycle de vie des produits VMware, consultez la page de l'éditeur :
 
-[VMware Lifecycle](https://lifecycle.vmware.com/#/)
-
-#### NSX Datacenter for vSphere
-
-Vous pouvez connaître votre version de NSX-v dans la section « Networking and security » de vSphere, puis dans l'onglet « about NSX ».<br>
-Si la version est antérieure à 6.4.12, nous vous invitons à contacter nos équipes du support afin de procéder à la mise à jour de ce composant.
-
-VMware a étendu le support de NSX Datacenter for vSphere sur les infrastructures OVHcloud jusqu'au 31/07/2024. Vous devrez migrer depuis NSX Datacenter for vSphere vers NSX (NSX-T) avant cette date (31/07/2024).
+[VMware Lifecycle](https://support.broadcom.com/group/ecx/productlifecycle)
 
 ### Cycle de vie Veeam Backup & Replication
 
-Pour connaître la politique de cycle de vie des produits Veeam, merci de vous référer aux publications de l'éditeur accessibles aux URL suivantes :
-
-- [Veeam Version Release](https://www.veeam.com/releasestatus_rn.pdf)
+Pour connaître la politique de cycle de vie des produits Veeam, consultez la page de l'éditeur :
 
 - [Veeam Lifecycle](https://www.veeam.com/product-lifecycle.html)
 
 ### Cycle de vie Zerto
 
-Pour connaître la politique de cycle de vie des produits Zerto, merci de vous référer à la publication de l'éditeur accessible à l'URL suivante :
+Pour connaître la politique de cycle de vie des produits Zerto, consultez la page de l'éditeur :
 
 - [Zerto Virtual Replication Product Version Lifecycle Matrix](https://help.zerto.com/bundle/Lifecycle.Matrix.HTML/page/Content/Lifecycle_Matrix/Lifecycle_Matrix.htm#zerto_virtual_replication_product_version_lifecycle_matrix_r_893035264_1010900)
 

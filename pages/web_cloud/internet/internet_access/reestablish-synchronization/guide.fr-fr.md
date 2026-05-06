@@ -8,12 +8,14 @@ updated: 2018-09-18
 
 Une coupure de synchronisation est généralement occasionnée par un élément se situant à votre domicile. Quelques vérifications et manipulations simples peuvent vous permettre de dépanner vous-même la situation et de rétablir votre accès à Internet.
 
-**Découvrez comment rétablir la synchronisation de votre ligne xDSL OVH suite à une coupure.**
+**Découvrez comment rétablir la synchronisation de votre ligne xDSL OVHcloud suite à une coupure.**
 
+<!-- CP-STEPS-START:diagnostic-callout -->
 > [!primary]
 >
-> Pour vous accompagner au mieux dans le rétablissement de vos services, vous avez également la possibilité d'utiliser notre assistant de dépannage. Pour y accéder, connectez-vous à votre [espace client OVHcloud](/links/manager) dans la section « Télécom ». Une fois positionné sur l'accès Internet concerné, cliquez sur `Lancer le diagnostic`{.action}. 
+> Pour vous accompagner au mieux dans le rétablissement de vos services, vous avez également la possibilité d'utiliser notre assistant de dépannage. Pour y accéder, connectez-vous à votre [espace client OVHcloud](/links/control-panel/telecom-xdsl-fttx) dans la section « Télécom ». Une fois positionné sur l'accès Internet concerné, cliquez sur `Lancer le diagnostic`{.action}. 
 >
+<!-- CP-STEPS-END:diagnostic-callout -->
 
 ## Prérequis
 
@@ -35,7 +37,7 @@ Ces quelques vérifications peuvent vous permettre de savoir si le dysfonctionne
 
 Rendez-vous sur la page <https://status.isp.ovhcloud.com/> et vérifiez si votre accès est affecté par incident en cours. Dès lors, deux possibilités :
 
-- **votre accès est affecté** : prenez connaissance des éléments renseignés sur la page, puis patientez le temps de la résolution de l'incident;
+- **votre accès est affecté** : prenez connaissance des éléments renseignés sur la page, puis patientez le temps de la résolution de l'incident ;
 
 - **votre accès n'est pas affecté** : poursuivez vers la vérification suivante.
 
@@ -45,7 +47,7 @@ Assurez-vous que celle-ci fonctionne correctement : identifiez-vous des grésill
 
 Ces éléments peuvent vous indiquer qu'une panne plus globale peut affecter par répercussion votre connexion. Cette dernière utilise en effet votre ligne fixe et peut donc affecter votre accès à Internet si celle-ci dysfonctionne. Pour le savoir, prenez contact avec l'opérateur gérant votre ligne fixe afin qu'il puisse la tester. Dès lors, deux possibilités :
 
-- **votre ligne fixe dysfonctionne** : reportez-vous aux instructions communiquées par votre opérateur, puis patientez jusqu'à la résolution de l'incident;
+- **votre ligne fixe dysfonctionne** : reportez-vous aux instructions communiquées par votre opérateur, puis patientez jusqu'à la résolution de l'incident ;
 
 - **votre ligne fixe fonctionne correctement** : poursuivez vers la vérification suivante.
 
@@ -105,7 +107,7 @@ Celui à trois pattes pouvant perturber le signal DSL, nous vous recommandons de
 
 Testez à présent votre modem sur une autre prise téléphonique se trouvant dans votre logement. En fonction de votre installation locale, ce test peut être effectué de deux manières :
 
-- **vous disposez d'une prise de test « DTI »** : cette dernière est installée en amont de votre installation. Elle a l'avantage de tester votre ligne en entrée tout en isolant le reste de votre installation (cela signifie qu'en reliant quelque chose dessus, toutes les autres prises téléphoniques ne fonctionneront plus pendant ce laps de temps). Si vous disposez d'une telle prise dans votre logement, nous vous recommandons vivement d'effectuer le test sur cette dernière;
+- **vous disposez d'une prise de test « DTI »** : cette dernière est installée en amont de votre installation. Elle a l'avantage de tester votre ligne en entrée tout en isolant le reste de votre installation (cela signifie qu'en reliant quelque chose dessus, toutes les autres prises téléphoniques ne fonctionneront plus pendant ce laps de temps). Si vous disposez d'une telle prise dans votre logement, nous vous recommandons vivement d'effectuer le test sur cette dernière ;
 
 - **vous ne disposez pas d'une prise de test « DTI »** : dans ce cas, nous vous recommandons d'effectuer le test sur la première prise téléphonique installée dans votre logement. Cette dernière se situe généralement près de votre compteur électrique ou de la gaine technique de votre habitation.
 

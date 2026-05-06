@@ -16,6 +16,17 @@ updated: 2020-11-23
 
 - Uma [Instância Public Cloud](/links/public-cloud/public-cloud) na sua conta OVHcloud
 
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Acesso à Área de Cliente OVHcloud
+
+- **Ligação direta:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Caminho de navegação:** `Public Cloud`{.action} > Selecione o seu projeto
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
+
 ## Instruções
 
 > [!warning]
@@ -49,8 +60,8 @@ grub2-install /dev/sdb
 grub2-mkconfig -o /boot/grub2/grub.cfg
 ```
 
-Agora pode retirar a instância do modo rescue. (Ver o guia [Passar uma instância em modo rescue](/pages/public_cloud/compute/put_an_instance_in_rescue_mode))
+Agora pode retirar a instância do modo rescue. (Ver o guia [Passar uma instância em modo rescue](/pages/public_cloud/compute/put_an_instance_in_rescue_mode)).
 
 ## Saiba mais
 
-Junte-se à nossa comunidade de utilizadores em <https://community.ovh.com/en/>.
+Fale com nossa [comunidade de utilizadores](/links/community).

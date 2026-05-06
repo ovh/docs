@@ -1,6 +1,6 @@
 ---
-title: Tutoriel - Configurer le mode bridge sur pfSense
-excerpt: 'Apprenez à configurer le mode bridge sur une machine virtuelle Pfsense'
+title: "Configurer le bridge réseau pfSense sur un serveur dédié"
+excerpt: "Configurez le bridge IP sur une machine virtuelle pfSense hébergée sur un serveur dédié OVHcloud pour le routage réseau"
 updated: 2025-04-28
 ---
 
@@ -11,8 +11,18 @@ La mise en réseau en mode bridge peut être utilisée pour configurer votre mac
 ## Prérequis
 
 - Avoir un serveur dédié avec un hyperviseur installé, par exemple [VMware ESXi](https://www.vmware.com/products/cloud-infrastructure/vsphere), [Citrix Xenserver](https://www.citrix.com/products/citrix-hypervisor/), [Proxmox](https://www.proxmox.com/en/proxmox-ve), etc.
-- Avoir au moins une adresse [Additional IP](/links/network/additional-ip) connectée au serveur 
-- Être connecté à votre [espace client OVHcloud](/links/manager)
+- Avoir au moins une adresse [Additional IP](/links/network/additional-ip) connectée au serveur
+
+<!-- CP-NAV-START:baremetal-dedicated-servers -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Serveurs dédiés](/links/control-panel/baremetal-dedicated-servers)
+- **Pour accéder à vos services :** `Bare Metal Cloud`{.action} > `Serveurs dédiés`{.action} > Sélectionnez votre serveur
+
+---
+<!-- CP-NAV-END:baremetal-dedicated-servers -->
 
 ## Recommandations pour votre machine virtuelle pfSense
 
@@ -43,15 +53,15 @@ Dans votre [espace client OVHcloud](/links/manager), cliquez sur `Network`{.acti
 
 Cliquez sur l'onglet `Additional IP`{.action}.
 
-![Ajouter une MAC virtuelle (1)](images/manageIPs.png){.thumbnail} 
+![Onglet Additional IP dans l'espace client OVHcloud](images/manageIPs.png){.thumbnail} 
 
 Cliquez sur le bouton `...`{.action} à côté de l'Additional IP de votre choix puis sur `Ajouter une MAC virtuelle`{.action}.
 
-![Ajouter une MAC virtuelle (1)](images/addvmac.png){.thumbnail}
+![Menu contextuel avec option Ajouter une MAC virtuelle](images/addvmac.png){.thumbnail}
 
 Sélectionnez « ovh » dans la liste déroulante `Type`, tapez un nom dans le champ `Nom de la machine virtuelle` puis cliquez sur `Valider`{.action}.
 
-![Ajouter une MAC virtuelle (2)](images/addvmac2.png){.thumbnail}
+![Dialogue de configuration du type et du nom de la MAC virtuelle](images/addvmac2.png){.thumbnail}
 
 #### Déterminer l'adresse de la passerelle
 
@@ -81,9 +91,9 @@ Comme notre réseau requiert que l'IP publique utilise un masque de sous-réseau
 
 Dans cet exemple, nous avons deux interfaces `enp1s0` et `enp2s0` mais l'interface `enp1s0` est déjà « bridged » avec l'interface `vmbr0`. Il faudra donc faire une interface bridge supplémentaire `vmbr1` avec `enp2s0` :
 
-![Nouveau pont 1](images/hypervisor-1_1.png){.thumbnail}
+![Liste des interfaces réseau Proxmox avec bridge existant](images/hypervisor-1_1.png){.thumbnail}
 
-![Nouveau pont 2](images/hypervisor-1_2.png){.thumbnail}
+![Création d'une seconde interface bridge vmbr1 dans Proxmox](images/hypervisor-1_2.png){.thumbnail}
 
 Veuillez noter que si votre serveur ne dispose pas d'une seconde interface réseau, il n'est pas nécessaire de le relier à une interface. Le bridge fonctionnera bien mais pourra uniquement router en interne sur le serveur.<br>
 L'utilisation d'une interface sur un réseau bridge vous permet de router vers d'autres machines virtuelles, serveurs dédiés, instances Public Cloud et même des infrastructures Hosted Private Cloud à l'aide du vRack. 
@@ -97,48 +107,48 @@ Nous allons commencer par la création de la machine virtuelle pfSense.
 - Sous l’onglet `Network`{.action}, « Bridge » doit être `vmbr0`.
 - Toujours sous l'onglet `Network`{.action}, « Model » doit être : `VirtIO (paravirtualized)`
 
-![Nouvelle vm 1](images/pfsense-vm-1.png){.thumbnail}
+![Assistant de création de VM Proxmox avec sélection du type d'OS](images/pfsense-vm-1.png){.thumbnail}
 
 Si votre CPU dispose du jeu d’instructions AES, celui-ci doit être activé (depuis l'onglet `CPU`{.action})
 
-![Nouvelle vm 2](images/pfsense-vm-2.png){.thumbnail}
+![Activation du jeu d'instructions AES dans les paramètres CPU de la VM](images/pfsense-vm-2.png){.thumbnail}
 
 Dans l'onglet `Network`{.action} de la création de la machine virtuelle, assurez-vous de renseigner `l'adresse MAC virtuelle` créée dans votre espace client.
 
-![Nouvelle vm 3](images/pfsense-vm-3.png){.thumbnail}
+![Saisie de l'adresse MAC virtuelle dans les paramètres réseau de la VM](images/pfsense-vm-3.png){.thumbnail}
 
 Après la création de la machine virtuelle, vous devrez vous assurer qu'une seconde interface réseau est créée sur votre deuxième bridge :
 
-![Nouvelle vm 3](images/pfsense-vm-4_1.png){.thumbnail}
+![Ajout d'une seconde interface réseau a la VM pfSense](images/pfsense-vm-4_1.png){.thumbnail}
 
-![Nouvelle vm 4](images/pfsense-vm-4_2.png){.thumbnail}
+![Seconde interface réseau assignee au bridge vmbr1](images/pfsense-vm-4_2.png){.thumbnail}
 
 #### Création des machines virtuelles : Bureau virtuel 
 
 Étant donné que certains paramètres de pfSense sont accessibles à l'aide de son interface graphique Web, la méthode la plus simple est d'installer un bureau virtuel. 
 Dans ce tutoriel, nous utilisons un ISO Ubuntu 20.04. Lors de la création du bureau virtuel, assurez-vous que l'interface bridge choisie est l'interface secondaire et non l'interface bridge vers votre réseau public.
 
-![Nouvelle vm 5](images/desktop-vm-1.png){.thumbnail}
+![Création d'une VM Ubuntu desktop avec bridge secondaire sélectionné](images/desktop-vm-1.png){.thumbnail}
 
 Nous allons démarrer le bureau virtuel avant de démarrer la machine virtuelle pfSense. Dans cet exemple, nous allons juste sélectionner `Try Ubuntu`{.action} pour commencer à travailler sur pfSense. Nous l'installerons plus tard.
 
-![Nouvelle vm 6](images/desktop-vm-2.png){.thumbnail}
+![Bureau live Ubuntu avec option Essayer Ubuntu selectionnee](images/desktop-vm-2.png){.thumbnail}
 
 #### La console pfSense
 
 Nous allons maintenant démarrer la machine virtuelle pfSense et procéder à l'installation du système d'exploitation.
 
-![Configuration pfSense 1](images/pfsense-vm-5.png){.thumbnail}
+![Ecran d'accueil de l'installation de pfSense](images/pfsense-vm-5.png){.thumbnail}
 
 Une fois l'installation du système d'exploitation terminée, pfSense demandera en premier lieu de configurer les VLAN. Puisque pfSense est installé dans un hyperviseur, nous ne suggérons pas de le configurer sur la machine virtuelle. Si toutefois vous avez besoin de VLANs, configurez-les sur l'interface virtuelle au niveau de l'hyperviseur.
 
-![Configuration pfSense 2](images/pfsense-vm-6.png){.thumbnail}
+![Invite de configuration VLAN de pfSense apres installation](images/pfsense-vm-6.png){.thumbnail}
 
 L'étape suivante consiste à choisir l'interface qui sera votre `WAN` et celle qui sera votre `LAN`. Nous pourrons voir laquelle sera le `WAN` en voyant qu'elle a `l'adresse MAC virtuelle` qui a été créée dans l'espace client OVHcloud.
 
-![Configuration pfSense 3](images/pfsense-vm-7.png){.thumbnail}
+![Sélection des interfaces WAN et LAN pfSense par adresse MAC](images/pfsense-vm-7.png){.thumbnail}
 
-![Configuration pfSense 4](images/pfsense-vm-8.png){.thumbnail}
+![Console pfSense confirmant les attributions WAN et LAN](images/pfsense-vm-8.png){.thumbnail}
 
 Dans cet exemple, nous avons choisi `vtnet0` comme `WAN` et `vtnet1` comme `LAN`. Après cette étape, pfSense vous demandera si vous souhaitez poursuivre et confirmer quelle interface est `WAN` et `LAN.` Après validation, il configurera automatiquement `192.168.1.1` sur son interface `LAN`.
 
@@ -148,17 +158,17 @@ Maintenant qu’une IP privée est assignée à l’interface `LAN` de notre mac
 
 Rendez-vous dans les Paramètres réseau sur la VM Ubuntu.
 
-![desktop net enable 1](images/desktop-vm-3_1.png){.thumbnail}
+![Panneau des paramètres réseau filaire de la VM Ubuntu](images/desktop-vm-3_1.png){.thumbnail}
 
 Activons maintenant le réseau. S'il était déjà activé, il suffit de le désactiver puis de l'activer à nouveau.
 
-![desktop net enable 2](images/desktop-vm-3_2.png){.thumbnail}
+![Activation de la connexion réseau filaire sur la VM Ubuntu](images/desktop-vm-3_2.png){.thumbnail}
 
 Ouvrez un navigateur web et entrez `192.168.1.1`{.action} dans l'URL. Vous obtiendrez un avertissement de sécurité sur l'interface mais vous n'avez pas à vous en préoccuper. Cliquez sur `Avancé` puis sur `Accepter et continuer`{.action}.
 
-![desktop pfsense access 1](images/desktop-vm-4_1.png){.thumbnail}
+![Avertissement de sécurité du navigateur lors de l'acces a l'interface pfSense](images/desktop-vm-4_1.png){.thumbnail}
 
-![desktop pfsense access 1](images/desktop-vm-4_2.png){.thumbnail}
+![Acceptation de l'exception de sécurité pour acceder a pfSense](images/desktop-vm-4_2.png){.thumbnail}
 
 Par défaut, le nom d'utilisateur est `admin` et le mot de passe `pfsense`. Connectez-vous.
 
@@ -166,53 +176,53 @@ Nous allons maintenant passer en revue la configuration générale.<br>
 Véillez à définir `SelectedType`{.action} sur `Static`, sous `Configure WAN Interface` (étape 4 sur 9).<br>
 Tous les autres paramètres ne doivent pas être modifiés, à l'exception du DNS. Dans notre exemple, nous avons indiqué `213.186.33.99` car il s'agit de notre résolveur au sein de notre réseau.
 
-![Configuration pfSense 3](images/pfsense-vm-9.png){.thumbnail}
+![Assistant de configuration generale pfSense avec WAN en mode Static](images/pfsense-vm-9.png){.thumbnail}
 
 A ce stade, la VM pfSense n'a pas d'IP publique. Cliquez sur l'icône de menu en haut à droite, puis sur `Interfaces`{.action} et sélectionnez `WAN`{.action}.
 
-![Configuration pfSense 4](images/pfsense-vm-10_1.png){.thumbnail}
+![Retour a l'interface WAN pour assigner la passerelle](images/pfsense-vm-10_1.png){.thumbnail}
 
 Assurez-vous que les paramètres correspondent à ceux affichés dans les captures d'écran ci-dessous et entrez votre `Additional IP`. La `passerelle IPv4 Upstream` (en amont) sera configurée ultérieurement.
 
-![Configuration de pfSense 5](images/pfsense-vm-10_2.png){.thumbnail}
+![Paramètres de l'interface WAN avec Additional IP et sous-réseau /32](images/pfsense-vm-10_2.png){.thumbnail}
 
-![pfSense setup 6](images/pfsense-vm-10_3.png){.thumbnail}
+![Sauvegarde des modifications de configuration de l'interface WAN](images/pfsense-vm-10_3.png){.thumbnail}
 
 Maintenant que nous avons une IP publique sur l'interface, nous allons nous assurer qu'elle sera correctement routée sur notre réseau. Cliquez sur l'icône de menu en haut à droite. Cliquez ensuite sur `Système`{.action} et sélectionnez `Routage`{.action}.
 
-![pfSense setup 7](images/pfsense-vm-11_1.png){.thumbnail}
+![Menu System de pfSense avec sélection de la configuration du routage](images/pfsense-vm-11_1.png){.thumbnail}
 
 Assurez-vous que les paramètres correspondent à ceux affichés dans la capture d'écran ci-dessous, puis cliquez sur le bouton `Ajouter`{.action} pour créer votre passerelle.
 
-![pfSense setup 8](images/pfsense-vm-11_2.png){.thumbnail}
+![Page des passerelles de routage avec bouton Ajouter mis en évidence](images/pfsense-vm-11_2.png){.thumbnail}
 
-![Configuration pfSense 9](images/pfsense-vm-11_3.png){.thumbnail}
+![Formulaire de création d'une nouvelle passerelle dans pfSense](images/pfsense-vm-11_3.png){.thumbnail}
 
 Assurez-vous que les paramètres correspondent à ceux affichés dans les captures d'écran ci-dessous et entrez votre `IP de passerelle`. Veillez à bien ouvrir les paramètres avancés.
 
-![Configuration pfSense 10](images/pfsense-vm-11_4.png){.thumbnail}
+![Paramètres d'adresse IP et d'interface de la passerelle](images/pfsense-vm-11_4.png){.thumbnail}
 
-![Configuration pfSense 11](images/pfsense-vm-11_5.png){.thumbnail}
+![Paramètres avances de la passerelle avec configuration upstream](images/pfsense-vm-11_5.png){.thumbnail}
 
-![Configuration de pfSense 12](images/pfsense-vm-11_6.png){.thumbnail}
+![Sauvegarde de la nouvelle configuration de passerelle](images/pfsense-vm-11_6.png){.thumbnail}
 
-![Configuration de pfSense 14](images/pfsense-vm-11_7.png){.thumbnail}
+![Liste des passerelles affichant la nouvelle passerelle upstream créée](images/pfsense-vm-11_7.png){.thumbnail}
 
 Maintenant que nous avons une passerelle en amont, nous allons devoir attribuer la passerelle à l'interface `WAN`. Cliquez à nouveau sur l'icône de menu en haut à droite, puis sur `Interfaces`{.action} et sélectionnez `WAN`{.action}. 
 
-![Configuration de pfSense 14](images/pfsense-vm-10_1.png){.thumbnail}
+![Retour a l'interface WAN pour assigner la passerelle](images/pfsense-vm-10_1.png){.thumbnail}
 
-![Configuration de pfSense 15](images/pfsense-vm-11_8.png){.thumbnail}
+![Sélection de la passerelle upstream sur l'interface WAN](images/pfsense-vm-11_8.png){.thumbnail}
 
 Étant donné que nous utilisons pfSense comme machine virtuelle et qu'il ne dispose pas de sa propre carte réseau dédiée, certaines modifications doivent être apportées. Cliquez sur l'icône de menu en haut à droite, puis sur `Système`{.action} et sélectionnez `Avancé`{.action}.
 
-![pfSense optimization 1](images/pfsense-vm-trouble-1_1.png){.thumbnail}
+![Menu System de pfSense avec sélection des paramètres avances](images/pfsense-vm-trouble-1_1.png){.thumbnail}
 
 Dans ce menu, sélectionnez l'onglet `Mise en réseau`{.action}. En bas de ce menu, assurez-vous que les paramètres correspondent à ceux affichés dans les captures d'écran ci-dessous.
 
-![pfSense optimization 2](images/pfsense-vm-trouble-1_2.png){.thumbnail}
+![Onglet Networking avance avec hardware checksum offloading desactive](images/pfsense-vm-trouble-1_2.png){.thumbnail}
 
-![pfSense optimization 3](images/pfsense-vm-trouble-1_3.png){.thumbnail}
+![Sauvegarde des optimisations réseau avancees pour environnement VM](images/pfsense-vm-trouble-1_3.png){.thumbnail}
 
 La configuration est maintenant terminée ! Vous devriez voir que la navigation sur le web peut se faire exactement comme sur un bureau derrière un pare-feu NAT.
 
@@ -228,5 +238,9 @@ Si vous n'avez pas l'intention d'utiliser Proxmox, nous vous suggérons de consu
 [https://docs.netgate.com/pfsense/en/latest/recipes/virtualize-hyper-v.html](https://docs.netgate.com/pfsense/en/latest/recipes/virtualize-hyper-v.html)
 
 ## Aller plus loin
+
+[Configurer des Additional IP en mode bridge sur vos machines virtuelles](/pages/bare_metal_cloud/dedicated_servers/network_bridging)
+
+[Activer et configurer le Edge Network Firewall](/pages/bare_metal_cloud/dedicated_servers/firewall_network)
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).

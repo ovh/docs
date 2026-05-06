@@ -6,7 +6,7 @@ updated: 2025-05-23
 
 ## Objective
 
-This tutorial explains how to set up user/password authentication to access all or part of your website via an internet browser. 
+This tutorial explains how to set up user/password authentication to access all or part of your website via an Internet browser. 
 
 You can do this by using two Apache configuration files (HTTP) to place in [the FTP space](/pages/web_cloud/web_hosting/ftp_connection) of your web hosting plan: 
 
@@ -27,7 +27,6 @@ You can do this by using two Apache configuration files (HTTP) to place in [the 
 ## Requirements
 
 - An [OVHcloud web hosting plan](/links/web/hosting)
-- Access to the [OVHcloud Control Panel](/links/manager)
 - The login details to access [your web hosting plan’s FTP storage space](/pages/web_cloud/web_hosting/ftp_connection)
 
 ## Instructions

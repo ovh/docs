@@ -22,7 +22,17 @@ You have just purchased an MX Plan email solution. It allows you to benefit from
     - A [Web Hosting](/links/web/hosting) offer.
     - A [100M free hosting](/links/web/domains-free-hosting) included with a domain name (activated beforehand).
     - An MX Plan solution ordered separately.
-- Access to the [OVHcloud Control Panel](/links/manager), in the `Web Cloud`{.action} section
+
+<!-- CP-NAV-START:web-mx-plan -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [MX Plan](/links/control-panel/web-mx-plan)
+- **Navigation path:** `Web Cloud`{.action} > `MX Plan`{.action} > Select your MX Plan service
+
+---
+<!-- CP-NAV-END:web-mx-plan -->
 
 > [!primary]
 >
@@ -33,11 +43,7 @@ You have just purchased an MX Plan email solution. It allows you to benefit from
 
 ## Instructions <a name="instructions"></a>
 
-1. Log in to your [OVHcloud Control Panel](/links/manager).
-1. Open the `Web Cloud`{.action} section.
-1. Click `MX Plan`{.action}.
-1. Select the domain concerned.
-1. **Continue with the email technology used by your MX Plan service**.
+**Continue with the email technology used by your MX Plan service**.
 
 > [!primary]
 >
@@ -55,6 +61,7 @@ This section documents MX Plan offers using the **OWA** and **Zimbra** webmail t
 
 #### Create an email account
 
+<!-- CP-STEPS-START:owa-zimbra-create-account -->
 To set up a new email account, go to the `Email accounts`{.action} tab. The window that opens will display the email accounts that are already available, as well as those you can still create. Next, click the `Add Account`{.action} button.
 
 ![email](images/mxplan-creation-new-step2.png){.thumbnail .w-400}
@@ -92,9 +99,11 @@ Once you have filled in all of the required fields, click `Next`{.action}.
 Next, check that all the information displayed in the summary is correct. If it is, click `Confirm`{.action}. The account you have just added will now appear in the table. You will need to wait a few minutes for the account to become available.
 
 Repeat this step as necessary according to the number of accounts to create.
+<!-- CP-STEPS-END:owa-zimbra-create-account -->
 
 #### View emails
 
+<!-- CP-STEPS-START:owa-zimbra-view-emails -->
 On the [Webmail login page](/links/web/email), enter your email address and password. Then click the `Login`{.action} button.
 
 Select the tab corresponding to the email technology of your MX Plan solution:
@@ -108,16 +117,18 @@ Select the tab corresponding to the email technology of your MX Plan solution:
 >>
 > **OWA**
 >>
->> When you log in to the webmail for the first time, you are prompted to set the interface language and the time zone you are in. Your inbox will then appear. To find out how to use your email address via the Outlook Web App (OWA), please use our guide on [Using an email address via the Outlook Web App (OWA)](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa) .
+>> When you log in to the webmail for the first time, you are prompted to set the interface language and the time zone you are in. Your inbox will then appear. To find out how to use your email address via the Outlook Web App (OWA), please use our guide on [Using an email address via the Outlook Web App (OWA)](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa).
 >>
 >>![email](images/mxplan-creation-new-step5.png){.thumbnail .w-400}
 
 To view your emails using an email client, please refer to the section ["View an email account from a device"](#configdevices).
+<!-- CP-STEPS-END:owa-zimbra-view-emails -->
 
 #### Delete an email account
 
 With a new MX Plan service, deleting an account is referred to as *resetting an account*.
 
+<!-- CP-STEPS-START:owa-zimbra-delete-account -->
 > [!warning]
 >
 > Before deleting email accounts, make sure they are not used. You may need to back up these accounts. If required, please refer to our guide on [Migrating your email address manually](/pages/web_cloud/email_and_collaborative_solutions/migrating/manual_email_migration), which explains how to export account data from your Control Panel or email software.
@@ -125,6 +136,7 @@ With a new MX Plan service, deleting an account is referred to as *resetting an 
 In the `Email accounts`{.action} tab, click the `...`{.action} button to the right of the account you want to delete, then click `Reset this account`{.action}.
 
 ![email](images/mxplan-new-reset.png){.thumbnail .w-400}
+<!-- CP-STEPS-END:owa-zimbra-delete-account -->
 
 ### MX Plan Roundcube
 
@@ -132,6 +144,7 @@ This section is dedicated to MX Plan offers that use the **Roundcube** webmail t
 
 #### Create an email account
 
+<!-- CP-STEPS-START:roundcube-create-account -->
 To create a new email address, go to the `Emails`{.action} tab. The table displayed will contain all of the email accounts created as part of your MX Plan solution. Then click the `Create an email address`{.action} button.
 
 ![email](images/mxplan-creation-legacy-step2.png){.thumbnail .w-400}
@@ -143,16 +156,18 @@ In the pop-up window, enter the following information:
 - **Account size**: Select the size of account you want. This is the available space for the account to store messages.
 - **Password**: Type in a password, and confirm it. For security reasons, we recommend not using the same password twice, and choosing one that does not contain any personal information (e.g. your surname, first name and date of birth). We also recommend renewing your password regularly.
 
-Once you have filled in all of the required fields, click `Next`{.action}. 
+Once you have filled in all of the required fields, click `Next`{.action}.
 
 ![email](images/mxplan-creation-legacy-step3.png){.thumbnail .w-400}
 
 Check that all the information displayed in the summary is correct; if it is, click on `Next`{.action} again. Finally, click `Confirm`{.action} to launch the creation of the email account. You will need to wait a few minutes for it to become available.
 
 Repeat this step as necessary according to the number of accounts to create.
+<!-- CP-STEPS-END:roundcube-create-account -->
 
-#### View emails 
+#### View emails
 
+<!-- CP-STEPS-START:roundcube-view-emails -->
 On the [Webmail login page](/links/web/email), enter your email address and password. Then click the `Login`{.action} button.
 
 Your inbox will then appear. You can find more information in our guide on [Using your email account via the RoundCube webmail interface](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_roundcube).
@@ -160,16 +175,19 @@ Your inbox will then appear. You can find more information in our guide on [Usin
 ![email](images/mxplan-creation-legacy-step4.png){.thumbnail .w-400}
 
 To view your emails using an email client, please refer to the section ["View an email account using a device"](#configdevices).
+<!-- CP-STEPS-END:roundcube-view-emails -->
 
 #### Delete an email account
 
+<!-- CP-STEPS-START:roundcube-delete-account -->
 > [!warning]
 >
 > Before deleting email accounts, make sure they are not used. You may need to back up these accounts. If required, please refer to our guide on [Migrating your email address manually](/pages/web_cloud/email_and_collaborative_solutions/migrating/manual_email_migration), which explains how to export account data from your Control Panel or email software.
 
-In the `Emails`{.action} tab, click the `...`{.action} button to the right of the account you want to delete, then click `Disable account`{.action}
+In the `Emails`{.action} tab, click the `...`{.action} button to the right of the account you want to delete, then click `Disable account`{.action}.
 
 ![email](images/mxplan-legacy-reset.png){.thumbnail .w-400}
+<!-- CP-STEPS-END:roundcube-delete-account -->
 
 ### View an email account from a device <a name="configdevices"></a>
 
@@ -247,7 +265,7 @@ Below are the **SMTP** settings to use when sending emails:
 **Have you used all of the email addresses included in your solution?**
 
 - Refer to [our email FAQ](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/faq-emails).
-- See all of our email solutions, [Zimbra](/links/web/emails-zimbra) or [Exchange](/links/web/emails) to complete your MX Plan solution on the same domain name.
+- See all of our email solutions, [Zimbra](/links/web/emails-zimbra) or [Exchange](/links/web/emails-exchange) to complete your MX Plan solution on the same domain name.
 
 ## Go further <a name="go-further"></a>
 

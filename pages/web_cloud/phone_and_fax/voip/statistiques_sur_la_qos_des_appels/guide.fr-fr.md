@@ -1,24 +1,25 @@
 ---
-title: Statistiques sur la QoS des appels
-excerpt: Statistiques sur la QoS des appels
+title: "Statistiques sur la QoS des appels"
+excerpt: "Découvrez comment exploiter les statistiques de qualité de service (QoS) de vos appels VoIP via l'API OVHcloud"
 updated: 2018-03-26
 flag: hidden
 ---
 
-## 
-Pour connaitre les bases de notre API :
+## Prérequis
 
-[Bases de l'API](/pages/manage_and_operate/api/first-steps)
+- Connaître les [bases de l'API OVHcloud](/pages/manage_and_operate/api/first-steps)
 
-## 
+## Endpoint API
+
 L'ensemble des points relatifs aux derniers appels selon le choix de la métrique :
 
 ```
 /telephony/{billingAccount}/line/{serviceName}/statistics
 ```
 
-## 
-Vous pouvez récuperer l'ensemble des points relatifs aux derniers appels via la méthode REST :
+## Métriques disponibles
+
+Vous pouvez récupérer l'ensemble des points relatifs aux derniers appels via la méthode REST :
 
 ```
 /telephony/{billingAccount}/line/{serviceName}/statistics
@@ -26,28 +27,29 @@ Vous pouvez récuperer l'ensemble des points relatifs aux derniers appels via la
 
 4 métriques sont disponibles :
 
-- maxDelay : Le délais maximum entre deux paquets SIP
+- maxDelay : Le délai maximum entre deux paquets SIP
 - maxJitter : Le jitter maximal au cours de l'appel (en seconde)
 - rtpMos : Le MOS des paquets RTP (entre 0 et 5000, plus il est important, mieux c'est)
 - sumRtpLost : La somme des paquets RTP perdus
 
-![](images/img_2547.jpg){.thumbnail}
+![Métriques QoS disponibles](images/img_2547.jpg){.thumbnail}
 
-## 
+## Exploitation des données
+
 Cette section porte sur l'exploitation des données pour en faire un graphique. Dans notre exemple, 
 nous allons utiliser la librairie highcharts en javascript.
 
-L'idée est de rafraichir l'ensemble des points fournis par l'API via une requête AJAX pour peupler 
+L'idée est de rafraîchir l'ensemble des points fournis par l'API via une requête AJAX pour peupler 
 un graphique highcharts.
 
-Le language serveur utilisé dans notre exemple est celui de Perl. 4 fichiers seront créés au total :
+Le langage serveur utilisé dans notre exemple est celui de Perl. 4 fichiers seront créés au total :
 
 - static/app.js
 - partials/statistics.html
 - getStatistics.cgi
 - index.html
 
-Assurez-vous du bon télechargement des librairies suivantes (angular, jquery, highcharts) dans le répertoire static comme indiqué dans le code :
+Assurez-vous du bon téléchargement des librairies suivantes (angular, jquery, highcharts) dans le répertoire static comme indiqué dans le code :
 
 index.html
 
@@ -161,7 +163,7 @@ statisticsControllers.controller('StatisticsCtrl', ['$scope', '$http', function(
 }]);
 ```
 
-Enfin, il ne reste plus qu'à créer le script Perl qui sera executé par le Javascript. Celui-ci utilise la librairie OvhApi.pm disponible [ici](https://github.com/ovh/perl-ovh).
+Enfin, il ne reste plus qu'à créer le script Perl qui sera exécuté par le Javascript. Celui-ci utilise la librairie OvhApi.pm disponible sur le [dépôt GitHub perl-ovh](https://github.com/ovh/perl-ovh).
 
 getStatistics.cgi
 
@@ -213,3 +215,6 @@ Bien sûr, les valeurs AKCODE, ASCODE et CKCODE sont à remplacer par les identi
 
 ![](images/img_2546.jpg){.thumbnail}
 
+## Aller plus loin
+
+Échangez avec notre [communauté d'utilisateurs](/links/community).

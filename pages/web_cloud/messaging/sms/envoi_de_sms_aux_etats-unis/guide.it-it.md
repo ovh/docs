@@ -1,6 +1,6 @@
 ---
 title: Inviare SMS negli Stati Uniti
-excerpt: Come inviare SMS negli Stati Uniti
+excerpt: Scopri come rispettare le regole specifiche per inviare SMS negli Stati Uniti e applicarle dal tuo Spazio Cliente OVHcloud
 updated: 2022-08-05
 ---
 
@@ -15,14 +15,24 @@ L’invio di SMS negli Stati Uniti è sottoposto a regole specifiche. Questa gui
 ## Prerequisiti
 
 - Disporre di un account SMS OVHcloud con crediti SMS.
-- Avere accesso alle [API OVHcloud](/links/api)(solo per il metodo di invio via API)
-- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager), sezione `Télécom`{.action} > `SMS`{.action}
+- Avere accesso alle [API OVHcloud](/links/api) (solo per il metodo di invio via API)
+
+<!-- CP-NAV-START:telecom-sms -->
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [SMS](/links/control-panel/telecom-sms)
+- **Percorso di navigazione:** `Telecom`{.action} > `SMS`{.action} > Seleziona il tuo SMS account
+
+---
+<!-- CP-NAV-END:telecom-sms -->
 
 ![Spazio Cliente Telecom SMS](/pages/assets/screens/control_panel/product-selection/telecom/tpl-telecom-03-en-sms.png){.thumbnail}
 
 ## Procedura
 
-### Step 1: leggi le restrizioni
+### Passaggio 1: Leggi le restrizioni
 
 In accordo con l’autorità di regolamentazione degli Stati Uniti (Neustar), l’invio di SMS verso questa destinazione deve essere oggetto di una preventiva convalida, da parte dei nostri servizi, di un modello di messaggio.
 Sono autorizzati soltanto messaggi di alert e di doppia autenticazione. I modelli di SMS pubblicitari non saranno accettati. Una volta convalidato il modello, l’invio avverrà nello stesso modo in cui avviene per le altre destinazioni.
@@ -31,14 +41,14 @@ Sono autorizzati soltanto messaggi di alert e di doppia autenticazione. I modell
 
 > [!primary]
 >
-La convalida dei modelli di messaggi è gratuita e viene effettuata dai team di OVHcloud entro uno o due giorni lavorativi.
+> La convalida dei modelli di messaggi è gratuita e viene effettuata dai team di OVHcloud entro uno o due giorni lavorativi.
 >
 
-### Step 2: Aggiungi un modello
+### Passaggio 2: Aggiungi un modello
 
 #### 2.1 Dallo Spazio Cliente OVHcloud
 
-Accedi al tuo [Spazio Cliente OVHcloud](/links/manager) e seleziona `Télécom`{.action}. Clicca su `SMS`{.action} e seleziona il tuo account SMS. Clicca sulla scheda `Messagio e campagna`{.action} e poi su `Gestisci gli SMS`{.action}.
+Clicca sulla scheda `Messaggio e campagna`{.action} e poi su `Gestisci gli SMS`{.action}.
 
 Clicca su `Gestisci i modelli`{.action}.
 
@@ -58,6 +68,7 @@ Visualizzi un pop-up con i campi da compilare.
 | Attività    | Seleziona il tipo di modello:<br>\- Alert<br>\- Autentificazione<br>\- Sistema di gestione transazionale |
 | Descrizione | Descrizione del modello                                                                                            |
 | Modello      | Digita il modello. È possibile includere le variabili delimitate con il carattere #.                                                                  |
+
 
 #### 2.2 Via API
 
@@ -91,7 +102,7 @@ Your security code is: #CODE#. Have a good day!
 Our monitoring system detected your server #SERVER# doesn't respond to ping requests
 ```
 
-### Step 3: analizza i risultati
+### Passaggio 3: Analizza i risultati
 
 Una volta creato e convalidato il proprio modello di messaggio, l’invio di un SMS genera un controllo automatico per garantire che il contenuto dell’SMS corrisponda al modello. Se il risultato è positivo, l’SMS viene inviato nello stesso modo in cui viene inviato verso gli altri Paesi.
 

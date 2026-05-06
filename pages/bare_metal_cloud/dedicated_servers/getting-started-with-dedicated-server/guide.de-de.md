@@ -1,6 +1,6 @@
 ---
 title: "Erste Schritte mit einem Dedicated Server"
-excerpt: "Erfahren Sie hier, wie Sie einen Dedicated Server in Ihrem OVHcloud Kundencenter verwalten und wie Sie mit der Konfiguration und Sicherung eines Servers starten"
+excerpt: "Verwalten Sie Ihren OVHcloud Dedicated Server im Kundencenter: Betriebssystem installieren, SSH-Zugang konfigurieren und Ihren Dienst überwachen."
 updated: 2025-04-29
 ---
 
@@ -13,8 +13,18 @@ Ein dedizierter Server ist ein physischer Server ("Bare Metal") in einem unserer
 ## Voraussetzungen
 
 - Sie verfügen über einen [Dedicated Server](/links/bare-metal/bare-metal) in Ihrem Kunden-Account.
-- Sie haben administrativen Zugriff auf Ihren Server über SSH oder RDP (Windows). 
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
+- Sie haben administrativen Zugriff auf Ihren Server über SSH oder RDP (Windows).
+
+<!-- CP-NAV-START:baremetal-dedicated-servers -->
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direkter Link:** [Dedicated Server](/links/control-panel/baremetal-dedicated-servers)
+- **Navigationspfad:** `Bare Metal Cloud`{.action} > `Dedicated Server`{.action} > Wählen Sie Ihren Server aus
+
+---
+<!-- CP-NAV-END:baremetal-dedicated-servers -->
 
 > [!primary]
 >
@@ -231,7 +241,7 @@ Wenn Sie Windows Server einsetzen, verwenden Sie [diese Anleitung](/pages/bare_m
 
 Sie können den Monitoring-Status eines Servers im [OVHcloud Kundencenter](/links/manager) vom Tab `Allgemeine Informationen`{.action} aus einrichten (Abschnitt **Dienststatus**).
 
-![Monitoring](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/dedicated-servers/general-information/monitoring-your-server.png){.thumbnail}
+![Monitoring-Status im Bereich "Dienststatus"](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/dedicated-servers/general-information/monitoring-your-server.png){.thumbnail}
 
 Klicken Sie auf den Button `Konfigurieren`{.action}. Im neu angezeigten Fenster haben Sie drei Optionen für das Überwachungsverhalten:
 
@@ -239,7 +249,7 @@ Klicken Sie auf den Button `Konfigurieren`{.action}. Im neu angezeigten Fenster 
 - **Aktiviert mit proaktivem Eingriff**: Wenn der Server nicht mehr reagiert wird Ihnen eine Benachrichtigung per E-Mail gesendet und der Server von einem Techniker überprüft.
 - **Aktiviert ohne proaktiven Eingriff**: Sie erhalten eine Benachrichtigung per E-Mail, wenn der Server nicht mehr reagiert. Um eine Intervention zu veranlassen, aktivieren Sie das Monitoring Ihres Servers mit proaktivem Eingriff.
 
-![Monitoring](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/dedicated-servers/general-information/monitoring-your-server2.png){.thumbnail}
+![Monitoring-Konfigurationspopup mit drei Optionen](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/dedicated-servers/general-information/monitoring-your-server2.png){.thumbnail}
 
 Klicken Sie auf `Bestätigen`{.action}, um Ihre Monitoring-Konfiguration zu aktualisieren.
 
@@ -302,5 +312,9 @@ Zur Aktivierung und Nutzung des Backup Storage folgen Sie der [zugehörigen Anle
 [OVHcloud API & OS installation](/pages/bare_metal_cloud/dedicated_servers/api-os-installation) (EN)
 
 Wenn Sie Schulungen oder technische Unterstützung bei der Implementierung unserer Lösungen benötigen, wenden Sie sich an Ihren Vertriebsmitarbeiter oder klicken Sie auf [diesen Link](/links/professional-services), um einen Kostenvoranschlag zu erhalten und eine persönliche Analyse Ihres Projekts durch unsere Experten des Professional Services Teams anzufordern.
+
+- [Finalising a Maintenance Intervention on a Dedicated Server](/pages/bare_metal_cloud/dedicated_servers/intervention-support)
+
+- [Bare Metal Server - Zuweisen von Tags im OVHcloud Kundencenter](/pages/bare_metal_cloud/dedicated_servers/resource-tag-assign)
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

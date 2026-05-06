@@ -6,7 +6,7 @@ updated: 2025-09-11
 
 ## Ziel
 
-cPanel ist ein Konfigurationspanel, das die Verwaltung von Webhosting vereinfacht. Es macht komplexe Aufgaben leichter zugänglich, speziell für neue Benutzer. Es bietet eine breite Palette von Funktionen, etwa die Verwaltung von: 
+cPanel ist ein Konfigurationspanel, das die Verwaltung von Webhosting vereinfacht. Es macht komplexe Aufgaben leichter zugänglich, speziell für neue Benutzer. Es bietet eine breite Palette von Funktionen, etwa die Verwaltung von:
 
 - E-Mails
 - Domainnamen
@@ -21,7 +21,17 @@ Dank einer grafischen Oberfläche, die die Automatisierung von Einstellungen erl
 ## Voraussetzungen
 
 - Sie haben einen [VPS](/links/bare-metal/vps) mit einer [kompatiblen Distribution](/links/bare-metal/vps-os).
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
+
+<!-- CP-NAV-START:baremetal-vps -->
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direkter Link:** [VPS-Verwaltung](/links/control-panel/baremetal-vps)
+- **Navigationspfad:** `Bare Metal Cloud`{.action} > `Virtual Private Server`{.action} > Wählen Sie Ihren VPS aus
+
+---
+<!-- CP-NAV-END:baremetal-vps -->
 
 > [!warning]
 > Diese Funktion ist derzeit nicht verfügbar für VPS in [Local Zones](/links/bare-metal/vps-lz).
@@ -102,7 +112,7 @@ Sie können nun cPanel verwenden. Weitere Informationen zu cPanel finden Sie in 
 
 ### Absicherung Ihrer Dienstleistung
 
-Wir empfehlen Ihnen, ensprechende Maßnahmen zu ergreifen, um WHM und Ihren VPS zu sichern. Lesen Sie hierzu [die cPanel-Empfehlungen](https://docs.cpanel.net/knowledge-base/security/tips-to-make-your-server-more-secure/).
+Wir empfehlen Ihnen, entsprechende Maßnahmen zu ergreifen, um WHM und Ihren VPS zu sichern. Lesen Sie hierzu [die cPanel-Empfehlungen](https://docs.cpanel.net/knowledge-base/security/tips-to-make-your-server-more-secure/).
 
 Wir empfehlen Ihnen außerdem unsere Anleitung [zum Sichern eines VPS](/pages/bare_metal_cloud/virtual_private_servers/secure_your_vps), die Verwendung unserer [Backup-Lösungen](/products/bare-metal-cloud-virtual-private-servers) und das Konfigurieren der [Edge Network Firewall](/pages/bare_metal_cloud/dedicated_servers/firewall_network).
 

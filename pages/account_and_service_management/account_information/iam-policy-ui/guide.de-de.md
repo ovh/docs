@@ -33,11 +33,22 @@ Es kann beispielsweise eine Richtlinie erstellt werden, um einem Benutzer namens
 - Sie kennen die [Benutzerverwaltung für OVHcloud Kunden-Accounts](/pages/account_and_service_management/account_information/ovhcloud-users-management).
 - Sie haben mindestens eine aktive OVHcloud Dienstleistung, die mit diesem Account verbunden sind (Load Balancer, Domainname, VPS etc.)
 
+<!-- CP-NAV-START:iam-policies -->
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direkter Link:** [IAM Richtlinien](/links/control-panel/iam-policies)
+- **Navigationspfad:** `Identität, Sicherheit und Operationen`{.action} > `Richtlinien`{.action}
+
+---
+<!-- CP-NAV-END:iam-policies -->
+
 ## In der praktischen Anwendung
 
 ### Menü für IAM aufrufen
 
-Klicken Sie in der Seitenleiste auf `Identität, Sicherheit und Operationen`{.action} und anschließend auf `Richtlinien`{.action}.
+Öffnen Sie die Seite [IAM-Richtlinien](/links/control-panel/iam-policies).
 
 ![IAM-Menüzugriff](images/access_to_the_IAM_menu_01.png){.thumbnail}
 

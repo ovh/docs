@@ -26,7 +26,18 @@ Desde abril de 2025, el equipo de OVHcloud ha introducido una nueva navegación 
 
 ## Requisitos
 
-- Estar conectado a su [área de cliente de OVHcloud](/links/manager).
+- Una cuenta de OVHcloud activa
+
+<!-- CP-NAV-START:account-dashboard -->
+---
+
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [Mi cuenta](/links/control-panel/account-dashboard)
+- **Ruta de navegación:** Haga clic en su nombre en la parte superior derecha > `Acceder a mi cuenta`{.action}
+
+---
+<!-- CP-NAV-END:account-dashboard -->
 
 ## Procedimiento
 

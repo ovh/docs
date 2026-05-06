@@ -1,6 +1,6 @@
 ---
-title: Inviare SMS con l’API OVHcloud in Node.js
-excerpt: Come inviare SMS con l’API OVHcloud RESTful in Node.js
+title: "Inviare SMS con l’API OVHcloud in Node.js"
+excerpt: "Scopri come configurare un ambiente Node.js e inviare il tuo primo SMS passo dopo passo utilizzando il wrapper dell’API RESTful OVHcloud"
 updated: 2020-06-18
 ---
 
@@ -31,12 +31,12 @@ $ npm install ovh
 
 È necessario recuperare la directory ./node_modules/ovh/...
 
-### Step 1: Creazione degli identificativi
+### Passaggio 1: Creazione degli identificativi
 
 Per utilizzare l’API SMS sono necessari degli identificativi. Questi identificativi vengono creati una sola volta per individuare l’applicazione che invierà gli SMS. La loro durata di vita è configurabile.
 
 Crea i tuoi identificativi di Script (tutte le chiavi per volta) su questa pagina:
-[https://api.ovh.com/createToken](https://eu.api.ovh.com/createToken/index.cgi?GET=/sms&GET=/sms/*&GET=/sms/*/jobs&POST=/sms/*/jobs) (questo URL permette di avere automaticamente le autorizzazioni per gli step descritti in questa guida).
+[https://auth.eu.ovhcloud.com/api/createToken](https://auth.eu.ovhcloud.com/api/createToken?GET=/sms&GET=/sms/*&GET=/sms/*/jobs&POST=/sms/*/jobs) (questo URL permette di avere automaticamente le autorizzazioni per i passaggi descritti in questa guida).
 
 ![creazione dei token](images/img_2462.jpg){.thumbnail}
 
@@ -46,7 +46,7 @@ In questo semplice esempio, recuperiamo le autorizzazioni per avere accesso alle
 - GET/sms/\*/jobs/
 - POST /sms/\*/jobs/
 
-L’asterisco (\*) attiva le chiamate a questi metodi per tutti i tuoi account di SMS. Puoi ugualmente limitare le chiamate a un solo account, se gestisci diversi account SMS sul tuo account OVHcloud, sostituendo «/sms» con «/sms/NOME-ACCOUNT» e «/sms/\*/» con «/sms/NOME-ACCOUNT/».
+L’asterisco (\*) attiva le chiamate a questi metodi per tutti i tuoi account di SMS. Puoi ugualmente limitare le chiamate a un solo account, se gestisci diversi account SMS sul tuo account OVHcloud, sostituendo "/sms" con "/sms/NOME-ACCOUNT" e "/sms/\*/" con "/sms/NOME-ACCOUNT/".
 
 In questo modo recupererai gli identificativi per il tuo script:
 
@@ -58,7 +58,7 @@ In questo modo recupererai gli identificativi per il tuo script:
 
 L’ambiente è pronto, gli identificativi sono creati, ora puoi codificare il tuo script Node.js.
 
-### Step 2: Recupero del serviceName e invio del primo SMS
+### Passaggio 2: Recupero del serviceName e invio del primo SMS
 
 Recuperiamo ora il nome del serviceName (l’account SMS che possiedi; supponiamo che tu ne abbia uno solo, in caso contrario questa parte è da implementare). Quindi inviamo un SMS con l’account recuperato dalla prima chiamata WebService:
 

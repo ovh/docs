@@ -31,10 +31,9 @@ Pour plus d'informations, consultez [la documentation officielle OpenStack API](
 
 Ce guide vous montrera comment émettre un jeton OpenStack, l'utiliser pour les actions que vous souhaitez effectuer et comment révoquer un jeton.
 
-## Prérequis 
+## Prérequis
 
-- Être connecté à l’[espace client OVHcloud](/links/manager).
-- Ce guide nécessite l'installation de l'outil OpenStack CLI sur votre machine.
+- Ce guide nécessite l’installation de l’outil OpenStack CLI sur votre machine.
 
 > [!primary]
 >
@@ -54,11 +53,20 @@ sudo yum install python3-openstackclient
 
 - Pour les utilisateurs de Windows, consultez ce guide pour exporter vos variables d'environnement : [Définir les variables d'environnement OpenStack](/pages/public_cloud/public_cloud_cross_functional/loading_openstack_environment_variables).
 
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Projets Public Cloud](/links/control-panel/publiccloud-projects)
+- **Pour accéder à vos services :** `Public Cloud`{.action} > Sélectionnez votre projet
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
+
 ## En pratique
 
 ### Étape 1 : téléchargez et sourcez votre fichier OpenRC
-
-Connectez-vous à votre [espace client OVHcloud](/links/manager) et ouvrez votre projet `Public Cloud`{.action}.
 
 Cliquez sur `Utilisateurs & Rôles`{.action} dans la section **Paramètres** puis sur le bouton `...`{.action} à droite de votre utilisateur OpenStack.<br>
 Téléchargez le fichier OpenRC de cet utilisateur et spécifiez la région dans laquelle vous voulez effectuer des actions.

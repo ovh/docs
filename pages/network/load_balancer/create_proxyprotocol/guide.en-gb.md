@@ -36,6 +36,16 @@ You need:
 >
 > Therefore, it's essential to limit their use to trusted IP addresses, specifically the outbound IP addresses of your OVHcloud Load Balancer service. Major servers like Nginx and Apache have modules capable of managing this security and trust aspect.
 
+<!-- CP-NAV-START:network-load-balancer -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Load Balancer](/links/control-panel/network-load-balancer)
+- **Navigation path:** `Network`{.action} > `Load Balancer`{.action} > Select your service
+
+---
+<!-- CP-NAV-END:network-load-balancer -->
 ## In Practice
 
 ### Obtaining the list of your outbound IP addresses

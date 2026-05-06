@@ -17,13 +17,24 @@ Using the Horizon interface, you can also set passwords for each individual user
 ## Requirements
 
 - A [Public Cloud project](/pages/public_cloud/public_cloud_cross_functional/create_a_public_cloud_project) in your OVHcloud account
-- Access to the [OVHcloud Control Panel](/links/manager)
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Navigation path:** `Public Cloud`{.action} > Select your project
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## Instructions
 
 ### Creating an OpenStack user
 
-Log in to the [OVHcloud Control Panel](/links/manager), go to the `Public Cloud`{.action} section and select the Public Cloud project concerned. Click on `Users & Roles`{.action} the left-hand menu under **Settings**. 
+<!-- CP-STEPS-START:create-openstack-user -->
+Click on `Users & Roles`{.action} the left-hand menu under **Settings**.
 
 Click on the button `Create User`{.action}.
 
@@ -46,6 +57,7 @@ Be sure to save the password shown in the green message box to a password manage
 ![Generate](images/generatepw.png){.thumbnail}
 
 With the OpenStack user created, you can use its credentials to log into the [Horizon interface](/pages/public_cloud/public_cloud_cross_functional/introducing_horizon) by clicking on the link `Horizon`{.action} in the left-hand menu.
+<!-- CP-STEPS-END:create-openstack-user -->
 
 ### Change an OpenStack user password
 
@@ -79,7 +91,8 @@ Please note that when you change your user password, your previous password is i
 
 ### Deleting an OpenStack user
 
-You can remove an OpenStack user in the [OVHcloud Control Panel](/links/manager). Click on `Users & Roles`{.action} the left-hand menu under **Settings**. 
+<!-- CP-STEPS-START:delete-openstack-user -->
+Click on `Users & Roles`{.action} the left-hand menu under **Settings**.
 
 ![public-cloud](images/delete.png){.thumbnail}
 
@@ -89,6 +102,7 @@ Click on `...`{.action} and select `Delete`{.action}.
 >
 > Deleting a user is permanent and will invalidate all associated tokens, even those with an expiry date not yet exceeded.
 > 
+<!-- CP-STEPS-END:delete-openstack-user -->
 
 ## Go further
 

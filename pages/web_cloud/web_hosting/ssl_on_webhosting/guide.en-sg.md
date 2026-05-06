@@ -28,7 +28,17 @@ You must have an SSL certificate in order to use HTTPS for your website.
 
 - An [OVHcloud web hosting plan](/links/web/hosting)
 - At least one [domain name](/links/web/domains)
-- Access to the [OVHcloud Control Panel](/links/manager)
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Hosting plans](/links/control-panel/web-hosting)
+- **Navigation path:** `Web Cloud`{.action} > `Hosting plans`{.action} > Select your web hosting plan
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## Instructions
 
@@ -68,38 +78,34 @@ Below are the 4 links to our guides dedicated to these 4 solutions:
 >
 > Since this verification is linked to your website settings, we recommend that you contact a [specialist service provider](/links/partner) if you encounter any difficulties. We will not be able to assist you with this.
 
-Click on the tabs below to view each of the **5** steps in succession:
+<!-- CP-STEPS-START:delete-ssl -->
+Click on the tabs below to view each of the **4** steps.
 
 > [!tabs]
 > **Step 1**
 >>
->> Log in to the [OVHcloud Control Panel](/links/manager), then go to the `Web Cloud`{.action} section.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Step 2**
->>
->> Click the `Hosting plans`{.action} menu, then select the web hosting plan concerned.
+>> Go to the [Hosting plans](/links/control-panel/web-hosting) page, then select the web hosting plan concerned.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Step 3**
+> **Step 2**
 >>
 >> On the page that pops up, click on the `SSL certificates`{.action} tab.
 >>
 >> ![SSL certificates](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ssl-certificates.png){.thumbnail}
 >>
-> **Step 4**
+> **Step 3**
 >>
 >> In the table at the bottom of the new page that pops up, click the `⁝`{.action} button, located to the right of the line corresponding to the domain name concerned, then click `Disable SSL`{.action}.
 >>
 >> ![Disable SSL](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ssl-certificates/disable-ssl.png){.thumbnail}
 >>
-> **Step 5**
+> **Step 4**
 >>
 >> In the window that opens, confirm the deactivation by clicking `Confirm`{.action}.
 >>
 >> ![Delete SSL](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ssl-certificates/ssl-deletion.png){.thumbnail}
+<!-- CP-STEPS-END:delete-ssl -->
 
 The SSL certificate will be deactivated within a few hours.
 

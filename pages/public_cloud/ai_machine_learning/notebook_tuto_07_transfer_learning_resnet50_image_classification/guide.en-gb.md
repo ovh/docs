@@ -43,9 +43,19 @@ ResNet has many variants that work on the same concept but have different number
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](/links/manager)
 - An AI Notebooks project created inside a [Public Cloud project](/links/public-cloud/public-cloud) in your OVHcloud account
 - A [user](/pages/public_cloud/ai_machine_learning/gi_01_manage_users) for AI Notebooks
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Navigation path:** `Public Cloud`{.action} > Select your project
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## Instructions
 
@@ -63,6 +73,7 @@ Then, you can launch your notebook from the [OVHcloud Control Panel](/links/mana
 
 ### Launching a Jupyter notebook with "Miniconda" via UI
 
+<!-- CP-STEPS-START:launch-notebook-via-ui -->
 To launch your notebook from the [OVHcloud Control Panel](/links/manager), refer to the following steps.
 
 #### Code editor
@@ -111,6 +122,8 @@ You can choose the number of CPUs or GPUs you want.
 >
 > To learn more about how to use and **manage your data in a notebook with UI**, check this [documentation](/pages/public_cloud/ai_machine_learning/notebook_guide_data_ui).
 >
+
+<!-- CP-STEPS-END:launch-notebook-via-ui -->
 
 ### Launching a Jupyter notebook with TensorFlow via CLI
 

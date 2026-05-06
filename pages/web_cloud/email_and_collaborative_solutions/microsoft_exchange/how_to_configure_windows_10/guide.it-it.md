@@ -12,9 +12,20 @@ Gli account Exchange possono essere configurati su client di posta compatibili, 
 
 ## Prerequisiti
 
-- Disporre di un’offerta [Exchange](/links/web/emails)
+- Disporre di un’offerta [Exchange](/links/web/emails-exchange)
 - Aver installato l’applicazione Posta sul proprio dispositivo
 - Disporre delle credenziali associate all’account email da configurare
+
+<!-- CP-NAV-START:web-exchange -->
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [Exchange](/links/control-panel/web-exchange)
+- **Percorso di navigazione:** `Web Cloud`{.action} > `Exchange`{.action} > Seleziona la tua piattaforma
+
+---
+<!-- CP-NAV-END:web-exchange -->
 
 ## Procedura
 
@@ -38,7 +49,7 @@ Inserisci le informazioni richieste:
 |Password|Digita la password associata all’indirizzo email|
 |Nome utente|Inserisci l’indirizzo email completo|
 |Settore|Lasciare il campo vuoto|
-|Server|Seleziona il server che ospita il tuo servizio Exchange Puoi ritrovarlo nel tuo [Spazio Cliente OVHcloud](/links/manager) nella scheda `Informazioni generali`{.action} del servizio Exchange corrispondente, poi sotto la voce `Connessione`{.action}|
+|Server|Seleziona il server che ospita il tuo servizio Exchange. Clicca su [questo link](/links/control-panel/web-exchange) per accedere alla sezione `Exchange`{.action}. Il nome del server viene visualizzato nella zona **Connessione** della scheda `Informazioni generali`{.action}.|
 |Il server richiede una connessione cifrata (SSL)|Non rimuovere la spunta da questa casella|
 |Nome dell’account|Inserisci un nome che ti permetterà di riconoscere questo account tra quelli presenti nella tua applicazione Posta|
 

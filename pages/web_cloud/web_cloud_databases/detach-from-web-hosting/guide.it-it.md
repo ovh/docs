@@ -13,38 +13,44 @@ Le soluzioni [Web Cloud Databases](/links/web/databases) possono essere attivate
 ## Prerequisiti
 
 - Disporre di un’ [istanza Web Cloud Databases](/links/web/databases) associata a una soluzione di [hosting Web Performance](/links/web/hosting).
-- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager).
 - essere almeno contatto "[Amministratore](/pages/account_and_service_management/account_information/managing_contacts)" dei servizi sui quali si desidera agire.
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [Hosting plans](/links/control-panel/web-hosting)
+- **Percorso di navigazione:** `Web Cloud`{.action} > `Hosting`{.action} > Seleziona il tuo hosting web
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## Procedura
 
-Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **4** passi.
+<!-- CP-STEPS-START:detach-wcdb-steps -->
+Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **3** passi.
 
 > [!tabs]
-> **Step 1**
+> **Passaggio 1**
 >>
->> Accedi allo [Spazio Cliente OVHcloud](/links/manager) e clicca su `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Step 2**
->>
->> Clicca sul menu `Hosting`{.action} e seleziona l’hosting Web interessato.
+>> Accedi alla pagina [Hosting plans](/links/control-panel/web-hosting), poi seleziona l’hosting Web interessato.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Step 3**
+> **Passaggio 2**
 >>
 >> Nel riquadro **Configurazione** trovi la voce **Web Cloud Databases**. Clicca sul pulsante `...`{.action} a destra e poi su `Scollega`{.action}.
 >>
 >> ![Detach Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/wcdb-detach.png){.thumbnail}
 >>
-> **Step 4**
+> **Passaggio 3**
 >>
 >> Nella nuova pagina seleziona la nuova tariffazione per la tua soluzione Web Cloud Databases e segui gli step fino al saldo dell’ordine.
 >>
 >> ![Detach Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/detach-my-web-cloud-databases.png){.thumbnail}
 >>
+<!-- CP-STEPS-END:detach-wcdb-steps -->
 
 Una volta completati i 4 step, la soluzione Web Cloud Databases sarà disattivata entro poche ore.
 

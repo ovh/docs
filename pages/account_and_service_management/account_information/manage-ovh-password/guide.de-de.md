@@ -15,6 +15,17 @@ Das Passwort Ihres [OVHcloud Kundencenters](/links/manager) ist der Zugangsschl�
 - Sie haben bereits einen aktiven OVHcloud Kunden-Account.
 - Sie kennen Ihre zugehörige Kundenkennung (**aa00000-ovh**) und/oder Ihre E-Mail-Adresse.
 
+<!-- CP-NAV-START:account-security -->
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direkter Link:** [Sicherheit](/links/control-panel/account-security)
+- **Navigationspfad:** Klicken Sie oben rechts auf Ihren Namen > `Zu meinem Account`{.action} > `Sicherheit`{.action}
+
+---
+<!-- CP-NAV-END:account-security -->
+
 ## In der praktischen Anwendung
 
 ### Ein adäquates Passwort erstellen
@@ -69,9 +80,7 @@ Das Prinzip ist einfach: Ein Masterpasswort, das hinreichend komplex sein muss, 
 
 #### Von Ihrem OVHcloud Kundencenter aus
 
-- Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein, klicken Sie oben rechts auf Ihren Namen und dann auf `Zu meinem Account`{.action}.
-
-- Klicken Sie danach auf `Sicherheit`{.action}, dann auf `Bearbeiten`{.action} rechts von “Passwort”.
+- Klicken Sie auf der Seite [Kontosicherheit](/links/control-panel/account-security) auf `Bearbeiten`{.action} rechts von “Passwort”.
 
 ![manage-ovh-password](/pages/assets/screens/control_panel/product-selection/right-column/access-my-account/edit-account-password.png){.thumbnail}
 
@@ -84,6 +93,7 @@ Das Prinzip ist einfach: Ein Masterpasswort, das hinreichend komplex sein muss, 
 ![ovh-passwort-verwalten](images/account-password-modif-manager-step4.png){.thumbnail}
 
 - Eine Meldung über die erfolgreiche Aktion erscheint. Klicken Sie auf die Schaltfläche `Weiter`{.action} unter dieser Nachricht, um zur Anmeldeseite weitergeleitet zu werden. Geben Sie nun Ihre Kennung und Ihr neues Passwort ein.
+
 
 <a name="lost-password"></a>
 
@@ -111,6 +121,7 @@ Das Prinzip ist einfach: Ein Masterpasswort, das hinreichend komplex sein muss, 
 > 
 > Die Berücksichtigung des neuen Passworts bewirkt automatisch die Schließung aller aktiven Sitzungen Ihres OVHcloud Kunden-Accounts.
 > 
+
 
 ## Weiterführende Informationen
 

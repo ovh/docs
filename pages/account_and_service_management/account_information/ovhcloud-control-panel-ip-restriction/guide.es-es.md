@@ -20,9 +20,19 @@ Esta opción, combinada con la seguridad de su cuenta mediante una [doble autent
 
 ## Requisitos
 
-- Estar conectado al [área de cliente de OVHcloud](/links/manager).
 - Haber consultado las [recomendaciones sobre la gestión de la contraseña de acceso a su cuenta](/pages/account_and_service_management/account_information/manage-ovh-password).
-  
+
+<!-- CP-NAV-START:account-security -->
+---
+
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [Seguridad](/links/control-panel/account-security)
+- **Ruta de navegación:** Haga clic en su nombre en la parte superior derecha > `Acceder a mi cuenta`{.action} > `Seguridad`{.action}
+
+---
+<!-- CP-NAV-END:account-security -->
+
 ## Procedimiento
 
 ### Etapa 1 - Recuperar las direcciones IP públicas autorizadas a acceder al área de cliente de OVHcloud
@@ -51,9 +61,7 @@ Si utiliza una red 4G/5G como complemento, no olvide recuperar también la direc
 
 ### Etapa 2: Aplicar una restricción de acceso por IP
 
-Conéctese a su [área de cliente de OVHcloud](/links/manager), haga clic en su nombre en la parte superior derecha y seleccione `Acceder a mi cuenta`{.action}.
-
-A continuación, haga clic en la pestaña `Seguridad`{.action} para acceder a la siguiente página:
+En la página [Seguridad de la cuenta](/links/control-panel/account-security), busque la sección **Restricción de acceso por IP**.
 
 ![Access from Manager](images/ip2.png){.thumbnail}
 

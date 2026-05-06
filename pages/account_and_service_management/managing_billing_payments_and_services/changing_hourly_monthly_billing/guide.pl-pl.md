@@ -24,7 +24,17 @@ Podczas tworzenia instancji Public Cloud można wybrać typ rozliczenia za godzi
 ## Wymagania początkowe
 
 - utworzona [instancja Public Cloud](/links/public-cloud/public-cloud)
-- zalogowanie do [Panelu klienta OVHcloud](/links/manager)
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Ścieżka nawigacji:** `Public Cloud`{.action} > Wybierz projekt
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## W praktyce
 
@@ -34,7 +44,7 @@ Podczas tworzenia instancji Public Cloud można wybrać typ rozliczenia za godzi
 > Następująca procedura nie działa dla instancji trzeciej generacji (przykład: B3-32). Aby móc płacić za ten typ instancji w trybie miesięcznym, utwórz dla tego modelu instancji [Savings Plan](/pages/public_cloud/public_cloud_cross_functional/savings_plans).
 >
 
-W [Panelu klienta OVHcloud](/links/manager) wybierz instancję, dla której chcesz zmienić typ rozliczenia, i otwórz menu opcji, klikając ikonę z trzema kropkami (po prawej stronie instancji). Zobaczysz przycisk `Zmień na subskrypcję miesięczną`{.action}:
+Wybierz instancję, dla której chcesz zmienić typ rozliczenia, i otwórz menu opcji, klikając ikonę z trzema kropkami (po prawej stronie instancji). Zobaczysz przycisk `Zmień na subskrypcję miesięczną`{.action}:
 
 ![Change billing calculation](images/switch_to_monthly_updated.png){.thumbnail}
 

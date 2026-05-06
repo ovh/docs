@@ -31,13 +31,21 @@ La console KVM per VPS, disponibile nello Spazio Cliente OVHcloud, permette di a
 ## Prerequisiti
 
 - Un [VPS](/links/bare-metal/vps) nel tuo account OVHcloud
-- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
+
+<!-- CP-NAV-START:baremetal-vps -->
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [VPS management](/links/control-panel/baremetal-vps)
+- **Percorso di navigazione:** `Bare Metal Cloud`{.action} > `Server Privati Virtuali`{.action} > Seleziona il tuo VPS
+
+---
+<!-- CP-NAV-END:baremetal-vps -->
 
 ## Procedura
 
 ### Come aprire la console KVM dallo Spazio Cliente OVHcloud
-
-Accedi allo [Spazio Cliente OVHcloud](/links/manager), clicca su `Bare Metal Cloud`{.action} e seleziona il server in `Server privati virtuali`{.action}.
 
 Nella scheda `Informazioni generali`{.action}, clicca sul pulsante `...`{.action} accanto al nome del tuo VPS nella sezione **Il tuo VPS**.
 
@@ -66,7 +74,7 @@ L’URL di accesso verrà visualizzato nella sezione `RESPONSE`.
 
 ### Utilizzo della console KVM
 
-Se accedi al KVM dal tuo Spazio Cliente OVH, viene visualizzata una finestra pop-up. Per utilizzarlo a schermo intero, clicca sul link `Apri in una nuova finestra`{.action} nell’angolo in basso a destra. In genere verrà aperta una nuova scheda del browser.
+Se accedi al KVM dal tuo Spazio Cliente OVHcloud, viene visualizzata una finestra pop-up. Per utilizzarlo a schermo intero, clicca sul link `Apri in una nuova finestra`{.action} nell’angolo in basso a destra. In genere verrà aperta una nuova scheda del browser.
 
 ![Connessione al KVM](images/kvm_screen.png){.thumbnail}
 
@@ -86,6 +94,8 @@ Lo schermo KVM visualizzato dipende dal sistema operativo e dallo stato individu
 ```bash
 sudo dpkg-reconfigure keyboard-configuration
 ```
+
+Se necessario, installare il pacchetto prima tramite il gestore di pacchetti della distribuzione (`sudo dnf install keyboard-configuration` o `sudo apt install keyboard-configuration`).
 
 Viene visualizzato un menu grafico in cui è possibile selezionare un modello di tastiera.
 
@@ -118,6 +128,6 @@ sudo systemctl restart keyboard-setup
 
 Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](/links/partner).
 
-Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](/links/support).
+Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre [offerte di supporto](/links/support).
 
 Contatta la nostra [Community di utenti](/links/community).

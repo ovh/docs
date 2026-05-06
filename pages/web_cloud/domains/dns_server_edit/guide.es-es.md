@@ -1,31 +1,54 @@
 ---
-title: "Modificar los servidores DNS de un dominio de OVHcloud"
-excerpt: "Descubra cómo modificar los servidores DNS de un dominio registrado en OVHcloud"
-updated: 2025-04-28
+title: "Modificar los servidores DNS de un dominio en OVHcloud"
+excerpt: "Descubra cómo modificar los servidores DNS de su dominio registrado en OVHcloud"
+updated: 2026-03-27
 ---
+
+<style>
+details>summary {
+    color:rgb(33, 153, 232) !important;
+    cursor: pointer;
+}
+details>summary::before {
+    content:'\25B6';
+    padding-right:1ch;
+}
+details[open]>summary::before {
+    content:'\25BC';
+}
+</style>
 
 ## Objetivo
 
-La sigla **DNS** (**D**omain **N**ame **S**ystem) es un conjunto de elementos (servidores DNS, zonas DNS, etc.) que permite asociar un dominio a una dirección IP.
+El acrónimo **DNS** (**D**omain **N**ame **S**ystem) es un conjunto de elementos (servidores DNS, zonas DNS, etc.) que permiten hacer corresponder un nombre de dominio con una dirección IP.
 
-Para más información, consulte nuestras guías "[Todo sobre los servidores DNS](/pages/web_cloud/domains/dns_server_general_information)" y "[Todo sobre la zona DNS](/pages/web_cloud/domains/dns_zone_general_information)".
+Consulte nuestras guías "[Todo sobre los servidores DNS](/pages/web_cloud/domains/dns_server_general_information)" y "[Todo sobre la zona DNS](/pages/web_cloud/domains/dns_zone_general_information)" para más información.
 
-**Esta guía explica cómo cambiar los servidores DNS de un dominio en 3 pasos.**
+**Descubra cómo modificar los servidores DNS de su dominio OVHcloud en 3 pasos.**
 
 <iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/BvrUi26ShzI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Requisitos
 
-- Tener un [dominio](/links/web/domains) registrado en OVHcloud.
-- Disponer de los permisos necesarios [para gestionar](/pages/account_and_service_management/account_information/managing_contacts) para el dominio desde el [área de cliente de OVHcloud](/links/manager).
-- Estar conectado a su [área de cliente de OVHcloud](/links/manager).
+- Ser titular de un [dominio](/links/web/domains) registrado en OVHcloud.
+- Disponer de los permisos [necesarios para gestionar](/pages/account_and_service_management/account_information/managing_contacts) el dominio.
+
+<!-- CP-NAV-START:web-domains -->
+---
+
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [Dominios](/links/control-panel/web-domains)
+- **Ruta de navegación:** `Web Cloud`{.action} > `Dominios`{.action} > Seleccione su dominio
+
+---
+<!-- CP-NAV-END:web-domains -->
 
 > [!primary]
 >
-> Un **registrar** es una organización autorizada a vender dominios. OVHcloud forma parte de estos **registrars**.
+> Un **agente registrador** es una organización autorizada a vender dominios. OVHcloud es uno de estos **agentes registradores**.
 >
-> Si su dominio no está registrado con OVHcloud, deberá modificar los servidores DNS en el **registrar** en el que esté registrado su dominio.
->
+> Si su dominio no está registrado en OVHcloud, deberá modificar los servidores DNS en el **agente registrador** en el que esté registrado actualmente su dominio.
 
 ## Procedimiento
 
@@ -33,189 +56,242 @@ Para más información, consulte nuestras guías "[Todo sobre los servidores DNS
 >
 > **Tenga cuidado al modificar los servidores DNS de un dominio.**
 >
-> Un error de manipulación puede inhabilitar el acceso al sitio web o impedir que las direcciones de correo electrónico reciban nuevos mensajes de correo electrónico. A continuación explicamos lo que ocurre cuando se cambia la contraseña para que entienda las consecuencias que ello implica.
+> Un error de configuración puede hacer que su sitio web sea inaccesible o impedir que sus direcciones de correo electrónico reciban nuevos mensajes. Comprender las consecuencias de dicha modificación le ayudará a entender mejor los cambios que va a realizar.
 
-Al modificar los servidores DNS de un dominio, también se modifica su configuración DNS. La nueva configuración DNS sustituye a la antigua y se almacena en los servidores DNS recién definidos. Técnicamente, el dominio utiliza una nueva zona DNS.
+Al modificar los servidores DNS de su dominio, estará cambiando su configuración DNS. La nueva configuración DNS sustituye a la antigua y se almacena en los servidores DNS recién definidos. Técnicamente, el dominio utilizará entonces una nueva zona DNS.
 
-Sin embargo, es importante tener en cuenta lo siguiente:
+Sin embargo, es esencial tener en cuenta los siguientes puntos:
 
-- Al cambiar de servidor DNS (por ejemplo, un DNS externo por un DNS de OVHcloud), el contenido de la antigua configuración o zona DNS no se replica automáticamente en la nueva. Asegúrese de que la nueva zona DNS contiene todos los registros DNS necesarios para que los servicios asociados al dominio funcionen correctamente (por ejemplo, el sitio web y las direcciones de correo electrónico).
-- Si no desea modificar los servidores DNS, pero sí uno o varios registros de su configuración / zona DNS actual, consulte nuestra guía: "[Editar una zona DNS de OVHcloud](/pages/web_cloud/domains/dns_zone_edit)".
-- Algunas organizaciones, los registros, que gestionan las extensiones de dominios, tienen requisitos particulares relativos a los servidores DNS (cantidad de servidores de nombres, valor de los registros, etc.). En caso de duda, consulte con el registro responsable del dominio.
+- Al cambiar de servidor DNS (por ejemplo, de un DNS externo a un DNS de OVHcloud), el contenido de la antigua configuración/zona DNS no se replica automáticamente en la nueva. Asegúrese de que su nueva zona DNS contiene todos los registros DNS necesarios para que los servicios asociados a su dominio funcionen correctamente (por ejemplo, su sitio web y sus direcciones de correo electrónico).
+- Si no desea modificar los servidores DNS sino uno o varios registros de su configuración/zona DNS actual, consulte nuestra guía: "[Editar una zona DNS de OVHcloud](/pages/web_cloud/domains/dns_zone_edit)".
+- Algunas organizaciones (registros) que gestionan las extensiones de dominio tienen requisitos específicos en cuanto a los servidores DNS (número de servidores de nombres, valor de los registros, etc.). En caso de duda, consulte con el registro responsable del dominio.
 
-### 1 - Acceder a la gestión de los servidores DNS de OVHcloud <a name="access-dns-servers"></a>
+### 1 - Modificar los servidores DNS <a name="modify-dns-servers"></a>
 
-Para ello, haga clic en las fichas siguientes para ver cada una de las **4** etapas.
+Puede ser necesario modificar los servidores DNS de su dominio en las siguientes situaciones:
+
+- Desea utilizar los servidores DNS propuestos por OVHcloud.
+- Desea utilizar sus propios servidores DNS (o los proporcionados por un proveedor DNS externo).
+- Desea combinar los servidores DNS propuestos por OVHcloud con sus propios servidores DNS.
+
+> [!primary]
+>
+> Cuando utiliza los servidores DNS de OVHcloud, los números presentes en los nombres de los servidores no tienen ninguna relación con el servicio o servicios que utiliza. Solo la opción [DNS anycast](/links/web/domains-options) utiliza servidores DNS específicos (`ns200.anycast.me` y `dns200.anycast.me`). Cuando los contrata, se le asignan automáticamente.
+
+<!-- CP-STEPS-START:opcion-1-dns-ovhcloud -->
+**Haga clic en las opciones de abajo para ver su contenido.**
+
+/// details | Opción 1 - Utilizar los DNS por defecto de OVHcloud
+
+Esta opción permite aplicar automáticamente la configuración de la zona DNS de OVHcloud existente para su dominio. Previamente, asegúrese de que existe una zona DNS en OVHcloud para su dominio.
+
+> [!primary]
+>
+> Si es necesario, consulte las guías "[Editar una zona DNS de OVHcloud](/pages/web_cloud/domains/dns_zone_edit)" y/o "[Crear una zona DNS en OVHcloud](/pages/web_cloud/domains/dns_zone_create)" para comprobar si existe una zona DNS de OVHcloud para su dominio.
+
+Haga clic en las pestañas de abajo para ver cada uno de los **4** pasos.
 
 > [!tabs]
-> **Etapa 1**
+> **Paso 1**
 >>
->> Conéctese a su [área de cliente de OVHcloud](/links/manager) y acceda a la sección `Web Cloud`{.action}.
+>> Acceda a la página [Dominios](/links/control-panel/web-domains) y seleccione el dominio correspondiente.
 >>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
+>> ![Dominios](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
 >>
-> **Etapa 2**
+> **Paso 2**
 >>
->> Haga clic en el menú `Dominios`{.action} y seleccione el dominio correspondiente.
+>> Seleccione la pestaña `Servidores DNS`{.action} una vez situado en el dominio.
 >>
->> ![Domain Names](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
+> **Paso 3**
 >>
-> **Etapa 3**
+>> La tabla que aparece contiene los servidores DNS actualmente definidos por OVHcloud para su dominio. Pueden aparecer varios servidores DNS, cada uno con su propia línea en la tabla.
 >>
->> Abra la pestaña `Servidores DNS`{.action} y seleccione el dominio correspondiente.
+>> ![Servidores DNS](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-servers/tab.png){.thumbnail}
 >>
-> **Etapa 4**
+>> Haga clic en el botón `Modificar los servidores DNS`{.action} situado a la derecha de la tabla "servidores DNS". Según la resolución de su pantalla, el botón puede encontrarse debajo de la tabla.
 >>
->> Se mostrará una tabla con los servidores DNS actualmente definidos por OVHcloud para su dominio. Es posible mostrar varios servidores DNS, cada uno con su propia fila en la tabla.
+> **Paso 4**
 >>
->> > [!primary]
->> >
->> > Al utilizar los servidores DNS de OVHcloud, los números que aparecen en los nombres de los servidores no tienen relación con los servicios que utiliza. Solo la opción [DNS anycast](/links/web/domains-options) utiliza servidores DNS específicos (`ns200.anycast.me` y `dns200.anycast.me`). Una vez contratados, se le asignarán automáticamente.
+>> ![Modificar servidores DNS](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-servers/modify-my-dns-servers-1.png){.thumbnail}
 >>
->> ![DNS servers](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-servers/tab.png){.thumbnail}
+>> Para utilizar los servidores DNS por defecto de OVHcloud, haga clic en `Aplicar la configuración`{.action}. Aparecerá la siguiente ventana:
+>>
+>> ![Modificar servidores DNS](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-servers/modify-my-dns-servers-1-apply-configuration.png){.thumbnail}
+>>
+>> Muestra los nombres de los 2 servidores DNS que se aplicarán a su dominio. Deben tener una de las 3 formas siguientes:
+>>
+>> - `nsXX.ovh.net` y `dnsXX.ovh.net` o `nsXXX.ovh.net` y `dnsXXX.ovh.net` (donde cada `X` representa un dígito entre **0** y **9**)
+>> - `nsXX.ovh.ca` y `dnsXX.ovh.ca` o `nsXXX.ovh.ca` y `dnsXXX.ovh.ca` (donde cada `X` representa un dígito entre **0** y **9**)
+>> - `ns200.anycast.me` y `dns200.anycast.me` (si ha contratado la opción [DNS anycast](/links/web/domains-options))
+>>
+>> Si corresponden a los que desea aplicar, haga clic en `Aplicar`{.action}.
+>>
+>> Los 2 servidores DNS declarados (en los registros de tipo NS de la zona DNS de OVHcloud) se utilizarán entonces para su dominio.
 
-### 2 - Modificar los servidores DNS <a name="modify-dns-servers"></a>
+Los antiguos servidores DNS declarados y la configuración DNS que aplicaban se desactivarán para su dominio. La zona DNS de OVHcloud se convertirá en la zona DNS activa para su dominio.
 
-> [!primary]
->
-> Todas las funcionalidades descritas a continuación se realizan desde la pestaña `Servidores DNS`{.action} mencionada en el [etapa 1](#access-dns-servers) de esta guía.
->
+///
+<!-- CP-STEPS-END:opcion-1-dns-ovhcloud -->
 
-Para modificar los servidores DNS, haga clic en el botón `Cambiar los servidores DNS`{.action}, situado a la derecha de la tabla "Servidores DNS". Dependiendo de la resolución de la pantalla, el botón puede estar debajo de la tabla.
-
-Aparecerá una nueva página con tres opciones de edición disponibles.
-
-![Modify DNS servers](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-servers/modify-my-dns-servers.png){.thumbnail}
-
-#### Opción 1 - Utilizar los DNS por defecto de OVHcloud
-
-![Modify DNS servers](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-servers/modify-my-dns-servers-1.png){.thumbnail}
-
-Esta opción permite aplicar automáticamente la configuración de la zona DNS de OVHcloud existente para su dominio. Asegúrese previamente de que OVHcloud dispone de una zona DNS para su dominio.
-
-> [!primary]
->
-> Si lo necesita, consulte las guías "[Editar una zona DNS de OVHcloud](/pages/web_cloud/domains/dns_zone_edit)" y/o "[Crear una zona DNS de OVHcloud para un dominio](/pages/web_cloud/domains/dns_zone_create)" para comprobar si existe una zona DNS de OVHcloud para su dominio.
-
-Para utilizar los servidores DNS por defecto de OVHcloud, haga clic en `Aplicar la configuración`{.action}. Se abrirá la siguiente ventana:
-
-![Modify DNS servers](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-servers/modify-my-dns-servers-1-apply-configuration.png){.thumbnail}
-
-Este cuadro de diálogo resume el nombre de los dos servidores DNS que se aplicarán al dominio. Deben tener una de las 3 formas siguientes:
-
-- `nsXX.ovh.net` y `dnsXX.ovh.net` o, `nsXXX.ovh.net` y `dnsXXX.ovh.net` (donde cada `X` representa un número comprendido entre **0** y **9**)
-- `nsXX.ovh.ca` y `dnsXX.ovh.ca` o, `nsXXX.ovh.ca` y `dnsXXX.ovh.ca` (donde cada `X` representa un número comprendido entre **0** y **9**)
-- `ns200.anycast.me` y `dns200.anycast.me` (si ha contratado la opción [DNS anycast](/links/web/domains-options))
-
-Si coinciden con los que desea aplicar, haga clic en `Aplicar`{.action}.
-
-Así, los 2 servidores DNS declarados (en los registros de tipo NS de la zona DNS de OVHcloud) se utilizarán para su dominio.
-
-Los antiguos servidores DNS declarados y la configuración DNS que aplicaban se desactivarán para el dominio. La zona DNS de OVHcloud se convertirá en la zona DNS activa de su dominio.
-
-#### Opción 2 - Utilizar mis propios DNS
-
-![Modify DNS servers](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-servers/modify-my-dns-servers-2.png){.thumbnail}
+<!-- CP-STEPS-START:opcion-2-propios-dns -->
+/// details | Opción 2 - Utilizar mis propios DNS
 
 Esta opción permite declarar los servidores DNS de una zona DNS no gestionada desde el área de cliente de OVHcloud.
 
-Por ejemplo:
+Puede tratarse, por ejemplo, de:
 
-- los servidores DNS externos proporcionados por uno de nuestros competidores;
+- servidores DNS externos proporcionados por uno de nuestros competidores;
 - sus propios servidores DNS si aloja su zona DNS en uno de sus servidores. Estos servidores DNS también pueden estar alojados en una infraestructura de OVHcloud (servidor dedicado, VPS, etc.).
 
 > [!success]
 >
-> Antes de añadir un servidor DNS, asegúrese de que este último **está disponible** y contiene una zona DNS para el dominio. Asegúrese también de que esta zona DNS contiene todos los registros de tipo "NS" a todos los servidores DNS que va a declarar para su nombre de dominio.
+> Antes de añadir un servidor DNS, compruebe que este **es accesible** y contiene una zona DNS para su dominio. Asegúrese también de que esta zona DNS contiene todos los registros de tipo "NS" hacia todos los servidores DNS que va a declarar para su dominio.
 >
-> Por ejemplo, si desea declarar los servidores DNS *ns1.dns-server.tld*, *ns2.dns-server.tld* y *ns3.dns-server.tld* para su dominio. A continuación, compruebe que los tres registros de tipo "NS" siguientes están presentes en las 3 zonas DNS alojadas en los 3 servidores DNS:
+> Por ejemplo: desea declarar los servidores DNS *ns1.dns-server.tld*, *ns2.dns-server.tld* y *ns3.dns-server.tld* para su dominio. Deberá entonces comprobar que los tres registros de tipo "NS" siguientes están presentes en las 3 zonas DNS alojadas en estos 3 servidores DNS:
 >
 > - "Your own domain (or just an @)" IN NS ns1.dns-server.tld.
 > - "Your own domain (or just an @)" IN NS ns2.dns-server.tld.
 > - "Your own domain (or just an @)" IN NS ns3.dns-server.tld.
->
 
-Para introducir uno de sus propios servidores DNS, complete los dos formularios que se incluyen en el recuadro:
+Haga clic en las pestañas de abajo para ver cada uno de los **5** pasos.
 
-- `Servidor DNS`: nombre del servidor DNS que debe aplicarse a su dominio.
-- `IP asociada (opcional)`: dirección IP (IPv4 o IPv6) del servidor DNS indicado. Solo puede introducir **una dirección IP** en este formulario.
+> [!tabs]
+> **Paso 1**
+>>
+>> Acceda a la página [Dominios](/links/control-panel/web-domains) y seleccione el dominio correspondiente.
+>>
+>> ![Dominios](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
+>>
+> **Paso 2**
+>>
+>> Seleccione la pestaña `Servidores DNS`{.action} una vez situado en el dominio.
+>>
+> **Paso 3**
+>>
+>> La tabla que aparece contiene los servidores DNS actualmente definidos por OVHcloud para su dominio. Pueden aparecer varios servidores DNS, cada uno con su propia línea en la tabla.
+>>
+>> ![Servidores DNS](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-servers/tab.png){.thumbnail}
+>>
+>> Haga clic en el botón `Modificar los servidores DNS`{.action} situado a la derecha de la tabla "servidores DNS". Según la resolución de su pantalla, el botón puede encontrarse debajo de la tabla.
+>>
+> **Paso 4**
+>>
+>> ![Modificar servidores DNS](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-servers/modify-my-dns-servers-2.png){.thumbnail}
+>>
+>> Para introducir uno de sus propios servidores DNS, rellene los 2 campos del formulario del recuadro como se indica a continuación:
+>>
+>> - `Servidor DNS`: nombre del servidor DNS que desea aplicar a su dominio.
+>> - `IP asociada (opcional)`: dirección IP (IPv4 o IPv6) del servidor DNS indicado. Solo puede indicar **una dirección IP** en este formulario.
+>>
+>> > [!warning]
+>> >
+>> > Cada recuadro de entrada (visible en la captura de pantalla anterior) solo puede contener **un** servidor DNS a la vez. Un servidor DNS corresponde, por tanto, a un recuadro.
+>> >
+>> > Además, una nota informativa en fondo azul, situada encima del primer recuadro, indica el rango de servidores DNS que puede declarar para su dominio. Estos valores varían según la extensión del dominio.
+>>
+> **Paso 5**
+>>
+>> Una vez introducida la información, haga clic en el botón `+`{.action} situado a la derecha de los 2 campos del formulario. Esto añade el servidor DNS y muestra un nuevo recuadro de entrada debajo del anterior.
+>>
+>> Repita la operación para cada servidor DNS que desee añadir, respetando los límites indicados en la nota informativa.
+>> Haga clic en el botón `+`{.action} para cada servidor DNS con el fin de validar su entrada y adición.
+>>
+>> Una vez añadidos todos sus servidores DNS, haga clic en `Aplicar la configuración`{.action}. Aparecerá la siguiente ventana:
+>>
+>> ![Modificar servidores DNS](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-servers/modify-my-dns-servers-2-apply-configuration.png){.thumbnail}
+>>
+>> Muestra los nombres de los servidores DNS que se aplicarán a su dominio.
+>> Si corresponden a los que desea aplicar, haga clic en `Aplicar`{.action}.
+
+Los antiguos servidores DNS declarados y la configuración DNS que aplicaban se desactivarán para su dominio. La zona DNS declarada en sus propios servidores DNS se convertirá en la zona DNS activa para su dominio.
+
+///
+<!-- CP-STEPS-END:opcion-2-propios-dns -->
+
+<!-- CP-STEPS-START:opcion-3-dns-ovhcloud-y-propios -->
+/// details | Opción 3 - Utilizar los DNS de OVHcloud y mis propios DNS
+
+Esta opción permite combinar el uso de sus propios servidores DNS manteniendo los servidores DNS de OVHcloud activos para su dominio. Esta combinación permite, por ejemplo, garantizar una mayor disponibilidad para los diferentes servicios asociados a su dominio (alojamiento web, servidores de correo electrónico, etc.). En efecto, si un grupo de servidores DNS deja de estar disponible durante unos minutos, los otros servidores DNS declarados pueden tomar el relevo.
+
+Sin embargo, asegúrese de que las configuraciones de las zonas DNS presentes en los diferentes servidores DNS implicados están correctamente configuradas para funcionar conjuntamente. La mayoría de las veces, todos los servidores DNS estarán operativos. Todos ellos estarán en condiciones de responder a las peticiones que se les realicen de forma aleatoria en la red DNS.
 
 > [!warning]
 >
-> Cada cuadro de entrada (que se muestra en la captura de pantalla anterior) sólo puede contener **un** servidor DNS a la vez. Un servidor DNS corresponde a un recuadro.
->
-> Además, una nota informativa sobre fondo azul, situada encima del primer recuadro, indica el intervalo de servidores DNS que puede declarar para su dominio. Estos valores varían según la extensión del dominio.
-
-Una vez introducidos los datos, haga clic en el botón `+`{.action} situado a la derecha de los dos formularios. Permite añadir el servidor DNS y muestra una nueva barra de entrada debajo del anterior.
-
-Repita la operación tantas veces como desee añadir servidores DNS, dentro de los límites indicados en la nota informativa.
-Haga clic en el botón `+`{.action} para cada servidor DNS con el fin de validar la entrada y la adición.
-
-Una vez que haya añadido todos sus propios servidores DNS, haga clic en `Aplicar la configuración`{.action}. Se abrirá la siguiente ventana:
-
-![Modify DNS servers](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-servers/modify-my-dns-servers-2-apply-configuration.png){.thumbnail}
-
-Este cuadro de diálogo resume los nombres de los servidores DNS que se aplicarán al dominio.
-Si coinciden con los que desea aplicar, haga clic en `Aplicar`{.action}.
-
-Los antiguos servidores DNS declarados y la configuración DNS que aplicaban se desactivarán para el dominio. La zona DNS declarada en sus propios servidores DNS se convertirá en la zona DNS activa para su dominio.
-
-#### Opción 3 - Utilizar los DNS de OVHcloud y mis propios DNS
-
-![Modify DNS servers](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-servers/modify-my-dns-servers-3.png){.thumbnail}
-
-Esta opción permite combinar el uso de sus propios servidores DNS conservando los servidores DNS de OVHcloud activos para su dominio. Esta combinación permite, por ejemplo, garantizar un mayor acceso a los distintos servicios asociados al dominio (alojamiento web, servidores de correo, etc.). Si un grupo de servidores DNS deja de estar disponible durante unos minutos, los otros servidores DNS declarados pueden tomar el relevo.
-
-No obstante, asegúrese de que las configuraciones de las zonas DNS de los distintos servidores DNS afectados estén configuradas correctamente para que funcionen todas juntas. La mayoría de las veces, todos los servidores DNS estarán operativos. Todos ellos podrán responder a las peticiones que se les hagan aleatoriamente a través de la red DNS.
-
-> [!warning]
->
-> 1. Tenga cuidado si decide utilizar esta última opción. Para ello, necesita conocimientos avanzados sobre el funcionamiento de la red DNS, los servidores DNS y las zonas DNS.<br>
-> 2. Debe desactivar la opción [DNSSEC](/pages/web_cloud/domains/dns_dnssec) para combinar el uso de sus propios servidores DNS con los DNS de OVHcloud.<br>
-> 3. No mezcle un grupo de servidores DNS de OVHcloud con otro grupo de servidores DNS de OVHcloud. Por ejemplo, *dns19.ovh.net* y *ns19.ovh.net* corresponden a un grupo de servidores DNS de OVHcloud, van de la mano y están sincronizados. En OVHcloud, los grupos de servidores DNS se identifican mediante el número que figura en los nombres de los servidores. Dos servidores DNS de OVHcloud forman parte de un mismo grupo de servidores DNS desde el momento en que comparten el mismo número. Por ejemplo, *dns19.ovh.net* y *ns19.ovh.net*.
+> 1. Tenga cuidado si decide utilizar esta última opción. En efecto, requiere conocimientos avanzados sobre el funcionamiento de la red DNS, los servidores DNS y las zonas DNS.
+> 2. La opción [DNSSEC](/pages/web_cloud/domains/dns_dnssec) debe estar desactivada para combinar el uso de sus propios servidores DNS con los DNS de OVHcloud.
+> 3. No mezcle un grupo de servidores DNS de OVHcloud con otro grupo de servidores DNS de OVHcloud. Por ejemplo, *dns19.ovh.net* y *ns19.ovh.net* corresponden a un grupo de servidores DNS de OVHcloud, van a la par y están sincronizados. En OVHcloud, los grupos de servidores DNS se identifican por el número presente en los nombres de los servidores. Dos servidores DNS de OVHcloud forman parte del mismo grupo de servidores DNS cuando comparten el mismo número. Por ejemplo, *dns19.ovh.net* y *ns19.ovh.net*.
 
 > [!success]
 >
-> Antes de añadir un servidor DNS, asegúrese de que este último **está disponible** y contiene una zona DNS para el dominio. Asegúrese también de que esta zona DNS contiene todos los registros de tipo "NS" a todos los servidores DNS que va a declarar para su nombre de dominio.
+> Antes de añadir un servidor DNS, compruebe que este **es accesible** y contiene una zona DNS para su dominio. Asegúrese también de que esta zona DNS contiene todos los registros de tipo "NS" hacia todos los servidores DNS que va a declarar para su dominio.
 >
-> Por ejemplo, si quiere declarar los servidores DNS *ns1.dns-server.tld*, *dnsXX.ovh.net* y *nsXX.ovh.net* para su dominio. A continuación, compruebe que los tres registros de tipo "NS" siguientes están presentes en las 3 zonas DNS alojadas en los 3 servidores DNS:
+> Por ejemplo: desea declarar los servidores DNS *ns1.dns-server.tld*, *dnsXX.ovh.net* y *nsXX.ovh.net* para su dominio. Deberá entonces comprobar que los tres registros de tipo "NS" siguientes están presentes en las 3 zonas DNS alojadas en estos 3 servidores DNS:
 >
 > - "Your own domain (or just an @)" IN NS ns1.dns-server.tld.
 > - "Your own domain (or just an @)" IN NS dnsXX.ovh.net.
 > - "Your own domain (or just an @)" IN NS nsXX.ovh.net.
->
 
-Para introducir uno de sus propios servidores DNS, complete los dos formularios que se incluyen en el recuadro:
+Haga clic en las pestañas de abajo para ver cada uno de los **5** pasos.
 
-- `Servidor DNS`: nombre del servidor DNS que debe aplicarse a su dominio.
-- `IP asociada (opcional)`: dirección IP (IPv4 o IPv6) del servidor DNS indicado. Solo puede introducir **una dirección IP** en este formulario.
+> [!tabs]
+> **Paso 1**
+>>
+>> Acceda a la página [Dominios](/links/control-panel/web-domains) y seleccione el dominio correspondiente.
+>>
+>> ![Dominios](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
+>>
+> **Paso 2**
+>>
+>> Seleccione la pestaña `Servidores DNS`{.action} una vez situado en el dominio.
+>>
+> **Paso 3**
+>>
+>> La tabla que aparece contiene los servidores DNS actualmente definidos por OVHcloud para su dominio. Pueden aparecer varios servidores DNS, cada uno con su propia línea en la tabla.
+>>
+>> ![Servidores DNS](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-servers/tab.png){.thumbnail}
+>>
+>> Haga clic en el botón `Modificar los servidores DNS`{.action} situado a la derecha de la tabla "servidores DNS". Según la resolución de su pantalla, el botón puede encontrarse debajo de la tabla.
+>>
+>> ![Modificar servidores DNS](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-servers/modify-my-dns-servers-3.png){.thumbnail}
+>>
+> **Paso 4**
+>>
+>> Para introducir uno de sus propios servidores DNS, rellene los 2 campos del formulario del recuadro como se indica a continuación:
+>>
+>> - `Servidor DNS`: nombre del servidor DNS que desea aplicar a su dominio.
+>> - `IP asociada (opcional)`: dirección IP (IPv4 o IPv6) del servidor DNS indicado. Solo puede indicar **una dirección IP** en este formulario.
+>>
+>> > [!warning]
+>> >
+>> > Cada recuadro de entrada (visible en la captura de pantalla anterior) solo puede contener **un** servidor DNS a la vez. Un servidor DNS corresponde, por tanto, a un recuadro.
+>> >
+>> > Además, una nota informativa en fondo azul, situada encima del primer recuadro, indica el rango de servidores DNS que puede declarar para su dominio. Estos valores varían según la extensión del dominio.
+>>
+>> Una vez introducida la información, haga clic en el botón `+`{.action} situado a la derecha de los 2 campos del formulario. Esto añade el servidor DNS y muestra un nuevo recuadro de entrada debajo del anterior.
+>>
+>> Repita la operación para cada servidor DNS que desee añadir, respetando los límites indicados en la nota informativa.
+>> Haga clic en el botón `+`{.action} para cada servidor DNS con el fin de validar su entrada y adición.
+>>
+> **Paso 5**
+>>
+>> Una vez añadidos todos sus servidores DNS, haga clic en `Aplicar la configuración`{.action}. Aparecerá la siguiente ventana:
+>>
+>> ![Modificar servidores DNS](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-servers/modify-my-dns-servers-3-apply-configuration.png){.thumbnail}
+>>
+>> Muestra los nombres de los servidores DNS que se aplicarán a su dominio.
+>> Si corresponden a los que desea aplicar, haga clic en `Aplicar`{.action}.
 
-> [!warning]
->
-> Cada cuadro de entrada (que se muestra en la captura de pantalla anterior) sólo puede contener **un** servidor DNS a la vez. Un servidor DNS corresponde a un recuadro.
->
-> Además, una nota informativa sobre fondo azul, situada encima del primer recuadro, indica el intervalo de servidores DNS que puede declarar para su dominio. Estos valores varían según la extensión del dominio.
+Los antiguos servidores DNS declarados y la configuración DNS que aplicaban se desactivarán para su dominio. Las zonas DNS presentes en sus propios servidores DNS y en los servidores DNS de OVHcloud se convertirán en las zonas activas para su dominio.
 
-Una vez introducidos los datos, haga clic en el botón `+`{.action} situado a la derecha de los dos formularios. Permite añadir el servidor DNS y muestra una nueva barra de entrada debajo del anterior.
+///
+<!-- CP-STEPS-END:opcion-3-dns-ovhcloud-y-propios -->
 
-Repita la operación tantas veces como desee añadir servidores DNS, dentro de los límites indicados en la nota informativa.
-Haga clic en el botón `+`{.action} para cada servidor DNS con el fin de validar la entrada y la adición.
+### 2 - Propagación de la modificación de los servidores DNS
 
-Una vez que haya añadido todos sus propios servidores DNS, haga clic en `Aplicar la configuración`{.action}. Se abrirá la siguiente ventana:
+Una vez realizadas las modificaciones, deben tenerse en cuenta dos periodos sucesivos:
 
-![Modify DNS servers](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-servers/modify-my-dns-servers-3-apply-configuration.png){.thumbnail}
-
-Este cuadro de diálogo resume los nombres de los servidores DNS que se aplicarán al dominio.
-Si coinciden con los que desea aplicar, haga clic en `Aplicar`{.action}.
-
-Los antiguos servidores DNS declarados y la configuración DNS que aplicaban se desactivarán para el dominio. Las zonas DNS de sus propios servidores DNS y de los servidores DNS de OVHcloud se convertirán en las zonas DNS activas para su dominio.
-
-### 3 - Registro de la modificación de los servidores DNS
-
-Una vez realizados los cambios, deberá tener en cuenta dos períodos de tiempo:
-
-- El *registro* que gestione su extensión de dominio (por ejemplo, el registro de extensiones en *.fr*) debe ser informado de la modificación DNS efectuada por OVHcloud. Siga el progreso en su [área de cliente de OVHcloud](/links/manager). Para ello, acceda a la sección `Web Cloud`{.action} y haga clic en `Operaciones en curso`{.action}.
-- Una vez que haya actualizado la información del *registro*, espere un máximo de **48 horas** para que los cambios realizados se propaguen y sean efectivos.
+- El *registro* que gestiona la extensión de su dominio (por ejemplo, el registro de las extensiones *.fr*) debe ser informado de la modificación DNS realizada en OVHcloud. Siga la progresión de esta operación en la página [Operaciones en curso](/links/control-panel/web-ongoing-operations).
+- Una vez actualizada la información del *registro*, espere un máximo de **48 horas** para que los cambios realizados se propaguen completamente y sean efectivos.
 
 ## Más información
 
@@ -225,10 +301,10 @@ Una vez realizados los cambios, deberá tener en cuenta dos períodos de tiempo:
 
 [Todo sobre los registros DNS](/pages/web_cloud/domains/dns_zone_records)
 
-[Editar una zona DNS de OVHcloud](/pages/web_cloud/domains/dns_zone_edit).
+[Editar una zona DNS de OVHcloud](/pages/web_cloud/domains/dns_zone_edit)
 
-Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](/links/partner).
- 
-Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](/links/support).
- 
+Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con los [partners de OVHcloud](/links/partner).
+
+Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas [soluciones en materia de soporte](/links/support).
+
 Interactúe con nuestra [comunidad de usuarios](/links/community).

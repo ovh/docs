@@ -1,7 +1,7 @@
 ---
 title: "Alojamento Cloud Web: primeira utilização"
 excerpt: "Saiba como começar num plano de alojamento Cloud Web"
-updated: 2025-05-22
+updated: 2026-03-31
 ---
 
 ## Objetivo
@@ -15,11 +15,21 @@ A nossa oferta de alojamento [Cloud Web](/links/web/hosting-cloud-web-offer) com
 - Ter um serviço de [alojamento Cloud Web](/links/web/hosting-cloud-web-offer).
 - Ter recebido o e-mail com a confirmação da instalação do alojamento Cloud Web.
 - Ter um [domínio](/links/web/domains) (endereço que permite identificar e aceder ao seu site).
-- Aceder à [Área de Cliente OVHcloud](/links/manager).
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Acesso à Área de Cliente OVHcloud
+
+- **Ligação direta:** [Alojamentos](/links/control-panel/web-hosting)
+- **Caminho de navegação:** `Web Cloud`{.action} > `Alojamentos`{.action} > Selecione o seu alojamento web
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## Instruções
 
-### 1 - Tipo de Projeto: Criar ou Transferir um Site.
+### 1 - Tipo de Projeto: Criar ou Transferir um Site
 
 De modo a adequar-se ao máximo ao seu projeto, o alojamento [Cloud Web](/links/web/hosting-cloud-web-offer) oferece mais possibilidades de configuração do que um alojamento web clássico. É importante que tenha uma visão clara do seu objetivo, de forma a levá-lo a cabo o melhor possível. Para isso, aconselhamos o seguinte:
 
@@ -27,7 +37,7 @@ De modo a adequar-se ao máximo ao seu projeto, o alojamento [Cloud Web](/links/
 
 - **reunir os pré-requisitos técnicos necessários à instalação**: é possível que o projeto que deseja instalar exija pré-requisitos técnicos particulares. Certifique-se de os conhecer previamente;
 
-- **certificar-se da compatibilidade técnica do seu projeto com o alojamento Cloud Web**\: precisa de um motor de execução ou de um SQL em particular?  Se ainda não o fez, assegure-se de que este último se encontra disponível com o seu alojamento [Cloud Web](/links/web/hosting-cloud-web-offer).
+- **certificar-se da compatibilidade técnica do seu projeto com o alojamento Cloud Web**: precisa de um motor de execução ou de um SQL em particular? Se ainda não o fez, assegure-se de que este último se encontra disponível com o seu alojamento [Cloud Web](/links/web/hosting-cloud-web-offer).
 
 Depois de ter avaliado as diferentes possibilidades ao seu dispor e de ter delimitado o seu projeto com precisão, já pode começar a pô-lo online.
 
@@ -42,27 +52,70 @@ As linguagens atualmente disponíveis são:
 - Python
 - Ruby
 
-Para aceder aos motores de execução do seu alojamento [Cloud Web](/links/web/hosting-cloud-web-offer), aceda à [Área de Cliente OVHcloud](/links/manager). Clique em `Web Cloud`{.action} na barra à esquerda e, a seguir, em `Alojamentos`{.action}. Escolha o nome do alojamento Cloud Web em causa e aceda ao separador `Motores de execução`{.action}.
+<!-- CP-STEPS-START:access-runtime-software -->
+Para aceder aos motores de execução do seu alojamento [Cloud Web](/links/web/hosting-cloud-web-offer), clique nos separadores abaixo para visualizar cada uma das **3** etapas.
 
-Será automaticamente criado um motor durante a instalação do alojamento. É indicado como `Escolha padrão` no quadro que se apresenta. Para modificar um motor já parametrizado, clique nos três pontos à direita deste último e, a seguir, em `Modificar`{.action}. 
-
-Se dispõe da oferta [Cloud Web](/links/web/hosting-cloud-web-offer) com 2 vCores, pode adicionar um segundo motor de execução à sua oferta (máximo de 2 motores de execução diferentes por oferta) clicando no botão `Ações`{.action} e, depois em `Adicionar um motor de execução`{.action}.
-
-Para verificar que dispõe de 2 vCores com o seu alojamento Cloud Web, aceda à [Área de Cliente OVHcloud](/links/manager), clique em `Alojamentos`{.action} na barra à esquerda e escolha o nome do alojamento Cloud Web em causa. Na página que vai aparecer, na caixa **Subscrição** e sob a menção `Plano`, verifique se a referência `Cloud Web 3`{.action} está indicada.
+> [!tabs]
+> **Etapa 1**
+>>
+>> Aceda à página [Alojamentos](/links/control-panel/web-hosting) e selecione o alojamento Cloud Web em causa.
+>>
+>> ![Alojamentos web](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Etapa 2**
+>>
+>> Clique no separador `Motores de execução`{.action}. Será automaticamente criado um motor durante a instalação do alojamento. É indicado como `Escolha padrão` no quadro que se apresenta.
+>>
+>> Para modificar um motor já parametrizado, clique no botão `...`{.action} à direita e, a seguir, em `Alterar`{.action}.
+>>
+> **Etapa 3**
+>>
+>> Se dispõe da oferta [Cloud Web](/links/web/hosting-cloud-web-offer) com 2 vCores, pode adicionar um segundo motor de execução (máximo de 2 por oferta) clicando no botão `Ações`{.action} e, depois, em `Adicionar um tempo de execução para o aplicativo de software`{.action}.
+<!-- CP-STEPS-END:access-runtime-software -->
 
 Assim, antes de prosseguir, certifique-se de que dispõe do ou dos motores de execução necessários ao seu projeto.
 
-![cloudweb](/pages/assets/screens/control_panel/product-selection/web-cloud/cloud-web/runtime-software-application/edit-runtime.png){.thumbnail}
+<!-- CP-STEPS-START:check-cloud-web-vcores -->
+Para verificar que dispõe de 2 vCores com o seu alojamento Cloud Web, clique nos separadores abaixo para visualizar cada uma das **2** etapas.
+
+> [!tabs]
+> **Etapa 1**
+>>
+>> Aceda à página [Alojamentos](/links/control-panel/web-hosting) e selecione o alojamento Cloud Web em causa.
+>>
+>> ![Alojamentos web](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Etapa 2**
+>>
+>> Na caixa **Subscrição** e sob a menção `Plano`, verifique se a referência `Cloud Web 3` está indicada.
+<!-- CP-STEPS-END:check-cloud-web-vcores -->
 
 ### 3 - Criar variáveis de ambiente (facultativo)
 
 Quando deseja implementar várias vezes o seu projeto em ambientes diferentes (por exemplo: desenvolvimento, teste ou produção), deverá fornecer variáveis de modo que o código reaja em conformidade. Para isso, a [Cloud Web](/links/web/hosting-cloud-web-offer) possibilita a definição de variáveis de ambiente acessíveis pelo código do seu site ou da sua aplicação web.
 
-Por exemplo, desta forma pode deixar de fora um ficheiro «.env» no framework PHP Laravel, como indica a documentação do framework: <https://laravel.com/docs/5.6/configuration>.
+Por exemplo, desta forma pode deixar de fora um ficheiro ".env" no framework PHP Laravel, como indica a documentação do framework: <https://laravel.com/docs/master/configuration>.
 
-Para adicionar uma variável de ambiente, e ainda posicionado no alojamento Cloud Web em causa, clique no separador `Variáveis de ambiente`{.action}. Um quadro exibirá as variáveis de ambiente criadas no seu serviço. Para adicionar uma nova, clique no botão `Ações`{.action} e depois em `Adicionar uma variável de ambiente`{.action}. Então, siga as indicações em função da variável que deseja criar:
+<!-- CP-STEPS-START:add-environment-variable -->
+Para adicionar uma variável de ambiente, clique nos separadores abaixo para visualizar cada uma das **3** etapas.
 
-![cloudweb](/pages/assets/screens/control_panel/product-selection/web-cloud/cloud-web/environment-variables/add-an-environment-variable.png){.thumbnail}
+> [!tabs]
+> **Etapa 1**
+>>
+>> Aceda à página [Alojamentos](/links/control-panel/web-hosting) e selecione o alojamento Cloud Web em causa.
+>>
+>> ![Alojamentos web](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Etapa 2**
+>>
+>> Clique no separador `Variáveis de ambiente`{.action}. Um quadro exibirá as variáveis de ambiente criadas no seu serviço.
+>>
+> **Etapa 3**
+>>
+>> Para adicionar uma nova, clique no botão `Ações`{.action} e depois em `Adicionar um ambiente variável`{.action}. Então, siga as indicações em função da variável que deseja criar.
+>>
+>> ![Adicionar uma variável de ambiente num alojamento Cloud Web](/pages/assets/screens/control_panel/product-selection/web-cloud/cloud-web/environment-variables/add-an-environment-variable.png){.thumbnail}
+<!-- CP-STEPS-END:add-environment-variable -->
 
 Se não utiliza um framework de desenvolvimento que integre as variáveis de ambiente, ou se deseja simplesmente verificar o bom funcionamento das suas variáveis, pode criar um script para efetuar esta verificação. Encontrará abaixo dois exemplos que podem ser-lhe úteis, mas que não substituem a ajuda de um webmaster:
 
@@ -77,12 +130,12 @@ Se não utiliza um framework de desenvolvimento que integre as variáveis de amb
 ```sh
 var http = require('http');
 
-http.createServer(function(request, response) {  
-    response.writeHeader(200, {"Content-Type": "text/html"});  
+http.createServer(function(request, response) {
+    response.writeHeader(200, {"Content-Type": "text/html"});
 
     response.write( process.env.DB_DATABASE);
 
-    response.end();  
+    response.end();
 }).listen(80);
 ```
 
@@ -90,24 +143,36 @@ Tenha o cuidado de substituir a informação genérica presentes nestes scripts 
 
 ### 4 - Configurar domínios adicionais enquanto Multisite (facultativo)
 
-Agora que o ambiente técnico do seu alojamento [Cloud Web](/links/web/hosting-cloud-web-offer) está pronto, pode configurar domínios adicionais enquanto Multisite. Isto permite-lhe partilhar o seu espaço, de forma a alojar nele vários sites, por exemplo. Se isto se adequa ao seu projeto, e ainda posicionado no alojamento Cloud Web em causa, clique no separador `Multisite`{.action}.
+<!-- CP-STEPS-START:configure-multisite -->
+Agora que o ambiente técnico do seu alojamento [Cloud Web](/links/web/hosting-cloud-web-offer) está pronto, pode configurar domínios adicionais enquanto Multisite. Isto permite-lhe partilhar o seu espaço, de forma a alojar nele vários sites, por exemplo. Se isto se adequa ao seu projeto, clique nos separadores abaixo para visualizar cada uma das **3** etapas.
 
-O quadro que vai aparecer contém os domínios adicionados ao seu alojamento. Alguns de entre eles foram criados automaticamente durante a instalação do alojamento. Para adicionar um novo, clique no botão `Adicionar um domínio ou subdomínio`{.action} e siga as instruções que surgirem. A manipulação pode ser diferente se o domínio em causa estiver registado junto da OVHcloud ou não. 
-
-Por isso, sugerimos que tenha muita atenção durante a introdução das informações seguintes:
-
-- **pasta raiz**: trata-se do repertório onde o domínio indicado deverá ser alojado no espaço de armazenamento do seu serviço de alojamento Cloud Web; 
-
-- **motor de execução**: trata-se do motor de execução, previamente parametrizado, que será utilizado pelo Multisite em vias de ser configurado.
-
-> [!warning]
->
-> Se adicionou um domínio considerado externo, deverá parametrizar um campo TXT chamado **ovhcontrol** na sua configuração DNS. Ele permitirá que a OVHcloud confirme que a operação é legítima. Portanto, é um passo indispensável e, se não for realizado, a operação será anulada. 
->
+> [!tabs]
+> **Etapa 1**
+>>
+>> Aceda à página [Alojamentos](/links/control-panel/web-hosting) e selecione o alojamento Cloud Web em causa.
+>>
+>> ![Alojamentos web](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Etapa 2**
+>>
+>> Clique no separador `Multisite`{.action}. O quadro que vai aparecer contém os domínios adicionados ao seu alojamento. Alguns de entre eles foram criados automaticamente durante a instalação do alojamento.
+>>
+>> Para adicionar um novo, clique no botão `Adicionar um domínio ou subdomínio`{.action} e siga as instruções que surgirem. A manipulação pode ser diferente se o domínio em causa estiver registado junto da OVHcloud ou não.
+>>
+> **Etapa 3**
+>>
+>> Por isso, sugerimos que tenha muita atenção durante a introdução das informações seguintes:
+>>
+>> - **pasta raiz**: trata-se do repertório onde o domínio indicado deverá ser alojado no espaço de armazenamento do seu serviço de alojamento Cloud Web.
+>>
+>> - **motor de execução**: trata-se do motor de execução, previamente parametrizado, que será utilizado pelo Multisite em vias de ser configurado.
+>>
+>> > [!warning]
+>> >
+>> > Se adicionou um domínio considerado externo, deverá parametrizar um campo TXT chamado **ovhcontrol** na sua configuração DNS. Ele permitirá que a OVHcloud confirme que a operação é legítima. Portanto, é um passo indispensável e, se não for realizado, a operação será anulada.
+<!-- CP-STEPS-END:configure-multisite -->
 
 Repita esta manipulação se deseja adicionar vários domínios ao seu alojamento Cloud Web. Para obter mais informação acerca da adição de um domínio enquanto Multisite, consulte o guia: [Partilhar o alojamento entre vários sites](/pages/web_cloud/web_hosting/multisites_configure_multisite).
-
-![cloudweb](/pages/assets/screens/control_panel/product-selection/web-cloud/cloud-web/multisite/add-domain-or-subdomain.png){.thumbnail}
 
 ### 5 - Instalar o projeto no alojamento Cloud Web
 
@@ -117,20 +182,34 @@ Tem ao dispor duas formas de efetuar a instalação do seu projeto. Repita o pro
 
 Esta solução permite-lhe beneficiar de uma estrutura de site pronta a usar ainda por personalizar (tema, textos, etc.). A OVHcloud disponibiliza quatro com os módulos em 1 clique, a descobrir na página [Criar um site com os módulos em 1 clique](/links/web/hosting-website).
 
-Se optar pela utilização dos nossos módulos em 1 clique, e ainda posicionado no alojamento [Cloud Web](/links/web/hosting-cloud-web-offer) em causa, clique no separador `Módulos em 1 clique`{.action} e, a seguir, em `Adicionar um módulo`{.action}. Então, poderá iniciar uma instalação em modo «simples» (não personalizável) ou em modo «avançado» (com a possibilidade de personalizar certos elementos).
+<!-- CP-STEPS-START:install-1-click-module -->
+Se optar pela utilização dos nossos módulos em 1 clique, clique nos separadores abaixo para visualizar cada uma das **3** etapas.
+
+> [!tabs]
+> **Etapa 1**
+>>
+>> Aceda à página [Alojamentos](/links/control-panel/web-hosting) e selecione o alojamento Cloud Web em causa.
+>>
+>> ![Alojamentos web](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Etapa 2**
+>>
+>> Clique no separador `Módulos "1 clique"`{.action} e, a seguir, em `Adicionar um módulo`{.action}.
+>>
+> **Etapa 3**
+>>
+>> Então, poderá iniciar uma instalação em modo "simples" (não personalizável) ou em modo "avançado" (com a possibilidade de personalizar certos elementos).
+<!-- CP-STEPS-END:install-1-click-module -->
 
 Para mais informações sobre os módulos, consulte o guia: [Instalar um site com os módulos em 1 clique](/pages/web_cloud/web_hosting/cms_install_1_click_modules).
 
 > [!primary]
 >
 > Para utilizar estes últimos, deve imperativamente usar o motor de execução PHP.
->
-
-![cloudweb](/pages/assets/screens/control_panel/product-selection/web-cloud/cloud-web/1-click-modules/add-a-module.png){.thumbnail}
 
 #### 2. Instalar o seu projeto manualmente
 
-Quer se trate de um novo site ou da migração de um site já existente, a instalação manual pode revelar-se mais técnica e deverá ser efetuada em função dos seus próprios conhecimentos. Por isso, recomendamos que recorra a um prestatário especializado e/ou que contacte o editor do serviço se encontrar dificuldades. 
+Quer se trate de um novo site ou da migração de um site já existente, a instalação manual pode revelar-se mais técnica e deverá ser efetuada em função dos seus próprios conhecimentos. Por isso, recomendamos que recorra a um [prestatário especializado](/links/partner) e/ou que contacte o editor do serviço se encontrar dificuldades.
 
 Se optou pela instalação manual, deverá ter na sua posse o conjunto dos ficheiros do site ou da aplicação que deseja instalar, assim como (se for necessário para o seu bom funcionamento) as informações de uma base de dados criada previamente no seu alojamento Cloud Web. No quadro da migração de um site, assegure-se de ter uma cópia integral deste último.
 
@@ -142,34 +221,34 @@ Por esta altura, o seu site está alojado nos serviços da OVHcloud e os endere�
 
 Contudo, repare que, se está a migrar os seus serviços para a OVHcloud, as manipulações ligadas aos DNS podem provocar uma indisponibilidade dos serviços se elas não foram efetuadas num momento adequado. Como tal, deverá seguir as instruções indicadas no guia [Transferir o meu site para a OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh), e modificar os servidores DNS do seu domínio no final do processo.
 
-#### 6.1. Consultar registos DNS do alojamento OVHcloud 
+#### 1. Consultar registos DNS do alojamento OVHcloud
 
 Há vários registos DNS inerentes à OVHcloud. Vamos referir-nos a dois deles em particular: aqueles que permitem garantir a acessibilidade do seu site e a receção de mensagens de e-mail. Siga as indicações abaixo para saber onde os encontrar:
 
 |Registo DNS|Serviço associado|Onde encontrá-lo?|
 |---|---|---|
-|A|Para o site|Na sua [Área de Cliente OVHcloud](/links/manager), posicionado na secção `Alojamentos`{.action}, no alojamento Cloud Web em causa. De seguida, em `Informações gerais`{.action}, tome nota do endereço IP indicado para «IPv4».|
-|MX|Para os e-mails|Na sua [Área de Cliente OVHcloud](/links/manager), posicionado na secção `E-mails`{.action}, no domínio em causa. De seguida, clique em `Informações gerais`{.action} e tome nota das informações indicadas para os «Campos MX».|
+|A|Para o site|Consulte o nosso guia [Alojamento web: lista dos endereços IP por cluster](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP).|
+|MX|Para os e-mails|Consulte o nosso guia [Adicionar um registo MX à configuração do domínio](/pages/web_cloud/domains/dns_zone_mx).|
 
-#### 6.2. Verificar e/ou alterar os registos DNS
+#### 2. Verificar e/ou alterar os registos DNS
 
 Agora que conhece os registos DNS inerentes ao seu alojamento [Cloud Web](/links/web/hosting-cloud-web-offer) e ao seu serviço de e-mail OVHcloud, deve verificar se estes últimos estão bem configurados e fazer alterações se necessário. É imperativo que estas duas manipulações sejam feitas junto do prestatário que gere a configuração DNS (a zona DNS) do seu domínio.
 
 > [!warning]
 >
 > - Se o domínio não usar a configuração DNS da OVHcloud, a configuração deverá ser efetuada no sistema do agente responsável pela gestão do seu domínio.
-> 
-> - Se o domínio estiver registado na OVHcloud, pode verificar se este último utiliza a nossa configuração DNS. Para isso, vá à [Área de Cliente](/links/manager), clique no separador`Servidores DNS`{.action} e posicione-se sobre o domínio em questão.
+>
+> - Se o domínio estiver registado na OVHcloud, pode verificar se este último utiliza a nossa configuração DNS. Consulte o nosso guia [Alterar os servidores DNS de um domínio OVHcloud](/pages/web_cloud/domains/dns_server_edit).
 >
 
 Siga as indicações abaixo para saber onde efetuar estas manipulações:
 
 |Configuração DNS utilizada|Onde realizar as manipulações?|
 |---|---|
-|OVHcloud|A partir do seu [Área de Cliente OVHcloud](/links/manager), aceda à parte `Web Cloud`{.action}. Clique no menu `Zonas DNS`{.action} e escolha o domínio em causa. Consulte a nossa documentação "[Editar uma zona DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit)", se necessário.|
+|OVHcloud|Aceda à página [Zonas DNS](/links/control-panel/web-dns-zone) e selecione o domínio em causa. Consulte a nossa documentação "[Editar uma zona DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit)", se necessário.|
 |Outra|No sistema do agente responsável pela gestão do seu domínio. Sugerimos que o contacte se sentir dificuldades durante as manipulações.|
 
-Uma vez modificada a configuração DNS do domínio, é necessário um tempo máximo de propagação de 24 horas até as alterações serem efetivas. Se adicionou vários domínios ao seu alojamento Cloud Web enquanto Multisite, deverá realizar estas duas manipulações para cada um deles. 
+Uma vez modificada a configuração DNS do domínio, é necessário um tempo máximo de propagação de 24 horas até as alterações serem efetivas. Se adicionou vários domínios ao seu alojamento Cloud Web enquanto Multisite, deverá realizar estas duas manipulações para cada um deles.
 
 ### 7 - Personalizar o site
 
@@ -181,11 +260,11 @@ Caso precise de ajuda relativamente às funcionalidades do seu site, pedimos-lhe
 
 Os seus endereços de e-mail podem ser usados com o Roundcube, um serviço de webmail incluído na oferta de alojamento OVHcloud. Para isso, a OVHcloud disponibiliza uma aplicação online (webmail): RoundCube. Aceda a <https://www.ovh.pt/mail/> e preencha os dados associados ao endereço de e-mail criado através do sistema OVHcloud.
 
-Para saber mais sobre o RoundCube, consulte o guia: [Utilização do RoundCube](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_roundcube) Se desejar associar o seu endereço de e-mail a um software (cliente) de correio eletrónico no computador, smartphone ou um tablet, consulte a página: </products/web-cloud-email-collaborative-solutions-mx-plan>.
+Para saber mais sobre o RoundCube, consulte o guia: [Utilização do RoundCube](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_roundcube). Se desejar associar o seu endereço de e-mail a um software (cliente) de correio eletrónico no computador, smartphone ou um tablet, consulte a página: </products/web-cloud-email-collaborative-solutions-mx-plan>.
 
 ## Quer saber mais?
 
-[Transferir o meu site para a OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh) (Versão PT disponível em breve)
+[Transferir o meu site para a OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh)
 
 [Colocar o meu site online](/pages/web_cloud/web_hosting/hosting_how_to_get_my_website_online)
 

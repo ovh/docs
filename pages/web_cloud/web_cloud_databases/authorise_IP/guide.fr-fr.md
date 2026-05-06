@@ -1,7 +1,7 @@
 ---
 title: "Web Cloud Databases - Comment autoriser une adresse IP ?"
 excerpt: "Découvrez comment autoriser une ou plusieurs adresses IP à accéder à votre solution Web Cloud Databases"
-updated: 2025-07-10
+updated: 2026-03-24
 ---
 
 <style>
@@ -24,7 +24,7 @@ Les solutions [Web Cloud Databases](/links/web/databases) peuvent être utilisé
 
 Par défaut et pour des raisons de sécurité, sur ces solutions :
 
-- Seules les adresses IP liées à notre infrastructure d'hébergements mutualisés sont autorisées à accéder au contenu des bases de données. 
+- Seules les adresses IP liées à notre infrastructure d'hébergements mutualisés sont autorisées à accéder au contenu des bases de données.
 - L'accès aux logs de la solution n'est pas restreint en fonction des adresses IP. Cela permet d'y accéder via un ordinateur par exemple.
 
 Vous avez besoin de modifier ces autorisations/restrictions ?
@@ -35,7 +35,17 @@ Vous avez besoin de modifier ces autorisations/restrictions ?
 
 - Disposer d'une solution [Web Cloud Databases](/links/web/databases).
 - Connaître l'adresse IP (ou la plage d'adresses IP) à autoriser sur votre solution.
-- Être connecté à votre [espace client OVHcloud](/links/manager).
+
+<!-- CP-NAV-START:web-cloud-databases -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Web Cloud Databases](/links/control-panel/web-cloud-databases)
+- **Pour accéder à vos services :** `Web Cloud`{.action} > `Web Cloud Databases`{.action} > Sélectionnez votre service de base de données
+
+---
+<!-- CP-NAV-END:web-cloud-databases -->
 
 ## En pratique
 
@@ -45,28 +55,23 @@ Vous avez besoin de modifier ces autorisations/restrictions ?
 >
 > Pour rappel, si vous venez d'activer votre solution [Web Cloud Databases](/links/web/databases) et que vous souhaitez l'utiliser avec une offre d'[hébergement web OVHcloud](/links/web/hosting), les adresses IP de ces offres sont déjà autorisées par défaut.
 
-Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **5** étapes.
+<!-- CP-STEPS-START:authorize-ip -->
+Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4** étapes.
 
 > [!tabs]
 > **Étape 1**
 >>
->> Connectez-vous à votre [espace client OVHcloud](/links/manager), puis rendez-vous dans la partie `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Étape 2**
->>
->> Cliquez sur le menu `Web Cloud Databases`{.action}, puis choisissez la solution Web Cloud Databases concernée.
+>> Accédez à la page [Web Cloud Databases](/links/control-panel/web-cloud-databases), puis choisissez la solution concernée.
 >>
 >> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases.png){.thumbnail}
 >>
-> **Étape 3**
+> **Étape 2**
 >>
 >> Sur la page qui s'affiche, cliquez sur l'onglet `IPs autorisées`{.action}.
 >>
 >> ![Authorised IPs](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/authorised-ips.png){.thumbnail}
 >>
-> **Étape 4**
+> **Étape 3**
 >>
 >> Sur la page qui apparaît, cliquez sur le bouton `Ajouter une adresse IP / masque`{.action} situé au-dessus du tableau.
 >>
@@ -76,7 +81,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **5*
 >> >
 >> > Si vous souhaitez modifier une adresse IP ou une plage d'adresses IP déjà autorisée, cliquez directement dans le tableau sur le bouton `...`{.action} situé à droite de la ligne correspondant à l'adresse IP ou à la plage d'adresses IP à modifier, puis sur `Éditer la whitelist`{.action}.
 >>
-> **Étape 5**
+> **Étape 4**
 >>
 >> Dans la fenêtre qui s'ouvre, plusieurs champs sont à compléter :
 >>
@@ -94,6 +99,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **5*
 >> > En effet, cela permettrait d'autoriser l'accès à vos bases de données à l'ensemble des adresses IPv4 existantes.
 >>
 >> Une fois les informations saisies, cliquez sur le bouton `Valider`{.action}.
+<!-- CP-STEPS-END:authorize-ip -->
 
 ## Cas particuliers
 
@@ -103,7 +109,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **5*
 
 Lors de l'activation de votre solution Web Cloud Databases, une ligne pour la plage d'adresses IP `0.0.0.0/0` est déjà présente par défaut pour autoriser l'accès en **SFTP** à la solution.
 
-Cette autorisation est volontairement mise en place pour vous permettre d'accéder aux fichiers de logs de votre solution Web Cloud Databases sans avoir à déclarer l'adresse IP de votre point d'accès à Internet. 
+Cette autorisation est volontairement mise en place pour vous permettre d'accéder aux fichiers de logs de votre solution Web Cloud Databases sans avoir à déclarer l'adresse IP de votre point d'accès à Internet.
 
 En effet, cette adresse IP peut changer régulièrement en fonction des fournisseurs d'accès à Internet.
 
@@ -113,44 +119,39 @@ Effectivement, cela permettrait d'autoriser l'accès à vos bases de données à
 
 ///
 
-
 /// details | L'autorisation d'accès aux hébergements web OVHcloud
 
 Lors de l'activation de votre solution Web Cloud Databases, l'autorisation d'accès aux hébergements web OVHcloud est activée par défaut.
 
-Si vous souhaitez désactiver cette autorisation car vous n'utilisez pas d'hébergement web avec votre solution Web Cloud Databases, suivez successivement les **4** étapes ci-dessous :
+<!-- CP-STEPS-START:disable-hosting-access -->
+Si vous souhaitez désactiver cette autorisation car vous n'utilisez pas d'hébergement web avec votre solution Web Cloud Databases, cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3** étapes.
 
 > [!tabs]
 > **Étape 1**
 >>
->> Connectez-vous à votre [espace client OVHcloud](/links/manager), puis rendez-vous dans la partie `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Étape 2**
->>
->> Cliquez sur le menu `Web Cloud Databases`{.action}, puis choisissez la solution Web Cloud Databases concernée.
+>> Accédez à la page [Web Cloud Databases](/links/control-panel/web-cloud-databases), puis choisissez la solution concernée.
 >>
 >> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases.png){.thumbnail}
 >>
-> **Étape 3**
+> **Étape 2**
 >>
 >> Sur la page qui s'affiche, cliquez sur l'onglet `IPs autorisées`{.action}.
 >>
 >> ![Authorised IPs](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/authorised-ips.png){.thumbnail}
 >>
-> **Étape 4**
+> **Étape 3**
 >>
 >> Sur la page qui apparaît, décochez la case précédant la mention `Autoriser les hébergements web OVHcloud à accéder à la base de données`{.action}.
 >>
 >> ![Authorised IPs interface](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/authorized-ips/tab-0000-sftp-hosting-enabled.png){.thumbnail}
+<!-- CP-STEPS-END:disable-hosting-access -->
 
 ///
 
 ## Aller plus loin
 
 Pour des prestations spécialisées (référencement, développement, etc.), contactez les [partenaires OVHcloud](/links/partner).
- 
+
 Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](/links/support).
- 
+
 Échangez avec notre [communauté d'utilisateurs](/links/community).

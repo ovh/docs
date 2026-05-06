@@ -1,7 +1,7 @@
 ---
-title: API OVHcloud et Stockage
-excerpt: "Découvrez comment l'API OVHcloud vous permet de personnaliser la configuration des disques, RAID matériels/logiciels et du partitionnement lors de la réinstallation de l'OS sur votre serveur"
-updated: 2025-06-04
+title: "Personnaliser le partitionnement de votre serveur dédié via l'API OVHcloud"
+excerpt: "Utilisez l'API OVHcloud pour personnaliser les partitions, le RAID matériel, le RAID logiciel et les systèmes de fichiers sur votre serveur dédié"
+updated: 2026-02-18
 ---
 
 ## Objectif
@@ -12,7 +12,7 @@ updated: 2025-06-04
 >
 
 Les [serveurs dédiés](/links/bare-metal/bare-metal) OVHcloud vous permettent de configurer les disques, le [RAID matériel](/pages/bare_metal_cloud/dedicated_servers/raid_hard), le [RAID logiciel](/pages/bare_metal_cloud/dedicated_servers/raid_soft), LVM, ZFS, etc. pendant [la réinstallation](/pages/bare_metal_cloud/dedicated_servers/getting-started-with-dedicated-server) de votre système d'exploitation depuis l’[API OVHcloud](/links/api) ou depuis votre [espace client OVHcloud](/links/manager). Dans cet article, nous allons nous concentrer sur l'[API OVHcloud](/links/api).<br>
-Cela vous donnera plus de détails sur le moteur qui s'exécute en arrière-plan, afin de créer le personnalisation du stockage sur le serveur dédié à partir des données d'entrée transmises à l'API OVHcloud.
+Cela vous donnera plus de détails sur le moteur qui s'exécute en arrière-plan, afin de créer la personnalisation du stockage sur le serveur dédié à partir des données d'entrée transmises à l'API OVHcloud.
 
 Fournir des détails avancés sur la configuration du stockage peut vous aider à comprendre pourquoi :
 
@@ -143,7 +143,7 @@ Dans cet exemple, vous avez 2 grappes :
 - la première (diskGroupId=1) contient 2 disques de 480 Go chacun,
 - la seconde (diskGroupId=2) contient 2 disques de 1,9 To chacun.
 
-Example avec une installation OS de Debian 12 (Bookworm) sur le diskGroupId 2:
+Exemple d'installation de Debian 12 (Bookworm) sur le diskGroupId 2 :
 
 > [!api]
 >
@@ -394,7 +394,7 @@ Le tableau suivant donne une vue d'ensemble de la compatibilité des systèmes d
 
 #### Vdevs ZFS vs RAID standard <a name="raidz2RAID"></a>
 
-ZFS ne supporte pas les niveaux RAID standards. Il s'agit de périphériques virtuels (vdevs) pour décrire la tolérance aux pannes au sein d'un groupe de périphériques. Consultez la [documentation officielle d'OpenZFS](https://openzfs.github.io/openzfs-docs/man/7/zpoolconcepts.7.html) en anglais pour plus de détails sur les vdevs.
+ZFS ne supporte pas les niveaux RAID standards. Il utilise des périphériques virtuels (vdevs) pour décrire la tolérance aux pannes au sein d'un groupe de périphériques. Consultez la [documentation officielle d'OpenZFS](https://openzfs.github.io/openzfs-docs/man/7/zpoolconcepts.7.html) en anglais pour plus de détails sur les vdevs.
 
 Afin de rendre l'API OVHcloud la plus simple possible, il est nécessaire que vous définissiez un RAID standard au sein de l'API pour les systèmes de fichiers ZFS. Le niveau RAID standard sera alors traduit par une définition équivalente de vdev. Le tableau suivant illustre la traduction des différents niveaux RAID proposés par l'API OVHcloud ainsi qu'un rappel de leurs caractéristiques respectives.
 
@@ -495,11 +495,11 @@ La sous-hash `extras` est optionnelle. Pour l'instant, cette dernière peut êtr
 }
 ```
 
-Dans cet exemple, le point de montage `/` concerne un dataset ZFS dans un zpool nommé "poule" de type raidz1. Veuillez vérifier afin d'obtenir la correspondance entre les raidz et les niveaux de RAID standards.
+Dans cet exemple, le point de montage `/` concerne un dataset ZFS dans un zpool nommé "poule" de type raidz1. Consultez le tableau [Vdevs ZFS vs RAID standard](#raidz2RAID) pour obtenir la correspondance entre les raidz et les niveaux de RAID standards.
 
 > [!primary]
 >
-> Si aucun nom de zpool n'est spécifié, celui-ci sera généré automatiquement.
+> Si aucun nom de zpool n'est spécifié, celui-ci sera généré automatiquement. Par défaut, l'algorithme tente de regrouper les différents datasets au sein d'un même zpool, à l'exception des datasets contenant `/` ou `/boot` qui sont placés dans des zpools séparés. Cela permet d'activer sur les autres zpools des fonctionnalités avancées de ZFS incompatibles avec le bootloader.
 >
 
 <br />

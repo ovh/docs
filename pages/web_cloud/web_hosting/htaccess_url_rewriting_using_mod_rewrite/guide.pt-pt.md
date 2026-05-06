@@ -29,6 +29,18 @@ O "**mod_rewrite**" oferece uma infinidade de possibilidades. Apresentamos a seg
 
 - Dispor de um [alojamento partilhado OVHcloud](/links/web/hosting)
   
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Acesso à Área de Cliente OVHcloud
+
+- **Ligação direta:** [Web hosting](/links/control-panel/web-hosting)
+- **Caminho de navegação:** `Web Cloud`{.action} > `Alojamentos`{.action} > Selecione o seu alojamento web
+
+---
+<!-- CP-NAV-END:web-hosting -->
+
 ## Instruções
 
 > [!warning]

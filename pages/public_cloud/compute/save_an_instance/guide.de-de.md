@@ -27,8 +27,18 @@ Sie können ein einzelnes Backup einer Instanz erstellen oder einen Zeitplan kon
 ## Voraussetzungen
 
 - Sie haben eine [Public Cloud Instanz](/links/public-cloud/public-cloud) in Ihrem OVHcloud Kunden-Account.
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 - Sie haben [OpenStack CLI auf Ihrem System installiert und konfiguriert](/pages/public_cloud/public_cloud_cross_functional/prepare_the_environment_for_using_the_openstack_api).
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direkter Link:** [Public Cloud Projekte](/links/control-panel/publiccloud-projects)
+- **Navigationspfad:** `Public Cloud`{.action} > Wählen Sie Ihr Projekt aus
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## In der praktischen Anwendung
 
@@ -52,7 +62,6 @@ Sie können ein einzelnes Backup einer Instanz erstellen oder einen Zeitplan kon
 > [!tabs]
 > Über das OVHcloud Kundencenter
 >>
->> Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein, öffnen Sie `Public Cloud`{.action} und wählen Sie das betreffende Public Cloud Projekt aus.  
 >> Klicken Sie anschließend auf `Instanzen`{.action} im linken Menü.  
 >> Auf der Instanzseite klicken Sie auf den Button `...`{.action} rechts neben der Instanz und wählen Sie `Backup erstellen`{.action}.
 >>

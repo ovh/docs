@@ -1,7 +1,7 @@
 ---
 title: "FAQ su VPS OVHcloud"
 excerpt: "Trovate le risposte alle domande più frequenti sulle nostre offerte VPS"
-updated: 2025-10-30
+updated: 2026-03-24
 ---
 
 <style>
@@ -118,9 +118,9 @@ Sì, un VPS può essere configurato per ospitare più siti web o progetti. Puoi 
 
 ///
 
-/// details | Riceverò un nome di dominio e un servizio email incluso con il mio VPS?
+/// details | Riceverò un nome di dominio e un servizio e-mail incluso con il mio VPS?
 
-No, le nostre soluzioni VPS non includono un nome di dominio o un servizio email. Questi servizi possono essere ordinati separatamente nel pannello di controllo OVHcloud.
+No, le nostre soluzioni VPS non includono un nome di dominio o un servizio e-mail. Questi servizi possono essere ordinati separatamente nel pannello di controllo OVHcloud.
 
 ///
 
@@ -128,7 +128,7 @@ No, le nostre soluzioni VPS non includono un nome di dominio o un servizio email
 
 **Piano di hosting web**
 
-- Deale per esigenze di hosting di base con una configurazione predefinita.
+- Ideale per esigenze di hosting di base con una configurazione predefinita.
 
 **VPS**
 
@@ -198,7 +198,7 @@ No, non puoi migrare direttamente i servizi. Dovrai sottoscrivere il VPS scelto,
 I server privati virtuali senza protezione Anti-DDoS sono esposti automaticamente agli attacchi distribuiti di negazione del servizio (DDoS), potenzialmente causando interruzioni del servizio e gravi violazioni della sicurezza.
 
 - Esposizione diretta: se il tuo server è bersaglio di un attacco DDoS, l'afflusso di richieste maliziose potrebbe sopraffarlo, rendendo i tuoi siti e applicazioni inaccessibili.
-- Nessun mitigazione automatica: per proteggere il tuo server, dovrai difenderlo utilizzando software di sicurezza di terze parti o configurazioni specifiche.
+- Nessuna mitigazione automatica: per proteggere il tuo server, dovrai difenderlo utilizzando software di sicurezza di terze parti o configurazioni specifiche.
 - Ulteriore carico di gestione: la mancanza di una sicurezza robusta e integrata presenta un rischio significativo, evidenziando la necessità di un monitoraggio vigile e strategie proattive, in particolare per progetti ad alto traffico.
 
 Se la resilienza agli attacchi DDoS è un fattore critico per il tuo progetto, ti consigliamo di optare per un VPS OVHcloud ospitato in uno dei nostri data center, che include una protezione integrata.
@@ -225,6 +225,20 @@ Ad esempio, offriamo una gamma di modelli e immagini preconfigurati per sistemi 
 Inoltre, la nostra documentazione e la knowledge base contengono una vasta gamma di informazioni sulla configurazione e gestione del tuo VPS.
 
 Tuttavia, per assistenza specifica alla configurazione del software, ti consigliamo di contattare la nostra [community](/links/community) o di cercare l'aiuto di un amministratore di sistema o sviluppatore qualificato tramite il nostro [portale partner](/links/partner).
+
+///
+
+/// details | Quali sono le best practice per l'invio di e-mail da un VPS?
+
+Per evitare che le tue e-mail vengano considerate come spam, devi configurare correttamente il tuo server.
+
+Questo include:
+
+- l'autenticazione delle e-mail (SPF, DKIM, DMARC),
+- la configurazione del reverse DNS (PTR),
+- il rispetto delle best practice dei provider di posta elettronica.
+
+Per maggiori informazioni, consulta la nostra guida dedicata: [Come evitare che le tue e-mail vengano contrassegnate come spam](/pages/bare_metal_cloud/dedicated_servers/mail_sending_optimization).
 
 ///
 
@@ -453,6 +467,6 @@ Il vantaggio di un VPS rispetto a un server dedicato è la possibilità di scala
 
 ## Per saperne di più
 
-Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](/links/support).
+Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre [offerte di supporto](/links/support).
 
 Contatta la nostra [Community di utenti](/links/community).

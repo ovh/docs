@@ -1,6 +1,6 @@
 ---
-title: OVHcloud AntiSpam - Migliori pratiche e sblocco di un indirizzo IP
-excerpt: Come sbloccare un indirizzo IP bloccato per SPAM
+title: "OVHcloud AntiSpam - Buone pratiche e sblocco di un indirizzo IP"
+excerpt: "Applica le buone pratiche antispam OVHcloud e sblocca un indirizzo IP di server dedicato segnalato per invio di spam"
 updated: 2026-01-06
 ---
 
@@ -11,6 +11,17 @@ Per ogni indirizzo IP disponibile sui prodotti e servizi OVHcloud, in qualità d
 Se un indirizzo IP viene segnalato a organizzazioni come Spamhaus, SpamCop, ecc. che lottano contro lo SPAM, i siti malevoli e il phishing, è in gioco la reputazione dell'intera rete OVHcloud.
 
 È quindi importante che OVHcloud si occupi della reputazione, della qualità e della sicurezza della rete, che costituisce anche una parte importante del tuo servizio.
+
+<!-- CP-NAV-START:network-public-ip -->
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [Public IP](/links/control-panel/network-public-ip)
+- **Percorso di navigazione:** `Network`{.action} > `Indirizzi IP pubblici`{.action}
+
+---
+<!-- CP-NAV-END:network-public-ip -->
 
 ### Come funziona il sistema di protezione?
 
@@ -61,8 +72,6 @@ Una volta risolto il problema, puoi sbloccare il tuo indirizzo IP seguendo gli s
 ### Sblocca il tuo indirizzo IP
 
 #### Sblocca il tuo indirizzo IP dallo Spazio Cliente
-
-Accedi allo [Spazio Cliente OVHcloud](/links/manager), clicca su `Network`{.action} nel menu a sinistra e poi su `Indirizzi IP Pubblici`{.action}.
 
 Puoi utilizzare il menu a discesa sotto **I tuoi indirizzi IP pubblici e servizi associati** per filtrare i tuoi servizi per categoria, oppure digitare direttamente l'indirizzo IP desiderato nella barra di ricerca.
 

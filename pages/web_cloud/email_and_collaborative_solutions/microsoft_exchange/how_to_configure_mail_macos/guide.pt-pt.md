@@ -31,7 +31,18 @@ As contas Exchange podem ser configuradas em vários softwares de e-mail compat�
 - Dispor de um endereço de e-mail [Exchange](/links/web/emails-hosted-exchange).
 - Ter o software Mail instalado no seu Mac.
 - Dispor das credenciais do endereço de e-mail que pretende configurar.
- 
+
+<!-- CP-NAV-START:web-exchange -->
+---
+
+### Acesso à Área de Cliente OVHcloud
+
+- **Ligação direta:** [Exchange](/links/control-panel/web-exchange)
+- **Caminho de navegação:** `Web Cloud`{.action} > `Exchange`{.action} > Selecione a sua plataforma
+
+---
+<!-- CP-NAV-END:web-exchange -->
+
 ## Instruções
 
 ### Adicionar a conta
@@ -40,12 +51,7 @@ As contas Exchange podem ser configuradas em vários softwares de e-mail compat�
 >
 > No nosso exemplo, utilizamos a menção servidor: ex?.mail.ovh.net. Deverá substituir o "?" pelo número que designa o servidor do seu serviço Exchange.
 >
-> 1. Aceda à [Área de Cliente OVHcloud](/links/manager).
-> 1. Aceda à secção `Web Cloud`{.action}.
-> 1. Na rubrica `MICROSOFT`, clique em `Exchange`{.action}.
-> 1. Selecione a plataforma em causa.
-> 1. O servidor é visível na secção **Ligação** do separador `Informações gerais`{.action}.
->
+> Clique [neste link](/links/control-panel/web-exchange) para aceder à secção `Exchange`{.action}. O nome do servidor é apresentado na zona **Ligação** do separador `Informações gerais`{.action}.
 
 - **Quando a aplicação** é iniciada pela primeira vez: é apresentado um assistente de configuração que lhe solicita que selecione o tipo de conta pretendido.
 

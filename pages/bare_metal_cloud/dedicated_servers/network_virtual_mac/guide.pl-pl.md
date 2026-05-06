@@ -1,6 +1,6 @@
 ---
-title: 'Przypisanie wirtualnego adresu MAC do Additional IP'
-excerpt: 'Dowiedz się, jak utworzyć wirtualny adres MAC i jak powiązać go z Additional IP'
+title: "Jak przypisać wirtualny adres MAC do Additional IP"
+excerpt: "Utwórz i przypisz wirtualny adres MAC do Additional IP na serwerze dedykowanym OVHcloud."
 updated: 2025-05-16
 ---
 
@@ -12,10 +12,19 @@ OVHcloud umożliwia Ci powiązanie wirtualnego adresu MAC z adresem IP, abyś m�
 
 ## Wymagania początkowe
 
-- Posiadanie [serwera dedykowanego](/links/bare-metal/bare-metal)
+- Posiadanie [serwera dedykowanego](/links/bare-metal/bare-metal). Twój serwer musi obsługiwać wirtualne adresy MAC. Zapoznaj się [z tym przewodnikiem](/pages/bare_metal_cloud/dedicated_servers/network_support_virtual_mac).
 - Posiadanie [adresu Additional IP](/links/network/additional-ip) lub bloku Additional IP (RIPE)
-- Dostęp do [Panelu klienta](/links/manager) lub do [API OVHcloud](/links/api)
-- Twój serwer musi obsługiwać wirtualne adresy MAC. Zapoznaj się [z tym przewodnikiem](/pages/bare_metal_cloud/dedicated_servers/network_support_virtual_mac).
+
+<!-- CP-NAV-START:network-public-ip -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Public IP](/links/control-panel/network-public-ip)
+- **Ścieżka nawigacji:** `Network`{.action} > `Publiczne adresy IP`{.action}
+
+---
+<!-- CP-NAV-END:network-public-ip -->
 
 > [!warning]
 > - Funkcja ta może być niedostępna lub ograniczona na [serwerach dedykowanych **Eco**](/links/bare-metal/eco-about). Aby uzyskać więcej informacji, zapoznaj się z naszym [porównaniem](/links/bare-metal/eco-compare).
@@ -38,15 +47,13 @@ OVHcloud umożliwia Ci powiązanie wirtualnego adresu MAC z adresem IP, abyś m�
 
 #### Za pośrednictwem Panelu klienta OVHcloud
 
-Zaloguj się do [Panelu klienta OVHcloud](/links/manager), kliknij `Network`{.action} w menu po lewej stronie ekranu, a następnie `Publiczne adresy IP`{.action}.
-
 Kliknij na zakładkę `Additional IP`{.action}.
 
-![manage IPs](images/manageIPs2022.png){.thumbnail}
+![Zakładka Additional IP w Panelu klienta](images/manageIPs2022.png){.thumbnail}
 
 Zlokalizuj następnie na liście Twój adres Additional IP (lub blok Additional IP), po czym kliknij przycisk `...`{.action}, aby wyświetlić listę opcji.
 
-![IP](images/addvmac.png){.thumbnail}
+![Menu opcji adresu Additional IP](images/addvmac.png){.thumbnail}
 
 Po wyświetleniu okna dialogowego "Dodaj wirtualny adres MAC" wybierz typ adresu z rozwijanej listy, wprowadź nazwę maszyny wirtualnej i kliknij `Potwierdź`{.action}.
 
@@ -57,7 +64,7 @@ Po wyświetleniu okna dialogowego "Dodaj wirtualny adres MAC" wybierz typ adresu
 > **Nazwa wirtualnej maszyny**: jest to nazwa dla wirtualnego adresu MAC ułatwiająca odnalezienie pary IP/MAC.
 >
 
-![IP](images/addvmac2.png){.thumbnail}
+![Okno dodawania wirtualnego MAC z typem i nazwą VM](images/addvmac2.png){.thumbnail}
 
 > [!primary]
 >
@@ -104,4 +111,5 @@ Przykład: jeśli spróbujesz przenieść blok 4 adresów IP z różnymi adresam
 
 ## Sprawdź również
 
+- [Konfiguracja Additional IP jako aliasu IP na serwerze dedykowanym](/pages/bare_metal_cloud/dedicated_servers/network_ipaliasing)
 Dołącz do [grona naszych użytkowników](/links/community).

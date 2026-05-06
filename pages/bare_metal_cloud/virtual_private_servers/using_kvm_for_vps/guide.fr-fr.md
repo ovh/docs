@@ -31,13 +31,21 @@ La console KVM pour VPS, disponible dans votre espace client OVHcloud, vous perm
 ## Prérequis
 
 - Un [VPS](/links/bare-metal/vps) dans votre compte OVHcloud
-- Accès à l’[espace client OVHcloud](/links/manager)
+
+<!-- CP-NAV-START:baremetal-vps -->
+---
+
+### Accès à l’espace client OVHcloud
+
+- **Lien direct :** [Gestion VPS](/links/control-panel/baremetal-vps)
+- **Pour accéder à vos services :** `Bare Metal Cloud`{.action} > `Serveurs Privés Virtuels`{.action} > Sélectionnez votre VPS
+
+---
+<!-- CP-NAV-END:baremetal-vps -->
 
 ## En pratique
 
-### Comment ouvrir la console KVM via l'espace client OVHcloud
-
-Connectez-vous à l'[espace client OVHcloud](/links/manager), rendez-vous dans la section `Bare Metal Cloud`{.action} et sélectionnez votre serveur sous `Serveurs privés virtuels`{.action}.
+### Comment ouvrir la console KVM via l’espace client OVHcloud
 
 Dans l'onglet `Informations générales`{.action}, cliquez sur le bouton `...`{.action} à côté du nom de votre VPS dans la section **Votre VPS**.
 
@@ -86,6 +94,8 @@ Vous pouvez activer la configuration clavier souhaitée pour faciliter l'utilisa
 ```bash
 sudo dpkg-reconfigure keyboard-configuration
 ```
+
+Si nécessaire, installez d'abord le paquet via le gestionnaire de paquets de votre distribution (`sudo dnf install keyboard-configuration` ou `sudo apt install keyboard-configuration`).
 
 Un menu graphique s'ouvre dans lequel vous pouvez sélectionner un modèle de clavier.
 

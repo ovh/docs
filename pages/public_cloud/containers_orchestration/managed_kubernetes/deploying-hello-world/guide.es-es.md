@@ -1,7 +1,7 @@
 ---
 title: Deploying a Hello World application
 excerpt: 'Find out how to deploy a Hello World application with the OVHcloud Control Panel and the OVHcloud API'
-updated: 2025-05-06
+updated: 2026-02-25
 ---
 
 ## Objective
@@ -15,6 +15,17 @@ In this guide, we’ll walk you through deploying a Hello World application on y
 - You should have already created a cluster on the OVHcloud Managed Kubernetes service.
 - You will also need the [kubectl](https://kubernetes.io/docs/reference/kubectl/overview/) command-line tool. You can find the [detailed installation instructions](https://kubernetes.io/docs/tasks/tools/install-kubectl/) for this tool on the Kubernetes official site.
 
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Navigation path:** `Public Cloud`{.action} > Select your project
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
+
 > [!warning]
 >
 > For API users, this guide assumes you are familiar with the [OVHcloud API](/links/api). If you have never used it, you can find the basics here: [First steps with the OVHcloud API](/pages/manage_and_operate/api/first-steps).
@@ -26,8 +37,6 @@ In this guide, we’ll walk you through deploying a Hello World application on y
 
 > [!tabs]
 > Via the OVHcloud Control Panel
->> Log in to the [OVHcloud Control Panel](/links/manager), go to the `Public Cloud`{.action} section and select the Public Cloud project concerned.
->>
 >> Access the administration UI for your OVHcloud Managed Kubernetes clusters by clicking on `Managed Kubernetes Service`{.action} in the left-hand menu.
 >>
 >> ![Select your cluster](images/select-cluster.png){.thumbnail}
@@ -86,10 +95,8 @@ In this guide, we’ll walk you through deploying a Hello World application on y
 >>   "name": "my-tiny-cluster",
 >>   "url": "xxxxxx.c2.gra.k8s.ovh.net",
 >>   "nodesUrl": "xxxxxx.nodes.c2.gra.k8s.ovh.net",
->>   "version": "1.24.8-1",
->>   "nextUpgradeVersions": [
->>     "1.25"
->>   ],
+>>   "version": "1.34.1",
+>>   "nextUpgradeVersions": [],
 >>   "customization": {
 >>     "apiServer": {
 >>       "admissionPlugins": {

@@ -10,10 +10,20 @@ This tutorial covers the process of starting a job using a Visual Studio Code Re
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](/links/manager)
 - An AI Notebook or AI Training Project created inside a [Public Cloud project](/links/public-cloud/public-cloud) in your OVHcloud account
 - An [AI user](/pages/public_cloud/ai_machine_learning/gi_01_manage_users)
 - [The OVHcloud AI CLI](/pages/public_cloud/ai_machine_learning/cli_10_howto_install_cli) installed on your computer
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Navigation path:** `Public Cloud`{.action} > Select your project
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## Instructions
 
@@ -42,12 +52,11 @@ This will create a private key (e.g., `id_ed25519`, not to share) and a public k
 
 Here is how to add your SSH key to your AI Solution if you are using the [OVHcloud Control Panel](/links/manager) or the `ovhai` CLI:
 
+<!-- CP-STEPS-START:specify-the-ssh-key-during-ai-notebook-or-ai-training-job-creation -->
 > [!tabs]
 > **Using the Control Panel (UI)**
 >>
->> First, go to the `Public Cloud`{.action} section of the [OVHcloud Control Panel](/links/manager).
->>
->> Select your Public Cloud project, then go to the `AI & Machine Learning`{.action} category in the left menu and choose `AI Notebooks`{.action} or `AI Training`{.action} section.
+>> Click [this link](/links/control-panel/publiccloud-projects) to access your Public Cloud project, then go to the `AI & Machine Learning`{.action} category in the left menu and choose `AI Notebooks`{.action} or `AI Training`{.action} section.
 >>
 >> From there, click on the `+ Create a notebook`{.action} or `+ Launch a job`{.action} button to configure and create your AI Solution.
 >>
@@ -90,6 +99,7 @@ Here is how to add your SSH key to your AI Solution if you are using the [OVHclo
 >> ```bash
 >> ovhai job get <job-id>
 >> ```
+<!-- CP-STEPS-END:specify-the-ssh-key-during-ai-notebook-or-ai-training-job-creation -->
 
 Once your job is created, regardless of the method chosen, you will be able to copy your job id (e.g., `bfa1d77a-9746-4128-9974-f94139937927`), which will be needed in the following steps.
 

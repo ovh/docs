@@ -18,7 +18,17 @@ This guide explains how to connect your Enterprise File Storage service to a [vR
 ## Requirements
 
 - An [Enterprise File Storage](/links/storage/enterprise-file-storage) service in your OVHcloud account
-- Access to the [OVHcloud Control Panel](/links/manager)
+
+<!-- CP-NAV-START:storage-enterprise-file-storage -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Enterprise File Storage](/links/control-panel/storage-enterprise-file-storage)
+- **Navigation path:** `Bare Metal Cloud`{.action} > `Enterprise File Storage`{.action}
+
+---
+<!-- CP-NAV-END:storage-enterprise-file-storage -->
 
 ## Overview
 
@@ -32,7 +42,7 @@ Enterprise File Storage is a service that is exposed to the vRack via an IP addr
 
 ## Instructions <a name="instructions"></a>
 
-Log in to your [OVHcloud Control Panel](/links/manager) and select `Bare Metal Cloud`{.action} from the top navigation bar. Go to `Storage and Backup`{.action} then `Enterprise File Storage`{.action} and select your service from the list.
+Select your service from the list.
 
 ![without network configuration](images/01-EFS.png){.thumbnail}
 

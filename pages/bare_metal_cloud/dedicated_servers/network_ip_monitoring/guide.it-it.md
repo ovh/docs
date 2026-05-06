@@ -1,7 +1,7 @@
 ---
-title: Quali sono gli indirizzi IP del monitoring OVHcloud?
-excerpt: Qui trovi gli indirizzi IP da inserire durante l'installazione del firewall, in modo che il monitoring OVHcloud continui a funzionare sul tuo server.
-updated: 2025-06-04
+title: "Indirizzi IP del monitoring OVHcloud per server dedicati"
+excerpt: "Trova gli indirizzi IP da autorizzare nel tuo firewall affinché il monitoring OVHcloud continui a funzionare sul tuo server"
+updated: 2026-04-13
 ---
 
 ## Obiettivo
@@ -19,6 +19,17 @@ Per impostare un firewall restrittivo, in particolare sull'ICMP, e continuare a 
 - Un prodotto OVHcloud su cui hai installato un Firewall.
 - Avere accesso alle regole del Firewall
 
+<!-- CP-NAV-START:baremetal-dedicated-servers -->
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [Server dedicati](/links/control-panel/baremetal-dedicated-servers)
+- **Percorso di navigazione:** `Bare Metal Cloud`{.action} > `Server dedicati`{.action} > Seleziona il tuo server
+
+---
+<!-- CP-NAV-END:baremetal-dedicated-servers -->
+
 ## Procedura
 
 ### Indirizzi IP da autorizzare
@@ -26,7 +37,7 @@ Per impostare un firewall restrittivo, in particolare sull'ICMP, e continuare a 
 |Reverse|IP|Protocollo|
 |---|---|---|
 |netmon-rbx-probe|92.222.184.0/24|icmp|
-|netmon-sbg-probe|92.222.185.0/24|icmp|
+|netmon-sbg-probe|51.38.25.100/32|icmp|
 |netmon-gra-probe|92.222.186.0/24|icmp|
 |netmon-bhs-probe|167.114.37.0/24|icmp|
 |netmon-sgp-probe|139.99.1.144/28|icmp|
@@ -35,9 +46,8 @@ Per impostare un firewall restrittivo, in particolare sull'ICMP, e continuare a 
 |netmon-syd-probe|139.99.187.247/32|icmp|
 |netmon-tor-probe|72.251.7.222/32|icmp|
 |netmon-eri-probe|51.195.135.163/32|icmp|
-|netmon-lim-probe|51.38.117.56|icmp|
-|netmon-sbg-probe|51.38.25.100|icmp|
-|netmon-par-probe|57.130.4.212|icmp|
+|netmon-lim-probe|51.38.117.56/32|icmp|
+|netmon-par-probe|57.130.4.212/32|icmp|
 |ping.ovh.net|213.186.33.13|icmp|
 |---|---|---|
 ||xxx.xxx.xxx.250 (xxx.xxx.xxx.aaa è l'IP del server)|icmp|

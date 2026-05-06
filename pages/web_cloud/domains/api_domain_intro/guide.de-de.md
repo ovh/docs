@@ -1,7 +1,7 @@
 ---
 title: "Introduction"
 excerpt: "General presentation of the OVHcloud public API for domain names"
-updated: 2022-05-05
+updated: 2026-02-10
 ---
 
 <!-- Begin TOC -->
@@ -88,8 +88,8 @@ We have released SDKs for several languages, to help you use the API:
 
 We are going to use the following terms throughout this documentation.
 
-- **Registry**: owner of an extension. For example, `.fr` belongs to Afnic, `.com` and `.net` to Verisign.
+- **Registry**: organisation that owns an extension. For example, `.fr` is administered by Afnic, while `.com` and `.net` are administered by Verisign.
 - **Registrar**: domain names reseller. The registry necessarily sells domain names to final customers through a registrar. OVHcloud is a registrar.
-- **Registrant**: owner of a domain name. They are legally responsible of what the domain name is used for, and have all possible rights on the domain name.
+- **Registrant**: holder of a domain name. They are legally responsible of what the domain name is used for, and have all possible rights on the domain name.
 - **gTLD** (_Generic Top Level Domain_): generic extension, used world-wide, regulated by an independent third-party authority, called [ICANN](https://www.icann.org/). Extensions `.com` and `.net` are gTLDs.
-- **ccTLD** (_Country Code Top Level Domain_): country-specific extension, regulated by the country itself. Due to that, [eligibility rules](/pages/web_cloud/domains/api_domain_rules), or even the selling mode or the lifecycle of domains, may totally differ from an extension to the other. It is the registrar's role to abstract this for the final customer. ccTLDs are the only extensions made from 2 letters exactly: for example, `.fr` for France, `.io` for the British Indian Ocean territory (though it is frequently used by web applications, because of the acronym I/O meaning _Input/Output_).
+- **ccTLD** (_Country Code Top Level Domain_): country-specific extension, regulated by the country itself. Due to that, [eligibility rules](/pages/web_cloud/domains/api_domain_rules), or even the selling mode or the lifecycle of domain names, may totally differ from an extension to the other. It is the registrar's role to abstract this for the final customer. ccTLDs are the only extensions made from 2 letters exactly: for example, `.fr` for France, `.io` for the British Indian Ocean territory (though it is frequently used by web applications, because of the acronym I/O meaning _Input/Output_).

@@ -17,6 +17,17 @@ Le mot de passe de votre espace client OVHcloud est la clé d'accès à tous vos
 - Disposer d'un compte OVHcloud actif.
 - Connaître votre identifiant client (**aa00000-ovh**) et/ou votre adresse e-mail.
 
+<!-- CP-NAV-START:account-security -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Sécurité du compte](/links/control-panel/account-security)
+- **Pour y accéder :** Cliquez sur votre nom en haut à droite > `Mon compte`{.action} > `Sécurité`{.action}
+
+---
+<!-- CP-NAV-END:account-security -->
+
 ## En pratique
 
 ### Générer un bon mot de passe
@@ -72,8 +83,7 @@ Si votre mot de passe est compromis, nous vous recommandons vivement de le [modi
 
 #### Depuis votre espace client OVHcloud
 
-- Connectez-vous à votre [espace client OVHcloud](/links/manager), cliquez sur votre nom en haut à droite, puis sur `Mon Compte`{.action}.
-- Cliquez sur l'onglet `Sécurité`{.action}, puis sur le bouton `Modifier`{.action} situé à droite de la mention **Mot de passe**.
+- Sur la page [Sécurité du compte](/links/control-panel/account-security), cliquez sur le bouton `Modifier`{.action} situé à droite de la mention **Mot de passe**.
 
 ![manage-ovh-password](/pages/assets/screens/control_panel/product-selection/right-column/access-my-account/edit-account-password.png){.thumbnail}
 
@@ -86,6 +96,7 @@ Si votre mot de passe est compromis, nous vous recommandons vivement de le [modi
 ![manage-ovh-password](images/account-password-modif-manager-step4.png){.thumbnail}
 
 - Un message vous indiquant le succès de l’opération s’affiche alors. Cliquez sur le bouton `Continuer`{.action} en bas ce message pour être redirigé vers la page d’identification. Renseignez alors votre identifiant et votre nouveau mot de passe.
+
 
 <a name="lost-password"></a>
 
@@ -113,6 +124,7 @@ Si votre mot de passe est compromis, nous vous recommandons vivement de le [modi
 >
 > La prise en compte du changement du mot de passe entraîne automatiquement la fermeture de toutes les sessions actives sur votre compte OVHcloud.
 >
+
 
 ## Aller plus loin
 

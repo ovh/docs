@@ -1,7 +1,7 @@
 ---
 title: "Web hosting - Activar las direcciones de correo incluidas"
 excerpt: "Descubra cómo activar las direcciones de correo electrónico incluidas en un plan de alojamiento web"
-updated: 2025-08-11
+updated: 2026-01-19
 ---
 
 ## Objetivo
@@ -16,42 +16,49 @@ Si ha contratado un plan de hosting con OVHcloud sin asociarlo directamente a un
 
 - Disponer de un [dominio](/links/web/domains) en su área de cliente de OVHcloud.
 - Tener contratado un [plan de hosting](/links/web/hosting).
-- Haber iniciado sesión en el [área de cliente de OVHcloud](/links/manager).
-
 > [!warning]
 >
-> Si su dominio ya está registrado en OVHcloud o si existe una zona DNS para él en otra [cuenta de OVHcloud](/links/manager) que el suyo, consulte nuestra documentación "[Gestionar los contactos de sus servicios](/pages/account_and_service_management/account_information/managing_contacts)" para consultar su gestión.
+> La opción "dirección(es) de correo electrónico incluida(s) con su alojamiento web" no está disponible para un nombre de dominio externo (no registrado en OVHcloud o registrado en una cuenta de OVHcloud diferente a la suya).
 >
-> Por último, si su dominio ya está asociado a la opción "dirección(s) de correo incluida(s) con su alojamiento web" de otro alojamiento web, no podrá asociarlo directamente a su propio alojamiento web. Para más información, consulte esta guía.
+> Para migrar un dominio externo a OVHcloud, siga [esta guía](/pages/web_cloud/domains/transfer_incoming_generic_domain).
+> Si su nombre de dominio ya está registrado en OVHcloud o si ya existe una zona DNS para este en otra cuenta de OVHcloud que no sea la suya, consulte nuestra documentación "[Gestionar los contactos de sus servicios](/pages/account_and_service_management/account_information/managing_contacts)" para recuperar su gestión.
 >
+> Finalmente, si su nombre de dominio ya está vinculado a la opción "dirección(es) de correo electrónico incluida(s)" de otro alojamiento web, no podrá asociarlo directamente a su propio alojamiento web. Póngase en contacto con el actual administrador del alojamiento web con la ayuda de esta guía.
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [Hosting plans](/links/control-panel/web-hosting)
+- **Ruta de navegación:** `Web Cloud`{.action} > `Alojamientos`{.action} > Seleccione su alojamiento web
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## Procedimiento
 
 ### Activación de las direcciones de correo electrónico incluidas con el plan de hosting
 
-Haga clic en las fichas siguientes para ver cada uno de los **4** etapas.
+<!-- CP-STEPS-START:activate-email -->
+
+Haga clic en las fichas siguientes para ver cada una de las **3** etapas.
 
 > [!tabs]
 > **Etapa 1**
 >>
->> Conéctese a su [área de cliente de OVHcloud](/links/manager) y acceda a la sección `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Etapa 2**
->>
->> Haga clic en el menú `Alojamientos`{.action} y seleccione el alojamiento web correspondiente.
+>> Acceda a la página [Hosting plans](/links/control-panel/web-hosting) y seleccione el alojamiento web correspondiente.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Etapa 3**
+> **Etapa 2**
 >>
 >> En el cuadro **Configuración**, encontrará la mención **Direcciones de correo**.
 >> Haga clic en el botón `...`{.action} a la derecha y seleccione `Activar mi solución de correo`{.action}.
 >>
 >> ![Activar el correo](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/enable-email-included-webhosting.png){.thumbnail}
 >>
-> **Etapa 4**
+> **Etapa 3**
 >>
 >> Se mostrará la ventana de activación. Seleccione el dominio que quiere utilizar con sus direcciones de correo y confirme la activación.
 >>
@@ -62,8 +69,12 @@ Haga clic en las fichas siguientes para ver cada uno de los **4** etapas.
 >
 > Atención: La activación de la opción de correo puede tardar unos minutos. Recibirá un mensaje de correo electrónico para confirmar la instalación y activación de la solución MXPLAN. Incluye, entre otras cosas, la gestión y la configuración de sus direcciones de correo.
 >
+<!-- CP-STEPS-END:activate-email -->
+
 
 ### Eliminar la solución de correo asociada al alojamiento web
+
+<!-- CP-STEPS-START:delete-email -->
 
 Es posible eliminar definitivamente la solución de correo asociada a su alojamiento web.
 
@@ -71,22 +82,16 @@ Es posible eliminar definitivamente la solución de correo asociada a su alojami
 >
 > Tenga en cuenta que esta acción es irreversible. Tras la baja del servicio, no será posible reactivar la solución de correo.
 
-Haga clic en las fichas siguientes para ver cada uno de los **3** etapas.
+Haga clic en las fichas siguientes para ver cada una de las **2** etapas.
 
 > [!tabs]
 > **Etapa 1**
 >>
->> Conéctese a su [área de cliente de OVHcloud](/links/manager) y acceda a la sección `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Etapa 2**
->>
->> Haga clic en el menú `Alojamientos`{.action} y seleccione el alojamiento web correspondiente.
+>> Acceda a la página [Hosting plans](/links/control-panel/web-hosting) y seleccione el alojamiento web correspondiente.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Etapa 3**
+> **Etapa 2**
 >>
 >> En el cuadro **Configuración**, encontrará la mención **Direcciones de correo**.
 >> Haga clic en el botón `...`{.action} a la derecha y seleccione `Dar de baja la opción de correo`{.action}.
@@ -96,6 +101,8 @@ Haga clic en las fichas siguientes para ver cada uno de los **3** etapas.
 >> > [!warning]
 >> >
 >> > Para confirmar la eliminación del servicio de correo asociado a su alojamiento web, recibirá un enlace de validación por correo electrónico. Es necesario hacer clic en este vínculo para iniciar la operación de eliminación.
+<!-- CP-STEPS-END:delete-email -->
+
 
 #### Caso particular - Eliminación del servicio de correo asociado a su alojamiento web (para asociarlo a otro dominio)
 

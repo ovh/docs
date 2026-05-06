@@ -87,9 +87,7 @@ There are several ways you can secure your account, such as:
 - adding a [two-factor authentication](/pages/account_and_service_management/account_information/secure-ovhcloud-account-with-2fa);
 - the configuration of a [restriction by IP](/pages/account_and_service_management/account_information/ovhcloud-control-panel-ip-restriction).
 
-To access all these options, log in to your [OVHcloud Control Panel](/links/manager), click on your name in the top right-hand corner, then `My Account`{.action}.
-
-Click on the `Security`{.action} tab to view them.
+On the [Account security](/links/control-panel/account-security) page, you can view them.
 
 And for more info, watch the [video](https://www.youtube.com/watch?v=odO58c4gJfc&list=PL0DynEzr_sE5MnOfJOpVJN-EhfMDWoqGS&index=24).
 
@@ -110,14 +108,12 @@ If this happens to you, please follow [this guide](/products/account-and-service
 
 /// details | How do I change my OVHcloud account password?
 
-Log in to your [OVHcloud Control Panel](/links/manager), click on your name in the top right-hand corner, then `My Account`{.action}.
-
-Click on the `Security`{.action} tab, then on the `Modify`{.action} button to the right of the **Password**. You can then change your current password. A security message will then appear, confirming that you are about to change your password. Once you have confirmed, you will receive an email (to the main email address entered in the account) containing the procedure to follow.
+On the [Account security](/links/control-panel/account-security) page, click on the `Modify`{.action} button to the right of the **Password**. You can then change your current password. A security message will then appear, confirming that you are about to change your password. Once you have confirmed, you will receive an email (to the main email address entered in the account) containing the procedure to follow.
 
 You can find more information in our guide [Changing your account password](/pages/account_and_service_management/account_information/manage-ovh-password).
 
 > [!success]
-> **Can't remember your password?**
+> **Can’t remember your password?**
 >
 > Go to the [login page for your Control Panel](/links/manager) and click `Forgot username or password?`{.action}. Enter your NIC handle or the primary email address associated with your OVHcloud account, then click `Submit`{.action}. An email is then sent to the account’s contact email address, to confirm the request. Please read the instructions carefully and click on the link in it.
 >
@@ -168,9 +164,7 @@ Check out the "[What do I do if I lose one of my devices, or if it stops working
 
 /// details | How do I change my personal information?
 
-To view or change your personal details, click on your name in the top right-hand corner of your [OVHcloud Control Panel](/links/manager), then `Access my account`{.action}.
-
-In the `My profile` box, click on `Edit my profile`{.action}.
+To view or change your personal details, open the [My profile](/links/control-panel/account-profile) page.
 
 > [!success]
 > **Want to change the email address for your OVHcloud account?** 
@@ -182,7 +176,7 @@ In the `My profile` box, click on `Edit my profile`{.action}.
 
 /// details | How do I access the contracts and general terms and conditions of service?
 
-You can view the contracts for your OVHcloud services directly in your [Control Panel](/links/manager). Once you have logged in, go to the `My account`{.action} menu, then click `View my contracts`{.action}.
+You can view the contracts for your OVHcloud services directly on the [Contract list](/links/control-panel/billing-contracts) page.
 
 You can also view the contracts on our website, via [this link](/links/terms-conditions-contracts).
 
@@ -228,7 +222,7 @@ For more information, please contact our support team by creating a [support tic
 
 Closing your OVHcloud customer account and deleting your personal data is only possible if:
 
-1. You no longer have any services listed in the [My services](https://www.ovh.com/manager/dedicated/#/billing/autoRenew) section. Otherwise, you will need to request their termination and wait for their deletion.
+1. You no longer have any services listed in the [My offers and services](https://www.ovh.com/manager/dedicated/#/billing/autoRenew) section. Otherwise, you will need to request their termination and wait for their deletion.
 2. You do not have any invoices awaiting payment. Otherwise, you will need to pay for them by clicking the `Pay immediately`{.action} button in the bulk actions section of the [My bills](https://www.ovh.com/manager/#/dedicated/billing/history) page.
 3. You have no pending orders. Check it on [this page](https://www.ovh.com/manager/#/dedicated/billing/orders/orders).
 4. Your prepaid account has no credit balance. Check it on [this page](https://www.ovh.com/manager/#/dedicated/billing/payment/ovhaccount).
@@ -283,7 +277,7 @@ All our e-mails comply with our security standards (SPF, DKIM, DMARC) and come f
 **If you are in doubt about the authenticity of an e-mail**:
 
 - Know that we will never ask for your password or banking details by e-mail.
-- Check whether the e-mail you received is also visible in your [OVHcloud Control Panel](/links/manager). Log in, click on your name in the top right corner and then on `Service emails`{.action} (or `My messages`{.action}). You will find copies of all official e-mails sent by OVHcloud there.
+- Check whether the e-mail you received is also visible on the [My messages](/links/control-panel/account-messages) page. You will find copies of all official e-mails sent by OVHcloud there.
 - Also refer to our guide: [Phishing - How to identify fraudulent e-mails or SMS?](/pages/account_and_service_management/account_information/phishing_care).
 
 ///
@@ -328,7 +322,7 @@ Replace `{logId}` with the actual log ID of the log you want to view. This will 
 
 /// details | How do I change contacts?
 
-You can delegate the administrative, technical and billing management of your services to other OVHcloud customer accounts from the OVHcloud Control Panel. To do this, log in to the [OVHcloud Control Panel](/links/manager), click on your name in the top right-hand corner, then `My contacts`{.action}.
+You can delegate the administrative, technical and billing management of your services to other OVHcloud customer accounts from the OVHcloud Control Panel. To do this, open the [My contacts](/links/control-panel/account-contacts) page.
 
 The service delegation must be validated via email both by the service administrator and the new contact.
 
@@ -343,7 +337,7 @@ If you would like to retrieve a domain name that you are the registered owner of
 
 /// details | How do I set and change a billing contact?
 
-Log in to the [OVHcloud Control Panel](/links/manager), click on your name in the top right-hand corner, then `My contacts`{.action}.
+Open the [My contacts](/links/control-panel/account-contacts) page.
 
 > [!success]
 > For further information about contact management, please read this detailed guide: [Managing contacts for your services](/pages/account_and_service_management/account_information/managing_contacts).

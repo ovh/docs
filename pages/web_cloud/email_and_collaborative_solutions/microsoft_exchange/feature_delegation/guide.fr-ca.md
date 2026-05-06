@@ -14,8 +14,18 @@ Le service Exchange permet de bénéficier d’adresses e-mail professionnelles,
 
 - Disposer d'une offre [Exchange](/links/web/emails-hosted-exchange).
 - Disposer au minimum de deux comptes Exchange actifs et configurés sur la même plateforme Exchange OVHcloud.
-- Être connecté à l'[espace client OVHcloud](/links/manager).
 - Disposer des identifiants relatifs au compte Exchange qui bénéficiera des nouveaux droits délégués.
+
+<!-- CP-NAV-START:web-exchange -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Exchange](/links/control-panel/web-exchange)
+- **Pour accéder à vos services :** `Web Cloud`{.action} > `Exchange`{.action} > Sélectionnez votre plateforme
+
+---
+<!-- CP-NAV-END:web-exchange -->
 
 ## En pratique
 
@@ -36,10 +46,7 @@ Lorsque vous avez identifié le compte concerné par la délégation, détermin�
 
 ### Étape 1 : mettre en place la délégation
 
-1. Connectez-vous à votre [espace client OVHcloud](/links/manager).
-1. Rendez-vous dans la partie `Web Cloud`{.action}.
-1. Dans la rubrique `MICROSOFT`, cliquez sur `Exchange`{.action}.
-1. Sélectionnez la plateforme concernée.
+Dirigez-vous vers l'onglet `Comptes e-mail`{.action}.
 
 Le tableau qui apparaît affiche les comptes liés à votre service Exchange. Cliquez sur les trois points à droite du compte pour lequel vous souhaitez créer une délégation, puis sur `Gérer les délégations`{.action}.
 
@@ -134,6 +141,12 @@ Il ne vous reste plus qu'à rédiger votre message et à l'envoyer.
 
 ![delegation](images/delegation-step7.png){.thumbnail}
 
-## Aller plus loin
+## Aller plus loin <a name="go-further"></a>
+
+[Utiliser son adresse e-mail depuis le webmail Outlook Web App (OWA)](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa)
+
+[Partager un dossier depuis l'interface OWA](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/owa_directory_sharing)
+
+[Créer un groupe de contacts](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/feature_groups)
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).

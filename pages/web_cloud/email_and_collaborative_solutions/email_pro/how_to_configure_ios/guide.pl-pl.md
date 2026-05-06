@@ -24,6 +24,17 @@ Konta E-mail Pro mogą być skonfigurowane w jednym z kompatybilnych programów 
 - Instalacja aplikacji Mail na Twoim urządzeniu iOS
 - Posiadanie danych do logowania do konta e-mail, które chcesz skonfigurować.
 
+<!-- CP-NAV-START:web-email-pro -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [E-mail Pro](/links/control-panel/web-email-pro)
+- **Ścieżka nawigacji:** `Web Cloud`{.action} > `E-mail Pro`{.action} > Wybierz platformę
+
+---
+<!-- CP-NAV-END:web-email-pro -->
+
 ## W praktyce
 
 ### Etap 1: dodanie konta
@@ -32,12 +43,7 @@ Konta E-mail Pro mogą być skonfigurowane w jednym z kompatybilnych programów 
 >
 > W przewodniku używamy oznaczenia serwera: pro?.mail.ovh.net. Zastąp “?” cyfrą oznaczającą serwer powiązany z Twoją usługą E-mail Pro.
 >
-> 1. Zaloguj się do [Panelu klienta OVHcloud](/links/manager).
-> 1. Przejdź do sekcji `Web Cloud`{.action}.
-> 1. Kliknij `Email Pro`{.action}.
-> 1. Wybierz odpowiednią platformę.
-> 1. Nazwa serwera jest widoczna w ramce **Logowanie** w zakładce `Informacje ogólne`{.action}.
->
+> Kliknij [ten link](/links/control-panel/web-email-pro), aby uzyskać dostęp do sekcji `E-mail Pro`{.action}. Nazwa serwera wyświetla się w strefie **Połączenie** w zakładce `Informacje ogólne`{.action}.
 
 Na ekranie Twojego urządzenia wybierz `Ustawienia`{.action} (ikona koła zębatego). Konto można dodawać na różne sposoby, w zależności od wersji iOS:
 

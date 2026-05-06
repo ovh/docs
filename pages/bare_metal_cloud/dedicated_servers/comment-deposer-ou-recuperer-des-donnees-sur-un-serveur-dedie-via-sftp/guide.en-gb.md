@@ -1,6 +1,6 @@
 ---
-title: "How to use SFTP to transfer files"
-excerpt: "Find out how to connect to your server with FileZilla to upload and download files"
+title: "Transfer Files via SFTP on a Dedicated Server"
+excerpt: "Transfer files to and from your dedicated server using SFTP with FileZilla for secure uploads and downloads."
 updated: 2025-02-21
 ---
 
@@ -35,6 +35,17 @@ There a various options to transfer files between a local device and a remote ho
 - A [dedicated server](/links/bare-metal/bare-metal) or a [VPS](/links/bare-metal/vps) in your OVHcloud account with a GNU/Linux distribution installed
 - An FTP client that supports SFTP connections (for example [FileZilla](https://filezilla-project.org/)) installed on your local device
 - Administrative access via SSH to your server
+
+<!-- CP-NAV-START:baremetal-dedicated-servers -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Dedicated Servers](/links/control-panel/baremetal-dedicated-servers)
+- **Navigation path:** `Bare Metal Cloud`{.action} > `Dedicated servers`{.action} > Select your server
+
+---
+<!-- CP-NAV-END:baremetal-dedicated-servers -->
 
 ## Instructions
 

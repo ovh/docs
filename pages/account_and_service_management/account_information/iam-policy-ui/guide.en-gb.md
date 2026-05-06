@@ -33,11 +33,23 @@ For example, we can create a policy to give to a user called John, for a VPS, ac
 - You know [how to manage account users](/pages/account_and_service_management/account_information/ovhcloud-users-management).
 - You have one or more OVHcloud products linked to this OVHcloud account (Load Balancer, domain name, VPS, etc.).
 
+<!-- CP-NAV-START:iam-policies -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [IAM Policies](/links/control-panel/iam-policies)
+- **Navigation path:** `Identity, Security & Operations`{.action} > `Policies`{.action}
+
+---
+<!-- CP-NAV-END:iam-policies -->
+
 ## Instructions
 
 ### Accessing the IAM menu
 
-On the sidebar, click on `Identity, Security & Operations`{.action} then on `Policies`{.action}.
+<!-- CP-STEPS-START:access-iam-menu -->
+Open the [IAM Policies](/links/control-panel/iam-policies) page.
 
 ![Access to the IAM menu](images/access_to_the_IAM_menu_01.png){.thumbnail}
 
@@ -58,11 +70,13 @@ If you have already created policies or users, you will find them in the first t
 ![Access to the IAM menu](images/access_to_the_IAM_menu_03.png){.thumbnail}
 
 Each policy is displayed with its name, the number of identities linked to it, and the number of actions it contains.
+<!-- CP-STEPS-END:access-iam-menu -->
 
 ### Managing policies
 
 #### Creating a policy
 
+<!-- CP-STEPS-START:create-policy -->
 Click the `Create a policy`{.action} button.
 
 The following form will be displayed:
@@ -125,9 +139,11 @@ A search field is available to help identify a specific action on the list.
 
 > [!primary]
 > Actions related to ordering and billing are not yet available in the OVHcloud IAM.
+<!-- CP-STEPS-END:create-policy -->
 
 #### Conditions on policies
 
+<!-- CP-STEPS-START:conditions-on-policies -->
 It's possible to add conditions on IAM policies.
 
 A policy with conditions is valid only if all conditions are validated.
@@ -145,20 +161,25 @@ It's possible to add conditions on these elements:
 ![Créer une politique](images/conditions.png){.thumbnail}
 
 Once added, conditions are displayed with the [syntax used on API](/pages/account_and_service_management/account_information/iam-policies-api)
+<!-- CP-STEPS-END:conditions-on-policies -->
 
 #### Editing a policy
 
+<!-- CP-STEPS-START:edit-policy -->
 To edit an existing policy, click the `...`{.action} button to the right of the policy and click `Modify policy`{.action}.
 
 ![Edit a policy](images/editing_a_policy.png){.thumbnail}
 
 Then you can change the scope of the policy.
+<!-- CP-STEPS-END:edit-policy -->
 
 #### Deleting a policy
 
+<!-- CP-STEPS-START:delete-policy -->
 To delete an existing policy, click the `...`{.action} button to the right of the policy and click `Delete policy`{.action}.
 
 A popup window will ask you to confirm the deletion.
+<!-- CP-STEPS-END:delete-policy -->
 
 <a name="create-users"></a>
 
@@ -174,9 +195,11 @@ Access to the support will still be reserved to the owner of the resource.
 
 ### Managing identities
 
+<!-- CP-STEPS-START:manage-identities -->
 To manage the identities available for policies, go to the `Identity, Security & Operations`{.action} menu, then to the `Identities`{.action} section.
 
 Details about user management are available in the [dedicated documentation](/pages/account_and_service_management/account_information/ovhcloud-users-management).
+<!-- CP-STEPS-END:manage-identities -->
 
 ### Managing resource groups
 
@@ -184,6 +207,7 @@ Policies can target resource groups instead of resources. These resource groups 
 
 #### Creating a resource group
 
+<!-- CP-STEPS-START:create-resource-group -->
 To create a resource group, go to the `Policies`{.action} section, then click the `Resource group`{.action} tab:
 
 ![Resource Group](images/resource_groups.png){.thumbnail}
@@ -195,6 +219,7 @@ Click on `Create resource group`{.action}.
 - **Name of the resource group**: This is the name that will appear in the interfaces. The name should be unique and must not contain any spaces.
 - **Product types**: The list of product types concerned by this resource group.
 - **Resources**: The list of resources the group will contain.
+<!-- CP-STEPS-END:create-resource-group -->
 
 #### Editing a resource group
 
@@ -202,9 +227,11 @@ To edit a resource group, click on its name in the list.
 
 #### Deleting a resource group
 
+<!-- CP-STEPS-START:delete-resource-group -->
 To delete an existing resource group, click the `...`{.action} button to the right of the group and click `Delete resource group`{.action}.
 
 A popup window will ask you to confirm the deletion.
+<!-- CP-STEPS-END:delete-resource-group -->
 
 ## Go further
 

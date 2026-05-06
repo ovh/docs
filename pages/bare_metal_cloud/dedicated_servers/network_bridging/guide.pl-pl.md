@@ -1,6 +1,6 @@
 ---
-title: 'Konfiguracja Additional IP w trybie bridge na wirtualnych maszynach'
-excerpt: 'Dowiedz się, jak używać trybu bridge do konfiguracji dostępu do Internetu Twoich wirtualnych maszyn'
+title: "Konfiguracja Additional IP w trybie bridge na serwerze dedykowanym"
+excerpt: "Skonfiguruj maszyny wirtualne na serwerze dedykowanym, aby uzyskać publiczny dostęp do Internetu za pomocą trybu bridge."
 updated: 2026-01-06
 ---
 
@@ -36,7 +36,17 @@ Do konfiguracji wirtualnych maszyn możesz użyć konfiguracji sieci w trybie br
 
 - Posiadanie serwera dedykowanego z zainstalowanym hypervisorem (Citrix Xen Server, Proxmox)
 - Posiadanie co najmniej jednego adresu [Additional IP](/links/network/additional-ip) podłączonego do serwera
-- Dostęp do [Panelu klienta OVHcloud](/links/manager) lub do [API OVHcloud](/pages/manage_and_operate/api/first-steps)
+
+<!-- CP-NAV-START:network-public-ip -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Public IP](/links/control-panel/network-public-ip)
+- **Ścieżka nawigacji:** `Network`{.action} > `Publiczne adresy IP`{.action}
+
+---
+<!-- CP-NAV-END:network-public-ip -->
 
 > [!warning]
 > Funkcja ta może być niedostępna lub ograniczona na [serwerach dedykowanych **Eco**](/links/bare-metal/eco-about).
@@ -65,8 +75,6 @@ Dla tego przykładu użyjemy następujących wartości w naszych przykładach ko
 
 > [!warning]
 > W przypadku bloku IP, wirtualne adresy MAC są tworzone dla każdego indywidualnego adresu IP w bloku.
-
-Zaloguj się do [Panelu klienta OVHcloud](/links/manager), kliknij `Sieć`{.action} w menu po lewej stronie ekranu, a następnie `Publiczne adresy IP`{.action}.
 
 Następnie możesz użyć menu rozwijanego pod pozycją **Moje publiczne adresy IP i usługi powiązane** i wybrać opcję **Wszystkie adresy Additional IP**, aby odpowiednio filtrować usługi, lub bezpośrednio wpisać żądany adres IP w pasku wyszukiwania.
 
@@ -556,4 +564,7 @@ Następnie wykonaj ping na Additional IP z zewnątrz. Jeśli to działa, prawdop
 
 ## Sprawdź również
 
+- [Konfiguracja Additional IP jako aliasu IP na serwerze dedykowanym](/pages/bare_metal_cloud/dedicated_servers/network_ipaliasing)
+- [Konfiguracja IPv6 na serwerze dedykowanym](/pages/bare_metal_cloud/dedicated_servers/network_ipv6)
+- [Tutorial - Configuring pfSense network bridge (EN)](/pages/bare_metal_cloud/dedicated_servers/pfSense_bridging)
 Dołącz do [grona naszych użytkowników](/links/community).

@@ -1,7 +1,7 @@
 ---
 title: AI Deploy - Getting started
 excerpt: Discover AI Deploy and unfold your first application
-updated: 2025-12-17
+updated: 2026-03-18
 ---
 
 > [!primary]
@@ -17,23 +17,36 @@ This guide explains how to get started with OVHcloud AI Deploy, covering the dep
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](/links/manager)
 - A [Public Cloud project](/links/public-cloud/public-cloud) in your OVHcloud account
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Navigation path:** `Public Cloud`{.action} > Select your project
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## Instructions
 
 ### Subscribe to AI Deploy
 
-Log in to the [OVHcloud Control Panel](/links/manager), navigate to the `Public Cloud`{.action} section, select your desired Public Cloud project, then go to the `AI & Machine Learning`{.action} category in the left menu and choose `AI Deploy`{.action}.
+<!-- CP-STEPS-START:subscribe-ai-deploy -->
+Click [this link](/links/control-panel/publiccloud-projects) to access your Public Cloud project, then go to the `AI & Machine Learning`{.action} category in the left menu and choose `AI Deploy`{.action}.
 
 Click on the `Deploy an app`{.action} button and accept the terms and conditions if any.
 
 Once clicked, you will be redirected to the creation process detailed below.
 
 ![AI Deploy app subscribe](images/ai_app_subscribe.png){.thumbnail}
+<!-- CP-STEPS-END:subscribe-ai-deploy -->
 
 ### Deploying your first application
 
+<!-- CP-STEPS-START:deploy-first-app -->
 #### Step 1: Name your application
 
 First, choose a name for your AI Deploy app, or accept the automatically generated name if it meets your needs, to make it easier to manage all your apps.
@@ -101,7 +114,7 @@ Then you can modify the **Number of replicas** on which your AI Deploy app will 
 
 The **static scaling** strategy allows you to choose a fixed number of replicas on which the app will be deployed. For this method, the minimum number of replicas is **1** and the maximum is **10**. This strategy is useful when your consumption or inference load is fixed. Moreover, it allows you to have fixed costs.
 
-With the **autoscaling strategy**, it is possible to choose both the minimum number of replicas (1 by default) and the maximum number of replicas. **High availability** will measure the average resource usage across its replicas and add instances if this average exceeds the specified average usage percentage threshold. Conversely, it will remove instances when this average resource utilisation falls below the threshold. The monitored metric can either be `CPU` or `RAM`, or a custom metric. This solution might be better if you have irregular or sawtooth inference loads.
+With the **autoscaling strategy**, it is possible to choose both the minimum number of replicas (1 by default) and the maximum number of replicas. **High availability** will measure the average resource usage across its replicas and add instances if this average exceeds the specified average usage percentage threshold. Conversely, it will remove instances when this average resource utilisation falls below the threshold. You can even downscale to 0 if you have no usage, thereby limiting costs. The monitored metric can either be `CPU` or `RAM`, or a custom metric. This solution might be better if you have irregular or sawtooth inference loads.
 
 For more detailed information about scaling strategies, please refer to our dedicated guide: [AI Deploy - Scaling strategies](/pages/public_cloud/ai_machine_learning/deploy_guide_04_scaling_strategies).
 
@@ -188,19 +201,23 @@ To launch your AI Deploy app, click on `Order now`{.action}. Please note that yo
 - Mount any configured data volumes 
 
 Once the deployment is complete, your first AI Deploy app will be running on production and ready to be accessed.
+<!-- CP-STEPS-END:deploy-first-app -->
 
 ### Connect to your AI Deploy app
 
 #### Step 1: Check your AI Deploy app status
 
+<!-- CP-STEPS-START:check-app-status -->
 First, go check your app details and verify that your AI Deploy app has reached the **In service** status.
 
 ![AI Deploy app details](images/ai_app_details.png){.thumbnail}
 
 For your information, you can access your deployed application by clicking the `HTTP access`{.action} blue button, which will expose the default HTTP port of your app. However, since we have deployed a Flask API in this tutorial, you won't be able to access it through the `HTTP access`{.action} button as no interface was deployed.
+<!-- CP-STEPS-END:check-app-status -->
 
 #### Step 2: Generate a security token
 
+<!-- CP-STEPS-START:generate-security-token -->
 During the AI Deploy apps deployment process, we selected `Restricted access`. To query your app, you first need a valid security token.
 
 In your OVHcloud Control Panel left menu, go to the `AI Dashboard`{.action} in the `AI & Machine Learning`{.action} section. Select the `Tokens`{.action} tab.
@@ -214,6 +231,7 @@ A few explanations:
 - **Label selector**: you can restrict the token granted by labels. You can note a specific id, a type, or any previously created label such as **owner=elea** in our case.
 - **Role**: *AI Platform Operator* can read and manage your AI Deploy app. *AI Platform Read only* can only read your AI Deploy app.
 - **Region**: tokens are regionalized. Select the region related to your AI Deploy app.
+<!-- CP-STEPS-END:generate-security-token -->
 
 #### Generate your first cURL query
 
@@ -285,16 +303,13 @@ That's it!
 
 ### Stop and delete your AI Deploy app
 
+<!-- CP-STEPS-START:stop-delete-app -->
 You have the flexibility to keep your AI Deploy app running for an indefinite period. At any time, you can easily stop your application, using either the UI (OVHcloud Control Panel) or the `ovhai` CLI.
 
 > [!tabs]
 > **Using the Control Panel (UI)**
 >>
->> First, go to the `Public Cloud`{.action} section of the [OVHcloud Control Panel](/links/manager).
->>
->> Then, select the `AI Deploy`{.action} section, which allows you to manage and access all your created apps.
->> 
->> Locate the specific AI Deploy app you want to stop. Click the `...`{.action} button and stop your AI Deploy application by selecting `Stop`{.action} from the context menu.
+>> Click [this link](/links/control-panel/publiccloud-projects) to access your Public Cloud project, then select the `AI Deploy`{.action} section. Locate the specific AI Deploy app you want to stop. Click the `...`{.action} button and stop your AI Deploy application by selecting `Stop`{.action} from the context menu.
 >>
 >> ![image](images/step-11-stop-app.png){.thumbnail}
 >>
@@ -335,6 +350,7 @@ You have the flexibility to keep your AI Deploy app running for an indefinite pe
 >>
 >> ovhai bucket delete <region> <object_storage_name>
 >> ```
+<!-- CP-STEPS-END:stop-delete-app -->
 
 ## Go further
 

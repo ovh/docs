@@ -1,5 +1,5 @@
 ---
-title: Public Cloud Databases - How to update your service flavor
+title: Update the flavor of Public Cloud Databases
 excerpt: Find out how to adjust the flavor of your cluster
 updated: 2024-12-30
 ---
@@ -14,12 +14,23 @@ This option is available through the OVHcloud [API](/links/api) and [Control Pan
 
 ### Requirements
 
-- Access to your [OVHcloud Control Panel](/links/manager) or to the [API](/links/api)
 - A [Public Cloud project](/links/public-cloud/public-cloud) in your OVHcloud account
+- Access to the [OVHcloud API](/links/api) (optional)
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Navigation path:** `Public Cloud`{.action} > Select your project
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ### Instructions
 
-To adjust the flavor of your cluster, log in to the OVHcloud Control Panel and open your Public Cloud project. Click `Databases`{.action} in the left navigation bar, select your engine instance then click the `Configuration`{.action} tab.
+Click `Databases`{.action} in the left navigation bar, select your engine instance then click the `Configuration`{.action} tab.
 
 ![Cluster overview](images/cluster_overview.png)
 

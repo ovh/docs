@@ -1,26 +1,31 @@
 ---
 title: 'Configurer un Contact Center Solution'
 excerpt: 'Découvrez comment configurer un Contact Center Solution sur votre numéro alias'
-updated: 2026-01-07
+updated: 2026-01-22
 ---
 
 ## Objectif
 
-Le Contact Center Solution (CCS) est la configuration la plus complète applicable à un numéro alias. Elle permet notamment de combiner les configurations avancées que sont la [file d'appels](/pages/web_cloud/phone_and_fax/voip/les_files_d_appels) et le [serveur vocal interactif (SVI)](/pages/web_cloud/phone_and_fax/voip/svi_serveur_vocal_interactif).
+Le Contact Center Solution (CCS) est la configuration la plus complète pour un numéro alias. Elle combine la [file d'appels](/pages/web_cloud/phone_and_fax/voip/les_files_d_appels) et le [serveur vocal interactif (SVI)](/pages/web_cloud/phone_and_fax/voip/svi_serveur_vocal_interactif).
 
 Vous pouvez par exemple proposer à vos appelants, via la seule composition de votre numéro principal, un choix de touches pour joindre chaque service de votre entreprise, chaque touche composée faisant sonner un ensemble de lignes selon une stratégie que vous définissez depuis l'espace client OVHcloud.
 
 **Apprenez à configurer un CCS sur votre numéro alias depuis votre espace client OVHcloud.**
 
-> [!warning]
->
-> La configuration Contact Center Solution est une offre en version bêta. Son fonctionnement ne peut donc être garanti par les équipes de OVHcloud. De même, en cas de difficulté, nos équipes du support vous inviteront à appliquer une configuration de type « File d'appels » ou « Serveur vocal interactif » sur votre numéro.
->
-
 ## Prérequis
 
 - Disposer d'un [numéro alias](/links/telecom/telephonie-numeros).
-- Être connecté à l'[espace client OVHcloud](/links/manager-telecom), partie `Télécom`{.action}.
+
+<!-- CP-NAV-START:telecom-voip-fax -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [VoIP & Fax](/links/control-panel/telecom-voip-fax)
+- **Pour accéder à vos services :** `Télécom`{.action} > `VoIP & Fax`{.action} > Sélectionnez votre groupe de téléphonie
+
+---
+<!-- CP-NAV-END:telecom-voip-fax -->
 
 ![espace client Telecom VoIP](/pages/assets/screens/control_panel/product-selection/telecom/tpl-telecom-02-fr-voip.png){.thumbnail}
 
@@ -35,24 +40,41 @@ Vous pouvez par exemple proposer à vos appelants, via la seule composition de v
 
 ## En pratique
 
-### Étape 1 : Appliquer la configuration Contact Center Solution <a name="appliquer-CCS"></a>
+### Étape 1 : Appliquer la configuration « Contact Center Solution » <a name="appliquer-CCS"></a>
 
-1. Connectez-vous à votre [espace client OVHcloud](/links/manager) et cliquez sur `Télécom`{.action}.
-1. Cliquez sur `VoIP & Fax`{.action} puis sur le groupe de facturation contenant votre numéro Alias.
-1. Cliquez sur l'onglet `Services`{.action} puis sur le numéro alias concerné.
-1. Dans l'onglet `Configuration`{.action}, cliquez sur `Passer en mode expert`{.action} pour sélectionner **Contact Center Solution**.
-1. Validez en cliquant sur `Paramétrer`{.action}. L'application de la configuration prend quelques secondes.
+<!-- CP-STEPS-START:appliquer-ccs -->
+- Si votre numéro n’est actuellement pas configuré, cliquez sur l’onglet `Configuration`{.action}, sélectionnez `Contact Center Solution`{.action} puis cliquez sur `Paramétrer`{.action}.
 
-![contact-center-solution](images/ccs-config-2022.png){.thumbnail}
+- Si votre numéro a déjà une configuration en place, cliquez sur l’onglet `Configuration`{.action} puis sur `Changer de configuration`{.action}. Sélectionnez ensuite `Contact Center Solution`{.action} et cliquez sur `Paramétrer`{.action}. Vous devrez alors confirmer la perte de la configuration actuellement en place.
 
-Si une autre configuration est déjà appliquée sur votre numéro, cliquez sur `Configuration`{.action} puis `Changer de configuration`{.action}.
+![contact-center-solution](images/ccs-config-2026.png){.thumbnail}
 
-Une fois la configuration appliquée, cliquez sur l'onglet `Paramétrer la configuration`{.action}.
+> [!primary]
+>
+> Pour appliquer le même type de configuration à plusieurs numéros, cliquez sur `Appliquer à plusieurs numéros`{.action}, sélectionnez les numéros concernés puis cliquez sur `Valider`{.action}.
+> 
+> ![configurationnumeroalias](images/selection-alias-conf.png){.thumbnail}
+>
+> Cliquez sur le bouton `Paramétrer`{.action} et patientez quelques instants pendant l’application du paramétrage.
+>
+> Si vous appliquez le même type de configuration à plusieurs numéros, vous devrez finaliser la configuration sur chacun des numéros concernés.
+<!-- CP-STEPS-END:appliquer-ccs -->
+
+### Étape 2 : Accéder à la configuration du Contact Center Solution
+
+<!-- CP-STEPS-START:acceder-configuration-ccs -->
+Une fois la configuration de Contact Center Solution appliquée, la page de configuration du CCS s'affiche.
+
+![contact-center-solution](images/2026-VoIP-CCS-01.png){.thumbnail}
+
+Pour revenir à cette page à tout moment, cliquez sur l'onglet `Mon numéro`{.action} puis, dans le cadre « Configuration », cliquez sur `Paramétrer la configuration`{.action}.
 
 ![contact-center-solution](images/ccs-step1-1b.png){.thumbnail}
+<!-- CP-STEPS-END:acceder-configuration-ccs -->
 
 #### Présentation de la configuration
 
+<!-- CP-STEPS-START:presentation-configuration -->
 La configuration se présente sous la forme d'une arborescence étape par étape. À des fins de lisibilité, ce plan de configuration peut à tout moment être affiché verticalement ou horizontalement, via le bouton `Options d'affichage`{.action} situé en haut à gauche du plan.
 
 ![contact-center-solution](images/options-affichage.png){.thumbnail}
@@ -65,8 +87,9 @@ Le plan de configuration contient différents menus.
 |Permet de gérer les options principales de la configuration.|Permet de gérer les étapes du plan ainsi que les [options des appels](#options).|Permet d'ajouter des actions au sein d'une étape ainsi que des conditions d'exécution de l'étape.|
 
 Les étapes décrites dans ce guide permettent d'aboutir à la création d'une configuration complète.
+<!-- CP-STEPS-END:presentation-configuration -->
 
-### Étape 2 : gérer les sons / gérer les TTS <a name="gerer-sons-tts"></a>
+### Étape 3 : Gérer les sons / gérer les TTS <a name="gerer-sons-tts"></a>
 
 L'accueil téléphonique de vos appelants peut être amélioré grâce à l'ajout d'un ou plusieurs fichiers-sons, préalablement créés par vos soins ou définis via des Text-To-Speech (TTS) depuis l'espace client.
 
@@ -74,16 +97,19 @@ Il peut être intéressant de créer ou téléverser ces fichiers-sons dès le d
 
 #### Gérer les sons <a name="gerer-sons"></a>
 
-Si vous disposez déjà de vos fichiers-sons, vous pouvez les enregistrer dans votre configuration. Vous pouvez ainsi ajouter un son d'accueil d'un menu interactif ou encore une musique d'attente pour faire patienter vos appelants lorsque vos lignes sont occupées.
+<!-- CP-STEPS-START:gerer-sons -->
+Si vous disposez déjà de vos fichiers-sons, enregistrez-les dans votre configuration. Vous pouvez ainsi ajouter un son d'accueil d'un menu interactif ou encore une musique d'attente pour faire patienter vos appelants lorsque vos lignes sont occupées.
 
 Ouvrez le `Menu Numéro`{.action} puis cliquez sur `Gérer les sons`{.action}.
 
 ![gérer les sons](images/gerer-sons2021.png){.thumbnail}
 
 Cliquez sur `Ajouter un son`{.action} pour téléverser un son depuis votre poste.
+<!-- CP-STEPS-END:gerer-sons -->
 
 #### Gérer les TTS <a name="gerer-tts"></a>
 
+<!-- CP-STEPS-START:gerer-tts -->
 Si vous ne disposez pas de fichiers-sons, la fonctionnalité Text-To-Speech permet d'en créer directement depuis l'espace client OVHcloud. Il vous suffit de renseigner le texte qui sera automatiquement énoncé par la voix de votre choix.
 
 Ouvrez le `Menu Numéro`{.action} puis cliquez sur `Gérer les TTS`{.action}.
@@ -93,16 +119,18 @@ Ouvrez le `Menu Numéro`{.action} puis cliquez sur `Gérer les TTS`{.action}.
 Cliquez alors sur `+ Ajouter un TTS`{.action}, choisissez une voix parmi celles proposées puis renseignez le texte qui sera récité. Cliquez enfin sur `Créer`{.action}.
 
 ![gérer les TTS](images/gerer-tts2021b.png){.thumbnail}
+<!-- CP-STEPS-END:gerer-tts -->
 
-### Étape 3 : créer les files <a name="creer-files"></a>
+### Étape 4 : Créer les files <a name="creer-files"></a>
 
 Les files d'appels regroupent plusieurs agents (des lignes téléphoniques internes ou externes) qui vont sonner selon une stratégie que vous définissez dans l'espace client.
 
 Leur fonctionnement est identique à la configuration [File d'appels](/pages/web_cloud/phone_and_fax/voip/les_files_d_appels) applicable directement sur un numéro alias.
 
-#### 3.1 Ajouter les agents <a name="ajouter-agents"></a>
+#### 4.1 Ajouter les agents <a name="ajouter-agents"></a>
 
-Afin de créer vos files d'appels, vous devez d'abord ajouter toutes les lignes qui pourront être contactées lorsque votre numéro alias sera appelé. Ces lignes sont ici désignées comme des **agents**.
+<!-- CP-STEPS-START:ajouter-agents -->
+Pour créer vos files d'appels, vous devez d'abord ajouter toutes les lignes qui pourront être contactées lorsque votre numéro alias sera appelé. Ces lignes sont ici désignées comme des **agents**.
 
 Ouvrez le `Menu Numéro`{.action} puis cliquez sur `Gérer les agents`{.action}.
 
@@ -132,12 +160,14 @@ Les attributs que vous pouvez modifier sont les suivants :
 |Repos|Permet de définir la durée pendant laquelle l'agent ne prendra pas d'appel après avoir raccroché.|
 |Appels simultanés|Permet de définir le nombre d'appels que la ligne pourra recevoir.|
 |État|Permet de rendre disponible ou déconnecter un agent au sein des files.|
+<!-- CP-STEPS-END:ajouter-agents -->
 
-#### 3.2 Créer les files d'appels <a name="creer-files"></a>
+#### 4.2 Créer les files d’appels <a name="creer-files"></a>
 
-Vos agents sélectionnés, vous devez à présent les organiser dans une ou plusieurs files d'appels.
+<!-- CP-STEPS-START:creer-files-appels -->
+Vos agents sélectionnés, vous devez les organiser dans une ou plusieurs files d’appels.
 
-Ouvrez le `Menu Numéro`{.action} puis cliquez sur `Gérer les files`{.action}. Vous pouvez ici créer une ou plusieurs files d'appels. La première file est déjà créée.
+Ouvrez le `Menu Numéro`{.action} puis cliquez sur `Gérer les files`{.action}. Vous pouvez ici créer une ou plusieurs files d’appels. La première file est déjà créée.
 
 ![gerer files appels](images/gerer-files2021.png){.thumbnail}
 
@@ -151,21 +181,21 @@ Les options sont les suivantes :
 
 |Option|Définition|
 |---|---|
-|Nom de la file|Cela vous permet de personnaliser le nom de votre file. C'est recommandé si vous comptez créer plusieurs files, afin de bien les différencier dans la construction de votre CCS.|
-|Stratégie|Choisissez une stratégie de sonnerie pour vos agents qui pourront, par exemple, sonner tous en même temps ou l'un après l'autre.|
-|Suivre les renvois d'appels|Définissez si les renvois d’appels configurés sur les lignes de la file doivent être appliqués ou non.<br><br>**Attention**, cette option, même si elle n'est activée que sur une file, s'appliquera à l'ensemble des files d'appels configurées.|
-|Nombre maximum d'appelants en attente|Définissez le nombre maximum d’appelants pouvant être en attente dans la file. Si ce nombre venait à être dépassé, les appelants suivants entendraient l'annonce sur débordement.|
-|Temps d'attente maximum dans la file (en secondes)|Définissez la durée maximale d'attente dans cette file avant que l'appel ne passe à l'étape suivante de votre CCS.|
-|Musique d'attente|Ce son sera joué à l’entrée dans la file d’attente jusqu’au décrochage de l’appel par une ligne.|
-|Annonce sur débordement|Si le nombre maximum d'appelants en attente est atteint, les appelants suivants entendront cette annonce. Ainsi, vous pouvez diffuser un son invitant vos appelants à rappeler ultérieurement.|
+|Nom de la file|Cela vous permet de personnaliser le nom de votre file. C’est recommandé si vous comptez créer plusieurs files, afin de bien les différencier dans la construction de votre CCS.|
+|Stratégie|Choisissez une stratégie de sonnerie pour vos agents qui pourront, par exemple, sonner tous en même temps ou l’un après l’autre.|
+|Suivre les renvois d’appels|Définissez si les renvois d’appels configurés sur les lignes de la file doivent être appliqués ou non.<br><br>**Attention**, cette option, même si elle n’est activée que sur une file, s’appliquera à l’ensemble des files d’appels configurées.|
+|Nombre maximum d’appelants en attente|Définissez le nombre maximum d’appelants pouvant être en attente dans la file. Si ce nombre venait à être dépassé, les appelants suivants entendraient l’annonce sur débordement.|
+|Temps d’attente maximum dans la file (en secondes)|Définissez la durée maximale d’attente dans cette file avant que l’appel ne passe à l’étape suivante de votre CCS.|
+|Musique d’attente|Ce son sera joué à l’entrée dans la file d’attente jusqu’au décrochage de l’appel par une ligne.|
+|Annonce sur débordement|Si le nombre maximum d’appelants en attente est atteint, les appelants suivants entendront cette annonce. Ainsi, vous pouvez diffuser un son invitant vos appelants à rappeler ultérieurement.|
 
 **Détails des stratégies proposées :**
 
 |Stratégie|Détails|
 |---|---|
 |Tous en même temps|Tous les téléphones sonnent en même temps. Le premier qui décroche prend l’appel sur son poste.|
-|Selon l'ordre défini dans la liste|Le premier téléphone de la file sonne, puis le second, etc.|
-|Selon l'ordre défini dans la liste, cumulé|Le premier téléphone de la file d’attente sonne. Le deuxième sonne à son tour après quelques secondes, en même temps que le premier. Le troisième commence à sonner quelques secondes après, etc.|
+|Selon l’ordre défini dans la liste|Le premier téléphone de la file sonne, puis le second, etc.|
+|Selon l’ordre défini dans la liste, cumulé|Le premier téléphone de la file d’attente sonne. Le deuxième sonne à son tour après quelques secondes, en même temps que le premier. Le troisième commence à sonner quelques secondes après, etc.|
 |Le plus ancien à avoir raccroché|Les téléphones sonnent les uns après les autres en suivant toujours le même ordre.|
 |Du plus disponible au moins disponible|Les téléphones sonneront suivant leur disponibilité depuis l’activation.|
 |Selon une répartition de charge| Les téléphones sonneront suivant leur disponibilité depuis le dernier appel : le plus disponible en premier.|
@@ -173,26 +203,28 @@ Les options sont les suivantes :
 
 Validez vos modifications en cliquant sur `Appliquer les modifications`{.action}.
 
-Vous pouvez modifier l'ordre des agents membres d'une file en effectuant un glisser-déposer via le pictogramme (1) à gauche de chaque agent. Dans le cas d'une stratégie d'appel « Selon l'ordre défini des membres », l'agent le plus haut dans la file sonnera le premier. Puis le deuxième agent sonnera et ainsi de suite.
+Vous pouvez modifier l’ordre des agents membres d’une file en effectuant un glisser-déposer via le pictogramme (1) à gauche de chaque agent. Dans le cas d’une stratégie d’appel « Selon l’ordre défini des membres », l’agent le plus haut dans la file sonnera le premier. Puis le deuxième agent sonnera et ainsi de suite.
 
-Vous pouvez également modifier (2) ici les attributs d'un agent ou supprimer celui-ci (3).
+Vous pouvez également modifier (2) ici les attributs d’un agent ou supprimer celui-ci (3).
 
 ![contact-center-solution](images/gerer-agents-ordre-2021.png){.thumbnail}
 
 Vous pouvez créer autant de files que nécessaire pour répondre à votre besoin.
 
 > [!warning]
-> Pour supprimer une file, celle-ci ne doit plus faire partie d'aucun menu interactif ou d'aucune étape du plan de configuration.
+> Pour supprimer une file, celle-ci ne doit plus faire partie d’aucun menu interactif ou d’aucune étape du plan de configuration.
 >
+<!-- CP-STEPS-END:creer-files-appels -->
 
-### Étape 4 : créer les menus interactifs (facultatif) <a name="creer-svi"></a>
+### Étape 5 : Créer les menus interactifs (facultatif) <a name="creer-svi"></a>
 
 À la différence de la configuration d'un numéro alias en [Serveur Vocal Interactif (SVI)](/pages/web_cloud/phone_and_fax/voip/svi_serveur_vocal_interactif), le CCS permet d'associer une file d'appels entière (et non plus une simple ligne) à une touche de téléphone composée par un appelant.
 
-Pour plus d'informations sur le fonctionnement d'un SVI, consultez notre guide [Configurer un serveur vocal interfactif](/pages/web_cloud/phone_and_fax/voip/svi_serveur_vocal_interactif).
+Pour plus d'informations sur le fonctionnement d'un SVI, consultez notre guide [Configurer un serveur vocal interactif](/pages/web_cloud/phone_and_fax/voip/svi_serveur_vocal_interactif).
 
-#### 4.1 Créer le premier menu <a name="creer-menu-svi"></a>
+#### 5.1 Créer le premier menu <a name="creer-menu-svi"></a>
 
+<!-- CP-STEPS-START:creer-menus-interactifs -->
 Ouvrez le `Menu Numéro`{.action} puis cliquez sur `Gérer les menus interactifs`{.action}.
 
 ![gerer menus interactifs](images/gerer-svi2021.png){.thumbnail}
@@ -203,9 +235,9 @@ Les mêmes choix vous sont proposés pour définir un son ou un TTS en cas d'act
 
 ![contact-center-solution](images/gerer-svi2021b.png){.thumbnail}
 
-Une fois ces informations définies, cliquez sur `Créer`{.action}. Vous pouvez maintenant créer les entrées du menu interactif, c'est à dire les choix de touches proposés à vos appelants et les actions qui y sont liées.
+Une fois ces informations définies, cliquez sur `Créer`{.action}. Vous pouvez maintenant créer les entrées du menu interactif, c'est-à-dire les choix de touches proposés à vos appelants et les actions qui y sont liées.
 
-Cliquez sur le bouton `+`{.action} en bas de du menu pour ajouter votre première entrée.
+Cliquez sur le bouton `+`{.action} en bas du menu pour ajouter votre première entrée.
 
 ![contact-center-solution](images/ccs-step4-1-3.png){.thumbnail}
 
@@ -224,11 +256,12 @@ Une fois les informations complétées, cliquez sur `Créer`{.action}. Répétez
 ![contact-center-solution](images/gerer-svi2021d.png){.thumbnail}
 
 Selon vos besoins, répétez ces manipulations si vous voulez créer plusieurs menus interactifs. Vous pouvez également les imbriquer en tant que sous-menus d'un menu interactif principal, si vous souhaitez par exemple proposer plusieurs choix successifs à vos appelants.
+<!-- CP-STEPS-END:creer-menus-interactifs -->
 
-### Étape 5 : configurer votre CCS <a name="configurer-CCS"></a>
+### Étape 6 : Configurer votre CCS <a name="configurer-CCS"></a>
 
 Une fois vos files et menus interactifs créés, il faut maintenant les articuler dans le CCS.
-<br>Chaque appel entrant va suivre une ou plusieurs étapes successives que vous allez définir. Au sein de chaque étape, une ou plusieurs actions devront également être créés.
+<br>Chaque appel entrant va suivre une ou plusieurs étapes successives que vous allez définir. Au sein de chaque étape, une ou plusieurs actions devront également être créées.
 
 Voici un exemple de configuration d'un CCS :
 
@@ -238,25 +271,32 @@ Voici un exemple de configuration d'un CCS :
 
 #### Ajouter des étapes et actions
 
-Pour ajouter une étape, cliquez sur le bouton `+ Ajouter une étape`{.action} (1) à droite des étapes déjà crées.
+<!-- CP-STEPS-START:ajouter-etapes-actions -->
+Pour ajouter une étape, cliquez sur le bouton `+ Ajouter une étape`{.action} (1) à droite des étapes déjà créées.
 <br>Pour ajouter une action au sein d'une étape (2), cliquez sur le bouton `+`{.action} sous l'étape concernée ou sur `+ Ajouter une action`{.action} dans le menu de votre étape.
 
 ![contact-center-solution](images/gerer-etapes-actions2021.png){.thumbnail}
+<!-- CP-STEPS-END:ajouter-etapes-actions -->
 
 #### Afficher ou masquer les actions
 
-A des fins de lisibilité, vous pouvez choisir à tout moment d'afficher ou masquer toutes les actions définies. Cliquez sur `Options d'affichage`{.action} puis sur `Afficher toutes les actions`{.action} ou `Masquer toutes les actions`{.action}.
+<!-- CP-STEPS-START:afficher-masquer-actions -->
+À des fins de lisibilité, vous pouvez choisir à tout moment d'afficher ou masquer toutes les actions définies. Cliquez sur `Options d'affichage`{.action} puis sur `Afficher toutes les actions`{.action} ou `Masquer toutes les actions`{.action}.
 
 ![contact-center-solution](images/gerer-etapes-actions2021c.png){.thumbnail}
+<!-- CP-STEPS-END:afficher-masquer-actions -->
 
 #### Réordonner les étapes et actions
 
+<!-- CP-STEPS-START:reordonner-etapes-actions -->
 Pour réordonner les étapes et actions de votre plan de configuration, cliquez sur le bouton `Réordonner les étapes et actions`{.action} situé en haut à gauche. Utilisez le bouton dédié pour modifier l'ordre de vos étapes et actions puis validez ce nouvel ordre en cliquant sur `Valider les modifications`{.action}.
 
 ![contact-center-solution](images/gerer-etapes-actions2021b.gif){.thumbnail}
+<!-- CP-STEPS-END:reordonner-etapes-actions -->
 
 #### Ajouter une condition à une étape <a name="ajouter-condition"></a>
 
+<!-- CP-STEPS-START:ajouter-condition-etape -->
 Lorsqu'une ou plusieurs conditions sont ajoutées à une étape, celles-ci doivent être remplies pour que l'étape se déclenche. Si les conditions d'une étape ne sont pas remplies, l'appel entrant passera à l'étape suivante du CCS.
 
 Pour ajouter une condition à une étape, ouvrez le menu de l'étape via le bouton `...`{.action}, puis choisissez `Configuration avancée`{.action}. Le menu qui apparaît vous permet de définir jusqu'à trois types de conditions. Poursuivez selon la condition que vous désirez paramétrer :
@@ -273,14 +313,16 @@ Ainsi, dans l'exemple ci-dessous, un appel pendant les plages horaires définies
 <br>Un appel en dehors de ces plages horaires sera réceptionné sur le répondeur d'une ligne SIP OVHcloud (2).
 
 ![contact-center-solution](images/exemples-plages2021.png){.thumbnail}
+<!-- CP-STEPS-END:ajouter-condition-etape -->
 
 ##### **Condition de « Jours exceptionnels »** <a name="jours-exceptionnels"></a>
 
+<!-- CP-STEPS-START:condition-jours-exceptionnels -->
 Après avoir cliqué sur `Jours exceptionnels`{.action} depuis le menu de configuration avancée, choisissez le créneau que vous souhaitez appliquer. Vous revenez ensuite automatiquement dans la fenêtre de configuration avancée. Cliquez alors sur `Modifier`{.action}.
 
 ![CCS configuration](images/creneaux-activation2021.png){.thumbnail}
 
-Vous devez à présent configurer le créneau que vous venez de sélectionner (ou vous assurer que celui-ci l'est correctement). Pour cela, ouvrez le **Menu du Numéro** via le bouton `...`{.action} puis cliquez sur `Gérer les créneaux exceptionnels`{.action}.
+Configurez le créneau que vous venez de sélectionner (ou vous assurer que celui-ci l'est correctement). Pour cela, ouvrez le **Menu du Numéro** via le bouton `...`{.action} puis cliquez sur `Gérer les créneaux exceptionnels`{.action}.
 
 ![gérer créneaux exceptionnels](images/gerer-creneaux2021.png){.thumbnail}
 
@@ -297,31 +339,37 @@ La page de gestion des fermetures exceptionnelles apparaît alors. Dans la parti
 Une fois les informations renseignées, cliquez sur `Créer l'événement`{.action}. Répétez cette manipulation afin d'ajouter toutes les fermetures exceptionnelles nécessaires. Cliquez enfin sur le bouton `Valider`{.action} pour sauvegarder ces changements.
 
 ![CCS configuration](images/creneaux2021.png){.thumbnail}
+<!-- CP-STEPS-END:condition-jours-exceptionnels -->
 
 ##### **Condition de « Plages horaires génériques »** <a name="plages-horaires"></a>
 
+<!-- CP-STEPS-START:condition-plages-horaires -->
 Après avoir cliqué sur `Plages horaires génériques`{.action} depuis le menu de configuration avancée, cliquez sur `Ajouter des plages horaires`{.action}.
 
 Configurez maintenant les plages horaires qui correspondent à vos besoins. Pour cela, sélectionnez les jours concernés puis renseignez les horaires dans les cases prévues à cet effet. Cliquez sur le bouton `V`{.action} à droite pour enregistrer la plage.
 
-Une fois toutes vos plages horaires déifinies, cliquez sur le bouton `Modifier`{.action} pour les valider.
+Une fois toutes vos plages horaires définies, cliquez sur le bouton `Modifier`{.action} pour les valider.
 
 ![contact-center-solution](images/plageshoraires2021.gif){.thumbnail}
 
 > [!primary]
 > Pour modifier une plage horaire déjà créée, il est nécessaire de la supprimer puis de créer une nouvelle plage horaire.
 >
+<!-- CP-STEPS-END:condition-plages-horaires -->
 
 ##### **Double condition : « Jours exceptionnels » et « Plages horaires génériques »**
 
-Pour obtenir une configuration contenant à la fois des jours exceptionnels et des plages horaires génériques, il convient de placer les jours exceptionnels sur l'étape 1 et les plages horaires génériques sur l'étape 2.
+<!-- CP-STEPS-START:double-condition -->
+Pour obtenir une configuration contenant à la fois des jours exceptionnels et des plages horaires génériques, il convient de placer les jours exceptionnels sur l’étape 1 et les plages horaires génériques sur l’étape 2.
 
-En effet, le système lit les étapes dans l'ordre : si les conditions de l'étape 1 sont remplies, les actions associées à cette étape sont exécutées. Dans le cas contraire, le système passe automatiquement à l’étape 2.
+En effet, le système lit les étapes dans l’ordre : si les conditions de l’étape 1 sont remplies, les actions associées à cette étape sont exécutées. Dans le cas contraire, le système passe automatiquement à l’étape 2.
 
 ![CCS - double condition](images/ccs-double-condition.png){.thumbnail}
+<!-- CP-STEPS-END:double-condition -->
 
 ##### **Condition de « Filtrages d'appels »** <a name="filtrages-appels"></a>
 
+<!-- CP-STEPS-START:condition-filtrages-appels -->
 Après avoir cliqué sur `Filtrages d'appels`{.action} depuis le menu de configuration avancée, choisissez si vous souhaitez filtrer vos appels entrants selon une « liste noire » ou une « liste blanche ».
 
 |Liste|Description|
@@ -334,10 +382,12 @@ Une fois que vous avez sélectionné la liste que vous souhaitez utiliser, compl
 Pour enregistrer vos modifications, cliquez sur `Modifier`{.action}.
 
 ![CCS configuration](images/filtrages2021.png){.thumbnail}
+<!-- CP-STEPS-END:condition-filtrages-appels -->
 
 ### Gérer les options du CCS <a name="options"></a>
 
-Des options supplémentaires sont disponibles en cliquant sur le bouton `(...)`{.action} du menu de la configuration :
+<!-- CP-STEPS-START:options-ccs -->
+Des options supplémentaires sont disponibles en cliquant sur le bouton `...`{.action} du menu de la configuration :
 
 ![Optionsccs](images/modifieroption.png){.thumbnail}
 
@@ -346,31 +396,35 @@ Les options disponibles dans ce menu vous permettent de :
 - modifier le nom du CCS.
 - gérer le timeout de transfert d'appel vers une ligne externe (ici exprimé en secondes). Lorsque votre configuration comporte un transfert vers une ligne externe, si cette ligne ne décroche pas avant la durée définie dans ce champ, l'appel passera à l'étape suivante de la configuration.
 - gérer la présentation du numéro de vos appelants.
-- accepter ou refus les appels masqués (anonymes).
+- accepter ou refuser les appels masqués (anonymes).
 
 ![Optionsccs](images/optionsccs.png){.thumbnail}
 
 Trois options de présentation du numéro, sur le téléphone qui reçoit l'appel, sont possibles :
 
-- présenter le numéro de l'appelant;
-- présenter le numéro du CCS, c'est à dire le numéro alias qui a été composé par l'appelant, ce qui peut être utile si vous possédez plusieurs numéros alias configurés;
+- présenter le numéro de l'appelant ;
+- présenter le numéro du CCS, c'est-à-dire le numéro alias qui a été composé par l'appelant, ce qui peut être utile si vous possédez plusieurs numéros alias configurés ;
 - présenter les deux numéros, celui de l'appelant et celui du CCS.
 
 ![Optionsccs](images/numeropres2.png){.thumbnail}
+<!-- CP-STEPS-END:options-ccs -->
 
 ### Tableau de bord <a name="tableau-de-bord"></a>
 
+<!-- CP-STEPS-START:tableau-de-bord -->
 Le tableau de bord vous permet d'obtenir des statistiques détaillées sur les appels reçus par votre numéro configuré en CCS et par les différentes files le composant.
 Vous pourrez également obtenir des informations en temps réel sur les appels en cours sur votre numéro ainsi que sur la disponibilité de chaque ligne.
 
 Pour consulter le tableau de bord, cliquez sur l'onglet `Consultation`{.action} puis sur `Tableau de bord`{.action}.
 
 ![Tableau de bord](images/tableau2021.png){.thumbnail}
+<!-- CP-STEPS-END:tableau-de-bord -->
 
 Le tableau de bord vous permet également d'interagir sur les appels en cours reçus par les membres de vos files d'appels.
 
 #### Écouter ou chuchoter <a name="ecouter-chuchoter"></a>
 
+<!-- CP-STEPS-START:ecouter-chuchoter -->
 Cette fonction vous permet d'écouter une communication en cours ou de chuchoter à l'un et/ou l'autre des interlocuteurs.
 
 Cliquez sur le bouton `...`{.action} à droite d'un appel en cours puis sur `Écouter ou chuchoter`{.action}.
@@ -386,25 +440,31 @@ Choisissez alors l'option souhaitée parmi :
 ![écouter ou chuchoter](images/tableau02.png){.thumbnail}
 
 Saisissez un numéro de téléphone dans le champ prévu à cet effet et cliquez sur `Confirmer`{.action}. Ce numéro sera alors mis en relation avec la communication en cours.
+<!-- CP-STEPS-END:ecouter-chuchoter -->
 
 #### Transférer l'appel
 
+<!-- CP-STEPS-START:transferer-appel -->
 Vous pouvez transférer un appel en cours en cliquant sur le bouton `...`{.action} à droite d'un appel en cours puis sur `Transférer l'appel`{.action}.
 
 Saisissez le numéro destinataire du transfert et cliquez sur `Transférer`{.action}.
 
 ![transférer l'appel](images/tableau03.png){.thumbnail}
+<!-- CP-STEPS-END:transferer-appel -->
 
 #### Mettre fin à l'appel
 
+<!-- CP-STEPS-START:mettre-fin-appel -->
 Vous pouvez raccrocher un appel en cours en cliquant sur le bouton `...`{.action} à droite d'un appel en cours puis sur `Mettre fin à l'appel`{.action}.
 
 Cliquez alors sur `Raccrocher`{.action}.
 
 ![raccrocher l'appel](images/tableau04.png){.thumbnail}
+<!-- CP-STEPS-END:mettre-fin-appel -->
 
 ### Consulter les enregistrements <a name="enregistrements"></a>
 
+<!-- CP-STEPS-START:consulter-enregistrements -->
 Le CCS vous permet d'enregistrer les appels entrants sur les files d'appels actives dans votre configuration.
 
 > [!primary]
@@ -429,6 +489,7 @@ Vous trouverez plus bas la liste des enregistrements que vous pourrez téléchar
 >
 
 ![CCS configuration](images/ccs-records3.png){.thumbnail}
+<!-- CP-STEPS-END:consulter-enregistrements -->
 
 ## Aller plus loin
 

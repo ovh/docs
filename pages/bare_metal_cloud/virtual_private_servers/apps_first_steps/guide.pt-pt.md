@@ -4,6 +4,50 @@ excerpt: Saiba como implementar aplicações pré-instaladas no seu VPS
 updated: 2022-08-25
 ---
 
+<style>
+/* ---FAQ only--- */
+details {
+    margin: 0.1rem 1;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    background: #ffffffff;
+}
+details > summary {
+    padding: 0.1rem 1rem;
+    font-weight: 500;
+    color: #268fd4ff;
+    cursor: pointer;
+    list-style: none;
+}
+details > summary::before {
+    content: '\25B6';
+    display: inline-block;
+    margin-right: 0.5ch;
+    transition: transform 0.2s;
+}
+details[open] > summary::before {
+    content: '\25BC';
+}
+details:hover {
+    border: 1px solid #147DE8;
+    border-radius: 4px;
+    transition: border-color 0.5s ease;
+}
+details[open] > summary {
+    background: #ffffffff;
+}
+details > :not(summary) {
+    padding: 0.25rem 0.5rem;
+    box-sizing: border-box;
+    list-style-position: inside;
+}
+.smallish-gap {
+    display: block;
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
+}
+</style>
+
 ## Objetivo
 
 A OVHcloud oferece aos clientes VPS imagens de aplicações pré-instaladas para uma implementação rápida e fácil em apenas alguns cliques.
@@ -33,7 +77,7 @@ Encontrará abaixo as primeiras etapas relativas à implementação da imagem pr
 
 > [!primary]
 >
-> Se a ligação já expirou, ligue-se ao seu VPS via SSH usando o utilizador CentOS e execute o comando « sudo whmlogin » para gerar uma nova ligação.
+> Se a ligação já expirou, ligue-se ao seu VPS via SSH usando o utilizador CentOS e execute o comando `sudo whmlogin` para gerar uma nova ligação.
 >
 
 <ol start="3">
@@ -46,14 +90,23 @@ Encontrará abaixo as primeiras etapas relativas à implementação da imagem pr
 
 Não é necessário mais nenhuma etapa para terminar a primeira configuração desta aplicação.
 
-> [!faq]
->
-> Posso utilizar os meus próprios servidores DNS?
->> Sim, podem. Certifique-se de que criou os registos "GLUE" com o seu agente de registo de domínio. Por exemplo, se deseja "ns1.mydomain.com" e "ns2.mydomain.com", deve configurar os registos "GLUE" para que ambos apontem para o endereço IP do seu servidor. Se o seu domínio estiver registado com a OVHcloud, pode seguir [este guia](/pages/web_cloud/domains/glue_registry#1-adicionar-os-registos-glue). Note que a criação pode levar 24 horas.
-> Porquê definir a password root?
->> O WHM utiliza de forma padrão o utilizador root para a autenticação. O URL de utilização única permite aceder à primeira configuração e modificar a palavra-passe root. Na próxima vez que aceder ao WHM, deverá utilizar o utilizador root e a palavra-passe que definiu.
-> Onde está a minha licença para o cPanel?
->> Pode encomendar a sua licença cPanel para o seu VPS a partir da [Área de Cliente OVHcloud](https://www.ovh.com/manager/dedicated/#/configuration/license/order).
+/// details | Posso utilizar os meus próprios servidores DNS?
+
+Sim, pode. Certifique-se de que criou os registos "GLUE" com o seu agente de registo de domínio. Por exemplo, se deseja "ns1.mydomain.com" e "ns2.mydomain.com", deve configurar os registos "GLUE" para que ambos apontem para o endereço IP do seu servidor. Se o seu domínio estiver registado com a OVHcloud, pode seguir [este guia](/pages/web_cloud/domains/glue_registry#1-adicionar-os-registos-glue). Note que a criação pode levar 24 horas.
+
+///
+
+/// details | Porquê definir a password root?
+
+O WHM utiliza de forma padrão o utilizador root para a autenticação. O URL de utilização única permite aceder à primeira configuração e modificar a palavra-passe root. Na próxima vez que aceder ao WHM, deverá utilizar o utilizador root e a palavra-passe que definiu.
+
+///
+
+/// details | Onde está a minha licença para o cPanel?
+
+Pode encomendar a sua licença cPanel para o seu VPS a partir da [Área de Cliente OVHcloud](https://www.ovh.com/manager/dedicated/#/configuration/license/order).
+
+///
 
 #### Plesk
 
@@ -74,10 +127,11 @@ Encontrará abaixo os primeiros passos para a implementação da imagem pré-ins
 
 Não é necessário mais nenhuma etapa para terminar a primeira configuração desta aplicação.
 
-> [!faq]
->
-> Onde está a minha licença Plesk?
->> Pode encomendar a sua licença Plesk para o seu VPS a partir da [Área de Cliente OVHcloud](https://www.ovh.com/manager/dedicated/#/configuration/license/order).
+/// details | Onde está a minha licença Plesk?
+
+Pode encomendar a sua licença Plesk para o seu VPS a partir da [Área de Cliente OVHcloud](https://www.ovh.com/manager/dedicated/#/configuration/license/order).
+
+///
 
 #### Docker
 
@@ -88,7 +142,7 @@ Não é necessário mais nenhuma etapa para terminar a primeira configuração d
 Encontrará abaixo os primeiros passos para a implementação da imagem pré-instalada do Docker.
 
 1. Aceda ao servidor com o nome de utilizador e a palavra-passe presentes no e-mail.
-2. Verifique que o Docker funciona com o comando "docker run hello-world".
+2. Verifique que o Docker funciona com o comando `docker run hello-world`.
 
 Não é necessário mais nenhuma etapa para terminar a primeira configuração desta aplicação.
 
@@ -96,7 +150,7 @@ Não é necessário mais nenhuma etapa para terminar a primeira configuração d
 
 Esta secção aplica-se apenas às instalações WordPress, Drupal, Joomla! e PrestaShop. A presente diretiva não é aplicável às outras instalações.
 
-1. Deve criar ou alterar, na Área de Cliente OVHcloud, dois registos `A `que apontam para o endereço IP do seu servidor. Por exemplo, se o seu nome de domínio for "personaldomain.ovh", deve criar registos `A` para:  
+1. Deve criar ou alterar, na Área de Cliente OVHcloud, dois registos `A` que apontam para o endereço IP do seu servidor. Por exemplo, se o seu nome de domínio for "personaldomain.ovh", deve criar registos `A` para:  
 
      personaldomain.ovh <br>
      www.personaldomain.ovh <br>  
@@ -118,8 +172,8 @@ Se o seu domínio estiver registado na OVHcloud, pode seguir [este guia](/pages/
 ```sh
 sudo -i
 dnf install -y epel-release
-dnf install -y certbot python3-certbot apache mod_ssl
-echo "ServerName personaldomain.ovh" > /etc/httpd/conf/httpd.conf
+dnf install -y certbot python3-certbot-apache mod_ssl
+echo "ServerName personaldomain.ovh;" >> /etc/httpd/conf/httpd.conf
 systemctl restart httpd
 ```
 
@@ -128,7 +182,7 @@ systemctl restart httpd
 </ol>
 
 ```sh
-certbot certonly -d personaldomain.ovh —webroot
+certbot certonly -d personaldomain.ovh --webroot
 ```
 
 Quando for convidado a introduzir "Input the webroot", deve introduzir uma variável do tipo "/var/www/wordpress". Se instalar o Joomla!, deverá substituir "wordpress" por "joomla".
@@ -136,7 +190,7 @@ Quando for convidado a introduzir "Input the webroot", deve introduzir uma vari�
 Agora, certifique-se de que Certbot também coloca esta variável no ficheiro ssl.conf. Para isso, introduza:
 
 ```sh
-certbot-d personaldomain.ovh —apache
+certbot -d personaldomain.ovh --apache
 ```
 
 Quando for convidado a fazê-lo, responda à primeira pergunta com "1" e à segunda com "1".
@@ -144,17 +198,17 @@ Quando for convidado a fazê-lo, responda à primeira pergunta com "1" e à segu
 Se o certificado SSL tiver sido gerado, deverá obter o seguinte resultado:
 
 ```sh
-IMPORTANTE NOTAS:
- - Congratul! Your certificate and chain have been saved at:
+IMPORTANT NOTES:
+ - Congratulations! Your certificate and chain have been saved at:
    /etc/letsencrypt/live/personaldomain.ovh/fullchain.pem
-   Your key file been saved at:
+   Your key file has been saved at:
    /etc/letsencrypt/live/personaldomain.ovh/privkey.pem
-   O seu cert will expira no 2020-11-12. To obtain a new or tweaked
+   Your cert will expire on 2020-11-12. To obtain a new or tweaked
    version of this certificate in the future, simply run certbot again
-   com a opção "certonly". TB non-interatively renew *all* of
+   with the "certonly" option. To non-interactively renew *all* of
    your certificates, run "certbot renew"
 ```
 
 ## Quer saber mais?
 
-Fale com a nossa comunidade de utilizadores em <https://community.ovh.com/en/>.
+Fale com a nossa comunidade de utilizadores em [community.ovh.com](/links/community).

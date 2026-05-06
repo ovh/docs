@@ -1,6 +1,6 @@
 ---
-title: 'Envoyer des SMS avec l’API OVHcloud en Node.js'
-excerpt: 'Comment envoyer des SMS avec l’API OVHcloud RESTful en Node.js'
+title: "Envoyer des SMS avec l’API OVHcloud en Node.js"
+excerpt: "Découvrez comment configurer un environnement Node.js et envoyer votre premier SMS pas à pas avec le wrapper de l’API RESTful OVHcloud"
 updated: 2020-06-18
 ---
 
@@ -36,7 +36,7 @@ Vous devez récupérer un répertoire ./node_modules/ovh/...
 Des identifiants sont nécessaires pour consommer l’API SMS. Ces identifiants sont créés une fois pour identifier l’application qui va envoyer des SMS. La durée de vie de ces identifiants est paramétrable.
 
 Créez vos identifiants de Script (all keys at once) sur cette page :
-[https://api.ovh.com/createToken](https://eu.api.ovh.com/createToken/index.cgi?GET=/sms&GET=/sms/*&GET=/sms/*/jobs&POST=/sms/*/jobs) (cette url vous permet d'avoir automatiquement les bons droits pour les étapes décrites dans ce guide).
+[https://auth.eu.ovhcloud.com/api/createToken](https://auth.eu.ovhcloud.com/api/createToken?GET=/sms&GET=/sms/*&GET=/sms/*/jobs&POST=/sms/*/jobs) (cette url vous permet d'avoir automatiquement les bons droits pour les étapes décrites dans ce guide).
 
 ![création des tokens](images/img_2462.jpg){.thumbnail}
 
@@ -46,7 +46,7 @@ Dans cet exemple simple, nous récupérons les droits pour avoir accès aux info
 - GET/sms/\*/jobs/
 - POST /sms/\*/jobs/
 
-L’étoile (\*) active les appels à ces méthodes pour tous vos comptes SMS. Vous pouvez également restreindre les appels à un seul compte, si vous gérez plusieurs comptes SMS sur votre compte OVHcloud, en remplaçant « /sms » par « /sms/NOM-DU-COMPTE » et « /sms/\*/ » par «/sms/NOM-DU-COMPTE/».
+L’étoile (\*) active les appels à ces méthodes pour tous vos comptes SMS. Vous pouvez également restreindre les appels à un seul compte, si vous gérez plusieurs comptes SMS sur votre compte OVHcloud, en remplaçant « /sms » par « /sms/NOM-DU-COMPTE » et « /sms/\*/ » par « /sms/NOM-DU-COMPTE/ ».
 
 Vous récupérez vos identifiants pour votre script :
 

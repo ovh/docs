@@ -1,6 +1,6 @@
 ---
-title: "Récupération des bases de données en mode rescue"
-excerpt: "Découvrez comment accéder à vos bases de données et les enregistrer en mode rescue"
+title: "Récupérer des bases de données en mode rescue sur un serveur dédié"
+excerpt: "Accédez à vos bases de données et exportez-les depuis un serveur dédié en mode rescue pour récupérer vos données après un incident"
 updated: 2023-04-13
 ---
 
@@ -13,7 +13,17 @@ Le mode Rescue permet d'accéder à vos données en permanence, même si le syst
 ## Prérequis
 
 - Un [serveur dédié](/links/bare-metal/bare-metal), un [VPS](/links/bare-metal/vps) ou une instance [Public Cloud](/links/public-cloud/public-cloud) dans votre compte OVHcloud (hors systèmes Windows)
-- Être connecté à votre [espace client OVHcloud](/links/manager)
+
+<!-- CP-NAV-START:baremetal-dedicated-servers -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Serveurs dédiés](/links/control-panel/baremetal-dedicated-servers)
+- **Pour accéder à vos services :** `Bare Metal Cloud`{.action} > `Serveurs dédiés`{.action} > Sélectionnez votre serveur
+
+---
+<!-- CP-NAV-END:baremetal-dedicated-servers -->
 
 > [!warning]
 >
@@ -49,7 +59,7 @@ sda      8:0    0  2.5G  0 disk
 sdb      8:16   0   10G  0 disk
 └─sdb1   8:17   0   10G  0 part
 ```
-
+ 
 - Exemple de sortie **fdisk -l** :
 
 ```output
@@ -80,7 +90,7 @@ Device     Boot Start     End Sectors  Size Id Type
 > Les sections de code suivantes sont fournies à titre d'illustration, en relation avec l'exemple de sortie ci-dessus. Vous devrez ajuster les instructions avec votre configuration réelle et remplacer les valeurs dans les commandes par vos identifiants de disque et de volume.
 >
 
-Dans cet exemple, le disque principal (10 Go) est nommé "sdb". Nos données dans `/` se trouvent donc sur la partition `/dev/sdb1`. (Alors que "sda" est le disque en mode rescue et "sda1" est la partition principale en mode rescue montée sur `/`.)
+Dans cet exemple, le disque principal (10 Go) est nommé "sdb". Nos données dans `/` se trouvent donc sur la partition `/dev/sdb1`. (Alors que "sda" est en mode rescue et "sda1" la partition principale en mode rescue montée sur `/`.)
 
 Nous montons la partition système dans le dossier `/mnt` puis nous vérifions son contenu :
 
@@ -208,7 +218,6 @@ Une fois toutes les partitions nécessaires montées, nous devons pouvoir exécu
 root@rescue:~# chroot /mnt/
 root@rescue:/#
 ```
-
 Maintenant, toutes les commandes que vous allez entrer seront appliquées à votre système à la place de l'environnement temporaire du mode rescue.
 
 Nous pouvons maintenant démarrer le service `mysql` :
@@ -259,5 +268,7 @@ root@rescue:/# scp -P SSH_Port_Number dump.sql user@IP_address:/home/backup
 ```
 
 ## Aller plus loin
+
+[Diagnostiquer des dysfonctionnements matériels sur un serveur dédié](/pages/bare_metal_cloud/dedicated_servers/hardware-diagnose)
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).

@@ -1,6 +1,6 @@
 ---
 title: Inviare SMS da un URL - http2sms
-excerpt: Scopri come inviare SMS da un indirizzo http
+excerpt: Scopri come inviare SMS tramite richieste HTTP utilizzando lo strumento Wget direttamente dalla barra degli indirizzi del tuo browser web
 updated: 2020-05-20
 ---
 
@@ -11,6 +11,7 @@ Per inviare SMS esistono metodi diversi. Tra questi, vi è l’utilizzo dello st
 **Come inviare SMS mediante lo strumento Wget.**
 
 ## Prerequisiti
+
 - Creare un utente SMS attraverso lo Spazio Cliente OVHcloud o direttamente attraverso le API. A questo proposito, è possibile consultare la guida che segue: [Tutte le informazioni sugli utenti SMS](/pages/web_cloud/messaging/sms/tout_savoir_sur_les_utilisateurs_sms)
 - Disporre di un account SMS OVHcloud con saldo SMS
 
@@ -20,7 +21,7 @@ L'invio di un SMS avviene mediante una richiesta HTTPS con campi obbligatori (e 
 
 ![http2sms](images/img_4011.jpg){.thumbnail}
 
-### Step 1: Includere i campi obbligatori
+### Passaggio 1: Includere i campi obbligatori
 
 Il tuo URL deve avere la forma che segue: 
 
@@ -41,7 +42,7 @@ I parametri che seguono devono essere separati da &. Sostituisci le X con le inf
 
 Per default, il messaggio viene inviato immediatamente.
 
-### Step 2: aggiungere campi facoltativi
+### Passaggio 2: Aggiungere campi facoltativi
 
 Puoi aggiungere campi supplementari nell’oggetto, quali:
 
@@ -56,7 +57,7 @@ Sostituisci le X con le informazioni qui di seguito:
 |deferred|Per stabilire una data di invio differito, nel formato hhmmggMMAAAA (es.: 125025112019 per un invio il 25/11/2019 alle 12:50).|
 |class|Tipo di classe dell’SMS, nel formato N = 1 cifra (vedere la prima nota informativa qui di seguito).|
 |tag|Una stringa lunga al massimo 20 caratteri permette di contrassegnare i messaggi inviati|
-|contentType|Puoi scegliere il tipo di risposta. Può essere dei seguenti tipi: text/xml, application/xml, text/json, application/json, text/plain, text/html (par défaut en text/plain)|
+|contentType|Puoi scegliere il tipo di risposta. Può essere dei seguenti tipi: text/xml, application/xml, text/json, application/json, text/plain, text/html (predefinito: text/plain)|
 |smsCoding|Codifica dell’SMS, in formato N = 1 cifra (vedere la seconda nota informativa qui di seguito).|
 
 > [!primary]
@@ -85,9 +86,9 @@ Sostituisci le X con le informazioni qui di seguito:
 >Per maggiori informazioni sui caratteri autorizzati in codifica a 7 bit, fai riferimento [all'allegato](#allegato) in fondo a questa guida.
 >
 
-### Step 3: Analizzare gli invii effettuati
+### Passaggio 3: Analizzare gli invii effettuati
 
-Dopo aver effettato l’invio, un codice di ritorno API indicherà se l’SMS è stato effettivamente inviato o se l’invio non è riuscito.
+Dopo aver effettuato l’invio, un codice di ritorno API indicherà se l’SMS è stato effettivamente inviato o se l’invio non è riuscito.
 Un codice superiore a 100 e inferiore a 200 indica che il messaggio è stato effettivamente inviato.
 
 Ecco l’elenco dei codici di ritorno dell’API:
@@ -115,7 +116,7 @@ In caso di fallimento, la causa è specificata;
 <?xml version="1.0" encoding="UTF-8" ?><response><status>201</status><message>Missing message. Per maggiori informazioni visitare la pagina: https://help.ovhcloud.com/csm/it-sms-sending-via-url-http2sms?id=kb_article_view&sysparm_article=KB0051388</message></response>
 ```
 
-#### json
+#### JSON
 
 - In caso di riuscita:
 

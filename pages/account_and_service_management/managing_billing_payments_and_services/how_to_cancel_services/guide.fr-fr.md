@@ -1,12 +1,56 @@
 ---
 title: Comment résilier mes services OVHcloud
 excerpt: Découvrez comment interrompre vos abonnements OVHcloud depuis l'espace client
-updated: 2025-04-28
+updated: 2026-01-19
 ---
+
+<style>
+/* ---FAQ only--- */
+details {
+    margin: 0.1rem 1;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    background: #ffffffff;
+}
+details > summary {
+    padding: 0.1rem 1rem;
+    font-weight: 500;
+    color: #268fd4ff;
+    cursor: pointer;
+    list-style: none;
+}
+details > summary::before {
+    content: '\25B6';
+    display: inline-block;
+    margin-right: 0.5ch;
+    transition: transform 0.2s;
+}
+details[open] > summary::before {
+    content: '\25BC';
+}
+details:hover {
+    border: 1px solid #147DE8;
+    border-radius: 4px;
+    transition: border-color 0.5s ease;
+}
+details[open] > summary {
+    background: #ffffffff;
+}
+details > :not(summary) {
+    padding: 0.25rem 0.5rem;
+    box-sizing: border-box;
+    list-style-position: inside;
+}
+.smallish-gap {
+    display: block;
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
+}
+</style>
 
 ## Objectif
 
-Vous souhaitez résilier un ou plusieurs services OVHcloud. Ce guide vous indiquera comment interrompre votre abonnement depuis l'espace client OVHcloud.
+Vous souhaitez résilier un ou plusieurs services OVHcloud. Ce guide vous indiquera comment interrompre votre abonnement depuis la page [Mes offres et services](/links/control-panel/billing-services).
 
 - Tout d'abord, prenez connaissance de la partie « Que se passe-t-il lorsqu'un service OVHcloud est résilié ? » ci-dessous.
 - Choisissez ensuite le produit concerné dans la partie « [Comment résilier votre abonnement ?](#terminate) ».
@@ -36,8 +80,18 @@ Avant de procéder à la résiliation d'un service, vous devez donc être **cert
 ## Prérequis
 
 - Etre le « contact administrateur » du service à résilier (pour plus d'informations, consultez [ce guide](/pages/account_and_service_management/account_information/managing_contacts#definition))
-- Avoir accès à votre [espace client OVHcloud](/links/manager)
 - Posséder des services OVHcloud actifs (non suspendus pour un défaut de paiement)
+
+<!-- CP-NAV-START:billing-services -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Mes offres et services](/links/control-panel/billing-services)
+- **Pour y accéder :** Cliquez sur votre nom en haut à droite > `Mes offres et services`{.action}
+
+---
+<!-- CP-NAV-END:billing-services -->
 
 ## En pratique
 
@@ -47,7 +101,7 @@ Des **cas particuliers** existent néanmoins et sont détaillés [plus bas](#spe
 
 ### Comment résilier votre abonnement ? <a name="terminate"></a>
 
-Pour résilier l'abonnement à votre service, connectez-vous à votre [espace client OVHcloud](/links/manager), cliquez sur votre nom en haut à droite puis sur `Mes offres & services`{.action}.
+Pour résilier l'abonnement à votre service, ouvrez la page [Mes offres et services](/links/control-panel/billing-services).
 
 ![produits et services](/pages/assets/screens/control_panel/product-selection/right-menu/my-solutions-and-services.png){.thumbnail}
 
@@ -102,7 +156,7 @@ Il n'y a pas de résiliation possible avant échéance sur les offres [SSL secti
 
 #### Offre d'accès à Internet (FTTH / xDSL) <a name="xdsl"></a>
 
-Pour résilier votre offre [FTTH ou xDSL](https://www.ovhtelecom.fr/offre-internet/), suivez les instructions de ce [guide](/pages/web_cloud/internet/internet_access/comment_resilier_mon_acces_xdsl).
+Pour résilier votre offre [FTTH ou xDSL](/links/telecom/offre-internet), suivez les instructions de ce [guide](/pages/web_cloud/internet/internet_access/comment_resilier_mon_acces_xdsl).
 
 > [!warning]
 >
@@ -113,7 +167,7 @@ Pour résilier votre offre [FTTH ou xDSL](https://www.ovhtelecom.fr/offre-intern
 
 #### VoIP <a name="voip"></a>
 
-Pour résilier une offre [VoIP](/links/telecom/telephonie-voip), suivez les instructions de ce guide pour [résilier une ligne SIP ou Trunk](/pages/web_cloud/phone_and_fax/voip/changer_l_offre_et_les_options_d_une_ligne_voip#resilier-sip-trunk) ou pour [résilier un numéro alias](/pages/web_cloud/phone_and_fax/voip/changer_l_offre_et_les_options_d_une_ligne_voip#cancel-alias).
+Pour résilier une offre [VoIP](/links/telecom/telephonie-voip), suivez les instructions de notre guide « [Comment résilier un service VoIP ou une ligne Fax](/pages/web_cloud/phone_and_fax/voip/resilier-services-voip) ».
 
 #### SMS <a name="sms"></a>
 
@@ -123,7 +177,7 @@ Si vous souhaitez supprimer un compte SMS, nous vous invitons à créer une dema
 
 #### FAX <a name="fax"></a>
 
-Pour résilier une offre [FAX](/links/telecom/fax), suivez les instructions de [ce guide](/pages/web_cloud/phone_and_fax/voip/changer_l_offre_et_les_options_d_une_ligne_voip#cancel-fax).
+Pour résilier une offre [FAX](/links/telecom/fax), suivez les instructions de notre guide « [Comment résilier un service VoIP ou une ligne Fax](/pages/web_cloud/phone_and_fax/voip/resilier-services-voip) ».
 
 #### Managed Bare Metal <a name="managedbaremetal"></a>
 
@@ -152,7 +206,7 @@ Vous pouvez également [consulter votre consommation actuelle](/pages/public_clo
 > Vous pouvez annuler une demande de résiliation jusqu'à 24 heures avant la date de fin d'abonnement.
 >
 
-Pour annuler une demande de résiliation, connectez-vous à votre [espace client OVHcloud](/links/manager), cliquez sur votre nom en haut à droite puis sur `Mes offres & services`{.action}.
+Pour annuler une demande de résiliation, ouvrez la page [Mes offres et services](/links/control-panel/billing-services).
 
 Cliquez ensuite sur le bouton `...`{.action} à droite du service faisant l'objet d'une demande de résiliation puis sur `Annuler la résiliation du service`{.action} 
 
@@ -164,33 +218,42 @@ L'annulation de la résiliation est à effet immédiat. Rafraîchissez la page �
 
 ## FAQ
 
-> [!faq]
->
-> Je ne parviens pas à résilier un service. Que faire ?
->> Si vous ne parvenez pas à résilier un service (le bouton `Résilier mon service`{.action} n'est pas proposé), celui-ci peut faire partie des cas particuliers détaillés [plus haut dans ce guide](#specific-cases).
->> Vérifiez également que les conditions suivantes sont bien remplies :
->>
->> - Vous devez être le « contact administrateur » du service. Pour plus d'informations, consultez [ce guide](/pages/account_and_service_management/account_information/managing_contacts#definition).
->> - Le service est en **renouvellement automatique**. Si votre service est en [renouvellement manuel](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#auto-vs-manual), il sera suspendu à sa date d'expiration puis supprimé au bout de quelques jours.
->> - Le service n'est pas suspendu, notamment en raison d'un défaut de régularisation d'une facture. Vérifiez que vous êtes à jour dans les [paiements](/pages/account_and_service_management/managing_billing_payments_and_services/invoice_management#pay-bills) et [renouvellements](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#renewal-management) de vos services.
->>
->> Si vous ne parvenez toujours pas à résilier votre service, contactez nos équipes du support en ouvrant un ticket depuis le [centre d'aide](https://help.ovhcloud.com/csm?id=csm_get_help).
-> Comment résilier tous mes services ?
->> Vous devez effectuer la procédure de résiliation pour chaque service de façon unitaire. Il n'est pas possible de résilier plusieurs services à la fois ou de demander une résiliation globale à nos équipes du support client.
-> Comment supprimer mon compte OVHcloud ?
->> La fermeture de votre compte client OVHcloud et la suppression de vos données personnelles n'est possible que si :
->>
->> 1. Vous n'avez plus de services visibles dans la section « [Mes offres & services](https://www.ovh.com/manager/dedicated/#/billing/autoRenew) ». Dans le cas contraire, vous devrez dans un premier temps demander leur résiliation et attendre leur suppression.
->> 2. Vous n'avez pas de factures en attente de paiement. Dans le cas contraire, vous devez procéder à leur règlement en cliquant sur le bouton `Régler immédiatement`{.action} dans les actions de masses de la page « [Mes factures](https://www.ovh.com/manager/#/dedicated/billing/history) ».
->> 3. Vous n'avez pas de commande en cours. Vérifiez-le sur [cette page](https://www.ovh.com/manager/#/dedicated/billing/orders/orders).
->> 4. Votre compte prépayé n'est pas positif. Vérifiez-le sur [cette page](https://www.ovh.com/manager/#/dedicated/billing/payment/ovhaccount).
->>
->> Si les conditions ci-dessus sont remplies, vous pouvez demander à supprimer votre compte OVHcloud et les données liées en suivant ces étapes :
->>
->> 1. Connectez-vous au [Centre d'aide OVHcloud](https://help.ovhcloud.com/csm?id=csm_get_help)
->> 2. Cliquez sur le bouton `Créer un ticket`{.action}
->> 3. Sélectionnez le motif `Gérez votre compte client OVHcloud`
->> 4. Précisez `Je veux fermer mon compte client OVHcloud` et suivez les étapes décrites.
+/// details | Je ne parviens pas à résilier un service. Que faire ?
+
+Si vous ne parvenez pas à résilier un service (le bouton `Résilier mon service`{.action} n'est pas proposé), celui-ci peut faire partie des cas particuliers détaillés [plus haut dans ce guide](#specific-cases).
+Vérifiez également que les conditions suivantes sont bien remplies :
+
+- Vous devez être le « contact administrateur » du service. Pour plus d'informations, consultez [ce guide](/pages/account_and_service_management/account_information/managing_contacts#definition).
+- Le service est en **renouvellement automatique**. Si votre service est en [renouvellement manuel](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#auto-vs-manual), il sera suspendu à sa date d'expiration puis supprimé au bout de quelques jours.
+- Le service n'est pas suspendu, notamment en raison d'un défaut de régularisation d'une facture. Vérifiez que vous êtes à jour dans les [paiements](/pages/account_and_service_management/managing_billing_payments_and_services/invoice_management#pay-bills) et [renouvellements](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#renewal-management) de vos services.
+
+Si vous ne parvenez toujours pas à résilier votre service, contactez nos équipes du support en ouvrant un ticket depuis le [centre d'aide](https://help.ovhcloud.com/csm?id=csm_get_help).
+
+///
+
+/// details | Comment résilier tous mes services ?
+
+Vous devez effectuer la procédure de résiliation pour chaque service de façon unitaire. Il n'est pas possible de résilier plusieurs services à la fois ou de demander une résiliation globale à nos équipes du support client.
+
+///
+
+/// details | Comment supprimer mon compte OVHcloud ?
+
+La fermeture de votre compte client OVHcloud et la suppression de vos données personnelles n'est possible que si :
+
+1. Vous n'avez plus de services visibles dans la section « [Mes offres et services](https://www.ovh.com/manager/dedicated/#/billing/autoRenew) ». Dans le cas contraire, vous devrez dans un premier temps demander leur résiliation et attendre leur suppression.
+2. Vous n'avez pas de factures en attente de paiement. Dans le cas contraire, vous devez procéder à leur règlement en cliquant sur le bouton `Régler immédiatement`{.action} dans les actions de masses de la page « [Mes factures](https://www.ovh.com/manager/#/dedicated/billing/history) ».
+3. Vous n'avez pas de commande en cours. Vérifiez-le sur [cette page](https://www.ovh.com/manager/#/dedicated/billing/orders/orders).
+4. Votre compte prépayé n'est pas positif. Vérifiez-le sur [cette page](https://www.ovh.com/manager/#/dedicated/billing/payment/ovhaccount).
+
+Si les conditions ci-dessus sont remplies, vous pouvez demander à supprimer votre compte OVHcloud et les données liées en suivant ces étapes :
+
+1. Connectez-vous au [Centre d'aide OVHcloud](https://help.ovhcloud.com/csm?id=csm_get_help)
+2. Cliquez sur le bouton `Créer un ticket`{.action}
+3. Sélectionnez le motif `Gérez votre compte client OVHcloud`
+4. Précisez `Je veux fermer mon compte client OVHcloud` et suivez les étapes décrites.
+
+///
 
 ## Aller plus loin <a name="gofurther"></a>
 

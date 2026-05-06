@@ -1,12 +1,14 @@
 ---
 title: Choosing the Right Block Storage Class
-excerpt: Discover how to choose the right OVHcloud Block Storage class. Compare performance, pricing, and use cases to optimize your storage for both cost and efficiency.
-updated: 2025-12-15
+excerpt: Find out how to choose the right OVHcloud Block Storage class. Compare performance, pricing, and use cases to optimize your storage for both cost and efficiency.
+updated: 2026-05-05
 ---
 
 ## Objective
 
-This guide helps you understand the different OVHcloud Block Storage classes and choose the one that best fits your needs. You will learn about performance levels, pricing considerations, and recommended use cases to make informed storage decisions.
+**This guide helps you understand the different OVHcloud Block Storage classes and choose the one that best fits your needs.**
+
+You will learn about performance levels, pricing considerations, and recommended use cases to make informed storage decisions.
 
 ## Block Storage Overview
 
@@ -30,20 +32,21 @@ The **Classic Volume** class is ideal for everyday application needs, including 
 
 This class is suitable for standard workloads where low-latency and reliability are important, but multi-zone replication is not required.
 
-### High Speed Volume
+### High Speed Volume Gen2
 
-The **High Speed Volume** class comes in two generations, offering different performance profiles:
+The **High Speed Volume Gen2** class offers performance that scales with volume size — ideal for intensive workloads:
 
-- Gen 1: Up to 3,000 IOPS and 128 MB/s – suitable for general high-speed workloads.
-- Gen 2: 30 IOPS/GB (max 20,000 IOPS) and 0.5 MB/s per GB (max 512 MB/s) – recommended for intensive applications requiring maximum I/O and throughput.
+- **IOPS**: 30 IOPS/GB (base 3,000 IOPS for 10–100 GB, up to 20,000 IOPS)
+- **Throughput**: 0.5 MB/s/GB (base 50 MB/s for 10–100 GB, up to 512 MB/s)
+- **Maximum size**: 12 TB
 
-Choose Gen 1 for standard high-speed use cases, and Gen 2 for heavy workloads like analytics, large databases, or high-performance computing.
+This class is recommended for heavy workloads such as analytics, large databases, and high-performance computing.
 
 ### Comparison Table
 
 | Storage Class | Use Cases | Performance | Supported Regions | Availability SLA | Replication | Notes |
 | --- | --- | --- | --- | --- | --- | --- |
-| **High Speed Volume** | High-performance workloads, analytics, large databases | **Gen 1**: Up to 3,000 IOPS, 128 MB/s <br><br> **Gen 2**: 30 IOPS/GB (max 20,000 IOPS), 0.5 MB/s per GB (max 512 MB/s) | 3-AZ, 1-AZ, Local Zones | 99.9% | Zonal | Optimized NVMe, scalable performance |
+| **High Speed Volume Gen2** | High-performance workloads, analytics, large databases | 30 IOPS/GB (base 3,000 IOPS, up to 20,000 IOPS), 0.5 MB/s/GB (base 50 MB/s, up to 512 MB/s), max 12 TB | 3-AZ, 1-AZ, Local Zones | 99.9% | Zonal | Optimized NVMe, scalable performance |
 | **Regional Classic Volume** | Critical applications, distributed systems | 500 IOPS guaranteed, 64 MB/s | 3-AZ | 99.99% | Multi-zone | NVMe over Fabric, high availability |
 | **Classic Volume** | Everyday workloads, VMs, backups | 500 IOPS guaranteed, 64 MB/s | 1-AZ, Local Zones | 99.9% | Zonal | NVMe over Fabric, standard performance |
 
@@ -71,7 +74,7 @@ Each Block Storage volume type is also available in an encrypted version (LUKS),
 Encrypted volumes can be created directly from the OVHcloud Control Panel or via CLI/API tools by specifying the volume type with the suffix `-luks` (for example, classic-luks or highspeed-luks). This provides an easy and secure way to protect sensitive data while leveraging the same performance and features as standard volumes.
 
 > [!primary]
-> Encrypted volumes have no impact on performance.
+> For large encrypted volumes (over 800 GiB), performance may be lower than the expected volume QoS, with up to a 20% reduction in throughput for High Speed Gen2. The impact varies depending on the customer’s implementation.
 
 ## Use Cases
 
@@ -82,7 +85,7 @@ Block Storage supports a wide variety of workloads thanks to its performance, fl
 - **Analytics & AI workloads**: High Speed Volumes provide maximum IOPS and throughput for data-intensive applications.
 - **Backup & disaster recovery**: Easily create snapshots and backups for critical data, ensuring fast recovery and protection.
 
-## Zone and regional Considerations
+## Zone and Regional Considerations
 
 Block Storage volumes can be deployed with different availability options depending on your requirements:
 
@@ -99,6 +102,6 @@ Block Storage volumes can be deployed with different availability options depend
 
 [Change your Block Storage volume type](/pages/public_cloud/compute/switch_volume_type)
 
-If you need training or technical assistance to implement our solutions, please contact your sales representative or click [this link](/links/professional-services) to get a quote and request a personalised analysis of your project from our Professional Services team.
+If you need training or technical assistance to implement our solutions, contact your sales representative or reach out to our [Professional Services team](/links/professional-services) to get a quote and request a personalised analysis of your project.
 
 Join our [community of users](/links/community).

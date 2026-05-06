@@ -20,7 +20,17 @@ With OVHcloud, you can create additional local users with read or write access t
 ## Requirements
 
 - An active OVHcloud account
-- Access to the [OVHcloud Control Panel](/links/manager)
+
+<!-- CP-NAV-START:iam-identities -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [IAM Identities](/links/control-panel/iam-identities)
+- **Navigation path:** `Identity, Security & Operations`{.action} > `Identities`{.action}
+
+---
+<!-- CP-NAV-END:iam-identities -->
 
 ## Instructions
 
@@ -32,11 +42,7 @@ Local users are one of the types of identities that can be set up on your OVHclo
 
 #### Add a user
 
-Log in to your [OVHcloud Control Panel](/links/manager). In the sidebar, click on `Identity, Security & Operations`{.action}, then on `Identities`{.action}.
-
-![Access to the IAM menu](images/access_to_the_IAM_menu_03.png){.thumbnail}
-
-You can then click on `Add user`{.action}.
+From the [IAM Identities](/links/control-panel/iam-identities) page, click on `Add user`{.action}.
 
 A window will pop up, and you will need to complete the required fields. Click `Confirm`{.action} to create the user.
 
@@ -82,7 +88,7 @@ When you edit a user you can update their email address, group and description.
 
 #### Add a group
 
-To add a group, go to the `Identities`{.action} section, then to the `User groups`{.action} tab. Then click the `Declare a group`{.action} button.
+To add a group, go to the `User groups`{.action} tab, then click the `Declare a group`{.action} button.
 
 ![users-management](images/usersmanagement7.png){.thumbnail}
 

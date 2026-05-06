@@ -1,12 +1,13 @@
 ---
 title: 'Freeswitch - configuration et utilisation'
+excerpt: 'Apprenez comment configurer et utiliser Freeswitch avec votre trunk SIP OVHcloud pour router vos appels téléphoniques'
 updated: 2018-03-26
 flag: hidden
 ---
 
 > [!warning]
 > 
-> OVH met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
+> OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
 >
 > Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/) et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section « Aller plus loin » de ce guide.
 >

@@ -22,6 +22,17 @@ Exchange Accounts können auf verschiedenen, kompatiblen E-Mail-Clients eingeric
 - Die Mail App ist auf Ihrem iOS Gerät installiert.
 - Sie verfügen über Anmeldeinformationen für die E-Mail-Adresse, die Sie konfigurieren möchten.
 
+<!-- CP-NAV-START:web-exchange -->
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direkter Link:** [Exchange](/links/control-panel/web-exchange)
+- **Navigationspfad:** `Web Cloud`{.action} > `Exchange`{.action} > Wählen Sie Ihre Plattform aus
+
+---
+<!-- CP-NAV-END:web-exchange -->
+
 ## In der praktischen Anwendung
 
 ### Account hinzufügen <a name="addaccount"></a>
@@ -30,13 +41,7 @@ Exchange Accounts können auf verschiedenen, kompatiblen E-Mail-Clients eingeric
 >
 > In dieser Anleitung verwenden wir den Servernamen: ex?.mail.ovh.net. Das "?" muss mit der jeweils passenden Nummer Ihres zuständigen Servers für den einzurichtenden Exchange Dienst ersetzt werden.
 >
-> 1. Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein.
-> 1. Öffnen Sie den Bereich `Web Cloud`{.action}.
-> 1. In der Rubrik `MICROSOFT`{.action}, klicken Sie auf `Exchange`{.action}.
-> 1. Wählen Sie den gewünschten Dienst aus.
-> 1. Der Servername wird im Kasten **Verbindung** auf der Seite `Allgemeine Informationen`{.action} angezeigt.
->
-
+> Klicken Sie auf [diesen Link](/links/control-panel/web-exchange), um auf den Bereich `Exchange`{.action} zuzugreifen. Der Servername wird im Bereich **Verbindung** des Tabs `Allgemeine Informationen`{.action} angezeigt.
 Klicken Sie vom Homescreen des Geräts aus auf `Einstellungen`{.action} (Zahnradsymbol). Je nach Ihrer iOS-Version erfolgt das Hinzufügen eines Accounts auf verschiedene Weise:
 
 - **Für iOS 7, 8, 9 und 10**: Tippen Sie auf `Mail, Kontakte, Kalender`{.action} und dann auf `Account hinzufügen`{.action}. Als Accounttyp wählen Sie `Andere`{.action}, und klicken anschließend auf `Mail-Account hinzufügen`{.action}. Gehen Sie dann zu Schritt 5 der nachfolgenden Tabelle.

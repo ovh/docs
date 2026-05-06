@@ -40,6 +40,17 @@ Es importante tener en cuenta que las listas negras pueden incluir nombres de do
 
 - Actualmente sus servicios no están sujetos a un procedimiento de denuncia de abusos.
 
+
+<!-- CP-NAV-START:network-public-ip -->
+---
+
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [Public IP](/links/control-panel/network-public-ip)
+- **Ruta de navegación:** `Network`{.action} > `IP pública`{.action}
+
+---
+<!-- CP-NAV-END:network-public-ip -->
 ## Procedimiento
 
 ### Proveedores compatibles
@@ -146,10 +157,10 @@ La eliminación de la lista debería tardar entre 20 y 30 minutos.
 
 /// details | Más información...
 
-Para [retirar una IP de MIPSpace](https://www.mipspace.com/removal.php), conéctese primero a [su área de cliente de OVHcloud](/links/manager) y asegúrese de que la siguiente información esté actualizada:
+Para [retirar una IP de MIPSpace](https://www.mipspace.com/removal.php), asegúrese de que la siguiente información esté actualizada:
 
 - [La resolución inversa DNS](/pages/bare_metal_cloud/virtual_private_servers/configuring-reverse-dns) (campo PTR).
-- Detalles de su organización (*RWhois*) en la sección `Network`{.action}: abra `IP`{.action} y haga clic en el botón `Engranaje`{.action} a la derecha. Seleccione `Gestionar mis organizaciones`{.action} en el menú desplegable.
+- Detalles de su organización (*RWhois*): en la sección [Direcciones IP públicas](/links/control-panel/network-public-ip) de su área de cliente de OVHcloud, acceda a la pestaña `Gestionar mis organizaciones`{.action}.
 
 ///
 

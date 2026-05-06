@@ -10,7 +10,7 @@ Here are the most frequently asked questions about billing and payment for your 
 
 ### What is my billing account?
 
-The list of contacts for your services is available directly from your [OVHcloud Control Panel](/links/manager). Click on your name in the top right-hand corner, then on `My contacts`{.action}.
+The list of contacts for your services is available on the [My contacts](/links/control-panel/account-contacts) page.
 
 #### Tips and tricks
 
@@ -18,7 +18,7 @@ For further information about contact management, please read this detailed guid
 
 ### How do I change my billing details?
 
-Your billing details are those of your NIC handle. For your next bills, simply update this information. Log in to the [OVHcloud Control Panel](/links/manager), click on your name in the top right-hand corner, then `My Account`{.action}.
+Your billing details are those of your NIC handle. For your next bills, simply update this information on the [My profile](/links/control-panel/account-profile) page.
 
 For legal reasons, you cannot change an invoice that has already been issued. If, however, your request is linked to an error on our side, please contact us by creating a support ticket.
 
@@ -31,14 +31,14 @@ If you do not renew your service before this date, it will simply be suspended, 
 
 #### Tips and tricks
 
-To view the status of your services, log in to the [OVHcloud Control Panel](/links/manager), click on your name in the top right-hand corner, then `My offers and services`{.action}.
+To view the status of your services, open the [My offers and services](/links/control-panel/billing-services) page.
 Log in and manually renew your services on the page <https://www.ovh.co.uk/cgi-bin/order/renew.cgi>.
 
 For further information, please read this detailed guide: [Managing renewal for your services](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal).
 
 ### How do I enable automatic renewal?
 
-Log in to the [OVHcloud Control Panel](/links/manager), click on your name in the top right-hand corner, then `My offers and services`{.action}. Click on the three dots next to the service concerned, and select `Enable automatic payment`{.action}.
+On the [My offers and services](/links/control-panel/billing-services) page, click on the three dots next to the service concerned, and select `Enable automatic payment`{.action}.
 
 #### Tips and tricks
 
@@ -47,7 +47,7 @@ For further information, please read this detailed guide: [Managing renewal for 
 
 ### How do I disable automatic renewal?
 
-Log in to the [OVHcloud Control Panel](/links/manager), click on your name in the top right-hand corner, then `My offers and services`{.action}. Click on the three dots next to the service concerned, then select `Configure renewal`{.action}. You can then choose manual mode. This mode is only available for certain services — e.g. domain names, web hosting plans, VPS, and dedicated servers.
+On the [My offers and services](/links/control-panel/billing-services) page, click on the three dots next to the service concerned, then select `Configure renewal`{.action}. You can then choose manual mode. This mode is only available for certain services — e.g. domain names, web hosting plans, VPS, and dedicated servers.
 
 To cancel a service, go to [How do I cancel a service?](#cancelservice)
 
@@ -58,11 +58,11 @@ For further information, please read this detailed guide: [Managing renewal for 
 
 ### How do I add a payment method?
 
-Log in to the [OVHcloud Control Panel](/links/manager), click on your name in the top right-hand corner, then `My payment methods`{.action}. Next, click `Add a payment method`{.action}.
+On the [My payment methods](/links/control-panel/billing-payment-methods) page, click `Add a payment method`{.action}.
 
 ### How do I update my payment method?
 
-Log in to the [OVHcloud Control Panel](/links/manager), click on your name in the top right-hand corner, then `My payment methods`{.action}. You can add or delete a payment method (bank card, PayPal or SEPA direct debit).
+On the [My payment methods](/links/control-panel/billing-payment-methods) page, you can add or delete a payment method (bank card, PayPal or SEPA direct debit).
 
 If you request a SEPA direct debit, you will receive an email within 24 to 48 hours via the email address on your OVHcloud account, with a link for the electronic signature of your direct debit mandate. Warning: the owner of the bank account must be the same as the owner of the OVHcloud account.
 
@@ -74,7 +74,7 @@ To ensure that your services are renewed properly, you will need to set at least
 
 ### How do I delete a payment method?
 
-Log in to the [OVHcloud Control Panel](/links/manager), click on your name in the top right-hand corner, then `My payment methods`{.action}. Identify the payment method you wish to delete, and click on the trashcan icon.
+On the [My payment methods](/links/control-panel/billing-payment-methods) page, identify the payment method you wish to delete and click on the trashcan icon.
 
 #### Tips and tricks
 
@@ -98,7 +98,7 @@ Please note that solutions with automatic renewal will be renewed on the first d
 
 #### Tips and tricks
 
-Log in to the [OVHcloud Control Panel](/links/manager), click on your name in the top right-hand corner, then `My offers and services`{.action}. Here, you can change how often your solutions are renewed.
+On the [My offers and services](/links/control-panel/billing-services) page, you can change how often your solutions are renewed.
 For further information, please read this detailed guide: [Managing renewal for your services](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal).
 
 ### Which of my payment methods will be debited?
@@ -111,11 +111,11 @@ If your pre-paid OVHcloud account contains credit, it will always be used by def
 
 ### Where do I find my bills?
 
-Log in to the [OVHcloud Control Panel](/links/manager), click on your name in the top right-hand corner, then click `My bills`{.action}.
+Open the [My bills](/links/control-panel/billing-invoices) page.
 
 #### Tips and tricks
 
-If there are no invoices listed in the OVHcloud Control Panel, you may not be the billing contact for the service concerned. To see who is the billing contact and modify it if necessary, log in to the [OVHcloud Control Panel](/links/manager), click on your name in the top right-hand corner, then click `My contacts`{.action}.
+If there are no invoices listed in the OVHcloud Control Panel, you may not be the billing contact for the service concerned. To see who is the billing contact and modify it if necessary, open the [My contacts](/links/control-panel/account-contacts) page.
 
 ### How do I pay my balance?
 
@@ -136,7 +136,7 @@ Pending payments are listed in the dashboard of the OVHcloud Control Panel. You 
 
 #### Tips and tricks
 
-Log in to the [OVHcloud Control Panel](/links/manager), click on your name in the top right-hand corner, then click `My payment methods`{.action}. You can then save your payment method there. This way, your bills will be automatically settled.
+On the [My payment methods](/links/control-panel/billing-payment-methods) page, you can save your payment method. This way, your bills will be automatically settled.
 
 ### What do my payments correspond to?
 
@@ -144,7 +144,7 @@ Payments made on our website and via direct debit are listed in the OVHcloud Con
 
 ### How do I cancel a service? <a name="cancelservice"></a>
 
-For solutions like domain names, web hosting plans, dedicated servers and VPS solutions, log in to the [OVHcloud Control Panel](/links/manager), click on your name in the top right-hand corner, then `My offers and services`{.action}. To cancel a service, click on the three dots next to it, then click `Cancel my subscription`{.action}. If you have already requested a cancellation, you can also `Stop cancellation of service`{.action}.
+For solutions like domain names, web hosting plans, dedicated servers and VPS solutions, go to the [My offers and services](/links/control-panel/billing-services) page. To cancel a service, click on the three dots next to it, then click `Cancel my subscription`{.action}. If you have already requested a cancellation, you can also `Stop cancellation of service`{.action}.
 
 The cancellation will be effective once your service is no longer valid, or reaches its expiry date. You can submit a cancellation request, or undo it up to 24 hours before the expiry date.
 
@@ -172,7 +172,7 @@ The accounts ledger is only issued by the requesting party’s accounts departme
 
 However, OVHcloud offers you access to all of your invoices in an Excel file (.csv).
 
-To download the file, log in to the [OVHcloud Control Panel](/links/manager), click on your name in the top right-hand corner, then `My bills`{.action}. Click on the `Actions`{.action} button, then select `Export as CSV`{.action}.
+To download the file, open the [My bills](/links/control-panel/billing-invoices) page. Click on the `Actions`{.action} button, then select `Export as CSV`{.action}.
 
 ## Go further
   

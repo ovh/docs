@@ -1,6 +1,6 @@
 ---
-title: Konfiguracja programowego lustra (RAID) w systemie Windows
-excerpt: "Dowiedz się, jak odbudować konfigurację dysków Twojego serwera po wymianie dysku"
+title: "Konfiguracja RAID programowego w systemie Windows Server"
+excerpt: "Skonfiguruj RAID programowy na serwerze dedykowanym OVHcloud z systemem Windows Server."
 updated: 2023-03-28
 ---
 
@@ -404,5 +404,8 @@ DISKPART> list volume
 Najlepiej nie uruchamiać ponownie serwera, jeśli proces odbudowy nie zostanie zakończony.
 
 ## Sprawdź również
+
+- [Konfiguracja RAID programowego na serwerze dedykowanym](BIOS)
+- [Creating a Windows Partition on a Dedicated RAID Server](/pages/bare_metal_cloud/dedicated_servers/windows_raid_hard)
 
 Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

@@ -12,7 +12,7 @@ Ce guide vous explique comment utiliser l'API publique OVHcloud pour créer et g
 
 - Disposer d'une offre d'[hébergement web OVHcloud](/links/web/hosting).
 - Connaissances de base en API REST.
-- Être connecté aux API OVHcloud. Consultez notre guide de [Premiers pas avec les API OVHcoud](/pages/manage_and_operate/api/first-steps).
+- Être connecté aux API OVHcloud. Consultez notre guide de [Premiers pas avec les API OVHcloud](/pages/manage_and_operate/api/first-steps).
 
 > [!warning]
 >

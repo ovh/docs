@@ -1,7 +1,7 @@
 ---
 title: AI Notebooks - Facturation et cycle de vie (EN)
 excerpt: Découvrez comment sont facturés les AI Notebooks
-updated: 2025-11-17
+updated: 2026-01-27
 ---
 
 ## Objective
@@ -14,6 +14,9 @@ AI Notebooks are linked to a Public Cloud project. The whole project is billed a
 
 ## AI Notebooks lifecycle
 
+> [!warning]
+> By default, your AI Notebook will automatically shut down after **7 consecutive days of being in a RUNNING state**. All your settings and data are preserved and you can start it again anytime. You can also enable **Automatic Restart** to have it restart every 7 days, or contact [our support](/links/support-contact) to extend this period to **28 days**.
+
 During its lifetime, the notebook will go through the following statuses:
 
 - `STARTING`: The notebook is being started and, if any, the remote data is synchronized from the Object Storage. To learn more about data synchronization, please check out the [Data - Concept and best practices](/pages/public_cloud/ai_machine_learning/gi_02_concepts_data#how-it-works) documentation. Then, the system allocates the necessary compute resources (CPUs/GPUs) for your Notebook. Finally, the base framework you have chosen is pulled for use in the notebook.
@@ -24,7 +27,7 @@ During its lifetime, the notebook will go through the following statuses:
 - `ERROR`: The notebook ended due to a backend error. You may reach our support.
 - `DELETING`: The notebook is being removed. When it is deleted, you will no longer see it, and it will no longer exist. Its internal [/workspace](/pages/public_cloud/ai_machine_learning/notebook_guide_workspace) data will not be deleted automatically after notebook deletion. If you are sure you want to delete it, you can find and delete it in the `notebooks_workspace` container of your Object Storage, under the notebook ID directory.
 
-![image](images/ai.notebooks.lifecycle.png){.thumbnail}
+![image](images/ai_notebooks_lifecycle.png){.thumbnail}
 
 ## Billing principles
 

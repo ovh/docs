@@ -13,8 +13,27 @@ Every OVHcloud email account has a dedicated storage space. By managing your sto
 ## Requirements
 
 - a pre-configured OVHcloud email solution (**MX Plan**, available as part of our [web hosting plans](/links/web/hosting) package or ordered separately as a standalone solution, such as [**Hosted Exchange**](/links/web/emails-hosted-exchange));
-- access to the [OVHcloud Control Panel](/links/manager), and `Web Cloud`{.action} section ;
 - access to the email addresses concerned.
+
+<!-- CP-NAV-START:web-mx-plan -->
+<!-- CP-NAV-START:web-exchange -->
+---
+
+### OVHcloud Control Panel Access
+
+**MX Plan:**
+
+- **Direct link:** [MX Plan](/links/control-panel/web-mx-plan)
+- **Navigation path:** `Web Cloud`{.action} > `MX Plan`{.action} > Select your MX Plan service
+
+**Exchange:**
+
+- **Direct link:** [Exchange](/links/control-panel/web-exchange)
+- **Navigation path:** `Web Cloud`{.action} > `Exchange`{.action} > Select your platform
+
+---
+<!-- CP-NAV-END:web-exchange -->
+<!-- CP-NAV-END:web-mx-plan -->
 
 ## Instructions  <a name="instructions"></a>
 

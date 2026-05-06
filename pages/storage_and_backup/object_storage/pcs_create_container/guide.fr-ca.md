@@ -19,19 +19,26 @@ La première étape est la création d’un conteneur qui regroupera vos fichier
 
 ## Prérequis
 
-- Être connecté à votre [espace client OVHcloud](/links/manager)
-
 Si vous utilisez Horizon :
 
 - Avoir créé un [utilisateur OpenStack](/pages/public_cloud/public_cloud_cross_functional/create_and_delete_a_user).
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Projets Public Cloud](/links/control-panel/publiccloud-projects)
+- **Pour accéder à vos services :** `Public Cloud`{.action} > Sélectionnez votre projet
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## En pratique
 
 ### Création d'un conteneur Object Storage depuis l'espace client OVHcloud <a name="controlpanel"></a>
 
-Connectez-vous à votre [espace client](/links/manager), accédez à la section `Public Cloud`{.action} et sélectionnez le projet Public Cloud concerné. Cliquez ensuite sur `Object Storage`{.action} dans la barre de navigation de gauche sous `Storage`.
-
-Cliquez ensuite sur `Create an object container`{.action}.
+Cliquez sur `Object Storage`{.action} dans la barre de navigation de gauche sous `Storage`, puis sur `Create an object container`{.action}.
 
 S'il s'agit de votre premier conteneur :
 

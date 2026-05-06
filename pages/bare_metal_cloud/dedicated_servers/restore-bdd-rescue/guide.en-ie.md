@@ -1,6 +1,6 @@
 ---
-title: "How to retrieve databases in rescue mode"
-excerpt: "Find out how to access and save your databases using rescue mode"
+title: "Retrieve Databases in Rescue Mode on a Dedicated Server"
+excerpt: "Access and export your databases from a dedicated server in rescue mode to recover data after an incident."
 updated: 2023-04-13
 ---
 
@@ -13,7 +13,17 @@ With rescue mode, you can always access your data, even if the server's OS or th
 ## Requirements
 
 - A [dedicated server](/links/bare-metal/bare-metal), a [VPS](/links/bare-metal/vps) or a [Public Cloud instance](/links/public-cloud/public-cloud) in your OVHcloud account (excluding Windows systems)
-- Access to the [OVHcloud Control Panel](/links/manager)
+
+<!-- CP-NAV-START:baremetal-dedicated-servers -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Dedicated Servers](/links/control-panel/baremetal-dedicated-servers)
+- **Navigation path:** `Bare Metal Cloud`{.action} > `Dedicated servers`{.action} > Select your server
+
+---
+<!-- CP-NAV-END:baremetal-dedicated-servers -->
 
 > [!warning]
 > OVHcloud is providing you with services for which you are responsible, with regard to their configuration and management. It is therefore your responsibility to ensure that they function correctly.
@@ -257,5 +267,7 @@ root@rescue:/# scp -P SSH_Port_Number dump.sql user@IP_address:/home/backup
 ```
 
 ## Go further
+
+[Dedicated Server - Hardware Diagnostics in Rescue Mode](/pages/bare_metal_cloud/dedicated_servers/hardware-diagnose)
 
 Join our [community of users](/links/community).

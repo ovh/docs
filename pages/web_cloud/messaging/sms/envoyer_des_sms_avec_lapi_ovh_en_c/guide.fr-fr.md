@@ -1,6 +1,6 @@
 ---
-title: 'Envoyer des SMS avec l’API OVHcloud en C#'
-excerpt: 'Découvrez comment envoyer des SMS avec l’api OVHcloud en C#'
+title: "Envoyer des SMS avec l’API OVHcloud en C#"
+excerpt: "Découvrez comment envoyer des SMS avec l’api OVHcloud en C#"
 updated: 2022-11-21
 ---
 
@@ -44,11 +44,11 @@ Dans ce guide nous appellerons deux méthodes :
 
 Des identifiants API sont nécessaires pour consommer l’API SMS, ils sont créés de manière unitaire pour identifier l’application qui va envoyer des SMS. La durée de vie de ces identifiants est paramétrable.
 
-Créez vos identifiants de Script (all keys at once) sur cette page: [https://eu.api.ovh.com/createToken/](https://eu.api.ovh.com/createToken/).
+Créez vos identifiants de Script (all keys at once) sur cette page: [https://auth.eu.ovhcloud.com/api/createToken](https://auth.eu.ovhcloud.com/api/createToken).
 
 > [!primary]
 >
-> L'URL suivante vous permet d'obtenir automatiquement les bons droits pour ce guide : <https://eu.api.ovh.com/createToken/?GET=/sms/&GET=/sms/*/jobs&POST=/sms/*/jobs>.
+> L'URL suivante vous permet d'obtenir automatiquement les bons droits pour ce guide : <https://auth.eu.ovhcloud.com/api/createToken?GET=/sms/&GET=/sms/*/jobs&POST=/sms/*/jobs>.
 
 ![création des tokens](images/sms-tokens-01.png){.thumbnail}
 

@@ -1,7 +1,7 @@
 ---
 title: OVHcloud Managed Kubernetes - Features and roadmap
 excerpt: Find out how to review the latest product and feature updates for OVHcloud Managed Kubernetes and other Cloud services
-updated: 2023-10-11
+updated: 2026-01-30
 ---
 
 ## Cloud roadmap and changelog on our public GitHub repository
@@ -11,6 +11,18 @@ The roadmap and changelog of OVHcloud Managed Kubernetes and all our Public Clou
 [Managed Kubernetes Roadmap & Changelog](https://github.com/orgs/ovh/projects/16/views/1?sliceBy%5Bvalue%5D=Managed+Kubernetes+Service)
 
 [Cloud Roadmap & Changelog](https://github.com/orgs/ovh/projects/16/)
+
+## Recent Features
+
+### LUKS Encrypted Persistent Volumes (Available)
+
+OVHcloud Managed Kubernetes now supports LUKS encrypted block storage volumes using OVHcloud Managed Keys (OMK). This feature is available in specific regions.
+
+For more information, see:
+
+- [Datacenters, nodes and storage flavors - LUKS Encrypted Storage Classes](/pages/public_cloud/containers_orchestration/managed_kubernetes/datacenters-nodes-storage-flavors#luks-encrypted-storage-classes)
+- [LUKS encrypted volumes documentation](/pages/public_cloud/containers_orchestration/managed_kubernetes/known-limits#luks-encrypted-persistent-volumes)
+- [Complete tutorial on creating encrypted Persistent Volumes](https://blog.ovhcloud.com/create-encrypted-persistent-volumes-on-ovhcloud-managed-kubernetes-clusters-with-luks/)
 
 
 ## Go further

@@ -127,9 +127,19 @@ Pour créer une Landing Zone qui fonctionne bien, il est important d'évaluer le
 
 ### Prérequis :
 
-- Être connecté à votre [espace client OVHcloud](/links/manager).
 - Un moyen de paiement.
 - [Charger les variables d'environnement OpenStack](/pages/public_cloud/public_cloud_cross_functional/loading_openstack_environment_variables).
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+#### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Projets Public Cloud](/links/control-panel/publiccloud-projects)
+- **Pour accéder à vos services :** `Public Cloud`{.action} > Sélectionnez votre projet
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ### En pratique
 

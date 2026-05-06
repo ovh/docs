@@ -37,7 +37,17 @@ Twoja oferta Private Exchange lub Trusted Exchange generuje więc własne logi. 
 
 - Subskrybujesz ofertę [Private Exchange](/links/web/emails-hosted-exchange) lub [Trusted Exchange](/links/web/emails-trusted-exchange).
 - Konto na platformie Logs Data Platform (LDP). Ta instrukcja przeprowadzi Cię przez wszystkie niezbędne kroki: [Quick start for Logs Data Platform (EN)](/pages/manage_and_operate/observability/logs_data_platform/getting_started_quick_start).
-- Dostęp do [Panelu klienta OVHcloud](/links/manager).
+
+<!-- CP-NAV-START:web-exchange -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Exchange](/links/control-panel/web-exchange)
+- **Ścieżka nawigacji:** `Web Cloud`{.action} > `Exchange`{.action} > Wybierz platformę
+
+---
+<!-- CP-NAV-END:web-exchange -->
 
 ## W praktyce
 
@@ -45,11 +55,7 @@ Twoja oferta Private Exchange lub Trusted Exchange generuje więc własne logi. 
 
 Aby uzyskać dostęp do logów w czasie rzeczywistym na ofercie Private lub Trusted Exchange, wykonaj poniższe instrukcje:
 
-1. Zaloguj się do [Panelu klienta OVHcloud](/links/manager).
-1. Przejdź do sekcji `Web Cloud`{.action}.
-1. W sekcji `MICROSOFT` kliknij `Exchange`{.action}.
-1. Wybierz odpowiednią platformę.
-1. Obok serii kart kliknij kartę `Więcej`{.action}, a następnie `Logi`{.action}.
+Obok serii kart kliknij kartę `Więcej`{.action}, a następnie `Logi`{.action}.
 
 ![exchange - logs](images/exchange-logs01.png){.thumbnail}
 
@@ -85,10 +91,6 @@ Rozwiązania Exchange są kompatybilne z różnymi usługami, takimi jak hosting
 
 Aby zasubskrybować logi Twojej usługi Exchange do strumienia danych na platformie Logs Data Platform, wykonaj poniższe czynności:
 
-1. Zaloguj się do [Panelu klienta OVHcloud](/links/manager).
-1. Przejdź do sekcji `Web Cloud`{.action}.
-1. W sekcji `MICROSOFT` kliknij `Exchange`{.action}.
-1. Wybierz odpowiednią platformę.
 1. Obok serii kart kliknij kartę `Więcej`{.action}, a następnie `Logi`{.action}.
 1. Na prawo od okna, w którym wyświetlane są Twoje logi w czasie rzeczywistym, kliknij przycisk `Subskrybuj`{.action}.
 

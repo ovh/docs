@@ -1,6 +1,6 @@
 ---
-title: 'Guardar copia de seguridad de la información y las bases de datos en un servidor de almacenamiento'
-excerpt: 'Cómo crear backups de sus datos en cinco sencillos pasos'
+title: "Guardar datos y bases de datos en un servidor dedicado"
+excerpt: "Guarde sus datos y bases de datos en el espacio de almacenamiento integrado de su servidor dedicado OVHcloud en cinco pasos"
 updated: 2018-09-12
 ---
 

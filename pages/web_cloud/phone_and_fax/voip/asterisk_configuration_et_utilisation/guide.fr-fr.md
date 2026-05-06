@@ -1,12 +1,12 @@
 ---
-title: 'Asterisk - configuration et utilisation'
+title: "Asterisk - configuration et utilisation"
 updated: 2018-03-26
 flag: hidden
 ---
 
 > [!warning]
 > 
-> OVH met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
+> OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
 >
 > Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/) et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section « Aller plus loin » de ce guide.
 >
@@ -35,7 +35,7 @@ Pour réaliser les étapes proposées dans ce guide, il faut :
 
 <!-- -->
 
--   Connectez-vous à votre Espace Client OVH : <https://www.ovhtelecom.fr/espaceclient/>
+-   Connectez-vous à votre espace client OVHcloud : <https://www.ovhtelecom.fr/espaceclient/>
 -   Cliquez sur le lien "**Accéder à l'ancienne interface**".
 -   Cliquez sur l'icône "**Téléphonie**".
 -   Cliquez sur votre trunk.
@@ -45,7 +45,7 @@ Pour réaliser les étapes proposées dans ce guide, il faut :
 -   Cochez la case "**Amélioration de la présentation du numéro appelé**".
 -   Cliquez sur "**Valider**" pour confirmer la configuration.
 
-![](images/2015-03-24-153622_735x528_scrot.png){.thumbnail}
+![Activation de la présentation du numéro appelé](images/2015-03-24-153622_735x528_scrot.png){.thumbnail}
 
 ------------------------------------------------------------------------
 
@@ -86,7 +86,7 @@ Les paquets supplémentaires suivants seront installés : asterisk-config [...]
 
 Lors de l'installation, il vous est demandé d'**entrer** votre **préfixedenumérotation** : il faut **définir** le **préfixeinternational**. Par exemple, pour la **France**, le préfixe est **33**.
 
-![](images/2015-03-23-170515_1257x191_scrot.png){.thumbnail}
+![Saisie du préfixe international lors de l'installation](images/2015-03-23-170515_1257x191_scrot.png){.thumbnail}
 
 L'installation terminée. Vérifiez le bon fonctionnement en lançant la **consoleAsterisk** via la commande **rasterisk** :
 
@@ -147,8 +147,8 @@ siptrunk.ovh.net:5060   N       003397232069    1785    Registered  Tue, 24 Mar 
 1 SIP registrations.
 ```
 
--   Vous pouvez vérifiez également dans le Manager :
-    -   Connectez-vous à votre Espace Client OVH : <https://www.ovhtelecom.fr/espaceclient/>
+-   Vous pouvez vérifier également dans le Manager :
+    -   Connectez-vous à votre espace client OVHcloud : <https://www.ovhtelecom.fr/espaceclient/>
     -   Cliquez sur le lien "**Accéder à l'ancienne interface**".
     -   Cliquez sur l'icône "**Téléphonie**".
     -   Cliquez sur votre "**Trunk**".
@@ -157,7 +157,7 @@ siptrunk.ovh.net:5060   N       003397232069    1785    Registered  Tue, 24 Mar 
 
 Vous obtenez alors l'information du REGISTER :
 
-![](images/2015-03-24-093012_723x400_scrot2023.png){.thumbnail}
+![Vérification du register du trunk dans le Manager](images/2015-03-24-093012_723x400_scrot2023.png){.thumbnail}
 
 ------------------------------------------------------------------------
 
@@ -195,7 +195,7 @@ Dans cette partie du fichier, l'utilisateur est créé et le numéro présenté 
 
 ### Configuration du dialplan {#configuration-du-dialplan}
 
-Le dialplan est une partie importante : la stratégie de gestion des appels entrants et sortants y est définie. Par sécurité, dans le dialplan des appels sortants, seul les numéros de fixes (01 à 05 et 09) peuvent êtres appelés, ainsi que les numéros de mobiles. Le fichier contenant le dialplan est **extensions.conf** :
+Le dialplan est une partie importante : la stratégie de gestion des appels entrants et sortants y est définie. Par sécurité, dans le dialplan des appels sortants, seuls les numéros de fixes (01 à 05 et 09) peuvent être appelés, ainsi que les numéros de mobiles. Le fichier contenant le dialplan est **extensions.conf** :
 
 **extensions.conf**
 

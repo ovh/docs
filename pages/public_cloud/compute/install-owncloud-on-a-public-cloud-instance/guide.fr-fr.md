@@ -32,10 +32,21 @@ Avant de suivre ce tutoriel, veuillez vous référer à ces guides :
 
 ## Prérequis
 
-- Avoir une [instance de Public Cloud](/links/public-cloud/prices) dans [l’espace client d’OVH](/links/manager) avec Ubuntu 18.04 installé
+- Avoir une [instance de Public Cloud](/links/public-cloud/prices) avec Ubuntu 18.04 installé
 - Accès root SSH sur l'Instance
 - [Stockage d'objets](/links/public-cloud/object-storage) dans le même datacenter que votre Public Cloud Instance (facultatif)
 - [Disque supplémentaire de haute performance](https://www.ovh.com/fr/public-cloud/storage/additional-disks/) dans le même datacenter que votre instance de Public Cloud (en option)
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Accès à l’espace client OVHcloud
+
+- **Lien direct :** [Projets Public Cloud](/links/control-panel/publiccloud-projects)
+- **Pour accéder à vos services :** `Public Cloud`{.action} > Sélectionnez votre projet
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## Instructions
 Dans cette section, vous trouverez des instructions étape par étape pour installer ownCloud sur votre Instance de Public Cloud d’OVH.
@@ -59,7 +70,7 @@ apt-get install apache2 mariadb-server php libapache2-mod-php php-mysql php-bz2 
 
 #### Étape 2: Terminer l'installation sécurisée de MariaDB
 ```sh
-sudo mysql_secure_installation
+sudo mariadb-secure-installation
 ```
 
 #### Étape 3: Télécharger ownCloud

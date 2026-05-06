@@ -1,7 +1,7 @@
 ---
 title: "Tutorial - Installing a CMS manually on your Web Hosting plan"
 excerpt: "Find out more about some of the compatible CMS for Web Hostings"
-updated: 2025-10-28
+updated: 2026-03-31
 ---
 
 ## Objective
@@ -12,7 +12,7 @@ This tutorial will help you install a CMS (Content Management System) like WordP
 >
 > OVHcloud provides services that you are responsible for with regard to their configuration and management. It is therefore your responsibility to ensure that they function properly.
 >
-> This tutorial is designed to help you with common tasks. Nevertheless, we recommend contacting a [specialist provider](/links/partner) or the publisher of the CMS you have chosen to install if you encounter any difficulties. We will not be able to assist you. You can find more information in the [Go further](#go-further) section of this tutorial.
+> This tutorial is designed to help you with common tasks. However, we recommend contacting a [specialist provider](/links/partner) or the publisher of the CMS you have chosen to install if you encounter any difficulties. We will not be able to assist you. You can find more information in the [Go further](#go-further) section of this tutorial.
 >
 > Find below the links to the respective official pages of the CMS mentioned above:
 >
@@ -37,7 +37,7 @@ This tutorial will help you install a CMS (Content Management System) like WordP
 
 - An [OVHcloud web hosting plan](/links/web/hosting) that contains at least one database
 - A [domain name](/links/web/domains)
-- Access to the [OVHcloud Control Panel](/links/manager)
+
 
 ## Instructions
 
@@ -101,14 +101,14 @@ You can find more information on our [PrestaShop module page](/links/web/hosting
 
 **SPIP** is a CMS designed primarily for publishing and managing editorial websites such as online newspapers or magazines. Based on PHP and based on an SQL database, it facilitates the creation of websites enriched with textual, graphical and/or multimedia content.
 
-- [SPIP](https://www.spip.net/en_section25.html) official website
+- [SPIP](https://www.spip.net/en_rubrique25.html) official website
 
 > [!warning]
 >
 > Whichever CMS you choose, please note that OVHcloud will not provide assistance with using these CMSs. If you encounter any difficulties, contact the publisher of the CMS you have chosen directly using the links indicated earlier in this tutorial.
 >
 
-### Step 1: Prepare the installation <a name="step1"></a>
+### 1 - Prepare the installation <a name="step1"></a>
 
 To install a CMS on your [web hosting plan](/links/web/hosting), you will need to make some preparations.
 
@@ -127,15 +127,14 @@ Refer to our documentation which describes [how to create a website on your web 
 
 - Make sure that the domain name you will use to access your CMS, along with its subdomain “www”, is mapped to the IP address of your [web hosting plan](/links/web/hosting).
 
-To retrieve the IP address of your Web Hosting plan, log in to your [OVHcloud Control Panel](/links/manager) in the `Web Cloud`{.action} section, then select your Web Hosting plan in the `Hosting`{.action} section.<br>
-In the `General information`{.action} box on your right, you will find the IP address of your web hosting plan in the `IPv4`{.action} form.
-
-If your domain’s active DNS zone is managed in your [OVHcloud Control Panel](/links/manager), compare your hosting plan’s IP address with the one in your domain’s DNS zone, using our [OVHcloud DNS zones](/pages/web_cloud/domains/dns_zone_edit) documentation .
+To retrieve the IPv4 (or IPv6) address of your Web Hosting plan, refer to our guide "[Web Hosting - List of IP addresses by cluster](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP)".
 
 > [!warning]
 >
-> If you have activated the `CDN`{.action} or `Country IP`{.action} options with your domain, use the appropriate IP address by referring to our documentation listing [all shared hosting IP addresses](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP).
+> If you have used a country-based geolocated IP address option or enabled a CDN option between your domain name and your web hosting plan, use the appropriate IP address indicated in the guide mentioned above.
 >
+
+If your domain’s active DNS zone is managed in your [OVHcloud Control Panel](/links/control-panel/web-dns-zone), compare your hosting plan’s IP address with the one in your domain’s DNS zone, using our [OVHcloud DNS zones](/pages/web_cloud/domains/dns_zone_edit) documentation.
 
 If you are unable to perform these checks, contact the hosting provider for your active DNS zone to update the pointing of your domain name.
 
@@ -169,7 +168,7 @@ Use our documentation to [create a database from your web hosting plan](/pages/w
 
 If you have a Cloud Databases web hosting plan in MySQL or MariaDB and you would like to use it to manually install your CMS, please refer to our guide on [creating a database on a Cloud Databases web service](/pages/web_cloud/web_cloud_databases/create-db-and-user-on-db-server#creating-a-database).
 
-Once you have created the database, retrieve the connection settings (server, database name, user name, and password) and save them for [step 3](#step3) in this guide.
+Once you have created the database, retrieve the connection settings (server, database name, user name, and password) and save them for [part 3](#step3) in this guide.
 
 > [!primary]
 >
@@ -183,7 +182,7 @@ Once you have created the database, retrieve the connection settings (server, da
 > - To connect to a database on a Web Cloud Databases solution, see [this guide](/pages/web_cloud/web_cloud_databases/connecting-to-database-on-database-server).
 >
 
-### Step 2: Start the installation
+### 2 - Start the installation
 
 #### 2.1 Retrieve your CMS source files
 
@@ -242,7 +241,7 @@ Enter the destination **CMS** folder to extract your files to that folder.
 
 #### 2.3 Move the source files from the CMS folder to the root folder of your web hosting plan
 
-Once you have unpacked the files in your **CMS** folder, [log in to your storage space via FTP](/pages/web_cloud/web_hosting/ftp_connection) using [FTP FileZilla client](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide) and copy the files from the **CMS** folder to the root folder you defined on your hosting in [step 1](#step1) of this guide.
+Once you have unpacked the files in your **CMS** folder, [log in to your storage space via FTP](/pages/web_cloud/web_hosting/ftp_connection) using [FTP FileZilla client](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide) and copy the files from the **CMS** folder to the root folder you defined on your hosting in [part 1](#step1) of this guide.
 
 Below is an example with the CMS *WordPress*:
 
@@ -255,14 +254,14 @@ Below is an example with the CMS *WordPress*:
 
 >[!primary]
 >
-> If the root folder you defined was not created automatically during the actions described in [step 1](#step1), you can create it via FileZilla.
+> If the root folder you defined was not created automatically during the actions described in [part 1](#step1), you can create it via FileZilla.
 >
 > It may take a few minutes to upload files to your web hosting plan.
 >
 > Once the transfer is complete, check that all the elements in the local **CMS** folder have been correctly transferred to the root folder on your Web Hosting plan.
 >
 
-**Special Case**: If you have a limited internet speed and/or a hosting plan **Pro** or higher, you can use **SSH** connection to put your CMS source files in your Web Hosting plan’s storage space. 
+**Special Case**: If you have a limited Internet speed and/or a hosting plan **Pro** or higher, you can use **SSH** connection to put your CMS source files in your Web Hosting plan’s storage space. 
 
 To log in to your hosting plan via SSH, please refer to our guide on [Accessing a web hosting plan via SSH](/pages/web_cloud/web_hosting/ssh_on_webhosting).
 
@@ -376,7 +375,7 @@ rmdir ./CMS/
 >> ```
 >> 
 
-### Step 3: Finalise the installation <a name="step3"></a>
+### 3 - Finalise the installation <a name="step3"></a>
 
 > [!success]
 >

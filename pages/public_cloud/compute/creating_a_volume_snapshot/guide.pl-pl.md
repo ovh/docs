@@ -22,12 +22,22 @@ Tworzenie snapshota dodatkowego wolumenu zwykle odpowiada dwóm celom:
 
 ## Wymagania początkowe
 
-- Dostęp do [Panelu client OVHcloud](/links/manager)
 - Wolumen [Block storage](/pages/public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance) utworzony w Twoim projekcie [Public Cloud](/pages/public_cloud/public_cloud_cross_functional/create_a_public_cloud_project)
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Ścieżka nawigacji:** `Public Cloud`{.action} > Wybierz projekt
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## W praktyce
 
-Zaloguj się do [Panelu client OVHcloud](/links/manager), przejdź do sekcji `Public Cloud`{.action} i wybierz odpowiedni projekt Public Cloud. Następnie kliknij `Block Storage`{.action} na pasku nawigacji po lewej stronie w **Storage i Backup**.
+Kliknij `Block Storage`{.action} na pasku nawigacji po lewej stronie w **Storage i Backup**.
 
 ![Snapshoty wolumenów](images/volume_snapshot01.png){.thumbnail}
 

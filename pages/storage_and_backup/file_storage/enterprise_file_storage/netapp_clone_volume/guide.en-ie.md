@@ -44,6 +44,17 @@ It is also possible to isolate the corrupted data and try to resolve the cause o
 - Access to the [OVHcloud API](/links/api)
 - An Enterprise File Storage volume with a `manual` snapshot
 
+<!-- CP-NAV-START:storage-enterprise-file-storage -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Enterprise File Storage](/links/control-panel/storage-enterprise-file-storage)
+- **Navigation path:** `Bare Metal Cloud`{.action} > `Enterprise File Storage`{.action}
+
+---
+<!-- CP-NAV-END:storage-enterprise-file-storage -->
+
 > [!primary]
 >
 > You can create a volume and a `manual` snapshot through the [OVHcloud API](/links/api) or the [OVHcloud Control Panel](/links/manager).

@@ -1,6 +1,6 @@
 ---
-title: "Come recuperare l'accesso al server in caso di perdita della password dell'utente"
-excerpt: "Scopri come configurare una nuova password per un account utente su un sistema operativo GNU/Linux in modalità Rescue OVHcloud"
+title: "Recuperare una password persa su un server dedicato"
+excerpt: "Reimposta una password utente persa su un server dedicato GNU/Linux tramite la modalità rescue OVHcloud per ripristinare l'accesso"
 updated: 2025-10-02
 ---
 
@@ -20,7 +20,7 @@ In questo caso, è possibile accedere al server tramite la modalità Rescue di O
 ## Prerequisiti
 
 - Disporre di un [server dedicato](/links/bare-metal/bare-metal) o di un [VPS](/links/bare-metal/vps) nel proprio account OVHcloud
-- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
+
 
 > [!primary]
 >
@@ -129,4 +129,4 @@ L'account utente modificato ora ha accesso al server con la nuova password.
 
 [Configurazione degli account utente e dell'accesso root su un server](/pages/bare_metal_cloud/dedicated_servers/changing_root_password_linux_ds)
 
-Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.
+Contatta la nostra [Community di utenti](/links/community).

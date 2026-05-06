@@ -15,6 +15,17 @@ updated: 2024-10-21
 - Access to the vSphere management interface.
 - Virtual machines with a Hardware 13 version (minimum).
 
+<!-- CP-NAV-START:privatecloud-vmware-vsphere -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [VMware vSphere](/links/control-panel/privatecloud-vmware-vsphere)
+- **Navigation path:** `Hosted Private Cloud`{.action} > `Managed VMware vSphere`{.action} > Select your vSphere service
+
+---
+<!-- CP-NAV-END:privatecloud-vmware-vsphere -->
+
 ## Instructions
 
 The purpose of this guide is to explain the details of implementing virtual machine encryption on the VMware on OVHcloud Hosted Private Cloud solution, using a storage strategy that uses a **Standard Key Provider** or external KMS.
@@ -45,11 +56,7 @@ Here, it is the value to the right of the equal sign:
 
 #### Via the OVHcloud Control Panel
 
-Log in to the [OVHcloud Control Panel](/links/manager) and go to the `Hosted Private Cloud`{.action} section.
-
-Click `VMware`{.action} in the services bar on the left-hand side, then select the VMware service concerned.
-
-From the main page of the service, click `Security`{.action}.
+Click [this link](/links/control-panel/privatecloud-vmware-vsphere) to access the `VMware vSphere`{.action} section, then select your service and click `Security`{.action}.
 
 ![Manager Add Kms](/pages/assets/screens/control_panel/product-selection/hosted-private-cloud/vmware/security/add_kms.png){.thumbnail}
 

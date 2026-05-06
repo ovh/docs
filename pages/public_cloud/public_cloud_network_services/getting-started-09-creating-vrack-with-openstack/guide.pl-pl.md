@@ -24,6 +24,18 @@ Zanim zaczniesz, zapoznaj się z tymi przewodnikami, aby poprawnie skonfigurowa�
 
 ## W praktyce
 
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Ścieżka nawigacji:** `Public Cloud`{.action} > Wybierz projekt
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
+
+
 ### Prezentacja zawartości
 
 - [Etap 1: Aktywacja i zarządzanie usługą vRack](#activating-vrack)

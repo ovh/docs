@@ -1,7 +1,7 @@
 ---
 title: Increasing the size of an additional disk
 excerpt: 'Find out how to increase the size of an additional volume and enlarge its main partition'
-updated: 2025-04-28
+updated: 2026-02-26
 ---
 
 <style>
@@ -28,8 +28,18 @@ If you have reached the maximum capacity on your additional disk, you can add mo
 
 - A [Public Cloud instance](/links/public-cloud/public-cloud) in your Public Cloud project
 - An [additional disk](/pages/public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance) created in your project
-- Access to the [OVHcloud Control Panel](/links/manager)
 - Administrative (sudo) access to your instance via SSH (Linux) or RDP (Windows)
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Navigation path:** `Public Cloud`{.action} > Select your project
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## Instructions
 
@@ -110,8 +120,6 @@ Click on `...`{.action} in the row of the volume and select `Edit`{.action}.
 In the popup window, enter the new size for the volume and click on `Modify the volume`{.action}.
 
 ![control panel](images/increase-disk-03.png){.thumbnail}
-
-Ensure that the volume is attached to your instance before continuing. If not, click on `...`{.action} in the row of the volume and select `Attach to instance`{.action}.
 
 ### Extending the partition (Linux instance)
 
@@ -201,7 +209,11 @@ tmpfs 982M 0 982M 0% /sys/fs/cgroup
 /dev/vdb1 69G 52M 66G 1% /mnt/disk
 ```
 
+Once this is completed, detach the volume from the instance and reattach it to ensure the updated QoS settings (IOPS and bandwidth) are properly applied.
+
 ### Extending the partition (Windows instance)
+
+Before proceeding, reattach the volume to the instance. Click on `...`{.action} in the row of the volume and select `Attach to instance`{.action}.
 
 Establish a remote desktop (RDP) connection to your Windows instance.
 
@@ -228,6 +240,8 @@ Click on `Finish`{.action} to complete the process.
 The resized volume now includes the additional disk space.
 
 ![windows](images/resize-win-05.png){.thumbnail}
+
+Once this is completed, detach the volume from the instance and reattach it to ensure the updated QoS settings (IOPS and bandwidth) are properly applied.
 
 ## Go further
 

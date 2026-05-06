@@ -1,7 +1,7 @@
 ---
 title: Exchange - Configurar una cuenta de correo en Mail de macOS
 excerpt: Cómo configurar una cuenta Exchange en Mail de macOS
-updated: 2025-04-28
+updated: 2026-01-22
 ---
 
 <style>
@@ -36,17 +36,6 @@ Es posible configurar sus cuentas Exchange en el cliente de correo electrónico 
 
 ### Añadir la cuenta <a name="addaccount"></a>
 
-> [!warning]
->
-> En nuestro ejemplo, utilizamos el nombre del servidor: ex?.mail.ovh.ca. Debe reemplazar el "?" por el número que designa el servidor del servicio Exchange.
->
-> 1. Conéctese al [área de cliente de OVHcloud](/links/manager).
-> 1. Acceda al apartado `Web Cloud`{.action}.
-> 1. En la sección `MICROSOFT`, haga clic en `Exchange`{.action}.
-> 1. Seleccione la plataforma correspondiente.
-> 1. El nombre del servidor puede verse en el recuadro **Conexión** de la pestaña `Información General`{.action}.
->
-
 - **La primera vez que inicie la aplicación**, aparecerá un asistente de configuración que le pedirá que seleccione su tipo de cuenta.
 
 - **Si ya tiene una cuenta configurada**, haga clic en `Mail`{.action} en la barra de menús de la parte superior de la pantalla y luego en `Cuentas`{.action}.
@@ -65,7 +54,7 @@ Es posible configurar sus cuentas Exchange en el cliente de correo electrónico 
 >> ![mailmac](images/mail-mac-exchange03.png){.thumbnail .w-400 .h-600}
 >>
 > **Paso 4**
->> Escriba: <br><br>- Dirección de correo electrónico: deje su dirección de correo electrónico completa<br>- Nombre de usuario: deje su dirección de correo electrónico completa <br>- Contraseña: deje su **contraseña**<br> - URL interna: **ex?.mail.ovh.net** (sustituya el **?** por [el número de su servidor Exchange](#addaccount))<br>- URL externa: **ex?.mail.ovh.net** (sustituya el **?** por [el número de su servidor Exchange](#addaccount))<br><br>
+>> Escriba: <br><br>- Dirección de correo electrónico: deje su dirección de correo electrónico completa<br>- Nombre de usuario: deje su dirección de correo electrónico completa <br>- Contraseña: deje su **contraseña**<br> - URL interna: **ex.mail.ovh.net**<br>- URL externa: **ex.mail.ovh.net**<br><br>
 >>
 >> > [!warning]
 >> >
@@ -102,8 +91,6 @@ Si su cuenta de correo ya está configurada y debe acceder a los parámetros de 
 > Para más información sobre la configuración de una dirección de correo electrónico desde la aplicación Mail en macOS, consulte [el centro de ayuda de Apple](https://support.apple.com/es-es/guide/mail/mail35803/mac).
 
 [FAQ e-mails](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/faq-emails)
-
-[Configurar una cuenta Email Pro en Mail de macOS](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_mail_macos)
 
 [Configurar una cuenta MX plan en Mail de macOS](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_mail_macos)
 

@@ -15,9 +15,19 @@ In this tutorial you will:
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](/links/manager)
 - A [Public Cloud Instance](/links/public-cloud/public-cloud) in your OVHcloud account
 - [Pulumi CLI](https://www.pulumi.com/docs/install/) installed
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Navigation path:** `Public Cloud`{.action} > Select your project
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 **Before you begin**
 
@@ -59,6 +69,8 @@ A state is composed of several files inside a `.pulumi` folder:
 ## Instructions
 
 ### Creating an Object Storage container/bucket
+
+<!-- CP-STEPS-START:create-object-storage -->
 
 First, you need to have an Object Storage container. If you don't already have one, please consult the guide [Creating an Object Storage container](/pages/storage_and_backup/object_storage/s3_getting_started_with_object_storage).
 
@@ -125,6 +137,8 @@ As you can see, in both solutions, we defined all the needed parameters to acces
 Now you can code your Pulumi program and after running the `pulumi up` command, your Pulumi state file will be stored in an OVHcloud Object Storage container.
 
 ![OVHcloud pulumi bucket with state files](images/pulumi-bucket-with-state-files.png){.thumbnail}
+
+<!-- CP-STEPS-END:create-object-storage -->
 
 ## Go further
 

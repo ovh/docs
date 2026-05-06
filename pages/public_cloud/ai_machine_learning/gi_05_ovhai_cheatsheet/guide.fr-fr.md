@@ -1,5 +1,5 @@
 ---
-title: ovhai CLI - Mémo des commandes (EN)
+title: CLI - Mémo des commandes (EN)
 excerpt: Retrouvez les principales commandes de la CLI ovhai
 updated: 2023-05-12
 ---

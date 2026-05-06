@@ -1,6 +1,6 @@
 ---
 title: "OVHcloud products ISO27k certifications"
-updated: 2024-02-20
+updated: 2026-01-27
 ---
 
 ## Objective
@@ -23,31 +23,37 @@ We monitor the new versions of ISO27017, ISO27018 and ISO27701 actually under re
 | **Product** | **Certified** | 
 | --- | ---  | 
 | Dedicated Server | yes | 
-| Nutanix on OVHcloud | yes | 
+| Dedicated Server - 3AZ | yes |
+| Dedicated Pod - SecNumCloud | yes |
 | File Storage | yes | 
 | Block Storage | yes | 
-| Managed Private Cloud | yes | 
-| Private Cloud SecNumCloud | yes | 
-| NAS-HA | yes | 
+| Managed Mutualized Virtualization | No | 
+| Managed Dedicated Cloud | yes | 
+| Managed Dedicated Cloud - SecNumCloud | yes | 
 | Public Cloud Instances | yes | 
-| AI Deploy | yes | 
-| AI Notebooks | yes | 
-| AI Training | yes | 
-| Kubernetes | yes |
-| Search engine software platform | yes | 
-| Timeseries | yes |
-| In Memory Database | yes|
-| Document Database | yes| 
-| Relational Database | yes | 
-| Message broker | yes | 
+| Public Cloud Instances-3AZ | yes | 
+| Managed Containers | yes |
+| Notebooks Interface | yes | 
+| Managed Distributed Computing Cluster | yes |
+| Managed Orchestration | yes |
+| Managed Search engine software platform | yes | 
+| Managed Timeseries | yes | 
+| Managed In Memory Database | yes|
+| Managed Document Database | yes| 
+| Managed Relational Database | yes |
+| Managed Column-Oriented Database | yes | 
+| Managed Message broker | yes | 
 | Object Storage | yes | 
-| Private Registry | yes | 
+| Object Storage-3AZ | yes | 
+| Managed OCI artifact Registry | yes | 
 | Cold Storage | yes  | 
-| Logs Data Platform | yes | 
-| Grafana | yes | 
-| Web Hosting | no | 
-| DevOps platform | no | 
-| Emails on mutualized infrastructures | no |
-| Emails on private infrastructures | yes | 
-| Web Cloud Private Database | no | 
-| Domain Name | no | 
+| Managed Log Manager | yes | 
+| Managed Data Visualization | yes | 
+| Managed Web Hosting | yes | 
+| Hosted Mailbox | No | 
+| Managed E-mail Server on Mutualized Infrastructure | no |
+| Managed Dedicated E-mail Infrastructure | yes | 
+| Managed Database System for Web Hosting | no | 
+| Domain Name | yes | 
+| Unified Data Platform | yes | 
+

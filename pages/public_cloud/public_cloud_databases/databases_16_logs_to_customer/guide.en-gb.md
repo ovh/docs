@@ -1,5 +1,5 @@
 ---
-title: Public Cloud Databases - How to set up logs forwarding
+title: Set up logs forwarding for Public Cloud Databases
 excerpt: Find out how to forward logs of your database service to your Logs Data Platform data stream
 updated: 2024-10-28
 ---
@@ -12,17 +12,28 @@ Public Cloud managed databases allow you to send logs of your service to your ow
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](/links/manager)
 - A [Public Cloud database service](/links/public-cloud/databases) up and running
 - Access to the [OVHcloud API](/links/console)
 - A Logs Data Platform account within this OVHcloud account with at least one destination stream configured
     - If you are not familiar with all the LDP *Stream* configuration possibilities, simply create a new one with the default options (indexing & websocket enabled, long-term storage disabled) for the purpose of this guide.
 - A running database service
 
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Navigation path:** `Public Cloud`{.action} > Select your project
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
+
 ## Instructions
 
 ### Create your subscription
 
+<!-- CP-STEPS-START:create-your-subscription -->
 > [!tabs]
 > Via the OVHcloud Control Panel
 >> On the database instance page, go to the `Logs`{.action} section and click the `Subscribe`{.action} button.
@@ -59,7 +70,7 @@ Public Cloud managed databases allow you to send logs of your service to your ow
 >>
 >> **Retrieve your `clusterId`:**
 >>
->> Log in to the [OVHcloud Control Panel](/links/manager), open the `Public Cloud`{.action} section and select the Public Cloud project concerned. In the left-hand menu, click on `Databases`{.action}, then choose the database instance you want to manage.
+>> In the left-hand menu, click on `Databases`{.action}, then choose the database instance you want to manage.
 >>
 >> In the cluster details, you can find the `Service ID` field, which corresponds to the cluster ID.
 >>
@@ -90,9 +101,11 @@ Public Cloud managed databases allow you to send logs of your service to your ow
 >>
 >> The logs will then start to be forwarded to your LDP stream.
 >>
+<!-- CP-STEPS-END:create-your-subscription -->
 
 ### Find logs in Graylog
 
+<!-- CP-STEPS-START:find-logs-in-graylog -->
 On the LDP page, click the `sample-data-stream`{.action} button (the last data stream modified when you previously subscribed to it), or click the `Graylog`{.action} button.
 
 ![LDP database go to graylog](images/ldp_database_go_to_graylogs.png){.thumbnail}
@@ -124,11 +137,13 @@ You can find this `HostID` in your OVHcloud Control Panel:
 
 - Find the Cluster ID formatted as a UUID (AAAAAAAA-BBBB-CCCC-DDDDDDDDDDDD)
 - `HostID` is the first part of the UUID (AAAAAAAA)
+<!-- CP-STEPS-END:find-logs-in-graylog -->
 
 ### Delete subscription
 
 You have 2 methods to delete a subscription:
 
+<!-- CP-STEPS-START:delete-subscription -->
 > [!tabs]
 > Via the OVHcloud Control Panel
 >> In the subscription page of the database instance, click the `Unsubscribe`{.action} button.
@@ -144,6 +159,7 @@ You have 2 methods to delete a subscription:
 >> > @api {v1} /cloud DELETE /cloud/project/{serviceName}/database/{engine}/{clusterId}/log/subscription/{subscriptionId}
 >> >
 >>
+<!-- CP-STEPS-END:delete-subscription -->
 
 - If you delete your database service, all subscriptions of this service are deleted automatically.
 

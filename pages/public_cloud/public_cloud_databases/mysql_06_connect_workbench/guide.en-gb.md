@@ -1,5 +1,5 @@
 ---
-title: MySQL - Connect with MySQL Workbench
+title: Connect using Workbench for Public Cloud Databases for MySQL
 excerpt: Connect to your Public Cloud Databases for MySQL using MySQL Workbench
 updated: 2022-03-08
 ---

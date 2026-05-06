@@ -1,6 +1,6 @@
 ---
 title: Gestire i crediti SMS e attivare la ricarica automatica
-excerpt: Come gestire i tuoi crediti SMS OVHcloud
+excerpt: Scopri come gestire i crediti SMS, attivare la ricarica automatica e trasferire crediti tra i tuoi account SMS OVHcloud
 updated: 2023-02-09
 ---
 
@@ -15,8 +15,18 @@ Questa guida ti spiega cosa sono i crediti SMS, come ricaricarli in modo automat
 ## Prerequisiti
 
 - Disporre di un account SMS OVHcloud attivo
-- Avere accesso alle [API OVHcloud](/links/api)(soltanto per trasferire i crediti)
-- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager), sezione `Télécom`{.action} > `SMS`{.action}
+- Avere accesso alle [API OVHcloud](/links/api) (soltanto per trasferire i crediti)
+
+<!-- CP-NAV-START:telecom-sms -->
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [SMS](/links/control-panel/telecom-sms)
+- **Percorso di navigazione:** `Telecom`{.action} > `SMS`{.action} > Seleziona il tuo SMS account
+
+---
+<!-- CP-NAV-END:telecom-sms -->
 
 ![Spazio Cliente Telecom SMS](/pages/assets/screens/control_panel/product-selection/telecom/tpl-telecom-03-en-sms.png){.thumbnail}
 
@@ -24,16 +34,16 @@ Questa guida ti spiega cosa sono i crediti SMS, come ricaricarli in modo automat
 
 ### Pack crediti SMS
 
-0,7 credito SMS corrisponde al costo per l’invio di 1 SMS in Italia, la tariffa è decrescente in base al numero di crediti SMS acquistati in una sola volta . 
+0,7 credito SMS corrisponde al costo per l’invio di 1 SMS in Italia, la tariffa è decrescente in base al numero di crediti SMS acquistati in una sola volta.
 
-Per visualizzare la lista completa dei Pack SMS clicca [qui](/links/telecom/sms).
+Per visualizzare la lista completa dei Pack SMS consulta la [pagina dei Pack SMS](/links/telecom/sms).
 
-**Ad esempio, per l’acquisto di un pack di 100 crediti SMS, il costo di ciascun credito è pari a 0,042 € IVA esclusa :**
+**Ad esempio, per l’acquisto di un pack di 100 crediti SMS, il costo di ciascun credito è pari a 0,042 € IVA esclusa:**
 
 Il costo per l’invio di 1 SMS in Italia è pari a 0,7 credito. Con questo pack, è possibile inviare fino a 142 SMS in Italia.<br>
-Il costo per l’invio di 1 SMS in India è pari a 0,4 crediti. Con questo pack è possibile inviare fino a 250 SMS i, India.
+Il costo per l’invio di 1 SMS in India è pari a 0,4 crediti. Con questo pack è possibile inviare fino a 250 SMS in India.
 
-Per visualizzare i costi, in crediti, per l’invio dei tuoi SMS in base alle loro destinazioni, clicca [qui](/links/telecom/sms-prices).
+Per visualizzare i costi, in crediti, per l’invio dei tuoi SMS in base alle loro destinazioni, consulta la [pagina dei costi SMS](/links/telecom/sms-prices).
 
 > [!primary]
 >
@@ -44,7 +54,7 @@ Per visualizzare i costi, in crediti, per l’invio dei tuoi SMS in base alle lo
 
 ### Ricarica automatica
 
-Per disporre sempre di credito sufficiente sul tuo account SMS, è possibile e attivare la ricarica automatica. Non appena viene raggiunta la soglia minima di crediti rimanenti, un nuovo numero di crediti viene automaticamente aggiunto al tuo account SMS.
+Per disporre sempre di credito sufficiente sul tuo account SMS, è possibile attivare la ricarica automatica. Non appena viene raggiunta la soglia minima di crediti rimanenti, un nuovo numero di crediti viene automaticamente aggiunto al tuo account SMS.
 
 > [!warning]
 >
@@ -52,8 +62,6 @@ Per disporre sempre di credito sufficiente sul tuo account SMS, è possibile e a
 >
 > - sul tuo account OVHcloud è presente e validato un metodo di pagamento di tipo SEPA.
 > - il tuo servizio SMS deve avere almeno 2 mesi di anzianità.
-
-Per attivare la ricarica automatica, accedi allo [Spazio Cliente OVHcloud](/links/manager), clicca sulla scheda `ADSL e telefono`{.action} e poi sulla sezione `SMS`{.action}. Seleziona l’account SMS su cui attivare la ricarica automatica.
 
 Clicca sul menu `Opzioni`{.action} (1) e poi su `Ricarica automatica`{.action} (2).
 
@@ -78,7 +86,7 @@ Infine, compila i campi richiesti:
 > È possibile trasferire i crediti soltanto tra gli account SMS di uno stesso identificativo cliente OVHcloud. Il trasferimento dei crediti tra due diversi identificativi OVHcloud non è consentito.
 >
 
-Nello Spazio Cliente OVHcloud seleziona uno dei tuoi account SMS e clicca su `Trasferire crediti`{.action} dalla scheda `Home page`{.action}.
+Clicca su `Trasferire crediti`{.action} dalla scheda `Home page`{.action}.
 
 ![trasferimento di crediti SMS](images/credit-transfer01.png){.thumbnail}
 

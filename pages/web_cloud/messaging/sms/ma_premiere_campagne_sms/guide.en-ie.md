@@ -1,23 +1,31 @@
 ---
 title: Launching your first SMS campaign
-excerpt: Find out how to launch an SMS campaign
+excerpt: Find out how to create and launch your first SMS campaign using the integrated tools available in the OVHcloud Control Panel
 updated: 2022-08-05
 ---
 
 ## Objective
 
-OVHcloud provides tools integrated into the OVHcloud Control Panel, for sending SMS messages. This guide will help you get familiar with these tools, and use them to send your first SMS campaign.
+OVHcloud provides tools in the OVHcloud Control Panel for sending SMS messages. This guide helps you get familiar with these tools and send your first SMS campaign.
 
 ## Requirements
 
 - an OVHcloud SMS account with SMS credits
-- You must be logged in to [OVHcloud Control Panel](/links/manager), in the `Telecom`{.action} section, then `SMS`{.action}.
+
+<!-- CP-NAV-START:telecom-sms -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [SMS](/links/control-panel/telecom-sms)
+- **Navigation path:** `Telecom`{.action} > `SMS`{.action} > Select your SMS account
+
+---
+<!-- CP-NAV-END:telecom-sms -->
 
 ![SMS Telecom Control Panel](/pages/assets/screens/control_panel/product-selection/telecom/tpl-telecom-03-en-sms.png){.thumbnail}
 
 ## Instructions
-
-Log in to the [OVHcloud Control Panel](/links/manager), then select `Telecom`{.action}. Next, click `SMS`{.action} and select your SMS account.
 
 The toolbar and shortcuts will give you access to the main features for sending SMS campaigns.
 
@@ -59,7 +67,7 @@ In the `Message and Campaign`{.action} tab, you can access the sending options, 
 
 ![firstsms](images/firstsms02.png){.thumbnail}
 
-To send a unit SMS message via the OVHcloud Control Panel, you can refer to [this guide](/pages/web_cloud/messaging/sms/envoyer_des_sms_depuis_mon_espace_client).
+To send a unit SMS message via the OVHcloud Control Panel, you can refer to the guide on [Sending SMS messages via the Control Panel](/pages/web_cloud/messaging/sms/envoyer_des_sms_depuis_mon_espace_client).
 
 To send an SMS campaign, click `Campaign Management`{.action}, then `Create a campaign`{.action}.
 

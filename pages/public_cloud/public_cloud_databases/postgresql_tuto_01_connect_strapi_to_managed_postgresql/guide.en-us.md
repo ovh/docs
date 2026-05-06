@@ -1,5 +1,5 @@
 ---
-title: PostgreSQL - Tutorial - Build a Strapi app connected to OVHcloud Managed PostgreSQL service
+title: Build a Strapi app connected to Public Cloud Databases for PostgreSQL
 excerpt: "Find out how to build a Strapi application connected to an OVHcloud Managed PostgreSQL service"
 updated: 2021-01-11
 ---
@@ -21,13 +21,24 @@ You need to be able to order a database solution in the OVHcloud Control Panel, 
 
 As [Strapi](https://strapi.io/) is written in Javascript, packages like [nodejs](https://nodejs.org/), [nvm](https://github.com/nvm-sh/nvm) and [yarn](https://classic.yarnpkg.com/en/) are necessary for this tutorial.
 
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Navigation path:** `Public Cloud`{.action} > Select your project
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
+
 ## Instructions
 
 ### Create a PostgreSQL database
 
 #### Subscribing to the service
 
-Log in to your [OVHcloud Control Panel](/links/manager) and switch to `Public Cloud`{.action} in the top navigation bar. After selecting your Public Cloud project, click on `Databases`{.action} in the left-hand navigation bar under **Storage**.
+Click on `Databases`{.action} in the left-hand navigation bar under **Storage**.
 
 Click on the `Create a database instance`{.action} button. (`Create a service`{.action} if your project already contains databases.)
 

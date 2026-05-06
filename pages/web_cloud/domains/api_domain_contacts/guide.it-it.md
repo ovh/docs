@@ -1,7 +1,7 @@
 ---
 title: "Manage Contacts of a Domain Name"
 excerpt: "Use the OVHcloud public API to manage contacts for your domain names"
-updated: 2022-05-05
+updated: 2026-02-10
 ---
 
 <!-- Reminder to put at the beginning of each page -->
@@ -33,23 +33,23 @@ It is important to note the differences between _nichandles_ (Nic or OVHcloud ac
 
 For most extensions, there are 3 different contacts which can be configured on the registry:
 
-- **Administrator**: contact managing the domain (owner and technical contacts management). They are the main contact points of the registrar.
-- **Technical**: contact managing the technical side of the domain (in particular, the DNS zone).
-- **Owner**: physical or legal person owning the domain name, sometimes called the **registrant**. They are constrained by [eligibility rules](/pages/web_cloud/domains/api_domain_rules). They are legally responsible of the domain name.
+- **Administrator**: contact managing the domain name (holder and technical contacts management). They are the main contact points of the registrar.
+- **Technical**: contact managing the technical side of the domain name (in particular, the DNS zone).
+- **Holder**: physical or legal person holding the domain name, sometimes called the **registrant**. They are constrained by [eligibility rules](/pages/web_cloud/domains/api_domain_rules). They are legally responsible of the domain name.
 
 For example, John contacts a web agency to create his small company's website. In this case, the web agency will organize contacts as follows:
 
 - Administrator: the web agency
 - Technical: the web agency
-- Owner: John
+- Holder: John
 
 The technical contact is often the same as the administrator.
-As for the owner, it has to be John. In case of dispute with the web agency, the fact that he is the owner will be legally acknowledged and will allow to recover management of his domain name.
+As for the holder, it has to be John. In case of dispute with the web agency, the fact that he is the holder will be legally acknowledged and will allow to recover management of his domain name.
 
 ### OVHcloud Nichandle
 
 OVHcloud nichandles represent OVHcloud accounts which can be used to connect to OVHcloud website and API.
-A nichandle may be associated to any OVHcloud service (domain, DNS, server, other...) as:
+A nichandle may be associated to any OVHcloud service (domain name, DNS, server, etc.) as:
 
 - **Nic admin**: service administrator, who can perform any possible action on the service;
 - **Nic tech**: designated by the service Nic admin, they can update some technical service data;
@@ -71,9 +71,9 @@ The converse is not true, however. If an administrator or technical contact is u
 The billing nichandle is not defined on the registry/Whois.
 This contact is used only for billing purposes, for the related OVHcloud service representing the domain name.
 
-#### Owner Contact
+#### Holder Contact
 
-The registry/Whois owner contact is not related to any nichandle.
+The registry/Whois holder contact is not related to any nichandle.
 As a consequence, it cannot be used to connect to the OVHcloud website or API.
 
 It is represented in the OVHcloud API by another entity, the `domain.Contact` object.
@@ -137,18 +137,18 @@ These tasks can be monitored or updated by calling the following API routes:
 > @api {v1} /me POST /me/task/contactChange/{id}/refuse
 > @api {v1} /me POST /me/task/contactChange/{id}/resendEmail
 
-## Owner Contact Management
+## Holder Contact Management
 
-The owner contact is represented and handled by routes `/me/contact` and `/domain/contacts`.
+The holder contact is represented and handled by routes `/me/contact` and `/domain/contacts`.
 In the domain names context, we stronly recommend the exclusive use of `/domain/contacts` routes.
 
 > [!primary]
 >
 > Both endpoints share the same identifiers.
 > Historically, all actions could be performed using `/me/contact`. However, some business rules related only to domain names have forced us to deploy specific API endpoints under the `/domain/contact` root URL.
-> They add a domain-specific layer to `/me/contact` data, to add extra fields necessary for some extensions.
+> They add a domain name specific layer to `/me/contact` data, to add extra fields necessary for some extensions.
 
-When ordering a domain name, a **new owner contact** is created using the provided data, in order to always have a **unique identifier** per domain name.
+When ordering a domain name, a **new holder contact** is created using the provided data, in order to always have a **unique identifier** per domain name.
 This makes subsequent updates easier, avoiding to change another domain name data without wanting to.
 
 ### Contact Handling
@@ -170,52 +170,52 @@ The following API routes can be used to handle domain contacts.
 >
 > Some fields being read-only, a contact change procedure may be required to modify them.
 
-### Owner Contact Change
+### Holder Contact Change
 
-Deciding whether to change the owner depends on two things.
+Deciding whether to change the holder depends on two things.
 
 - The extension is regulated by ICANN rules (gTLDs and NewgTLDs), or by a country's administration (ccTLDs).
-- The legal status of the owner (individual, company, …).
+- The legal status of the holder (individual, company, …).
 
-The simplest situation is the one of gTLDs, regulated by ICANN. In that case, any of the following data change is considered an owner change:
+The simplest situation is the one of gTLDs, regulated by ICANN. In that case, any of the following data change is considered an holder change:
 
 - first/last name for a physical person, or organization name for a legal person;
 - email address.
 
 As a consequence, these fields are read-only if the contact is associated to at least a domain name.
-Changing the owner on a gTLD is free.
+Changing the holder on a gTLD is free.
 
 For the other extensions, the [eligibility rules](/pages/web_cloud/domains/api_domain_rules) API will return each field status.
-For the sake of consistency, we still consider that an email address change is an owner change.
+For the sake of consistency, we still consider that an email address change is an holder change.
 
 > [!primary]
 >
-> According to the extension (and to the registry rules), an owner change may have several consequences on a domain name.
-> Indeed, in some cases, changing the owner of a domain name automatically renews it for 1 year, which is why sometimes you may have to pay for an owner change request.
-> Some others may need manual validation of the owner data.
+> According to the extension (and to the registry rules), an holder change may have several consequences on a domain name.
+> Indeed, in some cases, changing the holder of a domain name automatically renews it for 1 year, which is why sometimes you may have to pay for an holder change request.
+> Some others may need manual validation of the holder data.
 
-In order to preserve a consistent usage of the OVHcloud API, we have chosen to represent owner change as a dedicated, orderable product.
+In order to preserve a consistent usage of the OVHcloud API, we have chosen to represent holder change as a dedicated, orderable product.
 In most cases, this order will be free, but it allows a unique initialization process for all extensions.
 
 This process consists in two main steps.
 
-1. Owner change order
+1. Holder change order
     1. Price selection
     2. Cart creation
-    3. Addition of the owner change action to the cart
-    4. Creation of the new owner contact, association with the domain name
+    3. Addition of the holder change action to the cart
+    4. Creation of the new holder contact, association with the domain name
     5. Order validation and payment
-2. Owner change processing
+2. Holder change processing
     1. Creation of the `DomainTrade` task
-    2. Emails are sent to the old and new owners
-    3. Validation tokens are confirmed by both owners
-    4. Owner data change on the registry and Whois
+    2. Emails are sent to the old and new holders
+    3. Validation tokens are confirmed by both holders
+    4. Holder data change on the registry and Whois
 
-#### Owner Change Order
+#### Holder Change Order
 
 The following steps are described with more details in the [domain name order](/pages/web_cloud/domains/api_domain_order) documentation page.
 
-##### Step 1: Owner change information fetch
+##### Step 1: Holder change information fetch
 
 > [!api]
 >
@@ -264,10 +264,10 @@ The following steps are described with more details in the [domain name order](/
 
 The main elements of this object are:
 
-- `prices` : owner change price
-- `family` : value `"trade"` indicates that the product represents an owner change
-- `planCode` : commercial plan for the owner change, should equal `"$extension-trade"`
-- `pricingMode` : commercial sub-plan for the owner change
+- `prices` : holder change price
+- `family` : value `"trade"` indicates that the product represents an holder change
+- `planCode` : commercial plan for the holder change, should equal `"$extension-trade"`
+- `pricingMode` : commercial sub-plan for the holder change
 
 ##### Step 2: Cart creation, addition of the product to the cart
 
@@ -277,7 +277,7 @@ Cart creation can be performed with:
 >
 > @api {v1} /order POST /order/cart
 
-Then, the owner change product can be added to the cart:
+Then, the holder change product can be added to the cart:
 
 > [!api]
 >
@@ -287,10 +287,10 @@ Then, the owner change product can be added to the cart:
 | -------------- | ------------------------------------------------------- |
 | `serviceName`  | Domain name                                             |
 | `cartId`       | Cart identifier                                         |
-| `duration`     | Duration, always **P0Y** for an owner change            |
+| `duration`     | Duration, always **P0Y** for an holder change            |
 | `planCode`     | Code fetched with the step-1 GET (`"$extension-trade"`) |
 | `pricingMode`  | Pricing mode fetched with the GET                       |
-| `quantity`     | Quantity, always **1** for an owner change              |
+| `quantity`     | Quantity, always **1** for an holder change              |
 
 ##### Step 3: Add required configurations
 
@@ -360,7 +360,7 @@ This step is probably the most important of the order process, and can be perfor
 
 It allows to get the final purchase order, without generating it (it is a "dry-run").
 
-This call also checks that eligibility rules are satisfied by the owner data.
+This call also checks that eligibility rules are satisfied by the holder data.
 
 ##### Step 5: Order validation
 
@@ -373,9 +373,9 @@ This call also checks that eligibility rules are satisfied by the owner data.
 | `autoPayWithPreferredPaymentMethod` | yes      | ""      | Used to automatically pay the purchase order with the default payment method of the Nic |
 | `waiveRetractationPeriod`           | yes      | ""      | Required for a domain name, it is used to waive your right to retract                   |
 
-#### Owner Change Processing
+#### Holder Change Processing
 
-Once the purchase order has been validated and paid, the order is handled internally until an owner change task named `DomainTrade` is eventually created.
+Once the purchase order has been validated and paid, the order is handled internally until an holder change task named `DomainTrade` is eventually created.
 This task can be found using the following API route:
 
 > [!api]
@@ -384,7 +384,7 @@ This task can be found using the following API route:
 
 More details about task management can be seen [on this page](/pages/web_cloud/domains/api_domain_tasks).
 
-The `DomainTrade` task is in charge of sending emails to the former and to the new owners, to confirm that the process can take place.
+The `DomainTrade` task is in charge of sending emails to the former and to the new holders, to confirm that the process can take place.
 These emails contain a validation link (secured with a private token).
 
-Once these tokens are validated, the task will perform the owner change and update the registry and/or the Whois with the new owner data.
+Once these tokens are validated, the task will perform the holder change and update the registry and/or the Whois with the new holder data.

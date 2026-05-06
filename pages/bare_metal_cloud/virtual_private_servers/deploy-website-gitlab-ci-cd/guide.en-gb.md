@@ -27,7 +27,7 @@ Automating the deployment of your website on a VPS greatly simplifies the manage
 
 ## Instructions
 
-**Contents:**
+**Content overview**
 
 - [Configure SSH access for GitLab CI/CD](#configure-ssh)
 - [Add private key to GitLab](#add-private-key-gitlab)

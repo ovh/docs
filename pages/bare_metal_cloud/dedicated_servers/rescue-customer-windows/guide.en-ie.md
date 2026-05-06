@@ -1,6 +1,6 @@
 ---
-title: "How to activate and use Windows rescue mode"
-excerpt: "Find out how to use the OVHcloud rescue system for Windows to troubleshoot your dedicated server"
+title: "Windows Rescue Mode on a Dedicated Server"
+excerpt: "Boot your Windows dedicated server into OVHcloud rescue mode to troubleshoot, repair, or reset passwords."
 updated: 2025-01-28
 ---
 
@@ -45,13 +45,21 @@ The option **Windows customer rescue system** is only available for dedicated se
 
 - Microsoft Windows installed on your [dedicated server](/links/bare-metal/bare-metal)
 - At least 16 GB of RAM installed on the server
-- Access to the [OVHcloud Control Panel](/links/manager)
+
+<!-- CP-NAV-START:baremetal-dedicated-servers -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Dedicated Servers](/links/control-panel/baremetal-dedicated-servers)
+- **Navigation path:** `Bare Metal Cloud`{.action} > `Dedicated servers`{.action} > Select your server
+
+---
+<!-- CP-NAV-END:baremetal-dedicated-servers -->
 
 ## Instructions
 
 ### Activating rescue mode for Windows
-
-Log in to your [OVHcloud Control Panel](/links/manager), open the `Bare Metal Cloud`{.action} section and then `Dedicated servers`{.action}.
 
 Click on your server's name to open the `General information`{.action} tab.
 
@@ -59,13 +67,13 @@ Click on your server's name to open the `General information`{.action} tab.
 
 In the **General information** box, click the button `...`{.action} next to `Boot`. Click on `Edit`{.action} in the context menu.
 
-![Modify boot mode](images/rescue-mode-001.png){.thumbnail}
+![Edit boot option in the General information section](images/rescue-mode-001.png){.thumbnail}
 
 On the page **Change the netboot**, select `Boot in rescue mode`{.action}.
 
 Select `Windows customer rescue system`{.action} in the drop-down menu.
 
-![Modify boot mode](images/manager-rescue-windows-menu.png){.thumbnail width="800"}
+![Select Windows customer rescue system from the netboot menu](images/manager-rescue-windows-menu.png){.thumbnail width="800"}
 
 The rescue mode notification email including its login details will be sent to the contact email address of your OVHcloud account. To use a different email address, enter it in the field `Send new login details to the following email address`.
 
@@ -176,39 +184,39 @@ Once logged in to the Windows customer rescue system, you need to import (mount)
 > 
 > If you require professional assistance with server administration, consider the details in the [Go further](#gofurther) section of this guide.
 
-| ![Windows disk management](images/rescue-disk-mgmt1.png){.thumbnail} |
+| ![Open Disk Management from the Start Menu](images/rescue-disk-mgmt1.png){.thumbnail} |
 |---|
 | Right-click on the `Start Menu`{.action} button and open `Disk Management`{.action}. |
 
-| ![Windows disk management](images/rescue-disk-mgmt2.png){.thumbnail width="700"} |
+| ![Server disks shown as Offline in Disk Management](images/rescue-disk-mgmt2.png){.thumbnail width="700"} |
 |---|
 | `Disk 0` contains the rescue system (volume `C:`). The disks of your Windows server will be displayed as `Offline`. |
 
-| ![Windows disk management](images/rescue-disk-mgmt3.png){.thumbnail} |
+| ![Set disks to Online via the context menu](images/rescue-disk-mgmt3.png){.thumbnail} |
 |---|
 | Right-click on each disk and select `Online`{.action} from the context menu. |
 
-| ![Windows disk management](images/rescue-disk-mgmt4.png){.thumbnail} |
+| ![Disks recognized as Foreign in Disk Management](images/rescue-disk-mgmt4.png){.thumbnail} |
 |---|
 | The server disks are now [recognized by the rescue system as `Foreign`](https://learn.microsoft.com/en-us/troubleshoot/windows-server/backup-and-storage/troubleshoot-disk-management#a-dynamic-disks-status-is-foreign), a status indicating in this case that the attached disks belong to a different operating system. |
 
-| ![Windows disk management](images/rescue-disk-mgmt5.png){.thumbnail} |
+| ![Import Foreign Disks option in the context menu](images/rescue-disk-mgmt5.png){.thumbnail} |
 |---|
 | Right-click on a disk and select `Import Foreign Disks...`{.action} from the context menu. |
 
-| ![Windows disk management](images/rescue-disk-mgmt6.png){.thumbnail} |
+| ![Select disks to import dialog](images/rescue-disk-mgmt6.png){.thumbnail} |
 |---|
 | If applicable, select the disks to import. Click `OK`{.action}. |
 
-| ![Windows disk management](images/rescue-disk-mgmt7.png){.thumbnail} |
+| ![Confirm foreign disk import dialog](images/rescue-disk-mgmt7.png){.thumbnail} |
 |---|
 | Click `OK`{.action}. |
 
-| ![Windows disk management](images/rescue-disk-mgmt8.png){.thumbnail} |
+| ![Mirrored disks resynching after import](images/rescue-disk-mgmt8.png){.thumbnail} |
 |---|
 | In this example, the two disks of the server are mirrored, therefore the status `Resynching` will be displayed. This is the normal process; the resynchronisation will continue once the server is rebooted into its installed OS. |
 
-| ![Windows disk management](images/rescue-disk-mgmt9.png){.thumbnail} |
+| ![Open the Windows partition to access files](images/rescue-disk-mgmt9.png){.thumbnail} |
 |---|
 | To access your files, right-click on the Windows partition of your `Disk 1` and select `Open`{.action} from the context menu. |
 

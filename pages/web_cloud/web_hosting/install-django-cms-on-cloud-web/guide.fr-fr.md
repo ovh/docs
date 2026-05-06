@@ -15,11 +15,21 @@ L’[hébergement Cloud Web OVHcloud](/links/web/hosting-cloud-web-offer) permet
 ## Prérequis
 
 - Disposer d’un [hébergement Cloud Web OVHcloud](/links/web/hosting-cloud-web-offer).
-- Être connecté à votre [espace client](/links/manager), partie `Web Cloud`{.action}.
 - Ce que vous devez savoir:
     - Les bases de l’écosystème Python.
     - Se connecter en SSH.
     - Éditer un fichier en ligne de commande, via Vim, Emacs ou Nano par exemple.
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Hébergements](/links/control-panel/web-hosting)
+- **Pour accéder à vos services :** `Web Cloud`{.action} > `Hébergements`{.action} > Sélectionnez votre hébergement web
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## En pratique
 

@@ -1,8 +1,22 @@
 ---
 title: "Web Hosting - List of IP addresses by cluster"
 excerpt: "Find out the appropriate IP addresses to use with your OVHcloud Web Hosting plan"
-updated: 2026-01-07
+updated: 2026-02-23
 ---
+
+<style>
+details>summary {
+    color:rgb(33, 153, 232) !important;
+    cursor: pointer;
+}
+details>summary::before {
+    content:'\25B6';
+    padding-right:1ch;
+}
+details[open]>summary::before {
+    content:'\25BC';
+}
+</style>
 
 ## Objective
 
@@ -22,32 +36,40 @@ In this guide you can find all of the IP addresses for OVHcloud web hosting plan
 ## Requirements
 
 - An [OVHcloud Web Hosting plan](/links/web/hosting)
-- Access to the [OVHcloud Control Panel](/links/manager)
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Hosting plans](/links/control-panel/web-hosting)
+- **Navigation path:** `Web Cloud`{.action} > `Hosting plans`{.action} > Select your web hosting plan
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## Instructions
 
-To find out on which web hosting cluster your service is located, click on the tabs below to view each of the **3** steps.
+<!-- CP-STEPS-START:instructions-find-cluster -->
+To find out on which web hosting cluster your service is located, click on the tabs below to view each of the **2** steps.
 
 > [!tabs]
 > **Step 1**
 >>
->> Log in to the [OVHcloud Control Panel](/links/manager), then go to the `Web Cloud`{.action} section.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Step 2**
->>
->> Click the `Hosting plans`{.action} menu, then select the web hosting plan concerned.
+>> Go to the [Hosting plans](/links/control-panel/web-hosting) page, then select the web hosting plan concerned.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Step 3**
+> **Step 2**
 >>
 >> In the **General information** box on the page that appears, retrieve the cluster number under the mention **Cluster** (3 digits between `0` and `9`).
 >>
 >> ![Cluster and Filer number](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-cluster-and-filer.png){.thumbnail}
+<!-- CP-STEPS-END:instructions-find-cluster -->
 
-### Cluster 024
+**Click below on the cluster number where your web hosting is located to display the corresponding IP addresses.**
+
+/// details | Cluster 024
 
 #### Cluster IP addresses per country
 
@@ -79,27 +101,9 @@ If you need the **outgoing IP address** of the Web Hosting cluster (gateway), us
 91.134.248.230
 ```
 
-### Cluster 051
+///
 
-#### Cluster IP addresses per country
-
-|Country|Country Code|IPv4|IPv6|
-|---|---|----|---|
-|Canada|CA|51.161.122.78|2607:5300:202:0:0::51|
-
-If you have activated the **Shared CDN** option on your Web Hosting, use this IP address:
-
-```bash
-46.105.204.51
-```
-
-If you need the **outgoing IP address** of the Web Hosting cluster (gateway), use this IP address:
-
-```bash
-51.161.94.36
-```
-
-### Cluster 100
+/// details | Cluster 100
 
 #### Cluster IP addresses per country
 
@@ -131,7 +135,9 @@ If you need the **outgoing IP address** of the Web Hosting cluster (gateway), us
 54.36.142.130
 ```
 
-### Cluster 102
+///
+
+/// details | Cluster 102
 
 #### Cluster IP addresses per country
 
@@ -162,7 +168,9 @@ If you need the **outgoing IP address** of the Web Hosting cluster (gateway), us
 5.39.29.130
 ```
 
-### Cluster 103
+///
+
+/// details | Cluster 103
 
 #### Cluster IP addresses per country
 
@@ -193,7 +201,9 @@ If you need the **outgoing IP address** of the Web Hosting cluster (gateway), us
 5.135.52.162
 ```
 
-### Cluster 105
+///
+
+/// details | Cluster 105
 
 #### Cluster IP addresses per country
 
@@ -224,7 +234,9 @@ If you need the **outgoing IP address** of the Web Hosting cluster (gateway), us
 5.135.37.162
 ```
 
-### Cluster 106
+///
+
+/// details | Cluster 106
 
 #### Cluster IP addresses per country
 
@@ -255,7 +267,9 @@ If you need the **outgoing IP address** of the Web Hosting cluster (gateway), us
 5.135.47.98
 ```
 
-### Cluster 107
+///
+
+/// details | Cluster 107
 
 #### Cluster IP addresses per country
 
@@ -286,7 +300,9 @@ If you need the **outgoing IP address** of the Web Hosting cluster (gateway), us
 5.135.52.18
 ```
 
-### Cluster 110
+///
+
+/// details | Cluster 110
 
 #### Cluster IP addresses per country
 
@@ -317,7 +333,9 @@ If you need the **outgoing IP address** of the Web Hosting cluster (gateway), us
 5.135.39.194
 ```
 
-### Cluster 111
+///
+
+/// details | Cluster 111
 
 #### Cluster IP addresses per country
 
@@ -348,7 +366,9 @@ If you need the **outgoing IP address** of the Web Hosting cluster (gateway), us
 5.135.38.50
 ```
 
-### Cluster 112
+///
+
+/// details | Cluster 112
 
 #### Cluster IP addresses per country
 
@@ -379,7 +399,9 @@ If you need the **outgoing IP address** of the Web Hosting cluster (gateway), us
 5.39.53.162
 ```
 
-### Cluster 113
+///
+
+/// details | Cluster 113
 
 #### Cluster IP addresses per country
 
@@ -410,7 +432,9 @@ If you need the **outgoing IP address** of the Web Hosting cluster (gateway), us
 5.135.39.18
 ```
 
-### Cluster 114
+///
+
+/// details | Cluster 114
 
 #### Cluster IP addresses per country
 
@@ -441,7 +465,9 @@ If you need the **outgoing IP address** of the Web Hosting cluster (gateway), us
 5.135.42.162
 ```
 
-### Cluster 115
+///
+
+/// details | Cluster 115
 
 #### Cluster IP addresses per country
 
@@ -472,7 +498,9 @@ If you need the **outgoing IP address** of the Web Hosting cluster (gateway), us
 5.135.41.162
 ```
 
-### Cluster 117
+///
+
+/// details | Cluster 117
 
 #### Cluster IP addresses per country
 
@@ -503,7 +531,9 @@ If you need the **outgoing IP address** of the Web Hosting cluster (gateway), us
 5.135.50.34
 ```
 
-### Cluster 120
+///
+
+/// details | Cluster 120
 
 #### Cluster IP addresses per country
 
@@ -535,7 +565,9 @@ If you need the **outgoing IP address** of the Web Hosting cluster (gateway), us
 5.135.48.162
 ```
 
-### Cluster 121
+///
+
+/// details | Cluster 121
 
 #### Cluster IP addresses per country
 
@@ -567,7 +599,9 @@ If you need the **outgoing IP address** of the Web Hosting cluster (gateway), us
 5.135.48.114
 ```
 
-### Cluster 123
+///
+
+/// details | Cluster 123
 
 #### Cluster IP addresses per country
 
@@ -599,7 +633,9 @@ If you need the **outgoing IP address** of the Web Hosting cluster (gateway), us
 5.135.41.82
 ```
 
-### Cluster 126
+///
+
+/// details | Cluster 126
 
 #### Cluster IP addresses per country
 
@@ -631,7 +667,9 @@ If you need the **outgoing IP address** of the Web Hosting cluster (gateway), us
 5.135.42.226
 ```
 
-### Cluster 127
+///
+
+/// details | Cluster 127
 
 #### Cluster IP addresses per country
 
@@ -663,7 +701,9 @@ If you need the **outgoing IP address** of the Web Hosting cluster (gateway), us
 5.135.54.114
 ```
 
-### Cluster 128
+///
+
+/// details | Cluster 128
 
 #### Cluster IP addresses per country
 
@@ -695,7 +735,9 @@ If you need the **outgoing IP address** of the Web Hosting cluster (gateway), us
 5.135.37.210
 ```
 
-### Cluster 129
+///
+
+/// details | Cluster 129
 
 #### Cluster IP addresses per country
 
@@ -727,7 +769,9 @@ If you need the **outgoing IP address** of the Web Hosting cluster (gateway), us
 5.135.48.82
 ```
 
-### Cluster 130
+///
+
+/// details | Cluster 130
 
 #### Cluster IP addresses per country
 
@@ -759,7 +803,9 @@ If you need the **outgoing IP address** of the Web Hosting cluster (gateway), us
 5.135.43.82
 ```
 
-### Cluster 131
+///
+
+/// details | Cluster 131
 
 #### Cluster IP addresses per country
 
@@ -791,7 +837,9 @@ If you need the **outgoing IP address** of the Web Hosting cluster (gateway), us
 5.135.42.194
 ```
 
-### Cluster 151
+///
+
+/// details | Cluster 151
 
 #### Cluster IP addresses per country
 
@@ -810,6 +858,8 @@ If you need the **outgoing IP address** of the Web Hosting cluster (gateway), us
 ```bash
 15.235.26.178
 ```
+
+///
 
 ## Go further
 

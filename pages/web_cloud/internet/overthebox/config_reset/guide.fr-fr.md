@@ -48,7 +48,7 @@ Attendez quelques minutes afin qu'**OverTheBox** soit de nouveau opérationnelle
 
 > [!success]
 >
-> Votre OvertheBox est maintenant réinitialisée, vous pouvez la réinstaller en suivant la procédure décrite dans le guide suivant :
+> Votre OverTheBox est maintenant réinitialisée, vous pouvez la réinstaller en suivant la procédure décrite dans le guide suivant :
 >
 > [Comment installer OverTheBox ?](/pages/web_cloud/internet/overthebox/plus_itv2_installation)
 >
@@ -69,7 +69,7 @@ Attendez quelques minutes afin qu'**OverTheBox** soit de nouveau opérationnelle
 >>
 >> Il est possible de réinitialiser l'**OverTheBox** depuis le CLI, accessible depuis une connexion SSH.
 >>
->> - Connectez vous en SSH à votre **OverTheBox** :
+>> - Connectez-vous en SSH à votre **OverTheBox** :
 >>
 >> ```console
 >> ssh root@overthebox.ovh
@@ -81,11 +81,11 @@ Attendez quelques minutes afin qu'**OverTheBox** soit de nouveau opérationnelle
 >> ```
 >>
 
-Attendez quelques minutes afin qu' **OverTheBox** soit de nouveau opérationnelle.
+Attendez quelques minutes afin qu'**OverTheBox** soit de nouveau opérationnelle.
 
 > [!success]
 >
-> Votre OvertheBox est maintenant réinitialisée, vous pouvez la réinstaller en suivant la procédure décrite dans le guide suivant :
+> Votre OverTheBox est maintenant réinitialisée, vous pouvez la réinstaller en suivant la procédure décrite dans le guide suivant :
 >
 > [Comment installer OverTheBox ?](/pages/web_cloud/internet/overthebox/plus_itv2_installation)
 >

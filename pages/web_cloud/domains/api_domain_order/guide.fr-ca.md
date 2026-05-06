@@ -1,7 +1,7 @@
 ---
 title: "Commander un nom de domaine"
-excerpt: "Découvrez comment utiliser l'API publique OVHcloud pour commander vos noms de domaines"
-updated: 2023-08-30
+excerpt: "Découvrez comment utiliser l'API publique OVHcloud pour commander vos noms de domaine"
+updated: 2026-02-10
 ---
 
 <!-- Rappel à mettre au début de chaque page -->
@@ -107,7 +107,7 @@ Notez bien la propriété `cartId`, elle nous servira tout au long des étapes s
 
 ## Récupération des offres disponibles <a name="fetch-available-offers"></a>
 
-La seconde étape consiste à récupérer les offres accessibles pour un domaine.
+La seconde étape consiste à récupérer les offres accessibles pour un nom de domaine.
 
 > [!api]
 >
@@ -193,28 +193,28 @@ La seconde étape consiste à récupérer les offres accessibles pour un domaine
 
 Il y a 4 valeurs à retenir ici :
 
-1. `action` : celle réalisable sur le domaine, ça peut être un `create` ou un `transfer`
-2. `duration` : ce champ représente l'unité de période sur laquelle il est possible de commander le domaine, au format ISO 8601. Pour un domaine, P1Y (**P**eriod **1** **Y**ear) équivaut à une période d'un an, P2Y une période de deux ans, etc.
-3. `offerId` : c'est le nom de l'offre qu'il faudra mettre lors de l'ajout du domaine dans le panier
-4. `pricing-mode` : c'est le détail de l'offre qu'il faudra également mettre lors de l'ajout du domaine dans le panier
+1. `action` : action réalisable sur le nom de domaine, cela peut être un `create` ou un `transfer`
+2. `duration` : ce champ représente l'unité de période sur laquelle il est possible de commander le nom de domaine, au format ISO 8601. Pour un nom de domaine, P1Y (**P**eriod **1** **Y**ear) équivaut à une période d'un an, P2Y une période de deux ans, etc.
+3. `offerId` : c'est le nom de l'offre qu'il faudra mettre lors de l'ajout du nom de domaine dans le panier
+4. `pricing-mode` : c'est le détail de l'offre qu'il faudra également mettre lors de l'ajout du nom de domaine dans le panier
 
-Pour déterminer le statut du domaine, on utilise la table de correspondance suivante, en fonction du pricing-mode.
+Pour déterminer le statut du nom de domaine, on utilise la table de correspondance suivante, en fonction du pricing-mode.
 
-| Pricing-mode                                     | Description                                                                                                                                                |
-| ------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `create-default`                                 | Le domaine est libre et au prix standard                                                                                                                   |
-| `create-premium`                                 | Le domaine est libre mais est un premium. Son prix est variable d'un domaine à l'autre                                                                     |
-| `transfer-default`                               | Le domaine n'est pas libre mais est transférable si vous en êtes le propriétaire. Son transfert est au prix standard                                       |
-| `transfer-premium`                               | Le domaine n'est pas libre mais est transférable si vous en êtes le propriétaire. C'est un domaine premium et son prix est variable d'un domaine à l'autre |
-| `transfer-aftermarket1`, `transfer-aftermarket2` | Le domaine est libre via un marché secondaire. Son prix est variable d'un domaine à l'autre                                                                |
+| Pricing-mode                                     | Description                                                                                                                                                           |
+| ------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `create-default`                                 | Le domaine est libre et au prix standard                                                                                                                              |
+| `create-premium`                                 | Le domaine est libre mais est un premium. Son prix est variable d'un nom de domaine à l'autre                                                                         |
+| `transfer-default`                               | Le domaine n'est pas libre mais est transférable si vous en êtes le titulaire. Son transfert est au prix standard                                                     |
+| `transfer-premium`                               | Le domaine n'est pas libre mais est transférable si vous en êtes le titulaire. C'est un nom de domaine premium et son prix est variable d'un nom de domaine à l'autre |
+| `transfer-aftermarket1`, `transfer-aftermarket2` | Le domaine est libre via un marché secondaire. Son prix est variable d'un nom de domaine à l'autre                                                                    |
 
 > [!primary]
 >
 > Pour le moment, bien que le retour soit un tableau, seulement une offre à la fois est disponible.
 > Dans le futur, il est possible que d'autres offres soient disponibles pour un même domaine.
-> Un domaine pourrait être à la fois transférable depuis un autre registrar ou bien disponible via un marché secondaire.
+> Un nom de domaine pourrait être à la fois transférable depuis un autre registrar ou bien disponible via un marché secondaire.
 
-## Ajout d'un domaine dans le panier
+## Ajout d'un nom de domaine dans le panier
 
 Tandis que la deuxième étape est optionnelle, celle-ci est obligatoire pour la commande d'un nom de domaine.
 L'appel suivant permet en effet d'ajouter le domaine désiré dans le panier :
@@ -227,10 +227,10 @@ L'appel suivant permet en effet d'ajouter le domaine désiré dans le panier :
 | ------------- | ----------- | ------------------------------------------------------------------------------------------------------------------------------------------------ |
 | `domain`      | oui         | Le nom de domaine souhaité                                                                                                                       |
 | `duration`    | non         | Période de réservation. Les valeurs supérieures à P1Y peuvent être acceptées sur certaines extensions, mais ne peuvent en aucun cas excéder P10Y |
-| `offerId`     | non         | Offre disponible pour le domaine. Une seule valeur est possible pour un domaine donné, voir ci-dessus pour la récupérer (déprécié)               |
+| `offerId`     | non         | Offre disponible pour le domaine. Une seule valeur est possible pour un nom de domaine donné, voir ci-dessus pour la récupérer (déprécié)        |
 | `quantity`    | non         | Seule la valeur "1" est autorisée                                                                                                                |
 | `planCode`    | non         | Représente le plan lié au domaine                                                                                                                |
-| `pricingMode` | non         | Représente l'offre liée au plan du domaine                                                                                                       |
+| `pricingMode` | non         | Représente l'offre liée au plan du nom de domaine                                                                                                |
 
 <!-- prettier-ignore -->
 > [!tabs]
@@ -489,8 +489,8 @@ Sans rentrer dans les détails de ce payload, il y a certaines choses à retenir
 >
 > La présence d'une zone DNS (représentée par deux lignes de détails) alors qu'elle n'a pas été ajoutée au panier peut surprendre.
 > Cela fait écho à une notion souvent méconnue, ou tout du moins mal comprise.
-> Une zone DNS et un domaine sont deux choses (produits) différentes.
-> Un nom de domaine peut très bien être chez OVHcloud alors que la zone peut être hébergée autre part.
+> Une zone DNS et un nom de domaine sont deux choses (produits) différentes.
+> Un nom de domaine peut très bien être enregistré chez OVHcloud alors que la zone peut être hébergée autre part.
 >
 > Cependant, les deux étant très liés et dans le but de faciliter la commande d'un nom de domaine, nous avons fait le choix d'installer automatiquement une zone à l'achat d'un nom de domaine.
 > Bien sûr, il est possible de commander soi-même une zone associée au domaine afin d'y ajouter des options telles que DNSSEC ou DNS Anycast.
@@ -506,7 +506,7 @@ Bien que cette opération puisse se faire dès la création du panier, elle devi
 
 ## Gestion des configurations <a name="configurations-management"></a>
 
-A ce stade, le panier contient un domaine. Il faut maintenant gérer les configurations requises afin de pouvoir, par la suite, valider le bon de commande.
+A ce stade, le panier contient un nom de domaine. Il faut maintenant gérer les configurations requises afin de pouvoir, par la suite, valider le bon de commande.
 
 ### Récupération des configurations requises <a name="required-configurations"></a>
 
@@ -558,15 +558,15 @@ Voici la liste exhaustive des différentes configurations requises pour un nom d
 | ------------------- | ------------------------------ | ----------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `ADMIN_ACCOUNT`     | string                         | non               | Représente le nic OVHcloud qui pourra administrer le domaine et sera associé en tant qu'admin sur le Whois. Si vide, le nic connecté à l'API sera pris par défaut. La valeur attendue doit être un nic valide sous la forme xxx-ovh                                                                        |
 | `TECH_ACCOUNT`      | string                         | non               | Représente le nic OVHcloud qui pourra gérer techniquement le domaine et sera associé en tant que tech sur le Whois. Si vide, le nic connecté à l'API sera pris par défaut. La valeur attendue doit être un nic valide sous la forme xxx-ovh                                                                |
-| `OWNER_CONTACT`     | /me/contact ou /domain/contact | non               | Représente le propriétaire du nom de domaine. Si vide, le nic admin sera pris en modèle pour créer un contact. La valeur attendue est une chaîne de caractères sous la forme `/me/contact/1234` ou `/domain/contact/12345`                                                                                 |
+| `OWNER_CONTACT`     | /me/contact ou /domain/contact | non               | Représente le titulaire du nom de domaine. Si vide, le nic admin sera pris en modèle pour créer un contact. La valeur attendue est une chaîne de caractères sous la forme `/me/contact/1234` ou `/domain/contact/12345`                                                                                 |
 | `DOMAIN_CONFIG`     | json                           | selon l'extension | Très rarement présent, il est lié à certaines contraintes d'extensions spécifiques (gov.uk par exemple)                                                                                                                                                                                                    |
 | `ACCEPT_CONDITIONS` | bool                           | oui si présent    | Indique que l'extension possède des conditions particulières à l'obtention de l'extension                                                                                                                                                                                                                  |
-| `REASON`            | string                         | oui si présent    | Il indique que le registre demande la raison pour laquelle le domaine veut être commandé. Cela concerne généralement des domaines réservés à des usages spécifiques (ville par exemple)                                                                                                                    |
+| `REASON`            | string                         | oui si présent    | Il indique que le registre demande la raison pour laquelle le domaine veut être commandé. Cela concerne généralement des noms de domaine réservés à des usages spécifiques (ville par exemple)                                                                                                                    |
 | `CLAIMS_NOTICE`     | string                         | oui si présent    | Indique si un avis de marque est présent sur le domaine. Si oui, alors le domaine est protégé par une marque et une notification sera alors envoyée au détenteur de la marque. Si le registrant n'est pas détenteur de la marque, le domaine pourra être supprimé par la suite sans remboursement possible |
-| `PROTECTED_CODE`    | string                         | oui si présent    | Certains domaines sont réservés par un registre et nécessitent un code spécifique pour débloquer leur obtention                                                                                                                                                                                            |
-| `OWNER_LEGAL_AGE`   | bool                           | oui               | Toujours présent, il s'agit d'une configuration de type "opt-in" afin de certifier que le registrant a l'âge légal pour posséder un nom de domaine                                                                                                                                                         |
-| `AUTH_INFO`         | string                         | non               | Code d'autorisation utilisé pour prouver que vous êtes le propriétaire du domaine. Utilisé pour les transferts de nom de domaines.                                                                                                                                                                         |
-| `DNS`               | string                         | non               | Permet de renseigner les serveurs DNS à utiliser pour le nom de domaine. Ceux-ci seront actifs dès la livraison du domaine. Pour renseigner les serveurs DNS, séparez-les par un `;` sans espaces. *Exemple* : `dnsXX.ovh.net;nsXX.ovh.net`                                                                                                                                                                         |
+| `PROTECTED_CODE`    | string                         | oui si présent    | Certains noms de domaine sont réservés par un registre et nécessitent un code spécifique pour débloquer leur obtention                                                                                                                                                                                            |
+| `OWNER_LEGAL_AGE`   | bool                           | oui               | Toujours présent, il s'agit d'une configuration de type "opt-in" afin de certifier que le registrant a l'âge légal pour être titulaire d'un nom de domaine                                                                                                                                                         |
+| `AUTH_INFO`         | string                         | non               | Code d'autorisation utilisé pour prouver que vous êtes le titulaire du nom de domaine. Utilisé pour les transferts de noms de domaine.                                                                                                                                                                         |
+| `DNS`               | string                         | non               | Permet de renseigner les serveurs DNS à utiliser pour le nom de domaine. Ceux-ci seront actifs dès la livraison du nom de domaine. Pour renseigner les serveurs DNS, séparez-les par un `;` sans espaces. *Exemple* : `dnsXX.ovh.net;nsXX.ovh.net`                                                                                                                                                                         |
 | `KEEP_DNS`          | bool                           | non               | Uniquement dans le cadre d'un transfert entrant de nom de domaine : permet d'indiquer que l'on souhaite conserver les serveurs DNS déclarés initialement chez l'ancien bureau d'enregistrement.                                                                                                                                                                 |
 
 > [!warning]
@@ -587,7 +587,7 @@ Voici la liste exhaustive des différentes configurations requises pour un nom d
 
 ### CRUD des configurations sur le produit
 
-Maintenant qu'on a récupéré la liste des configurations requises, il suffit de les ajouter sur le produit.
+Maintenant que nous avons récupéré la liste des configurations requises, il suffit de les ajouter sur le produit.
 
 #### Ajout d'une configuration <a name="add-configuration"></a>
 
@@ -663,7 +663,7 @@ Cette étape est sans doute la plus importante du processus de commande et se fa
 
 Elle permet de récupérer le bon de commande dans sa forme finale sans le générer (c'est un "dry-run"). L'objet retourné contient les contrats associés aux différents produits.
 
-Cet appel permet également de valider les configurations comme par exemple les éligibilités du propriétaire pour un nom de domaine.
+Cet appel permet également de valider les configurations comme par exemple les éligibilités du titulaire pour un nom de domaine.
 
 ## Création du bon de commande <a name="order-creation"></a>
 

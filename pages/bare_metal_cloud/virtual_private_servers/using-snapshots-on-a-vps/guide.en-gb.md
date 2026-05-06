@@ -12,41 +12,54 @@ Creating a snapshot is a fast and simple way to secure a functioning system befo
 
 > [!primary]
 >
-Before applying backup options, we recommend to consult the [product pages and FAQ](/links/bare-metal/vps-options) for pricing comparisons and further details.
+Before applying backup options, we recommend consulting the [product pages and FAQ](/links/bare-metal/vps-options) for pricing comparisons and further details.
 >
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](/links/manager)
 - An active [Virtual Private Server](/links/bare-metal/vps) in your OVHcloud account
 
 > [!warning]
 > This feature is currently unavailable for Virtual Private Servers in [Local Zones](/links/bare-metal/vps-lz).
 >
 
-## Instructions
+<!-- CP-NAV-START:baremetal-vps -->
+---
 
-Log in to your [OVHcloud Control Panel](/links/manager), open the `Bare Metal Cloud`{.action} section, and select your server under `Virtual Private Servers`{.action}.
+### OVHcloud Control Panel Access
+
+- **Direct link:** [VPS management](/links/control-panel/baremetal-vps)
+- **Navigation path:** `Bare Metal Cloud`{.action} > `Virtual private servers`{.action} > Select your VPS
+
+---
+<!-- CP-NAV-END:baremetal-vps -->
+
+## Instructions
 
 ### Step 1: Subscribing to the snapshot option
 
+<!-- CP-STEPS-START:subscribe-snapshot -->
 From the `Home`{.action} tab, scroll down to the box labelled **Backup**.  
 If "Snapshot" is already set to "Enabled", go directly to step 2. If "Snapshot" is not yet enabled, click on `...`{.action} next to the option "Snapshot" and in the context menu click on `Order`{.action}.
 
 ![snapshotvps](images/snapshot_vps_step1b.png){.thumbnail}
 
-In the next step, please take note of the pricing information, then click on `Order`{.action}. You will be guided through the order process and receive a confirmation email.
+In the next step, note the pricing information, then click `Order`{.action}. You will be guided through the order process and receive a confirmation email.
 
 To cancel the service option, click on the button `...`{.action} next to the option "Snapshot" and choose `Close`{.action} from the context menu.
 
 ![snapshotvps](images/snapshot_vps_cancel.png){.thumbnail}
+<!-- CP-STEPS-END:subscribe-snapshot -->
 
 ### Step 2: Taking a snapshot
 
+<!-- CP-STEPS-START:take-snapshot -->
 Once the option is enabled, click on `...`{.action} next to the option "Snapshot" and in the context menu click `Take a snapshot`{.action}. You can write a description that will be attached to your snapshot. The time it takes to create the snapshot depends on the storage space in use. Afterwards, refresh your page to see the timestamp of the creation in the **Backup** box.
+<!-- CP-STEPS-END:take-snapshot -->
 
 ### Step 3: Deleting or restoring a snapshot
 
+<!-- CP-STEPS-START:delete-restore-snapshot -->
 Since you can only have one snapshot activated at a time, the existing snapshot has to be deleted before creating a new one. Simply choose `Delete the snapshot`{.action} from the context menu.
 
 ![snapshotvps](images/snapshot_vps_step2.png){.thumbnail}
@@ -58,9 +71,11 @@ If you are sure that you would like to reset your VPS to the status of the snaps
 > Please note that when you restore a VPS from a snapshot, the snapshot will be deleted. If you wish to keep the same snapshot, you should take a new one before making changes to the restored system.
 >
 > If the snapshot function is too limited for your project, consider switching to the option [Automated Backups](/pages/bare_metal_cloud/virtual_private_servers/using-automated-backups-on-a-vps).
+<!-- CP-STEPS-END:delete-restore-snapshot -->
 
 ### Downloading a snapshot
 
+<!-- CP-STEPS-START:download-snapshot -->
 The current snapshot can be retrieved via download link. Click on `...`{.action} next to the option "Snapshot" and choose `Download the snapshot`{.action} from the context menu.
 
 ![snapshotvps](images/snapshot_vps03.png){.thumbnail}
@@ -77,6 +92,7 @@ In the popup window, click on `Generate download link`{.action}.
 After a few seconds, a success message appears. Below it, you can copy the complete download command with one click.
 
 ![snapshotvps](images/snapshot_vps05.png){.thumbnail}
+<!-- CP-STEPS-END:download-snapshot -->
 
 The size of the snapshot and the expiration date of the link will also be displayed.
 
@@ -102,7 +118,7 @@ temp_url_sig=f508cacda60256d5f211ddddf3f81130e935f0e4&temp_url_expires=167824757
 
 > [!primary]
 >
-> We recommend not to download snapshots directly to the VPS, to avoid using up the storage space.
+> We recommend not downloading snapshots directly to the VPS, to avoid using up the storage space.
 >
 > The downloaded file can be imported into your Public Cloud Project as an image (QCOW2) via [OpenStack](/products/public-cloud-compute-instance-management). (Find an example of use in [this guide](/pages/public_cloud/compute/upload_own_image).) 
 >
@@ -113,7 +129,7 @@ temp_url_sig=f508cacda60256d5f211ddddf3f81130e935f0e4&temp_url_expires=167824757
 
 Snapshots are instantaneous images of your running system ("live snapshot"). To ensure the availability of your system when the snapshot is created, the QEMU agent is used to prepare the filesystem for the process.
 
-The required *qemu-guest-agent* is not installed by default on most distributions. Moreover, licensing restrictions may prevent OVHcloud from including it in the available OS images. Therefore, it is best practice to verify and install the agent in case it is not activated on your VPS. Connect to your VPS via SSH and follow the instructions below, according to your operating system.
+The required *qemu-guest-agent* is not installed by default on most distributions. Moreover, licensing restrictions may prevent OVHcloud from including it in the available OS images. Therefore, it is best practice to verify and install the agent if it is not activated on your VPS. Connect to your VPS via SSH and follow the instructions below, according to your operating system.
 
 ##### **Debian-based distributions (Debian, Ubuntu)**
 

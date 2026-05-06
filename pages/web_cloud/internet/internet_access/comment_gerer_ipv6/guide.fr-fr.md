@@ -14,9 +14,16 @@ La pénurie d'IPv4 avançant de plus en plus, l'utilisation d'une IPv6 en parall
 
 - Disposer d'un [accès Internet xDSL ou FTTH OVHcloud](/links/telecom/offre-internet).
 - Disposer d'une machine connectée et configurée IPv6 (facultatif).
-- Être connecté à l’[espace client OVHcloud](/links/manager), partie `Télécom`{.action} :
+<!-- CP-NAV-START:telecom-xdsl-fttx -->
+---
 
-![espace client Telecom Accès Internet](/pages/assets/screens/control_panel/product-selection/telecom/tpl-telecom-01-fr-internet.png){.thumbnail}
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Accès Internet](/links/control-panel/telecom-xdsl-fttx)
+- **Pour accéder à vos services :** `Télécom`{.action} > `Offres Internet`{.action} > Sélectionnez votre accès
+
+---
+<!-- CP-NAV-END:telecom-xdsl-fttx -->
 
 ## En pratique
 
@@ -27,10 +34,8 @@ La pénurie d'IPv4 avançant de plus en plus, l'utilisation d'une IPv6 en parall
 > Par défaut, nous activons une IPv6 sur chacun de nos accès Internet livrés. Aucune manipulation n'est nécessaire si celle-ci est déjà activée.
 >
 
-1. Connectez-vous à votre [espace client OVHcloud](/links/manager) et cliquez sur `Télécom`{.action}.
-1. Cliquez sur `Offres Internet`{.action} puis sur le *Pack* contenant l'accès à Internet concerné.
-1. Cliquez sur votre accès à Internet FTTH ou xDSL dans le cadre `Accès Internet` à droite.
-1. Assurez-vous d'être positionné sur l'onglet `Mon accès`{.action}.
+<!-- CP-STEPS-START:activer-ipv6 -->
+Depuis votre [espace client OVHcloud](/links/control-panel/telecom-xdsl-fttx), cliquez sur votre accès à Internet FTTH ou xDSL dans le cadre `Accès Internet` à droite, puis positionnez-vous sur l'onglet `Mon accès`{.action}.
 
 Dans le cadre « Caractéristiques », reportez-vous aux éléments de la partie `IPs`. Vous retrouverez dans cette dernière les adresses IP associées à votre accès à Internet. Vérifiez l'état de l'adresse IPv6 afin de savoir si celle-ci est activée ou non :
 
@@ -46,9 +51,10 @@ Dans le cadre « Caractéristiques », reportez-vous aux éléments de la partie
 > Pour en savoir plus sur la configuration à distance du modem OVHcloud, veuillez consulter le guide suivant : [Configurer sa box à partir de l'espace client OVHcloud](/pages/web_cloud/internet/internet_access/configuration_du_modem_a_partir_de_votre_espace_client).
 >
 
-Pour activer ou désactiver l'IPv6 sur votre accès Internet, il suffit simplement de cocher ou décocher la case :
+Pour activer ou désactiver l'IPv6 sur votre accès Internet, il suffit de cocher ou décocher la case :
 
 ![IPv6 status](images/IPv6-activate.png){.thumbnail}
+<!-- CP-STEPS-END:activer-ipv6 -->
 
 ### Étape 2 : Vérifier que l'IPv6 fonctionne sur votre accès
 
@@ -60,7 +66,7 @@ Pour activer ou désactiver l'IPv6 sur votre accès Internet, il suffit simpleme
 >
 > Si vous ne possédez pas de modem OVHcloud, reportez-vous à la notice d'utilisation de votre modem afin d'utiliser votre IPv6.
 
-Afin de vérifier si vous avez bien l'IPv6 d'activée, vous pouvez utiliser une commande simple qui permettra d'afficher votre adresse IPv6 utilisée pour la navigation Internet.
+Pour vérifier que l'IPv6 est active, utilisez la commande suivante qui affiche votre adresse IPv6 publique.
 
 Ouvrez un terminal de commande et tapez la commande suivante :
 

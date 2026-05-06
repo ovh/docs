@@ -131,7 +131,7 @@ Die Tabs `PHP` und `Python` enthalten die Elemente, die entsprechend der Anwendu
 
 Jede Anwendung, die mit der OVHcloud API kommunizieren möchte, muss zuerst freigegeben werden.
 
-Klicken Sie hierzu auf folgenden Link: [https://eu.api.ovh.com/createToken/](https://eu.api.ovh.com/createToken/).
+Klicken Sie hierzu auf folgenden Link: [https://auth.eu.ovhcloud.com/api/createToken](https://auth.eu.ovhcloud.com/api/createToken).
 
 Geben Sie Ihre Kundenkennung, Ihr Passwort und den Namen Ihrer Anwendung ein. Der Name kann nützlich sein, um anderen Personen Zugriff zu gewähren.
 
@@ -189,7 +189,7 @@ Hier ein Beispiel für die Nutzung der Rubrik `/me` zur Verwaltung Ihres OVHclou
 ```python
 import ovh
 
-# Instantiate. Visit https://api.ovh.com/createToken/?GET=/me
+# Instantiate. Visit https://auth.eu.ovhcloud.com/api/createToken?GET=/me
 # to get your credentials
 client = ovh.Client(
     endpoint='ovh-eu',
@@ -232,7 +232,7 @@ Um Schlüssel aufzulisten und zu widerrufen, können Sie die [API-Konsole](/link
 >>
 > OVHcloud Kundencenter
 >>
->> Gehen Sie zum Menü `Identität, Sicherheit und Operationen`{.action} und danach zu `API-Schlüssel`{.action}.
+>> Gehen Sie zur Seite [API-Schlüssel](/links/control-panel/iam-api-keys).
 >>
 >> ![API keys manager](images/api-keys-manager.png){.thumbnail}
 >>

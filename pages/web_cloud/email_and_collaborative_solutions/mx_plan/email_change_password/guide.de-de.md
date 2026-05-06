@@ -15,12 +15,45 @@ Die Accounts Ihrer OVHcloud E-Mail-Dienste sind nur mit dem zugehörigen Passwor
 
 ## Voraussetzungen
 
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager) oder auf den relevanten Account über [Webmail](/links/web/email), je nach verwendeter Methode.
 - Sie verfügen über eine vorkonfigurierte OVHcloud E-Mail-Lösung, darunter:
     - **MX Plan** mit unseren [Webhosting Angeboten](/links/web/hosting) oder in einem [100M Gratis-Hosting](/links/web/domains-free-hosting) inklusive.
-    - [Exchange](/links/web/emails).
-    - [Email Pro](/links/web/email-pro).
+    - [Exchange](/links/web/emails-exchange).
+    - [E-Mail Pro](/links/web/email-pro).
     - [Zimbra](/links/web/emails-zimbra).
+
+<!-- CP-NAV-START:web-mx-plan -->
+<!-- CP-NAV-START:web-zimbra -->
+<!-- CP-NAV-START:web-email-pro -->
+<!-- CP-NAV-START:web-exchange -->
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+**MX Plan:**
+
+- **Direkter Link:** [MX Plan](/links/control-panel/web-mx-plan)
+- **Navigationspfad:** `Web Cloud`{.action} > `MX Plan`{.action} > Wählen Sie Ihren MX Plan Dienst aus
+
+**Zimbra:**
+
+- **Direkter Link:** [Zimbra](/links/control-panel/web-zimbra)
+- **Navigationspfad:** `Web Cloud`{.action} > `Zimbra Mail`{.action} > Wählen Sie Ihren Zimbra Dienst aus
+
+**E-Mail Pro:**
+
+- **Direkter Link:** [E-Mail Pro](/links/control-panel/web-email-pro)
+- **Navigationspfad:** `Web Cloud`{.action} > `E-Mail Pro`{.action} > Wählen Sie Ihre Plattform aus
+
+**Exchange:**
+
+- **Direkter Link:** [Exchange](/links/control-panel/web-exchange)
+- **Navigationspfad:** `Web Cloud`{.action} > `Exchange`{.action} > Wählen Sie Ihre Plattform aus
+
+---
+<!-- CP-NAV-END:web-exchange -->
+<!-- CP-NAV-END:web-email-pro -->
+<!-- CP-NAV-END:web-zimbra -->
+<!-- CP-NAV-END:web-mx-plan -->
 
 ## In der praktischen Anwendung
 
@@ -34,6 +67,8 @@ Die Accounts Ihrer OVHcloud E-Mail-Dienste sind nur mit dem zugehörigen Passwor
 >
 > Aus Sicherheitsgründen empfehlen wir, Passwörter nicht mehrfach zu verwenden, eines auszuwählen, das keine persönlichen Angaben enthält (Namen, Vornamen und Geburtsdatum) und es regelmäßig zu ändern.
 
+<a name="whichmxplan"></a>
+
 > [!primary]
 >
 > **E-Mail-Technologie Ihres MX Plan Angebots identifizieren.**
@@ -44,7 +79,7 @@ Die Accounts Ihrer OVHcloud E-Mail-Dienste sind nur mit dem zugehörigen Passwor
 >
 >![mx plan](images/technology-email.png){.thumbnail .w-500}
 
-Gehen Sie in Ihrem [OVHcloud Kundencenter](/links/manager) in den Bereich `Web Cloud`{.action} und folgen Sie den passenden Anweisungen für Ihren E-Mail-Dienst:
+Folgen Sie den passenden Anweisungen für Ihren E-Mail-Dienst:
 
 > [!tabs]
 > **MX Plan E-Mail (Legacy)**
@@ -85,7 +120,7 @@ Gehen Sie in Ihrem [OVHcloud Kundencenter](/links/manager) in den Bereich `Web C
 Die Änderung eines Passworts über Webmail ist für die OVHcloud E-Mail-Angebote unter Verwendung von **OWA** (**O**utlook **W**eb **A**pp) verfügbar:
 
 - MX Plan OWA
-- Email Pro
+- E-Mail Pro
 - Exchange
 - MX Plan Zimbra
 - Zimbra Starter et Pro
@@ -136,7 +171,7 @@ Aus Gründen der Sicherheit und der Vertraulichkeit ist es nicht möglich, ein P
 >
 > Wenn Sie ein Kennwort speichern möchten, sollten Sie einen Passwortmanager verwenden, z. B. **KeePass**.
 
-## Weiterführende Informationen
+## Weiterführende Informationen <a name="go-further"></a>
 
 [Erste Schritte mit MX Plan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities)
 

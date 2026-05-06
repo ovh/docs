@@ -13,8 +13,18 @@ With OVHcloud Virtual Private Servers you have the possibility to add a secure s
 ## Requirements
 
 - A [VPS](/links/bare-metal/vps) in your OVHcloud account
-- Access to the [OVHcloud Control Panel](/links/manager)
 - Administrative access via SSH or RDP to your VPS
+
+<!-- CP-NAV-START:baremetal-vps -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [VPS management](/links/control-panel/baremetal-vps)
+- **Navigation path:** `Bare Metal Cloud`{.action} > `Virtual private servers`{.action} > Select your VPS
+
+---
+<!-- CP-NAV-END:baremetal-vps -->
 
 > [!warning]
 > This feature is currently unavailable for Virtual Private Servers in [Local Zones](/links/bare-metal/vps-lz).
@@ -22,15 +32,15 @@ With OVHcloud Virtual Private Servers you have the possibility to add a secure s
 
 ## Instructions
 
-Log in to the [OVHcloud Control Panel](/links/manager), go to the `Bare Metal Cloud`{.action} section and select your server from `Virtual Private Servers`{.action}.
-
 ### Subscribing to the additional disk option
 
+<!-- CP-STEPS-START:subscribe-additional-disk -->
 After selecting your VPS, click on the `Additional disk`{.action} tab in the horizontal menu. Click on `Order an additional disk`{.action} and choose a disk size from the selection that appears.
 
 ![adddiskvps](images/disk_vps01.png){.thumbnail}
 
 Take note of the pricing information, then click on `Order`{.action}. You will be guided through the order process and receive a confirmation email as soon as the disk is installed.
+<!-- CP-STEPS-END:subscribe-additional-disk -->
 
 ### Mounting the new storage space
 
@@ -297,9 +307,11 @@ In the last window, click `Finish`{.action} to format the disk. It will be avail
 
 ### How to cancel the additional disk option
 
+<!-- CP-STEPS-START:cancel-additional-disk -->
 In the `Home`{.action} tab, in the **Your configuration** section, click `...`{.action} next to the `Additional disks` option, then click `Close`{.action}.
 
 ![canceldiskvps](images/disk_vps02.png){.thumbnail}
+<!-- CP-STEPS-END:cancel-additional-disk -->
 
 ## Go further
 

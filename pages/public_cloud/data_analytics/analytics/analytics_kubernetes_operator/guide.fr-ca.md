@@ -1,5 +1,5 @@
 ---
-title: Analytics - How to set up your Kubernetes database operator
+title: "Installer l'opérateur Kubernetes pour les services Analytics (EN)"
 excerpt: Find out how to install and use the Kubernetes database operator
 updated: 2025-02-03
 ---
@@ -19,7 +19,7 @@ The kubernetes database operator allows you to automaticaly authorize your Kuber
 
 In order to generate your OVHcloud API, please follow our [First steps with the OVHcloud APIs](/pages/manage_and_operate/api/first-steps) tutorial.
 
-Specifically, you have to generate these credentials via the [OVHcloud token generation page](https://ca.api.ovh.com/createToken?GET=/cloud/project/*/database/*&POST=/cloud/project/*/database/*&PUT=/cloud/project/*/database/*&DELETE=/cloud/project/*/database/*) with the following rights:
+Specifically, you have to generate these credentials via the [OVHcloud token generation page](https://auth.ca.ovhcloud.com/api/createToken?GET=/cloud/project/*/database/*&POST=/cloud/project/*/database/*&PUT=/cloud/project/*/database/*&DELETE=/cloud/project/*/database/*) with the following rights:
 
 - `GET /cloud/project/*/database/*`
 - `POST /cloud/project/*/database/*`

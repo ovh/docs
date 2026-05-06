@@ -1,154 +1,221 @@
 ---
 title: 'Restoring and importing a database to your database server'
-excerpt: 'Find out how to restore and import your database'
-updated: 2023-10-26
+excerpt: 'Find out how to restore and import a database on your Web Cloud Databases server from the OVHcloud Control Panel or via phpMyAdmin'
+updated: 2026-03-24
 ---
+
+<style>
+details>summary {
+    color:rgb(33, 153, 232) !important;
+    cursor: pointer;
+}
+details>summary::before {
+    content:'\25B6';
+    padding-right:1ch;
+}
+details[open]>summary::before {
+    content:'\25BC';
+}
+</style>
 
 ## Objective
 
-Following an error on your database, you must be able to restore a backup or import a local database. 
+Following an error on your database, you must be able to restore a backup or import a local database.
 
-**This guide explains how to restore and import your database onto your database server.**
+**Find out how to restore and import your database on your database server.**
 
 ## Requirements
 
-- A [Web Cloud Databases instance](https://www.ovh.ie/cloud-databases/) (included in a [Performance web hosting plan](/links/web/hosting)) in your OVHcloud account
-- Access to the [OVHcloud Control Panel](/links/manager)
+- A [Web Cloud Databases instance](/links/web/databases) (included in a [Performance web hosting](/links/web/hosting) plan)
+
+<!-- CP-NAV-START:web-cloud-databases -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Web Cloud Databases](/links/control-panel/web-cloud-databases)
+- **Navigation path:** `Web Cloud`{.action} > `Web Cloud Databases`{.action} > Select your database service
+
+---
+<!-- CP-NAV-END:web-cloud-databases -->
 
 ## Instructions
 
 > [!primary]
 >
-> Please note that the [Web Cloud Databases](https://www.ovh.ie/cloud-databases/) solutions do not give access to the database management system, but to the databases hosted on it.
-> <br> - Please note that there is no "root" access.
-> <br> - Generic SQL commands work normally, and software such as HeidiSQL, SQuirreL or Adminer is fully compatible.
+> [Web Cloud Databases](/links/web/databases) solutions do not give access to the database management system, but to the databases hosted on it.
+>
+> - There is no superuser "root" access.
+> - Generic SQL commands work normally, and software such as HeidiSQL, SQuirreL SQL or Adminer is fully compatible.
 
 ### Restoring and importing a database from the Control Panel
 
-Log in to your [OVHcloud Control Panel](/links/manager) and select `Web Cloud`{.action} in the top navigation bar. Click `Web Cloud Databases`{.action}, then choose the database name concerned. Next, switch to the `Databases` tab.
+#### Restoring an existing backup
 
-In the **Backups** column, the number corresponds to the available backups for your database.
+<!-- CP-STEPS-START:restore-existing-backup -->
+Click on the tabs below to view each of the **4** steps.
 
-#### Restoring a specific backup
+> [!tabs]
+> **Step 1**
+>>
+>> Go to the [Web Cloud Databases](/links/control-panel/web-cloud-databases) page, then select the solution concerned.
+>>
+>> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases.png){.thumbnail}
+>>
+> **Step 2**
+>>
+>> Click on the `Databases`{.action} tab.
+>>
+>> In the **Backups** column, the number corresponds to the number of backups available for your database.
+>>
+> **Step 3**
+>>
+>> Click on the `...`{.action} button to the right of the database, then on `Show backups`{.action}.
+>>
+> **Step 4**
+>>
+>> The list of available backups appears. Click on the `...`{.action} button to the right of the chosen backup, then on `Restore the backup`{.action}.
+>>
+>> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/databases/restore-the-backup.png){.thumbnail}
+>>
+>> > [!warning]
+>> >
+>> > Restoration involves overwriting the contents of the database, potentially resulting in data loss. If you are unsure of what you are doing, we recommend creating a backup beforehand.
 
-Click the `...`{.action} button to the right of the database, then click `Show backups`{.action}.
-
-The list of available backups will appear. Click on the `...`{.action} button to the right of the backup you want to restore, then `Restore the backup`{.action}.
-
-![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/databases/restore-the-backup.png){.thumbnail}
-
-> [!warning]
->
-> Restoration involves overwriting the contents of the database, potentially resulting in data loss. If you are unsure, please create a backup beforehand.
-> 
+<!-- CP-STEPS-END:restore-existing-backup -->
 
 #### Importing a local backup
 
-Click on the `...`{.action} button to the right of the database, then click `Import file`{.action}.
+<!-- CP-STEPS-START:import-local-backup -->
+Click on the tabs below to view each of the **4** steps.
 
-![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/databases/import-file.png){.thumbnail}
+> [!tabs]
+> **Step 1**
+>>
+>> Go to the [Web Cloud Databases](/links/control-panel/web-cloud-databases) page, then select the solution concerned.
+>>
+>> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases.png){.thumbnail}
+>>
+> **Step 2**
+>>
+>> Click on the `Databases`{.action} tab.
+>>
+> **Step 3**
+>>
+>> Click on the `...`{.action} button to the right of the database, then on `Import file`{.action}.
+>>
+>> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/databases/import-file.png){.thumbnail}
+>>
+> **Step 4**
+>>
+>> ***You have two options:***
+>>
+>> **1 - Import a new file**
+>>
+>> Click on **"Import a new file"**, then on `Next`{.action}.
+>>
+>> Enter a name for your imported file, click `Browse`{.action} to select it, then `Submit`{.action}, and finally click `Next`{.action}.
+>>
+>> > [!warning]
+>> >
+>> > The file must be in ".sql", ".txt" or ".gz" format.
+>>
+>> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/databases/database-import-new-file-step-2.png){.thumbnail}
+>>
+>> If you wish, tick **"Empty the current database"** before importing, and **"Send an email when importing is complete"** to be informed of the completion of the operation on the primary email address of your OVHcloud account, then click `Confirm`{.action}.
+>>
+>> **2 - Use an existing file**
+>>
+>> If you had already imported a file before, you can choose the **"Import an existing file"** option.
+>>
+>> Then choose the file from the dropdown menu, and click `Next`{.action}.
+>>
+>> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/databases/database-import-existing-file-step-2.png){.thumbnail}
+>>
+>> If you wish, tick **"Empty the current database"** before importing, and **"Send an email when importing is complete"** to be informed of the completion of the operation on the primary email address of your OVHcloud account, then click `Confirm`{.action}.
 
-There are two ways of doing this:
+<!-- CP-STEPS-END:import-local-backup -->
 
-##### 1\. Importing a new file
+### Importing a database outside the Control Panel
 
-Click on **Import a new file**, then `Next`{.action}.
+In some cases, the RAM available on your database server may not be sufficient to perform the desired import outside the Control Panel. If so, we recommend using the OVHcloud tool in the Control Panel. Refer to the section "[Restoring and importing a database from the Control Panel](./#restoring-and-importing-a-database-from-the-control-panel)" of this guide.
 
-Specify a name for your imported file, click `Browse`{.action} to select it, confirm with `Submit`{.action}, and then click `Next`{.action}.
+**Click on the import method of your choice to view the content.**
 
-> [!warning]
->
-> The file must be in .sql, .txt, or .gz format.
-> 
+/// details | Importing a MySQL or MariaDB database from phpMyAdmin
 
-![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/databases/database-import-new-file-step-2.png){.thumbnail}
+To import your database directly from phpMyAdmin, you must first log in by following the section "[Connecting to a MySQL or MariaDB database](/pages/web_cloud/web_cloud_databases/connecting-to-database-on-database-server#connecting-to-a-mysql-or-mariadb-database)".
 
-If you wish, tick **Empty the current database** before importing, and **Send an email when importing is complete** to be informed of the completion of the operation using the primary email address of your OVHcloud account. Then click `Confirm`{.action}.
-
-##### 2\. Using an existing file
-
-If you had already imported a file before, you can choose the **Use an existing file** option.
-
-Then choose the file from the dropdown menu and click `Next`{.action}.
-
-![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/databases/database-import-existing-file-step-2.png){.thumbnail}
-
-If you wish, tick **Empty the current database** before importing, and **Send an email when importing is complete** to be informed of the completion of the operation using the primary email address of your OVHcloud account. Then click `Confirm`{.action}.
-
-### Importing MySQL or MariaDB databases outside the OVHcloud Control Panel
-
-In some cases, the RAM available in your database server may not be sufficient to perform the desired import. If this is the case, we recommend using the [tool available in the OVHcloud Control Panel](./#restoring-and-importing-a-database-from-the-control-panel).
-
-#### Importing MySQL or MariaDB databases with phpMyAdmin
-
-To import your database directly from phpMyAdmin, you will need to log in to the interface first. To do this, you can refer to the [section in this guide](/pages/web_cloud/web_cloud_databases/connecting-to-database-on-database-server#logging-in-to-a-mysql-or-mariadb-database).
-
-Once you have logged in to phpMyAdmin, select your database by clicking on its name.
+Once logged in to phpMyAdmin, select your database by clicking on its name.
 
 Then click on the `Import`{.action} tab.
 
-Select your backup file by clicking `Browse`{.action}. (Please note that the file cannot exceed 100 MB).
+Select your backup file by clicking `Browse`{.action} (the file cannot exceed 100 MB).
 
 > [!primary]
 >
-> We recommend splitting your database into several files if it exceeds 100 MB and importing these files from phpMyAdmin.<br>
-> You can import files larger than 100 MB in the OVHcloud Control Panel by following the step [Restoring and importing a database from the Control Panel](./#restoring-and-importing-a-database-from-the-control-panel).
+> We recommend splitting your database into several files if it exceeds 100 MB, and performing multiple imports from phpMyAdmin.
+> You can import files larger than 100 MB from the Control Panel by following the step "[Restoring and importing a database from the Control Panel](./#restoring-and-importing-a-database-from-the-control-panel)".
 
-Keep the default options and click `Run`{.action} to start the import.
+Leave the default options and click `Run`{.action} to start the import.
 
 ![Web Cloud Databases](/pages/assets/screens/other/web-tools/phpmyadmin/pma-upload-backup-web-cloud-db.png){.thumbnail}
 
-#### Exporting a MySQL or MariaDB database from the command line
+///
 
-This action is only possible via [SSH](/pages/web_cloud/web_hosting/ssh_on_webhosting) from an OVHcloud Web Hosting plan.
+/// details | Importing a MySQL or MariaDB database from the command line
+
+This action is only possible via [SSH](/pages/web_cloud/web_hosting/ssh_on_webhosting) from an OVHcloud shared hosting plan.
 
 ```bash
 cat database_name.sql | mysql --host=server --user=username --port=port --password=password database_name
 ```
 
-#### Importing a MySQL or MariaDB database from a PHP file
+///
+
+/// details | Importing a MySQL or MariaDB database from a PHP file
 
 ```php
 1. <?php
-2. echo "Your database is being restored.......";
+2. echo "Your database is being restored.......<br>";
 3. system("cat database_name.sql | mysql --host=server --user=username --port=port --password=password database_name");
-4. echo "Completed. Your database is in place on this Web Hosting plan.";
+4. echo "Completed. Your database is in place on this hosting plan.";
 5. ?>
 ```
 
 > [!warning]
 >
-> - To prevent someone from accessing this file containing sensitive data, you can [secure access to it](/pages/web_cloud/web_hosting/htaccess_protect_directory_by_password).
-> - This action is only possible on an OVHcloud Web Hosting plan.
->
+> - To prevent someone from accessing this file containing sensitive data, secure access to it by following the guide: [How do I password-protect a directory?](/pages/web_cloud/web_hosting/htaccess_protect_directory_by_password)
+> - This action is only possible from an OVHcloud shared hosting plan.
 
-### Importing PostgreSQL databases from the OVHcloud Control Panel
+///
 
-In some cases, the RAM available in your database server does not allow you to carry out the desired import outside the Control Panel. If this is the case, we recommend using the [tool available in the OVHcloud Control Panel](./#restoring-and-importing-a-database-from-the-control-panel).
+/// details | Importing a PostgreSQL database from the command line
 
-#### Importing a PostgreSQL database from the command line
-
-This action is only possible via [SSH](/pages/web_cloud/web_hosting/ssh_on_webhosting) from an OVHcloud Web Hosting plan, in stable or higher versions.
+This action is only possible via [SSH](/pages/web_cloud/web_hosting/ssh_on_webhosting) from an OVHcloud shared hosting plan in stable version or higher.
 
 ```bash
 psql --host=server --port=port --user=username --password=password database_name < database_name.sql
 ```
 
-#### Importing a PostgreSQL database from a PHP file
+///
+
+/// details | Importing a PostgreSQL database from a PHP file
 
 ```php
 1. <?php
-2. echo "Your database is being restored.......";
+2. echo "Your database is being restored.......<br>";
 3. system("PGPASSWORD=password psql --host=server --port=port --user=username --password=password database_name < database_name.sql");
-4. echo "Completed. Your database is in place on this Web Hosting plan.";
+4. echo "Completed. Your database is in place on this hosting plan.";
 5. ?>
 ```
 
 > [!warning]
 >
-> - To prevent someone from accessing this file containing sensitive data, you can [secure access to it](/pages/web_cloud/web_hosting/htaccess_protect_directory_by_password).
-> - This action is only possible on an OVHcloud Web Hosting plan.
->
+> - To prevent someone from accessing this file containing sensitive data, secure access to it by following the guide: [How do I password-protect a directory?](/pages/web_cloud/web_hosting/htaccess_protect_directory_by_password)
+> - This action is only possible from an OVHcloud shared hosting plan.
+
+///
 
 ## Go further
 

@@ -1,7 +1,7 @@
 ---
-title: Configuring an Additional IPv6 block in a vRack
-excerpt: This guide will show you how to configure a block of public IPv6 addresses for use with the vRack
-updated: 2025-06-04
+title: "Configure an IPv6 Block in a vRack on a Dedicated Server"
+excerpt: "Configure a public IPv6 address block for use with an OVHcloud vRack private network on your dedicated server."
+updated: 2026-03-13
 ---
 
 <style>
@@ -31,7 +31,7 @@ The vRack network serves as a global private network bridging various OVHcloud p
 
 > [!primary]
 >
-> This article is focusing on Additional IP configuration over a vRack network. If you look for guidance on Additional IP configuration together with primary IP (on public network interface), read the following articles:
+> This guide focuses on Additional IP configuration over a vRack network. If you look for guidance on Additional IP configuration together with primary IP (on public network interface), read the following articles:
 >
 > - IPv4:
 >     - [Configuring IP aliasing on dedicated servers](/pages/bare_metal_cloud/dedicated_servers/network_ipaliasing).
@@ -44,7 +44,7 @@ The vRack network serves as a global private network bridging various OVHcloud p
 
 ## Introduction
 
-IPv6 revolutionizes networking within OVHcloud's vRack by addressing IPv4's limitations and introducing features for the modern internet. Its rollout is a direct response to the need for more extensive, secure, and sophisticated internet architectures. Here are the key benefits of integrating IPv6 with vRack:
+IPv6 revolutionizes networking within OVHcloud's vRack by addressing IPv4's limitations and introducing features for the modern Internet. Its rollout is a direct response to the need for more extensive, secure, and sophisticated Internet architectures. Here are the key benefits of integrating IPv6 with vRack:
 
 - **Flexibility for Advanced Networking**: IPv6 significantly increases the address space, providing the flexibility needed to scale infrastructure, manage failover scenarios and support larger solutions. This ensures that networks can grow and adapt without the space constraints of IPv4.
 
@@ -52,19 +52,29 @@ IPv6 revolutionizes networking within OVHcloud's vRack by addressing IPv4's limi
 
 - **Low latency**: Native, end-to-end IPv6 connectivity can be an enabler for latency-sensitive services like media streaming, as many recent provider networks are built IPv6-native. In such networks, using IPv4 services brings additional latency (and costs).
 
-By leveraging IPv6 within vRack, OVHcloud users can enjoy a more secure, efficient, and scalable network environment, ready to meet the demands of modern internet usage.
+By leveraging IPv6 within vRack, OVHcloud users can enjoy a more secure, efficient, and scalable network environment, ready to meet the demands of modern Internet usage.
 
 
 ## Requirements
 
 - A [vRack](/links/network/vrack) service activated in your account
 - A [vRack compatible server](/links/network/vrack) attached to your vRack network
-- Access to the [OVHcloud Control Panel](/links/manager)
+
+<!-- CP-NAV-START:network-vrack -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [vRack](/links/control-panel/network-vrack)
+- **Navigation path:** `Network`{.action} > `vRack private network`{.action}
+
+---
+<!-- CP-NAV-END:network-vrack -->
 
 > [!warning]
 > This feature might be unavailable or limited on servers of the [**Eco** product line](/links/bare-metal/eco-about).
 >
-> Please visit our [comparison page](/links/bare-metal/eco-compare) for more information.
+> Visit our [comparison page](/links/bare-metal/eco-compare) for more information.
 
 ## Instructions
 
@@ -74,13 +84,15 @@ While requesting a new Additional IPv6 block, it's important to note that the al
 
 /// details | Request a new Additional IPv6 block
 
+<!-- CP-STEPS-START:request-additional-ipv6-block -->
 You can order your new additional IPv6 block [here](https://www.ovh.com/manager/#/dedicated/ip/agoraOrder/ipv6?catalogName=ip).
 
 ![configuration page](images/500.png){.thumbnail}
 
-Next you need to follow the step-by-step instructions.
+Next, follow the step-by-step instructions.
 
 Your new Additional IPv6 will then be available on your vRack configuration page.
+<!-- CP-STEPS-END:request-additional-ipv6-block -->
 
 ///
 
@@ -96,10 +108,7 @@ The default gateway for the first /64 subnet (bridged one) is the first address 
 
 /// details | Via the OVHcloud Control Panel
 
-- Open `Network`{.action} in the left-hand sidebar.
-- Open `vRack private network`{.action}.
-- Select the vRack concerned.
-
+<!-- CP-STEPS-START:vrack-add-ipv6-cp -->
 ![vRack management](images/700.png){.thumbnail}
 
 On the left side, the possible options (eligible services to be configured) are listed.
@@ -125,6 +134,7 @@ To simplify IP addressing inside your network, you may want to use SLAAC. It can
 ![enabling SLAAC](images/702.png){.thumbnail}
 
 Don't forget to configure SLAAC on your host machine.
+<!-- CP-STEPS-END:vrack-add-ipv6-cp -->
 
 ///
 
@@ -172,7 +182,7 @@ Let's check exactly which subnet is bridged:
 
 As in the example below:
 
-![GET subrange bridged into your vRack](images/20240418-05.png){.thumbnail}
+![API response listing bridged subranges in the vRack](images/20240418-05.png){.thumbnail}
 
 To get more details, use this call:
 
@@ -183,7 +193,7 @@ To get more details, use this call:
 
 As in the example below:
 
-![GET subrange bridged into your vRack](images/20240418-06.png){.thumbnail}
+![API response with bridged subrange details and SLAAC status](images/20240418-06.png){.thumbnail}
 
 Notice that IP autoconfiguration (SLAAC) is turned off by default.
 
@@ -201,6 +211,69 @@ As in the example below:
 ![API call POST enable SLAAC](images/20240418-07.png){.thumbnail}
 
 Don't forget to configure SLAAC on your host machine.
+
+///
+
+### Managing public IP bandwidth on vRack
+
+By default, Additional IP blocks routed via a vRack benefit from a standard public bandwidth of 5 Gbps in Europe/Canada/US and 100 Mbps in APAC regions. For a detailed overview of availability, please refer to public routing options on our [vRack product page](/links/network/vrack). 
+
+As infrastructure requirements scale, users may require broader bandwidth to support high-traffic public-oriented services, for which OVHcloud provides paid bandwidth options. Note that bandwidth options are applied **per-vRack and per-region**. Since Additional IP addresses are tied to a region, any bandwidth modification will affect all IP addresses (both IPv4 and IPv6) routed to the specific vRack within that particular region.
+
+/// details | During the Additional IP ordering process
+
+#### Choosing public bandwidth during an Additional IP order
+
+<!-- CP-STEPS-START:bandwidth-during-order -->
+The default public bandwidth can be changed when ordering a new Additional IP block with a vRack network as the backend.
+
+To order a new Additional IPv6 block:
+
+- Log in to the [OVHcloud Control Panel](/links/manager).
+- Open the `Network`{.action} section in the left-hand sidebar.
+- Select `Public IP addresses`{.action}.
+- Click on the `Order IPs`{.action} button, near the top of the page.
+- Select the IP version, then the vRack you want to attach your Additional IP to.
+- Select the region you want your Additional IP to be in.
+- Choose the public bandwidth you want to apply to your vRack for that specific region.
+- Fill in the other options as necessary, then proceed with your order.
+<!-- CP-STEPS-END:bandwidth-during-order -->
+
+///
+
+/// details | From the vRack management page
+
+#### Modifying vRack public bandwidth on management page
+
+<!-- CP-STEPS-START:bandwidth-vrack-management -->
+For Additional IP blocks already attached to a vRack, bandwidth can be managed directly through the service configuration page.
+
+To access the management interface:
+
+- Open `Network`{.action} in the left-hand sidebar of your Control Panel.
+- Select `vRack private network`{.action}.
+- In the "Public IP & bandwidth" column, click the `Manage`{.action} button for the corresponding vRack.
+
+The management page is organized into two tabs:
+
+- **All attached services**: For the time being, it redirects to the classic vRack management page. Soon, it will list all the products (Servers, Cloud Projects, etc.) currently linked to the vRack, in a new way.
+- **Public IP routing**: Manages the public IP routing options of your vRack, including public bandwidth.
+
+To modify the public bandwidth:
+
+- Navigate to the `Public IP routing`{.action} tab.
+- The interface displays individual management windows for each region (e.g., `eu-west-par`) associated with the vRack, listing all IP addresses attached to that specific region.
+- Within the window for the relevant region, click the `Modify bandwidth`{.action} button.
+- Select the desired bandwidth option in the panel that appears on the right-hand side, then click `Proceed to order`{.action} to validate the order.
+- Once paid, the selected bandwidth should be available to your vRack in the chosen region after a few minutes.
+
+> [!primary]
+>
+> Charges for the initial month are pro-rated based on the remaining days, with the full rate effective the next billing cycle.
+>
+
+The selected bandwidth upgrade will apply to all IP addresses in that region for the chosen vRack.
+<!-- CP-STEPS-END:bandwidth-vrack-management -->
 
 ///
 
@@ -245,7 +318,7 @@ First, let's allow our host to accept Router Advertisements (for autoconfigurati
 $ sudo sysctl -w net.ipv6.conf.eth1.accept_ra=1
 ```
 
-Important to note is that this setting will not work if ipv6.forwarding is enabled in your system. In such case please refer to <a href="#host-side-configuration">[Automatic IP configuration for routed subnet](#host-side) for more details.
+Note that this setting does not work if ipv6.forwarding is enabled in your system. In such case please refer to [Automatic IP configuration for routed subnet](#host-side) for more details.
 
 Then, simply bring up the interface:
 
@@ -292,7 +365,7 @@ PING 2001:41d0:900:2100:fe34:97ff:feb0:c166(2001:41d0:900:2100:fe34:97ff:feb0:c1
 
 ### Configuring an IPv6 in a vRack for routed mode <a name="routedmode"></a>
 
-In this section we will present a more advanced IPv6 setup, where your vRack connected hosts are acting as a routers for hosted Virtual Machines. Such VMs have delegated subnets from the main IPv6 block (presented with an orange color in the schema below).
+In this section we will present a more advanced IPv6 setup, where your vRack connected hosts are acting as routers for hosted Virtual Machines. Such VMs have delegated subnets from the main IPv6 block (presented with an orange color in the schema below).
 
 ![Configuring an IPv6 in a vRack for routed-mode](images/routed-mode-20240513.png){.thumbnail}
 
@@ -307,7 +380,8 @@ The default gateway for the host is the first address from the /56 block, which 
 
 /// details | OVHcloud Control Panel actions
 
-After adding Additional IP to your vRack you can manage routed subnet by clicking `Add subnet`{.action} button.
+<!-- CP-STEPS-START:define-routed-subnet-cp -->
+After adding Additional IP to your vRack you can manage routed subnet by clicking the `Add subnet`{.action} button.
 
 ![vRack select](images/600.png){.thumbnail}
 
@@ -316,13 +390,14 @@ To create a routed subnet, we must first define:
 - **subnet in CIDR notation** (size between /57 and /64)
 - **next-hop address** (so the host's IPv6 address)
 
-Please note that a given subnet can not overlap with any other subnet defined and next-hop address must belong to the first part (bridged /64 subnet) of your Additional IPv6 prefix.
+Please note that a given subnet cannot overlap with any other subnet defined and next-hop address must belong to the first part (bridged /64 subnet) of your Additional IPv6 prefix.
 
-![continue](images/800.png){.thumbnail}
+![Define routed subnet in CIDR notation and next-hop address](images/800.png){.thumbnail}
 
-This created routed subnet `2001:41d0:abcd::ef10::/60` reachable via next hop `2001:41d0:abcd::ef00::2`. 
+This created routed subnet `2001:41d0:abcd:ef10::/60` reachable via next hop `2001:41d0:abcd:ef00::2`. 
 
-![continue](images/801.png){.thumbnail}
+![Created routed subnet with next-hop displayed](images/801.png){.thumbnail}
+<!-- CP-STEPS-END:define-routed-subnet-cp -->
 
 ///
 
@@ -333,13 +408,13 @@ To create a routed subnet, we must first define:
 - **subnet in CIDR notation** (size between /57 and /64)
 - **next-hop address** (so the host's IPv6 address)
 
-Please note that a given subnet can not overlap with any other subnet defined and next-hop address must belong to the first part (bridged /64 subnet) of your Additional IPv6 prefix.
+Please note that a given subnet cannot overlap with any other subnet defined and next-hop address must belong to the first part (bridged /64 subnet) of your Additional IPv6 prefix.
 
 The example below shows how to define such a subnet:
 
-![continue](images/20240418-02.png){.thumbnail}
+![API call to define a routed subnet with next-hop](images/20240418-02.png){.thumbnail}
 
-Here, we defined a routed subnet `2001:41d0:abcd:ef10::/60 `which will be delegated to the VM hosted on: `2001:41d0:abcd:ef00::2`.
+Here, we defined a routed subnet `2001:41d0:abcd:ef10::/60` which will be delegated to the VM hosted on: `2001:41d0:abcd:ef00::2`.
 
 ///
 
@@ -504,7 +579,7 @@ PING 2001:41d0:abcd:ef10::1(2001:41d0:abcd:ef10::1) 56 data bytes
 64 bytes from 2001:41d0:abcd:ef10::1: icmp_seq=2 ttl=55 time=2.98 ms
 ```
 
-And traceroute from a remote host (somewhere in the internet):
+And traceroute from a remote host (somewhere on the internet):
 
 ```bash
 ubuntu@remote-test:~$ mtr -rc1 2001:41d0:abcd:ef10::1
@@ -531,7 +606,7 @@ On the other hand, services like Additional IPv6 are regional, which means their
 
 Below, an architecture is presented for learning purposes with two different regions and different Additional IPv6 blocks announced from each. Also, there is a host presented with IP addresses from both networks as well as a suboptimal route example - a host in one region addressed with IPv6 address announced in another region:
 
-![image](images/20240418-08.png)
+![Multi-region vRack architecture with different IPv6 blocks](images/20240418-08.png){.thumbnail}
 
 Please note that in such setups (with Additional IPv6 from more than single region) SLAAC **must be turned off in the whole vRack** (as this may lead to unpredictable results and losing connectivity randomly).
 
@@ -552,12 +627,16 @@ Understanding the constraints of using **Additional IPv6** within the **vRack** 
 - **SLAAC limitations in multi-location setups**: Stateless Address Autoconfiguration (SLAAC) is not supported when there is public IP traffic (both IPv6 and IPv4) routed into vRack in multiple region locations.
 - **Up to 128 hosts inside bridged subnet**: You can use up to 128 IP addresses directly on the vRack.
 - **Up to 128 next-hop routes**: You can use up to 128 routes for routed subnets inside a vRack.
-- **Public bandwidth cap**: Outbound traffic from OVHcloud to the internet is capped at 5Gbps per region location.
+- **Public bandwidth cap**: Outbound traffic from OVHcloud to the Internet is capped at 5 Gbps per region location.
 - **IPv6 block allocation limits**: Single Additional IPv6 block per vRack in a region location. Maximum of 3 blocks (/56) per region location.
 - **Mobility of Additional IPv6 blocks**: Due to the hierarchical design of the IPv6 address space, Additional IPv6 blocks are region-specific. This means blocks cannot be transferred between regions, although they can be reassigned within any vRack-connected backend.
 - **No direct VLAN 802.1Q support in vRack by Additional IPv6**: Configuration can only be done with native VLAN of your vRack network. For packet forwarding inside specific VLAN (of a vRack) a dedicated host on customer side will be needed.
 - **At the moment, routing Additional IPv6 into vRack is not supported in APAC (Asia-Pacific) regions.**
 
 ## Go further
+
+[Configuring the vRack on your Dedicated Servers](/pages/bare_metal_cloud/dedicated_servers/vrack_configuring_on_dedicated_server)
+
+[Configuring Network Bridging](/pages/bare_metal_cloud/dedicated_servers/network_bridging)
 
 Join our [community of users](/links/community).

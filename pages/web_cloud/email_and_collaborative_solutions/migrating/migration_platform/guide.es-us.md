@@ -1,7 +1,7 @@
 ---
 title: "Migrar sus direcciones de correo de una plataforma de correo de OVHcloud a otra"
 excerpt: "Cómo migrar las direcciones de correo de una plataforma Exchange o Email Pro a otra plataforma Exchange, Email Pro o MX Plan"
-updated: 2021-10-21
+updated: 2026-03-30
 ---
 
 
@@ -25,19 +25,40 @@ Si quiere migrar sus direcciones de correo electrónico a una plataforma Exchang
 
 - Tener una plataforma **"source"** con cuentas [Exchange](/links/web/emails-hosted-exchange)  configuradas.
 - Disponer de una plataforma de **"destino"** con cuentas [Exchange](/links/web/emails-hosted-exchange) o MX Plan (a través de la solución MX Plan o incluida en un plan de [hosting de OVHcloud](/links/web/hosting)). Esta plataforma debe disponer de cuentas no configuradas o disponibles para recibir las direcciones de correo que deban migrarse.
-- Haber iniciado sesión en el [área de cliente de OVHcloud](/links/manager).
+
+<!-- CP-NAV-START:web-mx-plan -->
+<!-- CP-NAV-START:web-exchange -->
+---
+
+### Acceso al área de cliente de OVHcloud
+
+**MX Plan:**
+
+- **Enlace directo:** [MX Plan](/links/control-panel/web-mx-plan)
+- **Ruta de navegación:** `Web Cloud`{.action} > `MX Plan`{.action} > Seleccione su servicio MX Plan
+
+**Exchange:**
+
+- **Enlace directo:** [Exchange](/links/control-panel/web-exchange)
+- **Ruta de navegación:** `Web Cloud`{.action} > `Exchange`{.action} > Seleccione su plataforma
+
+---
+<!-- CP-NAV-END:web-exchange -->
+<!-- CP-NAV-END:web-mx-plan -->
 
 ## Procedimiento
 
 ### Configurar la plataforma de destino
 
-Antes de realizar la migración, si acaba de contratar la nueva solución de correo, añada el dominio a su plataforma [Exchange](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_adding_domain). Si migra a una plataforma MX Plan, ya que el dominio es "fijo", puede pasar directamente a [la siguiente etapa](#accountsmigration) .
-
-> Seleccione la pestaña `Dominios asociados`{.action} en su plataforma y haga clic en `Añadir un dominio`{.action}. Configure su dominio **no autoritario**. Una vez añadido el dominio, asegúrese de que la mención `OK` esté presente en la columna `Estado`.
+> [!warning]
+>
+> Antes de comenzar su migración, si acaba de pedir su nueva oferta de correo electrónico, primero agregue el nombre de dominio a su plataforma de correo electrónico. Si migra a una plataforma MX Plan, el nombre de dominio asociado siendo "fijo", puede pasar directamente a la [siguiente etapa](#accountsmigration).
+>
+> Seleccione la pestaña `Dominios asociados`{.action} en su plataforma, y haga clic en `Añadir un dominio`{.action}. Una vez que el nombre de dominio se haya agregado, asegúrese de que la mención `OK` esté bien presente en la columna `Estado`.
 >
 > ![email-migración](images/migration_platform02.png){.thumbnail}
 >
-> Para más información sobre la adición de un dominio, consulte [la guía Exchange](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_adding_domain).
+> Para más detalles sobre la adición de un nombre de dominio, siga [la guía Exchange](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_adding_domain).
 
 ### Migrar las cuentas de correo <a name="accountsmigration"></a>
 
@@ -81,8 +102,6 @@ En la pestaña `Cuentas de correo`{.action} de su plataforma, haga clic en el bo
 
 Migre la cuenta de correo de origen a la cuenta de su nueva plataforma utilizando nuestra herramienta [OMM](/links/web/omm) (OVHcloud Mail Migrator).
 
-> Si debe migrar varias cuentas de correo, le recomendamos que utilice el modo [Proyecto](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_omm#project) a través de [OMM](/links/web/omm), para importar una tabla en formato CSV con la información de las cuentas de correo que vaya a migrar.
-
 Para más información sobre OMM, consulte nuestra guía [Migrar cuentas de correo a través de OVHcloud Mail Migrator](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_omm).
 
 ![email-migración](images/migration_platform06.png){.thumbnail}
@@ -101,14 +120,13 @@ En este punto, sus direcciones de correo ya deben migrarse y ser funcionales. Po
 
 Para ello, seleccione el servicio Exchange correspondiente y abra la pestaña `Dominios asociados`{.action}. A continuación, en la columna "Diagnóstico", explicaremos si la configuración DNS es correcta: se mostrará una etiqueta roja si la configuración ha de modificarse.
 
+![email-migration](images/check_the_dns_records_associated_domains.png){.thumbnail}
+
 > [!primary]
 >
 > Si acaba de realizar la migración o de modificar un registro DNS del dominio, es posible que la actualización tarde unas horas en mostrarse en el [área de cliente de OVHcloud](/links/manager).
->
 
 Para modificar la configuración, haga clic en la etiqueta roja y realice la operación solicitada. Esta operación tarda entre 4 y 24 horas en propagarse y ser efectiva.
-
-![email-migración](images/check_the_dns_records_associated_domains.png){.thumbnail}
 
 ### Utilizar las direcciones de correo migradas
 
@@ -120,12 +138,11 @@ Si ha configurado una de las cuentas migradas en un cliente de correo (p.ej.: Ou
 > [!primary]
 >
 > También puede migrar manualmente direcciones de correo a OVHcloud utilizando nuestra herramienta [OVHcloud Mail Migrator (OMM)](/links/web/omm). Para ello, debe disponer de la información (usuario, contraseña, servidores) del correo de origen y del correo electrónico de destino.
->
 
 ## Más información
 
-[Gestionar los contactos de los servicios](/pages/account_and_service_management/account_information/managing_contacts).
+[Gestionar los contactos de los servicios](/pages/account_and_service_management/account_information/managing_contacts)
 
-[Guides Exchange](/products/web-cloud-email-collaborative-solutions-microsoft-exchange).
+[Guides Exchange](/products/web-cloud-email-collaborative-solutions-microsoft-exchange)
 
 Interactúe con nuestra [comunidad de usuarios](/links/community).

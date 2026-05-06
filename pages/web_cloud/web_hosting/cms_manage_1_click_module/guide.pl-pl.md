@@ -21,7 +21,17 @@ Moduły za 1 kliknięciem pozwalają na szybką i prostą instalację internetow
 
 - Posiadanie [oferty hostingu WWW Cloud](/links/web/hosting) umożliwiającej instalację modułu za pomocą 1 kliknięcia.
 - Instalacja modułu za 1 kliknięciem (Jeśli jeszcze nie przeprowadziłeś tej instalacji, postępuj zgodnie z instrukcjami zawartymi w tym [przewodniku](/pages/web_cloud/web_hosting/cms_install_1_click_modules)).
-- Dostęp do [Panelu klienta OVHcloud](/links/manager).
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Web hosting](/links/control-panel/web-hosting)
+- **Ścieżka nawigacji:** `Web Cloud`{.action} > `Hosting`{.action} > Wybierz hosting WWW
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## W praktyce
 

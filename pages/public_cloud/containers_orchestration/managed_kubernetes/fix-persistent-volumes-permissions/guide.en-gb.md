@@ -1,7 +1,7 @@
 ---
 title: Troubleshooting permission errors when enabling persistence
 excerpt: ''
-updated: 2024-08-14
+updated: 2026-01-30
 ---
 
 ## Objective
@@ -54,7 +54,13 @@ NAME                              PROVISIONER                RECLAIMPOLICY   VOL
 csi-cinder-classic                cinder.csi.openstack.org   Delete          Immediate           true                   12d
 csi-cinder-high-speed (default)   cinder.csi.openstack.org   Delete          Immediate           true                   12d
 csi-cinder-high-speed-gen2        cinder.csi.openstack.org   Delete          Immediate           true                   5h11m
+csi-cinder-high-speed-luks        cinder.csi.openstack.org   Delete          Immediate           true                   5h11m
+csi-cinder-classic-luks           cinder.csi.openstack.org   Delete          Immediate           true                   5h11m
+csi-cinder-high-speed-gen2-luks   cinder.csi.openstack.org   Delete          Immediate           true                   5h11m
 ```
+
+> [!primary]
+> If your cluster is deployed in a region that supports LUKS encrypted storage, you will also see the `-luks` variants of the storage classes listed above.
 
 - Delete the concerned `StorageClass` that you are using by default 
 

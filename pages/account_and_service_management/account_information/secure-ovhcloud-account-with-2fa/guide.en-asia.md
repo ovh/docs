@@ -35,9 +35,19 @@ This guide will help you:
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](/links/manager)
 - A phone (for the SMS method), a smartphone or tablet (for the mobile application method), or a Universal Second Factor (U2F) security key
 - An understanding of the [password management recommendations for accessing your account](/pages/account_and_service_management/account_information/manage-ovh-password)
+
+<!-- CP-NAV-START:account-security -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Account security](/links/control-panel/account-security)
+- **Navigation path:** Click your name in the top right > `Access my account`{.action} > `Security`{.action}
+
+---
+<!-- CP-NAV-END:account-security -->
 
 ## Instructions <a name="instructions"></a>
 
@@ -78,9 +88,7 @@ We offer three different methods (click on the tabs below to view their explanat
 
 ### Step 1 - Enable your first two-factor authentication method <a name="enabling-2fa"></a>
 
-Log in to the [OVHcloud Control Panel](/links/manager), click on your name in the top right-hand corner, then `Access my account`{.action}.
-
-Next, click `Security`{.action}, and finally `Enable two-factor authentication`{.action}.
+On the [Account security](/links/control-panel/account-security) page, click `Enable two-factor authentication`{.action}.
 
 **Click on the tab corresponding to the method of your choice:**
 
@@ -176,9 +184,7 @@ If your device (mobile phone/smartphone/security key) is lost, stolen or no long
 > - Valid backup codes
 >
 
-To remove a device, log in to the [OVHcloud Control Panel](/links/manager), click on your name in the top right-hand corner, then `Access my account`{.action}.
-
-Next, click `Security`{.action} then the `...`{.action} button to the right of the device you want to delete, then click `Delete`{.action}.
+To remove a device, go to the [Account security](/links/control-panel/account-security) page and click the `...`{.action} button to the right of the device you want to delete, then click `Delete`{.action}.
 
 ![2FA](images/2024-006-delete-device.png){.thumbnail}
 

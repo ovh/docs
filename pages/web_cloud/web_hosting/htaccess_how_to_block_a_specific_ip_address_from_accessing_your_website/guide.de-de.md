@@ -54,7 +54,7 @@ Im Fehlerfall können Sie sich jederzeit in den [FTP-Bereich](/pages/web_cloud/w
 >
 >
 
-##### Eine IP blockieren
+#### Eine IP blockieren
 
 Um eine bestimmte IP-Adresse zu blockieren, tragen Sie einen der beiden folgenden Codes in Ihrer ".htaccess"-Datei ein:
 
@@ -134,7 +134,7 @@ Um einen IP-Adressbereich zu blockieren, tragen Sie einen der beiden folgenden C
 >> ```
 >>
 
-##### Eine Domain blockieren
+#### Eine Domain blockieren
 
 Domains können über Weiterleitungen oder Anfragen auf Ihr Hosting zugreifen.
 

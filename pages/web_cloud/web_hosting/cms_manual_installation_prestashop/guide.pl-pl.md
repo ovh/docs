@@ -12,7 +12,7 @@ Tutaj znajdziesz wszystkie elementy do ręcznego zainstalowania systemu CMS (Con
 >
 > OVHcloud oddaje do Twojej dyspozycji usługi, których konfiguracja, zarządzanie i odpowiedzialność spoczywają na Ciebie. W związku z tym należy zapewnić ich prawidłowe funkcjonowanie.
 > 
-> Oddajemy w Twojej ręce niniejszy przewodnik, którego celem jest pomoc w jak najlepszym wykonywaniu bieżących zadań. W przypadku trudności zalecamy skorzystanie z pomocy [wyspecjalizowanego usługodawcy](/links/partner) lub [edytora CMS PrestaShop](https://www.prestashop.com/en/support). Niestety firma OVH nie będzie mogła udzielić wsparcia w tym zakresie. Więcej informacji znajduje się w sekcji ["Sprawdź również"](#go-further) niniejszego przewodnika.
+> Oddajemy w Twojej ręce niniejszy przewodnik, którego celem jest pomoc w jak najlepszym wykonywaniu bieżących zadań. W przypadku trudności zalecamy skorzystanie z pomocy [wyspecjalizowanego usługodawcy](/links/partner) lub [edytora CMS PrestaShop](https://www.prestashop.com/en/support). Niestety firma OVHcloud nie będzie mogła udzielić wsparcia w tym zakresie. Więcej informacji znajduje się w sekcji ["Sprawdź również"](#go-further) niniejszego przewodnika.
 >
 
 > [!success]
@@ -28,7 +28,6 @@ Tutaj znajdziesz wszystkie elementy do ręcznego zainstalowania systemu CMS (Con
 
 - Posiadanie oferty[hostingu](/links/web/hosting), która zawiera co najmniej jedną bazę danych.
 - Posiadanie [domeny](/links/web/domains)
-- Dostęp do [Panelu klienta OVHcloud](/links/manager)
   
 ## W praktyce
 

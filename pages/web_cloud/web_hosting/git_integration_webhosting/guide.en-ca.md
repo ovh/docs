@@ -13,12 +13,22 @@ In today’s digital landscape, companies are becoming increasingly dynamic and 
 ## Requirements
 
 - An [OVHcloud Web Hosting](/links/web/hosting) plan.
-- Access to the [OVHcloud Control Panel](/links/manager), in the Web Cloud section.
 - A [GitHub](https://github.com/) account on which you must be logged in.
 
 > [!primary]
 >
 > To date, only the GitHub platform is supported for use with OVHcloud Web Hosting services.
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Web hosting](/links/control-panel/web-hosting)
+- **Navigation path:** `Web Cloud`{.action} > `Hosting plans`{.action} > Select your web hosting plan
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## Instructions
 

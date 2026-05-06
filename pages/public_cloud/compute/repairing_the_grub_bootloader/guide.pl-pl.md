@@ -16,6 +16,17 @@ Możliwe, że trzeba naprawić bootloader GRUB. Niniejszy przewodnik pozwoli Ci 
 
 - [Instancja Public Cloud](/links/public-cloud/public-cloud) utworzona na koncie OVHcloud
 
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Ścieżka nawigacji:** `Public Cloud`{.action} > Wybierz projekt
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
+
 ## W praktyce
 
 > [!warning]
@@ -49,8 +60,8 @@ grub2-install /dev/sdb
 grub2-mkconfig -o /boot/grub2/grub.cfg
 ```
 
-Możesz teraz wyjąć instancję z trybu Rescue. (Sprawdź przewodnik [Zmień instancję w trybie Rescue](/pages/public_cloud/compute/put_an_instance_in_rescue_mode))
+Możesz teraz wyjąć instancję z trybu Rescue. (Sprawdź przewodnik [Zmień instancję w trybie Rescue](/pages/public_cloud/compute/put_an_instance_in_rescue_mode)).
 
 ## Sprawdź również
 
-Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.
+Dołącz do [grona naszych użytkowników](/links/community).

@@ -1,6 +1,6 @@
 ---
 title: 'Wysyłanie wiadomości SMS za pomocą interfejsu API OVHcloud w Javie'
-excerpt: 'Dowiedz się, jak wysyłać wiadomości SMS za pomocą interfejsu API OVHcloud RESTful w Javie'
+excerpt: 'Dowiedz się, jak skonfigurować środowisko Java i wysłać pierwszą wiadomość SMS krok po kroku za pomocą interfejsu API RESTful OVHcloud'
 updated: 2020-06-01
 ---
 
@@ -26,11 +26,11 @@ W tym przewodniku wykorzystane zostaną dwie metody:
 - Lista aktywnych usług SMS [https://eu.api.ovh.com/1.0/sms/](https://api.ovh.com/console/#/sms#GET)
 - Wysyłanie wiadomości SMS [https://eu.api.ovh.com/1.0/sms/{ServiceName}/jobs/](https://api.ovh.com/console/#/sms/{serviceName}/jobs#POST)
 
-### Etap 1: utworzenie identyfikatorów
+### Etap 1: Utworzenie identyfikatorów
 
 Identyfikatory są niezbędne do korzystania z interfejsu API SMS. Identyfikatory te tworzy się jednorazowo w celu określenia aplikacji, która będzie wysyłać wiadomości SMS. Czas ważności tych identyfikatorów można skonfigurować.
 
-Utwórz identyfikatory skryptu (all keys at once) na tej stronie: [https://eu.api.ovh.com/createToken/](https://eu.api.ovh.com/createToken/?GET=/sms/&GET=/sms/*/jobs&POST=/sms/*/jobs) (ten adres URL automatycznie zapewni Ci odpowiednie uprawnienia na potrzeby kroków opisanych w tym przewodniku).
+Utwórz identyfikatory skryptu (all keys at once) na tej stronie: [https://auth.eu.ovhcloud.com/api/createToken](https://auth.eu.ovhcloud.com/api/createToken?GET=/sms/&GET=/sms/*/jobs&POST=/sms/*/jobs) (ten adres URL automatycznie zapewni Ci odpowiednie uprawnienia na potrzeby kroków opisanych w tym przewodniku).
 
 ![tworzenie tokenów](images/img_2479.jpg){.thumbnail}
 
@@ -52,7 +52,7 @@ W ten sposób uzyskasz identyfikatory dla Twojego skryptu:
 
 Środowisko jest gotowe, identyfikatory został utworzone, a Ty możesz już tworzyć kod pierwszego wywołania API.
 
-### Etap 2: podstawowe połączenie z API: pozyskanie konta SMS
+### Etap 2: Podstawowe połączenie z API: pozyskanie konta SMS
 
 Teraz możesz przetestować połączenie z API, wyświetlając po prostu nazwę serviceName:
 
@@ -168,7 +168,7 @@ Po uruchomieniu tej aplikacji Java uzyskasz listę Twoich kont SMS.
 ["sms-XX0000-1"]
 ```
 
-### Etap 3: wysłanie pierwszej wiadomości SMS
+### Etap 3: Wysłanie pierwszej wiadomości SMS
 
 Aby wysłać wiadomość SMS, wykorzystaj metodę POST jobs: [https://api.ovh.com/console/#/sms/{serviceName}/jobs#POST](https://api.ovh.com/console/#/sms/{serviceName}/jobs#POST)
 

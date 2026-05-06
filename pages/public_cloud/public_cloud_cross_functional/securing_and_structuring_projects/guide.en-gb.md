@@ -15,7 +15,17 @@ This may be useful if you are part of a platform team and your goal is to build 
 ## Requirements
 
 - An active OVHcloud account
-- Access to the [OVHcloud Control Panel](/links/manager)
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Navigation path:** `Public Cloud`{.action} > Select your project
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## Instructions
 
@@ -25,9 +35,11 @@ The "[Securing my OVHcloud account and managing my personal information](/pages/
 
 #### Enable Two-Factor Authentication (2FA)
 
+<!-- CP-STEPS-START:enable-2fa -->
 - **What it does**: Adds an extra layer of security by requiring a second form of verification (e.g., mobile app, security key) in addition to your password.
 - **How to enable it**: Log in to the [OVHcloud Control Panel](/links/manager), click your name in the top right-hand corner, then on your initials. Next, click on `Security`{.action} and follow the steps to set up 2FA using a mobile app or security key. Ensure you store your backup codes securely. For more information see: [Securing your OVHcloud account with two-factor authentication](/pages/account_and_service_management/account_information/secure-ovhcloud-account-with-2fa).
 - **Example**: If you use a U2F security key, you will plug it into your USB port each time you log in, providing an additional security measure beyond your password.
+<!-- CP-STEPS-END:enable-2fa -->
 
 #### Set Strong Passwords
 
@@ -103,11 +115,13 @@ The following table sums up the access rights we will provide to each groups in 
 
 #### Provide Control Panel access
 
+<!-- CP-STEPS-START:provide-control-panel-access -->
 In order to provide access to the OVHCloud control Panel, you need to create a specific policy as described in the [following guide](/pages/account_and_service_management/account_information/iam-control-panel-access) and in the `Add user groups`, choose the groups `finance_developer_group` and `finance_SRE_group`.
 
 ![Add user groups](images/Add_user_groups.png){.thumbnail}
 
 Thanks to this policy, the user belonging to these 2 groups will have access to the Control Panel but, because of this policy, they do not have the right to view/manage any resources. The following chapter adds that.
+<!-- CP-STEPS-END:provide-control-panel-access -->
 
 #### Provide specific rights to Public Cloud 
 
@@ -123,6 +137,7 @@ Let's continue by creating policies in order to enable the access rights tables 
 
 The policy naming follows the following pattern : \<Name of the resource\>-RO/RW
 
+<!-- CP-STEPS-START:create-iam-policy -->
 Here is a step by step guide to create the first policy:
 
 - Into IAM page `Create a Policy`{.action}, fill in the name `cloud_project_finance_fpa_dev-RW` and a description.
@@ -137,6 +152,7 @@ Here is a step by step guide to create the first policy:
 ![Actions](images/actions2.png){.thumbnail}
 
 Now the users belonging to the `finance_developer_group` will have only access to the Control Panel and to the selected Public Cloud project in write access.
+<!-- CP-STEPS-END:create-iam-policy -->
 
 ## We want your feedback!
 

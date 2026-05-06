@@ -22,7 +22,17 @@ Nos hébergements web sont compatibles IPv6 depuis 2011. Mais l'activation de ce
 
 - Disposer d'un [nom de domaine](/links/web/domains) dans votre espace client OVHcloud.
 - Posséder une [offre d'hébergement web](/links/web/hosting).
-- Être connecté à votre [espace client OVHcloud](/links/manager).
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Hébergements](/links/control-panel/web-hosting)
+- **Pour accéder à vos services :** `Web Cloud`{.action} > `Hébergements`{.action} > Sélectionnez votre hébergement web
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## En pratique
 
@@ -41,28 +51,24 @@ Pour vérifier si votre site web utilise déjà une adresse IPv6, utilisez le si
 
 ### 2 - Récupérer l'adresse IPv6 de votre hébergement web
 
-Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3** étapes.
+<!-- CP-STEPS-START:recuperer-ipv6 -->
+Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **2** étapes.
 
 > [!tabs]
-> **Etape 1**
+> **Étape 1**
 >>
->> Connectez-vous à votre [espace client OVHcloud](/links/manager), puis rendez-vous dans la partie `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Etape 2**
->>
->> Cliquez sur le menu `Hébergements`{.action}, puis choisissez l'hébergement web concerné.
+>> Accédez à la page [Hébergements](/links/control-panel/web-hosting), puis choisissez l'hébergement web concerné.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Etape 3**
+> **Étape 2**
 >>
 >> Dans le cadre **Informations générales**, vous trouverez la mention **IPv6**.
 >>
 >> ![IPv6](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-ipv6.png){.thumbnail}
 >>
 >> Copiez l'adresse IP, puis poursuivez la lecture du guide.
+<!-- CP-STEPS-END:recuperer-ipv6 -->
 
 ### 3 - Configurer la zone DNS active de votre nom de domaine
 

@@ -1,222 +1,298 @@
 ---
 title: 'Pierwsze kroki z usługą Web Cloud Databases'
 excerpt: 'Dowiedz się, jak rozpocząć korzystanie z rozwiązania Web Cloud Databases'
-updated: 2025-02-20
+updated: 2026-03-24
 ---
 
 ## Wprowadzenie
 
-Rozwiązanie Web Cloud Databases pozwala na korzystanie z instancji baz danych, której zasoby są dedykowane i gwarantowane, które zapewniają wysoką wydajność i elastyczność.
-Twoje rozwiązanie Web Cloud Databases jest domyślnie powiązane z siecią hostingu OVHcloud. Można ją połączyć z dowolną inną siecią za pomocą listy uprawnionych adresów IP.
+Rozwiązanie Web Cloud Databases udostępnia instancję baz danych z dedykowanymi i gwarantowanymi zasobami, zapewniając wydajność i elastyczność.
+Domyślnie rozwiązanie Web Cloud Databases jest powiązane z siecią hostingów WWW OVHcloud. Możesz je również powiązać z dowolną inną siecią za pomocą listy autoryzowanych adresów IP.
 
 **Dowiedz się, jak rozpocząć korzystanie z rozwiązania Web Cloud Databases.**
 
 ## Wymagania początkowe
 
-- Posiadanie [instancji Cloud Databases](/links/web/databases) (zawartego w ofercie [pakiecie hostingowym performance](/links/web/hosting))
-- Dostęp do [Panelu klienta OVHcloud](/links/manager)
+- [Instancja Web Cloud Databases](/links/web/databases) (zawarta w ofercie [hostingu WWW Performance](/links/web/hosting)).
+
+<!-- CP-NAV-START:web-cloud-databases -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Web Cloud Databases](/links/control-panel/web-cloud-databases)
+- **Ścieżka nawigacji:** `Web Cloud`{.action} > `Web Cloud Databases`{.action} > Wybierz usługę bazy danych
+
+---
+<!-- CP-NAV-END:web-cloud-databases -->
 
 ## W praktyce
 
-### Włączenie prywatnego Web Cloud Databases zawartego w ofercie hostingu
+### Aktywacja serwera Web Cloud Databases zawartego w ofercie hostingu WWW
 
-Jeśli Twój hosting zawiera opcję prywatnego Web Cloud Databases, kliknij poniższe zakładki, aby wyświetlić kolejne **4** kroki.
+<!-- CP-STEPS-START:starting_with_clouddb_activate_pl -->
+Jeśli Twoja oferta hostingu obejmuje opcję Web Cloud Databases, kliknij poniższe karty, aby wyświetlić kolejne **3** kroki.
 
 > [!tabs]
-> **Etap 1**
+> **Krok 1**
 >>
->> Zaloguj się do [Panelu klienta OVHcloud](/links/manager) i przejdź do sekcji `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Etap 2**
->>
->> Kliknij menu `Hosting`{.action}, następnie wybierz odpowiedni hosting.
+>> Przejdź na stronę [Hosting](/links/control-panel/web-hosting), następnie wybierz odpowiedni hosting WWW.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Etap 3**
+> **Krok 2**
 >>
->> W zakładce `Informacje ogólne` w ramce `Konfiguracja` kliknij przycisk `...`{.action} po prawej stronie **Web Cloud Databases**. Następnie kliknij przycisk `Aktywuj`{.action}, aby rozpocząć proces aktywacji.
+>> Na karcie `Informacje ogólne`, w sekcji `Konfiguracja`, kliknij przycisk `...`{.action} po prawej stronie **Web Cloud Databases**. Następnie kliknij `Włącz`{.action}, aby rozpocząć proces aktywacji.
 >>
 >> ![Informacje ogólne](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/web-cloud-databases-enable.png){.thumbnail}
 >>
+> **Krok 3**
 >>
-> **Etap 4**
+>> Postępuj zgodnie z wyświetlonymi instrukcjami, aby określić typ i wersję serwera Web Cloud Databases. Będzie on następnie dostępny w lewej kolumnie, w sekcji `Web Cloud Databases`{.action}.
+<!-- CP-STEPS-END:starting_with_clouddb_activate_pl -->
+
+### Wyświetlanie informacji ogólnych instancji
+
+<!-- CP-STEPS-START:starting_with_clouddb_general-info_pl -->
+Kliknij poniższe karty, aby wyświetlić kolejne **2** kroki.
+
+> [!tabs]
+> **Krok 1**
 >>
->> Aby sfinalizować operację, postępuj zgodnie z instrukcjami podanymi poniżej, aby określić typ i wersję Twojego prywatnego Web Cloud Databases. Będzie on dostępny w kolumnie po lewej stronie w `Web Cloud Databases`{.action}.
+>> Przejdź na stronę [Web Cloud Databases](/links/control-panel/web-cloud-databases), następnie wybierz odpowiednie rozwiązanie.
+>>
+>> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases.png){.thumbnail}
+>>
+>> > [!primary]
+>> >
+>> > Nazwa usługi Web Cloud Databases w Panelu klienta OVHcloud zawiera część identyfikatora klienta i kończy się trzema cyframi (001 dla pierwszej zainstalowanej usługi Web Cloud Databases, 002 dla drugiej itd.).
+>>
+> **Krok 2**
+>>
+>> Upewnij się, że jesteś na karcie `Informacje ogólne`{.action}.
+>>
+>> Sprawdź, czy wyświetlane informacje są poprawne lub odpowiadają poniższym wskazówkom.
+>>
+>> |Informacja|Szczegóły|
+>> |---|---|
+>> |Stan usługi|Wskazuje, czy instancja jest uruchomiona, w trakcie restartu lub zawieszona. Instancja musi być uruchomiona, aby można było na niej wykonywać operacje.|
+>> |Typ|Wskazuje system baz danych używany przez serwer.|
+>> |Wersja|Wskazuje wersję systemu baz danych używaną przez serwer. Upewnij się, że Twoja strona WWW jest kompatybilna z wybraną wersją.|
+>> |Nasycenie CPU|Wskazuje czas CPU spędzony w nasyceniu. Instancja Web Cloud Databases nie jest ograniczona pod względem CPU, ale należy uważać, aby jej nie przeciążyć.|
+>> |RAM|Wskazuje pamięć RAM dostępną dla instancji oraz ewentualne przekroczenia pamięci. Instancja Web Cloud Databases dysponuje dedykowanymi i gwarantowanymi zasobami: pamięcią RAM. W razie potrzeby można ją rozszerzyć i otrzymywać powiadomienia o wykorzystaniu wszystkich zasobów pamięci instancji.|
+>> |Infrastruktura|Wskazuje infrastrukturę używaną przez instancję. Jest to informacja związana z infrastrukturą OVHcloud.|
+>> |Centrum danych|Wskazuje centrum danych, w którym instancja została utworzona.|
+>> |Host|Wskazuje serwer OVHcloud, na którym instancja została utworzona. Jest to informacja związana z infrastrukturą OVHcloud i może być używana w komunikatach dotyczących [awarii OVHcloud](https://www.status-ovhcloud.com/).|
+>>
+>> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/general-information/general-information.png){.thumbnail}
+<!-- CP-STEPS-END:starting_with_clouddb_general-info_pl -->
 
-### Wyświetlanie informacji ogólnych o instancji
+### Tworzenie bazy danych
 
-W menu usług po lewej stronie [Panelu klienta](/links/manager), przejdź do sekcji `Web Cloud Databases`, a następnie kliknij nazwę instancji. Następnie przejdź do sekcji `Informacje ogólne`{.action}.
-
+<!-- CP-STEPS-START:starting_with_clouddb_create-db_pl -->
 > [!primary]
 >
-> Nazwa usługi Web Cloud Databases w Panelu klienta zawiera część Twojego identyfikatora klienta i kończy się trzema cyframi (001 dla pierwszej zainstalowanej usługi Web Cloud Databases, 002 dla drugiej, etc.).
->
+> Ten krok nie dotyczy systemu baz danych Redis.
 
-W zakładce tej znajdziesz ważne informacje dotyczące Twojej instancji. Sprawdź, czy wyświetlające się dane są poprawne i czy są zgodne z poniższymi parametrami.
+Kliknij poniższe karty, aby wyświetlić kolejne **4** kroki.
 
-|Informacja|Szczegóły|
-|---|---|
-|Status usługi|Pokazuje, czy instancja jest uruchomiona, w trakcie restartu czy zawieszona. Twoja instancja musi być uruchomiona, abyś mógł przeprowadzać na niej działania.|
-|Typ|Pokazuje system baz danych używany przez serwer.|
-|Wersja|Pokazuje wersję systemu baz danych używanego przez serwer. Upewnij się, czy Twoja strona WWW jest kompatybilna z wybraną wersją.|
-|Saturacja CPU|Pokazuje czas procesora podczas wysycenia. Twoja instancja Web Cloud Databases nie jest limitowana pod względem procesora, ale pamiętaj, aby nie przeciążać procesora Web Cloud Databases.|
-|RAM|Pokazuje pamięć operacyjną dostępną dla Twojej instancji oraz ewentualne przekroczenia pamięci. Twoja instancja Web Cloud Databases dysponuje dedykowaną i gwarantowaną pamięcią RAM. Jeśli zajdzie taka potrzeba, możesz zwiększyć pamięć RAM. Możesz również ustawić alert o jej całkowitym zużyciu.|
-|Infrastruktura|Pokazuje infrastrukturę używaną przez Twoją instancję. Jest to wewnętrzne oznaczenie infrastruktury OVHcloud.|
-|Centrum danych|Pokazuje centrum danych, w którym została uruchomiona instancja.|
-|Host|Pokazuje serwer OVHcloud, na którym utworzona została instancja. Jest to wewnętrzne oznaczenie OVHcloud, które może pojawić się w komunikatach dotyczących [prac modernizacyjnych i potencjalnych incydentów OVHcloud](https://www.status-ovhcloud.com/).|
-
-![cloud databases - bazy danych na instancji](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/general-information/general-information.png){.thumbnail}
-
-### Utworzenie bazy danych
-
-> [!primary]
->
-> Etap ten nie dotyczy systemu baz danych Redis.
->
-
-Aby utworzyć pierwszą bazę danych na Twojej instancji Web Cloud Databases, kliknij zakładkę `Bazy danych`{.action}, następnie przycisk `Dodaj bazę danych`{.action}.
-
-![cloud databases - bazy danych na instancji](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/databases/add-database.png){.thumbnail}
-
-Wyświetli się okno służące do utworzenia bazy danych. Możesz w nim również:
-
--  **utworzyć użytkownika**: użytkownik będzie mógł wykonywać zapytania do bazy danych (odczyt, zapis czy usunięcie danych).
-
-- **dodać autoryzowany adres IP**: żądania pochodzące z tego adresu będą uprawnione do uzyskiwania dostępu do bazy danych.
-
-W zależności od dokonanego wyboru, uzupełnij wymagane informacje, po czym kliknij `Zatwierdź`{.action}.
-
-|Informacja|Opis|
-|---|---|
-|Nazwa bazy danych|Podaj nazwę Twojej przyszłej bazy danych.|
-|Nazwa użytkownika|Podaj nazwę użytkownika, który będzie miał uprawnienia do logowania się do bazy i wykonywania zapytań (opcjonalne, jeśli kratka „*Utwórz użytkownika*” nie jest zaznaczona).|
-|Uprawnienia|Określ zakres uprawnień powiązanych z użytkownikiem. W przypadku użytku standardowego wybierz opcję `Administrator`{.action} (opcjonalne, jeśli kratka „*Utwórz użytkownika*” nie jest zaznaczona).|
-|Hasło|Wybierz hasło, następnie potwierdź je (opcjonalne, jeśli kratka „*Utwórz użytkownika*” nie jest zaznaczona).|
-|IP/maska|Wprowadź adres IP lub maskę IP serwera lub serwerów, które będą miały prawo dostępu do Twoich baz danych (opcjonalne, jeśli kratka „*Dodaj autoryzowany adres IP*” nie jest zaznaczona).|
-
-> [!warning]
->
-> Przy zapisywaniu informacji zalecamy zastosowanie zwyczajowych zasad bezpieczeństwa.
->
-
-![cloud databases - bazy danych na instancji](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/databases/add-database-create-user-confirmation.png){.thumbnail}
+> [!tabs]
+> **Krok 1**
+>>
+>> Przejdź na stronę [Web Cloud Databases](/links/control-panel/web-cloud-databases), następnie wybierz odpowiednie rozwiązanie.
+>>
+>> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases.png){.thumbnail}
+>>
+> **Krok 2**
+>>
+>> Kliknij kartę `Bazy danych`{.action}.
+>>
+> **Krok 3**
+>>
+>> Kliknij `Dodaj bazę danych`{.action}.
+>>
+>> ![web-cloud-databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/databases/add-database.png){.thumbnail}
+>>
+>> > [!primary]
+>> >
+>> > Tworzenie schematów PostgreSQL jest obecnie niedostępne na serwerach Web Cloud Databases.
+>>
+> **Krok 4**
+>>
+>> Wypełnij pola zgodnie z podanymi kryteriami. Możesz bezpośrednio utworzyć użytkownika, zaznaczając pole **"Utwórz użytkownika"**:
+>>
+>> - **Nazwa bazy danych** (wymagane): to nazwa przyszłej bazy danych.
+>> - **Nazwa użytkownika** (tylko jeśli pole `Utwórz użytkownika` jest zaznaczone): użytkownik, który będzie mógł się łączyć z bazą danych i wykonywać zapytania.
+>> - **Uprawnienia** (tylko jeśli pole `Utwórz użytkownika` jest zaznaczone): uprawnienia przypisane do użytkownika w bazie danych. W przypadku standardowego użycia wybierz `Administrator`{.action}. Uprawnienia można zmienić w późniejszym czasie.
+>> - **Hasło**/**Potwierdź hasło** (tylko jeśli pole `Utwórz użytkownika` jest zaznaczone): wybierz hasło, a następnie potwierdź je.
+>>
+>> Kliknij `Zatwierdź`{.action}.
+>>
+>> ![web-cloud-databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/databases/add-database-confirmation.png){.thumbnail}
+<!-- CP-STEPS-END:starting_with_clouddb_create-db_pl -->
 
 ### Tworzenie użytkownika
 
+<!-- CP-STEPS-START:starting_with_clouddb_create-user_pl -->
 > [!primary]
 >
-> Etap ten nie dotyczy systemu baz danych Redis.
->
+> Ten krok nie dotyczy systemu baz danych Redis.
 
-Jeśli utworzyłeś jednocześnie użytkownika i bazę danych podczas poprzedniej operacji, etap ten jest opcjonalny. Należy jednak pamiętać, że w przypadku specyficznego projektu może okazać się konieczne, aby kilku uprawnionych użytkowników wykonywało operacje w Twojej bazie danych. Na przykład jeden z użytkowników może mieć uprawnienia do zapisu i odczytu, podczas gdy inny będzie będzie miał uprawnienia wyłącznie do odczytu.
+Jeśli użytkownik został utworzony jednocześnie z bazą danych w poprzednim kroku, ten krok jest opcjonalny. Projekt może jednak wymagać kilku użytkowników z różnymi uprawnieniami (na przykład odczyt/zapis dla jednego i tylko odczyt dla drugiego).
 
-Jeśli Twój projekt nie wymaga utworzenia dodatkowych użytkowników, możesz przejść do kolejnej operacji. Aby utworzyć nowego użytkownika, kliknij zakładkę `Użytkownicy i uprawnienia`{.action}, następnie przycisk `Dodaj użytkownika`{.action}.
+Jeśli Twój projekt nie wymaga dodatkowego użytkownika, możesz przejść do kolejnego kroku. W przeciwnym razie kliknij poniższe karty, aby wyświetlić kolejne **4** kroki.
 
-![cloud databases - bazy danych na instancji](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/users-and-rights/add-user.png){.thumbnail}
+> [!tabs]
+> **Krok 1**
+>>
+>> Przejdź na stronę [Web Cloud Databases](/links/control-panel/web-cloud-databases), następnie wybierz odpowiednie rozwiązanie.
+>>
+>> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases.png){.thumbnail}
+>>
+> **Krok 2**
+>>
+>> Kliknij kartę `Użytkownicy i uprawnienia`{.action}.
+>>
+> **Krok 3**
+>>
+>> Kliknij `Dodaj użytkownika`{.action}.
+>>
+>> ![web-cloud-databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/users-and-rights/add-user.png){.thumbnail}
+>>
+> **Krok 4**
+>>
+>> Wpisz "nazwę użytkownika" i "hasło", następnie kliknij `Zatwierdź`{.action}.
+<!-- CP-STEPS-END:starting_with_clouddb_create-user_pl -->
 
-Uzupełnij informacje w oknie, które się wyświetli, następnie kliknij `Zatwierdź`{.action}.
+Jeśli chcesz zmienić uprawnienia istniejącego użytkownika, zapoznaj się z przewodnikiem "[Web Cloud Databases - Zmiana uprawnień użytkownika](/pages/web_cloud/web_cloud_databases/modify_rights_for_users)".
 
-|Informacja|Opis|
-|---|---|
-|Nazwa użytkownika|Podaj nazwę użytkownika, który będzie miał prawo logować się do Twojej instancji. Następnie przypisz mu uprawnienia do wykonywania czynności w Twojej bazie danych.|
-|Hasło|Wybierz hasło, a następnie je potwierdź.|
-
-> [!warning]
->
-> Przy zapisywaniu informacji zalecamy zastosowanie zwyczajowych zasad bezpieczeństwa.
->
-
-![cloud databases - bazy danych na instancji](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/users-and-rights/add-user-confirmation.png){.thumbnail}
-
-Po utworzeniu użytkownika przypisz mu uprawnienia do wykonywania czynności w bazie danych (takie jak uprawnienia do odczytu, zapisu lub usuwania danych). W tym celu kliknij ikonkę koła zębatego, a następnie kliknij `Zarządzaj uprawnieniami`{.action}. Wybierz odpowiednie uprawnienia. W przypadku standardowego użycia wybierz opcję `Administrator`{.action}.
-
-![cloud databases - bazy danych na instancji](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/users-and-rights/manage-rights-2.png){.thumbnail}
-
-### Import bazy danych OVHcloud
+### Import bazy danych
 
 > [!primary]
 >
-> Etap ten ma zastosowanie, jeśli chcesz zaimportować kopię zapasową już istniejącej bazy danych. Jeśli ten przypadek Cię nie dotyczy, przejdź do kolejnej operacji. 
->
+> Ten krok dotyczy sytuacji, gdy chcesz zaimportować kopię zapasową istniejącej bazy danych. Jeśli tak nie jest, przejdź do kolejnego kroku.
 
-Istnieje kilka metod importu bazy danych. Narzędzie służące do importu dostępne jest w Panelu klienta. Możesz jednak użyć innego narzędzia, zgodnie z Twoimi preferencjami i wiedzą.
+Aby zaimportować bazę danych, zapoznaj się z przewodnikiem "[Przywracanie i importowanie bazy danych na serwer baz danych](/pages/web_cloud/web_cloud_databases/restore-import-on-database-server)".
 
-Poniższe etapy opisują, jak zaimportować bazę danych przy użyciu narzędzia dostępnego w Panelu klienta.
+Opisano tam kilka metod importu.
 
-- **Etap 1: dostęp do interfejsu importu**
+### Autoryzacja adresu IP
 
-Przejdź do zakładki `Bazy danych`{.action}, kliknij ikonkę koła zębatego, a następnie kliknij `Importuj plik`{.action}. W oknie, które się wyświetli zaznacz kratkę `Importuj nowy plik`{.action}, po czym kliknij `Dalej`{.action}.
+<!-- CP-STEPS-START:starting_with_clouddb_authorize-ip_pl -->
+Aby instancja Web Cloud Databases działała, konieczne jest wskazanie adresów IP lub zakresów IP, które mogą łączyć się z bazami danych.
 
-![cloud databases - bazy danych na instancji](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/databases/import-file.png){.thumbnail}
+W tym celu kliknij poniższe karty, aby wyświetlić kolejne **4** kroki.
 
-- **Etap 2: wysyłanie pliku z kopią zapasową**
+> [!tabs]
+> **Krok 1**
+>>
+>> Przejdź na stronę [Web Cloud Databases](/links/control-panel/web-cloud-databases), następnie wybierz odpowiednie rozwiązanie.
+>>
+>> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases.png){.thumbnail}
+>>
+> **Krok 2**
+>>
+>> Na wyświetlonej stronie kliknij kartę `Autoryzowane adresy IP`{.action}.
+>>
+>> ![Autoryzowane adresy IP](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/authorised-ips.png){.thumbnail}
+>>
+> **Krok 3**
+>>
+>> Kliknij przycisk `Dodaj adres IP / maskę`{.action} nad tabelą.
+>>
+>> ![Interfejs autoryzowanych adresów IP](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/authorized-ips/tab-0000-sftp-hosting-enabled.png){.thumbnail}
+>>
+>> > [!success]
+>> >
+>> > Jeśli chcesz zmienić już autoryzowany adres IP lub zakres adresów IP, kliknij przycisk `...`{.action} po prawej stronie odpowiedniego wiersza w tabeli, a następnie `Edytuj whitelist`{.action}.
+>>
+> **Krok 4**
+>>
+>> W oknie, które się otworzy, należy wypełnić kilka pól:
+>>
+>> ![Dodanie adresu IP lub maski](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/authorized-ips/add-an-ip-address-mask-confirmation.png){.thumbnail}
+>>
+>> - `IP / maska *`{.action}: Wpisz adres IP (np. `203.0.113.44`) lub zakres adresów IP (np. `203.0.113.0/24` obejmujący wszystkie adresy IP od `203.0.113.0` do `203.0.113.255`), które chcesz autoryzować w rozwiązaniu Web Cloud Databases.
+>> - `Opis`{.action} (opcjonalnie): Możesz dodać informacje o roli danego adresu IP lub zakresu adresów IP.
+>> - `Bazy danych`{.action}: Zaznacz to pole, aby adres IP lub zakres adresów IP mógł uzyskać dostęp do baz danych Twojego rozwiązania Web Cloud Databases.
+>> - `SFTP`{.action}: Zaznacz to pole, aby adres IP lub zakres adresów IP mógł uzyskać dostęp do logów Twojego rozwiązania Web Cloud Databases.
+>>
+>> > [!warning]
+>> >
+>> > Zdecydowanie odradzamy zaznaczanie pola `Bazy danych`{.action} w celu autoryzacji zakresu adresów IP `0.0.0.0/0` do dostępu do baz danych.
+>> >
+>> > Umożliwiłoby to dostęp do baz danych dla wszystkich istniejących adresów IPv4.
+>>
+>> Po uzupełnieniu informacji kliknij przycisk `Zatwierdź`{.action}.
+<!-- CP-STEPS-END:starting_with_clouddb_authorize-ip_pl -->
 
-Wprowadź nazwę pliku, która pozwoli Ci zidentyfikować tę kopię zapasową później, jeśli będziesz chciał odtworzyć z niej bazę. Następnie, obok opcji **Plik**, wybierz plik z kopią zapasową bazy danych na Twoim komputerze, a następnie kliknij `Wyślij`{.action}. Odczekaj, aż interfejs wskaże, że plik został pomyślnie wysłany, następnie kliknij przycisk `Dalej`{.action}.
+### Autoryzacja połączeń z hostingu WWW OVHcloud <a name="trustip"></a>
 
-![cloud databases - bazy danych na instancji](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/databases/database-import-new-file-step-2.png){.thumbnail}
+Domyślnie rozwiązanie Web Cloud Databases jest automatycznie powiązane z hostingami WWW OVHcloud. Jeśli chcesz, możesz wyłączyć dostęp hostingów WWW OVHcloud do Web Cloud Databases.
 
-- **Etap 3: import bazy danych**
-
-Wybierz, lub nie, dodatkowe opcje opisane poniżej, a następnie kliknij `Zatwierdź`{.action}.
-
-|Opcje dodatkowe|Opis |
-|---|---|
-|Opróżnij aktualną bazę danych|Bieżąca zawartość bazy danych zostanie w całości usunięta, a następnie zastąpiona zawartością z kopii zapasowej.|
-|Wyślij powiadomienie e-mail po zakończeniu importu|Otrzymasz powiadomienie e-mail, gdy import bazy danych zostanie zakończony.|
-
-![cloud databases - bazy danych na instancji](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/databases/database-import-new-file-step-3-send-email.png){.thumbnail} 
-
-### Autoryzacja adresu IP <a name="trustip"></a>
-
-Aby uzyskać dostęp do instancji Web Cloud Databases, należy wskazać adresy IP lub zakresy adresów IP, które mogą się łączyć z Twoimi bazami danych.  Aby to zrobić, przejdź do zakładki `Autoryzowane adresy IP`{.action}, następnie kliknij `Dodaj adres IP/maskę`{.action}.
-
-![cloud databases - bazy danych na instancji](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/authorized-ips/add-an-ip-address-mask-2.png){.thumbnail}
-
-W oknie, które się wyświetli wskaż adres IP lub maskę, którą chcesz autoryzować w `IP/maska`{.action}. Możesz również dodać opis. Zdecyduj, czy chcesz udzielić dostępu wyłącznie do baz danych czy również do SFTP. Następnie kliknij `Zatwierdź`{.action}.
-
-![cloud databases - bazy danych na instancji](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/authorized-ips/add-an-ip-address-mask-confirmation.png){.thumbnail}
-
-### Zezwalaj na logowanie do hostingu OVHcloud <a name="trustip"></a>
-
-Domyślnie Twoje rozwiązanie Web Cloud Databases jest automatycznie powiązane z hostingiem OVHcloud. Jeśli chcesz, możesz wyłączyć dostęp do Twojej bazy danych Web Cloud Databases z hostingu OVHcloud.
-
-W tym celu kliknij zakładkę `dozwolone IP`{.action}, następnie przycisk `Dostęp do hostingu WWW OVHcloud`{.action}.
-
-![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/authorized-ips/access-to-ovhcloud-web-hosting.png){.thumbnail}
+W tym celu zapoznaj się z przypadkami szczególnymi w przewodniku "[Web Cloud Databases - Jak autoryzować adres IP?](/pages/web_cloud/web_cloud_databases/authorise_IP)", aby włączyć lub wyłączyć dostęp hostingów WWW OVHcloud do Web Cloud Databases.
 
 ### Powiązanie strony WWW z bazą danych
 
-Po utworzeniu bazy danych, przyznaniu praw co najmniej jednemu użytkownikowi, jednocześnie mając co najmniej jeden adres IP lub autoryzację hostingu OVHcloud na instancji Web Cloud Databases, pozostaje połączyć Twoją stronę WWW z bazą danych. Etap ten może zostać zrealizowany na kilka sposobów, w zależności od używanej strony WWW lub CMS (WordPress, Joomla!, etc.), a także od etapu, na którym się znajdujesz, jeśli instalujesz stronę WWW.
+<!-- CP-STEPS-START:starting_with_clouddb_link-website_pl -->
+Teraz, gdy baza danych jest utworzona, co najmniej jeden użytkownik ma uprawnienia do niej, a przynajmniej jeden adres IP lub hostingi WWW OVHcloud zostały autoryzowane w instancji Web Cloud Databases, pozostaje tylko powiązać stronę WWW z bazą danych. Ten krok można wykonać na kilka sposobów, w zależności od strony WWW lub systemu CMS (WordPress, Joomla! itp.) oraz etapu instalacji strony WWW.
 
-Aby pomyślnie zakończyć tę operację, potrzebne Ci będą następujące informacje:
+Do tego potrzebne jest 5 następujących informacji:
 
-|Informacja|Opis |
+|Informacja|Opis|
 |---|---|
-|Nazwa bazy danych|Jest to nazwa, którą określiłeś podczas tworzenia bazy danych. Listę wszystkich baz danych utworzonych w instancji Web Cloud Databases znajdziesz w zakładce `Bazy danych`{.action}.|
-|Nazwa użytkownika|Jest to nazwa, którą określiłeś podczas tworzenia bazy danych lub ewentualnie nazwa użytkownika dodatkowego, którego utworzyłeś. Listę wszystkich użytkowników utworzonych w instancji Web Cloud Databases znajdziesz w zakładce `Użytkownicy i uprawnienia`{.action}.|
-|Hasło użytkownika|Jest to hasło przypisane podczas tworzenia użytkownika.|
-|Nazwa hosta|Jest to nazwa serwera, którą należy wprowadzić, aby Twoja strona WWW mogła się łączyć z Twoją bazą danych. Informacja ta jest dostępna w Panelu klienta w zakładce `Informacje ogólne`{.action} w części **Informacje o dostępie**.|
-|Port serwera|Jest to port do połączenia z Twoją instancją Web Cloud Databases, dzięki czemu twoja strona WWW może połączyć się z Twoją bazą danych. Informacja ta jest dostępna w Panelu klienta w zakładce `Informacje ogólne`{.action} w części **Informacje o dostępie**.|
+|Nazwa bazy danych|Nazwa zdefiniowana podczas tworzenia bazy danych.|
+|Nazwa użytkownika|Nazwa użytkownika zdefiniowana podczas tworzenia bazy danych lub ewentualny dodatkowy użytkownik.|
+|Hasło użytkownika|Hasło powiązane z użytkownikiem, zdefiniowane w poprzednich krokach.|
+|Nazwa hosta serwera|Serwer, który należy podać, aby strona WWW mogła połączyć się z bazą danych.|
+|Port serwera|Port połączenia z instancją Web Cloud Databases, aby strona WWW mogła połączyć się z bazą danych.|
+
+Aby je znaleźć, kliknij poniższe karty, aby wyświetlić kolejne **2** kroki.
+
+> [!tabs]
+> **Krok 1**
+>>
+>> Przejdź na stronę [Web Cloud Databases](/links/control-panel/web-cloud-databases), następnie wybierz odpowiednie rozwiązanie.
+>>
+>> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases.png){.thumbnail}
+>>
+> **Krok 2**
+>>
+>> Pobierz następujące informacje o połączeniu:
+>>
+>> - **Serwer (nazwa hosta) i port:** widoczne na karcie `Informacje ogólne`{.action}, w sekcji `Informacje o połączeniu`.
+>> - **Nazwa użytkownika:** widoczna na karcie `Użytkownicy i uprawnienia`{.action}.
+>> - **Hasło:** hasło powiązane z użytkownikiem. Jeśli je zapomniałeś, przejdź do karty `Użytkownicy i uprawnienia`{.action}, kliknij `...`{.action} po prawej stronie odpowiedniego użytkownika, a następnie `Zmień hasło`{.action}.
+>>
+>> > [!warning]
+>> >
+>> > W przypadku zmiany hasła użytkownika bazy danych wszystkie aplikacje/strony WWW, które korzystają z tej bazy danych, muszą zostać odpowiednio zaktualizowane.
 
 > [!warning]
 >
-> Pole `port`{.action} może nie być dostępne w konfiguracji witryny. Będziesz musiał dodać to pole po nazwie hosta swojego serwera, oddzielając je znakiem *:*. <br><br>
-> Na przykład dla nazwy hosta `zz1111111-002.eu.clouddb.ovh.net` z portem SQL `34567` należy wpisać `zz1111111-002.eu.clouddb.ovh.net:34567` w Część "Host" / "Nazwa hosta".
+> Pole `port`{.action} może nie być dostępne w konfiguracji Twojej strony WWW. Należy dodać to pole po nazwie hosta serwera, oddzielając je znakiem *:*.
 >
+> Na przykład, dla nazwy hosta `aaXXXXX-XXX.eu.clouddb.ovh.net` z portem SQL `12345` należy wpisać `aaXXXXX-XXX.eu.clouddb.ovh.net:12345` w polu "Host" / "Nazwa hosta".
+<!-- CP-STEPS-END:starting_with_clouddb_link-website_pl -->
 
-![cloud databases - bazy danych na instancji](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/general-information/login-information.png){.thumbnail}
+### Pobieranie logów serwera Web Cloud Databases
 
-### Pobierz logi Twojego serwera Web Cloud Databases
-
-Aby uzyskać dostęp do logów rozwiązania Web Cloud Databases, zapoznaj się z naszym przewodnikiem "[Web Cloud Databases - Jak pobrać logi?](/pages/web_cloud/web_cloud_databases/retrieve-logs)".
+Aby uzyskać dostęp do logów rozwiązania Web Cloud Databases, zapoznaj się z przewodnikiem "[Web Cloud Databases - Jak pobrać logi?](/pages/web_cloud/web_cloud_databases/retrieve-logs)".
 
 ## Sprawdź również
 
-W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](/links/partner).
+[Tworzenie baz danych i użytkowników na serwerze baz danych](/pages/web_cloud/web_cloud_databases/create-db-and-user-on-db-server)
 
-Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](/links/support).
+[Logowanie do bazy danych serwera baz danych](/pages/web_cloud/web_cloud_databases/connecting-to-database-on-database-server)
 
-Dołącz do [grona naszych użytkowników](/links/community). 
+[Tworzenie kopii zapasowej i eksport bazy danych na serwerze baz danych](/pages/web_cloud/web_cloud_databases/save-export-on-database-server)
+
+[Przywracanie i importowanie bazy danych na serwer baz danych](/pages/web_cloud/web_cloud_databases/restore-import-on-database-server)
+
+[Konfiguracja serwera baz danych](/pages/web_cloud/web_cloud_databases/configure-database-server)
+
+W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój itp.) skontaktuj się z [partnerami OVHcloud](/links/partner).
+
+Jeśli chcesz uzyskać wsparcie w zakresie użytkowania i konfiguracji Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](/links/support).
+
+Dołącz do [grona naszych użytkowników](/links/community).

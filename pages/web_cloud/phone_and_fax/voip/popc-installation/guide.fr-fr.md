@@ -1,5 +1,5 @@
 ---
-title: 'Installer le logiciel POPC'
+title: "Installer le logiciel POPC"
 excerpt: "Découvrez comment installer et configurer le logiciel POPC pour l'utiliser avec une ligne SIP OVHcloud"
 updated: 2025-04-28
 ---
@@ -8,7 +8,7 @@ updated: 2025-04-28
 
 Le POPC ou « Poste Opérateur PC » est un logiciel qui virtualise un standard téléphonique, idéalement pour le traitement des appels entrants et des transferts internes/externes.
 
-Il se présente sous la forme d'une application, installée sur votre PC sous Windows, qui prend la place d'un téléphone physique. Ainsi vous appelez, décrochez et gérez vos appels non pas en pianotant sur un combiné physique, mais depuis l'application sur votre PC.
+Il remplace un téléphone physique : vous appelez, décrochez et gérez vos appels depuis l'application sur votre PC.
 
 **Découvrez comment installer et configurer le logiciel POPC pour l'utiliser avec une ligne SIP OVHcloud**
 
@@ -17,7 +17,17 @@ Il se présente sous la forme d'une application, installée sur votre PC sous Wi
 - Disposer d'un PC sous Windows (7, 8, 10).
 - Disposer de la [solution POPC OVHcloud](/links/telecom/telephonie-standard) ainsi que de la ligne SIP associée.
 - **Uniquement pour la version d'essai de POPC** : disposer d'une [ligne SIP OVHcloud](/links/telecom/telephonie-voip) sans téléphone Plug & Phone associé.
-- Être connecté à l'[espace client OVHcloud](/links/manager-telecom), partie `Télécom`{.action}.
+
+<!-- CP-NAV-START:telecom-voip-fax -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [VoIP & Fax](/links/control-panel/telecom-voip-fax)
+- **Pour accéder à vos services :** `Télécom`{.action} > `VoIP & Fax`{.action} > Sélectionnez votre groupe de téléphonie
+
+---
+<!-- CP-NAV-END:telecom-voip-fax -->
 
 ![espace client Telecom VoIP](/pages/assets/screens/control_panel/product-selection/telecom/tpl-telecom-02-fr-voip.png){.thumbnail}
 
@@ -35,12 +45,10 @@ Vous devez disposer des trois informations suivantes afin de pouvoir enregistrer
 
 #### Login et domain
 
-Afin de retrouver votre **login** et votre **domain**, suivez les étapes ci-dessous :
+<!-- CP-STEPS-START:sip-login-domain -->
+Afin de retrouver votre **login** et votre **domain**, suivez les étapes ci-dessous.
 
-1. Connectez-vous à votre [espace client OVHcloud](/links/manager) et cliquez sur `Télécom`{.action}.
-1. Cliquez sur `VoIP & Fax`{.action} puis sur le groupe de facturation contenant votre ligne SIP.
-1. Cliquez sur l'onglet `Services`{.action} puis sur la ligne SIP concernée.
-1. Dans l'onglet `Gestion`{.action}, cliquez sur `Informations générales`{.action}.
+Dans l'onglet `Gestion`{.action}, cliquez sur `Informations générales`{.action}.
 
 ![ligne sip - Login et Domain](images/login-domain1.png){.thumbnail}
 
@@ -52,6 +60,7 @@ Vous retrouvez alors, dans le cadre « Informations SIP », votre **login** et v
 >
 > Dans l'image ci-dessus, le domain renseigné l'est à titre d'exemple. Veillez à bien vérifier quel **domain** est associé à votre ligne SIP.
 >
+<!-- CP-STEPS-END:sip-login-domain -->
 
 #### Mot de passe SIP
 
@@ -68,7 +77,7 @@ Vous pouvez utiliser un coffre-fort de mots de passe, comme [KeePass](https://ke
 
 Vous pouvez retrouver le lien de téléchargement du logiciel POPC sur [la page de présentation du logiciel](/links/telecom/telephonie-standard-popc) ou via ce [lien direct](http://www.voiceoperatorpanel.com/priv/VoiceOperatorPanel-OVH-setup.exe).
 
-Comme indiqué sur la page de présentation, il est possible de tester une version d'essai du logiciel POPC. Celle-ci est valable pendant 30 jous à compter de son installation. Au delà de ce délai, l'enregistrement d'une ligne SIP sera automatiquement désactivé.
+Comme indiqué sur la page de présentation, il est possible de tester une version d'essai du logiciel POPC. Celle-ci est valable pendant 30 jours à compter de son installation. Au-delà de ce délai, l'enregistrement d'une ligne SIP sera automatiquement désactivé.
 
 ### Étape 3 : installation de POPC
 

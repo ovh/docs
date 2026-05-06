@@ -14,7 +14,6 @@ Il tuo sito Web si evolve, il suo consumo di risorse diventa tale che il tuo hos
 
 - Disporre di una [offerta di hosting Web](/links/web/hosting) attiva.
 - Aver sottoscritto un [VPS](/links/bare-metal/vps) presente nel proprio account OVHcloud.
-- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager).
 
 ## Procedura
 

@@ -1,7 +1,7 @@
 ---
-title: 'Assigner une adresse MAC virtuelle à une Additional IP'
-excerpt: 'Découvrez comment créer une adresse MAC virtuelle et comment l’associer à une Additional IP'
-updated: 2025-05-16
+title: "Assigner une MAC virtuelle sur un serveur dédié"
+excerpt: "Créez une adresse MAC virtuelle et associez-la à une Additional IP pour un réseau VM transparent sur vos serveurs dédiés"
+updated: 2025-05-15
 ---
 
 ## Objectif
@@ -12,10 +12,19 @@ OVHcloud vous permet d’associer une adresse MAC virtuelle à une adresse IP, a
 
 ## Prérequis
 
-- Posséder [un serveur dédié](/links/bare-metal/bare-metal).
-- Disposer d'une [adresse Additional IP](/links/network/additional-ip) ou un bloc d’Additional IP (RIPE).
-- Être connecté à l'[espace client OVHcloud](/links/manager) ou à [l'API OVHcloud](/links/api).
-- Votre serveur doit supporter les MAC virtuelles. Consultez [ce guide](/pages/bare_metal_cloud/dedicated_servers/network_support_virtual_mac) afin de le déterminer.
+- Posséder [un serveur dédié](/links/bare-metal/bare-metal) qui supporte les MAC virtuelles. Consultez [ce guide](/pages/bare_metal_cloud/dedicated_servers/network_support_virtual_mac) afin de le déterminer.
+- Disposer d’une [adresse Additional IP](/links/network/additional-ip) ou un bloc d’Additional IP (RIPE).
+
+<!-- CP-NAV-START:network-public-ip -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [IP publiques](/links/control-panel/network-public-ip)
+- **Pour accéder à vos services :** `Network`{.action} > `Adresses IP Publiques`{.action}
+
+---
+<!-- CP-NAV-END:network-public-ip -->
 
 > [!warning]
 > - Cette fonctionnalité peut être indisponible ou limitée sur les [serveurs dédiés **Eco**](/links/bare-metal/eco-about). Consultez notre [comparatif](/links/bare-metal/eco-compare) pour plus d’informations.
@@ -38,15 +47,13 @@ OVHcloud vous permet d’associer une adresse MAC virtuelle à une adresse IP, a
 
 #### Via l'espace client OVHcloud
 
-Connectez-vous à votre [espace client OVHcloud](/links/manager), cliquez sur `Network`{.action} dans le menu situé à gauche de l'écran, puis sur `Adresses IP Publiques`{.action}.
-
 Cliquez sur l'onglet `Additional IP`{.action}.
 
-![IP](images/manageIPs2022.png){.thumbnail}
+![Onglet Additional IP dans l'espace client](images/manageIPs2022.png){.thumbnail}
 
 Localisez ensuite votre adresse Additional IP (ou votre bloc) dans la liste, puis cliquez sur le bouton `...`{.action} pour afficher la liste des options.
 
-![IP](images/addvmac.png){.thumbnail}
+![Menu d'options pour l'adresse Additional IP](images/addvmac.png){.thumbnail}
 
 Lorsque la boîte de dialogue « Ajouter une MAC virtuelle » apparaît, sélectionnez un type dans la liste déroulante, entrez un nom de machine virtuelle, puis cliquez sur `Confirmer`{.action}.
 
@@ -57,7 +64,7 @@ Lorsque la boîte de dialogue « Ajouter une MAC virtuelle » apparaît, séle
 > **Nom de la machine virtuelle** : il s'agit du nom souhaité pour l’adresse MAC virtuelle, pour retrouver ensuite plus facilement ce couple IP/MAC.
 >
 
-![IP](images/addvmac2.png){.thumbnail}
+![Dialogue d'ajout de MAC virtuelle avec type et nom de la VM](images/addvmac2.png){.thumbnail}
 
 > [!primary]
 >
@@ -100,8 +107,10 @@ Utilisez l'appel API suivant :
 
 Le bloc ne sera pas déplacé.
 
-Exemple : si vous tentez de déplacer un bloc de 4 IPs avec des vMACs différentes attachées sur un serveur ayant déjà 30 vMACs le bloc ne sera pas déplacé car le total de vMACs serait supérieur aux 32 vMACs autorisées.
+Exemple : si vous tentez de déplacer un bloc de 4 IP avec des vMACs différentes attachées sur un serveur ayant déjà 30 vMACs le bloc ne sera pas déplacé car le total de vMACs serait supérieur aux 32 vMACs autorisées.
 
 ## Aller plus loin
+
+[Configurer son adresse IP en alias](/pages/bare_metal_cloud/dedicated_servers/network_ipaliasing)
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).

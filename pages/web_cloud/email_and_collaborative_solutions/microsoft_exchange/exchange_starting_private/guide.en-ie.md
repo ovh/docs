@@ -12,8 +12,18 @@ This guide is for customers who have just ordered a Private Exchange platform. I
 
 ## Requirements
 
-- access to the [OVHcloud Control Panel](/links/manager)
 - an [OVHcloud Private Exchange solution](/links/web/emails-private-exchange)
+
+<!-- CP-NAV-START:web-exchange -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Exchange](/links/control-panel/web-exchange)
+- **Navigation path:** `Web Cloud`{.action} > `Exchange`{.action} > Select your platform
+
+---
+<!-- CP-NAV-END:web-exchange -->
 
 ## Instructions
 
@@ -88,7 +98,7 @@ Once your server is ready and available, you will receive a confirmation email w
 
 To add the first domain name to your platform and configure the accounts, please refer to our guide on [Adding a domain name to an Exchange service](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_adding_domain). 
 
-## Go further
+## Go further <a name="go-further"></a>
 
 [Editing a DNS zone](/pages/web_cloud/domains/dns_zone_edit)
 

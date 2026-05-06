@@ -22,8 +22,18 @@ Vous souhaitez sauvegarder vos comptes e-mail hébergés sur une plateforme Priv
 ## Prérequis
 
 - Avoir souscrit à une [offre Private Exchange OVHcloud](/links/web/emails-private-exchange) et créé des comptes e-mails sur celle-ci.
-- Être connecté à [l'espace client OVHcloud](/links/manager).
 - [Télécharger Veeam Backup for Microsoft 365](https://www.veeam.com/products/free/backup-microsoft-office-365.html) sur un ordinateur sous Microsoft Windows 10 minimum.
+
+<!-- CP-NAV-START:web-exchange -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Exchange](/links/control-panel/web-exchange)
+- **Pour accéder à vos services :** `Web Cloud`{.action} > `Exchange`{.action} > Sélectionnez votre plateforme
+
+---
+<!-- CP-NAV-END:web-exchange -->
 
 ## En pratique
 
@@ -37,7 +47,7 @@ Suivez les étapes d'installation en cliquant successivement sur les 8 onglets c
 > **Etape 1**
 >>
 >> - Lancez le fichier téléchargé au format `.iso` pour monter le DVD virtuel.
->> - Ouvrez le DVD virtuel `Veeam Backup for Microsoft 365` monté sur votre ordinateur, puis exécutez le fichier d'installation `Veem.Setup.exe`.
+>> - Ouvrez le DVD virtuel `Veeam Backup for Microsoft 365` monté sur votre ordinateur, puis exécutez le fichier d'installation `Veeam.Setup.exe`.
 >>
 >> ![veeam backup exchange](images/exchange_veeam_backup01-2.png){.thumbnail .h-600}
 >>
@@ -144,7 +154,7 @@ Suivez les étapes de configuration en cliquant successivement sur les 10 onglet
 >> >
 >> > @api {v1} /email/exchange POST /email/exchange/{organizationName}/service/{exchangeService}/impersonatedUser
 >>
->> - Dans les cases `exchangeService` et `organizationName` , renseignez la référence de votre plateforme Exchange, visible depuis votre [espace client OVHcloud](/links/manager) dans la rubrique `Web Cloud`{.action} > `Microsoft`{.action} > `Exchange`{.action}, en sélectionnant la plateforme concernée.
+>> - Dans les cases `exchangeService` et `organizationName` , renseignez la référence de votre plateforme Exchange. Cliquez sur [ce lien](/links/control-panel/web-exchange) pour accéder à la section `Exchange`{.action}, puis sélectionnez la plateforme concernée pour retrouver sa référence.
 >>
 >> - Saisissez un mot de passe de 15 caractères minimum entre les guillemets, à côté de `"password": `.
 >>
@@ -170,7 +180,7 @@ Suivez les étapes de configuration en cliquant successivement sur les 10 onglet
 >>
 > **Étape 8**
 >>
->> - Relevez le nom d'hôte de votre plateforme Exchange, celle-ci est visible depuis votre [espace client OVHcloud](/links/manager) dans la rubrique `Web Cloud`{.action} > `Microsoft`{.action} > `Exchange`{.action}, en sélectionnant la plateforme concernée.
+>> - Relevez le nom d'hôte de votre plateforme Exchange. Cliquez sur [ce lien](/links/control-panel/web-exchange) pour accéder à la section `Exchange`{.action}, puis sélectionnez la plateforme concernée.
 >>
 >> - Le nom d'hôte correspond à la valeur mentionnée pour accéder au webmail.
 >>
@@ -181,7 +191,7 @@ Suivez les étapes de configuration en cliquant successivement sur les 10 onglet
 >> Depuis l'interface Veeam Backup, saisissez les informations suivantes :
 >>
 >> - `Server name` : Nom d'hôte de la plateforme Exchange relevé à l'étape 8, renseignez-le sans le `https://`.
->> - `Username` : Nom d'utilisateur relevé à l'étape 7 correspondant a l'« Impersonate User ».
+>> - `Username` : Nom d'utilisateur relevé à l'étape 7 correspondant à l'« Impersonate User ».
 >> - `Password` : Mot de passe de l' « Impersonate User » défini à l'étape 6.
 >>
 >> ![veeam backup exchange](images/exchange_veeam_backup16.png){.thumbnail .h-600}
@@ -241,7 +251,7 @@ Suivez les étapes de création en cliquant successivement sur les 9 onglets ci-
 >> ![veeam backup exchange](images/exchange_veeam_backup23.png){.thumbnail .h-600}
 >>
 > **Étape 7**
->> Depuis cette fenêtre, vous pouvez ajouter des règles d'exclusion avec le bouton `Add`{.action}. Celles-ci seront appliquées sur les comptes e-mail sélectionnez précédemment. Vous pouvez par exemple exclure un calendrier ou un dossier spécifique.
+>> Depuis cette fenêtre, vous pouvez ajouter des règles d'exclusion avec le bouton `Add`{.action}. Celles-ci seront appliquées sur les comptes e-mail sélectionnés précédemment. Vous pouvez par exemple exclure un calendrier ou un dossier spécifique.
 >>
 >> > [!warning]
 >> >
@@ -301,7 +311,7 @@ Suivez les étapes de lancement en cliquant successivement sur les 4 onglets ci-
 
 ## Aller plus loin <a name="go-further"></a>
 
-[Premiers pas avec le service Private Exchange](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_veeam_backup)
+[Premiers pas avec le service Private Exchange](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_starting_private)
 
 Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](/links/partner).
 

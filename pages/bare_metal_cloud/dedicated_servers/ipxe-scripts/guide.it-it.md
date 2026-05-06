@@ -1,6 +1,6 @@
 ---
-title: "Configurare uno script iPXE personalizzato per avviare il tuo server tramite l'API OVHcloud"
-excerpt: "Scopri come l'API OVHcloud ti permette di configurare uno script di innesco personalizzato PXE per boot il tuo server"
+title: "Script iPXE personalizzato per server dedicati"
+excerpt: "Configura uno script iPXE personalizzato tramite l'API OVHcloud per controllare il netboot del tuo server dedicato."
 updated: 2024-02-27
 ---
 
@@ -112,4 +112,4 @@ Ti ricordiamo che il valore dell'attributo `bootScript` è zero.
 
 [iPXE - Open source boot firmware](https://ipxe.org/)
 
-Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.
+Contatta la nostra [Community di utenti](/links/community).

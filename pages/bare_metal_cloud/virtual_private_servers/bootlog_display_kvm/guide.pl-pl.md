@@ -28,7 +28,17 @@ Jeśli Twój serwer VPS nie odpowiada, powinieneś mieć dostęp do niego za po�
 ## Wymagania początkowe
 
 - posiadanie serwera [VPS](/links/bare-metal/vps) na koncie OVHcloud
-- dostęp do [Panelu client OVHcloud](/links/manager)
+
+<!-- CP-NAV-START:baremetal-vps -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [VPS management](/links/control-panel/baremetal-vps)
+- **Ścieżka nawigacji:** `Bare Metal Cloud`{.action} > `Prywatne serwery wirtualne`{.action} > Wybierz VPS
+
+---
+<!-- CP-NAV-END:baremetal-vps -->
 
 ## W praktyce
 
@@ -41,7 +51,7 @@ Jeśli nadal masz dostęp do serwera VPS przez SSH, możesz przejść [do etapu 
 
 ### Etap 1: zrestartuj serwer VPS w trybie Rescue
 
-Zaloguj się do [Panelu client OVHcloud](/links/manager) i uruchom restart serwera w trybie rescue. W razie potrzeby zapoznaj się z naszym [przewodnikiem dotyczącym trybu Rescue](/pages/bare_metal_cloud/virtual_private_servers/rescue).
+Uruchom restart serwera w trybie rescue z poziomu Panelu klienta. W razie potrzeby zapoznaj się z naszym [przewodnikiem dotyczącym trybu Rescue](/pages/bare_metal_cloud/virtual_private_servers/rescue).
 
 ### Etap 2: przeprowadzić wstępną weryfikację
 

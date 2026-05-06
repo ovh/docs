@@ -14,38 +14,43 @@ OVHcloud offers the [Anycast DNS](/links/web/domains-options-anycast) option.
 ## Requirements
 
 - A domain name with an extension compatible with the Anycast DNS option.
-- Access to your [OVHcloud Control Panel](/links/manager), in the `Web Cloud`{.action} section.
+
+<!-- CP-NAV-START:web-domains -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Domain names](/links/control-panel/web-domains)
+- **Navigation path:** `Web Cloud`{.action} > `Domain names`{.action} > Select your domain name
+
+---
+<!-- CP-NAV-END:web-domains -->
 
 ## Instructions
 
-Click on the tabs below to view each of the **5** steps.
+<!-- CP-STEPS-START:enable-anycast -->
+Click on the tabs below to view each of the **4** steps.
 
 > [!tabs]
 > **Step 1**
 >>
->> Log in to the [OVHcloud Control Panel](/links/manager), then go to the `Web Cloud`{.action} section.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Step 2**
->>
->> Click the `Domain names`{.action} menu, then choose the domain name concerned.
+>> Go to the [Domain names](/links/control-panel/web-domains) page, then choose the domain name concerned.
 >>
 >> ![Domain Names](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
 >>
-> **Step 3** 
+> **Step 2** 
 >>
 >> Select the `DNS servers`{.action} tab once you have clicked on the domain concerned.
 >>
 >> ![DNS Servers](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-servers.png){.thumbnail}
 >>
-> **Step 4**
+> **Step 3**
 >>
 >> On the page that pops up, click `Order Anycast DNS`{.action}.
 >>
 >> ![Order Anycast DNS](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-servers/order-anycast-dns.png){.thumbnail}
 >>
-> **Step 5**
+> **Step 4**
 >>
 >> On the new page that opens:
 >>
@@ -57,6 +62,7 @@ Click on the tabs below to view each of the **5** steps.
 >> In the message that appears in green, click the `Purchase order`{.action} button to be redirected to the purchase order for enabling the Anycast DNS option.
 >>
 >> Once you have placed an order, continue to validate it using a payment method to complete the processing of the order.
+<!-- CP-STEPS-END:enable-anycast -->
 
 It may take several minutes for the Anycast DNS option to be enabled.
 

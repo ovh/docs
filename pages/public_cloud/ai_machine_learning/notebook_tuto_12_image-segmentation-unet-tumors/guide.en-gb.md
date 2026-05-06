@@ -23,10 +23,20 @@ At the end of this tutorial, you will have learnt the principal methods to **seg
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](/links/manager)
 - An AI Notebooks project created inside a [Public Cloud project](/links/public-cloud/public-cloud) in your OVHcloud account
 - A user for AI Notebooks
 - A [Kaggle](https://www.kaggle.com/) account to download the dataset
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Navigation path:** `Public Cloud`{.action} > Select your project
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## Instructions
 
@@ -37,6 +47,8 @@ Direct link to the full code can be found [here](https://github.com/ovh/ai-train
 ### Launching a Jupyter notebook with "Tensorflow" via UI (Control Panel)
 
 To launch your notebook from the [OVHcloud Control Panel](/links/manager), refer to the following steps.
+
+<!-- CP-STEPS-START:launch-jupyter-notebook-tensorflow-ui -->
 
 #### Code editor
 
@@ -54,6 +66,8 @@ Using GPUs is recommended because medical imaging is a training intensive task.
 >
 > Here, using `1 GPU` is sufficient.
 >
+
+<!-- CP-STEPS-END:launch-jupyter-notebook-tensorflow-ui -->
 
 ### Launching a Jupyter notebook with "Tensorflow" via CLI
 

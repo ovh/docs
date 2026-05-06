@@ -43,23 +43,14 @@ Wszystkie trasy API wykorzystywane w tym przewodniku są dostępne w sekcji */st
 
 Aby wyświetlić wolumeny usługi, użyj następującej drogi API:
 
-> [!faq]
+> [!api]
 >
-> API:
+> @api {v1} /storage GET /storage/netapp/{serviceName}/share
 >
->> > [!api]
->> >
->> > @api {v1} /storage GET /storage/netapp/{serviceName}/share
->> >
->>
->
-> Ustawienia:
->
->> > **serviceName** *
->> >
->> >> ID usługi
->> >
->
+
+| Parameter | Required | Description |
+|-----------|----------|-------------|
+| `serviceName` | Yes | ID usługi |
 
 Zastąp `serviceName` ID Twojej usługi.
 
@@ -67,26 +58,15 @@ Zastąp `serviceName` ID Twojej usługi.
 
 Aby pobrać informacje dotyczące wolumenu, użyj następującej drogi API:
 
-> [!faq]
+> [!api]
 >
-> API:
+> @api {v1} /storage GET /storage/netapp/{serviceName}/share/{shareId}
 >
->> > [!api]
->> >
->> > @api {v1} /storage GET /storage/netapp/{serviceName}/share/{shareId}
->> >
->>
->
-> Ustawienia:
->
->> > **serviceName** *
->> >
->> >> ID usługi
->> >
->> > **shareId** *
->> >
->> >> ID woluminu
->
+
+| Parameter | Required | Description |
+|-----------|----------|-------------|
+| `serviceName` | Yes | ID usługi |
+| `shareId` | Yes | ID woluminu |
 
 Zamień `serviceName` na ID usługi i `shareId` na ID wolumenu.
 
@@ -94,23 +74,14 @@ Zamień `serviceName` na ID usługi i `shareId` na ID wolumenu.
 
 Aby utworzyć nowy wolumen, użyj następującej drogi API:
 
-> [!faq]
+> [!api]
 >
-> API:
+> @api {v1} /storage POST /storage/netapp{serviceNme}/share
 >
->> > [!api]
->> >
->> > @api {v1} /storage POST /storage/netapp{serviceNme}/share
->> >
->>
->
-> Ustawienia:
->
->> > **serviceName** *
->> >
->> >> ID usługi
->> >
->
+
+| Parameter | Required | Description |
+|-----------|----------|-------------|
+| `serviceName` | Yes | ID usługi |
 
 Zastąp `serviceName` ID Twojej usługi.
 
@@ -121,26 +92,15 @@ Możesz również podać nazwę i opis z `name` i `opis`.
 
 Aby poznać ścieżkę montowania wolumenu, użyj następującej drogi API:
 
-> [!faq]
+> [!api]
 >
-> API:
+> @api {v1} /storage GET /storage/netapp{serviceName}/share/{shareId}/accessPath
 >
->> > [!api]
->> >
->> > @api {v1} /storage GET /storage/netapp{serviceName}/share/{shareId}/accessPath
->> >
->>
->
-> Ustawienia:
->
->> > **serviceName** *
->> >
->> >> ID usługi
->> >
->> > **shareId** *
->> >
->> >> ID woluminu
->
+
+| Parameter | Required | Description |
+|-----------|----------|-------------|
+| `serviceName` | Yes | ID usługi |
+| `shareId` | Yes | ID woluminu |
 
 Zamień `serviceName` na ID usługi i `shareId` na ID wolumenu.
 
@@ -158,26 +118,15 @@ Polecenie montowania będzie inne, w zależności od protokołu wybranego dla wo
 
 Aby usunąć wolumen, użyj następującej drogi API:  
 
-> [!faq]
+> [!api]
 >
-> API:
+> @api {v1} /storage DELETE /storage/netapp/{serviceName}/share/{shareId}
 >
->> > [!api]
->> >
->> > @api {v1} /storage DELETE /storage/netapp/{serviceName}/share/{shareId}
->> >
->>
->
-> Ustawienia:
->
->> > **serviceName** *
->> >
->> >> ID usługi
->> >
->> > **shareId** *
->> >
->> >> ID woluminu
->
+
+| Parameter | Required | Description |
+|-----------|----------|-------------|
+| `serviceName` | Yes | ID usługi |
+| `shareId` | Yes | ID woluminu |
 
 Zamień `serviceName` na ID usługi i `shareId` na ID wolumenu do usunięcia.
 

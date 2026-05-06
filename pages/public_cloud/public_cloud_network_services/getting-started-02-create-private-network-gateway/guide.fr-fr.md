@@ -15,10 +15,21 @@ Ces opérations peuvent être réalisées depuis l’[espace client OVHcloud](/l
 ## Prérequis
 
 - Posséder un [projet Public Cloud](/links/public-cloud/public-cloud) dans votre compte OVHcloud
-- Avoir accès à l’[API OVHcloud](/links/api), à l’[espace client OVHcloud](/links/manager) ou à l’environnement OpenStack ([Tutoriel](/pages/public_cloud/public_cloud_cross_functional/prepare_the_environment_for_using_the_openstack_api))
+- Avoir accès à l’[API OVHcloud](/links/api) ou à l’environnement OpenStack ([Tutoriel](/pages/public_cloud/public_cloud_cross_functional/prepare_the_environment_for_using_the_openstack_api))
 - Pour OpenStack, il est nécessaire de mettre en place le client OpenStack
 
 ## En pratique
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Projets Public Cloud](/links/control-panel/publiccloud-projects)
+- **Pour accéder à vos services :** `Public Cloud`{.action} > Sélectionnez votre projet
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ### Depuis l'espace client OVHcloud
 
@@ -28,9 +39,7 @@ Ces opérations peuvent être réalisées depuis l’[espace client OVHcloud](/l
 > [!tabs]
 > **Etape 1**
 >>
->> Connectez-vous à [l’espace client OVHcloud](/links/manager), rendez-vous dans la section `Public Cloud`{.action} et sélectionnez le projet Public Cloud concerné.
->>
->> Cliquez sur `Gateway`{.action} dans le menu de gauche sous l'onglet **Network**.
+>> Cliquez sur `Gateway`{.action} dans le menu de gauche sous l’onglet **Network**.
 >>
 >> Veuillez noter qu'il est nécessaire d'avoir activé le vRack avant de poursuivre. Si vous n'en possédez pas, nous vous invitons à consulter cette [section](/pages/public_cloud/public_cloud_network_services/getting-started-07-creating-vrack#activation) du guide correspondant.
 >>

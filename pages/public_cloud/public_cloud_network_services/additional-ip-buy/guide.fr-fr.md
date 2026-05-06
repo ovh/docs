@@ -23,16 +23,24 @@ Ces adresses Additional IP ne pourront être migrées que vers les instances d'u
 
 ## Prérequis
 
-- Être connecté à l’[espace client OVHcloud](/links/manager).
-- Disposer d'au moins une instance. Consultez à cet effet [le guide pour créer une instance depuis l'espace client](/pages/public_cloud/compute/public-cloud-first-steps).
+- Disposer d’au moins une instance. Consultez à cet effet [le guide pour créer une instance depuis l’espace client](/pages/public_cloud/compute/public-cloud-first-steps).
 
 > [!warning]
-> Cette fonctionnalité n'est actuellement pas disponible pour les instances Metal.
+> Cette fonctionnalité n’est actuellement pas disponible pour les instances Metal.
 >
 
-## En pratique
+<!-- CP-NAV-START:publiccloud-projects -->
+---
 
-Connectez-vous à l’[espace client OVHcloud](/links/manager), rendez-vous dans la section `Public Cloud`{.action} et sélectionnez le projet Public Cloud concerné.
+### Accès à l’espace client OVHcloud
+
+- **Lien direct :** [Projets Public Cloud](/links/control-panel/publiccloud-projects)
+- **Pour accéder à vos services :** `Public Cloud`{.action} > Sélectionnez votre projet
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
+
+## En pratique
 
 Dans le menu de gauche, ouvrez `IP Publiques`{.action} dans **Network**.
 
@@ -81,7 +89,8 @@ Consultez notre guide sur la [gestion des commandes OVHcloud](/pages/account_and
 
 Vous pouvez également retrouver le bon de commande dans votre espace client, rubrique `Tableau de bord`{.action}, en cliquant sur `Voir mes commandes`{.action}.
 
-La prochaine étape consiste à configurer l’IP dans votre système d'exploitation. Consultez [notre guide dédié à cette configuration](/pages/public_cloud/public_cloud_network_services/getting-started-04-configure-additional-ip-to-instance).
+
+La prochaine étape consiste à configurer l’IP dans votre système d’exploitation. Consultez [notre guide dédié à cette configuration](/pages/public_cloud/public_cloud_network_services/getting-started-04-configure-additional-ip-to-instance).
 
 ## Aller plus loin
 

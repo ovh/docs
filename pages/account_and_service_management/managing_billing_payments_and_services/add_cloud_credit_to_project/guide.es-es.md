@@ -1,7 +1,7 @@
 ---
 title: 'Añadir crédito Cloud'
 excerpt: 'Cómo añadir créditos o códigos promocionales a su proyecto de Public Cloud'
-updated: 2025-04-28
+updated: 2026-05-05
 ---
 
 ## Objetivo
@@ -14,11 +14,21 @@ Esto significa que este crédito cloud se cargará en primer lugar y que, a cont
 ## Requisitos
 
 - Un proyecto de [Public Cloud](/links/public-cloud/public-cloud) en su cuenta de OVHcloud
-- Accesar a su [área de cliente de OVHcloud](/links/manager)
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Ruta de navegación:** `Public Cloud`{.action} > Seleccione su proyecto
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## Procedimiento
 
-Inicie sesión en su [área de cliente de OVHcloud](/links/manager), acceda a la sección `Public Cloud`{.action} y seleccione el proyecto de Public Cloud correspondiente. Abra `Crédito y códigos promocionales`{.action} en el menú de la izquierda en **Ajustes**.
+Abra `Crédito y códigos promocionales`{.action} en el menú de la izquierda en **Ajustes**.
 
 > [!warning]
 >
@@ -55,9 +65,14 @@ El saldo del código promocional aparecerá en la lista `Crédito y códigos pro
 
 > [!primary]
 >
-> Los períodos de validez de los códigos promocionales suelen ser más limitados, por lo que el saldo del código promocional se utilizará antes que el crédito Public Cloud.
+> Los períodos de validez de los códigos promocionales suelen estar limitados a 1 mes; se recomienda utilizarlos lo antes posible. El saldo del código promocional se utilizará antes que el crédito Public Cloud.
 >
 
 ## Más información
+
+> [!primary]
+>
+> Los nuevos clientes reciben automáticamente 200 € de crédito de prueba al activar su primer proyecto Public Cloud. Consulte nuestra guía "[Creando tu primer proyecto de Public Cloud de OVHcloud](/pages/public_cloud/public_cloud_cross_functional/create_a_public_cloud_project)".
+>
 
 Interactúe con nuestra [comunidad de usuarios](/links/community).

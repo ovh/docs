@@ -1,6 +1,6 @@
 ---
-title: Konfiguration der Linux Firewall mit iptables
-excerpt: Erfahren Sie hier, wie Sie einen Server mit iptables sichern
+title: "Dedicated Server - iptables unter Linux konfigurieren"
+excerpt: "Sichern Sie Ihren Dedicated Server durch die Konfiguration von iptables-Firewallregeln zur Filterung des Netzwerkverkehrs unter Linux."
 updated: 2024-12-20
 ---
 
@@ -240,5 +240,9 @@ Sie können nun Firewall-Regeln mit *iptables* für Ihren Linux-Server konfiguri
 Zögern Sie nicht, zu experimentieren, denn Sie können nicht mehr benötigte Regeln immer wieder löschen, oder alle Regeln leeren und neu starten.
 
 ## Weiterführende Informationen
+
+- [Dedicated Server - Edge Network Firewall](/pages/bare_metal_cloud/dedicated_servers/firewall_network)
+
+- [Dedicated Server - Network Security Dashboard](/pages/bare_metal_cloud/dedicated_servers/network_security_dashboard)
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

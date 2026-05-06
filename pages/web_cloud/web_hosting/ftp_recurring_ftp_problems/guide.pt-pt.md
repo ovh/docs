@@ -1,7 +1,7 @@
 ---
 title: "Resolver os erros recorrentes durante a utilização de um programa FTP"
 excerpt: "Encontre aqui as anomalias mais frequentes associadas ao seu software FTP"
-updated: 2025-10-20
+updated: 2026-03-31
 ---
 
 ## Objetivo
@@ -20,7 +20,16 @@ A utilização de software FTP durante a ligação ao seu [alojamento Web Cloud]
 ## Requisitos
 
 - Ter um [serviço de alojamento Web Cloud](/links/web/hosting).
-- Ter acesso à [Área de Cliente OVHcloud](/links/manager).
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Acesso à Área de Cliente OVHcloud
+
+- **Ligação direta:** [Alojamentos](/links/control-panel/web-hosting)
+- **Caminho de navegação:** `Web Cloud`{.action} > `Alojamentos`{.action} > Selecione o seu alojamento web
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## Instruções
 
@@ -32,18 +41,11 @@ Esta mensagem no software [FileZilla](/pages/web_cloud/web_hosting/ftp_filezilla
 
 Se os dados que deseja trocar por esta via não são confidenciais, clique em `OK`{.action}.
 
-Caso contrário, aceda à [Área de Cliente OVHcloud](/links/manager), na secção `Web Cloud`{.action} e, a seguir, clique em `Alojamentos`{.action}. Selecione o alojamento correspondente e escolha o separador `FTP-SSH`{.action}.
-
-Se dispõe de um alojamento [Perso](/links/web/hosting-personal-offer), selecione a casa `Desativado`{.action} na coluna `SFTP`{.action} e aguarde alguns minutos.
-
-Se dispõe de um alojamento [Pro](/links/web/hosting-professional-offer) ou [Performance](/links/web/hosting-performance-offer), clique no botão `...`{.action} à direita do utilizador FTP em causa, depois por `Alterar`{.action}.
-
-Escolha `SFTP`{.action} ou `Ativado`{.action} (para ativar o protocolo SSH no seu alojamento), clique em `Seguinte`{.action} e depois em `Validar`{.action}. Aguarde alguns minutos.
+Caso contrário, ative o protocolo SFTP consultando o nosso guia "[Alojamento web - Como ativar o acesso SFTP](/pages/web_cloud/web_hosting/enable_sftp)".
 
 > [!primary]
 >
 > Para qualquer outra mensagem de erro, consulte a secção `Diagnóstico` dos nossos guias de [Hosting](/products/web-cloud-hosting).
->
 
 ### Transferi os meus ficheiros com um software FTP, mas o meu site não aparece.
 
@@ -59,28 +61,24 @@ Se não conseguir autenticar-se, altere a sua palavra-passe FTP de acordo com as
 
 A falta de espaço no seu alojamento partilhado pode provocar disfunções no seu site quando o tenta alterar ou atualizar.
 
-Para verificar o espaço de armazenamento restante no alojamento, clique nas janelas abaixo para visualizar cada uma das etapas **3**.
+<!-- CP-STEPS-START:check-disk-space -->
+Para verificar o espaço de armazenamento restante no alojamento, clique nos separadores abaixo para visualizar cada uma das **2** etapas.
 
 > [!tabs]
 > **Etapa 1**
 >>
->> Aceda à [Área de Cliente OVHcloud](/links/manager) e aceda à secção `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Etapa 2**
->>
->> Clique no menu `Alojamentos`{.action} e escolha o alojamento web em causa.
+>> Aceda à página [Alojamentos](/links/control-panel/web-hosting) e escolha o alojamento web correspondente.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Etapa 3**
+> **Etapa 2**
 >>
 >> No marco **Informações gerais**, encontrará **Espaço de disco**.
 >>
 >> ![disk_space](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-disk-space.png){.thumbnail}
 >>
 >> O espaço de armazenamento utilizado aparece abaixo desta menção.
+<!-- CP-STEPS-END:check-disk-space -->
 
 ### Não consigo transferir os meus ficheiros para o servidor FTP.
 

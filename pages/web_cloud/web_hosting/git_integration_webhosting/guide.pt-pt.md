@@ -13,12 +13,22 @@ No atual panorama digital, as empresas estão a tornar-se cada vez mais dinâmic
 ## Requisitos
 
 - Ter um serviço de [alojamento web OVHcloud](/links/web/hosting).
-- Ter acesso à [Área de Cliente OVHcloud](/links/manager), na secção Web Cloud.
 - Ter uma conta [GitHub](https://github.com/) e ter acesso à mesma.
 
 > [!primary]
 >
 > À data, apenas a plataforma GitHub é suportada no âmbito da utilização com os serviços de alojamento Web da OVHcloud.
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Acesso à Área de Cliente OVHcloud
+
+- **Ligação direta:** [Web hosting](/links/control-panel/web-hosting)
+- **Caminho de navegação:** `Web Cloud`{.action} > `Alojamentos`{.action} > Selecione o seu alojamento web
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## Instruções
 

@@ -18,25 +18,31 @@ Ad esempio: vuoi che tutte le email contenenti "[SPAM]" nell'oggetto siano elimi
 ## Prerequisiti
 
 - Disporre di una soluzione email MX Plan (disponibile tramite: un'offerta di [hosting Web](/links/web/hosting), l'[Hosting gratuito 100M](/links/web/domains-free-hosting) incluso con un dominio o l'offerta MX Plan ordinata separatamente).
-- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
 
 > [!warning]
 >
 > Questa guida ti mostra come utilizzare il servizio MX Plan storico. Per la nuova offerta, i filtri vengono gestiti direttamente tramite la Webmail OWA (**O**utlook **W**eb **A**pp). Utilizza la tabella qui sotto per identificare la tua offerta.
 >
 
-Vecchia versione della soluzione MX Plan|Nuova versione della soluzione MX Plan|
+|Vecchia versione della soluzione MX Plan|Nuova versione della soluzione MX Plan|
 |---|---|
 |![email](images/mxplan-starter-legacy-step1.png){.thumbnail}<br> Il servizio è indicato nel riquadro “Abbonamento”|![email](images/mxplan-starter-new-step1.png){.thumbnail}<br>Nel riquadro "Riepilogo", individua il "Referenza server"|
 |Prosegui nella lettura di questa guida nella sezione "[In pratica](#oldmxplan)".|Consulta la nostra guida "[Regole di Posta in arrivo dall'interfaccia OWA](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/creating-inbox-rules-in-owa-mx-plan)".|
 
+<!-- CP-NAV-START:web-mx-plan -->
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [MX Plan](/links/control-panel/web-mx-plan)
+- **Percorso di navigazione:** `Web Cloud`{.action} > `MX Plan`{.action} > Seleziona il tuo servizio MX Plan
+
+---
+<!-- CP-NAV-END:web-mx-plan -->
+
 ## Procedura <a name="oldmxplan"></a>
 
-1. Accedi allo [Spazio Cliente OVHcloud](/links/manager).
-1. Accedi alla sezione `Web Cloud`{.action}.
-1. Clicca su `MX Plan`{.action}.
-1. Seleziona il dominio.
-1. Nella scheda `Email`{.action} del tuo servizio MX Plan, visualizzi la lista dei tuoi indirizzi email. Una colonna `Filtri` è visibile nella tabella degli account email. Clicca sull'icona dell'imbuto.
+Nella scheda `Email`{.action} del tuo servizio MX Plan, visualizzi la lista dei tuoi indirizzi email. Una colonna `Filtri` è visibile nella tabella degli account email. Clicca sull'icona dell'imbuto.
 
 ![email](images/img_3239.png){.thumbnail}
 
@@ -139,7 +145,7 @@ Se l'oggetto del messaggio contiene la parola "money" **e il** mittente del mess
 
 ![email](images/img_3242.jpg){.thumbnail}
 
-## Per saperne di più
+## Per saperne di più <a name="go-further"></a>
 
 [Iniziare a utilizzare la soluzione MX Plan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities)
 

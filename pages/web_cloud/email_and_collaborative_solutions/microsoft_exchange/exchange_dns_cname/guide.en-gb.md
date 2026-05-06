@@ -16,10 +16,29 @@ When you add a domain name to your email service, you may be asked to configure 
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](/links/manager)
-- An [Exchange](/links/web/emails) or [Email Pro](/links/web/email-pro) solution
+- An [Exchange](/links/web/emails-exchange) or [Email Pro](/links/web/email-pro) solution
 - A domain name linked to your email service, see [Adding a domain name to an email service](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_adding_domain)
 - Administrative rights to [configure the DNS zone](/pages/web_cloud/domains/dns_zone_edit) for the domain name concerned (in the OVHcloud Control Panel or an external management interface)
+
+<!-- CP-NAV-START:web-exchange -->
+<!-- CP-NAV-START:web-email-pro -->
+---
+
+### OVHcloud Control Panel Access
+
+**Exchange:**
+
+- **Direct link:** [Exchange](/links/control-panel/web-exchange)
+- **Navigation path:** `Web Cloud`{.action} > `Exchange`{.action} > Select your platform
+
+**Email Pro:**
+
+- **Direct link:** [Email Pro](/links/control-panel/web-email-pro)
+- **Navigation path:** `Web Cloud`{.action} > `Email Pro`{.action} > Select your platform
+
+---
+<!-- CP-NAV-END:web-email-pro -->
+<!-- CP-NAV-END:web-exchange -->
 
 ## Instructions
 
@@ -29,7 +48,7 @@ The CNAME record is used here as an alias, it points to a target that itself poi
 
 The CNAME record is used as a validation code (token) for our [**Hosted Exchange**](/links/web/emails-hosted-exchange) and [**Email Pro**](/links/web/email-pro) solutions. It is added to the DNS zone of the domain name you want to validate for use with your emails. The purpose is to check that the user of the email service is authorised to use the domain name they are adding.
 
-In the diagram below, the email service ([Exchange](/links/web/emails) or [Email Pro](/links/web/email-pro)) is represented by the contents of the green frame.<br>
+In the diagram below, the email service ([Exchange](/links/web/emails-exchange) or [Email Pro](/links/web/email-pro)) is represented by the contents of the green frame.<br>
 You have created accounts (**contact**, **john.smith** and **mary.johnson** in this example) that will have email addresses associated with them.<br>
 The domain name **mydomain.ovh** has been added to the email service (please refer to the guide on [Adding a domain name to your email service](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_adding_domain)).<br>
 The email service generates a unique validation code (“**abcd1-check**” in our example).<br>
@@ -42,6 +61,7 @@ As soon as the email service reads the validation code in the DNS zone of the do
 
 ### Step 1 - Understand the OVHcloud CNAME diagnostic <a name="step1"></a>
 
+<!-- CP-STEPS-START:cname-diagnostic -->
 The **CNAME** diagnostic box will appear in the `Associated domains`{.action} tab of your email service after you have added your domain name.
 
 ![cnamedomainemail](images/cname_exchange_diagnostic.png){.thumbnail}
@@ -54,9 +74,11 @@ In the example above, the box is red. Here are the possible reasons for this sta
 ![email](images/email-dns-conf-cname02.png){.thumbnail}
 
 - **The domain name declared is not registered with OVHcloud and does not use OVHcloud DNS servers**. Your domain name is registered at another registrar. You will need to contact your domain name provider to verify how to access the DNS zone configuration.
+<!-- CP-STEPS-END:cname-diagnostic -->
 
-### Step 2 - Retrieve the validation code <a name="step2"></a>
+### Step 2 - Retrieve the validation code <a name=”step2”></a>
 
+<!-- CP-STEPS-START:retrieve-validation-code -->
 Go to the `Associated domains`{.action} tab, and click on the red `CNAME` box in the “diagnostic” column to retrieve the information required.
 
 The CNAME record is displayed in the dialog box that appears.
@@ -64,9 +86,11 @@ The CNAME record is displayed in the dialog box that appears.
 ![cnamedomainemail](images/cname_exchange_informations.png){.thumbnail}
 
 The middle line consists of the verification code and the target (`a1bcd-check.mydomain.ovh to ovh.com.` in the example above) for the CNAME record.
+<!-- CP-STEPS-END:retrieve-validation-code -->
 
 ### Step 3 - Create the CNAME record <a name="step3"></a>
 
+<!-- CP-STEPS-START:create-cname-record -->
 Select the tab that corresponds to the interface you are using:
 
 > [!tabs]
@@ -107,6 +131,7 @@ Select the tab that corresponds to the interface you are using:
 To check that the CNAME record configuration has been successfully queried by your OVHcloud email service, open it in the Control Panel and go to the tab `Associated domains`{.action}. If the `CNAME` box is no longer present in the “diagnostic” column, the domain name was associated with your service. If not, then your configuration changes may not have propagated fully.
 
 ![cnamedomainemail](images/cname_exchange_diagnostic_green.png){.thumbnail}
+<!-- CP-STEPS-END:create-cname-record -->
 
 ## Go further
 

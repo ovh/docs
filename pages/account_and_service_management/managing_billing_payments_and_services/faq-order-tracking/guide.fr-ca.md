@@ -14,19 +14,19 @@ Vous ne pouvez régler votre commande qu’une fois identifié à l’aide de vo
 
 #### Trucs et astuces
 
-Vous avez quitté la page de votre commande ? Connectez-vous à votre [espace client OVHcloud](/links/manager), cliquez sur votre nom en haut à droite, puis cliquez sur `Mes commandes`{.action}. Vous pourrez alors visualiser votre commande et la régler.
+Vous avez quitté la page de votre commande ? Rendez-vous sur la page [Mes commandes](/links/control-panel/billing-orders). Vous pourrez alors visualiser votre commande et la régler.
 
 ### Comment consulter le statut de mon paiement ?
 
-Connectez-vous à votre [espace client OVHcloud](/links/manager), cliquez sur votre nom en haut à droite, puis sur `Mes factures`{.action}. Si une facture est en attente de paiement, directement sur votre tableau de bord, il vous sera proposé d'en régler le solde.
+Ouvrez la page [Mes factures](/links/control-panel/billing-invoices). Si une facture est en attente de paiement, il vous sera proposé d'en régler le solde.
 
 #### Trucs et astuces
 
-Connectez-vous à votre [espace client OVHcloud](/links/manager), cliquez sur votre nom en haut à droite, puis cliquez sur `Mes moyens de paiement`{.action}. Vous pouvez alors y enregistrer votre moyen de paiement. Vos factures seront ainsi automatiquement régularisées.
+Sur la page [Moyens de paiement](/links/control-panel/billing-payment-methods), vous pouvez enregistrer votre moyen de paiement. Vos factures seront ainsi automatiquement régularisées.
 
 ### Comment suivre l'état de ma commande ?
 
-Connectez-vous à votre [espace client OVHcloud](/links/manager) et cliquez sur `Voir mes commandes`{.action}.
+Ouvrez la page [Mes commandes](/links/control-panel/billing-orders).
 
 #### Trucs et astuces
 
@@ -60,7 +60,7 @@ Une facture en attente de paiement peut également être à l’origine de cette
 
 #### Trucs et astuces
 
-Connectez-vous à votre [espace client OVHcloud](/links/manager), cliquez sur votre nom en haut à droite, puis cliquez sur `Mes moyens de paiement`{.action}. Vous pouvez alors y enregistrer votre moyen de paiement. Vos factures seront ainsi automatiquement régularisées.
+Sur la page [Moyens de paiement](/links/control-panel/billing-payment-methods), vous pouvez enregistrer votre moyen de paiement. Vos factures seront ainsi automatiquement régularisées.
 
 ## Aller plus loin
 

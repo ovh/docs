@@ -14,6 +14,17 @@ Ce guide explique comment fournir à un utilisateur les droits essentiels lui pe
 - Savoir [gérer les utilisateurs du compte](/pages/account_and_service_management/account_information/ovhcloud-users-management)
 - Savoir [comment configurer des stratégies pour IAM](/pages/account_and_service_management/account_information/iam-policy-ui)
 
+<!-- CP-NAV-START:iam-policies -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Politiques IAM](/links/control-panel/iam-policies)
+- **Pour y accéder :** `Identité, Sécurité & Opérations`{.action} > `Politiques`{.action}
+
+---
+<!-- CP-NAV-END:iam-policies -->
+
 ## En pratique
 
 Pour pouvoir se connecter à l'espace client OVHcloud, un utilisateur doit disposer au moins de cet ensemble minimal de droits sur la ressource du compte :

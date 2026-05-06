@@ -1,140 +1,239 @@
 ---
 title: "Gestire la cronologia di una zona DNS"
-excerpt: "Questa guide ti mostra come consultare, confrontare, scaricare e ripristinare i tuoi backup della zona DNS"
-updated: 2025-04-28
+excerpt: "Scopri come consultare, confrontare, scaricare e ripristinare i backup della zona DNS"
+updated: 2026-03-27
 ---
+
+<style>
+details>summary {
+    color:rgb(33, 153, 232) !important;
+    cursor: pointer;
+}
+details>summary::before {
+    content:'\25B6';
+    padding-right:1ch;
+}
+details[open]>summary::before {
+    content:'\25BC';
+}
+</style>
 
 ## Obiettivo
 
-La zona **D**omain **N**ame **S**ystem (**DNS**) di un dominio costituisce il file di configurazione di quest'ultimo. ed è composta da informazioni tecniche chiamate *record DNS*. La zona DNS è, in un certo senso, come un centro di scambi.
+La zona **D**omain **N**ame **S**ystem (**DNS**) di un dominio costituisce il file di configurazione di quest'ultimo. È composta da informazioni tecniche chiamate *record DNS*. La zona DNS è, in un certo senso, un centro di smistamento.
 
 Per maggiori informazioni, consulta le nostre guide:
 
-- [Scopri tutto sui server DNS](/pages/web_cloud/domains/dns_server_general_information)
-- [Sapere tutto sulla zona DNS](/pages/web_cloud/domains/dns_zone_general_information)
-- [Scopri tutto sui record DNS](/pages/web_cloud/domains/dns_zone_records)
+- [Tutto sui server DNS](/pages/web_cloud/domains/dns_server_general_information)
+- [Tutto sulla zona DNS](/pages/web_cloud/domains/dns_zone_general_information)
+- [Tutto sui record DNS](/pages/web_cloud/domains/dns_zone_records)
 
-Per diversi motivi, potresti aver bisogno di applicare una configurazione DNS precedente al tuo dominio.
+Per diversi motivi, potresti dover applicare una configurazione DNS precedente al tuo dominio.
 
-Da questo momento, la gestione dei DNS è semplificata grazie alla cronologia delle zone DNS.
+La gestione dei DNS è semplificata grazie alla cronologia delle zone DNS.
 
-**Questa guida ti mostra come visualizzare, confrontare, scaricare e ripristinare i backup della zona DNS**
+**Scopri come consultare, confrontare, scaricare e ripristinare i backup della zona DNS**
 
 ## Prerequisiti
 
-- Disporre di una zona DNS per il dominio nello [Spazio Cliente OVHcloud](/links/manager)
-- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
-- Avere accesso alla gestione del dominio
+- Avere accesso alla gestione del dominio interessato
+
+<!-- CP-NAV-START:web-dns-zone -->
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [Zone DNS](/links/control-panel/web-dns-zone)
+- **Percorso di navigazione:** `Web Cloud`{.action} > `Zone DNS`{.action} > Seleziona il tuo nome di dominio
+
+---
+<!-- CP-NAV-END:web-dns-zone -->
 
 ## Procedura
-
-Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **4** passi.
-
-> [!tabs]
-> **Step 1**
->>
->> Accedi allo [Spazio Cliente OVHcloud](/links/manager) e clicca su `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Step 2**
->>
->> Clicca sul menu `Zone DNS`{.action} e seleziona il dominio interessato.
->>
->> ![DNS zones](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
->>
-> **Step 3**
->>
->> ![DNS history tool](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/dns-zone-history.png){.thumbnail}
->>
->> Clicca su `Visualizza la cronologia della tua zona DNS`{.action}. 
->>
-> **Step 4**
->>
->> Visualizzi una tabella con la cronologia dei backup della zona DNS, ordinata in base alla data più recente e meno recente. In cima alla tabella è riportata la versione corrente della zona DNS. In questa pagina è possibile eseguire le operazioni seguenti:
->>
->> - [Visualizzare una zona DNS](#view)
->> - [Scaricare una zona DNS](#download)
->> - [Ripristinare una zona DNS](#restore)
->> - [Confronta due zone DNS](#compare)
 
 > [!primary]
 >
 > I backup della zona DNS sono soggetti alle seguenti limitazioni:
 >
 > - Conserviamo al massimo 200 backup per la stessa zona DNS.
-> - Ogni volta che il backup dura più di 31 giorni, viene automaticamente eliminato, ad eccezione degli ultimi **5 backup** completati.
->
+> - Quando un backup ha più di 31 giorni, viene automaticamente eliminato, ad eccezione dei **5 backup più recenti** effettuati.
 
-### Visualizzare una zona DNS <a name="view"></a>
+**Clicca sull'azione che preferisci per visualizzarne il contenuto.**
 
-Per visualizzare la zona DNS scelta, identifica la riga corrispondente nella tabella e clicca sull’icona presente nella colonna `Visualizza`{.action}.
+<!-- CP-STEPS-START:view-dns-zone -->
+/// details | Visualizzare una zona DNS
 
-![Visualizzare una zona DNS](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/visualize-dns-eyes.png){.thumbnail}
+Clicca sulle schede qui sotto per visualizzare i **4** step in sequenza.
 
-Visualizzi i dati della zona DNS.
+> [!tabs]
+> **Step 1**
+>>
+>> Accedi alla pagina [Zone DNS](/links/control-panel/web-dns-zone), poi seleziona il dominio interessato.
+>>
+>> ![Zone DNS](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
+>>
+> **Step 2**
+>>
+>> La tabella che appare mostra la zona DNS del tuo dominio. Contiene la lista dei record DNS presenti. Sulla destra della tabella, diversi pulsanti ti permettono di eseguire azioni sulla zona DNS.
+>>
+>> ![Strumento cronologia DNS](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/dns-zone-history.png){.thumbnail}
+>>
+>> Clicca su `Visualizza la cronologia della tua zona DNS`{.action}.
+>>
+> **Step 3**
+>>
+>> Nella nuova pagina che appare, una tabella elenca la cronologia dei backup della zona DNS, dal più recente al più vecchio. In cima alla tabella si trova la versione attuale della zona DNS.
+>>
+>> Per visualizzare la zona DNS di tua scelta, individua la riga corrispondente nella tabella e clicca sull'icona presente nella colonna `Visualizza`{.action}.
+>>
+>> ![Visualizzare una zona DNS](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/visualize-dns-eyes.png){.thumbnail}
+>>
+> **Step 4**
+>>
+>> I dati della zona DNS selezionata vengono mostrati.
+>>
+>> ![Dettaglio di una zona DNS](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/details-dns-zone.png){.thumbnail}
+>>
+>> Clicca su `Chiudi`{.action} per tornare alla pagina principale "Cronologia della zona DNS".
 
-![Dettagli di una zona DNS](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/details-dns-zone.png){.thumbnail}
+///
+<!-- CP-STEPS-END:view-dns-zone -->
 
-Clicca su `Chiudere`{.action} per tornare alla pagina principale "Cronologia della zona DNS".
+<!-- CP-STEPS-START:download-dns-zone -->
+/// details | Scaricare una zona DNS
 
-### Scarica una zona DNS <a name="download"></a>
+Clicca sulle schede qui sotto per visualizzare i **3** step in sequenza.
 
-Per scaricare la zona DNS scelta, identifica la riga corrispondente nella tabella e clicca sull’icona presente nella colonna `Scarica`{.action}.
+> [!tabs]
+> **Step 1**
+>>
+>> Accedi alla pagina [Zone DNS](/links/control-panel/web-dns-zone), poi seleziona il dominio interessato.
+>>
+>> ![Zone DNS](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
+>>
+> **Step 2**
+>>
+>> La tabella che appare mostra la zona DNS del tuo dominio. Contiene la lista dei record DNS presenti. Sulla destra della tabella, diversi pulsanti ti permettono di eseguire azioni sulla zona DNS.
+>>
+>> ![Strumento cronologia DNS](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/dns-zone-history.png){.thumbnail}
+>>
+>> Clicca su `Visualizza la cronologia della tua zona DNS`{.action}.
+>>
+> **Step 3**
+>>
+>> Nella nuova pagina che appare, una tabella elenca la cronologia dei backup della zona DNS, dal più recente al più vecchio. In cima alla tabella si trova la versione attuale della zona DNS.
+>>
+>> Per scaricare la zona DNS di tua scelta, individua la riga corrispondente nella tabella e clicca sull'icona presente nella colonna `Scarica`{.action}.
+>>
+>> ![Scaricare una zona DNS](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/download-dns-zone.png){.thumbnail}
+>>
+>> La zona DNS viene scaricata in formato .txt.
 
-![Scarica una zona DNS](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/download-dns-zone.png){.thumbnail}
+///
+<!-- CP-STEPS-END:download-dns-zone -->
 
-La zona DNS può essere scaricata in formato .txt.
+<!-- CP-STEPS-START:restore-dns-zone -->
+/// details | Ripristinare una zona DNS
 
-### Ripristinare una zona DNS <a name="restore"></a>
+Clicca sulle schede qui sotto per visualizzare i **4** step in sequenza.
 
-Per sostituire la zona DNS corrente con una diversa, è sufficiente ripristinare una zona DNS precedente. Nella tabella che contiene la cronologia delle zone DNS, identifica la riga corrispondente alla zona DNS che vuoi ripristinare (verifica la data a sinistra della riga) e clicca sull’icona presente nella colonna `Ripristinare`{.action}.
-
-![Ripristinare una zona DNS](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/restore-dns-zone.png){.thumbnail}
-
-Viene visualizzata la finestra successiva.
-
-![Conferma ripristino zona DNS](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/confirmation-restore-dns-zone.png){.thumbnail}
-
-Verificare che la data specificata nel messaggio corrisponda alla zona DNS da ripristinare. Come indica il banner giallo, è importante ricordare che la zona DNS corrente (presente in cima all'elenco della cronologia delle zone DNS) verrà eliminata e sostituita dalla zona DNS che si desidera ripristinare.
-
-Clicca su `Ripristinare`{.action} per confermare il ripristino o su `Annullare`{.action}.
+> [!tabs]
+> **Step 1**
+>>
+>> Accedi alla pagina [Zone DNS](/links/control-panel/web-dns-zone), poi seleziona il dominio interessato.
+>>
+>> ![Zone DNS](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
+>>
+> **Step 2**
+>>
+>> La tabella che appare mostra la zona DNS del tuo dominio. Contiene la lista dei record DNS presenti. Sulla destra della tabella, diversi pulsanti ti permettono di eseguire azioni sulla zona DNS.
+>>
+>> ![Strumento cronologia DNS](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/dns-zone-history.png){.thumbnail}
+>>
+>> Clicca su `Visualizza la cronologia della tua zona DNS`{.action}.
+>>
+> **Step 3**
+>>
+>> Nella nuova pagina che appare, una tabella elenca la cronologia dei backup della zona DNS, dal più recente al più vecchio. In cima alla tabella si trova la versione attuale della zona DNS.
+>>
+>> Per sostituire la zona DNS attuale con un'altra, è sufficiente ripristinare una zona DNS precedente. Nella tabella con la cronologia delle zone DNS, individua la riga corrispondente alla zona DNS che vuoi ripristinare (verifica la data a sinistra della riga) e clicca sull'icona presente nella colonna `Ripristina`{.action}.
+>>
+>> ![Ripristinare una zona DNS](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/restore-dns-zone.png){.thumbnail}
+>>
+> **Step 4**
+>>
+>> Viene visualizzata la finestra seguente.
+>>
+>> ![Conferma ripristino zona DNS](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/confirmation-restore-dns-zone.png){.thumbnail}
+>>
+>> Verifica che la data indicata nel messaggio corrisponda alla zona DNS che vuoi ripristinare. Come indicato dal banner giallo, ricorda che la zona DNS attuale (in cima all'elenco della cronologia delle zone DNS) verrà eliminata e sostituita dalla zona DNS che desideri ripristinare.
+>>
+>> Clicca su `Ripristina`{.action} per confermare il ripristino o su `Annulla`{.action}.
 
 > [!primary]
 >
-> La modifica o il ripristino di una zona DNS comporta un tempo di propagazione che va da **4** a **24** ore per essere presa totalmente in carico dalla rete DNS.
->
+> La modifica o il ripristino di una zona DNS comporta un tempo di propagazione da **4** a **24** ore per essere pienamente applicata sulla rete DNS.
 
-### Confronta due zone DNS <a name="compare"></a>
+///
+<!-- CP-STEPS-END:restore-dns-zone -->
 
-È possibile confrontare il contenuto di due zone DNS. Nella tabella che contiene la cronologia della zona DNS, identifica le due righe corrispondenti alle due zone DNS che vuoi confrontare (verifica la data a sinistra di ogni riga) e selezionale. Per confrontare queste due versioni di zona DNS, clicca in alto a sinistra su `Confrontare le versioni`{.action}.
+<!-- CP-STEPS-START:compare-dns-zones -->
+/// details | Confrontare due zone DNS
 
-![Confronta due zone DNS](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/compare-two-dns-zone.png){.thumbnail}
+Clicca sulle schede qui sotto per visualizzare i **4** step in sequenza.
 
-Viene visualizzata una nuova pagina con il contenuto delle due zone DNS. Sopra ogni versione viene visualizzata la data corrispondente. Di default, la versione della zona DNS più recente si trova a sinistra e la più vecchia a destra. Un codice a colori consente di identificare le differenze di contenuto.<br>
-A sinistra, il contenuto evidenziato in rosso è stato modificato o eliminato nella versione più recente.<br>
-A destra, il contenuto evidenziato in verde è stato modificato o aggiunto rispetto alla versione precedente. 
+> [!tabs]
+> **Step 1**
+>>
+>> Accedi alla pagina [Zone DNS](/links/control-panel/web-dns-zone), poi seleziona il dominio interessato.
+>>
+>> ![Zone DNS](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
+>>
+> **Step 2**
+>>
+>> La tabella che appare mostra la zona DNS del tuo dominio. Contiene la lista dei record DNS presenti. Sulla destra della tabella, diversi pulsanti ti permettono di eseguire azioni sulla zona DNS.
+>>
+>> ![Strumento cronologia DNS](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/dns-zone-history.png){.thumbnail}
+>>
+>> Clicca su `Visualizza la cronologia della tua zona DNS`{.action}.
+>>
+> **Step 3**
+>>
+>> Nella nuova pagina che appare, una tabella elenca la cronologia dei backup della zona DNS, dal più recente al più vecchio. In cima alla tabella si trova la versione attuale della zona DNS.
+>>
+>> Puoi confrontare il contenuto di due zone DNS. Nella tabella con la cronologia della zona DNS, individua le due righe corrispondenti alle due zone DNS che vuoi confrontare (verifica la data a sinistra di ogni riga) e selezionale. Per confrontare queste due versioni di zona DNS, clicca in alto a sinistra su `Confronta le versioni`{.action}.
+>>
+>> ![Confrontare due zone DNS](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/compare-two-dns-zone.png){.thumbnail}
+>>
+> **Step 4**
+>>
+>> Viene visualizzata una nuova pagina con il contenuto delle due zone DNS. Sopra ogni versione è mostrata la data corrispondente. Per impostazione predefinita, la versione più recente della zona DNS si trova a sinistra e la più vecchia a destra. Un codice colore ti permette di identificare le differenze di contenuto.
+>>
+>> A sinistra, il contenuto evidenziato in rosso è stato modificato o eliminato nella versione più recente.
+>>
+>> A destra, il contenuto evidenziato in verde è stato modificato o aggiunto rispetto alla versione più vecchia.
+>>
+>> Puoi inoltre aggiornare le date delle versioni che desideri confrontare tramite i due menu a discesa.
+>>
+>> ![Dettagli confronto due zone DNS](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/compare-dns-zone-details.png){.thumbnail}
 
-È inoltre possibile aggiornare le date delle versioni che si desidera confrontare utilizzando i due elenchi a discesa.
-
-![Dettagli confronto due zone DNS](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/compare-dns-zone-details.png){.thumbnail}
-
-Questa guida ti mostra come confrontare due zone DNS e come visualizzare, scaricare, ripristinare ed eliminare una zona DNS.
+///
+<!-- CP-STEPS-END:compare-dns-zones -->
 
 ## Per saperne di più
 
-[Scopri tutto sui server DNS](/pages/web_cloud/domains/dns_server_general_information)
+[Tutto sui server DNS](/pages/web_cloud/domains/dns_server_general_information)
 
-[Sapere tutto sulla zona DNS](/pages/web_cloud/domains/dns_zone_general_information)
+[Tutto sulla zona DNS](/pages/web_cloud/domains/dns_zone_general_information)
 
-[Scopri tutto sui record DNS](/pages/web_cloud/domains/dns_zone_records)
+[Tutto sui record DNS](/pages/web_cloud/domains/dns_zone_records)
 
-[Accedi allo Spazio Cliente OVHcloud](/pages/account_and_service_management/account_information/ovhcloud-account-login)
+[Accedere allo Spazio Cliente OVHcloud](/pages/account_and_service_management/account_information/ovhcloud-account-login)
 
 [Creare una zona DNS in OVHcloud](/pages/web_cloud/domains/dns_zone_create)
 
-Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](/links/partner).
+Per prestazioni specializzate (referenziamento, sviluppo, ecc.), contatta i [partner OVHcloud](/links/partner).
 
-Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](/links/support).
+Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, consulta le nostre [offerte di supporto](/links/support).
 
 Contatta la nostra [Community di utenti](/links/community).

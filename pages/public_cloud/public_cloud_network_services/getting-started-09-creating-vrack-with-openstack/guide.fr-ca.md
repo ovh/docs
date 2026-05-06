@@ -25,6 +25,18 @@ Avant de commencer, assurez-vous de lire ces guides pour configurer correctement
 
 ## En pratique
 
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Projets Public Cloud](/links/control-panel/publiccloud-projects)
+- **Pour accéder à vos services :** `Public Cloud`{.action} > Sélectionnez votre projet
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
+
+
 ### Sommaire
 
 - [Étape 1 : Activer et gérer un vRack](#activating-vrack)
@@ -55,7 +67,7 @@ Avant de commencer, assurez-vous de lire ces guides pour configurer correctement
 
 Si vous avez un projet plus ancien et que vous n'avez pas de vRack, vous devez en commander un. Ce produit est gratuit et la mise à disposition ne prend que quelques minutes.
 
-Connectez-vous à votre [espace client OVHcloud](/links/manager) et cliquez sur le bouton `Ajouter un service`{.action} (icône de panier d'achat) dans le menu situé à gauche de l'écran. Utilisez le filtre en haut de la page ou faites défiler vers le bas pour trouver le service `vRack`{.action}.
+Cliquez sur le bouton `Ajouter un service`{.action} (icône de panier d'achat) dans le menu situé à gauche de l'écran. Utilisez le filtre en haut de la page ou faites défiler vers le bas pour trouver le service `vRack`{.action}.
 
 ![Commander vrack](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/network/orderingvrack25.png){.thumbnail}
 

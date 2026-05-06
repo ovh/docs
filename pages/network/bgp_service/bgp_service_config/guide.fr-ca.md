@@ -1,7 +1,7 @@
 ---
 title: Configuration du service BGP
 excerpt: En utilisant le service BGP, vous bénéficiez d'un contrôle total sur vos politiques de routage et la résilience du réseau. Suivez ce guide pour configurer et optimiser vos sessions BGP
-updated: 2025-03-31
+updated: 2026-04-03
 ---
 
 ## Objectif
@@ -21,6 +21,30 @@ Le protocole Border Gateway Protocol (BGP) vous permet de construire des infrast
 - Un [réseau privé vRack](/links/network/vrack).
 - Des connaissances des réseaux IP et du protocole de routage BGP.
 - Des connaissances des paramètres réseau Linux.
+
+## Capacités et limites du service
+
+Avant de configurer le service BGP, veuillez prendre connaissance des capacités et contraintes suivantes :
+
+- **Un service BGP par région** : Un seul service BGP peut être déployé par région disponible (hors régions 3-AZ, APAC et US actuellement).
+- **Plusieurs blocs IP** : Il est possible d'utiliser plusieurs blocs IPv4 et IPv6 par région.
+- **Tailles de blocs utilisables** : /24 à /30 pour l'IPv4, /56 pour l'IPv6.
+- **Pile IP** : Les configurations IPv4 seul ou IPv4+IPv6 sont prises en charge. L'IPv6 seul n'est pas pris en charge actuellement.
+- **Blocs d'IP dédiés** : Les blocs d'adresses Additional IP utilisés par un service BGP ne doivent pas être partagés avec d'autres services OVHcloud, tels que les serveurs dédiés, les instances Public Cloud, etc.
+- **Nombre maximum d'annonces par pair BGP** : Jusqu'à 32 préfixes IPv4 et 32 préfixes IPv6 par client.
+- **Tailles d'annonces** : Pour l'IPv4, tout préfixe entre /24 et /32 peut être annoncé. Pour l'IPv6, seuls les préfixes /56 et /64 peuvent être annoncés.
+- **BFD** : Le protocole Bidirectional Forwarding Detection (BFD) est activé par défaut du côté d'OVHcloud, avec des paramètres fixes (intervalle de 500ms, multiplicateur de 8). Pour utiliser le protocole BFD, configurez votre service BGP avec ces mêmes paramètres.
+- **Sessions BGP** : 4 sessions BGP par client (4 IPv4 + 4 IPv6). Au-delà de 4 hôtes en peering BGP, le déploiement d'un Route Server est nécessaire (voir le cas d'utilisation [Configuration BGP avancée utilisant des Route Servers](#cas-dutilisation-configuration-bgp-avancée-utilisant-des-route-servers-rs)).
+- **Hôtes** : Jusqu'à 10 hôtes par client.
+
+## Cas d'usage potentiels
+
+Le service BGP prend en charge une large gamme d'architectures réseau personnalisées ; les exemples suivants illustrent certaines des implémentations les plus courantes :
+
+- **Exécutez votre propre stack de routage** (FRR/Bird/VMware NSX, etc.) sur des serveurs Bare Metal ou des routeurs virtuels et établissez des sessions BGP standard directement avec les Edges OVHcloud.
+- **Créez des frontends à haute disponibilité** : utilisez BGP pour déplacer des adresses IP entre plusieurs serveurs (actif/actif ou actif/passif) en modifiant vos annonces BGP, permettant ainsi un basculement rapide (*failover*).
+- **Mettez en place le routage ECMP / multi-path** entre vos hôtes et le backbone OVHcloud pour renforcer la résilience sur plusieurs serveurs ou VM.
+- **Concevez des nœuds de services multi-tenants** en remplaçant le proxy-ARP L2 par du routage L3 natif, où les préfixes IP des clients sont routés via votre infrastructure en tant que *next hop*.
 
 ## En pratique
 
@@ -46,7 +70,14 @@ Le vRack doit contenir les serveurs qui participeront au peering BGP.
 
 > [!warning]
 >
-> **Important**: le vRack ne doit contenir que des serveurs dans une zone de disponibilité (AZ) spécifique. Puisque seules les régions 1-AZ (possédant une seule AZ) sont disponibles pendant l'alpha, vos serveurs doivent simplement être dans la même région.
+> **Important** :
+> - Seules les régions 1-AZ (possédant une seule AZ) sont disponibles pendant l'alpha.
+> - Le bloc IP utilisé avec le service BGP ne doit **PAS** être attaché ni associé au vRack. Le bloc IP est annoncé via les sessions BGP, et non par association au vRack.
+>
+
+> [!primary]
+>
+> Si vous prévoyez d'utiliser le service BGP dans plusieurs localisations, utilisez un **vRack distinct par localisation** pour éviter les conflits de routage et simplifier la gestion de votre réseau.
 >
 
 ### Étape 4 : fournir les paramètres de configuration de votre service BGP
@@ -87,6 +118,8 @@ Vous pouvez maintenant configurer les sessions BGP de votre côté. Vous trouver
 
 ## Cas d'utilisation : Configuration BGP simple - Load Balancing utilisant BGP et ECMP
 
+Cette architecture convient aux configurations avec **jusqu'à 4 hôtes en peering BGP**, le nombre de sessions BGP côté OVHcloud étant limité à 4. Au-delà, reportez-vous au cas d'utilisation [Configuration BGP avancée utilisant des Route Servers](#cas-dutilisation-configuration-bgp-avancée-utilisant-des-route-servers-rs) ci-dessous.
+
 Voici une architecture simple qui vous permet d'effectuer un load balancing de votre trafic sur 3 hôtes :
 
 ![BGPaaS Basic Architecture](images/bgpaas_basic-peering.png){.thumbnail}
@@ -101,7 +134,7 @@ Les paramètres suivants sont à remplacer dans les fichiers de configuration de
 | :--- | :--- |
 | **OVHcloud_ASN** | ASN privé utilisé par les Edges OVHcloud |
 | **CUSTOMER_ASN** | ASN privé fourni par OVHcloud. |
-| **CUSTOMER_PREFIX_V4 <br> CUSTOMER_PREFIX_V6** | Préfixes publics alloués à l'ustilisation d'IPv4 et IPv6 |
+| **CUSTOMER_PREFIX_V4 <br> CUSTOMER_PREFIX_V6** | Préfixes publics alloués à l'utilisation d'IPv4 et IPv6 |
 | **RS_IPV4 <br> RS_IPV6** | Adresses IP RS du client dans la plage privée/ULA, utilisées pour l'appairage BGP et la connectivité à l'intérieur du vRack. |
 | **EDGE_IPV4 <br> EDGE_IPV6** | Adresses IP des Edges OVHcloud dans la plage privée/ULA, utilisées pour l'appairage BGP et la connectivité à l'intérieur du vRack client. |
 | **HOST_IPV4 <br> HOST_IPV6** | Autres adresses IP des hôtes client dans la plage privée/ULA, utilisées comme Next Hop BGP et comme pairs à l'intérieur du vRack |
@@ -112,7 +145,7 @@ Pour établir une session BGP à l'aide de FRR, suivez les étapes ci-dessous.
 
 #### Étape 1 : Installer FRR
 
-Sur un système basé sur Debian, installez FRR avec la commande suivante:
+Sur un système basé sur Debian, installez FRR avec la commande suivante :
 
 ```bash
 sudo apt update && sudo apt install frr frr-pythontools
@@ -132,8 +165,8 @@ sudo apt update && sudo apt install frr frr-pythontools
 
 Dans cet exemple :
 
-- Les hôtes n'acceptent que les routes par défaut provenant des Edges OVHcloud
-- Les hôtes n'annoncent que les préfixes du client aux Edges OVHcloud
+- Les hôtes n'acceptent que les routes par défaut provenant des Edges OVHcloud.
+- Les hôtes n'annoncent que les préfixes du client aux Edges OVHcloud.
 
 Listes de préfixes et route-maps connexes pour filtrer les routes :
 
@@ -220,7 +253,7 @@ router bgp <CUSTOMER_ASN>
   neighbor PG_EDGE_V6 route-map RM_EDGE_V6_OUT out
 ```
 
-#### Étape 3: Redémarrer FRR
+#### Étape 3 : Redémarrer FRR
 
 Après avoir modifié la configuration, redémarrez FRR pour appliquer les modifications :
 
@@ -228,7 +261,7 @@ Après avoir modifié la configuration, redémarrez FRR pour appliquer les modif
 sudo systemctl restart frr
 ```
 
-#### Étape 4: Vérifier l'état de la session BGP
+#### Étape 4 : Vérifier l'état de la session BGP
 
 Vérifiez l'état de votre session BGP avec la commande suivante :
 
@@ -236,11 +269,11 @@ Vérifiez l'état de votre session BGP avec la commande suivante :
 show protocols all
 ```
 
-#### Étape 5: Vérifier la connectivité entrante et sortante
+#### Étape 5 : Vérifier la connectivité entrante et sortante
 
 Pour vous assurer que votre session BGP fonctionne correctement, testez le trafic entrant et sortant :
 
-- **Vérifier le trafic entrant (entrant)**
+- **Trafic entrant**
 
 Utilisez un serveur distant pour effectuer un ping ou traceroute vers votre préfixe IP publié :
 
@@ -251,7 +284,7 @@ traceroute YOUR_ADVERTISED_IP
 
 Vérifiez que le trafic atteint votre réseau via les chemins d'accès BGP attendus.
 
-- **Vérifier le trafic sortant (sortant)**
+- **Trafic sortant**
 
 Depuis votre serveur, vérifiez la table de routage et assurez-vous que vos routes BGP sont bien utilisées :
 
@@ -262,15 +295,18 @@ vtysh -c 'show ip route bgp'
 
 Confirmez que le trafic sortant suit les chemins d'accès BGP corrects.
 
-#### Étape 6: Vérifier la connectivité auprès de l'équipe OVHcloud
+#### Étape 6 : Vérifier la connectivité auprès de l'équipe OVHcloud
 
 Une fois votre installation terminée et après avoir effectué des tests de base, vous devez nous en informer par e-mail à l'adresse <bgp_alpha@ovh.net>.
 
 Nous nous assurerons que la connectivité BGP et les annonces IP sont correctes de notre côté.
 
-## Cas d'utilisation: Configuration BGP avancée utilisant des Route Servers (RS)
+<a name="cas-dutilisation-configuration-bgp-avancée-utilisant-des-route-servers-rs"></a>
 
-Les Route Servers sont déployés et gérés par le client. Ceux-ci doivent déployer leurs RS sur des hôtes dédiés.
+## Cas d'utilisation : Configuration BGP avancée utilisant des Route Servers (RS)
+
+Au-delà de 4 hôtes, déployez et gérez un Route Server (RS) sur un hôte dédié. Cette architecture permet de supporter **jusqu'à 10 hôtes/nexthops**. Le Route Server peut être déployé in-path ou out-of-path, selon votre architecture.
+
 Les RS s'appairent avec les Load Balancing Edges (LBEdges) et les Hôtes, et établissent deux sessions par pair (une pour l'IPv4, l'autre pour l'IPv6).
 
 Voici une vue d'ensemble du système :
@@ -291,7 +327,7 @@ Les paramètres ci-dessous doivent être substitués par ceux validés avec OVHc
 | :--- | :--- |
 | **OVHcloud_ASN** | ASN privé utilisé par les Edges OVHcloud |
 | **CUSTOMER_ASN** | ASN privé fourni par OVHcloud. |
-| **CUSTOMER_PREFIX_V4 <br> CUSTOMER_PREFIX_V6** | Préfixes publics alloués à l'ustilisation d'IPv4 et IPv6 |
+| **CUSTOMER_PREFIX_V4 <br> CUSTOMER_PREFIX_V6** | Préfixes publics alloués à l'utilisation d'IPv4 et IPv6 |
 | **RS_IPV4 <br> RS_IPV6** | Adresses IP RS du client dans la plage privée/ULA, utilisées pour l'appairage BGP et la connectivité à l'intérieur du vRack. |
 | **EDGE_IPV4 <br> EDGE_IPV6** | Adresses IP des Edges OVHcloud dans la plage privée/ULA, utilisées pour l'appairage BGP et la connectivité à l'intérieur du vRack client. |
 | **HOST_IPV4 <br> HOST_IPV6** | Autres adresses IP des hôtes client dans la plage privée/ULA, utilisées comme Next Hop BGP et comme pairs à l'intérieur du vRack |
@@ -302,7 +338,7 @@ Pour établir une session BGP à l'aide de FRR, suivez les étapes ci-dessous.
 
 #### Étape 1 : Installer FRR
 
-Sur un système basé sur Debian, installez FRR avec la commande suivante:
+Sur un système basé sur Debian, installez FRR avec la commande suivante :
 
 ```bash
 sudo apt update && sudo apt install frr frr-pythontools
@@ -466,10 +502,10 @@ router bgp <CUSTOMER_ASN>
 >
 > La configuration ci-dessous est une suggestion d'installation pour éviter toute annonce inattendue entre les pairs BGP.
 
-Dans cet exemple:
+Dans cet exemple :
 
-- Les hôtes n'acceptent que les routes par défaut provenant des RS
-- Les hôtes n'annoncent que les préfixes du client aux RS
+- Les hôtes n'acceptent que les routes par défaut provenant des RS.
+- Les hôtes n'annoncent que les préfixes du client aux RS.
 
 Listes de préfixes et route-maps connexes pour filtrer les routes :
 
@@ -578,7 +614,7 @@ show protocols all
 
 Pour vous assurer que votre session BGP fonctionne correctement, testez le trafic entrant et sortant :
 
-- **Vérifier le trafic entrant (entrant)**
+- **Trafic entrant**
 
 Utilisez un serveur distant pour effectuer un ping ou traceroute vers votre préfixe IP publié :
 
@@ -589,7 +625,7 @@ traceroute YOUR_ADVERTISED_IP
 
 Vérifiez que le trafic atteint votre réseau via les chemins d'accès BGP attendus.
 
-- **Vérifier le trafic sortant (sortant)**
+- **Trafic sortant**
 
 Depuis votre serveur, vérifiez la table de routage et assurez-vous que vos routes BGP sont bien utilisées :
 
@@ -606,21 +642,34 @@ Une fois votre installation terminée et après avoir effectué des tests de bas
 
 Nous nous assurerons que la connectivité BGP et les annonces IP sont correctes de notre côté.
 
-## Limites
+## Bonnes pratiques en production
 
-Le nombre de pairs côté OVHcloud est limité à 4. Si vous avez besoin de plus de 4 pairs, vous devrez installer un réflecteur de route sur votre infrastructure, afin de redistribuer les routes vers vos hôtes.
+### Maintenance d'un hôte sans interruption de trafic
 
-- **Sessions BGP :** 4 par client (4IPv4 + 4IPv6)
-- **Préfixes IP :** jusqu'à 32 préfixes IPv4 et 32 préfixes IPv6 par client
-- **Hôtes :** 10 par client
+Pour retirer un serveur en vue d'une maintenance (mise à jour de l'OS, intervention matérielle, etc.) sans interruption de trafic, vous pouvez utiliser le mécanisme `BGP graceful shutdown` (RFC 8326). Ce mécanisme signale aux pairs de déprioriser les routes vers l'hôte *avant* la coupure de la session, ce qui permet au trafic de basculer sur les hôtes restants sans perte de paquets. Cependant, cela ne **permet pas de maintenir des sessions** (par exemple, TCP) si celles-ci ne sont pas synchronisées entre les hôtes annonçant la route.
+
+Avec FRR, lancez un `graceful shutdown` sur l'hôte à maintenir :
+
+```bash
+vtysh -c 'configure terminal' -c 'router bgp <CUSTOMER_ASN>' -c 'bgp graceful-shutdown'
+```
+
+FRR marque alors toutes les routes annoncées avec la communauté `GRACEFUL_SHUTDOWN`, indiquant aux pairs de privilégier les chemins alternatifs. Une fois le trafic drainé (vérifiez les tables de routage sur les autres hôtes ou le Route Server), vous pouvez procéder à la maintenance.
+
+Après la maintenance, désactivez le `graceful shutdown` :
+
+```bash
+vtysh -c 'configure terminal' -c 'router bgp <CUSTOMER_ASN>' -c 'no bgp graceful-shutdown'
+```
+
+L'hôte reprend l'annonce de ses routes et recommence à recevoir du trafic.
 
 ## Régions disponibles
 
-Ce produit est disponible dans les régions suivantes:
+Ce produit est disponible dans les régions suivantes :
 
 | Localisation de la région | Nom de la région | Type de région |
 | :--- | :--- | :--- |
-| Europe (France - Paris) (ne sera disponible qu'en version bêta) | eu-west-par | 3-AZ |
 | Europe (France - Gravelines) | eu-west-gra | 1-AZ |
 | Europe (France - Roubaix) | eu-west-rbx | 1-AZ |
 | Europe (France - Strasbourg) | eu-west-sbg | 1-AZ |
@@ -629,9 +678,11 @@ Ce produit est disponible dans les régions suivantes:
 | Europe (UK - Erith) | eu-west-eri | 1-AZ |
 | North America (Canada - East - Beauharnois) | ca-east-bhs | 1-AZ |
 | North America (Canada - East - Toronto) | ca-east-tor | 1-AZ |
-| Asia-Pacific (Singapore - Singapore) | ap-southeast-sgp | 1-AZ |
-| Asia-Pacific (Australia - Sydney) | ap-southeast-syd | 1-AZ |
-| Asia-Pacific (India - Mumbai) | ap-south-mum | 1-AZ |
+
+> [!primary]
+>
+> Les régions 3-AZ ainsi que les régions localisées aux US et APAC seront disponibles à une date ultérieure. Nous vous remercions pour votre patience.
+>
 
 ## Résolution des problèmes
 

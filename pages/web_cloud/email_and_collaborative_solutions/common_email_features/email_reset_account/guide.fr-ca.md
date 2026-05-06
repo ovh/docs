@@ -1,7 +1,7 @@
 ---
 title: "Supprimer un compte e-mail"
 excerpt: "Découvrez comment supprimer ou réinitialiser une adresse e-mail sur votre offre e-mail"
-updated: 2025-04-28
+updated: 2026-02-19
 ---
 
 ## Objectif
@@ -17,8 +17,27 @@ Vous souhaitez :
 ## Prérequis
 
 - Disposer d'une solution e-mail OVHcloud préalablement configurée telle que  [**Hosted Exchange**](/links/web/emails-hosted-exchange) ou **MX Plan** (proposée parmi nos [offres d’hébergement web](/links/web/hosting)).
-- Être connecté à l'[espace client OVHcloud](/links/manager), partie `Web Cloud`{.action}.
 - Disposer des informations de connexion aux adresses e-mail concernées.
+
+<!-- CP-NAV-START:web-mx-plan -->
+<!-- CP-NAV-START:web-exchange -->
+---
+
+### Accès à l'espace client OVHcloud
+
+**MX Plan :**
+
+- **Lien direct :** [MX Plan](/links/control-panel/web-mx-plan)
+- **Pour accéder à vos services :** `Web Cloud`{.action} > `MX Plan`{.action} > Sélectionnez votre service MX Plan
+
+**Exchange :**
+
+- **Lien direct :** [Exchange](/links/control-panel/web-exchange)
+- **Pour accéder à vos services :** `Web Cloud`{.action} > `Exchange`{.action} > Sélectionnez votre plateforme
+
+---
+<!-- CP-NAV-END:web-exchange -->
+<!-- CP-NAV-END:web-mx-plan -->
 
 ## En pratique <a name="instructions"></a>
 
@@ -34,10 +53,6 @@ Sélectionnez l'onglet correspondant à votre offre e-mail :
 > [!tabs]
 > **MX Plan**
 >>
->> 1. Connectez-vous à votre [espace client OVHcloud](/links/manager).
->> 1. Rendez-vous dans la partie `Web Cloud`{.action}.
->> 1. Cliquez sur `MX Plan`{.action}.
->> 1. Sélectionnez le domaine concerné.
 >> 1. Positionnez-vous sur l'onglet `Comptes e-mail`{.action}. La fenêtre qui apparaît affiche les comptes e-mail existants.
 >> 1. Cliquez sur le bouton `...`{.action} à droite du compte à modifier puis cliquez sur `Réinitialiser ce compte`{.action}.
 >>
@@ -45,10 +60,6 @@ Sélectionnez l'onglet correspondant à votre offre e-mail :
 >>
 > **Exchange**
 >>
->> 1. Connectez-vous à votre [espace client OVHcloud](/links/manager).
->> 1. Rendez-vous dans la partie `Web Cloud`{.action}.
->> 1. Dans la rubrique `MICROSOFT`, cliquez sur `Exchange`{.action}.
->> 1. Sélectionnez la plateforme concernée.
 >> 1. Positionnez-vous sur l'onglet `Comptes e-mail`{.action}.
 >> 1. Cliquez sur le bouton `...`{.action} à droite du compte à modifier puis cliquez sur `Réinitialiser`{.action}.
 >>

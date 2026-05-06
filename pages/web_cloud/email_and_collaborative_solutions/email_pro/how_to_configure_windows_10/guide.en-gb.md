@@ -39,6 +39,18 @@ The **New Outlook** has replaced the **Mail** application on Windows since Janua
 - The [New Outlook](https://support.microsoft.com/office/getting-started-with-the-new-outlook-for-windows-656bb8d9-5a60-49b2-a98b-ba7822bc7627) for Windows
 - The credentials for the email account you wish to configure
 
+<!-- CP-STEPS-START:cp-nav-web-email-pro -->
+<!-- CP-NAV-START:web-email-pro -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Email Pro](/links/control-panel/web-email-pro)
+- **Navigation path:** `Web Cloud`{.action} > `Email Pro`{.action} > Select your platform
+
+---
+<!-- CP-NAV-END:web-email-pro -->
+<!-- CP-STEPS-END:cp-nav-web-email-pro -->
 
 /// details | Information related to the management and configuration of OVHcloud services
 
@@ -58,20 +70,18 @@ If you experience any difficulties carrying out these operations, we recommend t
 >
 > ![outlook Windows](images/outlook-windows-identify01.png){.thumbnail .h-500}
 >
-> To configure your E-mail Pro address on Classic Outlook, refer to our guide "[E-mail Pro - Configure an e-mail account on Classic Outlook for Windows](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_outlook_2016)".
+> To configure your Email Pro address on Classic Outlook, refer to our guide "[Email Pro - Configure an e-mail account on Classic Outlook for Windows](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_outlook_2016)".
 
 ### Add the account <a name="add-account"></a>
 
+<!-- CP-STEPS-START:add-account-cp-reference -->
 > [!warning]
 >
-> In our example, we use the server name: pro?.mail.ovh.net. You will need to replace the "?" with the number corresponding to your E-mail Pro service server.
+> In our example, we use the server name: pro?.mail.ovh.net. You will need to replace the "?" with the number corresponding to your Email Pro service server.
 >
-> 1. Log in to your [OVHcloud Control Panel](/links/manager).
-> 1. Go to the `Web Cloud`{.action} section.
-> 1. Click on `Email Pro`{.action}.
-> 1. Select the relevant platform.
-> 1. The server name is visible in the **Connection** section of the `General information`{.action} tab.
+> Click [this link](/links/control-panel/web-email-pro) to access the `Email Pro`{.action} section. The server name is visible in the **Connection** section of the `General information`{.action} tab.
 >
+<!-- CP-STEPS-END:add-account-cp-reference -->
 
 > [!tabs]
 > **Step 1**

@@ -33,7 +33,17 @@ Vous souhaitez créer un site Internet pour votre entreprise ou un blog personne
 - Avoir reçu l'e-mail vous confirmant l'installation de votre hébergement web.
 - Disposer d'un [nom de domaine](/links/web/domains) et d'une zone DNS associée chez OVHcloud.
 - Tous les services (Hébergement web, Nom de domaine, zone DNS) doivent être accessibles depuis un seul et même compte OVHcloud.
-- Être connecté à votre [espace client OVHcloud](/links/manager), partie `Web Cloud`{.action}.
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Hébergement web](/links/control-panel/web-hosting)
+- **Pour accéder à vos services :** `Web Cloud`{.action} > `Hébergements`{.action} > Sélectionnez votre hébergement web
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## En pratique
 

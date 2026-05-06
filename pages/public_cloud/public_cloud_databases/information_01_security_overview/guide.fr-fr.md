@@ -1,5 +1,5 @@
 ---
-title: Public Cloud Databases Concepts - Présentation de la sécurité (EN)
+title: Présentation de la sécurité des bases de données Public Cloud (EN)
 excerpt: Public Cloud Databases security overview
 updated: 2025-07-31
 ---

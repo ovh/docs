@@ -6,36 +6,36 @@ updated: 2025-04-28
 
 ## Objetivo
 
-La solución E-mail Pro le permite disfrutar de direcciones de correo electrónico profesionales al precio más razonable con vistas a impulsar o comenzar su negocio.
+La solución Email Pro le permite disfrutar de direcciones de correo electrónico profesionales al precio más razonable con vistas a impulsar o comenzar su negocio.
 
-**Esta guía explica cómo configurar por primera vez la solución E-mail Pro.**
+**Esta guía explica cómo configurar por primera vez la solución Email Pro.**
 
 ## Requisitos
 
-- Tener una cuenta [E-mail Pro](/links/web/email-pro).
-- Haber recibido el mensaje de correo electrónico de confirmación de la instalación de la solución E-mail Pro.
+- Tener una cuenta [Email Pro](/links/web/email-pro).
+- Haber recibido el mensaje de correo electrónico de confirmación de la instalación de la solución Email Pro.
 - Tener un nombre de dominio.
-- Haber iniciado sesión en el [área de cliente de OVHcloud](/links/manager).
+
+<!-- CP-NAV-START:web-email-pro -->
+---
+
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [Email Pro](/links/control-panel/web-email-pro)
+- **Ruta de navegación:** `Web Cloud`{.action} > `Email Pro`{.action} > Seleccione su plataforma
+
+---
+<!-- CP-NAV-END:web-email-pro -->
 
 ## Procedimiento
 
-### 1. Acceder a la gestión del servicio
-
-Una vez creado y activado el servicio E-mail Pro :
-
-1. Conéctese a su [área de cliente de OVHcloud](/links/manager).
-1. Haga clic en la pestaña `Web Cloud`{.action}.
-1. Haga clic en `Email Pro`{.action}.
-1. Seleccione la plataforma correspondiente.
+### 1. Añadir su nombre de dominio
 
 > [!primary]
 >
-> El nombre de un servicio E-mail Pro en el área de cliente de OVHcloud comienza por "*emailpro-*", además, contiene una parte de su referencia de cliente y termina por una cifra (1 para el primer servicio E-mail Pro instalado, 2 para el segundo y así sucesivamente).
->
+> El nombre de un servicio Email Pro en el área de cliente de OVHcloud comienza por "*emailpro-*", además, contiene una parte de su referencia de cliente y termina por una cifra (1 para el primer servicio Email Pro instalado, 2 para el segundo y así sucesivamente).
 
-### 2. Añadir su nombre de dominio
-
-Después de contratar el servicio E-mail Pro, se abrirá automáticamente una ventana en la que se le invita a `añadir un dominio`{.action}. Si la ventana no aparece, acceda a la pestaña `Dominios asociados`{.action} y haga clic en el botón `Añadir un dominio`{.action}.
+Después de contratar el servicio Email Pro, se abrirá automáticamente una ventana en la que se le invita a `añadir un dominio`{.action}. Si la ventana no aparece, acceda a la pestaña `Dominios asociados`{.action} y haga clic en el botón `Añadir un dominio`{.action}.
 
 uede elegir entre dos opciones:
 
@@ -89,7 +89,7 @@ Haga clic en el botón `"Siguiente"`{.action} para continuar con la adición del
 
 Una vez realizada la configuración, compruebe que la información mostrada sea la correcta y haga clic en `Confirmar`{.action} para añadir el dominio.
 
-### 3. Configurar el nombre de dominio
+### 2. Configurar el nombre de dominio
 
 Una vez añadido el nombre de dominio como dominio asociado, compruebe su configuración usando la tabla que aparece.
 
@@ -106,7 +106,7 @@ En la columna "`Diagnóstico`{.action}", podrá ver si la configuración DNS del
 
 ![emailpro](images/emailpro-04.png){.thumbnail}
 
-### 4. Configurar las cuentas E-mail Pro
+### 3. Configurar las cuentas Email Pro
 
 Para configurar las direcciones de correo, abra la pestaña `Cuentas de correo`{.action}. La tabla muestra las cuentas que haya contratado con el formato "*@configureme.me*".
 
@@ -147,7 +147,7 @@ Una vez introducida toda la información, haga clic en el botón `Siguiente`{.ac
 > Repita el procedimiento descrito en este apartado para crear las cuentas que desee, en función del número de cuentas a su disposición. Si necesita más cuentas, puede realizar el pedido utilizando el botón `Contratar cuentas`{.action}.
 >
 
-### 5. Utilizar las direcciones de correo electrónico
+### 4. Utilizar las direcciones de correo electrónico
 
 Una vez configuradas las cuentas, ¡ya puede utilizarlas! Para ello, OVHcloud pone a su disposición una aplicación en internet (*webmail*). Puede acceder a ella en la dirección [webmail](/links/web/email), donde deberá introducir las credenciales de su dirección de correo electrónico.
 
@@ -159,7 +159,7 @@ Si es la primera vez que inicia sesión en OWA con esta dirección de correo ele
 >
 > **Ejemplo** : Para Europa Occidental, se trata de UTC +1 (Bruselas, Copenhague, Madrid, París).
 
-Para configurar su dirección de correo electrónico en un cliente de correo o en un dispositivo (_teléfono inteligente_ o tableta), consulte nuestras [guías de configuración](/products/web-cloud-email-collaborative-solutions-email-pro). A continuación, se indican los parámetros necesarios para configurar una cuenta E-mail Pro:
+Para configurar su dirección de correo electrónico en un cliente de correo o en un dispositivo (_teléfono inteligente_ o tableta), consulte nuestras [guías de configuración](/products/web-cloud-email-collaborative-solutions-email-pro). A continuación, se indican los parámetros necesarios para configurar una cuenta Email Pro:
 
 |Tipo de servidor|Nombre del servidor|Tipo de seguridad|Puerto|
 |---|---|---|---|
@@ -168,9 +168,9 @@ Para configurar su dirección de correo electrónico en un cliente de correo o e
 
 > [!primary]
 >
-> En nuestro ejemplo, utilizamos el nombre de servidor pro?.mail.ovh.net. Deberá sustituir la "?" por el número que designa el servidor del servicio E-mail Pro.
+> En nuestro ejemplo, utilizamos el nombre de servidor pro?.mail.ovh.net. Deberá sustituir la "?" por el número que designa el servidor del servicio Email Pro.
 >
-> Encontrará este número en el [área de cliente de OVHcloud](/links/manager), en el apartado `Web Cloud`{.action} de la sección `Email Pro`{.action}. El nombre del servidor puede verse en el recuadro **"Conexión"** de la pestaña `Información General`{.action}.
+> El nombre del servidor puede verse en el recuadro **Conexión** de la pestaña `Información General`{.action} de su servicio Email Pro.
 >
 
 ## Más información

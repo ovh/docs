@@ -13,8 +13,18 @@ Le mode bridge est utile si vous souhaitez que votre modem ne se comporte plus c
 ## Prérequis
 
 - Disposer d’un [accès Internet xDSL ou FTTH OVHcloud](/links/telecom/offre-internet) et d'un modem Zyxel fourni par OVHcloud.
-- Être connecté à l'[espace client OVHcloud](/links/manager) dans la partie `Accès Internet`{.action}.
 - Cette fonctionnalité est disponible uniquement si la configuration à distance est désactivée.
+
+<!-- CP-NAV-START:telecom-xdsl-fttx -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Accès Internet](/links/control-panel/telecom-xdsl-fttx)
+- **Pour accéder à vos services :** `Télécom`{.action} > `Offres Internet`{.action} > Sélectionnez votre accès
+
+---
+<!-- CP-NAV-END:telecom-xdsl-fttx -->
 
 ## En pratique
 
@@ -25,10 +35,8 @@ Le mode bridge est utile si vous souhaitez que votre modem ne se comporte plus c
 
 ### Étape 1 : Accéder à l'outil de configuration à distance
 
-1. Connectez-vous à votre [espace client OVHcloud](/links/manager) et cliquez sur `Télécom`{.action}.
-1. Cliquez sur `Offres Internet`{.action} puis sur le *Pack* contenant l'accès à Internet concerné.
-1. Cliquez sur votre accès à Internet FTTH ou xDSL dans le cadre `Accès Internet` à droite.
-1. Assurez-vous d'être positionné sur l'onglet `Mon modem`{.action}.
+<!-- CP-STEPS-START:etape-1-configuration-a-distance -->
+Depuis votre [espace client OVHcloud](/links/control-panel/telecom-xdsl-fttx), cliquez sur votre accès à Internet FTTH ou xDSL dans le cadre `Accès Internet` à droite, puis positionnez-vous sur l'onglet `Mon modem`{.action}.
 
 Dans le cadre « Configuration à distance », vérifiez que la case à côté de `Configuration à distance activée` est bien décochée. Dès lors, deux possibilités :
 
@@ -37,6 +45,7 @@ Dans le cadre « Configuration à distance », vérifiez que la case à côté d
 - **la configuration à distance est activée** : vous devez désactiver la configuration à distance si vous souhaitez paramétrer votre modem Zyxel en mode bridge. Pour ce faire, décochez la case à côté de `Configuration à distance activée`, confirmez la manipulation, puis patientez quelques minutes le temps de la désactivation.
 
 ![activerBridge](images/activerBridge-step1-2022.png){.thumbnail}
+<!-- CP-STEPS-END:etape-1-configuration-a-distance -->
 
 ### Étape 2 : Connectez-vous à l'interface locale du modem
 
@@ -50,9 +59,11 @@ Un couple user/password vous est alors demandé :
 
 ![activerBridge](images/activerBridge-step2.png){.thumbnail}
 
+<!-- CP-STEPS-START:etape-2-emails-service -->
 > [!primary]
-> L'ensemble des e-mails envoyés par OVHcloud sont accessibles depuis votre espace client. Pour retrouver vos derniers identifiants de connexion reçus par e-mail, connectez-vous à votre [espace client OVHcloud](/links/manager) depuis un autre accès à Internet ou un smartphone. Une fois connecté, cliquez sur votre nom puis sur `E-mails de service`{.action} à droite de l'écran.
+> L'ensemble des e-mails envoyés par OVHcloud sont accessibles depuis votre espace client. Pour retrouver vos derniers identifiants de connexion reçus par e-mail, connectez-vous à votre [espace client OVHcloud](/links/control-panel/account-messages) depuis un autre accès à Internet ou un smartphone. Une fois connecté, cliquez sur votre nom puis sur `E-mails de service`{.action} à droite de l'écran.
 >
+<!-- CP-STEPS-END:etape-2-emails-service -->
 
 ### Étape 3 : Accéder aux options de connexion broadband
 
@@ -68,9 +79,11 @@ Sur cette page, éditez l'interface correspondant à votre type de connexion :
 
 ![activerBridge](images/activerBridge-step3-2.png){.thumbnail}
 
+<!-- CP-STEPS-START:etape-3-type-connexion-cp -->
 En cas de doute, le type de votre connexion est disponible sur l'espace client OVHcloud.
 
 ![activerBridge](images/activerBridge-step3-3-2022.png){.thumbnail}
+<!-- CP-STEPS-END:etape-3-type-connexion-cp -->
 
 ### Étape 4 : Modifier le mode de votre connexion
 

@@ -1,23 +1,23 @@
 ---
-title: Object Storage - Optimising Performance (EN)
+title: Object Storage - Optimising Performance
 excerpt: This guide walks you through various methods to optimise the performance of your Object Storage buckets, including using byte range fetches, multipart uploads and other methods
-updated: 2025-06-04
+updated: 2026-03-06
 ---
 
 ## Objective
 
-There are several ways to optimise the performance of your buckets on Object Storage. The following guide will walk you through the different optimization methods.
+There are several ways to optimise the performance of your buckets on Object Storage. The following guide will walk you through the different optimisation methods.
 
 ### Using byte range fetch
 
-OVHcloud Object Storage supports byte range fetch. The idea is to retrieve an object chunk by chunk, each chunk being defined by a range of bytes. The main advantage is that it allows you to parallelize GET requests to download an object, with each GET requesting a specific range of bytes: typical sizes for byte range requests are 8 MB or 16 MB, but you can specify any size.
+OVHcloud Object Storage supports byte range fetch. This retrieves an object chunk by chunk, with each chunk defined by a byte range. The main advantage is that you can parallelise GET requests to download an object, with each GET requesting a specific range of bytes: typical sizes for byte range requests are 8 MB or 16 MB, but you can specify any size.
 
 ![Schema 1](images/sharding1.png){.thumbnail}
 
-To download part of an object, you must use additional parameters to specify which part of the object you want to retrieve. The following example downloads the first part, between 0 and 500 bytes, of an object named "filename" stored in the "test-bucket" bucket and writes the output to a file named "object_part":
+To download part of an object, you must use additional parameters to specify which part of the object you want to retrieve. The following example downloads the first part, between 0 and 500 bytes, of an object named `<object_key>` stored in the `<bucket_name>` bucket and writes the output to a file named `object_part`:
 
 ```bash
-user@host:~$ aws s3api get-object --bucket test-bucket --key filename --range bytes=0-500 object_part
+aws s3api get-object --bucket <bucket_name> --key <object_key> --range bytes=0-500 object_part
 ```
 
 ### Using MPUs
@@ -53,11 +53,11 @@ The following section explains how to perform a multipart upload using the low l
 First, you need to initiate a multipart upload:
 
 ```bash
-user@host:~$ aws s3api create-multipart-upload --bucket test-bucket --key filename
+aws s3api create-multipart-upload --bucket <bucket_name> --key <object_key>
 {
-    "Bucket": "test-bucket",
-    "Key": "filename",
-    "UploadId": "YjgxYmRmODItOWRiMi00YmI2LTk1NTMtODBhYWYwYmFjZGYx"
+        "Bucket": "<bucket_name>",
+        "Key": "<object_key>",
+        "UploadId": "<upload_id>"
 }
 ```
 
@@ -72,7 +72,7 @@ For each part, you need to create an `upload-part` command in which you specify 
 > 
 
 ```bash
-user@host:~$ aws s3api upload-part --bucket test-bucket --key filename --part-number 1 --body filename_part1 --upload-id "YjgxYmRmODItOWRiMi00YmI2LTk1NTMtODBhYWYwYmFjZGYx"
+aws s3api upload-part --bucket <bucket_name> --key <object_key> --part-number 1 --body <part_file_path> --upload-id <upload_id>
 {
     "ETag": "\"6769849e543eeb257675b65e7a199aa2\""
 }
@@ -85,12 +85,12 @@ user@host:~$ aws s3api upload-part --bucket test-bucket --key filename --part-nu
 Once all the parts have been uploaded, you need to call the `complete-multipart-upload` command to complete the process and for OVHcloud Object Storage to rebuild the final object:
 
 ```bash
-user@host:~$ aws s3api complete-multipart-upload --bucket test-bucket --key filename --upload-id "YjgxYmRmODItOWRiMi00YmI2LTk1NTMtODBhYWYwYmFjZGYx" --multipart-upload file://mpu.json
+aws s3api complete-multipart-upload --bucket <bucket_name> --key <object_key> --upload-id <upload_id> --multipart-upload file://mpu.json
 ```
 
 Where `mpu.json` is:
 
-```bash
+```json
 {
     "Parts": [
         {
@@ -145,25 +145,25 @@ Where `mpu.json` is:
 To avoid unnecessary costs, you can abort the multipart upload using the following AWS CLI command:
 
 ```bash
-user@host:~$ aws s3api abort-multipart-upload \
-  --bucket test-bucket \
-  --key filename \
-  --upload-id <upload-id>
+aws s3api abort-multipart-upload \
+        --bucket <bucket_name> \
+        --key <object_key> \
+        --upload-id <upload_id>
 ```
 
 The upload ID is returned by the `create-multipart-upload` command or can be retrieved by listing ongoing multipart uploads:
 
 ```bash
-user@host:~$ aws s3api list-multipart-uploads --bucket my-bucket
+aws s3api list-multipart-uploads --bucket <bucket_name>
 ```
 
 Example of aborting a specific multipart upload after retrieving its upload ID:
 
 ```bash
-user@host:~$ aws s3api abort-multipart-upload \
-  --bucket my-bucket \
-  --upload-id "OWZiZTA4YzUtODExZC00ZjE5LTkyMjUtZGVmNjcwNjBiYWQ1" \
-  --key <my-file> # name or path of the object
+aws s3api abort-multipart-upload \
+        --bucket <bucket_name> \
+        --upload-id <upload_id> \
+        --key <object_key>
 ```
 
 ### Using other third party tools
@@ -173,7 +173,7 @@ The following list describes the options to perform multipart uploads using othe
 #### s3cmd
 
 ```bash
-$ multipart-chunk-size-mb=SIZE_
+multipart-chunk-size-mb=<size_mb>
 ```
 
 Size of each chunk of a multipart upload.<br>
@@ -183,7 +183,7 @@ SIZE is in Mega-Bytes, default chunk size is 15MB, minimum allowed chunk size is
 <u> Example: </u>
 
 ```bash
-$ s3cmd put --multipart-chunk-size-mb=500 big-file.zip s3://some-bucket/
+s3cmd put --multipart-chunk-size-mb=500 <file_path> s3://<bucket_name>/
 ```
 
 For more information on s3cmd, consult the official documentation [here](https://s3tools.org/usage).
@@ -191,19 +191,19 @@ For more information on s3cmd, consult the official documentation [here](https:/
 #### rclone
 
 ```bash
-$ s3-upload-cutoff=SIZE
+s3-upload-cutoff=<size>
 ```
 
 Size threshold at which point rclone switches from single file upload to multipart upload.
 
 ```bash
-$ s3-chunk-size=SIZE
+s3-chunk-size=<size>
 ```
 
 Size of each chunk used in multipart uploads.
 
 ```bash
-$ s3-upload-concurrency
+s3-upload-concurrency=<concurrency>
 ```
 
 Number of chunks uploaded concurrently.
@@ -211,7 +211,7 @@ Number of chunks uploaded concurrently.
 <u> Example: </u>
 
 ```bash
-$ rclone copy --s3-upload-concurrency 300 --s3-chunk-size 100M --s3-upload-cutoff 100M testfile s3:test-bucket
+rclone copy --s3-upload-concurrency 300 --s3-chunk-size 100M --s3-upload-cutoff 100M <file_path> s3:<bucket_name>
 ```
 
 For more information on rclone, consult the official documentation [here](https://rclone.org/s3/).
@@ -224,13 +224,13 @@ To customize the default value on the AWS CLI, consult [this guide](/pages/stora
 
 For other tools, you should check the relevant documentation of the software you are using.
 
-### I/O optimization
+### I/O optimisation
 
 It is also possible to significantly optimise performances by adopting good practices to distribute the I/Os as widely as possible in the object storage cluster, taking advantage of the sharding mechanism.
 
 **What is sharding**
 
-OpenIO is a software defined storage solution on which OVHcloud Object Storage is based on.
+OpenIO is a software-defined storage solution on which OVHcloud Object Storage is based.
 
 In OpenIO, a **container** is basically an internal logical entity that contains all the objects for a given bucket. Each container is associated with an internal metadata database that lists all the addresses in the cluster of the objects contained in it. By default, an Object Storage bucket is associated with one container but this can change with the sharding mechanism.
 

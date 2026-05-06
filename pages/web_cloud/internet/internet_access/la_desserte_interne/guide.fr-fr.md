@@ -1,5 +1,6 @@
 ---
 title: La desserte interne
+excerpt: "Découvrez les éléments composant la desserte interne de votre ligne téléphonique"
 updated: 2018-03-26
 ---
 
@@ -13,7 +14,7 @@ Niveau : Débutant
 
 ------------------------------------------------------------------------
 
-![](images/desserte.png){.thumbnail}
+![Schéma de la desserte interne](images/desserte.png){.thumbnail}
 
 Nous allons détailler ici la partie concernant le point de concentration et la desserte interne.
 
@@ -25,9 +26,7 @@ Nous allons détailler ici la partie concernant le point de concentration et la 
 
 ------------------------------------------------------------------------
 
-### **Point de concentration** {#point-de-concentration}
-
-****
+### Point de concentration {#point-de-concentration}
 
 Le point de concentration, aussi dit "**PC**", est représenté par un boîtier situé soit en façade, soit sur un poteau téléphonique ou électrique. D'un côté, le boîtier est raccordé jusqu'au sous-répartiteur par des **câbles dits de distribution** et de l'autre, il raccorde les abonnés.
 
@@ -39,7 +38,7 @@ Certaines habitations ne possèdent pas de point de concentration, car la distri
 
 Voici un exemple de PC :
 
-![](images/IMG_20150518_200808.jpg){.thumbnail}
+![Exemple de point de concentration](images/IMG_20150518_200808.jpg){.thumbnail}
 
 ------------------------------------------------------------------------
 
@@ -49,11 +48,11 @@ Le point de terminaison de ligne correspond au **premier point d'accès physique
 
 Ce point est matérialisé des façons suivantes :
 
-- Par un dispositif appelé **Dispositif de Terminaison Intérieur** (DTI) (cf. paragraphe 3);
-- Par la première prise téléphonique sur l'installation téléphonique;
+- Par un dispositif appelé **Dispositif de Terminaison Intérieur** (DTI) (cf. paragraphe 3) ;
+- Par la première prise téléphonique sur l'installation téléphonique ;
 - Par un **boîtier de dérivation**.
 
-![](images/derivation.jpeg){.thumbnail}
+![Boîtier de dérivation](images/derivation.jpeg){.thumbnail}
 
 **La responsabilité en amont du point de terminaison revient à Orange.**
 
@@ -65,11 +64,11 @@ Cet appareil est installé en amont de votre réseau interne. Il a l'avantage de
 
 Voici plusieurs type de prises DTI :
 
-![](images/dti1.png){.thumbnail}
+![Types de prises DTI](images/dti1.png){.thumbnail}
 
 Exemple de branchement d'un DTI :
 
-![](images/branchement.jpeg){.thumbnail}
+![Exemple de branchement DTI](images/branchement.jpeg){.thumbnail}
 
 En aucun cas, le DTI n'est prévu pour que l'on y branche un téléphone.
 
@@ -81,7 +80,7 @@ La prise gigogne est une prise utilisant un type de connecteur téléphonique fo
 
 Présentation d'une prise gigogne :
 
-![](images/priset.jpg){.thumbnail}
+![Prise gigogne](images/priset.jpg){.thumbnail}
 
 Prise RJ45/11 :
 
@@ -89,19 +88,16 @@ Les prises avec connecteurs RJ45/11 remplacent la prise gigogne dans les nouvell
 
 Présentation et explication branchement :
 
-![](images/rj45.jpeg){.thumbnail}
+![Prise RJ45](images/rj45.jpeg){.thumbnail}
 
-![](images/RJ11.png){.thumbnail}
+![Prise RJ11](images/RJ11.png){.thumbnail}
 
 ------------------------------------------------------------------------
 
 ### Module RC {#module-rc}
 
-Le **module RC**, également appelé "**condensateur**", est un petit boîtier de la taille d'un sucre qui était installé dans les prises téléphoniques. Ce boitier permettait à Orange de vérifier si une ligne était opérationnelle.
+Le **module RC**, également appelé "**condensateur**", est un petit boîtier de la taille d'un sucre qui était installé dans les prises téléphoniques. Ce boîtier permettait à Orange de vérifier si une ligne était opérationnelle.
 
-Il existe deux versions de modules : **deux ou trois pattes**. La version trois pattes peut perturber le signal XDSL. Il est alors recommmandé de le retirer. La version deux pattes n'occasionne pas de perturbation du signal DSL sauf si celui-ci a été endommagé.
+Il existe deux versions de modules : **deux ou trois pattes**. La version trois pattes peut perturber le signal XDSL. Il est alors recommandé de le retirer. La version deux pattes n'occasionne pas de perturbation du signal DSL sauf si celui-ci a été endommagé.
 
-Le module RC peut être présent dans un boitier de dérivation, une prise gigogne et/ou le DTI.
-
-**
-
+Le module RC peut être présent dans un boîtier de dérivation, une prise gigogne et/ou le DTI.

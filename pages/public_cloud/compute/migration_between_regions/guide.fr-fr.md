@@ -11,7 +11,17 @@ Ce guide explique comment migrer une instance Public Cloud d’une zone de dispo
 ## prérequis
 
 - Avoir une [instance Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps).
-- Être connecté à votre [espace client OVHcloud](/links/manager).
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Projets Public Cloud](/links/control-panel/publiccloud-projects)
+- **Pour accéder à vos services :** `Public Cloud`{.action} > Sélectionnez votre projet
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## En pratique
 

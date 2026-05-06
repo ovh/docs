@@ -1,6 +1,6 @@
 ---
-title: "Comment activer et utiliser le mode rescue Windows"
-excerpt: "Découvrez comment utiliser le système rescue OVHcloud pour Windows pour dépanner votre serveur dédié"
+title: "Mode rescue Windows sur un serveur dédié"
+excerpt: "Démarrez votre serveur dédié Windows en mode rescue OVHcloud pour dépanner, réparer ou réinitialiser des mots de passe"
 updated: 2025-01-28
 ---
 
@@ -44,13 +44,21 @@ L'option **Système de secours client Windows** (`rescue-customer-windows`) n'es
 
 - Microsoft Windows installé sur votre [serveur dédié](/links/bare-metal/bare-metal)
 - Au moins 16 Go de RAM installés sur le serveur
-- Accès à l’[espace client OVHcloud](/links/manager)
+
+<!-- CP-NAV-START:baremetal-dedicated-servers -->
+---
+
+### Accès à l’espace client OVHcloud
+
+- **Lien direct :** [Serveurs dédiés](/links/control-panel/baremetal-dedicated-servers)
+- **Pour accéder à vos services :** `Bare Metal Cloud`{.action} > `Serveurs dédiés`{.action} > Sélectionnez votre serveur
+
+---
+<!-- CP-NAV-END:baremetal-dedicated-servers -->
 
 ## En pratique
 
 ### Activation du mode rescue pour Windows
-
-Connectez-vous à votre [espace client OVHcloud](/links/manager), ouvrez la section `Bare Metal Cloud`{.action}, puis `Serveurs dédiés`{.action}.
 
 Cliquez sur le nom de votre serveur pour ouvrir l'onglet `Informations générales`{.action}.
 
@@ -58,13 +66,13 @@ Cliquez sur le nom de votre serveur pour ouvrir l'onglet `Informations général
 
 Dans la case **Informations générales**, cliquez sur le bouton `...`{.action} à côté de `Boot`. Cliquez sur `Modifier`{.action} dans le menu contextuel.
 
-![Modifier le mode de démarrage](images/rescue-mode-001.png){.thumbnail}
+![Option Modifier le boot dans la section Informations générales](images/rescue-mode-001.png){.thumbnail}
 
 Sur la page **Modifier le netboot**, sélectionnez `Booter en mode rescue`{.action}.
 
 Sélectionnez `Windows customer rescue system`{.action} dans le menu déroulant.
 
-![Modifier le mode de démarrage](images/manager-rescue-windows-menu.png){.thumbnail width="800"}
+![Sélection du système rescue Windows customer dans le menu netboot](images/manager-rescue-windows-menu.png){.thumbnail width="800"}
 
 L'e-mail de notification du mode rescue, ainsi que ses identifiants, seront envoyés à l'adresse e-mail de contact de votre compte OVHcloud. Pour utiliser une autre adresse e-mail, renseignez-la dans le champ `Recevoir les identifiants du mode sur l'adresse e-mail :`.
 

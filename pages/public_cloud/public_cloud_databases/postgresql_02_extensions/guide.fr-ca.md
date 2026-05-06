@@ -1,5 +1,5 @@
 ---
-title: PostgreSQL - Available extensions
+title: Extensions disponibles pour Public Cloud Databases pour PostgreSQL
 excerpt: List of available PostgreSQL extensions
 updated: 2026-01-08
 ---

@@ -1,7 +1,7 @@
 ---
 title: 'Gérer les contacts de ses services'
 excerpt: 'Découvrez comment gérer les contacts de vos services OVHcloud'
-updated: 2025-08-27
+updated: 2026-02-11
 ---
 
 ## Objectif
@@ -18,7 +18,7 @@ La plupart des services créés chez OVHcloud sont gérés par plusieurs contact
 
 Trois types de contacts existent:
 
-- **Le contact administrateur** gère les aspects administratifs et techniques d'un service. Il possède des droits de modification sur l'ensemble des contacts et peut effectuer des changements dans les informations du propriétaire d'un service, comme les noms de domaine par exemple.
+- **Le contact administrateur** gère les aspects administratifs et techniques d'un service. Il possède des droits de modification sur l'ensemble des contacts et peut effectuer des changements dans les informations du titulaire d'un service, comme les noms de domaine par exemple.
 - **Le contact technique** gère uniquement les aspects techniques d'un service.
 - **Le contact facturation** gère uniquement la facturation d'un service dont ses prélèvements. Ce contact reçoit notamment les notifications liées au renouvellement. 
 
@@ -28,15 +28,26 @@ L'identifiant client est un identifiant personnel que vous recevez par e-mail lo
 
 ## Prérequis
 
-- Être connecté à votre [espace client OVHcloud](/links/manager).
 - Disposer d'un accès à l'adresse e-mail renseignée dans votre profil.
 - Disposer de droits suffisants sur le service concerné.
 - Posséder l'identifiant client du nouveau contact (pour qui vous réalisez la modification).
 - Le nouveau contact doit quant à lui disposer d'un accès à l'adresse e-mail renseignée dans son profil.
 - L'ancien et le nouveau contact facturation doivent être à jour de leurs règlements.
+- Le nouveau contact de facturation doit disposer d'un moyen de paiement valide dans son compte OVHcloud.
 
 > [!warning]
 > Si vous souhaitez effectuer un changement de contacts pour vos services de téléphonie OVHcloud, veuillez suivre [notre guide dédié](/pages/web_cloud/phone_and_fax/voip/effectuer_un_changement_de_contact_pour_les_services_voip).
+
+<!-- CP-NAV-START:account-contacts -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Gestion des contacts](/links/control-panel/account-contacts)
+- **Pour y accéder :** Cliquez sur votre nom en haut à droite > `Mes contacts`{.action}
+
+---
+<!-- CP-NAV-END:account-contacts -->
 
 ## En pratique
 
@@ -46,7 +57,7 @@ L'identifiant client est un identifiant personnel que vous recevez par e-mail lo
 
 ### Accéder à la gestion des contacts <a name="gestion_des_contacts"></a>
 
-Connectez-vous à votre [espace client OVHcloud](/links/manager), cliquez sur votre nom en haut à droite, puis sur `Mes contacts`{.action}.
+Ouvrez la page [Gestion des contacts](/links/control-panel/account-contacts).
 
 ![Contact management](/pages/assets/screens/control_panel/product-selection/right-menu/my-contacts.png){.thumbnail}
 
@@ -87,7 +98,7 @@ Vous pouvez uniquement désigner un autre contact facturation pour vous remplace
 
 ### Valider, refuser ou suivre un changement de contact <a name="validation"></a>
 
-Pour suivre et gérer les demandes en cours, connectez-vous à votre [espace client OVHcloud](/links/manager), cliquez sur votre nom en haut à droite, puis sur `Mes contacts`{.action}. Cliquez ensuite sur l'onglet `Mes demandes`{.action}. C'est ici que vous pourrez accepter ou refuser une demande.
+Pour suivre et gérer les demandes en cours, cliquez sur l'onglet `Mes demandes`{.action}. C'est ici que vous pourrez accepter ou refuser une demande.
 
 ![Contact management](images/managing_contacts_05.png){.thumbnail}
 
@@ -112,7 +123,7 @@ Le changement de contact sera effectif quelques minutes après que les deux cont
 
 ### Exemple de cas concret : confier la gestion technique de votre site à votre webmaster <a name="use-case"></a>
 
-Vous venez de souscrire à un abonnement OVHcloud permettant de créer votre propre [boutique en ligne](https://www.ovhcloud.com/fr/web-hosting/ecommerce-website/).<br>Vous avez fait appel à l'un de nos [partenaires](/links/partner) et celui-ci vous demande les droits d'accès à vos services OVHcloud, afin de commencer à créer votre site.
+Vous venez de souscrire à un abonnement OVHcloud permettant de créer votre propre [boutique en ligne](/links/web/hosting-ecommerce-website).<br>Vous avez fait appel à l'un de nos [partenaires](/links/partner) et celui-ci vous demande les droits d'accès à vos services OVHcloud, afin de commencer à créer votre site.
 
 > [!warning]
 >
@@ -120,23 +131,23 @@ Vous venez de souscrire à un abonnement OVHcloud permettant de créer votre pro
 >
 
 Dans cette situation, vous pouvez confier à votre prestataire le droit « [contact technique](#gestion_des_contacts) » sur votre hébergement OVHcloud.<br>
-Cet accès lui permettra d'effectuer les manipulations nécessaires à la mise en ligne de votre site (ajout d'un domaine ou sous-domaine dans le multisite, installation d'un module en 1 clic, modification du mot de passe FTP ou de la base de données, création d'un certificat SSL, etc...).
+Cet accès lui permettra d'effectuer les manipulations nécessaires à la mise en ligne de votre site (ajout d'un nom de domaine ou sous-domaine dans le multisite, installation d'un module en 1 clic, modification du mot de passe FTP ou de la base de données, création d'un certificat SSL, etc...).
 
-Si votre nom de domaine n'est pas relié à votre hébergement et que vous souhaitez aussi confier les opérations nécessaires à votre webmaster, donnez-lui alors le droit « [contact technique](#gestion_des_contacts) » sur la [zone DNS](/pages/web_cloud/domains/dns_zone_edit) de votre domaine.
+Si votre nom de domaine n'est pas relié à votre hébergement et que vous souhaitez aussi confier les opérations nécessaires à votre webmaster, donnez-lui alors le droit « [contact technique](#gestion_des_contacts) » sur la [zone DNS](/pages/web_cloud/domains/dns_zone_edit) de votre nom de domaine.
 
 Le droit « [contact technique](#gestion_des_contacts) » ne permet pas de modifier les contacts administrateur ou facturation d'un service.<br>
 Il ne donnera pas à votre webmaster les accès à vos factures ou commandes, au renouvellement de vos services ou à vos moyens de paiement.<br>
-Il ne lui permettra pas non plus d'effectuer le [transfert de la gestion de votre nom de domaine](/pages/web_cloud/domains/transfer_outgoing_domain) vers un autre hébergeur ou de [changer son propriétaire](/pages/web_cloud/domains/trade_domain).
+Il ne lui permettra pas non plus d'effectuer le [transfert de la gestion de votre nom de domaine](/pages/web_cloud/domains/transfer_outgoing_domain) vers un autre hébergeur ou de [changer son titulaire](/pages/web_cloud/domains/trade_domain).
 
 En tant que [contact administrateur](#administrateur), vous pourrez enfin à tout moment récupérer le « [contact technique](#technique) » de votre service.
 
-### Cas particulier d’un propriétaire de domaine
+### Cas particulier d’un titulaire de nom de domaine
 
-Lors de la commande d'un service OVHcloud, vous avez défini un propriétaire pour celui-ci. Le propriétaire a la possibilité, s'il n'a aucun accès au(x) compte(s) OVHcloud associés au service qu'il souhaite récupérer, de céder la propriété d'un domaine à un tiers ou de récupérer l'administration du domaine, via les procédures suivantes :
+Lors de la commande d'un service OVHcloud, vous avez défini un titulaire pour celui-ci. Le titulaire a la possibilité, s'il n'a aucun accès au(x) compte(s) OVHcloud associés au service qu'il souhaite récupérer, de céder la titularité d'un nom de domaine à un tiers ou de récupérer l'administration du nom de domaine, via les procédures suivantes :
 
-[Changer le propriétaire d'un service](https://www.ovh.com/cgi-bin/fr/procedure/procedureChangeOwner.cgi)
+[Changer le titulaire d'un service](/links/transversal/procedure-change-owner)
 
-[Modifier les contacts de votre domaine](https://www.ovh.com/fr/cgi-bin/fr/procedure/procedureChangeContacts.cgi)
+[Modifier les contacts de votre nom de domaine](/links/transversal/procedure-contact-change)
 
 Le suivi de chaque procédure s'effectue par e-mail et une vérification d'identité sera nécessaire. Les instructions détaillées vous seront fournies tout au long de chaque procédure.
 

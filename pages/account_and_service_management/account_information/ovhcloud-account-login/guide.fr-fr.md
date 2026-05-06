@@ -23,7 +23,7 @@ La gestion de vos services s'effectue principalement via l'espace client OVHclou
 
 Rendez-vous sur [la page d'authentification OVHcloud](/links/manager), renseignez votre identifiant client (ou votre adresse e-mail principale) et votre mot de passe.
 
-![identifiant client](images/log-in-fr.png){.thumbnail}
+![identifiant client](images/account-log-in-FR.png){.thumbnail}
 
 Si vous avez activé la [double authentification](/pages/account_and_service_management/account_information/secure-ovhcloud-account-with-2fa), vous devrez alors renseigner le code unique de connexion généré par votre périphérique (téléphone, tablette ou clé U2F).
 

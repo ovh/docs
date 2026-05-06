@@ -12,13 +12,39 @@ Cada cuenta de correo de OVHcloud dispone de un espacio de almacenamiento dedica
 
 ## Requisitos
 
-- Haber iniciado sesión en el [área de cliente de OVHcloud](/links/manager).
 - Disponer de una solución de correo de OVHcloud previamente configurada, que incluya:
     - **MX Plan** ofrecido con nuestros [planes de hosting](/links/web/hosting) o incluido en un [alojamiento gratuito 100M](/links/web/domains-free-hosting).
-    - [Exchange](/links/web/emails).
+    - [Exchange](/links/web/emails-exchange).
     - [Email Pro](/links/web/email-pro).
     - [Zimbra](/links/web/emails-zimbra).
 - Disponer de la información de conexión a las direcciones de correo electrónico correspondientes.
+
+<!-- CP-NAV-START:web-mx-plan -->
+<!-- CP-NAV-START:web-email-pro -->
+<!-- CP-NAV-START:web-exchange -->
+---
+
+### Acceso al área de cliente de OVHcloud
+
+**MX Plan:**
+
+- **Enlace directo:** [MX Plan](/links/control-panel/web-mx-plan)
+- **Ruta de navegación:** `Web Cloud`{.action} > `MX Plan`{.action} > Seleccione su servicio MX Plan
+
+**Email Pro:**
+
+- **Enlace directo:** [Email Pro](/links/control-panel/web-email-pro)
+- **Ruta de navegación:** `Web Cloud`{.action} > `Email Pro`{.action} > Seleccione su plataforma
+
+**Exchange:**
+
+- **Enlace directo:** [Exchange](/links/control-panel/web-exchange)
+- **Ruta de navegación:** `Web Cloud`{.action} > `Exchange`{.action} > Seleccione su plataforma
+
+---
+<!-- CP-NAV-END:web-exchange -->
+<!-- CP-NAV-END:web-email-pro -->
+<!-- CP-NAV-END:web-mx-plan -->
 
 > [!primary]
 >
@@ -63,7 +89,7 @@ Desde el [área de cliente de OVHcloud](/links/manager), acceda al apartado `Web
 >>
 > **Email Pro**
 >>
->> Haga clic en `E-mail Pro`{.action} y seleccione el nombre de la plataforma correspondiente. Abra la pestaña «Cuentas de correo» de {.action}. Se abrirá una ventana en la que se mostrarán las cuentas de correo existentes. En la columna `Tamaño` puede ver el consumo actual del almacenamiento de su dirección de correo electrónico.<br><br>
+>> Haga clic en `Email Pro`{.action} y seleccione el nombre de la plataforma correspondiente. Abra la pestaña `Cuentas de correo`{.action}. Se abrirá una ventana en la que se mostrarán las cuentas de correo existentes. En la columna `Tamaño` puede ver el consumo actual del almacenamiento de su dirección de correo electrónico.<br><br>
 >>![email](images/email-quota-quotacontrolpanel02.png){.thumbnail}<br>
 >>
 > **Exchange**
@@ -94,7 +120,7 @@ Para conectarse al webmail, acceda a la página [Webmail](/links/web/email) e in
 >>
 > **Zimbra**: **MX Plan** / **Zimbra Starter** / **Zimbra Pro**
 >>>
->> Cuando se conecte al webmail Zimbra, haga clic en la rueda dentada `&#9881;` en la parte superior derecha de su interfaz y, a continuación, haga clic en `Parámetros`{.action}. En la pestaña `General`{.action} de la columna izquierda, haga clic en  para consultar el "Almacenamiento".<br><br>
+>> Cuando se conecte al webmail Zimbra, haga clic en la rueda dentada ( &#9881;) en la parte superior derecha de su interfaz y, a continuación, haga clic en `Parámetros`{.action}. En la pestaña `General`{.action} de la columna izquierda, haga clic en  para consultar el "Almacenamiento".<br><br>
 >>![email](images/email-quota-webmail03.png){.thumbnail}<br>
 >>
 

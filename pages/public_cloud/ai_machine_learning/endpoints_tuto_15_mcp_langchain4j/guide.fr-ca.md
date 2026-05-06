@@ -11,11 +11,11 @@ updated: 2025-08-06
 
 ## Objective
 
-OVHcloud **[AI Endpoints](https://endpoints.ai.cloud.ovh.net/)** allows developers to easily add AI features to their day to day developments.
+OVHcloud **[AI Endpoints](/links/public-cloud/ai-endpoints)** allows developers to easily add AI features to their day to day developments.
 
 In this article, we will explore how to create a Model Context Protocol (MCP) server and client using [Quarkus](https://quarkus.io/) and [LangChain4J](https://docs.langchain4j.dev/) to interact with OVHcloud AI Endpoints.
 
-Combined with OVHcloud **[AI Endpoints](https://endpoints.ai.cloud.ovh.net/)** which offers both LLM and embedding models, it becomes easy to create advanced, production-ready assistants.
+Combined with OVHcloud **[AI Endpoints](/links/public-cloud/ai-endpoints)** which offers both LLM and embedding models, it becomes easy to create advanced, production-ready assistants.
 
 ![image](images/robot.png){.thumbnail}
 
@@ -23,7 +23,7 @@ Combined with OVHcloud **[AI Endpoints](https://endpoints.ai.cloud.ovh.net/)** w
 
 - **Model Context Protocol**: MCP is a protocol that allows your LLM to ask for additional context or data from external sources during the generation processes. If you want more information about MCP, please refer to the [official documentation](https://modelcontextprotocol.io/introduction).
 - **[LangChain4j](https://github.com/langchain4j/langchain4j)**: Java-based framework inspired by [LangChain](https://github.com/langchain-ai/langchain), designed to simplify the integration of LLMs (Large Language Models) into applications. Note that LangChain4j is not officially maintained by the LangChain team, despite the similar name.
-- **[AI Endpoints](https://endpoints.ai.cloud.ovh.net/)**: A serverless platform by OVHcloud providing easy access to a variety of world-renowned AI models including Mistral, LLaMA, and more. This platform is designed to be simple, secure, and intuitive with data privacy as a top priority.
+- **[AI Endpoints](/links/public-cloud/ai-endpoints)**: A serverless platform by OVHcloud providing easy access to a variety of world-renowned AI models including Mistral, LLaMA, and more. This platform is designed to be simple, secure, and intuitive with data privacy as a top priority.
 
 ## Requirements
 

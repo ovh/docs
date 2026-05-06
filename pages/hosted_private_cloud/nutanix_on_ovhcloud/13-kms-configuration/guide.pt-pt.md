@@ -17,7 +17,6 @@ By following this guide, you will learn how to leverage **Nutanix's data-at-rest
 
 ## Requirements
 
-- Access to your [OVHcloud Control Panel](/links/manager).
 - A **valid OVHcloud KMS key** in your OVHcloud account.
     - Find more information in our guide [Getting started with OVHcloud Key Management Service (KMS)](/pages/manage_and_operate/kms/quick-start)
 - A [Nutanix on OVHcloud](/links/hosted-private-cloud/nutanix) cluster in your OVHcloud account.

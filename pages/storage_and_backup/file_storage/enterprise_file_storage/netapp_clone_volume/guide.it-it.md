@@ -41,6 +41,17 @@ La creazione di punti di backup regolari con l'aiuto di una [Politica di Snapsho
 - Avere accesso all’[API OVHcloud](/links/api)
 - Disporre di un volume Enterprise File Storage con uno Snapshot `manual`
 
+<!-- CP-NAV-START:storage-enterprise-file-storage -->
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [Enterprise File Storage](/links/control-panel/storage-enterprise-file-storage)
+- **Percorso di navigazione:** `Bare Metal Cloud`{.action} > `Enterprise File Storage`{.action}
+
+---
+<!-- CP-NAV-END:storage-enterprise-file-storage -->
+
 > [!primary]
 >
 > È possibile creare un volume e uno Snapshot di tipo `manual` tramite l'[API OVHcloud](/links/api) o dal tuo [Spazio Cliente OVHcloud](/links/manager).

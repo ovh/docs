@@ -28,7 +28,17 @@ Wstępnie skonfigurowany zbiór podstawowych zasad, takich jak "Core Rule Set" (
 
 - Posiadanie [hostingu OVHcloud](/links/web/hosting).
 - Posiadanie co najmniej jednej [domeny](/links/web/domains) przypisanej do hostingu
-- Dostęp do [Panelu klienta OVHcloud](/links/manager).
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Web hosting](/links/control-panel/web-hosting)
+- **Ścieżka nawigacji:** `Web Cloud`{.action} > `Hosting`{.action} > Wybierz hosting WWW
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## W praktyce
 

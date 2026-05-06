@@ -16,7 +16,17 @@ A Área de Cliente OVHcloud permite-lhe também gerir os seus dados pessoais e d
 ## Requisitos
 
 - Ter criado a [sua conta OVHcloud](/pages/account_and_service_management/account_information/ovhcloud-account-creation).
-- Estar ligado à [Área de Cliente OVHcloud](/links/manager).
+
+<!-- CP-NAV-START:account-profile -->
+---
+
+### Acesso à Área de Cliente OVHcloud
+
+- **Ligação direta:** [O meu perfil](/links/control-panel/account-profile)
+- **Caminho de navegação:** Clique no seu nome no canto superior direito > `Aceder à minha conta`{.action} > `Editar o meu perfil`{.action}
+
+---
+<!-- CP-NAV-END:account-profile -->
 
 > [!primary]
 > Em caso de dificuldades de ligação à sua conta, consulte a secção "[Não consigo conectar](/pages/account_and_service_management/account_information/ovhcloud-account-login#login-failure)-me" do nosso manual "[Aceder à Área de Cliente OVHcloud](/pages/account_and_service_management/account_information/ovhcloud-account-login)".
@@ -53,11 +63,7 @@ Se ainda não o fez, guarde a sua palavra-passe num [gestor de palavras-passe](/
 Em caso de dificuldade de acesso ao seu endereço de e-mail principal, um endereço de e-mail de SOS permite conservar o acesso à sua conta e, portanto, à gestão dos seus serviços.
 <br>Este segundo endereço **deve ser diferente** do primeiro, nomeadamente para facilitar as suas diligências em caso de recuperação de password.
 
-Para introduzir este endereço de e-mail de SOS, clicando, no canto superior direito do seu [Área de Cliente OVHcloud](/links/manager), no seu nome e, depois, em `Aceder à minha conta`{.action}.
-
-Na secção `O meu perfil`{.action} à direita do ecrã (clique novamente no seu nome para eliminar o menu à esquerda), clique em `Editar o meu perfil`{.action}.
-
-![endereço de e-mail de recurso](images/edit-profile.png){.thumbnail}
+Para introduzir este endereço de e-mail de SOS, aceda ao seu [perfil de utilizador](/links/control-panel/account-profile).
 
 > [!warning]
 > Relembramos que é **primordial** que o endereço de e-mail de SOS seja **diferente** do endereço de e-mail principal da conta.
@@ -78,11 +84,9 @@ Encontrará todos os detalhes para o ativar no nosso manual "[Proteger a sua con
 
 #### Modificar as minhas informações pessoais
 
-Pode alterar as informações da sua conta a partir da Área de [Cliente OVHcloud](/links/manager). Para isso, clicando no canto superior direito do seu [Área de Cliente OVHcloud](/links/manager), no seu nome e, depois, em `Aceder à minha conta`{.action}.
+Pode alterar as informações da sua conta. Aceda ao seu [perfil de utilizador](/links/control-panel/account-profile).
 
-Na secção `O meu perfil`{.action} à direita do ecrã (clique novamente no seu nome para eliminar o menu à esquerda), clique em `Editar o meu perfil`{.action}.
-
-Altere os seus dados e clique no botão `Validar`{.action}.
+Altere os seus dados e clique no botão `Registar as modificações`{.action}.
 
 > [!warning]
 >

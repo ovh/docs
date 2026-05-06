@@ -1,42 +1,55 @@
 ---
-title: 'Konfigurieren Ihrer Netzwerkkarte für die OVHcloud Link Aggregation in Windows Server 2019'
-excerpt: 'Erfahren Sie hier, wie Sie OLA auf Ihrem Windows Server 2019 Server aktivieren'
-updated: 2021-03-25
+title: "OVHcloud Link Aggregation auf einem Dedicated Server konfigurieren (Windows)"
+excerpt: "Aktivieren Sie OVHcloud Link Aggregation auf Ihrem Dedicated Server mit Windows Server 2019."
+updated: 2026-04-20
 ---
 
 ## Ziel
 
-Die OVHcloud Link Aggregation (OLA) wurde von unseren Teams entwickelt, um die Verfügbarkeit Ihres Servers zu erhöhen und die Effizienz Ihrer Netzwerkverbindungen zu steigern. Mit nur wenigen Klicks können Sie Ihre Netzwerkkarten aggregieren und Ihre Netzwerkverbindungen redundant machen. Wenn also eine Verbindung ausfällt, wird der Datenverkehr automatisch auf eine andere verfügbare Verbindung umgeleitet.
+Die OVHcloud Link Aggregation (OLA) wurde von unseren Teams entwickelt, um die Verfügbarkeit Ihres Servers zu erhöhen und die Effizienz Ihrer Netzwerkverbindungen zu steigern. Mit nur wenigen Klicks können Sie Ihre Netzwerkkarten aggregieren und Ihre Netzwerkverbindungen redundant machen. Wenn also eine Verbindung ausfällt, wird der Datenverkehr automatisch auf eine andere verfügbare Verbindung umgeleitet. Die verfügbare Bandbreite wird durch Aggregation ebenfalls verdoppelt.
+Die Aggregation basiert auf dem Standard IEEE 802.3ad, Link Aggregation Control Protocol (LACP).
+
+**Diese Anleitung erklärt, wie Sie NIC Teaming für OLA in Windows Server 2019 konfigurieren.**
 
 ## Voraussetzungen
 
-- [Konfigurieren Ihrer Netzwerkkarte für die OVHcloud Link Aggregation im OVHcloud Kundencenter](/pages/bare_metal_cloud/dedicated_servers/ola-enable-manager).
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
+- [OVHcloud Link Aggregation im OVHcloud Kundencenter konfigurieren](/pages/bare_metal_cloud/dedicated_servers/ola-enable-manager)
+
+<!-- CP-NAV-START:baremetal-dedicated-servers -->
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direktlink:** [Dedicated Server](/links/control-panel/baremetal-dedicated-servers)
+- **Navigationspfad:** `Bare Metal Cloud`{.action} > `Dedicated Server`{.action} > Wählen Sie Ihren Server aus
+
+---
+<!-- CP-NAV-END:baremetal-dedicated-servers -->
 
 ## In der praktischen Anwendung
 
 Da wir für unsere NICs in OLA eine privat-private Konfiguration haben, können wir keine SSH-Verbindung zum Server herstellen. Daher müssen wir das IPMI-Tool nutzen, um auf den Server zuzugreifen.
-<br>Loggen Sie sich hierzu in Ihrem [OVHcloud Kundencenter](/links/manager) ein. Klicken Sie im Bereich `Bare Metal Cloud`{.action} Ihren Server aus `Dedicated Server`{.action}, aus und klicken Sie dann auf den Tab `IPMI`{.action} (1).
+<br>Klicken Sie dazu auf den Tab `IPMI`{.action} (1).
 
-Klicken Sie anschließend auf die Schaltfläche `Mit einem Java-Applet (KVM)`{.action} (2).
+Klicken Sie anschließend auf den Button `Mit einem Java-Applet (KVM)`{.action} (2).
 
-![remote_kvm](images/remote_kvm2022.png){.thumbnail}
+![remote kvm](images/remote_kvm2022.png){.thumbnail}
 
 Ein JNLP-Applet wird heruntergeladen. Öffnen Sie es, um IPMI aufzurufen. Melden Sie sich mit gültigen Anmeldeinformationen für den Server an.
 
 Sobald Sie auf dem Server sind, öffnen Sie den Server-Manager. Wenn er nicht bereits standardmäßig geöffnet wird, wird er an das Start-Menü angeheftet.
 
-![Server-Manager](images/local_server.png){.thumbnail}
+![server manager](images/local_server.png){.thumbnail}
 
-Klicken Sie nach dem Öffnen des Server-Managers in der linken Seitenleiste auf **Lokaler Server**. Klicken Sie anschließend neben “NIC Teaming” auf die Schaltfläche **Deaktiviert**.
+Klicken Sie nach dem Öffnen des Server-Managers in der linken Seitenleiste auf **Lokaler Server**. Klicken Sie anschließend neben "NIC Teaming" auf die Schaltfläche **Deaktiviert**.
 
 ![Lokaler Server](images/server_manager.png){.thumbnail}
 
-Klicken Sie im NIC-Teaming-Popup im Dropdown-Menü **AUFGABEN** im Abschnitt “TEAMS” auf die Schaltfläche **Neues Team**.
+Klicken Sie im NIC-Teaming-Popup im Dropdown-Menü **AUFGABEN** im Abschnitt "TEAMS" auf die Schaltfläche **Neues Team**.
 
 ![NIC-Teaming](images/nic_teaming.png){.thumbnail}
 
-Geben Sie Ihrem Team einen Namen und überprüfen Sie die NICs, die Sie mit OLA verwenden möchten. Klicken Sie auf den Dropdown-Pfeil neben “Weitere Eigenschaften” und ändern Sie den “Teaming-Modus” zu LACP. Klicken Sie auf **OK**, sobald Sie die Richtigkeit der Informationen bestätigt haben.
+Geben Sie Ihrem Team einen Namen und überprüfen Sie die NICs, die Sie mit OLA verwenden möchten. Klicken Sie auf den Dropdown-Pfeil neben "Weitere Eigenschaften" und ändern Sie den "Teaming-Modus" zu LACP. Klicken Sie auf **OK**, sobald Sie die Richtigkeit der Informationen bestätigt haben.
 
 ![Neues Team](images/new_team.png){.thumbnail}
 
@@ -54,20 +67,22 @@ Klicken Sie anschließend mit der rechten Maustaste auf Ihr NIC-Team und wählen
 
 Doppelklicken Sie im folgenden Popup-Fenster auf die Schaltfläche **Internetprotokoll Version 4 (TCP/IPv4)**.
 
-![ipv4](images/ipv4.png){.thumbnail}
+![Eigenschaften von Internetprotokoll Version 4 (TCP/IPv4)](images/ipv4.png){.thumbnail}
 
 Klicken Sie auf "Diese IP-Adresse verwenden" und fügen Sie Ihre gewählte private IP und das Subnetz hinzu. Klicken Sie auf die Schaltfläche **OK**, sobald Sie die Richtigkeit Ihrer Einstellungen bestätigt haben.
 
 ![ipv42](images/ipv42.png){.thumbnail}
 
-Um zu testen, ob unser NIC Team funktioniert, senden Sie einen Ping-Befehl an einen anderen Server im selben vRack. Wenn es funktioniert, sind Sie bereit. Ist dies nicht der Fall, überprüfen Sie Ihre Einstellungen oder starten Sie den Server neu.
+Um zu testen, ob das NIC-Team funktioniert, senden Sie einen Ping an einen anderen Server im selben vRack. Wenn es funktioniert, sind Sie fertig. Wenn nicht, überprüfen Sie Ihre Konfigurationen oder versuchen Sie, den Server neu zu starten.
 
 ## Weiterführende Informationen
 
-[Konfigurieren der OVHcloud Link Aggregation im OVHcloud Kundencenter](/pages/bare_metal_cloud/dedicated_servers/ola-enable-manager)
+[OVHcloud Link Aggregation im OVHcloud Kundencenter konfigurieren](/pages/bare_metal_cloud/dedicated_servers/ola-enable-manager)
 
-[Konfigurieren Ihrer Netzwerkkarte für die OVHcloud Link Aggregation in Debian 9](/pages/bare_metal_cloud/dedicated_servers/ola-enable-debian9)
+[Konfigurieren Ihrer Netzwerkkarte für die OVHcloud Link Aggregation in Debian 12 oder Ubuntu 24.04 mit Netplan](/pages/bare_metal_cloud/dedicated_servers/lacp-enable-netplan)
 
-[Konfigurieren der OVHcloud Link Aggregation in SLES 15](/pages/bare_metal_cloud/dedicated_servers/ola-enable-sles15)
+[Konfigurieren Ihrer Netzwerkkarte für die OVHcloud Link Aggregation in Debian 9 bis 11](/pages/bare_metal_cloud/dedicated_servers/ola-enable-debian9)
+
+[Konfigurieren Ihrer Netzwerkkarte für die OVHcloud Link Aggregation in SLES 15](/pages/bare_metal_cloud/dedicated_servers/ola-enable-sles15)
 
 Treten Sie unserer [User Community](/links/community) bei.

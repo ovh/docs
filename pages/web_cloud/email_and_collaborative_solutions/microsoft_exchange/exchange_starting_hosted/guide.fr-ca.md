@@ -21,18 +21,23 @@ Le service Hosted Exchange permet de bénéficier d’adresses e-mail profession
 - Avoir souscrit une offre [Hosted Exchange](/links/web/emails-hosted-exchange).
 - Avoir reçu l’e-mail vous confirmant l’installation de votre solution Hosted Exchange.
 - Disposer d'un nom de domaine.
-- Être connecté à votre [espace client OVHcloud](/links/manager).
+
+<!-- CP-NAV-START:web-exchange -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Exchange](/links/control-panel/web-exchange)
+- **Pour accéder à vos services :** `Web Cloud`{.action} > `Exchange`{.action} > Sélectionnez votre plateforme
+
+---
+<!-- CP-NAV-END:web-exchange -->
 
 ## En pratique
 
 ### Accéder à la gestion de votre service
 
 Une fois votre service Hosted Exchange créé et disponible :
-
-1. Connectez-vous à votre [espace client OVHcloud](/links/manager).
-1. Rendez-vous dans la partie `Web Cloud`{.action}.
-1. Dans la rubrique `MICROSOFT`, cliquez sur `Exchange`{.action}.
-1. Sélectionnez la plateforme concernée.
 
 > [!primary]
 >
@@ -53,9 +58,9 @@ Choisissez un de vos noms de domaine dans la liste ou cochez la case `Mon nom de
 
 ![email](images/exchange-wizard01.png){.thumbnail}
 
-#### Allez-vous utiliser uniquement l'offre Exchange OVH avec ce domaine ?
+#### Allez-vous utiliser uniquement l'offre Exchange OVHcloud avec ce domaine ?
 
-La question « **Allez-vous utiliser uniquement l'offre Exchange OVH avec ce domaine ?** » va déterminer le type de configuration de votre nom de domaine. 
+La question « **Allez-vous utiliser uniquement l'offre Exchange OVHcloud avec ce domaine ?** » va déterminer le type de configuration de votre nom de domaine. 
 
 - Si vous utilisez une offre Exchange seule ou avec d'autres offres **e-mail OVHcloud**, la configuration pourra se faire automatiquement, ou manuellement en utilisant uniquement les serveurs e-mail d'OVHcloud.
 - Si vous utilisez votre offre Exchange en complément d'un service e-mail **externe aux offres e-mail OVHcloud**, il vous sera demandé de renseigner, sous la mention `Serveur relais (SMTP)`, l'URL du serveur de réception de votre service e-mail externe.
@@ -112,7 +117,7 @@ Pour en apprendre plus, vous pouvez consulter la documentation intitulée [Ajout
 > Si un nom de domaine requiert une action particulière concernant sa configuration, une pastille rouge s'affiche dans la colonne `Diagnostic`{.action} du tableau. En cliquant dessus, les modifications à effectuer s'afficheront. Si ce nom de domaine n’utilise pas la configuration d’OVHcloud (ses serveurs DNS), vous devrez réaliser les modifications depuis l’interface vous permettant de gérer la configuration de votre domaine. 
 >
 
-![Ajout d'un domaine](images/first-steps-hosted-exchange-add-domain.png)
+![Ajout d'un domaine](images/first-steps-hosted-exchange-add-domain.png){.thumbnail}
 
 ### Configurer des comptes Exchange supplémentaires (facultatif)
 
@@ -127,7 +132,7 @@ Les comptes en attente de configuration s'affichent dans le tableau sous la form
 > Répétez cette étape autant de fois que nécessaire selon le nombre de comptes que vous possédez. Vous pouvez en commander de nouveaux grâce au bouton `Actions`{.action} puis en cliquant sur `Commander des comptes`{.action}.
 >
 
-![Ajout d'un compte](images/first-steps-hosted-exchange-add-account.png)
+![Ajout d'un compte](images/first-steps-hosted-exchange-add-account.png){.thumbnail}
 
 ### Utiliser vos adresses e-mail
 
@@ -145,7 +150,7 @@ Si vous souhaitez configurer votre adresse e-mail sur un logiciel de messagerie 
 
 OVHcloud propose, depuis l'[espace client OVHcloud](/links/manager), des licences Outlook en option avec votre compte e-mail Exchange.
 
-Pour y souscrire, consultez notre page « [Obtenir une licence Outlook pour Exchange](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/office_outlook_license) ». 
+Pour y souscrire, consultez notre page « [Obtenir une licence Outlook pour Exchange](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/office_outlook_license) ».
 
 > [!primary]
 >
@@ -161,7 +166,7 @@ Pour activer ces différentes fonctions, sélectionnez le service Hosted Exchang
 
 Pour obtenir de l'aide sur l'une des fonctionnalités, [consultez notre documentation](/products/web-cloud-email-collaborative-solutions-microsoft-exchange).
 
-## Aller plus loin
+## Aller plus loin <a name="go-further"></a>
 
 [Créer un groupe de contacts](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/feature_groups)
 

@@ -14,7 +14,6 @@ Grâce à votre hébergement web OVHcloud, vous pouvez bénéficier d'un [certif
 
 - Disposer d'un [certificat SSL](/links/web/hosting-options-ssl) installé sur votre [hébergement web OVHcloud](/links/web/hosting).
 - Disposer d'au moins un site web installé et accessible sur votre hébergement web OVHcloud.
-- Être connecté à l'[espace client OVHcloud](/links/manager), partie `Web Cloud`{.action}.
 
 ## En pratique
 

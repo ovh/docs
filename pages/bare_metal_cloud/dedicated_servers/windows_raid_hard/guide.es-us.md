@@ -1,6 +1,6 @@
 ---
-title: 'Crear una partición de Windows en un servidor con RAID de hardware'
-excerpt: 'Esta guía explicará los pasos necesarios para crear una partición de Windows en un servidor con RAID de hardware.'
+title: "Crear una partición de Windows en un servidor dedicado con RAID de hardware"
+excerpt: "Cree una partición de Windows en un servidor dedicado de OVHcloud equipado con un controlador RAID de hardware."
 updated: 2018-07-24
 ---
 
@@ -14,13 +14,13 @@ Cuando instala Windows en un servidor con una configuración RAID de hardware, l
 
 - un [servidor dedicado](/links/bare-metal/bare-metal) con Windows instalado y una tarjeta RAID de hardware (LSI MegaRaid)
 - al menos dos discos idénticos
-- acceso al [panel de control de OVHcloud](/links/manager)
+
 
 ## Procedimiento
 
->[!warning]
+> [!warning]
 >
->Seguir los pasos de esta guía requerirá que elimine y reconstruya el volumen RAID existente. Esto significa que todos los datos existentes se perderán. Asegúrese de hacer una copia de seguridad de sus datos de antemano. Esta guía es para usuarios experimentados.
+> Seguir los pasos de esta guía requerirá que elimine y reconstruya el volumen RAID existente. Esto significa que todos los datos existentes se perderán. Asegúrese de hacer una copia de seguridad de sus datos de antemano. Esta guía es para usuarios experimentados.
 >
 
 ### Listar los volúmenes RAID existentes

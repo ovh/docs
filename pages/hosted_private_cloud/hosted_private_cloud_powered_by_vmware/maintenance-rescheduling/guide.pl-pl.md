@@ -23,7 +23,18 @@ Po zaplanowaniu prac konserwacyjnych na Twojej usłudze Hosted Private Cloud otr
 
 - Otrzymałeś e-mail z powiadomieniem o pracach konserwacyjnych informujący, że możesz **zmienić datę wykonania prac konserwacyjnych**. W przeciwnym razie data utrzymania nie może zostać zmieniona.
 - Posiadanie kontaktu administracyjnego lub technicznego w infrastrukturze [VMware on OVHcloud](https://www.ovhcloud.com/pl/enterprise/products/hosted-private-cloud/).
-- Dostęp do [Panelu klienta OVHcloud](/links/manager) lub [interfejsu administracyjnego usług przez API](/links/api).
+- Dostęp do [Panelu klienta OVHcloud](/links/control-panel/privatecloud-vmware-vsphere) lub [interfejsu administracyjnego usług przez API](/links/api).
+
+<!-- CP-NAV-START:privatecloud-vmware-vsphere -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [VMware vSphere](/links/control-panel/privatecloud-vmware-vsphere)
+- **Ścieżka nawigacji:** `Hosted Private Cloud`{.action} > `Managed VMware vSphere`{.action} > Wybierz usługę vSphere
+
+---
+<!-- CP-NAV-END:privatecloud-vmware-vsphere -->
 
 ## W praktyce
 

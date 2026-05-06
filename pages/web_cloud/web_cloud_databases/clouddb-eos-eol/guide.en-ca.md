@@ -1,6 +1,6 @@
 ---
 title: 'Web Cloud Databases EOS and EOL announcements'
-updated: 2025-12-02
+updated: 2026-03-06
 ---
 
 ## Objective
@@ -19,6 +19,7 @@ The products covered by those End Of Sale (EOS) and End Of Life (EOL) announceme
 |PostgreSQL 15|To be defined|To be defined|To be defined|
 |PostgreSQL 16|To be defined|To be defined|To be defined|
 |PostgreSQL 17|To be defined|To be defined|To be defined|
+|PostgreSQL 18|To be defined|To be defined|To be defined|
 |Valkey 7.2|To be defined|To be defined|To be defined|
 
 ## Go further

@@ -13,7 +13,17 @@ Vous venez d'effectuer la commande d'une plateforme Private Exchange. Ce guide d
 ## Prérequis
 
 - Avoir commandé une [offre Private Exchange OVHcloud](/links/web/emails-private-exchange).
-- Être connecté à [l'espace client OVHcloud](/links/manager).
+
+<!-- CP-NAV-START:web-exchange -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Exchange](/links/control-panel/web-exchange)
+- **Pour accéder à vos services :** `Web Cloud`{.action} > `Exchange`{.action} > Sélectionnez votre plateforme
+
+---
+<!-- CP-NAV-END:web-exchange -->
 
 ## En pratique
 
@@ -27,7 +37,7 @@ Pour consulter cet e-mail depuis votre [espace client OVHcloud](/links/manager),
 
 ![first-use-private-exchange](images/first-use-private-exchange-01.png){.thumbnail}
 
-Cet e-mail contient un lien permettant de compléter deux étapes de la configuration votre plateforme :
+Cet e-mail contient un lien permettant de compléter deux étapes de la configuration de votre plateforme :
 
 - personnaliser votre lien d'accès à votre webmail (certificat SSL dédié);
 - renseigner l'adresse e-mail de correspondance pour valider votre certificat (attention : cette adresse e-mail doit être existante, et vous devez pouvoir y accéder).
@@ -58,7 +68,7 @@ Après validation de cette étape, un message vous indique que la configuration 
 > Cette étape est facultative si vous avez coché « **DNS Assist** » à [l'étape 2 ](./#etape-2-initialisation-de-votre-plateforme).
 > 
 
-Si votre nom de domaine n'est pas géré sur le même compte client ou non-hébergé par OVHcloud, un second e-mail vous sera envoyé et contiendra les informations nécessaires pour configurer manuellement votre zone dns.
+Si votre nom de domaine n'est pas géré sur le même compte client ou non-hébergé par OVHcloud, un second e-mail vous sera envoyé et contiendra les informations nécessaires pour configurer manuellement votre zone DNS.
 
 L'e-mail contient les adresses IPv4 et IPv6 de votre plateforme. Renseignez ces adresses dans la zone DNS du sous-domaine préalablement créé à [l'étape 2 ](./#etape-2-initialisation-de-votre-plateforme), sous les formes respectives d'un enregistrement de type « A » et d'un enregistrement de type « AAAA ». Pour un nom de domaine OVHcloud, consultez notre guide [« Éditer une zone DNS »](/pages/web_cloud/domains/dns_zone_edit) pour vous aider.
 
@@ -80,7 +90,7 @@ Un message vous informe si le code renseigné est valide. Si c'est le cas, cliqu
 
 ### Finalisation
 
-Une fois votre certificat SSL validé, un délai de 4 heures peut encore être nécessaire pour la livraison de votre service. Durant cette période, votre plateforme private Exchange n'est pas visible dans votre espace client.
+Une fois votre certificat SSL validé, un délai de 4 heures peut encore être nécessaire pour la livraison de votre service. Durant cette période, votre plateforme Private Exchange n'est pas visible dans votre espace client.
 
 Une fois votre serveur prêt et disponible, un e-mail de confirmation vous est envoyé avec pour objet :
 
@@ -88,7 +98,7 @@ Une fois votre serveur prêt et disponible, un e-mail de confirmation vous est e
 
 Pour ajouter votre premier nom de domaine à votre plateforme et configurer les comptes, consultez notre guide [« ajouter un nom de domaine sur son service Exchange »](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_adding_domain) 
 
-## Aller plus loin
+## Aller plus loin <a name="go-further"></a>
 
 [Éditer une zone DNS](/pages/web_cloud/domains/dns_zone_edit)
 

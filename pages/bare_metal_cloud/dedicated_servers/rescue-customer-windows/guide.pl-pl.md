@@ -1,6 +1,6 @@
 ---
-title: "Jak aktywować i używać trybu Rescue Windows"
-excerpt: "Dowiedz się, jak używać systemu rescue OVHcloud dla Windows do rozwiązywania problemów z serwerem dedykowanym"
+title: "Jak używać trybu WinRescue na serwerze dedykowanym Windows"
+excerpt: "Uruchom serwer dedykowany OVHcloud w trybie WinRescue, aby rozwiązywać problemy i odzyskiwać dane z systemu Windows."
 updated: 2025-01-28
 ---
 
@@ -44,13 +44,21 @@ Opcja **Windows customer rescue system** jest dostępna tylko dla serwerów dedy
 
 - Microsoft Windows zainstalowany na Twoim [serwerze dedykowanym](/links/bare-metal/bare-metal)
 - Co najmniej 16 GB RAM zainstalowanych na serwerze
-- Dostęp do [panelu klienta OVHcloud](/links/manager)
+
+<!-- CP-NAV-START:baremetal-dedicated-servers -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Serwery dedykowane](/links/control-panel/baremetal-dedicated-servers)
+- **Ścieżka nawigacji:** `Bare Metal Cloud`{.action} > `Serwery dedykowane`{.action} > Wybierz serwer
+
+---
+<!-- CP-NAV-END:baremetal-dedicated-servers -->
 
 ## W praktyce
 
 ### Aktywacja trybu Rescue dla Windows
-
-Zaloguj się do [Panelu klienta OVHcloud](/links/manager), otwórz sekcję `Bare Metal Cloud`{.action}, następnie `Serwery dedykowane`{.action}.
 
 Kliknij nazwę serwera, aby otworzyć zakładkę `Informacje ogólne`{.action}.
 

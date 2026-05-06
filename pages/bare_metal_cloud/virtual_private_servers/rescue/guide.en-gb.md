@@ -1,7 +1,7 @@
 ---
 title: How to use rescue mode on a VPS
 excerpt: Find out how to activate the OVHcloud rescue mode to troubleshoot your VPS and run system checks
-updated: 2025-03-27
+updated: 2025-01-12
 ---
 
 ## Objective
@@ -11,10 +11,10 @@ Rescue mode is a tool provided by OVHcloud to boot your VPS into a temporary ope
 - [Resetting your user password to regain access](/pages/bare_metal_cloud/dedicated_servers/replacing-user-password)
 - Diagnosing network problems
 - Repairing a broken operating system
-- Fixing a misconfigured software firewall 
+- Fixing a misconfigured software firewall
 - Testing disk performance
 
-If you are facing a problem with your system, performing checks in rescue mode helps to determine whether it is related to software installed on the VPS or caused by a more profound issue. Before contacting our support teams, we recommend to gather test results and exclude any software errors by using rescue mode.
+If you are facing a problem with your system, performing checks in rescue mode helps to determine whether it is related to software installed on the VPS or caused by a more profound issue. Before contacting our support teams, gather test results and exclude software errors using rescue mode.
 
 > [!warning]
 >
@@ -26,7 +26,17 @@ If you are facing a problem with your system, performing checks in rescue mode h
 ## Requirements
 
 - A [Virtual Private Server](/links/bare-metal/vps) in your OVHcloud account
-- Access to the [OVHcloud Control Panel](/links/manager)
+
+<!-- CP-NAV-START:baremetal-vps -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [VPS management](/links/control-panel/baremetal-vps)
+- **Navigation path:** `Bare Metal Cloud`{.action} > `Virtual private servers`{.action} > Select your VPS
+
+---
+<!-- CP-NAV-END:baremetal-vps -->
 
 > [!warning]
 > OVHcloud provides services for which you are responsible with regard to their configuration and management. It is therefore your responsibility to ensure that they function correctly.
@@ -38,21 +48,27 @@ If you are facing a problem with your system, performing checks in rescue mode h
 
 ### Activating rescue mode
 
-Log in to the [OVHcloud Control Panel](/links/manager), go to the `Bare Metal Cloud`{.action} section and select your server from `Virtual Private Servers`{.action}.
-
+<!-- CP-STEPS-START:activate-rescue -->
 On the `Home`{.action} tab, click on `...`{.action} next to "Boot" in the section **Your VPS**.
 
 ![Rescue](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/vps/cp_rescue.png){.thumbnail}
 
 Select `Reboot in rescue mode`{.action} from the menu and click `Confirm`{.action} in the popup window.
+<!-- CP-STEPS-END:activate-rescue -->
 
 ### Using rescue mode
 
 After initiating the reboot, a progress bar will indicate the duration of the task. Note that this can take several minutes.
 
+<!-- CP-STEPS-START:service-emails-notification -->
 > [!primary]
 >
 > You will receive an automated email with the SSH credentials for rescue mode access. Please wait for the email to arrive before taking any further action. This email can also be viewed in your [OVHcloud Control Panel](/links/manager): Click on the name associated with your NIC handle (Customer ID) in the menu bar in the top right-hand corner, then select `Service emails`{.action}.
+>
+<!-- CP-STEPS-END:service-emails-notification -->
+
+> [!warning]
+> Please note that if you are no longer the technical contact of the server, you will not receive the email. For more information, refer to our guide on [Managing contacts for your services](/pages/account_and_service_management/account_information/managing_contacts).
 >
 
 You will then need to [access your server via SSH](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction), using the temporary password generated for the rescue mode.
@@ -123,7 +139,7 @@ You should then see your file system displayed:
 bin  boot  dev  etc  home  lib  lib32  lib64  libx32  lost+found  media  mnt  opt  proc  root  run  sbin  snap  srv  sys  tmp  usr  var
 ```
 
-Before you can manipulate this partition however, you need to open it for write access which you can do with the following command:
+Before you can write to this partition, you need to open it for write access with the following command:
 
 ```bash
 chroot /mnt
@@ -131,9 +147,11 @@ chroot /mnt
 
 You can now apply changes to your system, for example [reset user passwords and SSH keys](#gofurther).
 
+<!-- CP-STEPS-START:exit-rescue -->
 Once you have completed your actions in rescue mode, reboot the VPS again in the regular mode from the OVHcloud Control Panel.
 
 ![rescue mode control panel](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/vps/cp_reboot.png){.thumbnail}
+<!-- CP-STEPS-END:exit-rescue -->
 
 ### Troubleshooting boot issues
 

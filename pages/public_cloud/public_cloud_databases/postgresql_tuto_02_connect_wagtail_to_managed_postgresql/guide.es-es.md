@@ -1,5 +1,5 @@
 ---
-title: PostgreSQL - Tutorial - Install Wagtail and connect it to OVHcloud Managed PostgreSQL service
+title: Install and connect Wagtail to Public Cloud Databases for PostgreSQL
 excerpt: "Find out how to install Wagtail and connect it to an OVHcloud Managed PostgreSQL service"
 updated: 2022-02-11
 ---
@@ -19,10 +19,20 @@ In this tutorial, we are going to show you how to install [Wagtail](https://wagt
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](/links/manager)
 - A [Public Cloud project](/links/public-cloud/public-cloud) in your OVHcloud account.
 - An up and running Public Cloud Database for PostgreSQL.
 - A Python environment with a stable version and public network connectivity (Internet). This tutorial was made using Python 3.9.7.
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Navigation path:** `Public Cloud`{.action} > Select your project
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 > [!primary]
 >
@@ -33,7 +43,7 @@ In this tutorial, we are going to show you how to install [Wagtail](https://wagt
 
 Before making a connection, we need to verify that our PostgreSQL instance is correctly configured.
 
-Log in to your [OVHcloud Control Panel](/links/manager) and open your `Public Cloud`{.action} project. Click on `Databases`{.action} in the left-hand navigation bar and select your PostgreSQL instance.
+Click on `Databases`{.action} in the left-hand navigation bar and select your PostgreSQL instance.
 
 ### Step 1: Verify your user roles and password
 

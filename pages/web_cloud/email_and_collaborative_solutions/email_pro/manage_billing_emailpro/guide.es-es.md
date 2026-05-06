@@ -4,7 +4,6 @@ excerpt: 'Cómo gestionar la facturación de un servicio Email Pro'
 updated: 2025-09-22
 ---
 
-
 ## Objetivo
 
 La solución Email Pro dispone de una gestión flexible relativa a la facturación de las cuentas. Esta guía explica cómo configurarla.
@@ -13,17 +12,22 @@ La solución Email Pro dispone de una gestión flexible relativa a la facturaci�
 
 ## Requisitos
 
-- Haber iniciado sesión en el [área de cliente de OVHcloud](/links/manager).
 - Disponer de una [cuenta Email Pro](/links/web/email-pro).
+
+<!-- CP-NAV-START:web-email-pro -->
+---
+
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [Email Pro](/links/control-panel/web-email-pro)
+- **Ruta de navegación:** `Web Cloud`{.action} > `Email Pro`{.action} > Seleccione su plataforma
+
+---
+<!-- CP-NAV-END:web-email-pro -->
 
 ## Procedimiento
 
 ### Contratar cuentas adicionales
-
-1. Conéctese a su [área de cliente de OVHcloud](/links/manager).
-1. Haga clic en la pestaña `Web Cloud`{.action}.
-1. Haga clic en `Email Pro`{.action}.
-1. Seleccione la plataforma correspondiente.
 
 Acceda a la pestaña `Cuentas de correo`{.action} y haga clic en el botón `Contratar cuentas`{.action} en la parte superior derecha.
 

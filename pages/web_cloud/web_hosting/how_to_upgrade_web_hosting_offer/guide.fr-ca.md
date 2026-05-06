@@ -21,8 +21,18 @@ Votre [espace client OVHcloud](/links/manager) permet d'augmenter les capacités
 ## Prérequis
 
 - Disposer d'une [offre d'hébergement web](/links/web/hosting)
-- Être connecté à votre [espace client OVHcloud](/links/manager)
 - Être, a minima, contact « [Administrateur](/pages/account_and_service_management/account_information/managing_contacts) » des services pour lesquels vous souhaitez modifier l'abonnement.
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Hébergements](/links/control-panel/web-hosting)
+- **Pour accéder à vos services :** `Web Cloud`{.action} > `Hébergements`{.action} > Sélectionnez votre hébergement web
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## En pratique
 
@@ -42,28 +52,24 @@ Votre [espace client OVHcloud](/links/manager) permet d'augmenter les capacités
 > Si vous souhaitez modifier votre abonnement pour passer à une offre inférieure, veuillez suivre les étapes de notre guide « [Migrer son site et ses e-mails vers OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh) ».
 > 
 
-Pour modifier votre abonnement, cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3** étapes.
+<!-- CP-STEPS-START:modify-subscription -->
+Pour modifier votre abonnement, cliquez sur les onglets ci-dessous pour afficher successivement chacune des **2** étapes.
 
 > [!tabs]
 > **Étape 1**
 >>
->> Connectez-vous à votre [espace client OVHcloud](/links/manager), puis rendez-vous dans la partie `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Étape 2**
->>
->> Cliquez sur le menu `Hébergements`{.action}, puis choisissez l'hébergement web concerné.
+>> Accédez à la page [Hébergements](/links/control-panel/web-hosting), puis choisissez l'hébergement web concerné.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Étape 3**
+> **Étape 2**
 >>
 >> Dans le cadre **Abonnement**, cliquez sur le bouton `...`{.action} à droite de **Offre** puis sur `Changer d'offre`{.action}.
 >>
 >> ![change_plan](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/pro-change-plan.png){.thumbnail}
 >>
 >> Sélectionnez ensuite votre nouvel abonnement, ainsi que sa durée. Validez les contrats correspondants puis cliquez sur `Envoyer`{.action}.
+<!-- CP-STEPS-END:modify-subscription -->
 
 ### Cas particuliers
 
@@ -77,43 +83,34 @@ Avec l'[option Boost](/links/web/hosting-options-boost), disponible sur nos offr
 
 Si l'option **Boost** convient à votre besoin, vous trouverez ci-dessous les instructions pour **activer** ou **désactiver** cette option sur votre hébergement.
 
-Pour **activer l'option Boost**, cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3** étapes.
+<!-- CP-STEPS-START:enable-boost -->
+Pour **activer l'option Boost**, cliquez sur les onglets ci-dessous pour afficher successivement chacune des **2** étapes.
 
 > [!tabs]
 > **Étape 1**
 >>
->> Connectez-vous à votre [espace client OVHcloud](/links/manager), puis rendez-vous dans la partie `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Étape 2**
->>
->> Cliquez sur le menu `Hébergements`{.action}, puis choisissez l'hébergement web concerné.
+>> Accédez à la page [Hébergements](/links/control-panel/web-hosting), puis choisissez l'hébergement web concerné.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Étape 3**
+> **Étape 2**
 >>
 >> Dans l'encadré **Informations générales** de la page qui s'affiche, cliquez sur le bouton `...`{.action} à droite de **Boost** puis sur `Booster mon offre`{.action}.
 >>
 >> ![boost enable](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/boost-my-hosting-plan.png){.thumbnail}
+<!-- CP-STEPS-END:enable-boost -->
 
-Pour **désactiver l'option Boost**, cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4** étapes.
+<!-- CP-STEPS-START:disable-boost -->
+Pour **désactiver l'option Boost**, cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3** étapes.
 
 > [!tabs]
 > **Étape 1**
 >>
->> Connectez-vous à votre [espace client OVHcloud](/links/manager), puis rendez-vous dans la partie `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Étape 2**
->>
->> Cliquez sur le menu `Hébergements`{.action}, puis choisissez l'hébergement web concerné.
+>> Accédez à la page [Hébergements](/links/control-panel/web-hosting), puis choisissez l'hébergement web concerné.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Étape 3**
+> **Étape 2**
 >>
 >> Sur la page qui s'affiche, cliquez sur l'onglet `Plus`{.action} puis cliquez sur `Booster mon offre`{.action}.
 >>
@@ -121,11 +118,12 @@ Pour **désactiver l'option Boost**, cliquez sur les onglets ci-dessous pour aff
 >>
 >> ![More tab 2](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/more-2.png){.thumbnail}
 >>
-> **Étape 4**
+> **Étape 3**
 >>
 >> Le tableau d'utilisation de l'option Boost s'affiche, cliquez sur `Désactiver l'offre boost`{.action}
 >>
 >> ![boost disable](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/boost-my-hosting-plan/deactivate-the-boost-plan.png){.thumbnail}
+<!-- CP-STEPS-END:disable-boost -->
 
 #### La facturation en cas de changement d'offre <a name="billing"></a>
 

@@ -17,7 +17,6 @@ Die Delegation gibt dem Benutzer eines E-Mail-Accounts die Möglichkeit, verschi
 ## Voraussetzungen
 
 - Sie verfügen über ein MX Plan Angebot, entweder in einem [OVHcloud Webhosting](/links/web/hosting) enthalten, separat bestellt, oder enthalten in [Kostenloses Hosting 100M](/links/web/domains-free-hosting).
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 
 > [!warning]
 >
@@ -29,6 +28,17 @@ Die Delegation gibt dem Benutzer eines E-Mail-Accounts die Möglichkeit, verschi
 |![E-Mail](images/mxplan-starter-legacy-step1.png){.thumbnail}<br> Die Angebotsbezeichnung steht in der Box "Abo".|![E-Mail](images/mxplan-starter-new-step1.png){.thumbnail}<br>Die `Server-Referenz` befindet sich in der Box "Zusammenfassung".|
 |Lesen Sie weiter in dieser [Anleitung](#oldmxplan).|Fahren Sie fort mit unserer Anleitung zur [Verwendung der Outlook Web App](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa#passwort-andern).|
 
+<!-- CP-NAV-START:web-mx-plan -->
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direkter Link:** [MX Plan](/links/control-panel/web-mx-plan)
+- **Navigationspfad:** `Web Cloud`{.action} > `MX Plan`{.action} > Wählen Sie Ihren MX Plan Dienst aus
+
+---
+<!-- CP-NAV-END:web-mx-plan -->
+
 ## In der praktischen Anwendung <a name="oldmxplan"></a>
 
 > [!primary]
@@ -36,11 +46,7 @@ Die Delegation gibt dem Benutzer eines E-Mail-Accounts die Möglichkeit, verschi
 > Die Einrichtung einer Delegation für einen E-Mail-Account führt dazu, dass er im betreffenden [Kundencenter](/links/manager) angezeigt wird. Für den delegierten Account sind jedoch nur die im Abschnitt [Ziel](#objective) dieser Anleitung aufgeführten Änderungen möglich.
 >
 
-1. Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein.
-1. Öffnen Sie den Bereich `Web Cloud`{.action}.
-1. Klicken Sie auf `MX Plan`{.action}.
-1. Wählen Sie die betreffende Domain aus.
-1. Gehen Sie auf den Tab `E-Mails`{.action}, um die Liste der E-Mail-Accounts Ihres MX Plan Angebots anzuzeigen.
+Gehen Sie auf den Tab `E-Mails`{.action}, um die Liste der E-Mail-Accounts Ihres MX Plan Angebots anzuzeigen.
 
 ![Delegation](images/mxplan-delegation-01.png){.thumbnail}
 
@@ -72,7 +78,7 @@ Geben Sie die OVHcloud Kundenkennung an, die diese Delegation erhält, und best�
 
 Sie können mehrere Kundenkennung angeben, um einen E-Mail-Account zu verwalten.
 
-## Weiterführende Informationen
+## Weiterführende Informationen <a name="go-further"></a>
 
 [Erste Schritte mit MX Plan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities)
 

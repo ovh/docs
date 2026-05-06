@@ -1,7 +1,7 @@
 ---
 title: AI Deploy - Facturation et cycle de vie (EN)
 excerpt: Découvrez comment la solution AI Deploy est facturée
-updated: 2025-02-18
+updated: 2026-03-18
 ---
 
 > [!primary]
@@ -24,16 +24,17 @@ AI Deploy is linked to a Public Cloud project. The whole project is billed at th
 OVHcloud AI Deploy allows deployment of Docker images, and each deployment is called an `app`. 
 During its lifetime, the app will go through the following status:
 
-- `QUEUED`: the app deployment request is about to be processed.
-- `INITIALIZING`: the app is being started and, if any, the remote data is synchronized from the Object Storage. To learn more about data synchronization, please check out the [Data - Concept and best practices](/pages/public_cloud/ai_machine_learning/gi_02_concepts_data#how-it-works) documentation.
+- `QUEUED`: The app deployment request is about to be processed.
+- `INITIALIZING`: The app is being started and, if any, the remote data is synchronized from the Object Storage. To learn more about data synchronization, please check out the [Data - Concept and best practices](/pages/public_cloud/ai_machine_learning/gi_02_concepts_data#how-it-works) documentation.
 - `SCALING`: First, the system allocates the necessary compute resources (CPU/GPU) for the app. Then, the specified Docker image is pulled for use in the app. This status is also entered when the number of app replicas is being increased or decreased.
 - `RUNNING`: At least one replica of the app is available and accessible via its endpoint. As the app scales up to create new replicas, the status transitions back to `SCALING`. However, there is no interruption in service, and the original replica(s) remain accessible during this time.
-- `STOPPING`: the app is stopping, your compute resources are freed. Ephemeral data is deleted.
-- `STOPPED`: the app ended normally. You can restart it whenever you want or delete it. It will keep the same endpoint.
-- `FAILED`: the app ended in error, e.g. the Docker image is invalid (unreachable, built with linux/arm, ...).
-- `ERROR`: the app ended due to a backend error (issue on OVHcloud side). You may reach our support.
-- `DELETING`: the app is being removed. When it is deleted, you will no longer see it, it will no longer exist.
-- `DELETED`: the app is fully deleted.
+- `STANDBY`: The app has no running replicas but is ready to scale back up when traffic arrives. **This happens after a period with no incoming requests when scaling to 0 is enabled**. When traffic arrives, the app transitions from `STANDBY` to `RUNNING` through the `INITIALIZING` and `SCALING` states.
+- `STOPPING`: The app is stopping, your compute resources are freed. Ephemeral data is deleted.
+- `STOPPED`: The app ended normally. You can restart it whenever you want or delete it. It will keep the same endpoint.
+- `FAILED`: The app ended in error, e.g. the Docker image is invalid (unreachable, built with linux/arm, ...).
+- `ERROR`: The app ended due to a backend error (issue on OVHcloud side). You may [reach our support](/links/support-contact).
+- `DELETING`: The app is being removed. When it is deleted, you will no longer see it, it will no longer exist.
+- `DELETED`: The app is fully deleted.
 
 ![image](images/ai.deploy.lifecycle.png){.thumbnail}
 
@@ -68,10 +69,10 @@ Their official pricing is available in the [OVHcloud Control Panel](/links/manag
 
 Rates for compute are mentioned per hour to facilitate reading of the prices, but the billing granularity remains **per minute**.
 
-Once you select the compute resources, you can specify the scaling strategy:
+Once you select the compute resources, you can specify the [scaling strategy](/pages/public_cloud/ai_machine_learning/deploy_guide_04_scaling_strategies):
 
 - **Fixed scaling**: you can specify a fixed amount of replicas, starting at one. Please note that with one replica, you will not benefit from high-availability.
-- **Auto-scaling**: you can specify a minimum and maximum amount of replicas, and a metric that will act as a trigger for scaling up or down (CPU or RAM usage). Each replica will benefit from the compute resource selected before.
+- **Auto-scaling**: you can specify a minimum and maximum amount of replicas, and a metric that will act as a trigger for scaling up or down (CPU, RAM usage or a custom metric). Each replica will benefit from the compute resource selected before.
 
 ### Storage details
 

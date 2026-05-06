@@ -15,8 +15,18 @@ Il existe une multitude de sites web. Qu'il s'agisse de blogs, de boutiques en l
 - Disposer d'une offre d'[hébergement web OVHcloud](/links/web/hosting).
 - Avoir reçu l'e-mail vous confirmant l'installation de votre hébergement web.
 - Disposer d'un [nom de domaine](/links/web/domains) qui sera l'adresse d'accès à votre site web.
-- Être connecté à votre [espace client OVHcloud](/links/manager).
 - Être à jour dans les [paiements](/pages/account_and_service_management/managing_billing_payments_and_services/invoice_management#pay-bills) et [renouvellements](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#renewal-management) des services liés (nom de domaine et hébergement web).
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Hébergement web](/links/control-panel/web-hosting)
+- **Pour accéder à vos services :** `Web Cloud`{.action} > `Hébergements`{.action} > Sélectionnez votre hébergement web
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## En pratique
 

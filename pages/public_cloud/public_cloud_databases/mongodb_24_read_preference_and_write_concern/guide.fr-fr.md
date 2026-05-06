@@ -1,5 +1,5 @@
 ---
-title: MongoDB - MongoDB readPreference and writeConcern
+title: Comprendre readPreference et writeConcern de Public Cloud Databases pour MongoDB (EN)
 excerpt: MongoDB readPreference and writeConcern
 updated: 2025-01-06
 ---

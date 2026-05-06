@@ -4,6 +4,50 @@ excerpt: Dowiedz się, jak przerwać subskrypcję OVHcloud z poziomu Panelu klie
 updated: 2025-04-28
 ---
 
+<style>
+/* ---FAQ only--- */
+details {
+    margin: 0.1rem 1;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    background: #ffffffff;
+}
+details > summary {
+    padding: 0.1rem 1rem;
+    font-weight: 500;
+    color: #268fd4ff;
+    cursor: pointer;
+    list-style: none;
+}
+details > summary::before {
+    content: '\25B6';
+    display: inline-block;
+    margin-right: 0.5ch;
+    transition: transform 0.2s;
+}
+details[open] > summary::before {
+    content: '\25BC';
+}
+details:hover {
+    border: 1px solid #147DE8;
+    border-radius: 4px;
+    transition: border-color 0.5s ease;
+}
+details[open] > summary {
+    background: #ffffffff;
+}
+details > :not(summary) {
+    padding: 0.25rem 0.5rem;
+    box-sizing: border-box;
+    list-style-position: inside;
+}
+.smallish-gap {
+    display: block;
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
+}
+</style>
+
 ## Wprowadzenie
 
 Chcesz zrezygnować z jednej lub kilku usług OVHcloud. Z tego przewodnika dowiesz się, jak przerwać subskrypcję w Panelu klienta OVHcloud.
@@ -36,8 +80,18 @@ Oznacza to, że przed rozwiązaniem umowy musisz być **pewny**:
 ## Wymagania początkowe
 
 - Pełnienie funkcji "kontaktu administracyjnego" dla usługi, z której chcesz zrezygnować (aby uzyskać więcej informacji, zapoznaj się z [tym przewodnikiem](/pages/account_and_service_management/account_information/managing_contacts#definition))
-- Dostęp do [Panelu klienta OVHcloud](/links/manager)
 - Posiadanie aktywnych usług OVHcloud (nie zawieszonych z powodu braku płatności)
+
+<!-- CP-NAV-START:billing-services -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Moje rozwiązania i usługi](/links/control-panel/billing-services)
+- **Ścieżka nawigacji:** Kliknij swoją nazwę w prawym górnym rogu > `Moje rozwiązania i usługi`{.action}
+
+---
+<!-- CP-NAV-END:billing-services -->
 
 ## W praktyce
 
@@ -47,7 +101,7 @@ Istnieją jednak **przypadki szczególne**, które są opisane [poniżej](#speci
 
 ### Jak zrezygnować z abonamentu? <a name="terminate"></a>
 
-Aby zrezygnować z abonamentu, zaloguj się do [Panelu klienta OVHcloud](/links/manager), kliknij Twoją nazwę w prawym górnym rogu, a następnie `Moje rozwiązania i usługi`{.action}.
+Aby zrezygnować z abonamentu, otwórz stronę [Moje rozwiązania i usługi](/links/control-panel/billing-services).
 
 ![produkty i usługi](/pages/assets/screens/control_panel/product-selection/right-menu/my-solutions-and-services.png){.thumbnail}
 
@@ -131,7 +185,7 @@ Możesz również [sprawdzić aktualne](/pages/public_cloud/public_cloud_cross_f
 > Możesz anulować zlecenie rezygnacji z usługi do 24 godzin przed datą wygaśnięcia abonamentu.
 >
 
-Aby anulować zlecenie rezygnacji z usługi, zaloguj się do [Panelu klienta OVHcloud](/links/manager), kliknij swoją nazwę w prawym górnym rogu, a następnie `Moje rozwiązania i usługi`{.action}.
+Aby anulować zlecenie rezygnacji z usługi, otwórz stronę [Moje rozwiązania i usługi](/links/control-panel/billing-services).
 
 Następnie kliknij przycisk `...`{.action} po prawej stronie usługi, w odniesieniu do której złożono wniosek o rezygnację, a następnie `Anuluj rezygnację z usługi`{.action} 
 
@@ -143,33 +197,42 @@ Anulowanie rezygnacji obowiązuje natychmiastowo. Odśwież stronę "Zarządzani
 
 ## FAQ
 
-> [!faq]
->
-> Nie mogę zrezygnować z usługi. Co mogę zrobić?
->> Jeśli nie możesz zrezygnować z usługi (przycisk `Rezygnuję z usługi`{.action} nie jest proponowany), może to być jeden z przypadków szczególnych [powyżej w tym przewodniku](#specific-cases).
->> Sprawdź również, czy spełnione są następujące warunki:
->>
->> - Musisz być "kontaktem administracyjnym" usługi. Aby uzyskać więcej informacji, zobacz [ten przewodnik](/pages/account_and_service_management/account_information/managing_contacts#definition).
->> - Usługa jest odnawiana automatycznie **automatyczne odnawianie**. Jeśli Twoja usługa jest w trakcie [odnowienie ręczne](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#auto-vs-manual), zostanie zawieszona w dniu wygaśnięcia i usunięta po kilku dniach.
->> - Usługa nie jest zawieszona, głównie z powodu braku uregulowania faktury. Sprawdź, czy Twoje usługi są aktualne w [płatności](/pages/account_and_service_management/managing_billing_payments_and_services/invoice_management#pay-bills) i [Odnowienia](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#renewal-management).
->>
->> Jeśli nadal nie możesz zrezygnować z usługi, skontaktuj się z zespołem pomocy, otwierając zgłoszenie w [Centrum pomocy](https://help.ovhcloud.com/csm?id=csm_get_help).
-> Jak zrezygnować ze wszystkich usług?
->> Przeprowadź procedurę rezygnacji z każdej usługi pojedynczo. Nie ma możliwości zrezygnowania z kilku usług jednocześnie ani poproszenia naszych zespołów obsługi klienta o globalne rozwiązanie umowy.
-> Jak usunąć moje konto OVHcloud?
->> Zamknięcie konta klienta OVHcloud i usunięcie danych osobowych jest możliwe tylko wtedy, gdy:
->>
->> 1. Nie masz już widocznych usług w sekcji "[Moje rozwiązania i usługi](https://www.ovh.com/manager/dedicated/#/billing/autoRenew)". W przeciwnym razie najpierw poproś o ich rozwiązanie i zaczekaj na ich usunięcie.
->> 2. Nie masz faktur oczekujących na płatność. W przeciwnym razie należy uregulować należność, klikając przycisk `Zapłać teraz`{.action} w akcjach masowych na stronie "[Moje faktury](https://www.ovh.com/manager/#/dedicated/billing/history)".
->> 3. Nie posiadasz zamówień w trakcie realizacji. Sprawdź go na [tej stronie](https://www.ovh.com/manager/#/dedicated/billing/orders/orders).
->> 4. Twoje konto przedpłacone nie jest dodatnie. Sprawdź go na [tej stronie](https://www.ovh.com/manager/#/dedicated/billing/payment/ovhaccount).
->>
->> Jeśli powyższe warunki są spełnione, możesz zażądać usunięcia konta OVHcloud i powiązanych z nim danych, wykonując następujące kroki:
->>
->> 1. Zaloguj się do [Centrum pomocy OVHcloud](https://help.ovhcloud.com/csm?id=csm_get_help)
->> 2. Kliknij przycisk `Utwórz zgłoszenie`{.action}
->> 3. Wybierz motyw `Zarządzaj kontem klienta OVHcloud`
->> 4. Prosimy o sprecyzowanie opcji `Chcę zamknąć konto klienta OVHcloud` i postępowanie zgodnie z instrukcjami zawartymi w tej operacji.
+/// details | Nie mogę zrezygnować z usługi. Co mogę zrobić?
+
+Jeśli nie możesz zrezygnować z usługi (przycisk `Rezygnuję z usługi`{.action} nie jest proponowany), może to być jeden z przypadków szczególnych [powyżej w tym przewodniku](#specific-cases).
+Sprawdź również, czy spełnione są następujące warunki:
+
+- Musisz być "kontaktem administracyjnym" usługi. Aby uzyskać więcej informacji, zobacz [ten przewodnik](/pages/account_and_service_management/account_information/managing_contacts#definition).
+- Usługa jest odnawiana automatycznie **automatyczne odnawianie**. Jeśli Twoja usługa jest w trakcie [odnowienie ręczne](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#auto-vs-manual), zostanie zawieszona w dniu wygaśnięcia i usunięta po kilku dniach.
+- Usługa nie jest zawieszona, głównie z powodu braku uregulowania faktury. Sprawdź, czy Twoje usługi są aktualne w [płatności](/pages/account_and_service_management/managing_billing_payments_and_services/invoice_management#pay-bills) i [Odnowienia](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#renewal-management).
+
+Jeśli nadal nie możesz zrezygnować z usługi, skontaktuj się z zespołem pomocy, otwierając zgłoszenie w [Centrum pomocy](https://help.ovhcloud.com/csm?id=csm_get_help).
+
+///
+
+/// details | Jak zrezygnować ze wszystkich usług?
+
+Przeprowadź procedurę rezygnacji z każdej usługi pojedynczo. Nie ma możliwości zrezygnowania z kilku usług jednocześnie ani poproszenia naszych zespołów obsługi klienta o globalne rozwiązanie umowy.
+
+///
+
+/// details | Jak usunąć moje konto OVHcloud?
+
+Zamknięcie konta klienta OVHcloud i usunięcie danych osobowych jest możliwe tylko wtedy, gdy:
+
+1. Nie masz już widocznych usług w sekcji "[Moje rozwiązania i usługi](https://www.ovh.com/manager/dedicated/#/billing/autoRenew)". W przeciwnym razie najpierw poproś o ich rozwiązanie i zaczekaj na ich usunięcie.
+2. Nie masz faktur oczekujących na płatność. W przeciwnym razie należy uregulować należność, klikając przycisk `Zapłać teraz`{.action} w akcjach masowych na stronie "[Moje faktury](https://www.ovh.com/manager/#/dedicated/billing/history)".
+3. Nie posiadasz zamówień w trakcie realizacji. Sprawdź go na [tej stronie](https://www.ovh.com/manager/#/dedicated/billing/orders/orders).
+4. Twoje konto przedpłacone nie jest dodatnie. Sprawdź go na [tej stronie](https://www.ovh.com/manager/#/dedicated/billing/payment/ovhaccount).
+
+Jeśli powyższe warunki są spełnione, możesz zażądać usunięcia konta OVHcloud i powiązanych z nim danych, wykonując następujące kroki:
+
+1. Zaloguj się do [Centrum pomocy OVHcloud](https://help.ovhcloud.com/csm?id=csm_get_help)
+2. Kliknij przycisk `Utwórz zgłoszenie`{.action}
+3. Wybierz motyw `Zarządzaj kontem klienta OVHcloud`
+4. Prosimy o sprecyzowanie opcji `Chcę zamknąć konto klienta OVHcloud` i postępowanie zgodnie z instrukcjami zawartymi w tej operacji.
+
+///
 
 ## Sprawdź również <a name="gofurther"></a>
 

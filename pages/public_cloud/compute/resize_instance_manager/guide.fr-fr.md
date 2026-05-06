@@ -1,14 +1,14 @@
 ---
 title: "Redimensionner une instance via l'espace client OVHcloud"
-excerpt: "Découvrez comment redimensionner une instance depuis l'espace client OVHcloud"
-updated: 2025-04-28
+excerpt: "Découvrez comment redimensionner une instance Public Cloud depuis l'espace client OVHcloud"
+updated: 2026-03-04
 ---
 
 ## Objectif
 
-En raison d'une activité accrue, ou simplement de nouveaux besoins, votre instance peut ne pas être en mesure de faire face à une nouvelle charge, par manque de ressources. Cependant, grâce au Public Cloud, vous pouvez augmenter les ressources dont votre instance dispose, et cela simplement en quelques clics.
+Si votre instance manque de ressources en raison d'une activité accrue ou de nouveaux besoins, vous pouvez augmenter ses ressources en quelques clics grâce au Public Cloud.
 
-**Ce guide vous indique la procédure à suivre afin de redimensionner votre instance depuis l'espace client OVHcloud.**
+**Ce guide vous explique comment redimensionner votre instance depuis l'espace client OVHcloud.**
 
 > [!warning]
 >
@@ -24,19 +24,25 @@ En raison d'une activité accrue, ou simplement de nouveaux besoins, votre insta
 ## Prérequis
 
 - Avoir [créé une instance Public Cloud](/links/public-cloud/public-cloud) dans votre compte OVHcloud
-- Être connecté à votre [espace client OVHcloud](/links/manager)
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Projets Public Cloud](/links/control-panel/publiccloud-projects)
+- **Pour accéder à vos services :** `Public Cloud`{.action} > Sélectionnez votre projet
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## En pratique
 
-Connectez-vous à l'[espace client OVHcloud](/links/manager), accédez à la section `Public Cloud`{.action} et sélectionnez le projet Public Cloud concerné. Cliquez ensuite sur `Instances`{.action} dans le menu de gauche. 
+Cliquez sur `Instances`{.action} dans le menu de gauche.
 
-Cliquez ensuite sur `...`{.action} à droite de l'instance et sélectionnez `Editer`{.action}.
-
-![public-cloud](images/editinstance.png){.thumbnail}
+Cliquez ensuite sur `...`{.action} à droite de l’instance, puis sélectionnez `Editer`{.action}. Vous pouvez également accéder à cette action depuis les détails de l’instance en cliquant sur son nom, puis sur `Modifier le modèle`{.action}.
 
 Dans le nouvel onglet, faites défiler la page jusqu'à la section **Modèle** pour sélectionner le modèle de votre choix.
-
-![public-cloud](images/template.png){.thumbnail}
 
 > [!primary]
 >
@@ -48,34 +54,34 @@ Dans le nouvel onglet, faites défiler la page jusqu'à la section **Modèle** p
 Si votre disque est égal ou inférieur à 50 Go, vous pouvez passer à une `Instance flexible`{.action} si vous le souhaitez.
 
 > [!warning]
-> Attention, dans le cas où vous éditez une instance de type *flex*, il n'est pas possible de basculer vers une instance classique via l'espace client. Pour plus d'informations, veuillez consultez notre guide sur [Basculer d’une instance flex à une instance classique](/pages/public_cloud/compute/revert_a_flex_instance).
+> Si vous éditez une instance *flex*, il n’est pas possible de revenir à une instance classique via l’espace client. Pour plus d’informations, consultez notre guide sur [Basculer d’une instance flex à une instance classique](/pages/public_cloud/compute/revert_a_flex_instance).
 >
 
 Une fois la sélection effectuée, cliquez sur `Modifier le modèle`{.action} pour confirmer votre choix.
 
 ### Redimensionnement du disque sous Windows
 
-Attention, lors d'un redimensionnement pour une instance Windows, la taille de la partition n'est pas automatiquement mise à jour, il faudra donc étendre celle ci en utilisant le  **gestionnaire de disque** :
+Attention, lors d'un redimensionnement pour une instance Windows, la taille de la partition n'est pas automatiquement mise à jour, vous devrez donc l'étendre via le **gestionnaire de disque** :
 
 - Faites un clic droit sur le menu `Démarrer`{.action} et lancez le gestionnaire de disque en cliquant sur `Gestion du disque`{.action} :
 
-![public-cloud](images/2980.png){.thumbnail}
+![Menu contextuel du menu Démarrer avec l'option Gestion du disque](images/2980.png){.thumbnail}
 
 - Faites un clic droit sur la partition principale, puis cliquez sur `Étendre le volume`{.action}.
 
-![public-cloud](images/2981a.png){.thumbnail}
+![Clic droit sur la partition principale pour étendre le volume](images/2981a.png){.thumbnail}
 
 - Cliquez sur `Suivant`{.action} pour accéder à « l'Assistant Extension du volume ». Choisissez les ressources du disque à étendre et cliquez sur `Suivant`{.action}. 
 
-![public-cloud](images/2978a.png){.thumbnail}
+![Assistant Extension du volume avec sélection des ressources](images/2978a.png){.thumbnail}
 
 Cliquez ensuite sur `Terminer`{.action} pour valider votre choix.
 
-![public-cloud](images/wizard2021.png){.thumbnail}
+![Étape de finalisation de l'Assistant Extension du volume](images/wizard2021.png){.thumbnail}
 
 - La nouvelle taille du disque sera alors affichée dans le gestionnaire de disque.
 
-![public-cloud](images/2979.png){.thumbnail}
+![Gestionnaire de disque affichant la nouvelle taille](images/2979.png){.thumbnail}
 
 ## Aller plus loin
 

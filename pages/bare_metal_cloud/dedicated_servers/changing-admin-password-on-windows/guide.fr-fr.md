@@ -1,6 +1,6 @@
 ---
-title: 'Modifier le mot de passe administrateur sur un serveur dédié Windows'
-excerpt: 'Découvrez comment modifier le mot de passe administrateur sur un serveur dédié Windows'
+title: "Modifier le mot de passe administrateur sur un serveur dédié Windows"
+excerpt: "Réinitialisez le mot de passe administrateur sur un serveur dédié Windows via le mode rescue OVHcloud en cas de perte"
 updated: 2024-06-26
 flag: hidden
 ---
@@ -21,7 +21,17 @@ Lors de l’installation ou de la réinstallation d’un système d’exploitati
 ## Prérequis
 
 - Posséder un [serveur dédié](/links/bare-metal/bare-metal) avec Windows installé.
-- Être connecté à l'[espace client OVHcloud](/links/manager).
+
+<!-- CP-NAV-START:baremetal-dedicated-servers -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Serveurs dédiés](/links/control-panel/baremetal-dedicated-servers)
+- **Pour accéder à vos services :** `Bare Metal Cloud`{.action} > `Serveurs dédiés`{.action} > Sélectionnez votre serveur
+
+---
+<!-- CP-NAV-END:baremetal-dedicated-servers -->
 
 ## En pratique
 
@@ -262,7 +272,7 @@ The system is going down for reboot NOW!
 
 Dans l'[espace client OVHcloud](/links/manager), accédez à l'onglet `IPMI`{.action} pour ouvrir une session KVM.
 
-![IPMI](images/adminpw_win_03.png){.thumbnail}
+![Ouverture d'une session KVM depuis l'onglet IPMI](images/adminpw_win_03.png){.thumbnail}
 
 #### Étape 5.1 : pour une version récente de Windows
 
@@ -308,19 +318,19 @@ Pour plus d'informations sur le mode rescue, consultez [ce guide](/pages/bare_me
 
 Dans l'[espace client OVHcloud](/links/manager), accédez à l'onglet `IPMI`{.action} pour ouvrir une session KVM.
 
-![IPMI](images/adminpw_win_03.png){.thumbnail}
+![Ouverture d'une session KVM depuis l'onglet IPMI](images/adminpw_win_03.png){.thumbnail}
 
 Pour réinitialiser les mots de passe, l'outil NTPWEdit est nécessaire. Une fois connecté via le KVM, ouvrez le navigateur et téléchargez-le à partir du [site Web officiel](http://www.cdslow.org.ru/en/ntpwedit/). 
 
 Naviguez jusqu'au dossier où se trouve le fichier ZIP téléchargé et extrayez le contenu. Ouvrez ensuite l'exécutable *ntpwedit64* pour démarrer l'application.
 
-![ntpwedit](images/adminpw_win_09.png){.thumbnail}
+![Application NTPWEdit ouverte dans WinRescue](images/adminpw_win_09.png){.thumbnail}
 
 Dans cette interface, vous pouvez manipuler le fichier *SAM* afin d'effacer le mot de passe de l'utilisateur admin. Le chemin d'accès par défaut du répertoire *WINDOWS* est prérempli. Ouvrez le fichier pour afficher la liste des utilisateurs en cliquant sur `Ouvrir`{.action}.
 
 L'utilisateur concerné sera soit « admin », soit « Administrator », selon la version de Windows. Si les deux sont présents, choisissez « admin ». Cliquez ensuite sur `Modifier le mot de passe`{.action}.
 
-![ntpwedit](images/adminpw_win_10.png){.thumbnail}
+![NTPWEdit affichant la liste des comptes utilisateurs Windows](images/adminpw_win_10.png){.thumbnail}
 
 Dans la fenêtre qui apparaît, laissez les champs vides et cliquez sur `OK`{.action}. Terminez en cliquant sur `Enregistrer les modifications`{.action} puis sur `Quitter`{.action}.
 

@@ -41,6 +41,17 @@ Tworzenie regularnych punktów kopii zapasowych za pomocą [Polityka snapshotów
 - Połączenie z [API OVHcloud](/links/api)
 - Posiadanie wolumenu Enterprise File Storage z kopią zapasową `manual`
 
+<!-- CP-NAV-START:storage-enterprise-file-storage -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Enterprise File Storage](/links/control-panel/storage-enterprise-file-storage)
+- **Ścieżka nawigacji:** `Bare Metal Cloud`{.action} > `Enterprise File Storage`{.action}
+
+---
+<!-- CP-NAV-END:storage-enterprise-file-storage -->
+
 > [!primary]
 >
 > Możesz utworzyć wolumen i snapshot typu `manual` za pomocą [API OVHcloud](/links/api) lub w [panelu klienta OVHcloud](/links/manager).

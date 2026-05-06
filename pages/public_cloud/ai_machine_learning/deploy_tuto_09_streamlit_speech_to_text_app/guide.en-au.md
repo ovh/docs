@@ -27,7 +27,6 @@ Overview of the Speech to text app:
 
 To deploy your app, you need:
 
-- An access to the [OVHcloud Control Panel](/links/manager).
 - An AI Deploy Project created inside a [Public Cloud project](/links/public-cloud/public-cloud) in your OVHcloud account
 - A [user for AI Deploy](/pages/public_cloud/ai_machine_learning/gi_01_manage_users).
 - [The OVHcloud AI CLI](/pages/public_cloud/ai_machine_learning/cli_10_howto_install_cli) **and** [Docker](https://www.docker.com/get-started) installed on your local computer, **or** only an access to a Debian Docker Instance on the [Public Cloud](/links/manager).

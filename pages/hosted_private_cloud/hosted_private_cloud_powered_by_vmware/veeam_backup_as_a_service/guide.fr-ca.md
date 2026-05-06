@@ -17,6 +17,17 @@ updated: 2024-10-18
 * Avoir activé le [Distributed Ressource Scheduler (DRS)](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_drs_distributed_ressource_scheduler_new) sur le ou les clusters.
 * Mettre en place la [gestion des licences Windows SPLA](/pages/account_and_service_management/managing_billing_payments_and_services/facturation_private_cloud#licences-windows) sur l'environnement VMware on OVHcloud.
 
+<!-- CP-NAV-START:privatecloud-vmware-vsphere -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [VMware vSphere](/links/control-panel/privatecloud-vmware-vsphere)
+- **Pour accéder à vos services :** `Hosted Private Cloud`{.action} > `Managed VMware vSphere`{.action} > Sélectionnez votre service vSphere
+
+---
+<!-- CP-NAV-END:privatecloud-vmware-vsphere -->
+
 ## En pratique
 
 Veeam est un éditeur de logiciel spécialisé dans les solutions de sauvegarde et de plan de reprise d'activité (PRA) dans des environnements virtualisés. L'offre Veeam Managed Backup s'appuie sur la brique logicielle Veeam Availability Suite pour vous fournir une solution de backup à la demande.

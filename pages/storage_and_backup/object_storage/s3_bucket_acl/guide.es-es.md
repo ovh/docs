@@ -1,18 +1,18 @@
 ---
-title: Object Storage - Bucket ACL (EN)
-updated: 2023-08-09
+title: Object Storage - Bucket ACL
+updated: 2026-03-06
 ---
 
 ## Overview
 
-By default, all resources (buckets, objects) and sub-resources (lifecycle configuration, webite configuration, ...etc) are private in Object Storage. Only the resource owner, i.e the user account that creates it, has full control.
+By default, all resources (buckets, objects) and sub-resources (lifecycle configuration, website configuration, etc.) are private in Object Storage. Only the resource owner, i.e., the user account that creates it, has full control.
 
 Access to private resources can be granted via access policies.
 
-Access policies can be categorized broadly into 2 types :
+Access policies can be categorized broadly into two types:
 
-- user based
-- resource based : bucket policies and ACLs are policies that are attached directly to specific resources
+- user-based
+- resource-based: bucket policies and ACLs are policies that are attached directly to specific resources
 
 ### User based
 
@@ -36,14 +36,14 @@ Akin to user policies, a bucket policy controls permissions for a bucket and the
 
 > [!warning]
 >
-> Bucket policies is a feature that is not yet available for Object Storage.
+> Bucket policies are a feature that is not yet available for Object Storage.
 >
 
 ## Manage permissions with ACLs
 
 ### Supported grantees
 
-OVHCloud Object Storage supports 2 types of grantees:
+OVHcloud Object Storage supports two types of grantees:
 
 - Public Cloud account users
 - Predefined groups
@@ -60,19 +60,19 @@ Supported predefined user groups are the following and are identified by a URI:
 
 - **log delivery group**: this group contains the applicative users used by OVHcloud services to write server access logs inside buckets (read our [Server Access Logging](/pages/storage_and_backup/object_storage/s3_server_access_logging) guide for more information)
 
-```console
+```text
 http://acs.amazonaws.com/groups/s3/LogDelivery
 ```
 
 - **authenticated users group**: this group contains all the OVHcloud Public Cloud account users  
 
-```console
+```text
 http://acs.amazonaws.com/groups/global/AuthenticatedUsers
 ```
 
 - **all users group**: this group is the default group that contains all users in the world and is equivalent to anonymous users
 
-```console
+```text
 http://acs.amazonaws.com/groups/global/AllUsers
 ```
 
@@ -111,15 +111,15 @@ You can set the ACL on a bucket at its creation or afterwards, by calling the `p
 Example:
 
 ```bash
-$ aws s3api create-bucket --bucket my-bucket --region gra --acl public-read
+aws s3api create-bucket --bucket <bucket_name> --region <region> --acl public-read
 ```
 
-In this example, we created a bucket named "my-bucket" using a predefined ACL "public-read".
+In this example, we created a bucket named `<bucket_name>` using a predefined ACL `public-read`.
 
-To verifiy that ACL are set correctly, you can use the following command to return the ACL:
+To verify that the ACLs are set correctly, you can use the following command to return the ACL:
 
 ```bash
-$ aws s3api get-bucket-acl --bucket my-bucket
+aws s3api get-bucket-acl --bucket <bucket_name>
 ```
 
 ```json
@@ -148,10 +148,10 @@ $ aws s3api get-bucket-acl --bucket my-bucket
 }
 ```
 
-To change the ACL, you can call the `put-bucket-acl` endpoint by using the AWS cli:
+To change the ACL, you can call the `put-bucket-acl` endpoint by using the AWS CLI:
 
 ```bash
-$ aws s3api put-bucket-acl --bucket acl-bucket --grant-write id=po-training:user-yyyyyyyyyy
+aws s3api put-bucket-acl --bucket <bucket_name> --grant-write id=<project_name>:<user_name>
 ```
 
 Here, we change the ACL to give account user "user-yyyyyyyyyy" the permission to write in the bucket.
@@ -159,7 +159,7 @@ Here, we change the ACL to give account user "user-yyyyyyyyyy" the permission to
 Again, to verify that ACL are set correctly:
 
 ```bash
-$ aws s3api get-bucket-acl --bucket my-bucket
+aws s3api get-bucket-acl --bucket <bucket_name>
 ```
 
 ```json
@@ -188,15 +188,15 @@ Similar to bucket level, you can set the ACL on an object at its creation or aft
 Example:
 
 ```bash
-$ aws s3api put-object --bucket my-bucket --body file.txt --key file --grant-full-control id=po-training:user-yyyyyyyyyy
+aws s3api put-object --bucket <bucket_name> --body <file_path> --key <object_key> --grant-full-control id=<project_name>:<user_name>
 ```
 
-In this example, we created an object named "file" and we gave "FULL_CONTROL" on that object to account user "user-yyyyyyyyyy".
+In this example, we created an object named `<object_key>` and we gave `FULL_CONTROL` on that object to the account user `<user_name>`.
 
-To verifiy that ACL are set correctly, you can use the following command to return the ACL:
+To verify that the ACLs are set correctly, you can use the following command to return the ACL:
 
 ```bash
-$ aws s3api get-object-acl --bucket my-bucket --key file
+aws s3api get-object-acl --bucket <bucket_name> --key <object_key>
 ```
 
 ```json
@@ -226,18 +226,18 @@ $ aws s3api get-object-acl --bucket my-bucket --key file
 }
 ```
 
-To change the ACL, you can call the `put-object-acl` endpoint by using the AWS cli:
+To change the ACL, you can call the `put-object-acl` endpoint by using the AWS CLI:
 
 ```bash
-$ aws s3api put-object-acl --bucket acl-bucket --grant-read id=po-training:user-yyyyyyyyyy
+aws s3api put-object-acl --bucket <bucket_name> --key <object_key> --grant-read id=<project_name>:<user_name>
 ```
 
-Here, we changed our mind and decided to only give the account user "user-yyyyyyyyyy" the permission to read in the bucket instead of full control.
+Here, we changed our mind and decided to only give the account user `<user_name>` the permission to read instead of full control.
 
 Again, to verify that ACL are set correctly, use the following command:
 
 ```bash
-$ aws s3api get-object-acl --bucket my-bucket --key file
+aws s3api get-object-acl --bucket <bucket_name> --key <object_key>
 ```
 
 ```json

@@ -1,5 +1,5 @@
 ---
-title: Valkey - Connect with RedisInsight
+title: Connect using RedisInsight for Public Cloud Databases for Valkey
 excerpt: Connect to your Public Cloud Databases for Valkey using RedisInsight
 updated: 2024-06-12
 ---

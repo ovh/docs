@@ -1,84 +1,93 @@
 ---
 title: 'Zwiększenie limitów Public Cloud'
-excerpt: 'Dowiedz się, jak zwiększyć limity Public Cloud'
-updated: 2025-12-17
+excerpt: 'Dowiedz się, jak złożyć wniosek o zwiększenie limitu zasobów Public Cloud (RAM, CPU, miejsce na dysku, instancje) bezpośrednio w Panelu klienta OVHcloud.'
+updated: 2026-05-05
 ---
 
 ## Wprowadzenie
 
 Domyślnie projekty w chmurze publicznej, a także łączna ilość zasobów (pamięć RAM, procesor, miejsce na dysku, liczba instancji itp.), z których można korzystać, są ograniczone ze względów bezpieczeństwa.
 
-Jeśli chcesz utworzyć więcej zasobów, musisz zwiększyć limit.
+Aby korzystać z dodatkowych zasobów i projektów, należy zwiększyć limity.
 
-**Dowiedz się, jak zwiększyć limit Public Cloud w Panelu klienta OVHcloud.**
+**Dowiedz się, jak złożyć wniosek o zwiększenie limitu Public Cloud w Panelu klienta OVHcloud.**
 
 ## Wymagania początkowe
 
-- Zalogowanie do [Panelu klienta OVHcloud](/links/manager).
 - [Posiadanie ważnego](/pages/account_and_service_management/managing_billing_payments_and_services/manage-payment-methods) sposobu płatności w Panelu klienta OVHcloud.
 
 ## Wskazówki
 
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Ścieżka nawigacji:** `Public Cloud`{.action} > Wybierz projekt
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
+
+W menu po lewej stronie kliknij `Limity i regiony`{.action} pod sekcją **Ustawienia**.
+
+![Strona "Limity i regiony" przedstawiająca aktualne limity projektu według regionów](images/raisepciquota1.png){.thumbnail}
+
+Ta strona przedstawia podsumowanie obecnych limitów projektu według regionów. Pojawia się ostrzeżenie, gdy zasób osiągnie 80% swojego limitu.
+
 ### Zwiększenie limitu zasobów
 
-Zgodnie z wewnętrznymi kryteriami (staż pracy, istnienie faktur zapłaconych...) możesz teraz dowolnie wnioskować o zwiększenie limitu zasobów projektu Public Cloud bezpośrednio w Panelu klienta OVHcloud.
+Zgodnie z wewnętrznymi kryteriami (staż pracy, istnienie opłaconych faktur itp.) możesz wnioskować o zwiększenie limitu zasobów projektu Public Cloud bezpośrednio w Panelu klienta OVHcloud.
+
+> [!primary]
+>
+> Nowi użytkownicy Public Cloud otrzymują [1 000 PLN bezpłatnego kredytu](/links/public-cloud/free-trial) automatycznie aktywowanego przy tworzeniu projektu, ważnego przez jeden miesiąc. Ponieważ kwalifikacja do zwiększenia limitu zależy od kryteriów takich jak staż konta i opłacone faktury, użytkownicy korzystający z bezpłatnego okresu próbnego mogą mieć ograniczone możliwości zwiększenia limitu do czasu uregulowania pierwszej faktury.
+>
 
 Możesz zwiększyć limit zasobów ręcznie lub automatycznie.
 
-#### Zwiększanie limitu zasobów automatycznie dzięki funkcji „Limit autoscalingu”
+#### Zwiększanie limitu zasobów automatycznie dzięki funkcji „Limit autoscalingu"
 
 Ta opcja umożliwia żądanie automatycznego i stopniowego zwiększenia limitu zasobów. Limit zostanie dostosowany na podstawie faktycznego użycia **jeśli przekroczyłeś 60% obecnego limitu przez 30 kolejnych dni**, a także na podstawie zestawu kryteriów wewnętrznych i finansowych.
 
 > [!primary]
 >
-> **Uwaga**: Ten proces nie jest odpowiedni do szybkiego zwiększania limitu.
+> Ten proces nie jest odpowiedni do szybkiego zwiększania limitu.
 >
 
-Zaloguj się do [Panelu klienta OVHcloud](/links/manager), przejdź do sekcji `Public Cloud`{.action} i wybierz swój projekt Public Cloud.
-
-W menu po lewej stronie kliknij `Limity i regiony`{.action} pod sekcją **Ustawienia**.
-
-W prawym górnym rogu strony, która się pojawi, znajdziesz opcję **Limit autoscalingu**:
+W prawym górnym rogu strony znajdziesz opcję **Limit autoscalingu**:
 
 - Aby dowiedzieć się więcej o tej funkcji, kliknij znak `?`{.action} obok tej opcji.
-- Włącz opcję, klikając przycisk po prawej stronie tej opcji. Stan zmieni się z *Wyłączone* na *Włączona*.
+- Włącz opcję, klikając przycisk po prawej stronie tej opcji. Stan zmieni się z *Wyłączony* na *Aktywny*.
 
-![auto scaling](images/autoscaling.png){.thumbnail}
+![Przycisk przełączania limitu autoscalingu ustawiony w pozycji Aktywny](images/autoscaling.png){.thumbnail}
 
-Po aktywacji funkcji auto-scaling stopniowo zwiększy ona limit zasobów projektu na podstawie faktycznych potrzeb.
+Po aktywacji funkcja auto-scaling stopniowo zwiększy limit zasobów projektu na podstawie faktycznych potrzeb.
 
 #### Ręczne zwiększanie limitu zasobów
 
 > [!primary]
 >
-> Jeśli potrzebujesz zwiększyć limit rozmiaru, a przycisk `Zwiększ limity`{.action} nie jest dostępny w Twoim Panelu klienta, kliknij przycisk `Skontaktuj się z pomocą techni`{.action}.
+> Jeśli potrzebujesz zwiększyć limit, a przycisk `Zwiększ limity`{.action} nie jest dostępny w Twoim Panelu klienta, kliknij przycisk `Skontaktuj się z pomocą techniczną`{.action}.
 >
 
-![Contact Support](images/contact_support_quota.png){.thumbnail}
+![Przycisk "Skontaktuj się z pomocą techniczną" widoczny na stronie limitów w Panelu klienta](images/contact_support_quota.png){.thumbnail}
 
 Ten proces umożliwia szybkie i znaczne zwiększenie limitów (np. szybkie skalowanie, instancje GPU itp.). Ta metoda opiera się na natychmiastowym zakupie kredytu, z którego wszystkie koszty chmury zostaną automatycznie odliczone.
 
 Można zakupić różne kwoty kredytu.
 
-Zaloguj się do [Panelu klienta OVHcloud](/links/manager), przejdź do sekcji `Public Cloud`{.action} i wybierz odpowiedni projekt Public Cloud.
+Kliknij przycisk `Zwiększ limity`{.action}.
 
-W menu po lewej stronie kliknij `Limity i regiony`{.action} pod sekcją **Ustawienia**.
+![Przycisk "Zwiększ limity" w sekcji limitów Public Cloud](images/raisepciquota2.png){.thumbnail}
 
-![access quota](images/raisepciquota1.png){.thumbnail}
+Następnie kliknij strzałkę rozwijaną obok `Wybierz wolumen`{.action}, aby wyświetlić listę limitów zasobów, na które można aktualnie uaktualnić zasoby. W tej sekcji pokazano również kwotę do zapłaty w celu skorzystania z tych zasobów.
 
-Ta strona przedstawia podsumowanie obecnych limitów projektu według regionów. Pojawia się ostrzeżenie, gdy zasób osiągnie 80% swojego limitu.
-
-Aby zwiększyć limit, kliknij `Zwiększ limity`{.action}.
-
-![raise-pci-quota](images/raisepciquota2.png){.thumbnail}
-
-Następnie kliknij na strzałkę rozwijaną obok "Wybierz wolumen", aby wyświetlić listę limitów zasobów, na które można aktualnie uaktualnić zasoby. W tej sekcji pokazano również kwotę do zapłaty w celu skorzystania z tych zasobów.
-
-![select quota](images/selectquotas.png){.thumbnail}
+![Lista rozwijana z dostępnymi poziomami limitów i powiązanymi kosztami](images/selectquotas.png){.thumbnail}
 
 Poniższa tabela wyszczególnia zasoby, które możesz uzyskać dla każdego limitu:
 
-|Quota|Instancje|CPU/Cores|RAM (GB)|Rozmiar woluminu (TB)|Woluminy|kopie zapasowe|Rozmiar kopii zapasowej (GB)|Floating IPs|Octavia Load Balancer|Gateway (Routers)|
+|Quota|Instancje|CPU/Cores|RAM (GB)|Rozmiar woluminu (TB)|Woluminy (maksymalna liczba)|Kopie zapasowe|Rozmiar kopii zapasowej (TB)|Floating IPs|Octavia Load Balancer|Gateway (Routers)|
 |---|---|---|---|---|---|---|---|---|---|---|
 |20 VMs|20|40|430|20|200|1200|120|30|10|4|
 |50 VMs|50|64|507|20|500|3000|300|75|25|10|
@@ -89,14 +98,16 @@ Po wybraniu wolumenu kliknij przycisk `Zatwierdź`{.action}. Twoja płatność z
 
 > [!warning]
 >
-> **Każde ręczne zwiększenie limitu zostanie odliczone od rachunku natychmiast.**
+> **Każde ręczne zwiększenie limitu zostanie naliczone natychmiast.**
 >
-> Po kliknięciu przycisku `Confirm`{.action} zamówienie zostaje automatycznie utworzone, a kwota zostanie odliczona z domyślnej metody płatności.
+> Po kliknięciu przycisku `Zatwierdź`{.action} zamówienie zostaje automatycznie utworzone, a kwota zostanie odliczona z domyślnej metody płatności.
 >
+
+Bardziej szczegółowy przegląd zasobów można uzyskać w [interfejsie Horizon](https://horizon.cloud.ovh.net/auth/login/). Po zalogowaniu się kliknij opcję `Project`{.action}, a następnie `Overview`{.action}.
 
 ### Zwiększanie limitu projektów Public Cloud
 
-Istnieją dwa główne sytuacje, w których możesz potrzebować dostosowania limitu:
+Istnieją dwie główne sytuacje, w których możesz potrzebować dostosowania limitu:
 
 1. **Maksymalna liczba projektów osiągnięta**: Jeśli osiągnąłeś maksymalną liczbę projektów Public Cloud dozwolonych w Twoim koncie klienta i chcesz utworzyć nowe, musisz złożyć wniosek do naszego zespołu wsparcia.
 
@@ -104,7 +115,7 @@ Istnieją dwa główne sytuacje, w których możesz potrzebować dostosowania li
 
 > [!primary]
 >
-> **Uwaga**: Żądania limitu są przetwarzane ręcznie przez nasz zespół. Czas przetwarzania może się różnić w zależności od złożoności żądania. Zalecamy składanie swoich żądań jak najwcześniej, aby uniknąć opóźnień w projektach.
+> Żądania limitu są przetwarzane ręcznie przez nasz zespół. Czas przetwarzania może się różnić w zależności od złożoności żądania. Zalecamy składanie swoich żądań jak najwcześniej, aby uniknąć opóźnień w projektach.
 
 Aby przyspieszyć przetwarzanie, prosimy określić w swoim żądaniu:
 
@@ -118,10 +129,10 @@ Dla niektórych zasobów lub usług mogą obowiązywać specjalne limity. Aby uz
 
 **Limit S3**<sup>1</sup>: zobacz oficjalne dokumenty "[Object Storage - Ograniczenia techniczne (EN)](/pages/storage_and_backup/object_storage/s3_limitations)".
 
-**Limit zarządzanego Kubernetes (MKS)**: zobacz oficjalne dokumenty "[ETCD Quotas, usage, troubleshooting and error](/pages/public_cloud/containers_orchestration/managed_kubernetes/etcd-quota-error)".
+**Limit zarządzanego Kubernetes (MKS)**: zobacz oficjalne dokumenty "[ETCD Quotas, usage, troubleshooting and error (EN)](/pages/public_cloud/containers_orchestration/managed_kubernetes/etcd-quota-error)".
 
 ## Sprawdź również
 
 Dołącz do [grona naszych użytkowników](/links/community).
 
-<sup>1</sup>: S3 is a trademark of Amazon Technologies, Inc. OVHcloud’s service is not sponsored by, endorsed by, or otherwise affiliated with Amazon Technologies, Inc.
+<sup>1</sup>: S3 is a trademark of Amazon Technologies, Inc. OVHcloud's service is not sponsored by, endorsed by, or otherwise affiliated with Amazon Technologies, Inc.

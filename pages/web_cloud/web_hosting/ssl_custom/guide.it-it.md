@@ -16,10 +16,20 @@ OVHcloud propone diversi tipi di certificati SSL sulle offerte di [hosting condi
 
 ## Prerequisiti
 
-- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager).
 - Ordinare o disporre di un [hosting condiviso OVHcloud](/links/web/hosting).
 - Ordinare o disporre di un [dominio](/links/web/domains) e disporre dei diritti esclusivi sul suo utilizzo. Il dominio non deve essere già associato a un certificato SSL.
 - Aver installato sul proprio dispositivo OpenSSL o un’applicazione compatibile in locale.
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [Hosting plans](/links/control-panel/web-hosting)
+- **Percorso di navigazione:** `Web Cloud`{.action} > `Hosting`{.action} > Seleziona il tuo hosting web
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## Procedura
 
@@ -160,34 +170,29 @@ Per maggiori informazioni, consulta le nostre guide:
 
 Una volta rispettati tutti questi prerequisiti, puoi iniziare a finalizzare l’installazione del tuo certificato SSL personalizzato sul tuo hosting Web.
 
-Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **5** passi:
+<!-- CP-STEPS-START:install-custom-ssl -->
+Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **4** passi.
 
 > [!tabs]
 > **Passaggio 1**
 >>
->> Accedi allo [Spazio Cliente OVHcloud](/links/manager) e clicca su `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Passaggio 2**
->>
->> Clicca sul menu `Hosting`{.action} e seleziona l’hosting Web interessato.
+>> Accedi alla pagina [Hosting plans](/links/control-panel/web-hosting), poi seleziona l'hosting Web interessato.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Passaggio 3**
+> **Passaggio 2**
 >>
 >> Clicca sulla scheda `Certificati SSL`{.action}.
 >>
 >> ![Certificati SSL](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ssl-certificates.png){.thumbnail}
 >>
-> **Passaggio 4**
+> **Passaggio 3**
 >>
 >> Quando il contenuto della scheda appare, clicca sul pulsante `Importazione del tuo certificato SSL`{.action}.
 >>
 >> ![SSL personalizzato](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ssl-certificates/import-your-own-ssl-certificate.png){.thumbnail}
 >>
-> **Passaggio 5**
+> **Passaggio 4**
 >>
 >> Verrà visualizzata la seguente finestra con 3 moduli da completare:
 >>
@@ -200,6 +205,7 @@ Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **5** pa
 >> ![Order an SSL certificate](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ssl-certificates/import-your-own-ssl-certificate-window-completed.png){.thumbnail}
 >>
 >> Una volta completati i 3 moduli, clicca su `Conferma`{.action} per completare l’importazione del certificato SSL personalizzato sul tuo hosting Web.
+<!-- CP-STEPS-END:install-custom-ssl -->
 
 Se il certificato SSL è stato generato correttamente dal provider SSL e i prerequisiti sono rispettati, apparirà un messaggio che indica che l’attivazione del certificato SSL sull’hosting Web è in corso.
 
@@ -214,32 +220,28 @@ Se il certificato SSL è stato generato correttamente dal provider SSL e i prere
 
 L'installazione richiede alcuni minuti.
 
-Per verificare che l'installazione sia stata completata, clicca sulle schede qui sotto per visualizzare in sequenza ogni **4** step:
+<!-- CP-STEPS-START:verify-ssl-installation -->
+Per verificare che l'installazione sia stata completata, clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **3** passi.
 
 > [!tabs]
 > **Passaggio 1**
 >>
->> Accedi allo [Spazio Cliente OVHcloud](/links/manager) e clicca su `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Passaggio 2**
->>
->> Clicca sul menu `Hosting`{.action} e seleziona l’hosting Web interessato.
+>> Accedi alla pagina [Hosting plans](/links/control-panel/web-hosting), poi seleziona l'hosting Web interessato.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Passaggio 3**
+> **Passaggio 2**
 >>
 >> Clicca sulla scheda `Certificati SSL`{.action}.
 >>
 >> ![Certificati SSL](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ssl-certificates.png){.thumbnail}
 >>
-> **Passaggio 4**
+> **Passaggio 3**
 >>
 >> Una volta visualizzato il contenuto della scheda, verifica che ogni dominio e/o sottodominio interessato sia presente nella tabella con il tipo di certificato SSL `Custom`.
 >>
 >> ![Tabella di gestione dei certificati SSL](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ssl-certificates/tab-custom.png){.thumbnail}
+<!-- CP-STEPS-END:verify-ssl-installation -->
 
 A questo punto il tuo certificato SSL personalizzato è installato ed è attivo. Da questo momento è possibile utilizzarlo con il proprio sito Web, passando, ad esempio, il [sito Web in HTTPS](/pages/web_cloud/web_hosting/ssl-activate-https-website).
 

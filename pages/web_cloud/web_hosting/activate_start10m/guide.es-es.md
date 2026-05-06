@@ -21,30 +21,36 @@ Esta guía explica cómo activar el alojamiento gratuito 100M en su [nombre de d
 ## Requisitos
 
 - Disponer de un [dominio](/links/web/domains) en su [área de cliente de OVHcloud](/links/manager), no asociado a ningún alojamiento web y sin ningún [MX Plan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities) asociado.
-- Estar conectado a su [área de cliente de OVHcloud](/links/manager).
 
 > [!primary]
 >
 > El alojamiento gratuito 100M es **únicamente** disponible para nuestros clientes en Europa.
 
+<!-- CP-NAV-START:web-domains -->
+---
+
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [Dominios](/links/control-panel/web-domains)
+- **Ruta de navegación:** `Web Cloud`{.action} > `Dominios`{.action} > Seleccione su nombre de dominio
+
+---
+<!-- CP-NAV-END:web-domains -->
+
+
 ## Procedimiento
 
-Para activar su alojamiento gratuito 100M, haga clic en las pestañas de abajo para ver sucesivamente cada uno de los **4** etapas.
+<!-- CP-STEPS-START:activate-100m-steps -->
+Para activar su alojamiento gratuito 100M, haga clic en las fichas siguientes para ver cada una de las **3** etapas.
 
 > [!tabs]
 > **Etapa 1**
 >>
->> Conéctese a su [área de cliente de OVHcloud](/links/manager) y acceda a la sección `Web Cloud`{.action}.
+>> Acceda a la página [Dominios](/links/control-panel/web-domains) y seleccione el dominio correspondiente.
 >>
->> ![enable 100m](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
+>> ![Domain Names](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
 >>
 > **Etapa 2**
->>
->> Haga clic en el menú `Dominios`{.action} y seleccione el dominio correspondiente.
->>
->> ![enable 100m](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
->>
-> **Etapa 3**
 >>
 >> En la sección **Información general**, acceda al apartado **Alojamiento web y correo electrónico gratis**. Haga clic en el botón `...`{.action} a la derecha y, seguidamente, en `Activar`{.action}.
 >>
@@ -52,7 +58,7 @@ Para activar su alojamiento gratuito 100M, haga clic en las pestañas de abajo p
 >>
 >> Se mostrará la ventana de activación. En la sección **1** se muestra información sobre el plan y el precio. Haga clic en `Siguiente`{.action}. En la sección **2**, seleccione los cambios que quiera realizar en su zona DNS:
 >>
-> **Etapa 4**
+> **Etapa 3**
 >>
 >> ![activate100m](/pages/assets/screens/control_panel/product-selection/web-cloud/order/order-100m-step-2.png){.thumbnail}
 >>
@@ -73,6 +79,7 @@ Para activar su alojamiento gratuito 100M, haga clic en las pestañas de abajo p
 >> La sección **3** le recuerda el precio de la solución. 
 >>
 >> En la sección **4**, debe leer los contratos y aceptar su pedido.
+<!-- CP-STEPS-END:activate-100m-steps -->
 
 > [!primary]
 >

@@ -14,19 +14,19 @@ Możesz opłacić zamówienie tylko po zalogowaniu się do konta klienta. Wybier
 
 #### Wskazówki i porady
 
-Zamknąłeś stronę z Twoim zamówieniem? Zaloguj się do [Panelu klienta OVHcloud](/links/manager), kliknij Twoją nazwę użytkownika w prawym górnym rogu, a następnie kliknij `Moje zamówienia`{.action}. Następnie będziesz mógł wyświetlić zamówienie i uregulować należność.
+Zamknąłeś stronę z Twoim zamówieniem? Otwórz stronę [Moje zamówienia](/links/control-panel/billing-orders). Następnie będziesz mógł wyświetlić zamówienie i uregulować należność.
 
 ### Jak mogę sprawdzić status mojej płatności?
 
-Zaloguj się do [Panelu klienta OVHcloud](/links/manager), kliknij Twoją nazwę użytkownika w prawym górnym rogu, a następnie wybierz opcję `Faktury`{.action}. Jeśli któraś z faktur oznaczona jest jako oczekująca na płatność, zaproponujemy Ci uregulowanie salda.
+Otwórz stronę [Faktury](/links/control-panel/billing-invoices). Jeśli któraś z faktur oznaczona jest jako oczekująca na płatność, zaproponujemy Ci uregulowanie salda.
 
 #### Wskazówki i porady
 
-Zaloguj się do [Panelu klienta OVHcloud](/links/manager), kliknij Twoją nazwę użytkownika w prawym górnym rogu, a następnie kliknij `Moje sposoby płatności`{.action}. i dodaj sposób płatności. Umożliwi Ci to opłacanie faktur w sposób automatyczny.
+Na stronie [Moje sposoby płatności](/links/control-panel/billing-payment-methods) możesz dodać sposób płatności. Umożliwi Ci to opłacanie faktur w sposób automatyczny.
 
 ### Jak mogę śledzić status mojego zamówienia?
 
-Zaloguj się do [Panelu klienta OVHcloud](/links/manager) i kliknij `Wyświetl zamówienia`{.action}.
+Otwórz stronę [Moje zamówienia](/links/control-panel/billing-orders).
 
 #### Wskazówki i porady
 
@@ -60,7 +60,7 @@ Inną przyczyną może być faktura, która wciąż nie została zapłacona. Je�
 
 #### Wskazówki i porady
 
-Zaloguj się do [Panelu klienta OVHcloud](/links/manager), kliknij Twoją nazwę użytkownika w prawym górnym rogu, a następnie kliknij `Moje sposoby płatności`{.action}. i dodaj sposób płatności. Umożliwi Ci to opłacanie faktur w sposób automatyczny.
+Na stronie [Moje sposoby płatności](/links/control-panel/billing-payment-methods) możesz dodać sposób płatności. Umożliwi Ci to opłacanie faktur w sposób automatyczny.
 
 ## Sprawdź również
 

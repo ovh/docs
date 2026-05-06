@@ -30,9 +30,8 @@ For more information, see the [OpenStack API](http://developer.openstack.org/api
 
 This guide will show you how to create an OpenStack token, use it for the actions you want to perform and how to revoke a token.
 
-## Requirements 
+## Requirements
 
-- Access to the [OVHcloud Control Panel](/links/manager)
 - An [OpenStack CLI ready environment](/pages/public_cloud/public_cloud_cross_functional/prepare_the_environment_for_using_the_openstack_api)
 
 > [!primary]
@@ -55,11 +54,23 @@ Windows users can follow this guide to export environment variables:
 
 [Set OpenStack Environment Variables](/pages/public_cloud/public_cloud_cross_functional/loading_openstack_environment_variables)
 
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Navigation path:** `Public Cloud`{.action} > Select your project
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
+
 ## Instructions
 
 ### Step 1: Download and source your OpenRC file
 
-Log in to the [OVHcloud Control Panel](/links/manager) and open your `Public Cloud`{.action} project. Click on `Users & Roles`{.action} in the `Project Management` section, then click on the `...`{.action} button to the right of your OpenStack user.
+<!-- CP-STEPS-START:download-openrc-file -->
+Click on `Users & Roles`{.action} in the `Project Management` section, then click on the `...`{.action} button to the right of your OpenStack user.
 
 Download this user's OpenRC file and specify the region where you want to perform actions.
 
@@ -78,6 +89,7 @@ Then source the file you previously downloaded:
 ```bash
 source openrc.sh
 ```
+<!-- CP-STEPS-END:download-openrc-file -->
 
 ### Step 2: Issuing an OpenStack token
 

@@ -67,7 +67,6 @@ Cet exemple montre comment rediriger le trafic de `/oldpath` vers `https://examp
 
 ## Prérequis
 
-- Un [compte OVHcloud actif](/links/manager)
 - Comprendre les [concepts du OVHcloud Load Balancer](/pages/public_cloud/public_cloud_network_services/concepts-03-loadbalancer).
 - Un [projet Public Cloud OVHcloud](/pages/public_cloud/public_cloud_cross_functional/create_a_public_cloud_project).
 - Un Load Balancer [déjà configuré](/pages/public_cloud/public_cloud_network_services/getting-started-01-create-lb-service) dans votre projet Public Cloud.
@@ -89,13 +88,20 @@ La configuration des politiques et règles L7 via l'espace client OVHcloud vous 
 
 #### Etape 1 - Accéder à l'espace client OVHcloud
 
-Connectez-vous à [l'espace client OVHcloud](/links/manager). Une fois connecté, vous aurez une vue d'ensemble de tous vos services OVHcloud.
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Projets Public Cloud](/links/control-panel/publiccloud-projects)
+- **Pour accéder à vos services :** `Public Cloud`{.action} > Sélectionnez votre projet
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 #### Etape 2 - Naviguer vers le Load Balancer
 
-Cliquez sur l'onglet `Public Cloud`{.action}. Sélectionnez le projet Public Cloud souhaité si vous en avez plusieurs.
-
-Sélectionnez `Load Balancer`{.action}, vous verrez apparaître la liste de vos Load Balancers. Cliquez sur celui que vous souhaitez configurer.
+Dans votre projet Public Cloud, sélectionnez `Load Balancer`{.action}, vous verrez apparaître la liste de vos Load Balancers. Cliquez sur celui que vous souhaitez configurer.
 
 #### Etape 3 - Gérer les Politiques L7
 

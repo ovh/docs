@@ -17,6 +17,17 @@ OVHcloud oferuje klientom Public Cloud obrazy gotowe do użycia, a także możli
 - użytkownik [OpenStack](/pages/public_cloud/public_cloud_cross_functional/create_and_delete_a_user)
 - środowisko [kompatybilne z CLI OpenStack](/pages/public_cloud/public_cloud_cross_functional/prepare_the_environment_for_using_the_openstack_api) (jeśli używasz CLI)
 
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Ścieżka nawigacji:** `Public Cloud`{.action} > Wybierz projekt
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
+
 ## W praktyce
 
 ### Zanim zaczniesz

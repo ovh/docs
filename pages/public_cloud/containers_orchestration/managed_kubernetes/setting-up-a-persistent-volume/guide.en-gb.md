@@ -1,7 +1,7 @@
 ---
 title: Persistent Volumes on OVHcloud Managed Kubernetes Service
 excerpt: 'Learn how to create Persistent Volume Claims (PVCs) and Persistent Volumes (PVs), attach a Pod to a PVC, modify the PV reclaim policy, and delete the created objects.'
-updated: 2025-12-08
+updated: 2026-01-30
 ---
 
 This tutorial goes through the setup of a [Persistent Volume (PV)](https://kubernetes.io/docs/concepts/storage/persistent-volumes/) on an OVHcloud Managed Kubernetes Service.
@@ -174,18 +174,31 @@ The following storage classes are currently supported on OVHcloud Managed Kubern
 * `csi-cinder-high-speed-gen2` storage class is based on hardware that includes SSD disks with NVMe interfaces. The performance allocation is progressive and linear (30 IOPS allocated per GB and 0.5MB/s allocated per GB) with a maximum of 20k IOPS and 1GB/s per volume. The IOPS and bandwidth performance will increase as  scale up the storage space.
 * `csi-cinder-high-speed` performance is fixed. You will get up to 3,000 IOPS per volume, regardless of the volume size.
 * `csi-cinder-classic` uses traditional spinning disks (200 IOPS guaranteed, Up to 64 MB/s per volume). (Not yet supported on the MKS Standard plan. Please refer to the limitations described in the `Multi availability zones deployments` section of our [Known limits](/pages/public_cloud/containers_orchestration/managed_kubernetes/mks_plans) guide).
-* `*-luks` storage classes add a layer of encryption on top of the storage class. It is only available in specific regions: see the [related GitHub issue](https://github.com/ovh/public-cloud-roadmap/issues/307) for more information.
-
 All these `Storage Classes` are based on Cinder, the OpenStack block storage service. The difference between them is the associated physical storage device. They are distributed transparently, on three physical local replicas.
 
 `csi-cinder-high-speed` is recommended for volumes up to 100GB. Above 100GB per volume, enhanced performance is achieved with `csi-cinder-high-speed-gen2` volumes.
 
->> > [!warning]
->> >
->> > Creating a **-luks** volume automatically generates a dedicated key.
->> >
->> > Do not modify or delete this key if it is linked to a Block Storage volume. Doing so would make the data on that volume and all its snapshots permanently unrecoverable.
->> >
+### LUKS Encrypted Storage Classes
+
+OVHcloud Managed Kubernetes supports LUKS encrypted block storage volumes using OVHcloud Managed Keys (OMK). The following encrypted storage classes are available:
+
+* `csi-cinder-high-speed-gen2-luks` - Encrypted version of High Speed Gen2 (progressive performance)
+* `csi-cinder-high-speed-luks` - Encrypted version of High Speed (fixed 3,000 IOPS)
+* `csi-cinder-classic-luks` - Encrypted version of Classic (spinning disks)
+
+> [!primary]
+> This feature is available in specific regions. For detailed regional availability and storage class specifications, see [Datacenters, nodes and storage flavors - LUKS Encrypted Storage Classes](/pages/public_cloud/containers_orchestration/managed_kubernetes/datacenters-nodes-storage-flavors#luks-encrypted-storage-classes).
+
+> [!warning]
+>
+> Creating a LUKS encrypted volume automatically generates a dedicated OVHcloud Managed Key (OMK).
+>
+> Do not modify or delete this key if it is linked to a Block Storage volume. Doing so would make the data on that volume and all its snapshots permanently unrecoverable.
+
+For more information:
+
+- [Choosing the right Block Storage class](/pages/storage_and_backup/block_storage/block_storage_the_right_storage_class)
+- [Create encrypted Persistent Volumes on OVHcloud Managed Kubernetes clusters with LUKS](https://blog.ovhcloud.com/create-encrypted-persistent-volumes-on-ovhcloud-managed-kubernetes-clusters-with-luks/) (Complete tutorial)
 
 ```console
 $ kubectl get storageclass
@@ -212,7 +225,7 @@ The default MKS storage classes don't allow mounting a PV on several nodes: only
 
 Additional `ReadWriteMany` storage classes can be configured to have this capability:
 
-* The [Enterprise Filesystem Service](/pages/public_cloud/containers_orchestration/managed_kubernetes/configuring-multi-attach-persistent-volumes-with-ovh-efs) offers a managed shared filesystem consumed via NFS.
+* The [Enterprise File Storage](/pages/storage_and_backup/file_storage/enterprise_file_storage/netapp_trident_csi) offers a managed shared filesystem consumed via NFS.
 * The [OVHcloud Cloud Disk Array](/pages/public_cloud/containers_orchestration/managed_kubernetes/configuring-multi-attach-persistent-volumes-with-ovh-cloud-disk-array) offers a managed shared filesystem consumed via CephFS.
 
 ## Reclaim policies

@@ -24,7 +24,7 @@ details[open]>summary::before {
 
 ## Objetivo
 
-El protocolo de internet versión 6 (IPv6) es la última versión del protocolo de internet (IP). Cada VPS de OVHcloud se entrega con una dirección IPv4 y una dirección IPv6. Por defecto solo está configurada la IPv4, Si debe configurar la IPv6, deberá hacerlo manualmente en su sistema.
+El protocolo de internet versión 6 (IPv6) es la última versión del protocolo de internet (IP). Cada VPS de OVHcloud se entrega con una dirección IPv4 y una dirección IPv6. Por defecto solo está configurada la IPv4, si debe configurar la IPv6, deberá hacerlo manualmente en su sistema.
 
 **Esta guía explica cómo configurar la IPv6 en un VPS de OVHcloud de varias formas.**
 
@@ -38,7 +38,18 @@ El protocolo de internet versión 6 (IPv6) es la última versión del protocolo 
 - Tener un [VPS de OVHcloud](/links/bare-metal/vps).
 - Estar conectado al VPS por SSH (acceso root) o a través de un escritorio remoto (Windows).
 - Tener conocimientos básicos de redes.
-- Estar conectado al [área de cliente de OVHcloud](/links/manager) o a la [API de OVHcloud](/links/api).
+- Acceso a la [API de OVHcloud](/links/api) (opcional).
+
+<!-- CP-NAV-START:baremetal-vps -->
+---
+
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [VPS management](/links/control-panel/baremetal-vps)
+- **Ruta de navegación:** `Bare Metal Cloud`{.action} > `Servidores privados virtuales`{.action} > Seleccione su VPS
+
+---
+<!-- CP-NAV-END:baremetal-vps -->
 
 ## Procedimiento
 
@@ -50,24 +61,22 @@ Las siguientes secciones contienen configuraciones para las distribuciones que o
 > Tenga en cuenta que, en los sistemas operativos Linux recientes que ofrecemos para los VPS, la dirección IPv6 está configurada por defecto. En este caso, no es necesario configurarla. Asegúrese de comprobar el archivo de configuración del sistema operativo antes de realizar cualquier cambio.
 >
 
-Para configurar la IPv6 en un VPS, es necesario realizar diversas acciones, Se le pedirá regularmente que utilice comandos o personalice la configuración de su servidor. 
+Para configurar la IPv6 en un VPS, es necesario realizar diversas acciones, se le pedirá regularmente que utilice comandos o personalice la configuración de su servidor. 
 
 Antes de empezar, le recomendamos que eche un vistazo a la siguiente tabla, que recoge los valores que utilizaremos en esta guía, junto con su descripción:
 
 |Valor|Descripción|Ejemplo|
 |---|---|---|
 |YOUR_IPV6|Dirección IPv6 asignada al servicio.|2001:xxxx:xxxx:xxxx:xxxx:xxxx:xxxx:yyyy|
-|IPv6_PREFIX|Es el prefijo (o *netmask* ) del bloque IPv6, generalmente de 128.|2001:xxxx:xxxx:xxxx::/128|
+|IPv6_PREFIX|Es el prefijo (o *netmask*) del bloque IPv6, generalmente de 128.|2001:xxxx:xxxx:xxxx::/128|
 |IPv6_GATEWAY|Puerta de enlace (o *gateway*) del bloque IPv6.|2001:xxxx:xxxx:xxxx:xxxx:xxxx:xxxx:zzzz|
 
 ### 1\. Obtener la información relativa a la red
 
-En primer lugar, es necesario conocer la dirección IPV6 y la puerta de enlace IPv6 asignadas al servidor.
+En primer lugar, es necesario conocer la dirección IPv6 y la puerta de enlace IPv6 asignadas al servidor.
 
 > [!tabs]
 > **Desde el área de cliente**
->>
->> Conéctese al [Panel de configuración de OVHcloud](/links/manager), acceda a la sección `Bare Metal Cloud`{.action} y seleccione el servidor en la sección `Servidores Privados Virtuales`{.action}.
 >>
 >> En el apartado IP podrá ver la dirección IPv6 y la puerta de enlace IPv6 asignadas al VPS. Anótelas y continúe en el apartado 2 « [Aplicar la configuración IPv6](#applyipv6). »
 >>
@@ -119,7 +128,7 @@ Existen varias formas de aplicar la configuración IPv6. Utilice los siguientes 
 
 Una vez que se haya conectado al VPS por SSH, utilice los comandos que se indican a continuación. No olvide:
 
-- sustituir los valores genéricos («YOUR_IPV6», «IPV6_PREFIX» e «IPV6_GATEWAY»)  por los datos obtenidos anteriormente;
+- sustituir los valores genéricos («YOUR_IPV6», «IPV6_PREFIX» e «IPV6_GATEWAY») por los datos obtenidos anteriormente;
 - modificar la interfaz de red, si la que utiliza no es «eth0».
 
 ```bash
@@ -274,7 +283,7 @@ En algunos casos, el método a utilizar puede no ser el indicado anteriormente. 
 >>
 >> > [!warning]
 >> >
->> > Es importante mantener la alineación de cada elemento del archivo, tal y como se muestra en el ejemplo anterior. No use la tecla de tabulación para crear el espacio. Sólo es necesaria la tecla espacio.
+>> > Es importante mantener la alineación de cada elemento del archivo, tal y como se muestra en el ejemplo anterior. No use la tecla de tabulación para crear el espacio. Solo es necesaria la tecla espacio.
 >> >
 >>
 >> Para probar su configuración, utilice el siguiente comando:
@@ -435,7 +444,7 @@ route1=::/0,2607:5300:201:abcd::1
 
 #### Aplicación persistente en Windows Server <a name="persistentwindows"></a>
 
-Por defecto, IPv6 no está configurado en los servidores Windows. Para activarlo, abra el `Panel de control`{.action} y haga clic en `Mostrar estado y tareas de la red`{.action} y luego en `Cambiar configuración del mapa`{.action}.
+Por defecto, IPv6 no está configurado en los servidores Windows. Para activarlo, abra el `Panel de control`{.action} y haga clic en `Mostrar estado y tareas de la red`{.action} y luego en `Cambiar configuración del adaptador`{.action}.
 
 ![Configuración IPv6](images/configure-ipv6-step2.png){.thumbnail}
 
@@ -445,15 +454,15 @@ Seleccione `Protocolo de Internet versión 6 (TCP/IPv6)`{.action} y haga clic en
 
 ![Configuración IPv6](images/configure-ipv6-step3.png){.thumbnail}
 
-En la ventana Propiedades IPv6, seleccione `Usar la siguiente` dirección IPv6. Introduzca las direcciones IP que ha obtenido en la primera etapa.
+En la ventana Propiedades IPv6, seleccione `Usar la siguiente dirección IPv6`{.action}. Introduzca las direcciones IP que ha obtenido en la primera etapa.
 
-También puede introducir las resoluciones DNS IPv6 que desee en el apartado `Usar la siguiente` dirección del servidor DNS. Esta operación no es obligatoria si los Resoltores DNS de la configuración IPv4 ya funcionan.
+También puede introducir las resoluciones DNS IPv6 que desee en el apartado `Usar la siguiente dirección del servidor DNS`{.action}. Esta operación no es obligatoria si los Resolutores DNS de la configuración IPv4 ya funcionan.
 
-Por último, marque la casilla `Aceptar configuración al salir` y haga clic en el botón `Aceptar`{.action} para aceptar los cambios. Si la puerta de enlace especificada no se encuentra en la misma subred IPv6 (/128 y /64, por ejemplo), puede aparecer un mensaje de error. Puede ignorar este mensaje y pasar a la siguiente etapa.
+Por último, marque la casilla `Aceptar configuración al salir`{.action} y haga clic en el botón `Aceptar`{.action} para aceptar los cambios. Si la puerta de enlace especificada no se encuentra en la misma subred IPv6 (/128 y /64, por ejemplo), puede aparecer un mensaje de error. Puede ignorar este mensaje y pasar a la siguiente etapa.
 
 ![Configuración IPv6](images/configure-ipv6-step4.png){.thumbnail}
 
-### 3\. Comprobar la configuración y probar la conexión.
+### 3\. Comprobar la configuración y probar la conexión
 
 Existen varios comandos para comprobar que la configuración funcione, según el sistema operativo.
 

@@ -18,15 +18,23 @@ To configure your Hosted Private Cloud for [healthcare data hosting](https://www
 >
 
 - a Private Cloud infrastructure in version 6.0 or higher
-- access to the `Hosted Private Cloud`{.action} section of the [OVHcloud Control Panel](/links/manager)
+
+<!-- CP-NAV-START:privatecloud-vmware-vsphere -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [VMware vSphere](/links/control-panel/privatecloud-vmware-vsphere)
+- **Navigation path:** `Hosted Private Cloud`{.action} > `Managed VMware vSphere`{.action} > Select your vSphere service
+
+---
+<!-- CP-NAV-END:privatecloud-vmware-vsphere -->
 
 ## Instructions
 
 ### Ensure that the security option is enabled
 
-In order to adapt your Private Cloud for this certification, one of the corresponding security options must be enabled. To verify this, log in to the [OVHcloud Control Panel](/links/manager), and make sure you are in the “Server” section. Click `Private Cloud`{.action} and select the service concerned. 
-
-In the window that appears, make sure you are on the `General information`{.action} tab. Then check the activation status of the security options in the "Options and compliance" section. 
+In order to adapt your Private Cloud for this certification, one of the corresponding security options must be enabled. To verify this, make sure you are on the `General information`{.action} tab. Then check the activation status of the security options in the "Options and compliance" section. 
 
 ![hdspcidsscompliance](images/compliancesddc01.png){.thumbnail}
 

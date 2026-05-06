@@ -26,23 +26,38 @@ Since April 2025, OVHcloud teams have introduced a new navigation in your Contro
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](/links/manager)
+- An active OVHcloud account
+
+<!-- CP-NAV-START:account-dashboard -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [My account](/links/control-panel/account-dashboard)
+- **Navigation path:** Click your name in the top right > `Access my account`{.action}
+
+---
+<!-- CP-NAV-END:account-dashboard -->
 
 ## Instructions
 
 ### How do I access my account?
 
+<!-- CP-STEPS-START:access-account -->
 Access your account management at any time by clicking on your name in the top right-hand corner of the OVHcloud Control Panel.
 
 ![Control Panel - my account](images/01-account-access.png){.thumbnail width="1000"}
+<!-- CP-STEPS-END:access-account -->
 
 ### How do I manage my account and my information?
 
+<!-- CP-STEPS-START:manage-account -->
 Click your name to update your profile, payment methods, and support level.<br>
 The same menu gives you quick access to your invoices, orders and management of your services.<br>
 You will also find links to service emails sent by OVHcloud (`My messages`{.action}) and the different contacts linked to your services.
 
 ![Control Panel - Manage my account](images/02-account-menu.png){.thumbnail width="1000"}
+<!-- CP-STEPS-END:manage-account -->
 
 /// details | Useful links
 
@@ -58,19 +73,23 @@ You will also find links to service emails sent by OVHcloud (`My messages`{.acti
 
 ### How do I access my services?
 
+<!-- CP-STEPS-START:access-services -->
 The menu for accessing OVHcloud services is now displayed on the left-hand side of the OVHcloud Control Panel. All OVHcloud services are accessible here, so you can easily supplement your solution with additional, adapted services.
 
 The services you have are indicated by a blue chip<sup>1</sup>.
 
 ![Control Panel - my services](images/03-services.png){.thumbnail width="1000"}
+<!-- CP-STEPS-END:access-services -->
 
 ### Additional shortcuts
 
+<!-- CP-STEPS-START:additional-shortcuts -->
 In the bottom left-hand corner of the OVHcloud Control Panel, there are shortcuts that enable you to find out more about our Marketplace on our Marketplace, to stay informed about the status of your services in real time, and estimate your carbon footprint.
 
 **Need help?** Access the Help Center, your support requests, and Live Chat.
 
 ![Control Panel - additional shortcuts](images/04-shortcuts.png){.thumbnail width="1000"}
+<!-- CP-STEPS-END:additional-shortcuts -->
 
 /// details | Useful links
 

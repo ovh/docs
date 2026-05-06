@@ -1,7 +1,7 @@
 ---
 title: "Odzyskiwanie kopii usuniętej bazy danych"
 excerpt: "Dowiedz się, jak odzyskać kopię zapasową bazy danych po jej usunięciu z Panelu klienta OVHcloud"
-updated: 2025-02-20
+updated: 2026-04-01
 ---
 
 ## Wprowadzenie
@@ -22,6 +22,17 @@ Większość naszych pakietów hostingowych [hosting](/links/web/hosting) zawier
 - Posiadanie aktywnego [hostingu OVHcloud](/links/web/hosting), który zawiera jedną (lub więcej) współdzieloną(e) bazę(e) danych OVHcloud.
 - Usunięcie bazy danych musi nastąpić przed upływem 30 dni.
 
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Hosting](/links/control-panel/web-hosting)
+- **Ścieżka nawigacji:** `Web Cloud`{.action} > `Hosting`{.action} > Wybierz hosting WWW
+
+---
+<!-- CP-NAV-END:web-hosting -->
+
 ## W praktyce
 
 Udostępniamy API OVHcloud, dzięki któremu programiści lub integratorzy mogą łączyć na przykład funkcje dostępne lub niedostępne w Panelu klienta OVHcloud bezpośrednio ze swoimi aplikacjami lub rozwiązaniami.
@@ -33,19 +44,24 @@ Udostępniamy API OVHcloud, dzięki któremu programiści lub integratorzy mogą
 > Ponadto, jeśli baza danych zostanie usunięta przez użytkownika lub administratora, OVHcloud nie będzie mogło zagwarantować jej odzyskania z wyżej wymienionych powodów.
 >
 
-### Etap 1 - Uzyskanie nazwy hostingu, do którego przypisana była usunięta baza danych
+### 1 - Uzyskanie nazwy hostingu, do którego przypisana była usunięta baza danych
 
-Aby uzyskać nazwę hostingu, wykonaj następujące czynności:
+<!-- CP-STEPS-START:retrieve-webhosting-name -->
+Aby uzyskać nazwę Twojego hostingu WWW, kliknij poniższe zakładki, aby wyświetlić kolejne **2** kroki.
 
-1. Zaloguj się do [Panelu klienta OVHcloud](/links/manager).
-2. Kliknij zakładkę `Web Cloud`{.action}.
-3. W lewej kolumnie kliknij menu `Hosting`{.action}.
-4. Wybierz odpowiedni hosting.
-5. Na górze po lewej stronie, która się wyświetli, znajdź nazwę Twojego hostingu po prawej stronie pozycji `Hosting /`{.action}.
+> [!tabs]
+> **Krok 1**
+>>
+>> Przejdź do strony [Hosting](/links/control-panel/web-hosting) i wybierz odpowiedni hosting WWW.
+>>
+> **Krok 2**
+>>
+>> W lewym górnym rogu wyświetlonej strony znajdziesz nazwę swojego hostingu WWW po prawej stronie wzmianki `Hosting /`.
+>>
+>> ![Nazwa hostingu WWW w Panelu klienta OVHcloud](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-webhosting-name.png){.thumbnail}
+<!-- CP-STEPS-END:retrieve-webhosting-name -->
 
-![API](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-webhosting-name.png){.thumbnail}
-
-### Etap 2 - Logowanie do API OVHcloud i umożliwienie im dostępu do usług
+### 2 - Logowanie do API OVHcloud i umożliwienie im dostępu do usług
 
 W tym celu wykonaj następujące czynności:
 
@@ -65,7 +81,7 @@ W tym celu wykonaj następujące czynności:
 - Zaloguj się za pomocą identyfikatora klienta, następnie kliknij `Authorize`{.action}, aby korzystać z API OVHcloud wraz z usługami dostępnymi w Panelu klienta.
 - Zostaniesz automatycznie przekierowany do poprzedniej strony API **GET /hosting/web/{serviceName}/dump** podczas logowania do Panelu klienta OVHcloud.
 
-### Etap 3 - Sprawdź dostępność kopii zapasowych i pobierz ID ostatniej kopii zapasowej
+### 3 - Sprawdź dostępność kopii zapasowych i pobierz ID ostatniej kopii zapasowej
 
 W tym celu wypełnij poszczególne formularze, jak pokazano poniżej:
 
@@ -94,7 +110,7 @@ Jeśli w oknie nie wyświetla się żaden identyfikator, upewnij się, że zalog
 
 Jeśli mimo to nie posiadasz identyfikatora, oznacza to, że nie ma lub nie ma więcej dostępnych kopii zapasowych dla bazy danych usuniętej z naszej infrastruktury.
 
-### Etap 4 - Pobierz ostatnią kopię zapasową
+### 4 - Pobierz ostatnią kopię zapasową
 
 Dzięki numerowi identyfikacyjnemu kopii zapasowej uzyskanemu podczas etapu 3 będziesz mógł pobrać za pomocą linku wygenerowanego przez API ostatnią kopię zapasową usuniętej bazy danych.
 
@@ -144,7 +160,7 @@ Jeśli wszystko zostało poprawnie wpisane, następujący wynik pojawia się w o
 
 Następnie skopiuj cały adres URL jako "HTTPS" **bez cudzysłowów**, który znajduje się po prawej stronie pozycji `"url":`, a następnie wklej go na pasku wyszukiwania przeglądarki internetowej, aby rozpocząć pobieranie kopii zapasowej.
 
-### Etap 5 - Utwórz nową bazę danych, zaimportuj plik kopii zapasowej i przywróć połączenie między Twoją stroną www i nową bazą danych
+### 5 - Utwórz nową bazę danych, zaimportuj plik kopii zapasowej i przywróć połączenie między Twoją stroną www i nową bazą danych
 
 Po odtworzeniu kopii zapasowej bazy danych należy utworzyć nową bazę danych. W tym celu zapoznaj się z przewodnikiem "[Tworzenie bazy danych na hostingu WWW OVH](/pages/web_cloud/web_hosting/sql_create_database)".
 

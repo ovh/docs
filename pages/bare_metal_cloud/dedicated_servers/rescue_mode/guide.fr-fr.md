@@ -1,6 +1,6 @@
 ---
-title: "Activer et utiliser le mode rescue"
-excerpt: "Découvrez comment utiliser le mode customer rescue OVHcloud pour dépanner votre serveur dédié"
+title: "Mode rescue sur un serveur dédié"
+excerpt: "Démarrez votre serveur dédié en mode rescue OVHcloud pour diagnostiquer les problèmes, réparer les systèmes de fichiers et réinitialiser les mots de passe"
 updated: 2026-01-09
 ---
 
@@ -43,13 +43,21 @@ Le mode rescue est généralement adapté aux tâches suivantes :
 ## Prérequis
 
 - Posséder un [serveur dédié](/links/bare-metal/bare-metal).
-- Être connecté à l’[espace client OVHcloud](/links/manager).
+
+<!-- CP-NAV-START:baremetal-dedicated-servers -->
+---
+
+### Accès à l’espace client OVHcloud
+
+- **Lien direct :** [Serveurs dédiés](/links/control-panel/baremetal-dedicated-servers)
+- **Pour accéder à vos services :** `Bare Metal Cloud`{.action} > `Serveurs dédiés`{.action} > Sélectionnez votre serveur
+
+---
+<!-- CP-NAV-END:baremetal-dedicated-servers -->
 
 ## En pratique
 
 Pour utiliser le mode rescue, vous devez modifier le paramètre `Netboot` du serveur. Le serveur doit ensuite être redémarré.
-
-Connectez-vous à votre [espace client OVHcloud](/links/manager), ouvrez la section `Bare Metal Cloud`{.action} puis `Serveurs dédiés`{.action}.
 
 Cliquez sur le nom de votre serveur pour ouvrir l'onglet `Informations générales`{.action}.
 
@@ -57,7 +65,7 @@ Cliquez sur le nom de votre serveur pour ouvrir l'onglet `Informations général
 
 Dans la case **Informations générales**, cliquez sur le bouton `...`{.action} à côté de `Boot`. Cliquez sur `Modifier`{.action} dans le menu contextuel.
 
-![Modifier le mode de démarrage](images/rescue-mode-001.png){.thumbnail}
+![Option Modifier le boot dans le menu contextuel des Informations générales](images/rescue-mode-001.png){.thumbnail}
 
 <a name="netboot"></a>
 
@@ -65,7 +73,7 @@ Dans la case **Informations générales**, cliquez sur le bouton `...`{.action} 
 
 Sur la page **Modifier le netboot**, sélectionnez `Booter en mode rescue`{.action}.
 
-![Modifier le mode de démarrage](images/rescue-mode-002.png){.thumbnail}
+![Page Modifier le netboot avec Booter en mode rescue sélectionné](images/rescue-mode-002.png){.thumbnail}
 
 Les options disponibles pour le mode rescue dépendent du type de serveur et du **système d'exploitation** installé.
 

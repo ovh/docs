@@ -1,5 +1,5 @@
 ---
-title: MongoDB - Developer Best Practices
+title: Developer Best Practices with Public Cloud Databases for MongoDB
 excerpt: Best practices for developers using MongoDB
 updated: 2025-01-06
 ---

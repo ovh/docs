@@ -1,7 +1,7 @@
 ---
 title: "Gestion des règles d'éligibilité"
 excerpt: "Description du format technique des règles d'éligibilité aux noms de domaine"
-updated: 2022-05-05
+updated: 2026-02-10
 ---
 
 <!-- Rappel à mettre au début de chaque page -->
@@ -29,14 +29,14 @@ updated: 2022-05-05
 L'obtention et la détention d'un nom de domaine sont accompagnées d'obligations légales telles que :
 
 - les règles d'utilisation d'un nom de domaine : un `.travel` doit nécessairement avoir un lien avec l'industrie du tourisme.
-- les règles d'éligibilité : l'adresse du contact propriétaire d'un `.eu` doit se situer au sein de l'Union Européenne.
+- les règles d'éligibilité : l'adresse du contact titulaire d'un `.eu` doit se situer au sein de l'Union Européenne.
 
 Ces règles sont fixées par l'opérateur de l'extension, le registre, et varient selon les extensions tout en évoluant au fil du temps.
 
 Concernant les règles d'éligibilité, elles concernent des éléments connus du registrar tels que le nom de domaine, les contacts ou encore la procédure d'enregistrement. Ces règles d'éligibilité s'appliquent :
 
-- Sur les données du **contact propriétaire**, **administrateur** et **technique**. Par exemple, l'adresse du propriétaire doit se situer au sein de l'Union Européenne pour un domaine `.eu`.
-- Sur des données liées à la **procédure** de demande de création, de transfert, de changement de propriétaire. Par exemple, la raison de la création d'un domaine en `.fr` représentant un nom de ville.
+- Sur les données du **contact titulaire**, **administrateur** et **technique**. Par exemple, l'adresse du titulaire doit se situer au sein de l'Union Européenne pour un nom de domaine `.eu`.
+- Sur des données liées à la **procédure** de demande de création, de transfert, de changement de titulaire. Par exemple, la raison de la création d'un nom de domaine en `.fr` représentant un nom de ville.
 
 Avec un nombre d'extensions grandissant d'année en année, il devient nécessaire d'automatiser la gestion de ces règles afin de garantir des délais de traitement raisonnables et d'éviter des frais d'installation supplémentaires.
 En définissant une description de ces différentes règles dans un format technique, il est possible d'automatiser la génération des différents formulaires requis ainsi que la validation des données saisies.
@@ -425,13 +425,13 @@ Dans un premier temps, regardons les éléments qui composent la représentation
 | `ACCEPT_CONDITIONS` | Case à cocher            | Conditions particulières à accepter                        |
 | `REASON`            | Champ texte multi-lignes | Raison de l'achat du nom de domaine                        |
 | `CLAIMS_NOTICE`     | Case à cocher            | Information concernant la _claim notice_ à accepter        |
-| `PROTECTED_CODE`    | Champ texte              | Code demandé lorsqu'un domaine est protégé par le registre |
+| `PROTECTED_CODE`    | Champ texte              | Code demandé lorsqu'un nom de domaine est protégé par le registre |
 | `AUTH_INFO`         | Champ texte              | Code lié au domaine pour une demande de transfert          |
-| `DOMAIN_CONFIG`     | Formulaire               | Liste de champs liés à un domaine                          |
-| `OWNER_CONTACT`     | Formulaire               | Liste de champs liés au contact propriétaire               |
+| `DOMAIN_CONFIG`     | Formulaire               | Liste de champs liés à un nom de domaine                          |
+| `OWNER_CONTACT`     | Formulaire               | Liste de champs liés au contact titulaire               |
 | `ADMIN_ACCOUNT`     | Formulaire               | Liste de champs liés au contact administrateur             |
 | `TECH_ACCOUNT`      | Formulaire               | Liste de champs liés au contact technique                  |
-| `OWNER_LEGAL_AGE`   | Case à cocher            | Le propriétaire doit être majeur                           |
+| `OWNER_LEGAL_AGE`   | Case à cocher            | Le titulaire doit être majeur                           |
 
 #### Types <a name="types"></a>
 
@@ -449,7 +449,7 @@ Dans un premier temps, regardons les éléments qui composent la représentation
 > [!primary]
 >
 > Le type `domain` n'est aujourd'hui utilisé que pour les extensions `ac.uk` et `gov.uk`.
-> Ces domaines ont un processus de création, des conditions d'appropriation et des conditions d'utilisation très particuliers.
+> Ces noms de domaine ont un processus de création, des conditions d'appropriation et des conditions d'utilisation très particuliers.
 
 #### Contraintes <a name="constraints"></a>
 
@@ -593,14 +593,14 @@ Pour représenter les règles sur un objet, le nœud `fields` est utilisé. Chaq
 >> ```json
 >> {
 >>   "label": "OWNER_CONTACT",
->>   "description": "Règle liée au contact propriétaire",
+>>   "description": "Règle liée au contact titulaire",
 >>   "type": "contact",
 >>   "fields": {
 >>     "and": [
 >>       {
 >>         "label": "firstName",
 >>         "type": "string",
->>         "description": "Représente le prénom du contact propriétaire.",
+>>         "description": "Représente le prénom du contact titulaire.",
 >>         "placeholder": "lorem",
 >>         "constraints": [
 >>           {
@@ -615,7 +615,7 @@ Pour représenter les règles sur un objet, le nœud `fields` est utilisé. Chaq
 >>       {
 >>         "label": "lastName",
 >>         "type": "string",
->>         "description": "Représente le nom de famille du contact propriétaire.",
+>>         "description": "Représente le nom de famille du contact titulaire.",
 >>         "placeholder": "lorem",
 >>         "constraints": [
 >>           {
@@ -630,7 +630,7 @@ Pour représenter les règles sur un objet, le nœud `fields` est utilisé. Chaq
 >>       {
 >>         "label": "email",
 >>         "type": "string",
->>         "description": "Représente l'adresse e-mail du contact propriétaire.",
+>>         "description": "Représente l'adresse e-mail du contact titulaire.",
 >>         "placeholder": "lorem@ovh.com",
 >>         "constraints": [
 >>           {
@@ -645,7 +645,7 @@ Pour représenter les règles sur un objet, le nœud `fields` est utilisé. Chaq
 >>       {
 >>         "label": "legalForm",
 >>         "type": "string",
->>         "description": "Représente le statut légal du contact propriétaire.",
+>>         "description": "Représente le statut légal du contact titulaire.",
 >>         "placeholder": "individual",
 >>         "constraints": [
 >>           {
@@ -664,7 +664,7 @@ Pour représenter les règles sur un objet, le nœud `fields` est utilisé. Chaq
 >>       {
 >>         "label": "address.country",
 >>         "type": "string",
->>         "description": "Représente le pays du contact propriétaire.",
+>>         "description": "Représente le pays du contact titulaire.",
 >>         "placeholder": "FR",
 >>         "constraints": [
 >>           {
@@ -679,7 +679,7 @@ Pour représenter les règles sur un objet, le nœud `fields` est utilisé. Chaq
 >>       {
 >>         "label": "address.line1",
 >>         "type": "string",
->>         "description": "Représente l'adresse du contact propriétaire.",
+>>         "description": "Représente l'adresse du contact titulaire.",
 >>         "placeholder": "lorem",
 >>         "constraints": [
 >>           {
@@ -694,7 +694,7 @@ Pour représenter les règles sur un objet, le nœud `fields` est utilisé. Chaq
 >>       {
 >>         "label": "address.zip",
 >>         "type": "string",
->>         "description": "Représente le code postal du contact propriétaire.",
+>>         "description": "Représente le code postal du contact titulaire.",
 >>         "placeholder": "12345",
 >>         "constraints": [
 >>           {
@@ -851,7 +851,7 @@ Suite à cette première partie expliquant la représentation technique des règ
 
 ### Règles génériques
 
-La plupart des extensions (gTLDs et newGTLDs principalement) ont les mêmes règles d'éligibilité. Avoir un contact propriétaire respectant celles-ci permet de posséder la plupart des extensions disponibles à la vente.
+La plupart des extensions (gTLDs et newGTLDs principalement) ont les mêmes règles d'éligibilité. Avoir un contact titulaire respectant celles-ci permet de commander la plupart des extensions disponibles à la vente.
 
 #### Création d'un nom de domaine
 
@@ -1537,13 +1537,13 @@ La plupart des extensions (gTLDs et newGTLDs principalement) ont les mêmes règ
 >> }
 >> ```
 
-#### Mise à jour du contact propriétaire
+#### Mise à jour du contact titulaire
 
 <!-- prettier-ignore -->
 > [!tabs]
 > Masquer
 >> Cliquez sur "Afficher" pour voir le JSON
-> Afficher : Règle de mise à jour du contact propriétaire d'un nom de domaine
+> Afficher : Règle de mise à jour du contact titulaire d'un nom de domaine
 >> ```json
 >> {
 >>     "label": "OWNER_CONTACT",
@@ -2080,13 +2080,13 @@ La plupart des extensions (gTLDs et newGTLDs principalement) ont les mêmes règ
 >> }
 >> ```
 
-#### Changement de propriétaire
+#### Changement de titulaire
 
 <!-- prettier-ignore -->
 > [!tabs]
 > Masquer
 >> Cliquez sur "Afficher" pour voir le JSON
-> Afficher : Règle de changement de propriétaire
+> Afficher : Règle de changement de titulaire
 >> ```json
 >> {
 >>   "label": "OWNER_CONTACT",
@@ -2421,13 +2421,13 @@ La plupart des extensions (gTLDs et newGTLDs principalement) ont les mêmes règ
 
 ### Règles spécifiques
 
-Une partie des ccTLDs ont des règles d'éligibilité spécifiques, notamment au niveau du pays de résidence du propriétaire du domaine.
+Une partie des ccTLDs ont des règles d'éligibilité spécifiques, notamment au niveau du pays de résidence du titulaire du nom de domaine.
 
 #### Cas du `.berlin`
 
-Le cas du `.berlin` est intéressant car il dispose de règles d'éligibilité particulières. En effet, pour disposer d'un `.berlin`, l'administrateur **ou** le contact propriétaire du domaine doit résider à Berlin.
+Le cas du `.berlin` est intéressant car il dispose de règles d'éligibilité particulières. En effet, pour disposer d'un `.berlin`, l'administrateur **ou** le contact titulaire du nom de domaine doit résider à Berlin.
 
-Pour ce faire, nous _conditionnons_ la _contrainte_ de la _valeur_ des champs `address.country` et `address.city` du contact propriétaire aux valeurs des champs `address.country` et `address.city` de l'administrateur, et vice-versa.
+Pour ce faire, nous _conditionnons_ la _contrainte_ de la _valeur_ des champs `address.country` et `address.city` du contact titulaire aux valeurs des champs `address.country` et `address.city` de l'administrateur, et vice-versa.
 
 Cela se traduit de cette manière. Pour une raison de clarté, les règles sur les autres champs et labels ont été retirées.
 
@@ -2772,8 +2772,8 @@ Cela se traduit de cette manière. Pour une raison de clarté, les règles sur l
 
 Deux interfaces sont à votre disposition pour manipuler et valider les règles de noms de domaine :
 
-- Une pour récupérer les règles d'éligibilité d'un domaine pour une action (création, transfert...).
-- Une pour valider des données pour un domaine et pour une action.
+- Une pour récupérer les règles d'éligibilité d'un nom de domaine pour une action (création, transfert...).
+- Une pour valider des données pour un nom de domaine et pour une action.
 
 ### Récupération d'une règle d'éligibilité
 
@@ -2790,7 +2790,7 @@ Commençons par l'API permettant la récupération d'une règle d'éligibilité.
 
 - `create` est utilisée lors de la création d'un nom de domaine
 - `transfer` est utilisée lors du transfert entrant d'un nom de domaine depuis un autre registrar
-- `trade` est utilisée lors du changement de contact propriétaire d'un nom de domaine
+- `trade` est utilisée lors du changement de contact titulaire d'un nom de domaine
 - `update` est utilisée lors de la mise à jour des informations du nom de domaine ou d'un contact
 
 ### Validation d'une règle d'éligibilité
@@ -2812,7 +2812,7 @@ En _body_ de requête, nous retrouvons les objets suivants.
 
 | Body           | Description                                             |
 | -------------- | ------------------------------------------------------- |
-| `owner`        | Objet représentant les données du contact propriétaire  |
+| `owner`        | Objet représentant les données du contact titulaire     |
 | `adminAccount` | Objet représentant les données du contact administratif |
 | `techAccount`  | Objet représentant les données du contact technique     |
 | `domain`       | Données concernant le nom de domaine                    |
@@ -2827,7 +2827,7 @@ Une particularité existe pour les actions `trade` et `transfer` : si un objet r
 
 > [!primary]
 >
-> Si vous souhaitez tester qu'un domaine déjà enregistré sur votre compte respecte bien ses règles d'éligibilité, vous pouvez faire appel à cette API sur l'action `update` avec un body vide. Le moteur de règles effectuera une validation en utilisant les données actuelles du service.
+> Si vous souhaitez tester qu'un nom de domaine déjà enregistré sur votre compte respecte bien ses règles d'éligibilité, vous pouvez faire appel à cette API sur l'action `update` avec un body vide. Le moteur de règles effectuera une validation en utilisant les données actuelles du service.
 
 L'API de validation retourne un statut 200 si la règle est respectée. Dans le cas contraire, elle retourne un statut 400 accompagné d'une erreur détaillée, au format suivant :
 

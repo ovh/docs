@@ -19,9 +19,20 @@ As contas Exchange podem ser configuradas em vários softwares de e-mail compat�
 
 ## Requisitos
 
-- Dispor de uma oferta [Exchange](/links/web/emails) .
+- Dispor de uma oferta [Exchange](/links/web/emails-exchange) .
 - Dispor da aplicação Correio instalada no seu dispositivo.
 - Ter acesso às credenciais do endereço de e-mail que pretende configurar.
+
+<!-- CP-NAV-START:web-exchange -->
+---
+
+### Acesso à Área de Cliente OVHcloud
+
+- **Ligação direta:** [Exchange](/links/control-panel/web-exchange)
+- **Caminho de navegação:** `Web Cloud`{.action} > `Exchange`{.action} > Selecione a sua plataforma
+
+---
+<!-- CP-NAV-END:web-exchange -->
 
 ## Instruções
 
@@ -45,7 +56,7 @@ Introduza as informações solicitadas:
 |Password | Indique a password do endereço de e-mail.|
 |Nome de utilizador | Introduza o endereço de e-mail completo.|
 |Domínio | Não preencher nada.|
-|Servidor | Indique o servidor no qual está alojado o seu serviço Exchange. Pode encontrá-lo no seu [Área de Cliente OVHcloud](/links/manager) , no separador `Informações gerais`{.action} do serviço Exchange em causa, depois no quadro `Connexion`{.action}|
+|Servidor | Indique o servidor no qual está alojado o seu serviço Exchange. Clique [neste link](/links/control-panel/web-exchange) para aceder à secção `Exchange`{.action}. O nome do servidor é apresentado na zona **Ligação** do separador `Informações gerais`{.action}.|
 |O servidor necessita de uma ligação encriptada (SSL) | Deixe imperativamente esta opção selecionada.|
 |Nome da conta | Indique um nome que lhe permita reconhecer esta conta entre outras presentes na sua aplicação Correio.|
 

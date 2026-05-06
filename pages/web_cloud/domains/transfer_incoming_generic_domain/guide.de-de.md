@@ -1,7 +1,7 @@
 ---
 title: "Domainnamen zu OVHcloud transferieren"
 excerpt: "Erfahren Sie hier, wie Sie Ihren Domainnamen zu OVHcloud transferieren"
-updated: 2025-04-28
+updated: 2026-03-27
 ---
 
 <iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/MILAnKdjHns" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -42,6 +42,17 @@ Wenn Sie Ihren Domainname transferieren, ändern Sie dessen **Registrar**. Sie k
 - Sie besitzen die Verfügungsberechtigung, um den Transfer des Domainnamens zu veranlassen.
 - Der Domaininhaber und/oder dessen Administratoren sind über den Transfer informiert.
 
+<!-- CP-NAV-START:web-domains -->
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direkter Link:** [Domainnamen](/links/control-panel/web-domains)
+- **Navigationspfad:** `Web Cloud`{.action} > `Domainnamen`{.action} > Wählen Sie Ihren Domainnamen aus
+
+---
+<!-- CP-NAV-END:web-domains -->
+
 ## In der praktischen Anwendung
 
 > [!success]
@@ -65,7 +76,7 @@ Der Transferprozess umfasst mehrere Schritte. Diese erfordern die Kontaktaufnahm
 
 ### Schritt 1: Domaininformationen überprüfen <a name="step1"></a>
 
-**Bevor Sie den Transfer beantragen, ist es wichtig zu überprüfen, dass die Angaben zu Ihrem Domainnamen aktuell sind.** Seit Inkrafttreten der DSGVO sind die im [Whois-Eintrag](/links/web/domains-whois) sichtbaren Daten sehr begrenzt. Daher empfehlen wir Ihnen, die Informationen Ihres Domainnamens über Ihren aktuellen Registrar zu überprüfen.
+**Bevor Sie den Transfer beantragen, ist es wichtig zu überprüfen, dass die Angaben zu Ihrem Domainnamen aktuell sind.** Seit Inkrafttreten der DSGVO sind die im „[Whois](/links/web/domains-whois)"-Eintrag sichtbaren Daten sehr begrenzt. Daher empfehlen wir Ihnen, die Informationen Ihres Domainnamens über Ihren aktuellen Registrar zu überprüfen.
 
 - **Wenn die Angaben korrekt sind: Gehen Sie zum nächsten Schritt dieser Anleitung.**
 
@@ -122,11 +133,11 @@ Sie können Ihre Bestellung auch mit einem [Webhosting](/links/web/hosting) komb
 
 #### Weiterverfolgung des Transfers nach der Bestellung
 
-Sobald die Bestellung bestätigt wurde, erhalten Sie einen Bestellschein. Der Transferprozess wird erst nach Erhalt der Zahlung gestartet. Ab dann können Sie den Fortschritt des Transfers über das [OVHcloud Kundencenter](/links/manager) nachverfolgen. Sobald Sie sich angemeldet haben, gehen Sie zum Abschnitt `Web Cloud`{.action} und klicken Sie dann auf `Laufende Operationen`{.action}.
+Sobald die Bestellung bestätigt wurde, erhalten Sie einen Bestellschein. Der Transferprozess wird erst nach Erhalt der Zahlung gestartet. Ab dann können Sie den Fortschritt des Transfers auf der Seite [Laufende Vorgänge](/links/control-panel/web-ongoing-operations) nachverfolgen.
 
 > [!primary]
 >
-> Wenn der Transfer-Code bei der Bestellung nicht eingegeben wurde, können Sie ihn im Bereich `Laufende Vorgänge`{.action} eingeben und damit den Transfer bestätigen.
+> Wenn der Transfer-Code bei der Bestellung nicht eingegeben wurde, können Sie ihn auf dieser Seite eingeben und damit den Transfer bestätigen.
 
 ### Schritt 4: Validierung des Transfers durch den aktuellen Registrar <a name="step4"></a>
 
@@ -140,7 +151,7 @@ Sobald die Bestellung und der Transfer-Code bestätigt sind, wird der aktuelle R
 
 Wird eine Ablehnung vom aktuellen Registrar ausgesprochen, kontaktieren Sie den Registrar, um die Gründe dafür zu erfahren.
 
-Der Transferprozess kann über das [OVHcloud Kundencenter](/links/manager) neu gestartet werden. Sobald Sie sich angemeldet haben, gehen Sie zum Abschnitt `Web Cloud`{.action} und klicken Sie dann auf `Laufende Operationen`{.action}.
+Der Transferprozess kann über die Seite [Laufende Vorgänge](/links/control-panel/web-ongoing-operations) neu gestartet werden.
 
 > [!primary]
 >
@@ -154,7 +165,7 @@ Der Transferprozess kann über das [OVHcloud Kundencenter](/links/manager) neu g
 
 ### Schritt 5: Domainnamen bei OVHcloud verwalten
 
-Sobald der Transfer abgeschlossen ist, können Sie Ihren Domainnamen über das [OVHcloud Kundencenter](/links/manager) verwalten. Gehen Sie im Bereich `Web Cloud`{.action} zu `Domainnamen`{.action} und wählen Sie den Domainnamen aus.
+Sobald der Transfer abgeschlossen ist, können Sie Ihren Domainnamen über die Seite [Domainnamen](/links/control-panel/web-domains) verwalten.
 
 > [!warning]
 >
@@ -164,10 +175,22 @@ Sobald der Transfer abgeschlossen ist, können Sie Ihren Domainnamen über das [
 > Für Domainnamen mit einer *landesspezifischen* oder *regionalen* Endung (**ccTLD**, z.B. *.de*, *.fr*, *.be*, *.es*, etc.) sind die Bedingungen für den Transfer abhängig von den Vorgaben der **Registry** der jeweiligen Domainendung.
 > Sobald der Transfer abgeschlossen ist, überprüfen Sie das Ablaufdatum des Domainnamens in Ihrem OVHcloud Kundencenter.
 >
-> Loggen Sie sich hierzu in Ihr [OVHcloud Kundencenter](/links/manager) ein und gehen Sie in den Bereich `Web Cloud`{.action}. Klicken Sie in der linken Spalte auf `Domainnamen`{.action} und wählen Sie den Domainnamen aus. **Monat** und **Jahr** der nächsten Verlängerung werden oben auf der Seite unter dem Domainnamen angezeigt.
->
 > Je nach Situation und dem neuen Ablaufdatum kann es notwendig sein, Ihren Domainnamen direkt nach dem Transfer zu verlängern.
->
+
+<!-- CP-STEPS-START:check-domain-expiry -->
+Um dies zu überprüfen, klicken Sie auf die Tabs, um die **2** Schritte nacheinander anzuzeigen.
+
+> [!tabs]
+> **Schritt 1**
+>>
+>> Gehen Sie auf die Seite [Domainnamen](/links/control-panel/web-domains) und wählen Sie den betreffenden Domainnamen aus.
+>>
+>> ![Domainnamen](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
+>>
+> **Schritt 2**
+>>
+>> Auf der angezeigten Seite finden Sie direkt unter dem Domainnamen das geplante Verlängerungsdatum mit dem **Monat** und dem **Jahr** des Ablaufs.
+<!-- CP-STEPS-END:check-domain-expiry -->
 
 ## Weiterführende Informationen
 

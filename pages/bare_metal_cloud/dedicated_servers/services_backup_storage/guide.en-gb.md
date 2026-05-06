@@ -1,7 +1,7 @@
 ---
-title: How to use the backup storage on a dedicated server
-excerpt: 'Find out how to enable and access your additional storage space'
-updated: 2025-10-09
+title: "How to use the backup storage on a Dedicated Server"
+excerpt: "Enable and access the backup storage space included with your OVHcloud dedicated server for file-level backups."
+updated: 2026-03-25
 ---
 
 ## Objective
@@ -19,7 +19,17 @@ OVHcloud dedicated servers include additional backup space to store important da
 ## Requirements
 
 - A [dedicated server](/links/bare-metal/bare-metal) in your OVHcloud account
-- Access to the [OVHcloud Control Panel](/links/manager)
+
+<!-- CP-NAV-START:baremetal-dedicated-servers -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Dedicated Servers](/links/control-panel/baremetal-dedicated-servers)
+- **Navigation path:** `Bare Metal Cloud`{.action} > `Dedicated servers`{.action} > Select your server
+
+---
+<!-- CP-NAV-END:baremetal-dedicated-servers -->
 
 > [!warning]
 > This feature might be unavailable or limited on servers of the [**Eco** product line](/links/bare-metal/eco-about).
@@ -30,25 +40,28 @@ OVHcloud dedicated servers include additional backup space to store important da
 
 ### Activating the backup storage
 
-Log into your [OVHcloud Control Panel](/links/manager). Switch to the `Bare Metal Cloud`{.action} section and select your server from **Dedicated Servers**. On the `Backup storage`{.action} tab, click the `Enable backup storage`{.action} button.
+<!-- CP-STEPS-START:activate-backup-storage -->
+On the `Backup storage`{.action} tab, click the `Enable backup storage`{.action} button.
 
-![Activate Backup storage](images/backup-storage01.png){.thumbnail}
+![Enable backup storage button on the Backup storage tab](images/backup-storage01.png){.thumbnail}
 
 Click the `Confirm`{.action} button in the popup window.
 
-![Activate Backup storage](images/backup-storage02.png){.thumbnail}
+![Confirm backup storage activation in popup window](images/backup-storage02.png){.thumbnail}
 
 Your backup storage will be configured within a few minutes. A confirmation email will be sent as soon as it is ready.
+<!-- CP-STEPS-END:activate-backup-storage -->
 
 ### Managing access control
 
-Access to the backup storage is restricted by IP address according to an access control list (ACL). Only IPs linked to your OVHcloud customer account will be able to access the storage, once they are whitelisted in the ACL. The access protocols (FTP, NFS and CIFS) are not authorized by default but have to be selected when adding IP addresses.
+Access to the backup storage is restricted by IP address according to an access control list (ACL). Only IPs linked to your OVHcloud customer account will be able to access the storage, once they are whitelisted in the ACL. The access protocols (FTP, NFS and CIFS) are not authorised by default but have to be selected when adding IP addresses.
 
 #### Adding a backup access
 
-Log into your [OVHcloud Control Panel](/links/manager). Switch to the `Bare Metal Cloud`{.action} section and select your server from **Dedicated Servers**. On the `Backup storage`{.action} tab, click on the button `Add an access`{.action}.
+<!-- CP-STEPS-START:add-backup-access -->
+On the `Backup storage`{.action} tab, click on the button `Add an access`{.action}.
 
-![Add backup access](images/backup-storage03.png){.thumbnail}
+![Add an access button on the Backup storage tab](images/backup-storage03.png){.thumbnail}
 
 You will then need to select the IP block that you want to authorize. After selecting the IP block, select the protocol(s) for the access, and click the `Next`{.action} button.
 
@@ -57,19 +70,22 @@ You will then need to select the IP block that you want to authorize. After sele
 > Only IP blocks in your OVHcloud customer account can be added to the ACL from your Control Panel.
 >
 
-![Add backup access](images/backup-storage04.png){.thumbnail}
+![Select IP block and protocols for backup access](images/backup-storage04.png){.thumbnail}
 
 Confirm by clicking on `Finish`{.action}. You will now be able to access your server's backup storage from the IP block you have selected.
+<!-- CP-STEPS-END:add-backup-access -->
 
 #### Modifying or deleting a backup access
 
+<!-- CP-STEPS-START:modify-delete-backup-access -->
 Once the service is enabled, your ACL table will be displayed in the `Backup storage`{.action} tab. Click on `...`{.action} in the row of an IP block to open the access menu.
 
-![Add backup access](images/backup-storage05.png){.thumbnail}
+![Backup access ACL table with modify and delete options](images/backup-storage05.png){.thumbnail}
 
 To change the protocols for an authorized IP block, click on `Modify the access`{.action} and select/deselect protocols in the popup window. Save the changes by clicking on `Confirm`{.action}.
 
 To revoke authorization for an IP block, click on `Delete the access`{.action} and then on `Confirm`{.action} in the popup window.
+<!-- CP-STEPS-END:modify-delete-backup-access -->
 
 #### Accessing the backup storage from an IP address outside of your account <a name="accessbackup"></a>
 
@@ -107,26 +123,32 @@ To verify that your IP address is authorized, use the following call:
 
 ### Resetting your password
 
-Log into your [OVHcloud Control Panel](/links/manager). Switch to the `Bare Metal Cloud`{.action} section and select your server from **Dedicated Servers**. On the `Backup storage`{.action} tab, click on the button `Forgotten your password?`{.action}.
+<!-- CP-STEPS-START:reset-password -->
+On the `Backup storage`{.action} tab, click on the button `Forgotten your password?`{.action}.
 
 If you click on `Confirm`{.action} in the popup window, a password recovery email will be sent to the email address of your admin contact. Follow the instructions in the email to reset your password.
+<!-- CP-STEPS-END:reset-password -->
 
 ### Deleting the backup storage
 
-Log into your [OVHcloud Control Panel](/links/manager). Switch to the `Bare Metal Cloud`{.action} section and select your server from **Dedicated Servers**. On the `Backup storage`{.action} tab, click on the button `Delete backup storage`{.action}.
+<!-- CP-STEPS-START:delete-backup-storage -->
+On the `Backup storage`{.action} tab, click on the button `Delete backup storage`{.action}.
 
 If you click on `Confirm`{.action} in the popup window, the backup storage will be disabled within a few minutes. All data on the storage space will be deleted.
+<!-- CP-STEPS-END:delete-backup-storage -->
 
 ### Ordering more disk space
 
-Log into your [OVHcloud Control Panel](/links/manager). Switch to the `Bare Metal Cloud`{.action} section and select your server from **Dedicated Servers**. On the `Backup storage`{.action} tab, click on the button `Order disk space`{.action}.
+<!-- CP-STEPS-START:order-disk-space -->
+On the `Backup storage`{.action} tab, click on the button `Order disk space`{.action}.
 
-![Add backup access](images/backup-storage06.png){.thumbnail}
+![Order additional disk space for backup storage](images/backup-storage06.png){.thumbnail}
 
 Select the additional storage capacity you would like to order and then click on the `Next`{.action} button.
 
 Take note of the pricing and contract information in the next window and click on `Confirm`{.action}.
 An order will be created and once your payment has been processed, you will be notified about the successful expansion of the space.
+<!-- CP-STEPS-END:order-disk-space -->
 
 ### Using the backup storage
 
@@ -140,7 +162,9 @@ An order will be created and once your payment has been processed, you will be n
 > The backup storage service has a limit of three simultaneous connections on an IP.
 >
 
+<!-- CP-STEPS-START:retrieve-hostname -->
 To retrieve the Hostname of your backup storage, click on the `Backup Storage`{.action} tab in the interface of the dedicated server concerned. The Hostname is usually written as `ftpback-rbxX-YYY.ip-Z.Z.Z.net` or `ftpback-bhsX-YYY.ip-Z.Z.Z.net`.
+<!-- CP-STEPS-END:retrieve-hostname -->
 
 #### FTP/FTPS
 
@@ -300,12 +324,12 @@ After installing FileZilla on your server, you can configure it to connect to yo
 
 #### NFS
 
-First make sure that you have authorized your IP blocks to access the storage and use the NFS protocol. Depending on your Linux operating system, you might have to install the **NFS** client and start the NFS/portmap service.
+The backup storage is only compatible with NFSv3. First, ensure that you have authorised your IP ranges to access the storage and use the NFS protocol. Depending on your Linux operating system, you might have to install the **NFS** client and start the NFS/portmap service.
 
 Once you have the NFS client installed and portmap running, you can mount the NFS share like a normal partition as shown below:
 
 ```sh
-mount -t nfs HostName:/export/ftpbackup/ServiceName /FolderMount
+mount -t nfs -o vers=3 HostName:/export/ftpbackup/ServiceName /FolderMount
 ```
 
 The code example above contains variables, which you will need to substitute with your own values.
@@ -377,5 +401,9 @@ The code example above contains variables, which you will need to substitute wit
 - **FolderMount**: The folder where you want to mount the share (it must already exist)
 
 ## Go further
+
+[Backing Up Data and Databases on a Dedicated Server](/pages/bare_metal_cloud/dedicated_servers/save_datas_database_on_storage_ds)
+
+[Configuring Storage on a HGR-STOR-2 Dedicated Server](/pages/bare_metal_cloud/dedicated_servers/hgrstor2_system_configuration)
 
 Join our [community of users](/links/community).

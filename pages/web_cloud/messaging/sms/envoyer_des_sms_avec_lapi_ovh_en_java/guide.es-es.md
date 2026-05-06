@@ -1,6 +1,6 @@
 ---
 title: 'Enviar SMS con Java usando la API de OVHcloud'
-excerpt: 'Cómo enviar SMS con Java usando la API RESTful de OVHcloud'
+excerpt: 'Descubra cómo configurar un entorno de desarrollo Java y enviar su primer SMS paso a paso utilizando la API RESTful de OVHcloud'
 updated: 2020-06-01
 ---
 
@@ -41,7 +41,7 @@ En esta guía utilizamos dos llamadas a la API:
 
 Para utilizar el servicio de SMS con la API, es necesario disponer de unas claves. Dichas claves se generan una sola vez para identificar la aplicación que enviará SMS. Es posible configurar su validez.
 
-Genere las claves para su script (se crean todas a la vez) desde esta página: [https://eu.api.ovh.com/createToken/](https://eu.api.ovh.com/createToken/?GET=/sms/&GET=/sms/*/jobs/&POST=/sms/*/jobs/) (si accede desde este enlace, tendrá automáticamente los permisos necesarios para seguir los pasos que se explican en esta guía).
+Genere las claves para su script (se crean todas a la vez) desde esta página: [https://auth.eu.ovhcloud.com/api/createToken](https://auth.eu.ovhcloud.com/api/createToken?GET=/sms/&GET=/sms/*/jobs/&POST=/sms/*/jobs/) (si accede desde este enlace, tendrá automáticamente los permisos necesarios para seguir los pasos que se explican en esta guía).
 
 ![Crear los tokens](images/img_2479.jpg){.thumbnail}
 

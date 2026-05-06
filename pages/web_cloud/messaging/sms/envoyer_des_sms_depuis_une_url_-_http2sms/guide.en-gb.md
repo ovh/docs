@@ -1,6 +1,6 @@
 ---
 title: Sending SMS messages via a URL - http2sms
-excerpt: Find out how to send SMS messages via a HTTP address
+excerpt: Find out how to send SMS messages using the Wget tool and HTTP requests directly from your web browser URL bar or command line
 updated: 2020-05-20
 ---
 
@@ -11,6 +11,7 @@ There are different methods for sending SMS messages. One of them involves using
 **Find out how to send SMS messages with the Wget tool.**
 
 ## Requirements
+
 - An SMS user created via the OVHcloud Control Panel, or directly via the APIs. To do this, please refer to the following guide: [Everything you need to know about SMS users](/pages/web_cloud/messaging/sms/tout_savoir_sur_les_utilisateurs_sms)
 - An OVHcloud SMS account with SMS credits.
 
@@ -117,7 +118,7 @@ When a failure occurs, the cause is included:
 <?xml version="1.0" encoding="UTF-8" ?><response><status>201</status><message>Missing message. For more information: https://help.ovhcloud.com/csm/en-gb-sms-sending-via-url-http2sms?id=kb_article_view&sysparm_article=KB0039184</message></response>
 ```
 
-#### json
+#### JSON
 
 - If sent successfully:
 

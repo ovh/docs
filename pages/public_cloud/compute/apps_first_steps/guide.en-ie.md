@@ -4,6 +4,50 @@ excerpt: Find out how to deploy pre-installed applications on your Public Cloud 
 updated: 2021-09-07
 ---
 
+<style>
+/* ---FAQ only--- */
+details {
+    margin: 0.1rem 1;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    background: #ffffffff;
+}
+details > summary {
+    padding: 0.1rem 1rem;
+    font-weight: 500;
+    color: #268fd4ff;
+    cursor: pointer;
+    list-style: none;
+}
+details > summary::before {
+    content: '\25B6';
+    display: inline-block;
+    margin-right: 0.5ch;
+    transition: transform 0.2s;
+}
+details[open] > summary::before {
+    content: '\25BC';
+}
+details:hover {
+    border: 1px solid #147DE8;
+    border-radius: 4px;
+    transition: border-color 0.5s ease;
+}
+details[open] > summary {
+    background: #ffffffff;
+}
+details > :not(summary) {
+    padding: 0.25rem 0.5rem;
+    box-sizing: border-box;
+    list-style-position: inside;
+}
+.smallish-gap {
+    display: block;
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
+}
+</style>
+
 ## Objective
 
 OVHcloud offers Public Cloud customers pre-installed application images for quick and easy deployment of applications with few clicks only.
@@ -14,6 +58,17 @@ OVHcloud offers Public Cloud customers pre-installed application images for quic
 
 - A [Public Cloud instance](/pages/public_cloud/compute/public-cloud-first-steps) in your OVHcloud account
 
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Navigation path:** `Public Cloud`{.action} > Select your project
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
+
 ## Instructions
 
 ### Common steps
@@ -21,6 +76,7 @@ OVHcloud offers Public Cloud customers pre-installed application images for quic
 #### Install your chosen pre-installed application
 
 Using the [OVHcloud Control Panel](/links/manager) / API or the OpenStack Horizon / API, install your chosen application on your Public Cloud instance.
+
 
 #### Application login details
 
@@ -125,14 +181,23 @@ This section will explain the first steps specifically for the cPanel pre-instal
 
 No further steps are necessary to complete the first configuration of this application.
 
-> [!faq]
->
-> Can I use my own nameservers?
->> Yes, you can. But you need to make sure you create glue records with your domain registrar. For example if you want "ns1.mydomain.com" and "ns2.mydomain.com", you must set up glue records for both which must point to the IP of your server. If your domain is registered with OVHcloud, you can follow [this guide.](/pages/web_cloud/domains/glue_registry#step-1-add-the-glue-records). Please note that this can take 24 hours to create.
-> Why set root password?
->> WHM by default uses the root user for authentication and the one time link allows access to complete first setup and change root password. Next time you login to WHM you must use the root user and the password you have set.
-> Where is my license for cPanel?
->> OVHcloud at the moment does not provide any licensing for Public Cloud servers other than Windows licensing. Customers must purchase a licence from a third party vendor for cPanel. For this we recommend cPanel directly.
+/// details | Can I use my own nameservers?
+
+Yes, you can. But you need to make sure you create glue records with your domain registrar. For example if you want "ns1.mydomain.com" and "ns2.mydomain.com", you must set up glue records for both which must point to the IP of your server. If your domain is registered with OVHcloud, you can follow [this guide.](/pages/web_cloud/domains/glue_registry#step-1-add-the-glue-records). Please note that this can take 24 hours to create.
+
+///
+
+/// details | Why set root password?
+
+WHM by default uses the root user for authentication and the one time link allows access to complete first setup and change root password. Next time you login to WHM you must use the root user and the password you have set.
+
+///
+
+/// details | Where is my license for cPanel?
+
+OVHcloud at the moment does not provide any licensing for Public Cloud servers other than Windows licensing. Customers must purchase a licence from a third party vendor for cPanel. For this we recommend cPanel directly.
+
+///
 
 ### Plesk
 
@@ -149,10 +214,11 @@ This section will explain the first steps specifically for the Plesk pre-install
 
 No further steps are necessary to complete the first configuration of this application.
 
-> [!faq]
->
-> Where is my licence for Plesk?
->> OVHcloud at the moment does not provide any licensing for Public Cloud servers other than Windows licensing. Customers must purchase a licence from a third party vendor for Plesk. For this we recommend Plesk directly.
+/// details | Where is my licence for Plesk?
+
+OVHcloud at the moment does not provide any licensing for Public Cloud servers other than Windows licensing. Customers must purchase a licence from a third party vendor for Plesk. For this we recommend Plesk directly.
+
+///
 
 ### Virtualmin
 

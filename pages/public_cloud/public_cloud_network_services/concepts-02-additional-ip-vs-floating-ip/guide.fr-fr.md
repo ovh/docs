@@ -14,6 +14,17 @@ Dans l'univers Public Cloud, il est possible d'utiliser soit une **Additional IP
 
 Les deux services offrent une gestion flexible de l'accès public à vos services. Ils peuvent rester agnostiques en termes d'infrastructure et être mis à l'échelle ou migrés si nécessaire.
 
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Projets Public Cloud](/links/control-panel/publiccloud-projects)
+- **Pour accéder à vos services :** `Public Cloud`{.action} > Sélectionnez votre projet
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
+
 ## Concepts IP Public Cloud
 
 ### Additional IP (auparavant appelée Failover IP)
@@ -42,7 +53,7 @@ Pour plus d'informations sur la configuration des Floating IP, consultez la page
 
 ### Comment obtenir des adresses IP publiques dans votre espace client ?
 
-Dans votre [espace client OVHcloud](/links/manager), dans la section `Public Cloud`{.action}, allez dans la rubrique **Network** du menu de gauche et sélectionnez `IP Publiques`{.action}. Gérez ici les Additional IP et les Floating IP selon vos besoins.
+Dans la rubrique **Network** du menu de gauche, sélectionnez `IP Publiques`{.action}. Gérez ici les Additional IP et les Floating IP selon vos besoins.
 
 ![Concept IP](images/concip.png){.thumbnail}
 
@@ -50,7 +61,7 @@ En fonction de votre choix, vous pouvez faire votre sélection parmi les différ
 
 > [!warning]
 >
-> Les modes de tarification dépendent de l'utilisation de l'IP que vous choisissez. L'utilisation d'une adresse Additional IP est facturée au mois, tandis que l'utilisation d'une adresse Floating IP est facturée à l'heure.
+> Les modes de tarification dépendent de l’utilisation de l’IP que vous choisissez. L’utilisation d’une adresse Additional IP est facturée au mois, tandis que l’utilisation d’une adresse Floating IP est facturée à l’heure.
 
 ## Aller plus loin
 

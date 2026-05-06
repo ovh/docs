@@ -1,7 +1,7 @@
 ---
 title: 'Información sobre el tipo de facturación Public Cloud'
 excerpt: 'Cómo interpretar la facturación de las soluciones Public Cloud'
-updated: 2025-04-28
+updated: 2026-03-13
 ---
 
 ## Introducción
@@ -20,7 +20,17 @@ Este mecanismo es similar al de algunos operadores telefónicos que facturan a f
 
 * Tener un proyecto de [Public Cloud](/links/public-cloud/public-cloud) en su cuenta de OVHcloud.
 * Una [instancia Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps).
-* Tener acceso al [área de cliente de OVHcloud](/links/manager).
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Ruta de navegación:** `Public Cloud`{.action} > Seleccione su proyecto
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 > [!success]
 > Benefíciese de precios reducidos comprometiéndose por un periodo de 1 a 36 meses en sus recursos de Nube Pública. Más información en nuestra página [Savings Plans](/links/public-cloud/savings-plan).
@@ -168,37 +178,17 @@ Los snapshots de instancias como las imágenes (fuera del catálogo de imágenes
 
 ### Object Storage
 
-La facturación de la solución Object Storage tiene en cuenta dos elementos:
+Object Storage se factura en modo **pago por uso** en función del volumen medio almacenado por hora en cada clase de almacenamiento (GiB-horas), con facturación a final de mes. El almacenamiento es el principal componente de facturación — el tráfico entrante, el tráfico interno de OVHcloud, las llamadas API y el tráfico de salida público están incluidos.
 
-- el almacenamiento de los objetos en sí, es decir, el volumen de GB consumido;
-- el tráfico saliente, es decir, la cantidad de datos salientes del servicio incluidos en el cuerpo de las peticiones (body HTTP).
-
-> [!primary]
->
-> El tráfico saliente entre el servicio de almacenamiento de objetos y las instancias
-> se factura del mismo modo que si el destino fuera internet.
-> 
-
-> [!warning]
->
-> La consulta de objetos desde el área de cliente de OVHcloud se considera, asimismo,
-> tráfico saliente.
-> 
-
-### Archivos
-
-El almacenamiento de archivos tiene en cuenta tres elementos:
-
-- el almacenamiento de los archivos en sí, es decir, el volumen en GB consumido;
-- el tráfico entrante, es decir, la cantidad de datos entrantes en el servicio incluido en el cuerpo de las peticiones (body HTTP);
-- el tráfico saliente, es decir, la cantidad de datos salientes del servicio incluidos en el cuerpo de las peticiones (body HTTP).
+Para adaptar los costes a sus patrones de acceso a datos, ofrecemos varias clases de Object Storage compatibles con S3<sup>1</sup> (Standard, High Performance, Infrequent Access, Active Archive, Cold Archive). Para más información sobre estas clases, incluyendo casos de uso, rendimiento y SLA, consulte la guía dedicada: [Elegir la clase de Object Storage adecuada](/pages/storage_and_backup/object_storage/s3_choosing_the_right_storage_class_for_your_needs).
 
 > [!primary]
 >
-> El tráfico saliente entre el servicio de archivado de objetos y las instancias
-> se factura del mismo modo que si el destino fuera internet.
-> 
+> Para las clases Infrequent Access, Active Archive y Cold Archive, se aplican una duración mínima de almacenamiento y tarifas de recuperación.
+>
 
 ## Más información
+
+<sup>1</sup>: S3 es una marca de Amazon Technologies, Inc. El servicio de OVHcloud no está patrocinado, respaldado ni afiliado de ninguna manera a Amazon Technologies, Inc.
 
 Interactúe con nuestra [comunidad de usuarios](/links/community).

@@ -4,6 +4,50 @@ excerpt: Dowiedz się, jak zarządzać usługami i odnawianiem usług w Panelu k
 updated: 2025-01-28
 ---
 
+<style>
+/* ---FAQ only--- */
+details {
+    margin: 0.1rem 1;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    background: #ffffffff;
+}
+details > summary {
+    padding: 0.1rem 1rem;
+    font-weight: 500;
+    color: #268fd4ff;
+    cursor: pointer;
+    list-style: none;
+}
+details > summary::before {
+    content: '\25B6';
+    display: inline-block;
+    margin-right: 0.5ch;
+    transition: transform 0.2s;
+}
+details[open] > summary::before {
+    content: '\25BC';
+}
+details:hover {
+    border: 1px solid #147DE8;
+    border-radius: 4px;
+    transition: border-color 0.5s ease;
+}
+details[open] > summary {
+    background: #ffffffff;
+}
+details > :not(summary) {
+    padding: 0.25rem 0.5rem;
+    box-sizing: border-box;
+    list-style-position: inside;
+}
+.smallish-gap {
+    display: block;
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
+}
+</style>
+
 ## Wprowadzenie
 
 Menu **Moje rozwiązania i usługi** w Panelu klienta OVHcloud umożliwia sprawdzenie statusu usług, ich odnowienie, zmianę typu odnowienia, regulowanie faktur lub antycypowanie płatności.
@@ -19,17 +63,27 @@ Z tego przewodnika dowiesz się:
 
 > [!primary]
 >
-> Niektóre elementy tego przewodnika mogą się różnić lub mogą nie mieć zastosowania w Twojej sytuacji, w zależności od miejsca pobytu, lokalnych przepisów i wykorzystywanych rozwiązań. Aby uzyskać szczegółowe informacje, sprawdź zapisy w umowach [Panelu klienta OVHcloud](/links/manager): kliknij nazwę w prawym górnym rogu ekranu, kliknij `Moje rozwiązania i usługi`{.action}, a następnie zakładkę `Regulaminy`{.action}.
+> Niektóre elementy tego przewodnika mogą się różnić lub mogą nie mieć zastosowania w Twojej sytuacji, w zależności od miejsca pobytu, lokalnych przepisów i wykorzystywanych rozwiązań. Aby uzyskać szczegółowe informacje, sprawdź zapisy w umowach na stronie [Lista umów](/links/control-panel/billing-contracts).
 >
 
 <iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/dfpPCa0mUyo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Wymagania początkowe
 
-- Dostęp do [Panelu klienta OVHcloud](/links/manager)
 - Posiadanie aktywnych usług OVHcloud
 - Posiadanie [kontaktu księgowego](/pages/account_and_service_management/account_information/managing_contacts#definicja) za usługi OVHcloud
 - Posiadanie ważnego sposobu płatności na koncie OVHcloud. Zapoznaj się z przewodnikiem "[Zarządzanie sposobami płatności](/pages/account_and_service_management/managing_billing_payments_and_services/manage-payment-methods)"
+
+<!-- CP-NAV-START:billing-services -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Moje rozwiązania i usługi](/links/control-panel/billing-services)
+- **Ścieżka nawigacji:** Kliknij swoją nazwę w prawym górnym rogu > `Moje rozwiązania i usługi`{.action}
+
+---
+<!-- CP-NAV-END:billing-services -->
 
 <a name="auto-vs-manual"></a>
 
@@ -68,8 +122,7 @@ Z tego przewodnika dowiesz się:
 
 ## W praktyce
 
-Zaloguj się do [Panelu klienta OVHcloud](/links/manager).<br>
-Kliknij swoją nazwę w prawym górnym rogu i wybierz `Moje rozwiązania i usługi`{.action}.
+Otwórz stronę [Moje rozwiązania i usługi](/links/control-panel/billing-services).
 
 ![produkty i usługi](/pages/assets/screens/control_panel/product-selection/right-menu/my-solutions-and-services.png){.thumbnail}
 
@@ -193,31 +246,68 @@ W poniższej tabeli przedstawiono możliwe działania zbiorcze.
 
 ## FAQ
 
-> [!faq]
->
-> Gdzie znajdę mój identyfikator klienta (NIC) OVHcloud?
->> Wyświetli się on w Panelu klienta, klikając Twoją nazwę w prawym górnym rogu. Jest również widoczny w prawym górnym rogu wszystkich faktur. Jest on również podany w e-mailu z potwierdzeniem utworzenia konta, w wiadomościach z potwierdzeniem zamówienia lub odnowienia usług, a także w powiadomieniach dotyczących logowania do konta.
-> Nie mogę zalogować się na moje konto OVHcloud, aby odnowić usługi, co zrobić?
->> Zapoznaj się z częścią "[Co zrobić, jeśli nie mogę się zalogować?](/pages/account_and_service_management/account_information/ovhcloud-account-login#login-failure), jeśli nie udało się-nie udało-mi-się-zalogować)" naszego przewodnika "[Logowanie do Panelu klienta OVHcloud](/pages/account_and_service_management/account_information/ovhcloud-account-login)".
-> Chcę włączyć automatyczne odnawianie, ale otrzymuję komunikat o błędzie. Co powinienem zrobić?
->> Aby włączyć automatyczne odnawianie usług, musisz mieć dodany ważny sposób płatności na koncie OVHcloud. Jeśli tak się nie stało lub jeśli sposób płatności wygasł, w Panelu klienta pojawi się komunikat o błędzie podczas prób włączenia opcji automatycznego odnowienia. Zapoznaj się z przewodnikiem "[Zarządzanie sposobami płatności](/pages/account_and_service_management/managing_billing_payments_and_services/manage-payment-methods)", aby sprawdzić lub dodać sposób płatności.
-> Mój sposób płatności utracił ważność. W jaki sposób dodać nowy sposób płatności?
->> Sprawdź przewodnik "[Zarządzanie sposobami płatności](/pages/account_and_service_management/managing_billing_payments_and_services/manage-payment-methods)". Zanim usuniesz stary sposób płatności, dodaj nowy, ważny sposób płatności do Twojego konta OVHcloud.
-> Mam pytanie dotyczące odnowienia mojej domeny
->> Sprawdź przewodnik "[Odnowienie domen OVHcloud](/pages/web_cloud/domains/autorenew_domain_name)".
-> Nie chcę już automatycznego przelewu, ale nie chcę rezygnować z usługi. Co powinienem zrobić?
->> Jeśli Twoja usługa na to pozwala, możesz skorzystać z działania [Skonfiguruj odnowienie](#actions) i wybrać odnowienie ręczne.
-> Odnowiłem usługę na 12 miesięcy. Czy mogę cofnąć wybór?
->> Po odnowieniu usługi nie można jej anulować. Możesz jednak wybrać inny rodzaj odnowienia lub zrezygnować z usługi, ale te dwie opcje mogą być brane pod uwagę dopiero po zakończeniu aktualnego abonamentu, czyli po 12 miesiącach.
-> Moja witryna sieci Web została zawieszona, ponieważ nie odnowiłam usług na czas. Właśnie odnowiłem usługi. Jak długo muszę czekać na ponowne udostępnienie strony WWW?
->> Czas przywrócenia usługi różni się w zależności od wybranych usług.
->> Jeśli tylko Twój hosting został zawieszony i odnowiony, uzyskanie ponownej dostępności strony zajmuje średnio 2 godziny.
->> Jeśli Twoja domena również została zawieszona i odnowiona, może to oznaczać, że czas propagacji DNS wyniesie do 48 godzin.
->> Aby zapobiec niedostępności wszystkich Twoich krytycznych usług, zalecamy automatyczne odnawianie usług i regularne sprawdzanie [czy Twoje sposoby płatności są aktualne](/pages/account_and_service_management/managing_billing_payments_and_services/manage-payment-methods).
-> Abonament za usługę wygasa w lipcu 2024. Jest styczeń 2024 roku i chcę go odnowić na rok. Czy w związku z tym abonament wygaśnie w lipcu 2025 r., czy w styczniu 2025 r.?
->> Po przedłużeniu okresu odnowienia usługi (na 1 rok lub na krótszy okres) okres ten zostanie dodany do kolejnej daty wejścia w życie, która będzie widoczna w tabeli "Moje rozwiązania i usługi". W Twoim przypadku usługa będzie odnawiana do lipca 2025 roku.
-> Subskrypcja mojej usługi wygasła 1 stycznia 2024 r. i zapomniałem ją odnowić. Właśnie odnowiłem go 16 stycznia 2024 na 6 miesięcy, ale widzę, że wygaśnie on 1 lipca 2024 roku, a nie 16 lipca 2024. Czy to normalne?
->> Tak, to normalne, odnawianie rozpoczyna się w dniu wygaśnięcia subskrypcji.
+/// details | Gdzie znajdę mój identyfikator klienta (NIC) OVHcloud?
+
+Wyświetli się on w Panelu klienta, klikając Twoją nazwę w prawym górnym rogu. Jest również widoczny w prawym górnym rogu wszystkich faktur. Jest on również podany w e-mailu z potwierdzeniem utworzenia konta, w wiadomościach z potwierdzeniem zamówienia lub odnowienia usług, a także w powiadomieniach dotyczących logowania do konta.
+
+///
+
+/// details | Nie mogę zalogować się na moje konto OVHcloud, aby odnowić usługi, co zrobić?
+
+Zapoznaj się z częścią "[Co zrobić, jeśli nie mogę się zalogować?](/pages/account_and_service_management/account_information/ovhcloud-account-login#login-failure), jeśli nie udało się-nie udało-mi-się-zalogować)" naszego przewodnika "[Logowanie do Panelu klienta OVHcloud](/pages/account_and_service_management/account_information/ovhcloud-account-login)".
+
+///
+
+/// details | Chcę włączyć automatyczne odnawianie, ale otrzymuję komunikat o błędzie. Co powinienem zrobić?
+
+Aby włączyć automatyczne odnawianie usług, musisz mieć dodany ważny sposób płatności na koncie OVHcloud. Jeśli tak się nie stało lub jeśli sposób płatności wygasł, w Panelu klienta pojawi się komunikat o błędzie podczas prób włączenia opcji automatycznego odnowienia. Zapoznaj się z przewodnikiem "[Zarządzanie sposobami płatności](/pages/account_and_service_management/managing_billing_payments_and_services/manage-payment-methods)", aby sprawdzić lub dodać sposób płatności.
+
+///
+
+/// details | Mój sposób płatności utracił ważność. W jaki sposób dodać nowy sposób płatności?
+
+Sprawdź przewodnik "[Zarządzanie sposobami płatności](/pages/account_and_service_management/managing_billing_payments_and_services/manage-payment-methods)". Zanim usuniesz stary sposób płatności, dodaj nowy, ważny sposób płatności do Twojego konta OVHcloud.
+
+///
+
+/// details | Mam pytanie dotyczące odnowienia mojej domeny
+
+Sprawdź przewodnik "[Odnowienie domen OVHcloud](/pages/web_cloud/domains/autorenew_domain_name)".
+
+///
+
+/// details | Nie chcę już automatycznego przelewu, ale nie chcę rezygnować z usługi. Co powinienem zrobić?
+
+Jeśli Twoja usługa na to pozwala, możesz skorzystać z działania [Skonfiguruj odnowienie](#actions) i wybrać odnowienie ręczne.
+
+///
+
+/// details | Odnowiłem usługę na 12 miesięcy. Czy mogę cofnąć wybór?
+
+Po odnowieniu usługi nie można jej anulować. Możesz jednak wybrać inny rodzaj odnowienia lub zrezygnować z usługi, ale te dwie opcje mogą być brane pod uwagę dopiero po zakończeniu aktualnego abonamentu, czyli po 12 miesiącach.
+
+///
+
+/// details | Moja witryna sieci Web została zawieszona, ponieważ nie odnowiłam usług na czas. Właśnie odnowiłem usługi. Jak długo muszę czekać na ponowne udostępnienie strony WWW?
+
+Czas przywrócenia usługi różni się w zależności od wybranych usług.
+Jeśli tylko Twój hosting został zawieszony i odnowiony, uzyskanie ponownej dostępności strony zajmuje średnio 2 godziny.
+Jeśli Twoja domena również została zawieszona i odnowiona, może to oznaczać, że czas propagacji DNS wyniesie do 48 godzin.
+Aby zapobiec niedostępności wszystkich Twoich krytycznych usług, zalecamy automatyczne odnawianie usług i regularne sprawdzanie [czy Twoje sposoby płatności są aktualne](/pages/account_and_service_management/managing_billing_payments_and_services/manage-payment-methods).
+
+///
+
+/// details | Abonament za usługę wygasa w lipcu 2024. Jest styczeń 2024 roku i chcę go odnowić na rok. Czy w związku z tym abonament wygaśnie w lipcu 2025 r., czy w styczniu 2025 r.?
+
+Po przedłużeniu okresu odnowienia usługi (na 1 rok lub na krótszy okres) okres ten zostanie dodany do kolejnej daty wejścia w życie, która będzie widoczna w tabeli "Moje rozwiązania i usługi". W Twoim przypadku usługa będzie odnawiana do lipca 2025 roku.
+
+///
+
+/// details | Subskrypcja mojej usługi wygasła 1 stycznia 2024 r. i zapomniałem ją odnowić. Właśnie odnowiłem go 16 stycznia 2024 na 6 miesięcy, ale widzę, że wygaśnie on 1 lipca 2024 roku, a nie 16 lipca 2024. Czy to normalne?
+
+Tak, to normalne, odnawianie rozpoczyna się w dniu wygaśnięcia subskrypcji.
+
+///
 
 ## Sprawdź również
 

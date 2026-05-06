@@ -12,7 +12,7 @@ updated: 2025-12-17
 > Para más información sobre la configuración de las direcciones Additional IP en un vRack para su uso con instancias de Public Cloud, consulte las guías siguientes:
 >
 > - [Configurar un bloque IP en un vRack en una instancia Public Cloud (EN)](/pages/public_cloud/public_cloud_network_services/configuration-06-configure-ip-block-vrack-to-instance).
-> - [Configurar un bloque IPv6 en un vRacK (EN)](/pages/bare_metal_cloud/dedicated_servers/configure-an-ipv6-in-a-vrack).
+> - [Configurar un bloque IPv6 en un vRack (EN)](/pages/bare_metal_cloud/dedicated_servers/configure-an-ipv6-in-a-vrack).
 >
 
 ## Objetivo
@@ -40,11 +40,23 @@ Es posible que necesite configurar direcciones Additional IP en sus instancias, 
 
 ## Procedimiento
 
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Ruta de navegación:** `Public Cloud`{.action} > Seleccione su proyecto
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
+
+
 Esta guía explica las configuraciones de las distribuciones y sistemas operativos más habituales. En primer lugar, conéctese a su instancia por SSH o a través de una sesión de conexión a la interfaz gráfica de usuario (VNC para una instancia Windows). Los siguientes ejemplos implican que está conectado como usuario con permisos muy exigentes (administrador/sudo).
 
 > [!primary]
 >
-En cuanto a las distintas versiones de distribuciones, tenga en cuenta que puede haber cambiado el procedimiento adecuado para configurar la interfaz de red y los nombres de archivos. Si necesita ayuda, le recomendamos que consulte la documentación relativa a su sistema operativo.
+> En cuanto a las distintas versiones de distribuciones, tenga en cuenta que puede haber cambiado el procedimiento adecuado para configurar la interfaz de red y los nombres de archivos. Si necesita ayuda, le recomendamos que consulte la documentación relativa a su sistema operativo.
 >
 
 **Tome nota de la siguiente terminología que se utilizará en los ejemplos de código y en las instrucciones que se explican en esta guía:**
@@ -100,7 +112,7 @@ En cuanto a las distintas versiones de distribuciones, tenga en cuenta que puede
 >> Añada las siguientes líneas:
 >>
 >> ```bash
->> NETWORK_INTERFACE:ID
+>> auto NETWORK_INTERFACE:ID
 >> iface NETWORK_INTERFACE:ID inet static
 >> address ADDITIONAL_IP
 >> netmask 255.255.255.255
@@ -241,7 +253,7 @@ En cuanto a las distintas versiones de distribuciones, tenga en cuenta que puede
 >> No modifique las líneas existentes en el fichero de configuración, añada su Additional IP al fichero como sigue, sustituyendo `ADDITIONAL_IP/32` por sus propios valores:
 >>
 >> ```console
->> [IPv4]
+>> [ipv4]
 >> method=auto
 >> may-fail=false
 >> address1=ADDITIONAL_IP/32
@@ -250,7 +262,7 @@ En cuanto a las distintas versiones de distribuciones, tenga en cuenta que puede
 >> Si tiene que configurar dos direcciones Additional IP, la configuración debe ser similar a la siguiente:
 >>
 >> ```console
->> [IPv4]
+>> [ipv4]
 >> method=auto
 >> may-fail=false
 >> address1=ADDITIONAL_IP1/32
@@ -274,7 +286,7 @@ En cuanto a las distintas versiones de distribuciones, tenga en cuenta que puede
 >>
 >> ![acceso a la gestión de las direcciones IP](images/pleskip1.png){.thumbnail}
 >>
->> Haga clic en `IP Addresses`{.action} bajo **Tools & Settings**.
+>> Haga clic en `IP Addresses`{.action} bajo **Tools & Resources**.
 >>
 >> **Paso 2: añadir la información IP adicional**
 >>
@@ -295,7 +307,7 @@ En cuanto a las distintas versiones de distribuciones, tenga en cuenta que puede
 > **Windows Server**
 >> Windows Server
 >>
->> En el área de Public Cloud, abra `Instances`{.action} en el menú de la izquierda y haga clic en el nombre de su instancia. Acceda a la pestaña `Consola VNC`{.action}.
+>> En su proyecto Public Cloud, abra `Instances`{.action} en el menú de la izquierda y haga clic en el nombre de su instancia. Acceda a la pestaña `Consola VNC`{.action}.
 >>
 >> **Paso 1: comprobar la configuración de red**
 >>
@@ -317,7 +329,7 @@ En cuanto a las distintas versiones de distribuciones, tenga en cuenta que puede
 >>
 >> ![modificar la configuración IP](images/image2.png){.thumbnail}
 >>
->> En la ventana Propiedades IPv4, seleccione `Usar la siguiente`{.action} dirección IP. Introduzca la dirección IP que haya obtenido en el primer paso y haga clic en `Avanzado`{.action}.
+>> En la ventana Propiedades IPv4, seleccione `Usar la siguiente dirección IP`{.action}. Introduzca la dirección IP que haya obtenido en el primer paso y haga clic en `Avanzado`{.action}.
 >>
 >> **Paso 3: añadir la dirección Additional IP en los Parámetros TCP/IP avanzados**
 >>
@@ -348,7 +360,7 @@ En cuanto a las distintas versiones de distribuciones, tenga en cuenta que puede
 
 ### Diagnóstico
 
-En primer lugar, reinicie su instancia utilizando el sistema operativo de la instancia o el [Panel de configuración de OVHcloud](/links/manager). Si todavía no consigue establecer una conexión entre la red pública y su Additional IP y si sospecha que existe algún problema de red, deberá reiniciar la instancia en [modo de rescate](/pages/public_cloud/compute/put_an_instance_in_rescue_mode). A continuación, podrá configurar la dirección Additional IP directamente en la instancia.
+En primer lugar, reinicie su instancia utilizando el sistema operativo de la instancia o el [área de cliente de OVHcloud](/links/manager). Si todavía no consigue establecer una conexión entre la red pública y su Additional IP y si sospecha que existe algún problema de red, deberá reiniciar la instancia en [modo de rescate](/pages/public_cloud/compute/put_an_instance_in_rescue_mode). A continuación, podrá configurar la dirección Additional IP directamente en la instancia.
 
 Una vez que se haya conectado al modo de rescate por SSH, introduzca el siguiente comando:
 
@@ -356,7 +368,7 @@ Una vez que se haya conectado al modo de rescate por SSH, introduzca el siguient
 ifconfig ens3:0 ADDITIONAL_IP netmask 255.255.255.255 broadcast ADDITIONAL_IP up
 ```
 
-Para probar la conexión, solo tiene que enviar un ping a su dirección Additional IP desde el exterior. Si responde en modo de rescate, probablemente significa que se ha producido un error de configuración. No obstante, si la IP todavía no funciona, informe a nuestro equipo del soporte creando un tíquet de soporte desde el [Panel de configuración de OVHcloud](/links/manager).
+Para probar la conexión, solo tiene que enviar un ping a su dirección Additional IP desde el exterior. Si responde en modo de rescate, probablemente significa que se ha producido un error de configuración. No obstante, si la IP todavía no funciona, informe a nuestro equipo del soporte creando un tíquet de soporte desde el [área de cliente de OVHcloud](/links/manager).
 
 ## Más información
 

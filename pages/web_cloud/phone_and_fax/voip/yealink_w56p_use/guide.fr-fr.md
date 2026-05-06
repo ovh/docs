@@ -1,18 +1,18 @@
 ---
-title: 'Utiliser le Yealink W56P'
-excerpt: 'Découvrez comment utiliser votre téléphone Yealink W56P'
+title: "Utiliser le téléphone Yealink W56P"
+excerpt: "Découvrez comment utiliser votre téléphone Yealink W56P"
 flag: hidden
 updated: 2018-05-25
 ---
 
 ## Objectif
 
-**Ce guide vous présente les différentes fonctionnalités de votre téléphone fourni par OVH.**
+**Ce guide vous présente les différentes fonctionnalités de votre téléphone fourni par OVHcloud.**
 
 ## Prérequis
 
-- Posséder [une ligne téléphonique OVH](/links/telecom/telephonie).
-- Avoir réceptionné le téléphone Yealing W56P fourni par OVH.
+- Posséder [une ligne téléphonique OVHcloud](/links/telecom/telephonie).
+- Avoir réceptionné le téléphone Yealink W56P fourni par OVHcloud.
 
 ## En pratique
 
@@ -38,7 +38,7 @@ updated: 2018-05-25
 
 Pour recomposer un appel, appuyez sur `Décroché`{.action} (1) pour accéder à la liste des appels, puis utilisez la `Flèche directionnelle (haut)` (4) ou `Flèche directionnelle (bas)`{.action} (5) pour sélectionner l'entrée souhaitée et valider avec `Décroché`{.action} (1) (pour un appel via le combiné ou casque) ou `Haut-parleur`{.action} (2).
 
-Pour appeler le dernier numéro composé il suffit d'appuyez deux fois sur `Décroché`{.action} (1) lorsque le téléphone est inactif.
+Pour appeler le dernier numéro composé il suffit d'appuyer deux fois sur `Décroché`{.action} (1) lorsque le téléphone est inactif.
 
 ### Mettre un appel en sourdine et rétablir le son
 
@@ -84,7 +84,7 @@ Pour mettre fin à un appel via le combiné appuyez sur `Raccroché`{.action} (8
 
 #### Mettre fin à un appel via le socle de rechargement
 
-Mettre fin à un appel via le socle de rechargement, placez le combiné sur le socle de rechargement.
+Pour mettre fin à un appel via le socle de rechargement, placez le combiné sur le socle.
 
 ## Aller plus loin
 

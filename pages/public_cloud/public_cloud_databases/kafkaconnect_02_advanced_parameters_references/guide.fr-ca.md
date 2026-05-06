@@ -1,6 +1,6 @@
 ---
-title: Kafka Connect - Références des paramètres avancés (EN)
-excerpt: This guide lists all the supported advanced parameters that allow you to configure your Public Cloud Databases for MySQL according to your use cases
+title: Paramètres avancés pour Analytics avec Kafka Connect (EN)
+excerpt: This guide lists all the supported advanced parameters that allow you to configure your Analytics with Kafka Connect according to your use cases
 updated: 2025-08-04
 ---
 
@@ -11,8 +11,8 @@ This guide lists all the supported advanced parameters that allow you to configu
 ## Requirements
 
 - A [Public Cloud project](/links/public-cloud/public-cloud) in your OVHcloud account   
-- An analytics service running on your OVHcloud Public Cloud project ([this guide](/pages/public_cloud/data_analytics/analytics/analytics_getting_started) can help you to meet this requirement) 
-- Access to your [OVHcloud Control Panel](/links/manager) or to the [OVHcloud API](https://api.ovh.com/console/)   
+- An analytics service running on your OVHcloud Public Cloud project ([this guide](/pages/public_cloud/data_analytics/analytics/analytics_getting_started) can help you to meet this requirement)
+- Access to your [OVHcloud Control Panel](/links/manager) or to the [OVHcloud API](https://api.ovh.com/console/)
 
 ## Instructions
 

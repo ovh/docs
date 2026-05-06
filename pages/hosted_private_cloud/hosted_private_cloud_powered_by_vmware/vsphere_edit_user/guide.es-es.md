@@ -13,11 +13,21 @@ Es posible asociar un nombre, un apellido, un número de teléfono y una direcci
 ## Requisitos
 
 - Tener una solución [Hosted Private Cloud](https://www.ovhcloud.com/es-es/enterprise/products/hosted-private-cloud/).
-- Haber iniciado sesión en el [área de cliente de OVHcloud](/links/manager).
+
+<!-- CP-NAV-START:privatecloud-vmware-vsphere -->
+---
+
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [VMware vSphere](/links/control-panel/privatecloud-vmware-vsphere)
+- **Ruta de navegación:** `Hosted Private Cloud`{.action} > `Managed VMware vSphere`{.action} > Seleccione su servicio vSphere
+
+---
+<!-- CP-NAV-END:privatecloud-vmware-vsphere -->
 
 ## Procedimiento
 
-Conéctese al [área de cliente de OVHcloud](/links/manager) y acceda a la sección `Servidores`. En la barra de servicios de la izquierda, haga clic en `Private Cloud` y seleccione la infraestructura correspondiente.
+Acceda a la pestaña `Usuarios`{.action}.
 
 ![Usuario vSphere](images/addMailOnUser01.png){.thumbnail}
 

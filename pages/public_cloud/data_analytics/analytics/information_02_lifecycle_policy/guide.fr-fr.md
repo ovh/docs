@@ -1,5 +1,5 @@
 ---
-title: Analytics - Lifecycle policy
+title: Politique de cycle de vie des services Analytics (EN)
 excerpt: Lifecycle policy for Analytics engines
 updated: 2025-03-12
 ---

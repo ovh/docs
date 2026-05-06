@@ -1,6 +1,6 @@
 ---
-title: "Como armazenar as chaves SSH na sua Área de Cliente"
-excerpt: "Descubra como importar chaves SSH públicas na sua Área de Cliente OVHcloud"
+title: "Armazenar chaves SSH de servidor dedicado na área de cliente"
+excerpt: "Importe e faça a gestão das suas chaves SSH públicas na área de cliente OVHcloud para uma implementação rápida nos seus servidores dedicados"
 updated: 2024-12-04
 ---
 
@@ -13,7 +13,6 @@ Os pares de chaves são utilizados para autenticar as ligações SSH entre os ho
 ## Requisitos
 
 - Um [servidor dedicado](/links/bare-metal/bare-metal) ou um [VPS](/links/bare-metal/vps) na sua conta OVHcloud
-- Acesso à [Área de Cliente OVHcloud](/links/manager)
 
 > [!primary]
 >
@@ -21,14 +20,23 @@ Os pares de chaves são utilizados para autenticar as ligações SSH entre os ho
 >
 > [Como criar chaves SSH com OpenSSH para as instâncias Public Cloud](/pages/public_cloud/compute/creating-ssh-keys-pci)
 
+<!-- CP-NAV-START:billing-services -->
+---
+
+### Acesso à Área de Cliente OVHcloud
+
+- **Ligação direta:** [My services](/links/control-panel/billing-services)
+- **Caminho de navegação:** Clique no seu nome no canto superior direito > `As minhas ofertas e serviços`{.action}
+
+---
+<!-- CP-NAV-END:billing-services -->
+
 ## Instruções
 
 Se ainda não criou nenhum par de chaves SSH, consulte os nossos manuais:
 
 - [Criar e utilizar chaves SSH](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated)
 - [Tutorial - Como utilizar o PuTTY para as ligações SSH e autenticação](/pages/web_cloud/web_hosting/ssh_using_putty_on_windows)
-
-Aceda à [Área de Cliente OVHcloud](/links/manager), clique no nome da conta no canto superior direito e abra a janela `As minhas ofertas e serviços`{.action}.
 
 ![products and services](/pages/assets/screens/control_panel/product-selection/right-menu/my-solutions-and-services.png){.thumbnail}
 

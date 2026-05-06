@@ -1,15 +1,15 @@
 ---
 title: Object Storage - Bucket ACL
-updated: 2023-08-09
+updated: 2026-03-06
 ---
 
 ## Objectif
 
-Par défaut, toutes les ressources (buckets, objets) et les sous-ressources (configuration de cycle de vie, configuration de site web, ...etc) sont privées dans l'Object Storage. Seul le propriétaire de la ressource, c'est à dire l'utilisateur du compte qui la crée, a le contrôle total dessus.
+Par défaut, toutes les ressources (buckets, objets) et les sous-ressources (configuration de cycle de vie, configuration de site web, etc.) sont privées dans l'Object Storage. Seul le propriétaire de la ressource, c'est-à-dire l'utilisateur du compte qui la crée, a le contrôle total dessus.
 
 L'accès aux ressources privées peut être donné via les politiques d'accès.
 
-Les politiques d'accès peuvent être catégorisées en 2 types :
+Les politiques d'accès peuvent être catégorisées en deux types :
 
 - politique basée sur l'utilisateur ;
 - politique basée sur la ressource : les politiques de bucket et les ACLs sont des politiques d'accès qui sont attachées directement à une ressource spécifique.
@@ -36,14 +36,14 @@ A l'instar des politiques utilisateur, une politique de bucket contrôle les per
 
 > [!warning]
 >
-> Les Bucket Policies ne sont pas encore disponibles sur la solution Object Storage.
+> Les Bucket Policies sont une fonctionnalité qui n'est pas encore disponible sur la solution Object Storage.
 >
 
 ## Gérer les permissions avec les ACLs
 
 ### Bénéficiaires gérés
 
-La solution Object Storage gère 2 types de bénéficiaires :
+OVHcloud Object Storage gère deux types de bénéficiaires :
 
 - les utilisateurs d'un projet Public Cloud ;
 - les groupes d'utilisateurs prédéfinis.
@@ -60,19 +60,19 @@ Les groupes d'utilisateurs prédéfinis sont les suivants et sont identifiés pa
 
 - **log delivery group** : ce groupe contient les utilisateurs applicatifs utilisés par les services d'OVHcloud pour écrire les journaux d'accès aux serveurs dans les buckets (voir [Server Access Logging](/pages/storage_and_backup/object_storage/s3_server_access_logging)).
 
-```console
+```text
 http://acs.amazonaws.com/groups/s3/LogDelivery
 ```
 
 - **authenticated users group** : ce groupe contient tous les utilisateurs de tous les projets Public Cloud qui sont authentifiés.
 
-```console
+```text
 http://acs.amazonaws.com/groups/global/AuthenticatedUsers
 ```
 
 - **all users group** : ce groupe contient tous les utilisateurs du monde entier et est équivalent aux utilisateurs anonymes.
 
-```console
+```text
 http://acs.amazonaws.com/groups/global/AllUsers
 ```
 
@@ -111,15 +111,15 @@ Vous pouvez configurer les ACLS sur un bucket à la création de celui-ci ou apr
 Exemple:
 
 ```bash
-$ aws s3api create-bucket --bucket my-bucket --region gra --acl public-read
+aws s3api create-bucket --bucket <bucket_name> --region <region> --acl public-read
 ```
 
-Dans cet exemple, nous avons créé un bucket appelé "my-bucket" qui utilise l'ACL prédéfinie "public-read".
+Dans cet exemple, nous avons créé un bucket nommé `<bucket_name>` qui utilise l'ACL prédéfinie `public-read`.
 
-Pour vérifier que les ACLs ont été correctement configurées, vous pouvez utiliser la commande suivante qui retourne l'ACL :
+Pour vérifier que les ACL sont correctement configurées, vous pouvez utiliser la commande suivante qui retourne l'ACL :
 
 ```bash
-$ aws s3api get-bucket-acl --bucket my-bucket
+aws s3api get-bucket-acl --bucket <bucket_name>
 ```
 
 ```json
@@ -148,18 +148,18 @@ $ aws s3api get-bucket-acl --bucket my-bucket
 }
 ```
 
-Pour changer les ACLs, vous pouvez appeler la commande `put-bucket-acl` en utilisant le client en ligne de commande AWS :
+Pour changer les ACL, vous pouvez appeler la commande `put-bucket-acl` en utilisant l'AWS CLI :
 
 ```bash
-$ aws s3api put-bucket-acl --bucket acl-bucket --grant-write id=po-training:user-yyyyyyyyyy
+aws s3api put-bucket-acl --bucket <bucket_name> --grant-write id=<project_name>:<user_name>
 ```
 
 Ici, nous avons changé l'ACL pour donner à l'utilisateur "user-yyyyyyyyyy" la permission d'écrire dans le bucket.
 
-A nouveau, pour vérifier que les ACLs sont correctement configurées :
+A nouveau, pour vérifier que les ACL sont correctement configurées :
 
 ```bash
-$ aws s3api get-bucket-acl --bucket my-bucket
+aws s3api get-bucket-acl --bucket <bucket_name>
 ```
 
 ```json
@@ -188,15 +188,15 @@ Tout comme au niveau du bucket, vous pouvez configurer les ACLs sur un objet ind
 Exemple:
 
 ```bash
-$ aws s3api put-object --bucket my-bucket --body file.txt --key file --grant-full-control id=po-training:user-yyyyyyyyyy
+aws s3api put-object --bucket <bucket_name> --body <file_path> --key <object_key> --grant-full-control id=<project_name>:<user_name>
 ```
 
-Dans cet exemple, nous avons créé un objet nommé "file" et nous avons accordé à l'utilisateur "user-yyyyyyyyyy" la permission "FULL_CONTROL" dessus.
+Dans cet exemple, nous avons créé un objet nommé `<object_key>` et nous avons accordé à l'utilisateur `<user_name>` la permission `FULL_CONTROL` dessus.
 
 Pour vérifier que les ACL sont correctement définies, vous pouvez utiliser la commande suivante pour récupérer l'ACL :
 
 ```bash
-$ aws s3api get-object-acl --bucket my-bucket --key file
+aws s3api get-object-acl --bucket <bucket_name> --key <object_key>
 ```
 
 ```json
@@ -226,18 +226,18 @@ $ aws s3api get-object-acl --bucket my-bucket --key file
 }
 ```
 
-Pour modifier l'ACL, vous pouvez appeler le point de terminaison `put-object-acl` à l'aide du cli AWS :
+Pour modifier l'ACL, vous pouvez appeler le point de terminaison `put-object-acl` à l'aide de l'AWS CLI :
 
 ```bash
-$ aws s3api put-object-acl --bucket acl-bucket --grant-read id=po-training:user-yyyyyyyyyy
+aws s3api put-object-acl --bucket <bucket_name> --key <object_key> --grant-read id=<project_name>:<user_name>
 ```
 
-Ici, nous avons changé d'avis et décidé de donner uniquement à l'utilisateur du compte « user-yyyyyyyy » l'autorisation *read* sur le bucket, au lieu de la permission "FULL_CONTROL".
+Ici, nous avons changé d'avis et décidé de donner uniquement à l'utilisateur `<user_name>` l'autorisation *read*, au lieu de la permission « FULL_CONTROL ».
 
 Là encore, pour vérifier que les ACL sont correctement définies, utilisez la commande suivante :
 
 ```bash
-$ aws s3api get-object-acl --bucket my-bucket --key file
+aws s3api get-object-acl --bucket <bucket_name> --key <object_key>
 ```
 
 ```json

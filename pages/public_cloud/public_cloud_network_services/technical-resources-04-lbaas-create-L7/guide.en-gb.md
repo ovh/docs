@@ -67,7 +67,6 @@ This example demonstrates how to redirect traffic from `/oldpath` to `https://ex
 
 ## Requirements
 
-- An [active OVHcloud account](/links/manager)
 - Understanding of the [Load Balancer concepts](/pages/public_cloud/public_cloud_network_services/concepts-03-loadbalancer)
 - An active [Public Cloud project](/pages/public_cloud/public_cloud_cross_functional/create_a_public_cloud_project)
 - A previously configured [Load Balancer](/pages/public_cloud/public_cloud_network_services/getting-started-01-create-lb-service) within your OVHcloud project space
@@ -89,13 +88,21 @@ Configuring L7 policies and rules via the OVHcloud customer space allows you to 
 
 #### Step 1: Access the OVHcloud Control Panel
 
-Go to the [OVHcloud website](/links/manager) and log in with your credentials. Once logged in, you will have an overview of all your OVHcloud services.
+<!-- CP-NAV-START:publiccloud-projects -->
+---
 
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Navigation path:** `Public Cloud`{.action} > Select your project
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
+
+<!-- CP-STEPS-START:configure-l7-policies -->
 #### Step 2: Navigate to the Load Balancer
 
-Click on the `Public Cloud`{.action} tab. Select the desired Public Cloud project if you have multiple.
-
-Select `Load Balancer`{.action} in the `Network`section or use the quick search function. You will see a list of your Load Balancers. Click on the one you wish to configure.
+In your Public Cloud project, select `Load Balancer`{.action} in the `Network`section or use the quick search function. You will see a list of your Load Balancers. Click on the one you wish to configure.
 
 #### Step 3: Manage L7 Policies
 
@@ -174,6 +181,8 @@ An L7 rule is a logical test that returns "True" or "False" statuses. To trigger
 Once all fields are filled in according to your criteria, click `Add`{.action} to save the rule to your L7 policy.
 
 ![Schema 1](images/Policy8.png){.thumbnail}
+
+<!-- CP-STEPS-END:configure-l7-policies -->
 
 ### Using the OpenStack CLI and Horizon
 

@@ -1,8 +1,22 @@
 ---
 title: "Duplikuj zawartość jednej bazy danych do innej"
 excerpt: "Dowiedz się, jak skopiować zawartość bazy danych OVHcloud do innej bazy danych OVHcloud"
-updated: 2025-02-20
+updated: 2026-03-31
 ---
+
+<style>
+details>summary {
+    color:rgb(33, 153, 232) !important;
+    cursor: pointer;
+}
+details>summary::before {
+    content:'\25B6';
+    padding-right:1ch;
+}
+details[open]>summary::before {
+    content:'\25BC';
+}
+</style>
 
 ## Wprowadzenie
 
@@ -18,8 +32,18 @@ Twoja baza danych jest kluczowym elementem w budowaniu dynamicznej strony WWW. W
 ## Wymagania początkowe
 
 - Posiadanie ofert baz danych [start SQL](/links/web/hosting-options-startsql) i/lub [Web Cloud Databases](/links/web/databases). Obie bazy danych muszą zostać wcześniej utworzone, aby można było korzystać z narzędzia do powielania.
-- Dostęp do [panelu klienta OVHcloud](/links/manager)
 - Wystarczające uprawnienia do wszystkich odpowiednich usług bazodanowych. Więcej informacji znajdziesz w naszym przewodniku [Zarządzanie kontaktami dla usług OVHcloud](/pages/account_and_service_management/account_information/managing_contacts).
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Hosting](/links/control-panel/web-hosting)
+- **Ścieżka nawigacji:** `Web Cloud`{.action} > `Hosting`{.action} > Wybierz hosting WWW
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## W praktyce
 
@@ -29,135 +53,138 @@ Zanim rozpoczniesz, upewnij się, że:
 - Wersja DBMS jest taka sama dla obu baz (źródłowej i docelowej). Nawet jeśli kopiowanie może działać z różnymi wersjami, zaleca się korzystanie z tych samych wersji.
 - Zawartość źródłowej bazy danych nie może przekraczać rozmiaru docelowej bazy danych.
 
-### Identyfikacja źródłowej bazy danych
+### Kopiuj zawartość bazy danych
 
-Funkcja ta jest dostępna do skopiowania: 
+Funkcja ta jest dostępna do skopiowania:
 
 - bazy danych [Start SQL](/links/web/hosting-options-startsql) (zawartej w niektórych naszych [hostingach www](/links/web/hosting) lub [zamówionej oddzielnie](/links/web/hosting-options-startsql));
-- bazy danych zainstalowanej na serwerze [Web Cloud Databases](/links/web/databases) (zawartej w ofercie [Hosting Performance](/links/web/hosting-performance-offer) lub [zamówionej oddzielnie](/links/web/databases)). 
+- bazy danych zainstalowanej na serwerze [Web Cloud Databases](/links/web/databases) (zawartej w ofercie [Hosting Performance](/links/web/hosting-performance-offer) lub [zamówionej oddzielnie](/links/web/databases)).
 
 W zależności od Twojego przypadku ścieżka dostępu do źródłowej bazy danych jest inna.
 
-#### Baza danych Start SQL
+**Kliknij na odpowiednią sytuację, aby wyświetlić zawartość.**
 
-Kliknij poniższe zakładki, aby wyświetlić kolejno poszczególne **4** etapy.
+<!-- CP-STEPS-START:copy-from-startsql -->
+/// details | Z bazy danych Start SQL
+
+Kliknij poniższe zakładki, aby wyświetlić kolejne **6** kroków.
 
 > [!tabs]
-> **Etap 1**
+> **Krok 1**
 >>
->> Zaloguj się do [Panelu klienta OVHcloud](/links/manager) i przejdź do sekcji `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Etap 2**
->>
->> Kliknij menu `Hosting`{.action}, następnie wybierz odpowiedni hosting.
+>> Przejdź na stronę [Hosting](/links/control-panel/web-hosting), następnie wybierz odpowiedni hosting.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Etap 3**
+> **Krok 2**
 >>
->> Na stronie, która się wyświetli kliknij zakładkę `Bazy danych`{.action}.
->>
->> ![Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases.png){.thumbnail}
->>
-> **Etap 4**
->>
->> Wyświetli się lista baz danych Start SQL.
+>> Kliknij zakładkę `Bazy danych`{.action}. Tabela zawiera listę baz danych utworzonych na Twoim hostingu.
 >>
 >> ![Lista baz danych Start SQL](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/sharedsql-dashboard-db-list.png){.thumbnail}
+>>
+> **Krok 3**
+>>
+>> Kliknij przycisk `...`{.action} po prawej stronie wiersza odpowiadającego bazie danych, której zawartość chcesz skopiować, a następnie wybierz `Kopiuj bazę danych`{.action}.
+>>
+>> ![CTA_copier_BDD](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/databases/copy-db-tool.png){.thumbnail}
+>>
+> **Krok 4**
+>>
+>> Wyświetli się okno, w którym wybierzesz docelową bazę danych.
+>>
+>> ![Interfejs kopiowania bazy danych](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/copy-db-tool-step-1.png){.thumbnail}
+>>
+>> > [!primary]
+>> >
+>> > Jeśli nie posiadasz docelowej bazy danych, kliknij link w oknie, aby kupić nową bazę danych. Pamiętaj o jej aktywacji:
+>> >
+>> > - W przypadku bazy danych Shared SQL: zapoznaj się z przewodnikiem "[Tworzenie bazy danych na hostingu WWW OVHcloud](/pages/web_cloud/web_hosting/sql_create_database)".
+>> > - W przypadku bazy danych na serwerze Web Cloud Databases: zapoznaj się z naszym przewodnikiem "[Tworzenie bazy danych na serwerze Web Cloud Databases](/pages/web_cloud/web_cloud_databases/create-db-and-user-on-db-server)".
+>>
+>> - **Wybór 1 - Skopiuj do bazy danych Start SQL**: wybierz `Skopiuj do bazy danych`{.action}, a następnie wybierz docelową bazę danych z listy rozwijanej.
+>> - **Wybór 2 - Skopiuj do serwera Web Cloud Databases**: wybierz `Skopiuj do Web Cloud Databases`{.action}. Pojawią się dwie listy rozwijane. Kliknij pierwszą, aby wybrać ofertę Web Cloud Databases, a następnie drugą, aby wybrać docelową bazę danych.
+>>
+> **Krok 5**
+>>
+>> Kliknij przycisk `Dalej`{.action}. Pojawi się następujący komunikat potwierdzający:
+>>
+>> ![Wiadomość potwierdzająca skopiuj bazy danych](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/copy-db-tool-step-2.png){.thumbnail}
+>>
+>> Jeśli nie chcesz nadpisywać wybranej docelowej bazy danych, kliknij przycisk `Wstecz`{.action}, aby zmienić wybór lub kliknij przycisk `Anuluj`{.action}, aby anulować wszystkie operacje. W przeciwnym razie kliknij przycisk `Zatwierdź`{.action}, aby potwierdzić duplikowanie.
+>>
+> **Krok 6**
+>>
+>> Kopiowanie bazy danych może potrwać kilka minut. W zakładce `Zadania w toku`{.action} pojawi się nowy wiersz odpowiadający kopii ze statusem "Zaplanowany". Po jej zakończeniu wiersz znika.
+>>
+>> ![Zadania w trakcie](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/copy-db-tool-ongoing-tasks.png){.thumbnail}
 
-#### Web Cloud Databases
+///
+<!-- CP-STEPS-END:copy-from-startsql -->
 
-Kliknij poniższe zakładki, aby wyświetlić kolejno poszczególne **3** etapy.
+<!-- CP-STEPS-START:copy-from-wcdb -->
+/// details | Z serwera Web Cloud Databases
+
+Kliknij poniższe zakładki, aby wyświetlić kolejne **6** kroków.
 
 > [!tabs]
-> **Etap 1**
+> **Krok 1**
 >>
->> Zaloguj się do [Panelu klienta OVHcloud](/links/manager) i przejdź do sekcji `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Etap 2**
->>
->> Kliknij menu `Web Cloud Databases`{.action}, następnie wybierz odpowiednie rozwiązanie Web Cloud Databases.
+>> Przejdź na stronę [Web Cloud Databases](/links/control-panel/web-cloud-databases), następnie wybierz odpowiednie rozwiązanie.
 >>
 >> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases.png){.thumbnail}
 >>
-> **Etap 3**
+> **Krok 2**
 >>
->> Po kliknięciu na zakładkę `Bazy danych`{.action} wyświetli się lista baz danych obecnych na Twoim serwerze Web Cloud Databases.
+>> Kliknij zakładkę `Bazy danych`{.action}. Wyświetli się lista baz danych obecnych na Twoim serwerze Web Cloud Databases.
 >>
 >> ![Lista baz danych WCD](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/databases/wcdb-dashboard-db-list.png){.thumbnail}
+>>
+> **Krok 3**
+>>
+>> Kliknij przycisk `...`{.action} po prawej stronie wiersza odpowiadającego bazie danych, której zawartość chcesz skopiować, a następnie wybierz `Kopiuj bazę danych`{.action}.
+>>
+>> ![CTA_copier_BDD](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/databases/copy-db-tool.png){.thumbnail}
+>>
+> **Krok 4**
+>>
+>> Wyświetli się okno, w którym wybierzesz docelową bazę danych.
+>>
+>> ![Interfejs kopiowania bazy danych](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/copy-db-tool-step-1.png){.thumbnail}
+>>
+>> > [!primary]
+>> >
+>> > Jeśli nie posiadasz docelowej bazy danych, kliknij link w oknie, aby kupić nową bazę danych. Pamiętaj o jej aktywacji:
+>> >
+>> > - W przypadku bazy danych Shared SQL: zapoznaj się z przewodnikiem "[Tworzenie bazy danych na hostingu WWW OVHcloud](/pages/web_cloud/web_hosting/sql_create_database)".
+>> > - W przypadku bazy danych na serwerze Web Cloud Databases: zapoznaj się z naszym przewodnikiem "[Tworzenie bazy danych na serwerze Web Cloud Databases](/pages/web_cloud/web_cloud_databases/create-db-and-user-on-db-server)".
+>>
+>> - **Wybór 1 - Skopiuj do bazy danych Start SQL**: wybierz `Skopiuj do bazy danych`{.action}, a następnie wybierz docelową bazę danych z listy rozwijanej.
+>> - **Wybór 2 - Skopiuj do serwera Web Cloud Databases**: wybierz `Skopiuj do Web Cloud Databases`{.action}. Pojawią się dwie listy rozwijane. Kliknij pierwszą, aby wybrać ofertę Web Cloud Databases, a następnie drugą, aby wybrać docelową bazę danych.
+>>
+> **Krok 5**
+>>
+>> Kliknij przycisk `Dalej`{.action}. Pojawi się następujący komunikat potwierdzający:
+>>
+>> ![Wiadomość potwierdzająca skopiuj bazy danych](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/copy-db-tool-step-2.png){.thumbnail}
+>>
+>> Jeśli nie chcesz nadpisywać wybranej docelowej bazy danych, kliknij przycisk `Wstecz`{.action}, aby zmienić wybór lub kliknij przycisk `Anuluj`{.action}, aby anulować wszystkie operacje. W przeciwnym razie kliknij przycisk `Zatwierdź`{.action}, aby potwierdzić duplikowanie.
+>>
+> **Krok 6**
+>>
+>> Kopiowanie bazy danych może potrwać kilka minut. W zakładce `Zadania w toku`{.action} pojawi się nowy wiersz odpowiadający kopii ze statusem "Zaplanowany". Po jej zakończeniu wiersz znika.
+>>
+>> ![Zadania w trakcie](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/copy-db-tool-ongoing-tasks.png){.thumbnail}
 
-### Kopiuj zawartość bazy danych
-
-W zakładce `Bazy danych`{.action} i bez względu na ofertę, kliknij przycisk `...`{.action} po prawej stronie wiersza odpowiadającego bazie danych, której zawartość chcesz skopiować, a następnie wybierz `Kopiuj bazę danych`{.action}.
-
-![CTA_copier_BDD](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/databases/copy-db-tool.png){.thumbnail}
-
-Wyświetli się okno, w którym zidentyfikujesz docelową bazę danych.
-
-![Interfejs kopiowania bazy danych](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/copy-db-tool-step-1.png){.thumbnail}
-
-Jeśli nie posiadasz docelowej bazy danych i jak pokazuje poniższy zrzut ekranu, kliknij poniższe łącze, aby kupić nową bazę danych:
-
-![Lista baz danych WCD](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/copy-db-tool-link-to-buy-db.png){.thumbnail}
-
-Możesz wybrać zakup usługi "[start SQL](/links/web/hosting-options-startsql)" lub serwera baz danych "[Web Cloud Databases](/links/web/databases)".
-
-> [!primary]
->
-> Gdy kupujesz nową bazę danych, nie jest ona włączona domyślnie. Nie zapomnij go aktywować. W tym celu zaloguj się do [Panelu klienta OVHcloud](/links/manager), a następnie przejdź do sekcji `Web Cloud`{.action}.
-> 
-> - W przypadku bazy danych "Shared SQL": zapoznaj się z przewodnikiem "[Tworzenie bazy danych na hostingu WWW OVHcloud](/pages/web_cloud/web_hosting/sql_create_database)";
-> - W przypadku bazy danych, która będzie dostępna na serwerze "Web Cloud Databases": zapoznaj się z naszym przewodnikiem "[Tworzenie bazy danych na serwerze Web Cloud Databases](/pages/web_cloud/web_cloud_databases/create-db-and-user-on-db-server)".
->
-
-Jeśli posiadasz już docelową bazę danych, najpierw wybierz jej typ:
-
-- `Skopiuj do bazy danych`{.action} : jeśli chcesz skopiować zawartość ze źródłowej bazy danych do bazy danych **Start SQL** (docelowa).
-- `Skopiuj do Web Cloud Databases`{.action} : jeśli chcesz skopiować zawartość źródłowej bazy danych do bazy danych **Web Cloud Databas** (docelowa).
-
-#### Wybór 1 - Skopiuj do bazy danych Start SQL
-
-Właśnie wybrałeś `Skopiuj do bazy danych`{.action}. Pojawią się dwie listy rozwijane. Kliknij pierwszy z nich, a następnie wybierz hosting, na którym znajduje się docelowa baza danych Start SQL. Po wybraniu hostingu kliknij drugą listę rozwijaną, aby wybrać docelową bazę danych Start SQL.
-
-Kliknij przycisk `Dalej`{.action}. Pojawi się następujący komunikat potwierdzający:
-
-![Wiadomość potwierdzająca skopiuj bazy danych](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/copy-db-tool-step-2.png){.thumbnail}
-
-Jeśli nie chcesz nadpisywać wybranej docelowej bazy danych, kliknij przycisk `Wstecz`{.action}, aby zmienić wybór lub kliknij przycisk `Anuluj`{.action}, aby anulować wszystkie operacje. W przeciwnym razie kliknij przycisk `Zatwierdź`{.action}, aby potwierdzić duplikowanie zawartości źródłowej bazy danych do docelowej bazy danych.
-
-Pojawi się następujący komunikat potwierdzający:
-
-![Wiadomość o sukcesie bazy danych](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/copy-db-tool-copied-successfull.png){.thumbnail}
-
-Kopiowanie bazy danych może potrwać kilka minut. Aby upewnić się, że kopia została utworzona, przejdź do zakładki `Zadania w trakcie`{.action}. W tabeli pojawi się nowy wiersz odpowiadający kopii ze statusem "Zaplanowany". Po jej zakończeniu linia znika.
-
-![Zadania w trakcie](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/copy-db-tool-ongoing-tasks.png){.thumbnail}
-
-#### Wybór 2 - Kopiuj do bazy danych dostępnej na serwerze Web Cloud Databases
-
-Właśnie wybrałeś `Skopiuj do Web Cloud Databases`{.action}. Pojawią się dwie listy rozwijane. Kliknij pierwszą pozycję, a następnie wybierz ofertę Web Cloud Databases, na której znajduje się docelowa baza danych. Po wybraniu oferty Web Cloud Databases kliknij drugą rozwijaną listę, aby wybrać docelową bazę danych na Twoim serwerze Web Cloud Databases.
-
-Kliknij przycisk `Dalej`{.action}. Pojawi się następujący komunikat potwierdzający:
-
-![Wiadomość potwierdzająca skopiuj bazy danych](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/copy-db-tool-step-2.png){.thumbnail}
-
-Jeśli nie chcesz nadpisywać wybranej docelowej bazy danych, kliknij przycisk `Wstecz`{.action}, aby zmienić wybór lub kliknij przycisk `Anuluj`{.action}, aby anulować wszystkie operacje. W przeciwnym razie kliknij przycisk `Zatwierdź`{.action}, aby potwierdzić duplikowanie zawartości źródłowej bazy danych do docelowej bazy danych.
-
-Kopiowanie bazy danych może potrwać kilka minut. Aby upewnić się, że kopia została utworzona, przejdź do zakładki `Zadania w trakcie`{.action}. W tabeli pojawi się nowy wiersz odpowiadający kopii ze statusem "Zaplanowany". Po jej zakończeniu linia znika.
-
-![Zadania w trakcie](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/copy-db-tool-ongoing-tasks.png){.thumbnail}
+///
+<!-- CP-STEPS-END:copy-from-wcdb -->
 
 ### Konfiguracja strony WWW z nową bazą danych
 
 Jeśli chcesz użyć nowej bazy danych, po skopiowaniu źródłowej bazy danych wykonaj ostatnią czynność.
 
-W zakładce `Zadania w trakcie`{.action} upewnij się, że kopia została ukończona (wiersz odpowiadający kopii zniknął).
+W zakładce `Zadania w toku`{.action} upewnij się, że kopia została ukończona (wiersz odpowiadający kopii zniknął).
 
-Aby połączyć nową bazę danych ze stroną WWW, edytuj plik konfiguracyjny **C**ontent **M**mnagement **S**ystem (**CMS**) i wprowadź informacje dotyczące połączenia z nową bazą danych.
+Aby połączyć nową bazę danych ze stroną WWW, edytuj plik konfiguracyjny **C**ontent **M**anagement **S**ystem (**CMS**) i wprowadź informacje dotyczące połączenia z nową bazą danych.
 
 > [!warning]
 >
@@ -181,30 +208,40 @@ Aby uzyskać więcej informacji lub skorzystać z innego CMS-a, zapoznaj się z 
 
 Mogą wystąpić problemy podczas procesu kopiowania zawartości bazy danych.
 
-#### Baza danych nie wyświetla się na liście
+**Kliknij na odpowiednią sytuację, aby wyświetlić zawartość.**
+
+/// details | Baza danych nie wyświetla się na liście
 
 To powiadomienie oznacza, że posiadasz tylko jedną aktywną bazę danych. Do skopiowania źródłowej bazy danych potrzebna jest również aktywna docelowa baza danych. W tym celu możesz:
 
-- Skonfiguruj nową bazę danych dostępną na Twoim hostingu;
-- Skonfiguruj nową bazę danych na swoim serwerze [Web Cloud Databases](/links/web/databases);
-- Zamów ofertę "[start SQL](/links/web/hosting-options-startsql)" lub serwer baz danych "[Web Cloud Databases](/links/web/databases)"
+- Skonfigurować nową bazę danych dostępną na Twoim hostingu.
+- Skonfigurować nową bazę danych na swoim serwerze [Web Cloud Databases](/links/web/databases).
+- Zamówić ofertę [start SQL](/links/web/hosting-options-startsql) lub serwer baz danych [Web Cloud Databases](/links/web/databases).
 
-#### Trwa już wykonywanie operacji
+///
 
-Ten komunikat oznacza, że dla Twojej bazy danych trwa już wykonywanie zadania. Przejdź do karty `Zadania w trakcie`{.action} i sprawdź, czy wykonujesz już operację. Jeśli tak jest, poczekaj na jej zakończenie, aby w razie potrzeby przesłać kopię bazy danych ponownie.
+/// details | Trwa już wykonywanie operacji
 
-#### Baza danych docelowa nie zawiera wystarczającej ilości miejsca
+Ten komunikat oznacza, że dla Twojej bazy danych trwa już wykonywanie zadania. Przejdź do karty `Zadania w toku`{.action} i sprawdź, czy wykonujesz już operację. Jeśli tak jest, poczekaj na jej zakończenie, aby w razie potrzeby przesłać kopię bazy danych ponownie.
+
+///
+
+/// details | Baza danych docelowa nie zawiera wystarczającej ilości miejsca
 
 Docelowa baza danych nie zawiera wystarczającej ilości miejsca. Dostępne są dwa rozwiązania:
 
 - Zamów nową bazę danych [start SQL](/links/web/hosting-options-startsql) dysponującą większą przestrzenią.
 - Jeśli posiadasz serwer [Web Cloud Databases](/links/web/databases), zmień ofertę Web Cloud Databases dysponującą większą przestrzenią dyskową.
 
-#### Źródłowa i docelowa baza danych są niezgodne
+///
+
+/// details | Źródłowa i docelowa baza danych są niezgodne
 
 To powiadomienie oznacza, że **D**ata**b**ase **M**anagement **S**ystem (**DBMS**) w źródłowej bazie danych nie jest identyczny z systemem DBMS docelowej bazy danych.
 
 Ten błąd może się pojawić na przykład podczas używania MySQL dla źródłowej bazy danych i PostgreSQL dla docelowej bazy danych.
+
+///
 
 ## Sprawdź również
 
@@ -222,4 +259,4 @@ W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj
 
 Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](/links/support).
 
-Dołącz do [grona naszych użytkowników](/links/community). 
+Dołącz do [grona naszych użytkowników](/links/community).

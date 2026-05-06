@@ -1,16 +1,16 @@
 ---
 title: "Todo sobre los registros DNS"
 excerpt: "Descubra los diferentes tipos de registro DNS disponibles en una zona DNS de OVHcloud"
-updated: 2025-12-19
+updated: 2026-02-19
 ---
 
 ## Objetivo
 
-Las siglas **DNS**, que significan **D**omain **N**ame **S**ystem, son un conjunto de elementos (servidores DNS, zonas DNS, etc.) que permiten asociar un dominio a una dirección IP.
+Las siglas **DNS**, que significan **D**omain **N**ame **S**ystem, son un conjunto de elementos (servidores DNS, zonas DNS, etc.) que permiten asociar un nombre de dominio a una dirección IP.
 
 Le recomendamos que consulte nuestras guías "[Todo sobre los servidores DNS](/pages/web_cloud/domains/dns_server_general_information)" y "[Todo sobre la zona DNS](/pages/web_cloud/domains/dns_zone_general_information)" en este orden.
 
-La zona DNS de un dominio es el archivo de configuración del dominio. Consta de información técnica, denominada "registros DNS"*. La zona DNS es, en cierto modo, un centro de referencia para un dominio.
+La zona DNS de un nombre de dominio es el archivo de configuración del nombre de dominio. Consta de información técnica, denominada "registros DNS"*. La zona DNS es, en cierto modo, un centro de referencia para un nombre de dominio.
 
 Esta guía explica los distintos tipos de registros DNS disponibles en una zona DNS gestionada de OVHcloud. Complementa las siguientes guías:
 
@@ -36,11 +36,11 @@ Seleccione el registro que desee haciendo clic en cada una de las fichas siguien
 > [!tabs]
 > **A**
 >> **A**ddress <br><br>
->> Conecta un dominio a una dirección IPv4 `X.X.X` (donde las `X` son cifras entre `0` y `255`). Por ejemplo, la dirección IPv4 del servidor en el que está alojado el sitio web.
+>> Conecta un nombre de dominio a una dirección IPv4 `X.X.X` (donde las `X` son cifras entre `0` y `255`). Por ejemplo, la dirección IPv4 del servidor en el que está alojado el sitio web.
 >>
 > **AAAA** 
 >> 4 letras **A**, ya que este registro está codificado en cuatro veces más bits que el puntero **A** histórico<br><br>
->> Conecta un dominio a una dirección IPv6. Por ejemplo, la dirección IPv6 del servidor en el que está alojado el sitio web.
+>> Conecta un nombre de dominio a una dirección IPv6. Por ejemplo, la dirección IPv6 del servidor en el que está alojado el sitio web.
 >>
 >> > [!primary]
 >> > Las direcciones IPv6 se están desplegando progresivamente para paliar la falta de direcciones IPv4 debido a la continua expansión de los usos digitales. La codificación en 128 bits de las direcciones IPv6 permite ofrecer un mayor número de direcciones IP.
@@ -50,24 +50,24 @@ Seleccione el registro que desee haciendo clic en cada una de las fichas siguien
 >>
 > **CNAME**
 >> **C**anonical **NAME** <br><br>
->> Utiliza la dirección IP de otro dominio creando un enlace llamado alias. Por ejemplo, si *www.domain.tld* es un alias de *domain.tld*, significa que *www.domain.tld* utilizará la dirección IP de *domain.tld*.
+>> Utiliza la dirección IP de otro nombre de dominio creando un enlace llamado alias. Por ejemplo, si *www.domain.tld* es un alias de *domain.tld*, significa que *www.domain.tld* utilizará la dirección IP de *domain.tld*.
 >>
 >> > [!alert]
 >> >
->> > Un registro TXT que utilice el mismo dominio o subdominio que un registro CNAME perturba el funcionamiento de este último. El registro CNAME solo funcionará parcialmente o en absoluto.
+>> > Un registro TXT que utilice el mismo nombre de dominio o subdominio que un registro CNAME perturba el funcionamiento de este último. El registro CNAME solo funcionará parcialmente o en absoluto.
 >>
 >> > [!warning]
 >> >
->> > Por convenio, los registros CNAME no pueden ser utilizados directamente por un dominio en su propia zona DNS. En efecto, solo el dominio debe apuntar obligatoriamente y directamente a una dirección IP con un registro de tipo A (o AAAA si se trata de una IPv6).
+>> > Por convenio, los registros CNAME no pueden ser utilizados directamente por un nombre de dominio en su propia zona DNS. En efecto, solo el nombre de dominio debe apuntar obligatoriamente y directamente a una dirección IP con un registro de tipo A (o AAAA si se trata de una IPv6).
 >> >
->> > Para seguir el ejemplo anterior, no podrá crear un registro CNAME para el dominio *domain.tld* en la zona DNS que haya creado para este dominio.
+>> > Para seguir el ejemplo anterior, no podrá crear un registro CNAME para el nombre de dominio *domain.tld* en la zona DNS que haya creado para este nombre de dominio.
 >> > No obstante, podrá crear registros CNAME con todos los subdominios (ejemplos: *subdomain.domain.tld* o *www.domain.tld*) del dominio *domain.tld* en la zona DNS creada para *domain.tld*.
 >> >
 >> > Si quiere profundizar más técnicamente en este asunto, puede encontrar, al final de esta página, [un caso especial de uso relativo a los CNAME y las zonas DNS creadas para subdominios](#cnameusecase).
 >>
 > **DNAME**
 >> **D**elegation **NAME** <br><br>
->> Permite generar un "alias" para todos los subdominios de un dominio. Este registro evita crear multitud de registros CNAME. De hecho, un registro CNAME redirige independientemente de un solo subdominio a un único destino.
+>> Permite generar un "alias" para todos los subdominios de un nombre de dominio. Este registro evita crear multitud de registros CNAME. De hecho, un registro CNAME redirige independientemente de un solo subdominio a un único destino.
 >>
 >> Ejemplo: creando un registro DNAME de *domain.tld* a *ovh.com*, todos los subdominios de *domain.tld* (como *dname.domain.tld* y *xxx.domain.tld*) se redirigirán a los subdominios de *ovh.com* (como: *dname.ovh.com* y *xxx.ovh.com*).
 >>
@@ -75,17 +75,17 @@ Seleccione el registro que desee haciendo clic en cada una de las fichas siguien
 >>
 >> > [!warning]
 >> > 
->> > En cambio, *domain.tld* como dominio no mostrará el destino del dominio *ovh.com*, ya que el registro DNAME solo es válido para los subdominios de los dominios definidos en el registro DNAME.
+>> > En cambio, *domain.tld* como nombre de dominio no mostrará el destino del nombre de dominio *ovh.com*, ya que el registro DNAME solo es válido para los subdominios de los nombres de dominio definidos en el registro DNAME.
 >> >
 >> > Además, si el subdominio objetivo *xxx.ovh.com* no apunta a ninguna parte, el registro DNAME tampoco mostrará nada para *xxx.domain.tld*.
 >>
 >> > [!success]
 >> > 
->> > El registro DNAME suele utilizarse para cambiar el nombre de la empresa. También puede configurarse cuando un usuario dispone de varias extensiones de dominios (.es, .net, .com, .info...) para redirigirlos entre sí fácilmente.
+>> > El registro DNAME suele utilizarse para cambiar el nombre de la empresa. También puede configurarse cuando un usuario dispone de varias extensiones de nombres de dominio (.es, .net, .com, .info...) para redirigirlos entre sí fácilmente.
 >> >
 > **NS**
 >> **N**ame **S**erver<br><br>
->> Define los servidores DNS asociados a su zona DNS. Por ejemplo, si los registros NS de su zona DNS muestran los servidores *dnsXX.ovh.net* y *nsXX.ovh.net*, deberá utilizarlos en la pestaña `Servidores DNS`{.action} del área de cliente de OVHcloud. Para más información, consulte nuestra guía "[Cambiar los servidores DNS de un dominio en OVHcloud](/pages/web_cloud/domains/dns_server_edit)".
+>> Define los servidores DNS asociados a su zona DNS. Por ejemplo, si los registros NS de su zona DNS muestran los servidores *dnsXX.ovh.net* y *nsXX.ovh.net*, deberá utilizarlos en la pestaña `Servidores DNS`{.action} del área de cliente de OVHcloud. Para más información, consulte nuestra guía "[Cambiar los servidores DNS de un nombre de dominio en OVHcloud](/pages/web_cloud/domains/dns_server_edit)".
 >>
 >> > [!warning]
 >> >
@@ -99,7 +99,7 @@ Seleccione el registro que desee haciendo clic en cada una de las fichas siguien
 > [!tabs]
 > **MX**
 >> **M**ail e**X**changer <br><br>
->> Conecta un dominio a un servidor de correo. Por ejemplo, la dirección *10 mx1.mail.ovh.net* corresponde a uno de los servidores de correo de OVHcloud cuando usted dispone de una solución de correo de OVHcloud. Es probable que su proveedor de correo disponga de varios servidores de correo: es necesario crear varios registros MX. Consulte nuestra guía [Añadir un registro MX a la configuración del dominio](/pages/web_cloud/domains/dns_zone_mx).
+>> Conecta un nombre de dominio a un servidor de correo. Por ejemplo, la dirección *10 mx1.mail.ovh.net* corresponde a uno de los servidores de correo de OVHcloud cuando usted dispone de una solución de correo de OVHcloud. Es probable que su proveedor de correo disponga de varios servidores de correo: es necesario crear varios registros MX. Consulte nuestra guía [Añadir un registro MX a la configuración del nombre de dominio](/pages/web_cloud/domains/dns_zone_mx).
 >>
 >> > [!warning]
 >> >
@@ -108,9 +108,9 @@ Seleccione el registro que desee haciendo clic en cada una de las fichas siguien
 >>
 > **SPF**
 >> **S**ender **P**olicy **F**ramework <br><br>
->> Permite evitar posibles usurpaciones de identidad en las direcciones de correo electrónico que utilizan su dominio (*spoofing*). Por ejemplo, el registro `v=spf1 include:mx.ovh.com ~all` indica que solo los servidores de envío asociados a su solución de correo de OVHcloud pueden considerarse legítimos por el servidor de recepción. Puede introducir este registro en forma de registro TXT o a través de nuestro sistema de configuración automática.
+>> Permite evitar posibles usurpaciones de identidad en las direcciones de correo electrónico que utilizan su nombre de dominio (*spoofing*). Por ejemplo, el registro `v=spf1 include:mx.ovh.com ~all` indica que solo los servidores de envío asociados a su solución de correo de OVHcloud pueden considerarse legítimos por el servidor de recepción. Puede introducir este registro en forma de registro TXT o a través de nuestro sistema de configuración automática.
 >>
->> Para más información, consulte nuestra guía [Añadir un registro SPF a la configuración del dominio](/pages/web_cloud/domains/dns_zone_spf).
+>> Para más información, consulte nuestra guía [Añadir un registro SPF a la configuración del nombre de dominio](/pages/web_cloud/domains/dns_zone_spf).
 >>
 > **DKIM**
 >> **D**omain**K**eys **I**dentified **M**ail <br><br>
@@ -122,7 +122,7 @@ Seleccione el registro que desee haciendo clic en cada una de las fichas siguien
 >> **D**omain-based **M**essage **A**uthentication, **R**eporting and **C**onformance <br><br>
 >> Contribuye a la autenticación del correo en combinación con los métodos SPF y/o DKIM. Este valor le será dado por su proveedor de correo electrónico (si esta funcionalidad la ofrece este último), estará al menos asociado a un registro SPF o DKIM.
 >>
->> Consulte nuestra documentación "[Configurar un registro DMARC en su dominio](/pages/web_cloud/domains/dns_zone_dmarc)" para más información.
+>> Consulte nuestra documentación "[Configurar un registro DMARC en su nombre de dominio](/pages/web_cloud/domains/dns_zone_dmarc)" para más información.
 
 #### Registros extendidos <a name="extended-records"></a>
 
@@ -131,7 +131,7 @@ Seleccione el registro que desee haciendo clic en cada una de las fichas siguien
 > [!tabs]
 > **TXT**
 >> **T**e**XT** <br><br>
->> Permite añadir el valor que desee en formato de texto a la zona DNS del dominio. Este registro suele utilizarse en procesos de verificación, validación o seguridad.
+>> Permite añadir el valor que desee en formato de texto a la zona DNS del nombre de dominio. Este registro suele utilizarse en procesos de verificación, validación o seguridad.
 >>
 >> > [!warning]
 >> > 
@@ -145,13 +145,13 @@ Seleccione el registro que desee haciendo clic en cada una de las fichas siguien
 >>
 > **CAA**
 >> **C**ertification **A**uthority **A**uthorization <br><br>
->> Permite indicar las autoridades de certificación autorizadas a emitir certificados SSL para un dominio.
+>> Permite indicar las autoridades de certificación autorizadas a emitir certificados SSL para un nombre de dominio.
 >>
 >> > [!warning]
 >> >
->> > Si configura una entrada CAA para un dominio, esta configuración también se aplicará a **todos los subdominios** del mismo dominio.
+>> > Si configura una entrada CAA para un nombre de dominio, esta configuración también se aplicará a **todos los subdominios** del mismo nombre de dominio.
 >> >
->> > Si utiliza un certificado SSL Let's Encrypt con su dominio en un alojamiento compartido de OVHcloud y utiliza un registro CAA, este último impedirá la regeneración del certificado SSL Let's Encrypt.
+>> > Si utiliza un certificado SSL Let's Encrypt con su nombre de dominio en un alojamiento compartido de OVHcloud y utiliza un registro CAA, este último impedirá la regeneración del certificado SSL Let's Encrypt.
 >>
 > **NAPTR**
 >> **N**ame **A**uthority **P**oin**T**e**R** <br><br>
@@ -167,7 +167,7 @@ Seleccione el registro que desee haciendo clic en cada una de las fichas siguien
 >>
 > **TLSA**
 >> **T**ransport **L**ayer **S**ecurity **A**uthentification <br><br>
->> Utilizado para indicar la huella de un certificado SSL/TLS. Permite conservar el *hash* de un certificado directamente en la zona DNS de su dominio a través de un registro DNS.
+>> Utilizado para indicar la huella de un certificado SSL/TLS. Permite conservar el *hash* de un certificado directamente en la zona DNS de su nombre de dominio a través de un registro DNS.
 >>
 >> Este registro se utiliza en el marco del protocolo **D**NS-based **A**uthentication of **N**amed **E**ntities (DANE).
 >>
@@ -202,12 +202,27 @@ Seleccione el registro que desee haciendo clic en cada una de las fichas siguien
 >> - **Modo Servicio**: este modo se activa cuando especifica una prioridad distinta de 0. Es en este modo donde podrá definir los parámetros que desee aplicar a su nombre de dominio (ejemplos de parámetros: *apln="h2,h3"*, *ipv4hint="203.0.113.0"*, *ipv6hint="2001:db8:1:1b00:203:0:113:0"*, *port="XXXX"*, etc.). En modo **Servicio**, puede aplicar estos parámetros directamente a su nombre de dominio, incluso si este no se utiliza como alias de otro nombre de dominio.
 >>
 >> Si es necesario, puede encontrar más detalles en el sitio web de la [**I**nternet **E**ngineering **T**ask **F**orce (**IETF**)](https://datatracker.ietf.org/doc/html/rfc9460) (EN).
+>>
+>> > [!success]
+>> >
+>> > A continuación, puede encontrar un ejemplo práctico de configuración de un alias (apex) mediante un registro DNS de tipo HTTPS:
+>> >
+>> > El sitio web **domain.tld** está alojado detrás de una infraestructura CDN (por ejemplo: **cdn.provider.tld**).
+>> > Gracias al registro DNS de tipo HTTPS, el nombre de dominio **domain.tld** puede indicar directamente a los navegadores compatibles que el servicio HTTPS debe resolverse en el proveedor del CDN **cdn.provider.tld**. Esto sin redirecciones ni gestión manual de direcciones IP.
+>> >
+>> > Para ello, el registro DNS de tipo HTTPS debe indicar:
+>> >
+>> > - En prioridad: *0*.
+>> > - En destino: *cdn.provider.tld*.
+>> > - En ajustes: **Deje el campo vacío**.
+>> >
+>> > De esta manera, será la resolución de **cdn.provider.tld** la que indique los parámetros a utilizar para **domain.tld**.
 
 #### Caso particular de uso: el uso de los registros CNAME <a name="cnameusecase"></a>
 
-Algunos usuarios crean zonas DNS directamente para el subdominio de un dominio (por ejemplo, *subdomain-with-its-own-DNS-zone.domain.tld*). En este caso, también se aplica la regla anterior en la pestaña "CNAME" de la sección "[Registros de punteo](#pointer-records)".
+Algunos usuarios crean zonas DNS directamente para el subdominio de un nombre de dominio (por ejemplo, *subdomain-with-its-own-DNS-zone.domain.tld*). En este caso, también se aplica la regla anterior en la pestaña "CNAME" de la sección "[Registros de punteo](#pointer-records)".
 
-La zona DNS está creada para el subdominio (en nuestro ejemplo, *subdomain-with-its-own-DNS-zone.domain.tld*), por lo que este último está considerado como un dominio de pleno derecho en su zona DNS.
+La zona DNS está creada para el subdominio (en nuestro ejemplo, *subdomain-with-its-own-DNS-zone.domain.tld*), por lo que este último está considerado como un nombre de dominio de pleno derecho en su zona DNS.
 
 Así pues, en este caso concreto no podrá crear un registro CNAME para un *subdomain-with-its-own-DNS-zone.domain.tld* en la zona DNS que haya creado para dicho subdominio. No obstante, puede crear registros CNAME como *subdomain.subdomain-with-its-own-DNS-zone.domain.tld* o *xxx.subdomain-with-its-own-DNS-zone.domain.tld*.
 
@@ -217,9 +232,9 @@ Así pues, en este caso concreto no podrá crear un registro CNAME para un *subd
 
 [Todo sobre la zona DNS](/pages/web_cloud/domains/dns_zone_general_information)
 
-[Añadir un registro SPF a la configuración del dominio](/pages/web_cloud/domains/dns_zone_spf)
+[Añadir un registro SPF a la configuración del nombre de dominio](/pages/web_cloud/domains/dns_zone_spf)
 
-[Proteja su dominio contra el "cache poisoning" con el servicio DNSSEC](/pages/web_cloud/domains/dns_dnssec)
+[Proteja su nombre de dominio contra el "cache poisoning" con el servicio DNSSEC](/pages/web_cloud/domains/dns_dnssec)
 
 Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](/links/partner).
  

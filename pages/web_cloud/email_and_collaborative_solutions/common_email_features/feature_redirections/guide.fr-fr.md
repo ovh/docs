@@ -1,7 +1,7 @@
 ---
 title: "Utiliser les alias et redirections e-mail"
 excerpt: "Découvrez comment gérer vos alias et redirections e-mail"
-updated: 2025-06-03
+updated: 2026-03-31
 ---
 
 <style>
@@ -72,12 +72,45 @@ Cliquez sur les onglets suivants pour des explications illustrées sur le foncti
 
 ## Prérequis
 
-- Être connecté à votre [espace client OVHcloud](/links/manager).
-- Disposer d'une solution e-mail OVHcloud préalablement configurée, parmi les suivantes :
+- Disposer d’une solution e-mail OVHcloud préalablement configurée, parmi les suivantes :
     - **MX Plan** proposée avec nos [offres d’hébergement web](/links/web/hosting) ou incluse dans un [hébergement gratuit 100M](/links/web/domains-free-hosting).
-    - [Exchange](/links/web/emails).
+    - [Exchange](/links/web/emails-exchange).
     - [Email Pro](/links/web/email-pro).
     - [Zimbra](/links/web/emails-zimbra).
+
+<!-- CP-NAV-START:web-mx-plan -->
+<!-- CP-NAV-START:web-zimbra -->
+<!-- CP-NAV-START:web-email-pro -->
+<!-- CP-NAV-START:web-exchange -->
+---
+
+### Accès à l’espace client OVHcloud
+
+**MX Plan :**
+
+- **Lien direct :** [MX Plan](/links/control-panel/web-mx-plan)
+- **Pour accéder à vos services :** `Web Cloud`{.action} > `MX Plan`{.action} > Sélectionnez votre service MX Plan
+
+**Zimbra :**
+
+- **Lien direct :** [Zimbra](/links/control-panel/web-zimbra)
+- **Pour accéder à vos services :** `Web Cloud`{.action} > `Zimbra Mail`{.action}
+
+**Email Pro :**
+
+- **Lien direct :** [Email Pro](/links/control-panel/web-email-pro)
+- **Pour accéder à vos services :** `Web Cloud`{.action} > `Email Pro`{.action} > Sélectionnez votre plateforme
+
+**Exchange :**
+
+- **Lien direct :** [Exchange](/links/control-panel/web-exchange)
+- **Pour accéder à vos services :** `Web Cloud`{.action} > `Exchange`{.action} > Sélectionnez votre plateforme
+
+---
+<!-- CP-NAV-END:web-exchange -->
+<!-- CP-NAV-END:web-email-pro -->
+<!-- CP-NAV-END:web-zimbra -->
+<!-- CP-NAV-END:web-mx-plan -->
 
 ## En pratique
 
@@ -95,12 +128,7 @@ Ce guide concerne l'ensemble de nos offres e-mail. En fonction de l'offre, la ge
 >
 > La technologie e-mail de votre offre MX Plan peut varier selon la date d’activation de votre offre ou si une migration a récemment eu lieu. Cette technologie se distingue notamment par l’interface de son webmail. Pour l'identifier depuis votre espace client, suivez ce cheminement :
 >
-> 1. Connectez-vous à votre [espace client OVHcloud](/links/manager).
-> 1. Rendez-vous dans la partie `Web Cloud`{.action}.
-> 1. Cliquez sur `MX Plan`{.action}.
-> 1. Sélectionnez le domaine concerné.
-> 1. L'onglet `Informations Générales`{.action} est sélectionné par défaut.
-> 1. Relevez la technologie utilisée sous la mention **Webmail** dans l'encadré `Abonnement`.
+> Depuis votre service MX Plan, dans l'onglet `Informations Générales`{.action}, relevez la technologie utilisée sous la mention **Webmail** dans l'encadré `Abonnement`.
 >
 > ![MX plan](images/technology-email.png){.thumbnail .w-640}
 >
@@ -118,11 +146,11 @@ Ce guide concerne l'ensemble de nos offres e-mail. En fonction de l'offre, la ge
     - [Outlook Web App (OWA)](#redirect-delete-owa)
     - [Zimbra](#redirect-delete-zimbra)
 - [Créer un alias](#alias)
-    - [Exchange / E-mail Pro / MX Plan](#alias-exchange-emp-mxplan)
+    - [Exchange / Email Pro / MX Plan](#alias-exchange-emp-mxplan)
     - [MX Plan Roundcube](#alias-mxplan-roundcube)
     - [Zimbra](#alias-mxplan-roundcube)
 - [Supprimer un alias](#alias-delete)
-    - [Exchange / E-mail Pro / MX Plan](#alias-delete-exchange-emp-mxplan)
+    - [Exchange / Email Pro / MX Plan](#alias-delete-exchange-emp-mxplan)
     - [MX Plan Roundcube](#alias-delete-mxplan-roundcube)
     - [Zimbra](#alias-delete-zimbra)
 
@@ -134,10 +162,7 @@ Actuellement, seules les offres **MX plan** et **Redirect** disposent d'une inte
 
 ##### MX Plan / redirect <a name="redirect-manager-mxplan"></a>
 
-1. Connectez-vous à votre [espace client OVHcloud](/links/manager).
-1. Rendez-vous dans la partie `Web Cloud`{.action}.
-1. Cliquez sur `MX Plan`{.action}.
-1. Sélectionnez le domaine concerné.
+Depuis votre service MX Plan, sélectionnez le domaine concerné.
 
 Dans notre exemple, il s'agit d'une **redirection avec copie locale** (voir le [schéma 2](#diagram) au début de ce guide). Si cela correspond à votre besoin, suivez les étapes ci-dessous en cliquant sur l'onglet correspondant à la technologie webmail utilisée par votre MX Plan :
 
@@ -210,10 +235,10 @@ La création d'une redirection se fait par le biais de règles de boîte de réc
 >
 > - **MX Plan OWA**.
 > - **Exchange**.
-> - **E-mail Pro**.
+> - **Email Pro**.
 >
 
-Outlook Web App est une interface utilisée pour nos offres **Exchange**, **E-mail Pro** et une partie des comptes **MX Plan**.
+Outlook Web App est une interface utilisée pour nos offres **Exchange**, **Email Pro** et une partie des comptes **MX Plan**.
 
 Parcourez les onglets ci-dessous pour mettre en place votre redirection via Outlook Web App :
 
@@ -319,10 +344,7 @@ Pour plus de détails sur l'utilisation du webmail Zimbra, consultez notre guide
 
 ##### MX Plan via espace client <a name="redirect-delete-mxplan"></a>
 
-1. Connectez-vous à votre [espace client OVHcloud](/links/manager).
-1. Rendez-vous dans la partie `Web Cloud`{.action}.
-1. Cliquez sur `MX Plan`{.action}.
-1. Sélectionnez le domaine concerné.
+Depuis votre service MX Plan, sélectionnez le domaine concerné.
 
 Sélectionnez, ci-dessous, l'onglet correspondant à la technologie e-mail utilisée par votre service MX Plan :
 
@@ -401,15 +423,9 @@ Rendez-vous sur le [webmail](/links/web/email). Saisissez **l'adresse e-mail** e
 
 Créer un alias pour votre adresse e-mail vous permet de communiquer une adresse « masque » à vos contacts, sans avoir à communiquer votre adresse e-mail personnelle à l'expéditeur. 
 
-#### Exchange / E-mail Pro / MX Plan <a name="alias-exchange-emp-mxplan"></a>
+#### Exchange / Email Pro / MX Plan <a name="alias-exchange-emp-mxplan"></a>
 
-Connectez-vous à votre [espace client OVHcloud](/links/manager) et dirigez-vous dans la section `Web Cloud`. Choisissez ensuite le menu en fonction de votre offre e-mail :
-
-- **Exchange** : Rendez-vous dans la section `Microsoft`{.action}, cliquez sur `Exchange`{.action} et sélectionnez la plateforme concernée. Cliquez sur l'onglet `Comptes e-mail`{.action}.
-
-- **E-mail Pro** : Rendez-vous dans la section `E-mail Pro`{.action}, sélectionnez la plateforme concernée puis cliquez sur l'onglet `Comptes e-mail`{.action}.
-
-- **MX Plan** : Rendez-vous dans la section `MX Plan`{.action}, sélectionnez la plateforme concernée puis cliquez sur l'onglet `Comptes e-mail`{.action}.
+Depuis votre service e-mail (Exchange, Email Pro ou MX Plan), cliquez sur l'onglet `Comptes e-mail`{.action}.
 
 Pour ajouter un alias à votre compte e-mail, suivez les étapes décrites en cliquant successivement sur chaque onglet ci-dessous :
 
@@ -438,10 +454,7 @@ Pour créer un alias sur un compte email MX Plan Roundcube, vous devez le faire 
 
 #### Zimbra <a name="alias-mxplan-roundcube"></a>
 
-1. Connectez-vous à votre [espace client OVHcloud](/links/manager).
-1. Rendez-vous dans la partie `Web Cloud`{.action}.
-1. Cliquez sur `Zimbra Mail`{.action}.
-1. Cliquez sur l'onglet `Comptes e-mail`{.action} de votre service Zimbra.
+Depuis votre service Zimbra, cliquez sur l'onglet `Comptes e-mail`{.action}.
 
 > [!tabs]
 > **Étape 1**
@@ -472,15 +485,9 @@ Pour créer un alias sur un compte email MX Plan Roundcube, vous devez le faire 
 
 ### Supprimer un alias <a name="alias-delete"></a>
 
-#### Exchange / E-mail Pro / MX Plan <a name="alias-delete-exchange-emp-mxplan"></a>
+#### Exchange / Email Pro / MX Plan <a name="alias-delete-exchange-emp-mxplan"></a>
 
-Connectez-vous à votre [espace client OVHcloud](/links/manager) et dirigez-vous dans la section `Web Cloud`. Choisissez ensuite le menu en fonction de votre offre e-mail :
-
-- **Exchange** : Rendez-vous dans la section `Microsoft`{.action}, cliquez sur `Exchange`{.action} et sélectionnez la plateforme concernée. Cliquez sur l'onglet `Comptes e-mail`{.action}.
-
-- **E-mail Pro** : Rendez-vous dans la section `E-mail Pro`{.action}, sélectionnez la plateforme concernée puis cliquez sur l'onglet `Comptes e-mail`{.action}.
-
-- **MX Plan** : Rendez-vous dans la section `MX Plan`{.action}, sélectionnez la plateforme concernée puis cliquez sur l'onglet `Comptes e-mail`{.action}.
+Depuis votre service e-mail (Exchange, Email Pro ou MX Plan), cliquez sur l'onglet `Comptes e-mail`{.action}.
 
 Depuis l'onglet `Comptes e-mail`{.action}, cliquez sur le bouton `...`{.action} à droite de l'adresse e-mail concernée. Cliquez ensuite sur `Configurer les alias`{.action} (ou `Gérer les alias`{.action}).
 
@@ -505,10 +512,7 @@ Cliquez sur le bouton `...`{.action} à droite de la redirection concernée puis
 
 #### Zimbra <a name="alias-delete-zimbra"></a>
 
-1. Connectez-vous à votre [espace client OVHcloud](/links/manager).
-1. Rendez-vous dans la partie `Web Cloud`{.action}.
-1. Cliquez sur `Zimbra Mail`{.action}.
-1. Cliquez sur l'onglet `Comptes e-mail`{.action} de votre service Zimbra.
+Depuis votre service Zimbra, cliquez sur l'onglet `Comptes e-mail`{.action}.
 
 > [!tabs]
 > **Étape 1**
@@ -539,7 +543,7 @@ Cliquez sur le bouton `...`{.action} à droite de la redirection concernée puis
 
 [Premiers pas avec le service Private Exchange](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_starting_private)
 
-[Premiers pas avec la solution E-mail Pro](/pages/web_cloud/email_and_collaborative_solutions/email_pro/first_config)
+[Premiers pas avec la solution Email Pro](/pages/web_cloud/email_and_collaborative_solutions/email_pro/first_config)
 
 [Premiers pas avec l'offre Zimbra](/pages/web_cloud/email_and_collaborative_solutions/zimbra/getting_started_zimbra)
 

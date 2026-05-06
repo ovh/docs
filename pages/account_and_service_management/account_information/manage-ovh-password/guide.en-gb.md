@@ -15,6 +15,17 @@ Your OVHcloud Control Panel password is required to access all of your services 
 - an active OVHcloud account
 - your NIC handle and/or email address
 
+<!-- CP-NAV-START:account-security -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Account security](/links/control-panel/account-security)
+- **Navigation path:** Click your name in the top right > `Access my account`{.action} > `Security`{.action}
+
+---
+<!-- CP-NAV-END:account-security -->
+
 ## Instructions
 
 ### Generate a strong password
@@ -68,9 +79,9 @@ If your password has been compromised, we strongly recommend [changing it as soo
 
 #### Via the OVHcloud Control Panel
 
-- Log in to your [OVHcloud Control Panel](/links/manager), click on your name in the top right-hand corner, then `Access my account`{.action}.
+<!-- CP-STEPS-START:change-password-cp -->
 
-- Next, click `Security`{.action}, then `Edit`{.action} to the right of “Password”.
+- On the [Account security](/links/control-panel/account-security) page, click `Edit`{.action} to the right of “Password”.
 
 ![manage-ovh-password](/pages/assets/screens/control_panel/product-selection/right-column/access-my-account/edit-account-password.png){.thumbnail}
 
@@ -84,9 +95,13 @@ If your password has been compromised, we strongly recommend [changing it as soo
 
 - A message will then pop up, confirming that the password has been changed successfully. Click `Continue`{.action} at the bottom of the pop-up to be redirected to the login page, then enter your NIC handle and new password.
 
+<!-- CP-STEPS-END:change-password-cp -->
+
 <a name="lost-password"></a>
 
 #### If you have forgotten your current password
+
+<!-- CP-STEPS-START:change-password-forgotten -->
 
 - Click `Forgotten your username or password?`{.action} when you load the login page for the OVHcloud Control Panel.
 
@@ -110,6 +125,8 @@ If your password has been compromised, we strongly recommend [changing it as soo
 >
 > When you reset your password, all active sessions for your OVHcloud account will be automatically closed.
 >
+
+<!-- CP-STEPS-END:change-password-forgotten -->
 
 ## Go further
 

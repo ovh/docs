@@ -28,6 +28,17 @@ This guide explains how to enable IAM authentication and control user access to 
 
 - An OVHcloud Managed Rancher Service (see the [Creating, updating and accessing a Managed Rancher Service](/pages/public_cloud/containers_orchestration/managed_rancher_service/create-update-rancher) guide for more information).
 
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Navigation path:** `Public Cloud`{.action} > Select your project
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
+
 ## Instructions
 
 ### Introduction to OVHcloud IAM
@@ -102,7 +113,7 @@ Integrating IAM with your Rancher service ensures consistent access control acro
 >>
 >> - **Via the OVHcloud Control Panel:**
 >>
->> Log in to the [OVHcloud Control Panel](/links/manager), navigate to the `Public Cloud`{.action} section, and select the relevant project. Then, in the left-hand menu under **Containers & Orchestration**, click on `Managed Rancher Service`{.action}.
+>> In the left-hand menu under **Containers & Orchestration**, click on `Managed Rancher Service`{.action}.
 >>
 
 ### Authentication using SSO with OVHcloud IAM users
@@ -174,7 +185,7 @@ OVHcloud IAM provides three predefined roles for managing access to your Managed
 > **ovhRestrictedAdmin** role: OVHcloud Restricted Admins have full control over all resources in downstream clusters but do not have access to the local cluster.
 >
 
-These roles are assigned through IAM policies. To create and configure a policy, log in to the [OVHcloud Control Panel](/links/manager) and navigate to the `Identity, Security & Operations`{.action} section. Then, in the left-hand menu under **Identity and Access management**, click on `Policies`{.action} and click the `Create a policy`{.action} button.
+These roles are assigned through IAM policies. To create and configure a policy, navigate to the `Identity, Security & Operations`{.action} section. Then, in the left-hand menu under **Identity and Access management**, click on `Policies`{.action} and click the `Create a policy`{.action} button.
 
 ![Create policy](images/managing_iam.png){.thumbnail}
 

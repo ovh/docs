@@ -1,6 +1,6 @@
 ---
-title: "Recupero dei database in modalità Rescue"
-excerpt: "Scopri come accedere ai tuoi database e registrarli in modalità Rescue"
+title: "Recuperare database in modalità rescue su un server dedicato"
+excerpt: "Accedi ai tuoi database ed esportali da un server dedicato in modalità rescue per recuperare i dati dopo un incidente."
 updated: 2023-04-13
 ---
 
@@ -17,7 +17,17 @@ La modalità Rescue permette di accedere ai tuoi dati in modo permanente, anche 
 ## Prerequisiti
 
 - Un [server dedicato](/links/bare-metal/bare-metal), un [VPS](/links/bare-metal/vps) o un'istanza [Public Cloud](/links/public-cloud/public-cloud) nel tuo account OVHcloud (Windows escluso)
-- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
+
+<!-- CP-NAV-START:baremetal-dedicated-servers -->
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [Server dedicati](/links/control-panel/baremetal-dedicated-servers)
+- **Percorso di navigazione:** `Bare Metal Cloud`{.action} > `Server dedicati`{.action} > Seleziona il tuo server
+
+---
+<!-- CP-NAV-END:baremetal-dedicated-servers -->
 
 > [!warning]
 >
@@ -261,4 +271,4 @@ root@rescue:/# scp -P SSH_Port_Number dump.sql user@IP_address:/home/backup
 
 ## Per saperne di più
 
-Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.
+Contatta la nostra [Community di utenti](/links/community).

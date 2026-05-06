@@ -1,46 +1,46 @@
 ---
-title: 'Premiers pas avec la solution E-mail Pro'
-excerpt: 'Découvrez comment réaliser la configuration de votre solution E-mail Pro'
+title: 'Premiers pas avec la solution Email Pro'
+excerpt: 'Découvrez comment réaliser la configuration de votre solution Email Pro'
 updated: 2025-04-28
 ---
 
 ## Objectif
 
-Vous venez d’acquérir une solution E-mail Pro. Celle-ci vous permet de bénéficier d'adresses e-mail professionnelles au prix le plus juste pour soutenir ou commencer votre activité.
+Vous venez d’acquérir une solution Email Pro. Celle-ci vous permet de bénéficier d'adresses e-mail professionnelles au prix le plus juste pour soutenir ou commencer votre activité.
 
-**Découvrez comment réaliser la configuration de votre solution E-mail Pro.**
+**Découvrez comment réaliser la configuration de votre solution Email Pro.**
 
 ## Prérequis
 
-- Disposer d'une offre [E-mail Pro](/links/web/email-pro).
-- Avoir reçu l’e-mail vous confirmant l’installation de votre solution E-mail Pro.
-- Disposer d'un nom de domaine.
-- Être connecté à votre [espace client OVHcloud](/links/manager).
+- Disposer d’une offre [Email Pro](/links/web/email-pro).
+- Avoir reçu l’e-mail vous confirmant l’installation de votre solution Email Pro.
+- Disposer d’un nom de domaine.
+
+<!-- CP-NAV-START:web-email-pro -->
+---
+
+### Accès à l’espace client OVHcloud
+
+- **Lien direct :** [Email Pro](/links/control-panel/web-email-pro)
+- **Pour accéder à vos services :** `Web Cloud`{.action} > `Email Pro`{.action} > Sélectionnez votre plateforme
+
+---
+<!-- CP-NAV-END:web-email-pro -->
 
 ## En pratique
 
-### Étape 1 : accéder à la gestion de votre service
-
-Une fois le service E-mail Pro créé et disponible :
-
-1. Connectez-vous à votre [espace client OVHcloud](/links/manager).
-1. Cliquez sur l'onglet `Web Cloud`{.action}.
-1. Cliquez sur `Email Pro`{.action}.
-1. Sélectionnez la plateforme concernée.
+### Étape 1 : ajouter votre nom de domaine
 
 > [!primary]
 >
-> Le nom d'un service E-mail Pro dans votre espace client OVHcloud débute par *emailpro-*, puis contient une partie de votre référence client et se termine par un chiffre (1 pour le premier service E-mail Pro installé, 2 pour le deuxième, etc.).
->
+> Le nom d'un service Email Pro dans votre espace client OVHcloud débute par *emailpro-*, puis contient une partie de votre référence client et se termine par un chiffre (1 pour le premier service Email Pro installé, 2 pour le deuxième, etc.).
 
-### Étape 2 : ajouter votre nom de domaine
-
-Après la commande de votre service E-mail Pro, une fenêtre s'affiche automatiquement vous invitant à `Ajouter un domaine`{.action}. Si cette dernière ne s'affiche pas, rendez-vous sur l'onglet `Domaines associés`{.action} puis cliquez sur le bouton `Ajouter un domaine`{.action}.
+Après la commande de votre service Email Pro, une fenêtre s'affiche automatiquement vous invitant à `Ajouter un domaine`{.action}. Si cette dernière ne s'affiche pas, rendez-vous sur l'onglet `Domaines associés`{.action} puis cliquez sur le bouton `Ajouter un domaine`{.action}.
 
 Deux choix sont possibles :
 
 - **sélectionner un domaine dans la liste** : seuls s'affichent les noms de domaines dont vous avez la gestion dans votre espace client OVHcloud. Si le nom de domaine est enregistré chez OVHcloud mais n'apparait pas dans votre espace client, vous devrez l'ajouter avec l'option « saisir un nom de domaine non géré par votre compte OVHcloud ».
-- **saisir un nom de domaine non géré par votre compte OVHcloud** : choisissez cette option si le nom de domaine concerné est enregistré chez OVHcloud mais configurable depuis un autre compte client OVHcloud, **ou** si votre nom de domaine est enregistré dans un autre bureau d'enregistrement. Vous devrez être en mesure de modifier la configuration du nom de domaine (sa zone DNS) afin que le service E-mail Pro puisse fonctionner correctement.
+- **saisir un nom de domaine non géré par votre compte OVHcloud** : choisissez cette option si le nom de domaine concerné est enregistré chez OVHcloud mais configurable depuis un autre compte client OVHcloud, **ou** si votre nom de domaine est enregistré dans un autre bureau d'enregistrement. Vous devrez être en mesure de modifier la configuration du nom de domaine (sa zone DNS) afin que le service Email Pro puisse fonctionner correctement.
 
 Une fois votre choix fait, cliquez sur le bouton `Suivant`{.action}.
 
@@ -53,13 +53,13 @@ La fenêtre affiche désormais des informations concernant la configuration des 
 - **Si vous avez renseigné un nom de domaine non géré par OVHcloud** : le mode non-autoritatif sera configuré par défaut.
 
 - **Si vous avez sélectionné dans la liste un nom de domaine géré par OVHcloud**, vous devrez choisir entre deux modes.
-    - **Autoritatif** : Convient si votre solution  E-mail Pro est la seule solution de messagerie que vous utilisez avec votre nom de domaine. Il ne permet pas l'usage d'une autre solution de messagerie avec votre service.
-    - **Non-autoritatif** : Convient si vous utilisez, avec votre nom de domaine, la solution E-mail Pro **ainsi qu'une autre solution de messagerie**.
+    - **Autoritatif** : Convient si votre solution  Email Pro est la seule solution de messagerie que vous utilisez avec votre nom de domaine. Il ne permet pas l'usage d'une autre solution de messagerie avec votre service.
+    - **Non-autoritatif** : Convient si vous utilisez, avec votre nom de domaine, la solution Email Pro **ainsi qu'une autre solution de messagerie**.
 
 > **Comprendre les modes Autoritatif et Non-autoritatif**
 >
-> - Lorsqu'un e-mail est transmis vers votre plateforme E-mail Pro (*Inbound mail server Email Pro*) en mode **autoritatif**, cela signifie que toutes les adresses e-mail de votre nom de domaine sont uniquement hébergées sur cette plateforme.<br><br>Par exemple, si on envoie un e-mail à l'adresse « *mary.johnson@mydomain.ovh* », le serveur E-mail Pro « *Inbound mail server Email Pro* » renvoie un message d'échec à l'expéditeur, car cette adresse n'existe pas sur le serveur E-mail Pro « *Inbound mail server Email Pro* ».
-> - Lorsqu'un e-mail est transmis vers votre plateforme E-mail Pro (*Inbound mail server Email Pro*) en mode **non-autoritatif**, cela signifie que les adresses e-mail de votre nom de domaine sont réparties entre votre plateforme e-mail principale (*Inbound mail server Email Pro*) et un autre service e-mail (*Inbound mail server MX Plan*).<br><br>Par exemple, si on envoie un e-mail à l'adresse « *mary.johnson@mydomain.ovh* », le serveur E-mail Pro *Inbound mail server Email Pro* transmettra l'e-mail au serveur MX Plan « *Inbound mail server MX Plan* » pour que ce dernier puisse le délivrer.
+> - Lorsqu'un e-mail est transmis vers votre plateforme Email Pro (*Inbound mail server Email Pro*) en mode **autoritatif**, cela signifie que toutes les adresses e-mail de votre nom de domaine sont uniquement hébergées sur cette plateforme.<br><br>Par exemple, si on envoie un e-mail à l'adresse « *mary.johnson@mydomain.ovh* », le serveur Email Pro « *Inbound mail server Email Pro* » renvoie un message d'échec à l'expéditeur, car cette adresse n'existe pas sur le serveur Email Pro « *Inbound mail server Email Pro* ».
+> - Lorsqu'un e-mail est transmis vers votre plateforme Email Pro (*Inbound mail server Email Pro*) en mode **non-autoritatif**, cela signifie que les adresses e-mail de votre nom de domaine sont réparties entre votre plateforme e-mail principale (*Inbound mail server Email Pro*) et un autre service e-mail (*Inbound mail server MX Plan*).<br><br>Par exemple, si on envoie un e-mail à l'adresse « *mary.johnson@mydomain.ovh* », le serveur Email Pro *Inbound mail server Email Pro* transmettra l'e-mail au serveur MX Plan « *Inbound mail server MX Plan* » pour que ce dernier puisse le délivrer.
 >
 > ![Add Domain](images/authoritative-mode.png){.thumbnail}
 >
@@ -71,7 +71,7 @@ La fenêtre affiche désormais des informations concernant la configuration des 
 Si vous choisissez le mode **non-autoritatif** et que vous utilisez un service :
 
 - **E-mail OVHcloud (Exchange ou MX Plan)**, saisissez directement comme serveur e-mail cible « *mx1.mail.ovh.net* » ( fonctionne de la même façon avec *mx0.mail.ovh.net*, *mx2.mail.ovh.net**, *mx3.mail.ovh.net**, *mx4.mail.ovh.net* ).
-- **Email externe à OVHcloud (offre e-mail concurente, serveur e-mail privé)**, saisissez dans la case serveur e-mail cible le nom d'hôte du serveur entrant de ce service externe en s'assurant que celui-ci autorise les requêtes e-mail provenant de votre service E-mail Pro
+- **Email externe à OVHcloud (offre e-mail concurente, serveur e-mail privé)**, saisissez dans la case serveur e-mail cible le nom d'hôte du serveur entrant de ce service externe en s'assurant que celui-ci autorise les requêtes e-mail provenant de votre service Email Pro
 
 Le choix du mode n'est pas définitif et peut être modifié par la suite depuis l'espace client OVHcloud.
 
@@ -89,7 +89,7 @@ Cliquez sur le bouton `Suivant`{.action} pour poursuivre l'ajout du domaine.
 
 En fin de configuration, vérifiez les informations qui s'affichent puis cliquez sur le bouton `Confirmer`{.action} pour lancer l'ajout du domaine.
 
-### Étape 3 : configurer votre nom de domaine
+### Étape 2 : configurer votre nom de domaine
 
 Une fois le nom de domaine ajouté en tant que domaine associé, vérifiez son paramétrage grâce au tableau qui s'affiche.
 
@@ -106,7 +106,7 @@ La colonne `Diagnostic`{.action} vous permet de contrôler la configuration DNS 
 
 ![emailpro](images/emailpro-04.png){.thumbnail}
 
-### Étape 4 : configurer les comptes E-mail Pro
+### Étape 3 : configurer les comptes Email Pro
 
 Pour configurer vos adresses e-mail, positionnez-vous sur l'onglet `Comptes e-mail`{.action}. Le tableau affiche les comptes que vous avez commandés sous la forme “*@configureme.me*”.
 
@@ -147,7 +147,7 @@ Une fois les informations complétées, cliquez sur le bouton `Suivant`{.action}
 > Réalisez cette étape autant de fois que nécessaire, selon le nombre de comptes à votre disposition. Vous pouvez commander des comptes additionnels grâce au bouton `Commander des comptes`{.action}.
 >
 
-### Étape 5 : utiliser vos adresses e-mail
+### Étape 4 : utiliser vos adresses e-mail
 
 Une fois vos comptes configurés, il ne vous reste plus qu'à les utiliser ! Pour cela, OVHcloud met à disposition un applicatif en ligne (une *webapp*). Ce dernier est accessible à l’adresse [Webmail](/links/web/email) et vous devrez y renseigner les identifiants relatifs à votre adresse e-mail.
 
@@ -159,7 +159,7 @@ Si c'est la première fois que vous vous connectez à OWA avec cette adresse e-m
 >
 > **Exemple** : Pour l'Europe de l'Ouest, il s'agit de UTC +1 (Bruxelles, Copenhague, Madrid, Paris).
 
-Pour configurer votre adresse e-mail sur un logiciel de messagerie ou un appareil, comme un _smartphone_ ou une tablette, [aidez-vous de nos guides de configuration](/products/web-cloud-email-collaborative-solutions-email-pro). Si vous désirez simplement obtenir les éléments nécessaires pour configurer votre compte E-mail Pro, retrouvez ci-dessous les paramètres à utiliser :
+Pour configurer votre adresse e-mail sur un logiciel de messagerie ou un appareil, comme un _smartphone_ ou une tablette, [aidez-vous de nos guides de configuration](/products/web-cloud-email-collaborative-solutions-email-pro). Si vous désirez simplement obtenir les éléments nécessaires pour configurer votre compte Email Pro, retrouvez ci-dessous les paramètres à utiliser :
 
 |Type de serveur|Nom du serveur|Type de sécurité|Port|
 |---|---|---|---|
@@ -168,13 +168,9 @@ Pour configurer votre adresse e-mail sur un logiciel de messagerie ou un apparei
 
 > [!primary]
 >
-> Dans notre exemple, nous utilisons la mention serveur : pro?.mail.ovh.net. Vous devrez remplacer le « ? » par le chiffre désignant le serveur de votre service E-mail Pro.
+> Dans notre exemple, nous utilisons la mention serveur : pro?.mail.ovh.net. Vous devrez remplacer le « ? » par le chiffre désignant le serveur de votre service Email Pro.
 >
-> 1. Connectez-vous à votre [espace client OVHcloud](/links/manager).
-> 1. Rendez-vous dans la partie `Web Cloud`{.action}.
-> 1. Cliquez sur `Email Pro`{.action}.
-> 1. Sélectionnez la plateforme concernée.
-> 1. Le nom du serveur est visible dans le cadre **Connexion** de l'onglet `Informations Générales`{.action}.
+> Le nom du serveur est visible dans le cadre **Connexion** de l'onglet `Informations Générales`{.action} de votre service Email Pro.
 >
 
 ## Aller plus loin
@@ -187,7 +183,7 @@ Pour configurer votre adresse e-mail sur un logiciel de messagerie ou un apparei
 
 [Ajouter un pied de page pour vos comptes e-mail](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/feature_footers)
 
-[Gérer la facturation de vos comptes E-mail Pro](/pages/web_cloud/email_and_collaborative_solutions/email_pro/manage_billing_emailpro)
+[Gérer la facturation de vos comptes Email Pro](/pages/web_cloud/email_and_collaborative_solutions/email_pro/manage_billing_emailpro)
 
 [Gérer la politique de sécurité d’un service e-mail](/pages/web_cloud/email_and_collaborative_solutions/common_email_features/security-policy)
 

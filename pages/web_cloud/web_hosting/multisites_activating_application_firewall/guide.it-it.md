@@ -28,7 +28,17 @@ L'insieme preconfigurato di regole di base, il "Core Rule Set" (CRS) della nostr
 
 - Disporre di un piano di [hosting Web OVHcloud](/links/web/hosting) attivo
 - Disporre di almeno un [dominio](/links/web/domains) associato all'hosting
-- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [Web hosting](/links/control-panel/web-hosting)
+- **Percorso di navigazione:** `Web Cloud`{.action} > `Hosting`{.action} > Seleziona il tuo hosting web
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## Procedura
 

@@ -24,7 +24,17 @@ If your VPS has become unresponsive, you still have the possibility to access it
 ## Requirements
 
 - A [VPS](/links/bare-metal/vps) in your OVHcloud account
-- Access to the [OVHcloud Control Panel](/links/manager)
+
+<!-- CP-NAV-START:baremetal-vps -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [VPS management](/links/control-panel/baremetal-vps)
+- **Navigation path:** `Bare Metal Cloud`{.action} > `Virtual private servers`{.action} > Select your VPS
+
+---
+<!-- CP-NAV-END:baremetal-vps -->
 
 ## Instructions
 
@@ -37,7 +47,7 @@ If you still have access to your VPS via SSH, you can skip to [step 6](#step6).
 
 ### Step 1: Restart the VPS into rescue mode
 
-Log in to the [OVHcloud Control Panel](/links/manager) and initiate a server reboot in rescue mode. Refer to our [rescue mode guide](/pages/bare_metal_cloud/virtual_private_servers/rescue) if necessary.
+Initiate a server reboot in rescue mode from the Control Panel. Refer to our [rescue mode guide](/pages/bare_metal_cloud/virtual_private_servers/rescue) if necessary.
 
 ### Step 2: Perform initial verification
 

@@ -23,7 +23,6 @@ Jest on organizowany etapami w coraz większym stopniu w zakresie znaczenia i tr
 
 - [OVHcloud Web Hosting plan](/links/web/hosting)
 - posiadanie [login details](/pages/web_cloud/web_hosting/ftp_connection#etap-1-pobranie-informacji-niezbednych-do-logowania) w celu uzyskania dostępu do przestrzeni dyskowej planu hostingu
-- dostęp do [OVHcloud Control Panel](/links/manager)
 - dostęp do [admin interface for your website](https://wordpress.org/support/article/first-steps-with-wordpress/)
 
 ## W praktyce

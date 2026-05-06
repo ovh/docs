@@ -1,116 +1,158 @@
 ---
-title: Como ligar um domínio OVHcloud a um alojamento Wix
-excerpt: Prepare e configure a zona DNS do seu domínio OVHcloud para a ligar a um alojamento Wix
-updated: 2024-04-17
+title: "Ligar um nome de domínio OVHcloud ao Wix"
+excerpt: Prepare e configure a zona DNS do seu nome de domínio OVHcloud para a ligar a um alojamento Wix
+updated: 2026-03-18
 ---
 
 ## Objetivo
 
-Se possui um nome de domínio na OVHcloud, deseja ligá-lo a um alojamento Wix. Neste guia, encontrará as etapas de preparação e de configuração da sua zona DNS da OVHcloud para permitir a configuração do seu alojamento Wix.
+É titular de um nome de domínio na OVHcloud e pretende ligá-lo a um alojamento Wix. Este guia explica como preparar e configurar a sua zona DNS OVHcloud para o seu alojamento Wix.
 
-**Saiba como ligar o seu domínio OVHcloud a um alojamento Wix**
+**Saiba como ligar o seu nome de domínio OVHcloud a um alojamento Wix**
 
 > [!warning]
 >
 > - O suporte Wix não tem acesso aos parâmetros do seu nome de domínio OVHcloud e não pode, por isso, aconselhá-lo sobre as informações que deverá fornecer.
 >
-> - A responsabilidade sobre a configuração e a gestão dos serviços que a OVHcloud disponibiliza recai sobre o utilizador. Assim, deverá certificar-se de que estes funcionam corretamente.<br><br> Este guia fornece as instruções necessárias para realizar as operações mais habituais. No entanto, se encontrar dificuldades, recomendamos que recorra a um [prestador de serviços especializado](/links/partner) e/ou que contacte o editor do serviço. Não poderemos proporcionar-lhe assistência técnica. Para mais informações, consulte a secção [Quer saber mais](#gofurther)? deste guia.
+> - A OVHcloud disponibiliza-lhe serviços cuja configuração, gestão e responsabilidade é da sua competência. Assim, deverá certificar-se de que estes funcionam corretamente.<br><br> Este guia fornece as instruções necessárias para realizar as operações mais habituais. No entanto, se encontrar dificuldades, recomendamos que recorra a um [prestador de serviços especializado](/links/partner) e/ou que contacte o editor do serviço. Não poderemos proporcionar-lhe assistência técnica. Para mais informações, consulte a secção [Quer saber mais?](#go-further) deste guia.
 >
 
 ## Requisitos
 
-- Ter acesso à [Área de Cliente OVHcloud](/links/manager).
 - Ter um [nome de domínio](/links/web/domains) registado na OVHcloud.
-- Dispor das [autorizações adequadas para gerir](/pages/account_and_service_management/account_information/managing_contacts) o nome de domínio a partir da sua [Área de Cliente OVHcloud](/links/manager).
+- Dispor das [autorizações adequadas para gerir](/pages/account_and_service_management/account_information/managing_contacts) o nome de domínio.
 - Ter um alojamento na Wix.
 - Ter acesso à gestão deste alojamento na Wix.
 
+<!-- CP-NAV-START:web-dns-zone -->
+---
+
+### Acesso à Área de Cliente OVHcloud
+
+- **Ligação direta:** [Zonas DNS](/links/control-panel/web-dns-zone)
+- **Para aceder aos seus serviços:** `Web Cloud`{.action} > `Zonas DNS`{.action} > Selecione o seu nome de domínio
+
+---
+<!-- CP-NAV-END:web-dns-zone -->
+
 ## Instruções
 
-Antes de seguir as duas etapas deste manual, deve familiarizar-se com a configuração de uma zona DNS através do nosso manual "[Editar uma zona DNS da OVHcloud](/pages/web_cloud/domains/dns_zone_edit)".
+Antes de seguir as etapas deste guia, aconselhamos que consulte o nosso guia "[Editar uma zona DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit)".
 
 > [!warning]
 >
-> A sua zona DNS já se encontra potencialmente pré-configurada ou associada a um alojamento. Vamos ver como identificar cada registo DNS necessário para estabelecer a ligação com o seu alojamento Wix. Alguns terão de ser eliminados para evitar entrar em conflito com os registos DNS requeridos nesta configuração. Outros serão simplesmente modificados ou criados. Para uma melhor compreensão, utilizaremos o domínio "**mydomain.ovh**" como exemplo. Substitua-o pelo seu domínio durante a configuração.
+> A sua zona DNS já se encontra potencialmente pré-configurada ou associada a um alojamento. Vamos ver como identificar cada registo DNS necessário para estabelecer a ligação com o seu alojamento Wix. Alguns terão de ser eliminados para evitar entrar em conflito com os registos DNS requeridos nesta configuração. Outros serão simplesmente modificados ou criados. Para uma melhor compreensão, utilizaremos o nome de domínio "**mydomain.ovh**" como exemplo. Substitua-o pelo seu nome de domínio durante a configuração.
 
 ### 1. Configurar o seu alojamento Wix
 
-Quando utiliza um alojamento Wix com um nome de domínio OVHcloud, deve, em primeiro lugar, preparar o seu alojamento seguindo as instruções **do passo 1** a partir [**desta página da documentação Wix**](https://support.wix.com/fr/article/connecter-un-domaine-%C3%A0-wix-par-pointage-5727882).
+Prepare primeiro o seu alojamento Wix seguindo as instruções **da etapa 1** a partir de [**esta página da documentação Wix**](https://support.wix.com/pt/article/conectando-um-dom%C3%ADnio-ao-wix-usando-o-m%C3%A9todo-de-apontamento).
 
 ### 2. Configurar os registos DNS na sua conta OVHcloud
 
 > [!warning]
 >
-> Antes de avançar: <br>
+> Antes de avançar:
 >
 > - Abra um separador em paralelo no seu browser.
-> - Abrir [**esta página de documentação Wix**](https://support.wix.com/pt/article/connection-un-domaine-%C3%A0-wix-par-apontage-5727882).
-> - Posicione-se na parte "**Etapa 2 | Atualizar os registos DNS na conta do seu fornecedor de alojamento de domínio**" da documentação Wix.<br>
-> As instruções seguintes ajudá-lo-ão a configurar com maior facilidade a sua zona DNS da OVHcloud.
+> - Abra [**esta página da documentação Wix**](https://support.wix.com/pt/article/conectando-um-dom%C3%ADnio-ao-wix-usando-o-m%C3%A9todo-de-apontamento).
+> - Posicione-se na secção "**Etapa 2 | Atualize os registros DNS na sua conta de host de domínio**" da documentação Wix.<br>
+> As instruções seguintes ajudá-lo-ão a configurar com maior facilidade a sua zona DNS OVHcloud.
 
-Aceda à [Área de Cliente OVHcloud](/links/manager), secção `Web Cloud`{.action}. Clique em `Nomes de domínio`{.action} e escolha o domínio em causa. De seguida, clique no separador `Zona DNS`{.action}.
-
-Aparecerá uma tabela com a lista de todos os registos DNS do nome de domínio selecionado.
-
-![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/tab-mydomain-anycast.png){.thumbnail}
-
-Cada registo DNS pode ser alterado clicando no botão `...`{.action} à direita da linha da tabela em causa e, a seguir, clicando em `Modificar entrada`{.action}.
-
-Siga as etapas em ordem nas seguintes guias:
+<!-- CP-STEPS-START:configure-dns-records -->
+Clique nos separadores abaixo para visualizar sucessivamente cada uma das **5** etapas.
 
 > [!tabs]
 > **Etapa 1**
->> **Registo A**<br><br>
->> Para identificar os registos "A" existentes, clique no menu Filtros na parte superior da tabela de registos DNS e selecione `A`.<br>
+>>
+>> Aceda à página [Zonas DNS](/links/control-panel/web-dns-zone) e escolha o nome de domínio correspondente.
+>>
+>> ![DNS zones](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
+>>
+>> A tabela lista os registos DNS do nome de domínio selecionado.
+>>
+> **Etapa 2**
+>>
+>> **Configuração do registo A**
+>>
+>> **1 - Identificação:** filtre os registos DNS selecionando o tipo `A` no menu de filtros situado no canto superior direito da tabela.
+>>
 >> ![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/filter-a.png){.thumbnail}
 >>
->> - Clique no botão `...`{.action} à direita da linha da tabela que corresponde ao seu nome de domínio apenas, sem um subdomínio (exemplo: `mydomain.ovh.`), e depois clique em `Modificar entrada`{.action}.
->> - Se existir um registo para o subdomínio "www.» (exemplo: `www.mydomain.ovh.`), deverá eliminá-lo para que não entre em conflito com o registo CNAME que vai introduzir no passo 3. Clique no botão `...`{.action} à direita da linha correspondente ao seu domínio e ao subdomínio "www.» e clique em `Eliminar entrada`{.action}.
->> - Se não possui um registo "A" existente, clique no botão `Adicionar uma entrada`{.action} no canto superior direito do ecrã e selecione o "Campo de apontamento" `A`{.action}<br><br>
->> Deixe o campo **Subdomínio** vazio e introduza o endereço IPv4 *registado na sua interface Wix* no campo **Alvo**.
->> Clique em `Seguinte`{.action}, valide o seu registo "A" e passe à etapa 2.
-> **Etapa 2**
->> **Registo AAAA**<br><br>
->> Para identificar os registos "AAAA", clique no menu Filtros na parte superior da tabela de registos DNS e selecione `AAAA`.<br>
+>> Identifique os registos "A" existentes para o seu nome de domínio apenas (exemplo: `mydomain.ovh.`) e para o subdomínio "www" (exemplo: `www.mydomain.ovh.`).
+>>
+>> **2 - Eliminação:** elimine todos os registos "A" existentes para o subdomínio "www". Se existirem vários registos "A" para o nome de domínio apenas, elimine-os todos exceto um, que irá modificar na sub-etapa seguinte. Para cada registo a eliminar, clique no botão `...`{.action} à direita da linha correspondente e depois em `Eliminar a entrada`{.action}.
+>>
+>> **3 - Modificação:** se existir um registo "A" para o nome de domínio apenas, clique no botão `...`{.action} e depois em `Alterar a entrada`{.action}. Deixe o campo **Subdomínio** vazio e substitua o destino pelo endereço IPv4 obtido na sua interface Wix. Clique em `Seguinte`{.action} e valide.
+>>
+>> Se não existir nenhum registo "A", clique em `Adicionar uma entrada`{.action} no canto superior direito, selecione o campo de apontamento `A`{.action}, deixe o campo **Subdomínio** vazio e introduza o endereço IPv4 obtido na sua interface Wix no campo **Destino**. Clique em `Seguinte`{.action} e valide.
+>>
+>> Passe de seguida à etapa 3.
+>>
+> **Etapa 3**
+>>
+>> **Eliminação dos registos AAAA**
+>>
+>> **1 - Identificação:** filtre os registos DNS selecionando o tipo `AAAA` no menu de filtros situado no canto superior direito da tabela.
+>>
 >> ![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/filter-aaaa.png){.thumbnail}
 >>
->> - Se estiverem presentes registos "AAAA" para o nome de domínio específico (exemplo: `mydomain.ovh.`) e para o seu subdomínio em "www.» (exemplo: `www.mydomain.ovh.`), deve eliminá-los para que não entrem em conflito com os registos "A" e "» CNAME que irá indicar no passo 4. Clique no botão `...`{.action} à direita da linha correspondente ao seu domínio e ao subdomínio "www.» e clique em `Eliminar entrada`{.action}.<br>
-> **Etapa 3**
->> **Registo TXT**<br><br>
->>  Para identificar os registos "TXT" existentes, clique no menu Filtros na parte superior da tabela de registos DNS e selecione `TXT`.<br>
+>> Identifique os registos "AAAA" existentes para o seu nome de domínio apenas (exemplo: `mydomain.ovh.`) e para o subdomínio "www" (exemplo: `www.mydomain.ovh.`).
+>>
+>> **2 - Eliminação:** elimine todos os registos "AAAA" identificados (nome de domínio apenas e subdomínio "www") para evitar um conflito com os novos registos DNS. Para cada registo, clique no botão `...`{.action} à direita da linha correspondente e depois em `Eliminar a entrada`{.action}.
+>>
+>> Se não existir nenhum registo "AAAA", passe à etapa 4.
+>>
+> **Etapa 4**
+>>
+>> **Eliminação dos registos TXT**
+>>
+>> **1 - Identificação:** filtre os registos DNS selecionando o tipo `TXT` no menu de filtros situado no canto superior direito da tabela.
+>>
 >> ![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/filter-txt.png){.thumbnail}
 >>
->> - Se existirem registos "TXT" apenas para o nome de domínio (exemplo: `mydomain.ovh.`) e para o seu subdomínio em "www.» (exemplo: `www.mydomain.ovh.`), deve eliminá-los para que não entrem em conflito com o registo CNAME que vai introduzir no passo 4. Clique no botão `...`{.action} à direita da linha correspondente ao seu nome de domínio apenas com o subdomínio "www.» e clique em `Eliminar entrada`{.action}.<br>
-> **Etapa 4**
->> **Registo CNAME**<br><br>
->> Para identificar os registos "CNAME" existentes, clique no menu Filtros na parte superior da tabela de registos DNS e selecione `CNAME`.<br>
+>> Identifique os registos "TXT" existentes para o seu nome de domínio apenas (exemplo: `mydomain.ovh.`) e para o subdomínio "www" (exemplo: `www.mydomain.ovh.`).
+>>
+>> **2 - Eliminação:** elimine todos os registos "TXT" identificados (nome de domínio apenas e subdomínio "www") para evitar um conflito com os novos registos DNS. Para cada registo, clique no botão `...`{.action} à direita da linha correspondente e depois em `Eliminar a entrada`{.action}.
+>>
+>> Se não existir nenhum registo "TXT", passe à etapa 5.
+>>
+> **Etapa 5**
+>>
+>> **Configuração do registo CNAME**
+>>
+>> **1 - Identificação:** filtre os registos DNS selecionando o tipo `CNAME` no menu de filtros situado no canto superior direito da tabela.
+>>
 >> ![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/filter-cname.png){.thumbnail}
 >>
->> - Clique no botão `...`{.action} à direita da linha da tabela correspondente ao seu subdomínio em "www.» (exemplo: `mydomain.ovh.`) e depois clique em `Modificar entrada`{.action}.
->> - Se não possui um registo "CNAME" existente, clique no botão `Adicionar uma entrada`{.action} no canto superior direito do seu ecrã e selecione o "Campo de apontamento" `CNAME`{.action}.
->> Preencha o campo **Subdomínio** com o valor `www` e introduza o valor medido a partir da sua interface Wix no campo **Alvo**.<br>
->> Clique em `Seguinte`{.action} e valide o seu registo "CNAME".
+>> Identifique os registos "CNAME" existentes para o subdomínio "www" (exemplo: `www.mydomain.ovh.`).
+>>
+>> **2 - Eliminação:** se existirem vários registos "CNAME" para o subdomínio "www", elimine-os todos exceto um. Para cada registo a eliminar, clique no botão `...`{.action} à direita da linha correspondente e depois em `Eliminar a entrada`{.action}.
+>>
+>> **3 - Modificação:** se existir um registo "CNAME" para o subdomínio "www", clique no botão `...`{.action} e depois em `Alterar a entrada`{.action}. Substitua apenas o **Destino** pelo valor obtido na sua interface Wix. Clique em `Seguinte`{.action} e valide.
+>>
+>> Se não existir nenhum registo "CNAME" para o subdomínio "www", clique em `Adicionar uma entrada`{.action} no canto superior direito, selecione o campo de apontamento `CNAME`{.action}, introduza `www` no campo **Subdomínio** e o valor obtido na sua interface Wix no campo **Destino**. Clique em `Seguinte`{.action} e valide.
+<!-- CP-STEPS-END:configure-dns-records -->
 
-A zona DNS está configurada para fazer a ligação a um alojamento Wix.
+A zona DNS está agora configurada para apontar para o seu alojamento Wix.
 
 > [!primary]
 >
-> A verificação do seu domínio pode levar até 48 horas.
+> A verificação do seu nome de domínio pode levar até 48 horas.
 
-Se utiliza uma oferta de e-mail da OVHcloud ou pretende subscrever uma das [nossas ofertas de e-mail](/links/web/emails), deverá também preparar a sua zona DNS em conformidade. Consulte o nosso manual sobre a [configuração de um registo MX](/pages/web_cloud/domains/dns_zone_mx).
+Se utiliza uma oferta de e-mail OVHcloud ou pretende subscrever uma das [nossas ofertas de e-mail](/links/web/emails), deverá também preparar a sua zona DNS em conformidade. Consulte o nosso guia sobre a [configuração de um registo MX](/pages/web_cloud/domains/dns_zone_mx).
 
 ## Quer saber mais? <a name="go-further"></a>
 
-[Modificar os servidores DNS de um domínio OVHcloud](/pages/web_cloud/domains/dns_server_edit)
+[Modificar os servidores DNS de um nome de domínio OVHcloud](/pages/web_cloud/domains/dns_server_edit)
 
-[Criar uma zona DNS da OVHcloud para um domínio](/pages/web_cloud/domains/dns_zone_create)
+[Criar uma zona DNS OVHcloud para um nome de domínio](/pages/web_cloud/domains/dns_zone_create)
 
-[Editar uma zona DNS da OVHcloud](/pages/web_cloud/domains/dns_zone_edit)
+[Editar uma zona DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit)
 
-Para alterar a gestão do seu domínio para outra conta de cliente OVHcloud, siga o guia "[Gerir os contactos dos seus serviços](/pages/account_and_service_management/account_information/managing_contacts)".
+Para alterar a gestão do seu nome de domínio para outra conta de cliente OVHcloud, siga o guia "[Gerir os contactos dos seus serviços](/pages/account_and_service_management/account_information/managing_contacts)".
 
-Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](/links/partner).
+Para serviços especializados (referenciamento, desenvolvimento, etc.), contacte os [parceiros OVHcloud](/links/partner).
 
 Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](/links/support).
 
-Fale com nossa [comunidade de utilizadores](/links/community).
+Fale com a nossa [comunidade de utilizadores](/links/community).

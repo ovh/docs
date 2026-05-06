@@ -1,7 +1,7 @@
 ---
-title: 'Configurer le réseau sur Proxmox VE sur les gammes High Grade, Scale & Advance'
-excerpt: 'Découvrez comment configurer le réseau sur Proxmox VE'
-updated: 2025-07-22
+title: "Configurer le réseau sur Proxmox VE sur les gammes High Grade, Scale & Advance"
+excerpt: "Configurez les interfaces réseau Proxmox VE sur les serveurs dédiés des gammes High Grade, Scale et Advance étape par étape"
+updated: 2026-01-23
 ---
 
 > [!primary]
@@ -32,7 +32,6 @@ updated: 2025-07-22
 
 - Un [serveur dédié OVHcloud](/links/bare-metal/bare-metal)
 - Une ou plusieurs adresses [Additional IP](/links/network/additional-ip)
-- Être connecté à votre [espace client OVHcloud](/links/manager)
 
 > [!warning]
 >
@@ -50,7 +49,7 @@ Avec cette configuration, les adresses Additional IP doivent être attachées à
 > [!tabs]
 > Gammes High Grade & Scale
 >>
->> ![schema route](images/schema_route2022.png){.thumbnail}
+>> ![schema route](images/schema_route.png){.thumbnail}
 >>
 > Gamme Advance
 >>
@@ -110,7 +109,7 @@ sysctl -p
 >> # Interfaces publiques
 >> auto bond0
 >> iface bond0 inet manual
->>         bond-slaves ens33f0 ens33f1
+>>         bond-slaves ens33f0 ens35f1
 >>         bond-mode 802.3ad
 >>         bond-lacp-rate fast
 >>         bond-xmit-hash-policy layer3+4
@@ -133,7 +132,7 @@ sysctl -p
 >> # Interfaces privées
 >> auto bond1
 >> iface bond1 inet manual
->>         bond-slaves ens35f0 ens35f1
+>>         bond-slaves ens35f0 ens33f1
 >>         bond-mode 802.3ad
 >>         bond-lacp-rate fast
 >>         bond-xmit-hash-policy layer3+4
@@ -190,6 +189,8 @@ systemctl restart networking.service
 
 
 #### Exemple de configuration VM cliente
+
+La VM doit être attachée au bridge `vmbr0`.
 
 > [!tabs]
 > Debian (ifupdown)
@@ -261,11 +262,10 @@ Cette configuration est plus souple car il n'est pas nécessaire d'associer une 
 * Un [serveur compatible avec le vRack](/links/bare-metal/bare-metal)
 * Un service [vRack](/links/network/vrack)
 * Un bloc d'additional IP
-* Être connecté à votre [espace client OVHcloud](/links/manager)
 
 #### Schéma de la configuration cible
 
-![schema vrack](images/schema_vrack2022.png){.thumbnail}
+![schema vrack](images/Schema_vrack.png){.thumbnail}
 
 #### Explications
 
@@ -332,7 +332,7 @@ ssh PUB_IP_DEDICATED_SERVER
 >> iface bond0 inet static
 >>         address PUB_IP_DEDICATED_SERVER/32
 >>         gateway 100.64.0.1
->>         bond-slaves ens33f0 ens33f1
+>>         bond-slaves ens33f0 ens35f1
 >>         bond-mode 802.3ad
 >>         bond-lacp-rate fast
 >>         bond-xmit-hash-policy layer3+4
@@ -340,7 +340,7 @@ ssh PUB_IP_DEDICATED_SERVER
 >> # Interfaces privées
 >> auto bond1
 >> iface bond1 inet manual
->>         bond-slaves ens35f0 ens35f1
+>>         bond-slaves ens35f0 ens33f1
 >>         bond-mode 802.3ad
 >>         bond-lacp-rate fast
 >>         bond-xmit-hash-policy layer3+4
@@ -435,5 +435,11 @@ ADDITIONAL_IP # doit retourner votre Additional IP
 > Vous devez redémarrer les services réseau de la VM pour que la configuration soit prise en compte.
 
 ## Aller plus loin
+
+[Configurer le réseau sur Windows Server avec Hyper-V](/pages/bare_metal_cloud/dedicated_servers/hyperv-network-HG-Scale)
+
+[Mise à niveau du matériel sur un serveur dédié High Grade ou Scale](/pages/bare_metal_cloud/dedicated_servers/hardware-upgrade-HG-Scale)
+
+[Réseau - Résolution des problèmes de téléchargements lents dans les conteneurs et les machines virtuelles exécutées sur les serveurs Proxmox VE avec les cartes réseau Broadcom BCM57502](/pages/bare_metal_cloud/dedicated_servers/proxmox-broadcom-slow-downloads)
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).

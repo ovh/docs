@@ -13,23 +13,28 @@ You have just purchased an MX Plan email solution. It allows you to benefit from
 ## Requirements
 
 - An MX Plan solution, available as part of our [Web Hosting plans](/links/web/hosting)
-- Access to the [OVHcloud Control Panel](/links/manager), in the `Web Cloud`{.action} section
 
 > [!primary]
 >
 > **Special cases**
 >
-> - Regarding the 100M free hosting solution, you will need to [activate it](/pages/web_cloud/web_hosting/activate_start10m) in order to create an email account. You can do this from your [OVHcloud Control Panel](/links/manager) by selecting the domain name concerned.
 > - For [Web Hosting plans](/links/web/hosting), you will need to activate your MX Plan package before continuing to follow this guide. To do this, please refer to our guide on [Activating the email addresses included in your web hosting plan](/pages/web_cloud/web_hosting/activate-email-hosting).
+
+<!-- CP-NAV-START:web-mx-plan -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [MX Plan](/links/control-panel/web-mx-plan)
+- **Navigation path:** `Web Cloud`{.action} > `MX Plan`{.action} > Select your MX Plan service
+
+---
+<!-- CP-NAV-END:web-mx-plan -->
 
 ## Instructions <a name="instructions"></a>
 
 Depending on the date your service was activated and whether it was recently migrated, you are using either the legacy version or the new version of the MX Plan solution. Before you proceed with this guide, you need to check which version you are using.
 
-1. Log in to your [OVHcloud Control Panel](/links/manager).
-1. Open the `Web Cloud`{.action} section.
-1. Click `MX Plan`{.action}.
-1. Select the domain concerned.
 
 Continue with the next steps, depending on which version you own.
 
@@ -106,12 +111,12 @@ To create a new email address, go to the `Emails`{.action} tab. The table displa
 
 In the pop-up window, enter the following information:
 
-- **Account name**: Enter the name you want for your email address (firstname.lastname, for example). The domain name concerned is already entered by default.|  
-- **Account description**: Enter a short description that will distinguish this account from any other accounts added in the OVHcloud Control Panel.|  
-- **Account size**: Select the size of account you want. This is the available space for the account to store messages.|  
-- **Password**: Type in a password, and confirm it. For security reasons, we recommend not using the same password twice, and choosing one that does not contain any personal information (e.g. your surname, first name and date of birth). We also recommend renewing your password regularly.|
+- **Account name**: Enter the name you want for your email address (firstname.lastname, for example). The domain name concerned is already entered by default.
+- **Account description**: Enter a short description that will distinguish this account from any other accounts added in the OVHcloud Control Panel.
+- **Account size**: Select the size of account you want. This is the available space for the account to store messages.
+- **Password**: Type in a password, and confirm it. For security reasons, we recommend not using the same password twice, and choosing one that does not contain any personal information (e.g. your surname, first name and date of birth). We also recommend renewing your password regularly.
 
-Once you have filled in all of the required fields, click `Next`{.action}. 
+Once you have filled in all of the required fields, click `Next`{.action}.
 
 ![email](images/mxplan-creation-legacy-step3.png){.thumbnail}
 
@@ -119,11 +124,11 @@ Check that all the information displayed in the summary is correct; if it is, cl
 
 Repeat this step as necessary according to the number of accounts to create.
 
-#### View emails 
+#### View emails
 
 On the [Webmail login page](/links/web/email), enter your email address and password. Then click the `Login`{.action} button.
 
-Your inbox will then appear. You can find more information in our guide on [Using your email account via the RoundCube webmail interface](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_roundcube).
+Your inbox will then appear. You can find more information in our guide on [Using your email account via the Outlook Web App (OWA) webmail](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa).
 
 ![email](images/mxplan-creation-legacy-step4.png){.thumbnail}
 
@@ -135,7 +140,7 @@ To view your emails using an email client, please refer to the section ["View an
 >
 > Before deleting email accounts, make sure they are not used. You may need to back up these accounts. If required, please refer to our guide on [Migrating your email address manually](/pages/web_cloud/email_and_collaborative_solutions/migrating/manual_email_migration), which explains how to export account data from your Control Panel or email software.
 
-In the `Emails`{.action} tab, click the `...`{.action} button to the right of the account you want to delete, then click `Disable account`{.action}
+In the `Emails`{.action} tab, click the `...`{.action} button to the right of the account you want to delete, then click `Disable account`{.action}.
 
 ![email](images/mxplan-legacy-reset.png){.thumbnail}
 
@@ -208,6 +213,6 @@ If you just need the information required to configure your email address, the s
 > If you have any problems configuring your email address on your device, we recommend using our [configuration guides](/products/web-cloud-email-collaborative-solutions-mx-plan) or contacting the publisher of the application you are using, because you may need to make a change that is specific to the application.
 >
 
-## Go further
-  
+## Go further <a name="go-further"></a>
+
 Join our [community of users](/links/community).

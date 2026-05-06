@@ -1,35 +1,44 @@
 ---
-title: 'Webmail: Guia de utilização do Roundcube'
-updated: 2025-11-12
+title: 'Utilizar o seu endereço de e-mail a partir do webmail Roundcube'
+updated: 2026-05-04
 ---
 
 ## Objetivo
 
-Com a oferta MX Plan OVHcloud, pode enviar e-mails a partir de um software de terceiros ou através de um webmail. A OVHcloud oferece um serviço de e-mail online chamado Roundcube que permite o acesso a uma conta de e-mail através de um browser web.
+Com a oferta MX Plan da OVHcloud, pode enviar e receber e-mails a partir de um software de terceiros ou através de um webmail. A OVHcloud disponibiliza um serviço de mensagens online denominado Roundcube que permite, através de um browser web, aceder a uma conta de e-mail.
 
 **Saiba como utilizar o webmail Roundcube para os seus endereços de e-mail OVHcloud**
 
 ## Requisitos
 
-- Dispor de uma solução de e-mail OVHcloud **MX Plan**, proposta entre as nossas [ofertas de alojamento web](/links/web/hosting), incluída num [Alojamento gratuito 100M](/links/web/domains-free-hosting), ou encomendada separadamente como solução autónoma.
-- Ter acesso às informações de acesso ao endereço de e-mail MX Plan que pretende consultar. Para mais informações, consulte o nosso guia [Primeiros passos com a oferta MX Plan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities).
+- Dispor de uma solução de e-mail OVHcloud **MX Plan**, proposta entre as nossas [ofertas de alojamento web](/links/web/hosting), incluída num [alojamento gratuito 100M](/links/web/domains-free-hosting), ou encomendada separadamente como solução autónoma.
+- Dispor das informações de ligação ao endereço de e-mail MX Plan que pretende consultar. Para mais informações, consulte o nosso guia [Primeiros passos com a oferta MX Plan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities).
 - A sua solução de e-mail OVHcloud **MX Plan** deve utilizar a tecnologia de webmail **Roundcube**. Para a identificar, siga as instruções abaixo.
 
 > [!primary]
 > 
 > **Como identificar a tecnologia utilizada na minha oferta MX Plan?**
 >
-> A tecnologia de e-mail utilizada para a oferta MX Plan é caracterizada pela interface do seu webmail. Para o identificar a partir da Área de Cliente, siga o seguinte caminho:
+> A tecnologia de e-mail utilizada para a sua oferta MX Plan é caracterizada pela interface do seu webmail. Para a identificar a partir da sua área de cliente, siga o caminho abaixo:
 >
-> 1. Aceda à [Área de Cliente OVHcloud](/links/manager).
+> 1. Aceda à sua [área de cliente OVHcloud](/links/manager).
 > 1. Aceda à secção `Web Cloud`{.action}.
 > 1. Clique em `MX Plan`{.action}.
 > 1. Selecione o domínio em questão.
-> 1. No separador `Informações gerais`{.action}, selecione por predefinição.
-> 1. Registe a tecnologia utilizada como **Webmail**.
+> 1. No separador `Informações gerais`{.action} (selecionado por predefinição), verifique a tecnologia utilizada na menção **Webmail**.
 >
 > ![MX plan](images/technology-email.png){.thumbnail .w-500}
 
+<!-- CP-NAV-START:web-mx-plan -->
+---
+
+### Acesso à área de cliente OVHcloud
+
+- **Ligação direta:** [MX Plan](/links/control-panel/web-mx-plan)
+- **Para aceder aos seus serviços:** `Web Cloud`{.action} > `MX Plan`{.action} > Selecione o seu serviço MX Plan
+
+---
+<!-- CP-NAV-END:web-mx-plan -->
 
 ## Instruções
 
@@ -38,38 +47,37 @@ Com a oferta MX Plan OVHcloud, pode enviar e-mails a partir de um software de te
 - [Aceder ao webmail Roundcube](#roundcube-connexion)
 - [Interface geral do webmail Roundcube](#general-interface)
     - [Gestão das pastas (coluna da esquerda)](#leftcolumn)
-    - [Lista de e-mails recebidos/enviados (parte superior)](#topwindow)
+    - [Lista de e-mails recebidos / enviados (janela superior)](#topwindow)
         - [Tipo de visualização](#topwindow-display)
         - [Ação sobre um e-mail selecionado](#topwindow-action)
         - [Procurar um e-mail](#topwindow-search)
-    - [Conteúdo de mensagem de correio eletrónico (janela inferior)](#lowerwindow)
+    - [Conteúdo de um e-mail (janela inferior)](#lowerwindow)
 - [Configurar as preferências da interface Roundcube](#roundcube-settings)
-    - [Interface de Utilizador](#user-interface-settings)
+    - [Interface do utilizador](#user-interface-settings)
     - [Vista da caixa de correio](#mail-view-settings)
-    - [Ver mensagens de correio eletrónico](#mail-display-settings)
-    - [Correio eletrónico](#mail-writing-settings)
+    - [Apresentação dos e-mails](#mail-display-settings)
+    - [Redação de e-mails](#mail-writing-settings)
     - [Contactos](#contacts-settings)
-    - [Pastas especiais (predefinidas)](#special-folder-settings)
+    - [Pastas especiais](#special-folder-settings)
     - [Definições do servidor](#server-settings)
     - [Encriptação](#encryption)
-- [Gerir identidades e respetivas assinaturas](#identity-signature)
-    - [Identity](#identity)
+- [Gerir as identidades e as suas assinaturas](#identity-signature)
+    - [Identidade](#identity)
     - [Assinatura](#signature)
 - [Livro de contactos](#contact-book)
     - [Grupos](#group)
     - [Contactos](#contacts)
-    - [Importar Contactos](#import-contacts)
-    - [Exportar os Contactos Roundcube](#export-contacts)
-- [Respostas (templates)](#responses)
-- [Adicionar uma resposta automática ou resposta automática](#automatic-respond)
+    - [Importar contactos](#import-contacts)
+    - [Exportar os contactos](#export-contacts)
+- [Respostas (modelos)](#responses)
+- [Adicionar um respondedor ou resposta automática](#automatic-respond)
 - [Alterar a palavra-passe do seu endereço de e-mail](#password)
-- [Escrevendo um e-mail](#email-writing)
+- [Redação de um e-mail](#email-writing)
 - [Casos práticos](#usecase)
-
 
 ### Aceder ao webmail Roundcube <a name="roundcube-connexion"></a>
 
-Aceda à página [Webmail](/links/web/email). Introduza um endereço de e-mail e a password, e depois clique em `Ligação`{.action}. 
+Aceda à página [Webmail](/links/web/email). Introduza um endereço de e-mail e a palavra-passe e, em seguida, clique em `Ligação`{.action}. 
 
 ![alojamento](images/webmail_login.png){.thumbnail}
 
@@ -79,8 +87,8 @@ Será então redirecionado para a interface Roundcube.
 
 > [!primary]
 > 
-> Ao fazer login pela primeira vez na interface Roundcube, o aspeto pode ser diferente daquele que você verá neste manual. Isto significa que a aparência "clássica" foi definida na sua interface. Para alterar esta informação, vá à secção "[Interface do Utilizador](#user-interface-settings)" e selecione a visualização "Larry".
-> O aspeto da interface não irá afetar as seguintes explicações neste manual.
+> Quando se ligar pela primeira vez à interface Roundcube, o aspeto pode ser diferente daquele que verá nesta documentação. Isto significa que o aspeto "clássico" foi definido na sua interface. Para o alterar, siga a secção "[Interface do utilizador](#user-interface-settings)" e selecione o aspeto "Larry".
+> O aspeto da interface não terá impacto nas explicações que se seguem nesta documentação.
 
 > [!warning]
 > 
@@ -90,9 +98,9 @@ Será então redirecionado para a interface Roundcube.
 
 ### Interface geral do webmail Roundcube <a name="general-interface"></a>
 
-Depois de aceder à sua conta de e-mail, terá acesso à janela principal de Roundcube, que é composta por 3 zonas:
+Depois de se ligar à sua conta de e-mail, tem acesso à janela principal do Roundcube, que é composta por 3 zonas:
 
-- [**Coluna da esquerda**](#leftcolumn): a arborescência da sua conta de e-mail, composta por pastas e sub-pastas. A pasta principal é a `caixa de entrada`.
+- [**Coluna da esquerda**](#leftcolumn): a árvore da sua conta de e-mail, composta por pastas e subpastas. A pasta principal é a `Caixa de entrada`.
 
 - [**Janela superior**](#topwindow): a lista dos e-mails contidos na pasta selecionada na coluna da esquerda.
 
@@ -102,53 +110,65 @@ Depois de aceder à sua conta de e-mail, terá acesso à janela principal de Rou
 
 Nesta zona, aparecem as pastas presentes na sua conta de e-mail.
 
-Para gerir com mais precisão as pastas, clique na roda dentada na parte inferior da coluna e, a seguir, em `Gerir pastas.`{.action}
+Para gerir as pastas com mais precisão, clique na roda dentada na parte inferior da coluna e, em seguida, em `Gerir pastas`{.action}.
 
 ![alojamento](images/roundcube02.png){.thumbnail}
 
 Para criar uma pasta, clique no botão `+`{.action} no fundo da coluna `Pastas`.
 
-Para eliminar uma pasta, selecione a pasta em causa, clique na roda dentada no fundo da coluna `Pastas` e, a seguir, em `Eliminar`{.action}. Para apagar o conteúdo mas guardar a pasta, clique em `Esvaziar`{.action}.
+Para eliminar uma pasta, selecione a pasta em questão, clique na roda dentada no fundo da coluna `Pastas` e, em seguida, em `Eliminar`{.action}. Para apagar o conteúdo, mas manter a pasta, clique em `Esvaziar`{.action}.
 
-As casas a assinalar ao nível dos dossiers correspondem às "assinaturas". A subscrição determina se a pasta deve ou não ser apresentada na interface webmail ou no software de correio, conservando o conteúdo da pasta. O objetivo é apenas ocultar ou apresentar uma pasta na conta de e-mail.
+As caixas a assinalar ao nível das pastas correspondem às "subscrições". A subscrição determina se a pasta deve ser apresentada, ou não, na interface webmail ou no software de mensagens, mantendo o conteúdo da pasta. O objetivo é apenas ocultar ou mostrar uma pasta na conta de e-mail.
 
 > [!primary]
 >
-> As pastas com uma opção cinzenta são pastas especiais. Não é possível eliminá-los ou retirá-los.
+> As pastas que apresentam uma caixa a assinalar cinzenta são pastas especiais. Não é possível eliminá-las ou retirar a sua subscrição.
 
-#### Lista dos e-mails recebidos/enviados (janela superior) <a name="topwindow"></a>
+#### Lista de e-mails recebidos / enviados (janela superior) <a name="topwindow"></a>
 
 Esta janela apresenta o conteúdo da pasta selecionada na coluna da esquerda. 
 
 ##### Tipo de visualização <a name="topwindow-display"></a>
 
-Esta janela é apresentada de forma personalizada. Para isso, clique na roda dentada situada no canto superior esquerdo desta janela.
+Esta janela é apresentada de uma forma que pode ser personalizada. Para tal, clique na roda dentada situada no canto superior esquerdo desta janela.
 
 ![alojamento](images/roundcube03.png){.thumbnail}
 
-É possível configurar os seguintes elementos:
+É possível configurar quatro parâmetros:
 
-- **Disposição**: permite determinar a disposição das janelas de gestão de uma conta de e-mail.
-- **Colunas da lista**: permite adicionar colunas a apresentar (prioridades dos e-mails, etc.).
-- **Coluna de triagem**: permite escolher a coluna na qual a triagem predefinida será efetuada.
-- **Ordem de triagem**: permite escolher a ordem de triagem ascendente ou descendente, em função da coluna de triagem.
+- **Disposição**: define a organização das janelas de gestão de uma conta de e-mail. Três opções:
+    - `Ecrã grande`{.action} (*Widescreen*): três painéis lado a lado — pastas, lista de e-mails e painel de leitura alinhados horizontalmente;
+    - `Secretária`{.action} (*Desktop*): lista de e-mails na parte superior, painel de leitura por baixo (disposição clássica);
+    - `Lista`{.action} (*List*): sem painel de leitura — os e-mails abrem-se em janela inteira ao clicar.
+
+- **Colunas da lista**: caixas a assinalar que determinam as colunas apresentadas na lista de e-mails. As colunas **Assunto** e **Tópico de discussão** estão sempre visíveis. Colunas opcionais disponíveis: `De`{.action}, `Para`{.action}, `De/Para`{.action}, `Responder a`{.action}, `Cópia`{.action}, `Data`{.action}, `Tamanho`{.action}, `Estado de leitura`{.action}, `Anexos`{.action}, `Indicador`{.action}, `Prioridade`{.action}.
+
+- **Coluna de ordenação**: permite escolher a coluna de ordenação por predefinição. Opções disponíveis: `Nenhum`{.action}, `Data de receção`{.action}, `Data de envio`{.action}, `Assunto`{.action}, `De`{.action}, `Para`{.action}, `De/Para`{.action}, `Cópia`{.action} ou `Tamanho`{.action}.
+
+- **Ordem de ordenação**: ascendente ou descendente.
+
+Clique em `Guardar`{.action} para aplicar as suas opções.
+
+> [!primary]
+>
+> Pode também **ordenar dinamicamente a lista** clicando diretamente no cabeçalho de uma coluna apresentada (por exemplo **Data**, **Assunto** ou **Tamanho**). Um segundo clique na mesma coluna inverte a ordem.
 
 ##### Ação sobre um e-mail selecionado <a name="topwindow-action"></a>
 
-Quando um e-mail é selecionado, pode alterar o sistema. Veja as ações possíveis:
+Quando um e-mail é selecionado, é possível agir sobre o mesmo. Estas são as ações possíveis:
 
-- `Responder`{.action}: responder diretamente ao expedidor.
+- `Responder`{.action}: responder diretamente ao remetente.
 - `Responder a todos`{.action}: responder diretamente a todos os destinatários presentes nos campos "A" e "Cópia".
-- `Reencaminhar`{.action}: transferir o e-mail selecionado para um ou vários destinatários.
-- `Eliminar`{.action}: colocar o e-mail selecionado no "Corbeille".
-- `Spam`{.action}: colocar o e-mail selecionado diretamente na caixa de correio indesejável (Junk), qualificá-lo como **spam**.
-- `Marcar`{.action}: determinar manualmente o estado de um e-mail.
+- `Reencaminhar`{.action}: reencaminhar o e-mail selecionado a um ou vários destinatários.
+- `Eliminar`{.action}: colocar o e-mail selecionado na "Reciclagem".
+- `Indesejados`{.action}: colocar o e-mail selecionado diretamente na caixa de correio indesejado (Junk), classificá-lo como **spam**.
+- `Marcar`{.action}: definir manualmente o estado de um e-mail.
 - `Mais`{.action} 
-    - `Imprimir`{.action}.
-    - `Guardar como (.eml)`{.action}: recuperar o cabeçalho do e-mail e o seu conteúdo.
+    - `Imprimir este e-mail`{.action}.
+    - `Transferir (.eml)`{.action}: recuperar o cabeçalho do e-mail e o seu conteúdo.
     - `Editar como novo`{.action}: criar um novo e-mail com base no e-mail selecionado.
-    - `Mostrar código fonte`{.action}: mostrar o e-mail na sua forma bruta com o cabeçalho.
-    - `Migrar para`{.action}: mover o e-mail para uma pasta.
+    - `Mostrar a fonte`{.action}: apresentar o e-mail na sua forma bruta com o cabeçalho.
+    - `Mover para`{.action}: mover o e-mail para uma pasta.
     - `Copiar para`{.action}: copiar o e-mail para uma pasta.
     - `Abrir numa nova janela`{.action}.
 
@@ -156,268 +176,270 @@ Quando um e-mail é selecionado, pode alterar o sistema. Veja as ações possív
 
 > [!primary]
 >
-> Se um dos seus correspondentes solicitar que lhe seja enviado um aviso de leitura ao ler o seu e-mail, receberá a seguinte mensagem: `o remetente desta mensagem pediu para ser avisado quando ler esta mensagem. Deseja avisar o remetente?`.
-> 
+> Se um dos seus correspondentes solicitar que lhe seja enviado um aviso de leitura quando ler o seu e-mail, obterá a seguinte mensagem: `o remetente desta mensagem solicitou ser avisado quando ler esta mensagem. Pretende avisar o remetente?`.
+>
 
 ##### Procurar um e-mail <a name="topwindow-search"></a>
 
-Uma ferramenta de pesquisa está disponível na parte superior direita da interface.
+Está disponível uma ferramenta de pesquisa na parte superior direita da interface.
 
-Clique na seta situada à direita da lupa para apresentar os filtros de pesquisa.
+Introduza um termo no campo de pesquisa e, em seguida, valide com a tecla `Enter`{.action}: por predefinição, o Roundcube efetua a pesquisa em toda a pasta atual.
+
+Clique na seta situada à direita da lupa para apresentar os filtros de pesquisa: pode restringir a pesquisa a determinados campos (assunto, corpo da mensagem, remetente, destinatários, etc.) ou alargar o seu âmbito a todas as pastas.
 
 #### Conteúdo de um e-mail (janela inferior) <a name="lowerwindow"></a>
 
-Quando um e-mail é selecionado na lista, aparece na janela inferior.
+Quando um e-mail é selecionado na lista, este é apresentado na janela inferior.
 
-Encontre os atalhos, à direita, das seguintes funções:
+À direita, encontram-se os atalhos das funções abaixo:
 
-- Apresentar em formato HTML (predefinido)
-- Apresentar em formato texto claro
-- Responder
-- Responder a todos
-- Reencaminhar
-- Abrir numa nova janela 
+- `Apresentar em formato HTML`{.action} (predefinição)
+- `Apresentar em formato de texto simples`{.action}
+- `Responder`{.action}
+- `Responder a todos`{.action}
+- `Reencaminhar`{.action}
+- `Apresentar numa nova janela`{.action}
 
 ![alojamento](images/roundcube05.png){.thumbnail}
 
 ### Configurar as preferências da interface Roundcube <a name="roundcube-settings"></a>
 
-Os capítulos seguintes deste guia correspondem aos separadores que compõem a parte `Preferências`{.action} dos `Definições`{.action} de Roundcube. A sua descrição não é exaustiva.
+Os capítulos seguintes deste guia correspondem aos separadores que compõem a parte `Preferências`{.action} das `Definições`{.action} do Roundcube. A sua descrição não é exaustiva.
 
 ![alojamento](images/roundcube06.png){.thumbnail}
 
 #### Interface do utilizador <a name="user-interface-settings"></a>
 
-Defina aqui a `Idioma` de utilização da interface Roundcube, o `fuso horário`, o `formato da hora` e o `formato de data`.
+Defina aqui o `idioma` de utilização da interface Roundcube, o `fuso horário`, o `formato horário` e o `formato de data`.
 
-A opção `Formatar datas` permite apresentar a data de receção/envio com termos relativos como "Hoje", "Ontem", etc.<br>
-**Por exemplo**: somos a **19/05/2022**, um e-mail enviado/recebido a **17/05/2022** às **17:38** será apresentado **Ter 17:38**, pois o email corresponde à terça-feira anterior.
+A opção `Datas amigáveis` permite apresentar a data de receção/envio com termos relativos como "Hoje", "Ontem", etc.<br>
+**Por exemplo**: estamos a **19/05/2022**, um e-mail enviado/recebido a **17/05/2022** às **17:38** será apresentado **Ter 17:38**, pois o e-mail corresponde à terça-feira anterior.
 
-A casa `Mostrar próxima entrada da lista após eliminar/mover` significa que, após uma ação de supressão ou migração para um e-mail, o elemento da linha inferior será sistematicamente selecionado, seja qual for a ordem de escolha. 
+A caixa `Mostrar a próxima entrada da lista após eliminar ou mover` significa que, após uma ação de eliminação ou de deslocação de um e-mail, o elemento da linha inferior será sistematicamente selecionado, qualquer que seja a ordem de ordenação.
 
-Pode escolher a estética de afixação da sua interface. Pode escolher entre exibir **Classic** ou **Larry**.
+Pode escolher a estética de apresentação da sua interface. Pode optar entre o aspeto **Classic** ou o aspeto **Larry**.
 
-#### Visualização da Caixa de Entrada <a name="mail-view-settings"></a>
+#### Vista da caixa de correio <a name="mail-view-settings"></a>
 
-Defina aqui a ergonomia para visualizar e agir sobre os e-mails. A opção `Modelo` permite organizar as 3 janelas descritas na parte [Interface geral do webmail Roundcube](#topwindow).
+Defina aqui a ergonomia para visualizar e agir sobre os e-mails. A opção `Disposição` permite organizar as 3 janelas descritas na parte [Lista de e-mails recebidos / enviados](#topwindow).
 
-#### Visualização de mensagens <a name="mail-display-settings"></a>
+#### Apresentação dos e-mails <a name="mail-display-settings"></a>
 
 Defina a forma como os e-mails são apresentados.<br>
-Para assegurar que os e-mails formatados pelo remetente se apresentam corretamente, é aconselhável ter a opção `Mostrar mensagens em HTML` selecionado.<br>
-Também é aconselhável manter a opção `Permitir recursos remotos (imagens, estilos)` para `nunca`. Isto evita carregar os elementos de um e-mail que parece malicioso.
+É aconselhável manter a caixa `Apresentar em HTML` selecionada, para garantir que os e-mails formatados pelo remetente sejam apresentados corretamente.<br>
+Também é aconselhável manter a opção `Permitir recursos remotos (imagens, estilos)` em `nunca`. De facto, isto evita o carregamento dos elementos de um e-mail que pareça malicioso.
 
-#### Composição de mensagens <a name="mail-writing-settings"></a>
+#### Redação de e-mails <a name="mail-writing-settings"></a>
 
-Defina a forma padrão aquando da redação de um e-mail ou de uma resposta.<br>
-É aconselhável passar a opção `Escrever mensagens em HTML` sempre de forma `sempre`, para beneficiar por defeito das ferramentas de edição HTML e não alterar uma assinatura HTML.
+Defina o formato por predefinição quando da redação de um e-mail ou de uma resposta.<br>
+É aconselhável passar a opção `Redigir e-mails em HTML` para `sempre`, para beneficiar por predefinição das ferramentas de edição HTML e não alterar uma assinatura HTML.
 
 #### Contactos <a name="contacts-settings"></a>
 
-Personalize aqui a disposição das informações no seu diretório de endereços.
+Personalize aqui a organização das informações no seu livro de endereços.
 
-#### Pastas especiais (predefinidas) <a name="special-folder-settings"></a>
+#### Pastas especiais <a name="special-folder-settings"></a>
 
-Roundcube dispõe de 4 dossiers especiais: `Rascunhos`, `Itens Enviados`, `Spam`, `Reciclagem`.
+O Roundcube dispõe de 4 pastas especiais: `Rascunhos`, `Enviados`, `Indesejados`, `Reciclagem`.
 
-Não aconselhamos a sua alteração, mas é possível atribuir o comportamento de uma pasta especial a outra criada posteriormente, graças aos menus confusos.<br>
+Não aconselhamos a sua alteração, mas é possível atribuir o comportamento de uma pasta especial a outra pasta criada posteriormente, através dos menus pendentes.<br>
 
-**Por exemplo**, você pode atribuir o comportamento « Rascunhos » a outra pasta que você criou clicando na lista suspensa e selecionando essa pasta. Se nenhuma pasta for atribuída a ele, ele será automaticamente colocado na opção « Drafts ». Os e-mails que forem registados serão considerados como rascunhos até que sejam enviados.
+**Por exemplo**, pode atribuir o comportamento "Rascunhos" a outra pasta que tenha criado, clicando na lista pendente e selecionando essa pasta. Se nenhuma pasta lhe for atribuída, será automaticamente colocada na opção "Drafts". Os e-mails que aí forem guardados serão considerados rascunhos até ao seu envio efetivo.
 
-> Na prática, eu crio uma sub-pasta « Rascunhos de e-mails de clientes ». Vou a `As minhas preferências`{.action} / `Pastas especiais`{.action} e escolho a opção "Rascunhos". No menu suspenso, seleciono a pasta "Rascunhos de e-mails de clientes" para substituir "Drafts". Os e-mails redigidos nesta pasta serão considerados rascunhos.
+> Na prática, crio uma subpasta "Rascunhos de e-mails de clientes". Acedo a `As minhas preferências`{.action} / `Pastas especiais`{.action} e escolho a opção "Rascunhos". No menu pendente, seleciono a pasta "Rascunhos de e-mails de clientes" para substituir "Drafts". Os e-mails redigidos nesta pasta serão considerados rascunhos.
 
 #### Definições do servidor <a name="server-settings"></a>
 
-Neste separador, pode otimizar o espaço ocupado numa conta de e-mail. Com efeito, a opção `Esvaziar a Reciclagem ao sair` permite evitar a acumulação dos elementos que foram suprimidos. A opção `Eliminar diretamente as mensagens no Spam` eliminará automaticamente todos os e-mails considerados como SPAM.
+Neste separador, pode otimizar o espaço ocupado numa conta de e-mail. De facto, a opção `Esvaziar a reciclagem ao terminar a sessão` permite evitar a acumulação dos elementos que foram eliminados. A opção `Eliminar diretamente os indesejados` eliminará automaticamente todos os e-mails considerados como spam.
 
 > [!warning]
 > 
-> Não é aconselhável ativar a opção `Eliminar diretamente as mensagens no Spam` eletrónico quando um falso positivo (e-mail erradamente declarado como "SPAM") for declarado como spam para o servidor de receção. Com efeito, quando um e-mail é colocado na pasta "Por correio eletrónico", é ainda possível verificar se o e-mail é legítimo.
+> Não é aconselhável ativar a opção `Eliminar diretamente os indesejados`, no caso de um falso positivo (e-mail erradamente declarado como "spam") ser declarado como spam pelo servidor de receção. De facto, quando um e-mail é colocado na pasta "Indesejados", ainda é possível verificar se o e-mail é legítimo.
 
 #### Encriptação <a name="encryption"></a>
 
-Se o seu browser lhe permitir, pode instalar e ativar a extensão "Mailvelope". Trata-se de uma extensão do browser que integra o PGP (**P**retty **G**ood **P**rivacy) no seu serviço de mensagens web. O sistema de encriptação PGP e, por conseguinte, a extensão "Mailvelope" permitem:
+Se o seu browser o permitir, pode instalar e ativar a extensão "Mailvelope". Trata-se de uma extensão de browser que integra o PGP (**P**retty **G**ood **P**rivacy) no seu serviço de mensagens web. O sistema de encriptação PGP e, por conseguinte, a extensão "Mailvelope" permitem:
 
-- Encriptar e desencriptar os e-mails no seu browser.
-- Guardar o conteúdo do seu e-mail privado para o seu fornecedor de e-mail.
+- Encriptar e desencriptar e-mails no seu browser.
+- Manter o conteúdo dos seus e-mails privado face ao seu fornecedor de e-mail.
 
-Só você poderá ler os seus e-mails. Esta extensão é um meio de proteger o seu webmail se receber e-mails de natureza confidencial.
+Assim, só você pode ler os seus e-mails. Esta extensão é uma forma de proteger o seu webmail se receber e-mails de natureza confidencial.
 
-Para mais informações, consulte a FAQ da "Maildeve" em <https://mailvelope.com/faq>.
+Para mais informações, consulte a FAQ do "Mailvelope" no endereço <https://mailvelope.com/faq>.
 
-### Gerir as identidades e a sua assinatura <a name="identity-signature"></a>
+### Gerir as identidades e as suas assinaturas <a name="identity-signature"></a>
 
-A partir do Roundcube, clique em `Definições`{.action} na barra superior e, a seguir, em `Identidades`{.action} na coluna da esquerda. A "identidade" permite personalizar as informações enviadas aos destinatários como, por exemplo, o nome do ecrã ou a assinatura.
+A partir do Roundcube, clique em `Definições`{.action} na barra superior e, em seguida, em `Identidades`{.action} na coluna da esquerda. A "identidade" permite personalizar as informações enviadas aos destinatários como, por exemplo, o nome a apresentar ou a assinatura.
 
 ![alojamento](images/roundcube07.png){.thumbnail}
 
-#### Parametrizar os atributos de uma identidade <a name="identity"></a>
+#### Definir os atributos de uma identidade <a name="identity"></a>
 
-- **Nome completo**: este nome aparecerá na parte "expedidor" do destinatário
+- **Nome a apresentar**: este nome aparecerá na parte "remetente" do destinatário.
 - **E-mail**: corresponde ao endereço a partir do qual é enviado o e-mail.
 - **Organização**: campo destinado ao nome de uma sociedade, associação ou outra entidade.
 - **Responder a**: atribuir um endereço de e-mail de resposta diferente do do remetente.
 - **Bcc**: colocar em cópia oculta um endereço de e-mail aquando de um envio.
-- **Marcar como predefinido**: quando houver várias identidades (assinaturas), atribuí-la-á por predefinição.
-- **Assinatura**: personalizar o pé de página de um e-mail aquando da sua redação (apelido, nome próprio, cargo ocupado, frases, imagens..).
-- **Assinatura HTML**: Ativar o formato HTML na assinatura. 
+- **Definir como predefinição**: quando existem várias identidades (assinaturas), atribui esta por predefinição.
+- **Assinatura**: personalizar o rodapé de um e-mail aquando da sua redação (apelido, nome próprio, cargo ocupado, frases, imagens...).
+- **Assinatura HTML**: ativa o formato HTML na assinatura.
 
 > [!alert]
-> 
-> Preencher a caixa de **E-mail** com um endereço de e-mail diferente daquele em que está ligado é considerado um usurpação de identidade eletrónica (*spoofing*). O endereço IP utilizado para o envio pode ser "banido" e/ou considerado "SPAM" junto dos seus destinatários. 
+>
+> Preencher a caixa **E-mail** com um endereço de e-mail diferente daquele com o qual está ligado é considerado uma usurpação de identidade eletrónica (*spoofing*). O endereço IP utilizado para o envio corre o risco de ser "banido" e/ou considerado como "spam" pelos seus destinatários.
 
 #### Adicionar uma assinatura <a name="signature"></a>
 
-Por predefinição, a casa `assinatura` é em "texto em claro". Este formato não permite uma edição avançada ou a inserção de uma imagem na sua assinatura. Para beneficiar das opções de edição avançada para uma assinatura, aconselhamos que ative o modo HTML ao clicar em **Assinatura HTML** no quadro de introdução.
+Por predefinição, a caixa `assinatura` está em "texto simples". Este formato não permite uma edição avançada nem inserir uma imagem na sua assinatura. Para beneficiar das opções de edição avançada para uma assinatura, é aconselhável ativar o modo HTML clicando em **Assinatura HTML** sob a caixa de introdução.
 
 > [!warning]
-> 
-> Assim, se a assinatura estiver em formato HTML, será necessário passar para HTML para a redação de um e-mail. Pode ativar esta opção por predefinição para cada redação de e-mail, a partir da secção `Definições`{.action} da interface Roundcube.
-> Clique em `Preferências`{.action} na coluna da esquerda e, a seguir, em `Composição de mensagens`{.action}. Para a menção **Redigir e-mails HTML**, selecione `Sempre`.
+>
+> Por conseguinte, se a assinatura estiver em formato HTML, será necessário passar para o modo HTML para a redação de um e-mail. Pode ativar esta opção por predefinição para cada redação de e-mail, a partir da secção `Definições`{.action} da interface Roundcube.
+> Clique em `Preferências`{.action} na coluna da esquerda e, em seguida, em `Redação de e-mails`{.action}. Para a menção **Redigir e-mails em HTML**, selecione `Sempre`.
 >
 
-Para inserir uma imagem numa assinatura, a imagem deve ser alojada num servidor (alojamento OVHcloud ou outro).<br>
-**A transmissão de uma imagem a partir de um computador não permitirá a sua visualização**.
+Para inserir uma imagem numa assinatura, a imagem deve estar alojada num servidor (um alojamento OVHcloud ou outro).<br>
+**Carregar uma imagem a partir de um computador não permitirá a sua apresentação**.
 
-Clique no botão `< >`{.action} na barra de ferramentas HTML e insira o seguinte código, substituindo `your-image-url` pelo endereço (URL) da imagem e `text-if-image-is-not-displayed` por um texto que substitui a imagem se esta não puder ser apresentada.
+Clique no botão `< >`{.action} na barra de ferramentas HTML e, em seguida, insira o seguinte código, substituindo `your-image-url` pelo endereço (URL) da imagem e `text-if-image-is-not-displayed` por um texto que substitua a imagem caso esta não possa ser apresentada.
 
-```bash
+```html
 <img src="your-image-url" border="0" alt="text-if-image-is-not-displayed" />
 ```
 
 ![alojamento](images/roundcube08.png){.thumbnail}
 
-### Diretório de contactos <a name="contact-book"></a>
+### Livro de contactos <a name="contact-book"></a>
 
-Clique em `Contactos`{.action}, na barra superior, para aceder ao diretório de contactos. Esta é dividida em **3 colunas**:
+Clique em `Contactos`{.action}, na barra superior, para aceder ao livro de contactos. Este está dividido em **3 colunas**:
 
-- **Grupos**: no diretório de endereços, pode criar grupos para classificar os contactos.
-- **Contactos**: visualize os contactos do diretório de endereços ou do grupo selecionado.
-- **Propriedades do contacto** ou **Adicionar um contacto**: esta janela surge quando um contacto é selecionado ou quando está em criação. Pode ler ou alterar as informações de um contacto.
+- **Grupos**: no livro de endereços, pode criar grupos para classificar os contactos.
+- **Contactos**: visualize os contactos do livro de endereços ou do grupo selecionado.
+- **Propriedades do contacto** ou **Adicionar um contacto**: esta janela apresenta-se quando um contacto é selecionado ou está em criação. Aí pode ler ou modificar as informações de um contacto.
 
 ![alojamento](images/roundcube09.png){.thumbnail}
 
 #### Grupos <a name="group"></a>
 
-Os grupos são subcategorias do diretório de endereços. Permitem classificar os contactos em subconjuntos. Por exemplo, poderá encontrar mais facilmente um contacto num grupo que criou do que no conjunto do seu diretório de endereços. Isto também permite-lhe enviar um e-mail adicionando um grupo ao destinatário, em vez de adicionar um a um os contactos do grupo.
+Os grupos são subcategorias do livro de endereços. Permitem classificar os contactos em subconjuntos. Por exemplo, encontrará mais facilmente um contacto num grupo que tenha criado do que no conjunto do seu livro de endereços. Permitem-lhe também enviar um e-mail adicionando um grupo como destinatário, em vez de adicionar um a um os contactos do grupo.
 
-Para criar um grupo, clique no botão `+`{.action} no fundo da coluna `Grupos`. Defina o nome do grupo e clique em `Guardar`{.action} para validar.
+Para criar um grupo, clique no botão `+`{.action} no fundo da coluna `Grupos`. Defina o nome do grupo e, em seguida, clique em `Guardar`{.action} para validar.
 
 ![alojamento](images/roundcube10.png){.thumbnail}
 
-Para afetar um contacto a um dos grupos, selecione um contacto na coluna `Contactos` e, na janela que aparecer, clique no separador `Grupos`{.action}. Selecione o grupo que deseja atribuir ao contacto.
+Para atribuir um contacto a um dos grupos, selecione um contacto na coluna `Contactos` e, na janela que aparece, clique no separador `Grupos`{.action}. Assinale o grupo que pretende atribuir ao contacto.
 
 #### Contactos <a name="contacts"></a>
 
-Na coluna `Grupos`, selecione o diretório de endereços ou um dos grupos.
+Na coluna `Grupos`, selecione o livro de endereços ou um dos grupos.
 
 > [!primary]
-> 
-> Quando criar um contacto a partir de um grupo selecionado, o contacto será automaticamente adicionado ao grupo.
+>
+> Quando cria um contacto a partir de um grupo selecionado, o contacto será automaticamente adicionado ao grupo.
 
 Clique no botão `+`{.action} no fundo da coluna `Contactos` para criar um contacto.
 
 ![alojamento](images/roundcube11.png){.thumbnail}
 
-De seguida, introduza as informações do contacto.
+Em seguida, preencha as informações do contacto.
 
 > [!primary]
-> Pode adicionar campos adicionais através do menu pendente `Adicionar campo...`{.action}, situado sob os campos `Primeiro nome` e `Endereço`.
+> Pode adicionar campos suplementares através do menu pendente `Adicionar campo...`{.action}, situado por baixo dos campos `Nome próprio` e `Endereço`.
 
-#### Importar Contatos <a name="import-contacts"></a>
+#### Importar contactos <a name="import-contacts"></a>
 
-Na janela `Contatos`{.action}, na barra superior, clique em `importar`{.action} para abrir a janela de importação.
+A partir da janela `Contactos`{.action}, na barra superior, clique em `Importar`{.action} para abrir a janela de importação.
 
-- `Importar do arquivo`: selecione um ficheiro CSV ou um ficheiro vCard no seu computador. Os contactos no seio de um ficheiro CSV devem ser separados por vírgulas. O ficheiro não deve ter mais de 20MB.
-- `Importar atribuições do grupo`: Se os contactos do seu ficheiro estão repartidos por grupos, pode ativar esta opção para encontrar esta organização ou deixar esta opção em `nenhuma` para que nenhum grupo seja afetado aos contactos.
-- `Substituir o catálogo de endereços atual`: Se o diretório já estiver configurado, recomendamos que o exporte antes de selecionar esta opção ou de ter a certeza de que quer substituí-lo definitivamente.
+- `Importar de um ficheiro`: selecione um ficheiro CSV ou um ficheiro vCard no seu computador. Os contactos num ficheiro CSV devem ser separados por vírgulas. O ficheiro não deve ter mais de 20 MB.
+- `Importar as atribuições de grupo`: se os contactos do seu ficheiro estiverem distribuídos por grupos, pode ativar esta opção para manter esta organização ou deixar esta opção em `nenhuma` para que nenhum grupo seja atribuído aos contactos.
+- `Substituir todo o livro de endereços`: se já estiver configurado um livro, aconselhamo-lo a exportá-lo antes de assinalar esta opção ou a certificar-se de que pretende substituí-lo definitivamente.
 
 ![alojamento](images/roundcube-import-contact.png){.thumbnail}
 
-#### Exportar os Contactos Roundcube <a name="export-contacts"></a>
+#### Exportar os contactos <a name="export-contacts"></a>
 
-Na janela `Contatos`{.action}, no canto superior direito, clique no botão `Exportar`{.action}, no botão virado para baixo.
+A partir da janela `Contactos`{.action}, na barra superior, clique na seta apontada para baixo à direita do botão `Exportar`{.action}.
 
 Pode escolher entre:
 
-- `Exportar todos`{.action} e o conjunto dos contactos será então exportado num ficheiro **.vcf**.
-- `Exportar a selecionados`{.action} para exportar unicamente os elementos que escolheu na coluna `Contatos`{.action}.
+- `Exportar tudo`{.action} e o conjunto dos contactos será então exportado num ficheiro **.vcf**.
+- `Exportar a seleção`{.action} para exportar unicamente os elementos que tiver escolhido na coluna `Contactos`{.action}.
 
 ![alojamento](images/roundcube-export-contact.png){.thumbnail}
 
-### Respostas (templates) <a name="responses"></a>
+### Respostas (modelos) <a name="responses"></a>
 
-Esta função permite criar templates de resposta aquando da redação de um e-mail.
+Esta função permite criar modelos de respostas aquando da redação de um e-mail.
 
-No Roundcube, clique em `Definiçõe`{.action} na barra superior e, a seguir, em `Respostas`{.action} na coluna da esquerda.
+A partir do Roundcube, clique em `Definições`{.action} na barra superior e, em seguida, em `Respostas`{.action} na coluna da esquerda.
 
 Para adicionar uma resposta, clique no botão `+`{.action} no fundo da coluna `Respostas`.
 
 ![alojamento](images/roundcube12.png){.thumbnail}
 
 > [!primary]
-> 
-> As "respostas" são redigidas no formato de "texto em branco".
+>
+> As "respostas" redigem-se no formato de "texto simples".
 
-### Adicionar uma resposta automática ou resposta automática <a name="automatic-respond"></a>
+### Adicionar um respondedor ou resposta automática <a name="automatic-respond"></a>
 
-Deseja adicionar uma resposta automática ao seu endereço de e-mail quando estiver ausente ou indisponível. Esta função não pode ser ativada a partir do webmail, mas sim a partir da [Área de Cliente OVHcloud](/links/manager), na interface de gestão dos seus endereços de e-mail. Consulte o guia "[Criar uma resposta automática para o endereço de e-mail](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/feature_auto_responses)".
+Pretende adicionar uma resposta automática ao seu endereço de e-mail quando estiver ausente ou indisponível. Esta função não pode ser ativada a partir do webmail, mas sim a partir da sua [área de cliente OVHcloud](/links/manager), na interface de gestão dos seus endereços de e-mail. Consulte o nosso guia "[Criar um respondedor para o seu endereço de e-mail](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/feature_auto_responses/)".
 
-### Alterar a palavra-passe do endereço de e-mail <a name="password"></a>
+### Alterar a palavra-passe do seu endereço de e-mail <a name="password"></a>
 
-Para alterar a palavra-passe do seu endereço de e-mail, deve ligar-se à [Área de Cliente OVHcloud](/links/manager), na interface de gestão dos seus endereços de e-mail. Consulte o guia "[Alterar a palavra-passe de um endereço de e-mail](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_change_password)".
+Para alterar a palavra-passe do seu endereço de e-mail, deve ligar-se à sua [área de cliente OVHcloud](/links/manager), na interface de gestão dos seus endereços de e-mail. Consulte o nosso guia "[Alterar a palavra-passe de um endereço de e-mail](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_change_password/)".
 
 ### Redação de um e-mail <a name="email-writing"></a>
 
-No separador `E-mail`{.action} na barra superior, clique em `Ediger`{.action}.
+A partir do separador `E-mail`{.action} na barra superior, clique em `Redigir`{.action}.
 
-Na janela de redação de um e-mail, encontram-se os seguintes campos: 
+Na janela de redação de um e-mail, encontram-se os seguintes campos:
 
-- **Remetente**: escolher uma [identidade](#identity) para definir o remetente.
-- **Para+**: adicionar destinatários e/ou um [grupo de destinatários](#group).
+- **De**: escolher uma [identidade](#identity) para definir o remetente.
+- **Para**: adicionar destinatários e/ou um [grupo de destinatários](#group). O botão `+`{.action} à direita do campo permite introduzir vários endereços.
 
 > [!primary]
-> 
-> O campo **"A"** não deve exceder os 100 destinatários, incluindo os contactos contidos num [grupo](#group).
+>
+> O campo **"Para"** não deve exceder os 100 destinatários, incluindo os contactos contidos num [grupo](#group).
 
-- **Adicionar Cc+**: adicionar destinatários em cópia simples.
-- **Adicionar Bcc+**: adicionar destinatários em cópia oculta. Os outros destinatários do e-mail não verão estes no Cci.
-- **Adicionar Responder para**: enviar o e-mail aos destinatários.
-- **Tipo de editor**:  
-    - `Texto claro`: apenas do texto sem qualquer forma.
-    - `HTML`: texto com forma. Aparecerá uma barra de ferramentas HTML acima da janela de introdução.
+- **Cc**: através do botão `Adicionar Cc`{.action}, adicionar destinatários em cópia simples.
+- **Bcc**: através do botão `Adicionar Bcc`{.action}, adicionar destinatários em cópia oculta. Os outros destinatários do e-mail não verão os que estão em Bcc.
+- **Reencaminhar para**: através do botão `Adicionar Reencaminhar para`{.action}, reencaminhar o e-mail a destinatários.
+- **Tipo de editor**:
+    - `Texto simples`: apenas texto sem formatação.
+    - `HTML`: texto com formatação. Aparece uma barra de ferramentas HTML acima da janela de introdução.
 - **Prioridade** do e-mail.
-- **Recibo de leitura**: é pedido ao destinatário um aviso de receção.
-- **Recibo de entrega** quando o e-mail foi enviado ao destinatário.
-- **Guardar mensagem enviada em**: escolher a pasta na qual uma cópia do e-mail será armazenada.
+- **Aviso de abertura do e-mail**: é solicitado um aviso de receção ao destinatário.
+- **Notificação de estado de entrega** quando o e-mail tiver sido devidamente entregue ao destinatário.
+- **Guardar o e-mail enviado em**: escolher a pasta na qual será guardada uma cópia do e-mail.
 
 Na barra superior, estão disponíveis as seguintes ações:
 
 - `Cancelar`{.action} a redação de um e-mail com um pedido de confirmação.
 - `Enviar`{.action} um e-mail.
-- `Guardar`{.action} um e-mail na pasta especial "rascunho"
-- ` Corretor ortográfico`{.action}, para verificar o texto, com um menu que permite a escolha da língua.
+- `Guardar`{.action} um e-mail na pasta especial "rascunho".
+- `Ortografia`{.action}, para verificar o texto, com um menu que permite escolher o idioma.
 - `Anexar`{.action} um ficheiro a um e-mail.
-- `Assinatura`{.action}: adiciona a assinatura associada [à identidade](#identity) selecionada.
-- `Respostas`{.action}: adiciona um template pré-registado na parte [Respostas](#responses).
+- `Assinatura`{.action}: adiciona a assinatura associada à [identidade](#identity) selecionada.
+- `Respostas`{.action}: adiciona um modelo pré-registado na parte [Respostas](#responses).
 
 ![alojamento](images/roundcube13.png){.thumbnail}
 
-### Casos de utilização <a name="usecase"></a>
+### Casos práticos <a name="usecase"></a>
 
 #### Falha na verificação do pedido
 
-Ao tentar acessar seu webmail Roundcube, você encontrará a seguinte mensagem:
+Encontra a seguinte mensagem ao tentar aceder ao seu webmail Roundcube:
 
 ```console
 FALHA NA VERIFICAÇÃO DO PEDIDO
 Para sua proteção, o acesso a este recurso está protegido contra ataques CSRF.
-Se você ver isso, provavelmente você não se desconectou antes de sair do aplicativo da Web.
-A interação humana é agora necessária para continuar.
+Se vê esta mensagem, provavelmente não terminou sessão antes de sair da aplicação web.
+É necessária uma interação humana para continuar.
 Contacte o administrador do seu servidor.
 ```
 
-Como indicado nesta mensagem, a sua conta de e-mail já se encontra online. Estamos a falar "sessão". Isto significa que a sua conta de e-mail já se encontra em curso de utilização aos olhos do servidor de e-mail e que esta sessão anterior deve ser encerrada Certifique-se de que a sua conta de e-mail não está já aberta no roundcube. Esvazie igualmente os dados em cache no seu browser.
+Tal como é indicado na mensagem, a sua conta de e-mail é considerada como já ligada. Falamos aqui de "sessão". Isto significa que a sua conta de e-mail já está a ser utilizada do ponto de vista do servidor de e-mail e que esta sessão anterior deve ser fechada. Verifique se a sua conta de e-mail não está já aberta no Roundcube. Esvazie igualmente os dados em cache no seu browser.
 
 ## Quer saber mais?
 
@@ -425,10 +447,10 @@ Como indicado nesta mensagem, a sua conta de e-mail já se encontra online. Esta
 
 [Alterar a palavra-passe de um endereço de e-mail MX Plan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_change_password)
 
-[Criar uma resposta automática para o endereço de e-mail](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/feature_auto_responses)
+[Criar um respondedor para o seu endereço de e-mail](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/feature_auto_responses/)
 
 [Criar filtros para os seus endereços de e-mail](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/feature_filters)
 
 [Utilizar os reencaminhamentos de e-mail](/pages/web_cloud/email_and_collaborative_solutions/common_email_features/feature_redirections)
 
-Fale com nossa [comunidade de utilizadores](/links/community).
+Fale com a nossa [comunidade de utilizadores](/links/community).

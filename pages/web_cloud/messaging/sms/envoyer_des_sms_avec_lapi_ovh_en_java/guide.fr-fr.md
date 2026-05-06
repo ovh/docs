@@ -1,6 +1,6 @@
 ---
-title: 'Envoyer des SMS avec l’API OVHcloud en Java'
-excerpt: 'Comment envoyer des SMS avec l’api OVHcloud RESTful en Java'
+title: "Envoyer des SMS avec l’API OVHcloud en Java"
+excerpt: "Découvrez comment configurer un environnement de développement Java et envoyer votre premier SMS avec l’API RESTful OVHcloud pas à pas"
 updated: 2020-06-01
 ---
 
@@ -30,7 +30,7 @@ Dans ce guide, deux méthodes seront appelées :
 
 Des identifiants sont nécessaires pour consommer l’API SMS. Ces identifiants sont créés une fois pour identifier l’application qui va envoyer des SMS. La durée de vie de ces identifiants est paramétrable.
 
-Créez vos identifiants de Script (all keys at once) sur cette page: [https://eu.api.ovh.com/createToken/](https://eu.api.ovh.com/createToken/?GET=/sms/&GET=/sms/*/jobs&POST=/sms/*/jobs) (Cette URL vous permet d'avoir automatiquement les bons droits pour les étapes décrites dans ce guide).
+Créez vos identifiants de Script (all keys at once) sur cette page : [https://auth.eu.ovhcloud.com/api/createToken](https://auth.eu.ovhcloud.com/api/createToken?GET=/sms/&GET=/sms/*/jobs&POST=/sms/*/jobs) (Cette URL vous permet d'avoir automatiquement les bons droits pour les étapes décrites dans ce guide).
 
 ![création des tokens](images/img_2479.jpg){.thumbnail}
 
@@ -40,7 +40,7 @@ Dans cet exemple simple, nous récupérons les droits pour avoir accès aux info
 - GET/sms/\*/jobs
 - POST /sms/\*/jobs
 
-L’étoile (\*) active les appels à ces méthodes pour tous vos comptes SMS. Vous pouvez également restreindre les appels à un seul compte, si vous gérez plusieurs comptes SMS sur votre compte OVHcloud, en remplaçant « /sms » par « /sms/NOM-DU-COMPTE » et « /sms/\*/ » par «/sms/NOM-DU-COMPTE/».
+L’étoile (\*) active les appels à ces méthodes pour tous vos comptes SMS. Vous pouvez également restreindre les appels à un seul compte, si vous gérez plusieurs comptes SMS sur votre compte OVHcloud, en remplaçant « /sms » par « /sms/NOM-DU-COMPTE » et « /sms/\*/ » par « /sms/NOM-DU-COMPTE/ ».
 
 Vous récupérez alors vos identifiants pour votre script :
 

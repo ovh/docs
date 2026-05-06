@@ -1,12 +1,12 @@
 ---
-title: '3CX - Configuration et utilisation'
+title: "3CX - Configuration et utilisation"
 excerpt: "Découvrez comment configurer un SIP Trunk OVHcloud avec l'IPBX 3CX et deux DDI"
 updated: 2025-10-16
 ---
 
 ## Objectif
 
-Pour configurer le 3CX Phone System avec un SIP Trunk et deux DDI (**D**irect **D**ialling **I**nward), nous allons suivre le sénario suivant : 
+Pour configurer le 3CX Phone System avec un SIP Trunk et deux DDI (**D**irect **D**ialling **I**nward), nous allons suivre le scénario suivant : 
 
 >
 > - 1 SIP Trunk : XX XX XX XX 90
@@ -28,12 +28,23 @@ Pour configurer le 3CX Phone System avec un SIP Trunk et deux DDI (**D**irect **
 - Un [softphone](/pages/web_cloud/phone_and_fax/voip/register-sip-softphone) ou un téléphone SIP
 - [3CX](https://www.3cx.fr/) installé, activé et à jour. 
 
-Obtenez gratuitement 3CX [en cliquant ici](https://www.3cx.fr/pabx/download-pabx-ip/).
+Obtenez gratuitement 3CX en accédant à la [page de téléchargement 3CX](https://www.3cx.fr/pabx/download-pabx-ip/).
+
+<!-- CP-NAV-START:telecom-voip-fax -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [VoIP & Fax](/links/control-panel/telecom-voip-fax)
+- **Pour accéder à vos services :** `Télécom`{.action} > `VoIP & Fax`{.action} > Sélectionnez votre groupe de téléphonie
+
+---
+<!-- CP-NAV-END:telecom-voip-fax -->
 
 ## En pratique
 
 > [!warning]
-> 
+>
 > OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
 >
 > Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/) et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section [« Aller plus loin »](#go-further) de ce guide.
@@ -49,13 +60,13 @@ Obtenez gratuitement 3CX [en cliquant ici](https://www.3cx.fr/pabx/download-pabx
 >>
 >> Connectez-vous à l'interface d'administration de 3CX.
 >> 
->> ![3CX Phone Systeme](images/3cx_phone_system-login.png){.thumbnail}
+>> ![3CX Phone System](images/3cx_phone_system-login.png){.thumbnail}
 >>
 > **Étape 2**
 >>
 >> Cliquez sur `Trunks SIP`{.action}, puis sur `Ajouter Trunk SIP`{.action}.
 >>
->> ![3CX Phone Systeme](images/3cx_phone_system-trunk01.png){.thumbnail}
+>> ![3CX Phone System](images/3cx_phone_system-trunk01.png){.thumbnail}
 >>
 > **Étape 3**
 >>
@@ -66,25 +77,24 @@ Obtenez gratuitement 3CX [en cliquant ici](https://www.3cx.fr/pabx/download-pabx
 >> - Dans le champ **Numéro principal**, entrez le numéro de votre trunk (dans notre exemple : `0033XXXXXXX90`).
 >> - Vérifiez les informations et cliquez sur `OK`{.action}.
 >>
->> ![3CX Phone Systeme](images/3cx_phone_system-trunk02.png){.thumbnail}
+>> ![3CX Phone System](images/3cx_phone_system-trunk02.png){.thumbnail}
 >>
 > **Étape 4**
 >>
 >> L'écran suivant affiche les informations de configuration du trunk (proxy, ports, etc.).
 >>
->> ![3CX Phone Systeme](images/3cx_phone_system-trunk03.png){.thumbnail}
+>> ![3CX Phone System](images/3cx_phone_system-trunk03.png){.thumbnail}
 >>
+>> <!-- CP-STEPS-START:sip-trunk-credentials-in-cp -->
 >> > [!primary]
->> > Pour retrouver vos informations de connexion :
+>> > Pour retrouver vos informations de connexion depuis votre espace client :
 >> >
->> > 1. Connectez-vous à votre [espace client OVHcloud](/links/manager) et cliquez sur `Telecom`{.action}.
->> > 1. Cliquez sur `VoIP & Fax`{.action} puis sur le groupe de facturation contenant votre ligne SIP Trunk.
->> > 1. Cliquez sur l'onglet `Services`{.action} puis sur la ligne SIP Trunk concernée.
->> > 1. Dans l'onglet `Gestion`{.action}, cliquez sur `Informations générales`{.action}.
+>> > Accédez à la section [VoIP & Fax](/links/control-panel/telecom-voip-fax) puis cliquez sur le groupe de facturation contenant votre ligne SIP Trunk. Cliquez sur l'onglet `Services`{.action} puis sur la ligne SIP Trunk concernée. Dans l'onglet `Gestion`{.action}, cliquez sur `Informations générales`{.action}.
 >> >
 >> > Vous retrouvez alors, dans la partie « Informations SIP », le **Login**, **Domain** et **Proxy sortant** de votre ligne SIP Trunk.
 >>
->> Saississez les informations d'authentification du trunk dans le formulaire en complétant les champs suivants :
+>> <!-- CP-STEPS-END:sip-trunk-credentials-in-cp -->
+>> Saisissez les informations d'authentification du trunk dans le formulaire en complétant les champs suivants :
 >>
 >> - **Nom d'hôte** : Renseignez le **Domain** de votre trunk.
 >> - **Proxy sortant** : Renseignez le **Proxy sortant** de votre trunk.
@@ -98,7 +108,7 @@ Obtenez gratuitement 3CX [en cliquant ici](https://www.3cx.fr/pabx/download-pabx
 >>
 >> Pour ce faire, nous sélectionnons l'option  `Messagerie vocale de l'extension` avec l'extension `1000...`, pendant et en dehors des heures de bureau.
 >>
->> ![3CX Phone Systeme](images/3cx_phone_system-trunk04.png){.thumbnail}
+>> ![3CX Phone System](images/3cx_phone_system-trunk04.png){.thumbnail}
 >>
 > **Étape 6**
 >>
@@ -108,7 +118,7 @@ Obtenez gratuitement 3CX [en cliquant ici](https://www.3cx.fr/pabx/download-pabx
 >> - Entrez les DDI souhaités.
 >> - Cliquez sur `OK`{.action} en haut de la page pour sauvegarder la configuration.
 >>
->> ![3CX Phone Systeme](images/3cx_phone_system-trunk07.png){.thumbnail}
+>> ![3CX Phone System](images/3cx_phone_system-trunk07.png){.thumbnail}
 >>
 >> > [!success]
 >> > La création du trunk sur 3CX est maintenant terminée !
@@ -124,20 +134,20 @@ Configurez l’extension 1000 pour lui permettre de présenter le DDI XX XX XX X
 - Dans le champ **Numéro présenté**, saisissez le DDI à présenter. Dans notre cas : 0033XXXXXXX26.
 - Cliquez sur `OK`{.action} pour prendre en compte la modification.
 
-![3CX Phone Systeme](images/3cx_phone_system-trunk05.png){.thumbnail}
+![3CX Phone System](images/3cx_phone_system-trunk05.png){.thumbnail}
 
 Créez et configurez l'extension 1001 :
 
 - Dans l'interface d'administration de 3CX, rendez-vous sur la catégorie `Utilisateurs`{.action}.
 - Cliquez sur le bouton `Ajouter`{.action}.
-- Dans le champ **Extension**, Saisissez `1001`.
-- Saisissez ensuite les Nom, Prénom, Adresse mail et numéro de mobile sur la fiche de création de l'extension. 
+- Dans le champ **Extension**, saisissez `1001`.
+- Saisissez ensuite les Nom, Prénom, Adresse e-mail et numéro de mobile sur la fiche de création de l'extension.
 - Dans le champ **Identifiant d'appelant transmis**, saisissez le DDI à présenter. Dans l'exemple du guide, il s'agit du 0033XXXXXXX10.
 - Cliquez sur `Appliquer`{.action} pour prendre en compte la modification.
 
-![3CX Phone Systeme](images/3cx_phone_system-trunk06.png){.thumbnail}
+![3CX Phone System](images/3cx_phone_system-trunk06.png){.thumbnail}
 
-### Création des règles entrantes pour les DDI.
+### Création des règles entrantes pour les DDI
 
 Créez des règles d'appel entrant lorsque les DDI sont appelés. 
 
@@ -148,7 +158,7 @@ Créez des règles d'appel entrant lorsque les DDI sont appelés.
 - Dans le champ **Extension**, choisissez la 1000.
 - Cliquez sur `OK`{.action} pour valider la configuration.
 
-![3CX Phone Systeme](images/3cx_phone_system-trunk08.png){.thumbnail}
+![3CX Phone System](images/3cx_phone_system-trunk08.png){.thumbnail}
 
 Pour configurer le second DDI il vous faut appliquer la même procédure, à la différence que vous devez changer le DDI présenté et l'extension cible de l'appel.
 

@@ -21,8 +21,18 @@ However, if they are not configured correctly, the 1-click module installation m
 ## Requirements
 
 - A compatible [web hosting plan](/links/web/hosting)
-- Access to the [OVHcloud Control Panel](/links/manager)
 - The [1-click module](/pages/web_cloud/web_hosting/cms_install_1_click_modules) feature used to install your website
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Web hosting](/links/control-panel/web-hosting)
+- **Navigation path:** `Web Cloud`{.action} > `Hosting plans`{.action} > Select your web hosting plan
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## Instructions
 

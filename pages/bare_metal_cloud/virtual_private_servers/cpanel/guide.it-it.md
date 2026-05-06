@@ -6,9 +6,9 @@ updated: 2025-09-11
 
 ## Obiettivo
 
-cPanel è un pannello di controllo che facilita la gestione degli hosting Web. Rende le operazioni complesse più accessibili, anche per i nuovi utenti. Offre un'ampia gamma di funzionalità, ad esempio per la gestione: 
+cPanel è un pannello di controllo che facilita la gestione degli hosting Web. Rende le operazioni complesse più accessibili, anche per i nuovi utenti. Offre un'ampia gamma di funzionalità, ad esempio per la gestione:
 
-- delle email
+- delle e-mail
 - dei domini
 - database
 - della sicurezza
@@ -21,7 +21,17 @@ Grazie a un’interfaccia grafica che permette di automatizzare i parametri, l�
 ## Prerequisiti
 
 - Disporre di una soluzione [VPS recente](/links/bare-metal/vps) con un [OS compatibile con cPanel](/links/bare-metal/vps-os).
-- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager).
+
+<!-- CP-NAV-START:baremetal-vps -->
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [VPS management](/links/control-panel/baremetal-vps)
+- **Percorso di navigazione:** `Bare Metal Cloud`{.action} > `Server Privati Virtuali`{.action} > Seleziona il tuo VPS
+
+---
+<!-- CP-NAV-END:baremetal-vps -->
 
 > [!warning]
 > Questa funzionalità non è attualmente disponibile per i server privati virtuali nelle [Local Zones](/links/bare-metal/vps-lz).
@@ -34,7 +44,7 @@ Se hai già un VPS e vuoi installarlo, puoi reinstallarlo dal tuo [Spazio Client
 > [!warning]
 >
 > Se riinstalli un VPS, tutti i dati salvati sul VPS verranno persi.
-> 
+>
 
 Per installare il tuo server cPanel, ordina un VPS con la distribuzione cPanel.
 
@@ -44,7 +54,7 @@ Quando il VPS è pronto, ricevi un’email con le credenziali di accesso al serv
 
 ```
  |    Le tue applicazioni:
- |    Application: cpanel
+ |    Applicazione: cpanel
  |    Puoi accedere a cPanel da https://<ip>:2087/<session_parameters>
 ```
 
@@ -52,7 +62,7 @@ Quando il VPS è pronto, ricevi un’email con le credenziali di accesso al serv
 
 Una volta ricevuta l’email con il link univoco, clicca su questo link per effettuare la configurazione iniziale. Se il link è già scaduto, connettiti in [SSH](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction) al server ed esegui il comando `sudo whmlogin` per generare un nuovo link.
 
-L’URL generato dal comando `sudo whmlogin` ti permette di accedere senza informazioni di identificazione (utente e password) alla tua interfaccia WHM. WHM è un livello aggiuntivo di cPanel. Dopo aver completato gli step successivi, è possibile accedere a cPanel.
+L’URL generato dal comando `sudo whmlogin` ti permette di accedere senza informazioni di identificazione (utente e password) alla tua interfaccia WHM. WHM è un livello aggiuntivo di cPanel. Dopo aver completato gli step successivi, puoi accedere a cPanel.
 
 #### Step 1: leggi e accetta le condizioni di utilizzo di cPanel
 
@@ -70,7 +80,7 @@ Indica i server di posta e di nome (nameserver) che vuoi definire sul server VPS
 
 ![cPanel](images/change_root.png){.thumbnail}
 
-Da questo momento è possibile accedere al server in SSH utilizzando l’utente root con la password definita.
+Da questo momento puoi accedere al server in SSH utilizzando l’utente root con la password definita.
 
 ### Creare un account cPanel dall'interfaccia WHM
 
@@ -90,7 +100,7 @@ Verrai reindirizzato alla tua interfaccia cPanel.
 
 ![cPanel](images/manager_cpanel.png){.thumbnail}
 
-Ora è possibile utilizzare cPanel. Per ulteriori informazioni su cPanel, consultare la [documentazione ufficiale](https://docs.cpanel.net/).
+Ora puoi utilizzare cPanel. Per ulteriori informazioni su cPanel, consultare la [documentazione ufficiale](https://docs.cpanel.net/).
 
 > [!primary]
 >

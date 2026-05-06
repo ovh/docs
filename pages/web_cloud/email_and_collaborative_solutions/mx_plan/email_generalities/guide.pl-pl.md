@@ -1,7 +1,7 @@
 ---
 title: 'Pierwsze kroki z usługą MX Plan'
 excerpt: 'Dowiedz się, jak rozpocząć korzystanie z usługi MX Plan'
-updated: 2025-06-26
+updated: 2026-03-05
 ---
 
 <style>
@@ -30,14 +30,21 @@ Właśnie zakupiłeś usługę MX Plan. Pozwala ona na korzystanie z kont e-mail
 ## Wymagania początkowe
 
 - Posiadanie pakietu MX Plan Jest ona dostępna przez: oferta [hostingu](/links/web/hosting), bezpłatny [Darmowy hosting 100M](/links/web/domains-free-hosting) lub oferta MX Plan.
-- Dostęp do [Panelu klienta OVHcloud](/links/manager).
+
+<!-- CP-NAV-START:web-mx-plan -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [MX Plan](/links/control-panel/web-mx-plan)
+- **Ścieżka nawigacji:** `Web Cloud`{.action} > `MX Plan`{.action} > Wybierz usługę MX Plan
+
+---
+<!-- CP-NAV-END:web-mx-plan -->
 
 ## W praktyce <a name="instructions"></a>
 
-1. Zaloguj się do [Panelu klienta OVHcloud](/links/manager).
-1. Przejdź do sekcji `Web Cloud`{.action}.
 1. Kliknij opcję `MX Plan`{.action}.
-1. Wybierz odpowiednią domenę.
 1. **Następnie postępuj zgodnie z technologią poczty elektronicznej używaną przez Twoją usługę MX Plan**.
 
 > [!primary]
@@ -107,7 +114,7 @@ Aby dowiedzieć się, jak utworzyć konto e-mail, kliknij zakładkę odpowiadaj�
 
 Po utworzeniu kont e-mail możesz zacząć z nich korzystać. Możesz to zrobić na dwa sposoby: za pomocą interfejsu webmail w przeglądarce internetowej lub przy użyciu programu pocztowego.
 
-### Korzystanie z interfejsu Webmail <a name="consult-emails-webmail"></a>
+#### Korzystanie z interfejsu Webmail <a name="consult-emails-webmail"></a>
 
 Przejdź do strony "[Logowanie do interfejsu webmail](/links/web/email)", następnie wprowadź odpowiedni adres e-mail i hasło. Następnie kliknij przycisk `Logowanie`{.action}.
 
@@ -116,7 +123,7 @@ Wybierz kartę odpowiadającą technologii e-mail w Twojej usłudze MX Plan:
 > [!tabs]
 > **Roundcube**
 >>
->> Otrzymasz interfejs podobny do poniższego obrazka z napisem "Rouncube" w lewym górnym rogu.
+>> Otrzymasz interfejs podobny do poniższego obrazka z napisem "Roundcube" w lewym górnym rogu.
 >> Zapoznaj się z interfejsem Roundcube i jego wykorzystaniem w przewodniku "[Korzystanie z adresu e-mail przy użyciu interfejsu Roundcube](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_roundcube)".
 >>
 >> ![email](images/mxplan-webmail-roundcube01.png){.thumbnail .w-500}
@@ -180,18 +187,18 @@ Wybierz kartę odpowiadającą Twojemu typowi konfiguracji:
 > [!tabs]
 > **Konfiguracja IMAP**
 >>
->> - **Nazwa użytkownika**: Wpisz pełny adres e-mail **complete**.
+>> - **Nazwa użytkownika**: Wpisz pełny adres e-mail **pełny**.
 >> - **Hasło**: Wpisz hasło wybrane dla tego konta e-mail.
->> - **Serwer EUROPE (ruch przychodzący)**: imap.mail.ovh.net **ou** ssl0.ovh.net.
+>> - **Serwer EUROPE (ruch przychodzący)**: imap.mail.ovh.net **lub** ssl0.ovh.net.
 >> - **Serwer USA/AZJA-PACYFIK (ruch przychodzący)**: imap.mail.ovh.ca.
 >> - **Port**: 993.
 >> - **Typ bezpieczeństwa**: SSL/TLS.
 >>
 > **Konfiguracja POP**
 >>
->> - **Nazwa użytkownika**: Wpisz pełny adres e-mail **complete**.
+>> - **Nazwa użytkownika**: Wpisz pełny adres e-mail **pełny**.
 >> - **Hasło**: Wpisz hasło wybrane dla tego konta e-mail.
->> - **Serwer EUROPE (ruch przychodzący)**: pop.mail.ovh.net **ou** ssl0.ovh.net.
+>> - **Serwer EUROPE (ruch przychodzący)**: pop.mail.ovh.net **lub** ssl0.ovh.net.
 >> - **Serwer amerykański/AZJA-PACYFIK (ruch przychodzący)**: pop.mail.ovh.ca.
 >> - **Port**: 995.
 >> - **Typ bezpieczeństwa**: SSL/TLS.
@@ -202,9 +209,9 @@ Do wysyłki e-maili należy użyć następujących ustawień **SMTP**:
 
 **Konfiguracja SMTP**
 
-- **Nazwa użytkownika**: Wpisz pełny adres e-mail **complete**.
+- **Nazwa użytkownika**: Wpisz pełny adres e-mail **pełny**.
 - **Hasło**: Wpisz hasło wybrane dla tego konta e-mail.
-- **Serwer EUROPE (ruch wychodzący)**: smtp.mail.ovh.net **ou** ssl0.ovh.net.
+- **Serwer EUROPE (ruch wychodzący)**: smtp.mail.ovh.net **lub** ssl0.ovh.net.
 - **Serwer amerykański/AZJA-PACYFIK (ruch wychodzący)**: smtp.mail.ovh.ca.
 - **Port**: 465.
 - **Typ bezpieczeństwa**: SSL/TLS.
@@ -275,8 +282,6 @@ Wybierz kartę odpowiadającą technologii e-mail w Twojej usłudze MX Plan:
 [Użyj przekierowań poczty e-mail](/pages/web_cloud/email_and_collaborative_solutions/common_email_features/feature_redirections)
 
 [MX Plan - Utwórz automatyczną odpowiedź na adres e-mail](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/feature_auto_responses)
-
-[Korzystaj z przekierowań email](/pages/web_cloud/email_and_collaborative_solutions/common_email_features/feature_redirections)
 
 W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](/links/partner).
  

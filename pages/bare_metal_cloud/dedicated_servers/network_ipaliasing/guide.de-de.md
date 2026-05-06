@@ -1,6 +1,6 @@
 ---
-title: "Konfiguration von IP-Aliasing"
-excerpt: "Erfahren Sie hier, wie Sie Additional IPs zu Ihrer Konfiguration hinzufügen"
+title: "Dedicated Server - IP-Aliasing konfigurieren"
+excerpt: "Fügen Sie Additional IP-Adressen zu Ihrem OVHcloud Dedicated Server hinzu und konfigurieren Sie diese für Multi-Site- oder Dienst-Hosting."
 updated: 2025-12-04
 ---
 
@@ -41,7 +41,7 @@ IP-Aliasing ist eine spezielle Konfiguration im Netzwerk Ihres Servers, mit der 
 ## Voraussetzungen
 
 - Sie verfügen über einen [Dedicated Server](/links/bare-metal/bare-metal).
-- Sie verfügen mindestens eine [Additional IP](/links/network/additional-ip).
+- Sie verfügen über mindestens eine [Additional IP](/links/network/additional-ip).
 - Sie haben administrativen Zugriff (sudo) auf Ihren Server über SSH oder GUI.
 
 > [!warning]
@@ -425,7 +425,7 @@ In unseren Beispielen verwenden wir den Texteditor `nano`. Bei einigen Betriebss
 >>
 >> **Schritt 2: Zusätzliche IP-Informationen hinzufügen**
 >>
->> Geben Sie Ihre Additional IP in der Form "xxx.xxx.xxx.xxx" im Feld "New IP or IP range to add" ein.
+>> Geben Sie Ihre Additional IP in der Form "xxx.xxx.xxx.xxx" im Feld `New IP or IP range to add` ein.
 >>
 >> Klicken Sie auf `255.255.255.255` als Subnetzmaske und dann auf `Submit`{.action}.
 >>
@@ -511,7 +511,7 @@ In unseren Beispielen verwenden wir den Texteditor `nano`. Bei einigen Betriebss
 >> 2. Klicken Sie mit der rechten Maustaste auf Ihre Netzwerkverbindung, in unserem Beispiel `Ethernet 2`{.action}.
 >> 3. Klicken Sie auf `Properties`{.action}.
 >> 4. Wählen Sie `Internet Protocol Version 4 (TCP/IPv4)`{.action} aus und klicken Sie auf `Properties`{.action}.
->> 5. Klicken Sie auf `Use the following IP address`{.action} und geben Sie die Haupt-IP-Adresse Ihres Servers, die Subnetzmaske und das Standardgateway ein, die Sie über den Befehl `ipconfig`{.action} erhalten haben. (Im Feld “Preferred DNS Server” geben Sie 213.186.33.99 ein).
+>> 5. Klicken Sie auf `Use the following IP address`{.action} und geben Sie die Haupt-IP-Adresse Ihres Servers, die Subnetzmaske und das Standardgateway ein, die Sie über den Befehl `ipconfig` erhalten haben. (Im Feld “Preferred DNS Server” geben Sie 213.186.33.99 ein).
 >>
 >> ![Internet Protocol Version 4 (TCP/IPv4) Properties](images/configure-main-ip.png){.thumbnail}
 >>
@@ -551,7 +551,7 @@ In unseren Beispielen verwenden wir den Texteditor `nano`. Bei einigen Betriebss
 >>
 >> **Schritt 1: Auf die IP-Verwaltung von Plesk zugreifen**
 >>
->> Wählen Sie im Plesk Konfigurationspanel `Tools & Settings`{.action} im linken Menü aus.
+>> Wählen Sie im Plesk Konfigurationspanel `Tools & Resources`{.action} im linken Menü aus.
 >>
 >> ![Zugang zur Verwaltung der IP-Adressen](images/pleskip1.png){.thumbnail}
 >>
@@ -563,18 +563,18 @@ In unseren Beispielen verwenden wir den Texteditor `nano`. Bei einigen Betriebss
 >>
 >> ![IP-Informationen hinzufügen](images/Plesk-2024.png){.thumbnail}
 >>
->> Geben Sie Ihre Additional IP in der Form `xxx.xxx.xxx.xxx/32` in das Feld "IP address and subnet mask" ein und klicken Sie dann auf `OK`{.action}.
+>> Geben Sie Ihre Additional IP in der Form `xxx.xxx.xxx.xxx/32` in das Feld `IP address and subnet mask` ein und klicken Sie dann auf `OK`{.action}.
 >>
 >> ![IP-Informationen hinzufügen](images/Plesk-2024-1.png){.thumbnail}
 >>
 >> **Schritt 3: Aktuelle IP-Konfiguration überprüfen**
 >>
->> Überprüfen Sie im Bereich "IP Addresses" ob die Additional IP korrekt hinzugefügt wurde.
+>> Überprüfen Sie im Bereich "IP Addresses", ob die Additional IP korrekt hinzugefügt wurde.
 >>
 >> ![aktuelle IP-Konfiguration](images/Plesk-2024-2.png){.thumbnail}
 >>
 
-#### Fehlerbehebung
+### Fehlerbehebung
 
 Starten Sie den Server neu. Wenn keine Verbindung zwischen dem öffentlichen Netzwerk und Ihrer Alias IP hergestellt werden kann, und Sie ein Netzwerkproblem vermuten, versetzen Sie den Server in den [Rescue-Modus](/pages/bare_metal_cloud/dedicated_servers/rescue_mode) und konfigurieren Sie den Alias direkt auf dem Server.
 
@@ -584,7 +584,7 @@ Wenn Sie über SSH im Rescue-Modus auf dem Server eingeloggt sind, führen Sie f
 ifconfig eth0:0 ADDITIONAL_IP netmask 255.255.255.255 broadcast ADDITIONAL_IP up
 ```
 
-Ersetzen Sie "ADDITIONAL_IP" mit Ihrer Additional IP-Adresse.
+Ersetzen Sie `ADDITIONAL_IP` mit Ihrer Additional IP-Adresse.
 
 Um die Verbindung zu testen, senden Sie einen Ping an Ihre Additional IP. Wenn dies Rescue-Modus funktioniert, bedeutet es wahrscheinlich, dass ein Konfigurationsfehler besteht. Wenn die IP-Adresse immer noch nicht reagiert, erstellen Sie ein Ticket in Ihrem [OVHcloud Help Center](https://help.ovhcloud.com/csm?id=csm_get_help) mit folgenden Angaben:
 
@@ -595,5 +595,7 @@ Um die Verbindung zu testen, senden Sie einen Ping an Ihre Additional IP. Wenn d
 ## Weiterführende Informationen
 
 [Network Bridge einrichten](/pages/bare_metal_cloud/dedicated_servers/network_bridging)
+
+- [Additional IP auf einem Dedicated Server umziehen](/pages/bare_metal_cloud/dedicated_servers/move-failover-ip)
 
 Treten Sie unserer [User Community](/links/community) bei.

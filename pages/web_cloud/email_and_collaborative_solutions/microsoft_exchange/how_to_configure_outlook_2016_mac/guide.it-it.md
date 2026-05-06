@@ -10,9 +10,20 @@ Gli account Exchange possono essere configurati su client di posta compatibili p
 
 ## Prerequisiti
 
-- Disporre di una soluzione [Exchange](/links/web/emails)
+- Disporre di una soluzione [Exchange](/links/web/emails-exchange)
 - Aver installato l'applicazione Microsoft Outlook sul proprio Mac
 - Disporre delle credenziali associate allíaccount email da configurare
+
+<!-- CP-NAV-START:web-exchange -->
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [Exchange](/links/control-panel/web-exchange)
+- **Percorso di navigazione:** `Web Cloud`{.action} > `Exchange`{.action} > Seleziona la tua piattaforma
+
+---
+<!-- CP-NAV-END:web-exchange -->
 
 > [!primary]
 >

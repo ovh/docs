@@ -14,6 +14,17 @@ In the Public Cloud universe you can use either **Additional IP** (previously la
 
 Both services provide a flexible way to manage public access to your services. They can stay infrastructure-agnostic and be scaled up or migrated whenever needed.
 
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Ścieżka nawigacji:** `Public Cloud`{.action} > Wybierz projekt
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
+
 ## Public Cloud IP concepts
 
 ### Additional IP (previously labelled as Failover IP)
@@ -42,7 +53,7 @@ More information about configuring Floating IP is available on the [Public Cloud
 
 ### How to obtain public IP addresses in the OVHcloud Control Panel
 
-In the [OVHcloud Control Panel](/links/manager), in the `Public Cloud`{.action} section, go to the **Network** section of the left-hand menu and select `Public IPs`{.action}. Here you can manage Additional IP and Floating IP addresses according to your needs.
+In the **Network** section of the left-hand menu, select `Public IPs`{.action}. Here you can manage Additional IP and Floating IP addresses according to your needs.
 
 ![Concept IP](images/concip.png){.thumbnail}
 

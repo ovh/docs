@@ -18,11 +18,21 @@ Zu diesem Zweck können Sie anderen OVHcloud Kunden-Accounts Lese- oder Schreibr
 ## Voraussetzungen
 
 - Sie haben eine [Public Cloud](/links/public-cloud/public-cloud) Instanz in Ihrem OVHcloud Account.
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 
-## In der praktischen Anwendung 
+## In der praktischen Anwendung
 
-Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein, gehen Sie in den Bereich `Public Cloud`{.action} und wählen Sie das betreffende Public Cloud Projekt aus. Klicken Sie auf `Kontakt & Rechte`{.action} im Bereich **Einstellungen**.
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direkter Link:** [Public Cloud Projekte](/links/control-panel/publiccloud-projects)
+- **Navigationspfad:** `Public Cloud`{.action} > Wählen Sie Ihr Projekt aus
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
+
+Klicken Sie auf `Kontakt & Rechte`{.action} im Bereich **Einstellungen**.
 
 Auf dieser Seite können Sie die zu Ihrem Projekt gehörenden Kontakte einsehen.
 

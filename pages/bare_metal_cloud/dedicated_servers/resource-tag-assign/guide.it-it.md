@@ -1,6 +1,6 @@
 ---
-title: 'Come assegnare un tag a un server Bare Metal'
-excerpt: "Scopri come creare e modificare tag per ogni server dedicato dallo Spazio Cliente OVHcloud"
+title: "Come assegnare un tag a un server Bare Metal"
+excerpt: "Crea e assegna tag ai tuoi server dedicati OVHcloud tramite lo Spazio Cliente per una gestione organizzata delle tue risorse"
 updated: 2025-07-01
 ---
 
@@ -20,19 +20,21 @@ Ogni tag è composto da due parti:
 ## Prerequisiti
 
 - Disporre di un [server dedicato](/links/bare-metal/bare-metal).
-- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager).
+
+<!-- CP-NAV-START:baremetal-dedicated-servers -->
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [Server dedicati](/links/control-panel/baremetal-dedicated-servers)
+- **Percorso di navigazione:** `Bare Metal Cloud`{.action} > `Server dedicati`{.action} > Seleziona il tuo server
+
+---
+<!-- CP-NAV-END:baremetal-dedicated-servers -->
 
 ## Procedura
 
 ### Assegnare un tag a un server dedicato dallo Spazio Cliente
-
-Per assegnare un tag a un server:
-
-1. Accedi allo [Spazio Cliente OVHcloud](/links/manager).
-1. Accedi alla sezione `Bare Metal Cloud`{.action}.
-1. Clicca su `Server dedicati`{.action} e seleziona il tuo server dalla lista.
-
-Di default, verrai reindirizzato alla scheda `Informazioni generali`{.action}.
 
 ![Informazioni generali](images/general_information.png){.thumbnail}
 

@@ -1,7 +1,7 @@
 ---
-title: "Gestionar los mensajes de correo automatizados"
+title: "Gestionar los mensajes de correo automatizados de su alojamiento web"
 excerpt: "Descubra cómo realizar el seguimiento y la gestión de los emails automatizados enviados desde un alojamiento web de OVHcloud"
-updated: 2025-10-21
+updated: 2026-04-01
 ---
 
 ## Objetivo
@@ -25,28 +25,33 @@ Los emails automatizados son mensajes enviados a través de scripts. Generalment
 ## Requisitos
 
 - Tener contratado un plan de [hosting de OVHcloud](/links/web/hosting).
-- Estar conectado a su [área de cliente de OVHcloud](/links/manager).
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [Alojamientos](/links/control-panel/web-hosting)
+- **Ruta de navegación:** `Web Cloud`{.action} > `Alojamientos`{.action} > Seleccione su alojamiento web
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## Procedimiento
 
-El seguimiento y la gestión del correo automatizado de su alojamiento web de OVHcloud se realizan desde su [área de cliente de OVHcloud](/links/manager).
+### Presentación del apartado «Scripts de correo electrónico»
 
-Haga clic en las fichas siguientes para ver cada una de las **3** etapas.
+<!-- CP-STEPS-START:email-scripts-overview -->
+Para acceder al apartado «Scripts de correo electrónico», haga clic en las fichas siguientes para ver cada una de las **3** etapas.
 
 > [!tabs]
 > **Etapa 1**
 >>
->> Conéctese a su [área de cliente de OVHcloud](/links/manager) y acceda a la sección `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Etapa 2**
->>
->> Haga clic en el menú `Alojamientos`{.action} y seleccione el alojamiento web correspondiente.
+>> Acceda a la página [Alojamientos](/links/control-panel/web-hosting) y elija el alojamiento web correspondiente.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Etapa 3**
+> **Etapa 2**
 >>
 >> En la nueva página, haga clic en la pestaña `Más`{.action} y haga clic en `Scripts de correo electrónico`{.action}.
 >>
@@ -54,45 +59,46 @@ Haga clic en las fichas siguientes para ver cada una de las **3** etapas.
 >>
 >> ![More tab 2](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/more-2.png){.thumbnail}
 >>
->> Se abrirá una página en la que podrá consultar y gestionar los mensajes de correo automatizados enviados desde su [alojamiento web de OVHcloud](/links/web/hosting).
-
-### Presentación del apartado "Scripts de correo electrónico"
-
-![hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/email-scripts/tab.png){.thumbnail}
-
-La página muestra varios datos que le permiten visualizar la actividad del envío de mensajes de correo automatizados generados desde sus scripts:
-
-- **Estado del servicio**: estado actual del servicio que realiza el envío de mensajes de correo automatizados de su alojamiento web:
-    - Si es verde (*"Activo"* o *"Force"*), significa que los envíos están operativos. 
-    - Si es rojo (*"Inactivo"*, *"Bounce"* o *"SPAM"*), los envíos ya no se efectúan. <br>
-
-    Según el estado, la gestión de los envíos será diferente.
-
-- **Informe de errores a**: recibirá la etiqueta en la dirección de correo electrónico que usted elija. Establezca esta opción utilizando el botón `Cambiar el destinatario`{.action}. en el que se indican los mensajes de correo enviados desde el alojamiento web que han vuelto a OVHcloud. El botón `Mensajes en error`{.action} también permite consultar estos informes en cualquier momento a la derecha de la página `Scripts de correo electrónico`{.action}.
-- **Total de mensajes enviados**: número total de mensajes de correo automatizados enviados desde la creación del alojamiento web de OVHcloud.
-- **Emails enviados hoy**: número total de mensajes de correo automatizados enviados hoy.
-- **Total de mensajes en error**: número total de mensajes de correo automatizados enviados desde la creación del alojamiento web que han vuelto a OVHcloud.
-- **Histórico de mensajes enviados**: gráfico que muestra el historial de mensajes enviados desde el alojamiento web en los días anteriores.
-
-A la derecha, varios botones permiten gestionar el envío de mensajes de correo automatizados desde el alojamiento web. En función del estado del servicio, algunas opciones pueden no estar disponibles.
-
-- **Eliminar los mesajes**: borra los emails que haya en la cola de espera y desbloquea el envío de emails. Por motivos de confidencialidad, OVHcloud no puede acceder a los mensajes de correo electrónico que se encuentren en la cola. Solo podrá visualizar estos mensajes de correo electrónico si han sido previamente registrados en la base de datos de su sitio web antes de ser enviados.
-- **Mensajes en error** : permite el acceso a los logs de los últimos mensajes de correo electrónico que se hayan encontrado en error de envío. Encontrará las direcciones de correo electrónico afectadas con el error asociado. Atención: Este historial no se restablecerá aunque decida `Eliminar los mesajes`{.action} o `Desbloquear el envío`{.action}.
-- **Bloquear el envío** : bloquea la distribución de los envíos de mensajes de correo automatizados de su alojamiento web. Los emails generados por sus scripts después del bloqueo no se enviarán, sino que se conservarán en una cola de espera durante un máximo de 72 horas.
-- **Desbloquear el envío**: desbloquea el envío de los emails automatizados de su alojamiento web. Los mensajes de correo presentes en la cola de espera también se reenviarán.
-
-Para realizar la acción deseada, haga clic en el botón correspondiente y seleccione `Aceptar`{.action}. En algunos casos, la acción deseada puede tardar varias decenas de minutos en ser plenamente efectiva.
+> **Etapa 3**
+>>
+>> Esta página le permite realizar el seguimiento y la gestión de los mensajes de correo automatizados enviados desde su [alojamiento web de OVHcloud](/links/web/hosting).
+>>
+>> ![Página Scripts de correo electrónico del alojamiento web](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/email-scripts/tab.png){.thumbnail}
+>>
+>> La página muestra varios datos que le permiten visualizar la actividad del envío de mensajes de correo automatizados generados desde sus scripts:
+>>
+>> - **Estado del servicio**: estado actual del servicio que realiza el envío de mensajes de correo automatizados de su alojamiento web:
+>>     - Si es verde (*«Activo»* o *«Force»*), significa que los envíos están operativos.
+>>     - Si es rojo (*«Inactivo»*, *«Bounce»* o *«spam»*), los envíos ya no se efectúan.
+>>
+>>     Según el estado, la gestión de los envíos será diferente.
+>>
+>> - **Informe de errores a**: recibirá la etiqueta en la dirección de correo electrónico que usted elija. Establezca esta opción utilizando el botón `Cambiar el destinatario`{.action}. Este informe contiene los mensajes de correo enviados desde el alojamiento web que han vuelto a OVHcloud con error. El botón `Mensajes en error`{.action} también permite consultar estos informes en cualquier momento a la derecha de la página `Scripts de correo electrónico`{.action}.
+>> - **Total de mensajes enviados**: número total de mensajes de correo automatizados enviados desde la creación del alojamiento web de OVHcloud.
+>> - **Emails enviados hoy**: número total de mensajes de correo automatizados enviados hoy.
+>> - **Total de mensajes en error**: número total de mensajes de correo automatizados enviados desde la creación del alojamiento web que han vuelto a OVHcloud con error.
+>> - **Histórico de mensajes enviados**: gráfico que muestra el historial de mensajes enviados desde el alojamiento web en los días anteriores.
+>>
+>> A la derecha, varios botones permiten gestionar el envío de mensajes de correo automatizados desde el alojamiento web. En función del estado del servicio, algunas opciones pueden no estar disponibles.
+>>
+>> - **Purgar los mensajes de correo**: borra los emails que haya en la cola de espera y desbloquea el envío de emails. Por motivos de confidencialidad, OVHcloud no puede acceder a los mensajes de correo electrónico que se encuentren en la cola. Solo podrá visualizar estos mensajes de correo electrónico si han sido previamente registrados en la base de datos de su sitio web antes de ser enviados.
+>> - **Mensajes en error**: permite el acceso a los logs de los últimos mensajes de correo electrónico que se hayan encontrado en error de envío. Encontrará las direcciones de correo electrónico afectadas con el error asociado. Atención: este historial no se restablecerá aunque decida `Purgar los mensajes de correo`{.action} o `Desbloquear el envío`{.action}.
+>> - **Bloquear el envío**: bloquea la distribución de los envíos de mensajes de correo automatizados de su alojamiento web. Los emails generados por sus scripts después del bloqueo no se enviarán, sino que se conservarán en una cola de espera durante un máximo de 72 horas.
+>> - **Desbloquear el envío**: desbloquea el envío de los emails automatizados de su alojamiento web. Los mensajes de correo presentes en la cola de espera también se reenviarán.
+>>
+>> Para realizar la acción deseada, haga clic en el botón correspondiente y seleccione `Aceptar`{.action}. En algunos casos, la acción deseada puede tardar varios minutos en ser plenamente efectiva.
+<!-- CP-STEPS-END:email-scripts-overview -->
 
 > [!primary]
 >
-Para evitar un uso no deseado de los mensajes de correo automatizados de su alojamiento web, le recomendamos encarecidamente que establezca un sistema de seguridad, como un "captcha", en los formularios de su sitio web que envíen mensajes de correo electrónico (por ejemplo, un formulario de contacto).
+> Para evitar un uso no deseado de los mensajes de correo automatizados de su alojamiento web, le recomendamos encarecidamente que establezca un sistema de seguridad, como un «captcha», en los formularios de su sitio web que envíen mensajes de correo electrónico (por ejemplo, un formulario de contacto).
 >
 
-Si el estado del servicio permite el envío de mensajes de correo electrónico generados desde sus scripts (*"Activo"* o *"Force"*), le recomendamos que realice las siguientes acciones:
+Si el estado del servicio permite el envío de mensajes de correo electrónico generados desde sus scripts (*«Activo»* o *«Force»*), pero estos no se envían, le recomendamos que realice las siguientes acciones:
 
-- **Comprobar los scripts de envío**: los scripts no pueden enviar mensajes de correo electrónico debido a un error de sintaxis. Compruebe el contenido de sus scripts, corríjalo si es necesario y vuelva a intentarlo.
+- **Comprobar los scripts de envío**: los scripts pueden no enviar mensajes de correo electrónico debido a un error de sintaxis. Compruebe el contenido de sus scripts, corríjalo si es necesario y vuelva a intentarlo.
 
-- **probar el envío de un email a través de un script de prueba** : cree un script de prueba que envíe un mensaje de correo electrónico a su dirección personal utilizando el siguiente código:
+- **Probar el envío de un email a través de un script de prueba**: cree un script de prueba que envíe un mensaje de correo electrónico a su dirección personal utilizando el siguiente código:
 
 ```bash
 <?php
@@ -112,11 +118,11 @@ En el caso de los `$headers`, introduzca dos veces la misma dirección de correo
 
 Si recibe el mensaje correctamente *The email has been sent successfully!* en la dirección de correo electrónico que ha definido en la línea `$to`, significa que los scripts que realizan el envío tienen errores.
 
-- **Asegúrese de que sus envíos no utilicen servidores SMTP** : no especifique ningún servidor SMTP en los parámetros de sus scripts cuando use la función "mail()" de PHP. Si dispone de una interfaz para administrar el envío de mensajes de correo desde su sitio web, deberá modificar esta configuración en la configuración de este último.
+- **Asegúrese de que sus envíos no utilicen servidores SMTP**: no especifique ningún servidor SMTP en los parámetros de sus scripts cuando use la función "mail()" de PHP. Si dispone de una interfaz para administrar el envío de mensajes de correo desde su sitio web, deberá modificar esta configuración en la configuración de este último.
 
-- **Compruebe el tamaño total de su email**: El mensaje de correo electrónico enviado no debe superar el tamaño total de **10 MB** (encapsulación y cabecera incluidos). El contenido del mensaje de correo electrónico no deberá exceder de **7/8 MB**.
+- **Compruebe el tamaño total de su email**: el mensaje de correo electrónico enviado no debe superar el tamaño total de **10 MB** (encapsulación y cabecera incluidos). El contenido del mensaje de correo electrónico no deberá exceder de **7/8 MB**.
 
-### Gestionar los estados "Inactivo", "Bounce" y "SPAM"
+### Gestionar los estados «Inactivo», «Bounce» y «spam» <a name="block-state"></a>
 
 En esta sección encontrará los detalles de cada estado que ha bloqueado la función de correo.
 
@@ -129,10 +135,10 @@ En esta sección encontrará los detalles de cada estado que ha bloqueado la fun
 > - La configuración de [el registro SPF](/pages/web_cloud/domains/dns_zone_spf) en la zona DNS del dominio.
 > - La configuración de [el registro DMARC](/pages/web_cloud/domains/dns_zone_dmarc) en la zona DNS del dominio, **solo si el servidor de destino lo requiere**.
 > - Compruebe la reputación de la dirección IP que origina el envío ([la de su alojamiento web](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_ip) en su caso), utilizando una herramienta como [MXtoolbox](https://mxtoolbox.com/) o [Spamhaus](https://check.spamhaus.org/).
-> - El mensaje de correo electrónico no contiene elementos que puedan ser interpretados como spam. Para más información, consulte la sección "[Caso 3: Envío de correos electrónicos legítimos considerados spam](#elements-list-spam)" de esta guía.
+> - El mensaje de correo electrónico no contiene elementos que puedan ser interpretados como spam. Para más información, consulte la sección «[Caso n°3: Envío de correos electrónicos legítimos considerados spam](#elements-list-spam)» de esta guía.
 > - En caso de que OVHcloud no haya bloqueado el correo electrónico y el destinatario no lo haya recibido o rechazado, póngase en contacto con el destinatario para comprobar si el mensaje se ha bloqueado en el servidor de recepción.
 
-#### El estado "Inactivo"
+#### El estado «Inactivo»
 
 Este estado se produce cuando:
 
@@ -140,26 +146,52 @@ Este estado se produce cuando:
 - se han devuelto demasiados mensajes de correo.
 - usted mismo ha desactivado la funcionalidad desde su [área de cliente de OVHcloud](/links/manager).
 
-Para desbloquear la situación, acceda a la sección `Web Cloud`{.action}, haga clic en `Alojamientos`{.action} y seleccione el alojamiento correspondiente en la lista. A continuación, abra la pestaña `Más`{.action} y haga clic en `Scripts de correo electrónico`{.action}.
+<!-- CP-STEPS-START:resolve-disabled-status -->
+Para desbloquear la situación, haga clic en las fichas siguientes para ver cada una de las **3** etapas.
 
-Haga clic en `Desbloquear el envío`{.action} y espere unos minutos a que vuelva a activar el servicio de envío.
+> [!tabs]
+> **Etapa 1**
+>>
+>> Acceda a la página [Alojamientos](/links/control-panel/web-hosting) y elija el alojamiento web correspondiente.
+>>
+> **Etapa 2**
+>>
+>> En la nueva página, haga clic en la pestaña `Más`{.action} y haga clic en `Scripts de correo electrónico`{.action}.
+>>
+> **Etapa 3**
+>>
+>> Haga clic en `Desbloquear el envío`{.action} y espere unos minutos a que vuelva a activar el servicio de envío.
+<!-- CP-STEPS-END:resolve-disabled-status -->
 
-#### El estado "Bounce"
+#### El estado «Bounce»
 
 Este estado se produce cuando un cierto porcentaje de los mensajes de correo enviados automáticamente se ha vuelto a error.
 
-Para desbloquear la situación, acceda a la sección `Web Cloud`{.action}, haga clic en `Alojamientos`{.action} y seleccione el alojamiento correspondiente en la lista. A continuación, abra la pestaña `Más`{.action} y haga clic en `Scripts de correo electrónico`{.action}.
+<!-- CP-STEPS-START:resolve-bounce-status -->
+Para desbloquear la situación, haga clic en las fichas siguientes para ver cada una de las **3** etapas.
 
-Existen dos opciones:
+> [!tabs]
+> **Etapa 1**
+>>
+>> Acceda a la página [Alojamientos](/links/control-panel/web-hosting) y elija el alojamiento web correspondiente.
+>>
+> **Etapa 2**
+>>
+>> En la nueva página, haga clic en la pestaña `Más`{.action} y haga clic en `Scripts de correo electrónico`{.action}.
+>>
+> **Etapa 3**
+>>
+>> Existen dos opciones:
+>>
+>> - Si hace clic en `Desbloquear el envío`{.action}, el estado del servicio pasará a *«Force»*. El ratio **e-mails devueltos a error / número total de mensajes enviados** autorizado antes de un bloqueo se duplicará. El envío volverá a estar operativo unos minutos después del desbloqueo.
+>> - Si hace clic en `Purgar los mensajes de correo`{.action}, se borrarán todos los mensajes de la cola de espera y el estado del servicio pasará a *«Activo»* sin duplicar la relación.
+<!-- CP-STEPS-END:resolve-bounce-status -->
 
-- Si hace clic en `Desbloquear el envío`{.action}, el estado del servicio pasará a *"Force"*. El ratio **e-mails devueltos a error / número total de mensajes enviados** autorizado antes de un bloqueo se duplicará. El envío volverá a estar operativo unos minutos después del desbloqueo.
-- Si hace clic en `Purgar los mensajes de correo`{.action}, se borrarán todos los mensajes de la cola de espera y el estado del servicio pasará a *"Activo"* sin duplicar la relación.
-
-#### El estado "SPAM"
+#### El estado «spam»
 
 Este estado se produce cuando se han enviado mensajes considerados de spam desde el alojamiento.
 
-Por lo general, el bloqueo se acompaña por el envío de un email titulado **"Abuso con su alojamiento dominio.tld"** generado automáticamente por nuestros robots de seguridad:
+Por lo general, el bloqueo se acompaña por el envío de un email titulado **«Abuso con su alojamiento dominio.tld»** generado automáticamente por nuestros robots de seguridad:
 
 ![hosting](/pages/assets/screens/email-sending-to-customer/webhosting/email-script-disabled.png){.thumbnail}
 
@@ -167,61 +199,85 @@ Existen tres posibles situaciones en relación con esta situación:
 
 - **Caso n°1: Explotación de un formulario de contacto por un robot**:
 
-Para corregir esta situación, debe proteger todos los scripts que puedan enviar correo desde su alojamiento utilizando un sistema de tipo "Captcha".
+Para corregir esta situación, debe proteger todos los scripts que puedan enviar correo desde su alojamiento utilizando un sistema de tipo «Captcha».
 
-Acceda a la sección `Web Cloud`{.action}, haga clic en `Alojamientos`{.action} y seleccione el alojamiento correspondiente en la lista. A continuación, abra la pestaña `Más`{.action} y haga clic en `Scripts de correo electrónico`{.action}.
+<!-- CP-STEPS-START:resolve-spam-case-1 -->
+Acceda a continuación al apartado «Scripts de correo electrónico» de su alojamiento. Para ello, haga clic en las fichas siguientes para ver cada una de las **3** etapas.
 
-A continuación, haga clic en `Purgar los mensajes de correo`{.action}. Esto borrará todos los mensajes de la cola de espera y el estado del servicio pasará a *"Activo"*.
+> [!tabs]
+> **Etapa 1**
+>>
+>> Acceda a la página [Alojamientos](/links/control-panel/web-hosting) y elija el alojamiento web correspondiente.
+>>
+> **Etapa 2**
+>>
+>> En la nueva página, haga clic en la pestaña `Más`{.action} y haga clic en `Scripts de correo electrónico`{.action}.
+>>
+> **Etapa 3**
+>>
+>> Haga clic en `Purgar los mensajes de correo`{.action}. Esto borrará todos los mensajes de la cola de espera y el estado del servicio pasará a *«Activo»*. En este caso, es obligatorio realizar una purga para eliminar los spam pendientes de envío.
+<!-- CP-STEPS-END:resolve-spam-case-1 -->
 
-En este caso, es obligatorio realizar una purga para eliminar los spam pendientes de envío.
-
-- **Caso n°2: inyección de archivos maliciosos en su alojamiento** :
+- **Caso n°2: Inyección de archivos maliciosos en su alojamiento**:
 
 Para corregir esta situación, debe realizar al menos las siguientes acciones:
 
 - Analice los [logs de su alojamiento](/pages/web_cloud/web_hosting/logs_and_statistics) para identificar los fallos de seguridad y los archivos infectados.
 - Elimine o corrija los archivos o módulos maliciosos.
-- Para los CMS (WordPress, Joomla, PrestaShop, Drupal...), actualice el CMS, los plugin y el tema asociados.
+- Para los CMS (WordPress, Joomla!, PrestaShop, Drupal...), actualice el CMS, los plugins y el tema asociados.
 - Proteja sus formularios de contacto con un captcha.
 
-Si utiliza un CMS, priorice el uso de plugin/tema(s) "oficial(s)".
+Si utiliza un CMS, priorice el uso de plugins/temas «oficial(s)».
 Actualice el CMS, los plugins y el tema asociados con la mayor frecuencia posible para evitar que esto vuelva a suceder.
 
-Una vez que haya contratado un plan de hosting seguro, acceda a la sección `Web Cloud`{.action}, haga clic en `Alojamientos`{.action} y seleccione el alojamiento correspondiente. A continuación, abra la pestaña `Más`{.action} y haga clic en `Scripts de correo electrónico`{.action}.
+<!-- CP-STEPS-START:resolve-spam-case-2 -->
+Una vez que haya asegurado su alojamiento, haga clic en las fichas siguientes para ver cada una de las **3** etapas.
 
-A continuación, haga clic en `Purgar los mensajes de correo`{.action}. Esto borrará todos los mensajes de la cola de espera y el estado del servicio pasará a *"Activo"*.
+> [!tabs]
+> **Etapa 1**
+>>
+>> Acceda a la página [Alojamientos](/links/control-panel/web-hosting) y elija el alojamiento web correspondiente.
+>>
+> **Etapa 2**
+>>
+>> En la nueva página, haga clic en la pestaña `Más`{.action} y haga clic en `Scripts de correo electrónico`{.action}.
+>>
+> **Etapa 3**
+>>
+>> Haga clic en `Purgar los mensajes de correo`{.action}. Esto borrará todos los mensajes de la cola de espera y el estado del servicio pasará a *«Activo»*.
+<!-- CP-STEPS-END:resolve-spam-case-2 -->
 
 En este caso, es obligatorio realizar una purga para eliminar los spam pendientes de envío.
 
-- **Caso n°3: Envío de correos legítimos considerados spam** : <a name="elements-list-spam"></a>
+- **Caso n°3: Envío de correos legítimos considerados spam** <a name="elements-list-spam"></a>
 
-Si el origen de los mensajes de correo electrónico ha provocado el bloqueo, a continuación ofrecemos algunos ejemplos de uso recomendable **para evitar** cuando envíe un mensaje de correo electrónico (de forma que no se considere demasiado "fácil" como spam):
+Si el origen de los mensajes de correo electrónico ha provocado el bloqueo, a continuación ofrecemos algunos ejemplos de uso recomendable **para evitar** cuando envíe un mensaje de correo electrónico (de forma que no se considere demasiado «fácil» como spam):
 
-- 3 palabras o más en mayúsculas en el asunto/asunto del mensaje de correo electrónico.
+- 3 palabras o más en mayúsculas en el asunto del mensaje de correo electrónico.
 - No hay asunto/texto que se indique en el mensaje de correo electrónico.
 - El mensaje de correo solo contiene una imagen de más de 1 MB y unas pocas palabras.
 - El asunto del mensaje de correo electrónico empieza por: Hi, FREE, BUY, BUYING,....
-- El mensaje de correo electrónico contiene más del 70% de espacio en blanco (abuso de la tecla "ESPACE" o "ENTRADA" del teclado).
+- El mensaje de correo electrónico contiene más del 70% de espacio en blanco (abuso de la tecla «ESPACIO» o «ENTRADA» del teclado).
 - El tipo de letra utilizado para escribir el correo es extremadamente grande.
 - El color de escritura y el color de fondo son los mismos para escribir el correo electrónico.
 - La dirección IP pública (IP de su punto de acceso a internet, por ejemplo) está listada en organismos de reputación.
-- La cabecera del mensaje enviado no cumple con los RFC de correo (estándares o estándares de correo).
+- La cabecera del mensaje enviado no cumple con los RFC de correo (estándares de correo).
 - Los enlaces del mensaje de correo electrónico son incorrectos.
-- Una URL en el correo no es segura (por ejemplo: declarada en ` https://` mientras que la URL sólo existe en `http://`)
+- Una URL en el correo no es segura (por ejemplo: declarada en `https://` mientras que la URL sólo existe en `http://`).
 - El mensaje de correo electrónico incluye términos pornográficos o que se acercan a él.
-- El email contiene un ejecutable (EXE, BAT, PIF, XML, XLSX o documentos con "macros"), aunque esté "zippé".
+- El email contiene un ejecutable (EXE, BAT, PIF, XML, XLSX o documentos con «macros»), aunque esté comprimido.
 
-Si, a pesar de ello, el estado del servicio vuelve a estar*"SPAM"*, responda al email automático que haya recibido indicando que ha hecho lo necesario.
+Si, a pesar de ello, el estado del servicio vuelve a estar *«spam»*, responda al email automático que haya recibido indicando que ha hecho lo necesario.
 
 Nuestro servicio antispam analizará la situación y nuestro soporte volverá a ofrecerle una explicación del procedimiento de desbloqueo.
 
-## Envío de emails mediante un script "SMTP" <a name="SMTP"></a>
+### Envío de emails mediante un script «SMTP» <a name="SMTP"></a>
 
 > [!warning]
 >
-La configuración, la gestión y la responsabilidad de los servicios que OVHcloud pone a su disposición recaen sobre usted. Por lo tanto, usted deberá asegurarse de que estos funcionan correctamente.
+> La configuración, la gestión y la responsabilidad de los servicios que OVHcloud pone a su disposición recaen sobre usted. Por lo tanto, usted deberá asegurarse de que estos funcionan correctamente.
 > 
-> Ponemos a su disposición la parte que viene a continuación para acompañarle lo mejor posible en tareas habituales. No obstante, si tiene alguna duda, le recomendamos que contacte con un [proveedor especializado](/links/partner). Nosotros no podremos asistirle. Más información en la sección ["Más información"](#go-further) de esta guía.
+> Sin embargo, le recomendamos que contacte con un [proveedor especializado](/links/partner) si tiene alguna duda. Nosotros no podremos asistirle. Más información en la sección [«Más información»](#go-further) de esta guía.
 >
 
 Aunque le recomendamos encarecidamente que prefiera utilizar la función "mail()" de PHP, los alojamientos compartidos permiten enviar emails pasando por un script que utiliza el protocolo SMTP (Simple Mail Transfer Protocol). El tamaño total del mensaje de correo electrónico no podrá ser superior a **10 MB** (es decir, **7/8 MB sin encapsular**).
@@ -233,14 +289,14 @@ Aunque le recomendamos encarecidamente que prefiera utilizar la función "mail()
 
 > [!primary]
 >
-> Si utiliza una dirección de correo electrónico de OVHcloud y únicamente en este caso, puede utilizar también el `SMTPSecure` *"starttls"* o *"tls"* con el `Port` **587**. Sin embargo, el `SMTPSecure` *"ssl"* con el `Port` **465** sigue siendo la configuración que debe primar sobre nuestra infraestructura.
+> Si utiliza una dirección de correo electrónico de OVHcloud y únicamente en este caso, puede utilizar también el `SMTPSecure` *«starttls»* o *«tls»* con el `Port` **587**. Sin embargo, el `SMTPSecure` *«ssl»* con el `Port` **465** sigue siendo la configuración que debe primar sobre nuestra infraestructura.
 > 
 
 ## Más información <a name="go-further"></a>
 
 [Consultar los logs de su alojamiento](/pages/web_cloud/web_hosting/logs_and_statistics)
 
-[Corregir la página "403 Forbidden" que aparece en su sitio web](/pages/web_cloud/web_hosting/diagnostic_403_forbidden)
+[Corregir la página «403 Forbidden» que aparece en su sitio web](/pages/web_cloud/web_hosting/diagnostic_403_forbidden)
 
 [Restaurar el espacio de almacenamiento FTP de su alojamiento](/pages/web_cloud/web_hosting/ftp_save_and_backup)
 

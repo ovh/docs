@@ -15,7 +15,7 @@ Our infrastructure also allows you to configure IPv6 on your virtual machines.
 > [!warning]
 > OVHcloud provides services that you are responsible for. Since we have no access to these machines, we are not their administrators and cannot provide you with assistance. You are responsible for your own software and security management.
 >
-> We have provided you with this guide in order to help you with common tasks. However, we recommend contacting a [specialist provider](/links/partner) if you experience any difficulties or doubts when it comes to managing, using or securing your server. You can find more information in the “Go further” section of this guide.
+> We have provided you with this guide to help you with common tasks. However, we recommend contacting a [specialist provider](/links/partner) if you experience any difficulties or doubts when it comes to managing, using or securing your server. You can find more information in the “Go further” section of this guide.
 >
 
 ## Requirements
@@ -25,21 +25,32 @@ Our infrastructure also allows you to configure IPv6 on your virtual machines.
 - You must have all the information related to your IPv6 (prefix, gateway, etc.).
 - Basic knowledge of SSH and networking.
 
+<!-- CP-NAV-START:baremetal-dedicated-servers -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Dedicated Servers](/links/control-panel/baremetal-dedicated-servers)
+- **Navigation path:** `Bare Metal Cloud`{.action} > `Dedicated servers`{.action} > Select your server
+
+---
+<!-- CP-NAV-END:baremetal-dedicated-servers -->
+
 ## Instructions
 
 The following sections contain the configurations of the distributions we currently offer and the most commonly used distributions/operating systems. The first step is always to connect to your server via SSH or via a GUI (RDP for a Windows server) connection session.
 
-On dedicated servers, the first IPv6 is declared as 2607:5300:xxxx:xxxx::/64. For example, if we have assigned your server the IPv6 range: `2607:5300:xxxx:xxxx::/64`, the first IPv6 on your server is: `2607:5300:xxxx:xxxx::/64`.
+On dedicated servers, the first IPv6 is declared as `2607:5300:xxxx:xxxx::/64`. For example, if we have assigned your server the IPv6 range: `2607:5300:xxxx:xxxx::/64`, the first IPv6 on your server is: `2607:5300:xxxx:xxxx::/64`.
 
-Before you begin, and in order to use the same terminology during the changes, please read the table below. It references terms that we will use in this documentation:
+Before you begin, review the table below for the terminology used in this guide:
 
 |Term|Description|Example|
 |---|---|---|
 |YOUR_IPV6|This is an IPv6 address of the IPv6 block assigned to your server|2607:5300:xxxx:xxxx::1|
 |IPv6_PREFIX|This is the prefix (or *netmask*) of your IPv6 block, usually /64 or /56|2607:5300:xxxx:xxxx::/64|
-|IPv6_GATEWAY|This is the gateway (or *gateway*) of your IPv6 block|2607:5300:xxxx:xx:ff:ff:ff:ff:ff or fe80::1|
+|IPv6_GATEWAY|This is the gateway of your IPv6 block|2607:5300:xxxx:xxff:ff:ff:ff:ff or fe80::1|
 
-In our examples, we will use the `nano` text editor. You can of course use the text editor of your choice.
+In our examples, we will use the `nano` text editor. You can use any text editor.
 
 ### Default Gateway
 
@@ -49,8 +60,6 @@ The first step is to retrieve the IPv6 gateway assigned to your server. Two meth
 - Get network information via the APIs
 
 #### Via the OVHcloud Control Panel
-
-Log in to your [OVHcloud Control Panel](/links/manager), go to the `Bare Metal Cloud`{.action} section, and select your server under the `Dedicated servers`{.action} section.
 
 The IPv6 gateway assigned to your server is displayed in the `Network` section of the `General information`{.action} tab.
 
@@ -68,9 +77,9 @@ Execute the following API call, specifying the internal name of the server (exam
 >
 
 > [!success]
-> Please note that the preceeding "0s" can be deleted in an IPv6 gateway.
+> The preceding `0`s can be removed from an IPv6 gateway.
 >
-> Example: IPv6_GATEWAY : `2607:5300:60:62ff:00ff:00ff:00ff:00ff` can also be written as `2607:5300:60:62ff:ff:ff:ff:ff:ff`.
+> Example: IPv6_GATEWAY: `2607:5300:60:62ff:00ff:00ff:00ff:00ff` can also be written as `2607:5300:60:62ff:ff:ff:ff:ff`.
 
 ### Prepare the host
 
@@ -117,7 +126,7 @@ Select the existing network and click `Edit`{.action}.
 
 ![container configuration](images/edit_network.png){.thumbnail}
 
-Fill in the IPV6 fields with the correct information.
+Fill in the IPv6 fields with the correct information.
 
 ![container configuration](images/configure_ipv6_container.png){.thumbnail}
 
@@ -195,7 +204,7 @@ Save your changes to the config file and exit the editor.
 Apply the configuration:
 
 ```bash
-sudo nano netplan apply
+sudo netplan apply
 ```
 
 To test your IPv6 connectivity, run the `ping` command at `2001:4860:4860::8888`:
@@ -215,13 +224,13 @@ sudo nano /etc/network/interfaces
 Next, configure the IPv6 address of your choice by replacing *YOUR_IPV6*, *IPV6_PREFIX* and *IPV6_GATEWAY* with your own values. Replace `ens18` with your interface name.
 
 ```console
-auto-lo
+auto lo
 iface lo inet loopback
 
 auto ens18
 iface ens18 inet6 static
 address YOUR_IPV6/IPV6_PREFIX
-IPV6_GATEWAY gateway
+gateway IPV6_GATEWAY
 ```
 
 Save your changes to the config file and exit the editor.
@@ -245,7 +254,7 @@ NetworkManager has previously stored network profiles in ifcfg format in this di
 Once you are logged in to your virtual machine, the first step is to access the configuration file:
 
 ```bash
-sudo /etc/NetworkManager/system-connections
+cd /etc/NetworkManager/system-connections
 ```
 
 Use the `ls` command to display the network configuration file. In our example, our file is named `ens18.nmconnection`.

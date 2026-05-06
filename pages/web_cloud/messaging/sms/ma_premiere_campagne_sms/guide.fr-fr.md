@@ -1,6 +1,6 @@
 ---
-title: Ma première campagne SMS
-excerpt: Découvrez comment effectuer une première campagne d’envoi de SMS
+title: "Ma première campagne SMS"
+excerpt: "Découvrez comment effectuer une première campagne d’envoi de SMS"
 updated: 2022-08-05
 ---
 
@@ -10,20 +10,28 @@ OVHcloud met à votre disposition des outils intégrés à votre espace client a
 
 ## Prérequis
 
-- Disposer d’un compte SMS OVHcloud avec des crédits SMS.
-- Être connecté à l'[espace client OVHcloud](/links/manager-telecom), partie `Télécom`{.action} puis `SMS`{.action}.
+- Disposer d'un compte SMS OVHcloud avec des crédits SMS.
+
+<!-- CP-NAV-START:telecom-sms -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [SMS](/links/control-panel/telecom-sms)
+- **Pour accéder à vos services :** `Télécom`{.action} > `SMS`{.action} > Sélectionnez votre compte SMS
+
+---
+<!-- CP-NAV-END:telecom-sms -->
 
 ![espace client Telecom SMS](/pages/assets/screens/control_panel/product-selection/telecom/tpl-telecom-03-fr-sms.png){.thumbnail}
 
 ## En pratique
 
-Connectez-vous à votre [espace client OVHcloud](/links/manager) puis sélectionnez `Télécom`{.action}. Cliquez ensuite sur `SMS`{.action} puis choisissez votre compte SMS .
-
 La barre d'outils ainsi que les raccourcis vous permettront d'accéder aux fonctionnalités principales pour envoyer votre campagne de SMS.
 
 ![firstsms](images/firstsms01.png){.thumbnail}
 
-### Étape 1 : ajouter des contacts
+### Étape 1 : Ajouter des contacts
 
 #### Ajout d'une liste de contacts
 
@@ -45,15 +53,15 @@ Pour ajouter un carnet d'adresses, cliquez sur l'onglet `Contacts`{.action} puis
 
 Consultez le guide [Gérer mes carnets d'adresses SMS](/pages/web_cloud/messaging/sms/gerer_mes_carnets_dadresses_sms) afin d'en savoir plus.
 
-### Étape 2 : créer un expéditeur
+### Étape 2 : Créer un expéditeur
 
 Par défaut, l'envoi de vos SMS depuis un compte OVHcloud en France se fait depuis un numéro court permettant la réponse. Il peut être plus intéressant de formuler la demande d'un expéditeur alphanumérique, depuis l'onglet `Expéditeurs`{.action}, afin que vos SMS soient envoyés au nom de votre société ou de votre organisme.
 
 ![firstsms](images/firstsms05.png){.thumbnail}
 
-À cet effet, vous pouvez consulter [la section dédiée au choix de votre expéditeur SMS au sein du guide "Envoyer des sms depuis mon espace client".](/pages/web_cloud/messaging/sms/envoyer_des_sms_depuis_mon_espace_client#etape-3-choisir-votre-expediteur-sms)
+À cet effet, vous pouvez consulter [la section dédiée au choix de votre expéditeur SMS au sein du guide « Envoyer des sms depuis mon espace client »](/pages/web_cloud/messaging/sms/envoyer_des_sms_depuis_mon_espace_client#etape-3-choisir-votre-expediteur-sms).
 
-### Étape 3 : l'envoi d'une campagne SMS
+### Étape 3 : L'envoi d'une campagne SMS
 
 L'onglet `Message et campagne`{.action} vous permettra d'accéder aux options d'envoi, à l'historique de vos SMS envoyés et reçus ainsi qu'à vos envois de SMS planifiés dans le cadre d'envois différés.
 

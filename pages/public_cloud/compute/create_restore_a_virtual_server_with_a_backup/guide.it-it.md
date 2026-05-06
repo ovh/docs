@@ -17,7 +17,17 @@ Ripristinare un’istanza utilizzando un backup è necessario, ad esempio, se ha
 ## Prerequisiti
 
 - Disporre del backup di [un’istanza Public Cloud](/links/public-cloud/instance-backup). A questo proposito, consulta [la guida dedicata alla creazione di un backup](/pages/public_cloud/compute/save_an_instance)
-- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Percorso di navigazione:** `Public Cloud`{.action} > Seleziona il tuo project
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## Procedura
 
@@ -36,7 +46,6 @@ Ripristinare un’istanza utilizzando un backup è necessario, ad esempio, se ha
 
 > [!tabs]
 > Via lo Spazio Cliente OVHcloud
->> Accedi al tuo [Spazio Cliente OVHcloud](/links/manager), vai alla sezione `Public Cloud`{.action} e seleziona il progetto Public Cloud desiderato.<br>
 >> Clicca quindi su `Instance backup`{.action} nella barra di navigazione a sinistra sotto **Compute**.
 >>
 >> ![public-cloud-instance-backup](images/restorebackup01.png){.thumbnail}
@@ -135,7 +144,6 @@ Ripristinare un’istanza utilizzando un backup è necessario, ad esempio, se ha
 
 > [!tabs]
 > Via lo Spazio Cliente OVHcloud
->> Accedi al tuo [Spazio Cliente OVHcloud](/links/manager), vai alla sezione `Public Cloud`{.action} e seleziona il progetto Public Cloud desiderato.<br>
 >> Clicca quindi su `Instanze`{.action} nella barra di navigazione a sinistra sotto **Compute**.
 >>
 >> ![public-cloud-instance-backup](images/restorebackup04.png){.thumbnail}

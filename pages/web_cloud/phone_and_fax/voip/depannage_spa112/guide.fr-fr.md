@@ -1,5 +1,6 @@
 ---
-title: Dépannage SPA112
+title: "Dépannage SPA112"
+excerpt: "Découvrez comment diagnostiquer et résoudre les problèmes courants de votre adaptateur Cisco SPA112 OVHcloud"
 flag: hidden
 updated: 2018-03-26
 ---
@@ -18,15 +19,15 @@ L'origine de cette situation se situe :
 
 Soit dans le raccordement de la prise électrique (vérifiez que l'appareil, raccordé sur une autre prise murale, a le même comportement)
 
-Soit dans le chargeur qui permet d'alimenter le SPA112. Si vous avez plusieurs équipement identique, inversez le changeur. Si non, n'hésitez pas à employer une alimentation identique : 5V - 2A
+Soit dans le chargeur qui permet d'alimenter le SPA112. Si vous avez plusieurs équipements identiques, inversez le chargeur. Sinon, n'hésitez pas à employer une alimentation identique : 5V - 2A
 
 S'il s'avère que votre adaptateur est défaillant, nous vous prions de vous rapprocher du support technique par téléphone ou par mail pour procéder à un échange SAV.
 
 ------------------------------------------------------------------------
 
-## Le voyant Line 1 de mon boîtier est complétement éteint {#le-voyant-line-1-de-mon-boîtier-est-complétement-éteint}
+## Le voyant Line 1 de mon boîtier est complètement éteint {#le-voyant-line-1-de-mon-boîtier-est-complètement-éteint}
 
-Le fait que le voyant Phone 1 soit éteint signifie que votre ligne OVH n'est pas enregistrée (authentifiée) dans le SPA112. Autrement dit, le boîtier ne communique pas avec le serveur de téléphonie. Aucune chance que vous puissiez émettre ou recevoir un appel via votre ligne.
+Le fait que le voyant Phone 1 soit éteint signifie que votre ligne OVHcloud n'est pas enregistrée (authentifiée) dans le SPA112. Autrement dit, le boîtier ne communique pas avec le serveur de téléphonie. Aucune chance que vous puissiez émettre ou recevoir un appel via votre ligne.
 
 Nous vous invitons à vérifier que l'origine du comportement ne se situe pas sur votre réseau local. Pour ce faire, branchez l'équipement sur un autre réseau local (sur la box d'un ami/ d'un voisin).
 
@@ -38,15 +39,15 @@ Si le phénomène persiste, reconfigurez le à l'aide du guide "[Reconfiguration
 
 Lorsque le voyant Téléphone 1 clignote en vert, de manière régulière, c'est que le combiné raccordé sur Phone 1 est en prise de ligne, décroché. Si toutefois il s'agit d'un fax, alors le télécopieur tente de prendre la ligne.
 
-Pour vérifier cette hypothèse, débranchez toutes les prises raccordées au SPA112 puis rebranchez uniquement l'alimentation.Le boîtier met environ une minute à démarrer.
+Pour vérifier cette hypothèse, débranchez toutes les prises raccordées au SPA112 puis rebranchez uniquement l'alimentation. Le boîtier met environ une minute à démarrer.
 
 Si Téléphone 1 continue de clignoter après cela, nous vous prions de vous rapprocher du support technique par téléphone ou par mail pour procéder à un échange SAV.
 
 ------------------------------------------------------------------------
 
-## Je ne parviens ni à émettre ni à recevoir malgré que le voyant Line 1 soit allumé {#je-ne-parviens-ni-à-émettre-ni-à-recevoir-malgré-que-le-voyant-line-1-soit-allumé}
+## Je ne parviens ni à émettre ni à recevoir bien que le voyant Line 1 soit allumé {#je-ne-parviens-ni-à-émettre-ni-à-recevoir-malgré-que-le-voyant-line-1-soit-allumé}
 
-Le fait que le voyant Phone 1 soit allumé en vert fixe signifie que votre ligne OVH est bien enregistrée (authentifiée) dans le SPA112.
+Le fait que le voyant Phone 1 soit allumé en vert fixe signifie que votre ligne OVHcloud est bien enregistrée (authentifiée) dans le SPA112.
 
 En raccordant un combiné sur Phone 1, vous devriez émettre et recevoir des appels.
 
@@ -60,7 +61,7 @@ Le combiné employé peut également être source du problème rencontré. Pour 
 
 C'est synonyme d'une mise à jour du firmware de l'équipement. Autrement dit, le SPA112 a trouvé une nouvelle version de micro-logiciel interne.
 
-Pour palier à cela, laissez raccordé le boîtier directement à votre routeur/box pendant 24 heures (avec seulement un câble réseau, il ne doit pas y avoir d'intermédiaire type Switch ou prise CPL).
+Pour pallier cela, laissez raccordé le boîtier directement à votre routeur/box pendant 24 heures (avec seulement un câble réseau, il ne doit pas y avoir d'intermédiaire type Switch ou prise CPL).
 
 Si le phénomène persiste, nous vous prions de vous rapprocher du support technique par téléphone ou par mail pour procéder à un échange SAV.
 
@@ -69,3 +70,7 @@ Si le phénomène persiste, nous vous prions de vous rapprocher du support techn
 ## Le voyant Power clignote rouge {#le-voyant-power-clignote-rouge}
 
 L'équipement a détecté une anomalie logicielle ou matérielle. N'hésitez pas à appliquer la même procédure que pour "[Mon adaptateur clignote dans toutes les couleurs](#DépannageSPA112-clignote)".
+
+## Aller plus loin
+
+Échangez avec notre [communauté d'utilisateurs](/links/community).

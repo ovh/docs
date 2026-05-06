@@ -28,7 +28,6 @@ Per installare Joomla! **automaticamente** dal tuo [Spazio Cliente OVHcloud](/li
 
 - Disporre di un'offerta di [hosting web](/links/web/hosting) che contiene almeno un database.
 - Disporre di un [dominio](/links/web/domains)
-- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
   
 ## Procedura
 

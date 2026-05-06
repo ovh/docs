@@ -4,7 +4,6 @@ excerpt: 'Cómo realizar un diagnóstico automatizado de los errores en las cuen
 updated: 2025-04-28
 ---
 
-
 ## Objetivo
 
 Los errores en las cuentas de correo Exchange pueden tener múltiples causas. Un diagnóstico automático de las funcionalidades de la cuenta permite reducir el número de causas. Los resultados de estas pruebas también serán útiles en caso de solicitar asistencia para su servicio Exchange.
@@ -15,17 +14,22 @@ Los errores en las cuentas de correo Exchange pueden tener múltiples causas. Un
 
 - Tener una [solución Exchange de OVHcloud](/links/web/emails-hosted-exchange) ya instalada.
 - Disponer de las claves de acceso para la cuenta Exchange que debe verificar.
-- Estar conectado al [área de cliente de OVHcloud.](/links/manager).
 - Estar actualizado en los [pagos](/pages/account_and_service_management/managing_billing_payments_and_services/invoice_management#pay-bills) de este servicio y del dominio asociado.
+
+<!-- CP-NAV-START:web-exchange -->
+---
+
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [Exchange](/links/control-panel/web-exchange)
+- **Ruta de navegación:** `Web Cloud`{.action} > `Exchange`{.action} > Seleccione su plataforma
+
+---
+<!-- CP-NAV-END:web-exchange -->
 
 ## Procedimiento
 
 ### Realizar un diagnóstico
-
-1. Conéctese al [área de cliente de OVHcloud](/links/manager).
-1. Acceda al apartado `Web Cloud`{.action}.
-1. En la sección `MICROSOFT`, haga clic en `Exchange`{.action}.
-1. Seleccione la plataforma correspondiente.
 
 ![Diagnóstico Exchange](images/img_4450.png){.thumbnail}
 
@@ -90,7 +94,7 @@ En función del uso de su servicio Exchange, son válidos los siguientes servido
 
 > [!warning]
 > En nuestras guías utilizamos como nombre de servidor: ex<b>?</b>.mail.ovh.net. Debe reemplazar el "?" por el número correspondiente al servidor de su servicio Exchange.<br>
-> Puede consultar esta información en el área de cliente de OVHcloud, en la sección `Web Cloud`{.action}. Abra `Microsoft`{.action} y seleccione `Exchange`{.action}. El nombre del servidor aparece en la pestaña **Conexión** de la `Información general`{.action}.
+> Puede consultar esta información en el área de cliente de OVHcloud, en la sección `Web Cloud`{.action}. Abra `Exchange`{.action} y seleccione su servicio. El nombre del servidor aparece en la pestaña **Conexión** de la `Información general`{.action}.
 >
 
 > [!primary]

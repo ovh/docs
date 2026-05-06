@@ -12,7 +12,16 @@ Découvrez comment activer et configurer IPv6 sur un service OverTheBox.
 
 - Disposer d'un service **OverTheBox Starter** ou **OverTheBox Business** fourni par OVHcloud.
 - Posséder un boîtier **OverTheBox** en version **v1.1.2 ou supérieure** fourni par OVHcloud, ou avoir installé l’image OverTheBox issue du projet Open Source sur un équipement personnel ([installer l'image OverTheBox sur votre matériel](/pages/web_cloud/internet/overthebox/advanced_installer_limage_overthebox_sur_votre_materiel)).
-- Être connecté à l'[espace client OVHcloud](/links/manager) dans la partie `Telecom`{.action}.
+<!-- CP-NAV-START:telecom-otb -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [OverTheBox](/links/control-panel/telecom-otb)
+- **Pour accéder à vos services :** `Télécom`{.action} > `OverTheBox`{.action} > Sélectionnez votre service
+
+---
+<!-- CP-NAV-END:telecom-otb -->
 
 > [!warning]
 >
@@ -35,12 +44,13 @@ Chaque service dispose d'une plage /56 mais certaines restrictions s'appliquent 
 
 ### Étape 1 : activer ou désactiver IPv6
 
-- Connectez-vous à votre [espace client OVHcloud](/links/manager), partie `Telecom`{.action}.
-- Cliquez sur `OverThebox`{.action} dans la barre de services à gauche, puis sélectionnez le service OverTheBox sur lequel vous souhaitez configurer l'IPv6.
+<!-- CP-STEPS-START:etape1-activer-desactiver-ipv6 -->
+Depuis votre [espace client OVHcloud](/links/control-panel/telecom-otb), sélectionnez le service OverTheBox sur lequel vous souhaitez configurer l'IPv6.
 - Pour **activer** IPv6, cochez la case `IPv6 activée`{.action}.
 - Pour **désactiver** IPv6, décochez la case `IPv6 activée`{.action}.
 
 ![overthebox](images/step1-ipv6-1-enableIpv6-2025.png){.thumbnail}
+<!-- CP-STEPS-END:etape1-activer-desactiver-ipv6 -->
 
 ### Étape 2 : configuration du pare-feu
 

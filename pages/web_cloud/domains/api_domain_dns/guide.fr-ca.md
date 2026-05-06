@@ -1,7 +1,7 @@
 ---
 title: "Configurer les DNS de son nom de domaine"
 excerpt: "Utiliser l'API publique OVHcloud pour configurer les DNS de votre nom de domaine"
-updated: 2022-05-05
+updated: 2026-02-10
 ---
 
 <!-- Rappel à mettre au début de chaque page -->
@@ -102,7 +102,7 @@ L'API suivante permet de mettre à jour certaines configurations du nom de domai
 >> }
 >> ```
 
-Comme nous pouvons le voir dans l'exemple ci-dessus, le type de configuration DNS du domaine a été changé à `external`.
+Comme nous pouvons le voir dans l'exemple ci-dessus, le type de configuration DNS du nom de domaine a été changé à `external`.
 
 Il est important de savoir que :
 
@@ -243,7 +243,7 @@ L'API suivante permet d'ajouter de nouveaux serveurs de noms sur votre nom de do
 
 Cette route va ajouter les nouveaux serveurs de noms sur le nom de domaine et lancer une tâche de synchronisation `DomainDnsUpdate` auprès du registre. Vous pourrez suivre cette tâche via les [APIs dédiées](/pages/web_cloud/domains/api_domain_tasks#view-pending-tasks).
 
-Il est aussi possible de remplacer complètement la déclaration des serveurs de noms d'un domaine en passant par l'API suivante :
+Il est aussi possible de remplacer complètement la déclaration des serveurs de noms d'un nom de domaine en passant par l'API suivante :
 
 > [!api]
 >

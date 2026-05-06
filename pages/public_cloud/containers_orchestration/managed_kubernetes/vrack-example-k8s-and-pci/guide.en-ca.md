@@ -1,6 +1,6 @@
 ---
 title: Working with vRack example - Managed Kubernetes and Public Cloud instances
-updated: 2021-12-21
+updated: 2026-02-25
 ---
 
 ## Objective
@@ -279,9 +279,9 @@ Switched to context "kubernetes-admin@my-cluster-vrack".
 
 $ kubectl get nodes
 NAME                                         STATUS   ROLES    AGE   VERSION
-nodepool-59d0ba5f-2fce-4a47-89-node-05134b   Ready    <none>   18h   v1.22.2
-nodepool-59d0ba5f-2fce-4a47-89-node-46cbc9   Ready    <none>   17h   v1.22.2
-nodepool-59d0ba5f-2fce-4a47-89-node-ea4d0a   Ready    <none>   18h   v1.22.2
+nodepool-59d0ba5f-2fce-4a47-89-node-05134b   Ready    <none>   18h   v1.34.0
+nodepool-59d0ba5f-2fce-4a47-89-node-46cbc9   Ready    <none>   17h   v1.34.0
+nodepool-59d0ba5f-2fce-4a47-89-node-ea4d0a   Ready    <none>   18h   v1.34.0
 ```
 
 And then execute the following comand:

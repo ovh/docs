@@ -214,7 +214,7 @@ Descubra e compare os diferentes níveis de suporte disponíveis [aqui](/links/s
 
 /// details | Onde posso encontrar o nível de suporte que tenho?
 
-Para conhecer o nível de suporte associado ao seu identificador de cliente, aceda à [Área de Cliente OVHcloud](/links/manager) e clique no seu nome no canto superior direito. O nível de suporte aparece à direita de **Apoio ao Cliente**. Se não tiver adquirido um serviço de suporte pago, terá acesso ao nível Standard por predefinição.
+Para conhecer o nível de suporte associado ao seu identificador de cliente, abra a página [A minha conta](/links/control-panel/account-dashboard). O nível de suporte aparece à direita de **Apoio ao Cliente**. Se não tiver adquirido um serviço de suporte pago, terá acesso ao nível Standard por predefinição.
 
 Descubra e compare os diferentes níveis de suporte disponíveis [aqui](/links/support).
 

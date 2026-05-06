@@ -1,7 +1,7 @@
 ---
 title: "Come ottenere l'impronta di carbonio dei servizi OVHcloud"
 excerpt: "Questa guida ti mostra come recuperare l’impronta di carbonio mensile dei servizi OVHcloud grazie al nostro calcolatore di carbonio"
-updated: 2025-06-17
+updated: 2026-02-11
 ---
 
 ## Obiettivo
@@ -14,14 +14,30 @@ Nell’ambito della propria attività professionale o per interesse personale, p
 
 - Essere contatto "Fatturazione" dei servizi per i quali si desidera ottenere l'impronta di carbonio. Per maggiori informazioni, consulta la [guida sulla gestione dei contatti](/pages/account_and_service_management/account_information/managing_contacts).
 
+<!-- CP-NAV-START:account-dashboard -->
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [Il mio account](/links/control-panel/account-dashboard)
+- **Percorso di navigazione:** Clicca sul tuo nome in alto a destra > `Accedere al mio account`{.action}
+
+---
+<!-- CP-NAV-END:account-dashboard -->
+
 **Il calcolo dell'impronta di carbonio è disponibile per i seguenti servizi:**
 
 - [Server Dedicato](/links/bare-metal/bare-metal) (Advance, Game, Scale, High Grade, Storage)
 - [Server Dedicato Eco](/links/bare-metal/eco) (Rise, Kimsufi, So You Start)
 - [VMware on OVHcloud](/links/hosted-private-cloud/vmware)
-- [Istanze Public Cloud (Compute)](/links/public-cloud/compute)
+- [Public Cloud](/links/public-cloud/public-cloud)
 
 ## Procedura
+
+> [!primary]
+>
+> I dati sull'impronta di carbonio non sono ancora disponibili per le architetture 3AZ e le Local Zones.
+>
 
 È necessario tenere conto di diversi aspetti:
 
@@ -30,22 +46,32 @@ Nell’ambito della propria attività professionale o per interesse personale, p
 - Nessun bilancio può essere generato dopo gli ultimi 24 mesi.
 - Non è possibile generare bilanci per il periodo precedente la data di attivazione della funzionalità per ogni servizio OVHcloud (vedi la tabella sottostante).
 
-| Servizio | Data di inizio utilizzo del calcolatore di impronta di carbonio |
-|---|---|
-| Server Dedicato | 2023/05/01 |
-| Server Dedicato Eco | 2023/05/01 |
-| VMware on OVHcloud | 2023/08/01 |
-| Istanze Public Cloud | 2025/01/01 |
+**Disponibilità dei dati sull'impronta di carbonio :**
+
+| Servizi OVHcloud     | Prodotti                           | Stato       | Data di attivazione del calcolatore dell'impronta di carbonio |
+| -------------------- | ---------------------------------- | ----------- | --------------------------------------------------------------|
+| Server dedicati      | Server Dedicato                    | Disponibile | 2023/05/01 |
+|                      | Server Dedicato Eco                | Disponibile | 2023/05/01 |
+| Hosted Private Cloud | VMware on OVHcloud                 | Disponibile | 2023/08/01 |
+| Public Cloud         | Instance Public Cloud              | Disponibile | 2025/01/01 |
+|                      | Block Storage                      | Disponibile | 2025/12/01 |
+|                      | Object Storage S3                  | In arrivo   |            |
+|                      | File Storage                       | In arrivo   |            |
+|                      | Network                            | In arrivo   |            |
+|                      | Managed Kubernetes Service         | In arrivo   |            |
+|                      | Public Cloud Databases/Analytics   | In arrivo   |            |
+|                      | Data Platform                      | In arrivo   |            |
+|                      | AI                                 | In arrivo   |            |
+|                      | Quantum                            | In arrivo   |            |
 
 ### Recupera il bilancio mensile del mese precedente dallo Spazio Cliente OVHcloud
 
-1. Accedi allo [Spazio Cliente OVHcloud](/links/manager).
-1. Nella nuova pagina, nella colonna a sinistra, scorri la pagina fino alla sezione **Link utili**, poi clicca sulla scheda `Il mio bilancio del carbonio`{.action}.
+1. Nel [Dashboard dell’account](/links/control-panel/account-dashboard), nella colonna a sinistra, scorri la pagina fino alla sezione **Link utili**, poi clicca sulla scheda `Il mio bilancio del carbonio`{.action}.
 1. Nella nuova pagina clicca su `Scarica la tua impronta di [Mese] [Anno]`{.action}.
 
 ![Carbon footprint](/pages/assets/screens/control_panel/product-selection/right-column/carbon-footprint/my-carbon-footprint.png){.thumbnail}
 
-È possibile recuperare ogni mese l'impronta di carbonio del mese precedente per i servizi compatibili.
+È possibile recuperare ogni mese l’impronta di carbonio del mese precedente per i servizi compatibili.
 
 Se hai bisogno dell’impronta di carbonio per un mese precedente al mese in corso, è necessario passare dalle nostre API per recuperarla.
 
@@ -67,7 +93,7 @@ Di default, le API OVHcloud sono messe a disposizione per permettere agli svilup
 
 - Sul lato destro della pagina compare l’API con il riquadro da completare.
 - Clicca sul pulsante in alto a destra intitolato `Authenticate`{.action} e poi sul pulsante `Login with OVHcloud SSO`{.action}.
-- Si apre l’interfaccia di connessione al tuo [Spazio Cliente OVHcloud](/links/manager).
+- Si apre l’interfaccia di connessione al tuo [Spazio Cliente OVHcloud](/links/control-panel/account-dashboard).
 - Accedi con il tuo identificativo cliente e clicca su `Authorize`{.action} per utilizzare le API OVHcloud con i tuoi servizi.
 - Verrai reindirizzato automaticamente alla pagina precedente dell’API **POST /me/carbonCalculator/task**.
 

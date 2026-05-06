@@ -15,12 +15,45 @@ Konta e-mail w ramach Twojej usługi OVHcloud są dostępne za pomocą przypisan
 
 ## Wymagania początkowe
 
-- W zależności od metody, której używasz: zalogować się do [Panelu klienta OVHcloud](/links/manager) w sekcji `Web Cloud`{.action} lub logować się do konta e-mail za pośrednictwem [interfejsu webmail](/links/web/email).
 - Posiadanie skonfigurowanego wcześniej rozwiązania e-mail OVHcloud, spośród następujących:
     - **MX Plan** w ofercie [pakietów hostingowych](/links/web/hosting) lub zawarta w ofercie [darmowy hosting 100M](/links/web/domains-free-hosting).
-    - [Exchange](/links/web/emails).
-    - [Email Pro](/links/web/email-pro).
+    - [Exchange](/links/web/emails-exchange).
+    - [E-mail Pro](/links/web/email-pro).
     - [Zimbra](/links/web/emails-zimbra).
+
+<!-- CP-NAV-START:web-mx-plan -->
+<!-- CP-NAV-START:web-zimbra -->
+<!-- CP-NAV-START:web-email-pro -->
+<!-- CP-NAV-START:web-exchange -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+**MX Plan:**
+
+- **Link bezpośredni:** [MX Plan](/links/control-panel/web-mx-plan)
+- **Ścieżka nawigacji:** `Web Cloud`{.action} > `MX Plan`{.action} > Wybierz usługę MX Plan
+
+**Zimbra:**
+
+- **Link bezpośredni:** [Zimbra](/links/control-panel/web-zimbra)
+- **Ścieżka nawigacji:** `Web Cloud`{.action} > `Zimbra Mail`{.action} > Wybierz usługę Zimbra
+
+**E-mail Pro:**
+
+- **Link bezpośredni:** [E-mail Pro](/links/control-panel/web-email-pro)
+- **Ścieżka nawigacji:** `Web Cloud`{.action} > `E-mail Pro`{.action} > Wybierz platformę
+
+**Exchange:**
+
+- **Link bezpośredni:** [Exchange](/links/control-panel/web-exchange)
+- **Ścieżka nawigacji:** `Web Cloud`{.action} > `Exchange`{.action} > Wybierz platformę
+
+---
+<!-- CP-NAV-END:web-exchange -->
+<!-- CP-NAV-END:web-email-pro -->
+<!-- CP-NAV-END:web-zimbra -->
+<!-- CP-NAV-END:web-mx-plan -->
 
 ## W praktyce
 
@@ -34,6 +67,8 @@ Konta e-mail w ramach Twojej usługi OVHcloud są dostępne za pomocą przypisan
 >
 > Ze względów bezpieczeństwa zalecamy nie używać dwa razy tego samego hasła. Najlepiej wybrać hasło, które nie ma żadnego związku z Twoimi danymi osobistymi (takimi jak nazwisko, imię i data urodzenia) i regularnie je zmieniać.
 
+<a name="whichmxplan"></a>
+
 > [!primary]
 >
 > **Sprawdzenie konfiguracji usługi MX Plan:**
@@ -44,7 +79,7 @@ Konta e-mail w ramach Twojej usługi OVHcloud są dostępne za pomocą przypisan
 >
 > ![MX plan](images/technology-email.png){.thumbnail .w-500}
 
-W [Panelu klienta OVHcloud](/links/manager) przejdź do sekcji `Web Cloud`{.action} i postępuj zgodnie z instrukcjami zawartymi w Twojej ofercie:
+Postępuj zgodnie z instrukcjami zawartymi w Twojej ofercie:
 
 > [!tabs]
 > **E-maile MX Plan (wersja historyczna)**
@@ -61,9 +96,9 @@ W [Panelu klienta OVHcloud](/links/manager) przejdź do sekcji `Web Cloud`{.acti
 >> Kliknij przycisk, po czym `...`{.action} kliknij `Zmień`{.action}.<br><br>
 >>![e-mail](images/email-password-mxplan-new01.png){.thumbnail}<br>
 >>
-> **Email Pro**
+> **E-mail Pro**
 >>
->> Kliknij `Email Pro`{.action}, po czym wybierz odpowiednią platformę. Przejdź do zakładki `Konta e-mail`{.action}. Pojawi się okno, w którym widoczne są istniejące konta e-mail.<br>
+>> Kliknij `E-mail Pro`{.action}, po czym wybierz odpowiednią platformę. Przejdź do zakładki `Konta e-mail`{.action}. Pojawi się okno, w którym widoczne są istniejące konta e-mail.<br>
 >> Kliknij przycisk, `...`{.action} a następnie `Zmień`{.action}.<br><br>
 >>![email](images/email-password-emailpro01.png){.thumbnail}<br>
 >>
@@ -85,7 +120,7 @@ W [Panelu klienta OVHcloud](/links/manager) przejdź do sekcji `Web Cloud`{.acti
 Zmiana hasła za pomocą interfejsu webmail jest dostępna w przypadku ofert e-mail OVHcloud wykorzystujących **OWA** (**O**utlook **W**eb **A**pp):
 
 - MX Plan OWA
-- Email Pro
+- E-mail Pro
 - Exchange
 - MX Plan Zimbra
 - Zimbra Starter / Pro
@@ -99,7 +134,7 @@ Zmiana hasła za pomocą interfejsu webmail jest dostępna w przypadku ofert e-m
 
 <iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/msmUN7cLSNI" title="YouTube wideo player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-Przejdź do strony "[Webmail](/links/web/email)". Wprowadź pełny adres e-mail oraz aktualne hasło. Następnie kliknij przycisk `Logowanie`{.action}. 
+Przejdź do strony "[Webmail](/links/web/email)". Wprowadź pełny adres e-mail oraz aktualne hasło. Następnie kliknij przycisk `Logowanie`{.action}.
 
 ![email](images/mxplan-password-new-step2.png){.thumbnail}
 
@@ -124,7 +159,7 @@ W nowym oknie, które się wyświetli, wprowadź aktualne hasło, po czym je zat
 
 Przejdź do strony [Webmail](/links/web/email). Wpisz swój adres e-mail i hasło, a następnie kliknij `Logowanie`{.action}.
 
-Kliknij nazwę konta e-mail w prawym górnym rogu. Z poziomu tego menu możesz również zmienić hasło {.action}.
+Kliknij nazwę konta e-mail w prawym górnym rogu interfejsu. W tym menu możesz `Zmienić hasło`{.action}.
 
 ![Zimbra - preferencje](images/zimbra-password.png){.thumbnail}
 
@@ -136,7 +171,7 @@ Ze względów bezpieczeństwa i prywatności nie jest możliwe **odzyskanie** ha
 >
 > Jeśli chcesz zachować hasło, zalecane jest użycie menedżera haseł, takiego jak **Keepass**.
 
-## Sprawdź również
+## Sprawdź również <a name="go-further"></a>
 
 [Pierwsze kroki z usługą MX Plan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities)
 

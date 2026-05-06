@@ -23,13 +23,22 @@ Der erste Schritt ist die Erstellung eines Containers, der Ihre Dateien zusammen
 
 ## Voraussetzungen
 
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direkter Link:** [Public Cloud Projekte](/links/control-panel/publiccloud-projects)
+- **Navigationspfad:** `Public Cloud`{.action} > Wählen Sie Ihr Projekt aus
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## In der praktischen Anwendung
 
 ### Erstellung eines Public Cloud Archive Containers über das OVHcloud Kundencenter
 
-Loggen Sie sich in Ihrem [OVHcloud Kundencenter](/links/manager) ein. Klicken Sie oben auf der Seite auf `Public Cloud`{.action} und wählen Sie anschließend Ihr Projekt aus. Klicken Sie im linken Menü auf `Cloud Archive`{.action} unter `Storage`.
+Klicken Sie im linken Menü auf `Cloud Archive`{.action} unter `Storage`.
 
 Wenn es sich um Ihren ersten Container handelt:
 

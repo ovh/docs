@@ -1,5 +1,5 @@
 ---
-title: Public Cloud Databases - How to set up logs forwarding
+title: Mettre en place le transfert de logs des bases de données Public Cloud (EN)
 excerpt: Find out how to forward logs of your database service to your Logs Data Platform data stream
 updated: 2024-10-28
 ---
@@ -12,12 +12,22 @@ Public Cloud managed databases allow you to send logs of your service to your ow
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](/links/manager)
 - A [Public Cloud database service](/links/public-cloud/databases) up and running
 - Access to the [OVHcloud API](/links/console)
 - A Logs Data Platform account within this OVHcloud account with at least one destination stream configured
     - If you are not familiar with all the LDP *Stream* configuration possibilities, simply create a new one with the default options (indexing & websocket enabled, long-term storage disabled) for the purpose of this guide.
 - A running database service
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Navigation path:** `Public Cloud`{.action} > Select your project
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## Instructions
 
@@ -59,7 +69,7 @@ Public Cloud managed databases allow you to send logs of your service to your ow
 >>
 >> **Retrieve your `clusterId`:**
 >>
->> Log in to the [OVHcloud Control Panel](/links/manager), open the `Public Cloud`{.action} section and select the Public Cloud project concerned. In the left-hand menu, click on `Databases`{.action}, then choose the database instance you want to manage.
+>> In the left-hand menu, click on `Databases`{.action}, then choose the database instance you want to manage.
 >>
 >> In the cluster details, you can find the `Service ID` field, which corresponds to the cluster ID.
 >>

@@ -1,93 +1,150 @@
 ---
 title: "Web Cloud Databases - Conectarse a una base de datos"
 excerpt: "Descubra cómo conectarse a una base de datos de su solución Web Cloud Databases"
-updated: 2023-10-31
+updated: 2026-03-24
 ---
+
+<style>
+details>summary {
+    color:rgb(33, 153, 232) !important;
+    cursor: pointer;
+}
+details>summary::before {
+    content:'\25B6';
+    padding-right:1ch;
+}
+details[open]>summary::before {
+    content:'\25BC';
+}
+</style>
 
 ## Objetivo
 
 Es posible consultar el contenido de la base de datos a través de una interfaz. Para ello, existen varias formas de conectarse.
 
-**Esta guía explica cómo conectarse a una base de datos en un servidor de bases de datos.**
+**Descubra cómo conectarse a una base de datos en su servidor de bases de datos.**
 
 ## Requisitos
 
-- Tener una [instancia Web Cloud Databases](/links/web/databases) (incluida en un plan de [hosting Performance](/links/web/hosting))
-- Haber iniciado sesión en el [área de cliente de OVHcloud](/links/manager).
+- Una [instancia Web Cloud Databases](/links/web/databases) (incluida en un [plan de hosting Performance](/links/web/hosting)).
+
+<!-- CP-NAV-START:web-cloud-databases -->
+---
+
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [Web Cloud Databases](/links/control-panel/web-cloud-databases)
+- **Ruta de navegación:** `Web Cloud`{.action} > `Web Cloud Databases`{.action} > Seleccione su servicio de base de datos
+
+---
+<!-- CP-NAV-END:web-cloud-databases -->
 
 ## Procedimiento
 
 > [!primary]
 >
-> Tenga en cuenta que las soluciones [Web Cloud Databases](/links/web/databases) no permiten acceder al sistema de gestión de bases de datos, sino a las bases de datos alojadas en él.
-> <br> - Tenga en cuenta que no hay acceso "root".
-> <br> - Los comandos genéricos SQL funcionan con normalidad, y software como HeidiSQL, SQLuireL o Admin es totalmente compatible.
+> Las soluciones [Web Cloud Databases](/links/web/databases) no permiten acceder al sistema de gestión de bases de datos, sino a las bases de datos alojadas en él.
+>
+> - No hay acceso de superusuario "root".
+> - Los comandos genéricos SQL funcionan con normalidad, y software como HeidiSQL, SQuirreL SQL o Adminer es totalmente compatible.
+>
 
-### Importar una base de datos MySQL o MariaDB 
+### Conectarse a una base de datos MySQL o MariaDB
 
 > [!primary]
 >
-> Como MariaDB es un derivado de MySQL, los distintos comandos son exactamente los mismos para los dos tipos de bases de datos.
-> 
-
-####  Por phpMyAdmin OVHcloud
-
-Conéctese a su [área de cliente de OVHcloud](/links/manager) y acceda a la sección `Web Cloud`. En la columna izquierda, haga clic en la pestaña `Web Cloud Databases`{.action} y seleccione el nombre del servidor de bases de datos.
-
-En la pestaña `Información general`, encontrará el enlace de acceso a phpMyAdmin en el recuadro **"Administración de la base de datos"**, bajo la indicación "Interfaz de usuario".
-
-![web-cloud-databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/general-information/database-administration.png){.thumbnail}
-
-Acceda a la página de conexión de phpMyAdmin.
-
-![web-cloud-databases](/pages/assets/screens/other/web-tools/phpmyadmin/pma-login-web-cloud-db.png){.thumbnail}
-
-Introduzca los siguientes datos para conectarse a la base de datos:
-
-- **Servidor:** Introduzca el *nombre del host* de su servidor de bases de datos seguido de su *número de puerto*. El *número de puerto* debe estar separado del *nombre del host* por un "**espacio**" o por "**:**". Por ejemplo, si el *nombre de host* es **aaXXXXX-XXX.eu.clouddb.ovh.net** y el *número de puerto* es **12345**, deberá introducir **aaXXXXX-XXX.eu.clouddb.ovh.net:12345** o **aaXXXXX-XXX.eu.clouddb.ovh.net 12345**. Para consultar el *nombre del host* y el *número de puerto* de su servidor Web Cloud Databases, conéctese a su [área de cliente de OVHcloud](/links/manager) y acceda a la sección `Web Cloud`. En la columna izquierda, haga clic en la pestaña `Web Cloud Databases`{.action} y seleccione el nombre del servidor de bases de datos. En la página `Información general`, puede consultar el *nombre del host* y el *número de puerto* en el recuadro `Datos de conexión`.
-
-- **Usuario:** Introduzca el *nombre de usuario* de su servidor de bases de datos. Para consultar el *nombre de usuario* de la base de datos, conéctese al [área de cliente de OVHcloud](/links/manager) y acceda a la sección `Web Cloud`. En la columna izquierda, haga clic en la pestaña `Web Cloud Databases`{.action} y seleccione el nombre del servidor de bases de datos. A continuación, abra la pestaña `Usuarios y permisos`{.action}. En ella encontrará una tabla con todos los usuarios creados en su solución Web Cloud Databases.
-
-- **Contraseña:** Introduzca la *contraseña* asociada al *nombre de usuario* correspondiente. Si no recuerda la *contraseña* asociada a su *nombre de usuario*, conéctese al [área de cliente de OVHcloud](/links/manager) y acceda a la sección `Web Cloud`. En la columna izquierda, haga clic en la pestaña `Web Cloud Databases`{.action} y seleccione el nombre del servidor de bases de datos. A continuación, abra la pestaña `Usuarios y permisos`{.action}. Haga clic en el botón `...`{.action} situado a la derecha de *el usuario* correspondiente para `Cambiar la contraseña`{.action}.
-
-> [!warning]
->
-> Si cambia la contraseña del usuario de una base de datos, todas las aplicaciones o sitios web que acceden a la base de datos deben actualizarse en consecuencia.
+> Como MariaDB es un derivado de MySQL, los comandos son exactamente los mismos para los dos tipos de bases de datos.
 >
 
-Si la conexión se ha completado, se mostrará la siguiente página de phpMyAdmin.
+#### Conexión a través de phpMyAdmin de OVHcloud
+
+<!-- CP-STEPS-START:mysql-phpmyadmin -->
+Haga clic en las fichas siguientes para ver cada una de las **4** etapas.
+
+> [!tabs]
+> **Etapa 1**
+>>
+>> Acceda a la página [Web Cloud Databases](/links/control-panel/web-cloud-databases) y seleccione la solución correspondiente.
+>>
+>> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases.png){.thumbnail}
+>>
+> **Etapa 2**
+>>
+>> Obtenga la siguiente información de conexión:
+>>
+>> - **Servidor (hostname) y puerto:** visibles en la pestaña `Información general`{.action}, sección `Datos de conexión`.
+>> - **Nombre de usuario:** visible en la pestaña `Usuarios y permisos`{.action}.
+>> - **Contraseña:** la contraseña asociada al usuario. Si la ha olvidado, acceda a la pestaña `Usuarios y permisos`{.action}, haga clic en `...`{.action} a la derecha del usuario correspondiente y seleccione `Cambiar la contraseña`{.action}.
+>>
+>> > [!warning]
+>> >
+>> > Si cambia la contraseña de un usuario de la base de datos, todas las aplicaciones o sitios web que acceden a esta base de datos deberán actualizarse en consecuencia.
+>>
+> **Etapa 3**
+>>
+>> En la pestaña `Información general`{.action}, localice la sección **Administración de la base de datos** y haga clic en el enlace de phpMyAdmin en **Interfaz de usuario**.
+>>
+>> ![web-cloud-databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/general-information/database-administration.png){.thumbnail}
+>>
+> **Etapa 4**
+>>
+>> En la página de conexión de phpMyAdmin, introduzca la información obtenida en el paso 2:
+>>
+>> ![web-cloud-databases](/pages/assets/screens/other/web-tools/phpmyadmin/pma-login-web-cloud-db.png){.thumbnail}
+>>
+>> - **Servidor:** introduzca el *hostname* seguido del *número de puerto*, separados por "**:**" o un "**espacio**". Por ejemplo: **aaXXXXX-XXX.eu.clouddb.ovh.net:12345**.
+>> - **Usuario:** introduzca el *nombre de usuario*.
+>> - **Contraseña:** introduzca la *contraseña*.
+
+Si la conexión se ha realizado correctamente, se mostrará la siguiente página.
 
 ![web-cloud-databases](/pages/assets/screens/other/web-tools/phpmyadmin/pma-main-page-web-cloud-db.png){.thumbnail}
 
 > [!warning]
 >
-> **En caso de error :**
-> 
-> <br> - Error #1045, significa que la identificación es incorrecta. Por lo tanto, es necesario comprobar el nombre de usuario y/o la contraseña.
-> <br> - Error #2005, le recomendamos que compruebe el nombre del servidor y si este está en funcionamiento.
+> **En caso de error:**
+>
+> - Error #1045 significa que las credenciales son incorrectas. Compruebe el nombre de usuario y/o la contraseña.
+> - Error #2005 significa que debe comprobar el nombre del servidor y si este está en funcionamiento.
+<!-- CP-STEPS-END:mysql-phpmyadmin -->
 
 #### Conexión a la base de datos fuera del área de cliente
 
 > [!warning]
 >
-> Si utiliza una solución Web Cloud Databases/ SQL Privado, no olvide autorizar su IP utilizando la guía sobre la [configuración de su servidor de bases de datos](/pages/web_cloud/web_cloud_databases/configure-database-server).
->
+> Si utiliza una solución "Web Cloud Databases"/"SQL Privado", recuerde autorizar su IP utilizando la guía sobre la [configuración de su servidor de bases de datos](/pages/web_cloud/web_cloud_databases/configure-database-server#gerer-vos-acces).
 
-Para conectarse a la base de datos, asegúrese de que dispone de la siguiente información:
+<!-- CP-STEPS-START:mysql-external -->
+Haga clic en las fichas siguientes para ver cada una de las **2** etapas.
 
-- **Servidor**: el nombre del host del servidor puede verse en la pestaña `Información general` del servidor de bases de datos, en el recuadro **"Administración de la base de datos"**, bajo el epígrafe "Nombre del host" del apartado **SQL**.
-- **Usuario**: El nombre de usuario creado en la pestaña `Usuarios y permisos` del servidor de bases de datos.
-- Cambiar la contraseña del usuario **root**
-- **Puerto**: el puerto puede verse en la pestaña `Información general` del servidor de bases de datos, en el recuadro **"Administración de la base de datos"**, bajo el epígrafe "Puerto" de la parte **SQL**.
-- **Nombre de la base de datos**: las bases de datos se muestran en la pestaña `Bases de datos` del servidor de bases de datos.
+> [!tabs]
+> **Etapa 1**
+>>
+>> Acceda a la página [Web Cloud Databases](/links/control-panel/web-cloud-databases) y seleccione la solución correspondiente.
+>>
+>> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases.png){.thumbnail}
+>>
+> **Etapa 2**
+>>
+>> Obtenga la siguiente información de conexión:
+>>
+>> - **Servidor (hostname):** visible en la pestaña `Información general`{.action}, sección **"Administración de la base de datos"**, "Hostname" en la parte **SQL**.
+>> - **Puerto:** visible en la misma ubicación, "Puerto" en la parte **SQL**.
+>> - **Nombre de usuario:** visible en la pestaña `Usuarios y permisos`{.action}.
+>> - **Contraseña:** la contraseña asociada al usuario correspondiente.
+>> - **Nombre de la base de datos:** visible en la pestaña `Bases de datos`{.action}.
 
-##### 1. Conexión en línea de comandos
+**Haga clic en el método de conexión que desee para ver su contenido.**
+
+/// details | Conexión en línea de comandos
 
 ```bash
-mysql --host=servidor --user=usuario --port=puerto --contraseña nombre_de_la_BD
+mysql --host=server --user=user --port=port --password=password database_name
 ```
 
-##### 2. Conexión mediante script PHP
+///
+
+/// details | Conexión mediante script PHP
 
 ```php
 1. <?php
@@ -95,98 +152,122 @@ mysql --host=servidor --user=usuario --port=puerto --contraseña nombre_de_la_BD
 3. ?>
 ```
 
-##### 3. Conexión a través de la aplicación SQuirreL SQL
+///
+
+/// details | Conexión a través de la aplicación SQuirreL SQL
 
 > [!primary]
 >
-> En nuestro ejemplo, utilizamos el software de código abierto SQuirrel, pero otras interfaces, como HeidiSQL o Adminer, son totalmente compatibles. 
+> En nuestro ejemplo, utilizamos el software de código abierto SQuirreL, pero otras interfaces como HeidiSQL o Adminer son totalmente compatibles.
 
-- Ejecute SQuirreL SQL, abra el menú `{.action}Aliases`{.action} y haga clic en +.
+- Ejecute SQuirreL SQL y haga clic en `Aliases`{.action} y, a continuación, en `+`{.action}.
 
-![](/pages/assets/screens/other/web-tools/squirrel/aliases.png){.thumbnail} ejecutar SQuirreL SQL
+![launch SQuirreL SQL](/pages/assets/screens/other/web-tools/squirrel/aliases.png){.thumbnail}
 
-- Cumplimente los campos como se indica a continuación y acepte con el botón `{.action}OK:
-    - **Name**: Indique un nombre.
-    - **Driver**: Seleccione « MySQL Driver »
-    - **URL**: Indique la dirección del servidor y el puerto en formato jdbc:mysql://server:port
-    - **User name**: Indique el nombre de usuario.
-    - **Password**: Indique la contraseña.
+- Rellene los campos que se indican a continuación y confirme con el botón `OK`{.action}:
+    - **Name**: Elija un nombre
+    - **Driver**: Seleccione "MySQL Driver"
+    - **URL**: Introduzca la dirección del servidor y el puerto en formato jdbc:mysql://server:port
+    - **User Name**: Introduzca el nombre de usuario
+    - **Password**: Introduzca la contraseña
 
-![](/pages/assets/screens/other/web-tools/squirrel/add-alias.png){.thumbnail} conexión a la base de datos
+![config connection](/pages/assets/screens/other/web-tools/squirrel/add-alias.png){.thumbnail}
 
-- Confirme con el botón `{.action}Connect.
+- Confirme de nuevo con el botón `Conectar`{.action}.
 
-![](/pages/assets/screens/other/web-tools/squirrel/connect-to-mysql.png){.thumbnail} confirmación de la conexión
+![valid connection](/pages/assets/screens/other/web-tools/squirrel/connect-to-mysql.png){.thumbnail}
 
-Se establecerá la conexión a la base de datos:
+Se habrá conectado a su base de datos:
 
-![](/pages/assets/screens/other/web-tools/squirrel/general-dashboard.png){.thumbnail} conexión a la base de datos
+![config connection](/pages/assets/screens/other/web-tools/squirrel/general-dashboard.png){.thumbnail}
 
-##### 3.4. Conexión mediante phpMyAdmin
+///
 
-Puede utilizar su propia interfaz phpMyAdmin para explorar el contenido de su base de datos. Para ello, instale phpMyAdmin en su propio servidor o alojamiento web. Durante la instalación, asegúrese de que la información de su servidor de bases de datos y de la base de datos es correcta para que phpMyAdmin pueda conectarse a ella.
+/// details | Conexión mediante phpMyAdmin
 
-### Importar una base de datos PostgreSQL 
+Puede utilizar su propia interfaz phpMyAdmin para explorar el contenido de su base de datos. Para ello, instale phpMyAdmin en su propio servidor o alojamiento web. Durante la instalación, asegúrese de configurar correctamente la información de su servidor de bases de datos y de la base de datos deseada para que phpMyAdmin pueda conectarse a ella.
 
-Para conectarse a la base de datos, asegúrese de que dispone de la siguiente información:
+///
+<!-- CP-STEPS-END:mysql-external -->
 
-- **Servidor**: el nombre del host del servidor puede verse en la pestaña `Información general` del servidor de bases de datos, en el recuadro **"Administración de la base de datos"**, bajo el epígrafe "Nombre del host" del apartado **SQL**
-- **Usuario**: El nombre de usuario creado en la pestaña `Usuarios y permisos` del servidor de bases de datos
-- **Contraseña**: la contraseña del usuario 
-- **Puerto**: el puerto puede verse en la pestaña `Información general` del servidor de bases de datos, en el recuadro **"Administración de la base de datos"**, bajo el epígrafe "Puerto" de la parte **SQL**
-- **Nombre de la base de datos**: las bases de datos se muestran en la pestaña `Bases de datos` del servidor de bases de datos.
+### Conectarse a una base de datos PostgreSQL
 
-#### Conexión en línea de comandos
+<!-- CP-STEPS-START:postgresql -->
+Haga clic en las fichas siguientes para ver cada una de las **2** etapas.
 
-> [!primary]
->
-> Para un servidor SQL privado, esta acción solo es posible por [SSH](/pages/web_cloud/web_hosting/ssh_on_webhosting) desde un alojamiento compartido de OVHcloud.
+> [!tabs]
+> **Etapa 1**
+>>
+>> Acceda a la página [Web Cloud Databases](/links/control-panel/web-cloud-databases) y seleccione la solución correspondiente.
+>>
+>> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases.png){.thumbnail}
+>>
+> **Etapa 2**
+>>
+>> Obtenga la siguiente información de conexión:
+>>
+>> - **Servidor (hostname):** visible en la pestaña `Información general`{.action}, sección **"Administración de la base de datos"**, "Hostname" en la parte **SQL**.
+>> - **Puerto:** visible en la misma ubicación, "Puerto" en la parte **SQL**.
+>> - **Nombre de usuario:** visible en la pestaña `Usuarios y permisos`{.action}.
+>> - **Contraseña:** la contraseña asociada al usuario correspondiente.
+>> - **Nombre de la base de datos:** visible en la pestaña `Bases de datos`{.action}.
 
-mysql --host=servidor --user=nombre_de_usuario --port=puerto --password=contraseña nombre_base_de_datos
+**Haga clic en el método de conexión que desee para ver su contenido.**
 
-#### Conexión mediante script PHP
+/// details | Conexión en línea de comandos
 
-> [!primary]
->
-> Para un servidor SQL privado, la ejecución de este script solo puede realizarse desde un alojamiento compartido de OVHcloud.
+```bash
+psql --host=server --port=port --user=user --password=password database_name
+```
 
+///
+
+/// details | Conexión mediante script PHP
+
+```php
 1. <?php
-2. $db = new PDO('mysql:host=host;port=puerto;dbname=nombre_base_de_datos', 'username', 'password');
+2. $myPDO = new PDO('pgsql:host=host;port=port;dbname=dbname', 'username', 'password');
 3. ?>
+```
 
-#### Conexión a través de la aplicación SQuirreL SQL
+///
+
+/// details | Conexión a través de la aplicación SQuirreL SQL
 
 > [!primary]
 >
-> En nuestro ejemplo, utilizamos el software de código abierto SQuirrel, pero otras interfaces, como HeidiSQL o Adminer, son totalmente compatibles.
+> En nuestro ejemplo, utilizamos el software de código abierto SQuirreL, pero otras interfaces como HeidiSQL o Adminer son totalmente compatibles.
 
-- Ejecute SQuirreL SQL, abra el menú `{.action}Aliases`{.action} y haga clic en +.
+- Ejecute SQuirreL SQL y haga clic en `Aliases`{.action} y, a continuación, en `+`{.action}.
 
-![](/pages/assets/screens/other/web-tools/squirrel/aliases.png){.thumbnail} ejecutar SQuirreL SQL
+![launch SQuirreL SQL](/pages/assets/screens/other/web-tools/squirrel/aliases.png){.thumbnail}
 
-- Cumplimente los campos como se indica a continuación y acepte con el botón `{.action}OK:
-    - **Name**: Indique un nombre.
-    - **Driver**: Seleccione « PostgreSQL »
-    - **URL**: Indique la dirección del servidor y el puerto en formato jdbc:postgresql://server:port/database
-    - **User name**: Indique el nombre de usuario.
-    - **Password**: Indique la contraseña.
+- Rellene los campos que se indican a continuación y confirme con el botón `OK`{.action}:
+    - **Name**: Elija un nombre
+    - **Driver**: Seleccione "PostgreSQL"
+    - **URL**: Introduzca la dirección del servidor y el puerto en formato jdbc:postgresql://server:port/database
+    - **User Name**: Introduzca el nombre de usuario
+    - **Password**: Introduzca la contraseña
 
-![config connection](/pages/assets/screens/other/web-tools/squirrel/add-alias.png){.thumbnail} conexión a la base de datos
+![config connection](/pages/assets/screens/other/web-tools/squirrel/add-alias.png){.thumbnail}
 
-- Confirme con el botón `{.action}Connect.
+- Confirme de nuevo con el botón `Conectar`{.action}.
 
-![valid connection](/pages/assets/screens/other/web-tools/squirrel/connect-to-mysql.png){.thumbnail} confirmación de la conexión
+![valid connection](/pages/assets/screens/other/web-tools/squirrel/connect-to-mysql.png){.thumbnail}
 
-Se establecerá la conexión a la base de datos:
+Se habrá conectado a su base de datos:
 
-![config connection](/pages/assets/screens/other/web-tools/squirrel/general-dashboard.png){.thumbnail} conexión a la base de datos
+![config connection](/pages/assets/screens/other/web-tools/squirrel/general-dashboard.png){.thumbnail}
+
+///
+<!-- CP-STEPS-END:postgresql -->
 
 ## Más información
 
-[Web hosting - Mi base de datos está llena. ¿Qué hago?](/pages/web_cloud/web_hosting/sql_overquota_database).
+[Web Hosting - Mi base de datos está llena. ¿Qué hago?](/pages/web_cloud/web_hosting/sql_overquota_database)
 
 Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](/links/partner).
 
-Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](/links/support).
+Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas [ofertas de soporte](/links/support).
 
 Interactúe con nuestra [comunidad de usuarios](/links/community).

@@ -1,7 +1,7 @@
 ---
-title: 'Criando seu primeiro projeto Public Cloud da OVHcloud'
-excerpt: 'Saiba como criar seu primeiro projeto Public Cloud através da Área de Cliente OVHcloud'
-updated: 2025-04-28
+title: 'Criar o seu primeiro projeto Public Cloud da OVHcloud'
+excerpt: 'Saiba como criar o seu primeiro projeto Public Cloud através da Área de Cliente OVHcloud'
+updated: 2026-05-05
 ---
 
 > [!primary]
@@ -12,15 +12,24 @@ updated: 2025-04-28
 
 A criação de um projeto é a primeira etapa na implantação de [instâncias Public Cloud](/links/public-cloud/public-cloud).
 
-**Este guia o levará através das etapas de criação do seu primeiro projeto Public Cloud.**
+**Este guia explica os passos para criar o seu primeiro projeto Public Cloud.**
 
 ## Requisitos
 
-- Ter acesso à [Área de Cliente OVHcloud](/links/manager)
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Acesso à Área de Cliente OVHcloud
+
+- **Ligação direta:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Caminho de navegação:** `Public Cloud`{.action} > Selecione o seu projeto
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## Instruções
 
-Primeiro, inicie sessão na [Área de Cliente OVHcloud](/links/manager) e clique no menu `Public Cloud`{.action}.
+### Criação do projeto
 
 Após ter tomado conhecimento, valide os termos dos contratos selecionando a casa correspondente e clique em `Descobrir o universo Public Cloud`{.action}.
 
@@ -49,6 +58,20 @@ Já tem acesso a todo o ecossistema Public Cloud da OVHcloud, descubra esta nova
 >![Ativar projeto](images/activate-project.png){.thumbnail width="400"}
 
 <iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/N7r_VCB7nmI?si=fcyToz1wK8Tw7skw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+### Ativação do projeto e teste gratuito
+
+Quando clica em `Ativar o projeto`{.action} a partir do `Modo Descoberta` e regista um método de pagamento, é aplicado um **crédito de teste de 200 €** se for elegível.
+
+> [!primary]
+> **Condições do teste gratuito**
+>
+> - O crédito é ativado no momento da ativação do projeto e é válido durante **um mês**.
+> - **Elegível:** qualquer cliente OVHcloud que crie o seu primeiro projeto Public Cloud, mesmo que já disponha de uma conta OVHcloud.
+> - **Não elegível:** os clientes que disponham ou tenham disposto de um projeto Public Cloud, ou que já tenham beneficiado de um crédito de teste gratuito.
+>
+> Saiba mais na página [Teste gratuito Public Cloud OVHcloud](/links/public-cloud/free-trial).
+>
 
 ## Quer saber mais?
 

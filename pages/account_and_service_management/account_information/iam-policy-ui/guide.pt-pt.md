@@ -33,11 +33,22 @@ Por exemplo, podemos criar uma política para dar a um utilizador chamado John, 
 - Saber [gerir os utilizadores da conta](/pages/account_and_service_management/account_information/ovhcloud-users-management)
 - Um ou vários produtos OVHcloud associados a esta conta OVHcloud (Load Balancer, nome de domínio, VPS, etc.)
 
+<!-- CP-NAV-START:iam-policies -->
+---
+
+### Acesso à Área de Cliente OVHcloud
+
+- **Ligação direta:** [IAM Policies](/links/control-panel/iam-policies)
+- **Caminho de navegação:** `Identidade, Segurança e Operações`{.action} > `Políticas`{.action}
+
+---
+<!-- CP-NAV-END:iam-policies -->
+
 ## Instruções
 
 ### Aceder ao menu IAM
 
-Na barra lateral, clique em `Identidade, Segurança e Operações`{.action} e, a seguir, em `Políticas`{.action}.
+Abra a página [Políticas IAM](/links/control-panel/iam-policies).
 
 ![Acesso ao menu IAM](images/access_to_the_IAM_menu_01.png){.thumbnail}
 

@@ -1,6 +1,6 @@
 ---
-title: "Comment récupérer l'accès au serveur en cas de perte du mot de passe de l'utilisateur"
-excerpt: "Découvrez comment configurer un nouveau mot de passe pour un compte utilisateur sur un système d'exploitation GNU/Linux avec le mode rescue OVHcloud"
+title: "Récupérer un mot de passe perdu sur un serveur dédié"
+excerpt: "Réinitialisez un mot de passe utilisateur perdu sur un serveur dédié GNU/Linux via le mode rescue OVHcloud pour retrouver l'accès"
 updated: 2025-10-02
 ---
 
@@ -20,7 +20,7 @@ Dans ce cas, vous pouvez vous connecter à votre serveur via le mode rescue d’
 ## Prérequis
 
 - Disposer d'un [serveur dédié](/links/bare-metal/bare-metal) ou d'un [VPS](/links/bare-metal/vps) dans votre compte OVHcloud
-- Être connecté à votre [espace client OVHcloud](/links/manager)
+
 
 > [!primary]
 >

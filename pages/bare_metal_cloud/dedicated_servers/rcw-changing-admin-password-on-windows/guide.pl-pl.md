@@ -1,6 +1,6 @@
 ---
-title: "Jak zresetować hasło administratora za pomocą Rescue-Customer-Windows"
-excerpt: "Jak zresetować hasło administratora za pomocą Rescue-Customer-Windows"
+title: "Jak zmienić hasło administratora Windows przez RCW"
+excerpt: "Zmień hasło administratora na serwerze dedykowanym Windows za pomocą Remote Console for Windows (RCW)."
 updated: 2025-10-22
 ---
 
@@ -13,7 +13,17 @@ Niniejszy przewodnik wyjaśnia, jak zresetować hasło `Administrator` przy uży
 
 - Microsoft Windows Server 2016 lub nowszy zainstalowany na Twoim [serwerze dedykowanym](/links/bare-metal/bare-metal)
 - Co najmniej 16 GB RAM zainstalowanych na serwerze
-- Dostęp do [panelu klienta OVHcloud](/links/manager)
+
+<!-- CP-NAV-START:baremetal-dedicated-servers -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Bezpośredni link:** [Serwery dedykowane](/links/control-panel/baremetal-dedicated-servers)
+- **Ścieżka nawigacji:** `Bare Metal Cloud`{.action} > `Serwery dedykowane`{.action} > Wybierz swój serwer
+
+---
+<!-- CP-NAV-END:baremetal-dedicated-servers -->
 
 > [!warning]
 >
@@ -148,4 +158,6 @@ Następnie zrestartuj serwer z poziomu panelu klienta. Kliknij przycisk `...`{.a
 
 ## Sprawdź również
 
+- [Pierwsze kroki z serwerem dedykowanym OVHcloud](/pages/bare_metal_cloud/dedicated_servers/getting-started-with-dedicated-server)
+- [Jak zabezpieczyć serwer dedykowany](/pages/bare_metal_cloud/dedicated_servers/securing-a-dedicated-server)
 Dołącz do [grona naszych użytkowników](/links/community).

@@ -1,5 +1,5 @@
 ---
-title: MongoDB - Comprendre le format URI des chaînes de connection (EN)
+title: Comprendre le format de l'URI des chaînes de connection de Public Cloud Databases for MongoDB (EN)
 excerpt: Find out how connections syntax work for MongoDB
 updated: 2023-03-02
 ---
@@ -15,10 +15,20 @@ MongoDB 3.6 introduced the concept of a seed list that is specified using DNS re
 ## Requirements
 
 - A [Public Cloud project](/links/public-cloud/public-cloud) in your OVHcloud account
-- Access to the [OVHcloud Control Panel](/links/manager)
 - A MongoDB instance running on your OVHcloud Public Cloud Databases ([this guide](/pages/public_cloud/public_cloud_databases/databases_01_order_control_panel) can help you to meet this requirement)
 - [Configure your MongoDB instance](/pages/public_cloud/public_cloud_databases/mongodb_02_manage_control_panel) to accept incoming connections
 - A MongoDB Compass stable version installed and public network connectivity (Internet). This guide was made in MongoDB Compass version 1.30.1
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Navigation path:** `Public Cloud`{.action} > Select your project
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## Concepts
 
@@ -81,9 +91,7 @@ _mongodb._tcp.mongodb-708c0af6-o1b33fa01.database.cloud.ovh.net. 1440 IN SRV   0
 
 ### Retrieve MongoDB DNS Seed List connection string
 
-To retrieve the MongoDB URI (`mongodbSrv`), log in to your OVHcloud Control Panel and open your Public Cloud project.
-
-Click on `Databases`{.action} in the left-hand navigation bar and select your MongoDB instance.
+To retrieve the MongoDB URI (`mongodbSrv`), open your Public Cloud project and click on `Databases`{.action} in the left-hand navigation bar and select your MongoDB instance.
 
 From the central `Login information` panel, select `mongodbSrv` as **Service** and copy the URI.
 

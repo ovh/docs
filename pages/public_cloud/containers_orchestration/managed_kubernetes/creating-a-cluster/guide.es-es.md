@@ -1,7 +1,7 @@
 ---
 title: Creating a cluster
 excerpt: 'Find out how to create a Kubernetes cluster managed by OVHcloud using the OVHcloud Control Panel, Terraform, Pulumi or CDK'
-updated: 2025-05-06
+updated: 2026-02-25
 ---
 
 <style>
@@ -76,11 +76,20 @@ Pulumi offers an intuitive command line interface (CLI), to provision, update or
 > [!success]
 > Take advantage of reduced prices by committing to a period of 1 to 36 months on your Public Cloud resources. More information on our [Savings Plans](/links/public-cloud/savings-plan) page.
 
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Navigation path:** `Public Cloud`{.action} > Select your project
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
+
 ## Instructions
 
 /// details | Via OVHcloud Control Panel
-
-Log in to the [OVHcloud Control Panel](/links/manager), go to the `Public Cloud`{.action} section and select the Public Cloud project concerned.
 
 Access the administration UI for your OVHcloud Managed Kubernetes clusters by clicking on `Managed Kubernetes Service`{.action} in the left-hand menu and click on `Create a cluster`{.action}.
 
@@ -185,7 +194,7 @@ Because, behind the scenes, the "OVH Terraform provider" is doing requests to OV
 
 In order to retrieve this necessary information, please follow [First steps with the OVHcloud APIs](/pages/manage_and_operate/api/first-steps) tutorial.
 
-Concretely, you have to generate these credentials via the [OVH token generation page](https://api.ovh.com/createToken/?GET=/*&POST=/*&PUT=/*&DELETE=/*) with the following rights:
+Concretely, you have to generate these credentials via the [OVH token generation page](https://auth.eu.ovhcloud.com/api/createToken?GET=/*&POST=/*&PUT=/*&DELETE=/*) with the following rights:
 
 ![OVHcloud API rights](images/api-rights.png){.thumbnail}
 
@@ -279,7 +288,7 @@ resource "ovh_cloud_project_kube" "my_kube_cluster" {
    service_name = "${var.service_name}"
    name         = "my_kube_cluster"
    region       = "GRA7"
-   version      = "1.22"
+   version      = "1.34"
 }
 
 resource "ovh_cloud_project_kube_nodepool" "node_pool" {
@@ -293,7 +302,7 @@ resource "ovh_cloud_project_kube_nodepool" "node_pool" {
 }
 ```
 
-In this resources configuration, we ask Terraform to create a Kubernetes cluster, in the GRA7 region, using the Kubernetes version 1.22 (the last and recommended version at the time we wrote this tutorial).
+In this resources configuration, we ask Terraform to create a Kubernetes cluster, in the GRA7 region, using Kubernetes version 1.34.
 
 And we tell Terraform to create a Node Pool with 3 Nodes with B2-7 machine type.
 
@@ -393,7 +402,7 @@ Terraform will perform the following actions:
       + status                      = (known after apply)
       + update_policy               = (known after apply)
       + url                         = (known after apply)
-      + version                     = "1.22"
+      + version                     = "1.34"
     }
 
   # ovh_cloud_project_kube_nodepool.node_pool will be created
@@ -457,7 +466,7 @@ Terraform will perform the following actions:
       + status                      = (known after apply)
       + update_policy               = (known after apply)
       + url                         = (known after apply)
-      + version                     = "1.22"
+      + version                     = "1.34"
     }
 
   # ovh_cloud_project_kube_nodepool.node_pool will be created
@@ -534,7 +543,7 @@ Outputs:
 kubeconfig = <sensitive>
 ```
 
-Now, log in to the [OVHcloud Control Panel](/links/manager), go to the `Public Cloud`{.action} section and click on `Managed Kubernetes Service`.  
+Now, click on `Managed Kubernetes Service`{.action} in the left-hand menu.
 As you can see, your cluster has been successfuly created:
 
 ![Cluster created](images/cluster-created.png){.thumbnail}
@@ -589,7 +598,7 @@ This is because, behind the scenes, the "OVH Terraform provider" is doing reques
 
 To retrieve the necessary information, please follow the tutorial [First steps with the OVHcloud APIs](/pages/manage_and_operate/api/first-steps).
 
-Concretely, you have to generate these credentials via the [OVH token generation page](https://api.ovh.com/createToken/?GET=/*&POST=/*&PUT=/*&DELETE=/*) with the following rights:
+Concretely, you have to generate these credentials via the [OVH token generation page](https://auth.eu.ovhcloud.com/api/createToken?GET=/*&POST=/*&PUT=/*&DELETE=/*) with the following rights:
 
 ![OVHcloud API rights](images/api-rights.png){.thumbnail}
 
@@ -613,7 +622,7 @@ Summary of the needed environment variables:
 | `consumer_key`      | `OVH_CONSUMER_KEY` | OVHcloud Consumer Key | ✅        |
 | `service_name`      | `OVH_CLOUD_PROJECT_SERVICE` | OVHcloud Public Cloud project ID| ✅        |
 
-These keys can be generated via the [OVHcloud token generation page](https://api.ovh.com/createToken/?GET=/*&POST=/*&PUT=/*&DELETE=/*).
+These keys can be generated via the [OVHcloud token generation page](https://auth.eu.ovhcloud.com/api/createToken?GET=/*&POST=/*&PUT=/*&DELETE=/*).
 
 Example:
 
@@ -994,15 +1003,15 @@ ovhcloud
           
           Outputs:
 
-          cluster_version = "1.28"
+          cluster_version = "1.34"
           nodePoolID = "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxx"
 
   ovhcloud
-  cluster_version = 1.28
+  cluster_version = 1.34
   nodePoolID = xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxx
 ```
 
-Log in to the [OVHcloud Control Panel](/links/manager), go to the `Public Cloud`{.action} section and click on `Managed Kubernetes Service`.  
+Click on `Managed Kubernetes Service`{.action} in the left-hand menu.
 As you can see, your cluster has been successfuly created:
 
 ![Cluster created](images/cluster-created.png){.thumbnail}
@@ -1080,7 +1089,7 @@ Behind the scenes, the provider is doing requests to OVHcloud APIs.
 
 In order to retrieve this necessary information, please follow our [first steps with the OVHcloud APIs](/pages/manage_and_operate/api/first-steps) guide.
 
-In concrete terms, you have to generate these credentials via the [OVH token generation page](https://api.ovh.com/createToken/?GET=/*&POST=/*&PUT=/*&DELETE=/*) with the following rights:
+In concrete terms, you have to generate these credentials via the [OVH token generation page](https://auth.eu.ovhcloud.com/api/createToken?GET=/*&POST=/*&PUT=/*&DELETE=/*) with the following rights:
 
 ![OVHcloud API rights](images/api-rights.png){.thumbnail}
 
@@ -1290,7 +1299,7 @@ Resources:
 Duration: 6m37s
 ```
 
-Log in to the [OVHcloud Control Panel](/links/manager), go to the `Public Cloud`{.action} section and click on `Managed Kubernetes Service`.  
+Click on `Managed Kubernetes Service`{.action} in the left-hand menu.
 As you can see, your cluster has been successfuly created:
 
 ![Cluster created](images/cluster-created.png){.thumbnail}
@@ -1330,9 +1339,9 @@ Display the list of Nodes:
 ```
 $ kubectl --kubeconfig=/Users/<your-user>/.kube/my_kube_cluster.yml get node
 NAME                  STATUS   ROLES    AGE   VERSION
-my-pool-node-1bb290   Ready    <none>   1d   v1.22.2
-my-pool-node-8280a6   Ready    <none>   1d   v1.22.2
-my-pool-node-8a1bfe   Ready    <none>   1d   v1.22.2
+my-pool-node-1bb290   Ready    <none>   1d   v1.34.0
+my-pool-node-8280a6   Ready    <none>   1d   v1.34.0
+my-pool-node-8a1bfe   Ready    <none>   1d   v1.34.0
 ```
 
 Awesome!
@@ -1362,7 +1371,7 @@ Display the list of Nodes:
 ```bash
 $ kubectl --kubeconfig=kubeconfig.yaml get node
 NAME                  STATUS   ROLES    AGE   VERSION
-my-pool-node-0784ed   Ready    <none>   76m   v1.28.3
+my-pool-node-0784ed   Ready    <none>   76m   v1.34.0
 ```
 
 You can now deploy your applications and/or create new clusters through Terraform.
@@ -1394,7 +1403,7 @@ Display the list of Nodes:
 ```bash
 $ kubectl --kubeconfig=kubeconfig.yaml get node
 NAME                          STATUS   ROLES    AGE    VERSION
-my-desired-pool-node-a90c09   Ready    <none>   115s   v1.27.4
+my-desired-pool-node-a90c09   Ready    <none>   115s   v1.34.0
 ```
 
 You can now deploy your applications and/or create new clusters through Pulumi.
@@ -1602,7 +1611,7 @@ Terraform will perform the following actions:
       - status                      = "READY" -> null
       - update_policy               = "ALWAYS_UPDATE" -> null
       - url                         = "xxxxxx.c1.gra7.k8s.ovh.net" -> null
-      - version                     = "1.22" -> null
+      - version                     = "1.34" -> null
     }
 
   # ovh_cloud_project_kube_nodepool.node_pool will be destroyed
@@ -1711,7 +1720,7 @@ ovhcloud    # local_file.kubeconfig (kubeconfig) will be destroyed
                 - status                      = "READY" -> null
                 - update_policy               = "ALWAYS_UPDATE" -> null
                 - url                         = "xxxxxx.c2.gra.k8s.ovh.net" -> null
-                - version                     = "1.28" -> null
+                - version                     = "1.34" -> null
 
                 - customization_apiserver {
                     - admissionplugins {
@@ -1754,7 +1763,7 @@ ovhcloud  - created_at                                   = "2024-03-14T10:56:35Z
           Plan: 0 to add, 0 to change, 3 to destroy.
           
           Changes to Outputs:
-            - cluster_version = "1.28" -> null
+            - cluster_version = "1.34" -> null
             - nodePoolID      = "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxx" -> null
           
           Do you really want to destroy all resources?

@@ -92,11 +92,7 @@ Follow the installation steps by clicking on the tabs below:
 
 Once you have configured your email account, you can start using it! You can now send and receive messages.
 
-OVHcloud also offers a web application you can use to access your email account from your browser. You can log in with your email credentials here: [Webmail](/links/web/email). If you have any questions on how to use the webmail associated with your solution, please refer to our guides:
-
-- [View your account via the OWA interface](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa)
-- [Use your email account from the Roundcube webmail](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_roundcube)
-- [Use Zimbra webmail](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_zimbra)
+OVHcloud also offers a web application you can use to access your email account from your browser. You can log in with your email credentials here: [Webmail](/links/web/email). If you have any questions on how to use it, please refer to our guide "[View your account via the OWA interface](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa)".
 
 ### Modify existing settings <a name="modify-settings"></a>
 

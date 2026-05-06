@@ -1,7 +1,7 @@
 ---
 title: 'Migrar cuentas de correo electrónico con OVHcloud Mail Migrator'
 excerpt: 'Descubra cómo migrar sus cuentas de correo electrónico a OVHcloud con nuestra herramienta OVHcloud Mail Migrator'
-updated: 2025-11-25
+updated: 2026-03-30
 ---
 
 <style>
@@ -21,7 +21,7 @@ updated: 2025-11-25
 
 ## Requisitos
 
-- Tener un servicio de correo electrónico externo o en OVHcloud, como una oferta [Zimbra](/links/web/zimbra), [Exchange](/links/web/emails), [Email Pro](/links/web/email-pro) o MX Plan (a través de la oferta MX Plan sola o incluida en una oferta de [alojamiento web de OVHcloud](/links/web/hosting)).
+- Tener un servicio de correo electrónico externo o en OVHcloud, como una oferta [Exchange](/links/web/emails-exchange) o MX Plan (a través de la oferta MX Plan sola o incluida en una oferta de [alojamiento web de OVHcloud](/links/web/hosting)).
 - Tener los identificadores relacionados con las cuentas de correo electrónico que desea migrar (las cuentas de correo electrónico de origen).
 - Tener los identificadores relacionados con las cuentas de correo electrónico de destino.
 
@@ -71,7 +71,7 @@ En la nueva página que aparece, introduzca las informaciones de conexión de la
 
 Antes de comenzar su migración, es importante conocer bien los 3 tipos de cuentas que se pueden migrar y hacia las que puede migrar:
 
-- **OVHcloud**: El `Autodetect` se recomienda si debe migrar una cuenta alojada en una de las ofertas de correo electrónico de OVHcloud. Si posee un gran número de cuentas de correo electrónico de OVHcloud, seleccione una de las siguientes ofertas: `MX plan`, `Email Pro`, `Exchange` o `Zimbra`. Se le pedirá que se conecte a la cuenta de OVHcloud asociada a la oferta concernida por la migración. Para más información, consulte la sección "[Migrar mediante una conexión a la cuenta cliente de OVHcloud](#sso-migration)".
+- **OVHcloud**: El `Autodetect` se recomienda si debe migrar una cuenta alojada en una de las ofertas de correo electrónico de OVHcloud. Si posee un gran número de cuentas de correo electrónico de OVHcloud, seleccione una de las siguientes ofertas: `MX plan` o `Exchange`. Se le pedirá que se conecte a la cuenta de OVHcloud asociada a la oferta concernida por la migración. Para más información, consulte la sección "[Migrar mediante una conexión a la cuenta cliente de OVHcloud](#sso-migration)".
 - **Others**: Se trata de servicios de correo electrónico contratados fuera de OVHcloud. Una lista no exhaustiva de servicios de correo electrónico compatibles con OMM está disponible. Si el tipo de servicio de su cuenta de correo electrónico no aparece en esta lista, utilice los protocolos `IMAP` o `POP`, compatibles con la mayoría de los servidores de correo electrónico.
 - **Importing files**: Es posible migrar el contenido de archivos PST, ICS, CSV y XML Rules a través de OMM a una cuenta de correo electrónico de destino. Cuando se selecciona esta función, basta con arrastrar y soltar su documento en la zona correspondiente o navegar por su terminal mediante el botón `Browse your files`{.action}.
 
@@ -108,7 +108,7 @@ Complete las informaciones según el tipo de cuenta:
 
 > [!warning]
 >
-> Si migra una cuenta que dispone de funcionalidades que la cuenta de destino no posee, **deberá guardar por sus propios medios los elementos que no puedan ser migrados por OMM**. Para ayudarle, consulte nuestro guía "[Migrar manualmente su dirección de correo electrónico](/pages/web_cloud/email_and_collaborative_solutions/migrating/manual_email_migration)".
+> Si migra una cuenta que dispone de funcionalidades que la cuenta de destino no posee, **deberá guardar por sus propios medios los elementos que no puedan ser migrados por OMM**. Para ayudarle, consulte nuestra guía "[Migrar manualmente su dirección de correo electrónico](/pages/web_cloud/email_and_collaborative_solutions/migrating/manual_email_migration)".
 
 Una vez completados los parámetros de las cuentas de origen y de destino, haga clic en:
 
@@ -117,7 +117,7 @@ Una vez completados los parámetros de las cuentas de origen y de destino, haga 
 
 ### Migrar mediante una conexión a la cuenta cliente de OVHcloud <a name="sso-migration"></a>
 
-Durante una migración hacia o desde una cuenta de OVHcloud, es posible seleccionar una de nuestras ofertas `MX plan`, `Email Pro`, `Exchange` o `Zimbra`.
+Durante una migración hacia o desde una cuenta de OVHcloud, es posible seleccionar una de nuestras ofertas `MX plan` o `Exchange`.
 
 ![omm](images/omm-migration-sso-00.png){.thumbnail .w-300}
 
@@ -153,7 +153,7 @@ Cuando seleccione una de estas ofertas, siga los pasos siguientes:
 >>
 >> - Ahora podrá seleccionar sus servicios y cuentas mediante menús desplegables. Esto facilita la búsqueda de los elementos y evita errores de escritura. Es, sin embargo, necesario introducir la contraseña asociada a la cuenta de correo electrónico seleccionada.
 >>
->> Ejemplo con un servicio Zimbra:
+>> Ejemplo con un servicio Exchange:
 >>
 >> ![omm](images/omm-migration-sso-04.png){.thumbnail .w-600}
 
@@ -196,7 +196,7 @@ Ejemplo de seguimiento de migración:
 
 [Migrar manualmente su dirección de correo electrónico](/pages/web_cloud/email_and_collaborative_solutions/migrating/manual_email_migration)
 
-[Migrar una dirección de correo electrónico MX Plan a una cuenta Email Pro o Exchange](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_control_panel)
+[Migrar una cuenta MX Plan a una cuenta Exchange](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_control_panel)
 
 Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con los [partners de OVHcloud](/links/partner).
 

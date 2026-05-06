@@ -13,7 +13,26 @@ Les services e-mail d'OVHcloud permettent de bénéficier d’adresses e-mail pr
 ## Prérequis
 
 - Disposer d'une [offre e-mail OVHcloud](/links/web/emails).
-- Être connecté à [l'espace client OVHcloud](/links/manager), partie `Web Cloud`{.action}.
+
+<!-- CP-NAV-START:web-mx-plan -->
+<!-- CP-NAV-START:web-exchange -->
+---
+
+### Accès à l'espace client OVHcloud
+
+**MX Plan :**
+
+- **Lien direct :** [MX Plan](/links/control-panel/web-mx-plan)
+- **Pour accéder à vos services :** `Web Cloud`{.action} > `MX Plan`{.action} > Sélectionnez votre service MX Plan
+
+**Exchange :**
+
+- **Lien direct :** [Exchange](/links/control-panel/web-exchange)
+- **Pour accéder à vos services :** `Web Cloud`{.action} > `Exchange`{.action} > Sélectionnez votre plateforme
+
+---
+<!-- CP-NAV-END:web-exchange -->
+<!-- CP-NAV-END:web-mx-plan -->
 
 ## En pratique
 
@@ -24,11 +43,11 @@ La gestion de la politique de sécurité de votre service e-mail peut interagir 
 - renforcer la vérification des messages entrants sur nos serveurs et à destination de vos adresses e-mail (uniquement pour les comptes [Exchange](/links/web/emails-hosted-exchange));
 - définir comment les messages dits « indésirables » s'afficheront dans vos boites aux lettres (uniquement pour les comptes [Exchange](/links/web/emails-hosted-exchange)).
 
-Pour accéder à la politique de sécurité de votre service e-mail, connectez-vous à votre [espace client OVHcloud](/links/manager) et assurez-vous de vous situer dans la section `Web Cloud`{.action}.
+Pour accéder à la politique de sécurité de votre service e-mail, suivez les indications ci-dessous.
 
 |MX Plan|Exchange|
 |---|---|
-|Cliquez sur `MX Plan`{.action} et sélectionnez l'offre concernée. Cliquez sur l'onglet `Plus` puis sur `Gérer la politique de sécurité`{.action}|Cliquez sur `Microsoft`{.action}, puis sur `Exchange`{.action} et sélectionnez l'offre concernée. Cliquez sur l'onglet `Sécurité`{.action}|
+|Cliquez sur l'onglet `Plus` puis sur `Gérer la politique de sécurité`{.action}.|Cliquez sur l'onglet `Sécurité`{.action}.|
 |![exchangesecurity](images/manage-security01.png){.thumbnail}|![exchangesecurity](images/manage-security02.png){.thumbnail}|
 
 > [!primary]

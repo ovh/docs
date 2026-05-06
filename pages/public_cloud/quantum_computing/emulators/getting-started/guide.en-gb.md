@@ -1,7 +1,7 @@
 ---
 title: Quantum computing - Getting started with Emulators Notebooks
 excerpt: Learn how to set up a Quantum Emulators Notebook
-updated: 2025-11-06
+updated: 2026-01-28
 ---
 
 > [!warning]
@@ -30,8 +30,18 @@ Each method offers its distinct advantages, depending on your expertise and pref
 ## Requirements
 
 - A [Public Cloud project](/links/public-cloud/public-cloud) in your OVHcloud account.
-- Access to the [OVHcloud Control Panel](/links/manager).
 - A Public Cloud user with the **Administrator** or **Quantum Operator & Objectstore Operator** roles.
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Navigation path:** `Public Cloud`{.action} > Select your project
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## Instructions
 
@@ -39,9 +49,8 @@ Each method offers its distinct advantages, depending on your expertise and pref
 
 If you're using the CLI, API, or SDK, you will need to complete an authorization process before creating a Quantum Emulators Notebook. To do so, follow these steps:
 
-1. Log in to the [OVHcloud Control Panel](/links/manager) and navigate to the `Public Cloud`{.action} section.
-2. Select the Public Cloud project you want to use and click the `Quantum Emulators`{.action} category.
-3. Click the `Create a Notebook`{.action} button. The authorization process will take place silently in the background.
+1. Click the `Quantum Emulators`{.action} category.
+2. Click the `Create a Notebook`{.action} button. The authorization process will take place silently in the background.
 
 ![Create a Notebook Control Panel manager 01](images/creating-a-notebook-using-UI-01.png){.thumbnail}
 
@@ -52,7 +61,7 @@ To create a Quantum Notebook, follow these steps:
 > [!tabs]
 > **Using the Control Panel (UI)**
 >> 
->> Navigate to the `Public Cloud`{.action} section of the [OVHcloud Control Panel](/links/manager), click the `Quantum Emulators`{.action} category.
+>> Click the `Quantum Emulators`{.action} category.
 >> Click the `Create a Notebook`{.action} button and follow the prompts to specify the configuration of your Quantum Notebook.
 >>
 >> ![Create a Notebook Control Panel manager 01](images/creating-a-notebook-using-UI-01.png){.thumbnail}
@@ -97,7 +106,17 @@ To create a Quantum Notebook, follow these steps:
 >> 
 >> ![Create a Notebook Control Panel manager 06](images/creating-a-notebook-using-UI-06.png){.thumbnail}
 >> 
->> **7\. Advanced configuration**
+>> **7\. Notebook lifecycle**
+>> 
+>> > [!warning]
+>> >
+>> > Our main motivation is to keep the platform up-to-date in terms of security patches and new feature alignment. To achieve this, we need to update and restart hosts from time to time, which requires them to be free from any customer workload.
+>> 
+>> By default, your AI notebook will automatically shut down after 7 consecutive days of running. Rest assured that all your settings and data will be preserved. You have the option to enable Automatic Restart, which will automatically restart your notebook every 7 days, ensuring minimal disruption to your workflow. Alternatively, you can also contact [our support](/links/support) to extend this automatic restart period from 7 to 28 days.
+>> 
+>> ![Create a Notebook Control Panel manager 06](images/creating-a-notebook-using-UI-expiry.png){.thumbnail}
+>> 
+>> **8\. Advanced configuration**
 >> 
 >> By default, your Quantum Notebook comes with **ephemeral storage** (local storage). But in this step, you can also link Object Storage containers and Git repositories to your notebook to easily access your remote data.
 >> 

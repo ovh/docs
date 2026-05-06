@@ -10,7 +10,7 @@ This project is under active development, and new guides are added or updated on
 
 We will be happy to take a look at your contributions. You can contribute to this project by updating some existing guides, completing them or creating new ones.
 
-A good way to easily get started with contributions is [to fork the ovh/docs repo](https://docs.github.com/en/get-started/quickstart/fork-a-repo), write your changes on your fork then [create a pull request (PR)](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request-from-a-fork) from your fork to the ovh/docs repo. 
+A good way to easily get started with contributions is [to fork the ovh/docs repo](https://docs.github.com/en/get-started/quickstart/fork-a-repo), write your changes on your fork then [create a pull request (PR)](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request-from-a-fork) from your fork to the ovh/docs repo.
 
 Your PR must be done on the `develop` branch.
 

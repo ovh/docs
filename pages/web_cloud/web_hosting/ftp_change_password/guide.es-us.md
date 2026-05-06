@@ -1,8 +1,22 @@
 ---
 title: "Cambiar la contraseña de un usuario FTP"
 excerpt: "Descubra cómo cambiar la contraseña de un usuario FTP en un alojamiento de OVHcloud"
-updated: 2025-10-14
+updated: 2026-03-31
 ---
+
+<style>
+details>summary {
+    color:rgb(33, 153, 232) !important;
+    cursor: pointer;
+}
+details>summary::before {
+    content:'\25B6';
+    padding-right:1ch;
+}
+details[open]>summary::before {
+    content:'\25BC';
+}
+</style>
 
 ## Objetivo
 
@@ -24,68 +38,97 @@ La configuración, la gestión y la responsabilidad de los servicios que OVHclou
 ## Requisitos
 
 - Tener contratado un plan de [hosting de OVHcloud](/links/web/hosting).
-- Haber iniciado sesión en el [área de cliente de OVHcloud](/links/manager).
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [Alojamientos](/links/control-panel/web-hosting)
+- **Ruta de navegación:** `Web Cloud`{.action} > `Alojamientos`{.action} > Seleccione su alojamiento web
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## Procedimiento
 
-### 1 - Acceder a la gestión de los usuarios FTP
+### Cambiar la contraseña de un usuario FTP
 
-Haga clic en las fichas siguientes para ver cada una de las **4** etapas.
+> [!primary]
+>
+> Para más información sobre las buenas prácticas de gestión de contraseñas, consulte la guía "[Establecer y gestionar la contraseña de su cuenta](/pages/account_and_service_management/account_information/manage-ovh-password)".
+
+Según el plan de [hosting de OVHcloud](/links/web/hosting), la contraseña de su usuario FTP se modifica de dos formas diferentes.
+
+**Haga clic en su plan para ver el contenido.**
+
+<!-- CP-STEPS-START:change-ftp-password-perso -->
+/// details | Planes Perso y Alojamiento gratuito 100M (un solo usuario FTP)
+
+Haga clic en las fichas siguientes para ver cada una de las **3** etapas.
 
 > [!tabs]
 > **Etapa 1**
 >>
->> Conéctese a su [área de cliente de OVHcloud](/links/manager) y acceda a la sección `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Etapa 2**
->>
->> Haga clic en el menú `Alojamientos`{.action} y seleccione el alojamiento web correspondiente.
+>> Acceda a la página [Alojamientos](/links/control-panel/web-hosting) y seleccione el alojamiento web correspondiente.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Etapa 3**
+> **Etapa 2**
 >>
->> En la nueva página, haga clic en la pestaña `FTP - SSH`{.action}.
+>> Haga clic en la pestaña `FTP - SSH`{.action}.
 >>
 >> ![FTP - SSH](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh.png){.thumbnail}
 >>
-> **Etapa 4**
+> **Etapa 3**
 >>
->> Se mostrará una tabla con los *usuarios FTP* creados en su alojamiento web. Estos usuarios le permiten acceder a su espacio de almacenamiento FTP para publicar los archivos de su sitio web. Al instalar el alojamiento web, se crea un usuario automáticamente.
+>> Se mostrará una tabla con los *usuarios FTP* creados en su alojamiento web. Haga clic en el *pictograma con forma de lápiz* en la columna `Contraseña`{.action}, introduzca la nueva contraseña **respetando la política de contraseñas** y confirme el cambio haciendo clic en el *botón verde* de validación.
+>>
+>> ![change-ftp-password-step1-perso](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/change-password-perso.png){.thumbnail}
 
-### 2 - Cambiar la contraseña de un usuario FTP
+///
+<!-- CP-STEPS-END:change-ftp-password-perso -->
+
+<!-- CP-STEPS-START:change-ftp-password-pro-performance -->
+/// details | Planes Pro y Performance (varios usuarios FTP)
+
+Haga clic en las fichas siguientes para ver cada una de las **3** etapas.
+
+> [!tabs]
+> **Etapa 1**
+>>
+>> Acceda a la página [Alojamientos](/links/control-panel/web-hosting) y seleccione el alojamiento web correspondiente.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Etapa 2**
+>>
+>> Haga clic en la pestaña `FTP - SSH`{.action}.
+>>
+>> ![FTP - SSH](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh.png){.thumbnail}
+>>
+> **Etapa 3**
+>>
+>> Se mostrará una tabla con los *usuarios FTP* creados en su alojamiento web. Haga clic en el botón `...`{.action} a la derecha del usuario FTP correspondiente y luego en `Cambiar la contraseña`{.action}. En la ventana que se abre, introduzca la nueva contraseña **respetando la política de contraseñas**, confírmela introduciéndola por segunda vez y haga clic en el botón `Aceptar`{.action}.
+>>
+>> ![change-ftp-password-pro](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/change-password-pro.png){.thumbnail}
+
+///
+<!-- CP-STEPS-END:change-ftp-password-pro-performance -->
 
 > [!primary]
 >
-> Para más información sobre las buenas prácticas de gestión de contraseñas, consulte esta [guía](/pages/account_and_service_management/account_information/manage-ovh-password).
+> La nueva contraseña debe respetar la siguiente **política de contraseñas**:
 >
-
-Según el plan de [hosting de OVHcloud](/links/web/hosting), la modificación de la contraseña del usuario FTP a través de la pestaña `FTP - SSH`{.action} se realizará por dos caminos diferentes:
-
-- **productos que no permiten crear un segundo usuario FTP** (*Alojamiento gratuito 100M* y *Personal*): haga clic en el *pictograma con forma de lápiz* en la columna `Contraseña`{.action} de la tabla que aparece, introduzca la nueva contraseña **respetando la política de contraseñas** y luego confirme el cambio haciendo clic en *botón verde* de validación.
-
-![change-ftp-password-step1-perso](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/change-password-perso.png){.thumbnail}
-
-- **Planes que permiten crear varios usuarios FTP** (planes *Pro* y *Performance*): pulse el botón `...`{.action} a la derecha del usuario FTP correspondiente y luego `Cambiar la contraseña`{.action}. Se abrirá una ventana en la que deberá introducir la nueva contraseña **respetando la política de contraseñas**, confirmarla introduciéndola por segunda vez y haciendo clic en el botón `Aceptar`{.action}.
-
-![change-ftp-password-pro](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/change-password-pro.png){.thumbnail}
-
-> [!primary]
->
-> La nueva contraseña debe respetar la **política de las siguientes contraseñas** :
->
->- Mínimo 9 caracteres;
->- Máximo 30 caracteres;
->- Al menos una letra mayúscula;
->- Al menos una letra minúscula;
->- Al menos una cifra.
->- Estar compuesto únicamente por números y letras.
+> - Mínimo 9 caracteres
+> - Máximo 30 caracteres
+> - Al menos una letra mayúscula
+> - Al menos una letra minúscula
+> - Al menos una cifra
+> - Estar compuesta únicamente por números y letras
 
 Por último, abra la pestaña `Tareas en curso`{.action} y vuelva a actualizar la página periódicamente. El cambio de contraseña tarda unos minutos en aplicarse.
 
-### 3 - Acceder al espacio de almacenamiento
+### Acceder a su espacio de almacenamiento
 
 Para acceder a su espacio de almacenamiento FTP, consulte nuestra guía ["Conectarse al espacio de almacenamiento de un alojamiento web"](/pages/web_cloud/web_hosting/ftp_connection).
 

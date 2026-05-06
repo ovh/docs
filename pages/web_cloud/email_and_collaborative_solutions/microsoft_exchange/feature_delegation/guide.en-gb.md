@@ -19,8 +19,27 @@ With the OVHcloud Exchange or Email Pro services, you can set up professional em
 > **For the [Email Pro](/links/web/email-pro) offer**, the delegation features described in this guide can only be used via [Webmail](/links/web/email). The protocols that allow them to be used via an email client require an [Exchange account](/links/web/emails-hosted-exchange).
 
 - At least two active email accounts, configured on the same OVHcloud Exchange or Email Pro platform
-- Access to the [OVHcloud Control Panel](/links/manager)
 - Credentials for the email account that will be delegated new permissions
+
+<!-- CP-NAV-START:web-exchange -->
+<!-- CP-NAV-START:web-email-pro -->
+---
+
+### OVHcloud Control Panel Access
+
+**Exchange:**
+
+- **Direct link:** [Exchange](/links/control-panel/web-exchange)
+- **Navigation path:** `Web Cloud`{.action} > `Exchange`{.action} > Select your platform
+
+**Email Pro:**
+
+- **Direct link:** [Email Pro](/links/control-panel/web-email-pro)
+- **Navigation path:** `Web Cloud`{.action} > `Email Pro`{.action} > Select your platform
+
+---
+<!-- CP-NAV-END:web-email-pro -->
+<!-- CP-NAV-END:web-exchange -->
 
 ## Instructions
 
@@ -35,29 +54,14 @@ Before you get started, define the permissions you want to delegate. As a remind
 > [!warning]
 >
 > The "Send As" and "Send on Behalf" permissions cannot be used together at the same time. However, you can combine other permissions.
-> 
+>
 
 When you have identified the account that you want to delegate permissions for, determined the kinds of permissions you want to delegate, and listed the users that will be delegated these permissions, go to the next step.
 
 ### Step 1: Setting up the delegation
 
-> [!tabs]
-> **Exchange**
->>
->> 1. Log in to your [OVHcloud Control Panel](/links/manager).
->> 1. Open the `Web Cloud`{.action} section.
->> 1. In the `MICROSOFT` section, click `Exchange`{.action}.
->> 1. Select the service concerned.
->>
-> **Email Pro**
->>
->> 1. Log in to your [OVHcloud Control Panel](/links/manager).
->> 1. Open the `Web Cloud`{.action} section.
->> 1. Click `Email Pro`{.action}.
->> 1. Select the service concerned.
->>
-
-Next, go to the `Email accounts`{.action} tab.
+<!-- CP-STEPS-START:step1-setup-delegation -->
+Go to the `Email accounts`{.action} tab.
 
 The table that appears will list all of the accounts linked to your service. Click on the three dots to the right of the account you want to delegate permissions for, then on `Manage delegations`{.action}.
 
@@ -70,6 +74,7 @@ In the configuration window, select the permissions you want to delegate. You wi
 Take a few moments to check the change summary. If the information in the summary is correct, click `Confirm`{.action}. Within a few minutes, the delegation will be created on our servers.
 
 Once the delegation has been configured, `test@mypersonaldomainname.ovh` can carry out the selected actions on the `test2@mypersonaldomainname.ovh` account.
+<!-- CP-STEPS-END:step1-setup-delegation -->
 
 ### Step 2: Using the delegated permissions
 

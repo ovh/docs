@@ -1,7 +1,7 @@
 ---
 title: Object Storage - Mettre en place CORS sur Object Storage
 excerpt: Découvrez comment activer et configurer CORS sur vos buckets
-updated: 2023-05-30
+updated: 2026-03-06
 ---
 
 ## Objectif
@@ -12,7 +12,7 @@ Par défaut, les navigateurs modernes imposent une politique de sécurité liée
 
 Le *Cross-Origin Resource Sharing* (CORS) est une technique qui permet aux ressources d'une application web cliente chargée à partir d'un domaine d'interagir avec des ressources situées dans un domaine différent.
 
-**Ce guide explique le concept de CORS et comment l’activer sur vos buckets Object Storage.**
+**Ce guide explique CORS et comment l’activer sur vos buckets Object Storage.**
 
 ### Cas d'usage
 
@@ -50,7 +50,7 @@ Les règles pour les requêtes CORS acceptées sont configurées au niveau du bu
 A l'aide de la CLI AWS, configurez CORS sur le bucket :
 
 ```sh
-aws s3api put-bucket-cors --bucket my-bucket --cors-configuration file://cors.json
+aws s3api put-bucket-cors --bucket <bucket_name> --cors-configuration file://cors.json
 ```
 
 Le fichier cors.json contient la configuration suivante :
@@ -70,9 +70,9 @@ Le fichier cors.json contient la configuration suivante :
 
 #### Exemple de configuration
 
-Supposons que nous avons une application web frontend hébergée sur `https://my-app.xyz` qui utilise JavaScript (React, Angular ou toute autre structure frontend) pour interroger les fichiers multimédia hébergés dans un bucket Object Storage (`https://my-media.s3.gra.io.cloud.ovh.net/`).
+Supposons que vous avez une application web frontend hébergée sur `https://my-app.xyz` qui utilise JavaScript (React, Angular ou toute autre structure frontend) pour interroger les fichiers multimédia hébergés dans un bucket Object Storage (`https://my-media.s3.gra.io.cloud.ovh.net/`).
 
-Nous activons CORS sur le bucket my-media :
+Activez CORS sur le bucket `my-media` :
 
 ```sh
 aws s3api put-bucket-cors --bucket my-media --cors-configuration file://cors.json

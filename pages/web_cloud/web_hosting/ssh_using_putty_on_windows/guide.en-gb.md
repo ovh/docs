@@ -1,7 +1,7 @@
 ---
 title: How to use PuTTY for SSH connections and authentication
 excerpt: Find out how to access your cloud server or web hosting and manage SSH keys with the PuTTY SSH client software
-updated: 2024-11-11
+updated: 2026-04-01
 ---
 
 <style>
@@ -31,7 +31,6 @@ table, th, tr, td {
 
 - [PuTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html) installed on your local device
 - A basic understanding of the [SSH protocol and its usage](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction)
-- Access to the [OVHcloud Control Panel](/links/manager)
 
 > [!warning]
 > OVHcloud provides services for which you are responsible with regard to their configuration and management. This tutorial will illustrate how to use OVHcloud solutions with external tools. You may need to adapt some specific instructions to the operating system of your local device or your server.

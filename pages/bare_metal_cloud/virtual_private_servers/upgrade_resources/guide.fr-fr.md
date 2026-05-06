@@ -8,18 +8,26 @@ updated: 2025-09-08
 
 ## Objectif
 
-Nos services VPS offrent flexibilité, fiabilité et performance pour une variété de besoins d'hébergement. Vous pouvez procéder à la mise à niveau de votre RAM, vCPU ou stockage dans le [espace client OVHcloud](/links/manager).
+Nos services VPS offrent flexibilité, fiabilité et performance pour une variété de besoins d'hébergement. Vous pouvez procéder à la mise à niveau de votre RAM, vCPU ou stockage dans l'[espace client OVHcloud](/links/manager).
 
 **Découvrez comment ajouter des vCores, de la mémoire et du stockage à votre service VPS.**
 
 ## Prérequis
 
 - Un [VPS](/links/bare-metal/vps) dans votre compte OVHcloud
-- Être connecté à votre [espace client OVHcloud](/links/manager)
+
+<!-- CP-NAV-START:baremetal-vps -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Gestion VPS](/links/control-panel/baremetal-vps)
+- **Pour accéder à vos services :** `Bare Metal Cloud`{.action} > `Serveurs Privés Virtuels`{.action} > Sélectionnez votre VPS
+
+---
+<!-- CP-NAV-END:baremetal-vps -->
 
 ## En pratique
-
-Connectez-vous à votre [espace client OVHcloud](/links/manager), rendez-vous dans la section `Bare Metal Cloud`{.action} et sélectionnez votre serveur sous la partie `Serveurs Privés Virtuels`{.action}.
 
 > [!primary]
 >

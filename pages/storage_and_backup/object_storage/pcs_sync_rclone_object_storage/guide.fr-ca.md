@@ -1,39 +1,39 @@
 ---
-title: Object Storage Swift - Utiliser le Stockage d’objet avec rClone
+title: Object Storage Swift - Utiliser l'Object Storage avec rClone
 updated: 2021-10-27
 ---
 
 ## Objectif
 
-Le Stockage d’objet d'OVH peut être synchronisé via rClone.
+L'Object Storage d'OVHcloud peut être synchronisé via rClone.
 
-**Ce guide a pour objectif de vous rappeler les étapes pour effectuer cette synchronisation sur votre espace client OVH.**
+**Ce guide a pour objectif de vous rappeler les étapes pour effectuer cette synchronisation sur votre espace client OVHcloud.**
 
 rClone étant un logiciel de synchronisation externe, les détails d'utilisation de celui-ci sont à découvrir directement sur sa [documentation officielle](https://Rclone.org/).
 
 ## Prérequis
 
-- Avoir créé son container *Stockage d’objet* (depuis [l'espace client](/pages/storage_and_backup/object_storage/pcs_create_container).
+- Avoir créé son container *Object Storage* (depuis l'espace client ou depuis [Horizon](/pages/storage_and_backup/object_storage/pcs_create_container)).
 - Avoir créé un [utilisateur OpenStack](/pages/public_cloud/public_cloud_cross_functional/create_and_delete_a_user).
 
 ## En pratique
 
-Une fois votre conteneur et votre utilisateur OpenStack créés, il vous reste deux choses à faire :
+Une fois votre container et votre utilisateur OpenStack créés, il vous reste deux choses à faire :
 
 - Récupérer le fichier de configuration pour rClone :
 
 Une fois votre [utilisateur OpenStack](/pages/public_cloud/public_cloud_cross_functional/create_and_delete_a_user) créé vous pourrez choisir, dans votre espace client, de récupérer le fichier de configuration nécessaire pour rClone.
 
-Pour cela, quand vous êtes sur la page des utilisateurs OpenStack dans votre espace client, cliquez sur la clé à molette à droite de l'utilisateur puis sur `Télécharger un fichier de configuration rClone`.
+Pour cela, quand vous êtes sur la page des utilisateurs OpenStack dans votre espace client, cliquez sur `...`{.action} à droite de l'utilisateur puis sur `Télécharger un fichier de configuration Rclone`{.action}.
 
-![Télécharger un fichier de configuration rClone](images/download_file.png){.thumbnail}
+![Télécharger un fichier de configuration Rclone](images/pcs_sync_rclone_pcs-20211008090532581.png)
 
 - Configurer rClone :
 
 Une fois le fichier téléchargé, vous pouvez lancer la commande suivante afin d’ajouter votre nouvel espace de stockage :
 
 ```sh
-Rclone config
+rclone config
 ```
 
 Vous serez invité à insérer les données de configuration présentes dans votre fichier.
@@ -43,15 +43,15 @@ Vous serez invité à insérer les données de configuration présentes dans vot
 > Vous pouvez également copier-coller le contenu de votre fichier dans l'espace dédié aux configurations de Rclone (*.config/Rclone/Rclone.conf*).
 >
 
-Une fois votre configuration effectuée, vous pouvez la tester en listant par exemple vos conteneurs :
+Une fois votre configuration effectuée, vous pouvez la tester en listant par exemple vos containers :
 
 ```sh
-Rclone lsd BackupStorage
+rclone lsd BackupStorage
 ```
 
 *BackupStorage* correspond au nom donné à votre espace de stockage.
 
-Vous trouverez sur le site officiel de rClone une documentation précise des actions à effectuer pour synchroniser votre Stockage d’objet et rClone : [Documentation officielle rClone](https://Rclone.org/swift/).
+Vous trouverez sur le site officiel de rClone une documentation précise des actions à effectuer pour synchroniser votre Object Storage et rClone : [Documentation officielle rClone](https://Rclone.org/swift/).
 
 ## Aller plus loin
 

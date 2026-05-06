@@ -1,7 +1,7 @@
 ---
-title: 'Configurar IPv6 em servidores dedicados'
-excerpt: 'Saiba como configurar endereços IPv6 na nossa infraestrutura'
-updated: 2025-12-09
+title: "Configurar IPv6 em servidores dedicados"
+excerpt: "Configure endereços IPv6 no seu servidor dedicado OVHcloud com exemplos para as principais distribuições Linux e Windows"
+updated: 2026-04-13
 ---
 
 <style>
@@ -29,13 +29,13 @@ O IPv6 é a versão mais recente do Internet Protocol (IP). Foi concebido para s
 > Este artigo fornece detalhes sobre a configuração de um endereço IP principal. Nos servidores que são compatíveis com o vRack, pode também configurar endereços Additional IP num vRack em vez da interface pública do servidor. Consulte as instruções correspondentes nos seguintes artigos:
 >
 > - IPv4: [Configurar um bloco de endereços IP no vRack](/pages/bare_metal_cloud/dedicated_servers/configuring-an-ip-block-in-a-vrack).
-> - IPv6: [Configuring an IPv6 block in a vRack](/pages/bare_metal_cloud/dedicated_servers/configure-an-ipv6-in-a-vrack).
+> - IPv6: [Configurar um bloco IPv6 num vRack](/pages/bare_metal_cloud/dedicated_servers/configure-an-ipv6-in-a-vrack).
 >
 
 > [!warning]
 > A OVHcloud presta-lhe serviços cuja configuração e gestão é da sua inteira responsabilidade, cabendo-lhe a si assegurar o seu correto funcionamento. 
 >
-> Este guia fornece as instruções necessárias para realizar as operações mais habituais. Se encontrar dificuldades ou dúvidas relativamente à administração, à utilização ou à segurança de um servidor, deverá contactar um [fornecedor especializado](/links/partner). Para mais informações, consulte a secção [«Quer saiba mais»](#go-further) neste guia.
+> Este guia fornece as instruções necessárias para realizar as operações mais habituais. Se encontrar dificuldades ou dúvidas relativamente à administração, à utilização ou à segurança de um servidor, deverá contactar um [fornecedor especializado](/links/partner). Para mais informações, consulte a secção ["Quer saber mais"](#go-further) neste guia.
 >
 
 ## Requisitos
@@ -43,6 +43,17 @@ O IPv6 é a versão mais recente do Internet Protocol (IP). Foi concebido para s
 - Um [servidor dedicado](/links/bare-metal/bare-metal) na sua conta OVHcloud.
 - Todos os seus dados IPv6 (prefixo, gateway, etc.).
 - Ter conhecimentos básicos de [SSH](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction) e redes.
+
+<!-- CP-NAV-START:baremetal-dedicated-servers -->
+---
+
+### Acesso à Área de Cliente OVHcloud
+
+- **Ligação direta:** [Servidores dedicados](/links/control-panel/baremetal-dedicated-servers)
+- **Caminho de navegação:** `Bare Metal Cloud`{.action} > `Servidores dedicados`{.action} > Selecione o seu servidor
+
+---
+<!-- CP-NAV-END:baremetal-dedicated-servers -->
 
 > [!warning]
 > Tenha em conta que os servidores Kimsufi são fornecidos com um único bloco IPv6 (/128). O IPv6 será configurado automaticamente aquando da instalação do sistema operativo.
@@ -58,11 +69,11 @@ Por predefinição, o primeiro IPv6 está configurado na maioria das distribuiç
 
 Antes de começar, e a fim de utilizar a mesma terminologia durante as operações, consulte a tabela abaixo. Estes são os termos que iremos utilizar ao longo deste manual:
 
-Termo|Descrição|Exemplo|
+|Termo|Descrição|Exemplo|
 |---|---|---|
 |YOUR_IPV6|Trata-se de um endereço IPv6 do bloco IPv6 atribuído ao seu servidor|2607:5300:xxxx:xxxx::1|
 |IPv6_PREFIX|Trata-se do prefixo (ou *netmask*) do seu bloco IPv6, geralmente de 64|2607:5300:xxxx:xxxx::/64|
-|IPv6_GATEWAY|Trata-se da gateway do seu bloco IPv6|2607:5300:xxxx:ff:ff:ff:ff:ff:ff ou fe80::1|
+|IPv6_GATEWAY|Trata-se da gateway do seu bloco IPv6|2607:5300:xxxx:ff:ff:ff:ff:ff ou fe80::1|
 
 Nos nossos exemplos, utilizaremos o editor de texto `nano`. Pode, evidentemente, utilizar o editor de texto que preferir.
 
@@ -72,8 +83,6 @@ O primeiro passo consiste em recuperar a gateway (gateway) IPv6 associada ao seu
 
 > [!tabs]
 > **Através da Área de Cliente**
->>
->> Aceda à [Área de Cliente OVHcloud](/links/manager), vá à secção `Bare Metal Cloud`{.action} e selecione o seu servidor na secção 'Servidor dedicado`{.action}.
 >>
 >> A gateway IPv6 associada ao seu servidor é apresentada na secção "Rede" do separador `Informações gerais`{.action}. Uma vez copiado, continue para a aplicação de configuração IPv6.
 >>
@@ -94,7 +103,7 @@ Tenha em conta que os "0" de cabeça podem ser eliminados num gateway IPv6.
 
 Exemplo:
 
-IPv6_GATEWAY: `2607:5300:60:62FF:00FF:00FF:00FF:00FF:00FF` também pode ser escrito como `2607:5300:60:62FF:FF:FF:FF:FF:FF:FF`.
+IPv6_GATEWAY: `2607:5300:60:62FF:00FF:00FF:00FF:00FF` também pode ser escrito como `2607:5300:60:62FF:FF:FF:FF:FF`.
 
 > [!warning]
 > 
@@ -112,7 +121,7 @@ IPv6_GATEWAY: `2607:5300:60:62FF:00FF:00FF:00FF:00FF:00FF` também pode ser escr
 >>
 >> > [!warning]
 >> >
->> > Antes de seguir os próximos passos, recomendamos que desative a autoconfiguração de IPv6 e o router advertising para evitar certos problemas. Pode fazê-lo acrescentando as seguintes linhas ao ficheiro `sysctl.conf`, localizado em /etc/sysctl.conf:
+>> > Antes de seguir os próximos passos, recomendamos que desative a autoconfiguração de IPv6 e o router advertising para evitar certos problemas. Pode fazê-lo acrescentando as seguintes linhas ao ficheiro `sysctl.conf`, localizado em `/etc/sysctl.conf`:
 >> >
 >> > `net.ipv6.conf.all.autoconf=0`
 >> > 
@@ -132,7 +141,7 @@ IPv6_GATEWAY: `2607:5300:60:62FF:00FF:00FF:00FF:00FF:00FF` também pode ser escr
 >> O ficheiro de configuração de rede do seu servidor está situado em `/etc/network/interfaces.d`. No nosso exemplo, ele é chamado de `50-cloud-init`. Antes de continuar, crie uma cópia de segurança do seu ficheiro utilizando o seguinte comando:
 >>
 >> ```sh
->> sudo cp /etc/network/interfaces.d/50-cloud-init /etc/network/interfaces.d/50-cloud-init.bakà
+>> sudo cp /etc/network/interfaces.d/50-cloud-init /etc/network/interfaces.d/50-cloud-init.bak
 >> ```
 >>
 >> **Passo 3: Alterar o ficheiro de configuração de rede**
@@ -216,7 +225,7 @@ IPv6_GATEWAY: `2607:5300:60:62FF:00FF:00FF:00FF:00FF:00FF` também pode ser escr
 >> ```
 >> ///
 >>
->> **Passo 4: alve o arquivo e aplique as alterações**
+>> **Passo 4: Salve o arquivo e aplique as alterações**
 >>
 >> Guarde as alterações efetuadas no ficheiro e, em seguida, reinicie a rede ou o servidor para aplicar as alterações.
 >>
@@ -263,7 +272,7 @@ IPv6_GATEWAY: `2607:5300:60:62FF:00FF:00FF:00FF:00FF:00FF` também pode ser escr
 >> may-fail=false
 >> address1=2607:5300:xxxx:xxxx::/xx
 >> address2=YOUR_IPV6/IPv6_PREFIX
->> gateway=2607:5300:xxxx:xxff:ff:ff:ff:ff:ff
+>> gateway=2607:5300:xxxx:xxff:ff:ff:ff:ff
 >> ```
 >>
 >> Se precisar de configurar mais endereços IPv6, a sua configuração deverá ser a seguinte:
@@ -275,7 +284,7 @@ IPv6_GATEWAY: `2607:5300:60:62FF:00FF:00FF:00FF:00FF:00FF` também pode ser escr
 >> address1=2607:5300:xxxx:xxxx::/xx
 >> address2=ADDITIONAL_IPV6_1/IPv6_PREFIX
 >> address3=ADDITIONAL_IPV6_2/IPv6_PREFIX
->> gateway=2607:5300:xxxx:xxff:ff:ff:ff:ff:ff
+>> gateway=2607:5300:xxxx:xxff:ff:ff:ff:ff
 >> ```
 >>
 >> /// details | **Exemplo de configuração:**
@@ -290,7 +299,7 @@ IPv6_GATEWAY: `2607:5300:60:62FF:00FF:00FF:00FF:00FF:00FF` também pode ser escr
 >> may-fail=false
 >> address1=2607:5300:xxxx:xxxx::/xx
 >> address2=2607:5300:adce:f2cd::1/64
->> gateway=2607:5300:xxxx:xxff:ff:ff:ff:ff:ff
+>> gateway=2607:5300:xxxx:xxff:ff:ff:ff:ff
 >> ```
 >>
 >> - Adicionar endereços IPv6 adicionais:
@@ -302,7 +311,7 @@ IPv6_GATEWAY: `2607:5300:60:62FF:00FF:00FF:00FF:00FF:00FF` também pode ser escr
 >> address1=2607:5300:xxxx:xxxx::/xx
 >> address2=2607:5300:adce:f2cd::1/64
 >> address3=2607:5300:adce:f2cd::2/64
->> gateway=2607:5300:xxxx:xxff:ff:ff:ff:ff:ff
+>> gateway=2607:5300:xxxx:xxff:ff:ff:ff:ff
 >> ```
 >> ///
 >>
@@ -393,7 +402,7 @@ IPv6_GATEWAY: `2607:5300:60:62FF:00FF:00FF:00FF:00FF:00FF` também pode ser escr
 >>               - 2607:5300:adce:f2cd::1/64
 >> ```
 >>
->> - Para vários endereços IPV6:
+>> - Para vários endereços IPv6:
 >>
 >> ```yaml
 >> network:
@@ -415,7 +424,7 @@ IPv6_GATEWAY: `2607:5300:60:62FF:00FF:00FF:00FF:00FF:00FF` também pode ser escr
 >> Para testar a sua configuração, utilize o seguinte comando:
 >>
 >> ```sh
->> sudo netplan
+>> sudo netplan try
 >> ```
 >>
 >> Se estiver correta, aplique-a através do seguinte comando:
@@ -464,7 +473,7 @@ IPv6_GATEWAY: `2607:5300:60:62FF:00FF:00FF:00FF:00FF:00FF` também pode ser escr
 >> Se precisar de mais endereços IPv6 na máquina, adicione-os na linha `IPV6ADDR_SECONDARIES`, separados por um espaço em branco. 
 >>
 >> ```console
->> IPV6ADDR_SECONDARIES="ADDITIONAL_IPV6_1/ IPV6_PREFIX ADDITIONAL_IPV6_2/IPV6_PREFIX etc..."
+>> IPV6ADDR_SECONDARIES="ADDITIONAL_IPV6_1/IPV6_PREFIX ADDITIONAL_IPV6_2/IPV6_PREFIX etc..."
 >> ```
 >>
 >> /// details | **Exemplo de configuração:**
@@ -476,15 +485,15 @@ IPv6_GATEWAY: `2607:5300:60:62FF:00FF:00FF:00FF:00FF:00FF` também pode ser escr
 >> ```console
 >> IPV6INIT=yes
 >> IPV6ADDR=2607:5300:adce:f2cd::/64
->> IPV6_DEFAULTGW=2607:5300:adce:f2ff:ff:ff:ff:ff:ff
+>> IPV6_DEFAULTGW=2607:5300:adce:f2ff:ff:ff:ff:ff
 >> ```
 >>
->> - Para vários endereços IPV6:
+>> - Para vários endereços IPv6:
 >>
 >> ```console
 >> IPV6INIT=yes
 >> IPV6ADDR=2607:5300:adce:f2cd::
->> IPV6_DEFAULTGW=2607:5300:adce:f2ff:ff:ff:ff:ff:ff
+>> IPV6_DEFAULTGW=2607:5300:adce:f2ff:ff:ff:ff:ff
 >> IPV6ADDR_SECONDARIES="2607:5300:adce:f2cd::1/64 2607:5300:adce:f2cd::2/64"
 >> ```
 >> ///
@@ -535,8 +544,24 @@ IPv6_GATEWAY: `2607:5300:60:62FF:00FF:00FF:00FF:00FF:00FF` também pode ser escr
 >>
 >> ![Properties](images/ipv6_configuration.png){.thumbnail}
 >>
+>> **Etapa 4: Desativar os identificadores de interface IPv6 aleatórios**
+>>
+>> Abra o menu Iniciar, procure `Windows PowerShell`{.action}, clique com o botão direito do rato e selecione `Executar como administrador`{.action}.
+>>
+>> ![Executar o PowerShell como administrador](images/ipv6_powershell_admin.png){.thumbnail}
+>>
+>> Na janela do PowerShell, execute o seguinte comando:
+>>
+>> ```powershell
+>> Set-NetIPv6Protocol -RandomizeIdentifiers Disabled
+>> ```
+>>
+>> ![Desativar identificadores aleatórios](images/ipv6_powershell_randomize_identifiers.png){.thumbnail}
+>>
+>> Este passo é necessário para a conectividade IPv6 na infraestrutura OVHcloud. Faz com que o Windows construa os seus endereços IPv6 link-local a partir do endereço MAC do adaptador (EUI-64) em vez de utilizar valores aleatórios. A alteração tem efeito imediato e persiste após reinicializações.
+>>
 
-### Verificar a configuração e testar a ligação.
+### Verificar a configuração e testar a ligação
 
 Para verificar se a configuração está funcional, existem vários comandos possíveis, consoante o sistema operativo.
 
@@ -608,7 +633,7 @@ Existe uma operação simples para determinar se a falha está relacionada com a
 
 Num primeiro tempo, [coloque o seu servidor em modo rescue](/pages/bare_metal_cloud/dedicated_servers/rescue_mode).
 
-De seguida, utilize os comandos abaixo para configurar o IPv6 de forma não persistente, substituindo « YOUR_IPV6 », « IPV6_PREFIX » e « IPV6_GATEWAY » pelas suas próprias informações:
+De seguida, utilize os comandos abaixo para configurar o IPv6 de forma não persistente, substituindo `YOUR_IPV6`, `IPV6_PREFIX` e `IPV6_GATEWAY` pelas suas próprias informações:
 
 ```sh
 ip addr add YOUR_IPV6/IPV6_PREFIX dev eth0

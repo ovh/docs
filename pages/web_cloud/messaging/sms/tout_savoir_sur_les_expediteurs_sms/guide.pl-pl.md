@@ -11,15 +11,21 @@ Ten przewodnik wyjaśnia, jak tworzyć i używać nadawców do wysyłania SMS.
 ## Wymagania początkowe
 
 - Posiadanie [konta SMS OVHcloud](/links/telecom/sms).
-- Zalogowanie się do [panelu klienta OVHcloud](/links/manager), sekcja `Telecom`{.action}, a następnie `SMS`{.action}.
+
+<!-- CP-NAV-START:telecom-sms -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [SMS](/links/control-panel/telecom-sms)
+- **Ścieżka nawigacji:** `Telecom`{.action} > `SMS`{.action} > Wybierz konto SMS
+
+---
+<!-- CP-NAV-END:telecom-sms -->
 
 ![espace client Telecom SMS](/pages/assets/screens/control_panel/product-selection/telecom/tpl-telecom-03-fr-sms.png){.thumbnail}
 
 ## W praktyce
-
-Zaloguj się do swojego [panelu klienta OVHcloud](/links/manager) i wybierz `Telecom`{.action}.
-
-Następnie kliknij `SMS`{.action}, a następnie swoje konto SMS.
 
 ### Dostępne typy nadawców
 

@@ -1,142 +1,295 @@
 ---
-title: 'Resolver un error en un dominio'
-updated: 2025-04-28
+title: 'Resolver un error en un nombre de dominio'
+updated: 2026-03-24
 ---
+
+<style>
+details>summary {
+    color:rgb(33, 153, 232);
+    cursor: pointer;
+}
+details>summary::before {
+    content:'\25B6';
+    padding-right:1ch;
+}
+details[open]>summary::before {
+    content:'\25BC';
+}
+</style>
 
 ## Objetivo
 
-La creación de un nombre de dominio, su transferencia, su cambio de propietario son otras operaciones para las que puede producirse un error. En ese caso, puede ser necesaria una intervención por su parte.
+La creación, la transferencia o el cambio de titular de un nombre de dominio pueden generar errores que requieren una intervención por su parte.
 
-**Esta guía explica cómo actuar cuando se produce un error en un dominio.**
+**Descubra cómo actuar cuando se produce un error en un nombre de dominio.**
 
 ## Requisitos
 
-- Tener uno o más dominios.
-- Haber iniciado sesión en el [área de cliente de OVHcloud](/links/manager).
-- Estar actualizado en los [pagos](/pages/account_and_service_management/managing_billing_payments_and_services/invoice_management#pay-bills) y [renovaciones](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#renewal-management) de los servicios asociados (dominio y alojamiento web).
+- Ser titular de uno o varios [nombres de dominio](/links/web/domains).
+- Estar al corriente en los [pagos](/pages/account_and_service_management/managing_billing_payments_and_services/invoice_management#pay-bills) y [renovaciones](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#renewal-management) de sus nombres de dominio.
+
+<!-- CP-NAV-START:web-ongoing-operations -->
+---
+
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [Operaciones en curso](/links/control-panel/web-ongoing-operations)
+- **Ruta de navegación:** `Web Cloud`{.action} > `Operaciones en curso`{.action} > Seleccione la pestaña `Dominio`{.action} o `DNS`{.action}.
+
+---
+<!-- CP-NAV-END:web-ongoing-operations -->
 
 ## Procedimiento
 
-Conéctese a su [área de cliente de OVHcloud](/links/manager) y acceda a la sección `Web Cloud`{.action}. Haga clic en `Operaciones en curso`{.action}.
+### Presentación de la interfaz de gestión de las operaciones en curso
 
-Una tabla le permite consultar todas las operaciones relacionadas con los dominios en su área de cliente.
+<!-- CP-STEPS-START:ongoing-ops-presentation -->
+Haga clic en las pestañas de abajo para ver cada uno de los **2** pasos.
 
-![Dominio](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/ongoing-operations/domain-name-operations-header.png){.thumbnail}
+> [!tabs]
+> **Paso 1**
+>>
+>> Acceda a la página [Operaciones en curso](/links/control-panel/web-ongoing-operations).
+>>
+> **Paso 2**
+>>
+>> Una tabla lista todas las operaciones relacionadas con los nombres de dominio de su área de cliente.
+>>
+>> ![domain](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/ongoing-operations/domain-name-operations-error-creating-domain-name-with-registry.png){.thumbnail}
+>>
+>> - `Dominio`: Nombre de dominio afectado por la operación.
+>> - `Operación`: Operación en curso sobre el nombre de dominio.
+>> - `Comentario`: Detalles de la operación en curso. Instrucciones.
+>> - `Fecha de tratamiento`: Fecha de creación de la operación.
+>> - `Fecha de actualización`: Marca de tiempo de actualización de la operación en curso.
+>> - `Fecha de finalización`: Fecha de finalización de la operación.
+>> - `Estado`: Estado actual de la operación.
+<!-- CP-STEPS-END:ongoing-ops-presentation -->
 
-- `Dominio`: Nombre de dominio afectado por la operación.
-- `Operación`:  Operación en curso sobre el dominio.
-- `Comentario`: Detalles de la operación en curso. Instrucciones.
-- `Fecha de tratamiento`: Fecha de creación de la operación.
-- `Fecha de actualización`:  Calendario de actualización de la operación en curso.
-- `Fecha de finalización`: Fecha de finalización de la operación.
-- `Estado`: Estado actual de la operación.
+No todas las operaciones listadas en esta tabla requieren su intervención para que se realicen con normalidad.
 
-No todas las operaciones listadas en esta tabla requieren su intervención para que se realicen normalmente.<br>
-En esta guía explicamos las operaciones **en error** con ejemplos recurrentes.
+Esta guía trata de las operaciones **en error** a través de situaciones recurrentes.
 
-![Dominio](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/ongoing-operations/domain-name-operations-error-creating-domain-name-with-registry.png){.thumbnail}
-
-### Ejemplos
+### Situaciones
 
 > [!primary]
 >
-> La siguiente lista de ejemplos es incompleta. Si se produce un error que no se explica en la siguiente guía:
+> La siguiente lista de situaciones no es exhaustiva. Si se produce un error que no se detalla en esta guía:
 >
-> - Compruebe que está actualizado en los [pagos](/pages/account_and_service_management/managing_billing_payments_and_services/invoice_management#pay-bills) y [renovaciones](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#renewal-management) de sus dominios.
-> - Compruebe si puede hacer algo haciendo clic en el botón `...`{.action} situado al final de la línea correspondiente a la operación.
+> - Compruebe que está al corriente en los [pagos](/pages/account_and_service_management/managing_billing_payments_and_services/invoice_management#pay-bills) y [renovaciones](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#renewal-management) de sus nombres de dominio.
+> - Compruebe si es posible realizar alguna acción consultando las opciones disponibles a la derecha de la operación en cuestión.
 > - Lea el mensaje descriptivo y compruebe si le permite resolver el error.
 >
-> Si, a pesar de estas comprobaciones, no está en condiciones de cambiar el dominio, puede abrir un tíquet de asistencia desde el área de cliente.
->
+> Si, a pesar de estas comprobaciones, no consigue resolver el error, [abra un tíquet de asistencia](/links/support) desde su área de cliente.
 
-#### Solicitar documentos
+**Haga clic en la situación que desee para ver su contenido.**
 
-Algunas extensiones de dominios necesitan justificar su uso proporcionando documentos. En ese caso, deberá enviar los documentos desde la ventana `Operaciones en curso`{.action}.
+<!-- CP-STEPS-START:situation-document-request -->
+/// details | Solicitud de documentos
 
-![Dominio](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/ongoing-operations/contacts-update-provide-us-with-the-documents-required.png){.thumbnail}
+Algunas extensiones de nombres de dominio requieren justificar su uso proporcionando documentos. En ese caso, debe enviar los documentos desde su área de cliente de OVHcloud.
 
-Para entregar el documento o documentos necesarios, haga clic en el botón `...`{.action} situado al final de la línea correspondiente a la operación.<br>
-Aparecerá la siguiente ventana, en la que podrá consultar la sección "Descripción" para obtener más información sobre el documento que desea adjuntar y un botón para descargar el documento.
+Haga clic en las pestañas de abajo para ver cada uno de los **4** pasos.
 
-![Dominio](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/ongoing-operations/operation-data-provide-us-with-the-documents-required.png){.thumbnail}
+> [!tabs]
+> **Paso 1**
+>>
+>> Acceda a la página [Operaciones en curso](/links/control-panel/web-ongoing-operations).
+>>
+> **Paso 2**
+>>
+>> Localice la operación en error en la tabla.
+>>
+>> ![domain](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/ongoing-operations/contacts-update-provide-us-with-the-documents-required.png){.thumbnail}
+>>
+> **Paso 3**
+>>
+>> Haga clic en el botón `...`{.action} a la derecha de la operación en cuestión.
+>>
+> **Paso 4**
+>>
+>> Aparecerá la ventana de abajo. La sección "Description" le permite obtener información detallada sobre el documento que debe proporcionar, así como un botón para subir su documento.
+>>
+>> ![domain](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/ongoing-operations/operation-data-provide-us-with-the-documents-required.png){.thumbnail}
 
-#### Falta información
+///
+<!-- CP-STEPS-END:situation-document-request -->
 
-Al registrar un dominio, a veces es necesario completar los datos de "contacto". Si las direcciones IP no se ajustan a los criterios del dominio, puede ver el error que se indica a continuación.
+<!-- CP-STEPS-START:situation-missing-info -->
+/// details | Información incompleta
 
-![Dominio](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/ongoing-operations/domain-name-operations-complete-nic-admin-es-tld.png){.thumbnail}
+Al registrar su nombre de dominio, a veces es necesario completar los datos de "contacto". Si estos no cumplen los criterios del nombre de dominio, puede obtener el error que se muestra a continuación.
 
-Haga clic en el botón `...`{.action} a la derecha de la operación.<br>
-Se abrirá una ventana en la que deberá completar los campos con la información del contacto correspondiente.
+Haga clic en las pestañas de abajo para ver cada uno de los **4** pasos.
 
-![Dominio](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/ongoing-operations/operation-data-complete-nic-admin-es-tld.png){.thumbnail}
+> [!tabs]
+> **Paso 1**
+>>
+>> Acceda a la página [Operaciones en curso](/links/control-panel/web-ongoing-operations).
+>>
+> **Paso 2**
+>>
+>> Localice la operación en error en la tabla.
+>>
+>> ![domain](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/ongoing-operations/domain-name-operations-complete-nic-admin-es-tld.png){.thumbnail}
+>>
+> **Paso 3**
+>>
+>> Haga clic en el botón `...`{.action} a la derecha de la operación en cuestión.
+>>
+> **Paso 4**
+>>
+>> Aparecerá la ventana de abajo. Complete los campos con la información del contacto correspondiente.
+>>
+>> ![domain](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/ongoing-operations/operation-data-complete-nic-admin-es-tld.png){.thumbnail}
 
-#### Código de transferencia erróneo 
+///
+<!-- CP-STEPS-END:situation-missing-info -->
 
-Al transferir su dominio a OVHcloud, debe introducir un código de transferencia (**authInfo**) durante el pedido. Si el código es incorrecto, la operación se suspende, pero puede reiniciarla introduciendo el código correcto.
+<!-- CP-STEPS-START:situation-transfer-code -->
+/// details | Código de transferencia erróneo
 
-![Dominio](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/ongoing-operations/domain-name-operations-auth-code-missing.png){.thumbnail}
+Al transferir su nombre de dominio a OVHcloud, debe introducir un código de transferencia (**authInfo** / **AuthCode**) durante el pedido. Si el código es incorrecto, la operación se suspende. Puede reiniciarla introduciendo el código correcto.
 
-Haga clic en el botón `...`{.action} a la derecha de la operación.<br>
-Se abrirá una ventana en la que deberá introducir el código de transferencia (**authInfo**) y reanudar la operación.
+Haga clic en las pestañas de abajo para ver cada uno de los **4** pasos.
 
-![Dominio](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/ongoing-operations/operation-data-auth-code-missing.png){.thumbnail}
+> [!tabs]
+> **Paso 1**
+>>
+>> Acceda a la página [Operaciones en curso](/links/control-panel/web-ongoing-operations).
+>>
+> **Paso 2**
+>>
+>> Localice la operación en error en la tabla.
+>>
+>> ![domain](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/ongoing-operations/domain-name-operations-auth-code-missing.png){.thumbnail}
+>>
+> **Paso 3**
+>>
+>> Haga clic en el botón `...`{.action} a la derecha de la operación en cuestión.
+>>
+> **Paso 4**
+>>
+>> Aparecerá la ventana de abajo. Introduzca el código de transferencia (**authInfo** / **AuthCode**) y reinicie la operación.
+>>
+>> ![domain](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/ongoing-operations/operation-data-auth-code-missing.png){.thumbnail}
 
-#### Error en los servidores DNS
+///
+<!-- CP-STEPS-END:situation-transfer-code -->
 
-Si los servidores DNS asociados a un dominio no funcionan, puede producirse un error.<br>
-En el ejemplo a continuación, la dirección IP del servidor DNS no responde.
+<!-- CP-STEPS-START:situation-dns-error -->
+/// details | Error relacionado con los servidores DNS
 
-![Dominio](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/ongoing-operations/domain-name-operations-dns-update-unable-to-retrieve-dns-ip.png){.thumbnail}
+Se puede producir un error si los servidores DNS asociados a un nombre de dominio no funcionan.
+En la situación que se muestra a continuación, la dirección IP del servidor DNS no responde.
 
-En la sección `Dominios`{.action}, seleccione el dominio correspondiente y abra la pestaña `Servidores DNS`{.action}. Desde esta pestaña, [modifique sus servidores DNS](/pages/web_cloud/domains/dns_server_edit). 
+Haga clic en las pestañas de abajo para ver cada uno de los **4** pasos.
 
-#### Error en un dominio **.ie**, **.de** o **.it** después de una actualización de DNS
+> [!tabs]
+> **Paso 1**
+>>
+>> Acceda a la página [Operaciones en curso](/links/control-panel/web-ongoing-operations).
+>>
+> **Paso 2**
+>>
+>> Localice la operación en error en la tabla.
+>>
+>> ![domain](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/ongoing-operations/domain-name-operations-dns-update-unable-to-retrieve-dns-ip.png){.thumbnail}
+>>
+> **Paso 3**
+>>
+>> En la sección `Dominios`{.action}, seleccione el nombre de dominio correspondiente y haga clic en la pestaña `Servidores DNS`{.action}.
+>>
+> **Paso 4**
+>>
+>> Desde esta pestaña, [modifique sus servidores DNS](/pages/web_cloud/domains/dns_server_edit).
 
-Al modificar los servidores DNS, es posible que el registro compruebe los nuevos servidores DNS y la zona DNS asociada y bloquee el dominio si la configuración no es correcta.
+///
+<!-- CP-STEPS-END:situation-dns-error -->
+
+<!-- CP-STEPS-START:situation-domain-blocked -->
+/// details | Error en un nombre de dominio en .ie, .de o .it después de una actualización DNS
+
+Al modificar sus servidores DNS, el registro puede verificar los nuevos servidores DNS y la zona DNS asociada y bloquear el nombre de dominio si la configuración no es correcta.
 
 > [!warning]
 >
-> Este tipo de bloqueo es iniciado por el registro y no por OVHcloud. De este modo, aunque el dominio esté bloqueado por el Registro, sus servidores DNS aparecerán como `Activos` en su área de cliente de OVHcloud.
+> Este tipo de bloqueo es iniciado por el registro y no por OVHcloud. Así, aunque el nombre de dominio esté bloqueado por el registro, sus servidores DNS aparecerán como `Activos` en su área de cliente de OVHcloud.
 
-Para comprobar si el dominio está bloqueado, acceda al cuadro de `operaciones en curso`{.action}.
+Para comprobar si su nombre de dominio está afectado por dicho bloqueo, haga clic en las pestañas de abajo para ver cada uno de los **4** pasos.
 
-![Dominio](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/ongoing-operations/domain-name-operations-dns-update-error-occured-updating-domain.png){.thumbnail}
+> [!tabs]
+> **Paso 1**
+>>
+>> Acceda a la página [Operaciones en curso](/links/control-panel/web-ongoing-operations).
+>>
+> **Paso 2**
+>>
+>> Localice la operación en error en la tabla.
+>>
+>> ![domain](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/ongoing-operations/domain-name-operations-dns-update-error-occured-updating-domain.png){.thumbnail}
+>>
+> **Paso 3**
+>>
+>> Para verificar su nombre de dominio, le recomendamos utilizar la herramienta de verificación proporcionada por el registro:
+>>
+>> - Para un nombre de dominio en **.de**: <https://nast.denic.de/>.
+>> - Para un nombre de dominio en **.it**: <https://dns-check.nic.it/>.
+>>
+>> > [!primary]
+>> >
+>> > Si su registro no proporciona una herramienta de verificación de servidores DNS, puede consultar sus nuevos servidores DNS mediante el comando `nslookup` en un "símbolo del sistema" de Windows o mediante el comando `dig` en un "terminal" de Linux o macOS.
+>> >
+>> > Si sus servidores DNS son accesibles, la herramienta le devolverá una dirección IP.
+>> >
+>> > En cualquier caso, asegúrese de que el administrador del servidor DNS lo ha configurado correctamente para alojar la zona DNS de su nombre de dominio.
+>>
+> **Paso 4**
+>>
+>> Una vez que haya identificado el origen del error y lo haya corregido, haga clic en el botón `...`{.action} a la derecha de la operación en cuestión y reinicie la operación de verificación DNS.
 
-Para comprobar su dominio, le recomendamos que utilice la herramienta de verificación del Registro:
+///
+<!-- CP-STEPS-END:situation-domain-blocked -->
 
-- Para un dominio.**.de** : <https://nast.denic.de/>.
-- Para un dominio en **.it**: <https://dns-check.nic.it/>.
+<!-- CP-STEPS-START:situation-internal-error -->
+/// details | Error interno de OVHcloud
 
-> [!primary]
->
-> Si su registro no proporciona una herramienta de verificación de servidores DNS, es posible consultar sus nuevos servidores DNS mediante el comando `nslookup` en una "petición de pedido" Windows o a través del comando `dig` en un "terminal" Linux o macOS. 
->
-> Si los servidores DNS están disponibles, la herramienta le devuelve una dirección IP.
->
-> En cualquier caso, asegúrese de que el administrador del servidor DNS está bien configurado para alojar la zona DNS del dominio.
+Puede encontrar un error con el detalle "error interno".
 
-Una vez que haya identificado el origen del error y que lo haya corregido, puede hacer clic en el botón `...`{.action} a la derecha de la operación correspondiente y reanudar la operación de verificación DNS.
+Haga clic en las pestañas de abajo para ver cada uno de los **3** pasos.
 
-#### Error interno de OVHcloud
+> [!tabs]
+> **Paso 1**
+>>
+>> Acceda a la página [Operaciones en curso](/links/control-panel/web-ongoing-operations).
+>>
+> **Paso 2**
+>>
+>> Localice la operación en error en la tabla.
+>>
+>> ![domain](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/ongoing-operations/domain-name-operations-renewal-internal-error.png){.thumbnail}
+>>
+> **Paso 3**
+>>
+>> Este error no permite ninguna acción por su parte desde el área de cliente de OVHcloud.
+>>
+>> En primer lugar, compruebe que su nombre de dominio y sus servidores DNS están activos.
+>>
+>> Si detecta una anomalía que no está relacionada con la configuración de los servidores DNS o de la zona DNS, [contacte con el soporte de OVHcloud](/links/support) para identificar el origen del problema.
 
-Se puede encontrar un error con los detalles "error interno". Este error no permite ninguna acción específica por su parte.<br>
-En primer lugar, compruebe que el dominio y los servidores DNS estén activos. 
-
-Si detecta una anomalía que no está relacionada con la configuración de los servidores DNS o de la zona DNS, puede abrir un tíquet de soporte a OVHcloud para identificar el origen del fallo de funcionamiento.
-
-![Dominio](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/ongoing-operations/domain-name-operations-renewal-internal-error.png){.thumbnail}
+///
+<!-- CP-STEPS-END:situation-internal-error -->
 
 ## Más información
 
-[Transferir un dominio a OVHcloud](/pages/web_cloud/domains/transfer_incoming_generic_domain)
+[Transferir un nombre de dominio a OVHcloud](/pages/web_cloud/domains/transfer_incoming_generic_domain)
 
-[Transferir un dominio a otro agente registrador](/pages/web_cloud/domains/transfer_outgoing_domain)
+[Transferir un nombre de dominio a otro agente registrador](/pages/web_cloud/domains/transfer_outgoing_domain)
 
-[Cambiar los servidores DNS de un dominio de OVHcloud](/pages/web_cloud/domains/dns_server_edit)
- 
-Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](/links/partner).
+[Modificar los servidores DNS de un nombre de dominio de OVHcloud](/pages/web_cloud/domains/dns_server_edit)
 
-Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](/links/support).
+Para servicios especializados (SEO, desarrollo, etc.), contacte con los [partners de OVHcloud](/links/partner).
+
+Si necesita ayuda en el uso y la configuración de sus soluciones de OVHcloud, puede consultar nuestras [ofertas de soporte](/links/support).
 
 Interactúe con nuestra [comunidad de usuarios](/links/community).

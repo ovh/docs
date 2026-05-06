@@ -35,7 +35,6 @@ For OVHcloud web hosting plans, the certification authority delivering EV SSL ce
     
 ## Requirements <a name="requirements"></a>
 
-- You have access to the [OVHcloud Control Panel](/links/manager).
 - You plan to order or have an [OVHcloud web hosting plan](/links/web/hosting).
 - You manage a [domain name](/links/web/domains) for which you have exclusive rights. The domain name must not already be linked to an SSL certificate.
 - You represent an organisation (company, government agency, etc.) registered with an official registry.
@@ -44,6 +43,17 @@ For OVHcloud web hosting plans, the certification authority delivering EV SSL ce
 
 To check if you are eligible to subscribe to a Sectigo EV SSL certificate, go to [this web page](https://help.sectigostore.com/support/solutions/articles/22000218717-extended-validation-ev-).
   
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Hosting plans](/links/control-panel/web-hosting)
+- **Navigation path:** `Web Cloud`{.action} > `Hosting plans`{.action} > Select your web hosting plan
+
+---
+<!-- CP-NAV-END:web-hosting -->
+
 ## Instructions
 
 > [!warning]
@@ -91,40 +101,35 @@ To check if this is the case, please refer to our guides below:
 
 #### 1.1 - For a domain name and a hosting already existing at OVHcloud
 
-Click on the tabs below to view each of the **6** steps in succession:
+<!-- CP-STEPS-START:order-sectigo-ev -->
+Click on the tabs below to view each of the **5** steps.
 
 > [!tabs]
 > **Step 1**
 >>
->> Log in to the [OVHcloud Control Panel](/links/manager), then go to the `Web Cloud`{.action} section.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Step 2**
->>
->> Click the `Hosting plans`{.action} menu, then select the web hosting plan concerned.
+>> Go to the [Hosting plans](/links/control-panel/web-hosting) page, then select the web hosting plan concerned.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Step 3**
+> **Step 2**
 >>
 >> On the page that pops up, click on the `SSL certificates`{.action} tab.
 >>
 >> ![SSL certificates](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ssl-certificates.png){.thumbnail}
 >>
-> **Step 4**
+> **Step 3**
 >>
 >> When the content of the tab appears, click `Order a Sectigo SSL certificate`{.action}.
 >>
 >> ![Sectigo SSL](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ssl-certificates/order-a-sectigo-ssl-certificate.png){.thumbnail}
 >>
-> **Step 5**
+> **Step 4**
 >>
 >> In the new window that opens, select the domain or subdomain concerned using the dropdown menu, then click `Confirm`{.action} to be redirected to the purchase order for your Sectigo EV SSL certificate.
 >>
 >> ![SSL Sectigo domain selection](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ssl-certificates/order-a-sectigo-ssl-certificate-select-domain.png){.thumbnail}
 >>
-> **Step 6**
+> **Step 5**
 >>
 >> Select the **Sectigo EV SSL certificate**, then continue with the order.
 >>
@@ -135,6 +140,7 @@ Click on the tabs below to view each of the **6** steps in succession:
 >> Click `Continue`{.action} after **all items** have been entered correctly.
 >>
 >> Proceed with the order until payment in order to confirm the request to create the SSL certificate.
+<!-- CP-STEPS-END:order-sectigo-ev -->
 
 > [!alert]
 >

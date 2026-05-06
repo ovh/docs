@@ -39,23 +39,14 @@ All API routes used for this tutorial are available under the */storage* section
 
 All existing volumes can be retrieved using the following route:
 
-> [!faq]
+> [!api]
 >
-> API:
+> @api {v1} /storage GET /storage/netapp/{serviceName}/share
 >
->> > [!api]
->> >
->> > @api {v1} /storage GET /storage/netapp/{serviceName}/share
->> >
->>
->
-> Parameters:
->
->> > **serviceName** *
->> >
->> >> Service ID
->> >
->
+
+| Parameter | Required | Description |
+|-----------|----------|-------------|
+| `serviceName` | Yes | Service ID |
 
 Replace `serviceName` with the ID of your service.
 
@@ -63,26 +54,15 @@ Replace `serviceName` with the ID of your service.
 
 To retrieve the information about a volume, use the following route:
 
-> [!faq]
+> [!api]
 >
-> API:
+> @api {v1} /storage GET /storage/netapp/{serviceName}/share/{shareId}
 >
->> > [!api]
->> >
->> > @api {v1} /storage GET /storage/netapp/{serviceName}/share/{shareId}
->> >
->>
->
-> Parameters:
->
->> > **serviceName** *
->> >
->> >> Service ID
->> >
->> > **shareId** *
->> >
->> >> Volume ID
->
+
+| Parameter | Required | Description |
+|-----------|----------|-------------|
+| `serviceName` | Yes | Service ID |
+| `shareId` | Yes | Volume ID |
 
 Replace `serviceName` with the ID of your service and `shareId` with your volume ID.
 
@@ -90,23 +70,14 @@ Replace `serviceName` with the ID of your service and `shareId` with your volume
 
 To create a new volume, use the following route:
 
-> [!faq]
+> [!api]
 >
-> API:
+> @api {v1} /storage POST /storage/netapp/{serviceName}/share
 >
->> > [!api]
->> >
->> > @api {v1} /storage POST /storage/netapp/{serviceName}/share
->> >
->>
->
-> Parameters:
->
->> > **serviceName** *
->> >
->> >> Service ID
->> >
->
+
+| Parameter | Required | Description |
+|-----------|----------|-------------|
+| `serviceName` | Yes | Service ID |
 
 Replace `serviceName` with the ID of your service.
 
@@ -117,26 +88,15 @@ You can also specify `name` and `description` properties (optional).
 
 To determine the mount path of a volume, use the following route:
 
-> [!faq]
+> [!api]
 >
-> API:
+> @api {v1} /storage GET /storage/netapp/{serviceName}/share/{shareId}/accessPath
 >
->> > [!api]
->> >
->> > @api {v1} /storage GET /storage/netapp/{serviceName}/share/{shareId}/accessPath
->> >
->>
->
-> Parameters:
->
->> > **serviceName** *
->> >
->> >> Service ID
->> >
->> > **shareId** *
->> >
->> >> Volume ID
->
+
+| Parameter | Required | Description |
+|-----------|----------|-------------|
+| `serviceName` | Yes | Service ID |
+| `shareId` | Yes | Volume ID |
 
 Replace `serviceName` with the ID of your service and `shareId` with your volume ID.
 
@@ -155,26 +115,15 @@ The mount command will be different, depending on the protocol chosen for the vo
 
 To remove a volume, use the following route:
 
-> [!faq]
+> [!api]
 >
-> API:
+> @api {v1} /storage DELETE /storage/netapp/{serviceName}/share/{shareId}
 >
->> > [!api]
->> >
->> > @api {v1} /storage DELETE /storage/netapp/{serviceName}/share/{shareId}
->> >
->>
->
-> Parameters:
->
->> > **serviceName** *
->> >
->> >> Service ID
->> >
->> > **shareId** *
->> >
->> >> Volume ID
->
+
+| Parameter | Required | Description |
+|-----------|----------|-------------|
+| `serviceName` | Yes | Service ID |
+| `shareId` | Yes | Volume ID |
 
 Replace `serviceName` with the ID of your service and `shareId` with your volume ID.
 

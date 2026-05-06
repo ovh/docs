@@ -1,6 +1,6 @@
 ---
 title: Wysyłanie wiadomości SMS z Panelu klienta
-excerpt: Dowiedz się, jak w łatwy sposób wysyłać wiadomości SMS z Panelu klienta OVHcloud
+excerpt: Dowiedz się, jak krok po kroku wysłać pierwsze wiadomości SMS, skonfigurować nadawców i zarządzać odbiorcami z poziomu Panelu klienta OVHcloud
 updated: 2026-01-07
 ---
 
@@ -11,19 +11,27 @@ Wiadomości SMS możesz wysyłać bezpośrednio z Panelu klienta. W tym przewodn
 ## Wymagania początkowe
 
 - Posiadanie konta SMS OVHcloud z zasileniami SMS
-- Zalogowanie do[Panelu klienta OVHcloud](/links/manager), część `Telefonia`{.action}, następnie `SMS`{.action}.
+
+<!-- CP-NAV-START:telecom-sms -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [SMS](/links/control-panel/telecom-sms)
+- **Ścieżka nawigacji:** `Telecom`{.action} > `SMS`{.action} > Wybierz konto SMS
+
+---
+<!-- CP-NAV-END:telecom-sms -->
 
 ![Panel klienta Telecom SMS](/pages/assets/screens/control_panel/product-selection/telecom/tpl-telecom-03-en-sms.png){.thumbnail}
 
 ## W praktyce
 
-Zaloguj się do [Panelu klienta](/links/manager) i wybierz opcję `Telefonia`{.action}. Następnie kliknij pozycję `SMS`{.action} po lewej stronie i wybierz Twoje konto SMS.
-
 Pole "Wyślij SMS" jest pierwszym dostępnym elementem na liście działań.
 
 ![menedżer wysyłki smsów](images/sms-send-control-panel01E.png){.thumbnail}
 
-### Etap 1: konfigurowanie nadawcy i odbiorcy
+### Etap 1: Konfigurowanie nadawcy i odbiorcy
 
 > [!primary]
 > Aby uzyskać więcej informacji na temat tworzenia i korzystania z nadawcy, zapoznaj się z naszym przewodnikiem "[Wszystko, co musisz wiedzieć o nadawcach SMS](/pages/web_cloud/messaging/sms/tout_savoir_sur_les_expediteurs_sms)".
@@ -34,7 +42,6 @@ Po przejściu na stronę wysyłania wiadomości SMS możesz uzupełnić różne 
 
 Jako nadawcę wiadomości SMS (1) możesz wybrać numer skrócony umożliwiający otrzymanie odpowiedzi (dotyczy wyłącznie kont OVHcloud we Francji) lub nadawcę alfanumerycznego.
 Następnie podaj numer odbiorcy (2) w formacie międzynarodowym (+48xxxxxxxx).
-Więcej informacji na temat tworzenia nadawcy znajdziesz w [etapie 3: wybór nadawcy wiadomości SMS](#etap-3-wybor-nadawcy-wiadomosci-sms).
 
 Wiadomości SMS możesz także wysyłać do wielu odbiorców. Możesz to zrobić na dwa sposoby:
 
@@ -44,7 +51,7 @@ Więcej informacji znajdziesz w [przewodniku dotyczącym list odbiorców wiadomo
 - Za pośrednictwem książki adresowej (3). Możesz ją utworzyć bezpośrednio w Panelu klienta lub zaimportować z pliku w formacie .csv lub .txt.
 Zapoznaj się z [przewodnikiem dotyczącym książek adresowych odbiorców wiadomości SMS](/pages/web_cloud/messaging/sms/gerer_mes_carnets_dadresses_sms).
 
-### Etap 2: tworzenie wiadomości SMS
+### Etap 2: Tworzenie wiadomości SMS
 
 > [!primary]
 >
@@ -78,4 +85,4 @@ Proponujemy trzy formaty wysyłki (Standard / Flash / Sim) (2), ale ta funkcja j
 
 ## Sprawdź również
 
-Dołącz do społeczności [naszych użytkowników](/links/community).
+Dołącz do [grona naszych użytkowników](/links/community).

@@ -12,8 +12,18 @@ This guide shows how to configure a client (such as a Public Cloud instance or a
 
 - A [Cloud Disk Array](/links/storage/cloud-disk-array) solution
 - The public IP address of the client machine you want to grant access to.
-- Access to the [OVHcloud Control Panel](/links/manager) or to the [OVHcloud API](/links/api)
 - The Ceph monitor IPs, a Ceph user, and its secret key from the Control Panel. You can follow [this guide](/pages/storage_and_backup/block_storage/cloud_disk_array/ceph_create_a_user) to manage dedicated users.
+
+<!-- CP-NAV-START:storage-cloud-disk-array -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Cloud Disk Array](/links/control-panel/storage-cloud-disk-array)
+- **Navigation path:** `Bare Metal Cloud`{.action} > `Cloud Disk Array`{.action} > Select your service
+
+---
+<!-- CP-NAV-END:storage-cloud-disk-array -->
 
 ## Instructions
 

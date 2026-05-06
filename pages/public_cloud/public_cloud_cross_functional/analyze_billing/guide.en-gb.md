@@ -1,7 +1,7 @@
 ---
 title: 'Information regarding Public Cloud billing options'
 excerpt: 'Find out more about the different billing options for Public Cloud products'
-updated: 2025-04-28
+updated: 2026-03-12
 ---
 
 ## Objective
@@ -20,7 +20,17 @@ This system is similar to the one used by certain telephone operators, where the
 
 - A [Public Cloud project](/links/public-cloud/public-cloud) in your OVHcloud account
 - A [Public Cloud instance](/pages/public_cloud/compute/public-cloud-first-steps)
-- Access to the [OVHcloud Control Panel](/links/manager)
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Navigation path:** `Public Cloud`{.action} > Select your project
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 > [!success]
 > Take advantage of reduced prices by committing to a period of 1 to 36 months on your Public Cloud resources. More information on our [Savings Plans](/links/public-cloud/savings-plan) page.
@@ -66,6 +76,7 @@ i.e. €23.63.
 
 ### View your bills
 
+<!-- CP-STEPS-START:view-your-bills -->
 To view the bills for a project, open your `Public Cloud`{.action} project in the OVHcloud Control Panel, then click on `Billing`{.action} (in the `Settings` section) and open the tab `History`{.action}.
 
 ![public-cloud](images/pci-billing-information1-2021.png){.thumbnail}
@@ -74,16 +85,18 @@ In this screen, you can:
 
 - View details on the resources by expanding each section.
 - Browse logs by going to the previous or next month.
+<!-- CP-STEPS-END:view-your-bills -->
 
 ### View your current resource usage
 
+<!-- CP-STEPS-START:view-current-usage -->
 You can also view your current resource usage (for the ongoing month) by clicking `Current usage`{.action}.
 
 ![public-cloud](images/pci-billing-information2-2021.png){.thumbnail}
 
-The first part, **"Already billed"**, includes resources billed by the month (see instances billed at the lower monthly rate). These resources are the exception to the “pay-as-you-go” method. Commitments are billed on a monthly basis and payable in advance. The commitment option offers the user a cost advantage.
+The first part, **”Already billed”**, includes resources billed by the month (see instances billed at the lower monthly rate). These resources are the exception to the “pay-as-you-go” method. Commitments are billed on a monthly basis and payable in advance. The commitment option offers the user a cost advantage.
 
-The second part, **"Future bills"**, includes pay-as-you-go resources. It lists your resource usage from the first of the month up to that day.
+The second part, **”Future bills”**, includes pay-as-you-go resources. It lists your resource usage from the first of the month up to that day.
 
 You can also have an `Estimation of my next invoice`{.action} (for the 01st of the next month) based on a forecast of resource usage taking into account the current situation, and predicted usage for the remainder of the month.
 
@@ -97,6 +110,7 @@ You can also have an `Estimation of my next invoice`{.action} (for the 01st of t
 ![public-cloud](images/pci-billing-information3-2021.png){.thumbnail}
 
 If you would like to receive alerts when the forecast of your resource usage exceeds a set threshold, you can configure this via this screen. When your forecasted usage exceeds the set threshold, you will receive an email to alert you of this.
+<!-- CP-STEPS-END:view-current-usage -->
 
 ### Instances
 
@@ -166,39 +180,20 @@ Snapshots of additional volumes are billed the same way as the volumes themselve
 
 Both snapshots and images of instances (excluding the catalogue of images supplied by OVHcloud) are billed at a flat rate per GB per month, regardless of the original instance and image type. Go to the [pricing page](/links/public-cloud/prices) to view prices.
 
-#### Object storage
 
-Two elements are billed for object storage:
+#### Object Storage
 
-- The storage of the objects themselves, i.e. the volume actually used in GB.
-- Outgoing traffic, i.e. the volume of data sent from the service, contained in HTTP body.
+Object Storage is billed on a **pay-as-you-go** basis according to the average volume stored per hour in each storage class (GiB-hours), with invoicing at the end of the month. Storage is the main billing component — incoming traffic, internal OVHcloud traffic, API calls and public egress are included.
 
-> [!primary]
->
-> Outgoing traffic between the object storage service and the instances is
-> billed the same way as outgoing traffic sent via the internet.
->
-
-> [!warning]
->
-> Viewing objects via the OVHcloud Control Panel is also considered
-> to be outgoing traffic.
->
-
-#### Archives
-
-Three elements are billed for archive storage:
-
-- The storage of the archives themselves, i.e. the volume actually used in GB.
-- Incoming traffic, i.e. the volume of data sent to the service, contained in HTTP body.
-- Outgoing traffic, i.e. the volume of data sent from the service, contained in HTTP body.
+To align cost with your data access patterns, we offer several S3<sup>1</sup>-compatible Object Storage classes (Standard, High Performance, Infrequent Access, Active Archive, Cold Archive). For details on these classes, including use cases, performance and SLAs, see the dedicated guide: [Choosing the right Object Storage class](/pages/storage_and_backup/object_storage/s3_choosing_the_right_storage_class_for_your_needs).
 
 > [!primary]
 >
-> Outgoing traffic between the archive service and the instances is
-> billed the same way as outgoing traffic sent via the internet.
+> For Infrequent Access, Active Archive and Cold Archive classes, a minimum storage duration and retrieval fees are applied.
 >
 
 ## Go further
+
+<sup>1</sup>: S3 is a trademark of Amazon Technologies, Inc. OVHcloud's service is not sponsored by, endorsed by, or otherwise affiliated with Amazon Technologies, Inc.
 
 Join our [community of users](/links/community).

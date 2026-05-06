@@ -12,24 +12,38 @@ W Panelu klienta OVHcloud można utworzyć uniwersalne podpisy (stopki) dla adre
 
 ## Wymagania początkowe
 
-- dostęp do [Panelu klienta OVHcloud](/links/manager)
 - skonfigurowane rozwiązanie [OVHcloud Exchange](/links/web/emails-hosted-exchange) lub [E-mail Pro](/links/web/email-pro)
+
+<!-- CP-NAV-START:web-exchange -->
+<!-- CP-NAV-START:web-email-pro -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+**Exchange:**
+
+- **Link bezpośredni:** [Exchange](/links/control-panel/web-exchange)
+- **Ścieżka nawigacji:** `Web Cloud`{.action} > `Exchange`{.action} > Wybierz platformę
+
+**E-mail Pro:**
+
+- **Link bezpośredni:** [E-mail Pro](/links/control-panel/web-email-pro)
+- **Ścieżka nawigacji:** `Web Cloud`{.action} > `E-mail Pro`{.action} > Wybierz platformę
+
+---
+<!-- CP-NAV-END:web-email-pro -->
+<!-- CP-NAV-END:web-exchange -->
 
 ## W praktyce
 
 > [!tabs]
 > **Exchange**
 >>
->> 1. Zaloguj się do [Panelu klienta OVHcloud](/links/manager).
->> 1. Przejdź do sekcji `Web Cloud`{.action}.
->> 1. W sekcji `MICROSOFT` kliknij `Exchange`{.action}.
->> 1. Wybierz odpowiednią platformę.
 >>
-> **Email Pro**
+> **E-mail Pro**
 >>
->> 1. Zaloguj się do [Panelu klienta OVHcloud](/links/manager).
 >> 1. Kliknij zakładkę `Web Cloud`{.action}.
->> 1. Kliknij `Email Pro`{.action}.
+>> 1. Kliknij `E-mail Pro`{.action}.
 >> 1. Wybierz odpowiednią platformę.
 >>
 
@@ -62,7 +76,7 @@ Przed zastosowaniem podpisów u użytkowników weź pod uwagę następujące asp
 - Edytor obsługuje formatowanie HTML, hiperlinki, obrazy itd. Nie należy jednak zbytnio polegać na tych opcjach. Odbiorcy mogą korzystać z klientów poczty, które blokują kod HTML, i osadzone obrazy lub podpisy mogą wyglądać inaczej niż zamierzono. Tagi HTML zostaną całkowicie usunięte, jeśli według ustawień w interfejsie OWA wiadomość jest wysyłana jako „zwykły tekst”.
 - „Inicjały” nie są aktywne w usłudze. Dodanie tej zmiennej nie przyniesie żadnego efektu.
 
-## Sprawdź również
+## Sprawdź również <a name="go-further"></a>
 
 [Korzystanie z interfejsu Outlook Web App wraz z kontem e-mail](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa)
 

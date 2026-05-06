@@ -1,5 +1,5 @@
 ---
-title: "Public Cloud Databases - Comment gérer des situations de 'Full Disk' (EN)"
+title: "Gérer des situations de 'Full Disk' pour les bases de données Public Cloud (EN)"
 excerpt: Découvrez comment éviter, analyser et réparer un service Public Cloud Databases atteignant sa pleine capacité de disque
 updated: 2025-08-18
 ---
@@ -12,8 +12,18 @@ No matter the database technology, when no more physical disk space is available
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](/links/manager)
 - A [Public Cloud database service](/links/public-cloud/databases) up and running
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Navigation path:** `Public Cloud`{.action} > Select your project
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## Instructions
 

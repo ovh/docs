@@ -14,7 +14,6 @@ As your website evolves, its resource consumption becomes so high that your web 
 
 - An OVHcloud [web hosting plan](/links/web/hosting)
 - A [VPS](/links/bare-metal/vps) in your OVHcloud account
-- You must be logged in to your [OVHcloud Control Panel](/links/manager)
 
 ## Instructions
 
@@ -116,7 +115,7 @@ Follow our [guide on using FileZilla](/pages/web_cloud/web_hosting/ftp_filezilla
 
 Once you are logged in to your VPS, the tree-view of your local files will appear on the left-hand side of the FileZilla interface, and the tree-view of your VPS on the right-hand side.
 
-The web directory (or web root) is where your website files will be stored to be accessible on the internet. **By default, it may be a folder named `/var/www/html` or another directory configured during your web server installation in [step 2.2](#step2.2)**. Ensure your files are placed in the directory configured as the **web root** to ensure your site functions correctly.
+The web directory (or web root) is where your website files will be stored to be accessible on the Internet. **By default, it may be a folder named `/var/www/html` or another directory configured during your web server installation in [step 2.2](#step2.2)**. Ensure your files are placed in the directory configured as the **web root** to ensure your site functions correctly.
 
 > [!warning]
 >

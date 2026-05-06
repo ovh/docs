@@ -12,26 +12,29 @@ Na Área de Cliente OVHcloud, pode criar assinaturas universais (footers) para e
 
 ## Requisitos
 
-- Ter acesso à [Área de Cliente OVHcloud](/links/manager).
 - Dispor de um serviço [OVHcloud Exchange](/links/web/emails-hosted-exchange) ou [E-mail Pro](/links/web/email-pro) já configurado.
 
-## Instruções
+<!-- CP-NAV-START:web-exchange -->
+<!-- CP-NAV-START:web-email-pro -->
+---
 
-> [!tabs]
-> **Exchange**
->>
->> 1. Aceda à [Área de Cliente OVHcloud](/links/manager).
->> 1. Aceda à secção `Web Cloud`{.action}.
->> 1. Na rubrica `MICROSOFT`, clique em `Exchange`{.action}.
->> 1. Selecione a plataforma em causa.
->>
-> **Email Pro**
->>
->> 1. Aceda à [Área de Cliente OVHcloud](/links/manager).
->> 1. Clique no separador `Web Cloud`{.action}.
->> 1. Clique em `Email Pro`{.action}.
->> 1. Selecione a plataforma em causa.
->>
+### Acesso à Área de Cliente OVHcloud
+
+**Exchange:**
+
+- **Ligação direta:** [Exchange](/links/control-panel/web-exchange)
+- **Caminho de navegação:** `Web Cloud`{.action} > `Exchange`{.action} > Selecione a sua plataforma
+
+**E-mail Pro:**
+
+- **Ligação direta:** [E-mail Pro](/links/control-panel/web-email-pro)
+- **Caminho de navegação:** `Web Cloud`{.action} > `E-mail Pro`{.action} > Selecione a sua plataforma
+
+---
+<!-- CP-NAV-END:web-email-pro -->
+<!-- CP-NAV-END:web-exchange -->
+
+## Instruções
 
 No menu horizontal, clique em `Mais +`{.action} e selecione `Footers`{.action}.
 
@@ -62,7 +65,7 @@ Antes de criar assinaturas, tenha em consideração o seguinte:
 - O editor permite formatação HTML, hiperligações, imagens, etc. Contudo, as assinaturas não deverão contar demasiado com estas opções. Os destinatários podem usar clientes de e-mail incompatíveis com HTML e imagens integradas, ou então as assinaturas podem ser exibidas de forma distorcida. Tenha em conta que as tags HTML serão removidas por completo se a mensagem for enviada como «Texto simples» a partir do OWA.
 - O serviço não conta com a opção «Initials». Se introduzir esta variável, não verificará nenhum efeito.
 
-## Saiba mais
+## Saiba mais <a name="go-further"></a>
 
 [Guia de utilização do Outlook Web App](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa)
 

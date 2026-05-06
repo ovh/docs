@@ -16,6 +16,17 @@ Ce guide explique comment migrer vos données d’un volume Block Storage standa
 - Un volume Block Storage existant (source)
 - Un accès administrateur (root ou sudo) à votre instance
 
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Projets Public Cloud](/links/control-panel/publiccloud-projects)
+- **Pour accéder à vos services :** `Public Cloud`{.action} > Sélectionnez votre projet
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
+
 ## En pratique
 
 ### Etape 1 : Créer un volume LUKS
@@ -36,31 +47,31 @@ Depuis votre [espace client OVHcloud](/links/manager), créez un nouveau volume 
 
 2. Vérifiez que les deux volumes sont visibles sur votre instance :
 
-    ```bash
-    lsblk
-    ```
+```bash
+lsblk
+```
 
-    Exemple de sortie :
+Exemple de sortie :
 
-    ```bash
-    /dev/vdb # volume source
-    /dev/vdc # volume cible LUKS
-    ```
+```bash
+/dev/vdb # volume source
+/dev/vdc # volume cible LUKS
+```
 
 ### Étape 3 : Préparer le volume LUKS (chiffré)
 
 1. Formatez le volume LUKS avec le système de fichiers de votre choix (par exemple ext4) :
 
-    ```bash
-    sudo mkfs.ext4 /dev/vdc
-    ```
+```bash
+sudo mkfs.ext4 /dev/vdc
+```
 
 2. Montez le volume cible :
 
-    ```bash
-    sudo mkdir -p /mnt/luks_target
-    sudo mount /dev/vdc /mnt/luks_target
-    ```
+```bash
+sudo mkdir -p /mnt/luks_target
+sudo mount /dev/vdc /mnt/luks_target
+```
 
 ### Étape 4 : Monter le volume source
 
@@ -89,10 +100,10 @@ sudo rsync -aAXHv --progress /mnt/source_volume/ /mnt/luks_target/
 
 2. Démontez les deux volumes :
 
-    ```bash
-    sudo umount /mnt/source_volume
-    sudo umount /mnt/luks_target
-    ```
+```bash
+sudo umount /mnt/source_volume
+sudo umount /mnt/luks_target
+```
 
 3. Détachez le volume source s’il n’est plus nécessaire.
 

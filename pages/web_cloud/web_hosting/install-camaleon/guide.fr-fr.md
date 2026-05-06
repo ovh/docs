@@ -13,11 +13,21 @@ updated: 2022-05-04
 ## Prérequis
 
 - Disposer d’un [hébergement Cloud Web OVHcloud](/links/web/hosting-cloud-web-offer).
-- Être connecté à votre [espace client OVHcloud](/links/manager), partie `Web Cloud`{.action}.
 - Ce que vous devez savoir :
     - Les bases de l’écosystème Ruby.
     - Se connecter en SSH.
     - Éditer un fichier en ligne de commande via Vim, Emacs ou Nano parexemple.
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Hébergements](/links/control-panel/web-hosting)
+- **Pour accéder à vos services :** `Web Cloud`{.action} > `Hébergements`{.action} > Sélectionnez votre hébergement web
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## En pratique
 

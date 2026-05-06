@@ -30,16 +30,29 @@ Email Pro accounts can be configured on various compatible email clients. This a
 - You have the Outlook application installed on your [iOS device](https://apps.apple.com/app/microsoft-outlook/id951937596).
 - You have the login details for the email account you would like to configure.
 
+<!-- CP-NAV-START:web-email-pro -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Email Pro](/links/control-panel/web-email-pro)
+- **Navigation path:** `Web Cloud`{.action} > `Email Pro`{.action} > Select your platform
+
+---
+<!-- CP-NAV-END:web-email-pro -->
+
 ## Instructions
 
 ### Add the account <a name="add-account"></a>
 
+<!-- CP-STEPS-START:find-server-name -->
 > [!warning]
 >
 > In this guide, we will use as the server name: pro?.mail.ovh.net. You will need to replace the "?" with the actual number designating the appropriate server for your Email Pro service.
-> 
-> You can find this information in the [OVHcloud Control Panel](/links/manager): In the `Web Cloud`{.action} section, select `Email Pro`{.action}. The server name is displayed in the **Connection** box in the `General Information`{.action} tab.
 >
+> Click [this link](/links/control-panel/web-email-pro) to access the `Email Pro`{.action} section. The server name is visible in the **Connection** section of the `General information`{.action} tab.
+>
+<!-- CP-STEPS-END:find-server-name -->
 
 - **When you start the application for the first time**: A configuration wizard will appear. Tap `Add account`{.action}.
 

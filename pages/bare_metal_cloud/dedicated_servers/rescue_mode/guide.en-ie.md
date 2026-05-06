@@ -1,6 +1,6 @@
 ---
-title: "How to activate and use rescue mode"
-excerpt: "Find out how to use the OVHcloud customer rescue system to troubleshoot your dedicated server"
+title: "Rescue Mode on a Dedicated Server"
+excerpt: "Boot your dedicated server into OVHcloud rescue mode to diagnose issues, repair filesystems, and reset passwords."
 updated: 2026-01-09
 ---
 
@@ -43,13 +43,21 @@ Usual tasks the rescue mode is appropriate for include:
 ## Requirements
 
 - A [dedicated server](/links/bare-metal/bare-metal) in your OVHcloud account
-- Access to the [OVHcloud Control Panel](/links/manager)
+
+<!-- CP-NAV-START:baremetal-dedicated-servers -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Dedicated Servers](/links/control-panel/baremetal-dedicated-servers)
+- **Navigation path:** `Bare Metal Cloud`{.action} > `Dedicated servers`{.action} > Select your server
+
+---
+<!-- CP-NAV-END:baremetal-dedicated-servers -->
 
 ## Instructions
 
 To use rescue mode, you need to edit the sever's `Netboot` setting. Then the server has to be restarted.
-
-Log in to your [OVHcloud Control Panel](/links/manager), open the `Bare Metal Cloud`{.action} section and then `Dedicated servers`{.action}.
 
 Click on your server's name to open the `General information`{.action} tab.
 
@@ -57,7 +65,7 @@ Click on your server's name to open the `General information`{.action} tab.
 
 In the **General information** box, click the button `...`{.action} next to `Boot`. Click on `Edit`{.action} in the context menu.
 
-![Modify boot mode](images/rescue-mode-001.png){.thumbnail}
+![Edit boot option in the General information context menu](images/rescue-mode-001.png){.thumbnail}
 
 <a name="netboot"></a>
 
@@ -65,7 +73,7 @@ In the **General information** box, click the button `...`{.action} next to `Boo
 
 On the page **Change the netboot**, select `Boot in rescue mode`{.action}.
 
-![Modify boot mode](images/rescue-mode-002.png){.thumbnail}
+![Change the netboot page with Boot in rescue mode selected](images/rescue-mode-002.png){.thumbnail}
 
 The available options for rescue mode depend on the server type and the **operating system** installed.
 
@@ -96,7 +104,7 @@ Click on the relevant tab for your connection method:
 >>
 >> Click `Password authentication`{.action}.
 >>
->>![Auth method](images/rescue-mode-003.png){.thumbnail width="700"}
+>>![Password authentication option for rescue mode](images/rescue-mode-003.png){.thumbnail width="700"}
 >>
 >> The rescue mode notification email including its login details will be sent to the contact email address of your OVHcloud account. To use a different email address, enter it in the field `Send new login details to the following email address`.
 >>
@@ -106,7 +114,7 @@ Click on the relevant tab for your connection method:
 >>
 >> Click `Authentication via SSH key`{.action}.
 >>
->>![Auth method](images/rescue-mode-004.png){.thumbnail width="700"}
+>>![SSH key authentication option for rescue mode](images/rescue-mode-004.png){.thumbnail width="700"}
 >>
 >> You have two options:
 >>

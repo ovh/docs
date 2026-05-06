@@ -18,10 +18,21 @@ L'opzione di geolocalizzazione sul tuo hosting può essere utile per l'SEO se il
 
 ## Prerequisiti
 
-- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
 - Disporre di un [hosting condiviso OVHcloud](/links/web/hosting)
 - Disporre di un [dominio](/links/web/domains)
   
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [Web hosting](/links/control-panel/web-hosting)
+- **Percorso di navigazione:** `Web Cloud`{.action} > `Hosting`{.action} > Seleziona il tuo hosting web
+
+---
+<!-- CP-NAV-END:web-hosting -->
+
 ## Procedura
 
 Per i siti Web consultati principalmente all'estero e ospitati sulla nostra infrastruttura di hosting condivisi OVHcloud, proponiamo un'opzione di geolocalizzazione per indirizzo IP. Permette di indicizzare meglio i siti Web nel Paese in cui si trova l'indirizzo IP scelto con l'opzione.

@@ -22,7 +22,17 @@ Unsere Webhostings sind seit 2011 mit IPv6 kompatibel, doch die Aktivierung dies
 
 - Sie verfügen über einen [Domainnamen](/links/web/domains).
 - Sie verfügen über ein [OVHcloud Webhosting](/links/web/hosting).
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direkter Link:** [Hosting-Pakete](/links/control-panel/web-hosting)
+- **Navigationspfad:** `Web Cloud`{.action} > `Hosting-Pakete`{.action} > Wählen Sie Ihr Webhosting aus
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## In der praktischen Anwendung
 
@@ -39,28 +49,24 @@ Um zu überprüfen, ob Ihre Website bereits eine IPv6-Adresse verwendet, können
 
 ### 2 - IPv6-Adresse Ihres Webhostings abrufen
 
-Klicken Sie auf die Tabs, um die **3** Schritte anzuzeigen.
+<!-- CP-STEPS-START:ipv6-adresse-abrufen -->
+Klicken Sie auf die Tabs, um die **2** Schritte anzuzeigen.
 
 > [!tabs]
 > **Schritt 1**
 >>
->> Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein und gehen Sie dann in den Bereich `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Schritt 2**
->>
->> Klicken Sie auf das Menü `Hosting-Pakete`{.action} und wählen Sie das betreffende Webhosting aus.
+>> Gehen Sie auf die Seite [Hosting-Pakete](/links/control-panel/web-hosting), und wählen Sie das betreffende Webhosting aus.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Schritt 3**
+> **Schritt 2**
 >>
 >> Im Feld **Allgemeine Informationen** finden Sie die Adresse unter **IPv6**.
 >>
 >> ![IPv6](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-ipv6.png){.thumbnail}
 >>
 >> Kopieren Sie die IPv6-Adresse und folgen Sie der Anleitung weiter.
+<!-- CP-STEPS-END:ipv6-adresse-abrufen -->
 
 ### 3 - DNS-Zone Ihres Domainnamens konfigurieren
 

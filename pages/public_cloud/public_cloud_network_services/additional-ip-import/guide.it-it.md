@@ -24,16 +24,24 @@ Per configurare un indirizzo Additional IP sulle tue istanze Public Cloud, ad es
 ## Prerequisiti
 
 - Un [progetto Public Cloud](/links/public-cloud/public-cloud) nel tuo account OVHcloud
-- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
 - Un [indirizzo Additional IP](/links/bare-metal/ip)
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Percorso di navigazione:** `Public Cloud`{.action} > Seleziona il tuo project
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 > [!warning]
 > Questa funzionalità al momento non è disponibile per le istanze Metal.
 >
 
 ## Procedura
-
-Accedi allo [Spazio Cliente OVHcloud](/links/manager), clicca su `Public Cloud`{.action} e seleziona il progetto Public Cloud interessato.
 
 Nel menu a sinistra, apri `IP pubblici`{.action} in **Network**.
 

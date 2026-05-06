@@ -1,6 +1,6 @@
 ---
-title: 'Konfiguracja adresu Additional IP jako aliasu'
-excerpt: 'Dowiedz się, jak dodać kilka adresów Additional IP do interfejsu'
+title: "Konfiguracja Additional IP jako aliasu IP na serwerze dedykowanym"
+excerpt: "Skonfiguruj Additional IP jako alias na serwerze dedykowanym OVHcloud z systemem Linux, Windows lub Plesk."
 updated: 2025-12-04
 ---
 
@@ -52,7 +52,7 @@ Alias IP (po angielsku IP aliasing) to specjalna konfiguracja sieci serwera dedy
 
 ## W praktyce
 
-Poniższe sekcje zawierają konfiguracje aktualnie oferowanych przez nas dystrybucji oraz najczęściej używane dystrybucje/systemy operacyjne. Pierwszy Kror polega zawsze na połączeniu się z Twoim serwerem przez SSH lub za pomocą sesji połączenia GUI (RDP w przypadku serwera Windows).
+Poniższe sekcje zawierają konfiguracje aktualnie oferowanych przez nas dystrybucji oraz najczęściej używane dystrybucje/systemy operacyjne. Pierwszy krok polega zawsze na połączeniu się z Twoim serwerem przez SSH lub za pomocą sesji połączenia GUI (RDP w przypadku serwera Windows).
 
 > [!primary]
 >
@@ -77,7 +77,7 @@ W poniższych przykładach użyjemy edytora tekstu `nano`. W przypadku niektóry
 > **Debian 11**
 >> Debian 11
 >>
->> Domyślnie plik konfiguracyjny znajduje się w katalogu`/etc/network/interfaces.d/`. Zaleca się, aby najpierw wykonać kopię zapasową odpowiedniego pliku konfiguracyjnego.
+>> Domyślnie plik konfiguracyjny znajduje się w katalogu `/etc/network/interfaces.d/`. Zaleca się, aby najpierw wykonać kopię zapasową odpowiedniego pliku konfiguracyjnego.
 >>
 >> **Krok 1: tworzenie kopii zapasowej**
 >>
@@ -219,7 +219,7 @@ W poniższych przykładach użyjemy edytora tekstu `nano`. W przypadku niektóry
 >> sudo cp /etc/NetworkManager/system-connections/cloud-init-eno1.nmconnection.bak /etc/NetworkManager/system-connections/cloud-init-eno1.nmconnection
 >> ```
 >>
->> **Krok 2: modyfikacja pliku konfiguracyjny**
+>> **Krok 2: modyfikacja pliku konfiguracyjnego**
 >>
 >> > [!primary]
 >> > Pamiętaj, że nazwa pliku sieciowego w naszym przykładzie może się różnić od Twojej. Dostosuj polecenia do nazwy pliku.
@@ -276,10 +276,10 @@ W poniższych przykładach użyjemy edytora tekstu `nano`. W przypadku niektóry
 >> sudo systemctl restart NetworkManager
 >> ```
 >>
-> **Debian 12+ e Ubuntu 20.04+**
+> **Debian 12+ i Ubuntu 20.04+**
 >> Debian 12, Ubuntu 20.04 i kolejne wersje
 >>
->> Domyślnie pliki konfiguracyjne znajdują się w katalogu`/etc/netplan`.
+>> Domyślnie pliki konfiguracyjne znajdują się w katalogu `/etc/netplan`.
 >>
 >> Najlepszym rozwiązaniem jest utworzenie oddzielnego pliku konfiguracyjnego do konfiguracji adresów Additional IP. Ułatwia to powrót do poprzedniej wersji w przypadku błędu.
 >>
@@ -293,7 +293,7 @@ W poniższych przykładach użyjemy edytora tekstu `nano`. W przypadku niektóry
 >>
 >> **Krok 2: modyfikacja pliku konfiguracyjnego**
 >>
->> Następnie utwórz plik konfiguracyjny z rozszerzeniem`.yaml`. W naszym przykładzie nasz plik nosi nazwę `51-cloud-init.yaml`.
+>> Następnie utwórz plik konfiguracyjny z rozszerzeniem `.yaml`. W naszym przykładzie nasz plik nosi nazwę `51-cloud-init.yaml`.
 >>
 >> ```sh
 >> sudo nano /etc/netplan/51-cloud-init.yaml
@@ -375,7 +375,7 @@ W poniższych przykładach użyjemy edytora tekstu `nano`. W przypadku niektóry
 >>
 >> Zanotuj nazwę interfejsu (interfejsu, w którym skonfigurowany jest główny adres IP Twojego serwera).
 >>
->> **Krok 2: modyfikacja pliku konfiguracyjny**
+>> **Krok 2: modyfikacja pliku konfiguracyjnego**
 >>
 >> Zacznij od utworzenia pliku konfiguracyjnego. Zastąp `NETWORK_INTERFACE:ID` własnymi wartościami.
 >>
@@ -425,7 +425,7 @@ W poniższych przykładach użyjemy edytora tekstu `nano`. W przypadku niektóry
 >>
 >> **Krok 2: dodaj informacje dotyczące Additional IP**
 >>
->> Wpisz swój adres IP additional w formie "xxx.xxx.xxx.xxx" w polu "New IP or IP range to add".
+>> Wpisz swój adres IP additional w formie "xxx.xxx.xxx.xxx" w polu `New IP or IP range to add`.
 >>
 >> Wybierz `255.255.255.255` jako maskę podsieci, po czym kliknij `Submit`{.action}.
 >>
@@ -451,7 +451,7 @@ W poniższych przykładach użyjemy edytora tekstu `nano`. W przypadku niektóry
 >>
 >> Otwórz wiersz poleceń `cmd`{.action} lub `powershell`{.action}, a następnie wpisz poniższe polecenie:
 >>
->> ``` powershell
+>> ```powershell
 >> ipconfig
 >> ```
 >>
@@ -513,7 +513,7 @@ W poniższych przykładach użyjemy edytora tekstu `nano`. W przypadku niektóry
 >>
 >> 4. Wybierz `Internet Protocol Version 4 (TCP/IPv4)`{.action}, a następnie kliknij `Properties`{.action}.
 >>
->> 5. Kliknij `Use the following IP address`{.action} i wprowadź dane adresu głównego Twojego serwera, maski podsieci i bramy domyślnej uzyskane powyżej po wpisaniu polecenia `ipconfig`{.action}. (W polu `Preferred DNS Server` wpisz 213.186.33.99.)
+>> 5. Kliknij `Use the following IP address`{.action} i wprowadź dane adresu głównego Twojego serwera, maski podsieci i bramy domyślnej uzyskane powyżej po wpisaniu polecenia `ipconfig`. (W polu `Preferred DNS Server` wpisz 213.186.33.99.)
 >>
 >> ![Internet Protocol Version 4 (TCP/IPv4) Properties](images/configure-main-ip.png){.thumbnail}
 >>
@@ -557,7 +557,7 @@ W poniższych przykładach użyjemy edytora tekstu `nano`. W przypadku niektóry
 >>
 >> ![dostęp do zarządzania adresami IP](images/pleskip1.png){.thumbnail}
 >>
->> Kliknij `IP Addresses`{.action} w **Tools & Settings**.
+>> Kliknij `IP Addresses`{.action} w **Tools & Resources**.
 >>
 >> **Krok 2: dodaj dodatkowe informacje IP**
 >>
@@ -565,18 +565,18 @@ W poniższych przykładach użyjemy edytora tekstu `nano`. W przypadku niektóry
 >>
 >> ![dodaj informacje IP](images/Plesk-2024.png){.thumbnail}
 >>
->> Wprowadź adres Additional IP w formie `xxx.xxx.xxx.xxx/32` w polu "IP address and subnet mask", a następnie kliknij `OK`{.action}.
+>> Wprowadź adres Additional IP w formie `xxx.xxx.xxx.xxx/32` w polu `IP address and subnet mask`, a następnie kliknij `OK`{.action}.
 >>
 >> ![dodaj informacje IP](images/Plesk-2024-1.png){.thumbnail}
 >>
->> **Kror 3: sprawdź aktualną konfigurację IP**
+>> **Krok 3: sprawdź aktualną konfigurację IP**
 >>
->> W sekcji "IP Addresses" sprawdź, czy adres Additional IP został poprawnie dodany.
+>> W sekcji `IP Addresses` sprawdź, czy adres Additional IP został poprawnie dodany.
 >>
 >> ![aktualna konfiguracja IP](images/Plesk-2024-2.png){.thumbnail}
 >>
 
-#### Rozwiązywanie problemów
+### Rozwiązywanie problemów
 
 Jeśli nie udaje Ci się nawiązać połączenia między siecią publiczną a Twoim aliasem IP i podejrzewasz problem z siecią, zrestartuj serwer w [trybie Rescue](/pages/bare_metal_cloud/dedicated_servers/rescue_mode) i skonfiguruj alias bezpośrednio na serwerze.
 
@@ -586,7 +586,7 @@ W tym celu, po zrestartowaniu serwera w trybie Rescue, uruchom następujące pol
 ifconfig eth0:0 ADDITIONAL_IP netmask 255.255.255.255 broadcast ADDITIONAL_IP up
 ```
 
-Gdzie zastąpisz "ADDITIONAL_IP" prawdziwym Additional IP.
+Gdzie zastąpisz `ADDITIONAL_IP` prawdziwym Additional IP.
 
 Następnie wystarczy skierować ping z Additional IP na zewnątrz. Jeśli to działa, prawdopodobnie oznacza to, że błąd konfiguracji wymaga naprawy. Jeśli adres IP nadal nie działa, otwórz zgłoszenie dla zespołu pomocy technicznej w [Centrum pomocy OVHcloud](https://help.ovhcloud.com/csm?id=csm_get_help), podając następujące informacje:
 
@@ -598,4 +598,5 @@ Następnie wystarczy skierować ping z Additional IP na zewnątrz. Jeśli to dzi
 
 [Tryb bridge IP](/pages/bare_metal_cloud/dedicated_servers/network_bridging)
 
+- [Jak przenieść Additional IP na inny serwer](/pages/bare_metal_cloud/dedicated_servers/move-failover-ip)
 Dołącz do [grona naszych użytkowników](/links/community).

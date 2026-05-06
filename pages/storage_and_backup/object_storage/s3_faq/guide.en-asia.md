@@ -1,7 +1,7 @@
 ---
 title: Object Storage - FAQ
 excerpt: "Frequently Asked Questions on the Object Storage solution"
-updated: 2025-08-05
+updated: 2026-03-06
 ---
 
 ## General questions
@@ -10,7 +10,7 @@ updated: 2025-08-05
 
 Object Storage is a family of storage solutions offering high-performance, scalable and secure storage spaces.
 
-Object storage solutions allow static files (videos, images, web files, etc.) to be stored in an unlimited space via a public access point called the "endpoint", so that they can be used from an application or made accessible on the web. These storage spaces are accessed through a standard S3<sup>1</sup> compatible API interface for the Object Storage classes and Swift for the SWIFT Object Storage classes.
+Object storage solutions allow static files (videos, images, web files, etc.) to be stored in an unlimited space via a public access point called the "endpoint", so that they can be used from an application or made accessible on the web. These storage spaces are accessed through a standard S3<sup>1</sup>-compatible API interface for the Object Storage classes and Swift for the Swift Object Storage classes.
 
 <iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/8xXbL3Ftgwk?si=OaRx5koocA-OyRXC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
@@ -18,19 +18,20 @@ Object storage solutions allow static files (videos, images, web files, etc.) to
 
 Object Storage is adapted to store unstructured data in an unlimited volume and time, for use cases such as websites, e-commerce platforms, video streaming, image libraries, analytics, backups, archives.
 
-### What is the difference between S3 compatible object storage classes and SWIFT object storage classes?
+### What is the difference between S3-compatible object storage classes and Swift object storage classes?
 
 The Object Storage classes are largely compatible with the S3 protocol and benefit from a recent, high-performance design and good bandwidth. This solution is regularly updated, and has new features.
 
-The SWIFT storage classes are from older generations and no longer benefit from further developments. They are accessible through the OpenStack SWIFT protocol.
+The Swift storage classes are from older generations and no longer benefit from further developments. They are accessible through the OpenStack Swift protocol.
 
 ### How do I know which storage class is right for me?
 
-OVHcloud offers 3 S3 compatible storage classes:
+OVHcloud offers the following S3-compatible storage classes:
 
 - **High Performance** for your latency and bandwidth intensive applications.
 - **Standard** for your high-volume storage for which you are looking for a better price/performance ratio, such as websites, image-sharing libraries or backups.
 - **Infrequent Access** for infrequently accessed data, also known as "cool" data storage, requiring fast data retrieval: long-term data storage, backups, disaster recovery.
+- **Active Archive** for data that you rarely access (1 to 3 times per year), but which must be available immediately (in milliseconds) when you need it.
 - **Cold Archive** for your archives.
 
 Find the description of the storage classes on [this page](/links/public-cloud/storage).
@@ -43,7 +44,7 @@ New features are coming soon, so please check out our [public GitHub roadmap](ht
 
 ### Which Amazon S3 APIs are compatible with Object Storage classes?
 
-Object Storage classes offer a wide range of S3 compatible API support. All compatible APIs are described in our [Compatibility guide](/pages/storage_and_backup/object_storage/s3_s3_compliancy).
+Object Storage classes offer a wide range of S3-compatible API support. All compatible APIs are described in our [Compatibility guide](/pages/storage_and_backup/object_storage/s3_s3_compliancy).
 
 ### Which tools are compatible with Object Storage?
 
@@ -58,23 +59,23 @@ Object Storage is billed according to the storage space used, with a granularity
 
 ### Billing example for Object Storage – 1-AZ
 
-Assuming you use an Object Storage bucket in a **1-AZ region** and store **100 GiB** of Standard class data for the **first 10 days** of October, and later **100 TiB (102 400 GB)** of Standard class data for the **last 21 days** of October. In this case, it's easy to imagine how storage in this bucket will evolve over the month.
+Assuming you use an Object Storage bucket in a **1-AZ region** and store **100 GiB** of Standard class data for the **first 10 days** of October, and later **100 TiB (102,400 GB)** of Standard class data for the **last 21 days** of October. In this case, it's easy to imagine how storage in this bucket will evolve over the month.
 
 At the end of the month of October, you will have the following GigaByte-Hours : **Total GigaByte-Hours** = [100 GB x 10 days x (24 hours/day)] + [102 400 GB x 21 days x (24 hours/day)] = 24 000 + 51 609 600 = **51 633 600 GB-Hours**
 
-The monthly storage cost (with 0,00000972 EUR / GB-Hour) will be: 51 633 600 GB-Hours * 0,00000972 = **501.88 EUR**
+The monthly storage cost (with 0.00000972 EUR / GB-hour) will be: 51 633 600 GB-hours * 0.00000972 = **501.88 EUR**
 
 The next month, in November, data volume won't change, the monthly storage cost will be calculated as below:
 
 **November GB-Hour**: 100 * 1024 * 720 = 73 728 000 GB-hour (there are 720 hours in November).
 
-The monthly storage cost (with 0,00000972 EUR / GB-Hour) will be: 73 728 000 * 0,00000972= **716.63 EUR**
+The monthly storage cost (with 0.00000972 EUR / GB-hour) will be: 73 728 000 * 0.00000972= **716.63 EUR**
 
 ### Billing example for Object Storage – 3-AZ (staircase pricing policy)
 
 In a 3-AZ region, Object Storage billing is done following a staircase approach with different volume tiers. View pricing on [this page](/links/public-cloud/prices).
 
-Assuming you use an Object Storage bucket in a **3-AZ region** and store **100 GiB** of Standard class data for the **first 10 days** of October, and later **100 TiB (102 400 GB)** of Standard class data for the **last 21 days** of October. In this case, it's still easy to imagine how storage in this bucket will evolve over the month.
+Assuming you use an Object Storage bucket in a **3-AZ region** and store **100 GiB** of Standard class data for the **first 10 days** of October, and later **100 TiB (102,400 GB)** of Standard class data for the **last 21 days** of October. In this case, it's still easy to imagine how storage in this bucket will evolve over the month.
 
 At the end of the month of October, you will have the following GigaByte-Hours : **Total GigaByte-Hours** = [100 GB x 10 days x (24 hours/day)] + [102 400 GB x 21 days x (24 hours/day)] = 24 000 + 51 609 600 = **51 633 600 GB-Hours**
 
@@ -89,13 +90,13 @@ The next month, in November, data volume won't change, the monthly storage cost 
 
 **November GB-Hour**: 100 * 1024 * 720 = **73 728 000 GB-Hours** (there are 720 hours in November).
 
-The monthly storage cost will be: 37 376 000 * 0.00001917 + (73 728 000 - 37 376 000) * 0.00001712 = 716.49792 + 622,34624 = **1338,84 EUR**
+The monthly storage cost will be: 37 376 000 * 0.00001917 + (73 728 000 - 37 376 000) * 0.00001712 = 716.49792 + 622.34624 = **1338.84 EUR**
 
 ## Access & Security
 
 ### Which APIs should I use to access storage solutions?
 
-We designed Object Storage storage classes to be **compatible with S3** API, considered a benchmark in the object storage market. You can use Object Storage with most data management tools via endpoints defined by region.
+We designed Object Storage storage classes to be **compatible with the S3 API**, considered a benchmark in the object storage market. You can use Object Storage with most data management tools via endpoints defined by region.
 
 Get your S3 access keys and access the various storage classes via the command line using AWS-CLI, [`s3cmd`](https://s3tools.org/s3cmd) or other commands.
 
@@ -122,7 +123,7 @@ You can encrypt your data in two ways:
 - **SSE-C (Server-Side Encryption with Customer Keys)**: You can provide and manage your own encryption keys, giving you complete control over your data security. This option is particularly well-suited to organizations with specific compliance and data security needs, as it allows for exclusive management of encryption keys.
 - **SSE-OMK (Server-Side Encryption with OVHcloud-Managed Keys)**: Simplifies the encryption process by using keys managed by OVHcloud. This method is ideal for customers who want a robust encryption solution without the complexities of key management.
 
-When you updload an object, Object Storage uses the encryption key you provide to apply AES-256 encryption to your data. When you download an object, you must provide the same encryption key as part of your request. Object Storage first checks that the encryption key you provided matches, then decrypts the object before returning the object data to you.
+When you upload an object, Object Storage uses the encryption key you provide to apply AES-256 encryption to your data. When you download an object, you must provide the same encryption key as part of your request. Object Storage first checks that the encryption key you provided matches, then decrypts the object before returning the object data to you.
 
 You can find more information in the following guide: [Encrypt your server-side objects with SSE-C or SSE-OMK](/pages/storage_and_backup/object_storage/s3_encrypt_your_objects_with_sse_c).
 
@@ -145,20 +146,23 @@ Make sure you have the necessary permissions by using the credentials of the obj
 To generate a presigned URL to share an object using the AWS CLI, you can use the `presign` command:
 
 ```bash
-$ aws s3 presign s3://<bucket>/<key>
+aws s3 presign s3://<bucket_name>/<object_key>
 ```
 
 - Example:
 
 ```bash
-$ aws s3 presign s3://gribs/grib-file
+aws s3 presign s3://gribs/grib-file
+```
+
+```text
 https://s3.gra.perf.cloud.ovh.net/gribs/grib-file?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=5ba255c12baf43be9d00289070faf936%2F20230221%2Fgra%2Fs3%2Faws4_request&X-Amz-Date=20230221T142726Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=a43dc63c483d469f6f747ef041a434145b3661541e95e4334eee3a96e059e15e
 ```
 
 You can also set a link expiration via the `--expire` option. The command below sets an expiration after 24 hours (the duration is in seconds):
 
 ```bash
-aws s3 presign s3://<bucket>/<key> --expires-in 86400
+aws s3 presign s3://<bucket_name>/<object_key> --expires-in 86400
 ```
 
 ## Bandwidth
@@ -204,7 +208,7 @@ You can also use the asynchronous replication feature available on Object Storag
 
 ### Is it possible to manage data lifecycles?
 
-You can use Object Storage lifeycle management feature for:
+You can use Object Storage lifecycle management feature for:
 - automating object deletion based on object expiration rules.
 - automating object transition from one class to another.
 

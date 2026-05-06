@@ -14,7 +14,17 @@ L'autenticazione SSO (*Single Sign-On*) è disponibile per accedere al tuo accou
 
 - Essere amministratore di un servizio Okta
 - Disporre di un [account OVHcloud attivo](/pages/account_and_service_management/account_information/ovhcloud-account-creation)
-- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
+
+<!-- CP-NAV-START:iam-saml-sso -->
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [SAML SSO](/links/control-panel/iam-saml-sso)
+- **Percorso di navigazione:** `Identità, sicurezza e operazioni`{.action} > `Users`{.action} > `SSO connection`{.action}
+
+---
+<!-- CP-NAV-END:iam-saml-sso -->
 
 ## Procedura
 
@@ -78,13 +88,7 @@ Il tuo servizio Okta si fida di OVHcloud come provider di servizi. Lo step succe
 
 ### Salva Okta sull'account OVHcloud e configura la connessione
 
-Per aggiungere Okta come affidabilità provider, è necessario fornire i metadati del provider nel tuo [Spazio Cliente OVHcloud](/links/manager).
-
-Nella barra laterale, clicca su `Identità, Sicurezza & Operazioni`{.action} e poi su `Identità`{.action}.
-
-![Accesso al menu IAM](images/access_to_the_IAM_menu_01.png){.thumbnail}
-
-Clicca sulla scheda `SSO`{.action} e sul pulsante `Connessione SSO`{.action}.
+Per aggiungere Okta come affidabilità provider, è necessario fornire i metadati del provider. Apri la pagina [SAML SSO](/links/control-panel/iam-saml-sso) e clicca sul pulsante `Connessione SSO`{.action}.
 
 ![Accesso al menu IAM](images/access_to_the_IAM_menu_03.png){.thumbnail}
 Inserisci i metadati XML del tuo servizio Okta. Completa il campo "Nome dell'attributo utente" con il valore `http://schemas.xmlsoap.org/ws/2005/05/identity/claims/upn` e il campo "Nome dell'attributo del gruppo" con il valore `Group`. Clicca su `Conferma`{.action}.
@@ -115,7 +119,7 @@ Il tuo servizio Okta è considerato un provider di identità affidabile. È comu
 
 A questo punto è necessario attribuire i **roles** ai gruppi di utenti Okta in OVHcloud. In caso contrario, il tuo account OVHcloud non sa cosa è autorizzato a fare l'utente e, di default, non viene assegnato alcun diritto.
 
-Per aggiungere un gruppo dallo [Spazio Cliente OVHcloud](/links/manager), clicca su `Identità`{.action} e poi sulla scheda `Gruppi di utenti`{.action}. Clicca sul pulsante `Dichiarare un gruppo`{.action} e completa i campi:
+Nella sezione `Identità`{.action}, apri la scheda `Gruppi di utenti`{.action}. Clicca sul pulsante `Dichiarare un gruppo`{.action} e completa i campi:
 
 - **Group name**: Nome del gruppo in Okta
 - **Role**: Livello dei diritti concessi a questo gruppo

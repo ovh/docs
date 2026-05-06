@@ -35,9 +35,19 @@ Questa guida ti mostra come:
 
 ## Prerequisiti
 
-- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
 - Disporre di un cellulare (per il metodo SMS), uno smartphone o un tablet (per il metodo applicazione mobile) o una chiave di sicurezza Universal Second Factor (U2F).
 - Aver letto i [consigli su come gestire la password di accesso al tuo account](/pages/account_and_service_management/account_information/manage-ovh-password).
+
+<!-- CP-NAV-START:account-security -->
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [Sicurezza](/links/control-panel/account-security)
+- **Percorso di navigazione:** Clicca sul tuo nome in alto a destra > `Accedere al mio account`{.action} > `Sicurezza`{.action}
+
+---
+<!-- CP-NAV-END:account-security -->
 
 ## Procedura <a name="instructions"></a>
 
@@ -87,9 +97,7 @@ Ti proponiamo quattro diversi metodi (clicca sulle schede qui sotto per visualiz
 
 ### Step 1 - Attiva il primo metodo di doppia autenticazione <a name="enabling-2fa"></a>
 
-Accedi allo [Spazio Cliente OVHcloud](/links/manager), clicca sul tuo nome in alto a destra e poi su `Accedere al mio account`{.action}.
-
-- Clicca sulla scheda `Sicurezza`{.action} e infine su `Attiva l'autenticazione a due fattori`{.action}.
+Nella pagina [Sicurezza dell'account](/links/control-panel/account-security), clicca su `Attiva l'autenticazione a due fattori`{.action}.
 
 **Clicca sulla scheda corrispondente al metodo che preferisci:**
 
@@ -194,9 +202,7 @@ Se il dispositivo (telefono cellulare/smartphone/chiave di sicurezza) viene smar
 > - codici di sicurezza validi.
 >
 
-Per rimuovere un dispositivo, accedi allo [Spazio Cliente OVHcloud](/links/manager), clicca sul tuo nome in alto a destra e poi su `Accedere al mio account`{.action}.
-
-Clicca su `Sicurezza`{.action} e poi sui `...`{.action} a destra del dispositivo da rimuovere e infine su `Eliminare`{.action}.
+Per rimuovere un dispositivo, accedi alla pagina [Sicurezza dell’account](/links/control-panel/account-security) e clicca sui `...`{.action} a destra del dispositivo da rimuovere e poi su `Eliminare`{.action}.
 
 ![2FA](images/2024-006-delete-device.png){.thumbnail}
 

@@ -1,7 +1,7 @@
 ---
 title: 'Optimisation des performances de votre site'
 excerpt: "Vous trouverez dans ce guide differents conseils concernant l'analyse des lenteurs sur votre site web, ainsi que des pistes d'amelioration."
-updated: 2025-10-09
+updated: 2026-04-01
 ---
 
 ## Objectif
@@ -19,7 +19,17 @@ Il vous permettra d’acquérir des connaissances fondamentales au sujet des fac
 - Un [hébergement web OVHcloud](/links/web/hosting)
 - Un e-mail confirmant que votre hébergement web a été configuré;
 - Un [nom de domaine](/links/web/domains) lié à votre hébergement web;
-- Être connecté à votre [espace client OVHcloud](/links/manager).
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Hébergements](/links/control-panel/web-hosting)
+- **Pour accéder à vos services :** `Web Cloud`{.action} > `Hébergements`{.action} > Sélectionnez votre hébergement web
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## En pratique
 
@@ -93,64 +103,60 @@ Pour plus d’information à ce sujet, veuillez vous référer à l’étape 5 c
 
 Établissez une corrélation entre les graphiques d’utilisation des ressources de votre hébergement (voir ci-dessous pour plus d’information) pour déterminer l’origine des retards et consultez les fichiers journaux en vous référant aux dates de ces pointes d’utilisation.
 
-Vous pouvez accéder à vos logs, aux statistiques et aux graphiques directement à partir de [l’espace client OVHcloud](/links/manager).
-
-Comment accéder aux statistiques et logs :
-
-Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4** étapes.
+<!-- CP-STEPS-START:access-stats-and-logs -->
+Pour accéder aux statistiques et logs, cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3** étapes.
 
 > [!tabs]
-> **Etape 1**
+> **Étape 1**
 >>
->> Connectez-vous à votre [espace client OVHcloud](/links/manager), puis rendez-vous dans la partie `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Etape 2**
->>
->> Cliquez sur le menu `Hébergements`{.action}, puis choisissez l'hébergement web concerné.
+>> Accédez à la page [Hébergements](/links/control-panel/web-hosting), puis choisissez l'hébergement web concerné.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Etape 3**
+> **Étape 2**
 >>
 >> Sur la page qui s'affiche, cliquez sur l'onglet `Statistiques et logs`{.action}. 
 >>
 >> ![statistics-and-logs](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/statistics-and-logs.png){.thumbnail}
 >> 
-> **Etape 4**
+> **Étape 3**
 >>
 >> Cliquez ensuite sur le bouton `Voir les statistiques`{.action} affiché pour accéder aux statistiques de visite du site web ou sur `Voir les logs`{.action} pour consulter les logs disponibles pour votre hébergement web.
 >>
 >> ![logs](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/statistics-and-logs/tab.png){.thumbnail}
+<!-- CP-STEPS-END:access-stats-and-logs -->
 
-Comment accéder aux graphiques :
+<!-- CP-STEPS-START:access-resource-charts -->
+Pour accéder aux graphiques, cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3** étapes.
 
-1. Cliquez sur `Hébergements`{.action} dans la colonne de gauche puis sélectionnez l'hébergement web concerné.
-2. Sur la page qui s'affiche, cliquez sur l’onglet `Statistiques et logs`{.action}. Défilez jusqu’au bas de la page où se trouve le graphique lié à l’utilisation de votre hébergement.
-3. Sélectionnez le **type** d’information ainsi que la **période** des données affichées.
-
-![graphs](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/statistics-and-logs/infrastructure-statistics-graph.png){.thumbnail}
-
-Quels sont les différents types de renseignements qui peuvent être affichés ?
-
-- **Requêtes HTTP**: Indique le nombre moyen de consultations du site. Les consultations sont classées selon le statut HTTP 2xx/3xx/4xx/5xx.
-
-- **Temps de réponse moyen**: Indique le temps de réponse moyen d’une page. Il y a une distinction entre les pages statiques et les pages dynamiques.
-
-- **Dépassement du seuil des ressources**: Ce graphique illustre l’utilisation par les travailleurs PHP pour vous orienter vers un forfait d’hébergement web différent le cas échéant. L’utilisation de PHP-FPM peut contribuer à la diminution des travailleurs PHP.
-
-- **Utilisation du processeur central** : Affiche l’utilisation du processeur central par votre site web. Elle pourrait vous permettre d’identifier une surcharge éventuelle du processeur central.
-
-- **Connexions sortantes**: Cette fonctionnalité vous permet de voir la requête TCP émise par le serveur; par exemple en cas de piratage de votre site web, le serveur pourrait être utilisé pour attaquer d’autres sites web externes. Vous pouvez également vérifier les appels externes envoyés par des modules comme Facebook, Twitter etc. La réduction du nombre de requêtes TCP sortantes constitue un excellent moyen de diminuer le temps de chargement, car si le serveur dont vous sollicitez le contenu tarde à répondre, le temps de chargement de votre site web augmentera.
-
-- **Commandes FTP** : Affiche les différentes commandes FTP qui ont été utilisées par l’hébergement. Par exemple, les tentatives de connexion qui ont réussi et en échec, les téléchargements, les chargements et la suppression des fichiers, etc.
-
-Les deux catégories suivantes sont visibles seulement si vous utilisez actuellement une base de données dans votre forfait d’hébergement. Sélectionnez le nom de votre base de données et la période souhaitée.
-
-- **Temps de réponse SQL** : Affiche le temps de réponse aux requêtes.
-
-- **Requêtes SQL**: Affiche le nombre de requêtes.
+> [!tabs]
+> **Étape 1**
+>>
+>> Accédez à la page [Hébergements](/links/control-panel/web-hosting), puis choisissez l’hébergement web concerné.
+>>
+>> ![Sélection d’un hébergement web dans l’espace client OVHcloud](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Étape 2**
+>>
+>> Sur la page qui s’affiche, cliquez sur l’onglet `Statistiques et logs`{.action}. Défilez jusqu’au bas de la page où se trouve le graphique lié à l’utilisation de votre hébergement.
+>>
+> **Étape 3**
+>>
+>> Sélectionnez le **type** d’information ainsi que la **période** des données affichées.
+>>
+>> ![Graphiques des statistiques de l’hébergement web](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/statistics-and-logs/infrastructure-statistics-graph.png){.thumbnail}
+>>
+>> Les différents types de renseignements disponibles :
+>>
+>> - **Requêtes HTTP** : nombre moyen de consultations du site, classées selon le statut HTTP 2xx/3xx/4xx/5xx.
+>> - **Temps de réponse moyen** : temps de réponse moyen d’une page (distinction pages statiques / dynamiques).
+>> - **Dépassement du seuil des ressources** : utilisation par les travailleurs PHP. L’utilisation de PHP-FPM peut contribuer à la diminution des travailleurs PHP.
+>> - **Utilisation du processeur central** : utilisation du processeur central par votre site web, permettant d’identifier une surcharge éventuelle.
+>> - **Connexions sortantes** : permet de voir la requête TCP émise par le serveur ; par exemple en cas de piratage de votre site web, le serveur pourrait être utilisé pour attaquer d’autres sites web externes. Vous pouvez également vérifier les appels externes envoyés par des modules comme Facebook, Twitter, etc. La réduction du nombre de requêtes TCP sortantes constitue un excellent moyen de diminuer le temps de chargement, car si le serveur dont vous sollicitez le contenu tarde à répondre, le temps de chargement de votre site web augmentera.
+>> - **Commandes FTP** : commandes FTP utilisées par l’hébergement (connexions, téléchargements, chargements, suppression de fichiers, etc.).
+>> - **Temps de réponse SQL** : temps de réponse aux requêtes (visible uniquement si vous utilisez une base de données).
+>> - **Requêtes SQL** : nombre de requêtes (visible uniquement si vous utilisez une base de données).
+<!-- CP-STEPS-END:access-resource-charts -->
 
 ### 5 - Vérification des requêtes sur le réseau
 
@@ -190,13 +196,7 @@ Pour vous assurer que votre forfait d’hébergement est adaptée aux besoins de
 Vous pouvez accéder à votre base de données à l’aide de PHPMyAdmin; l'utilisation détaillée de PHPMyAdmin va au-delà de la portée de ce guide. Par conséquent, nous n’aborderons pas le sujet en détail.
 Toutefois, il existe un grand nombre de guides externes qui traitent le sujet.
 
-**Comment accéder à la base de données par le biais de phpMyAdmin :** Pour accéder à votre base de données par le biais de phpMyAdmin, procédez comme suit à partir de [l’espace client OVHcloud](/links/manager) :
-
-- Cliquez sur votre domaine dans la section `Hébergements`{.action} ;
-
-- Cliquez sur l’onglet `Base de données`{.action} ;
-
-- Cliquez sur les 3 points `...`{.action} à droite de votre base de données pour accéder à phpMyAdmin.
+**Comment accéder à la base de données par le biais de phpMyAdmin :** consultez la partie dédiée dans notre guide « [Créer une base de données sur son hébergement web](/pages/web_cloud/web_hosting/sql_create_database) ».
 
 **Pourquoi optimiser une base de données?** 
 

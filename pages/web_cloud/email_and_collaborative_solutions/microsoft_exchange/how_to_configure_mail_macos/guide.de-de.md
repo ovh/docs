@@ -31,7 +31,18 @@ Exchange Accounts können auf verschiedenen kompatiblen E-Mail-Clients eingerich
 - Sie verfügen über einen [Exchange Dienst](/links/web/emails-hosted-exchange).
 - Sie haben den macOS *Mail* CLient auf Ihrem Mac installiert.
 - Sie haben die Login-Daten des E-Mail-Accounts, den Sie einrichten möchten.
- 
+
+<!-- CP-NAV-START:web-exchange -->
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direkter Link:** [Exchange](/links/control-panel/web-exchange)
+- **Navigationspfad:** `Web Cloud`{.action} > `Exchange`{.action} > Wählen Sie Ihre Plattform aus
+
+---
+<!-- CP-NAV-END:web-exchange -->
+
 ## In der praktischen Anwendung
 
 ### Hinzufügen des E-Mail-Accounts <a name="addaccount"></a>
@@ -40,12 +51,7 @@ Exchange Accounts können auf verschiedenen kompatiblen E-Mail-Clients eingerich
 >
 > In dieser Anleitung verwenden wir den Servernamen: ex?.mail.ovh.net. Das "?" muss mit der jeweils passenden Nummer Ihres zuständigen Servers für den einzurichtenden Exchange Dienst ersetzt werden.
 >
-> 1. Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein.
-> 1. Öffnen Sie den Bereich `Web Cloud`{.action}.
-> 1. In der Rubrik `MICROSOFT`{.action}, klicken Sie auf `Exchange`{.action}.
-> 1. Wählen Sie den gewünschten Dienst aus.
-> 1. Der Servername wird im Kasten **Verbindung** auf der Seite `Allgemeine Informationen`{.action} angezeigt.
->
+> Klicken Sie auf [diesen Link](/links/control-panel/web-exchange), um auf den Bereich `Exchange`{.action} zuzugreifen. Der Servername wird im Bereich **Verbindung** des Tabs `Allgemeine Informationen`{.action} angezeigt.
 
 - **Beim ersten Start der Anwendung**: Ein Konfigurationsassistent erscheint und fordert Sie zur Auswahl Ihres Kontotyps auf.
 

@@ -1,6 +1,6 @@
 ---
-title: Inviare SMS con l’API OVHcloud in Java
-excerpt: Come inviare SMS con l’API OVHcloud RESTful in Java
+title: "Inviare SMS con l’API OVHcloud in Java"
+excerpt: "Scopri come configurare un ambiente di sviluppo Java e inviare il tuo primo SMS passo dopo passo utilizzando l’API RESTful OVHcloud"
 updated: 2020-06-01
 ---
 
@@ -26,11 +26,11 @@ In questa guida i metodi saranno due:
 - Elenco dei servizi di SMS attivi [https://eu.api.ovh.com/1.0/sms/](https://api.ovh.com/console/#/sms#GET)
 - Inviare SMS [https://eu.api.ovh.com/1.0/sms/{ServiceName}/jobs/](https://api.ovh.com/console/#/sms/{serviceName}/jobs#POST)
 
-### Step 1: Creazione degli identificativi
+### Passaggio 1: Creazione degli identificativi
 
 Per utilizzare l’API SMS sono necessari degli identificativi. Questi identificativi vengono creati una sola volta per individuare l’applicazione che invierà gli SMS. La loro durata di vita è configurabile.
 
-Crea i tuoi identificativi di Script (tutte le chiavi in una sola volta) su questa pagina: [https://eu.api.ovh.com/createToken/](https://eu.api.ovh.com/createToken/?GET=/sms/&GET=/sms/*/jobs&POST=/sms/*/jobs) (questo URL permette di avere automaticamente le autorizzazioni per gli step descritti in questa guida).
+Crea i tuoi identificativi di Script (tutte le chiavi in una sola volta) su questa pagina: [https://auth.eu.ovhcloud.com/api/createToken](https://auth.eu.ovhcloud.com/api/createToken?GET=/sms/&GET=/sms/*/jobs&POST=/sms/*/jobs) (questo URL permette di avere automaticamente le autorizzazioni per i passaggi descritti in questa guida).
 
 ![creazione di token](images/img_2479.jpg){.thumbnail}
 
@@ -40,9 +40,9 @@ In questo semplice esempio, recuperiamo le autorizzazioni per avere accesso alle
 - GET/sms/\*/jobs
 - POST /sms/\*/jobs
 
-L’asterisco (\*) attiva le chiamate a questi metodi per tutti i tuoi account di SMS. Puoi ugualmente limitare le chiamate a un solo account, se gestisci diversi account SMS sul tuo account OVHcloud, sostituendo «/sms» con «/sms/NOME-ACCOUNT» e «/sms/\*/» con «/sms/NOME-ACCOUNT/».
+L’asterisco (\*) attiva le chiamate a questi metodi per tutti i tuoi account di SMS. Puoi ugualmente limitare le chiamate a un solo account, se gestisci diversi account SMS sul tuo account OVHcloud, sostituendo "/sms" con "/sms/NOME-ACCOUNT" e "/sms/\*/" con "/sms/NOME-ACCOUNT/".
 
-In questo modo recuperai i tuoi identificativi per il tuo script:
+In questo modo recupererai i tuoi identificativi per il tuo script:
 
 - Application Key (identifica la tua applicazione)
 - Application Secret (autentica la tua applicazione)
@@ -52,7 +52,7 @@ In questo modo recuperai i tuoi identificativi per il tuo script:
 
 L’ambiente è pronto, gli identificativi sono creati, ora puoi codificare la tua prima chiamata all’API.
 
-### Step 2: Connessione base all’API: recupero dell’account SMS
+### Passaggio 2: Connessione base all’API: recupero dell’account SMS
 
 A questo punto è possibile verificare se la connessione all’API è buona visualizzando semplicemente il nome del serviceName:
 
@@ -168,7 +168,7 @@ All’avvio di questo script dovresti recuperare l’elenco dei tuoi account SMS
 ["sms-XX0000-1"]
 ```
 
-### 3. Invio del primo SMS
+### Passaggio 3: Invio del primo SMS
 
 Per inviare degli SMS, utilizza il metodo POST jobs: [https://api.ovh.com/console/#/sms/{serviceName}/jobs#POST](https://api.ovh.com/console/#/sms/{serviceName}/jobs#POST)
 

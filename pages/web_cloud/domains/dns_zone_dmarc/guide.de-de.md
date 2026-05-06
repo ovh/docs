@@ -1,7 +1,7 @@
 ---
 title: E-Mail-Sicherheit durch DMARC-Eintrag verbessern
 excerpt: Erfahren Sie hier, wie DMARC funktioniert und für Ihren E-Mail-Dienst eingerichtet wird
-updated: 2023-12-13
+updated: 2026-02-10
 ---
 
 ## Ziel
@@ -19,8 +19,18 @@ Der Eintrag **D**omain-based **M**essage **A**uthentication, **R**eporting, and 
 
 ## Voraussetzungen
 
-- Sie haben über das [OVHcloud Kundencenter](/links/manager) Zugriff auf die Verwaltung des Domainnamens, der Ihrer E-Mail-Lösung zugewiesen ist.
 - Einer der Authentifizierungsmechanismen [SPF](/pages/web_cloud/domains/dns_zone_spf) oder [DKIM](/pages/web_cloud/domains/dns_zone_dkim) muss in der DNS-Zone des Domainnamens des E-Mail-Dienstes konfiguriert werden.
+
+<!-- CP-NAV-START:web-dns-zone -->
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direkter Link:** [DNS-Zone](/links/control-panel/web-dns-zone)
+- **Navigationspfad:** `Web Cloud`{.action} > `DNS-Zone`{.action} > Wählen Sie Ihren Domainnamen aus
+
+---
+<!-- CP-NAV-END:web-dns-zone -->
 
 ## In der praktischen Anwendung
 
@@ -172,7 +182,6 @@ Ergebnis:
 - **adkim=r**: Der vom Domaininhaber angeforderte Alignment-Modus für DKIM ID ist „relaxed“ (flexibler Modus). In diesem Modus muss DKIM eine gültige Signatur bereitstellen, und der Identifier „From“ im Header kann teilweise abgestimmt sein.
 
 - **ri=86400**: Legt das angeforderte Intervall zwischen den aggregierten Berichten in Sekunden fest. In diesem Fall muss ein aggregierter Bericht mindestens alle 86400 Sekunden (einmal täglich) generiert werden.
-
 
 ## Weiterführende Informationen <a name="go-further"></a>
 

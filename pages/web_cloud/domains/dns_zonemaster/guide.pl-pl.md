@@ -1,6 +1,6 @@
 ---
 title: 'Tutorial - Korzystanie z opcji Zonemaster'
-updated: 2024-06-18
+updated: 2026-02-10
 ---
 
 > [!warning]
@@ -12,7 +12,7 @@ updated: 2024-06-18
 
 ## Wprowadzenie
 
-[Zonemaster](https://zonemaster.net/en/run-test) jest narzędziem powstałym w wyniku współpracy między [AFNIC](https://www.afnic.fr/en/) (francuski rejestr) i [The Swedish Internet Foundation](https://internetstiftelsen.se/en/) (szwedzki rejestr). Umożliwia analizowanie konfiguracji DNS (Domain Name System) domeny i identyfikowanie elementów, które mogą zostać ulepszone lub usunięte.
+[Zonemaster](https://zonemaster.net/en/) jest narzędziem powstałym w wyniku współpracy między [AFNIC](https://www.afnic.fr/en/) (francuski rejestr) i [The Swedish Internet Foundation](https://internetstiftelsen.se/en/) (szwedzki rejestr). Umożliwia analizowanie konfiguracji DNS (Domain Name System) nazwy domeny i identyfikowanie elementów, które mogą zostać ulepszone lub usunięte.
 
 > [!primary]
 >
@@ -20,26 +20,26 @@ updated: 2024-06-18
 
 ## Wymagania początkowe
 
-- Posiadanie [domeny](/links/web/domains)
+- Posiadanie [nazwy domeny](/links/web/domains)
 
 ## W praktyce
 
 ### Pole wprowadzania
 
-Narzędzie Zonemaster umożliwia sprawdzenie konfiguracji DNS w Twojej domenie lub przetestowanie strefy DNS na przyszłych serwerach DNS.
+Narzędzie Zonemaster umożliwia sprawdzenie konfiguracji DNS w Twojej nazwie domeny lub przetestowanie strefy DNS na przyszłych serwerach DNS.
 
-Aby sprawdzić aktualną konfigurację domeny, wpisz nazwę domeny, następnie kliknij `Run`{.action}
+Aby sprawdzić aktualną konfigurację nazwy domeny, wpisz nazwę nazwy domeny, następnie kliknij `Run`{.action}
 
-![Zrzut ekranu z formularza Zonemaster. Domena "domain.tld" została zarejestrowana i jest gotowa do przetestowania.](/pages/assets/screens/other/web-tools/zonemaster/run-domain-test.png){.thumbnail}
+![Zrzut ekranu z formularza Zonemaster. Nazwa domeny "domain.tld" została zarejestrowana i jest gotowa do przetestowania.](/pages/assets/screens/other/web-tools/zonemaster/run-domain-test.png){.thumbnail}
 
-Aby sprawdzić konfigurację DNS, która została przygotowana, ale nie została jeszcze zastosowana dla danej domeny, zaznacz kratkę `Options`{.action}, następnie wprowadź następujące informacje:
+Aby sprawdzić konfigurację DNS, która została przygotowana, ale nie została jeszcze zastosowana dla danej nazwy domeny, zaznacz kratkę `Options`{.action}, następnie wprowadź następujące informacje:
 
-- **Nameservers**: wprowadź informacje dotyczące serwera nazwy przypisanego do domeny. Kliknij na `+`{.action}, aby dodać serwer nazw. Wpisanie adresu IP jest opcjonalne.
+- **Nameservers**: wprowadź informacje dotyczące serwera nazwy przypisanego do nazwy domeny. Kliknij na `+`{.action}, aby dodać serwer nazw. Wpisanie adresu IP jest opcjonalne.
 - **DS records**: w ramach ochrony DNSSEC wprowadź elementy rekordu DS. Kliknij na `+`{.action}, aby dodać dodatkowy wpis DS. Jeśli serwery DNS nie używają protokołu DNSSEC, możesz zostawić te pola wolne. W przypadku strefy podpisanej z DNSSEC funkcja ta pozwala na sprawdzenie, czy strefa działa poprawnie z zatwierdzonym resolwerem, z zapisami DS, które mają zostać opublikowane, przed ich opublikowaniem.
 
 Możesz również wymusić weryfikację przy użyciu wybranego protokołu IP poprzez `Disable IPv4` i `Disable IPv6`
 
-> **Przykład**:<br><br> Posiadasz domenę "domain.tld", która aktualnie używa serwerów DNS "dnsXX.ovh.net" i "nsXX.ovh.net". Skonfigurowałeś strefę DNS dla tej domeny na serwerach DNS "dns1.test.tld" i "dns2.test.tld".<br>
+> **Przykład**:<br><br> Jesteś abonentem nazwy domeny "domain.tld", która aktualnie używa serwerów DNS "dnsXX.ovh.net" i "nsXX.ovh.net". Skonfigurowałeś strefę DNS dla tej nazwy domeny na serwerach DNS "dns1.test.tld" i "dns2.test.tld".<br>
 >
 > Przed zmianą serwerów DNS, możesz przeprowadzić zaawansowane wyszukiwanie w polu `Options`{.action}, wprowadzając "dns1.test.tld" i "dns2.test.tld" w rubrykach `Nameservers`.<br>
 > Zonemaster przeprowadzi test tak, jakby korzystał z serwerów "dns1.test.tld" i "dns2.test.tld" na "domain.tld".<br>
@@ -47,8 +47,8 @@ Możesz również wymusić weryfikację przy użyciu wybranego protokołu IP pop
 
 > [!primary]
 >
-> Po wpisaniu nazwy domeny i kliknięciu na przycisk `Fetch NS from parent zone`{.action} i `Fetch DS from parent zone`{.action}, pojawią się serwery DNS przypisane do domeny wraz z informacjami o rekordzie DS (DNSSEC), jeśli domena została skonfigurowana.
-> ![Zrzut ekranu przedstawiający zaawansowane opcje formularza Zonemaster. Przycisk "Fetch NS from parent zone" jest podświetlony, a serwery nazw domeny „domain.tld” są wstępnie wypełnione w sekcji Serwery nazw formularza.](/pages/assets/screens/other/web-tools/zonemaster/fetch-ns-from-parent-zone.png){.thumbnail}
+> Po wpisaniu nazwy nazwy domeny i kliknięciu na przycisk `Fetch NS from parent zone`{.action} i `Fetch DS from parent zone`{.action}, pojawią się serwery DNS przypisane do nazwy domeny wraz z informacjami o rekordzie DS (DNSSEC), jeśli nazwa domeny została skonfigurowana.
+> ![Zrzut ekranu przedstawiający zaawansowane opcje formularza Zonemaster. Przycisk "Fetch NS from parent zone" jest podświetlony, a serwery nazw nazwy domeny „domain.tld” są wstępnie wypełnione w sekcji Serwery nazw formularza.](/pages/assets/screens/other/web-tools/zonemaster/fetch-ns-from-parent-zone.png){.thumbnail}
 
 ### Rezultat
 
@@ -61,7 +61,7 @@ Po zatwierdzeniu formularza wyniki są klasyfikowane według kodu koloru:
 
 Dla każdego testu możesz uzyskać więcej informacji, na przykład, aby zrozumieć błąd w przypadku awarii lub tylko w celach informacyjnych.
 
-![Zrzut ekranu strony wyników Zonemaster dla domeny "domain.tld". Sekcja "Address" jest rozwinięta.](/pages/assets/screens/other/web-tools/zonemaster/domain-analysis.png){.thumbnail}
+![Zrzut ekranu strony wyników Zonemaster dla nazwy domeny "domain.tld". Sekcja "Address" jest rozwinięta.](/pages/assets/screens/other/web-tools/zonemaster/domain-analysis.png){.thumbnail}
 
 ### Przydatne informacje
 
@@ -73,7 +73,7 @@ Jeśli masz dodatkowe pytania dotyczące Zonemaster, sprawdź sekcję [FAQ](http
 
 [Zmiana strefy DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit) .
 
-[Zabezpieczenie domeny przed Cache Poisoning za pomocą DNSSEC](/pages/web_cloud/domains/dns_dnssec).
+[Zabezpieczenie nazwy domeny przed Cache Poisoning za pomocą DNSSEC](/pages/web_cloud/domains/dns_dnssec).
 
 Skontaktuj się z [partnerami OVHcloud](/links/partner), jeśli szukasz zaawansowanych rozwiązań (indeksowanie, rozwój, etc).
 

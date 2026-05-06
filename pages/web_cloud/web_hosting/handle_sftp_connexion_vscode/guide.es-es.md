@@ -1,7 +1,7 @@
 ---
 title: "Gestionar un alojamiento web con Visual Studio Code a través de SFTP"
 excerpt: "Administrar un sitio web en un alojamiento web con Visual Studio Code gracias a una extensión SFTP"
-updated: 2025-10-21
+updated: 2026-03-31
 ---
 
 ## Objetivo
@@ -19,6 +19,17 @@ Si tiene contratado un plan de hosting de OVHcloud, puede acceder a un espacio d
 
 - Tener contratado un plan de hosting de OVHcloud (/links/web/hosting)
 - Instalar [Microsoft Visual Studio Code](https://visualstudio.microsoft.com/#vscode-section) en el equipo
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [Alojamientos](/links/control-panel/web-hosting)
+- **Ruta de navegación:** `Web Cloud`{.action} > `Alojamientos`{.action} > Seleccione su alojamiento web
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## Procedimiento
  
@@ -82,38 +93,87 @@ Este archivo se encuentra en la carpeta .vscode, que a su vez se sitúa en la ra
 
 ### Configurar archivo sftp.json
 
-Antes de trabajar en el proyecto, cárguelo en la carpeta local que creó anteriormente. No obstante, en primer lugar, asegúrese de que el archivo "sftp.json" está correctamente configurado. La información útil puede consultarse en el [área de cliente de OVHcloud](/links/manager). En la sección `Web Cloud`{.action}, haga clic en `Alojamientos`{.action}. Seleccione el alojamiento correspondiente y abra la pestaña `FTP - SSH`{.action}.
-
-![FTP - SSH](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh.png){.thumbnail}
+Antes de trabajar en el proyecto, cárguelo en la carpeta local que creó anteriormente. No obstante, en primer lugar, asegúrese de que el archivo "sftp.json" está correctamente configurado. Consulte nuestra guía "[Conectarse al espacio de almacenamiento FTP de su alojamiento web](/pages/web_cloud/web_hosting/ftp_connection)" para encontrar la información útil.
 
 En el archivo "sftp.json", introduzca los valores para las siguientes entradas:
 
-#### name 
+#### name
 
-Localícelo en las dos ranuras resaltadas en naranja.
+<!-- CP-STEPS-START:find-hosting-name -->
+Haga clic en las fichas siguientes para ver cada una de las **2** etapas.
 
-![hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/hosting_name.png){.thumbnail}
+> [!tabs]
+> **Etapa 1**
+>>
+>> Acceda a la página [Alojamientos](/links/control-panel/web-hosting) y seleccione el alojamiento web correspondiente.
+>>
+>> ![Alojamientos](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Etapa 2**
+>>
+>> Localícelo en las dos ranuras resaltadas en naranja.
+>>
+>> ![hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/hosting_name.png){.thumbnail}
+<!-- CP-STEPS-END:find-hosting-name -->
 
 > [!primary]
 >
-> El valor `name`(nombre) puede personalizarse, por lo que podrá asignarle el que desee. Sin embargo, si configura varios archivos "sftp.json", es preferible tomar como referencia los valores visibles anteriormente por motivos de organización.
->
+> El valor `name` (nombre) puede personalizarse, por lo que podrá asignarle el que desee. Sin embargo, si configura varios archivos "sftp.json", es preferible tomar como referencia los valores visibles anteriormente por motivos de organización.
 
 #### host
 
-En la pestaña `FTP-SSH`{.action}, el nombre de host (`host`) aparece bajo el epígrafe `Servidor FTP y SFTP`{.action}.
+<!-- CP-STEPS-START:find-ftp-host -->
+Haga clic en las fichas siguientes para ver cada una de las **2** etapas.
 
-![hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/hostname.png){.thumbnail}
+> [!tabs]
+> **Etapa 1**
+>>
+>> Acceda a la página [Alojamientos](/links/control-panel/web-hosting) y seleccione el alojamiento web correspondiente.
+>>
+>> ![Alojamientos](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Etapa 2**
+>>
+>> En la pestaña `FTP - SSH`{.action}, el nombre de host (`host`) aparece bajo el epígrafe `Servidor FTP y SFTP`.
+>>
+>> ![hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/hostname.png){.thumbnail}
+<!-- CP-STEPS-END:find-ftp-host -->
 
 #### username
 
-Localice el nombre de usuario (`username`) en la columna `Usuario`{.action} de la tabla.
+<!-- CP-STEPS-START:find-ftp-username -->
+Haga clic en las fichas siguientes para ver cada una de las **2** etapas.
+
+> [!tabs]
+> **Etapa 1**
+>>
+>> Acceda a la página [Alojamientos](/links/control-panel/web-hosting) y seleccione el alojamiento web correspondiente.
+>>
+>> ![Alojamientos](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Etapa 2**
+>>
+>> En la pestaña `FTP - SSH`{.action}, localice el nombre de usuario en la columna `Usuario` de la tabla.
+<!-- CP-STEPS-END:find-ftp-username -->
 
 #### remotePath
 
-Encontrará la ruta remota (`remotePath`) en la entrada `Acceso al directorio de la página principal`{.action}. Sin embargo, si hay varios usuarios configurados, la ruta especificada puede ser diferente. En ese caso, sustituya el nombre de usuario que aparece a continuación de `home/` por el de su elección en la lista `Usuario`{.action} de su alojamiento web.
+<!-- CP-STEPS-START:find-ftp-remote-path -->
+Haga clic en las fichas siguientes para ver cada una de las **2** etapas.
 
-**Ejemplo**: Si su nombre de usuario es "john-smith", obtendrá "home/john-smith"
+> [!tabs]
+> **Etapa 1**
+>>
+>> Acceda a la página [Alojamientos](/links/control-panel/web-hosting) y seleccione el alojamiento web correspondiente.
+>>
+>> ![Alojamientos](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Etapa 2**
+>>
+>> En la pestaña `FTP - SSH`{.action}, encontrará la ruta remota (`remotePath`) en la entrada `Acceso al directorio de la página principal`. Sin embargo, si hay varios usuarios configurados, la ruta especificada puede ser diferente. En ese caso, sustituya el nombre de usuario que aparece a continuación de `home/` por el de su elección en la columna `Usuario` de la tabla.
+>>
+>> **Ejemplo**: Si su nombre de usuario es "john-smith", obtendrá `home/john-smith`.
+<!-- CP-STEPS-END:find-ftp-remote-path -->
 
 Por último, no olvide añadir esta línea en el archivo sftp.json : `"openSsh": true`
 

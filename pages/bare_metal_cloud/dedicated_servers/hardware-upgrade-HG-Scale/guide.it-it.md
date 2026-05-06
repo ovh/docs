@@ -1,6 +1,6 @@
 ---
 title: "Aggiornamento dell'hardware su un server dedicato High Grade o Scale"
-excerpt: "Scopri come richiedere un aggiornamento dell'hardware per le gamme High Grade e SCALE dal tuo Spazio Cliente"
+excerpt: "Richiedi un aggiornamento hardware (RAM, disco, NIC) sul tuo server dedicato High Grade o SCALE tramite lo Spazio Cliente OVHcloud"
 updated: 2024-01-04
 ---
 
@@ -20,13 +20,19 @@ I nostri server High Grade e Scale offrono un'opzione di scalabilità che permet
 ## Prerequisiti
 
 - Un server [High Grade](https://www.ovhcloud.com/it/bare-metal/high-grade/) o [SCALE](https://www.ovhcloud.com/it/bare-metal/scale/)
-- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
+
+<!-- CP-NAV-START:baremetal-dedicated-servers -->
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [Server Dedicati](/links/control-panel/baremetal-dedicated-servers)
+- **Percorso di navigazione:** `Bare Metal Cloud`{.action} > `Server Dedicati`{.action} > Seleziona il tuo server
+
+---
+<!-- CP-NAV-END:baremetal-dedicated-servers -->
 
 ## Procedura
-
-Accedi allo [Spazio Cliente OVHcloud](/links/manager).
-
-Nella sezione `Bare Metal Cloud`{.action}, seleziona il tuo server tra i **Server dedicati**.
 
 ### Aumenta la RAM
 
@@ -84,4 +90,4 @@ Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [p
  
 Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](/links/support).
  
-Contatta la nostra Community di utenti all'indirizzo <https://community.ovh.com/en/>.
+Contatta la nostra [Community di utenti](/links/community).

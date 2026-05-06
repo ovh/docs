@@ -14,7 +14,17 @@ You can use **Single Sign-On** (SSO) to connect to your OVHcloud account. To ena
 
 - Active Directory Federation Services (AD FS) running on your server
 - An [OVHcloud account](/pages/account_and_service_management/account_information/ovhcloud-account-creation)
-- Access to the [OVHcloud Control Panel](/links/manager)
+
+<!-- CP-NAV-START:iam-saml-sso -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [SAML SSO](/links/control-panel/iam-saml-sso)
+- **Navigation path:** `Identity, Security & Operations`{.action} > `Users`{.action} > `SSO connection`{.action}
+
+---
+<!-- CP-NAV-END:iam-saml-sso -->
 
 ## Instructions
 
@@ -121,15 +131,9 @@ With the mapping completed, your AD FS now trusts OVHcloud as a service provider
 
 Adding your AD FS as a trusted identity provider is done in the [OVHcloud Control Panel](/links/manager) where you can provide the identity provider metadata.
 
-On the sidebar, click on `Identity, Security & Operations`{.action} then on `Identities`{.action}.
+Open the [SAML SSO](/links/control-panel/iam-saml-sso) page.
 
-![Access to the IAM menu](images/access_to_the_IAM_menu_01.png){.thumbnail}
-
-Then click the `SSO`{.action} tab and click the `SSO connection`{.action} button.
-
-![Access to the IAM menu](images/access_to_the_IAM_menu_03.png){.thumbnail}
-
-Fill in the XML metadata of your AD FS. The "Group Attribute Name" is optional in this case. Click on `Confirm`{.action}.
+In the `SSO connection`{.action} section, fill in the XML metadata of your AD FS. The "Group Attribute Name" is optional in this case. Click on `Confirm`{.action}.
 
 You can keep local users by ticking the `Keep active OVHcloud users` box.
 

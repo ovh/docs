@@ -45,7 +45,7 @@ Konta Zimbra Pro można skonfigurować na urządzeniu z systemem Android przy u�
   ![Outlook Android](images/outlook-app-android-add01.png){.thumbnail .h-500}
 
 - **Jeśli konto jest już skonfigurowane w aplikacji Outlook**:
-    - Naciśnij kopertę (`✉` {.action}) w lewym górnym rogu ekranu.
+    - Naciśnij kopertę (`✉`{.action}) w lewym górnym rogu ekranu.
     - Następnie naciśnij przycisk `+`{.action} w lewym pionowym pasku.
     - Kliknij `Dodaj konto`{.action}.
 

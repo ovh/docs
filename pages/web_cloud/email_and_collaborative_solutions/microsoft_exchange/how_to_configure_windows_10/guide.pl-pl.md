@@ -12,9 +12,20 @@ Konta Exchange można skonfigurować w różnych kompatybilnych programach poczt
 
 ## Wymagania początkowe
 
-- Wykupienie konta e-mail [Exchange](/links/web/emails)
+- Wykupienie konta e-mail [Exchange](/links/web/emails-exchange)
 - Instalacja aplikacji Poczta na Twoim urządzeniu
 - Dane do logowania do konta e-mail, które chcesz skonfigurować
+
+<!-- CP-NAV-START:web-exchange -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Exchange](/links/control-panel/web-exchange)
+- **Ścieżka nawigacji:** `Web Cloud`{.action} > `Exchange`{.action} > Wybierz platformę
+
+---
+<!-- CP-NAV-END:web-exchange -->
 
 ## W praktyce
 
@@ -38,7 +49,7 @@ Następnie wpisz informacje:
 |Hasło|Wpisz hasło przypisane do tego konta e-mail.|
 |Nazwa użytkownika|Wpisz pełny adres e-mail.|
 |Domena|Pozostaw to pole puste.|
-|Serwer|Wskaż serwer, na którym hostowana jest Twoja usługa Exchange. Możesz znaleźć go w [Panelu klienta](/links/manager) > zakładka `Informacje ogólne`{.action} dotyczące danej usługi Exchange > `Połączenie`{.action}.|
+|Serwer|Wskaż serwer, na którym hostowana jest Twoja usługa Exchange. Kliknij [ten link](/links/control-panel/web-exchange), aby uzyskać dostęp do sekcji `Exchange`{.action}. Nazwa serwera wyświetla się w strefie **Połączenie** w zakładce `Informacje ogólne`{.action}.|
 |Serwer wymaga szyfrowanego połączenia (SSL).|Pozostaw to pole zaznaczone.|
 |Nazwa konta|Wpisz nazwę pozwalającą odróżnić to konto od Twoich pozostałych kont wyświetlających się w aplikacji Poczta.|
 

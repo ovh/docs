@@ -1,6 +1,6 @@
 ---
-title: Konfiguration von Additional IPs im Bridge-Modus auf Ihren virtuellen Maschinen
-excerpt: Erfahren Sie hier, wie Sie den Internet-Zugang für Ihre virtuellen Maschinen konfigurieren
+title: "Additional IPs im Bridge-Modus auf einem Dedicated Server konfigurieren"
+excerpt: "Konfigurieren Sie Ihre virtuellen Maschinen auf einem Dedicated Server für den öffentlichen Internetzugang im Netzwerk-Bridge-Modus."
 updated: 2026-01-06
 ---
 
@@ -34,7 +34,17 @@ Bridged Networking kann verwendet werden, um Ihre virtuellen Maschinen zu konfig
 
 - Sie verfügen über einen [Dedicated Server](/links/bare-metal/bare-metal) mit installiertem Hypervisor (Citrix Xen Server, Proxmox, etc.).
 - Sie verfügen über mindestens eine mit dem Server verbundene [Additional IP](/links/network/additional-ip).
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager) oder die [OVHcloud API](/pages/manage_and_operate/api/first-steps).
+
+<!-- CP-NAV-START:network-public-ip -->
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direkter Link:** [Public IP](/links/control-panel/network-public-ip)
+- **Navigationspfad:** `Network`{.action} > `Öffentliche IP`{.action}
+
+---
+<!-- CP-NAV-END:network-public-ip -->
 
 > [!warning]
 > Diese Funktion kann nur eingeschränkt oder nicht verfügbar sein, falls ein Dedicated Server der [**Eco** Produktlinie](/links/bare-metal/eco-about) eingesetzt wird.
@@ -64,8 +74,6 @@ Die Codebeispiele in den folgenden Anweisungen sind durch Ihre eigenen Werte zu 
 
 > [!warning]
 > Bei einem IP-Block werden die virtuellen MAC-Adressen für jede einzelne IP im Block erstellt.
-
-Verbinden Sie sich mit Ihrem [OVHcloud Kundencenter](/links/manager), klicken Sie im Menü links auf `Network`{.action} und dann auf `Öffentliche IP-Adressen`{.action}.
 
 Anschließend können Sie das Dropdown-Menü unter **Meine öffentlichen IP-Adressen und dazugehörigen Dienste** verwenden und **Alle Additional IP** auswählen, um Ihre Dienste entsprechend zu filtern, oder die gewünschte IP-Adresse direkt in die Suchleiste eingeben.
 
@@ -562,5 +570,11 @@ Pingen Sie nun Ihre Additional IP von einem externen Gerät aus an.
 - Wenn die IP immer noch nicht funktioniert, öffnen Sie bitte ein Support-Ticket über das [Help Center](https://help.ovhcloud.com/csm?id=csm_cases_requests).
 
 ## Weiterführende Informationen
+
+- [Dedicated Server - IP-Aliasing konfigurieren](/pages/bare_metal_cloud/dedicated_servers/network_ipaliasing)
+
+- [IPv6 auf einem Dedicated Server konfigurieren](/pages/bare_metal_cloud/dedicated_servers/network_ipv6)
+
+- [Dedicated Server - Configuring pfSense Network Bridge](/pages/bare_metal_cloud/dedicated_servers/pfSense_bridging)
 
 Treten Sie unserer [User Community](/links/community) bei.

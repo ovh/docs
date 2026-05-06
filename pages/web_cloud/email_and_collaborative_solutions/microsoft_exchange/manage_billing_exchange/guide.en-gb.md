@@ -1,7 +1,7 @@
 ---
 title: 'Managing the billing for Exchange accounts'
 excerpt: 'Find out how to manage the billing for your Exchange service'
-updated: 2025-09-22
+updated: 2026-03-24
 ---
 
 ## Objective
@@ -12,26 +12,34 @@ The Hosted Exchange and Private Exchange services offer flexible management for 
 
 ## Requirements
 
-- access to the [OVHcloud Control Panel](/links/manager).
 - a subscription to an [Exchange](/links/web/emails-hosted-exchange) solution.
 
-## Instructions
+<!-- CP-NAV-START:web-exchange -->
+---
 
-1. Log in to your [OVHcloud Control Panel](/links/manager).
-1. Open the `Web Cloud`{.action} section.
-1. In the `MICROSOFT` section, click `Exchange`{.action}.
-1. Select the service concerned.
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Exchange](/links/control-panel/web-exchange)
+- **Navigation path:** `Web Cloud`{.action} > `Exchange`{.action} > Select your platform
+
+---
+<!-- CP-NAV-END:web-exchange -->
+
+## Instructions
 
 ### Hosted Exchange
 
 #### Ordering additional accounts
 
+<!-- CP-STEPS-START:hosted-exchange-order-accounts -->
 Go to the `Email accounts`{.action} tab, then click on the `Actions`{.action} button in the top left-hand corner. Next, click `Order accounts`{.action}.
 
 ![billing_exchange](images/billing-exchange-00.png){.thumbnail}
+<!-- CP-STEPS-END:hosted-exchange-order-accounts -->
 
-#### Changing the renewal frequency for your accounts <a name="periodicity"></a>
+#### Changing the renewal frequency for your accounts <a name=”periodicity”></a>
 
+<!-- CP-STEPS-START:hosted-exchange-renewal-frequency -->
 In the window for managing your Exchange platform, click on the `Actions`{.action} button in the top right-hand corner, then click `Renewal configuration`{.action}.
 
 ![billing_exchange](images/billing-exchange-01.png){.thumbnail}
@@ -51,14 +59,17 @@ In the example below, you will see the actions you need to take in order to set 
 > In the second step, you will see a summary listing the change that has been applied. Click `Send`{.action} on the bottom left.
 >
 > ![billing_exchange](images/billing-exchange-03.png){.thumbnail}
+<!-- CP-STEPS-END:hosted-exchange-renewal-frequency -->
 
 #### Deleting accounts
 
+<!-- CP-STEPS-START:hosted-exchange-delete-accounts -->
 To delete an account on your Hosted Exchange platform, you will need to cancel it by setting its renewal configuration to **Cancel on expiry**. To do this, refer to the step on [changing the renewal frequency for your accounts](#periodicity).
 
 Once you have cancelled it, the account will be suspended on its expiry date. If you would like to delete the email address hosted by the account before its expiry date, you can reset it.
 
 Go to the `Email accounts`{.action} tab for your platform, then click `...`{.action} next to the account concerned. Finally, click `Reset`{.action}. Once you have reset the account, it will remain empty until its expiry date.
+<!-- CP-STEPS-END:hosted-exchange-delete-accounts -->
 
 ### Private Exchange
 
@@ -68,24 +79,27 @@ Go to the `Email accounts`{.action} tab for your platform, then click `...`{.act
 
 #### Ordering additional accounts
 
+<!-- CP-STEPS-START:private-exchange-order-accounts -->
 Go to the `Email accounts`{.action} tab, then click on the `Actions`{.action} button in the top left-hand corner. Next, click `Add an account`{.action}. The account will be billed for the current month.
 
 ![billing_exchange](images/billing-exchange-06.png){.thumbnail}
+<!-- CP-STEPS-END:private-exchange-order-accounts -->
 
 #### Deleting accounts
 
+<!-- CP-STEPS-START:private-exchange-delete-accounts -->
 > [!warning]
 >
 > To delete an email account on a Private Exchange platform, **it is necessary that it has been created** (attached to a domain name on your Exchange platform). An unconfigured account cannot be deleted.
 
-Log in to your [OVHcloud Control Panel](/links/manager) and select `Web Cloud`{.action} in the top navigation bar. Click `Microsoft`{.action} in the services bar on the left-hand side, then `Exchange`{.action}. Next, select the Exchange service concerned.
-
 In the `Email accounts`{.action} tab, click `...`{.action} to the right of the account concerned, then click `Delete`{.action}. The account will be immediately removed from the platform, and you will not need to cancel it.
 
 ![billing_exchange](images/billing-exchange-07.png){.thumbnail}
+<!-- CP-STEPS-END:private-exchange-delete-accounts -->
 
 ### Cancel the platform
 
+<!-- CP-STEPS-START:cancel-the-platform -->
 Once you have deleted the email accounts, you will need to delete the domain name(s) associated with your Exchange platform before cancelling it. To do this, go to the `Associated domains`{.action} tab. Click the `...`{.action} button on the line for the domain name you want to delete, then click `Delete this domain`{.action}.
 
 ![billing_exchange](images/billing-exchange-del-dom.png){.thumbnail}
@@ -97,8 +111,9 @@ In the window for managing your Exchange platform, click on the `Actions`{.actio
 > [!primary]
 >
 > This action suspends and then deletes all of the accounts on the Exchange platform on their expiry date.
+<!-- CP-STEPS-END:cancel-the-platform -->
 
-# Go further <a name="go-further"></a>
+## Go further <a name="go-further"></a>
 
 For specialised services (SEO, development, etc.), contact [OVHcloud partners](/links/partner).
 

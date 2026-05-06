@@ -1,7 +1,7 @@
 ---
 title: "Configure the DNS of your Domain Name"
 excerpt: "Use the OVHcloud public API to configure the DNS of your domain name"
-updated: 2022-05-05
+updated: 2026-02-10
 ---
 
 <!-- Reminder to put at the beginning of each page -->

@@ -1,6 +1,6 @@
 ---
-title: 'Criar um DNS secundário num servidor dedicado'
-excerpt: 'Saiba como criar um DNS secundário para o seu servidor dedicado OVHcloud'
+title: "Configurar o DNS secundário OVHcloud num servidor dedicado"
+excerpt: "Adicione um servidor DNS secundário para o seu nome de domínio alojado num servidor dedicado OVHcloud para uma maior resiliência DNS"
 updated: 2021-01-08
 ---
 
@@ -18,7 +18,17 @@ Se configurar o seu servidor dedicado como servidor DNS, pode utilizar o DNS sec
 
 - Dispor de um [servidor dedicado](/links/bare-metal/bare-metal).
 - Dispor de um [nome de domínio](/links/web/domains) para o qual tem a gestão administrativa ou técnica.
-- Ter acesso à [Área de Cliente OVHcloud](/links/manager).
+
+<!-- CP-NAV-START:baremetal-dedicated-servers -->
+---
+
+### Acesso à Área de Cliente OVHcloud
+
+- **Ligação direta:** [Servidores dedicados](/links/control-panel/baremetal-dedicated-servers)
+- **Caminho de navegação:** `Bare Metal Cloud`{.action} > `Servidores dedicados`{.action} > Selecione o seu servidor
+
+---
+<!-- CP-NAV-END:baremetal-dedicated-servers -->
 
 > [!warning]
 >
@@ -31,9 +41,7 @@ Se configurar o seu servidor dedicado como servidor DNS, pode utilizar o DNS sec
 
 ### Adicionar um domínio <a name="addingdomain"></a>
 
-Ligue-se à sua [Área de Cliente OVHcloud](/links/manager), aceda à secção `Bare Metal Cloud`{.action} e selecione o seu servidor de `Servidores Dedicados`{.action}.
-
-A seguir, clique no separador `DNS secundário`{.action} e no botão `Adicionar domínio`{.action}.
+Clique no separador `DNS secundário`{.action} e no botão `Adicionar domínio`{.action}.
 
 ![DNS secundário](images/cp-01.png){.thumbnail}
 

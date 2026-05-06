@@ -19,16 +19,24 @@ Un snapshot ne constitue pas pour autant une sauvegarde complète du système.
 
 ## Prérequis
 
-- Avoir accès à votre [espace client OVHcloud](/links/manager).
 - Un [VPS OVHcloud](/links/bare-metal/vps) déjà configuré.
 
 > [!warning]
 > Cette fonctionnalité est actuellement indisponible pour les serveurs privés virtuels dans les [Local Zones](/links/bare-metal/vps-lz).
 >
 
-## En pratique
+<!-- CP-NAV-START:baremetal-vps -->
+---
 
-Connectez-vous à votre [espace client OVHcloud](/links/manager), rendez-vous dans la section `Bare Metal Cloud`{.action} et sélectionnez votre serveur sous la partie `Serveur privés virtuels`{.action}.
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Gestion VPS](/links/control-panel/baremetal-vps)
+- **Pour accéder à vos services :** `Bare Metal Cloud`{.action} > `Serveurs Privés Virtuels`{.action} > Sélectionnez votre VPS
+
+---
+<!-- CP-NAV-END:baremetal-vps -->
+
+## En pratique
 
 ### Étape 1 : souscrire l'option snapshot
 
@@ -37,7 +45,7 @@ Si « Snapshot » est déjà sur l'état « Activé », passez directement à l'
 
 ![snapshotvps](images/snapshot_vps_step1b.png){.thumbnail}
 
-Veuillez prendre connaissance des informations de tarification de cette option, puis cliquez sur `Commander`{.action}. Vous serez orienté dans le processus de commande et recevrez un e-mail de confirmation.
+Prenez connaissance des informations de tarification, puis cliquez sur `Commander`{.action}. Vous serez orienté dans le processus de commande et recevrez un e-mail de confirmation.
 
 Pour résilier l'option, cliquez sur le bouton `...`{.action} à côté de « Snapshot » et choisissez `Résilier`{.action} dans le menu contextuel.
 
@@ -45,7 +53,7 @@ Pour résilier l'option, cliquez sur le bouton `...`{.action} à côté de « Sn
 
 ### Étape 2 : prendre un snapshot
 
-Une fois l'option activée, cliquez sur `...`{.action} à droite de l'option « Snapshot » puis cliquez sur `Prendre un Snapshot`{.action} dans le menu qui apparaît. Vous pouvez renseigner une description qui sera attachée à votre snapshot. La durée de création du snapshot dépend de l'espace de stockage utilisé. Par la suite, l'horodatage de la création s'affichera le cadre « Sauvegarde ».
+Une fois l'option activée, cliquez sur `...`{.action} à droite de l'option « Snapshot » puis cliquez sur `Prendre un Snapshot`{.action} dans le menu qui apparaît. Vous pouvez renseigner une description qui sera attachée à votre snapshot. La durée de création du snapshot dépend de l'espace de stockage utilisé. Par la suite, l'horodatage de la création s'affichera dans le cadre « Sauvegarde ».
 
 ### Étape 3 : supprimer/restaurer un snapshot
 
@@ -85,7 +93,7 @@ La taille du snapshot et la date d'expiration du lien seront également affiché
 
 Notez que le lien de téléchargement expirera après **24 heures**.
 
-La commande de téléchargemment utilise un `curl` au format suivant :
+La commande de téléchargement utilise un `curl` au format suivant :
 
 ```bash
 curl "https://storage.sbg.cloud.ovh.net/v1/AUTH_f5fgh4674dd706f15f6ffgf4z667d3f4g5f05/glance/5ceg3f93-8b49-436b-aefe-4185f9fc3f78?
@@ -114,7 +122,7 @@ temp_url_sig=f508cacda60256d5f211ddddf3f81130e935f0e4&temp_url_expires=167824757
 
 Les snapshots sont des images instantanées de votre système en cours d'exécution (« live snapshots »). Pour garantir la disponibilité de votre système lors de la création du snapshot, l'agent QEMU est utilisé pour préparer le système de fichiers au processus.
 
-Le *qemu-guest-agent* requis n'est pas installé par défaut sur la plupart des distributions. En outre, les restrictions de licence peuvent empêcher OVHcloud de l'inclure dans les images d'OS disponibles. Par conséquent, il est recommandé de vérifier et d'installer l'agent au cas où il ne serait pas activé sur votre VPS. Connectez-vous à votre VPS en SSH et suivez les instructions ci-dessous, selon votre système d'exploitation.
+Le *qemu-guest-agent* requis n'est pas installé par défaut sur la plupart des distributions. En outre, les restrictions de licence peuvent empêcher OVHcloud de l'inclure dans les images d'OS disponibles. Par conséquent, il est recommandé de vérifier et d'installer l'agent s'il n'est pas activé sur votre VPS. Connectez-vous à votre VPS en SSH et suivez les instructions ci-dessous, selon votre système d'exploitation.
 
 ##### **Distributions Debian (Debian, Ubuntu)**
 
@@ -138,7 +146,7 @@ Redémarrez le VPS:
 sudo reboot
 ```
 
-Vérifier le service pour vous assurer qu'il est en cours d'exécution :
+Vérifiez le service pour vous assurer qu'il est en cours d'exécution :
 
 ```bash
 sudo service qemu-guest-agent status
@@ -166,7 +174,7 @@ Redémarrez le VPS:
 sudo reboot
 ```
 
-Vérifier l'agent et vérifiez qu'il est en cours d'exécution :
+Vérifiez que l'agent est en cours d'exécution :
 
 ```bash
 sudo service qemu-guest-agent status

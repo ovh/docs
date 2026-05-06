@@ -1,7 +1,7 @@
 ---
 title: "Suivre et gérer les e-mails automatisés de son hébergement web"
 excerpt: "Découvrez comment suivre et gérer les e-mails automatisés envoyés depuis votre hébergement web OVHcloud"
-updated: 2025-10-21
+updated: 2026-04-01
 ---
 
 ## Objectif
@@ -25,42 +25,69 @@ Les e-mails automatisés sont des messages envoyés via des scripts. Généralem
 ## Prérequis
 
 - Disposer d'une offre d'[hébergement web OVHcloud](/links/web/hosting).
-- Être connecté à votre [espace client OVHcloud](/links/manager).
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Hébergements](/links/control-panel/web-hosting)
+- **Pour accéder à vos services :** `Web Cloud`{.action} > `Hébergements`{.action} > Sélectionnez votre hébergement web
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## En pratique
 
-Le suivi et la gestion des e-mails automatisés de votre hébergement web OVHcloud s'effectuent depuis votre [espace client OVHcloud](/links/manager). Une fois connecté, rendez-vous dans la partie `Web Cloud`{.action}, cliquez sur `Hébergements`{.action}, puis choisissez l'hébergement concerné dans la liste. Cliquez ensuite sur l'onglet `Plus`{.action}, puis sur `Scripts emails`{.action}.
+### Présentation de la partie « Scripts e-mail »
 
-![hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/email-scripts/go-to-email-scripts-tab.png){.thumbnail}
+<!-- CP-STEPS-START:email-scripts-overview -->
+Pour accéder à la partie « Scripts e-mail », cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3** étapes.
 
-La page qui s'affiche alors vous permet de suivre et de gérer les e-mails automatisés envoyés depuis votre [hébergement web OVHcloud](/links/web/hosting).
-
-### Présentation de la partie « Scripts emails »
-
-![hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/email-scripts/tab.png){.thumbnail}
-
-La page affiche plusieurs informations vous permettant de visualiser l'activité des envois d'e-mails automatisés générés depuis vos scripts :
-
-- **État du service** : état actuel du service réalisant les envois d'e-mails automatisés de votre hébergement web :
-    - S'il est vert (*« Activé »* ou *« Force »*), cela signifie que les envois sont opérationnels. 
-    - S'il est rouge (*« Désactivé »*, *« Bounce »* ou *« SPAM »*), les envois ne s'effectuent plus. <br>
-
-    Selon cet état, la gestion des envois sera différente.
-
-- **Rapport d'erreurs à** : recevez-le quotidiennement sur l'adresse e-mail de votre choix. Définissez-la grâce au bouton `Changer le destinataire`{.action}. Ce rapport comporte les e-mails envoyés depuis votre hébergement web revenus en erreur chez OVHcloud. Un bouton `Emails en erreur`{.action} permet également de consulter ces rapports à tout moment sur la droite de la page `Scripts emails`{.action}.
-- **Total des e-mails envoyés** : nombre total des e-mails automatisés envoyés depuis la création de votre hébergement web OVHcloud.
-- **E-mails envoyés aujourd'hui** : nombre total des e-mails automatisés envoyés aujourd'hui uniquement.
-- **Total des e-mails en erreur** : nombre total des e-mails automatisés envoyés depuis la création de votre hébergement web qui sont revenus en erreur chez OVHcloud.
-- **Historique des e-mails envoyés** : graphique représentant l'historique des e-mails envoyés depuis votre hébergement web sur les jours précédents.
-
-Sur la droite, plusieurs boutons permettent de gérer les envois d'e-mails automatisés depuis votre hébergement web. Selon l'état du service, certains peuvent ne pas être disponibles.
-
-- **Purger les e-mails** : efface les e-mails présents dans la file d'attente et débloque l'envoi de mails. Pour des raisons de confidentialité, les e-mails présents dans la file d'attente sont inaccessibles côté OVHcloud. Vous ne pouvez visualiser ces e-mails que s'ils ont été préalablement enregistrés dans la base de données de votre site web avant d'être envoyés.
-- **E-mails en erreur** : permet l'accès aux logs des derniers e-mails tombés en erreur d'envoi. Vous y trouverez les adresses e-mail concernées avec l'erreur associée. Attention, cet historique ne sera pas réinitialisé, même si vous décidez de `Purger les e-mails`{.action} ou de `Débloquer l'envoi`{.action}.
-- **Bloquer l'envoi** : bloque la distribution des envois d'e-mails automatisés de votre hébergement web. Les e-mails générés par vos scripts après le blocage ne seront pas envoyés, mais conservés dans une file d'attente pendant 72 heures maximum.
-- **Débloquer l'envoi** : débloque l'envoi des e-mails automatisés de votre hébergement web. Les e-mails présents dans la file d'attente seront également remis en distribution.
-
-Pour réaliser l'action souhaitée, cliquez sur le bouton correspondant puis sur `Valider`{.action}. Dans certains cas, l'action souhaitée peut nécessiter plusieurs dizaines de minutes pour être pleinement effective.
+> [!tabs]
+> **Étape 1**
+>>
+>> Accédez à la page [Hébergements](/links/control-panel/web-hosting), puis choisissez l'hébergement web concerné.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Étape 2**
+>>
+>> Sur la page qui s'affiche, cliquez sur l'onglet `Plus`{.action} puis cliquez sur `Scripts e-mail`{.action}.
+>>
+>> ![More tab](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/more.png){.thumbnail}
+>>
+>> ![More tab 2](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/more-2.png){.thumbnail}
+>>
+> **Étape 3**
+>>
+>> La page qui s'affiche vous permet de suivre et de gérer les e-mails automatisés envoyés depuis votre [hébergement web OVHcloud](/links/web/hosting).
+>>
+>> ![Page Scripts e-mail de l'hébergement web](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/email-scripts/tab.png){.thumbnail}
+>>
+>> La page affiche plusieurs informations vous permettant de visualiser l'activité des envois d'e-mails automatisés générés depuis vos scripts :
+>>
+>> - **État du service** : état actuel du service réalisant les envois d'e-mails automatisés de votre hébergement web :
+>>     - S'il est vert (*« Activé »* ou *« Force »*), cela signifie que les envois sont opérationnels.
+>>     - S'il est rouge (*« Désactivé »*, *« Bounce »* ou *« SPAM »*), les envois ne s'effectuent plus.
+>>
+>>     Selon cet état, la gestion des envois sera différente.
+>>
+>> - **Rapport d'erreurs à** : recevez-le quotidiennement sur l'adresse e-mail de votre choix. Définissez-la grâce au bouton `Changer le destinataire`{.action}. Ce rapport comporte les e-mails envoyés depuis votre hébergement web revenus en erreur chez OVHcloud. Un bouton `E-mails en erreur`{.action} permet également de consulter ces rapports à tout moment sur la droite de la page `Scripts e-mail`{.action}.
+>> - **Total des e-mails envoyés** : nombre total des e-mails automatisés envoyés depuis la création de votre hébergement web OVHcloud.
+>> - **E-mails envoyés aujourd'hui** : nombre total des e-mails automatisés envoyés aujourd'hui uniquement.
+>> - **Total des e-mails en erreur** : nombre total des e-mails automatisés envoyés depuis la création de votre hébergement web qui sont revenus en erreur chez OVHcloud.
+>> - **Historique des e-mails envoyés** : graphique représentant l'historique des e-mails envoyés depuis votre hébergement web sur les jours précédents.
+>>
+>> Sur la droite, plusieurs boutons permettent de gérer les envois d'e-mails automatisés depuis votre hébergement web. Selon l'état du service, certains peuvent ne pas être disponibles.
+>>
+>> - **Purger les e-mails** : efface les e-mails présents dans la file d'attente et débloque l'envoi de mails. Pour des raisons de confidentialité, les e-mails présents dans la file d'attente sont inaccessibles côté OVHcloud. Vous ne pouvez visualiser ces e-mails que s'ils ont été préalablement enregistrés dans la base de données de votre site web avant d'être envoyés.
+>> - **E-mails en erreur** : permet l'accès aux logs des derniers e-mails tombés en erreur d'envoi. Vous y trouverez les adresses e-mail concernées avec l'erreur associée. Attention, cet historique ne sera pas réinitialisé, même si vous décidez de `Purger les e-mails`{.action} ou de `Débloquer l'envoi`{.action}.
+>> - **Bloquer l'envoi** : bloque la distribution des envois d'e-mails automatisés de votre hébergement web. Les e-mails générés par vos scripts après le blocage ne seront pas envoyés, mais conservés dans une file d'attente pendant 72 heures maximum.
+>> - **Débloquer l'envoi** : débloque l'envoi des e-mails automatisés de votre hébergement web. Les e-mails présents dans la file d'attente seront également remis en distribution.
+>>
+>> Pour réaliser l'action souhaitée, cliquez sur le bouton correspondant puis sur `Valider`{.action}. Dans certains cas, l'action souhaitée peut nécessiter plusieurs dizaines de minutes pour être pleinement effective.
+<!-- CP-STEPS-END:email-scripts-overview -->
 
 > [!primary]
 >
@@ -95,7 +122,7 @@ Si vous recevez correctement le message *The email has been sent successfully!* 
 
 - **Vérifiez la taille totale de votre e-mail** : L'e-mail envoyé ne doit pas dépasser la taille totale de **10 Mo** (encapsulation et en-tête inclus). Le contenu même de votre e-mail ne devra donc pas excéder les **7/8 Mo**.
 
-### Gérer les états « Désactivé », « Bounce » et « SPAM »
+### Gérer les états « Désactivé », « Bounce » et « SPAM » <a name="block-state"></a>
 
 Dans cette partie, retrouvez le détail de chaque état à l'origine du blocage de votre fonction e-mail.
 
@@ -105,9 +132,9 @@ Dans cette partie, retrouvez le détail de chaque état à l'origine du blocage 
 >
 > Vérifiez les points suivants en amont :
 >
-> - La configuration de [l’enregistrement SPF](/pages/web_cloud/domains/dns_zone_spf) dans la zone DNS du nom de domaine.
-> - La configuration de [l’enregistrement DMARC](/pages/web_cloud/domains/dns_zone_dmarc) dans la zone DNS du nom de domaine, **seulement si le serveur de destination l'exige**.
-> - Vérifiez la réputation de l’adresse IP à l’origine de l’envoi ([celle de votre hébergement web](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_ip) dans votre cas), à l'aide d'un outil tel que [MXtoolbox](https://mxtoolbox.com/) ou [Spamhaus](https://check.spamhaus.org/).
+> - La configuration de [l'enregistrement SPF](/pages/web_cloud/domains/dns_zone_spf) dans la zone DNS du nom de domaine.
+> - La configuration de [l'enregistrement DMARC](/pages/web_cloud/domains/dns_zone_dmarc) dans la zone DNS du nom de domaine, **seulement si le serveur de destination l'exige**.
+> - Vérifiez la réputation de l'adresse IP à l'origine de l'envoi ([celle de votre hébergement web](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_ip) dans votre cas), à l'aide d'un outil tel que [MXtoolbox](https://mxtoolbox.com/) ou [Spamhaus](https://check.spamhaus.org/).
 > - L'e-mail ne contient pas d'éléments susceptibles d'être interprétés comme du SPAM. Retrouvez une liste non exhaustive de ces éléments dans la partie « [Cas n°3 : Envoi d'e-mails légitimes considérés comme du SPAM](#elements-list-spam) » de ce guide.
 > - En cas d'absence de blocage du côté d'OVHcloud et si l'e-mail n'a pas été reçu ou rejeté par le destinataire, contactez le destinataire afin qu'il vérifie si l'e-mail n'a pas été bloqué au niveau du serveur de réception.
 
@@ -119,28 +146,54 @@ Cet état survient lorsque :
 - trop d'e-mails sont retournés en erreur ;
 - vous avez vous-même désactivé la fonctionnalité depuis votre [espace client OVHcloud](/links/manager).
 
-Pour débloquer la situation, rendez-vous dans la partie `Web Cloud`{.action}, cliquez sur `Hébergements`{.action}, puis choisissez l'hébergement concerné dans la liste. Cliquez ensuite sur l'onglet `Plus`{.action}, puis sur `Scripts emails`{.action}.
+<!-- CP-STEPS-START:resolve-disabled-status -->
+Pour débloquer la situation, cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3** étapes.
 
-Cliquez enfin sur `Débloquer l'envoi`{.action} puis patientez quelques minutes le temps que le service d'envoi soit de nouveau actif.
+> [!tabs]
+> **Étape 1**
+>>
+>> Accédez à la page [Hébergements](/links/control-panel/web-hosting), puis choisissez l'hébergement web concerné.
+>>
+> **Étape 2**
+>>
+>> Sur la page qui s'affiche, cliquez sur l'onglet `Plus`{.action} puis cliquez sur `Scripts e-mail`{.action}.
+>>
+> **Étape 3**
+>>
+>> Cliquez sur `Débloquer l'envoi`{.action} puis patientez quelques minutes le temps que le service d'envoi soit de nouveau actif.
+<!-- CP-STEPS-END:resolve-disabled-status -->
 
 #### L'état « Bounce »
 
 Cet état survient lorsqu'un certain pourcentage de vos e-mails envoyés automatiquement est revenu en erreur.
 
-Pour débloquer la situation, rendez-vous dans la partie `Web Cloud`{.action}, cliquez sur `Hébergements`{.action}, puis choisissez l'hébergement concerné dans la liste. Cliquez ensuite sur l'onglet `Plus`{.action}, puis sur `Scripts emails`{.action}.
+<!-- CP-STEPS-START:resolve-bounce-status -->
+Pour débloquer la situation, cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3** étapes.
 
-Deux options sont possibles :
-
-- Si vous cliquez sur `Débloquer l'envoi`{.action}, l'état du service passera en *« Force »*. Le ratio **e-mails retournés en erreur / nombre total d'envoi d'e-mails envoyés** autorisé avant un blocage sera doublé. L'envoi sera de nouveau opérationnel quelques minutes après le déblocage.
-- Si vous cliquez sur `Purger les e-mails`{.action}, cela effacera tous les e-mails de la file d'attente et l'état du service repassera en *« Activé »* sans doubler le ratio.
+> [!tabs]
+> **Étape 1**
+>>
+>> Accédez à la page [Hébergements](/links/control-panel/web-hosting), puis choisissez l'hébergement web concerné.
+>>
+> **Étape 2**
+>>
+>> Sur la page qui s'affiche, cliquez sur l'onglet `Plus`{.action} puis cliquez sur `Scripts e-mail`{.action}.
+>>
+> **Étape 3**
+>>
+>> Deux options sont possibles :
+>>
+>> - Si vous cliquez sur `Débloquer l'envoi`{.action}, l'état du service passera en *« Force »*. Le ratio **e-mails retournés en erreur / nombre total d'envoi d'e-mails envoyés** autorisé avant un blocage sera doublé. L'envoi sera de nouveau opérationnel quelques minutes après le déblocage.
+>> - Si vous cliquez sur `Purger les e-mails`{.action}, cela effacera tous les e-mails de la file d'attente et l'état du service repassera en *« Activé »* sans doubler le ratio.
+<!-- CP-STEPS-END:resolve-bounce-status -->
 
 #### L'état « SPAM »
 
-Cet état survient lorsque des mails considérés comme du SPAM ont été émis depuis votre hébergement.
+Cet état survient lorsque des mails considérés comme du spam ont été émis depuis votre hébergement.
 
 Généralement, ce blocage est accompagné par l'envoi d'un e-mail intitulé **« Abus avec votre hébergement domain.tld »** généré automatiquement par nos robots de sécurité :
 
-![hosting](/pages/assets/screens/email-sending-to-customer/webhosting/email-script-disabled.png){.thumbnail}
+![E-mail de notification de blocage des Scripts e-mail](/pages/assets/screens/email-sending-to-customer/webhosting/email-script-disabled.png){.thumbnail}
 
 Trois cas de figure sont possibles par rapport à cette situation :
 
@@ -148,11 +201,22 @@ Trois cas de figure sont possibles par rapport à cette situation :
 
 Pour corriger cette situation, vous devez sécuriser l'ensemble des scripts en capacité d'émettre des e-mails depuis votre hébergement, à l'aide d'un système de type « Captcha ».
 
-Rendez-vous ensuite dans la partie `Web Cloud`{.action}, cliquez sur `Hébergements`{.action} puis choisissez l'hébergement concerné dans la liste. Cliquez ensuite sur l'onglet `Plus`{.action} puis sur `Scripts emails`{.action}.
+<!-- CP-STEPS-START:resolve-spam-case-1 -->
+Rendez-vous ensuite dans la partie « Scripts e-mail » de votre hébergement. Pour cela, cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3** étapes.
 
-Cliquez alors sur `Purger les e-mails`{.action}, cela effacera tous les e-mails de la file d'attente et l'état du service repassera en *« Activé »*.
-
-Une purge est obligatoire dans ce cas pour effacer les SPAM en attente d'envoi.
+> [!tabs]
+> **Étape 1**
+>>
+>> Accédez à la page [Hébergements](/links/control-panel/web-hosting), puis choisissez l'hébergement web concerné.
+>>
+> **Étape 2**
+>>
+>> Sur la page qui s'affiche, cliquez sur l'onglet `Plus`{.action} puis cliquez sur `Scripts e-mail`{.action}.
+>>
+> **Étape 3**
+>>
+>> Cliquez sur `Purger les e-mails`{.action}, cela effacera tous les e-mails de la file d'attente et l'état du service repassera en *« Activé »*. Une purge est obligatoire dans ce cas pour effacer les spam en attente d'envoi.
+<!-- CP-STEPS-END:resolve-spam-case-1 -->
 
 - **Cas n°2 : injection de fichiers malveillants dans votre hébergement** :
 
@@ -166,28 +230,41 @@ Pour corriger cette situation, vous devez effectuer au moins les actions suivant
 Si vous utilisez un CMS, privilégiez l'utilisation de plugin(s)/thème(s) « officiel(s) ».
 Mettez à jour le CMS, les plugins et le thème associés le plus régulièrement possible pour éviter que cela se reproduise.
 
-Une fois votre hébergement sécurisé, rendez-vous dans la partie `Web Cloud`{.action}, cliquez sur `Hébergements`{.action} puis choisissez l'hébergement concerné dans la liste. Cliquez ensuite sur l'onglet `Plus`{.action} puis sur `Scripts emails`{.action}.
+<!-- CP-STEPS-START:resolve-spam-case-2 -->
+Une fois votre hébergement sécurisé, cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3** étapes.
 
-Cliquez alors sur `Purger les e-mails`{.action}, cela effacera tous les e-mails de la file d'attente et l'état du service repassera en *« Activé »*.
+> [!tabs]
+> **Étape 1**
+>>
+>> Accédez à la page [Hébergements](/links/control-panel/web-hosting), puis choisissez l'hébergement web concerné.
+>>
+> **Étape 2**
+>>
+>> Sur la page qui s'affiche, cliquez sur l'onglet `Plus`{.action} puis cliquez sur `Scripts e-mail`{.action}.
+>>
+> **Étape 3**
+>>
+>> Cliquez sur `Purger les e-mails`{.action}, cela effacera tous les e-mails de la file d'attente et l'état du service repassera en *« Activé »*.
+<!-- CP-STEPS-END:resolve-spam-case-2 -->
 
-Une purge est obligatoire dans ce cas pour effacer les SPAM en attente d'envoi.
+Une purge est obligatoire dans ce cas pour effacer les spam en attente d'envoi.
 
 - **Cas n°3 : Envoi d'e-mails légitimes considérés comme du SPAM** : <a name="elements-list-spam"></a>
 
-Si vous êtes à l'origine des e-mails ayant engendré le blocage, vous trouverez ci-dessous quelques exemples d’**usages à éviter** lors de l'envoi d'un e-mail (pour qu'il ne soit pas considéré trop « facilement » comme un SPAM) :
+Si vous êtes à l'origine des e-mails ayant engendré le blocage, vous trouverez ci-dessous quelques exemples d'**usages à éviter** lors de l'envoi d'un e-mail (pour qu'il ne soit pas considéré trop « facilement » comme un spam) :
 
 - 3 mots ou plus en majuscules dans le sujet/objet de l'e-mail.
 - Pas de sujet/texte renseigné dans l'e-mail.
 - L'e-mail contient juste une image de taille supérieure à 1 Mo et quelques mots.
 - Le sujet de l'e-mail commence par : Hi, FREE, BUY, BUYING,....
 - L'e-mail contient plus de 70 % de blanc (abus sur la touche « ESPACE » ou « ENTRÉE » du clavier).
-- La police d’écriture utilisée pour la rédaction de l'e-mail est extrêmement grande.
+- La police d'écriture utilisée pour la rédaction de l'e-mail est extrêmement grande.
 - La couleur d'écriture et la couleur de fond sont identiques pour rédiger l'e-mail.
 - L'adresse IP publique (IP de votre point d'accès internet par exemple) est listée chez des organismes de réputation.
 - L'entête de l'e-mail envoyé ne respecte pas les RFC « e-mails » (normes ou standards e-mails).
 - Le ou les liens présents dans l'e-mail sont incorrects.
 - Une URL dans l'e-mail est non sécurisée (exemple: déclarée en `https://` alors que l'URL n'existe qu'en `http://`)
-- L'e-mail contient des termes à caractère pornographique ou s’en rapprochant.
+- L'e-mail contient des termes à caractère pornographique ou s'en rapprochant.
 - L'e-mail contient un exécutable (EXE, BAT, PIF, XML, XLSX ou des documents avec des « macros »), même s'il est « zippé ».
 
 Si malgré cela l'état du service repasse en état *« SPAM »*, répondez à l'e-mail automatique que vous avez reçu en précisant que vous avez fait le nécessaire.
@@ -200,7 +277,7 @@ Notre service anti-spam analysera la situation et notre support reviendra vers v
 >
 > OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
 > 
-> Nous mettons à votre disposition la partie qui va suivre afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](/links/partner) si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section [« Aller plus loin »](#go-further) de ce guide.
+> Cependant, nous vous recommandons de faire appel à un [prestataire spécialisé](/links/partner) si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section [« Aller plus loin »](#go-further) de ce guide.
 >
 
 Même si nous vous recommandons vivement de privilégier l'utilisation de la fonction « mail() » de PHP, les hébergements mutualisés permettent d'envoyer des e-mails en passant par un script utilisant le protocole SMTP (Simple Mail Transfer Protocol). La taille totale de votre e-mail ne pourra pas dépasser les **10 Mo** (soit **7/8 Mo hors encapsulation**).

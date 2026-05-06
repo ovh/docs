@@ -1,7 +1,7 @@
 ---
 title: 'Migrate email accounts via OVHcloud Mail Migrator'
 excerpt: 'Find out how to migrate your email accounts to OVHcloud using our OVHcloud Mail Migrator tool'
-updated: 2025-11-25
+updated: 2026-03-30
 ---
 
 <style>
@@ -21,7 +21,7 @@ updated: 2025-11-25
 
 ## Requirements
 
-- An external email service or one from OVHcloud, such as a [Zimbra](/links/web/zimbra), [Exchange](/links/web/emails), [E-mail Pro](/links/web/email-pro) offer, or MX Plan (via the MX Plan offer alone or included in a [OVHcloud web hosting offer](/links/web/hosting)).
+- An external email service or one from OVHcloud, such as an [Exchange](/links/web/emails-exchange) offer, or MX Plan (via the MX Plan offer alone or included in an [OVHcloud web hosting offer](/links/web/hosting)).
 - Login details for the email accounts you want to migrate (the source accounts).
 - Login details for the destination email accounts.
 
@@ -71,7 +71,7 @@ On the new page that appears, enter the connection information of the source acc
 
 Before starting your migration, it is important to know the 3 types of accounts that can be migrated and where you can migrate to:
 
-- **OVHcloud**: The `Autodetect` option is recommended if you need to migrate an account hosted on one of the OVHcloud email offers. If you have a large number of OVHcloud email accounts, select one of the following offers: `MX plan`, `Email Pro`, `Exchange` or `Zimbra`. You will be asked to connect to the OVHcloud account associated with the offer concerned by the migration. For more information, see the section "[Migrate via a connection to the OVHcloud customer account](#sso-migration)".
+- **OVHcloud**: The `Autodetect` option is recommended if you need to migrate an account hosted on one of the OVHcloud email offers. If you have a large number of OVHcloud email accounts, select one of the following offers: `MX plan` or `Exchange`. You will be asked to connect to the OVHcloud account associated with the offer concerned by the migration. For more information, see the section "[Migrate via a connection to the OVHcloud customer account](#sso-migration)".
 - **Others**: They refer to email services outside of OVHcloud. You will find a non-exhaustive list of email services supported by OMM. If the type of service of your email account is not listed, use the `IMAP` or `POP` protocols, which are compatible with most email servers.
 - **Importing files**: It is possible to migrate the content of PST, ICS, CSV, and XML rules files via OMM to a destination email account. When this function is selected, simply drag and drop your document into the designated area or browse your files using the `Browse your files`{.action} button.
 
@@ -117,7 +117,7 @@ Once the source and destination account settings are completed, click on:
 
 ### Migrate via a connection to the OVHcloud customer account <a name="sso-migration"></a>
 
-When migrating to or from an OVHcloud account, you can select one of our offers `MX plan`, `Email Pro`, `Exchange` or `Zimbra`.
+When migrating to or from an OVHcloud account, you can select one of our offers `MX plan` or `Exchange`.
 
 ![omm](images/omm-migration-sso-00.png){.thumbnail .w-300}
 
@@ -153,7 +153,7 @@ When you select one of these offers, follow the steps below:
 >>
 >> - You will now be able to select your services and accounts using drop-down menus. This facilitates the search for items and avoids typing errors. It is nevertheless necessary to enter the password associated with the selected email account.
 >>
->> Example with a Zimbra service:
+>> Example with an Exchange service:
 >>
 >> ![omm](images/omm-migration-sso-04.png){.thumbnail .w-600}
 
@@ -196,7 +196,7 @@ Example of migration tracking:
 
 [Manually migrate your email address](/pages/web_cloud/email_and_collaborative_solutions/migrating/manual_email_migration)
 
-[Migrating an MX Plan email account to an Email Pro or Exchange account](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_control_panel)
+[Migrating an MX Plan email address to an Exchange account](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_control_panel)
 
 For specialised services (SEO, development, etc.), contact [OVHcloud partners](/links/partner).
 

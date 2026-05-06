@@ -46,40 +46,18 @@ A volume is a unit of storage with a size and a protocol.
 
 To create a new volume use the following route:
 
-> [!faq]
+> [!api]
 >
-> API:
+> @api {v1} /storage POST /storage/netapp/{serviceName}/share
 >
->> > [!api]
->> >
->> > @api {v1} /storage POST /storage/netapp/{serviceName}/share
->> >
->>
->
-> Parameters:
->
->> > **serviceName** *
->> >
->> >> Service ID
->> >
->> > **NetAppShare** *
->> >
->> >> **description**
->> >> >
->> >> > Volume description
->> >>
->> >> **name**
->> >>
->> >> > Volume name
->> >>
->> >> **protocol** *
->> >>
->> >> > Volume protocol
->> >>
->> >> **size** *
->> >>
->> >> > Volume size in Gigabytes
->
+
+| Parameter | Required | Description |
+|-----------|----------|-------------|
+| `serviceName` | Yes | Service ID |
+| `NetAppShare.description` |  | Volume description |
+| `NetAppShare.name` |  | Volume name |
+| `NetAppShare.protocol` | Yes | Volume protocol |
+| `NetAppShare.size` | Yes | Volume size in Gigabytes |
 
 Choose `NFS` as protocol and a size of `10` Gigabytes for example.
 
@@ -96,36 +74,17 @@ After creating a volume, you need to grant access to it.
 
 To create a new ACL that will allow you to connect to your newly created volume, use the following route:
 
-> [!faq]
+> [!api]
 >
-> API:
+> @api {v1} /storage POST /storage/netapp/{serviceName}/share/{shareId}/acl
 >
->> > [!api]
->> >
->> > @api {v1} /storage POST /storage/netapp/{serviceName}/share/{shareId}/acl
->> >
->>
->
-> Parameters:
->
->> > **serviceName** *
->> >
->> >> Service ID
->> >
->> > **shareId** *
->> >
->> >> Volume ID
->> >
->> > **NetAppShareACLRule** *
->> >
->> >> **accessLevel** *
->> >> >
->> >> > ACL access level. Can be **rw** (read and write) or **ro** (read-only).
->> >>
->> >> **accessTo** *
->> >> >
->> >> > IP address or a range of IP addresses in CIDR notation.
->
+
+| Parameter | Required | Description |
+|-----------|----------|-------------|
+| `serviceName` | Yes | Service ID |
+| `shareId` | Yes | Volume ID |
+| `NetAppShareACLRule.accessLevel` | Yes | ACL access level. Can be **rw** (read and write) or **ro** (read-only). |
+| `NetAppShareACLRule.accessTo` | Yes | IP address or a range of IP addresses in CIDR notation. |
 
 > [!primary]
 >
@@ -137,30 +96,16 @@ To create a new ACL that will allow you to connect to your newly created volume,
 
 Inspect the ACL creation status using the following route:
 
-> [!faq]
+> [!api]
 >
-> API:
+> @api {v1} /storage GET /storage/netapp/{serviceName}/share/{shareId}/acl/{aclRuleId}
 >
->> > [!api]
->> >
->> > @api {v1} /storage GET /storage/netapp/{serviceName}/share/{shareId}/acl/{aclRuleId}
->> >
->>
->
-> Parameters:
->
->> > **serviceName** *
->> >
->> >> Service ID
->> >
->> > **shareId** *
->> >
->> >> Volume ID
->> >
->> > **aclRuleId** *
->> >
->> >> ACL ID
->
+
+| Parameter | Required | Description |
+|-----------|----------|-------------|
+| `serviceName` | Yes | Service ID |
+| `shareId` | Yes | Volume ID |
+| `aclRuleId` | Yes | ACL ID |
 
 Replace `aclRuleId` with the ID of the ACL created for your volume.
 
@@ -171,26 +116,15 @@ Replace `aclRuleId` with the ID of the ACL created for your volume.
 
 Once the ACL is active, retrieve access paths for the volume using the following route:
 
-> [!faq]
+> [!api]
 >
-> API:
+> @api {v1} /storage GET /storage/netapp/{serviceName}/share/{shareId}/accessPath
 >
->> > [!api]
->> >
->> > @api {v1} /storage GET /storage/netapp/{serviceName}/share/{shareId}/accessPath
->> >
->>
->
-> Parameters:
->
->> > **serviceName** *
->> >
->> >> Service ID
->> >
->> > **shareId** *
->> >
->> >> Volume ID
->
+
+| Parameter | Required | Description |
+|-----------|----------|-------------|
+| `serviceName` | Yes | Service ID |
+| `shareId` | Yes | Volume ID |
 
 You will be presented with one or multiple access paths for your volume.
 
@@ -211,26 +145,15 @@ Once mounted, your volume is now usable to store files.
 
 You can remove your volume using the following route:
 
-> [!faq]
+> [!api]
 >
-> API:
+> @api {v1} /storage DELETE /storage/netapp/{serviceName}/share/{shareId}
 >
->> > [!api]
->> >
->> > @api {v1} /storage DELETE /storage/netapp/{serviceName}/share/{shareId}
->> >
->>
->
-> Parameters:
->
->> > **serviceName** *
->> >
->> >> Service ID
->> >
->> > **shareId** *
->> >
->> >> Volume ID
->
+
+| Parameter | Required | Description |
+|-----------|----------|-------------|
+| `serviceName` | Yes | Service ID |
+| `shareId` | Yes | Volume ID |
 
 ## Go further
 

@@ -23,7 +23,18 @@ Quando uma manutenção é programada no seu Hosted Private Cloud, ser-lhe-á en
 
 - Ter recebido um e-mail de notificação de manutenção indicando especificamente que pode "**alterar a data de execução da manutenção**". Caso contrário, a data da manutenção não pode ser alterada.
 - Ser o contacto administrador ou técnico da infraestrutura [VMware on OVHcloud](https://www.ovhcloud.com/pt/enterprise/products/hosted-private-cloud/).
-- Ter acesso à [Área de Cliente OVHcloud](/links/manager) ou à [interface de administração dos seus serviços através da API](/links/api).
+- Ter acesso à [Área de Cliente OVHcloud](/links/control-panel/privatecloud-vmware-vsphere) ou à [interface de administração dos seus serviços através da API](/links/api).
+
+<!-- CP-NAV-START:privatecloud-vmware-vsphere -->
+---
+
+### Acesso à Área de Cliente OVHcloud
+
+- **Link direto:** [VMware vSphere](/links/control-panel/privatecloud-vmware-vsphere)
+- **Caminho de navegação:** `Hosted Private Cloud`{.action} > `Managed VMware vSphere`{.action} > Selecione o seu serviço vSphere
+
+---
+<!-- CP-NAV-END:privatecloud-vmware-vsphere -->
 
 ## Instruções
 
@@ -42,7 +53,7 @@ A seguir, clique no botão `...`{.action} e em `Modificar a data de tratamento`{
 ![alteração horária](images/maintenance-date-edition01.png){.thumbnail}
 
 > [!primary]
-> Se o botão `Modificar a data de tratamento` {.ação} estiver cinzento, isto significa que esta manutenção não pode ser adiada.
+> Se o botão `Modificar a data de tratamento`{.action} estiver cinzento, isto significa que esta manutenção não pode ser adiada.
 
 Selecione uma data no calendário que lhe é apresentado. Apenas as datas não cinzentas podem ser selecionadas.<br>
 Introduza manualmente uma nova hora para esta manutenção ou deixe inalterado o horário inicialmente previsto. Se ultrapassar a última hora autorizada, a última hora de programação possível será automaticamente proposta.<br>

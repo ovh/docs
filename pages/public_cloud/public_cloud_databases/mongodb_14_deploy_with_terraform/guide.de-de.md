@@ -1,7 +1,7 @@
 ---
-title: MongoDB - Tutorial - How to deploy a database with Terraform
+title: Deploy with Terraform for Public Cloud for MongoDB
 excerpt: Find out how to set up an OVHcloud managed MongoDB service via Terraform within a vRack, as well as how to access it from other parts of your infrastructure.
-updated: 2024-04-17
+updated: 2026-05-05
 ---
 
 ## Objective
@@ -10,13 +10,12 @@ The vRack offered by OVHcloud is a private network solution that allows our cust
 
 **This tutorial shows you how to set up an OVHcloud managed MongoDB service via Terraform within a vRack, as well as how to access it from other parts of your infrastructure.**
 
-However, if you would like to know how to do the same with Terraform, but over a public network, read our guide "[Getting started with Public Cloud Databases via Terraform ](/pages/public_cloud/public_cloud_databases/databases_09_order_terraform)".
+However, if you would like to know how to do the same with Terraform, but over a public network, read our guide "[Getting started with Public Cloud Databases](/pages/public_cloud/public_cloud_databases/databases_01_order_control_panel)".
 
 ## Requirements
 
 - **OVHcloud requirements**
     - A [Public Cloud project](/links/public-cloud/public-cloud) in your OVHcloud account
-    - Access to the [OVHcloud Control Panel](/links/manager)
     - A private vRack network that can be accessed from your Public Cloud project (if you don’t have one, please refer to our guide [Configuring vRack for Public Cloud](/pages/public_cloud/public_cloud_network_services/getting-started-07-creating-vrack)).
     - An OpenStack user account in your Public Cloud project (if you don’t have one, please refer to the following guide: [Managing OpenStack users](/pages/public_cloud/public_cloud_cross_functional/create_and_delete_a_user/)).
 - **Terraform requirements**
@@ -282,7 +281,6 @@ Using MongoDB:		6.0.12
 Using Mongosh:		1.6.1
 
 For mongosh info see: https://docs.mongodb.com/mongodb-shell/
-
 
 To improve our products, anonymous usage data is collected and sent to MongoDB periodically (https://www.mongodb.com/legal/privacy-policy).
 You can opt out by running the disableTelemetry() command.

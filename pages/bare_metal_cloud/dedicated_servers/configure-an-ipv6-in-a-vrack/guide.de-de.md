@@ -1,7 +1,7 @@
 ---
-title: Configuring an IPv6 block in a vRack (EN)
-excerpt: This guide will show you how to configure a block of public IPv6 addresses for use with the vRack
-updated: 2025-06-04
+title: "Einen IPv6-Block im vRack auf einem Dedicated Server konfigurieren"
+excerpt: "Konfigurieren Sie einen öffentlichen IPv6-Adressblock für das private OVHcloud vRack-Netzwerk auf Ihrem Dedicated Server."
+updated: 2026-03-13
 ---
 
 <style>
@@ -18,213 +18,277 @@ details[open]>summary::before {
 }
 </style>
 
-## Objective
+## Ziel
 
-The vRack network serves as a global private network bridging various OVHcloud products, enabling the creation of sophisticated network solutions. Beyond facilitating private connections, it also supports routing public IP addresses.
+Das vRack-Netzwerk dient als globales privates Netzwerk, das verschiedene OVHcloud-Produkte verbindet und die Erstellung anspruchsvoller Netzwerklösungen ermöglicht. Über die Erleichterung privater Verbindungen hinaus unterstützt es auch das Routing öffentlicher IP-Adressen.
 
-**This guide focuses on Additional IPv6 address block configuration within a vRack network.**
-
-> [!primary]
->
-> vRack supports both IPv4 and IPv6 public routing with Additional IP address blocks. You can find the instructions on how to configure IPv4 blocks in this guide: [Configuring an IP block in a vRack](/pages/bare_metal_cloud/dedicated_servers/configuring-an-ip-block-in-a-vrack).
->
+**Diese Anleitung beschreibt die Konfiguration von Additional-IPv6-Adressblöcken innerhalb eines vRack-Netzwerks.**
 
 > [!primary]
 >
-> This article is focusing on Additional IP configuration over a vRack network. If you look for guidance on Additional IP configuration together with primary IP (on public network interface), read the following articles:
+> Das vRack unterstützt sowohl IPv4- als auch IPv6-öffentliches Routing mit Additional-IP-Adressblöcken. Die Anleitung zur Konfiguration von IPv4-Blöcken finden Sie hier: [Einen IP-Block im vRack konfigurieren](/pages/bare_metal_cloud/dedicated_servers/configuring-an-ip-block-in-a-vrack).
+>
+
+> [!primary]
+>
+> Dieser Artikel behandelt die Additional-IP-Konfiguration über ein vRack-Netzwerk. Wenn Sie Informationen zur Additional-IP-Konfiguration zusammen mit einer primären IP (auf dem öffentlichen Netzwerkinterface) suchen, lesen Sie die folgenden Anleitungen:
 >
 > - IPv4:
->     - [Configuring IP aliasing on dedicated servers](/pages/bare_metal_cloud/dedicated_servers/network_ipaliasing).
->     - [Configuring IP aliasing on a VPS](/pages/bare_metal_cloud/virtual_private_servers/configuring-ip-aliasing).
+>     - [IP-Aliasing auf Dedicated Servern konfigurieren](/pages/bare_metal_cloud/dedicated_servers/network_ipaliasing).
+>     - [IP-Aliasing auf einem VPS konfigurieren](/pages/bare_metal_cloud/virtual_private_servers/configuring-ip-aliasing).
 > - IPv6:
->     - [Configuring IPv6 on dedicated servers](/pages/bare_metal_cloud/dedicated_servers/network_ipv6).
->     - [Configuring IPv6 on a VPS](/pages/bare_metal_cloud/virtual_private_servers/configure-ipv6).
->     - [Configuring IPv6 on a Public Cloud instance](/pages/public_cloud/public_cloud_network_services/configuration-02-how-to-configure-ipv6).
+>     - [IPv6 auf Dedicated Servern konfigurieren](/pages/bare_metal_cloud/dedicated_servers/network_ipv6).
+>     - [IPv6 auf einem VPS konfigurieren](/pages/bare_metal_cloud/virtual_private_servers/configure-ipv6).
+>     - [IPv6 auf einer Public-Cloud-Instanz konfigurieren](/pages/public_cloud/public_cloud_network_services/configuration-02-how-to-configure-ipv6).
 >
 
-## Introduction
+## Einleitung
 
-IPv6 revolutionizes networking within OVHcloud's vRack by addressing IPv4's limitations and introducing features for the modern internet. Its rollout is a direct response to the need for more extensive, secure, and sophisticated internet architectures. Here are the key benefits of integrating IPv6 with vRack:
+IPv6 revolutioniert die Vernetzung innerhalb des OVHcloud vRack, indem es die Einschränkungen von IPv4 überwindet und Funktionen für das moderne Internet einführt. Die Einführung ist eine direkte Reaktion auf den Bedarf an umfangreicheren, sichereren und anspruchsvolleren Internet-Architekturen. Dies sind die wichtigsten Vorteile der IPv6-Integration mit dem vRack:
 
-- **Flexibility for Advanced Networking**: IPv6 significantly increases the address space, providing the flexibility needed to scale infrastructure, manage failover scenarios and support larger solutions. This ensures that networks can grow and adapt without the space constraints of IPv4.
+- **Flexibilität für anspruchsvolle Netzwerke**: IPv6 vergrößert den Adressraum erheblich und bietet die nötige Flexibilität zum Skalieren der Infrastruktur, zur Verwaltung von Failover-Szenarien und zur Unterstützung größerer Lösungen. Dadurch können Netzwerke ohne die Adressierungsbeschränkungen von IPv4 wachsen und sich anpassen.
 
-- **Hierarchical Routing and Segmentation**: IPv6 enables efficient hierarchical routing and logical infrastructure segmentation. This improves network manageability and security, ideal for reselling VMs with dedicated subnets or organising infrastructure into distinct segments.
+- **Hierarchisches Routing und Segmentierung**: IPv6 ermöglicht effizientes hierarchisches Routing und logische Infrastruktursegmentierung. Dies verbessert die Verwaltbarkeit und Sicherheit des Netzwerks - ideal für den Wiederverkauf von VMs mit dedizierten Subnetzen oder die Aufteilung der Infrastruktur in distinct Segmente.
 
-- **Low latency**: Native, end-to-end IPv6 connectivity can be an enabler for latency-sensitive services like media streaming, as many recent provider networks are built IPv6-native. In such networks, using IPv4 services brings additional latency (and costs).
+- **Niedrige Latenz**: Native End-to-End-IPv6-Konnektivität kann als Enabler für latenzempfindliche Dienste wie Media-Streaming dienen, da viele neuere Provider-Netzwerke nativ mit IPv6 aufgebaut sind. In solchen Netzwerken bringt die Nutzung von IPv4-Diensten zusätzliche Latenz (und Kosten) mit sich.
 
-By leveraging IPv6 within vRack, OVHcloud users can enjoy a more secure, efficient, and scalable network environment, ready to meet the demands of modern internet usage.
+Durch die Nutzung von IPv6 innerhalb des vRack können OVHcloud-Nutzer eine sicherere, effizientere und skalierbarere Netzwerkumgebung genießen, die den Anforderungen der modernen Internetnutzung gerecht wird.
 
+## Voraussetzungen
 
-## Requirements
+- Sie verfügen über einen aktiven [vRack](/links/network/vrack)-Dienst in Ihrem Account.
+- Sie verfügen über einen [vRack-kompatiblen Server](/links/network/vrack), der mit Ihrem vRack-Netzwerk verbunden ist.
 
-- A [vRack](/links/network/vrack) service activated in your account
-- A [vRack compatible server](/links/network/vrack) attached to your vRack network
-- Access to the [OVHcloud Control Panel](/links/manager)
+<!-- CP-NAV-START:network-vrack -->
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direkter Link:** [vRack](/links/control-panel/network-vrack)
+- **Navigationspfad:** `Network`{.action} > `Privates vRack Netzwerk`{.action}
+
+---
+<!-- CP-NAV-END:network-vrack -->
 
 > [!warning]
-> This feature might be unavailable or limited on servers of the [**Eco** product line](/links/bare-metal/eco-about).
+> Diese Funktion kann auf Servern der [**Eco**-Produktlinie](/links/bare-metal/eco-about) eingeschränkt oder nicht verfügbar sein.
 >
-> Please visit our [comparison page](/links/bare-metal/eco-compare) for more information.
+> Weitere Informationen finden Sie auf unserer [Vergleichsseite](/links/bare-metal/eco-compare).
 
-## Instructions
+## In der praktischen Anwendung
 
-### Obtaining a new Additional IPv6 block
+### Einen neuen Additional-IPv6-Block anfordern
 
-While requesting a new Additional IPv6 block, it's important to note that the allocation is regional. This means the IPv6 block you receive will be tied to a specific region, defining where public traffic enters your vRack network (thus, where the gateway is located). 
+Beim Anfordern eines neuen Additional-IPv6-Blocks ist zu beachten, dass die Zuteilung regional erfolgt. Das bedeutet, dass der erhaltene IPv6-Block an eine bestimmte Region gebunden ist, die festlegt, wo der öffentliche Datenverkehr in Ihr vRack-Netzwerk eintritt (also wo sich das Gateway befindet).
 
-/// details | Request a new Additional IPv6 block
+/// details | Einen neuen Additional-IPv6-Block anfordern
 
-You can order your new additional IPv6 block [here](https://www.ovh.com/manager/#/dedicated/ip/agoraOrder/ipv6?catalogName=ip).
+Sie können Ihren neuen zusätzlichen IPv6-Block [hier](https://www.ovh.com/manager/#/dedicated/ip/agoraOrder/ipv6?catalogName=ip) bestellen.
 
-![configuration page](images/500.png){.thumbnail}
+![Konfigurationsseite](images/500.png){.thumbnail}
 
-Next you need to follow the step-by-step instructions.
+Folgen Sie anschließend den schrittweisen Anweisungen.
 
-Your new Additional IPv6 will then be available on your vRack configuration page.
+Ihr neues Additional IPv6 ist dann auf der Konfigurationsseite Ihres vRack verfügbar.
 
 ///
 
-### Configuring IPv6 in a vRack (basic mode)
+### IPv6 in einem vRack konfigurieren (Basismodus)
 
-In this section we will present basic IPv6 setup for your vRack connected hosts.
+In diesem Abschnitt stellen wir die grundlegende IPv6-Einrichtung für Ihre mit dem vRack verbundenen Hosts vor.
 
-![Configuring IPv6 in a vRack](images/20240418-03.png){.thumbnail}
+![IPv6 in einem vRack konfigurieren](images/20240418-03.png){.thumbnail}
 
-The example above shows two hosts with their vRack-side interfaces configured with IPv6 public addresses. One host is configured manually, while the other has an IP address assigned automatically using SLAAC. All IP addresses belong to the first /64 subnet from a given public /56 Additional IPv6 block. Both leverage the vRack interface for public IPv6 connectivity.
+Das obige Beispiel zeigt zwei Hosts, deren vRack-seitige Interfaces mit öffentlichen IPv6-Adressen konfiguriert sind. Ein Host ist manuell konfiguriert, während dem anderen eine IP-Adresse automatisch über SLAAC zugewiesen wird. Alle IP-Adressen gehören zum ersten /64-Subnetz aus einem gegebenen öffentlichen /56-Additional-IPv6-Block. Beide nutzen das vRack-Interface für die öffentliche IPv6-Konnektivität.
 
-The default gateway for the first /64 subnet (bridged one) is the first address from the /56 block. In this example it is `2001:41d0:abcd:ef00::1`. This is distributed via SLAAC but must be manually configured (as a default route) if SLAAC is disabled. See the **Static IP configuration** section below.
+Das Standard-Gateway für das erste /64-Subnetz (das gebrückte) ist die erste Adresse aus dem /56-Block. In diesem Beispiel ist es `2001:41d0:abcd:ef00::1`. Dies wird über SLAAC verteilt, muss aber manuell konfiguriert werden (als Standard-Route), wenn SLAAC deaktiviert ist. Weitere Informationen finden Sie im Abschnitt **Statische IP-Konfiguration** weiter unten.
 
-/// details | Via the OVHcloud Control Panel
+/// details | Über das OVHcloud Kundencenter
 
-- Open `Network`{.action} in the left-hand sidebar.
-- Open `vRack private network`{.action}.
-- Select the vRack concerned.
+![vRack-Verwaltung](images/700.png){.thumbnail}
 
-![vRack management](images/700.png){.thumbnail}
+Auf der linken Seite sind die verfügbaren Optionen (konfigurierbare Dienste) aufgelistet.
 
-On the left side, the possible options (eligible services to be configured) are listed.
+Auf der rechten Seite sehen Sie, was bereits mit Ihrem vRack konfiguriert ist.
 
-On the right you see what is already configured with your vRack.
+Wählen Sie Ihr neues Additional IPv6 aus und fügen Sie es Ihrem vRack hinzu.
 
-Select your new Additional IPv6 and add it to your vRack.
+![vRack-Auswahl](images/701.png){.thumbnail}
 
-![vRack selection](images/701.png){.thumbnail}
+Ihr neues Additional IPv6 ist nun Ihrem vRack hinzugefügt.
 
-You now have your new Additional IPv6 added to your vRack.
+### Statische IP-Konfiguration
 
-### Static IP configuration
+Sobald der Additional-IPv6-/56-Block einem vRack-Netzwerk zugewiesen ist, wird das erste /64-Subnetz damit gebrückt.
 
-Once the Additional IPv6 /56 block is attributed to a vRack network, there is still the first /64 subnet that is bridged with it.
+Das bedeutet, dass Sie diese IPs problemlos auf Ihren Hosts mit statischer IP-Konfiguration auf vRack-Interfaces verwenden können (einen Konfigurationsbeispiel auf der Host-Seite finden Sie im nächsten Abschnitt).
 
-This means you can easily use such IPs on your hosts with static IP configuration on vRack interfaces (see the next section for a host-side configuration example).
+### Automatische IP-Konfiguration (SLAAC)
 
-### Automatic IP configuration (SLAAC)
+Um die IP-Adressierung in Ihrem Netzwerk zu vereinfachen, können Sie SLAAC verwenden. Es kann nur pro gebrücktem Subnetz aktiviert werden und kann für das erste /64 Ihres Blocks (dieses ist immer gebrückt) jederzeit mit diesem Regler aktiviert werden:
 
-To simplify IP addressing inside your network, you may want to use SLAAC. It can be enabled per-bridged-subnet only and can be enabled for the first /64 of your block (this one is always bridged) at any time using this slider button:
+![SLAAC aktivieren](images/702.png){.thumbnail}
 
-![enabling SLAAC](images/702.png){.thumbnail}
-
-Don't forget to configure SLAAC on your host machine.
+Vergessen Sie nicht, SLAAC auf Ihrem Host-Rechner zu konfigurieren.
 
 ///
 
 
-/// details | Via the APIv6 (alternative way)
+/// details | Über die APIv6 (alternativer Weg)
 
-### Attributing an Additional IPv6 to a vRack
+### Einem vRack ein Additional IPv6 zuweisen
 
-When you request an additional IPv6, it is automatically assigned to your vRack.
+Wenn Sie ein zusätzliches IPv6 anfordern, wird es automatisch Ihrem vRack zugewiesen.
 
-If you removed this new Additional IPv6 from your vRack, you can assign it again using this POST method:
+Wenn Sie dieses neue Additional IPv6 aus Ihrem vRack entfernt haben, können Sie es mit dieser POST-Methode erneut zuweisen:
 
 > [!api]
 >
 > @api {v1} /vrack POST /vrack/{serviceName}/ipv6
 >
 
-As in the example below:
+Wie im folgenden Beispiel:
 
 ![api post add block](images/post-ipv6.png){.thumbnail}
 
-Use the following call to verify the IPv6 has been assigned:
+Verwenden Sie den folgenden Aufruf, um zu überprüfen, ob das IPv6 zugewiesen wurde:
 
 > [!api]
 >
 > @api {v1} /vrack GET /vrack/{serviceName}/ipv6/{ipv6}
 >
 
-As in the example below:
+Wie im folgenden Beispiel:
 
 ![GET ipv6 call](images/20240418-04.png){.thumbnail}
 
-Now, we see our block configured with a vRack. The next step is to configure the host or VMs.
+Jetzt sehen wir unseren Block mit einem vRack konfiguriert. Der nächste Schritt ist die Konfiguration des Hosts oder der VMs.
 
-### Static IP configuration
+### Statische IP-Konfiguration
 
-Once the Additional IPv6 /56 block is attributed to a vRack network, there is still the first /64 subnet that is bridged with it. This means you can easily use such IPs on your hosts.
+Sobald der Additional-IPv6-/56-Block einem vRack-Netzwerk zugewiesen ist, wird das erste /64-Subnetz damit gebrückt. Das bedeutet, dass Sie diese IPs problemlos auf Ihren Hosts verwenden können.
 
-Let's check exactly which subnet is bridged:
+Überprüfen wir, welches Subnetz gebrückt ist:
 
 > [!api]
 >
 > @api {v1} /vrack GET /vrack/{serviceName}/ipv6/{ipv6}/bridgedSubrange
 >
 
-As in the example below:
+Wie im folgenden Beispiel:
 
-![GET subrange bridged into your vRack](images/20240418-05.png){.thumbnail}
+![API-Antwort mit Bridge-Subbereichen im vRack](images/20240418-05.png){.thumbnail}
 
-To get more details, use this call:
+Für weitere Details verwenden Sie diesen Aufruf:
 
 > [!api]
 >
 > @api {v1} /vrack GET /vrack/{serviceName}/ipv6/{ipv6}/bridgedSubrange/{bridgedSubrange}
 >
 
-As in the example below:
+Wie im folgenden Beispiel:
 
-![GET subrange bridged into your vRack](images/20240418-06.png){.thumbnail}
+![API-Antwort mit Bridge-Subbereichsdetails und SLAAC-Status](images/20240418-06.png){.thumbnail}
 
-Notice that IP autoconfiguration (SLAAC) is turned off by default.
+Beachten Sie, dass die automatische IP-Konfiguration (SLAAC) standardmäßig deaktiviert ist.
 
-### Automatic IP configuration (SLAAC)
+### Automatische IP-Konfiguration (SLAAC)
 
-To simplify IP addressing inside your network, you may want to use SLAAC. It can be enabled per-bridged-subnet only and can be enabled with this PUT method:
+Um die IP-Adressierung in Ihrem Netzwerk zu vereinfachen, können Sie SLAAC verwenden. Es kann nur pro gebrücktem Subnetz aktiviert werden und kann mit dieser PUT-Methode aktiviert werden:
 
 > [!api]
 >
 > @api {v1} /vrack PUT /vrack/{serviceName}/ipv6/{ipv6}/bridgedSubrange/{bridgedSubrange}
 >
 
-As in the example below:
+Wie im folgenden Beispiel:
 
 ![API call POST enable SLAAC](images/20240418-07.png){.thumbnail}
 
-Don't forget to configure SLAAC on your host machine.
+Vergessen Sie nicht, SLAAC auf Ihrem Host-Rechner zu konfigurieren.
 
 ///
 
-#### Host-side commands
+### Öffentliche IP-Bandbreite im vRack verwalten
 
-/// details | Static IP configuration
+Standardmäßig profitieren Additional-IP-Blöcke, die über ein vRack geroutet werden, von einer öffentlichen Standard-Bandbreite von 5 Gbps in Europa/Kanada/USA und 100 Mbps in APAC-Regionen. Eine detaillierte Übersicht der verfügbaren Optionen finden Sie in den öffentlichen Routing-Optionen auf unserer [vRack-Produktseite](/links/network/vrack).
 
-In a basic configuration, you may want to setup an IP address and routing manually. This is also the suggested way when your machine acts as a router (see the [configuring routed subnet](#routedmode) section) and has ipv6.forwarding mode enabled.
+Da die Anforderungen an die Infrastruktur wachsen, benötigen Nutzer möglicherweise mehr Bandbreite zur Unterstützung öffentlicher Dienste mit hohem Datenverkehr. OVHcloud bietet hierfür kostenpflichtige Bandbreitenoptionen an. Beachten Sie, dass Bandbreitenoptionen **pro vRack und pro Region** angewendet werden. Da Additional-IP-Adressen an eine Region gebunden sind, wirkt sich jede Bandbreitenänderung auf alle IP-Adressen (sowohl IPv4 als auch IPv6) aus, die in der betreffenden Region zu dem spezifischen vRack geroutet werden.
 
-First, let's add an IP address on the vRack interface (in our example "eth1"):
+/// details | Beim Bestellen einer Additional IP
+
+#### Öffentliche Bandbreite während der Bestellung wählen
+
+Die Standard-Bandbreite kann beim Bestellen eines neuen Additional-IP-Blocks mit einem vRack-Netzwerk als Backend geändert werden.
+
+Um einen neuen Additional-IPv6-Block zu bestellen:
+
+- Melden Sie sich im [OVHcloud Kundencenter](/links/manager) an.
+- Öffnen Sie den Bereich `Network`{.action} in der linken Seitenleiste.
+- Wählen Sie `Öffentliche IP-Adressen`{.action}.
+- Klicken Sie auf die Schaltfläche `IPs bestellen`{.action} oben auf der Seite.
+- Wählen Sie die IP-Version und dann das vRack, mit dem Ihr Additional IP verbunden werden soll.
+- Wählen Sie die Region für Ihr Additional IP.
+- Wählen Sie die öffentliche Bandbreite, die Sie für Ihr vRack in dieser Region anwenden möchten.
+- Füllen Sie die anderen Optionen nach Bedarf aus und schließen Sie die Bestellung ab.
+
+///
+
+/// details | Über die vRack-Verwaltungsseite
+
+#### Öffentliche vRack-Bandbreite auf der Verwaltungsseite ändern
+
+Für Additional-IP-Blöcke, die bereits mit einem vRack verbunden sind, kann die Bandbreite direkt über die Dienstkonfigurationsseite verwaltet werden.
+
+Um auf die Verwaltungsoberfläche zuzugreifen:
+
+- Öffnen Sie `Network`{.action} in der linken Seitenleiste Ihres Kundencenters.
+- Wählen Sie `Privates vRack-Netzwerk`{.action}.
+- Klicken Sie in der Spalte "Öffentliche IP und Bandbreite" auf die Schaltfläche `Verwalten`{.action} für das entsprechende vRack.
+
+Die Verwaltungsseite ist in zwei Registerkarten unterteilt:
+
+- **Alle verbundenen Dienste**: Leitet derzeit auf die klassische vRack-Verwaltungsseite weiter. Demnächst werden hier alle mit dem vRack verbundenen Produkte (Server, Cloud-Projekte usw.) übersichtlich aufgelistet.
+- **Öffentliches IP-Routing**: Verwaltet die öffentlichen IP-Routing-Optionen Ihres vRack, einschließlich der Bandbreite.
+
+Um die öffentliche Bandbreite zu ändern:
+
+- Wechseln Sie zur Registerkarte `Öffentliches IP-Routing`{.action}.
+- Die Oberfläche zeigt individuelle Verwaltungsfenster für jede mit dem vRack verbundene Region (z. B. `eu-west-par`) mit allen in dieser Region zugeordneten IP-Adressen.
+- Klicken Sie im Fenster der betreffenden Region auf `Bandbreite ändern`{.action}.
+- Wählen Sie die gewünschte Bandbreitenoption im rechten Bereich aus und klicken Sie auf `Zur Bestellung`{.action}, um die Bestellung zu bestätigen.
+- Nach der Zahlung ist die ausgewählte Bandbreite nach einigen Minuten für Ihr vRack in der gewählten Region verfügbar.
+
+> [!primary]
+>
+> Die Gebühren für den ersten Monat werden anteilig für die verbleibenden Tage berechnet. Der volle Tarif gilt ab dem nächsten Abrechnungszyklus.
+>
+
+Das ausgewählte Bandbreiten-Upgrade wird auf alle IP-Adressen in dieser Region für das gewählte vRack angewendet.
+
+///
+
+#### Host-seitige Befehle
+
+/// details | Statische IP-Konfiguration
+
+In einer Basiskonfiguration möchten Sie möglicherweise eine IP-Adresse und das Routing manuell einrichten. Dies ist auch der empfohlene Weg, wenn Ihr Rechner als Router fungiert (siehe Abschnitt [Geroutetes Subnetz konfigurieren](#routedmode)) und der Modus ipv6.forwarding aktiviert ist.
+
+Fügen wir zunächst eine IP-Adresse auf dem vRack-Interface (in unserem Beispiel "eth1") hinzu:
 
 ```bash
 $ sudo ip address add 2001:41d0:abcd:ef00::2/64 dev eth1
 ```
 
-Please note that the first IP address in a block, `2001:41d0:abcd:ef00::1/64` is the gateway IP address and must not be used for host addressing.
+Bitte beachten Sie, dass die erste IP-Adresse in einem Block, `2001:41d0:abcd:ef00::1/64`, die Gateway-IP-Adresse ist und nicht für die Host-Adressierung verwendet werden darf.
 
-Optionally, if you want to use the vRack interface as the main one for IPv6 traffic, the default route can be configured the following way:
+Optional, wenn Sie das vRack-Interface als Hauptinterface für IPv6-Datenverkehr verwenden möchten, kann die Standard-Route folgendermaßen konfiguriert werden:
 
 ```bash
 $ sudo ip -6 route add default via 2001:41d0:abcd:ef00::1/64 dev eth1
 ```
 
-Finally, bring up the interface (and verify the configured IP on it):
+Aktivieren Sie abschließend das Interface (und überprüfen Sie die konfigurierte IP):
 
 ```bash
 $ sudo ip link set up dev eth1
@@ -235,19 +299,19 @@ $ ip -6 addr list dev eth1
 
 ///
 
-/// details | Automatic IP configuration (SLAAC)
+/// details | Automatische IP-Konfiguration (SLAAC)
 
-To use automatic configuration, please ensure you have configured your interface as follows:
+Um die automatische Konfiguration zu nutzen, stellen Sie sicher, dass Sie Ihr Interface wie folgt konfiguriert haben:
 
-First, let's allow our host to accept Router Advertisements (for autoconfiguration) on the vRack interface (in our example "eth1"):
+Erlauben wir zunächst unserem Host, Router-Ankündigungen (für die automatische Konfiguration) auf dem vRack-Interface (in unserem Beispiel "eth1") zu akzeptieren:
 
 ```bash
 $ sudo sysctl -w net.ipv6.conf.eth1.accept_ra=1
 ```
 
-Important to note is that this setting will not work if ipv6.forwarding is enabled in your system. In such case please refer to <a href="#host-side-configuration">[Automatic IP configuration for routed subnet](#host-side) for more details.
+Beachten Sie, dass diese Einstellung nicht funktioniert, wenn ipv6.forwarding in Ihrem System aktiviert ist. Lesen Sie in diesem Fall die [Automatische IP-Konfiguration für geroutetes Subnetz](#host-side) für weitere Details.
 
-Then, simply bring up the interface:
+Aktivieren Sie dann einfach das Interface:
 
 ```bash
 $ sudo ip link set up dev eth1
@@ -257,15 +321,15 @@ $ ip -6 addr list dev eth1
        valid_lft 2322122sec preferred_lft 334922sec
 ```
 
-After a moment (the configuration must propagate), specific IPv6 address (with the flags <i>global</i> and <i>dynamic</i>) should be visible on the interface.
+Nach einem Moment (die Konfiguration muss sich propagieren) sollte eine spezifische IPv6-Adresse (mit den Flags *global* und *dynamic*) auf dem Interface sichtbar sein.
 
 ///
 
-#### Setup verification
+#### Einrichtungsüberprüfung
 
-/// details | Local
+/// details | Lokal
 
-The most basic test is to ping a local IP address on a host:
+Der grundlegendste Test besteht darin, eine lokale IP-Adresse auf einem Host anzupingen:
 
 ```bash
 debian@host:~$ ping 2001:41d0:900:2100:fe34:97ff:feb0:c166
@@ -278,7 +342,7 @@ PING 2001:41d0:900:2100:fe34:97ff:feb0:c166(2001:41d0:900:2100:fe34:97ff:feb0:c1
 
 /// details | Remote
 
-Next, let's verify the connectivity from remote:
+Überprüfen wir nun die Konnektivität von einem Remote-Host:
 
 ```bash
 ubuntu@remote-test:~$ ping 2001:41d0:900:2100:fe34:97ff:feb0:c166
@@ -290,66 +354,66 @@ PING 2001:41d0:900:2100:fe34:97ff:feb0:c166(2001:41d0:900:2100:fe34:97ff:feb0:c1
 
 ///
 
-### Configuring an IPv6 in a vRack for routed mode <a name="routedmode"></a>
+### Einen IPv6 in einem vRack für den gerouteten Modus konfigurieren <a name="routedmode"></a>
 
-In this section we will present a more advanced IPv6 setup, where your vRack connected hosts are acting as a routers for hosted Virtual Machines. Such VMs have delegated subnets from the main IPv6 block (presented with an orange color in the schema below).
+In diesem Abschnitt stellen wir eine erweiterte IPv6-Einrichtung vor, bei der Ihre mit dem vRack verbundenen Hosts als Router für gehostete virtuelle Maschinen fungieren. Solche VMs erhalten delegierte Subnetze aus dem IPv6-Hauptblock (im nachfolgenden Schema in orange dargestellt).
 
-![Configuring an IPv6 in a vRack for routed-mode](images/routed-mode-20240513.png){.thumbnail}
+![Einen IPv6 in einem vRack für den gerouteten Modus konfigurieren](images/routed-mode-20240513.png){.thumbnail}
 
-The traffic path is as follows: Inbound traffic to a given VM (with specified subnet) is routed through the customer's vRack, first to a specified host (with a next-hop address), then using a local link (or vSwitch - black link fd00::/64 on a diagram) to the particular VM.
-Traffic coming back from such a VM should use the default route via the first part of the local link (black one, fd00::1), then (possibly default) route from a host to its gateway.
+Der Datenpfad verläuft wie folgt: Eingehender Datenverkehr zu einer bestimmten VM (mit angegebenem Subnetz) wird über das kundeneigene vRack geleitet, zunächst zu einem bestimmten Host (mit einer Next-Hop-Adresse), dann über einen lokalen Link (oder vSwitch - schwarzer Link fd00::/64 im Diagramm) zur jeweiligen VM.
+Der von einer solchen VM zurückkommende Datenverkehr sollte die Standard-Route über den ersten Teil des lokalen Links (den schwarzen, fd00::1) verwenden, dann die (möglicherweise Standard-)Route von einem Host zu seinem Gateway.
 
-For routed subnet definition any prefix size can be used between /57 and /64.
+Für die Definition eines gerouteten Subnetzes kann jede Präfixgröße zwischen /57 und /64 verwendet werden.
 
-The default gateway for the host is the first address from the /56 block, which is in this example: `2001:41d0:abcd:ef00::1`. The default gateway used by the VMs is the address of their host via the local link, which is `fd00::1` in this example.
+Das Standard-Gateway des Hosts ist die erste Adresse aus dem /56-Block, in diesem Beispiel: `2001:41d0:abcd:ef00::1`. Das von den VMs verwendete Standard-Gateway ist die Adresse ihres Hosts über den lokalen Link, also `fd00::1` in diesem Beispiel.
 
-#### Define routed subnet
+#### Geroutetes Subnetz definieren
 
-/// details | OVHcloud Control Panel actions
+/// details | OVHcloud Kundencenter
 
-After adding Additional IP to your vRack you can manage routed subnet by clicking `Add subnet`{.action} button.
+Nach dem Hinzufügen einer Additional IP zu Ihrem vRack können Sie das geroutete Subnetz verwalten, indem Sie auf die Schaltfläche `Subnetz hinzufügen`{.action} klicken.
 
-![vRack select](images/600.png){.thumbnail}
+![vRack-Auswahl](images/600.png){.thumbnail}
 
-To create a routed subnet, we must first define:
+Um ein geroutetes Subnetz zu erstellen, müssen wir zunächst folgendes definieren:
 
-- **subnet in CIDR notation** (size between /57 and /64)
-- **next-hop address** (so the host's IPv6 address)
+- **Subnetz in CIDR-Notation** (Größe zwischen /57 und /64)
+- **Next-Hop-Adresse** (also die IPv6-Adresse des Hosts)
 
-Please note that a given subnet can not overlap with any other subnet defined and next-hop address must belong to the first part (bridged /64 subnet) of your Additional IPv6 prefix.
+Bitte beachten Sie, dass sich ein gegebenes Subnetz nicht mit einem anderen definierten Subnetz überschneiden darf und die Next-Hop-Adresse zum ersten Teil (gebrücktes /64-Subnetz) Ihres Additional-IPv6-Präfixes gehören muss.
 
-![continue](images/800.png){.thumbnail}
+![Geroutetes Subnetz in CIDR-Notation und Next-Hop-Adresse definieren](images/800.png){.thumbnail}
 
-This created routed subnet `2001:41d0:abcd::ef10::/60` reachable via next hop `2001:41d0:abcd::ef00::2`. 
+Das erstellte geroutete Subnetz `2001:41d0:abcd::ef10::/60` ist über den Next Hop `2001:41d0:abcd::ef00::2` erreichbar.
 
-![continue](images/801.png){.thumbnail}
-
-///
-
-/// details | APIv6 commands
-
-To create a routed subnet, we must first define:
-
-- **subnet in CIDR notation** (size between /57 and /64)
-- **next-hop address** (so the host's IPv6 address)
-
-Please note that a given subnet can not overlap with any other subnet defined and next-hop address must belong to the first part (bridged /64 subnet) of your Additional IPv6 prefix.
-
-The example below shows how to define such a subnet:
-
-![continue](images/20240418-02.png){.thumbnail}
-
-Here, we defined a routed subnet `2001:41d0:abcd:ef10::/60 `which will be delegated to the VM hosted on: `2001:41d0:abcd:ef00::2`.
+![Erstelltes geroutetes Subnetz mit angezeigtem Next-Hop](images/801.png){.thumbnail}
 
 ///
 
-#### Host-side configuration <a name="host-side"></a>
+/// details | APIv6-Befehle
 
-/// details | Static IP configuration for a host (recommended)
+Um ein geroutetes Subnetz zu erstellen, müssen wir zunächst folgendes definieren:
 
-When hosting Virtual Machines, we strongly recommend to use static configuration on your host.
+- **Subnetz in CIDR-Notation** (Größe zwischen /57 und /64)
+- **Next-Hop-Adresse** (also die IPv6-Adresse des Hosts)
 
-Set up an IPv6 address, bring up the interface and (optionally) add the default route over the vRack interface:
+Bitte beachten Sie, dass sich ein gegebenes Subnetz nicht mit einem anderen definierten Subnetz überschneiden darf und die Next-Hop-Adresse zum ersten Teil (gebrücktes /64-Subnetz) Ihres Additional-IPv6-Präfixes gehören muss.
+
+Das folgende Beispiel zeigt, wie ein solches Subnetz definiert wird:
+
+![API-Aufruf zum Definieren eines gerouteten Subnetzes mit Next-Hop](images/20240418-02.png){.thumbnail}
+
+Hier haben wir das geroutete Subnetz `2001:41d0:abcd:ef10::/60` definiert, das an die VM delegiert wird, die auf `2001:41d0:abcd:ef00::2` gehostet ist.
+
+///
+
+#### Host-seitige Konfiguration <a name="host-side"></a>
+
+/// details | Statische IP-Konfiguration für einen Host (empfohlen)
+
+Beim Hosten von Virtual Machines empfehlen wir dringend, eine statische Konfiguration auf Ihrem Host zu verwenden.
+
+Richten Sie eine IPv6-Adresse ein, aktivieren Sie das Interface und fügen Sie (optional) die Standard-Route über das vRack-Interface hinzu:
 
 ```bash
 $ sudo ip addr add 2001:41d0:abcd:ef00::2/64 dev eth1
@@ -359,19 +423,19 @@ $ sudo ip -6 route add default via 2001:41d0:abcd:ef00::1 dev eth1
 
 ///
 
-/// details | Automatic IP configuration (SLAAC) for a host
+/// details | Automatische IP-Konfiguration (SLAAC) für einen Host
 
-In some cases, you may want to configure your interfaces with SLAAC and IP forwarding together. 
+In manchen Fällen möchten Sie Ihre Interfaces möglicherweise mit SLAAC und IP-Forwarding zusammen konfigurieren.
 
-Please note that this brings additional risks (such as losing access not only to the host but also to all VMs) and is not recommended.
+Bitte beachten Sie, dass dies zusätzliche Risiken mit sich bringt (wie den Verlust des Zugangs nicht nur zum Host, sondern auch zu allen VMs) und nicht empfohlen wird.
 
-Ensuring IPv6 forwarding is enabled:
+Aktivierung des IPv6-Forwardings sicherstellen:
 
 ```bash
 $ sudo sysctl -w net.ipv6.conf.all.forwarding=1
 ```
 
-Configuring Router Advertisements to be accepted (on vRack eth1 interface in our example):
+Konfiguration der Router-Ankündigungen, die auf dem vRack-Interface eth1 akzeptiert werden (in unserem Beispiel):
 
 ```bash
 $ sudo sysctl -w net.ipv6.conf.eth1.accept_ra=2
@@ -379,13 +443,13 @@ $ sudo sysctl -w net.ipv6.conf.eth1.accept_ra=2
 
 ///
 
-/// details | Routed subnet configuration on a host and inside a VM
+/// details | Konfiguration des gerouteten Subnetzes auf einem Host und innerhalb einer VM
 
-To ensure that our host knows what to do with packets addressed to the new routed subnet (that will be on a VM), we must add a specific route for it.
+Um sicherzustellen, dass unser Host weiß, wie er mit Paketen umgehen soll, die an das neue geroutete Subnetz (das auf einer VM liegt) adressiert sind, müssen wir eine spezifische Route dafür hinzufügen.
 
-In our example this is the veth link with the address fd00::2/64 inside a VM we will use for routing.
+In unserem Beispiel ist dies der veth-Link mit der Adresse fd00::2/64 innerhalb einer VM, die wir für das Routing verwenden werden.
 
-Please note that this is very specific to the hypervisor installed (it can be vSwitch or veth interfaces). Please refer to the specific hypervisor networking guide for this setup.
+Bitte beachten Sie, dass dies sehr spezifisch für den installierten Hypervisor ist (es kann sich um vSwitch- oder veth-Interfaces handeln). Lesen Sie die spezifische Hypervisor-Netzwerkdokumentation für diese Einrichtung.
 
 ```bash
 $ sudo ip -6 route add 2001:41d0:abcd:ef10::/60 via fd00::2
@@ -394,17 +458,17 @@ $ sudo ip -6 route add 2001:41d0:abcd:ef10::/60 via fd00::2
 ///
 
 
-/// details | Routed subnet configuration inside a VM
+/// details | Konfiguration des gerouteten Subnetzes innerhalb einer VM
 
-Again, please note that the link used between host and VMs is very specific to the hypervisor installed (it can be vSwitch or veth interfaces). Please refer to the specific hypervisor networking guide for this setup.
+Auch hier gilt: Der Link zwischen Host und VMs ist sehr spezifisch für den installierten Hypervisor (es kann sich um vSwitch- oder veth-Interfaces handeln). Lesen Sie die spezifische Hypervisor-Netzwerkdokumentation für diese Einrichtung.
 
-Add our routed IP block inside a VM to ensure it can accept packets:
+Fügen Sie unseren gerouteten IP-Block innerhalb einer VM hinzu, um sicherzustellen, dass sie Pakete akzeptieren kann:
 
 ```bash
 debian@vm-1:~$ sudo ip address add 2001:41d0:abcd:ef10::1/60 dev lo
 ```
 
-Add the default route on a VM to ensure traffic can get back out of it:
+Fügen Sie die Standard-Route auf einer VM hinzu, um sicherzustellen, dass der Datenverkehr die VM verlassen kann:
 
 ```bash
 debian@vm-1:~$ sudo ip -6 route add default via fd00::1
@@ -413,11 +477,11 @@ debian@vm-1:~$ sudo ip -6 route add default via fd00::1
 ///
 
 
-#### Setup verification
+#### Einrichtungsüberprüfung
 
-/// details | Local, on a host
+/// details | Lokal, auf einem Host
 
-Ping from the host into the container (using local link):
+Ping vom Host in den Container (über den lokalen Link):
 
 ```bash
 debian@host:~$ ping fd00::2
@@ -426,7 +490,7 @@ PING fd00::2(fd00::2) 56 data bytes
 64 bytes from fd00::2: icmp_seq=2 ttl=64 time=0.071 ms
 ```
 
-Ping from the host into the container (using routed subnet):
+Ping vom Host in den Container (über das geroutete Subnetz):
 
 ```bash
 debian@host:~$ ping 2001:41d0:abcd:ef10::1
@@ -435,7 +499,7 @@ PING 2001:41d0:abcd:ef10::1(2001:41d0:abcd:ef10::1) 56 data bytes
 64 bytes from 2001:41d0:abcd:ef10::1: icmp_seq=2 ttl=64 time=0.073 ms
 ```
 
-Check the route to our /60 subnet on a host:
+Route zu unserem /60-Subnetz auf einem Host überprüfen:
 
 ```bash
 debian@host:~$ ip -6 route get 2001:41d0:abcd:ef10::1
@@ -444,9 +508,9 @@ debian@host:~$ ip -6 route get 2001:41d0:abcd:ef10::1
 
 ///
 
-/// details | Local, on a VM
+/// details | Lokal, auf einer VM
 
-First, check the routing table:
+Überprüfen Sie zunächst die Routing-Tabelle:
 
 ```bash
 debian@vm-1:~$ ip -6 route show
@@ -455,7 +519,7 @@ fd00::/64 dev veth1b proto kernel metric 256 pref medium
 default via fd00::1 dev veth1b src 2001:41d0:abcd:ef10::1 metric 1024 pref medium
 ```
 
-Ping host link local interface:
+Ping zum Link-Local-Interface des Hosts:
 
 ```bash
 debian@vm-1:~$ ping fd00::1
@@ -464,7 +528,7 @@ PING fd00::1(fd00::1) 56 data bytes
 64 bytes from fd00::1: icmp_seq=2 ttl=64 time=0.070 ms
 ```
 
-Ping host global interface:
+Ping zum globalen Interface des Hosts:
 
 ```bash
 debian@vm-1:~$ ping 2001:41d0:abcd:ef00::2
@@ -473,7 +537,7 @@ PING 2001:41d0:abcd:ef00::2(2001:41d0:abcd:ef00::2) 56 data bytes
 64 bytes from 2001:41d0:abcd:ef00::2: icmp_seq=2 ttl=64 time=0.080 ms
 ```
 
-Finally, let's ping an external IPv6 from a VM:
+Pingen wir abschließend eine externe IPv6-Adresse von einer VM:
 
 ```bash
 debian@vm-1:~$ ping 2001:41d0:242:d300::
@@ -482,7 +546,7 @@ PING 2001:41d0:242:d300::(2001:41d0:242:d300::) 56 data bytes
 64 bytes from 2001:41d0:242:d300::: icmp_seq=2 ttl=57 time=0.417 ms
 ```
 
-Or, using a domain name:
+Oder unter Verwendung eines Domainnamens:
 
 ```bash
 debian@vm-1:~$ ping -6 proof.ovh.net
@@ -493,9 +557,9 @@ PING proof.ovh.net(2001:41d0:242:d300:: (2001:41d0:242:d300::)) 56 data bytes
 
 ///
 
-/// details | From remote host
+/// details | Von einem Remote-Host
 
-Let's check connectivity to our VM from outside the OVHcloud network:
+Überprüfen wir die Konnektivität zu unserer VM von außerhalb des OVHcloud-Netzwerks:
 
 ```bash
 ubuntu@remote-test:~$ ping 2001:41d0:abcd:ef10::1
@@ -504,7 +568,7 @@ PING 2001:41d0:abcd:ef10::1(2001:41d0:abcd:ef10::1) 56 data bytes
 64 bytes from 2001:41d0:abcd:ef10::1: icmp_seq=2 ttl=55 time=2.98 ms
 ```
 
-And traceroute from a remote host (somewhere in the internet):
+Und ein Traceroute von einem Remote-Host (irgendwo im Internet):
 
 ```bash
 ubuntu@remote-test:~$ mtr -rc1 2001:41d0:abcd:ef10::1
@@ -517,47 +581,51 @@ HOST: remote-test                  				Loss%   Snt   Last   Avg  Best  Wrst StDe
  11.|-- 2001:41d0:abcd:ef10::1      				0.0%     1    2.2   2.2   2.2   2.2   0.0
 ```
 
-In this example: 
+In diesem Beispiel:
 
-- hop 10 - our host's IP address
-- hop 11 - our VM's IP address
+- Hop 10 - IP-Adresse unseres Hosts
+- Hop 11 - IP-Adresse unserer VM
 
 ///
 
-## Multiple region locations vs. global vRack
+## Mehrere Regionsstandorte vs. globales vRack
 
-OVHcloud's vRack technology enables organizations to connect servers across different locations as if they were located within the same data center. 
-On the other hand, services like Additional IPv6 are regional, which means their functionality is linked to a particular location. 
+Die vRack-Technologie von OVHcloud ermöglicht es Unternehmen, Server an verschiedenen Standorten zu verbinden, als ob sie sich im selben Rechenzentrum befänden.
+Andererseits sind Dienste wie Additional IPv6 regional, was bedeutet, dass ihre Funktionalität an einen bestimmten Standort gebunden ist.
 
-Below, an architecture is presented for learning purposes with two different regions and different Additional IPv6 blocks announced from each. Also, there is a host presented with IP addresses from both networks as well as a suboptimal route example - a host in one region addressed with IPv6 address announced in another region:
+Nachfolgend wird zu Lernzwecken eine Architektur mit zwei verschiedenen Regionen und verschiedenen Additional-IPv6-Blöcken präsentiert, die jeweils aus einer Region angekündigt werden. Außerdem wird ein Host mit IP-Adressen aus beiden Netzwerken sowie ein Beispiel einer suboptimalen Route vorgestellt - ein Host in einer Region mit einer in einer anderen Region angekündigten IPv6-Adresse:
 
-![image](images/20240418-08.png)
+![Multi-Region vRack-Architektur mit verschiedenen IPv6-Blöcken](images/20240418-08.png){.thumbnail}
 
-Please note that in such setups (with Additional IPv6 from more than single region) SLAAC **must be turned off in the whole vRack** (as this may lead to unpredictable results and losing connectivity randomly).
+Bitte beachten Sie, dass bei solchen Setups (mit Additional IPv6 aus mehr als einer Region) SLAAC **im gesamten vRack deaktiviert sein muss** (da dies zu unvorhersehbaren Ergebnissen und zufälligem Konnektivitätsverlust führen kann).
 
-### Benefits
+### Vorteile
 
-- **Enhanced Connectivity:** By leveraging a vRack network together with public IP blocks routed in multiple locations, businesses can ensure seamless communication around the globe, regardless of backend server's physical locations.
-- **Move to cloud:** vRack technology can be a great enabler of early steps toward a "move-to-cloud" organizational strategy, unblocking some legacy applications that still require local network communication.
+- **Verbesserte Konnektivität:** Durch die Nutzung eines vRack-Netzwerks zusammen mit öffentlichen IP-Blöcken, die an mehreren Standorten geroutet werden, können Unternehmen eine nahtlose Kommunikation weltweit sicherstellen, unabhängig von den physischen Standorten der Backend-Server.
+- **Migration in die Cloud:** Die vRack-Technologie kann ein wichtiger Enabler für erste Schritte in Richtung einer "Migration in die Cloud"-Organisationsstrategie sein und Legacy-Anwendungen entsperren, die noch lokale Netzwerkkommunikation erfordern.
 
-### Risks and Considerations
+### Risiken und Überlegungen
 
-- **No SLAAC support in multi-location setups:** When there is more than one location acting in routing public IP traffic (both IPv4 and IPv6) into the same vRack, Stateless Address Autoconfiguration (SLAAC) **should not be used**. As an example of such situation, let's consider existing hosts using IPv4 addresses. Such hosts are becoming reconfigured automatically by SLAAC with IPv6 gateway set up from other region. Together with IPv6 prioritization over IPv4 by some Operating Systems this situation can lead to suboptimal routing or even total loss of connectivity for such hosts.
+- **Kein SLAAC-Support in Multi-Standort-Setups:** Wenn mehr als ein Standort am Routing von öffentlichem IP-Datenverkehr (sowohl IPv4 als auch IPv6) in dasselbe vRack beteiligt ist, sollte die Stateless Address Autoconfiguration (SLAAC) **nicht verwendet werden**. Als Beispiel für eine solche Situation betrachten wir bestehende Hosts, die IPv4-Adressen verwenden. Diese Hosts werden automatisch von SLAAC mit einem IPv6-Gateway neu konfiguriert, das in einer anderen Region eingerichtet ist. Zusammen mit der IPv6-Priorisierung gegenüber IPv4 durch einige Betriebssysteme kann diese Situation zu suboptimalem Routing oder sogar zum vollständigen Konnektivitätsverlust für diese Hosts führen.
 
-## Known Limitations
+## Bekannte Einschränkungen
 
-Understanding the constraints of using **Additional IPv6** within the **vRack** environment is crucial for effective network planning. Here are the key limitations to consider:
+Das Verständnis der Einschränkungen bei der Verwendung von **Additional IPv6** in der **vRack**-Umgebung ist entscheidend für eine effektive Netzwerkplanung. Hier sind die wichtigsten zu berücksichtigenden Einschränkungen:
 
-- **Additional IPv6 goes only with vRack**: Please note that Additional IPv6 addresses can only be configured with vRack-connected backends.
-- **SLAAC limitations in multi-location setups**: Stateless Address Autoconfiguration (SLAAC) is not supported when there is public IP traffic (both IPv6 and IPv4) routed into vRack in multiple region locations.
-- **Up to 128 hosts inside bridged subnet**: You can use up to 128 IP addresses directly on the vRack.
-- **Up to 128 next-hop routes**: You can use up to 128 routes for routed subnets inside a vRack.
-- **Public bandwidth cap**: Outbound traffic from OVHcloud to the internet is capped at 5Gbps per region location.
-- **IPv6 block allocation limits**: Single Additional IPv6 block per vRack in a region location. Maximum of 3 blocks (/56) per region location.
-- **Mobility of Additional IPv6 blocks**: Due to the hierarchical design of the IPv6 address space, Additional IPv6 blocks are region-specific. This means blocks cannot be transferred between regions, although they can be reassigned within any vRack-connected backend.
-- **No direct VLAN 802.1Q support in vRack by Additional IPv6**: Configuration can only be done with native VLAN of your vRack network. For packet forwarding inside specific VLAN (of a vRack) a dedicated host on customer side will be needed.
-- **At the moment, routing Additional IPv6 into vRack is not supported in APAC (Asia-Pacific) regions.**
+- **Additional IPv6 ist nur mit vRack verfügbar**: Bitte beachten Sie, dass Additional-IPv6-Adressen nur mit vRack-verbundenen Backends konfiguriert werden können.
+- **SLAAC-Einschränkungen in Multi-Standort-Setups**: Die Stateless Address Autoconfiguration (SLAAC) wird nicht unterstützt, wenn öffentlicher IP-Datenverkehr (sowohl IPv6 als auch IPv4) in mehreren Regionsstandorte in das vRack geroutet wird.
+- **Bis zu 128 Hosts innerhalb des gebrückten Subnetzes**: Sie können bis zu 128 IP-Adressen direkt im vRack verwenden.
+- **Bis zu 128 Next-Hop-Routen**: Sie können bis zu 128 Routen für geroutete Subnetze innerhalb eines vRack verwenden.
+- **Öffentliche Bandbreitenbegrenzung**: Ausgehender Datenverkehr von OVHcloud ins Internet ist auf 5 Gbps pro Regionsstandort begrenzt.
+- **IPv6-Block-Zuteilungslimits**: Ein einzelner Additional-IPv6-Block pro vRack in einem Regionsstandort. Maximal 3 Blöcke (/56) pro Regionsstandort.
+- **Mobilität von Additional-IPv6-Blöcken**: Aufgrund des hierarchischen Designs des IPv6-Adressraums sind Additional-IPv6-Blöcke regionsspezifisch. Das bedeutet, dass Blöcke nicht zwischen Regionen übertragen werden können, obwohl sie einem beliebigen vRack-verbundenen Backend neu zugewiesen werden können.
+- **Kein direkter VLAN-802.1Q-Support im vRack durch Additional IPv6**: Die Konfiguration kann nur mit dem nativen VLAN Ihres vRack-Netzwerks erfolgen. Für die Paketweiterleitung innerhalb eines bestimmten VLANs (eines vRack) wird ein dedizierter Host auf der Kundenseite benötigt.
+- **Derzeit wird das Routing von Additional IPv6 in das vRack in APAC-Regionen (Asien-Pazifik) nicht unterstützt.**
 
-## Go further
+## Weiterführende Informationen
 
-Join our [community of users](/links/community).
+- [vRack auf Ihren Dedicated Servern konfigurieren](/pages/bare_metal_cloud/dedicated_servers/vrack_configuring_on_dedicated_server)
+
+- [Dedicated Server - Additional IPs im Bridge-Modus konfigurieren](/pages/bare_metal_cloud/dedicated_servers/network_bridging)
+
+Treten Sie unserer [User Community](/links/community) bei.

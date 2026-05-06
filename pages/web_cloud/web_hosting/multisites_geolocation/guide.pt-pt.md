@@ -18,10 +18,21 @@ A opção de geolocalização no seu alojamento pode ser útil para o referencia
 
 ## Requisitos
 
-- Ter acesso à [Área de Cliente OVHcloud](/links/manager).
 - Dispor de um [alojamento partilhado OVHcloud](/links/web/hosting)
 - Dispor de um [nome de domínio](/links/web/domains)
   
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Acesso à Área de Cliente OVHcloud
+
+- **Ligação direta:** [Web hosting](/links/control-panel/web-hosting)
+- **Caminho de navegação:** `Web Cloud`{.action} > `Alojamentos`{.action} > Selecione o seu alojamento web
+
+---
+<!-- CP-NAV-END:web-hosting -->
+
 ## Instruções
 
 Para os websites principalmente consultados no estrangeiro e alojados na nossa infraestrutura de alojamento partilhado OVHcloud, propomos uma opção de geolocalização por endereço IP. Permite uma melhor referenciação dos websites no país onde está situado o endereço IP escolhido com a opção.

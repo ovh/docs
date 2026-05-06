@@ -21,30 +21,31 @@ Dodanie domeny do usługi Exchange jest niezbędne, abyś mógł korzystać z ko
 
 ## Wymagania początkowe
 
-- Posiadanie rozwiązania [Exchange](/links/web/emails) lub [Email Pro](/links/web/email-pro).
+- Posiadanie rozwiązania [Exchange](/links/web/emails-exchange) lub [E-mail Pro](/links/web/email-pro).
 - Zarejestrowana domena lub kilka domen.
 - Możliwość modyfikacji konfiguracji twojej domeny ([strefy DNS](/pages/web_cloud/domains/dns_zone_edit)).
-- Dostęp do [Panelu klienta OVHcloud](/links/manager).
+
+<!-- CP-NAV-START:web-exchange -->
+<!-- CP-NAV-START:web-email-pro -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+**Exchange:**
+
+- **Link bezpośredni:** [Exchange](/links/control-panel/web-exchange)
+- **Ścieżka nawigacji:** `Web Cloud`{.action} > `Exchange`{.action} > Wybierz platformę
+
+**E-mail Pro:**
+
+- **Link bezpośredni:** [E-mail Pro](/links/control-panel/web-email-pro)
+- **Ścieżka nawigacji:** `Web Cloud`{.action} > `E-mail Pro`{.action} > Wybierz platformę
+
+---
+<!-- CP-NAV-END:web-email-pro -->
+<!-- CP-NAV-END:web-exchange -->
 
 ## W praktyce
-
-### Dostęp do zarządzania usługą
-
-> [!tabs]
-> **Exchange**
->>
->> 1. Zaloguj się do [Panelu klienta OVHcloud](/links/manager).
->> 1. Przejdź do sekcji `Web Cloud`{.action}.
->> 1. W sekcji `MICROSOFT` kliknij `Exchange`{.action}.
->> 1. Wybierz odpowiednią platformę.
->>
-> **Email Pro**
->>
->> 1. Zaloguj się do [Panelu klienta OVHcloud](/links/manager).
->> 1. Kliknij zakładkę `Web Cloud`{.action}.
->> 1. Kliknij `Email Pro`{.action}.
->> 1. Wybierz odpowiednią platformę.
->>
 
 ### Dodaj domenę
 
@@ -56,7 +57,7 @@ Dodanie domeny do usługi Exchange jest niezbędne, abyś mógł korzystać z ko
 
 > [!warning]
 >
-> Domyślnie wszystkie konta e-mail platformy są ze sobą powiązane. Wszystkie konta e-mail utworzone w ramach twojej usługi e-mail będą mogły wyświetlać w katalogu wszystkie adresy tej usługi, również te, które mają różne nazwy domen. Aby wyłączyć ten sposób wyświetlania kont w domenach, należy zamówić inną usługę [Exchange lub Email Pro](/links/web/emails) dla danej domeny lub domen.
+> Domyślnie wszystkie konta e-mail platformy są ze sobą powiązane. Wszystkie konta e-mail utworzone w ramach twojej usługi e-mail będą mogły wyświetlać w katalogu wszystkie adresy tej usługi, również te, które mają różne nazwy domen. Aby wyłączyć ten sposób wyświetlania kont w domenach, należy zamówić inną usługę [Exchange lub E-mail Pro](/links/web/emails) dla danej domeny lub domen.
 >
 
 W oknie dodawania domeny:
@@ -142,7 +143,7 @@ Wszystkie konta e-mail utworzone w ramach twojej usługi będą mogły wyświetl
 
 Po skonfigurowaniu wszystkich kont możesz zacząć ich używać. W tym celu OVHcloud oddaje do twojej dyspozycji **webmail**, dostępny [tutaj](/links/web/email). Abyś mógł korzystać z adresu w sposób optymalny, upewnij się, czy jest on kompatybilny z twoim programem pocztowym.
 
-Jeśli chcesz skonfigurować twoje konto e-mail na smartfonie, tablecie lub programie pocztowym lub jeśli chcesz uzyskać pomoc w zakresie funkcji twojej usługi e-mail, skorzystaj z naszej dokumentacji dostępnej na stronach [Exchange](/links/web/emails) i [E-mail Pro](/links/web/email-pro).
+Jeśli chcesz skonfigurować twoje konto e-mail na smartfonie, tablecie lub programie pocztowym lub jeśli chcesz uzyskać pomoc w zakresie funkcji twojej usługi e-mail, skorzystaj z naszej dokumentacji dostępnej na stronach [Exchange](/links/web/emails-exchange) i [E-mail Pro](/links/web/email-pro).
 
 Licencje Outlook możesz wykupić w [Panelu klienta OVHcloud](/links/manager), a licencje Office 365 — na stronie [Microsoft 365](/links/web/ms365). Zalecamy skorzystanie z jednego z tych rozwiązań, jeśli chcesz używać programu pocztowego Outlook lub innych programów Office.
 

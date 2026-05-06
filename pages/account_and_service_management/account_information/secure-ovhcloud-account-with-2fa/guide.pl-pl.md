@@ -35,9 +35,19 @@ Z tego przewodnika dowiesz się:
 
 ## Wymagania początkowe
 
-- Dostęp do [panelu klienta OVHcloud](/links/manager).
 - Posiadanie telefonu komórkowego (w przypadku metody SMS-owej), smartfona lub tabletu (w przypadku aplikacji mobilnej), bądź klucza sprzętowego Universal Second Factor (U2F).
 - Zapoznanie się z [zaleceniami dotyczącymi zarządzania hasłem dostępu do konta](/pages/account_and_service_management/account_information/manage-ovh-password).
+
+<!-- CP-NAV-START:account-security -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Bezpieczeństwo](/links/control-panel/account-security)
+- **Ścieżka nawigacji:** Kliknij swoją nazwę w prawym górnym rogu > `Dostęp do konta`{.action} > `Bezpieczeństwo`{.action}
+
+---
+<!-- CP-NAV-END:account-security -->
 
 ## W praktyce <a name="instructions"></a>
 
@@ -86,9 +96,7 @@ Proponujemy cztery różne metody (kliknij na poniższe zakładki, aby wyświetl
 
 ### Etap 1 - Aktywuj Twoją pierwszą metodę weryfikacji dwuetapowej <a name="enabling-2fa"></a>
 
-Zaloguj się do [Panelu klienta OVHcloud](/links/manager), kliknij Twoją nazwę użytkownika w prawym górnym rogu, a następnie kliknij `Dostęp do konta`{.action}.
-
-Kliknij `Bezpieczeństwo`{.action}, a na koniec `Włącz weryfikację dwuetapową`{.action}.
+Na stronie [Bezpieczeństwo konta](/links/control-panel/account-security) kliknij `Włącz weryfikację dwuetapową`{.action}.
 
 **Kliknij na zakładkę wybranej przez Ciebie metody:**
 
@@ -193,9 +201,7 @@ Jeśli Twoje urządzenie (telefon komórkowy/smartfon/klucz sprzętowy) zostanie
 > - prawidłowymi kodami zapasowymi.
 >
 
-Aby usunąć urządzenie, zaloguj się do [Panelu klienta OVHcloud](/links/manager), kliknij Twoją nazwę użytkownika w prawym górnym rogu, a następnie kliknij `Dostęp do konta`{.action}.
-
-Następnie kliknij przycisk `Bezpieczeństwo`{.action}, po czym kliknij `...`{.action} po prawej stronie Twojego urządzenia do usunięcia, a na koniec wybierz `Usuń`{.action}.
+Aby usunąć urządzenie, przejdź na stronę [Bezpieczeństwo konta](/links/control-panel/account-security) i kliknij `...`{.action} po prawej stronie Twojego urządzenia do usunięcia, a następnie wybierz `Usuń`{.action}.
 
 ![2FA](images/2024-006-delete-device.png){.thumbnail}
 

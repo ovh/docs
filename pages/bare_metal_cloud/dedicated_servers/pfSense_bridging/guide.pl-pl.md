@@ -1,6 +1,6 @@
 ---
-title: Tutorial - Configuring pfSense network bridge (EN)
-excerpt: 'This guide will show you how to do IP bridging on a pfSense virtual machine'
+title: "Configure a pfSense Network Bridge on a Dedicated Server"
+excerpt: "Set up IP bridging on a pfSense virtual machine running on an OVHcloud dedicated server for network routing."
 updated: 2025-04-28
 ---
 
@@ -11,8 +11,18 @@ Bridged networking can be used to configure your pfSense virtual machine to be a
 ## Requirements
 
 - A dedicated server with a hypervisor installed (e.g. [VMware ESXi](https://www.vmware.com/products/cloud-infrastructure/vsphere), [Citrix Xenserver](https://www.citrix.com/products/citrix-hypervisor/), [Proxmox](https://www.proxmox.com/en/proxmox-ve), etc.)
-- At least one [Additional IP](/links/network/additional-ip) address attached to the server 
-- Access to the [OVHcloud Control Panel](/links/manager)
+- At least one [Additional IP](/links/network/additional-ip) address attached to the server
+
+<!-- CP-NAV-START:baremetal-dedicated-servers -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Dedicated Servers](/links/control-panel/baremetal-dedicated-servers)
+- **Navigation path:** `Bare Metal Cloud`{.action} > `Dedicated servers`{.action} > Select your server
+
+---
+<!-- CP-NAV-END:baremetal-dedicated-servers -->
 
 ## Recommendations for your pfSense virtual machine
 

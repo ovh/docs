@@ -12,20 +12,31 @@ OVHcloud pone a su disposición un espacio que le permitirá consultar, administ
 
 > [!primary]
 >
-> Tenga en cuenta que, en función de su lugar de residencia y de la legislación vigente, así como del producto o servicios en cuestión, es posible que algunas secciones de esta guía sean diferentes para usted o no se apliquen a su caso particular. En caso de duda, consulte los contratos de OVHcloud disponibles en su [área de cliente de OVHcloud](/links/manager) (haga clic en su nombre en la esquina superior derecha de la pantalla y, en el menú contextual, seleccione en `Mis soluciones y servicios`{.action}. Por último, haga clic en la pestaña `Contratos`{.action}).
+> Tenga en cuenta que, en función de su lugar de residencia y de la legislación vigente, así como del producto o servicios en cuestión, es posible que algunas secciones de esta guía sean diferentes para usted o no se apliquen a su caso particular. En caso de duda, consulte los contratos de OVHcloud disponibles en la página [Mis contratos](/links/control-panel/billing-contracts).
 >
 
 <iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/iiQmopMhzik" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Requisitos
 
-- Estar conectado al [área de cliente de OVHcloud](/links/manager) como [contacto de facturación](/pages/account_and_service_management/account_information/managing_contacts) del servicio.
+- Ser [contacto de facturación](/pages/account_and_service_management/account_information/managing_contacts) del servicio.
+
+<!-- CP-NAV-START:billing-invoices -->
+---
+
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [Mis facturas](/links/control-panel/billing-invoices)
+- **Ruta de navegación:** Haga clic en su nombre en la parte superior derecha > `Mis facturas`{.action}
+
+---
+<!-- CP-NAV-END:billing-invoices -->
 
 ## Procedimiento
 
 > [!primary]
 >
-> Cada factura se enviará por correo electrónico y podrá acceder a ella a través de un enlace accesible. Podrá acceder autenticándose en el [área de cliente de OVHcloud](/links/manager). Todas las facturas también están disponibles desde la página de inicio del área de cliente.
+> Cada factura se enviará por correo electrónico y podrá acceder a ella a través de un enlace accesible. Podrá acceder autenticándose en el [área de cliente de OVHcloud](/links/control-panel/billing-invoices). Todas las facturas también están disponibles desde la página de inicio del área de cliente.
 >
 
 ### Partes de una factura de OVHcloud
@@ -48,7 +59,7 @@ La factura del servicio de OVHcloud se enviará una vez realizado el pago de un 
 
 #### Consultar y administrar las facturas de OVHcloud
 
-Para consultar sus facturas, acceda al [área de cliente de OVHcloud](/links/manager). Haga clic en su nombre en la esquina superior derecha de su pantalla y, en el nuevo menú que aparecerá, haga clic en `Mis facturas`{.action}.
+Para consultar sus facturas, abra la página [Mis facturas](/links/control-panel/billing-invoices).
 
 ![Facturación](/pages/assets/screens/control_panel/product-selection/right-menu/my-bills.png){.thumbnail}
 
@@ -117,6 +128,7 @@ Se generará una [orden de pedido de regularización](/pages/account_and_service
 >
 > Para solicitar la baja al vencimiento del servicio, siga las indicaciones de esta [guía](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_cancel_services).
 >
+
 
 ### Seguimiento de los pagos
 

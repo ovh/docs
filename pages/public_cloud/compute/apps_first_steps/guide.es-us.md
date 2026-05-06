@@ -4,6 +4,50 @@ excerpt: Cómo desplegar aplicaciones preinstaladas en las instancias de Public 
 updated: 2021-09-07
 ---
 
+<style>
+/* ---FAQ only--- */
+details {
+    margin: 0.1rem 1;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    background: #ffffffff;
+}
+details > summary {
+    padding: 0.1rem 1rem;
+    font-weight: 500;
+    color: #268fd4ff;
+    cursor: pointer;
+    list-style: none;
+}
+details > summary::before {
+    content: '\25B6';
+    display: inline-block;
+    margin-right: 0.5ch;
+    transition: transform 0.2s;
+}
+details[open] > summary::before {
+    content: '\25BC';
+}
+details:hover {
+    border: 1px solid #147DE8;
+    border-radius: 4px;
+    transition: border-color 0.5s ease;
+}
+details[open] > summary {
+    background: #ffffffff;
+}
+details > :not(summary) {
+    padding: 0.25rem 0.5rem;
+    box-sizing: border-box;
+    list-style-position: inside;
+}
+.smallish-gap {
+    display: block;
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
+}
+</style>
+
 > [!primary]
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
 >
@@ -18,13 +62,25 @@ OVHcloud ofrece a los clientes de Public Cloud imágenes de aplicaciones preinst
 
 - Una [instancia de Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps) en su cuenta de OVHcloud.
 
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Ruta de navegación:** `Public Cloud`{.action} > Seleccione su proyecto
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
+
 ## Procedimiento
 
 ### Etapas comunes a todas las aplicaciones
 
 #### Instale la aplicación preinstalada que desee.
 
-Desde [el área de cliente de OVHcloud](/links/manager), las API de OVHcloud o la API de OpenStack Horizon podrá instalar en su instancia de Public Cloud la aplicación que desee.
+Utilice el [área de cliente de OVHcloud](/links/manager) / API o la API de OpenStack Horizon para instalar la aplicación que haya elegido en su instancia de Public Cloud.
+
 
 #### Detalles de conexión a la aplicación
 
@@ -131,14 +187,23 @@ A continuación se indican los primeros pasos para poner en servicio la imagen p
 
 No es necesario realizar ningún otro paso para finalizar la primera configuración de esta aplicación.
 
-> [!faq]
->
-> ¿Puedo utilizar mis propios servidores DNS?
->> Sí, puede. Asegúrese de crear los registros Glue con su agente registrador de dominios. Por ejemplo, si quiere "ns1.mydomain.com" y "ns2.mydomain.com", debe configurar los registros Glue para que ambos apunten a la dirección IP de su servidor. Si tiene su dominio registrado con OVHcloud, puede seguir [esta guía.](/pages/web_cloud/domains/glue_registry#1-anadir-los-registros-glue) La creación puede tardar 24 horas.
-> ¿Por qué establecer la contraseña root?
->> WHM utiliza por defecto el usuario root para la autenticación. La URL de un solo uso permite acceder a la primera configuración y cambiar la contraseña root. La próxima vez que se conecte a WHM, deberá utilizar el usuario root y la contraseña que haya establecido.
-> ¿Dónde está mi licencia para cPanel?
->> Actualmente OVHcloud no ofrece ninguna licencia para los servidores Public Cloud que no sean las licencias Windows. Es necesario adquirir una licencia de cPanel a un proveedor externo. Para ello, le recomendamos que consulte directamente con el editor de cPanel.
+/// details | ¿Puedo utilizar mis propios servidores DNS?
+
+Sí, puede. Asegúrese de crear los registros Glue con su agente registrador de dominios. Por ejemplo, si quiere "ns1.mydomain.com" y "ns2.mydomain.com", debe configurar los registros Glue para que ambos apunten a la dirección IP de su servidor. Si tiene su dominio registrado con OVHcloud, puede seguir [esta guía.](/pages/web_cloud/domains/glue_registry#1-anadir-los-registros-glue) La creación puede tardar 24 horas.
+
+///
+
+/// details | ¿Por qué establecer la contraseña root?
+
+WHM utiliza por defecto el usuario root para la autenticación. La URL de un solo uso permite acceder a la primera configuración y cambiar la contraseña root. La próxima vez que se conecte a WHM, deberá utilizar el usuario root y la contraseña que haya establecido.
+
+///
+
+/// details | ¿Dónde está mi licencia para cPanel?
+
+Actualmente OVHcloud no ofrece ninguna licencia para los servidores Public Cloud que no sean las licencias Windows. Es necesario adquirir una licencia de cPanel a un proveedor externo. Para ello, le recomendamos que consulte directamente con el editor de cPanel.
+
+///
 
 ### Plesk
 
@@ -155,10 +220,11 @@ A continuación se indican los primeros pasos para poner en servicio la imagen p
 
 No es necesario realizar ningún otro paso para finalizar la primera configuración de esta aplicación.
 
-> [!faq]
->
-> ¿Dónde está mi licencia Plesk?
->> Actualmente OVHcloud no ofrece ninguna licencia para los servidores Public Cloud que no sean las licencias Windows. Los clientes deben adquirir una licencia de Plesk a un proveedor tercero. Para ello, le recomendamos que consulte directamente con el editor de Plesk.
+/// details | ¿Dónde está mi licencia Plesk?
+
+Actualmente OVHcloud no ofrece ninguna licencia para los servidores Public Cloud que no sean las licencias Windows. Los clientes deben adquirir una licencia de Plesk a un proveedor tercero. Para ello, le recomendamos que consulte directamente con el editor de Plesk.
+
+///
 
 ### Virtualmin
 

@@ -1,7 +1,7 @@
 ---
 title: "Technical specifications of Web Hostings"
 excerpt: "Find out details about the technical capabilities of your Web Hosting plan"
-updated: 2023-12-08
+updated: 2026-04-01
 ---
 
 ## Objective
@@ -13,7 +13,6 @@ OVHcloud Web Hosting plans are shared. As a result, the configuration of these s
 ## Requirements
 
 - An [OVHcloud Web Hosting plan](/links/web/hosting)
-- Access to the [OVHcloud Control Panel](/links/manager)
 
 ## Instructions
 
@@ -21,20 +20,14 @@ OVHcloud Web Hosting plans are shared. As a result, the configuration of these s
 >
 > OVHcloud provides services for which you are responsible with regard to their configuration and management. It is therefore your responsibility to ensure that they function correctly.
 > 
-> This guide is designed to help you with common tasks. Nevertheless, we recommend contacting a [specialist provider](/links/partner) or the software publisher if you encounter any difficulties. OVHcloud cannot provide you with technical support in this regard. You can find more information in the [Go further](#go-further) section of this guide.
+> This guide is designed to help you with common tasks. However, we recommend contacting a [specialist provider](/links/partner) or the software publisher if you encounter any difficulties. OVHcloud cannot provide you with technical support in this regard. You can find more information in the [Go further](#go-further) section of this guide.
 > 
 
 ### FTP
 
 - Use **passive mode** for FTP connections. Make sure that your script or FTP client is configured accordingly.
 
-- If you encounter the access error "530 login authentication failed" when connecting to your FTP storage space: Make sure that the access information to your FTP space is correct. To do this, log in to your [OVHcloud Control Panel](/links/manager) and go to the `Web Cloud`{.action} section. In the left-hand column, click `Hosting plans`{.action}, then select the Web Hosting plan concerned. On the page that opens, click on the `FTP - SSH`{.action} tab.
-
-It will contain all of the information required to log in to your FTP storage space, with the exception of the password.
-
-Passwords are never displayed, but they can be changed.
-
-You can find more information on this in our guide on "[Logging in to your Web Hosting plan’s FTP storage space](/pages/web_cloud/web_hosting/ftp_connection)".
+- If you encounter the access error "530 login authentication failed" when connecting to your FTP storage space, make sure that the access information to your FTP space is correct. Please refer to our guide "[Logging in to your Web Hosting plan’s FTP storage space](/pages/web_cloud/web_hosting/ftp_connection)" to find all the information you need to log in to your FTP storage space. Passwords are never displayed, but they can be changed.
 
 ### Emails <a name="emails"></a>
 

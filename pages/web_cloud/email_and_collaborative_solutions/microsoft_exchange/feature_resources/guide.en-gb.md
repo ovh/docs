@@ -13,19 +13,28 @@ This Exchange collaborative feature enables the creation of email addresses dedi
 ## Requirements
 
 - an [OVHcloud Exchange solution](/links/web/emails-hosted-exchange) already set up
-- access to the [OVHcloud Control Panel](/links/manager)
 - login credentials for the email account(s) accessing the resource
+
+<!-- CP-NAV-START:web-exchange -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Exchange](/links/control-panel/web-exchange)
+- **Navigation path:** `Web Cloud`{.action} > `Exchange`{.action} > Select your platform
+
+---
+<!-- CP-NAV-END:web-exchange -->
 
 ## Instructions
 
-1. Log in to your [OVHcloud Control Panel](/links/manager).
-1. Open the `Web Cloud`{.action} section.
-1. In the `MICROSOFT` section, click `Exchange`{.action}.
-1. Select the service concerned.
-1. Click on `More +`{.action} in the horizontal menu, then on `Resources`{.action}.
+<!-- CP-STEPS-START:navigate-to-resources -->
+Click on `More +`{.action} in the horizontal menu, then on `Resources`{.action}.
+<!-- CP-STEPS-END:navigate-to-resources -->
 
 ### Step 1: Creating a resource
 
+<!-- CP-STEPS-START:create-resource -->
 ![panelresource](images/exchange-resources-step1.png){.thumbnail}
 
 Click on the button `Add a resource account`{.action} to create your first resource. In the new window, fill in the fields:
@@ -36,23 +45,26 @@ Click on the button `Add a resource account`{.action} to create your first resou
 |---|---|
 |Resource email|Enter the address for the resource. Please note that you cannot choose an existing email address.|
 |Resource name|The display name that appears in your [OVHcloud Control Panel](/links/manager) and in [OVHcloud webmail](/links/web/email) (OWA).|
-|Capacity|You can define the maximum size of a resource (specifiying for example the seating capacity of a room or the seats in a shared company vehicle).|
+|Capacity|You can define the maximum size of a resource (specifying for example the seating capacity of a room or the seats in a shared company vehicle).|
 |Allow conflicts|If this box is ticked, you will be able to create overlapping calendar events involving the same resource.|
 |Resource type|Choose the resource type: "Equipment" or "Room".|
 
 Click `Next`{.action} to proceed to the summary, then confirm the task by clicking `Create`{.action}.
+<!-- CP-STEPS-END:create-resource -->
 
 ### Step 2: Utilising resources
 
+<!-- CP-STEPS-START:manage-resources -->
 Your resources can be managed from the table in the `Resources` tab. Click on `...`{.action} to modify or delete a resource. Additionally, the menu item `Manage delegations`{.action} will be displayed. With this option you will be able to delegate access in the same way as for an Exchange account. Please find the details in [this guide](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/feature_delegation).
 
 ![resourceview](images/exchange-resources-step3.png){.thumbnail}
+<!-- CP-STEPS-END:manage-resources -->
 
 ### Adding a resource calendar in OWA
 
 > [!primary]
 >
-Please also refer to our guide on [Sharing calendars in OWA](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/owa_calendar_sharing).
+> Please also refer to our guide on [Sharing calendars in OWA](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/owa_calendar_sharing).
 >
 
 Log in to your Exchange account via the [OVHcloud webmail](/links/web/email). Switch to the "Calendar" interface by clicking on the "app launcher" in the top left-hand corner and then selecting the `Calendar`{.action} icon.
@@ -67,7 +79,7 @@ Start typing to display suggestions from your contacts, enter a full email addre
 
 ### Creating an event in OWA
 
-To schedule an event, first click on `New`{.action} in the top menu bar and select `Calendar event`{.action}. In the new window you can set the details for your event and add your required  equipment and the location by adding the corresponding resource(s).
+To schedule an event, first click on `New`{.action} in the top menu bar and select `Calendar event`{.action}. In the new window you can set the details for your event and add your required equipment and the location by adding the corresponding resource(s).
 
 ![scheduling](images/exchange-resources-step5_1.png){.thumbnail}
 
@@ -115,7 +127,7 @@ After creating the event (clicking `Send`{.action} in the top menu bar) Exchange
 
 ![declinemessage](images/exchange-resources-step8.png){.thumbnail}
 
-## Go further
+## Go further <a name="go-further"></a>
 
 [Using the Outlook Web App with an Exchange account](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa)
 

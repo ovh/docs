@@ -1,6 +1,6 @@
 ---
-title: Tutorial - Instalar un servidor web (LAMP) en Debian o Ubuntu
-excerpt: "Cómo configurar un servidor web LAMP"
+title: "Tutorial - Instalar un servidor web (LAMP) en Debian o Ubuntu"
+excerpt: "Instale un servidor web LAMP (Linux, Apache, MySQL, PHP) en un servidor dedicado Debian o Ubuntu paso a paso"
 updated: 2023-05-10
 ---
 
@@ -17,8 +17,18 @@ La creación de un servidor web y los programas asociados permiten que su servid
 ## Requisitos
 
 - Un [servidor dedicado](/links/bare-metal/bare-metal), un [VPS](/links/bare-metal/vps) o una instancia de [Public Cloud](/links/public-cloud/public-cloud) en su cuenta de OVHcloud (excepto sistemas Windows)
-- Tienes acceso a tu [área de cliente de OVHcloud](/links/manager)
 - Acceso administrativo al servicio por SSH
+
+<!-- CP-NAV-START:baremetal-dedicated-servers -->
+---
+
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [Servidores dedicados](/links/control-panel/baremetal-dedicated-servers)
+- **Ruta de navegación:** `Bare Metal Cloud`{.action} > `Servidores dedicados`{.action} > Seleccione su servidor
+
+---
+<!-- CP-NAV-END:baremetal-dedicated-servers -->
 
 > [!warning]
 > Este tutorial explica cómo utilizar una solución de OVHcloud con herramientas externas en un contexto concreto. Puede que necesite adaptar las indicaciones a su situación.
@@ -80,12 +90,12 @@ sudo apt install -y php php-pdo php-mysql php-zip php-gd php-mbstring php-curl p
 
 ### Paso 4: configuración del servidor de bases de datos <a name="sqlconf"></a>
 
-MariaDB proporciona un script para ayudarle con la configuración inicial y aplicar algunos parámetros de seguridad.
+MariaDB [proporciona un script](https://mariadb.com/docs/server/clients-and-utilities/deployment-tools/mariadb-secure-installation) para ayudarle con la configuración inicial y aplicar algunos parámetros de seguridad.
 
 Para ejecutarlo, introduzca el siguiente comando:
 
 ```bash
-sudo mysql_secure_installation
+sudo mariadb-secure-installation
 ```
 
 Confirme el primer salto pulsando `Entrar`{.action}.

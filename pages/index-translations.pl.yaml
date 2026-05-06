@@ -90,7 +90,6 @@ hosted-private-cloud-managed-vmware-security-secnumcloud: Zgodność i SecNumClo
 hosted-private-cloud-managed-vmware-troubleshooting: Diagnostyka
 hosted-private-cloud-managed-vmware-troubleshooting-maintenance: Konserwacja i aktualizacje
 hosted-private-cloud-managed-vmware-troubleshooting-logs: Monitorowanie i logi
-hosted-private-cloud-managed-vmware-troubleshooting-errors: Obsługa błędów
 hosted-private-cloud-managed-vmware-troubleshooting-compliance: Monitorowanie zgodności
 hosted-private-cloud-managed-vmware-additional-resources: Dodatkowe zasoby
 hosted-private-cloud-nutanix: Nutanix on OVHcloud
@@ -105,11 +104,14 @@ hosted-private-cloud-nutanix-troubleshooting: Diagnostyka
 hosted-private-cloud-nutanix-additional-resources: Dodatkowe zasoby
 hosted-private-cloud-hosted-private-cloud-opcp: On-Prem Cloud Platform
 hosted-private-cloud-hosted-private-cloud-opcp-getting-started: Pierwsze kroki
+hosted-private-cloud-hosted-private-cloud-opcp-security: Bezpieczeństwo
+hosted-private-cloud-hosted-private-cloud-opcp-cloudstore: CloudStore
 hosted-private-cloud-hosted-private-cloud-opcp-additional-resources: Dodatkowe zasoby
 hosted-private-cloud-snc-cloud-platform: SNC Cloud Platform
 hosted-private-cloud-snc-cloud-platform-getting-started: Pierwsze kroki
 hosted-private-cloud-baremetal-pod: Bare Metal Pod
 hosted-private-cloud-baremetal-pod-getting-started: Pierwsze kroki
+hosted-private-cloud-baremetal-pod-security: Bezpieczeństwo
 hosted-private-cloud-sap-ovhcloud: SAP on OVHcloud
 hosted-private-cloud-sap-ovhcloud-concepts: Koncepcje
 hosted-private-cloud-sap-ovhcloud-getting-started: Pierwsze kroki
@@ -130,19 +132,48 @@ public-cloud-ai-and-machine-learning: AI & machine learning
 public-cloud-ai-and-machine-learning-general-information: General information
 public-cloud-ai-and-machine-learning-command-line-interface: Command Line Interface
 public-cloud-ai-and-machine-learning-ai-notebooks: AI Notebooks
-public-cloud-ai-and-machine-learning-ai-notebooks-guides: AI Notebooks - Guides
+public-cloud-ai-and-machine-learning-ai-notebooks-key-concepts: AI Notebooks - Key concepts
+public-cloud-ai-and-machine-learning-ai-notebooks-getting-started: AI Notebooks - Getting started
+public-cloud-ai-and-machine-learning-ai-notebooks-configuration: AI Notebooks - Configuration
 public-cloud-ai-and-machine-learning-ai-notebooks-tutorials: AI Notebooks - Tutorials
+public-cloud-ai-and-machine-learning-ai-notebooks-tutorials-audio-speech: Audio/Speech
+public-cloud-ai-and-machine-learning-ai-notebooks-tutorials-computer-vision: Computer vision
+public-cloud-ai-and-machine-learning-ai-notebooks-tutorials-nlp: NLP
+public-cloud-ai-and-machine-learning-ai-notebooks-tutorials-code-assistant: Code assistant
+public-cloud-ai-and-machine-learning-ai-notebooks-tutorials-fine-tuning: Fine Tuning
+public-cloud-ai-and-machine-learning-ai-notebooks-tutorials-mlops-monitoring: MLOps/Monitoring
+public-cloud-ai-and-machine-learning-ai-notebooks-troubleshooting: AI Notebooks - Troubleshooting
+public-cloud-ai-and-machine-learning-ai-notebooks-additional-resources: AI Notebooks - Additional resources
 public-cloud-ai-and-machine-learning-ai-training: AI Training
-public-cloud-ai-and-machine-learning-ai-training-guides: AI Training - Guides
+public-cloud-ai-and-machine-learning-ai-training-key-concepts: AI Training - Key concepts
+public-cloud-ai-and-machine-learning-ai-training-getting-started: AI Training - Getting started
+public-cloud-ai-and-machine-learning-ai-training-configuration: AI Training - Configuration
 public-cloud-ai-and-machine-learning-ai-training-tutorials: AI Training - Tutorials
+public-cloud-ai-and-machine-learning-ai-training-tutorials-mlops-monitoring: MLOps/Monitoring
+public-cloud-ai-and-machine-learning-ai-training-tutorials-nlp: NLP
+public-cloud-ai-and-machine-learning-ai-training-tutorials-audio-signal-processing: Audio/Signal processing
+public-cloud-ai-and-machine-learning-ai-training-tutorials-computer-vision: Computer vision
+public-cloud-ai-and-machine-learning-ai-training-tutorials-model-export-inference: Model export/Inference
+public-cloud-ai-and-machine-learning-ai-training-troubleshooting: AI Training - Troubleshooting
+public-cloud-ai-and-machine-learning-ai-training-additional-resources: AI Training - Additional resources
 public-cloud-ai-and-machine-learning-ai-deploy: AI Deploy
-public-cloud-ai-and-machine-learning-ai-deploy-guides: AI Deploy - Guides
+public-cloud-ai-and-machine-learning-ai-deploy-key-concepts: AI Deploy - Key concepts
+public-cloud-ai-and-machine-learning-ai-deploy-getting-started: AI Deploy - Getting started
+public-cloud-ai-and-machine-learning-ai-deploy-configuration: AI Deploy - Configuration
+public-cloud-ai-and-machine-learning-ai-deploy-security: AI Deploy - Security
 public-cloud-ai-and-machine-learning-ai-deploy-tutorials: AI Deploy - Tutorials
+public-cloud-ai-and-machine-learning-ai-deploy-troubleshooting: AI Deploy - Troubleshooting
+public-cloud-ai-and-machine-learning-ai-deploy-additional-resources: AI Deploy - Additional resources
 public-cloud-ai-and-machine-learning-ai-ecosystem: AI Partners Ecosystem
-public-cloud-ai-and-machine-learning-ai-ecosystem-guides: AI Partners - Guides
+public-cloud-ai-and-machine-learning-ai-ecosystem-key-concepts: AI Partners - Key concepts
+public-cloud-ai-and-machine-learning-ai-ecosystem-getting-started: AI Partners - Getting started
 public-cloud-ai-and-machine-learning-ai-endpoints: AI Endpoints
-public-cloud-ai-and-machine-learning-ai-endpoints-guides: AI Endpoints - Guides
-public-cloud-ai-and-machine-learning-ai-endpointstutorials: AI Endpoints - Tutorials
+public-cloud-ai-and-machine-learning-ai-endpoints-key-concepts: AI Endpoints - Key concepts
+public-cloud-ai-and-machine-learning-ai-endpoints-getting-started: AI Endpoints - Getting started
+public-cloud-ai-and-machine-learning-ai-endpoints-tutorials-integrations: Integrations
+public-cloud-ai-and-machine-learning-ai-endpoints-tutorials: AI Endpoints - Tutorials
+public-cloud-ai-and-machine-learning-ai-endpoints-troubleshooting: AI Endpoints - Troubleshooting
+public-cloud-ai-and-machine-learning-ai-endpoints-additional-resources: AI Endpoints - Additional resources
 public-cloud-quantum-computing: Quantum computing
 public-cloud-quantum-computing-general-information: General information
 public-cloud-quantum-computing-emulators: Quantum emulators
@@ -178,49 +209,78 @@ public-cloud-containers-orchestration-managed-rancher-service-getting-started: G
 public-cloud-containers-orchestration-managed-rancher-service-configuration: Configuration
 public-cloud-containers-orchestration-managed-rancher-service-tutorials: Tutorials
 public-cloud-containers-orchestration-managed-rancher-service-additional-resources: Additional resources
-public-cloud-databases-common-configuration: Configuration
-public-cloud-databases-common-getting-started: Getting started
-public-cloud-databases-common-key-concepts: Key concepts
-public-cloud-databases-common-migration: Migration
-public-cloud-databases-common-security: Security
-public-cloud-databases-common-troubleshooting: Troubleshooting
+public-cloud-databases-common-additional-resources: Dodatkowe zasoby
+public-cloud-databases-common-configuration: Konfiguracja
+public-cloud-databases-common-getting-started: Pierwsze kroki
+public-cloud-databases-common-key-concepts: Kluczowe pojęcia
+public-cloud-databases-common-migration: Migracja
+public-cloud-databases-common-security: Bezpieczeństwo
+public-cloud-databases-common-troubleshooting: Diagnostyka
+public-cloud-databases-common-tutorials: Tutorials
 public-cloud-databases-common: Common
-public-cloud-databases-mongodb-advanced-guides: MongoDB - Advanced guides
-public-cloud-databases-mongodb-getting-started: MongoDB - Getting started
-public-cloud-databases-mongodb-guides: MongoDB - User guides
-public-cloud-databases-mongodb-tutorials: MongoDB - Tutorials
+public-cloud-databases-mongodb-additional-resources: Dodatkowe zasoby
+public-cloud-databases-mongodb-configuration: Konfiguracja
+public-cloud-databases-mongodb-getting-started: Pierwsze kroki
+public-cloud-databases-mongodb-key-concepts: Kluczowe pojęcia
+public-cloud-databases-mongodb-migration: Migracja
+public-cloud-databases-mongodb-security: Bezpieczeństwo
+public-cloud-databases-mongodb-troubleshooting: Diagnostyka
+public-cloud-databases-mongodb-tutorials: Tutorials
 public-cloud-databases-mongodb: MongoDB
-public-cloud-databases-mysql-guides: MySQL - Guides
-public-cloud-databases-mysql-tutorials: MySQL - Tutorials
+public-cloud-databases-mysql-additional-resources: Dodatkowe zasoby
+public-cloud-databases-mysql-configuration: Konfiguracja
+public-cloud-databases-mysql-getting-started: Pierwsze kroki
+public-cloud-databases-mysql-key-concepts: Kluczowe pojęcia
+public-cloud-databases-mysql-migration: Migracja
+public-cloud-databases-mysql-security: Bezpieczeństwo
+public-cloud-databases-mysql-troubleshooting: Diagnostyka
+public-cloud-databases-mysql-tutorials: Tutorials
 public-cloud-databases-mysql: MySQL
-public-cloud-databases-postgresql-guides: PostgreSQL - Guides
-public-cloud-databases-postgresql-tutorials: PostgreSQL - Tutorials
+public-cloud-databases-postgresql-additional-resources: Dodatkowe zasoby
+public-cloud-databases-postgresql-configuration: Konfiguracja
+public-cloud-databases-postgresql-getting-started: Pierwsze kroki
+public-cloud-databases-postgresql-key-concepts: Kluczowe pojęcia
+public-cloud-databases-postgresql-migration: Migracja
+public-cloud-databases-postgresql-security: Bezpieczeństwo
+public-cloud-databases-postgresql-troubleshooting: Diagnostyka
+public-cloud-databases-postgresql-tutorials: Tutorials
 public-cloud-databases-postgresql: PostgreSQL
-public-cloud-databases-valkey-guides: Valkey - Guides
-public-cloud-databases-valkey-tutorials: Valkey - Tutorials
+public-cloud-databases-valkey-configuration: Konfiguracja
+public-cloud-databases-valkey-getting-started: Pierwsze kroki
+public-cloud-databases-valkey-key-concepts: Kluczowe pojęcia
+public-cloud-databases-valkey-migration: Migracja
+public-cloud-databases-valkey-security: Bezpieczeństwo
+public-cloud-databases-valkey-troubleshooting: Diagnostyka
+public-cloud-databases-valkey-tutorials: Tutorials
 public-cloud-databases-valkey: Valkey
 public-cloud-databases: Public Cloud Databases
-public-cloud-data-analytics-common-configuration: Configuration
-public-cloud-data-analytics-common-getting-started: Getting started
-public-cloud-data-analytics-common-key-concepts: Key concepts
-public-cloud-data-analytics-common-migration: Migration
-public-cloud-data-analytics-common-security: Security
-public-cloud-data-analytics-common-troubleshooting: Troubleshooting
+public-cloud-data-analytics-common-additional-resources: Dodatkowe zasoby
+public-cloud-data-analytics-common-configuration: Konfiguracja
+public-cloud-data-analytics-common-getting-started: Pierwsze kroki
+public-cloud-data-analytics-common-key-concepts: Kluczowe pojęcia
+public-cloud-data-analytics-common-migration: Migracja
+public-cloud-data-analytics-common-security: Bezpieczeństwo
+public-cloud-data-analytics-common-troubleshooting: Diagnostyka
+public-cloud-data-analytics-common-tutorials: Tutorials
 public-cloud-data-analytics-common: Common
 public-cloud-data-analytics-grafana-guides: Dashboards - Guides
 public-cloud-data-analytics-grafana-tutorials: Dashboards - Tutorials
 public-cloud-data-analytics-grafana: Dashboards
-public-cloud-data-analytics-kafka-advanced-guides: Kafka - Advanced guides
-public-cloud-data-analytics-kafka-connect-guides: Kafka Connect - Guides
-public-cloud-data-analytics-kafka-connect: Kafka Connect
-public-cloud-data-analytics-kafka-getting-started: Kafka - Getting started
-public-cloud-data-analytics-kafka-guides: Kafka - User guides
-public-cloud-data-analytics-kafka-mirrormaker-guides: Kafka MirrorMaker - Guides
-public-cloud-data-analytics-kafka-mirrormaker: Kafka MirrorMaker
-public-cloud-data-analytics-kafka-tutorials: Kafka - Tutorials
+public-cloud-data-analytics-kafka-configuration: Konfiguracja
+public-cloud-data-analytics-kafka-getting-started: Pierwsze kroki
+public-cloud-data-analytics-kafka-key-concepts: Kluczowe pojęcia
+public-cloud-data-analytics-kafka-migration: Migracja
+public-cloud-data-analytics-kafka-security: Bezpieczeństwo
+public-cloud-data-analytics-kafka-troubleshooting: Diagnostyka
+public-cloud-data-analytics-kafka-tutorials: Tutorials
 public-cloud-data-analytics-kafka: Kafka
 public-cloud-data-analytics-opensearch-guides: OpenSearch - Guides
 public-cloud-data-analytics-opensearch: OpenSearch
+public-cloud-data-analytics-clickhouse: Clickhouse
+public-cloud-data-analytics-clickhouse-key-concepts: Key concepts
+public-cloud-data-analytics-clickhouse-getting-started: Getting started
+public-cloud-data-analytics-clickhouse-configuration: Configuration
+public-cloud-data-analytics-clickhouse-tutorials: Tutorials
 public-cloud-data-analytics: Analytics
 public-cloud-data-analytics-general-information: General information
 public-cloud-data-analytics-general-guides: General guides
@@ -277,9 +337,8 @@ public-cloud-storage-block-storage-configuration: Konfiguracja
 public-cloud-storage-block-storage-migration: Migracja
 public-cloud-storage-block-storage-additional-resources: Dodatkowe zasoby
 public-cloud-storage-file-storage: File Storage
+public-cloud-storage-file-storage-key-concepts: Kluczowe pojęcia
 public-cloud-storage-file-storage-getting-started: Pierwsze kroki
-public-cloud-integrations: Integrations
-public-cloud-integrations-prefect: Prefect
 public-cloud-network: Public Cloud Network Services
 public-cloud-network-key-concepts: Kluczowe pojęcia
 public-cloud-network-getting-started: Pierwsze kroki
@@ -347,7 +406,7 @@ web-cloud-domains-dns-configuration-dns-zone: Strefa DNS
 web-cloud-domains-dns-security: Bezpieczeństwo
 web-cloud-domains-dns-tutorials: Tutorials
 web-cloud-domains-domain-names: Nazwy domen
-web-cloud-domains-domain-names-configuration-changing-a-domain-name-owner-trade: Zmiana właściciela nazwy domeny (trade)
+web-cloud-domains-domain-names-configuration-changing-a-domain-name-owner-trade: Zarządzanie kontaktami domen
 web-cloud-domains-domain-names-getting-started: Pierwsze kroki
 web-cloud-domains-domain-names-configuration: Konfiguracja
 web-cloud-domains-domain-names-migration-incoming-transfer-to-ovhcloud: Transfer przychodzący do OVHcloud
@@ -385,8 +444,7 @@ web-cloud-phone-and-fax-fax-getting-started: Pierwsze kroki
 web-cloud-phone-and-fax-fax-configuration: Konfiguracja
 web-cloud-phone-and-fax-fax-configuration-sending-and-receiving-faxes: Wysyłanie i odbieranie faksów
 web-cloud-phone-and-fax-voip: VoIP
-web-cloud-phone-and-fax-voip-configuration-administration: Podanie
-web-cloud-phone-and-fax-voip-configuration-api: API
+web-cloud-phone-and-fax-voip-getting-started-administration: Podanie
 web-cloud-phone-and-fax-voip-configuration-computer-telephony-integration-cti: Integracja telefonii komputerowej (CTI)
 web-cloud-phone-and-fax-voip-configuration-ipbx: IPBX
 web-cloud-phone-and-fax-voip-configuration-numbers-and-aliases: Numery i aliasy
@@ -416,6 +474,8 @@ web-cloud-hosting-tutorials-wordpress: Samouczki WordPress
 web-cloud-hosting-tutorials-cloud-web: Samouczki dla Cloud Web
 web-cloud-managed-hosting-for-wordpress: Managed Hosting for WordPress
 web-cloud-managed-hosting-for-wordpress-getting-started: Pierwsze kroki
+web-cloud-video-center: Video Center
+web-cloud-video-center-getting-started: Pierwsze kroki
 web-cloud-ssl-gateway: SSL Gateway
 web-cloud-ssl-gateway-getting-started: Pierwsze kroki
 storage-object-storage: Object Storage
@@ -450,6 +510,7 @@ storage-file-storage-ha-nas-configuration: Konfigurowanie
 storage-file-storage-ha-nas-migration: Migracja
 storage-file-storage-ha-nas-additional-resources: Dodatkowe zasoby
 storage-file-storage-public-cloud-file-storage: Public Cloud File Storage
+storage-file-storage-public-cloud-file-storage-key-concepts: Kluczowe pojęcia
 storage-file-storage-public-cloud-file-storage-getting-started: Pierwsze kroki
 storage-block-storage: Block Storage
 storage-block-storage-block-volume: Block volume
@@ -465,11 +526,21 @@ storage-block-storage-cloud-disk-array-configuration: Konfigurowanie
 storage-block-storage-cloud-disk-array-tutorials: Tutorials
 storage-block-storage-cloud-disk-array-additional-resources: Dodatkowe zasoby
 storage-backup-and-disaster-recovery-solution: Backup and disaster recovery solution
-storage-backup-and-disaster-recovery-solution-veeam: Veeam
+storage-backup-and-disaster-recovery-solution-veeam-enterprise-plus: Veeam Enterprise Plus
+storage-backup-and-disaster-recovery-solution-veeam-enterprise-plus-getting-started: Pierwsze kroki
+storage-backup-and-disaster-recovery-solution-veeam-enterprise-plus-configuration: Konfigurowanie
+storage-backup-and-disaster-recovery-solution-veeam-enterprise-plus-security: Bezpieczeństwo
+storage-backup-and-disaster-recovery-solution-managed-veeam-public-vcf: Managed Veeam for Public VCF aaS
+storage-backup-and-disaster-recovery-solution-managed-veeam-public-vcf-getting-started: Pierwsze kroki
 storage-backup-and-disaster-recovery-solution-hycu: HYCU for OVHcloud
+storage-backup-and-disaster-recovery-solution-hycu-getting-started: Pierwsze kroki
 storage-backup-and-disaster-recovery-solution-kubernetes-data-protection: Managed Kubernetes - Data Protection
-storage-backup-and-disaster-recovery-solution-agent-backup-for-iaas: Agent Backup for IaaS
+storage-backup-and-disaster-recovery-solution-kubernetes-data-protection-tutorials: Tutorials
 storage-backup-and-disaster-recovery-solution-backup-agent: Backup Agent
+storage-backup-and-disaster-recovery-solution-backup-agent-key-concepts: Kluczowe pojęcia
+storage-backup-and-disaster-recovery-solution-backup-agent-getting-started: Pierwsze kroki
+storage-backup-and-disaster-recovery-solution-backup-agent-troubleshooting: Rozwiązywanie problemów
+storage-backup-and-disaster-recovery-solution-backup-agent-additional-resources: Dodatkowe zasoby
 network-additional-ip: Additional IP
 network-additional-ip-key-concepts: Kluczowe pojęcia
 network-additional-ip-configuration: Konfiguracja

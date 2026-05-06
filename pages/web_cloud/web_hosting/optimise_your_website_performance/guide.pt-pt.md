@@ -1,7 +1,7 @@
 ---
 title: 'Otimizar o desempenho do seu website'
 excerpt: 'Saiba como analisar a latência do seu website e como a melhorar'
-updated: 2025-10-09
+updated: 2026-04-01
 ---
 
 ## Objetivo
@@ -16,7 +16,16 @@ Este guia irá fornecer-lhe informações básicas sobre os pontos que podem afe
 - um [plano de Alojamento Web OVHcloud](/links/web/hosting)
 - um e-mail a confirmar a configuração do seu plano de Alojamento Web
 - um [nome de domínio](/links/web/domains) que pode ser utilizado para aceder ao seu website
-- acesso à [Área de Cliente OVHcloud](/links/manager)
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Acesso à Área de Cliente OVHcloud
+
+- **Ligação direta:** [Alojamentos](/links/control-panel/web-hosting)
+- **Caminho de navegação:** `Web Cloud`{.action} > `Alojamentos`{.action} > Selecione o seu alojamento web
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## Instruções
 
@@ -90,65 +99,60 @@ Encontrará mais informações sobre este tópico no Passo 5 abaixo.
 
 Correlacione os gráficos da utilização de recursos do seu alojamento (mais informações abaixo) para encontrar a origem dos atrasos e consultar os logs nas datas destes picos.
 
-Pode aceder aos seus logs, estatísticas e gráficos diretamente a partir da [Área de Cliente OVHcloud](/links/manager).
-
-Como aceder às estatísticas e logs:
-
-Clique nas janelas abaixo para visualizar cada uma das etapas **4**.
+<!-- CP-STEPS-START:access-stats-and-logs -->
+Para aceder às estatísticas e logs, clique nos separadores abaixo para visualizar cada uma das **3** etapas.
 
 > [!tabs]
 > **Etapa 1**
 >>
->> Aceda à [Área de Cliente OVHcloud](/links/manager) e aceda à secção `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Etapa 2**
->>
->> Clique no menu `Alojamentos`{.action} e escolha o alojamento web em causa.
+>> Aceda à página [Alojamentos](/links/control-panel/web-hosting) e selecione o alojamento web em causa.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Etapa 3**
+> **Etapa 2**
 >>
 >> Na página que se abrir, clique no separador `Estatísticas e logs`{.action}.
 >>
 >> ![statistics-and-logs](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/statistics-and-logs.png){.thumbnail}
 >>
-> **Etapa 4**
+> **Etapa 3**
 >>
 >> De seguida, clique no botão `Ver estatísticas`{.action} apresentado para aceder às estatísticas de visita do website ou em `Consultar os logs`{.action} para consultar os logs disponíveis para o seu alojamento web.
 >>
 >> ![logs](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/statistics-and-logs/tab.png){.thumbnail}
+<!-- CP-STEPS-END:access-stats-and-logs -->
 
-Como aceder aos gráficos:
+<!-- CP-STEPS-START:access-resource-charts -->
+Para aceder aos gráficos, clique nos separadores abaixo para visualizar cada uma das **3** etapas.
 
-1. Clique em `Alojamento`{.action} na coluna da esquerda e, em seguida, selecione o alojamento web correspondente.
-2. Na página que se abrir, clique no separador `Estatísticas e logs`{.action}. Desloque-se até à parte inferior da página onde se encontra o gráfico relativo à utilização do seu alojamento.
-3. Selecione o **tipo** de informação bem como o **período** dos dados apresentados.
-
-![gráficos](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/statistics-and-logs/infrastructure-statistics-graph.png){.thumbnail}
-
-Quais são os diferentes tipos de informação que podem ser visualizados?
-
-- **Pedidos HTTP**: Indicam o número médio de hits do website. Os hits são classificados pelo estado HTTP 2xx/3xx/4xx/5xx.
-
-- **Tempo médio de resposta**: Corresponde ao tempo médio de resposta da página. É feita uma distinção ente páginas dinâmicas e estáticas.
-
-- **Superação do limite de recursos**: Este gráfico mostra a utilização feita pelos workers PHP, para o orientar para um pacote de alojamento web diferente, se necessário. A utilização de PHP-FPM pode ajudá-lo a reduzir a utilização dos workers PHP.
-
-- **Utilização da CPU**: Indica a utilização da CPU do seu website. Pode ajudar a detetar uma possível sobrecarga da CPU.
-
-- **Ligações de saída**: Permite-lhe visualizar o pedido TCP enviado pelo servidor, por exemplo, se o seu website for acedido de modo ilícito (<i>hacking</i>), o servidor poderá ser utilizado para atacar outros websites externos. Pode ainda verificar as chamadas externas realizadas por módulos como o Facebook, Twitter, etc. A redução do número de pedidos TCP enviados é uma boa forma de reduzir o tempo de carregamento, uma vez que se o servidor ao qual está a solicitar o conteúdo está a demorar a responder, o atraso no carregamento do seu website irá aumentar.
-
-- **Comandos FTP**: Apresenta os diferentes comandos FTP que foram utilizados no alojamento. Por exemplo, as tentativas de início de sessão efetuadas com e sem sucesso, descarregar, carregar e eliminar ficheiros...
-
-As duas categorias seguintes são apenas apresentadas se estiver atualmente a utilizar uma base de dados na sua oferta de alojamento.
-Não se esqueça de selecionar o nome da sua base de dados e o período desejado.
-
-- **Tempo de resposta SQL**: Apresenta o tempo de resposta das consultas.
-
-- **Pedidos SQL**: Apresenta o número de pedidos.
+> [!tabs]
+> **Etapa 1**
+>>
+>> Aceda à página [Alojamentos](/links/control-panel/web-hosting) e selecione o alojamento web em causa.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Etapa 2**
+>>
+>> Na página que se abrir, clique no separador `Estatísticas e logs`{.action}. Desloque-se até à parte inferior da página onde se encontra o gráfico relativo à utilização do seu alojamento.
+>>
+> **Etapa 3**
+>>
+>> Selecione o **tipo** de informação bem como o **período** dos dados apresentados.
+>>
+>> ![Gráfico de estatísticas de utilização da infraestrutura](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/statistics-and-logs/infrastructure-statistics-graph.png){.thumbnail}
+>>
+>> Os diferentes tipos de informação disponíveis:
+>>
+>> - **Pedidos HTTP**: Indicam o número médio de hits do website. Os hits são classificados pelo estado HTTP 2xx/3xx/4xx/5xx.
+>> - **Tempo médio de resposta**: Corresponde ao tempo médio de resposta da página. É feita uma distinção entre páginas dinâmicas e estáticas.
+>> - **Superação do limite de recursos**: Este gráfico mostra a utilização feita pelos workers PHP, para o orientar para um pacote de alojamento web diferente, se necessário. A utilização de PHP-FPM pode ajudá-lo a reduzir a utilização dos workers PHP.
+>> - **Utilização da CPU**: Indica a utilização da CPU do seu website. Pode ajudar a detetar uma possível sobrecarga da CPU.
+>> - **Ligações de saída**: Permite-lhe visualizar os pedidos TCP enviados pelo servidor. A redução do número de pedidos TCP enviados é uma boa forma de reduzir o tempo de carregamento.
+>> - **Comandos FTP**: Apresenta os diferentes comandos FTP que foram utilizados no alojamento. Por exemplo, as tentativas de início de sessão efetuadas com e sem sucesso, descarregar, carregar e eliminar ficheiros.
+>> - **Tempo de resposta SQL**: Apresenta o tempo de resposta das consultas (visível apenas se utilizar uma base de dados).
+>> - **Pedidos SQL**: Apresenta o número de pedidos (visível apenas se utilizar uma base de dados).
+<!-- CP-STEPS-END:access-resource-charts -->
 
 ### 5 - Analisar os pedidos de rede
 
@@ -185,11 +189,7 @@ _Este passo é opcional se não estiver a utilizar uma base de dados._
 Pode aceder à sua base de dados utilizando o PHPMyAdmin; as instruções sobre como utilizar o PHPMyAdmin sairiam do âmbito deste guia pelo que não serão detalhadas em maior pormenor.
 No entanto, existem vários guias externos sobre esta matéria.
 
-**Como aceder à base de dados via phpMyAdmin:** Para aceder à sua base de dados via phpMyAdmin, siga o procedimento disponibilizado na [Área de Cliente OVHcloud](/links/manager):
-
-- Clique no seu domínio na secção `Alojamento`{.action}.
-- Aceda ao separador `Base de dados`{.action}.
-- Clique nos 3 pontos`...`{.action} à direita da sua base de dados para aceder a phpMyAdmin.
+**Como aceder à base de dados via phpMyAdmin:** consulte a secção dedicada no nosso guia «[Gestão de uma base de dados num pacote de alojamento web](/pages/web_cloud/web_hosting/sql_create_database)».
 
 **Porquê otimizar uma base de dados?** É necessário efetuar a manutenção da base de dados para garantir o seu bom desempenho. Por outras palavras, a informação incluída na base de dados deve ser devolvida logo que possível ao script que a solicitou. Para o efeito, a base de dados deve estar bem estruturada e otimizada. Vamos analisar como pode otimizar da melhor forma a sua base de dados.
 

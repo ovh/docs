@@ -21,8 +21,18 @@ Jeśli konfiguracja modułu nie zostanie przeprowadzona prawidłowo, instalacja 
 ## Wymagania początkowe
 
 - Posiadanie kompatybilnego [hostingu](/links/web/hosting).
-- Dostęp do[Panelu klienta OVHcloud](/links/manager).
 - Użycie funkcji "[Moduł za 1 kliknięciem](/pages/web_cloud/web_hosting/cms_install_1_click_modules)" w celu utworzenia nowej strony WWW.
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Web hosting](/links/control-panel/web-hosting)
+- **Ścieżka nawigacji:** `Web Cloud`{.action} > `Hosting`{.action} > Wybierz hosting WWW
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## W praktyce
 

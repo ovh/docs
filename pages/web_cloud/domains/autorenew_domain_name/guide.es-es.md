@@ -1,14 +1,26 @@
 ---
 title: "Renovar los dominios de OVHcloud"
 excerpt: "Descubra por qué y cómo renovar sus dominios OVHcloud"
-updated: 2025-06-13
+updated: 2026-03-13
 ---
+
+<style>
+details>summary {
+    color:rgb(33, 153, 232) !important;
+    cursor: pointer;
+}
+details>summary::before {
+    content:'\25B6';
+    padding-right:1ch;
+}
+details[open]>summary::before {
+    content:'\25BC';
+}
+</style>
 
 ## Objetivo
 
-Esta guía explica cómo gestionar un dominio y todos los aspectos relacionados con su renovación.
-
-Encontrará toda la información para:
+Esta guía explica cómo gestionar un dominio y todos los aspectos relacionados con su renovación:
 
 - Diferenciar entre la renovación automática y la manual
 - Cambiar el modo de renovación de los dominios
@@ -21,8 +33,18 @@ Encontrará toda la información para:
 ## Requisitos
 
 - Tener un dominio registrado con OVHcloud.
-- Estar conectado a su [área de cliente de OVHcloud](/links/manager), en la sección `Web Cloud`{.action}.
 - Ser contacto de facturación de sus servicios OVHcloud.
+
+<!-- CP-NAV-START:billing-services -->
+---
+
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [Mis soluciones y servicios](/links/control-panel/billing-services)
+- **Ruta de navegación:** Haga clic en su nombre en la parte superior derecha > `Mis soluciones y servicios`{.action}
+
+---
+<!-- CP-NAV-END:billing-services -->
 
 ## Procedimiento
 
@@ -43,69 +65,86 @@ Si la renovación automática está activada, su forma de pago debe ser válida 
 
 ### Los diferentes tipos de renovación
 
-#### La renovación automática
-
-Entre las principales ventajas de la renovación automática se incluyen:
-
-- **Simplicidad**: ya no tendrá que preocuparse por las fechas de renovación: todo está automatizado para usted.
-- **Continuidad del servicio**: sus servicios permanecen activos, sin interrupción del servicio.
-- **Ahorro de tiempo**: evite realizar cualquier operación manual y no se olvide de ella.
-
-> [!warning]
->
-> Si no existe una forma de pago válida, no será posible renovarla y usted podría perder el dominio. Compruebe la validez de su forma de pago.
->
-
-#### La renovación manual
-
-Si no desea que se realice una renovación automática y, por lo tanto, desea que se realice el cargo automático, puede cambiar el tipo de renovación a **manual**.
-
-Este modo de renovación puede ser útil:
-
-- Si no está seguro de querer conservar el servicio en la fecha de vencimiento;
-- Si no desea que sus facturas se carguen automáticamente a su forma de pago.
-
-Si elige la renovación manual, recibirá varios recordatorios antes de la fecha de expiración, que contienen un enlace para renovar online el servicio que llegue a su fecha de expiración.
-También puede realizar el pago fácilmente desde su área de cliente.
-
-**Atención**: Si no realiza el pago del servicio con renovación manual, puede perder su dominio o pagar una tarifa de restauración (en caso de que el dominio esté suspendido).
-Sin embargo, si no desea conservar este servicio, no es necesario solicitar la baja del mismo.
+> [!tabs]
+> **La renovación automática**
+>> Entre las principales ventajas de la renovación automática se incluyen:
+>>
+>> - **Simplicidad**: ya no tendrá que preocuparse por las fechas de renovación: todo está automatizado para usted.
+>> - **Continuidad del servicio**: sus servicios permanecen activos, sin interrupción del servicio.
+>> - **Ahorro de tiempo**: evite realizar cualquier operación manual y no se olvide de ella.
+>>
+>> > [!warning]
+>> >
+>> > Si no existe una forma de pago válida, no será posible renovarla y usted podría perder el dominio. Compruebe la validez de su forma de pago.
+>>
+> **La renovación manual**
+>> Si no desea que se realice una renovación automática y, por lo tanto, desea que se realice el cargo automático, puede cambiar el tipo de renovación a **manual**.
+>>
+>> Este modo de renovación puede ser útil:
+>>
+>> - Si no está seguro de querer conservar el servicio en la fecha de vencimiento;
+>> - Si no desea que sus facturas se carguen automáticamente a su forma de pago.
+>>
+>> Si elige la renovación manual, recibirá varios recordatorios antes de la fecha de expiración, que contienen un enlace para renovar online el servicio que llegue a su fecha de expiración.
+>> También puede realizar el pago fácilmente desde su área de cliente.
+>>
+>> **Atención**: Si no realiza el pago del servicio con renovación manual, puede perder su dominio o pagar una tarifa de restauración (en caso de que el dominio esté suspendido).
+>> Sin embargo, si no desea conservar este servicio, no es necesario solicitar la baja del mismo.
 
 ### Cambiar el modo de renovación de mis dominios
 
-En su [área de cliente](/links/manager), haga clic en su nombre en la parte superior derecha de su pantalla y luego en `Mis soluciones y servicios`{.action}. En la tabla que se abre, identifique el dominio o dominios cuyo modo de renovación desea cambiar.
+<!-- CP-STEPS-START:cambiar-modo-renovacion -->
+Haga clic en las pestañas de abajo para visualizar cada uno de los **2** pasos.
 
-#### Para un solo dominio
-
-Realice las siguientes acciones:
-
-- En la tabla, identifique el dominio cuya renovación desea cambiar
-- Haga clic a la derecha de la línea en el botón `...`{.action}.
-- Haga clic en la acción `Configurar la renovación`{.action}.
-- Configure la renovación en `Manual`{.action} o `Automática`{.action}.
-- Si elige la renovación automática, elija la frecuencia de renovación automática.
-- Confirme y pague.
-
-#### Para varios dominios
-
-Realice las siguientes acciones:
-
-- En la tabla, identifique los dominios cuya renovación desea cambiar.
-- Seleccione las filas correspondientes de la tabla marcando las casillas de verificación al principio de la fila.
-- Haga clic en el botón `Acciones`{.action} situado en la parte superior izquierda de la tabla.
-- Seleccione `Activar el pago automático`{.action} o `Desactivar el pago automático`{.action}.
+> [!tabs]
+> **Paso 1**
+>>
+>> Acceda a la página [Mis soluciones y servicios](/links/control-panel/billing-services). En la tabla que se abre, identifique el dominio o dominios cuyo modo de renovación desea cambiar.
+>>
+>> ![Mis soluciones y servicios](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/my-services-en.png){.thumbnail}
+>>
+> **Paso 2**
+>>
+>> **Para un solo dominio:**
+>>
+>> - Haga clic a la derecha de la línea en el botón `...`{.action}.
+>> - Haga clic en la acción `Configurar la renovación`{.action}.
+>> - Configure la renovación en `Manual`{.action} o `Automática`{.action}.
+>> - Si elige la renovación automática, elija la frecuencia de renovación automática.
+>> - Confirme y pague.
+>>
+>> **Para varios dominios:**
+>>
+>> - Seleccione las filas correspondientes de la tabla marcando las casillas de verificación al principio de la fila.
+>> - Haga clic en el botón `Acciones`{.action} situado en la parte superior izquierda de la tabla.
+>> - Seleccione `Activar el pago automático`{.action} o `Desactivar el pago automático`{.action}.
+<!-- CP-STEPS-END:cambiar-modo-renovacion -->
 
 ### Renovar mi dominio antes de la fecha de expiración
 
-Realice las siguientes acciones:
+<!-- CP-STEPS-START:renovar-antes-expiracion -->
+Haga clic en las pestañas de abajo para visualizar cada uno de los **3** pasos.
 
-- En la tabla, identifique el dominio que quiere renovar.
-- Haga clic a la derecha de la línea en el botón `...`{.action}.
-- Haga clic en la acción `Adelantar el pago`{.action}.
-- Después de ser redirigido a una interfaz de pago en línea, siga las instrucciones.
-
-Puede renovar el servicio en cualquier momento antes de su expiración y también elegir la duración de renovación.
-En este caso, el período de validez contratado se sumará al período de validez en curso. No perderá el tiempo de validez restante.
+> [!tabs]
+> **Paso 1**
+>>
+>> Acceda a la página [Mis soluciones y servicios](/links/control-panel/billing-services). En la tabla, identifique el dominio que quiere renovar.
+>>
+>> ![Mis soluciones y servicios](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/my-services-en.png){.thumbnail}
+>>
+> **Paso 2**
+>>
+>> Haga clic a la derecha de la línea en el botón `...`{.action} y luego en `Adelantar el pago`{.action}.
+>>
+>> ![Opción Adelantar el pago](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/forward-payment-en.png){.thumbnail}
+>>
+> **Paso 3**
+>>
+>> Después de ser redirigido a una interfaz de pago en línea, siga las instrucciones.
+>>
+>> Puede renovar el servicio en cualquier momento antes de su expiración y también elegir la duración de renovación.
+>> En este caso, el período de validez contratado se sumará al período de validez en curso. No perderá el tiempo de validez restante.
+<!-- CP-STEPS-END:renovar-antes-expiracion -->
 
 ### Seguir la renovación de un dominio
 
@@ -113,38 +152,71 @@ Una vez realizado el cargo por la renovación, el dominio se renovará el día a
 
 Los datos mostrados en el Whois se actualizarán para confirmar la renovación del dominio.
 
-Para comprobar el estado de la renovación del dominio:
+<!-- CP-STEPS-START:seguir-renovacion -->
+Para comprobar el estado de la renovación del dominio, haga clic en las pestañas de abajo para visualizar cada uno de los **2** pasos.
 
-1. Conéctese a su [área de cliente de OVHcloud](/links/manager).
-1. Acceda a la sección `Web Cloud`{.action} en la columna izquierda.
-1. Haga clic en `Dominios`{.action} en la sección `Dominios y DNS`{.action}.
-1. Compruebe el estado de la renovación en la columna `Estado` de la línea correspondiente al dominio.
-
-Una vez realizado el pago, aparecerá la indicación `Renovación en curso` hasta la renovación efectiva de su dominio en el registro.
+> [!tabs]
+> **Paso 1**
+>>
+>> Acceda a la página [Dominios](/links/control-panel/web-domains) y seleccione el dominio en cuestión.
+>>
+>> ![Dominios](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
+>>
+> **Paso 2**
+>>
+>> En la sección **Información general**, compruebe el estado de la renovación en **Estado del dominio**.
+>>
+>> Una vez realizado el pago, aparecerá la indicación `Renovación en curso` hasta la renovación efectiva de su dominio en el registro.
+<!-- CP-STEPS-END:seguir-renovacion -->
 
 ### Dar de baja un dominio
 
-- En la tabla, identifique el dominio que quiere renovar.
-- Haga clic a la derecha de la línea en el botón `...`{.action}.
-- Haga clic en la acción `Dar de baja mi servicio`{.action}.
+<!-- CP-STEPS-START:dar-de-baja-dominio -->
+Haga clic en las pestañas de abajo para visualizar cada uno de los **2** pasos.
 
-Esta acción se propone para los servicios configurados en **renovación automática**. Al elegir esta acción, se desactivan la renovación y el cargo automáticos para el servicio seleccionado.
+> [!tabs]
+> **Paso 1**
+>>
+>> Acceda a la página [Mis soluciones y servicios](/links/control-panel/billing-services). En la tabla, identifique el dominio que quiere dar de baja.
+>>
+>> ![Mis soluciones y servicios](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/my-services-en.png){.thumbnail}
+>>
+> **Paso 2**
+>>
+>> Haga clic a la derecha de la línea en el botón `...`{.action} y luego en `Dar de baja mi servicio`{.action}.
+>>
+>> Esta acción se propone para los servicios configurados en **renovación automática**. Al elegir esta acción, se desactivan la renovación y el cargo automáticos para el servicio seleccionado.
+<!-- CP-STEPS-END:dar-de-baja-dominio -->
 
 > [!primary]
 >
 > La baja del dominio finalizará al expirar dicho dominio.
->
 
-Para más información sobre la baja de los servicios de OVHcloud, siga las instrucciones de la guía "**[Cómo dar de baja sus servicios de OVHcloud](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_cancel_services)**".
+Para más información, consulte nuestra guía "**[Cómo dar de baja sus servicios de OVHcloud](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_cancel_services)**".
 
-### Acceder a la factura de renovación del dominio
+### Abonar la factura de renovación de un dominio
 
-Una mención `Factura pendiente` aparece cuando una factura está pendiente de pago y cuando:
+<!-- CP-STEPS-START:abonar-factura-renovacion -->
+Haga clic en las pestañas de abajo para visualizar cada uno de los **2** pasos.
 
- - tiene servicios con renovación automática ;
- - No ha registrado ninguna forma de pago que permita realizar un cargo para el pago de sus facturas.
-
-Solo tiene que elegir la acción `Abonar mi factura`{.action} que le redirigirá a una plataforma de pago en línea.
+> [!tabs]
+> **Paso 1**
+>>
+>> Acceda a la página [Mis soluciones y servicios](/links/control-panel/billing-services). En la tabla, identifique el dominio para el que debe abonar una factura de renovación.
+>>
+>> ![Mis soluciones y servicios](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/my-services-en.png){.thumbnail}
+>>
+> **Paso 2**
+>>
+>> Haga clic a la derecha de la línea en el botón `...`{.action} y luego en `Abonar mi factura`{.action}.
+>> Será redirigido a una plataforma de pago en línea.
+>>
+>> > [!primary]
+>> > La mención **Factura pendiente** aparece cuando una factura está pendiente de pago y cuando:
+>> >
+>> > - Tiene servicios con renovación automática.
+>> > - No ha registrado ninguna forma de pago que permita realizar un cargo para el pago de sus facturas.
+<!-- CP-STEPS-END:abonar-factura-renovacion -->
 
 ## FAQ
 
@@ -176,18 +248,26 @@ Es posible obtener un reembolso automático hasta 10 días antes de la fecha de 
 
 Una vez abonado el importe correspondiente a la renovación, la solicitud se enviará al registro correspondiente.
 
-El estado del dominio cambiará a `Renovación en curso`.
+Su dominio pasará a un estado de **renovación en curso**.
 
-Una vez realizada la renovación por el registro (aproximadamente un mes después del pago de los gastos de renovación), el estado de su dominio volverá a aparecer como `registrado`.
+Una vez realizada la renovación por el registro (aproximadamente un mes después del pago de los gastos de renovación), su dominio volverá a un estado que indica que está de nuevo **registrado**.
 
 Los datos del WHOIS se actualizarán posteriormente.
 
-Para comprobar el estado de la renovación del dominio:
+<!-- CP-STEPS-START:faq-comprobar-estado-renovacion -->
+Para comprobar el estado de la renovación del dominio, haga clic en las pestañas de abajo para visualizar cada uno de los **2** pasos.
 
-1. Conéctese a su [área de cliente de OVHcloud](/links/manager).
-1. Acceda a la sección `Web Cloud`{.action} en la columna izquierda.
-1. Haga clic en `Dominios`{.action} en la sección `Dominios y DNS`{.action}.
-1. Compruebe el estado de la renovación en la columna `Estado` de la línea correspondiente al dominio.
+> [!tabs]
+> **Paso 1**
+>>
+>> Acceda a la página [Dominios](/links/control-panel/web-domains) y seleccione el dominio en cuestión.
+>>
+>> ![Dominios](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
+>>
+> **Paso 2**
+>>
+>> En la sección **Información general**, compruebe el estado de la renovación en **Estado del dominio**.
+<!-- CP-STEPS-END:faq-comprobar-estado-renovacion -->
 
 ///
 

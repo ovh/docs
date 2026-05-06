@@ -14,6 +14,17 @@ Hasło do Panelu klienta OVHcloud umożliwia dostęp do wszystkich Twoich usług
 - Posiadanie aktywnego konta OVHcloud
 - Posiadanie identyfikatora klienta i/lub adresu e-mail
 
+<!-- CP-NAV-START:account-security -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Bezpieczeństwo](/links/control-panel/account-security)
+- **Ścieżka nawigacji:** Kliknij swoją nazwę w prawym górnym rogu > `Dostęp do konta`{.action} > `Bezpieczeństwo`{.action}
+
+---
+<!-- CP-NAV-END:account-security -->
+
 ## W praktyce
 
 ### Generowanie hasła
@@ -69,9 +80,7 @@ Jeśli Twoje hasło wykradzione, rekomendujemy [jego natychmiastową zmianę](./
 
 #### W panelu klienta OVHcloud
 
-- Zaloguj się do [Panelu klienta OVHcloud](/links/manager), kliknij Twoją nazwę użytkownika w prawym górnym rogu, a następnie kliknij `Dostęp do konta`{.action}.
-
-- Kliknij `Bezpieczeństwo`{.action}, a następnie `Zmień`{.action} po prawej stronie "Password".
+- Na stronie [Bezpieczeństwo konta](/links/control-panel/account-security) kliknij `Zmień`{.action} po prawej stronie "Password".
 
 ![manage-ovh-password](/pages/assets/screens/control_panel/product-selection/right-column/access-my-account/edit-account-password.png){.thumbnail}
 
@@ -84,6 +93,7 @@ Jeśli Twoje hasło wykradzione, rekomendujemy [jego natychmiastową zmianę](./
 ![manage-ovh-password](images/account-password-modif-manager-step4.png){.thumbnail}
 
 - Kiedy wykonasz te czynności, wyświetli się komunikat informujący o powodzeniu operacji. Kliknij przycisk `Kontynuuj`{.action} na dole wiadomości. Zostaniesz wówczas przekierowany na stronę logowania. Następnie wpisz nazwę użytkownika i nowe hasło.
+
 
 <a name="lost-password"></a>
 
@@ -111,6 +121,7 @@ Jeśli Twoje hasło wykradzione, rekomendujemy [jego natychmiastową zmianę](./
 > 
 > Ustanowienie nowego hasła automatycznie powoduje zamknięcie wszystkich aktywnych sesji na Twoim koncie OVHcloud.
 > 
+
 
 ## Sprawdź również
 [Zalecenia dotyczące tworzenia bezpiecznych haseł](https://www.gov.pl/web/baza-wiedzy/jak-tworzyc-bezpieczne-hasla)

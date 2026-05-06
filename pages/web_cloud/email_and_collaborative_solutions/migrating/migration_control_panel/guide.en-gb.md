@@ -1,21 +1,52 @@
 ---
-title: 'Migrating an MX Plan email account to an Email Pro or Exchange account'
-excerpt: 'Find out how to migrate an MX Plan email account to an Email Pro or Exchange account'
-updated: 2025-04-28
+title: 'Migrating an MX Plan email account to an Email Pro, Exchange or Zimbra account'
+excerpt: 'Find out how to migrate an MX Plan email address to an Email Pro, Exchange or Zimbra account'
+updated: 2026-03-30
 ---
 
 ## Objective
 
-OVHcloud offers several email solutions: MX Plan (standalone or included in a Web Hosting plan), Email Pro and Exchange. They have their individual features, and can be adapted to suit a number of uses. Are your needs changing? OVHcloud offers a migration tool you can use to switch from one solution to another.
+OVHcloud offers several email solutions: MX Plan (standalone or included in a Web Hosting plan), Zimbra, Email Pro and Exchange. They have their individual features, and can be adapted to suit a number of uses. Are your needs changing? OVHcloud offers a migration tool you can use to switch from one solution to another.
 
-**Find out how to migrate an MX Plan email account to an Email Pro or Exchange account.**
+**Find out how to migrate an MX Plan email account to an Email Pro, Exchange or Zimbra account.**
+
+> [!warning]
+>
+> [OVHcloud Mail Migrator](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_omm) allows you to migrate your messages from one email server to another.<br>
+> If your emails are only stored locally (POP configuration or local archiving), you can perform an [export from your email software](/pages/web_cloud/email_and_collaborative_solutions/migrating/manual_email_migration), then [import your PST file via OMM](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_omm) or [import directly from your email software](/pages/web_cloud/email_and_collaborative_solutions/migrating/manual_email_migration).
 
 ## Requirements
 
-- An MX Plan email account (as MX Plan standalone or included in an OVHcloud [Web Hosting plan](/links/web/hosting))
-- An [Exchange](/links/web/emails-hosted-exchange) or [Email Pro](/links/web/email-pro) service with at least one unconfigured account (which will appear as “@configureme.me”).
-- **No redirections set on the MX Plan email account you want to migrate**
-- Access to the [OVHcloud Control Panel](/links/manager)
+- An MX Plan email account (as MX Plan standalone or included in an OVHcloud [Web Hosting plan](/links/web/hosting)).
+- An [Exchange](/links/web/emails-hosted-exchange), [Email Pro](/links/web/email-pro) or [Zimbra](/links/web/zimbra) service with at least one unconfigured account (which will appear as “@configureme.me”).
+- **No redirections set on the MX Plan email account you want to migrate**.
+
+<!-- CP-NAV-START:web-mx-plan -->
+<!-- CP-NAV-START:web-email-pro -->
+<!-- CP-NAV-START:web-exchange -->
+---
+
+### OVHcloud Control Panel Access
+
+**MX Plan:**
+
+- **Direct link:** [MX Plan](/links/control-panel/web-mx-plan)
+- **Navigation path:** `Web Cloud`{.action} > `MX Plan`{.action} > Select your MX Plan service
+
+**Email Pro:**
+
+- **Direct link:** [Email Pro](/links/control-panel/web-email-pro)
+- **Navigation path:** `Web Cloud`{.action} > `Email Pro`{.action} > Select your platform
+
+**Exchange:**
+
+- **Direct link:** [Exchange](/links/control-panel/web-exchange)
+- **Navigation path:** `Web Cloud`{.action} > `Exchange`{.action} > Select your platform
+
+---
+<!-- CP-NAV-END:web-exchange -->
+<!-- CP-NAV-END:web-email-pro -->
+<!-- CP-NAV-END:web-mx-plan -->
 
 ## Instructions
 
@@ -29,92 +60,55 @@ It is important to choose the solution you would like to migrate your MX Plan em
 
 This step is optional if you already have an Exchange or Email Pro service to which you are migrating.
 
-Log in to your [OVHcloud Control Panel](/links/manager), then order the Email Pro or Exchange service you want. Follow the steps, then wait until the service is actually installed. An email will be sent to you as soon as it is complete.
+Order the Email Pro or Exchange service you want. Follow the steps, then wait for the service to be installed. You will receive a confirmation email once the installation is complete.
 
 > [!primary]
 >
 > Once an account has been delivered, it is essential to keep it in the “@configureme.me” state. It will be renamed during the migration.
->
 
 ### Step 3: Carrying out the migration
 
 Before starting your migration, you will need to identify the version of the MX Plan you are migrating from.
 
-1. Log in to your [OVHcloud Control Panel](/links/manager).
-1. Open the `Web Cloud`{.action} section.
-1. Click `MX Plan`{.action}.
-1. Select the domain concerned.
-
-|MX Plan legacy version|MX Plan new version|
-|---|---|
-|![email](images/mxplan-starter-legacy-step1.png){.thumbnail}<br> Your solution is specified the "Plan" box.|![email](images/mxplan-starter-new-step1.png){.thumbnail}<br>You will find a `Server model` in the “Summary” box, starting with “mxplan-”.|
-|Continue with [Legacy version of the MX Plan solution](#LegacyMxplan)|Continue with [New version of the MX Plan solution](#NewVersionMxplan)|
-
-#### 3.1 Migrating a legacy MX Plan solution <a name="LegacyMxplan"></a>
-
+<!-- CP-STEPS-START:identify-mxplan-version -->
 > [!primary]
 >
-> Your OVHcloud account must be the administrative **and** technical contact for the MX plan service to be migrated, **as well as** for the Email Pro or Exchange service you are migrating to.
+> The email technology of your MX Plan offer may vary depending on the date of activation of your offer or if a migration has recently taken place. This technology is particularly distinguished by the interface of its webmail. To identify it from your control panel, follow these steps:
 >
-> For more information on editing contacts, please refer to our guide on [managing contacts for your services](/pages/account_and_service_management/account_information/managing_contacts).
+> 1. The `General information`{.action} tab is selected by default.
+> 1. Note the technology used under the mention **Webmail** in the `Subscription` box.
 >
+> ![MX plan](/pages/assets/schemas/emails/technology-email.png){.thumbnail .w-640}
+<!-- CP-STEPS-END:identify-mxplan-version -->
 
-You can migrate from two interfaces:<br>
-
-- **The configuration wizard for Hosted Exchange**, only if you have just ordered a Hosted Exchange service and have not yet set up anything on it.
-- **The MX Plan section**, as soon as you have an Email Pro or Exchange service (already configured or not) and an MX Plan account that you want to migrate.
-
-> As a reminder, before starting the migration, make sure that no **redirection** or **auto-replies** are configured on your MX Plan.
-> ![email](images/mxplan-legacy-redirect.png){.thumbnail}
-
-Once you are ready, follow the steps below, depending on the interface you have selected. Please note that the migration time depends on the quantity of content to be migrated to your new account. This may vary from a few minutes to several hours.
+#### 3.1 Manual migration of an MX Plan offer to Exchange, Email Pro or Zimbra  <a name="all-mxplan"></a>
 
 > [!warning]
 >
-> Once the migration is confirmed, you will no longer be able to access your old MX Plan email account, or cancel the migration process. We strongly advise you to carry out this operation at a favourable time.
+> This section concerns all MX Plan services using the Roundcube, Zimbra or OWA webmail technology.
 >
-> Even if you can no longer access your current email account, existing and newly arriving messages will not be lost. All will be immediately accessible from your new account.
->
+> However, if you want to migrate an MX Plan service using the Roundcube webmail to an OVHcloud Email Pro or Exchange platform, follow the section "[Automatic migration of an MX Plan Roundcube offer to Exchange or Email Pro](#roundcube-mxplan)" of this guide.
 
-##### **Migration with the Exchange configuration assistant**
-
-To access it, select the relevant service in the [OVHcloud Control Panel](/links/manager). The wizard should appear to help you configure your new Exchange service. During this process, you can select the MX Plan email accounts to migrate.
-
-If the configuration wizard does not appear, the general information for the Exchange service will appear instead. In this case, you will need to migrate your accounts via the MX Plan interface.
-
-##### **Migration from the MX Plan interface**
-
-To migrate from this interface, go to the `Emails`{.action} section of the OVHcloud Control Panel. Then choose the service with the domain name of your email addresses. Click on `...`{.action} next to the relevant email account (also called the source account), then `Migrate account`{.action}.
-
-![Exchange](images/access_the_migration_tool.png){.thumbnail}
-
-In the window that appears, select the destination service (the one you want to migrate the account to), then click `Next`{.action}. If the user has at least one "empty" account (i.e. one that has not yet been set up), the migration will be carried out to one of these accounts. Once you have done this, read the information listed, confirm it, then click `Next`{.action} to continue editing.
-
-If you do not have an empty account, an `Order accounts`{.action} button will appear. Follow the steps, then wait until the accounts are installed to start the migration.
-
-Finally, confirm the password for the source email account (the one you want to migrate), then click `Migrate`{.action}. You will need to repeat this process as many times as you need to for migrating other accounts.
-
-![Exchange](images/account_migration_steps.png){.thumbnail}
-
-#### 3.2 Migrating the new version of MX Plan <a name="NewVersionMxplan"></a>
-
+<!-- CP-STEPS-START:add-domain-to-platform -->
 > [!warning]
 >
 > If you have just ordered your new email solution, first add the domain name to your email platform, then start your migration. <br> - *For example, to migrate the "myemail@mydomain.ovh" account, you need to add the domain name "mydomain.ovh" to your platform.*
 >
->Select the `Associated domains`{.action} tab on your platform, then click `Add a domain`{.action}. Once you have added your domain name, ensure that `OK` appears in the `Status` column.
+> Select the `Associated Domains`{.action} or `Domain`{.action} tab on your platform, then click on `Add a domain`{.action}. Once the domain name is added, make sure that the mention `OK` or `Active`{.action} is present in the `Status` column.
 >
->![exchange](images/account_migration_adddomain.png){.thumbnail}
+> ![exchange](images/account_migration_adddomain.png){.thumbnail}
 >
-> To find out more about adding a domain name, follow the [Email Pro guide](/pages/web_cloud/email_and_collaborative_solutions/email_pro/first_config#step-2-add-your-domain-name) or the [Exchange guide](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_adding_domain).
+> To find out more about adding a domain name, follow the [Email Pro guide](/pages/web_cloud/email_and_collaborative_solutions/email_pro/first_config), [Exchange guide](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_adding_domain) or [the Zimbra guide](/pages/web_cloud/email_and_collaborative_solutions/zimbra/getting_started_zimbra).
+<!-- CP-STEPS-END:add-domain-to-platform -->
 
+<!-- CP-STEPS-START:manual-migration-rename-create-migrate -->
 Your MX Plan migration will be done in 3 main steps: **Renaming**, **Creating** and **Migrating**.
 
 ![Exchange](images/mxplan-migration-configure-account.gif){.thumbnail}
 
 1\. **Rename** the MX Plan account to be migrated with a temporary name (example: to migrate the MX plan account *john.smith@mydomain.ovh*, rename it to *john.smith01@mydomain.ovh*).
 
-In the `Email accounts`{.action} tab for your MX Plan platform, click the `...`{.action} button, then `Edit`{.action}.
+In the `Email accounts`{.action} tab for your MX Plan platform, click the `...`{.action} button, then `Modify the account`{.action}.
 
 ![Exchange](images/mxplan-migration-configure-account01.png){.thumbnail}
 
@@ -124,7 +118,7 @@ In the `Email accounts`{.action} tab for your MX Plan platform, click the `...`{
 
 2\. **Create** your email address on the new account on your Email Pro or Exchange platform (using the previous example, you will create *john.smith@mydomain.ovh* on your new platform).
 
-In the `Email accounts`{.action} tab for your Email Pro or Exchange platform, click the `...`{.action} button, then `Modify`{.action}.
+In the `Email accounts`{.action} tab for your Email Pro or Exchange platform, click the `...`{.action} button, then `Edit`{.action}.
 
 ![Exchange](images/mxplan-migration-configure-account02.png){.thumbnail}
 
@@ -136,26 +130,81 @@ For more information on OMM, please read our guide on [Migrating email accounts 
 
 The migration time depends on the amount of content to migrate to your new account. This may vary from a few minutes to several hours.
 
-Check that you can find your items after the migration, by logging into OVHcloud [webmail](/links/web/email).
+Check that you can find your items after the migration by logging into the [OVHcloud webmail](/links/web/email).
 
 You can keep or delete the original account with the temporary name after this migration.
 
-If you want to delete it, go to the `Email accounts`{.action} tab in your MX Plan, click on the `...`{.action} button, then `Disable account`{.action}.
+If you want to delete it, go to the `Email accounts`{.action} tab in your MX Plan, click on the `...`{.action} button, then `Reset this account`{.action}.
+<!-- CP-STEPS-END:manual-migration-rename-create-migrate -->
+
+#### 3.2 Automatic migration of an MX Plan Roundcube offer to Exchange or Email Pro <a name="roundcube-mxplan"></a>
+
+> [!warning]
+>
+> This section concerns only MX Plan services using the Roundcube webmail technology.
+
+> [!primary]
+>
+> Your OVHcloud account must be the administrative **and** technical contact for the MX plan service to be migrated, **as well as** for the Email Pro or Exchange service you are migrating to.
+>
+> For more information on editing contacts, please refer to our guide on [managing contacts for your services](/pages/account_and_service_management/account_information/managing_contacts).
+
+You can migrate from two interfaces:<br>
+
+- **The configuration wizard for Hosted Exchange**, only if you have just ordered a Hosted Exchange service and have not yet set up anything on it.
+- **The MX Plan section**, as soon as you have an Email Pro or Exchange service (already configured or not) and an MX Plan account that you want to migrate.
+
+<!-- CP-STEPS-START:roundcube-check-redirects -->
+> As a reminder, before starting the migration, make sure that no **redirection** or **auto-replies** are configured on your MX Plan.
+>
+> ![email](images/mxplan-legacy-redirect.png){.thumbnail}
+<!-- CP-STEPS-END:roundcube-check-redirects -->
+
+Once you are ready, follow the steps below, depending on the interface you have selected. Please note that the migration time depends on the quantity of content to be migrated to your new account. This may vary from a few minutes to several hours.
+
+> [!warning]
+>
+> Once the migration is confirmed, you will no longer be able to access your old MX Plan email account, or cancel the migration process. We strongly advise you to carry out this operation at a favourable time.
+>
+> Even if you can no longer access your current email account, existing and newly arriving messages will not be lost. All will be immediately accessible from your new account.
+
+##### **Migration with the Exchange configuration assistant**
+
+A wizard will guide you through configuring your new Exchange service. During this process, you can select the MX Plan email accounts to migrate.
+
+If the configuration wizard does not appear, the general information for the Exchange service will appear instead. In this case, you will need to migrate your accounts via the MX Plan interface.
+
+##### **Migration from the MX Plan interface**
+
+<!-- CP-STEPS-START:roundcube-migrate-from-mxplan-interface -->
+To migrate from this interface, go to the [MX Plan](/links/control-panel/web-mx-plan) section of your OVHcloud Control Panel and select the relevant domain. In the `Emails`{.action} tab, click on `...`{.action} on the line of the relevant email account (also called the source account), then on `Migrate account`{.action}.
+
+![Exchange](images/access_the_migration_tool.png){.thumbnail}
+
+In the window that appears, select the destination service (the one you want to migrate the account to), then click `Next`{.action}. If the user has at least one "empty" account (i.e. one that has not yet been set up), the migration will be carried out to one of these accounts. Once you have done this, read the information listed, confirm it, then click `Next`{.action} to continue editing.
+
+If you do not have an empty account, an `Order accounts`{.action} button will appear. Follow the steps, then wait until the accounts are installed to start the migration.
+
+Finally, confirm the password for the source email account (the one you want to migrate), then click `Migrate`{.action}. You will need to repeat this process as many times as you need to for migrating other accounts.
+
+![Exchange](images/account_migration_steps.png){.thumbnail}
+<!-- CP-STEPS-END:roundcube-migrate-from-mxplan-interface -->
 
 ### Step 4: Verifying your domain configuration
 
-At this stage, your email accounts must already be migrated and functional. For security reasons, please ensure that your domain is correctly configured in your Control Panel.
+<!-- CP-STEPS-START:verify-domain-configuration -->
+At this stage, your email addresses should already be migrated and functional. For security reasons, we invite you to make sure that the configuration of your domain is correct by consulting your control panel.
 
-To do this, select the Email Pro or Exchange service concerned, then go to the `Associated domains`{.action} tab. In the table shown, you can use the "Diagnostic" column to check if the DNS configuration is correct: a red box appears if the configuration needs to be modified.
+To do this, select the relevant Email Pro, Exchange or Zimbra service, then go to the `Associated Domains`{.action} or `Domain`{.action} tab on your platform. Check the `Diagnostic`{.action} section or column.
+
+![exchange](images/check_the_dns_records_associated_domains.png){.thumbnail}
 
 > [!primary]
 >
 > If you have just migrated or modified a DNS record for your domain, it may take a few hours to be updated in your [OVHcloud Control Panel](/links/manager).
->
 
-To modify the configuration, click on the red box and carry out the requested operation. It can take between 4 and a maximum of 24 hours to propagate fully.
-
-![Exchange](images/check_the_dns_records_associated_domains.png){.thumbnail}
+To modify the configuration, click on the red badge and perform the requested operation. This operation requires a propagation time of 4 to 24 hours maximum before it is fully effective.
+<!-- CP-STEPS-END:verify-domain-configuration -->
 
 ### Step 5: Using your migrated email accounts
 
@@ -163,11 +212,13 @@ Now, you can start using your migrated email accounts. To do this, OVHcloud offe
 
 If you have configured one of the migrated accounts on an email client (such as Outlook), you must set it up again. The login details for the OVHcloud server have changed following the migration. To help you make changes, please read the respective guides in the [Email Pro](/products/web-cloud-email-collaborative-solutions-email-pro) and [Hosted Exchange](/products/web-cloud-email-collaborative-solutions-mx-plan) guide sections. Even if you are unable to reconfigure the account immediately, access via the online application is still possible.
 
-### Organise the contents of your email accounts following a migration <a name=`content-after-migration`></a>
+### Organise the contents of your email accounts following a migration <a name="content-after-migration"></a>
 
 When you first log in to your new email account, the migrated content may be partially hidden. To view all items in the webmail, click on the arrow symbol next to the `Inbox` to reveal the subfolders. The migrated content of your old email account should appear.
 
 ![exchange](images/owa_migrate_content.png){.thumbnail}
+
+The default folders, such as "sent items" or "trash" appear in English ("Sent items" and "Trash"), except for the folders you have created.
 
 After a migration, please check all of the folders and subfolders in your account to ensure that all of the elements are present.
 
@@ -179,8 +230,10 @@ You can also manually migrate your email addresses to your new OVHcloud email so
 
 [Managing contacts for your services](/pages/account_and_service_management/account_information/managing_contacts)
 
-[Email Pro guides](/products/web-cloud-email-collaborative-solutions-email-pro)
+[Getting started with the Email Pro offer](/pages/web_cloud/email_and_collaborative_solutions/email_pro/first_config)
 
-[Exchange guides](/products/web-cloud-email-collaborative-solutions-mx-plan)
+[Getting started with the Exchange offer](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_starting_hosted)
+
+[Getting started with the Zimbra offer](/pages/web_cloud/email_and_collaborative_solutions/zimbra/getting_started_zimbra)
 
 Join our [community of users](/links/community).

@@ -13,16 +13,20 @@ Diese kollaborative Exchange-Funktion erlaubt die Erstellung von E-Mail-Adressen
 ## Voraussetzungen
 
 - Sie haben einen [OVHcloud Exchange](/links/web/emails-hosted-exchange) Dienst eingerichtet.
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 - Sie verfügen über Login-Daten für die E-Mail-Accounts mit Zugriff auf die Ressource.
 
-## In der praktischen Anwendung
+<!-- CP-NAV-START:web-exchange -->
+---
 
-1. Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein.
-1. Öffnen Sie den Bereich `Web Cloud`{.action}.
-1. In der Rubrik `MICROSOFT`{.action}, klicken Sie auf `Exchange`{.action}.
-1. Wählen Sie den gewünschten Dienst aus.
-1. Klicken Sie auf den Tab `Mehr +`{.action} und dann auf `Ressourcen`{.action}.
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direkter Link:** [Exchange](/links/control-panel/web-exchange)
+- **Navigationspfad:** `Web Cloud`{.action} > `Exchange`{.action} > Wählen Sie Ihre Plattform aus
+
+---
+<!-- CP-NAV-END:web-exchange -->
+
+## In der praktischen Anwendung
 
 ### Schritt 1: eine Ressource erstellen
 
@@ -117,7 +121,7 @@ Nach Erstellung des Events (indem Sie auf `Senden`{.action} im oberen Menü klic
 
 ![Ablehnungsnachricht](images/exchange-resources-step8.png){.thumbnail}
 
-## Weiterführende Informationen
+## Weiterführende Informationen <a name="go-further"></a>
 
 [Verwendung der Outlook Web App](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa)
 

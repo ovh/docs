@@ -1,5 +1,5 @@
 ---
-title: Valkey - Configure your Valkey service to accept incoming connections
+title: Configure incoming connections of a Public Cloud Databases for Valkey service
 excerpt: Find out how to configure your Valkey service to accept incoming connections
 updated: 2024-06-12
 ---
@@ -13,8 +13,18 @@ Public Cloud Databases allow you to focus on building and deploying cloud applic
 ## Requirements
 
 - A [Public Cloud project](/links/public-cloud/public-cloud) in your OVHcloud account
-- Access to the [OVHcloud Control Panel](/links/manager)
 - A Valkey service running on your OVHcloud Public Cloud Databases ([this guide](/pages/public_cloud/public_cloud_databases/databases_01_order_control_panel) can help you to meet this requirement)
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Navigation path:** `Public Cloud`{.action} > Select your project
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## Instructions
 
@@ -22,10 +32,13 @@ Public Cloud Databases allow you to focus on building and deploying cloud applic
 
 Before making a connection, we need to verify that our Valkey instance is correctly configured.
 
-Log in to your [OVHcloud Control Panel](/links/manager) and open your `Public Cloud`{.action} project. Click on `Databases`{.action} in the left-hand navigation bar and select your Valkey instance.
+<!-- CP-STEPS-START:navigate-to-valkey -->
+Click on `Databases`{.action} in the left-hand navigation bar and select your Valkey instance.
+<!-- CP-STEPS-END:navigate-to-valkey -->
 
 #### Step 1: Verify your user roles and password
 
+<!-- CP-STEPS-START:verify-user-roles -->
 Select the `Users`{.action} tab. Verify that you have a user with sufficient rights and a password. If you don't remember the user's password, you can either create a new user or regenerate the password of an existing user. Be careful! By doing so you will need to update all the places where you already use this user/password pair.
 
 In our example, we will create a user called *redisUser* and rights for :
@@ -54,9 +67,11 @@ Once created or updated, the user has to be ready and with the "Enabled" status 
 >
 > Follow this [guide](/pages/public_cloud/public_cloud_databases/redis_01_capabilities#users-and-roles) to learn more about users and roles capabilities and limitations.
 >
+<!-- CP-STEPS-END:verify-user-roles -->
 
 #### Step 2: Authorise incoming connections from the service
 
+<!-- CP-STEPS-START:authorise-incoming-connections -->
 > [!warning]
 > For security reasons the default network configuration doesn't allow any incoming connections. It is thus critical you authorise the suitable IP addresses in order to successfully access your database.
 
@@ -72,12 +87,15 @@ You can edit and retract database access via the `...`{.action} button in the IP
 >
 > If you want to allow connections from the outside, you can enter the IP 0.0.0.0/0. Please use it carefully.
 >
+<!-- CP-STEPS-END:authorise-incoming-connections -->
 
 #### Collect required information
 
+<!-- CP-STEPS-START:collect-required-information -->
 Select the `General information`{.action} tab to find the required login credentials in the `Login informations` section.
 
 ![Login informations](images/redis_08_prepare_for_incoming_connections-20220329100705698.png)
+<!-- CP-STEPS-END:collect-required-information -->
 
 ## Go further
 

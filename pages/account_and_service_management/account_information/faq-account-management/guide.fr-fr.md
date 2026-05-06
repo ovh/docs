@@ -93,9 +93,7 @@ Plusieurs solutions s'offrent à vous pour sécuriser votre compte, telles que :
 - l'ajout d'une [double authentification](/pages/account_and_service_management/account_information/secure-ovhcloud-account-with-2fa) ;
 - la configuration d'une [restriction par IP](/pages/account_and_service_management/account_information/ovhcloud-control-panel-ip-restriction).
 
-Pour accéder à toutes ces options, connectez-vous à votre [espace client OVHcloud](/links/manager), cliquez sur votre nom en haut à droite, puis sur `Mon Compte`{.action}.
-
-Cliquez sur l'onglet `Sécurité`{.action} pour les afficher.
+Rendez-vous sur la page [Sécurité du compte](/links/control-panel/account-security) pour les afficher.
 
 ///
 
@@ -114,9 +112,7 @@ Pour tous ces cas de figure, consultez [cette documentation](/pages/account_and_
 
 /// details | Comment modifier le mot de passe de mon compte OVHcloud ?
 
-Connectez-vous à votre [espace client OVHcloud](/links/manager), cliquez sur votre nom en haut à droite, puis sur `Mon Compte`{.action}.
-
-Cliquez sur l'onglet `Sécurité`{.action}, puis sur le bouton `Modifier`{.action} situé à droite de la mention **Mot de passe**. Vous pouvez alors modifier votre mot de passe actuel. Un message de sécurité apparaît alors pour vous informer que vous êtes sur le point d'effectuer un changement de mot de passe. A la suite de votre confirmation, vous allez recevoir (à l'adresse mail principale renseignée dans le compte) un e-mail contenant la procédure à suivre. 
+Rendez-vous sur la page [Sécurité du compte](/links/control-panel/account-security) et cliquez sur le bouton `Modifier`{.action} situé à droite de la mention **Mot de passe**. Vous pouvez alors modifier votre mot de passe actuel. Un message de sécurité apparaît alors pour vous informer que vous êtes sur le point d'effectuer un changement de mot de passe. A la suite de votre confirmation, vous allez recevoir (à l'adresse mail principale renseignée dans le compte) un e-mail contenant la procédure à suivre. 
 
 Retrouvez plus d'informations dans notre guide «[Modifier le mot de passe de votre compte](/pages/account_and_service_management/account_information/manage-ovh-password)».
 
@@ -131,6 +127,7 @@ Retrouvez plus d'informations dans notre guide «[Modifier le mot de passe de vo
 >
 > Si vous avez oublié votre identifiant client, vous pouvez le retrouver en haut à droite de votre dernière facture. Il ressemble à ceci : « aa00000-ovh » (les premières lettres sont généralement les initiales de la personne qui a créé le compte). Cet identifiant est aussi indiqué dans l’e-mail de confirmation de création du compte, ainsi que dans les e-mails de confirmation ou de renouvellement de commande.
 >
+
 
 ///
 
@@ -172,9 +169,7 @@ Consultez la partie [« Que faire si l'un de mes périphériques est perdu/volé
 
 /// details | Comment modifier mes informations personnelles ?
 
-Pour visualiser ou modifier vos coordonnées, connectez-vous à votre [espace client OVHcloud](/links/manager), cliquez sur votre nom en haut à droite, puis sur `Mon Compte`{.action}.
-
-Cliquez alors sur `Éditer mon profil`{.action}, dans le cadre `Mon profil`.
+Pour visualiser ou modifier vos coordonnées, rendez-vous sur la page [Mon profil](/links/control-panel/account-profile).
 
 > [!success]
 > **Vous souhaitez modifier l'adresse e-mail de votre compte OVHcloud ?**
@@ -186,7 +181,7 @@ Cliquez alors sur `Éditer mon profil`{.action}, dans le cadre `Mon profil`.
 
 /// details | Comment accéder aux contrats et conditions générales de services ?
 
-Vous pouvez retrouver les contrats de vos services OVHcloud directement dans votre [espace client](/links/manager). Une fois connecté, rendez-vous dans le menu `Mon compte`{.action} puis cliquez sur `Voir mes contrats`{.action}.
+Vous pouvez retrouver les contrats de vos services OVHcloud directement sur la page [Liste des contrats](/links/control-panel/billing-contracts).
 
 Vous pouvez également consulter les contrats sur notre site, via [ce lien](/links/terms-conditions-contracts).
 
@@ -196,9 +191,7 @@ Cette page contient toutes les informations nécessaires concernant nos contrats
 
 /// details | Où dois-je renseigner mon numéro SIRET ?
 
-Connectez-vous à votre [espace client OVHcloud](/links/manager), cliquez sur votre nom en haut à droite, puis sur `Mon Compte`{.action}.
-
-Cliquez alors sur `Éditer mon profil`{.action}, dans le cadre `Mon profil`.
+Rendez-vous sur la page [Mon profil](/links/control-panel/account-profile).
 
 Vous aurez ainsi accès aux informations personnelles de votre compte. Faites défiler l'écran jusqu'à la rubrique `Votre activité` pour trouver le champ `N° SIRET`. Une fois votre numéro renseigné, cliquez sur le bouton `Enregistrer les modifications`{.action}.
 
@@ -301,7 +294,7 @@ Tous nos e-mails respectent nos standards de sécurité (SPF, DKIM, DMARC) et pr
 **En cas de doute sur l'authenticité d'un e-mail** :
 
 - Sachez que nous ne vous demanderons jamais de mot de passe ou de coordonnées bancaires par e-mail.
-- Vérifiez si l'e-mail que vous avez reçu est aussi visible dans votre [espace client OVHcloud](/links/manager). Connectez-vous, cliquez sur votre nom en haut à droite puis sur `E-mails de service`{.action} (ou `Mes communications`{.action}). Vous y retrouverez les copies des e-mails officiels envoyés par OVHcloud.
+- Vérifiez si l'e-mail que vous avez reçu est aussi visible sur la page [Mes communications](/links/control-panel/account-messages). Vous y retrouverez les copies des e-mails officiels envoyés par OVHcloud.
 - Consultez également notre guide « [Phishing - Comment reconnaître des e-mails ou SMS frauduleux ?](/pages/account_and_service_management/account_information/phishing_care) ».
 
 ///
@@ -344,9 +337,9 @@ Remplacez `{logId}` par l'identifiant réel du log que vous souhaitez consulter.
 
 ### Déléguer l'accès à ses services
 
-/// details | Comment déléguer l'accès à mes servives à d'autres personnes ?
+/// details | Comment déléguer l’accès à mes servives à d’autres personnes ?
 
-Vous avez la possibilité de déléguer à d’autres comptes clients OVHcloud la gestion administrative, technique et facturation de vos services depuis votre espace client. Pour cela, connectez-vous à votre [espace client OVHcloud](/links/manager), cliquez sur votre nom en haut à droite, puis sur `Mes contacts`{.action}.
+Vous avez la possibilité de déléguer à d’autres comptes clients OVHcloud la gestion administrative, technique et facturation de vos services depuis votre espace client. Pour cela, rendez-vous sur la page [Gestion des contacts](/links/control-panel/account-contacts).
 
 La délégation de service devra être validée par e-mail à la fois par l’administrateur du service et par le nouveau contact.
 
@@ -361,7 +354,7 @@ Si vous souhaitez récupérer un nom de domaine dont vous êtes le propriétaire
 
 /// details | Comment paramétrer ou modifier un contact de facturation ?
 
-Connectez-vous à votre [espace client OVHcloud](/links/manager), cliquez sur votre nom en haut à droite, puis sur `Mes contacts`{.action}.
+Rendez-vous sur la page [Gestion des contacts](/links/control-panel/account-contacts).
 
 > [!success]
 > Si vous souhaitez en savoir plus sur la gestion des contacts, nous vous invitons à consulter ce guide détaillé : « [Gérer les contacts de ses services](/pages/account_and_service_management/account_information/managing_contacts) ».

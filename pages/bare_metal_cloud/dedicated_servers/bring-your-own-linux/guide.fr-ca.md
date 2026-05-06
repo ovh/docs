@@ -1,7 +1,7 @@
 ---
-title: Bring Your Own Linux (BYOLinux)
-excerpt: Découvrez comment déployer facilement vos propres images Linux sur des serveurs dédiés
-updated: 2025-09-30
+title: "Déployer des images Linux personnalisées via Bring Your Own Linux (BYOLinux) sur un serveur dédié"
+excerpt: "Déployez vos propres images Linux personnalisées sur un serveur dédié OVHcloud grâce à la fonctionnalité Bring Your Own Linux (BYOLinux)"
+updated: 2026-03-16
 ---
 
 ## Objectif
@@ -18,10 +18,20 @@ En plus des prérequis et limitations mentionnés ci-dessous, vous devez vous as
 ## Prérequis
 
 - Un [serveur dédié](/links/bare-metal/bare-metal) dans votre compte OVHcloud
-- Être connecté à l'[espace client OVHcloud](/links/manager) (pour la méthode de [déploiement via l'espace client](#viacontrolpanel) de ce guide)
 - Avoir accès à l'[API OVHcloud](/pages/manage_and_operate/api/first-steps) (pour la méthode de [déploiement via l'API](#viaapi) de ce guide)
 - Votre image doit être inférieure à la RAM du serveur moins 3 Gio
-- Un script `/root/.ovh/make_image_bootable.sh` exécutable, qui installera ou configurera le bootloader, [par exemple GRUB](https://github.com/ovh/bringyourownlinux/blob/main/example_build/files/make_image_bootable.sh)
+- Un script `/root/.ovh/make_image_bootable.sh` exécutable, qui installera ou configurera le bootloader, [par exemple GRUB](https://github.com/ovh/bringyourownlinux/blob/e20c9474e1a0/example_build/files/make_image_bootable.sh). Ce script ne doit pas modifier l'ordre de boot NVRAM (par exemple, utilisez `grub-install --no-nvram`). Pour plus d'informations, consultez notre guide « [Comprendre le processus de démarrage des serveurs dédiés](/pages/bare_metal_cloud/dedicated_servers/boot-process) ».
+
+<!-- CP-NAV-START:baremetal-dedicated-servers -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Serveurs dédiés](/links/control-panel/baremetal-dedicated-servers)
+- **Pour accéder à vos services :** `Bare Metal Cloud`{.action} > `Serveurs dédiés`{.action} > Sélectionnez votre serveur
+
+---
+<!-- CP-NAV-END:baremetal-dedicated-servers -->
 
 > [!warning]
 >
@@ -37,6 +47,7 @@ Certaines limites techniques sont liées à l’utilisation de produits physique
 - Type de démarrage : **UEFI** ou **legacy** (en fonction du type de démarrage de votre serveur)
 - Format de l'image : **qcow2**
 - Une seule partition dans l'image qcow2
+- Système de fichiers de la partition : **ext4**, **XFS** ou **BTRFS** (sans sous-volumes)
 
 **Méthodes de déploiement :**
 
@@ -45,15 +56,13 @@ Certaines limites techniques sont liées à l’utilisation de produits physique
 
 ### Déploiement de votre image via l’espace client <a name="viacontrolpanel"></a>
 
-Connectez-vous à l'[espace client OVHcloud](/links/manager) et rendez-vous dans la section `Bare Metal Cloud`{.action} puis sélectionnez votre serveur sous `Serveurs dédiés`{.action}.
-
 Dans l'onglet `Informations générales`{.action}, cliquez sur le bouton `...`{.action} à côté de « Système (OS) » puis cliquez sur `Installer`{.action}.
 
-![BringYourOwnLinux Control Panel 01](images/byolinux-controlpanel01.png){.thumbnail}
+![Bouton d'installation Bring Your Own Linux dans l'espace client](images/byolinux-controlpanel01.png){.thumbnail}
 
-A l'étape suivante, sélectionnez `Personnalisé` dans le menu puis `Bring Your Own Linux - byolinux` et cliquez sur `Suivant`{.action}.
+À l'étape suivante, sélectionnez `Personnalisé` dans le menu puis `Bring Your Own Linux - byolinux` et cliquez sur `Suivant`{.action}.
 
-![BringYourOwnLinux Control Panel 03](images/byolinux-controlpanel03.png){.thumbnail}
+![Sélection d'image personnalisee Bring Your Own Linux dans l'espace client](images/byolinux-controlpanel03.png){.thumbnail}
 
 Vous allez être redirigé vers la page de configuration. Assurez-vous que l'URL de votre image est au bon format. Remplissez le reste des champs obligatoires de cette page. Une fois que vous avez confirmé que les informations sont correctes, cliquez sur `Confirmer`{.action}.
 
@@ -61,9 +70,9 @@ Vous trouverez plus de détails sur les options dans la section « [options de d
 
 Pour plus d'informations et des exemples sur ConfigDrive de Cloud-Init, consultez la documentation officielle sur [cette page](https://cloudinit.readthedocs.io/en/22.1_a/topics/examples.html).
 
-![BringYourOwnLinux Control Panel 04](images/byolinux-controlpanel04.png){.thumbnail}
+![Page de configuration Bring Your Own Linux dans l'espace client](images/byolinux-controlpanel04.png){.thumbnail}
 
-### Déploiement de votre image via les API <a name="viaapi"></a>
+### Déploiement de votre image via l'API <a name="viaapi"></a>
 
 Connectez-vous sur [https://api.ovh.com/](/links/api) puis rendez-vous dans la section `/dedicated/server`{.action}.
 
@@ -91,7 +100,7 @@ Le contenu de la requête API de Bring Your Own Linux (BYOLinux) doit être simi
       "Authorization": "Basic bG9naW46cGFzc3dvcmQ="
     },
     "imageCheckSumType": "sha512",
-    "configDriveUserData": "I2Nsb3VkLWNvbmZpZwpzc2hfYXV0aG9yaXplZF9rZXlzOgogIC0gc3NoLXJzYSBBQUFBQjhkallpdz09IG15c2VsZkBteWRvbWFpbi5uZXQKCnVzZXJzOgogIC0gbmFtZTogcGF0aWVudDAKICAgIHN1ZG86IEFMTD0oQUxMKSBOT1BBU1NXRDpBTEwKICAgIGdyb3VwczogdXNlcnMsIHN1ZG8KICAgIHNoZWxsOiAvYmluL2Jhc2gKICAgIGxvY2tfcGFzc3dkOiBmYWxzZQogICAgc3NoX2F1dGhvcml6ZWRfa2V5czoKICAgICAgLSBzc2gtcnNhIEFBQUFCOGRqWWl3PT0gbXlzZWxmQG15ZG9tYWluLm5ldApkaXNhYmxlX3Jvb3Q6IGZhbHNlCnBhY2thZ2VzOgogIC0gdmltCiAgLSB0cmVlCmZpbmFsX21lc3NhZ2U6IFRoZSBzeXN0ZW0gaXMgZmluYWxseSB1cCwgYWZ0ZXIgJFVQVElNRSBzZWNvbmRzCg=="
+    "configDriveUserData": "I2Nsb3VkLWNvbmZpZwpzc2hfYXV0aG9yaXplZF9rZXlzOgogIC0gc3NoLWVkMjU1MTkgQUFBQUMzTnphQzFsWkRJMU5URTVBQUFBSUFiY0QgbXlzZWxmQG15ZG9tYWluLm5ldAoKdXNlcnM6CiAgLSBuYW1lOiBwYXRpZW50MAogICAgc3VkbzogQUxMPShBTEwpIE5PUEFTU1dEOkFMTAogICAgZ3JvdXBzOiB1c2Vycywgc3VkbwogICAgc2hlbGw6IC9iaW4vYmFzaAogICAgbG9ja19wYXNzd2Q6IGZhbHNlCiAgICBzc2hfYXV0aG9yaXplZF9rZXlzOgogICAgICAtIHNzaC1lZDI1NTE5IEFBQUFDM056YUMxbFpESTFOVEU1QUFBQUlBYmNEIG15c2VsZkBteWRvbWFpbi5uZXQKZGlzYWJsZV9yb290OiBmYWxzZQpwYWNrYWdlczoKICAtIHZpbQogIC0gdHJlZQpydW5jbWQ6CiAgLSBlY2hvICJjb3Vjb3UgcnVuY21kIiA+IC9vcHQvY291Y291CiAgLSBjYXQgL2V0Yy9tYWNoaW5lLWlkID4+IC9vcHQvY291Y291CiAgLSBkYXRlICIrJVktJW0tJWQgJUg6JU06JVMiIC0tdXRjID4+IC9vcHQvY291Y291CmZpbmFsX21lc3NhZ2U6IFRoZSBzeXN0ZW0gaXMgZmluYWxseSB1cCwgYWZ0ZXIgJFVQVElNRSBzZWNvbmRzCg=="
   }
 }
 ```
@@ -112,7 +121,7 @@ Voici le configDrive user data en clair avec l'exemple ci-dessus :
 ```yaml
 #cloud-config
 ssh_authorized_keys:
-  - ssh-rsa AAAAB8djYiw== myself@mydomain.net
+  - ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIAbcD myself@mydomain.net
 
 users:
   - name: patient0
@@ -121,11 +130,15 @@ users:
     shell: /bin/bash
     lock_passwd: false
     ssh_authorized_keys:
-      - ssh-rsa AAAAB8djYiw== myself@mydomain.net
+      - ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIAbcD myself@mydomain.net
 disable_root: false
 packages:
   - vim
   - tree
+runcmd:
+  - echo "coucou runcmd" > /opt/coucou
+  - cat /etc/machine-id >> /opt/coucou
+  - date "+%Y-%m-%d %H:%M:%S" --utc >> /opt/coucou
 final_message: The system is finally up, after $UPTIME seconds
 ```
 
@@ -146,22 +159,33 @@ Une fois les champs complétés, démarrez le déploiement en cliquant sur `Exec
 | customizations/httpHeaders?Value | Valeur des en-têtes HTTP | ❌² |
 | userMetadata/efiBootloaderPath | Le chemin du bootloader EFI | ✅³ |
 
-¹ Il peut s'agir d'un `#cloud-config` ou d'un script. Il doit être sur une ligne et avoir `\n` pour la ligne-retour.<br />
+¹ Il peut s'agir d'un `#cloud-config` ou d'un script. Sa représentation JSON doit être sur une seule ligne avec `\n` pour les retours à la ligne, car les chaînes JSON ne peuvent pas contenir de retours à la ligne littéraux.<br />
 ² À utiliser uniquement si vous avez besoin d'en-têtes HTTP, tels que `Basic Auth`<br />
-³ Exemples de chemin EFI :
+³ Le chemin du bootloader EFI est utilisé par iPXE pour démarrer votre système d'exploitation. Pour plus d'informations, consultez notre guide « [Comprendre le processus de démarrage des serveurs dédiés](/pages/bare_metal_cloud/dedicated_servers/boot-process) ». Exemples :
+
+> [!primary]
+>
+> Les chemins ci-dessous utilisent l'échappement JSON : `\\` représente un seul antislash. Par exemple, `\\efi\\debian\\grubx64.efi` correspond au chemin `\efi\debian\grubx64.efi`.
+>
 
 | Système d'exploitation | efiBootloaderPath |
 |-|-|
 | Debian | `\\efi\\debian\\grubx64.efi` |
 | Ubuntu | `\\efi\\ubuntu\\grubx64.efi` |
-| Windows | `\\efi\microsoft\\boot\\bootmgfw.efi` |
+| Windows | `\\efi\\microsoft\\boot\\bootmgfw.efi` |
 | FreeBSD | `\\efi\\FreeBSD\\loader.efi` |
 | Alma | `\\efi\\almalinux\\shimx64.efi` |
+| Arch Linux | `\\efi\\arch\\grubx64.efi` |
 | Gentoo | `\\efi\\boot\\bootx64.efi` |
 
 > [!primary]
 >
 > La partition ConfigDrive est utilisée par cloud-init lors du premier démarrage du serveur afin d'appliquer vos configurations. Vous pouvez choisir d'utiliser la partition par défaut ou une partition personnalisée (en utilisant `configDriveUserData`).
+>
+
+> [!warning]
+>
+> Contrairement aux templates OS standard OVHcloud (par exemple Debian 12, Windows Server), BYOLinux ne prend pas en charge l'option `postInstallationScript`. Pour exécuter des commandes ou des scripts après l'installation, utilisez `configDriveUserData` avec une directive cloud-init [`runcmd`](https://cloudinit.readthedocs.io/en/latest/reference/modules.html#runcmd) comme dans l'exemple ci-dessus.
 >
 
 #### Les erreurs clients fréquentes <a name="errors"></a>
@@ -170,10 +194,9 @@ Le tableau suivant donne un aperçu des erreurs clients les plus connues et de l
 
 |Message d'erreur|Détails|Solution(s)|
 |---|---|---|
-|Please provide checkSum AND checkSumType or none of them|Vous avez précisé l'un des 2 champs parmi : `imageCheckSum` et `imageCheckSumType`.|Précisez les 2 valeurs ou aucune d'entre elle.|
-|image provided format is `x` which does not match expected qcow2 format|Peu importe l'extension du fichier, son format réel doit être qcow2.|- Changer la valeur de `imageType` à `raw`.<br />- Convertissez votre image au format qcow2.|
-|image provided has a size of `n` bytes which is larger than `device` of `m` bytes|L'image spécifiée a une taille supérieure à celle du disque choisi pour l'installation.|- Si votre serveur possède plusieurs grappes de disques, vous pouvez réessayez une installation sur une autre grappe de disques à l'aide de l'argument `diskgroupid`.<br />- Vous devez réduire la taille de votre image.|
-|Can't write qcow2 on disk|Impossible d'écrire l'image qcow2 sur le disque.|Modifier votre image de telle sorte que la commande `qemu-img convert -f "$imageType" -O raw $pathToImageFile "$device"` fonctionne.|
+|Please provide checkSum AND checkSumType or none of them|Vous avez précisé l'un des 2 champs parmi : `imageCheckSum` et `imageCheckSumType`.|Précisez les 2 valeurs ou aucune d'entre elles.|
+|image provided format is `x` which does not match expected qcow2 format|Peu importe l'extension du fichier, son format réel doit être qcow2.|Convertissez votre image au format qcow2.|
+|image provided has a size of `n` bytes which is larger than `device` of `m` bytes|L'image spécifiée a une taille supérieure à celle du disque choisi pour l'installation.|- Si votre serveur possède plusieurs grappes de disques, vous pouvez réessayer une installation sur une autre grappe de disques à l'aide de l'argument `diskgroupid`.<br />- Vous devez réduire la taille de votre image.|
 |Could not download, qcow2 image is too big to download in memory.|Il n'y a pas assez d'espace en RAM pour télécharger l'image.|Réduisez la taille de votre image.|
 |Could not download image: `<message d'erreur>`|Impossible de télécharger l'image depuis `imageURL`.|Vérifiez qu'un téléchargement avec `curl` depuis votre serveur en rescue fonctionne. Si des en-têtes HTTP sont requis, vous devez les spécifier à l'aide des paramètres `httpHeaders`.|
 |Bad `checkSumType` for downloaded file, got : `n` while expecting `m`.|Le checksum est incorrect.|- Assurez-vous de spécifier le bon checksum<br />- Vérifiez qu'un téléchargement avec `curl` depuis votre serveur en rescue fonctionne.|
@@ -182,7 +205,7 @@ Voir la section « [erreurs clients fréquentes](/pages/bare_metal_cloud/dedicat
 
 ## Aller plus loin
 
-[Bring Your Own Linux (BYOLinux) - Version détaillée](https://github.com/ovh/BringYourOwnLinux)
+[BYOLinux sur GitHub - Exemples et documentation approfondie](https://github.com/ovh/bringyourownlinux)
 
 [API OVHcloud et installation d'un OS](/pages/bare_metal_cloud/dedicated_servers/api-os-installation)
 
@@ -191,5 +214,7 @@ Voir la section « [erreurs clients fréquentes](/pages/bare_metal_cloud/dedicat
 [Bring Your Own Image (BYOI)](/pages/bare_metal_cloud/dedicated_servers/bring-your-own-image)
 
 [Comparaison entre Bring Your Own Image (BYOI) et Bring Your Own Linux (BYOLinux)](/pages/bare_metal_cloud/dedicated_servers/bring-your-own-image-versus-bring-your-own-linux)
+
+[Comprendre le processus de démarrage des serveurs dédiés](/pages/bare_metal_cloud/dedicated_servers/boot-process)
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).

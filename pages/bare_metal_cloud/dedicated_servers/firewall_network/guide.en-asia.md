@@ -1,12 +1,12 @@
 ---
-title: Enabling and configuring the Edge Network Firewall
-excerpt: Find out how to configure the Edge Network Firewall for your services
-updated: 2026-01-06
+title: "Configure the Edge Network Firewall for Dedicated Servers"
+excerpt: "Enable and configure the Edge Network Firewall to filter incoming traffic to your OVHcloud dedicated server."
+updated: 2026-03-10
 ---
 
 ## Objective
 
-To protect customer services exposed on public IP addresses, OVHcloud offers a stateless firewall that is configured and integrated into the **Anti-DDoS infrastructure**: the Edge Network Firewall. It allows to limit service exposure to DDoS attacks, by dropping specified network flows coming from outside of the OVHcloud network.
+To protect customer services exposed on public IP addresses, OVHcloud offers a stateless firewall that is configured and integrated into the **Anti-DDoS infrastructure**: the Edge Network Firewall. It limits exposure to DDoS attacks by dropping specified network flows from outside the OVHcloud network.
 
 **This guide will show you how to configure the Edge Network Firewall for your services.**
 
@@ -17,12 +17,22 @@ To protect customer services exposed on public IP addresses, OVHcloud offers a s
 
 | Anti-DDoS infrastructure & Game protection services diagram at OVHcloud |
 |:--:|
-| ![global-schema](images/global_schema_2025.png) |
+| ![global-schema](images/global_schema_2025.png){.thumbnail} |
 
 ## Requirements
 
 - An OVHcloud service exposed on a dedicated public IP address ([Dedicated server](/links/bare-metal/bare-metal), [VPS](/links/bare-metal/vps), [Public Cloud instance](/links/public-cloud/public-cloud), [Hosted Private Cloud](/links/hosted-private-cloud/vmware), [Additional IP](/links/network/additional-ip), etc.)
-- Access to the [OVHcloud Control Panel](/links/manager)
+
+<!-- CP-NAV-START:network-public-ip -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Public IP](/links/control-panel/network-public-ip)
+- **Navigation path:** `Network`{.action} > `Public IP Addresses`{.action}
+
+---
+<!-- CP-NAV-END:network-public-ip -->
 
 > [!warning]
 > This feature might be unavailable or limited on servers of the [**Eco** product line](/links/bare-metal/eco-about).
@@ -36,7 +46,11 @@ To protect customer services exposed on public IP addresses, OVHcloud offers a s
 
 The Edge Network Firewall reduces exposure to network DDoS attacks by allowing users to copy some of the server's firewall rules to the edge of the OVHcloud network. This blocks incoming attacks as close to their source as possible, reducing the risk of saturating server resources or rack connections in the event of major attacks.
 
-### Enabling Edge Network Firewall
+### Configure the Edge Network Firewall
+
+The Edge Network Firewall can be enabled or disabled by the user at all times, besides one exception: it is **automatically enabled** when a DDoS attack is detected and **cannot be disabled** until the attack has ended. As a result, all the rules configured in the firewall are applied for the duration of the attack. This logic allows our customers to offload the firewall rules of the server to the edge of the OVHcloud network for the duration of the attack.
+
+#### Access the Edge Network Firewall configuration page
 
 > [!primary]
 >
@@ -48,36 +62,36 @@ The Edge Network Firewall reduces exposure to network DDoS attacks by allowing u
 > The Edge Network Firewall protects a specific IP associated with a server (or service). Therefore, if you have a server with multiple IP addresses, you must configure each IP separately.
 > 
 
-Log in to the [OVHcloud Control Panel](/links/manager), open the `Network`{.action} menu in the left-hand sidebar and click `Public IP Addresses`{.action}.
-
 You can use the drop-down menu underneath **"My public IP addresses and associated services"** to filter your services according to category, or directly type the desired IP address in the search bar.
 
 ![filter service](images/selectservice_cut_new.png){.thumbnail}
 
-Next, click the `⁝`{.action} button to the right of the relevant IPv4 and first select `Configure Edge Network Firewall`{.action} (or click on the status badge in the **Edge Firewall** column).
+Next, click the `⁝`{.action} button to the right of the relevant IPv4 and select `Configure Edge Network Firewall`{.action} (or click on the status badge in the **Edge Firewall** column).
 
 ![Enabling the Network Firewall](images/firewall_config_new.png){.thumbnail}
 
 You will then be taken to the firewall configuration page.
 
-You can set up to **20 rules per IP**.
+> [!primary]
+>
+> - UDP fragmentation is blocked (DROP) by default. If you are using a VPN, remember to configure your Maximum Transmission Unit (MTU) correctly. For example, with OpenVPN, you can check `MTU test`.
+> - The Edge Network Firewall (ENF) integrated in the scrubbing centres (VAC) only handles network traffic coming from outside the OVHcloud network.
+>
 
 > [!warning]
->
-> The Edge Network Firewall is automatically enabled when a DDoS attack is detected and cannot be disabled until the attack has ended. As a result, all the rules configured in the firewall are applied during the duration of the attack. This logic allows our customers to offload the firewall rules of the server to the edge of the OVHcloud network for the duration of the attack.
->
 > Please note that you should configure your own local firewalls even if the Edge Network Firewall has been configured, as its main role is to handle traffic from outside of the OVHcloud network.
 >
 > If you have configured some rules, we recommend that you check them regularly or when changing how your services are working. As previously mentioned, the Edge Network Firewall will be automatically enabled in case of a DDoS attack even when disabled in your IP settings.
 >
 
-> [!primary]
->
-> - UDP fragmentation is blocked (DROP) by default. When enabling the Edge Network Firewall, if you are using a VPN, remember to configure your Maximum Transmission Unit (MTU) correctly. For example, with OpenVPN, you can check `MTU test`.
-> - The Edge Network Firewall (ENF) integrated in the scrubbing centres (VAC) only handles network traffic coming from outside the OVHcloud network.
->
+### Configure firewall rules
 
-### Configure the Edge Network Firewall
+You can set up to **20 rules per IP**.
+
+> [!primary]
+> Since March 2026, the Edge Network Firewall supports rules that apply to port ranges, in addition to the usual single-port rules.
+>
+> By using port ranges, you can protect applications that require multiple sequential ports with a single entry. This ensures your configuration stays within the 20-rule limit by eliminating the need for separate rules targeting each individual port.
 
 > [!warning]
 > Please note that the OVHcloud Edge Network Firewall cannot be used to open ports on a server. To open ports on a server, you must go through the firewall of the operating system installed on the server. 
@@ -85,23 +99,25 @@ You can set up to **20 rules per IP**.
 > For more information, please refer to the following guides: [Configuring the firewall on Windows](/pages/bare_metal_cloud/dedicated_servers/activate-port-firewall-soft-win) and [Configuring the firewall on Linux with iptables](/pages/bare_metal_cloud/dedicated_servers/firewall-Linux-iptable).
 >
 
-**To add a rule**, click on the `+ Add a rule`{.action} button, on the top left :
+**To add a rule**, click on the `+ Add a rule`{.action} button, on the top left:
 
-| ![add-rule-btn](images/enf_add_rule_new.png) | 
-|:--:| 
+| ![Add a rule button in Edge Network Firewall](images/enf_add_rule_new.png) |
+|:--:|
 | Click on `+ Add a rule`{.action}. |
 
 For each rule (excluding TCP), you must choose:
 
-| ![add-rule-btn](images/enf_add_rule_no_tcp_new.png) | 
-|:--| 
-| &bull; A priority (from 0 to 19, 0 being the first rule to be applied, followed by the others) <br>&bull; An action (`Accept`{.action} or `Deny`{.action}) <br>&bull; The protocol <br>&bull; Source IP (optional) |
+| ![Firewall rule form for non-TCP protocols](images/enf_add_rule_no_tcp_new.png){.thumbnail} |
+|:--|
+| - A priority (from 0 to 19, 0 being the first rule to be applied, followed by the others) <br> - An action (`Accept`{.action} or `Deny`{.action}) <br> - The protocol <br> - Source IP (optional) |
 
 For each **TCP** rule, you must choose:
 
-| ![add-rule-btn](images/enf_add_rule_tcp_new.png) | 
-|:--| 
-| &bull; A priority (from 0 to 19, 0 being the first rule to be applied, followed by the others) <br>&bull; An action (`Accept`{.action} or `Deny`{.action}) <br>&bull; The protocol <br>&bull; Source IP (optional) <br>&bull; The source port (optional) <br>&bull; The destination port (optional) <br>&bull; The TCP state (optional) <br>&bull; Fragments (optional)|
+| ![Firewall rule form for TCP protocol](images/enf_add_rule_tcp_new.png){.thumbnail} |
+|:--|
+| - A priority (from 0 to 19, 0 being the first rule to be applied, followed by the others) <br> - An action (`Accept`{.action} or `Deny`{.action}) <br> - The protocol <br> - Source IP (optional) <br> - The source port or port range (optional) <br> - The destination port or port range (optional) <br> - The TCP state (optional) <br> - Fragments (optional) |
+
+When configuring a TCP or UDP rule with a port or port range, ensure the source and destination port fields contain either a single number between 1 and 65535 (inclusive), or a port range (two numbers separated by a hyphen, e.g. 8887-8888).
 
 > [!primary]
 > We advise authorising TCP protocol with an established option (for packets that are part of a previously opened/started session), ICMP packets (for ping and traceroute) and optionally UDP DNS responses from external servers (if you use external DNS servers).
@@ -114,7 +130,7 @@ For each **TCP** rule, you must choose:
 > - Priority 19: Refuse IPv4
 
 > [!warning]
-> Firewall setups with only "Accept" mode rules are not effective at all. There must be an instruction as to which traffic should be dropped by the firewall. You will see a warning unless such a "Deny" rule is created.
+> Firewall setups with only `Accept` mode rules are not effective at all. There must be an instruction as to which traffic should be dropped by the firewall. You will see a warning unless such a `Deny` rule is created.
 > 
 
 **Enable/disable firewall:**
@@ -126,6 +142,26 @@ For each **TCP** rule, you must choose:
 After confirmation, the firewall will be enabled or disabled.
 
 Note that rules are disabled until the moment an attack is detected - then they are activated. This logic can be used for rules that are only active when a known repeated attack is incoming.
+
+### Common mistakes and best practices
+
+#### Setting both source and destination ports in the same rule
+
+When creating firewall rules, defining both source and destination ports is usually misconfiguration, as source ports are typically assigned randomly by the client’s operating system (ephemeral ports).
+
+If you lock a rule to a specific source port, it will likely drop legitimate traffic as soon as the client's port changes for the next session. To ensure connectivity, you should only specify the destination port (your service port).
+
+**Best Practice:** Leave the source port empty, unless you are filtering traffic from a specialized system with a static outbound configuration.
+
+#### Large port ranges
+
+Creating rules allowing traffic over very large port ranges may be a security risk, as it significantly expands the attack surface on your server. This can result in several issues:
+
+- You may inadvertently expose background services that were not meant to be public-facing, thus potentially leaking information about your system, and allowing malicious actors to probe your servers for vulnerabilities.
+- Audit and troubleshooting become significantly more difficult, as it is harder to check which applications are actually communicating, masking potential misconfigurations or breaches.
+- Large open UDP ranges are frequently targeted by amplification and reflection attacks, as there is a higher chance of finding public-facing services. Attackers can spoof a targeted IP to send small requests to services in that open range, which then respond with much larger packets. This way, they are effectively using your server to send DDoS attacks, while potentially overwhelming your own bandwidth.
+
+**Best Practice:** Only use limited ranges for sequential ports required by a single application (e.g. 5000-5100).
 
 ### Configuration example
 
@@ -170,5 +206,7 @@ After reading this tutorial, you should be able to configure the Edge Network Fi
 ## Go further
 
 - [Protecting a game server with the application firewall](/pages/bare_metal_cloud/dedicated_servers/firewall_game_ddos)
+
+[Configuring Anti-DDoS for Solana on Dedicated Servers](/pages/bare_metal_cloud/dedicated_servers/blockchain_anti_ddos)
 
 Join our [community of users](/links/community).

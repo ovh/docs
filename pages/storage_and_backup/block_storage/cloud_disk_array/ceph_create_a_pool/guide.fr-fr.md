@@ -11,7 +11,17 @@ Ce guide vous montre comment créer un pool pour votre cluster Ceph, en utilisan
 ## Prérequis
 
 - Une solution [Cloud Disk Array](/links/storage/cloud-disk-array)
-- Être connecté à l’[espace client OVHcloud](/links/manager) ou à l’[API OVHcloud](/links/api)
+
+<!-- CP-NAV-START:storage-cloud-disk-array -->
+---
+
+### Accès à l’espace client OVHcloud
+
+- **Lien direct :** [Cloud Disk Array](/links/control-panel/storage-cloud-disk-array)
+- **Pour accéder à vos services :** `Bare Metal Cloud`{.action} > `Cloud Disk Array`{.action} > Sélectionnez votre service
+
+---
+<!-- CP-NAV-END:storage-cloud-disk-array -->
 
 ## En pratique
 
@@ -22,9 +32,7 @@ Ce guide vous montre comment créer un pool pour votre cluster Ceph, en utilisan
 
 ### Depuis l'espace client OVHcloud
 
-Tout d'abord, connectez-vous à [l’espace client](/links/manager) et cliquez sur `Bare Metal Cloud`{.action}. Dans la rubrique `Plateformes et services`{.action}, vous trouverez le service Ceph.
-
-Vous retrouverez les pools existants dans l'onglet `Pools`{.action}.
+Vous retrouverez les pools existants dans l’onglet `Pools`{.action}.
 
 ![Ceph pools](images/ceph-add-pool-1.png){.thumbnail}
 

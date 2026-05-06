@@ -4,7 +4,6 @@ excerpt: 'Dowiedz się, jak zarządzać fakturowaniem usługi E-mail Pro'
 updated: 2025-09-22
 ---
 
-
 ## Wprowadzenie
 
 Oferta E-mail Pro umożliwia elastyczne zarządzanie płatnościami. Niniejszy przewodnik przedstawia, jak skonfigurować fakturowanie.
@@ -13,17 +12,22 @@ Oferta E-mail Pro umożliwia elastyczne zarządzanie płatnościami. Niniejszy p
 
 ## Wymagania początkowe
 
-- Dostęp do [Panelu klienta OVHcloud](/links/manager).
 - Posiadanie [konta E-mail Pro](/links/web/email-pro)
+
+<!-- CP-NAV-START:web-email-pro -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [E-mail Pro](/links/control-panel/web-email-pro)
+- **Ścieżka nawigacji:** `Web Cloud`{.action} > `E-mail Pro`{.action} > Wybierz platformę
+
+---
+<!-- CP-NAV-END:web-email-pro -->
 
 ## W praktyce
 
 ### Zamówienie dodatkowych kont
-
-1. Zaloguj się do [Panelu klienta OVHcloud](/links/manager).
-1. Kliknij zakładkę `Web Cloud`{.action}.
-1. Kliknij `Email Pro`{.action}.
-1. Wybierz odpowiednią platformę.
 
 Przejdź do karty `Konta e-mail`{.action}, a następnie kliknij przycisk `Zamówienie kont`{.action} w prawym górnym rogu.
 
@@ -43,7 +47,7 @@ Pojawi się okno. W tabeli możesz zarządzać czasem odnowienia każdego konta.
 
 > [!primary]
 >
-> W przypadku uproszczonego zarządzania, fakturowanie każdego konta Email Pro jest automatycznie ustawione na początku miesiąca. Aby to wyrównać i przenieść w razie potrzeby datę subskrypcji, otrzymasz proporcjonalną fakturę z konta Email Pro.
+> W przypadku uproszczonego zarządzania, fakturowanie każdego konta E-mail Pro jest automatycznie ustawione na początku miesiąca. Aby to wyrównać i przenieść w razie potrzeby datę subskrypcji, otrzymasz proporcjonalną fakturę z konta E-mail Pro.
 >
 > **Przykład**: Następne zamówienie złożone w dniu 08 stycznia wraz z abonamentem miesięcznym wiąże się z opłaceniem w dniu 08 lutego. Poniższa faktura będzie dotyczyć okresu od 08 lutego do 1 marca.
 

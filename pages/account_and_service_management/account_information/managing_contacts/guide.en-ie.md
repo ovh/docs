@@ -1,7 +1,7 @@
 ---
 title: 'Managing contacts for your services'
 excerpt: 'Find out how to manage contacts for your OVHcloud services'
-updated: 2025-08-27
+updated: 2026-02-11
 ---
 
 ## Objective
@@ -18,7 +18,7 @@ Most services created with OVHcloud are managed by several contacts. Each of the
 
 There are three different contact types:
 
-- **The administrative contact** manages a service’s administrative and technical aspects. They have rights to modify all contacts, and can make changes to information belonging to the owner of a service, such as domain names, for example.
+- **The administrative contact** manages a service’s administrative and technical aspects. They have rights to modify all contacts, and can make changes to information belonging to the holder of a service, such as domain names, for example.
 - **The technical contact** only manages the technical aspects of a service.
 - **The billing contact** only manages the billing aspects of a service. Notably, this contact receives renewal notifications for services. 
 
@@ -28,11 +28,22 @@ The NIC handle is a personal username that you receive via email when you create
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](/links/manager).
 - Access to the email address linked to any relevant customer account.
 - Appropriate rights for the service concerned.
 - The new contact’s NIC handle (the contact you want to add).
 - No outstanding payments on billing contacts.
+- The new billing contact must have a valid payment method in their OVHcloud account.
+
+<!-- CP-NAV-START:account-contacts -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Contact management](/links/control-panel/account-contacts)
+- **Navigation path:** Click your name in the top right > `My contacts`{.action}
+
+---
+<!-- CP-NAV-END:account-contacts -->
 
 ## Instructions
 
@@ -40,9 +51,9 @@ The NIC handle is a personal username that you receive via email when you create
 > Contact management is only possible between two OVHcloud accounts located in the same geographical zone.
 > For example, it is impossible to manage contacts between an account in Europe and an account in Canada.
 
-### Access contact management
+### Access contact management <a name="gestion_des_contacts"></a>
 
-Log in to the [OVHcloud Control Panel](/links/manager), click on your name in the top right-hand corner, then `My contacts`{.action}.
+Open the [My contacts](/links/control-panel/account-contacts) page.
 
 ![Contact management](/pages/assets/screens/control_panel/product-selection/right-menu/my-contacts.png){.thumbnail}
 
@@ -60,17 +71,20 @@ Once you are on the Contacts page, click `...`{.action} to the right of the serv
 
 An email will be sent to the contacts you have added once you confirm this change.
 
-#### Administrative contact
+> [!warning]
+>
+> No change of contact will be allowed if the old or new customer account concerned has one or more unpaid invoices.
+>
+
+#### Administrative contact <a name="administrateur"></a>
 
 As an administrator, you can make several changes to contacts for a service. This includes:
 
 - Naming a new technical and/or billing contact. Validation is required from both you and the new contact. The previous contact will receive an email informing them of this change, if it is successful.
-
 - Managing technical and/or billing aspects. You need to confirm this request. The previous contact will receive an email informing them of this change. 
-
 - Naming a new administrative contact to replace you. Confirmation is required from both you and the new contact. 
 
-#### Technical contact
+#### Technical contact <a name="technique"></a>
 
 You can only add another technical contact to replace you. Confirmation is required from both you and the new contact.
 
@@ -78,12 +92,9 @@ You can only add another technical contact to replace you. Confirmation is requi
 
 You can only add another billing contact to replace you. Confirmation is required from both you and the new contact.
 
-> [!warning]
-> The old and new billing contacts must be up-to-date with their payments.
-
 ### Confirm, decline or track a contact change.
 
-To track and manage ongoing requests, log in to the [OVHcloud Control Panel](/links/manager), click on your name in the top right-hand corner, then `My contacts`{.action}. Click on the `My requests`{.action} tab. Here, you can accept or decline a request.
+To track and manage ongoing requests, click on the `My requests`{.action} tab. Here, you can accept or decline a request.
 
 ![Contact management](images/managing_contacts_05.png){.thumbnail}
 
@@ -102,15 +113,30 @@ If only one contact has confirmed the change, a message will appear confirming t
 
 ![Contact management](images/managing_contacts_007.png){.thumbnail}
 
-Once both contacts have confirmed the request, the change will be successful within a few minutes. The two contacts will receive an email confirming that the request has been successfully processed.
+The contact change will take effect a few minutes after both contacts have validated the request. They will then receive an email informing them that the request has been processed.
 
-### Special case of a domain owner
+### Example: Providing access for a website's technical administration to your webmaster
 
-When you ordered an OVHcloud service, you defined an owner for it. If the domain owner has no access to the OVHcloud account(s) associated with the respective service, they can transfer domain ownership to a third party, or obtain domain administration, via the following procedures:
+You have just subscribed to an OVHcloud service with the purpose of hosting your own [online store](/links/web/hosting-ecommerce-website). You have contacted one of our [partners](/links/partner) and they are requesting access rights to your OVHcloud services in order to start building your website.
 
-[Change the owner of a service](https://www.ovh.ie/cgi-bin/ie/procedure/procedureChangeOwner.cgi)
+> [!warning]
+>
+> We do not recommend that you give any third parties access credentials to your [OVHcloud Control Panel](/links/manager).
+>
 
-[Change your domain contacts](https://www.ovh.ie/cgi-bin/ie/procedure/procedureChangeContacts.cgi)
+In this situation, you can grant your service provider the role "[technical contact](#gestion_des_contacts)" on your OVHcloud Web Hosting plan. With this access, they can carry out the operations required to put your website online (adding a domain or subdomain to the multisite, installing a 1-click module, changing the FTP and database passwords, creating SSL certificates, etc.).
+
+If your domain name is not linked to your hosting plan, and you wish to entrust the necessary operations to your webmaster, give them the role "[technical contact](#gestion_des_contacts)" on your [domain name’s DNS zone](/pages/web_cloud/domains/dns_zone_edit).
+
+You cannot change a service’s admin or billing contacts when logged in as "[technical contact](#gestion_des_contacts)". This access right will not give your webmaster access to your invoices, orders, service renewals or payment methods. They will not be able to [transfer the management of your domain name](/pages/web_cloud/domains/transfer_outgoing_domain) to another hosting provider or [change its holder](/pages/web_cloud/domains/trade_domain) to another holder. Finally, as the [administrative contact](#administrateur) of your services, you can change the "[technical contact](#technique)" at any time.
+
+### Special case of a domain name holder
+
+When you ordered an OVHcloud service, you defined a holder for it. If the domain name holder has no access to the OVHcloud account(s) associated with the respective service, they can transfer domain name to a third-party holder, or obtain domain administration, via the following procedures:
+
+[Change the holder of a service](/links/transversal/procedure-change-owner)
+
+[Change your domain contacts](/links/transversal/procedure-contact-change)
 
 Each procedure is carried out by email and an identity check will be required. Detailed instructions will be provided throughout each procedure.
 

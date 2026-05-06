@@ -214,7 +214,7 @@ Sprawdź i porównaj różne poziomy wsparcia dostępne [tutaj](/links/support).
 
 /// details | Gdzie znajdę informację o przysługującym mi poziomie wsparcia klienta?
 
-Aby poznać poziom wsparcia powiązany z Twoim identyfikatorem klienta, zaloguj się do Twojego [Panelu klienta OVHcloud](/links/manager), a następnie kliknij Twoją nazwę użytkownika w prawym górnym rogu. Po prawej stronie wzmianki znajduje się poziom wsparcia **Dział Wsparcia Klienta**. Jeśli nie została przez Ciebie wykupiona płatna usługa wsparcia, możesz korzystać z domyślnej usługi wsparcia na poziomie Standard.
+Aby poznać poziom wsparcia powiązany z Twoim identyfikatorem klienta, otwórz stronę [Moje konto](/links/control-panel/account-dashboard). Po prawej stronie wzmianki znajduje się poziom wsparcia **Dział Wsparcia Klienta**. Jeśli nie została przez Ciebie wykupiona płatna usługa wsparcia, możesz korzystać z domyślnej usługi wsparcia na poziomie Standard.
 
 Sprawdź i porównaj różne poziomy wsparcia dostępne [tutaj](/links/support).
 

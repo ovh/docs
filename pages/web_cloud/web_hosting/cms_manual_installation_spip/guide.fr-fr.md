@@ -14,7 +14,6 @@ Le **CMS** (**C**ontent **M**anagement **S**ystem) SPIP est une solution adapté
 
 - Disposer d'une offre d'[hébergement web OVHcloud](/links/web/hosting) incluant au moins une base de données.
 - Disposer d'un [nom de domaine](/links/web/domains).
-- Être connecté à votre [espace client OVHcloud](/links/manager).
 
 ## En pratique
 

@@ -17,6 +17,17 @@ Learn how to create and manage a Health Monitor for your OVHcloud Load Balancers
 
 ## Instructions
 
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Percorso di navigazione:** `Public Cloud`{.action} > Seleziona il tuo project
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
+
 ### Creating a Health Monitor
 
 Health Monitors play a crucial role in managing the availability and performance of services hosted on infrastructures such as the OVHcloud Public Cloud. They perform regular checks on servers to ensure their ability to handle incoming requests. If a server fails to meet the established health criteria, it is temporarily removed from the pool, ensuring that traffic is directed only to functional servers.
@@ -95,14 +106,12 @@ Depending on the interface chosen, here are the steps to follow:
 
 Follow these steps to add a Health Monitor to a pool of your OVHcloud Load Balancer, which will monitor the health status of the servers in the pool:
 
-<strong>1.</strong> Log in to the [OVHcloud Control Panel](/links/manager).<br>
-<strong>2.</strong> Navigate to the `Public Cloud`{.action} section and select your project.<br>
-<strong>3.</strong> Click on `Load Balancer`{.action} in the left menu and select the Load Balancer you want to configure.<br>
-<strong>4.</strong> Go to the `Pools`{.action} tab, then click on the Pool for which you want to create a Health Monitor.
+<strong>1.</strong> Click on `Load Balancer`{.action} in the left menu and select the Load Balancer you want to configure.<br>
+<strong>2.</strong> Go to the `Pools`{.action} tab, then click on the Pool for which you want to create a Health Monitor.
 
 ![Schema 1](images/healthM1.png){.thumbnail}
 
-<strong>5.</strong> Click on the `Health Monitors`{.action} tab within the Pool details, then on `Add a Health Monitor`{.action}.
+<strong>3.</strong> Click on the `Health Monitors`{.action} tab within the Pool details, then on `Add a Health Monitor`{.action}.
 
 ![Schema 1](images/healthM2.png){.thumbnail}
 
@@ -120,7 +129,7 @@ Follow these steps to add a Health Monitor to a pool of your OVHcloud Load Balan
     - **Max Retries**: Total number of connection failures allowed before marking the member as inactive (between 1 and 10).
     - **Timeout**: Duration after which a test stops (must be equal to or greater than the periodicity).
 
-<strong>6.</strong> Once all the information is filled in, click on `Add`{.action} to activate your Health Monitor.
+<strong>4.</strong> Once all the information is filled in, click on `Add`{.action} to activate your Health Monitor.
 
 ![Schema 1](images/healthM3.png){.thumbnail}
 

@@ -1,6 +1,6 @@
 ---
-title: Cómo empezar con buen pie con las conexiones SSH
-excerpt: "Cómo utilizar SSH para acceder a un servidor de OVHcloud desde la mayoría de los puestos de trabajo"
+title: "Primeros pasos con SSH en un servidor dedicado"
+excerpt: "Conéctese a su servidor OVHcloud por SSH desde Windows, macOS o Linux con autenticación por contraseña o por clave"
 updated: 2024-12-03
 ---
 

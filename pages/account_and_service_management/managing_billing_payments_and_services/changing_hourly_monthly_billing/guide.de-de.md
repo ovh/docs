@@ -26,7 +26,17 @@ Instanzen mit monatlicher Fälligkeit können im Voraus bezahlt werden und werde
 ## Voraussetzungen
 
 - Sie verfügen über eine [Public Cloud Instanz](/links/public-cloud/public-cloud).
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direkter Link:** [Public Cloud Projekte](/links/control-panel/publiccloud-projects)
+- **Navigationspfad:** `Public Cloud`{.action} > Wählen Sie Ihr Projekt aus
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## In der praktischen Anwendung
 
@@ -36,7 +46,7 @@ Instanzen mit monatlicher Fälligkeit können im Voraus bezahlt werden und werde
 > Das folgende Verfahren funktioniert nicht bei Instanzen der dritten Generation (Beispiel: B3-32). Um die monatliche Abrechnung für diese Art von Instanz zu erhalten, müssen Sie einen [Savings Plan](/pages/public_cloud/public_cloud_cross_functional/savings_plans) für diese Instanz erstellen.
 >
 
-Wählen Sie im [OVHcloud Kundencenter](/links/manager) unter `Instances`{.action} die Instanz für welche Sie das Abrechnungsintervall ändern möchten. Öffnen Sie das Kontextmenü indem Sie auf `...`{.action} rechts neben der Instanz klicken. Sie sehen dann die Option `Auf monatliche Abrechnung umstellen`{.action}:
+Wählen Sie unter `Instances`{.action} die Instanz, für welche Sie das Abrechnungsintervall ändern möchten. Öffnen Sie das Kontextmenü indem Sie auf `...`{.action} rechts neben der Instanz klicken. Sie sehen dann die Option `Auf monatliche Abrechnung umstellen`{.action}:
 
 ![Change billing calculation](images/switch_to_monthly_updated.png){.thumbnail}
 

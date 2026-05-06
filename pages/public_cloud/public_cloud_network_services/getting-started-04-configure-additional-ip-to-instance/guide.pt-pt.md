@@ -40,11 +40,23 @@ Poderá ter de configurar endereços Additional IP nas suas instâncias, por exe
 
 ## Instruções
 
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Acesso à Área de Cliente OVHcloud
+
+- **Ligação direta:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Caminho de navegação:** `Public Cloud`{.action} > Selecione o seu projeto
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
+
+
 Este guia contém as configurações das distribuições/sistemas operativos mais frequentemente utilizados. A primeira etapa consiste sempre em ligar-se à sua instância através de SSH ou através de uma sessão de ligação à interface gráfica de utilizador (VNC para uma instância Windows). Os exemplos abaixo pressupõem que está ligado enquanto utilizador com autorizações elevadas (administrador/sudo).
 
 > [!primary]
 >
-No que diz respeito às diferentes versões de distribuições, tenha em conta que o procedimento adequado para configurar a sua interface de rede, bem como os nomes de ficheiros, podem ter sido alterados. Se encontrar dificuldades, recomendamos que consulte a documentação relativa ao seu sistema operativo.
+> No que diz respeito às diferentes versões de distribuições, tenha em conta que o procedimento adequado para configurar a sua interface de rede, bem como os nomes de ficheiros, podem ter sido alterados. Se encontrar dificuldades, recomendamos que consulte a documentação relativa ao seu sistema operativo.
 >
 
 **Queira tomar nota da seguinte terminologia que será utilizada nos exemplos de código e as instruções detalhadas neste guia:**
@@ -101,7 +113,7 @@ No que diz respeito às diferentes versões de distribuições, tenha em conta q
 >>
 >> ```bash
 >> auto NETWORK_INTERFACE:ID
->> iface NETWORK_INTERFACE:ID do inet static
+>> iface NETWORK_INTERFACE:ID inet static
 >> address ADDITIONAL_IP
 >> netmask 255.255.255.255
 >> ```
@@ -231,7 +243,7 @@ No que diz respeito às diferentes versões de distribuições, tenha em conta q
 >>
 >> **Etapa 1: editar o ficheiro de configuração**
 >>
->> [!primary]
+>> > [!primary]
 >> > Atenção: o nome do ficheiro de rede no nosso exemplo pode ser diferente do seu. Adapte os comandos ao seu nome de ficheiro.
 >> >
 >>
@@ -275,7 +287,7 @@ No que diz respeito às diferentes versões de distribuições, tenha em conta q
 >>
 >> ![acesso à gestão dos endereços IP](images/pleskip1.png){.thumbnail}
 >>
->> Clique em `IP Endereço`{.action} em **Tools & Settings**.
+>> Clique em `IP Addresses`{.action} sob **Tools & Resources**.
 >>
 >> **Etapa 2: adicionar informações IP suplementares**
 >>
@@ -296,17 +308,17 @@ No que diz respeito às diferentes versões de distribuições, tenha em conta q
 > **Windows Server**
 >> Windows Server
 >>
->> No espaço Public Cloud, abra `Instances`{.action} no menu à esquerda e clique no nome da sua instância. Aceda ao separador `Console VNC`{.action}.
+>> No seu projeto Public Cloud, abra `Instances`{.action} no menu à esquerda e clique no nome da sua instância. Aceda ao separador `Console VNC`{.action}.
 >>
 >> **Etapa 1: verificar a configuração de rede**
 >>
->> Clique com o botão `Menu Iniciar`{.action} e abra a `Executar`{.action}.
+>> Clique com o botão direito do rato no `Menu Iniciar`{.action} e abra `Executar`{.action}.
 >>
 >> Introduza `cmd` e clique em `OK`{.action} para abrir a aplicação de linha de comando.
 >>
 >> ![cmdprompt](images/pci_win07.png){.thumbnail}
 >>
->> Para obter a configuração IP atual, insira o `ipconfig` na encomenda.
+>> Para obter a configuração IP atual, introduza `ipconfig` no prompt de comandos.
 >>
 >> ![verificar a configuração IP principal](images/image1-1.png){.thumbnail}
 >>
@@ -318,7 +330,7 @@ No que diz respeito às diferentes versões de distribuições, tenha em conta q
 >>
 >> ![alterar a configuração IP](images/image2.png){.thumbnail}
 >>
->> Na janela Propriedades IPv4, selecione `Utilizar o seguinte`{.action} endereço IP. Introduza o endereço IP que recuperou na primeira etapa e clique em `Avançado`{.action}.
+>> Na janela Propriedades IPv4, selecione `Utilizar o seguinte endereço IP`{.action}. Introduza o endereço IP que recuperou na primeira etapa e clique em `Avançado`{.action}.
 >>
 >> **Etapa 3: adicionar o endereço Additional IP nos Parâmetros TCP/IP avançados**
 >>

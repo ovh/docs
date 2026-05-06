@@ -1,7 +1,7 @@
 ---
 title: "MX Plan / Zimbra Starter - Konfigurieren Sie Ihre E-Mail-Adresse auf klassischem Outlook für Windows"
 excerpt: "Erfahren Sie, wie Sie Ihre MX Plan E-Mail-Adresse mit dem klassischen Outlook für Windows konfigurieren"
-updated: 2026-01-09
+updated: 2026-03-24
 ---
 
 <style>
@@ -37,6 +37,17 @@ Die E-Mail-Adressen der Angebote **MX Plan** und [Zimbra](/links/web/emails-zimb
     - [Zimbra](/links/web/emails-zimbra) Starter.
 - Sie benötigen die [neue Outlook-Version](https://support.microsoft.com/de-de/office/getting-started-with-the-new-outlook-for-windows-656bb8d9-5a60-49b2-a98b-ba7822bc7627), installiert auf Ihrem Windows-System.
 - Sie benötigen die Zugangsdaten für die E-Mail-Adresse, die Sie konfigurieren möchten.
+
+<!-- CP-NAV-START:web-mx-plan -->
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direkter Link:** [MX Plan](/links/control-panel/web-mx-plan)
+- **Navigationspfad:** `Web Cloud`{.action} > `MX Plan`{.action} > Wählen Sie Ihren MX Plan Dienst aus
+
+---
+<!-- CP-NAV-END:web-mx-plan -->
 
 /// details | Informationen zur Verwaltung und Konfiguration der OVHcloud Dienste
 
@@ -79,11 +90,81 @@ Wir empfehlen Ihnen jedoch, sich bei Schwierigkeiten an einen [spezialisierten D
 
 ![Outlook](images/config-outlook-mxplan01.png){.thumbnail .h-500}
 
-Um Ihre E-Mail-Adresse zu konfigurieren, folgen Sie den Schritten, indem Sie auf die untenstehenden Tabs klicken.
+**Unter Windows 11 kann die klassische Outlook-Benutzeroberfläche anders aussehen, wenn Sie einen Account hinzufügen.**
+
+Je nach Verwendungsgeschichte von Outlook auf dem betreffenden Computer kann eine spezifische Konfiguration dazu führen, dass eine andere Benutzeroberfläche angezeigt wird. In einigen Fällen kann die sogenannte "moderne" Benutzeroberfläche (**Oberfläche 1**) deaktiviert sein zugunsten der klassischen Benutzeroberfläche (**Oberfläche 2**).
+
+Aus diesem Grund bitten wir Sie, den Abschnitt zu lesen, der der Benutzeroberfläche entspricht, die auf Ihrem Bildschirm angezeigt wird.
+
+#### Konfiguration mit der Oberfläche 1 <a name="add-account-int1"></a>
 
 > [!warning]
 >
-> Sie müssen den Wert entsprechend Ihrer Region (**EUROPE** oder **AMERIKA / ASIEN-PACIFIK**) eingeben.
+> Sie müssen den Wert entsprechend Ihrer Region (**EUROPA** oder **AMERIKA / ASIEN-PAZIFIK**) eingeben.
+
+Um Ihre E-Mail-Adresse zu konfigurieren, folgen Sie den Schritten, indem Sie auf die Tabs unten klicken.
+
+> [!tabs]
+> **Schritt 1**
+>>
+>> Geben Sie Ihre E-Mail-Adresse ein und klicken Sie auf `Erweiterte Optionen`{.action}.
+>>
+>> Aktivieren Sie anschließend das Feld `Account manuell konfigurieren`{.action} und klicken Sie auf `Verbindung herstellen`{.action}.
+>>
+>> ![Outlook](images/config-outlook-legacy-mxplan02.png){.thumbnail .h-500}
+>>
+> **Schritt 2**
+>>
+>> Wählen Sie unter den angebotenen Accountstypen IMAP oder POP aus.
+>>
+>> Wir empfehlen, das IMAP-Protokoll zu verwenden.
+>>
+>> ![Outlook](images/config-outlook-legacy-mxplan03.png){.thumbnail .h-500}
+>>
+> **Schritt 3**
+>>
+>> Geben Sie das Passwort des E-Mail-Accounts ein und klicken Sie auf `Anmelden`{.action}.
+>>
+>> ![Outlook](images/config-outlook-legacy-mxplan04.png){.thumbnail .h-500}
+>>
+> **Schritt 4**
+>>
+>> Wenn Outlook den Account nicht automatisch konfigurieren kann, wird folgendes Fenster angezeigt.
+>>
+>> Klicken Sie auf `Accounteinstellungen ändern`{.action}.
+>>
+>> ![Outlook](images/config-outlook-legacy-mxplan05.png){.thumbnail .h-500}
+>>
+> **Schritt 5**
+>>
+>> Im Abschnitt **Eingehender Posteingang**, geben Sie Folgendes ein:
+>>
+>> - Server :
+>>     - **EUROPA**: imap.mail.ovh.net **oder** ssl0.ovh.net
+>>     - **AMERIKA / ASIEN-PAZIFIK**: imap.mail.ovh.ca
+>> - Port: **993**
+>> - Verschlüsselungsmethode: **SSL/TLS**
+>>
+>> Im Abschnitt **Ausgehender Postausgang**, geben Sie Folgendes ein:
+>>
+>> - Server:
+>>     - **EUROPA**: smtp.mail.ovh.net **oder** ssl0.ovh.net
+>>     - **AMERIKA / ASIEN-PAZIFIK**: smtp.mail.ovh.ca
+>> - Port: **465**
+>> - Verschlüsselungsmethode: **SSL/TLS**
+>>
+>> Klicken Sie auf `Weiter`{.action}, um fortzufahren.
+>>
+>> ![Outlook](images/config-outlook-legacy-mxplan06.png){.thumbnail .h-500}
+>>
+
+#### Konfiguration mit der Oberfläche 2 <a name="add-account-int2"></a>
+
+Um Ihre E-Mail-Adresse zu konfigurieren, folgen Sie den Schritten, indem Sie auf die Tabs unten klicken.
+
+> [!warning]
+>
+> Sie müssen den Wert entsprechend Ihrer Region (**EUROPA** oder **AMERIKA / ASIEN-PAZIFIK**) eingeben.
 
 > [!tabs]
 > **Schritt 1**
@@ -106,15 +187,15 @@ Um Ihre E-Mail-Adresse zu konfigurieren, folgen Sie den Schritten, indem Sie auf
 >> Serverinformationen <br>
 >> - **Accounttyp**: Wählen Sie IMAP aus<br>
 >> - **Eingehender E-Mail-Server**: <br>
->>      - **EUROPE**: imap.mail.ovh.net **oder** ssl0.ovh.net <br>
->>      - **AMERIKA/ASIEN-PACIFIK**: imap.mail.ovh.ca <br>
+>>      - **EUROPA**: imap.mail.ovh.net **oder** ssl0.ovh.net <br>
+>>      - **AMERIKA/ASIEN-PAZIFIK**: imap.mail.ovh.ca <br>
 >> - **Ausgehender E-Mail-Server (SMTP)**: <br>
->>      - **EUROPE**: smtp.mail.ovh.net **oder** ssl0.ovh.net <br>
->>      - **AMERIKA/ASIEN-PACIFIK**: smtp.mail.ovh.ca <br>
+>>      - **EUROPA**: smtp.mail.ovh.net **oder** ssl0.ovh.net <br>
+>>      - **AMERIKA/ASIEN-PAZIFIK**: smtp.mail.ovh.ca <br>
 >>
 >> Anmeldeinformationen <br>
 >> **Benutzername**: Geben Sie Ihre vollständige E-Mail-Adresse ein.<br>
->> **Passwort**: Geben Sie das Passwort ein, das mit Ihrer E-Mail-Adresse verknüpft ist.<br>
+>> **Passwort**: Geben Sie das Passwort des E-Mail-Accounts ein.<br>
 >>
 >> Klicken Sie auf `Weitere Einstellungen...`{.action} **(2)** und gehen Sie zum nächsten Schritt über.
 >>
@@ -122,9 +203,9 @@ Um Ihre E-Mail-Adresse zu konfigurieren, folgen Sie den Schritten, indem Sie auf
 >>
 > **Schritt 3**
 >>
->> Gehen Sie zum Register `Ausgehender Server` und aktivieren Sie `Mein ausgehender Server (SMTP) benötigt eine Authentifizierung`{.action} und lassen Sie `Die gleichen Einstellungen wie bei meinem eingehenden E-Mail-Server verwenden`{.action} ausgewählt.
+>> Gehen Sie zum Tab `Ausgehender Server` und aktivieren Sie `Mein ausgehender Server (SMTP) benötigt eine Authentifizierung`{.action} und lassen Sie `Die gleichen Einstellungen wie bei meinem eingehenden E-Mail-Server verwenden`{.action} ausgewählt.
 >>
->> Gehen Sie zum Register `Erweiterte Optionen`:
+>> Gehen Sie zum Tab `Erweiterte Optionen`:
 >>
 >> - **Eingehender Server (IMAP)**: 993
 >> - **Verwenden Sie den folgenden Verschlüsselungstyp**: SSL/TLS
@@ -154,18 +235,49 @@ Wenn Sie eine Änderung vornehmen, die den Verlust der Daten Ihres E-Mail-Accoun
 
 ### Bestehende Einstellungen ändern
 
-Wenn Ihren E-Mail-Account bereits konfiguriert ist und Sie auf die Accounteinstellungen zugreifen müssen, um sie zu ändern:
+**Unter Windows 11 kann die klassische Outlook-Benutzeroberfläche anders aussehen, wenn Sie ein Account bearbeiten.**
 
-- Gehen Sie zu `Datei`{.action} in der Menüleiste oben auf Ihrem Bildschirm.
-- Wählen Sie das zu ändernde Account im Dropdown-Menü **(1)** aus.
-- Klicken Sie auf `Accounteinstellungen`{.action} **(2)** darunter.
-- Klicken Sie auf `Accounteinstellungen...`{.action} **(3)**, um zum Einstellungsfenster zu gelangen.
+Je nach Verwendungsgeschichte von Outlook auf dem betreffenden Computer kann eine spezifische Konfiguration dazu führen, dass eine andere Benutzeroberfläche angezeigt wird. In einigen Fällen kann die sogenannte "moderne" Benutzeroberfläche (**Oberfläche 1**) deaktiviert sein zugunsten der klassischen Benutzeroberfläche (**Oberfläche 2**).
 
-![Outlook](images/config-outlook-mxplan06.png){.thumbnail}
+Aus diesem Grund bitten wir Sie, den Abschnitt zu lesen, der der Benutzeroberfläche entspricht, die auf Ihrem Bildschirm angezeigt wird.
 
-- Das Accounteinstellungsfenster wird angezeigt. Wählen Sie das betroffene E-Mail-Account aus und klicken Sie auf `Ändern...`{.action}.
-
-![Outlook](images/config-outlook-mxplan07.png){.thumbnail}
+> [!tabs]
+> **Oberfläche 1**
+>>
+>> Wenn Ihren E-Mail-Account bereits konfiguriert ist und Sie auf seine Einstellungen zugreifen müssen, um sie zu ändern:
+>>
+>> - Klicken Sie auf `Datei`{.action} in der Menüleiste oben auf dem Bildschirm und wählen Sie anschließend das zu ändernde Account im Dropdown-Menü **(1)** aus.
+>> - Klicken Sie auf `Accounteinstellungen`{.action } **(2)** darunter.
+>> - Wählen Sie `Servereinstellungen`{.action} **(3)** aus, um das Konfigurationsfenster anzuzeigen.
+>>
+>> ![Outlook](images/config-outlook-legacy-mxplan07.png){.thumbnail}
+>>
+>> Das Fenster ist in zwei Abschnitte unterteilt, **Eingehender Posteingang** und **Ausgehender Postausgang**. Klicken Sie auf den Abschnitt, den Sie ändern möchten.
+>>
+>> > [!primary]
+>> >
+>> > In unserem Beispiel wird der Servername "pro**?**.mail.ovh.net" verwendet. Sie müssen das Zeichen "?" durch die Zahl ersetzen, die dem Server Ihres E-Mail Pro-Dienstes entspricht.
+>> >
+>> > Diese Zahl finden Sie in Ihrem [OVHcloud Kundencenter](/links/manager), im Bereich `Web Cloud`{.action} und anschließend `E-Mail Pro`{.action}. Der Servername ist im Feld **Verbindung** des Tabs `Allgemeine Informationen`{.action} sichtbar.
+>>
+>> ![Outlook](images/config-outlook-legacy-mxplan08.png){.thumbnail}
+>>
+> **Oberfläche 2**
+>>
+>> Wenn Ihr E-Mail-Account bereits konfiguriert ist und Sie auf seine Einstellungen zugreifen müssen, um sie zu ändern:
+>>
+>> - Klicken Sie auf `Datei`{.action} in der Menüleiste oben auf dem Bildschirm und wählen Sie anschließend das zu ändernde Account im Dropdown-Menü **(1)** aus.
+>> - Klicken Sie auf `Accounteinstellungen`{.action} **(2)** darunter.
+>> - Klicken Sie auf `Accounteinstellungen...`{.action} **(3)**, um zum Konfigurationsfenster zu gelangen.
+>>
+>> ![Outlook](images/config-outlook-mxplan06.png){.thumbnail}
+>>
+>> - Das Einstellungen-Fenster wird angezeigt: Wählen Sie das betreffende E-Mail-Account aus und klicken Sie auf `Ändern...`{.action}.
+>>
+>> ![Outlook](images/config-outlook-mxplan07.png){.thumbnail}
+>>
+>> Um Ihren E-Mail-Account zu konfigurieren, folgen Sie den Anweisungen ab **Schritt 2** im Abschnitt "[Account hinzufügen - Konfiguration mit der Oberfläche 2](#add-account-int2)" in dieser Anleitung.
+>>
 
 ### Allgemeine Einstellungen zum Senden und Empfangen <a name="settings-account"></a>
 
@@ -175,7 +287,7 @@ Für den Empfang von E-Mails empfehlen wir Ihnen bei der Auswahl des Accounttyps
 
 > [!warning]
 >
-> Sie müssen den Wert entsprechend Ihrer Region (**EUROPE** oder **AMERIKA / ASIEN-PACIFIK**) richtig notieren.
+> Sie müssen den Wert entsprechend Ihrer Region (**EUROPA** oder **AMERIKA / ASIEN-PAZIFIK**) richtig notieren.
 
 Wählen Sie den Tab aus, das Ihrer Konfiguration entspricht:
 
@@ -184,8 +296,8 @@ Wählen Sie den Tab aus, das Ihrer Konfiguration entspricht:
 >>
 >> - **Benutzername**: Geben Sie die **vollständige** E-Mail-Adresse ein.
 >> - **Passwort**: Geben Sie das Passwort des E-Mail-Accounts ein.
->> - **EUROPE (empfangen)**: imap.mail.ovh.net **oder** ssl0.ovh.net.
->> - **AMERIKA/ASIEN-PACIFIK (empfangen)**: imap.mail.ovh.ca.
+>> - **EUROPA (empfangen)**: imap.mail.ovh.net **oder** ssl0.ovh.net.
+>> - **AMERIKA/ASIEN-PAZIFIK (empfangen)**: imap.mail.ovh.ca.
 >> - **Port**: 993.
 >> - **Sicherheitstyp**: SSL/TLS.
 >>
@@ -193,8 +305,8 @@ Wählen Sie den Tab aus, das Ihrer Konfiguration entspricht:
 >>
 >> - **Benutzername**: Geben Sie die **vollständige** E-Mail-Adresse ein.
 >> - **Passwort**: Geben Sie das Passwort des E-Mail-Accounts ein.
->> - **EUROPE (empfangen)**: pop.mail.ovh.net **oder** ssl0.ovh.net.
->> - **AMERIKA/ASIEN-PACIFIK (empfangen)**: pop.mail.ovh.ca.
+>> - **EUROPA (empfangen)**: pop.mail.ovh.net **oder** ssl0.ovh.net.
+>> - **AMERIKA/ASIEN-PAZIFIK (empfangen)**: pop.mail.ovh.ca.
 >> - **Port**: 995.
 >> - **Sicherheitstyp**: SSL/TLS.
 
@@ -206,8 +318,8 @@ Für das Senden von E-Mails finden Sie unten die zu verwendenden **SMTP**-Einste
 
 - **Benutzername**: Geben Sie die **vollständige** E-Mail-Adresse ein.
 - **Passwort**: Geben Sie das Passwort des E-Mail-Accounts ein.
-- **EUROPE (senden)**: smtp.mail.ovh.net **oder** ssl0.ovh.net.
-- **AMERIKA/ASIEN-PACIFIK (senden)**: smtp.mail.ovh.ca.
+- **EUROPA (senden)**: smtp.mail.ovh.net **oder** ssl0.ovh.net.
+- **AMERIKA/ASIEN-PAZIFIK (senden)**: smtp.mail.ovh.ca.
 - **Port**: 465.
 - **Sicherheitstyp**: SSL/TLS.
 

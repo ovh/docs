@@ -1,124 +1,189 @@
 ---
-title: Salvare ed esportare un database sul tuo server di database
-excerpt: Come salvare ed esportare il tuo database
-updated: 2023-10-26
+title: 'Salvare ed esportare un database sul server di database'
+excerpt: 'Scopri come salvare ed esportare un database dal tuo server Web Cloud Databases dallo Spazio Cliente OVHcloud o tramite phpMyAdmin'
+updated: 2026-03-24
 ---
+
+<style>
+details>summary {
+    color:rgb(33, 153, 232) !important;
+    cursor: pointer;
+}
+details>summary::before {
+    content:'\25B6';
+    padding-right:1ch;
+}
+details[open]>summary::before {
+    content:'\25BC';
+}
+</style>
 
 ## Obiettivo
 
-Il tuo database può contenere molte informazioni essenziali per il tuo sito. E' quindi essenziale poter salvaguardare o esportare la merce.
+Il tuo database può contenere numerose informazioni essenziali per il tuo sito Web. Per questo motivo, è fondamentale poterlo salvare o esportare.
 
-**Questa guida ti mostra come salvare ed esportare il tuo database dal tuo server di database.**
+**Questa guida ti mostra come salvare ed esportare il tuo database dal server di database.**
 
 ## Prerequisiti
 
-- Disporre di una [istanza Web Cloud Databases](/links/web/databases) (inclusa in un'offerta di[hosting web Performance](/links/web/hosting)
-- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
+- Disporre di un'[istanza Web Cloud Databases](/links/web/databases) (inclusa in un'offerta di [hosting web Performance](/links/web/hosting)).
+
+<!-- CP-NAV-START:web-cloud-databases -->
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [Web Cloud Databases](/links/control-panel/web-cloud-databases)
+- **Percorso di navigazione:** `Web Cloud`{.action} > `Web Cloud Databases`{.action} > Seleziona il tuo servizio di database
+
+---
+<!-- CP-NAV-END:web-cloud-databases -->
 
 ## Procedura
 
 > [!primary]
 >
-> Attenzione: le soluzioni [Web Cloud Databases](/links/web/databases) non danno accesso al sistema di gestione dei database, ma ai database ospitati su di esso.
-> <br> - Attenzione: non sono presenti accessi "root".
-> <br> - I comandi SQL generici funzionano normalmente e software come HeidiSQL, SQuirreL o Adminer sono completamente compatibili.
+> Le soluzioni [Web Cloud Databases](/links/web/databases) non danno accesso al sistema di gestione dei database, ma ai database ospitati su di esso.
+>
+> - Non è disponibile l'accesso superutente "root".
+> - I comandi SQL generici funzionano normalmente e software come HeidiSQL, SQuirreL SQL o Adminer sono completamente compatibili.
 >
 
 ### Salvare ed esportare un database dallo Spazio Cliente
-
-Accedi allo [Spazio Cliente OVHcloud](/links/manager). Clicca sulla scheda `Web Cloud` e poi su `Web Cloud Databases`{.action}. Seleziona il nome del tuo database server. Clicca sulla scheda `Database`.
-
-Al livello della colonna **Backup**, la cifra corrisponde al numero di backup disponibili per il tuo database.
 
 > [!primary]
 >
 > - I backup vengono effettuati automaticamente una volta al giorno
 > su tutti i tuoi database.
 > - I backup automatici e manuali sono conservati per 30 giorni.
-> Trascorso questo termine, saranno automaticamente eliminate.
+> Trascorso questo termine, saranno automaticamente eliminati.
 
-#### 1\. Effettua un backup manuale 
+#### Effettuare un backup manuale
 
-Clicca sui tre puntini `...`{.action} in corrispondenza del database e seleziona `Salva adesso`{.action}.
+<!-- CP-STEPS-START:save-manual -->
+Clicca sulle schede qui di seguito per visualizzare ciascuno dei **3** passaggi.
 
-![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/databases/back-up-now.png){.thumbnail}
+> [!tabs]
+> **Passaggio 1**
+>>
+>> Accedi alla pagina [Web Cloud Databases](/links/control-panel/web-cloud-databases), poi seleziona la soluzione interessata.
+>>
+>> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases.png){.thumbnail}
+>>
+> **Passaggio 2**
+>>
+>> Clicca sulla scheda `Databases`{.action}.
+>>
+>> Nella colonna **Backup**, il numero corrisponde al numero di backup disponibili per il tuo database.
+>>
+> **Passaggio 3**
+>>
+>> Clicca sul pulsante `...`{.action} a destra del database, poi su `Esegui un backup adesso`{.action}.
+>>
+>> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/databases/back-up-now.png){.thumbnail}
+<!-- CP-STEPS-END:save-manual -->
 
-#### 2\. Esporta un backup
+#### Esportare un backup
 
-Clicca sui tre puntini `...`{.action} a destra del database e seleziona `Mostra i backup`{.action}
+<!-- CP-STEPS-START:export-backup -->
+Clicca sulle schede qui di seguito per visualizzare ciascuno dei **4** passaggi.
 
-![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/databases/show-backups.png){.thumbnail}
-
-Visualizzi la lista dei backup disponibili, clicca sul pulsante `...`{.action} a destra del backup scelto e poi su `Scarica il backup`{.action} per recuperare questo backup.
+> [!tabs]
+> **Passaggio 1**
+>>
+>> Accedi alla pagina [Web Cloud Databases](/links/control-panel/web-cloud-databases), poi seleziona la soluzione interessata.
+>>
+>> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases.png){.thumbnail}
+>>
+> **Passaggio 2**
+>>
+>> Clicca sulla scheda `Databases`{.action}.
+>>
+>> Nella colonna **Backup**, il numero corrisponde al numero di backup disponibili per il tuo database.
+>>
+> **Passaggio 3**
+>>
+>> Clicca sul pulsante `...`{.action} a destra del database, poi su `Visualizza i backup`{.action}.
+>>
+>> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/databases/show-backups.png){.thumbnail}
+>>
+> **Passaggio 4**
+>>
+>> Viene mostrata la lista dei backup disponibili. Clicca sul pulsante `...`{.action} a destra del backup scelto, poi su `Scarica il backup`{.action}.
+<!-- CP-STEPS-END:export-backup -->
 
 ### Salvare ed esportare un database al di fuori dello Spazio Cliente
 
-#### 1\. Esportazione di database MySQL o MariaDB
+Se la RAM disponibile sul server non consente di effettuare l'esportazione desiderata, utilizza lo strumento OVHcloud nello Spazio Cliente, che utilizza risorse esterne alla tua soluzione. Consulta la sezione "[Salvare ed esportare un database dallo Spazio Cliente](./#salvare-ed-esportare-un-database-dallo-spazio-cliente)" di questa guida.
 
- In alcuni casi, la RAM disponibile sul tuo server di database potrebbe non consentire di effettuare l'esportazione desiderata. In questo caso, ti consigliamo di utilizzare il tool OVHcloud nello Spazio Cliente. che permetterà l'utilizzo di risorse esterne alla tua offerta per effettuare questa operazione. Consulta la sezione "[Salva ed esportare un database dallo Spazio Cliente](./#salvare-ed-esportare-un-database-dallo-spazio-cliente)" di questa guida.
+**Clicca sul metodo di esportazione che preferisci per visualizzare il contenuto.**
 
-##### 1\.1 Esportare il mio database MySQL o MariaDB da phpMyAdmin OVHcloud 
+/// details | Esportare un database MySQL o MariaDB da phpMyAdmin OVHcloud
 
-Per esportare il tuo database direttamente da phpMyAdmin, è necessario effettuare l'accesso. Per effettuare questa operazione, consulta la guida ["Connettersi a un database"](/pages/web_cloud/web_cloud_databases/connecting-to-database-on-database-server).
+Per esportare il tuo database direttamente da phpMyAdmin, è necessario effettuare prima l'accesso. Per farlo, consulta la guida "[Connettersi a un database](/pages/web_cloud/web_cloud_databases/connecting-to-database-on-database-server)".
 
 Una volta connesso a phpMyAdmin, clicca sul nome del database da esportare e poi sulla scheda `Esporta`{.action} in alto.
 
-Avete due possibili modalità di esportazione. Se non hai necessità specifiche, ti consigliamo di utilizzare la modalità **rapida** in formato **SQL**.
+Sono disponibili due modalità di esportazione. Se non hai necessità specifiche, ti consigliamo di utilizzare la modalità **rapida** in formato **SQL**.
 
 ![Web Cloud Databases](/pages/assets/screens/other/web-tools/phpmyadmin/pma-export-backup-web-cloud-db.png){.thumbnail}
 
-##### 1\.2 Esporta il tuo database MySQL o MariaDB da riga di comando
+///
+
+/// details | Esportare un database MySQL o MariaDB da riga di comando
 
 ```bash
-mysqldump —host=server —user=utente —port=port —password=password nome_database > nome_database.sql
+mysqldump --host=server --user=utente --port=port --password=password nome_database > nome_database.sql
 ```
 
-##### 1\.3 Esportare il mio database MySQL o MariaDB da uno script PHP
+///
+
+/// details | Esportare un database MySQL o MariaDB da uno script PHP
 
 ```php
-1. Il backup del tuo database è in corso.......";
-2. system("mysqldump —host=server —user=utente —port=port —password=password nome_database > nome_database.sql");
-3. echo "E' finita. È possibile recuperare il database tramite FTP";
+1. <?php echo "Il backup del database è in corso.......";
+2. system("mysqldump --host=server --user=utente --port=port --password=password nome_database > nome_database.sql");
+3. echo "Completato. Puoi recuperare il database tramite FTP.";
 4. ?>
 ```
 
 > [!warning]
 >
-> - Per evitare che un terzo acceda al file con dati sensibili, consulta questa guida per rendere [sicuro l'accesso](/pages/web_cloud/web_hosting/htaccess_protect_directory_by_password)
-> - Questa azione è possibile solo da un hosting OVHcloud condiviso.
->
+> - Per evitare che terzi accedano a questo file contenente dati sensibili, proteggi l'accesso utilizzando la guida: [Proteggere una directory con .htaccess](/pages/web_cloud/web_hosting/htaccess_protect_directory_by_password).
+> - Questa azione è possibile solo da un hosting condiviso OVHcloud.
 
-#### 2\. Esportazione e importazione di database PostgreSQL dallo Spazio Cliente
+///
 
- In alcuni casi, la RAM disponibile sul tuo server di database potrebbe non consentire di effettuare l'esportazione desiderata. In questo caso, ti consigliamo di utilizzare il tool OVHcloud nello Spazio Cliente. che permetterà l'utilizzo di risorse esterne alla tua offerta per effettuare questa operazione. Consulta la sezione ["Salva ed esportare un database dallo Spazio Cliente](./#salvare-ed-esportare-un-database-dallo-spazio-cliente)" di questa guida.
- 
-##### 2\.1 Esporta il tuo database PostgreSQL da riga di comando
+/// details | Esportare un database PostgreSQL da riga di comando
 
 ```bash
-pg_dump —host=server —port=port —user=utente —password=password nome_database > nome_database.sql
+pg_dump --host=server --port=port --user=utente --password=password nome_database > nome_database.sql
 ```
 
-##### 2\.2 Esporta il tuo database PostgreSQL da uno script PHP
+///
+
+/// details | Esportare un database PostgreSQL da uno script PHP
 
 ```php
-1. Il backup del tuo database è in corso.......";
-2. system("PGPASSWORD=password pg_dump —host=server —port=port—user=utente —password=password nome_database > nome_database.sql");
-3. echo "E' finita. È possibile recuperare il database tramite FTP";
+1. <?php echo "Il backup del database è in corso.......";
+2. system("PGPASSWORD=password pg_dump --host=server --port=port --user=utente --password=password nome_database > nome_database.sql");
+3. echo "Completato. Puoi recuperare il database tramite FTP.";
 4. ?>
 ```
 
 > [!warning]
 >
-> - Per evitare che un terzo acceda al file con dati sensibili, consulta questa guida per rendere [sicuro l'accesso](/pages/web_cloud/web_hosting/htaccess_protect_directory_by_password)
-> - Questa azione è possibile solo da un hosting OVHcloud condiviso.
->
+> - Per evitare che terzi accedano a questo file contenente dati sensibili, proteggi l'accesso utilizzando la guida: [Proteggere una directory con .htaccess](/pages/web_cloud/web_hosting/htaccess_protect_directory_by_password).
+> - Questa azione è possibile solo da un hosting condiviso OVHcloud.
+
+///
 
 ## Per saperne di più
 
-[Ripristinare e importare un database sul tuo server di database](/pages/web_cloud/web_cloud_databases/restore-import-on-database-server)
+[Salvare ed esportare un database dallo Spazio Cliente](./#salvare-ed-esportare-un-database-dallo-spazio-cliente)
 
-Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](/links/partner).
+Per prestazioni specializzate (referenziamento, sviluppo, ecc.), contatta i [partner OVHcloud](/links/partner).
 
-Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](/links/support).
+Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre [offerte di supporto](/links/support).
 
 Contatta la nostra [Community di utenti](/links/community).

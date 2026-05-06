@@ -1,6 +1,6 @@
 ---
 title: "Comment gérer Intel SGX sur un serveur dédié"
-excerpt: "Découvrez comment activer l'option SGX sur votre serveur dédié et installer la pile logicielle SGX pour Linux"
+excerpt: "Activez Intel SGX sur votre serveur dédié OVHcloud et installez la pile logicielle Linux pour les applications à enclaves sécurisées"
 updated: 2025-11-20
 ---
 
@@ -12,10 +12,21 @@ L'activation des Intel Software Guard Extensions (SGX) sur votre serveur vous pe
 
 ## Prérequis
 
-- Avoir accès à [l'espace client OVHcloud](/links/manager) ou à [l'API OVHcloud](/links/api)
+- Avoir accès à [l'API OVHcloud](/links/api) (facultatif)
 - Avoir un serveur dédié compatible avec [l'option SGX](/links/bare-metal/sgx) dans votre compte OVHcloud
 - Disposer des identifiants reçus par e-mail après l'installation
 - Ubuntu 24.04 ou équivalent est installé sur le serveur
+
+<!-- CP-NAV-START:baremetal-dedicated-servers -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Serveurs dédiés](/links/control-panel/baremetal-dedicated-servers)
+- **Pour accéder à vos services :** `Bare Metal Cloud`{.action} > `Serveurs dédiés`{.action} > Sélectionnez votre serveur
+
+---
+<!-- CP-NAV-END:baremetal-dedicated-servers -->
 
 ## En pratique
 
@@ -28,7 +39,7 @@ L'activation de SGX est possible depuis l'espace client OVHcloud, l'API OVHcloud
 >>
 >> **1 - Connexion à l'espace client OVHcloud**
 >>
->> Connectez-vous à [l'espace client OVHcloud](/links/manager), accédez à la section `Bare Metal Cloud`{.action} et cliquez sur `Serveurs dédiés`{.action}. Sélectionnez ensuite le serveur sur lequel vous souhaitez activer SGX.
+>> Sélectionnez le serveur sur lequel vous souhaitez activer SGX.
 >>
 >> **2 - Activer SGX**
 >>
@@ -111,7 +122,7 @@ L'activation de SGX est possible depuis l'espace client OVHcloud, l'API OVHcloud
 >>
 >> **1 - Démarrer une session Remote KVM**
 >>
->> Connectez-vous à [l'espace client OVHcloud](/links/manager), accédez à la section `Bare Metal Cloud`{.action} et cliquez sur `Serveurs dédiés`{.action}. Sélectionnez ensuite le serveur sur lequel vous souhaitez activer SGX.
+>> Sélectionnez le serveur sur lequel vous souhaitez activer SGX.
 >>
 >> Depuis l'onglet `IPMI / KMV`{.action}, démarrez une session Remote KVM :
 >>
@@ -238,3 +249,7 @@ Pour aller plus loin (développer votre propre application, vous inscrire à l'a
 - [Intel SGX Attestation services](https://software.intel.com/en-us/sgx/attestation-services)
 - [Intel SGX linux-2.26 documentation](https://download.01.org/intel-sgx/sgx-linux/2.26/docs/)
 - [github.com/intel/linux-sgx](https://github.com/intel/linux-sgx)
+
+[AMD SME/SEV sur Ubuntu 20](/pages/bare_metal_cloud/dedicated_servers/sme_sev_enable_and_use)
+
+[Sécuriser un serveur dédié](/pages/bare_metal_cloud/dedicated_servers/securing-a-dedicated-server)

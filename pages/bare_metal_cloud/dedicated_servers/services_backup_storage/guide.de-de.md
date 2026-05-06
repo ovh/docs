@@ -1,7 +1,7 @@
 ---
-title: 'Backup Storage auf einem Dedicated Server verwenden'
-excerpt: 'Erfahren Sie hier, wie Sie zusätzlichen Speicherplatz aktivieren und auf diesen zugreifen'
-updated: 2025-10-09
+title: "Backup Storage auf einem Dedicated Server verwenden"
+excerpt: "Aktivieren Sie den in Ihrem OVHcloud Dedicated Server enthaltenen Backup Storage und greifen Sie darauf zu, um Backups auf Dateiebene zu erstellen."
+updated: 2026-03-25
 ---
 
 ## Ziel
@@ -19,7 +19,17 @@ Die dedizierten Server von OVHcloud inkludieren einen zusätzlichen Backup-Speic
 ## Voraussetzungen
 
 - Sie haben einen [Dedicated Server](/links/bare-metal/bare-metal) in Ihrem Kunden-Account.
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
+
+<!-- CP-NAV-START:baremetal-dedicated-servers -->
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direkter Link:** [Dedicated Server](/links/control-panel/baremetal-dedicated-servers)
+- **Navigationspfad:** `Bare Metal Cloud`{.action} > `Dedicated Server`{.action} > Wählen Sie Ihren Server aus
+
+---
+<!-- CP-NAV-END:baremetal-dedicated-servers -->
 
 > [!warning]
 > Diese Funktion kann nur eingeschränkt oder nicht verfügbar sein, falls ein Dedicated Server der [**Eco** Produktlinie](/links/bare-metal/eco-about) eingesetzt wird.
@@ -30,13 +40,13 @@ Die dedizierten Server von OVHcloud inkludieren einen zusätzlichen Backup-Speic
 
 ### Backup Storage aktivieren
 
-Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein. Wechseln Sie zum Bereich `Bare Metal Cloud`{.action} und wählen Sie dann Ihren Server unter `Dedicated Server`{.action} aus. Klicken Sie im Tab `Storage-Backup`{.action} auf den Button  `Storage-Backup aktivieren`{.action}.
+Klicken Sie im Tab `Storage-Backup`{.action} auf den Button `Storage-Backup aktivieren`{.action}.
 
-![Backup Storage aktivieren](images/backup-storage01.png){.thumbnail}
+![Schaltfläche Backup Storage aktivieren auf dem Tab "Backup Storage"](images/backup-storage01.png){.thumbnail}
 
 Klicken Sie im angezeigten Kontextmenü auf `Bestätigen`{.action}.
 
-![Backup Storage aktivieren](images/backup-storage02.png){.thumbnail}
+![Aktivierung des Backup Storage im Popup-Fenster bestätigen](images/backup-storage02.png){.thumbnail}
 
 Ihr Backup Storage wird innerhalb weniger Minuten konfiguriert. Sie erhalten eine Bestätigungsmail, sobald die Konfiguration abgeschlossen ist.
 
@@ -46,9 +56,9 @@ Der Zugriff auf Ihren Speicherplatz ist per IP-Adresse mithilfe einer Zugriffsko
 
 #### Zugang zum Backup Storage hinzufügen
 
-Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein. Wechseln Sie zum Bereich `Bare Metal Cloud`{.action} und wählen Sie dann Ihren Server unter `Dedicated Server`{.action} aus. Klicken Sie im Tab `Storage-Backup`{.action} auf den Button `Storage-Backup löschen`{.action}.
+Klicken Sie im Tab `Storage-Backup`{.action} auf den Button `Storage-Backup löschen`{.action}.
 
-![Zugang zum Backup-Speicher hinzufügen](images/backup-storage03.png){.thumbnail}
+![Schaltfläche Zugriff hinzufügen auf dem Tab "Backup Storage"](images/backup-storage03.png){.thumbnail}
 
 Wählen Sie den IP-Block aus, den Sie autorisieren möchten. Wählen Sie danach die freizugebenden Protokolle aus und klicken Sie auf `Weiter`{.action}.
 
@@ -57,7 +67,7 @@ Wählen Sie den IP-Block aus, den Sie autorisieren möchten. Wählen Sie danach 
 > Über Ihr Kundencenter können nur IP-Blöcke Ihres OVHcloud Kunden-Accounts zur ACL hinzugefügt werden.
 >
 
-![Zugang zum Backup-Speicher hinzufügen](images/backup-storage04.png){.thumbnail}
+![IP-Block und Protokolle für Backup-Zugriff auswählen](images/backup-storage04.png){.thumbnail}
 
 Bestätigen Sie, indem Sie auf `Beenden`{.action} klicken.
 
@@ -67,7 +77,7 @@ Sie können anschließend über den von Ihnen gewählten IP-Block auf den Backup
 
 Sobald der Dienst aktiviert ist, wird Ihre ACL Tabelle im Tab `Storage-Backup`{.action} angezeigt. Klicken Sie auf `...`{.action} rechts neben einem IP-Block, um das Zugangsmenü zu öffnen.
 
-![Zugang zum Backup-Speicher hinzufügen](images/backup-storage05.png){.thumbnail}
+![Backup-Zugriff ACL-Tabelle mit Ändern- und Löschen-Optionen](images/backup-storage05.png){.thumbnail}
 
 Um die Protokolle für einen autorisierten IP-Block zu ändern, klicken Sie im Popup-Fenster auf `Zugang bearbeiten`{.action} und wählen Sie die Protokolle im angezeigten Menü aus. Speichern Sie die Änderungen, indem Sie auf `Bestätigen`{.action} klicken.
 
@@ -110,22 +120,21 @@ Verwenden Sie den folgenden Aufruf, um zu überprüfen, ob Ihre IP-Adresse autor
 
 ### Passwort zurücksetzen
 
-Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein. Wechseln Sie zum Bereich `Bare Metal Cloud`{.action} und wählen Sie dann Ihren Server unter `Dedicated Server`{.action} aus. Klicken Sie im Tab `Storage-Backup`{.action} auf den Button `Sie haben Ihr Passwort vergessen?`{.action}.
+Klicken Sie im Tab `Storage-Backup`{.action} auf den Button `Sie haben Ihr Passwort vergessen?`{.action}.
 
 Nachdem Sie im angezeigten Fenster auf `Bestätigen`{.action} geklickt haben, wird eine E-Mail an die für Ihren Administrator-Kontakt eingetragene E-Mail-Adresse versandt. Folgen Sie den darin enthaltenen Anweisungen, um Ihr Passwort zurückzusetzen.
 
 ### Backup Storage löschen
 
-Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) 
-ein. Wechseln Sie zum Bereich `Bare Metal Cloud`{.action} und wählen Sie dann Ihren Server unter `Dedicated Server`{.action} aus. Klicken Sie im Tab `Storage-Backup`{.action} auf den Button `Storage-Backup löschen`{.action}.
+Klicken Sie im Tab `Storage-Backup`{.action} auf den Button `Storage-Backup löschen`{.action}.
 
 Klicken Sie auf `Bestätigen`{.action}, um mit der Löschung fortzufahren. Ihr Backup Storage wird nach einigen Minuten abgeschaltet. Alle Daten des Speicherplatzes werden gelöscht.
 
 ### Zusätzlichen Speicherplatz bestellen
 
-Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein. Wechseln Sie zum Bereich `Bare Metal Cloud`{.action} und wählen Sie dann Ihren Server unter `Dedicated Server`{.action} aus. Klicken Sie im Tab `Storage-Backup`{.action} auf den Button `Speicherplatz bestellen`{.action}.
+Klicken Sie im Tab `Storage-Backup`{.action} auf den Button `Speicherplatz bestellen`{.action}.
 
-![Zusätzlichen Backup-Speicherplatz bestellen](images/backup-storage06.png){.thumbnail}
+![Zusätzlichen Speicherplatz für Backup Storage bestellen](images/backup-storage06.png){.thumbnail}
 
 Wählen Sie die Speicherkapazität aus, die Sie bestellen möchten, und klicken Sie dann auf `Weiter`{.action}.
 
@@ -306,12 +315,12 @@ Nachdem Sie FileZilla auf Ihrem Server installiert haben, können Sie die Softwa
 
 #### NFS
 
-Vergewissern Sie sich zunächst, dass Ihre IP-Blöcke auf den Speicher zugreifen und das NFS-Protokoll verwenden können. Je nach dem von Ihnen verwendeten Linux-Betriebssystem kann es sein, dass der NFS-Client installiert und der NFS/portmap-Dienst gestartet werden muss.
+Der Backup Storage ist nur mit NFSv3 kompatibel. Vergewissern Sie sich zunächst, dass Ihre IP-Blöcke auf den Speicher zugreifen und das NFS-Protokoll verwenden können. Je nach dem von Ihnen verwendeten Linux-Betriebssystem kann es sein, dass der NFS-Client installiert und der NFS/portmap-Dienst gestartet werden muss.
 
 Wenn Sie den NFS-Client installiert und den portmap-Dienst gestartet haben, können Sie die NFS-Freigabe wie eine normale Partition mit folgendem Befehl mounten:
 
 ```sh
-mount -t nfs HostName:/export/ftpbackup/ServiceName /FolderMount
+mount -t nfs -o vers=3 HostName:/export/ftpbackup/ServiceName /FolderMount
 ```
 
 Ersetzen Sie die Variablen im obenstehenden Beispielbefehl mit Ihren eigenen Werten.
@@ -383,5 +392,9 @@ Ersetzen Sie die Variablen im obenstehenden Beispielbefehl mit Ihren eigenen Wer
 - **FolderMount**: Verzeichnis, in das Sie die Freigabe mounten möchten (es muss bereits existieren)
 
 ## Weiterführende Informationen
+
+- [Backing Up Data and Databases on a Dedicated Server](/pages/bare_metal_cloud/dedicated_servers/save_datas_database_on_storage_ds)
+
+- [Configuring Storage on a HGR-STOR-2 Dedicated Server](/pages/bare_metal_cloud/dedicated_servers/hgrstor2_system_configuration)
 
 Treten Sie unserer [User Community](/links/community) bei.

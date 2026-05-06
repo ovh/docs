@@ -1,12 +1,12 @@
 ---
 title: Object Storage - Utiliser Object Storage avec S3cmd
 excerpt: Découvrez comment configurer S3cmd afin de gérer vos buckets et objets
-updated: 2024-05-20
+updated: 2026-03-06
 ---
 
 ## Objectif
 
-S3cmd est un outil de ligne de commande gratuit et un client de gestion des données dans des espaces de stockage qui utilisent le protocole S3, tels que Amazon S3 Object Storage, Google Cloud Storage ou DreamHost DreamObjects.
+S3cmd est un outil de ligne de commande gratuit et un client de gestion des données dans des espaces de stockage qui utilisent le protocole Amazon S3<sup>1</sup>, tels que Amazon S3 Object Storage, Google Cloud Storage ou DreamHost DreamObjects.
 
 **Ce guide explique comment configurer S3cmd afin gérer vos buckets et objets.**
 
@@ -35,7 +35,7 @@ Consultez notre guide « [Débuter avec Object Storage](/pages/storage_and_backu
 Pour configurer s3cmd, exécutez la commande suivante :
 
 ```bash
-$ s3cmd --configure
+s3cmd --configure
 
 Enter new values or accept defaults in brackets with Enter.
 Refer to user manual for detailed description of all options.
@@ -50,7 +50,7 @@ S3 Endpoint [s3.amazonaws.com]: `s3.<region_in_lowercase>.io.cloud.ovh.net`
 
 Use "%(bucket)s.s3.amazonaws.com" to the target Amazon S3. "%(bucket)s" and "%(location)s" vars can be used
 if the target S3 system supports dns based buckets.
-DNS-style bucket+hostname:port template for accessing a bucket [%(bucket)s.s3.amazonaws.com]: `<bucket>.s3.<region_in_lowercase>.io.cloud.ovh.net`
+DNS-style bucket+hostname:port template for accessing a bucket [%(bucket)s.s3.amazonaws.com]: `<bucket_name>.s3.<region_in_lowercase>.io.cloud.ovh.net`
 
 Encryption password is used to protect your files from reading
 by unauthorized persons while in transfer to S3
@@ -95,37 +95,37 @@ S3cmd est maintenant prêt à être utilisé.
 Lister tous les buckets :
 
 ```bash
-$ s3cmd ls
+s3cmd ls
 ```
 
 Créer un nouveau bucket :
 
 ```bash
-$ s3cmd mb s3://BUCKET
+s3cmd mb s3://<bucket_name>
 ```
 
 Lister le contenu d'un bucket :
 
 ```bash
-$ s3cmd ls s3://BUCKET[/PREFIX]
+s3cmd ls s3://<bucket_name>[/<prefix>]
 ```
 
-Synchroniser `/home/user/documents` vers un bucket :
+Synchroniser un répertoire local vers un bucket :
 
 ```bash
-$ s3cmd sync /home/user/documents s3://BUCKET[/PREFIX]
+s3cmd sync <source_directory> s3://<bucket_name>[/<prefix>]
 ```
 
-Copier un fichier `/home/user/file.txt` dans un bucket :
+Copier un fichier dans un bucket :
 
 ```bash
-$ s3cmd put FILE [FILE...] s3://BUCKET[/PREFIX]
+s3cmd put <file_path> [<file_path>...] s3://<bucket_name>[/<prefix>]
 ```
 
-Télécharger un fichier `file.txt` depuis un bucket :
+Télécharger un fichier depuis un bucket :
 
 ```bash
-$ s3cmd get s3://BUCKET/OBJECT LOCAL_FILE
+s3cmd get s3://<bucket_name>/<object_key> <destination_file_path>
 ```
 
 Vous trouverez sur le site officiel de S3cmd une documentation détaillée des actions possibles: [Documentation officielle S3cmd](https://s3tools.org/usage).
@@ -135,3 +135,5 @@ Vous trouverez sur le site officiel de S3cmd une documentation détaillée des a
 Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](/links/professional-services) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).
+
+<sup>1</sup> : S3 est une marque déposée appartenant à Amazon Technologies, Inc. Les services de OVHcloud ne sont pas sponsorisés, approuvés, ou affiliés de quelque manière que ce soit.

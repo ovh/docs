@@ -1,6 +1,6 @@
 ---
 title: "Bare Metal 3-AZ Region - Presentazione dell'offerta"
-excerpt: 'Scopri il servizio Bare Metal 3-AZ, che offre massima disponibilità e ridondanza tra tre datacenter'
+excerpt: "Scopri il servizio Bare Metal 3-AZ, che offre massima disponibilità e ridondanza tra tre datacenter"
 updated: 2025-06-04
 ---
 
@@ -39,17 +39,28 @@ OVHcloud è presente in tutto il mondo, in particolare in Europa, Stati Uniti, C
 
 Per ottenere prestazioni ottimali, è necessario che una regione sia selezionata il più vicino possibile agli utenti. Per garantire una disponibilità mondiale, i servizi devono essere distribuiti su più regioni. La Region 3-AZ è ideale per i clienti che cercano la massima resilienza e deve essere utilizzata per creare progetti di applicazioni multi-AZ.
 
-Nella sezione [Spazio Cliente OVHcloud](/links/manager), puoi visualizzare i tuoi cluster nella lista `Server dedicati`{.action} del menu `Bare Metal Cloud`{.action} cliccando sulla scheda `3-AZ Clusters`{.action}.
+<!-- CP-NAV-START:baremetal-dedicated-servers -->
+---
 
-![list_clusters](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/dedicated-servers/general-information/clusters1.png){.thumbnail}
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [Server dedicati](/links/control-panel/baremetal-dedicated-servers)
+- **Percorso di navigazione:** `Bare Metal Cloud`{.action} > `Server dedicati`{.action} > Seleziona il tuo server
+
+---
+<!-- CP-NAV-END:baremetal-dedicated-servers -->
+
+Clicca sulla scheda `3-AZ Clusters`{.action}.
+
+![Scheda cluster 3-AZ con elenco dei cluster disponibili](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/dedicated-servers/general-information/clusters1.png){.thumbnail}
 
 Fare clic sul nome del cluster nella tabella per visualizzare i dettagli.
 
-![list_clusters](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/dedicated-servers/general-information/clusters2.png){.thumbnail}
+![Pagina dettagli del cluster con informazioni sulle zone di disponibilità](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/dedicated-servers/general-information/clusters2.png){.thumbnail}
 
 Clicca sulla scheda `Nodi`{.action} per aprire la lista dei server del cluster.
 
-![list_clusters](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/dedicated-servers/general-information/clusters3.png){.thumbnail}
+![Scheda Nodi con elenco dei server del cluster](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/dedicated-servers/general-information/clusters3.png){.thumbnail}
 
 Cliccando sul nome di un server/nodo in questa lista si apre la scheda `Informazioni generali`{.action} del server. Per maggiori informazioni, consulta la nostra guida:
 
@@ -57,4 +68,4 @@ Cliccando sul nome di un server/nodo in questa lista si apre la scheda `Informaz
 
 ## Per saperne di più
 
-Contatta la nostra Community di utenti all'indirizzo <https://community.ovh.com/en/>.
+Contatta la nostra [Community di utenti](/links/community).

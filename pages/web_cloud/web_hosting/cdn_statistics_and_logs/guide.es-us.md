@@ -12,29 +12,35 @@ Esta guía explica cómo consultar las estadísticas y los logs generados por la
 
 ## Requisitos
 
-- Haber iniciado sesión en el [área de cliente de OVHcloud](/links/manager).
 - Tener contratado un [plan de alojamiento web](/links/web/hosting) con la opción CDN activada en al menos un dominio.
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [Hosting plans](/links/control-panel/web-hosting)
+- **Ruta de navegación:** `Web Cloud`{.action} > `Alojamientos`{.action} > Seleccione su alojamiento web
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## Procedimiento
 
 ### Ver las estadísticas de la CDN
 
-Haga clic en las fichas siguientes para ver cada una de las **5** etapas.
+<!-- CP-STEPS-START:viewing-cdn-statistics -->
+
+Haga clic en las fichas siguientes para ver cada una de las **4** etapas.
 
 > [!tabs]
 > **Etapa 1**
 >>
->> Conéctese a su [área de cliente de OVHcloud](/links/manager) y acceda a la sección `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Etapa 2**
->>
->> Haga clic en el menú `Alojamientos`{.action} y seleccione el alojamiento web correspondiente.
+>> Acceda a la página [Hosting plans](/links/control-panel/web-hosting) y seleccione el alojamiento web correspondiente.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Etapa 3**
+> **Etapa 2**
 >>
 >> En la nueva página, haga clic en la pestaña `Estadísticas y logs`{.action}.
 >>
@@ -44,36 +50,34 @@ Haga clic en las fichas siguientes para ver cada una de las **5** etapas.
 >>
 >> ![Estadísticas y logs](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/statistics-and-logs/tab.png){.thumbnail}
 >>
-> **Etapa 4**
+> **Etapa 3**
 >>
 >> Será redirigido a la herramienta **OVHcloud Web Statistics**. En esta herramienta, haga clic en el formulario titulado `Selección del dominio`{.action} situado en la parte superior de la página y seleccione un dominio para el que esté activa la CDN.
 >>
-> **Etapa 5**
+> **Etapa 4**
 >>
 >> En la columna izquierda, haga clic en la pestaña `Cache`{.action}.
 >>
 >> Ya puede consultar las estadísticas de la CDN para su dominio.
 >>
 >> Si lo necesita, consulte nuestra guía "[Web hosting - Consultar las estadísticas y logs de un sitio web](/pages/web_cloud/web_hosting/logs_and_statistics)" para más información.
+<!-- CP-STEPS-END:viewing-cdn-statistics -->
+
 
 ### Ver los logs de la CDN
 
-Haga clic en las fichas siguientes para ver cada una de las **5** etapas.
+<!-- CP-STEPS-START:view-cdn-logs -->
+
+Haga clic en las fichas siguientes para ver cada una de las **4** etapas.
 
 > [!tabs]
 > **Etapa 1**
 >>
->> Conéctese a su [área de cliente de OVHcloud](/links/manager) y acceda a la sección `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Etapa 2**
->>
->> Haga clic en el menú `Alojamientos`{.action} y seleccione el alojamiento web correspondiente.
+>> Acceda a la página [Hosting plans](/links/control-panel/web-hosting) y seleccione el alojamiento web correspondiente.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Etapa 3**
+> **Etapa 2**
 >>
 >> En la nueva página, haga clic en la pestaña `Estadísticas y logs`{.action}.
 >>
@@ -83,13 +87,13 @@ Haga clic en las fichas siguientes para ver cada una de las **5** etapas.
 >>
 >> ![Ver los logs](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/statistics-and-logs/view-logs.png){.thumbnail}
 >>
-> **Etapa 4**
+> **Etapa 3**
 >>
 >> En la nueva página, haga clic en el botón `CDN`{.action} situado en la parte superior de la página.
 >>
 >> ![OSL CDN](/pages/assets/screens/other/web-tools/logs/osl-cdn.png){.thumbnail}
 >>
-> **Etapa 5**
+> **Etapa 4**
 >>
 >> En la nueva página que aparece:
 >>
@@ -107,6 +111,8 @@ Haga clic en las fichas siguientes para ver cada una de las **5** etapas.
 >> En la tabla que aparece, haga clic en el botón `Download`{.action} a la derecha del dominio o subdominio correspondiente para recuperar los logs CDN.
 >>
 >> Si lo necesita, consulte nuestra guía "[Web hosting - Consultar las estadísticas y logs de un sitio web](/pages/web_cloud/web_hosting/logs_and_statistics)" para más información.
+<!-- CP-STEPS-END:view-cdn-logs -->
+
 
 ## Más información
 

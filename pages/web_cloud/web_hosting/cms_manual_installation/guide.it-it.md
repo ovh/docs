@@ -37,7 +37,7 @@ Questa guida ti mostra come installare manualmente un CMS (Content Management Sy
 
 - Disporre di un'offerta di [hosting web](/links/web/hosting) che contiene almeno un database.
 - Disporre di un [dominio](/links/web/domains)
-- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
+
 
 ## Procedura
 
@@ -45,7 +45,7 @@ Questa guida ti mostra come installare manualmente un CMS (Content Management Sy
 
 Per aiutarti a scegliere il tuo CMS, scopri di seguito una breve descrizione per ciascuno dei CMS citati precedentemente.
 
-##### WordPress
+#### WordPress
 
 **WordPress** è generalmente utilizzato per creare un sito Web o un blog. È basato sulla tecnologia PHP e comporta una gamma di strumenti come un correttore ortografico e plugin per l'e-commerce, la SEO e la sicurezza del tuo sito Web.
 
@@ -108,7 +108,7 @@ Per maggiori informazioni, consulta la nostra pagina relativa al [modulo PrestaS
 > Indipendentemente dal CMS scelto, ti ricordiamo che OVHcloud non fornisce alcuna assistenza sull'utilizzo di questi CMS. In caso di difficoltà o dubbi, contatta direttamente il produttore del CMS scelto utilizzando i link indicati in questa guida.
 >
 
-### Step 1 - preparare l'installazione <a name="step1"></a>
+### 1 - Preparare l'installazione <a name="step1"></a>
 
 Per installare un CMS sulla tua offerta di [hosting Web](/links/web/hosting), sono necessari alcuni preparativi.
 
@@ -127,15 +127,14 @@ Consulta la nostra documentazione che descrive [come creare un sito web sull'hos
 
 - Assicurati che il dominio che utilizzerai per accedere al tuo CMS e il sottodominio in "www" puntino verso l'indirizzo IP della tua offerta di [hosting web](/links/web/hosting).
 
-Accedi allo [Spazio Cliente OVHcloud](/links/manager) nella sezione `Web Cloud`{.action} e seleziona la tua soluzione di hosting Web nella sezione `Hosting`{.action}.<br>
-Nel riquadro `Informazioni generali`{.action} sulla tua destra, clicca su `IPv4`{.action} e seleziona l'indirizzo IP del tuo hosting Web.
-
-Se la zona DNS attiva del tuo dominio è gestita dallo [Spazio Cliente OVHcloud](/links/manager), compara l'indirizzo IP del tuo hosting con quello presente nella zona DNS del tuo dominio, consultando la nostra documentazione sulle [zone DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit).
+Per recuperare l'indirizzo IPv4 (o IPv6) del tuo hosting web, consulta la nostra guida "[Hosting Web - Elenco degli indirizzi IP per cluster](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP)".
 
 > [!warning]
 >
-> Se hai attivato le opzioni `CDN`{.action} o `IP del paese`{.action} con il tuo dominio, utilizza l'indirizzo IP adattato seguendo la procedura descritta nella guida che contiene [tutti gli indirizzi IP dei nostri hosting condivisi](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP).
+> Se hai utilizzato l'opzione di indirizzo IP geolocalizzato per paese o hai attivato un'opzione CDN tra il tuo dominio e il tuo hosting web, utilizza l'indirizzo IP appropriato indicato nella guida sopra citata.
 >
+
+Se la zona DNS attiva del tuo dominio è gestita dallo [Spazio Cliente OVHcloud](/links/control-panel/web-dns-zone), compara l'indirizzo IP del tuo hosting con quello presente nella zona DNS del tuo dominio, consultando la nostra documentazione sulle [zone DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit).
 
 Se non riesci a effettuare queste verifiche, contatta il provider della tua zona DNS attiva per aggiornare il puntamento del tuo dominio.
 
@@ -169,7 +168,7 @@ Utilizza la nostra documentazione per [creare un database dalla tua offerta di h
 
 Se disponi di un'offerta Web Cloud Databases in MySQL o MariaDB e desideri utilizzarla per installare manualmente il tuo CMS, consulta la nostra guida sulla [creazione di un database su un servizio Web Cloud Databases](/pages/web_cloud/web_cloud_databases/create-db-and-user-on-db-server#crea-un-database).
 
-Una volta creato il database, recupera i parametri di connessione (server, nome del database, nome utente e password) e conservali per [step 3](#step3) di questa guida.
+Una volta creato il database, recupera i parametri di connessione (server, nome del database, nome utente e password) e conservali per la [parte 3](#step3) di questa guida.
 
 > [!primary]
 >
@@ -183,7 +182,7 @@ Una volta creato il database, recupera i parametri di connessione (server, nome 
 > - Per connetterti a un database presente su un Web Cloud Databases, consulta [questa guida](https://help.ovhcloud.com/csm/it-web-cloud-db-connecting-database-server?id=kb_article_view&sysparm_article=KB0051461).
 >
 
-### Step 2 - Avvia l'installazione manuale
+### 2 - Avvia l'installazione manuale
 
 #### 2.1 - Recuperare i file sorgente del tuo CMS
 
@@ -242,7 +241,7 @@ Indica la cartella "**CMS**" per estrarre i tuoi file da questa cartella.
 
 ### 2.3 - Sposta i file sorgente della cartella "CMS" sulla cartella root del tuo hosting Web
 
-Una volta che i file decomprimono la cartella "**CMS**", [collegati in FTP al tuo spazio di archiviazione](/pages/web_cloud/web_hosting/ftp_connection) con l'aiuto del [client FTP FileZilla](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide) e copia i file contenuti nella cartella "**CMS**" nella "cartella root" definita sul tuo hosting durante lo [step 1](#step1) di questa guida.
+Una volta che i file decomprimono la cartella "**CMS**", [collegati in FTP al tuo spazio di archiviazione](/pages/web_cloud/web_hosting/ftp_connection) con l'aiuto del [client FTP FileZilla](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide) e copia i file contenuti nella cartella "**CMS**" nella "cartella root" definita sul tuo hosting durante la [parte 1](#step1) di questa guida.
 
 Di seguito, un esempio con il CMS *WordPress*:
 
@@ -255,7 +254,7 @@ Di seguito, un esempio con il CMS *WordPress*:
 
 > [!primary]
 >
-> Se la cartella root definita non è stata creata automaticamente durante le azioni descritte nello [step 1](#step1), puoi crearla via FileZilla.
+> Se la cartella root definita non è stata creata automaticamente durante le azioni descritte nella [parte 1](#step1), puoi crearla via FileZilla.
 >
 > Il deposito dei file sul tuo hosting può richiedere qualche minuto.
 >
@@ -376,7 +375,7 @@ rmdir ./CMS/
 >> ```
 >> 
 
-### Step 3 - Completare l'installazione manuale <a name="step3"></a>
+### 3 - Completare l'installazione manuale <a name="step3"></a>
 
 > [!success]
 >

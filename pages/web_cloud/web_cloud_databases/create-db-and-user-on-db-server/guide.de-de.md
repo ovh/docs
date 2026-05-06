@@ -1,7 +1,7 @@
 ---
 title: 'Datenbanken und Benutzer auf Ihrem Datenbankserver erstellen'
 excerpt: 'Erfahren Sie hier, wie Sie eine Datenbank auf Ihrem Datenbankserver erstellen'
-updated: 2024-08-22
+updated: 2026-03-24
 ---
 
 ## Ziel
@@ -13,81 +13,161 @@ In einer Datenbank (DB) können sogenannte dynamische Elemente, wie zum Beispiel
 ## Voraussetzungen
 
 - Sie verfügen über eine [Web Cloud Databases Instanz](/links/web/databases) (auch in einem [Performance Web Hosting](/links/web/hosting) Angebot enthalten).
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
+
+<!-- CP-NAV-START:web-cloud-databases -->
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direkter Link:** [Web Cloud Databases](/links/control-panel/web-cloud-databases)
+- **Navigationspfad:** `Web Cloud`{.action} > `Web Cloud Databases`{.action} > Wählen Sie Ihren Datenbankdienst aus
+
+---
+<!-- CP-NAV-END:web-cloud-databases -->
 
 ## In der praktischen Anwendung
 
 ### Datenbank erstellen
 
-Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein und klicken Sie im Bereich `Web Cloud`{.action} auf `Web Cloud Databases`{.action}. Wählen Sie den Datenbanknamen aus, wechseln Sie zum Tab `Datenbanken`{.action} und klicken Sie dann auf `Datenbank hinzufügen`{.action}.
+<!-- CP-STEPS-START:create-db-and-user-on-db-server_create-database -->
+Klicken Sie auf die unten stehenden Tabs, um die **4** Schritte nacheinander anzuzeigen.
 
-![web-cloud-databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/databases/add-database.png){.thumbnail}
-
-> [!primary]
->
-> Die Erstellung von PostgreSQL-Schemas ist derzeit für die Web Cloud Databases Server nicht verfügbar.
->
-
-Füllen Sie die Felder gemäß den angegebenen Kriterien ein. Sie können direkt einen Benutzer erstellen, indem Sie **Benutzer erstellen** anhaken.
-
-- **Name der Datenbank** (Pflichtfeld): Dies ist der Name Ihrer zukünftigen Datenbank.
-- **Benutzername**: Geben Sie hier den Namen des Benutzers ein, der sich mit Ihrer Datenbank verbinden und Anfragen ausführen kann (nur relevant, wenn bei **Benutzer erstellen** ein Haken gesetzt wird).
-- **Rechte** (nur, wenn das Feld angehakt wurde): Hier handelt es sich um die Benutzerrechte, die dem Benutzer der Datenbank gewährt werden. Für eine standardmäßige Verwendung wählen Sie `Administrator`{.action} aus. Berechtigungen können im Nachhinein verändert werden.
-- **Passwort**/**Passwort bestätigen** (nur, wenn das Feld angehakt wurde): Geben Sie das gewünschte Passwort ein und bestätigen Sie es anschließend durch erneute Eingabe.
-
-Klicken Sie dann auf `Bestätigen`{.action}.
-
-![web-cloud-databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/databases/add-database-confirmation.png){.thumbnail}
+> [!tabs]
+> **Schritt 1**
+>>
+>> Gehen Sie auf die Seite [Web Cloud Databases](/links/control-panel/web-cloud-databases), und wählen Sie die betreffende Lösung aus.
+>>
+>> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases.png){.thumbnail}
+>>
+> **Schritt 2**
+>>
+>> Klicken Sie auf den Tab `Datenbanken`{.action}.
+>>
+> **Schritt 3**
+>>
+>> Klicken Sie auf `Datenbank hinzufügen`{.action}.
+>>
+>> ![web-cloud-databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/databases/add-database.png){.thumbnail}
+>>
+>> > [!primary]
+>> >
+>> > Die Erstellung von PostgreSQL-Schemas ist derzeit für die Web Cloud Databases Server nicht verfügbar.
+>>
+> **Schritt 4**
+>>
+>> Füllen Sie die Felder gemäß den angegebenen Kriterien aus. Sie können direkt einen Benutzer erstellen, indem Sie das Feld **Benutzer erstellen** anhaken:
+>>
+>> - **Name der Datenbank** (Pflichtfeld): Dies ist der Name Ihrer zukünftigen Datenbank.
+>> - **Benutzername** (nur wenn das Feld `Benutzer erstellen` angehakt wurde): Der Benutzer, der sich mit Ihrer Datenbank verbinden und Anfragen ausführen kann.
+>> - **Rechte** (nur wenn das Feld `Benutzer erstellen` angehakt wurde): Die Berechtigungen, die dem Benutzer auf der Datenbank zugewiesen werden. Für eine standardmäßige Verwendung wählen Sie `Administrator`{.action} aus. Berechtigungen können nachträglich geändert werden.
+>> - **Passwort**/**Passwort bestätigen** (nur wenn das Feld `Benutzer erstellen` angehakt wurde): Wählen Sie ein Passwort aus und bestätigen Sie es.
+>>
+>> Klicken Sie auf `Bestätigen`{.action}.
+>>
+>> ![web-cloud-databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/databases/add-database-confirmation.png){.thumbnail}
+<!-- CP-STEPS-END:create-db-and-user-on-db-server_create-database -->
 
 ### Benutzer erstellen
 
-Um einen Datenbankserver von OVHcloud zu verwenden, müssen Benutzer mit spezifischen Rechten für die Verbindung mit einer Datenbank erstellt werden. 
+<!-- CP-STEPS-START:create-db-and-user-on-db-server_create-user -->
+Um einen Datenbankserver von OVHcloud zu verwenden, erstellen Sie Benutzer mit spezifischen Rechten für die Verbindung mit einer Datenbank.
 
-Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein und klicken Sie im Bereich `Web Cloud`{.action} auf `Web Cloud Databases`{.action}. Wählen Sie den Datenbanknamen aus, wechseln Sie zum Tab `Benutzer und Rechte`{.action} und klicken Sie dann auf `Einen Benutzer hinzufügen`{.action}.
+Klicken Sie auf die unten stehenden Tabs, um die **4** Schritte nacheinander anzuzeigen.
 
-![web-cloud-databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/users-and-rights/add-user.png){.thumbnail}
-
-Geben Sie einen "Benutzernamen" und ein "Passwort" ein und klicken Sie anschließend auf `Bestätigen`{.action}. 
+> [!tabs]
+> **Schritt 1**
+>>
+>> Gehen Sie auf die Seite [Web Cloud Databases](/links/control-panel/web-cloud-databases), und wählen Sie die betreffende Lösung aus.
+>>
+>> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases.png){.thumbnail}
+>>
+> **Schritt 2**
+>>
+>> Klicken Sie auf den Tab `Benutzer und Rechte`{.action}.
+>>
+> **Schritt 3**
+>>
+>> Klicken Sie auf `Einen Benutzer hinzufügen`{.action}.
+>>
+>> ![web-cloud-databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/users-and-rights/add-user.png){.thumbnail}
+>>
+> **Schritt 4**
+>>
+>> Geben Sie einen "Benutzernamen" und ein "Passwort" ein und klicken Sie anschließend auf `Bestätigen`{.action}.
+<!-- CP-STEPS-END:create-db-and-user-on-db-server_create-user -->
 
 ### Verwaltung der Benutzerrechte
 
+<!-- CP-STEPS-START:create-db-and-user-on-db-server_manage-user-rights -->
 Um einem Benutzer die Durchführung von Aktionen auf einer Datenbank zu ermöglichen, müssen ihm Rechte zugewiesen werden.
 
-Um die Rechte jedes Benutzers zu verwalten, loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein und klicken Sie im Bereich `Web Cloud`{.action} auf `Web Cloud Databases`{.action}. Wählen Sie den Datenbanknamen aus und wechseln Sie zum Tab `Benutzer und Rechte`{.action}.
+Klicken Sie auf die unten stehenden Tabs, um die **4** Schritte nacheinander anzuzeigen.
 
-Klicken Sie auf die Schaltfläche `...`{.action} rechts neben dem jeweiligen Benutzer, dann auf `Rechte verwalten`{.action}.
+> [!tabs]
+> **Schritt 1**
+>>
+>> Gehen Sie auf die Seite [Web Cloud Databases](/links/control-panel/web-cloud-databases), und wählen Sie die betreffende Lösung aus.
+>>
+>> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases.png){.thumbnail}
+>>
+> **Schritt 2**
+>>
+>> Klicken Sie auf den Tab `Benutzer und Rechte`{.action}.
+>>
+> **Schritt 3**
+>>
+>> Klicken Sie auf die Schaltfläche `...`{.action} rechts neben dem jeweiligen Benutzer, dann auf `Rechte verwalten`{.action}.
+>>
+>> ![web-cloud-databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/users-and-rights/manage-rights.png){.thumbnail}
+>>
+> **Schritt 4**
+>>
+>> In der linken Spalte **Datenbank** finden Sie die Liste der Datenbanken Ihres Datenbankservers.
+>>
+>> 3 Berechtigungsarten stehen zur Verfügung:
+>>
+>> - `Administrator`: Freigabe von Anfragen des Typs **Select / Insert / Update / Delete / Create / Alter / Drop**.
+>> - `Lesen/Schreiben`: Freigabe von Anfragen des Typs **Select / Insert / Update / Delete**.
+>> - `Lesen`: Freigabe von Anfragen des Typs **Select**.
+>> - `Keine`: Keine Rechte auf der Datenbank.
+>>
+>> > [!primary]
+>> >
+>> > Die Segmentierung der oben genannten Rechte ist OVHcloud vorbehalten. So kann ein Benutzer mit der `Administrator`-Berechtigung **DDL** (Data Definition Language) und **DML** (Data Manipulation Language) verwenden, während ein Benutzer mit der Berechtigung `Lesen/Schreiben` nur **DML** (Data Manipulation Language) nutzen kann.
+>>
+>> ![web-cloud-databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/users-and-rights/changing-user-rights.png){.thumbnail}
+<!-- CP-STEPS-END:create-db-and-user-on-db-server_manage-user-rights -->
 
-![web-cloud-databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/users-and-rights/manage-rights.png){.thumbnail}
+### Datenbank löschen
 
-In der linken Spalte **Datenbank** finden Sie die Liste der Datenbanken Ihres Datenbankservers.
-
-Benutzern können die folgenden Berechtigungen erteilt werden:
-
-- `Administrator`: Freigabe von Anfragen des Typs: **Select / Insert / Update / Delete / Create / Alter / Drop**.
-- `Lesen/Schreiben`: Freigabe von Anfragen des Typs: **Select / Insert / Update / Delete**.
-- `Lesen`: Freigabe von Anfragen des Typs: **Select**.
-- `Keine`: Keine Rechte auf der Datenbank.
-
-> [!primary]
-> 
-> Die Segmentierung der oben genannten Rechte ist OVHcloud vorbehalten. So kann ein Benutzer mit der `Administrator`-Berechtigung **DLL** (Data Definition Language) und **DML** (Data Manipulation Language) verwenden, während ein Benutzer mit der Berechtigung `Lesen/Schreiben` nur **DLL** nutzen kann.
->
-
-![web-cloud-databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/users-and-rights/changing-user-rights.png){.thumbnail}
-
-#### Eine Datenbank löschen
-
+<!-- CP-STEPS-START:create-db-and-user-on-db-server_delete-database -->
 > [!warning]
 >
-> Beim Löschen einer Datenbank auf einem Datenbankserver findet keine Überprüfung der Datenbank statt. Diese wird daher auch dann gelöscht, wenn
-> Inhalte existieren. Daher wird empfohlen, vor jeder Löschung ein Backup zu erstellen und ggf. auch eine lokale Sicherung herunterzuladen.
-> 
+> Beim Löschen einer Datenbank auf einem Datenbankserver findet keine Überprüfung
+> des Datenbankinhalts statt. Die Datenbank wird auch dann gelöscht, wenn
+> noch Daten darin gespeichert sind. Es wird daher empfohlen, vor jeder
+> Löschung ein Backup zu erstellen und herunterzuladen.
+>
 
-Um die Rechte jedes Benutzers zu verwalten, loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein und klicken Sie im Bereich `Web Cloud`{.action} auf `Web Cloud Databases`{.action}. Wählen Sie den Datenbanknamen aus und wechseln Sie zum Tab `Datenbanken`{.action}.
+Klicken Sie auf die unten stehenden Tabs, um die **3** Schritte nacheinander anzuzeigen.
 
-Um eine Datenbank auf Ihrem Datenbankserver zu löschen, klicken Sie auf `...`{.action} rechts neben der betreffenden Datenbank und anschließend auf `Die Datenbank löschen`{.action}.
-
-![web-cloud-databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/databases/delete-the-database.png){.thumbnail}
+> [!tabs]
+> **Schritt 1**
+>>
+>> Gehen Sie auf die Seite [Web Cloud Databases](/links/control-panel/web-cloud-databases), und wählen Sie die betreffende Lösung aus.
+>>
+>> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases.png){.thumbnail}
+>>
+> **Schritt 2**
+>>
+>> Klicken Sie auf den Tab `Datenbanken`{.action}.
+>>
+> **Schritt 3**
+>>
+>> Klicken Sie auf die Schaltfläche `...`{.action} rechts neben der betreffenden Datenbank, dann auf `Die Datenbank löschen`{.action}.
+>>
+>> ![web-cloud-databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/databases/delete-the-database.png){.thumbnail}
+<!-- CP-STEPS-END:create-db-and-user-on-db-server_delete-database -->
 
 ## Weiterführende Informationen
 

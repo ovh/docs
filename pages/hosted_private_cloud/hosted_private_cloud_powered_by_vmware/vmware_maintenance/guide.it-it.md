@@ -17,6 +17,17 @@ updated: 2025-06-02
 - You are the administrative or technical contact for the [VMware on OVHcloud solution](/links/hosted-private-cloud/vmware) infrastructure.
 - You have access to the [OVHcloud Control Panel](/links/manager) or the [API console for your services](/links/api).
 
+<!-- CP-NAV-START:privatecloud-vmware-vsphere -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [VMware vSphere](/links/control-panel/privatecloud-vmware-vsphere)
+- **Navigation path:** `Hosted Private Cloud`{.action} > `Managed VMware vSphere`{.action} > Select your vSphere service
+
+---
+<!-- CP-NAV-END:privatecloud-vmware-vsphere -->
+
 ## Instructions
 
 Maintenance operations at OVHcloud are a testament to in-house expertise. It has been improved over the years to guarantee the reliability and performance of the equipment.

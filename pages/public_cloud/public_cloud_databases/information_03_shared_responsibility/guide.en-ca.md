@@ -1,5 +1,5 @@
 ---
-title: Public Cloud Databases - Responsibility model
+title: Responsibility model for Public Cloud Databases
 excerpt: 'Shared responsibilities between OVHcloud and the customer'
 updated: 2025-11-04
 ---

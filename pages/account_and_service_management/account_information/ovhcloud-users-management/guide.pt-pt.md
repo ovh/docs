@@ -20,7 +20,17 @@ A OVHcloud permite-lhe criar utilizadores locais com permissão de leitura ou es
 ## Requisitos
 
 - Ter uma conta OVHcloud ativa.
-- Ter acesso à [Área de Cliente OVHcloud](/links/manager).
+
+<!-- CP-NAV-START:iam-identities -->
+---
+
+### Acesso à Área de Cliente OVHcloud
+
+- **Ligação direta:** [IAM Identities](/links/control-panel/iam-identities)
+- **Caminho de navegação:** `Identidade, Segurança e Operações`{.action} > `Identidades`{.action}
+
+---
+<!-- CP-NAV-END:iam-identities -->
 
 ## Instruções
 
@@ -32,11 +42,7 @@ Os utilizadores locais são um dos tipos de identidades que podem ser implementa
 
 #### Adicionar um utilizador
 
-Aceda à [Área de Cliente OVHcloud](/links/manager). Na barra lateral, clique em `Identidade, Segurança e Operações`{.action} e, a seguir, em `Identidades`{.action}.
-
-![Para aceder ao menu IAM](images/access_to_the_IAM_menu_03.png){.thumbnail}
-
-De seguida, pode clicar em `Adicionar utilizador`{.action}.
+Na página [Identidades IAM](/links/control-panel/iam-identities), clique em `Adicionar utilizador`{.action}.
 
 Na janela que se abrir, complete os campos obrigatórios. Clique em `Validar`{.action} para criar o utilizador.
 
@@ -82,7 +88,7 @@ A alteração do utilizador permite atualizar o seu endereço de e-mail, os seus
 
 #### Adicionar um grupo
 
-Para adicionar um grupo, aceda à secção `Identidades`{.action} e aceda ao separador `Grupos de utilizadores`{.action}. De seguida, clique no botão `Declarar um grupo`{.action}.
+Para adicionar um grupo, aceda ao separador `Grupos de utilizadores`{.action} e clique no botão `Declarar um grupo`{.action}.
 
 ![users-management](images/usersmanagement7.png){.thumbnail}
 

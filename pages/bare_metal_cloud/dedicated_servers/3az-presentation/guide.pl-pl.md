@@ -1,6 +1,6 @@
 ---
 title: "Bare Metal 3-AZ Region - Prezentacja oferty"
-excerpt: 'Odkryj usługę Bare Metal 3-AZ, która oferuje niezrównaną wysoką dostępność i redundancję między trzema centrami danych'
+excerpt: "Odkryj usługę Bare Metal 3-AZ, która oferuje niezrównaną wysoką dostępność i redundancję między trzema centrami danych"
 updated: 2025-06-04
 ---
 
@@ -39,22 +39,35 @@ OVHcloud jest obecna na całym świecie, w tym w Europie, Stanach Zjednoczonych,
 
 Aby zapewnić optymalną wydajność, region musi być wybrany jak najbliżej użytkowników. Aby usługi były dostępne globalnie, muszą być rozproszone w kilku regionach. Region 3-AZ jest idealny dla klientów poszukujących najwyższej odporności i musi być używany do tworzenia projektów aplikacji multi-AZ.
 
-W [Panelu klienta OVHcloud](/links/manager) możesz wyświetlić klastry na liście `Serwerów dedykowanych`{.action} menu `Bare Metal Cloud`{.action} przechodząc do zakładki `3-AZ Clusters`{.action}.
+<!-- CP-NAV-START:baremetal-dedicated-servers -->
+---
 
-![list_clusters](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/dedicated-servers/general-information/clusters1.png){.thumbnail}
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Serwery dedykowane](/links/control-panel/baremetal-dedicated-servers)
+- **Ścieżka nawigacji:** `Bare Metal Cloud`{.action} > `Serwery dedykowane`{.action} > Wybierz serwer
+
+---
+<!-- CP-NAV-END:baremetal-dedicated-servers -->
+
+Przejdź do zakładki `3-AZ Clusters`{.action}.
+
+![Zakładka klastrów 3-AZ z listą dostępnych klastrów](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/dedicated-servers/general-information/clusters1.png){.thumbnail}
 
 Kliknij nazwę klastra w tabeli, aby wyświetlić szczegóły.
 
-![list_clusters](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/dedicated-servers/general-information/clusters2.png){.thumbnail}
+![Strona szczegółów klastra z informacjami o strefach dostępności](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/dedicated-servers/general-information/clusters2.png){.thumbnail}
 
 Kliknij zakładkę `Węzły`{.action}, aby otworzyć listę serwerów klastra.
 
-![list_clusters](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/dedicated-servers/general-information/clusters3.png){.thumbnail}
+![Zakładka węzłów pokazująca listę serwerów w klastrze](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/dedicated-servers/general-information/clusters3.png){.thumbnail}
 
 Kliknięcie nazwy serwera/węzła na tej liście spowoduje otwarcie zakładki `Informacje ogólne`{.action} serwera. Więcej informacji znajduje się w tym Panelu klienta w naszym przewodniku:
 
 [Jak rozpocząć pracę z serwerem dedykowanym](/pages/bare_metal_cloud/dedicated_servers/getting-started-with-dedicated-server)
 
 ## Sprawdź również <a name="go-further"></a>
+
+- [Konfiguracja vRack na serwerach dedykowanych](/pages/bare_metal_cloud/dedicated_servers/vrack_configuring_on_dedicated_server)
 
 Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

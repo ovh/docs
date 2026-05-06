@@ -1,7 +1,7 @@
 ---
 title: AI Deploy - Scaling strategies
 excerpt: Understand the scaling strategies (static scaling vs autoscaling) of AI Deploy and learn how to use them
-updated: 2025-12-17
+updated: 2026-03-18
 ---
 
 > [!primary]
@@ -14,8 +14,18 @@ This guide provides a comprehensive understanding of the different scaling strat
 ## Requirements
 
 - An active **Public Cloud** project.
-- Access to the [OVHcloud Control Panel](/links/manager).
 - The **OVHcloud AI CLI** (`ovhai`) installed. For installation instructions, see [how to install ovhai](/pages/public_cloud/ai_machine_learning/cli_10_howto_install_cli).
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Navigation path:** `Public Cloud`{.action} > Select your project
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## Scaling principles
 
@@ -68,21 +78,37 @@ The minimum number of replicas is **1** and the maximum is **10**.
 
 Autoscaling dynamically adjusts the number of application replicas based on **real-time metrics**, such as CPU or RAM usage. This is optimized for **workloads with varying demand**.
 
+> [!primary]
+>
+> Autoscaling adjusts by calculating the **average resource usage** across all replicas. If the average exceeds the threshold, new replicas are added after the scaling up delay; if it falls below, replicas are removed after the scaling down delay.
+
 ### Autoscaling Key Configuration Parameters
 
-Using this strategy, it is possible to choose: 
+Using this strategy, it is possible to choose:
 
 | Parameter                  | Description                                                                                   |
 |----------------------------|-----------------------------------------------------------------------------------------------|
-| **Minimum Replicas**       | Lowest number of running replicas.                                                            |
+| **Minimum Replicas**       | Lowest number of running replicas. When set to 0, the number of replicas will be reduced to 0 when your application no longer receives calls during the defined period, limiting costs of your app. |
 | **Maximum Replicas**       | Upper bound for replica count (define based on usage expectations).                           |
-| **Monitored Metric**       | The metric to be monitored. Choose between `CPU` or `RAM` for triggering autoscaling actions. |
+| **Time before scaling down (s)** | Number of seconds before scaling from N to N-1 replicas. Default value is 300s. Must be greater than or equal to 0 and less than or equal to 3600 (one hour).                                      |
+| **Time before scaling to 0 (s)** | Number of seconds before reducing from 1 to 0 replica. **Only applies** when minimum replicas is set to 0. When enabled, this time must be considered in addition to the `Time before scaling down` parameter.      |
+| **Time before scaling up (s)**   | Number of seconds before scaling from N to N+1 replicas. Default value is 0s. Must be greater than or equal to 0 and less than or equal to 3600 (one hour).                                    |
+| **Monitored Metric**       | The metric to be monitored. Choose between `CPU`, `RAM` or a custom metric for triggering autoscaling actions. |
 | **Trigger Threshold (%)**  | Average usage percentage used to trigger scaling up or down. Range: 1–100%.                   |
 
-> [!primary]
+> [!warning]
 >
-> Autoscaling adjusts by calculating the **average resource usage** across all replicas. If the average exceeds the threshold, new replicas are spun up; if it falls below, replicas are removed.
+> For **High Availability**, it is strongly recommended to deploy a **minimum of 2 replicas**.
 >
+> If you set the minimum number of replicas to 0, please consider the following:
+>
+> - **Scaling behavior**: If there is no traffic to it, your app will scale down to zero replicas.
+>
+> - **Cold start latency**: If a request comes in while no replicas are serving your app, there will be a cold start delay before the app starts serving requests again, varying from 30 seconds to several minutes depending on your image and volume weight.
+>
+> - **Resource availability risk**: If you use a popular flavor, then there is a risk that your app will NOT be able to scale up again, if flavor is unavailable, preventing your app from handling incoming requests.
+>
+> - **Parameter interaction**: The time before scaling to 0 is applied in addition to the time before scaling down. This means the total time before an app scales down to 0 is the sum of both parameters.
 
 ### When to Choose Autoscaling?
 
@@ -107,8 +133,10 @@ Using this strategy, it is possible to choose:
 >> ovhai app run <registry-address>/<image-identifier>:<tag-name> \
 >>     --auto-min-replicas 1 \
 >>     --auto-max-replicas 5 \
->>     --auto-resource-type CPU \
->>     --auto-resource-usage-threshold 75
+>>     --auto-scale-down-stabilization-window-seconds <seconds> \
+>>     --auto-scale-up-stabilization-window-seconds <seconds> \
+>>     --auto-resource-type <CPU/RAM> \
+>>     --auto-resource-usage-threshold <percent>
 >> ```
 >>
 
@@ -171,6 +199,7 @@ You can also modify the scaling strategy after the app has been created using th
 >> - Switch between auto scaling and static scaling
 >> - Change replica values
 >> - Modify monitored metric and associated values
+>> - Update your scaling window (time to scale up, to scale down or to scale to 0)
 >>
 >> ![Update application scaling step 2](images/update-autoscaling-2.png){.thumbnail}
 >>
@@ -193,11 +222,14 @@ You can also modify the scaling strategy after the app has been created using th
 >> **Updating Autoscaling**
 >>
 >> To change the autoscaling parameters, use the `ovhai app scale` command with the following parameters:
->> 
+>>
 >> ```bash
 >> ovhai app scale \
 >>     --auto-min-replicas <min> \
 >>     --auto-max-replicas <max> \
+>>     --auto-scale-down-stabilization-window-seconds <seconds> \
+>>     --auto-scale-up-stabilization-window-seconds <seconds> \
+>>     --auto-cooldown-period-seconds <seconds> \
 >>     --auto-resource-type <CPU/RAM> \
 >>     --auto-resource-usage-threshold <percent> \
 >>     <app-id>
@@ -209,6 +241,11 @@ You can also modify the scaling strategy after the app has been created using th
 >>
 >> ```bash
 >> ovhai app scale \
+>>     --auto-min-replicas <min> \
+>>     --auto-max-replicas <max> \
+>>     --auto-scale-down-stabilization-window-seconds <seconds> \
+>>     --auto-scale-up-stabilization-window-seconds <seconds> \
+>>     --auto-cooldown-period-seconds <seconds> \
 >>     --auto-custom-api-url <API URL> \
 >>     --auto-custom-value-location <METRIC VALUE LOCATION> \
 >>     --auto-custom-target-value <METRIC TARGET VALUE> \

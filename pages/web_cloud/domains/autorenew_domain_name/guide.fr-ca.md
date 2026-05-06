@@ -1,14 +1,26 @@
 ---
-title: "Renouveler mes noms de domaine OVHcloud"
+title: "Comment renouveler mon nom de domaine OVHcloud"
 excerpt: "Découvrez pourquoi et comment renouveler vos noms de domaine OVHcloud"
-updated: 2025-06-13
+updated: 2026-03-13
 ---
 
-## Objectif 
+<style>
+details>summary {
+    color:rgb(33, 153, 232) !important;
+    cursor: pointer;
+}
+details>summary::before {
+    content:'\25B6';
+    padding-right:1ch;
+}
+details[open]>summary::before {
+    content:'\25BC';
+}
+</style>
 
-Ce guide vous accompagne dans la gestion de vos noms de domaine, en couvrant tous les aspects liés à leur renouvellement.
+## Objectif
 
-Vous trouverez toutes les informations pour :
+Ce guide vous accompagne dans la gestion de vos noms de domaine, en couvrant tous les aspects liés à leur renouvellement :
 
 - Différencier le renouvellement automatique et le renouvellement manuel
 - Changer le mode de renouvellement de vos noms de domaine
@@ -21,8 +33,18 @@ Vous trouverez toutes les informations pour :
 ## Prérequis
 
 - Disposer d'un nom de domaine enregistré chez OVHcloud.
-- Être connecté à votre [espace client OVHcloud](/links/manager), partie `Web Cloud`{.action}.
 - Être contact de facturation de vos services OVHcloud.
+
+<!-- CP-NAV-START:billing-services -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Mes offres & services](/links/control-panel/billing-services)
+- **Pour y accéder :** Cliquez sur votre nom en haut à droite > `Mes offres & services`{.action}
+
+---
+<!-- CP-NAV-END:billing-services -->
 
 ## En pratique
 
@@ -32,8 +54,8 @@ Renouveler correctement votre nom de domaine est crucial pour maintenir votre vi
 
 Le nom de domaine est l'adresse permettant à vos contacts de se rendre sur votre site internet et d'échanger avec vous par e-mail. Si votre nom de domaine n'est pas renouvelé, votre site web et vos adresses e-mails ne seront plus accessibles. Un site web non-accessible pendant quelques temps peut avoir des impacts sur votre visibilité web et sur votre référencement naturel.
 
-Dans le cas où vous n'avez pas renouvelé votre nom de domaine avant la date d'anniversaire de ce dernier alors que vous souhaitiez tout de même le conserver, des frais additionnels peuvent être associés.
-En effet, une fois le nom de domaine supprimé, le renouvellement n'est plus possible et vous devez alors restaurer votre nom de domaine. Pour que la restauration puisse être effective, des frais de restauration seront appliqués. 
+Si vous n'avez pas renouvelé votre nom de domaine avant sa date d'anniversaire mais souhaitez le conserver, des frais additionnels peuvent être associés.
+En effet, une fois le nom de domaine supprimé, le renouvellement n'est plus possible et vous devez le restaurer. Des frais de restauration seront alors appliqués.
 
 Enfin, si vous ne souhaitez pas conserver votre nom de domaine, il sera automatiquement disponible sur le marché et pourra de nouveau être enregistré par quelqu'un d'autre.
 Si le nom de domaine comporte votre nom de marque, soyez vigilant. Une personne malveillante pourrait utiliser votre ancien nom de domaine pour du phishing ou des arnaques en se faisant passer pour votre entreprise.
@@ -43,69 +65,86 @@ Si le renouvellement automatique est activé, votre moyen de paiement doit être
 
 ### Les différents types de renouvellement
 
-#### Le renouvellement automatique
-
-Voici les principaux avantages du renouvellement automatique :
-
-- **Simplicité** : plus besoin de vous soucier des dates de renouvellement, tout est automatisé pour vous.
-- **Continuité du service** : vos services restent actifs, sans interruption.
-- **Gain de temps** : vous vous épargnez toute démarche manuelle et risque d'oubli.
-
-> [!warning]
->
-> En l'absence d'un moyen de paiement valide, le renouvellement ne pourra être effectué et vous risquez la perte de votre nom de domaine. Veuillez vérifier la validité de votre moyen de paiement.
->
-
-#### Le renouvellement manuel
-
-Si vous ne souhaitez pas de renouvellement automatique et donc de prélèvement automatique, vous pouvez modifier le type de renouvellement en le passant en **manuel**.
-
-Ce mode de renouvellement peut être utile :
-
-- Si vous n'êtes pas certain de vouloir conserver le service à échéance ;
-- Si vous ne souhaitez pas que vos factures soient prélevées automatiquement sur votre moyen de paiement.
-
-Si vous choisissez le renouvellement manuel, vous recevrez plusieurs relances avant échéance, contenant un lien permettant de renouveler en ligne le service arrivant à expiration.
-Vous pourrez aussi simplement effectuer le règlement depuis votre espace client.
-
-**Attention**, si vous n'effectuez pas de paiement pour le service en renouvellement manuel, vous risquez de perdre votre nom de domaine ou de régler des frais de restauration (si le nom de domaine est suspendu).
-En revanche, si vous ne souhaitez pas conserver ce service, il n'est pas nécessaire d'en demander la résiliation.
+> [!tabs]
+> **Le renouvellement automatique**
+>> Voici les principaux avantages du renouvellement automatique :
+>>
+>> - **Simplicité** : plus besoin de vous soucier des dates de renouvellement, tout est automatisé pour vous.
+>> - **Continuité du service** : vos services restent actifs, sans interruption.
+>> - **Gain de temps** : vous vous épargnez toute démarche manuelle et risque d'oubli.
+>>
+>> > [!warning]
+>> >
+>> > En l'absence d'un moyen de paiement valide, le renouvellement ne pourra être effectué et vous risquez la perte de votre nom de domaine. Veuillez vérifier la validité de votre moyen de paiement.
+>>
+> **Le renouvellement manuel**
+>> Si vous ne souhaitez pas de renouvellement automatique et donc de prélèvement automatique, vous pouvez modifier le type de renouvellement en le passant en **manuel**.
+>>
+>> Ce mode de renouvellement peut être utile :
+>>
+>> - Si vous n'êtes pas certain de vouloir conserver le service à échéance ;
+>> - Si vous ne souhaitez pas que vos factures soient prélevées automatiquement sur votre moyen de paiement.
+>>
+>> Si vous choisissez le renouvellement manuel, vous recevrez plusieurs relances avant échéance, contenant un lien permettant de renouveler en ligne le service arrivant à expiration.
+>> Vous pourrez aussi simplement effectuer le règlement depuis votre espace client.
+>>
+>> **Attention**, si vous n'effectuez pas de paiement pour le service en renouvellement manuel, vous risquez de perdre votre nom de domaine ou de régler des frais de restauration (si le nom de domaine est suspendu).
+>> En revanche, si vous ne souhaitez pas conserver ce service, il n'est pas nécessaire d'en demander la résiliation.
 
 ### Changer le mode de renouvellement de mes noms de domaine
 
-Dans votre [espace client](/links/manager), cliquez sur votre nom en haut à droite de votre écran puis sur `Mes offres & services`{.action}. Dans le tableau qui s'affiche, identifiez le ou les noms de domaine dont vous souhaitez changer le mode de renouvellement.
+<!-- CP-STEPS-START:changer-mode-renouvellement -->
+Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **2** étapes.
 
-#### Pour un seul nom de domaine
-
-Effectuez les action suivantes :
-
-- Dans le tableau, identifiez le nom de domaine dont vous voulez changer le mode de renouvellement
-- Cliquez à droite de la ligne sur le bouton `...`{.action}.
-- Cliquez sur l'action `Configurer le renouvellement`{.action}.
-- Paramétrez le renouvellement en `Manuel`{.action} ou `Automatique`{.action}.
-- Si vous optez pour le renouvellement automatique, choisissez la fréquence de renouvellement automatique.
-- Validez et payez.
-
-#### Pour plusieurs noms de domaine
-
-Effectuez les action suivantes :
-
-- Dans le tableau, identifiez les noms de domaine dont vous voulez changer le mode de renouvellement.
-- Sélectionnez les lignes correspondantes dans le tableau en cochant les cases en début de ligne.
-- Cliquez sur le bouton `Actions`{.action} en haut à gauche du tableau.
-- Sélectionnez `Activer le paiement automatique`{.action} ou `Désactiver le paiement automatique`{.action}.
+> [!tabs]
+> **Étape 1**
+>>
+>> Accédez à la page [Mes offres et services](/links/control-panel/billing-services). Dans le tableau qui s'affiche, identifiez le ou les noms de domaine dont vous souhaitez changer le mode de renouvellement.
+>>
+>> ![Mes offres & services](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/my-services-en.png){.thumbnail}
+>>
+> **Étape 2**
+>>
+>> **Pour un seul nom de domaine :**
+>>
+>> - Cliquez à droite du nom de domaine sur le bouton `...`{.action}.
+>> - Cliquez sur l'action `Configurer le renouvellement`{.action}.
+>> - Paramétrez le renouvellement en `Manuel`{.action} ou `Automatique`{.action}.
+>> - Si vous optez pour le renouvellement automatique, choisissez la fréquence de renouvellement automatique.
+>> - Validez et payez.
+>>
+>> **Pour plusieurs noms de domaine :**
+>>
+>> - Sélectionnez les lignes correspondantes dans le tableau en cochant les cases en début de ligne.
+>> - Cliquez sur le bouton `Actions`{.action} en haut à gauche du tableau.
+>> - Sélectionnez `Activer le paiement automatique`{.action} ou `Désactiver le paiement automatique`{.action}.
+<!-- CP-STEPS-END:changer-mode-renouvellement -->
 
 ### Renouveler mon nom de domaine avant la date d'échéance
 
-Effectuez les actions suivantes :
+<!-- CP-STEPS-START:renouveler-avant-echeance -->
+Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3** étapes.
 
-- Dans le tableau, identifiez le nom de domaine que vous souhaitez renouveler.
-- Cliquez à droite de la ligne sur le bouton `...`{.action}.
-- Cliquez sur l'action `Anticiper le paiement`{.action}.
-- Après avoir été redirigé vers une interface de paiement en ligne, suivez les instructions.
-
-Vous pouvez renouveler le service à tout moment avant son expiration et également choisir la durée de renouvellement.
-Dans ce cas, la durée de validité souscrite sera rajoutée au temps de validité en cours. Vous ne perdrez pas le temps de validité restant.
+> [!tabs]
+> **Étape 1**
+>>
+>> Accédez à la page [Mes offres et services](/links/control-panel/billing-services). Dans le tableau qui s'affiche, identifiez le nom de domaine que vous souhaitez renouveler.
+>>
+>> ![Mes offres & services](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/my-services-en.png){.thumbnail}
+>>
+> **Étape 2**
+>>
+>> Cliquez à droite de la ligne sur le bouton `...`{.action}, puis sur `Anticiper le paiement`{.action}.
+>>
+>> ![Option Anticiper le paiement](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/forward-payment-en.png){.thumbnail}
+>>
+> **Étape 3**
+>>
+>> Après avoir été redirigé vers une interface de paiement en ligne, suivez les instructions.
+>>
+>> Vous pouvez renouveler le service à tout moment avant son expiration et également choisir la durée de renouvellement.
+>> Dans ce cas, la durée de validité souscrite sera rajoutée au temps de validité en cours. Vous ne perdrez pas le temps de validité restant.
+<!-- CP-STEPS-END:renouveler-avant-echeance -->
 
 ### Suivre le renouvellement de mon nom de domaine
 
@@ -113,38 +152,71 @@ Une fois le prélèvement du renouvellement effectué, le nom de domaine sera re
 
 Les données affichées dans le WHOIS seront alors mises à jour, confirmant le bon renouvellement du nom de domaine.
 
-Pour vérifier le statut du renouvellement de votre nom de domaine :
+<!-- CP-STEPS-START:suivre-renouvellement -->
+Pour vérifier le statut du renouvellement de votre nom de domaine, cliquez sur les onglets ci-dessous pour afficher successivement chacune des **2** étapes.
 
-1. Connectez-vous à votre [espace client OVHcloud](/links/manager).
-1. Rendez-vous dans la partie `Web Cloud`{.action}.
-1. Cliquez sur `Noms de domaine`{.action} dans la section `Domaines et DNS`{.action}.
-1. Dans le tableau qui s'affiche, vérifiez le statut du renouvellement dans la colonne `Statut` sur la ligne du nom de domaine concerné.
-
-La mention `Renouvellement en cours` est présente une fois le paiement effectué, jusqu'au renouvellement effectif de votre nom de domaine auprès du registre.
+> [!tabs]
+> **Étape 1**
+>>
+>> Accédez à la page [Noms de domaine](/links/control-panel/web-domains), puis choisissez le nom de domaine concerné.
+>>
+>> ![Noms de domaine](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
+>>
+> **Étape 2**
+>>
+>> Dans l'encadré **Informations générales**, vérifiez le statut du renouvellement sous la mention **Statut du nom de domaine**.
+>>
+>> La mention `Renouvellement en cours` est présente une fois le paiement effectué, jusqu'au renouvellement effectif de votre nom de domaine auprès du registre.
+<!-- CP-STEPS-END:suivre-renouvellement -->
 
 ### Résilier mon nom de domaine
 
-- Dans le tableau, identifiez le nom de domaine que vous souhaitez renouveler.
-- Cliquez à droite de la ligne sur le bouton `...`{.action}.
-- Cliquez sur l'action `Résilier mon service`{.action}.
+<!-- CP-STEPS-START:resilier-nom-de-domaine -->
+Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **2** étapes.
 
-Cette action est proposée pour les services paramétrés en **renouvellement automatique**. En choisissant cette action, le renouvellement et le prélèvement automatiques sont désactivés pour le service que vous avez sélectionné.
+> [!tabs]
+> **Étape 1**
+>>
+>> Accédez à la page [Mes offres et services](/links/control-panel/billing-services). Dans le tableau qui s'affiche, identifiez le nom de domaine que vous souhaitez résilier.
+>>
+>> ![Mes offres & services](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/my-services-en.png){.thumbnail}
+>>
+> **Étape 2**
+>>
+>> Cliquez à droite de la ligne sur le bouton `...`{.action}, puis sur `Résilier mon service`{.action}.
+>>
+>> Cette action est proposée pour les services paramétrés en **renouvellement automatique**. En choisissant cette action, le renouvellement et le prélèvement automatiques sont désactivés pour le service que vous avez sélectionné.
+<!-- CP-STEPS-END:resilier-nom-de-domaine -->
 
 > [!primary]
 >
 > La résiliation du nom de domaine prendra fin à l'expiration de celui-ci.
->
 
-Pour plus d'informations sur la résiliation des services OVHcloud, suivez les instructions du guide « **[Comment résilier vos services OVHcloud](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_cancel_services)** ».
+Pour plus d'informations, consultez notre guide « **[Comment résilier vos services OVHcloud](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_cancel_services)** ».
 
-### Accéder à la facture du renouvellement de mon nom de domaine
+### Régler la facture de renouvellement d'un nom de domaine
 
-Une mention `Facture à régler` s'affiche lorsqu'une facture est en attente de règlement et lorsque :
+<!-- CP-STEPS-START:regler-facture-renouvellement -->
+Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **2** étapes.
 
-- Vous possédez des services en renouvellement automatique.
-- Vous n'avez pas enregistré de moyen de paiement permettant d'effectuer un prélèvement pour le règlement de vos factures.
-
-Il vous suffit alors de choisir l'action `Régler ma facture`{.action} qui vous redirigera vers une plateforme de paiement en ligne.
+> [!tabs]
+> **Étape 1**
+>>
+>> Accédez à la page [Mes offres et services](/links/control-panel/billing-services). Dans le tableau qui s'affiche, identifiez le nom de domaine pour lequel vous devez régler une facture de renouvellement.
+>>
+>> ![Mes offres & services](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/my-services-en.png){.thumbnail}
+>>
+> **Étape 2**
+>>
+>> Cliquez à droite de la ligne sur le bouton `...`{.action}, puis sur `Régler ma facture`{.action}.
+>> Vous serez redirigé vers une plateforme de paiement en ligne.
+>>
+>> > [!primary]
+>> > La mention **Facture à régler** s'affiche lorsqu'une facture est en attente de règlement et lorsque :
+>> >
+>> > - Vous possédez des services en renouvellement automatique.
+>> > - Vous n'avez pas enregistré de moyen de paiement permettant d'effectuer un prélèvement pour le règlement de vos factures.
+<!-- CP-STEPS-END:regler-facture-renouvellement -->
 
 ## FAQ
 
@@ -176,18 +248,26 @@ Il est possible d’être automatiquement remboursé jusqu’à 10 jours avant l
 
 Une fois le règlement des frais de renouvellement effectué, nous transmettons la demande auprès du registre approprié.
 
-Le statut de votre nom de domaine passe alors en `Renouvellement en cours`.
+Votre nom de domaine passe alors au statut **renouvellement en cours**.
 
-Une fois le renouvellement effectué par le registre (environ un mois après le règlement des frais de renouvellement), le statut de votre nom de domaine repassera sous la mention `enregistré`.
+Une fois le renouvellement effectué par le registre (environ un mois après le règlement des frais de renouvellement), votre nom de domaine repassera au statut **enregistré**.
 
 Les données du WHOIS se mettront ensuite à jour.
 
-Pour vérifier le statut du renouvellement de votre nom de domaine :
+<!-- CP-STEPS-START:faq-verifier-statut-renouvellement -->
+Pour vérifier le statut du renouvellement de votre nom de domaine, cliquez sur les onglets ci-dessous pour afficher successivement chacune des **2** étapes.
 
-1. Connectez-vous à votre [espace client OVHcloud](/links/manager).
-1. Rendez-vous dans la partie `Web Cloud`{.action}.
-1. Cliquez sur `Noms de domaine`{.action} dans la section `Domaines et DNS`{.action}.
-1. Dans le tableau qui s'affiche, vérifiez le statut du renouvellement dans la colonne `Statut` sur la ligne du nom de domaine concerné.
+> [!tabs]
+> **Étape 1**
+>>
+>> Accédez à la page [Noms de domaine](/links/control-panel/web-domains), puis choisissez le nom de domaine concerné.
+>>
+>> ![Noms de domaine](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
+>>
+> **Étape 2**
+>>
+>> Dans l'encadré **Informations générales**, vérifiez le statut du renouvellement sous la mention **Statut du nom de domaine**.
+<!-- CP-STEPS-END:faq-verifier-statut-renouvellement -->
 
 ///
 

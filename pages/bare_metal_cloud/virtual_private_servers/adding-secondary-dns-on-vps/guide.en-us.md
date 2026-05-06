@@ -14,7 +14,17 @@ If you are configuring your VPS as a DNS server, you can make use of the OVHclou
 
 - A domain name to which you have administrative access
 - A [Virtual Private Server](/links/bare-metal/vps) in your OVHcloud account
-- Access to the [OVHcloud Control Panel](/links/manager)
+
+<!-- CP-NAV-START:baremetal-vps -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [VPS management](/links/control-panel/baremetal-vps)
+- **Navigation path:** `Bare Metal Cloud`{.action} > `Virtual private servers`{.action} > Select your VPS
+
+---
+<!-- CP-NAV-END:baremetal-vps -->
 
 > [!warning]
 >OVHcloud is providing you with services for which you are responsible, with regard to their configuration and management. You are therefore responsible for ensuring they function correctly.
@@ -25,8 +35,6 @@ If you are configuring your VPS as a DNS server, you can make use of the OVHclou
 ## Instructions
 
 ### Step 1: Retrieving the validation code <a name="retrievecode"></a>
-
-Log in to the [OVHcloud Control Panel](/links/manager), go to the `Bare Metal Cloud`{.action} section and then select your server from **Virtual Private Servers**.
 
 Switch to the tab `Secondary DNS`{.action} and click on the button `Add a domain`{.action}.
 

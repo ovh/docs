@@ -27,11 +27,20 @@ Los planes de hosting de OVHcloud permiten disponer de un espacio de almacenamie
 ## Requisitos
 
 - Tener contratado un plan de [hosting de OVHcloud](/links/web/hosting) con acceso SSH.
-- Conectarse al [área de cliente de OVHcloud](/links/manager), en la sección `WebCloud`{.action}.
-
 > [!warning]
 > 
 > Es posible acceder por SSH a un alojamiento web de OVHcloud desde [el plan Pro](/links/web/hosting-compare).
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [Hosting plans](/links/control-panel/web-hosting)
+- **Ruta de navegación:** `Web Cloud`{.action} > `Alojamientos`{.action} > Seleccione su alojamiento web
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## Procedimiento
 
@@ -44,28 +53,23 @@ Para conectarse y utilizar el acceso SSH de su alojamiento web, necesitará los 
 
 ### 1 - Asegúrese de que el acceso SSH está activo para el usuario SSH elegido <a name="user-ssh-enablement"></a>
 
-Haga clic en las fichas siguientes para ver cada uno de los **4** pasos.
+<!-- CP-STEPS-START:check-ssh-access -->
+Haga clic en las fichas siguientes para ver cada una de las **3** etapas.
 
 > [!tabs]
 > **Etapa 1**
 >>
->> Conéctese a su [área de cliente de OVHcloud](/links/manager) y acceda a la sección `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Etapa 2**
->>
->> Haga clic en el menú `Alojamientos`{.action} y seleccione el alojamiento web correspondiente.
+>> Acceda a la página [Hosting plans](/links/control-panel/web-hosting) y seleccione el alojamiento web correspondiente.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Etapa 3**
+> **Etapa 2**
 >>
 >> En la nueva página, haga clic en la pestaña `FTP - SSH`{.action}. 
 >>
 >> ![FTP-SSH](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh.png){.thumbnail}
 >>
-> **Etapa 4**
+> **Etapa 3**
 >>
 >> En la nueva página, aparecerá la información relativa al espacio de almacenamiento.
 >>
@@ -80,31 +84,27 @@ Haga clic en las fichas siguientes para ver cada uno de los **4** pasos.
 >> - 3: Revise el resumen del cambio solicitado y haga clic en `Aceptar`{.action}.
 >>
 >> > Si no tiene la posibilidad de activarlo, asegúrese de que [su plan de hosting de OVHcloud](/links/web/hosting) dispone de acceso SSH.
+<!-- CP-STEPS-END:check-ssh-access -->
 
 ### 2 - Obtenga la información necesaria para conectarse por SSH <a name="sshlogin"></a>
 
-Haga clic en las fichas siguientes para ver cada uno de los **4** pasos.
+<!-- CP-STEPS-START:retrieve-ssh-login -->
+Haga clic en las fichas siguientes para ver cada una de las **3** etapas.
 
 > [!tabs]
 > **Etapa 1**
 >>
->> Conéctese a su [área de cliente de OVHcloud](/links/manager) y acceda a la sección `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Etapa 2**
->>
->> Haga clic en el menú `Alojamientos`{.action} y seleccione el alojamiento web correspondiente.
+>> Acceda a la página [Hosting plans](/links/control-panel/web-hosting) y seleccione el alojamiento web correspondiente.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Etapa 3**
+> **Etapa 2**
 >>
 >> En la nueva página, haga clic en la pestaña `FTP - SSH`{.action}. 
 >>
 >> ![FTP-SSH](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh.png){.thumbnail}
 >>
-> **Etapa 4**
+> **Etapa 3**
 >>
 >> En la nueva página, descargue los elementos descritos en la siguiente tabla:
 >>
@@ -114,6 +114,7 @@ Haga clic en las fichas siguientes para ver cada uno de los **4** pasos.
 >> |**Puerto de conexión al servidor SSH**| Encontrará la mención `Puerto SSH`. Por defecto, el número de puerto SSH es el `22`.|
 >> |**Usuario SSH activo**| En la tabla de la parte inferior de la página, puede consultarlo en la columna `Usuario`.<br>Le recordamos que este usuario debe [disponer de acceso SSH activo](#user-ssh-enablement).|
 >> |**Contraseña del usuario SSH**| Si ha olvidado la contraseña, haga clic en el botón `...`{.action} situado al final de la línea correspondiente al usuario y seleccione `Cambiar la contraseña`{.action}.|
+<!-- CP-STEPS-END:retrieve-ssh-login -->
 
 ### 3 - Conéctese por SSH al espacio de almacenamiento de su alojamiento web
 

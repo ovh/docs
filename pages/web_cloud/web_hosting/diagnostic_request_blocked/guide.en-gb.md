@@ -31,7 +31,6 @@ If your website displays a “Your request has been blocked” page, this means 
 
 - An [OVHcloud web hosting plan](/links/web/hosting)
 - The login details to access [your web hosting plan’s FTP storage space](/pages/web_cloud/web_hosting/ftp_connection)
-- Access to the [OVHcloud Control Panel](/links/manager)
 
 ## Instructions
 

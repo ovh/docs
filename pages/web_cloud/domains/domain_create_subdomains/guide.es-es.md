@@ -1,7 +1,7 @@
 ---
 title: "¿Cómo crear un subdominio?"
 excerpt: "Descubra cómo crear un subdominio en OVHcloud"
-updated: 2025-10-27
+updated: 2026-02-10
 ---
 
 <style>
@@ -20,9 +20,9 @@ details[open]>summary::before {
 
 ## Objetivo
 
-Al utilizar el dominio, deberá crear y configurar **subdominios**. Los subdominios corresponden al tercer nivel (*Third Level Domain*) de un dominio. El subdominio más conocido por los internautas es, a día de hoy, el subdominio **W**orld **W**ide **W**eb (**www**). En efecto, muchos sitios web todavía utilizan este subdominio para ser consultado en Internet.
+Al utilizar el nombre de dominio, deberá crear y configurar **subdominios**. Los subdominios corresponden al tercer nivel (*Third Level Domain*) de un nombre de dominio. El subdominio más conocido por los internautas es, a día de hoy, el subdominio **W**orld **W**ide **W**eb (**www**). En efecto, muchos sitios web todavía utilizan este subdominio para ser consultado en Internet.
 
-Por ejemplo, *www.ovhcloud.com* es un subdominio del dominio *ovhcloud.com*.
+Por ejemplo, *www.ovhcloud.com* es un subdominio del nombre de dominio *ovhcloud.com*.
 
 Puede crear infinidad de subdominios a partir de un único nombre de dominio.
   
@@ -30,18 +30,28 @@ Puede crear infinidad de subdominios a partir de un único nombre de dominio.
 
 ## Requisitos
 
-- Tener al menos un [dominio](/links/web/domains);
-- Tener una zona DNS activa para el dominio. Si lo necesita, consulte nuestra guía "[Crear una zona DNS en OVHcloud](/pages/web_cloud/domains/dns_zone_create)".
-- Estar conectado a su [área de cliente de OVHcloud](/links/manager);
+- Tener al menos un [nombre de dominio](/links/web/domains);
+- Tener una zona DNS activa para el nombre de dominio. Si lo necesita, consulte nuestra guía "[Crear una zona DNS en OVHcloud](/pages/web_cloud/domains/dns_zone_create)".
 - Disponer de los derechos necesarios sobre todos los servicios afectados. Para más información, consulte nuestra guía [Gestionar los contactos de sus servicios](/pages/account_and_service_management/account_information/managing_contacts).
   
+<!-- CP-NAV-START:web-domains -->
+---
+
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [Dominios](/links/control-panel/web-domains)
+- **Ruta de navegación:** `Web Cloud`{.action} > `Dominios`{.action} > Seleccione su nombre de dominio
+
+---
+<!-- CP-NAV-END:web-domains -->
+
 ## Procedimiento
 
 **Índice**
 
 - [Introducción](#introduction)
 - [¿Cómo crear un subdominio?](#subdomain-creation)
-    - [1 - Identificar la ubicación de la zona DNS activa del dominio](#identification)
+    - [1 - Identificar la ubicación de la zona DNS activa del nombre de dominio](#identification)
     - [2 - Crear los registros DNS para sus subdominios](#dns-records-creation)
 - [Asociar, autorizar y configurar su subdominio con un servicio de OVHcloud](#link-subdomain)
     - [Caso 1: Ver un sitio web en mi alojamiento web de OVHcloud con un subdominio](#link-subdomain-case-1)
@@ -54,7 +64,7 @@ Puede crear infinidad de subdominios a partir de un único nombre de dominio.
 
 **Haga clic en las dos preguntas siguientes para ver las explicaciones.**
 
-/// details | ¿Cuál es la composición de un dominio?
+/// details | ¿Cuál es la composición de un nombre de dominio?
 
 Un **nombre de dominio** se compone de niveles. Estos niveles suelen estar separados por un `.` (a excepción de algunas **extensiones** del *primer nivel* como *.co.uk*, *.gouv.fr* o *.notaires.fr*):
 
@@ -75,21 +85,21 @@ Un **nombre de dominio** se compone de niveles. Estos niveles suelen estar separ
 
 /// details | ¿Qué es un subdominio?
 
-Un [dominio](/links/web/domains) puede asociarse a varios tipos de servicios (correo electrónico, sitio web, etc.).
+Un [nombre de dominio](/links/web/domains) puede asociarse a varios tipos de servicios (correo electrónico, sitio web, etc.).
 
-No obstante, un dominio solo puede asociarse a un sitio web cada vez.
+No obstante, un nombre de dominio solo puede asociarse a un sitio web cada vez.
 
 Sin embargo, algunos usuarios u organizaciones necesitan segmentar sus sitios web o servicios de correo electrónico y mantener el mismo nombre de dominio.
 
-Los subdominios (a veces denominados **prefijos**) responden a la necesidad de segmentar un dominio. Ofrecen al propietario la posibilidad de clasificar los servicios web asociados a su dominio en subcategorías, sin tener que suscribirse a un nuevo dominio.
+Los subdominios (a veces denominados **prefijos**) responden a la necesidad de segmentar un nombre de dominio. Ofrecen al titular la posibilidad de clasificar los servicios web asociados a su nombre de dominio en subcategorías, sin tener que suscribirse a un nuevo nombre de dominio.
 
 En otras palabras, los subdominios permiten estructurar fácilmente el conjunto de servicios web (servidores DNS, sitio web, intranet, e-mail, etc.) asociados al mismo nombre de dominio.
 
-Como ya hemos indicado, los subdominios corresponden al tercer nivel (*Third Level Domain*) de un dominio. El subdominio más conocido por los internautas es, a día de hoy, el subdominio **W**orld **W**ide **W**eb (**www**). En efecto, muchos sitios web todavía utilizan este subdominio para ser consultado en Internet.
+Como ya hemos indicado, los subdominios corresponden al tercer nivel (*Third Level Domain*) de un nombre de dominio. El subdominio más conocido por los internautas es, a día de hoy, el subdominio **W**orld **W**ide **W**eb (**www**). En efecto, muchos sitios web todavía utilizan este subdominio para ser consultado en Internet.
 
-*www.ovhcloud.com* es un subdominio del dominio *ovhcloud.com*.
+*www.ovhcloud.com* es un subdominio del nombre de dominio *ovhcloud.com*.
 
-Por ejemplo, si tiene el dominio *example.com*, puede crear los siguientes subdominios:
+Por ejemplo, si tiene el nombre de dominio *example.com*, puede crear los siguientes subdominios:
 
 - *dns1.example.com* y *dns2.example.com* para personalizar sus servidores DNS utilizando los [Glue Records](/pages/web_cloud/domains/glue_registry);
 - *www.example.com* para mostrar su sitio web;
@@ -107,41 +117,41 @@ Más allá del tercer nivel de dominio, se considera que se trata también de **
 
 ### ¿Cómo crear un subdominio? <a name="subdomain-creation"></a>
 
-Los [dominios](/links/web/domains) necesitan una **zona DNS** para funcionar. La zona DNS se compone de informaciones técnicas, llamadas *registros DNS*. Es como un centro de cambio de agujas.
+Los [nombres de dominio](/links/web/domains) necesitan una **zona DNS** para funcionar. La zona DNS se compone de informaciones técnicas, llamadas *registros DNS*. Es como un centro de cambio de agujas.
 
 Para más información sobre las zonas DNS, consulte nuestra guía "[Crear una zona DNS de OVHcloud](/pages/web_cloud/domains/dns_zone_create) " y "[Editar una zona DNS de OVHcloud](/pages/web_cloud/domains/dns_zone_edit) ".
 
-**Todos los subdominios se configuran en la zona DNS activa del dominio. Añadiendo registros DNS**
+**Todos los subdominios se configuran en la zona DNS activa del nombre de dominio. Añadiendo registros DNS**
 
-#### 1 - Identificar la ubicación de la zona DNS activa del dominio <a name="identification"></a>
+#### 1 - Identificar la ubicación de la zona DNS activa del nombre de dominio <a name="identification"></a>
 
 Existen dos situaciones posibles:
 
-- La zona DNS activa de su dominio está presente en OVHcloud;
-- La zona DNS activa de su dominio está alojada en otro proveedor.
+- La zona DNS activa de su nombre de dominio está presente en OVHcloud;
+- La zona DNS activa de su nombre de dominio está alojada en otro proveedor.
 
 > [!warning]
 >
-> La zona DNS activa de su dominio no está obligatoriamente gestionada con el mismo proveedor que su dominio.
+> La zona DNS activa de su nombre de dominio no está obligatoriamente gestionada con el mismo proveedor que su nombre de dominio.
 >
-> 1: Para identificar la zona DNS activa de un dominio registrado en OVHcloud, consulte nuestra guía "[Cambiar los servidores DNS de un dominio en OVHcloud](/pages/web_cloud/domains/dns_server_edit)".
+> 1: Para identificar la zona DNS activa de un nombre de dominio registrado en OVHcloud, consulte nuestra guía "[Cambiar los servidores DNS de un nombre de dominio en OVHcloud](/pages/web_cloud/domains/dns_server_edit)".
 >
-> 2: Si su dominio no está registrado con OVHcloud, contacte con el actual agente registrador* para conocer el lugar en el que está alojada su zona DNS activa. Puede consultar nuestra guía "[Transferir un dominio a OVHcloud](/pages/web_cloud/domains/transfer_incoming_generic_domain)" si desea realizar esta acción.
+> 2: Si su nombre de dominio no está registrado con OVHcloud, contacte con el actual agente registrador* para conocer el lugar en el que está alojada su zona DNS activa. Puede consultar nuestra guía "[Transferir un nombre de dominio a OVHcloud](/pages/web_cloud/domains/transfer_incoming_generic_domain)" si desea realizar esta acción.
 >
 
-Si los servidores DNS declarados para el dominio tienen una de las dos formas siguientes:
+Si los servidores DNS declarados para el nombre de dominio tienen una de las dos formas siguientes:
 
 - `dnsXX.ovh.net` y `nsXX.ovh.net` (donde cada una de las "X" representa una cifra);
 - `dnsXX.ovh.ca` y `nsXX.ovh.ca` (donde cada una de las "X" representa una cifra);
 - `dns200.anycast.me` y `ns200.anycast.me`.
 
-Esto significa que la zona DNS activa de su dominio está activada en OVHcloud.
+Esto significa que la zona DNS activa de su nombre de dominio está activada en OVHcloud.
 
-En caso contrario, póngase en contacto con su proveedor DNS para crear subdominios con su dominio.
+En caso contrario, póngase en contacto con su proveedor DNS para crear subdominios con su nombre de dominio.
 
 #### 2 - Crear los registros DNS para sus subdominios <a name="dns-records-creation"></a>
 
-Para añadir sus subdominios a la zona DNS activa de su dominio, consulte nuestra guía "[Editar una zona DNS de OVHcloud](/pages/web_cloud/domains/dns_zone_edit) ".
+Para añadir sus subdominios a la zona DNS activa de su nombre de dominio, consulte nuestra guía "[Editar una zona DNS de OVHcloud](/pages/web_cloud/domains/dns_zone_edit) ".
 
 Por ejemplo, puede añadir:
 
@@ -151,9 +161,9 @@ Por ejemplo, puede añadir:
 
 > [!primary]
 >
-> La modificación de una zona DNS asociada a un dominio conlleva un retraso de propagación de **4** a **24** horas como máximo para que sea efectiva.
+> La modificación de una zona DNS asociada a un nombre de dominio conlleva un retraso de propagación de **4** a **24** horas como máximo para que sea efectiva.
 >
-> Además, como en el caso de un dominio en sí mismo, la creación de un registro DNS para un subdominio por sí sola no suele ser suficiente para que funcione con el servicio "destino" que le haya indicado en el registro DNS. 
+> Además, como en el caso de un nombre de dominio en sí mismo, la creación de un registro DNS para un subdominio por sí sola no suele ser suficiente para que funcione con el servicio "destino" que le haya indicado en el registro DNS. 
 >
 > Efectivamente, por motivos de seguridad, también deberá autorizar al subdominio a acceder al servicio "destino" (alojamiento web, correo, etc.).
 >
@@ -167,22 +177,22 @@ En la siguiente sección, explicamos cómo autorizar a un subdominio a que acced
 
 ### Asociar, autorizar y configurar su subdominio con un servicio de OVHcloud <a name="link-subdomain"></a>
 
-Con un subdominio se pueden utilizar varios servicios del universo "Web Cloud". Los procedimientos de asociación son similares a los que debería realizar con un dominio. Vamos a exponer solo los casos más comunes.
+Con un subdominio se pueden utilizar varios servicios del universo "Web Cloud". Los procedimientos de asociación son similares a los que debería realizar con un nombre de dominio. Vamos a exponer solo los casos más comunes.
 
-Para los servicios que no se mencionan, consulte la documentación relativa al servicio en cuestión. para identificar si el dominio puede utilizarse con un subdominio.
+Para los servicios que no se mencionan, consulte la documentación relativa al servicio en cuestión. para identificar si el nombre de dominio puede utilizarse con un subdominio.
 
 #### Caso 1: Ver un sitio web en mi alojamiento web de OVHcloud con un subdominio <a name="link-subdomain-case-1"></a>
 
-Al igual que para un dominio y para autorizar a un subdominio a mostrar el contenido de una carpeta "destino" presente en un alojamiento web, conéctese a su [área de cliente de OVHcloud](/links/manager) y seleccione `Web Cloud`{.action}. En la columna izquierda, haga clic en `Alojamientos`{.action}, seleccione el alojamiento correspondiente y abra la pestaña `Multisitio`{.action}.
+Al igual que para un nombre de dominio y para autorizar a un subdominio a mostrar el contenido de una carpeta "destino" presente en un alojamiento web, conéctese a su [área de cliente de OVHcloud](/links/manager) y seleccione `Web Cloud`{.action}. En la columna izquierda, haga clic en `Alojamientos`{.action}, seleccione el alojamiento correspondiente y abra la pestaña `Multisitio`{.action}.
 
 Aquí es donde autoriza el acceso de su subdominio al alojamiento web en el que se encuentra su sitio web.
 
-Para más información sobre la configuración de un dominio o subdominio en un alojamiento web, consulte nuestra guía "[Alojar varios sitios web en un mismo hosting](/pages/web_cloud/web_hosting/multisites_configure_multisite)". El procedimiento es el mismo para un dominio o subdominio.
+Para más información sobre la configuración de un nombre de dominio o subdominio en un alojamiento web, consulte nuestra guía "[Alojar varios sitios web en un mismo hosting](/pages/web_cloud/web_hosting/multisites_configure_multisite)". El procedimiento es el mismo para un nombre de dominio o subdominio.
 
 > [!warning]
 >
 > La adición de un nombre de dominio o subdominio en uno de los sitios web de su alojamiento web puede requerir la configuración de un **token de validación**.
-> Para un subdominio, este mismo token no se tiene en cuenta y debe añadirse no para el subdominio sino para el nombre de dominio. En este caso, añada el token como un registro DNS de tipo TXT para el dominio en la zona DNS activa del dominio.
+> Para un subdominio, este mismo token no se tiene en cuenta y debe añadirse no para el subdominio sino para el nombre de dominio. En este caso, añada el token como un registro DNS de tipo TXT para el nombre de dominio en la zona DNS activa del nombre de dominio.
 
 #### Caso 2 - Crear direcciones de correo Exchange con un subdominio <a name="link-subdomain-case-2"></a>
 
@@ -214,7 +224,7 @@ Para más información sobre la configuración de una plataforma Email Pro, cons
 
 [Editar una zona DNS de OVHcloud](/pages/web_cloud/domains/dns_zone_edit)
 
-[Modificar los servidores DNS de un dominio de OVHcloud](/pages/web_cloud/domains/dns_server_edit)
+[Modificar los servidores DNS de un nombre de dominio de OVHcloud](/pages/web_cloud/domains/dns_server_edit)
 
 [Alojar varios sitios web en un mismo hosting](/pages/web_cloud/web_hosting/multisites_configure_multisite)
 
@@ -222,9 +232,9 @@ Para más información sobre la configuración de una plataforma Email Pro, cons
 
 [Primeros pasos con la solución Email Pro](/pages/web_cloud/email_and_collaborative_solutions/email_pro/first_config)
 
-[Añadir un dominio a una plataforma de correo](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_adding_domain)
+[Añadir un nombre de dominio a una plataforma de correo](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_adding_domain)
 
-[Añadir un registro CNAME para validar su dominio en su solución de correo](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_dns_cname)
+[Añadir un registro CNAME para validar su nombre de dominio en su solución de correo](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_dns_cname)
 
 Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](/links/partner).
 

@@ -1,6 +1,6 @@
 ---
-title: High Grade Dedicated Servers - Upgrading your SSD SAS Western Digital SS300 firmware
-excerpt: Learn how to upgrade your SSD SAS Western Digital SS300 firmware for Linux, ESXi and Windows Dedicated Servers
+title: "Upgrade WD SS300 SSD Firmware on a Dedicated Server"
+excerpt: "Upgrade the Western Digital SS300 SAS SSD firmware on your Linux, ESXi, or Windows dedicated server."
 updated: 2024-03-26
 ---
 
@@ -705,6 +705,10 @@ Firmware Revision = B17D
 
 
 ## Go further <a name="gofurther"></a>
+
+[Upgrading WD SS530 SSD Firmware on a Dedicated Server](/pages/bare_metal_cloud/dedicated_servers/wdc-sas-ss530-fw-upgrade)
+
+[Upgrading Samsung NVMe PM9A1 Firmware on Dedicated Servers](/pages/bare_metal_cloud/dedicated_servers/samsung-nvme-fw-upgrade)
 
 If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for a custom analysis of your project.
 

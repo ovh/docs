@@ -17,8 +17,17 @@ Handling SSL termination on the Load Balancer reduces the computational load on 
 ## Requirements
 
 - You must have an [OVHcloud Load balancer](/links/network/load-balancer) in your OVHcloud account.
-- You must be logged in to the [OVHcloud Control Panel](/links/manager).
 
+<!-- CP-NAV-START:network-load-balancer -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Load Balancer](/links/control-panel/network-load-balancer)
+- **Navigation path:** `Network`{.action} > `Load Balancer`{.action} > Select your service
+
+---
+<!-- CP-NAV-END:network-load-balancer -->
 ## Instructions
 
 ### Via the OVHcloud Control Panel
@@ -26,8 +35,6 @@ Handling SSL termination on the Load Balancer reduces the computational load on 
 #### Configure the frontend for SSL termination
 
 To enable SSL termination, you must first configure your frontend.
-
-You can configure your SSL termination from the [OVHcloud Control Panel](/links/manager) in the `Bare Metal Cloud`{.action} section, then `Load Balancer`{.action}.
 
 After selecting the Load Balancer you wish to modify, create a new frontend or edit an existing one.
 

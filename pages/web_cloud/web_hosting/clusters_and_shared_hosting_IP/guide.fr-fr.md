@@ -1,8 +1,22 @@
 ---
 title: "Hébergement web - Liste des adresses IP par cluster"
 excerpt: "Découvrez l'ensemble des adresses IP disponibles avec nos hébergements web"
-updated: 2026-01-07
+updated: 2026-02-23
 ---
+
+<style>
+details>summary {
+    color:rgb(33, 153, 232) !important;
+    cursor: pointer;
+}
+details>summary::before {
+    content:'\25B6';
+    padding-right:1ch;
+}
+details[open]>summary::before {
+    content:'\25BC';
+}
+</style>
 
 ## Objectif
 
@@ -22,33 +36,41 @@ Retrouvez dans ce guide toutes les adresses IP des hébergements web OVHcloud. C
 
 ## Prérequis
 
-- Être connecté à votre [espace client OVHcloud](/links/manager).
 - Posséder une [offre d'hébergement web](/links/web/hosting).
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Hébergements](/links/control-panel/web-hosting)
+- **Pour accéder à vos services :** `Web Cloud`{.action} > `Hébergements`{.action} > Sélectionnez votre hébergement web
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## En pratique
 
-Pour connaître le cluster d'hébergement web sur lequel se trouve votre service, cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3** étapes :
+<!-- CP-STEPS-START:instructions-find-cluster -->
+Pour connaître le cluster d'hébergement web sur lequel se trouve votre service, cliquez sur les onglets ci-dessous pour afficher successivement chacune des **2** étapes.
 
 > [!tabs]
 > **Étape 1**
 >>
->> Connectez-vous à votre [espace client OVHcloud](/links/manager), puis rendez-vous dans la partie `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Étape 2**
->>
->> Cliquez sur le menu `Hébergements`{.action}, puis choisissez l'hébergement web concerné.
+>> Accédez à la page [Hébergements](/links/control-panel/web-hosting), puis choisissez l'hébergement web concerné.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Étape 3**
+> **Étape 2**
 >>
 >> Dans l'encadré **Informations générales** de la page qui s'affiche, récupérez le numéro du cluster sous la mention **Cluster** (3 chiffres compris entre `0` et `9`).
 >>
 >> ![Numéros du cluster et du filer](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-cluster-and-filer.png){.thumbnail}
+<!-- CP-STEPS-END:instructions-find-cluster -->
 
-### Cluster 024
+**Cliquez ci-dessous sur le numéro du cluster où se trouve votre hébergement web pour afficher les adresses IP correspondantes.**
+
+/// details | Cluster 024
 
 Retrouvez les adresses IP du **cluster** par pays (pour la géolocalisation) :
 
@@ -80,27 +102,9 @@ Si vous avez besoin de l'adresse IP de la **passerelle de sortie** de votre héb
 91.134.248.230
 ```
 
-### Cluster 051
+///
 
-Retrouvez les adresses IP du **cluster** par pays (pour la géolocalisation) :
-
-|Pays|Code Pays|IPv4|IPv6|
-|---|---|----|---|
-|Canada|CA|51.161.122.78|2607:5300:202:0:0::51|
-
-Si le **Shared CDN** est activé sur votre hébergement, vous devez utiliser cette adresse IP :
-
-```bash
-46.105.204.51
-```
-
-Si vous avez besoin de l'adresse IP de la **passerelle de sortie** de votre hébergement (gateway), vous devez utiliser cette adresse IP :
-
-```bash
-51.161.94.36
-```
-
-### Cluster 100
+/// details | Cluster 100
 
 Retrouvez les adresses IP du **cluster** par pays (pour la géolocalisation) :
 
@@ -132,7 +136,9 @@ Si vous avez besoin de l'adresse IP de la **passerelle de sortie** de votre héb
 54.36.142.130
 ```
 
-### Cluster 102
+///
+
+/// details | Cluster 102
 
 Retrouvez les adresses IP du **cluster** par pays (pour la géolocalisation) :
 
@@ -163,7 +169,9 @@ Si vous avez besoin de l'adresse IP de la **passerelle de sortie** de votre héb
 5.39.29.130
 ```
 
-### Cluster 103
+///
+
+/// details | Cluster 103
 
 Retrouvez les adresses IP du **cluster** par pays (pour la géolocalisation) :
 
@@ -194,7 +202,9 @@ Si vous avez besoin de l'adresse IP de la **passerelle de sortie** de votre héb
 5.135.52.162
 ```
 
-### Cluster 105
+///
+
+/// details | Cluster 105
 
 Retrouvez les adresses IP du **cluster** par pays (pour la géolocalisation) :
 
@@ -225,7 +235,9 @@ Si vous avez besoin de l'adresse IP de la **passerelle de sortie** de votre héb
 5.135.37.162
 ```
 
-### Cluster 106
+///
+
+/// details | Cluster 106
 
 Retrouvez les adresses IP du **cluster** par pays (pour la géolocalisation) :
 
@@ -256,7 +268,9 @@ Si vous avez besoin de l'adresse IP de la **passerelle de sortie** de votre héb
 5.135.47.98
 ```
 
-### Cluster 107
+///
+
+/// details | Cluster 107
 
 Retrouvez les adresses IP du **cluster** par pays (pour la géolocalisation) :
 
@@ -287,7 +301,9 @@ Si vous avez besoin de l'adresse IP de la **passerelle de sortie** de votre héb
 5.135.52.18
 ```
 
-### Cluster 110
+///
+
+/// details | Cluster 110
 
 Retrouvez les adresses IP du **cluster** par pays (pour la géolocalisation) :
 
@@ -318,7 +334,9 @@ Si vous avez besoin de l'adresse IP de la **passerelle de sortie** de votre héb
 5.135.39.194
 ```
 
-### Cluster 111
+///
+
+/// details | Cluster 111
 
 Retrouvez les adresses IP du **cluster** par pays (pour la géolocalisation) :
 
@@ -349,7 +367,9 @@ Si vous avez besoin de l'adresse IP de la **passerelle de sortie** de votre héb
 5.135.38.50
 ```
 
-### Cluster 112
+///
+
+/// details | Cluster 112
 
 Retrouvez les adresses IP du **cluster** par pays (pour la géolocalisation) :
 
@@ -380,7 +400,9 @@ Si vous avez besoin de l'adresse IP de la **passerelle de sortie** de votre héb
 5.39.53.162
 ```
 
-### Cluster 113
+///
+
+/// details | Cluster 113
 
 Retrouvez les adresses IP du **cluster** par pays (pour la géolocalisation) :
 
@@ -411,7 +433,9 @@ Si vous avez besoin de l'adresse IP de la **passerelle de sortie** de votre héb
 5.135.39.18
 ```
 
-### Cluster 114
+///
+
+/// details | Cluster 114
 
 Retrouvez les adresses IP du **cluster** par pays (pour la géolocalisation) :
 
@@ -442,7 +466,9 @@ Si vous avez besoin de l'adresse IP de la **passerelle de sortie** de votre héb
 5.135.42.162
 ```
 
-### Cluster 115
+///
+
+/// details | Cluster 115
 
 Retrouvez les adresses IP du **cluster** par pays (pour la géolocalisation) :
 
@@ -473,7 +499,9 @@ Si vous avez besoin de l'adresse IP de la **passerelle de sortie** de votre héb
 5.135.41.162
 ```
 
-### Cluster 117
+///
+
+/// details | Cluster 117
 
 Retrouvez les adresses IP du **cluster** par pays (pour la géolocalisation) :
 
@@ -504,7 +532,9 @@ Si vous avez besoin de l'adresse IP de la **passerelle de sortie** de votre héb
 5.135.50.34
 ```
 
-### Cluster 120
+///
+
+/// details | Cluster 120
 
 Retrouvez les adresses IP du **cluster** par pays (pour la géolocalisation) :
 
@@ -536,7 +566,9 @@ Si vous avez besoin de l'adresse IP de la **passerelle de sortie** de votre héb
 5.135.48.162
 ```
 
-### Cluster 121
+///
+
+/// details | Cluster 121
 
 Retrouvez les adresses IP du **cluster** par pays (pour la géolocalisation) :
 
@@ -568,7 +600,9 @@ Si vous avez besoin de l'adresse IP de la **passerelle de sortie** de votre héb
 5.135.48.114
 ```
 
-### Cluster 123
+///
+
+/// details | Cluster 123
 
 Retrouvez les adresses IP du **cluster** par pays (pour la géolocalisation) :
 
@@ -600,7 +634,9 @@ Si vous avez besoin de l'adresse IP de la **passerelle de sortie** de votre héb
 5.135.41.82
 ```
 
-### Cluster 126
+///
+
+/// details | Cluster 126
 
 Retrouvez les adresses IP du **cluster** par pays (pour la géolocalisation) :
 
@@ -632,7 +668,9 @@ Si vous avez besoin de l'adresse IP de la **passerelle de sortie** de votre héb
 5.135.42.226
 ```
 
-### Cluster 127
+///
+
+/// details | Cluster 127
 
 Retrouvez les adresses IP du **cluster** par pays (pour la géolocalisation) :
 
@@ -664,7 +702,9 @@ Si vous avez besoin de l'adresse IP de la **passerelle de sortie** de votre héb
 5.135.54.114
 ```
 
-### Cluster 128
+///
+
+/// details | Cluster 128
 
 Retrouvez les adresses IP du **cluster** par pays (pour la géolocalisation) :
 
@@ -696,7 +736,9 @@ Si vous avez besoin de l'adresse IP de la **passerelle de sortie** de votre héb
 5.135.37.210
 ```
 
-### Cluster 129
+///
+
+/// details | Cluster 129
 
 Retrouvez les adresses IP du **cluster** par pays (pour la géolocalisation) :
 
@@ -728,7 +770,9 @@ Si vous avez besoin de l'adresse IP de la **passerelle de sortie** de votre héb
 5.135.48.82
 ```
 
-### Cluster 130
+///
+
+/// details | Cluster 130
 
 Retrouvez les adresses IP du **cluster** par pays (pour la géolocalisation) :
 
@@ -760,7 +804,9 @@ Si vous avez besoin de l'adresse IP de la **passerelle de sortie** de votre héb
 5.135.43.82
 ```
 
-### Cluster 131
+///
+
+/// details | Cluster 131
 
 Retrouvez les adresses IP du **cluster** par pays (pour la géolocalisation) :
 
@@ -792,7 +838,9 @@ Si vous avez besoin de l'adresse IP de la **passerelle de sortie** de votre héb
 5.135.42.194
 ```
 
-### Cluster 151
+///
+
+/// details | Cluster 151
 
 Retrouvez les adresses IP du **cluster** par pays (pour la géolocalisation) :
 
@@ -811,6 +859,8 @@ Si vous avez besoin de l'adresse IP de la **passerelle de sortie** de votre héb
 ```bash
 15.235.26.178
 ```
+
+///
 
 ## Aller plus loin
 

@@ -12,23 +12,30 @@ When you created your OVHcloud account, you specified a contact email address. I
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](/links/manager)
+<!-- CP-NAV-START:account-messages -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [My messages](/links/control-panel/account-messages)
+- **Navigation path:** Click your name in the top right > `My messages`{.action}
+
+---
+<!-- CP-NAV-END:account-messages -->
 
 ## Instructions
 
-To access the communication management page for your OVHcloud customer account:
-
-1. Log in to your [OVHcloud Control Panel](/links/manager).
-1. Click on your name in the top right corner, then click on `My messages`{.action}.
-
 ### My messages
 
+<!-- CP-STEPS-START:my-messages -->
 From the `My messages`{.action} tab, you can view all messages that have been sent to your contact email address. In the top right corner of the table, you can activate a filter to sort your messages by priority, date, and category.
 
 ![my messages](images/messages-01.png){.thumbnail .w-600}
+<!-- CP-STEPS-END:my-messages -->
 
 ### Contacts
 
+<!-- CP-STEPS-START:contacts -->
 From the `Contacts`{.action} tab, you can find the reference email address of the OVHcloud account, which cannot be removed or modified from the customer account.
 
 > [!primary]
@@ -45,9 +52,11 @@ In addition to your default contact, you can add new contact email addresses to 
     - `Delete`{.action}: Allows you to delete this contact.
 
 ![my messages](images/contacts-01.png){.thumbnail .w-600}
+<!-- CP-STEPS-END:contacts -->
 
 ### Delivery settings
 
+<!-- CP-STEPS-START:delivery-settings -->
 From the `Delivery settings`{.action} tab, you can create rules to organize the delivery of messages to your contact email addresses.
 
 - **(1)**: Click on the `Create a rule`{.action} button to define which contacts will receive the messages, based on the categories and priority levels you select.
@@ -70,6 +79,7 @@ You can also create a rule that includes multiple conditions that will be applie
 By default, if a condition applies, the process stops. If you want the process to continue applying the following conditions, enable the `And continue the processing of rules`{.action} **(2)** button under the rule you have configured.
 
 ![my messages](images/rules-02.png){.thumbnail .w-600}
+<!-- CP-STEPS-END:delivery-settings -->
 
 ## Go further
 

@@ -15,8 +15,18 @@ En tant que membre du Startup Program d'OVHcloud, vous disposez de crédits pour
 - Votre candidature au Startup Program doit avoir été validée et votre contrat signé. Retrouvez plus d'informations dans nos guides :
     - [Comment optimiser votre candidature au Startup Program](/pages/account_and_service_management/startup-program/01-optimise-application)
     - [Comment signer votre contrat du Startup Program](/pages/account_and_service_management/startup-program/02-sign-agreement)
-- Être connecté à votre [espace client OVHcloud](/links/manager).
 - Connaître le [solde de vos crédits du Startup Program](/pages/account_and_service_management/startup-program/04-view-credits).
+
+<!-- CP-NAV-START:billing-invoices -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Mes factures](/links/control-panel/billing-invoices)
+- **Pour y accéder :** Cliquez sur votre nom en haut à droite > `Mes factures`{.action}
+
+---
+<!-- CP-NAV-END:billing-invoices -->
 
 ## Points clés
 

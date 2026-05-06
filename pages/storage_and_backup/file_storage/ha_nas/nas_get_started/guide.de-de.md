@@ -16,13 +16,20 @@ Ein NAS (Network Attached Storage) ist ein Dateiserver, der mit einem Netzwerk v
 
 - Sie verfügen über eine IP-Adresse, die an einen OVHcloud Dienst angebunden ist (Hosted Private Cloud, Dedicated Server, VPS, Public Cloud Instanz, etc.).
 - Sie haben ein [OVHcloud HA-NAS](/links/storage/nas-ha) in Ihrem Kunden-Account.
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
+<!-- CP-NAV-START:storage-nas-ha -->
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direkter Link:** [NAS-HA](/links/control-panel/storage-nas-ha)
+- **Navigationspfad:** `Bare Metal Cloud`{.action} > `HA-NAS`{.action} > Wählen Sie Ihr NAS-HA aus
+
+---
+<!-- CP-NAV-END:storage-nas-ha -->
 
 ## In der praktischen Anwendung
 
-Die Verwaltung Ihres HA-NAS erfolgt über das [OVHcloud Kundencenter](/links/manager).
-
-Klicken Sie nach dem Login auf `Bare Metal Cloud`{.action} und dann im linken Menü auf `NAS und CDN`{.action}. Klicken Sie auf Ihre Dienstleistung, um Zugriff auf das Verwaltungsinterface zu erhalten.
+Klicken Sie auf Ihre Dienstleistung, um Zugriff auf das Verwaltungsinterface zu erhalten.
 
 ![Zugang zum NAS](images/nas2021-01.png){.thumbnail}
 

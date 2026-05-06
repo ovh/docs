@@ -1,6 +1,6 @@
 ---
-title: "Come reimpostare la password amministratore con Rescue-Customer-Windows"
-excerpt: "Come reimpostare la password amministratore con Rescue-Customer-Windows"
+title: "Reimpostare la password Windows su un server dedicato"
+excerpt: "Reimposta la password amministratore Windows su un server dedicato tramite il sistema rescue Windows OVHcloud"
 updated: 2025-10-22
 ---
 
@@ -12,7 +12,17 @@ Questa guida ti mostra come ripristinare la password `Administrator` con **Windo
 
 - Microsoft Windows Server 2016 o versione successiva installata sul tuo [server dedicato](/links/bare-metal/bare-metal)
 - Almeno 16 GB di RAM installati sul server
-- Accesso allo [Spazio Cliente OVHcloud](/links/manager)
+
+<!-- CP-NAV-START:baremetal-dedicated-servers -->
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [Server dedicati](/links/control-panel/baremetal-dedicated-servers)
+- **Percorso di navigazione:** `Bare Metal Cloud`{.action} > `Server dedicati`{.action} > Seleziona il tuo server
+
+---
+<!-- CP-NAV-END:baremetal-dedicated-servers -->
 
 > [!warning]
 >

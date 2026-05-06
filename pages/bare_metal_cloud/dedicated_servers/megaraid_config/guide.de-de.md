@@ -1,6 +1,6 @@
 ---
-title: MegaRAID mit RAID 0 konfigurieren
-excerpt: "Erfahren Sie hier, wie Sie RAID 0 einrichten, um den gesamten Speicherplatz Ihres Servers zu verwenden"
+title: "Dedicated Server - MegaRAID für RAID 0 konfigurieren"
+excerpt: "Konfigurieren Sie RAID 0 mit dem MegaRAID Controller, um die volle Festplattenkapazität Ihres OVHcloud Dedicated Servers zu nutzen."
 updated: 2025-04-29
 ---
 
@@ -27,11 +27,20 @@ Der Standard-RAID-Level der OVHcloud Server ist RAID 1. Dieser verdoppelt das Vo
 - Sie haben einen [Dedicated Server](/links/bare-metal/bare-metal) mit Hardware-RAID.
 - Sie haben administrativen Zugriff (sudo) auf Ihren Server über SSH
 
+<!-- CP-NAV-START:baremetal-dedicated-servers -->
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direkter Link:** [Dedicated Server](/links/control-panel/baremetal-dedicated-servers)
+- **Navigationspfad:** `Bare Metal Cloud`{.action} > `Dedicated Server`{.action} > Wählen Sie Ihren Server aus
+
+---
+<!-- CP-NAV-END:baremetal-dedicated-servers -->
+
 ## In der praktischen Anwendung
 
 ### Ihr OVHcloud Kundencenter verwenden
-
-Wählen Sie in Ihrem [OVHcloud Kundencenter](/links/manager) Ihren Server aus, indem Sie `Dedicated Server`{.action} im Bereich `Bare Metal Cloud`{.action} öffnen.
 
 Klicken Sie im Tab `Allgemeine Informationen`{.action} auf `...`{.action} neben `System (OS)` und danach auf `Installieren`{.action}.
 
@@ -39,19 +48,19 @@ Wählen Sie das gewünschte Betriebssystem aus und klicken Sie auf `Weiter`{.act
 
 Setzen Sie einen Haken bei **Hardware-RAID-Konfiguration anpassen** und **Konfiguration der Partitionen anpassen** und klicken Sie auf `Weiter`{.action}.
 
-![MegaRAID](images/server_installation_raid0_2.png){.thumbnail}
+![Kontrollkästchen für Hardware-RAID und Partitionen anpassen](images/server_installation_raid0_2.png){.thumbnail}
 
 Wählen Sie `raid0` aus der Drop-down-Liste aus und klicken Sie auf `Weiter`{.action}.
 
-![MegaRAID](images/server_installation_raid0_3.png){.thumbnail}
+![RAID 0 aus der RAID-Level-Dropdown-Liste auswählen](images/server_installation_raid0_3.png){.thumbnail}
 
 Konfigurieren Sie die Partitionen nach Bedarf und klicken Sie dann auf `Weiter`{.action}.
 
-![MegaRAID](images/server_installation_raid0_4.png){.thumbnail}
+![Festplattenpartitionen für die Installation konfigurieren](images/server_installation_raid0_4.png){.thumbnail}
 
 Klicken Sie schließlich auf `Bestätigen`{.action}.
 
-![MegaRAID](images/server_installation_raid0_5.png){.thumbnail}
+![RAID 0 Installationseinstellungen bestätigen](images/server_installation_raid0_5.png){.thumbnail}
 
 Überprüfen Sie nach der Konfiguration Ihres Servers die Größe der Partitionen, indem Sie sich via SSH mit diesem verbinden und folgenden Befehl ausführen:
 
@@ -61,27 +70,25 @@ df -h
 
 ### Rescue-Modus verwenden
 
-Wählen Sie in Ihrem [OVHcloud Kundencenter](/links/manager) Ihren Server aus, indem Sie `Dedicated Server`{.action} im Bereich `Bare Metal Cloud`{.action} öffnen.
-
 Klicken Sie im Bereich **Allgemeine Informationen** auf `...`{.action} neben `Boot`. Wählen Sie dann `Bearbeiten`{.action}, um den Startmodus zu ändern.
 
-![MegaRAID](images/rescue_mode_raid0_1.png){.thumbnail}
+![Boot-Einstellung im Tab "Allgemeine Informationen" bearbeiten](images/rescue_mode_raid0_1.png){.thumbnail}
 
 Klicken Sie auf `Im Rescue-Modus booten`{.action} und wählen Sie `rescue-customer`{.action} aus.
 
 Geben Sie eine alternative E-Mail-Adresse an, wenn Sie *nicht* möchten, dass die Login-Daten an die Hauptadresse Ihres OVHcloud Kunden-Accounts gesendet werden.
 
-![MegaRAID](images/rescue_mode_raid0_2.png){.thumbnail}
+![Boot im Rescue-Modus mit Option rescue-customer auswählen](images/rescue_mode_raid0_2.png){.thumbnail}
 
 Klicken Sie auf `Weiter`{.action} um fortzufahren, und dann auf `Bestätigen`{.action}.
 
-![MegaRAID](images/rescue_mode_raid0_3.png){.thumbnail}
+![Bestätigungsschritt für den Rescue-Modus](images/rescue_mode_raid0_3.png){.thumbnail}
 
 Wenn die Änderung abgeschlossen ist, klicken Sie auf `...`{.action} rechts neben `Status` im Bereich **Dienststatus**.
 
 Wählen Sie `Neu starten`{.action} aus, um den Server im Rescue-Modus zu starten. Die Durchführung dieser Operation kann einige Minuten dauern. 
 
-![MegaRAID](images/server_installation_raid0_6.png){.thumbnail}
+![Server im Bereich "Dienststatus" neu starten](images/server_installation_raid0_6.png){.thumbnail}
 
 Sobald Ihr Server neu gestartet wurde, loggen Sie sich via SSH unter Verwendung Ihrer Zugangsdaten zum Rescue-Modus ein. Diese wurden Ihnen an die Haupt-E-Mail-Adresse des Kunden-Accounts oder gegebenenfalls an die zuvor angegebene E-Mail-Adresse gesendet.
 

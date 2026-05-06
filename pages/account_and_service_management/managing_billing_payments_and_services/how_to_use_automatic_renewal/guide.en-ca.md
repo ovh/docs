@@ -4,6 +4,50 @@ excerpt: Find out how to manage automatic renewal for your services via the OVHc
 updated: 2025-01-28
 ---
 
+<style>
+/* ---FAQ only--- */
+details {
+    margin: 0.1rem 1;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    background: #ffffffff;
+}
+details > summary {
+    padding: 0.1rem 1rem;
+    font-weight: 500;
+    color: #268fd4ff;
+    cursor: pointer;
+    list-style: none;
+}
+details > summary::before {
+    content: '\25B6';
+    display: inline-block;
+    margin-right: 0.5ch;
+    transition: transform 0.2s;
+}
+details[open] > summary::before {
+    content: '\25BC';
+}
+details:hover {
+    border: 1px solid #147DE8;
+    border-radius: 4px;
+    transition: border-color 0.5s ease;
+}
+details[open] > summary {
+    background: #ffffffff;
+}
+details > :not(summary) {
+    padding: 0.25rem 0.5rem;
+    box-sizing: border-box;
+    list-style-position: inside;
+}
+.smallish-gap {
+    display: block;
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
+}
+</style>
+
 ## Objective
 
 The **My solutions & services** menu in the OVHcloud Control Panel allows you to check the status of your services, renew them, modify their renewal type, pay your bills, or pay in advance.
@@ -19,17 +63,27 @@ This guide will help you to:
 
 > [!primary]
 >
-> Depending on your place of residence, local legislation, and the solutions concerned, the details in this guide may vary or not apply to your situation. For further information, please refer to your OVHcloud contracts via the [OVHcloud Control Panel](/links/manager): Click on your name in the top right-hand corner of your screen, then `My offers and services`{.action}, then the `Contracts`{.action} tab.
+> Depending on your place of residence, local legislation, and the solutions concerned, the details in this guide may vary or not apply to your situation. For further information, please refer to your OVHcloud contracts on the [Contract list](/links/control-panel/billing-contracts) page.
 >
 
 <iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/dfpPCa0mUyo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Requirements
 
-- You have access to your [OVHcloud Control Panel](/links/manager).
 - Your OVHcloud services are active.
 - You are the [billing contact](/pages/account_and_service_management/account_information/managing_contacts#definition) of your OVHcloud services.
 - You have a valid payment method in your OVHcloud account (see our guide [Managing your payment methods](/pages/account_and_service_management/managing_billing_payments_and_services/manage-payment-methods)).
+
+<!-- CP-NAV-START:billing-services -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [My offers and services](/links/control-panel/billing-services)
+- **Navigation path:** Click your name in the top right > `My offers and services`{.action}
+
+---
+<!-- CP-NAV-END:billing-services -->
 
 <a name="auto-vs-manual"></a>
 
@@ -68,8 +122,7 @@ This guide will help you to:
 
 ## Instructions
 
-Log in to your [OVHcloud Control Panel](/links/manager).<br>
-Click your name in the top right-hand corner, then choose `My offers and services`{.action}.
+Open the [My offers and services](/links/control-panel/billing-services) page.
 
 ![products and services](/pages/assets/screens/control_panel/product-selection/right-menu/my-solutions-and-services.png){.thumbnail}
 
@@ -96,7 +149,7 @@ The **Manage my solutions and services** page contains a table for managing your
 > Depending on the service and its eligibility to manual renewal, some actions may not be available.
 >
 
-To the right of a service, click the `...`{.action}' button in the `Actions` column, then click on the action you want to perform.
+To the right of a service, click the `...`{.action}’ button in the `Actions` column, then click on the action you want to perform.
 
 ![actions menu](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/actions-en.png){.thumbnail}
 
@@ -126,7 +179,7 @@ To the right of a service, click the `...`{.action}' button in the `Actions` col
 >>
 >> > [!success]
 >> >
->> > Once you are in the online payment interface, if the service you want to renew has associated options and you also want to renew them, **don't tick** the white button(s) followed by the words `Do not renew` associated with each of the options displayed.
+>> > Once you are in the online payment interface, if the service you want to renew has associated options and you also want to renew them, **don’t tick** the white button(s) followed by the words `Do not renew` associated with each of the options displayed.
 >> > If you tick this/these white button(s), you will request renewal for your main service **WITHOUT** any associated options.
 >> >
 >> > Once you have made your choices, proceed with your order by clicking `Confirm`{.action}.
@@ -154,7 +207,7 @@ To the right of a service, click the `...`{.action}' button in the `Actions` col
 >>
 >> > [!success]
 >> >
->> > Once you are in the online payment interface, if the service you want to renew has associated options and you also want to renew them, **don't tick** the white button(s) followed by the words `Do not renew` associated with each of the options displayed.
+>> > Once you are in the online payment interface, if the service you want to renew has associated options and you also want to renew them, **don’t tick** the white button(s) followed by the words `Do not renew` associated with each of the options displayed.
 >> > If you tick this/these white button(s), you will request renewal for your main service **WITHOUT** any associated options.
 >> >
 >> > Once you have made your choices, proceed with your order by clicking `Confirm`{.action}.
@@ -193,33 +246,74 @@ The table below details the possible group actions.
 
 ## FAQ
 
-> [!faq]
->
-> I am asked to enter an account ID and password when I want to anticipate payment for my service. What is the account ID?
->> The username, account ID or NIC handle is your OVHcloud customer ID, which is in the form of **xx11111-ovh**. The password requested is the password for accessing your OVHcloud account. If you have forgotten it, set up a new password by following [these instructions](/pages/account_and_service_management/account_information/manage-ovh-password).
-> Where can I find my OVHcloud customer ID?
->> It is displayed in the OVHcloud Control Panel by clicking on your name in the top right-hand corner. It is also listed in the top right-hand corner of all your bills. It is also included in the account creation confirmation email, order confirmation emails, renewal emails, and account login notifications.
-> I can't log in to my OVHcloud account to renew my services. What should I do?
->> Refer to the [What do I do if I can't log in?](/pages/account_and_service_management/account_information/ovhcloud-account-login#login-failure) section of our guide “[Logging in to the OVHcloud Control Panel](/pages/account_and_service_management/account_information/ovhcloud-account-login)”.
-> I want to enable automatic renewal, but I get an error message. What should I do?
->> To enable automatic renewal on your services, you must have added a valid payment method to your OVHcloud account. If this is not the case, or if the payment method has expired, an error message will appear in the OVHcloud Control Panel when you try to enable automatic renewal. Please refer to our guide on [Managing your payment methods](/pages/account_and_service_management/managing_billing_payments_and_services/manage-payment-methods) to add a payment method or check the current method's status.
-> My payment method has expired. How do I add a new payment method?
->> Refer to our guide on [Managing your payment methods](/pages/account_and_service_management/managing_billing_payments_and_services/manage-payment-methods). Before you can delete an obsolete payment method, you will need to add a new valid payment method into your OVHcloud account.
-> I have a question regarding domain name renewal
->> Read our guide on "[Renewing an OVHcloud domain name](/pages/web_cloud/domains/autorenew_domain_name)".
-> I no longer want to pay by direct debit, but I do not want to cancel my service. What should I do?
->> If your service allows it, you can use the [Configure renewal](#actions) action and choose a manual renewal.
-> I have renewed my service for 12 months. Can I change my mind?
->> Once a service has been renewed, this renewal cannot be cancelled. You can still choose another renewal type or cancel the service, but these 2 options will only be taken into account at the end of the current subscription, i.e. after the 12 months.
-> My website is suspended because I did not renew my services in time. I just did a renewal of my services. How long do I have to wait for my website to be accessible again?
->> The recovery time will vary depending on the services concerned.
->> If only your Web Hosting plan was suspended and renewed, you will need to wait an average of 2 hours for your website to be accessible again.
->> If your domain name was also suspended and has been renewed, the delay may be longer, and may take up to 48 hours, corresponding to the DNS propagation delay.
->> To protect your critical services from becoming inaccessible, we recommend to prioritise automatic renewal and to [check regularly that your payment methods are up to date](/pages/account_and_service_management/managing_billing_payments_and_services/manage-payment-methods).
-> My service subscription expires in July 2024. It's January 2024, and I want to renew it for another year. Will the subscription then expire in July 2025 or January 2025?
->> When you extend the renewal period for a service (for 1 year or a shorter period), this period is added to the next date of effect shown in the "Manage my solutions and services" table. In your case, your service will be renewed until July 2025.
-> My service subscription expired on January 1st 2024 and I forgot to renew it. I have just renewed it on January 16, 2024, for six months, but I note that it will expire on July 1, 2024, and not on July 16, 2024. Is that normal?
->> Yes, it is normal, the renewal starts on the expiry date of the subscription. 
+/// details | I am asked to enter an account ID and password when I want to anticipate payment for my service. What is the account ID?
+
+The username, account ID or NIC handle is your OVHcloud customer ID, which is in the form of **xx11111-ovh**. The password requested is the password for accessing your OVHcloud account. If you have forgotten it, set up a new password by following [these instructions](/pages/account_and_service_management/account_information/manage-ovh-password).
+
+///
+
+/// details | Where can I find my OVHcloud customer ID?
+
+It is displayed in the OVHcloud Control Panel by clicking on your name in the top right-hand corner. It is also listed in the top right-hand corner of all your bills. It is also included in the account creation confirmation email, order confirmation emails, renewal emails, and account login notifications.
+
+///
+
+/// details | I can't log in to my OVHcloud account to renew my services. What should I do?
+
+Refer to the [What do I do if I can't log in?](/pages/account_and_service_management/account_information/ovhcloud-account-login#login-failure) section of our guide “[Logging in to the OVHcloud Control Panel](/pages/account_and_service_management/account_information/ovhcloud-account-login)”.
+
+///
+
+/// details | I want to enable automatic renewal, but I get an error message. What should I do?
+
+To enable automatic renewal on your services, you must have added a valid payment method to your OVHcloud account. If this is not the case, or if the payment method has expired, an error message will appear in the OVHcloud Control Panel when you try to enable automatic renewal. Please refer to our guide on [Managing your payment methods](/pages/account_and_service_management/managing_billing_payments_and_services/manage-payment-methods) to add a payment method or check the current method's status.
+
+///
+
+/// details | My payment method has expired. How do I add a new payment method?
+
+Refer to our guide on [Managing your payment methods](/pages/account_and_service_management/managing_billing_payments_and_services/manage-payment-methods). Before you can delete an obsolete payment method, you will need to add a new valid payment method into your OVHcloud account.
+
+///
+
+/// details | I have a question regarding domain name renewal
+
+Read our guide on "[Renewing an OVHcloud domain name](/pages/web_cloud/domains/autorenew_domain_name)".
+
+///
+
+/// details | I no longer want to pay by direct debit, but I do not want to cancel my service. What should I do?
+
+If your service allows it, you can use the [Configure renewal](#actions) action and choose a manual renewal.
+
+///
+
+/// details | I have renewed my service for 12 months. Can I change my mind?
+
+Once a service has been renewed, this renewal cannot be cancelled. You can still choose another renewal type or cancel the service, but these 2 options will only be taken into account at the end of the current subscription, i.e. after the 12 months.
+
+///
+
+/// details | My website is suspended because I did not renew my services in time. I just did a renewal of my services. How long do I have to wait for my website to be accessible again?
+
+The recovery time will vary depending on the services concerned.
+If only your Web Hosting plan was suspended and renewed, you will need to wait an average of 2 hours for your website to be accessible again.
+If your domain name was also suspended and has been renewed, the delay may be longer, and may take up to 48 hours, corresponding to the DNS propagation delay.
+To protect your critical services from becoming inaccessible, we recommend to prioritise automatic renewal and to [check regularly that your payment methods are up to date](/pages/account_and_service_management/managing_billing_payments_and_services/manage-payment-methods).
+
+///
+
+/// details | My service subscription expires in July 2024. It's January 2024, and I want to renew it for another year. Will the subscription then expire in July 2025 or January 2025?
+
+When you extend the renewal period for a service (for 1 year or a shorter period), this period is added to the next date of effect shown in the "Manage my solutions and services" table. In your case, your service will be renewed until July 2025.
+
+///
+
+/// details | My service subscription expired on January 1st 2024 and I forgot to renew it. I have just renewed it on January 16, 2024, for six months, but I note that it will expire on July 1, 2024, and not on July 16, 2024. Is that normal?
+
+Yes, it is normal, the renewal starts on the expiry date of the subscription. 
+
+///
 
 ## Go further
 

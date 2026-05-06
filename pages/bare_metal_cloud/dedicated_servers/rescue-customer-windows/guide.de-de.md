@@ -1,6 +1,6 @@
 ---
-title: "Windows Rescue-Modus aktivieren und verwenden"
-excerpt: "Erfahren Sie hier, wie Sie das OVHcloud Rescue-System für Windows zur Fehlerbehebung bei Ihrem Dedicated Server einsetzen"
+title: "Windows Rescue-Modus auf einem Dedicated Server"
+excerpt: "Starten Sie Ihren Windows Dedicated Server im OVHcloud Rescue-Modus, um Fehler zu beheben, Reparaturen durchzuführen oder Passwörter zurückzusetzen."
 updated: 2025-01-28
 ---
 
@@ -46,13 +46,21 @@ Das **Windows Customer Rescue System** ist nur für Dedicated Server mit install
 
 - Sie haben einen [Dedicated Server](/links/bare-metal/bare-metal) mit Windows Server installiert.
 - Der Server verfügt über mindestens 16 GB RAM.
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
+
+<!-- CP-NAV-START:baremetal-dedicated-servers -->
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direkter Link:** [Dedicated Server](/links/control-panel/baremetal-dedicated-servers)
+- **Navigationspfad:** `Bare Metal Cloud`{.action} > `Dedicated Server`{.action} > Wählen Sie Ihren Server aus
+
+---
+<!-- CP-NAV-END:baremetal-dedicated-servers -->
 
 ## In der praktischen Anwendung
 
 ### Aktivierung des Rescue-Modus für Windows
-
-Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein und öffnen Sie den Bereich `Bare Metal Cloud`{.action} und dann `Dedicated Server`{.action}.
 
 Klicken Sie auf den Namen Ihres Servers, um den Tab `Allgemeine Informationen`{.action} zu öffnen.
 
@@ -60,7 +68,7 @@ Klicken Sie auf den Namen Ihres Servers, um den Tab `Allgemeine Informationen`{.
 
 Klicken Sie im Feld **Allgemeine Informationen** auf den Button `...`{.action} neben `Boot`. Klicken Sie im Kontextmenü auf `Bearbeiten`{.action}.
 
-![Startmodus ändern](images/rescue-mode-001.png){.thumbnail}
+![Boot-Option im Bereich "Allgemeine Informationen" bearbeiten](images/rescue-mode-001.png){.thumbnail}
 
 Wählen Sie auf der Seite **Netboot-Modus ändern** `Im Rescue-Modus booten`{.action} aus.
 
@@ -68,7 +76,7 @@ Wählen Sie `Customer rescue system`{.action} aus dem Dropdown-Menü.
 
 Wählen Sie im Dropdown-Menü `Windows customer rescue system`{.action} aus.
 
-![Startmodus ändern](images/manager-rescue-windows-menu.png){.thumbnail width="800"}
+![Windows Customer Rescue System aus dem Netboot-Menü auswählen](images/manager-rescue-windows-menu.png){.thumbnail width="800"}
 
 Die Benachrichtigung zur Aktivierung des Rescue-Modus und die zugehörigen Login-Daten werden an die Kontakt-E-Mail-Adresse Ihres OVHcloud Kunden-Accounts gesendet. Um eine abweichende E-Mail-Adresse zu verwenden, geben Sie diese in das Feld `Zugangsdaten an folgende E-Mail-Adresse versenden` ein.
 

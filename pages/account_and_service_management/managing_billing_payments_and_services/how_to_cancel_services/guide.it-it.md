@@ -4,6 +4,50 @@ excerpt: "Scopri come interrompere l’abbonamento a OVHcloud dallo Spazio Clien
 updated: 2025-04-28
 ---
 
+<style>
+/* ---FAQ only--- */
+details {
+    margin: 0.1rem 1;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    background: #ffffffff;
+}
+details > summary {
+    padding: 0.1rem 1rem;
+    font-weight: 500;
+    color: #268fd4ff;
+    cursor: pointer;
+    list-style: none;
+}
+details > summary::before {
+    content: '\25B6';
+    display: inline-block;
+    margin-right: 0.5ch;
+    transition: transform 0.2s;
+}
+details[open] > summary::before {
+    content: '\25BC';
+}
+details:hover {
+    border: 1px solid #147DE8;
+    border-radius: 4px;
+    transition: border-color 0.5s ease;
+}
+details[open] > summary {
+    background: #ffffffff;
+}
+details > :not(summary) {
+    padding: 0.25rem 0.5rem;
+    box-sizing: border-box;
+    list-style-position: inside;
+}
+.smallish-gap {
+    display: block;
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
+}
+</style>
+
 ## Obiettivo
 
 Vuoi disattivare uno o più servizi OVHcloud. Questa guida ti mostra come interrompere l’abbonamento dallo Spazio Cliente OVHcloud.
@@ -36,8 +80,18 @@ Questo implica che, prima di disattivarsi, devi essere **certo**:
 ## Prerequisiti
 
 - Essere il "contatto amministratore" del servizio da disattivare (per maggiori informazioni, consulta [questa guida](/pages/account_and_service_management/account_information/managing_contacts#definition))
-- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
 - Disporre di servizi OVHcloud attivi (non sospesi per mancato pagamento)
+
+<!-- CP-NAV-START:billing-services -->
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [Le mie offerte e servizi](/links/control-panel/billing-services)
+- **Percorso di navigazione:** Clicca sul tuo nome in alto a destra > `Le mie offerte e servizi`{.action}
+
+---
+<!-- CP-NAV-END:billing-services -->
 
 ## Procedura
 
@@ -47,7 +101,7 @@ Esistono tuttavia **casi particolari**, descritti in dettaglio [più in basso](#
 
 ### Come disattivare l’abbonamento <a name="terminate"></a>
 
-Per disattivare l’abbonamento al servizio, accedi al tuo [Spazio Cliente OVHcloud](/links/manager), clicca sul tuo nome in alto a destra e poi su `Le mie offerte e servizi`{.action}.
+Per disattivare l’abbonamento al servizio, apri la pagina [Le mie offerte e servizi](/links/control-panel/billing-services).
 
 ![prodotti e servizi](/pages/assets/screens/control_panel/product-selection/right-menu/my-solutions-and-services.png){.thumbnail}
 
@@ -61,7 +115,7 @@ Indica i motivi della richiesta di disattivazione e clicca su `Conferma`{.action
 >
 > Ottenere la vostra opinione è essenziale per noi. In questo modo possiamo far evolvere i nostri servizi in modo che rispondano al meglio alle tue esigenze e aspettative.
 >
-> Per maggiori informazioni sulla tua esperienza personale con OVHcloud, consulta il form proposto al momento della disattivazione. Ti ringraziamo fin d'ora per il tuo contributo al miglioramento dei nostri prodotti.
+> Per maggiori informazioni sulla tua esperienza personale con OVHcloud, consulta il form proposto al momento della disattivazione. Ti ringraziamo fin d’ora per il tuo contributo al miglioramento dei nostri prodotti.
 >
 
 La disattivazione del servizio avverrà alla **data di entrata in vigore** indicata nella tabella "Gestione delle mie offerte e servizi". Se non vedi lo stato "Disattivazione programmata", aggiorna la pagina.
@@ -131,7 +185,7 @@ Accedi allo Spazio Cliente OVHcloud per [consultare i tuoi consumi correnti](/pa
 > Puoi annullare una richiesta di disattivazione del servizio fino a 24 ore prima della data di scadenza dell'abbonamento.
 >
 
-Per annullare una richiesta di disattivazione, accedi allo [Spazio Cliente OVHcloud](/links/manager), clicca sul tuo nome in alto a destra e poi su `Le mie offerte e servizi`{.action}.
+Per annullare una richiesta di disattivazione, apri la pagina [Le mie offerte e servizi](/links/control-panel/billing-services).
 
 Clicca sui tre puntini `...`{.action} in corrispondenza del servizio richiesto e seleziona `Annulla la disattivazione del servizio`{.action} 
 
@@ -143,33 +197,42 @@ L'annullamento della disattivazione ha effetto immediato. Aggiorna la pagina "Ge
 
 ## FAQ
 
-> [!faq]
->
-> Non riesco a disattivare un servizio. Cosa fare?
->> Se non riesci a disattivare un servizio (il pulsante `Disattivare il servizio`{.action} non è proposto), questo potrebbe essere uno dei casi particolari descritti [più sopra in questa guida](#specific-cases).
->> Verificare che siano soddisfatte le seguenti condizioni:
->>
->> - È necessario essere il contatto amministratore del servizio. Per ulteriori informazioni, vedere [questa guida](/pages/account_and_service_management/account_information/managing_contacts#definition).
->> - Il servizio è in **rinnovo automatico**. Se il tuo servizio è in [rinnovo manuale](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#auto-vs-manual), verrà sospeso alla data di scadenza e poi eliminato dopo alcuni giorni.
->> - Il servizio non è sospeso, in particolare a causa di un mancato pagamento di una fattura. Verificare di essere aggiornati in [pagamenti](/pages/account_and_service_management/managing_billing_payments_and_services/invoice_management#pay-bills) e [rinnovi](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#renewal-management) dei servizi.
->>
->> Se non riesci ancora a disattivare il servizio, contatta il nostro supporto aprendo un ticket dal [centro assistenza](https://help.ovhcloud.com/csm?id=csm_get_help).
-> Come disattivare tutti i tuoi servizi?
->> La procedura di disattivazione deve essere eseguita per ciascun servizio in modo unitario. Non è possibile disattivare più servizi contemporaneamente o richiedere una disattivazione globale ai nostri team di assistenza clienti.
-> Come eliminare un account OVHcloud?
->> La chiusura del tuo account cliente OVHcloud e la cancellazione dei tuoi dati personali è possibile solo se:
->>
->> 1. Non disponi più di servizi visibili nella sezione "[Le mie offerte e servizi](https://www.ovh.com/manager/dedicated/#/billing/autoRenew)". In caso contrario, dovrai prima richiederne la disattivazione e attenderne l’eliminazione.
->> 2. Non ci sono fatture in attesa di pagamento. In caso contrario, è necessario procedere al loro pagamento cliccando sul pulsante `Salda subito`{.action} nelle azioni di massa nella pagina "[Le mie fatture](https://www.ovh.com/manager/#/dedicated/billing/history)".
->> 3. Non sono presenti ordini in corso. Verificatelo su [questa pagina](https://www.ovh.com/manager/#/dedicated/billing/orders/orders).
->> 4. Il tuo conto prepagato non è positivo. Verifica la tua password all’indirizzo [questa pagina](https://www.ovh.com/manager/#/dedicated/billing/payment/ovhaccount).
->>
->> Se le condizioni di cui sopra sono soddisfatte, puoi richiedere di eliminare il tuo account OVHcloud e i dati ad esso associati seguendo questi step:
->>
->> 1. Connettiti al [Help Center di OVHcloud](https://help.ovhcloud.com/csm?id=csm_get_help)
->> 2. Clicca sul pulsante `Crea un ticket`{.action}
->> 3. Seleziona il motivo `Gestisci il tuo account cliente OVHcloud`
->> 4. Indica `Voglio chiudere il mio account cliente OVHcloud` e segui gli step descritti.
+/// details | Non riesco a disattivare un servizio. Cosa fare?
+
+Se non riesci a disattivare un servizio (il pulsante `Disattivare il servizio`{.action} non è proposto), questo potrebbe essere uno dei casi particolari descritti [più sopra in questa guida](#specific-cases).
+Verificare che siano soddisfatte le seguenti condizioni:
+
+- È necessario essere il contatto amministratore del servizio. Per ulteriori informazioni, vedere [questa guida](/pages/account_and_service_management/account_information/managing_contacts#definition).
+- Il servizio è in **rinnovo automatico**. Se il tuo servizio è in [rinnovo manuale](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#auto-vs-manual), verrà sospeso alla data di scadenza e poi eliminato dopo alcuni giorni.
+- Il servizio non è sospeso, in particolare a causa di un mancato pagamento di una fattura. Verificare di essere aggiornati in [pagamenti](/pages/account_and_service_management/managing_billing_payments_and_services/invoice_management#pay-bills) e [rinnovi](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#renewal-management) dei servizi.
+
+Se non riesci ancora a disattivare il servizio, contatta il nostro supporto aprendo un ticket dal [centro assistenza](https://help.ovhcloud.com/csm?id=csm_get_help).
+
+///
+
+/// details | Come disattivare tutti i tuoi servizi?
+
+La procedura di disattivazione deve essere eseguita per ciascun servizio in modo unitario. Non è possibile disattivare più servizi contemporaneamente o richiedere una disattivazione globale ai nostri team di assistenza clienti.
+
+///
+
+/// details | Come eliminare un account OVHcloud?
+
+La chiusura del tuo account cliente OVHcloud e la cancellazione dei tuoi dati personali è possibile solo se:
+
+1. Non disponi più di servizi visibili nella sezione "[Le mie offerte e servizi](https://www.ovh.com/manager/dedicated/#/billing/autoRenew)". In caso contrario, dovrai prima richiederne la disattivazione e attenderne l’eliminazione.
+2. Non ci sono fatture in attesa di pagamento. In caso contrario, è necessario procedere al loro pagamento cliccando sul pulsante `Salda subito`{.action} nelle azioni di massa nella pagina "[Le mie fatture](https://www.ovh.com/manager/#/dedicated/billing/history)".
+3. Non sono presenti ordini in corso. Verificatelo su [questa pagina](https://www.ovh.com/manager/#/dedicated/billing/orders/orders).
+4. Il tuo conto prepagato non è positivo. Verifica la tua password all’indirizzo [questa pagina](https://www.ovh.com/manager/#/dedicated/billing/payment/ovhaccount).
+
+Se le condizioni di cui sopra sono soddisfatte, puoi richiedere di eliminare il tuo account OVHcloud e i dati ad esso associati seguendo questi step:
+
+1. Connettiti al [Help Center di OVHcloud](https://help.ovhcloud.com/csm?id=csm_get_help)
+2. Clicca sul pulsante `Crea un ticket`{.action}
+3. Seleziona il motivo `Gestisci il tuo account cliente OVHcloud`
+4. Indica `Voglio chiudere il mio account cliente OVHcloud` e segui gli step descritti.
+
+///
 
 ## Per saperne di più <a name="gofurther"></a>
 

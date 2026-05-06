@@ -33,13 +33,21 @@ Die KVM-Konsole für VPS ist in Ihrem OVHcloud Kundencenter verfügbar und ermö
 ## Voraussetzungen
 
 - Sie haben einen [VPS](/links/bare-metal/vps) in Ihrem Kunden-Account.
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
+
+<!-- CP-NAV-START:baremetal-vps -->
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direkter Link:** [VPS-Verwaltung](/links/control-panel/baremetal-vps)
+- **Navigationspfad:** `Bare Metal Cloud`{.action} > `Virtual Private Server`{.action} > Wählen Sie Ihren VPS aus
+
+---
+<!-- CP-NAV-END:baremetal-vps -->
 
 ## In der praktischen Anwendung
 
 ### Zugang zur KVM-Konsole über das OVHcloud Kundencenter
-
-Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein, öffnen Sie den Bereich `Bare Metal Cloud`{.action} und wählen Sie Ihren Server unter `Virtual Private Server`{.action} aus.
 
 Klicken Sie im Tab `Allgemeine Informationen`{.action} auf den Button `...`{.action} neben dem Namen Ihres VPS im Bereich **Ihr VPS**.
 
@@ -68,7 +76,7 @@ Die URL für den Zugang wird im Bereich `RESPONSE` angezeigt.
 
 ### Verwendung der KVM-Konsole
 
-Wenn Sie über Ihr Kundencenter auf die KVM-Konsole zugreifen, wird ein Popup-Fenster geöffnet. Um den Vollbildmodus zu verwenden, klicken Sie unten rechts auf den Link `In einem neuem Fenster öffnen`{.action}. Hierdurch wird in der Regel ein neuer Browser-Tab geöffnet.
+Wenn Sie über Ihr Kundencenter auf die KVM-Konsole zugreifen, wird ein Popup-Fenster geöffnet. Um den Vollbildmodus zu verwenden, klicken Sie unten rechts auf den Link `In einem neuen Fenster öffnen`{.action}. Hierdurch wird in der Regel ein neuer Browser-Tab geöffnet.
 
 ![KVM-Verbindung](images/kvm_screen.png){.thumbnail}
 
@@ -88,6 +96,8 @@ Sie können die von Ihnen bevorzugte Tastaturkonfiguration aktivieren, um die Ve
 ```bash
 sudo dpkg-reconfigure keyboard-configuration
 ```
+
+Falls nötig, installieren Sie das Paket zuerst über den Paketmanager Ihrer Distribution (`sudo dnf install keyboard-configuration` oder `sudo apt install keyboard-configuration`).
 
 Es öffnet sich ein grafisches Menü, in dem Sie ein Tastaturmodell auswählen können.
 

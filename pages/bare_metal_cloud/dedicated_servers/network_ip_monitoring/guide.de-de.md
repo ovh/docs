@@ -1,7 +1,7 @@
 ---
-title: Welche IP-Adressen nutzt das OVHcloud Monitoring?
-excerpt: Erfahren Sie hier die IP-Adressen zur Einrichtung Ihrer Firewall, um OVHcloud Monitoring auf Ihrem Server zu erlauben
-updated: 2025-06-04
+title: "OVHcloud Monitoring IP-Adressen für Dedicated Server"
+excerpt: "Erfahren Sie hier die IP-Adressen zur Einrichtung Ihrer Firewall, um OVHcloud Monitoring auf Ihrem Server zu erlauben"
+updated: 2026-04-13
 ---
 
 ## Ziel
@@ -19,6 +19,17 @@ Um insbesondere auf ICMP eine restriktive Firewall einzurichten und weiterhin vo
 - Sie haben einen OVHcloud Dienst, auf dem Sie eine Firewall installiert haben.
 - Sie haben Zugriff auf die Firewall-Regeln.
 
+<!-- CP-NAV-START:baremetal-dedicated-servers -->
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direktlink:** [Dedicated Server](/links/control-panel/baremetal-dedicated-servers)
+- **Navigationspfad:** `Bare Metal Cloud`{.action} > `Dedicated Server`{.action} > Wählen Sie Ihren Server aus
+
+---
+<!-- CP-NAV-END:baremetal-dedicated-servers -->
+
 ## In der praktischen Anwendung
 
 ### IP-Adressen erlauben
@@ -26,7 +37,7 @@ Um insbesondere auf ICMP eine restriktive Firewall einzurichten und weiterhin vo
 |Reverse|IP|Protokoll|
 |---|---|---|
 |netmon-rbx-probe|92.222.184.0/24|icmp|
-|netmon-sbg-probe|92.222.185.0/24|icmp|
+|netmon-sbg-probe|51.38.25.100/32|icmp|
 |netmon-gra-probe|92.222.186.0/24|icmp|
 |netmon-bhs-probe|167.114.37.0/24|icmp|
 |netmon-sgp-probe|139.99.1.144/28|icmp|
@@ -35,9 +46,8 @@ Um insbesondere auf ICMP eine restriktive Firewall einzurichten und weiterhin vo
 |netmon-syd-probe|139.99.187.247/32|icmp|
 |netmon-tor-probe|72.251.7.222/32|icmp|
 |netmon-eri-probe|51.195.135.163/32|icmp|
-|netmon-lim-probe|51.38.117.56|icmp|
-|netmon-sbg-probe|51.38.25.100|icmp|
-|netmon-par-probe|57.130.4.212|icmp|
+|netmon-lim-probe|51.38.117.56/32|icmp|
+|netmon-par-probe|57.130.4.212/32|icmp|
 |ping.ovh.net|213.186.33.13|icmp|
 |---|---|---|
 ||xxx.xxx.xxx.250 (xxx.xxx.xxx.xxx.aaa ist die IP des Servers)|icmp|
@@ -51,14 +61,13 @@ Um insbesondere auf ICMP eine restriktive Firewall einzurichten und weiterhin vo
 > <pre class="highlight language-console"><code class="language-console">tcpdump host server_ip | grep ICMP</code></pre>
 >
 
-
 ### Monitoring aktivieren oder deaktivieren
 
 Loggen Sie sich zunächst in Ihr [OVHcloud Kundencenter ein](/links/manager) und gehen Sie zum Bereich `Bare Metal Cloud`{.action}. Wählen Sie den betreffenden Server unter `Dedicated Server`{.action} aus.
 
 Sie können den Monitoring-Status eines Servers vom Tab `Allgemeine Informationen`{.action} aus einrichten (Abschnitt **Dienststatus**).
 
-![Monitoring](images/monitoring-server.png){.thumbnail}
+![Monitoring-Status im Tab "Allgemeine Informationen" des Servers](images/monitoring-server.png){.thumbnail}
 
 Klicken Sie auf den Button `Konfigurieren`{.action}. Im neu angezeigten Fenster haben Sie drei Optionen für das Überwachungsverhalten:
 
@@ -66,12 +75,16 @@ Klicken Sie auf den Button `Konfigurieren`{.action}. Im neu angezeigten Fenster 
 - **Aktiviert mit proaktivem Eingriff**: Wenn der Server nicht mehr reagiert wird Ihnen eine Benachrichtigung per E-Mail gesendet und der Server von einem Techniker überprüft.
 - **Aktiviert ohne proaktiven Eingriff**: Sie erhalten eine Benachrichtigung per E-Mail, wenn der Server nicht mehr reagiert. Um eine Intervention zu veranlassen, muss eine Support-Anfrage erstellt werden.
 
-![Monitoring](images/monitoring-server2.png){.thumbnail}
+![Monitoring-Konfigurationspopup mit drei Optionen](images/monitoring-server2.png){.thumbnail}
 
 Klicken Sie auf `Bestätigen`{.action}, um Ihre Monitoring-Konfiguration zu aktualisieren.
 
 ## Weiterführende Informationen
 
 [Konfiguration der Network Firewall](/pages/bare_metal_cloud/dedicated_servers/firewall_network).
+
+- [Erste Schritte mit einem Dedicated Server](/pages/bare_metal_cloud/dedicated_servers/getting-started-with-dedicated-server)
+
+- [RTM v2 Monitoring auf einem Dedicated Server deinstallieren](/pages/bare_metal_cloud/dedicated_servers/rtm-uninstall)
 
 Treten Sie unserer [User Community](/links/community) bei.

@@ -1,6 +1,6 @@
 ---
-title: Configurare la rete su Windows Server con Hyper-V
-excerpt: Come configurare la rete su Windows Server con Hyper-V
+title: "Rete Hyper-V su server dedicati HG/Scale"
+excerpt: "Configura le interfacce di rete su Windows Server con Hyper-V sui server dedicati High Grade o Scale"
 updated: 2025-05-16
 ---
 
@@ -30,7 +30,6 @@ Puoi installare questa configurazione su ogni server Hyper-V (un'interfaccia pri
 
 * Disporre di un [server dedicato OVHcloud](/links/bare-metal/bare-metal)
 * Disporre di un indirizzo [Additional IP](/links/network/additional-ip)
-* Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
 
 > [!warning]
 >
@@ -363,4 +362,4 @@ network:
 
 ## Per saperne di più
   
-Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.
+Contatta la nostra [Community di utenti](/links/community).

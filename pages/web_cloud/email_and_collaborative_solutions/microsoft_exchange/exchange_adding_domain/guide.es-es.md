@@ -24,27 +24,28 @@ Añadir un dominio a un servicio Exchange es un requisito indispensable para pod
 - Tener una [solución Exchange](/links/web/emails) o [Email Pro](/links/web/email-pro).
 - Tener uno o más dominios.
 - Estar en condiciones de modificar la configuración del dominio ([zona DNS](/pages/web_cloud/domains/dns_zone_edit)).
-- Haber iniciado sesión en el [área de cliente de OVHcloud](/links/manager).
+
+<!-- CP-NAV-START:web-exchange -->
+<!-- CP-NAV-START:web-email-pro -->
+---
+
+### Acceso al área de cliente de OVHcloud
+
+**Exchange:**
+
+- **Enlace directo:** [Exchange](/links/control-panel/web-exchange)
+- **Ruta de navegación:** `Web Cloud`{.action} > `Exchange`{.action} > Seleccione su plataforma
+
+**Email Pro:**
+
+- **Enlace directo:** [Email Pro](/links/control-panel/web-email-pro)
+- **Ruta de navegación:** `Web Cloud`{.action} > `Email Pro`{.action} > Seleccione su plataforma
+
+---
+<!-- CP-NAV-END:web-email-pro -->
+<!-- CP-NAV-END:web-exchange -->
 
 ## Procedimiento
-
-### Acceder a la gestión del servicio
-
-> [!tabs]
-> **Exchange**
->>
->> 1. Conéctese al [área de cliente de OVHcloud](/links/manager).
->> 1. Acceda al apartado `Web Cloud`{.action}.
->> 1. En la sección `MICROSOFT`, haga clic en `Exchange`{.action}.
->> 1. Seleccione la plataforma correspondiente.
->>
-> **Email Pro**
->>
->> 1. Conéctese a su [área de cliente de OVHcloud](/links/manager).
->> 1. Haga clic en la pestaña `Web Cloud`{.action}.
->> 1. Haga clic en `Email Pro`{.action}.
->> 1. Seleccione la plataforma correspondiente.
->>
 
 ### Añadir un dominio
 
@@ -142,7 +143,7 @@ Le recordamos que todas las direcciones creadas en el servicio podrán ver en el
 
 Una vez que haya configurado las cuentas, ya puede empezar a utilizarlas. Para ello, OVHcloud pone a su disposición el **webmail**, disponible [aquí](/links/web/email). Para un uso óptimo de su dirección en un programa, asegúrese de que es compatible con el servicio.
 
-Si desea configurar su dirección de correo electrónico en un cliente de correo o un dispositivo periférico, como un smartphone o una tablet, u obtener ayuda sobre las funcionalidades de su servicio de correo, consulte nuestras guías, que encontrará en las páginas [Exchange](/links/web/emails) y [E-mail Pro](/links/web/email-pro).
+Si desea configurar su dirección de correo electrónico en un cliente de correo o un dispositivo periférico, como un smartphone o una tablet, u obtener ayuda sobre las funcionalidades de su servicio de correo, consulte nuestras guías, que encontrará en las páginas [Exchange](/links/web/emails-exchange) y [Email Pro](/links/web/email-pro).
 
 Puede adquirir licencias Outlook en el [área de cliente de OVHcloud](/links/manager) y licencias Office 365 en la página [Microsoft 365](/links/web/ms365). Le recomendamos una de estas soluciones si desea disfrutar del cliente de correo Outlook o de más programas de la suite Office, según sus necesidades.
 

@@ -19,7 +19,17 @@ Nestas circunstâncias, poderá utilizar o modo de resgate (rescue) para reconfi
 ## Requisitos
 
 - uma [Instância Public Cloud](/links/public-cloud/compute) na sua conta OVHcloud
-- acesso à [Área de Cliente OVHcloud](/links/manager)
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Acesso à Área de Cliente OVHcloud
+
+- **Ligação direta:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Caminho de navegação:** `Public Cloud`{.action} > Selecione o seu projeto
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## Instruções
 
@@ -29,9 +39,7 @@ Nestas circunstâncias, poderá utilizar o modo de resgate (rescue) para reconfi
 
 ### Ativar o modo rescue
 
-Em primeiro lugar, aceda a [Área de Cliente OVHcloud](/links/manager), aceda à secção `Public Cloud`{.action} e selecione o projeto Public Cloud em causa.
-
-A seguir, clique no separador `Instâncias`{.action} na barra de navegação à esquerda.
+Clique no separador `Instâncias`{.action} na barra de navegação à esquerda.
 
 Clique nos três pontos situados à direita da instância e selecione a opção `Reiniciar em modo rescue`{.action}.
 

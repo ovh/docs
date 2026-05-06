@@ -32,6 +32,17 @@ Konta Exchange mogą być skonfigurowane w  kompatybilnych programach pocztowych
 - Instalacja programu Mail na Twoim urządzeniu Mac
 - Dane do logowania do konta e-mail, które chcesz skonfigurować
 
+<!-- CP-NAV-START:web-exchange -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Exchange](/links/control-panel/web-exchange)
+- **Ścieżka nawigacji:** `Web Cloud`{.action} > `Exchange`{.action} > Wybierz platformę
+
+---
+<!-- CP-NAV-END:web-exchange -->
+
 ## W praktyce
 
 ### Dodaj konto <a name="addaccount"></a>
@@ -40,12 +51,7 @@ Konta Exchange mogą być skonfigurowane w  kompatybilnych programach pocztowych
 >
 > Poniżej stosujemy przykładową nazwę serwera: ex?.mail.ovh.net. Chcesz zastąpić "?" cyfrą wskazującą serwer Twojej usługi Exchange.
 >
-> 1. Zaloguj się do [Panelu klienta OVHcloud](/links/manager).
-> 1. Przejdź do sekcji `Web Cloud`{.action}.
-> 1. W sekcji `MICROSOFT` kliknij `Exchange`{.action}.
-> 1. Wybierz odpowiednią platformę.
-> 1. Nazwa serwera jest widoczna w ramce **Połączenie** w karcie `Informacje ogólne`{.action}.
->
+> Kliknij [ten link](/links/control-panel/web-exchange), aby uzyskać dostęp do sekcji `Exchange`{.action}. Nazwa serwera wyświetla się w strefie **Połączenie** w zakładce `Informacje ogólne`{.action}.
 
 - **Podczas pierwszego uruchomienia aplikacji** : bezpośrednio wyświetli się asystent konfiguracji i poprosi o wybranie typu konta.
 
@@ -59,7 +65,7 @@ Konta Exchange mogą być skonfigurowane w  kompatybilnych programach pocztowych
 >>
 > **Etap 2**
 >>
->> Wpisz **Nazwa** Twojego konta e-mail i **Adres e-mail**, a następnie kliknij `Zaloguj się {.action} <br><br>
+>> Wpisz **Nazwa** Twojego konta e-mail i **Adres e-mail**, a następnie kliknij `Zaloguj się`{.action} <br><br>
 >> ![MailMac](images/mail-mac-exchange02.png){.thumbnail .w-400 .h-600}
 >>
 > **Etap 3**

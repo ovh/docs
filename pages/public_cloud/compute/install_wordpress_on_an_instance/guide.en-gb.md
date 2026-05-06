@@ -22,8 +22,18 @@ This tutorial provides the basic steps for a manual installation of WordPress on
 
 - A [Public Cloud project](/links/public-cloud/public-cloud) in your OVHcloud account
 - A [Public Cloud instance](/pages/public_cloud/compute/public-cloud-first-steps) with Debian or Ubuntu installed
-- Access to the [OVHcloud Control Panel](/links/manager)
 - Administrative access (sudo) to your instance via SSH
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Navigation path:** `Public Cloud`{.action} > Select your project
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## Instructions
 
@@ -57,12 +67,12 @@ debian@instance:~$ sudo apt install apache2 mariadb-server php libapache2-mod-ph
 
 ### Step 2: Configuring the database server <a name="sqlconf"></a>
 
-MariaDB provides a script to assist with the initial configuration and to apply some security-related settings.
+MariaDB [provides a script](https://mariadb.com/docs/server/clients-and-utilities/deployment-tools/mariadb-secure-installation) to assist with the initial configuration and to apply some security-related settings.
 
 To run it, enter this command:
 
 ```bash
-debian@instance:~$ sudo mysql_secure_installation
+debian@instance:~$ sudo mariadb-secure-installation
 ```
 
 Confirm the first prompt by pressing `Enter`{.action}.

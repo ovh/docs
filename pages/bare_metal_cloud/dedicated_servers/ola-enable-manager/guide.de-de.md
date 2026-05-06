@@ -1,7 +1,7 @@
 ---
-title: 'Konfigurieren der OVHcloud Link Aggregation'
-excerpt: 'Erfahren Sie hier, wie Sie OLA im OVHcloud Kundencenter aktivieren'
-updated: 2022-05-18
+title: "OVHcloud Link Aggregation über das Kundencenter (Dedicated)"
+excerpt: "Aktivieren Sie OVHcloud Link Aggregation (OLA) auf Ihrem Dedicated Server direkt über das OVHcloud Kundencenter."
+updated: 2026-04-20
 ---
 
 ## Ziel
@@ -14,8 +14,18 @@ Die Aggregation basiert auf dem Standard IEEE 802.3ad, Link Aggregation Control 
 ## Voraussetzungen
 
 - Sie haben einen [Dedicated Server](/links/bare-metal/bare-metal) der Advance, Scale oder High Grade Reihe.
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 - Sie verwenden ein Betriebssystem / einen Hypervisor mit Unterstützung für das Aggregationsprotokoll 802.3ad (LACP).
+
+<!-- CP-NAV-START:baremetal-dedicated-servers -->
+---
+
+### Zugang zum OVHcloud Kundencenter
+
+- **Direktlink:** [Dedicated Server](/links/control-panel/baremetal-dedicated-servers)
+- **Navigationspfad:** `Bare Metal Cloud`{.action} > `Dedicated Server`{.action} > Wählen Sie Ihren Server aus
+
+---
+<!-- CP-NAV-END:baremetal-dedicated-servers -->
 
 ## In der praktischen Anwendung
 
@@ -28,31 +38,42 @@ Die Aggregation basiert auf dem Standard IEEE 802.3ad, Link Aggregation Control 
 
 ### OLA in Ihrem OVHcloud Kundencenter konfigurieren
 
-Um OLA zu konfigurieren, loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein und wechseln Sie zum Bereich `Bare Metal Cloud`{.action}. Klicken Sie auf `Dedicated Server`{.action} und wählen Sie Ihren Server aus der Liste aus.
+Öffnen Sie den Tab `Netzwerkinterfaces`{.action} auf der Verwaltungsseite Ihres Servers.
 
-![network interfaces](images/network_interfaces2022.png){.thumbnail}
+Klicken Sie auf den Button `Netzwerk-Aggregation`{.action} im Abschnitt **Netzwerkinterface-Controller (NICs)**.
 
-Klicken Sie im Tab `Netzwerkinterfaces`{.action} (1) auf den Button `...`{.action} (2) rechts von "Modus" in **OLA: OVHcloud Link Aggregation**. Klicken Sie auf `Private Aggregation konfigurieren`{.action} (2).
+Es werden zwei Tabellen angezeigt:
+- Auf der linken Seite die aktuelle Konfiguration Ihrer Netzwerkinterfaces;
+- Auf der rechten Seite die simulierte Konfiguration Ihrer aggregierten Netzwerkinterfaces.
 
-![select Interface](images/interface_select2021.png){.thumbnail}
+Geben Sie im Feld unterhalb der Tabellen einen Namen für Ihre Link-Aggregation ein.
 
-Überprüfen Sie, dass Ihre beiden Interfaces oder Schnittstellengruppen ausgewählt sind, und geben Sie dem OLA Interface einen Namen. Klicken Sie auf `Bestätigen`{.action}, sobald Ihre Überprüfungen abgeschlossen sind.
+Sobald Sie überprüft haben, dass das Aggregations-Layout Ihren Netzwerkanforderungen entspricht, klicken Sie auf `Aggregation aktivieren`{.action}, um fortzufahren.
 
 Es kann einige Minuten dauern, bis der Vorgang abgeschlossen ist. Anschließend werden im nächsten Schritt die Schnittstellen in Ihrem Betriebssystem in einem "NIC link" oder einem "NIC team" konfiguriert. In den folgenden Anleitungen finden Sie Informationen zu den beliebtesten Betriebssystemen:
 
-[Konfigurieren Ihrer Netzwerkkarte für die OVHcloud Link Aggregation in Debian 9 über ifupdown](/pages/bare_metal_cloud/dedicated_servers/ola-enable-debian9)
+- [Konfigurieren Ihrer Netzwerkkarte für die OVHcloud Link Aggregation in Debian 9 über ifupdown](/pages/bare_metal_cloud/dedicated_servers/ola-enable-debian9).
+- [Konfigurieren Ihrer Netzwerkkarte für die OVHcloud Link Aggregation in Windows Server 2019](/pages/bare_metal_cloud/dedicated_servers/ola-enable-w2k19).
+- [Konfigurieren der OVHcloud Link Aggregation in SLES 15](/pages/bare_metal_cloud/dedicated_servers/ola-enable-sles15).
+- [How to configure your NIC for OVHcloud Link Aggregation in Debian 12 or Ubuntu 24.04 using Netplan](/pages/bare_metal_cloud/dedicated_servers/lacp-enable-netplan).
 
-[Konfigurieren Ihrer Netzwerkkarte für die OVHcloud Link Aggregation in Windows Server 2019](/pages/bare_metal_cloud/dedicated_servers/ola-enable-w2k19)
+### OLA-Status prüfen
 
-[Konfigurieren der OVHcloud Link Aggregation in SLES 15](/pages/bare_metal_cloud/dedicated_servers/ola-enable-sles15)
+Sie können den Status Ihrer Link-Aggregation (OLA) im Tab `Netzwerkinterfaces`{.action} überprüfen. Suchen Sie unten im Abschnitt **Bandbreite** die Zeile **OVHcloud Link Aggregation**.
 
-[How to configure Your NIC for OVHcloud Link Aggregation in Debian 12 or Ubuntu 24.04 using Netplan](/pages/bare_metal_cloud/dedicated_servers/lacp-enable-netplan)
+Es gibt vier mögliche Statuskennzeichnungen:
+- **Nicht verfügbar**: OLA wird von diesem Dedicated-Server-Modell nicht unterstützt.
+- **Verfügbar**: OLA wird unterstützt, ist aber nicht konfiguriert.
+- **Aktiv - Vollständig privat**: OLA ist aktiviert; alle physischen Interfaces werden zu einem einzigen privaten Link für den vRack-Einsatz aggregiert.
+- **Aktiv - Doppeltes LAG**: OLA ist voraktiviert; die physischen Interfaces werden in zwei separate Aggregate aufgeteilt (eines öffentlich, eines privat).
+
+> [!primary]
+> **Hinweis:** Der Status **Aktiv - Doppeltes LAG** ist eine spezifische Konfiguration, die in der Regel den Scale- und High-Grade-Server-Reihen vorbehalten ist, die über vier physische Netzwerkinterfaces verfügen.
+>
 
 ### OLA auf die Standardwerte zurücksetzen
 
-Um OLA auf die Standardwerte wiederherzustellen, klicken Sie auf `...`{.action} rechts neben "Modus" in **OLA: OVHcloud Link Aggregation**. Klicken Sie auf `Private Aggregation dekonfigurieren`{.action}. Klicken Sie im Kontextmenü auf `Bestätigen`{.action}.
-
-![network interfaces](images/default_settings2021.png){.thumbnail}
+Um OLA auf die Standardwerte zurückzusetzen, klicken Sie auf den Button `Netzwerke disaggregieren`{.action} im Abschnitt **Netzwerk-Interface-Controller**. Klicken Sie im Kontextmenü auf `Bestätigen`{.action}.
 
 Die Operation kann einige Minuten in Anspruch nehmen.
 
@@ -64,6 +85,6 @@ Die Operation kann einige Minuten in Anspruch nehmen.
 
 [Konfigurieren der OVHcloud Link Aggregation in SLES 15](/pages/bare_metal_cloud/dedicated_servers/ola-enable-sles15)
 
-[How to configure Your NIC for OVHcloud Link Aggregation in Debian 12 or Ubuntu 24.04 using Netplan](/pages/bare_metal_cloud/dedicated_servers/lacp-enable-netplan)
+[How to configure your NIC for OVHcloud Link Aggregation in Debian 12 or Ubuntu 24.04 using Netplan](/pages/bare_metal_cloud/dedicated_servers/lacp-enable-netplan)
 
 Treten Sie unserer [User Community](/links/community) bei.

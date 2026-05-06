@@ -21,8 +21,18 @@ No entanto, se a configuração destes últimos não for realizada corretamente,
 ## Requisitos
 
 - Ter um serviço de [alojamento web](/links/web/hosting) compatível.
-- Ter acesso à [Área de Cliente OVHcloud](/links/manager).
 - Ter utilizado a funcionalidade "[Módulo em 1 clique](/pages/web_cloud/web_hosting/cms_install_1_click_modules)" para criar um novo website.
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Acesso à Área de Cliente OVHcloud
+
+- **Ligação direta:** [Web hosting](/links/control-panel/web-hosting)
+- **Caminho de navegação:** `Web Cloud`{.action} > `Alojamentos`{.action} > Selecione o seu alojamento web
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## Instruções
 

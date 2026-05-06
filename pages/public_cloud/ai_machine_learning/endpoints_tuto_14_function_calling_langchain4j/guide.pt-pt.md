@@ -20,7 +20,7 @@ In the context of image generation, function calling can be used to enhance the 
 
 To do this, we will use **[LangChain4j](https://github.com/langchain4j/langchain4j)**, a Java-based framework inspired by [LangChain](https://github.com/langchain-ai/langchain), designed to simplify the integration of LLMs (Large Language Models) into applications. Note that **LangChain4j** is not officially maintained by the LangChain team, despite the similar name.
 
-Combined with OVHcloud **[AI Endpoints](https://endpoints.ai.cloud.ovh.net/)** which offers both LLM and embedding models, it becomes easy to create advanced, production-ready assistants.
+Combined with OVHcloud **[AI Endpoints](/links/public-cloud/ai-endpoints)** which offers both LLM and embedding models, it becomes easy to create advanced, production-ready assistants.
 
 ![image](images/painter.png){.thumbnail}
 
@@ -28,7 +28,7 @@ Combined with OVHcloud **[AI Endpoints](https://endpoints.ai.cloud.ovh.net/)** w
 
 - **Function Calling**: Function calling refers to the ability of a language model or AI system AI system to request, invoke, and execute predefined functions or tasks such as data processing, calculations, or external API calls in response to user input or prompts.
 - **[LangChain4j](https://github.com/langchain4j/langchain4j)**: a Java-based framework inspired by [LangChain](https://github.com/langchain-ai/langchain), designed to simplify the integration of LLMs (Large Language Models) into applications. Note that LangChain4j is not officially maintained by the LangChain team, despite the similar name.
-- **[AI Endpoints](https://endpoints.ai.cloud.ovh.net/)**: A serverless platform by OVHcloud providing easy access to a variety of world-renowned AI models including Mistral, LLaMA, and more. This platform is designed to be simple, secure, and intuitive, with data privacy as a top priority.
+- **[AI Endpoints](/links/public-cloud/ai-endpoints)**: A serverless platform by OVHcloud providing easy access to a variety of world-renowned AI models including Mistral, LLaMA, and more. This platform is designed to be simple, secure, and intuitive, with data privacy as a top priority.
 
 ## Requirements
 
@@ -111,7 +111,7 @@ After this we assemble all the pieces together:
 // Chatbot with tool calling
 void main() throws Exception {
 
-    // Main chatbot configuration, choose on of the available models on the AI Endpoints catalog (https://endpoints.ai.cloud.ovh.net/catalog)
+    // Main chatbot configuration, choose on of the available models on the AI Endpoints catalog (/links/public-cloud/ai-endpoints-catalog)
     ChatModel chatModel = MistralAiChatModel.builder()
             .apiKey(System.getenv("OVH_AI_ENDPOINTS_ACCESS_TOKEN"))
             .baseUrl(System.getenv("OVH_AI_ENDPOINTS_MODEL_URL"))

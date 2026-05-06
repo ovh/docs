@@ -25,7 +25,6 @@ Overview of our image segmentation app:
 
 To deploy your app, you need:
 
-- Access to the [OVHcloud Control Panel](/links/manager)
 - An AI Deploy Project created inside a [Public Cloud project](/links/public-cloud/public-cloud) in your OVHcloud account
 - A [user for AI Deploy](/pages/public_cloud/ai_machine_learning/gi_01_manage_users)
 - [The OVHcloud AI CLI](/pages/public_cloud/ai_machine_learning/cli_10_howto_install_cli) installed on your local computer
@@ -34,6 +33,17 @@ To deploy your app, you need:
 - The BraTS2020 dataset. [Download it here](https://www.kaggle.com/datasets/awsaf49/brats20-dataset-training-validation)
 - Your weights obtained from training the U-Net model on this dataset (refer to the *"Step 6 - Train and Save the model"* part of the [image segmentation notebook tutorial](https://github.com/ovh/ai-training-examples/blob/main/notebooks/computer-vision/image-segmentation/tensorflow/brain-tumor-segmentation-unet/notebook_image_segmentation_unet.ipynb)). 
 - The full code of the application, which can be found on this [GitHub repository](https://github.com/ovh/ai-training-examples/tree/main/apps/streamlit/image-segmentation-brain-tumors), which I invite you to clone.
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Navigation path:** `Public Cloud`{.action} > Select your project
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## Instructions
 
@@ -121,11 +131,10 @@ You can upload your data to the cloud either by using the [OVHcloud Control Pane
 
 #### Upload data via UI (Control Panel)
 
+<!-- CP-STEPS-START:upload-data-via-ui-control-panel -->
 If you do not feel comfortable with commands, this method will be more intuitive.
 
-First, log in to the [OVHcloud Control Panel](/links/manager) and access the `Public Cloud`{.action} section.
-
-Then, select the `Object Storage`{.action} section (in the Storage category) and [create a new object container](/pages/storage_and_backup/object_storage/pcs_create_container) by clicking `Storage`{.action} > `Object Storage`{.action} > `Create an object container`{.action}.
+Click [this link](/links/control-panel/publiccloud-projects) to access your Public Cloud project, then select the `Object Storage`{.action} section (in the Storage category) and [create a new object container](/pages/storage_and_backup/object_storage/pcs_create_container) by clicking `Storage`{.action} > `Object Storage`{.action} > `Create an object container`{.action}.
 
 Here you can create the object container that will store the dataset and the model's weights. Several `types` and `regions` are available, choose the best parameters for you.
 
@@ -134,6 +143,7 @@ We advise you to separate your data by creating a container dedicated to the mod
 We will name our object containers `BraTS2020_dataset_zip` and `BraTS2020_model_weights`.
 
 Once your object containers are created, you will see them in the Object Storage list. By clicking on them, you will be able to click the `Add Objects`{.action} button, which will allow you to upload your data to the cloud.
+<!-- CP-STEPS-END:upload-data-via-ui-control-panel -->
 
 #### 1.2 - Upload data via CLI
 

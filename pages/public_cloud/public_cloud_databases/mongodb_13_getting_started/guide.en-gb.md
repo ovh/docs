@@ -1,5 +1,5 @@
 ---
-title: MongoDB Discovery - Getting started
+title: Getting started with Public Cloud Databases for MongoDB
 excerpt: Get started with MongoDB Free Tier through the OVHcloud Control Panel
 updated: 2024-02-05
 ---
@@ -12,14 +12,26 @@ updated: 2024-02-05
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](/links/manager)
 - A [Public Cloud project](/links/public-cloud/public-cloud) in your OVHcloud account
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Navigation path:** `Public Cloud`{.action} > Select your project
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## Instructions
 
-Log in to your [OVHcloud Control Panel](/links/manager) and switch to the `Public Cloud`{.action} section. After selecting your Public Cloud project, click on `Databases`{.action} in the left-hand navigation bar under **Databases & Analytics**.
+<!-- CP-STEPS-START:create-database-instance -->
+Click on `Databases`{.action} in the left-hand navigation bar under **Databases & Analytics**.
 
 Click the `Create a database instance`{.action} button (click `Create a service`{.action} if your project already contains databases).
+<!-- CP-STEPS-END:create-database-instance -->
 
 ### Select the database type
 
@@ -27,6 +39,7 @@ Between all database engines, select **MongoDB**. You can choose to change the v
 
 ### Review the order
 
+<!-- CP-STEPS-START:review-the-order -->
 The **Discovery** plan is selected by default along with the following options:
 
 - The region is set to `Gravelines (GRA)`.
@@ -42,6 +55,7 @@ The **Discovery** plan is selected by default along with the following options:
 Review the service settings and click on the `Order`{.action} button.
 
 Within a few minutes, your **Discovery** MongoDB service will be deployed.
+<!-- CP-STEPS-END:review-the-order -->
 
 ### Connectivity settings
 

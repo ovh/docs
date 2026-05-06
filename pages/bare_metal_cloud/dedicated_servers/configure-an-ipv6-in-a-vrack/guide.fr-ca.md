@@ -1,7 +1,7 @@
 ---
-title: Configurer un bloc IPv6 dans un vRack
-excerpt: "Ce guide vous montrera comment configurer un bloc d'adresses IPv6 publiques à utiliser dans un vRack"
-updated: 2025-06-04
+title: "Configurer un bloc IPv6 dans un vRack sur un serveur dédié"
+excerpt: "Configurez un bloc d'adresses IPv6 publiques pour le réseau privé vRack OVHcloud sur votre serveur dédié"
+updated: 2026-03-13
 ---
 
 <style>
@@ -26,7 +26,7 @@ Le réseau vRack est un réseau privé mondial qui relie différents produits OV
 
 > [!primary]
 >
-> Le vRack prend en charge le routage public IPv4 et IPv6 avec des blocs d’adresses Additional IP. Retrouvez les instructions sur la configuration de blocs IPv4 dans ce guide: [Configurer un bloc IP dans le vRack](/pages/bare_metal_cloud/dedicated_servers/configuring-an-ip-block-in-a-vrack).
+> Le vRack prend en charge le routage public IPv4 et IPv6 avec des blocs d’adresses Additional IP. Retrouvez les instructions sur la configuration de blocs IPv4 dans ce guide : [Configurer un bloc IP dans le vRack](/pages/bare_metal_cloud/dedicated_servers/configuring-an-ip-block-in-a-vrack).
 >
 
 > [!primary]
@@ -47,7 +47,7 @@ Le réseau vRack est un réseau privé mondial qui relie différents produits OV
 
 L’IPv6 révolutionne la mise en réseau au sein du vRack d’OVHcloud, en offrant une solution aux limites de l’IPv4, ainsi que des fonctionnalités adaptées à l’Internet moderne. Son déploiement est une réponse directe au besoin d'architectures Internet plus étendues, plus sécurisées et plus sophistiquées. Voici les principaux avantages de l’intégration d’IPv6 au vRack :
 
-- **Flexibilité pour les réseaux avancés** : l’IPv6 augmente considérablement l’espace d’adressage, offrant la flexibilité nécessaire pour faire évoluer l’infrastructure, gérer les scénarios de basculement et prendre en charge des solutions plus importantes. Cela permet aux réseaux de se développer et de s’adapter sans les contraintes d'addressage de l’IPv4.
+- **Flexibilité pour les réseaux avancés** : l’IPv6 augmente considérablement l’espace d’adressage, offrant la flexibilité nécessaire pour faire évoluer l’infrastructure, gérer les scénarios de basculement et prendre en charge des solutions plus importantes. Cela permet aux réseaux de se développer et de s’adapter sans les contraintes d'adressage de l’IPv4.
 
 - **Routage hiérarchique et segmentation** : IPv6 permet un routage hiérarchique efficace et une segmentation de l’infrastructure logique. Cela améliore la gestion et la sécurité du réseau, idéal pour la revente de machines virtuelles avec des sous-réseaux dédiés ou encore la segmentation de l'infrastructure réseau.
 
@@ -59,18 +59,28 @@ En tirant parti de l’IPv6 au sein du vRack, les utilisateurs d’OVHcloud peuv
 
 - Un service [vRack](/links/network/vrack) actif sur votre compte
 - Un [serveur compatible vRack](/links/network/vrack) connecté à votre réseau vRack
-- Un accès à [l'espace client OVHcloud](/links/manager)
+
+<!-- CP-NAV-START:network-vrack -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [vRack](/links/control-panel/network-vrack)
+- **Pour accéder à vos services :** `Network`{.action} > `Réseau Privé vRack`{.action}
+
+---
+<!-- CP-NAV-END:network-vrack -->
 
 > [!warning]
 > Cette fonctionnalité peut être limitée ou indisponible sur les serveurs de [la gamme **Eco**](/links/bare-metal/eco-about).
 >
-> Merci de visiter notre [comparatif des serveurs Eco](/links/bare-metal/eco-compare) pour obtenir plus d'informations.
+> Consultez notre [comparatif des serveurs Eco](/links/bare-metal/eco-compare) pour obtenir plus d'informations.
 
 ## En pratique
 
 ### Obtention d’un nouveau bloc Additional IPv6
 
-Lors de la demande d'un nouveau bloc Additional IPv6, il est important de noter que l'allocation de celui-ci est régionale. Cela signifie que le bloc IPv6 que vous recevez sera lié à une région spécifique, définissant où le trafic public entre dans votre réseau vRack (à savoir, l'emplacement de la passerelle).
+Lors de la demande d'un nouveau bloc Additional IPv6, l'allocation est régionale. Cela signifie que le bloc IPv6 que vous recevez sera lié à une région spécifique, définissant où le trafic public entre dans votre réseau vRack (à savoir, l'emplacement de la passerelle).
 
 /// details | Demander un nouveau bloc Additional IPv6
 
@@ -96,10 +106,6 @@ La passerelle par défaut pour le premier sous-réseau /64 (celui qui est bridg�
 
 /// details | Via l'espace client OVHcloud
 
-- Cliquez sur `Network`{.action} dans le menu situé à gauche de l'écran.
-- Cliquez sur `réseau Privé vRack`{.action}.
-- Sélectionnez le vRack concerné.
-
 ![vrack management](images/700.png){.thumbnail}
 
 Sur la partie gauche, les options possibles (services éligibles à configurer) sont listées.
@@ -108,7 +114,7 @@ Sur la partie droite, vous pouvez voir ce qui est déjà configuré avec votre v
 
 Sélectionnez votre nouvelle Additional IPv6 et ajoutez-la à votre vRack.
 
-![vrack selection](images/701.png){.thumbnail}
+![vrack sélection](images/701.png){.thumbnail}
 
 Vous avez maintenant votre nouvelle Additional IPv6 ajoutée à votre vRack.
 
@@ -140,7 +146,7 @@ Si vous avez supprimé cette nouvelle Additional IPv6 de votre vRack, vous pouve
 > @api {v1} /vrack POST /vrack/{serviceName}/ipv6
 >
 
-Comme dans l'exemple ci-dessous:
+Comme dans l'exemple ci-dessous :
 
 ![api post add block](images/post-ipv6.png){.thumbnail}
 
@@ -157,11 +163,11 @@ Comme dans l'exemple ci-dessous :
 
 Maintenant, nous voyons notre bloc configuré avec un vRack. L’étape suivante consiste à configurer le ou les hôtes virtuels.
 
-### Configuration IP Statique
+### Configuration IP statique
 
 Une fois que le bloc Additional IPv6 /56 est attribué à un réseau vRack, le premier sous-réseau /64 est bridgé avec lui. Cela signifie que vous pouvez facilement utiliser de telles IP sur vos hôtes.
 
-Vérifions quels sont les sous-réseaux bridgés:
+Vérifions quels sont les sous-réseaux bridgés :
 
 > [!api]
 >
@@ -170,7 +176,7 @@ Vérifions quels sont les sous-réseaux bridgés:
 
 Comme dans l'exemple ci-dessous :
 
-![GET subrange bridged into your vrack](images/20240418-05.png){.thumbnail}
+![Reponse API listant les sous-réseaux bridges dans le vRack](images/20240418-05.png){.thumbnail}
 
 Pour obtenir plus de détails, utilisez l'appel suivant :
 
@@ -181,7 +187,7 @@ Pour obtenir plus de détails, utilisez l'appel suivant :
 
 Comme dans l'exemple ci-dessous :
 
-![GET subrange bridged into your vrack](images/20240418-06.png){.thumbnail}
+![Reponse API avec details du sous-réseau bridge et statut SLAAC](images/20240418-06.png){.thumbnail}
 
 Notez que la configuration d'IP automatique (SLAAC) est désactivée par défaut.
 
@@ -199,6 +205,65 @@ Comme dans l'exemple ci-dessous :
 ![API call POST enable SLAAC](images/20240418-07.png){.thumbnail}
 
 N'oubliez pas de configurer SLAAC sur votre machine hôte.
+
+///
+
+### Gérer la bande passante des IP publiques sur le vRack
+
+Par défaut, les blocs d'Additional IP routés via un vRack bénéficient d'une bande passante publique standard de 5 Gbps en Europe et en Amérique du Nord, ou de 100 Mbps dans les régions APAC. Pour plus de détails sur les offres disponibles, consultez les options de routage public sur notre [page produit vRack](/links/network/vrack).
+
+Pour répondre à la montée en charge des infrastructures et aux besoins des services à fort trafic, OVHcloud propose des options de bande passante payantes. Notez que ces options s'appliquent **par vRack et par région**. Comme les Additional IP sont liées à une région précise, toute modification de la bande passante impactera l'ensemble des adresses (IPv4 et IPv6) routées vers ce vRack dans la région concernée.
+
+/// details | Lors de la commande d'une Additional IP
+
+#### Choisir la bande passante publique lors de la commande
+
+Vous pouvez modifier la bande passante par défaut au moment de commander un nouveau bloc d'Additional IP, dès lors qu'un réseau vRack est sélectionné comme service backend.
+
+Pour commander un nouveau bloc d'Additional IPv6 :
+
+- Connectez-vous à [l'espace client OVHcloud](/links/manager).
+- Dans la barre latérale gauche, accédez à la section `Network`{.action}.
+- Sélectionnez `Adresses IP Publiques`{.action}.
+- Cliquez sur le bouton `Commander des IPs`{.action} en haut de la page.
+- Choisissez la version de l'IP, puis le vRack auquel l'Additional IP sera rattachée.
+- Sélectionnez la région de votre Additional IP.
+- Choisissez la bande passante publique à appliquer à votre vRack pour cette région.
+- Configurez les autres options selon vos besoins, puis finalisez la commande.
+
+///
+
+/// details | Depuis la page de gestion du vRack
+
+#### Modifier la bande passante publique depuis la page de gestion
+
+Pour les blocs d'Additional IP déjà rattachés à un vRack, la bande passante se gère directement depuis la page de configuration du service.
+
+Pour accéder à l'interface de gestion :
+
+- Dans la barre latérale gauche du Tableau de bord, ouvrez `Network`{.action}.
+- Sélectionnez `Réseau Privé vRack`{.action}.
+- Dans la colonne « Adresse IP publique et bande passante », cliquez sur le bouton `Gérer`{.action} correspondant au vRack souhaité.
+
+L'interface de gestion se divise en deux onglets :
+
+- **Tous les services attachés** : Redirige actuellement vers la page de gestion classique du vRack. Prochainement, cet onglet listera de façon optimisée tous les produits (serveurs, projets Cloud, etc.) liés au vRack.
+- **Connectivité IP publique** : Permet de gérer les options de routage public de votre vRack, y compris la bande passante.
+
+Pour modifier la bande passante :
+
+- Allez dans l'onglet `Connectivité IP publique`{.action}.
+- L'interface affiche des fenêtres de gestion par région (ex : `eu-west-par`) associées au vRack, avec la liste des IP rattachées.
+- Dans l'encadré de la région concernée, cliquez sur `Modifier la bande passante`{.action}.
+- Sélectionnez l'option souhaitée dans le panneau de droite, puis cliquez sur `Commander`{.action} pour valider.
+- Une fois le paiement effectué, la nouvelle bande passante sera effective sur votre vRack dans la région choisie après quelques minutes.
+
+> [!primary]
+>
+> Le premier mois souscrit est facturé au prorata des jours restants. Le tarif complet s'appliquera lors du cycle de facturation suivant.
+>
+
+L'augmentation de bande passante s'appliquera à toutes les adresses IP de cette région pour le vRack sélectionné.
 
 ///
 
@@ -243,7 +308,7 @@ Tout d'abord, autorisons notre hôte à accepter les publications de routage (po
 $ sudo sysctl -w net.ipv6.conf.eth1.accept_ra=1
 ```
 
-Il est important de noter que cette configuration ne sera pas fonctionnelle si le mode ipv6.forwarding est activé sur votre système. Dans ce cas, veuillez vous référer à la <a href="#host-side-configuration">[Configuration IP automatique pour un sous-réseau routé](#host-side)
+Il est important de noter que cette configuration ne sera pas fonctionnelle si le mode ipv6.forwarding est activé sur votre système. Dans ce cas, veuillez vous référer à la [Configuration IP automatique pour un sous-réseau routé](#host-side) pour plus de détails.
 
 
 Puis, démarrez l'interface :
@@ -300,7 +365,7 @@ Le trafic revenant d'une telle VM doit utiliser la route par défaut via la prem
 
 Pour la définition de sous-réseau routé, toute taille de préfixe peut être utilisée entre /57 et /64.
 
-La passerelle par défaut de l'hôte est la première adresse du bloc /56, qui est dans cet exemple: `2001:41d0:abcd:ef00::1`. Les passerelles par défaut utilisées par les VMs sont les adresses configurées de l'hôte (ici fd00::1).
+La passerelle par défaut de l'hôte est la première adresse du bloc /56, qui est dans cet exemple : `2001:41d0:abcd:ef00::1`. Les passerelles par défaut utilisées par les VMs sont les adresses configurées de l'hôte (ici fd00::1).
 
 #### Définir un sous-réseau routé
 
@@ -317,11 +382,11 @@ Pour créer un sous-réseau routé, nous devons d'abord définir :
 
 Veuillez noter qu'un sous-réseau donné ne peut pas chevaucher un autre sous-réseau défini, et que l'adresse du tronçon suivant doit appartenir à la première partie (sous-réseau /64 bridgé) de votre préfixe Additional IPv6.
 
-![continue](images/800.png){.thumbnail}
+![Definir un sous-réseau route en notation CIDR et adresse next-hop](images/800.png){.thumbnail}
 
-Le sous-réseau routé `2001:41d0:abcd::ef10::/60` est accessible via le saut suivant `2001:41d0:abcd::ef00::2`.
+Le sous-réseau routé `2001:41d0:abcd:ef10::/60` est accessible via le saut suivant `2001:41d0:abcd:ef00::2`.
 
-![continue](images/801.png){.thumbnail}
+![Sous-réseau route créé avec next-hop affiche](images/801.png){.thumbnail}
 
 ///
 
@@ -336,7 +401,7 @@ Veuillez noter qu'un sous-réseau donné ne peut pas chevaucher un autre sous-r�
 
 L'exemple ci-dessous montre comment définir un tel sous-réseau :
 
-![continue](images/20240418-02.png){.thumbnail}
+![Appel API pour definir un sous-réseau route avec next-hop](images/20240418-02.png){.thumbnail}
 
 Nous avons ici défini le sous-réseau routé `2001:41d0:abcd:ef10::/60`, qui sera délégué à la VM hébergée à l'adresse `2001:41d0:abcd:ef00::2`.
 
@@ -348,7 +413,7 @@ Nous avons ici défini le sous-réseau routé `2001:41d0:abcd:ef10::/60`, qui se
 
 Lorsque vous hébergez des VMs, nous vous recommandons fortement l'utilisation d'une configuration statique sur votre hôte.
 
-Configurez une adresse IPv6, démarrez l'interface, puis (facultatif) ajoutez la route par défaut sur l'interface vRack:
+Configurez une adresse IPv6, démarrez l'interface, puis (facultatif) ajoutez la route par défaut sur l'interface vRack :
 
 ```bash
 $ sudo ip addr add 2001:41d0:abcd:ef00::2/64 dev eth1
@@ -395,7 +460,7 @@ $ sudo ip -6 route add 2001:41d0:abcd:ef10::/60 via fd00::2
 
 /// details | Configuration d'un sous-réseau routé dans une VM
 
-Encore une fois, veuillez noter que le lien utilisé entre l'hôte et les VMs est spécifique à l'hyperviseur installé (il peut s'agir de vSwitch ou d'interfaces vEth). Merci de vous référer aux guides de configuration réseau de votre hyperviseur pour cette configuraton.
+Encore une fois, veuillez noter que le lien utilisé entre l'hôte et les VMs est spécifique à l'hyperviseur installé (il peut s'agir de vSwitch ou d'interfaces vEth). Merci de vous référer aux guides de configuration réseau de votre hyperviseur pour cette configuration.
 
 Ajouter le bloc d'IP routées à l'intérieur d'une VM, pour s'assurer qu'elle peut accepter des paquets :
 
@@ -530,7 +595,7 @@ D’autre part, les services comme Additional IPv6 sont régionaux, ce qui signi
 
 Ci-dessous, une architecture est présentée à des fins d'apprentissage avec deux régions différentes, et des blocs Additional IPv6 différents annoncés depuis chacune des deux régions. De plus, il y a un hôte configuré avec des adresses IP des deux réseaux ainsi qu'un exemple de route sous-optimale - un hôte dans une région possédant une adresse IPv6 annoncée dans une autre région :
 
-![image](images/20240418-08.png)
+![Architecture vRack multi-region avec differents blocs IPv6](images/20240418-08.png){.thumbnail}
 
 Veuillez noter que dans de telles configurations (avec des Additional IPv6 provenant de plus d'une région), le SLAAC **doit être désactivé dans l'ensemble du vRack** (car cela peut entraîner des résultats imprévisibles et une perte de connectivité aléatoire).
 
@@ -559,4 +624,8 @@ Comprendre les contraintes liées à l'utilisation d'**Additional IPv6** dans l'
 
 ## Aller plus loin
 
-Rejoignez notre [Communauté d'utilisateurs](/links/community).
+[Configurer le vRack sur vos serveurs dédiés](/pages/bare_metal_cloud/dedicated_servers/vrack_configuring_on_dedicated_server)
+
+[Configurer des Additional IP en mode bridge sur vos machines virtuelles](/pages/bare_metal_cloud/dedicated_servers/network_bridging)
+
+Échangez avec notre [communauté d'utilisateurs](/links/community).

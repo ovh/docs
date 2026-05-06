@@ -14,6 +14,17 @@ As contas Exchange podem ser usadas com vários softwares de e-mail (desde que s
 - Ter a aplicação Microsoft Outlook instalada no seu dispositivo Mac.
 - Ter acesso aos dados associados ao endereço de e-mail que pretende configurar.
 
+<!-- CP-NAV-START:web-exchange -->
+---
+
+### Acesso à Área de Cliente OVHcloud
+
+- **Ligação direta:** [Exchange](/links/control-panel/web-exchange)
+- **Caminho de navegação:** `Web Cloud`{.action} > `Exchange`{.action} > Selecione a sua plataforma
+
+---
+<!-- CP-NAV-END:web-exchange -->
+
 > [!primary]
 >
 > Se utilizar o Outlook para Windows, consulte o nosso manual [Configurar uma conta Exchange no Outlook para Windows](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_outlook_2016).
@@ -39,7 +50,7 @@ Introduza o seu endereço de e-mail e clique em `Continuar`{.action}. Se aparece
 |Endereço de e-mail|Insira um nome que lhe permita reconhecer esta conta entre as outras presentes na aplicação Outlook.|
 |DOMAINE\\nome de utilizador ou endereço de e-mail|Insira o endereço de e-mail completo.|
 |Palavra-passe|Insira a palavra-passe do e-mail.|
-|Servidor|Dependendo da configuração DNS do seu domínio, a opção de inserir o servidor pode ser facultativa. Caso seja necessário, indique o servidor em que está alojado o serviço Exchange. Poderá encontrá-lo na [Área de Cliente OVHcloud](/links/manager), na secção `Informações gerais`{.action} do serviço Exchange, depois em `Conexão`{.action}.|
+|Servidor|Dependendo da configuração DNS do seu domínio, a opção de inserir o servidor pode ser facultativa. Caso seja necessário, indique o servidor em que está alojado o serviço Exchange. Clique [neste link](/links/control-panel/web-exchange) para aceder à secção `Exchange`{.action}. O nome do servidor é apresentado na zona **Conexão** do separador `Informações gerais`{.action}.|
 
 Concluída esta etapa, clique no botão `Adicionar conta`{.action}. Se os dados estiverem corretos, a aplicação ligar-se-á à conta.
 
@@ -61,6 +72,6 @@ A OVHcloud disponibiliza uma aplicação web que tem [funcionalidades de colabor
 
 [Configurar um endereço de e-mail no Outlook para Mac ](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_outlook_2016_mac)
 
-[Configurar uma conta Email Pro no Outlook para Mac](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_outlook_2016_mac)
+[Configurar uma conta E-mail Pro no Outlook para Mac](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_outlook_2016_mac)
 
 Fale com nossa [comunidade de utilizadores](/links/community).

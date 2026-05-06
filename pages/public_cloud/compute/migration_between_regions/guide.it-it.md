@@ -11,7 +11,17 @@ Questa guida spiega come migrare un'istanza Public Cloud da una zona di disponib
 ## Prerequisiti
 
 - Avere un'[istanza Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps).
-- Essere connessi al vostro [Spazio Cliente OVHcloud](/links/manager).
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Percorso di navigazione:** `Public Cloud`{.action} > Seleziona il tuo project
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## In pratica
 

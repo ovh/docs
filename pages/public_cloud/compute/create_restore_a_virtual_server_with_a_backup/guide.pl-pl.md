@@ -17,7 +17,17 @@ Może zajść konieczność przywrócenia instancji z kopii zapasowej, np. w prz
 ## Wymagania początkowe
 
 - Posiadanie kopii zapasowej [instancji Public Cloud](/links/public-cloud/instance-backup). Należy zapoznać się w tym celu z [instrukcją tworzenia kopii zapasowej](/pages/public_cloud/compute/save_an_instance).
-- Dostęp do [Panelu klienta OVHcloud](/links/manager).
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Ścieżka nawigacji:** `Public Cloud`{.action} > Wybierz projekt
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## W praktyce
 
@@ -36,7 +46,6 @@ Może zajść konieczność przywrócenia instancji z kopii zapasowej, np. w prz
 
 > [!tabs]
 > Przez Panel klienta OVHcloud
->> Zaloguj się do [Panelu klienta OVHcloud](/links/manager), przejdź do sekcji `Public Cloud`{.action} i wybierz projekt Public Cloud.<br>
 >> Następnie kliknij `Kopia zapasowa instancji`{.action} w lewym pasku nawigacyjnym pod **Compute**.
 >>
 >> ![public-cloud-instance-backup](images/restorebackup01.png){.thumbnail}
@@ -135,7 +144,6 @@ Może zajść konieczność przywrócenia instancji z kopii zapasowej, np. w prz
 
 > [!tabs]
 > Przez Panel klienta OVHcloud
->> Zaloguj się do [Panelu klienta OVHcloud](/links/manager), przejdź do sekcji `Public Cloud`{.action} i wybierz odpowiedni projekt Public Cloud.<br>
 >> Następnie kliknij pozycję `Instancje`{.action} na lewym pasku nawigacyjnym w obszarze **Środowisko obliczeniowe**.
 >>
 >> ![public-cloud-instance-backup](images/restorebackup04.png){.thumbnail}
@@ -163,7 +171,7 @@ Może zajść konieczność przywrócenia instancji z kopii zapasowej, np. w prz
 >> >
 >>
 > Przez OVHcloud API
->> > [!API]
+>> > [!api]
 >> >
 >> > @api {v1} /cloud POST /cloud/project/{serviceName}/region/{regionName}/instance/{instanceId}/reinstall
 >> >

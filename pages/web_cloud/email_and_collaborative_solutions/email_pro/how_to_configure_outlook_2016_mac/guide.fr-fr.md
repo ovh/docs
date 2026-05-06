@@ -1,14 +1,14 @@
 ---
-title: 'E-mail Pro - Configurer son compte e-mail sur Outlook pour macOS'
-excerpt: 'Apprenez à configurer un compte E-mail Pro sur Outlook pour Mac'
+title: 'Email Pro - Configurer son compte e-mail sur Outlook pour macOS'
+excerpt: 'Apprenez à configurer un compte Email Pro sur Outlook pour Mac'
 updated: 2025-04-28
 ---
 
 ## Objectif
 
-Les comptes E-mail Pro peuvent être configurés sur différents logiciels de messagerie compatibles. Cela vous permet d’utiliser votre adresse e-mail depuis l’appareil de votre choix.
+Les comptes Email Pro peuvent être configurés sur différents logiciels de messagerie compatibles. Cela vous permet d’utiliser votre adresse e-mail depuis l’appareil de votre choix.
 
-**Apprenez à configurer un compte E-mail Pro sur Outlook pour Mac.**
+**Apprenez à configurer un compte Email Pro sur Outlook pour Mac.**
 
 > [!warning]
 >
@@ -19,9 +19,20 @@ Les comptes E-mail Pro peuvent être configurés sur différents logiciels de me
 
 ## Prérequis
 
-- Disposer d'une offre [E-mail Pro](/links/web/email-pro).
+- Disposer d'une offre [Email Pro](/links/web/email-pro).
 - Disposer de l'application Microsoft Outlook installée sur votre Mac.
 - Disposer des identifiants relatifs à l'adresse e-mail que vous souhaitez paramétrer.
+
+<!-- CP-NAV-START:web-email-pro -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Email Pro](/links/control-panel/web-email-pro)
+- **Pour accéder à vos services :** `Web Cloud`{.action} > `Email Pro`{.action} > Sélectionnez votre plateforme
+
+---
+<!-- CP-NAV-END:web-email-pro -->
 
 > [!primary]
 >
@@ -34,10 +45,10 @@ Les comptes E-mail Pro peuvent être configurés sur différents logiciels de me
 
 > [!primary]
 >
-> Dans notre exemple, nous utilisons la mention serveur : pro?.mail.ovh.net. Vous devrez remplacer le « ? » par le chiffre désignant le serveur de votre service E-mail Pro.
-> 
-> Retrouvez ce chiffre dans votre [espace client OVHcloud](/links/manager), dans la rubrique `Web Cloud`{.action} puis `E-mail Pro`{.action}. Le nom du serveur est visible dans le cadre **Connexion** de l'onglet `Informations Générales`{.action}.
-> 
+> Dans notre exemple, nous utilisons la mention serveur : pro?.mail.ovh.net. Vous devrez remplacer le « ? » par le chiffre désignant le serveur de votre service Email Pro.
+>
+> Cliquez sur [ce lien](/links/control-panel/web-email-pro) pour accéder à la section `Email Pro`{.action}. Le nom du serveur est visible dans le cadre **Connexion** de l'onglet `Informations générales`{.action}.
+>
 
 Une fois l'application Outlook lancée sur votre appareil, l'ajout d'un compte peut être effectué de deux manières différentes.
 
@@ -66,7 +77,7 @@ Vous pouvez effectuer un test d'envoi pour vérifier que le compte est bien para
 
 ![emailpro](images/configuration-outlook-2016-mac-step2.png){.thumbnail}
 
-Si vous devez renseigner manuellement des champs techniques dans les préférences du compte, vous trouverez ci-dessous les paramètres à utiliser avec notre offre E-mail Pro.
+Si vous devez renseigner manuellement des champs techniques dans les préférences du compte, vous trouverez ci-dessous les paramètres à utiliser avec notre offre Email Pro.
 
 |Type de serveur|Nom du serveur|SSL|Port|
 |---|---|---|---|

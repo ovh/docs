@@ -1,7 +1,7 @@
 ---
 title: 'Creating your first OVHcloud Public Cloud project'
 excerpt: 'Find out how to create your first Public Cloud project via the OVHcloud Control Panel'
-updated: 2025-04-28
+updated: 2026-05-05
 ---
 
 ## Objective
@@ -12,11 +12,20 @@ Creating a project is the first step in deploying [Public Cloud instances](/link
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](/links/manager)
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Navigation path:** `Public Cloud`{.action} > Select your project
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## Instructions
 
-Log in to the [OVHcloud Control Panel](/links/manager) and go to the `Public Cloud`{.action} section.
+### Project creation
 
 Once you have read and understood the terms of the contracts, tick the corresponding box, then click `Discover the Public Cloud universe`{.action}.
 
@@ -45,6 +54,20 @@ You now have access to the entire OVHcloud Public Cloud ecosystem. To discover t
 >![activate project](images/activate-project.png){.thumbnail width="400"}
 
 <iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/N7r_VCB7nmI?si=fcyToz1wK8Tw7skw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+### Project activation and free trial
+
+When you click `Activate project`{.action} from `discovery mode` and register a payment method, a **$270 free trial credit** is applied if you are eligible.
+
+> [!primary]
+> **Free trial conditions**
+>
+> - The credit is activated at the time of project activation and is valid for **one month**.
+> - **Eligible:** Any OVHcloud customer creating their first Public Cloud project, even if they already have an OVHcloud account.
+> - **Not eligible:** Customers with a current or past Public Cloud project, or who have already used a free trial credit.
+>
+> Learn more on the [OVHcloud Public Cloud free trial](/links/public-cloud/free-trial) page.
+>
 
 ## Go further
 

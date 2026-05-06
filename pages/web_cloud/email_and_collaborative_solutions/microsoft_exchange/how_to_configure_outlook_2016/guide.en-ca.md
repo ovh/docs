@@ -1,7 +1,7 @@
 ---
 title: 'Exchange - Configure your email account on Outlook for Windows'
 excerpt: 'Find out how to configure your Exchange account in Outlook for Windows'
-updated: 2026-01-09
+updated: 2026-01-30
 ---
 
 <style>
@@ -39,6 +39,17 @@ You can configure Exchange accounts on email clients, if they are compatible. By
 - Login credentials for the email account to be configured
 - The OVHcloud SRV record must be correctly configured in the domain name’s DNS zone. Please refer to our guide on [Adding a domain name to an Exchange service](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_adding_domain).
 
+<!-- CP-NAV-START:web-exchange -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Exchange](/links/control-panel/web-exchange)
+- **Navigation path:** `Web Cloud`{.action} > `Exchange`{.action} > Select your platform
+
+---
+<!-- CP-NAV-END:web-exchange -->
+
 /// details | Information regarding the management and configuration of OVHcloud services
 
 This guide will show you how to use one or more OVHcloud solutions with external tools, and the changes you need to make in specific contexts. You may need to adapt the instructions according to your situation.
@@ -71,21 +82,55 @@ If you experience any difficulties carrying out these operations, we recommend t
 
 ![Outlook](images/config-outlook-exchange01.png){.thumbnail .h-500}
 
-- Leave `Mail account` checked and complete the following information:
-    - **Name**: set a display name.
-    - **Email address**: enter your full email address.
-    - **Password**: enter the password associated with your email address.
-    - **Confirm password**: enter the password associated with your email address again.
-- Click on `Next`{.action} to continue.
+**On Windows 11, the Outlook classic interface may differ when you add an account.**
 
-![exchange](images/config-outlook-exchange02.png){.thumbnail .h-500}
+Depending on the Outlook usage history on the concerned computer, a specific configuration may lead to the display of a different interface. In some cases, the so-called "modern" interface (**interface 1**) may be disabled in favour of the historical interface (**interface 2**).
 
-- If your domain name configuration is valid, a message authorizing connection to the OVHcloud Exchange server may appear. Click on `Allow`{.action} **(1)** to allow the automatic configuration of your Exchange account.
-- A second authentication window appears, enter the password of your email address **(2)**.
+This is why we invite you to consult the chapter corresponding to the interface displayed on your screen.
 
-![exchange](images/config-outlook-exchange03.png){.thumbnail .h-500}
-
-After authorization and authentication to the OVHcloud Exchange server, the configuration will be completed and your account will be operational.
+> [!tabs]
+> **Interface 1**
+>>
+>> - Enter your email address, then click `Advanced options`{.action}.
+>> - Tick the box next to `Let me set up my account manually`{.action}, then click `Connect`{.action}.
+>>
+>> ![exchange](images/config-outlook-legacy-exchange02.png){.thumbnail}
+>> - Select **Exchange** from the list of account types.
+>>
+>> - Enter your email password in the next window, tick the box to store it, then click `OK`{.action}.
+>>
+>> ![exchange](images/config-outlook-legacy-exchange03.png){.thumbnail}
+>>
+>> > [!primary]
+>> >
+>> > If you get a message saying that Outlook was unable to configure your account, this may mean that the OVHcloud SRV record is not correctly configured in your domain name’s DNS zone.
+>> >
+>> > ![exchange](images/config-outlook-legacy-exchange04.png){.thumbnail}
+>> >
+>> > We recommend that you check the configuration of the domain name associated with your Exchange service. In your [OVHcloud Control Panel](/links/manager), go to the `Associated domains`{.action} tab and check the `Diagnostic`{.action} column of the table.
+>>
+>> - If your domain name’s configuration is valid, you may receive a login authorisation message for your OVHcloud servers. Accept this to allow your Exchange account to be configured automatically.
+>> - Then determine the retention period of the items in your Exchange account to keep them stored **locally on your computer**. Click `Next`{.action}, and then click `Done`{.action}.
+>>
+>> ![exchange](images/config-outlook-legacy-exchange05.png){.thumbnail}
+>>
+> **Interface 2**
+>>
+>> - Leave `Mail account` checked and complete the following information:
+>>     - **Name**: set a display name.
+>>     - **Email address**: enter your full email address.
+>>     - **Password**: enter the password associated with your email address.
+>>     - **Confirm password**: enter the password associated with your email address again.
+>> - Click on `Next`{.action} to continue.
+>>
+>> ![exchange](images/config-outlook-exchange02.png){.thumbnail .h-500}
+>>
+>> - If your domain name configuration is valid, a message authorizing connection to the OVHcloud Exchange server may appear. Click on `Allow`{.action} **(1)** to allow the automatic configuration of your Exchange account.
+>> - A second authentication window appears, enter the password of your email address **(2)**.
+>>
+>> ![exchange](images/config-outlook-exchange03.png){.thumbnail .h-500}
+>>
+>> After authorization and authentication to the OVHcloud Exchange server, the configuration will be completed and your account will be operational.
 
 ### Using your email address
 
@@ -125,7 +170,5 @@ If you need to make a change that could lead to the loss of your email account d
 > For more information about configuring an email address from the Outlook app on Windows, see [Microsoft Help Center](https://support.microsoft.com/en-gb/office/add-email-account-in-Outlook-6e27792a-9267-4aa4-8bb6-c84ef146101b).
 
 [Configuring your MX Plan address in Outlook for Windows](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_outlook_2016)
-
-[Configuring your Email Pro account in Outlook for Windows](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_outlook_2016)
 
 Join our [community of users](/links/community).

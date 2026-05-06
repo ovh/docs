@@ -1,5 +1,5 @@
 ---
-title: MongoDB - Tutorial - How to build and connect a Node.js Application to MongoDB
+title: Développer et connecter une application Node.js à Public Cloud Databases for MongoDB (EN)
 excerpt: "Find out how to build a NodeJS application connected to an OVHcloud Managed MongoDB service"
 updated: 2023-10-10
 ---

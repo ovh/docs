@@ -1,6 +1,6 @@
 ---
-title: "E-mail Pro - Configurar su cuenta de E-mail Pro en el nuevo Outlook para Windows"
-excerpt: "Descubra cómo configurar su dirección de E-mail Pro en el nuevo Outlook para Windows"
+title: "Email Pro - Configurar su cuenta de Email Pro en el nuevo Outlook para Windows"
+excerpt: "Descubra cómo configurar su dirección de Email Pro en el nuevo Outlook para Windows"
 updated: 2026-01-09
 ---
 
@@ -26,17 +26,28 @@ details[open]>summary::before {
 
 ## Objetivo
 
-Las direcciones de correo electrónico de la oferta [E-mail Pro](/links/web/email-pro) se pueden configurar en un cliente de mensajería compatible. Esto le permite enviar y recibir mensajes desde la aplicación de su elección.
+Las direcciones de correo electrónico de la oferta [Email Pro](/links/web/email-pro) se pueden configurar en un cliente de mensajería compatible. Esto le permite enviar y recibir mensajes desde la aplicación de su elección.
 
 El **nuevo Outlook** reemplaza desde el 1 de enero de 2025 la aplicación **Correo** en Windows. Para obtener más información sobre este tema, consulte la página oficial de Microsoft: "[Outlook para Windows: El futuro del correo, calendario y Personas en Windows 11](https://support.microsoft.com/es-es/office/outlook-pour-windows-l-avenir-du-courrier-du-calendrier-et-des-personnes-sur-windows-11-715fc27c-e0f4-4652-9174-47faa751b199)".
 
-**Descubra cómo configurar su dirección de E-mail Pro en el nuevo Outlook para Windows.**
+**Descubra cómo configurar su dirección de Email Pro en el nuevo Outlook para Windows.**
 
 ## Requisitos
 
-- Tener una dirección [E-mail Pro](/links/web/email-pro).
+- Tener una dirección [Email Pro](/links/web/email-pro).
 - Tener el [nuevo Outlook](https://support.microsoft.com/office/getting-started-with-the-new-outlook-for-windows-656bb8d9-5a60-49b2-a98b-ba7822bc7627) para Windows.
 - Poseer las credenciales relacionadas con la dirección de correo electrónico que desea configurar.
+
+<!-- CP-NAV-START:web-email-pro -->
+---
+
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [Email Pro](/links/control-panel/web-email-pro)
+- **Ruta de navegación:** `Web Cloud`{.action} > `Email Pro`{.action} > Seleccione su plataforma
+
+---
+<!-- CP-NAV-END:web-email-pro -->
 
 /// details | Información relacionada con la gestión y configuración de los servicios OVHcloud
 
@@ -56,7 +67,7 @@ Le proporcionamos esta guía para acompañarlo en las tareas más comunes. Sin e
 >
 > ![outlook Windows](images/outlook-windows-identify01.png){.thumbnail .h-500}
 >
-> Para configurar su dirección de correo electrónico Pro en Outlook clásico, consulte nuestro guía "[E-mail Pro - Configurar una cuenta de correo en Outlook clásico para Windows](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_outlook_2016)".
+> Para configurar su dirección de correo electrónico Pro en Outlook clásico, consulte nuestro guía "[Email Pro - Configurar una cuenta de correo en Outlook clásico para Windows](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_outlook_2016)".
 
 ### Agregar la cuenta <a name="add-account"></a>
 
@@ -64,11 +75,7 @@ Le proporcionamos esta guía para acompañarlo en las tareas más comunes. Sin e
 >
 > En nuestro ejemplo, hemos utilizado la mención servidor: pro?.mail.ovh.net. Sustituya la "?" por la cifra que designa al servidor de su servicio Email Pro.
 >
-> 1. Conéctese a su [área de cliente de OVHcloud](/links/manager).
-> 1. Acceda al apartado `Web Cloud`{.action}.
-> 1. Haga clic en `Email Pro`{.action}.
-> 1. Seleccione la plataforma correspondiente.
-> 1. El nombre del servidor aparece en el marco **Conexión** de la pestaña `Información general`{.action}.
+> Haga clic en [este enlace](/links/control-panel/web-email-pro) para acceder a la sección `Email Pro`{.action}.
 >
 
 Para configurar su dirección de correo electrónico, siga los pasos pinchando en las pestañas que se muestran a continuación.
@@ -169,7 +176,7 @@ Para el envío de correos electrónicos, encuentre a continuación los parámetr
 >
 > Para obtener más información sobre la configuración de una dirección de correo electrónico desde el cliente de mensajería nuevo Outlook en Windows, consulte [el centro de ayuda de Microsoft](https://support.microsoft.com/office/start-using-new-outlook-for-windows-4395454d-cb2f-4c16-bb24-fa4bb36650ae).
 
-[Primeros pasos con la solución E-mail Pro](/pages/web_cloud/email_and_collaborative_solutions/email_pro/first_config)
+[Primeros pasos con la solución Email Pro](/pages/web_cloud/email_and_collaborative_solutions/email_pro/first_config)
 
 Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con los [partners de OVHcloud](/links/partner).
 

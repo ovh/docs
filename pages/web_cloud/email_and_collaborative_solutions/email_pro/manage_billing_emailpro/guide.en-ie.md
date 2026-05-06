@@ -12,17 +12,22 @@ The Email Pro service offers flexible management for account billing. This guide
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](/links/manager)
 - An [Email Pro](/links/web/email-pro) account
+
+<!-- CP-NAV-START:web-email-pro -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Email Pro](/links/control-panel/web-email-pro)
+- **Navigation path:** `Web Cloud`{.action} > `Email Pro`{.action} > Select your platform
+
+---
+<!-- CP-NAV-END:web-email-pro -->
 
 ## Instructions
 
 ### Ordering additional accounts
-
-1. Log in to your [OVHcloud Control Panel](/links/manager).
-1. Open the `Web Cloud`{.action} section.
-1. Click `Email Pro`{.action}.
-1. Select the service concerned.
 
 Go to the `Email accounts`{.action} tab, then click `Order accounts`{.action} in the top right-hand corner.
 

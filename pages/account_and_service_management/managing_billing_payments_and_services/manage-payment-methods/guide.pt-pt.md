@@ -10,16 +10,26 @@ A Área de Cliente OVHcloud permite-lhe guardar e gerir vários métodos de paga
 
 ## Requisitos
 
-- Ter acesso à [Área de Cliente OVHcloud](/links/manager).
-- Dispor de um método de pagamento válido.
+- Dispor de um método de pagamento válido
+
+<!-- CP-NAV-START:billing-payment-methods -->
+---
+
+### Acesso à Área de Cliente OVHcloud
+
+- **Ligação direta:** [Métodos de pagamento](/links/control-panel/billing-payment-methods)
+- **Caminho de navegação:** Clique no seu nome no canto superior direito > `Os meus métodos de pagamento`{.action}
+
+---
+<!-- CP-NAV-END:billing-payment-methods -->
 
 ## Instruções <a name="payment_methods"></a>
 
-Na [Área de Cliente OVHcloud](/links/manager), clique no seu nome (canto superior direito) e selecione `Os meus métodos de pagamento`{.action}.
+Na página [Os meus métodos de pagamento](/links/control-panel/billing-payment-methods), encontrará um quadro que indica os métodos de pagamento registados na sua conta de cliente.
 
 ![hubpayment](/pages/assets/screens/control_panel/product-selection/right-menu/my-payment-methods.png){.thumbnail}
 
-Aparecerá uma página com um quadro que indica os métodos de pagamento registados na sua conta de cliente. Nela pode:
+Nela pode:
 
 - Adicionar um método de pagamento
 - Alterar o seu método de pagamento padrão
@@ -109,21 +119,18 @@ De seguida, elimine o método de pagamento utilizando o ID que obteve na etapa a
 >
 > Para mais informações, consulte o guia [Primeiros passos com as API OVHcloud](/pages/manage_and_operate/api/first-steps).
 >
-> Em caso de dificuldades para identificar os seus métodos de pagamento através das API OVHcloud, utilize a função `Alterar a descrição`{.action} (botão `...`{.action} à direita do ecrã) na parte relativa aos [Métodos de pagamento](#payment_methods) da sua [Área de Cliente OVHcloud](/links/manager).
+> Em caso de dificuldades para identificar os seus métodos de pagamento através das API OVHcloud, utilize a função `Alterar a descrição`{.action} (botão `...`{.action} à direita do ecrã) na parte relativa aos [Métodos de pagamento](#payment_methods) da página [Os meus métodos de pagamento](/links/control-panel/billing-payment-methods).
 >
 
 ### Conta pré-paga
 
 #### O que é a conta pré-paga?
 
-A *conta pré-paga* está presente na sua [Área de Cliente OVHcloud](/links/manager) assim que for criada. Permite-lhe creditar antecipadamente à sua conta de cliente e utilizar estes fundos para o pagamento das suas encomendas e das suas faturas de renovação.
+A *conta pré-paga* está presente na página [Os meus métodos de pagamento](/links/control-panel/billing-payment-methods) assim que for criada. Permite-lhe creditar antecipadamente à sua conta de cliente e utilizar estes fundos para o pagamento das suas encomendas e das suas faturas de renovação.
 
 Ao creditar regularmente à sua conta, certificar-se-á de que a [renovação automática](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#a-renovacao-automatica) dos seus serviços nunca será interrompida por falta de pagamento.
 
-Para isso, aceda a secção `Métodos de pagamento` na Área de Cliente:
-
-- clique no canto superior direito e, em seguida, em `Os meus métodos de pagamento`{.action}, no menu da direita;
-- selecione o separador `Conta pré-paga`{.action}.
+Para isso, aceda à página [Os meus métodos de pagamento](/links/control-panel/billing-payment-methods) e selecione o separador `Conta pré-paga`{.action}.
 
 ![prepaid-account](images/prepaid-account.png){.thumbnail}
 

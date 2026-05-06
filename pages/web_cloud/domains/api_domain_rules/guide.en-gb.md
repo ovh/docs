@@ -1,7 +1,7 @@
 ---
 title: "Managing Eligibility Rules"
 excerpt: "Description of the technical format of the domain name eligibility rules"
-updated: 2022-05-05
+updated: 2026-02-10
 ---
 
 <!-- Reminder to put at the beginning of each page -->
@@ -35,8 +35,8 @@ These rules are set by the extension operator, the registry, and vary by extensi
 
 Regarding the eligibility rules, they relate to elements known to the registrar, such as the domain name, contacts or the registration procedure. These eligibility rules apply to:
 
-- the data of the **owner contact**, **administrator contact** and **technical contact**. For example, the owner address must be within the European Union for a `.eu` domain.
-- the data related to the **procedure** for requesting creation, transfer and change of owner. For example, the reason for creating a `.fr` domain representing a city name.
+- the data of the **owner contact**, **administrator contact** and **technical contact**. For example, the owner address must be within the European Union for a `.eu` domain name.
+- the data related to the **procedure** for requesting creation, transfer and change of owner. For example, the reason for creating a `.fr` domain name representing a city name.
 
 With a growing number of extensions each year, it becomes necessary to automate the management of these rules in order to guarantee reasonable processing times and avoid additional setup fees.
 By defining a description of these different rules in a technical format, it is possible to automate the generation of the different required forms as well as the validation of the data entered.
@@ -423,9 +423,9 @@ The rule format will be explained and detailed in the following sections.
 | `ACCEPT_CONDITIONS` | Check box                | Special conditions to accept                              |
 | `REASON`            | Multi-line text field    | Reason for purchasing the domain name                     |
 | `CLAIMS_NOTICE`     | Check box                | Information about the _claim notice_ to be accepted       |
-| `PROTECTED_CODE`    | Text field               | Code requested when a domain is protected by the registry |
+| `PROTECTED_CODE`    | Text field               | Code requested when a domain name is protected by the registry |
 | `AUTH_INFO`         | Text field               | Domain-related code for a transfer request                |
-| `DOMAIN_CONFIG`     | Form                     | List of fields linked to a domain                         |
+| `DOMAIN_CONFIG`     | Form                     | List of fields linked to a domain name                         |
 | `OWNER_CONTACT`     | Form                     | List of fields linked to the owner contact                |
 | `ADMIN_ACCOUNT`     | Form                     | List of fields linked to the administrative contact       |
 | `TECH_ACCOUNT`      | Form                     | List of fields linked to the technical contact            |
@@ -447,7 +447,7 @@ The rule format will be explained and detailed in the following sections.
 > [!primary]
 >
 > The `domain` type is currently used only for the `ac.uk` and `gov.uk` extensions.
-> These domains have a very specific process of creation, conditions of appropriation and conditions of use.
+> These domain names have a very specific process of creation, conditions of appropriation and conditions of use.
 
 #### Constraints <a name="constraints"></a>
 
@@ -848,7 +848,7 @@ Following this first part explaining the technical representation of the eligibi
 
 ### Generic rules
 
-Most extensions (mainly gTLDs and newGTLDs) share the same eligibility rules. You can get most of the extensions available for sale if you have a contact that respects them.
+Most extensions (mainly gTLDs and newGTLDs) share the same eligibility rules. You can order most of the extensions available for sale if you have an owner contact that respects them.
 
 #### Creation of a domain name
 
@@ -2418,11 +2418,11 @@ Most extensions (mainly gTLDs and newGTLDs) share the same eligibility rules. Yo
 
 ### Specific rules
 
-Some ccTLDs have specific eligibility rules, in particular on the domain owner's country of residence.
+Some ccTLDs have specific eligibility rules, in particular on the domain name owner's country of residence.
 
 #### Case of `.berlin`
 
-The case of `.berlin` is interesting because it has special eligibility rules. To have a `.berlin`, the administrative **or** the owner contact of the domain must be resident in Berlin.
+The case of `.berlin` is interesting because it has special eligibility rules. To have a `.berlin`, the administrative **or** the owner contact of the domain name must be resident in Berlin.
 
 To do this, we _condition_ the _constraint_ of the _value_ of the `address.country` and `address.city` fields of the owner contact to the values of the `address.country` and `address.city` fields of the administrator, and vice versa.
 
@@ -2769,8 +2769,8 @@ This is represented by the following rule. For the sake of clarity, the rules on
 
 There are two interfaces you can use to manage and validate domain name rules:
 
-- One to retrieve the eligibility rules of a domain for an action (creation, transfer...).
-- One to validate data for a domain and for an action.
+- One to retrieve the eligibility rules of a domain name for an action (creation, transfer, etc.).
+- One to validate data for a domain name and for an action.
 
 ### Retrieving an eligibility rule
 
@@ -2822,7 +2822,7 @@ A special feature of the `trade` and `transfer` actions is that if a required ob
 
 > [!primary]
 >
-> If you want to test that a domain already registered on your account complies with its eligibility rules, you can use this API on the `update` action with an empty body. The rule engine will perform a validation using the current service data.
+> If you want to test that a domain name already registered on your account complies with its eligibility rules, you can use this API on the `update` action with an empty body. The rule engine will perform a validation using the current service data.
 
 The validation API returns an HTTP status code 200 if the rule is respected. Otherwise, it returns a 400 HTTP status code with a detailed error in the following format:
 

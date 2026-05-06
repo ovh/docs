@@ -1,7 +1,7 @@
 ---
 title: 'Transferring a domain name to OVHcloud'
 excerpt: 'Find out how to transfer a generic domain name to OVHcloud'
-updated: 2025-04-28
+updated: 2026-03-27
 ---
 
 <iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/MILAnKdjHns" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -22,7 +22,7 @@ By transferring your domain name, you will change its **registrar**. You can tra
 >
 > To transfer the domain name management to another OVHcloud customer account, a *change of contacts* must be made instead. The procedure is described in [our contact management guide](/pages/account_and_service_management/account_information/managing_contacts).
 >
-> If you also need to change the **domain name holder**, you should do so **before** you change the domain name contacts. To do this, use our [change of ownership for domain names instructions](/pages/web_cloud/domains/trade_domain).
+> If you also need to change the **domain name holder**, you should do so **before** you change the domain name contacts. To do this, use our [instructions for changing the holder of a domain name](/pages/web_cloud/domains/trade_domain).
 >
 > If, in addition to transferring your domain name, you would like to migrate the services associated with it (website, email, etc.), please read our guide on [Migrating your website and associated services to OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh), before continuing.
 > This guide explains in detail how to migrate all your services without any service interruptions.
@@ -35,18 +35,29 @@ By transferring your domain name, you will change its **registrar**. You can tra
 
 - A domain name registered with another registrar.
 - The domain name is more than 60 days old.
-- The domain name has not been transferred or changed owners within the last 60 days.
+- The domain name has not been transferred or changed holders within the last 60 days.
 - The domain name status is "OK" or "Transferable".
 - The domain name is not expired and has an expiry date that allows to finish the transfer process in time - recommended are more than 60 days.
 - The domain name is unlocked, with a transfer code received or the ability to receive one.
 - You have the authority to request a transfer for the domain name.
-- The domain name owner and/or its administrators must be informed of the transfer request.
+- The domain name holder and/or its administrators must be informed of the transfer request.
+
+<!-- CP-NAV-START:web-domains -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Domain names](/links/control-panel/web-domains)
+- **Navigation path:** `Web Cloud`{.action} > `Domain names`{.action} > Select your domain name
+
+---
+<!-- CP-NAV-END:web-domains -->
 
 ## Instructions
 
 > [!success]
 >
-> To find out the pricing conditions for transferring a domain name depending on its extension, enter the domain you wish to transfer on our page [www.ovhcloud.com/asia/domains/tld/](/links/web/domains-tld) and follow the steps in this guide.
+> To find out the pricing conditions for transferring a domain name depending on its extension, enter the domain you wish to transfer on our page [www.ovhcloud.com/en-gb/domains/tld/](/links/web/domains-tld) and follow the steps in this guide.
 >
 
 The transfer procedure has several steps. These steps will involve various entities being contacted, including your current domain name registrar, OVHcloud, and other parties. The table below provides a breakdown of who is contacted, and how long each step will take to complete.
@@ -54,18 +65,18 @@ The transfer procedure has several steps. These steps will involve various entit
 |Steps|Description|Who is involved?|Where?|Time taken|
 |---|---|---|---|---|
 |[1](#step1)|[Checking the information associated with the domain](#step1)|The domain administrator|With the current registrar|Depends on your actions|
-|[2](#step2)|[Unlocking the domain and retrieving the transfer code](#step2)|The domain administrator, with the owner's permission|With the current registrar|Depends on your actions|
-|[3](#step3)|[Requesting the domain name transfer](#step3)|Whoever has the transfer code and the owner's permission|With the new registrar|Depends on your actions|
+|[2](#step2)|[Unlocking the domain and retrieving the transfer code](#step2)|The domain administrator, with the holder's permission|With the current registrar|Depends on your actions|
+|[3](#step3)|[Requesting the domain name transfer](#step3)|Whoever has the transfer code and the holder's permission|With the new registrar|Depends on your actions|
 |[4](#step4)|[Transfer confirmation](#step4)|With the current registrar|At the request of the organisation managing the domain name extension|Five days maximum|
 
 > [!warning]
 >
-> The exact procedure for domain transfer may vary, especially in case of some country-code **TLD**s (**ccTLD**, such as .pl, .lu, .hk, .ro, .be, .lt, .dk, .at, .fi, etc.) and a few special purpose **TLD**s (.am, .fm, etc.). Depending on your domain name extension, you may have additional requirements. We recommend to first check against the information displayed in the section of the extension concerned, on our website: <https://www.ovhcloud.com/asia/domains/tld/>.
+> The exact procedure for domain transfer may vary, especially in case of some country-code **TLD**s (**ccTLD**, such as .pl, .lu, .hk, .ro, .be, .lt, .dk, .at, .fi, etc.) and a few special purpose **TLD**s (.am, .fm, etc.). Depending on your domain name extension, you may have additional requirements. We recommend to first check against the information displayed in the section of the extension concerned, on our website: <https://www.ovhcloud.com/en-gb/domains/tld/>.
 >
 
 ### Step 1: Check the information associated with the domain <a name="step1"></a>
 
-**To start with, it is important to ensure that the information associated with the domain name is up-to-date.** Since the implementation of GDPR, the data visible in [WHOIS](/links/web/domains-whois) has become very limited. We recommend checking the information associated with your domain name via your current domain name registrar.
+**To start with, it is important to ensure that the information associated with the domain name is up-to-date.** Since the implementation of GDPR, the data visible in "[Whois](/links/web/domains-whois)" has become very limited. We recommend checking the information associated with your domain name via your current domain name registrar.
 
 - **If the information is correct:** Go to the next step of this guide.
 
@@ -105,28 +116,28 @@ Domains can also be ordered in addition to a [Web Hosting plan](/links/web/hosti
 >
 > Throughout the order process, we advise taking special care with regard to the following points:
 >
-> - **Data on the domain name owner.** Especially since GDPR legislation is in effect, please ensure that all information on the domain name owner matches the information stored by your current domain name registrar. Doing this will ensure that you will not be suspected of domain name theft.
+> - **Data on the domain name holder.** Especially since GDPR legislation is in effect, please ensure that all information on the domain name holder matches the information stored by your current domain name registrar. Doing this will ensure that you will not be suspected of domain name theft.
 >
-> - **Entering the DNS servers for your domain name.** If you are currently using your domain name to keep a website or email service online, you will need to specify their DNS servers in order to avoid any service interruptions.  
+> - **Entering the DNS servers for your domain name.** If you are currently using your domain name to keep a website or email service online, you will need to specify their DNS servers in order to avoid any service interruptions.
 >
 
-#### Managing owner and DNS servers details
+#### Managing holder and DNS servers details
 
-- Clicking on `Change the configuration`{.action} in this step allows you to enter the names of the DNS servers the domain name is currently using. This way, the domain name will be already associated with those DNS servers in the OVHcloud configuration. 
+- Clicking on `Change the configuration`{.action} in this step allows you to enter the names of the DNS servers the domain name is currently using. This way, the domain name will be already associated with those DNS servers in the OVHcloud configuration.
 
 - If you proceed without doing this, the domain name will provided with a new DNS zone on OVHcloud DNS servers. A manual [modification of the DNS zone](/pages/web_cloud/domains/dns_zone_edit) might then become necessary.
 
-- In some cases, the transfer process may require additional information regarding the domain name owner. To add this information, click on the option `Manage contacts/owner`{.action}.
+- In some cases, the transfer process may require additional information regarding the domain name holder. To add this information, click on the option `Manage contacts/holders`{.action}.
 
 ![domain](/pages/assets/screens/website/order/order-summary.png){.thumbnail}
 
 #### Tracking a transfer after the order
 
-When your order is confirmed, you receive a purchase order. The transfer process does not start until payment has been received. As soon as this step is done, you can track the transfer progress via the [OVHcloud Control Panel](/links/manager). Once you have logged in, go to the `Web Cloud`{.action} section, then click on `Ongoing operations`{.action}.
+When your order is confirmed, you receive a purchase order. The transfer process does not start until payment has been received. As soon as this step is done, you can track the transfer progress on the [Ongoing operations](/links/control-panel/web-ongoing-operations) page.
 
 > [!primary]
 >
-> If the transfer code was not entered during the order, you can enter it in the section `Ongoing operations`{.action} to validate the transfer.
+> If the transfer code was not entered during the order, you can enter it from this same page to validate the transfer.
 
 ### Step 4: Transfer validation by the current registrar <a name="step4"></a>
 
@@ -140,7 +151,7 @@ Once the order and transfer code have been confirmed, the domain name registrar 
 
 If a refusal is issued by the current registrar, contact them to find out why they refused it.
 
-The transfer process can be restarted from the [OVHcloud Control Panel](/links/manager). Once you have logged in, go to the `Web Cloud`{.action} section, then click on `Ongoing operations`{.action}.
+The transfer process can be restarted from the [Ongoing operations](/links/control-panel/web-ongoing-operations) page.
 
 > [!primary]
 >
@@ -154,9 +165,7 @@ The transfer process can be restarted from the [OVHcloud Control Panel](/links/m
 
 ### Step 5: Manage your domain at OVHcloud
 
-Once the transfer procedure is complete, you can manage your domain from the [OVHcloud Control Panel](/links/manager).
-
-To do this, go to `Web Cloud`{.action} and open `Domain names`{.action} in the services bar, then click on the domain name concerned.
+Once the transfer procedure is complete, you can manage your domain name from the [Domain names](/links/control-panel/web-domains) page.
 
 > [!warning]
 >
@@ -166,10 +175,22 @@ To do this, go to `Web Cloud`{.action} and open `Domain names`{.action} in the s
 > For domain names with a *country* or *regional* extension (**ccTLD**s such as *.fr*, *.be*, *.de*, *.es*, etc.), the transfer rules depend on the specifications put in place by the *registry* of the extension in question.
 > Once the transfer is complete, check the expiry date of your domain name in your OVHcloud Control Panel.
 >
-> To do this, log in to your [OVHcloud Control Panel](/links/manager), then go to the `Web Cloud`{.action} section. In the left-hand column, click on `Domain names`{.action} then select the domain name concerned. The **month** and **year** of the next renewal are displayed below the domain name at the top of the page.
->
 > Depending on the situation and the new expiry date, a renewal of the domain name may be necessary right after the transfer.
->
+
+<!-- CP-STEPS-START:check-domain-expiry -->
+To check this, click on the tabs below to view each of the **2** steps.
+
+> [!tabs]
+> **Step 1**
+>>
+>> Go to the [Domain names](/links/control-panel/web-domains) page, then select the domain name concerned.
+>>
+>> ![Domain names](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
+>>
+> **Step 2**
+>>
+>> On the page that appears, just below the domain name, you will find the planned renewal date with the **month** and **year** of expiry.
+<!-- CP-STEPS-END:check-domain-expiry -->
 
 ## Go further
 

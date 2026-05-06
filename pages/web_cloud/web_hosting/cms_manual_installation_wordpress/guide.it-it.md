@@ -28,7 +28,6 @@ Questa guida ti mostra come installare manualmente il CMS (Content Management Sy
 
 - Disporre di un'offerta di [hosting web](/links/web/hosting) che contiene almeno un database.
 - Disporre di un [dominio](/links/web/domains)
-- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
 
 ## Procedura
 

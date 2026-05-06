@@ -1,8 +1,42 @@
 ---
 title: Creare una zona DNS OVHcloud per un dominio
 excerpt: Questa guida ti mostra come creare una zona DNS per il tuo dominio dallo Spazio Cliente OVHcloud
-updated: 2025-04-28
+updated: 2026-03-10
 ---
+
+<style>
+details>summary {
+    color:rgb(33, 153, 232) !important;
+    cursor: pointer;
+}
+details>summary::before {
+    content:'\25B6';
+    padding-right:1ch;
+}
+details[open]>summary::before {
+    content:'\25BC';
+}
+pre {
+    font-size: 14px !important;
+}
+pre.bgwhite {
+    background-color: #fff !important;
+    color: #000 !important;
+    font-family: monospace !important;
+    padding: 5px !important;
+    margin-bottom: 5px !important;
+}
+pre.bgwhite code {
+    background-color: #fff !important;
+    border: solid 0px transparent !important;
+    font-family: monospace !important;
+    font-size: 0.90em !important;
+    color: #000 !important;
+}
+.small {
+   font-size: 0.90em !important;
+}
+</style>
 
 ## Obiettivo
 
@@ -22,7 +56,17 @@ Per diversi motivi, potresti aver bisogno di creare una zona DNS per il tuo domi
 
 - Disporre di un dominio
 - Il dominio in questione non deve disporre già di una zona DNS (attiva o meno) in OVHcloud o essere oggetto di un'operazione o di un ordine in corso in OVHcloud.
-- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
+
+<!-- CP-NAV-START:web-dns-zone -->
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [Zone DNS](/links/control-panel/web-dns-zone)
+- **Percorso di navigazione:** `Web Cloud`{.action} > `Zone DNS`{.action} > Seleziona il tuo nome di dominio
+
+---
+<!-- CP-NAV-END:web-dns-zone -->
 
 ## Procedura
 
@@ -40,28 +84,41 @@ Per diversi motivi, potresti aver bisogno di creare una zona DNS per il tuo domi
 > Verifica che, prima di modificare i **server DNS** dichiarati presso il tuo dominio, la configurazione della nuova zona DNS corrisponda alle tue aspettative.
 >
 
-### Step 1: creare la zona DNS dallo Spazio Cliente OVHcloud
+### 1 - Creare la zona DNS dallo Spazio Cliente OVHcloud
 
-Accedi allo [Spazio Cliente OVHcloud](/links/manager) e clicca su `Web cloud`{.action}. Clicca su `Zone DNS`{.action} nella colonna di sinistra e poi sul pulsante `Ordina`{.action} in alto a destra.
+<!-- CP-STEPS-START:create-dns-zone -->
+Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **3** passi.
 
-Nella nuova pagina, inserisci il dominio (ad esempio: *dominio.tld*) per il quale vuoi creare una zona DNS OVHcloud. Attendi qualche istante per verificare il dominio da parte del tool.
+> [!tabs]
+> **Passaggio 1**
+>>
+>> Accedi alla pagina [Zone DNS](/links/control-panel/web-dns-zone), quindi sul pulsante `Ordina`{.action}.
+>>
+>> ![DNS zones](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
+>>
+> **Passaggio 2**
+>>
+>> Nella pagina che appare, inserisci il dominio (ad esempio: *dominio.tld*) per cui desideri creare una zona DNS OVHcloud. Aspetta alcuni istanti mentre lo strumento effettua controlli sul dominio.
+>>
+>> ![dnszonecreate](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/adding-a-dns-zone.png){.thumbnail}
+>>
+>> Se un messaggio indica che la zona DNS non può essere creata, verifica che il dominio rispetti i prerequisiti necessari o contatta la persona che lo gestisce. Appena tutto sarà corretto, riprova l'operazione.
+>>
+> **Passaggio 3**
+>>
+>> Una volta completata la verifica, scegli se attivare il numero minimo di record per la zona DNS che vuoi creare. Questa scelta non è definitiva, perché in seguito sarà possibile [modificare i record della zona DNS](/pages/web_cloud/domains/dns_zone_edit).
+>>
+>> ![dnszonecreate](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/adding-a-dns-zone-step-2.png){.thumbnail}
+>>
+>> |Attivare i record minimi?|Dettaglio|
+>> |---|---|
+>> |Sì|Seleziona questa scelta se vuoi personalizzare in autonomia la zona DNS in seguito.<br>![minimale-entra](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/dashboard-minimal-entries.png){.thumbnail}|
+>> |No|Seleziona questa opzione se intendi utilizzare servizi OVHcloud come [hosting web](/links/web/hosting), con la zona preconfigurata a tal fine.<br>![no-minimale-entra](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/dashboard-ovh-full-entries.png){.thumbnail}|
+>>
+>> Una volta effettuata la tua scelta, segui le fasi visualizzate nel tuo Spazio Cliente OVHcloud fino alla creazione della zona DNS.
+<!-- CP-STEPS-END:create-dns-zone -->
 
-Se compare un messaggio che indica che la zona DNS non può essere creata, verifica che il dominio rispetti i requisiti necessari o chiedi alla persona che lo gestisce di farlo per te. Non appena tutto è corretto, prova a ripetere l'operazione.
-
-![dnszonecreate](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/adding-a-dns-zone.png){.thumbnail}
-
-Una volta completata la verifica, scegli se attivare il numero minimo di record per la zona DNS che vuoi creare. Questa scelta non è definitiva, perché in seguito sarà possibile [modificare i record della zona DNS](/pages/web_cloud/domains/dns_zone_edit).
-
-![dnszonecreate](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/adding-a-dns-zone-step-2.png){.thumbnail}
-
-|Attivare i record minimi?|Dettaglio|
-|---|---|
-|Sì|Seleziona questa scelta se vuoi personalizzare in autonomia la zona DNS in seguito.<br>![minimale-entra](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/dashboard-minimal-entries.png){.thumbnail}|
-|No|Seleziona questa opzione se intendi utilizzare servizi OVHcloud come [hosting web](/links/web/hosting), con la zona preconfigurata a tal fine.<br>![no-minimale-entra](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/dashboard-ovh-full-entries.png){.thumbnail}|
-
-Una volta effettuata la scelta, segui gli step fino alla creazione della zona DNS.
-
-### Step 2: modifica la zona DNS (facoltativo)
+### 2 - Modifica la zona DNS (facoltativo)
 
 Ora che la zona DNS del tuo dominio è stata creata, è possibile modificarla. Questa operazione è facoltativa, ma può rivelarsi necessaria per garantire la disponibilità dei servizi associati a questo dominio (ad esempio un sito Web e/o un servizio di posta elettronica).
 
@@ -69,37 +126,75 @@ Per modificare questa zona DNS, consulta la nostra guida "[Modifica una zona DNS
 
 > [!primary]
 >
-> Se hai appena creato la zona DNS e il dominio non compare ancora nella lista dei tuoi servizi (nella sezione `Web cloud`{.action} dello Spazio Cliente OVHcloud > `Zone DNS`{.action}), attendi 15-20 minuti e ricarica la pagina.
+> Se hai appena creato la zona DNS e il dominio non compare ancora nella lista dei tuoi servizi, attendi 15-20 minuti e ricarica la pagina.
 >
 
-### Step 3: modifica i server DNS del dominio
+### 3 - Modifica i server DNS del dominio
 
 Una volta che la zona DNS OVHcloud è pronta per l'utilizzo, associala al tuo dominio per applicare la configurazione che contiene. 
 
 È quindi necessario recuperare prima i **server DNS** di OVHcloud sui quali è stata creata la zona DNS di OVHcloud per il tuo dominio.
 
-Accedi allo [Spazio Cliente OVHcloud](/links/manager) e clicca su `Web cloud`{.action}. Nella colonna di sinistra, clicca su `Domini`{.action} e seleziona la zona DNS interessata. 
+<!-- CP-STEPS-START:find-dns-servers -->
+Per trovarli, clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **2** passi.
 
-A sinistra è presente un logo a forma di globo, contrassegnato con il termine *DNS*. 
+> [!tabs]
+> **Passaggio 1**
+>>
+>> Accedi alla pagina [Zone DNS](/links/control-panel/web-dns-zone), poi scegli il dominio interessato.
+>>
+>> ![DNS zones](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
+>>
+> **Passaggio 2**
+>>
+>> Nella tabella presente sulla pagina che appare, individua le 2 colonne **Tipo** e **Destinazione**.
+>>
+>> ![DNS zones](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/tab.png){.thumbnail}
+>>
+>> Cerca le 2 righe di tipo **NS** e recupera i 2 valori presenti nella colonna **Destinazione**.
+>> I nomi dei server DNS devono avere una delle 3 forme seguenti:
+>>
+>> - `nsXX.ovh.net` e `dnsXX.ovh.net` o, `nsXXX.ovh.net` e `dnsXXX.ovh.net` (dove ogni `X` rappresenta un numero compreso tra **0** e **9**).
+>> - `nsXX.ovh.ca` e `dnsXX.ovh.ca` o, `nsXXX.ovh.ca` e `dnsXXX.ovh.ca` (dove ogni `X` rappresenta un numero compreso tra **0** e **9**).
+>> - `ns200.anycast.me` e `dns200.anycast.me` (se hai sottoscritto l'opzione [DNS anycast](/links/web/domains-options)).
+<!-- CP-STEPS-END:find-dns-servers -->
+
+Una volta recuperati i 2 nomi dei server DNS, sono possibili 2 situazioni.
 
 > [!primary]
-> A questo punto, se hai un logo a forma di globo (senza il termine *DNS* scritto all'interno), è perché il dominio è già gestito nello Spazio Cliente OVHcloud. 
->
-> Se sei il contatto *Amministratore* del dominio, puoi modificare direttamente i **server DNS** utilizzando la nostra [guida](/pages/web_cloud/domains/dns_server_edit) sull'argomento.
 >
 > Ti ricordiamo che, prima di modificare i **server DNS** dichiarati presso il tuo dominio, verifica che la configurazione della nuova zona DNS corrisponda alle tue aspettative.
->
 
-Nella nuova pagina, i server DNS da utilizzare con il tuo dominio per attivare la zona DNS OVHcloud vengono mostrati nella parte inferiore di `Name Server`{.action}.
+**Clicca su una delle 2 situazioni per visualizzare il contenuto.**
 
-![dnszonecreate](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/name-servers.png){.thumbnail}
+/// details | Il dominio ha la sua zona DNS attiva su OVHcloud
 
-Una volta in possesso delle informazioni, **modifica i server DNS del tuo dominio dall'interfaccia del provider che gestisce il dominio**. Una volta completata l'operazione, la propagazione delle modifiche potrebbe richiedere fino a **48 ore**.
+Consulta [questa guida](/pages/web_cloud/domains/dns_server_edit) per verificare o modificare i server DNS dichiarati per il tuo dominio.
 
-> [!primary]
->
-> Ti ricordiamo che, prima di modificare i **server DNS** dichiarati presso il tuo dominio, verifica che la configurazione della nuova zona DNS corrisponda alle tue aspettative.
->
+///
+
+/// details | Il dominio ha la sua zona DNS attiva presso un altro provider
+
+In questo caso specifico, contatta il tuo provider DNS specificando che desideri sostituire i record DNS di tipo NS per il tuo dominio.
+
+Ecco un esempio di richiesta da inviare al tuo provider DNS:
+
+<pre class="bgwhite"><code>
+Buongiorno,
+
+Per il mio dominio <b>domain.tld</b>, desidero sostituire gli attuali server DNS con i seguenti server DNS:
+
+ - nsXX.ovh.net.
+ - dnsXX.ovh.net.
+
+Cordiali saluti,
+</code></pre>
+
+Nell'esempio qui sopra, sostituisci i valori **domain.tld**, **nsXX.ovh.net** e **dnsXX.ovh.net** con i tuoi valori.
+
+///
+
+Dopo la modifica dei server DNS del dominio, la propagazione delle modifiche può richiedere fino a **48 ore**.
 
 > [!success]
 >

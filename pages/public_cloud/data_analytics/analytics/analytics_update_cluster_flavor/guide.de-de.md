@@ -1,5 +1,5 @@
 ---
-title: Analytics - How to update your service flavor
+title: Update the flavor of Analytics
 excerpt: Find out how to adjust the flavor of your cluster
 updated: 2025-02-03
 ---
@@ -14,12 +14,23 @@ This option is available through the OVHcloud [API](/links/api) and the [Control
 
 ### Requirements
 
-- Access to the [OVHcloud Control Panel](/links/manager) or to the [API](/links/api)
+- Access to the [OVHcloud Control Panel](/links/control-panel/publiccloud-projects) or to the [API](/links/api)
 - A [Public Cloud project](/links/public-cloud/public-cloud) in your OVHcloud account
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Navigation path:** `Public Cloud`{.action} > Select your project
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ### Instructions
 
-To adjust the flavor of your cluster, log in to the [OVHcloud Control Panel](/links/manager) and open your Public Cloud project. Click `Data Analysis`{.action} or `Data Streaming`{.action} in the left navigation bar, then select your engine instance.
+To adjust the flavor of your cluster, click `Data Analysis`{.action} or `Data Streaming`{.action} in the left navigation bar, then select your engine instance.
 
 ![Cluster overview](images/cluster_overview.png){.thumbnail}
 

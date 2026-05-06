@@ -27,9 +27,19 @@ Le [vRack](/links/network/vrack) est un réseau privé qui vous permet de config
 ## Prérequis
 
 - Posséder un [projet Public Cloud](/pages/public_cloud/public_cloud_cross_functional/create_a_public_cloud_project)
-- Être connecté à votre [espace client OVHcloud](/links/manager)
 - Avoir [créé un utilisateur OpenStack](/pages/public_cloud/public_cloud_cross_functional/create_and_delete_a_user) (facultatif)
 - Connaissances réseaux élémentaires
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Projets Public Cloud](/links/control-panel/publiccloud-projects)
+- **Pour accéder à vos services :** `Public Cloud`{.action} > Sélectionnez votre projet
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## Présentation des interfaces
 
@@ -155,7 +165,7 @@ Pour cela, vous devez choisir le bon fournisseur et la bonne ressource Terraform
 >
 
 > [!tabs]
-> Depuis l'espace client OVHcloud
+> Depuis l’espace client OVHcloud
 >> > [!primary]
 >> >
 >> > Cette étape ne s'applique pas aux projets nouvellement créés, qui sont désormais automatiquement livrés avec un vRack. Pour visualiser le vRack une fois le projet créé, rendez-vous dans la section `Network`{.action} et cliquez sur `Réseau Privé vRack`{.action} pour voir le(s) vRack(s).
@@ -338,6 +348,7 @@ Pour cela, vous devez choisir le bon fournisseur et la bonne ressource Terraform
 >> >
 >>
  
+
 ### Étape 2 : Créer un réseau privé dans le vRack <a name="create-pn-in-vrack"></a>
 
 Il est nécessaire de créer un réseau privé avec un réseau local virtuel (VLAN) afin que les instances reliées au vRack puissent communiquer entre elles.
@@ -563,6 +574,7 @@ Depuis l'espace client OVHcloud et les APIv6 OVHcloud, vous pourrez personnalise
 >> openstack subnet create --dhcp --network OS_CLI_private_network OS_CLI_subnet --subnet-range 10.1.0.0/16
 >> ```
 >> 
+
 
 ### Étape 3 : Intégrer une instance dans le vRack
 
@@ -853,6 +865,7 @@ Deux situations peuvent se présenter à vous :
 >> ```
 >>
 
+
 ///
 
 /// details | **Cas d'une instance déjà existante**
@@ -869,9 +882,7 @@ Ainsi, par exemple, si vous avez une interface publique *eth0*, vous aurez en pl
 
 > [!tabs]
 > Depuis l'espace client OVHcloud
->> Connectez-vous à votre [espace client OVHcloud](/links/manager), accédez à la section `Public Cloud`{.action} et sélectionnez le projet Public Cloud concerné en haut à gauche.
->>
->> Cliquez alors sur `Instances`{.action} dans le menu latéral de gauche. Cliquez ensuite sur le bouton `⁝`{.action} à droite de l'instance concernée puis sur `Détail de l'instance`{.action}.
+>> Dans votre projet Public Cloud, cliquez sur `Instances`{.action} dans le menu latéral de gauche. Cliquez ensuite sur le bouton `⁝`{.action} à droite de l'instance concernée puis sur `Détail de l'instance`{.action}.
 >>
 >> ![detail instance](images/instance_details.png){.thumbnail}
 >>
@@ -1131,6 +1142,7 @@ Ainsi, par exemple, si vous avez une interface publique *eth0*, vous aurez en pl
 >> [...]
 >> ```
 >>
+
 
 ### Détacher une interface réseau
 

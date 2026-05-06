@@ -1,6 +1,6 @@
 ---
-title: "Jak odzyskać dostęp do serwera w przypadku utraty hasła użytkownika"
-excerpt: "Dowiedz się, jak skonfigurować nowe hasło dla konta użytkownika w systemie operacyjnym GNU/Linux w trybie rescue OVHcloud"
+title: "Jak zmienić hasło użytkownika na serwerze dedykowanym"
+excerpt: "Zmień hasło użytkownika na serwerze dedykowanym OVHcloud za pomocą trybu rescue lub narzędzi systemowych."
 updated: 2025-10-02
 ---
 
@@ -20,7 +20,7 @@ W takim przypadku możesz zalogować się do Twojego serwera za pomocą trybu Re
 ## Wymagania początkowe
 
 - Posiadanie [serwera dedykowanego](/links/bare-metal/bare-metal) lub [VPS](/links/bare-metal/vps) na koncie OVHcloud
-- Dostęp do [Panelu klienta OVHcloud](/links/manager)
+
 
 > [!primary]
 >

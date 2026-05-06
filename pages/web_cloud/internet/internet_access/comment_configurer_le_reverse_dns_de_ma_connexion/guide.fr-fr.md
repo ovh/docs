@@ -1,6 +1,6 @@
 ---
-title: Comment configurer le reverse DNS de ma connexion Internet OVHcloud
-excerpt: "Découvrez comment configurer et vérifier le reverse DNS d'un domaine redirigeant vers l'adresse IP de votre acccès FTTH ou xDSL OVHcloud"
+title: Comment configurer le Reverse DNS de ma connexion Internet OVHcloud
+excerpt: "Découvrez comment configurer et vérifier le Reverse DNS d'un domaine redirigeant vers l'adresse IP de votre accès FTTH ou xDSL OVHcloud"
 updated: 2025-04-28
 ---
 
@@ -15,11 +15,20 @@ Par exemple, dans le cadre de l'utilisation d'un serveur e-mail, si l'e-mail est
 
 - Disposer d'un [accès Internet xDSL ou FTTH OVHcloud](/links/telecom/offre-internet).
 - Disposer d'un nom de domaine (ou sous-domaine) redirigeant vers l'adresse IP (IPv4 et/ou IPv6) de votre accès xDSL ou fibre.
-- Être connecté à l'[espace client OVHcloud](/links/manager) dans la partie `Telecom`{.action}.
-
 Il est également possible de configurer les Reverse DNS des blocs IPv4 fournis en option sur nos accès.
 
 Retrouvez plus d'informations dans notre guide « [Commander et gérer un bloc IP /29](/pages/web_cloud/internet/internet_access/comment_commander_et_gerer_un_bloc_ip_29) ».
+
+<!-- CP-NAV-START:telecom-xdsl-fttx -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Accès Internet](/links/control-panel/telecom-xdsl-fttx)
+- **Pour accéder à vos services :** `Télécom`{.action} > `Offres Internet`{.action} > Sélectionnez votre accès
+
+---
+<!-- CP-NAV-END:telecom-xdsl-fttx -->
 
 ## En pratique
 
@@ -105,16 +114,14 @@ Nous pouvons maintenant passer à l'étape suivante qui est la configuration de 
 
 ### Configurer le Reverse DNS de votre connexion
 
-La configuration du Reverse DNS s'effectue dans l'espace client OVHcloud :
+<!-- CP-STEPS-START:configurer-reverse-dns -->
 
-1. Connectez-vous à votre [espace client OVHcloud](/links/manager) et cliquez sur `Télécom`{.action}.
-1. Cliquez sur `Offres Internet`{.action} puis sur le *Pack* contenant l'accès à Internet concerné.
-1. Cliquez sur votre accès à Internet FTTH ou xDSL dans le cadre `Accès Internet` à droite.
+La configuration du Reverse DNS s'effectue dans votre [espace client OVHcloud](/links/control-panel/telecom-xdsl-fttx). Cliquez sur votre accès à Internet FTTH ou xDSL dans le cadre `Accès Internet` à droite.
 
 Dans les caractéristiques sur la droite, vous verrez apparaître votre IPv4 publique sous cette forme : `109.190.xxx.xxx` ou `151.127.xxx.xxx` et votre préfixe IPv6 public sous cette forme : `2001:41d0:xxxx:xxxx::`.
 
 - Cliquez sur l'icône engrenage (⚙) à côté de votre IP.
-- Cliquez sur le `+`{.action} afin d'ajouter le reverse DNS.
+- Cliquez sur le `+`{.action} afin d'ajouter le Reverse DNS.
 
 > [!tabs]
 > IPv4
@@ -134,7 +141,7 @@ Dans les caractéristiques sur la droite, vous verrez apparaître votre IPv4 pub
 >> >
 >> > **Vérifiez vos paramètres de sécurité IPv6**
 >> >
->> > En IPv6, c'est votre machine qui est exposée directement sur Internet. De ce fait, il est indispensable de vous assurer que tous les moyens de sécurité disponibles (pare-feu routeur et machine, iptable, ouverture de port, etc...) sont activés et parfaitement configurés.
+>> > En IPv6, c'est votre machine qui est exposée directement sur Internet. De ce fait, il est indispensable de vous assurer que tous les moyens de sécurité disponibles (pare-feu routeur et machine, iptable, ouverture de port, etc.) sont activés et parfaitement configurés.
 >>
 >> - En IPv6 vous devez saisir l'adresse IPv6 de la machine qui va exploiter votre nom de domaine. Votre IPv6 doit contenir le même préfixe que votre connexion Internet.
 >> - Saisissez le nom de domaine ou sous-domaine et cliquez sur `Suivant`{.action}. Validez à la page suivante.
@@ -143,6 +150,8 @@ Dans les caractéristiques sur la droite, vous verrez apparaître votre IPv4 pub
 
 
 Quelques minutes seront nécessaires pour que la nouvelle valeur de votre DNS soit visible dans votre espace client.
+
+<!-- CP-STEPS-END:configurer-reverse-dns -->
 
 ### Vérifier la configuration du Reverse DNS
 
@@ -217,7 +226,7 @@ Cliquez sur les onglets ci-dessous pour afficher les détails selon le type d'IP
 >> ```
 >>
 
-Dans les deux cas, nous voyons que l'adresse IP redirige bien vers le nom de domaine [ovhtelecom.fr](http://ovhtelecom.fr).
+Dans les deux cas, nous voyons que l'adresse IP redirige bien vers le nom de domaine [ovhtelecom.fr](https://ovhtelecom.fr).
 
 Votre Reverse DNS est à présent configuré.
 

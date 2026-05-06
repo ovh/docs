@@ -6,12 +6,12 @@ updated: 2025-09-11
 
 ## Objetivo
 
-cPanel es un panel de control que facilita la gestión de los alojamientos web. Hace que las tareas complejas sean más accesibles, incluso para los nuevos usuarios. Ofrece una amplia gama de funcionalidades como, por ejemplo, para la gestión: 
+cPanel es un panel de control que facilita la gestión de los alojamientos web. Hace que las tareas complejas sean más accesibles, incluso para los nuevos usuarios. Ofrece una amplia gama de funcionalidades como, por ejemplo, para la gestión:
 
-- mensajes de correo
-- dominios
-- bases de datos
-- de la seguridad
+- Mensajes de correo
+- Dominios
+- Bases de datos
+- De la seguridad
 - etc.
 
 Gracias a una interfaz gráfica que permite automatizar los parámetros, el alojamiento de sitios web se simplifica.
@@ -21,7 +21,17 @@ Gracias a una interfaz gráfica que permite automatizar los parámetros, el aloj
 ## Requisitos
 
 - Tener contratado un servicio [VPS reciente](/links/bare-metal/vps) con un [OS compatible con cPanel](/links/bare-metal/vps-os).
-- Haber iniciado sesión en el [área de cliente de OVHcloud](/links/manager).
+
+<!-- CP-NAV-START:baremetal-vps -->
+---
+
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [VPS management](/links/control-panel/baremetal-vps)
+- **Ruta de navegación:** `Bare Metal Cloud`{.action} > `Servidores privados virtuales`{.action} > Seleccione su VPS
+
+---
+<!-- CP-NAV-END:baremetal-vps -->
 
 > [!warning]
 > Esta funcionalidad no está disponible actualmente para los servidores virtuales en las [Local Zones](/links/bare-metal/vps-lz).
@@ -34,7 +44,7 @@ Si ya tiene un VPS y desea instalar cPanel, puede reinstalar el VPS desde su [á
 > [!warning]
 >
 > Si reinstala un VPS, todos los datos almacenados en el VPS se perderán.
-> 
+>
 
 Para instalar su servidor cPanel, contrate un VPS con la distribución cPanel.
 
@@ -43,9 +53,9 @@ Para instalar su servidor cPanel, contrate un VPS con la distribución cPanel.
 Cuando su VPS esté listo, recibirá un correo electrónico con los datos de acceso para conectarse a su servidor cPanel:
 
 ```
- |    Sus aplicaciones:
- |    Application: cpanel
- |    Puede conectarse a cpanel desde https://<ip>:2087/<session_parameters>
+ |    Aplicaciones instaladas:
+ |    Aplicación: cpanel
+ |    Puede conectarse a cpanel desde https://<nombre_del_servidor_vps>:2087/<session_parameters>
 ```
 
 ### Primera conexión
@@ -54,7 +64,7 @@ Una vez que haya recibido el mensaje de correo electrónico con el enlace único
 
 La URL generada por el comando `sudo whmlogin` le permite conectarse sin credenciales (usuario y contraseña) a su interfaz WHM. WHM es una capa de cPanel. Puede acceder a cPanel después de realizar los siguientes pasos.
 
-#### Etapa 1: leer y aceptar las condiciones de uso de cPanel
+#### Etapa 1: Leer y aceptar las condiciones de uso de cPanel
 
 Lea y acepte las condiciones de uso de cPanel.
 

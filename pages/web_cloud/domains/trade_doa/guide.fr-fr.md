@@ -1,18 +1,18 @@
 ---
-title: "Changer le propriétaire d’un domaine avec une Demande d'Opération AFNIC (DOA)"
+title: "Changer le titulaire d’un nom de domaine avec une Demande d'Opération AFNIC (DOA)"
 excerpt: "Découvrez comment réaliser une Demande d'Opération AFNIC (DOA)"
-updated: 2024-10-10
+updated: 2026-02-10
 ---
 
 ## Objectif
 
-Un [changement de propriétaire d'un nom de domaine](/pages/web_cloud/domains/trade_domain) se fait conventionnellement via une double validation par e-mail.<br>
-Dans certains cas de figure, cette méthode ne peut pas être mise en oeuvre. Pour pallier à cela, le registre de [l'AFNIC (Association Française pour le Nommage Internet en Coopération)](https://www.afnic.fr/) met à disposition un document pour récupérer la propriété d'un domaine géré par ce registre : **La Demande d'Opération AFNIC (DOA)**.
+Un [changement de titulaire d'un nom de domaine](/pages/web_cloud/domains/trade_domain) se fait conventionnellement via une double validation par e-mail.<br>
+Dans certains cas de figure, cette méthode ne peut pas être mise en oeuvre. Pour pallier à cela, le registre de [l'AFNIC (Association Française pour le Nommage Internet en Coopération)](https://www.afnic.fr/) met à disposition un document pour récupérer la propriété d'un nom de domaine géré par ce registre : **La Demande d'Opération AFNIC (DOA)**.
 
-Cette opération permet de récupérer la propriété d'un domaine dont l'extension est [gérée par l'AFNIC](https://www.afnic.fr/produits-services/) dans les cas suivants :
+Cette opération permet de récupérer la propriété d'un nom de domaine dont l'extension est [gérée par l'AFNIC](https://www.afnic.fr/produits-services/) dans les cas suivants :
 
-- **Transmission volontaire (Trade)** : utile si, par exemple, vous ne pouvez pas valider l'e-mail reçu sur l'adresse de contact du propriétaire actuel du domaine.
-- **Transmission forcée (Recover)** : permet de récupérer la propriété du domaine dans le cadre d'une décision judiciaire, d'une liquidation judiciaire ou d'un décès.
+- **Transmission volontaire (Trade)** : utile si, par exemple, vous ne pouvez pas valider l'e-mail reçu sur l'adresse de contact du titulaire actuel du nom de domaine.
+- **Transmission forcée (Recover)** : permet de récupérer la propriété du nom de domaine dans le cadre d'une décision judiciaire, d'une liquidation judiciaire ou d'un décès.
 
 Si les situations décrites ci-dessus ne vous correspondent pas, sachez que l'AFNIC met à disposition [d'autres procédures pour résoudre vos litiges](https://www.afnic.fr/noms-de-domaine/resoudre-un-litige/).
 
@@ -29,14 +29,13 @@ Si les situations décrites ci-dessus ne vous correspondent pas, sachez que l'AF
 
 ## Prérequis
 
-- Avoir **initié une demande de changement de propriétaire** pour un domaine ayant une [extension gérée par l'AFNIC](https://www.afnic.fr/produits-services/) et pour lequel les procédures indiquées dans notre documentation sur le [changement de propriétaire d'un domaine](/pages/web_cloud/domains/trade_domain) **ne peuvent pas être appliquées**.
-- Avoir un bon de commande de **changement de propriétaire d'un domaine** dans le statut "en cours".
+- Avoir **initié une demande de changement de titulaire** pour un nom de domaine ayant une [extension gérée par l'AFNIC](https://www.afnic.fr/produits-services/) et pour lequel les procédures indiquées dans notre documentation sur le [changement de titulaire d'un nom de domaine](/pages/web_cloud/domains/trade_domain) **ne peuvent pas être appliquées**.
+- Avoir un bon de commande de **changement de titulaire d'un nom de domaine** dans le statut "en cours".
 - Télécharger la **Demande d'Opération AFNIC (DOA)** via le lien suivant : <https://www.afnic.fr/wp-media/uploads/2021/03/doa.pdf>.
-- Accéder à votre [espace client OVHcloud](/links/manager).
 
 ## En pratique
 
-La première étape consiste à initier une demande de changement de propriétaire pour votre domaine ayant une [extension gérée par l'AFNIC](https://www.afnic.fr/produits-services/) à l'aide de notre documentation sur le [changement de propriétaire d'un domaine](/pages/web_cloud/domains/trade_domain).
+La première étape consiste à initier une demande de changement de titulaire pour votre nom de domaine ayant une [extension gérée par l'AFNIC](https://www.afnic.fr/produits-services/) à l'aide de notre documentation sur le [changement de titulaire d'un nom de domaine](/pages/web_cloud/domains/trade_domain).
 
 Téléchargez ensuite le document présent sur la page <https://www.afnic.fr/wp-media/uploads/2021/03/doa.pdf>.
 
@@ -47,30 +46,30 @@ Téléchargez ensuite le document présent sur la page <https://www.afnic.fr/wp-
 Voici un descriptif des éléments pouvant être renseignés dans la DOA :
 
 - Dans la zone **1**, vous pouvez renseigner le nom de domaine concerné et cocher l'une des deux opérations (volontaire ou forcée). Vous pouvez indiquer « OVHcloud » dans le formulaire `Bureau d'enregistrement demandeur`.
-- Dans la zone **2**, vous pouvez renseigner les informations du propriétaire actuel du domaine.
-- Dans la zone **3**, vous pouvez renseigner les informations du nouveau propriétaire demandé pour le domaine.
+- Dans la zone **2**, vous pouvez renseigner les informations du titulaire actuel du nom de domaine.
+- Dans la zone **3**, vous pouvez renseigner les informations du nouveau titulaire demandé pour le domaine.
 - Dans la zone **4**, vous pouvez lister les documents justificatifs complémentaires transmis avec la DOA.
 
 ### DOA dans le cadre d'une transmission volontaire (Trade)
 
 > [!primary]
 >
-> Un bon de commande pour l’opération de changement de propriétaire doit obligatoirement être en cours.
+> Un bon de commande pour l’opération de changement de titulaire doit obligatoirement être en cours.
 >
 
-La validation des e-mails envoyés lors de l'initialisation du changement de propriétaire ne sera pas nécessaire, chacune des parties complète le document et le retourne à OVHcloud en créant un ticket d'assistance depuis son [espace client OVHcloud](/links/manager) respectif.
+La validation des e-mails envoyés lors de l'initialisation du changement de titulaire ne sera pas nécessaire, chacune des parties complète le document et le retourne à OVHcloud en créant un ticket d'assistance depuis son [espace client OVHcloud](/links/manager) respectif.
 
-La DOA devra également être accompagnée des documents justificatifs de l'ancien propriétaire ci-dessous.
+La DOA devra également être accompagnée des documents justificatifs de l'ancien titulaire ci-dessous.
 
-- Si l'ancien propriétaire est une société :
+- Si l'ancien titulaire est une société :
     - Extrait K-Bis de moins de 3 mois (ou équivalent s'il s'agit d'une société étrangère).
     - Photocopie recto-verso d'une pièce d'identité de l'un des gérants apparaissant sur l'extrait K-Bis.
 
-- Si l'ancien propriétaire est une association :
+- Si l'ancien titulaire est une association :
     - Extrait du Journal Officiel de moins de 3 mois (ou équivalent s'il s'agit d'une association étrangère).
     - Photocopie recto-verso d'une pièce d'identité de l'un des gérants apparaissant sur l'extrait du Journal Officiel.
 
-- Si l'ancien propriétaire est un particulier :
+- Si l'ancien titulaire est un particulier :
     - Photocopie recto-verso d'une pièce d'identité.
     - Justificatif de domicile de moins de 3 mois (facture d'électricité par exemple).
 
@@ -83,90 +82,90 @@ La DOA devra également être accompagnée des documents justificatifs de l'anci
 
 > [!primary]
 >
-> Un bon de commande pour l’opération de changement de propriétaire doit obligatoirement être en cours.
+> Un bon de commande pour l’opération de changement de titulaire doit obligatoirement être en cours.
 >
 
-Cette DOA est utilisée dans le cas où le propriétaire actuel du domaine ne peut pas fournir son accord (décision de justice, liquidation judiciaire, décès, etc.).<br>
-Seul le nouveau propriétaire complète le document et le retourne à OVHcloud, accompagné des pièces justifiant ce changement forcé, en créant un ticket d'assistance depuis son [espace client OVHcloud](/links/manager).
+Cette DOA est utilisée dans le cas où le titulaire actuel du nom de domaine ne peut pas fournir son accord (décision de justice, liquidation judiciaire, décès, etc.).<br>
+Seul le nouveau titulaire complète le document et le retourne à OVHcloud, accompagné des pièces justifiant ce changement forcé, en créant un ticket d'assistance depuis son [espace client OVHcloud](/links/manager).
 
 > [!primary]
 >
-> Dans certains situations nécessitant une opération de transmission forcée (Recover), il n’est pas obligatoire de renseigner les informations du propriétaire actuel du domaine.
+> Dans certains situations nécessitant une opération de transmission forcée (Recover), il n’est pas obligatoire de renseigner les informations du titulaire actuel du nom de domaine.
 >
 
 Retrouvez ci-dessous la liste des documents à fournir en fonction de la situation rencontrée.
 
 #### DOA suite à une décision judiciaire
 
-- Si le nouveau propriétaire est une société :
+- Si le nouveau titulaire est une société :
     - Extrait K-Bis de moins de 3 mois (ou équivalent s'il s'agit d'une société étrangère).
     - Photocopie recto-verso d'une pièce d'identité de l'un des gérants apparaissant sur l'extrait K-Bis.
     - Procès-verbal en lien avec la décision judiciaire.
 
-- Si le nouveau propriétaire est une association :
+- Si le nouveau titulaire est une association :
     - Extrait du Journal Officiel de moins de 3 mois (ou équivalent s'il s'agit d'une association étrangère).
     - Photocopie recto-verso d'une pièce d'identité de l'un des gérants apparaissant sur l'extrait du Journal Officiel.
     - Procès-verbal en lien avec la décision judiciaire.
 
-- Si le nouveau propriétaire est un particulier :
+- Si le nouveau titulaire est un particulier :
     - Photocopie recto-verso d'une pièce d'identité.
     - Justificatif de domicile de moins de 3 mois (facture d'électricité par exemple).
     - Procès-verbal en lien avec la décision judiciaire.
 
 #### DOA suite à une liquidation judiciaire
 
-- Si le nouveau propriétaire est une société :
+- Si le nouveau titulaire est une société :
     - Extrait K-Bis de moins de 3 mois (ou équivalent s'il s'agit d'une société étrangère).
     - Photocopie recto-verso d'une pièce d'identité de l'un des gérants apparaissant sur l'extrait K-Bis.
-    - Le mandataire judiciaire doit signer la partie concernant l'ancien propriétaire du domaine et fournir une attestation sur l'honneur justifiant son statut.
+    - Le mandataire judiciaire doit signer la partie concernant l'ancien titulaire du nom de domaine et fournir une attestation sur l'honneur justifiant son statut.
 
-- Si le nouveau propriétaire est une association :
+- Si le nouveau titulaire est une association :
     - Extrait du Journal Officiel de moins de 3 mois (ou équivalent s'il s'agit d'une association étrangère).
     - Photocopie recto-verso d'une pièce d'identité de l'un des gérants apparaissant sur l'extrait du Journal Officiel.
-    - Le mandataire judiciaire doit signer la partie concernant l'ancien propriétaire du domaine et fournir une attestation sur l'honneur justifiant son statut.
+    - Le mandataire judiciaire doit signer la partie concernant l'ancien titulaire du nom de domaine et fournir une attestation sur l'honneur justifiant son statut.
 
-- Si le nouveau propriétaire est un particulier :
+- Si le nouveau titulaire est un particulier :
     - Photocopie recto-verso d'une pièce d'identité.
     - Justificatif de domicile de moins de 3 mois (facture d'électricité par exemple).
-    - Le mandataire judiciaire doit signer la partie concernant l'ancien propriétaire du domaine et fournir une attestation sur l'honneur justifiant son statut.
+    - Le mandataire judiciaire doit signer la partie concernant l'ancien titulaire du nom de domaine et fournir une attestation sur l'honneur justifiant son statut.
 
 #### DOA suite à un décès
 
-- Si le nouveau propriétaire est une société :
+- Si le nouveau titulaire est une société :
     - Extrait K-Bis de moins de 3 mois (ou équivalent s'il s'agit d'une société étrangère).
     - Photocopie recto-verso d'une pièce d'identité de l'un des gérants apparaissant sur l'extrait K-Bis.
     - Un acte de décès.
-    - Un acte notarié désignant le nouveau propriétaire.
+    - Un acte notarié désignant le nouveau titulaire.
 
-- Si le nouveau propriétaire est une association :
+- Si le nouveau titulaire est une association :
     - Extrait du Journal Officiel de moins de 3 mois (ou équivalent s'il s'agit d'une association étrangère).
     - Photocopie recto-verso d'une pièce d'identité de l'un des gérants apparaissant sur l'extrait du Journal Officiel.
     - Un acte de décès.
-    - Un acte notarié désignant le nouveau propriétaire.
+    - Un acte notarié désignant le nouveau titulaire.
 
-- Si le nouveau propriétaire est un particulier :
+- Si le nouveau titulaire est un particulier :
     - Photocopie recto-verso d'une pièce d'identité.
     - Justificatif de domicile de moins de 3 mois (facture d'électricité par exemple).
     - Un acte de décès.
-    - Un acte notarié désignant le nouveau propriétaire.
+    - Un acte notarié désignant le nouveau titulaire.
 
 > [!primary]
 >
-> Si vous vous trouvez dans l'incapacité de réaliser vous-même le bon de commande de changement de propriétaire depuis votre [espace client OVHcloud](/links/manager), vous pouvez, dans ce cas précis, contacter directement le support en créant un ticket d'assistance depuis votre espace client.
+> Si vous vous trouvez dans l'incapacité de réaliser vous-même le bon de commande de changement de titulaire depuis votre [espace client OVHcloud](/links/manager), vous pouvez, dans ce cas précis, contacter directement le support en créant un ticket d'assistance depuis votre espace client.
 >
 
 ### Cas particulier : DOA dans le cadre d'une SYRELI (transmission forcée : Recover) + transfert entrant du nom de domaine chez OVHcloud <a name="doa-syreli"></a>
 
-La [procédure de **SY**stème de **RE**solution de **LI**tiges (**SYRELI**)](https://www.syreli.fr/fr/) a été mise au point par [l'AFNIC](https://www.afnic.fr/produits-services/) pour résoudre des situations particulières sur un nom de domaine au sens des articles [L.45-2 et L.45-6 du **C**ode des **P**ostes et des **C**ommunications **E**lectroniques (**CPCE**)](https://www.legifrance.gouv.fr/codes/id/LEGISCTA000006150688). 
+La [procédure de **SY**stème de **RE**solution de **LI**tiges (**SYRELI**)](https://www.syreli.fr/fr/) a été mise au point par [l'AFNIC](https://www.afnic.fr/produits-services/) pour résoudre des situations particulières sur un nom de domaine au sens des articles [L.45-2 et L.45-6 du **C**ode des **P**ostes et des **C**ommunications **E**lectroniques (**CPCE**)](https://www.legifrance.gouv.fr/codes/id/LEGISCTA000006150688).
 
 La procédure SYRELI étant payante, nous vous recommandons de vous assurer qu'elle correspond parfaitement à votre situation. Pour cela, n'hésitez pas à consulter le **règlement**, les **ressources** et les **cas de jurisprudence** mis à disposition par l'AFNIC sur leur site web dédié à la [procédure SYRELI](https://www.syreli.fr/fr/).
 
 Si vous bénéficiez par la suite d'une décision SYRELI favorable pour récupérer la propriété de votre nom de domaine et que vous souhaitez transférer ce dernier chez OVHcloud, suivez les **4 étapes** ci-dessous :
 
 1. Si cela n'a pas déjà été réalisé lors de votre procédure SYRELI, remplissez une [DOA dans le cadre d'une transmission forcée (Recover)](#doa-recover).
-2. Préparez les documents à fournir avec la [DOA dans le cadre d'une transmission forcée (Recover)](#doa-recover), en fonction du statut du nouveau propriétaire (société, association, particulier).
-3. Initiez le [transfert entrant](/pages/web_cloud/domains/transfer_incoming_generic_domain) du nom de domaine concerné chez OVHcloud. Lors de cette étape, vérifiez que le nouveau propriétaire déclaré correspond bien au nouveau propriétaire bénéficiant de la procédure SYRELI. Lorsque vous arriverez à l'étape de demande du code de transfert du nom de domaine, l'opération tombera automatiquement en erreur. Cette situation est normale et est liée au fait qu'il ne s'agit pas là d'un transfert classique. L'essentiel ici est que la commande soit initiée pour que le support OVHcloud puisse agir à partir de l'étape qui suit.
-4. Contactez le support OVHcloud en créant [un ticket d'assistance depuis le Centre d'Aide](https://help.ovhcloud.com/csm?id=csm_get_help). Précisez dans le ticket le nom de domaine concerné, la décision SYRELI, la DOA complétée et l'ensemble des documents relatifs au nouveau propriétaire que vous avez préparés lors de l'**étape 2**.
+2. Préparez les documents à fournir avec la [DOA dans le cadre d'une transmission forcée (Recover)](#doa-recover), en fonction du statut du nouveau titulaire (société, association, particulier).
+3. Initiez le [transfert entrant](/pages/web_cloud/domains/transfer_incoming_generic_domain) du nom de domaine concerné chez OVHcloud. Lors de cette étape, vérifiez que le nouveau titulaire déclaré correspond bien au nouveau titulaire bénéficiant de la procédure SYRELI. Lorsque vous arriverez à l'étape de demande du code de transfert du nom de domaine, l'opération tombera automatiquement en erreur. Cette situation est normale et est liée au fait qu'il ne s'agit pas là d'un transfert classique. L'essentiel ici est que la commande soit initiée pour que le support OVHcloud puisse agir à partir de l'étape qui suit.
+4. Contactez le support OVHcloud en créant [un ticket d'assistance depuis le Centre d'Aide](https://help.ovhcloud.com/csm?id=csm_get_help). Précisez dans le ticket le nom de domaine concerné, la décision SYRELI, la DOA complétée et l'ensemble des documents relatifs au nouveau titulaire que vous avez préparés lors de l'**étape 2**.
 
 Dès que le support prend en charge votre demande et en fonction des délais de traitement de l'AFNIC, le processus de traitement prend généralement entre 24 et 48 heures. En effet, l'AFNIC vérifiera les éléments fournis dans votre ticket d'assistance et validera ou non l'opération de Recover.
 

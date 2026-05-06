@@ -16,7 +16,17 @@ You can also use the OVHcloud Control Panel to manage your personal data, and de
 ## Requirements
 
 - an [OVHcloud account](/pages/account_and_service_management/account_information/ovhcloud-account-creation)
-- access to the [OVHcloud Control Panel](/links/manager)
+
+<!-- CP-NAV-START:account-profile -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [My profile](/links/control-panel/account-profile)
+- **Navigation path:** Click your name in the top right > `Access my account`{.action} > `Edit my profile`{.action}
+
+---
+<!-- CP-NAV-END:account-profile -->
 
 > [!primary]
 > If you experience any difficulties logging in to your account, please read the “[What do I do if I can't log in?](/pages/account_and_service_management/account_information/ovhcloud-account-login#login-failure)” section of our guide on [Logging in to the OVHcloud Control Panel](/pages/account_and_service_management/account_information/ovhcloud-account-login).
@@ -53,9 +63,7 @@ If you have not already done so, save your password in a [password manager](/pag
 If you experience any issues accessing your primary email address, a backup email address will help you retain access to your account, and manage your services as a result.
 <br>This second address **must be different** from the first, in particular to facilitate your procedures in case of password recovery.
 
-To enter this backup email address, click on your name in the top right-hand corner of your [OVHcloud Control Panel](/links/manager), then `Access my account`{.action}.
-
-In the `My profile` box, click on `Edit my profile`{.action}.
+To enter this backup email address, go to your [user profile](/links/control-panel/account-profile).
 
 > [!warning]
 > As a reminder, it is **essential** that the backup email address is **different** from the account’s main email address.
@@ -76,11 +84,11 @@ You can find all the details to enable it in our guide on [Securing your OVHclou
 
 ### Changing your personal details
 
-You can change your account information via the Control Panel. To do this, click on your name in the top right-hand corner of your [OVHcloud Control Panel](/links/manager), then `Access my account`{.action}.
+You can change your account information. Go to your [user profile](/links/control-panel/account-profile).
 
-In the `My profile` box, click on `Edit my profile`{.action}.
-
-Edit your details, then click `Confirm`{.action}.
+<!-- CP-STEPS-START:save-profile-changes -->
+Edit your details, then click `Save changes`{.action}.
+<!-- CP-STEPS-END:save-profile-changes -->
 
 > [!warning]
 >
@@ -89,6 +97,7 @@ Edit your details, then click `Confirm`{.action}.
 
 ### Changing your primary email address
 
+<!-- CP-STEPS-START:changing-primary-email -->
 If you would like to change your primary contact email address, you will need to validate it using a code sent to your current primary contact email address. Once you have received the code, click the `I have received my validation code`{.action} button.
 
 ![NIC handle](images/nichandle07.png){.thumbnail}
@@ -96,6 +105,7 @@ If you would like to change your primary contact email address, you will need to
 Next, enter the code into the `Validation code` section, and click `Confirm`{.action}.
 
 ![NIC handle](images/nichandle08.png){.thumbnail}
+<!-- CP-STEPS-END:changing-primary-email -->
 
 > [!primary]
 >
@@ -103,11 +113,13 @@ Next, enter the code into the `Validation code` section, and click `Confirm`{.ac
 
 #### Changing the account type
 
+<!-- CP-STEPS-START:changing-account-type -->
 Click on the `Type of account` button when you edit your profile. A drop-down menu allows you to define the type of account corresponding to your situation.
 
 ![identifiant client](images/nichandle09.png){.thumbnail}
 
 Once you have entered this information, click the `Confirm`{.action} button.
+<!-- CP-STEPS-END:changing-account-type -->
 
 #### Exercising your personal data rights
 

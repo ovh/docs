@@ -25,9 +25,19 @@ This documentation allows you to test and launch **3 AI Notebooks** allowing you
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](/links/manager)
 - An AI Notebooks project created inside a [Public Cloud project](/links/public-cloud/public-cloud) in your OVHcloud account
 - A user for AI Notebooks
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Navigation path:** `Public Cloud`{.action} > Select your project
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## Instructions
 
@@ -37,6 +47,7 @@ Direct link to the full code can be found [here](https://github.com/ovh/ai-train
 
 ### Launching a Jupyter notebook with "Miniconda" via UI
 
+<!-- CP-STEPS-START:launch-notebook-ui -->
 To launch your notebook from the [OVHcloud Control Panel](/links/manager), refer to the following steps.
 
 #### Code editor
@@ -67,6 +78,7 @@ GPU is recommended since audio transcription is resource intensive.
 >
 > Here, using `1 GPU` is sufficient.
 >
+<!-- CP-STEPS-END:launch-notebook-ui -->
 
 ### Launching a Jupyter notebook with "Miniconda" via CLI
 

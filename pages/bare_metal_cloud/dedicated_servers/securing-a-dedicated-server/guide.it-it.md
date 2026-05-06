@@ -1,6 +1,6 @@
 ---
 title: "Mettere in sicurezza un server dedicato"
-excerpt: "Come impostare misure di sicurezza di base per proteggere il server dedicato da attacchi e accessi non autorizzati"
+excerpt: "Applica le misure di sicurezza essenziali sul tuo server dedicato: hardening SSH, configurazione del firewall e monitoraggio"
 updated: 2024-02-20
 ---
 
@@ -250,10 +250,14 @@ Per ulteriori informazioni sulle nostre soluzioni di backup, consulta la guida [
 
 ## Per saperne di più
 
-[Configura il firewall su Windows](/pages/bare_metal_cloud/dedicated_servers/activate-port-firewall-soft-win)
+[Configurare il firewall Windows su un server dedicato](/pages/bare_metal_cloud/dedicated_servers/activate-port-firewall-soft-win)
 
-[Network Firewall](/pages/bare_metal_cloud/dedicated_servers/firewall_network)
+[Edge Network Firewall](/pages/bare_metal_cloud/dedicated_servers/firewall_network)
 
-Se avete bisogno di formazione o di assistenza tecnica per implementare le nostre soluzioni, contattate il vostro rappresentante o cliccate su [questo link](/links/professional-services) per ottenere un preventivo e richiedere un'analisi personalizzata del vostro progetto da parte dei nostri esperti del team Professional Services.
+[Tutorial - Installare un server web (LAMP) su Debian o Ubuntu](/pages/bare_metal_cloud/dedicated_servers/installing_lamp_debian9_ubuntu18)
 
-Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.
+[Mettere in sicurezza un server dedicato con un servizio Memcached](/pages/bare_metal_cloud/dedicated_servers/memcache_secure)
+
+Se avete bisogno di formazione o di assistenza tecnica per implementare le nostre soluzioni, contattate il vostro rappresentante o cliccate su [questo link](/links/professional-services) per ottenere un preventivo e richiedere un’analisi personalizzata del vostro progetto da parte dei nostri esperti del team Professional Services.
+
+Contatta la nostra [Community di utenti](/links/community).

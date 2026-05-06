@@ -1,7 +1,7 @@
 ---
 title: "Webhosting - Wie kann ich mein Angebot wechseln"
 excerpt: "Erfahren Sie hier, wie Sie das Abonnement Ihres OVHcloud Webhosting-Dienstes ändern können"
-updated: 2025-10-21
+updated: 2026-04-01
 ---
 
 ## Ziel 
@@ -20,9 +20,19 @@ Im [OVHcloud Kundencenter](/links/manager) können Sie die Kapazitäten Ihrer [W
 
 ## Voraussetzungen
 
-- Sie verfügen über ein [Webhosting Angebot](/links/web/hosting)
-- Sie sind in Ihrem [OVHcloud Kundencenter](/links/manager) eingeloggt
+- Sie verfügen über ein [Webhosting Angebot](/links/web/hosting).
 - Sie sind mindestens „[Administrator](/pages/account_and_service_management/account_information/managing_contacts)“ der Dienste, für die Sie das Abonnement ändern möchten.
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direkter Link:** [Hosting-Pakete](/links/control-panel/web-hosting)
+- **Navigationspfad:** `Web Cloud`{.action} > `Hosting-Pakete`{.action} > Wählen Sie Ihr Webhosting aus
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## In der praktischen Anwendung
 
@@ -38,28 +48,24 @@ Im [OVHcloud Kundencenter](/links/manager) können Sie die Kapazitäten Ihrer [W
 
 ### Webhosting-Angebot wechseln  <a name="modify"></a>
 
-Um Ihr Abonnement zu ändern, klicken Sie auf die Tabs, um die **3** Schritte anzuzeigen.
+<!-- CP-STEPS-START:modify-subscription -->
+Um Ihr Abonnement zu ändern, klicken Sie auf die Tabs, um die **2** Schritte anzuzeigen.
 
 > [!tabs]
 > **Schritt 1**
 >>
->> Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein und gehen Sie dann in den Bereich `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Schritt 2**
->>
->> Klicken Sie auf das Menü `Hosting-Pakete`{.action} und wählen Sie das betreffende Webhosting aus.
+>> Gehen Sie auf die Seite [Hosting-Pakete](/links/control-panel/web-hosting), und wählen Sie das betreffende Webhosting aus.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Schritt 3**
+> **Schritt 2**
 >>
 >> Klicken Sie im Rahmen **Abo** auf den Button `...`{.action} rechts neben **Angebot** und dann auf `Angebot wechseln`{.action}.
 >>
 >> ![change_plan](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/pro-change-plan.png){.thumbnail}
 >>
 >> Wählen Sie anschließend Ihr neues Abonnement und dessen Laufzeit aus. Bestätigen Sie die entsprechenden Verträge und klicken Sie auf `Senden`{.action}.
+<!-- CP-STEPS-END:modify-subscription -->
 
 ### Überprüfen, ob Ihr Hosting mit einem kleineren Angebot kompatibel ist <a name="checks"></a>
 
@@ -79,34 +85,29 @@ Löschen Sie andernfalls nicht verwendete Datenbanken, und reduzieren Sie ggf. d
 
 Nach der Löschung der Daten Ihrer Datenbanken müssen Sie das verwendete Quota neu berechnen.
 
-Klicken Sie auf die Tabs, um die **5** Schritte anzuzeigen.
+<!-- CP-STEPS-START:recalculate-db-quota -->
+Klicken Sie auf die Tabs, um die **4** Schritte anzuzeigen.
 
 > [!tabs]
 > **Schritt 1**
 >>
->> Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein und gehen Sie dann in den Bereich `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Schritt 2**
->>
->> Klicken Sie auf das Menü `Hosting-Pakete`{.action} und wählen Sie das betreffende Webhosting aus.
+>> Gehen Sie auf die Seite [Hosting-Pakete](/links/control-panel/web-hosting), und wählen Sie das betreffende Webhosting aus.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Schritt 3**
+> **Schritt 2**
 >>
 >> Klicken Sie auf den Tab `Datenbanken`{.action}.
 >>
 >> ![Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases.png){.thumbnail}
 >>
-> **Schritt 4**
+> **Schritt 3**
 >>
 >> Auf der neuen Seite wird eine Tabelle mit den erstellten Datenbanken angezeigt. Rechts neben der betreffenden Datenbank klicken Sie auf den Button `...`{.action} und dann auf `Quota neu berechnen`{.action}.
 >>
 >> ![Recalculate quota shared SQL](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/recalculate-quota.png){.thumbnail}
 >>
-> **Schritt 5**
+> **Schritt 4**
 >>
 >> Klicken Sie im angezeigten Fenster direkt auf den Button `Bestätigen`{.action}.
 >>
@@ -114,6 +115,7 @@ Klicken Sie auf die Tabs, um die **5** Schritte anzuzeigen.
 >>
 >> Der Vorgang kann einige Minuten dauern, nachdem er gestartet wurde. Wenn die Installation abgeschlossen ist, verschwindet der Status "READ ONLY" Ihrer Datenbank.  
 >> Ihre Datenbank ist nun wieder voll funktionsfähig.
+<!-- CP-STEPS-END:recalculate-db-quota -->
 
 > [!primary]
 >
@@ -124,96 +126,125 @@ Klicken Sie auf die Tabs, um die **5** Schritte anzuzeigen.
 
 Wenn Sie das Angebot [Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb) nutzen, das mit Ihrem Webhosting [Performance](/links/web/hosting-performance-offer) inklusive ist, und Ihr Webhosting auf ein Angebot [Pro](/links/web/hosting-professional-offer) herunterstufen möchten, müssen Sie zunächst das Angebot Web Cloud Databases von Ihrem Webhosting trennen.
 
-Klicken Sie auf die Tabs, um die **3** Schritte anzuzeigen.
+<!-- CP-STEPS-START:detach-wcdb -->
+Klicken Sie auf die Tabs, um die **2** Schritte anzuzeigen.
 
 > [!tabs]
 > **Schritt 1**
 >>
->> Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein und gehen Sie dann in den Bereich `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Schritt 2**
->>
->> Klicken Sie auf das Menü `Hosting-Pakete`{.action} und wählen Sie das betreffende Webhosting aus.
+>> Gehen Sie auf die Seite [Hosting-Pakete](/links/control-panel/web-hosting), und wählen Sie das betreffende Webhosting aus.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Schritt 3**
+> **Schritt 2**
 >>
 >> Klicken Sie in der mittleren Spalte **Konfiguration** auf den Button `...`{.action} rechts neben **Web Cloud Databases** und dann auf `Abtrennen`{.action}.
 >>
 >> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/wcdb-detach.png){.thumbnail}
+<!-- CP-STEPS-END:detach-wcdb -->
 
 Mit dieser Aktion können Sie ein Angebot für Web Cloud Databases unabhängig von Ihrem *Performance* Abonnement bestellen. Die Daten Ihres Servers bleiben dabei erhalten.
 
 Wenn Sie diese Daten nicht behalten möchten, können Sie auch Ihr Angebot Web Cloud Databases löschen, bevor Sie zum Angebot *Pro* wechseln: 
 
 1. Sichern Sie Ihre Daten gemäß den Anweisungen in [dieser Anleitung](/pages/web_cloud/web_cloud_databases/save-export-on-database-server).<br>
-2. Löschen Sie Ihren Web Cloud Databases Server über Ihr [OVHcloud Kundencenter](/links/manager). Loggen Sie sich hierzu in Ihr [OVHcloud Kundencenter](/links/manager) ein, klicken Sie oben rechts auf Ihren Account-Namen und dann auf `Meine Angebote und Dienste`{.action}. Klicken Sie dann auf den Button `...`{.action} rechts in der Zeile des betreffenden Web Cloud Databases/SQL Private Angebots und dann auf `Mein SQL Private Hosting löschen`{.action}.
+2. Löschen Sie Ihren Web Cloud Databases Server über Ihr [OVHcloud Kundencenter](/links/manager). Klicken Sie auf die Tabs, um die **2** Schritte anzuzeigen.
+<!-- CP-STEPS-START:delete-wcdb -->
+> [!tabs]
+> **Schritt 1**
+>> Gehen Sie auf die Seite [Meine Angebote und Dienste](/links/control-panel/billing-services).
+> **Schritt 2**
+>> Klicken Sie auf den Button `...`{.action} rechts in der Zeile des betreffenden Web Cloud Databases/SQL Private Angebots und dann auf `Mein SQL Private Hosting löschen`{.action}.
+<!-- CP-STEPS-END:delete-wcdb -->
 
 #### 3 - FTP-Speicherplatz
 
 Stellen Sie sicher, dass das neue Angebot ausreichend [FTP-Speicherplatz](/pages/web_cloud/web_hosting/ftp_connection) für den Import der Dateien Ihres aktuellen Hostings bietet.
 
-Um die Quota des auf Ihrem Webhosting verwendeten FTP-Speicherplatzes zu überprüfen, klicken Sie auf die Tabs, um die **3** Schritte anzuzeigen.
+<!-- CP-STEPS-START:check-ftp-storage -->
+Um die Quota des auf Ihrem Webhosting verwendeten FTP-Speicherplatzes zu überprüfen, klicken Sie auf die Tabs, um die **2** Schritte anzuzeigen.
 
 > [!tabs]
 > **Schritt 1**
 >>
->> Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein und gehen Sie dann in den Bereich `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Schritt 2**
->>
->> Klicken Sie auf das Menü `Hosting-Pakete`{.action} und wählen Sie das betreffende Webhosting aus.
+>> Gehen Sie auf die Seite [Hosting-Pakete](/links/control-panel/web-hosting), und wählen Sie das betreffende Webhosting aus.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Schritt 3**
+> **Schritt 2**
 >>
 >> Die Speicherplatzauslastung Ihres Webhostings finden Sie im Feld **Allgemeine Informationen** unter **Speicherplatz**.
 >>
 >> ![disk_space](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-disk-space.png){.thumbnail}
+<!-- CP-STEPS-END:check-ftp-storage -->
 
 #### 4 - E-Mail-Accounts
 
 Stellen Sie sicher, dass Ihr neues Angebot eine ausreichende Anzahl E-Mail-Accounts enthält. Wenn dies nicht der Fall ist, löschen Sie nicht benötigte E-Mail-Accounts, nachdem Sie ein [Backup](/pages/web_cloud/email_and_collaborative_solutions/migrating/manual_email_migration) von deren Inhalten erstellt haben.
 
-Wenn Sie die gleiche Anzahl an E-Mail-Accounts behalten möchten, müssen Sie einen zusätzlichen **MX Plan** bestellen, **bevor Ihr Webhosting auf ein kleineres Angebot umstellen**. Loggen Sie sich hierzu in Ihr [OVHcloud Kundencenter](/links/manager) ein und gehen Sie in den Bereich `Web Cloud`{.action}. Klicken Sie in der linken Spalte auf `E-Mails`{.action} und wählen Sie das betreffende E-Mail-Angebot aus. Klicken Sie auf der angezeigten Seite auf `Abonnement`{.action} und rechts neben `Angebot`{.action} auf den Button `...`{.action} und dann auf `Angebot wechseln`{.action}.
+Wenn Sie die gleiche Anzahl an E-Mail-Accounts behalten möchten, müssen Sie einen zusätzlichen **MX Plan** bestellen, **bevor Ihr Webhosting auf ein kleineres Angebot umstellen**. Klicken Sie auf die Tabs, um die **2** Schritte anzuzeigen.
+<!-- CP-STEPS-START:upgrade-email-plan-accounts -->
+> [!tabs]
+> **Schritt 1**
+>> Gehen Sie auf die Seite [MX Plan](/links/control-panel/web-mx-plan) und wählen Sie die betreffende Domain aus.
+> **Schritt 2**
+>> Klicken Sie in der Box **Abo** rechts neben **Angebot** auf den Button `...`{.action} und dann auf `Angebot wechseln`{.action}.
+>> ![MX Plan Angebotswechsel](/pages/assets/screens/control_panel/product-selection/web-cloud/emails/general-information/change-solution.png){.thumbnail}
+<!-- CP-STEPS-END:upgrade-email-plan-accounts -->
 
-![mxplan](/pages/assets/screens/control_panel/product-selection/web-cloud/emails/general-information/change-solution.png){.thumbnail}
+Wenn der Angebotswechsel auf Ihrem E-Mail-Angebot nicht verfügbar ist, ist dieses mit einem Webhosting verknüpft.
 
->[!primary]
->
-> Wenn der Button `...`{.action} auf Ihrem E-Mail-Angebot nicht verfügbar ist, können Sie das E-Mail-Angebot von Ihrem Webhosting trennen. Bleiben Sie hierzu in Ihrem [OVHcloud Kundencenter](/links/manager) im Bereich `Web Cloud`{.action}. Klicken Sie in der linken Spalte auf `Hosting-Pakete`{.action} und wählen Sie das betreffende Webhosting aus. Klicken Sie auf der angezeigten Seite `Allgemeine Informationen`{.action} und in der Randleiste `Konfiguration`{.action} auf den Button `...`{.action} rechts neben `E-Mail-Adressen`{.action} und dann auf `Meine E-Mail-Option abtrennen`{.action}.
->
+<!-- CP-STEPS-START:detach-email-option-accounts -->
+Sie können das E-Mail-Angebot von Ihrem Webhosting trennen. Klicken Sie auf die Tabs, um die **2** Schritte anzuzeigen.
+
+> [!tabs]
+> **Schritt 1**
+>> Gehen Sie auf die Seite [Hosting-Pakete](/links/control-panel/web-hosting) und wählen Sie das betreffende Webhosting aus.
+> **Schritt 2**
+>> Klicken Sie in der Box **Konfiguration** auf den Button `...`{.action} rechts neben **E-Mail-Adressen** und dann auf `Meine E-Mail-Option abtrennen`{.action}.
+<!-- CP-STEPS-END:detach-email-option-accounts -->
 
 #### 5 - Mailinglisten
 
 Die Funktion [Mailinglisten](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/feature_mailing_list) ist optional für die Hostings von [Basic](/links/web/hosting-personal-offer) verfügbar.
 
-Wenn Sie Ihr Webhosting auf ein [Basic](/links/web/hosting-personal-offer) Angebot  umstellen möchten, müssen Sie zunächst die Mailinglisten löschen oder ein E-Mail-Angebot mit dieser Funktion (**MX Plan 100** oder **MX Plan Full**) über Ihr [OVHcloud Kundencenter](/links/manager).
+Wenn Sie Ihr Webhosting auf ein [Basic](/links/web/hosting-personal-offer) Angebot umstellen möchten, müssen Sie zunächst die Mailinglisten löschen oder ein E-Mail-Angebot mit dieser Funktion (**MX Plan 100** oder **MX Plan Full**) bestellen. Klicken Sie auf die Tabs, um die **2** Schritte anzuzeigen.
+<!-- CP-STEPS-START:upgrade-email-plan-lists -->
+> [!tabs]
+> **Schritt 1**
+>> Gehen Sie auf die Seite [MX Plan](/links/control-panel/web-mx-plan) und wählen Sie die betreffende Domain aus.
+> **Schritt 2**
+>> Klicken Sie in der Box **Abo** rechts neben **Angebot** auf den Button `...`{.action} und dann auf `Angebot wechseln`{.action}.
+<!-- CP-STEPS-END:upgrade-email-plan-lists -->
 
-Loggen Sie sich hierzu in Ihr [OVHcloud Kundencenter](/links/manager) ein und gehen Sie in den Bereich `Web Cloud`{.action}. Klicken Sie in der linken Spalte auf `E-Mails`{.action} und wählen Sie das betreffende E-Mail-Angebot aus. Klicken Sie auf der angezeigten Seite auf `Abonnement`{.action} und rechts neben `Angebot`{.action} auf den Button `...`{.action} und dann auf `Angebot wechseln`{.action}.
+Wenn der Angebotswechsel auf Ihrem E-Mail-Angebot nicht verfügbar ist, ist dieses mit einem Webhosting verknüpft.
 
->[!primary]
->
-> Wenn der Button `...`{.action} auf Ihrem E-Mail-Angebot nicht verfügbar ist, können Sie das E-Mail-Angebot von Ihrem Webhosting trennen. Bleiben Sie hierzu in Ihrem [OVHcloud Kundencenter](/links/manager) im Bereich `Web Cloud`{.action}. Klicken Sie in der linken Spalte auf `Hosting-Pakete`{.action} und wählen Sie das betreffende Webhosting aus. Klicken Sie auf der angezeigten Seite `Allgemeine Informationen`{.action} und auf `Konfiguration`{.action} auf den Button `...`{.action} rechts neben `E-Mail-Adressen`{.action} und dann auf `Meine E-Mail-Option abtrennen`{.action}.
->
+<!-- CP-STEPS-START:detach-email-option-lists -->
+Sie können das E-Mail-Angebot von Ihrem Webhosting trennen. Klicken Sie auf die Tabs, um die **2** Schritte anzuzeigen.
+
+> [!tabs]
+> **Schritt 1**
+>> Gehen Sie auf die Seite [Hosting-Pakete](/links/control-panel/web-hosting) und wählen Sie das betreffende Webhosting aus.
+> **Schritt 2**
+>> Klicken Sie in der Box **Konfiguration** auf den Button `...`{.action} rechts neben **E-Mail-Adressen** und dann auf `Meine E-Mail-Option abtrennen`{.action}.
+<!-- CP-STEPS-END:detach-email-option-lists -->
 
 #### 6 - FTP-Benutzer
 
 Stellen Sie sicher, dass das neue Angebot genügend FTP-Benutzer bietet.
 
-Die Anzahl der FTP-Benutzer wird in Ihrem OVHcloud Kundencenter angezeigt. Gehen Sie nach dem Login in den Bereich `Web Cloud`{.action}. Klicken Sie in der linken Spalte auf `Hosting-Pakete`{.action} und wählen Sie das betreffende Webhosting aus. Klicken Sie auf der angezeigten Seite auf den Tab `FTP-SSH`{.action}.
+Die Anzahl der FTP-Benutzer wird in Ihrem OVHcloud Kundencenter angezeigt. Klicken Sie auf die Tabs, um die **3** Schritte anzuzeigen.
 
-Unten auf der angezeigten Seite werden in einer Tabelle alle für Ihr Webhosting erstellten FTP-Benutzer aufgelistet.
-
-Um FTP-Benutzer zu löschen, klicken Sie auf den Button `...`{.action} rechts neben dem FTP-Benutzer, den Sie löschen möchten, und dann auf `Löschen`{.action}.
-
-![user FTP deletion](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/edit-ftp-user-2.png){.thumbnail} 
+<!-- CP-STEPS-START:check-ftp-users -->
+> [!tabs]
+> **Schritt 1**
+>> Gehen Sie auf die Seite [Hosting-Pakete](/links/control-panel/web-hosting) und wählen Sie das betreffende Webhosting aus.
+> **Schritt 2**
+>> Klicken Sie auf der angezeigten Seite auf den Tab `FTP - SSH`{.action}. Unten auf der Seite werden in einer Tabelle alle für Ihr Webhosting erstellten FTP-Benutzer aufgelistet.
+> **Schritt 3**
+>> Um FTP-Benutzer zu löschen, klicken Sie auf den Button `...`{.action} rechts neben dem betreffenden FTP-Benutzer und dann auf `Löschen`{.action}.
+>> ![FTP-Benutzer löschen](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/edit-ftp-user-2.png){.thumbnail}
+<!-- CP-STEPS-END:check-ftp-users -->
 
 #### Finalisierung
 
@@ -237,44 +268,34 @@ Mit der [Boost Option](/links/web/hosting-options-boost), die für unsere *Perfo
 
 Wenn die Option **Boost** Ihren Anforderungen entspricht, finden Sie unten die Anweisungen, um diese Option zu **aktivieren** oder zu **deaktivieren**.
 
-Um die **Boost-Option zu aktivieren**, klicken Sie auf die Tabs, um die **3** Schritte anzuzeigen:
+<!-- CP-STEPS-START:enable-boost -->
+Um die **Boost-Option zu aktivieren**, klicken Sie auf die Tabs, um die **2** Schritte anzuzeigen.
 
 > [!tabs]
 > **Schritt 1**
 >>
->> Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein und gehen Sie in den Bereich `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Schritt 2**
->>
->> Klicken Sie auf das Menü `Hosting-Pakete`{.action} und wählen Sie das betreffende Webhosting aus.
+>> Gehen Sie auf die Seite [Hosting-Pakete](/links/control-panel/web-hosting), und wählen Sie das betreffende Webhosting aus.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Schritt 3**
+> **Schritt 2**
 >>
 >> Klicken Sie auf der angezeigten Seite in der Box **Allgemeine Informationen** auf den Button `...`{.action} rechts von **Boost** und dann auf `Mein Angebot boosten`{.action}.
 >>
 >> ![boost enable](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/boost-my-hosting-plan.png){.thumbnail}
+<!-- CP-STEPS-END:enable-boost -->
 
-
-Um die **Boost-Option zu deaktivieren**, klicken Sie auf die Tabs, um die **4** Schritte anzuzeigen:
+<!-- CP-STEPS-START:disable-boost -->
+Um die **Boost-Option zu deaktivieren**, klicken Sie auf die Tabs, um die **3** Schritte anzuzeigen.
 
 > [!tabs]
 > **Schritt 1**
 >>
->> Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein und gehen Sie in den Bereich `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Schritt 2**
->>
->> Klicken Sie auf das Menü `Hosting-Pakete`{.action} und wählen Sie das betreffende Webhosting aus.
+>> Gehen Sie auf die Seite [Hosting-Pakete](/links/control-panel/web-hosting), und wählen Sie das betreffende Webhosting aus.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Schritt 3**
+> **Schritt 2**
 >>
 >> Klicken Sie auf den Tab `Mehr`{.action} und klicken Sie dann auf `Mein Angebot boosten`{.action}.
 >>
@@ -282,11 +303,12 @@ Um die **Boost-Option zu deaktivieren**, klicken Sie auf die Tabs, um die **4** 
 >>
 >> ![More tab 2](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/more-2.png){.thumbnail}
 >>
-> **Schritt 4**
+> **Schritt 3**
 >>
 >> Die Tabelle zur Verwendung der Boost-Option wird angezeigt. Klicken Sie auf `Boost deaktivieren`{.action}.
 >>
 >> ![boost disable](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/boost-my-hosting-plan/deactivate-the-boost-plan.png){.thumbnail}<br>
+<!-- CP-STEPS-END:disable-boost -->
 
 #### Abrechnung bei einem Angebotswechsel <a name="billing"></a>
 

@@ -36,6 +36,17 @@ The **New Outlook** has replaced the **Mail** application on Windows since Janua
 - The [New Outlook](https://support.microsoft.com/office/getting-started-with-the-new-outlook-for-windows-656bb8d9-5a60-49b2-a98b-ba7822bc7627) for Windows
 - The credentials for the email account you wish to configure
 
+<!-- CP-NAV-START:web-email-pro -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Email Pro](/links/control-panel/web-email-pro)
+- **Navigation path:** `Web Cloud`{.action} > `Email Pro`{.action} > Select your platform
+
+---
+<!-- CP-NAV-END:web-email-pro -->
+
 > [!warning]
 >
 > This documentation applies only to the **New Outlook** and not to [Outlook Classic](https://support.microsoft.com/en-us/office/install-or-reinstall-classic-outlook-on-a-windows-pc-5c94902b-31a5-4274-abb0-b07f4661edf5) available in the Microsoft 365 suite or previously installed on your computer.
@@ -56,7 +67,7 @@ If you experience any difficulties carrying out these operations, we recommend t
 >
 > In our example, we use the server name: `pro?.mail.ovh.net`. You must replace the `?` with the number corresponding to your Email Pro service server.
 > 
-> Find this number in your [OVHcloud Control Panel](/links/manager), under the `Web Cloud`{.action} section, then `Email Pro`{.action}. The server name is visible in the **Connection** section of the `General Information`{.action} tab.
+> Click [this link](/links/control-panel/web-email-pro) to access the `Email Pro`{.action} section. The server name is visible in the **Connection** section of the `General information`{.action} tab.
 
 > [!tabs]
 > **Step 1**

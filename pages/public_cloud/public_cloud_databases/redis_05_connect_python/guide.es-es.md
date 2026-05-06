@@ -1,5 +1,5 @@
 ---
-title: Valkey - Connect with Python
+title: Connect using Python for Public Cloud Databases for Valkey
 excerpt: Connect to your Public Cloud Databases for Valkey using the Python programming language
 updated: 2024-06-12
 ---

@@ -22,7 +22,6 @@ Diese Anleitung enthält detaillierte Anweisungen zur Inbetriebnahme und Konfigu
 ## Voraussetzungen
 
 - Sie haben ein [Public Cloud Projekt](/pages/public_cloud/public_cloud_cross_functional/create_a_public_cloud_project) in Ihrem OVHcloud Kunden-Account.
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 - Sie haben einen [OpenStack User erstellt](/pages/public_cloud/public_cloud_cross_functional/create_and_delete_a_user) (optional).
 - Sie haben Grundkenntnisse in Networking.
 - Sie haben auf der [Ubika-Website](https://my.ubikasec.com/) einen Ubika-Account erstellt.
@@ -30,6 +29,18 @@ Diese Anleitung enthält detaillierte Anweisungen zur Inbetriebnahme und Konfigu
 - Sie haben vRack aktiviert und konfiguriert, um eine sichere Kommunikation zwischen den Komponenten der Infrastruktur zu ermöglichen.
 - Sie haben eine [Additional IP-Adresse](/links/network/additional-ip), um Failover und die Konfiguration von Hochverfügbarkeit zu ermöglichen.
 - Sie haben eine Ubika WAAP Gateway Lizenz (**B**ring **Y**our **O**wn **L**icence), die über die [offizielle Website von Ubika](https://my.ubikasec.com/) erworben wurde. Diese ist zur Installation und Konfiguration erforderlich.
+
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direkter Link:** [Public Cloud Projekte](/links/control-panel/publiccloud-projects)
+- **Navigationspfad:** `Public Cloud`{.action} > Wählen Sie Ihr Projekt aus
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## In der praktischen Anwendung
 

@@ -1,7 +1,7 @@
 ---
 title: Migliora la sicurezza delle email con un record DKIM
-excerpt: Come configurare un record DKIM sul tuo dominio e sulla tua piattaforma email OVHcloud
-updated: 2025-11-28
+excerpt: Come configurare un record DKIM sul tuo nome di dominio e sulla tua piattaforma email OVHcloud
+updated: 2026-02-10
 ---
 
 <style>
@@ -55,14 +55,23 @@ Il record DKIM (**D**omain**K**eys **I**dentified **M**ail) permette di firmare 
 
 ## Prerequisiti
 
-- Avere accesso alla gestione del dominio dallo [Spazio Cliente OVHcloud](/links/manager) o dal provider del tuo dominio registrato al di fuori di OVHcloud
-- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
 - Aver sottoscritto una delle soluzioni email disponibili:
     - MX Plan OVHcloud. È disponibile tramite una [offerta di hosting Web Cloud](/links/web/hosting), un [hosting gratuito 100M](/links/web/domains-free-hosting) o una soluzione MX Plan ordinata separatamente.
     - [Exchange](/links/web/emails-hosted-exchange) o [Private Exchange](/links/web/emails-hosted-exchange).
     - [Email Pro](/links/web/email-pro).
     - [Zimbra](/links/web/zimbra).
     - Offerta di posta elettronica esterna a OVHcloud con DKIM.
+
+<!-- CP-NAV-START:web-dns-zone -->
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [Zone DNS](/links/control-panel/web-dns-zone)
+- **Percorso di navigazione:** `Web Cloud`{.action} > `Zone DNS`{.action} > Seleziona il tuo nome di dominio
+
+---
+<!-- CP-NAV-END:web-dns-zone -->
 
 > [!warning]
 >
@@ -121,15 +130,15 @@ La funzione di scatto è utile per verificare l'integrità di un messaggio. Infa
 
 La **cifratura**, come indica il nome, ha lo scopo di cifrare i dati che gli vengono dati. È "**asimmetrico**" perché la chiave di crittografia non è la stessa della chiave di decifrare, a differenza di una crittografia simmetrica che utilizzerà la stessa chiave per cifrare e decifrare.
 
-Nella crittografia asimmetrica, si usa una **chiave pubblica** e una **chiave privata**. La chiave pubblica è visibile e utilizzabile da tutti. La chiave privata è utilizzata solo dal proprietario e non è visibile a tutti. 
+Nella crittografia asimmetrica, si usa una **chiave pubblica** e una **chiave privata**. La chiave pubblica è visibile e utilizzabile da tutti. La chiave privata è utilizzata solo dal intestatario e non è visibile a tutti. 
 
 Esistono due utilizzi della cifratura asimmetrica:
 
-- **L'input viene cifrato con la chiave pubblica e decifrato da chi possiede la chiave privata**. Ad esempio, vuoi che un terzo ti trasmetta dati in modo sicuro. Trasmetti la tua chiave pubblica senza preoccuparti che qualcuno la recuperi, questo terzo cripterà i suoi dati con la tua chiave pubblica. I dati numerici potranno essere decifrati solo dal proprietario della chiave privata.
+- **L'input viene cifrato con la chiave pubblica e decifrato da chi possiede la chiave privata**. Ad esempio, vuoi che un terzo ti trasmetta dati in modo sicuro. Trasmetti la tua chiave pubblica senza preoccuparti che qualcuno la recuperi, questo terzo cripterà i suoi dati con la tua chiave pubblica. I dati numerici potranno essere decifrati solo dal intestatario della chiave privata.
 
 ![hash](/pages/assets/schemas/emails/dns-dkim-crypto01.png){.thumbnail .w-400 .h-600}
 
-- **Il dato d'ingresso è cifrato dal proprietario della chiave privata e decifrato dalla chiave pubblica**. Questo utilizzo si applica per autenticare uno scambio di dati. Ad esempio, i vostri destinatari desiderano assicurarsi che siate l'autore del messaggio che trasmettete loro. In questo caso, cripterai il tuo messaggio con la tua chiave privata. Questo messaggio potrà essere decifrato solo tramite la chiave pubblica che avrai trasmesso a tutti, garantendo così ai tuoi destinatari l'autenticità del tuo messaggio. Infatti, un messaggio decifrato dalla chiave pubblica può provenire soltanto dal proprietario della chiave privata.
+- **Il dato d'ingresso è cifrato dal intestatario della chiave privata e decifrato dalla chiave pubblica**. Questo utilizzo si applica per autenticare uno scambio di dati. Ad esempio, i vostri destinatari desiderano assicurarsi che siate l'autore del messaggio che trasmettete loro. In questo caso, cripterai il tuo messaggio con la tua chiave privata. Questo messaggio potrà essere decifrato solo tramite la chiave pubblica che avrai trasmesso a tutti, garantendo così ai tuoi destinatari l'autenticità del tuo messaggio. Infatti, un messaggio decifrato dalla chiave pubblica può provenire soltanto dal intestatario della chiave privata.
 
 ![hash](/pages/assets/schemas/emails/dns-dkim-crypto02.png){.thumbnail .w-400 .h-600}
 
@@ -181,7 +190,7 @@ Il destinatario **recipient@otherdomain.ovh** potrà decifrare questa firma con 
 La configurazione automatica del DKIM è disponibile per tutte le nostre offerte e-mail:
 
 - MX Plan inclusa con un [hosting Web Cloud](/links/web/hosting), un [hosting gratuito 100M](/links/web/domains-free-hosting) o ordinata separatamente.
-- [Exchange](/links/web/emails).
+- [Exchange](/links/web/emails-exchange).
 - [E-mail Pro](/links/web/email-pro).
 - [Zimbra](/links/web/zimbra).
 
@@ -1124,7 +1133,7 @@ Il destinatario deve ignorare tale registrazione se il tipo di servizio adeguato
 Il tag "s=" è destinato a limitare l'uso delle chiavi per altri scopi, nel caso in cui l'utilizzo del DKIM sia definito per altri servizi in futuro.<br>
 I tipi di servizi attualmente definiti sono "\*" (tutti i tipi di servizi), "email" (e-mail).
 
-- **Modalità test (t=y)**: permette ai proprietari del dominio di testare l'installazione del DKIM senza rischiare di vedere i messaggi respinti o contrassegnati come SPAM se la verifica della firma DKIM fallisce.<br>
+- **Modalità test (t=y)**: permette ai intestatari del dominio di testare l'installazione del DKIM senza rischiare di vedere i messaggi respinti o contrassegnati come SPAM se la verifica della firma DKIM fallisce.<br>
 Quando si usa il flag "t=y", il destinatario non deve trattare diversamente i messaggi firmati in modalità di test e i messaggi non firmati. Tuttavia, il destinatario può seguire l'esito del test per aiutare i firmatari.
 
 - **Sottodomini (t=s)**: permette di limitare l'utilizzo della firma DKIM esclusivamente a nome di dominio (ad esempio: @mydomain.ovh) o di permettere l'invio dal dominio e dai suoi sottodomini (ad esempio: @mydomain.ovh, @test.mydomain.ovh, @other.mydomain.ovh, etc).

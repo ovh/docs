@@ -15,11 +15,21 @@ This tutorial covers the process of building your own Docker image for AI Deploy
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](/links/manager)
 - A **Public Cloud** project
 - A [user for AI Deploy](/pages/public_cloud/ai_machine_learning/gi_01_manage_users)
 - [Docker](https://www.docker.com/get-started) installed on a personal computer or a virtual machine
 - Knowledge about building a Docker image (see the [official Getting Started guide](https://docs.docker.com/get-started/))
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Navigation path:** `Public Cloud`{.action} > Select your project
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## Quick overview
 
@@ -287,9 +297,11 @@ docker tag custom-image:latest my-registry.ai.cloud.ovh.net/custom-image:latest
 docker push my-registry.ai.cloud.ovh.net/custom-image:latest
 ```
 
+<!-- CP-STEPS-START:push-image-registry-cp-reference -->
 If you want to know the exact commands to push on the shared registry, please consult the `Details`{.action} button of the **Shared Docker Registry** section in the **Home** panel of AI Training.
 
 ![image](images/shared_registry_details.png){.thumbnail}
+<!-- CP-STEPS-END:push-image-registry-cp-reference -->
 
 ## Go further
 

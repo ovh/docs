@@ -45,7 +45,17 @@ Diese Konfigurationseinstellungen können auf zwei Arten geändert werden:
 ## Voraussetzungen
 
 - Sie verfügen über ein [OVHcloud Webhosting](/links/web/hosting), mit Ausnahme von [Cloud Web Hosting](/links/web/hosting-cloud-web-offer).
-- Sie haben über das [OVHcloud Kundencenter](/links/manager) oder [FTP-Login](/pages/web_cloud/web_hosting/ftp_connection) Zugriff auf Ihr Webhosting.
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direkter Link:** [Webhosting](/links/control-panel/web-hosting)
+- **Navigationspfad:** `Web Cloud`{.action} > `Hosting-Pakete`{.action} > Wählen Sie Ihr Webhosting aus
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## In der praktischen Anwendung
 

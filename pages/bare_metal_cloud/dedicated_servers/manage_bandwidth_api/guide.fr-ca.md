@@ -1,6 +1,6 @@
 ---
-title: "Augmenter et diminuer la bande passante d'un serveur dédié via l'API OVHcloud"
-excerpt: "Découvrez comment augmenter ou diminuer la bande passante d'un serveur dédié via l'API OVHcloud"
+title: "Gérer la bande passante d'un serveur dédié via l'API OVHcloud"
+excerpt: "Augmentez ou diminuez la bande passante publique de votre serveur dédié via l'API OVHcloud"
 updated: 2025-01-20
 ---
 
@@ -30,7 +30,7 @@ Utilisez l'appel API suivant pour répertorier tous les services disponibles pou
 > @api {v1} /order GET /order/upgrade/bare metalPublicBandwidth
 >
 
-![bandwidth](images/bandwidth_01.png){.thumbnail}
+![Appel API listant les services de bande passante publique disponibles](images/bandwidth_01.png){.thumbnail}
 
 ### Trouver le code de l'offre (*planCode*)
 
@@ -45,11 +45,11 @@ Renseignez les variables :
 
 - serviceName : nom de votre serveur dédié, par exemple `ns1234567.ip-203.0.113.eu`
 
-![bandwidth](images/bandwidth_02.png){.thumbnail}
+![Appel API pour lister les codes de plan de bande passante disponibles](images/bandwidth_02.png){.thumbnail}
 
 Le champ `RESPONSE` doit afficher des informations similaires à celles qui suivent :
 
-![bandwidth](images/bandwidth_02_1.png){.thumbnail}
+![Reponse API affichant les codes de plan de bande passante disponibles](images/bandwidth_02_1.png){.thumbnail}
 
 ### Vérifier votre commande
 
@@ -66,11 +66,11 @@ Renseignez les variables :
 - serviceName : nom de votre serveur dédié
 - quantity : 1
 
-![bandwidth](images/bandwidth_03.png){.thumbnail}
+![Appel API pour previsualiser la commande de bande passante avec tarif](images/bandwidth_03.png){.thumbnail}
 
 Le champ `RESPONSE` doit afficher des informations similaires à celles qui suivent :
 
-![bandwidth](images/bandwidth_03_1.png){.thumbnail}
+![Reponse API avec details de tarification de la bande passante](images/bandwidth_03_1.png){.thumbnail}
 
 ### Soumettre votre commande
 
@@ -81,10 +81,14 @@ Pour soumettre officiellement votre commande, utilisez l'appel API suivant :
 > @api {v1} /order POST /order/upgrade/bare metalPublicBandwidth/{serviceName}/{planCode}
 >
 
-![bandwidth](images/bandwidth_4.png){.thumbnail}
+![Appel API pour soumettre la commande de bande passante publique](images/bandwidth_4.png){.thumbnail}
 
 La commande sera traitée une fois que vous aurez cliqué sur `Execute`{.action}. Le montant affiché correspond au premier mois de facturation de votre option, calculé au prorata temporis du mois en cours.
 
 ## Aller plus loin
+
+[Augmenter ou diminuer la bande passante privée (vRack) d'un serveur dédié via l'API OVHcloud](/pages/bare_metal_cloud/dedicated_servers/manage_bandwidth_vRack_api)
+
+[Premiers pas avec un serveur dédié](/pages/bare_metal_cloud/dedicated_servers/getting-started-with-dedicated-server)
 
 Rejoignez notre [communauté d'utilisateurs](/links/community).

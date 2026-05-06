@@ -22,12 +22,22 @@ Criar uma snapshot com um volume adicional corresponde geralmente a dois objetiv
 
 ## Requisitos
 
-- Ter acesso à [Área de Cliente OVHcloud](/links/manager)
 - Um volume [Block Storage](/pages/public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance) criado no seu projeto [Public Cloud](/pages/public_cloud/public_cloud_cross_functional/create_a_public_cloud_project)
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Acesso à Área de Cliente OVHcloud
+
+- **Ligação direta:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Caminho de navegação:** `Public Cloud`{.action} > Selecione o seu projeto
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## Instruções
 
-Aceda à [Área de Cliente OVHcloud](/links/manager), aceda à secção `Public Cloud`{.action} e selecione o projeto Public Cloud em questão. A seguir, clique em `Block Storage`{.action} na barra de navegação da esquerda, na **Backup Storage**.
+Clique em `Block Storage`{.action} na barra de navegação da esquerda, na **Backup Storage**.
 
 ![Volume Snapshot](images/volume_snapshot01.png){.thumbnail}
 

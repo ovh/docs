@@ -1,7 +1,7 @@
 ---
-title: 'Configuring IPv6 on dedicated servers'
-excerpt: 'Find out how to configure IPv6 addresses on our infrastructure'
-updated: 2025-12-09
+title: "Configure IPv6 on Dedicated Servers"
+excerpt: "Configure IPv6 addresses on your OVHcloud dedicated server with examples for major Linux distributions and Windows."
+updated: 2026-04-13
 ---
 
 <style>
@@ -44,8 +44,19 @@ Internet Protocol version 6 (IPv6) is the latest version of the Internet Protoco
 - All your IPv6 information (prefix, gateway etc.)
 - Basic knowledge of [SSH](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction) and networking
 
+<!-- CP-NAV-START:baremetal-dedicated-servers -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Dedicated Servers](/links/control-panel/baremetal-dedicated-servers)
+- **Navigation path:** `Bare Metal Cloud`{.action} > `Dedicated servers`{.action} > Select your server
+
+---
+<!-- CP-NAV-END:baremetal-dedicated-servers -->
+
 > [!warning]
-> Please note that Kimsufi servers are only provided with a single IPV6 block (/128). IPv6 will be configured automatically when installing the OS.
+> Please note that Kimsufi servers are only provided with a single IPv6 block (/128). IPv6 will be configured automatically when installing the OS.
 >
 
 ## Instructions
@@ -56,7 +67,7 @@ On dedicated servers, the first IPv6 is declared as 2607:5300:xxxx:xxxx::. For e
 
 By default, the first IPv6 is configured on most of the recent Linux distributions we offer for installation, so the gateway is already included in the configuration file. In most cases, you won't need to add it again manually.
 
-Please take note of the following terminology that will be used in code examples and instructions of the guide sections below:
+Note the following terminology used in the code examples and instructions below:
 
 |Term|Description|Example|
 |---|---|---|
@@ -70,10 +81,9 @@ In our examples, we'll use the `nano` text editor. Feel free to use the text edi
 
 The first step is to identify the IPv6 block and gateway assigned to your server.
 
+<!-- CP-STEPS-START:view-ipv6-info -->
 > [!tabs]
 > **Via the OVHcloud Control Panel**
->>
->> Log in to the [OVHcloud Control Panel](/links/manager), go to the `Bare Metal Cloud`{.action} section and select your server from `Dedicated servers`{.action}.
 >>
 >> The IPv6 block and gateway assigned to your server will appear in the `Network` section of the `General Information`{.action} tab. Once you have copied them, continue with applying the IPv6 configuration.
 >>
@@ -89,8 +99,9 @@ The first step is to identify the IPv6 block and gateway assigned to your server
 >> >
 >> > @api {v1} /dedicated/server GET /dedicated/server/{serviceName}/specifications/network
 >> >
+<!-- CP-STEPS-END:view-ipv6-info -->
 
-Please note that the leading "0's" can be removed in an IPv6 gateway. For example, The IPv6 gateway `2607:5300:60:62ff:00ff:00ff:00ff:00ff` can also been written as `2607:5300:60:62ff:ff:ff:ff:ff`.
+The leading "0s" can be removed in an IPv6 gateway. For example, the IPv6 gateway `2607:5300:60:62ff:00ff:00ff:00ff:00ff` can also be written as `2607:5300:60:62ff:ff:ff:ff:ff`.
 
 > [!warning]
 >
@@ -98,7 +109,7 @@ Please note that the leading "0's" can be removed in an IPv6 gateway. For exampl
 >
 
 > [!primary]
-> With some operating systems, the addition of static IPv6 routes in the original configuration file is necessary and is done by default. If that is the case, simply add your configuration for IPv6 as instructed in the guide, do not modify any lines in the original file.
+> With some operating systems, the addition of static IPv6 routes in the original configuration file is necessary and is done by default. If that is the case, add your IPv6 configuration as instructed, do not modify any lines in the original file.
 > 
 
 > [!tabs]
@@ -108,7 +119,7 @@ Please note that the leading "0's" can be removed in an IPv6 gateway. For exampl
 >>
 >> > [!warning]
 >> >
->> > Before following the steps below, we strongly suggest that you disable IPv6 autoconf and router advertising to prevent known issues. You can do so by adding the following lines to your `sysctl.conf` file, which is located in /etc/sysctl.conf:
+>> > Before following the steps below, we strongly suggest that you disable IPv6 autoconf and router advertising to prevent known issues. You can do so by adding the following lines to your `sysctl.conf` file, which is located in `/etc/sysctl.conf`:
 >> > 
 >> > `net.ipv6.conf.all.autoconf=0`
 >> > 
@@ -249,7 +260,7 @@ Please note that the leading "0's" can be removed in an IPv6 gateway. For exampl
 >>
 >> **Step 3: Amend the network configuration file**
 >>
->> Amend the file by adding the necessarylines to it, do not modify any thing in the original file. Replace the generic elements (i.e. `YOUR_IPV6` and `IPv6_PREFIX`) with your specific values. Also, we have omitted the IPv4 configuration to avoid confusion, but the IPv6 configuration is made in the same configuration file.
+>> Amend the file by adding the necessary lines to it, do not modify anything in the original file. Replace the generic elements (i.e. `YOUR_IPV6` and `IPv6_PREFIX`) with your specific values. Also, we have omitted the IPv4 configuration to avoid confusion, but the IPv6 configuration is made in the same configuration file.
 >>
 >> ```console
 >> [ipv6]
@@ -287,7 +298,7 @@ Please note that the leading "0's" can be removed in an IPv6 gateway. For exampl
 >> gateway=2607:5300:xxxx:xxff:ff:ff:ff:ff
 >> ```
 >>
->> - For multiple IPV6 addresses:
+>> - For multiple IPv6 addresses:
 >>
 >> ```console
 >> [ipv6]
@@ -386,7 +397,7 @@ Please note that the leading "0's" can be removed in an IPv6 gateway. For exampl
 >>               - 2607:5300:adce:f2cd::1/64
 >> ```
 >>
->> - For multiple IPV6 addresses:
+>> - For multiple IPv6 addresses:
 >>
 >> ```yaml
 >> network:
@@ -474,7 +485,7 @@ Please note that the leading "0's" can be removed in an IPv6 gateway. For exampl
 >> IPV6_DEFAULTGW=2607:5300:adce:f2ff:ff:ff:ff:ff
 >> ```
 >>
->> - For multiple IPV6 addresses:
+>> - For multiple IPv6 addresses:
 >>
 >> ```console
 >> IPV6INIT=yes
@@ -522,13 +533,29 @@ Please note that the leading "0's" can be removed in an IPv6 gateway. For exampl
 >>
 >> Select `Internet Protocol Version 6`{.action}, then click `Properties`{.action}.
 >>
->> ![Properties](images/ipv6_properties.png){.thumbnail}
+>> ![Internet Protocol Version 6 selected in adapter properties](images/ipv6_properties.png){.thumbnail}
 >>
 >> **Step 3: Amend the network configuration**
 >>
 >> Enter your IPv6 configuration (`IPv6 address` and `Default Gateway`), check the `Validate settings upon exit` box and click the `OK`{.action} button to validate your changes.
 >>
->> ![Properties](images/ipv6_configuration.png){.thumbnail}
+>> ![IPv6 address and gateway configuration dialog](images/ipv6_configuration.png){.thumbnail}
+>>
+>> **Step 4: Disable randomized IPv6 interface identifiers**
+>>
+>> Open the Start menu, search for `Windows PowerShell`{.action}, right-click it and select `Run as administrator`{.action}.
+>>
+>> ![Run PowerShell as Administrator](images/ipv6_powershell_admin.png){.thumbnail}
+>>
+>> In the PowerShell window, run the following command:
+>>
+>> ```powershell
+>> Set-NetIPv6Protocol -RandomizeIdentifiers Disabled
+>> ```
+>>
+>> ![Disable randomized identifiers](images/ipv6_powershell_randomize_identifiers.png){.thumbnail}
+>>
+>> This step is required for IPv6 connectivity on OVHcloud infrastructure. It makes Windows build its IPv6 link-local addresses from the adapter's MAC address (EUI-64) instead of using random values. The change takes effect immediately and persists across reboots.
 >>
 
 ### Verify the configuration and test the connection
@@ -603,7 +630,7 @@ There is a simple operation to determine whether the error is in your configurat
 
 First, [put your server into rescue mode](/pages/bare_metal_cloud/dedicated_servers/rescue_mode).
 
-Next, use the template commands below to configure your IPv6 non-persistently, replacing ‘YOUR_IPV6’, ‘IPV6_PREFIX’ and 'IPV6_GATEWAY' with your own details:
+Next, use the template commands below to configure your IPv6 non-persistently, replacing `YOUR_IPV6`, `IPV6_PREFIX` and `IPV6_GATEWAY` with your own details:
 
 ```sh
 ip addr add YOUR_IPV6/IPV6_PREFIX dev eth0
@@ -616,7 +643,7 @@ Test your network again via a ping6, for example:
 ```sh
 ping6 ipv6.google.com
 ```
-If your server responds, it is likely that there is an error in one of the steps taken for your initial configuration.
+If your server responds, there is likely an error in one of the initial configuration steps.
 
 In any case, feel free to [contact our support team](https://help.ovhcloud.com/csm?id=csm_get_help) and ask to review your configurations. You will need to provide:
 
@@ -625,5 +652,7 @@ In any case, feel free to [contact our support team](https://help.ovhcloud.com/c
 - The content of that file.
 
 ## Go further
+
+[Configuring IPv6 on a VM on a Dedicated Server](/pages/bare_metal_cloud/dedicated_servers/configure-an-ipv6-on-a-vm)
 
 Join our [community of users](/links/community).

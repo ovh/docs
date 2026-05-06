@@ -1,5 +1,5 @@
 ---
-title: Kafka - How to create topics for your Kafka cluster
+title: Create topics for Analytics with Kafka
 excerpt: Learn how to create Kafka topics
 updated: 2025-08-25
 ---
@@ -12,9 +12,19 @@ This guide explains how to create Kafka topics via the OVHcloud Control Panel.
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](/links/manager)
 - A [Public Cloud project](/links/public-cloud/public-cloud) in your OVHcloud account
 - A [Kafka cluster running](/pages/public_cloud/data_analytics/analytics/kafka_create_cluster) on OVHcloud Public Cloud [accepting incoming connections](/pages/public_cloud/data_analytics/analytics/kafka_incoming_connections)
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Navigation path:** `Public Cloud`{.action} > Select your project
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## Instructions
 

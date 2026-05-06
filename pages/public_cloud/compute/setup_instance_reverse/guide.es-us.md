@@ -16,11 +16,21 @@ La configuración de la resolución **inversa DNS** de una instancia resulta esp
 
 - Tener una [instancia de Public Cloud](/links/public-cloud/public-cloud) en su cuenta de OVHcloud.
 - Un dominio con un registro `A` que apunta a la instancia.
-- Tienes acceso a tu [Panel de configuración de OVHcloud](/links/manager).
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Ruta de navegación:** `Public Cloud`{.action} > Seleccione su proyecto
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## Procedimiento
 
-Conéctese al [Panel de configuración de OVHcloud](/links/manager), acceda a la sección `Network`{.action} y haga clic en `Direcciones IP públicas`{.action}.
+Acceda a la sección `Network`{.action} y haga clic en `Direcciones IP públicas`{.action}.
 
 El menú desplegable bajo "**Mis direcciones IP públicas y servicios asociados**" le permite filtrar sus servicios por categoría. También puede buscar una dirección IP específica utilizando la barra de búsqueda situada a la izquierda del menú desplegable.
 

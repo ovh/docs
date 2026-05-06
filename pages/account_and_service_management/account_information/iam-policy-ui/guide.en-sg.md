@@ -33,11 +33,22 @@ For example, we can create a policy to give to a user called John, for a VPS, ac
 - You know [how to manage account users](/pages/account_and_service_management/account_information/ovhcloud-users-management).
 - You have one or more OVHcloud products linked to this OVHcloud account (Load Balancer, domain name, VPS, etc.).
 
+<!-- CP-NAV-START:iam-policies -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [IAM Policies](/links/control-panel/iam-policies)
+- **Navigation path:** `Identity, Security & Operations`{.action} > `Policies`{.action}
+
+---
+<!-- CP-NAV-END:iam-policies -->
+
 ## Instructions
 
 ### Accessing the IAM menu
 
-On the sidebar, click on `Identity, Security & Operations`{.action} then on `Policies`{.action}.
+Open the [IAM Policies](/links/control-panel/iam-policies) page.
 
 ![Access to the IAM menu](images/access_to_the_IAM_menu_01.png){.thumbnail}
 

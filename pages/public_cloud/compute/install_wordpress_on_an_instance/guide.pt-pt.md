@@ -27,8 +27,18 @@ Este tutorial fornece as etapas de base para uma instalação manual do WordPres
 
 - Um [projeto Public Cloud](/links/public-cloud/public-cloud) na sua conta OVHcloud.
 - Ter uma [instância Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps) com Debian ou Ubuntu instalado.
-- Ter acesso à [Área de Cliente OVHcloud](/links/manager).
 - Um acesso administrador (sudo) à sua instância através de SSH.
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Acesso à Área de Cliente OVHcloud
+
+- **Ligação direta:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Caminho de navegação:** `Public Cloud`{.action} > Selecione o seu projeto
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## Instruções
 
@@ -64,12 +74,12 @@ debian@instance:~$ sudo apt install apache2 mariadb-server php libapache2-mod-ph
 
 ### Etapa 2: configuração do servidor de base de dados <a name="sqlconf"></a>
 
-MariaDB fornece um script para o ajudar na configuração inicial e para aplicar certos parâmetros relacionados com a segurança.
+MariaDB [fornece um script](https://mariadb.com/docs/server/clients-and-utilities/deployment-tools/mariadb-secure-installation) para o ajudar na configuração inicial e para aplicar certos parâmetros relacionados com a segurança.
 
 Para o executar, insira o seguinte comando:
 
 ```bash
-debian@instance:~$ sudo mysql_secure_installation
+debian@instance:~$ sudo mariadb-secure-installation
 ```
 
 Confirme a primeira chamada apoiando-se na `Enter`{.action}.

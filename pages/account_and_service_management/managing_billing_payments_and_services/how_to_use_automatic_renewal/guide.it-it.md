@@ -4,6 +4,50 @@ excerpt: Scopri come gestire i tuoi servizi e i loro rinnovi nella tua area clie
 updated: 2025-01-28
 ---
 
+<style>
+/* ---FAQ only--- */
+details {
+    margin: 0.1rem 1;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    background: #ffffffff;
+}
+details > summary {
+    padding: 0.1rem 1rem;
+    font-weight: 500;
+    color: #268fd4ff;
+    cursor: pointer;
+    list-style: none;
+}
+details > summary::before {
+    content: '\25B6';
+    display: inline-block;
+    margin-right: 0.5ch;
+    transition: transform 0.2s;
+}
+details[open] > summary::before {
+    content: '\25BC';
+}
+details:hover {
+    border: 1px solid #147DE8;
+    border-radius: 4px;
+    transition: border-color 0.5s ease;
+}
+details[open] > summary {
+    background: #ffffffff;
+}
+details > :not(summary) {
+    padding: 0.25rem 0.5rem;
+    box-sizing: border-box;
+    list-style-position: inside;
+}
+.smallish-gap {
+    display: block;
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
+}
+</style>
+
 ## Obiettivo
 
 Il menu **Le mie offerte e servizi** dello Spazio Cliente OVHcloud ti permette di verificare lo stato dei tuoi servizi, rinnovarli, modificare il tipo di rinnovo, saldare fatture o anticipare il pagamento.
@@ -19,17 +63,27 @@ Questa guida ti mostra come:
 
 > [!primary]
 >
-> Ti ricordiamo che in base al luogo di residenza, alla normativa vigente e ai servizi attivati, è possibile che alcune sezioni di questa guida varino o non siano applicabili alla tua situazione. Per maggiori informazioni, consulta i contratti OVHcloud dallo [Spazio Cliente](/links/manager) : clicca sul tuo nome in alto a destra, sulla `Le mie offerte e servizi`{.action} e poi sulla scheda `Contratti`{.action}.
+> Ti ricordiamo che in base al luogo di residenza, alla normativa vigente e ai servizi attivati, è possibile che alcune sezioni di questa guida varino o non siano applicabili alla tua situazione. Per maggiori informazioni, consulta i contratti OVHcloud nella pagina [Lista dei contratti](/links/control-panel/billing-contracts).
 >
 
 <iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/dfpPCa0mUyo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Prerequisiti
 
-- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
 - Disporre di servizi OVHcloud attivi
 - Essere [contatto fatturazione](/pages/account_and_service_management/account_information/managing_contacts#definizione) dei servizi OVHcloud
 - Disporre di un metodo di pagamento valido sul tuo account OVHcloud. Consulta la nostra guida "[Gestire i metodi di pagamento](/pages/account_and_service_management/managing_billing_payments_and_services/manage-payment-methods)".
+
+<!-- CP-NAV-START:billing-services -->
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [Le mie offerte e servizi](/links/control-panel/billing-services)
+- **Percorso di navigazione:** Clicca sul tuo nome in alto a destra > `Le mie offerte e servizi`{.action}
+
+---
+<!-- CP-NAV-END:billing-services -->
 
 <a name="auto-vs-manual"></a>
 
@@ -68,8 +122,7 @@ Questa guida ti mostra come:
 
 ## Procedura
 
-Accedi allo [Spazio Cliente OVHcloud](/links/manager).<br>
-Clicca sul tuo nome nell’angolo in alto a destra e seleziona `Le mie offerte e servizi`{.action}.
+Apri la pagina [Le mie offerte e servizi](/links/control-panel/billing-services).
 
 ![prodotti e servizi](/pages/assets/screens/control_panel/product-selection/right-menu/my-solutions-and-services.png){.thumbnail}
 
@@ -193,31 +246,68 @@ Nella tabella seguente vengono descritte le azioni in blocco disponibili.
 
 ## FAQ
 
-> [!faq]
->
-> Dove trovare il mio identificativo cliente (NIC) OVHcloud?
->> È visualizzato nello Spazio Cliente, cliccando sul tuo nome in alto a destra. È inoltre disponibile in alto a destra per tutte le fatture. e inserito nell’email di conferma della creazione dell’account, nei messaggi di conferma dell’ordine o di rinnovo, nonché nelle notifiche di connessione al tuo account.
-> Non riesci ad accedere al tuo account OVHcloud per rinnovare i tuoi servizi, cosa fai?
->> Consulta la sezione "[Cosa fare se non si riesco a connettermi?](/pages/account_and_service_management/account_information/ovhcloud-account-login#login-failure)" della nostra guida "[Accedere allo Spazio Cliente OVHcloud](/pages/account_and_service_management/account_information/ovhcloud-account-login)".
-> Voglio attivare il rinnovo automatico ma ricevo un messaggio di errore. Cosa devo fare?
->> Per attivare il rinnovo automatico sui servizi, è necessario aver aggiunto un metodo di pagamento valido al tuo account OVHcloud. In caso contrario o se il metodo di pagamento è scaduto, comparirà un messaggio di errore nello Spazio Cliente durante i tentativi di attivazione del rinnovo automatico. Consulta la nostra guida "[Gestire i metodi di pagamento](/pages/account_and_service_management/managing_billing_payments_and_services/manage-payment-methods)" per verificare o aggiungere un metodo di pagamento.
-> Il metodo di pagamento non è più valido. Come aggiungere un nuovo metodo di pagamento?
->> Consulta la nostra guida "[Gestire i metodi di pagamento](/pages/account_and_service_management/managing_billing_payments_and_services/manage-payment-methods)". Per eliminare un metodo di pagamento obsoleto, è necessario aggiungere un nuovo metodo di pagamento valido al tuo account OVHcloud.
-> Hai una domanda sul rinnovo del tuo dominio
->> Consulta la nostra guida "[Rinnovare i miei domini OVHcloud](/pages/web_cloud/domains/autorenew_domain_name)".
-> Non voglio più addebiti automatici ma non voglio disattivare il servizio. Cosa devo fare?
->> Se il servizio lo consente, è possibile utilizzare l’azione [Configura il rinnovo](#actions) per scegliere un rinnovo manuale.
-> Ho rinnovato il mio servizio per 12 mesi. Posso annullare la mia scelta?
->> Una volta effettuato il rinnovo del servizio, non è possibile annullarlo. È comunque possibile scegliere un altro tipo di rinnovo o disattivare il servizio, ma queste 2 opzioni potranno essere prese in considerazione solo al termine dell'abbonamento in corso, cioè al termine dei 12 mesi.
-> Il mio sito è sospeso perché non ho rinnovato i miei servizi in tempo. Ho appena rinnovato i miei servizi. Quanto tempo è necessario attendere prima che il sito Web sia nuovamente accessibile?
->> Il tempo di ripristino varia in base ai servizi interessati.
->> Se solo l’hosting Web è stato sospeso ed è stato rinnovato, ci vorranno in media 2 ore perché il sito sia nuovamente accessibile.
->> Se anche il dominio è stato sospeso ed è stato rinnovato, il tempo di attesa può essere più lungo e arrivare fino a 48 ore, corrispondente al tempo di propagazione DNS.
->> Per proteggerti dall'indisponibilità di accesso per tutti i tuoi servizi critici, ti consigliamo di optare per il rinnovo automatico e di [verificare regolarmente che i tuoi metodi di pagamento siano aggiornati](/pages/account_and_service_management/managing_billing_payments_and_services/manage-payment-methods).
-> L'abbonamento del mio servizio scade a luglio 2024. È gennaio 2024 e voglio rinnovarlo per un anno. L'abbonamento scadrà a luglio 2025 o gennaio 2025?
->> Quando estendi il rinnovo di un servizio (per un anno o un periodo più breve), questo periodo si aggiunge alla successiva data di validità visibile nella tabella "Gestione delle mie offerte e servizi". In questo caso, il tuo servizio sarà rinnovato fino a luglio 2025.
-> L'abbonamento del mio servizio è scaduto il 1 gennaio 2024 e ho dimenticato di rinnovarlo. L'ho appena rinnovato il 16 gennaio 2024 per 6 mesi, ma constato che scadrà il 1° luglio 2024 e non il 16 luglio 2024. È normale?
->> Sì, è normale, il rinnovo inizia alla data di scadenza dell'abbonamento.
+/// details | Dove trovare il mio identificativo cliente (NIC) OVHcloud?
+
+È visualizzato nello Spazio Cliente, cliccando sul tuo nome in alto a destra. È inoltre disponibile in alto a destra per tutte le fatture. e inserito nell’email di conferma della creazione dell’account, nei messaggi di conferma dell’ordine o di rinnovo, nonché nelle notifiche di connessione al tuo account.
+
+///
+
+/// details | Non riesci ad accedere al tuo account OVHcloud per rinnovare i tuoi servizi, cosa fai?
+
+Consulta la sezione "[Cosa fare se non si riesco a connettermi?](/pages/account_and_service_management/account_information/ovhcloud-account-login#login-failure)" della nostra guida "[Accedere allo Spazio Cliente OVHcloud](/pages/account_and_service_management/account_information/ovhcloud-account-login)".
+
+///
+
+/// details | Voglio attivare il rinnovo automatico ma ricevo un messaggio di errore. Cosa devo fare?
+
+Per attivare il rinnovo automatico sui servizi, è necessario aver aggiunto un metodo di pagamento valido al tuo account OVHcloud. In caso contrario o se il metodo di pagamento è scaduto, comparirà un messaggio di errore nello Spazio Cliente durante i tentativi di attivazione del rinnovo automatico. Consulta la nostra guida "[Gestire i metodi di pagamento](/pages/account_and_service_management/managing_billing_payments_and_services/manage-payment-methods)" per verificare o aggiungere un metodo di pagamento.
+
+///
+
+/// details | Il metodo di pagamento non è più valido. Come aggiungere un nuovo metodo di pagamento?
+
+Consulta la nostra guida "[Gestire i metodi di pagamento](/pages/account_and_service_management/managing_billing_payments_and_services/manage-payment-methods)". Per eliminare un metodo di pagamento obsoleto, è necessario aggiungere un nuovo metodo di pagamento valido al tuo account OVHcloud.
+
+///
+
+/// details | Hai una domanda sul rinnovo del tuo dominio
+
+Consulta la nostra guida "[Rinnovare i miei domini OVHcloud](/pages/web_cloud/domains/autorenew_domain_name)".
+
+///
+
+/// details | Non voglio più addebiti automatici ma non voglio disattivare il servizio. Cosa devo fare?
+
+Se il servizio lo consente, è possibile utilizzare l’azione [Configura il rinnovo](#actions) per scegliere un rinnovo manuale.
+
+///
+
+/// details | Ho rinnovato il mio servizio per 12 mesi. Posso annullare la mia scelta?
+
+Una volta effettuato il rinnovo del servizio, non è possibile annullarlo. È comunque possibile scegliere un altro tipo di rinnovo o disattivare il servizio, ma queste 2 opzioni potranno essere prese in considerazione solo al termine dell'abbonamento in corso, cioè al termine dei 12 mesi.
+
+///
+
+/// details | Il mio sito è sospeso perché non ho rinnovato i miei servizi in tempo. Ho appena rinnovato i miei servizi. Quanto tempo è necessario attendere prima che il sito Web sia nuovamente accessibile?
+
+Il tempo di ripristino varia in base ai servizi interessati.
+Se solo l’hosting Web è stato sospeso ed è stato rinnovato, ci vorranno in media 2 ore perché il sito sia nuovamente accessibile.
+Se anche il dominio è stato sospeso ed è stato rinnovato, il tempo di attesa può essere più lungo e arrivare fino a 48 ore, corrispondente al tempo di propagazione DNS.
+Per proteggerti dall'indisponibilità di accesso per tutti i tuoi servizi critici, ti consigliamo di optare per il rinnovo automatico e di [verificare regolarmente che i tuoi metodi di pagamento siano aggiornati](/pages/account_and_service_management/managing_billing_payments_and_services/manage-payment-methods).
+
+///
+
+/// details | L'abbonamento del mio servizio scade a luglio 2024. È gennaio 2024 e voglio rinnovarlo per un anno. L'abbonamento scadrà a luglio 2025 o gennaio 2025?
+
+Quando estendi il rinnovo di un servizio (per un anno o un periodo più breve), questo periodo si aggiunge alla successiva data di validità visibile nella tabella "Gestione delle mie offerte e servizi". In questo caso, il tuo servizio sarà rinnovato fino a luglio 2025.
+
+///
+
+/// details | L'abbonamento del mio servizio è scaduto il 1 gennaio 2024 e ho dimenticato di rinnovarlo. L'ho appena rinnovato il 16 gennaio 2024 per 6 mesi, ma constato che scadrà il 1° luglio 2024 e non il 16 luglio 2024. È normale?
+
+Sì, è normale, il rinnovo inizia alla data di scadenza dell'abbonamento.
+
+///
 
 ## Per saperne di più
 

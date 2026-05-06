@@ -18,6 +18,17 @@ updated: 2025-05-06
 - Posséder une offre [VMware vSphere on OVHcloud](/links/hosted-private-cloud/vmware)
 - Avoir accès à [l'espace client OVHcloud](/links/manager) et être administrateur technique de l'infrastructure VMware vSphere on OVHcloud.
 
+<!-- CP-NAV-START:privatecloud-vmware-vsphere -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [VMware vSphere](/links/control-panel/privatecloud-vmware-vsphere)
+- **Pour accéder à vos services :** `Hosted Private Cloud`{.action} > `Managed VMware vSphere`{.action} > Sélectionnez votre service vSphere
+
+---
+<!-- CP-NAV-END:privatecloud-vmware-vsphere -->
+
 ## En pratique
 
 Ce guide pratique a pour but de vous fournir des informations et des solutions sur le processus de migration de vos services VMware vSphere on OVHcloud vers une offre Public VCF as-a-Service.

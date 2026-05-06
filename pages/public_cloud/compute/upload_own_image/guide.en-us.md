@@ -17,6 +17,17 @@ OVHcloud offers ready-to-go images for Public Cloud instances, however we also e
 - An [OpenStack user](/pages/public_cloud/public_cloud_cross_functional/create_and_delete_a_user) 
 - An [OpenStack CLI ready environment](/pages/public_cloud/public_cloud_cross_functional/prepare_the_environment_for_using_the_openstack_api) (if using CLI)
 
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Navigation path:** `Public Cloud`{.action} > Select your project
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
+
 ## Instructions
 
 ### Before starting
@@ -47,9 +58,7 @@ With OpenStack there are two ways of uploading your own image. You can either up
 
 Once your image is ready to upload, you can use the following steps to upload it using the OpenStack CLI:
 
-1\. Log in to the [OVHcloud Control Panel](/links/manager), go to the `Public Cloud`{.action} section, and select the Public Cloud project concerned.
-
-Click on `Users & Roles`{.action} in the left-hand menu under **Settings**. Next, click the `...`{.action} next to the corresponding openstack user, then click on `Download OpenStack's RC file`{.action} (select the region you want to upload to).
+1\. Click on `Users & Roles`{.action} in the left-hand menu under **Settings**. Next, click the `...`{.action} next to the corresponding openstack user, then click on `Download OpenStack's RC file`{.action} (select the region you want to upload to).
 
 ![openrc](images/open_rc_download.png){.thumbnail}
 

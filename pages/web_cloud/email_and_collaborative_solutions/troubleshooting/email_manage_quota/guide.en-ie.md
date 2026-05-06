@@ -12,13 +12,39 @@ Every OVHcloud email account has a dedicated storage space. By managing your sto
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](/links/manager).
 - A preconfigured OVHcloud email solution:
     - **MX Plan** available with a [web hosting plan](/links/web/hosting), or included in a [100M free hosting](/links/web/domains-free-hosting).
-    - [Exchange](/links/web/emails).
+    - [Exchange](/links/web/emails-exchange).
     - [Email Pro](/links/web/email-pro).
     - [Zimbra](/links/web/emails-zimbra).
 - Login credentials for the email account concerned
+
+<!-- CP-NAV-START:web-mx-plan -->
+<!-- CP-NAV-START:web-email-pro -->
+<!-- CP-NAV-START:web-exchange -->
+---
+
+### OVHcloud Control Panel Access
+
+**MX Plan:**
+
+- **Direct link:** [MX Plan](/links/control-panel/web-mx-plan)
+- **Navigation path:** `Web Cloud`{.action} > `MX Plan`{.action} > Select your MX Plan service
+
+**Email Pro:**
+
+- **Direct link:** [Email Pro](/links/control-panel/web-email-pro)
+- **Navigation path:** `Web Cloud`{.action} > `Email Pro`{.action} > Select your platform
+
+**Exchange:**
+
+- **Direct link:** [Exchange](/links/control-panel/web-exchange)
+- **Navigation path:** `Web Cloud`{.action} > `Exchange`{.action} > Select your platform
+
+---
+<!-- CP-NAV-END:web-exchange -->
+<!-- CP-NAV-END:web-email-pro -->
+<!-- CP-NAV-END:web-mx-plan -->
 
 > [!primary]
 >
@@ -94,7 +120,7 @@ Go to the page [Webmail](/links/web/email) and enter the login information for y
 >>
 > **Zimbra**: **MX Plan** / **Zimbra Starter** / **Zimbra Pro**
 >>
->> When you are logged in to the Zimbra webmail, click on the cogwheel `&#9881;` in the top right-hand corner of your interface, then click `Settings`{.action}. In the `General`{.action} tab, you can view the quota used under the heading “Storage space”.<br><br>
+>> When you are logged in to the Zimbra webmail, click on the cogwheel ( &#9881;) in the top right-hand corner of your interface, then click `Settings`{.action}. In the `General`{.action} tab, you can view the quota used under the heading “Storage space”.<br><br>
 >>![email](images/email-quota-webmail03.png){.thumbnail}<br>When you are logged in to the Zimbra webmail, click on the cogwheel `&#9881;' in the top right-hand corner of your interface, then click `Settings`{.action}. In the `General`{.action} tab, you can view the quota used under the heading “Storage space”.
 >>
 

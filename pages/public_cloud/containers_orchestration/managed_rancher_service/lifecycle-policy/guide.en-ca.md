@@ -1,7 +1,7 @@
 ---
 title: 'Managed Rancher Service supported versions and lifecycle policy'
 excerpt: 'A complete guide including lifecycle policy, release calendar, and supported versions for OVHcloud Managed Rancher Service'
-updated: 2025-11-14
+updated: 2026-03-23
 ---
 
 ## Objective
@@ -40,8 +40,9 @@ This schedule is subject to change and is provided for informational purposes on
 
 | Rancher version | Upstream release date | MRS release date | MRS End of support | MRS End of life |
 |-----------------|-----------------------|------------------|--------------------|-----------------|
+| 2.13            | 2025-11-25            | 2026-03-23       | 2026-11            | 2027-02         |
+| 2.12            | 2025-08-29            | 2025-12-18       | 2026-08            | 2026-11         |
 | 2.11            | 2025-03-31            | 2025-08-14       | 2026-04            | 2026-06         |
-| 2.10            | 2024-11-19            | 2025-01-30       | 2025-11            | 2026-Q1         |
 
 **MRS release date:** Estimated date when this Rancher version is available for OVHcloud Managed Rancher Service.
 
@@ -56,11 +57,9 @@ To get the list of supported Kubernetes versions for each Rancher minor version,
 
 Depending on the version of Rancher, the OVHcloud Managed Kubernetes Service (MKS) drivers will support the following versions:
 
-- **Rancher 2.7.15** -> MKS 1.26 to 1.27
-- **Rancher 2.8.7** -> MKS 1.27 to 1.28
-- **Rancher 2.9.x** -> MKS 1.28 to 1.30
-- **Rancher 2.10.x** -> MKS 1.28 to 1.31
 - **Rancher 2.11.x** -> MKS 1.30 to 1.32
+- **Rancher 2.12.x** -> MKS 1.31 to 1.33
+- **Rancher 2.13.x** -> MKS 1.32 to 1.34
 
 #### Support
 

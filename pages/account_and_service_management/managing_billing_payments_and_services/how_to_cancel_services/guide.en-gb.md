@@ -4,9 +4,53 @@ excerpt: Find out how to cancel your OVHcloud subscriptions via the OVHcloud Con
 updated: 2025-04-28
 ---
 
+<style>
+/* ---FAQ only--- */
+details {
+    margin: 0.1rem 1;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    background: #ffffffff;
+}
+details > summary {
+    padding: 0.1rem 1rem;
+    font-weight: 500;
+    color: #268fd4ff;
+    cursor: pointer;
+    list-style: none;
+}
+details > summary::before {
+    content: '\25B6';
+    display: inline-block;
+    margin-right: 0.5ch;
+    transition: transform 0.2s;
+}
+details[open] > summary::before {
+    content: '\25BC';
+}
+details:hover {
+    border: 1px solid #147DE8;
+    border-radius: 4px;
+    transition: border-color 0.5s ease;
+}
+details[open] > summary {
+    background: #ffffffff;
+}
+details > :not(summary) {
+    padding: 0.25rem 0.5rem;
+    box-sizing: border-box;
+    list-style-position: inside;
+}
+.smallish-gap {
+    display: block;
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
+}
+</style>
+
 ## Objective
 
-You want to cancel one or more OVHcloud services. This guide will show you how to cancel your subscription via the [OVHcloud Control Panel](/links/manager).
+You want to cancel one or more OVHcloud services. This guide will show you how to cancel your subscription via the [My offers and services](/links/control-panel/billing-services) page.
 
 -First read the section "[What happens when an OVHcloud service is cancelled?](#consequences)".
 -Follow the steps described in the section "[How do I cancel my subscription?](#terminate)".
@@ -36,8 +80,18 @@ Before cancelling a service, you must be **certain**:
 ## Requirements
 
 - You must be the "administrative contact" of the service to be cancelled (for more information, see [this guide](/pages/account_and_service_management/account_information/managing_contacts#definition)).
-- You have access to your [OVHcloud Control Panel](/links/manager).
 - Your OVHcloud services to be cancelled are active (not suspended due to payment default).
+
+<!-- CP-NAV-START:billing-services -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [My offers and services](/links/control-panel/billing-services)
+- **Navigation path:** Click your name in the top right > `My offers and services`{.action}
+
+---
+<!-- CP-NAV-END:billing-services -->
 
 ## Instructions
 
@@ -47,7 +101,8 @@ However, there are **special cases** that are detailed [below](#specific-cases) 
 
 ### How do I cancel my subscription? <a name="terminate"></a>
 
-To cancel your service subscription, log in to your [OVHcloud Control Panel](/links/manager), click on your name in the top right-hand corner, then on `My offers and services`{.action}.
+<!-- CP-STEPS-START:cancel-subscription -->
+To cancel your service subscription, open the [My offers and services](/links/control-panel/billing-services) page.
 
 ![products and services](/pages/assets/screens/control_panel/product-selection/right-menu/my-solutions-and-services.png){.thumbnail}
 
@@ -67,6 +122,7 @@ Specify the reasons for your termination request, then click `Confirm`{.action}.
 Your service will be cancelled on the **date of effect** listed in the “Manage my solutions and services” table. If you do not see the status “Cancellation scheduled”, please refresh the page.
 
 ![termination request](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/cancellation-request.png){.thumbnail}
+<!-- CP-STEPS-END:cancel-subscription -->
 
 ### Special cases <a name="specific-cases"></a>
 
@@ -114,11 +170,13 @@ To cancel your [VMware on OVHcloud](/links/hosted-private-cloud/hosted-private-c
 
 #### Public Cloud <a name="publiccloud"></a>
 
+<!-- CP-STEPS-START:public-cloud-deletion -->
 Each [Public Cloud](/links/public-cloud/public-cloud) service can be deleted from the `Public Cloud`{.action} tab in the Control Panel.
 
 Select a service on the left, click on the `...`{.action} button to the right of the service concerned, then on `Delete`{.action}, as in the example below for an instance:
 
 ![public cloud instance deletion](images/pci-deletion-en.png){.thumbnail}
+<!-- CP-STEPS-END:public-cloud-deletion -->
 
 OVHcloud Public Cloud is based on the principle of *Pay-as-you-go* (you can find more details on our page [information on Public Cloud billing method](/pages/public_cloud/public_cloud_cross_functional/analyze_billing)). At the end of the month, you only pay for the actual resource usage time.
 
@@ -131,45 +189,56 @@ You can also [view your current resource usage](/pages/public_cloud/public_cloud
 > You can revoke a cancellation request up to 24 hours before the subscription end date.
 >
 
-To abort a cancellation request, log in to your [OVHcloud Control Panel](/links/manager), click on your name in the top right-hand corner, then on `My offers and services`{.action}.
+<!-- CP-STEPS-START:stop-cancellation -->
+To abort a cancellation request, open the [My offers and services](/links/control-panel/billing-services) page.
 
 Next, click the `...`{.action} button to the right of the service for which a cancellation request is being made, then `Stop cancellation of service`{.action}
 
 ![cancel_termination](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/cancel_termination-en.png){.thumbnail}
 
 Finally, click `Confirm cancellation`{.action}.
+<!-- CP-STEPS-END:stop-cancellation -->
 
 A termination of a cancellation procedure is effective immediately. Please refresh the “Manage my solutions and services” page if you still see the “Cancellation scheduled” status.
 
 ## FAQ
 
-> [!faq]
->
-> I cannot cancel a service. What should I do?
->> If you are unable to cancel a service (the `Cancel my subscription`{.action} button is not available), it may be one of the specific cases detailed [previously in this guide](#specific-cases).
->> Also check that the following conditions are met:
->>
->> - You must be the “administrative contact” for the service. For more information, see [this guide](/pages/account_and_service_management/account_information/managing_contacts#definition).
->> - The service is in **automatic renewal**. If your service is in [manual renewal](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#auto-vs-manual), it will be suspended on its expiry date, then deleted after a few days.
->> - The service is not suspended, mainly because of a bill that has not been settled. Check that you are up to date in the [payments](/pages/account_and_service_management/managing_billing_payments_and_services/invoice_management#pay-bills) and [renewals](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#renewal-management) of your services.
->>
->> If you are still unable to cancel your service, contact our support teams by opening a ticket from the [Help Centre](https://help.ovhcloud.com/csm?id=csm_cases_requests).
-> How do I cancel all my services?
->> You must terminate each service individually. You cannot cancel several services at once, or request a global cancellation from our customer support teams.
-> How do I delete my OVHcloud account?
->> Closing your OVHcloud customer account and deleting your personal data is only possible if:
->>
->> 1. You no longer have any services listed in the “[My solutions & services](https://www.ovh.com/manager/dedicated/#/billing/autoRenew)” section. Otherwise, you will need to request their termination and wait for their deletion.
->> 2. You do not have any invoices awaiting payment. Otherwise, you will need to pay for them by clicking the `Pay immediately`{.action} button in the bulk actions section of the “[My bills](https://www.ovh.com/manager/#/dedicated/billing/history)” page.
->> 3. You have no pending orders. Check it on [this page](https://www.ovh.com/manager/#/dedicated/billing/orders/orders).
->> 4. Your prepaid account has no credit balance. Check it on [this page](https://www.ovh.com/manager/#/dedicated/billing/payment/ovhaccount).
->>
->> If the above conditions are met, you can request to delete your OVHcloud account and the related data by following these steps:
->>
->> 1. Log in to the [OVHcloud Help Centre](https://help.ovhcloud.com/csm?id=csm_get_help).
->> 2. Click the `Create ticket`{.action} button.
->> 3. Select the reason `Manage your OVHcloud customer account`.
->> 4. Specify `I want to close my OVHcloud account` and follow the steps described.
+/// details | I cannot cancel a service. What should I do?
+
+If you are unable to cancel a service (the `Cancel my subscription`{.action} button is not available), it may be one of the specific cases detailed [previously in this guide](#specific-cases).
+Also check that the following conditions are met:
+
+- You must be the “administrative contact” for the service. For more information, see [this guide](/pages/account_and_service_management/account_information/managing_contacts#definition).
+- The service is in **automatic renewal**. If your service is in [manual renewal](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#auto-vs-manual), it will be suspended on its expiry date, then deleted after a few days.
+- The service is not suspended, mainly because of a bill that has not been settled. Check that you are up to date in the [payments](/pages/account_and_service_management/managing_billing_payments_and_services/invoice_management#pay-bills) and [renewals](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#renewal-management) of your services.
+
+If you are still unable to cancel your service, contact our support teams by opening a ticket from the [Help Centre](https://help.ovhcloud.com/csm?id=csm_cases_requests).
+
+///
+
+/// details | How do I cancel all my services?
+
+You must terminate each service individually. You cannot cancel several services at once, or request a global cancellation from our customer support teams.
+
+///
+
+/// details | How do I delete my OVHcloud account?
+
+Closing your OVHcloud customer account and deleting your personal data is only possible if:
+
+1. You no longer have any services listed in the “[My solutions & services](https://www.ovh.com/manager/dedicated/#/billing/autoRenew)” section. Otherwise, you will need to request their termination and wait for their deletion.
+2. You do not have any invoices awaiting payment. Otherwise, you will need to pay for them by clicking the `Pay immediately`{.action} button in the bulk actions section of the “[My bills](https://www.ovh.com/manager/#/dedicated/billing/history)” page.
+3. You have no pending orders. Check it on [this page](https://www.ovh.com/manager/#/dedicated/billing/orders/orders).
+4. Your prepaid account has no credit balance. Check it on [this page](https://www.ovh.com/manager/#/dedicated/billing/payment/ovhaccount).
+
+If the above conditions are met, you can request to delete your OVHcloud account and the related data by following these steps:
+
+1. Log in to the [OVHcloud Help Centre](https://help.ovhcloud.com/csm?id=csm_get_help).
+2. Click the `Create ticket`{.action} button.
+3. Select the reason `Manage your OVHcloud customer account`.
+4. Specify `I want to close my OVHcloud account` and follow the steps described.
+
+///
 
 ## Go further <a name="gofurther"></a>
 

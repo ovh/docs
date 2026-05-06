@@ -1,6 +1,6 @@
 ---
 title: Sending SMS messages with the OVHcloud API in PHP
-excerpt: Find out how to send SMS messages with the OVHcloud RESTful API in PHP
+excerpt: Find out how to set up a PHP development environment and send your first SMS message step by step using the OVHcloud RESTful API
 updated: 2020-06-25
 ---
 
@@ -32,20 +32,20 @@ In your project, you will retrieve the directory <b>./vendor/ovh/ovh/</b>, as we
 
 ### Step 2: Create your credentials.
 
-You will need credentials to use the SMS API. These credentials are created once, to identify the application that will be sending SMS messages. The lifespan of these credentials can be configured.
+You need credentials to use the SMS API. These credentials are created once to identify the application that sends SMS messages. Their lifespan can be configured.
 
 Create all of your script credentials (all keys at once) on this page:
-[https://eu.api.ovh.com/createToken/](https://eu.api.ovh.com/createToken/index.cgi?GET=/sms/&GET=/sms/*/jobs&POST=/sms/*/jobs) (this URL will automatically give you the correct rights for the steps described in this guide).
+[https://auth.eu.ovhcloud.com/api/createToken](https://auth.eu.ovhcloud.com/api/createToken?GET=/sms/&GET=/sms/*/jobs&POST=/sms/*/jobs) (this URL will automatically give you the correct rights for the steps described in this guide).
 
 ![create tokens](images/img_2451.jpg){.thumbnail}
 
-In this basic example, we retrieve the rights to access information on the account, the right to view pending SMS messages, and the right to send SMS messages. 
+In this basic example, we retrieve the rights to access account information, view pending SMS messages, and send SMS messages. 
 
 - GET /sms
 - GET /sms/\*/jobs
 - POST /sms/\*/jobs
 
-The asterisk (\*) enables calls to these methods for all of your SMS accounts. You can also limit calls to one account only, if you generate several SMS accounts on a single OVHcloud account. You can do this by replacing “/sms” with “/sms/ACCOUNT-NAME”, and  “/sms/\*/” with “/sms/ACCOUNT-NAME”.
+The asterisk (\*) enables calls to these methods for all of your SMS accounts. You can also limit calls to one account by replacing “/sms” with “/sms/ACCOUNT-NAME”, and  “/sms/\*/” with “/sms/ACCOUNT-NAME”.
 
 You can then retrieve the credentials for your script:
 
@@ -59,7 +59,7 @@ The environment is ready, the credentials have been created, and you are now rea
 
 ### Step 3: Set up a PHP SDK (software development kit).
 
-To simplify things, we have set up a PHP SDK, which you can access [here](https://github.com/ovh/php-ovh-sms).
+To simplify things, we have set up a PHP SDK, which you can access on the [php-ovh-sms GitHub repository](https://github.com/ovh/php-ovh-sms).
 
 ### Step 4: Basic connection to the API.
 
@@ -70,7 +70,7 @@ You can now test the API connection, by displaying the details for each SMS acco
 /**
  * Lists and displays the details for each SMS account
  * 
- * Go to https://eu.api.ovh.com/createToken/index.cgi?GET=/sms/&GET=/sms/*/jobs&POST=/sms/*/jobs
+ * Go to https://auth.eu.ovhcloud.com/api/createToken?GET=/sms/&GET=/sms/*/jobs&POST=/sms/*/jobs
  * to generate the API access keys for:
  *
  * GET /sms
@@ -121,7 +121,7 @@ To send SMS messages, use the POST jobs method: [https://api.ovh.com/console/#/s
 /**
  * Sends an SMS message, then displays the list of SMS messages that are waiting to be sent.
  * 
- * Go to https://eu.api.ovh.com/createToken/index.cgi?GET=/sms/&GET=/sms/*/jobs&POST=/sms/*/jobs
+ * Go to https://auth.eu.ovhcloud.com/api/createToken?GET=/sms/&GET=/sms/*/jobs&POST=/sms/*/jobs
  * to generate the API access keys for:
  *
  * GET /sms

@@ -1,7 +1,7 @@
 ---
 title: "Introduction"
-excerpt: "Présentation générale de l'API publique OVHcloud pour les noms de domaines"
-updated: 2022-05-05
+excerpt: "Présentation générale de l'API publique OVHcloud pour les noms de domaine"
+updated: 2026-02-10
 ---
 
 <!-- Begin TOC -->
@@ -93,8 +93,8 @@ Afin de faciliter les appels à l'API, des SDKs sont disponibles pour plusieurs 
 
 Vous pourrez rencontrer les termes ci-dessous en parcourant cette documentation.
 
-- **Registre** : organisme détenteur d'une extension. Par exemple, le `.fr` appartient à l'Afnic, le `.com` et le `.net` à Verisign.
-- **Registrar** (ou **bureau d'enregistrement**) : revendeur de noms de domaines. Le registre passe obligatoirement par un registrar afin de vendre son nom de domaine au client final. OVHcloud est un registrar.
-- **Registrant** : propriétaire d'un nom de domaine. Il porte la responsabilité légale de l'utilisation du nom de domaine et possède tous les droits sur le nom de domaine.
+- **Registre** : organisme détenteur d'une extension. Par exemple, le `.fr` est administré par l'Afnic, le `.com` et le `.net` par Verisign.
+- **Registrar** (ou **bureau d'enregistrement**) : revendeur de noms de domaine. Le registre passe obligatoirement par un registrar afin de vendre son nom de domaine au client final. OVHcloud est un registrar.
+- **Registrant** : titulaire d'un nom de domaine. Il porte la responsabilité légale de l'utilisation du nom de domaine et possède tous les droits sur le nom de domaine.
 - **gTLD** (_Generic Top Level Domain_) : extension générique, utilisée internationalement, dont le fonctionnement est régi par une autorité tierce indépendante, l'[ICANN](https://www.icann.org/). Le `.com` et le `.net` sont des gTLDs.
-- **ccTLD** (_Country Code Top Level Domain_) : extension spécifique à un pays, dont le fonctionnement est régi par le pays lui-même. De ce fait, les [règles d'éligibilité](/pages/web_cloud/domains/api_domain_rules), voire le mode de vente ou le cycle de vie des domaines, peuvent différer fortement d'une extension à l'autre. C'est le rôle du registrar d'abstraire tout cela pour le client final. Les ccTLDs sont les seules extensions constituées de 2 caractères exactement : par exemple `.fr` pour la France, `.io` pour le territoire britannique de l'Océan Indien (bien qu'il soit utilisé pour de nombreuses applications, en référence à l'acronyme I/O pour _Input/Output_).
+- **ccTLD** (_Country Code Top Level Domain_) : extension spécifique à un pays, dont le fonctionnement est régi par le pays lui-même. De ce fait, les [règles d'éligibilité](/pages/web_cloud/domains/api_domain_rules), voire le mode de vente ou le cycle de vie des noms de domaine, peuvent différer fortement d'une extension à l'autre. C'est le rôle du registrar d'abstraire tout cela pour le client final. Les ccTLDs sont les seules extensions constituées de 2 caractères exactement : par exemple `.fr` pour la France, `.io` pour le territoire britannique de l'Océan Indien (bien qu'il soit utilisé pour de nombreuses applications, en référence à l'acronyme I/O pour _Input/Output_).

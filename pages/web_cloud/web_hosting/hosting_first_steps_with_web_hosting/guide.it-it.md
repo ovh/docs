@@ -33,7 +33,17 @@ Vuoi creare un sito Internet per la tua azienda o un blog personale? Hai bisogno
 - Aver ricevuto l’email di conferma dell’installazione del tuo hosting Web.
 - Disporre di un [dominio](/links/web/domains) e di una zona DNS associata in OVHcloud.
 - Tutti i servizi (Hosting Web, Domini, Zona DNS) devono essere accessibili da un unico account OVHcloud.
-- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager), sezione `Web Cloud`{.action}.
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [Web hosting](/links/control-panel/web-hosting)
+- **Percorso di navigazione:** `Web Cloud`{.action} > `Hosting`{.action} > Seleziona il tuo hosting web
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## Procedura
 

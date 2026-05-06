@@ -1,7 +1,7 @@
 ---
 title: "Dodaj rekord DNS typu AAAA dla domeny"
 excerpt: "Dowiedz się, jak dodać rekord DNS typu AAAA w strefie DNS zarządzanej przez OVHcloud w przypadku Twojej domeny"
-updated: 2025-05-15
+updated: 2026-03-24
 ---
 
 <style>
@@ -32,7 +32,17 @@ Czy chcesz, aby Twoja strona WWW była dostępna za pośrednictwem Twojej domeny
 
 - Posiadanie [domeny](/links/web/domains).
 - Posiadanie strefy DNS powiązanej z tą domeną w OVHcloud.
-- Dostęp do [panelu klienta OVHcloud](/links/manager), sekcja `Web Cloud`{.action}.
+
+<!-- CP-NAV-START:web-dns-zone -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Strefy DNS](/links/control-panel/web-dns-zone)
+- **Ścieżka nawigacji:** `Web Cloud`{.action} > `Strefy DNS`{.action} > Wybierz nazwę domeny
+
+---
+<!-- CP-NAV-END:web-dns-zone -->
 
 ## W praktyce
 
@@ -40,13 +50,34 @@ Czy chcesz, aby Twoja strona WWW była dostępna za pośrednictwem Twojej domeny
 >
 > Dodawanie, modyfikowanie lub usuwanie rekordów DNS w aktywnej strefie DNS jest operacją wymagającą odpowiedniej wiedzy. W razie wątpliwości skontaktuj się z [wyspecjalizowanym dostawcą](/links/partner).
 
-### Dodawanie rekord DNS typu AAAA dla domeny
+### Dodawanie rekordu DNS typu AAAA dla domeny
 
-1. Kliknij menu `Strefy DNS`{.action}, następnie wybierz odpowiednią domenę.
-2. Na stronie, która się wyświetli kliknij przycisk `Dodaj rekord`{.action}.
-3. W wyświetlonym oknie wybierz typ rekordu `AAAA`{.action}.
-4. Następnie wpisz w polu `Adres docelowy *` adres IP (na przykład: `2001:db8:1:1b00:203:0:113:0`) usługi, na której znajduje się Twoja strona WWW (hosting, serwer dedykowany, VPS, itp.), a następnie kliknij `Dalej`{.action}.
-5. Sprawdź podsumowanie i kliknij `Zatwierdź`{.action}. Odczekaj maksymalnie **24** godziny, aby dodanie w sieci DNS stało się w pełni skuteczne.
+<!-- CP-STEPS-START:add-aaaa-record -->
+Kliknij poniższe karty, aby wyświetlić kolejno każdy z **5** kroków.
+
+> [!tabs]
+> **Krok 1**
+>>
+>> Przejdź na stronę [Strefy DNS](/links/control-panel/web-dns-zone), następnie wybierz odpowiednią domenę.
+>>
+>> ![DNS zones](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
+>>
+> **Krok 2**
+>>
+>> Kliknij przycisk `Dodaj rekord`{.action}.
+>>
+> **Krok 3**
+>>
+>> W wyświetlonym oknie wybierz typ rekordu `AAAA`{.action}.
+>>
+> **Krok 4**
+>>
+>> Wpisz w polu `Adres docelowy *` adres IP (na przykład: `2001:db8:1:1b00:203:0:113:0`) usługi, na której znajduje się Twoja strona WWW (hosting, serwer dedykowany, VPS, itp.), a następnie kliknij `Dalej`{.action}.
+>>
+> **Krok 5**
+>>
+>> Sprawdź podsumowanie i kliknij `Zatwierdź`{.action}. Odczekaj maksymalnie **24** godziny, aby dodanie w sieci DNS stało się w pełni skuteczne.
+<!-- CP-STEPS-END:add-aaaa-record -->
 
 /// details | Kliknij tutaj, aby uzyskać więcej informacji.
 
@@ -60,13 +91,34 @@ Zapoznaj się ze szczegółowymi przewodnikami:
 
 ///
 
-### Dodawanie rekord DNS typu AAAA dla subdomeny domeny
+### Dodawanie rekordu DNS typu AAAA dla subdomeny domeny
 
-1. Kliknij menu `Strefy DNS`{.action}, następnie wybierz odpowiednią domenę.
-2. Na stronie, która się wyświetli kliknij przycisk `Dodaj rekord`{.action}.
-3. W wyświetlonym oknie wybierz pole typ rekordu `AAAA`{.action}.
-4. Następnie w polu `Subdomena` wpisz odpowiednią subdomenę (na przykład: `www` dla subdomeny `www.domain.tld`), a w polu `Adres docelowy *` - adres IP (na przykład: `2001:db8:1:1b00:203:0:113:0`) usługi, na której znajduje się Twoja strona WWW (hosting, serwer dedykowany, VPS, itp.). Następnie kliknij przycisk `Dalej`{.action}.
-5. Sprawdź podsumowanie i kliknij `Zatwierdź`{.action}. Odczekaj maksymalnie **24** godziny, aby dodanie w sieci DNS stało się w pełni skuteczne.
+<!-- CP-STEPS-START:add-aaaa-record-subdomain -->
+Kliknij poniższe karty, aby wyświetlić kolejno każdy z **5** kroków.
+
+> [!tabs]
+> **Krok 1**
+>>
+>> Przejdź na stronę [Strefy DNS](/links/control-panel/web-dns-zone), następnie wybierz odpowiednią domenę.
+>>
+>> ![DNS zones](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
+>>
+> **Krok 2**
+>>
+>> Kliknij przycisk `Dodaj rekord`{.action}.
+>>
+> **Krok 3**
+>>
+>> W wyświetlonym oknie wybierz typ rekordu `AAAA`{.action}.
+>>
+> **Krok 4**
+>>
+>> Wpisz w polu `Subdomena` odpowiednią subdomenę (na przykład: `www` dla subdomeny `www.domain.tld`), a w polu `Adres docelowy *` adres IP (na przykład: `2001:db8:1:1b00:203:0:113:0`) usługi, na której znajduje się Twoja strona WWW (hosting, serwer dedykowany, VPS, itp.). Kliknij `Dalej`{.action}.
+>>
+> **Krok 5**
+>>
+>> Sprawdź podsumowanie i kliknij `Zatwierdź`{.action}. Odczekaj maksymalnie **24** godziny, aby dodanie w sieci DNS stało się w pełni skuteczne.
+<!-- CP-STEPS-END:add-aaaa-record-subdomain -->
 
 /// details | Kliknij tutaj, aby uzyskać więcej informacji.
 

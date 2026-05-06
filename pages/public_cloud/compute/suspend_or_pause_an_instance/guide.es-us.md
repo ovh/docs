@@ -1,6 +1,7 @@
 ---
 title: Suspender o poner en pausa una instancia
-updated: 2025-10-30
+excerpt: Cómo suspender, pausar o detener una instancia de Public Cloud para liberar recursos temporalmente conservando su dirección IP, así como el impacto en la facturación de cada opción
+updated: 2026-02-27
 ---
 
 ## Objetivo
@@ -16,16 +17,29 @@ Como parte de la configuración de una infraestructura de alta disponibilidad, p
 ## Requisitos
 
 - Tener [una instancia de Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps) sobre la facturación por **horas**
-- Tener acceso al [área de cliente de OVHcloud](/links/manager) o al [interfaz de Horizon](/pages/public_cloud/public_cloud_cross_functional/introducing_horizon)
+- Tener acceso al [interfaz de Horizon](/pages/public_cloud/public_cloud_cross_functional/introducing_horizon)
 - Conocimiento de la [API de OpenStack](/pages/public_cloud/public_cloud_cross_functional/prepare_the_environment_for_using_the_openstack_api) y de las [variables OpenStack](/pages/public_cloud/public_cloud_cross_functional/loading_openstack_environment_variables)
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Ruta de navegación:** `Public Cloud`{.action} > Seleccione su proyecto
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## Procedimiento
 
-> [!alert]
+> [!warning]
 >
-> Esta guía solo se aplica a las instancias con **facturación por horas**. Si sus instancias tienen una **facturación mensual**, la facturación clásica seguirá aplicándose independientemente del estado del servicio.
+> **Alcance:** Esta guía se aplica a todas las instancias de Public Cloud, independientemente de su modelo de facturación (por horas o mensual).
 >
-> Estas operaciones no interrumpen la facturación de la instancia, que seguirá facturándose mientras no haya sido **terminada**.
+> **Facturación mensual:** Una instancia que permanezca suspendida durante todo el mes no se facturará. En cuanto la instancia sea reactivada, aunque sea brevemente, se aplicará la facturación completa del mes.
+>
+> **Nota:** Mientras la instancia no sea eliminada, cualquier operación seguirá generando cargos por la instancia.
 >
 
 En la siguiente tabla podrá diferenciar las opciones disponibles en sus instancias. Continúe leyendo esta guía en el apartado correspondiente a su opción. Ponemos entre paréntesis la terminología utilizada en la **interfaz Horizon**.
@@ -83,7 +97,7 @@ En la pantalla que aparece, tome nota del mensaje y haga clic en `Confirmar`{.ac
 
 Durante la operación se muestra un mensaje:
 
-![](images/suspension_message_2025.png){.thumbnail}
+![Operation in progress](images/suspension_message_2025.png){.thumbnail}
 
 Una vez finalizado el proceso, su instancia se mostrará como *Suspendida*.
 
@@ -99,7 +113,7 @@ El snapshot estará entonces disponible en la sección `Instance Backup`{.action
 
 Para utilizar este método, conéctese [a Horizon](https://horizon.cloud.ovh.net/auth/login/):
 
-- Para conectarse con el inicio de sesión único de OVHcloud, utilice el enlace `Horizon`{.action} del menú de la izquierda, en «Management Interfaces», tras abrir su proyecto `Public Cloud`{.action} en su [área de cliente de OVHcloud](/links/manager).
+- Para iniciar sesión con el SSO de OVHcloud: utilice el enlace `Horizon`{.action} en el menú izquierdo bajo "Management Interfaces" después de abrir su proyecto `Public Cloud`{.action} en el [área de cliente de OVHcloud](/links/manager).
 
 - Para conectarse con un usuario específico de OpenStack: abra la página de conexión a [Horizon](https://horizon.cloud.ovh.net/auth/login/) e introduzca las [claves OpenStack](/pages/public_cloud/public_cloud_cross_functional/create_and_delete_a_user) previamente creadas y haga clic en `Connect`{.action}.
 
@@ -293,6 +307,6 @@ Para **reactivar** la instancia, escriba lo siguiente en la línea de comandos:
 
 ## Más información
 
-[Documentación OpenStack](https://docs.openstack.org/mitaka/user-guide/cli_stop_and_start_an_instance.html).
+[Documentación OpenStack](https://docs.openstack.org/ocata/user-guide/cli-stop-and-start-an-instance.html).
 
 Interactúe con nuestra [comunidad de usuarios](/links/community).
