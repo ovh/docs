@@ -21,18 +21,19 @@ Avant de commencer, consultez les guides suivants pour mieux comprendre Public V
 
 ### Limitations générales
 
-| Ressource | Standard | Advanced | Premium | Commentaires |
-|-----------|---------|----------|---------|--------------|
-| vCPU (par VM) | 32 | 32 | 32 | Nombre de vCPUs disponibles par VM. |
-| RAM (par VM) | 128 Go | 128 Go | 128 Go | Quantité maximale de RAM par VM (min. 0,5 Go). |
-| Cartes réseau (par VM) | 10 | 10 | 10 | Nombre maximal d'adaptateurs réseau par VM. |
-| Edge Gateway (par organisation) | N/A | 5 | 5 | Nombre maximal d'Edge Gateways par organisation. |
-| IP publiques (par vDC) | N/A | 2 | 2 | Nombre d’IP publiques disponibles par vDC. |
-| Snapshots (par VM) | 1 | 1 | 1 | Nombre maximal de snapshots par VM. |
-| VMs (par vApp) | 128 | 128 | 128 | Nombre maximal de VMs autorisées par vApp. |
-| VMs (par organisation) | 2000 | 4000 | 4000 | Nombre maximal de VMs par organisation. |
-| vApps (par organisation) | 10 000 | 10 000 | 10 000 | Nombre maximal de vApps par organisation. |
-| Segments (par organisation) | 40 | 40 | 40 | Nombre maximal de segments par organisation. |
+| Ressource | Standard | Advanced | Commentaires |
+|-----------|---------|----------|--------------|
+| vCPU (par VM) | 32 | 32 | Nombre de vCPUs disponibles par VM. |
+| RAM (par VM) | 128 Go | 128 Go | Quantité maximale de RAM par VM (min. 0,5 Go). |
+| Cartes réseau (par VM) | 10 | 10 | Nombre maximal d'adaptateurs réseau par VM. |
+| Edge Gateway (par organisation) | N/A | 5 | Nombre maximal d'Edge Gateways par organisation. |
+| IP publiques (par vDC) | N/A | 2 | Nombre d’IP publiques disponibles par vDC. |
+| Snapshots (par VM) | 1 | 1 | Nombre maximal de snapshots par VM. |
+| VMs (par vApp) | 128 | 128 | Nombre maximal de VMs autorisées par vApp. |
+| VMs (par organisation) | 2000 | 4000 | Nombre maximal de VMs par organisation. |
+| vApps (par organisation) | 10 000 | 10 000 | Nombre maximal de vApps par organisation. |
+| Segments (par organisation) | 40 | 40 | Nombre maximal de segments par organisation. |
+| Segments vRack (par organisation) | 7 | 7 | Nombre de segments vRack maximum (1 public + 1 trunk + 5 privés) |
 
 > **Remarque** : Lorsqu’un snapshot inclut la mémoire de la machine virtuelle, l’utilisation du stockage peut rapidement augmenter.
 > Par exemple, si vous avez une VM avec 1 Go de RAM et un disque de 10 Go, et que vous créez un snapshot incluant la mémoire, l’espace de stockage utilisé sera le suivant :
@@ -40,11 +41,11 @@ Avant de commencer, consultez les guides suivants pour mieux comprendre Public V
 
 ### Limitations matérielles
 
-| Ressource | Standard | Advanced | Premium | Commentaires |
-|-----------|---------|----------|---------|--------------|
-| Fréquence vCPU Min | 1 GHz | 1 GHz | 1 GHz | In Roadmap. |
-| Fréquence vCPU Max | 3 GHz | 3 GHz | 3 GHz | Par défaut. |
-| Stockage par VM (VMDK) | 1,5 To | 1,5 To | 1,5 To | Limite de stockage sur VMDK. |
+| Ressource | Standard | Advanced | Commentaires |
+|-----------|---------|----------|--------------|
+| Fréquence vCPU Min | 1 GHz | 1 GHz | In Roadmap. |
+| Fréquence vCPU Max | 3 GHz | 3 GHz | Par défaut. |
+| Stockage par VM (VMDK) | 1,5 To | 1,5 To | Limite de stockage sur VMDK. |
 
 ## Limitations d’intégration avec des applications externes
 
