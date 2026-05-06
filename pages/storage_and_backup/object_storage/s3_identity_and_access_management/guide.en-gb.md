@@ -287,6 +287,8 @@ The following policy to attempt to deny read access to objects to specific IPs b
 | s3:GetLifecycleConfiguration | Bucket |
 | s3:GetObject | Object |
 | s3:GetObjectAcl | Object |
+| s3:GetObjectAttributes | Object |
+| s3:GetObjectVersionAttributes | Object |
 | s3:GetObjectLegalHold | Object |
 | s3:GetObjectRetention | Object |
 | s3:GetObjectTagging | Object |
