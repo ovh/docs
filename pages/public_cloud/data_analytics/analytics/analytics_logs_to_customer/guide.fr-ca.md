@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Mettre en place le transfert de logs d'un service Analytics (EN)"
 excerpt: Find out how to forward logs of your Analytics service to your Logs Data Platform data stream
 updated: 2025-02-03

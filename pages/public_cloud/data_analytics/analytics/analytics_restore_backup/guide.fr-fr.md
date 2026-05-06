@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Restaurer la sauvegarde d'un service Analytics (EN)"
 excerpt: Find out how to restore a backup
 updated: 2025-02-03

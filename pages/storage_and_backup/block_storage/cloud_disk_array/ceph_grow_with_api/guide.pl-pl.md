@@ -1,4 +1,4 @@
-﻿---
+---
 title: 'How to upgrade a Cloud Disk Array (CDA) using the OVHcloud API'
 excerpt: 'Learn how to increase the storage capacity of your OVHcloud Cloud Disk Array (CDA) using the OVHcloud API'
 updated: 2025-05-15

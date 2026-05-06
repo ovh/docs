@@ -1,4 +1,4 @@
-﻿---
+---
 title: Configure the advanced parameters for Analytics
 excerpt: Advanced configuration for Analytics engines
 updated: 2025-02-03
