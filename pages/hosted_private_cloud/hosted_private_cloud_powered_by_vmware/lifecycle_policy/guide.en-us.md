@@ -1,7 +1,7 @@
 ---
 title: "Hosted Private Cloud VMware Lifecycle Policy"
 excerpt: "Discover the lifecycle policy for VMware on OVHcloud services, including maintenance, sunset, and end of support phases"
-updated: 2026-04-20
+updated: 2026-05-06
 ---
 
 > [!warning]
