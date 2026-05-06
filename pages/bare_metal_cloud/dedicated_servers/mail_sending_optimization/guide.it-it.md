@@ -1,7 +1,7 @@
 ---
 title: "Ottimizzare l’invio di email su un server dedicato"
 excerpt: "Applica le buone pratiche di invio email sul tuo server dedicato per evitare che i tuoi messaggi legittimi vengano contrassegnati come spam"
-updated: 2024-01-24
+updated: 2026-05-06
 ---
 
 > [!primary]
@@ -117,6 +117,13 @@ Per maggiori informazioni, invia una [richiesta di assistenza](https://support.m
 #### Verso un server Gmail
 
 L'aggiunta di record specifici, ad esempio un record DMARC (Domain-based Message Authentication, Reporting, and Conformance) o DKIM (DomainKeys Identified Mail), può facilitare la ricezione delle email se il destinatario è in Gmail. Consulta le nostre guide riportate [in fondo a questa pagina](#go-further) per configurarle.
+
+### Porta SMTP bloccata (porta 25)
+
+Se le tue e-mail non vengono inviate o il server SMTP non risponde, una porta bloccata è una causa frequente. Per impostazione predefinita, la **porta 25** in uscita è bloccata sull'infrastruttura OVHcloud (server dedicati, VPS, istanze Public Cloud) per prevenire gli abusi di spam. Per risolvere questo problema:
+
+- Utilizza la **porta 587** (STARTTLS) per l'invio di e-mail in uscita.
+- Se il tuo caso d'uso richiede la porta 25, richiedi lo sblocco [contattando il nostro supporto](/links/support-contact).
 
 ### Verifica le tue informazioni
 

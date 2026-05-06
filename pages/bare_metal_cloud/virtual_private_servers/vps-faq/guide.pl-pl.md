@@ -1,7 +1,7 @@
 ---
 title: "OVHcloud VPS - często zadawane pytania"
 excerpt: "Znajdź odpowiedzi na najczęściej zadawane pytania dotyczące ofert VPS"
-updated: 2026-03-24
+updated: 2026-05-06
 ---
 
 <style>
@@ -238,6 +238,8 @@ Obejmuje to:
 - uwierzytelnianie e-maili (SPF, DKIM, DMARC),
 - konfigurację reverse DNS (PTR),
 - przestrzeganie najlepszych praktyk dostawców poczty elektronicznej.
+
+Jeśli e-maile nie są wysyłane lub serwer SMTP nie odpowiada, sprawdź, czy porty SMTP nie są zablokowane. Port 25 jest domyślnie zablokowany na serwerach VPS OVHcloud, aby zapobiec nadużyciom. Zamiast tego użyj portu 587 (STARTTLS) do wysyłki e-maili wychodzących lub, w razie potrzeby, poproś o odblokowanie portu 25, [kontaktując się z naszym zespołem wsparcia](/links/support-contact).
 
 Więcej informacji znajdziesz w naszym przewodniku: [Jak zapobiec oznaczaniu e-maili jako spam](/pages/bare_metal_cloud/dedicated_servers/mail_sending_optimization).
 

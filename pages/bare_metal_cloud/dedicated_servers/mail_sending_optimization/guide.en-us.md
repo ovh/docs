@@ -1,7 +1,7 @@
 ---
 title: "Optimise Email Sending on a Dedicated Server"
 excerpt: "Apply email sending best practices on your dedicated server to prevent legitimate messages from being flagged as spam."
-updated: 2024-09-24
+updated: 2026-05-06
 ---
 
 ## Objective
@@ -114,6 +114,13 @@ For additional information, please open a [support request](https://support.micr
 #### To a Gmail server
 
 Adding specific records, such as a Domain-based Message Authentication, Reporting, and Compliance (DMARC) or DomainKeys Identified Mail (DKIM) record, can make it easier to receive emails if your recipient is at Gmail. Please refer to our guides listed [at the bottom of this page](#go-further) to configure them.
+
+### Blocked SMTP port (port 25)
+
+If emails are not sending or SMTP is not responding, a blocked port is a common cause. By default, outgoing **port 25** is blocked on OVHcloud infrastructure (dedicated servers, VPS, Public Cloud instances) to prevent spam abuse. To resolve this:
+
+- Use **port 587** (STARTTLS) for outbound mail submission.
+- If your use case requires port 25, request it to be unblocked by [contacting our support team](/links/support-contact).
 
 ### Check your information
 

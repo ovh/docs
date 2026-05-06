@@ -1,7 +1,7 @@
 ---
 title: "Optymalizacja wysyłki e-maili na serwerze dedykowanym"
 excerpt: "Skonfiguruj odwrotny DNS, SPF i DKIM na serwerze dedykowanym OVHcloud, aby poprawić dostarczalność e-maili."
-updated: 2024-01-24
+updated: 2026-05-06
 ---
 
 > [!primary]
@@ -118,6 +118,13 @@ Aby uzyskać więcej informacji, prosimy o otwarcie [wniosku o udzielenie pomocy
 #### Na serwer Gmail
 
 Dodanie określonych rekordów, takich jak DMARC (Domain-based Message Authentication, Reporting and Conformance) lub DKIM (DomainKeys Identified Mail) może ułatwić odbieranie wiadomości e-mail, jeśli Twój odbiorca jest w Gmailu. Zapoznaj się z naszymi przewodnikami [na dole tej strony](#go-further), aby je skonfigurować.
+
+### Zablokowany port SMTP (port 25)
+
+Jeśli e-maile nie są wysyłane lub serwer SMTP nie odpowiada, częstą przyczyną jest zablokowany port. Domyślnie wychodzący **port 25** jest zablokowany w infrastrukturze OVHcloud (serwery dedykowane, VPS, instancje Public Cloud), aby zapobiec nadużyciom spamu. Aby rozwiązać ten problem:
+
+- Użyj **portu 587** (STARTTLS) do wysyłki e-maili wychodzących.
+- Jeśli Twój przypadek użycia wymaga portu 25, poproś o jego odblokowanie, [kontaktując się z naszym zespołem wsparcia](/links/support-contact).
 
 ### Sprawdź Twoje dane
 
