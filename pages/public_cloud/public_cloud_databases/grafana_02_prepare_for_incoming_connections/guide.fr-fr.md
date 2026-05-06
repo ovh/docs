@@ -1,4 +1,4 @@
-﻿---
+---
 title: Dashboards - Configurez votre instance Dashboards pour accepter les connexions entrantes (EN)
 excerpt: Find out how to configure your Dashboards instance to accept incoming connections
 updated: 2024-12-11

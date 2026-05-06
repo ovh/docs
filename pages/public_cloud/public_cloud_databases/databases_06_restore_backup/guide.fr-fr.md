@@ -1,4 +1,4 @@
-﻿---
+---
 title: Restaurer la sauvegarde d'une base de données Public Cloud (EN)
 excerpt: Find out how to restore a backup
 updated: 2024-07-31

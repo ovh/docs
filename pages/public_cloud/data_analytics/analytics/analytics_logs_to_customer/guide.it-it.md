@@ -1,4 +1,4 @@
-﻿---
+---
 title: Set up logs forwarding for Analytics
 excerpt: Find out how to forward logs of your Analytics service to your Logs Data Platform data stream
 updated: 2025-02-03

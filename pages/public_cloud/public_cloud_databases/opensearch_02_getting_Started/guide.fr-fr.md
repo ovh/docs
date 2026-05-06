@@ -1,4 +1,4 @@
-﻿---
+---
 title: OpenSearch - Premiers pas (EN)
 excerpt: Find out how to set up and manage your Public Cloud Databases for OpenSearch
 updated: 2023-03-03

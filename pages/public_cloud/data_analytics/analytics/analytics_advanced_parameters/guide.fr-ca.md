@@ -1,4 +1,4 @@
-﻿---
+---
 title: Configurer les paramètres avancés des services Analytics (EN)
 excerpt: Advanced configuration for Analytics engines
 updated: 2025-02-03
