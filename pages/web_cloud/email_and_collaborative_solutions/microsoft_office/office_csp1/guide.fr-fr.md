@@ -25,7 +25,7 @@ Voici la liste des logiciels compris dans la suite :
 
 ## Prérequis
 
-- Disposer d'un [compte client OVHcloud](/links/create-ovhcloud-account).
+- Disposer d'un [compte client OVHcloud](/links/manager).
 
 <!-- CP-NAV-START:web-microsoft-365 -->
 ---
