@@ -26,7 +26,6 @@ Inspecting an object's metadata traditionally requires at least two separate API
 
 - **No body transfer:** retrieve metadata only, regardless of object size.
 - **Selective response:** receive only the attributes you request.
-- **Single-call consolidation:** replaces the `HeadObject` + `ListParts` pattern.
 - **Any S3-compatible client:** works with AWS CLI, any S3 SDK, and direct HTTP calls.
 
 ---
