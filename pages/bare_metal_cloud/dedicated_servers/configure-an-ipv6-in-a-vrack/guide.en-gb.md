@@ -279,9 +279,14 @@ Some OVHcloud regions span three Availability Zones (AZs) hosted in physically i
 - **Predictable failover behaviour**: each 3-AZ region exposes a Primary Availability Zone and two ordered failover positions for your vRack, so the failover sequence is deterministic.
 - **Workload alignment**: when other OVHcloud services are deployed in the same 3-AZ region, priorities can be aligned so that the vRack's active AZ matches the AZ hosting your services. This keeps your public traffic in the same AZ as your workload during normal operation.
 
+> [!primary]
+>
+> To enable 3-AZ mode for IP blocks routed via the vRack in regions where this feature was previously unavailable, you must remove the IP block from the vRack and then re-add it.
+>
+
 #### Mechanics and priority management
 
-When a vRack is first associated with a 3-AZ region, OVHcloud assigns a **Primary Availability Zone** to it at random. The Primary Zone is displayed in the corresponding region tile on the `Public IP routing`{.action} tab, alongside a `Configure 3-AZ failover priorities`{.action} link. The two remaining AZs are assigned as **First failover** and **Last resort failover**.
+When a vRack is first associated with a 3-AZ region, OVHcloud assigns a **Primary Availability Zone** to it at random. The Primary Zone is displayed in the corresponding region tile on the `Public IP routing`{.action} tab, alongside a `Configure 3-AZ failover priorities`{.action} link. The two remaining AZs are assigned as **Secondary Zone** and **Last resort Zone**.
 
 You can override this random assignment at any time, for example to align failover priorities with the AZ layout of other components attached to your infrastructure.
 
@@ -294,7 +299,7 @@ To adjust the failover priorities of a 3-AZ region:
 - In the "Public IP & bandwidth" column, click the `Manage`{.action} button for the corresponding vRack.
 - Open the `Public IP routing`{.action} tab.
 - Locate the tile of the 3-AZ region you want to configure and click `Configure 3-AZ failover priorities`{.action}.
-- In the panel that opens on the right-hand side, assign each Availability Zone to one of the three slots: **Primary Zone**, **First failover** and **Last resort failover**.
+- In the panel that opens on the right-hand side, assign each Availability Zone to one of the three slots: **Primary Zone**, **First failover** and **Last resort Zone**.
 - Validate your selection.
 
 > [!primary]
