@@ -155,13 +155,13 @@ Once you have filled in the fields, start the deployment by clicking `Execute`{.
 | customizations/imageType | Your image format (qcow2, raw) | ✅ |
 | customizations/imageCheckSum | Your image's checksum | ❌ |
 | customizations/imageCheckSumType | Your image's checksum type (md5, sha1, sha256, sha512) | ❌ (except if checksum provided) |
-| customizations/configDriveUserData | Your configDrive file content¹ | ❌ |
+| customizations/configDriveUserData | Your cloud-init user-data¹ | ❌ |
 | customizations/configDriveMetadata | Custom cloud-init metadata, exposed under the `meta` key of `meta_data.json`⁴ | ❌ |
 | customizations/httpHeaders?Key | HTTP Headers key  | ❌² |
 | customizations/httpHeaders?Value | HTTP Headers value | ❌² |
 | userMetadata/efiBootloaderPath | EFI bootloader path | ✅³ |
 
-¹ Can either be a `#cloud-config` or a script. Its JSON representation must be on a single line with `\n` for line breaks, as JSON strings cannot contain literal newlines.<br />
+¹ Standard cloud-init [user-data](https://cloudinit.readthedocs.io/en/latest/explanation/format.html) — typically a `#cloud-config` document or a script. Equivalent to OpenStack's `server create --user-data <file>`. Its JSON representation must be on a single line with `\n` for line breaks, as JSON strings cannot contain literal newlines.<br />
 ² Use only if you need HTTP Headers, such as `Basic Auth`<br />
 ³ The EFI bootloader path is used by iPXE to boot your operating system. For more information, see [Understanding the dedicated server boot process](/pages/bare_metal_cloud/dedicated_servers/boot-process). Examples:
 
