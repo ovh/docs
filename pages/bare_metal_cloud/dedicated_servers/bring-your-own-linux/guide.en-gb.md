@@ -152,10 +152,10 @@ Once you have filled in the fields, start the deployment by clicking `Execute`{.
 |-|-|-|
 | customizations/hostname | Hostname | ❌ |
 | customizations/sshKey | SSH public key | ❌ |
-| customizations/imageURL | Your Linux image URL | ✅ |
-| customizations/imageCheckSum | Your image's checksum | ❌ |
-| customizations/imageCheckSumType | Your image's checksum type (md5, sha1, sha256, sha512) | ❌ (except if checksum provided) |
-| customizations/configDriveUserData | Your cloud-init user-data¹ | ❌ |
+| customizations/imageURL | Linux image URL | ✅ |
+| customizations/imageCheckSum | Image checksum | ❌ |
+| customizations/imageCheckSumType | Image checksum type (md5, sha1, sha256, sha512) | ❌ (except if checksum provided) |
+| customizations/configDriveUserData | Cloud-init user-data¹ | ❌ |
 | customizations/configDriveMetadata | Custom cloud-init metadata, exposed under the `meta` key of `meta_data.json`⁴ | ❌ |
 | customizations/httpHeaders?Key | HTTP Headers key  | ❌² |
 | customizations/httpHeaders?Value | HTTP Headers value | ❌² |

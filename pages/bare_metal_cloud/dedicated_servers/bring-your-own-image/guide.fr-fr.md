@@ -149,11 +149,11 @@ Une fois les champs complétés, démarrez le déploiement en cliquant sur `Exec
 |-|-|-|
 | customizations/hostname | Le hostname | ❌ |
 | customizations/sshKey | La clé publique SSH | ❌ |
-| customizations/imageURL | L'URL de votre image | ✅ |
-| customizations/imageType | Le type/format de votre image (qcow2, raw) | ✅ |
-| customizations/imageCheckSum | Checksum de votre image | ❌ |
-| customizations/imageCheckSumType | Type de checksum de votre image. (md5, sha1, sha256, sha512) | ❌ (sauf si checksum fourni) |
-| customizations/configDriveUserData | Vos données utilisateur (user-data) cloud-init¹ | ❌ |
+| customizations/imageURL | L'URL de l'image | ✅ |
+| customizations/imageType | Le type/format de l'image (qcow2, raw) | ✅ |
+| customizations/imageCheckSum | Checksum de l'image | ❌ |
+| customizations/imageCheckSumType | Type de checksum de l'image (md5, sha1, sha256, sha512) | ❌ (sauf si checksum fourni) |
+| customizations/configDriveUserData | Données utilisateur (user-data) cloud-init¹ | ❌ |
 | customizations/configDriveMetadata | Métadonnées cloud-init personnalisées, exposées sous la clé `meta` de `meta_data.json`⁴ | ❌ |
 | customizations/httpHeaders?Key | Clé des en-têtes HTTP | ❌² |
 | customizations/httpHeaders?Value | Valeur des en-têtes HTTP | ❌² |
