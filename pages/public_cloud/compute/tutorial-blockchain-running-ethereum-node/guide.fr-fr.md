@@ -69,7 +69,7 @@ Pour ce tutoriel, nous utiliserons la combinaison suivante :
 Une fois que vous avez [créé et attaché votre volume Block Storage](/pages/public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance) à l'instance, connectez-vous à votre instance via SSH :
 
 ```bash
-ssh ubuntu@<adresse_IP>
+ssh -i <chemin-clé-privée> ubuntu@<adresse_IP>
 ```
 
 Listez tous les périphériques de blocs disponibles pour identifier votre volume attaché :
@@ -199,7 +199,7 @@ Lighthouse est un client de consensus Ethereum responsable de l'obtention du con
 Téléchargez la dernière version stable depuis la [page des releases GitHub de Lighthouse](https://github.com/sigp/lighthouse/releases) :
 
 ```bash
-curl -LO https://github.com/sigp/lighthouse/releases/download/v7.1.0/lighthouse-v7.1.0-x86_64-unknown-linux-gnu.tar.gz
+curl -LO https://github.com/sigp/lighthouse/releases/download/v8.1.3/lighthouse-v8.1.3-x86_64-unknown-linux-gnu.tar.gz
 ```
 
 ![Téléchargement de Lighthouse](images/lighthouse_download.png){.thumbnail}
@@ -207,7 +207,7 @@ curl -LO https://github.com/sigp/lighthouse/releases/download/v7.1.0/lighthouse-
 Extrayez l'archive :
 
 ```bash
-tar -xvf lighthouse-v7.1.0-x86_64-unknown-linux-gnu.tar.gz
+tar -xvf lighthouse-v8.1.3-x86_64-unknown-linux-gnu.tar.gz
 ```
 
 ![Extraction de Lighthouse](images/lighthouse_extract.png){.thumbnail}
@@ -272,9 +272,9 @@ nethermind -c mainnet \
   --JsonRpc.Enabled true \
   --HealthChecks.Enabled true \
   --HealthChecks.UIEnabled true \
-  --JsonRpc.EngineHost=127.0.0.1 \
-  --JsonRpc.EnginePort=8551 \
-  --JsonRpc.JwtSecretFile=/secrets/jwt.hex
+  --JsonRpc.EngineHost 127.0.0.1 \
+  --JsonRpc.EnginePort 8551 \
+  --JsonRpc.JwtSecretFile /secrets/jwt.hex
 ```
 
 Des journaux indiquant que le client est en cours d'exécution s'affichent. Le message suivant apparaît ensuite :
