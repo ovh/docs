@@ -156,7 +156,7 @@ Once you have filled in the fields, start the deployment by clicking `Execute`{.
 | customizations/imageCheckSum | Your image's checksum | ❌ |
 | customizations/imageCheckSumType | Your image's checksum type (md5, sha1, sha256, sha512) | ❌ (except if checksum provided) |
 | customizations/configDriveUserData | Your configDrive file content¹ | ❌ |
-| customizations/configDriveMetadata | Custom Cloud-Init metadata | ❌ |
+| customizations/configDriveMetadata | Custom cloud-init metadata, exposed under the `meta` key of `meta_data.json`⁴ | ❌ |
 | customizations/httpHeaders?Key | HTTP Headers key  | ❌² |
 | customizations/httpHeaders?Value | HTTP Headers value | ❌² |
 | userMetadata/efiBootloaderPath | EFI bootloader path | ✅³ |
@@ -179,6 +179,8 @@ Once you have filled in the fields, start the deployment by clicking `Execute`{.
 | Alma | `\\efi\\almalinux\\shimx64.efi` |
 | Arch Linux | `\\efi\\arch\\grubx64.efi` |
 | Gentoo | `\\efi\\boot\\bootx64.efi` |
+
+⁴ JSON object of arbitrary key/value pairs, equivalent to OpenStack's `server create --property key=value`. The pairs are written to the config drive's `meta_data.json` under the `meta` key, where cloud-init can read them. Example: `"configDriveMetadata": {"role": "webserver", "env": "prod"}` becomes `"meta": {"role": "webserver", "env": "prod"}` in `meta_data.json`. See the [OpenStack metadata service documentation](https://docs.openstack.org/nova/latest/user/metadata.html#openstack-format-metadata) for the full schema.
 
 > [!primary]
 >
