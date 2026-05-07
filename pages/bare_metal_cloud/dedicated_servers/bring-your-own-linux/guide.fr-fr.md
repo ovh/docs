@@ -22,6 +22,11 @@ En plus des prérequis et limitations mentionnés ci-dessous, vous devez vous as
 - Votre image doit être inférieure à la RAM du serveur moins 3 Gio
 - Un script `/root/.ovh/make_image_bootable.sh` exécutable, qui installera ou configurera le bootloader, [par exemple GRUB](https://github.com/ovh/bringyourownlinux/blob/e20c9474e1a0/example_build/files/make_image_bootable.sh). Ce script ne doit pas modifier l'ordre de boot NVRAM (par exemple, utilisez `grub-install --no-nvram`). Pour plus d'informations, consultez notre guide « [Comprendre le processus de démarrage des serveurs dédiés](/pages/bare_metal_cloud/dedicated_servers/boot-process) ».
 
+> [!primary]
+>
+> Pour appliquer les personnalisations OVHcloud au premier démarrage, votre image doit inclure [cloud-init](https://cloud-init.io/) ou une alternative compatible (par exemple [`nuageinit`](https://cgit.freebsd.org/src/tree/libexec/nuageinit/) sur FreeBSD).
+>
+
 <!-- CP-NAV-START:baremetal-dedicated-servers -->
 ---
 
@@ -68,8 +73,6 @@ Vous allez être redirigé vers la page de configuration. Assurez-vous que l'URL
 
 Vous trouverez plus de détails sur les options dans la section « [options de déploiement](#options) » ci-dessous.
 
-Pour plus d'informations et des exemples sur ConfigDrive de Cloud-Init, consultez la documentation officielle sur [cette page](https://cloudinit.readthedocs.io/en/22.1_a/topics/examples.html).
-
 ![Page de configuration Bring Your Own Linux dans l'espace client](images/byolinux-controlpanel04.png){.thumbnail}
 
 ### Déploiement de votre image via l'API <a name="viaapi"></a>
@@ -110,13 +113,13 @@ Le contenu de la requête API de Bring Your Own Linux (BYOLinux) doit être simi
 > Dans l'exemple ci-dessus, la valeur de `imageCheckSum` a été masquée, car elle change régulièrement à chaque reconstruction de l’image cible.
 >
 
-Même si le configDrive user data peut être envoyé à l'API en clair directement en échappant les bons caractères, il est recommandé d'envoyer à l'API le script encodé en base64 en utilisant par exemple la commande UNIX/Linux suivante :
+Même si `configDriveUserData` peut être envoyé à l'API directement en clair en échappant les bons caractères, il est recommandé d'envoyer à l'API le script encodé en base64 en utilisant par exemple la commande UNIX/Linux suivante :
 
 ```bash
 cat my-data.yaml | base64 -w0
 ```
 
-Voici le configDrive user data en clair avec l'exemple ci-dessus :
+Voici la version en clair de `configDriveUserData` de l'exemple ci-dessus :
 
 ```yaml
 #cloud-config
@@ -159,7 +162,7 @@ Une fois les champs complétés, démarrez le déploiement en cliquant sur `Exec
 | customizations/httpHeaders?Value | Valeur des en-têtes HTTP | ❌² |
 | userMetadata/efiBootloaderPath | Le chemin du bootloader EFI | ✅³ |
 
-¹ [Données utilisateur](https://cloudinit.readthedocs.io/en/latest/explanation/format.html) cloud-init standard — généralement un document `#cloud-config` ou un script. Équivalent à `server create --user-data <fichier>` chez OpenStack. Sa représentation JSON doit être sur une seule ligne avec `\n` pour les retours à la ligne, car les chaînes JSON ne peuvent pas contenir de retours à la ligne littéraux.<br />
+¹ [Données utilisateur](https://cloudinit.readthedocs.io/en/latest/explanation/format.html) cloud-init standard — généralement un document `#cloud-config` ou un script (voir les [exemples officiels de cloud-init](https://docs.cloud-init.io/en/latest/reference/examples.html)). Équivalent à `server create --user-data <fichier>` chez OpenStack. Sa représentation JSON doit être sur une seule ligne avec `\n` pour les retours à la ligne, car les chaînes JSON ne peuvent pas contenir de retours à la ligne littéraux.<br />
 ² À utiliser uniquement si vous avez besoin d'en-têtes HTTP, tels que `Basic Auth`<br />
 ³ Le chemin du bootloader EFI est utilisé par iPXE pour démarrer votre système d'exploitation. Pour plus d'informations, consultez notre guide « [Comprendre le processus de démarrage des serveurs dédiés](/pages/bare_metal_cloud/dedicated_servers/boot-process) ». Exemples :
 
@@ -182,7 +185,7 @@ Une fois les champs complétés, démarrez le déploiement en cliquant sur `Exec
 
 > [!primary]
 >
-> La partition ConfigDrive est utilisée par cloud-init lors du premier démarrage du serveur afin d'appliquer vos configurations. Vous pouvez choisir d'utiliser la partition par défaut ou une partition personnalisée (en utilisant `configDriveUserData`).
+> Lors de l'installation, OVHcloud ajoute une petite partition de [config drive](https://docs.cloud-init.io/en/latest/reference/datasources/configdrive.html) sur votre serveur. Cloud-init la lit au premier démarrage pour appliquer la configuration de base d'OVHcloud. Renseignez `configDriveUserData` pour ajouter vos propres données utilisateur (user-data) cloud-init par-dessus.
 >
 
 > [!warning]
