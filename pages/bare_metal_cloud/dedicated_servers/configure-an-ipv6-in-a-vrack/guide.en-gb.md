@@ -273,16 +273,16 @@ The selected bandwidth upgrade will apply to all IP addresses in that region for
 
 Some OVHcloud regions span three Availability Zones (AZs) hosted in physically independent locations within the same region. When such a region is involved in your vRack public IP routing, it is identified in the OVHcloud Control Panel by a **3-AZ** badge displayed next to the region name in the `Public IP routing`{.action} tab.
 
+> [!primary]
+>
+> To enable 3-AZ mode for IP blocks routed via the vRack in regions where this feature was previously unavailable, you must remove the IP block from the vRack and then re-add it.
+>
+
 #### Benefits
 
 - **Built-in resilience**: public IP traffic routed via the vRack remains available if a single Availability Zone becomes unavailable, as routing automatically fails over to the next AZ in the priority order.
 - **Predictable failover behaviour**: each 3-AZ region exposes a Primary Availability Zone and two ordered failover positions for your vRack, so the failover sequence is deterministic.
 - **Workload alignment**: when other OVHcloud services are deployed in the same 3-AZ region, priorities can be aligned so that the vRack's active AZ matches the AZ hosting your services. This keeps your public traffic in the same AZ as your workload during normal operation.
-
-> [!primary]
->
-> To enable 3-AZ mode for IP blocks routed via the vRack in regions where this feature was previously unavailable, you must remove the IP block from the vRack and then re-add it.
->
 
 #### Mechanics and priority management
 
