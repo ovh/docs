@@ -160,6 +160,11 @@ Lorsque `Checksum` est demandé, la réponse inclut l'algorithme et la valeur st
 
 Lorsque `ObjectParts` est demandé sur un objet multipart, la réponse liste toutes les parties avec leur numéro, taille et checksum optionnel. Pour les objets en une seule partie (non-multipart), `ObjectParts` est retourné comme un élément vide.
 
+> [!primary]
+>
+> Seuls les détails des parts (taille, checksum, pagination) des objets créés avec le type de checksum COMPOSITE seront listés ; en d'autres termes, lorsque vous créez votre multipart upload, vous devez définir la valeur de l'entête x-amz-checksum-type à COMPOSITE.
+>
+
 **Pagination :** les résultats sont paginés à 1000 parties par réponse maximum.
 
 > [!tabs]
