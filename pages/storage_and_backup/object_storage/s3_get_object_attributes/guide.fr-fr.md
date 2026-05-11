@@ -1,7 +1,7 @@
 ---
 title: "Object Storage - Récupérer les métadonnées d'un objet avec GetObjectAttributes"
 excerpt: "Découvrez comment récupérer les attributs de métadonnées de vos objets (ETag, taille, classe de stockage, checksum, parties multipart) sans télécharger le corps de l'objet"
-updated: 2026-05-06
+updated: 2026-05-11
 ---
 
 <style>
@@ -162,7 +162,7 @@ Lorsque `ObjectParts` est demandé sur un objet multipart, la réponse liste tou
 
 > [!primary]
 >
-> Seuls les détails des parts (taille, checksum, pagination) des objets créés avec le type de checksum COMPOSITE seront listés ; en d'autres termes, lorsque vous créez votre multipart upload, vous devez définir la valeur de l'entête x-amz-checksum-type à COMPOSITE.
+> Seuls les détails des parties (taille, checksum, pagination) des objets créés avec le type de checksum `COMPOSITE` seront listés ; en d'autres termes, lorsque vous créez votre multipart upload, vous devez définir la valeur de l'en-tête `x-amz-checksum-type` sur `COMPOSITE`.
 >
 
 **Pagination :** les résultats sont paginés à 1000 parties par réponse maximum.

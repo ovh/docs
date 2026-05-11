@@ -1,7 +1,7 @@
 ---
 title: "Object Storage - How to retrieve object metadata with GetObjectAttributes"
 excerpt: "Find out how to retrieve metadata attributes from your objects (ETag, size, storage class, checksum, multipart parts) without downloading the object body"
-updated: 2026-05-06
+updated: 2026-05-11
 ---
 
 <style>
@@ -162,7 +162,7 @@ When `ObjectParts` is requested on a multipart object, the response lists all pa
 
 > [!primary]
 >
-> Only part details (size, checksum, pagination) of objects created with checksum type COMPOSITE will be listed i.e when you create your multipart upload, you need to specify the x-amz-checksum-type header to COMPOSITE.
+> Only part details (size, checksum, pagination) of objects created with checksum type `COMPOSITE` will be listed, i.e., when you create your multipart upload, you need to set the `x-amz-checksum-type` header to `COMPOSITE`.
 >
 
 **Pagination:** results are paginated at up to 1000 parts per response.
