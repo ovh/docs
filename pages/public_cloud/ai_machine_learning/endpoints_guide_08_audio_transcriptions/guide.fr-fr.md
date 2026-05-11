@@ -613,7 +613,7 @@ When set to `auto`, the system first normalizes audio loudness and then uses voi
 You can also provide a `server_vad` object to manually tweak VAD detection parameters. This lets you control the following parameters:
 
 - `prefix_padding_ms`: Amount of audio to include before the VAD detected speech (in milliseconds).
-- `silence_duration_ms`: Duration of silence required to detect speech end (in milliseconds). Lower values make the model react faster, but increase sensitivity to short pauses.
+- `silence_duration_ms`: Duration of silence required to detect speech end (in milliseconds). Lower values make the model react faster, but may increase sensitivity to short pauses.
 - `threshold`: Sensitivity threshold (0.0 to 1.0) for VAD. Higher values require louder speech and can perform better in noisy environments.
 
 **Example**:
