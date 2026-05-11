@@ -1,7 +1,7 @@
 ---
 title: AI Endpoints - Transcription Audio
 excerpt: Découvrez comment transcrire des fichiers audio avec OVHcloud AI Endpoints
-updated: 2025-10-03
+updated: 2026-05-11
 ---
 
 > [!primary]
@@ -48,7 +48,7 @@ The examples provided during this guide can be used with one of the following en
 >> A standard terminal, with [cURL](https://cURL.se/) installed on the system.
 >> 
 
-*These examples will be using the [Whisper-large-v3](https://endpoints.ai.cloud.ovh.net/models/whisper-large-v3) model.*
+*These examples will be using the [Whisper-large-v3](https://www.ovhcloud.com/fr/public-cloud/ai-endpoints/catalog/whisper-large-v3/) model.*
 
 ## Authentication & Rate Limiting
 
@@ -65,7 +65,7 @@ The request body for the audio transcription endpoint is of type `multipart/form
 | Parameter                | Required | Type          | Allowed Values / Format                                                                 | Default | Description                                                                                                                                                                                                 |
 |--------------------------|----------|---------------|---------------------------------------------------------------------------------------|---------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **file**                     | Yes      | binary        | `mp3`, `mp4`, `aac`, `m4a`, `wav`, `flac`, `ogg`, `opus`, `webm`, `mpeg`, `mpga`                                    | -       | The **audio file object (not file name)** to transcribe.                                                                                                                                                      |
-| **chunking_strategy**        | No       | `string`/`server_vad object`/`null`   | -                                                                                     | null    | Strategy for dividing the audio into chunks. More details [here](#chunking-strategy).                                                                                                                                                     |
+| **chunking_strategy**        | No       | `string`/`server_vad object`/`null`   | -                                                                                     | null    | Controls how audio is segmented before transcription. Setting it improves throughput on long files (longer than 10 minutes). More details [here](#chunking-strategy).                                                                                                                                                     |
 | **diarize**                  | No       | `boolean`/`null`  | `true`/`false`                                                                            | false   | Enables speaker separation in the transcript. When set to true, the system separates the audio into segments based on speakers, by adding labels like "Speaker 1" and "Speaker 2", so you can see who said what in conversations such as interviews, meetings, or phone calls. More details [here](#diarization).                                                                                                                                           |
 | **language**                 | No       | `string`/`null`   | [ISO-639-1 format](https://en.wikipedia.org/wiki/List_of_ISO_639_language_codes)                                                                      | -       | The language parameter specifies the language spoken in the input audio. Providing it can improve transcription accuracy and reduce latency (e.g. `en` for English, `fr` for French, `de` for German, `es` for Spanish, `zh` for Chinese, `ar` for Arabic ...). If not provided, the system will attempt automatic language detection, which may be slightly slower and less accurate in some cases. [More details on language compatibility and performance](#language-compatibility-and-performances).                                                                                                                                           |
 | **model**                    | No       | `string`/`null`   | ID of the model to use                                                                | -       | Specifies the model to use for transcription. Useful when using our [unified endpoint](/pages/public_cloud/ai_machine_learning/endpoints_guide_07_virtual_models).                                                                                                                                                            |
@@ -159,7 +159,7 @@ Now that you know which parameters are available, let’s look at how to put the
 >> -F "model=whisper-large-v3" \
 >> -F "language=en" \
 >> -F "temperature=0" \
->> -F "prompt==<|transcribe|>" \
+>> -F "prompt=<|transcribe|>" \
 >> -F "diarize=false" \
 >> -F "timestamp_granularities[]=segment" \
 >> -F "response_format=verbose_json"
@@ -182,7 +182,7 @@ Now that you know which parameters are available, let’s look at how to put the
 >>  // apiKey: process.env.OVH_AI_ENDPOINTS_ACCESS_TOKEN,
 >> });
 >> 
->> const transcript = await openai.audio.>> transcriptions.create({
+>> const transcript = await openai.audio.transcriptions.create({
 >>   file: fs.createReadStream("my_audio.mp3"),
 >>   model: "whisper-large-v3",
 >>   language: "en",
@@ -232,7 +232,7 @@ This includes detailed metadata such as language, segments, tokens, and diarizat
   "diarization": [],
   "usage": {
     "type": "duration",
-    "duration": 5
+    "seconds": 5
   }
 }
 ```
@@ -284,7 +284,7 @@ Output:
     {"speaker":1,"text":"Indeed, Albert","start":4.74,"end":6.76},
     {"speaker":1,"text":"It's exciting to explore radioactivity together.","start":6.98,"end":8.1}
   ],
-  "usage":{"type":"duration","duration":9.0}
+  "usage":{"type":"duration","seconds":9.0}
 }
 ```
 
@@ -565,7 +565,7 @@ The `response_format` determines how the transcription data is returned. Availab
 >>   "diarization": [],
 >>   "usage": {
 >>     "type": "duration",
->>     "duration": 5
+>>     "seconds": 5
 >>   }
 >> }
 >> ```
@@ -579,7 +579,7 @@ The `response_format` determines how the transcription data is returned. Availab
 >>   "text": "My name is Octave and I am working at OVHcloud.",
 >>   "usage": {
 >>     "type": "duration",
->>     "duration": 5
+>>     "seconds": 5
 >>   }
 >> }
 >> ```
@@ -604,15 +604,17 @@ The `response_format` determines how the transcription data is returned. Availab
 
 The `chunking_strategy` parameter controls how the audio file is **divided into smaller segments** before transcription.
 
-By **default**, when unset, the audio is **processed as a single block**. 
+By **default**, when unset, the audio is **processed as a single block**.
+
+Setting `chunking_strategy` can significantly improve processing speed (often around 1.5×), while keeping transcription quality very close to single-block mode. This parameter supports two values, `auto` and `server_vad`.
 
 When set to `auto`, the system first normalizes audio loudness and then uses voice activity detection (VAD) to automatically split the audio at natural pauses (silence).
 
 You can also provide a `server_vad` object to manually tweak VAD detection parameters. This lets you control the following parameters:
 
 - `prefix_padding_ms`: Amount of audio to include before the VAD detected speech (in milliseconds).
-- `silence_duration_ms`: Duration of silence to detect speech stop (in milliseconds). With shorter values the model will respond more quickly, but may jump in on short pauses from the user.
-- `threshold`: Sensitivity threshold (0.0 to 1.0) for voice activity detection. A higher threshold will require louder audio to activate the model, and thus might perform better in noisy environments.
+- `silence_duration_ms`: Duration of silence required to detect speech end (in milliseconds). Lower values make the model react faster, but may increase sensitivity to short pauses.
+- `threshold`: Sensitivity threshold (0.0 to 1.0) for VAD. Higher values require louder speech and can perform better in noisy environments.
 
 **Example**:
 
