@@ -160,6 +160,11 @@ When `Checksum` is requested, the response includes the algorithm and value stor
 
 When `ObjectParts` is requested on a multipart object, the response lists all parts with their number, size, and optional checksum. For single-part (non-multipart) objects, `ObjectParts` is returned as an empty element.
 
+> [!primary]
+>
+> Only part details (size, checksum, pagination) of objects created with checksum type COMPOSITE will be listed i.e when you create your multipart upload, you need to specify the x-amz-checksum-type header to COMPOSITE.
+>
+
 **Pagination:** results are paginated at up to 1000 parts per response.
 
 > [!tabs]
