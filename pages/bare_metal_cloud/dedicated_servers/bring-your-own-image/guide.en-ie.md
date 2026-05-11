@@ -1,7 +1,7 @@
 ---
 title: "Deploy custom images using Bring Your Own Image (BYOI) on Dedicated Servers"
 excerpt: "Deploy your own custom OS images on OVHcloud dedicated servers using the Bring Your Own Image (BYOI) feature."
-updated: 2026-02-10
+updated: 2026-05-11
 ---
 
 ## Objective
@@ -20,6 +20,11 @@ In addition to the requirements and limitations mentioned below, you must ensure
 - A [dedicated server](/links/bare-metal/bare-metal) in your OVHcloud account
 - Access to the [OVHcloud API](/pages/manage_and_operate/api/first-steps) (for the "[Deployment via API](#viaapi)" section of this guide)
 - Your image must be smaller than the server RAM minus 3GiB
+
+> [!primary]
+>
+> To apply OVHcloud customizations at first boot, your image must include [cloud-init](https://cloud-init.io/) or a compatible alternative (such as FreeBSD's [`nuageinit`](https://cgit.freebsd.org/src/tree/libexec/nuageinit/)).
+>
 
 <!-- CP-NAV-START:baremetal-dedicated-servers -->
 ---
@@ -74,8 +79,6 @@ You will be redirected to the configuration page. Make sure your image URL is in
 
 You can find more details on the options in the [deployment options](#options) section below.
 
-For more information and examples about Cloud-Init's ConfigDrive, please read the official documentation on [this page](https://cloudinit.readthedocs.io/en/22.1_a/topics/examples.html).
-
 ![Bring Your Own Image Control Panel configuration page](images/byoi-controlpanel04.png){.thumbnail}
 
 ### Deploy your image via the API <a name="viaapi"></a>
@@ -113,13 +116,13 @@ The Bring Your Own Image (BYOI) payload should be similar to the following:
 }
 ```
 
-Even though the configDrive user data could be sent to the API directly in clear text by escaping special characters, it is recommended to send a base64-encoded script to the API. You can use the following UNIX/Linux command to encode your data:
+Even though `configDriveUserData` could be sent to the API directly in clear text by escaping special characters, it is recommended to send a base64-encoded script to the API. You can use the following UNIX/Linux command to encode your data:
 
 ```bash
 cat my-data.yaml | base64 -w0
 ```
 
-Here is the clear-text configDrive user data from the example above:
+Here is the clear-text version of `configDriveUserData` from the example above:
 
 ```yaml
 #cloud-config
@@ -149,17 +152,17 @@ Once you have filled in the fields, start the deployment by clicking `Execute`{.
 |-|-|-|
 | customizations/hostname | Hostname | ❌ |
 | customizations/sshKey | SSH public key | ❌ |
-| customizations/imageURL | Your image URL | ✅ |
-| customizations/imageType | Your image format (qcow2, raw) | ✅ |
-| customizations/imageCheckSum | Your image's checksum | ❌ |
-| customizations/imageCheckSumType | Your image's checksum type (md5, sha1, sha256, sha512) | ❌ (except if checksum provided) |
-| customizations/configDriveUserData | Your configDrive file content¹ | ❌ |
-| customizations/configDriveMetadata | Custom Cloud-Init metadata | ❌ |
+| customizations/imageURL | Image URL | ✅ |
+| customizations/imageType | Image format (qcow2, raw) | ✅ |
+| customizations/imageCheckSum | Image checksum | ❌ |
+| customizations/imageCheckSumType | Image checksum type (md5, sha1, sha256, sha512) | ❌ (except if checksum provided) |
+| customizations/configDriveUserData | cloud-init user-data¹ | ❌ |
+| customizations/configDriveMetadata | Custom cloud-init metadata, exposed under the `meta` key of `meta_data.json`⁴ | ❌ |
 | customizations/httpHeaders?Key | HTTP Headers key  | ❌² |
 | customizations/httpHeaders?Value | HTTP Headers value | ❌² |
 | userMetadata/efiBootloaderPath | EFI bootloader path | ✅³ |
 
-¹ Can either be a `#cloud-config` or a script. Its JSON representation must be on a single line with `\n` for line breaks, as JSON strings cannot contain literal newlines.<br />
+¹ Standard cloud-init [user-data](https://cloudinit.readthedocs.io/en/latest/explanation/format.html) — typically a `#cloud-config` document or a script (see the [official cloud-init examples](https://docs.cloud-init.io/en/latest/reference/examples.html)). Equivalent to OpenStack's `server create --user-data <file>`. Its JSON representation must be on a single line with `\n` for line breaks, as JSON strings cannot contain literal newlines.<br />
 ² Use only if you need HTTP Headers, such as `Basic Auth`<br />
 ³ The EFI bootloader path is used by iPXE to boot your operating system. For more information, see [Understanding the dedicated server boot process](/pages/bare_metal_cloud/dedicated_servers/boot-process). Examples:
 
@@ -178,9 +181,11 @@ Once you have filled in the fields, start the deployment by clicking `Execute`{.
 | Arch Linux | `\\efi\\arch\\grubx64.efi` |
 | Gentoo | `\\efi\\boot\\bootx64.efi` |
 
+⁴ JSON object of arbitrary key/value pairs, equivalent to OpenStack's `server create --property key=value`. The pairs are written to the config drive's `meta_data.json` under the `meta` key, where cloud-init can read them. Example: `"configDriveMetadata": {"role": "webserver", "env": "prod"}` becomes `"meta": {"role": "webserver", "env": "prod"}` in `meta_data.json`. See the [OpenStack metadata service documentation](https://docs.openstack.org/nova/latest/user/metadata.html#openstack-format-metadata) for the full schema.
+
 > [!primary]
 >
-> The ConfigDrive partition is used by cloud-init during the first server boot in order to apply your configurations. You can choose whether you want to use the default one, or a custom one (using `configDriveUserData`).
+> When you set any customization on this page, OVHcloud adds a small [config drive](https://docs.cloud-init.io/en/latest/reference/datasources/configdrive.html) partition during installation; otherwise no config drive is created. Cloud-init reads it at first boot. Set `configDriveUserData` to add your own cloud-init user-data.
 >
 
 #### Common customer errors <a name="errors"></a>

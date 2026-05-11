@@ -1,7 +1,7 @@
 ---
 title: "Deploy custom Linux images using Bring Your Own Linux (BYOLinux) on Dedicated Servers"
 excerpt: "Deploy your own custom Linux images on OVHcloud dedicated servers using the Bring Your Own Linux (BYOLinux) feature."
-updated: 2026-03-16
+updated: 2026-05-11
 ---
 
 ## Objective
@@ -158,7 +158,7 @@ Once you have filled in the fields, start the deployment by clicking `Execute`{.
 | customizations/imageURL | Linux image URL | ✅ |
 | customizations/imageCheckSum | Image checksum | ❌ |
 | customizations/imageCheckSumType | Image checksum type (md5, sha1, sha256, sha512) | ❌ (except if checksum provided) |
-| customizations/configDriveUserData | Cloud-init user-data¹ | ❌ |
+| customizations/configDriveUserData | cloud-init user-data¹ | ❌ |
 | customizations/configDriveMetadata | Custom cloud-init metadata, exposed under the `meta` key of `meta_data.json`⁴ | ❌ |
 | customizations/httpHeaders?Key | HTTP Headers key  | ❌² |
 | customizations/httpHeaders?Value | HTTP Headers value | ❌² |
@@ -187,7 +187,7 @@ Once you have filled in the fields, start the deployment by clicking `Execute`{.
 
 > [!primary]
 >
-> During installation, OVHcloud adds a small [config drive](https://docs.cloud-init.io/en/latest/reference/datasources/configdrive.html) partition to your server. Cloud-init reads it at first boot to apply OVHcloud's baseline configuration. Set `configDriveUserData` to add your own cloud-init user-data on top.
+> During installation, OVHcloud adds a small [config drive](https://docs.cloud-init.io/en/latest/reference/datasources/configdrive.html) partition to your server. Cloud-init reads it at first boot to apply OVHcloud's baseline configuration. Set `configDriveUserData` to add your own cloud-init user-data.
 >
 
 > [!warning]

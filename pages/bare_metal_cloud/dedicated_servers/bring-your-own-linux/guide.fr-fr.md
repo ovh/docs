@@ -1,7 +1,7 @@
 ---
 title: "Déployer des images Linux personnalisées via Bring Your Own Linux (BYOLinux) sur un serveur dédié"
 excerpt: "Déployez vos propres images Linux personnalisées sur un serveur dédié OVHcloud grâce à la fonctionnalité Bring Your Own Linux (BYOLinux)"
-updated: 2026-03-16
+updated: 2026-05-11
 ---
 
 ## Objectif
@@ -113,13 +113,13 @@ Le contenu de la requête API de Bring Your Own Linux (BYOLinux) doit être simi
 > Dans l'exemple ci-dessus, la valeur de `imageCheckSum` a été masquée, car elle change régulièrement à chaque reconstruction de l’image cible.
 >
 
-Même si `configDriveUserData` peut être envoyé à l'API directement en clair en échappant les bons caractères, il est recommandé d'envoyer à l'API le script encodé en base64 en utilisant par exemple la commande UNIX/Linux suivante :
+Même si `configDriveUserData` peut être envoyé à l'API directement en clair en échappant les bons caractères, il est recommandé d'envoyer à l'API le script encodé en base64 en utilisant par exemple la commande UNIX/Linux suivante :
 
 ```bash
 cat my-data.yaml | base64 -w0
 ```
 
-Voici la version en clair de `configDriveUserData` de l'exemple ci-dessus :
+Voici la version en clair de `configDriveUserData` de l'exemple ci-dessus :
 
 ```yaml
 #cloud-config
@@ -181,11 +181,11 @@ Une fois les champs complétés, démarrez le déploiement en cliquant sur `Exec
 | Arch Linux | `\\efi\\arch\\grubx64.efi` |
 | Gentoo | `\\efi\\boot\\bootx64.efi` |
 
-⁴ Objet JSON de couples clé/valeur arbitraires, équivalent à `server create --property cle=valeur` chez OpenStack. Les couples sont écrits dans le `meta_data.json` du config drive sous la clé `meta`, où cloud-init peut les lire. Exemple : `"configDriveMetadata": {"role": "webserver", "env": "prod"}` devient `"meta": {"role": "webserver", "env": "prod"}` dans `meta_data.json`. Voir la [documentation du service de métadonnées OpenStack](https://docs.openstack.org/nova/latest/user/metadata.html#openstack-format-metadata) pour le schéma complet.
+⁴ Objet JSON de couples clé/valeur arbitraires, équivalent à `server create --property clé=valeur` chez OpenStack. Les couples sont écrits dans le `meta_data.json` du config drive sous la clé `meta`, où cloud-init peut les lire. Exemple : `"configDriveMetadata": {"role": "webserver", "env": "prod"}` devient `"meta": {"role": "webserver", "env": "prod"}` dans `meta_data.json`. Voir la [documentation du service de métadonnées OpenStack](https://docs.openstack.org/nova/latest/user/metadata.html#openstack-format-metadata) pour le schéma complet.
 
 > [!primary]
 >
-> Lors de l'installation, OVHcloud ajoute une petite partition de [config drive](https://docs.cloud-init.io/en/latest/reference/datasources/configdrive.html) sur votre serveur. Cloud-init la lit au premier démarrage pour appliquer la configuration de base d'OVHcloud. Renseignez `configDriveUserData` pour ajouter vos propres données utilisateur (user-data) cloud-init par-dessus.
+> Lors de l'installation, OVHcloud ajoute une petite partition de [config drive](https://docs.cloud-init.io/en/latest/reference/datasources/configdrive.html) sur votre serveur. Cloud-init la lit au premier démarrage pour appliquer la configuration de base d'OVHcloud. Renseignez `configDriveUserData` pour ajouter vos propres données utilisateur (user-data) cloud-init.
 >
 
 > [!warning]

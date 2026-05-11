@@ -1,7 +1,7 @@
 ---
 title: "Deploy custom images using Bring Your Own Image (BYOI) on Dedicated Servers"
 excerpt: "Deploy your own custom OS images on OVHcloud dedicated servers using the Bring Your Own Image (BYOI) feature."
-updated: 2026-02-10
+updated: 2026-05-11
 ---
 
 ## Objective
@@ -158,7 +158,7 @@ Once you have filled in the fields, start the deployment by clicking `Execute`{.
 | customizations/imageType | Image format (qcow2, raw) | ✅ |
 | customizations/imageCheckSum | Image checksum | ❌ |
 | customizations/imageCheckSumType | Image checksum type (md5, sha1, sha256, sha512) | ❌ (except if checksum provided) |
-| customizations/configDriveUserData | Cloud-init user-data¹ | ❌ |
+| customizations/configDriveUserData | cloud-init user-data¹ | ❌ |
 | customizations/configDriveMetadata | Custom cloud-init metadata, exposed under the `meta` key of `meta_data.json`⁴ | ❌ |
 | customizations/httpHeaders?Key | HTTP Headers key  | ❌² |
 | customizations/httpHeaders?Value | HTTP Headers value | ❌² |
@@ -187,7 +187,7 @@ Once you have filled in the fields, start the deployment by clicking `Execute`{.
 
 > [!primary]
 >
-> When you set any customization on this page, OVHcloud adds a small [config drive](https://docs.cloud-init.io/en/latest/reference/datasources/configdrive.html) partition during installation; otherwise no config drive is created. Cloud-init reads it at first boot. Set `configDriveUserData` to add your own cloud-init user-data on top.
+> When you set any customization on this page, OVHcloud adds a small [config drive](https://docs.cloud-init.io/en/latest/reference/datasources/configdrive.html) partition during installation; otherwise no config drive is created. Cloud-init reads it at first boot. Set `configDriveUserData` to add your own cloud-init user-data.
 >
 
 #### Common customer errors <a name="errors"></a>
