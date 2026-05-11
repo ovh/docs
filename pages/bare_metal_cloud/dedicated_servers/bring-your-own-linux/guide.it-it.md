@@ -1,7 +1,7 @@
 ---
-title: "Deploying custom Linux images using Bring Your Own Linux (BYOLinux) on Dedicated Servers"
+title: "Deploy custom Linux images using Bring Your Own Linux (BYOLinux) on Dedicated Servers"
 excerpt: "Deploy your own custom Linux images on OVHcloud dedicated servers using the Bring Your Own Linux (BYOLinux) feature."
-updated: 2026-03-16
+updated: 2026-05-11
 ---
 
 ## Objective
@@ -21,6 +21,11 @@ In addition to the requirements and limitations mentioned below, you must ensure
 - Access to the [OVHcloud API](/pages/manage_and_operate/api/first-steps) (for the "[Deployment via API](#viaapi)" section of this guide)
 - Your image must be smaller than the server RAM minus 3GiB
 - An executable script `/root/.ovh/make_image_bootable.sh`, which will install and configure the bootloader, [for example GRUB](https://github.com/ovh/bringyourownlinux/blob/e20c9474e1a0/example_build/files/make_image_bootable.sh). This script must not alter the NVRAM boot order (e.g. use `grub-install --no-nvram`). For more information, see [Understanding the dedicated server boot process](/pages/bare_metal_cloud/dedicated_servers/boot-process).
+
+> [!primary]
+>
+> To apply OVHcloud customizations at first boot, your image must include [cloud-init](https://cloud-init.io/) or a compatible alternative (such as FreeBSD's [`nuageinit`](https://cgit.freebsd.org/src/tree/libexec/nuageinit/)).
+>
 
 <!-- CP-NAV-START:baremetal-dedicated-servers -->
 ---
@@ -58,19 +63,17 @@ There are some technical limitations linked to the use of physical products such
 
 In the `General information`{.action} tab, click the `...`{.action} button next to "System (OS)" then click `Install`{.action}.
 
-![BringYourOwnLinux Control Panel 01](images/byolinux-controlpanel01.png){.thumbnail}
+![Bring Your Own Linux Control Panel install button](images/byolinux-controlpanel01.png){.thumbnail}
 
 In the window that appears, select `Custom` in the menu, then `Bring Your Own Linux - byolinux`, and click `Next`{.action}.
 
-![BringYourOwnLinux Control Panel 03](images/byolinux-controlpanel03.png){.thumbnail}
+![Bring Your Own Linux Control Panel custom image selection](images/byolinux-controlpanel03.png){.thumbnail}
 
 You will be redirected to the configuration page. Make sure your image URL is in the correct format. Fill in the rest of the required fields on this page. Once you have confirmed that the information is correct, click `Confirm`{.action}.
 
 You can find more details on the options in the [deployment options](#options) section below.
 
-For more information and examples about Cloud-Init's ConfigDrive, please read the official documentation on [this page](https://cloudinit.readthedocs.io/en/22.1_a/topics/examples.html).
-
-![BringYourOwnLinux Control Panel 04](images/byolinux-controlpanel04.png){.thumbnail}
+![Bring Your Own Linux Control Panel configuration page](images/byolinux-controlpanel04.png){.thumbnail}
 
 ### Deploy your image via the API <a name="viaapi"></a>
 
@@ -110,13 +113,13 @@ The Bring Your Own Linux (BYOLinux) payload should be similar to the following:
 > In the example above, the `imageCheckSum` value has been masked because it changes regularly whenever the target image is rebuilt.
 >
 
-Even though the configDrive user data could be sent to the API directly in clear text by escaping special characters, it is recommended to send a base64-encoded script to the API. You can use the following UNIX/Linux command to encode your data:
+Even though `configDriveUserData` could be sent to the API directly in clear text by escaping special characters, it is recommended to send a base64-encoded script to the API. You can use the following UNIX/Linux command to encode your data:
 
 ```bash
 cat my-data.yaml | base64 -w0
 ```
 
-Here is the clear-text configDrive user data from the example above:
+Here is the clear-text version of `configDriveUserData` from the example above:
 
 ```yaml
 #cloud-config
@@ -150,16 +153,16 @@ Once you have filled in the fields, start the deployment by clicking `Execute`{.
 |-|-|-|
 | customizations/hostname | Hostname | ❌ |
 | customizations/sshKey | SSH public key | ❌ |
-| customizations/imageURL | Your Linux image URL | ✅ |
-| customizations/imageCheckSum | Your image's checksum | ❌ |
-| customizations/imageCheckSumType | Your image's checksum type (md5, sha1, sha256, sha512) | ❌ (except if checksum provided) |
-| customizations/configDriveUserData | Your configDrive file content¹ | ❌ |
-| customizations/configDriveMetadata | Custom Cloud-Init metadata | ❌ |
+| customizations/imageURL | Linux image URL | ✅ |
+| customizations/imageCheckSum | Image checksum | ❌ |
+| customizations/imageCheckSumType | Image checksum type (md5, sha1, sha256, sha512) | ❌ (except if checksum provided) |
+| customizations/configDriveUserData | cloud-init user-data¹ | ❌ |
+| customizations/configDriveMetadata | Custom cloud-init metadata, exposed under the `meta` key of `meta_data.json`⁴ | ❌ |
 | customizations/httpHeaders?Key | HTTP Headers key  | ❌² |
 | customizations/httpHeaders?Value | HTTP Headers value | ❌² |
 | userMetadata/efiBootloaderPath | EFI bootloader path | ✅³ |
 
-¹ Can either be a `#cloud-config` or a script. Its JSON representation must be on a single line with `\n` for line breaks, as JSON strings cannot contain literal newlines.<br />
+¹ Standard cloud-init [user-data](https://cloudinit.readthedocs.io/en/latest/explanation/format.html) — typically a `#cloud-config` document or a script (see the [official cloud-init examples](https://docs.cloud-init.io/en/latest/reference/examples.html)). Equivalent to OpenStack's `server create --user-data <file>`. Its JSON representation must be on a single line with `\n` for line breaks, as JSON strings cannot contain literal newlines.<br />
 ² Use only if you need HTTP Headers, such as `Basic Auth`<br />
 ³ The EFI bootloader path is used by iPXE to boot your operating system. For more information, see [Understanding the dedicated server boot process](/pages/bare_metal_cloud/dedicated_servers/boot-process). Examples:
 
@@ -178,9 +181,11 @@ Once you have filled in the fields, start the deployment by clicking `Execute`{.
 | Arch Linux | `\\efi\\arch\\grubx64.efi` |
 | Gentoo | `\\efi\\boot\\bootx64.efi` |
 
+⁴ JSON object of arbitrary key/value pairs, equivalent to OpenStack's `server create --property key=value`. The pairs are written to the config drive's `meta_data.json` under the `meta` key, where cloud-init can read them. Example: `"configDriveMetadata": {"role": "webserver", "env": "prod"}` becomes `"meta": {"role": "webserver", "env": "prod"}` in `meta_data.json`. See the [OpenStack metadata service documentation](https://docs.openstack.org/nova/latest/user/metadata.html#openstack-format-metadata) for the full schema.
+
 > [!primary]
 >
-> The ConfigDrive partition is used by cloud-init during the first server boot in order to apply your configurations. You can choose whether you want to use the default one, or a custom one (using `configDriveUserData`).
+> During installation, OVHcloud adds a small [config drive](https://docs.cloud-init.io/en/latest/reference/datasources/configdrive.html) partition to your server. Cloud-init reads it at first boot to apply OVHcloud's baseline configuration. Set `configDriveUserData` to add your own cloud-init user-data.
 >
 
 > [!warning]
