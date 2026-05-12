@@ -32,6 +32,7 @@ Learn how to upgrade the service plan of your cluster according to your needs.
 
 ### Using the OVHcloud Control Panel
 
+<!-- CP-STEPS-START:update-cluster-plan-cp -->
 Click `Data Analysis`{.action} or `Data Streaming`{.action} in the left navigation bar, then select your engine instance.
 
 ![Cluster overview](images/cluster_overview.png){.thumbnail}
@@ -39,6 +40,7 @@ Click `Data Analysis`{.action} or `Data Streaming`{.action} in the left navigati
 Click `Change solution`{.action} and adjust the Plan of your cluster.
 
 ![Change solution](images/plan_change_view.png){.thumbnail}
+<!-- CP-STEPS-END:update-cluster-plan-cp -->
 
 ### Using the OVHcloud API
 

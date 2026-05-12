@@ -35,9 +35,11 @@ Analytics services allow you to send logs of your service to your own Logs Data 
 
 #### Retrieve your LDP destination `streamId`:
 
+<!-- CP-STEPS-START:retrieve-ldp-stream-id -->
 - In the [OVHcloud Control Panel](/links/manager) go to the LDP page.
 - Go to the `Data stream` tab.
 - Choose your target stream and click on `Copy stream ID`{.action}.
+<!-- CP-STEPS-END:retrieve-ldp-stream-id -->
 
 #### Retrieve your LDP destination `serviceName`:
 
@@ -45,8 +47,10 @@ Analytics services allow you to send logs of your service to your own Logs Data 
 
 #### Retrieve your `clusterId`:
 
+<!-- CP-STEPS-START:retrieve-cluster-id -->
 - In the OVHcloud Control Panel, go to your Analytics service.
 - Retrieve your `Cluster ID` from the related field.
+<!-- CP-STEPS-END:retrieve-cluster-id -->
 
 ### Step 2 - Create your subscription
 
@@ -70,10 +74,12 @@ To find logs of your service in your Graylogs stream you can use the following G
 
 Query: `clusterID: "<Engine>-<HostID>"`
 
+<!-- CP-STEPS-START:find-host-id-in-cp -->
 You can find this `HostID` in your OVHcloud Control Panel:
 
 - Find the Cluster ID formatted as a UUID (AAAAAAAA-BBBB-CCCC-DDDDDDDDDDDD)
 - `HostID` is the first part of the UUID (AAAAAAAA)
+<!-- CP-STEPS-END:find-host-id-in-cp -->
 
 ### Delete subscription
 

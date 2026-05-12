@@ -30,11 +30,13 @@ This guide explains how to enable the schema registry for your Kafka cluster via
 
 ### Enable schema registry
 
+<!-- CP-STEPS-START:enable-schema-registry -->
 To enable schema registry, go to `Configuration`{.action} tab from your Kafka cluster. Then scroll to the Kafka specific section and click the schema registry toggle to enable it.
 
 ![Enable schema registry](images/kafka_enable_schema_registry.png){.thumbnail}
 
 The schema registry could be disabled with the same toggle.
+<!-- CP-STEPS-END:enable-schema-registry -->
 
 ## We want your feedback!
 

@@ -30,6 +30,7 @@ This guide explains how to create Kafka topics via the OVHcloud Control Panel.
 
 ### Create Kafka topics
 
+<!-- CP-STEPS-START:kafka-create-topics -->
 Topics can be seen as categories, allowing you to organize your Kafka records. Producers write to topics, and consumers read from topics.
 
 To create Kafka topics, first go to the `Topics`{.action} tab then click on the `Add a topic`{.action} button:
@@ -46,6 +47,7 @@ In advanced configuration you can change the default value for the following par
 - Deletion policy
 
 ![Create a topic](images/kafka_create_topic.v2.png){.thumbnail}
+<!-- CP-STEPS-END:kafka-create-topics -->
 
 ## We want your feedback!
 

@@ -30,6 +30,7 @@ ClickHouse is an open-source, columnar analytical database system designed for r
 
 ### Configuring the ClickHouse service
 
+<!-- CP-STEPS-START:configure-clickhouse-service -->
 Once your ClickHouse service is up and running, you must define at least one user and one authorised IP (if not already provided during the order) to fully connect to the service (as producer or consumer).
 
 The `Dashboard`{.action} tab automatically updates when your service is ready.
@@ -58,6 +59,7 @@ You can remove IPs from the table afterward.
 Your ClickHouse service is now fully accessible!
 
 Optionally, you can configure access control lists (ACL) for granular permissions and create topics.
+<!-- CP-STEPS-END:configure-clickhouse-service -->
 
 ## We want your feedback!
 

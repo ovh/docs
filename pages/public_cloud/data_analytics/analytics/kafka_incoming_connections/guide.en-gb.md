@@ -30,6 +30,7 @@ This guide explains how to configure your Kafka cluster to accept incoming conne
 
 ### Configure the Apache Kafka service
 
+<!-- CP-STEPS-START:configure-kafka-service -->
 Once your Kafka service is up and running, you will have to define at least one user and one authorised IP (if not already provided during the order) in order to fully connect to the service (as producer or consumer).
 
 The `Dashboard`{.action} tab automatically updates when your service is ready.
@@ -68,6 +69,7 @@ You will be able to remove IPs from the table afterward.
 
 Your Apache Kafka service is now fully accessible!
 Optionally, you can configure access control lists (ACL) for granular permissions and create topics, as shown below.
+<!-- CP-STEPS-END:configure-kafka-service -->
 
 ## We want your feedback!
 

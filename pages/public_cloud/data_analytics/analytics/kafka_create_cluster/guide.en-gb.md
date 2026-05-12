@@ -29,6 +29,8 @@ This guide explains how to create a Kafka cluster via the OVHcloud Control Panel
 
 ### Subscribe to the service
 
+<!-- CP-STEPS-START:kafka-create-cluster-subscribe -->
+
 Click on `Data Streaming`{.action} in the left-hand navigation bar under **Databases & Analytics**.
 
 Click the `Create a service`{.action} button.
@@ -91,6 +93,8 @@ The informations displayed in this window could help you automate your service c
 When you are ready click the `Order`{.action} button to create your service.
 In a matter of minutes, your new Apache Kafka service will be deployed.
 Messages in the OVHcloud Control Panel will inform you when the streaming tool is ready to use.
+
+<!-- CP-STEPS-END:kafka-create-cluster-subscribe -->
 
 ## We want your feedback!
 

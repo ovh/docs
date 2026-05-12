@@ -49,10 +49,12 @@ ClickHouse is an open-source, columnar analytical database system designed for r
 
 ### Downloading server and user certificates
 
+<!-- CP-STEPS-START:download-certificates -->
 To connect to the ClickHouse service, you need server and user certificates.
 
 - **Server certificate**: The server Certificate Authority (*CA*) certificate can be downloaded from the `Dashboard`{.action} tab.
 - **User certificate and access key**: The user certificate and the user access key can be downloaded from the `Users`{.action} tab.
+<!-- CP-STEPS-END:download-certificates -->
 
 ### Connection methods
 
@@ -64,8 +66,10 @@ You can connect to a ClickHouse cluster using different protocols and ports:
 | ClickHouse HTTPS | 20185 | `curl` or any HTTP client |
 | ClickHouse MySQL | 20186 | `mysql` |
 
+<!-- CP-STEPS-START:find-cluster-credentials -->
 > [!primary]
 > The hostname, ports and credentials for your cluster are available in the `Dashboard`{.action} tab of the OVHcloud Control Panel.
+<!-- CP-STEPS-END:find-cluster-credentials -->
 
 ### Connecting using the ClickHouse native protocol (port 20184)
 

@@ -31,26 +31,33 @@ We continuously improve our offers. You can follow and submit ideas to add to ou
 
 ### Step 1: Select the Analytics service you want to restore data from
 
+<!-- CP-STEPS-START:step-1-select-the-analytics-service-you-want-to-restore-data-from -->
 First, you need to go to the overview page of the service you want to restore the backup from.
 
 ![Select service](images/service-selection.png){.thumbnail}
+<!-- CP-STEPS-END:step-1-select-the-analytics-service-you-want-to-restore-data-from -->
 
 ### Step 2: Go to the backup tab
 
+<!-- CP-STEPS-START:step-2-go-to-the-backup-tab -->
 In the tab list, click on `Backups`{.action}.
 
 ![Service overview](images/service-overview.png){.thumbnail}
+<!-- CP-STEPS-END:step-2-go-to-the-backup-tab -->
 
 ### Step 3: Select the backup to restore from
 
+<!-- CP-STEPS-START:step-3-select-the-backup-to-restore-from -->
 Select the backup from which you want to restore. To help you choose, observe the dates at which the backups have been performed in the "Creation date" column.
 
 Click on the `...`{.action} button corresponding to the chosen backup. Then click on `Duplicate (Fork)`{.action} to go to the configuration page of the new service.
 
 ![Backup tab](images/backup-tab.png){.thumbnail}
+<!-- CP-STEPS-END:step-3-select-the-backup-to-restore-from -->
 
 ### Step 4: Configure the target service
 
+<!-- CP-STEPS-START:step-4-configure-the-target-service -->
 As seen before, when restoring a backup, you create a new separate Analytics service on which the backup data will be imported. You are able to configure this new service as you wish.
 
 #### Immutable options
@@ -118,9 +125,11 @@ You can update the network options.
 ![Options selection](images/option-selection.png){.thumbnail}
 
 Now click on `Create a fork`{.action} and the new service will be created. Please note that depending on the backup size, it can take some time before the service is available.
+<!-- CP-STEPS-END:step-4-configure-the-target-service -->
 
 ### Step 5: Wait for service creation
 
+<!-- CP-STEPS-START:step-5-wait-for-service-creation -->
 Now all you have to do is wait for your service to be ready.
 This new service is now completely independent from the one you forked the backup from. You can safely delete the old service without impacting the new one.
 
@@ -128,6 +137,7 @@ This new service is now completely independent from the one you forked the backu
 > The newly created service does not duplicate IP restrictions nor users which were created on the old service. You will have to recreate those before using your new service.
 
 ![Forked service](images/forked-service.png){.thumbnail}
+<!-- CP-STEPS-END:step-5-wait-for-service-creation -->
 
 ## We want your feedback!
 
