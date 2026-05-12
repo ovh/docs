@@ -1,7 +1,7 @@
 ---
 title: Hôte de spare
 excerpt: Comprendre le mécanisme de remplacement d'hôte
-updated: 2020-06-29
+updated: 2026-05-12
 ---
 
 ## Prérequis
@@ -29,11 +29,9 @@ Par défaut, le service HA ([High Availability)](/pages/hosted_private_cloud/hos
 
 ## Que faire après avoir reçu le hôte de spare
 
-Une fois que l'hôte original est de nouveau fonctionnel (une fois réparé), vous pouvez nous rendre l’un des deux hôtes (l'hôte de spare ou l'hôte original).
-
 Nous vous recommandons de nous rendre l'hôte original afin que nous puissions lui faire subir une batterie de tests suite à cet incident (pour éviter d’éventuelles futures pannes). Vous pourrez alors conserver l'hôte de spare. Pour cela vous pouvez suivre le guide [suppression d’un hôte](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/delete_host)
 
-OVHcloud pourra récupérer automatiquement l'hôte original dès que celui-ci est retiré.
+Si le host n'est pas restitué dans ce délai, il sera facturé à l'heure à partir du 8ème jour.
 
 ## Aller plus loin
 
