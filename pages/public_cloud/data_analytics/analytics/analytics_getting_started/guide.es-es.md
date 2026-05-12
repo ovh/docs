@@ -16,11 +16,22 @@ OVHcloud Public Cloud Analytics services let you focus on building and deploying
 - Access to the [OVHcloud API](/links/api) *(API and Terraform methods — create your credentials by consulting the [First steps with the OVHcloud API](/pages/manage_and_operate/api/first-steps) guide)*
 - [Terraform](https://www.terraform.io/) installed *(Terraform method only — tested with version v1.14.6)*
 
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Ruta de navegación:** `Public Cloud`{.action} > Seleccione su proyecto
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
+
 ## Instructions
 
 > [!tabs]
 > Via the OVHcloud Control Panel
->> Log in to your [OVHcloud Control Panel](/links/manager), open the `Public Cloud`{.action} section, and select your project. In the left-hand navigation under **Databases & Analytics**, click `Analytics`{.action} to access `Kafka`, `Kafka Connect`, `Kafka MirrorMaker`, `Dashboards`, or `OpenSearch`.
+>> Click [this link](/links/control-panel/publiccloud-projects) to access the `Public Cloud`{.action} section, then select your project. Under **Databases & Analytics** in the left-hand navigation, click `Analytics`{.action} to access `Kafka`, `Kafka Connect`, `Kafka MirrorMaker`, `Dashboards`, or `OpenSearch`.
 >>
 >> Click `Create your managed analytics service`{.action} (or `Create a service`{.action} if your project already contains analytics services).
 >>
