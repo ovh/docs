@@ -45,7 +45,6 @@ Na przykład **DynHost** może być używany do samodzielnego hostowania serwera
 
 **Jeśli Twoja domena nie używa serwerów DNS dostarczanych przez OVHcloud**, skontaktuj się z dostawcą zarządzającym konfiguracją DNS domeny, aby poznać dalszą procedurę.
 
-<!-- CP-STEPS-START:weryfikacja-serwerow-dns -->
 **Jeśli Twoja domena jest zarejestrowana w OVHcloud**, możesz sprawdzić, czy używa ona konfiguracji OVHcloud. W tym celu kliknij poniższe zakładki, aby wyświetlić kolejne **3** kroki.
 
 > [!tabs]
@@ -66,7 +65,6 @@ Na przykład **DynHost** może być używany do samodzielnego hostowania serwera
 >> Tabela, która się wyświetla zawiera listę serwerów DNS zdefiniowanych aktualnie przez OVHcloud dla Twojej domeny. Może pojawić się kilka serwerów DNS, przy czym jeden serwer odpowiada jednej linii w tabeli.
 >>
 >> ![DNS servers](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-servers/tab.png){.thumbnail}
-<!-- CP-STEPS-END:weryfikacja-serwerow-dns -->
 
 > [!success]
 >
@@ -81,7 +79,6 @@ Na przykład **DynHost** może być używany do samodzielnego hostowania serwera
 
 ### 1 - Utworzenie identyfikatora DynHost <a name="step1"></a>
 
-<!-- CP-STEPS-START:utworzenie-identyfikatora-dynhost -->
 W tym celu kliknij poniższe zakładki, aby wyświetlić kolejne **5** kroki.
 
 > [!tabs]
@@ -126,7 +123,6 @@ W tym celu kliknij poniższe zakładki, aby wyświetlić kolejne **5** kroki.
 >>
 >> ![DynHost tab](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dynhost/tab.png){.thumbnail}
 >>
-<!-- CP-STEPS-END:utworzenie-identyfikatora-dynhost -->
 
 Jeśli potrzebujesz dodatkowych loginów DynHost, powtórz ten etap tyle razy, ile to konieczne.
 
@@ -136,7 +132,6 @@ Drugi etap polega na utworzeniu rekordu DNS, który będzie aktualizowany dynami
 
 Gdy jesteś gotowy, aby utworzyć rekord DynHost.
 
-<!-- CP-STEPS-START:utworzenie-dynamicznego-rekordu-dns-dynhost -->
 W tym celu kliknij poniższe zakładki, aby wyświetlić kolejne **4** kroki.
 
 > [!tabs]
@@ -174,7 +169,6 @@ W tym celu kliknij poniższe zakładki, aby wyświetlić kolejne **4** kroki.
 >> ![Create a DynHost](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dynhost/create-a-dynhost.png){.thumbnail}
 >>
 >> Po uzupełnieniu pól kliknij przycisk `Zatwierdź`{.action}. Rekord DynHost pojawi się wówczas w tabeli figurującej na aktualnej stronie.
-<!-- CP-STEPS-END:utworzenie-dynamicznego-rekordu-dns-dynhost -->
 
 Jeśli potrzebujesz dodatkowych identyfikatorów DynHost, powtórz ten etap tyle razy, ile to konieczne.
 
@@ -213,7 +207,6 @@ https://dns.eu.ovhapis.com/nic/update?system=dyndns&hostname=$HOSTNAME&myip=$IP
 
 Możesz sprawdzić, czy docelowy adres IP został zaktualizowany.
 
-<!-- CP-STEPS-START:weryfikacja-adresu-ip-dynhost -->
 W tym celu kliknij poniższe zakładki, aby wyświetlić kolejne **3** kroki.
 
 > [!tabs]
@@ -235,7 +228,6 @@ W tym celu kliknij poniższe zakładki, aby wyświetlić kolejne **3** kroki.
 >>
 >> ![dynhost](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dynhost/target.png){.thumbnail}
 >>
-<!-- CP-STEPS-END:weryfikacja-adresu-ip-dynhost -->
 
 > [!warning]
 >

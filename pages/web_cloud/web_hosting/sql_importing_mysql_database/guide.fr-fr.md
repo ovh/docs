@@ -55,7 +55,6 @@ Poursuivez la lecture de cette documentation selon la méthode d'importation sou
 
 ### Restaurer une sauvegarde depuis l'espace client
 
-<!-- CP-STEPS-START:restore-backup-control-panel -->
 Pour effectuer la manipulation, cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4** étapes.
 
 > [!tabs]
@@ -80,11 +79,9 @@ Pour effectuer la manipulation, cliquez sur les onglets ci-dessous pour afficher
 >> Sur la fenêtre qui apparaît, assurez-vous que les informations sont correctes puis cliquez sur `Valider`{.action}. Patientez le temps que la restauration se réalise.
 >>
 >> ![databaseimport](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/restore-the-backup.png){.thumbnail}
-<!-- CP-STEPS-END:restore-backup-control-panel -->
 
 ### Importer votre propre sauvegarde depuis l'espace client
 
-<!-- CP-STEPS-START:import-own-backup-control-panel -->
 Pour effectuer la manipulation, cliquez sur les onglets ci-dessous pour afficher successivement chacune des **5** étapes.
 
 > [!tabs]
@@ -129,11 +126,9 @@ Pour effectuer la manipulation, cliquez sur les onglets ci-dessous pour afficher
 >> >
 >> > Le bouton `Utiliser un fichier existant`{.action} permet d’importer de nouveau les données d’un fichier déjà envoyé dans l’outil d’import.
 >> >
-<!-- CP-STEPS-END:import-own-backup-control-panel -->
 
 ### Réaliser l’import depuis l’interface web phpMyAdmin
 
-<!-- CP-STEPS-START:import-phpmyadmin -->
 Pour réaliser la manipulation, vous devez vous connecter à phpMyAdmin. Pour cela, cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3** étapes.
 
 > [!tabs]
@@ -150,7 +145,6 @@ Pour réaliser la manipulation, vous devez vous connecter à phpMyAdmin. Pour ce
 >> Cliquez sur le bouton `...`{.action} à droite de la base de données concernée, puis sur `Accéder à phpMyAdmin`{.action}.
 >>
 >> ![databaseimport](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/go-to-phpmyadmin.png){.thumbnail}
-<!-- CP-STEPS-END:import-phpmyadmin -->
 
 Une fois sur la page de phpMyAdmin, renseignez les informations de la base de données, choisissez dans le menu déroulant d'accéder aux données actuelles de la base de données, puis connectez-vous. Une fois connecté, rendez-vous à présent sur l'onglet `Importer`{.action} et complétez les informations demandées. Pour rappel, une limite de taille sur le fichier de sauvegarde vous est imposée.
 

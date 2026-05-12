@@ -39,7 +39,6 @@ Pour activer votre nom de domaine dans iCloud, suivez les instructions de la pag
 
 À l’issue de cette étape, une liste d’enregistrements DNS (MX, CNAME, TXT) à configurer dans votre zone DNS OVHcloud vous sera communiquée par Apple. Conservez-les pour l’étape suivante.
 
-<!-- CP-STEPS-START:configure-dns-records -->
 ### 2 - Configurer les enregistrements DNS dans votre espace client OVHcloud
 
 Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **2** étapes.
@@ -65,7 +64,6 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **2*
 >> > [!warning]
 >> >
 >> > Utilisez uniquement des guillemets droits `”` tels qu’ils apparaissent dans la documentation technique d’Apple (généralement en version anglaise). Les guillemets typographiques « » ou “ “ affichés dans certaines traductions ne doivent pas être utilisés dans la configuration DNS.
-<!-- CP-STEPS-END:configure-dns-records -->
 
 ### 3 - Ajouter un enregistrement DMARC (facultatif) <a name="step3"></a>
 

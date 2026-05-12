@@ -41,7 +41,6 @@ Los emails automatizados son mensajes enviados a través de scripts. Generalment
 
 ### Presentación del apartado «Scripts de correo electrónico»
 
-<!-- CP-STEPS-START:email-scripts-overview -->
 Para acceder al apartado «Scripts de correo electrónico», haga clic en las fichas siguientes para ver cada una de las **3** etapas.
 
 > [!tabs]
@@ -87,7 +86,6 @@ Para acceder al apartado «Scripts de correo electrónico», haga clic en las fi
 >> - **Desbloquear el envío**: desbloquea el envío de los emails automatizados de su alojamiento web. Los mensajes de correo presentes en la cola de espera también se reenviarán.
 >>
 >> Para realizar la acción deseada, haga clic en el botón correspondiente y seleccione `Aceptar`{.action}. En algunos casos, la acción deseada puede tardar varios minutos en ser plenamente efectiva.
-<!-- CP-STEPS-END:email-scripts-overview -->
 
 > [!primary]
 >
@@ -146,7 +144,6 @@ Este estado se produce cuando:
 - se han devuelto demasiados mensajes de correo.
 - usted mismo ha desactivado la funcionalidad desde su [área de cliente de OVHcloud](/links/manager).
 
-<!-- CP-STEPS-START:resolve-disabled-status -->
 Para desbloquear la situación, haga clic en las fichas siguientes para ver cada una de las **3** etapas.
 
 > [!tabs]
@@ -161,13 +158,11 @@ Para desbloquear la situación, haga clic en las fichas siguientes para ver cada
 > **Etapa 3**
 >>
 >> Haga clic en `Desbloquear el envío`{.action} y espere unos minutos a que vuelva a activar el servicio de envío.
-<!-- CP-STEPS-END:resolve-disabled-status -->
 
 #### El estado «Bounce»
 
 Este estado se produce cuando un cierto porcentaje de los mensajes de correo enviados automáticamente se ha vuelto a error.
 
-<!-- CP-STEPS-START:resolve-bounce-status -->
 Para desbloquear la situación, haga clic en las fichas siguientes para ver cada una de las **3** etapas.
 
 > [!tabs]
@@ -185,7 +180,6 @@ Para desbloquear la situación, haga clic en las fichas siguientes para ver cada
 >>
 >> - Si hace clic en `Desbloquear el envío`{.action}, el estado del servicio pasará a *«Force»*. El ratio **e-mails devueltos a error / número total de mensajes enviados** autorizado antes de un bloqueo se duplicará. El envío volverá a estar operativo unos minutos después del desbloqueo.
 >> - Si hace clic en `Purgar los mensajes de correo`{.action}, se borrarán todos los mensajes de la cola de espera y el estado del servicio pasará a *«Activo»* sin duplicar la relación.
-<!-- CP-STEPS-END:resolve-bounce-status -->
 
 #### El estado «spam»
 
@@ -201,7 +195,6 @@ Existen tres posibles situaciones en relación con esta situación:
 
 Para corregir esta situación, debe proteger todos los scripts que puedan enviar correo desde su alojamiento utilizando un sistema de tipo «Captcha».
 
-<!-- CP-STEPS-START:resolve-spam-case-1 -->
 Acceda a continuación al apartado «Scripts de correo electrónico» de su alojamiento. Para ello, haga clic en las fichas siguientes para ver cada una de las **3** etapas.
 
 > [!tabs]
@@ -216,7 +209,6 @@ Acceda a continuación al apartado «Scripts de correo electrónico» de su aloj
 > **Etapa 3**
 >>
 >> Haga clic en `Purgar los mensajes de correo`{.action}. Esto borrará todos los mensajes de la cola de espera y el estado del servicio pasará a *«Activo»*. En este caso, es obligatorio realizar una purga para eliminar los spam pendientes de envío.
-<!-- CP-STEPS-END:resolve-spam-case-1 -->
 
 - **Caso n°2: Inyección de archivos maliciosos en su alojamiento**:
 
@@ -230,7 +222,6 @@ Para corregir esta situación, debe realizar al menos las siguientes acciones:
 Si utiliza un CMS, priorice el uso de plugins/temas «oficial(s)».
 Actualice el CMS, los plugins y el tema asociados con la mayor frecuencia posible para evitar que esto vuelva a suceder.
 
-<!-- CP-STEPS-START:resolve-spam-case-2 -->
 Una vez que haya asegurado su alojamiento, haga clic en las fichas siguientes para ver cada una de las **3** etapas.
 
 > [!tabs]
@@ -245,7 +236,6 @@ Una vez que haya asegurado su alojamiento, haga clic en las fichas siguientes pa
 > **Etapa 3**
 >>
 >> Haga clic en `Purgar los mensajes de correo`{.action}. Esto borrará todos los mensajes de la cola de espera y el estado del servicio pasará a *«Activo»*.
-<!-- CP-STEPS-END:resolve-spam-case-2 -->
 
 En este caso, es obligatorio realizar una purga para eliminar los spam pendientes de envío.
 

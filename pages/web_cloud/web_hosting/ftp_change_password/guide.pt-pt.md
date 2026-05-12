@@ -61,7 +61,6 @@ Dependendo do seu plano de [alojamento web da OVHcloud](/links/web/hosting), a p
 
 **Clique no seu plano para ver o conteúdo.**
 
-<!-- CP-STEPS-START:change-ftp-password-perso -->
 /// details | Planos Perso e Alojamento gratuito 100M (um único utilizador FTP)
 
 Clique nos separadores abaixo para visualizar cada uma das **3** etapas.
@@ -86,9 +85,7 @@ Clique nos separadores abaixo para visualizar cada uma das **3** etapas.
 >> ![change-ftp-password-step1-perso](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/change-password-perso.png){.thumbnail}
 
 ///
-<!-- CP-STEPS-END:change-ftp-password-perso -->
 
-<!-- CP-STEPS-START:change-ftp-password-pro-performance -->
 /// details | Planos Pro e Performance (vários utilizadores FTP)
 
 Clique nos separadores abaixo para visualizar cada uma das **3** etapas.
@@ -113,7 +110,6 @@ Clique nos separadores abaixo para visualizar cada uma das **3** etapas.
 >> ![change-ftp-password-pro](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/change-password-pro.png){.thumbnail}
 
 ///
-<!-- CP-STEPS-END:change-ftp-password-pro-performance -->
 
 > [!primary]
 >

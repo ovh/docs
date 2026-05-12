@@ -98,7 +98,6 @@ Masz dostęp do interfejsu administracyjnego CMS i znasz swoje aktualne hasło? 
 
 ### Zmiana hasła administratora za pomocą narzędzia phpMyAdmin w Panelu klienta OVHcloud <a name="via-phpmyadmin"></a>
 
-<!-- CP-STEPS-START:access-phpmyadmin -->
 Nie masz dostępu do interfejsu administracyjnego CMS lub nie możesz użyć funkcji "Nie pamiętasz hasła", ponieważ powiązany adres e-mail jest niedostępny? Użyj narzędzia phpMyAdmin w [Panelu klienta OVHcloud](/links/manager), aby zresetować hasło bezpośrednio z bazy danych.
 
 Kliknij poniższe karty, aby wyświetlić kolejne **4** kroki.
@@ -121,7 +120,6 @@ Kliknij poniższe karty, aby wyświetlić kolejne **4** kroki.
 > **Krok 4**
 >>
 >> Wpisz identyfikatory bazy danych (nazwa użytkownika i hasło), które zdefiniowałeś podczas tworzenia bazy danych. Po zalogowaniu do phpMyAdmin kliknij odpowiednią zakładkę poniżej.
-<!-- CP-STEPS-END:access-phpmyadmin -->
 
 > [!tabs]
 > WordPress

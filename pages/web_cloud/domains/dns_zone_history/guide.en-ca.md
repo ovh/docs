@@ -60,7 +60,6 @@ DNS management is now made easier thanks to the history of your DNS zones.
 
 **Click on the action of your choice to view the content.**
 
-<!-- CP-STEPS-START:view-dns-zone -->
 /// details | View a DNS zone
 
 Click on the tabs below to view each of the **4** steps.
@@ -97,9 +96,7 @@ Click on the tabs below to view each of the **4** steps.
 >> Click `Close`{.action} to return to the main "DNS zone history" page.
 
 ///
-<!-- CP-STEPS-END:view-dns-zone -->
 
-<!-- CP-STEPS-START:download-dns-zone -->
 /// details | Download a DNS zone
 
 Click on the tabs below to view each of the **3** steps.
@@ -130,9 +127,7 @@ Click on the tabs below to view each of the **3** steps.
 >> The DNS zone is downloaded in .txt format.
 
 ///
-<!-- CP-STEPS-END:download-dns-zone -->
 
-<!-- CP-STEPS-START:restore-dns-zone -->
 /// details | Restore a DNS zone
 
 Click on the tabs below to view each of the **4** steps.
@@ -175,9 +170,7 @@ Click on the tabs below to view each of the **4** steps.
 > Modifying or restoring a DNS zone causes a propagation delay of **4** to **24** hours to be fully taken into account on the DNS network.
 
 ///
-<!-- CP-STEPS-END:restore-dns-zone -->
 
-<!-- CP-STEPS-START:compare-dns-zones -->
 /// details | Compare two DNS zones
 
 Click on the tabs below to view each of the **4** steps.
@@ -218,7 +211,6 @@ Click on the tabs below to view each of the **4** steps.
 >> ![DNS zone comparison details](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/compare-dns-zone-details.png){.thumbnail}
 
 ///
-<!-- CP-STEPS-END:compare-dns-zones -->
 
 ## Go further
 

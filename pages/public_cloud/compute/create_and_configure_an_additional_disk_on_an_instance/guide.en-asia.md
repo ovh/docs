@@ -101,7 +101,6 @@ This type of volume is recommended for:
 
 ### Attaching a new volume
 
-<!-- CP-STEPS-START:attach-volume-cp -->
 > [!tabs]
 > **Via the OVHcloud Control Panel**
 >>
@@ -355,7 +354,6 @@ This type of volume is recommended for:
 >> ovhcloud cloud storage-block attach <volume_id> <instance_id>
 >> ```
 >>
-<!-- CP-STEPS-END:attach-volume-cp -->
 
 ### Configuring the new disk
 
@@ -706,7 +704,6 @@ Here's how to **unmount the volume** from the operating system before detaching 
 
 Finally, we will detach the volume from the instance:
 
-<!-- CP-STEPS-START:detach-volume-cp -->
 > [!tabs]
 > **Via the OVHcloud Control Panel**
 >>
@@ -817,7 +814,6 @@ Finally, we will detach the volume from the instance:
 >> ovhcloud cloud storage-block detach <volume_id> <instance_id>
 >> ```
 >>
-<!-- CP-STEPS-END:detach-volume-cp -->
 
 ## Go further
 

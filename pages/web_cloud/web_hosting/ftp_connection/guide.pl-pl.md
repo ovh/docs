@@ -47,7 +47,6 @@ Aby zalogować się do przestrzeni dyskowej FTP, pobierz następujące elementy:
 > 
 > **Jeśli dysponujesz już tymi elementami**, przejdź bezpośrednio w części 2 [niniejszego przewodnika](#ftp_storage_access).
 
-<!-- CP-STEPS-START:get-ftp-credentials -->
 Jeśli nie posiadasz tych elementów, kliknij poniższe zakładki, aby wyświetlić kolejne **4** kroki.
 
 > [!tabs]
@@ -94,7 +93,6 @@ Jeśli nie posiadasz tych elementów, kliknij poniższe zakładki, aby wyświetl
 >> > [!primary]
 >> >
 >> > W zależności od oferty [hosting OVHcloud](/links/web/hosting), którą posiadasz, niektóre z informacji opisanych powyżej (zwłaszcza dotyczących SSH) mogą się nie pojawić.
-<!-- CP-STEPS-END:get-ftp-credentials -->
 
 Jeśli nie znasz hasła użytkownika FTP lub SSH, zapoznaj się z naszym przewodnikiem "[Zmiana hasła do konta FTP](/pages/web_cloud/web_hosting/ftp_change_password)".
 

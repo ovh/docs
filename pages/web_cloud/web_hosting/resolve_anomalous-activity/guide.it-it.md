@@ -80,7 +80,6 @@ Il tuo sito web effettua molte connessioni esterne (API, aggiornamenti, chiamate
 >
 > Esegui questo passaggio **solo dopo aver applicato le raccomandazioni sopra** (diagnosi, correzioni/aggiornamenti, sicurezza). Se un'attività anomala viene rilevata nuovamente durante un prossimo scan, le **misure di sicurezza verranno riassegnate automaticamente**. Riceverai una nuova notifica e i blocchi rimarranno attivi fino alla **risoluzione definitiva** della situazione.
 
-<!-- CP-STEPS-START:lift-security-measures -->
 Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **4** passi.
 
 > [!tabs]
@@ -100,7 +99,6 @@ Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **4** pa
 >>
 >> Una **bandiera di conferma** appare in alto sulla pagina: `Il tuo hosting è in analisi per rimuovere le misure di sicurezza.` Segui il progresso cliccando sul link `Vedi le attività in corso`{.action} o direttamente dall'etichetta `Attività in corso`{.action}.
 >>
-<!-- CP-STEPS-END:lift-security-measures -->
 
 > [!warning]
 >

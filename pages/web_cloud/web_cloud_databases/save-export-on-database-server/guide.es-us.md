@@ -60,7 +60,6 @@ Su base de datos puede contener una gran cantidad de información esencial para 
 
 #### Realizar una copia de seguridad manual
 
-<!-- CP-STEPS-START:manual-backup -->
 Haga clic en las fichas siguientes para ver cada una de las **3** etapas.
 
 > [!tabs]
@@ -81,11 +80,9 @@ Haga clic en las fichas siguientes para ver cada una de las **3** etapas.
 >> Haga clic en el botón `...`{.action} a la derecha de la base de datos y, a continuación, en `Guardar`{.action}.
 >>
 >> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/databases/back-up-now.png){.thumbnail}
-<!-- CP-STEPS-END:manual-backup -->
 
 #### Exportar una copia de seguridad
 
-<!-- CP-STEPS-START:export-backup -->
 Haga clic en las fichas siguientes para ver cada una de las **4** etapas.
 
 > [!tabs]
@@ -110,7 +107,6 @@ Haga clic en las fichas siguientes para ver cada una de las **4** etapas.
 > **Etapa 4**
 >>
 >> Se mostrará la lista de las copias de seguridad disponibles. Haga clic en el botón `...`{.action} a la derecha de la copia de seguridad seleccionada y, a continuación, en `Descargar la copia de seguridad`{.action}.
-<!-- CP-STEPS-END:export-backup -->
 
 ### Copia de seguridad y exportación de una base de datos fuera del área de cliente
 

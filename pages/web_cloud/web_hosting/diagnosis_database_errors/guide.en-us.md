@@ -58,7 +58,6 @@ First, check on the [Web Cloud Status](https://web-cloud.status-ovhcloud.com/) p
 
 **Click on the information you are looking for to view the content.**
 
-<!-- CP-STEPS-START:find-datacenter -->
 /// details | Find the datacenter of your web hosting plan
 
 Click on the tabs below to view each of the **2** steps in succession.
@@ -75,7 +74,6 @@ Click on the tabs below to view each of the **2** steps in succession.
 >> In the `General information`{.action} tab, locate the `Datacentre`.
 
 ///
-<!-- CP-STEPS-END:find-datacenter -->
 
 /// details | Find the cluster and filer of your web hosting plan
 
@@ -83,7 +81,6 @@ Refer to our guide "[Finding out the cluster and filer of your web hosting plan]
 
 ///
 
-<!-- CP-STEPS-START:find-wcdb-server-name -->
 /// details | Find the Web Cloud Databases server name
 
 Click on the tabs below to view each of the **2** steps in succession.
@@ -100,7 +97,6 @@ Click on the tabs below to view each of the **2** steps in succession.
 >> Locate `Host name` in the `SQL` section of `Login information`.
 
 ///
-<!-- CP-STEPS-END:find-wcdb-server-name -->
 
 /// details | Find your web hosting database server
 
@@ -142,7 +138,6 @@ define('DB_PASSWORD', 'my_password');
 define('DB_HOST', 'my_server.mysql.db:port');
 ```
 
-<!-- CP-STEPS-START:check-wp-db-credentials -->
 Click on the tabs below to view each of the **2** steps in succession.
 
 > [!tabs]
@@ -160,7 +155,6 @@ Click on the tabs below to view each of the **2** steps in succession.
 >> - **my_user** must match what is noted as `User name`;
 >> - **my_password** corresponds to your [database password](/pages/web_cloud/web_hosting/sql_change_password);
 >> - **my_server.mysql.db** must match the `Server address`.
-<!-- CP-STEPS-END:check-wp-db-credentials -->
 
 > [!primary]
 >
@@ -190,7 +184,6 @@ If you have a **Starter** or **Personal** Web Hosting plan, we recommend that yo
 > If you notice a sudden increase in the size of your database, or if you have a "blog" type site that normally does not use much data, we advise you to contact a [specialised service provider](/links/partner) as soon as possible. We will not be able to provide you with support on this matter.
 >
 
-<!-- CP-STEPS-START:upgrade-plan -->
 To upgrade your subscription, click on the tabs below to view each of the **3** steps in succession.
 
 > [!tabs]
@@ -207,7 +200,6 @@ To upgrade your subscription, click on the tabs below to view each of the **3** 
 > **Step 3**
 >>
 >> Click `Change plan`{.action}.
-<!-- CP-STEPS-END:upgrade-plan -->
 
 If you are already subscribing to a **Performance** offer, refer to [method 2](#method2).
 
@@ -228,7 +220,6 @@ You can also migrate your data to a new database:
 
 Once you have made a [database backup](/pages/web_cloud/web_hosting/sql_database_export), log in to your [phpMyAdmin interface](/pages/web_cloud/web_hosting/sql_create_database#accessing-the-phpmyadmin-interface) to delete any unnecessary data using the Drop, Delete and Truncate commands.
 
-<!-- CP-STEPS-START:recalculate-quota-method3 -->
 To recalculate the quota, click on the tabs below to view each of the **3** steps in succession.
 
 > [!tabs]
@@ -245,7 +236,6 @@ To recalculate the quota, click on the tabs below to view each of the **3** step
 > **Step 3**
 >>
 >> Click `Recalculate the quota`{.action}.
-<!-- CP-STEPS-END:recalculate-quota-method3 -->
 
 > [!warning]
 >
@@ -256,7 +246,6 @@ To recalculate the quota, click on the tabs below to view each of the **3** step
 
 To optimise your database, follow the instructions in our guide "[Configuring your database server](/pages/web_cloud/web_cloud_databases/configure-database-server#managing-your-databases)".
 
-<!-- CP-STEPS-START:recalculate-quota-method4 -->
 To recalculate the quota, click on the tabs below to view each of the **3** steps in succession.
 
 > [!tabs]
@@ -273,7 +262,6 @@ To recalculate the quota, click on the tabs below to view each of the **3** step
 > **Step 3**
 >>
 >> Click `Recalculate the quota`{.action}.
-<!-- CP-STEPS-END:recalculate-quota-method4 -->
 
 > [!warning]
 >
@@ -286,7 +274,6 @@ The following message indicates that your [Web Cloud Databases](/pages/web_cloud
 
 ![ram-exceeded](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/general-information/ram-exceeded.png){.thumbnail}
 
-<!-- CP-STEPS-START:increase-ram-wcdb -->
 To increase the [amount of RAM](/pages/web_cloud/web_cloud_databases/configure-database-server#modifying-the-database-server-solution), click on the tabs below to view each of the **3** steps in succession.
 
 > [!tabs]
@@ -303,7 +290,6 @@ To increase the [amount of RAM](/pages/web_cloud/web_cloud_databases/configure-d
 > **Step 3**
 >>
 >> Click on the `...`{.action} button in the `RAM` section, then click `Change the amount of RAM`{.action}.
-<!-- CP-STEPS-END:increase-ram-wcdb -->
 
 > [!warning]
 >
@@ -329,7 +315,6 @@ You can also optimise your database by following the instructions of our guide "
 
 This error message means that the database you are trying to import contains elements that are not authorised on the OVHcloud shared infrastructure.
 
-<!-- CP-STEPS-START:check-db-empty-before-import -->
 First make sure that your database is empty. To do this, click on the tabs below to view each of the **3** steps in succession.
 
 > [!tabs]
@@ -350,7 +335,6 @@ First make sure that your database is empty. To do this, click on the tabs below
 >> You can also tick the `Empty the current database`{.action} box just before [launching the import](/pages/web_cloud/web_hosting/sql_importing_mysql_database#import-your-own-backup-via-your-control-panel):
 >>
 >> ![import-empty-current-db](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/import-empty-current-db.png){.thumbnail}
-<!-- CP-STEPS-END:check-db-empty-before-import -->
 
 If necessary, contact our [user community](/links/community) or a [specialised service provider](/links/partner) for more information. We will not be able to assist you in correcting this issue.
 
@@ -384,7 +368,6 @@ This error message appears when [importing a database](/pages/web_cloud/web_clou
 
 To resolve this issue, you can:
 
-<!-- CP-STEPS-START:increase-ram-for-import -->
 - Increase the [amount of RAM](/pages/web_cloud/web_cloud_databases/configure-database-server#modifying-the-database-server-solution). To do this, click on the tabs below to view each of the **3** steps in succession.
 
 > [!tabs]
@@ -401,7 +384,6 @@ To resolve this issue, you can:
 > **Step 3**
 >>
 >> Click on the `...`{.action} button in the `RAM` section, then click `Change the amount of RAM`{.action}.
-<!-- CP-STEPS-END:increase-ram-for-import -->
 
 - Split your database in order to import it through multiple operations instead of one. (For any questions on the necessary steps, contact our [community](/links/community) or [OVHcloud partners](/links/partner). We will not be able to assist you with this.)
 
@@ -454,7 +436,6 @@ Check the server name for the relevant database service.
 
 **Click on the relevant situation to view the content.**
 
-<!-- CP-STEPS-START:find-server-name-hosting -->
 /// details | Database on a web hosting plan
 
 Click on the tabs below to view each of the **2** steps in succession.
@@ -471,9 +452,7 @@ Click on the tabs below to view each of the **2** steps in succession.
 >> Click on the `Databases`{.action} tab. The server name to enter is listed in the `Server address` column.
 
 ///
-<!-- CP-STEPS-END:find-server-name-hosting -->
 
-<!-- CP-STEPS-START:find-server-name-wcdb -->
 /// details | Database on a Web Cloud Databases server
 
 Click on the tabs below to view each of the **2** steps in succession.
@@ -490,7 +469,6 @@ Click on the tabs below to view each of the **2** steps in succession.
 >> In the `General information`{.action} tab, the server name to enter is listed in the `Login information` section, under `SQL`, labelled as `Host name`.
 
 ///
-<!-- CP-STEPS-END:find-server-name-wcdb -->
 
 ### Unable to connect to a Cloud Databases database
 

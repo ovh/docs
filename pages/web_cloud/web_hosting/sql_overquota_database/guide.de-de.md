@@ -64,7 +64,6 @@ Im ersten Schritt werden die großen Tabellen in der Datenbank identifiziert.
 
 Das Passwort für den Zugriff auf Ihre Datenbank erhalten Sie direkt aus der Konfigurationsdatei Ihrer Seite. Führen Sie diese Aktion mithilfe von **Teil 1** in unserer Anleitung zur [Änderung des Datenbankpassworts](/pages/web_cloud/web_hosting/sql_change_password) durch.
 
-<!-- CP-STEPS-START:connect-phpmyadmin -->
 Um sich über phpMyAdmin mit der Datenbank zu verbinden, klicken Sie auf die Tabs, um die **4** Schritte anzuzeigen.
 
 > [!tabs]
@@ -95,7 +94,6 @@ Um sich über phpMyAdmin mit der Datenbank zu verbinden, klicken Sie auf die Tab
 >> ![phpMyAdmin Login interface](/pages/assets/screens/other/web-tools/phpmyadmin/pma-interface-login.png){.thumbnail}
 >>
 >> Geben Sie die Zugangsdaten für Ihre Datenbank ein und klicken Sie auf `Anmeldung`{.action}.
-<!-- CP-STEPS-END:connect-phpmyadmin -->
 
 #### 1.2 - Finden der größten Tabellen <a name="step1.2"></a>
 
@@ -235,7 +233,6 @@ Dennoch können Sie die Statusänderung erzwingen, um den Vorgang zu beschleunig
 
 #### Quota für eine bei Ihrem Webhosting Angebot enthaltene Datenbank neu berechnen
 
-<!-- CP-STEPS-START:recalculate-quota-web-hosting -->
 Klicken Sie auf die Tabs, um die **4** Schritte anzuzeigen.
 
 > [!tabs]
@@ -266,11 +263,9 @@ Klicken Sie auf die Tabs, um die **4** Schritte anzuzeigen.
 >> Der Vorgang kann einige Minuten dauern, nachdem er gestartet wurde. Wenn die Installation abgeschlossen ist, verschwindet der Status "READ ONLY" Ihrer Datenbank.  
 >> Ihre Datenbank ist nun wieder voll funktionsfähig.
 >>
-<!-- CP-STEPS-END:recalculate-quota-web-hosting -->
 
 #### Quota für eine Datenbank neu berechnen, die auf einer Web Cloud Databases Lösung gehostet wird
 
-<!-- CP-STEPS-START:recalculate-quota-web-cloud-databases -->
 Klicken Sie auf die Tabs, um die **2** Schritte anzuzeigen.
 
 > [!tabs]
@@ -289,7 +284,6 @@ Klicken Sie auf die Tabs, um die **2** Schritte anzuzeigen.
 >> Der Vorgang kann einige Minuten dauern, nachdem er gestartet wurde. Wenn die Installation abgeschlossen ist, verschwindet der Status "READ ONLY" Ihrer Datenbank.  
 >> Ihre Datenbank ist nun wieder voll funktionsfähig.
 >>
-<!-- CP-STEPS-END:recalculate-quota-web-cloud-databases -->
 
 ## Weiterführende Informationen <a name="go-further"></a>
 

@@ -49,7 +49,6 @@ La seule différence est que le SFTP utilise un canal sécurisé pour échanger 
 
 **Cliquez sur l'une des deux lignes ci-dessous en fonction de votre offre d'hébergement web pour afficher les explications.**
 
-<!-- CP-STEPS-START:enable-sftp-starter-perso -->
 /// details | Activer le SFTP sur une offre d'hébergement web **gratuite 100M**, **Starter** ou **Perso**
 
 Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3** étapes.
@@ -77,9 +76,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3*
 >>
 
 ///
-<!-- CP-STEPS-END:enable-sftp-starter-perso -->
 
-<!-- CP-STEPS-START:enable-sftp-pro-performance -->
 /// details | Activer le SFTP sur une offre d'hébergement web **Pro** ou **Performance**
 
 Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4** étapes.
@@ -115,7 +112,6 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4*
 >> Cliquez ensuite sur `Suivant`{.action}, puis sur `Valider`{.action} afin de terminer l'activation du SFTP pour l'utilisateur concerné.
 
 ///
-<!-- CP-STEPS-END:enable-sftp-pro-performance -->
 
 ### Se connecter en SFTP à votre hébergement web
 

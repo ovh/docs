@@ -29,7 +29,6 @@ Uma base de dados (DB) permite armazenar elementos ditos dinâmicos, como coment
 
 ### Criar uma base de dados
 
-<!-- CP-STEPS-START:criar-base-de-dados -->
 
 Clique nos separadores abaixo para visualizar cada uma das **4** etapas.
 
@@ -67,13 +66,11 @@ Clique nos separadores abaixo para visualizar cada uma das **4** etapas.
 >>
 >> ![web-cloud-databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/databases/add-database-confirmation.png){.thumbnail}
 
-<!-- CP-STEPS-END:criar-base-de-dados -->
 
 ### Criar um utilizador
 
 Para utilizar um servidor de bases de dados OVHcloud, crie utilizadores com permissões específicas de ligação a uma base de dados.
 
-<!-- CP-STEPS-START:criar-utilizador -->
 
 Clique nos separadores abaixo para visualizar cada uma das **4** etapas.
 
@@ -98,13 +95,11 @@ Clique nos separadores abaixo para visualizar cada uma das **4** etapas.
 >>
 >> Introduza um "nome de utilizador" e uma "palavra-passe" e clique em `Validar`{.action}.
 
-<!-- CP-STEPS-END:criar-utilizador -->
 
 ### Gerir as permissões dos utilizadores
 
 Para permitir que um utilizador efetue ações numa base de dados, é necessário atribuir-lhe permissões.
 
-<!-- CP-STEPS-START:gerir-permissoes-utilizadores -->
 
 Clique nos separadores abaixo para visualizar cada uma das **4** etapas.
 
@@ -142,7 +137,6 @@ Clique nos separadores abaixo para visualizar cada uma das **4** etapas.
 >>
 >> ![web-cloud-databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/users-and-rights/changing-user-rights.png){.thumbnail}
 
-<!-- CP-STEPS-END:gerir-permissoes-utilizadores -->
 
 ### Eliminar uma base de dados
 
@@ -154,7 +148,6 @@ Clique nos separadores abaixo para visualizar cada uma das **4** etapas.
 > uma cópia de segurança e o seu download antes de qualquer eliminação.
 >
 
-<!-- CP-STEPS-START:eliminar-base-de-dados -->
 
 Clique nos separadores abaixo para visualizar cada uma das **3** etapas.
 
@@ -175,7 +168,6 @@ Clique nos separadores abaixo para visualizar cada uma das **3** etapas.
 >>
 >> ![web-cloud-databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/databases/delete-the-database.png){.thumbnail}
 
-<!-- CP-STEPS-END:eliminar-base-de-dados -->
 
 ## Quer saber mais?
 

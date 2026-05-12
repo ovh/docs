@@ -29,7 +29,6 @@ Un database (DB) permette di archiviare elementi detti dinamici, come commenti o
 
 ### Creare un database
 
-<!-- CP-STEPS-START:creare-database -->
 Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **4** passaggi.
 
 > [!tabs]
@@ -65,13 +64,11 @@ Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **4** pa
 >> Clicca su `Conferma`{.action}.
 >>
 >> ![web-cloud-databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/databases/add-database-confirmation.png){.thumbnail}
-<!-- CP-STEPS-END:creare-database -->
 
 ### Creare un utente
 
 Per utilizzare un database server OVHcloud, crea degli utenti con diritti specifici per la connessione a un database.
 
-<!-- CP-STEPS-START:creare-utente -->
 Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **4** passaggi.
 
 > [!tabs]
@@ -94,13 +91,11 @@ Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **4** pa
 > **Passaggio 4**
 >>
 >> Inserisci un "nome utente" e una "password", poi clicca su `Conferma`{.action}.
-<!-- CP-STEPS-END:creare-utente -->
 
 ### Gestire i diritti degli utenti
 
 Per consentire a un utente di eseguire operazioni su un database, è necessario assegnargli dei diritti.
 
-<!-- CP-STEPS-START:gestire-diritti -->
 Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **4** passaggi.
 
 > [!tabs]
@@ -136,7 +131,6 @@ Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **4** pa
 >> > La distribuzione dei diritti sopra indicati è specifica di OVHcloud. Un utente con diritti di `Amministratore` potrà utilizzare **DDL** (Data Definition Language) e **DML** (Data Manipulation Language), mentre un utente con diritti di `Lettura / Scrittura` potrà utilizzare solo **DML** (Data Manipulation Language).
 >>
 >> ![web-cloud-databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/users-and-rights/changing-user-rights.png){.thumbnail}
-<!-- CP-STEPS-END:gestire-diritti -->
 
 ### Eliminare un database
 
@@ -148,7 +142,6 @@ Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **4** pa
 > un backup e scaricarlo prima di qualsiasi eliminazione.
 >
 
-<!-- CP-STEPS-START:eliminare-database -->
 Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **3** passaggi.
 
 > [!tabs]
@@ -167,7 +160,6 @@ Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **3** pa
 >> Clicca sul pulsante `...`{.action} a destra del database interessato, poi su `Elimina il database`{.action}.
 >>
 >> ![web-cloud-databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/databases/delete-the-database.png){.thumbnail}
-<!-- CP-STEPS-END:eliminare-database -->
 
 ## Per saperne di più
 

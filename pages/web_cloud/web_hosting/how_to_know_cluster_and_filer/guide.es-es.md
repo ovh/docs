@@ -29,7 +29,6 @@ Al utilizar un alojamiento web, es posible que deba conocer el número del clust
 
 ## Procedimiento
 
-<!-- CP-STEPS-START:find-cluster-and-filer -->
 Haga clic en las fichas siguientes para ver cada una de las **2** etapas.
 
 > [!tabs]
@@ -44,7 +43,6 @@ Haga clic en las fichas siguientes para ver cada una de las **2** etapas.
 >> En el recuadro **Información general** de la página que se abre, obtenga el número del cluster bajo la mención **Clúster** (3 cifras comprendidas entre `0` y `9`) y el número del filer bajo la mención **Servidor de archivos**.
 >>
 >> ![Números de cluster y filer](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-cluster-and-filer.png){.thumbnail}
-<!-- CP-STEPS-END:find-cluster-and-filer -->
 
 ## Más información
 

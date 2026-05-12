@@ -55,7 +55,6 @@ Chcesz zmienić te uprawnienia/ograniczenia?
 >
 > Przypominamy, że jeśli właśnie aktywowałeś rozwiązanie [Web Cloud Databases](/links/web/databases) i chcesz z niego korzystać w ramach oferty [hostingu OVHcloud](/links/web/hosting), adresy IP tych ofert są już domyślnie autoryzowane.
 
-<!-- CP-STEPS-START:authorise-ip-address-range -->
 Kliknij poniższe zakładki, aby wyświetlić kolejne **4** kroki.
 
 > [!tabs]
@@ -99,7 +98,6 @@ Kliknij poniższe zakładki, aby wyświetlić kolejne **4** kroki.
 >> > Umożliwiłoby to autoryzację dostępu do Twoich baz danych dla wszystkich istniejących adresów IPv4.
 >>
 >> Po wpisaniu informacji kliknij przycisk `Zatwierdź`{.action}.
-<!-- CP-STEPS-END:authorise-ip-address-range -->
 
 ## Szczególne przypadki
 
@@ -119,7 +117,6 @@ Umożliwiłoby to autoryzację dostępu do Twoich baz danych dla wszystkich istn
 
 ///
 
-<!-- CP-STEPS-START:special-cases-authorizing-web-hosting -->
 /// details | Autoryzacja dostępu do hostingu WWW OVHcloud
 
 Podczas aktywacji rozwiązania Web Cloud Databases autoryzacja dostępu do hostingu WWW OVHcloud jest aktywowana domyślnie.
@@ -146,7 +143,6 @@ Jeśli chcesz wyłączyć to uprawnienie, ponieważ nie korzystasz z hostingu WW
 >> ![Authorised IPs interface](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/authorized-ips/tab-0000-sftp-hosting-enabled.png){.thumbnail}
 
 ///
-<!-- CP-STEPS-END:special-cases-authorizing-web-hosting -->
 
 ## Sprawdź również
  

@@ -31,7 +31,6 @@ Bei der Verwendung des Produkts kann es erforderlich sein, die Rechte eines Benu
 > [!primary]
 > Um einen neuen Benutzer für Ihre Web Cloud Databases Lösung zu erstellen, lesen Sie den Abschnitt **Einen Benutzer erstellen** unserer Anleitung "[Datenbanken und Benutzer auf Ihrem Datenbankserver erstellen](/pages/web_cloud/web_cloud_databases/create-db-and-user-on-db-server)".
 
-<!-- CP-STEPS-START:modify-rights-tabs -->
 Klicken Sie auf die unten stehenden Tabs, um die **4** Schritte nacheinander anzuzeigen.
 
 > [!tabs]
@@ -60,7 +59,6 @@ Klicken Sie auf die unten stehenden Tabs, um die **4** Schritte nacheinander anz
 >> ![Changing user rights](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/users-and-rights/changing-user-rights-db-alone.png){.thumbnail}
 >>
 >> Hier können Sie die Rechte Ihres Benutzers für jede Ihrer Datenbanken ändern. Klicken Sie hierzu für jede betroffene Datenbank auf die leeren Kreise, die den Rechten entsprechen, die Sie für Ihren Benutzer neu definieren möchten. Die Änderung wird innerhalb weniger Augenblicke wirksam.
-<!-- CP-STEPS-END:modify-rights-tabs -->
 
 Im Folgenden finden Sie eine zusammenfassende Tabelle der möglichen Abfragetypen für eine Datenbank, basierend auf den dem Benutzer zugewiesenen Rechten:
 

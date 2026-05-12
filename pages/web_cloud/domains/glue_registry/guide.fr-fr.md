@@ -130,7 +130,6 @@ Si besoin et pour plus d'informations, consultez notre tutoriel sur l'outil [Zon
 > De plus, le *domain1.tld* doit être enregistré chez OVHcloud pour mettre en place les hôtes.
 >
 
-<!-- CP-STEPS-START:add-host-records -->
 Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3** étapes.
 
 > [!tabs]
@@ -168,7 +167,6 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3*
 >> Une fois les informations complétées, cliquez sur le bouton `Ajouter`{.action}. Prenez connaissance des informations affichées, puis cliquez sur `Valider`{.action}. Répétez cette manipulation autant de fois que nécessaire, selon le nombre de serveurs DNS utilisés par votre nom de domaine.
 >>
 >> Dans notre exemple, vous devrez réitérer l'opération pour créer l'hôte **dns2.domain.tld**. Ce dernier remplacera par la suite le serveur DNS **dnsX2.ovh.net** actuellement associé aux adresses IP *203.0.113.1* (IPv4) et *2001:db8:1:1b00:203:0:113:1* (IPv6).
-<!-- CP-STEPS-END:add-host-records -->
 
 ### 4 - Créer les enregistrements DNS de type A et AAAA correspondants aux DNS personnalisés <a name="step4"></a>
 
@@ -184,7 +182,6 @@ Rapprochez-vous du prestataire gérant cette dernière. Une fois la manipulation
 
 ///
 
-<!-- CP-STEPS-START:add-dns-records-ovh -->
 /// details | Votre nom de domaine utilise une zone DNS active chez OVHcloud
 
 Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4** étapes.
@@ -211,7 +208,6 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4*
 >> Renseignez le *sous-domaine* et l'adresse *IPv4* (A) ou *IPv6* (AAAA), puis poursuivez jusqu'à la validation de l'ajout. Si nécessaire, reportez-vous aux instructions décrites dans notre documentation « [Éditer une zone DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit) ».
 
 ///
-<!-- CP-STEPS-END:add-dns-records-ovh -->
 
 > [!primary]
 >
@@ -243,7 +239,6 @@ Rapprochez-vous du prestataire gérant cette dernière pour effectuer la modific
 
 ///
 
-<!-- CP-STEPS-START:update-ns-records-ovh -->
 /// details | Votre nom de domaine utilise une zone DNS active chez OVHcloud
 
 Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3** étapes.
@@ -275,7 +270,6 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3*
 >> La modification ne sera pas visible immédiatement. Patientez une vingtaine de minutes pour observer la bonne prise en compte de vos modifications.
 
 ///
-<!-- CP-STEPS-END:update-ns-records-ovh -->
 
 > [!primary]
 >
@@ -330,7 +324,6 @@ Si nécessaire, reportez-vous aux instructions décrites dans notre documentatio
 
 Vous devez modifier les serveurs DNS de votre nom de domaine en remplaçant les anciens serveurs DNS par les serveurs DNS personnalisés créés précédemment.
 
-<!-- CP-STEPS-START:change-dns-servers -->
 Pour cela, cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4** étapes.
 
 > [!tabs]
@@ -363,7 +356,6 @@ Pour cela, cliquez sur les onglets ci-dessous pour afficher successivement chacu
 >> > [!primary]
 >> >
 >> > Si vous avez personnalisé des serveurs DNS sur un nom de domaine pour les utiliser avec un autre nom de domaine qui n’est pas enregistré chez OVHcloud, rapprochez-vous du prestataire où est enregistré votre autre nom de domaine afin de modifier les serveurs DNS.
-<!-- CP-STEPS-END:change-dns-servers -->
 
 > [!primary]
 >

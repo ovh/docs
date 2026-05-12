@@ -178,7 +178,6 @@ Po zakończeniu operacji transferu możesz zarządzać nazwą domeny na stronie 
 >
 > W zależności od sytuacji oraz od daty wygaśnięcia nazwy domeny, może zaistnieć konieczność odnowienia nazwy domeny zaraz po jej zakończeniu.
 
-<!-- CP-STEPS-START:check-domain-expiry -->
 Aby to sprawdzić, kliknij na poniższe karty, aby wyświetlić kolejno każdy z **2** kroków.
 
 > [!tabs]
@@ -191,7 +190,6 @@ Aby to sprawdzić, kliknij na poniższe karty, aby wyświetlić kolejno każdy z
 > **Krok 2**
 >>
 >> Na wyświetlonej stronie, tuż poniżej nazwy domeny, znajdziesz planowaną datę odnowienia wraz z **miesiącem** i **rokiem** wygaśnięcia.
-<!-- CP-STEPS-END:check-domain-expiry -->
 
 ## Sprawdź również
 

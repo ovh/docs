@@ -27,7 +27,6 @@ updated: 2025-07-03
 
 ## Procedimiento
 
-<!-- CP-STEPS-START:export-csv -->
 Haga clic en las fichas siguientes para ver cada una de las **3** etapas.
 
 > [!tabs]
@@ -56,7 +55,6 @@ Haga clic en las fichas siguientes para ver cada una de las **3** etapas.
 >> ![Export domains in CSV format step 2 done](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/export-csv/export-domains-in-csv-format-step-2b.png){.thumbnail}
 >>
 >> Si la descarga del archivo CSV no se ha iniciado automáticamente, haga clic en el enlace `descargarlo manualmente`{.action} para descargarlo.
-<!-- CP-STEPS-END:export-csv -->
 
 ## Más información
  

@@ -46,7 +46,6 @@ Las API de OVHcloud permiten a los desarrolladores o integradores asociar, por e
 
 ### 1 - Obtener el nombre del alojamiento web al que estaba asociada la base de datos eliminada
 
-<!-- CP-STEPS-START:retrieve-webhosting-name -->
 Para obtener el nombre del alojamiento web, haga clic en las fichas siguientes para ver cada una de las **2** etapas.
 
 > [!tabs]
@@ -59,7 +58,6 @@ Para obtener el nombre del alojamiento web, haga clic en las fichas siguientes p
 >> En la parte superior izquierda de la página que se muestra, encontrará el nombre de su alojamiento web a la derecha de la mención `Alojamientos /`.
 >>
 >> ![Nombre del alojamiento web en el área de cliente de OVHcloud](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-webhosting-name.png){.thumbnail}
-<!-- CP-STEPS-END:retrieve-webhosting-name -->
 
 ### 2 - Conectarse a las API de OVHcloud y permitirles el acceso a sus servicios
 

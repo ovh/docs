@@ -170,7 +170,6 @@ Per maggiori informazioni, consulta le nostre guide:
 
 Una volta rispettati tutti questi prerequisiti, puoi iniziare a finalizzare l’installazione del tuo certificato SSL personalizzato sul tuo hosting Web.
 
-<!-- CP-STEPS-START:install-custom-ssl -->
 Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **4** passi.
 
 > [!tabs]
@@ -205,7 +204,6 @@ Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **4** pa
 >> ![Order an SSL certificate](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ssl-certificates/import-your-own-ssl-certificate-window-completed.png){.thumbnail}
 >>
 >> Una volta completati i 3 moduli, clicca su `Conferma`{.action} per completare l’importazione del certificato SSL personalizzato sul tuo hosting Web.
-<!-- CP-STEPS-END:install-custom-ssl -->
 
 Se il certificato SSL è stato generato correttamente dal provider SSL e i prerequisiti sono rispettati, apparirà un messaggio che indica che l’attivazione del certificato SSL sull’hosting Web è in corso.
 
@@ -220,7 +218,6 @@ Se il certificato SSL è stato generato correttamente dal provider SSL e i prere
 
 L'installazione richiede alcuni minuti.
 
-<!-- CP-STEPS-START:verify-ssl-installation -->
 Per verificare che l'installazione sia stata completata, clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **3** passi.
 
 > [!tabs]
@@ -241,7 +238,6 @@ Per verificare che l'installazione sia stata completata, clicca sulle schede qui
 >> Una volta visualizzato il contenuto della scheda, verifica che ogni dominio e/o sottodominio interessato sia presente nella tabella con il tipo di certificato SSL `Custom`.
 >>
 >> ![Tabella di gestione dei certificati SSL](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ssl-certificates/tab-custom.png){.thumbnail}
-<!-- CP-STEPS-END:verify-ssl-installation -->
 
 A questo punto il tuo certificato SSL personalizzato è installato ed è attivo. Da questo momento è possibile utilizzarlo con il proprio sito Web, passando, ad esempio, il [sito Web in HTTPS](/pages/web_cloud/web_hosting/ssl-activate-https-website).
 

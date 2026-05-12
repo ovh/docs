@@ -55,7 +55,6 @@ We recommend reading this guide, and focusing on the import method you wish to u
 
 ### Restore a backup from the Control Panel
 
-<!-- CP-STEPS-START:restore-backup-control-panel -->
 To carry out this procedure, click on the tabs below to view each of the **4** steps.
 
 > [!tabs]
@@ -80,11 +79,9 @@ To carry out this procedure, click on the tabs below to view each of the **4** s
 >> In the window that appears, check that the information is correct, then click `Confirm`{.action}. Wait for the restore process to complete.
 >>
 >> ![databaseimport](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/restore-the-backup.png){.thumbnail}
-<!-- CP-STEPS-END:restore-backup-control-panel -->
 
 ### Import your own backup via your Control Panel
 
-<!-- CP-STEPS-START:import-own-backup-control-panel -->
 To carry out this procedure, click on the tabs below to view each of the **5** steps.
 
 > [!tabs]
@@ -129,11 +126,9 @@ To carry out this procedure, click on the tabs below to view each of the **5** s
 >> >
 >> > By clicking the `Use an existing file`{.action} button, you can reimport data from a file you have already sent to the import tool.
 >> >
-<!-- CP-STEPS-END:import-own-backup-control-panel -->
 
 ### Carry out the import from the phpMyAdmin web interface
 
-<!-- CP-STEPS-START:import-phpmyadmin -->
 To carry out this procedure, you will need to log in to phpMyAdmin. To do this, click on the tabs below to view each of the **3** steps.
 
 > [!tabs]
@@ -150,7 +145,6 @@ To carry out this procedure, you will need to log in to phpMyAdmin. To do this, 
 >> Click on the `...`{.action} button to the right of the database concerned, then on `Go to phpMyAdmin`{.action}.
 >>
 >> ![databaseimport](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/go-to-phpmyadmin.png){.thumbnail}
-<!-- CP-STEPS-END:import-phpmyadmin -->
 
 Once you are on the phpMyAdmin page, enter the database information, use the drop-down menu to access the data from the current version of the database, then log in. Once you have logged in, go to the `Import`{.action} tab, and enter the information requested. As a reminder, there is a limit to the size of the backup file you can use.
 

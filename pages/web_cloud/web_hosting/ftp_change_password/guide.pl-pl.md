@@ -60,7 +60,6 @@ W szczególności dostęp ten umożliwia [umieszczenie strony w Internecie](/pag
 
 W zależności od pakietu [hostingowego OVHcloud](/links/web/hosting) zmiana hasła do konta FTP odbywa się na dwa różne sposoby.
 
-<!-- CP-STEPS-START:change-ftp-password-perso -->
 **Kliknij swoją ofertę, aby wyświetlić zawartość.**
 
 /// details | Oferty Perso i darmowy Hosting 100M (jeden użytkownik FTP)
@@ -87,9 +86,7 @@ Kliknij poniższe zakładki, aby wyświetlić kolejne **3** kroki.
 >> ![change-ftp-password-step1-perso](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/change-password-perso.png){.thumbnail}
 
 ///
-<!-- CP-STEPS-END:change-ftp-password-perso -->
 
-<!-- CP-STEPS-START:change-ftp-password-pro-performance -->
 /// details | Oferty Pro i Performance (wielu użytkowników FTP)
 
 Kliknij poniższe zakładki, aby wyświetlić kolejne **3** kroki.
@@ -114,7 +111,6 @@ Kliknij poniższe zakładki, aby wyświetlić kolejne **3** kroki.
 >> ![change-ftp-password-pro](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/change-password-pro.png){.thumbnail}
 
 ///
-<!-- CP-STEPS-END:change-ftp-password-pro-performance -->
 
 > [!primary]
 >

@@ -53,7 +53,6 @@ Ao clicar em `Confirmer votre adresse e-mail`{.action}, uma nova página será a
 
 ### 2 - Corrigir ou completar as coordenadas/informações de contacto do titular do nome de domínio como administrador
 
-<!-- CP-STEPS-START:fix-contact-info -->
 Clique nos separadores abaixo para visualizar cada uma das **4** etapas.
 
 > [!tabs]
@@ -90,7 +89,6 @@ Clique nos separadores abaixo para visualizar cada uma das **4** etapas.
 >> ![Informações do proprietário](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/owner.png){.thumbnail}
 >>
 >> Encontre mais detalhes sobre a mudança de titular no nosso guia: « [Nome de domínio - Como mudar o titular?](/pages/web_cloud/domains/trade_domain) ».
-<!-- CP-STEPS-END:fix-contact-info -->
 
 ### 3 - O que fazer se o endereço de e-mail do contacto titular não estiver mais acessível?
 
@@ -132,7 +130,6 @@ Para certas extensões (por exemplo: .fr, .it, .es), o administrador do domínio
 > Se as correções efetuadas seguindo a primeira parte deste guia exigiram a inicialização de uma mudança de titular para o nome de domínio, conclua primeiro a mudança de titular **antes** de continuar as ações descritas abaixo.
 >
 
-<!-- CP-STEPS-START:relaunch-verification -->
 Clique nos separadores abaixo para visualizar cada uma das **4** etapas.
 
 > [!tabs]
@@ -161,7 +158,6 @@ Clique nos separadores abaixo para visualizar cada uma das **4** etapas.
 >> Se a operação terminou com sucesso, a linha relativa à operação tratada não aparece mais.
 >>
 >> Caso contrário, isso significa que uma correção ainda é necessária ao nível das coordenadas do titular do nome de domínio. Neste caso, retome este guia desde o início para corrigir a situação.
-<!-- CP-STEPS-END:relaunch-verification -->
 
 
 ## Quer saber mais?

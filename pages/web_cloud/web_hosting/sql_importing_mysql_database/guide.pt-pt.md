@@ -55,7 +55,6 @@ Consulte a documentação correspondente ao método de importação pretendido.
 
 ### Restaurar um backup a partir da Área de Cliente
 
-<!-- CP-STEPS-START:restore-backup-control-panel -->
 Para efetuar esta operação, clique nos separadores abaixo para visualizar cada uma das **4** etapas.
 
 > [!tabs]
@@ -80,11 +79,9 @@ Para efetuar esta operação, clique nos separadores abaixo para visualizar cada
 >> Na janela que aparece, certifique-se de que as informações estão corretas e clique em `Confirmar`{.action}. Aguarde uns instantes para que a restauração seja realizada.
 >>
 >> ![databaseimport](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/restore-the-backup.png){.thumbnail}
-<!-- CP-STEPS-END:restore-backup-control-panel -->
 
 ### Importar o seu próprio backup a partir da Área de Cliente
 
-<!-- CP-STEPS-START:import-own-backup-control-panel -->
 Para efetuar esta operação, clique nos separadores abaixo para visualizar cada uma das **5** etapas.
 
 > [!tabs]
@@ -129,11 +126,9 @@ Para efetuar esta operação, clique nos separadores abaixo para visualizar cada
 >> >
 >> > A opção `Utilizar um ficheiro existente`{.action} permite importar novamente os dados de um ficheiro que já foi enviado na ferramenta de importação.
 >> >
-<!-- CP-STEPS-END:import-own-backup-control-panel -->
 
 ### Realizar a importação a partir da interface phpMyAdmin
 
-<!-- CP-STEPS-START:import-phpmyadmin -->
 Em primeiro lugar, deverá aceder a phpMyAdmin. Para isso, clique nos separadores abaixo para visualizar cada uma das **3** etapas.
 
 > [!tabs]
@@ -150,7 +145,6 @@ Em primeiro lugar, deverá aceder a phpMyAdmin. Para isso, clique nos separadore
 >> Clique nos três pontos à direita da base de dados e selecione `Aceder ao phpMyAdmin`{.action}.
 >>
 >> ![databaseimport](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/go-to-phpmyadmin.png){.thumbnail}
-<!-- CP-STEPS-END:import-phpmyadmin -->
 
 Uma vez na página de phpMyAdmin, introduza as informações da base de dados, selecione a opção de aceder aos dados atuais da base de dados no menu pendente e, em seguida, conecte-se. Depois de se conectar, na barra superior direita, selecione a opção `Importar`{.action} e introduza a informação que lhe é solicitada. Recordamos que existe um limite para o tamanho do ficheiro de configuração.
 

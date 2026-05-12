@@ -58,7 +58,6 @@ Sull'hosting web OVHcloud è possibile utilizzare script per automatizzare alcun
 
 ### Crea un task automatizzato
 
-<!-- CP-STEPS-START:create-cron-task -->
 Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **5** passaggi.
 
 > [!tabs]
@@ -121,11 +120,9 @@ Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **5** pa
 >> ![cron confirmation](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/cron/add-scheduling-step-3.png){.thumbnail}
 >>
 >> L'operazione sarà pronta tra pochi minuti. Per modificare tutte le impostazioni o eliminare l'operazione clicca su `...`{.action} nella tabella di presentazione del tuo pannello di configurazione OVHcloud.
-<!-- CP-STEPS-END:create-cron-task -->
 
 ### Modificare o eliminare un'operazione pianificata
 
-<!-- CP-STEPS-START:modify-delete-cron-task -->
 Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **3** passaggi.
 
 > [!tabs]
@@ -144,7 +141,6 @@ Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **3** pa
 >> Nella tabella che appare, clicca sul pulsante `...`{.action} a destra dell'operazione pianificata in questione.
 >>
 >> Scegli tra i pulsanti `Modificare`{.action} o `Eliminare`{.action} in base all'azione che vuoi effettuare sull'operazione pianificata.
-<!-- CP-STEPS-END:modify-delete-cron-task -->
 
 ### Limitazioni delle attività pianificate sul tuo hosting web
 

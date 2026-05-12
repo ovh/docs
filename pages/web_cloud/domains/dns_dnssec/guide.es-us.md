@@ -43,7 +43,6 @@ Si desea más información sobre estos temas, no dude en consultar nuestras guí
 
 ## Procedimiento
 
-<!-- CP-STEPS-START:procedimiento -->
 Para comprobar si su dominio utiliza la configuración DNS de OVHcloud, haga clic en las fichas siguientes para ver cada una de las **2** etapas.
 
 > [!warning]
@@ -65,7 +64,6 @@ Para comprobar si su dominio utiliza la configuración DNS de OVHcloud, haga cli
 >> Abra la pestaña `Servidores DNS`{.action} y seleccione el dominio correspondiente.
 >>
 >> Si los nombres de los servidores DNS acaban en *ovh.net* (excepto el servidor *snds2.ovh.net*), *ovh.ca* o *anycast.me*, el dominio utiliza los servidores DNS de OVHcloud.
-<!-- CP-STEPS-END:procedimiento -->
 
 > [!primary]
 >
@@ -80,7 +78,6 @@ Existen tres posibilidades para activar el servicio **DNSSEC**.
 
 ### Caso 1 - Su dominio está registrado con OVHcloud y utiliza los servidores DNS de OVHcloud
 
-<!-- CP-STEPS-START:caso-1-servidores-dns-ovhcloud -->
 Para activar (o desactivar) la solución **DNSSEC** para su dominio, haga clic en las fichas siguientes para ver cada una de las **3** etapas.
 
 > [!tabs]
@@ -103,13 +100,11 @@ Para activar (o desactivar) la solución **DNSSEC** para su dominio, haga clic e
 >> Con el botón de activación situado sobre la opción `Delegación segura (DNSSEC)`{.action}, puede activar o desactivar el **DNSSEC** en su dominio. Al realizar esta acción, se abrirá una nueva ventana desde la que podrá confirmar el cambio.
 >>
 >> ![Enable DNSSEC](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/activate-dnssec-confirmation.png){.thumbnail}
-<!-- CP-STEPS-END:caso-1-servidores-dns-ovhcloud -->
 
 ### Caso 2 - Su dominio está registrado con OVHcloud y no utiliza los servidores DNS de OVHcloud
 
 En ese caso, póngase en contacto con el proveedor que gestione la configuración DNS de su dominio y pídale que active el servicio DNSSEC "Key Tag", "Flag", "Algoritmo", "Clave pública (codificada en base 64)".
 
-<!-- CP-STEPS-START:caso-2-servidores-dns-externos -->
 Una vez recuperados estos 4 parámetros, haga clic en las fichas siguientes para ver cada una de las **2** etapas.
 
 > [!tabs]
@@ -134,7 +129,6 @@ Una vez recuperados estos 4 parámetros, haga clic en las fichas siguientes para
 >> ![DS records](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/ds-records/edit-plus-dashboard.png){.thumbnail}
 >>
 >> Una vez completados los 4 formularios, haga clic en el botón azul `Aceptar`{.action} situado a la derecha de la tabla.
-<!-- CP-STEPS-END:caso-2-servidores-dns-externos -->
 
 ### Caso 3 - Su dominio no está registrado en OVHcloud y utiliza los servidores DNS de OVHcloud
 

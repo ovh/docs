@@ -67,7 +67,6 @@ Umożliwia wgranie plików lub Twojej strony WWW do trybu online poprzez [zalogo
 
 ### 1 - Pobieranie danych do logowania do przestrzeni dyskowej hostingu WWW <a name="part-1"></a>
 
-<!-- CP-STEPS-START:get-ftp-connection-info -->
 Kliknij poniższe karty, aby wyświetlić kolejne **3** kroki.
 
 > [!tabs]
@@ -92,7 +91,6 @@ Kliknij poniższe karty, aby wyświetlić kolejne **3** kroki.
 >> > [!primary]
 >> >
 >> > Ze względów bezpieczeństwa hasło użytkownika nie pojawia się na stronie zakładki `FTP - SSH`{.action}. Jeśli nie pamiętasz hasła, zapoznaj się z [tym przewodnikiem](/pages/web_cloud/web_hosting/ftp_change_password), aby wprowadzić zmiany.
-<!-- CP-STEPS-END:get-ftp-connection-info -->
 
 ### 2 - Logowanie do przestrzeni dyskowej hostingu za pomocą FileZilla
 

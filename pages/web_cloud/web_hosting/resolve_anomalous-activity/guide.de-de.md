@@ -82,7 +82,6 @@ Ihre Website stellt zahlreiche externe Verbindungen her (APIs, Updates, HTTP-Auf
 >
 > Führen Sie diesen Schritt **erst nach Anwendung der oben genannten Empfehlungen** (Diagnose, Korrekturen/Updates, Sicherheitsverbesserungen) aus. Wenn bei einer nachfolgenden Überprüfung erneut ungewöhnliche Aktivitäten erkannt werden, werden die **Sicherheitsmaßnahmen automatisch erneut aktiviert**. Sie erhalten eine neue Benachrichtigung, und die Blockaden bleiben bestehen, bis die **Situation dauerhaft gelöst** ist.
 
-<!-- CP-STEPS-START:lift-security-measures -->
 Klicken Sie auf die Tabs, um die **4** Schritte anzuzeigen.
 
 > [!tabs]
@@ -102,7 +101,6 @@ Klicken Sie auf die Tabs, um die **4** Schritte anzuzeigen.
 >>
 >> Eine **Bestätigungsleiste** erscheint oben auf der Seite: `Ihr Hosting wird analysiert, um die Sicherheitsmaßnahmen aufzuheben.` Verfolgen Sie den Fortschritt, indem Sie auf den Link `Aktuelle Tasks anzeigen`{.action} klicken oder direkt über den Tab `Aktuelle Tasks`{.action}.
 >>
-<!-- CP-STEPS-END:lift-security-measures -->
 
 > [!warning]
 >

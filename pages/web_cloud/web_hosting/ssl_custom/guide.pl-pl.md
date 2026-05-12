@@ -170,7 +170,6 @@ Jeśli potrzebujesz pomocy, zapoznaj się z naszymi przewodnikami:
 
 Po spełnieniu wszystkich tych wymagań możesz rozpocząć instalację spersonalizowanego certyfikatu SSL na Twoim hostingu.
 
-<!-- CP-STEPS-START:install-custom-ssl -->
 Kliknij poniższe zakładki, aby wyświetlić kolejne **4** kroki.
 
 > [!tabs]
@@ -205,7 +204,6 @@ Kliknij poniższe zakładki, aby wyświetlić kolejne **4** kroki.
 >> ![Order an SSL certificate](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ssl-certificates/import-your-own-ssl-certificate-window-completed.png){.thumbnail}
 >>
 >> Po wypełnieniu 3 formularzy kliknij przycisk `Zatwierdź`{.action}, aby zakończyć import spersonalizowanego certyfikatu SSL na hostingu.
-<!-- CP-STEPS-END:install-custom-ssl -->
 
 Jeśli certyfikat SSL został poprawnie wygenerowany przez dostawcę SSL i wymagania początkowe są spełnione, pojawia się komunikat informujący, że aktywacja certyfikatu SSL na Twoim hostingu jest w toku.
 
@@ -220,7 +218,6 @@ Jeśli certyfikat SSL został poprawnie wygenerowany przez dostawcę SSL i wymag
 
 Instalacja potrwa kilka minut.
 
-<!-- CP-STEPS-START:verify-ssl-installation -->
 Aby sprawdzić, czy instalacja została zakończona, kliknij poniższe zakładki, aby wyświetlić kolejne **3** kroki.
 
 > [!tabs]
@@ -241,7 +238,6 @@ Aby sprawdzić, czy instalacja została zakończona, kliknij poniższe zakładki
 >> Kiedy pojawi się zawartość karty, sprawdź, czy każda domena i/lub subdomena figuruje w tabeli z typem certyfikatu SSL `Custom`.
 >>
 >> ![Tabela zarządzania certyfikatami SSL](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ssl-certificates/tab-custom.png){.thumbnail}
-<!-- CP-STEPS-END:verify-ssl-installation -->
 
 Twój niestandardowy certyfikat SSL jest teraz zainstalowany i aktywny. Od tej chwili możesz korzystać z niej na Twojej stronie WWW, przechodząc na przykład do [strony WWW HTTPS](/pages/web_cloud/web_hosting/ssl-activate-https-website).
 

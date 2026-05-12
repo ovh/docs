@@ -31,7 +31,6 @@ Podczas korzystania z produktu może być konieczna zmiana uprawnień użytkowni
 > [!primary]
 > Aby utworzyć nowego użytkownika w rozwiązaniu Web Cloud Databases, zapoznaj się z sekcją **Tworzenie użytkownika** w naszym przewodniku "[Tworzenie baz danych i użytkowników na serwerze bazy danych](/pages/web_cloud/web_cloud_databases/create-db-and-user-on-db-server)".
 
-<!-- CP-STEPS-START:wcdb-modify-rights-tabs -->
 Kliknij poniższe zakładki, aby wyświetlić kolejno każdy z **4** kroków.
 
 > [!tabs]
@@ -60,7 +59,6 @@ Kliknij poniższe zakładki, aby wyświetlić kolejno każdy z **4** kroków.
 >> ![Changing user rights](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/users-and-rights/changing-user-rights-db-alone.png){.thumbnail}
 >>
 >> Tutaj możesz zmienić uprawnienia użytkownika dla każdej bazy danych. W tym celu, dla każdej bazy danych, której dotyczy operacja, kliknij puste kółka odpowiadające uprawnieniom, które chcesz przedefiniować dla użytkownika. Zmiana zostanie zastosowana w ciągu kilku chwil.
-<!-- CP-STEPS-END:wcdb-modify-rights-tabs -->
 
 Poniżej znajduje się tabela podsumowująca możliwe typy zapytań do bazy danych w zależności od uprawnień przyznanych użytkownikowi:
 

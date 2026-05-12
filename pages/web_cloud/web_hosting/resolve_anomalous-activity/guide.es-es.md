@@ -79,7 +79,6 @@ Su sitio web realiza muchas conexiones externas (APIs, actualizaciones, llamadas
 >
 > Realice este paso **solo después de aplicar las recomendaciones anteriores** (diagnóstico, correcciones/actualizaciones, seguridad). Si se detecta nuevamente una actividad anormal en un próximo escaneo, las **medidas de seguridad se reactivarán automáticamente**. Recibirá una nueva notificación y los bloqueos permanecerán hasta la **resolución definitiva** de la situación.
 
-<!-- CP-STEPS-START:lift-security-measures -->
 Haga clic en las fichas siguientes para ver cada una de las **4** etapas.
 
 > [!tabs]
@@ -99,7 +98,6 @@ Haga clic en las fichas siguientes para ver cada una de las **4** etapas.
 >>
 >> Una **barrera de confirmación** aparece en la parte superior de la página: `Su alojamiento está siendo analizado para levantar las medidas de seguridad.` Siga el progreso haciendo clic en el enlace `Ver tareas en curso`{.action} o directamente desde la pestaña `Tareas en curso`{.action}.
 >>
-<!-- CP-STEPS-END:lift-security-measures -->
 
 > [!warning]
 >

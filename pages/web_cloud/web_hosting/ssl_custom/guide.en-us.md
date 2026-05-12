@@ -170,7 +170,6 @@ To check if this is the case, please refer to our guides below:
 
 Once you have met all of these requirements, you can start finalizing the installation of your custom SSL certificate on your web hosting plan.
 
-<!-- CP-STEPS-START:install-custom-ssl -->
 Click on the tabs below to view each of the **4** steps.
 
 > [!tabs]
@@ -205,7 +204,6 @@ Click on the tabs below to view each of the **4** steps.
 >> ![Order an SSL certificate](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ssl-certificates/import-your-own-ssl-certificate-window-completed.png){.thumbnail}
 >>
 >> Once you have completed the 3 forms, click `Confirm`{.action} to finish importing the custom SSL certificate to your web hosting plan.
-<!-- CP-STEPS-END:install-custom-ssl -->
 
 If the SSL certificate has been generated successfully by the SSL provider, and the requirements are met, a message will appear stating that the SSL certificate is being activated on your web hosting plan.
 
@@ -220,7 +218,6 @@ If the SSL certificate has been generated successfully by the SSL provider, and 
 
 The installation will take several minutes.
 
-<!-- CP-STEPS-START:verify-ssl-installation -->
 To verify that the installation is complete, click on the tabs below to view each of the **3** steps.
 
 > [!tabs]
@@ -241,7 +238,6 @@ To verify that the installation is complete, click on the tabs below to view eac
 >> When the content of the tab appears, check that each domain name and/or subdomain concerned is listed in the table with the certificate type SSL `Custom`.
 >>
 >> ![SSL certificate management panel](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ssl-certificates/tab-custom.png){.thumbnail}
-<!-- CP-STEPS-END:verify-ssl-installation -->
 
 Your custom SSL certificate is now installed and active. You can now use it with your web hosting and, for example, [enable HTTPS for your website](/pages/web_cloud/web_hosting/ssl-activate-https-website).
 

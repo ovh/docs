@@ -64,7 +64,6 @@ Para resolver esta anomalia, deverá:
 
 #### Verificar o endereço IP do alojamento
 
-<!-- CP-STEPS-START:check-hosting-ip -->
 As mensagens de erro mencionadas [acima](#objective) não significam necessariamente que o seu site está alojado numa das nossas [ofertas Web Cloud](/links/web/hosting). Por isso, verifique o endereço IP do servidor ao qual está ligado o seu [nome de domínio](/links/web/domains).
 
 Para encontrar o endereço IP do seu [alojamento OVHcloud](/links/web/hosting), clique nos separadores abaixo para visualizar cada uma das **2** etapas.
@@ -83,11 +82,9 @@ Para encontrar o endereço IP do seu [alojamento OVHcloud](/links/web/hosting), 
 >> ![Endereços IPv4 e IPv6](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-ipv4-and-ipv6.png){.thumbnail}
 >>
 >> Anote o endereço IPv4 e/ou IPv6 e continue lendo o guia.
-<!-- CP-STEPS-END:check-hosting-ip -->
 
 #### Verificar o endereço IP na zona DNS
 
-<!-- CP-STEPS-START:check-dns-zone-ip -->
 Agora tem de verificar que o endereço IP indicado na [zona DNS](/pages/web_cloud/domains/dns_zone_edit) corresponde ao do seu [alojamento Web Cloud](/links/web/hosting).
 
 Clique nos separadores abaixo para visualizar cada uma das **2** etapas.
@@ -104,7 +101,6 @@ Clique nos separadores abaixo para visualizar cada uma das **2** etapas.
 >> Anote o destino do registo de tipo `A` para o seu domínio:
 >>
 >> ![Destino do registo A na zona DNS](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/dashboard-entry-a.png){.thumbnail}
-<!-- CP-STEPS-END:check-dns-zone-ip -->
 
 #### Efetuar as ações necessárias
 
@@ -168,7 +164,6 @@ Se necessário, contacte o seu webmaster ou os [parceiros OVHcloud](/links/partn
 
 ### 2 - Verificar o certificado SSL do alojamento <a name="step2"></a>
 
-<!-- CP-STEPS-START:check-ssl-certificate -->
 Clique nos separadores abaixo para visualizar cada uma das **2** etapas.
 
 > [!tabs]
@@ -183,7 +178,6 @@ Clique nos separadores abaixo para visualizar cada uma das **2** etapas.
 >> No separador `Informações gerais`{.action}, verifique a parte `Certificado SSL`:
 >>
 >> ![Certificado SSL no separador de informações gerais](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/no-ssl-certificate.png){.thumbnail}
-<!-- CP-STEPS-END:check-ssl-certificate -->
 
 #### Cenário 1: o seu alojamento não contém um certificado SSL
 

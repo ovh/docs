@@ -52,7 +52,6 @@ Want your website to be accessible via your domain name? To do this, your domain
 
 ### Add a DNS A record for a domain name
 
-<!-- CP-STEPS-START:add-a-record-domain -->
 Click on the tabs below to view each of the **5** steps.
 
 > [!tabs]
@@ -77,7 +76,6 @@ Click on the tabs below to view each of the **5** steps.
 > **Step 5**
 >>
 >> Check the summary, then click `Confirm`{.action}. It takes up to **24** hours for the change to propagate fully over the DNS network.
-<!-- CP-STEPS-END:add-a-record-domain -->
 
 /// details | Click here for more information.
 
@@ -93,7 +91,6 @@ See our detailed guides:
 
 ### Add a DNS A record for a domain name subdomain
 
-<!-- CP-STEPS-START:add-a-record-subdomain -->
 Click on the tabs below to view each of the **5** steps.
 
 > [!tabs]
@@ -118,7 +115,6 @@ Click on the tabs below to view each of the **5** steps.
 > **Step 5**
 >>
 >> Check the summary, then click `Confirm`{.action}. It takes up to **24** hours for the change to propagate fully over the DNS network.
-<!-- CP-STEPS-END:add-a-record-subdomain -->
 
 /// details | Click here for more information.
 

@@ -60,7 +60,6 @@ No seu alojamento web OVHcloud, pode utilizar scripts para automatizar certas op
 
 Clique nos separadores abaixo para visualizar cada uma das **5** etapas.
 
-<!-- CP-STEPS-START:create-cron-task -->
 > [!tabs]
 > **Etapa 1**
 >>
@@ -121,13 +120,11 @@ Clique nos separadores abaixo para visualizar cada uma das **5** etapas.
 >> ![cron confirmation](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/cron/add-scheduling-step-3.png){.thumbnail}
 >>
 >> A tarefa estará pronta dentro de alguns minutos. Pode alterar todos os seus parâmetros ou eliminar a tarefa clicando em `...`{.action} na tabela de apresentação do seu painel de configuração OVHcloud.
-<!-- CP-STEPS-END:create-cron-task -->
 
 ### Modificar ou eliminar uma tarefa agendada
 
 Clique nos separadores abaixo para visualizar cada uma das **3** etapas.
 
-<!-- CP-STEPS-START:modify-delete-cron-task -->
 > [!tabs]
 > **Etapa 1**
 >>
@@ -144,7 +141,6 @@ Clique nos separadores abaixo para visualizar cada uma das **3** etapas.
 >> Na tabela que aparece, clique no botão `...`{.action} situado à direita da tarefa planeada em causa.
 >>
 >> Escolha entre os botões `Alterar`{.action} ou `Eliminar`{.action} em função da ação que pretende realizar na tarefa programada.
-<!-- CP-STEPS-END:modify-delete-cron-task -->
 
 ### Limitações das tarefas planificadas no seu alojamento web
 

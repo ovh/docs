@@ -30,7 +30,6 @@ Au cours de l'utilisation de vos services, vous pourriez avoir besoin du nom de 
 
 ## En pratique
 
-<!-- CP-STEPS-START:find-plan-name -->
 Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **2** étapes.
 
 > [!tabs]
@@ -47,7 +46,6 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **2*
 >> ![Plan](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-plan-pro.png){.thumbnail}
 >>
 >> Sous cette mention, vous retrouverez le nom de votre offre d'hébergement web (par exemple : Perso, Pro, Performance, etc.).
-<!-- CP-STEPS-END:find-plan-name -->
 
 ## Aller plus loin <a name="go-further"></a>
 

@@ -29,7 +29,6 @@ Podczas korzystania z hostingu może być konieczne poznanie numeru klastra i/lu
 
 ## W praktyce
 
-<!-- CP-STEPS-START:find-cluster-and-filer -->
 Kliknij poniższe zakładki, aby wyświetlić kolejne **2** kroki.
 
 > [!tabs]
@@ -44,7 +43,6 @@ Kliknij poniższe zakładki, aby wyświetlić kolejne **2** kroki.
 >> W ramce **Informacje ogólne** na stronie, która się wyświetla, pobierz numer klastra oznaczony jako **Klaster** (3 cyfry zawarte między `0` i `9`) oraz numer kolejki oznaczony jako **Serwer Filer**.
 >>
 >>![Numery klastra i pliku](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-cluster-and-filer.png){.thumbnail}
-<!-- CP-STEPS-END:find-cluster-and-filer -->
 
 ## Sprawdź również
 

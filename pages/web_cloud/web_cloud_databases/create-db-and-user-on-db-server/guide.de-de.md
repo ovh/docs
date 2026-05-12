@@ -29,7 +29,6 @@ In einer Datenbank (DB) können sogenannte dynamische Elemente, wie zum Beispiel
 
 ### Datenbank erstellen
 
-<!-- CP-STEPS-START:create-db-and-user-on-db-server_create-database -->
 Klicken Sie auf die unten stehenden Tabs, um die **4** Schritte nacheinander anzuzeigen.
 
 > [!tabs]
@@ -65,11 +64,9 @@ Klicken Sie auf die unten stehenden Tabs, um die **4** Schritte nacheinander anz
 >> Klicken Sie auf `Bestätigen`{.action}.
 >>
 >> ![web-cloud-databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/databases/add-database-confirmation.png){.thumbnail}
-<!-- CP-STEPS-END:create-db-and-user-on-db-server_create-database -->
 
 ### Benutzer erstellen
 
-<!-- CP-STEPS-START:create-db-and-user-on-db-server_create-user -->
 Um einen Datenbankserver von OVHcloud zu verwenden, erstellen Sie Benutzer mit spezifischen Rechten für die Verbindung mit einer Datenbank.
 
 Klicken Sie auf die unten stehenden Tabs, um die **4** Schritte nacheinander anzuzeigen.
@@ -94,11 +91,9 @@ Klicken Sie auf die unten stehenden Tabs, um die **4** Schritte nacheinander anz
 > **Schritt 4**
 >>
 >> Geben Sie einen "Benutzernamen" und ein "Passwort" ein und klicken Sie anschließend auf `Bestätigen`{.action}.
-<!-- CP-STEPS-END:create-db-and-user-on-db-server_create-user -->
 
 ### Verwaltung der Benutzerrechte
 
-<!-- CP-STEPS-START:create-db-and-user-on-db-server_manage-user-rights -->
 Um einem Benutzer die Durchführung von Aktionen auf einer Datenbank zu ermöglichen, müssen ihm Rechte zugewiesen werden.
 
 Klicken Sie auf die unten stehenden Tabs, um die **4** Schritte nacheinander anzuzeigen.
@@ -136,11 +131,9 @@ Klicken Sie auf die unten stehenden Tabs, um die **4** Schritte nacheinander anz
 >> > Die Segmentierung der oben genannten Rechte ist OVHcloud vorbehalten. So kann ein Benutzer mit der `Administrator`-Berechtigung **DDL** (Data Definition Language) und **DML** (Data Manipulation Language) verwenden, während ein Benutzer mit der Berechtigung `Lesen/Schreiben` nur **DML** (Data Manipulation Language) nutzen kann.
 >>
 >> ![web-cloud-databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/users-and-rights/changing-user-rights.png){.thumbnail}
-<!-- CP-STEPS-END:create-db-and-user-on-db-server_manage-user-rights -->
 
 ### Datenbank löschen
 
-<!-- CP-STEPS-START:create-db-and-user-on-db-server_delete-database -->
 > [!warning]
 >
 > Beim Löschen einer Datenbank auf einem Datenbankserver findet keine Überprüfung
@@ -167,7 +160,6 @@ Klicken Sie auf die unten stehenden Tabs, um die **3** Schritte nacheinander anz
 >> Klicken Sie auf die Schaltfläche `...`{.action} rechts neben der betreffenden Datenbank, dann auf `Die Datenbank löschen`{.action}.
 >>
 >> ![web-cloud-databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/databases/delete-the-database.png){.thumbnail}
-<!-- CP-STEPS-END:create-db-and-user-on-db-server_delete-database -->
 
 ## Weiterführende Informationen
 

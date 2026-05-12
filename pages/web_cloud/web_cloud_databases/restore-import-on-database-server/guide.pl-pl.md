@@ -52,7 +52,6 @@ W wyniku błędu bazy danych musisz mieć możliwość przywrócenia kopii zapas
 
 #### Przywrócenie istniejącej kopii zapasowej
 
-<!-- CP-STEPS-START:restore-backup -->
 Kliknij na poniższe karty, aby wyświetlić kolejno każdy z **4** kroków.
 
 > [!tabs]
@@ -81,11 +80,9 @@ Kliknij na poniższe karty, aby wyświetlić kolejno każdy z **4** kroków.
 >> > [!warning]
 >> >
 >> > Przywrócenie bazy danych wiąże się z nadpisaniem jej zawartości, a tym samym z potencjalną utratą danych. Jeśli nie masz pewności, co robisz, zalecamy uprzednie wykonanie kopii zapasowej.
-<!-- CP-STEPS-END:restore-backup -->
 
 #### Import lokalnej kopii zapasowej
 
-<!-- CP-STEPS-START:import-local-backup -->
 Kliknij na poniższe karty, aby wyświetlić kolejno każdy z **4** kroków.
 
 > [!tabs]
@@ -132,7 +129,6 @@ Kliknij na poniższe karty, aby wyświetlić kolejno każdy z **4** kroków.
 >> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/databases/database-import-existing-file-step-2.png){.thumbnail}
 >>
 >> Zaznacz, jeśli chcesz, **„Wyczyść aktualną bazę danych"** przed importem i **„Wyślij e-mail po zakończeniu importu"**, aby otrzymać informację o zakończeniu operacji na głównym adresie e-mail Twojego konta OVHcloud, po czym kliknij `Zatwierdź`{.action}.
-<!-- CP-STEPS-END:import-local-backup -->
 
 ### Import bazy danych poza Panelem klienta
 

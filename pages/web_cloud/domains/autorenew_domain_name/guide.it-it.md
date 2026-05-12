@@ -93,7 +93,6 @@ Se il rinnovo automatico è attivo, la modalità di pagamento deve essere valida
 
 ### Modifica la modalità di rinnovo dei domini
 
-<!-- CP-STEPS-START:modifica-modalita-rinnovo -->
 Clicca sulle schede qui sotto per visualizzare ciascuno dei **2** passaggi.
 
 > [!tabs]
@@ -118,11 +117,9 @@ Clicca sulle schede qui sotto per visualizzare ciascuno dei **2** passaggi.
 >> - Seleziona le righe corrispondenti nella tabella selezionando le caselle di controllo all’inizio della riga.
 >> - Clicca sul pulsante `Azioni`{.action} in alto a sinistra della tabella.
 >> - Seleziona `Attiva il pagamento automatico`{.action} o `Disattiva il pagamento automatico`{.action}.
-<!-- CP-STEPS-END:modifica-modalita-rinnovo -->
 
 ### Rinnova il tuo dominio prima della data di scadenza
 
-<!-- CP-STEPS-START:rinnova-prima-scadenza -->
 Clicca sulle schede qui sotto per visualizzare ciascuno dei **3** passaggi.
 
 > [!tabs]
@@ -144,7 +141,6 @@ Clicca sulle schede qui sotto per visualizzare ciascuno dei **3** passaggi.
 >>
 >> È possibile rinnovare il servizio in qualsiasi momento prima della sua scadenza e scegliere la durata di rinnovo.
 >> In questo caso, il periodo di validità sottoscritto sarà aggiunto a quello in corso. Il periodo di validità rimanente non andrà perso.
-<!-- CP-STEPS-END:rinnova-prima-scadenza -->
 
 ### Segui il rinnovo del tuo dominio
 
@@ -152,7 +148,6 @@ Una volta effettuato il rinnovo, il dominio verrà rinnovato il giorno prima del
 
 I dati visualizzati nel WHOIS saranno aggiornati, a conferma del corretto rinnovo del dominio.
 
-<!-- CP-STEPS-START:segui-rinnovo-dominio -->
 Per verificare lo stato del rinnovo del dominio, clicca sulle schede qui sotto per visualizzare ciascuno dei **2** passaggi.
 
 > [!tabs]
@@ -167,11 +162,9 @@ Per verificare lo stato del rinnovo del dominio, clicca sulle schede qui sotto p
 >> Nella sezione **Informazioni generali**, verifica lo stato del rinnovo sotto la voce **Stato del dominio**.
 >>
 >> Una volta effettuato il pagamento, comparirà la dicitura `Rinnovo in corso` fino al rinnovo effettivo del dominio presso il Registro.
-<!-- CP-STEPS-END:segui-rinnovo-dominio -->
 
 ### Disattiva il tuo dominio
 
-<!-- CP-STEPS-START:disattiva-dominio -->
 Clicca sulle schede qui sotto per visualizzare ciascuno dei **2** passaggi.
 
 > [!tabs]
@@ -186,7 +179,6 @@ Clicca sulle schede qui sotto per visualizzare ciascuno dei **2** passaggi.
 >> Clicca a destra della linea sul pulsante `...`{.action}, poi su `Disattivare il servizio`{.action}.
 >>
 >> Questa azione è consentita per i servizi attivati con il **rinnovo automatico**. Selezionando questa azione, il rinnovo e l’addebito automatico vengono disattivati per il servizio selezionato.
-<!-- CP-STEPS-END:disattiva-dominio -->
 
 > [!primary]
 >
@@ -196,7 +188,6 @@ Per maggiori informazioni, consulta la guida "**[Come disattivare i servizi OVHc
 
 ### Saldare la fattura di rinnovo di un dominio
 
-<!-- CP-STEPS-START:salda-fattura-rinnovo -->
 Clicca sulle schede qui sotto per visualizzare ciascuno dei **2** passaggi.
 
 > [!tabs]
@@ -216,7 +207,6 @@ Clicca sulle schede qui sotto per visualizzare ciascuno dei **2** passaggi.
 >> >
 >> > - Disponi di servizi con rinnovo automatico.
 >> > - Non hai salvato nessun metodo di pagamento che consenta di effettuare un prelievo per il pagamento delle tue fatture.
-<!-- CP-STEPS-END:salda-fattura-rinnovo -->
 
 ## FAQ
 
@@ -254,7 +244,6 @@ Una volta effettuato il rinnovo dal registro (circa un mese dopo il pagamento de
 
 I dati del WHOIS si aggiorneranno in seguito.
 
-<!-- CP-STEPS-START:faq-verifica-stato-rinnovo -->
 Per verificare lo stato del rinnovo del dominio, clicca sulle schede qui sotto per visualizzare ciascuno dei **2** passaggi.
 
 > [!tabs]
@@ -267,7 +256,6 @@ Per verificare lo stato del rinnovo del dominio, clicca sulle schede qui sotto p
 > **Passaggio 2**
 >>
 >> Nella sezione **Informazioni generali**, verifica lo stato del rinnovo sotto la voce **Stato del dominio**.
-<!-- CP-STEPS-END:faq-verifica-stato-rinnovo -->
 
 ///
 

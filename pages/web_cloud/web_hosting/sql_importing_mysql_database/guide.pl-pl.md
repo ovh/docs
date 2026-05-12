@@ -55,7 +55,6 @@ Przejdź do metody importu, która Cię interesuje opisanej w dalszej części d
 
 ### Przywracanie kopii zapasowej w Panelu klienta
 
-<!-- CP-STEPS-START:restore-backup-control-panel -->
 Aby wykonać tę operację, kliknij poniższe zakładki, aby wyświetlić kolejne **4** kroki.
 
 > [!tabs]
@@ -80,11 +79,9 @@ Aby wykonać tę operację, kliknij poniższe zakładki, aby wyświetlić kolejn
 >> Upewnij się, że informacje, które wyświetlają się w oknie są poprawne, a następnie kliknij `Zatwierdź`{.action}. Teraz zaczekaj, aż przywracanie kopii zapasowej się zakończy.
 >>
 >> ![import bazy danych ovh](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/restore-the-backup.png){.thumbnail}
-<!-- CP-STEPS-END:restore-backup-control-panel -->
 
 ### Import Twojej kopii zapasowej w Panelu klienta
 
-<!-- CP-STEPS-START:import-own-backup-control-panel -->
 Aby wykonać tę operację, kliknij poniższe zakładki, aby wyświetlić kolejne **5** kroki.
 
 > [!tabs]
@@ -129,11 +126,9 @@ Aby wykonać tę operację, kliknij poniższe zakładki, aby wyświetlić kolejn
 >> >
 >> > Przycisk `Użyj istniejącego pliku`{.action} umożliwia ponowny import danych już wcześniej wysłanych do narzędzia służącego do importu.
 >> >
-<!-- CP-STEPS-END:import-own-backup-control-panel -->
 
 ### Import za pomocą interfejsu phpMyAdmin
 
-<!-- CP-STEPS-START:import-phpmyadmin -->
 W celu przeprowadzenia operacji zaloguj się do phpMyAdmin. Kliknij poniższe zakładki, aby wyświetlić kolejne **3** kroki.
 
 > [!tabs]
@@ -150,7 +145,6 @@ W celu przeprowadzenia operacji zaloguj się do phpMyAdmin. Kliknij poniższe za
 >> Kliknij trzy kropki po prawej stronie odpowiedniej bazy danych, po czym kliknij `Dostęp do phpMyAdmin`{.action}.
 >>
 >> ![import bazy danych ovh](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/go-to-phpmyadmin.png){.thumbnail}
-<!-- CP-STEPS-END:import-phpmyadmin -->
 
 Po uzyskaniu dostępu do strony phpMyAdmin wprowadź informacje dotyczące bazy danych, po czym zaznacz na rozwijanym menu opcję dostępu do aktualnych danych bazy, następnie zaloguj się. Po zalogowaniu przejdź do zakładki `Import`{.action} i uzupełnij dane. Pamiętaj, że plik kopii zapasowej nie może przekraczać określonego rozmiaru.
 

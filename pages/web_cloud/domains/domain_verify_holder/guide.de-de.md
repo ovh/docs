@@ -53,7 +53,6 @@ Wenn Sie auf `Bestätigen Sie Ihre E-Mail-Adresse`{.action} klicken, wird eine n
 
 ### 2 - Korrigieren oder vervollständigen Sie die Kontaktdaten des Domaininhabers als Administrator
 
-<!-- CP-STEPS-START:fix-contact-info -->
 Klicken Sie auf die Tabs, um die **4** Schritte anzuzeigen.
 
 > [!tabs]
@@ -90,7 +89,6 @@ Klicken Sie auf die Tabs, um die **4** Schritte anzuzeigen.
 >> ![Inhaberinformationen](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/owner.png){.thumbnail}
 >>
 >> Weitere Informationen zum Inhaberwechsel finden Sie in unserer Anleitung: "[Domainname - Wie kann ich den Inhaber ändern?](/pages/web_cloud/domains/trade_domain)".
-<!-- CP-STEPS-END:fix-contact-info -->
 
 ### 3 - Was tun, wenn die E-Mail-Adresse des Inhaberkontakts nicht mehr zugänglich ist?
 
@@ -132,7 +130,6 @@ Für bestimmte Erweiterungen (z. B.: .fr, .it, .es) kann der Domainadministrator
 > Falls die Korrekturen im ersten Teil dieser Anleitung den Start eines Wechsels des Inhabers für die Domain erfordern, vollenden Sie den Wechsel des Inhabers **vor** der Fortsetzung der in dieser Anleitung beschriebenen Aktionen.
 >
 
-<!-- CP-STEPS-START:relaunch-verification -->
 Klicken Sie auf die Tabs, um die **4** Schritte anzuzeigen.
 
 > [!tabs]
@@ -161,7 +158,6 @@ Klicken Sie auf die Tabs, um die **4** Schritte anzuzeigen.
 >> Falls die Operation erfolgreich abgeschlossen wurde, wird die Zeile der verarbeiteten Operation nicht mehr angezeigt.
 >>
 >> Falls dies nicht der Fall ist, ist eine Korrektur der Kontaktdaten des Domaininhabers erforderlich. In diesem Fall befolgen Sie diese Anleitung erneut, um das Problem zu beheben.
-<!-- CP-STEPS-END:relaunch-verification -->
 
 ## Weiterführende Informationen
 

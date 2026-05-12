@@ -54,7 +54,6 @@ Aby zalogować się i korzystać z dostępu do Twojego hostingu przez SSH, będz
 
 ### 1 - Upewnij się, że dostęp SSH jest aktywny dla wybranego użytkownika SSH <a name="user-ssh-enablement"></a>
 
-<!-- CP-STEPS-START:check-ssh-access -->
 Kliknij poniższe zakładki, aby wyświetlić kolejne **3** kroki.
 
 > [!tabs]
@@ -85,11 +84,9 @@ Kliknij poniższe zakładki, aby wyświetlić kolejne **3** kroki.
 >> - 3: Sprawdź podsumowanie żądanej zmiany, następnie kliknij `Zatwierdź`{.action}.
 >>
 >> > Jeśli nie znajdujesz opcji aktywacji, sprawdź, czy [Twoja oferta hostingowa WWW OVHcloud](/links/web/hosting) posiada dostęp przez protokół SSH.
-<!-- CP-STEPS-END:check-ssh-access -->
 
 ### 2 - Pobierz informacje potrzebne do logowania przez SSH <a name="sshlogin"></a>
 
-<!-- CP-STEPS-START:retrieve-ssh-login -->
 Kliknij poniższe zakładki, aby wyświetlić kolejne **3** kroki.
 
 > [!tabs]
@@ -115,7 +112,6 @@ Kliknij poniższe zakładki, aby wyświetlić kolejne **3** kroki.
 >> |**Port połączenia z serwerem SSH**| Znajdź opcję `Port SSH`. Domyślnie numerem portu SSH jest `22`.|
 >> |**Aktywny użytkownik SSH**| W tabeli na dole strony odnajdziesz go w kolumnie `Login`.<br>Przypominamy, że ten użytkownik musi [posiadać aktywny dostęp SSH](#user-ssh-enable).|
 >> |**Hasło użytkownika SSH**| Jeśli nie pamiętasz hasła, kliknij przycisk `...`{.action} po prawej stronie linii odpowiadającej danemu użytkownikowi w tabeli na dole strony, a następnie `Zmień hasło`{.action}.|
-<!-- CP-STEPS-END:retrieve-ssh-login -->
 
 ### 3 - Zaloguj się przez SSH do przestrzeni dyskowej Twojego hostingu
 

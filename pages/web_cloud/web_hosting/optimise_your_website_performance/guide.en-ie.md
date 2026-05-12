@@ -103,7 +103,6 @@ You can find more details on this topic in the Step 5 below.
 
 Correlate the graphs of resource usage of your hosting (more information below) to find the origin of the delays and consult the logs at the dates of these peaks.
 
-<!-- CP-STEPS-START:access-stats-and-logs -->
 To access the statistics and logs, click on the tabs below to view each of the **3** steps.
 
 > [!tabs]
@@ -124,9 +123,7 @@ To access the statistics and logs, click on the tabs below to view each of the *
 >> Click the `View statistics`{.action} button to access the website visit statistics or `View logs`{.action} to view the logs available for your web hosting plan.
 >>
 >> ![logs](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/statistics-and-logs/tab.png){.thumbnail}
-<!-- CP-STEPS-END:access-stats-and-logs -->
 
-<!-- CP-STEPS-START:access-resource-charts -->
 To access the charts, click on the tabs below to view each of the **3** steps.
 
 > [!tabs]
@@ -156,7 +153,6 @@ To access the charts, click on the tabs below to view each of the **3** steps.
 >> - **FTP commands**: Displays the different FTP commands that have been used on the hosting. For example successful and unsuccessful login attempts, download, upload and deletion of files.
 >> - **SQL response time**: Displays the response time of the queries (visible only if you use a database).
 >> - **SQL requests**: Displays the amount of requests (visible only if you use a database).
-<!-- CP-STEPS-END:access-resource-charts -->
 
 ### 5 - Checking network requests
 

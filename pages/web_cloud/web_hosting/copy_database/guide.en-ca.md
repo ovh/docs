@@ -64,7 +64,6 @@ Depending on your situation, the path to your source database is different.
 
 **Click on your situation to view the content.**
 
-<!-- CP-STEPS-START:copy-from-startsql -->
 
 /// details | From a Start SQL database
 
@@ -120,10 +119,8 @@ Click on the tabs below to view each of the **6** steps.
 >> ![Ongoing tasks](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/copy-db-tool-ongoing-tasks.png){.thumbnail}
 
 ///
-<!-- CP-STEPS-END:copy-from-startsql -->
 
 
-<!-- CP-STEPS-START:copy-from-wcdb -->
 
 /// details | From a Web Cloud Databases server
 
@@ -179,7 +176,6 @@ Click on the tabs below to view each of the **6** steps.
 >> ![Ongoing tasks](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/copy-db-tool-ongoing-tasks.png){.thumbnail}
 
 ///
-<!-- CP-STEPS-END:copy-from-wcdb -->
 
 
 ### Configuring your website with a new database

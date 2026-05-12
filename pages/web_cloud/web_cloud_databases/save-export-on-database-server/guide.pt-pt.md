@@ -60,7 +60,6 @@ A sua base de dados pode conter um grande volume de informações essenciais par
 
 #### Realizar um backup manual
 
-<!-- CP-STEPS-START:save-manual -->
 Clique nos separadores abaixo para visualizar cada uma das **3** etapas.
 
 > [!tabs]
@@ -81,11 +80,9 @@ Clique nos separadores abaixo para visualizar cada uma das **3** etapas.
 >> Clique no botão `...`{.action} à direita da base de dados e, a seguir, em `Fazer backup agora`{.action}.
 >>
 >> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/databases/back-up-now.png){.thumbnail}
-<!-- CP-STEPS-END:save-manual -->
 
 #### Exportar um backup
 
-<!-- CP-STEPS-START:export-backup -->
 Clique nos separadores abaixo para visualizar cada uma das **4** etapas.
 
 > [!tabs]
@@ -110,7 +107,6 @@ Clique nos separadores abaixo para visualizar cada uma das **4** etapas.
 > **Etapa 4**
 >>
 >> Surge a lista dos backups disponíveis. Clique no botão `...`{.action} à direita do backup pretendido e, a seguir, em `Descarregar o backup`{.action}.
-<!-- CP-STEPS-END:export-backup -->
 
 ### Salvaguardar e exportar uma base de dados fora da Área de Cliente
 

@@ -178,7 +178,6 @@ Uma vez terminado o processo de transferência, pode gerir o seu nome de domíni
 >
 > Em função da situação e da nova data de expiração do seu nome de domínio, poderá ser necessário renovar o nome de domínio imediatamente após a transferência.
 
-<!-- CP-STEPS-START:check-domain-expiry -->
 Para verificar isto, clique nos separadores abaixo para visualizar cada uma das **2** etapas.
 
 > [!tabs]
@@ -191,7 +190,6 @@ Para verificar isto, clique nos separadores abaixo para visualizar cada uma das 
 > **Etapa 2**
 >>
 >> Na página apresentada, logo abaixo do nome de domínio, encontrará a data de renovação prevista com o **mês** e o **ano** de expiração.
-<!-- CP-STEPS-END:check-domain-expiry -->
 
 ## Quer saber mais?
 

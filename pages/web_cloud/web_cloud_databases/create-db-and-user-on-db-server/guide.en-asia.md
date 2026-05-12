@@ -29,7 +29,6 @@ A database (DB) is used to store what are known as dynamic elements, such as com
 
 ### Creating a database
 
-<!-- CP-STEPS-START:creating-a-database -->
 Click on the tabs below to view each of the **4** steps.
 
 > [!tabs]
@@ -65,13 +64,11 @@ Click on the tabs below to view each of the **4** steps.
 >> Click `Confirm`{.action}.
 >>
 >> ![web-cloud-databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/databases/add-database-confirmation.png){.thumbnail}
-<!-- CP-STEPS-END:creating-a-database -->
 
 ### Creating a user
 
 To use an OVHcloud database server, create users with specific rights to connect to a database.
 
-<!-- CP-STEPS-START:creating-a-user -->
 Click on the tabs below to view each of the **4** steps.
 
 > [!tabs]
@@ -94,13 +91,11 @@ Click on the tabs below to view each of the **4** steps.
 > **Step 4**
 >>
 >> Enter a "username" and a "password", then click `Confirm`{.action}.
-<!-- CP-STEPS-END:creating-a-user -->
 
 ### Managing user rights
 
 To allow a user to perform actions on a database, it is necessary to assign permissions to the user.
 
-<!-- CP-STEPS-START:managing-user-rights -->
 Click on the tabs below to view each of the **4** steps.
 
 > [!tabs]
@@ -136,7 +131,6 @@ Click on the tabs below to view each of the **4** steps.
 >> > The distribution of rights mentioned above is specific to OVHcloud. A user with `Administrator` rights can use **DDL** (Data Definition Language) and **DML** (Data Manipulation Language), while a user with `Read / Write` rights can only use **DML** (Data Manipulation Language).
 >>
 >> ![web-cloud-databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/users-and-rights/changing-user-rights.png){.thumbnail}
-<!-- CP-STEPS-END:managing-user-rights -->
 
 ### Deleting a database
 
@@ -148,7 +142,6 @@ Click on the tabs below to view each of the **4** steps.
 > a backup and download it before any deletion.
 >
 
-<!-- CP-STEPS-START:deleting-a-database -->
 Click on the tabs below to view each of the **3** steps.
 
 > [!tabs]
@@ -167,7 +160,6 @@ Click on the tabs below to view each of the **3** steps.
 >> Click the `...`{.action} button to the right of the database concerned, then on `Delete the database`{.action}.
 >>
 >> ![web-cloud-databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/databases/delete-the-database.png){.thumbnail}
-<!-- CP-STEPS-END:deleting-a-database -->
 
 ## Go further
 

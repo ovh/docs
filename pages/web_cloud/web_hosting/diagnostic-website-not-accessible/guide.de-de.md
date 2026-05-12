@@ -64,7 +64,6 @@ Wenn Ihre Website nicht erreichbar ist, können in Ihrem Browser mehrere Fehlerm
 > Daher empfehlen wir Ihnen dringend, die [automatische Verlängerung](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#in-der-praktischen-anwendung) für alle Ihre OVHcloud Abonnements zu aktivieren.
 >
 
-<!-- CP-STEPS-START:check-domain-renewal -->
 Um die Gültigkeit des Abonnements für Ihre Domain zu überprüfen, klicken Sie auf die Tabs, um die **3** Schritte anzuzeigen.
 
 > [!tabs]
@@ -81,7 +80,6 @@ Um die Gültigkeit des Abonnements für Ihre Domain zu überprüfen, klicken Sie
 > **Schritt 3**
 >>
 >> Nach dieser Verlängerung ist Ihre Website innerhalb von maximal 48 Stunden verfügbar.
-<!-- CP-STEPS-END:check-domain-renewal -->
 
 ### 2 - DNS Server überprüfen
 
@@ -89,7 +87,6 @@ Um die Gültigkeit Ihrer [DNS Server](/pages/web_cloud/domains/dns_server_edit) 
 
 **Klicken Sie auf das Szenario, das Ihrer Situation entspricht, um den Inhalt anzuzeigen.**
 
-<!-- CP-STEPS-START:check-dns-servers-scenario1 -->
 /// details | Szenario 1 - Keine Anomalien bei den DNS Servern
 
 Um die deklarierten DNS Server zu überprüfen, klicken Sie auf die Tabs, um die **3** Schritte anzuzeigen.
@@ -114,7 +111,6 @@ Um die deklarierten DNS Server zu überprüfen, klicken Sie auf die Tabs, um die
 >> ![srv-dns-ok](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/dashboard-entry-ns.png){.thumbnail}
 
 ///
-<!-- CP-STEPS-END:check-dns-servers-scenario1 -->
 
 /// details | Szenario 2 - Eine Warnung erscheint über der DNS Zone
 
@@ -140,7 +136,6 @@ Ihre Website wird dann innerhalb von maximal 48 Stunden verfügbar sein.
 
 ///
 
-<!-- CP-STEPS-START:fix-missing-ns-records -->
 /// details | Szenario 3 - In der DNS Zone wird kein Eintrag des Typs "NS" angezeigt
 
 Die **DNS-Zone** Ihrer Domain enthält keinen Eintrag vom Typ `NS`:
@@ -177,7 +172,6 @@ Klicken Sie auf die Tabs, um die **4** Schritte anzuzeigen.
 >> Ihre Website wird dann innerhalb von maximal 24 Stunden verfügbar sein.
 
 ///
-<!-- CP-STEPS-END:fix-missing-ns-records -->
 
 ### 3 - Die DNS Zone überprüfen <a name="step3"></a>
 
@@ -185,7 +179,6 @@ In diesem Schritt ermitteln Sie die IP-Adresse Ihres Hostings und fügen sie zu 
 
 Wenn Ihre Website nicht auf der OVHcloud Infrastruktur gehostet ist oder von einem anderen Anbieter verwaltet wird, kontaktieren Sie bitte den zuständigen Support.
 
-<!-- CP-STEPS-START:check-hosting-ip-for-dns -->
 Wenn Ihre Website auf einem unserer [Hosting-Angebote](/links/web/hosting) gehostet wird, klicken Sie auf die Tabs, um die **2** Schritte anzuzeigen.
 
 > [!tabs]
@@ -202,7 +195,6 @@ Wenn Ihre Website auf einem unserer [Hosting-Angebote](/links/web/hosting) gehos
 >> ![IPv4-IPv6](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-ipv4-and-ipv6.png){.thumbnail}
 >>
 >> Kopieren Sie die IPv4- und/oder IPv6-Adresse Ihrer Domain.
-<!-- CP-STEPS-END:check-hosting-ip-for-dns -->
 
 Tragen Sie diese dann in die [DNS-Zone](/pages/web_cloud/domains/dns_zone_edit) Ihrer Domain ein, indem Sie einen oder mehrere Einträge vom Typ `A` bearbeiten oder erstellen.
 

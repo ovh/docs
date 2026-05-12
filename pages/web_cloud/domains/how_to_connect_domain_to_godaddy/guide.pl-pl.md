@@ -56,7 +56,6 @@ Najpierw przygotuj hosting GoDaddy, postępując zgodnie z instrukcjami z [**tej
 > - Postępuj zgodnie z instrukcjami aż do kroku 10 i pobierz informacje dotyczące Twojej strony WWW, aby móc później zmodyfikować rekordy DNS OVHcloud.<br>
 > Poniższe instrukcje pomogą Ci łatwiej skonfigurować strefę DNS OVHcloud.
 
-<!-- CP-STEPS-START:configure-dns-records -->
 Kliknij poniższe karty, aby wyświetlić kolejno każdy z **5** kroków.
 
 > [!tabs]
@@ -129,7 +128,6 @@ Kliknij poniższe karty, aby wyświetlić kolejno każdy z **5** kroków.
 >> **3 - Modyfikacja:** Jeśli istnieje rekord "CNAME" dla subdomeny "www", kliknij przycisk `...`{.action}, a następnie kliknij `Zmień wpis`{.action}. Zastąp jedynie **Cel** wartością z interfejsu GoDaddy. Kliknij `Dalej`{.action} i zatwierdź.
 >>
 >> Jeśli nie istnieje żaden rekord "CNAME" dla subdomeny "www", kliknij `Dodaj wpis`{.action} w prawym górnym rogu, wybierz typ rekordu `CNAME`{.action}, wprowadź `www` w polu **Subdomena** i wartość z interfejsu GoDaddy w polu **Cel**. Kliknij `Dalej`{.action} i zatwierdź.
-<!-- CP-STEPS-END:configure-dns-records -->
 
 Strefa DNS jest teraz skonfigurowana tak, aby wskazywała na hosting GoDaddy.
 

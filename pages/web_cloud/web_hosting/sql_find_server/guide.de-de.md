@@ -32,7 +32,6 @@ Während der Nutzung Ihrer Dienste können Sie gelegentlich den Namen des SQL-Se
 
 ## In der praktischen Anwendung
 
-<!-- CP-STEPS-START:find-database-server -->
 Klicken Sie auf die Tabs, um die **3** Schritte anzuzeigen.
 
 > [!tabs]
@@ -62,7 +61,6 @@ Klicken Sie auf die Tabs, um die **3** Schritte anzuzeigen.
 >> >
 >> > - Die **Serveradresse** ist ein Zugangsidentifizierer, der spezifisch für Ihre Datenbank ist und es Ihrem Webseiten ermöglicht, sich mit dieser zu verbinden.
 >> > - Der **Server** ist die Infrastruktur, die Ihre Datenbank sowie andere Datenbanken hostet. Der Name des Servers hilft Ihnen dabei, zu prüfen, ob dieser von einem Wartungsvorgang oder einem Vorfall betroffen ist, der auf unserer Seite [Web Cloud Status](https://web-cloud.status-ovhcloud.com/) zu finden ist.
-<!-- CP-STEPS-END:find-database-server -->
 
 ## Weiterführende Informationen <a name="go-further"></a>
 

@@ -40,7 +40,6 @@ If you have ordered a Web Hosting plan without directly linking it to a domain n
 
 ### Activate your email addresses included with your web hosting plan
 
-<!-- CP-STEPS-START:activate-email -->
 
 > [!primary]
 >
@@ -75,12 +74,10 @@ Click on the tabs below to view each of the **3** steps.
 >
 > Please note: it may take a few minutes for the email option to be enabled. You will receive an email confirming that you have installed and enabled the MX Plan solution. This includes managing and configuring your email accounts.
 >
-<!-- CP-STEPS-END:activate-email -->
 
 
 ### Keeping your email addresses after your web hosting plan has expired
 
-<!-- CP-STEPS-START:keep-email-after-expiry -->
 
 If your web hosting plan is about to expire, you can request to keep your email addresses **before** its expiry date.
 
@@ -99,14 +96,12 @@ Click on the tabs below to view each of the **2** steps.
 >> Click the `...`{.action} button on the right, then `Detach my email option`{.action}.
 >>
 >> ![email-activation](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/detach-email-included-webhosting.png){.thumbnail}
-<!-- CP-STEPS-END:keep-email-after-expiry -->
 
 
 An MX solution will be offered for purchase. Once the order has been settled, your emails will continue to work after the Web Hosting plan is suspended.
  
 ### Deleting the email solution linked to your Web Hosting plan
 
-<!-- CP-STEPS-START:delete-email-solution -->
 
 You can permanently delete the email solution linked to your Web Hosting plan.
 
@@ -133,7 +128,6 @@ Click on the tabs below to view each of the **2** steps.
 >> > [!warning]
 >> >
 >> > To confirm the deletion of the email solution linked to your web hosting plan, you will be sent a validation link via email. You must click this link for the delete operation to be launched.
-<!-- CP-STEPS-END:delete-email-solution -->
 
 
 #### Special case - Deletion of the email solution linked to your web hosting plan (in order to link it to another domain name)

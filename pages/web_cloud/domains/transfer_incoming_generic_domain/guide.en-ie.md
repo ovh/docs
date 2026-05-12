@@ -177,7 +177,6 @@ Once the transfer procedure is complete, you can manage your domain name from th
 >
 > Depending on the situation and the new expiry date, a renewal of the domain name may be necessary right after the transfer.
 
-<!-- CP-STEPS-START:check-domain-expiry -->
 To check this, click on the tabs below to view each of the **2** steps.
 
 > [!tabs]
@@ -190,7 +189,6 @@ To check this, click on the tabs below to view each of the **2** steps.
 > **Step 2**
 >>
 >> On the page that appears, just below the domain name, you will find the planned renewal date with the **month** and **year** of expiry.
-<!-- CP-STEPS-END:check-domain-expiry -->
 
 ## Go further
 

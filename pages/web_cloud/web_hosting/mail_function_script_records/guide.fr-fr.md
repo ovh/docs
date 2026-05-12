@@ -41,7 +41,6 @@ Les e-mails automatisés sont des messages envoyés via des scripts. Généralem
 
 ### Présentation de la partie « Scripts e-mail »
 
-<!-- CP-STEPS-START:email-scripts-overview -->
 Pour accéder à la partie « Scripts e-mail », cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3** étapes.
 
 > [!tabs]
@@ -87,7 +86,6 @@ Pour accéder à la partie « Scripts e-mail », cliquez sur les onglets ci-dess
 >> - **Débloquer l'envoi** : débloque l'envoi des e-mails automatisés de votre hébergement web. Les e-mails présents dans la file d'attente seront également remis en distribution.
 >>
 >> Pour réaliser l'action souhaitée, cliquez sur le bouton correspondant puis sur `Valider`{.action}. Dans certains cas, l'action souhaitée peut nécessiter plusieurs dizaines de minutes pour être pleinement effective.
-<!-- CP-STEPS-END:email-scripts-overview -->
 
 > [!primary]
 >
@@ -146,7 +144,6 @@ Cet état survient lorsque :
 - trop d'e-mails sont retournés en erreur ;
 - vous avez vous-même désactivé la fonctionnalité depuis votre [espace client OVHcloud](/links/manager).
 
-<!-- CP-STEPS-START:resolve-disabled-status -->
 Pour débloquer la situation, cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3** étapes.
 
 > [!tabs]
@@ -161,13 +158,11 @@ Pour débloquer la situation, cliquez sur les onglets ci-dessous pour afficher s
 > **Étape 3**
 >>
 >> Cliquez sur `Débloquer l'envoi`{.action} puis patientez quelques minutes le temps que le service d'envoi soit de nouveau actif.
-<!-- CP-STEPS-END:resolve-disabled-status -->
 
 #### L'état « Bounce »
 
 Cet état survient lorsqu'un certain pourcentage de vos e-mails envoyés automatiquement est revenu en erreur.
 
-<!-- CP-STEPS-START:resolve-bounce-status -->
 Pour débloquer la situation, cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3** étapes.
 
 > [!tabs]
@@ -185,7 +180,6 @@ Pour débloquer la situation, cliquez sur les onglets ci-dessous pour afficher s
 >>
 >> - Si vous cliquez sur `Débloquer l'envoi`{.action}, l'état du service passera en *« Force »*. Le ratio **e-mails retournés en erreur / nombre total d'envoi d'e-mails envoyés** autorisé avant un blocage sera doublé. L'envoi sera de nouveau opérationnel quelques minutes après le déblocage.
 >> - Si vous cliquez sur `Purger les e-mails`{.action}, cela effacera tous les e-mails de la file d'attente et l'état du service repassera en *« Activé »* sans doubler le ratio.
-<!-- CP-STEPS-END:resolve-bounce-status -->
 
 #### L'état « SPAM »
 
@@ -201,7 +195,6 @@ Trois cas de figure sont possibles par rapport à cette situation :
 
 Pour corriger cette situation, vous devez sécuriser l'ensemble des scripts en capacité d'émettre des e-mails depuis votre hébergement, à l'aide d'un système de type « Captcha ».
 
-<!-- CP-STEPS-START:resolve-spam-case-1 -->
 Rendez-vous ensuite dans la partie « Scripts e-mail » de votre hébergement. Pour cela, cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3** étapes.
 
 > [!tabs]
@@ -216,7 +209,6 @@ Rendez-vous ensuite dans la partie « Scripts e-mail » de votre hébergement. P
 > **Étape 3**
 >>
 >> Cliquez sur `Purger les e-mails`{.action}, cela effacera tous les e-mails de la file d'attente et l'état du service repassera en *« Activé »*. Une purge est obligatoire dans ce cas pour effacer les spam en attente d'envoi.
-<!-- CP-STEPS-END:resolve-spam-case-1 -->
 
 - **Cas n°2 : injection de fichiers malveillants dans votre hébergement** :
 
@@ -230,7 +222,6 @@ Pour corriger cette situation, vous devez effectuer au moins les actions suivant
 Si vous utilisez un CMS, privilégiez l'utilisation de plugin(s)/thème(s) « officiel(s) ».
 Mettez à jour le CMS, les plugins et le thème associés le plus régulièrement possible pour éviter que cela se reproduise.
 
-<!-- CP-STEPS-START:resolve-spam-case-2 -->
 Une fois votre hébergement sécurisé, cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3** étapes.
 
 > [!tabs]
@@ -245,7 +236,6 @@ Une fois votre hébergement sécurisé, cliquez sur les onglets ci-dessous pour 
 > **Étape 3**
 >>
 >> Cliquez sur `Purger les e-mails`{.action}, cela effacera tous les e-mails de la file d'attente et l'état du service repassera en *« Activé »*.
-<!-- CP-STEPS-END:resolve-spam-case-2 -->
 
 Une purge est obligatoire dans ce cas pour effacer les spam en attente d'envoi.
 

@@ -53,7 +53,6 @@ Para se ligar e utilizar o acesso SSH do seu alojamento web, precisará dos segu
 
 ### 1 - Assegure-se de que o acesso SSH está ativo para o utilizador SSH escolhido <a name="user-ssh-enablement"></a>
 
-<!-- CP-STEPS-START:check-ssh-access -->
 Clique nos separadores abaixo para visualizar cada uma das **3** etapas.
 
 > [!tabs]
@@ -84,11 +83,9 @@ Clique nos separadores abaixo para visualizar cada uma das **3** etapas.
 >> - 3: Verifique o resumo da modificação solicitada e clique em `Validar`{.action}.
 >>
 >> > Se não conseguir proceder à ativação, certifique-se de que a [oferta de alojamento web da OVHcloud](/links/web/hosting) beneficia de um acesso SSH.
-<!-- CP-STEPS-END:check-ssh-access -->
 
 ### 2 - Obtenha as informações necessárias para se ligar em SSH <a name="sshlogin"></a>
 
-<!-- CP-STEPS-START:retrieve-ssh-login -->
 Clique nos separadores abaixo para visualizar cada uma das **3** etapas.
 
 > [!tabs]
@@ -114,7 +111,6 @@ Clique nos separadores abaixo para visualizar cada uma das **3** etapas.
 >> |**Porta de ligação ao servidor SSH**| Registe a menção `Porta SSH`. Por predefinição, o número da porta SSH é o `22`.|
 >> |**Utilizador SSH ativo**| No quadro situado no final da página, encontre-o na coluna `Nome de utilizador`.<br>Lembrete: este utilizador deve [dispor de um acesso SSH ativo](#user-ssh-enablement).|
 >> |**Palavra-passe do utilizador SSH**| Se se esquecer desta palavra-passe, clique no botão `...`{.action} à direita da linha correspondente ao utilizador em causa na tabela situada no final da página, e depois em `Alterar palavra-passe`{.action}.|
-<!-- CP-STEPS-END:retrieve-ssh-login -->
 
 ### 3 - Ligue-se ao espaço de armazenamento do seu alojamento web em SSH
 

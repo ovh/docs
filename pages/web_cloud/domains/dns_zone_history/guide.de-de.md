@@ -60,7 +60,6 @@ Die DNS-Verwaltung wird durch den Versionsverlauf Ihrer DNS-Zonen vereinfacht.
 
 **Klicken Sie auf die gewünschte Aktion, um den Inhalt anzuzeigen.**
 
-<!-- CP-STEPS-START:view-dns-zone -->
 /// details | Eine DNS-Zone anzeigen
 
 Klicken Sie auf die unten stehenden Tabs, um die **4** Schritte nacheinander anzuzeigen.
@@ -97,9 +96,7 @@ Klicken Sie auf die unten stehenden Tabs, um die **4** Schritte nacheinander anz
 >> Klicken Sie auf `Schließen`{.action}, um zur Hauptseite "Versionsverlauf der DNS-Zone" zurückzukehren.
 
 ///
-<!-- CP-STEPS-END:view-dns-zone -->
 
-<!-- CP-STEPS-START:download-dns-zone -->
 /// details | Eine DNS-Zone herunterladen
 
 Klicken Sie auf die unten stehenden Tabs, um die **3** Schritte nacheinander anzuzeigen.
@@ -130,9 +127,7 @@ Klicken Sie auf die unten stehenden Tabs, um die **3** Schritte nacheinander anz
 >> Die DNS-Zone wird im .txt-Format heruntergeladen.
 
 ///
-<!-- CP-STEPS-END:download-dns-zone -->
 
-<!-- CP-STEPS-START:restore-dns-zone -->
 /// details | Eine DNS-Zone wiederherstellen
 
 Klicken Sie auf die unten stehenden Tabs, um die **4** Schritte nacheinander anzuzeigen.
@@ -175,9 +170,7 @@ Klicken Sie auf die unten stehenden Tabs, um die **4** Schritte nacheinander anz
 > Das Ändern oder Wiederherstellen einer DNS-Zone führt zu einer Propagationsverzögerung von **4** bis **24** Stunden, bis die Änderung im DNS-Netzwerk vollständig berücksichtigt wird.
 
 ///
-<!-- CP-STEPS-END:restore-dns-zone -->
 
-<!-- CP-STEPS-START:compare-dns-zones -->
 /// details | Zwei DNS-Zonen vergleichen
 
 Klicken Sie auf die unten stehenden Tabs, um die **4** Schritte nacheinander anzuzeigen.
@@ -218,7 +211,6 @@ Klicken Sie auf die unten stehenden Tabs, um die **4** Schritte nacheinander anz
 >> ![Details zum Vergleich zweier DNS-Zonen](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/compare-dns-zone-details.png){.thumbnail}
 
 ///
-<!-- CP-STEPS-END:compare-dns-zones -->
 
 ## Weiterführende Informationen
 

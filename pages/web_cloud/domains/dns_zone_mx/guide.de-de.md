@@ -79,7 +79,6 @@ Diese Werte gelten für alle Angebote außer [Private Exchange](/pages/web_cloud
 
 Diese MX-Einträge müssen in der DNS-Zone Ihres Domainnamens konfiguriert werden, wenn Sie einen OVHcloud E-Mail-Dienst nutzen.
 
-<!-- CP-STEPS-START:configure-mx-record -->
 ### MX-Eintrag in einer OVHcloud DNS-Zone konfigurieren
 
 Klicken Sie auf die Tabs, um die **5** Schritte nacheinander anzuzeigen.
@@ -121,7 +120,6 @@ Klicken Sie auf die Tabs, um die **5** Schritte nacheinander anzuzeigen.
 > [!primary]
 >
 > Jede Änderung erfordert eine Propagationszeit zwischen 4 und 24 Stunden, bis sie voll wirksam ist.
-<!-- CP-STEPS-END:configure-mx-record -->
 
 ## Weiterführende Informationen
 

@@ -29,7 +29,6 @@ In dieser Anleitung erfahren Sie, wie Sie die Statistiken und Logs einsehen, die
 
 ### Die CDN-Statistiken anzeigen
 
-<!-- CP-STEPS-START:viewing-cdn-statistics -->
 Klicken Sie auf die Tabs, um die **4** Schritte anzuzeigen.
 
 > [!tabs]
@@ -60,11 +59,9 @@ Klicken Sie auf die Tabs, um die **4** Schritte anzuzeigen.
 >> Sie sehen nun die Statistiken des CDN für Ihre Domain.
 >>
 >> Weitere Informationen finden Sie in unserer Anleitung „[Webhosting - Statistiken und Logs einer Website einsehen](/pages/web_cloud/web_hosting/logs_and_statistics)”.
-<!-- CP-STEPS-END:viewing-cdn-statistics -->
 
 ### Die Logs des CDN anzeigen
 
-<!-- CP-STEPS-START:view-cdn-logs -->
 Klicken Sie auf die Tabs, um die **4** Schritte anzuzeigen.
 
 > [!tabs]
@@ -108,7 +105,6 @@ Klicken Sie auf die Tabs, um die **4** Schritte anzuzeigen.
 >> Klicken Sie in der angezeigten Tabelle auf den Button `Download`{.action} rechts neben der betreffenden Domain oder Subdomain, um die CDN Logs abzurufen.
 >>
 >> Weitere Informationen finden Sie in unserer Anleitung „[Webhosting - Statistiken und Logs einer Website einsehen](/pages/web_cloud/web_hosting/logs_and_statistics)”.
-<!-- CP-STEPS-END:view-cdn-logs -->
 
 ## Weiterführende Informationen
 

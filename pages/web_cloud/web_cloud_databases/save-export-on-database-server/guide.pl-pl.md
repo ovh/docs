@@ -60,7 +60,6 @@ Baza danych może zawierać dużą liczbę informacji niezbędnych dla Twojej st
 
 #### Wykonanie ręcznej kopii zapasowej
 
-<!-- CP-STEPS-START:save-manual -->
 Kliknij poniższe zakładki, aby wyświetlić kolejno każdy z **3** kroków.
 
 > [!tabs]
@@ -81,11 +80,9 @@ Kliknij poniższe zakładki, aby wyświetlić kolejno każdy z **3** kroków.
 >> Kliknij przycisk `...`{.action} po prawej stronie bazy danych, a następnie `Zapisz teraz`{.action}.
 >>
 >> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/databases/back-up-now.png){.thumbnail}
-<!-- CP-STEPS-END:save-manual -->
 
 #### Eksport kopii zapasowej
 
-<!-- CP-STEPS-START:export-backup -->
 Kliknij poniższe zakładki, aby wyświetlić kolejno każdy z **4** kroków.
 
 > [!tabs]
@@ -110,7 +107,6 @@ Kliknij poniższe zakładki, aby wyświetlić kolejno każdy z **4** kroków.
 > **Krok 4**
 >>
 >> Pojawi się lista dostępnych kopii zapasowych. Kliknij przycisk `...`{.action} po prawej stronie wybranej kopii zapasowej, a następnie `Pobierz kopię zapasową`{.action}.
-<!-- CP-STEPS-END:export-backup -->
 
 ### Tworzenie kopii zapasowych i eksportowanie bazy danych poza Panelem klienta
 

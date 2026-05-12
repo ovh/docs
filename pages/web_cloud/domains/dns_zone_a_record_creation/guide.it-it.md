@@ -52,7 +52,6 @@ Vuoi che il tuo sito sia accessibile tramite il tuo dominio? Per fare ciò, il d
 
 ### Aggiungere un record DNS di tipo A per un dominio
 
-<!-- CP-STEPS-START:add-a-record-domain -->
 Clicca sulle schede qui sotto per visualizzare i **5** step in sequenza.
 
 > [!tabs]
@@ -77,7 +76,6 @@ Clicca sulle schede qui sotto per visualizzare i **5** step in sequenza.
 > **Step 5**
 >>
 >> Verifica il riepilogo e clicca su `Conferma`{.action}. Attendi fino a **24** ore affinché la propagazione dell’aggiunta sulla rete DNS sia pienamente effettiva.
-<!-- CP-STEPS-END:add-a-record-domain -->
 
 /// details | Per ulteriori informazioni, fare clic qui.
 
@@ -93,7 +91,6 @@ Consulta le nostre guide dettagliate:
 
 ### Aggiungere un record DNS di tipo A per il sottodominio di un dominio
 
-<!-- CP-STEPS-START:add-a-record-subdomain -->
 Clicca sulle schede qui sotto per visualizzare i **5** step in sequenza.
 
 > [!tabs]
@@ -118,7 +115,6 @@ Clicca sulle schede qui sotto per visualizzare i **5** step in sequenza.
 > **Step 5**
 >>
 >> Verifica il riepilogo e clicca su `Conferma`{.action}. Attendi fino a **24** ore affinché la propagazione dell’aggiunta sulla rete DNS sia pienamente effettiva.
-<!-- CP-STEPS-END:add-a-record-subdomain -->
 
 /// details | Per ulteriori informazioni, fare clic qui.
 

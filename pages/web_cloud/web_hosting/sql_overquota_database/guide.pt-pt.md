@@ -65,7 +65,6 @@ A primeira etapa consiste em identificar a ou as tabelas volumosas presentes na 
 
 Recupere as informações de acesso à sua base de dados diretamente no ficheiro de configuração do seu website. Realize esta ação através da **parte 1** do nosso guia sobre [a alteração da palavra-passe de uma base de dados](/pages/web_cloud/web_hosting/sql_change_password).
 
-<!-- CP-STEPS-START:connect-phpmyadmin -->
 Para se conectar ao banco de dados via phpMyAdmin, clique nos separadores abaixo para visualizar cada uma das **4** etapas.
 
 > [!tabs]
@@ -96,7 +95,6 @@ Para se conectar ao banco de dados via phpMyAdmin, clique nos separadores abaixo
 >> ![phpMyAdmin Login interface](/pages/assets/screens/other/web-tools/phpmyadmin/pma-interface-login.png){.thumbnail}
 >>
 >> Introduza as informações de acesso à sua base de dados e depois clique em `Entrada`{.action}.
-<!-- CP-STEPS-END:connect-phpmyadmin -->
 
 #### 1.2 - Pesquisar as tabelas mais volumosas <a name="step1.2"></a>
 
@@ -236,7 +234,6 @@ No entanto, pode forçar a sua passagem pelos seus serviços para acelerar o pro
 
 #### Recalcular o limite para uma base de dados incluída na sua oferta de alojamento web
 
-<!-- CP-STEPS-START:recalculate-quota-web-hosting -->
 Clique nos separadores abaixo para visualizar cada uma das **4** etapas.
 
 > [!tabs]
@@ -267,11 +264,9 @@ Clique nos separadores abaixo para visualizar cada uma das **4** etapas.
 >> Depois de iniciada, a operação pode demorar alguns minutos. Quando esta operação terminar, o estado "READ ONLY" da base de dados desaparece.
 >> A sua base de dados estará novamente plenamente operacional.
 >>
-<!-- CP-STEPS-END:recalculate-quota-web-hosting -->
 
 #### Recalcular o limite para uma base de dados alojada numa solução Web Cloud Databases
 
-<!-- CP-STEPS-START:recalculate-quota-web-cloud-databases -->
 Clique nos separadores abaixo para visualizar cada uma das **2** etapas.
 
 > [!tabs]
@@ -290,7 +285,6 @@ Clique nos separadores abaixo para visualizar cada uma das **2** etapas.
 >> Depois de iniciada, a operação pode demorar alguns minutos. Quando esta operação terminar, o estado "READ ONLY" da base de dados desaparece.
 >> A sua base de dados estará novamente plenamente operacional.
 >>
-<!-- CP-STEPS-END:recalculate-quota-web-cloud-databases -->
 
 ## Quer saber mais? <a name="go-further"></a>
 

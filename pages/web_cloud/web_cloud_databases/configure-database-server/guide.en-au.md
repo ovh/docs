@@ -43,7 +43,6 @@ Web Cloud Databases database servers allow you to modify the global settings of 
 
 ### View general information on your database server
 
-<!-- CP-STEPS-START:view-general-information -->
 Click on the tabs below to view each of the **2** steps.
 
 > [!tabs]
@@ -71,7 +70,6 @@ Click on the tabs below to view each of the **2** steps.
 >> |Host|Shows the OVHcloud server in which your instance was created. This information is inherent to the OVHcloud infrastructure and can be used in our communications relating to [OVHcloud incidents](https://web-cloud.status-ovhcloud.com/).|
 >>
 >> ![General information](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/general-information/general-information.png){.thumbnail}
-<!-- CP-STEPS-END:view-general-information -->
 
 ### Manage your access
 
@@ -83,7 +81,6 @@ Your Web Cloud Databases is accessible from your OVHcloud web hosting plans and/
 
 To access your Web Cloud Databases instance, you must specify the IP addresses or IP ranges authorised to connect to your databases.
 
-<!-- CP-STEPS-START:authorise-ip-address -->
 Click on the tabs below to view each of the **3** steps.
 
 > [!tabs]
@@ -104,13 +101,11 @@ Click on the tabs below to view each of the **3** steps.
 >> Enter the IP address or mask to authorise in `IP/mask`{.action} and optionally add a description. Choose whether to grant access to databases only or also to SFTP, then click `Confirm`{.action}.
 >>
 >> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/authorized-ips/add-an-ip-address-mask-confirmation.png){.thumbnail}
-<!-- CP-STEPS-END:authorise-ip-address -->
 
 ///
 
 /// details | Authorise connections to OVHcloud web hosting plans
 
-<!-- CP-STEPS-START:authorise-web-hosting-connections -->
 Click on the tabs below to view each of the **3** steps.
 
 > [!tabs]
@@ -129,7 +124,6 @@ Click on the tabs below to view each of the **3** steps.
 >> Tick `Authorise OVHcloud web hosting plans to access the database`{.action}.
 >>
 >> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/authorized-ips/tab-empty.png){.thumbnail}
-<!-- CP-STEPS-END:authorise-web-hosting-connections -->
 
 ///
 
@@ -144,7 +138,6 @@ Click on the tabs below to view each of the **3** steps.
 > **This action is irreversible, and the Web Cloud Databases plan will then be billed separately from your Performance web hosting plan.**
 >
 
-<!-- CP-STEPS-START:modify-plan-ram -->
 Click on the tabs below to view each of the **3** steps.
 
 > [!tabs]
@@ -173,7 +166,6 @@ Click on the tabs below to view each of the **3** steps.
 >> > [!warning]
 >> >
 >> > If you currently have a free Web Cloud Databases with your Performance hosting plan, modifying the plan will mean it is no longer free.
-<!-- CP-STEPS-END:modify-plan-ram -->
 
 ### Modify my database server configuration
 
@@ -181,7 +173,6 @@ Click on the tabs below to view each of the **3** steps.
 
 /// details | MySQL and MariaDB instance
 
-<!-- CP-STEPS-START:configure-mysql-mariadb -->
 Click on the tabs below to view each of the **3** steps.
 
 > [!tabs]
@@ -238,13 +229,11 @@ Click on the tabs below to view each of the **3** steps.
 >
 > Any changes require a restart of the database server.
 >
-<!-- CP-STEPS-END:configure-mysql-mariadb -->
 
 ///
 
 /// details | PostgreSQL instance
 
-<!-- CP-STEPS-START:configure-postgresql -->
 Click on the tabs below to view each of the **3** steps.
 
 > [!tabs]
@@ -278,13 +267,11 @@ Click on the tabs below to view each of the **3** steps.
 >> You can also enable extensions for your databases. To do this, click on the `Databases`{.action} tab, then on the table icon for your database in the **"Extensions"** column.
 >>
 >> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/databases/extensions.png){.thumbnail}
-<!-- CP-STEPS-END:configure-postgresql -->
 
 ///
 
 ### Change the MySQL, PostgreSQL or MariaDB version of the database server
 
-<!-- CP-STEPS-START:change-db-version -->
 Click on the tabs below to view each of the **3** steps.
 
 > [!tabs]
@@ -303,7 +290,6 @@ Click on the tabs below to view each of the **3** steps.
 >> To modify this version, click `Update version`{.action}.
 >>
 >> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/general-information/postgre-12-update-version.png){.thumbnail}
-<!-- CP-STEPS-END:change-db-version -->
 
 /// details | How do I know the exact version of PostgreSQL I am using?
 
@@ -349,7 +335,6 @@ To access the logs for your Web Cloud Databases solution, please refer to our gu
 
 /// details | Monitor RAM usage
 
-<!-- CP-STEPS-START:monitor-ram-usage -->
 Click on the tabs below to view each of the **2** steps.
 
 > [!tabs]
@@ -364,7 +349,6 @@ Click on the tabs below to view each of the **2** steps.
 >> Click on the `Metrics`{.action} tab. You will find the graph **"RAM usage statistics"**.
 >>
 >> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/metrics/ram-memory-usage-statistics.png){.thumbnail}
-<!-- CP-STEPS-END:monitor-ram-usage -->
 
 ///
 
@@ -372,7 +356,6 @@ Click on the tabs below to view each of the **2** steps.
 
 This graph allows you to track, over the last 24 hours, the load of connections per minute on your database server.
 
-<!-- CP-STEPS-START:monitor-connections-per-minute -->
 Click on the tabs below to view each of the **2** steps.
 
 > [!tabs]
@@ -387,7 +370,6 @@ Click on the tabs below to view each of the **2** steps.
 >> Click on the `Metrics`{.action} tab. You will find the graph **"Statistics for total connections per minute"**.
 >>
 >> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/metrics/statistics-for-total-connections-per-minute.png){.thumbnail}
-<!-- CP-STEPS-END:monitor-connections-per-minute -->
 
 ///
 

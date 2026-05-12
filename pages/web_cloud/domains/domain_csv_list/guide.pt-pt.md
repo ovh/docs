@@ -27,7 +27,6 @@ Deseja recuperar a lista de todos os nomes de domínio presentes na sua conta de
 
 ## Instruções
 
-<!-- CP-STEPS-START:export-csv -->
 Clique nos separadores abaixo para visualizar cada uma das **3** etapas.
 
 > [!tabs]
@@ -56,7 +55,6 @@ Clique nos separadores abaixo para visualizar cada uma das **3** etapas.
 >> ![Export domains in CSV format step 2 done](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/export-csv/export-domains-in-csv-format-step-2b.png){.thumbnail}
 >>
 >> Se o download do ficheiro CSV não tiver sido iniciado automaticamente, clique no link `descarregá-lo manualmente`{.action} para o obter.
-<!-- CP-STEPS-END:export-csv -->
 
 ## Quer saber mais?
  

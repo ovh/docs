@@ -29,7 +29,6 @@ OVHcloud bietet Ihnen die Option [DNS Anycast](/links/web/domains-options-anycas
 
 ## In der praktischen Anwendung
 
-<!-- CP-STEPS-START:enable-anycast -->
 Klicken Sie auf die Tabs, um die **4** Schritte anzuzeigen.
 
 > [!tabs]
@@ -63,7 +62,6 @@ Klicken Sie auf die Tabs, um die **4** Schritte anzuzeigen.
 >> Klicken Sie in der grün hervorgehobenen Nachricht auf den Button `Bestellschein`{.action}, um zum Bestellschein für die Aktivierung der DNS Anycast Option weitergeleitet zu werden.
 >>
 >> Sobald Sie auf dem Bestellschein sind, können Sie mit einer Zahlungsart fortfahren, um die Bearbeitung der Bestellung abzuschließen.
-<!-- CP-STEPS-END:enable-anycast -->
 
 Die Aktivierung der DNS Anycast Option kann einige Minuten dauern.
 

@@ -63,7 +63,6 @@ Je nach Ihrer Ausgangslage ist der Zugriffspfad zur Quelldatenbank unterschiedli
 
 **Klicken Sie auf die passende Situation, um den Inhalt anzuzeigen.**
 
-<!-- CP-STEPS-START:copy-from-startsql -->
 /// details | Von einer Start SQL Datenbank
 
 Klicken Sie auf die Tabs, um die **6** Schritte anzuzeigen.
@@ -118,9 +117,7 @@ Klicken Sie auf die Tabs, um die **6** Schritte anzuzeigen.
 >> ![Aktuelle Tasks](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/copy-db-tool-ongoing-tasks.png){.thumbnail}
 
 ///
-<!-- CP-STEPS-END:copy-from-startsql -->
 
-<!-- CP-STEPS-START:copy-from-wcdb -->
 /// details | Von einem Web Cloud Databases Server
 
 Klicken Sie auf die Tabs, um die **6** Schritte anzuzeigen.
@@ -175,7 +172,6 @@ Klicken Sie auf die Tabs, um die **6** Schritte anzuzeigen.
 >> ![Aktuelle Tasks](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/copy-db-tool-ongoing-tasks.png){.thumbnail}
 
 ///
-<!-- CP-STEPS-END:copy-from-wcdb -->
 
 ### Konfiguration Ihrer Website mit einer neuen Datenbank
 

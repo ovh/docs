@@ -68,7 +68,6 @@ Los mensajes de error mencionados [anteriormente](#objective) no significan nece
 
 Para encontrar la dirección IP de su [alojamiento OVHcloud](/links/web/hosting), haga clic en las fichas siguientes para ver cada una de las **2** etapas.
 
-<!-- CP-STEPS-START:check-hosting-ip -->
 > [!tabs]
 > **Etapa 1**
 >>
@@ -83,7 +82,6 @@ Para encontrar la dirección IP de su [alojamiento OVHcloud](/links/web/hosting)
 >> ![Direcciones IPv4 e IPv6](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-ipv4-and-ipv6.png){.thumbnail}
 >>
 >> Anote la dirección IPv4 y/o IPv6, y continúe leyendo la guía.
-<!-- CP-STEPS-END:check-hosting-ip -->
 
 #### Verificar la dirección IP en la zona DNS
 
@@ -91,7 +89,6 @@ Compruebe que la dirección IP indicada en la [zona DNS](/pages/web_cloud/domain
 
 Haga clic en las fichas siguientes para ver cada una de las **2** etapas.
 
-<!-- CP-STEPS-START:check-dns-zone-ip -->
 > [!tabs]
 > **Etapa 1**
 >>
@@ -104,7 +101,6 @@ Haga clic en las fichas siguientes para ver cada una de las **2** etapas.
 >> Anote el destino del registro de tipo `A` para su dominio:
 >>
 >> ![Destino del registro A en la zona DNS](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/dashboard-entry-a.png){.thumbnail}
-<!-- CP-STEPS-END:check-dns-zone-ip -->
 
 #### Realizar las acciones necesarias
 
@@ -170,7 +166,6 @@ Si es necesario, contacte con su webmaster o los [partners de OVHcloud](/links/p
 
 Haga clic en las fichas siguientes para ver cada una de las **2** etapas.
 
-<!-- CP-STEPS-START:check-ssl-certificate -->
 > [!tabs]
 > **Etapa 1**
 >>
@@ -183,7 +178,6 @@ Haga clic en las fichas siguientes para ver cada una de las **2** etapas.
 >> En la pestaña `Información general`{.action}, consulte el apartado `Certificado SSL`:
 >>
 >> ![Certificado SSL en la pestaña de información general](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/no-ssl-certificate.png){.thumbnail}
-<!-- CP-STEPS-END:check-ssl-certificate -->
 
 #### Escenario 1: su alojamiento no contiene certificado SSL
 

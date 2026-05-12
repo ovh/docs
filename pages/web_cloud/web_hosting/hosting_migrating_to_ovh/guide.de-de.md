@@ -71,7 +71,6 @@ Mehrere [OVHcloud Shared Hosting Angebote](/links/web/hosting) enthalten "[MX Pl
 
 Wenn Sie sich für ein passendes Webhosting-Angebot entschieden haben, klicken Sie auf den Button `Bestellen`{.action} auf unserer Webseite. Folgen Sie den Bestellschritten, aber **leiten Sie dabei noch nicht den Transfer Ihres Domainnamens ein**. (Diese Aktion wird in Teil 10 dieser Anleitung ausgeführt.)
 
-<!-- CP-STEPS-START:order-hosting-plan -->
 Sie können die Bestellung auch über Ihr OVHcloud Kundencenter aufgeben. Klicken Sie dazu auf die Tabs, um die **3** Schritte nacheinander anzuzeigen.
 
 > [!tabs]
@@ -88,7 +87,6 @@ Sie können die Bestellung auch über Ihr OVHcloud Kundencenter aufgeben. Klicke
 > **Schritt 3**
 >>
 >> Folgen Sie den Bestellschritten **ohne den Transfer Ihrer Domain anzufordern** (dies geschieht in Teil 10 dieser Anleitung).
-<!-- CP-STEPS-END:order-hosting-plan -->
 
 Sobald die Zahlung bestätigt wurde, startet die Installation des Hostings. Sie erhalten eine E-Mail an Ihre Kontakt-E-Mail-Adresse, die Zugangsdaten zum FTP-Speicherplatz (File Transfer Protocol) Ihres Webhostings enthält.
 

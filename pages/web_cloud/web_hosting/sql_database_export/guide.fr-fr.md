@@ -57,7 +57,6 @@ Poursuivez la lecture de cette documentation selon la méthode de sauvegarde sou
 
 ### Récupérer une sauvegarde via l'outil d'OVHcloud
 
-<!-- CP-STEPS-START:retrieve-backup-ovhcloud-tool -->
 Pour accéder à l'outil de sauvegarde d'OVHcloud, cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3** étapes.
 
 > [!tabs]
@@ -80,11 +79,9 @@ Pour accéder à l'outil de sauvegarde d'OVHcloud, cliquez sur les onglets ci-de
 >> ![Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/tab.png){.thumbnail}
 >>
 >> Le tableau qui s'affiche contient toutes les bases de données créées dans le cadre de votre offre d'hébergement web. Dès lors, vous pourrez choisir entre réaliser une nouvelle sauvegarde ou en récupérer une déjà existante, via deux manipulations distinctes.
-<!-- CP-STEPS-END:retrieve-backup-ovhcloud-tool -->
 
 #### 1 - Effectuer une nouvelle sauvegarde de la base de données
 
-<!-- CP-STEPS-START:create-new-backup -->
 Pour effectuer une nouvelle sauvegarde, cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4** étapes.
 
 > [!tabs]
@@ -109,11 +106,9 @@ Pour effectuer une nouvelle sauvegarde, cliquez sur les onglets ci-dessous pour 
 >> ![databasedump](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/create-a-database-backup-step-1.png){.thumbnail}
 >>
 >> Patientez le temps que la sauvegarde se réalise. Dès que celle-ci est disponible, vous pourrez la récupérer.
-<!-- CP-STEPS-END:create-new-backup -->
 
 #### 2 - Récupérer une sauvegarde de la base de données
 
-<!-- CP-STEPS-START:retrieve-existing-backup -->
 Pour récupérer une sauvegarde existante, cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4** étapes.
 
 > [!tabs]
@@ -138,11 +133,9 @@ Pour récupérer une sauvegarde existante, cliquez sur les onglets ci-dessous po
 >> Pour télécharger une sauvegarde, cliquez sur le bouton `...`{.action} à droite de celle que vous souhaitez récupérer, puis sur `Télécharger la sauvegarde`{.action}. Acceptez l'enregistrement sur votre machine, puis patientez le temps que la sauvegarde soit téléchargée.
 >>
 >> ![databasedump](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/download-the-backup.png){.thumbnail}
-<!-- CP-STEPS-END:retrieve-existing-backup -->
 
 ### Récupérer une sauvegarde depuis l'interface web phpMyAdmin
 
-<!-- CP-STEPS-START:retrieve-backup-phpmyadmin -->
 Pour réaliser la manipulation, connectez-vous à *phpMyAdmin*. Pour cela, cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3** étapes.
 
 > [!tabs]
@@ -159,7 +152,6 @@ Pour réaliser la manipulation, connectez-vous à *phpMyAdmin*. Pour cela, cliqu
 >> Cliquez sur le bouton `...`{.action} à droite de la base de données concernée, puis sur `Accéder à phpMyAdmin`{.action}.
 >>
 >> ![databasedump](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/go-to-phpmyadmin.png){.thumbnail}
-<!-- CP-STEPS-END:retrieve-backup-phpmyadmin -->
 
 Une fois sur l'interface de connexion à *phpMyAdmin*, renseignez les informations de la base de données, puis connectez-vous. Une fois connecté, rendez-vous à présent sur l'onglet `Exporter`{.action} où deux méthodes d'exportation sont proposées :
 

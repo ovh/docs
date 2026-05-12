@@ -90,7 +90,6 @@ Weitere Details zu diesem Thema finden Sie unten in Schritt 5.
 
 Vergleichen Sie die Grafiken der Ressourcennutzung Ihres Hostings (weitere Informationen unten), um den Ursprung der Verzögerungen zu ermitteln, und entnehmen Sie die Daten dieser Spitzenwerte aus den Protokollen.
 
-<!-- CP-STEPS-START:access-stats-and-logs -->
 Um auf die Statistiken und Logs zuzugreifen, klicken Sie auf die Tabs, um die **3** Schritte anzuzeigen.
 
 > [!tabs]
@@ -111,9 +110,7 @@ Um auf die Statistiken und Logs zuzugreifen, klicken Sie auf die Tabs, um die **
 >> Klicken Sie anschließend auf den Button `Die Statistiken anzeigen`{.action} angezeigt, um auf die Besucherstatistiken der Website zuzugreifen, oder auf `Die Logs einsehen`{.action}, um die für Ihr Webhosting verfügbaren Logs anzuzeigen.
 >>
 >> ![logs](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/statistics-and-logs/tab.png){.thumbnail}
-<!-- CP-STEPS-END:access-stats-and-logs -->
 
-<!-- CP-STEPS-START:access-resource-charts -->
 Um auf die Graphen zuzugreifen, klicken Sie auf die Tabs, um die **3** Schritte anzuzeigen.
 
 > [!tabs]
@@ -143,7 +140,6 @@ Um auf die Graphen zuzugreifen, klicken Sie auf die Tabs, um die **3** Schritte 
 >> - **FTP Befehle**: Zeigt die verschiedenen FTP-Befehle an, die auf dem Hosting verwendet wurden, z.B. erfolgreiche und erfolglose Anmeldeversuche, Herunterladen, Hochladen und Löschen von Dateien.
 >> - **SQL-Antwortzeiten**: Zeigt die Antwortzeit der Abfragen an (nur sichtbar, wenn Sie eine Datenbank verwenden).
 >> - **SQL Requests**: Zeigt die Anzahl der Anfragen an (nur sichtbar, wenn Sie eine Datenbank verwenden).
-<!-- CP-STEPS-END:access-resource-charts -->
 
 ### 5 - Überprüfen von Netzwerkanfragen
 Ein nützliches Tool für die Analyse ist der [Network Monitor](https://developer.mozilla.org/en-US/docs/Tools/Network_Monitor), der direkt in den Mozilla Firefox-Browser integriert ist und die detaillierte Analyse der Ladezeit einer Webseite ermöglicht.

@@ -27,7 +27,6 @@ Der Zugriff auf die Logs und Statistiken Ihrer Website ist in Ihrem Webhosting-A
 
 ## In der praktischen Anwendung
 
-<!-- CP-STEPS-START:access-stats-and-logs -->
 Um die verschiedenen statistischen Daten und Logs Ihres Webhostings einzusehen, folgen Sie diesen Schritten. Klicken Sie auf die Tabs, um die **3** Schritte anzuzeigen.
 
 > [!tabs]
@@ -53,7 +52,6 @@ Um die verschiedenen statistischen Daten und Logs Ihres Webhostings einzusehen, 
 >> - [Verwaltung der Nutzer](#admin-user): Zeigt die Benutzer an, die Zugriff auf die Statistiken haben.
 >>
 >> ![statistics and logs interface](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/statistics-and-logs/tab.png){.thumbnail}
-<!-- CP-STEPS-END:access-stats-and-logs -->
 
 ### Statistiken der Seitenaufrufe <a name="website-stats"></a>
 
@@ -102,7 +100,6 @@ Es stehen verschiedene Arten von Logs zur Verfügung:
 
 ### Infrastrukturstatistiken <a name="infra-stats"></a>
 
-<!-- CP-STEPS-START:view-infra-stats -->
 In diesem Bereich finden Sie die Aktivität der Infrastruktur Ihres Webhostings, um den Verbrauch der Ihnen zur Verfügung gestellten Ressourcen einsehen zu können. Klicken Sie auf die Tabs, um die **3** Schritte anzuzeigen.
 
 > [!tabs]
@@ -129,13 +126,11 @@ In diesem Bereich finden Sie die Aktivität der Infrastruktur Ihres Webhostings,
 >> - **Überschreitungen der Ressourcenobergrenzen**: Zeigt an, wann Ihr Webhosting sein Ressourcenkontingent überschreitet.
 >> - **SQL Requests**: Anzahl der Anfragen an die Datenbanken Ihres Webhostings.
 >> - **SQL-Antwortzeiten**: Antwortzeit der Anfragen an die Datenbanken Ihres Webhostings.
-<!-- CP-STEPS-END:view-infra-stats -->
 
 ### Verwaltung der Nutzer <a name="admin-user"></a>
 
 Die Erstellung eines Benutzers ermöglicht es einer Person, auf die Statistiken Ihres Webhostings zuzugreifen, ohne Zugriff auf Ihr OVHcloud Kundencenter zu haben.
 
-<!-- CP-STEPS-START:create-stats-user -->
 Um einen neuen Benutzer zu erstellen, klicken Sie auf die Tabs, um die **3** Schritte anzuzeigen.
 
 > [!tabs]
@@ -154,7 +149,6 @@ Um einen neuen Benutzer zu erstellen, klicken Sie auf die Tabs, um die **3** Sch
 >> Klicken Sie auf `Einen neuen Nutzer erstellen`{.action} und folgen Sie den Anweisungen, um die Erstellung abzuschließen.
 >>
 >> ![Erstellung eines neuen Benutzers für die Statistiken](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/statistics-and-logs/create-a-new-user.png){.thumbnail}
-<!-- CP-STEPS-END:create-stats-user -->
 
 Um mit einem von Ihnen erstellten Benutzer auf die Statistiken Ihrer Website zuzugreifen, müssen Sie die folgende Adresse eingeben und `000` durch die Nummer des Clusters Ihres Webhostings und `domain.tld` durch den Domainnamen Ihrer Website ersetzen (ohne `www`):
 
@@ -162,7 +156,6 @@ Um mit einem von Ihnen erstellten Benutzer auf die Statistiken Ihrer Website zuz
 https://logs.cluster000.hosting.ovh.net/domain.tld/
 ```
 
-<!-- CP-STEPS-START:retrieve-stats-link -->
 Sie können auch direkt über Ihr Kundencenter den Zugangslink zu den Statistiken und Logs abrufen. Klicken Sie auf die Tabs, um die **3** Schritte anzuzeigen.
 
 > [!tabs]
@@ -183,7 +176,6 @@ Sie können auch direkt über Ihr Kundencenter den Zugangslink zu den Statistike
 >> ![Besucherstatistiken der Website](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/statistics-and-logs/view-statistics.png){.thumbnail}
 >>
 >> Rufen Sie auf der neu geöffneten Seite die URL in der Adresszeile Ihres Browsers ab.
-<!-- CP-STEPS-END:retrieve-stats-link -->
 
 > [!warning]
 >

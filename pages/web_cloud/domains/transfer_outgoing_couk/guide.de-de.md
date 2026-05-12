@@ -66,7 +66,6 @@ Falls Sie den benötigten TAG noch nicht kennen, können Sie ihn bei Ihrem neuen
 >
 > Sie müssen als [Administrator](/pages/account_and_service_management/account_information/managing_contacts) eingeloggt sein, um diese Aktionen durchzuführen.
 
-<!-- CP-STEPS-START:change-outgoing-tag -->
 Klicken Sie auf die Tabs, um die **3** Schritte anzuzeigen.
 
 > [!tabs]
@@ -87,7 +86,6 @@ Klicken Sie auf die Tabs, um die **3** Schritte anzuzeigen.
 >> Geben Sie im neuen Fenster den TAG Ihres neuen Registrars ein und klicken Sie dann auf `Bestätigen`{.action}.
 >>
 >> ![ausgehender Transfer](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/outgoing-transfer-tag-confirmation.png){.thumbnail}
-<!-- CP-STEPS-END:change-outgoing-tag -->
 
 Falls es Ihnen nicht möglich ist, den TAG Ihres Domainnamens über Ihr Kundencenter zu ändern, können Sie dies auch direkt bei der Registrierungsstelle beantragen. Weitere Informationen finden Sie auf der offiziellen [Website von Nominet](https://www.nominet.uk/domain-support/).
 

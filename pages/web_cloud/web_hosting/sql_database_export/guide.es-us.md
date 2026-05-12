@@ -57,7 +57,6 @@ Continúe leyendo esta guía en el apartado correspondiente al método de backup
 
 ### Obtener una copia de seguridad a través de la herramienta de OVHcloud
 
-<!-- CP-STEPS-START:retrieve-backup-ovhcloud-tool -->
 Para acceder a la herramienta de backup de OVHcloud, haga clic en las fichas siguientes para ver cada una de las **3** etapas.
 
 > [!tabs]
@@ -80,11 +79,9 @@ Para acceder a la herramienta de backup de OVHcloud, haga clic en las fichas sig
 >> ![Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/tab.png){.thumbnail}
 >>
 >> Se mostrará una tabla con todas las bases de datos creadas en el alojamiento web. A continuación, podrá elegir entre realizar una nueva copia de seguridad o recuperar una ya existente, realizando dos operaciones distintas.
-<!-- CP-STEPS-END:retrieve-backup-ovhcloud-tool -->
 
 #### 1 - Realizar una nueva copia de seguridad de la base de datos
 
-<!-- CP-STEPS-START:create-new-backup -->
 Para realizar una nueva copia de seguridad, haga clic en las fichas siguientes para ver cada una de las **4** etapas.
 
 > [!tabs]
@@ -109,11 +106,9 @@ Para realizar una nueva copia de seguridad, haga clic en las fichas siguientes p
 >> ![databasedump](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/create-a-database-backup-step-1.png){.thumbnail}
 >>
 >> Espere a que se realice la copia de seguridad. Una vez que esté disponible, podrá recuperarla.
-<!-- CP-STEPS-END:create-new-backup -->
 
 #### 2 - Recuperar una copia de seguridad de la base de datos
 
-<!-- CP-STEPS-START:retrieve-existing-backup -->
 Para recuperar una copia de seguridad existente, haga clic en las fichas siguientes para ver cada una de las **4** etapas.
 
 > [!tabs]
@@ -138,11 +133,9 @@ Para recuperar una copia de seguridad existente, haga clic en las fichas siguien
 >> Para descargar una copia de seguridad, haga clic en el botón `...`{.action} a la derecha de la copia de seguridad que desea recuperar y luego en `Descargar la copia de seguridad`{.action}. Acepte y espere a que se descargue la copia de seguridad.
 >>
 >> ![databasedump](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/download-the-backup.png){.thumbnail}
-<!-- CP-STEPS-END:retrieve-existing-backup -->
 
 ### Recuperar una copia de seguridad desde la interfaz web phpMyAdmin
 
-<!-- CP-STEPS-START:retrieve-backup-phpmyadmin -->
 Para realizar la operación, conéctese a *phpMyAdmin*. Para ello, haga clic en las fichas siguientes para ver cada una de las **3** etapas.
 
 > [!tabs]
@@ -159,7 +152,6 @@ Para realizar la operación, conéctese a *phpMyAdmin*. Para ello, haga clic en 
 >> Haga clic en el botón `...`{.action} a la derecha de la base de datos correspondiente y, seguidamente, en `Acceder a phpMyAdmin`{.action}.
 >>
 >> ![databasedump](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/go-to-phpmyadmin.png){.thumbnail}
-<!-- CP-STEPS-END:retrieve-backup-phpmyadmin -->
 
 Una vez en la interfaz de conexión a *phpMyAdmin*, introduzca los datos de la base de datos y conéctese. Una vez que se haya conectado, abra la pestaña `Exportar`{.action}, en la que podrá elegir entre dos métodos de exportación:
 

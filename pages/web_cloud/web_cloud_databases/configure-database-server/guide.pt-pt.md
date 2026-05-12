@@ -43,7 +43,6 @@ Os servidores de bases de dados Web Cloud Databases permitem-lhe modificar os pa
 
 ### Visualizar as informações gerais do servidor de bases de dados
 
-<!-- CP-STEPS-START:visualizar-informacoes-gerais -->
 Clique nos separadores abaixo para visualizar cada uma das **2** etapas.
 
 > [!tabs]
@@ -71,7 +70,6 @@ Clique nos separadores abaixo para visualizar cada uma das **2** etapas.
 >> |Host|Indica o servidor OVHcloud no qual a sua instância foi criada. Trata-se de uma informação inerente à infraestrutura da OVHcloud e pode ser utilizada nas nossas comunicações relativas aos [incidentes OVHcloud](https://web-cloud.status-ovhcloud.com/).|
 >>
 >> ![Informações gerais](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/general-information/general-information.png){.thumbnail}
-<!-- CP-STEPS-END:visualizar-informacoes-gerais -->
 
 ### Gerir os seus acessos
 
@@ -83,7 +81,6 @@ O seu Web Cloud Databases está acessível a partir dos seus alojamentos web OVH
 
 Para aceder à sua instância Web Cloud Databases, deve indicar os endereços IP ou intervalos de IP autorizados a ligarem-se às suas bases de dados.
 
-<!-- CP-STEPS-START:autorizar-endereco-ip -->
 Clique nos separadores abaixo para visualizar cada uma das **3** etapas.
 
 > [!tabs]
@@ -104,13 +101,11 @@ Clique nos separadores abaixo para visualizar cada uma das **3** etapas.
 >> Na janela que aparece, indique o endereço IP ou a máscara que pretende autorizar em `IP / máscara`{.action} e, se desejar, adicione uma descrição. Decida se pretende conceder acesso apenas às bases de dados ou também ao SFTP. Por fim, clique em `Validar`{.action}.
 >>
 >> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/authorized-ips/add-an-ip-address-mask-confirmation.png){.thumbnail}
-<!-- CP-STEPS-END:autorizar-endereco-ip -->
 
 ///
 
 /// details | Autorizar as ligações aos alojamentos web OVHcloud
 
-<!-- CP-STEPS-START:autorizar-ligacoes-alojamentos -->
 Clique nos separadores abaixo para visualizar cada uma das **3** etapas.
 
 > [!tabs]
@@ -129,7 +124,6 @@ Clique nos separadores abaixo para visualizar cada uma das **3** etapas.
 >> Selecione `Autorizar o acesso dos alojamentos web da OVHcloud à base de dados`{.action}.
 >>
 >> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/authorized-ips/tab-empty.png){.thumbnail}
-<!-- CP-STEPS-END:autorizar-ligacoes-alojamentos -->
 
 ///
 
@@ -144,7 +138,6 @@ Clique nos separadores abaixo para visualizar cada uma das **3** etapas.
 > **Esta ação é irreversível e a oferta Web Cloud Databases será depois faturada independentemente do seu alojamento web Performance.**
 >
 
-<!-- CP-STEPS-START:alterar-oferta-wcdb -->
 Clique nos separadores abaixo para visualizar cada uma das **3** etapas.
 
 > [!tabs]
@@ -173,7 +166,6 @@ Clique nos separadores abaixo para visualizar cada uma das **3** etapas.
 >> > [!warning]
 >> >
 >> > Se dispõe atualmente de um Web Cloud Databases gratuito graças ao seu alojamento Performance, a alteração da oferta fará com que perca a sua gratuidade.
-<!-- CP-STEPS-END:alterar-oferta-wcdb -->
 
 ### Alterar a configuração do servidor de bases de dados
 
@@ -181,7 +173,6 @@ Clique nos separadores abaixo para visualizar cada uma das **3** etapas.
 
 /// details | Instância MySQL e MariaDB
 
-<!-- CP-STEPS-START:configurar-mysql-mariadb -->
 Clique nos separadores abaixo para visualizar cada uma das **3** etapas.
 
 > [!tabs]
@@ -233,7 +224,6 @@ Clique nos separadores abaixo para visualizar cada uma das **3** etapas.
 >> > Recomendamos que utilize sempre o modo predefinido, exceto se a sua base de dados tiver sido atualizada a partir de uma versão com um modo predefinido diferente da versão atual.
 >>
 >> Efetue as modificações necessárias e clique em `Validar`{.action}.
-<!-- CP-STEPS-END:configurar-mysql-mariadb -->
 
 > [!warning]
 >
@@ -244,7 +234,6 @@ Clique nos separadores abaixo para visualizar cada uma das **3** etapas.
 
 /// details | Instância PostgreSQL
 
-<!-- CP-STEPS-START:configurar-postgresql -->
 Clique nos separadores abaixo para visualizar cada uma das **3** etapas.
 
 > [!tabs]
@@ -278,13 +267,11 @@ Clique nos separadores abaixo para visualizar cada uma das **3** etapas.
 >> Também pode ativar extensões nas suas bases de dados. Para isso, clique no separador `Bases de dados`{.action} e, em seguida, no ícone da tabela junto à sua base de dados, na coluna **"Extensões"**.
 >>
 >> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/databases/extensions.png){.thumbnail}
-<!-- CP-STEPS-END:configurar-postgresql -->
 
 ///
 
 ### Alterar a versão MySQL, PostgreSQL ou MariaDB do servidor de bases de dados
 
-<!-- CP-STEPS-START:alterar-versao -->
 Clique nos separadores abaixo para visualizar cada uma das **3** etapas.
 
 > [!tabs]
@@ -303,7 +290,6 @@ Clique nos separadores abaixo para visualizar cada uma das **3** etapas.
 >> Para modificar esta versão, clique em `Alterar versão`{.action}.
 >>
 >> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/general-information/postgre-12-update-version.png){.thumbnail}
-<!-- CP-STEPS-END:alterar-versao -->
 
 /// details | Como saber a versão exata de PostgreSQL que utilizo?
 
@@ -349,7 +335,6 @@ Para aceder aos logs da sua solução Web Cloud Databases, consulte o nosso guia
 
 /// details | Acompanhar a RAM consumida
 
-<!-- CP-STEPS-START:acompanhar-ram -->
 Clique nos separadores abaixo para visualizar cada uma das **2** etapas.
 
 > [!tabs]
@@ -364,7 +349,6 @@ Clique nos separadores abaixo para visualizar cada uma das **2** etapas.
 >> Clique no separador `Métricas`{.action}. Encontrará o gráfico **"Estatísticas de memória RAM utilizada"**.
 >>
 >> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/metrics/ram-memory-usage-statistics.png){.thumbnail}
-<!-- CP-STEPS-END:acompanhar-ram -->
 
 ///
 
@@ -372,7 +356,6 @@ Clique nos separadores abaixo para visualizar cada uma das **2** etapas.
 
 Este gráfico permite acompanhar, nas últimas 24 horas, o volume de ligações por minuto no servidor de bases de dados.
 
-<!-- CP-STEPS-START:acompanhar-ligacoes-minuto -->
 Clique nos separadores abaixo para visualizar cada uma das **2** etapas.
 
 > [!tabs]
@@ -387,7 +370,6 @@ Clique nos separadores abaixo para visualizar cada uma das **2** etapas.
 >> Clique no separador `Métricas`{.action}. Encontrará o gráfico **"Estatísticas do total de ligações por minuto"**.
 >>
 >> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/metrics/statistics-for-total-connections-per-minute.png){.thumbnail}
-<!-- CP-STEPS-END:acompanhar-ligacoes-minuto -->
 
 ///
 

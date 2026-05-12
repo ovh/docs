@@ -57,7 +57,6 @@ In addition to providing [contacts](/pages/account_and_service_management/accoun
 
 ### Initiating the holder change procedure or editing the holder information
 
-<!-- CP-STEPS-START:change-domain-owner -->
 Click on the tabs below to view each of the **6** steps.
 
 > [!tabs]
@@ -112,7 +111,6 @@ Click on the tabs below to view each of the **6** steps.
 >>
 >> Once both recipients have confirmed the request by email, the domain name holder change will take effect.
 >>
-<!-- CP-STEPS-END:change-domain-owner -->
 
 > [!warning]
 >

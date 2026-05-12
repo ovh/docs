@@ -86,7 +86,6 @@ Es gibt verschiedene Gründe für die Erstellung einer DNS-Zone bei OVHcloud fü
 
 ### 1 - DNS-Zone über das OVHcloud Kundencenter erstellen
 
-<!-- CP-STEPS-START:create-dns-zone -->
 Klicken Sie auf die Tabs, um die **3** Schritte anzuzeigen.
 
 > [!tabs]
@@ -116,7 +115,6 @@ Klicken Sie auf die Tabs, um die **3** Schritte anzuzeigen.
 >> |Nein|Wählen Sie diese Option, wenn Sie OVHcloud Dienste wie zum Beispiel ein [Webhosting](/links/web/hosting) nutzen möchten. Die DNS-Zone ist hierfür bereits vorkonfiguriert.<br>![Minimum-dns-entries](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/dashboard-ovh-full-entries.png){.thumbnail}|
 >>
 >> Nachdem Sie Ihre Auswahl getroffen haben, folgen Sie den angezeigten Schritten in Ihrem OVHcloud Kundencenter, bis die DNS-Zone erstellt ist.
-<!-- CP-STEPS-END:create-dns-zone -->
 
 ### 2 - DNS-Zone bearbeiten (optional)
 
@@ -133,7 +131,6 @@ Um die DNS-Zone zu bearbeiten, lesen Sie unsere Anleitung "[Bearbeiten der OVHcl
 
 Sobald die OVHcloud DNS-Zone bereit ist, aktivieren Sie diese, indem Sie die neuen DNS-Server deklarieren. Ermitteln Sie hierfür zuerst die Namen der **DNS-Server** von OVHcloud, auf denen die OVHcloud DNS-Zone für Ihre Domainnamen erstellt wurde.
 
-<!-- CP-STEPS-START:find-dns-servers -->
 Um diese zu finden, klicken Sie auf die Tabs, um die **2** Schritte anzuzeigen.
 
 > [!tabs]
@@ -155,7 +152,6 @@ Um diese zu finden, klicken Sie auf die Tabs, um die **2** Schritte anzuzeigen.
 >> - `nsXX.ovh.net` und `dnsXX.ovh.net` oder, `nsXXX.ovh.net` und `dnsXXX.ovh.net` (wobei `X` eine Zahl zwischen **0** und **9** darstellt).
 >> - `nsXX.ovh.ca` und `dnsXX.ovh.ca` oder, `nsXXX.ovh.ca` und `dnsXXX.ovh.ca` (wobei `X` eine Zahl zwischen **0** und **9** darstellt).
 >> - `ns200.anycast.me` und `dns200.anycast.me` (wenn Sie die Option [DNS anycast](/links/web/domains-options) abonniert haben).
-<!-- CP-STEPS-END:find-dns-servers -->
 
 Sobald die beiden DNS-Server-Namen abgerufen wurden, gibt es zwei mögliche Szenarien.
 

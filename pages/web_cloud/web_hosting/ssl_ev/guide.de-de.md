@@ -100,7 +100,6 @@ Um dies zu überprüfen, lesen Sie bei Bedarf unsere Anleitungen:
 
 #### 1.1 - Für bereits bei OVHcloud existierende Domainnamen und Webhostings
 
-<!-- CP-STEPS-START:order-sectigo-ev -->
 Klicken Sie auf die Tabs, um die **5** Schritte anzuzeigen.
 
 > [!tabs]
@@ -139,7 +138,6 @@ Klicken Sie auf die Tabs, um die **5** Schritte anzuzeigen.
 >> Klicken Sie auf `Fortfahren`{.action}, sobald **alle Elemente** korrekt eingegeben sind.
 >>
 >> Führen Sie die Bestellung bis zur Zahlung durch, um die Anfrage zur Erstellung des SSL-Zertifikats zu bestätigen.
-<!-- CP-STEPS-END:order-sectigo-ev -->
 
 > [!alert]
 >

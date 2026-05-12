@@ -42,7 +42,6 @@ You can also refer to our guides on [OVHcloud DNS servers](/pages/web_cloud/doma
 
 ## Instructions
 
-<!-- CP-STEPS-START:instructions -->
 To check if your domain name uses the OVHcloud DNS configuration, click on the tabs below to view each of the **2** steps.
 
 > [!warning]
@@ -64,7 +63,6 @@ To check if your domain name uses the OVHcloud DNS configuration, click on the t
 >> Select the `DNS servers`{.action} tab once you have clicked on the domain concerned.
 >>
 >> If the DNS server names end with *ovh.net* (with the exception of the *snds2.ovh.net* server), *ovh.ca* or *anycast.me*, your domain name will use OVHcloud DNS servers.
-<!-- CP-STEPS-END:instructions -->
 
 > [!primary]
 >
@@ -79,7 +77,6 @@ You can enable **DNSSEC** in three scenarios detailed below.
 
 ### Case 1 - Your domain name is registered with OVHcloud and uses OVHcloud DNS servers
 
-<!-- CP-STEPS-START:case-1-your-domain-name-is-registered-with-ovhcloud-and-uses-ovhcloud-dns-servers -->
 To enable (or disable) the **DNSSEC** solution for your domain name, click on the tabs below to view each of the **3** steps.
 
 > [!tabs]
@@ -102,11 +99,9 @@ To enable (or disable) the **DNSSEC** solution for your domain name, click on th
 >> With the activation button above `Secured Delegation - DNSSEC`{.action}, you can activate or deactivate **DNSSEC** on your domain name. When you do this, a new window will appear, where you can confirm the change.
 >>
 >> ![Enable DNSSEC](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/activate-dnssec-confirmation.png){.thumbnail}
-<!-- CP-STEPS-END:case-1-your-domain-name-is-registered-with-ovhcloud-and-uses-ovhcloud-dns-servers -->
 
 ### Case 2 - Your domain name is registered with OVHcloud and does not use OVHcloud DNS servers
 
-<!-- CP-STEPS-START:case-2-your-domain-name-is-registered-with-ovhcloud-and-does-not-use-ovhcloud-dns-servers -->
 Once you have retrieved these 4 parameters, click on the tabs below to view each of the **4** steps.
 
 > [!tabs]
@@ -131,7 +126,6 @@ Once you have retrieved these 4 parameters, click on the tabs below to view each
 >> ![DS records](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/ds-records/edit-plus-dashboard.png){.thumbnail}
 >>
 >> Once you have filled in the 4 forms, click on the blue `Confirm`{.action} button to the right of the table.
-<!-- CP-STEPS-END:case-2-your-domain-name-is-registered-with-ovhcloud-and-does-not-use-ovhcloud-dns-servers -->
 
 ### Case 3 - Your domain name is not registered with OVHcloud and uses OVHcloud DNS servers
 

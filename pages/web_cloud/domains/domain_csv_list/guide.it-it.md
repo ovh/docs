@@ -27,7 +27,6 @@ Vuoi recuperare la lista di tutti i domini presenti sul tuo account cliente OVHc
 
 ## Procedura
 
-<!-- CP-STEPS-START:export-csv -->
 Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **3** passi.
 
 > [!tabs]
@@ -54,7 +53,6 @@ Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **3** pa
 >> ![Export domains in CSV format step 2 done](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/export-csv/export-domains-in-csv-format-step-2b.png){.thumbnail}
 >>
 >> Se il download del file CSV non si è avviato automaticamente, clicca sul link `scaricarlo manualmente`{.action} per recuperarlo.
-<!-- CP-STEPS-END:export-csv -->
 
 ## Per saperne di più
  

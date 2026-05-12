@@ -46,7 +46,6 @@ The OVHcloud API is made available to developers or integrators to associate fea
 
 ### 1 - Retrieve the name of the web hosting plan that the deleted database was linked to
 
-<!-- CP-STEPS-START:retrieve-webhosting-name -->
 To retrieve the name of your web hosting plan, click on the tabs below to view each of the **2** steps.
 
 > [!tabs]
@@ -59,7 +58,6 @@ To retrieve the name of your web hosting plan, click on the tabs below to view e
 >> In the top left-hand corner of the page that opens, you will find the name of your web hosting plan on the right-hand side, with the words `Hosting plans /`{.action}.
 >>
 >> ![API](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-webhosting-name.png){.thumbnail}
-<!-- CP-STEPS-END:retrieve-webhosting-name -->
 
 ### 2 - Log in to the OVHcloud API and allow access to your services
 

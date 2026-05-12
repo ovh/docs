@@ -86,7 +86,6 @@ For a number of reasons, you may need to create a DNS zone for your domain name 
 
 ### 1 - Create the DNS zone via the OVHcloud Control Panel
 
-<!-- CP-STEPS-START:create-dns-zone -->
 Click on the tabs below to view each of the **3** steps.
 
 > [!tabs]
@@ -116,7 +115,6 @@ Click on the tabs below to view each of the **3** steps.
 >> |No|Select this option if you plan to use OVHcloud services as a [web hosting](/links/web/hosting), with the zone preconfigured for this purpose.<br>![no-minimum-dns-entries](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/dashboard-ovh-full-entries.png){.thumbnail}|
 >>
 >> Once your choice is made, follow the steps displayed in your OVHcloud Control Panel until the DNS zone is created.
-<!-- CP-STEPS-END:create-dns-zone -->
 
 ### 2 - Edit the DNS zone (optional)
 
@@ -133,7 +131,6 @@ To edit this DNS zone, please read our guide on [Editing a DNS zone at OVHcloud]
 
 Once the OVHcloud DNS zone is ready to be used, activate it by declaring the corresponding DNS servers. First, retrieve the names of the OVHcloud **DNS servers** on which your domain name’s DNS zone was created.
 
-<!-- CP-STEPS-START:retrieve-dns-servers -->
 To find them, click on the tabs below to view each of the **2** steps.
 
 > [!tabs]
@@ -155,7 +152,6 @@ To find them, click on the tabs below to view each of the **2** steps.
 >> - `nsXX.ovh.net` and `dnsXX.ovh.net` or, `nsXXX.ovh.net` and `dnsXXX.ovh.net` (where each `X` represents a number between **0** and **9**).
 >> - `nsXX.ovh.ca` and `dnsXX.ovh.ca` or, `nsXXX.ovh.ca` and `dnsXXX.ovh.ca` (where each `X` represents a number between **0** and **9**).
 >> - `ns200.anycast.me` and `dns200.anycast.me` (if you have subscribed to the [DNS anycast](/links/web/domains-options) option).
-<!-- CP-STEPS-END:retrieve-dns-servers -->
 
 Once the two DNS server names have been retrieved, two situations are possible.
 

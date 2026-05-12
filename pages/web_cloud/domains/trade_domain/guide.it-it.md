@@ -59,7 +59,6 @@ Per registrare un dominio, oltre alla [gestione dei contatti](/pages/account_and
 
 ### Avvia la procedura di modifica dell'intestatario o modifica le informazioni ad essa associate
 
-<!-- CP-STEPS-START:change-domain-owner -->
 Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **6** passi.
 
 > [!tabs]
@@ -114,7 +113,6 @@ Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **6** pa
 >>
 >> Una volta che entrambi i destinatari avranno confermato la richiesta via email, la modifica dell'intestatario del nome di dominio avrà effetto.
 >>
-<!-- CP-STEPS-END:change-domain-owner -->
 
 > [!warning]
 >

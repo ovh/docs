@@ -30,7 +30,6 @@ Un database (BDD) è utilizzato per archiviare elementi dinamici (dati di connes
 
 ### 1 - Accedi alla scheda di gestione dei database di un hosting Web
 
-<!-- CP-STEPS-START:access-databases-tab -->
 Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **2** passi.
 
 > [!tabs]
@@ -49,7 +48,6 @@ Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **2** pa
 >> La tabella di questa sezione contiene tutti i database creati con il tuo hosting Web.
 >>
 >> ![Lista dei database dell'hosting web](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/tab.png){.thumbnail}
-<!-- CP-STEPS-END:access-databases-tab -->
 
 Nella tabella, i database possono avere diversi tipi:
 
@@ -65,7 +63,6 @@ Nella tabella, i database possono avere diversi tipi:
 
 ### 2 - Crea il database
 
-<!-- CP-STEPS-START:create-database -->
 Per creare un database, clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **5** passi.
 
 > [!tabs]
@@ -113,7 +110,6 @@ Per creare un database, clicca sulle schede qui sotto per visualizzare in sequen
 >> > [!primary]
 >> >
 >> > L'aggiornamento della versione del motore di un database già creato non è al momento disponibile.
-<!-- CP-STEPS-END:create-database -->
 
 > [!primary]
 >
@@ -159,7 +155,6 @@ A questo punto è possibile utilizzare il database. Per farlo, avrai bisogno del
 
 Queste informazioni sono essenziali perché il sito Web possa connettersi al database.
 
-<!-- CP-STEPS-START:get-connection-info -->
 Se necessario, per recuperare queste informazioni di connessione, clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **2** passi.
 
 > [!tabs]
@@ -170,7 +165,6 @@ Se necessario, per recuperare queste informazioni di connessione, clicca sulle s
 > **Passaggio 2**
 >>
 >> Nella pagina che si apre, clicca sulla scheda `Database`{.action}. Tutte le informazioni di connessione al database sono disponibili nella tabella. Ad eccezione della *password*, per motivi di sicurezza.
-<!-- CP-STEPS-END:get-connection-info -->
 
 > [!warning]
 >
@@ -186,7 +180,6 @@ In base al software utilizzato, è possibile che questa connessione richieda una
 
 #### Accedi all'interfaccia phpMyAdmin
 
-<!-- CP-STEPS-START:access-phpmyadmin -->
 OVHcloud fornisce uno strumento online per la gestione dei database, "phpMyAdmin". Per trovare il link di accesso a questa applicazione, clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **4** passi.
 
 > [!tabs]
@@ -209,13 +202,11 @@ OVHcloud fornisce uno strumento online per la gestione dei database, "phpMyAdmin
 >> ![Pagina di accesso a phpMyAdmin](/pages/assets/screens/other/web-tools/phpmyadmin/pma-interface-login.png){.thumbnail}
 >>
 >> Se necessario, consulta la [parte 3](#step3) di questa guida per trovare le informazioni di connessione al tuo database.
-<!-- CP-STEPS-END:access-phpmyadmin -->
 
 #### Utilizza i backup dei database
 
 Per ogni database di hosting Web, vengono creati automaticamente degli Snapshot ogni giorno (fino a un massimo di 32). È quindi possibile ripristinare rapidamente una versione precedente di un database dallo Spazio Cliente OVHcloud.
 
-<!-- CP-STEPS-START:check-database-snapshots -->
 Per verificare gli Snapshot disponibili e la data e l'ora della loro creazione, clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **3** passi.
 
 > [!tabs]
@@ -230,7 +221,6 @@ Per verificare gli Snapshot disponibili e la data e l'ora della loro creazione, 
 > **Passaggio 3**
 >>
 >> Nella tabella visualizzata, fare clic sul simbolo accanto al cerchio verde. È inoltre possibile scaricare ogni backup di un database da questa interfaccia.
-<!-- CP-STEPS-END:check-database-snapshots -->
 
 Per maggiori informazioni al riguardo, consulta la nostra guida "[Recuperare il backup del database di un hosting Web](/pages/web_cloud/web_hosting/sql_database_export)".
 

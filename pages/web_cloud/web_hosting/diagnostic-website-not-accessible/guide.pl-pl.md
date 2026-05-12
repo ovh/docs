@@ -66,7 +66,6 @@ W przypadku niedostępności Twojej strony WWW może pojawić się kilka zwrotó
 > W związku z tym zalecamy [włączenie automatycznego](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#w-praktyce) odnowienia wszystkich Twoich subskrypcji OVHcloud.
 >
 
-<!-- CP-STEPS-START:check-domain-renewal -->
 Aby sprawdzić poprawność subskrypcji Twojej domeny, kliknij poniższe zakładki, aby wyświetlić kolejne **3** kroki.
 
 > [!tabs]
@@ -83,7 +82,6 @@ Aby sprawdzić poprawność subskrypcji Twojej domeny, kliknij poniższe zakład
 > **Krok 3**
 >>
 >> Po odnowieniu domeny Twoja strona będzie dostępna w ciągu 48 godzin.
-<!-- CP-STEPS-END:check-domain-renewal -->
 
 ### 2 - Sprawdź serwery DNS
 
@@ -91,7 +89,6 @@ Aby sprawdzić poprawność Twoich [serwerów DNS](/pages/web_cloud/domains/dns_
 
 **Kliknij scenariusz odpowiadający Twojej sytuacji, aby wyświetlić jego zawartość.**
 
-<!-- CP-STEPS-START:check-dns-servers-scenario1 -->
 /// details | Scenariusz 1 - Brak anomalii na serwerach DNS
 
 Aby sprawdzić zadeklarowane serwery DNS, kliknij poniższe zakładki, aby wyświetlić kolejne **3** kroki.
@@ -116,7 +113,6 @@ Aby sprawdzić zadeklarowane serwery DNS, kliknij poniższe zakładki, aby wyśw
 >> ![srv-dns-ok](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/dashboard-entry-ns.png){.thumbnail}
 
 ///
-<!-- CP-STEPS-END:check-dns-servers-scenario1 -->
 
 /// details | Scenariusz 2 - Nad strefą DNS pojawi się ostrzeżenie
 
@@ -142,7 +138,6 @@ Twoja strona będzie dostępna w ciągu maksymalnie 48 godzin.
 
 ///
 
-<!-- CP-STEPS-START:fix-missing-ns-records -->
 /// details | Scenariusz 3 - W strefie DNS nie pojawia się żaden wpis typu NS
 
 W **Strefie DNS** Twojej domeny nie ma wpisu typu `NS`:
@@ -179,7 +174,6 @@ Kliknij poniższe zakładki, aby wyświetlić kolejne **4** kroki.
 >> Twoja strona będzie dostępna w ciągu maksymalnie 24 godzin.
 
 ///
-<!-- CP-STEPS-END:fix-missing-ns-records -->
 
 ### 3 - Sprawdź strefę DNS <a name="step3"></a>
 
@@ -189,7 +183,6 @@ Jeśli Twoja strona WWW nie jest hostowana w infrastrukturze OVHcloud lub jest z
 
 Jeśli Twoja strona internetowa jest hostowana w ramach jednej z naszych [ofert hostingu WWW](/links/web/hosting), kliknij poniższe zakładki, aby wyświetlić kolejne **2** kroki.
 
-<!-- CP-STEPS-START:check-hosting-ip-for-dns -->
 > [!tabs]
 > **Krok 1**
 >>
@@ -204,7 +197,6 @@ Jeśli Twoja strona internetowa jest hostowana w ramach jednej z naszych [ofert 
 >> ![IPv4-IPv6](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-ipv4-and-ipv6.png){.thumbnail}
 >>
 >> Skopiuj adres IPv4 i/lub IPv6 Twojej domeny.
-<!-- CP-STEPS-END:check-hosting-ip-for-dns -->
 
 Następnie przenieś domenę do [strefy DNS](/pages/web_cloud/domains/dns_zone_edit), modyfikując lub dodając jeden lub więcej rekordów typu `A`.
 

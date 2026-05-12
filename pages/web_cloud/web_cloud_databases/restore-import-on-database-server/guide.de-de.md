@@ -52,7 +52,6 @@ Nach einem Fehler auf Ihrer Datenbank müssen Sie in der Lage sein, ein Backup w
 
 #### Ein bestehendes Backup wiederherstellen
 
-<!-- CP-STEPS-START:restore-existing-backup -->
 Klicken Sie auf die unten stehenden Tabs, um die **4** Schritte nacheinander anzuzeigen.
 
 > [!tabs]
@@ -81,11 +80,9 @@ Klicken Sie auf die unten stehenden Tabs, um die **4** Schritte nacheinander anz
 >> > [!warning]
 >> >
 >> > Die Wiederherstellung bedeutet, dass der Inhalt der Datenbank überschrieben wird, was zu Datenverlust führen kann. Wenn Sie sich nicht sicher sind, empfehlen wir, zunächst ein Backup zu erstellen.
-<!-- CP-STEPS-END:restore-existing-backup -->
 
 #### Eine lokale Sicherung importieren
 
-<!-- CP-STEPS-START:import-local-backup -->
 Klicken Sie auf die unten stehenden Tabs, um die **4** Schritte nacheinander anzuzeigen.
 
 > [!tabs]
@@ -132,7 +129,6 @@ Klicken Sie auf die unten stehenden Tabs, um die **4** Schritte nacheinander anz
 >> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/databases/database-import-existing-file-step-2.png){.thumbnail}
 >>
 >> Aktivieren Sie bei Bedarf **"Aktuelle Datenbank leeren"** vor dem Import und **"E-Mail am Ende des Imports senden"**, um über den Abschluss des Vorgangs an die Referenz-E-Mail-Adresse Ihres OVHcloud Kunden-Accounts informiert zu werden, und klicken Sie dann auf `Bestätigen`{.action}.
-<!-- CP-STEPS-END:import-local-backup -->
 
 ### Datenbank außerhalb des Kundencenters importieren
 

@@ -79,7 +79,6 @@ These values are common to all of these solutions, with the exception of [Privat
 
 These MX records must be configured in your domain name’s DNS zone.
 
-<!-- CP-STEPS-START:configure-mx-record -->
 ### Configuring an MX record in an OVHcloud DNS zone
 
 Click on the tabs below to view each of the **5** steps.
@@ -122,7 +121,6 @@ Click on the tabs below to view each of the **5** steps.
 >
 > The change can take between 4 and 24 hours to propagate fully.
 >
-<!-- CP-STEPS-END:configure-mx-record -->
 
 ## Go further
 

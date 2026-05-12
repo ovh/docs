@@ -58,7 +58,6 @@ Pode consultar o conteúdo da sua base de dados através de uma interface. Exist
 
 #### Ligação através do phpMyAdmin OVHcloud
 
-<!-- CP-STEPS-START:mysql-phpmyadmin-ovhcloud -->
 Clique nos separadores abaixo para visualizar cada uma das **4** etapas.
 
 > [!tabs]
@@ -106,11 +105,9 @@ Se a ligação for bem-sucedida, será apresentada a página seguinte.
 >
 > - O erro #1045 significa que as credenciais estão incorretas. Verifique o nome de utilizador e/ou a palavra-passe.
 > - O erro #2005 significa que deve verificar o nome do servidor e se este está a funcionar corretamente.
-<!-- CP-STEPS-END:mysql-phpmyadmin-ovhcloud -->
 
 #### Ligação à base de dados fora da Área de Cliente
 
-<!-- CP-STEPS-START:mysql-external-credentials -->
 > [!warning]
 >
 > Se utilizar uma solução "Web Cloud Databases"/"SQL Privado", não se esqueça de autorizar o seu IP com a ajuda do guia sobre a [configuração do seu servidor de bases de dados](/pages/web_cloud/web_cloud_databases/configure-database-server#gerer-vos-acces).
@@ -133,7 +130,6 @@ Clique nos separadores abaixo para visualizar cada uma das **2** etapas.
 >> - **Nome de utilizador:** visível no separador `Utilizadores e permissões`{.action}.
 >> - **Palavra-passe:** a palavra-passe associada ao utilizador em causa.
 >> - **Nome da base de dados:** visível no separador `Bases de dados`{.action}.
-<!-- CP-STEPS-END:mysql-external-credentials -->
 
 **Clique no método de ligação pretendido para ver o conteúdo.**
 
@@ -192,7 +188,6 @@ Pode utilizar a sua própria interface phpMyAdmin para explorar o conteúdo da b
 
 ### Ligar-se a uma base de dados PostgreSQL
 
-<!-- CP-STEPS-START:postgresql-external-credentials -->
 Clique nos separadores abaixo para visualizar cada uma das **2** etapas.
 
 > [!tabs]
@@ -211,7 +206,6 @@ Clique nos separadores abaixo para visualizar cada uma das **2** etapas.
 >> - **Nome de utilizador:** visível no separador `Utilizadores e permissões`{.action}.
 >> - **Palavra-passe:** a palavra-passe associada ao utilizador em causa.
 >> - **Nome da base de dados:** visível no separador `Bases de dados`{.action}.
-<!-- CP-STEPS-END:postgresql-external-credentials -->
 
 **Clique no método de ligação pretendido para ver o conteúdo.**
 

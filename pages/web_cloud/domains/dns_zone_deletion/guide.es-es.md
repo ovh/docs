@@ -58,7 +58,6 @@ Por ejemplo, es posible que necesite eliminar una zona DNS para su dominio en OV
 >
 > Si la zona DNS activa para su dominio es la que tiene en OVHcloud y desea sustituirla por una zona DNS alojada en otro proveedor, consulte nuestra guía "[Modificar los servidores DNS de un dominio en OVHcloud](/pages/web_cloud/domains/dns_server_edit)" antes de eliminar cualquier zona DNS.
 
-<!-- CP-STEPS-START:delete-dns-zone -->
 Haga clic en las fichas siguientes para ver cada una de las **3** etapas.
 
 > [!tabs]
@@ -82,7 +81,6 @@ Haga clic en las fichas siguientes para ver cada una de las **3** etapas.
 >> >
 >> > Si desea eliminar inmediatamente una zona DNS de su área de cliente de OVHcloud, realice los 3 pasos para solicitar la cancelación en la fecha de aplicación, y luego contacte con el soporte de OVHcloud creando un ticket de asistencia desde el [centro de ayuda](/links/support-contact).
 >> > En el ticket, indique la zona DNS afectada y exprese claramente su deseo de eliminarla inmediatamente sin esperar a la fecha de aplicación.
-<!-- CP-STEPS-END:delete-dns-zone -->
 
 ## Más información
 

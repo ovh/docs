@@ -49,7 +49,6 @@ Pour vous connecter à votre espace de stockage FTP, récupérez les éléments 
 >
 > **Si vous disposez déjà de ces éléments**, poursuivez directement vers la partie 2 « [Accéder à votre espace de stockage](#ftp_storage_access) » de ce guide.
 
-<!-- CP-STEPS-START:get-ftp-credentials -->
 Si vous ne disposez pas de ces éléments, cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4** étapes.
 
 > [!tabs]
@@ -96,7 +95,6 @@ Si vous ne disposez pas de ces éléments, cliquez sur les onglets ci-dessous po
 >> > [!primary]
 >> >
 >> > Selon l'offre d'[hébergement web OVHcloud](/links/web/hosting) que vous possédez, certaines des informations décrites ci-dessus (notamment concernant le SSH) peuvent ne pas apparaître.
-<!-- CP-STEPS-END:get-ftp-credentials -->
 
 Si vous ne connaissez plus le mot de passe d'un utilisateur FTP ou SSH, consultez notre guide « [Modifier le mot de passe d'un utilisateur FTP](/pages/web_cloud/web_hosting/ftp_change_password) ».
 

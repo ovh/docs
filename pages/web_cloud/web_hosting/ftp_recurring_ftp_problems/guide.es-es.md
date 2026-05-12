@@ -61,7 +61,6 @@ Si no puede autenticarse, modifique su contraseña FTP siguiendo las instruccion
 
 La falta de espacio en su alojamiento compartido puede provocar fallos de funcionamiento en su sitio web al intentar modificarlo o actualizarlo.
 
-<!-- CP-STEPS-START:check-disk-space -->
 Para comprobar el espacio de almacenamiento restante del alojamiento, haga clic en las fichas siguientes para ver cada una de las **2** etapas.
 
 > [!tabs]
@@ -78,7 +77,6 @@ Para comprobar el espacio de almacenamiento restante del alojamiento, haga clic 
 >> ![disk_space](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-disk-space.png){.thumbnail}
 >>
 >> El espacio de almacenamiento utilizado aparece debajo de esta mención.
-<!-- CP-STEPS-END:check-disk-space -->
 
 ### No puedo transferir mis archivos al servidor FTP.
 

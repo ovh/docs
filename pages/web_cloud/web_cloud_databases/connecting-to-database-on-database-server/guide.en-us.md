@@ -58,7 +58,6 @@ You can view the content of your database via an interface. There are several wa
 
 #### Connection via OVHcloud phpMyAdmin
 
-<!-- CP-STEPS-START:mysql-phpmyadmin-tabs -->
 Click on the tabs below to view each of the **4** steps.
 
 > [!tabs]
@@ -95,7 +94,6 @@ Click on the tabs below to view each of the **4** steps.
 >> - **Server:** enter the *hostname* followed by the *port number*, separated by "**:**" or a "**space**". For example: **aaXXXXX-XXX.eu.clouddb.ovh.net:12345**.
 >> - **Username:** enter the *username*.
 >> - **Password:** enter the *password*.
-<!-- CP-STEPS-END:mysql-phpmyadmin-tabs -->
 
 If the connection is successful, the following page will appear.
 
@@ -114,7 +112,6 @@ If the connection is successful, the following page will appear.
 >
 > If you are using a "Web Cloud Databases"/"Private SQL" solution, remember to authorise your IP using the guide on [configuring your database server](/pages/web_cloud/web_cloud_databases/configure-database-server#gerer-vos-acces).
 
-<!-- CP-STEPS-START:mysql-outside-cp-tabs -->
 Click on the tabs below to view each of the **2** steps.
 
 > [!tabs]
@@ -133,7 +130,6 @@ Click on the tabs below to view each of the **2** steps.
 >> - **Username:** visible in the `Users and rights`{.action} tab.
 >> - **Password:** the password associated with the user concerned.
 >> - **Database name:** visible in the `Databases`{.action} tab.
-<!-- CP-STEPS-END:mysql-outside-cp-tabs -->
 
 **Click on the connection method of your choice to view the content.**
 
@@ -192,7 +188,6 @@ You can use your own phpMyAdmin interface to explore the content of your databas
 
 ### Connect to a PostgreSQL database
 
-<!-- CP-STEPS-START:postgresql-tabs -->
 Click on the tabs below to view each of the **2** steps.
 
 > [!tabs]
@@ -211,7 +206,6 @@ Click on the tabs below to view each of the **2** steps.
 >> - **Username:** visible in the `Users and rights`{.action} tab.
 >> - **Password:** the password associated with the user concerned.
 >> - **Database name:** visible in the `Databases`{.action} tab.
-<!-- CP-STEPS-END:postgresql-tabs -->
 
 **Click on the connection method of your choice to view the content.**
 

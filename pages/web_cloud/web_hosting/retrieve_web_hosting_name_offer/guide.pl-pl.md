@@ -31,7 +31,6 @@ W trakcie korzystania z usług może się zdarzyć, że będziesz potrzebował n
 
 ## W praktyce
 
-<!-- CP-STEPS-START:find-plan-name -->
 Kliknij poniższe zakładki, aby wyświetlić kolejne **2** kroki.
 
 > [!tabs]
@@ -48,7 +47,6 @@ Kliknij poniższe zakładki, aby wyświetlić kolejne **2** kroki.
 >> ![Plan](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-plan-pro.png){.thumbnail}
 >>
 >> Pod tą nazwą znajdziesz nazwę oferty hostingu (np. Perso, Pro, Performance, itd.).
-<!-- CP-STEPS-END:find-plan-name -->
 
 ## Sprawdź również <a name="go-further"></a>
 

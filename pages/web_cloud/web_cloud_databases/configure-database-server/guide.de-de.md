@@ -45,7 +45,6 @@ Web Cloud Databases Datenbankserver ermöglichen es Ihnen, die globalen Einstell
 
 Klicken Sie auf die unten stehenden Tabs, um die **2** Schritte nacheinander anzuzeigen.
 
-<!-- CP-STEPS-START:general-information -->
 
 > [!tabs]
 > **Schritt 1**
@@ -73,7 +72,6 @@ Klicken Sie auf die unten stehenden Tabs, um die **2** Schritte nacheinander anz
 >>
 >> ![Allgemeine Informationen](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/general-information/general-information.png){.thumbnail}
 
-<!-- CP-STEPS-END:general-information -->
 
 ### Zugriff verwalten
 
@@ -87,7 +85,6 @@ Um auf Ihre Web Cloud Databases Instanz zuzugreifen, müssen die IP-Adressen ode
 
 Klicken Sie auf die unten stehenden Tabs, um die **3** Schritte nacheinander anzuzeigen.
 
-<!-- CP-STEPS-START:ip-autorisieren -->
 
 > [!tabs]
 > **Schritt 1**
@@ -108,7 +105,6 @@ Klicken Sie auf die unten stehenden Tabs, um die **3** Schritte nacheinander anz
 >>
 >> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/authorized-ips/add-an-ip-address-mask-confirmation.png){.thumbnail}
 
-<!-- CP-STEPS-END:ip-autorisieren -->
 
 ///
 
@@ -116,7 +112,6 @@ Klicken Sie auf die unten stehenden Tabs, um die **3** Schritte nacheinander anz
 
 Klicken Sie auf die unten stehenden Tabs, um die **3** Schritte nacheinander anzuzeigen.
 
-<!-- CP-STEPS-START:hosting-autorisieren -->
 
 > [!tabs]
 > **Schritt 1**
@@ -135,7 +130,6 @@ Klicken Sie auf die unten stehenden Tabs, um die **3** Schritte nacheinander anz
 >>
 >> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/authorized-ips/tab-empty.png){.thumbnail}
 
-<!-- CP-STEPS-END:hosting-autorisieren -->
 
 ///
 
@@ -152,7 +146,6 @@ Klicken Sie auf die unten stehenden Tabs, um die **3** Schritte nacheinander anz
 
 Klicken Sie auf die unten stehenden Tabs, um die **3** Schritte nacheinander anzuzeigen.
 
-<!-- CP-STEPS-START:change-service -->
 
 > [!tabs]
 > **Schritt 1**
@@ -181,7 +174,6 @@ Klicken Sie auf die unten stehenden Tabs, um die **3** Schritte nacheinander anz
 >> >
 >> > Wenn Sie derzeit über eine kostenfreie, in einem Performance Hosting inkludierte Web Cloud Databases Instanz verfügen, wird diese mit dem Wechsel des Dienstes kostenpflichtig.
 
-<!-- CP-STEPS-END:change-service -->
 
 ### Konfiguration des Datenbankservers ändern
 
@@ -191,7 +183,6 @@ Klicken Sie auf die unten stehenden Tabs, um die **3** Schritte nacheinander anz
 
 Klicken Sie auf die unten stehenden Tabs, um die **3** Schritte nacheinander anzuzeigen.
 
-<!-- CP-STEPS-START:mysql-mariadb-konfigurieren -->
 
 > [!tabs]
 > **Schritt 1**
@@ -248,7 +239,6 @@ Klicken Sie auf die unten stehenden Tabs, um die **3** Schritte nacheinander anz
 > Jede Änderung erfordert einen Neustart des Datenbankservers.
 >
 
-<!-- CP-STEPS-END:mysql-mariadb-konfigurieren -->
 
 ///
 
@@ -256,7 +246,6 @@ Klicken Sie auf die unten stehenden Tabs, um die **3** Schritte nacheinander anz
 
 Klicken Sie auf die unten stehenden Tabs, um die **3** Schritte nacheinander anzuzeigen.
 
-<!-- CP-STEPS-START:postgresql-konfigurieren -->
 
 > [!tabs]
 > **Schritt 1**
@@ -290,7 +279,6 @@ Klicken Sie auf die unten stehenden Tabs, um die **3** Schritte nacheinander anz
 >>
 >> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/databases/extensions.png){.thumbnail}
 
-<!-- CP-STEPS-END:postgresql-konfigurieren -->
 
 ///
 
@@ -298,7 +286,6 @@ Klicken Sie auf die unten stehenden Tabs, um die **3** Schritte nacheinander anz
 
 Klicken Sie auf die unten stehenden Tabs, um die **3** Schritte nacheinander anzuzeigen.
 
-<!-- CP-STEPS-START:change-version -->
 
 > [!tabs]
 > **Schritt 1**
@@ -317,7 +304,6 @@ Klicken Sie auf die unten stehenden Tabs, um die **3** Schritte nacheinander anz
 >>
 >> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/general-information/postgre-12-update-version.png){.thumbnail}
 
-<!-- CP-STEPS-END:change-version -->
 
 /// details | Wie erfahre ich die genaue PostgreSQL-Version, die ich verwende?
 
@@ -364,7 +350,6 @@ Um die Logs Ihrer Web Cloud Databases Lösung einzusehen, lesen Sie unsere Anlei
 
 Klicken Sie auf die unten stehenden Tabs, um die **2** Schritte nacheinander anzuzeigen.
 
-<!-- CP-STEPS-START:ram-ueberwachen -->
 
 > [!tabs]
 > **Schritt 1**
@@ -379,7 +364,6 @@ Klicken Sie auf die unten stehenden Tabs, um die **2** Schritte nacheinander anz
 >>
 >> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/metrics/ram-memory-usage-statistics.png){.thumbnail}
 
-<!-- CP-STEPS-END:ram-ueberwachen -->
 
 ///
 
@@ -389,7 +373,6 @@ Diese Grafik ermöglicht es, die Verbindungslast pro Minute während der letzten
 
 Klicken Sie auf die unten stehenden Tabs, um die **2** Schritte nacheinander anzuzeigen.
 
-<!-- CP-STEPS-START:verbindungen-ueberwachen -->
 
 > [!tabs]
 > **Schritt 1**
@@ -404,7 +387,6 @@ Klicken Sie auf die unten stehenden Tabs, um die **2** Schritte nacheinander anz
 >>
 >> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/metrics/statistics-for-total-connections-per-minute.png){.thumbnail}
 
-<!-- CP-STEPS-END:verbindungen-ueberwachen -->
 
 ///
 

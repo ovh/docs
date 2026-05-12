@@ -63,7 +63,6 @@ De modo a impedir as transferências de nome de domínio não autorizadas, os no
 
 ### 1 - Eliminar a proteção contra a transferência do nome de domínio
 
-<!-- CP-STEPS-START:unlock-domain-transfer -->
 Clique nos separadores abaixo para visualizar cada um dos **3** passos.
 
 > [!tabs]
@@ -98,7 +97,6 @@ Clique nos separadores abaixo para visualizar cada um dos **3** passos.
 >> > De facto, alguns *códigos de transferência* são geridos diretamente pelo *registry* da extensão do seu nome de domínio. Um *registry* é uma organização que gere o conjunto dos nomes de domínio para uma determinada extensão. Por exemplo, a **AFNIC** gere o conjunto dos nomes de domínio com a extensão "*.fr*". Se for este o caso, deverá contactar diretamente o *registry* que gere a extensão do seu nome de domínio a fim de recuperar o *código de transferência*.
 >>
 >> ![desativação proteção](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/protection-against-domain-name-transfert-deactivating.png){.thumbnail}
-<!-- CP-STEPS-END:unlock-domain-transfer -->
 
 > [!primary]
 >
@@ -114,7 +112,6 @@ Clique nos separadores abaixo para visualizar cada um dos **3** passos.
 
 Uma vez levantada a proteção contra a transferência, pode recuperar o código de transferência do seu nome de domínio.
 
-<!-- CP-STEPS-START:get-transfer-code -->
 Clique nos separadores abaixo para visualizar cada um dos **3** passos.
 
 > [!tabs]
@@ -137,7 +134,6 @@ Clique nos separadores abaixo para visualizar cada um dos **3** passos.
 >> O código será pedido pelo seu novo agente de registo para concluir o processo de transferência. Pode verificar os detalhes junto do seu novo agente de registo.
 >>
 >> Em vez de introduzir manualmente o código, recomendamos que o copie/cole, uma vez que alguns caracteres podem ser facilmente confundidos.
-<!-- CP-STEPS-END:get-transfer-code -->
 
 Uma vez o código de transferência recuperado, **não bloqueie de novo o seu nome de domínio a menos que já não queira transferi-lo**.
 

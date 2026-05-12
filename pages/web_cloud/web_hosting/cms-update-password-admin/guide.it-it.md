@@ -98,7 +98,6 @@ Hai accesso all’interfaccia di gestione del CMS e conosci la tua password attu
 
 ### Modificare la password amministratore tramite phpMyAdmin dallo Spazio Cliente OVHcloud <a name="via-phpMyAdmin"></a>
 
-<!-- CP-STEPS-START:access-phpmyadmin -->
 Non hai più accesso all'interfaccia di gestione del CMS o non puoi utilizzare la funzionalità "Password dimenticata" perché l'indirizzo email associato non è raggiungibile? Utilizza phpMyAdmin dal tuo [Spazio Cliente OVHcloud](/links/manager) per reimpostare la password direttamente dal database.
 
 Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **4** passaggi.
@@ -121,7 +120,6 @@ Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **4** pa
 > **Passaggio 4**
 >>
 >> Inserisci gli identificativi del database (nome utente e password) definiti durante la creazione del database. Una volta connesso a phpMyAdmin, clicca sulla scheda interessata qui sotto.
-<!-- CP-STEPS-END:access-phpmyadmin -->
 
 > [!tabs]
 > WordPress

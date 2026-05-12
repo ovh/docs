@@ -40,7 +40,6 @@ This guide will show you how to activate a 100M free hosting on your [domain nam
 
 ## Instructions
 
-<!-- CP-STEPS-START:activate-100m-steps -->
 
 To activate your free 100M hosting plan, click on the tabs below to view each of the **3** steps.
 
@@ -91,7 +90,6 @@ To activate your free 100M hosting plan, click on the tabs below to view each of
 > You can also choose to delete the free offer after backing up your hosting data and the contents of your email account.
 >
 > For more details, see our [hosting offers](/links/web/hosting).
-<!-- CP-STEPS-END:activate-100m-steps -->
 
 
 Once your order has been confirmed, you will be sent an email with the information for the [FTP connection](/pages/web_cloud/web_hosting/ftp_connection) to your 100M free hosting plan.

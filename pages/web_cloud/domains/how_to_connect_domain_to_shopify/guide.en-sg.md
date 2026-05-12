@@ -45,7 +45,6 @@ Before following the steps in this guide, we recommend reading our guide on [Edi
 
 ### Configure your DNS records on your OVHcloud account
 
-<!-- CP-STEPS-START:configure-dns-records -->
 Click the tabs below to view each of the **5** steps in sequence.
 
 > [!tabs]
@@ -122,7 +121,6 @@ Click the tabs below to view each of the **5** steps in sequence.
 >> **3 - Modification:** If a "CNAME" record exists for the "www" subdomain, click the `...`{.action} button, then click `Modify record`{.action}. Replace only the **Target** with `shops.myshopify.com.`. Click `Next`{.action} and confirm.
 >>
 >> If no "CNAME" record exists for the "www" subdomain, click `Add an entry`{.action} at the top right, select the `CNAME`{.action} pointer record, enter `www` in the **Subdomain** field and `shops.myshopify.com.` in the **Target** field. Click `Next`{.action} and confirm.
-<!-- CP-STEPS-END:configure-dns-records -->
 
 The DNS zone is now configured to point to your Shopify hosting plan.
 

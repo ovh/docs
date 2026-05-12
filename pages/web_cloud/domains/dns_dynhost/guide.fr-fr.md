@@ -45,7 +45,6 @@ Par exemple, le **DynHost** peut être utilisé si vous *auto-hébergez* (dans l
 
 **Si votre nom de domaine n'utilise pas les serveurs DNS fournis par OVHcloud**, rapprochez-vous du prestataire/fournisseur gérant sa configuration DNS afin de connaître la procédure à suivre.
 
-<!-- CP-STEPS-START:verifier-les-serveurs-dns -->
 **Si votre nom de domaine est enregistré chez OVHcloud**, vous pouvez vérifier si celui-ci utilise notre configuration. Pour cela, cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3** étapes.
 
 > [!tabs]
@@ -66,7 +65,6 @@ Par exemple, le **DynHost** peut être utilisé si vous *auto-hébergez* (dans l
 >> Le tableau qui s'affiche contient les serveurs DNS actuellement définis pour votre nom de domaine. Plusieurs serveurs DNS peuvent être répertoriés, chacun possédant sa propre ligne dans le tableau.
 >>
 >> ![DNS servers](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-servers/tab.png){.thumbnail}
-<!-- CP-STEPS-END:verifier-les-serveurs-dns -->
 
 > [!success]
 >
@@ -81,7 +79,6 @@ Par exemple, le **DynHost** peut être utilisé si vous *auto-hébergez* (dans l
 
 ### 1 - Créer un utilisateur DynHost <a name="step1"></a>
 
-<!-- CP-STEPS-START:creer-un-utilisateur-dynhost -->
 Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **5** étapes.
 
 > [!tabs]
@@ -126,7 +123,6 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **5*
 >>
 >> ![DynHost tab](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dynhost/tab.png){.thumbnail}
 >>
-<!-- CP-STEPS-END:creer-un-utilisateur-dynhost -->
 
 Répétez cette étape autant de fois que nécessaire si vous avez besoin de créer plusieurs identifiants DynHost.
 
@@ -134,7 +130,6 @@ Répétez cette étape autant de fois que nécessaire si vous avez besoin de cr�
 
 La seconde étape consiste à créer l'enregistrement DNS qui devra être mis à jour dynamiquement. Pour rappel, celui-ci ne doit pas déjà exister dans la zone DNS OVHcloud de votre nom de domaine en tant qu'enregistrement « A » ou « AAAA ». Pour le vérifier, et le supprimer si nécessaire, reportez-vous aux informations de notre documentation « [Éditer une zone DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit) ».
 
-<!-- CP-STEPS-START:creer-lenregistrement-dns-dynamique-dynhost -->
 Dès que vous êtes prêt à créer l'enregistrement DynHost, cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4** étapes.
 
 > [!tabs]
@@ -172,7 +167,6 @@ Dès que vous êtes prêt à créer l'enregistrement DynHost, cliquez sur les on
 >> ![Create a DynHost](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dynhost/create-a-dynhost.png){.thumbnail}
 >>
 >> Une fois les champs complétés, cliquez sur le bouton `Valider`{.action}. L'enregistrement DynHost apparaît alors dans le tableau.
-<!-- CP-STEPS-END:creer-lenregistrement-dns-dynamique-dynhost -->
 
 Répétez cette étape autant de fois que nécessaire si vous avez besoin d'enregistrements DynHost supplémentaires.
 
@@ -211,7 +205,6 @@ https://dns.eu.ovhapis.com/nic/update?system=dyndns&hostname=$HOSTNAME&myip=$IP
 
 Vous pouvez vérifier si l'adresse IP de destination a bien été mise à jour.
 
-<!-- CP-STEPS-START:automatiser-le-changement-du-dynhost -->
 Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3** étapes.
 
 > [!tabs]
@@ -233,7 +226,6 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3*
 >>
 >> ![DynHost target](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dynhost/target.png){.thumbnail}
 >>
-<!-- CP-STEPS-END:automatiser-le-changement-du-dynhost -->
 
 > [!warning]
 >

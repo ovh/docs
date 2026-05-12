@@ -30,7 +30,6 @@ Baza danych (bazy danych) służy do przechowywania elementów dynamicznych (dan
 
 ### 1 - Dostęp do karty zarządzania bazami danych na hostingu WWW
 
-<!-- CP-STEPS-START:access-databases-tab -->
 Kliknij poniższe zakładki, aby wyświetlić kolejne **2** kroki.
 
 > [!tabs]
@@ -49,7 +48,6 @@ Kliknij poniższe zakładki, aby wyświetlić kolejne **2** kroki.
 >> Tabela w tej sekcji zawiera wszystkie bazy danych utworzone w ramach Twojego hostingu.
 >>
 >> ![Lista baz danych hostingu WWW](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/tab.png){.thumbnail}
-<!-- CP-STEPS-END:access-databases-tab -->
 
 W tabeli bazy danych mogą mieć kilka różnych Opcje:
 
@@ -65,7 +63,6 @@ W tabeli bazy danych mogą mieć kilka różnych Opcje:
 
 ### 2 - Tworzenie bazy danych
 
-<!-- CP-STEPS-START:create-database -->
 Aby utworzyć bazę danych, kliknij poniższe zakładki, aby wyświetlić kolejne **5** kroków.
 
 > [!tabs]
@@ -113,7 +110,6 @@ Aby utworzyć bazę danych, kliknij poniższe zakładki, aby wyświetlić kolejn
 >> > [!primary]
 >> >
 >> > Aktualizacja wersji silnika dla już utworzonej bazy danych jest obecnie niedostępna.
-<!-- CP-STEPS-END:create-database -->
 
 > [!primary]
 >
@@ -159,7 +155,6 @@ Teraz możesz korzystać z bazy danych. W tym celu potrzebujesz danych do logowa
 
 Informacje te są niezbędne, aby Twoja strona WWW mogła połączyć się z bazą danych.
 
-<!-- CP-STEPS-START:get-connection-info -->
 W razie potrzeby, aby pobrać dane do logowania, kliknij poniższe zakładki, aby wyświetlić kolejne **2** kroki.
 
 > [!tabs]
@@ -170,7 +165,6 @@ W razie potrzeby, aby pobrać dane do logowania, kliknij poniższe zakładki, ab
 > **Krok 2**
 >>
 >> Na stronie, która się wyświetli, kliknij zakładkę `Bazy danych`{.action}. Wszystkie informacje dotyczące połączenia z bazą danych odnajdziesz w tabeli, która się wyświetli. Powyższe nie dotyczy *hasła* ze względów bezpieczeństwa.
-<!-- CP-STEPS-END:get-connection-info -->
 
 > [!warning]
 >
@@ -186,7 +180,6 @@ W zależności od używanego oprogramowania może być konieczne ręczne skonfig
 
 #### Dostęp do interfejsu phpMyAdmin
 
-<!-- CP-STEPS-START:access-phpmyadmin -->
 OVHcloud udostępnia narzędzie online do zarządzania bazami danych "phpMyAdmin". Aby odnaleźć link dostępu do tej aplikacji, kliknij poniższe zakładki, aby wyświetlić kolejne **4** kroki.
 
 > [!tabs]
@@ -209,13 +202,11 @@ OVHcloud udostępnia narzędzie online do zarządzania bazami danych "phpMyAdmin
 >> ![Strona logowania do phpMyAdmin](/pages/assets/screens/other/web-tools/phpmyadmin/pma-interface-login.png){.thumbnail}
 >>
 >> W razie potrzeby skorzystaj z [części 3](#step3) niniejszego przewodnika, aby uzyskać informacje na temat logowania do bazy danych.
-<!-- CP-STEPS-END:access-phpmyadmin -->
 
 #### Korzystanie z kopii zapasowych baz danych
 
 W przypadku każdej bazy danych w ramach hostingu WWW codziennie będą automatycznie tworzone migawki (maksymalnie do 32 migawek). To oznacza, że można szybko przywrócić wcześniejszą wersję bazy danych z poziomu Panelu klienta OVHcloud.
 
-<!-- CP-STEPS-START:check-database-snapshots -->
 Aby sprawdzić, czy są dostępne migawki oraz ich datę i godzinę utworzenia, kliknij poniższe zakładki, aby wyświetlić kolejne **3** kroki.
 
 > [!tabs]
@@ -230,7 +221,6 @@ Aby sprawdzić, czy są dostępne migawki oraz ich datę i godzinę utworzenia, 
 > **Krok 3**
 >>
 >> W tabeli, która się wyświetli kliknij symbol obok zielonego kółka. Z tego miejsca można też pobrać kopię zapasową bazy danych.
-<!-- CP-STEPS-END:check-database-snapshots -->
 
 Więcej informacji na ten temat znajdziesz w naszym przewodniku "[Tworzenie i pobieranie kopii zapasowej bazy danych na hostingu WWW](/pages/web_cloud/web_hosting/sql_database_export)".
 

@@ -59,7 +59,6 @@ En dehors de la [gestion des contacts](/pages/account_and_service_management/acc
 
 ### Lancer la procédure de changement de titulaire ou modifier les informations qui lui sont associées
 
-<!-- CP-STEPS-START:change-domain-owner -->
 Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **6** étapes.
 
 > [!tabs]
@@ -114,7 +113,6 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **6*
 >>
 >> Une fois que les deux destinataires ont confirmé la demande par e-mail, le changement de titulaire du nom de domaine prendra effet.
 >>
-<!-- CP-STEPS-END:change-domain-owner -->
 
 > [!warning]
 >

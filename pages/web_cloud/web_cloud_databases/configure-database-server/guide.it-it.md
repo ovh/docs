@@ -43,7 +43,6 @@ I database server Web Cloud Databases permettono di modificare le impostazioni g
 
 ### Visualizza le informazioni generali del tuo database server
 
-<!-- CP-STEPS-START:visualizza-informazioni-generali -->
 Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **2** passaggi.
 
 > [!tabs]
@@ -72,7 +71,6 @@ Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **2** pa
 >>
 >> ![Informazioni generali](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/general-information/general-information.png){.thumbnail}
 
-<!-- CP-STEPS-END:visualizza-informazioni-generali -->
 
 ### Gestisci i tuoi accessi
 
@@ -80,7 +78,6 @@ Il tuo Web Cloud Databases è accessibile dai tuoi hosting Web OVHcloud e/o dall
 
 **Clicca su ogni titolo per visualizzare il contenuto.**
 
-<!-- CP-STEPS-START:autorizzare-ip -->
 /// details | Autorizzare un indirizzo IP
 
 Per accedere alla tua istanza Web Cloud Databases, è necessario indicare gli indirizzi IP o le classi di IP autorizzati a connettersi ai tuoi database.
@@ -107,9 +104,7 @@ Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **3** pa
 >> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/authorized-ips/add-an-ip-address-mask-confirmation.png){.thumbnail}
 
 ///
-<!-- CP-STEPS-END:autorizzare-ip -->
 
-<!-- CP-STEPS-START:autorizzare-hosting -->
 /// details | Autorizzare le connessioni verso gli hosting Web OVHcloud
 
 Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **3** passaggi.
@@ -132,7 +127,6 @@ Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **3** pa
 >> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/authorized-ips/tab-empty.png){.thumbnail}
 
 ///
-<!-- CP-STEPS-END:autorizzare-hosting -->
 
 ### Modifica la tua offerta Web Cloud Databases <a name="modify-ram-web-cloud-db"></a>
 
@@ -145,7 +139,6 @@ Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **3** pa
 > **Questa azione è irreversibile e l'offerta Web Cloud Databases sarà fatturata separatamente dal tuo hosting Web Performance.**
 >
 
-<!-- CP-STEPS-START:modifica-offerta -->
 Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **3** passaggi.
 
 > [!tabs]
@@ -175,13 +168,11 @@ Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **3** pa
 >> >
 >> > Se disponi attualmente di un Web Cloud Databases gratuito con il tuo hosting Performance, la modifica dell'offerta comporterà la perdita della gratuità.
 
-<!-- CP-STEPS-END:modifica-offerta -->
 
 ### Modifica la configurazione del tuo database server
 
 **Clicca su ogni titolo per visualizzare il contenuto.**
 
-<!-- CP-STEPS-START:configurare-mysql-mariadb -->
 /// details | Istanza MySQL e MariaDB
 
 Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **3** passaggi.
@@ -242,9 +233,7 @@ Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **3** pa
 >
 
 ///
-<!-- CP-STEPS-END:configurare-mysql-mariadb -->
 
-<!-- CP-STEPS-START:configurare-postgresql -->
 /// details | Istanza PostgreSQL
 
 Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **3** passaggi.
@@ -282,11 +271,9 @@ Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **3** pa
 >> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/databases/extensions.png){.thumbnail}
 
 ///
-<!-- CP-STEPS-END:configurare-postgresql -->
 
 ### Modifica la versione MySQL, PostgreSQL o MariaDB del database server
 
-<!-- CP-STEPS-START:modifica-versione -->
 Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **3** passaggi.
 
 > [!tabs]
@@ -338,7 +325,6 @@ show variables like "version";
 > direttamente. È obbligatorio passare per tutte le versioni intermedie.
 >
 
-<!-- CP-STEPS-END:modifica-versione -->
 
 ### Log e Metriche
 
@@ -350,7 +336,6 @@ Per accedere ai log della tua soluzione Web Cloud Databases, consulta la nostra 
 
 ///
 
-<!-- CP-STEPS-START:monitorare-ram -->
 /// details | Monitorare l'utilizzo della RAM
 
 Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **2** passaggi.
@@ -369,9 +354,7 @@ Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **2** pa
 >> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/metrics/ram-memory-usage-statistics.png){.thumbnail}
 
 ///
-<!-- CP-STEPS-END:monitorare-ram -->
 
-<!-- CP-STEPS-START:monitorare-connessioni -->
 /// details | Monitorare il numero di connessioni al minuto
 
 Questo grafico permette di seguire, nelle ultime 24 ore, il carico di connessioni al minuto sul tuo database server.
@@ -392,7 +375,6 @@ Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **2** pa
 >> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/metrics/statistics-for-total-connections-per-minute.png){.thumbnail}
 
 ///
-<!-- CP-STEPS-END:monitorare-connessioni -->
 
 ### Ottimizza i tuoi database
 

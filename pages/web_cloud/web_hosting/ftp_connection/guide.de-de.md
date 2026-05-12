@@ -47,7 +47,6 @@ Um sich mit Ihrem FTP-Speicherplatz zu verbinden, benötigen Sie folgende Inform
 >
 > **Wenn Sie diese Daten bereits haben**, gehen Sie direkt zu Teil 2: [Zugang zu Ihrem FTP-Speicherplatz](#ftp_storage_access).
 
-<!-- CP-STEPS-START:get-ftp-credentials -->
 Wenn Sie die Verbindungsdaten nicht zur Hand haben, klicken Sie auf die Tabs, um die **4** Schritte anzuzeigen.
 
 > [!tabs]
@@ -94,7 +93,6 @@ Wenn Sie die Verbindungsdaten nicht zur Hand haben, klicken Sie auf die Tabs, um
 >> > [!primary]
 >> >
 >> > Je nach Ihrem [OVHcloud Webhosting-Angebot](/links/web/hosting) werden einige der oben beschriebenen Informationen (insbesondere bezüglich SSH) möglicherweise nicht angezeigt.
-<!-- CP-STEPS-END:get-ftp-credentials -->
 
 Wenn Sie das Passwort eines FTP- oder SSH-Benutzers nicht mehr kennen, lesen Sie unsere Anleitung "[Passwort eines FTP-Benutzers ändern](/pages/web_cloud/web_hosting/ftp_change_password)".
 

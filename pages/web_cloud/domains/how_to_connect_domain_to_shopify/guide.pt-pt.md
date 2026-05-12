@@ -45,7 +45,6 @@ Antes de seguir as etapas deste guia, aconselhamos que consulte o nosso guia "[E
 
 ### Configurar os registos DNS na sua conta OVHcloud
 
-<!-- CP-STEPS-START:configure-dns-records -->
 Clique nos separadores abaixo para visualizar sucessivamente cada uma das **5** etapas.
 
 > [!tabs]
@@ -122,7 +121,6 @@ Clique nos separadores abaixo para visualizar sucessivamente cada uma das **5** 
 >> **3 - Modificação:** se existir um registo "CNAME" para o subdomínio "www", clique no botão `...`{.action} e depois em `Alterar a entrada`{.action}. Substitua apenas o **Destino** por `shops.myshopify.com.`. Clique em `Seguinte`{.action} e valide.
 >>
 >> Se não existir nenhum registo "CNAME" para o subdomínio "www", clique em `Adicionar uma entrada`{.action} no canto superior direito, selecione o campo de apontamento `CNAME`{.action}, introduza `www` no campo **Subdomínio** e `shops.myshopify.com.` no campo **Destino**. Clique em `Seguinte`{.action} e valide.
-<!-- CP-STEPS-END:configure-dns-records -->
 
 A zona DNS está agora configurada para apontar para o seu alojamento Shopify.
 

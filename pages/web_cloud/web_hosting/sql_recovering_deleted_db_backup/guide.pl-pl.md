@@ -46,7 +46,6 @@ Udostępniamy API OVHcloud, dzięki któremu programiści lub integratorzy mogą
 
 ### 1 - Uzyskanie nazwy hostingu, do którego przypisana była usunięta baza danych
 
-<!-- CP-STEPS-START:retrieve-webhosting-name -->
 Aby uzyskać nazwę Twojego hostingu WWW, kliknij poniższe zakładki, aby wyświetlić kolejne **2** kroki.
 
 > [!tabs]
@@ -59,7 +58,6 @@ Aby uzyskać nazwę Twojego hostingu WWW, kliknij poniższe zakładki, aby wyśw
 >> W lewym górnym rogu wyświetlonej strony znajdziesz nazwę swojego hostingu WWW po prawej stronie wzmianki `Hosting /`.
 >>
 >> ![Nazwa hostingu WWW w Panelu klienta OVHcloud](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-webhosting-name.png){.thumbnail}
-<!-- CP-STEPS-END:retrieve-webhosting-name -->
 
 ### 2 - Logowanie do API OVHcloud i umożliwienie im dostępu do usług
 

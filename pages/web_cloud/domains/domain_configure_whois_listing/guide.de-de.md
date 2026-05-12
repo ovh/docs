@@ -45,7 +45,6 @@ Bei der Verwendung Ihres Domainnamens kann es vorkommen, dass Sie bestimmte Info
 
 ## In der praktischen Anwendung
 
-<!-- CP-STEPS-START:configure-whois -->
 Klicken Sie auf die Tabs, um die **3** Schritte anzuzeigen.
 
 > [!tabs]
@@ -70,7 +69,6 @@ Klicken Sie auf die Tabs, um die **3** Schritte anzuzeigen.
 >> Nachdem Sie Ihre Auswahl getroffen haben, klicken Sie auf `Bestätigen`{.action}.
 >>
 >> Die Übernahme der Änderungen kann bis zu **48** Stunden dauern. Diese Änderungen werden **nur angewendet, wenn sie von der Registry, die die Domainendung verwaltet, genehmigt wurden**.
-<!-- CP-STEPS-END:configure-whois -->
 
 ## Weiterführende Informationen
  

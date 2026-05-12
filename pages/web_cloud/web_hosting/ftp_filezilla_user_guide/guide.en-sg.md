@@ -66,7 +66,6 @@ You can use it to put files or your website online by [connecting to your web ho
 
 ### 1 - Retrieve the login information for the web hosting plan storage space <a name="part-1"></a>
 
-<!-- CP-STEPS-START:get-ftp-connection-info -->
 Click on the tabs below to view each of the **3** steps.
 
 > [!tabs]
@@ -91,7 +90,6 @@ Click on the tabs below to view each of the **3** steps.
 >> > [!primary]
 >> >
 >> > For security reasons, a user’s password does not appear on the page of the `FTP - SSH`{.action} tab. If you have forgotten it, please refer to [this guide](/pages/web_cloud/web_hosting/ftp_change_password) to modify it.
-<!-- CP-STEPS-END:get-ftp-connection-info -->
 
 ### 2 - Log in to your hosting plan’s storage space using FileZilla
 

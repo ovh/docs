@@ -66,7 +66,6 @@ In case you do not know the required TAG yet, you can request it at your new pro
 >
 > You must be logged in as the [administrator](/pages/account_and_service_management/account_information/managing_contacts) to perform these actions.
 
-<!-- CP-STEPS-START:change-outgoing-tag -->
 Click the tabs below to view each of the **3** steps.
 
 > [!tabs]
@@ -87,7 +86,6 @@ Click the tabs below to view each of the **3** steps.
 >> In the popup window, enter the TAG of your future registrar, then click on `Confirm`{.action}.
 >>
 >> ![outgoingtransfer](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/outgoing-transfer-tag-confirmation.png){.thumbnail}
-<!-- CP-STEPS-END:change-outgoing-tag -->
 
 If you are unable to modify your domain name's TAG in the OVHcloud Control Panel, you can request at the registry to modify it on your behalf. Find more information on the official [Nominet website](https://www.nominet.uk/domain-support/).
 

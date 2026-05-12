@@ -58,7 +58,6 @@ Sie können den Inhalt Ihrer Datenbank über ein Interface einsehen. Es gibt ver
 
 #### Verbindung über OVHcloud phpMyAdmin
 
-<!-- CP-STEPS-START:mysql-phpmyadmin -->
 
 Klicken Sie auf die unten stehenden Tabs, um die **4** Schritte nacheinander anzuzeigen.
 
@@ -108,11 +107,9 @@ Wenn die Verbindung erfolgreich ist, wird die folgende Seite angezeigt.
 > - Fehler #1045 bedeutet, dass die Zugangsdaten falsch sind. Überprüfen Sie Ihren Benutzernamen und/oder Ihr Passwort.
 > - Fehler #2005 bedeutet, dass der Servername überprüft werden sollte und ob dieser korrekt funktioniert.
 
-<!-- CP-STEPS-END:mysql-phpmyadmin -->
 
 #### Verbindung zur Datenbank außerhalb des Kundencenters
 
-<!-- CP-STEPS-START:mysql-external -->
 
 > [!warning]
 >
@@ -137,7 +134,6 @@ Klicken Sie auf die unten stehenden Tabs, um die **2** Schritte nacheinander anz
 >> - **Passwort:** das dem betreffenden Benutzer zugehörige Passwort.
 >> - **Datenbankname:** sichtbar im Tab `Datenbanken`{.action}.
 
-<!-- CP-STEPS-END:mysql-external -->
 
 **Klicken Sie auf die Verbindungsmethode Ihrer Wahl, um den Inhalt anzuzeigen.**
 
@@ -196,7 +192,6 @@ Sie können Ihr eigenes phpMyAdmin-Interface verwenden, um den Inhalt Ihrer Date
 
 ### Mit einer PostgreSQL Datenbank verbinden
 
-<!-- CP-STEPS-START:postgresql -->
 
 Klicken Sie auf die unten stehenden Tabs, um die **2** Schritte nacheinander anzuzeigen.
 
@@ -217,7 +212,6 @@ Klicken Sie auf die unten stehenden Tabs, um die **2** Schritte nacheinander anz
 >> - **Passwort:** das dem betreffenden Benutzer zugehörige Passwort.
 >> - **Datenbankname:** sichtbar im Tab `Datenbanken`{.action}.
 
-<!-- CP-STEPS-END:postgresql -->
 
 **Klicken Sie auf die Verbindungsmethode Ihrer Wahl, um den Inhalt anzuzeigen.**
 

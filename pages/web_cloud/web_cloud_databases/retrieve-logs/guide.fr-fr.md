@@ -72,7 +72,6 @@ Dans certaines situations, vous pouvez être amené à consulter / récupérer l
 
 ### Visualiser les logs en temps réel de votre Web Cloud Databases
 
-<!-- CP-STEPS-START:visualiser-logs-temps-reel -->
 
 Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **2** étapes.
 
@@ -97,7 +96,6 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **2*
 >> >
 >> > Si vous quittez l'onglet `Logs`{.action} puis revenez dessus ultérieurement, l'historique qui s'affichait auparavant aura disparu.
 
-<!-- CP-STEPS-END:visualiser-logs-temps-reel -->
 
 ### Récupérer l'historique des logs de votre solution Web Cloud Databases
 
@@ -112,7 +110,6 @@ Pour récupérer l'historique des logs de votre solution Web Cloud Databases, vo
 
 Pour retrouver les informations de connexion en SFTP à votre solution Web Cloud Databases, cliquez sur les onglets ci-dessous pour afficher successivement chacune des **2** étapes.
 
-<!-- CP-STEPS-START:recuperer-historique-logs -->
 
 > [!tabs]
 > **Étape 1**
@@ -131,7 +128,6 @@ Pour retrouver les informations de connexion en SFTP à votre solution Web Cloud
 >>
 >> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/general-information/sftp-login.png){.thumbnail}
 
-<!-- CP-STEPS-END:recuperer-historique-logs -->
 
 Une fois les identifiants de connexion SFTP récupérés, connectez-vous par l'intermédiaire d'un client FTP (FileZilla, Cyberduck, WinSCP, etc.).
 
@@ -178,7 +174,6 @@ Pour abonner votre solution Web Cloud Databases à un flux de données sur Logs 
 
 /// details | Cas n°1 - S'abonner à un flux déjà existant sur votre solution Logs Data Platform
 
-<!-- CP-STEPS-START:abonner-logs-ldp-cas1 -->
 
 Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4** étapes.
 
@@ -207,13 +202,11 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4*
 >>
 >> Au bout de quelques secondes, un message confirme que l'abonnement a été créé avec succès.
 
-<!-- CP-STEPS-END:abonner-logs-ldp-cas1 -->
 
 ///
 
 /// details | Cas n°2 - S'abonner à un nouveau flux de données sur votre solution Logs Data Platform
 
-<!-- CP-STEPS-START:abonner-logs-ldp-cas2 -->
 
 Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **5** étapes.
 
@@ -250,7 +243,6 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **5*
 >>
 >> Pour abonner votre solution Web Cloud Databases à ce nouveau flux, retournez dans l'onglet `Logs`{.action} de votre solution Web Cloud Databases, puis suivez le [Cas n°1](#wcdb-ldp-case1) décrit plus haut.
 
-<!-- CP-STEPS-END:abonner-logs-ldp-cas2 -->
 
 ///
 

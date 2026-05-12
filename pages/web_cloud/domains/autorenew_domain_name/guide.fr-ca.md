@@ -93,7 +93,6 @@ Si le renouvellement automatique est activé, votre moyen de paiement doit être
 
 ### Changer le mode de renouvellement de mes noms de domaine
 
-<!-- CP-STEPS-START:changer-mode-renouvellement -->
 Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **2** étapes.
 
 > [!tabs]
@@ -118,11 +117,9 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **2*
 >> - Sélectionnez les lignes correspondantes dans le tableau en cochant les cases en début de ligne.
 >> - Cliquez sur le bouton `Actions`{.action} en haut à gauche du tableau.
 >> - Sélectionnez `Activer le paiement automatique`{.action} ou `Désactiver le paiement automatique`{.action}.
-<!-- CP-STEPS-END:changer-mode-renouvellement -->
 
 ### Renouveler mon nom de domaine avant la date d'échéance
 
-<!-- CP-STEPS-START:renouveler-avant-echeance -->
 Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3** étapes.
 
 > [!tabs]
@@ -144,7 +141,6 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3*
 >>
 >> Vous pouvez renouveler le service à tout moment avant son expiration et également choisir la durée de renouvellement.
 >> Dans ce cas, la durée de validité souscrite sera rajoutée au temps de validité en cours. Vous ne perdrez pas le temps de validité restant.
-<!-- CP-STEPS-END:renouveler-avant-echeance -->
 
 ### Suivre le renouvellement de mon nom de domaine
 
@@ -152,7 +148,6 @@ Une fois le prélèvement du renouvellement effectué, le nom de domaine sera re
 
 Les données affichées dans le WHOIS seront alors mises à jour, confirmant le bon renouvellement du nom de domaine.
 
-<!-- CP-STEPS-START:suivre-renouvellement -->
 Pour vérifier le statut du renouvellement de votre nom de domaine, cliquez sur les onglets ci-dessous pour afficher successivement chacune des **2** étapes.
 
 > [!tabs]
@@ -167,11 +162,9 @@ Pour vérifier le statut du renouvellement de votre nom de domaine, cliquez sur 
 >> Dans l'encadré **Informations générales**, vérifiez le statut du renouvellement sous la mention **Statut du nom de domaine**.
 >>
 >> La mention `Renouvellement en cours` est présente une fois le paiement effectué, jusqu'au renouvellement effectif de votre nom de domaine auprès du registre.
-<!-- CP-STEPS-END:suivre-renouvellement -->
 
 ### Résilier mon nom de domaine
 
-<!-- CP-STEPS-START:resilier-nom-de-domaine -->
 Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **2** étapes.
 
 > [!tabs]
@@ -186,7 +179,6 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **2*
 >> Cliquez à droite de la ligne sur le bouton `...`{.action}, puis sur `Résilier mon service`{.action}.
 >>
 >> Cette action est proposée pour les services paramétrés en **renouvellement automatique**. En choisissant cette action, le renouvellement et le prélèvement automatiques sont désactivés pour le service que vous avez sélectionné.
-<!-- CP-STEPS-END:resilier-nom-de-domaine -->
 
 > [!primary]
 >
@@ -196,7 +188,6 @@ Pour plus d'informations, consultez notre guide « **[Comment résilier vos serv
 
 ### Régler la facture de renouvellement d'un nom de domaine
 
-<!-- CP-STEPS-START:regler-facture-renouvellement -->
 Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **2** étapes.
 
 > [!tabs]
@@ -216,7 +207,6 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **2*
 >> >
 >> > - Vous possédez des services en renouvellement automatique.
 >> > - Vous n'avez pas enregistré de moyen de paiement permettant d'effectuer un prélèvement pour le règlement de vos factures.
-<!-- CP-STEPS-END:regler-facture-renouvellement -->
 
 ## FAQ
 
@@ -254,7 +244,6 @@ Une fois le renouvellement effectué par le registre (environ un mois après le 
 
 Les données du WHOIS se mettront ensuite à jour.
 
-<!-- CP-STEPS-START:faq-verifier-statut-renouvellement -->
 Pour vérifier le statut du renouvellement de votre nom de domaine, cliquez sur les onglets ci-dessous pour afficher successivement chacune des **2** étapes.
 
 > [!tabs]
@@ -267,7 +256,6 @@ Pour vérifier le statut du renouvellement de votre nom de domaine, cliquez sur 
 > **Étape 2**
 >>
 >> Dans l'encadré **Informations générales**, vérifiez le statut du renouvellement sous la mention **Statut du nom de domaine**.
-<!-- CP-STEPS-END:faq-verifier-statut-renouvellement -->
 
 ///
 

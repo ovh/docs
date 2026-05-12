@@ -55,7 +55,6 @@ Vous avez besoin de modifier ces autorisations/restrictions ?
 >
 > Pour rappel, si vous venez d'activer votre solution [Web Cloud Databases](/links/web/databases) et que vous souhaitez l'utiliser avec une offre d'[hébergement web OVHcloud](/links/web/hosting), les adresses IP de ces offres sont déjà autorisées par défaut.
 
-<!-- CP-STEPS-START:authorize-ip -->
 Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4** étapes.
 
 > [!tabs]
@@ -99,7 +98,6 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4*
 >> > En effet, cela permettrait d'autoriser l'accès à vos bases de données à l'ensemble des adresses IPv4 existantes.
 >>
 >> Une fois les informations saisies, cliquez sur le bouton `Valider`{.action}.
-<!-- CP-STEPS-END:authorize-ip -->
 
 ## Cas particuliers
 
@@ -123,7 +121,6 @@ Effectivement, cela permettrait d'autoriser l'accès à vos bases de données à
 
 Lors de l'activation de votre solution Web Cloud Databases, l'autorisation d'accès aux hébergements web OVHcloud est activée par défaut.
 
-<!-- CP-STEPS-START:disable-hosting-access -->
 Si vous souhaitez désactiver cette autorisation car vous n'utilisez pas d'hébergement web avec votre solution Web Cloud Databases, cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3** étapes.
 
 > [!tabs]
@@ -144,7 +141,6 @@ Si vous souhaitez désactiver cette autorisation car vous n'utilisez pas d'hébe
 >> Sur la page qui apparaît, décochez la case précédant la mention `Autoriser les hébergements web OVHcloud à accéder à la base de données`{.action}.
 >>
 >> ![Authorised IPs interface](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/authorized-ips/tab-0000-sftp-hosting-enabled.png){.thumbnail}
-<!-- CP-STEPS-END:disable-hosting-access -->
 
 ///
 

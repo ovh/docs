@@ -93,7 +93,6 @@ Ta opcja pozwala, po wpisaniu przekierowanej nazwy domeny, na wyświetlenie nazw
 
 > To "standardowe" przekierowanie zwróci kod HTTP 301.
 
-<!-- CP-STEPS-START:configure-redirect-permanent -->
 Kliknij poniższe karty, aby wyświetlić kolejne **7** kroki.
 
 > [!tabs]
@@ -158,7 +157,6 @@ Kliknij poniższe karty, aby wyświetlić kolejne **7** kroki.
 >> > Uwaga: poprzednia konfiguracja zostanie wyłączona i usunięta.
 >> >
 >>
-<!-- CP-STEPS-END:configure-redirect-permanent -->
 
 ///
 
@@ -176,7 +174,6 @@ Pozycjonowanie w wyszukiwarkach jest gorsze niż w przypadku **stałego widoczne
 
 > To przekierowanie zwróci kod HTTP 302.
 
-<!-- CP-STEPS-START:configure-redirect-temporary -->
 Kliknij poniższe karty, aby wyświetlić kolejne **7** kroki.
 
 > [!tabs]
@@ -239,7 +236,6 @@ Kliknij poniższe karty, aby wyświetlić kolejne **7** kroki.
 >> > Jeśli wyświetla się komunikat "*Istnieją przekierowania z nazw domen, które chcesz przekierować, kolidujące z przekierowaniami, które chcesz dodać*", możesz zaznaczyć pole `Potwierdź usunięcie istniejącego przekierowania`{.action}, aby wymusić zastosowanie przekierowania.
 >> >
 >> > Uwaga: poprzednia konfiguracja zostanie wyłączona i usunięta.
-<!-- CP-STEPS-END:configure-redirect-temporary -->
 
 ///
 
@@ -263,7 +259,6 @@ Ta enkapsulacja uniemożliwia odwiedzającym Twoją stronę zobaczenie nazwy dom
 >
 > Uwaga: strony osadzone za pomocą znacznika *iFrame* mogą nie być czytelne na smartfonach. Ich zawartość nie jest zazwyczaj brana pod uwagę przez wyszukiwarki podczas pozycjonowania i indeksowania Twojej strony.
 
-<!-- CP-STEPS-START:configure-redirect-invisible -->
 Kliknij poniższe karty, aby wyświetlić kolejne **7** kroki.
 
 > [!tabs]
@@ -332,7 +327,6 @@ Kliknij poniższe karty, aby wyświetlić kolejne **7** kroki.
 >> > Jeśli wyświetla się komunikat "*Istnieją przekierowania z nazw domen, które chcesz przekierować, kolidujące z przekierowaniami, które chcesz dodać*", możesz zaznaczyć pole `Potwierdź usunięcie istniejącego przekierowania`{.action}, aby wymusić zastosowanie przekierowania.
 >> >
 >> > Uwaga: poprzednia konfiguracja zostanie wyłączona i usunięta.
-<!-- CP-STEPS-END:configure-redirect-invisible -->
 
 ### Przekierowanie nazwy domeny za pomocą pliku ".htaccess" <a name="htaccess_rewrite"></a>
 

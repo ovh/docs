@@ -67,7 +67,6 @@ Permette di mettere online file o siti Internet [accedendo allo spazio di storag
 
 ### 1 - Recupera le informazioni di connessione allo spazio di storage dell’hosting Web <a name="part-1"></a>
 
-<!-- CP-STEPS-START:get-ftp-connection-info -->
 Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **3** passaggi.
 
 > [!tabs]
@@ -92,7 +91,6 @@ Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **3** pa
 >> > [!primary]
 >> >
 >> > Per motivi di sicurezza, la password di un utente non appare sulla pagina della scheda `FTP - SSH`{.action}. Se l’hai dimenticato, consulta [questa guida](/pages/web_cloud/web_hosting/ftp_change_password) per modificarlo.
-<!-- CP-STEPS-END:get-ftp-connection-info -->
 
 ### 2 - Accedere allo spazio di storage dell’hosting grazie a FileZilla
 

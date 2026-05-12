@@ -51,7 +51,6 @@ Bereiten Sie zunächst Ihre Google Site vor, indem Sie den Anweisungen im Abschn
 
 ### 2. DNS-Einträge in Ihrem OVHcloud Account konfigurieren
 
-<!-- CP-STEPS-START:configure-dns-records -->
 Klicken Sie auf die nachstehenden Tabs, um die **5** Schritte nacheinander anzuzeigen.
 
 > [!tabs]
@@ -137,7 +136,6 @@ Klicken Sie auf die nachstehenden Tabs, um die **5** Schritte nacheinander anzuz
 >> Wenn kein "CNAME"-Eintrag für die Subdomain "www" vorhanden ist, klicken Sie oben rechts auf `Eintrag hinzufügen`{.action}, wählen Sie den Eintragstyp `CNAME`{.action}, geben Sie `www` im Feld **Subdomain** und `ghs.googlehosted.com.` im Feld **Ziel** ein. Klicken Sie auf `Weiter`{.action} und bestätigen Sie.
 >>
 >> Da sich diese Werte ändern können, überprüfen Sie sie auf der Seite "[CNAME record values](https://knowledge.workspace.google.com/admin/support/troubleshooting/cname-record-values?hl=de)" der offiziellen Dokumentation.
-<!-- CP-STEPS-END:configure-dns-records -->
 
 Die DNS-Zone ist nun so konfiguriert, dass sie auf Ihre Google Site verweist.
 

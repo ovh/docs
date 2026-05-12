@@ -58,7 +58,6 @@ First, prepare your Wix hosting plan by following the instructions in **step 1**
 > - Go to the "**Step 2 | Update the DNS records in your domain host's account**" section of the Wix documentation.<br>
 > The following instructions will help you configure your OVHcloud DNS zone more easily.
 
-<!-- CP-STEPS-START:configure-dns-records -->
 Click the tabs below to view each of the **5** steps in sequence.
 
 > [!tabs]
@@ -131,7 +130,6 @@ Click the tabs below to view each of the **5** steps in sequence.
 >> **3 - Modification:** If a "CNAME" record exists for the "www" subdomain, click the `...`{.action} button, then click `Modify record`{.action}. Replace only the **Target** with the value from your Wix interface. Click `Next`{.action} and confirm.
 >>
 >> If no "CNAME" record exists for the "www" subdomain, click `Add an entry`{.action} at the top right, select the `CNAME`{.action} pointer record, enter `www` in the **Subdomain** field and the value from your Wix interface in the **Target** field. Click `Next`{.action} and confirm.
-<!-- CP-STEPS-END:configure-dns-records -->
 
 The DNS zone is now configured to point to your Wix hosting plan.
 

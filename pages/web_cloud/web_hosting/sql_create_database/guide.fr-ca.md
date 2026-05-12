@@ -30,7 +30,6 @@ Une base de données (BDD) est utilisée pour stocker des éléments dynamiques 
 
 ### 1 - Accéder à l'onglet de gestion des bases de données d'un hébergement web
 
-<!-- CP-STEPS-START:access-databases-tab -->
 Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **2** étapes.
 
 > [!tabs]
@@ -49,7 +48,6 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **2*
 >> Le tableau de cette section contient toutes les bases de données créées avec votre hébergement web.
 >>
 >> ![Liste des bases de données de l'hébergement web](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/tab.png){.thumbnail}
-<!-- CP-STEPS-END:access-databases-tab -->
 
 Dans le tableau, les bases de données peuvent disposer de plusieurs statuts différents :
 
@@ -65,7 +63,6 @@ Dans le tableau, les bases de données peuvent disposer de plusieurs statuts dif
 
 ### 2 - Créer la base de données
 
-<!-- CP-STEPS-START:create-database -->
 Pour créer une base de données, cliquez sur les onglets ci-dessous pour afficher successivement chacune des **5** étapes.
 
 > [!tabs]
@@ -113,7 +110,6 @@ Pour créer une base de données, cliquez sur les onglets ci-dessous pour affich
 >> > [!primary]
 >> >
 >> > La mise à jour de la version du moteur d'une base de données déjà créée est actuellement indisponible.
-<!-- CP-STEPS-END:create-database -->
 
 > [!primary]
 >
@@ -159,7 +155,6 @@ Répétez ce processus autant de fois que vous le souhaitez afin de créer plusi
 
 Ces informations sont essentielles pour que votre site web puisse se connecter à la base de données.
 
-<!-- CP-STEPS-START:get-connection-info -->
 Si besoin, pour récupérer ces informations de connexion, cliquez sur les onglets ci-dessous pour afficher successivement chacune des **2** étapes.
 
 > [!tabs]
@@ -170,7 +165,6 @@ Si besoin, pour récupérer ces informations de connexion, cliquez sur les ongle
 > **Étape 2**
 >>
 >> Sur la page qui s'affiche, cliquez sur l'onglet `Bases de données`{.action}. Vous retrouverez l'ensemble des informations de connexion à votre base de données dans le tableau qui s'affiche, à l'exception du *mot de passe* pour des raisons de sécurité.
-<!-- CP-STEPS-END:get-connection-info -->
 
 > [!warning]
 >
@@ -186,7 +180,6 @@ Selon le logiciel utilisé, il est possible que cette connexion nécessite d'êt
 
 #### Accéder à l'interface phpMyAdmin
 
-<!-- CP-STEPS-START:access-phpmyadmin -->
 OVHcloud fournit un outil en ligne pour la gestion des bases de données, « phpMyAdmin ». Pour trouver le lien d'accès à cette application, cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4** étapes.
 
 > [!tabs]
@@ -209,13 +202,11 @@ OVHcloud fournit un outil en ligne pour la gestion des bases de données, « php
 >> ![Page de connexion à l'interface phpMyAdmin](/pages/assets/screens/other/web-tools/phpmyadmin/pma-interface-login.png){.thumbnail}
 >>
 >> Si besoin, consultez la [partie 3](#step3) du présent guide pour retrouver les informations de connexion à votre base de données.
-<!-- CP-STEPS-END:access-phpmyadmin -->
 
 #### Se servir des sauvegardes des bases de données
 
 Pour chaque base de données d'hébergement web, des snapshots sont créés automatiquement chaque jour (jusqu'à 32 maximum). Vous pouvez donc restaurer rapidement une version antérieure d'une base de données à partir de votre espace client OVHcloud.
 
-<!-- CP-STEPS-START:check-database-snapshots -->
 Pour vérifier les snapshots disponibles ainsi que leur date et heure de création, cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3** étapes.
 
 > [!tabs]
@@ -230,7 +221,6 @@ Pour vérifier les snapshots disponibles ainsi que leur date et heure de créati
 > **Étape 3**
 >>
 >> Dans le tableau qui s'affiche, cliquez sur le symbole juste à côté du cercle vert. Vous pouvez également télécharger chaque sauvegarde d'une base de données depuis ce même endroit.
-<!-- CP-STEPS-END:check-database-snapshots -->
 
 Retrouvez plus d'informations sur le sujet dans notre guide « [Récupérer la sauvegarde de la base de données d'un hébergement web](/pages/web_cloud/web_hosting/sql_database_export) ».
 

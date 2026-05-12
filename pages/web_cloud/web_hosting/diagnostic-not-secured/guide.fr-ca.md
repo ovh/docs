@@ -64,7 +64,6 @@ Afin de résoudre cette anomalie, vous devrez :
 
 #### Vérifier l'adresse IP de l'hébergement
 
-<!-- CP-STEPS-START:check-hosting-ip -->
 Les messages d'erreur mentionnés [plus haut](#objectif) ne signifient pas forcément que votre site est hébergé sur l'une de nos [offres Web Cloud](/links/web/hosting). Vous devez donc vérifier l'adresse IP du serveur auquel est relié votre [nom de domaine](/links/web/domains).
 
 Pour retrouver l'adresse IP de votre [hébergement OVHcloud](/links/web/hosting), cliquez sur les onglets ci-dessous pour afficher successivement chacune des **2** étapes.
@@ -83,11 +82,9 @@ Pour retrouver l'adresse IP de votre [hébergement OVHcloud](/links/web/hosting)
 >> ![IPv4-IPv6](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-ipv4-and-ipv6.png){.thumbnail}
 >>
 >> Notez l'adresse IPv4 et/ou IPv6, puis poursuivez la lecture du guide.
-<!-- CP-STEPS-END:check-hosting-ip -->
 
 #### Vérifier l'adresse IP dans la zone DNS
 
-<!-- CP-STEPS-START:check-dns-zone-ip -->
 Il vous faut maintenant vérifier que l'adresse IP indiquée dans la [Zone DNS](/pages/web_cloud/domains/dns_zone_edit) correspond bien à celle de votre [hébergement Web Cloud](/links/web/hosting).
 
 Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **2** étapes.
@@ -104,7 +101,6 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **2*
 >> Notez la cible de l'entrée de type `A` pour votre nom de domaine :
 >>
 >> ![zone-dns-ip](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/dashboard-entry-a.png){.thumbnail}
-<!-- CP-STEPS-END:check-dns-zone-ip -->
 
 #### Effectuer les actions nécessaires
 
@@ -168,7 +164,6 @@ Si besoin, contactez votre webmaster ou les [partenaires OVHcloud](/links/partne
 
 ### 2 - Vérifier le certificat SSL de votre hébergement <a name="etape2"></a>
 
-<!-- CP-STEPS-START:check-ssl-certificate -->
 Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **2** étapes.
 
 > [!tabs]
@@ -183,7 +178,6 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **2*
 >> Dans l'onglet `Informations générales`{.action}, vérifiez la partie `Certificat SSL` :
 >>
 >> ![ssl-certificate-in-general-tab](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/no-ssl-certificate.png){.thumbnail}
-<!-- CP-STEPS-END:check-ssl-certificate -->
 
 #### Scénario 1 : votre hébergement ne contient pas de certificat SSL
 

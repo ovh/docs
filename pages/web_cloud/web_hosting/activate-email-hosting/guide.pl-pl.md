@@ -41,7 +41,6 @@ Jeśli zamówiłeś hosting i nie powiązałeś go bezpośrednio z nazwą domeny
 
 ### Aktywacja kont e-mail zawartych w ofercie hostingu WWW
 
-<!-- CP-STEPS-START:activate-email -->
 Kliknij poniższe zakładki, aby wyświetlić kolejne **3** kroki.
 
 > [!tabs]
@@ -64,7 +63,6 @@ Kliknij poniższe zakładki, aby wyświetlić kolejne **3** kroki.
 >>
 >> ![email-activation](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/order-activate-email-included-webhosting-step-1.png){.thumbnail}
 >>
-<!-- CP-STEPS-END:activate-email -->
 
 > [!primary]
 > Jeśli chcesz korzystać z większej liczby kont e-mail zawartych w ofercie, zachęcamy do zamówienia wyższej [oferty hostingu www](/links/web/hosting) na naszej stronie handlowej.
@@ -76,7 +74,6 @@ Kliknij poniższe zakładki, aby wyświetlić kolejne **3** kroki.
 
 Jeśli Twój hosting www niebawem wygaśnie, możesz zażądać zachowania Twoich kont e-mail **przed** datą wygaśnięcia.
 
-<!-- CP-STEPS-START:detach-email -->
 Kliknij poniższe zakładki, aby wyświetlić kolejne **2** kroki.
 
 > [!tabs]
@@ -93,7 +90,6 @@ Kliknij poniższe zakładki, aby wyświetlić kolejne **2** kroki.
 >>
 >> ![email-detach](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/detach-email-included-webhosting.png){.thumbnail}
 >>
-<!-- CP-STEPS-END:detach-email -->
 
 Odpowiednia oferta MX zostanie Ci zaproponowana w momencie zakupu. Kiedy opłacisz zamówienie, Twoje konta e-mail będą nadal działać po zawieszeniu hostingu.
  
@@ -101,7 +97,6 @@ Odpowiednia oferta MX zostanie Ci zaproponowana w momencie zakupu. Kiedy opłaci
 
 Możesz trwale usunąć usługę e-mail powiązaną z Twoim hostingiem.
 
-<!-- CP-STEPS-START:cancel-email -->
 > [!warning]
 >
 > Uwaga: operacja ta jest nieodwracalna. Nie ma możliwości ponownej aktywacji usługi e-mail po zrezygnowaniu z tej opcji.
@@ -125,7 +120,6 @@ Kliknij poniższe zakładki, aby wyświetlić kolejne **2** kroki.
 >> > [!warning]
 >> >
 >> > W celu potwierdzenia usunięcia oferty e-mail powiązanej z Twoim hostingiem, otrzymasz e-mail z linkiem weryfikacyjnym. Aby rozpocząć operację usuwania, należy kliknąć to łącze.
-<!-- CP-STEPS-END:cancel-email -->
 
 #### Przypadki szczególne - Usunięcie usługi e-mail powiązanej z Twoim hostingiem (w celu przypisania jej do innej domeny)
 

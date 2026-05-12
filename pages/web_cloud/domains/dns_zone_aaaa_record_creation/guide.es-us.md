@@ -52,7 +52,6 @@ details[open]>summary::before {
 
 ### Añadir un registro DNS de tipo AAAA a un dominio
 
-<!-- CP-STEPS-START:add-aaaa-record -->
 Haga clic en las pestañas siguientes para ver cada uno de los **5** pasos.
 
 > [!tabs]
@@ -77,7 +76,6 @@ Haga clic en las pestañas siguientes para ver cada uno de los **5** pasos.
 > **Paso 5**
 >>
 >> Revise el resumen y haga clic en `Aceptar`{.action}. Espere hasta **24** horas para que la propagación de la adición en la red DNS sea plenamente efectiva.
-<!-- CP-STEPS-END:add-aaaa-record -->
 
 /// details | Haga clic aquí para obtener más información.
 
@@ -93,7 +91,6 @@ Consulte nuestras guías detalladas:
 
 ### Añadir un registro DNS de tipo AAAA para el subdominio de un dominio
 
-<!-- CP-STEPS-START:add-aaaa-record-subdomain -->
 Haga clic en las pestañas siguientes para ver cada uno de los **5** pasos.
 
 > [!tabs]
@@ -118,7 +115,6 @@ Haga clic en las pestañas siguientes para ver cada uno de los **5** pasos.
 > **Paso 5**
 >>
 >> Revise el resumen y haga clic en `Aceptar`{.action}. Espere hasta **24** horas para que la propagación de la adición en la red DNS sea plenamente efectiva.
-<!-- CP-STEPS-END:add-aaaa-record-subdomain -->
 
 /// details | Haga clic aquí para obtener más información.
 

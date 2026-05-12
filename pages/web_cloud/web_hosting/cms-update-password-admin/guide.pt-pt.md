@@ -98,7 +98,6 @@ Tem acesso à interface de administração do CMS e conhece a sua palavra-passe 
 
 ### Alterar a palavra-passe de administrador através do phpMyAdmin a partir da Área de Cliente OVHcloud <a name="via-phpMyAdmin"></a>
 
-<!-- CP-STEPS-START:access-phpmyadmin -->
 Já não tem acesso à interface de administração do CMS ou não pode utilizar a funcionalidade "Esqueceu-se da Palavra-passe" porque o endereço de e-mail associado está inacessível? Utilize o phpMyAdmin a partir da [Área de Cliente OVHcloud](/links/manager) para repor a palavra-passe diretamente a partir da base de dados.
 
 Clique nos separadores abaixo para visualizar cada uma das **4** etapas.
@@ -121,7 +120,6 @@ Clique nos separadores abaixo para visualizar cada uma das **4** etapas.
 > **Etapa 4**
 >>
 >> Introduza as credenciais da base de dados (nome de utilizador e palavra-passe) definidas durante a criação da base de dados. Depois de se conectar ao phpMyAdmin, clique no respetivo separador abaixo.
-<!-- CP-STEPS-END:access-phpmyadmin -->
 
 > [!tabs]
 > WordPress

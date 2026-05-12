@@ -45,7 +45,6 @@ Die OVHcloud API wird Entwicklern zur Verfügung gestellt, um alle verfügbaren 
 
 ### 1 - Rufen Sie den Namen des Webhostings ab, mit dem die gelöschte Datenbank verbunden war
 
-<!-- CP-STEPS-START:retrieve-webhosting-name -->
 Um den Namen Ihres Webhostings abzurufen, Klicken Sie auf die Tabs, um die **2** Schritte anzuzeigen.
 
 > [!tabs]
@@ -58,7 +57,6 @@ Um den Namen Ihres Webhostings abzurufen, Klicken Sie auf die Tabs, um die **2**
 >> Links oben auf der angezeigten Seite finden Sie den Namen Ihres Webhostings rechts neben `Hosting-Pakete /`.
 >>
 >> ![Name des Webhostings im OVHcloud Kundencenter](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-webhosting-name.png){.thumbnail}
-<!-- CP-STEPS-END:retrieve-webhosting-name -->
 
 ### 2 - Einloggen, um die OVHcloud API zu verwenden und Zugriff auf Ihre Dienste zu erlauben
 

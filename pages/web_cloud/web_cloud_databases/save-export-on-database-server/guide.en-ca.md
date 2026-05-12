@@ -57,7 +57,6 @@ Your database can contain a large amount of essential information for your websi
 
 #### Creating a manual backup
 
-<!-- CP-STEPS-START:creating-manual-backup -->
 Click on the tabs below to view each of the **3** steps.
 
 > [!tabs]
@@ -78,11 +77,9 @@ Click on the tabs below to view each of the **3** steps.
 >> Click the `...`{.action} button to the right of the database, then on `Back up now`{.action}.
 >>
 >> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/databases/back-up-now.png){.thumbnail}
-<!-- CP-STEPS-END:creating-manual-backup -->
 
 #### Exporting a backup
 
-<!-- CP-STEPS-START:exporting-backup -->
 Click on the tabs below to view each of the **4** steps.
 
 > [!tabs]
@@ -107,7 +104,6 @@ Click on the tabs below to view each of the **4** steps.
 > **Step 4**
 >>
 >> The list of available backups appears. Click the `...`{.action} button to the right of the backup you want, then on `Download the backup`{.action}.
-<!-- CP-STEPS-END:exporting-backup -->
 
 ### Backing up and exporting a database outside the Control Panel
 

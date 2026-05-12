@@ -45,7 +45,6 @@ Durante l’utilizzo del nome di dominio potrebbe essere necessario mostrare o n
 
 ## Procedura
 
-<!-- CP-STEPS-START:configure-whois -->
 Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **3** passi.
 
 > [!tabs]
@@ -70,7 +69,6 @@ Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **3** pa
 >> Una volta effettuate le scelte, clicca sul pulsante `Registrare le modifiche`{.action}.
 >>
 >> Per l'applicazione delle modifiche potrebbe essere necessario un massimo di **48** ore. Le modifiche saranno applicate **solo se autorizzate dal Registro che gestisce l’estensione del nome di dominio**.
-<!-- CP-STEPS-END:configure-whois -->
 
 ## Per saperne di più
  

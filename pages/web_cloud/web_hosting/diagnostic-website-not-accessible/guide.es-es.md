@@ -66,7 +66,6 @@ En caso de que su sitio web no sea accesible, pueden aparecer varios errores en 
 > Por lo tanto, le recomendamos que active la [renovación automática](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#procedimiento) en todas sus suscripciones de OVHcloud.
 >
 
-<!-- CP-STEPS-START:check-domain-renewal -->
 Para comprobar la validez de la suscripción relativa a su nombre de dominio, haga clic en las fichas siguientes para ver cada una de las **3** etapas.
 
 > [!tabs]
@@ -83,7 +82,6 @@ Para comprobar la validez de la suscripción relativa a su nombre de dominio, ha
 > **Etapa 3**
 >>
 >> Una vez completada la renovación, su sitio web estará disponible en un plazo máximo de 48 horas.
-<!-- CP-STEPS-END:check-domain-renewal -->
 
 ### 2 - Comprobar los servidores DNS
 
@@ -91,7 +89,6 @@ Para comprobar la validez de sus [servidores DNS](/pages/web_cloud/domains/dns_s
 
 **Haga clic en la situación correspondiente a su caso para ver el contenido.**
 
-<!-- CP-STEPS-START:check-dns-servers-scenario1 -->
 /// details | Situación 1 - No hay anomalías en los servidores DNS
 
 Para comprobar los servidores DNS declarados, haga clic en las fichas siguientes para ver cada una de las **3** etapas.
@@ -116,7 +113,6 @@ Para comprobar los servidores DNS declarados, haga clic en las fichas siguientes
 >> ![srv-dns-ok](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/dashboard-entry-ns.png){.thumbnail}
 
 ///
-<!-- CP-STEPS-END:check-dns-servers-scenario1 -->
 
 /// details | Situación 2 - Aparecerá un aviso por encima de la zona DNS
 
@@ -142,7 +138,6 @@ Su sitio web estará disponible en un plazo máximo de 48 horas.
 
 ///
 
-<!-- CP-STEPS-START:fix-missing-ns-records -->
 /// details | Situación 3 - No aparece ningún registro de tipo NS en la zona DNS
 
 La **Zona DNS** de su dominio no contiene ningún registro de tipo `NS`:
@@ -179,7 +174,6 @@ Haga clic en las fichas siguientes para ver cada una de las **4** etapas.
 >> Su sitio web estará disponible en un plazo máximo de 24 horas.
 
 ///
-<!-- CP-STEPS-END:fix-missing-ns-records -->
 
 ### 3 - Comprobar la zona DNS <a name="step3"></a>
 
@@ -187,7 +181,6 @@ En esta etapa, accederá a la dirección IP de su alojamiento y la añadirá a s
 
 Si su sitio web no está alojado en la infraestructura de OVHcloud o si está gestionado por otro proveedor, contacte con el servicio de soporte correspondiente.
 
-<!-- CP-STEPS-START:check-hosting-ip-for-dns -->
 Si su sitio web está alojado en uno de nuestros [planes de hosting](/links/web/hosting), haga clic en las fichas siguientes para ver cada una de las **2** etapas.
 
 > [!tabs]
@@ -204,7 +197,6 @@ Si su sitio web está alojado en uno de nuestros [planes de hosting](/links/web/
 >> ![IPv4-IPv6](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-ipv4-and-ipv6.png){.thumbnail}
 >>
 >> Copie la dirección IPv4 y/o IPv6 de su dominio.
-<!-- CP-STEPS-END:check-hosting-ip-for-dns -->
 
 A continuación, cópiela en la [zona DNS](/pages/web_cloud/domains/dns_zone_edit) de su dominio modificando o creando uno o más registros de tipo `A`.
 

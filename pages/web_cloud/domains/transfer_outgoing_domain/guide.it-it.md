@@ -63,7 +63,6 @@ Per impedire trasferimenti di nomi di dominio non autorizzati, i nomi di dominio
 
 ### 1 - Rimuovere la protezione contro il trasferimento del nome di dominio
 
-<!-- CP-STEPS-START:unlock-domain-transfer -->
 Clicca sulle schede qui sotto per visualizzare ciascuno dei **3** step.
 
 > [!tabs]
@@ -98,7 +97,6 @@ Clicca sulle schede qui sotto per visualizzare ciascuno dei **3** step.
 >> > Infatti, alcuni *codici di trasferimento* sono direttamente gestiti dal *Registro* dell'estensione del tuo nome di dominio. Un *Registro* è un'organizzazione che gestisce l'insieme dei nomi di dominio per una determinata estensione. Ad esempio, l'**AFNIC** gestisce l'insieme dei nomi di dominio con l'estensione "*.fr*". In questo caso, contatta direttamente il *Registro* che gestisce l'estensione del tuo nome di dominio per recuperare il *codice di trasferimento*.
 >>
 >> ![disattivazione protezione](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/protection-against-domain-name-transfert-deactivating.png){.thumbnail}
-<!-- CP-STEPS-END:unlock-domain-transfer -->
 
 > [!primary]
 >
@@ -114,7 +112,6 @@ Clicca sulle schede qui sotto per visualizzare ciascuno dei **3** step.
 
 Una volta disattivata la protezione contro il trasferimento, puoi recuperare il codice di trasferimento del tuo nome di dominio.
 
-<!-- CP-STEPS-START:get-transfer-code -->
 Clicca sulle schede qui sotto per visualizzare ciascuno dei **3** step.
 
 > [!tabs]
@@ -137,7 +134,6 @@ Clicca sulle schede qui sotto per visualizzare ciascuno dei **3** step.
 >> Il codice verrà richiesto dal tuo nuovo Registrar per completare il processo di trasferimento. Puoi verificare i dettagli presso il tuo nuovo Registrar.
 >>
 >> Piuttosto che digitare manualmente il codice, ti consigliamo di copiarlo/incollarlo perché alcuni caratteri possono essere facilmente confondibili.
-<!-- CP-STEPS-END:get-transfer-code -->
 
 Una volta recuperato il codice di trasferimento, **non bloccare nuovamente il tuo nome di dominio a meno che non desideri più trasferirlo**.
 

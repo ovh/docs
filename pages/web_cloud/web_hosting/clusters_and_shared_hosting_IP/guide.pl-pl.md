@@ -51,7 +51,6 @@ W tym przewodniku znajdziesz wszystkie adresy IP hostingów WWW OVHcloud. Dzięk
 
 ## W praktyce
 
-<!-- CP-STEPS-START:instructions-find-cluster -->
 Aby poznać klaster hostingu WWW, w którym znajduje się Twoja usługa, kliknij poniższe zakładki, aby wyświetlić kolejne **2** kroki.
 
 > [!tabs]
@@ -66,7 +65,6 @@ Aby poznać klaster hostingu WWW, w którym znajduje się Twoja usługa, kliknij
 >> W ramce **Informacje ogólne** na stronie, która się wyświetla, pobierz numer klastra oznaczony jako **Klaster** (3 cyfry zawarte między `0` i `9`).
 >>
 >>![Numery klastra i pliku](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-cluster-and-filer.png){.thumbnail}
-<!-- CP-STEPS-END:instructions-find-cluster -->
 
 **Kliknij poniżej na numer klastra, w którym znajduje się Twój hosting, aby wyświetlić odpowiednie adresy IP.**
 

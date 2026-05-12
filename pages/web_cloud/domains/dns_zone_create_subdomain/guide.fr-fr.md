@@ -90,7 +90,6 @@ Celui-ci disposera alors de sa propre zone pour configurer ses enregistrements D
 
 ### 1 - Créer la zone DNS via l'espace client OVHcloud
 
-<!-- CP-STEPS-START:create-dns-zone -->
 Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3** étapes.
 
 > [!tabs]
@@ -120,7 +119,6 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3*
 >> |Non|Sélectionnez **Non** si vous prévoyez d'utiliser des services OVHcloud comme un [hébergement web](/links/web/hosting), car la zone DNS sera automatiquement préconfigurée pour ces services.<br>![no-minimal-dns-entries](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/dashboard-ovh-full-entries.png){.thumbnail}|
 >>
 >> Une fois votre choix effectué, suivez les étapes affichées dans votre espace client OVHcloud jusqu'à la création de la zone DNS.
-<!-- CP-STEPS-END:create-dns-zone -->
 
 ### 2 - Éditer la zone DNS (facultatif)
 
@@ -140,7 +138,6 @@ Vous devez d'abord récupérer le nom des **serveurs DNS** OVHcloud associés à
 
 Pour les retrouver, cliquez sur les onglets ci-dessous pour afficher successivement chacune des **2** étapes.
 
-<!-- CP-STEPS-START:retrieve-ns-servers -->
 > [!tabs]
 > **Étape 1**
 >>
@@ -160,7 +157,6 @@ Pour les retrouver, cliquez sur les onglets ci-dessous pour afficher successivem
 >> - `nsXX.ovh.net` et `dnsXX.ovh.net` ou, `nsXXX.ovh.net` et `dnsXXX.ovh.net` (où chaque `X` représente un chiffre compris entre **0** et **9**).
 >> - `nsXX.ovh.ca` et `dnsXX.ovh.ca` ou, `nsXXX.ovh.ca` et `dnsXXX.ovh.ca` (où chaque `X` représente un chiffre compris entre **0** et **9**).
 >> - `ns200.anycast.me` et `dns200.anycast.me` (si vous avez souscrit à l'option [DNS anycast](/links/web/domains-options)).
-<!-- CP-STEPS-END:retrieve-ns-servers -->
 
 Une fois les 2 noms de serveur DNS récupérés, 2 situations sont possibles :
 
@@ -170,7 +166,6 @@ Une fois les 2 noms de serveur DNS récupérés, 2 situations sont possibles :
 
 Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4** étapes.
 
-<!-- CP-STEPS-START:add-ns-entries-ovhcloud -->
 > [!tabs]
 > **Étape 1**
 >>
@@ -203,7 +198,6 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4*
 >> **Réitérez l'ensemble des étapes pour le second serveur DNS.**
 >>
 >> Si besoin, consultez en complément notre guide « [Éditer une zone DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit) ».
-<!-- CP-STEPS-END:add-ns-entries-ovhcloud -->
 
 ///
 

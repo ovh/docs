@@ -57,7 +57,6 @@ First, prepare your Webflow hosting plan by following the instructions in the **
 > - Go to the "**How to set your DNS records**" section of the Webflow documentation.<br>
 > The following instructions will help you configure your OVHcloud DNS zone more easily.
 
-<!-- CP-STEPS-START:configure-dns-records -->
 Click the tabs below to view each of the **5** steps in sequence.
 
 > [!tabs]
@@ -137,7 +136,6 @@ Click the tabs below to view each of the **5** steps in sequence.
 >> **3 - Modification:** If a "CNAME" record exists for the "www" subdomain, click the `...`{.action} button, then click `Modify record`{.action}. Replace only the **Target** with `proxy-ssl.webflow.com.`. Click `Next`{.action} and confirm.
 >>
 >> If no "CNAME" record exists for the "www" subdomain, click `Add an entry`{.action} at the top right, select the `CNAME`{.action} pointer record, enter `www` in the **Subdomain** field and `proxy-ssl.webflow.com.` in the **Target** field. Click `Next`{.action} and confirm.
-<!-- CP-STEPS-END:configure-dns-records -->
 
 The DNS zone is now configured to point to your Webflow hosting plan.
 

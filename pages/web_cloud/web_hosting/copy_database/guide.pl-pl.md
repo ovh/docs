@@ -64,7 +64,6 @@ W zależności od Twojego przypadku ścieżka dostępu do źródłowej bazy dany
 
 **Kliknij na odpowiednią sytuację, aby wyświetlić zawartość.**
 
-<!-- CP-STEPS-START:copy-from-startsql -->
 /// details | Z bazy danych Start SQL
 
 Kliknij poniższe zakładki, aby wyświetlić kolejne **6** kroków.
@@ -119,9 +118,7 @@ Kliknij poniższe zakładki, aby wyświetlić kolejne **6** kroków.
 >> ![Zadania w trakcie](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/copy-db-tool-ongoing-tasks.png){.thumbnail}
 
 ///
-<!-- CP-STEPS-END:copy-from-startsql -->
 
-<!-- CP-STEPS-START:copy-from-wcdb -->
 /// details | Z serwera Web Cloud Databases
 
 Kliknij poniższe zakładki, aby wyświetlić kolejne **6** kroków.
@@ -176,7 +173,6 @@ Kliknij poniższe zakładki, aby wyświetlić kolejne **6** kroków.
 >> ![Zadania w trakcie](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/copy-db-tool-ongoing-tasks.png){.thumbnail}
 
 ///
-<!-- CP-STEPS-END:copy-from-wcdb -->
 
 ### Konfiguracja strony WWW z nową bazą danych
 

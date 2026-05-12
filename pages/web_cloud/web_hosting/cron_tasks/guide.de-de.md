@@ -58,7 +58,6 @@ Auf Ihrem OVHcloud Webhosting können Sie Skripte verwenden, um bestimmte Operat
 
 ### Erstellung eines automatisierten Tasks
 
-<!-- CP-STEPS-START:create-cron-task -->
 Klicken Sie auf die Tabs, um die **5** Schritte anzuzeigen.
 
 > [!tabs]
@@ -121,11 +120,9 @@ Klicken Sie auf die Tabs, um die **5** Schritte anzuzeigen.
 >> ![cron confirmation](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/cron/add-scheduling-step-3.png){.thumbnail}
 >>
 >> Der Task wird in einigen Minuten bereit sein. Sie können dann alle Einstellungen ändern oder den Task löschen, indem Sie auf `...`{.action} in der Task-Übersichtstabelle im OVHcloud Kundencenter klicken.
-<!-- CP-STEPS-END:create-cron-task -->
 
 ### Task bearbeiten oder löschen
 
-<!-- CP-STEPS-START:modify-delete-cron-task -->
 Klicken Sie auf die Tabs, um die **3** Schritte anzuzeigen.
 
 > [!tabs]
@@ -144,7 +141,6 @@ Klicken Sie auf die Tabs, um die **3** Schritte anzuzeigen.
 >> Klicken Sie in der hier angezeigten Tabelle auf den Button `...`{.action} rechts neben dem Task.
 >>
 >> Klicken Sie auf den Button `Bearbeiten`{.action} oder `Löschen`{.action}, je nachdem, welche Aktion Sie für den Task ausführen möchten.
-<!-- CP-STEPS-END:modify-delete-cron-task -->
 
 ### Einschränkungen bei geplanten Tasks auf Ihrem Webhosting
 

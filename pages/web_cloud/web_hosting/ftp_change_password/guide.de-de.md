@@ -61,7 +61,6 @@ Je nach Ihrem [OVHcloud Webhosting](/links/web/hosting) erfolgt die Änderung de
 
 **Klicken Sie auf Ihr Angebot, um den Inhalt anzuzeigen.**
 
-<!-- CP-STEPS-START:change-ftp-password-perso -->
 /// details | Perso und kostenloses 100M Hosting (ein FTP-Benutzer)
 
 Klicken Sie auf die Tabs, um die **3** Schritte anzuzeigen.
@@ -86,9 +85,7 @@ Klicken Sie auf die Tabs, um die **3** Schritte anzuzeigen.
 >> ![change-ftp-password-step1-perso](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/change-password-perso.png){.thumbnail}
 
 ///
-<!-- CP-STEPS-END:change-ftp-password-perso -->
 
-<!-- CP-STEPS-START:change-ftp-password-pro-performance -->
 /// details | Pro und Performance (mehrere FTP-Benutzer)
 
 Klicken Sie auf die Tabs, um die **3** Schritte anzuzeigen.
@@ -113,7 +110,6 @@ Klicken Sie auf die Tabs, um die **3** Schritte anzuzeigen.
 >> ![change-ftp-password-pro](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/change-password-pro.png){.thumbnail}
 
 ///
-<!-- CP-STEPS-END:change-ftp-password-pro-performance -->
 
 > [!primary]
 >

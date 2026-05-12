@@ -56,7 +56,6 @@ Rekordy CNAME są użyteczne, jeśli chcesz uniknąć konieczności zmiany adres
 
 ### Dodaj rekord DNS typu CNAME dla subdomeny nazwy domeny
 
-<!-- CP-STEPS-START:add-cname-record -->
 Kliknij poniższe karty, aby wyświetlić kolejne **5** kroki.
 
 > [!tabs]
@@ -81,7 +80,6 @@ Kliknij poniższe karty, aby wyświetlić kolejne **5** kroki.
 > **Krok 5**
 >>
 >> Sprawdź podsumowanie i kliknij `Zatwierdź`{.action}. Odczekaj maksymalnie **24** godziny, aby dodanie w sieci DNS stało się w pełni skuteczne.
-<!-- CP-STEPS-END:add-cname-record -->
 
 /// details | Zapoznaj się ze szczegółowymi przewodnikami:
 

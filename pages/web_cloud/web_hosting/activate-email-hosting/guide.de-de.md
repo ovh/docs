@@ -41,7 +41,6 @@ Wenn Sie ein Webhosting bestellt haben, ohne es direkt mit einem Domainnamen zu 
 
 ### Aktivierung Ihrer bei Ihrem Webhosting inklusiven E-Mail-Adressen
 
-<!-- CP-STEPS-START:activate-email-option -->
 Klicken Sie auf die Tabs, um die **3** Schritte anzuzeigen.
 
 > [!tabs]
@@ -64,7 +63,6 @@ Klicken Sie auf die Tabs, um die **3** Schritte anzuzeigen.
 >>
 >> ![Aktivierung der E-Mail-Adressen](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/order-activate-email-included-webhosting-step-1.png){.thumbnail}
 >>
-<!-- CP-STEPS-END:activate-email-option -->
 
 > [!primary]
 > Wenn Sie mehr inklusive E-Mail-Accounts nutzen möchten, können Sie ein leistungsfähigeres [Webhosting](/links/web/hosting) über unsere Webseite auswählen.
@@ -76,7 +74,6 @@ Klicken Sie auf die Tabs, um die **3** Schritte anzuzeigen.
 
 Wenn Ihr Webhosting in Kürze abläuft, können Sie die Speicherung Ihrer E-Mail-Adressen **vor dem Ablaufdatum** anfordern.
 
-<!-- CP-STEPS-START:detach-email-option -->
 Klicken Sie auf die Tabs, um die **2** Schritte anzuzeigen.
 
 > [!tabs]
@@ -92,7 +89,6 @@ Klicken Sie auf die Tabs, um die **2** Schritte anzuzeigen.
 >> Klicken Sie rechts davon auf `...`{.action} und danach auf `Meine E-Mail-Option abtrennen`{.action}.
 >>
 >> ![Aktivierung E-Mail](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/detach-email-included-webhosting.png){.thumbnail}
-<!-- CP-STEPS-END:detach-email-option -->
 
 Eine passende MX Plan Lösung wird Ihnen dann zum Kauf angeboten. Sobald die Bestellung bezahlt ist, können Sie Ihre E-Mail-Accounts auch nach Ablauf des Webhostings nutzen.
  
@@ -104,7 +100,6 @@ Sie können die optionalen E-Mail-Accounts in Verbindung mit Ihrem Webhosting en
 >
 > Diese Aktion kann nicht rückgängig gemacht werden. Nach der Kündigung können Sie die optionalen E-Mail-Konten nicht wieder aktivieren.
 
-<!-- CP-STEPS-START:cancel-email-option -->
 Klicken Sie auf die Tabs, um die **2** Schritte anzuzeigen.
 
 > [!tabs]
@@ -124,7 +119,6 @@ Klicken Sie auf die Tabs, um die **2** Schritte anzuzeigen.
 >> > [!warning]
 >> >
 >> > Um die Löschung des mit Ihrem Webhosting verbundenen E-Mail-Angebots zu bestätigen, erhalten Sie per E-Mail einen Bestätigungslink. Sie müssen auf diesen Link klicken, damit der Löschvorgang gestartet wird.
-<!-- CP-STEPS-END:cancel-email-option -->
 
 #### Sonderfall - Löschung des mit Ihrem Webhosting verbundenen E-Mail-Dienstes um diesen mit einem anderen Domainnamen zu verbinden
 

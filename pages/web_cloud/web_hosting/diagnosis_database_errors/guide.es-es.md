@@ -59,7 +59,6 @@ Compruebe en primer lugar en la página [Web Cloud Status](https://web-cloud.sta
 
 **Haga clic en la información que busca para ver el contenido.**
 
-<!-- CP-STEPS-START:find-datacenter -->
 /// details | Encontrar el datacenter de su alojamiento web
 
 Haga clic en las pestañas para ver sucesivamente cada una de las **2** etapas.
@@ -76,7 +75,6 @@ Haga clic en las pestañas para ver sucesivamente cada una de las **2** etapas.
 >> En la pestaña `Información general`{.action}, localice el `Datacenter`.
 
 ///
-<!-- CP-STEPS-END:find-datacenter -->
 
 /// details | Encontrar el clúster y el filer de su alojamiento web
 
@@ -84,7 +82,6 @@ Consulte nuestra guía "[Conocer el clúster y el filer de su alojamiento web](/
 
 ///
 
-<!-- CP-STEPS-START:find-wcdb-server-name -->
 /// details | Encontrar el nombre del servidor Web Cloud Databases
 
 Haga clic en las pestañas para ver sucesivamente cada una de las **2** etapas.
@@ -101,7 +98,6 @@ Haga clic en las pestañas para ver sucesivamente cada una de las **2** etapas.
 >> Localice `Nombre del host` en el apartado `SQL` de la sección `Datos de conexión`.
 
 ///
-<!-- CP-STEPS-END:find-wcdb-server-name -->
 
 /// details | Encontrar el servidor de su base de datos de alojamiento web
 
@@ -143,7 +139,6 @@ define('DB_PASSWORD', 'my_password');
 define('DB_HOST', 'my_server.mysql.db:port');
 ```
 
-<!-- CP-STEPS-START:check-wp-db-credentials -->
 Haga clic en las pestañas para ver sucesivamente cada una de las **2** etapas.
 
 > [!tabs]
@@ -161,7 +156,6 @@ Haga clic en las pestañas para ver sucesivamente cada una de las **2** etapas.
 >> - **my_user** debe coincidir con lo que se indica en `Nombre de usuario`;
 >> - **my_password** corresponde a la [contraseña de la base de datos](/pages/web_cloud/web_hosting/sql_change_password);
 >> - **my_server.mysql.db** debe coincidir con lo que se indica en `Dirección del servidor`.
-<!-- CP-STEPS-END:check-wp-db-credentials -->
 
 > [!primary]
 >
@@ -191,7 +185,6 @@ Si dispone de una fórmula **Starter** o **Personal**, le recomendamos que cambi
 > Si detecta un aumento repentino en el tamaño de su base de datos o si tiene un sitio web de tipo "blog" que normalmente no consume datos, le recomendamos que contacte inmediatamente con un [proveedor especializado](/links/partner). No podremos ofrecerle soporte sobre este tema.
 >
 
-<!-- CP-STEPS-START:upgrade-plan -->
 Para realizar este cambio, haga clic en las pestañas para ver sucesivamente cada una de las **3** etapas.
 
 > [!tabs]
@@ -208,7 +201,6 @@ Para realizar este cambio, haga clic en las pestañas para ver sucesivamente cad
 > **Etapa 3**
 >>
 >> Haga clic en `Cambiar de plan`{.action}.
-<!-- CP-STEPS-END:upgrade-plan -->
 
 Si utiliza un plan **Performance**, consulte el [método 2](#methode2).
 
@@ -229,7 +221,6 @@ También puede migrar sus datos a una nueva base de datos:
 
 Una vez realizada la [copia de seguridad de su base de datos](/pages/web_cloud/web_hosting/sql_database_export), conéctese a su interfaz [phpMyAdmin](/pages/web_cloud/web_hosting/sql_create_database#acceder-a-la-interfaz-phpmyadmin) para eliminar los datos innecesarios con los comandos Drop, Delete y Truncate.
 
-<!-- CP-STEPS-START:recalculate-quota-method3 -->
 Para recalcular el espacio utilizado, haga clic en las pestañas para ver sucesivamente cada una de las **3** etapas.
 
 > [!tabs]
@@ -246,7 +237,6 @@ Para recalcular el espacio utilizado, haga clic en las pestañas para ver sucesi
 > **Etapa 3**
 >>
 >> Haga clic en `Recalcular el espacio utilizado`{.action}.
-<!-- CP-STEPS-END:recalculate-quota-method3 -->
 
 > [!warning]
 >
@@ -257,7 +247,6 @@ Para recalcular el espacio utilizado, haga clic en las pestañas para ver sucesi
 
 Para optimizar su base de datos, siga las instrucciones de nuestra guía "[Configurar su servidor de bases de datos](/pages/web_cloud/web_cloud_databases/configure-database-server#gestionar-las-bases-de-datos)".
 
-<!-- CP-STEPS-START:recalculate-quota-method4 -->
 Para recalcular el espacio utilizado, haga clic en las pestañas para ver sucesivamente cada una de las **3** etapas.
 
 > [!tabs]
@@ -274,7 +263,6 @@ Para recalcular el espacio utilizado, haga clic en las pestañas para ver sucesi
 > **Etapa 3**
 >>
 >> Haga clic en `Recalcular el espacio utilizado`{.action}.
-<!-- CP-STEPS-END:recalculate-quota-method4 -->
 
 > [!warning]
 >
@@ -287,7 +275,6 @@ El siguiente mensaje indica que su servidor [Web Cloud Databases](/pages/web_clo
 
 ![ram-exceeded](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/general-information/ram-exceeded.png){.thumbnail}
 
-<!-- CP-STEPS-START:increase-ram-wcdb -->
 Para aumentar la [cantidad de memoria RAM](/pages/web_cloud/web_cloud_databases/configure-database-server#cambiar-la-oferta-del-servidor-de-bases-de-datos), haga clic en las pestañas para ver sucesivamente cada una de las **3** etapas.
 
 > [!tabs]
@@ -304,7 +291,6 @@ Para aumentar la [cantidad de memoria RAM](/pages/web_cloud/web_cloud_databases/
 > **Etapa 3**
 >>
 >> Haga clic en el botón `...`{.action} en el apartado `RAM` y, a continuación, en `Cambiar la cantidad de RAM`{.action}.
-<!-- CP-STEPS-END:increase-ram-wcdb -->
 
 > [!warning]
 >
@@ -330,7 +316,6 @@ También puede optimizar su base de datos siguiendo las instrucciones de nuestra
 
 Este mensaje de error significa que la base de datos que está intentando importar contiene elementos no autorizados en la infraestructura compartida de OVHcloud.
 
-<!-- CP-STEPS-START:check-db-empty-before-import -->
 En primer lugar, asegúrese de que la base de datos esté vacía. Para ello, haga clic en las pestañas para ver sucesivamente cada una de las **3** etapas.
 
 > [!tabs]
@@ -351,7 +336,6 @@ En primer lugar, asegúrese de que la base de datos esté vacía. Para ello, hag
 >> También puede marcar la casilla `Vaciar la base de datos actual`{.action} justo antes de [iniciar la importación](/pages/web_cloud/web_hosting/sql_importing_mysql_database#importar-una-copia-de-seguridad-desde-el-area-de-cliente):
 >>
 >> ![import-empty-current-db](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/import-empty-current-db.png){.thumbnail}
-<!-- CP-STEPS-END:check-db-empty-before-import -->
 
 Si lo necesita, puede ponerse en contacto con nuestra [comunidad de usuarios](/links/community) o con un [proveedor especializado](/links/partner). No podremos asistirle en la corrección de esta anomalía.
 
@@ -385,7 +369,6 @@ Este mensaje de error aparece durante [la importación de una base de datos](/pa
 
 Para resolver esta anomalía, puede:
 
-<!-- CP-STEPS-START:increase-ram-for-import -->
 - Aumentar la [cantidad de memoria RAM](/pages/web_cloud/web_cloud_databases/configure-database-server#seguimiento-de-la-ram-consumida). Para ello, haga clic en las pestañas para ver sucesivamente cada una de las **3** etapas.
 
 > [!tabs]
@@ -402,7 +385,6 @@ Para resolver esta anomalía, puede:
 > **Etapa 3**
 >>
 >> Haga clic en el botón `...`{.action} en el apartado `RAM` y, a continuación, en `Cambiar la cantidad de RAM`{.action}.
-<!-- CP-STEPS-END:increase-ram-for-import -->
 
 - Fraccione su base de datos para importarla en varias operaciones en lugar de una (para cualquier duda sobre las operaciones a realizar, contacte con nuestra [comunidad](/links/community) o con los [partners de OVHcloud](/links/partner). Nosotros no podremos asistirle en este asunto.
 
@@ -455,7 +437,6 @@ Compruebe el nombre del servidor correspondiente.
 
 **Haga clic en la situación correspondiente para ver el contenido.**
 
-<!-- CP-STEPS-START:find-server-name-hosting -->
 /// details | Base de datos en un alojamiento web
 
 Haga clic en las pestañas para ver sucesivamente cada una de las **2** etapas.
@@ -472,9 +453,7 @@ Haga clic en las pestañas para ver sucesivamente cada una de las **2** etapas.
 >> Haga clic en la pestaña `Bases de datos`{.action}. El nombre del servidor a introducir aparece en la columna `Dirección del servidor`.
 
 ///
-<!-- CP-STEPS-END:find-server-name-hosting -->
 
-<!-- CP-STEPS-START:find-server-name-wcdb -->
 /// details | Base de datos en un servidor Web Cloud Databases
 
 Haga clic en las pestañas para ver sucesivamente cada una de las **2** etapas.
@@ -491,7 +470,6 @@ Haga clic en las pestañas para ver sucesivamente cada una de las **2** etapas.
 >> En la pestaña `Información general`{.action}, el nombre del servidor a introducir se encuentra en la sección `Datos de conexión`, apartado `SQL`, mención `Nombre del host`.
 
 ///
-<!-- CP-STEPS-END:find-server-name-wcdb -->
 
 ### No es posible conectarse a una base de datos Cloud Databases
 

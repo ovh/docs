@@ -30,7 +30,6 @@ Una base de datos (BD) se utiliza para almacenar elementos dinámicos (datos de 
 
 ### 1 - Acceder a la pestaña de gestión de las bases de datos de un alojamiento web
 
-<!-- CP-STEPS-START:access-databases-tab -->
 Haga clic en las fichas siguientes para ver cada una de las **2** etapas.
 
 > [!tabs]
@@ -49,7 +48,6 @@ Haga clic en las fichas siguientes para ver cada una de las **2** etapas.
 >> La tabla de esta sección contiene todas las bases de datos creadas con su alojamiento web.
 >>
 >> ![Lista de bases de datos del alojamiento web](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/tab.png){.thumbnail}
-<!-- CP-STEPS-END:access-databases-tab -->
 
 En la tabla, las bases de datos pueden tener varios tipos diferentes:
 
@@ -65,7 +63,6 @@ En la tabla, las bases de datos pueden tener varios tipos diferentes:
 
 ### 2 - Crear la base de datos
 
-<!-- CP-STEPS-START:create-database -->
 Para crear una base de datos, haga clic en las fichas siguientes para ver cada una de las **5** etapas.
 
 > [!tabs]
@@ -113,7 +110,6 @@ Para crear una base de datos, haga clic en las fichas siguientes para ver cada u
 >> > [!primary]
 >> >
 >> > La actualización de la versión del motor de una base de datos ya creada no está disponible en este momento.
-<!-- CP-STEPS-END:create-database -->
 
 > [!primary]
 >
@@ -159,7 +155,6 @@ Ya puede utilizar su base de datos. Para ello, necesitará su información de co
 
 Esta información es esencial para que el sitio web pueda conectarse a la base de datos.
 
-<!-- CP-STEPS-START:get-connection-info -->
 Si necesita recuperar esta información de conexión, haga clic en las fichas siguientes para ver cada una de las **2** etapas.
 
 > [!tabs]
@@ -170,7 +165,6 @@ Si necesita recuperar esta información de conexión, haga clic en las fichas si
 > **Etapa 2**
 >>
 >> En la página que se muestra, abra la pestaña `Bases de datos`{.action}. Encontrará toda la información de conexión a su base de datos en la tabla que se muestra, excepto la *contraseña* por motivos de seguridad.
-<!-- CP-STEPS-END:get-connection-info -->
 
 > [!warning]
 >
@@ -186,7 +180,6 @@ Según el programa utilizado, es posible que esta conexión necesite ser configu
 
 #### Acceder a la interfaz phpMyAdmin
 
-<!-- CP-STEPS-START:access-phpmyadmin -->
 OVHcloud ofrece una herramienta en línea para la gestión de bases de datos llamada phpMyAdmin. Para encontrar el enlace de acceso a esta aplicación, haga clic en las fichas siguientes para ver cada una de las **4** etapas.
 
 > [!tabs]
@@ -209,13 +202,11 @@ OVHcloud ofrece una herramienta en línea para la gestión de bases de datos lla
 >> ![Página de conexión a phpMyAdmin](/pages/assets/screens/other/web-tools/phpmyadmin/pma-interface-login.png){.thumbnail}
 >>
 >> Si lo necesita, consulte el [apartado 3](#step3) de esta guía para obtener la información de conexión a la base de datos.
-<!-- CP-STEPS-END:access-phpmyadmin -->
 
 #### Utilizar las copias de seguridad de las bases de datos
 
 Para cada base de datos de alojamiento web, se crean snapshots automáticamente cada día (hasta un máximo de 32). Puede restaurar rápidamente una versión anterior de una base de datos desde el área de cliente de OVHcloud.
 
-<!-- CP-STEPS-START:check-database-snapshots -->
 Para comprobar los snapshots disponibles, así como la fecha y hora de su creación, haga clic en las fichas siguientes para ver cada una de las **3** etapas.
 
 > [!tabs]
@@ -230,7 +221,6 @@ Para comprobar los snapshots disponibles, así como la fecha y hora de su creaci
 > **Etapa 3**
 >>
 >> En la tabla que aparece, haga clic en el símbolo situado junto al círculo verde. También puede descargar cada copia de seguridad de una base de datos desde ese mismo lugar.
-<!-- CP-STEPS-END:check-database-snapshots -->
 
 Para más información, consulte nuestra guía "[Recuperar la copia de seguridad de la base de datos de un alojamiento web](/pages/web_cloud/web_hosting/sql_database_export)".
 

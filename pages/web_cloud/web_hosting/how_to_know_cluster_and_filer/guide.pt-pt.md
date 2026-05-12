@@ -28,7 +28,6 @@ Durante a utilização do alojamento web, poderá ser necessário conhecer o nú
 
 ## Instruções
 
-<!-- CP-STEPS-START:find-cluster-and-filer -->
 Clique nos separadores abaixo para visualizar cada uma das **2** etapas.
 
 > [!tabs]
@@ -43,7 +42,6 @@ Clique nos separadores abaixo para visualizar cada uma das **2** etapas.
 >> No quadro **Informações gerais** da página que se apresenta, recupere o número do cluster com a menção **Cluster** (3 algarismos compreendidos entre `0` e `9`) e o número do filer com a menção **Filer**.
 >>
 >> ![Números do cluster e do filer](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-cluster-and-filer.png){.thumbnail}
-<!-- CP-STEPS-END:find-cluster-and-filer -->
 
 ## Quer saber mais?
 

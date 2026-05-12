@@ -99,7 +99,6 @@ Puoi trovare maggiori informazioni più avanti, allo step 5.
 
 Correla i grafici relativi all’utilizzo delle risorse del tuo hosting (ulteriori informazioni qui di seguito) per trovare l’origine dei ritardi e poi consulta i log per rilevare le date dei picchi.
 
-<!-- CP-STEPS-START:access-stats-and-logs -->
 Per accedere alle statistiche e ai log, clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **3** passaggi.
 
 > [!tabs]
@@ -120,9 +119,7 @@ Per accedere alle statistiche e ai log, clicca sulle schede qui sotto per visual
 >> Clicca sul pulsante `Visualizza le statistiche`{.action} per accedere alle statistiche di visita del sito Web o su `Visualizza i log`{.action} per consultare i log disponibili per il tuo hosting Web.
 >>
 >> ![logs](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/statistics-and-logs/tab.png){.thumbnail}
-<!-- CP-STEPS-END:access-stats-and-logs -->
 
-<!-- CP-STEPS-START:access-resource-charts -->
 Per accedere ai grafici, clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **3** passaggi.
 
 > [!tabs]
@@ -152,7 +149,6 @@ Per accedere ai grafici, clicca sulle schede qui sotto per visualizzare in seque
 >> - **Comandi FTP**: mostra i vari comandi FTP utilizzati nell’hosting. Ad esempio i tentativi di accesso riusciti e non riusciti, download, upload, eliminazione file, ecc.
 >> - **Tempo di risposta SQL**: mostra i tempi di risposta delle richieste (visibile solo se utilizzi un database).
 >> - **Richieste SQL**: mostra la quantità di richieste (visibile solo se utilizzi un database).
-<!-- CP-STEPS-END:access-resource-charts -->
 
 ### 5 - Controlla le richieste della rete
 

@@ -59,7 +59,6 @@ Para além da [gestão dos contactos](/pages/account_and_service_management/acco
 
 ### Iniciar o procedimento de alteração de titular ou alterar as informações associadas
 
-<!-- CP-STEPS-START:change-domain-owner -->
 Clique nos separadores abaixo para visualizar cada uma das **6** etapas.
 
 > [!tabs]
@@ -114,7 +113,6 @@ Clique nos separadores abaixo para visualizar cada uma das **6** etapas.
 >>
 >> Depois de ambos os destinatários terem confirmado o pedido por e-mail, a alteração de titular do nome de domínio ficará efetiva.
 >>
-<!-- CP-STEPS-END:change-domain-owner -->
 
 > [!warning]
 >

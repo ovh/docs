@@ -93,7 +93,6 @@ If automatic renewal is enabled, your payment method must be valid before automa
 
 ### Changing the renewal mode of domain names
 
-<!-- CP-STEPS-START:change-renewal-mode -->
 Click the tabs below to view each of the **2** steps.
 
 > [!tabs]
@@ -118,11 +117,9 @@ Click the tabs below to view each of the **2** steps.
 >> - Select the corresponding rows in the table by ticking the boxes on the left.
 >> - Click the `Actions`{.action} button in the top left of the table.
 >> - Select `Enable automatic payment`{.action} or `Disable automatic payment`{.action}.
-<!-- CP-STEPS-END:change-renewal-mode -->
 
 ### Renewing a domain name before the expiry date
 
-<!-- CP-STEPS-START:renew-before-expiry -->
 Click the tabs below to view each of the **3** steps.
 
 > [!tabs]
@@ -144,7 +141,6 @@ Click the tabs below to view each of the **3** steps.
 >>
 >> You can renew the service at any time before its expiry and also choose the renewal duration.
 >> In this case, the duration of validity subscribed to will be added to the current validity period. You will not lose any remaining validity time.
-<!-- CP-STEPS-END:renew-before-expiry -->
 
 ### Checking the renewal status of a domain name
 
@@ -152,7 +148,6 @@ Once you have paid for your renewal, the domain name will be renewed the day bef
 
 The data displayed in the WHOIS will then be updated, confirming the correct domain name renewal.
 
-<!-- CP-STEPS-START:check-renewal-status -->
 To check the renewal status of your domain name, click the tabs below to view each of the **2** steps.
 
 > [!tabs]
@@ -167,11 +162,9 @@ To check the renewal status of your domain name, click the tabs below to view ea
 >> In the **General information** section, check the renewal status under **Domain name status**.
 >>
 >> The status `Renewal in progress` will appear once the payment has been made, until your domain name has been renewed with the registry.
-<!-- CP-STEPS-END:check-renewal-status -->
 
 ### Cancelling a domain name
 
-<!-- CP-STEPS-START:cancel-domain -->
 Click the tabs below to view each of the **2** steps.
 
 > [!tabs]
@@ -186,7 +179,6 @@ Click the tabs below to view each of the **2** steps.
 >> Click the `...`{.action} button to the right of the line, then click `Cancel my subscription`{.action}.
 >>
 >> This action is available for services set to **automatic renewal**. By choosing this action, automatic payment and renewal will be disabled for the service you have selected.
-<!-- CP-STEPS-END:cancel-domain -->
 
 > [!primary]
 >
@@ -196,7 +188,6 @@ For more information, refer to our guide “**[How to cancel my OVHcloud service
 
 ### Paying a domain name renewal bill
 
-<!-- CP-STEPS-START:pay-renewal-bill -->
 Click the tabs below to view each of the **2** steps.
 
 > [!tabs]
@@ -216,7 +207,6 @@ Click the tabs below to view each of the **2** steps.
 >> >
 >> > - You have services that renew automatically.
 >> > - You have not registered a payment method that can be used to pay your bills.
-<!-- CP-STEPS-END:pay-renewal-bill -->
 
 ## FAQ
 
@@ -254,7 +244,6 @@ Once the registry has renewed your domain name (approximately one month after th
 
 WHOIS data will then be updated.
 
-<!-- CP-STEPS-START:faq-check-renewal-status -->
 To check the renewal status of your domain name, click the tabs below to view each of the **2** steps.
 
 > [!tabs]
@@ -267,7 +256,6 @@ To check the renewal status of your domain name, click the tabs below to view ea
 > **Step 2**
 >>
 >> In the **General information** section, check the renewal status under **Domain name status**.
-<!-- CP-STEPS-END:faq-check-renewal-status -->
 
 ///
 

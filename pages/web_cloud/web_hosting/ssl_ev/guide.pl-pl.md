@@ -101,7 +101,6 @@ Jeśli potrzebujesz pomocy, zapoznaj się z naszymi przewodnikami:
 
 #### 1.1 - Dla już istniejącej domeny i hostingu OVHcloud
 
-<!-- CP-STEPS-START:order-sectigo-ev -->
 Kliknij poniższe zakładki, aby wyświetlić kolejne **5** kroki.
 
 > [!tabs]
@@ -140,7 +139,6 @@ Kliknij poniższe zakładki, aby wyświetlić kolejne **5** kroki.
 >> Kliknij polecenie `Dalej`{.action} raz **wszystkie elementy** poprawnie wprowadzone.
 >>
 >> Postępuj zgodnie z poleceniem aż do płatności, aby potwierdzić zlecenie utworzenia certyfikatu SSL.
-<!-- CP-STEPS-END:order-sectigo-ev -->
 
 > [!alert]
 >

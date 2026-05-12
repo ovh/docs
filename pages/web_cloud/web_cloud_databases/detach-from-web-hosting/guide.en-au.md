@@ -28,7 +28,6 @@ updated: 2025-01-24
 
 ## Instructions
 
-<!-- CP-STEPS-START:detach-from-web-hosting-instructions -->
 Click on the tabs below to view each of the **3** steps.
 
 > [!tabs]
@@ -50,7 +49,6 @@ Click on the tabs below to view each of the **3** steps.
 >>
 >> ![Detach Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/detach-my-web-cloud-databases.png){.thumbnail}
 >>
-<!-- CP-STEPS-END:detach-from-web-hosting-instructions -->
 
 Once you have completed the 4 steps, your Web Cloud Databases solution will be unbound within a maximum of a few hours.
 

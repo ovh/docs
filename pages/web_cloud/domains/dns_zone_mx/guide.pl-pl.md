@@ -79,7 +79,6 @@ Wartości te są wspólne dla wszystkich ofert z wyjątkiem [Private Exchange](/
 
 Rekordy MX muszą być skonfigurowane w strefie DNS Twojej nazwy domeny.
 
-<!-- CP-STEPS-START:configure-mx-record -->
 ### Konfiguracja rekordu MX w strefie DNS OVHcloud
 
 Kliknij poniższe karty, aby wyświetlić kolejno każdy z **5** kroków.
@@ -121,7 +120,6 @@ Kliknij poniższe karty, aby wyświetlić kolejno każdy z **5** kroków.
 > [!primary]
 >
 > W związku z wprowadzoną zmianą, należy wziąć pod uwagę czas propagacji, który wynosi od 4 do 24 godzin maksimum. Po tym czasie zmiana będzie aktywna.
-<!-- CP-STEPS-END:configure-mx-record -->
 
 ## Sprawdź również
 

@@ -58,7 +58,6 @@ details[open]>summary::before {
 
 #### Connessione tramite phpMyAdmin OVHcloud
 
-<!-- CP-STEPS-START:mysql-phpmyadmin-ovhcloud -->
 Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **4** passaggi.
 
 > [!tabs]
@@ -106,11 +105,9 @@ Se la connessione ha esito positivo, verrà visualizzata la pagina seguente.
 >
 > - Errore #1045 significa che le credenziali non sono corrette. Verifica il nome utente e/o la password.
 > - Errore #2005 significa che il nome del server deve essere verificato, così come il suo corretto funzionamento.
-<!-- CP-STEPS-END:mysql-phpmyadmin-ovhcloud -->
 
 #### Connessione al database al di fuori dello Spazio Cliente
 
-<!-- CP-STEPS-START:mysql-external-connection -->
 > [!warning]
 >
 > Se utilizzi una soluzione "Web Cloud Databases"/"SQL Privato", ricorda di autorizzare il tuo IP seguendo la guida sulla [configurazione del tuo database server](/pages/web_cloud/web_cloud_databases/configure-database-server#gerer-vos-acces).
@@ -188,11 +185,9 @@ Sei ora connesso al tuo database:
 Puoi utilizzare la tua interfaccia phpMyAdmin per esplorare il contenuto del tuo database. Per farlo, installa phpMyAdmin sul tuo server o hosting Web. Durante l'installazione, assicurati di configurare correttamente le informazioni del tuo database server e del database desiderato affinché phpMyAdmin possa connettersi.
 
 ///
-<!-- CP-STEPS-END:mysql-external-connection -->
 
 ### Connettersi a un database PostgreSQL
 
-<!-- CP-STEPS-START:postgresql-connection -->
 Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **2** passaggi.
 
 > [!tabs]
@@ -260,7 +255,6 @@ Sei ora connesso al tuo database:
 ![config connection](/pages/assets/screens/other/web-tools/squirrel/general-dashboard.png){.thumbnail}
 
 ///
-<!-- CP-STEPS-END:postgresql-connection -->
 
 ## Per saperne di più
 

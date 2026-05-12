@@ -93,7 +93,6 @@ Wenn die automatische Verlängerung aktiviert ist, muss Ihr Zahlungsmittel gült
 
 ### Verlängerungsmodus von Domainnamen ändern
 
-<!-- CP-STEPS-START:verlängerungsmodus-ändern -->
 Klicken Sie auf die Tabs, um die **2** Schritte anzuzeigen.
 
 > [!tabs]
@@ -118,11 +117,9 @@ Klicken Sie auf die Tabs, um die **2** Schritte anzuzeigen.
 >> - Wählen Sie die entsprechenden Zeilen in der Tabelle aus, indem Sie die Kontrollkästchen am Zeilenanfang aktivieren.
 >> - Klicken Sie auf die Schaltfläche `Aktionen`{.action} oben links in der Tabelle.
 >> - Wählen Sie `Automatische Zahlung aktivieren`{.action} oder `Automatische Zahlung deaktivieren`{.action}.
-<!-- CP-STEPS-END:verlängerungsmodus-ändern -->
 
 ### Domainnamen vor dem Ablaufdatum verlängern
 
-<!-- CP-STEPS-START:verlängern-vor-ablauf -->
 Klicken Sie auf die Tabs, um die **3** Schritte anzuzeigen.
 
 > [!tabs]
@@ -144,7 +141,6 @@ Klicken Sie auf die Tabs, um die **3** Schritte anzuzeigen.
 >>
 >> Sie können den Dienst jederzeit vor dem Ablaufdatum verlängern und auch die Dauer der Verlängerung auswählen.
 >> In diesem Fall wird die abonnierte Gültigkeitsdauer der laufenden Gültigkeitsdauer hinzugefügt. Sie verlieren die verbleibende Gültigkeitsdauer nicht.
-<!-- CP-STEPS-END:verlängern-vor-ablauf -->
 
 ### Verlängerung des Domainnamens überprüfen
 
@@ -152,7 +148,6 @@ Sobald Sie die Verlängerung bezahlt haben, wird der Domainname am Tag vor Ablau
 
 Die im WHOIS angezeigten Daten werden dann aktualisiert, um die korrekte Verlängerung zu bestätigen.
 
-<!-- CP-STEPS-START:verlängerungsstatus-prüfen -->
 Um den Verlängerungsstatus Ihrer Domain zu überprüfen, klicken Sie auf die Tabs, um die **2** Schritte anzuzeigen.
 
 > [!tabs]
@@ -167,11 +162,9 @@ Um den Verlängerungsstatus Ihrer Domain zu überprüfen, klicken Sie auf die Ta
 >> Im Bereich **Allgemeine Informationen** überprüfen Sie den Verlängerungsstatus unter **Status der Domain**.
 >>
 >> Der Status `Erneuerung in Bearbeitung` erscheint nach der Zahlung, bis Ihr Domainname bei der Registry verlängert wurde.
-<!-- CP-STEPS-END:verlängerungsstatus-prüfen -->
 
 ### Domainnamen kündigen
 
-<!-- CP-STEPS-START:domainnamen-kündigen -->
 Klicken Sie auf die Tabs, um die **2** Schritte anzuzeigen.
 
 > [!tabs]
@@ -186,7 +179,6 @@ Klicken Sie auf die Tabs, um die **2** Schritte anzuzeigen.
 >> Klicken Sie rechts in der Zeile auf `...`{.action} und dann auf `Meinen Dienst kündigen`{.action}.
 >>
 >> Diese Aktion wird für Dienste vorgeschlagen, die mit **Automatische Verlängerung** eingestellt sind. Durch Auswahl dieser Aktion werden die automatische Verlängerung und die Zahlung für den ausgewählten Dienst deaktiviert.
-<!-- CP-STEPS-END:domainnamen-kündigen -->
 
 > [!primary]
 >
@@ -196,7 +188,6 @@ Weitere Informationen finden Sie in [unserer Anleitung](/pages/account_and_servi
 
 ### Rechnung für die Verlängerung eines Domainnamens bezahlen
 
-<!-- CP-STEPS-START:verlängerungsrechnung-bezahlen -->
 Klicken Sie auf die Tabs, um die **2** Schritte anzuzeigen.
 
 > [!tabs]
@@ -216,7 +207,6 @@ Klicken Sie auf die Tabs, um die **2** Schritte anzuzeigen.
 >> >
 >> > - Sie verfügen über Dienstleistungen mit automatischer Verlängerung.
 >> > - Sie haben noch kein Zahlungsmittel für automatische Zahlungen hinterlegt.
-<!-- CP-STEPS-END:verlängerungsrechnung-bezahlen -->
 
 ## FAQ
 
@@ -254,7 +244,6 @@ Sobald die Registry Ihren Domainnamen erneuert hat (etwa einen Monat nach Bezahl
 
 WHOIS-Daten werden dann aktualisiert.
 
-<!-- CP-STEPS-START:faq-verlängerungsstatus-prüfen -->
 Um den Verlängerungsstatus Ihrer Domain zu überprüfen, klicken Sie auf die Tabs, um die **2** Schritte anzuzeigen.
 
 > [!tabs]
@@ -267,7 +256,6 @@ Um den Verlängerungsstatus Ihrer Domain zu überprüfen, klicken Sie auf die Ta
 > **Schritt 2**
 >>
 >> Im Bereich **Allgemeine Informationen** überprüfen Sie den Verlängerungsstatus unter **Status der Domain**.
-<!-- CP-STEPS-END:faq-verlängerungsstatus-prüfen -->
 
 ///
 

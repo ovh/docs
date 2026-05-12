@@ -33,7 +33,6 @@ OVHcloud web hosting plans provide access to an FTP storage space. You can use t
 
 ### Create a new FTP user on your web hosting plan <a name="create-ftp-user"></a>
 
-<!-- CP-STEPS-START:create-ftp-user -->
 To create a new FTP user on your web hosting plan via the OVHcloud Control Panel, click on the tabs below to view each of the **6** steps.
 
 > [!tabs]
@@ -84,7 +83,6 @@ The following window will appear:
 >> ![FTP-SSH create user step 3](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/create-user-step-3.png){.thumbnail}
 >>
 >> This final window summarizes the settings you have chosen for your new FTP user. If these settings correspond to what you want, click `Confirm`{.action} to complete the request to create a new FTP user on your web hosting plan.
-<!-- CP-STEPS-END:create-ftp-user -->
 
 > [!primary]
 >
@@ -94,7 +92,6 @@ If necessary, test the new FTP user using our guide “[Logging in to your web h
 
 ### Modify an FTP user
 
-<!-- CP-STEPS-START:modify-ftp-user -->
 To edit an FTP user, click on the tabs below to view each of the **4** steps.
 
 > [!tabs]
@@ -127,7 +124,6 @@ With the exception of the FTP user name and password, you can modify the *root f
 >> You can also *disable the user* if necessary by ticking the box provided. This option is useful if you want to prevent a user from accessing your FTP space without deleting the FTP and SSH logs associated with them. These logs will allow you to determine what operations were performed if you notice any unwanted interventions on your web hosting plan.
 >>
 >> Once you have made the modifications, click `Next`{.action}. Then check your change requests, and click `Confirm`{.action} to complete the FTP user change request on your web hosting plan.
-<!-- CP-STEPS-END:modify-ftp-user -->
 
 > [!primary]
 >
@@ -137,7 +133,6 @@ With the exception of the FTP user name and password, you can modify the *root f
 
 ### Delete an FTP user <a name="delete-ftp-user"></a>
 
-<!-- CP-STEPS-START:delete-ftp-user -->
 To delete an FTP user, click on the tabs below to view each of the **4** steps.
 
 > [!tabs]
@@ -166,7 +161,6 @@ To delete an FTP user, click on the tabs below to view each of the **4** steps.
 >> ![FTP-SSH delete user confirmation](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/delete-user1-confirmation.png){.thumbnail}
 >>
 >> Click `Confirm`{.action} to permanently delete the FTP user from your web hosting plan.
-<!-- CP-STEPS-END:delete-ftp-user -->
 
 ## Go further
 

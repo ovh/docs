@@ -51,7 +51,6 @@ To check if your website already uses an IPv6 address, use [ipv6-test.com](https
 
 ### 2 - Retrieve your web hosting plan’s IPv6 address
 
-<!-- CP-STEPS-START:retrieve-ipv6-address -->
 Click on the tabs below to view each of the **2** steps.
 
 > [!tabs]
@@ -68,7 +67,6 @@ Click on the tabs below to view each of the **2** steps.
 >> ![IPv6](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-ipv6.png){.thumbnail}
 >>
 >> Copy the IPv6 address, then continue reading the guide.
-<!-- CP-STEPS-END:retrieve-ipv6-address -->
 
 ### 3 - Configure your domain name’s active DNS zone
 

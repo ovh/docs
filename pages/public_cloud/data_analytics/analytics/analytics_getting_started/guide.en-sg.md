@@ -20,7 +20,6 @@ OVHcloud Public Cloud Analytics services let you focus on building and deploying
 
 > [!tabs]
 > Via the OVHcloud Control Panel
->> <!-- CP-STEPS-START:order-analytics-instance -->
 >> Log in to your [OVHcloud Control Panel](/links/manager), open the `Public Cloud`{.action} section, and select your project. In the left-hand navigation under **Databases & Analytics**, click `Analytics`{.action} to access `Kafka`, `Kafka Connect`, `Kafka MirrorMaker`, `Dashboards`, or `OpenSearch`.
 >>
 >> Click `Create your managed analytics service`{.action} (or `Create a service`{.action} if your project already contains analytics services).
@@ -82,7 +81,6 @@ OVHcloud Public Cloud Analytics services let you focus on building and deploying
 >>
 >> Configuration options vary by analytics type. Examples are available in the [public-cloud-databases-examples](https://github.com/ovh/public-cloud-databases-examples) repository.
 >>
->> <!-- CP-STEPS-END:order-analytics-instance -->
 > Via the OVHcloud API
 >> **Step 1: Gather the set of required parameters**
 >>

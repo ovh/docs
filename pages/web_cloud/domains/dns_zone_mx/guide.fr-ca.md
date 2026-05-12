@@ -79,7 +79,6 @@ Ces valeurs sont communes à toutes ces offres, à l'exception de [Private Excha
 
 Ces enregistrements MX doivent être configurés dans la zone DNS de votre nom de domaine.
 
-<!-- CP-STEPS-START:configure-mx-record -->
 ### Configurer un enregistrement MX dans une zone DNS OVHcloud
 
 Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **5** étapes.
@@ -121,7 +120,6 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **5*
 > [!primary]
 >
 > La modification nécessite un temps de propagation de 4 à 24 heures avant d’être pleinement effective.
-<!-- CP-STEPS-END:configure-mx-record -->
 
 ## Aller plus loin
 

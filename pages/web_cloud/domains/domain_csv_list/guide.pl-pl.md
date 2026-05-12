@@ -27,7 +27,6 @@ Chcesz pobrać listę wszystkich domen dostępnych na Twoim koncie klienta OVHcl
 
 ## W praktyce
 
-<!-- CP-STEPS-START:export-csv -->
 Kliknij poniższe zakładki, aby wyświetlić kolejne **3** kroki.
 
 > [!tabs]
@@ -56,7 +55,6 @@ Kliknij poniższe zakładki, aby wyświetlić kolejne **3** kroki.
 >> ![Export domains in CSV format step 2 done](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/export-csv/export-domains-in-csv-format-step-2b.png){.thumbnail}
 >>
 >> Jeśli pobieranie pliku CSV nie rozpoczęło się automatycznie, kliknij link `pobrać plik ręcznie`{.action}, aby pobrać plik.
-<!-- CP-STEPS-END:export-csv -->
 
 ## Sprawdź również
  

@@ -61,7 +61,6 @@ Se non riesci ad autenticarti, modifica la password FTP seguendo le indicazioni 
 
 La mancanza di spazio sul tuo hosting condiviso può causare problemi al tuo sito quando provi a modificarlo o ad aggiornarlo.
 
-<!-- CP-STEPS-START:check-disk-space -->
 Per verificare lo spazio di storage rimasto sul tuo hosting, clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **2** passi.
 
 > [!tabs]
@@ -78,7 +77,6 @@ Per verificare lo spazio di storage rimasto sul tuo hosting, clicca sulle schede
 >> ![disk_space](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-disk-space.png){.thumbnail}
 >>
 >> Lo spazio di storage utilizzato compare sotto questa voce.
-<!-- CP-STEPS-END:check-disk-space -->
 
 ### Non riesco a trasferire i miei file verso il server FTP.
 

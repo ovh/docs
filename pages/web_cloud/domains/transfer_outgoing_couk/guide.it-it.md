@@ -66,7 +66,6 @@ Se non conosci ancora il TAG richiesto, puoi farne richiesta presso il tuo nuovo
 >
 > Per effettuare queste operazioni è necessario essere connesso come [amministratore](/pages/account_and_service_management/account_information/managing_contacts).
 
-<!-- CP-STEPS-START:change-outgoing-tag -->
 Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **3** passi.
 
 > [!tabs]
@@ -87,7 +86,6 @@ Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **3** pa
 >> Nella nuova finestra, inserisci il TAG del tuo nuovo Registrar e poi clicca su `Conferma`{.action}.
 >>
 >> ![trasferimento in uscita](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/outgoing-transfer-tag-confirmation.png){.thumbnail}
-<!-- CP-STEPS-END:change-outgoing-tag -->
 
 Se non riesci a modificare il TAG del tuo nome di dominio dallo Spazio Cliente OVHcloud, puoi richiederne la modifica al Registry Nominet. Per maggiori informazioni, consulta il [sito ufficiale Nominet](https://www.nominet.uk/domain-support/).
 

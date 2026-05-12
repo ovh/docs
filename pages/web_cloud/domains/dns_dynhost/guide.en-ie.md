@@ -45,7 +45,6 @@ For example, the **DynHost** can be used for a self-hosted game server (located 
 
 **If your domain name does not use OVHcloud DNS servers**, please contact the service provider managing its DNS configuration to find out how to proceed.
 
-<!-- CP-STEPS-START:check-ovhcloud-dns-servers -->
 **If your domain name is registered with OVHcloud**, you can check if it is using our configuration. To do this, click on the tabs below to view each of the **3** steps.
 
 > [!tabs]
@@ -66,7 +65,6 @@ For example, the **DynHost** can be used for a self-hosted game server (located 
 >> The table that opens will contain the DNS servers currently set by OVHcloud for your domain name. Several DNS servers can be listed, each with its own row in the table.
 >>
 >> ![DNS servers](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-servers/tab.png){.thumbnail}
-<!-- CP-STEPS-END:check-ovhcloud-dns-servers -->
 
 > [!success]
 >
@@ -81,7 +79,6 @@ For example, the **DynHost** can be used for a self-hosted game server (located 
 
 ### 1 - Create a DynHost username <a name="step1"></a>
 
-<!-- CP-STEPS-START:create-a-dynhost-username -->
 Click on the tabs below to view each of the **5** steps.
 
 > [!tabs]
@@ -126,7 +123,6 @@ Click on the tabs below to view each of the **5** steps.
 >>
 >> ![DynHost tab](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dynhost/tab.png){.thumbnail}
 >>
-<!-- CP-STEPS-END:create-a-dynhost-username -->
 
 Repeat this step if you need additional DynHost usernames.
 
@@ -136,7 +132,6 @@ This second step involves creating the DNS record that must be updated dynamical
 
 Once you are ready to create the DynHost record.
 
-<!-- CP-STEPS-START:create-the-dynamic-dns-record -->
 Click on the tabs below to view each of the **4** steps.
 
 > [!tabs]
@@ -174,7 +169,6 @@ Click on the tabs below to view each of the **4** steps.
 >> ![Create a DynHost](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dynhost/create-a-dynhost.png){.thumbnail}
 >>
 >> Once you have filled in all of the required fields, click `Confirm`{.action}. The DynHost record will then appear in the table on the current page.
-<!-- CP-STEPS-END:create-the-dynamic-dns-record -->
 
 Repeat this step if you need additional DynHost records.
 
@@ -213,7 +207,6 @@ https://dns.eu.ovhapis.com/nic/update?system=dyndns&hostname=$HOSTNAME&myip=$IP
 
 You can check if the destination IP address has been updated.
 
-<!-- CP-STEPS-START:check-ip-address-update -->
 To do this, click on the tabs below to view each of the **3** steps.
 
 > [!tabs]
@@ -235,7 +228,6 @@ To do this, click on the tabs below to view each of the **3** steps.
 >>
 >> ![DynHost target](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dynhost/target.png){.thumbnail}
 >>
-<!-- CP-STEPS-END:check-ip-address-update -->
 
 > [!warning]
 >

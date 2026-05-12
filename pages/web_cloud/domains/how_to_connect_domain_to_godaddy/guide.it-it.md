@@ -56,7 +56,6 @@ Prepara il tuo hosting GoDaddy seguendo le istruzioni di [**questa pagina della 
 > - Segui le istruzioni fino al passaggio 10 e recupera le informazioni specifiche del tuo sito web per poter modificare in seguito i tuoi record DNS OVHcloud.<br>
 > Le istruzioni seguenti ti aiuteranno a configurare più facilmente la tua zona DNS OVHcloud.
 
-<!-- CP-STEPS-START:configure-dns-records -->
 Clicca sulle schede qui di seguito per visualizzare in successione ciascuno dei **5** passaggi.
 
 > [!tabs]
@@ -129,7 +128,6 @@ Clicca sulle schede qui di seguito per visualizzare in successione ciascuno dei 
 >> **3 - Modifica:** se esiste un record "CNAME" per il sottodominio "www", clicca sul pulsante `...`{.action} e poi su `Modifica il record`{.action}. Sostituisci unicamente la **Destinazione** con il valore recuperato dalla tua interfaccia GoDaddy. Clicca su `Continua`{.action} e conferma.
 >>
 >> Se non esiste alcun record "CNAME" per il sottodominio "www", clicca su `Aggiungi un record`{.action} in alto a destra, seleziona il campo di puntamento `CNAME`{.action}, inserisci `www` nel campo **Sottodominio** e il valore recuperato dalla tua interfaccia GoDaddy nel campo **Destinazione**. Clicca su `Continua`{.action} e conferma.
-<!-- CP-STEPS-END:configure-dns-records -->
 
 La zona DNS è ora configurata per puntare verso il tuo hosting GoDaddy.
 

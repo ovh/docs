@@ -64,7 +64,6 @@ Il percorso per accedere al database di origine è diverso in base alla situazio
 
 **Clicca sulla situazione corrispondente per visualizzare il contenuto.**
 
-<!-- CP-STEPS-START:copy-from-startsql -->
 /// details | Da un database Start SQL
 
 Clicca sulle schede qui sotto per visualizzare ciascuno dei **6** passaggi.
@@ -119,9 +118,7 @@ Clicca sulle schede qui sotto per visualizzare ciascuno dei **6** passaggi.
 >> ![Task in corso](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/copy-db-tool-ongoing-tasks.png){.thumbnail}
 
 ///
-<!-- CP-STEPS-END:copy-from-startsql -->
 
-<!-- CP-STEPS-START:copy-from-wcdb -->
 /// details | Da un server Web Cloud Databases
 
 Clicca sulle schede qui sotto per visualizzare ciascuno dei **6** passaggi.
@@ -176,7 +173,6 @@ Clicca sulle schede qui sotto per visualizzare ciascuno dei **6** passaggi.
 >> ![Task in corso](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/copy-db-tool-ongoing-tasks.png){.thumbnail}
 
 ///
-<!-- CP-STEPS-END:copy-from-wcdb -->
 
 ### Configura il tuo sito Web con il nuovo database
 

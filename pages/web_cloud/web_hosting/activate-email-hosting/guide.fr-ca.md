@@ -40,7 +40,6 @@ Si votre nom de domaine est déjà enregistré chez OVHcloud ou si une zone DNS 
 
 ### Activation de vos adresses e-mail incluses avec votre offre d'hébergement web
 
-<!-- CP-STEPS-START:activation-email -->
 
 Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3** étapes.
 
@@ -70,12 +69,10 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3*
 >
 > Attention : l'activation de l'option e-mail peut prendre quelques minutes. Vous recevrez un e-mail pour vous confirmer l'installation et l'activation de l'offre MXPLAN. Elle inclut notamment la gestion et la configuration de vos adresses e-mail.
 >
-<!-- CP-STEPS-END:activation-email -->
 
 
 ### Suppression de l'offre e-mail liée à votre hébergement web
 
-<!-- CP-STEPS-START:suppression-email -->
 
 Il est possible de supprimer définitivement l'offre e-mail associée à votre hébergement web.
 
@@ -102,7 +99,6 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **2*
 >> > [!warning]
 >> >
 >> > Pour confirmer la suppression de l'offre e-mail associée à votre hébergement web, un lien de validation vous est envoyé par e-mail. Vous devez obligatoirement cliquer sur ce lien pour que l'opération de suppression soit lancée.
-<!-- CP-STEPS-END:suppression-email -->
 
 
 #### Cas particulier - Suppression de l'offre e-mail liée à votre hébergement web (afin de l'associer à un autre nom de domaine)

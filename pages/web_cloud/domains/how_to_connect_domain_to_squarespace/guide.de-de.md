@@ -45,7 +45,6 @@ Bevor Sie die Schritte dieser Anleitung durchführen, empfehlen wir Ihnen, sich 
 
 ### DNS-Einträge in Ihrem OVHcloud Account konfigurieren
 
-<!-- CP-STEPS-START:configure-dns-records -->
 Klicken Sie auf die nachstehenden Tabs, um die **5** Schritte nacheinander anzuzeigen.
 
 > [!tabs]
@@ -127,7 +126,6 @@ Klicken Sie auf die nachstehenden Tabs, um die **5** Schritte nacheinander anzuz
 >> Wenn kein "CNAME"-Eintrag für die Subdomain "www" vorhanden ist, klicken Sie oben rechts auf `Eintrag hinzufügen`{.action}, wählen Sie den Eintragstyp `CNAME`{.action}, geben Sie `www` im Feld **Subdomain** und `ext-cust.squarespace.com.` im Feld **Ziel** ein. Klicken Sie auf `Weiter`{.action} und bestätigen Sie.
 >>
 >> **4 - Hinzufügen:** Erstellen Sie einen Verifizierungs-CNAME-Eintrag, indem Sie Ihren `von SquareSpace erhaltenen eindeutigen Code` im Feld **Subdomain** eingeben und dann `verify.squarespace.com.` im Feld **Ziel**. Klicken Sie auf `Weiter`{.action} und bestätigen Sie.
-<!-- CP-STEPS-END:configure-dns-records -->
 
 Die DNS-Zone ist nun so konfiguriert, dass sie auf Ihr SquareSpace Hosting verweist.
 

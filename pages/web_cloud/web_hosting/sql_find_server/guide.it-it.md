@@ -32,7 +32,6 @@ Nell'utilizzo dei tuoi servizi, potresti dover conoscere il nome del server SQL 
 
 ## Procedura
 
-<!-- CP-STEPS-START:find-database-server -->
 Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **3** passi.
 
 > [!tabs]
@@ -62,7 +61,6 @@ Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **3** pa
 >> >
 >> > - L'**Indirizzo del server** fa parte delle credenziali di accesso specifiche del tuo database e permette al tuo sito web di connettersi a quest'ultimo.
 >> > - Il **Server** rappresenta l'infrastruttura che ospita il tuo database, insieme ad altri database. Il nome del server permette di verificare se è interessato da un intervento di manutenzione o da un incidente dichiarato sulla nostra pagina [Web Cloud Status](https://web-cloud.status-ovhcloud.com/).
-<!-- CP-STEPS-END:find-database-server -->
 
 ## Per saperne di più <a name="go-further"></a>
 

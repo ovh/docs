@@ -30,7 +30,6 @@ A database is used to store dynamic elements (connection data, user data, displa
 
 ### 1 - Access the web hosting database management tab
 
-<!-- CP-STEPS-START:access-databases-tab -->
 Click on the tabs below to view each of the **2** steps.
 
 > [!tabs]
@@ -49,7 +48,6 @@ Click on the tabs below to view each of the **2** steps.
 >> The table in this section contains all of the databases created with your web hosting plan.
 >>
 >> ![List of web hosting plan databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/tab.png){.thumbnail}
-<!-- CP-STEPS-END:access-databases-tab -->
 
 Databases in the table can have several different types:
 
@@ -65,7 +63,6 @@ Databases in the table can have several different types:
 
 ### 2 - Create the database
 
-<!-- CP-STEPS-START:create-database -->
 To create a database, click on the tabs below to view each of the **5** steps.
 
 > [!tabs]
@@ -113,7 +110,6 @@ To create a database, click on the tabs below to view each of the **5** steps.
 >> > [!primary]
 >> >
 >> > Engine version update for a database already created is currently unavailable.
-<!-- CP-STEPS-END:create-database -->
 
 > [!primary]
 >
@@ -159,7 +155,6 @@ You can now use your database. To do this, you will need your login details:
 
 This information is essential for your website to connect to the database.
 
-<!-- CP-STEPS-START:get-connection-info -->
 If you need to retrieve this connection information, click on the tabs below to view each of the **2** steps.
 
 > [!tabs]
@@ -170,7 +165,6 @@ If you need to retrieve this connection information, click on the tabs below to 
 > **Step 2**
 >>
 >> On the page that appears, click on the `Databases`{.action} tab. You will find the information required to connect to your database in the table that appears. This excludes passwords for security reasons.
-<!-- CP-STEPS-END:get-connection-info -->
 
 > [!warning]
 >
@@ -186,7 +180,6 @@ Depending on the software used, this connection may need to be configured manual
 
 #### Accessing the phpMyAdmin interface
 
-<!-- CP-STEPS-START:access-phpmyadmin -->
 OVHcloud provides an online database management tool, phpMyAdmin. To find the access link for this application, click on the tabs below to view each of the **4** steps.
 
 > [!tabs]
@@ -209,13 +202,11 @@ OVHcloud provides an online database management tool, phpMyAdmin. To find the ac
 >> ![phpMyAdmin login page](/pages/assets/screens/other/web-tools/phpmyadmin/pma-interface-login.png){.thumbnail}
 >>
 >> If you need any further information, please refer to [part 3](#step3) of this guide to find the information required to connect to your database.
-<!-- CP-STEPS-END:access-phpmyadmin -->
 
 #### Using database backups
 
 For each web hosting database, snapshots are created automatically every day (up to a maximum of 32). This means you can quickly restore an earlier version of a database from the OVHcloud Control Panel.
 
-<!-- CP-STEPS-START:check-database-snapshots -->
 To check which snapshots are available, and when they were created, click on the tabs below to view each of the **3** steps.
 
 > [!tabs]
@@ -230,7 +221,6 @@ To check which snapshots are available, and when they were created, click on the
 > **Step 3**
 >>
 >> In the table that appears, click the symbol next to the green circle. You can also download each backup of a database from here.
-<!-- CP-STEPS-END:check-database-snapshots -->
 
 You can find more information on this in our guide on "[Backing up your web hosting plan database](/pages/web_cloud/web_hosting/sql_database_export)".
 

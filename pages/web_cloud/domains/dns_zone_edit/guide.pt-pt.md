@@ -61,7 +61,6 @@ Para mais explicações, consulte os nossos manuais "[Saber tudo sobre os servid
 >
 > Ao contrário do nome de domínio, para uma zona DNS não existe uma noção de titular, mas sim uma gestão de contactos para uma zona DNS da OVHcloud. Se desejar mudar a gestão da sua zona DNS para outra conta OVHcloud, siga o nosso guia [Como gerir os contactos (gestores) dos serviços OVHcloud](/pages/account_and_service_management/account_information/managing_contacts).
 
-<!-- CP-STEPS-START:access-dns-zone-management -->
 Para aceder à gestão de uma zona DNS da OVHcloud, clique nos separadores abaixo para visualizar cada uma das **2** etapas.
 
 > [!tabs]
@@ -76,7 +75,6 @@ Para aceder à gestão de uma zona DNS da OVHcloud, clique nos separadores abaix
 >> A tabela que aparecer apresenta para cada linha um registo DNS associado ao seu nome de domínio na OVHcloud. Poderá filtrar o conteúdo por tipo de registo ou por nome de domínio.
 >>
 >> ![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/tab.png){.thumbnail}
-<!-- CP-STEPS-END:access-dns-zone-management -->
 
 ### Editar a zona DNS da OVHcloud do seu nome de domínio
 
@@ -101,7 +99,6 @@ Para isso, pode alterar manualmente a zona em modo de texto ou utilizar os nosso
 > Apenas para utilizadores experientes. Esteja também muito atento à sintaxe aquando das suas modificações.
 > 
 
-<!-- CP-STEPS-START:edit-text-mode -->
 Para editar uma zona DNS da OVHcloud em modo de texto, clique nos separadores abaixo para visualizar cada uma das **2** etapas.
 
 > [!tabs]
@@ -118,7 +115,6 @@ Para editar uma zona DNS da OVHcloud em modo de texto, clique nos separadores ab
 >> > [!warning]
 >> >
 >> > Não altere, através do botão `Alterar em modo de texto`{.action}, os registos DNS da sua zona DNS em benefício de servidores DNS externos à OVHcloud. De facto, esta zona DNS **só** funciona com servidores DNS da OVHcloud.
-<!-- CP-STEPS-END:edit-text-mode -->
 
 #### Utilizar os assistentes de configuração
 
@@ -131,7 +127,6 @@ A partir de agora, o manual apenas irá abordar a configuração realizada atrav
 
 **Clique nos quatro títulos abaixo para ver as explicações.**
 
-<!-- CP-STEPS-START:add-dns-record -->
 /// details | Adicionar um novo registo DNS
 
 Para adicionar um novo registo DNS, clique nos separadores abaixo para visualizar cada uma das **2** etapas.
@@ -158,9 +153,7 @@ Para adicionar um novo registo DNS, clique nos separadores abaixo para visualiza
 >> > Deverá ter como alvo `mydomain.ovh.` e não `mydomain.ovh` sem o **.** no final.
 
 ///
-<!-- CP-STEPS-END:add-dns-record -->
 
-<!-- CP-STEPS-START:modify-dns-record -->
 /// details | Alterar um registo DNS existente
 
 Para alterar um registo DNS, clique nos separadores abaixo para visualizar cada uma das **2** etapas.
@@ -181,9 +174,7 @@ Para alterar um registo DNS, clique nos separadores abaixo para visualizar cada 
 >> ![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/modify-record.png){.thumbnail}
 
 ///
-<!-- CP-STEPS-END:modify-dns-record -->
 
-<!-- CP-STEPS-START:delete-dns-record -->
 /// details | Eliminar um registo DNS existente
 
 Para eliminar um registo DNS, clique nos separadores abaixo para visualizar cada uma das **2** etapas.
@@ -206,9 +197,7 @@ Para eliminar um registo DNS, clique nos separadores abaixo para visualizar cada
 >> ![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/delete-record.png){.thumbnail}
 
 ///
-<!-- CP-STEPS-END:delete-dns-record -->
 
-<!-- CP-STEPS-START:reset-dns-zone -->
 /// details | Reiniciar a zona DNS
 
 Reiniciar a zona DNS permite voltar a uma configuração mínima, com as entradas da OVHcloud predefinidas ou as dos seus serviços. Também pode apontar o nome de domínio para serviços de alojamento web e de correio eletrónico personalizados
@@ -261,13 +250,11 @@ Para reiniciar a zona DNS, clique nos separadores abaixo para visualizar cada um
 >> ![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/dns-zone-reset-02.png){.thumbnail}
 
 ///
-<!-- CP-STEPS-END:reset-dns-zone -->
 
 ### Tempo de propagação
 
 Depois de alterar a zona DNS do nome de domínio, é necessário aguardar 24 horas até que as alterações sejam efetivas.
 
-<!-- CP-STEPS-START:modify-ttl -->
 Se pretender reduzir esse tempo de espera para as suas próximas alterações da zona DNS da OVHcloud, pode fazê-lo, de certa forma, ajustando o TTL (*Time To Live*) que será aplicado a todos os registos da zona DNS. Para isso, clique nos separadores abaixo para visualizar cada uma das **2** etapas.
 
 > [!tabs]
@@ -282,7 +269,6 @@ Se pretender reduzir esse tempo de espera para as suas próximas alterações da
 >> À direita ou abaixo da tabela, clique no botão `Modificar o TTL por predefinição`{.action}e siga as etapas que aparecem.
 >>
 >> Também pode alterar o TTL de um registo DNS. No entanto, esta operação só pode ser efetuada num registo de cada vez, alterando-o ou adicionando-o.
-<!-- CP-STEPS-END:modify-ttl -->
 
 ## Quer saber mais?
 

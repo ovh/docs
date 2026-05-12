@@ -93,7 +93,6 @@ Mit dieser Option wird nach Eingabe des weitergeleiteten Domainnamens der Ziel-D
 
 > Diese "Standard-Weiterleitung" gibt einen HTTP 301 Code zurück.
 
-<!-- CP-STEPS-START:configure-redirect-permanent -->
 Klicken Sie auf die unten stehenden Tabs, um die **7** Schritte nacheinander anzuzeigen.
 
 > [!tabs]
@@ -158,7 +157,6 @@ Klicken Sie auf die unten stehenden Tabs, um die **7** Schritte nacheinander anz
 >> > Achtung: Die alte Konfiguration wird daraufhin deaktiviert und gelöscht.
 >> >
 >>
-<!-- CP-STEPS-END:configure-redirect-permanent -->
 
 ///
 
@@ -176,7 +174,6 @@ Die Positionierung in Suchmaschinen ist weniger effizient als bei einer **sichtb
 
 > Diese Weiterleitung gibt einen HTTP 302 Code zurück.
 
-<!-- CP-STEPS-START:configure-redirect-temporary -->
 Klicken Sie auf die unten stehenden Tabs, um die **7** Schritte nacheinander anzuzeigen.
 
 > [!tabs]
@@ -239,7 +236,6 @@ Klicken Sie auf die unten stehenden Tabs, um die **7** Schritte nacheinander anz
 >> > Wenn die Meldung "*Es gibt Weiterleitungen von Domainnamen, die Sie weiterleiten möchten, die mit den Weiterleitungen, die Sie hinzufügen möchten, in Konflikt stehen*" angezeigt wird, können Sie die Option `Überschreiben der existierenden Weiterleitung bestätigen`{.action} aktivieren, um die Anwendung Ihrer Weiterleitung zu erzwingen.
 >> >
 >> > Achtung: Die alte Konfiguration wird daraufhin deaktiviert und gelöscht.
-<!-- CP-STEPS-END:configure-redirect-temporary -->
 
 ///
 
@@ -263,7 +259,6 @@ Diese Einbettung verhindert, dass Besuchern Ihrer Website der Ziel-Domainname an
 >
 > Achtung: Mit einem *iFrame*-Tag eingebettete Seiten werden möglicherweise auf Smartphones nicht korrekt dargestellt. Ihr Inhalt wird von Suchmaschinen in der Regel nicht für das SEO-Ranking und die Indexierung Ihrer Website berücksichtigt.
 
-<!-- CP-STEPS-START:configure-redirect-invisible -->
 Klicken Sie auf die unten stehenden Tabs, um die **7** Schritte nacheinander anzuzeigen.
 
 > [!tabs]
@@ -332,7 +327,6 @@ Klicken Sie auf die unten stehenden Tabs, um die **7** Schritte nacheinander anz
 >> > Wenn die Meldung "*Es gibt Weiterleitungen von Domainnamen, die Sie weiterleiten möchten, die mit den Weiterleitungen, die Sie hinzufügen möchten, in Konflikt stehen*" angezeigt wird, können Sie die Option `Überschreiben der existierenden Weiterleitung bestätigen`{.action} aktivieren, um die Anwendung Ihrer Weiterleitung zu erzwingen.
 >> >
 >> > Achtung: Die alte Konfiguration wird daraufhin deaktiviert und gelöscht.
-<!-- CP-STEPS-END:configure-redirect-invisible -->
 
 ### Einen Domainnamen über eine ".htaccess"-Datei weiterleiten <a name="htaccess_rewrite"></a>
 

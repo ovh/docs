@@ -51,7 +51,6 @@ Najpierw przygotuj witrynę Google Site, postępując zgodnie z instrukcjami zaw
 
 ### 2. Konfiguracja rekordów DNS na koncie OVHcloud
 
-<!-- CP-STEPS-START:configure-dns-records -->
 Kliknij poniższe karty, aby wyświetlić kolejno każdy z **5** kroków.
 
 > [!tabs]
@@ -137,7 +136,6 @@ Kliknij poniższe karty, aby wyświetlić kolejno każdy z **5** kroków.
 >> Jeśli nie istnieje żaden rekord "CNAME" dla subdomeny "www", kliknij `Dodaj wpis`{.action} w prawym górnym rogu, wybierz typ rekordu `CNAME`{.action}, wprowadź `www` w polu **Subdomena** i `ghs.googlehosted.com.` w polu **Cel**. Kliknij `Dalej`{.action} i zatwierdź.
 >>
 >> Ponieważ te wartości mogą ulec zmianie, sprawdź je na stronie "[Wartości rekordów CNAME](https://knowledge.workspace.google.com/admin/support/troubleshooting/cname-record-values?hl=pl)" w oficjalnej dokumentacji.
-<!-- CP-STEPS-END:configure-dns-records -->
 
 Strefa DNS jest teraz skonfigurowana tak, aby wskazywała na Twoją witrynę Google Site.
 

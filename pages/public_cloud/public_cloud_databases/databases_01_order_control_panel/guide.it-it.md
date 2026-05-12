@@ -31,7 +31,6 @@ OVHcloud Public Cloud managed databases let you focus on building and deploying 
 
 > [!tabs]
 > Via the OVHcloud Control Panel
->> <!-- CP-STEPS-START:order-database-instance -->
 >> <iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/y8Px-NhCRAE?si=cIXix30nL94aFeBi" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 >>
 >> Click `Databases`{.action} in the left-hand navigation bar under **Databases & Analytics**. The adjacent `Analytics`{.action} entry provides access to `Kafka`, `Kafka Connect`, `Kafka MirrorMaker`, `Dashboards`, and `OpenSearch`.
@@ -110,7 +109,6 @@ OVHcloud Public Cloud managed databases let you focus on building and deploying 
 >> To configure your service after installation, see the *Configure your instance to accept incoming connections* guide for your database type, [available in our catalog](/products/public-cloud-databases).
 >>
 >> Configuration options vary by database type. Examples are available in the [public-cloud-databases-examples](https://github.com/ovh/public-cloud-databases-examples) repository.
->> <!-- CP-STEPS-END:order-database-instance -->
 > Via the OVHcloud API
 >> **Step 1: Gather the set of required parameters**
 >>

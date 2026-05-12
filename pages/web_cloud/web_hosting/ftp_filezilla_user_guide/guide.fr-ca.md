@@ -69,7 +69,6 @@ Il permet de mettre en ligne des fichiers ou votre site Internet en vous [connec
 
 ### 1 - Récupérer les informations de connexion à l'espace de stockage de l'hébergement web <a name="part-1"></a>
 
-<!-- CP-STEPS-START:get-ftp-connection-info -->
 Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3** étapes.
 
 > [!tabs]
@@ -94,7 +93,6 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3*
 >> > [!primary]
 >> >
 >> > Pour des raisons de sécurité, le mot de passe d'un utilisateur n'apparaît pas sur la page de l'onglet `FTP - SSH`{.action}. Si vous l'avez oublié, consultez [ce guide](/pages/web_cloud/web_hosting/ftp_change_password) pour le modifier.
-<!-- CP-STEPS-END:get-ftp-connection-info -->
 
 ### 2 - Se connecter à l'espace de stockage de votre hébergement grâce à FileZilla
 

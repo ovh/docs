@@ -101,7 +101,6 @@ Para más información, consulte nuestras guías:
 
 #### 1.1 - Para un dominio y un alojamiento ya existentes en OVHcloud
 
-<!-- CP-STEPS-START:order-sectigo-ev -->
 Haga clic en las fichas siguientes para ver cada una de las **5** etapas.
 
 > [!tabs]
@@ -140,7 +139,6 @@ Haga clic en las fichas siguientes para ver cada una de las **5** etapas.
 >> Haga clic en `Continuar`{.action} una vez **todos los elementos** correctamente introducidos.
 >>
 >> Continúe con el pedido hasta que abone el importe pendiente para validar la solicitud de creación del certificado SSL.
-<!-- CP-STEPS-END:order-sectigo-ev -->
 
 > [!alert]
 >

@@ -29,7 +29,6 @@ Niniejszy przewodnik wyjaśnia, jak sprawdzić statystyki i logi generowane prze
 
 ### Wyświetl statystyki usługi CDN
 
-<!-- CP-STEPS-START:statystyki-cdn -->
 Kliknij poniższe zakładki, aby wyświetlić kolejne **4** kroki.
 
 > [!tabs]
@@ -60,11 +59,9 @@ Kliknij poniższe zakładki, aby wyświetlić kolejne **4** kroki.
 >> Teraz wyświetlasz statystyki usługi CDN dla swojej domeny.
 >>
 >> Jeśli potrzebujesz więcej informacji, zapoznaj się z przewodnikiem „[Hosting - sprawdzanie statystyk i logów strony www](/pages/web_cloud/web_hosting/logs_and_statistics)”.
-<!-- CP-STEPS-END:statystyki-cdn -->
 
 ### Wyświetl logi usługi CDN
 
-<!-- CP-STEPS-START:logi-cdn -->
 Kliknij poniższe zakładki, aby wyświetlić kolejne **4** kroki.
 
 > [!tabs]
@@ -108,7 +105,6 @@ Kliknij poniższe zakładki, aby wyświetlić kolejne **4** kroki.
 >> W tabeli, która się wyświetli kliknij przycisk `Download`{.action} po prawej stronie nazwy domeny lub subdomeny, aby pobrać logi CDN.
 >>
 >> Jeśli potrzebujesz więcej informacji, zapoznaj się z przewodnikiem „[Hosting - sprawdzanie statystyk i logów strony www](/pages/web_cloud/web_hosting/logs_and_statistics)”.
-<!-- CP-STEPS-END:logi-cdn -->
 
 ## Sprawdź również
 

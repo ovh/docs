@@ -41,7 +41,6 @@ If you have ordered a Web Hosting plan without directly linking it to a domain n
 
 ### Activate your email addresses included with your web hosting plan
 
-<!-- CP-STEPS-START:activate-email -->
 
 Click on the tabs below to view each of the **3** steps.
 
@@ -71,12 +70,10 @@ Click on the tabs below to view each of the **3** steps.
 >
 > Please note: it may take a few minutes for the email option to be enabled. You will receive an email confirming that you have installed and enabled the MX Plan solution. This includes managing and configuring your email accounts.
 >
-<!-- CP-STEPS-END:activate-email -->
 
  
 ### Deleting the email solution linked to your Web Hosting plan
 
-<!-- CP-STEPS-START:delete-email-solution -->
 
 You can permanently delete the email solution linked to your Web Hosting plan.
 
@@ -103,7 +100,6 @@ Click on the tabs below to view each of the **2** steps.
 >> > [!warning]
 >> >
 >> > To confirm the deletion of the email solution linked to your web hosting plan, you will be sent a validation link via email. You must click this link for the delete operation to be launched.
-<!-- CP-STEPS-END:delete-email-solution -->
 
 
 #### Special case - Deletion of the email solution linked to your web hosting plan (in order to link it to another domain name)

@@ -79,7 +79,6 @@ Estos valores son comunes a todos los productos, excepto [Private Exchange](/pag
 
 Estos registros MX deben estar configurados en la zona DNS del nombre de dominio.
 
-<!-- CP-STEPS-START:configure-mx-record -->
 ### Configurar un registro MX en una zona DNS de OVHcloud
 
 Haga clic en las pestañas de abajo para ver sucesivamente cada uno de los **5** pasos.
@@ -121,7 +120,6 @@ Haga clic en las pestañas de abajo para ver sucesivamente cada uno de los **5**
 > [!primary]
 >
 > Los cambios tardan entre 4 y 24 horas en propagarse y ser efectivos.
-<!-- CP-STEPS-END:configure-mx-record -->
 
 ## Más información
 

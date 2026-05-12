@@ -29,7 +29,6 @@ Une base de données (*database*, « DB » ou « BDD ») permet de stocker des �
 
 ### Créer une base de données
 
-<!-- CP-STEPS-START:create-database -->
 Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4** étapes.
 
 > [!tabs]
@@ -65,13 +64,11 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4*
 >> Cliquez sur `Valider`{.action}.
 >>
 >> ![web-cloud-databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/databases/add-database-confirmation.png){.thumbnail}
-<!-- CP-STEPS-END:create-database -->
 
 ### Créer un utilisateur
 
 Pour utiliser un serveur de bases de données OVHcloud, créez des utilisateurs avec des droits spécifiques de connexion à une base de données.
 
-<!-- CP-STEPS-START:create-user -->
 Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4** étapes.
 
 > [!tabs]
@@ -94,13 +91,11 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4*
 > **Étape 4**
 >>
 >> Renseignez un « nom d'utilisateur » et un « mot de passe », puis cliquez sur `Valider`{.action}.
-<!-- CP-STEPS-END:create-user -->
 
 ### Gérer les droits des utilisateurs
 
 Pour autoriser un utilisateur à effectuer des actions sur une base de données, il est nécessaire de lui attribuer des droits.
 
-<!-- CP-STEPS-START:manage-user-rights -->
 Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4** étapes.
 
 > [!tabs]
@@ -136,7 +131,6 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4*
 >> > La segmentation des droits mentionnés ci-dessus est propre à OVHcloud. Ainsi un utilisateur ayant les droits `Administrateur` pourra faire du **DDL** (Data Definition Language) et du **DML** (Data Manipulation Language) alors qu'un utilisateur ayant les droits `Lecture / Écriture` ne fera que du **DML** (Data Manipulation Language).
 >>
 >> ![web-cloud-databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/users-and-rights/changing-user-rights.png){.thumbnail}
-<!-- CP-STEPS-END:manage-user-rights -->
 
 ### Supprimer une base de données
 
@@ -148,7 +142,6 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4*
 > une sauvegarde et de la télécharger de votre côté avant toute suppression.
 >
 
-<!-- CP-STEPS-START:delete-database -->
 Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3** étapes.
 
 > [!tabs]
@@ -167,7 +160,6 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3*
 >> Cliquez sur le bouton `...`{.action} à droite de la base de données concernée, puis sur `Supprimer la base`{.action}.
 >>
 >> ![web-cloud-databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/databases/delete-the-database.png){.thumbnail}
-<!-- CP-STEPS-END:delete-database -->
 
 ## Aller plus loin
 

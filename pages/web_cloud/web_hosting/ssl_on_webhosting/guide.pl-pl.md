@@ -78,7 +78,6 @@ Zapoznaj się z 4 linkami do przewodników dotyczących tych 4 rozwiązań:
 >
 > Ponieważ weryfikacja ta jest ściśle związana z ustawieniami Twojej strony WWW, w przypadku trudności zalecamy skontaktowanie się z [wyspecjalizowanym dostawcą](/links/partner). Niestety firma OVHcloud nie jest w stanie udzielić wsparcia w tym zakresie.
 
-<!-- CP-STEPS-START:delete-ssl -->
 Kliknij poniższe zakładki, aby wyświetlić kolejne **4** kroki.
 
 > [!tabs]
@@ -105,7 +104,6 @@ Kliknij poniższe zakładki, aby wyświetlić kolejne **4** kroki.
 >> W wyświetlonym oknie potwierdź dezaktywację, klikając `Zatwierdź`{.action}.
 >>
 >> ![Usuń SSL](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ssl-certificates/ssl-deletion.png){.thumbnail}
-<!-- CP-STEPS-END:delete-ssl -->
 
 Certyfikat SSL zostanie dezaktywowany najwyżej w ciągu kilku godzin.
 

@@ -86,7 +86,6 @@ Por várias razões, poderá ter de criar uma zona DNS para o seu domínio na OV
 
 ### 1 - Criar a zona DNS através da Área de Cliente OVHcloud
 
-<!-- CP-STEPS-START:criar-zona-dns -->
 Clique nos separadores abaixo para visualizar cada uma das **3** etapas.
 
 > [!tabs]
@@ -116,7 +115,6 @@ Clique nos separadores abaixo para visualizar cada uma das **3** etapas.
 >> |Não|Selecione esta escolha se pretende utilizar serviços da OVHcloud como [alojamento web](/links/web/hosting), sendo a zona pré-configurada para este efeito.<br>![no-mínimo-entries](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/dashboard-ovh-full-entries.png){.thumbnail}|
 >>
 >> Uma vez que a sua escolha tenha sido feita, siga as etapas apresentadas na sua Área de Cliente OVHcloud até à criação da zona DNS.
-<!-- CP-STEPS-END:criar-zona-dns -->
 
 ### 2 - Editar a zona DNS (facultativo)
 
@@ -133,7 +131,6 @@ Para editar esta zona DNS, consulte o nosso guia "[Editar uma zona DNS na OVHclo
 
 Quando a zona DNS da OVHcloud estiver pronta para ser utilizada, associe-a ao seu domínio para aplicar a configuração que contém a este último. 
 
-<!-- CP-STEPS-START:encontrar-servidores-dns -->
 Assim, deverá recuperar previamente os **servidores DNS** da OVHcloud nos quais a zona DNS da OVHcloud foi criada para o seu domínio.
 
 Para os encontrar, clique nos separadores abaixo para visualizar cada uma das **2** etapas.
@@ -157,7 +154,6 @@ Para os encontrar, clique nos separadores abaixo para visualizar cada uma das **
 >> - `nsXX.ovh.net` e `dnsXX.ovh.net` ou, `nsXXX.ovh.net` e `dnsXXX.ovh.net` (onde cada `X` representa um número entre **0** e **9**).
 >> - `nsXX.ovh.ca` e `dnsXX.ovh.ca` ou, `nsXXX.ovh.ca` e `dnsXXX.ovh.ca` (onde cada `X` representa um número entre **0** e **9**).
 >> - `ns200.anycast.me` e `dns200.anycast.me` (se subscreveu a opção [DNS anycast](/links/web/domains-options)).
-<!-- CP-STEPS-END:encontrar-servidores-dns -->
 
 Depois de recuperar os 2 nomes de servidor DNS, 2 situações são possíveis.
 

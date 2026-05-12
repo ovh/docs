@@ -55,7 +55,6 @@ Continúe leyendo esta guía en el apartado correspondiente al método de import
 
 ### Restaurar una copia de seguridad desde el área de cliente
 
-<!-- CP-STEPS-START:restore-backup-control-panel -->
 Para realizar esta operación, haga clic en las fichas siguientes para ver cada una de las **4** etapas.
 
 > [!tabs]
@@ -80,11 +79,9 @@ Para realizar esta operación, haga clic en las fichas siguientes para ver cada 
 >> Asegúrese de que la información es correcta y haga clic en `Aceptar`{.action}. Espere a que se restaure la copia de seguridad.
 >>
 >> ![Importación de una base de datos](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/restore-the-backup.png){.thumbnail}
-<!-- CP-STEPS-END:restore-backup-control-panel -->
 
 ### Importar una copia de seguridad desde el área de cliente
 
-<!-- CP-STEPS-START:import-own-backup-control-panel -->
 Para realizar esta operación, haga clic en las fichas siguientes para ver cada una de las **5** etapas.
 
 > [!tabs]
@@ -129,11 +126,9 @@ Para realizar esta operación, haga clic en las fichas siguientes para ver cada 
 >> >
 >> > La opción `Utilizar un archivo existente`{.action} permite importar los datos de un archivo ya cargado en la herramienta de importación.
 >> >
-<!-- CP-STEPS-END:import-own-backup-control-panel -->
 
 ### Realizar la importación desde la herramienta web phpMyAdmin
 
-<!-- CP-STEPS-START:import-phpmyadmin -->
 En primer lugar deberá acceder a phpMyAdmin. Para ello, haga clic en las fichas siguientes para ver cada una de las **3** etapas.
 
 > [!tabs]
@@ -150,7 +145,6 @@ En primer lugar deberá acceder a phpMyAdmin. Para ello, haga clic en las fichas
 >> Haga clic en los tres puntos situados al final de la línea correspondiente a la base de datos y seleccione `Acceder a phpMyAdmin`{.action}.
 >>
 >> ![Importación de una base de datos](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/go-to-phpmyadmin.png){.thumbnail}
-<!-- CP-STEPS-END:import-phpmyadmin -->
 
 En la página de phpMyAdmin, introduzca la información de la base de datos, seleccione en el menú desplegable la opción de acceder a los datos actuales de la base de datos (**Current**) y conéctese haciendo clic en `Continuar`{.action}. Una vez que se haya conectado, haga clic en `Importar`{.action} en el menú superior e introduzca la información solicitada. Le recordamos que existe un límite para el tamaño del archivo de backup.
 

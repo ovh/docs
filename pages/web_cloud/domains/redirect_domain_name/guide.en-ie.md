@@ -93,7 +93,6 @@ This option allows you, after entering the redirected domain name, to display th
 
 > This "standard" redirection will return an HTTP 301 code.
 
-<!-- CP-STEPS-START:configure-redirect-permanent -->
 Click on the tabs below to view each of the **7** steps.
 
 > [!tabs]
@@ -158,7 +157,6 @@ Click on the tabs below to view each of the **7** steps.
 >> > Please note, the old configuration will be disabled and deleted.
 >> >
 >>
-<!-- CP-STEPS-END:configure-redirect-permanent -->
 
 ///
 
@@ -176,7 +174,6 @@ Positioning on search engines is less efficient than with a **permanent visible*
 
 > This redirection will return an HTTP 302 code.
 
-<!-- CP-STEPS-START:configure-redirect-temporary -->
 Click on the tabs below to view each of the **7** steps.
 
 > [!tabs]
@@ -239,7 +236,6 @@ Click on the tabs below to view each of the **7** steps.
 >> > If the message "*There are redirections from the domain names you wish to redirect that conflict with the redirections you wish to add*" appears, you can tick the `Confirm the overwriting of the existing redirection`{.action} box to force your redirection to be applied.
 >> >
 >> > Please note, the old configuration will be disabled and deleted.
-<!-- CP-STEPS-END:configure-redirect-temporary -->
 
 ///
 
@@ -263,7 +259,6 @@ This encapsulation prevents your website visitors from viewing the target domain
 >
 > Please note, pages embedded with an *iFrame* tag may not be readable on smartphones. Their content is generally not taken into account by search engines for your website's SEO and indexing.
 
-<!-- CP-STEPS-START:configure-redirect-invisible -->
 Click on the tabs below to view each of the **7** steps.
 
 > [!tabs]
@@ -332,7 +327,6 @@ Click on the tabs below to view each of the **7** steps.
 >> > If the message "*There are redirections from the domain names you wish to redirect that conflict with the redirections you wish to add*" appears, you can tick the `Confirm the overwriting of the existing redirection`{.action} box to force your redirection to be applied.
 >> >
 >> > Please note, the old configuration will be disabled and deleted.
-<!-- CP-STEPS-END:configure-redirect-invisible -->
 
 ### Redirecting a domain name via a ".htaccess" file <a name="htaccess_rewrite"></a>
 

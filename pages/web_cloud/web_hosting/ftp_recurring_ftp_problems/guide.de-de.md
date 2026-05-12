@@ -61,7 +61,6 @@ Wenn Sie sich nicht authentifizieren können, ändern Sie Ihr FTP-Passwort entsp
 
 Wenn Sie den Speicherplatz Ihres Webhostings überschreiten, kann es zu Fehlfunktionen auf Ihrer Seite kommen.
 
-<!-- CP-STEPS-START:check-disk-space -->
 Um den verbleibenden Speicherplatz auf Ihrem Webhosting zu überprüfen, klicken Sie auf die Tabs, um die **2** Schritte anzuzeigen.
 
 > [!tabs]
@@ -76,7 +75,6 @@ Um den verbleibenden Speicherplatz auf Ihrem Webhosting zu überprüfen, klicken
 >> Die Speicherplatzauslastung Ihres Webhostings finden Sie im Feld **Allgemeine Informationen** unter **Speicherplatz**.
 >>
 >> ![disk_space](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-disk-space.png){.thumbnail}
-<!-- CP-STEPS-END:check-disk-space -->
 
 ### Ich kann meine Dateien nicht auf den FTP-Server übertragen
 

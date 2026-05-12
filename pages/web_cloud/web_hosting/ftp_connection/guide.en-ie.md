@@ -47,7 +47,6 @@ To connect to your FTP storage space, you will need the following:
 >
 > **If you already have these items**, proceed directly to part 2 "[Access your storage space](#ftp_storage_access)" in this guide.
 
-<!-- CP-STEPS-START:get-ftp-credentials -->
 If you do not have this information at hand, click on the tabs below to view each of the **4** steps.
 
 > [!tabs]
@@ -94,7 +93,6 @@ If you do not have this information at hand, click on the tabs below to view eac
 >> > [!primary]
 >> >
 >> > Depending on which OVHcloud [web hosting plan](/links/web/hosting) you have, some of the information listed above (particularly concerning SSH) may not appear.
-<!-- CP-STEPS-END:get-ftp-credentials -->
 
 If you have forgotten your FTP or SSH user password, please refer to our guide “[Modifying a FTP user password](/pages/web_cloud/web_hosting/ftp_change_password)”.
 

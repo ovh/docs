@@ -50,7 +50,6 @@ Neste guia encontrará todos os endereços IP dos alojamentos web OVHcloud. Assi
 
 ## Instruções
 
-<!-- CP-STEPS-START:instructions-find-cluster -->
 Para conhecer o cluster de alojamento web no qual se encontra o seu serviço, clique nos separadores abaixo para visualizar cada uma das **2** etapas.
 
 > [!tabs]
@@ -65,7 +64,6 @@ Para conhecer o cluster de alojamento web no qual se encontra o seu serviço, cl
 >> No quadro **Informações gerais** da página que se apresenta, recupere o número do cluster com a menção **Cluster** (3 algarismos compreendidos entre `0` e `9`).
 >>
 >> ![Números do cluster e do filer](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-cluster-and-filer.png){.thumbnail}
-<!-- CP-STEPS-END:instructions-find-cluster -->
 
 **Clique no número do cluster abaixo onde se encontra o seu alojamento web para mostrar os endereços IP correspondentes.**
 

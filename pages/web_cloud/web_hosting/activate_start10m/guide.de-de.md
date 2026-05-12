@@ -40,7 +40,6 @@ In dieser Anleitung erfahren Sie, wie Sie dieses Angebot für Ihren [Domainnamen
 
 ## In der praktischen Anwendung
 
-<!-- CP-STEPS-START:activate-100m-steps -->
 Um Ihr Kostenloses Hosting 100M zu aktivieren, klicken Sie auf die Tabs, um die **3** Schritte anzuzeigen.
 
 > [!tabs]
@@ -80,7 +79,6 @@ Um Ihr Kostenloses Hosting 100M zu aktivieren, klicken Sie auf die Tabs, um die 
 >> Abschnitt **3** informiert Sie über die Preisgestaltung des Angebots. 
 >>
 >> In Abschnitt **4** können Sie die Verträge einsehen und Ihre Bestellung bestätigen.
-<!-- CP-STEPS-END:activate-100m-steps -->
 
 > [!primary]
 >

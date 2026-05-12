@@ -71,7 +71,6 @@ Kilka [ofert hostingu OVHcloud](/links/web/hosting) zawiera ofertę e-mail "[MX 
 
 Po wybraniu oferty hostingu, jeśli nie jesteś jeszcze klientem OVHcloud, kliknij przycisk `Zamów`{.action} na powyższych stronach handlowych. Postępuj zgodnie z kolejnymi poleceniami **bez konieczności przenoszenia domeny** (Operacja ta zostanie wykonana w części 10 niniejszego przewodnika).
 
-<!-- CP-STEPS-START:order-hosting-plan -->
 Zamówienie możesz również złożyć w Panelu klienta OVHcloud. W tym celu kliknij kolejno poniższe karty, aby wyświetlić każdy z **3** kroków.
 
 > [!tabs]
@@ -88,7 +87,6 @@ Zamówienie możesz również złożyć w Panelu klienta OVHcloud. W tym celu kl
 > **Krok 3**
 >>
 >> Wykonaj kolejne kroki zamówienia **bez żądania transferu domeny** (operacja ta zostanie wykonana w części 10 niniejszego przewodnika).
-<!-- CP-STEPS-END:order-hosting-plan -->
 
 Po zatwierdzeniu płatności rozpocznie się instalacja hostingu. Na adres e-mail do kontaktu zostanie wysłana wiadomość. Identyfikatory dostępu do przestrzeni dyskowej FTP (File Transfer Protocol) Twojego hostingu WWW.
 

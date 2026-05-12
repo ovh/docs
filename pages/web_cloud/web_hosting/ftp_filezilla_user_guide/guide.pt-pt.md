@@ -67,7 +67,6 @@ Permite publicar ficheiros ou o seu website [ligando-se ao espaço de armazename
 
 ### 1 - Obter as informações de ligação ao espaço de armazenamento do alojamento web <a name="part-1"></a>
 
-<!-- CP-STEPS-START:get-ftp-connection-info -->
 Clique nos separadores abaixo para visualizar cada uma das **3** etapas.
 
 > [!tabs]
@@ -92,7 +91,6 @@ Clique nos separadores abaixo para visualizar cada uma das **3** etapas.
 >> > [!primary]
 >> >
 >> > Por razões de segurança, a palavra-passe de um utilizador não aparece na página do separador `FTP - SSH`{.action}. Se se esquecer da palavra-passe, consulte [este manual](/pages/web_cloud/web_hosting/ftp_change_password) para obter mais informações.
-<!-- CP-STEPS-END:get-ftp-connection-info -->
 
 ### 2 - Ligue-se ao espaço de armazenamento do seu alojamento graças ao FileZilla
 

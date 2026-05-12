@@ -61,7 +61,6 @@ Se não conseguir autenticar-se, altere a sua palavra-passe FTP de acordo com as
 
 A falta de espaço no seu alojamento partilhado pode provocar disfunções no seu site quando o tenta alterar ou atualizar.
 
-<!-- CP-STEPS-START:check-disk-space -->
 Para verificar o espaço de armazenamento restante no alojamento, clique nos separadores abaixo para visualizar cada uma das **2** etapas.
 
 > [!tabs]
@@ -78,7 +77,6 @@ Para verificar o espaço de armazenamento restante no alojamento, clique nos sep
 >> ![disk_space](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-disk-space.png){.thumbnail}
 >>
 >> O espaço de armazenamento utilizado aparece abaixo desta menção.
-<!-- CP-STEPS-END:check-disk-space -->
 
 ### Não consigo transferir os meus ficheiros para o servidor FTP.
 

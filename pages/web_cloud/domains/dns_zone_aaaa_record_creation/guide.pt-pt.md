@@ -52,7 +52,6 @@ Deseja que o seu website esteja acessível através do seu nome de domínio? Par
 
 ### Adicionar um registo DNS do tipo AAAA para um domínio
 
-<!-- CP-STEPS-START:add-aaaa-record-domain -->
 Clique nos separadores abaixo para visualizar cada um dos **5** passos.
 
 > [!tabs]
@@ -77,7 +76,6 @@ Clique nos separadores abaixo para visualizar cada um dos **5** passos.
 > **Passo 5**
 >>
 >> Verifique o resumo e clique em `Validar`{.action}. Aguarde até **24** horas para que a propagação da adição na rede DNS seja plenamente efetiva.
-<!-- CP-STEPS-END:add-aaaa-record-domain -->
 
 /// details | Clique aqui para mais informações.
 
@@ -93,7 +91,6 @@ Consulte os nossos guias detalhados:
 
 ### Adicionar um registo DNS do tipo AAAA para o subdomínio de um domínio
 
-<!-- CP-STEPS-START:add-aaaa-record-subdomain -->
 Clique nos separadores abaixo para visualizar cada um dos **5** passos.
 
 > [!tabs]
@@ -118,7 +115,6 @@ Clique nos separadores abaixo para visualizar cada um dos **5** passos.
 > **Passo 5**
 >>
 >> Verifique o resumo e clique em `Validar`{.action}. Aguarde até **24** horas para que a propagação da adição na rede DNS seja plenamente efetiva.
-<!-- CP-STEPS-END:add-aaaa-record-subdomain -->
 
 /// details | Clique aqui para mais informações.
 

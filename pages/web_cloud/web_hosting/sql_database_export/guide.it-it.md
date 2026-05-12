@@ -57,7 +57,6 @@ Continua la lettura in base al metodo di backup scelto.
 
 ### Recuperare un backup tramite lo strumento di OVHcloud
 
-<!-- CP-STEPS-START:retrieve-backup-ovhcloud-tool -->
 Per accedere allo strumento di backup di OVHcloud, clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **3** passi.
 
 > [!tabs]
@@ -80,11 +79,9 @@ Per accedere allo strumento di backup di OVHcloud, clicca sulle schede qui sotto
 >> ![Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/tab.png){.thumbnail}
 >>
 >> Visualizzi una tabella con tutti i database creati per la tua soluzione di hosting. Da questo momento è possibile scegliere se effettuare un nuovo backup o ripristinarne uno esistente.
-<!-- CP-STEPS-END:retrieve-backup-ovhcloud-tool -->
 
 #### 1 - Effettua un nuovo backup del database
 
-<!-- CP-STEPS-START:create-new-backup -->
 Per effettuare un nuovo backup, clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **4** passi.
 
 > [!tabs]
@@ -109,11 +106,9 @@ Per effettuare un nuovo backup, clicca sulle schede qui sotto per visualizzare i
 >> ![databasedump](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/create-a-database-backup-step-1.png){.thumbnail}
 >>
 >> Attendi il completamento del processo. appena il backup diventerà disponibile, sarà possibile recuperarlo.
-<!-- CP-STEPS-END:create-new-backup -->
 
 #### 2 - Recupera un backup del database
 
-<!-- CP-STEPS-START:retrieve-existing-backup -->
 Per recuperare un backup esistente, clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **4** passi.
 
 > [!tabs]
@@ -138,11 +133,9 @@ Per recuperare un backup esistente, clicca sulle schede qui sotto per visualizza
 >> Per scaricare un backup, clicca sul pulsante `...`{.action} a destra del backup che vuoi ripristinare e poi su `Scarica il backup`{.action}. Conferma e attendi il completamento dell'operazione.
 >>
 >> ![databasedump](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/download-the-backup.png){.thumbnail}
-<!-- CP-STEPS-END:retrieve-existing-backup -->
 
 ### Recupera un backup dall'interfaccia web phpMyAdmin
 
-<!-- CP-STEPS-START:retrieve-backup-phpmyadmin -->
 Per effettuare l'operazione, accedi a *phpMyAdmin*. Per farlo, clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **3** passi.
 
 > [!tabs]
@@ -159,7 +152,6 @@ Per effettuare l'operazione, accedi a *phpMyAdmin*. Per farlo, clicca sulle sche
 >> Clicca sul pulsante `...`{.action} in corrispondenza del database interessato e seleziona `Accedi a phpMyAdmin`{.action}.
 >>
 >> ![databasedump](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/go-to-phpmyadmin.png){.thumbnail}
-<!-- CP-STEPS-END:retrieve-backup-phpmyadmin -->
 
 Accedi all'interfaccia di connessione a *phpMyAdmin*, inserisci le informazioni del database ed effettua l'accesso. Accedi alla scheda `Esporta`{.action}, in cui sono proposti due metodi di esportazione:
 

@@ -32,7 +32,6 @@ Durante el uso de sus servicios, puede que necesite conocer el nombre del servid
 
 ## Procedimiento
 
-<!-- CP-STEPS-START:find-database-server -->
 Haga clic en las fichas siguientes para ver cada una de las **3** etapas.
 
 > [!tabs]
@@ -62,7 +61,6 @@ Haga clic en las fichas siguientes para ver cada una de las **3** etapas.
 >> >
 >> > - La **Dirección del servidor** forma parte de las credenciales de conexión específicas de su base de datos y permite conectar su sitio web a esta última.
 >> > - El **Servidor** representa la infraestructura que aloja su base de datos, así como otras bases. El nombre del servidor permite verificar si está afectado por una operación de mantenimiento o un incidente declarado en nuestra página [Web Cloud Status](https://web-cloud.status-ovhcloud.com/).
-<!-- CP-STEPS-END:find-database-server -->
 
 ## Más información <a name="go-further"></a>
 

@@ -28,7 +28,6 @@ Le soluzioni [Web Cloud Databases](/links/web/databases) possono essere attivate
 
 ## Procedura
 
-<!-- CP-STEPS-START:detach-wcdb-steps -->
 Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **3** passi.
 
 > [!tabs]
@@ -50,7 +49,6 @@ Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **3** pa
 >>
 >> ![Detach Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/detach-my-web-cloud-databases.png){.thumbnail}
 >>
-<!-- CP-STEPS-END:detach-wcdb-steps -->
 
 Una volta completati i 4 step, la soluzione Web Cloud Databases sarà disattivata entro poche ore.
 

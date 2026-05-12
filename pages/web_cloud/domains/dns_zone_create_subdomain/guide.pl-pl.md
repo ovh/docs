@@ -91,7 +91,6 @@ Wówczas będzie ona mieć własną strefę do konfigurowania rekordów DNS.
 
 ### 1 - Utwórz strefę DNS za pomocą Panelu klienta OVHcloud
 
-<!-- CP-STEPS-START:create-dns-zone -->
 W tym celu kliknij poniższe zakładki, aby wyświetlić kolejne **3** kroki.
 
 > [!tabs]
@@ -121,7 +120,6 @@ W tym celu kliknij poniższe zakładki, aby wyświetlić kolejne **3** kroki.
 >> |Nie|Wybierz ten wybór, jeśli planujesz korzystać z usług OVHcloud takich jak [hosting WWW](/links/web/hosting), strefa jest wstępnie skonfigurowana do tego celu.<br>![no-minimum-dns-entries](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/dashboard-ovh-full-entries.png){.thumbnail}|
 >>
 >> Po dokonaniu wyboru, postępuj zgodnie z etapami wyświetlanymi w Panelu klienta OVHcloud, aż do utworzenia strefy DNS.
-<!-- CP-STEPS-END:create-dns-zone -->
 
 ### 2 - Edytowanie strefy DNS (opcjonalnie)
 
@@ -139,7 +137,6 @@ Aktywacja strefy DNS dla poddomeny różni się od aktywacji nazwy domeny, ponie
 
 Najpierw musisz uzyskać nazwy **serwerów DNS** OVHcloud skojarzonych ze strefą DNS utworzoną dla Twojej poddomeny.
 
-<!-- CP-STEPS-START:find-dns-servers -->
 Aby je odnaleźć, w tym celu kliknij poniższe zakładki, aby wyświetlić kolejne **2** kroki.
 
 > [!tabs]
@@ -161,7 +158,6 @@ Aby je odnaleźć, w tym celu kliknij poniższe zakładki, aby wyświetlić kole
 >> - `nsXX.ovh.net` i `dnsXX.ovh.net` lub `nsXXX.ovh.net` i `dnsXXX.ovh.net` (gdzie każdy `X` reprezentuje cyfrę od **0** do **9**).
 >> - `nsXX.ovh.ca` i `dnsXX.ovh.ca` lub `nsXXX.ovh.ca` i `dnsXXX.ovh.ca` (gdzie każdy `X` reprezentuje cyfrę od **0** do **9**).
 >> - `ns200.anycast.me` i `dns200.anycast.me` (jeśli podpisałeś się na opcję [DNS anycast](/links/web/domains-options)).
-<!-- CP-STEPS-END:find-dns-servers -->
 
 Po odzyskaniu dwóch nazw serwerów DNS, mogą zajść dwie sytuacje:
 
@@ -169,7 +165,6 @@ Po odzyskaniu dwóch nazw serwerów DNS, mogą zajść dwie sytuacje:
 
 /// details | Nazwa domeny, od której zależy Twoja subdomena, ma aktywną strefę DNS w OVHcloud
 
-<!-- CP-STEPS-START:add-ns-records-ovhcloud -->
 W tym celu kliknij poniższe zakładki, aby wyświetlić kolejne **4** kroki.
 
 > [!tabs]
@@ -204,7 +199,6 @@ W tym celu kliknij poniższe zakładki, aby wyświetlić kolejne **4** kroki.
 >> **Powtórz cały proces dla drugiego serwera DNS.**
 >>
 >> W razie potrzeby, skorzystaj również z naszego przewodnika "[Edycja strefy DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit)".
-<!-- CP-STEPS-END:add-ns-records-ovhcloud -->
 
 ///
 

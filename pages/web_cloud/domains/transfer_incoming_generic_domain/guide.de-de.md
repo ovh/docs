@@ -177,7 +177,6 @@ Sobald der Transfer abgeschlossen ist, können Sie Ihren Domainnamen über die S
 >
 > Je nach Situation und dem neuen Ablaufdatum kann es notwendig sein, Ihren Domainnamen direkt nach dem Transfer zu verlängern.
 
-<!-- CP-STEPS-START:check-domain-expiry -->
 Um dies zu überprüfen, klicken Sie auf die Tabs, um die **2** Schritte nacheinander anzuzeigen.
 
 > [!tabs]
@@ -190,7 +189,6 @@ Um dies zu überprüfen, klicken Sie auf die Tabs, um die **2** Schritte nachein
 > **Schritt 2**
 >>
 >> Auf der angezeigten Seite finden Sie direkt unter dem Domainnamen das geplante Verlängerungsdatum mit dem **Monat** und dem **Jahr** des Ablaufs.
-<!-- CP-STEPS-END:check-domain-expiry -->
 
 ## Weiterführende Informationen
 

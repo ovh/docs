@@ -29,7 +29,6 @@ Baza danych (DB) pozwala na przechowywanie elementów dynamicznych, takich jak k
 
 ### Tworzenie bazy danych
 
-<!-- CP-STEPS-START:create-db-and-user-on-db-server_create-db_pl -->
 Kliknij poniższe karty, aby wyświetlić kolejne **4** kroki.
 
 > [!tabs]
@@ -65,13 +64,11 @@ Kliknij poniższe karty, aby wyświetlić kolejne **4** kroki.
 >> Kliknij `Zatwierdź`{.action}.
 >>
 >> ![web-cloud-databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/databases/add-database-confirmation.png){.thumbnail}
-<!-- CP-STEPS-END:create-db-and-user-on-db-server_create-db_pl -->
 
 ### Tworzenie użytkownika
 
 Aby korzystać z serwera baz danych OVHcloud, utwórz użytkowników z odpowiednimi uprawnieniami do łączenia się z bazą danych.
 
-<!-- CP-STEPS-START:create-db-and-user-on-db-server_create-user_pl -->
 Kliknij poniższe karty, aby wyświetlić kolejne **4** kroki.
 
 > [!tabs]
@@ -94,13 +91,11 @@ Kliknij poniższe karty, aby wyświetlić kolejne **4** kroki.
 > **Krok 4**
 >>
 >> Wpisz "nazwę użytkownika" i "hasło", a następnie kliknij `Zatwierdź`{.action}.
-<!-- CP-STEPS-END:create-db-and-user-on-db-server_create-user_pl -->
 
 ### Zarządzanie uprawnieniami użytkowników
 
 Aby użytkownik mógł wykonywać operacje na bazie danych, konieczne jest przypisanie mu uprawnień.
 
-<!-- CP-STEPS-START:create-db-and-user-on-db-server_manage-rights_pl -->
 Kliknij poniższe karty, aby wyświetlić kolejne **4** kroki.
 
 > [!tabs]
@@ -136,7 +131,6 @@ Kliknij poniższe karty, aby wyświetlić kolejne **4** kroki.
 >> > Podział uprawnień wymienionych powyżej jest właściwy dla OVHcloud. Użytkownik z uprawnieniami `Administrator` może korzystać z **DDL** (Data Definition Language) i **DML** (Data Manipulation Language), podczas gdy użytkownik z uprawnieniami `Odczyt / Zapis` może korzystać tylko z **DML** (Data Manipulation Language).
 >>
 >> ![web-cloud-databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/users-and-rights/changing-user-rights.png){.thumbnail}
-<!-- CP-STEPS-END:create-db-and-user-on-db-server_manage-rights_pl -->
 
 ### Usuwanie bazy danych
 
@@ -148,7 +142,6 @@ Kliknij poniższe karty, aby wyświetlić kolejne **4** kroki.
 > kopii zapasowej i pobranie jej przed każdym usunięciem.
 >
 
-<!-- CP-STEPS-START:create-db-and-user-on-db-server_delete-db_pl -->
 Kliknij poniższe karty, aby wyświetlić kolejne **3** kroki.
 
 > [!tabs]
@@ -167,7 +160,6 @@ Kliknij poniższe karty, aby wyświetlić kolejne **3** kroki.
 >> Kliknij przycisk `...`{.action} po prawej stronie odpowiedniej bazy danych, a następnie `Usuń bazę`{.action}.
 >>
 >> ![web-cloud-databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/databases/delete-the-database.png){.thumbnail}
-<!-- CP-STEPS-END:create-db-and-user-on-db-server_delete-db_pl -->
 
 ## Sprawdź również
 
