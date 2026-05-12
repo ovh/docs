@@ -53,7 +53,6 @@ details[open]>summary::before {
 >
 > Si ha contratado su dominio y su alojamiento web en un mismo pedido, estos dos servicios ya están asociados. Acceda directamente a la [Parte 2](#part-2) de esta guía.
 
-<!-- CP-STEPS-START:link-domain-website -->
 Haga clic en las pestañas de abajo para visualizar sucesivamente las **4** etapas.
 
 > [!tabs]
@@ -74,7 +73,6 @@ Haga clic en las pestañas de abajo para visualizar sucesivamente las **4** etap
 > **Etapa 4**
 >>
 >> En la nueva página que se abre, marque y complete los elementos solicitados hasta su validación.
-<!-- CP-STEPS-END:link-domain-website -->
 
 /// details | Haga clic aquí para obtener más información.
 
@@ -90,7 +88,6 @@ Consulte nuestras guías detalladas:
 
 En sus alojamientos web, OVHcloud ofrece la instalación gratuita de los CMS WordPress, Joomla, PrestaShop y Drupal gracias a la opción de módulo en un clic.
 
-<!-- CP-STEPS-START:install-1click-module -->
 Haga clic en las pestañas de abajo para visualizar sucesivamente las **4** etapas.
 
 > [!tabs]
@@ -111,7 +108,6 @@ Haga clic en las pestañas de abajo para visualizar sucesivamente las **4** etap
 > **Etapa 4**
 >>
 >> En la nueva ventana, seleccione el CMS que quiera instalar. A continuación, seleccione el dominio en el que desea instalar el módulo seleccionando el dominio deseado **sin los "www"** situados delante (por ejemplo, `domain.tld` y no `www.domain.tld`) y haga clic directamente en `Instalar`{.action}.
-<!-- CP-STEPS-END:install-1click-module -->
 
 /// details | Haga clic aquí para obtener más información.
 
@@ -128,7 +124,6 @@ Consulte nuestras guías detalladas:
 >
 > Si ha contratado su dominio y su alojamiento web en un solo pedido, las direcciones de correo incluidas con el alojamiento web ya están asociadas a su dominio. Acceda directamente a la [Part 4](#part-4) de esta guía.
 
-<!-- CP-STEPS-START:enable-email-solution -->
 Haga clic en las pestañas de abajo para visualizar sucesivamente las **3** etapas.
 
 > [!tabs]
@@ -145,7 +140,6 @@ Haga clic en las pestañas de abajo para visualizar sucesivamente las **3** etap
 > **Etapa 3**
 >>
 >> En la nueva página que aparece, seleccione el dominio correspondiente en la sección `(1)` y continúe hasta que haya activado las direcciones de correo electrónico.
-<!-- CP-STEPS-END:enable-email-solution -->
 
 /// details | Haga clic aquí para obtener más información.
 
@@ -155,7 +149,6 @@ Consulte nuestra guía detallada "[web hosting - Activar las direcciones de corr
 
 ### 4 - Crear una dirección de correo electrónico personalizada con su nombre de dominio <a name="part-4"></a>
 
-<!-- CP-STEPS-START:create-email-address -->
 Haga clic en las pestañas de abajo para visualizar sucesivamente las **4** etapas.
 
 > [!tabs]
@@ -174,7 +167,6 @@ Haga clic en las pestañas de abajo para visualizar sucesivamente las **4** etap
 > **Etapa 4**
 >>
 >> En la nueva ventana, complete los datos solicitados hasta su validación.
-<!-- CP-STEPS-END:create-email-address -->
 
 Repita esta operación para cada dirección de correo electrónico que quiera crear (dentro del límite de su plan de hosting).
 

@@ -45,7 +45,6 @@ Możesz hostować wiele stron internetowych w ramach jednej oferty hostingu, naw
 
 ### Uzyskanie dostępu do narzędzia diagnostycznego
 
-<!-- CP-STEPS-START:diagnose-website -->
 Kliknij poniższe zakładki, aby wyświetlić kolejne **4** kroki.
 
 > [!tabs]
@@ -80,9 +79,7 @@ Kliknij poniższe zakładki, aby wyświetlić kolejne **4** kroki.
 >> - `A/AAAA` szary.
 >>
 >> Zobacz sekcję "[Interpretacja kolorów narzędzia diagnostycznego](#interpretation)", aby dowiedzieć się, co oznaczają te trzy kolory.
-<!-- CP-STEPS-END:diagnose-website -->
 
-<!-- CP-STEPS-START:diagnostic-status-interpretation -->
 ### Interpretacja kolorów narzędzia diagnostycznego <a name="interpretation"></a>
 
 **Kliknij odpowiednie wskaźniki statusu poniżej, aby wyświetlić ich objaśnienia.**
@@ -114,8 +111,6 @@ Gdy ikona `A/AAAA` jest szara w kolumnie `Diagnostyka`, oznacza to, że domena n
 Aby dodać rekordy **A** i/lub **AAAA** i poprawnie skonfigurować swoją domenę, postępuj zgodnie z instrukcjami opisanymi w naszym przewodniku "[Modyfikacja strefy DNS](/pages/web_cloud/domains/dns_zone_edit)".
 
 ///
-
-<!-- CP-STEPS-END:diagnostic-status-interpretation -->
 
 ## Sprawdź również
 

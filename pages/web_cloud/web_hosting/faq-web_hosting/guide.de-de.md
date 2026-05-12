@@ -24,7 +24,6 @@ details[open]>summary::before {
 
 /// details | Wie konfiguriere ich mein Webhosting?
 
-<!-- CP-STEPS-START:configure-hosting -->
 Klicken Sie auf die Tabs, um die **2** Schritte anzuzeigen.
 
 > [!tabs]
@@ -37,7 +36,6 @@ Klicken Sie auf die Tabs, um die **2** Schritte anzuzeigen.
 > **Schritt 2**
 >>
 >> Sie können dort Ihre SSL-Zertifikate, die auf Ihrem Webhosting angewendete PHP Version, die CDN-Option, Ihre Webseiten, Datenbanken, etc. verwalten.
-<!-- CP-STEPS-END:configure-hosting -->
 
 > [!success]
 >
@@ -47,7 +45,6 @@ Klicken Sie auf die Tabs, um die **2** Schritte anzuzeigen.
 
 /// details | Ich habe das Passwort für das Konto vergessen, in dem sich mein Webhosting befindet. Was kann ich tun?
 
-<!-- CP-STEPS-START:forgot-account-password -->
 Wenn Sie Ihre OVHcloud Kundenkennung oder das zugehörige Passwort vergessen haben, klicken Sie auf die Tabs, um die **3** Schritte anzuzeigen.
 
 > [!tabs]
@@ -62,7 +59,6 @@ Wenn Sie Ihre OVHcloud Kundenkennung oder das zugehörige Passwort vergessen hab
 > **Schritt 3**
 >>
 >> Klicken Sie anschließend auf die Schaltfläche `Absenden`{.action}.
-<!-- CP-STEPS-END:forgot-account-password -->
 
 Der Reset-Vorgang wird dann an Ihre Kontakt-E-Mail-Adresse versandt.
 
@@ -74,7 +70,6 @@ Der Reset-Vorgang wird dann an Ihre Kontakt-E-Mail-Adresse versandt.
 
 /// details | Wie verwalte ich das Passwort des FTP-Speicherplatzes meines Webhostings?
 
-<!-- CP-STEPS-START:manage-ftp-password -->
 Klicken Sie auf die Tabs, um die **2** Schritte anzuzeigen.
 
 > [!tabs]
@@ -87,7 +82,6 @@ Klicken Sie auf die Tabs, um die **2** Schritte anzuzeigen.
 > **Schritt 2**
 >>
 >> Klicken Sie auf der angezeigten Seite auf den Tab `FTP - SSH`{.action}.
-<!-- CP-STEPS-END:manage-ftp-password -->
 
 Dort können Sie das FTP-Passwort Ihres Webhostings ändern.
 
@@ -103,7 +97,6 @@ Dort können Sie das FTP-Passwort Ihres Webhostings ändern.
 >
 > Wenn Sie das Passwort einer Datenbank ändern, die von einer Ihrer Websites verwendet wird, aktualisieren Sie es ebenfalls in der Konfigurationsdatei der betreffenden Website. Ohne dieses Update wird Ihre Website von ihrer Datenbank separiert und funktioniert nicht mehr.
 
-<!-- CP-STEPS-START:change-db-password -->
 Klicken Sie auf die Tabs, um die **2** Schritte anzuzeigen.
 
 > [!tabs]
@@ -116,7 +109,6 @@ Klicken Sie auf die Tabs, um die **2** Schritte anzuzeigen.
 > **Schritt 2**
 >>
 >> Klicken Sie auf der angezeigten Seite auf den Tab `Datenbanken`{.action}.
-<!-- CP-STEPS-END:change-db-password -->
 
 Dort können Sie die Passwörter Ihrer Datenbanken ändern, die mit Ihrem Webhosting verbunden sind.
 
@@ -128,7 +120,6 @@ Dort können Sie die Passwörter Ihrer Datenbanken ändern, die mit Ihrem Webhos
 
 /// details | Wie ändere ich das Passwort eines E-Mail-Accounts, die mit meinem Webhosting verbunden ist?
 
-<!-- CP-STEPS-START:change-email-password -->
 Klicken Sie auf die Tabs, um die **3** Schritte anzuzeigen.
 
 > [!tabs]
@@ -143,7 +134,6 @@ Klicken Sie auf die Tabs, um die **3** Schritte anzuzeigen.
 > **Schritt 3**
 >>
 >> Klicken Sie in der angezeigten Tabelle auf den Button `...`{.action} rechts neben der betreffenden E-Mail-Adresse und dann auf `Passwort ändern`{.action}.
-<!-- CP-STEPS-END:change-email-password -->
 
 Dort können Sie das Passwort Ihres E-Mail-Accounts ändern (achten Sie darauf, die im Eingabefenster angezeigten Passwortrichtlinien einzuhalten).
 
@@ -206,7 +196,6 @@ Im Folgenden sind die wichtigsten Schritte aufgeführt:
 
 /// details | Wie kann ich mehrere Websites auf demselben Webhosting hosten?
 
-<!-- CP-STEPS-START:host-multiple-websites -->
 Wenn Ihr [Webhosting](/links/web/hosting) kompatibel ist, klicken Sie auf die Tabs, um die **2** Schritte anzuzeigen.
 
 > [!tabs]
@@ -219,7 +208,6 @@ Wenn Ihr [Webhosting](/links/web/hosting) kompatibel ist, klicken Sie auf die Ta
 > **Schritt 2**
 >>
 >> Klicken Sie auf der angezeigten Seite auf den Tab `Meine Seiten`{.action}.
-<!-- CP-STEPS-END:host-multiple-websites -->
 
 Dort können Sie die für Ihre Webseiten Ihres Webhosting deklarierten Domains/Subdomains verwalten.
 
@@ -238,7 +226,6 @@ Damit Ihre Website über eine HTTPS-URL erreichbar ist (Beispiel: `https://domai
 
 OVHcloud bietet [mehrere SSL-Zertifikate](/links/web/hosting-options) für Webhostings an.
 
-<!-- CP-STEPS-START:enable-https -->
 Um ein SSL-Zertifikat auf Ihrem Webhosting für Ihre Website zu aktivieren, klicken Sie auf die Tabs, um die **4** Schritte anzuzeigen.
 
 > [!tabs]
@@ -259,7 +246,6 @@ Um ein SSL-Zertifikat auf Ihrem Webhosting für Ihre Website zu aktivieren, klic
 > **Schritt 4**
 >>
 >> Fahren Sie fort, bis die Installation des SSL-Zertifikats abgeschlossen ist (nach vorheriger Validierung des Bestellscheins, wenn Sie eines der Sectigo SSL-Zertifikate auswählen).
-<!-- CP-STEPS-END:enable-https -->
 
 > [!success]
 >
@@ -283,7 +269,6 @@ Um das Webhosting zu bestellen, das am besten zu Ihren Bedürfnissen passt, erfa
 >
 > Abhängig von Ihrem aktuellen Webhosting werden Ihnen möglicherweise nicht alle Angebote gezeigt. Weitere Informationen hierzu finden Sie in unserer Anleitung „[Webhosting-Angebot skalieren](/pages/web_cloud/web_hosting/how_to_upgrade_web_hosting_offer)“.
 
-<!-- CP-STEPS-START:change-hosting-plan -->
 Nachdem Sie Ihre Auswahl getroffen haben, klicken Sie auf die Tabs, um die **3** Schritte anzuzeigen.
 
 > [!tabs]
@@ -300,7 +285,6 @@ Nachdem Sie Ihre Auswahl getroffen haben, klicken Sie auf die Tabs, um die **3**
 > **Schritt 3**
 >>
 >> Wählen Sie anschließend das neue Abonnement und die Dauer aus. Bestätigen Sie die entsprechenden Verträge und klicken Sie auf `Absenden`{.action}.
-<!-- CP-STEPS-END:change-hosting-plan -->
 
 > [!success]
 >
@@ -312,7 +296,6 @@ Nachdem Sie Ihre Auswahl getroffen haben, klicken Sie auf die Tabs, um die **3**
 
 Wenn Sie Ihr Webhosting kündigen oder löschen, wird auch das dazugehörige E-Mail-Angebot gekündigt. Um Ihre E-Mail-Adressen beizubehalten, müssen Sie das E-Mail-Angebot **vor** Kündigung des betreffenden Webhostings trennen.
 
-<!-- CP-STEPS-START:keep-email-after-cancel -->
 Klicken Sie auf die Tabs, um die **3** Schritte anzuzeigen.
 
 > [!tabs]
@@ -329,7 +312,6 @@ Klicken Sie auf die Tabs, um die **3** Schritte anzuzeigen.
 > **Schritt 3**
 >>
 >> Befolgen Sie die Anweisungen, um ein unabhängiges E-Mail-Angebot zu bestellen, mit dem Sie Ihre bereits erstellten E-Mail-Accounts beibehalten können.
-<!-- CP-STEPS-END:keep-email-after-cancel -->
 
 ///
 
@@ -338,7 +320,6 @@ Klicken Sie auf die Tabs, um die **3** Schritte anzuzeigen.
 Die Webhosting-Pakete **Performance** enthalten kostenlos aktivierbare Web Cloud Databases.  
 Wenn Sie Ihr Webhosting kündigen oder löschen **Performance**, wird auch das eventuell damit verbundene Angebot Web Cloud Databases gekündigt. Um Ihre Web Cloud Databases Lösung zu behalten, müssen Sie diese **vor** Kündigung des Hostings abtrennen.
 
-<!-- CP-STEPS-START:keep-wcdb-after-cancel -->
 Klicken Sie auf die Tabs, um die **3** Schritte anzuzeigen.
 
 > [!tabs]
@@ -355,7 +336,6 @@ Klicken Sie auf die Tabs, um die **3** Schritte anzuzeigen.
 > **Schritt 3**
 >>
 >> Befolgen Sie die Anweisungen, um einen unabhängigen Web Cloud Databases Dienst zu bestellen, damit Ihre bereits erstellte Lösung für Web Cloud Databases erhalten bleibt.
-<!-- CP-STEPS-END:keep-wcdb-after-cancel -->
 
 **Diese Aktion kann nicht rückgängig gemacht werden. Das Angebot Web Cloud Databases wird dann unabhängig von Ihrem Performance Webhosting abgerechnet.**
 
@@ -363,7 +343,6 @@ Klicken Sie auf die Tabs, um die **3** Schritte anzuzeigen.
 
 /// details | Wie kann ich den RAM eines Web Cloud Databases Angebots im Zusammenhang mit einem Performance Webhosting erhöhen?
 
-<!-- CP-STEPS-START:increase-wcdb-ram -->
 Klicken Sie auf die Tabs, um die **3** Schritte anzuzeigen.
 
 > [!tabs]
@@ -380,7 +359,6 @@ Klicken Sie auf die Tabs, um die **3** Schritte anzuzeigen.
 > **Schritt 3**
 >>
 >> Befolgen Sie die Anweisungen, um den gewünschten RAM zu bestellen, und fahren Sie dann mit der Validierung der Bestellung fort.
-<!-- CP-STEPS-END:increase-wcdb-ram -->
 
 > [!success]
 >
@@ -399,7 +377,6 @@ Klicken Sie auf die Tabs, um die **3** Schritte anzuzeigen.
 Es gibt mehrere Gründe, warum Ihre Website nicht funktioniert.  
 Um die Ursache zu ermitteln, überprüfen Sie zunächst, dass keines Ihrer Abonnements erneuert werden muss.
 
-<!-- CP-STEPS-START:website-not-working -->
 Klicken Sie auf die Tabs, um die **2** Schritte anzuzeigen.
 
 > [!tabs]
@@ -410,7 +387,6 @@ Klicken Sie auf die Tabs, um die **2** Schritte anzuzeigen.
 > **Schritt 2**
 >>
 >> Weitere Informationen finden Sie in unserer Anleitung „[Wie verlängere ich meine OVHcloud-Dienste](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal)“.
-<!-- CP-STEPS-END:website-not-working -->
 
 Sehen Sie sich anschließend die [laufenden Events auf unserer Infrastruktur](https://www.status-ovhcloud.com/) an.
 
@@ -464,7 +440,6 @@ In diesem Fall müssen Sie Ihr 1-Klick-Modul entfernen und anschließend neu ins
 > - [Webhosting - Wiederherstellung des FTP-Speicherplatzes](/pages/web_cloud/web_hosting/ftp_save_and_backup).
 > - [Webhosting - Datenbankinhalte exportieren](/pages/web_cloud/web_hosting/sql_database_export).
 
-<!-- CP-STEPS-START:fix-cluster-url-1 -->
 **Erst nachdem** Sie alle erforderlichen Backups durchgeführt haben, löschen Sie Ihr [1-Klick-Modul](/pages/web_cloud/web_hosting/cms_install_1_click_modules), klicken Sie auf die Tabs, um die **3** Schritte anzuzeigen.
 
 > [!tabs]
@@ -481,11 +456,9 @@ In diesem Fall müssen Sie Ihr 1-Klick-Modul entfernen und anschließend neu ins
 > **Schritt 3**
 >>
 >> Klicken Sie in der angezeigten Tabelle auf den Button `...`{.action} rechts in der Zeile des betreffenden 1-Klick-Moduls und dann auf `Modul löschen`{.action}.
-<!-- CP-STEPS-END:fix-cluster-url-1 -->
 
 Das Löschen des *1-Klick-Module* kann **mehrere Minuten** dauern.
 
-<!-- CP-STEPS-START:fix-cluster-url-2 -->
 Löschen Sie anschließend die zugehörige Datenbank, klicken Sie auf die Tabs, um die **3** Schritte anzuzeigen.
 
 > [!tabs]
@@ -502,7 +475,6 @@ Löschen Sie anschließend die zugehörige Datenbank, klicken Sie auf die Tabs, 
 > **Schritt 3**
 >>
 >> Klicken Sie in der angezeigten Tabelle auf die Schaltfläche `...`{.action} rechts in der Zeile der betreffenden Datenbank und dann auf `Datenbank löschen`{.action}.
-<!-- CP-STEPS-END:fix-cluster-url-2 -->
 
 Das Löschen der zugehörigen Datenbank kann **mehrere Minuten** dauern.
 
@@ -533,7 +505,6 @@ Wenn Ihre Website nach einer Änderung mit dieser URL angezeigt wird, ist die sc
 > - [Webhosting - Wiederherstellung des FTP-Speicherplatzes](/pages/web_cloud/web_hosting/ftp_save_and_backup)
 > - [Webhosting - Datenbankinhalte exportieren](/pages/web_cloud/web_hosting/sql_database_export)
 
-<!-- CP-STEPS-START:fix-cluster-url-after-change-1 -->
 Um den Quellcode der Website wiederherzustellen, klicken Sie auf die Tabs, um die **4** Schritte anzuzeigen.
 
 > [!tabs]
@@ -556,11 +527,9 @@ Um den Quellcode der Website wiederherzustellen, klicken Sie auf die Tabs, um di
 > **Schritt 4**
 >>
 >> Wählen Sie im angezeigten Fenster das Datum des wiederherzustellenden Backups aus, und fahren Sie mit dem Start der Wiederherstellung fort.
-<!-- CP-STEPS-END:fix-cluster-url-after-change-1 -->
 
 Die Wiederherstellung des FTP-Speicherplatzes kann **mehrere Minuten** dauern.
 
-<!-- CP-STEPS-START:fix-cluster-url-after-change-2 -->
 Um ein Backup Ihrer Datenbank wiederherzustellen, klicken Sie auf die Tabs, um die **5** Schritte anzuzeigen.
 
 > [!tabs]
@@ -585,7 +554,6 @@ Um ein Backup Ihrer Datenbank wiederherzustellen, klicken Sie auf die Tabs, um d
 > **Schritt 5**
 >>
 >> Wenn Sie das Backup ausgewählt haben, klicken Sie rechts neben dem Backup, das Sie wiederherstellen möchten, auf den Button `...`{.action} und dann auf `Backup wiederherstellen`{.action}.
-<!-- CP-STEPS-END:fix-cluster-url-after-change-2 -->
 
 Die Wiederherstellung eines Datenbank-Backups kann **mehrere Minuten** dauern.
 
@@ -606,7 +574,6 @@ Diese Situation weist auf eine fehlerhafte Konfiguration der Ihrem Domainnamen z
 
 Der häufigste Fall ist folgender: Sie haben Ihren Domainnamen und Ihr Webhosting getrennt bestellt, sodass diese nicht automatisch über die DNS-Zone Ihrer Domain miteinander verbunden werden.
 
-<!-- CP-STEPS-START:fix-webmail-redirect-1 -->
 Um dies zu korrigieren, klicken Sie auf die Tabs, um die **4** Schritte anzuzeigen.
 
 > [!tabs]
@@ -626,9 +593,7 @@ Um dies zu korrigieren, klicken Sie auf die Tabs, um die **4** Schritte anzuzeig
 >>
 > **Schritt 4**
 >>
-<!-- CP-STEPS-START:fix-webmail-redirect-2 -->
 >> Vergleichen Sie in der angezeigten Tabelle (die die DNS-Zone der Domain darstellt) die `Ziele` der Einträge vom Typ `NS` in der DNS-Zone mit den zuvor abgerufenen DNS-Servernamen. Drei Fälle können auftreten. Klicken Sie auf die Registerkarten unten, um die **3** Fälle anzuzeigen.
-<!-- CP-STEPS-END:fix-webmail-redirect-1 -->
 
 > [!tabs]
 > **Fall 1**
@@ -661,7 +626,6 @@ Um dies zu korrigieren, klicken Sie auf die Tabs, um die **4** Schritte anzuzeig
 >>
 >> > [!primary]
 >> >
-<!-- CP-STEPS-END:fix-webmail-redirect-2 -->
 >> > Wenn einer Ihrer DNS-Server, die im Tab `DNS-Server`{.action} deklariert sind, folgende Form hat: `sdnsX.ovh.net`, `sdnsX.ovh.ca`, `vpsXXXXXX.ovh.net` oder `vpsXXXXXX.ovh.ca` (wobei `X` eine Ziffer zwischen **0** und **9** ist), gehen Sie zu **Fall 3**.  
 Es handelt sich dabei um von OVHcloud bereitgestellte DNS-Servernamen, die es unseren Kunden ermöglichen, ihre DNS-Konfiguration direkt auf ihren eigenen Servern (Dedicated Server, VPS, etc.) zu hosten.
 >>
@@ -706,7 +670,6 @@ In diesem Fall ist es am schnellsten, das System in einen früheren Zustand zur�
 > - [Webhosting - Wiederherstellung des FTP-Speicherplatzes](/pages/web_cloud/web_hosting/ftp_save_and_backup)
 > - [Webhosting - Datenbankinhalte exportieren](/pages/web_cloud/web_hosting/sql_database_export)
 
-<!-- CP-STEPS-START:fix-redirect-error-1 -->
 Um den Quellcode der Website wiederherzustellen, klicken Sie auf die Tabs, um die **4** Schritte anzuzeigen.
 
 > [!tabs]
@@ -729,11 +692,9 @@ Um den Quellcode der Website wiederherzustellen, klicken Sie auf die Tabs, um di
 > **Schritt 4**
 >>
 >> Wählen Sie im angezeigten Fenster das Datum des wiederherzustellenden Backups aus, und fahren Sie mit dem Start der Wiederherstellung fort.
-<!-- CP-STEPS-END:fix-redirect-error-1 -->
 
 Die Wiederherstellung des FTP-Speicherplatzes kann **mehrere Minuten** dauern.
 
-<!-- CP-STEPS-START:fix-redirect-error-2 -->
 Um ein Backup Ihrer Datenbank wiederherzustellen, klicken Sie auf die Tabs, um die **5** Schritte anzuzeigen.
 
 > [!tabs]
@@ -758,7 +719,6 @@ Um ein Backup Ihrer Datenbank wiederherzustellen, klicken Sie auf die Tabs, um d
 > **Schritt 5**
 >>
 >> Wenn Sie das Backup ausgewählt haben, klicken Sie rechts neben dem Backup, das Sie wiederherstellen möchten, auf den Button `...`{.action} und dann auf `Backup wiederherstellen`{.action}.
-<!-- CP-STEPS-END:fix-redirect-error-2 -->
 
 Die Wiederherstellung eines Datenbank-Backups kann **mehrere Minuten** dauern.
 

@@ -37,7 +37,6 @@ Los módulos en 1 clic permiten la instalación fácil y rápida de un programa 
 
 ### Acceder al sitio web
 
-<!-- CP-STEPS-START:access-module -->
 Haga clic en las pestañas a continuación para visualizar cada una de las **2** etapas.
 
 > [!tabs]
@@ -53,7 +52,6 @@ Haga clic en las pestañas a continuación para visualizar cada una de las **2**
 >>
 >> Haga clic en el botón `...`{.action} a la derecha de la línea correspondiente al módulo y seleccione `Acceder al módulo`{.action}.
 >>
-<!-- CP-STEPS-END:access-module -->
 
 > [!primary]
 >
@@ -62,7 +60,6 @@ Haga clic en las pestañas a continuación para visualizar cada una de las **2**
 
 ### Acceder al panel de administración
 
-<!-- CP-STEPS-START:access-admin-interface -->
 Haga clic en las pestañas a continuación para visualizar cada una de las **2** etapas.
 
 > [!tabs]
@@ -78,11 +75,9 @@ Haga clic en las pestañas a continuación para visualizar cada una de las **2**
 >>
 >> Haga clic en el botón `...`{.action} a la derecha de la línea correspondiente al módulo y seleccione `Acceder al panel de administración del módulo`{.action}.
 >>
-<!-- CP-STEPS-END:access-admin-interface -->
 
 ### Encontrar el usuario de administrador
 
-<!-- CP-STEPS-START:find-admin-login -->
 Haga clic en las pestañas a continuación para visualizar cada una de las **3** etapas.
 
 > [!tabs]
@@ -100,7 +95,6 @@ Haga clic en las pestañas a continuación para visualizar cada una de las **3**
 >>
 >> También puede consultar el mensaje de correo electrónico recibido al crear el módulo. En su [área de cliente de OVHcloud](/links/manager), haga clic en su nombre en la esquina superior derecha de la pantalla y, en el menú que aparece, haga clic en `Emails de servicio`{.action}.
 >>
-<!-- CP-STEPS-END:find-admin-login -->
 
 ### Cambiar la contraseña del módulo <a name="password-change"></a>
 
@@ -128,7 +122,6 @@ No obstante, si necesita ayuda, le recomendamos encarecidamente que utilice la d
 
 Para eliminar el módulo en 1 clic, es necesario empezar identificando su base de datos de forma **segura**.
 
-<!-- CP-STEPS-START:find-db-password -->
 Haga clic en las pestañas a continuación para visualizar cada una de las **3** etapas.
 
 > [!tabs]
@@ -148,7 +141,6 @@ Haga clic en las pestañas a continuación para visualizar cada una de las **3**
 >>
 >> En caso contrario, vaya a la pestaña `Mis sitios`{.action}. Anote el nombre de la `Carpeta raíz` que aparece en la línea del sitio web correspondiente: se trata del directorio en el que se encuentran los archivos que constituyen su módulo en 1 clic en el servidor FTP.
 >>
-<!-- CP-STEPS-END:find-db-password -->
 
 Conéctese al [espacio FTP del alojamiento](/pages/web_cloud/web_hosting/ftp_connection). Abra la `Carpeta raíz` encontrada anteriormente en la pestaña `Mis sitios`{.action} y busque el archivo de configuración de su módulo:
 
@@ -168,7 +160,6 @@ Para hacer copias de seguridad de su sitio web, siga las instrucciones de nuestr
 > La eliminación de su módulo en 1 clic y de su base de datos conllevará igualmente la de **todas sus copias de seguridad**. Los datos eliminados no podrán recuperarse más adelante.
 >
 
-<!-- CP-STEPS-START:delete-module -->
 Haga clic en las pestañas a continuación para visualizar cada una de las **3** etapas.
 
 > [!tabs]
@@ -197,7 +188,6 @@ Haga clic en las pestañas a continuación para visualizar cada una de las **3**
 >> > <iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/8SdPLAk_qqw?si=UYxEaUNJoLYQR41O" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 >> >
 >>
-<!-- CP-STEPS-END:delete-module -->
 
 > [!warning]
 >
@@ -206,7 +196,6 @@ Haga clic en las pestañas a continuación para visualizar cada una de las **3**
 > Si tiene contratado [Hosting Personal](/links/web/hosting-personal-offer), o si ya ha creado cuatro bases de datos en su alojamiento [Hosting Pro](/links/web/hosting-professional-offer) o [Hosting Performance](/links/web/hosting-performance-offer), deberá eliminar la base de datos indicada en [el paso 1](#step1) **ANTES** de poder crear un nuevo módulo en 1 clic.
 >
 
-<!-- CP-STEPS-START:delete-database -->
 Para terminar de eliminar el módulo, haga clic en las pestañas a continuación para visualizar cada una de las **3** etapas.
 
 > [!tabs]
@@ -226,7 +215,6 @@ Para terminar de eliminar el módulo, haga clic en las pestañas a continuación
 >>
 >> Antes de reanudar la instalación de un nuevo módulo, compruebe que las tareas de eliminación solicitadas anteriormente se hayan completado en la pestaña `Tareas en curso`{.action}.
 >>
-<!-- CP-STEPS-END:delete-database -->
 
 ### Buenas prácticas
 

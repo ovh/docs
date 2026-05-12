@@ -73,7 +73,6 @@ Pour vous connecter à votre espace de stockage, vous devez être en possession 
 - l’adresse de ce serveur ;
 - le port de connexion au serveur.
 
-<!-- CP-STEPS-START:get-online-retrieve-ftp-credentials -->
 Ces éléments vous ont été communiqués dans l’e-mail vous notifiant l’installation de votre hébergement web. Si vous n’êtes pas en possession de ces derniers, cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3** étapes.
 
 > [!tabs]
@@ -98,7 +97,6 @@ Ces éléments vous ont été communiqués dans l’e-mail vous notifiant l’in
 >> Si nécessaire, nous vous invitons à consulter notre guide « [Se connecter à l’espace de stockage de son hébergement web](/pages/web_cloud/web_hosting/ftp_connection) ».
 >>
 >> Si vous n'êtes plus en possession du mot de passe, reportez-vous aux instructions décrites dans notre documentation « [Modifier le mot de passe d’un utilisateur FTP](/pages/web_cloud/web_hosting/ftp_change_password) ».
-<!-- CP-STEPS-END:get-online-retrieve-ftp-credentials -->
 
 Une fois tous les éléments en votre possession, la connexion à l'espace de stockage peut s'effectuer de deux manières différentes :
 
@@ -116,7 +114,6 @@ Une fois tous les éléments en votre possession, la connexion à l'espace de st
 
 Une fois connecté à votre espace de stockage, il ne vous reste plus qu'à mettre en ligne les fichiers de votre site. **Nous vous invitons à être particulièrement attentif quant au répertoire sur lequel vous allez télécharger les fichiers**, notamment si vous avez déclaré plusieurs sites web sur votre hébergement web.
 
-<!-- CP-STEPS-START:get-online-find-root-folder -->
 Pour vérifier le dossier dans lequel doit être publié le site web, cliquez sur les onglets ci-dessous pour afficher successivement les **3** étapes.
 
 > [!tabs]
@@ -135,7 +132,6 @@ Pour vérifier le dossier dans lequel doit être publié le site web, cliquez su
 > **Étape 3**
 >>
 >> Publiez alors les fichiers du site web dans ce dernier.
-<!-- CP-STEPS-END:get-online-find-root-folder -->
 
 Il se peut que vous trouviez sur votre espace de stockage un fichier intitulé « index.html ». Ce dernier peut avoir été créé par OVHcloud lors de l'installation de votre hébergement web pour afficher une page par défaut sur votre site web. Si tel est le cas, n'oubliez pas de le supprimer lors de la mise en ligne de vos fichiers.
 
@@ -161,7 +157,6 @@ Si vous êtes en train de migrer un site web, récupérez la base de données ex
 
 Si vous disposez déjà d'une base de données que vous souhaitez utiliser (issue d'une offre d'[hébergement web OVHcloud](/links/web/hosting) ou [Web Cloud Databases](/links/web/databases)), munissez-vous du nom d'utilisateur et de son mot de passe, du nom de la base de données ainsi que de l'adresse du serveur. Poursuivez alors vers l'étape suivante.
 
-<!-- CP-STEPS-START:find-db-credentials -->
 Si vous souhaitez créer une nouvelle base de données chez OVHcloud, cliquez sur les onglets ci-dessous pour afficher successivement les **3** étapes.
 
 > [!tabs]
@@ -182,13 +177,11 @@ Si vous souhaitez créer une nouvelle base de données chez OVHcloud, cliquez su
 >> Cliquez sur le bouton `Créer une base de données`{.action} ou, si ce dernier n'apparaît pas, sur `Actions`{.action} puis sur `Créer une base de données`{.action}. Suivez alors les informations qui s'affichent.
 >>
 >> ![siteinstallation](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/tab.png){.thumbnail}
-<!-- CP-STEPS-END:find-db-credentials -->
 
 #### 3.3. Importer la base de données existante
 
 Si vous migrez un site web, importez la base de données existante dans celle nouvellement créée. S'il s'agit d'un nouveau site, poursuivez vers l'étape suivante.
 
-<!-- CP-STEPS-START:get-online-find-db-server -->
 Il existe plusieurs méthodes pour effectuer cet import. OVHcloud en propose une depuis son espace client. Cliquez sur les onglets ci-dessous pour afficher successivement les **3** étapes.
 
 > [!tabs]
@@ -205,7 +198,6 @@ Il existe plusieurs méthodes pour effectuer cet import. OVHcloud en propose une
 > **Étape 3**
 >>
 >> Cliquez sur le bouton `...`{.action} à droite de votre base de données, puis sur `Importer un fichier`{.action}.
-<!-- CP-STEPS-END:get-online-find-db-server -->
 
 #### 3.4. Lier le site web à la base de données
 

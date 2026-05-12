@@ -59,7 +59,6 @@ L'insieme preconfigurato di regole di base, il "Core Rule Set" (CRS) della nostr
 
 /// details | Abilitare il firewall applicativo sull'intero hosting web nella configurazione PHP
 
-<!-- CP-STEPS-START:enable-firewall -->
 Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **3** passi.
 
 > [!tabs]
@@ -84,13 +83,11 @@ Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **3** pa
 >> ![managephpconfig](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/application-firewall-step-2.png){.thumbnail}
 >>
 >> Nella nuova finestra, assicurati che l'opzione **Firewall a livello applicativo** sia impostata su `Attivato`{.action}. Fai quindi clic sul pulsante `Conferma`{.action}.
-<!-- CP-STEPS-END:enable-firewall -->
 
 ///
 
 /// details | Abilitare il firewall applicativo solo su un dominio o sottodominio specifico
 
-<!-- CP-STEPS-START:disable-firewall -->
 Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **4** passi.
 
 > [!tabs]
@@ -127,7 +124,6 @@ Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **4** pa
 >> Una volta attivato il firewall per il tuo dominio o sottodominio, l'indicazione **Attivato** apparirà nella colonna **Firewall**.
 >>
 >> Se l'indicazione **Attivato** non dovesse apparire entro pochi minuti sulla riga corrispondente al dominio o sottodominio desiderato, ricarica la pagina.
-<!-- CP-STEPS-END:disable-firewall -->
 
 ## Per saperne di più
 

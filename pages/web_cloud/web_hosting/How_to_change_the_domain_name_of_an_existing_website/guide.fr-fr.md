@@ -50,7 +50,6 @@ Déclarez votre nouveau nom de domaine en suivant notre guide « [Comment associ
 Plusieurs conditions sont à remplir pour réussir l'étape 1 :
 
 - Votre nouveau domaine doit pointer vers le même « dossier racine » que le domaine utilisé actuellement pour accéder à votre site.
-<!-- CP-STEPS-START:retrieve-hosting-ip -->
 - Vérifiez que votre nouveau domaine pointe bien vers la bonne adresse IP de votre hébergement mutualisé. Pour récupérer l'adresse IP, cliquez sur les onglets ci-dessous pour afficher successivement les **3** étapes.
 
 > [!tabs]
@@ -67,7 +66,6 @@ Plusieurs conditions sont à remplir pour réussir l'étape 1 :
 > **Étape 3**
 >>
 >> Récupérez **l'IPv4** affichée.
-<!-- CP-STEPS-END:retrieve-hosting-ip -->
 
 > [!warning]
 >
@@ -82,11 +80,9 @@ Plusieurs conditions sont à remplir pour réussir l'étape 1 :
 > - [Gérer un certificat SSL sur son hébergement web](/pages/web_cloud/web_hosting/ssl_on_webhosting)
 > - [Passer son site internet en HTTPS grâce au SSL](/pages/web_cloud/web_hosting/ssl-activate-https-website)
 
-<!-- CP-STEPS-START:verify-multisite-config -->
 Si l'ensemble des actions ont été correctement réalisées, les déclarations de vos noms de domaine doivent être strictement identiques **sauf si vous utilisez un certificat SSL payant de type *Sectigo DV*, *Sectigo EV* ou *custom***.
 
 ![My websites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/all-domain-same-config-enable.png){.thumbnail}
-<!-- CP-STEPS-END:verify-multisite-config -->
 
 > [!primary]
 >

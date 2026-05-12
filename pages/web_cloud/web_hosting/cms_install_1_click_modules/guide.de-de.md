@@ -84,7 +84,6 @@ Es stehen zwei Installationsmethoden zur Verfügung:
 
 /// details | Einfache Installation eines Moduls
 
-<!-- CP-STEPS-START:install-basic-module -->
 Klicken Sie auf die Tabs unten, um die **4** Schritte nacheinander anzuzeigen.
 
 > [!tabs]
@@ -128,7 +127,6 @@ Klicken Sie auf die Tabs unten, um die **4** Schritte nacheinander anzuzeigen.
 >>
 >> Sobald die Installation abgeschlossen ist, erhalten Sie eine E-Mail mit Login-Daten. Damit können Sie sich in das Administrator-Interface (Backend) Ihres CMS einloggen.
 >>
-<!-- CP-STEPS-END:install-basic-module -->
 
 > [!primary]
 >
@@ -138,7 +136,6 @@ Klicken Sie auf die Tabs unten, um die **4** Schritte nacheinander anzuzeigen.
 
 /// details | Erweiterte Installation eines Moduls
 
-<!-- CP-STEPS-START:install-advanced-module -->
 Klicken Sie auf die Tabs unten, um die **8** Schritte nacheinander anzuzeigen.
 
 > [!tabs]
@@ -258,7 +255,6 @@ Klicken Sie auf die Tabs unten, um die **8** Schritte nacheinander anzuzeigen.
 >>
 >> ![Bestätigung der Installation im Experten-Modus](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/1-click-modules/add-a-module-advanced-mod-step-4.png){.thumbnail}
 >>
-<!-- CP-STEPS-END:install-advanced-module -->
 
 ///
 

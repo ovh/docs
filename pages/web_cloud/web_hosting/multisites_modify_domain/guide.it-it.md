@@ -40,7 +40,6 @@ Durante l’utilizzo dell’hosting Web o l’aggiornamento del sito Web, potreb
 >
 > La modifica delle impostazioni di associazione di un dominio o sottodominio può, in caso di errori, comportare l’interruzione dell’accesso ai servizi (il sito Web). In caso di dubbi sulle modifiche da apportare, ti consigliamo di rivolgerti a un professionista specializzato
 
-<!-- CP-STEPS-START:modify-domain-settings -->
 Per modificare i parametri di associazione di un dominio o sottodominio già dichiarato sulla tua offerta di hosting web, clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **4** passi.
 
 > [!tabs]
@@ -73,11 +72,9 @@ Per modificare i parametri di associazione di un dominio o sottodominio già dic
 >> ![Modify domain](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/modify-a-domain-step-1-all-disabled.png){.thumbnail}
 >>
 >> Nella parte successiva di questa guida, troverai una descrizione di ciascun parametro disponibile nella finestra sopra. Dopo aver letto le diverse descrizioni presenti nella sezione "[Descrizione dei parametri modificabili](#step1)" e aver effettuato le tue modifiche, clicca sul pulsante `Continua`{.action} in basso a destra della finestra, quindi vai alla [parte 2](#step2).
-<!-- CP-STEPS-END:modify-domain-settings -->
 
 ### 1 - Descrizione delle impostazioni modificabili <a name="step1"></a>
 
-<!-- CP-STEPS-START:description-editable-parameters -->
 > [!primary]
 >
 > I campi `Dominio`{.action} e `Cartella di root`{.action} non sono modificabili, in quanto si tratta di parametri relativi al sito web presente sull'hosting web.
@@ -113,18 +110,13 @@ Per maggiori informazioni su questa opzione, accedi alla nostra [pagina sulle st
 
 Una volta effettuate le modifiche, clicca sul pulsante `Avanti`{.action} in basso a destra per passare alla [parte 2](#step2).
 
-
-<!-- CP-STEPS-END:description-editable-parameters -->
-
 ### 2 - Riepilogo delle modifiche <a name="step2"></a>
 
-<!-- CP-STEPS-START:confirm-domain-changes -->
 Una volta cliccato sul pulsante `Seguente`{.action}, visualizzi un riepilogo dei parametri che intendi applicare al dominio:
 
 ![Modify domain resume](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/modify-domain-step2.png){.thumbnail}
 
 Se tutte le impostazioni sono configurate secondo le tue necessità, clicca sul pulsante `Conferma`{.action}.
-<!-- CP-STEPS-END:confirm-domain-changes -->
 
 In base alle opzioni selezionate, l'applicazione delle modifiche potrebbe richiedere da pochi minuti a diverse ore.
 

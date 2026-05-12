@@ -45,7 +45,6 @@ Vous pouvez héberger plusieurs sites web sur une même offre d'hébergement web
 
 ### Accéder à l'outil de diagnostic
 
-<!-- CP-STEPS-START:diagnose-website -->
 Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4** étapes.
 
 > [!tabs]
@@ -80,9 +79,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4*
 >> - `A/AAAA` gris.
 >>
 >> Consultez la partie « [Interprétation des couleurs de l'outil de diagnostic](#interpretation) » de ce guide pour connaître la signification de ces 3 couleurs.
-<!-- CP-STEPS-END:diagnose-website -->
 
-<!-- CP-STEPS-START:diagnostic-status-interpretation -->
 ### Interprétation des couleurs de l'outil de diagnostic <a name="interpretation"></a>
 
 **Cliquez sur les indicateurs d'état correspondants ci-dessous pour voir leurs explications.**
@@ -114,8 +111,6 @@ Lorsque l'icône `A/AAAA` est grise dans la colonne `Diagnostic`, cela signifie 
 Pour ajouter les enregistrements **A** et/ou **AAAA** et configurer correctement votre nom de domaine, suivez les étapes décrites dans notre guide « [Éditer une zone DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit) ».
 
 ///
-
-<!-- CP-STEPS-END:diagnostic-status-interpretation -->
 
 ## Aller plus loin
 

@@ -55,7 +55,6 @@ Bei der Nutzung Ihrer Dienste können Sie Folgendes benötigen:
 >
 > Diese Anleitung beschreibt ausschließlich das Verfahren zur Änderung des ursprünglich für Ihre Website definierten Wurzelverzeichnisses über Ihr OVHcloud Kundencenter. Diese Aktion ist erforderlich, damit die Website den Inhalt des neuen Verzeichnisses anstelle des alten anzeigt.
 
-<!-- CP-STEPS-START:modify-root-folder -->
 Klicken Sie auf die nachstehenden Tabs, um die **4** Schritte nacheinander anzuzeigen.
 
 > [!tabs]
@@ -85,7 +84,6 @@ Klicken Sie auf die nachstehenden Tabs, um die **4** Schritte nacheinander anzuz
 >>
 >> Klicken Sie anschließend auf `Bestätigen`{.action}.
 >>
-<!-- CP-STEPS-END:modify-root-folder -->
 
 ## Weiterführende Informationen
 

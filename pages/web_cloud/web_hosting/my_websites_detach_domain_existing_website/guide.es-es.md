@@ -36,7 +36,6 @@ Puede alojar varios sitios web en la misma oferta de alojamiento web, incluso si
 >
 > Desvincular un nombre de dominio o subdominio de un sitio web presente en su alojamiento web es una operación sensible. De hecho, después de esta operación, su sitio web ya no será accesible en Internet con su nombre de dominio y/o subdominio.
 
-<!-- CP-STEPS-START:detach-domain -->
 Haga clic en las fichas siguientes para ver cada una de las **4** etapas.
 
 > [!tabs]
@@ -79,7 +78,6 @@ Haga clic en las fichas siguientes para ver cada una de las **4** etapas.
 >> > ![My websites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/detach-alone-domain.png){.thumbnail}
 >> >
 >> > Como indica el mensaje, deberá [eliminar su asociación Git](/pages/web_cloud/web_hosting/git_integration_webhosting) en primer lugar, **antes** de desvincular su nombre de dominio.
-<!-- CP-STEPS-END:detach-domain -->
 
 ### Caso particular: Desvincular un nombre de dominio o subdominio para utilizarlo con otro sitio web
 

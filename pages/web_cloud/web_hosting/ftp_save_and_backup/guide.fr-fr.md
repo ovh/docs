@@ -58,7 +58,6 @@ Définissez également la méthode de restauration que vous allez utiliser :
 >
 > En effet, nos robots installent la sauvegarde sur votre hébergement avant de supprimer le contenu FTP qui sera remplacé par la restauration.
 
-<!-- CP-STEPS-START:check-disk-space -->
 Pour vérifier le quota utilisé sur votre hébergement web, cliquez sur les onglets ci-dessous pour afficher successivement chacune des **2** étapes.
 
 > [!tabs]
@@ -77,7 +76,6 @@ Pour vérifier le quota utilisé sur votre hébergement web, cliquez sur les ong
 >> Si l'espace de stockage FTP utilisé est supérieur à la moitié de l'espace de stockage FTP total de votre offre d'hébergement web, récupérez en local certains éléments volumineux de votre site web (pour cela, vous pouvez utiliser [Filezilla](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide)).
 >>
 >> Supprimez-les ensuite de votre espace de stockage FTP. Cela diminuera la taille de l'espace de stockage FTP que vous utilisez et vous pourrez alors lancer votre restauration depuis l'espace client OVHcloud.
-<!-- CP-STEPS-END:check-disk-space -->
 
 Une fois prêt, poursuivez la lecture de cette documentation en fonction de la méthode de restauration choisie.
 
@@ -104,7 +102,6 @@ Une fois prêt, poursuivez la lecture de cette documentation en fonction de la m
 > - Le statut « maintenance » apparaît dans votre [espace client OVHcloud](/links/control-panel/web-hosting).
 > - Le(s) site(s) hébergé(s) affiche(nt) une page « 403 Forbidden ».
 
-<!-- CP-STEPS-START:restore-backup-cp -->
 Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **5** étapes.
 
 > [!tabs]
@@ -147,7 +144,6 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **5*
 >> Prenez quelques instants afin de vous assurer qu'aucun fichier ne sera perdu suite à la restauration, comme un fichier que vous auriez placé sur votre espace de stockage après la date de restauration choisie. Comme précisé, la restauration va en effet écraser l'ensemble des données actuelles afin de les remplacer par celles de la sauvegarde.
 >>
 >> Dès que vous êtes prêt à initier la sauvegarde, cliquez sur le bouton `Valider`{.action}.
-<!-- CP-STEPS-END:restore-backup-cp -->
 
 > [!primary]
 >

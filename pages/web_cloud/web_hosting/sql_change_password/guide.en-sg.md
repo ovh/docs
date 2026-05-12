@@ -55,7 +55,6 @@ Changing your website’s database password involves four parts:
 
 ### 1: Identify your website’s configuration file <a name="step1"></a>
 
-<!-- CP-STEPS-START:find-config-file -->
 Click on the tabs below to view each of the **4** steps.
 
 > [!tabs]
@@ -84,7 +83,6 @@ Click on the tabs below to view each of the **4** steps.
 >> ![root-folders](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/root-folders.png){.thumbnail}
 >>
 >> You can then access the FTP storage space containing the files and folders of your website by referring to [this guide](/pages/web_cloud/web_hosting/ftp_connection).
-<!-- CP-STEPS-END:find-config-file -->
 
 > [!primary]
 >
@@ -192,7 +190,6 @@ Save this change.
 > [!primary]
 >
 > This operation will take a few minutes to take effect. Once you have launched it, check its status in the `Ongoing tasks`{.action} tab.
-<!-- CP-STEPS-START:change-db-password-server -->
 >
 
 > [!tabs]
@@ -219,7 +216,6 @@ Save this change.
 >> In the window that pops up, enter your database’s new password (defined at [part 3](#step3)), confirm it, then click on `Confirm`{.action}.
 >>
 >> ![database-password-step3](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/change-password-window.png){.thumbnail}
-<!-- CP-STEPS-END:change-db-password-server -->
 
 ## Go further <a name="go-further"></a>
 

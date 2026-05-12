@@ -55,7 +55,6 @@ Utilizzando i tuoi servizi, potresti aver bisogno di:
 >
 > Questa guida descrive unicamente la procedura per modificare, dallo Spazio Cliente OVHcloud, la cartella root inizialmente definita per il tuo sito web. Questa azione è necessaria affinché il sito web mostri il contenuto della nuova cartella, in sostituzione della precedente.
 
-<!-- CP-STEPS-START:modify-root-folder -->
 Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **4** passaggi.
 
 > [!tabs]
@@ -85,7 +84,6 @@ Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **4** pa
 >>
 >> Clicca quindi su `Conferma`{.action}.
 >>
-<!-- CP-STEPS-END:modify-root-folder -->
 
 ## Per saperne di più
 

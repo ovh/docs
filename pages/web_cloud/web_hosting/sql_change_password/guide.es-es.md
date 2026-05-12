@@ -56,7 +56,6 @@ La modificación de la contraseña de la base de datos del sitio web se realiza 
 
 ### 1: Identificar el archivo de configuración del sitio web <a name="step1"></a>
 
-<!-- CP-STEPS-START:find-config-file -->
 Haga clic en las fichas siguientes para ver cada una de las **4** etapas.
 
 > [!tabs]
@@ -85,7 +84,6 @@ Haga clic en las fichas siguientes para ver cada una de las **4** etapas.
 >> ![root-folders](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/root-folders.png){.thumbnail}
 >>
 >> A continuación, acceda al espacio de almacenamiento FTP que contiene los archivos y carpetas de su sitio consultando [esta guía](/pages/web_cloud/web_hosting/ftp_connection).
-<!-- CP-STEPS-END:find-config-file -->
 
 > [!primary]
 >
@@ -225,7 +223,6 @@ De nuevo, existen dos posibles situaciones:
 
 #### Caso n° 1: la base de datos de su sitio web forma parte de su plan de hosting <a name="case1"></a>
 
-<!-- CP-STEPS-START:change-db-password-server -->
 Haga clic en las fichas siguientes para ver cada una de las **4** etapas.
 
 > [!tabs]
@@ -252,11 +249,9 @@ Haga clic en las fichas siguientes para ver cada una de las **4** etapas.
 >> Se abrirá una ventana en la que deberá introducir la nueva contraseña de la base de datos (definida en la [sección 3](#step3)). Confírmela y haga clic en `Aceptar`{.action}.
 >>
 >> ![database-password-step3](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/change-password-window.png){.thumbnail}
-<!-- CP-STEPS-END:change-db-password-server -->
 
 #### Caso n° 2: la base de datos de su sitio web forma parte de una solución Web Cloud Databases. <a name="case2"></a>
 
-<!-- CP-STEPS-START:change-wcdb-password -->
 Acceda a la sección `Bases de datos`{.action} del área de cliente y haga clic en el servidor correspondiente en la pestaña `Usuarios y permisos`{.action}.
 
 ![userDBpassword-step1](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/users-and-rights/wcdb-tab.png){.thumbnail}
@@ -268,8 +263,6 @@ Para modificar la contraseña de su base de datos en el servidor, haga clic en e
 Se abrirá una ventana en la que deberá introducir la nueva contraseña de la base de datos (definida en la [parte 3](#step3)). Confírmela y haga clic en `Aceptar`{.action}.
 
 ![userDBpassword-step3](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/users-and-rights/wcdb-change-password-window.png){.thumbnail}
-
-<!-- CP-STEPS-END:change-wcdb-password -->
 
 ## Más información <a name="go-further"></a>
 

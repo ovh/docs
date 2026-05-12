@@ -36,7 +36,6 @@ Vuoi associare il tuo nome di dominio o sottodominio a un altro sito web su uno 
 >
 > Scollegare un nome di dominio o un sottodominio da un sito web presente sul tuo hosting web è un'operazione delicata. Infatti, dopo questa operazione, il tuo sito web non sarà più accessibile su Internet con il tuo nome di dominio e/o sottodominio.
 
-<!-- CP-STEPS-START:detach-domain -->
 Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **4** passi.
 
 > [!tabs]
@@ -79,7 +78,6 @@ Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **4** pa
 >> > ![My websites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/detach-alone-domain.png){.thumbnail}
 >> >
 >> > Come indicato dal messaggio, dovrai [eliminare la tua associazione Git](/pages/web_cloud/web_hosting/git_integration_webhosting) in primo luogo, **prima** di staccare il tuo nome di dominio.
-<!-- CP-STEPS-END:detach-domain -->
 
 ### Caso particolare: Stacco di un nome di dominio o di un sottodominio per utilizzarlo con un altro sito web
 

@@ -81,7 +81,6 @@ Un **nombre de dominio** se compone de niveles. Estos niveles suelen estar separ
 
 ///
 
-
 /// details | ¿Qué es un subdominio?
 
 Un [nombre de dominio](/links/web/domains) puede asociarse a varios tipos de servicios (correo electrónico, sitio web, etc.).
@@ -182,13 +181,11 @@ Para los servicios que no se mencionan, consulte la documentación relativa al s
 
 #### Caso 1: Ver un sitio web en mi alojamiento web de OVHcloud con un subdominio <a name="link-subdomain-case-1"></a>
 
-<!-- CP-STEPS-START:link-subdomain-hosting -->
 Al igual que con un nombre de dominio, para autorizar a un subdominio a mostrar el contenido de una carpeta "destino" declarada para un sitio web alojado en un alojamiento web, conéctese al [área de cliente de OVHcloud](/links/manager) y seleccione `Web Cloud`{.action}. Haga clic en `Alojamientos`{.action} en la columna de la izquierda, seleccione el alojamiento correspondiente donde se encuentra su sitio web y elija la pestaña `Mis sitios`{.action}.
 
 Aquí es donde autoriza el acceso de su subdominio a su sitio web presente en su alojamiento web.
 
 Para obtener más detalles sobre la configuración de un dominio o subdominio en un alojamiento web, consulte nuestro guía "[¿Cómo asociar un nombre de dominio a un sitio web existente ?](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website)". Tanto si se trata de un nombre de dominio como de un subdominio, el procedimiento es el mismo.
-<!-- CP-STEPS-END:link-subdomain-hosting -->
 
 > [!warning]
 >
@@ -197,7 +194,6 @@ Para obtener más detalles sobre la configuración de un dominio o subdominio en
 
 #### Caso 2 - Crear direcciones de correo Exchange con un subdominio <a name="link-subdomain-case-2"></a>
 
-<!-- CP-STEPS-START:link-subdomain-exchange -->
 Para desbloquear la creación de direcciones de correo Exchange personalizadas con un subdominio, conéctese al [área de cliente de OVHcloud](/links/manager) y seleccione `Web Cloud`{.action}. Haga clic en `Microsoft`{.action} en la columna de la izquierda y, a continuación, en `Exchange`{.action}. A continuación, seleccione la plataforma Exchange que quiera utilizar con su subdominio. A continuación, abra la pestaña `Dominios asociados`{.action} y haga clic en el botón `Añadir un dominio`{.action} situado a la derecha.
 
 Así podrá declarar su subdominio en su plataforma Exchange.
@@ -229,4 +225,3 @@ Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con 
 Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](/links/support).
 
 Interactúe con nuestra [comunidad de usuarios](/links/community).
-<!-- CP-STEPS-END:link-subdomain-exchange -->

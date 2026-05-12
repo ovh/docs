@@ -40,7 +40,6 @@ Pour vous connecter à votre espace de stockage, vous devez être en possession 
 
 Ces éléments vous ont été communiqués dans l’e-mail vous notifiant l’installation de votre hébergement web. 
 
-<!-- CP-STEPS-START:export-retrieve-ftp-credentials -->
 Si vous n’êtes pas en possession de ces derniers, cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3** étapes.
 
 > [!tabs]
@@ -65,7 +64,6 @@ Si vous n’êtes pas en possession de ces derniers, cliquez sur les onglets ci-
 >> Si nécessaire, nous vous invitons à consulter notre guide : [« Se connecter à l’espace de stockage de son hébergement web »](/pages/web_cloud/web_hosting/ftp_connection).
 >>
 >> Si vous n'êtes plus en possession du mot de passe, reportez-vous aux instructions décrites dans notre documentation [« Modifier le mot de passe d’un utilisateur FTP »](/pages/web_cloud/web_hosting/ftp_change_password).
-<!-- CP-STEPS-END:export-retrieve-ftp-credentials -->
 
 Une fois tous les éléments en votre possession, la récupération de vos fichiers sur l'espace de stockage peut s'effectuer de deux manières différentes :
 
@@ -77,7 +75,6 @@ Une fois tous les éléments en votre possession, la récupération de vos fichi
 
 Une fois connecté à votre espace de stockage et en fonction de vos sites web hébergés dessus, plusieurs dossiers peuvent apparaître.
 
-<!-- CP-STEPS-START:find-root-folder -->
 Si besoin, identifiez au préalable dans votre hébergement web le nom du dossier racine dans lequel votre site web est stocké. Pour cela, cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3** étapes.
 
 > [!tabs]
@@ -98,7 +95,6 @@ Si besoin, identifiez au préalable dans votre hébergement web le nom du dossie
 >> Dans le tableau qui apparaît, pour le site web souhaité, regardez le `Dossier racine`{.action} qui s'affiche.
 >>
 >> ![export-website](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/root-folders.png){.thumbnail}
-<!-- CP-STEPS-END:find-root-folder -->
 
 Toujours connecté à votre espace de stockage, il ne vous reste plus qu’à télécharger les fichiers de votre site web en accédant au dossier racine identifié précédemment.
 

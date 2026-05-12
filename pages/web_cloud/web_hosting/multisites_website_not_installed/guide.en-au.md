@@ -45,7 +45,6 @@ The following steps will allow you to correct the “Site not installed” error
 
 ### 1 - Check the declaration of your domain name or subdomain on your website on your web hosting <a name="check-my-websites"></a>
 
-<!-- CP-STEPS-START:check-my-websites -->
 Click on the tabs below to view each of the **3** steps.
 
 > [!tabs]
@@ -72,7 +71,6 @@ Click on the tabs below to view each of the **3** steps.
 >> |The domain name or subdomain associated with your website **appears** in the table.|If you have just added your domain name or subdomain to your website on your web hosting, wait approximately **twenty minutes** and then refresh the cache of your web browser. If the message "Site not installed" still appears, proceed to [part 2](#check-dns-domain).|
 >> |The domain name or subdomain associated with your website **does not appear** in the table.|Add your domain name or subdomain by following our guide "[How to associate a domain name with an existing website?](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website)".|
 >> |The domain name or subdomain **has been removed** from the table without your action.|Your domain name or its DNS zone may be managed from another account. Add your domain name or subdomain by following our guide "[How to associate a domain name with an existing website? - Add an external domain name](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website)".|
-<!-- CP-STEPS-END:check-my-websites -->
 
 ### 2 - Check the IP pointing in your domain name’s active DNS zone <a name="check-dns-domain"></a>
 
@@ -88,7 +86,6 @@ This step involves checking that your domain or subdomain points to your Web Hos
 
 #### 2\.1 Identify the IP address of your OVHcloud web hosting plan
 
-<!-- CP-STEPS-START:check-dns-ip -->
 Click on the tabs below to view each of the **2** steps.
 
 > [!tabs]
@@ -105,7 +102,6 @@ Click on the tabs below to view each of the **2** steps.
 >> ![find-ipv4-and-ipv6](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-ipv4-and-ipv6.png){.thumbnail}
 >>
 >> Copy the IPv4 address, then continue reading the guide.
-<!-- CP-STEPS-END:check-dns-ip -->
 
 You can also find the IP address associated with your Web Hosting plan in our guide “[Web Hosting - List of IP addresses by cluster](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP)”.
 
@@ -119,7 +115,6 @@ You will now need to check that your Web Hosting plan’s IP address appears in 
 >
 > If you modify the **DNS servers** associated with your domain name directly, this period can be up to **48 hours** maximum.
 
-<!-- CP-STEPS-START:check-multisite-root-folder -->
 To do this, click on the tabs below to view each of the **3** steps.
 
 > [!tabs]
@@ -151,7 +146,6 @@ To do this, click on the tabs below to view each of the **3** steps.
 >> |The current DNS zone does not have A or AAAA records that link your domain name or subdomain to the IP address of your Web Hosting plan.|Add the new A or AAAA DNS record or correct the existing record by following [this guide](/pages/web_cloud/domains/dns_zone_edit).|
 >> |The existing A or AAAA DNS record in the DNS zone for your domain name or subdomain points to an IP address other than your Web Hosting plan’s.|Add the new A or AAAA DNS record or correct the existing record by following [this guide](/pages/web_cloud/domains/dns_zone_edit).|
 >> |This warning is displayed in the `DNS Zone`{.action}:<br><br>![message-other-ovh-dns-servers](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/message-other-ovh-dns-servers.png){.thumbnail}|Modify your domain name’s DNS servers accordingly by following our guide on "[How to modify the DNS servers of an OVHcloud domain name](/pages/web_cloud/domains/dns_server_edit)".|
-<!-- CP-STEPS-END:check-multisite-root-folder -->
 
 ## Go further <a name="go-further"></a>
 

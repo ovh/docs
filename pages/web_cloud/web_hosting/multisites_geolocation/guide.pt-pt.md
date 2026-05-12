@@ -37,7 +37,6 @@ A opção de geolocalização no seu alojamento pode ser útil para o referencia
 
 Para os websites principalmente consultados no estrangeiro e alojados na nossa infraestrutura de alojamento partilhado OVHcloud, propomos uma opção de geolocalização por endereço IP. Permite uma melhor referenciação dos websites no país onde está situado o endereço IP escolhido com a opção.
 
-<!-- CP-STEPS-START:configure-geolocation -->
 Para utilizar a opção de geolocalização por IP, clique nos separadores abaixo para visualizar cada uma das **4** etapas.
 
 > [!tabs]
@@ -72,7 +71,6 @@ Para utilizar a opção de geolocalização por IP, clique nos separadores abaix
 >> Escolha o endereço IP do país para o qual deseja geolocalizar o seu site, entre os 12 países propostos: *República Checa, Finlândia, França, Alemanha, Irlanda, Itália, Lituânia, Países Baixos, Polónia, Portugal, Espanha e Reino Unido*.
 >>
 >> Clique em `Seguinte`{.action} e depois em `Validar`{.action} a partir da janela recapitulativa.
-<!-- CP-STEPS-END:configure-geolocation -->
 
 > [!primary]
 >

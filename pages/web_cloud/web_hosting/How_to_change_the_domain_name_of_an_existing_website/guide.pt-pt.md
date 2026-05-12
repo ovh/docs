@@ -50,7 +50,6 @@ Declare o seu novo nome de domínio seguindo o nosso guia « [Como associar um n
 Para ser bem-sucedida na etapa 1, é necessário preencher várias condições:
 
 - O seu novo domínio deve apontar para a mesma "pasta raiz" que o domínio utilizado atualmente para aceder ao seu site.
-<!-- CP-STEPS-START:retrieve-hosting-ip -->
 - Verifique que o seu novo domínio aponta para o endereço IP correto do seu alojamento partilhado. Para obter o endereço IP, clique nos separadores abaixo para ver sucessivamente as **3** etapas.
 
 > [!tabs]
@@ -67,7 +66,6 @@ Para ser bem-sucedida na etapa 1, é necessário preencher várias condições:
 > **Etapa 3**
 >>
 >> Recupere o **IPv4** apresentado.
-<!-- CP-STEPS-END:retrieve-hosting-ip -->
 
 > [!warning]
 >
@@ -82,11 +80,9 @@ Para ser bem-sucedida na etapa 1, é necessário preencher várias condições:
 > - [Gerir um certificado SSL no alojamento web](/pages/web_cloud/web_hosting/ssl_on_webhosting)
 > - [Ativar o HTTPS num website com certificado SSL](/pages/web_cloud/web_hosting/ssl-activate-https-website)
 
-<!-- CP-STEPS-START:verify-multisite-config -->
 Se todas as ações foram corretamente realizadas, as declarações dos seus nomes de domínio devem ser estritamente idênticas **a menos que utilize um certificado SSL pago do tipo *Sectigo DV*, *Sectigo EV* ou *custom***.
 
 ![My websites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/all-domain-same-config-enable.png){.thumbnail}
-<!-- CP-STEPS-END:verify-multisite-config -->
 
 > [!primary]
 >

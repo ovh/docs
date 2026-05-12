@@ -37,7 +37,6 @@ Os módulos 1 clique permitem a instalação fácil e rápida de um software on-
 
 ### Aceder ao seu site
 
-<!-- CP-STEPS-START:access-module -->
 Clique nos separadores abaixo para visualizar cada uma das **2** etapas.
 
 > [!tabs]
@@ -53,7 +52,6 @@ Clique nos separadores abaixo para visualizar cada uma das **2** etapas.
 >>
 >> Clique no botão `...`{.action} à direita da linha relativa ao módulo e, a seguir, em `Aceder ao módulo`{.action}.
 >>
-<!-- CP-STEPS-END:access-module -->
 
 > [!primary]
 >
@@ -62,7 +60,6 @@ Clique nos separadores abaixo para visualizar cada uma das **2** etapas.
 
 ### Aceder à interface de administrador
 
-<!-- CP-STEPS-START:access-admin-interface -->
 Clique nos separadores abaixo para visualizar cada uma das **2** etapas.
 
 > [!tabs]
@@ -78,11 +75,9 @@ Clique nos separadores abaixo para visualizar cada uma das **2** etapas.
 >>
 >> Clique no botão `...`{.action} à direita da linha relativa ao módulo e, a seguir, em `Aceder à interface de administração do módulo`{.action}.
 >>
-<!-- CP-STEPS-END:access-admin-interface -->
 
 ### Encontrar o identificador de administrador
 
-<!-- CP-STEPS-START:find-admin-login -->
 Clique nos separadores abaixo para visualizar cada uma das **3** etapas.
 
 > [!tabs]
@@ -100,7 +95,6 @@ Clique nos separadores abaixo para visualizar cada uma das **3** etapas.
 >>
 >> Também pode procurar o e-mail recebido durante a criação do módulo. Na sua [Área de Cliente OVHcloud](/links/manager), clique no seu nome no canto superior direito do ecrã e, no menu que aparecer, clique em `E-mails de serviço`{.action}.
 >>
-<!-- CP-STEPS-END:find-admin-login -->
 
 ### Modificar a palavra-passe do seu módulo <a name="password-change"></a>
 
@@ -128,7 +122,6 @@ No entanto, se encontrar dificuldades, recomendamos vivamente que efetue a opera
 
 Para eliminar o módulo 1 clique, deve começar por identificar a sua base de dados de forma **segura**.
 
-<!-- CP-STEPS-START:find-db-password -->
 Clique nos separadores abaixo para visualizar cada uma das **3** etapas.
 
 > [!tabs]
@@ -148,7 +141,6 @@ Clique nos separadores abaixo para visualizar cada uma das **3** etapas.
 >>
 >> Caso contrário, dirija-se ao separador `Meus sites`{.action}. Registe o nome da `Pasta raiz` presente na linha do site em questão: trata-se do diretório onde se encontram os ficheiros que constituem o seu módulo 1 clique no servidor FTP.
 >>
-<!-- CP-STEPS-END:find-db-password -->
 
 Aceda ao [espaço FTP](/pages/web_cloud/web_hosting/ftp_connection) do seu alojamento. Abra a `Pasta raiz` encontrada anteriormente no separador `Meus sites`{.action} e procure o ficheiro de configuração do seu módulo:
 
@@ -168,7 +160,6 @@ Para guardar o seu site, siga as instruções do nosso guia "[Exportar o seu web
 > A eliminação do módulo 1 clique e da base de dados irá também resultar **na eliminação de todos os backups**. Os dados eliminados não poderão ser recuperados posteriormente.
 >
 
-<!-- CP-STEPS-START:delete-module -->
 Clique nos separadores abaixo para visualizar cada uma das **3** etapas.
 
 > [!tabs]
@@ -197,7 +188,6 @@ Clique nos separadores abaixo para visualizar cada uma das **3** etapas.
 >> > <iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/LHpsuvyNFtQ?si=4655K8lQQpkE2YNG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 >> >
 >>
-<!-- CP-STEPS-END:delete-module -->
 
 > [!warning]
 >
@@ -206,7 +196,6 @@ Clique nos separadores abaixo para visualizar cada uma das **3** etapas.
 > Se dispõe de uma subscrição [Hosting Perso](/links/web/hosting-personal-offer) ou se já criou quatro bases de dados sobre o seu alojamento [Hosting Pro](/links/web/hosting-professional-offer) ou [Hosting Performance](/links/web/hosting-performance-offer), deverá eliminar a base de dados identificada [no passo 1](#step1) **ANTES** de poder criar um novo módulo 1 clique.
 >
 
-<!-- CP-STEPS-START:delete-database -->
 Para terminar a eliminação do módulo, clique nos separadores abaixo para visualizar cada uma das **3** etapas.
 
 > [!tabs]
@@ -226,7 +215,6 @@ Para terminar a eliminação do módulo, clique nos separadores abaixo para visu
 >>
 >> Antes de reiniciar a instalação de um novo módulo, verifique que as tarefas de eliminação solicitadas anteriormente foram finalizadas através do separador `Operações em curso`{.action}.
 >>
-<!-- CP-STEPS-END:delete-database -->
 
 ### Boas práticas
 

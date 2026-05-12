@@ -42,7 +42,6 @@ In der heutigen digitalen Landschaft sind Unternehmen dynamischer und innovative
 >
 > Wenn Sie ein Verzeichnis mit Git verknüpfen, werden alle mit diesem Verzeichnis vorhandenen Domainnamen ebenfalls mit Git verknüpft. Wenn beispielsweise das Verzeichnis für die Website, die Sie zuordnen, `www` ist, dann werden alle Domainnamen, die mit dem Verzeichnis `www` verbunden sind, ebenfalls mit Git verknüpft.
 
-<!-- CP-STEPS-START:associate-git-repo -->
 Klicken Sie auf die Tabs, um die **4** Schritte anzuzeigen.
 
 > [!tabs]
@@ -74,9 +73,7 @@ Klicken Sie auf die Tabs, um die **4** Schritte anzuzeigen.
 >> - Webhook (optional)
 >>
 >> Lesen Sie weiter in dieser Anleitung, um die erforderlichen Informationen zu erhalten, um die erforderlichen Felder auszufüllen.
-<!-- CP-STEPS-END:associate-git-repo -->
 
-<!-- CP-STEPS-START:git-association-form -->
 #### GitHub-Repository definieren
 
 Geben Sie die Adresse Ihres GitHub-Repositorys ein. Wenn Sie noch kein GitHub-Repository für Ihr Projekt haben, erstellen Sie eines.
@@ -120,11 +117,9 @@ Wenn Sie die Adresse eines privaten GitHub-Repositorys (Typ `git@github.com:<use
 ![My websites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/field-ssh-key.png){.thumbnail}
 
 Um Ihren SSH-Schlüssel zu konfigurieren, folgen Sie dem Schritt "Einen SSH-Schlüssel mit GitHub verbinden (nur für private GitHub-Repositorys)".
-<!-- CP-STEPS-END:git-association-form -->
 
 ### Einen SSH-Schlüssel mit GitHub verbinden (nur für private GitHub-Repositorys) <a name="linkSSHKey"></a>
 
-<!-- CP-STEPS-START:git-activation-status -->
 > [!primary]
 >
 > **Warum wird der SSH-Schlüssel nur für ein privates Repository benötigt?**
@@ -168,7 +163,6 @@ Bevor Sie das Git-Zuordnungsformular bestätigen, überprüfen Sie:
 - Das Installationsverzeichnis ist leer.
 
 Um die Informationen im Git-Zuordnungsformular zu bestätigen, klicken Sie auf `Konfiguration anwenden`{.action}.
-<!-- CP-STEPS-END:git-activation-status -->
 
 ### Git-Zuordnung aktivieren
 
@@ -207,7 +201,6 @@ Wenn Sie den Fehler identifiziert haben, ordnen Sie Git erneut zu. Wiederholen S
 
 ### Deployment Ihres GitHub-Repositorys auf Ihrem OVHcloud Webhosting
 
-<!-- CP-STEPS-START:deploy-github-repo -->
 Klicken Sie auf die Tabs, um die **4** Schritte anzuzeigen.
 
 > [!tabs]
@@ -238,11 +231,9 @@ Klicken Sie auf die Tabs, um die **4** Schritte anzuzeigen.
 >> > Um Ihre lokalen Änderungen nicht zu verlieren, sollten Sie diese vor dem Überschreiben durch die Änderungen des entfernten Zweigs sichern.
 >>
 >> Die neue Version Ihrer Website wurde erfolgreich auf Ihrem OVHcloud Webhosting bereitgestellt. Wenn andere Personen am gleichen Projekt arbeiten und Änderungen an das GitHub-Repository vornehmen, können Sie [einen Webhook auf GitHub konfigurieren](#configureWebhook), damit diese Änderungen automatisch auf Ihrem Webhosting bereitgestellt werden. So müssen Sie Git nicht manuell bereitstellen, und Ihr Webhosting bleibt immer auf dem neuesten Stand.
-<!-- CP-STEPS-END:deploy-github-repo -->
 
 ### Domainnamen bearbeiten
 
-<!-- CP-STEPS-START:modify-domain-name -->
 Klicken Sie auf die Tabs, um die **4** Schritte anzuzeigen.
 
 > [!tabs]
@@ -293,11 +284,9 @@ Klicken Sie auf die Tabs, um die **4** Schritte anzuzeigen.
 >> ![My websites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/modify-alone-domain-step1.png){.thumbnail}
 >>
 >> Wie in der Nachricht erwähnt, [löschen Sie Ihre Git-Assoziation](#deleteGitAssociation), bevor Sie Ihren Domainnamen ändern.
-<!-- CP-STEPS-END:modify-domain-name -->
 
 ### Abtrennen eines Domainnamens
 
-<!-- CP-STEPS-START:detach-domain-name -->
 Klicken Sie auf die Tabs, um die **4** Schritte anzuzeigen.
 
 > [!tabs]
@@ -342,11 +331,9 @@ Klicken Sie auf die Tabs, um die **4** Schritte anzuzeigen.
 >> ![My websites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/detach-alone-domain.png){.thumbnail}
 >>
 >> Wie in der Nachricht erwähnt, [löschen Sie Ihre Ihre Git-Assoziation](#deleteGitAssociation), bevor Sie Ihren Domainnamen freigeben.
-<!-- CP-STEPS-END:detach-domain-name -->
 
 ### Git konfigurieren
 
-<!-- CP-STEPS-START:configure-git -->
 Klicken Sie auf die Tabs, um die **4** Schritte anzuzeigen.
 
 > [!tabs]
@@ -376,13 +363,11 @@ Klicken Sie auf die Tabs, um die **4** Schritte anzuzeigen.
 >> - Repository: Adresse Ihres Git-Repositorys. Dieses Feld ist grau, da Sie die Adresse des Git-Repositorys nicht ändern können. Um die URL des Git-Repositorys zu ändern, müssen Sie [die Git-Verknüpfung Ihres Verzeichnisses entfernen](#deleteGitAssociation) und anschließend [das Verzeichnis erneut mit Git verknüpfen](#associateGitRepo).
 >> - Zweig: Name des GitHub-Repository-Zweigs. Sie können dieses Feld ggf. ändern.
 >> - Webhook-URL: Falls Sie Ihre Deployments auf Git optimieren möchten, [konfigurieren Sie den Webhook auf GitHub](#configureWebhook).
-<!-- CP-STEPS-END:configure-git -->
 
 ### Informationen zur letzten Bereitstellung
 
 Nachdem Sie Ihr GitHub-Repository auf Ihrem Webhosting eingerichtet haben, können Sie die Informationen zur letzten Bereitstellung wie Fehler, Tests oder andere nützliche Informationen einsehen.
 
-<!-- CP-STEPS-START:latest-deployment-info -->
 Klicken Sie auf die Tabs, um die **3** Schritte anzuzeigen.
 
 > [!tabs]
@@ -405,11 +390,9 @@ Klicken Sie auf die Tabs, um die **3** Schritte anzuzeigen.
 >> ![Website](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/website-options-git-enabled.png){.thumbnail}
 >>
 >> Auf diesem Bildschirm finden Sie alle Informationen zum letzten Deployment.
-<!-- CP-STEPS-END:latest-deployment-info -->
 
 ### Zuordnung von Git entfernen <a name="deleteGitAssociation"></a>
 
-<!-- CP-STEPS-START:delete-git-association -->
 Klicken Sie auf die Tabs, um die **4** Schritte anzuzeigen.
 
 > [!tabs]
@@ -450,7 +433,6 @@ Klicken Sie auf die Tabs, um die **4** Schritte anzuzeigen.
 >> ![Meine Webseiten](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/delete-git-association-popup-confirm.png){.thumbnail}
 >> 
 >> Klicken Sie auf `Bestätigen`{.action}, um die Löschung der Git-Zuordnung Ihres Verzeichnisses zu bestätigen.
-<!-- CP-STEPS-END:delete-git-association -->
 
 ### Webhook auf GitHub konfigurieren
 
@@ -460,7 +442,6 @@ Klicken Sie auf die Tabs, um die **4** Schritte anzuzeigen.
 >
 > Wenn Sie sich bereits im Git-Zuordnungsformular befinden, kopieren Sie die Webhook-URL und fahren Sie mit "[Webhook konfigurieren](#configureWebhook)" fort.
 
-<!-- CP-STEPS-START:configure-webhook -->
 Klicken Sie auf die Tabs, um die **4** Schritte anzuzeigen.
 
 > [!tabs]
@@ -485,7 +466,6 @@ Klicken Sie auf die Tabs, um die **4** Schritte anzuzeigen.
 > **Schritt 4**
 >> 
 >> Am unteren Rand des angezeigten Formulars kopieren Sie die Adresse, die sich im Feld `Webhook-URL`{.action} befindet. Sie müssen diese URL registrieren und den Webhook auf Ihrem GitHub-Account konfigurieren.
-<!-- CP-STEPS-END:configure-webhook -->
 
 #### Webhook konfigurieren <a name="configureWebhook"></a>
 

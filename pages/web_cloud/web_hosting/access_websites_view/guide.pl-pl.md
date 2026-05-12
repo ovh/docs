@@ -27,7 +27,6 @@ Interfejs przedstawiony w tym przewodniku pozwala na scentralizowane wyświetlan
 
 ## W praktyce
 
-<!-- CP-STEPS-START:view-websites -->
 Kliknij poniższe zakładki, aby wyświetlić kolejno każdy z **2** kroków.
 
 > [!tabs]
@@ -63,7 +62,6 @@ Kliknij poniższe zakładki, aby wyświetlić kolejno każdy z **2** kroków.
 >> > [!warning]
 >> > Nie można włączyć oddzielnych logów dla zewnętrznej nazwy domeny. Ta opcja jest dostępna tylko dla domen zarejestrowanych w OVHcloud.
 >>
-<!-- CP-STEPS-END:view-websites -->
 
 ## Sprawdź również <a name="go-further"></a>
  

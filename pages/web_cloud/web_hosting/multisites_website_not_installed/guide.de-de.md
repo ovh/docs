@@ -44,7 +44,6 @@ Mit den folgenden Schritten können Sie in beiden Fällen den Fehler `Seite nich
 
 ### 1 - Überprüfen Sie die Deklaration Ihres Domainnamens oder Ihrer Subdomain auf der Webseite, die auf Ihrem Webhosting bereitgestellt wird <a name="check-my-websites"></a>
 
-<!-- CP-STEPS-START:check-my-websites -->
 Klicken Sie auf die Tabs, um die **3** Schritte anzuzeigen.
 
 > [!tabs]
@@ -71,7 +70,6 @@ Klicken Sie auf die Tabs, um die **3** Schritte anzuzeigen.
 >> |Der Domainname oder die Subdomain, die mit Ihrer Webseite verknüpft ist, **erscheint** in der Tabelle.|Wenn Sie gerade Ihren Domainnamen oder Ihre Subdomain auf der Webseite auf Ihrem Webhosting hinzugefügt haben, warten Sie etwa **zwanzig Minuten** und leeren Sie anschließend den Cache Ihres Browsers. Wenn die Meldung "Seite nicht installiert" weiterhin angezeigt wird, wechseln Sie zur [Teil 2](#check-dns-domain).|
 >> |Der Domainname oder die Subdomain, die mit Ihrer Webseite verknüpft ist, **erscheint nicht** in der Tabelle.|Fügen Sie Ihren Domainnamen oder Ihre Subdomain gemäß unserer Anleitung "[Wie verknüpfe ich einen Domainnamen mit einer bestehenden Webseite?](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website)" hinzu.|
 >> |Der Domainname oder die Subdomain **wurde aus der Tabelle gelöscht**, ohne dass Sie etwas getan haben.|Ihr Domainname oder seine DNS-Zone wird möglicherweise von einem anderen Account verwaltet. Fügen Sie Ihren Domainnamen oder Ihre Subdomain gemäß unserer Anleitung "[Wie verknüpfe ich einen Domainnamen mit einer bestehenden Webseite? - Externer Domainname hinzufügen](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website)" hinzu.|
-<!-- CP-STEPS-END:check-my-websites -->
 
 ### 2 - Überprüfen Sie den IP-Verweis in der aktiven DNS-Zone Ihrer Domain <a name="check-dns-domain"></a>
 
@@ -87,7 +85,6 @@ In diesem Schritt überprüfen Sie, dass Ihre Domain bzw. Subdomain über die ak
 
 #### 2\.1 IP-Adresse Ihres OVHcloud Webhostings identifizieren
 
-<!-- CP-STEPS-START:check-dns-ip -->
 Klicken Sie auf die Tabs, um die **2** Schritte anzuzeigen.
 
 > [!tabs]
@@ -104,7 +101,6 @@ Klicken Sie auf die Tabs, um die **2** Schritte anzuzeigen.
 >> ![find-ipv4-and-ipv6](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-ipv4-and-ipv6.png){.thumbnail}
 >>
 >> Kopieren Sie die IPv4-Adresse und lesen Sie die Anleitung weiter.
-<!-- CP-STEPS-END:check-dns-ip -->
 
 Die Ihrem Webhosting zugeordnete IP-Adresse finden Sie auch in unserer Anleitung "[Webhosting - Liste der IP-Adressen pro Cluster](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP)".
 
@@ -118,7 +114,6 @@ Die Ihrem Webhosting zugeordnete IP-Adresse finden Sie auch in unserer Anleitung
 >
 > Wenn Sie die mit Ihrer Domain verbundenen DNS-Server direkt ändern, kann die Bearbeitungszeit bis zu **48 Stunden** betragen.
 
-<!-- CP-STEPS-START:check-multisite-root-folder -->
 Klicken Sie auf die Tabs, um die **3** Schritte anzuzeigen.
 
 > [!tabs]
@@ -150,7 +145,6 @@ Klicken Sie auf die Tabs, um die **3** Schritte anzuzeigen.
 >> |Die aktive DNS-Zone enthält keine A- oder AAAA-Einträge, die Ihre Domain oder Subdomain mit der IP-Adresse Ihres Webhostings verbinden.|Fügen Sie den neuen A- oder AAAA-Eintrag hinzu, oder korrigieren Sie den vorhandenen Eintrag, indem Sie [diese Anleitung](/pages/web_cloud/domains/dns_zone_edit) befolgen.|
 >> |Der vorhandene DNS-Eintrag vom Typ A oder AAAA in der DNS-Zone für Ihre Domain oder Subdomain verweist auf eine andere IP-Adresse als die Ihres Webhostings.|Fügen Sie den neuen DNS-Eintrag vom Typ A oder AAAA hinzu, oder korrigieren Sie den vorhandenen Eintrag, indem Sie [diese Anleitung](/pages/web_cloud/domains/dns_zone_edit) befolgen.|
 >> |Diese Warnung erscheint im Tab `DNS-Zone`{.action}:<br><br>![message-other-ovh-dns-servers](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/message-other-ovh-dns-servers.png){.thumbnail}|Ändern Sie die DNS-Server Ihrer Domain entsprechend unserer Anleitung "[DNS-Server einer OVHcloud Domain bearbeiten](/pages/web_cloud/domains/dns_server_edit)."|
-<!-- CP-STEPS-END:check-multisite-root-folder -->
 
 ## Weitere Informationen <a name="go-further"></a>
 

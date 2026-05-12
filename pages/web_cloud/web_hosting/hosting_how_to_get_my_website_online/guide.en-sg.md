@@ -73,7 +73,6 @@ To log in to your storage space, you will need the following:
 - the server address
 - the server connection port
 
-<!-- CP-STEPS-START:get-online-retrieve-ftp-credentials -->
 These elements were sent to you in the email informing you that your Web Hosting plan has been set up. If you don’t have this information, click on the tabs below to view each of the **3** steps.
 
 > [!tabs]
@@ -98,7 +97,6 @@ These elements were sent to you in the email informing you that your Web Hosting
 >> If you need help with this, please refer to our guide on [Logging in to your Web Hosting plan’s storage space](/pages/web_cloud/web_hosting/ftp_connection).
 >>
 >> If you are no longer in possession of the password, refer to the instructions set out in our documentation on [Modifying a FTP user password](/pages/web_cloud/web_hosting/ftp_change_password).
-<!-- CP-STEPS-END:get-online-retrieve-ftp-credentials -->
 
 Once you have everything you need, there are two different ways of connecting to your storage space:
 
@@ -116,7 +114,6 @@ Once you have everything you need, there are two different ways of connecting to
 
 Once connected to your storage space, you simply need to upload the files of your website. **We recommend that you pay particular attention to the directory where you will upload the files**, especially if you have declared multiple websites on your web hosting.
 
-<!-- CP-STEPS-START:get-online-find-root-folder -->
 To check the folder in which the website should be published, click on the tabs below to view each of the **3** steps.
 
 > [!tabs]
@@ -135,7 +132,6 @@ To check the folder in which the website should be published, click on the tabs 
 > **Step 3**
 >>
 >> Then publish the website files in this folder.
-<!-- CP-STEPS-END:get-online-find-root-folder -->
 
 You may find a file named "index.html" in your storage space. This file may have been created by OVHcloud during the installation of your web hosting to display a default page on your website. If this is the case, do not forget to delete it when uploading your files.
 
@@ -161,7 +157,6 @@ If you are migrating an existing website, you can recover your existing database
 
 If you already have a database and wish to use it (from an [OVHcloud Web Hosting plan](/links/web/hosting) or [Web Cloud Databases solution](/links/web/databases)), you will need your username and password, the name of the database and the address of the server. You can now go on to the next step.
 
-<!-- CP-STEPS-START:find-db-credentials -->
 If you want to create a new database with OVHcloud, click on the tabs below to view each of the **3** steps.
 
 > [!tabs]
@@ -182,13 +177,11 @@ If you want to create a new database with OVHcloud, click on the tabs below to v
 >> Click the `Create a database`{.action} button, or if this button is not visible, click on `Actions`{.action} and then `Create a database`{.action}. Follow the information shown.
 >>
 >> ![websitesetup](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/tab.png){.thumbnail}
-<!-- CP-STEPS-END:find-db-credentials -->
 
 #### 3.3. Import the existing database 
 
 If you are migrating an existing website, you can import your existing database into the newly created one. If it is a new website, you can move on to the next step.
 
-<!-- CP-STEPS-START:get-online-find-db-server -->
 There are several methods for importing a database. OVHcloud offers one of these in the OVHcloud Control Panel. Click on the tabs below to view each of the **3** steps.
 
 > [!tabs]
@@ -205,7 +198,6 @@ There are several methods for importing a database. OVHcloud offers one of these
 > **Step 3**
 >>
 >> Click the `...`{.action} button to the right of your database, then `Import a file`{.action}.
-<!-- CP-STEPS-END:get-online-find-db-server -->
 
 #### 3.4. Connect your website to the database
 

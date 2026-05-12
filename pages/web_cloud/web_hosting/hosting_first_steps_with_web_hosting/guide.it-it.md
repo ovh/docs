@@ -53,7 +53,6 @@ Vuoi creare un sito Internet per la tua azienda o un blog personale? Hai bisogno
 >
 > Se il dominio e l’hosting Web sono stati registrati con lo stesso ordine, i due servizi sono già associati. Consulta la [Parte 2](#part-2) di questa guida.
 
-<!-- CP-STEPS-START:link-domain-website -->
 Clicca sulle schede qui sotto per visualizzare successivamente i **4** passaggi.
 
 > [!tabs]
@@ -74,7 +73,6 @@ Clicca sulle schede qui sotto per visualizzare successivamente i **4** passaggi.
 > **Passaggio 4**
 >>
 >> Nella nuova pagina che si apre, seleziona e completa gli elementi richiesti fino alla loro validazione.
-<!-- CP-STEPS-END:link-domain-website -->
 
 /// details | Per ulteriori informazioni, fare clic qui.
 
@@ -90,7 +88,6 @@ Consulta le nostre guide dettagliate:
 
 Negli hosting Web, OVHcloud propone di installare gratuitamente i CMS WordPress, Joomla!, PrestaShop e Drupal con l’opzione "CMS in 1 click".
 
-<!-- CP-STEPS-START:install-1click-module -->
 Clicca sulle schede qui sotto per visualizzare successivamente i **4** passaggi.
 
 > [!tabs]
@@ -111,7 +108,6 @@ Clicca sulle schede qui sotto per visualizzare successivamente i **4** passaggi.
 > **Passaggio 4**
 >>
 >> Nella nuova finestra, seleziona il CMS da installare. In seguito seleziona il dominio su cui installare il modulo selezionando il nome di dominio **senza i "www"** davanti (esempio: `domain.tld` e non `www.domain.tld`), poi clicca direttamente su `Installa`{.action}.
-<!-- CP-STEPS-END:install-1click-module -->
 
 /// details | Per ulteriori informazioni, fare clic qui.
 
@@ -128,7 +124,6 @@ Consulta le nostre guide dettagliate:
 >
 > Se il dominio e l’hosting Web sono stati registrati con un unico ordine, gli indirizzi email inclusi nell’hosting Web sono già associati al dominio. Consulta la [Parte 4](#part-4) di questa guida.
 
-<!-- CP-STEPS-START:enable-email-solution -->
 Clicca sulle schede qui sotto per visualizzare successivamente i **3** passaggi.
 
 > [!tabs]
@@ -145,7 +140,6 @@ Clicca sulle schede qui sotto per visualizzare successivamente i **3** passaggi.
 > **Passaggio 3**
 >>
 >> Nella nuova pagina, seleziona il dominio nella sezione `(1)` e continua fino all’attivazione degli indirizzi email.
-<!-- CP-STEPS-END:enable-email-solution -->
 
 /// details | Per ulteriori informazioni, fare clic qui.
 
@@ -155,7 +149,6 @@ Consulta la nostra guida dettagliata "[Hosting Web - Attiva gli indirizzi email 
 
 ### 4 - Creare un indirizzo email personalizzato con il dominio <a name="part-4"></a>
 
-<!-- CP-STEPS-START:create-email-address -->
 Clicca sulle schede qui sotto per visualizzare successivamente i **4** passaggi.
 
 > [!tabs]
@@ -174,7 +167,6 @@ Clicca sulle schede qui sotto per visualizzare successivamente i **4** passaggi.
 > **Passaggio 4**
 >>
 >> Nella finestra che si apre, completa gli elementi richiesti fino alla loro convalida.
-<!-- CP-STEPS-END:create-email-address -->
 
 Ripeti l’operazione per ogni indirizzo email che vuoi creare (nel limite della tua offerta di hosting Web).
 

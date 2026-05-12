@@ -45,7 +45,6 @@ Gli step successivi ti permetteranno di correggere l’errore `Sito non installa
 
 ### 1 - Verifica la dichiarazione del tuo dominio o sottodominio sul tuo sito web presente sul tuo hosting web <a name="check-my-websites"></a>
 
-<!-- CP-STEPS-START:check-my-websites -->
 Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **3** passi.
 
 > [!tabs]
@@ -72,7 +71,6 @@ Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **3** pa
 >> |Il dominio o sottodominio associato al tuo sito web **è presente** nel tavolo.|Se hai appena aggiunto il tuo dominio o sottodominio sul tuo sito web presente sul tuo hosting web, attendi circa **venti minuti** e poi aggiorna la cache del tuo browser. Se appare comunque il messaggio "Sito non installato", passa alla [parte 2](#check-dns-domain).|
 >> |Il dominio o sottodominio associato al tuo sito web **non è presente** nel tavolo.|Aggiungi il tuo dominio o sottodominio seguendo la guida "[Come associare un dominio a un sito web esistente?](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website)".|
 >> |Il dominio o sottodominio **è stato rimosso** dal tavolo senza azione da parte tua.|Il tuo dominio o la sua zona DNS potrebbe essere gestita da un altro account. Aggiungi il tuo dominio o sottodominio seguendo la guida "[Come associare un dominio a un sito web esistente? - Aggiungere un dominio esterno](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website)".|
-<!-- CP-STEPS-END:check-my-websites -->
 
 #### 2 - Verifica il puntamento IP nella zona DNS attiva del tuo dominio <a name="check-dns-domain"></a>
 
@@ -88,7 +86,6 @@ Per prima cosa è necessario verificare che il dominio o sottodominio punti vers
 
 #### 2\.1 Identificare l’indirizzo IP dell’hosting Web OVHcloud
 
-<!-- CP-STEPS-START:check-dns-ip -->
 Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **2** passi.
 
 > [!tabs]
@@ -105,7 +102,6 @@ Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **2** pa
 >> ![find-ipv4-and-ipv6](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-ipv4-and-ipv6.png){.thumbnail}
 >>
 >> Copia l'indirizzo IPv4, poi prosegui nella lettura della guida.
-<!-- CP-STEPS-END:check-dns-ip -->
 
 L’indirizzo IP associato all’hosting Web è disponibile anche nella nostra guida "[Hosting Web - Lista degli indirizzi IP per cluster](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP)".
 
@@ -119,7 +115,6 @@ A questo punto, è necessario verificare che l’indirizzo IP dell’hosting Web
 >
 > Se modifichi direttamente i **server DNS** associati al tuo dominio, l'intervallo di tempo massimo consentito è di **48 ore**.
 
-<!-- CP-STEPS-START:check-multisite-root-folder -->
 Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **3** passi.
 
 > [!tabs]
@@ -151,7 +146,6 @@ Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **3** pa
 >> |La zona DNS attiva non contiene record di tipo A o AAAA che collegano il dominio o il sottodominio all'indirizzo IP dell'hosting Web.|Aggiungere il nuovo record DNS di tipo A o AAAA o correggere il record esistente seguendo [questa guida](/pages/web_cloud/domains/dns_zone_edit).|
 >> |Il record DNS di tipo A o AAAA esistente nella zona DNS per il dominio o il sottodominio punta verso un indirizzo IP diverso da quello dell’hosting Web.|Aggiungere il nuovo record DNS di tipo A o AAAA o correggere il record esistente seguendo [questa guida](/pages/web_cloud/domains/dns_zone_edit).|
 >> |Questo avviso viene visualizzato nella scheda `Zona DNS`{.action}:<br><br>![message-other-ovh-dns-servers](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/message-other-ovh-dns-servers.png){.thumbnail}|Modifica i server DNS del dominio di conseguenza seguendo la nostra guida "[Modificare i server DNS di un dominio OVHcloud](/pages/web_cloud/domains/dns_server_edit)."|
-<!-- CP-STEPS-END:check-multisite-root-folder -->
 
 ## Per saperne di più <a name="go-further"></a>
 

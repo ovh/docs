@@ -50,7 +50,6 @@ Dichiara il nuovo nome di dominio seguendo la nostra guida « [Come associare un
 Per superare lo Step 1 sono necessarie diverse condizioni:
 
 - Il tuo nuovo dominio deve puntare alla stessa "cartella di root" del dominio utilizzato per accedere al tuo sito
-<!-- CP-STEPS-START:retrieve-hosting-ip -->
 - Verifica che il tuo nuovo dominio punti verso il giusto indirizzo IP del tuo hosting condiviso. Per recuperare l'indirizzo IP, clicca sulle schede qui sotto per visualizzare successivamente i **3** passaggi.
 
 > [!tabs]
@@ -67,7 +66,6 @@ Per superare lo Step 1 sono necessarie diverse condizioni:
 > **Passaggio 3**
 >>
 >> Recupera **l'IPv4** visualizzata.
-<!-- CP-STEPS-END:retrieve-hosting-ip -->
 
 > [!warning]
 >
@@ -82,11 +80,9 @@ Per superare lo Step 1 sono necessarie diverse condizioni:
 > - [Gestire un certificato SSL su un hosting Web](/pages/web_cloud/web_hosting/ssl_on_webhosting)
 > - [Attiva il protocollo HTTPS sul tuo sito Web con il certificato SSL](/pages/web_cloud/web_hosting/ssl-activate-https-website)
 
-<!-- CP-STEPS-START:verify-multisite-config -->
 Se tutte le azioni sono state correttamente eseguite, le dichiarazioni dei vostri domini devono essere rigorosamente identiche **a meno che non utilizziate un certificato SSL a pagamento di tipo *Sectigo DV*, *Sectigo EV* o *custom***.
 
 ![My websites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/all-domain-same-config-enable.png){.thumbnail}
-<!-- CP-STEPS-END:verify-multisite-config -->
 
 > [!primary]
 >

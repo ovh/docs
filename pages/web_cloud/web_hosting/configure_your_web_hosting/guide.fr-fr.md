@@ -140,7 +140,6 @@ Si besoin, vous pouvez connaître la version de PHP actuellement utilisée par v
 
 /// details | Via l'espace client OVHcloud
 
-<!-- CP-STEPS-START:check-php-version -->
 Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **2** étapes.
 
 > [!tabs]
@@ -161,7 +160,6 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **2*
 >> > Si un symbole rond de couleur bleue est présent, patientez quelques minutes le temps que la version s'actualise.
 >> >
 >>
-<!-- CP-STEPS-END:check-php-version -->
 
 ///
 
@@ -233,7 +231,6 @@ Maintenant que vous connaissez les différents paramètres modifiables pour votr
 > Pour rappel, modifier au moins l'un de ces éléments peut avoir des conséquences sur l'affichage ou le bon fonctionnement de votre site web. **Assurez-vous au préalable que votre site web est compatible avec les changements que vous souhaitez effectuer dans la configuration de votre hébergement web.** Contactez un [prestataire spécialisé](/links/partner) en cas de doute ou si vous rencontrez des difficultés.
 >
 
-<!-- CP-STEPS-START:modify-config-cp -->
 Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3** étapes.
 
 > [!tabs]
@@ -278,7 +275,6 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3*
 >>
 >> ![hostingconfiguration](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/modify-hosting-configuration-step-1-and-2.png){.thumbnail}
 >>
-<!-- CP-STEPS-END:modify-config-cp -->
 
 ### 3 - Méthode 2 : modifier la configuration de l'hébergement web depuis le fichier « .ovhconfig » <a name="setting-ovhconfig"></a>
 
@@ -286,7 +282,6 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3*
 
 Munissez-vous de votre identifiant FTP principal, de son mot de passe, ainsi que de l'adresse du serveur FTP.
 
-<!-- CP-STEPS-START:retrieve-ftp-credentials -->
 Pour cela, cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3** étapes.
 
 > [!tabs]
@@ -309,7 +304,6 @@ Pour cela, cliquez sur les onglets ci-dessous pour afficher successivement chacu
 >> ![FTP - SSH tab](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/tab-perso.png){.thumbnail}
 >>
 >> Concernant le mot de passe de l'utilisateur FTP, référez-vous aux instructions décrites dans notre documentation « [Modifier le mot de passe d’un utilisateur FTP](/pages/web_cloud/web_hosting/ftp_change_password) » si nécessaire.
-<!-- CP-STEPS-END:retrieve-ftp-credentials -->
 
 #### 3.2 - Récupérer ou créer le fichier « .ovhconfig »
 

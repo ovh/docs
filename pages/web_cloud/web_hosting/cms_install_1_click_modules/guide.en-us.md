@@ -84,7 +84,6 @@ Two installation methods are available:
 
 /// details | Quick installation of a 1-click module
 
-<!-- CP-STEPS-START:install-basic-module -->
 Click on the tabs below to display each of the **4** steps in turn.
 
 > [!tabs]
@@ -128,7 +127,6 @@ Click on the tabs below to display each of the **4** steps in turn.
 >>
 >> Once the installation is complete, you will receive an email containing the login details for your CMS administrator interface (back office). Log in to the interface to customise your website.
 >>
-<!-- CP-STEPS-END:install-basic-module -->
 
 > [!primary]
 >
@@ -138,7 +136,6 @@ Click on the tabs below to display each of the **4** steps in turn.
 
 /// details | Advanced installation of a 1-click module
 
-<!-- CP-STEPS-START:install-advanced-module -->
 Click on the tabs below to display each of the **8** steps in turn.
 
 > [!tabs]
@@ -259,7 +256,6 @@ Click on the tabs below to display each of the **8** steps in turn.
 >>
 >> ![Validating installation in advanced mode](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/1-click-modules/add-a-module-advanced-mod-step-4.png){.thumbnail}
 >>
-<!-- CP-STEPS-END:install-advanced-module -->
 
 ///
 

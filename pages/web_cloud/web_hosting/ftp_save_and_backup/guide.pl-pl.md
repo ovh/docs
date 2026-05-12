@@ -58,7 +58,6 @@ Określ również metodę przywracania, której użyjesz.
 >
 > Nasze roboty instalują na Twoim hostingu kopię zapasową, zanim usuną zawartość FTP, która zostanie zastąpiona przywróceniem danych.
 
-<!-- CP-STEPS-START:check-disk-space -->
 Aby sprawdzić rozmiar używany na Twoim hostingu, kliknij poniższe zakładki, aby wyświetlić kolejne **2** kroki.
 
 > [!tabs]
@@ -77,7 +76,6 @@ Aby sprawdzić rozmiar używany na Twoim hostingu, kliknij poniższe zakładki, 
 >> Jeśli używana przestrzeń dyskowa FTP jest większa niż połowa całkowitej przestrzeni dyskowej FTP w Twojej ofercie hostingu, możesz lokalnie pobrać duże elementy Twojej strony WWW (w tym celu możesz użyć [Filezilla](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide)).
 >>
 >> Usuń je z przestrzeni FTP. Zmniejszy to rozmiar przestrzeni dyskowej FTP, której używasz i będziesz mógł przywrócić dane z Panelu klienta OVHcloud.
-<!-- CP-STEPS-END:check-disk-space -->
 
 Przejdź do sekcji dotyczącej wybranej przez Ciebie metody przywracania przestrzeni dyskowej. 
 
@@ -104,7 +102,6 @@ Przejdź do sekcji dotyczącej wybranej przez Ciebie metody przywracania przestr
 > - Status "konserwacji" pojawia się w Twoim [Panelu klienta OVHcloud](/links/control-panel/web-hosting).
 > - Strona (-y), na której (-ych) hostowane są strony "403 Forbidden".
 
-<!-- CP-STEPS-START:restore-backup-cp -->
 Kliknij poniższe zakładki, aby wyświetlić kolejne **5** kroków.
 
 > [!tabs]
@@ -147,7 +144,6 @@ Kliknij poniższe zakładki, aby wyświetlić kolejne **5** kroków.
 >> Poświęć chwilę, aby upewnić się, że żaden plik nie zostanie usunięty w wyniku przywrócenia przestrzeni dyskowej, np. plik, który zapisałeś na przestrzeni po wybranej dacie przywrócenia. Jak zostało wspomniane wyżej, przywrócenie przestrzeni dyskowej spowoduje usunięcie wszystkich aktualnych danych, które zostaną zastąpione danymi z kopii zapasowej.
 >>
 >> Kiedy jesteś gotowy do uruchomienia przywracania kopii zapasowej, kliknij przycisk `Zatwierdź`{.action}.
-<!-- CP-STEPS-END:restore-backup-cp -->
 
 > [!primary]
 >

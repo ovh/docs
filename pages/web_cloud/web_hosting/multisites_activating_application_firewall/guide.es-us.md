@@ -59,7 +59,6 @@ El conjunto preconfigurado de reglas básicas, el "Core Rule Set" (CRS) de nuest
 
 /// details | Activar el firewall de aplicación en todo su alojamiento web en la configuración PHP
 
-<!-- CP-STEPS-START:enable-firewall -->
 Haga clic en las fichas siguientes para ver cada una de las **3** etapas.
 
 > [!tabs]
@@ -84,13 +83,11 @@ Haga clic en las fichas siguientes para ver cada una de las **3** etapas.
 >> ![managephpconfig](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/application-firewall-step-2.png){.thumbnail}
 >>
 >> En la nueva ventana, asegúrese de que la opción **Firewall de aplicación** esté definida en `Activado`{.action}. Haga clic después en el botón `Aceptar`{.action}.
-<!-- CP-STEPS-END:enable-firewall -->
 
 ///
 
 /// details | Activar el firewall de aplicación únicamente en un dominio o subdominio específico
 
-<!-- CP-STEPS-START:disable-firewall -->
 Haga clic en las fichas siguientes para ver cada una de las **4** etapas.
 
 > [!tabs]
@@ -127,7 +124,6 @@ Haga clic en las fichas siguientes para ver cada una de las **4** etapas.
 >> Una vez activado el firewall para su dominio o subdominio, la mención **Activado** aparece en la columna **Firewall**.
 >>
 >> Si la mención **Activado** no aparece al cabo de unos minutos en la línea correspondiente al dominio o subdominio en cuestión, recargue la página.
-<!-- CP-STEPS-END:disable-firewall -->
 
 ///
 

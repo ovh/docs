@@ -43,7 +43,6 @@ In order for this to work, each server stores a part of your website in its cach
 
 #### If the CDN option is not ordered or enabled on your Web Hosting plan
 
-<!-- CP-STEPS-START:order-cdn -->
 Click on the tabs below to view each of the **2** steps.
 
 > [!tabs]
@@ -65,11 +64,9 @@ Click on the tabs below to view each of the **2** steps.
 >>
 >> You will be redirected to a page where you can generate a purchase order. Once the order is paid, the service will be available within a few minutes.
 >>
-<!-- CP-STEPS-END:order-cdn -->
 
 #### If the CDN option is already enabled on your Web Hosting plan
 
-<!-- CP-STEPS-START:activate-cdn-domain -->
 Click on the tabs below to view each of the **4** steps.
 
 > [!tabs]
@@ -106,7 +103,6 @@ Click on the tabs below to view each of the **4** steps.
 >> > If an external domain name is added to one of the websites on your web hosting, you must include the CDN IP address of your hosting in the DNS zone of the domain name.
 >> >
 >> > Check the [IP address list for Web Hosting clusters](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP) to find the specific IP address for your cluster’s CDN.
-<!-- CP-STEPS-END:activate-cdn-domain -->
 
 **Why is it not possible to use a geolocated IP with the CDN option?**
 
@@ -119,7 +115,6 @@ In terms of SEO (search engine optimisation), the website loading speed is more 
 
 It can sometimes be useful to clear the CDN cache, especially when you modify your static files. For example, when deploying a new version of your website. You can clear the cache for each of your domain names and subdomains.
 
-<!-- CP-STEPS-START:clear-cdn-cache -->
 Click on the tabs below to view each of the **3** steps.
 
 > [!tabs]
@@ -144,11 +139,9 @@ Click on the tabs below to view each of the **3** steps.
 >> Then click on the `⁝`{.action} button to the right of the relevant domain name or subdomain, then on `Clear CDN`{.action}.
 >>
 >> ![Associated domains options](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/associated-domains-options.png){.thumbnail}
-<!-- CP-STEPS-END:clear-cdn-cache -->
 
 #### Configuring Shared CDN options
 
-<!-- CP-STEPS-START:configure-shared-cdn -->
 Click on the tabs below to view each of the **4** steps.
 
 > [!tabs]
@@ -193,11 +186,9 @@ Click on the tabs below to view each of the **4** steps.
 >> - **Cache rule**: Create up to 5 rules. They will set the cache refresh rate for specific resources on your site ([see section below](#cacherules)). 
 >>
 >> Once you have chosen your options, click `Apply configuration`{.action}, then `Confirm configuration`{.action} in the next window.
-<!-- CP-STEPS-END:configure-shared-cdn -->
 
 ##### **Creating a cache rule** <a name="cacherules"></a>
 
-<!-- CP-STEPS-START:shared-cdn-cache-rules -->
 Click on the tabs below to view each of the **5** steps.
 
 > [!tabs]
@@ -250,11 +241,9 @@ Click on the tabs below to view each of the **5** steps.
 >> > [!warning]
 >> >
 >> > To have a higher quota of rules and more settings available than creating cache rules, you can choose the [Advanced CDN option](/links/web/hosting-options-cdn).
-<!-- CP-STEPS-END:shared-cdn-cache-rules -->
 
 #### Configuring CDN Security options
 
-<!-- CP-STEPS-START:shared-cdn-security -->
 Click on the tabs below to view each of the **4** steps.
 
 > [!tabs]
@@ -324,11 +313,9 @@ Click on the tabs below to view each of the **4** steps.
 >> > [!primary]
 >> >
 >> > WAF is fully managed by OVHcloud, and the list of vulnerabilities is regularly updated.
-<!-- CP-STEPS-END:shared-cdn-security -->
 
 #### Configuring CDN Advanced options
 
-<!-- CP-STEPS-START:configure-advanced-cdn -->
 Click on the tabs below to view each of the **4** steps.
 
 > [!tabs]
@@ -399,11 +386,9 @@ Click on the tabs below to view each of the **4** steps.
 >> - **Cache rule**: Create up to 100 rules. They set the cache refresh rate for specific resources on your site. Continue reading the guide in [the next part](#cacherulesadv) for more information.
 >>
 >> Once you have chosen your options, click `Apply configuration`{.action}, then `Confirm configuration`{.action} in the next window.
-<!-- CP-STEPS-END:configure-advanced-cdn -->
 
 ##### **Create an advanced caching rule** <a name="cacherulesadv"></a>
 
-<!-- CP-STEPS-START:advanced-cdn-cache-rules -->
 Click on the tabs below to view each of the **5** steps.
 
 > [!tabs]
@@ -454,7 +439,6 @@ Click on the tabs below to view each of the **5** steps.
 >> ![CDN](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/modify-cdn/advanced-cache-rules.png){.thumbnail}
 >>
 >> Once you have configured your rules and chosen your options, click `Apply configuration`{.action}, then `Confirm configuration`{.action} in the next window.
-<!-- CP-STEPS-END:advanced-cdn-cache-rules -->
 
 ### View CDN statistics and logs
 
@@ -502,7 +486,6 @@ This action allows you to disable the CDN for one or more of your domain names o
 >
 > Modifying an entry in a domain name’s active DNS zone will take between **4** and **24** hours to propagate fully. By the time this propagation finishes, a page containing the code **520** may appear randomly. This occurs because some parts of the DNS network still redirect requests to the CDN IP address linked to your Web Hosting plan.
 
-<!-- CP-STEPS-START:disable-cdn-domain -->
 Click on the tabs below to view each of the **4** steps.
 
 > [!tabs]
@@ -533,13 +516,11 @@ Click on the tabs below to view each of the **4** steps.
 >> Untick "Activate the CDN", click `Next`{.action} and then `Confirm`{.action}.
 >>
 >> ![CDN](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/cdn-deactivation.png){.thumbnail}
-<!-- CP-STEPS-END:disable-cdn-domain -->
 
 ### Cancelling the CDN option
 
 This action will remove the CDN option from your entire Web Hosting solution.
 
-<!-- CP-STEPS-START:cancel-cdn -->
 Click on the tabs below to view each of the **3** steps.
 
 > [!tabs]
@@ -563,7 +544,6 @@ Click on the tabs below to view each of the **3** steps.
 >> >
 >> > You will receive an email containing the CDN closure procedure. Please follow the instructions in the email in order to confirm or cancel the request.
 >>
-<!-- CP-STEPS-END:cancel-cdn -->
 
 ### Checking that your CDN is working
 

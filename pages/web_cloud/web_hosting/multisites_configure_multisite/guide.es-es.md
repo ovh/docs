@@ -58,7 +58,6 @@ Puede alojar varios sitios web en una misma oferta de alojamiento web, incluso s
 
 Esta sección se aplica únicamente si el nombre de dominio (y/o su zona DNS activa) con el que desea crear su sitio web se encuentra **en su área de cliente de OVHcloud**.
 
-<!-- CP-STEPS-START:add-ovhcloud-domain -->
 Haga clic en las fichas siguientes para ver cada una de las **7** etapas.
 
 > [!tabs]
@@ -155,7 +154,6 @@ Haga clic en las fichas siguientes para ver cada una de las **7** etapas.
 >>
 >> > [!primary]
 >> > La modificación de la configuración DNS de su nombre de dominio requiere un tiempo de propagación que puede alcanzar las 24 horas antes de que sea plenamente efectiva.
-<!-- CP-STEPS-END:add-ovhcloud-domain -->
 
 ///
 
@@ -163,7 +161,6 @@ Haga clic en las fichas siguientes para ver cada una de las **7** etapas.
 
 Esta sección se aplica únicamente si desea añadir un sitio web con un nombre de dominio que no esté presente en su cuenta de OVHcloud. Puede tratarse de un nombre de dominio presente en otra cuenta de OVHcloud o registrado en otro proveedor.
 
-<!-- CP-STEPS-START:add-external-domain -->
 Haga clic en las fichas siguientes para ver cada una de las **7** etapas.
 
 > [!tabs]
@@ -244,7 +241,6 @@ Haga clic en las fichas siguientes para ver cada una de las **7** etapas.
 >> ![choose module](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/add-a-site-choose-1-click-module.png)
 >>
 >> Por el contrario, si desea instalar manualmente su sitio web, recupere sus archivos y subáigalos a la carpeta raíz correspondiente en el espacio de almacenamiento de su alojamiento web. Para obtener más información, consulte nuestra documentación "[Publicar un sitio web en internet](/pages/web_cloud/web_hosting/hosting_how_to_get_my_website_online)".
-<!-- CP-STEPS-END:add-external-domain -->
 
 ///
 
@@ -252,7 +248,6 @@ Haga clic en las fichas siguientes para ver cada una de las **7** etapas.
 
 Esta parte se aplica únicamente si desea añadir un sitio web con un nombre de dominio que aún no se ha registrado, ya sea en OVHcloud o en otro registrador. En otras palabras, concierne a los nombres de dominio que aún no se han suscrito.
 
-<!-- CP-STEPS-START:add-site-1click-module -->
 Haga clic en las fichas siguientes para ver cada una de las **7** etapas.
 
 > [!tabs]
@@ -289,7 +284,6 @@ Haga clic en las fichas siguientes para ver cada una de las **7** etapas.
 >> > [!primary]
 >> >
 >> > Una vez que su nombre de dominio aparezca en su área de cliente de OVHcloud, siga la parte "[Añadir un nombre de dominio gestionado desde su área de cliente de OVHcloud](#add-domain-ovhcloud)" de este guía para añadir su sitio web a su alojamiento web.
-<!-- CP-STEPS-END:add-site-1click-module -->
 
 ///
 

@@ -55,7 +55,6 @@ En utilisant vos services, vous pouvez être amené à :
 >
 > En effet, la suite de ce guide décrit uniquement la procédure permettant de modifier, depuis votre espace client OVHcloud, le dossier racine initialement défini pour votre site web. Cette action est obligatoire afin que le site web affiche le contenu du nouveau dossier, en remplacement de l'ancien.
 
-<!-- CP-STEPS-START:modify-root-folder -->
 Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4** étapes.
 
 > [!tabs]
@@ -85,7 +84,6 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4*
 >>
 >> Cliquez ensuite sur `Confirmer`{.action}.
 >>
-<!-- CP-STEPS-END:modify-root-folder -->
 
 ## Aller plus loin
 

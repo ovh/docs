@@ -43,7 +43,6 @@ Każdy serwer przechowuje w pamięci podręcznej (cache) część Twojej witryny
 
 ####  Jeśli opcja CDN nie jest zamówiona lub włączona na Twoim hostingu
 
-<!-- CP-STEPS-START:order-cdn -->
 Kliknij poniższe zakładki, aby wyświetlić kolejne **2** kroki.
 
 > [!tabs]
@@ -65,11 +64,9 @@ Kliknij poniższe zakładki, aby wyświetlić kolejne **2** kroki.
 >>
 >> Zostaniesz przekierowany do formularza zamówienia. Usługa zostanie aktywowana kilka minut po jej opłaceniu.
 >>
-<!-- CP-STEPS-END:order-cdn -->
 
 #### Jeśli opcja CDN jest już włączona na Twoim hostingu
 
-<!-- CP-STEPS-START:activate-cdn-domain -->
 Kliknij poniższe zakładki, aby wyświetlić kolejne **4** kroki.
 
 > [!tabs]
@@ -106,7 +103,6 @@ Kliknij poniższe zakładki, aby wyświetlić kolejne **4** kroki.
 >> > W przypadku domeny zewnętrznej dodanej do jednej z witryn na Twoim serwisie, musisz dodać adres IP CDN Twojego serwisu do strefy DNS tej domeny.
 >> >
 >> > Zapoznaj się z [listą adresów IP klastrów i hostingów WWW](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP), aby znaleźć adres IP wykorzystywany przez usługę GeoCache w Twoim klastrze.
-<!-- CP-STEPS-END:activate-cdn-domain -->
 
 **Dlaczego nie mogę korzystać z geolokalizowanego adresu IP z opcją CDN?**
 
@@ -119,7 +115,6 @@ Jeśli chodzi o SEO (pozycjonowanie w wyszukiwarkach), szybkość wyświetlania 
 
 Czasem warto wyczyścić pamięć podręczną CDN, zwłaszcza gdy zmieniasz swoje pliki statyczne. Na przykład podczas wdrażania nowej wersji Twojej witryny. Możesz wyczyścić pamięć podręczną dla każdej z Twoich domen i poddomen.
 
-<!-- CP-STEPS-START:clear-cdn-cache -->
 Kliknij poniższe zakładki, aby wyświetlić kolejne **3** kroki.
 
 > [!tabs]
@@ -144,11 +139,9 @@ Kliknij poniższe zakładki, aby wyświetlić kolejne **3** kroki.
 >> Następnie kliknij przycisk `⁝`{.action} po prawej stronie nazwy domeny lub poddomeny, a następnie kliknij `Opróżnij CDN`{.action}.
 >>
 >> ![Opcje przypisanych domen](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/associated-domains-options.png){.thumbnail}
-<!-- CP-STEPS-END:clear-cdn-cache -->
 
 #### Konfiguracja opcji usługi Shared CDN
 
-<!-- CP-STEPS-START:configure-shared-cdn -->
 Kliknij poniższe zakładki, aby wyświetlić kolejne **4** kroki.
 
 > [!tabs]
@@ -193,11 +186,9 @@ Kliknij poniższe zakładki, aby wyświetlić kolejne **4** kroki.
 >> - **Zasada cache**: Utwórz do 5 reguł. Określają one częstotliwość odświeżania bufora dla określonych zasobów na Twojej stronie. ([postępuj zgodnie z kolejnymi krokami](#cacherules)). 
 >>
 >> Po wybraniu opcji kliknij `Zastosuj konfigurację`{.action}, a następnie `Zatwierdź konfigurację`{.action} w następnym oknie.
-<!-- CP-STEPS-END:configure-shared-cdn -->
 
 ##### **Utwórz regułę cache** <a name="cacherules"></a>
 
-<!-- CP-STEPS-START:shared-cdn-cache-rules -->
 Kliknij poniższe zakładki, aby wyświetlić kolejne **5** kroki.
 
 > [!tabs]
@@ -250,11 +241,9 @@ Kliknij poniższe zakładki, aby wyświetlić kolejne **5** kroki.
 >> > [!warning]
 >> >
 >> > Aby korzystać z wyższego limitu reguł i dodatkowych parametrów podczas tworzenia reguły cache, możesz wybrać opcję [CDN Advanced](/links/web/hosting-options-cdn).
-<!-- CP-STEPS-END:shared-cdn-cache-rules -->
 
 #### Konfiguracja opcji CDN Security
 
-<!-- CP-STEPS-START:shared-cdn-security -->
 Kliknij poniższe zakładki, aby wyświetlić kolejne **5** kroki.
 
 > [!tabs]
@@ -324,11 +313,9 @@ Kliknij poniższe zakładki, aby wyświetlić kolejne **5** kroki.
 >> > [!primary]
 >> >
 >> > WAF jest w pełni administrowany przez OVHcloud. Lista luk jest regularnie aktualizowana.
-<!-- CP-STEPS-END:shared-cdn-security -->
 
 #### Konfiguracja opcji CDN Advanced
 
-<!-- CP-STEPS-START:configure-advanced-cdn -->
 Kliknij poniższe zakładki, aby wyświetlić kolejne **4** kroki.
 
 > [!tabs]
@@ -399,11 +386,9 @@ Kliknij poniższe zakładki, aby wyświetlić kolejne **4** kroki.
 >> - **Cache rule**: Utwórz do 100 reguł. Określają one częstotliwość odświeżania bufora dla określonych zasobów na Twojej stronie. Aby uzyskać więcej informacji, zapoznaj się [z przewodnikiem](#cacherulesadv).
 >>
 >> Po wybraniu opcji kliknij `Zastosuj konfigurację`{.action}, a następnie `Zatwierdź konfigurację`{.action} w następnym oknie.
-<!-- CP-STEPS-END:configure-advanced-cdn -->
 
 ##### **Tworzenie reguły zaawansowanego cache** <a name="cacherulesadv"></a>
 
-<!-- CP-STEPS-START:advanced-cdn-cache-rules -->
 Kliknij poniższe zakładki, aby wyświetlić kolejne **5** kroki.
 
 > [!tabs]
@@ -454,7 +439,6 @@ Kliknij poniższe zakładki, aby wyświetlić kolejne **5** kroki.
 >> ![GeoCache](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/modify-cdn/advanced-cache-rules.png){.thumbnail}
 >>
 >> Po skonfigurowaniu reguł i wybraniu opcji kliknij `Zastosuj konfigurację`{.action}, a następnie `Zatwierdź konfigurację`{.action} w następnym oknie.
-<!-- CP-STEPS-END:advanced-cdn-cache-rules -->
 
 ### Wyświetl statystyki i logi usługi CDN
 
@@ -502,7 +486,6 @@ Ta akcja pozwala wyłączyć CDN dla jednej lub kilku Twoich domen lub poddomen,
 >
 > Modyfikacja wpisu w aktywnej strefie DNS domeny wiąże się z opóźnieniem propagacji wynoszącym **4** do **24** godzin, zanim wejdzie on w życie. W tym czasie może pojawić się losowo strona z kodem **520**. Zjawisko to jest związane z faktem, że niektóre części sieci DNS nadal przekierowują zapytania na adres IP usługi CDN powiązanej z Twoim hostingiem.
 
-<!-- CP-STEPS-START:disable-cdn-domain -->
 Kliknij poniższe zakładki, aby wyświetlić kolejne **4** kroki.
 
 > [!tabs]
@@ -533,13 +516,11 @@ Kliknij poniższe zakładki, aby wyświetlić kolejne **4** kroki.
 >> Usuń zaznaczenie opcji "Aktywuj GeoCache", kliknij przycisk `Dalej`{.action}, a następnie `Zatwierdź`{.action}.
 >>
 >> ![GeoCache](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/cdn-deactivation.png){.thumbnail}
-<!-- CP-STEPS-END:disable-cdn-domain -->
 
 ### Usuń opcję CDN na Twoim hostingu
 
 Celem tego działania jest usunięcie opcji GeoCache dla całego hostingu WWW.
 
-<!-- CP-STEPS-START:cancel-cdn -->
 Kliknij poniższe zakładki, aby wyświetlić kolejne **3** kroki.
 
 > [!tabs]
@@ -563,7 +544,6 @@ Kliknij poniższe zakładki, aby wyświetlić kolejne **3** kroki.
 >> >
 >> > Otrzymasz wiadomość e-mail z procedurą rezygnacji z GeoCache. Należy postępować zgodnie z podanymi instrukcjami, aby potwierdzić lub anulować swój wniosek.
 >>
-<!-- CP-STEPS-END:cancel-cdn -->
 
 ### Sprawdzenie, czy GeoCache działa
 

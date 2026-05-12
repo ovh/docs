@@ -58,7 +58,6 @@ Czy chcesz dodać nową stronę internetową do swojego hostingu?
 
 Ta sekcja dotyczy wyłącznie sytuacji, w której nazwa domeny (i/lub jej aktywna strefa DNS), za pomocą której chcesz utworzyć swoją stronę internetową, znajduje się **w Panelu klienta OVHcloud**.
 
-<!-- CP-STEPS-START:add-ovhcloud-domain -->
 Kliknij poniższe zakładki, aby wyświetlić kolejne **7** kroki.
 
 > [!tabs]
@@ -155,7 +154,6 @@ Kliknij poniższe zakładki, aby wyświetlić kolejne **7** kroki.
 >>
 >> > [!primary]
 >> > Modyfikacja konfiguracji DNS nazwy domeny wymaga czasu propagacji, który może trwać do 24 godzin, zanim zmiany zaczną w pełni obowiązywać.
-<!-- CP-STEPS-END:add-ovhcloud-domain -->
 
 ///
 
@@ -163,7 +161,6 @@ Kliknij poniższe zakładki, aby wyświetlić kolejne **7** kroki.
 
 Ta sekcja dotyczy wyłącznie sytuacji, w której chcesz dodać stronę internetową z nazwą domeny, która nie jest obecna na Twoim koncie OVHcloud. Może to być nazwa domeny należąca do innego konta OVHcloud lub zarejestrowana u innego dostawcy.
 
-<!-- CP-STEPS-START:add-external-domain -->
 Kliknij poniższe zakładki, aby wyświetlić kolejne **7** kroki.
 
 > [!tabs]
@@ -244,7 +241,6 @@ Kliknij poniższe zakładki, aby wyświetlić kolejne **7** kroki.
 >> ![choose module](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/add-a-site-choose-1-click-module.png)
 >>
 >> Jeśli natomiast chcesz ręcznie zainstalować swoją stronę internetową, pobierz jej pliki i prześlij je do odpowiedniego folderu głównego w przestrzeni dyskowej swojego hostingu. Więcej informacji można znaleźć w naszej dokumentacji "[Automatyczna instalacja strony WWW za pomocą modułu CMS](/pages/web_cloud/web_hosting/hosting_how_to_get_my_website_online)".
-<!-- CP-STEPS-END:add-external-domain -->
 
 ///
 
@@ -252,7 +248,6 @@ Kliknij poniższe zakładki, aby wyświetlić kolejne **7** kroki.
 
 Ta sekcja dotyczy wyłącznie sytuacji, w której chcesz dodać stronę internetową z nazwą domeny, która nie została jeszcze zarejestrowana ani w OVHcloud, ani u innego rejestratora. Innymi słowy, dotyczy to nazw domen, które nie zostały jeszcze wykupione.
 
-<!-- CP-STEPS-START:add-site-1click-module -->
 Kliknij poniższe zakładki, aby wyświetlić kolejne **5** kroki.
 
 > [!tabs]
@@ -289,7 +284,6 @@ Kliknij poniższe zakładki, aby wyświetlić kolejne **5** kroki.
 >> > [!primary]
 >> >
 >> > Gdy nazwa domeny pojawi się w Panelu klienta OVHcloud, postępuj zgodnie z sekcją "[Dodaj nazwę domeny zarządzaną z Twojego Panelu klienta OVHcloud](#add-domain-ovhcloud)" niniejszego przewodnika, aby dodać swoją stronę internetową do hostingu.
-<!-- CP-STEPS-END:add-site-1click-module -->
 
 ///
 

@@ -45,7 +45,6 @@ Pode alojar vários sites web na mesma oferta de alojamento web, mesmo que os no
 
 ### Aceder à ferramenta de diagnóstico
 
-<!-- CP-STEPS-START:diagnose-website -->
 Clique nos separadores abaixo para visualizar cada uma das **4** etapas.
 
 > [!tabs]
@@ -80,9 +79,7 @@ Clique nos separadores abaixo para visualizar cada uma das **4** etapas.
 >> - `A/AAAA` cinzento.
 >>
 >> Consulte a secção "[Interpretação das cores da ferramenta de diagnóstico](#interpretation)" deste guia para conhecer o significado destas 3 cores.
-<!-- CP-STEPS-END:diagnose-website -->
 
-<!-- CP-STEPS-START:diagnostic-status-interpretation -->
 ### Interpretação das cores da ferramenta de diagnóstico <a name="interpretation"></a>
 
 **Clique nos indicadores de estado relevantes abaixo para ver as respetivas explicações.**
@@ -114,7 +111,6 @@ Quando o ícone `A/AAAA` é cinzento na coluna `Diagnóstico`, isso significa qu
 Para adicionar os registos **A** e/ou **AAAA** e configurar corretamente o seu nome de domínio, siga as etapas descritas no nosso guia "[Editar uma zona DNS da OVHcloud](/pages/web_cloud/domains/dns_zone_edit)".
 
 ///
-<!-- CP-STEPS-END:diagnostic-status-interpretation -->
 
 ## Quer saber mais?
 

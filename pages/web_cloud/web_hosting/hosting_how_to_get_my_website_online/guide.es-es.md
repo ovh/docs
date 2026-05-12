@@ -73,7 +73,6 @@ Para conectarse al espacio de almacenamiento, necesitará lo siguiente:
 - la dirección del servidor;
 - el puerto de conexión al servidor.
 
-<!-- CP-STEPS-START:get-online-retrieve-ftp-credentials -->
 Habrá recibido esta información por correo electrónico tras la instalación de su alojamiento. Si no dispone de esta información, haga clic en las fichas siguientes para ver cada una de las **3** etapas.
 
 > [!tabs]
@@ -98,7 +97,6 @@ Habrá recibido esta información por correo electrónico tras la instalación d
 >> Para más información, consulte nuestra guía [Conectarse al espacio de almacenamiento de un alojamiento web"](/pages/web_cloud/web_hosting/ftp_connection).
 >>
 >> Si no tiene la contraseña, consulte la guía [Cambiar la contraseña de un usuario FTP](/pages/web_cloud/web_hosting/ftp_change_password).
-<!-- CP-STEPS-END:get-online-retrieve-ftp-credentials -->
 
 Una vez que disponga de todos los datos necesarios, podrá conectarse a su espacio de almacenamiento de dos formas diferentes:
 
@@ -116,7 +114,6 @@ Una vez que disponga de todos los datos necesarios, podrá conectarse a su espac
 
 Una vez conectado a su espacio de almacenamiento, solo le queda subir los archivos de su sitio web. **Le recomendamos que preste especial atención al directorio en el que va a cargar los archivos**, especialmente si ha declarado varios sitios web en su alojamiento web.
 
-<!-- CP-STEPS-START:get-online-find-root-folder -->
 Para verificar la carpeta en la que debe publicarse el sitio web, haga clic en las pestañas de abajo para visualizar sucesivamente las **3** etapas.
 
 > [!tabs]
@@ -135,7 +132,6 @@ Para verificar la carpeta en la que debe publicarse el sitio web, haga clic en l
 > **Etapa 3**
 >>
 >> Publique entonces los archivos del sitio web en este último.
-<!-- CP-STEPS-END:get-online-find-root-folder -->
 
 Es posible que encuentre en su espacio de almacenamiento un archivo denominado "index.html". Este podría haber sido creado por OVHcloud durante la instalación de su alojamiento web para mostrar una página predeterminada en su sitio web. Si es así, no olvide eliminarlo al subir sus archivos.
 
@@ -161,7 +157,6 @@ Si va a migrar un sitio web que ya existe, descargue la base de datos desde su a
 
 Si ya dispone de una base de datos (incluida con un [plan de hosting de OVHcloud](/links/web/hosting), una solución [Cloud Databases](/links/web/databases)), necesitará el nombre de usuario y la contraseña, el nombre de la base de datos y la dirección del servidor. Una vez disponga de estos datos, vaya al siguiente paso.
 
-<!-- CP-STEPS-START:find-db-credentials -->
 Si quiere crear una nueva base de datos en OVHcloud, haga clic en las pestañas de abajo para visualizar sucesivamente las **3** etapas.
 
 > [!tabs]
@@ -182,13 +177,11 @@ Si quiere crear una nueva base de datos en OVHcloud, haga clic en las pestañas 
 >> Haga clic en `Crear una base de datos`{.action} o, si este botón no aparece, en `Acciones`{.action} > `Crear una base de datos`{.action}. Introduzca la información solicitada.
 >>
 >> ![Instalación de un sitio web](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/tab.png){.thumbnail}
-<!-- CP-STEPS-END:find-db-credentials -->
 
 #### 3.3. Importar una base de datos existente 
 
 Si está migrando un sitio web, deberá importar la base de datos existente en la que acaba de crear. Si se trata de un sitio web nuevo, omita este paso.
 
-<!-- CP-STEPS-START:get-online-find-db-server -->
 Existen diversas formas de realizar la importación. OVHcloud ofrece una desde el área de cliente. Haga clic en las pestañas de abajo para visualizar sucesivamente las **3** etapas.
 
 > [!tabs]
@@ -205,7 +198,6 @@ Existen diversas formas de realizar la importación. OVHcloud ofrece una desde e
 > **Etapa 3**
 >>
 >> Haga clic en el botón `...`{.action} situado a la derecha de la base de datos y seleccione `Importar un archivo`{.action}.
-<!-- CP-STEPS-END:get-online-find-db-server -->
 
 #### 3.4. Conectar el sitio web a la base de datos
 

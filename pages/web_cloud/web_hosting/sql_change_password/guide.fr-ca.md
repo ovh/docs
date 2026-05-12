@@ -57,7 +57,6 @@ La modification du mot de passe de la base de données de votre site nécessite 
 
 ### 1 : Identifier le fichier de configuration de votre site <a name="step1"></a>
 
-<!-- CP-STEPS-START:find-config-file -->
 Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4** étapes.
 
 > [!tabs]
@@ -86,7 +85,6 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4*
 >> ![root-folders](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/root-folders.png){.thumbnail}
 >>
 >> Accédez ensuite à l'espace de stockage FTP contenant les fichiers et dossiers de votre site en consultant [ce guide](/pages/web_cloud/web_hosting/ftp_connection).
-<!-- CP-STEPS-END:find-config-file -->
 
 > [!primary]
 >
@@ -195,7 +193,6 @@ Sauvegardez cette modification.
 > Cette opération nécessitera quelques minutes avant d'être effective. Après l'avoir lancée, pensez à vérifier son état dans l'onglet `Tâches en cours`{.action}.
 >
 
-<!-- CP-STEPS-START:change-db-password-server -->
 Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4** étapes.
 
 > [!tabs]
@@ -222,7 +219,6 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4*
 >> Dans la fenêtre qui s'affiche, renseignez le nouveau mot de passe de votre base de données (défini dans la [partie 3](#step3)), confirmez-le puis cliquez sur le bouton `Valider`{.action}.
 >>
 >> ![database-password-step3](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/change-password-window.png){.thumbnail}
-<!-- CP-STEPS-END:change-db-password-server -->
 
 ## Aller plus loin <a name="go-further"></a>
 

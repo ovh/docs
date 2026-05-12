@@ -58,7 +58,6 @@ Da mesma forma, deverá definir o método de restauração que vai utilizar:
 >
 > De facto, os nossos robôs instalam o backup no seu alojamento antes de eliminar o conteúdo FTP que será substituído pelo restauro.
 
-<!-- CP-STEPS-START:check-disk-space -->
 Para verificar o limite utilizado no seu alojamento web, clique nos separadores abaixo para visualizar cada uma das **2** etapas.
 
 > [!tabs]
@@ -77,7 +76,6 @@ Para verificar o limite utilizado no seu alojamento web, clique nos separadores 
 >> Se o espaço de armazenamento FTP utilizado for superior a metade do espaço de armazenamento FTP total do seu plano de alojamento, recupere localmente determinados elementos volumosos do seu website (para isso, pode utilizar [Filezilla](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide)).
 >>
 >> De seguida, elimine-os do seu espaço de armazenamento FTP. Isto diminuirá o tamanho do espaço de armazenamento FTP que utiliza e poderá então lançar o seu restauro a partir da Área de Cliente OVHcloud.
-<!-- CP-STEPS-END:check-disk-space -->
 
 Aceda à informação correspondente ao método de restauração escolhido.
 
@@ -104,7 +102,6 @@ Aceda à informação correspondente ao método de restauração escolhido.
 > - O estado "manutenção" aparece na sua [Área de Cliente OVHcloud](/links/control-panel/web-hosting).
 > - O(s) site(s) alojado(s) apresenta(m) uma página "403 Forbidden".
 
-<!-- CP-STEPS-START:restore-backup-cp -->
 Clique nos separadores abaixo para visualizar cada uma das **5** etapas.
 
 > [!tabs]
@@ -147,7 +144,6 @@ Clique nos separadores abaixo para visualizar cada uma das **5** etapas.
 >> Certifique-se de que não perdeu nenhum ficheiro no processo de restauração (por exemplo, qualquer ficheiro que guardou no seu espaço de armazenamento após a data de restauração selecionada). Tal como indicado, a restauração vai apagar todos os dados atuais para os substituir pelos dados da cópia de segurança.
 >>
 >> De seguida, clique no botão `Validar`{.action}.
-<!-- CP-STEPS-END:restore-backup-cp -->
 
 > [!primary]
 >

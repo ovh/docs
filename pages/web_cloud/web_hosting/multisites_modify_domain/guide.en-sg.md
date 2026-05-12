@@ -41,7 +41,6 @@ When you use your web hosting plan or update your website, you may need to modif
 > Modifying the association settings for a domain name or subdomain can result in access to your services (your website) being interrupted. If you have any doubts about the modifications to be made, do not hesitate to contact a specialist provider.
 >
 
-<!-- CP-STEPS-START:modify-domain-settings -->
 To modify the association settings of a domain name or subdomain already declared on your web hosting plan, click on the tabs below to view each of the **4** steps.
 
 > [!tabs]
@@ -74,11 +73,9 @@ To modify the association settings of a domain name or subdomain already declare
 >> ![Modify domain](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/modify-a-domain-step-1-all-disabled.png){.thumbnail}
 >>
 >> In the following part of this guide, you will find a description of each of the available parameters in the window above. After reading the different descriptions in the section "[Description of modifiable parameters](#step1)" and once your changes have been made, click on the `Next`{.action} button located at the bottom right of the window, then go to [Part 2](#step2).
-<!-- CP-STEPS-END:modify-domain-settings -->
 
 ### 1 - Description of editable parameters <a name="step1"></a>
 
-<!-- CP-STEPS-START:description-editable-parameters -->
 > [!primary]
 >
 > The `Domain name`{.action} and `Root folder`{.action} fields are not modifiable, as they are parameters related to the website on your web hosting plan.
@@ -108,18 +105,13 @@ Find out more about this option in our [detailed statistics page](/links/web/hos
 
 Once you have made your changes, click the `Next`{.action} button in the bottom right-hand corner of the window to go to [Part 2](#step2).
 
-
-<!-- CP-STEPS-END:description-editable-parameters -->
-
 ### 2 - Summary of changes <a name="step2"></a>
 
-<!-- CP-STEPS-START:confirm-domain-changes -->
 Once you have clicked the `Next`{.action} button, you will see a summary of the settings you are about to apply to your domain name:
 
 ![Modify domain resume](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/modify-domain-step2.png){.thumbnail}
 
 If all the settings are configured as you want, click the `Confirm`{.action} button.
-<!-- CP-STEPS-END:confirm-domain-changes -->
 
 Depending on the options you have selected, the changes may take between a few minutes and a few hours to be applied.
 

@@ -45,7 +45,6 @@ A continuación se explica cómo corregir el error `Sitio no instalado` en ambos
 
 ### 1 - Comprobar la declaración de su dominio o subdominio en su sitio web presente en su alojamiento web <a name="check-my-websites"></a>
 
-<!-- CP-STEPS-START:check-my-websites -->
 Haga clic en las fichas siguientes para ver cada una de las **3** etapas.
 
 > [!tabs]
@@ -72,7 +71,6 @@ Haga clic en las fichas siguientes para ver cada una de las **3** etapas.
 >> |El dominio o subdominio asociado a su sitio web **aparece** en la tabla.|Si acaba de añadir su dominio o subdominio a su sitio web presente en su alojamiento web, espere aproximadamente **veinte minutos** y luego actualice la caché de su navegador. Si sigue apareciendo el mensaje "Sitio no instalado", pase a la [parte 2](#check-dns-domain).|
 >> |El dominio o subdominio asociado a su sitio web **no aparece** en la tabla.|Añada su dominio o subdominio siguiendo nuestra guía "[¿Cómo asociar un dominio a un sitio web existente?](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website)".|
 >> |El dominio o subdominio **ha sido eliminado** de la tabla sin que usted haya realizado ninguna acción.|Es posible que su dominio o su zona DNS se gestionen desde otra cuenta. Añada su dominio o subdominio siguiendo nuestra guía "[¿Cómo asociar un dominio a un sitio web existente? - Añadir un dominio externo](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website)".|
-<!-- CP-STEPS-END:check-my-websites -->
 
 ### 2 - Comprobar el direccionamiento IP en la zona DNS activa de su dominio <a name="check-dns-domain"></a>
 
@@ -88,7 +86,6 @@ Este paso consiste en comprobar que el dominio o subdominio apuntan hacia la dir
 
 #### 2\.1 Identificar la dirección IP de su alojamiento web de OVHcloud
 
-<!-- CP-STEPS-START:check-dns-ip -->
 Haga clic en las fichas siguientes para ver cada una de las **2** etapas.
 
 > [!tabs]
@@ -105,7 +102,6 @@ Haga clic en las fichas siguientes para ver cada una de las **2** etapas.
 >>![find-ipv4-and-ipv6](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-ipv4-and-ipv6.png){.thumbnail}
 >>
 >> Copie la dirección IPv4 y siga leyendo esta guía.
-<!-- CP-STEPS-END:check-dns-ip -->
 
 Para más información, consulte la dirección IP asociada a su alojamiento web en nuestra guía "[Web hosting - Lista de direcciones IP por cluster](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP)".
 
@@ -119,7 +115,6 @@ A continuación, compruebe que la dirección IP del alojamiento web aparece en l
 >
 > Si modifica directamente los **servidores DNS** asociados a su dominio, este plazo puede llegar hasta **48 horas** como máximo.
 
-<!-- CP-STEPS-START:check-multisite-root-folder -->
 Para ello, haga clic en las fichas siguientes para ver cada una de las **3** etapas.
 
 > [!tabs]
@@ -151,7 +146,6 @@ Para ello, haga clic en las fichas siguientes para ver cada una de las **3** eta
 >> |La zona DNS activa no tiene registros de tipo A o AAAA que vinculen el dominio o subdominio a la dirección IP de su alojamiento web.|Agregue el nuevo registro de tipo A o AAAA o corrija el registro existente siguiendo [esta guía](/pages/web_cloud/domains/dns_zone_edit).|
 >> |El registro DNS de tipo A o AAAA existente en la zona DNS para su dominio o subdominio apunta a una dirección IP diferente de la de su alojamiento web.|Agregue el nuevo registro DNS de tipo A o AAAA o corrija el registro existente siguiendo [esta guía](/pages/web_cloud/domains/dns_zone_edit).|
 >> |Esta advertencia aparece en la pestaña `Zona DNS`{.action}:<br><br>![message-other-ovh-dns-servers](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/message-other-ovh-dns-servers.png){.thumbnail}|Modifique los servidores DNS de su dominio en consecuencia siguiendo nuestra guía "[Modificar los servidores DNS de un dominio de OVHcloud](/pages/web_cloud/domains/dns_server_edit)".|
-<!-- CP-STEPS-END:check-multisite-root-folder -->
 
 ## Más información <a name="go-further"></a>
 

@@ -56,7 +56,6 @@ Changing your website’s database password involves four parts:
 
 ### 1: Identify your website’s configuration file <a name="step1"></a>
 
-<!-- CP-STEPS-START:find-config-file -->
 Click on the tabs below to view each of the **4** steps.
 
 > [!tabs]
@@ -85,7 +84,6 @@ Click on the tabs below to view each of the **4** steps.
 >> ![root-folders](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/root-folders.png){.thumbnail}
 >>
 >> You can then access the FTP storage space containing the files and folders of your website by referring to [this guide](/pages/web_cloud/web_hosting/ftp_connection).
-<!-- CP-STEPS-END:find-config-file -->
 
 > [!primary]
 >
@@ -223,7 +221,6 @@ Again, two cases are possible:
 
 - If your database is located in the section of the [OVHcloud Control Panel](/links/manager) dedicated to your [Web Cloud Databases solutions](/links/web/databases), follow [these instructions](#case2).
 
-<!-- CP-STEPS-START:change-db-password-server -->
 #### Case 1: Your website’s database is part of your hosting plan <a name="case1"></a>
 
 > [!tabs]
@@ -250,11 +247,9 @@ Again, two cases are possible:
 >> In the window that pops up, enter your database’s new password (defined at [part 3](#step3)), confirm it, then click on `Confirm`{.action}.
 >>
 >> ![database-password-step3](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/change-password-window.png){.thumbnail}
-<!-- CP-STEPS-END:change-db-password-server -->
 
 #### Case 2: Your website’s database is part of a Web Cloud Databases solution <a name="case2"></a>
 
-<!-- CP-STEPS-START:change-wcdb-password -->
 Go to the `Databases`{.action} section in your Control Panel and click on the server concerned, then click on `Users and rights`{.action}:
 
 ![userDBpassword-step1](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/users-and-rights/wcdb-tab.png){.thumbnail}
@@ -266,8 +261,6 @@ To change the password of your database on the server, click on the `...`{.actio
 In the window that pops up, enter your database’s new password (defined in [part 3](#step3)), confirm it, then click on `Confirm`{.action}.
 
 ![userDBpassword-step3](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/users-and-rights/wcdb-change-password-window.png){.thumbnail}
-
-<!-- CP-STEPS-END:change-wcdb-password -->
 
 ## Go further <a name="go-further"></a>
 

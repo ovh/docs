@@ -24,7 +24,6 @@ details[open]>summary::before {
 
 /// details | Come configurare il tuo hosting Web?
 
-<!-- CP-STEPS-START:configure-hosting -->
 Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **2** passi.
 
 > [!tabs]
@@ -37,7 +36,6 @@ Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **2** pa
 > **Passaggio 2**
 >>
 >> Potrai gestire i tuoi certificati SSL, la versione PHP applicata al tuo hosting Web, l'opzione CDN, i tuoi siti web, i database, ecc.
-<!-- CP-STEPS-END:configure-hosting -->
 
 > [!success]
 >
@@ -47,7 +45,6 @@ Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **2** pa
 
 /// details | Ho dimenticato la password di accesso all’account in cui si trova il tuo hosting Web, cosa fai?
 
-<!-- CP-STEPS-START:forgot-account-password -->
 Se hai dimenticato l’identificativo cliente OVHcloud o la password associata, clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **3** passi.
 
 > [!tabs]
@@ -62,7 +59,6 @@ Se hai dimenticato l’identificativo cliente OVHcloud o la password associata, 
 > **Passaggio 3**
 >>
 >> Clicca sul pulsante `Invia`{.action}.
-<!-- CP-STEPS-END:forgot-account-password -->
 
 La procedura di ripristino verrà inviata al tuo indirizzo email di contatto.
 
@@ -74,7 +70,6 @@ La procedura di ripristino verrà inviata al tuo indirizzo email di contatto.
 
 /// details | Come gestire la password dello spazio di storage FTP di un hosting Web?
 
-<!-- CP-STEPS-START:manage-ftp-password -->
 Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **2** passi.
 
 > [!tabs]
@@ -87,7 +82,6 @@ Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **2** pa
 > **Passaggio 2**
 >>
 >> Clicca sulla scheda `FTP - SSH`{.action}.
-<!-- CP-STEPS-END:manage-ftp-password -->
 
 Sarà possibile modificare la password FTP dell’hosting Web.
 
@@ -103,7 +97,6 @@ Sarà possibile modificare la password FTP dell’hosting Web.
 >
 > Se modifichi la password di un database utilizzata da uno dei tuoi siti Web, aggiornala anche nel file di configurazione del sito Web in questione. Senza questo aggiornamento, infatti, il sito Web sarà disconnesso dal suo database e non funzionerà correttamente.
 
-<!-- CP-STEPS-START:change-db-password -->
 Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **2** passi.
 
 > [!tabs]
@@ -116,7 +109,6 @@ Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **2** pa
 > **Passaggio 2**
 >>
 >> Clicca sulla scheda `Database`{.action}.
-<!-- CP-STEPS-END:change-db-password -->
 
 In questa interfaccia è possibile modificare le password dei database associati all’hosting Web.
 
@@ -128,7 +120,6 @@ In questa interfaccia è possibile modificare le password dei database associati
 
 /// details | Come modificare la password di un indirizzo email associato a un hosting Web?
 
-<!-- CP-STEPS-START:change-email-password -->
 Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **3** passi.
 
 > [!tabs]
@@ -143,7 +134,6 @@ Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **3** pa
 > **Passaggio 3**
 >>
 >> Nella tabella che appare, clicca sul pulsante `...`{.action} a destra dell’indirizzo email interessato e poi clicca su `Modifica la password`{.action}.
-<!-- CP-STEPS-END:change-email-password -->
 
 Sarà possibile modificare la password associata all’indirizzo di posta elettronica (attenersi alla politica indicata nella finestra di immissione).
 
@@ -206,7 +196,6 @@ Ecco i principali step da seguire:
 
 /// details | Come ospitare più siti Web su uno stesso hosting Web?
 
-<!-- CP-STEPS-START:host-multiple-websites -->
 Se il tuo [hosting Web](/links/web/hosting) è compatibile, clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **2** passi.
 
 > [!tabs]
@@ -219,7 +208,6 @@ Se il tuo [hosting Web](/links/web/hosting) è compatibile, clicca sulle schede 
 > **Passaggio 2**
 >>
 >> Clicca sulla scheda `I miei siti`{.action}.
-<!-- CP-STEPS-END:host-multiple-websites -->
 
 Potrai gestire i nomi di dominio/sottodomini dichiarati sui siti web presenti sul tuo hosting Web.
 
@@ -238,7 +226,6 @@ Per rendere il sito Web accessibile con un URL in "HTTPS" (esempio: `https://dom
 
 OVHcloud propone diversi [certificati SSL](/links/web/hosting-options) sugli hosting Web.
 
-<!-- CP-STEPS-START:enable-https -->
 Per attivare un certificato SSL sul tuo hosting Web, clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **4** passi.
 
 > [!tabs]
@@ -259,7 +246,6 @@ Per attivare un certificato SSL sul tuo hosting Web, clicca sulle schede qui sot
 > **Passaggio 4**
 >>
 >> Prosegui fino al completamento dell'installazione del certificato SSL (previa convalida del buono d'ordine, se scegli uno dei certificati SSL Sectigo).
-<!-- CP-STEPS-END:enable-https -->
 
 > [!success]
 >
@@ -283,7 +269,6 @@ Per ordinare la soluzione di hosting Web più adatta alle proprie esigenze, cons
 >
 > In base al piano di hosting Web attivo, alcune soluzioni potrebbero non essere disponibili. Per maggiori informazioni, consulta la nostra guida "[Hosting Web - Come far evolvere la tua offerta](/pages/web_cloud/web_hosting/how_to_upgrade_web_hosting_offer)".
 
-<!-- CP-STEPS-START:change-hosting-plan -->
 Una volta effettuata la scelta, clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **3** passi.
 
 > [!tabs]
@@ -300,7 +285,6 @@ Una volta effettuata la scelta, clicca sulle schede qui sotto per visualizzare i
 > **Passaggio 3**
 >>
 >> Seleziona il nuovo abbonamento e la durata. Conferma i contratti corrispondenti e clicca su `Invia`{.action}.
-<!-- CP-STEPS-END:change-hosting-plan -->
 
 > [!success]
 >
@@ -312,7 +296,6 @@ Una volta effettuata la scelta, clicca sulle schede qui sotto per visualizzare i
 
 In caso di disattivazione o rimozione dell’hosting Web, anche il servizio di posta associato viene disattivato. Per conservare gli indirizzi email è necessario scollegare il servizio di posta elettronica **prima** della disattivazione dell’hosting Web.
 
-<!-- CP-STEPS-START:keep-email-after-cancel -->
 Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **3** passi.
 
 > [!tabs]
@@ -329,7 +312,6 @@ Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **3** pa
 > **Passaggio 3**
 >>
 >> Segui le istruzioni per ordinare un servizio di posta indipendente che ti permetta di conservare i tuoi indirizzi email già creati.
-<!-- CP-STEPS-END:keep-email-after-cancel -->
 
 ///
 
@@ -338,7 +320,6 @@ Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **3** pa
 Gli hosting Web **Performance** includono un'offerta Web Cloud Databases attivabile gratuitamente.<br>
 Quando disattivi o elimini il tuo hosting Web **Performance**, viene disattivata anche la soluzione Web Cloud Databases eventualmente associata. Per conservare la soluzione Web Cloud Databases è necessario scollegarla **prima** della disattivazione dell’hosting.
 
-<!-- CP-STEPS-START:keep-wcdb-after-cancel -->
 Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **3** passi.
 
 > [!tabs]
@@ -355,7 +336,6 @@ Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **3** pa
 > **Passaggio 3**
 >>
 >> Segui le istruzioni per ordinare un'offerta Web Cloud Databases indipendente per conservare la tua soluzione Web Cloud Databases già creata.
-<!-- CP-STEPS-END:keep-wcdb-after-cancel -->
 
 **Questa operazione è irreversibile e l'offerta Web Cloud Databases viene successivamente fatturata indipendentemente dall’hosting Web Performance.**
 
@@ -363,7 +343,6 @@ Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **3** pa
 
 /// details | Come aumentare la RAM di una soluzione "Web Cloud Databases" associata a un hosting Web "Performance"?
 
-<!-- CP-STEPS-START:increase-wcdb-ram -->
 Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **3** passi.
 
 > [!tabs]
@@ -380,7 +359,6 @@ Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **3** pa
 > **Passaggio 3**
 >>
 >> Segui le istruzioni per ordinare la quantità di RAM desiderata, poi prosegui fino alla convalida dell'ordine.
-<!-- CP-STEPS-END:increase-wcdb-ram -->
 
 > [!success]
 >
@@ -399,7 +377,6 @@ Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **3** pa
 Il malfunzionamento del sito Web potrebbe essere dovuto a diversi motivi.<br>
 Per capirne la causa, verifica innanzitutto che nessuno dei tuoi abbonamenti abbia bisogno di essere **rinnovato**.
 
-<!-- CP-STEPS-START:website-not-working -->
 Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **2** passi.
 
 > [!tabs]
@@ -410,7 +387,6 @@ Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **2** pa
 > **Passaggio 2**
 >>
 >> Trovi tutti i dettagli nella nostra guida "[Come rinnovare i servizi OVHcloud](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal)".
-<!-- CP-STEPS-END:website-not-working -->
 
 In seguito consulta gli [eventi in corso sulla nostra infrastruttura](https://www.status-ovhcloud.com/).
 
@@ -464,7 +440,6 @@ In questo caso è necessario eliminare il modulo in 1 click e reinstallarlo.
 > - [Ripristinare i dati dello spazio di storage di un hosting Web](/pages/web_cloud/web_hosting/ftp_save_and_backup).
 > - [Recuperare il backup del database di un hosting Web](/pages/web_cloud/web_hosting/sql_database_export).
 
-<!-- CP-STEPS-START:fix-cluster-url-1 -->
 **Solo** dopo aver effettuato tutti i backup necessari, elimina il tuo [CMS in 1 click](/pages/web_cloud/web_hosting/cms_install_1_click_modules), clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **3** passi.
 
 > [!tabs]
@@ -481,11 +456,9 @@ In questo caso è necessario eliminare il modulo in 1 click e reinstallarlo.
 > **Passaggio 3**
 >>
 >> Nella tabella che appare, clicca sul pulsante `...`{.action} situato a destra nella riga del *modulo in 1 click* interessato e poi su `Elimina un modulo`{.action}.
-<!-- CP-STEPS-END:fix-cluster-url-1 -->
 
 L'eliminazione del *modulo in 1 click* può richiedere **diversi minuti**.
 
-<!-- CP-STEPS-START:fix-cluster-url-2 -->
 Elimina il database associato, clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **3** passi.
 
 > [!tabs]
@@ -502,7 +475,6 @@ Elimina il database associato, clicca sulle schede qui sotto per visualizzare in
 > **Passaggio 3**
 >>
 >> Nella tabella che appare, clicca sul pulsante `...`{.action} a destra nella riga del database in questione e poi su `Elimina il database`{.action}.
-<!-- CP-STEPS-END:fix-cluster-url-2 -->
 
 L'eliminazione del database associato può richiedere **diversi minuti**.
 
@@ -533,7 +505,6 @@ Se il sito Web viene visualizzato con questo URL in seguito a una modifica, la s
 > - [Ripristinare i dati dello spazio di storage di un hosting Web](/pages/web_cloud/web_hosting/ftp_save_and_backup).
 > - [Recuperare il backup del database di un hosting Web](/pages/web_cloud/web_hosting/sql_database_export).
 
-<!-- CP-STEPS-START:fix-cluster-url-after-change-1 -->
 Per ripristinare il codice sorgente del sito Web, clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **4** passi.
 
 > [!tabs]
@@ -556,11 +527,9 @@ Per ripristinare il codice sorgente del sito Web, clicca sulle schede qui sotto 
 > **Passaggio 4**
 >>
 >> Nella nuova finestra, scegli la data del backup da ripristinare e continua fino all’avvio del ripristino.
-<!-- CP-STEPS-END:fix-cluster-url-after-change-1 -->
 
 Il ripristino dello spazio di storage FTP può richiedere **diversi minuti**.
 
-<!-- CP-STEPS-START:fix-cluster-url-after-change-2 -->
 Per ripristinare un backup del database, clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **5** passi.
 
 > [!tabs]
@@ -585,7 +554,6 @@ Per ripristinare un backup del database, clicca sulle schede qui sotto per visua
 > **Passaggio 5**
 >>
 >> Una volta scelto il backup, clicca sul pulsante `...`{.action} a destra del backup da ripristinare e poi su `Ripristina il backup`{.action}.
-<!-- CP-STEPS-END:fix-cluster-url-after-change-2 -->
 
 Il ripristino del backup di un database può richiedere **diversi minuti**.
 
@@ -606,7 +574,6 @@ Questa situazione indica una configurazione errata a livello dei [server DNS](/p
 
 Il caso più comune è il seguente: il dominio è stato ordinato separatamente dall’hosting Web e non è quindi possibile collegarli automaticamente tra loro tramite la zona DNS del dominio.
 
-<!-- CP-STEPS-START:fix-webmail-redirect-1 -->
 Per risolvere il problema, clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **4** passi.
 
 > [!tabs]
@@ -626,9 +593,7 @@ Per risolvere il problema, clicca sulle schede qui sotto per visualizzare in seq
 >>
 > **Passaggio 4**
 >>
-<!-- CP-STEPS-START:fix-webmail-redirect-2 -->
 >> Nella tabella (che rappresenta la zona DNS del nome di dominio) che appare, confronta i `Destinazione` dei record di tipo `NS` presenti nella zona DNS con i nomi dei server DNS recuperati precedentemente. Si possono verificare tre situazioni. Clicca sulle schede qui sotto per visualizzare in sequenza ogni **3** caso.
-<!-- CP-STEPS-END:fix-webmail-redirect-1 -->
 
 > [!tabs]
 > **Caso n°1**
@@ -685,7 +650,6 @@ Per risolvere il problema, clicca sulle schede qui sotto per visualizzare in seq
 >> I `Target` (server DNS) dei record di tipo `NS` dichiarati nella zona DNS del nome di dominio **non sono identici** a quelli recuperati nella scheda `Server DNS`{.action}. Inoltre, i nomi dei server DNS recuperati nella scheda `Server DNS`{.action} non hanno nessuna delle forme descritte nel **Caso n°2**, ad eccezione delle forme seguenti: `sdnsX.ovh.net`, `sdnsX.ovh.ca`, `vpsXXXX.ovh.net` o `vpsXXXXXX.ovh.ca` (in cui ogni `X` indica una cifra compresa tra **0** e **9**).
 >>
 >> In questo caso, significa che la zona DNS attiva applicata al dominio non è gestita direttamente da OVHcloud. Contatta il tuo Webmaster, il tuo provider di domini, il tuo provider DNS o uno dei nostri [partner](/links/partner).
-<!-- CP-STEPS-END:fix-webmail-redirect-2 -->
 
 ///
 
@@ -706,7 +670,6 @@ In questo caso, la soluzione più rapida sarà ripristinarlo allo stato preceden
 > - [Ripristinare i dati dello spazio di storage di un hosting Web](/pages/web_cloud/web_hosting/ftp_save_and_backup).
 > - [Recuperare il backup del database di un hosting Web](/pages/web_cloud/web_hosting/sql_database_export).
 
-<!-- CP-STEPS-START:fix-redirect-error-1 -->
 Per ripristinare il codice sorgente del sito Web, clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **4** passi.
 
 > [!tabs]
@@ -729,11 +692,9 @@ Per ripristinare il codice sorgente del sito Web, clicca sulle schede qui sotto 
 > **Passaggio 4**
 >>
 >> Nella nuova finestra, scegli la data del backup da ripristinare e continua fino all’avvio del ripristino.
-<!-- CP-STEPS-END:fix-redirect-error-1 -->
 
 Il ripristino dello spazio di storage FTP può richiedere **diversi minuti**.
 
-<!-- CP-STEPS-START:fix-redirect-error-2 -->
 Per ripristinare un backup del database, clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **5** passi.
 
 > [!tabs]
@@ -758,7 +719,6 @@ Per ripristinare un backup del database, clicca sulle schede qui sotto per visua
 > **Passaggio 5**
 >>
 >> Una volta scelto il backup, clicca sul pulsante `...`{.action} a destra del backup da ripristinare e poi su `Ripristina il backup`{.action}.
-<!-- CP-STEPS-END:fix-redirect-error-2 -->
 
 Il ripristino del backup di un database può richiedere **diversi minuti**.
 

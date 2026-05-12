@@ -55,7 +55,6 @@ Korzystając z usług, możesz potrzebować:
 >
 > Ten przewodnik opisuje wyłącznie procedurę zmiany, z poziomu Panelu klienta OVHcloud, katalogu głównego pierwotnie zdefiniowanego dla Twojej strony WWW. Ta czynność jest niezbędna, aby strona WWW wyświetlała zawartość nowego katalogu zamiast starego.
 
-<!-- CP-STEPS-START:modify-root-folder -->
 Kliknij na poniższe karty, aby wyświetlić kolejno każdy z **4** kroków.
 
 > [!tabs]
@@ -85,7 +84,6 @@ Kliknij na poniższe karty, aby wyświetlić kolejno każdy z **4** kroków.
 >>
 >> Następnie kliknij `Potwierdź`{.action}.
 >>
-<!-- CP-STEPS-END:modify-root-folder -->
 
 ## Sprawdź również
 

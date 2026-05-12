@@ -37,7 +37,6 @@ Moduły za 1 kliknięciem pozwalają na szybką i prostą instalację internetow
 
 ### Dostęp do strony
 
-<!-- CP-STEPS-START:access-module -->
 Kliknij poniższe zakładki, aby kolejno wyświetlić każdy z **2** kroków.
 
 > [!tabs]
@@ -53,7 +52,6 @@ Kliknij poniższe zakładki, aby kolejno wyświetlić każdy z **2** kroków.
 >>
 >> Kliknij przycisk `...`{.action} znajdujący się po prawej stronie linii dla Twojego modułu, po czym kliknij `Dostęp do modułu`{.action}.
 >>
-<!-- CP-STEPS-END:access-module -->
 
 > [!primary]
 >
@@ -62,7 +60,6 @@ Kliknij poniższe zakładki, aby kolejno wyświetlić każdy z **2** kroków.
 
 ### Dostęp do interfejsu administratora
 
-<!-- CP-STEPS-START:access-admin-interface -->
 Kliknij poniższe zakładki, aby kolejno wyświetlić każdy z **2** kroków.
 
 > [!tabs]
@@ -78,11 +75,9 @@ Kliknij poniższe zakładki, aby kolejno wyświetlić każdy z **2** kroków.
 >>
 >> Kliknij przycisk `...`{.action} znajdujący się po prawej stronie linii dla Twojego modułu, po czym kliknij `Dostęp do interfejsu administracyjnego modułu`{.action}.
 >>
-<!-- CP-STEPS-END:access-admin-interface -->
 
 ### Znajdź identyfikator administratora
 
-<!-- CP-STEPS-START:find-admin-login -->
 Kliknij poniższe zakładki, aby kolejno wyświetlić każdy z **3** kroków.
 
 > [!tabs]
@@ -100,7 +95,6 @@ Kliknij poniższe zakładki, aby kolejno wyświetlić każdy z **3** kroków.
 >>
 >> Możesz również wyszukać e-mail otrzymany podczas tworzenia modułu. W [Panelu klienta OVHcloud](/links/manager) kliknij Twoją nazwę w prawym górnym rogu ekranu, a następnie w menu, które się wyświetla, kliknij `E-maile od działu wsparcia`{.action}.
 >>
-<!-- CP-STEPS-END:find-admin-login -->
 
 ### Zmiana hasła do modułu <a name="password-change"></a>
 
@@ -128,7 +122,6 @@ Zalecamy jednak, abyś przeprowadził operację w oparciu o dokumentację przygo
 
 Aby usunąć moduł za pomocą 1 kliknięcia, należy rozpocząć od zidentyfikowania bazy danych w **sposób** pewny.
 
-<!-- CP-STEPS-START:find-db-password -->
 Kliknij poniższe zakładki, aby kolejno wyświetlić każdy z **3** kroków.
 
 > [!tabs]
@@ -148,7 +141,6 @@ Kliknij poniższe zakładki, aby kolejno wyświetlić każdy z **3** kroków.
 >>
 >> W przeciwnym razie przejdź do karty `Moje strony`{.action}. Zanotuj nazwę `Katalog główny` widoczną w wierszu odpowiedniego serwisu internetowego: jest to katalog, w którym znajdują się pliki tworzące Twój moduł za 1 kliknięciem na serwerze FTP.
 >>
-<!-- CP-STEPS-END:find-db-password -->
 
 Zaloguj się do [przestrzeni FTP Twojego hostingu](/pages/web_cloud/web_hosting/ftp_connection). Otwórz `Katalog główny` znajdujący się w zakładce `Moje strony`{.action} i wyszukaj plik konfiguracyjny Twojego modułu:
 
@@ -168,7 +160,6 @@ Aby wykonać kopię zapasową Twojej strony WWW, postępuj zgodnie z instrukcjam
 > Usunięcie modułu za 1 kliknięciem i bazy danych spowoduje usunięcie wszystkich kopii **zapasowych** modułu. Usunięte dane nie będą mogły zostać później odzyskane.
 >
 
-<!-- CP-STEPS-START:delete-module -->
 Kliknij poniższe zakładki, aby kolejno wyświetlić każdy z **3** kroków.
 
 > [!tabs]
@@ -197,7 +188,6 @@ Kliknij poniższe zakładki, aby kolejno wyświetlić każdy z **3** kroków.
 >> > <iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/LHpsuvyNFtQ?si=4655K8lQQpkE2YNG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 >> >
 >>
-<!-- CP-STEPS-END:delete-module -->
 
 > [!warning]
 >
@@ -206,7 +196,6 @@ Kliknij poniższe zakładki, aby kolejno wyświetlić każdy z **3** kroków.
 > Jeśli posiadasz hosting [Perso](/links/web/hosting-personal-offer) lub utworzyłeś już cztery bazy danych na hostingu [Hosting Pro](/links/web/hosting-professional-offer) lub [Hosting Performance](/links/web/hosting-performance-offer), usuń bazę danych zidentyfikowaną w [etapie 1](#step1) **PRZED** utworzeniem nowego modułu za pomocą 1 kliknięcia.
 >
 
-<!-- CP-STEPS-START:delete-database -->
 Aby dokończyć usuwanie modułu, kliknij poniższe zakładki, aby kolejno wyświetlić każdy z **3** kroków.
 
 > [!tabs]
@@ -226,7 +215,6 @@ Aby dokończyć usuwanie modułu, kliknij poniższe zakładki, aby kolejno wyśw
 >>
 >> Przed ponownym uruchomieniem instalacji nowego modułu sprawdź, czy wymagane wcześniej zadania usunięcia zostały sfinalizowane w zakładce `Zadania w trakcie`{.action}.
 >>
-<!-- CP-STEPS-END:delete-database -->
 
 ### Dobre praktyki
 

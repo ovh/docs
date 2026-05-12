@@ -73,7 +73,6 @@ Per accedere allo spazio di storage sono necessari:
 
 Questi dati sono indicati nell’email di conferma dell’installazione dell'hosting Web.
 
-<!-- CP-STEPS-START:get-online-retrieve-ftp-credentials -->
 Se hai necessità di recuperarli, clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **3** passi.
 
 > [!tabs]
@@ -98,7 +97,6 @@ Se hai necessità di recuperarli, clicca sulle schede qui sotto per visualizzare
 >> In caso di necessità, consulta la guida [Accedere allo spazio di storage di un hosting Web](/pages/web_cloud/web_hosting/ftp_connection).
 >>
 >> Se hai smarrito la password, segui la procedura descritta nella guida [Modificare la password di un utente FTP](/pages/web_cloud/web_hosting/ftp_change_password).
-<!-- CP-STEPS-END:get-online-retrieve-ftp-credentials -->
 
 Una volta recuperati i dati potrai connetterti allo spazio di storage in due modi diversi, utilizzando: 
 
@@ -116,7 +114,6 @@ Una volta recuperati i dati potrai connetterti allo spazio di storage in due mod
 
 Una volta connesso al tuo spazio di archiviazione, ti rimane solo da caricare i file del tuo sito. **Ti invitiamo a essere particolarmente attento al directory su cui intendi caricare i file**, soprattutto se hai dichiarato più siti web sull'hosting web.
 
-<!-- CP-STEPS-START:get-online-find-root-folder -->
 Per verificare la cartella in cui deve essere pubblicato il sito web, clicca sulle schede qui sotto per visualizzare successivamente i **3** passaggi.
 
 > [!tabs]
@@ -135,7 +132,6 @@ Per verificare la cartella in cui deve essere pubblicato il sito web, clicca sul
 > **Passaggio 3**
 >>
 >> Pubblica quindi i file del sito web in quest'ultimo.
-<!-- CP-STEPS-END:get-online-find-root-folder -->
 
 Potrebbe capitare che tu trovi sul tuo spazio di archiviazione un file intitolato "index.html". Quest'ultimo può essere stato creato da OVHcloud all'installazione del tuo hosting web per visualizzare una pagina predefinita sul tuo sito web. Se è così, non dimenticarti di eliminarlo quando carichi i tuoi file.
 
@@ -161,7 +157,6 @@ Se stai migrando un sito web, recupera il database esistente presso il tuo vecch
 
 Se disponi già di un database (incluso, ad esempio, in una soluzione di [hosting OVHcloud](/links/web/hosting) o [Web Cloud Databases](/links/web/databases)) recupera nome utente, password, nome del database e indirizzo del server e poi passa allo step successivo.
 
-<!-- CP-STEPS-START:find-db-credentials -->
 Per creare un nuovo database in OVHcloud, clicca sulle schede qui sotto per visualizzare successivamente i **3** passaggi.
 
 > [!tabs]
@@ -182,13 +177,11 @@ Per creare un nuovo database in OVHcloud, clicca sulle schede qui sotto per visu
 >> Clicca su `Crea un database`{.action} o, se non compare, su `Azioni`{.action} > `Crea un database`{.action}. Inserisci le informazioni richieste.
 >>
 >> ![Installazione sito](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/tab.png){.thumbnail}
-<!-- CP-STEPS-END:find-db-credentials -->
 
 #### 3.3. Importare il database esistente 
 
 Se stai migrando un sito, importa il database esistente in quello appena creato. Se invece si tratta di un nuovo sito Web, passa allo step successivo.
 
-<!-- CP-STEPS-START:get-online-find-db-server -->
 L’importazione può essere effettuata in diversi modi. OVHcloud ne propone una direttamente dallo Spazio Cliente. Clicca sulle schede qui sotto per visualizzare successivamente i **3** passaggi.
 
 > [!tabs]
@@ -205,7 +198,6 @@ L’importazione può essere effettuata in diversi modi. OVHcloud ne propone una
 > **Passaggio 3**
 >>
 >> Clicca su `...`{.action} in corrispondenza del tuo database e poi su `Importa un file`{.action}.
-<!-- CP-STEPS-END:get-online-find-db-server -->
 
 #### 3.4. Collegare il sito web al database
 

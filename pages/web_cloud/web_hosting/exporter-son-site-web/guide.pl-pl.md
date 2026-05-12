@@ -40,7 +40,6 @@ Aby zalogować się do przestrzeni dyskowej, powinieneś posiadać następujące
 
 Dane te otrzymasz w wiadomości e-mail potwierdzającej instalację hostingu.
 
-<!-- CP-STEPS-START:export-retrieve-ftp-credentials -->
 Jeśli nie posiadasz wskazanych wyżej informacji, kliknij poniższe zakładki, aby wyświetlić kolejne **3** kroki.
 
 > [!tabs]
@@ -65,7 +64,6 @@ Jeśli nie posiadasz wskazanych wyżej informacji, kliknij poniższe zakładki, 
 >> Jeśli potrzebujesz więcej informacji, zapoznaj się z przewodnikiem: "[Logowanie do przestrzeni dyskowej hostingu WWW](/pages/web_cloud/web_hosting/ftp_connection)".
 >>
 >> W razie utraty hasła zapoznaj się z instrukcjami zawartymi w przewodniku"[Zmiana hasła do konta FTP](/pages/web_cloud/web_hosting/ftp_change_password)".
-<!-- CP-STEPS-END:export-retrieve-ftp-credentials -->
 
 Gdy będziesz posiadał już wszystkie potrzebne informacje, możesz pobrać pliki z przestrzeni dyskowej na dwa sposoby:
 
@@ -77,7 +75,6 @@ Gdy będziesz posiadał już wszystkie potrzebne informacje, możesz pobrać pli
 
 Po zalogowaniu się do swojego miejsca przechowywania i w zależności od witryn internetowych hostowanych na nim, może pojawić się kilka folderów.
 
-<!-- CP-STEPS-START:find-root-folder -->
 W razie potrzeby wcześniej zidentyfikuj w swoim hostingu nazwę katalogu głównego, w którym znajduje się Twoja witryna internetowa. Aby to zrobić, kliknij poniższe zakładki, aby wyświetlić kolejne **3** kroki.
 
 > [!tabs]
@@ -98,7 +95,6 @@ W razie potrzeby wcześniej zidentyfikuj w swoim hostingu nazwę katalogu głów
 >> W tabeli, która się pojawi, dla wybranej witryny internetowej sprawdź `Katalog główny`{.action}, który jest wyświetlany.
 >>
 >> ![export-website](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/root-folders.png){.thumbnail}
-<!-- CP-STEPS-END:find-root-folder -->
 
 Nadal zalogowany do swojego miejsca przechowywania, musisz tylko pobrać pliki swojej witryny internetowej, uzyskując dostęp do wcześniej zidentyfikowanego katalogu głównego.
 

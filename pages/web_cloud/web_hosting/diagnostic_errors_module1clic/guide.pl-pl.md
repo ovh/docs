@@ -53,7 +53,6 @@ Jeśli konfiguracja modułu nie zostanie przeprowadzona prawidłowo, instalacja 
 
 /// details | Twoja domena nie jest proponowana podczas tworzenia "modułu za 1 kliknięciem"
 
-<!-- CP-STEPS-START:check-module-status -->
 ![domainenotproposed](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/1-click-modules/domain-unavailable.png){.thumbnail}
 
 Kliknij poniższe zakładki, aby wyświetlić kolejne **4** kroki.
@@ -85,13 +84,11 @@ Kliknij poniższe zakładki, aby wyświetlić kolejne **4** kroki.
 >> |---|---|
 >> |Domena lub poddomena powiązana ze stroną internetową, którą chcesz utworzyć, nie pojawia się w tabeli znajdującej się na karcie `Moje strony`{.action}.|Dodaj nazwę domeny, postępując zgodnie z [tymi instrukcjami](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website).|
 >> |Nazwa domeny została odłączona od strony internetowej bez Twojej interwencji.|Jeśli Twoja nazwa domeny lub jej [strefa DNS](/pages/web_cloud/domains/dns_zone_edit) nie jest zarządzana z poziomu Twojego konta OVHcloud, dodaj nazwę domeny z poziomu karty `Moje strony`{.action}, postępując zgodnie z [tym przewodnikiem](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website).|
-<!-- CP-STEPS-END:check-module-status -->
 
 ///
 
 /// details | "Wystąpił błąd podczas pobierania informacji (You need at least one free database)"
 
-<!-- CP-STEPS-START:change-root-folder -->
 ![No databases available](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/1-click-modules/message-no-db-available.png){.thumbnail}
 
 Ten komunikat pojawi się, gdy rozpoczniesz instalację "modułu za 1 kliknięciem", kiedy nie będziesz mógł lub przestanie mieć możliwości utworzenia nowej bazy danych przypisanej do Twojego hostingu.
@@ -115,7 +112,6 @@ Kliknij poniższe zakładki, aby wyświetlić kolejne **2** kroki.
 >>
 >> ![order_a_database](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/order-a-db.png){.thumbnail}
 >>
-<!-- CP-STEPS-END:change-root-folder -->
 
 Po jego zakończeniu będziesz mógł zainstalować nowy "moduł za pomocą 1 kliknięcia".
 
@@ -131,7 +127,6 @@ Po jego zakończeniu będziesz mógł zainstalować nowy "moduł za pomocą 1 kl
 > Zapoznaj się z porównaniem naszych ofert [pakiety hostingowe](/links/web/hosting).
 >
 
-<!-- CP-STEPS-START:find-admin-credentials -->
 Kliknij poniższe zakładki, aby wyświetlić kolejne **2** kroki.
 
 > [!tabs]
@@ -147,7 +142,6 @@ Kliknij poniższe zakładki, aby wyświetlić kolejne **2** kroki.
 >>
 >> ![upgrade_hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/upgrade-perso.png){.thumbnail}
 >>
-<!-- CP-STEPS-END:find-admin-credentials -->
 
 Oferty [Pro](/links/web/hosting-professional-offer) i [Performance](/links/web/hosting-performance-offer) pozwalają na utworzenie do trzech dodatkowych "modułów za 1 kliknięciem" z niezależną bazą danych dla każdego z nich. Oferty **Performance** pozwolą Ci również na bezpłatną aktywację serwera [Web Cloud Databases](/links/web/databases).
 
@@ -160,7 +154,6 @@ Po jego zakończeniu będziesz mógł zainstalować nowy "moduł za pomocą 1 kl
 > Operacja usunięcia bazy danych jest definitywna. Wiąże się to również z usunięciem kopii zapasowych odpowiedniej bazy danych. W przypadku wątpliwości skontaktuj się z webmasterem lub jednym z naszych [partnerów](/links/partner).
 >
 
-<!-- CP-STEPS-START:diag-delete-database -->
 Aby usunąć bazę danych, kliknij poniższe zakładki, aby wyświetlić kolejne **2** kroki.
 
 > [!tabs]
@@ -176,7 +169,6 @@ Aby usunąć bazę danych, kliknij poniższe zakładki, aby wyświetlić kolejne
 >>
 >> ![delete_a_database](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/sharedsql-deletion.png){.thumbnail}
 >>
-<!-- CP-STEPS-END:diag-delete-database -->
 
 Po jego zakończeniu będziesz mógł zainstalować nowy "moduł za pomocą 1 kliknięcia".
 
@@ -216,7 +208,6 @@ Po uruchomieniu tworzenia "modułu za pomocą 1 kliknięcia" otrzymałeś wiadom
 
 To wiadomość oznacza, że **katalog główny** strony internetowej, do której jest przypisana Twoja nazwa domeny, zawiera już jeden lub więcej plików lub katalogów.
 
-<!-- CP-STEPS-START:change-domain-root-folder -->
 Aby połączyć swoją nazwę domeny ze stroną internetową (katalog główny), kliknij poniższe zakładki, aby wyświetlić kolejne **4** kroki.
 
 > [!tabs]
@@ -245,7 +236,6 @@ Aby połączyć swoją nazwę domeny ze stroną internetową (katalog główny),
 > **Krok 4**
 >>
 >> Po odłączeniu nazwy domeny od strony internetowej, zapoznaj się z naszym przewodnikiem "[Instalacja kilku stron WWW na jednym hostingu](/pages/web_cloud/web_hosting/multisites_configure_multisite)".
-<!-- CP-STEPS-END:change-domain-root-folder -->
 
 Możesz również zalogować się do Twojego hostingu za pomocą protokołu [FTP](/pages/web_cloud/web_hosting/ftp_connection), a następnie usunąć zawartość folderu. Operacja ta została wykonana lokalnie lub po usunięciu pliku, poprzez przeniesienie całej jego zawartości do innego katalogu FTP.
 
@@ -263,7 +253,6 @@ Aby sprawdzić tę konfigurację, zapoznaj się z naszym przewodnikiem "[Zmień 
 
 /// details | "Wystąpił błąd podczas pobierania informacji (There is not enough space on your hosting (you need at least xxx MB)"
 
-<!-- CP-STEPS-START:check-database-credentials -->
 ![not_enough_space](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/1-click-modules/message-not-enough-ftp-space.png){.thumbnail}
 
 Ten komunikat oznacza, że [przestrzeń dyskowa FTP](/pages/web_cloud/web_hosting/ftp_connection) na Twoim hostingu zawiera zbyt dużą ilość danych. 
@@ -302,7 +291,6 @@ Kliknij poniższe zakładki, aby wyświetlić kolejne **2** kroki.
 >>
 >> ![upgrade_hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/upgrade-perso.png){.thumbnail}
 >>
-<!-- CP-STEPS-END:check-database-credentials -->
 
 Oferty [Pro](/links/web/hosting-professional-offer) i [Performance](/links/web/hosting-performance-offer) pozwalają na utworzenie do trzech dodatkowych "modułów za 1 kliknięciem" z niezależną bazą danych dla każdego z nich. Oferty **Performance** pozwolą Ci również na bezpłatną aktywację serwera [Web Cloud Databases](/links/web/databases).
 
@@ -316,7 +304,6 @@ Po uruchomieniu instalacji "modułu za pomocą 1 kliknięcia" w trybie zaawansow
 
 W związku z tym sprawdź dane dostępowe do bazy danych. Aby odnaleźć moduły, zapoznaj się z [przewodnikiem](/pages/web_cloud/web_hosting/cms_install_1_click_modules).
 
-<!-- CP-STEPS-START:diag-delete-module -->
 Usuń następnie "moduł za 1 kliknięciem". W tym celu kliknij poniższe zakładki, aby wyświetlić kolejne **2** kroki.
 
 > [!tabs]
@@ -339,7 +326,6 @@ Usuń następnie "moduł za 1 kliknięciem". W tym celu kliknij poniższe zakła
 >> > Upewnij się, że usuwasz tylko uruchomioną instalację. W tym celu sprawdź, czy jest to odpowiedni katalog w kolumnie `Path` (ścieżka).
 >> >
 >>
-<!-- CP-STEPS-END:diag-delete-module -->
 
 Następnie rozpocznij od nowa instalację "modułu za pomocą 1 kliknięcia".
 
@@ -383,7 +369,6 @@ Sprawdź również dane logowania, logując się [bezpośrednio](/pages/web_clou
 
 Rozpoczęto instalację "modułu za 1 kliknięciem" w [trybie zaawansowanym](/pages/web_cloud/web_hosting/cms_install_1_click_modules) w bazie danych znajdującej się na serwerze [Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb). Ten komunikat o błędzie został wysłany na e-mail. Oznacza to, że podana nazwa serwera baz danych jest nieprawidłowa.
 
-<!-- CP-STEPS-START:find-db-server-name -->
 Aby odnaleźć nazwę Twojego serwera baz danych, kliknij poniższe zakładki, aby wyświetlić kolejne **2** kroki.
 
 > [!tabs]
@@ -397,13 +382,11 @@ Aby odnaleźć nazwę Twojego serwera baz danych, kliknij poniższe zakładki, a
 >>
 >> Nazwa serwera, której chcesz użyć jest wyświetlana w ramce `Informacje na temat połączenia`, podsekcja `SQL`, pod słowem `Nazwa hosta`.
 >>
-<!-- CP-STEPS-END:find-db-server-name -->
 
 ///
 
 /// details | Twoja stara strona WWW nadal się wyświetla
 
-<!-- CP-STEPS-START:verify-db-connection -->
 Kliknij poniższe zakładki, aby wyświetlić kolejne **2** kroki.
 
 > [!tabs]
@@ -417,7 +400,6 @@ Kliknij poniższe zakładki, aby wyświetlić kolejne **2** kroki.
 >>
 >> W zakładce `Moduły CMS`{.action}, kliknij na link Twojej strony WWW w kolumnie `Ścieżka`. Otworzy się nowa zakładka z Twoją stroną WWW. Nazwa domeny przypisanej do Twojej instalacji wyświetla się w adresie Twojej przeglądarki internetowej. Przykładowo, jeśli Twoja domena nosi nazwę "domena.tld", może pojawić się inna domena lub standardowa strona OVHcloud.
 >>
-<!-- CP-STEPS-END:verify-db-connection -->
 
 Taka nieprawidłowość może mieć kilka przyczyn:
 

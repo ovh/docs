@@ -24,7 +24,6 @@ details[open]>summary::before {
 
 /// details | How do I configure my web hosting plan?
 
-<!-- CP-STEPS-START:configure-hosting -->
 Click on the tabs below to view each of the **2** steps.
 
 > [!tabs]
@@ -37,7 +36,6 @@ Click on the tabs below to view each of the **2** steps.
 > **Step 2**
 >>
 >> You will be able to manage your SSL certificates, the PHP version applied to your web hosting, the CDN option, your websites, databases, etc.
-<!-- CP-STEPS-END:configure-hosting -->
 
 > [!success]
 >
@@ -47,7 +45,6 @@ Click on the tabs below to view each of the **2** steps.
 
 /// details | I forgot the password for accessing the account my web hosting plan is on. What should I do?
 
-<!-- CP-STEPS-START:forgot-account-password -->
 To retrieve your OVHcloud NIC handle or the password associated with it, click on the tabs below to view each of the **3** steps.
 
 > [!tabs]
@@ -62,7 +59,6 @@ To retrieve your OVHcloud NIC handle or the password associated with it, click o
 > **Step 3**
 >>
 >> Then click the `Send`{.action} button.
-<!-- CP-STEPS-END:forgot-account-password -->
 
 The reset procedure will then be sent to your contact email address.
 
@@ -74,7 +70,6 @@ The reset procedure will then be sent to your contact email address.
 
 /// details | How do I manage the password for my web hosting plan’s FTP storage space?
 
-<!-- CP-STEPS-START:manage-ftp-password -->
 Click on the tabs below to view each of the **2** steps.
 
 > [!tabs]
@@ -87,7 +82,6 @@ Click on the tabs below to view each of the **2** steps.
 > **Step 2**
 >>
 >> On the page that appears, click on the `FTP - SSH`{.action} tab.
-<!-- CP-STEPS-END:manage-ftp-password -->
 
 Here, you can change your web hosting plan’s FTP password.
 
@@ -103,7 +97,6 @@ Here, you can change your web hosting plan’s FTP password.
 >
 > If you change the password for a database used by one of your websites, you can also update it in the configuration file for the website concerned. Without this update, your website will be disconnected from its database and will not work properly.
 
-<!-- CP-STEPS-START:change-db-password -->
 Click on the tabs below to view each of the **2** steps.
 
 > [!tabs]
@@ -116,7 +109,6 @@ Click on the tabs below to view each of the **2** steps.
 > **Step 2**
 >>
 >> On the page that appears, click on the `Databases`{.action} tab.
-<!-- CP-STEPS-END:change-db-password -->
 
 Here, you can change the passwords for your databases associated with your Web Hosting plan.
 
@@ -128,7 +120,6 @@ Here, you can change the passwords for your databases associated with your Web H
 
 /// details | How do I change the password for an email account linked to my web hosting plan?
 
-<!-- CP-STEPS-START:change-email-password -->
 Click on the tabs below to view each of the **3** steps.
 
 > [!tabs]
@@ -143,7 +134,6 @@ Click on the tabs below to view each of the **3** steps.
 > **Step 3**
 >>
 >> In the table that pops up, click the `...`{.action} button to the right of the email account concerned, then click `Change password`{.action}.
-<!-- CP-STEPS-END:change-email-password -->
 
 Here, you can change your email password (please ensure that you follow the password policy listed in the login window).
 
@@ -206,7 +196,6 @@ Here are the main steps to follow:
 
 /// details | How do I host multiple websites on a single web hosting plan?
 
-<!-- CP-STEPS-START:host-multiple-websites -->
 If your [web hosting plan is compatible](/links/web/hosting), click on the tabs below to view each of the **2** steps.
 
 > [!tabs]
@@ -219,7 +208,6 @@ If your [web hosting plan is compatible](/links/web/hosting), click on the tabs 
 > **Step 2**
 >>
 >> On the page that appears, click on the `My sites`{.action} tab.
-<!-- CP-STEPS-END:host-multiple-websites -->
 
 You will be able to manage the domain names/subdomains declared on your websites hosted on your web hosting.
 
@@ -238,7 +226,6 @@ In order for your website to be accessible with a URL in “HTTPS” (e.g.: `htt
 
 OVHcloud offers [several SSL certificates](/links/web/hosting-options) on web hosting plans.
 
-<!-- CP-STEPS-START:enable-https -->
 To activate an SSL certificate on your Web Hosting plan for your website, click on the tabs below to view each of the **4** steps.
 
 > [!tabs]
@@ -259,7 +246,6 @@ To activate an SSL certificate on your Web Hosting plan for your website, click 
 > **Step 4**
 >>
 >> Continue until you have finished installing the SSL certificate (by confirming the purchase order beforehand, if you choose one of the Sectigo SSL certificates).
-<!-- CP-STEPS-END:enable-https -->
 
 > [!success]
 >
@@ -283,7 +269,6 @@ To order the web hosting plan that best suits your needs, check out our offers o
 >
 > Depending on your current web hosting plan, some plans may not be available. Read our guide on [Upgrading a web hosting plan](/pages/web_cloud/web_hosting/how_to_upgrade_web_hosting_offer) for more information on this topic.
 
-<!-- CP-STEPS-START:change-hosting-plan -->
 Once you have made your choice, click on the tabs below to view each of the **3** steps.
 
 > [!tabs]
@@ -300,7 +285,6 @@ Once you have made your choice, click on the tabs below to view each of the **3*
 > **Step 3**
 >>
 >> Then select your new subscription and its duration. Confirm the corresponding contracts, then click `Send`{.action}.
-<!-- CP-STEPS-END:change-hosting-plan -->
 
 > [!success]
 >
@@ -312,7 +296,6 @@ Once you have made your choice, click on the tabs below to view each of the **3*
 
 When you cancel or delete your web hosting plan, the email solution attached to it is also cancelled. To keep your email addresses, you will need to detach the **email solution before** canceling the web hosting plan concerned.
 
-<!-- CP-STEPS-START:keep-email-after-cancel -->
 Click on the tabs below to view each of the **3** steps.
 
 > [!tabs]
@@ -329,7 +312,6 @@ Click on the tabs below to view each of the **3** steps.
 > **Step 3**
 >>
 >> Follow the instructions to order an independent email solution that will allow you to keep your email addresses already created.
-<!-- CP-STEPS-END:keep-email-after-cancel -->
 
 ///
 
@@ -338,7 +320,6 @@ Click on the tabs below to view each of the **3** steps.
 **Performance** web hosting plans include a Web Cloud Databases solution that can be activated for free.<br>
 When you cancel or delete your **Performance** web hosting plan, any attached Web Cloud Databases solution will also be cancelled. To keep your Web Cloud Databases solution, you will need to detach it **before** the hosting plan is cancelled.
 
-<!-- CP-STEPS-START:keep-wcdb-after-cancel -->
 Click on the tabs below to view each of the **3** steps.
 
 > [!tabs]
@@ -355,7 +336,6 @@ Click on the tabs below to view each of the **3** steps.
 > **Step 3**
 >>
 >> Follow the instructions to order an independent Web Cloud Databases solution to keep your existing Web Cloud Databases solution.
-<!-- CP-STEPS-END:keep-wcdb-after-cancel -->
 
 **This action cannot be undone, and the Web Cloud Databases solution will then be billed separately from your Performance web hosting plan.**
 
@@ -363,7 +343,6 @@ Click on the tabs below to view each of the **3** steps.
 
 /// details | How do I increase the RAM of a "Web Cloud Databases" solution linked to a "Performance" web hosting plan?
 
-<!-- CP-STEPS-START:increase-wcdb-ram -->
 Click on the tabs below to view each of the **3** steps.
 
 > [!tabs]
@@ -380,7 +359,6 @@ Click on the tabs below to view each of the **3** steps.
 > **Step 3**
 >>
 >> Follow the instructions to order the amount of RAM you want, then proceed until the order is confirmed.
-<!-- CP-STEPS-END:increase-wcdb-ram -->
 
 > [!success]
 >
@@ -399,7 +377,6 @@ Click on the tabs below to view each of the **3** steps.
 There are several reasons why your website might not work.<br>
 To identify the cause, start by ensuring that none of your subscriptions need to be **renewed**.
 
-<!-- CP-STEPS-START:website-not-working -->
 Click on the tabs below to view each of the **2** steps.
 
 > [!tabs]
@@ -410,7 +387,6 @@ Click on the tabs below to view each of the **2** steps.
 > **Step 2**
 >>
 >> Find all the details in our guide “[How to renew OVHcloud services](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal)”.
-<!-- CP-STEPS-END:website-not-working -->
 
 Then check out the [current events on our infrastructure](https://www.status-ovhcloud.com/).
 
@@ -464,7 +440,6 @@ You will then need to delete your 1-click module, then reinstall it.
 > - [Restoring your Web Hosting plan’s storage space](/pages/web_cloud/web_hosting/ftp_save_and_backup)
 > - [Retrieving the backup of a Web Hosting plan’s database](/pages/web_cloud/web_hosting/sql_database_export)
 
-<!-- CP-STEPS-START:fix-cluster-url-1 -->
 **Only** after you have carried out all the necessary backups, delete your [1-click module](/pages/web_cloud/web_hosting/cms_install_1_click_modules) by clicking on the tabs below to view each of the **3** steps.
 
 > [!tabs]
@@ -481,11 +456,9 @@ You will then need to delete your 1-click module, then reinstall it.
 > **Step 3**
 >>
 >> In the table that pops up, click the `...`{.action} button on the right-hand side of the *1-click module* concerned, then click `Delete the module`{.action}.
-<!-- CP-STEPS-END:fix-cluster-url-1 -->
 
 Deleting the *1-click module* may take **several minutes**.
 
-<!-- CP-STEPS-START:fix-cluster-url-2 -->
 Then delete the database associated with it by clicking on the tabs below to view each of the **3** steps.
 
 > [!tabs]
@@ -502,7 +475,6 @@ Then delete the database associated with it by clicking on the tabs below to vie
 > **Step 3**
 >>
 >> In the table that pops up, click the `...`{.action} button in the row of the database concerned, then `Delete a database`{.action}.
-<!-- CP-STEPS-END:fix-cluster-url-2 -->
 
 It may take **several minutes** to delete the associated database.
 
@@ -533,7 +505,6 @@ If your website appears with this URL after you have made a change, the quickest
 > - [Restoring your Web Hosting plan’s storage space](/pages/web_cloud/web_hosting/ftp_save_and_backup)
 > - [Retrieving the backup of a Web Hosting plan’s database](/pages/web_cloud/web_hosting/sql_database_export)
 
-<!-- CP-STEPS-START:fix-cluster-url-after-change-1 -->
 To restore your website’s source code, click on the tabs below to view each of the **4** steps.
 
 > [!tabs]
@@ -556,11 +527,9 @@ To restore your website’s source code, click on the tabs below to view each of
 > **Step 4**
 >>
 >> In the window that pops up, choose the date of the backup you want to restore, and then continue until the process begins.
-<!-- CP-STEPS-END:fix-cluster-url-after-change-1 -->
 
 Restoring the FTP storage space may take **several minutes**.
 
-<!-- CP-STEPS-START:fix-cluster-url-after-change-2 -->
 To restore a backup of your database, click on the tabs below to view each of the **5** steps.
 
 > [!tabs]
@@ -585,7 +554,6 @@ To restore a backup of your database, click on the tabs below to view each of th
 > **Step 5**
 >>
 >> Once you have chosen the backup, click the `...`{.action} button to the right of the backup you want to restore, then `Restore the backup`{.action}.
-<!-- CP-STEPS-END:fix-cluster-url-after-change-2 -->
 
 Restoring a database backup may take **several minutes**.
 
@@ -606,7 +574,6 @@ This situation indicates an incorrect configuration in the [DNS servers](/pages/
 
 The most common case is that you have ordered your domain name and web hosting plan separately, so they are not automatically linked to each other via your domain name’s DNS zone.
 
-<!-- CP-STEPS-START:fix-webmail-redirect-1 -->
 To correct this, click on the tabs below to view each of the **4** steps.
 
 > [!tabs]
@@ -627,9 +594,7 @@ To correct this, click on the tabs below to view each of the **4** steps.
 > **Step 4**
 >>
 >> In the table (representing the DNS zone of the domain name) that appears, compare the `Targets` of the `NS` type entries present in the DNS zone with the names of the DNS servers retrieved earlier.
-<!-- CP-STEPS-END:fix-webmail-redirect-1 -->
 
-<!-- CP-STEPS-START:fix-webmail-redirect-2 -->
 There are three possible scenarios. Click on the tabs below to view the solution to each case.
 
 > [!tabs]
@@ -687,7 +652,6 @@ There are three possible scenarios. Click on the tabs below to view the solution
 >> The `Targets` (DNS servers) of the entries of type `NS` declared in the DNS zone of the domain name **are not identical** to those retrieved in the `DNS servers`{.action} tab. In addition, the names of the DNS servers retrieved in the `DNS servers`{.action} tab do not have any of the forms described in the **Case 2**, with the exception of the following forms: `sdnsX.ovh.net`, `sdnsX.ovh.ca`, `vpsXXXXXX.ovh.net` or `vpsXXXXXX.ovh.ca` (where each `X` designates a number between **0** and **9**).
 >>
 >> In this case, the active DNS zone applied to your domain name is not managed directly by OVHcloud. Contact your Webmaster, domain name provider, DNS provider or one of our [partners](/links/partner).
-<!-- CP-STEPS-END:fix-webmail-redirect-2 -->
 
 ///
 
@@ -708,7 +672,6 @@ In this case, the quickest solution will be to restore it to a previous state wh
 > - [Restoring your Web Hosting plan’s storage space](/pages/web_cloud/web_hosting/ftp_save_and_backup)
 > - [Retrieving the backup of a Web Hosting plan’s database](/pages/web_cloud/web_hosting/sql_database_export)
 
-<!-- CP-STEPS-START:fix-redirect-error-1 -->
 To restore your website’s source code, click on the tabs below to view each of the **4** steps.
 
 > [!tabs]
@@ -731,11 +694,9 @@ To restore your website’s source code, click on the tabs below to view each of
 > **Step 4**
 >>
 >> In the window that pops up, choose the date of the backup you want to restore, and then continue until the process begins.
-<!-- CP-STEPS-END:fix-redirect-error-1 -->
 
 Restoring the FTP storage space may take **several minutes**.
 
-<!-- CP-STEPS-START:fix-redirect-error-2 -->
 To restore a backup of your database, click on the tabs below to view each of the **5** steps.
 
 > [!tabs]
@@ -760,7 +721,6 @@ To restore a backup of your database, click on the tabs below to view each of th
 > **Step 5**
 >>
 >> Once you have chosen the backup, click the `...`{.action} button to the right of the backup you want to restore, then `Restore the backup`{.action}.
-<!-- CP-STEPS-END:fix-redirect-error-2 -->
 
 Restoring a database backup may take **several minutes**.
 

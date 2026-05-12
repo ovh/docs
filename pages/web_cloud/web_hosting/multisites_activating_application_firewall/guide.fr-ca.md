@@ -59,7 +59,6 @@ L'ensemble préconfiguré de règles de base, le « Core Rule Set » (CRS), de n
 
 /// details | Activer le pare-feu applicatif sur l'ensemble de votre hébergement web dans la configuration PHP
 
-<!-- CP-STEPS-START:enable-firewall -->
 Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3** étapes.
 
 > [!tabs]
@@ -84,13 +83,11 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3*
 >> ![managephpconfig](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/application-firewall-step-2.png){.thumbnail}
 >>
 >> Dans la nouvelle fenêtre, assurez-vous que l'option **Pare-feu applicatif** est définie sur `Activé`{.action}. Cliquez ensuite sur le bouton `Valider`{.action}.
-<!-- CP-STEPS-END:enable-firewall -->
 
 ///
 
 /// details | Activer le pare-feu applicatif uniquement sur un nom de domaine ou un sous-domaine spécifique
 
-<!-- CP-STEPS-START:disable-firewall -->
 Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4** étapes.
 
 > [!tabs]
@@ -127,7 +124,6 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4*
 >> Une fois le pare-feu activé pour votre nom de domaine ou sous-domaine, la mention **Activé** apparaît dans la colonne **Firewall**.
 >>
 >> Si la mention **Activé** n'apparaît pas au bout de quelques minutes sur la ligne correspondante au nom de domaine ou sous-domaine concerné, rechargez la page.
-<!-- CP-STEPS-END:disable-firewall -->
 
 ///
 

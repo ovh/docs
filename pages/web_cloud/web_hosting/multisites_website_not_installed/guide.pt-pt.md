@@ -45,7 +45,6 @@ Os passos seguintes irão permitir-lhe corrigir o erro `Site não instalado` nes
 
 ### 1 - Verificar a declaração do seu nome de domínio ou subdomínio no seu site web presente no seu alojamento web <a name="check-my-websites"></a>
 
-<!-- CP-STEPS-START:check-my-websites -->
 Clique nos separadores abaixo para visualizar cada uma das **3** etapas.
 
 > [!tabs]
@@ -72,7 +71,6 @@ Clique nos separadores abaixo para visualizar cada uma das **3** etapas.
 >> |O nome de domínio ou subdomínio associado ao seu site web **aparece** na tabela.|Se acabou de adicionar o seu nome de domínio ou subdomínio ao seu site web no seu alojamento web, aguarde cerca de **vinte minutos** e, em seguida, atualize o cache do seu navegador Internet. Se a mensagem "Site não instalado" continuar a aparecer, passe para a [parte 2](#check-dns-domain).|
 >> |O nome de domínio ou subdomínio associado ao seu site web **não aparece** na tabela.|Adicione o seu nome de domínio ou subdomínio seguindo o nosso guia "[Como associar um nome de domínio a um site web existente?](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website)".|
 >> |O nome de domínio ou subdomínio **foi removido** da tabela sem qualquer ação por sua parte.|O seu nome de domínio ou a sua zona DNS podem estar a ser geridos a partir de outra conta. Adicione o seu nome de domínio ou subdomínio seguindo o nosso guia "[Como associar um nome de domínio a um site web existente? - Adicionar um nome de domínio externo](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website)".|
-<!-- CP-STEPS-END:check-my-websites -->
 
 ### 2 - Verifique o apontamento de IP na zona DNS ativa do seu domínio <a name="check-dns-domain"></a>
 
@@ -88,7 +86,6 @@ Este passo consiste em verificar se o seu domínio ou subdomínio aponta correta
 
 #### 2\.1 Identificar o endereço IP do seu alojamento web da OVHcloud
 
-<!-- CP-STEPS-START:check-dns-ip -->
 Clique nos separadores abaixo para visualizar cada uma das **2** etapas.
 
 > [!tabs]
@@ -105,7 +102,6 @@ Clique nos separadores abaixo para visualizar cada uma das **2** etapas.
 >> ![find-ipv4-and-ipv6](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-ipv4-and-ipv6.png){.thumbnail}
 >>
 >> Copie o endereço IPv4 e continue a ler o guia.
-<!-- CP-STEPS-END:check-dns-ip -->
 
 Pode também consultar o endereço IP associado ao seu alojamento web no nosso guia "[Alojamento web - Lista dos endereços IP por cluster](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP)".
 
@@ -119,7 +115,6 @@ A seguir, deve verificar se o endereço IP do alojamento web está indicado na z
 >
 > Se modificar diretamente os **servidores DNS** associados ao seu domínio, este prazo pode ir até **48 horas**, no máximo.
 
-<!-- CP-STEPS-START:check-multisite-root-folder -->
 Para isso, clique nos separadores abaixo para visualizar cada uma das **3** etapas.
 
 > [!tabs]
@@ -151,7 +146,6 @@ Para isso, clique nos separadores abaixo para visualizar cada uma das **3** etap
 >> |A zona DNS ativa não contém registos do tipo A ou AAAA que liguem o seu domínio ou subdomínio ao endereço IP do seu alojamento web.|Adicione o novo registo DNS do tipo A ou AAAA ou corrija o registo existente seguindo [este manual](/pages/web_cloud/domains/dns_zone_edit).|
 >> |O registo DNS de tipo A ou AAAA existente na zona DNS para o seu domínio ou subdomínio aponta para um endereço IP diferente do do seu alojamento web.|Adicione o novo registo DNS de tipo A ou AAAA ou corrija o registo existente seguindo [este manual](/pages/web_cloud/domains/dns_zone_edit).|
 >> |Este aviso aparece no separador `Zona DNS`{.action}:<br><br>![message-other-ovh-dns-servers](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/message-other-ovh-dns-servers.png){.thumbnail}|Modifique os servidores DNS do seu domínio de acordo com o nosso guia "[Alterar os servidores DNS de um nome de domínio OVHcloud](/pages/web_cloud/domains/dns_server_edit)"|.
-<!-- CP-STEPS-END:check-multisite-root-folder -->
 
 ## Quer saber mais? <a name="go-further"></a>
 

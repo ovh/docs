@@ -40,7 +40,6 @@ Per accedere allo spazio di storage sono necessari:
 
 Questi dati sono indicati nell’email di conferma dell’installazione del tuo hosting ma.
 
-<!-- CP-STEPS-START:export-retrieve-ftp-credentials -->
 Se non ne hai ancora uno, clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **3** passi.
 
 > [!tabs]
@@ -65,7 +64,6 @@ Se non ne hai ancora uno, clicca sulle schede qui sotto per visualizzare in sequ
 >> In caso di necessità, consulta la guida [Accedere allo spazio di storage di un hosting Web](/pages/web_cloud/web_hosting/ftp_connection).
 >>
 >> Se hai smarrito la password, segui la procedura descritta nella guida [Modificare la password di un utente FTP](/pages/web_cloud/web_hosting/ftp_change_password).
-<!-- CP-STEPS-END:export-retrieve-ftp-credentials -->
 
 Una volta recuperati tutti gli elementi, il recupero dei tuoi file sullo spazio di storage può essere effettuato in due modi diversi:
 
@@ -77,7 +75,6 @@ Una volta recuperati tutti gli elementi, il recupero dei tuoi file sullo spazio 
 
 Una volta connesso al tuo spazio di archiviazione e in base ai siti web ospitati su di esso, potranno apparire diverse cartelle.
 
-<!-- CP-STEPS-START:find-root-folder -->
 Se necessario, individua in precedenza nel tuo hosting web il nome della cartella radice in cui è conservato il tuo sito web. A tale scopo, clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **3** passi.
 
 > [!tabs]
@@ -98,7 +95,6 @@ Se necessario, individua in precedenza nel tuo hosting web il nome della cartell
 >> Nella tabella che appare, per il sito web desiderato, osserva il `Cartella di root`{.action} che viene visualizzato.
 >>
 >> ![export-website](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/root-folders.png){.thumbnail}
-<!-- CP-STEPS-END:find-root-folder -->
 
 Ancora connesso al tuo spazio di archiviazione, ti rimane solo da scaricare i file del tuo sito web accedendo alla cartella radice precedentemente identificata.
 

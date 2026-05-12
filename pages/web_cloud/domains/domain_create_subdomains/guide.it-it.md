@@ -82,7 +82,6 @@ Un **nome di dominio** è composto da diversi livelli. Questi livelli sono gener
 
 ///
 
-
 /// details | Cos'è un sottodominio?
 
 Un [nome di dominio](/links/web/domains) può essere associato a diversi tipi di servizi (email, sito Web, ecc...).
@@ -183,11 +182,9 @@ Per i servizi non menzionati, consulta la documentazione relativa al servizio in
 
 #### Caso 1: visualizza un sito Web presente sul tuo hosting Web OVHcloud con un sottodominio <a name="link-subdomain-case-1"></a>
 
-<!-- CP-STEPS-START:link-subdomain-hosting -->
 Proprio come per un nome di dominio, per autorizzare un sottodominio a visualizzare il contenuto di una directory "target" dichiarata per un sito web presente su un hosting web, accedi all'[Spazio Cliente OVHcloud](/links/manager) e seleziona `Web Cloud`{.action}. Clicca su `Hosting`{.action} nella colonna di sinistra, seleziona l'hosting interessato dove si trova il tuo sito web, quindi scegli la scheda `I miei siti`{.action}.
 
 Da qui potrai autorizzare l'accesso del tuo sottodominio al tuo sito web presente sul tuo hosting web.
-<!-- CP-STEPS-END:link-subdomain-hosting -->
 
 Per maggiori dettagli sulla configurazione di un dominio o di un sottodominio su un hosting web, consulta la nostra guida "[Come associare un nome a dominio a un sito web esistente ?](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website)". Che si tratti di un nome a dominio o di un sottodominio, la procedura è la stessa.
 
@@ -198,7 +195,6 @@ Per maggiori dettagli sulla configurazione di un dominio o di un sottodominio su
 
 #### Caso 2 - Crea indirizzi email Exchange con un sottodominio <a name="link-subdomain-case-2"></a>
 
-<!-- CP-STEPS-START:link-subdomain-exchange -->
 Per sbloccare la creazione di indirizzi email Exchange personalizzati con un sottodominio, accedi al tuo [Spazio Cliente OVHcloud](/links/manager) e seleziona `Web Cloud`{.action}. Clicca su `Microsoft`{.action} nella colonna di sinistra e poi su `Exchange`{.action}. Seleziona la piattaforma Exchange da utilizzare con il sottodominio. Accedi alla scheda `Domini associati`{.action} e clicca sul pulsante `Aggiungi un dominio`{.action} a destra.
 
 In questo modo è possibile dichiarare il sottodominio sulla piattaforma Exchange.
@@ -208,11 +204,9 @@ Per maggiori informazioni sulla configurazione di una piattaforma Exchange, cons
 - [Iniziare a utilizzare Hosted Exchange](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_starting_hosted)
 - [Aggiungere un nome di dominio su una piattaforma e-mail](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_adding_domain)
 - [Aggiungere un record CNAME per convalidare il nome di dominio sul servizio di posta](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_dns_cname)
-<!-- CP-STEPS-END:link-subdomain-exchange -->
 
 #### Caso 3 - Crea indirizzi Email Pro con un sottodominio <a name="link-subdomain-case-3"></a>
 
-<!-- CP-STEPS-START:link-subdomain-emailpro -->
 Per sbloccare la creazione di indirizzi Email Pro personalizzati con un sottodominio, accedi allo [Spazio Cliente OVHcloud](/links/manager) e seleziona `Web Cloud`{.action}. Clicca su `Email Pro`{.action} e seleziona la piattaforma Email Pro da utilizzare con il sottodominio. Accedi alla scheda `Domini associati`{.action} e clicca sul pulsante `Aggiungi un dominio`{.action} a destra.
 
 In questo modo è possibile dichiarare il sottodominio sulla piattaforma Email Pro.
@@ -246,4 +240,3 @@ Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [p
 Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](/links/support).
 
 Contatta la nostra [Community di utenti](/links/community).
-<!-- CP-STEPS-END:link-subdomain-emailpro -->

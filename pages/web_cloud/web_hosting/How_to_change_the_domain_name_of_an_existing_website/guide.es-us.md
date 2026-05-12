@@ -50,7 +50,6 @@ Declare su nuevo nombre de dominio siguiendo nuestro tutorial « [Cómo asociar 
 Para que el paso 1 se cumpla correctamente, deberá cumplir varias condiciones:
 
 - El nuevo dominio debe apuntar hacia la misma "carpeta raíz" que el dominio utilizado actualmente para acceder a su sitio web.
-<!-- CP-STEPS-START:retrieve-hosting-ip -->
 - Compruebe que su nuevo dominio apunta correctamente a la dirección IP correcta de su alojamiento compartido. Para obtener la dirección IP, haga clic en las pestañas siguientes para ver sucesivamente los **3** pasos.
 
 > [!tabs]
@@ -67,7 +66,6 @@ Para que el paso 1 se cumpla correctamente, deberá cumplir varias condiciones:
 > **Etapa 3**
 >>
 >> Recupere la **IPv4** que aparece.
-<!-- CP-STEPS-END:retrieve-hosting-ip -->
 
 > [!warning]
 >
@@ -82,11 +80,9 @@ Para que el paso 1 se cumpla correctamente, deberá cumplir varias condiciones:
 > - [Gestionar un certificado SSL en un alojamiento web](/pages/web_cloud/web_hosting/ssl_on_webhosting)
 > - [Habilitar HTTPS en un sitio web con certificado SSL](/pages/web_cloud/web_hosting/ssl-activate-https-website)
 
-<!-- CP-STEPS-START:verify-multisite-config -->
 Si todas las acciones se han realizado correctamente, las declaraciones de sus nombres de dominio deben ser estrictamente idénticas **a menos que esté utilizando un certificado SSL de pago de tipo *Sectigo DV*, *Sectigo EV* o *custom***.
 
 ![My websites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/all-domain-same-config-enable.png){.thumbnail}
-<!-- CP-STEPS-END:verify-multisite-config -->
 
 > [!primary]
 >

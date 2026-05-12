@@ -49,7 +49,6 @@ Registrieren Sie Ihren neuen Domainnamen unter Verwendung unserer Dokumentation 
 Für Schritt 1 sind mehrere Bedingungen zu erfüllen:
 
 - Ihre neue Domain muss auf dasselbe Wurzelverzeichnis verweisen wie die Domain, die derzeit für den Zugang zu Ihrer Website verwendet wird.
-<!-- CP-STEPS-START:retrieve-hosting-ip -->
 - Überprüfen Sie, ob Ihre neue Domain korrekt auf die IP-Adresse Ihres Webhostings verweist. Um die IP-Adresse abzurufen, klicken Sie auf die Tabs, um die **3** Schritte anzuzeigen.
 
 > [!tabs]
@@ -66,7 +65,6 @@ Für Schritt 1 sind mehrere Bedingungen zu erfüllen:
 > **Schritt 3**
 >>
 >> Rufen Sie die angezeigte **IPv4** ab.
-<!-- CP-STEPS-END:retrieve-hosting-ip -->
 
 > [!warning]
 >
@@ -81,11 +79,9 @@ Für Schritt 1 sind mehrere Bedingungen zu erfüllen:
 > - [SSL-Zertifikat auf einem Webhosting verwalten](/pages/web_cloud/web_hosting/ssl_on_webhosting)
 > - [Website auf HTTPS umstellen](/pages/web_cloud/web_hosting/ssl-activate-https-website)
 
-<!-- CP-STEPS-START:verify-multisite-config -->
 Wenn alle Aktionen ordnungsgemäß durchgeführt wurden, sollten die Angaben zu Ihren Domainnamen exakt identisch sein **außer, Sie verwenden ein kostenpflichtiges SSL-Zertifikat des Typs *Sectigo DV*, *Sectigo EV* oder *Custom***.
 
 ![My websites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/all-domain-same-config-enable.png){.thumbnail}
-<!-- CP-STEPS-END:verify-multisite-config -->
 
 > [!primary]
 >

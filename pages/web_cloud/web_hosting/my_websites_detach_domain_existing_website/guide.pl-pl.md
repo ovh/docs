@@ -36,7 +36,6 @@ Chcesz przypisać swoją nazwę domeny lub poddomenę do innej strony internetow
 >
 > Odłączenie nazwy domeny lub poddomeny od strony internetowej na Twoim hostingu to czynność wrażliwa. W rzeczywistości po tej operacji Twoja strona internetowa nie będzie już dostępna w Internecie za pomocą swojej nazwy domeny i/lub poddomeny.
 
-<!-- CP-STEPS-START:detach-domain -->
 Kliknij poniższe zakładki, aby wyświetlić kolejne **4** kroki.
 
 > [!tabs]
@@ -79,7 +78,6 @@ Kliknij poniższe zakładki, aby wyświetlić kolejne **4** kroki.
 >> > ![My websites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/detach-alone-domain.png){.thumbnail}
 >> >
 >> > Jak wskazuje wiadomość, musisz najpierw [usunąć swoje przypisanie Git](/pages/web_cloud/web_hosting/git_integration_webhosting), **przed** odłączeniem swojej nazwy domeny.
-<!-- CP-STEPS-END:detach-domain -->
 
 ### Przypadek specjalny: Odłączenie nazwy domeny lub poddomeny, aby użyć jej z inną stroną internetową
 

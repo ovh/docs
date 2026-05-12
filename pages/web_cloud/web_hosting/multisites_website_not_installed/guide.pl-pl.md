@@ -45,7 +45,6 @@ Poniższe kroki pozwolą Ci naprawić błąd `Strona nie została zainstalowana`
 
 ### 1 - Sprawdź deklarację swojej domeny lub subdomeny na swojej stronie internetowej znajdującej się na Twoim hostingu <a name="check-my-websites"></a>
 
-<!-- CP-STEPS-START:check-my-websites -->
 Kliknij poniższe zakładki, aby wyświetlić kolejne **3** kroki.
 
 > [!tabs]
@@ -72,7 +71,6 @@ Kliknij poniższe zakładki, aby wyświetlić kolejne **3** kroki.
 >> |Nazwa domeny lub subdomeny powiązanej z Twoją stroną internetową **pojawi się** w tabeli.|Jeśli właśnie dodałeś swoją domenę lub subdomenę do strony internetowej znajdującej się na Twoim hostingu, poczekaj około **dwadzieścia minut**, a następnie odśwież pamięć podręczną przeglądarki internetowej. Jeśli nadal pojawia się komunikat "Strona nie jest zainstalowana", przejdź do [części 2](#check-dns-domain).|
 >> |Nazwa domeny lub subdomeny powiązanej z Twoją strony internetowej **nie występuje** w tabeli.|Dodaj swoją domenę lub subdomenę, korzystając z naszego poradnika "[Jak przypisać domenę do istniejącej strony internetowej?](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website)".|
 >> |Nazwa domeny lub subdomeny **została usunięta** z tabeli bez Twojej interwencji.|Twoja domena lub strefa DNS może być zarządzana z innego konta. Dodaj swoją domenę lub subdomenę, korzystając z naszego poradnika "[Jak przypisać domenę do istniejącej strony internetowej? - Dodanie zewnętrznej domeny](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website)".|
-<!-- CP-STEPS-END:check-my-websites -->
 
 ### 2 - Sprawdź wskazanie adresu IP w aktywnej strefie DNS Twojej domeny <a name="check-dns-domain"></a>
 
@@ -88,7 +86,6 @@ Etap ten polega na upewnieniu się, że Twoja domena lub subdomena wskazuje z ak
 
 #### 2\.1 Identyfikacja adresu IP hostingu OVHcloud
 
-<!-- CP-STEPS-START:check-dns-ip -->
 Kliknij poniższe zakładki, aby wyświetlić kolejne **2** kroki.
 
 > [!tabs]
@@ -105,7 +102,6 @@ Kliknij poniższe zakładki, aby wyświetlić kolejne **2** kroki.
 >>![find-ipv4-and-ipv6](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-ipv4-and-ipv6.png){.thumbnail}
 >>
 >> Skopiuj adres IPv4 i kontynuuj lekturę przewodnika.
-<!-- CP-STEPS-END:check-dns-ip -->
 
 Adres IP powiązany z Twoim hostingiem znajdziesz również w naszym przewodniku "[Hosting WWW - Lista adresów IP według klastra](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP)".
 
@@ -119,7 +115,6 @@ Sprawdź, czy adres IP Twojego hostingu wyświetla się w aktywnej strefie DNS T
 >
 > Jeśli zmodyfikujesz bezpośrednio **serwery DNS** powiązane z Twoją domeną, może to potrwać do **48 godzin** maksymalnie.
 
-<!-- CP-STEPS-START:check-multisite-root-folder -->
 W tym celu kliknij poniższe zakładki, aby wyświetlić kolejne **3** kroki.
 
 > [!tabs]
@@ -151,7 +146,6 @@ W tym celu kliknij poniższe zakładki, aby wyświetlić kolejne **3** kroki.
 >> |Bieżąca strefa DNS nie zawiera rekordów typu A lub AAAA łączących domenę lub subdomenę z adresem IP hostingu.|Dodaj nowy rekord DNS typu A lub AAAA lub popraw istniejący rekord, postępując zgodnie z [tym przewodnikiem](/pages/web_cloud/domains/dns_zone_edit).|
 >> |Istniejący rekord DNS typu A lub AAAA w strefie DNS dla Twojej domeny lub subdomeny wskazuje na inny adres IP niż adres IP Twojego hostingu.|Dodaj nowy rekord DNS typu A lub AAAA lub popraw istniejący rekord, postępując zgodnie z [tym przewodnikiem](/pages/web_cloud/domains/dns_zone_edit).|
 >> |To ostrzeżenie pojawia się w zakładce `Strefa DNS`{.action} :<br><br>![message-other-ovh-dns-servers](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/message-other-ovh-dns-servers.png){.thumbnail}|Zmień odpowiednio serwery DNS Twojej domeny zgodnie z naszym przewodnikiem "[Zmiana serwerów DNS domeny OVHcloud](/pages/web_cloud/domains/dns_server_edit)".|
-<!-- CP-STEPS-END:check-multisite-root-folder -->
 
 ## Sprawdź również <a name="go-further"></a>
 

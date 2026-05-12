@@ -56,7 +56,6 @@ Sie können mehrere Websites auf einem Webhosting-Plan hosten, selbst wenn die D
 
 Dieser Abschnitt gilt nur, wenn Ihr Domainname und/oder seine aktive DNS-Zone **in Ihrem OVHcloud Kundencenter** verwaltet wird.
 
-<!-- CP-STEPS-START:add-domain-ovhcloud -->
 Klicken Sie auf die Tabs, um die **6** Schritte anzuzeigen.
 
 > [!tabs]
@@ -139,7 +138,6 @@ Klicken Sie auf die Tabs, um die **6** Schritte anzuzeigen.
 >> Nachdem Sie Ihre Auswahl getroffen haben, klicken Sie auf den Button `Weiter`{.action}, um die Verknüpfung Ihres Domainnamens oder Ihrer Unterdomain mit Ihrer Website abzuschließen. Dieser Vorgang kann bis zu eine Stunde dauern.
 >>
 >> Allerdings benötigt die Änderung der DNS-Konfiguration Ihres Domainnamens eine Ausbreitungszeit, die bis zu 24 Stunden dauern kann, bis sie vollständig wirksam ist.
-<!-- CP-STEPS-END:add-domain-ovhcloud -->
 
 ///
 
@@ -147,7 +145,6 @@ Klicken Sie auf die Tabs, um die **6** Schritte anzuzeigen.
 
 Dieser Abschnitt gilt nur, wenn Ihr Domainname nicht in Ihrem OVHcloud-Konto vorhanden ist.
 
-<!-- CP-STEPS-START:add-domain-external -->
 Klicken Sie auf die Tabs, um die **6** Schritte anzuzeigen.
 
 > [!tabs]
@@ -210,7 +207,6 @@ Klicken Sie auf die Tabs, um die **6** Schritte anzuzeigen.
 >> > Beachten Sie, dass wenn Sie `sub.domain.tld` hinzufügen möchten, Sie den TXT-Eintrag `ovhcontrol.domain.tld` erstellen müssen und nicht den Eintrag `ovhcontrol.sub.domain.tld`.
 >> >
 >> > Um die aktive DNS-Zone Ihres Domainnamens zu finden, konsultieren Sie die [DNS-Server](/pages/web_cloud/domains/dns_server_edit), an die dieser Domainname angeschlossen ist. Sie müssen nur den Domainnamen mit dem Feld **TXT** validieren, nicht alle seine Unterdomänen.|
-<!-- CP-STEPS-END:add-domain-external -->
 
 ///
 
@@ -218,7 +214,6 @@ Klicken Sie auf die Tabs, um die **6** Schritte anzuzeigen.
 
 Dieser Abschnitt gilt nur, wenn Ihr Domainname noch nicht registriert wurde, weder bei OVHcloud noch bei einem anderen Registrierungsamt. Mit anderen Worten, er betrifft Domainnamen, die noch nicht abgeschlossen wurden.
 
-<!-- CP-STEPS-START:add-domain-new -->
 Klicken Sie auf die Tabs, um die **5** Schritte anzuzeigen.
 
 > [!tabs]
@@ -255,7 +250,6 @@ Klicken Sie auf die Tabs, um die **5** Schritte anzuzeigen.
 >> > [!primary]
 >> >
 >> > Falls Ihr neuer Domainname nach einigen Stunden nicht korrekt mit Ihrer Website verknüpft ist, folgen Sie dem Abschnitt „[Einen Domainnamen hinzufügen, der über Ihr OVHcloud Kundencenter verwaltet wird](#add-domain-ovhcloud)“ dieses Leitfadens.
-<!-- CP-STEPS-END:add-domain-new -->
 
 ///
 

@@ -53,7 +53,6 @@ Pretende criar um site para a sua empresa ou um blogue pessoal? Precisa de uma l
 >
 > Se subscreveu o seu nome de domínio e o seu alojamento web na mesma encomenda, estes dois serviços já estão associados. Passe diretamente para [Parte 2](#part-2) deste manual.
 
-<!-- CP-STEPS-START:link-domain-website -->
 Clique nos separadores abaixo para visualizar cada uma das **4** etapas.
 
 > [!tabs]
@@ -74,7 +73,6 @@ Clique nos separadores abaixo para visualizar cada uma das **4** etapas.
 > **Etapa 4**
 >>
 >> Na nova página que se abre, selecione e preencha os elementos solicitados até à sua validação.
-<!-- CP-STEPS-END:link-domain-website -->
 
 /// details | Clique aqui para mais informações.
 
@@ -90,7 +88,6 @@ Consulte os nossos guias detalhados:
 
 Nos seus alojamentos web, a OVHcloud propõe instalar gratuitamente os CMS WordPress, Joomla!, PrestaShop e Drupal graças à opção "módulo 1 clique".
 
-<!-- CP-STEPS-START:install-1click-module -->
 Clique nos separadores abaixo para visualizar cada uma das **4** etapas.
 
 > [!tabs]
@@ -111,7 +108,6 @@ Clique nos separadores abaixo para visualizar cada uma das **4** etapas.
 > **Etapa 4**
 >>
 >> Na nova janela, selecione o CMS que deseja instalar. De seguida, escolha o domínio no qual deseja instalar o módulo, selecionando o nome de domínio desejado **sem os "www"** à frente (por exemplo: `domain.tld` e não `www.domain.tld`), e clique diretamente em `Instalar`{.action}.
-<!-- CP-STEPS-END:install-1click-module -->
 
 /// details | Clique aqui para mais informações.
 
@@ -128,7 +124,6 @@ Consulte os nossos guias detalhados:
 >
 > Se subscreveu o seu domínio e o seu alojamento web numa única encomenda, os endereços de e-mail incluídos com o alojamento web já estão associados ao seu domínio. Passe diretamente para [Secção 4](#part-4) deste manual.
 
-<!-- CP-STEPS-START:enable-email-solution -->
 Clique nos separadores abaixo para visualizar cada uma das **3** etapas.
 
 > [!tabs]
@@ -145,7 +140,6 @@ Clique nos separadores abaixo para visualizar cada uma das **3** etapas.
 > **Etapa 3**
 >>
 >> Na nova página que surgir, selecione o domínio em causa na secção `(1)` e, em seguida, prossiga até à ativação dos endereços de e-mail.
-<!-- CP-STEPS-END:enable-email-solution -->
 
 /// details | Clique aqui para mais informações.
 
@@ -155,7 +149,6 @@ Consulte o nosso guia detalhado "[Alojamento web - Ativar os endereços de e-mai
 
 ### 4 - Criar um endereço de e-mail personalizado com o seu nome de domínio <a name="part-4"></a>
 
-<!-- CP-STEPS-START:create-email-address -->
 Clique nos separadores abaixo para visualizar cada uma das **4** etapas.
 
 > [!tabs]
@@ -174,7 +167,6 @@ Clique nos separadores abaixo para visualizar cada uma das **4** etapas.
 > **Etapa 4**
 >>
 >> Na nova janela, preencha os elementos solicitados até à sua validação.
-<!-- CP-STEPS-END:create-email-address -->
 
 Repita esta operação para cada endereço de e-mail que deseja criar (no limite da sua oferta de alojamento web).
 

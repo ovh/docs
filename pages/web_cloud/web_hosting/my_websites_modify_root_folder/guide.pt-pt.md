@@ -55,7 +55,6 @@ Ao utilizar os seus serviços, poderá necessitar de:
 >
 > Este guia descreve unicamente o procedimento para modificar, a partir da sua Área de Cliente OVHcloud, a pasta raiz inicialmente definida para o seu website. Esta ação é necessária para que o website apresente o conteúdo da nova pasta, em substituição da anterior.
 
-<!-- CP-STEPS-START:modify-root-folder -->
 Clique nos separadores abaixo para visualizar cada uma das **4** etapas.
 
 > [!tabs]
@@ -85,7 +84,6 @@ Clique nos separadores abaixo para visualizar cada uma das **4** etapas.
 >>
 >> De seguida, clique em `Confirmar`{.action}.
 >>
-<!-- CP-STEPS-END:modify-root-folder -->
 
 ## Quer saber mais?
 

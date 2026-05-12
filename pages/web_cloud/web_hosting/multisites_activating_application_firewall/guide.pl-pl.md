@@ -57,7 +57,6 @@ Wstępnie skonfigurowany zbiór podstawowych zasad, takich jak "Core Rule Set" (
 
 /// details | Włączanie zapory aplikacji na całym obszarze hostingu sieciowego w konfiguracji PHP
 
-<!-- CP-STEPS-START:enable-firewall -->
 Kliknij poniższe zakładki, aby wyświetlić kolejne **3** kroki.
 
 > [!tabs]
@@ -82,13 +81,11 @@ Kliknij poniższe zakładki, aby wyświetlić kolejne **3** kroki.
 >> ![managephpconfig](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/application-firewall-step-2.png){.thumbnail}
 >>
 >> W nowym oknie upewnij się, że opcja **Firewall aplikacyjny** jest ustawiona na `Włączony`{.action}. Następnie kliknij przycisk `Zatwierdź`{.action}.
-<!-- CP-STEPS-END:enable-firewall -->
 
 ///
 
 /// details | Włączanie zapory aplikacji tylko na konkretnej domenie lub poddomenie
 
-<!-- CP-STEPS-START:disable-firewall -->
 Kliknij poniższe zakładki, aby wyświetlić kolejne **4** kroki.
 
 > [!tabs]
@@ -125,7 +122,6 @@ Kliknij poniższe zakładki, aby wyświetlić kolejne **4** kroki.
 >> Po włączeniu zapory na Twojej domenie lub poddomenie, słowo **Włączona** pojawi się w kolumnie **Firewall**.
 >>
 >> Jeśli słowo **Włączona** nie pojawi się po kilku minutach w wierszu odpowiadającym danej domenie lub poddomenie, przeładuj stronę.
-<!-- CP-STEPS-END:disable-firewall -->
 
 ///
 

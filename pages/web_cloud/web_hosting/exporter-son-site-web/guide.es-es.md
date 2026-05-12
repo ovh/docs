@@ -40,7 +40,6 @@ Para conectarse a su espacio de almacenamiento necesitará lo siguiente:
 
 Habrá recibido esta información por correo electrónico tras la instalación de su alojamiento.
 
-<!-- CP-STEPS-START:export-retrieve-ftp-credentials -->
 Si no dispone de ellos, haga clic en las fichas siguientes para ver cada una de las **3** etapas.
 
 > [!tabs]
@@ -65,7 +64,6 @@ Si no dispone de ellos, haga clic en las fichas siguientes para ver cada una de 
 >> Para más información, consulte nuestra guía [Conectarse al espacio de almacenamiento de un alojamiento web"](/pages/web_cloud/web_hosting/ftp_connection).
 >>
 >> Si no tiene la contraseña, consulte la guía [Cambiar la contraseña de un usuario FTP](/pages/web_cloud/web_hosting/ftp_change_password).
-<!-- CP-STEPS-END:export-retrieve-ftp-credentials -->
 
 Una vez que disponga de todos los elementos necesarios, la recuperación de los archivos en el espacio de almacenamiento puede realizarse de dos formas diferentes:
 
@@ -77,7 +75,6 @@ Una vez que disponga de todos los elementos necesarios, la recuperación de los 
 
 Una vez conectado a su espacio de almacenamiento y según los sitios web alojados en él, pueden aparecer varios directorios.
 
-<!-- CP-STEPS-START:find-root-folder -->
 Si es necesario, identifique previamente en su alojamiento web el nombre del directorio raíz en el que se almacena su sitio web. Para ello, haga clic en las fichas siguientes para ver cada una de las **3** etapas.
 
 > [!tabs]
@@ -98,7 +95,6 @@ Si es necesario, identifique previamente en su alojamiento web el nombre del dir
 >> En la tabla que aparece, para el sitio web deseado, mire el `Carpeta raíz`{.action} que se muestra.
 >>
 >> ![export-website](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/root-folders.png){.thumbnail}
-<!-- CP-STEPS-END:find-root-folder -->
 
 Siempre conectado a su espacio de almacenamiento, solo le queda descargar los archivos de su sitio web accediendo al directorio raíz identificado anteriormente.
 

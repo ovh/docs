@@ -140,7 +140,6 @@ Si lo necesita, puede conocer la versión de PHP que utiliza actualmente su aloj
 
 /// details | A través del área de cliente de OVHcloud
 
-<!-- CP-STEPS-START:check-php-version -->
 Haga clic en las fichas siguientes para ver cada una de las **2** etapas.
 
 > [!tabs]
@@ -161,7 +160,6 @@ Haga clic en las fichas siguientes para ver cada una de las **2** etapas.
 >> > Si aparece un círculo de color azul, espere a que la versión se actualice en unos minutos.
 >> >
 >>
-<!-- CP-STEPS-END:check-php-version -->
 
 ///
 
@@ -233,7 +231,6 @@ Una vez que conozca los distintos parámetros que puede modificar para su alojam
 > Le recordamos que modificar al menos uno de estos elementos puede afectar a la visualización o al buen funcionamiento de su sitio web. **Asegúrese previamente de que su sitio web es compatible con los cambios que desea realizar en la configuración de su alojamiento web.** En caso de duda o de que tenga dificultades, contacte con un [proveedor especializado](/links/partner).
 >
 
-<!-- CP-STEPS-START:modify-config-cp -->
 Haga clic en las fichas siguientes para ver cada una de las **3** etapas.
 
 > [!tabs]
@@ -278,7 +275,6 @@ Haga clic en las fichas siguientes para ver cada una de las **3** etapas.
 >>
 >> ![hostingconfiguration](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/modify-hosting-configuration-step-1-and-2.png){.thumbnail}
 >>
-<!-- CP-STEPS-END:modify-config-cp -->
 
 ### 3 - Método 2: modificar la configuración del alojamiento web desde el archivo ".ovhconfig" <a name="setting-ovhconfig"></a>
 
@@ -286,7 +282,6 @@ Haga clic en las fichas siguientes para ver cada una de las **3** etapas.
 
 Localice su usuario FTP principal, su contraseña y la dirección del servidor FTP.
 
-<!-- CP-STEPS-START:retrieve-ftp-credentials -->
 Haga clic en las fichas siguientes para ver cada una de las **3** etapas.
 
 > [!tabs]
@@ -309,7 +304,6 @@ Haga clic en las fichas siguientes para ver cada una de las **3** etapas.
 >> ![FTP - SSH tab](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/tab-perso.png){.thumbnail}
 >>
 >> Con respecto a la contraseña del usuario FTP, consulte las instrucciones de la guía "[Cambiar la contraseña de un usuario FTP](/pages/web_cloud/web_hosting/ftp_change_password)".
-<!-- CP-STEPS-END:retrieve-ftp-credentials -->
 
 #### 3.2 - Obtener o crear el archivo ".ovhconfig"
 

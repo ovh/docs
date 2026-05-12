@@ -45,7 +45,6 @@ Les 2 parties suivantes vous permettront de corriger l’erreur `Site non instal
 
 ### 1 - Vérifier la déclaration de votre nom de domaine ou de votre sous-domaine sur votre site web présent sur votre hébergement web <a name="check-my-websites"></a>
 
-<!-- CP-STEPS-START:check-my-websites -->
 Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3** étapes.
 
 > [!tabs]
@@ -72,7 +71,6 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3*
 >> |Le nom de domaine ou le sous-domaine lié à votre site web **apparaît** dans le tableau.|Si vous venez d’ajouter votre nom de domaine ou votre sous-domaine sur votre site web présent sur votre hébergement web, patientez environ **vingt minutes** puis rafraîchissez le cache de votre navigateur Internet. Si le message « Site non installé » apparaît toujours, passez à la [partie 2](#check-dns-domain).|
 >> |Le nom de domaine ou le sous-domaine lié à votre site web **n'apparaît pas** dans le tableau.|Ajoutez votre nom de domaine ou votre sous-domaine en suivant notre guide « [Comment associer un nom de domaine à un site web existant ?](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website) ».|
 >> |Le nom de domaine ou le sous-domaine **a été supprimé** du tableau sans action de votre part.|Votre nom de domaine ou sa zone DNS sont peut-être gérés depuis un autre compte. Ajoutez votre nom de domaine ou votre sous-domaine en suivant notre guide « [Comment associer un nom de domaine à un site web existant ? - Ajouter un nom de domaine externe](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website) ».|
-<!-- CP-STEPS-END:check-my-websites -->
 
 ### 2 - Vérifier le pointage IP dans la zone DNS active de votre nom de domaine <a name="check-dns-domain"></a>
 
@@ -88,7 +86,6 @@ Cette étape consiste à vérifier que votre nom de domaine ou sous-domaine poin
 
 #### 2\.1 Identifier l’adresse IP de votre hébergement web OVHcloud
 
-<!-- CP-STEPS-START:check-dns-ip -->
 Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **2** étapes.
 
 > [!tabs]
@@ -105,7 +102,6 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **2*
 >> ![find-ipv4-and-ipv6](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-ipv4-and-ipv6.png){.thumbnail}
 >>
 >> Copiez l'adresse IPv4, puis poursuivez la lecture du guide.
-<!-- CP-STEPS-END:check-dns-ip -->
 
 Vous pouvez également retrouver l'adresse IP associée à votre hébergement web dans notre guide « [Liste des adresses IP associées aux hébergements web OVHcloud](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP) ».
 
@@ -119,7 +115,6 @@ Vous devez maintenant vérifier que l'adresse IP de votre hébergement web appar
 >
 > Si vous modifiez directement les **serveurs DNS** associés à votre nom de domaine, ce délai peut aller jusqu'à **48 heures** maximum.
 
-<!-- CP-STEPS-START:check-multisite-root-folder -->
 Pour cela, cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3** étapes.
 
 > [!tabs]
@@ -151,7 +146,6 @@ Pour cela, cliquez sur les onglets ci-dessous pour afficher successivement chacu
 >> |La zone DNS active ne comporte pas d'enregistrements de type A ou AAAA reliant votre nom de domaine ou sous-domaine à l'adresse IP de votre hébergement web.|Ajoutez le nouvel enregistrement DNS de type A ou AAAA ou corrigez l'enregistrement existant en suivant [ce guide](/pages/web_cloud/domains/dns_zone_edit).|
 >> |L'enregistrement DNS de type A ou AAAA existant dans la zone DNS pour votre nom de domaine ou sous-domaine pointe vers une autre adresse IP que celle de votre hébergement web.|Ajoutez le nouvel enregistrement DNS de type A ou AAAA ou corrigez l'enregistrement existant en suivant [ce guide](/pages/web_cloud/domains/dns_zone_edit).|
 >> |Cet avertissement s'affiche dans l'onglet `Zone DNS`{.action} :<br><br>![message-other-ovh-dns-servers](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/message-other-ovh-dns-servers.png){.thumbnail}|Modifiez les serveurs DNS de votre nom de domaine en conséquence en suivant notre guide « [Modifier les serveurs DNS d'un nom de domaine OVHcloud](/pages/web_cloud/domains/dns_server_edit). »|
-<!-- CP-STEPS-END:check-multisite-root-folder -->
 
 ## Aller plus loin <a name="go-further"></a>
 

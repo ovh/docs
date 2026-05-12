@@ -36,7 +36,6 @@ updated: 2026-05-04
 
 ### Auf Ihre Website zugreifen
 
-<!-- CP-STEPS-START:access-module -->
 Klicken Sie auf die nachfolgenden Tabs, um die **2** Schritte nacheinander anzuzeigen.
 
 > [!tabs]
@@ -52,7 +51,6 @@ Klicken Sie auf die nachfolgenden Tabs, um die **2** Schritte nacheinander anzuz
 >>
 >> Klicken Sie auf den Button `...`{.action} rechts in der Zeile für Ihr Modul und dann auf `Zugang zum Modul`{.action}.
 >>
-<!-- CP-STEPS-END:access-module -->
 
 > [!primary]
 >
@@ -61,7 +59,6 @@ Klicken Sie auf die nachfolgenden Tabs, um die **2** Schritte nacheinander anzuz
 
 ### Auf das Verwaltungsinterface zugreifen
 
-<!-- CP-STEPS-START:access-admin-interface -->
 Klicken Sie auf die nachfolgenden Tabs, um die **2** Schritte nacheinander anzuzeigen.
 
 > [!tabs]
@@ -77,11 +74,9 @@ Klicken Sie auf die nachfolgenden Tabs, um die **2** Schritte nacheinander anzuz
 >>
 >> Klicken Sie auf den Button `...`{.action} rechts neben der Zeile für Ihr Modul und dann auf `Zum Verwaltungsinterface des Moduls`{.action}.
 >>
-<!-- CP-STEPS-END:access-admin-interface -->
 
 ### Administrator-ID abrufen
 
-<!-- CP-STEPS-START:find-admin-login -->
 Klicken Sie auf die nachfolgenden Tabs, um die **3** Schritte nacheinander anzuzeigen.
 
 > [!tabs]
@@ -99,7 +94,6 @@ Klicken Sie auf die nachfolgenden Tabs, um die **3** Schritte nacheinander anzuz
 >>
 >> Sie können auch die bei der Erstellung Ihres Moduls erhaltene E-Mail über Ihr [OVHcloud Kundencenter](/links/manager) abrufen: Klicken Sie oben rechts auf Ihren Namen und dann im Kontextmenü auf `Meine Kommunikation`{.action}.
 >>
-<!-- CP-STEPS-END:find-admin-login -->
 
 ### Passwort Ihres Moduls ändern <a name="password-change"></a>
 
@@ -128,7 +122,6 @@ Wir empfehlen Ihnen jedoch dringend, die Operation mithilfe der vom Herausgeber 
 
 Um Ihr 1-Klick-Modul zu löschen, müssen Sie zuerst dessen Datenbank **identifizieren**.
 
-<!-- CP-STEPS-START:find-db-password -->
 Klicken Sie auf die nachfolgenden Tabs, um die **3** Schritte nacheinander anzuzeigen.
 
 > [!tabs]
@@ -148,7 +141,6 @@ Klicken Sie auf die nachfolgenden Tabs, um die **3** Schritte nacheinander anzuz
 >>
 >> Andernfalls wechseln Sie zum Tab `Meine Seiten`{.action}. Notieren Sie den Namen des `Wurzelverzeichnis`, das in der Zeile der betreffenden Webseite angezeigt wird: Dies ist das Verzeichnis, in dem sich die Dateien des 1-Klick-Moduls auf dem FTP-Server befinden.
 >>
-<!-- CP-STEPS-END:find-db-password -->
 
 Loggen Sie sich anschließend in den [FTP-Bereich](/pages/web_cloud/web_hosting/ftp_connection) Ihres Hostings ein. Öffnen Sie das entsprechende `Wurzelverzeichnis` aus dem Tab `Meine Seiten`{.action} und suchen Sie die Konfigurationsdatei Ihres Moduls:
 
@@ -168,7 +160,6 @@ Folgen Sie den Anweisungen in unserer Anleitung "[Ihre Webseite exportieren](/pa
 > Die Löschung Ihres 1-Klick-Moduls und seiner Datenbank zieht auch die Löschung **aller entsprechenden Backups** nach sich. Die gelöschten Daten können danach nicht mehr abgerufen werden.
 >
 
-<!-- CP-STEPS-START:delete-module -->
 Klicken Sie auf die nachfolgenden Tabs, um die **3** Schritte nacheinander anzuzeigen.
 
 > [!tabs]
@@ -197,7 +188,6 @@ Klicken Sie auf die nachfolgenden Tabs, um die **3** Schritte nacheinander anzuz
 >> > <iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/LHpsuvyNFtQ?si=4655K8lQQpkE2YNG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 >> >
 >>
-<!-- CP-STEPS-END:delete-module -->
 
 > [!warning]
 >
@@ -206,7 +196,6 @@ Klicken Sie auf die nachfolgenden Tabs, um die **3** Schritte nacheinander anzuz
 > Wenn Sie über ein [Basic Hosting](/links/web/hosting-personal-offer) verfügen oder bereits vier Datenbanken auf Ihrem [Pro Hosting](/links/web/hosting-professional-offer) oder [Performance Hosting](/links/web/hosting-performance-offer) erstellt haben, müssen Sie **ZUERST** die im [ersten Schritt](#step1) identifizierte Datenbank löschen, um ein neues 1-Klick-Modul erstellen zu können.
 >
 
-<!-- CP-STEPS-START:delete-database -->
 Um die Löschung Ihres Moduls abzuschließen, klicken Sie auf die nachfolgenden Tabs, um die **3** Schritte nacheinander anzuzeigen.
 
 > [!tabs]
@@ -226,7 +215,6 @@ Um die Löschung Ihres Moduls abzuschließen, klicken Sie auf die nachfolgenden 
 >>
 >> Überprüfen Sie im Tab `Aktuelle Tasks`{.action}, dass die zuvor ausgelösten Lösch-Tasks abgeschlossen sind, bevor Sie die Installation eines neuen Moduls starten.
 >>
-<!-- CP-STEPS-END:delete-database -->
 
 ### Bewährte Praktiken
 

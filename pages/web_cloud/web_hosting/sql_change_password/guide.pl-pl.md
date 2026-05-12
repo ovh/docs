@@ -56,7 +56,6 @@ Zmiana hasła do bazy danych składa się z czterech częściach:
 
 ### 1: Zidentyfikować plik konfiguracyjny Twojej strony <a name="step1"></a>
 
-<!-- CP-STEPS-START:find-config-file -->
 Kliknij poniższe zakładki, aby wyświetlić kolejne **4** kroki.
 
 > [!tabs]
@@ -85,7 +84,6 @@ Kliknij poniższe zakładki, aby wyświetlić kolejne **4** kroki.
 >> ![root-folders](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/root-folders.png){.thumbnail}
 >>
 >> Następnie przejdź do przestrzeni dyskowej FTP zawierającej pliki i foldery swojej strony, korzystając z [tego przewodnika](/pages/web_cloud/web_hosting/ftp_connection).
-<!-- CP-STEPS-END:find-config-file -->
 
 > [!primary]
 >
@@ -224,7 +222,6 @@ Ponownie, możliwe są dwa przypadki:
 
 #### Przypadek nr 1: baza danych twojej strony jest częścią twojej oferty hostingowej <a name="case1"></a>
 
-<!-- CP-STEPS-START:change-db-password-server -->
 Kliknij poniższe zakładki, aby wyświetlić kolejne **4** kroki.
 
 > [!tabs]
@@ -251,11 +248,9 @@ Kliknij poniższe zakładki, aby wyświetlić kolejne **4** kroki.
 >> W oknie, które się wyświetla wprowadź nowe hasło do Twojej bazy danych (zdefiniowane w [Część 3](#step3)), potwierdź je, następnie kliknij przycisk `Zatwierdź`{.action}.
 >>
 >> ![database-password-step3](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/change-password-window.png){.thumbnail}
-<!-- CP-STEPS-END:change-db-password-server -->
 
 #### Przypadek nr 2: baza danych strony jest częścią oferty Web Cloud Databases <a name="case2"></a>
 
-<!-- CP-STEPS-START:change-wcdb-password -->
 Przejdź do części `Bazy danych`{.action} w Panelu klienta i na odpowiedni serwer, kliknij zakładkę `Użytkownicy i uprawnienia`{.action}:
 
 ![userDBpassword-step1](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/users-and-rights/wcdb-tab.png){.thumbnail}
@@ -267,8 +262,6 @@ Aby zmienić hasło do swojej bazy danych na serwerze, kliknij przycisk `...`{.a
 W oknie, które się wyświetla wprowadź nowe hasło do Twojej bazy danych (zdefiniowane w [części 3](#step3)), potwierdź je, następnie kliknij przycisk `Zatwierdź`{.action}.
 
 ![userDBpassword-step3](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/users-and-rights/wcdb-change-password-window.png){.thumbnail}
-
-<!-- CP-STEPS-END:change-wcdb-password -->
 
 ## Sprawdź <a name="go-further"></a>
 

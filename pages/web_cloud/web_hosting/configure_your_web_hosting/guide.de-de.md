@@ -140,7 +140,6 @@ Falls nötig, gibt es zwei Möglichkeiten, die aktuell von Ihrem Webhosting verw
 
 /// details | Im OVHcloud Kundencenter
 
-<!-- CP-STEPS-START:check-php-version -->
 Klicken Sie auf die Tabs, um die **2** Schritte anzuzeigen.
 
 > [!tabs]
@@ -161,7 +160,6 @@ Klicken Sie auf die Tabs, um die **2** Schritte anzuzeigen.
 >> > Wenn ein blaues rundes Symbol zu sehen ist, warten Sie einige Minuten, bis die Version aktualisiert wurde.
 >> >
 >>
-<!-- CP-STEPS-END:check-php-version -->
 
 ///
 
@@ -232,7 +230,6 @@ Mit Kenntnis dieser bearbeitbaren Einstellungen für Ihr OVHcloud Webhosting kö
 > Änderungen dieser Elemente haben mögliche Auswirkungen auf die Darstellung oder das ordnungsgemäße Funktionieren Ihrer Website. **Stellen Sie im Vorfeld sicher, dass Ihre Website mit den Änderungen kompatibel ist, die Sie an der Konfiguration Ihres Webhostings vornehmen möchten.** Wenden Sie sich im Zweifelsfall oder bei Schwierigkeiten an einen [spezialisierten Anbieter](/links/partner).
 >
 
-<!-- CP-STEPS-START:modify-config-cp -->
 Klicken Sie auf die Tabs, um die **3** Schritte anzuzeigen.
 
 > [!tabs]
@@ -277,7 +274,6 @@ Klicken Sie auf die Tabs, um die **3** Schritte anzuzeigen.
 >>
 >> ![hostingConfiguration](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/modify-hosting-configuration-step-1-and-2.png){.thumbnail}
 >>
-<!-- CP-STEPS-END:modify-config-cp -->
 
 ### 3 - Methode 2: Webhosting-Konfiguration in der Datei “.ovhconfig“ ändern <a name="setting-ovhconfig"></a>
 
@@ -285,7 +281,6 @@ Klicken Sie auf die Tabs, um die **3** Schritte anzuzeigen.
 
 Sie benötigen den primären FTP-Benutzer, das zugehörige Passwort sowie die Adresse des FTP-Servers.
 
-<!-- CP-STEPS-START:retrieve-ftp-credentials -->
 Klicken Sie auf die Tabs, um die **3** Schritte anzuzeigen.
 
 > [!tabs]
@@ -308,7 +303,6 @@ Klicken Sie auf die Tabs, um die **3** Schritte anzuzeigen.
 >> ![ovhcoFTP - SSH tab](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/tab-perso.png){.thumbnail}
 >>
 >> Bezüglich des Passworts des FTP-Benutzers folgen Sie bei Bedarf den Anweisungen in unserer Dokumentation [„Passwort eines FTP-Benutzers ändern“](/pages/web_cloud/web_hosting/ftp_change_password).
-<!-- CP-STEPS-END:retrieve-ftp-credentials -->
 
 #### 3.2 - Datei “.ovhconfig“ abrufen oder erstellen
 

@@ -37,7 +37,6 @@ I moduli in 1 click permettono di installare facilmente e rapidamente un softwar
 
 ### Accedi al tuo sito
 
-<!-- CP-STEPS-START:access-module -->
 Clicca sulle schede seguenti per visualizzare uno alla volta i **2** passaggi.
 
 > [!tabs]
@@ -53,7 +52,6 @@ Clicca sulle schede seguenti per visualizzare uno alla volta i **2** passaggi.
 >>
 >> Clicca sui tre puntini `...`{.action} a destra della riga relativa al tuo modulo e poi su `Accedi al modulo`{.action}.
 >>
-<!-- CP-STEPS-END:access-module -->
 
 > [!primary]
 >
@@ -62,7 +60,6 @@ Clicca sulle schede seguenti per visualizzare uno alla volta i **2** passaggi.
 
 ### Accedi all'interfaccia amministratore
 
-<!-- CP-STEPS-START:access-admin-interface -->
 Clicca sulle schede seguenti per visualizzare uno alla volta i **2** passaggi.
 
 > [!tabs]
@@ -78,11 +75,9 @@ Clicca sulle schede seguenti per visualizzare uno alla volta i **2** passaggi.
 >>
 >> Clicca sui tre puntini `...`{.action} a destra della linea relativa al tuo modulo e poi su `Accedi all'interfaccia di amministrazione del modulo`{.action}.
 >>
-<!-- CP-STEPS-END:access-admin-interface -->
 
 ### Trova l'identificativo amministratore
 
-<!-- CP-STEPS-START:find-admin-login -->
 Clicca sulle schede seguenti per visualizzare uno alla volta i **3** passaggi.
 
 > [!tabs]
@@ -100,7 +95,6 @@ Clicca sulle schede seguenti per visualizzare uno alla volta i **3** passaggi.
 >>
 >> Puoi anche ricercare l'email ricevuta durante la creazione del tuo modulo. Nel tuo [Spazio Cliente OVHcloud](/links/manager), clicca sul tuo nome in alto a destra e poi su `Email di servizio`{.action}.
 >>
-<!-- CP-STEPS-END:find-admin-login -->
 
 ### Modifica la password del tuo modulo <a name="password-change"></a>
 
@@ -128,7 +122,6 @@ Tuttavia, in caso di difficoltà o dubbi, ti consigliamo di eseguire l'operazion
 
 Per eliminare il tuo modulo in 1 click, è necessario iniziare ad identificarne il database in modo **sicuro**.
 
-<!-- CP-STEPS-START:find-db-password -->
 Clicca sulle schede seguenti per visualizzare uno alla volta i **3** passaggi.
 
 > [!tabs]
@@ -148,7 +141,6 @@ Clicca sulle schede seguenti per visualizzare uno alla volta i **3** passaggi.
 >>
 >> In caso contrario, vai alla scheda `I miei siti`{.action}. Annota il nome della `Cartella di root` presente sulla riga del sito web interessato: si tratta della directory in cui si trovano i file che costituiscono il tuo modulo in 1 click sul server FTP.
 >>
-<!-- CP-STEPS-END:find-db-password -->
 
 Accedi allo [spazio FTP del tuo hosting](/pages/web_cloud/web_hosting/ftp_connection). Apri la `Cartella di root` trovata precedentemente nella scheda `I miei siti`{.action} e cerca il file di configurazione del tuo modulo:
 
@@ -168,7 +160,6 @@ Per effettuare il backup del tuo sito, segui le istruzioni della nostra guida "[
 > L'eliminazione del tuo modulo in 1 click e del suo database comporta anche la cancellazione di **tutti i backup**. I dati eliminati non potranno essere recuperati in seguito.
 >
 
-<!-- CP-STEPS-START:delete-module -->
 Clicca sulle schede seguenti per visualizzare uno alla volta i **3** passaggi.
 
 > [!tabs]
@@ -197,7 +188,6 @@ Clicca sulle schede seguenti per visualizzare uno alla volta i **3** passaggi.
 >> > <iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/LHpsuvyNFtQ?si=4655K8lQQpkE2YNG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 >> >
 >>
-<!-- CP-STEPS-END:delete-module -->
 
 > [!warning]
 >
@@ -206,7 +196,6 @@ Clicca sulle schede seguenti per visualizzare uno alla volta i **3** passaggi.
 > Se disponi di un abbonamento [Personale](/links/web/hosting-personal-offer) o hai già creato quattro database sul tuo hosting [Pro](/links/web/hosting-professional-offer) o [Performance](/links/web/hosting-performance-offer), dovrai eliminare il database identificato nella [parte 1](#step1) **PRIMA** di poter creare un nuovo modulo in 1 click.
 >
 
-<!-- CP-STEPS-START:delete-database -->
 Per completare l'eliminazione del tuo modulo, clicca sulle schede seguenti per visualizzare uno alla volta i **3** passaggi.
 
 > [!tabs]
@@ -226,7 +215,6 @@ Per completare l'eliminazione del tuo modulo, clicca sulle schede seguenti per v
 >>
 >> Prima di riavviare l'installazione di un nuovo modulo, verifica che le operazioni di eliminazione richieste in precedenza siano state completate tramite la scheda `Operazioni in corso`{.action}.
 >>
-<!-- CP-STEPS-END:delete-database -->
 
 ### Buone prassi
 

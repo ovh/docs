@@ -54,7 +54,6 @@ No obstante, si la configuración de estos últimos no se realiza correctamente,
 
 /// details | Su dominio no está incluido al crear el "módulo en un clic"
 
-<!-- CP-STEPS-START:check-module-status -->
 ![domainenotproposed](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/1-click-modules/domain-unavailable.png){.thumbnail}
 
 Haga clic en las fichas siguientes para ver cada una de las **4** etapas.
@@ -86,13 +85,11 @@ Haga clic en las fichas siguientes para ver cada una de las **4** etapas.
 >> |---|---|
 >> |El dominio o subdominio relacionado con el sitio web que desea crear no aparece en la tabla del apartado `Mis sitios`{.action}.|Agregue su nombre de dominio siguiendo [estas indicaciones](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website).|
 >> |El nombre de dominio se ha desvinculado del sitio web sin que usted haya realizado ninguna acción.|Si su nombre de dominio o su [zona DNS](/pages/web_cloud/domains/dns_zone_edit) no están gestionados desde su cuenta de OVHcloud, agregue su nombre de dominio desde el apartado `Mis sitios`{.action} siguiendo [este tutorial](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website).|
-<!-- CP-STEPS-END:check-module-status -->
 
 ///
 
 /// details | "Se ha producido un error al cargar la información (You need at least one free database)"
 
-<!-- CP-STEPS-START:change-root-folder -->
 ![No databases available](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/1-click-modules/message-no-db-available.png){.thumbnail}
 
 Este mensaje aparece al iniciar la instalación de su "módulo en un clic" cuando no tiene la posibilidad de crear una nueva base de datos asociada a su alojamiento web.
@@ -116,7 +113,6 @@ Haga clic en las fichas siguientes para ver cada una de las **2** etapas.
 >>
 >> ![order_a_database](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/order-a-db.png){.thumbnail}
 >>
-<!-- CP-STEPS-END:change-root-folder -->
 
 Una vez finalizado, podrá instalar un nuevo "módulo en un clic".
 
@@ -132,7 +128,6 @@ Una vez finalizado, podrá instalar un nuevo "módulo en un clic".
 > Consultar la comparativa de nuestras distintas soluciones [alojamiento web](/links/web/hosting).
 >
 
-<!-- CP-STEPS-START:find-admin-credentials -->
 Haga clic en las fichas siguientes para ver cada una de las **2** etapas.
 
 > [!tabs]
@@ -148,7 +143,6 @@ Haga clic en las fichas siguientes para ver cada una de las **2** etapas.
 >>
 >> ![upgrade_hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/upgrade-perso.png){.thumbnail}
 >>
-<!-- CP-STEPS-END:find-admin-credentials -->
 
 Los planes [Pro](/links/web/hosting-professional-offer) y [Performance](/links/web/hosting-performance-offer) le permitirán crear hasta tres "módulos en un clic" adicionales con una base de datos independiente para cada uno de ellos. Los planes de hosting **Performance** también le permitirán activar gratuitamente un servidor [Web Cloud Databases](/links/web/databases).
 
@@ -161,7 +155,6 @@ Una vez finalizado, podrá instalar un nuevo "módulo en un clic".
 > La operación de eliminación de una base de datos es permanente. Esta operación también implica la eliminación de las copias de seguridad de la base de datos correspondiente. En caso de duda, póngase en contacto con su webmaster o con uno de nuestros [partners](/links/partner).
 >
 
-<!-- CP-STEPS-START:diag-delete-database -->
 Para eliminar una base de datos, haga clic en las fichas siguientes para ver cada una de las **2** etapas.
 
 > [!tabs]
@@ -177,7 +170,6 @@ Para eliminar una base de datos, haga clic en las fichas siguientes para ver cad
 >>
 >> ![delete_a_database](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/sharedsql-deletion.png){.thumbnail}
 >>
-<!-- CP-STEPS-END:diag-delete-database -->
 
 Una vez finalizado, podrá instalar un nuevo "módulo en un clic".
 
@@ -217,7 +209,6 @@ Después de haber iniciado la creación de su "módulo en un clic", ha recibido 
 
 Este mensaje significa que el **Carpeta raíz** del sitio web al que está asociado su nombre de dominio ya contiene uno o varios archivos o directorios.
 
-<!-- CP-STEPS-START:change-domain-root-folder -->
 Para conectar su nombre de dominio a otro sitio web (carpeta raíz), haga clic en las fichas siguientes para ver cada una de las **4** etapas.
 
 > [!tabs]
@@ -246,7 +237,6 @@ Para conectar su nombre de dominio a otro sitio web (carpeta raíz), haga clic e
 > **Etapa 4**
 >>
 >> Una vez que el nombre de dominio esté desvinculado del sitio web, consulte nuestro tutorial "[Alojar varios sitios web en un mismo hosting](/pages/web_cloud/web_hosting/multisites_configure_multisite)".
-<!-- CP-STEPS-END:change-domain-root-folder -->
 
 También puede conectarse a su alojamiento web a través del protocolo [FTP](/pages/web_cloud/web_hosting/ftp_connection) y eliminar el contenido de la carpeta. Después de realizar una copia de seguridad local del archivo o de vaciarlo moviendo todo su contenido a otro directorio FTP.
 
@@ -264,7 +254,6 @@ Para más información, consulte nuestra guía "[Cambiar la configuración de un
 
 /// details | "Se ha producido un error al cargar la información (There is not enough space on your hosting (you need at least xxx MB)"
 
-<!-- CP-STEPS-START:check-database-credentials -->
 ![not_enough_space](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/1-click-modules/message-not-enough-ftp-space.png){.thumbnail}
 
 Este mensaje indica que el [espacio de almacenamiento FTP](/pages/web_cloud/web_hosting/ftp_connection) de su alojamiento web tiene un volumen de datos demasiado elevado. 
@@ -303,7 +292,6 @@ Haga clic en las fichas siguientes para ver cada una de las **2** etapas.
 >>
 >> ![upgrade_hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/upgrade-perso.png){.thumbnail}
 >>
-<!-- CP-STEPS-END:check-database-credentials -->
 
 Los planes [Pro](/links/web/hosting-professional-offer) y [Performance](/links/web/hosting-performance-offer) le permitirán crear hasta tres "módulos en un clic" adicionales con una base de datos independiente para cada uno de ellos. Los planes de hosting **Performance** también le permitirán activar gratuitamente un servidor [Web Cloud Databases](/links/web/databases).
 
@@ -317,7 +305,6 @@ Tras instalar el "módulo en un clic" en modo avanzado, recibirá un mensaje de 
 
 Por lo tanto, compruebe las claves de la base de datos. Para más información, consulte esta [guía](/pages/web_cloud/web_hosting/cms_install_1_click_modules).
 
-<!-- CP-STEPS-START:diag-delete-module -->
 A continuación, elimine el "módulo en un clic". Para ello, haga clic en las fichas siguientes para ver cada una de las **2** etapas.
 
 > [!tabs]
@@ -340,7 +327,6 @@ A continuación, elimine el "módulo en un clic". Para ello, haga clic en las fi
 >> > Asegúrese de eliminar sólo la instalación que acaba de iniciar. Para ello, compruebe que se trata del directorio correspondiente en la columna `Path` (ruta).
 >> >
 >>
-<!-- CP-STEPS-END:diag-delete-module -->
 
 A continuación, vuelva a instalar un nuevo "módulo en un clic".
 
@@ -384,7 +370,6 @@ Compruebe también sus claves [conectándose directamente](/pages/web_cloud/web_
 
 Ha iniciado la instalación de un "módulo en un clic" en [modo avanzado](/pages/web_cloud/web_hosting/cms_install_1_click_modules) en una base de datos situada en un servidor [Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb). Ha recibido este mensaje de error por correo electrónico. Significa que el nombre del servidor de bases de datos que ha especificado es incorrecto.
 
-<!-- CP-STEPS-START:find-db-server-name -->
 Para consultar el nombre del servidor de bases de datos, haga clic en las fichas siguientes para ver cada una de las **2** etapas.
 
 > [!tabs]
@@ -398,13 +383,11 @@ Para consultar el nombre del servidor de bases de datos, haga clic en las fichas
 >>
 >> El nombre del servidor que debe utilizarse aparece en el recuadro `Datos de conexión`, subparte `SQL`, con la mención `Nombre de host`.
 >>
-<!-- CP-STEPS-END:find-db-server-name -->
 
 ///
 
 /// details | Su antiguo sitio web sigue apareciendo
 
-<!-- CP-STEPS-START:verify-db-connection -->
 Haga clic en las fichas siguientes para ver cada una de las **2** etapas.
 
 > [!tabs]
@@ -418,7 +401,6 @@ Haga clic en las fichas siguientes para ver cada una de las **2** etapas.
 >>
 >> En la pestaña `Módulos en 1 clic`{.action}, haga clic en el enlace de su sitio web en la columna `Ruta`. Se abrirá una nueva pestaña con su sitio web. El nombre de dominio asociado a su instalación se muestra en la dirección de su navegador de internet. Por ejemplo, si su dominio se denomina "domain.tld", es posible que aparezca otro dominio o una página estándar de OVHcloud.
 >>
-<!-- CP-STEPS-END:verify-db-connection -->
 
 Este fallo de funcionamiento puede deberse a varias causas:
 

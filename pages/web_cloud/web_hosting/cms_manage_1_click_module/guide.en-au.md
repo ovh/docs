@@ -36,7 +36,6 @@ The 1-click modules are a quick and easy way to install an online website creati
 
 ### Access your website
 
-<!-- CP-STEPS-START:access-module -->
 Click on the tabs below to display each of the **2** steps in turn.
 
 > [!tabs]
@@ -52,7 +51,6 @@ Click on the tabs below to display each of the **2** steps in turn.
 >>
 >> Click on the `...`{.action} button to the right of the line for your module, then click on `Access module`{.action}.
 >>
-<!-- CP-STEPS-END:access-module -->
 
 > [!primary]
 >
@@ -61,7 +59,6 @@ Click on the tabs below to display each of the **2** steps in turn.
 
 ### Access the administrator interface
 
-<!-- CP-STEPS-START:access-admin-interface -->
 Click on the tabs below to display each of the **2** steps in turn.
 
 > [!tabs]
@@ -77,11 +74,9 @@ Click on the tabs below to display each of the **2** steps in turn.
 >>
 >> Click on the `...`{.action} button to the right of the line for your module, then click on `Access the module's administration interface`{.action}.
 >>
-<!-- CP-STEPS-END:access-admin-interface -->
 
 ### Find the administrator login of your module
 
-<!-- CP-STEPS-START:find-admin-login -->
 Click on the tabs below to display each of the **3** steps in turn.
 
 > [!tabs]
@@ -99,7 +94,6 @@ Click on the tabs below to display each of the **3** steps in turn.
 >>
 >> You can also search for the email received after the creation of your module. In your [OVHcloud Control Panel](/links/manager), click on your name in the top right-hand corner of the screen then, in the context menu, click on `Service emails`{.action}.
 >>
-<!-- CP-STEPS-END:find-admin-login -->
 
 ### Change your module password <a name="password-change"></a>
 
@@ -128,7 +122,6 @@ However, we strongly recommend using the documentation provided by your CMS publ
 
 To delete your 1-click module, you must first identify its database with **certainty**.
 
-<!-- CP-STEPS-START:find-db-password -->
 Click on the tabs below to display each of the **3** steps in turn.
 
 > [!tabs]
@@ -148,7 +141,6 @@ Click on the tabs below to display each of the **3** steps in turn.
 >>
 >> Otherwise, click on the `My sites`{.action} tab. Note the name of the `Root folder` displayed on the line for the relevant website: this is the directory containing the files that make up your 1-click module on the FTP server.
 >>
-<!-- CP-STEPS-END:find-db-password -->
 
 Then log on to the [FTP space](/pages/web_cloud/web_hosting/ftp_connection) of your hosting plan. Open the `Root folder` found earlier in the `My sites`{.action} tab and browse to the configuration file for your module:
 
@@ -168,7 +160,6 @@ To back up your website, follow the instructions of our guide "[Exporting a webs
 > Deleting your 1-click module and its database will also delete **all of their backups**. Deleted data cannot be retrieved later on.
 >
 
-<!-- CP-STEPS-START:delete-module -->
 Click on the tabs below to display each of the **3** steps in turn.
 
 > [!tabs]
@@ -197,7 +188,6 @@ Click on the tabs below to display each of the **3** steps in turn.
 >> > <iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/LHpsuvyNFtQ?si=4655K8lQQpkE2YNG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 >> >
 >>
-<!-- CP-STEPS-END:delete-module -->
 
 > [!warning]
 >
@@ -206,7 +196,6 @@ Click on the tabs below to display each of the **3** steps in turn.
 > If you have a [Personal Hosting](/links/web/hosting-personal-offer) subscription or if you have already created all four databases of your [Pro Hosting](/links/web/hosting-professional-offer) or [Performance Hosting](/links/web/hosting-performance-offer), you will need to delete the database identified in [step 1](#step1) **BEFORE** creating a new 1-click module.
 >
 
-<!-- CP-STEPS-START:delete-database -->
 To complete the removal of your module, click on the tabs below to display each of the **3** steps in turn.
 
 > [!tabs]
@@ -226,7 +215,6 @@ To complete the removal of your module, click on the tabs below to display each 
 >>
 >> Before attempting to install a new module again, verify that the previously requested removal tasks have been completed in the `Ongoing jobs`{.action} tab.
 >>
-<!-- CP-STEPS-END:delete-database -->
 
 ### Best practices
 

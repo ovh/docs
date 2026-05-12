@@ -42,7 +42,6 @@ W dzisiejszym świecie cyfrowym społeczeństwa stają się coraz bardziej dynam
 >
 > Po dołączeniu katalogu do Git wszystkie nazwy domen w tym katalogu będą również powiązane z Git. Na przykład, jeśli katalog odpowiadający przypisanej do Ciebie stronie WWW to `www`, wówczas wszystkie domeny przypisane do katalogu `www` będą również powiązane z Git.
 
-<!-- CP-STEPS-START:associate-git-repo -->
 Kliknij poniższe zakładki, aby wyświetlić kolejne **4** kroki.
 
 > [!tabs]
@@ -74,9 +73,7 @@ Kliknij poniższe zakładki, aby wyświetlić kolejne **4** kroki.
 >> - Webhook (opcjonalnie)
 >>
 >> Kontynuuj czytanie tego przewodnika, aby uzyskać informacje potrzebne do wypełnienia wymaganych pól.
-<!-- CP-STEPS-END:associate-git-repo -->
 
-<!-- CP-STEPS-START:git-association-form -->
 #### Ustaw repozytorium GitHub
 
 Wprowadź adres Twojego repozytorium GitHub. Jeśli nie masz jeszcze repozytorium GitHub dla swojego projektu, utwórz je.
@@ -166,11 +163,9 @@ Przed zatwierdzeniem formularza skojarzenia Git, upewnij się, że:
 - Twój katalog instalacyjny jest pusty.
 
 Aby zatwierdzić informacje zawarte w formularzu powiązania Git, kliknij przycisk `Zastosuj konfigurację`{.action}.
-<!-- CP-STEPS-END:git-association-form -->
 
 ### Aktywacja powiązania Git
 
-<!-- CP-STEPS-START:git-activation-status -->
 #### Sukces w powiązaniu z Git
 
 Po potwierdzeniu formularza powiązania Git zostaniesz przekierowany na stronę karty `Moje strony`{.action}.
@@ -203,11 +198,9 @@ Aby dowiedzieć się, jaki dokładnie błąd wystąpił, sprawdź informacje ost
 ![Website](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/website-options-git-enabled.png){.thumbnail}
 
 Po zidentyfikowaniu błędu(-ów), ponownie powiąż Git. Powtórz operację, klikając przycisk `⁝`{.action} po prawej stronie odpowiedniego strony internetowej, a następnie `Powiąż Git`{.action}.
-<!-- CP-STEPS-END:git-activation-status -->
 
 ### Uruchomienie repozytorium GitHub na hostingu OVHcloud
 
-<!-- CP-STEPS-START:deploy-github-repo -->
 Kliknij poniższe zakładki, aby wyświetlić kolejne **4** kroki.
 
 > [!tabs]
@@ -238,11 +231,9 @@ Kliknij poniższe zakładki, aby wyświetlić kolejne **4** kroki.
 >> > Aby uniknąć utraty lokalnych zmian, zapisz je przed nadpisaniem zmianami z gałęzi zdalnej.
 >>
 >> Nowa wersja strony internetowej została pomyślnie wdrożona na Twoim hostingu OVHcloud. Jeśli inni pracują nad tym samym projektem i wprowadzają zmiany do repozytorium GitHub, możesz [skonfigurować webhook na GitHub](#configureWebhook), aby ich zmiany były automatycznie wdrażane na Twoim hostingu. Dzięki temu nie musisz ręcznie wdrażać Git, a Twoja strona internetowa będzie zawsze aktualna.
-<!-- CP-STEPS-END:deploy-github-repo -->
 
 ### Zmiana nazwy domeny
 
-<!-- CP-STEPS-START:modify-domain-name -->
 Kliknij poniższe zakładki, aby wyświetlić kolejne **4** kroki.
 
 > [!tabs]
@@ -293,11 +284,9 @@ Kliknij poniższe zakładki, aby wyświetlić kolejne **4** kroki.
 >> ![My websites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/modify-alone-domain-step1.png){.thumbnail}
 >>
 >> Jak wskazuje komunikat, [usuwaj powiązanie Git](#deleteGitAssociation) wcześniej, zanim zmienisz swoją domenę.
-<!-- CP-STEPS-END:modify-domain-name -->
 
 ### Odłącz domenę
 
-<!-- CP-STEPS-START:detach-domain-name -->
 Kliknij poniższe zakładki, aby wyświetlić kolejne **4** kroki.
 
 > [!tabs]
@@ -342,11 +331,9 @@ Kliknij poniższe zakładki, aby wyświetlić kolejne **4** kroki.
 >> ![My websites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/detach-alone-domain.png){.thumbnail}
 >>
 >> Jak wskazuje komunikat, [usuwaj powiązanie Git](#deleteGitAssociation) wcześniej, zanim odłączysz swoją domenę.
-<!-- CP-STEPS-END:detach-domain-name -->
 
 ### Konfiguracja Git
 
-<!-- CP-STEPS-START:configure-git -->
 Kliknij poniższe zakładki, aby wyświetlić kolejne **4** kroki.
 
 > [!tabs]
@@ -376,13 +363,11 @@ Kliknij poniższe zakładki, aby wyświetlić kolejne **4** kroki.
 >> - Repozytorium: Adres Twojego repozytorium Git. To pole jest zasłonięte, ponieważ nie możesz zmienić adresu repozytorium Git. Aby zmienić adres URL repozytorium Git, musisz [usunąć powiązanie Git z Twojego katalogu](#deleteGitAssociation), a następnie ponownie [powiązać katalog z Git](#associateGitRepo).
 >> - Gałąź: Nazwa gałęzi repozytorium GitHub. Możesz zmienić to pole, jeśli to konieczne.
 >> - URL webhooka: Jeśli chcesz zoptymalizować swoje wdrożenia na Git, [skonfiguruj webhook na GitHub](#configureWebhook).
-<!-- CP-STEPS-END:configure-git -->
 
 ### Informacje o ostatnim wdrożeniu
 
 Po wdrożeniu repozytorium GitHub na Twoim hostingu możesz sprawdzić informacje dotyczące ostatniego wdrożenia, takie jak błędy, testy lub inne przydatne informacje.
 
-<!-- CP-STEPS-START:latest-deployment-info -->
 Kliknij poniższe zakładki, aby wyświetlić kolejne **3** kroki.
 
 > [!tabs]
@@ -405,11 +390,9 @@ Kliknij poniższe zakładki, aby wyświetlić kolejne **3** kroki.
 >> ![Website](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/website-options-git-enabled.png){.thumbnail}
 >>
 >> Na tym ekranie znajdziesz wszystkie informacje dotyczące ostatniego wdrożenia.
-<!-- CP-STEPS-END:latest-deployment-info -->
 
 ### Usuń powiązanie Git <a name="deleteGitAssociation"></a>
 
-<!-- CP-STEPS-START:delete-git-association -->
 Kliknij poniższe zakładki, aby wyświetlić kolejne **4** kroki.
 
 > [!tabs]
@@ -446,7 +429,6 @@ Kliknij poniższe zakładki, aby wyświetlić kolejne **4** kroki.
 >> ![Moje strony](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/delete-git-association-popup-confirm.png){.thumbnail}
 >> 
 >> Kliknij `Zatwierdź`{.action}, aby zweryfikować usunięcie powiązania Git z Twoim katalogiem.
-<!-- CP-STEPS-END:delete-git-association -->
 
 ### Konfiguracja interfejsu webhook na GitHubie
 
@@ -456,7 +438,6 @@ Kliknij poniższe zakładki, aby wyświetlić kolejne **4** kroki.
 >
 > Jeśli korzystasz już ze skojarzenia Git, skopiuj adres URL elementu webhook i przejdź do etapu "[Konfiguruj element webhook](#configureWebhook)".
 
-<!-- CP-STEPS-START:configure-webhook -->
 Kliknij poniższe zakładki, aby wyświetlić kolejne **4** kroki.
 
 > [!tabs]
@@ -481,7 +462,6 @@ Kliknij poniższe zakładki, aby wyświetlić kolejne **4** kroki.
 > **Krok 4**
 >> 
 >> Na dole formularza, który się pojawia, skopiuj adres zawarty w polu `URL webhooka`{.action}. Musisz teraz zarejestrować adres URL i skonfigurować webhook na swoim koncie GitHub.
-<!-- CP-STEPS-END:configure-webhook -->
 
 #### Skonfiguruj webhook <a name="configureWebhook"></a>
 

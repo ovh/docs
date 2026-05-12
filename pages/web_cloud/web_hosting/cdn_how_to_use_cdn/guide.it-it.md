@@ -43,7 +43,6 @@ Per funzionare correttamente, ciascun server salva nella memoria cache una parte
 
 #### Se l'opzione CDN non è ordinata o attivata sul tuo hosting Web
 
-<!-- CP-STEPS-START:order-cdn -->
 Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **2** passi.
 
 > [!tabs]
@@ -65,11 +64,9 @@ Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **2** pa
 >>
 >> Sarai reindirizzato verso una pagina in cui è possibile generare un buono d’ordine. Una volta effettuato il pagamento, il tuo servizio sarà disponibile in pochi minuti.
 >>
-<!-- CP-STEPS-END:order-cdn -->
 
 #### Se l'opzione CDN è già attiva sul tuo hosting Web
 
-<!-- CP-STEPS-START:activate-cdn-domain -->
 Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **4** passi.
 
 > [!tabs]
@@ -106,7 +103,6 @@ Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **4** pa
 >> > Nel caso di un nome di dominio esterno ad OVHcloud aggiunto su uno dei siti web del tuo hosting, devi specificare l'indirizzo IP del CDN del tuo hosting nella zona DNS del nome di dominio.
 >> >
 >> > Consulta la [lista degli indirizzi IP di cluster e hosting Web](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP) per recuperare l’indirizzo IP specifico per la CDN del tuo cluster.
-<!-- CP-STEPS-END:activate-cdn-domain -->
  
 **Perché non puoi utilizzare l'IP geolocalizzato con l'opzione CDN?**
 
@@ -119,7 +115,6 @@ Per quanto riguarda la SEO (motori di ricerca), la velocità di visualizzazione 
 
 A volte può essere utile svuotare la cache del CDN, in particolare quando modifichi i tuoi file statici. Ad esempio, quando metti in produzione una nuova versione del tuo sito. È possibile svuotare la cache per ciascuno dei tuoi nomi di dominio e sottodomini.
 
-<!-- CP-STEPS-START:clear-cdn-cache -->
 Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **4** passi.
 
 > [!tabs]
@@ -144,11 +139,9 @@ Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **4** pa
 >> Fai quindi clic sul pulsante `⁝`{.action} a destra del nome del dominio o sottodominio desiderato, quindi su `Pulisci il CDN`{.action}.
 >>
 >> ![Opzioni domini associati](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/associated-domains-options.png){.thumbnail}
-<!-- CP-STEPS-END:clear-cdn-cache -->
 
 #### Configura le opzioni della CDN Shared
 
-<!-- CP-STEPS-START:configure-shared-cdn -->
 Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **4** passi.
 
 > [!tabs]
@@ -193,11 +186,9 @@ Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **4** pa
 >> - **Regola di cache**: Crea fino a 5 regole. che definiscono la frequenza di aggiornamento della cache per alcune risorse specifiche del tuo sito. ([segui la fase successiva](#cacherules)). 
 >>
 >> Dopo aver scelto le opzioni, clicca su `Applica la configurazione`{.action} e poi su `Conferma la configurazione`{.action} nella finestra successiva.
-<!-- CP-STEPS-END:configure-shared-cdn -->
 
 ##### **Crea una regola di inserimento in cache** <a name="cacherules"></a>
 
-<!-- CP-STEPS-START:shared-cdn-cache-rules -->
 Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **5** passi.
 
 > [!tabs]
@@ -250,11 +241,9 @@ Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **5** pa
 >> > [!warning]
 >> >
 >> > Per usufruire di una quota di regole più elevata e di parametri aggiuntivi sulla creazione di regole di messa in cache, puoi optare per l'opzione [CDN Advanced](/links/web/hosting-options-cdn).
-<!-- CP-STEPS-END:shared-cdn-cache-rules -->
 
 #### Configura le opzioni della CDN Security
 
-<!-- CP-STEPS-START:shared-cdn-security -->
 Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **4** passi.
 
 > [!tabs]
@@ -324,11 +313,9 @@ Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **4** pa
 >> > [!primary]
 >> >  
 >> > Il WAF è gestito totalmente da OVHcloud, la lista delle falle viene aggiornata regolarmente.
-<!-- CP-STEPS-END:shared-cdn-security -->
 
 #### Configura le opzioni della CDN Advanced
 
-<!-- CP-STEPS-START:configure-advanced-cdn -->
 Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **4** passi.
 
 > [!tabs]
@@ -399,11 +386,9 @@ Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **4** pa
 >> - **Cache rule**: Crea fino a 100 regole. Che definiscono la frequenza di aggiornamento della cache per alcune risorse specifiche del tuo sito. Prosegui nella lettura di questa guida [nella parte](#cacherulesadv) successiva per maggiori informazioni.
 >>
 >> Dopo aver scelto le opzioni, clicca su `Applica la configurazione`{.action} e poi su `Conferma la configurazione`{.action} nella finestra successiva.
-<!-- CP-STEPS-END:configure-advanced-cdn -->
 
 ##### **Crea una regola di memorizzazione in cache avanzata** <a name="cacherulesadv"></a>
 
-<!-- CP-STEPS-START:advanced-cdn-cache-rules -->
 Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **5** passi.
 
 > [!tabs]
@@ -454,7 +439,6 @@ Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **5** pa
 >> ![CDN](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/modify-cdn/advanced-cache-rules.png){.thumbnail}
 >>
 >> Una volta configurate le regole e selezionate le opzioni, clicca su `Applica la configurazione`{.action} e poi su `Conferma la configurazione`{.action} nella finestra successiva.
-<!-- CP-STEPS-END:advanced-cdn-cache-rules -->
 
 ### Visualizzare le statistiche e i log della CDN
 
@@ -502,7 +486,6 @@ Questa azione permette di disattivare il CDN per uno o più dei tuoi nomi di dom
 >
 > La modifica di un record nella zona DNS attiva di un dominio comporta un tempo di propagazione da **4** a **24** ore per essere pienamente efficace. Una pagina contenente il codice **520** potrebbe apparire casualmente fino al termine della propagazione. Questo fenomeno è legato al fatto che alcune parti della rete DNS reindirizzano ancora le richieste verso l'indirizzo IP della CDN associato al tuo hosting Web.
 
-<!-- CP-STEPS-START:disable-cdn-domain -->
 Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **4** passi.
 
 > [!tabs]
@@ -533,13 +516,11 @@ Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **4** pa
 >> A questo punto, deseleziona la voce "Attiva la CDN", clicca su `Seguente`{.action} e infine su`Conferma`{.action}.
 >>
 >> ![CDN](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/cdn-deactivation.png){.thumbnail}
-<!-- CP-STEPS-END:disable-cdn-domain -->
 
 ### Elimina l'opzione CDN sul tuo hosting
 
 Questa operazione consente di eliminare l’opzione CDN per l’intero hosting Web.
 
-<!-- CP-STEPS-START:cancel-cdn -->
 Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **3** passi.
 
 > [!tabs]
@@ -563,7 +544,6 @@ Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **3** pa
 >> >
 >> > Ricevi una email contenente la procedura di disattivazione della CDN. Segui le istruzioni fornite nel messaggio per confermare o annullare la richiesta.
 >>
-<!-- CP-STEPS-END:cancel-cdn -->
 
 ### Verifica che la CDN sia attiva
 

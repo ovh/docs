@@ -79,7 +79,6 @@ Un **nom de domaine** est composé de niveaux. Ces niveaux sont eux-mêmes gén�
 
 ///
 
-
 /// details | Qu'est-ce qu'un sous-domaine ?
 
 Un [nom de domaine](/links/web/domains) peut être associé à plusieurs types de services (e-mail, site web, etc.). Toutefois, un nom de domaine ne peut être associé qu'à un seul site web à la fois.
@@ -178,11 +177,9 @@ Pour les services qui ne seraient pas mentionnés, consultez la documentation re
 
 #### Cas 1 - Afficher un site web présent sur mon hébergement web OVHcloud avec un sous-domaine <a name="link-subdomain-case-1"></a>
 
-<!-- CP-STEPS-START:link-subdomain-hosting -->
 Tout comme pour un nom de domaine, pour autoriser un sous-domaine à afficher le contenu d'un dossier « cible » déclaré pour un site web présent sur un hébergement web, connectez-vous à l'[espace client OVHcloud](/links/manager) et sélectionnez `Web Cloud`{.action}. Cliquez sur `Hébergements`{.action} dans la colonne de gauche, sélectionnez l'hébergement concerné où se trouve votre site web puis choisissez l'onglet `Mes sites`{.action}.
 
 C'est ici que vous autorisez l'accès de votre sous-domaine à votre site web présent sur votre hébergement web.
-<!-- CP-STEPS-END:link-subdomain-hosting -->
 
 Pour plus de détails sur la configuration d'un domaine ou d'un sous-domaine sur un hébergement web, consultez notre guide « [Comment associer un nom de domaine à un site web existant ?](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website) ». Qu'il s'agisse d'un nom de domaine ou d'un sous-domaine, la procédure est la même.
 
@@ -193,11 +190,9 @@ Pour plus de détails sur la configuration d'un domaine ou d'un sous-domaine sur
 
 #### Cas 2 - Créer des adresses e-mail Exchange avec un sous-domaine <a name="link-subdomain-case-2"></a>
 
-<!-- CP-STEPS-START:link-subdomain-exchange -->
 Pour débloquer la création d'adresses e-mail Exchange personnalisées avec un sous-domaine, connectez-vous à l'[espace client OVHcloud](/links/manager) et sélectionnez `Web Cloud`{.action}. Cliquez sur `Microsoft`{.action} dans la colonne de gauche puis sur `Exchange`{.action}. Sélectionnez ensuite la plateforme Exchange que vous souhaitez utiliser avec votre sous-domaine. Sur la page qui s'affiche, rendez-vous dans l'onglet `Domaine associés`{.action} puis cliquez sur le bouton `Ajouter un domaine`{.action} à droite.
 
 Vous pourrez ainsi déclarer votre sous-domaine sur votre plateforme Exchange.
-<!-- CP-STEPS-END:link-subdomain-exchange -->
 
 Pour plus de détails sur la configuration d'une plateforme Exchange, consultez les guides suivants :
 

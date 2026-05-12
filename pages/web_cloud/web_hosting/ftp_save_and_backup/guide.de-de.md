@@ -58,7 +58,6 @@ Entscheiden Sie sich für eine Wiederherstellungsmethode, die Sie verwenden möc
 >
 > Unsere Roboter installieren das Backup auf Ihrem Hosting, bevor der FTP Inhalt gelöscht und von der Wiederherstellung überschrieben wird.
 
-<!-- CP-STEPS-START:check-disk-space -->
 Um die auf Ihrem Webhosting verwendete Quota zu überprüfen, klicken Sie auf die Tabs, um die **2** Schritte anzuzeigen.
 
 > [!tabs]
@@ -77,7 +76,6 @@ Um die auf Ihrem Webhosting verwendete Quota zu überprüfen, klicken Sie auf di
 >> Wenn mehr als die Hälfte des hier angezeigten FTP-Speicherplatzes Ihres Webhostings belegt ist, können Sie zum Beispiel große Dateien Ihrer Website auswählen und lokal sichern. (Sie können dazu [Filezilla](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide) verwenden).
 >>
 >> Löschen Sie diese anschließend aus Ihrem FTP-Speicherplatz. Dadurch verringert sich die Größe des genutzten FTP-Speicherplatzes und Sie können die Wiederherstellung über das OVHcloud-Kundencenter starten.
-<!-- CP-STEPS-END:check-disk-space -->
 
 Folgen Sie dieser Anleitung nun entsprechend der ausgewählten Wiederherstellungsmethode:
 
@@ -104,7 +102,6 @@ Folgen Sie dieser Anleitung nun entsprechend der ausgewählten Wiederherstellung
 > - Der Status "Wartung" wird in Ihrem [OVHcloud Kundencenter](/links/control-panel/web-hosting) angezeigt.
 > - Die gehosteten Webseiten zeigen eine "403 Forbidden"-Meldung an.
 
-<!-- CP-STEPS-START:restore-backup-cp -->
 Klicken Sie auf die Tabs, um die **5** Schritte anzuzeigen.
 
 > [!tabs]
@@ -147,7 +144,6 @@ Klicken Sie auf die Tabs, um die **5** Schritte anzuzeigen.
 >> Vergewissern Sie sich, dass bei der Wiederherstellung keine Datei verloren geht. Das könnte beispielsweise mit einer Datei passieren, die nach dem ausgewählten Datum in Ihren Speicherplatz hochgeladen wurde. Beachten Sie, dass bei der Wiederherstellung die aktuellen Daten vollständig mit den Backup-Daten überschrieben werden.
 >>
 >> Klicken Sie auf den Button `Bestätigen`{.action}, um die Wiederherstellung zu starten.
-<!-- CP-STEPS-END:restore-backup-cp -->
 
 > [!primary]
 >

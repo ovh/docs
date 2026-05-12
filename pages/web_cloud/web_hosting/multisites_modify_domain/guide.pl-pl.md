@@ -40,7 +40,6 @@ W przypadku korzystania z hostingu lub aktualizacji strony WWW może być koniec
 >
 > Zmiana parametrów przypisania domeny lub subdomeny może, w przypadku błędnej operacji, spowodować przerwę w dostępie do Twoich usług (Twojej strony WWW). W razie wątpliwości co do konieczności modyfikacji skontaktuj się z wyspecjalizowanym dostawcą
 
-<!-- CP-STEPS-START:modify-domain-settings -->
 Aby zmienić ustawienia przypisania już zadeklarowanej domeny lub poddomeny na Twoim ofercie hostingu, kliknij poniższe zakładki, aby wyświetlić kolejne **4** kroki.
 
 > [!tabs]
@@ -73,11 +72,9 @@ Aby zmienić ustawienia przypisania już zadeklarowanej domeny lub poddomeny na 
 >> ![Zmień domenę](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/modify-a-domain-step-1-all-disabled.png){.thumbnail}
 >>
 >> W dalszej części tego przewodnika znajdziesz opis każdego z dostępnych parametrów w powyższym oknie. Po przeczytaniu różnych opisów w etap "[Opis zmienialnych parametrów](#step1)", oraz po wprowadzeniu zmian, kliknij przycisk `Dalej`{.action} w prawym dolnym rogu okna, a następnie przejdź do [część 2](#step2).
-<!-- CP-STEPS-END:modify-domain-settings -->
 
 ### 1 - Opis parametrów możliwych do edycji <a name="step1"></a>
 
-<!-- CP-STEPS-START:description-editable-parameters -->
 > [!primary]
 >
 > Pola `Nazwa domeny`{.action} i `Katalog główny`{.action} nie są modyfikowalne, ponieważ dotyczą one strony internetowej znajdującej się na Twoim hostingu.
@@ -113,18 +110,13 @@ Dowiedz się więcej o tej opcji na naszej [stronie poświęconej szczegółowym
 
 Po wprowadzeniu zmian kliknij przycisk `Dalej`{.action} na dole po prawej stronie okna, aby przejść do [część 2](#step2).
 
-
-<!-- CP-STEPS-END:description-editable-parameters -->
-
 ### 2 - Podsumowanie zmian <a name="step2"></a>
 
-<!-- CP-STEPS-START:confirm-domain-changes -->
 Po kliknięciu przycisku `Dalej`{.action} znajdziesz podsumowanie ustawień, które zamierzasz zastosować do Twojej domeny:
 
 ![Modify domain resume](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/modify-domain-step2.png){.thumbnail}
 
 Jeśli wszystkie parametry są skonfigurowane zgodnie z Twoimi potrzebami, kliknij przycisk `Zatwierdź`{.action}.
-<!-- CP-STEPS-END:confirm-domain-changes -->
 
 W zależności od wybranych opcji wprowadzenie zmian może potrwać od kilku minut do kilku godzin.
 

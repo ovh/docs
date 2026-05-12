@@ -73,7 +73,6 @@ Um sich mit Ihrem Speicherplatz zu verbinden, benötigen Sie die folgenden Eleme
 - Die Serveradresse
 - Den Verbindungsport des Servers
 
-<!-- CP-STEPS-START:get-online-retrieve-ftp-credentials -->
 Diese Informationen wurden Ihnen per E-Mail bei der Installation Ihres Webhostings mitgeteilt. Wenn Sie nicht mehr im Besitz dieser Daten sind, klicken Sie auf die Tabs, um die **3** Schritte anzuzeigen.
 
 > [!tabs]
@@ -98,7 +97,6 @@ Diese Informationen wurden Ihnen per E-Mail bei der Installation Ihres Webhostin
 >> Falls nötig, konsultieren Sie unsere Anleitung: [Mit dem Speicherplatz eines Webhostings verbinden](/pages/web_cloud/web_hosting/ftp_connection).
 >>
 >> Wenn Sie das Passwort nicht kennen, nutzen Sie die Anleitung [Passwort eines FTP-Benutzers ändern](/pages/web_cloud/web_hosting/ftp_change_password).
-<!-- CP-STEPS-END:get-online-retrieve-ftp-credentials -->
 
 Wenn Sie alle nötigen Informationen haben, können Sie sich in Ihren Speicherplatz einloggen. Hierfür haben Sie zwei Möglichkeiten:
 
@@ -116,7 +114,6 @@ Wenn Sie alle nötigen Informationen haben, können Sie sich in Ihren Speicherpl
 
 Nachdem Sie sich bei Ihrem Speicherbereich angemeldet haben, müssen Sie lediglich noch die Dateien Ihrer Website hochladen. **Wir möchten Sie besonders darauf hinweisen, auf welchen Ordner Sie die Dateien hochladen**, insbesondere wenn Sie mehrere Websites auf Ihrem Webhosting deklariert haben.
 
-<!-- CP-STEPS-START:get-online-find-root-folder -->
 Um den Ordner zu prüfen, in den die Website veröffentlicht werden muss, klicken Sie auf die folgenden Tabs, um die **3** Schritte nacheinander anzuzeigen.
 
 > [!tabs]
@@ -135,7 +132,6 @@ Um den Ordner zu prüfen, in den die Website veröffentlicht werden muss, klicke
 > **Schritt 3**
 >>
 >> Veröffentlichen Sie anschließend die Dateien der Website in diesem Ordner.
-<!-- CP-STEPS-END:get-online-find-root-folder -->
 
 Es kann vorkommen, dass Sie auf Ihrem Speicherbereich eine Datei namens „index.html“ finden. Diese kann von OVHcloud bei der Installation Ihres Webhostings erstellt worden sein, um eine Standardseite auf Ihrer Website anzuzeigen. Falls dies der Fall ist, vergessen Sie nicht, sie zu löschen, wenn Sie Ihre Dateien hochladen.
 
@@ -161,7 +157,6 @@ Wenn Sie gerade eine Website migrieren, rufen Sie die vorhandene Datenbank bei I
 
 Wenn Sie bereits eine Datenbank besitzen, die Sie verwenden möchten (beispielsweise aus einem [OVHcloud Webhosting](/links/web/hosting) Angebot oder einer [Web Cloud Databases](/links/web/databases) Lösung), halten Sie bitte folgende Informationen bereit: Benutzername, zugehöriges Passwort, Name der Datenbank sowie die Serveradresse. Gehen Sie nun zum nächsten Schritt über.
 
-<!-- CP-STEPS-START:find-db-credentials -->
 Wenn Sie eine neue Datenbank bei OVHcloud erstellen möchten, klicken Sie auf die folgenden Tabs, um die **3** Schritte nacheinander anzuzeigen.
 
 > [!tabs]
@@ -182,13 +177,11 @@ Wenn Sie eine neue Datenbank bei OVHcloud erstellen möchten, klicken Sie auf di
 >> Klicken Sie auf den Button `Datenbank erstellen`{.action} oder, wenn der Button nicht angezeigt wird, auf `Aktionen`{.action} und dann auf `Datenbank erstellen`{.action}. Folgen Sie den angezeigten Informationen.
 >>
 >> ![website installation](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/tab.png){.thumbnail}
-<!-- CP-STEPS-END:find-db-credentials -->
 
 #### 3.3. Bestehende Datenbank importieren
 
 Wenn Sie eine bereits bestehende Website migrieren, importieren Sie die bestehende Datenbank in die neu erstellte Datenbank. Wenn Sie eine neue Website erstellen, können Sie direkt zum nächsten Schritt übergehen.
 
-<!-- CP-STEPS-START:get-online-find-db-server -->
 Für den Import gibt es mehrere Möglichkeiten, OVHcloud bietet einen solchen über sein Kundencenter an. Klicken Sie auf die folgenden Tabs, um die **3** Schritte nacheinander anzuzeigen.
 
 > [!tabs]
@@ -205,7 +198,6 @@ Für den Import gibt es mehrere Möglichkeiten, OVHcloud bietet einen solchen ü
 > **Schritt 3**
 >>
 >> Klicken Sie auf den Button `...`{.action} rechts von Ihrer Datenbank und dann auf `Datei importieren`{.action}.
-<!-- CP-STEPS-END:get-online-find-db-server -->
 
 #### 3.4. Website mit der Datenbank verbinden
 

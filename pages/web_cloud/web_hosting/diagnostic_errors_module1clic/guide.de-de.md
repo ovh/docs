@@ -52,7 +52,6 @@ Wenn diese jedoch nicht korrekt konfiguriert sind, kann die Installation des 1-K
 
 /// details | Ihr Domainname wird bei der Erstellung des 1 Klick Moduls nicht angeboten
 
-<!-- CP-STEPS-START:check-module-status -->
 ![domainenotproposed](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/1-click-modules/domain-unavailable.png){.thumbnail}
 
 Klicken Sie auf die Tabs, um die **4** Schritte anzuzeigen.
@@ -84,13 +83,11 @@ Klicken Sie auf die Tabs, um die **4** Schritte anzuzeigen.
 >> |---|---|
 >> |Der Domain- oder SubDomainname, der mit der Website verbunden ist, die Sie erstellen möchten, wird nicht in der Tabelle im Tab `Meine Seiten`{.action} angezeigt.|Fügen Sie Ihren Domainnamen gemäß [diesen Anweisungen](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website) hinzu.|
 >> |Der Domainname wurde vom Hosting getrennt, ohne dass Sie etwas dafür getan haben.|Wenn Ihr Domainname oder seine [DNS-Zone](/pages/web_cloud/domains/dns_zone_edit) nicht über Ihren OVHcloud Kunden-Account verwaltet wird, fügen Sie Ihren Domainnamen über den Tab `Meine Seiten`{.action} gemäß [dieser Anleitung](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website) hinzu.|
-<!-- CP-STEPS-END:check-module-status -->
 
 ///
 
 /// details | "Beim Laden der Informationen ist ein Fehler aufgetreten (You need at least one free database)"
 
-<!-- CP-STEPS-START:change-root-folder -->
 ![No databases available](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/1-click-modules/message-no-db-available.png){.thumbnail}
 
 Diese Meldung erscheint, wenn Sie die Installation Ihres 1-Klick-Moduls starten, wenn Sie nicht oder nicht mehr die Möglichkeit haben, eine neue Datenbank für Ihr Webhosting zu erstellen.
@@ -114,7 +111,6 @@ Klicken Sie auf die Tabs, um die **2** Schritte anzuzeigen.
 >>
 >> ![order_a_database](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/order-a-db.png){.thumbnail}
 >>
-<!-- CP-STEPS-END:change-root-folder -->
 
 Anschließend können Sie ein neues 1-Klick-Modul installieren.
 
@@ -130,7 +126,6 @@ Anschließend können Sie ein neues 1-Klick-Modul installieren.
 > Vergleich unserer [Webhosting-Angebote](/links/web/hosting).
 >
 
-<!-- CP-STEPS-START:find-admin-credentials -->
 Klicken Sie auf die Tabs, um die **2** Schritte anzuzeigen.
 
 > [!tabs]
@@ -146,7 +141,6 @@ Klicken Sie auf die Tabs, um die **2** Schritte anzuzeigen.
 >>
 >> ![upgrade_hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/upgrade-perso.png){.thumbnail}
 >>
-<!-- CP-STEPS-END:find-admin-credentials -->
 
 Die Angebote [Pro](/links/web/hosting-professional-offer) und [Performance](/links/web/hosting-performance-offer) ermöglichen Ihnen die Erstellung von bis zu drei zusätzlichen 1-Klick-Modulen mit einer unabhängigen Datenbank für jedes Modul. Mit den **Performance** Angeboten können Sie auch kostenlos einen [Web Cloud Databases](/links/web/databases) Server aktivieren.
 
@@ -159,7 +153,6 @@ Anschließend können Sie ein neues 1-Klick-Modul installieren.
 > Das Löschen einer Datenbank ist endgültig. Außerdem werden die Backups der betreffenden Datenbank gelöscht. Im Zweifelsfall wenden Sie sich an Ihren Webmaster oder einen unserer [Partner](/links/partner).
 >
 
-<!-- CP-STEPS-START:diag-delete-database -->
 Klicken Sie auf die Tabs, um die **2** Schritte anzuzeigen.
 
 > [!tabs]
@@ -175,7 +168,6 @@ Klicken Sie auf die Tabs, um die **2** Schritte anzuzeigen.
 >>
 >> ![delete_a_database](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/sharedsql-deletion.png){.thumbnail}
 >>
-<!-- CP-STEPS-END:diag-delete-database -->
 
 Anschließend können Sie ein neues 1-Klick-Modul installieren.
 
@@ -215,7 +207,6 @@ Nachdem Sie mit der Erstellung Ihres 1-Klick-Moduls begonnen haben, haben Sie ei
 
 Diese Nachricht bedeutet, dass das **Wurzelverzeichnis** der Website, an die Ihr Domainname gebunden ist, bereits eine oder mehrere Dateien oder Ordner enthält.
 
-<!-- CP-STEPS-START:change-domain-root-folder -->
 Um Ihren Domainnamen an eine andere Website (qua Wurzelverzeichnis) zu verknüpfen, klicken Sie auf die Tabs, um die **4** Schritte anzuzeigen.
 
 > [!tabs]
@@ -244,7 +235,6 @@ Um Ihren Domainnamen an eine andere Website (qua Wurzelverzeichnis) zu verknüpf
 > **Schritt 4**
 >>
 >> Nachdem der Domainname vom Hosting getrennt wurde, folgen Sie unserer Anleitung "[Mehrere Websites auf einem Webhosting einrichten](/pages/web_cloud/web_hosting/multisites_configure_multisite)".
-<!-- CP-STEPS-END:change-domain-root-folder -->
 
 Sie können sich auch über das [FTP-Protokoll](/pages/web_cloud/web_hosting/ftp_connection) mit Ihrem Webhosting verbinden und den Inhalt des Ordners löschen, nachdem Sie es lokal gesichert haben oder nachdem Sie den gesamten Inhalt in ein anderes FTP-Verzeichnis verschoben haben.
 
@@ -262,7 +252,6 @@ Um diese Konfiguration zu überprüfen, lesen Sie unsere Anleitung "[Webhosting-
 
 /// details | "Fehler beim Laden der Informationen (There is not enough space on your hosting (you need at least xxx MB))"
 
-<!-- CP-STEPS-START:check-database-credentials -->
 ![not_enough_space](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/1-click-modules/message-not-enough-ftp-space.png){.thumbnail}
 
 Diese Meldung weist darauf hin, dass der [FTP-Speicherplatz](/pages/web_cloud/web_hosting/ftp_connection) Ihres Webhostings zu viele Daten enthält. 
@@ -301,7 +290,6 @@ Klicken Sie auf die Tabs, um die **2** Schritte anzuzeigen.
 >>
 >> ![upgrade_hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/upgrade-perso.png){.thumbnail}
 >>
-<!-- CP-STEPS-END:check-database-credentials -->
 
 Die Angebote [Pro](/links/web/hosting-professional-offer) und [Performance](/links/web/hosting-performance-offer) ermöglichen Ihnen die Erstellung von bis zu drei zusätzlichen 1-Klick-Modulen mit einer unabhängigen Datenbank für jedes Modul. Mit den **Performance** Angeboten können Sie auch kostenlos einen [Web Cloud Databases](/links/web/databases) Server aktivieren.
 
@@ -315,7 +303,6 @@ Nachdem Sie mit der Installation Ihres 1-Klick-Moduls im fortgeschrittenen Modus
 
 Überprüfen Sie die Login-Daten Ihrer Datenbank. Weitere Informationen finden Sie in [unserer Anleitung](/pages/web_cloud/web_hosting/cms_install_1_click_modules).
 
-<!-- CP-STEPS-START:diag-delete-module -->
 Löschen Sie anschließend Ihr 1-Klick-Modul. Klicken Sie dazu auf die Tabs, um die **2** Schritte anzuzeigen.
 
 > [!tabs]
@@ -338,7 +325,6 @@ Löschen Sie anschließend Ihr 1-Klick-Modul. Klicken Sie dazu auf die Tabs, um 
 >> > Achten Sie darauf, nur die zuletzt gestartete Installation zu entfernen. Stellen Sie hierzu sicher, dass es sich um das korrekte Verzeichnis in der Spalte `Path` (Pfad) handelt.
 >> >
 >>
-<!-- CP-STEPS-END:diag-delete-module -->
 
 Starten Sie dann die Installation eines neuen 1-Klick-Moduls.
 
@@ -382,7 +368,6 @@ Sie haben die Installation eines 1-Klick-Moduls im [erweiterten Modus](/pages/we
 
 Sie haben die Installation eines 1-Klick-Moduls im [erweiterten Modus](/pages/web_cloud/web_hosting/cms_install_1_click_modules) auf einer Datenbank auf einem [Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb) Server gestartet. Sie haben diese Fehlermeldung per E-Mail erhalten. Dies bedeutet, dass der eingegebene Name des Datenbankservers falsch ist.
 
-<!-- CP-STEPS-START:find-db-server-name -->
 Um den Namen Ihres Datenbankservers zu finden, klicken Sie auf die Tabs, um die **2** Schritte anzuzeigen.
 
 > [!tabs]
@@ -396,13 +381,11 @@ Um den Namen Ihres Datenbankservers zu finden, klicken Sie auf die Tabs, um die 
 >>
 >> Der Name des zu verwendenden Servers wird in der Randleiste `Verbindungsinformationen`, Unterabschnitt `SQL`, unter dem Begriff `Hostname` angezeigt.
 >>
-<!-- CP-STEPS-END:find-db-server-name -->
 
 ///
 
 /// details | Ihre alte Website wird weiterhin angezeigt
 
-<!-- CP-STEPS-START:verify-db-connection -->
 Klicken Sie auf die Tabs, um die **2** Schritte anzuzeigen.
 
 > [!tabs]
@@ -416,7 +399,6 @@ Klicken Sie auf die Tabs, um die **2** Schritte anzuzeigen.
 >>
 >> Klicken Sie im Tab `1-Klick-Module`{.action} auf den Link Ihrer Website in der Spalte `Pfad`. Ein neuer Tab öffnet sich mit Ihrer Website. Der Ihrer Installation zugewiesene Domainname wird in der Adresse Ihres Browsers angezeigt. Wenn Ihre Domain zum Beispiel "domain.tld" ist, wird möglicherweise eine andere Domain oder eine OVHcloud Standardseite angezeigt.
 >>
-<!-- CP-STEPS-END:verify-db-connection -->
 
 Diese Fehlfunktion kann mehrere Ursachen haben:
 

@@ -58,7 +58,6 @@ Inoltre, dovrai indicare il metodo di ripristino che intendi adottare:
 >
 > I nostri sistemi installano il backup sul tuo hosting prima di eliminare il contenuto FTP che verrà sostituito dal ripristino.
 
-<!-- CP-STEPS-START:check-disk-space -->
 Per verificare la quota utilizzata sull'hosting, clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **2** passi.
 
 > [!tabs]
@@ -77,7 +76,6 @@ Per verificare la quota utilizzata sull'hosting, clicca sulle schede qui sotto p
 >> Lo spazio di storage utilizzato compare sotto questa voce.Se lo spazio di storage FTP utilizzato è superiore alla metà dello spazio di storage FTP totale della tua offerta di hosting, recupera in locale alcuni elementi voluminosi del tuo sito Web (per farlo, puoi utilizzare [Filezilla](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide)).
 >>
 >> Eliminali dallo spazio di storage FTP. Questa operazione diminuirà la dimensione dello spazio di storage FTP utilizzato e potrai avviare il ripristino dallo Spazio Cliente OVHcloud.
-<!-- CP-STEPS-END:check-disk-space -->
 
 Una volta scelto il metodo di ripristino più adatto alle tue esigenze, prosegui nella lettura di questa guida nel paragrafo corrispondente:
 
@@ -104,7 +102,6 @@ Una volta scelto il metodo di ripristino più adatto alle tue esigenze, prosegui
 > - Lo stato di "manutenzione" compare nello [Spazio Cliente OVHcloud](/links/control-panel/web-hosting).
 > - Il(i) sito(i) ospita(i) mostra(no) una pagina "403 Forbidden".
 
-<!-- CP-STEPS-START:restore-backup-cp -->
 Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **5** passi.
 
 > [!tabs]
@@ -147,7 +144,6 @@ Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **5** pa
 >> Assicurati che questa azione non comporti la perdita di dati, ad esempio di un file archiviato sullo spazio di storage dopo la data di ripristino selezionata. Come già precisato, il backup sovrascriverà i dati presenti nello storage.
 >>
 >> Clicca su `Conferma`{.action} per avviare l’operazione.
-<!-- CP-STEPS-END:restore-backup-cp -->
 
 > [!primary]
 >

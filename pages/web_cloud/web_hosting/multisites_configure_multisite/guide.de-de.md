@@ -58,7 +58,6 @@ Möchten Sie eine neue Website auf Ihrem Hosting-Paket hinzufügen?
 
 Dieser Abschnitt gilt nur, wenn der Domainname (und die DNS-Zone), mit dem Sie Ihre Website erstellen möchten, **in Ihrem OVHcloud Kundencenter** vorhanden ist.
 
-<!-- CP-STEPS-START:add-ovhcloud-domain -->
 Klicken Sie auf die Tabs, um die **7** Schritte anzuzeigen.
 
 > [!tabs]
@@ -156,7 +155,6 @@ Klicken Sie auf die Tabs, um die **7** Schritte anzuzeigen.
 >>
 >> > [!primary]
 >> > Die Änderung der DNS-Konfiguration Ihres Domainnamens benötigt eine Propagationszeit, die bis zu 24 Stunden dauern kann, bevor sie vollständig wirksam ist.
-<!-- CP-STEPS-END:add-ovhcloud-domain -->
 
 ///
 
@@ -164,7 +162,6 @@ Klicken Sie auf die Tabs, um die **7** Schritte anzuzeigen.
 
 Dieser Abschnitt gilt nur, wenn Sie eine Website mit einem Domainnamen hinzufügen möchten, der nicht in Ihrem OVHcloud Kunden-Account vorhanden ist. Dies kann ein Domainname sein, der in einem anderen OVHcloud Kunden-Account vorhanden ist oder bei einem anderen Anbieter registriert ist.
 
-<!-- CP-STEPS-START:add-external-domain -->
 Klicken Sie auf die Tabs, um die **7** Schritte anzuzeigen.
 
 > [!tabs]
@@ -245,7 +242,6 @@ Klicken Sie auf die Tabs, um die **7** Schritte anzuzeigen.
 >> ![choose module](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/add-a-site-choose-1-click-module.png)
 >>
 >> Falls Sie Ihre Website stattdessen manuell installieren möchten, laden Sie ihre Dateien herunter und übertragen Sie sie in den entsprechenden Root-Ordner auf dem Speicherplatz Ihres Webhostings. Weitere Informationen finden Sie in unserer Dokumentation "[Eine Website auf Ihrem Webhosting online stellen](/pages/web_cloud/web_hosting/hosting_how_to_get_my_website_online)".
-<!-- CP-STEPS-END:add-external-domain -->
 
 ///
 
@@ -253,7 +249,6 @@ Klicken Sie auf die Tabs, um die **7** Schritte anzuzeigen.
 
 Dieser Abschnitt gilt ausschließlich, wenn Sie eine Website mit einem Domainnamen hinzufügen möchten, der noch nicht registriert wurde, weder bei OVHcloud noch bei einem anderen Registrar. Mit anderen Worten, es geht um Domainnamen, die noch nicht existieren.
 
-<!-- CP-STEPS-START:add-site-1click-module -->
 Klicken Sie auf die Tabs, um die **5** Schritte anzuzeigen.
 
 > [!tabs]
@@ -290,7 +285,6 @@ Klicken Sie auf die Tabs, um die **5** Schritte anzuzeigen.
 >> > [!primary]
 >> >
 >> > Sobald Ihr Domainname in Ihrem OVHcloud Kundencenter angezeigt wird, folgen Sie dem Abschnitt "[Fügen Sie eine Website zu Ihrem Hosting-Paket hinzu](#add-domain-ovhcloud)" dieser Anleitung, um Ihre Website Ihrem Webhosting hinzuzufügen.
-<!-- CP-STEPS-END:add-site-1click-module -->
 
 ///
 

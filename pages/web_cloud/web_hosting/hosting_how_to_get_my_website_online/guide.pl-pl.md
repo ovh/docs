@@ -75,7 +75,6 @@ Aby zalogować się do przestrzeni dyskowej, powinieneś posiadać następujące
 - adres serwera;
 - port połączenia z serwerem.
 
-<!-- CP-STEPS-START:get-online-retrieve-ftp-credentials -->
 Dane te otrzymasz w wiadomości e-mail potwierdzającej instalację hostingu. Jeśli nie posiadasz wskazanych wyżej informacji, kliknij poniższe zakładki, aby wyświetlić kolejne **3** kroki.
 
 > [!tabs]
@@ -100,7 +99,6 @@ Dane te otrzymasz w wiadomości e-mail potwierdzającej instalację hostingu. Je
 >> Jeśli potrzebujesz więcej informacji, zapoznaj się z przewodnikiem: "[Logowanie do przestrzeni dyskowej hostingu WWW](/pages/web_cloud/web_hosting/ftp_connection)".
 >>
 >> W razie utraty hasła zapoznaj się z instrukcjami zawartymi w przewodniku "[Zmiana hasła do konta FTP](/pages/web_cloud/web_hosting/ftp_change_password)".
-<!-- CP-STEPS-END:get-online-retrieve-ftp-credentials -->
 
 Gdy będziesz posiadał już wszystkie potrzebne informacje, możesz uzyskać dostęp do przestrzeni dyskowej dwa różnymi metodami:
 
@@ -118,7 +116,6 @@ Gdy będziesz posiadał już wszystkie potrzebne informacje, możesz uzyskać do
 
 Po zalogowaniu się do swojej przestrzeni dyskowej, wystarczy, że wgrasz pliki swojej strony internetowej. **Zachęcamy Cię, byś był szczególnie uważny, wybierając katalog, do którego chcesz przesłać pliki**, zwłaszcza jeśli na swoim hostingu zadeklarowałeś wiele stron internetowych.
 
-<!-- CP-STEPS-START:get-online-find-root-folder -->
 Aby sprawdzić folder, w którym należy opublikować stronę internetową, kliknij poniższe zakładki, aby wyświetlić kolejne **3** kroki.
 
 > [!tabs]
@@ -137,7 +134,6 @@ Aby sprawdzić folder, w którym należy opublikować stronę internetową, klik
 > **Krok 3**
 >>
 >> Następnie opublikuj pliki strony internetowej w tym folderze.
-<!-- CP-STEPS-END:get-online-find-root-folder -->
 
 Możesz zauważyć na swojej przestrzeni dyskowej plik o nazwie „index.html”. Może on zostać utworzony przez OVHcloud podczas instalacji Twojego hostingu, aby wyświetlić stronę domyślną na Twojej stronie internetowej. Jeśli tak jest, nie zapomnij go usunąć podczas wdrażania swoich plików.
 
@@ -163,7 +159,6 @@ Jeśli przenosisz stronę internetową, pobierz istniejącą bazę danych ze swo
 
 Jeśli dysponujesz już bazą danych (zawartą w ofercie [hostingu OVHcloud](/links/web/hosting),[Web Cloud Databases](/links/web/databases)), przygotuj nazwę użytkownika i hasło, nazwę bazy oraz adres serwera. Następnie przejdź do kolejnego etapu.
 
-<!-- CP-STEPS-START:find-db-credentials -->
 Jeśli chcesz utworzyć nową bazę danych w OVHcloud, kliknij poniższe zakładki, aby wyświetlić kolejne **3** kroki.
 
 > [!tabs]
@@ -184,13 +179,11 @@ Jeśli chcesz utworzyć nową bazę danych w OVHcloud, kliknij poniższe zakład
 >> Kliknij przycisk `Utwórz bazę danych`{.action} lub, jeśli przycisk się nie wyświetla, kliknij przycisk `Operacje`{.action}, po czym przycisk `Utwórz bazę danych`{.action}. Postępuj zgodnie z kolejnymi instrukcjami, które się wyświetlą.
 >>
 >> ![instalacja strony www](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/tab.png){.thumbnail}
-<!-- CP-STEPS-END:find-db-credentials -->
 
 #### 3.3. Import istniejącej bazy danych
 
 Jeśli przenosisz stronę WWW do OVHcloud, zaimportuj istniejącą bazę danych do nowo utworzonej bazy. W przypadku nowej strony, przejdź do kolejnego etapu.
 
-<!-- CP-STEPS-START:get-online-find-db-server -->
 Istnieje kilka metod importu. OVHcloud oferuje jedną z nich w Panelu klienta. Kliknij poniższe zakładki, aby wyświetlić kolejne **3** kroki.
 
 > [!tabs]
@@ -207,7 +200,6 @@ Istnieje kilka metod importu. OVHcloud oferuje jedną z nich w Panelu klienta. K
 > **Krok 3**
 >>
 >> Kliknij przycisk `...`{.action} znajdujący się po prawej stronie bazy danych, a następnie kliknij `Importuj plik`{.action}.
-<!-- CP-STEPS-END:get-online-find-db-server -->
 
 #### 3.4. Połączenie strony internetowej z bazą danych
 

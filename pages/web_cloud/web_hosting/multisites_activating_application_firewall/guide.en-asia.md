@@ -58,7 +58,6 @@ The preconfigured Core Rule Set (CRS) of our *ModSecurity* protects your website
 
 /// details | Enable the application firewall on your entire web hosting in the PHP configuration
 
-<!-- CP-STEPS-START:enable-firewall -->
 Click on the tabs below to view each of the **3** steps.
 
 > [!tabs]
@@ -83,13 +82,11 @@ Click on the tabs below to view each of the **3** steps.
 >> ![managephpconfig](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/application-firewall-step-2.png){.thumbnail}
 >> 
 >> In the new window, make sure the **Application Firewall** option is set to `Enabled`{.action}. Then click on the `Confirm`{.action} button.
-<!-- CP-STEPS-END:enable-firewall -->
 
 ///
 
 /// details | Enable the application firewall only on a specific domain name or subdomain
 
-<!-- CP-STEPS-START:disable-firewall -->
 Click on the tabs below to view each of the **4** steps.
 
 > [!tabs]
@@ -126,7 +123,6 @@ Click on the tabs below to view each of the **4** steps.
 >> Once the firewall is enabled for your domain name or subdomain, the **Enabled** label appears in the **Firewall** column.
 >> 
 >> If the **Enabled** label does not appear after a few minutes on the row corresponding to the relevant domain name or subdomain, refresh the page.
-<!-- CP-STEPS-END:disable-firewall -->
 
 ///
 

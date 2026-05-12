@@ -56,7 +56,6 @@ Puede alojar varios sitios web en la misma oferta de alojamiento web, incluso si
 
 Esta parte se aplica únicamente si su nombre de dominio y/o su zona DNS activa se encuentran **en su área de cliente de OVHcloud**.
 
-<!-- CP-STEPS-START:add-domain-ovhcloud -->
 Haga clic en las fichas siguientes para ver cada una de las **6** etapas.
 
 > [!tabs]
@@ -139,7 +138,6 @@ Haga clic en las fichas siguientes para ver cada una de las **6** etapas.
 >> Una vez realizadas sus opciones, haga clic en el botón `Continuar`{.action} para finalizar la adición de su nombre de dominio o de su subdominio a su sitio web. Esta adición puede tardar hasta una hora.
 >>
 >> Sin embargo, la modificación de la configuración DNS de su nombre de dominio requiere un tiempo de propagación que puede alcanzar las 24 horas antes de que sea plenamente efectiva.
-<!-- CP-STEPS-END:add-domain-ovhcloud -->
 
 ///
 
@@ -147,7 +145,6 @@ Haga clic en las fichas siguientes para ver cada una de las **6** etapas.
 
 Esta parte se aplica únicamente si su nombre de dominio no está presente en su cuenta OVHcloud.
 
-<!-- CP-STEPS-START:add-domain-external -->
 Haga clic en las fichas siguientes para ver cada una de las **6** etapas.
 
 > [!tabs]
@@ -210,7 +207,6 @@ Haga clic en las fichas siguientes para ver cada una de las **6** etapas.
 >> > Tenga en cuenta que si desea añadir `sub.domain.tld`, deberá crear la entrada TXT `ovhcontrol.domain.tld` y no la entrada `ovhcontrol.sub.domain.tld`.
 >> >
 >> > Para encontrar la zona DNS activa de su nombre de dominio, consulte los [servidores DNS](/pages/web_cloud/domains/dns_server_edit) a los que está vinculado. Solo deberá validar el nombre de dominio mediante el campo **TXT**, no todos sus subdominios.|
-<!-- CP-STEPS-END:add-domain-external -->
 
 ///
 
@@ -218,7 +214,6 @@ Haga clic en las fichas siguientes para ver cada una de las **6** etapas.
 
 Esta parte se aplica únicamente si su nombre de dominio aún no ha sido registrado, ya sea en OVHcloud o en otro registrador. En otras palabras, concierne a los dominios que aún no han sido adquiridos.
 
-<!-- CP-STEPS-START:add-domain-new -->
 Haga clic en las fichas siguientes para ver cada una de las **5** etapas.
 
 > [!tabs]
@@ -255,7 +250,6 @@ Haga clic en las fichas siguientes para ver cada una de las **5** etapas.
 >> > [!primary]
 >> >
 >> > Si, tras unas horas, observa que su nuevo nombre de dominio no se ha asociado correctamente a su sitio web, siga la parte "[Añadir un nombre de dominio gestionado desde su área de cliente de OVHcloud](#add-domain-ovhcloud)" de esta guía.
-<!-- CP-STEPS-END:add-domain-new -->
 
 ///
 
