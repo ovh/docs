@@ -50,9 +50,6 @@ sudo ipmitool mc info
 
 ![BMC firmware version output from ipmitool on Linux](images/ipmi_tool.png){.thumbnail}
 
-- If the firmware version is equal to or lower than 1.14, please contact our support team by creating a [support ticket via the OVHcloud Help Center](/links/support-contact) to request a firmware update. 
-- If the version is higher than 1.14, no action is required.
-
 ### On a Windows Server
 
 Currently, we are only able to provide the procedure for servers running Linux operating systems. We recommend that you restart your Windows server in our [rescue mode](/pages/bare_metal_cloud/dedicated_servers/rescue_mode) environment to check the version by following the instructions below.
@@ -72,9 +69,6 @@ ipmitool mc info
 ```
 
 ![BMC firmware version output from ipmitool in rescue mode](images/ipmi_tool_rescue.png){.thumbnail}
-
-- If the firmware version is equal to or lower than 1.14, please contact our support team by creating a [support ticket via the OVHcloud Help Center](/links/support-contact) to request a firmware update. 
-- If the version is higher than 1.14, no action is required.
 
 ## Go further
 
