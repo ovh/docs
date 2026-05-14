@@ -49,7 +49,7 @@ sudo sh <(curl https://autoinstall.plesk.com/plesk-installer || wget -O - https:
 
 Patientez ensuite le temps de l'installation. 
 
-### Étape 2 : finaliser la configuration et ajouter une license
+### Étape 2 : finaliser la configuration et ajouter une licence
 
 Une fois l’installation terminée, l’interface en ligne de commande (CLI) affichera les informations suivantes :
 

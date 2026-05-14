@@ -1,6 +1,6 @@
 ---
 title: "Créer un VPN-as-a-Service (VPNaaS) pour vos instances Local Zones avec Tailscale"
-excerpt: "Découvrez comment intégrer Tailscale dans vos instance Local Zones OVHcloud pour mettre en place une solution VPN-as-a-Service (VPNaaS)"
+excerpt: "Découvrez comment intégrer Tailscale dans vos instances Local Zones OVHcloud pour mettre en place une solution VPN-as-a-Service (VPNaaS)"
 updated: 2024-09-24
 ---
 
@@ -24,7 +24,7 @@ Cette fonctionnalité vous permet de :
 - Un [accès SSH à vos instances Public Cloud OVHcloud Local Zones](/pages/public_cloud/compute/creating-ssh-keys-pci).
 - Un compte [Tailscale](https://tailscale.com/) avec accès administrateur.
 - Une clé [Tailscale Auth Key](https://tailscale.com/kb/1085/auth-keys) (que vous pourrez générer depuis l'interface d’administration Tailscale).
-- Des connaissance du protocole SSH et des commandes de base du terminal. Pour plus d'informations sur le SSH, consultez notre guide sur [comment créer et utiliser des clés SSH pour les instances Public Cloud](/pages/public_cloud/compute/creating-ssh-keys-pci).
+- Des connaissances du protocole SSH et des commandes de base du terminal. Pour plus d'informations sur le SSH, consultez notre guide sur [comment créer et utiliser des clés SSH pour les instances Public Cloud](/pages/public_cloud/compute/creating-ssh-keys-pci).
 
 ## En pratique
 
@@ -156,6 +156,6 @@ N’hésitez pas à nous faire part de vos questions, retours et suggestions pou
 
 - Sur le [serveur Discord OVHcloud](https://discord.gg/ovhcloud)
 
-Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](/links/professional-services) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
+Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en œuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](/links/professional-services) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
 
 Rejoignez notre [communauté d'utilisateurs](/links/community).

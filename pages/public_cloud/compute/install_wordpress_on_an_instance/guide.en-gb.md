@@ -15,7 +15,7 @@ This tutorial provides the basic steps for a manual installation of WordPress on
 > [!warning]
 >This guide will show you how to use one or more OVHcloud solutions with external tools, and will describe the actions to be carried out in a specific context. Please remember to adapt these actions to fit your situation.
 >
->If you encounter any difficulties performing these actions, please contact a [specialist service provider](/links/partner) and/or discuss the issue with [our community](https://community.ovh.com/en/). OVHcloud cannot provide you with technical support in this regard.
+>If you encounter any difficulties performing these actions, please contact a [specialist service provider](/links/partner) and/or discuss the issue with [our community](/links/community). OVHcloud cannot provide you with technical support in this regard.
 >
 
 ## Requirements
@@ -39,7 +39,7 @@ This tutorial provides the basic steps for a manual installation of WordPress on
 
 > [!primary]
 >
-> The following instructions are verfied for Debian 11. Since Ubuntu is based on Debian the tutorial should work for a current Ubuntu distribution as well.
+> The following instructions are verified for Debian 11. Since Ubuntu is based on Debian the tutorial should work for a current Ubuntu distribution as well.
 
 In order to access your installation via a domain name, you need to attach it to your instance. This is done by editing the DNS zone which you can do in your [OVHcloud Control Panel](/links/manager), provided OVHcloud is your domain registrar **and** the domain name uses OVHcloud DNS servers.
 
@@ -233,7 +233,7 @@ In the next step, you can pre-configure your website's general information and c
 
 ![wordpress](images/wp_install2.png){.thumbnail}
 
-Once this is confirmed, you will be able to log in to your website's administation panel with the user credentials defined in the previous step.
+Once this is confirmed, you will be able to log in to your website's administration panel with the user credentials defined in the previous step.
 
 > [!primary]
 >

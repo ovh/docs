@@ -1,5 +1,5 @@
 ---
-title: Lancer un script lors de la creation d’une instance
+title: Lancer un script lors de la création d’une instance
 updated: 2022-03-18
 ---
 
@@ -17,7 +17,7 @@ Dans certaines situations, il vous sera nécessaire de lancer un script lors de 
 
 ## En pratique
 
-### Creation d'un script
+### Création d'un script
 
 Il existe plusieurs possibilités de scripts utiles à lancer lors de la création d'une instance. Vous pouvez par exemple utiliser des  **scripts shell**  :
 
@@ -33,7 +33,7 @@ mkdir /home/ovh/.ssh
 echo "VOTRE_CLE_SSH_PUBLIQUE" > /home/ovh/.ssh/authorized_keys
 ```
 
-Ce script vous permet de créer un utilisateur nommé "**ovh**". On lui donne ensuite les accés **sudo** et on ajoute sa clé ssh.
+Ce script vous permet de créer un utilisateur nommé "**ovh**". On lui donne ensuite les accès **sudo** et on ajoute sa clé ssh.
 
 - Modification de la configuration SSH :
 
@@ -47,7 +47,7 @@ service ssh restart
 
 Ce script permet de modifier le port SSH par défaut (22 -> 2211) et d'interdire la connexion à l'aide de l'utilisateur "**root**".
 
-- Mise à jour des packets et installation d'un serveur WEB :
+- Mise à jour des paquets et installation d'un serveur WEB :
 
 ```bash
 #!/bin/bash
@@ -87,9 +87,9 @@ Ce script permet donc de créer un utilisateur "**ovh**" ayant les droits sudo, 
 > utilisateur.
 > 
 
-### Creation de l'instance
+### Création de l'instance
 
-Après avoir récupéré la liste des images et des modèles d'instance, il est possible de lancer le script avec Cloud-init grâce à l'argument **--user- data** :
+Après avoir récupéré la liste des images et des modèles d'instance, il est possible de lancer le script avec Cloud-init grâce à l'argument **--user-data** :
 
 ```bash
 root@server:~# nova boot --key_name SSH_KEY --image bdcb5042-3548-40d0-b06f-79551d3b4377 --flavor 98c1e679-5f2c-4069-b4da-4a4f7179b758 --user-data ./adduser.sh Instance1

@@ -42,7 +42,7 @@ Durante il ridimensionamento, l'istanza viene arrestata per tutta la durata dell
 
 ### Elenca le istanze
 
-Il primo step consiste nell’elencare le istanze per recuperare il nome dell’istanza che vuoi ridimensionare. Nel nostro esempio, vogliamo ridimensionare l’istanza denominata "OVHcloudistance".
+Il primo step consiste nell’elencare le istanze per recuperare il nome dell’istanza che vuoi ridimensionare. Nel nostro esempio, vogliamo ridimensionare l’istanza denominata "OVHcloudinstance".
 
 ```bash
 $ openstack server list
@@ -133,4 +133,4 @@ Se si desidera ridurre un'istanza, è possibile farlo seguendo gli stessi passag
 
 [Ridimensionare un’istanza Public Cloud con Horizon](/pages/public_cloud/compute/resize_of_an_instance)
 
-Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.
+Contatta la nostra [Community di utenti](/links/community).

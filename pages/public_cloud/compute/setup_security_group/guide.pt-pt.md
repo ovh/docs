@@ -87,8 +87,8 @@ Depois de adicionar a nova regra, aguarde alguns minutos para que esta seja toma
 ```bash
 root@serveur:~$ ssh admin@149.xxx.xxx.177
 
-Last login: Tue Out 13 13:56:30 2015 from proxy-109-190-254-35.ovh.net
-admin@serveur1
+Last login: Tue Oct 13 13:56:30 2015 from proxy-109-190-254-35.ovh.net
+admin@serveur1:~$
 ```
 
 ### Configurar um grupo de segurança numa instância <a name="instance-security-group"></a>
@@ -111,4 +111,4 @@ Para eliminar um grupo de segurança, selecione-o clicando no quadrado correspon
 
 ## Saiba mais
 
-Fale com a nossa comunidade de utilizadores em <https://community.ovh.com/en/>.
+Fale com a nossa [comunidade de utilizadores](/links/community).

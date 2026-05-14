@@ -24,7 +24,7 @@ Możliwe jest tworzenie zrzutów instancji, które będą mogły zostać wykorzy
 
 ### Tworzenie snapshota
 
-Zaloguj się do interfejsu Horizon i upewnij się, czy jesteś w odpowiednim regionie. I możecie to sprawdzić w lewym górnym rogu. 
+Zaloguj się do interfejsu Horizon i upewnij się, czy jesteś w odpowiednim regionie. Możecie to sprawdzić w lewym górnym rogu. 
 
 ![Wybór regionu](images/region2021.png){.thumbnail}
 
@@ -79,7 +79,7 @@ Następnie kliknij `Launch Instance`{.action}, aby rozpocząć tworzenie instanc
 
 ### Usunięcie snapshota
 
-W interfejsie horizon kliknij menu `Compute`{.action} po lewej stronie, a następnie kliknij `Image`{.action}.
+W interfejsie horizon kliknij menu `Compute`{.action} po lewej stronie, a następnie kliknij `Images`{.action}.
 
 Następnie kliknij rozwijaną strzałkę obok snapshota, który chcesz usunąć i kliknij `Delete Image`{.action}. Potwierdź usunięcie snapshota.
 

@@ -211,7 +211,7 @@ Możesz zdefiniować spersonalizowane planowanie kopii zapasowych lub wybrać je
 
 ![public-cloud-instance-backup](images/createbackup8.png){.thumbnail}
 
-/// details | **Dodawanie kopia zapasowej w oddalonym miejscu**
+/// details | **Dodawanie kopii zapasowej w oddalonym miejscu**
 
 Kliknij przycisk `Dodaj zdalny backup`{.action}, wybierz lokalizację, przejrzyj informacje o cenie i kliknij przycisk `Utwórz`{.action}.
 

@@ -31,8 +31,8 @@ The RACI below details shared responsibilities between OVHcloud and the customer
 
 | **Activity** | **Customer** | **OVHcloud** |
 | --- | --- | --- |
-| Produce, route, deliver and maintain physical Instances and hosting buldings | I | RA |
-| Install internal functionnal bricks needed to maintain in operational and security conditions the Service (firmware, BIOS) | I | RA |
+| Produce, route, deliver and maintain physical Instances and hosting buildings | I | RA |
+| Install internal functional bricks needed to maintain in operational and security conditions the Service (firmware, BIOS) | I | RA |
 | Deploy the first network configuration on the Service  | I | RA |
 | Buy and hold licences and usage rights for Microsoft OS available on OVHcloud catalog | CI | RA |
 | Buy and hold licences and usage rights for others OS used | RA |  |
@@ -65,7 +65,7 @@ The RACI below details shared responsibilities between OVHcloud and the customer
 | Install security bricks and tools needed following needs | RA |  |
 | Administrate applications installed on Instances | RA |   |
 | Manage backups | RA |  |
-| Manage backups following Customer request (optionnal) | CI | RA |
+| Manage backups following Customer request (optional) | CI | RA |
 
 ##### **3.1.2. Access management**
 
@@ -81,7 +81,7 @@ The RACI below details shared responsibilities between OVHcloud and the customer
 | --- | --- | --- |
 | Manage and monitor physical servers capacity in support of Public Cloud services |  | RA |
 | Manage and monitor Public Cloud services capacity | RA |  |
-| Monitor the functionning of softwares installed on Instances | RA |  |
+| Monitor the functioning of softwares installed on Instances | RA |  |
 | Retain logs of control plane for Instances monitoring (API, hypervisor) |  | RA |
 | Retain logs of Information System hosted on Instances| RA |  |
 | Monitor the proper functioning of physical devices (utilities) in support of the service | I | RA |

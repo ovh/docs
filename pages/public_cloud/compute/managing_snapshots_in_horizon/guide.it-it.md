@@ -40,7 +40,7 @@ Nella nuova finestra inserisci le informazioni richieste:
 
 Lo Snapshot sarà successivamente elencato nella sezione `Images`{.action}. Ti consigliamo di assegnare un nome esplicito a ogni Snapshot.
 
-### Ripristino uno snapshot
+### Ripristino di uno snapshot
 
 È possibile ripristinare uno snapshot creando una nuova istanza a partire da essa.
 
@@ -61,7 +61,7 @@ Per completare il ripristino dello Snapshot, nella finestra pop-up è necessario
 >>
 > **Flavor**
 >>
->> Selezionate il *flavor* desiderato. Assicurati di selezionare una versione con risorse uguali o superiori alle dimensioni dell'immagine (snapshot).<br><br><br>
+>> Selezionate il *flavor* desiderato. Assicurati di selezionare una versione con risorse uguali o superiori alle dimensioni dell'immagine (snapshot).<br><br>
 >>![network](images/restoresnapshot2.png){.thumbnail}<br>
 >>
 > **Rete (*Networks*)**

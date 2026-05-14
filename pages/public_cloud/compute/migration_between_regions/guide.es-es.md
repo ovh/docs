@@ -6,7 +6,7 @@ updated: 2025-11-04
 
 ## Objetivo
 
-Este guía explica cómo migrar una instancia de Public Cloud de una zona de disponibilidad (AZ) a otra, de 1AZ a 3AZ o viceversa. Centraliza los pasos clave (backup, transferencia y recreación) y redirige a los guías detallados para cada elemento.
+Esta guía explica cómo migrar una instancia de Public Cloud de una zona de disponibilidad (AZ) a otra, de 1AZ a 3AZ o viceversa. Centraliza los pasos clave (backup, transferencia y recreación) y redirige a las guías detalladas para cada elemento.
 
 ## Requisitos
 
@@ -55,7 +55,7 @@ El backup de una instancia puede realizarse:
 - a través de la CLI OpenStack.
 - a través de Horizon.
 
-Encuentre toda la información detallada en la sección **Crear una copia de seguridad de una instancia** de nuestro guía "[Guardar una instancia](/pages/public_cloud/compute/save_an_instance)".
+Encuentre toda la información detallada en la sección **Crear una copia de seguridad de una instancia** de nuestra guía "[Guardar una instancia](/pages/public_cloud/compute/save_an_instance)".
 
 ### Paso 2. Migrar el backup a otra región
 
@@ -66,7 +66,7 @@ Encuentre toda la información detallada en la sección **Crear una copia de seg
 
 > [!tabs]
 > A través de la CLI OpenStack
->> Para transferir su backup de una AZ a otra a través de la CLI OpenStack, consulte nuestro guía "[Descargar y transferir la copia de seguridad de una instancia de una región de OpenStack a otra](/pages/public_cloud/compute/transfer_instance_backup_from_one_datacentre_to_another)".
+>> Para transferir su backup de una AZ a otra a través de la CLI OpenStack, consulte nuestra guía "[Descargar y transferir la copia de seguridad de una instancia de una región de OpenStack a otra](/pages/public_cloud/compute/transfer_instance_backup_from_one_datacentre_to_another)".
 >>
 
 ### Paso 3. Restaurar la instancia en la nueva región <a name="step3recreateinstance"></a>
@@ -78,7 +78,7 @@ La restauración de la instancia en la nueva región puede realizarse:
 - a través de la CLI OpenStack.
 - a través de Horizon.
 
-Encuentre toda la información detallada en la sección **Crear o restaurar un servidor virtual a partir de un snapshot** de nuestro guía "[Restaurar una instancia desde una copia de seguridad](/pages/public_cloud/compute/create_restore_a_virtual_server_with_a_backup)".
+Encuentre toda la información detallada en la sección **Crear o restaurar un servidor virtual a partir de un snapshot** de nuestra guía "[Restaurar una instancia desde una copia de seguridad](/pages/public_cloud/compute/create_restore_a_virtual_server_with_a_backup)".
 
 ## Más información
 

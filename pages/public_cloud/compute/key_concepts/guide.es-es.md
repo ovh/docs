@@ -10,7 +10,7 @@ Esta guía tiene como objetivo brindarle una comprensión clara de los conceptos
 
 ## ¿Qué es una instancia (Máquina Virtual)?
 
-Una instancia, o Máquina Virtual (VM), es un servidor completamente aislado que se ejecuta en la infraestructura física compartida de OVHcloud. Funciona como un servidor tradicional, pero ofrece la flexibilidad y escalabilidad de la nube. Usted elige el sistema operativo, define los recursos de CPU, RAM y Almacenamiento, y despliega sus aplicaciones, sitios web o entornos de desarrollo.
+Una instancia, o Máquina Virtual (VM), es un servidor completamente aislado que se ejecuta en la infraestructura física compartida de OVHcloud. Funciona como un servidor tradicional, pero ofrece la flexibilidad y escalabilidad de la nube. Usted elige el sistema operativo, define los recursos de CPU, RAM y almacenamiento, y despliega sus aplicaciones, sitios web o entornos de desarrollo.
 
 Las instancias de Public Cloud Compute ofrecen:
 
@@ -27,9 +27,9 @@ OVHcloud ofrece varias familias de instancias diseñadas para satisfacer diferen
 | Tipos de instancias  | Descripción                      | Casos de uso típicos                                                                                                                                                        |
 | ------------------ | -------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | General            | Equilibrio entre CPU y Memoria         | Adecuado para servidores de desarrollo, aplicaciones web y cargas de trabajo empresariales generales. Proporciona una relación equilibrada entre CPU y RAM.                                            |
-| CPU optimizada     | Alta rendimiento del procesador     | Ideal para aplicaciones intensivas en cálculo, tareas de procesamiento paralelo, pipelines CI/CD o microservicios que requieren una alta frecuencia de CPU.                                     |
+| CPU optimizada     | Alto rendimiento del procesador     | Ideal para aplicaciones intensivas en cálculo, tareas de procesamiento paralelo, pipelines CI/CD o microservicios que requieren una alta frecuencia de CPU.                                     |
 | Memoria optimizada | Alta capacidad de memoria          | Diseñado para análisis de datos, cargas de trabajo de big data y caché de bases de datos. Presenta altas relaciones memoria/CPU y IOPS acelerados. Los núcleos virtuales están a 2 GHz o más.       |
-| Almacenamiento optimizado | Alta rendimiento IOPS           | Equipado con almacenamiento NVMe para E/S de disco ultrarrápidas, ideal para bases de datos y aplicaciones de big data.                                                                     |
+| Almacenamiento optimizado | Alto rendimiento IOPS           | Equipado con almacenamiento NVMe para E/S de disco ultrarrápidas, ideal para bases de datos y aplicaciones de big data.                                                                     |
 | GPU                | Gráficos acelerados por hardware      | Proporciona un rendimiento de cálculo paralelo excepcional, hasta 1000 veces más rápido que la CPU para ciertas cargas de trabajo. Adecuado para IA, aprendizaje profundo y renderizado 3D.               |
 | Descubrimiento     | Recursos compartidos, económico | Instancias de entrada con recursos compartidos, ofreciendo un rendimiento estable a un precio asequible. Ideal para entornos de prueba, formación o proyectos de demostración. | 
 
@@ -63,9 +63,9 @@ Al crear una instancia, selecciona una imagen que incluye el sistema operativo y
 - **Distribuciones Linux**: Ubuntu, Debian, CentOS, AlmaLinux, Rocky Linux y otras. Estas imágenes están listas para servidores web, entornos de desarrollo y cargas de trabajo generales.
 - **Windows Server**: Versiones con licencias integradas, permitiendo un despliegue inmediato para aplicaciones basadas en Microsoft y cargas de trabajo empresariales.
 - **Aplicaciones preconfiguradas**: Imágenes que incluyen software como cPanel, Plesk, Docker o NVIDIA GPU Cloud (NGC). Simplifican el despliegue y aceleran la transición a producción.
-- **[Imágenes personalizadas](/pages/public_cloud/Compute/upload_own_image)**: Puede importar sus propias imágenes en formato QCOW2 o RAW, ofreciendo un control total sobre su entorno y permitiendo migraciones, modelos estándar o configuraciones especializadas.
+- **[Imágenes personalizadas](/pages/public_cloud/compute/upload_own_image)**: Puede importar sus propias imágenes en formato QCOW2 o RAW, ofreciendo un control total sobre su entorno y permitiendo migraciones, modelos estándar o configuraciones especializadas.
 
-**Ciclo de vida y soporte**: OVHcloud actualiza regularmente el catálogo de imágenes. Siempre consulte las anuncios sobre el ciclo de vida y el fin del soporte para asegurarse de que sus imágenes siguen seguras y soportadas. Ver [aquí](/pages/public_cloud/Compute/image-life-cycle).
+**Ciclo de vida y soporte**: OVHcloud actualiza regularmente el catálogo de imágenes. Siempre consulte los anuncios sobre el ciclo de vida y el fin del soporte para asegurarse de que sus imágenes siguen seguras y soportadas. Ver [aquí](/pages/public_cloud/compute/image-life-cycle).
 
 ## Claves SSH
 
@@ -82,7 +82,7 @@ Buena práctica:
 - Utilice una clave única para cada usuario.
 - Almacene sus claves en un gestor o cofre seguro.
 
-Para instrucciones detalladas sobre la creación y uso de claves SSH, consulte la guía [OVHcloud sobre SSH](/pages/public_cloud/Compute/creating-ssh-keys-pci).
+Para instrucciones detalladas sobre la creación y uso de claves SSH, consulte la guía [OVHcloud sobre SSH](/pages/public_cloud/compute/creating-ssh-keys-pci).
 
 ## Copias de seguridad
 
@@ -123,7 +123,7 @@ Los Savings Plans le permiten reducir sus costos de Public Cloud Compute a cambi
 **Ventajas clave:**
 
 - **Costos reducidos**: Más económico que la facturación en *pay-as-you-go*.
-- **Aplicación automática**: Las ahorros se aplican automáticamente a todas las instancias compatibles.
+- **Aplicación automática**: Los ahorros se aplican automáticamente a todas las instancias compatibles.
 - **Flexible**: Puede cambiar los tipos o tamaños de instancias manteniendo los beneficios de su plan.
 
 **Casos de uso ideales:**
@@ -137,11 +137,11 @@ Los Savings Plans le ayudan a optimizar su presupuesto manteniendo el rendimient
 
 Una vez que domine los conceptos fundamentales de Public Cloud Compute de OVHcloud, puede explorar operaciones y tareas de gestión más avanzadas.
 
-- [Cómo crear una instancia de Public Cloud y acceder a ella](/pages/public_cloud/Compute/public-cloud-first-steps)
-- [Gestionar sus instancias de Public Cloud](/pages/public_cloud/Compute/first_steps_with_public_cloud_instance)
-- [Iniciar una instancia en un volumen arrancable](/pages/public_cloud/Compute/start_instance_on_attached_volume)
-- [Poner en suspensión o pausar una instancia](/pages/public_cloud/Compute/suspend_or_pause_an_instance)
-- [Primeros pasos con aplicaciones preinstaladas](/pages/public_cloud/Compute/apps_first_steps)
+- [Cómo crear una instancia de Public Cloud y acceder a ella](/pages/public_cloud/compute/public-cloud-first-steps)
+- [Gestionar sus instancias de Public Cloud](/pages/public_cloud/compute/first_steps_with_public_cloud_instance)
+- [Iniciar una instancia en un volumen arrancable](/pages/public_cloud/compute/start_instance_on_attached_volume)
+- [Poner en suspensión o pausar una instancia](/pages/public_cloud/compute/suspend_or_pause_an_instance)
+- [Primeros pasos con aplicaciones preinstaladas](/pages/public_cloud/compute/apps_first_steps)
 - [Añadir créditos de nube](/pages/account_and_service_management/managing_billing_payments_and_services/add_cloud_credit_to_project)
 
 Únete a nuestra [comunidad de usuarios](/links/community).

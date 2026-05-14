@@ -111,4 +111,4 @@ Para eliminar un grupo de seguridad, selecciónelo marcando la casilla correspon
 
 ## Más información
 
-Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.
+Interactúe con nuestra [comunidad de usuarios](/links/community).

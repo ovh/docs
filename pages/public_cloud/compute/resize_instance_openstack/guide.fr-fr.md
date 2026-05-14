@@ -8,7 +8,7 @@ updated: 2025-08-25
 
 En raison d'une activité accrue, ou simplement pour répondre à de nouveaux besoins, votre instance peut manquer de ressources et se retrouver incapable de répondre à une nouvelle charge. Grâce au Public Cloud d’OVHcloud, vous pouvez augmenter les ressources disponibles pour votre instance en quelques étapes seulement.
 
-**Découvez comment redimensionner votre instance Public Cloud à l'aide du CLI OpenStack.**
+**Découvrez comment redimensionner votre instance Public Cloud à l'aide du CLI OpenStack.**
 
 > [!primary]
 > **Limites :**

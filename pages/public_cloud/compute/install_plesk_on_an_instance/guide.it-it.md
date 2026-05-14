@@ -14,7 +14,7 @@ Plesk è un’interfaccia di gestione server di semplice utilizzo, disponibile a
 > 
 > OVHcloud mette a disposizione i server, ma non è autorizzata ad accedervi e non si occupa quindi della loro amministrazione. Garantire quotidianamente la gestione software e la sicurezza di queste macchine è quindi responsabilità dell’utente.
 >
-> Questa guida ti aiuta a eseguire le operazioni necessarie alla configurazione del tuo account. Tuttavia, in caso di difficoltà o dubbi relativamente ad amministrazione e sicurezza, ti consigliamo di contattare un [provider specializzato](/links/partner). Non esitate a collegarvi alla nostra [community forum](/links/community) per comunicare con altri utenti.
+> Questa guida ti aiuta a eseguire le operazioni necessarie alla configurazione del tuo account. Tuttavia, in caso di difficoltà o dubbi relativamente ad amministrazione e sicurezza, ti consigliamo di contattare un [provider specializzato](/links/partner). Non esitate a collegarvi alla nostra [community di utenti](/links/community) per comunicare con altri utenti.
 >
 
 
@@ -55,7 +55,7 @@ Attendi il completamento dell’operazione.
 Una volta completata l’installazione, l’interfaccia da riga di comando (CLI) visualizzerà le seguenti informazioni:
 
 - Vengono generati due URL:
-    - una con l'indirizzo IP del server (in HTTPS con un certificato SSL autofirmato, che può attivare un alert di sicurezza in alcuni browser).
+    - Una con l'indirizzo IP del server (in HTTPS con un certificato SSL autofirmato, che può attivare un alert di sicurezza in alcuni browser).
     - L'altra con dominio Plesk (in HTTPS con certificato SSL firmato, senza alert di sicurezza).
     - Entrambi sono sicuri, ma si consiglia di utilizzare il secondo.
 - Un messaggio recita: "Puoi accedere come ‘root’ con la tua password ‘root’." Tuttavia, per impostazione predefinita, non viene generata alcuna password di root. Se necessario, i clienti possono seguire [questa guida](/pages/bare_metal_cloud/dedicated_servers/changing_root_password_linux_ds) per attivare l'utente root e impostare una password.
@@ -71,7 +71,7 @@ Per aggiungere la licenza Plesk, assicurati di avere a disposizione la chiave ri
 > OVHcloud non fornisce licenze Plesk per le soluzioni Public Cloud. È possibile ottenerne una dal sito di [Plesk](https://www.plesk.com/).
 >
 
-Vuoi modificare la tua licenza, ad esempio per sostituire una chiave di test o cambiare offerta? Accedi all’interfaccia Plesk e, nella sezione `Tools & Settings`{.action}. Nella sezione **Plesk**, seleziona `License information`{.action}.
+Vuoi modificare la tua licenza, ad esempio per sostituire una chiave di test o cambiare offerta? Accedi all’interfaccia Plesk, vai nella sezione `Tools & Settings`{.action}. Nella sezione **Plesk**, seleziona `License information`{.action}.
 
 ## Per saperne di più
 

@@ -10,7 +10,7 @@ Este guia visa dar-lhe uma compreensão clara dos conceitos fundamentais necess�
 
 ## O que é uma instância (Máquina Virtual)?
 
-Uma instância, ou Máquina Virtual (VM), é um servidor totalmente isolado a executar-se na infraestrutura física partilhada da OVHcloud. Funciona como um servidor tradicional, mas oferece a flexibilidade e a escalabilidade do cloud. Pode escolher o sistema operativo, definir os recursos CPU, RAM e Armazenamento e implantar as suas aplicações, sites web ou ambientes de desenvolvimento.
+Uma instância, ou Máquina Virtual (VM), é um servidor totalmente isolado a executar-se na infraestrutura física partilhada da OVHcloud. Funciona como um servidor tradicional, mas oferece a flexibilidade e a escalabilidade do cloud. Pode escolher o sistema operativo, definir os recursos CPU, RAM e armazenamento e implantar as suas aplicações, sites web ou ambientes de desenvolvimento.
 
 As instâncias Public Cloud Compute oferecem:
 
@@ -26,7 +26,7 @@ A OVHcloud oferece várias famílias de instâncias concebidas para responder a 
 
 | Tipos de instâncias  | Descrição                      | Casos de utilização típicos                                                                                                                                                        |
 | ------------------ | -------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| Geral           | Equilíbrio CPU e Memória         | Adequada para servidores de desenvolvimento, aplicações web e cargas de trabalho empresariais gerais. Fornecer um ratio equilibrado entre CPU e RAM.                                            |
+| Geral           | Equilíbrio CPU e Memória         | Adequada para servidores de desenvolvimento, aplicações web e cargas de trabalho empresariais gerais. Fornece um ratio equilibrado entre CPU e RAM.                                            |
 | CPU otimizada      | Alta performance do processador     | Ideal para aplicações intensivas em cálculo, tarefas de processamento paralelo, pipelines CI/CD ou microserviços que necessitam de uma alta frequência CPU.                                     |
 | Memória otimizada  | Capacidade de memória elevada          | Concebida para análise de dados, cargas de trabalho big data e cache de bases de dados. Apresenta altas taxas de memória/CPU e IOPS acelerados. Os núcleos virtuais são clockados a 2 GHz ou mais.       |
 | Armazenamento otimizado | Alta performance IOPS           | Equipada com armazenamento NVMe para E/S de disco ultra rápidas, ideal para bases de dados e aplicações big data.                                                                     |
@@ -61,11 +61,11 @@ As instâncias Public Cloud da OVHcloud são implantadas em [vários centros de 
 Ao criar uma instância, seleciona uma imagem que inclui o sistema operativo e, opcionalmente, aplicações pré-instaladas. A OVHcloud oferece uma variedade de imagens para responder a necessidades diversas:
 
 - **Distribuições Linux**: Ubuntu, Debian, CentOS, AlmaLinux, Rocky Linux e outras. Estas imagens estão prontas para uso em servidores web, ambientes de desenvolvimento e cargas de trabalho gerais.
-- **Windows Server**: Versões com licenças integradas, permitindo um implantação imediata para aplicações baseadas em Microsoft e cargas de trabalho empresariais.
+- **Windows Server**: Versões com licenças integradas, permitindo uma implantação imediata para aplicações baseadas em Microsoft e cargas de trabalho empresariais.
 - **Aplicações pré-configuradas**: Imagens que incluem software como cPanel, Plesk, Docker ou NVIDIA GPU Cloud (NGC). Simplificam a implantação e aceleram a transição para a produção.
 - **[Imagens personalizadas](/pages/public_cloud/compute/upload_own_image)**: Pode importar as suas próprias imagens nos formatos QCOW2 ou RAW, oferecendo um controlo total sobre o seu ambiente e permitindo migrações, modelos padronizados ou configurações especializadas.
 
-**Ciclo de vida e suporte**: A OVHcloud atualiza regularmente o catálogo de imagens. Consulte sempre as anúncios sobre o ciclo de vida e o fim do suporte para assegurar que as suas imagens permaneçam seguras e suportadas. Veja [aqui](/pages/public_cloud/compute/image-life-cycle).
+**Ciclo de vida e suporte**: A OVHcloud atualiza regularmente o catálogo de imagens. Consulte sempre os anúncios sobre o ciclo de vida e o fim do suporte para assegurar que as suas imagens permaneçam seguras e suportadas. Veja [aqui](/pages/public_cloud/compute/image-life-cycle).
 
 ## Chaves SSH
 

@@ -35,7 +35,7 @@ Per maggiori informazioni, accedi alla nostra [pagina dedicata alle istanze Loca
 | Archiviazione         | Object Storage             | Sì | 1. Non sono supportate le politiche utente. tutte le chiavi di accesso all'interno di un progetto possono accedere a tutti i bucket in tutte le Local Zones. <br> 2. Supportato solo il livello di archiviazione Standard. <br> 3. Funzionalità S3<sup>1</sup> non supportate: tag S3, Legal Hold, SSE-OMK, replica S3, accesso log server. |
 |                       | Archiviazione su disco     | Sì | Nessun supporto per la crittografia. I volumi classici non possono essere multi-attaccati. I volumi classici limitati a 250 IOPS (contro 500 IOPS nelle regioni 1AZ e 3AZ). Dimensione massima 4 TB (contro 12 TB). |
 |                       | File Storage         | No | |
-| Container.            | Managed Kubernetes Service         | No | |
+| Container             | Managed Kubernetes Service         | No | |
 |                       | Managed Rancher Service   | No | |
 |                       | Managed Private Registry   | No | |
 | DBaas                 | DBaas                      | No | |

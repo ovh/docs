@@ -93,7 +93,7 @@ A seguir, clique em `Finish`{.action} para validar a sua escolha.
 
 ![public-cloud](images/2979.png){.thumbnail}
 
-## Quer saiba mais?
+## Quer saber mais?
 
-Junte-se à nossa comunidade de utilizadores em <https://community.ovh.com/en/>.
+Fale com a nossa [comunidade de utilizadores](/links/community).
 

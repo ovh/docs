@@ -4,7 +4,7 @@ excerpt: 'Saiba como instalar o Plesk na sua instância Public Cloud'
 updated: 2025-04-08
 ---
 
-## Sumário
+## Objetivo
 
 O Plesk é uma interface de gestão de servidores simples de utilizar. Pode instalá-la e utilizá-la nas suas instâncias Public Cloud da OVHcloud.
 
@@ -49,7 +49,7 @@ sudo sh <(curl https://autoinstall.plesk.com/plesk-installer || wget -O - https:
 
 De seguida, aguarde até a instalação ficar concluída. 
 
-### 2 - finalizar a configuração e adicionar uma licença
+### 2 - Finalizar a configuração e adicionar uma licença
 
 Uma vez concluída a instalação, a interface de linha de comandos (CLI) apresentará as seguintes informações:
 
@@ -57,7 +57,7 @@ Uma vez concluída a instalação, a interface de linha de comandos (CLI) aprese
     - Um com o endereço IP do servidor (em HTTPS com um certificado SSL autoassinado, o que pode ativar um alerta de segurança em certos browsers).
     - O outro com um domínio Plesk (em HTTPS com um certificado SSL assinado, sem alerta de segurança).
     - Ambos são seguros, mas é recomendado que utilize o segundo.
-- Uma mensagem indica: "Você também pode se conectar como um ‘root’ com sua palavra-passe ‘root’." No entanto, não é gerada nenhuma palavra-passe root por predefinição. Se necessário, os clientes podem seguir [este guia](/pages/bare_metal_cloud/dedicated_servers/changing_root_password_linux_ds) para ativar o utilizador root e definir uma palavra-passe.
+- Uma mensagem indica: "Você também pode se conectar como um ‘root’ com a sua palavra-passe ‘root’." No entanto, não é gerada nenhuma palavra-passe root por predefinição. Se necessário, os clientes podem seguir [este guia](/pages/bare_metal_cloud/dedicated_servers/changing_root_password_linux_ds) para ativar o utilizador root e definir uma palavra-passe.
 
 Uma vez na página Plesk, siga as instruções apresentadas no ecrã para finalizar a instalação.
 

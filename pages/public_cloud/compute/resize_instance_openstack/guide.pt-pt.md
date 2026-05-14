@@ -82,17 +82,17 @@ $ openstack flavor list
 ```
 
 > [!warning]
-> Tenga en cuenta que sólo puede cambiar el tamaño de una instancia de un modelo Linux a otro y de un modelo Windows a otro Windows.
+> Tenha em atenção que não é possível mudar de tipo de SO ao redimensionar uma instância. O redimensionamento só pode ser feito de um modelo Linux para outro modelo Linux ou de um modelo Windows para outro modelo Windows.
 
-### Redimensionar la instancia
+### Redimensionar uma instância
 
-Una vez que haya recuperado la información, ya puede redimensionar su instancia:
+Depois de ter recuperado as informações necessárias, pode agora redimensionar a sua instância:
 
 ```bash
 $  openstack server resize --flavor <FLAVOR-ID> <INSTANCE-NAME>
 ```
 
-Por ejemplo, para redimensionar nuestra instancia "OVHcloudInstance":
+Por exemplo, para redimensionar a nossa instância "OVHcloudinstance":
 
 ```bash
 $ openstack server resize --flavor 098889e6-d1fc-4967-baea-19fd97fd83a8 OVHcloudinstance
@@ -133,4 +133,4 @@ Se quiser reduzir a sua instância, pode fazê-lo seguindo os mesmos passos menc
 
 [Redimensionar uma instância Public Cloud através do Horizon](/pages/public_cloud/compute/resize_of_an_instance)
 
-Junte-se à nossa comunidade de utilizadores em <https://community.ovh.com/en/>.
+Fale com a nossa [comunidade de utilizadores](/links/community).

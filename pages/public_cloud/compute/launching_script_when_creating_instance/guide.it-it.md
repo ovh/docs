@@ -83,7 +83,7 @@ Questo script ti permette di creare un utente ovh con i permessi sudo e la possi
 
 > [!alert]
 >
->L'utente "admin" non verrà creato, ma sarà sostituito dal tuo utente.
+> L'utente "admin" non verrà creato, ma sarà sostituito dal tuo utente.
 >
 
 ### Crea la tua istanza
@@ -107,4 +107,4 @@ root@instance1:/home/ovh#
 
 ## Per saperne di più
   
-Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.
+Contatta la nostra [Community di utenti](/links/community).

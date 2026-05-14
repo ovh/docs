@@ -212,7 +212,7 @@ Puede definir una planificación de backup personalizada o elegir una de las fre
 
 ![public-cloud-instance-backup](images/createbackup8.png){.thumbnail}
 
-/// details | **Adicionar um backup remoto**
+/// details | **Añadir un backup remoto**
 
 Haga clic en el botón `Añadir un backup remoto`{.action}, seleccione una ubicación, consulte la información de precios y haga clic en el botón `Crear`{.action} 
 
@@ -243,4 +243,4 @@ Esta guía explica cómo utilizar las copias de seguridad para clonar o restaura
 
 [Crear o restaurar un servidor virtual a partir de un snapshot](/pages/public_cloud/compute/create_restore_a_virtual_server_with_a_backup)
 
-Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.
+Interactúe con nuestra [comunidad de usuarios](/links/community).

@@ -12,7 +12,7 @@ Prometheus é um sistema de supervisão e uma base de dados de séries temporais
 
 > [!warning]
 > 
-> A OVHcloud coloca à sua disposição serviços cuja responsabilidade é sua. De fato, não tendo acesso a estas máquinas, não somos os seus administradores e não poderemos prestar assistência. É, portanto, da sua responsabilidade gerir e assegurar a segurança do software diariamente.
+> A OVHcloud coloca à sua disposição serviços cuja responsabilidade é sua. De facto, não tendo acesso a estas máquinas, não somos os seus administradores e não poderemos prestar assistência. É, portanto, da sua responsabilidade gerir e assegurar a segurança do software diariamente.
 >
 > Colocamos à sua disposição este guia para o ajudar no melhor possível com tarefas correntes. No entanto, recomendamos que contacte um [fornecedor especializado](/links/partner) se tiver dificuldades ou dúvidas em relação à administração, utilização ou segurança de um servidor. Não hesite em visitar o nosso [fórum comunitário](/links/community) para trocar informações com outros utilizadores.
 >
@@ -154,9 +154,9 @@ A criação de um utilizador dedicado para Node Exporter melhora a segurança em
 
 > [!primary]
 >
-> Node Exporter escuta por padrão na porta 9100.
+> Node Exporter escuta por predefinição na porta 9100.
 >
-> Windows Exporter escuta por padrão na porta 9182.
+> Windows Exporter escuta por predefinição na porta 9182.
 >
 > Substitua `<PORT>` por 9100 para Linux ou 9182 para Windows.
 >

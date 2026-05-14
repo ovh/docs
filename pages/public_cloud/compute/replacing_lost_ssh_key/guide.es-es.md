@@ -85,7 +85,7 @@ EEFFFFFFFFFFFFFGGGGGGGGGGGGGhhhhhhhhhhhhhhhhhhhhhhhhhh== new@sshkey
 
 Por motivos de seguridad, quite la cadena de clave obsoleta "old" del archivo. Guarde los cambios y salga del editor.
 
-Reinicie la instancia en modo normal desde su [área de cliente de OVHcloud](/links/manager). Consulte las instrucciones de [guide sur le mode rescue](/pages/public_cloud/compute/put_an_instance_in_rescue_mode) si es necesario.
+Reinicie la instancia en modo normal desde su [área de cliente de OVHcloud](/links/manager). Consulte las instrucciones de [guía sobre el modo rescue](/pages/public_cloud/compute/put_an_instance_in_rescue_mode) si es necesario.
 
 Ya puede acceder a la instancia con su nuevo par de claves SSH.
 

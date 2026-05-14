@@ -61,7 +61,7 @@ Na janela pop-up, é necessário selecionar várias opções para concluir o res
 >>
 > **Flavor**
 >>
->> Selecione o *flavor* desejado. Certifique-se de que seleciona uma versão com recursos iguais ou superiores ao tamanho da imagem (snapshot).<br><br>>
+>> Selecione o *flavor* desejado. Certifique-se de que seleciona uma versão com recursos iguais ou superiores ao tamanho da imagem (snapshot).<br><br>
 >>![network](images/restoresnapshot2.png){.thumbnail}<br>
 >>
 > **Rede (*Networks*)**
@@ -71,7 +71,7 @@ Na janela pop-up, é necessário selecionar várias opções para concluir o res
 >>
 > **Keypair**
 >>
->> Selecione (3), crie (1) ou importe (2) um par de chaves.<br><br>>
+>> Selecione (3), crie (1) ou importe (2) um par de chaves.<br><br>
 >>![network](images/restoresnapshot4.png){.thumbnail}<br>
 >>
 

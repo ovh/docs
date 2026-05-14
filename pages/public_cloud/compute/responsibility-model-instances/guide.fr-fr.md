@@ -34,7 +34,7 @@ Le RACI ci-dessous détaille le partage des responsabilités entre OVHcloud et l
 | Produire, acheminer, livrer et maintenir les instances physiques et les bâtiments d’hébergement | I | RA |
 | Installer les briques fonctionnelles internes à l'instance nécessaires au maintien en conditions opérationnelles et au maintien en conditions de sécurité (firmware, BIOS) | I | RA |
 | Déployer la configuration réseau initiale du service | I | RA |
-| Acheter et détenir les licences et droits d’utilisation pour les OS Microsoft proposés au cathalogue d'OVHcloud | CI | RA |
+| Acheter et détenir les licences et droits d’utilisation pour les OS Microsoft proposés au catalogue d'OVHcloud | CI | RA |
 | Acheter et détenir les licences et droits d'utilisation pour les autres types d'OS utilisés | RA |  |
 
 #### 2.2. Modèle de réversibilité
@@ -102,7 +102,7 @@ Le RACI ci-dessous détaille le partage des responsabilités entre OVHcloud et l
 | Gérer le plan d’adressage IP et choisir les protocoles réseaux adéquats | RA | I |
 | Filtrer les accès réseau à l'instance | RA | I |
 | Filtrer les connexions réseaux et déployer une architecture sécurisée en fonction des besoins (FW, WAF, IPS/IDS, protocoles sécurisés, etc) | RA |   |
-| Assurer le fonctionnement des systèmes automatiques de gestion du réseau (architecture, mise en oeuvre, maintenance logicielle et matérielle pour les réseaux publics et privés déployés) | I | RA |
+| Assurer le fonctionnement des systèmes automatiques de gestion du réseau (architecture, mise en œuvre, maintenance logicielle et matérielle pour les réseaux publics et privés déployés) | I | RA |
 
 
 ##### **3.1.6. Gestion**
@@ -113,7 +113,7 @@ Le RACI ci-dessous détaille le partage des responsabilités entre OVHcloud et l
 | Assurer la sécurité des infrastructures de gestion (API, control plane) |   | RA |
 | Assurer la sécurité des OS, softwares et middlewares installés sur les instances | RA |  |
 | Gérer la sécurité physique des équipements et infrastructures hébergés | I | RA |
-| Gérer la sécurité des données herbergées sur les instances | RA |  |
+| Gérer la sécurité des données hébergées sur les instances | RA |  |
 
 ##### **3.1.7. Continuité d'activité**
 | **Activité** | **Client** | **OVHcloud** |

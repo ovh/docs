@@ -88,7 +88,7 @@ Po dodaniu nowej reguły odczekaj kilka minut, aż zostanie ona uwzględniona.
 root@serveur:~$ ssh admin@149.xxx.xxx.177
 
 Last login: Tue Oct 13 13:56:30 2015 from proxy-109-190-254-35.ovh.net
-admin@serveur1:~
+admin@serveur1:~$
 ```
 
 ### Konfiguracja grupy zabezpieczeń na instancji <a name="instance-security-group"></a>
@@ -105,10 +105,10 @@ Możesz zastosować nową grupę zabezpieczeń dla instancji, która została ju
 
 ### Usuń grupę zabezpieczeń
 
-Aby usunąć grupę zabezpieczeń, zaznacz ją w odpowiednim polu po lewej stronie, następnie kliknij Delete `Security Groups`{.action}
+Aby usunąć grupę zabezpieczeń, zaznacz ją w odpowiednim polu po lewej stronie, następnie kliknij `Delete Security Groups`{.action}
 
 ![usuń grupę zabezpieczeń](images/security-group7.png){.thumbnail}
 
 ## Sprawdź również
 
-Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.
+Dołącz do [grona naszych użytkowników](/links/community).

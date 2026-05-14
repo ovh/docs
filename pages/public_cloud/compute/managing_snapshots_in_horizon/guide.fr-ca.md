@@ -71,9 +71,9 @@ Dans la fenêtre contextuelle, un certain nombre d'options doivent être sélect
 
 Une fois cela fait, cliquez sur `Launch Instance`{.action} pour commencer la création de votre instance.
 
-### Supression d'un snapshot
+### Suppression d'un snapshot
 
-Dans l'inteface horizon, cliquez sur le menu `Compute`{.action} à gauche puis sur `Images`{.action}.
+Dans l'interface horizon, cliquez sur le menu `Compute`{.action} à gauche puis sur `Images`{.action}.
 
 Cliquez ensuite sur la flèche déroulante à côté du snapshot à supprimer et cliquez sur `Delete Image`{.action}. Confirmez la suppression du snapshot.
 

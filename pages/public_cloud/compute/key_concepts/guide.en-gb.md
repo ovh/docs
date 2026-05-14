@@ -62,7 +62,7 @@ When creating an instance, you select an image that includes the operating syste
 
 - **Linux Distributions:** Ubuntu, Debian, CentOS, AlmaLinux, Rocky Linux, and others. These images are ready to use for web servers, development environments, and general-purpose workloads.
 - **Windows Server:** Versions with integrated licenses, allowing immediate deployment for Microsoft-based applications and enterprise workloads.
-- **Pre-configured Applications:** Images that come with softwares such as cPanel, Plesk, Docker, or NVIDIA GPU Cloud (NGC). They simplify deployment and accelerate time-to-production.
+- **Pre-configured Applications:** Images that come with software such as cPanel, Plesk, Docker, or NVIDIA GPU Cloud (NGC). They simplify deployment and accelerate time-to-production.
 - **[Custom Images](/pages/public_cloud/compute/upload_own_image):** You can import your own images in QCOW2 or RAW format, providing full control over your environment and enabling migrations, standardized templates, or specialized configurations.
 
 **Lifecycle and Support:** OVHcloud regularly updates the image catalog. Always consult the lifecycle and end-of-support announcements to ensure your images remain secure and supported. See [here](/pages/public_cloud/compute/image-life-cycle).
@@ -139,7 +139,7 @@ Once you are familiar with the core concepts of OVHcloud Public Cloud Compute, y
 
 - [How to create a Public Cloud instance and connect to it](/pages/public_cloud/compute/public-cloud-first-steps)
 - [Managing your Public Cloud instances](/pages/public_cloud/compute/first_steps_with_public_cloud_instance)
-- [Starting an instance on an bootable volume](/pages/public_cloud/compute/start_instance_on_attached_volume)
+- [Starting an instance on a bootable volume](/pages/public_cloud/compute/start_instance_on_attached_volume)
 - [Shelve or pause an instance](/pages/public_cloud/compute/suspend_or_pause_an_instance)
 - [First steps with preinstalled applications](/pages/public_cloud/compute/apps_first_steps)
 - [Adding cloud credit](/pages/account_and_service_management/managing_billing_payments_and_services/add_cloud_credit_to_project)

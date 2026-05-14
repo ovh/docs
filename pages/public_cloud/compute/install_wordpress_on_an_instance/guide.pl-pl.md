@@ -47,7 +47,7 @@ Tutorial ten przedstawia podstawowe etapy ręcznej instalacji WordPressa na inst
 > Poniższe instrukcje są sprawdzane dla dystrybucji Debian 11. Ubuntu opiera się na Debianie i dlatego tutorial powinien również działać dla bieżącej dystrybucji Ubuntu.
 >
 
-Aby uzyskać dostęp do Twojej instalacji za pomocą nazwy domeny, powiąż ją z Twoją instancją. W tym celu edytuj strefę DNS dostępną w [Panelu client OVHcloud](/links/manager), pod warunkiem, że OVHcloud jest Twoim operatorem, a nazwa domeny wykorzystuje serwery DNS OVHcloud.
+Aby uzyskać dostęp do Twojej instalacji za pomocą nazwy domeny, powiąż ją z Twoją instancją. W tym celu edytuj strefę DNS dostępną w [Panelu klienta OVHcloud](/links/manager), pod warunkiem, że OVHcloud jest Twoim operatorem, a nazwa domeny wykorzystuje serwery DNS OVHcloud.
 
 Aby dowiedzieć się więcej, zapoznaj się z przewodnikiem [Modyfikacja strefy DNS](/pages/web_cloud/domains/dns_zone_edit). Jeśli domena jest aktualnie używana, skonfiguruj DNS dopiero po zainstalowaniu nowego WordPress i uruchomieniu Twojej strony WWW.
 
@@ -87,12 +87,12 @@ Potwierdź pierwszą prośbę, naciskając `Enter`{.action}.
 Następnie wybierz metodę zabezpieczenia dostępu do serwera baz danych.
 
 ```console
-Switch to unix_socket authinfo [Y/n]
+Switch to unix_socket authentication [Y/n]
 ```
 
 Zaleca się stosowanie proponowanej metody uwierzytelniania zamiast dostępu za pomocą hasła root. Kliknij `y`{.action}, a następnie `Enter`{.action}. (Jeśli zdecydujesz się korzystać z dostępu użytkownika root, wpisz `n`{.action}, następnie zdefiniuj hasło root.)
 
-Wpisz `n`{.action} na poniższy adres e-mail:
+Wpisz `n`{.action} przy następnym pytaniu:
 
 ```console
 Change the root password? [Y/n]
@@ -139,7 +139,7 @@ MariaDB [(none)]> exit;
 
 ### Etap 3: skonfiguruj firewall
 
-Konfiguracja zapory sieciowej (iptables* *) pozwala poprawić bezpieczeństwo Twojej instancji WordPress. Proces ten można uprościć, korzystając z front-endu "Uncomplicated Firewall" (UFW) oraz zestawu wstępnie zdefiniowanych profili. Zainstaluj UFW:
+Konfiguracja zapory sieciowej (*iptables*) pozwala poprawić bezpieczeństwo Twojej instancji WordPress. Proces ten można uprościć, korzystając z front-endu "Uncomplicated Firewall" (UFW) oraz zestawu wstępnie zdefiniowanych profili. Zainstaluj UFW:
 
 ```bash
 debian@instance:~$ sudo apt install ufw
@@ -191,7 +191,7 @@ Przejdź do oficjalnej [strony WordPress](https://wordpress.org/download/), aby 
 debian@instance:~$ wget https://wordpress.org/latest.tar.gz
 ```
 
-Odłącz pobrany archiwum:
+Rozpakuj pobrane archiwum:
 
 ```bash
 debian@instance:~$ tar zxvf latest.tar.gz
@@ -205,7 +205,7 @@ debian@instance:~$ sudo systemctl status apache2
 
 Można również otworzyć `http://IP_twojej_instancji` w przeglądarce internetowej. Należy wyświetlić stronę "Apache2 Debian Default Page".
 
-Kolejne etapy instalacji WordPress zastępując domyślny folder Apache dla stron www.
+Kolejne etapy instalują WordPress, zastępując domyślny folder Apache dla stron WWW.
 
 Zamiast używać domyślnego folderu, możesz również utworzyć nowy *Virtual Host* do instalacji WordPress. Aplikacja ta jest przydatna do hostowania kilku stron WWW, co nie jest istotne dla tego tutoriala.
 

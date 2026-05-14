@@ -24,7 +24,7 @@ Plesk is an easy-to-use hosting control panel. You can install and use it on OVH
 
 ## Instructions
 
-### Step 1: Install Plesk.
+### Step 1: Install Plesk
 
 Plesk can be installed easily via an SSH connection. To do this, download and launch the Plesk installation script using the command that best suits your situation below.
 

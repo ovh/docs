@@ -82,7 +82,7 @@ Para ejecutarlo, introduzca el siguiente comando:
 debian@instance:~$ sudo mariadb-secure-installation
 ```
 
-Confirme el primer salto pulsando `Entrar`{.action}.
+Confirme el primer prompt pulsando `Entrar`{.action}.
 
 A continuación, seleccione una forma de proteger los accesos al servidor de bases de datos.
 
@@ -92,13 +92,13 @@ Switch to unix_socket authentication [Y/n]
 
 Le recomendamos que utilice el método de autenticación propuesto en lugar del acceso mediante contraseña root. Pulse `y`{.action} y, a continuación, `Entrar`{.action}. (Si decide utilizar el acceso de usuario root, escriba `n`{.action} y establezca una contraseña root).
 
-Introduzca `n`{.action} en el siguiente comando:
+Introduzca `n`{.action} en el siguiente aviso:
 
 ```console
 Change the root password? [Y/n]
 ```
 
-Las siguientes visitas relativas a las medidas de seguridad, confírmelas todas con `y`{.action} hasta el final del script.
+Los siguientes avisos relativos a las medidas de seguridad, confírmelos todos con `y`{.action} hasta el final del script.
 
 Si ha configurado el acceso MariaDB como se recomienda (*unix_socket*), dispondrá de un acceso de administrador automático (*root*) cada vez que se conecte al servidor como usuario con altos permisos (*sudo*).
 
@@ -209,7 +209,7 @@ También puede abrir `http://IP_de_su_instancia` en un navegador web. Se abrirá
 
 Los siguientes pasos instalarán WordPress sustituyendo la carpeta Apache predeterminada para las páginas web.
 
-En lugar de utilizar la carpeta predeterminada, también puede crear un nuevo *Virtual Host* para instalar WordPress. Este tutorial es útil para alojar varios sitios web, lo que no es relevante para este tutorial.
+En lugar de utilizar la carpeta predeterminada, también puede crear un nuevo *Virtual Host* para instalar WordPress. Esta opción es útil para alojar varios sitios web, lo que no es relevante para este tutorial.
 
 Elimine la carpeta existente:
 
@@ -252,12 +252,12 @@ Una vez validado, podrá conectarse al panel de administración del sitio web co
 > Como alternativa, OVHcloud le ofrece la solución [SSL Gateway](/links/web/ssl-gateway). Para más información, consulte [nuestra guía](/pages/web_cloud/ssl_gateway/order-ssl-gateway).
 > 
 
-### Paso 6: (opcional): activar conexiones seguras con Let's Encrypt
+### Paso 6 (opcional): activar conexiones seguras con Let's Encrypt
 
 En primer lugar, compruebe que el dominio dispone de los registros adecuados en la zona DNS, es decir, que apunta a la dirección IP de la instancia.
 
 > [!warning]
-> El siguiente comando instala una versión de Ccierto que funciona pero que está obsoleta (*certbot 1.12.0*). Para instalar la última versión, debe utilizar el gestor de paquetes extra *snappy*. Puede consultar las instrucciones de instalación en el [sitio web de Certbot](https://certbot.eff.org/instructions?ws=apache&os=debianbuster).
+> El siguiente comando instala una versión de Certbot que funciona pero que está obsoleta (*certbot 1.12.0*). Para instalar la última versión, debe utilizar el gestor de paquetes extra *snappy*. Puede consultar las instrucciones de instalación en el [sitio web de Certbot](https://certbot.eff.org/instructions?ws=apache&os=debianbuster).
 >
 
 Instale los paquetes necesarios para el cliente Certbot:
@@ -274,7 +274,7 @@ debian@instance:~$ sudo certbot --apache -d domainname.ovh -d www.domainname.ovh
 
 Introduzca una dirección de correo electrónico válida y acepte las condiciones de uso.
 
-Algunos renovarán automáticamente los certificados. No es necesario realizar ninguna otra etapa. No obstante, puede consultar las opciones disponibles para saber más sobre las funcionalidades de Certbot.
+Certbot renovará automáticamente los certificados. No es necesario realizar ninguna otra etapa. No obstante, puede consultar las opciones disponibles para saber más sobre las funcionalidades de Certbot.
 
 ## Más información
 

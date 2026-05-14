@@ -41,7 +41,7 @@ Clicca sul menu `Compute`{.action} a sinistra e seleziona `Instances`{.action}. 
 
 Questa sezione indica il template attuale (*old flavor*) e ti permette di selezionare un nuovo template (*new flavor*) per la risorsa dell'istanza.
 
-Nel nostro esempio, il nostro template è « b2-15-flex ». Possiamo tornare a un template classico « b2-15 » o aggiornare l'istanza verso il template « b2-30 » per avere più spazio di storage. Nel nostro caso, vorremmo aggiornare la nostra istanza verso il modello classico « b2-30 x per aumentare lo spazio di storage.
+Nel nostro esempio, il nostro template è « b2-15-flex ». Possiamo tornare a un template classico « b2-15 » o aggiornare l'istanza verso il template « b2-30 » per avere più spazio di storage. Nel nostro caso, vorremmo aggiornare la nostra istanza verso il modello classico « b2-30 » per aumentare lo spazio di storage.
 
 ![Scegli un nuovo flavor](images/confirmflavor.png){.thumbnail}
 

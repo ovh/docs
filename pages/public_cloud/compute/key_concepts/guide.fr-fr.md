@@ -6,11 +6,11 @@ updated: 2025-12-05
 
 ## Objectif
 
-Ce guide vise à vous donner une compréhension claire des concepts fondamentaux nécessaires à la création, à la configuration et à la gestion de vos premières instances OVHcloud Public Cloud Compute. Vous apprendrez comment fonctionnent les instances, comment choisir le bon type d'instance, et comment les éléments-clés tels que les images, les zones de disponibilité, le réseau, la Sécurité et les sauvegardes s'articulent au sein de l'écosystème OVHcloud.
+Ce guide vise à vous donner une compréhension claire des concepts fondamentaux nécessaires à la création, à la configuration et à la gestion de vos premières instances OVHcloud Public Cloud Compute. Vous apprendrez comment fonctionnent les instances, comment choisir le bon type d'instance, et comment les éléments-clés tels que les images, les zones de disponibilité, le réseau, la sécurité et les sauvegardes s'articulent au sein de l'écosystème OVHcloud.
 
 ## Qu'est-ce qu'une instance (Machine Virtuelle) ?
 
-Une instance, ou Machine Virtuelle (VM), est un serveur entièrement isolé s'exécutant sur l'infrastructure physique partagée d'OVHcloud. Elle fonctionne comme un serveur traditionnel, mais offre la flexibilité et l'évolutivité du cloud. Vous choisissez le système d'exploitation, définissez les ressources CPU, RAM et Stockage, et déployez vos applications, sites web ou environnements de développement.
+Une instance, ou Machine Virtuelle (VM), est un serveur entièrement isolé s'exécutant sur l'infrastructure physique partagée d'OVHcloud. Elle fonctionne comme un serveur traditionnel, mais offre la flexibilité et l'évolutivité du cloud. Vous choisissez le système d'exploitation, définissez les ressources CPU, RAM et stockage, et déployez vos applications, sites web ou environnements de développement.
 
 Les instances Public Cloud Compute offrent :
 

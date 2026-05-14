@@ -64,7 +64,7 @@ apt-get upgrade -y
 apt-get install -y apache2 php5
 ```
 
->[!alert]
+> [!alert]
 >
 > Ten skrypt może zwiększyć czas tworzenia instancji.
 >
@@ -114,5 +114,5 @@ root@instance1:/home/ovh#
 
 ## Sprawdź również
  
-Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.
+Dołącz do [grona naszych użytkowników](/links/community).
 

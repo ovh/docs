@@ -47,7 +47,7 @@ Este tutorial fornece as etapas de base para uma instalação manual do WordPres
 > As seguintes instruções são verificadas para Debian 11. O Ubuntu é baseado em Debian e o tutorial também deve funcionar para uma distribuição Ubuntu atual.
 >
 
-Para aceder à sua instalação através de um nome de domínio, deve ligá-la à sua instância. Para isso, deve editar a zona DNS acessível a partir do seu [Área de Cliente OVHcloud](/links/manager), desde que a OVHcloud seja o seu agente de registo **e** que o nome de domínio utilize os servidores DNS da OVHcloud.
+Para aceder à sua instalação através de um nome de domínio, deve ligá-la à sua instância. Para isso, deve editar a zona DNS acessível a partir da sua [Área de Cliente OVHcloud](/links/manager), desde que a OVHcloud seja o seu agente de registo **e** que o nome de domínio utilize os servidores DNS da OVHcloud.
 
 Para mais informações, consulte o guia [Editar a sua zona DNS](/pages/web_cloud/domains/dns_zone_edit). Se o domínio estiver a ser utilizado atualmente, só pode configurar os DNS após a instalação do novo WordPress e o arranque do seu website.
 
@@ -82,7 +82,7 @@ Para o executar, insira o seguinte comando:
 debian@instance:~$ sudo mariadb-secure-installation
 ```
 
-Confirme a primeira chamada apoiando-se na `Enter`{.action}.
+Confirme o primeiro aviso premindo `Enter`{.action}.
 
 De seguida, selecione um método para proteger os acessos ao seu servidor de bases de dados.
 
@@ -92,7 +92,7 @@ Switch to unix_socket authentication [Y/n]
 
 Recomenda-se a utilização do método de autenticação proposto em vez do acesso por palavra-passe root. Carregue `y`{.action} e depois em `Enter`{.action}. (Se optar por utilizar o acesso root ao utilizador, introduza `n`{.action} e defina uma palavra-passe root.)
 
-Introduza `n`{.action} convite:
+Introduza `n`{.action} no convite seguinte:
 
 ```console
 Change the root password? [Y/n]
@@ -139,13 +139,13 @@ MariaDB [(none)]> exit;
 
 ### Etapa 3: configurar a firewall
 
-A configuração de uma firewall (*iptables*) permite melhorar a segurança da sua instância WordPress. Este processo pode ser simplificado utilizando o Frontend "Uncomplated Firewall" (UFW) e o seu conjunto de perfis pré-definidos. Instale o UFW:
+A configuração de uma firewall (*iptables*) permite melhorar a segurança da sua instância WordPress. Este processo pode ser simplificado utilizando o Frontend "Uncomplicated Firewall" (UFW) e o seu conjunto de perfis pré-definidos. Instale o UFW:
 
 ```bash
 debian@instance:~$ sudo apt install ufw
 ```
 
-Na lista de aplicações disponíveis para o UFW, os perfis que correspondem a um servidor web são nomeados "WWW" em uma instância Debian e "Apache" em uma instância Ubuntu. Esses perfis permitem abrir as portas necessárias para o tráfego HTTP e HTTPS de forma simples e segura.
+Na lista de aplicações disponíveis para o UFW, os perfis que correspondem a um servidor web são nomeados "WWW" numa instância Debian e "Apache" numa instância Ubuntu. Esses perfis permitem abrir as portas necessárias para o tráfego HTTP e HTTPS de forma simples e segura.
 
 ```bash
 debian@instance:~$ sudo ufw app list | grep WWW # ou grep Apache

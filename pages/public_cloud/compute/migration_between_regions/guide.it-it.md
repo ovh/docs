@@ -6,7 +6,7 @@ updated: 2025-11-04
 
 ## Obiettivi
 
-Questa guida spiega come migrare un'istanza Public Cloud da una zona di disponibilità (AZ) a un'altra, da 1AZ a 3AZ o viceversa. Centralizza le fasi chiave (backup, trasferimento e ricreazione) e rimanda ai guide dettagliate per ogni elemento.
+Questa guida spiega come migrare un'istanza Public Cloud da una zona di disponibilità (AZ) a un'altra, da 1AZ a 3AZ o viceversa. Centralizza le fasi chiave (backup, trasferimento e ricreazione) e rimanda alle guide dettagliate per ogni elemento.
 
 ## Prerequisiti
 
@@ -18,7 +18,7 @@ Questa guida spiega come migrare un'istanza Public Cloud da una zona di disponib
 ### Accesso allo Spazio Cliente OVHcloud
 
 - **Link diretto:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
-- **Percorso di navigazione:** `Public Cloud`{.action} > Seleziona il tuo project
+- **Percorso di navigazione:** `Public Cloud`{.action} > Seleziona il tuo progetto
 
 ---
 <!-- CP-NAV-END:publiccloud-projects -->

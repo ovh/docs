@@ -47,7 +47,7 @@ service ssh restart
 
 With this script, you can modify the default SSH port (22 -> 2211) and block the connection using the **root** user privileges.
 
-- Update packets and set up a web server:
+- Update packages and set up a web server:
 
 ```bash
 #!/bin/bash
@@ -89,7 +89,7 @@ With this script, you create an "**ovh**" user with sudo permissions, and they c
 
 ### Create the instance
 
-After you have retrieved the list of images and instance templates, you can launch the script with Cloud-init via the **--user- data** argument:
+After you have retrieved the list of images and instance templates, you can launch the script with Cloud-init via the **--user-data** argument:
 
 ```bash
 root@server:~# nova boot --key_name SSH_KEY --image bdcb5042-3548-40d0-b06f-79551d3b4377 --flavor 98c1e679-5f2c-4069-b4da-4a4f7179b758 --user-data ./adduser.sh Instance1

@@ -57,7 +57,7 @@ lsblk
 
 ```bash
 /dev/vdb # volume source
-/dev/vdc # volume cible LUKS
+/dev/vdc # LUKS target volume
 ```
 
 ### Step 3: Prepare the LUKS (encrypted) volume

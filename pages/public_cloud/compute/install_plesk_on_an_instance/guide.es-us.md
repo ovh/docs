@@ -55,7 +55,7 @@ Una vez completada la instalación, la interfaz de línea de comandos (CLI) most
 
 - Se generan dos URL:
     - Una con la dirección IP del servidor (en HTTPS con un certificado SSL autofirmado, que puede activar una alerta de seguridad en algunos navegadores).
-    - El otro con un dominio Plesk (en HTTPS con un certificado SSL firmado, sin alerta de seguridad).
+    - La otra con un dominio Plesk (en HTTPS con un certificado SSL firmado, sin alerta de seguridad).
     - Ambas son seguras, pero se recomienda usar la segunda.
 - Un mensaje dice: "También puede conectarse como 'root' con su contraseña 'root'." Sin embargo, por defecto no se genera ninguna contraseña root. Si es necesario, los clientes pueden seguir [esta guía](/pages/bare_metal_cloud/dedicated_servers/changing_root_password_linux_ds) para activar el usuario root y establecer una contraseña.
 
@@ -70,8 +70,7 @@ Para añadir su licencia de Plesk, necesitará la clave que le haya proporcionad
 > OVHcloud no comercializa licencias de Plesk para la solución Public Cloud. No obstante, puede adquirir una desde la web de [Plesk](https://www.plesk.com/).
 > 
 
-¿Desea cambiar su licencia, por ejemplo para sustituir una llave de prueba o para cambiar su oferta? Desde el interfaz de Plesk, vaya a `Tools & Settings`{.action}. En la sección **Plesk**, seleccione `License information`{.action}.
-Para añadir su licencia de Plesk, necesitará 
+¿Desea cambiar su licencia, por ejemplo para sustituir una llave de prueba o para cambiar su oferta? Desde la interfaz de Plesk, vaya a `Tools & Settings`{.action}. En la sección **Plesk**, seleccione `License information`{.action}.
 
 
 ## Más información

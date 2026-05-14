@@ -173,4 +173,4 @@ Haga clic en `Confirm`{.action} para iniciar el proceso.
 
 ## Más información
 
-Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.
+Interactúe con nuestra [comunidad de usuarios](/links/community).

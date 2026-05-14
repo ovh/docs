@@ -29,7 +29,7 @@ Ce guide explique comment migrer vos données d’un volume Block Storage standa
 
 ## En pratique
 
-### Etape 1 : Créer un volume LUKS
+### Étape 1 : Créer un volume LUKS
 
 Depuis votre [espace client OVHcloud](/links/manager), créez un nouveau volume Block Storage et sélectionnez le type `LUKS`.
 
@@ -111,7 +111,7 @@ sudo umount /mnt/luks_target
 
 Si le volume LUKS doit être utilisé de manière permanente, ajoutez une entrée dans `/etc/fstab` pour qu’il soit monté automatiquement au démarrage :
 
-Exemple:
+Exemple :
 
 ```bash
 UUID=<UUID_of_volume> /mnt/data ext4 defaults 0 2

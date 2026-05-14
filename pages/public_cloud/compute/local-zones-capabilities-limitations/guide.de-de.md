@@ -32,7 +32,7 @@ Weitere Informationen finden Sie auf unserer [Seite für Local Zones](/links/pub
 |                       | Floating IP                | Nein | |
 |                       | Additional IP             | Nein | |
 |                       | Private Netzwerk mit vRack   | Nein | Local Zones sind nicht mit vRack kompatibel. Private Netzwerke sind auf dieselbe Local Zone beschränkt. DHCP wird auf Local Private Netzwerken unterstützt. |
-| Speicher              | Object Storage             | Ja | 1. Benutzerrichtlinien werden nicht unterstützt. Alle Zugriffschlüssel innerhalb eines Projekts können auf alle Buckets in allen Local Zones zugreifen. </br> 2. Nur die Standard-Speicherklasse wird unterstützt. </br> 3. S3<sup>1</sup>-Funktionen werden nicht unterstützt: S3-Tags, Legal Hold, SSE-OMK, S3-Replikation, Serverzugriffsprotokollierung. |
+| Speicher              | Object Storage             | Ja | 1. Benutzerrichtlinien werden nicht unterstützt. Alle Zugriffschlüssel innerhalb eines Projekts können auf alle Buckets in allen Local Zones zugreifen. <br> 2. Nur die Standard-Speicherklasse wird unterstützt. <br> 3. S3<sup>1</sup>-Funktionen werden nicht unterstützt: S3-Tags, Legal Hold, SSE-OMK, S3-Replikation, Serverzugriffsprotokollierung. |
 |                       | Block Storage              | Ja | Keine Verschlüsselung. Klassische Volumes können nicht mehrfach angehängt werden. Klassische Volumes sind auf 250 IOPS begrenzt (gegenüber 500 IOPS in 1AZ und 3AZ-Regionen). Maximale Größe 4 TB (gegenüber 12 TB). |
 |                       | File Storage               | Nein | |
 | Container             | Managed Kubernetes Service | Nein | |

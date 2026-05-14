@@ -52,7 +52,7 @@ debian@instance:~$ sudo apt update && sudo apt-get upgrade -y
 
 > [!primary]
 >
-> Etant donné que les paquets logiciel sont régulièrement mis à jour, vous devrez peut-être ajuster les instructions suivantes en fonction des dernières versions.
+> Étant donné que les paquets logiciel sont régulièrement mis à jour, vous devrez peut-être ajuster les instructions suivantes en fonction des dernières versions.
 >
 
 Installez les paquets LAMP :
@@ -176,7 +176,7 @@ Vous pouvez aller plus loin avec l’UFW, par exemple si vous souhaitez restrein
 
 ### Étape 4 : installation de WordPress
 
-Rendez-vous sur le [site officiel de WordPress](https://wordpress.org/download/) afin de récupérer **l’URL de téléchargement** de la dernière version (au format « tar.gz ). Téléchargez ensuite le fichier :
+Rendez-vous sur le [site officiel de WordPress](https://wordpress.org/download/) afin de récupérer **l’URL de téléchargement** de la dernière version (au format « tar.gz »). Téléchargez ensuite le fichier :
 
 ```bash
 debian@instance:~$ wget https://wordpress.org/latest.tar.gz
@@ -249,7 +249,7 @@ Vérifiez en premier lieu que votre nom de domaine dispose des bons enregistreme
 > La commande suivante installe une version de Certbot qui fonctionne mais est obsolète (*certbot 1.12.0*). Pour installer la dernière version, vous devez utiliser le gestionnaire de paquets supplémentaire *snappy*. Vous trouverez les instructions d'installation sur le [site de Certbot](https://certbot.eff.org/instructions?ws=apache&os=debianbuster).
 >
 
-Installez les paquers nécessaires pour le client Certbot :
+Installez les paquets nécessaires pour le client Certbot :
 
 ```bash
 debian@instance:~$ sudo apt install certbot python3-certbot-apache

@@ -8,7 +8,7 @@ updated: 2025-11-04
 
 Ce guide explique comment migrer une instance Public Cloud d’une zone de disponibilité (AZ) à une autre, de 1AZ vers 3AZ ou inversement. Il centralise les étapes clés (sauvegarde, transfert et recréation) et redirige vers les guides détaillés pour chaque élément.
 
-## prérequis
+## Prérequis
 
 - Avoir une [instance Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps).
 
@@ -78,7 +78,7 @@ La restauration de l'instance dans la nouvelle région peut être réalisée :
 - via la CLI Openstack.
 - via Horizon.
 
-Retrouvez toutes les informations détaillées dans la partie **Créer une instance a partir d'une sauvegarde** de notre guide « [Créer / restaurer un serveur virtuel a partir d’une sauvegarde](/pages/public_cloud/compute/create_restore_a_virtual_server_with_a_backup) ».
+Retrouvez toutes les informations détaillées dans la partie **Créer une instance à partir d'une sauvegarde** de notre guide « [Créer / restaurer un serveur virtuel a partir d’une sauvegarde](/pages/public_cloud/compute/create_restore_a_virtual_server_with_a_backup) ».
 
 ## Aller plus loin
 

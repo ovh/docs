@@ -82,7 +82,7 @@ Per eseguirlo, esegui questo comando:
 debian@instance:~$ sudo mariadb-secure-installation
 ```
 
-Conferma il primo invito cliccando su `Entrata`{.action}.
+Conferma il primo prompt premendo `Invio`{.action}.
 
 In seguito scegli un metodo per proteggere gli accessi al tuo server di database.
 
@@ -90,9 +90,9 @@ In seguito scegli un metodo per proteggere gli accessi al tuo server di database
 Switch to unix_socket authentication [Y/n]
 ```
 
-Si raccomanda di utilizzare il metodo di autenticazione proposto al posto dell'accesso tramite password root. Premi su `y`{.action} e poi su `Entrata`{.action}. (Se decidi di utilizzare l'accesso utente root, digita `n`{.action} e poi definisci una password di root.)
+Si raccomanda di utilizzare il metodo di autenticazione proposto al posto dell'accesso tramite password root. Premi su `y`{.action} e poi su `Invio`{.action}. (Se decidi di utilizzare l'accesso utente root, digita `n`{.action} e poi definisci una password di root.)
 
-Inserisci `il seguente`{.action} invito:
+Inserisci `n`{.action} al prompt successivo:
 
 ```console
 Change the root password? [Y/n]
@@ -140,7 +140,7 @@ MariaDB [(none)]> exit;
 
 ### Step 3: configurare il firewall
 
-La configurazione di un firewall (*iptables*) permette di migliorare la sicurezza della tua istanza WordPress. Questo processo può essere semplificato utilizzando il front end "Uncomplicated Firewall" (UFW) e la sua serie di profili predefiniti. Installate UFW:
+La configurazione di un firewall (*iptables*) permette di migliorare la sicurezza della tua istanza WordPress. Questo processo può essere semplificato utilizzando il front end "Uncomplicated Firewall" (UFW) e la sua serie di profili predefiniti. Installa UFW:
 
 ```bash
 debian@instance:~$ sudo apt install ufw
@@ -158,7 +158,7 @@ debian@instance:~$ sudo ufw app list | grep WWW # o grep Apache
 
 Scegliendo "WWW Full", le connessioni protette (porta 443) e le richieste http non sicure (porta 80) al server web saranno autorizzate.
 
-Per visualizzare quali porti sono interessati da un profilo particolare, accedi `sudo ufw app info "profilo"`.
+Per visualizzare quali porte sono interessate da un profilo particolare, accedi `sudo ufw app info "profilo"`.
 
 Inserendo il seguente comando, le porte definite dal profilo "WWW Full" saranno aperte:
 
@@ -192,7 +192,7 @@ Accedi al [sito ufficiale di WordPress](https://wordpress.org/download/) per rec
 debian@instance:~$ wget https://wordpress.org/latest.tar.gz
 ```
 
-Elimina l'archivio scaricato:
+Decomprimi l'archivio scaricato:
 
 ```bash
 debian@instance:~$ tar zxvf latest.tar.gz
@@ -216,7 +216,7 @@ Elimina la cartella esistente:
 debian@instance:~$ sudo rm -R /var/www/html/
 ```
 
-Sostituisci di default la cartella del server Web con la cartella WordPress:
+Sostituisci la cartella predefinita del server Web con la cartella WordPress:
 
 ```bash
 debian@instance:~$ sudo mv wordpress /var/www/html
@@ -232,7 +232,7 @@ Il server Web è pronto per la configurazione iniziale di WordPress.
 
 ### Step 5: configurare WordPress
 
-Apri un browser Web e accedi al sito WordPress inserendo l'indirizzo IP della tua istanza (o il dominio se ne hai già [collegato uno all'istanza](/pages/web_cloud/domains/dns_zone_edit)). Scegliete una lingua sulla prima pagina.
+Apri un browser Web e accedi al sito WordPress inserendo l'indirizzo IP della tua istanza (o il dominio se ne hai già [collegato uno all'istanza](/pages/web_cloud/domains/dns_zone_edit)). Scegli una lingua sulla prima pagina.
 
 Utilizza la configurazione assistita WordPress per accedere al database. Inserisci le informazioni [configurate precedentemente](#sqlconf).
 
@@ -246,7 +246,7 @@ Una volta convalidato, potrai accedere allo spazio di amministrazione del tuo si
 
 > [!primary]
 >
-> Per stabilire connessioni sicure (`https`), il server web deve essere protetto tramite un'autorità di certificazione come [Let's Encrypt](https://letsencrypt.org/) che offre certificati gratuiti. Per configurare Apache è necessario installare uno strumento client (ad esempio "Cerbot"). Senza questo step, il tuo sito potrà accettare solo richieste `http`.
+> Per stabilire connessioni sicure (`https`), il server web deve essere protetto tramite un'autorità di certificazione come [Let's Encrypt](https://letsencrypt.org/) che offre certificati gratuiti. Per configurare Apache è necessario installare uno strumento client (ad esempio "Certbot"). Senza questo step, il tuo sito potrà accettare solo richieste `http`.
 > 
 > In alternativa, OVHcloud propone la soluzione [SSL Gateway](https://www.ovh.it/ssl-gateway/). Per maggiori informazioni, consulta la [nostra guida](/pages/web_cloud/ssl_gateway/order-ssl-gateway).
 >
@@ -256,10 +256,10 @@ Una volta convalidato, potrai accedere allo spazio di amministrazione del tuo si
 Per prima cosa verifica che il tuo dominio disponga dei record validi nella zona DNS, cioè che punti verso l'indirizzo IP della tua istanza.
 
 > [!warning]
-> Il comando successivo installa una versione di Cerbot che funziona ma è obsoleta (*certbot 1.12.0*). Per installare l'ultima versione, utilizza il gestore di pacchetti aggiuntivo *snappy*. Le istruzioni per l'installazione sono disponibili sul [sito di Cerbot](https://certbot.eff.org/instructions?ws=apache&os=debianbuster).
+> Il comando successivo installa una versione di Certbot che funziona ma è obsoleta (*certbot 1.12.0*). Per installare l'ultima versione, utilizza il gestore di pacchetti aggiuntivo *snappy*. Le istruzioni per l'installazione sono disponibili sul [sito di Certbot](https://certbot.eff.org/instructions?ws=apache&os=debianbuster).
 >
 
-Installate le scartoffie necessarie per il cliente Cerbot:
+Installa i pacchetti necessari per il client Certbot:
 
 ```bash
 debian@instance:~$ sudo apt install certbot python3-certbot-apache
@@ -273,7 +273,7 @@ debian@instance:~$ sudo certbot --apache -d domainname.ovh -d www.domainname.ovh
 
 Inserisci un indirizzo email valido e accetta le condizioni di utilizzo.
 
-Cerbot rinnova automaticamente i certificati. Non sono necessarie ulteriori fasi. Per maggiori informazioni sulle funzionalità di Cerbot, consulta le opzioni disponibili.
+Certbot rinnova automaticamente i certificati. Non sono necessarie ulteriori fasi. Per maggiori informazioni sulle funzionalità di Certbot, consulta le opzioni disponibili.
 
 ## Per saperne di più
 

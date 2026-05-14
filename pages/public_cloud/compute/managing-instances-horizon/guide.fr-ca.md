@@ -50,9 +50,9 @@ Ce menu vous permet d'exécuter les actions suivantes sur une ou plusieurs insta
 
 - Start Instances : cette option permet de redémarrer une ou plusieurs instances en statut *shutoff* ou *off*.
 - Shut Off Instances : cette option permet de suspendre une ou plusieurs instances.
-- Soft Reboot Instances : cette option vous permet de faire un rédemarrage logiciel sur une ou plusieurs instances.
+- Soft Reboot Instances : cette option vous permet de faire un redémarrage logiciel sur une ou plusieurs instances.
 
-**Create Snapshot** : Cette option permet de créé un snapshot (instantané) de votre instance. Consultez [ce guide](/pages/public_cloud/compute/managing_snapshots_in_horizon) pour plus d'informations.
+**Create Snapshot** : Cette option permet de créer un snapshot (instantané) de votre instance. Consultez [ce guide](/pages/public_cloud/compute/managing_snapshots_in_horizon) pour plus d'informations.
 
 ### Modifier une instance
 
@@ -99,7 +99,7 @@ Sélectionnez `Rebuild Instance`{.action} dans la liste déroulante correspondan
 
 Sélectionnez l'image pour la reconstruction.<br>
 Sélectionnez le type de partitionnement (« Automatique » ou « Manuel »). Ceci est facultatif.<br>
-Pour finir, cliquez sur `Rebuild Instance`{.action}. Cette operation peut prendre quelques minutes.
+Pour finir, cliquez sur `Rebuild Instance`{.action}. Cette opération peut prendre quelques minutes.
 
 ### Suspendre ou mettre en pause une instance (Shelve or pause an instance)
 

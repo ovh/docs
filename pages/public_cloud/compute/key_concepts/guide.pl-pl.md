@@ -22,14 +22,14 @@ Instancje można zarządzać za pomocą Panelu klienta OVHcloud, interfejsu Hori
 
 ## Typy instancji
 
-OVHcloud oferuje wiele rodziny instancji zaprojektowanych w celu spełnienia różnych wymagań dotyczących obciążenia. Każda rodzina oferuje zakres rozmiarów (flavorów), aby dokładnie dopasować potrzeby zasobowe.
+OVHcloud oferuje wiele rodzin instancji zaprojektowanych w celu spełnienia różnych wymagań dotyczących obciążenia. Każda rodzina oferuje zakres rozmiarów (flavorów), aby dokładnie dopasować potrzeby zasobowe.
 
 | Typy instancji | Opis | Typowe przypadki użycia |
 | ------------------ | -------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | General Purpose | Zrównoważone CPU i pamięć | Nadaje się do serwerów deweloperskich, aplikacji internetowych i ogólnych obciążeń biznesowych. Zapewnia zrównoważony stosunek CPU do RAM. |
 | CPU Optimized | Wysoka wydajność procesora | Idealne dla aplikacji intensywnie obliczeniowych, zadań przetwarzania równoległego, potoków CI/CD lub mikroserwisów wymagających wysokiej częstotliwości CPU. |
 | Memory Optimized | Duża pojemność pamięci | Dostosowane do analizy danych, dużych obciążeń danych i buforowania baz danych. Zapewnia wysokie stosunki RAM do CPU i przyspieszone IOPS. vCores są zegarowane z częstotliwością 2 GHz lub wyższą. |
-| Storage Optimized | Wysoka wydajność IOPS | Wyposaży w magazyn NVMe, zapewniając ultra szybkie operacje wejścia/wyjścia z dysku, idealne do baz danych i dużych aplikacji danych. |
+| Storage Optimized | Wysoka wydajność IOPS | Wyposażona w magazyn NVMe, zapewniając ultra szybkie operacje wejścia/wyjścia z dysku, idealne do baz danych i dużych aplikacji danych. |
 | GPU | Grafika przyspieszona sprzętowo | Oferuje wyjątkową wydajność obliczeń równoległych, nawet do 1000 razy szybszą niż CPU dla niektórych obciążeń. Nadaje się do AI, uczenia głębokiego i renderowania 3D. |
 | Discovery | Niskie koszty, udostępnione zasoby | Instancje wstępne z udostępnionymi zasobami, oferujące stabilną wydajność po atrakcyjnej cenie. Idealne do środowisk testowych, szkoleń lub projektów dowodowych. |
 
@@ -98,7 +98,7 @@ Kopie zapasowe chronią Twoje dane i konfiguracje przed przypadkową utratą lub
 
 > [!primary]
 >
-> **Najlepsze praktyki**: Kopia zapasowa nie zastępuje [odporności architektury](/pages/public_cloud/public_cloud_cross_functional/3az_ref_architecture). Dla krytycznych środowisk połącz kopie zapasowe z replikacją wielostrefową, aby zapewnić maksymalne ochronę danych i dostępność usługi.
+> **Najlepsze praktyki**: Kopia zapasowa nie zastępuje [odporności architektury](/pages/public_cloud/public_cloud_cross_functional/3az_ref_architecture). Dla krytycznych środowisk połącz kopie zapasowe z replikacją wielostrefową, aby zapewnić maksymalną ochronę danych i dostępność usługi.
 >
 
 ## Sieci publiczne i prywatne
@@ -108,7 +108,7 @@ Instancje OVHcloud Compute mogą być podłączone do różnych typów sieci w z
 | Typy sieci | Opis | Przypadki użycia |
 | ------------------------ | --------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------ |
 | Sieć publiczna | Instancje są podłączone do Internetu za pomocą publicznego adresu IP. | Gospodarowanie witrynami internetowymi, API lub udostępnianie zdalnego dostępu do Twoich serwerów. |
-| Sieć prywatna (vRack) | Prywatna interkoneksja między Twoimi zasobami OVHcloud, izolowana od Internetu publicznego. | Łączenie baz danych, usług backendowych lub komunikacji wewnętrznego między instancjami. |
+| Sieć prywatna (vRack) | Prywatna interkoneksja między Twoimi zasobami OVHcloud, izolowana od Internetu publicznego. | Łączenie baz danych, usług backendowych lub komunikacji wewnętrznej między instancjami. |
 
 vRack umożliwia utworzenie bezpiecznej, izolowanej sieci, nawet w różnych regionach lub projektach.
 
@@ -122,7 +122,7 @@ Savings Plans pozwalają Ci obniżyć koszty Public Cloud Compute w zamian za zo
 
 **Główne korzyści:**
 
-- **Niższe koszty**: Więcej opłacalne niż rozliczanie za rzeczywiste użycie.
+- **Niższe koszty**: Bardziej opłacalne niż rozliczanie za rzeczywiste użycie.
 - **Automatyczne stosowanie**: Zyski są automatycznie stosowane do wszystkich kompatybilnych instancji.
 - **Elastyczne**: Możesz zmieniać typy lub rozmiary instancji, zachowując korzyści z planu.
 

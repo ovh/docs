@@ -79,7 +79,7 @@ debian@instance:~$ sudo mariadb-secure-installation
 
 Bestätigen Sie den ersten Prompt, indem Sie `Enter`{.action} drücken.
 
-Sie können dann eine Methode auswählen, um den Zugang zu Ihrem Datenbankserver zu abzusichern.
+Sie können dann eine Methode auswählen, um den Zugang zu Ihrem Datenbankserver abzusichern.
 
 ```console
 Switch to unix_socket authentication [Y/n]
@@ -267,7 +267,7 @@ debian@instance:~$ sudo certbot --apache -d domainname.ovh -d www.domainname.ovh
 
 Geben Sie eine gültige E-Mail-Adresse ein und akzeptieren Sie die Nutzungsbedingungen.
 
-Certbot verlängert die Zertifikate automatisch; es sind keine weitereren Schritte erforderlich. Sie können jedoch in der Dokumentation zu den verfügbaren Optionen von Certbot nachlesen, um mehr zu dessen Einsatzmöglichkeiten zu erfahren.
+Certbot verlängert die Zertifikate automatisch; es sind keine weiteren Schritte erforderlich. Sie können jedoch in der Dokumentation zu den verfügbaren Optionen von Certbot nachlesen, um mehr zu dessen Einsatzmöglichkeiten zu erfahren.
 
 ## Weiterführende Informationen
 

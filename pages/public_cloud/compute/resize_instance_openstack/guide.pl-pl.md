@@ -133,4 +133,4 @@ Jeśli chcesz zmniejszyć swoją instancję, możesz to zrobić, wykonując te s
 
 [Skaluj instancję Public Cloud za pomocą interfejsu Horizon](/pages/public_cloud/compute/resize_of_an_instance)
 
-Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.
+Dołącz do [grona naszych użytkowników](/links/community).

@@ -94,4 +94,4 @@ Następnie kliknij `Finish`{.action}, aby zatwierdzić wybór.
 
 ## Sprawdź również
 
-Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.
+Dołącz do [grona naszych użytkowników](/links/community).

@@ -244,4 +244,4 @@ Erfahren Sie in [dieser Anleitung](/pages/public_cloud/compute/create_restore_a_
 
 [Verwenden von Backups zum Erzeugen oder Wiederherstellen von Instanzen](/pages/public_cloud/compute/create_restore_a_virtual_server_with_a_backup)
 
-Für den Austausch mit unserer Community gehen Sie auf <https://community.ovh.com/en/>.
+Treten Sie unserer [User Community](/links/community) bei.

@@ -111,4 +111,4 @@ Um eine Sicherheitsgruppe zu löschen, setzen Sie links den Haken und klicken Si
 
 ## Weiterführende Informationen
 
-Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.
+Treten Sie unserer [User Community](/links/community) bei.

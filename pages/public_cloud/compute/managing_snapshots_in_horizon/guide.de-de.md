@@ -23,7 +23,7 @@ Während des Betriebs können Sie jederzeit eine Sicherung Ihrer Daten, der Konf
 
 ### Snapshot erstellen
 
-Loggen Sie sich ins [Horizon-Interface](https://horizon.cloud.ovh.net/auth/login/) ein wählen Sie oben links die korrekte Region aus.
+Loggen Sie sich ins [Horizon-Interface](https://horizon.cloud.ovh.net/auth/login/) ein und wählen Sie oben links die korrekte Region aus.
 
 ![Region](images/region2021.png){.thumbnail}
 

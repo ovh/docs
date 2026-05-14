@@ -19,7 +19,7 @@ Ihre Instanz kann aufgrund erhöhter Aktivität oder einfach aufgrund neuer Anfo
 >
 > - Bei klassischen Instanzen ist nur eine Größenänderung auf ein höheres Modell (*Upscaling*) möglich.
 > - Eine [Metal Instanz](https://www.ovhcloud.com/de/public-cloud/metal-instances/) kann nur auf ein anderes Modell der Reihe **Metal** geändert werden.
-> - *Flex*-Instanzen ermöglichen die Größenänderung auf größere oder keinere Modelle aufgrund einer fixen Diskgröße.
+> - *Flex*-Instanzen ermöglichen die Größenänderung auf größere oder kleinere Modelle aufgrund einer fixen Diskgröße.
 >
 
 ## Voraussetzungen
@@ -133,4 +133,4 @@ Wenn Sie Ihre Instanz verkleinern möchten, können Sie dies tun, indem Sie die 
 
 [Größe einer Public Cloud Instanz über Horizon ändern](/pages/public_cloud/compute/resize_of_an_instance)
 
-Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.
+Treten Sie unserer [User Community](/links/community) bei.

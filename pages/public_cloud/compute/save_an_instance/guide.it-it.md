@@ -92,7 +92,7 @@ Crea un backup unico di un'istanza o configura una pianificazione per automatizz
 > Attraverso l'API OVHcloud <a name="createinstanceviaapi"></a>
 >> Accedi a [l'API OVHcloud](/links/console).
 >>
->> Puoi elencare tutte le regioni disponibili utilizzando il seguente chiamata API :
+>> Puoi elencare tutte le regioni disponibili utilizzando la seguente chiamata API :
 >>
 >> > [!api]
 >> >

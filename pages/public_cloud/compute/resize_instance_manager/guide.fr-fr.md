@@ -13,7 +13,7 @@ Si votre instance manque de ressources en raison d'une activité accrue ou de no
 > [!warning]
 >
 > Seul le redimensionnement vers un modèle supérieur est possible pour les modèles classiques.
-> De plus, cette manipulation entraine une coupure de l'instance le temps de l'opération.
+> De plus, cette manipulation entraîne une coupure de l'instance le temps de l'opération.
 > 
 
 > [!success]

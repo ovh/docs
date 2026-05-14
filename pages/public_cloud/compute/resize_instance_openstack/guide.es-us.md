@@ -57,7 +57,7 @@ $ openstack server list
 
 ### Lista de modelos <a name="flavorlist"></a>
 
-A continuación, deberá ver la lista de modelos (*flavors*) disponibles en su región para recuperar el ID de la nueva plantilla. En nuestro ejemplo, queremos redimensionar nuestra instancia en un modelo b2-30 con ID `09889e6-d1fc-4967-baea-19fd97fd83a8`.
+A continuación, deberá ver la lista de modelos (*flavors*) disponibles en su región para recuperar el ID de la nueva plantilla. En nuestro ejemplo, queremos redimensionar nuestra instancia en un modelo b2-30 con ID `098889e6-d1fc-4967-baea-19fd97fd83a8`.
 
 ```bash
 $ openstack flavor list
@@ -133,4 +133,4 @@ Si desea reducir su instancia, puede hacerlo siguiendo los mismos pasos menciona
 
 [Redimensionar una instancia de Public Cloud a través de Horizon](/pages/public_cloud/compute/resize_of_an_instance)
 
-Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.
+Interactúe con nuestra [comunidad de usuarios](/links/community).

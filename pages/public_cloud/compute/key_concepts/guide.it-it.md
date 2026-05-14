@@ -27,7 +27,7 @@ OVHcloud offre diverse famiglie di istanze progettate per rispondere a diversi t
 | Tipi di istanze  | Descrizione                      | Caso d'uso tipico                                                                                                                                                        |
 | ------------------ | -------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | Generale           | Equilibrio CPU e Memoria         | Adatto a server di sviluppo, applicazioni web e carichi di lavoro aziendali generali. Fornisce un rapporto bilanciato tra CPU e RAM.                                            |
-| CPU ottimizzata      | Alta prestazione del processore     | Ideale per applicazioni intensiva di calcolo, attività di elaborazione parallela, pipeline CI/CD o microservizi che richiedono una frequenza CPU elevata.                                     |
+| CPU ottimizzata      | Alta prestazione del processore     | Ideale per applicazioni intensive di calcolo, attività di elaborazione parallela, pipeline CI/CD o microservizi che richiedono una frequenza CPU elevata.                                     |
 | Memoria ottimizzata  | Capacità di memoria elevata          | Progettata per l'analisi dei dati, carichi di lavoro big data e cache di database. Presenta rapporti memoria/CPU elevati e IOPS accelerati. I core virtuali sono clockati a 2 GHz o più.       |
 | Archiviazione ottimizzata | Alta prestazione IOPS           | Dotata di archiviazione NVMe per I/O disco ultra veloci, ideale per database e applicazioni big data.                                                                     |
 | GPU                | Grafica accelerata hardware      | Fornisce un'eccezionale prestazione di calcolo parallelo, fino a 1000 volte più veloce della CPU per alcuni carichi di lavoro. Adatta all'IA, al machine learning e al rendering 3D.               |
@@ -62,7 +62,7 @@ Durante la creazione di un'istanza, selezioni un'immagine che include il sistema
 
 - **Distribuzioni Linux**: Ubuntu, Debian, CentOS, AlmaLinux, Rocky Linux e altre. Queste immagini sono pronte all'uso per i server web, gli ambienti di sviluppo e i carichi di lavoro generali.
 - **Windows Server**: Versioni con licenze integrate, permettendo un immediato deployment per applicazioni basate su Microsoft e carichi di lavoro aziendali.
-- **Applicazioni preconfigurate**: Immagini che includono software come cPanel, Plesk, Docker o NVIDIA GPU Cloud (NGC). Semplicizzano il deployment e accelerano il passaggio alla produzione.
+- **Applicazioni preconfigurate**: Immagini che includono software come cPanel, Plesk, Docker o NVIDIA GPU Cloud (NGC). Semplificano il deployment e accelerano il passaggio alla produzione.
 - **[Immagini personalizzate](/pages/public_cloud/compute/upload_own_image)**: Puoi importare le tue immagini in formato QCOW2 o RAW, offrendo un controllo completo sul tuo ambiente e permettendo migrazioni, modelli standardizzati o configurazioni specializzate.
 
 **Ciclo di vita e supporto**: OVHcloud aggiorna regolarmente il catalogo delle immagini. Consulta sempre le notifiche sul ciclo di vita e la fine del supporto per assicurarti che le tue immagini rimangano sicure e supportate. Vedi [qui](/pages/public_cloud/compute/image-life-cycle).
@@ -80,7 +80,7 @@ Buone pratiche:
 
 - Non condividere mai la tua chiave privata.
 - Utilizzare una chiave unica per ogni utente.
-- Archiviare le tue chiavi in un gestore o in un fortezza sicuro.
+- Archiviare le tue chiavi in un gestore o in una fortezza sicura.
 
 Per istruzioni dettagliate sulla creazione e sull'utilizzo delle chiavi SSH, consulta la guida [OVHcloud su SSH](/pages/public_cloud/compute/creating-ssh-keys-pci).
 

@@ -61,7 +61,7 @@ Pode criar um backup único de uma instância ou configurar um planeamento para 
 
 
 > [!tabs]
-> Através do área de cliente OVHcloud
+> Através da área de cliente OVHcloud
 >>
 >> Clique em `Instâncias`{.action} no menu à esquerda.<br>
 >> Na página das instâncias, clique no botão `...`{.action} à direita da instância e selecione `Criar um backup`{.action}.

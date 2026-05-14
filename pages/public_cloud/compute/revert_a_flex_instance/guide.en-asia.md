@@ -13,7 +13,7 @@ As your infrastructure is constantly evolving, you may need to increase the stor
 
 ## Requirements
 
-- An [OVHcloud Public Cloud instance](/pages/public_cloud/compute/public-cloud-first-steps#configuratione) with the flex option
+- An [OVHcloud Public Cloud instance](/pages/public_cloud/compute/public-cloud-first-steps#configuration) with the flex option
 - [Access to the Horizon interface](/pages/public_cloud/public_cloud_cross_functional/introducing_horizon)
 
 ## Instructions
