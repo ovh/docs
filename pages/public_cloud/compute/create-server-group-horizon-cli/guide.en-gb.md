@@ -52,7 +52,7 @@ A Server Group with the policy of `soft anti affinity` will **try to** make sure
 >> 1. Log in to the [Horizon interface](https://horizon.cloud.ovh.net/auth/login/).
 >> 1. Select the appropriate region from the drop down menu at the top left.
 >> 1. Click on `Compute`{.action} in left tab, then on `Server Groups`{.action}.
->> 1. Next, cick on `+ Create Server Group`{.action}.
+>> 1. Next, click on `+ Create Server Group`{.action}.
 >> 1. In the popup window that appears, select a `Name` and `Policy` for your server group.
 >> 1. Click on `Submit`{.action}.
 >>
@@ -91,7 +91,7 @@ A Server Group with the policy of `soft anti affinity` will **try to** make sure
 
 If you subsequently launch more instances referencing the same Server Group, the scheduler concentrates or distributes them according to the Server Group's policy.
 
-### Modifiying a Server Group
+### Modifying a Server Group
 
 ![List Server Groups OpenStack](images/list_server_groups_openStack_dashboard.png){.thumbnail}
 

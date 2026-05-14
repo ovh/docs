@@ -60,4 +60,4 @@ Aby uzyskać szczegółowe informacje na temat tej procedury, zapoznaj się z na
 
 [Delegowanie projektów](/pages/public_cloud/public_cloud_cross_functional/delegate_projects)
 
-Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.
+Dołącz do [grona naszych użytkowników](/links/community).

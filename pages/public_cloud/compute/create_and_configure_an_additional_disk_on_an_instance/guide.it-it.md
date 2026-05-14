@@ -522,7 +522,7 @@ Salva ed esci. Il disco viene montato automaticamente a ogni riavvio.
 
 #### Con Windows
 
-Installa una connessione RDP (Remote Desktop) con la tua istanza Windows.
+Stabilisci una connessione RDP (Remote Desktop) con la tua istanza Windows.
 
 Una volta connesso, clicca con il tasto destro sul pulsante `Inizia`{.action} e apri la `Gestisci i dischi`{.action}.
 
@@ -558,7 +558,7 @@ Fai un click con il tasto destro sul pulsante `Inizia`{.action} e apri `Esegui`{
 
 Clicca su `cmd` e clicca su `OK`{.action} per aprire l'applicazione della riga di comando.
 
-![run promo](images/run-prompt.png){.thumbnail}
+![run prompt](images/run-prompt.png){.thumbnail}
 
 Dal prompt dei comandi, apri DISKPART:
 
@@ -676,7 +676,7 @@ Prima di scollegare un volume, smontalo dal sistema operativo.
 >>
 > **Con Windows**
 >>
->> Installa una connessione RDP (Remote Desktop) con la tua istanza Windows.
+>> Stabilisci una connessione RDP (Remote Desktop) con la tua istanza Windows.
 >>
 >> Una volta connesso, clicca con il tasto destro sul menu `Avviare`{.action} e apri `Gestione disco`{.action}.
 >>

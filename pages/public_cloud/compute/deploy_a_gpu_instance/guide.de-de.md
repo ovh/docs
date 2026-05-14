@@ -108,7 +108,7 @@ Folgen Sie anschließend den verbleibenden Schritten, wie in [dieser Anleitung](
 >> Die GPU-Instanz ist jetzt voll funktionsfähig und verwendbar.
 >>
 > Unter Windows
->> Es gibt Inkompatibilitäten zwischen dem NVIDIA-Treiber und der Visualisierungslösung *KVM/pci_passthrough*. **Standard-Windows-Images funktionieren nicht.**
+>> Es gibt Inkompatibilitäten zwischen dem NVIDIA-Treiber und der Virtualisierungslösung *KVM/pci_passthrough*. **Standard-Windows-Images funktionieren nicht.**
 >>
 >> Wir stellen spezielle Images auf Basis eines virtuellen **UEFI**-BIOS zur Verfügung, die den ordnungsgemäßen Betrieb des Treibers ermöglichen.
 >>
@@ -154,4 +154,4 @@ Folgen Sie anschließend den verbleibenden Schritten, wie in [dieser Anleitung](
 
 ## Weiterführende Informationen
 
-Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.
+Treten Sie unserer [User Community](/links/community) bei.

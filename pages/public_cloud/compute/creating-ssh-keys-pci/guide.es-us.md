@@ -5,8 +5,8 @@ updated: 2024-12-09
 ---
 
 <style>
-detalles>summary {
-color:rgb(33, 153, 232) !importante;
+details>summary {
+color:rgb(33, 153, 232) !important;
 cursor: pointer;
 }
 details>summary::before {

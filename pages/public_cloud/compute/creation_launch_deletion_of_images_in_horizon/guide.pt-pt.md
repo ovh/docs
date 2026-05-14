@@ -11,7 +11,7 @@ updated: 2021-12-30
 ## Objetivo
 
 A adição de imagens personalizadas é possível através do manager OpenStack Horizon
-Esta operação permite-lhe, por exemplo, importar as suas imagens das antigas máquinas virtuais para o Public Cloud, com a condição que o seu formato ser compatível.
+Esta operação permite-lhe, por exemplo, importar as suas imagens das antigas máquinas virtuais para o Public Cloud, com a condição de que o seu formato seja compatível.
 
 **Este guia explica as diferentes etapas para a criação, para dar inicio e eliminar imagens na interface Horizon onde gere os seus serviços OVHcloud.**
 
@@ -78,4 +78,4 @@ Na coluna Ações será possível:
 
 ## Quer saber mais?
  
-Fale com a nossa comunidade de utilizadores: <https://community.ovh.com/en/>.
+Fale com a nossa [comunidade de utilizadores](/links/community).

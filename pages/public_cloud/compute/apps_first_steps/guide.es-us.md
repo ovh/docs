@@ -117,7 +117,7 @@ Si su dominio está registrado en OVHcloud, puede seguir [esta guía](/pages/web
 
 <ol start="2">
   <li>Tal vez tengan que esperar 24 horas antes de que ambos registros se propaguen por completo. Todavía puede comprobarlo con <a href="https://mxtoolbox.com/DnsLookup.aspx">mxtoolbox</a>. Si la dirección IP de su dominio aparece en mxtoolbox del mismo modo que la de su servidor, puede pasar a la siguiente etapa.</li>
-  <li>Conéctese al servidor por SSH con el usuario CentOS y ejecute los siguientes comandos para instalar Cura:</li>
+  <li>Conéctese al servidor por SSH con el usuario CentOS y ejecute los siguientes comandos para instalar Certbot:</li>
 </ol>
 
 > [!warning]
@@ -134,7 +134,7 @@ systemctl restart httpd
 ```
 
 <ol start="4">
-  <li> Genere su certificado SSL utilizando Cura (siga las indicaciones en pantalla).</li>
+  <li> Genere su certificado SSL utilizando Certbot (siga las indicaciones en pantalla).</li>
 </ol>
 
 ```sh
@@ -143,7 +143,7 @@ certbot certonly -d personaldomain.ovh --webroot
 
 Al introducir "Input the webroot", debe introducir una variable del tipo "/var/www/wordpress". Si instala Joomla!, debe sustituir "wordpress" por "joomla".
 
-Ahora debe asegurarse de que Cierbot también sitúe esta variable en el archivo ssl.conf. Para ello, introduzca:
+Ahora debe asegurarse de que Certbot también sitúe esta variable en el archivo ssl.conf. Para ello, introduzca:
 
 ```sh
 certbot -d personaldomain.ovh —apache
@@ -260,4 +260,4 @@ No es necesario realizar ningún otro paso para finalizar la primera configuraci
 
 Si necesita formación o asistencia técnica para implantar nuestras soluciones, póngase en contacto con su representante de ventas o haga clic en [este enlace](/links/professional-services) para obtener un presupuesto y solicitar un análisis personalizado de su proyecto a nuestros expertos del equipo de Servicios Profesionales.
 
-Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.
+Interactúe con nuestra [comunidad de usuarios](/links/community).

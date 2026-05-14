@@ -381,7 +381,7 @@ vdb 254:16 0 10G 0 disk
 
 Créez une partition sur le disque supplémentaire :
 
-Si votre disque additionnel est inférieur à 2TB:
+Si votre disque additionnel est inférieur à 2TB :
 
 ```bash
 sudo fdisk /dev/vdb
@@ -415,7 +415,7 @@ Calling ioctl() to re-read partition table.
 Syncing disks.
 ```
 
-Si votre disque additionnel est supérieur à 2TB:
+Si votre disque additionnel est supérieur à 2TB :
 
 ```bash
 sudo parted /dev/vdb

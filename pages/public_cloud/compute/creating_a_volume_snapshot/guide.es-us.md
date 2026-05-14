@@ -55,7 +55,7 @@ Le recomendamos que realice los snapshots fuera de su horario de producción.
 
 Estas son algunas de las buenas prácticas:
 
-- Evite crear snapshots en las horas punta (entre las 04:00 y las 22:00, hora de París).
+- evite crear snapshots en las horas punta (entre las 04:00 y las 22:00, hora de París).
 - instale el agente qemu-guest si no lo ha hecho o intente desactivarlo si es necesario;
 - intente no "solicitar" demasiado al servidor durante la fase de creación del snapshot (limitación de I/O, consumo de RAM, etc.).
 

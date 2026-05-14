@@ -20,7 +20,7 @@ Cualquier instancia declarada como mensual y que ya exista el día 1 del mes en 
 
 ### Si activo una instancia con tarifa mensual durante el transcurso del mes, ¿cómo se facturará este servicio?
 
-En este caso se realizará un prorrateo del precio mensual en función del número de días restantes desde la activación del recurso hasta el final del mes en curso. Así pues, si contrata una instancia mensual de tipo B2-7 el día 13 del mes con un precio mensual de 23,20 $ (IVA incl.), el consumo de esta instancia se incluirá en la próxima factura emitida el día 1 del mes siguiente. El prorrateo se calculará de la siguiente forma: X (31-12 en este caso) días consumidos de los 31 disponibles en el mes, es decir ((31-12)/31)*23,20 € = 14,21 $ IVA incl.
+En este caso se realizará un prorrateo del precio mensual en función del número de días restantes desde la activación del recurso hasta el final del mes en curso. Así pues, si contrata una instancia mensual de tipo B2-7 el día 13 del mes con un precio mensual de 23,20 $ (IVA incl.), el consumo de esta instancia se incluirá en la próxima factura emitida el día 1 del mes siguiente. El prorrateo se calculará de la siguiente forma: X (31-12 en este caso) días consumidos de los 31 disponibles en el mes, es decir ((31-12)/31)*23,20 $ = 14,21 $ IVA incl.
 
 A continuación, si la instancia todavía existe a principios de mes, se facturará según la modalidad de facturación ordinaria: la tarifa mensual de una instancia en un mes concreto se incluirá en la próxima factura emitida el día 1 del mes siguiente. Por ejemplo, si contrata una instancia durante el mes de mayo y dicha instancia todavía sigue activa a principios de junio, este servicio se facturará el día 1 de julio por un importe correspondiente a todo el mes de junio.
 
@@ -38,4 +38,4 @@ Así pues, con un compromiso mensual, cada mes comenzado deberá abonarse en su 
 
 Si necesita formación o asistencia técnica para implantar nuestras soluciones, póngase en contacto con su representante de ventas o haga clic en [este enlace](/links/professional-services) para obtener un presupuesto y solicitar un análisis personalizado de su proyecto a nuestros expertos del equipo de Servicios Profesionales.
 
-Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.
+Interactúe con nuestra [comunidad de usuarios](/links/community).

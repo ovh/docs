@@ -140,7 +140,7 @@ certbot certonly -d personaldomain.ovh --webroot
 
 Lorsque vous êtes invité à saisir « Input the webroot », vous devez saisir une variable du type « /var/www/wordpress ». Si vous installez Joomla!, vous devez remplacer « wordpress » par « joomla ».
 
-Vous devez maintenant faire en sorte que Certbot place également cette variable dans le fichier ssl.conf. Pour cela, entrez:
+Vous devez maintenant faire en sorte que Certbot place également cette variable dans le fichier ssl.conf. Pour cela, entrez :
 
 ```sh
 certbot -d personaldomain.ovh --apache
@@ -253,8 +253,8 @@ Vous trouverez ci-dessous les premières étapes relatives à la mise en service
 
 Aucune autre étape n'est nécessaire pour terminer la première configuration de cette application.
 
-## Allez plus loin
+## Aller plus loin
 
-Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](/links/professional-services) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
+Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en œuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](/links/professional-services) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).

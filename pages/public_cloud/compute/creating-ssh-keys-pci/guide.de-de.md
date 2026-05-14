@@ -20,7 +20,7 @@ details[open]>summary::before {
 
 ## Ziel
 
-SSH ermöglicht einen sicheren Kommunikationskanal über öffentliche Netzwerke in einer Client-Server-Architektur. Diese SSH-Verbindungen zwischen zwei vertrauenswürdigen Hosts, etwa zwischen einem Desktop-Client und einem Remote-Server, können mithilfe von Schlüsselpaaren authentifiziert werden, 
+SSH ermöglicht einen sicheren Kommunikationskanal über öffentliche Netzwerke in einer Client-Server-Architektur. Diese SSH-Verbindungen zwischen zwei vertrauenswürdigen Hosts, etwa zwischen einem Desktop-Client und einem Remote-Server, können mithilfe von Schlüsselpaaren authentifiziert werden. 
 
 Ein Schlüsselsatz besteht aus einem öffentlichen Schlüssel, der weitergegeben werden kann, und einem privaten Schlüssel, der geheim bleibt. Wenn der öffentliche Schlüssel auf einem Server gespeichert wird, kann sich jeder Client, der über den zugehörigen privaten Schlüssel verfügt, ohne Eingabe eines Kennworts anmelden.
 

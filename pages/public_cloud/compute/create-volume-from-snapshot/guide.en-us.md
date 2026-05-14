@@ -63,7 +63,8 @@ The process of attaching the disk to your instance will then begin, and this may
 ![attaching volume](images/volume05.png){.thumbnail}
 
 > [!warning]
-Make sure to not leave the current page in your OVHcloud Control Panel while the disk is being attached. This may interrupt the process.
+>
+> Make sure to not leave the current page in your OVHcloud Control Panel while the disk is being attached. This may interrupt the process.
 >
 
 Once the attachment is complete, you can follow these steps on how to configure the additional disk [using Linux](/pages/public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance#using-linux) or [using Windows](/pages/public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance#using-windows).

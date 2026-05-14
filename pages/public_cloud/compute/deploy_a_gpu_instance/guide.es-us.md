@@ -154,4 +154,4 @@ Siga los pasos restantes como se detalla en [esta guía](/pages/public_cloud/com
 
 ## Más información
 
-Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.
+Interactúe con nuestra [comunidad de usuarios](/links/community).

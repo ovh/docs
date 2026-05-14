@@ -59,7 +59,7 @@ Un groupe de serveurs avec la politique `soft anti affinity` **tentera** de s'as
 > CLI
 >> Pour créer un groupe de serveurs, utilisez la commande suivante :
 >>
->> ``` bash
+>> ```bash
 >> openstack server group create \ --policy [affinity|soft-affinity|anti-affinity|soft-anti-affinity] \<server_group_name>
 >> ```
 >>
@@ -105,7 +105,7 @@ Si vous lancez ensuite d'autres instances faisant référence au même groupe de
 
 ### Résolution des problèmes courants
 
-Si vous continuez à créer des instances au sein d'un groupe de serveurs avec une polique `anti affinity`, vous finirez par dépasser la quantité totale de nœuds compute dans la région.
+Si vous continuez à créer des instances au sein d'un groupe de serveurs avec une politique `anti affinity`, vous finirez par dépasser la quantité totale de nœuds compute dans la région.
 
 La commande réussira toujours, mais l'instance ne sera plus planifiée sur un nœud compute.
 
@@ -217,4 +217,4 @@ openstack quota show <project> |grep -i server-group
 
 ## Aller plus loin
 
-Rejoignez notre [communauté d'utilisateurs](/links/community).
+Échangez avec notre [communauté d'utilisateurs](/links/community).

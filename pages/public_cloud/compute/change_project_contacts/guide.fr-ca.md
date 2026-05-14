@@ -7,7 +7,7 @@ updated: 2025-04-28
 ## Objectif
 
 Vous pouvez modifier les contacts administrateur et facturation d'un projet Public Cloud dans votre espace client.<br>
-La modification de ces contacts permet de dissocier la gestion technique de la gestion facturation, pour les services d'un projet .
+La modification de ces contacts permet de dissocier la gestion technique de la gestion facturation, pour les services d'un projet.
 
 **Ce guide vous explique comment modifier les contacts d'un projet Public Cloud dans votre espace client.**
 

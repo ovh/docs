@@ -67,11 +67,12 @@ Proces łączenia dysku z Twoją instancją rozpocznie się i może zająć kilk
 ![przywiąż wolumen](images/volume05.png){.thumbnail}
 
 > [!warning]
-Podczas łączenia dysku unikaj przeglądania strony poza zakładką w trakcie. Może to zakłócić proces.
+>
+> Podczas łączenia dysku unikaj przeglądania strony poza zakładką w trakcie. Może to zakłócić proces.
 >
 
 Po podłączeniu możesz przejść do kolejnych etapów [w systemie Linux](/pages/public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance#w-systemie-linux) lub [Windows](/pages/public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance#w-systemie-windows).
 
 ## Sprawdź również
 
-Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.
+Dołącz do [grona naszych użytkowników](/links/community).

@@ -172,7 +172,7 @@ openstack image list | grep 'My Custom Image'
 
 > [!primary]
 >
-> **Conseil**: Pour activer les informations de débogage: `export PACKER_LOG=1`
+> **Conseil** : Pour activer les informations de débogage : `export PACKER_LOG=1`
 >
 
 ## Aller plus loin

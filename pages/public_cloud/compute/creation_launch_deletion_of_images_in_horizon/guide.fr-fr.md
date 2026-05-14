@@ -9,7 +9,7 @@ L'ajout d'images personnalisées est possible via l'interface OpenStack Horizon.
 
 **Ce guide vous explique les différentes étapes de la création, du lancement et de la suppression d'images dans l'interface Horizon, depuis laquelle vous gérez vos services OVHcloud.**
 
-### Prérequis
+## Prérequis
 
 - [Créer un accès à Horizon](/pages/public_cloud/public_cloud_cross_functional/introducing_horizon)
 - Se rendre dans le menu Images de l'interface OpenStack Horizon

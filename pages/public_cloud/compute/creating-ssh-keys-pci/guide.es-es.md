@@ -5,8 +5,8 @@ updated: 2024-12-09
 ---
 
 <style>
-detalles>summary {
-color:rgb(33, 153, 232) !importante;
+details>summary {
+color:rgb(33, 153, 232) !important;
 cursor: pointer;
 }
 details>summary::before {
@@ -339,7 +339,7 @@ Copie esta cadena de clave para [añadirla a una nueva instancia o importarla en
 >
 > **Uso del Portapapeles**
 >
-> Al trabajar desde una línea de comandos **Windows**, puede hacer clic derecho para **pegar** el contenido del Portapapeles en la ventana de la línea de comandos. Para **copiar*** una cadena de la ventana de la línea de comandos, resáltela y pulse `Enter`{.action}. También puede encontrar estas funciones haciendo clic derecho en la barra de menús de la ventana de la línea de comandos.
+> Al trabajar desde una línea de comandos **Windows**, puede hacer clic derecho para **pegar** el contenido del Portapapeles en la ventana de la línea de comandos. Para **copiar** una cadena de la ventana de la línea de comandos, resáltela y pulse `Enter`{.action}. También puede encontrar estas funciones haciendo clic derecho en la barra de menús de la ventana de la línea de comandos.
 >
 
 #### Gestión de varias claves de autenticación en su dispositivo local

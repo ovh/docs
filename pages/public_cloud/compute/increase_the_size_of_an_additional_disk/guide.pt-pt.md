@@ -43,7 +43,7 @@ Se atingiu a capacidade máxima do seu disco suplementar, pode adicionar armazen
 
 ## Instruções
 
-Os passos seguintes pressupõem que já configurou um disco suplementar de acordo com as intrusões do [nosso guia](/pages/public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance).
+Os passos seguintes pressupõem que já configurou um disco suplementar de acordo com as instruções do [nosso guia](/pages/public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance).
 
 ## Monitorização do consumo dos discos antes do redimensionamento
 

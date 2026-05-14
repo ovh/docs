@@ -43,7 +43,7 @@ Loggen Sie sich in [Horizon-interface](https://horizon.cloud.ovh.net/auth/login/
 
 Wählen Sie die korrekte Zone im Menü aus.
 
-![Region](images/horizon1.png)
+![Region](images/horizon1.png){.thumbnail}
 
 Öffnen Sie `Compute`{.action} und dann `Instances`{.action} links im Menü.
 
@@ -195,4 +195,4 @@ slmgr.vbs -dli
 
 Wenn Sie Schulungen oder technische Unterstützung bei der Implementierung unserer Lösungen benötigen, wenden Sie sich an Ihren Vertriebsmitarbeiter oder klicken Sie auf [diesen Link](/links/professional-services), um einen Kostenvoranschlag zu erhalten und eine persönliche Analyse Ihres Projekts durch unsere Experten des Professional Services Teams anzufordern.
 
-Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.
+Treten Sie unserer [User Community](/links/community) bei.

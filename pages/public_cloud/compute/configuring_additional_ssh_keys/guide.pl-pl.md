@@ -89,7 +89,7 @@ Więcej informacji na temat uprawnień użytkowników i powiązanych z nimi tema
 
 Jeśli stworzyłeś pary kluczy SSH w systemie opartym na GNU/Linux, macOS lub BSD, możesz użyć komendy `ssh-copy-id`, aby dodać publiczne klucze do Twojego serwera.
 
-Narzędzie `ssh-copy-id` kopiuje klucze publiczne do pliku`~/.ssh/authorized_keys` na określonym serwerze zdalnym i w razie potrzeby automatycznie tworzy plik w tym katalogu.
+Narzędzie `ssh-copy-id` kopiuje klucze publiczne do pliku `~/.ssh/authorized_keys` na określonym serwerze zdalnym i w razie potrzeby automatycznie tworzy plik w tym katalogu.
 
 ```bash
 ssh-copy-id username@IP_ADDRESS

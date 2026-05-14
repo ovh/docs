@@ -22,7 +22,7 @@ Dies kann in folgenden Fällen nützlich sein:
 
 ## Voraussetzungen
 
-- Sie verfügen über eine [Public Cloud Instanz](https://www.ovhcloud.com/de/public-cloud).
+- Sie verfügen über eine [Public Cloud Instanz](/links/public-cloud/public-cloud).
 - Sie verfügen über einen Volume Snapshot in der gleichen OpenStack-Region.
 - Sie haben administrativen Zugriff (sudo) über SSH oder RDP auf Ihre Instanzen.
 
@@ -67,11 +67,12 @@ Der Vorgang zur Anbindung der Festplatte an Ihre Instanz beginnt und kann einige
 ![volume](images/volume05.png){.thumbnail}
 
 > [!warning]
-Achten Sie darauf, den aktuell angezeigten Bereich des Kundencenters während der Festplattenbindung nicht zu verlassen. Der laufende Prozess könnte unterbrochen werden.
+>
+> Achten Sie darauf, den aktuell angezeigten Bereich des Kundencenters während der Festplattenbindung nicht zu verlassen. Der laufende Prozess könnte unterbrochen werden.
 >
 
 Sobald der Vorgang abgeschlossen ist, können Sie für die nächsten Schritte unsere Konfigurationsanleitung verwenden, für [Linux](/pages/public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance#unter-linux)- oder [Windows](/pages/public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance#unter-windows)-Instanzen.
 
 ## Weiterführende Informationen
 
-Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.
+Treten Sie unserer [User Community](/links/community) bei.

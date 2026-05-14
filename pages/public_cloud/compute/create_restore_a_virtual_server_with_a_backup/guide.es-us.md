@@ -66,11 +66,11 @@ Quizá necesite, en algún momento, restaurar su instancia utilizando un snapsho
 >>
 >> Defina el nombre de la nueva instancia, la clave SSH, el vRack y el período de facturación, y luego haga clic en el botón `Crear la instancia`{.action}.
 >>
->> Para obtener más información sobre la creación de una instancia, consulte [este guía](/pages/public_cloud/compute/public-cloud-first-steps).
+>> Para obtener más información sobre la creación de una instancia, consulte [esta guía](/pages/public_cloud/compute/public-cloud-first-steps).
 >>
 >> > [!primary]
 >> >
->> > Para crear una instancia en un centro de datos diferente al de la copia de seguridad, deberá transferirla a la zona correspondiente. Consulte entonces el [guía sobre la copia de seguridad de una instancia entre centros de datos](/pages/public_cloud/compute/transfer_instance_backup_from_one_datacentre_to_another).
+>> > Para crear una instancia en un centro de datos diferente al de la copia de seguridad, deberá transferirla a la zona correspondiente. Consulte entonces la [guía sobre la copia de seguridad de una instancia entre centros de datos](/pages/public_cloud/compute/transfer_instance_backup_from_one_datacentre_to_another).
 >> >
 >>
 > A través de la CLI de OpenStack

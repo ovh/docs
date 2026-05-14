@@ -25,7 +25,7 @@ Nel momento in cui crei un’[istanza Public Cloud](/links/public-cloud/public-c
 
 ## Prerequisiti
 
-- Aver creato un’[istanza Public Cloud](/pages/account_and_service_management/account_information/ovhcloud-account-creation)
+- Aver creato un’[istanza Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps)
 - [Essere connessi in SSH](/pages/public_cloud/compute/public-cloud-first-steps) (sudo) all’istanza
 
 ## Procedura
@@ -36,7 +36,7 @@ Nel momento in cui crei un’[istanza Public Cloud](/links/public-cloud/public-c
 >
 > Per gli scopi di questa guida, utilizzeremo l'editor di file **vi**, in quanto presente di default nelle distribuzioni Linux. È ovviamente possibile utilizzare l'editor di propria scelta.
 >
-> Uso di base di vi :
+> Uso di base di vi:
 >
 > - Premere **i** per passare alla modalità di inserimento del testo.
 > - Premere **Escape** (Esc) per uscire dalla modalità di inserimento.
@@ -98,6 +98,6 @@ sudo cat /etc/hosts
 127.0.0.1 localhost
 ```
 
-## Per saperne di più 
+## Per saperne di più
 
 Contatta la nostra [Community di utenti](/links/community).

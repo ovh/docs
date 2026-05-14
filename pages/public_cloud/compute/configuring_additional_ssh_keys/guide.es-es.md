@@ -131,7 +131,7 @@ Si recibe un mensaje de error en su lugar, puede agregar las claves públicas ma
 sudo nano /home/user2/.ssh/authorized_keys
 ```
 
-Pegue **cadena de clave pública** en este archivo. Guarde el archivo y salga del editor.
+Pegue la **cadena de clave pública** en este archivo. Guarde el archivo y salga del editor.
 
 Reinicie su instancia (`sudo reboot`) o reinicie únicamente el servicio OpenSSH con uno de los siguientes comandos (el comando adecuado puede variar en función del sistema operativo):
 

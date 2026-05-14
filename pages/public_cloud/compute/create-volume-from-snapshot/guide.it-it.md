@@ -52,7 +52,7 @@ La creazione del disco potrebbe richiedere alcuni minuti, a seconda della sua di
 
 ### Associa il disco a un'istanza
 
-Una volta creato il disco, puoi decidere di associarlo a un'istanza. clicca su `Block Storage`{.action} nella barra di navigazione di sinistra su **Storage e Backup**.
+Una volta creato il disco, puoi decidere di associarlo a un'istanza. Clicca su `Block Storage`{.action} nella barra di navigazione di sinistra su **Storage e Backup**.
 
 A destra del volume scelto, clicca sul pulsante `...`{.action} e poi su `Associa all'istanza`{.action}.
 
@@ -67,11 +67,12 @@ Il processo di associazione del disco all'istanza sta per iniziare e potrebbe ri
 ![associare volume](images/volume05.png){.thumbnail}
 
 > [!warning]
-Evitare la navigazione fuori dalla scheda in corso durante l'associazione del disco. Ciò può interrompere il processo.
+>
+> Evitare la navigazione fuori dalla scheda in corso durante l'associazione del disco. Ciò può interrompere il processo.
 >
 
 Una volta effettuato l'associazione, puoi seguire gli step successivi [con Linux](/pages/public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance#da-linux) o [Windows](/pages/public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance#da-windows).
 
 ## Per saperne di più
 
-Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.
+Contatta la nostra [Community di utenti](/links/community).

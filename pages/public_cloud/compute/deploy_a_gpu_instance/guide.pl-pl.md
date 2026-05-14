@@ -14,7 +14,7 @@ Instancje GPU są technicznie podobne do instancji z oferty 2017, ale mają też
 
 > [!warning]
 >
-> Obecnie większość starych instancji GPU (Tesla V100 and V100s) jest dostępna tylko w regionach GRA7, GRA9, i BHS5. Najnowsze modele (A100, H100, L4 and L40s) są obecnie dostępne tylko w regionie.
+> Obecnie większość starych instancji GPU (Tesla V100 and V100s) jest dostępna tylko w regionach GRA7, GRA9, GRA11 i BHS5. Najnowsze modele (A100, H100, L4 and L40s) są obecnie dostępne tylko w regionie GRA11.
 > 
 
 **Dowiedz się, jak uruchomić instancję GPU w systemie Linux lub Windows**
@@ -154,4 +154,4 @@ Następnie wykonaj pozostałe etapy zgodnie z instrukcjami zawartymi w [tym prze
 
 ## Sprawdź również
 
-Dołącz do naszej społeczności użytkowników: <https://community.ovh.com/en/>.
+Dołącz do [grona naszych użytkowników](/links/community).

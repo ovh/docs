@@ -154,4 +154,4 @@ A seguir, siga os passos restantes, conforme descrito em [este guia](/pages/publ
 
 ## Quer saber mais?
 
-Junte-se à nossa comunidade de utilizadores em <https://community.ovh.com/en/>.
+Fale com a nossa [comunidade de utilizadores](/links/community).

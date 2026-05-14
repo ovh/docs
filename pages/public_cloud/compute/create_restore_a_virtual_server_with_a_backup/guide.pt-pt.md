@@ -167,7 +167,7 @@ Pode querer restaurar a sua instância através de um backup, por exemplo, em ca
 >>
 >> > [!warning]
 >> >
->> > Como indicado no quadro amarelo mencionado, nenhuma dados adicionados após a criação deste backup poderá ser recuperado.
+>> > Como indicado no quadro amarelo mencionado, nenhuns dados adicionados após a criação deste backup poderão ser recuperados.
 >> >
 >>
 > Via API OVHcloud
@@ -196,6 +196,6 @@ Pode querer restaurar a sua instância através de um backup, por exemplo, em ca
 
 [Criação e ligação a uma primeira instância Public Cloud](/pages/public_cloud/compute/first_steps_with_public_cloud_instance)
 
-[Efetuar um backup de uma instância](/pages/public_cloud/compute/first_steps_with_public_cloud_instance)
+[Efetuar um backup de uma instância](/pages/public_cloud/compute/save_an_instance)
 
 Fale com a nossa [comunidade de utilizadores](/links/community).

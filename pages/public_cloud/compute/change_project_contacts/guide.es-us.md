@@ -48,7 +48,7 @@ En la nueva ventana, indique el ID de cliente que quiera modificar para cada con
 
 ![change-contacts](images/contactchange1_ca.png){.thumbnail}
 
-Una vez que haga clic en el botón `Aceptar`{.action}, las dos cuentas de OVHcloud afectadas por la modificación recibirán un mensaje de correo electrónico de confirmación. Este mensaje de correo electrónico contiene un código(token) que permite confirmar el cambio de contacto en la pestaña `Mis solicitudes`{.action} de la sección **Gestión de contactos**.
+Una vez que haga clic en el botón `Aceptar`{.action}, las dos cuentas de OVHcloud afectadas por la modificación recibirán un mensaje de correo electrónico de confirmación. Este mensaje de correo electrónico contiene un código (token) que permite confirmar el cambio de contacto en la pestaña `Mis solicitudes`{.action} de la sección **Gestión de contactos**.
 
 Para más información, consulte nuestra guía [Gestionar los contactos de los servicios](/pages/account_and_service_management/account_information/managing_contacts).
 
@@ -60,4 +60,4 @@ Para más información, consulte nuestra guía [Gestionar los contactos de los s
 
 [Delegar proyectos](/pages/public_cloud/public_cloud_cross_functional/delegate_projects)
 
-Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.
+Interactúe con nuestra [comunidad de usuarios](/links/community).

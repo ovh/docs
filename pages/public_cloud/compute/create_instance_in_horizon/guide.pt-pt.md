@@ -8,7 +8,7 @@ updated: 2024-09-05
 > Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
 >
 
-## Sumário
+## Objetivo
 
 Tem a possibilidade de criar instâncias diretamente a partir da interface Horizon. Isto permite-lhe, por exemplo, criar múltiplas instâncias ou ainda configurar um grupo de segurança e aplicá-lo às suas instâncias.
 
@@ -96,7 +96,7 @@ Deverá preencher as diferentes informações. Caso seja necessário, consulte a
 |Volume size (GB)|Se optou por criar um volume, deixe o sistema determinar o tamanho em seu lugar.|
 |Delete Volume on Instance Delete|Pode conservar a opção predefinida **No**. Se **Yes** for selecionado, quando a instância for eliminada o volume também será eliminado.|
 |Image name|Selecione a imagem da instância (apenas em caso de arranque a partir de uma imagem) clicando na seta para cima junto à imagem à sua escolha. No nosso exemplo, utilizamos uma seleção de CentOS 7.|
-|Instance snapshot|Escolha um instantâneo de uma instância (apenas em caso de arranque a partir de uma snapshot) clicando na seta para cima ao lado da imagem de instantâneo de uma instância à sua escolha|.
+|Instance snapshot|Escolha um instantâneo de uma instância (apenas em caso de arranque a partir de uma snapshot) clicando na seta para cima ao lado da imagem de instantâneo de uma instância à sua escolha.|
 
 **Flavor**
 

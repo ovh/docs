@@ -87,7 +87,7 @@ Pode obter mais informações sobre as permissões dos utilizadores e tópicos r
 
 Se criou os seus pares de chaves SSH num sistema baseado em GNU/Linux, macOS ou BSD, pode utilizar o comando `ssh-copy-id` para adicionar as chaves públicas ao seu servidor.
 
-O utilitário `ssh-copy-id` copia as chaves públicas no arquivo `~/.ssh/authorized_keys` no servidor remoto especificado e cria automaticamente o arquivo neste diretório, se necessário.
+O utilitário `ssh-copy-id` copia as chaves públicas no ficheiro `~/.ssh/authorized_keys` no servidor remoto especificado e cria automaticamente o arquivo neste diretório, se necessário.
 
 ```bash
 ssh-copy-id username@IP_ADDRESS
@@ -129,7 +129,7 @@ Se você receber uma mensagem de erro em vez disso, você ainda pode adicionar s
 sudo nano /home/user2/.ssh/authorized_keys
 ```
 
-Cole a **cadeia de chaves públicas** neste ficheiro. Salve o arquivo e saia do editor.
+Cole a **cadeia de chaves públicas** neste ficheiro. Guarde o ficheiro e saia do editor.
 
 Reinicie a sua instância (`sudo reboot`) ou reinicie apenas o serviço OpenSSH com um dos seguintes comandos (o comando apropriado pode variar em função do seu sistema operativo):
 
@@ -153,7 +153,7 @@ Exemplo:
 ssh user2@203.0.113.102
 ```
 
-Consulte [manual sobre as chaves SSH](/pages/public_cloud/compute/creating-ssh-keys-pci) i para saber mais sobre a utilização das chaves SSH com as instâncias Public Cloud.
+Consulte [o manual sobre as chaves SSH](/pages/public_cloud/compute/creating-ssh-keys-pci) i para saber mais sobre a utilização das chaves SSH com as instâncias Public Cloud.
 
 ## Quer saber mais?
 
@@ -161,4 +161,4 @@ Consulte [manual sobre as chaves SSH](/pages/public_cloud/compute/creating-ssh-k
 
 [Como substituir um par de chaves SSH numa instância Public Cloud pelo modo rescue](/pages/public_cloud/compute/replacing_lost_ssh_key)
 
-Fale com nossa [comunidade de utilizadores](/links/community).
+Fale com a nossa [comunidade de utilizadores](/links/community).

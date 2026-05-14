@@ -25,8 +25,8 @@ Moduł Cloud-init pozwala na skonfigurowanie [instancji Public Cloud](/links/pub
 
 ## Wymagania początkowe
 
-* Utworzenie [instancji Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps)
-* [Połączenie przez SSH](/pages/public_cloud/compute/public-cloud-first-steps#connect-instance) (sudo) z instancją
+- Utworzenie [instancji Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps)
+- [Połączenie przez SSH](/pages/public_cloud/compute/public-cloud-first-steps#connect-instance) (sudo) z instancją
 
 ## W praktyce
 
@@ -101,6 +101,6 @@ sudo cat /etc/hosts
 127.0.0.1 localhost
 ```
 
-## Sprawdź również 
+## Sprawdź również
 
 Dołącz do [grona naszych użytkowników](/links/community).

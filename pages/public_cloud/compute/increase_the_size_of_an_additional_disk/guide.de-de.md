@@ -213,7 +213,7 @@ Nachdem dies abgeschlossen ist, trennen Sie das Volume von der Instanz und häng
 
 ### Partition erweitern (Windows-Instanz)
 
-Bevor Sie fortfahren, hängen Sie das Volume erneut an die Instanz an. Klicken Sie auf `...`{.action} in der Zeile des Volumes und wählen Sie `Mit Instanz verbiden`{.action} aus.
+Bevor Sie fortfahren, hängen Sie das Volume erneut an die Instanz an. Klicken Sie auf `...`{.action} in der Zeile des Volumes und wählen Sie `Mit Instanz verbinden`{.action} aus.
 
 Stellen Sie eine RDP-Verbindung (Remote Desktop) zu Ihrer Windows-Instanz her.
 

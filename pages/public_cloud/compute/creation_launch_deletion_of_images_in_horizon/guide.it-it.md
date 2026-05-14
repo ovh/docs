@@ -79,4 +79,4 @@ Dalla colonna **Actions** è possibile:
 
 ## Per saperne di più
   
-Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.
+Contatta la nostra [Community di utenti](/links/community).

@@ -54,7 +54,7 @@ Kliknij `Create Network`{.action}
 >> **Disable Gateway:** Pozostaw tę opcję wyłączoną.<br><br>
 >>![subnet](images/subnet_information.png){.thumbnail}<br>
 >>
-> 3. **Subnet Szczegóły (Szczegóły podsieci)**
+> 3. **Subnet Details (Szczegóły podsieci)**
 >>
 >> **Enable DHCP:** Pozostaw tę opcję włączoną.<br>
 >> **Allocation Pools:** Opcjonalnie. Możesz określić zakres, w którym wybrane są adresy IP.<br>
@@ -160,7 +160,7 @@ Aby uzyskać więcej informacji na temat tworzenia klucza SSH, zapoznaj się z [
 >> **Load Public Key from a file (Załaduj klucz publiczny z pliku):** Kliknij `Browse`{.action}, aby określić lokalizację klucza publicznego na komputerze.<br>
 >> **Public Key:** Skopiuj i wklej tutaj klucz publiczny.<br>
 >> Kliknij przycisk `Import Key Pair`{.action}, aby zaimportować klucz.<br><br>
->>![Import klucza równorzędnego](images/import-ssh-key.png){.thumbnail}<br>
+>>![Import pary kluczy](images/import-ssh-key.png){.thumbnail}<br>
 >>
 >> Po zakończeniu zaimportowany klucz zostanie automatycznie wybrany. Kliknij `Launch Instance`{.action}, aby rozpocząć tworzenie instancji.<br><br>
 >>

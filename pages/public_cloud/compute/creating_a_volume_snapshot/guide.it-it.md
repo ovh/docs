@@ -75,6 +75,6 @@ Clicca sul pulsante `...`{.action} per eliminare uno Snapshot o `Creare un volum
 
 [Crea e configura un disco aggiuntivo sulla tua istanza](/pages/public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance)
 
-[Aumenta la spazio del tuo disco aggiuntivo](/pages/public_cloud/compute/increase_the_size_of_an_additional_disk)
+[Aumenta lo spazio del tuo disco aggiuntivo](/pages/public_cloud/compute/increase_the_size_of_an_additional_disk)
 
 Contatta la nostra [Community di utenti](/links/community).

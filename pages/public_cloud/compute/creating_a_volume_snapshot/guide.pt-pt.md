@@ -41,7 +41,7 @@ Clique em `Block Storage`{.action} na barra de navegação da esquerda, na **Bac
 
 ![Volume Snapshot](images/volume_snapshot01.png){.thumbnail}
 
-À direita do volume em causa, clique no botão `...`{.action} e, a seguir, em `Criar uma cópia de segurança`{.action} (não é necessário desassociar primeiro o volume da sua instância). No entanto, se pretender desassociar o seu volume, sugerimos que consulte a secção "Desassociar um volume"de [este manual](/pages/public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance).
+À direita do volume em causa, clique no botão `...`{.action} e, a seguir, em `Criar uma cópia de segurança`{.action} (não é necessário desassociar primeiro o volume da sua instância). No entanto, se pretender desassociar o seu volume, sugerimos que consulte a secção "Desassociar um volume" de [este manual](/pages/public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance).
 
 De seguida, selecione `Volume Snapshot`{.action}, dê-lhe um nome e clique em `Criar o backup`{.action}.
 
@@ -77,4 +77,4 @@ Clique no botão `...`{.action} para eliminar uma snapshot ou `Criar um volume`{
 
 [Aumentar o tamanho de um disco suplementar](/pages/public_cloud/compute/increase_the_size_of_an_additional_disk)
 
-Fale com nossa [comunidade de utilizadores](/links/community).
+Fale com a nossa [comunidade de utilizadores](/links/community).

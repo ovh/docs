@@ -44,11 +44,11 @@ Aparecerão os contactos do seu projeto Public Cloud na tabela. Clique no botão
 
 ![alteracao-contactos](images/contactchange.png){.thumbnail}
 
-Na nova janela, indique o identificador de cliente desejado para cada contacto que pretende alterar. Tenha em conta que as contas OVHcloud para os `Contact administrador` e `Contact Faturation` devem ser obrigatoriamente indicadas na mesma filial OVHcloud.
+Na nova janela, indique o identificador de cliente desejado para cada contacto que pretende alterar. Tenha em conta que as contas OVHcloud para os `Contacto administrador` e `Contacto de faturação` devem ser obrigatoriamente indicadas na mesma filial OVHcloud.
 
 ![alteracao-contactos](images/contactchange1.png){.thumbnail}
 
-Depois de clicar no botão `Validar`{.action}, as duas contas OVHcloud afetadas pela alteração receberão um e-mail de confirmação. Este e-mail contém um código(token) que permite validar a alteração de contacto no separador `Os meus pedidos`{.action} na secção **Gestão dos contactos**.
+Depois de clicar no botão `Validar`{.action}, as duas contas OVHcloud afetadas pela alteração receberão um e-mail de confirmação. Este e-mail contém um código (token) que permite validar a alteração de contacto no separador `Os meus pedidos`{.action} na secção **Gestão dos contactos**.
 
 Para uma explicação mais detalhada deste procedimento, consulte o nosso guia "[Como gerir os contactos dos serviços OVHcloud](/pages/account_and_service_management/account_information/managing_contacts)".
 
@@ -60,4 +60,4 @@ Para uma explicação mais detalhada deste procedimento, consulte o nosso guia "
 
 [Delegar projetos](/pages/public_cloud/public_cloud_cross_functional/delegate_projects)
 
-Junte-se à nossa comunidade de utilizadores em <https://community.ovh.com/en/>.
+Fale com a nossa [comunidade de utilizadores](/links/community).

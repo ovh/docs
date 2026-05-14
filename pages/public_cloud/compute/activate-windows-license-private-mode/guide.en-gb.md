@@ -155,7 +155,7 @@ openstack server add port <server_id> <port_id>
 
 #### Activate your Windows licence
 
-To activate Windows, you must go through Powershell.
+To activate Windows, you must go through PowerShell.
 
 Once you have logged in to your Windows instance, right click on the `Start`{.action} menu and select `Windows PowerShell`{.action}.
 

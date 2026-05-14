@@ -110,7 +110,7 @@ Esta secção aplica-se apenas às instalações WordPress, Drupal, Joomla! e Pr
 1. Deve criar ou alterar, na Área de Cliente OVHcloud, dois registos `A` que apontam para o endereço IP do seu servidor. Por exemplo, se o seu nome de domínio for "personaldomain.ovh", deve criar registos `A` para:  
 
      personaldomain.ovh <br>
-     www.personaldomain.ov <br>  
+     www.personaldomain.ovh <br>  
 
 Se o seu domínio estiver registado na OVHcloud, pode seguir [este guia](/pages/web_cloud/domains/dns_zone_edit).
 <br>Se o seu domínio estiver registado numa outra empresa, deverá contactá-la para obter ajuda na configuração dos seus registos `A`.
@@ -258,6 +258,6 @@ Não é necessário mais nenhuma etapa para terminar a primeira configuração d
 
 ## Quer saber mais?
 
-Se precisar de formação ou de assistência técnica para implementar as nossas soluções, contacte o seu representante comercial ou clique em [esta ligação](/links/professional-services) para obter um orçamento e solicitar uma análise personalizada do seu projecto aos nossos especialistas da equipa de Serviços Profissionais.
+Se precisar de formação ou de assistência técnica para implementar as nossas soluções, contacte o seu representante comercial ou clique em [esta ligação](/links/professional-services) para obter um orçamento e solicitar uma análise personalizada do seu projeto aos nossos especialistas da equipa de Serviços Profissionais.
  
-Fale com a nossa comunidade de utilizadores: <https://community.ovh.com/en/>.
+Fale com a nossa [comunidade de utilizadores](/links/community).

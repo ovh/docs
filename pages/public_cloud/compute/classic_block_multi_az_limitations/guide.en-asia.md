@@ -33,7 +33,7 @@ In the OVHcloud Control Panel, simply select the classic volume available in the
 
 ![classic 3az block volume](images/create_volume_type.png){.thumbnail}
 
-##  Considerations
+## Considerations
 
 When working with Classic Multi-Attach in 3AZ regions, the following points should be taken into account:
 

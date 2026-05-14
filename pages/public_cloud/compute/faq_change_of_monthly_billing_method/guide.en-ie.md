@@ -20,7 +20,7 @@ Any instance declared as monthly and existing on the 1st of the current month wi
 
 ### If I start a monthly instance in the middle of the month, how do I pay?
 
-This instance will be billed on a pro rata basis, based on the monthly price and the number of days remaining. For example, if you order a B2-7 monthly instance on the 13th of the month, the monthly price of which is € 24.20 (incl. VAT), the instance will appear on the next bill on the first day of the following month. The pro rata price would be calculated as follows: 31-12 days consumed out of the 31 available in the month, i.e. ((31-12)/31) x 24.20 = € 14,83 incl. VAT.
+This instance will be billed on a pro rata basis, based on the monthly price and the number of days remaining. For example, if you order a B2-7 monthly instance on the 13th of the month, the monthly price of which is € 24.20 (incl. VAT), the instance will appear on the next bill on the first day of the following month. The pro rata price would be calculated as follows: 31-12 days consumed out of the 31 available in the month, i.e. ((31-12)/31) x 24.20 = € 14.83 incl. VAT.
 
 Then, if your instance still exists at the beginning of the month, you will return to the normal billing process: the monthly subscription for an instance in a given month will appear on the bill issued on the 1st of the following month. For example, if you ordered an instance in May and it is still active at the beginning of June, you would be billed on 1 July for the entire month of June.
 

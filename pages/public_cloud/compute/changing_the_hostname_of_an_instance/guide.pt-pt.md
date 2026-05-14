@@ -8,7 +8,7 @@ updated: 2025-03-20
 > Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
 >
 
-## Sumário
+## Objetivo
 
 O módulo Cloud-init permite configurar a [instância Public Cloud](/links/public-cloud/public-cloud) quando é criada, mas também em cada reinicialização. Por isso, se pretender reconfigurar o hostname devido a um erro durante a criação da instância ou para reconfigurar o seu servidor de e-mail, terá de desativar o módulo Cloud-init. Este último encarrega-se de configurar o hostname de modo que não seja restabelecido.
 
@@ -98,4 +98,4 @@ sudo cat /etc/hosts
 
 ## Quer saber mais?
 
-Fale com nossa [comunidade de utilizadores](/links/community).
+Fale com a nossa [comunidade de utilizadores](/links/community).

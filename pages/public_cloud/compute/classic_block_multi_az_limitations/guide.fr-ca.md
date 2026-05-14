@@ -48,6 +48,6 @@ Les volumes Classic Multi-attach sont assortis de limitations spécifiques qu'il
 - La réécriture du volume n'est pas prise en charge lorsque le volume est en cours d'utilisation - le passage d'un type compatible avec le multi-attach à un type non compatible avec le multi-attach (ou vice-versa) n'est pas autorisé.
 - Le chiffrement n'est pas disponible pour les volumes Classic Multi-attach.
 
-## Aller plus loin 
+## Aller plus loin
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).

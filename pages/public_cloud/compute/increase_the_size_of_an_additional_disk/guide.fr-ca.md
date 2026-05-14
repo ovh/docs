@@ -43,7 +43,7 @@ Si vous avez atteint la capacité maximale de votre disque supplémentaire, vous
 
 ## En pratique
 
-Les étapes suivantes supposent que vous avez déjà configuré un disque supplémentaire selon les intrusctions de [notre guide](/pages/public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance).
+Les étapes suivantes supposent que vous avez déjà configuré un disque supplémentaire selon les instructions de [notre guide](/pages/public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance).
 
 ## Monitorer l'utilisation du disque avant le redimensionnement
 
@@ -113,7 +113,7 @@ Connectez-vous à [l’espace client OVHcloud](/links/manager), rendez-vous dans
 
 Si le volume est attaché à une **instance Windows**, cliquez sur le bouton `...`{.action} à droite du volume concerné et sélectionnez `Détacher de l'instance`{.action}.
 
-Cliquez sur le bouton `...`{.action} à droite du volume concerné et sélectionnez `Editer`{.action}.
+Cliquez sur le bouton `...`{.action} à droite du volume concerné et sélectionnez `Éditer`{.action}.
 
 ![tableau de bord](images/increase-disk-02.png){.thumbnail}
 
@@ -121,7 +121,7 @@ Dans la fenêtre qui apparaît, indiquez la nouvelle taille du volume et cliquez
 
 ![tableau de bord](images/increase-disk-03.png){.thumbnail}
 
-### Etendre la partition (instance Linux)
+### Étendre la partition (instance Linux)
 
 Ouvrez une connexion SSH à votre instance pour ajuster la partition au disque redimensionné.
 
@@ -215,7 +215,7 @@ tmpfs 982M 0 982M 0% /sys/fs/cgroup
 
 Une fois cette opération terminée, détachez le volume de l'instance et rattachez-le afin de vous assurer que les paramètres QoS mis à jour (IOPS et bande passante) soient correctement appliqués.
 
-### Etendre la partition (instance Windows)
+### Étendre la partition (instance Windows)
 
 Avant de continuer, rattachez le volume à l'instance. Cliquez sur `...`{.action} dans la ligne du volume et sélectionnez `Attacher à l'instance`{.action}.
 

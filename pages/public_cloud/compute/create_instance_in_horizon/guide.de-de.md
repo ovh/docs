@@ -16,7 +16,7 @@ Sie haben die Möglichkeit, Instanzen direkt über das Horizon-Interface zu erst
 
 ## Voraussetzungen
 
-- Sie haben ein [Public Cloud](/pages/public_cloud/public_cloud_cross_functional/create_a_public_cloud_project), Projekt in Ihrem OVHcloud Kunden-Account erstellt.
+- Sie haben ein [Public Cloud](/pages/public_cloud/public_cloud_cross_functional/create_a_public_cloud_project) Projekt in Ihrem OVHcloud Kunden-Account erstellt.
 - Sie haben Zugang zum [Horizon-Interface](/pages/public_cloud/public_cloud_cross_functional/introducing_horizon). 
 
 ## In der praktischen Anwendung
@@ -156,7 +156,7 @@ Weitere Informationen zum Erstellen eines SSH-Schlüssels finden Sie in [dieser 
 >> Wenn Sie einen zuvor erstellten SSH-Schlüssel importieren möchten, klicken Sie auf `Import Key Pair`{.action}.
 >>
 >> **Key Pair Name:** Geben Sie einen Namen für Ihren Schlüssel ein.<br>
->> **Key Type:** Klicken Sie auf den `Dropdownpfeil` und wählen Sie `SSH Key`.<br>
+>> **Key Type:** Klicken Sie auf den `Dropdownpfeil`{.action} und wählen Sie `SSH Key`{.action}.<br>
 >> **Load Public Key from a file (Öffentlichen Schlüssel aus Datei laden):** Klicken Sie auf `Browse`{.action}, um den Speicherort des öffentlichen Schlüssels auf Ihrem Computer anzugeben.<br>
 >> **Public Key:** Kopieren Sie Ihren öffentlichen Schlüssel und fügen Sie ihn hier ein.<br>
 >> Klicken Sie auf `Import Key Pair`{.action}, um den Schlüssel zu importieren.<br><br>

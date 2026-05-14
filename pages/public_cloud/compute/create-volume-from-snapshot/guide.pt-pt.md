@@ -14,7 +14,7 @@ Pode criar discos suplementares para as suas instâncias Public Cloud a partir d
 
 Tal pode ser útil nos seguintes casos:
 
-- Se deseja restaurar os dados do disco suplementares.
+- Se deseja restaurar os dados do disco suplementar.
 - Se deseja dispor de um espaço de armazenamento de alta disponibilidade e de alta performance com os seus dados.
 - Se pretender mover os seus dados para outra instância.
 
@@ -67,11 +67,12 @@ O processo de conexão do disco à sua instância vai então começar e pode lev
 ![associar volume](images/volume05.png){.thumbnail}
 
 > [!warning]
-Deve evitar a navegação fora do separador em curso durante a conexão do disco. Isto pode interromper o processo.
+>
+> Deve evitar a navegação fora do separador em curso durante a conexão do disco. Isto pode interromper o processo.
 >
 
 Uma vez efetuada a associação, pode seguir os passos indicados [em Linux](/pages/public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance#utilizando-o-linux) ou [em Windows](/pages/public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance#utilizando-o-windows).
 
 ## Saiba mais
 
-Fale com a nossa comunidade de utilizadores em <https://community.ovh.com/en/>.
+Fale com a nossa [comunidade de utilizadores](/links/community).

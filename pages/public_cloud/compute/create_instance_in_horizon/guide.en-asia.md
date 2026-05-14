@@ -150,7 +150,7 @@ For more information on how to create an SSH key, consult [this guide](/pages/pu
 >> If you prefer to import a previously created SSH key, click on the `Import Key Pair`{.action} button.
 >>
 >> **Key Pair Name:** Enter a name for your key.<br>
->> *Key Type:** Click on the `drop down arrow`{.action} and select `SSH Key`{.action}.<br>
+>> **Key Type:** Click on the `drop down arrow`{.action} and select `SSH Key`{.action}.<br>
 >> **Load Public Key from a file:**  Click on `Browse`{.action} to specify the location of the public key on your computer.<br>
 >> **Public Key:** Copy and paste your public key here.<br>
 >> Click on `Import Key Pair`{.action} to import the key.<br><br>

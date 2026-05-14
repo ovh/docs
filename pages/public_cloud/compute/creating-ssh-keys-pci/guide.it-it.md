@@ -58,7 +58,7 @@ Ad esempio, [PuTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.ht
 
 #### Configurazione delle coppie di chiavi da una distribuzione GNU/Linux o macOS
 
-Espandi questa sezione
+/// details | Espandi questa sezione
 
 Aprire l'applicazione da riga di comando (`Terminal`) sul dispositivo locale.
 

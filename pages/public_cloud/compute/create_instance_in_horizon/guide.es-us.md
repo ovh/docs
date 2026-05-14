@@ -94,7 +94,7 @@ Introduzca la información solicitada. Si necesita ayuda para completar los dist
 |---|---|
 |Boot Source|Haga clic en la flecha desplegable para seleccionar el origen de inicio de una instancia (por ejemplo, "Image" o "Instance snapshot* (Instantánea de instancia)").|
 |Create New Volume|Puede marcar esta opción si desea crear un volumen en el que se copie la imagen de sistema operativo especificada.|
-|Volumen size (GB)|Si ha elegido crear un volumen, deje que el sistema determine el tamaño por usted.|
+|Volume size (GB)|Si ha elegido crear un volumen, deje que el sistema determine el tamaño por usted.|
 |Delete Volume on Instance Delete|Puede conservar la opción por defecto **No**. Si se selecciona **Yes**, al eliminar la instancia también se eliminará el volumen.|
 |Image name|Seleccione la imagen de la instancia (solo en el caso de un arranque desde una imagen) haciendo clic en la flecha arriba situada junto a la imagen que desee. En nuestro ejemplo, utilizamos una selección de CentOS 7.|
 |Instance snapshot|Elija una instantánea de una instancia (solo en caso de haber iniciado un snapshot) haciendo clic en la flecha arriba situada junto a la imagen de instantánea de instancia que desee.|

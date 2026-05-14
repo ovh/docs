@@ -118,7 +118,7 @@ Se il tuo dominio è registrato in OVHcloud, consulta [questa guida](/pages/web_
 <ol start="2">
   <li>Forse dovrai aspettare 24 ore prima che le due registrazioni si propaghino completamente. È sempre possibile verificarlo con <a href="https://mxtoolbox.com/DnsLookup.aspx">mxtoolbox</a>. Se l'indirizzo IP del tuo dominio viene visualizzato su mxtoolbox nello stesso modo del tuo server, passa allo step successivo.</li>
 
-  <li>Accedi in SSH al tuo server con l'utente CentOS ed esegui questi comandi per installare Cerbot:</li>
+  <li>Accedi in SSH al tuo server con l'utente CentOS ed esegui questi comandi per installare Certbot:</li>
 </ol>
 
 > [!warning]
@@ -135,7 +135,7 @@ systemctl restart httpd
 ```
 
 <ol start="4">
-  <li> Genera il tuo certificato SSL utilizzando Cerbot (segui le istruzioni sullo schermo).</li>
+  <li> Genera il tuo certificato SSL utilizzando Certbot (segui le istruzioni sullo schermo).</li>
 </ol>
 
 ```sh
@@ -144,7 +144,7 @@ certbot certonly -d personaldomain.ovh --webroot
 
 Quando ti viene chiesto di inserire "Input the webroot", inserisci una variabile del tipo "/var/www/wordpress". Se installa Joomla!, sostituisci "wordpress" con "joomla".
 
-Assicurati che Cerbot inserisca questa variabile nel file ssl.conf. Per farlo, inserisci:
+Assicurati che Certbot inserisca questa variabile nel file ssl.conf. Per farlo, inserisci:
 
 ```sh
 certbot -d personaldomain.ovh —apache
@@ -261,4 +261,4 @@ Per completare la prima configurazione dell'applicazione non sono necessari ulte
 
 Se avete bisogno di formazione o di assistenza tecnica per implementare le nostre soluzioni, contattate il vostro rappresentante o cliccate su [questo link](/links/professional-services) per ottenere un preventivo e richiedere un'analisi personalizzata del vostro progetto da parte dei nostri esperti del team Professional Services.
 
-Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.
+Contatta la nostra [Community di utenti](/links/community).

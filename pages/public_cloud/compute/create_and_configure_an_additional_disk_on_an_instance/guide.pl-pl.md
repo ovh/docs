@@ -26,7 +26,7 @@ Może to być przydatne w następujących przypadkach:
 - Jeśli chcesz zwiększyć przestrzeń dyskową bez konieczności zmiany szablonu instancji.
 - Jeśli chcesz dysponować przestrzenią dyskową o wysokiej dostępności i wysokiej wydajności.
 - Jeśli chcesz przenieść przestrzeń dyskową i dane do innej instancji.
-- Jeśli chcesz przygotować środowisko do korzystania z [Terraform](/pages/public_cloud/public_cloud_cross_functional/how_to_use_terraform), musisz przygotować środowisko.
+- Jeśli chcesz przygotować środowisko do korzystania z [Terraform](/pages/public_cloud/public_cloud_cross_functional/how_to_use_terraform).
 
 **Dowiedz się, jak utworzyć dodatkowy dysk i skonfigurować go na Twojej instancji.**
 
@@ -673,7 +673,6 @@ Oto jak **odmontować wolumin** z systemu operacyjnego przed odłączeniem go od
 >>
 >> Usuń identyfikator urządzenia z pliku fstab; w przeciwnym razie partycja zostanie ponownie zamontowana po restarcie.
 >>
-
 >> ```bash
 >> sudo nano /etc/fstab
 >> ```

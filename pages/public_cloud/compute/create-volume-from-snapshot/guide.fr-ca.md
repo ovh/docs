@@ -10,7 +10,7 @@ Vous pouvez créer des disques supplémentaires pour vos instances Public Cloud 
 
 Cela peut être utile dans les cas suivants :
 
-- Si vous souhaitez restaurer les données du disque supplémentaires.
+- Si vous souhaitez restaurer les données du disque supplémentaire.
 - Si vous souhaitez disposer d’un espace de stockage hautement disponible et performant avec vos données.
 - Si vous souhaitez déplacer vos données vers une autre instance.
 
@@ -63,7 +63,8 @@ Le processus d’attachement du disque à votre instance va alors commencer et p
 ![attacher volume](images/volume05.png){.thumbnail}
 
 > [!warning]
-Vous devez éviter la navigation en dehors de l’onglet en cours pendant l’attachement du disque. Cela peut interrompre le processus.
+>
+> Vous devez éviter la navigation en dehors de l’onglet en cours pendant l’attachement du disque. Cela peut interrompre le processus.
 >
 
 Une fois l'attachement effectué, vous pouvez suivre les étapes suivantes pour configurer votre disque supplémentaire [sous Linux](/pages/public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance#sous-linux) ou [sous Windows](/pages/public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance#sous-windows).

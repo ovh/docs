@@ -25,7 +25,7 @@ You'll need an [OVHcloud Public Cloud project](/pages/public_cloud/public_cloud_
 
 ### Install Packer
 
-Packer can be downloaded from the official website (curently [here](https://www.packer.io/downloads.html) ) and you'll need to `unzip` it.
+Packer can be downloaded from the official website (currently [here](https://www.packer.io/downloads.html) ) and you'll need to `unzip` it.
 
 For Linux 64bits
 
@@ -94,7 +94,7 @@ export NETWORK_ID=`openstack network list -f json | jq -r '.[] | select(.Name ==
 
 **INFO**: for `FLAVOR_ID`, you can directly use the name, ie `b2-7`
 
-Finaly, create a `packer.json` file
+Finally, create a `packer.json` file
 
 ```shell
 cat > packer.json <<EOF
@@ -131,7 +131,7 @@ cat > packer.json <<EOF
 EOF
 ```
 
-In the last selection of the configuration file, we specify a `setup_vm.sh` shell script to be ran.
+In the last selection of the configuration file, we specify a `setup_vm.sh` shell script to be run.
 
 ```sh
 #!/bin/sh
@@ -151,7 +151,7 @@ git clone ...
 
 ## Building the image
 
-Using the configuration file create above, check it and build the image with
+Using the configuration file created above, check it and build the image with
 
 ```shell
 packer validate packer.json

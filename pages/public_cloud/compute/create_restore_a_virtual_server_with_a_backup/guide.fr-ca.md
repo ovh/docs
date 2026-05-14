@@ -43,7 +43,7 @@ Vous pouvez être amenés à vouloir restaurer votre instance grâce à une sauv
 > **Note :** Ces opérations ne sont pas encore disponibles depuis l’espace client OVHcloud.
 >
 
-### Créer une instance a partir d'une sauvegarde
+### Créer une instance à partir d'une sauvegarde
 
 > [!tabs]
 > Via l'espace client OVHcloud
@@ -83,11 +83,11 @@ Vous pouvez être amenés à vouloir restaurer votre instance grâce à une sauv
 >> ```
 >>
 > Via Horizon
->> Dans l'interface Horizon, cliquez sur `Compute`{.action} dans le menu de gauche, puis sur `Images`{.action}. Cherchez l'image désirée et Cliquez sur le bouton `Launch`{.action} se trouvant sur la droite de la ligne de votre image. 
+>> Dans l'interface Horizon, cliquez sur `Compute`{.action} dans le menu de gauche, puis sur `Images`{.action}. Cherchez l'image désirée et cliquez sur le bouton `Launch`{.action} se trouvant sur la droite de la ligne de votre image. 
 >>
 >> ![public-cloud-instance-backup-horizon](images/restorebackuphorizon1.png){.thumbnail}
 >>
->> Nommez votre instance dans le champs dédié et determinez le nombre d'instance à créer. Puis cliquez sur l'onglet `Flavor`{.action}.
+>> Nommez votre instance dans le champ dédié et déterminez le nombre d'instances à créer. Puis cliquez sur l'onglet `Flavor`{.action}.
 >>
 >> ![public-cloud-instance-backup-horizon-2](images/restorebackuphorizon2.png){.thumbnail}
 >>
@@ -104,7 +104,7 @@ Vous pouvez être amenés à vouloir restaurer votre instance grâce à une sauv
 >>
 >> ![public-cloud-instance-backup-horizon-4](images/restorebackuphorizon4.png){.thumbnail}
 >>
->> Vous pouvez retrouver le status de votre nouvelle instance dans `Compute`{.action} dans le menu de gauche, puis sur `Instances`{.action}.
+>> Vous pouvez retrouver le statut de votre nouvelle instance dans `Compute`{.action} dans le menu de gauche, puis sur `Instances`{.action}.
 >>
 >> ![public-cloud-instance-backup-horizon-5](images/restorebackuphorizon5.png){.thumbnail}
 >>

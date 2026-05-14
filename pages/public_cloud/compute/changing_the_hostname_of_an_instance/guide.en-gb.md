@@ -94,6 +94,6 @@ sudo cat /etc/hosts
 127.0.0.1 localhost
 ```
 
-## Go further 
+## Go further
 
 Join our [community of users](/links/community).

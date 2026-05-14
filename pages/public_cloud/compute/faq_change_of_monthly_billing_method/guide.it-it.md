@@ -20,7 +20,7 @@ La fatturazione delle tue istanze mensili è ora raggruppata in un'unica fattura
 
 ### Quando è necessario pagare un’istanza con fatturazione mensile?
 
-Ogni istanza dichiarata mensile ed esistente il 1° del mese in corso sarà fatturata per un mese intero. e apparirà sulla prossima fattura il primo giorno del mese successivo, insieme agli altri utilizzi Public Cloud.
+Ogni istanza dichiarata mensile ed esistente il 1° del mese in corso sarà fatturata per un mese intero. E apparirà sulla prossima fattura il primo giorno del mese successivo, insieme agli altri utilizzi Public Cloud.
 
 ### Se avvii un’istanza mensile a metà mese, come paghi?
 
@@ -46,4 +46,4 @@ Con un impegno mensile, ogni mese a partire dall’orario di inizio del servizio
 
 Se avete bisogno di formazione o di assistenza tecnica per implementare le nostre soluzioni, contattate il vostro rappresentante o cliccate su [questo link](/links/professional-services) per ottenere un preventivo e richiedere un'analisi personalizzata del vostro progetto da parte dei nostri esperti del team Professional Services.
 
-Contatta la nostra Community di utenti all'indirizzo <https://community.ovh.com/en/>.
+Contatta la nostra [Community di utenti](/links/community).

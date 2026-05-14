@@ -60,4 +60,4 @@ Per maggiori informazioni sulla procedura da seguire, consulta la guida [Gestire
 
 [Delega progetti](/pages/public_cloud/public_cloud_cross_functional/delegate_projects)
 
-Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.
+Contatta la nostra [Community di utenti](/links/community).

@@ -16,7 +16,7 @@ El módulo **cloud-init** permite configurar una [instancia de Public Cloud](/li
 >
 > Esta guía le ayudará a realizar las tareas más habituales. No obstante, si necesita ayuda, le recomendamos que contacte con un [proveedor especializado](/links/partner). Nosotros no podremos asistirle. Para más información, consulte la sección ["Más información"](#mas-informacion) de esta guía.
 >
-> Esta guía está destinada a las instancias basadas en distribuciones Linux **únicam**
+> Esta guía está destinada a las instancias basadas en distribuciones Linux **únicamente**
 >
 
 ## Requisitos
@@ -32,12 +32,12 @@ El módulo **cloud-init** permite configurar una [instancia de Public Cloud](/li
 >
 > Para los propósitos de esta guía, usaremos el editor de archivos **vi**, ya que está presente por defecto en las distribuciones Linux. Por supuesto, puedes utilizar el editor que prefieras.
 >
-> Uso básico de vi :
+> Uso básico de vi:
 >
 > - Pulsa **i** para cambiar al modo de inserción de texto.
 > - Pulse **Escape** (Esc) para salir del modo de inserción.
-> Pulsa **:wq** y luego **Enter** para guardar y salir.
-> Pulse **:q!** y **Enter** para salir sin guardar.
+> - Pulsa **:wq** y luego **Enter** para guardar y salir.
+> - Pulse **:q!** y **Enter** para salir sin guardar.
 
 
 Para desactivar cloud-init, hay que empezar por modificar el archivo de configuración:
@@ -95,6 +95,6 @@ sudo cat /etc/hosts
 127.0.0.1 localhost
 ```
 
-## Más información 
+## Más información
 
 Interactúe con nuestra [comunidad de usuarios](/links/community).

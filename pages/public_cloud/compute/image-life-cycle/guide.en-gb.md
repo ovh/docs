@@ -37,7 +37,7 @@ OVHcloud follows the official life cycle of each distribution. All sources of in
 > 
 > - OVHcloud Linux releases can have a couple of weeks of delay compared to distribution releases.
 > - OVHcloud Windows releases can have a couple of months of delay compared to Microsoft releases.
-> - OVHcloud VPS preinstalled images containing a presinstalled software stack (e.g. WordPress) follow the same lifecycle as the OS they are based on.
+> - OVHcloud VPS preinstalled images containing a preinstalled software stack (e.g. WordPress) follow the same lifecycle as the OS they are based on.
 > - After its initial release, OVHcloud provided images for a given release version remain available until the end-of-life defined by the editor/community or the end of support if no specific end-of-life is defined. After that, it cannot be installed/reinstalled anymore. We strongly advise customers to upgrade existing machines with an OS version supported by the editor/community, and refer to the specific Terms and Conditions of their OS regarding upgrades when they apply.
 > - For more information, you can read the OVHcloud roadmap on [GitHub](https://github.com/orgs/ovh/projects/16/views/1).
 >

@@ -53,7 +53,7 @@ For example, [PuTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.h
 
 > [!primary]
 >
-> If you receive error messages when trying to connect, ensure you are using the correct paramaters and login details and that your system and the installed applications are properly updated. If you receive a warning message of the type `REMOTE HOST IDENTIFICATION HAS CHANGED`, consult our [SSH introduction page](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction).
+> If you receive error messages when trying to connect, ensure you are using the correct parameters and login details and that your system and the installed applications are properly updated. If you receive a warning message of the type `REMOTE HOST IDENTIFICATION HAS CHANGED`, consult our [SSH introduction page](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction).
 >
 
 #### How to configure key pairs from a GNU/Linux distribution or macOS
@@ -318,7 +318,7 @@ The key's randomart image is:
 +----[SHA256]-----+
 ```
 
-Vou can open the key file with a text editor (Notepad, Notepad++, etc.). From the Windows File Explorer, right-click on the file and select `Open with`.  
+You can open the key file with a text editor (Notepad, Notepad++, etc.). From the Windows File Explorer, right-click on the file and select `Open with`.  
 You can also use one of the following commands (when in the directory `\Users\WindowsUsername\.ssh`):
 
 - `cmd`

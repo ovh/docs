@@ -43,7 +43,7 @@ Se hai raggiunto la capacità massima del tuo disco aggiuntivo, aggiungi spazio 
 
 ## Procedura
 
-Per gli step successivi, è necessario aver già configurato un disco aggiuntivo in base alle intrusioni della [nostra guida](/pages/public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance).
+Per gli step successivi, è necessario aver già configurato un disco aggiuntivo in base alle istruzioni della [nostra guida](/pages/public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance).
 
 ## Monitoraggio dell'utilizzo del disco prima del ridimensionamento
 
@@ -125,7 +125,7 @@ Nella nuova finestra, indica la nuova dimensione del volume e clicca su `Modific
 
 Apri una connessione SSH alla tua istanza per adattare la partizione al disco ridimensionato.
 
-Per prima cosa, esegui il mount del disco utilizzando questo comando:
+Per prima cosa, smonta il disco utilizzando questo comando:
 
 ```bash
 admin@server:~$ sudo umount /mnt/disk
@@ -215,7 +215,7 @@ Una volta completata questa operazione, scollegate il volume dall'istanza e rico
 
 Prima di procedere, ricollegate il volume all'istanza. Cliccate su `...`{.action} nella riga del volume e selezionate `Associa all'istanza`{.action}.
 
-Installa una connessione RDP (Remote Desktop) sulla tua istanza Windows.
+Stabilisci una connessione RDP (Remote Desktop) sulla tua istanza Windows.
 
 Una volta connesso, clicca con il tasto destro sul pulsante `Inizia`{.action} e apri la `Gestione dei dischi`{.action}.
 

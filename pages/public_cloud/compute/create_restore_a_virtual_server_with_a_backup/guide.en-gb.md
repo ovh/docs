@@ -40,7 +40,7 @@ You can make use of these instance backups for two basic purposes:
 >
 > The operations of **creating** and **restoring** an instance from a distant backup are fully supported via the OVHcloud API, offering greater flexibility and effortless integration into your automation processes.
 >
-> **Note :** These operations are not yet available through the OVHcloud Control Panel.
+> **Note:** These operations are not yet available through the OVHcloud Control Panel.
 >
 
 ### Creating an instance from a backup

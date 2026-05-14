@@ -34,7 +34,7 @@ Puede lanzar una imagen desde una URL o crear una personal haciendo clic en el b
 Cumplimente el formulario. Los campos marcados con asterisco (*) son obligatorios:
 
 - Image name (Nombre de la imagen) (\*) 
-- Image description (Descripción de la image)
+- Image description (Descripción de la imagen)
 - Image file (Fichero de imagen: seleccione el archivo en el equipo local)
 - Image format (Formato de la imagen) (\*):
 
@@ -75,4 +75,4 @@ Utilizando el menú desplegable de la columna **Actions** es posible:
 
 ## Más información
   
-Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.
+Interactúe con nuestra [comunidad de usuarios](/links/community).

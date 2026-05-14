@@ -106,7 +106,7 @@ Możesz zabezpieczyć klucz SSH przy użyciu tajnego hasła. Jest to zalecane w 
 > Dla większej wygody i bezpieczeństwa, przechowuj tajne hasła w menedżerze haseł na Twoim komputerze, takim jak rozwiązanie open source **KeePass**.
 >
 
-Domyślnie wszystkie klucze SSH są przechowywane w katalogu `.ssh`. Pliki klucza publicznego będą miały '.pub` dodane do nazwy pliku.
+Domyślnie wszystkie klucze SSH są przechowywane w katalogu `.ssh`. Pliki klucza publicznego będą miały `.pub` dodane do nazwy pliku.
 
 ```console
 Your identification has been saved in /home/user/.ssh/id_rsa.

@@ -1,6 +1,6 @@
 ---
 title: 'Activer une licence Windows pour une instance en mode privé'
-excerpt: 'Découvrez comment activer une license Windows sur une instance en mode privé'
+excerpt: 'Découvrez comment activer une licence Windows sur une instance en mode privé'
 updated: 2023-01-25
 ---
 
@@ -45,7 +45,7 @@ Dirigez-vous ensuite dans `Compute`{.action}, puis `Instances`{.action} :
 
 ![compute et instance](images/horizon2.png){.thumbnail}
 
-Pour ajouter une interface, dans la colonne « Actions », cliquez sur la flèche permettant d’accéder aux actions possible sur l’instance. Cliquez alors sur `Attach Interface`{.action} :
+Pour ajouter une interface, dans la colonne « Actions », cliquez sur la flèche permettant d’accéder aux actions possibles sur l’instance. Cliquez alors sur `Attach Interface`{.action} :
 
 ![attach interface](images/horizon3.png){.thumbnail}
 
@@ -155,9 +155,9 @@ openstack server add port <server_id> <port_id>
 
 #### Activer votre système Windows
 
-Pour pourvoir activer votre système Windows, vous devez passer par Powershell.
+Pour pouvoir activer votre système Windows, vous devez passer par PowerShell.
 
-Une fois connecté à votre instance Windows, faites un clic droit sur le menu `Démarrer`{.action} et sélectionnez `Windows Powershell`{.action}.
+Une fois connecté à votre instance Windows, faites un clic droit sur le menu `Démarrer`{.action} et sélectionnez `Windows PowerShell`{.action}.
 
 Renseignez la commande suivante :
 
@@ -189,6 +189,6 @@ slmgr.vbs -dli
 
 [Découvrez comment corriger la clé d’activation de votre Windows Server](/pages/bare_metal_cloud/dedicated_servers/windows_key).
 
-Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](/links/professional-services) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
+Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en œuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](/links/professional-services) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).

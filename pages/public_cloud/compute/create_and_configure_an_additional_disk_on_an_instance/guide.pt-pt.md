@@ -150,7 +150,7 @@ Este tipo de volume é recomendado para as seguintes utilizações:
 >> - High-speed-luks
 >> - High-speed-gen2-luks
 >>
->> Os tipos que terminam com -us são encriptados (LUKS).
+>> Os tipos que terminam com -luks são encriptados (LUKS).
 >>
 >> > [!warning]
 >> >
@@ -165,7 +165,7 @@ Este tipo de volume é recomendado para as seguintes utilizações:
 >> - A região
 >> - O tamanho do volume em GB
 >>
->> No nosso exemplo, vamos criar um Block Storage na região **GRA11** com um tamanho de **10 GB**. Adicione as seguintes linhas a um ficheiro chamado *simples_blockstorage.tf*:
+>> No nosso exemplo, vamos criar um Block Storage na região **GRA11** com um tamanho de **10 GB**. Adicione as seguintes linhas a um ficheiro chamado *simple_blockstorage.tf*:
 >>
 >> ```python
 >> # Creation of a block storage volume
@@ -284,7 +284,7 @@ Este tipo de volume é recomendado para as seguintes utilizações:
 >> - High-speed-luks
 >> - High-speed-gen2-luks
 >>
->> Os tipos que terminam com -us são encriptados (LUKS).
+>> Os tipos que terminam com -luks são encriptados (LUKS).
 >>
 >> > [!warning]
 >> >
@@ -547,7 +547,7 @@ Faça novamente um clique direito e selecione `Iniciar o disco`{.action}.
 
 ![offline disk](images/disk-management-03.png){.thumbnail}
 
-Em seguida, seleccione `MBR`{.action} se o disco adicional tiver menos de 2 TB, ou `GPT`{.action} se tiver mais de 2 TB e, em seguida, clique em `OK`{.action}.
+Em seguida, selecione `MBR`{.action} se o disco adicional tiver menos de 2 TB, ou `GPT`{.action} se tiver mais de 2 TB e, em seguida, clique em `OK`{.action}.
 
 ![inicializar o disco](images/initialize_disk.png){.thumbnail}
 
@@ -683,7 +683,7 @@ Antes de desassociar um volume, desmonte-o do sistema operativo.
 >>
 >> ![gestão dos discos](images/start-menu.png){.thumbnail}
 >>
->> Clique com o botão direito do rato sobre o volume que pretende desmontar e selecione `Alterar letra e os caminho de unidade...`{.action}.
+>> Clique com o botão direito do rato sobre o volume que pretende desmontar e selecione `Alterar letra e os caminhos de unidade...`{.action}.
 >>
 >> ![unmount disk](images/unmountdisk.png){.thumbnail}
 >>
