@@ -15,7 +15,7 @@ updated: 2026-04-13
 
 The **Batch API** (`/v1/batches`) is an **OpenAI-compatible** route that lets you submit a large number of inference requests in a single asynchronous job, instead of sending them one by one through synchronous endpoints such as `v1/chat/completions` or `v1/responses`.
 
-Batch mode is ideal when you do not need an immediate answer, but rather want to process a high volume of prompts (evaluations, offline labelling, content generation at scale, dataset preparation, etc.) in a **cost-efficient** and **throughput-oriented** way. Results are delivered within a **maximum of 24 hours** after the batch is submitted.
+Batch mode is ideal when you do not need an immediate answer, but rather want to process a high volume of prompts (evaluations, offline labelling, content generation at scale, dataset preparation, etc.) in a **cost-efficient** and **throughput-oriented** way. Batch jobs have a completion window of up to **24 hours**. Any job not completed within this period will expire.
 
 ![Batch mode workflow](images/batch-mode-workflow.png){.thumbnail}
 
@@ -83,6 +83,11 @@ Each line of the input file is processed independently. Successful responses are
 ## Preparing the input file (JSONL)
 
 The input file must be in [JSON Lines](https://jsonlines.org/) format (`.jsonl`): one JSON object per line, with no trailing comma and no wrapping array.
+
+> [!warning]
+>
+> Your file must not exceed a size of 200 MB or contain more than 50,000 entries.
+>
 
 Each line represents **one independent request** and must contain the following fields:
 
@@ -424,6 +429,7 @@ If you are interested in specific features that you would like us to prioritise,
 
 - All requests inside a single batch must target the **same endpoint** (the one declared at batch creation time).
 - A batch cannot reference models that are not available on the AI Endpoints [catalog](/links/public-cloud/ai-endpoints-catalog).
+- We only accepts at the moment our **LLMs and embeddings** models.
 - Input files must be valid JSONL with unique `custom_id` values; malformed lines cause the batch to move to the `failed` state during validation.
 - The `completion_window` currently accepts the `24h` value. Batches that cannot be completed within this window transition to `expired`.
 - Output and error files are subject to the **Files API** retention policy. Download them as soon as possible once the batch is `completed`.
