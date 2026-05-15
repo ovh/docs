@@ -273,8 +273,11 @@ Certaines régions OVHcloud s'étendent sur trois zones de disponibilité (AZ) h
 
 > [!primary]
 >
-> Pour activer le mode 3-AZ pour les blocs d'adresses IP routés via le vRack dans les régions où cette fonctionnalité était auparavant indisponible, vous devez retirer le bloc IP du vRack, puis le réajouter.
+> Si une région est passée en mode 3-AZ alors que vous aviez déjà des adresses IP routées via le vRack dans cette région, ces IP resteront en mode 1-AZ et ne bénéficieront pas automatiquement de la configuration de routage 3-AZ.
 >
+> Pour activer le mode 3-AZ pour les blocs d'adresses IP routés via le vRack dans ces régions, vous devez retirer le bloc IP du vRack, puis le réajouter.
+>
+> **Les blocs d'adresses IP qui sont toujours routés en mode 1-AZ sont identifiés par un badge gris `1-AZ`.**
 
 #### Avantages
 
