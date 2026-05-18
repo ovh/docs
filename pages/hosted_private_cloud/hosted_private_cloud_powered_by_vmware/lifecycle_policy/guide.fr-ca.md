@@ -88,10 +88,10 @@ Pour le produit Managed VMware vSphere, un cycle de vie matériel spécifique s�
 
 |                   Génération matérielle               | General Availability |    Sales    |     Growth     | Fin de Support |
 |:-----------------------------------------------------:|:--------------------:|:------------:|:-------------:|:-----------:|
-| SDDC2014 & SDDC2016 (Intel Ivy Bridge, Intel Haswell) |          2016        |  2017-04-30  |  2026-06-01   | 2027-05-31  |
-|              SDDC2018 (Intel Broadwell)               |          2018        |  2018-11-30  |  2026-06-01   | 2027-05-31  |
-|             Essentials (Intel Broadwell)              |          2020        |  2026-06-01  |  2026-06-01   | 2027-05-31  |
-|               Premier (Intel Xeon Gold)               |          2020        |  2026-05-29  |  2027-03-30   | 2027-10-31  |
+| SDDC2014 & SDDC2016 (Intel Ivy Bridge, Intel Haswell) |          2016        |  2017-04-30  |  2026-06-30   | 2027-06-30  |
+|              SDDC2018 (Intel Broadwell)               |          2018        |  2018-11-30  |  2026-06-30   | 2027-06-30  |
+|             Essentials (Intel Broadwell)              |          2020        |  2026-06-01  |  2026-06-30   | 2027-06-30  |
+|               Premier (Intel Xeon Gold)               |          2020        |  2026-05-28  |  2027-03-31   | 2027-10-31  |
 |           Premier2026 (Intel Emerald Rapids)          |          2026        |  2027-06-30  |               |             |
 |           Premier2027 (Intel Granite Rapids)          |          2027        |              |               |             |
 
