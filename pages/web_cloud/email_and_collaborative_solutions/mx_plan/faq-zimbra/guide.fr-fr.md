@@ -1,7 +1,7 @@
 ---
 title: FAQ sur la solution Zimbra OVHcloud
 excerpt: "Retrouvez les questions concernant la migration vers Zimbra pour l'offre MX Plan OVHcloud"
-updated: 2025-12-05
+updated: 2026-05-18
 ---
 
 <style>
@@ -52,6 +52,46 @@ Pour mieux comprendre, le visuel suivant vous montre les technologies actuelleme
 /// details | Où puis-je trouver des guides ?
 
 Un guide d'utilisation de Zimbra est disponible à [cette adresse](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_zimbra).
+
+///
+
+/// details | Je n'ai plus accès à mon compte e-mail Zimbra et je ne comprends pas pourquoi : que faire ?
+
+Si vous constatez une perte totale d'accès à votre compte e-mail Zimbra (connexion au webmail Zimbra refusée, envoi et réception suspendus, identifiants apparemment corrects), la cause la plus fréquente est un **blocage automatique de l'adresse pour spam**.
+
+Cette mesure s'applique aux trois offres Zimbra :
+
+- **MX Plan - Zimbra**
+- **Zimbra Starter**
+- **Zimbra Pro**
+
+**Comment reconnaître ce cas :**
+
+- L'accès au webmail Zimbra est entièrement suspendu (et pas seulement l'envoi).
+- Aucun ticket d'assistance n'a été généré automatiquement dans votre espace client OVHcloud, contrairement aux autres technologies e-mail.
+- Une activité d'envoi inhabituelle a pu être détectée sur le compte récemment (envois massifs, contenu suspect, poste utilisateur potentiellement infecté, identifiants compromis, redirection vers une adresse malveillante).
+
+**Pourquoi je ne reçois pas de notification claire :**
+
+Pour les comptes Zimbra, le blocage anti-spam suspend l'intégralité de l'accès au compte et ne déclenche pas de ticket d'assistance automatique. Le client peut donc constater la perte d'accès sans recevoir d'explication immédiate.
+
+**Que faire ?**
+
+1. Consultez le guide [« Que faire en cas de compte bloqué pour spam ? »](/pages/web_cloud/email_and_collaborative_solutions/troubleshooting/locked_for_spam) et réalisez les vérifications décrites à l'étape 1 (poste, logiciels tiers, redirections, filtres, réponses automatiques) à partir des éléments encore accessibles.
+2. **Créez manuellement un ticket d'assistance** depuis votre espace client OVHcloud. Dans le ticket, indiquez :
+    - L'adresse e-mail concernée ;
+    - Le service associé (MX Plan, Zimbra Starter ou Zimbra Pro) et son identifiant ;
+    - Les actions correctives déjà engagées.
+3. Une fois le ticket traité par le support, votre adresse est débloquée et l'accès au webmail Zimbra est rétabli.
+
+> [!primary]
+>
+> **Autres causes possibles de perte d'accès** (à écarter avant ou après contact du support) :
+>
+> - Mot de passe modifié récemment (par vous-même ou par un administrateur de la plateforme).
+> - Service en cours de suspension administrative (impayé, résiliation, fin de contrat).
+> - Migration de service récemment effectuée (vérifier les éventuels e-mails de notification envoyés 2 semaines puis 1 jour avant migration).
+> - Incident d'infrastructure ponctuel : consultez le [statut des services OVHcloud](https://status.ovhcloud.com).
 
 ///
 
