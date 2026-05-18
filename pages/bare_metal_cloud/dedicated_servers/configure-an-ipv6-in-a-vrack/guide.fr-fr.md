@@ -1,7 +1,7 @@
 ---
 title: "Configurer un bloc IPv6 dans un vRack sur un serveur dédié"
 excerpt: "Configurez un bloc d'adresses IPv6 publiques pour le réseau privé vRack OVHcloud sur votre serveur dédié"
-updated: 2026-03-13
+updated: 2026-05-26
 ---
 
 <style>
@@ -269,7 +269,7 @@ L'augmentation de bande passante s'appliquera à toutes les adresses IP de cette
 
 ### Gérer les priorités de basculement 3-AZ
 
-Certaines régions OVHcloud s'étendent sur trois zones de disponibilité (AZ) hébergées dans des emplacements physiquement indépendants au sein d'une même région. Lorsqu'une telle région intervient dans le routage des IP publiques de votre vRack, elle est identifiée dans l'espace client OVHcloud par un badge **3-AZ** affiché à côté du nom de la région dans l'onglet `Connectivité IP publique`{.action}.
+Certaines régions OVHcloud s'étendent sur trois zones de disponibilité (AZ) hébergées dans des emplacements physiquement indépendants au sein d'une même région. Lorsqu'une telle région est utilisée pour le routage des IP publiques de votre vRack, elle est identifiée dans l'espace client OVHcloud par un badge **3-AZ** affiché à côté du nom de la région dans l'onglet `Connectivité IP publique`{.action}.
 
 > [!primary]
 >
@@ -282,20 +282,20 @@ Certaines régions OVHcloud s'étendent sur trois zones de disponibilité (AZ) h
 #### Avantages
 
 - **Résilience intégrée** : le trafic IP public routé via le vRack reste disponible si une zone de disponibilité devient indisponible, le routage basculant automatiquement vers l'AZ suivante dans l'ordre de priorité.
-- **Comportement de basculement prévisible** : chaque région 3-AZ expose pour votre vRack une zone de disponibilité principale et deux positions de basculement ordonnées, ce qui rend la séquence de basculement déterministe.
+- **Comportement de basculement prévisible** : chaque région 3-AZ attribue à votre vRack une zone de disponibilité principale et deux positions de basculement ordonnées, ce qui rend la séquence de basculement déterministe.
 - **Alignement avec la charge de travail** : lorsque d'autres services OVHcloud sont déployés dans la même région 3-AZ, les priorités peuvent être alignées pour que l'AZ active du vRack corresponde à l'AZ qui héberge vos services. Votre trafic public reste ainsi dans la même AZ que votre charge de travail en fonctionnement normal.
 
 #### Mécanique et gestion des priorités
 
-Lorsqu'un vRack est rattaché pour la première fois à une région 3-AZ, OVHcloud lui attribue aléatoirement une **zone de disponibilité principale**. La zone principale est affichée dans la tuile correspondante de l'onglet `Connectivité IP publique`{.action}, dans la sous-section `Priorités de basculement 3-AZ`, juste au dessus d'un bouton `Configurer`{.action}. Les deux AZ restantes sont attribuées comme **Zone de disponibilité secondaire** et **Zone de dernier recours**.
+Lorsqu'un vRack est rattaché pour la première fois à une région 3-AZ, OVHcloud lui attribue aléatoirement une **zone de disponibilité principale**. La zone principale est affichée dans la tuile correspondante de l'onglet `Connectivité IP publique`{.action}, dans la sous-section `Priorités de basculement 3-AZ`, juste au-dessus d'un bouton `Configurer`{.action}. Les deux AZ restantes sont attribuées comme **Zone de disponibilité secondaire** et **Zone de dernier recours**.
 
-Vous pouvez modifier cette attribution aléatoire à tout moment, par exemple pour aligner les priorités de basculement sur la disposition AZ d'autres composants attachés à votre infrastructure.
+Vous pouvez modifier cette attribution à tout moment, par exemple pour aligner les priorités de basculement sur la disposition AZ des autres composants de votre infrastructure.
 
 /// details | Modifier les priorités des zones de disponibilité
 
 Pour ajuster les priorités de basculement d'une région 3-AZ :
 
-- Dans la barre latérale gauche du Tableau de bord, ouvrez `Network`{.action}.
+- Dans la barre latérale gauche de votre espace client, ouvrez `Network`{.action}.
 - Sélectionnez `Réseau Privé vRack`{.action}.
 - Dans la colonne « Adresse IP publique et bande passante », cliquez sur le bouton `Gérer`{.action} correspondant au vRack souhaité.
 - Ouvrez l'onglet `Connectivité IP publique`{.action}.

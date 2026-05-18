@@ -1,7 +1,7 @@
 ---
 title: "Configure an IP Block in a vRack on a Dedicated Server"
 excerpt: "Configure a public IP address block for use with the OVHcloud vRack private network across dedicated servers."
-updated: 2026-04-03
+updated: 2026-05-26
 ---
 
 <style>
@@ -151,7 +151,7 @@ Some OVHcloud regions span three Availability Zones (AZs) hosted in physically i
 >
 > If a region transitioned to 3-AZ while you already had IPs routed via the vRack in that region, those IPs will remain in 1-AZ mode and will not automatically benefit from the 3-AZ routing configuration.
 >
-> To enable 3-AZ mode for IP blocks routed via the vRack in such regions, you must remove the IP block from the vRack and then re-add it.
+> To enable 3-AZ mode for IP blocks routed via the vRack in such regions, remove the IP block from the vRack, then re-add it.
 >
 > **IP blocks that are still routed in 1-AZ mode are identified by a grey `1-AZ` badge.**
 >
@@ -159,7 +159,7 @@ Some OVHcloud regions span three Availability Zones (AZs) hosted in physically i
 #### Benefits
 
 - **Built-in resilience**: public IP traffic routed via the vRack remains available if a single Availability Zone becomes unavailable, as routing automatically fails over to the next AZ in the priority order.
-- **Predictable failover behaviour**: each 3-AZ region exposes a Primary Availability Zone and two ordered failover positions for your vRack, so the failover sequence is deterministic.
+- **Predictable failover behaviour**: each 3-AZ region gives your vRack a Primary Availability Zone and two ordered failover positions, making the failover sequence deterministic.
 - **Workload alignment**: when other OVHcloud services are deployed in the same 3-AZ region, priorities can be aligned so that the vRack's active AZ matches the AZ hosting your services. This keeps your public traffic in the same AZ as your workload during normal operation.
 
 #### Mechanics and priority management
@@ -177,8 +177,8 @@ To adjust the failover priorities of a 3-AZ region:
 - In the "Public IP & bandwidth" column, click the `Manage`{.action} button for the corresponding vRack.
 - Open the `Public IP routing`{.action} tab.
 - Locate the tile of the 3-AZ region you want to configure, then the `3-AZ failover priorities` subsection, and click `Configure`{.action}.
-- In the panel that opens on the right-hand side, assign each Availability Zone to one of the three slots: **Primary Zone**, **Secondary Zone** and **Last resort Zone**.
-- Validate your selection.
+- In the panel that opens, assign each Availability Zone to one of the three slots: **Primary Zone**, **Secondary Zone** and **Last resort Zone**.
+- Confirm your selection.
 
 > [!primary]
 >
