@@ -47,15 +47,13 @@ Availability and capabilities may vary depending on the service. This list will 
 
 | Product name | Availability | Guide link |
 | :----------- | :----------- | :--------- |
-| Public Cloud - Compute | OVHcloud Control Panel & API | [Public Cloud Openstack Logs Forwarding](/pages/public_cloud/public_cloud_network_services/replace) |
-| Public Cloud - Block Storage | OVHcloud Control Panel & API | [Public Cloud Openstack Logs Forwarding](/pages/public_cloud/public_cloud_network_services/replace) |
-| Public Cloud - Network | OVHcloud Control Panel & API | [Public Cloud Openstack Logs Forwarding](/pages/public_cloud/public_cloud_network_services/replace) |
-| Public Cloud - Object Storage | OVHcloud Control Panel & API | Link roadmap git ? |
+| Public Cloud - Compute | OVHcloud Control Panel & API | Coming soon |
+| Public Cloud - Block Storage | OVHcloud Control Panel & API | Coming soon |
+| Public Cloud - Network | OVHcloud Control Panel & API | Coming soon |
 | Public Cloud - Managed Kubernetes Service | OVHcloud Control Panel & API | [Managed Kubernetes Service Audit Logs Forwarding](/pages/public_cloud/containers_orchestration/managed_kubernetes/forwarding-audit-logs-to-logs-data-platform) |
 | Public Cloud - Load Balancer | OVHcloud Control Panel & API | [Public Cloud Load Balancer TCP / HTTP / HTTPS Logs Forwarding](/pages/public_cloud/public_cloud_network_services/technical-resources-05-lb_logs_2_customers) |
 | Public Cloud - Managed Databases | OVHcloud Control Panel & API | [Public Cloud Databases - How to setup logs forwarding](/pages/public_cloud/public_cloud_databases/databases_16_logs_to_customer) |
 | Public Cloud - Analytics | OVHcloud Control Panel & API | [Analytics - How to setup logs forwarding](/pages/public_cloud/data_analytics/analytics/analytics_logs_to_customer) |
-| Public Cloud - AI | OVHcloud Control Panel & API | Link roadmap git ?  |
 
 ## Instructions
 
