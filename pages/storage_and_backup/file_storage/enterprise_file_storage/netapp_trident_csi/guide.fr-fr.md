@@ -1,7 +1,7 @@
 ---
 title: Enterprise File Storage - Premiers pas avec Trident CSI
 excerpt: "Déployez NetApp Trident CSI sur OVHcloud Enterprise File Storage pour gérer les volumes et les snapshots dans Kubernetes"
-updated: 2026-02-18
+updated: 2026-05-19
 ---
 
 ## Objectif
@@ -137,6 +137,19 @@ Configurez une politique IAM qui devra contenir les éléments suivants : le ser
 >> >
 >> > Dans le champ `identities`, remplacez `xx11111-ovh` par votre identifiant de compte OVHcloud (NIC handle) et `EU.xxxxxxxxxxxxxxxx` par le `clientId` obtenu à l'étape 1.
 >> >
+>> > Dans le champ `resources`, remplacez la valeur `urn` par l'URN de votre service Enterprise File Storage (EFS).
+>> >
+>>
+>> Utilisez l'appel API suivant pour récupérer l'URN de votre service :
+>>
+>> > [!api]
+>> >
+>> > @api {v2} /iam?resourceName GET /iam/resource?resourceName={serviceId}
+>>
+>> > [!primary]
+>> >
+>> > Remplacez `{serviceId}` par l'identifiant de votre service Enterprise File Storage (également appelé `serviceName` dans l'API storage). Dans la réponse de l'API, copiez la valeur `urn` (par exemple, `urn:v1:eu:resource:storageNetApp:xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx`).
+>> >
 >>
 >> ```json
 >> {
@@ -222,6 +235,19 @@ Configurez une politique IAM qui devra contenir les éléments suivants : le ser
 >> > [!primary]
 >> >
 >> > Dans le champ `identities`, remplacez `xx11111-ovh` par votre identifiant de compte OVHcloud (NIC handle) et `EU.xxxxxxxxxxxxxxxx` par le `clientId` obtenu à l'étape 1.
+>> >
+>> > Dans le champ `resources`, remplacez la valeur `urn` par l'URN de votre service Enterprise File Storage (EFS).
+>> >
+>>
+>> Exécutez la commande suivante pour récupérer l'URN de votre service :
+>>
+>> ```bash
+>> ovhcloud iam resource list --filter 'name=="{serviceId}"' -o json
+>> ```
+>>
+>> > [!primary]
+>> >
+>> > Remplacez `{serviceId}` par l'identifiant de votre service Enterprise File Storage. Dans la sortie de la commande, copiez la valeur `urn` (par exemple, `urn:v1:eu:resource:storageNetApp:xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx`).
 >> >
 >>
 >> ```bash
@@ -318,6 +344,7 @@ Lancez l'installation :
 
 ```bash
 helm repo add netapp-trident https://netapp.github.io/trident-helm-chart
+helm repo update
 helm install trident-operator netapp-trident/trident-operator \
   --version 100.2502.1 \
   --create-namespace \
@@ -532,7 +559,7 @@ NetApp Trident permet de créer des snapshots de volumes à la demande sur Enter
 cat <<EOF | kubectl create -f -
 apiVersion: snapshot.storage.k8s.io/v1
 kind: VolumeSnapshotClass
-metadata:   
+metadata:
   name: csi-snapclass
 driver: csi.trident.netapp.io
 deletionPolicy: Delete
