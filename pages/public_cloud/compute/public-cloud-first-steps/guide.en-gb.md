@@ -1,7 +1,7 @@
 ---
 title: How to create a Public Cloud instance and connect to it
 excerpt: Find out how to configure Public Cloud instances in the OVHcloud Control Panel and the first steps with your instances
-updated: 2026-05-06
+updated: 2026-05-19
 ---
 
 <style>
@@ -257,7 +257,12 @@ Find out more on the [Local Zones web page](/links/public-cloud/local-zones).
 >>
 >> **4.7 Network**
 >>
->> Configure the private network (VLAN ID, CIDR, DHCP), gateway and public connectivity (Basic Public IP or Floating IP) as needed (see [Step 3](#networking-modes)).
+>> The **Network settings** section is split into two parts:
+>>
+>> - **Private network**: Select an existing private network or click `+ Create a private network`{.action}. If a private network is selected but does not have a gateway, toggle `Assign a gateway`{.action} to attach a gateway automatically.
+>> - **Assign public connectivity**: Enable the toggle to assign a public IP. Choose `Basic Public IP`{.action} (free, tied to the instance lifetime, incompatible with a gateway) or `Create a Floating IP (Reusable)`{.action} (persistent and reusable).
+>>
+>> See [Step 3](#networking-modes) for an overview of networking modes.
 >>
 >> **4.8 Billing**
 >>

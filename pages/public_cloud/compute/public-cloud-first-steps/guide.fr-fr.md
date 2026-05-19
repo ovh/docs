@@ -1,7 +1,7 @@
 ---
 title: "Comment créer une instance Public Cloud et s'y connecter"
 excerpt: "Découvrez comment configurer des instances Public Cloud dans votre espace client OVHcloud ainsi que les premières étapes avec vos instances"
-updated: 2026-05-06
+updated: 2026-05-19
 ---
 
 <style>
@@ -245,7 +245,12 @@ Pour en savoir plus, consultez la [page web des Local Zones](/links/public-cloud
 >>
 >> **4.7 Réseau**
 >>
->> Configurez le réseau privé (VLAN ID, CIDR, DHCP), la gateway et la connectivité publique (Basic Public IP ou Floating IP) selon vos besoins (voir [Étape 3](#networking-modes)).
+>> La section **Network settings** se divise en deux parties :
+>>
+>> - **Private network** : sélectionnez un réseau privé existant ou cliquez sur `Créer un réseau privé`{.action}. Si un réseau privé est sélectionné mais ne possède pas de gateway, activez le toggle `Attribuer une gateway`{.action} pour attacher une gateway automatiquement.
+>> - **Attribuer une connectivité publique** : activez le toggle pour assigner une IP publique. Choisissez `Basic Public IP`{.action} (gratuite, liée à la durée de vie de l'instance, incompatible avec une gateway) ou `Créer une nouvelle`{.action} (persistante et réutilisable).
+>>
+>> Consultez l'[Étape 3](#networking-modes) pour un aperçu des modes réseau.
 >>
 >> **4.8 Facturation**
 >>
