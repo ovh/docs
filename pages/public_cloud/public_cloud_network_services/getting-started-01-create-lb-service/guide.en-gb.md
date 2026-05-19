@@ -1,7 +1,7 @@
 ---
 title: Getting started with Load Balancer on Public Cloud
 excerpt: Discover how to launch a Load Balancer on Public Cloud
-updated: 2026-05-05
+updated: 2026-05-19
 ---
 
 ## Objective
@@ -38,64 +38,50 @@ Our Public Cloud Load Balancer  is based on [OpenStack Octavia](https://wiki.ope
 > Via the OVHcloud Control Panel
 >> Click `Load Balancer`{.action} (under **Network**) in the left menu, then click the `Create a Load Balancer`{.action} button.
 >>
->> The configuration page will open.
+>> The configuration page will open. Complete each step:
 >>
->> **Step 1: Region choice**
+>> **Step 1: Name**
 >>
->> ![Region choice](images/region.png){.thumbnail}
+>> Enter a name for your Load Balancer, then click `Next`{.action}.
 >>
->> 1. **Select the zone type:**
+>> **Step 2: Region**
 >>
->>    - 1AZ: Deployment in a single availability zone.
->>    - 3AZ: Deployment spread across three availability zones for high availability.
+>> Select the zone type:
 >>
->> 2. **Choose the region:** Only regions where you have a private network and at least one subnet can be selected. Select the region and click `Next`{.action}.
+>> - **1AZ**: Deployment in a single availability zone.
+>> - **3AZ**: Deployment spread across three availability zones for higher availability.
 >>
->> **Step 2: Size choice**
+>> Then select your region. Only regions where you have a private network with at least one subnet are available. Click `Next`{.action}.
 >>
->> ![Size choice](images/size.png){.thumbnail}
+>> **Step 3: Size**
 >>
->> The interface contains a link to the website on which the characteristics / benchmark of all size are provided. Once you have chosen your size, click `Next`{.action}.
+>> Select the size (flavor) that matches your workload. The interface provides a link to the full benchmark and characteristics for each size. Click `Next`{.action}.
 >>
->> **Step 3: Attach a public IP (or not)**
+>> **Step 4: Public IP**
 >>
->> ![Public IP choice](images/floating_IP.png){.thumbnail}
+>> Choose whether your Load Balancer will handle public or private traffic (see [Public Cloud Networking concepts](/pages/public_cloud/public_cloud_network_services/concepts-01-public-cloud-networking-concepts) for details):
 >>
->> At this stage, you need to know if your Load Balancer will be receiving public traffic or not (for more details, read our [Public Cloud Networking concepts](/pages/public_cloud/public_cloud_network_services/concepts-01-public-cloud-networking-concepts) page).
+>> - **`New Public IP`**: Creates a new Floating IP for your Load Balancer.
+>> - **Existing Floating IP**: If you already have a Floating IP, select it from the list.
+>> - **`No Public IP`{.action}**: For private traffic only.
 >>
->> If your Load Balancer is processing public traffic, you have 2 options :
+>> **Step 5: Private network and subnet**
 >>
->> - `New Public IP`: This option will create a new Floating IP for your Load Balancer.
->> - If you already have a Floating IP, the interface will offer you to pick one.
+>> Select the private network and subnet where the Load Balancer will be deployed. The interface warns you if the selected network or subnet does not meet the prerequisites (see [Load Balancer concepts](/pages/public_cloud/public_cloud_network_services/concepts-03-loadbalancer#network-prerequisites)).
 >>
->> If your Load Balancer is processing private traffic, choose `No Public IP`{.action}.
+>> **Step 6 (optional): Listener and members**
 >>
->> **Step 4: Select the private network and the subnet where the Load Balancer will be spawned**
->>
->> ![Network choice](images/private_network.png){.thumbnail}
->>
->> The interface will inform you if the private network / subnet is not compliant with the prerequisites (see [Public Cloud Networking concepts](/pages/public_cloud/public_cloud_network_services/concepts-03-loadbalancer#network-prerequisites)).
->>
->> **Step 5 (optional): Define the listener(s) and the members**
->>
->> ![Listener choice](images/listener.png){.thumbnail}
->>
->> - First, choose the listener protocol & the port according to the traffic you will receive. Note that a specific listener called `Prometheus` is available to monitor your Load Balancer. In that case, it is not possible to add members. For more information on this listener, read [this page](/pages/public_cloud/public_cloud_network_services/technical-resources-02-octavia-monitoring-prometheus).
->> - Then, choose the Health Monitor type. Note that since some health monitor types are not compatible with some protocols, the user interface filters those types so that you can only choose compatible items. For more information on the health monitor compatibility, read [this page](/pages/public_cloud/public_cloud_network_services/concepts-01-public-cloud-networking-concepts).
->> - Finally, from the instances of your region, choose the member IP & port that will be part of the pool. Note that in order to simplify the configuration workflow, it is only possible to have a pool with the same protocol as the listener, and that the member can only be chosen from the instance. Those limitations can be bypassed by skipping this part of configuration and use the pool / member configuration once the Load Balancer is created. 
+>> - **Listener**: Choose the protocol and port for incoming traffic. A `Prometheus` listener is also available for Load Balancer monitoring — no members can be added to it. See [this page](/pages/public_cloud/public_cloud_network_services/technical-resources-02-octavia-monitoring-prometheus) for details.
+>> - **Health Monitor**: Select the type compatible with your listener protocol. The interface filters to show only compatible types. See [this page](/pages/public_cloud/public_cloud_network_services/concepts-01-public-cloud-networking-concepts) for compatibility details.
+>> - **Members**: Select instance IPs and ports from your region to add to the pool.
 >>
 >> > [!primary]
->> > In order to simplify the Load Balancer configuration workflow, it is only possible to have a pool with the same protocol as the listener and the member can only be chosen from the instance. Furthermore the pool load balancing algorithm is by default set to `ROUND_ROBIN`.
->> > Those limitations can be bypassed by skipping this part of configuration and use the pool / member configuration once the Load Balancer is created. 
+>> > In this simplified workflow, the pool protocol must match the listener protocol, members can only be selected from existing instances, and the load balancing algorithm defaults to `ROUND_ROBIN`. Skip this step and configure pool and members after creation to bypass these limitations.
 >> >
 >>
->> **Step 6: Define the name of Load Balancer**
+>> Click `Create a Load Balancer`{.action} to confirm.
 >>
->> ![Name](images/name.png){.thumbnail}
->>
->> You can update the name according to your choice and click on `Create a Load Balancer`{.action}.
->>
->> You will be redirected to the Load Balancer listing page. Among the attributes that are displayed, the `Operating status` and `Provisioning status` provide information on the state of your load balancer. Find more information on the "[Load Balancer concepts](/pages/public_cloud/public_cloud_network_services/concepts-03-loadbalancer#operating-provisioning-status)" page.
+>> You will be redirected to the Load Balancer listing page. The `Operating status` and `Provisioning status` columns reflect the current state of your load balancer. For details, see the "[Load Balancer concepts](/pages/public_cloud/public_cloud_network_services/concepts-03-loadbalancer#operating-provisioning-status)" page.
 >>
 > Via the OpenStack CLI
 >> Another way to create a Load Balancer is through the OpenStack Command Line Interface. Before you begin, consult the following guides:
