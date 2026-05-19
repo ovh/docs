@@ -67,4 +67,4 @@ Una vez introducida y confirmada su contraseña, su proyecto entrará en la fase
 
 [Crear una primera instancia de Public Cloud y conectarse a ella](/pages/public_cloud/compute/public-cloud-first-steps)
 
-Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.
+Interactúe con nuestra [comunidad de usuarios](/links/community).

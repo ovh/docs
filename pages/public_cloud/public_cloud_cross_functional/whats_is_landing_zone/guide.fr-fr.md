@@ -121,7 +121,7 @@ Le cycle de vie d'un log comprend 4 phases distinctes :
 - **Stockage :** après leur ingestion, vos logs sont stockés dans la Logs Data Platform. Les données peuvent être stockées de deux manières : sous forme de données indexées accessibles via des API et d'autres outils, ou sous forme de données archivées.
 - **Consommation :** il existe de nombreuses façons d'utiliser vos logs. Les utilisateurs de la Logs Data Platform peuvent visualiser les logs en temps réel, créer des tableaux de bord, créer et exécuter des requêtes détaillées à l'aide de l'interface utilisateur ou de l'API, et également configurer des alertes.
 
-## OVHcloud Landing Zone: un guide étape par étape
+## OVHcloud Landing Zone : un guide étape par étape
 
 Pour créer une Landing Zone qui fonctionne bien, il est important d'évaluer les composants nécessaires à sa construction. La Landing Zone idéale doit être suffisamment flexible pour s'adapter à divers besoins, permettant un déploiement automatisé, agile et simple de l'architecture cible.
 
@@ -164,7 +164,7 @@ Pour créer une Landing Zone qui fonctionne bien, il est important d'évaluer le
         - Les réseaux et vRack
         - Les instances de calcul
         - Les rôles IAM
-        - Le DNS (via OVH DNS)
+        - Le DNS (via OVHcloud DNS)
         - Le Bastion Host pour l'accès SSH
         - La surveillance et les alertes centralisées
         - Le stockage d'objets partagé (pour les journaux ou les sauvegardes)
@@ -201,6 +201,6 @@ Intégrez plutôt la documentation et les mises à jour continues dans votre pro
 
 Considérez votre Landing Zone comme un produit : itérez, documentez et optimisez-la au fil du temps.
 
-## Allez plus loin
+## Aller plus loin
 
 Rejoignez notre [communauté d'utilisateurs](/links/community).

@@ -160,11 +160,11 @@ Per effettuare questa operazione, utilizza il comando:
 ```bash
 openstack --os-auth-type token token revoke <token_id>
 
-# ou 
+# o 
 
 openstack --os-auth-type token token revoke $OS_TOKEN
 ```
 
 ## Per saperne di più
 
-Unisciti alla nostra Community di utenti <https://community.ovh.com/en/>.
+Contatta la nostra [Community di utenti](/links/community).

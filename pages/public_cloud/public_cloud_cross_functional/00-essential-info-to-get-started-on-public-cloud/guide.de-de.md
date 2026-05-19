@@ -93,7 +93,7 @@ Um ein Projekt zu starten müssen Sie bei der Erstellung des Projekts unbedingt 
 
 #### Abrechnung
 
-> [!primary].
+> [!primary]
 > Speziell für Instanzen vom Typ *Virtual Machines* wird der Rechnungszähler gestartet, wenn eine Instanz den Status `ACTIVE` erreicht (im OVHcloud Kundencenter als `Aktiviert` angezeigt). Das bedeutet: Der Zeitraum, in dem sich die Instanz im Status `BUILD` befindet, wird nicht in Rechnung gestellt.
 >
 
@@ -155,4 +155,4 @@ Einer der großen Vorteile der Verwendung von Standard- und Open-Source-Technolo
 
 Wenn Sie Schulungen oder technische Unterstützung bei der Implementierung unserer Lösungen benötigen, wenden Sie sich an Ihren Vertriebsmitarbeiter oder klicken Sie auf [diesen Link](/links/professional-services), um einen Kostenvoranschlag zu erhalten und eine persönliche Analyse Ihres Projekts durch unsere Experten des Professional Services Teams anzufordern.
 
-Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.
+Treten Sie unserer [User Community](/links/community) bei.

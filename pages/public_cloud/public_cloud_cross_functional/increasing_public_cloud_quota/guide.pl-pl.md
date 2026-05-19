@@ -14,7 +14,7 @@ Aby korzystać z dodatkowych zasobów i projektów, należy zwiększyć limity.
 
 ## Wymagania początkowe
 
-- [Posiadanie ważnego](/pages/account_and_service_management/managing_billing_payments_and_services/manage-payment-methods) sposobu płatności w Panelu klienta OVHcloud.
+- [Posiadanie ważnego sposobu płatności](/pages/account_and_service_management/managing_billing_payments_and_services/manage-payment-methods) w Panelu klienta OVHcloud.
 
 ## Wskazówki
 

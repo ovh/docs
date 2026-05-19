@@ -27,7 +27,7 @@ Ao estabelecer limites de débito, garantimos que a API possa manter uma experi�
 
 ### Keystone (API de identidade OpenStack)
 
-Aplicamos limites de débito ao nível do**utilizador** OpenStack.
+Aplicamos limites de débito ao nível do **utilizador** OpenStack.
 
 Um utilizador pode efetuar **60 pedidos por minuto** antes de receber uma resposta HTTP 429.
 
@@ -103,6 +103,6 @@ Aqui estão alguns exemplos de livrarias bem conhecidas para implementar a funç
 - tenacity: <https://pypi.org/project/tenacity/>
 - backoff: <https://pypi.org/project/backoff/>
 
-# Quer mais?
+## Quer saber mais?
 
-Fale com a nossa comunidade de utilizadores em <https://community.ovh.com/en/>.
+Fale com a nossa [comunidade de utilizadores](/links/community).

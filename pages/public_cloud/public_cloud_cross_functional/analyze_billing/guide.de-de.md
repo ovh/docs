@@ -98,7 +98,7 @@ Sie können zusätzlich im Bereich `Zu erwartender Rechnungsbetrag (Schätzung)`
 
 > [!primary]
 >
-> Diese Informationen dienen lediglich der Information, da die jederzeit nach Ihren Aktionen ändern (Hinzufügen oder Löschen).
+> Diese Informationen dienen lediglich der Information, da sich diese jederzeit nach Ihren Aktionen ändern können (Hinzufügen oder Löschen).
 >
 
 ![public-cloud](images/pci-billing-information3-2021.png){.thumbnail}

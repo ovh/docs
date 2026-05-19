@@ -90,7 +90,7 @@ Cette approche présente de nombreux avantages :
 
 - les nouvelles tentatives automatiques vous permettent de récupérer des erreurs de limite de débit sans blocage ou perte de données ;
 - la désactivation exponentielle vous permet d’effectuer vos premières tentatives rapidement, tout en bénéficiant de délais plus longs en cas d’échec de vos premières tentatives ;
-- l'ajout d'un délai aléatoire évite que toutes les tentatives ne soient effecutées en même temps.
+- l'ajout d'un délai aléatoire évite que toutes les tentatives ne soient effectuées en même temps.
 
 Sachez que les demandes infructueuses ne rentrent pas dans le calcul de votre limite de débit. Par conséquent, le renvoi continu d'une demande pourrait fonctionner, mais nous pourrions modifier ce comportement à l'avenir. Nous vous recommandons de ne pas vous fier à ce mécanisme.
 

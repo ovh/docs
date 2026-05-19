@@ -22,7 +22,7 @@ La creazione di un progetto è il primo passo nella distribuzione delle [istanze
 ### Accesso allo Spazio Cliente OVHcloud
 
 - **Link diretto:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
-- **Percorso di navigazione:** `Public Cloud`{.action} > Seleziona il tuo project
+- **Percorso di navigazione:** `Public Cloud`{.action} > Seleziona il tuo progetto
 
 ---
 <!-- CP-NAV-END:publiccloud-projects -->

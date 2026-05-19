@@ -29,7 +29,7 @@ Se desejar criar mais, será necessário aumentar a quota.
 ---
 <!-- CP-NAV-END:publiccloud-projects -->
 
-No menu à esquerda, clique em `Limite e regiões`{.action} em **Parametros**.
+No menu à esquerda, clique em `Limite e regiões`{.action} em **Parâmetros**.
 
 ![Página Quota e Regiões a apresentar as quotas atuais do projeto por região](images/raisepciquota1.png){.thumbnail}
 

@@ -49,7 +49,7 @@ Il catalogo Public Cloud propone risorse a basso livello come istanze o reti pri
 Quando la risorsa proposta è "gestita", si parla spesso di una risorsa negli strati alti, già vicina all'applicazione, come un cluster di database, un cluster Kubernetes, una soluzione di training modello per l'IA...
 <br>Per "gestita" si intende il fatto che la piattaforma è sviluppata, monitorata, mantenuta (upgrade) da OVHcloud. Non dovete preoccuparvi di questa gestione e approfittate direttamente del servizio.
 
-Queste risorse sono disponibili nei diversi datacenter localizzati nel mondo OVHcloud offre servizi Public Cloud in Europa, America del Nord, Asia e Oceania.
+Queste risorse sono disponibili nei diversi datacenter localizzati nel mondo. OVHcloud offre servizi Public Cloud in Europa, America del Nord, Asia e Oceania.
 <br>È possibile avviare una risorsa in ciascuno di questi punti selezionando semplicemente la localizzazione desiderata.
 
 ![Public Cloud geolocation](images/geolocation.png){.thumbnail}

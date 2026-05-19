@@ -144,7 +144,7 @@ curl -X GET $endpoint/photos/fullsize/ovh-summit-2014-backstage-DS.jpg -H "X-Aut
 ```
 
 - -X GET: método HTTP GET
-- endpoint/photos/fullsize/ovh-summit-2014-backstage-DS.jpg endereço do objeto
+- $endpoint/photos/fullsize/ovh-summit-2014-backstage-DS.jpg: endereço do objeto
 - -H "X-Auth-Token: $token": elemento de autenticação
 - -I: opção curl para recuperar apenas os metadados
 

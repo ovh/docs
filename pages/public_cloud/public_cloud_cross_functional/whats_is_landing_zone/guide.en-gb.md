@@ -24,7 +24,7 @@ Advantages of a landing zone:
 
 Without a dedicated landing zone, organisations can face configuration inconsistencies, security breaches, and inefficient resource management.
 
-See Public Cloud Landing Zone Reference of architecture in [this guide](/pages/public_cloud/public_cloud_cross_functional/landing_zone_migration).
+See Public Cloud Landing Zone Reference Architecture in [this guide](/pages/public_cloud/public_cloud_cross_functional/landing_zone_migration).
 
 **The five OVHcloud pillars:**
 
@@ -184,7 +184,7 @@ To create a landing zone that works well, it’s important to assess the compone
     - Use Object Storage with secure access policies.
     - Integrate vulnerability scanning into CI/CD.
 
-For guidance on building your Landing Zone to OVHcloud, check our [building documentation](/pages/public_cloud/public_cloud_cross_functional/landing_zone_migration).
+For guidance on building your Landing Zone on OVHcloud, check our [building documentation](/pages/public_cloud/public_cloud_cross_functional/landing_zone_migration).
 
 Avoid thinking of your landing zone as something you can just set up and then ignore. 
 Rather, include documentation and ongoing upgrades within your operational process.

@@ -67,4 +67,4 @@ Po wprowadzeniu i potwierdzeniu hasła, Twój projekt wejdzie w fazę usuwania.
 
 [Utwórz pierwszą instancję Public Cloud i połącz się z nią](/pages/public_cloud/compute/public-cloud-first-steps)
 
-Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.
+Dołącz do [grona naszych użytkowników](/links/community).

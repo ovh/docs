@@ -12,7 +12,7 @@ updated: 2023-06-23
 
 Ein Durchsatzlimit ist eine Einschränkung, die von der API auf die Anzahl der Anforderungen angewendet wird, die ein Client über einen bestimmten Zeitraum an die API stellen kann.
 
-## Warum Nuzungsbeschränkungen?
+## Warum Nutzungsbeschränkungen?
 
 Durchsatzlimits sind gängige Praxis für APIs. Sie werden aus verschiedenen Gründen eingerichtet:
 
@@ -105,4 +105,4 @@ Im Folgenden finden Sie Beispiele für etablierte Bibliotheken zur Implementieru
 
 ## Weiterführende Informationen
 
-Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com>.
+Treten Sie unserer [User Community](/links/community) bei.

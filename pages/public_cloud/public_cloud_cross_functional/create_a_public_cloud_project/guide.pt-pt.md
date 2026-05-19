@@ -31,7 +31,7 @@ A criação de um projeto é a primeira etapa na implantação de [instâncias P
 
 ### Criação do projeto
 
-Após ter tomado conhecimento, valide os termos dos contratos selecionando a casa correspondente e clique em `Descobrir o universo Public Cloud`{.action}.
+Após ter tomado conhecimento, valide os termos dos contratos selecionando a caixa correspondente e clique em `Descobrir o universo Public Cloud`{.action}.
 
 ![criação de projeto](images/firstproject2024.png){.thumbnail width="400"}
 

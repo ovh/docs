@@ -50,7 +50,7 @@ Niniejszy przewodnik wyjaśnia, jak emitować token OpenStack, używać go do wy
 >
 > Więcej informacji o tym narzędziu znajdziesz w [dokumentacji OpenStack CLI](https://docs.openstack.org/python-openstackclient/latest/).
 
-Można to uzyskać z interfejsu zarządzania pakietami apt (dla dystrybucji opartych na Debianie) lub ium (dla dystrybucji opartych na RHEL/CentOS):
+Można to uzyskać z interfejsu zarządzania pakietami apt (dla dystrybucji opartych na Debianie) lub yum (dla dystrybucji opartych na RHEL/CentOS):
 
 ```bash
 # Dystrybucje Debian 
@@ -167,4 +167,4 @@ openstack --os-auth-type token token revoke $OS_TOKEN
 
 ## Sprawdź również
 
-Dołącz do społeczności naszych użytkowników na <https://community.ovh.com/en/>.
+Dołącz do [grona naszych użytkowników](/links/community).

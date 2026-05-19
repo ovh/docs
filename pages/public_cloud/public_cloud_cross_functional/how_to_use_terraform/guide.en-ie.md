@@ -428,7 +428,7 @@ variable "region" {
 
 > [!primary]
 >
-> This instance creation is linked to the `openstack_compute_keypair_v2.test_keypair` resource you created previsouly in this guide.
+> This instance creation is linked to the `openstack_compute_keypair_v2.test_keypair` resource you created previously in this guide.
 
 Check the changes you need to make to your infrastructure using the following command:
 

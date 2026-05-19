@@ -68,7 +68,7 @@ Wenn die CLIs schon installiert sind, überprüfen Sie deren Funktion wie folgt:
 
 Die *OpenRC*-Datei ist nicht dazu vorgesehen, unter Windows geladen zu werden.
 
-Für das Laden der Umgebungsvariablen gitb es zwei Lösungen:
+Für das Laden der Umgebungsvariablen gibt es zwei Lösungen:
 
 - Die Datei kann mittels entsprechender Änderungen angepasst werden. Sie können **export** durch **set** ersetzen:
 

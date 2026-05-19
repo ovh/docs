@@ -57,4 +57,4 @@ Nach Klick auf den Button wird eine E-Mail an Sie gesendet, in der Sie aufgeford
 
 [Die ersten Schritte mit Ihrer Public Cloud Instanz](/pages/public_cloud/compute/public-cloud-first-steps)
 
-Für den Austausch mit unserer User Community gehen Sie auf [https://community.ovh.com/en](https://community.ovh.com/en/).
+Treten Sie unserer [User Community](/links/community) bei.

@@ -86,7 +86,7 @@ A continuación, haga clic en el botón `Change`{.action} para confirmar el camb
 
 ![Configuración de la contraseña](images/3_H_set_new_passord.png){.thumbnail}
 
-Tenga en cuenta que, al cambiar la contraseña de una cuenta de usuario, se cancela inmediatamente lla contraseña anteriormente utilizada.
+Tenga en cuenta que, al cambiar la contraseña de una cuenta de usuario, se cancela inmediatamente la contraseña anteriormente utilizada.
 
 ### Eliminación del usuario OpenStack
 

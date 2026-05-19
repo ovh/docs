@@ -167,4 +167,4 @@ openstack --os-auth-type token token revoke $OS_TOKEN
 
 ## Más información
 
-Únase a nuestra comunidad de usuarios en <https://community.ovh.com/en/>.
+Únase a nuestra [comunidad de usuarios](/links/community).

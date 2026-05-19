@@ -186,9 +186,9 @@ Ces protections, associées à celles que vous pouvez mettre en place sur vos se
 
 ///
 
-/// details | Comment vérifier si mon instance est vulnérable a la faille MDS ?
+/// details | Comment vérifier si mon instance est vulnérable à la faille MDS ?
 
-La vulnérabilité à la [faille MDS](https://www.kernel.org/doc/html/latest/admin-guide/hw-vuln/mds.html) peut etre vérifiée avec la commande suivante:
+La vulnérabilité à la [faille MDS](https://www.kernel.org/doc/html/latest/admin-guide/hw-vuln/mds.html) peut être vérifiée avec la commande suivante:
 
 ```bash
 cat /sys/devices/system/cpu/vulnerabilities/mds
@@ -204,15 +204,15 @@ openstack server reboot --hard $serverID
 
 ///
 
-/// details | Mon instance est-elle toujours vulnérable a la faille SSBD ?
+/// details | Mon instance est-elle toujours vulnérable à la faille SSBD ?
 
-La vulnérabilité à la [faille SSBD](https://www.kernel.org/doc/html/latest/userspace-api/spec_ctrl.html) peut etre vérifiée avec la commande suivante :
+La vulnérabilité à la [faille SSBD](https://www.kernel.org/doc/html/latest/userspace-api/spec_ctrl.html) peut être vérifiée avec la commande suivante :
 
 ```bash
 cat /sys/devices/system/cpu/vulnerabilities/ssbd
 ```
 
-Même si le résultat est `Vulnerable`, votre instance est tout de meme protegée face a cette faille.
+Même si le résultat est `Vulnerable`, votre instance est tout de même protégée face à cette faille.
 
 En effet, le *flag CPU SSBD* n'est pas disponible pour votre instance car il peut provoquer des instabilités sur certains OS.
 

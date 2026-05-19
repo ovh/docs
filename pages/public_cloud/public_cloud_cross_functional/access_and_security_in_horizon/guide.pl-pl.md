@@ -37,7 +37,7 @@ Kliknij przycisk `Download OpenStack RC File`{.action}, aby otworzyć rozwijane 
 
 - **Key Pairs** (w `Projekcie`{.action} i `Compute`{.action})
 
-W tej sekcji możesz przechowywać pary kluczy SSH i zarządzać nimi. Możesz po prostu utworzyć i dodać klucz publiczny i prywatny klikając przycisk `Create Key Au Pair`{.action}.
+W tej sekcji możesz przechowywać pary kluczy SSH i zarządzać nimi. Możesz po prostu utworzyć i dodać klucz publiczny i prywatny klikając przycisk `Create Key Pair`{.action}.
 
 ![horizon - klucze SSH](images/key_pairs.png){.thumbnail}
 
@@ -45,7 +45,7 @@ Jeśli chcesz dodać istniejący klucz, kliknij przycisk `Import Public Key`{.ac
 
 Ta część interfejsu zawiera podstawowe instrukcje. Więcej informacji na temat kluczy SSH znajdziesz w [tym przewodniku](/pages/public_cloud/compute/creating-ssh-keys-pci).
 
-- **Security Groups** (w `ramach projektu`{.action}, a następnie `Network`{.action})
+- **Security Groups** (w `Project`{.action} / `Network`{.action})
 
 Grupy zabezpieczeń to zbiory reguł filtrowania stosowanych do interfejsów sieciowych. Można z nich korzystać, aby ograniczyć dostęp do instancji do adresów IP i portów.
 

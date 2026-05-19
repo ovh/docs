@@ -129,7 +129,7 @@ export OS_TOKEN=$(openstack token issue -f value -c id)
 
 ### Schritt 3: Unnötige Variable löschen
 
-Um den Token für Aktionen mit Ihrem Benutzer zu verwenden, muss die Variable `OS_USER_DOMAIN_NAME` enfernt werden.
+Um den Token für Aktionen mit Ihrem Benutzer zu verwenden, muss die Variable `OS_USER_DOMAIN_NAME` entfernt werden.
 
 Führen Sie hierzu folgenden Befehl aus:
 

@@ -32,7 +32,7 @@ Una volta eliminato un progetto, le risorse in esso contenute vengono definitiva
 ### Accesso allo Spazio Cliente OVHcloud
 
 - **Link diretto:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
-- **Percorso di navigazione:** `Public Cloud`{.action} > Seleziona il tuo project
+- **Percorso di navigazione:** `Public Cloud`{.action} > Seleziona il tuo progetto
 
 ---
 <!-- CP-NAV-END:publiccloud-projects -->
@@ -66,4 +66,4 @@ Una volta inserita e confermata la password, il progetto entrerà nella fase di 
 
 [Creare una prima istanza Public Cloud e connettersi](/pages/public_cloud/compute/public-cloud-first-steps)
 
-Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.
+Contatta la nostra [Community di utenti](/links/community).

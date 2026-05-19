@@ -135,7 +135,7 @@ En la práctica, a continuación le ofrecemos algunas guías que le ayudarán en
 |[Crear la primera instancia](/pages/public_cloud/compute/public-cloud-first-steps)|Esta es la primera guía práctica para iniciar un servidor cloud desde el área de cliente de OVHcloud.|
 |[Uso de una llave SSH](/pages/public_cloud/compute/creating-ssh-keys-pci)| Para conectarse a una instancia Linux, necesitará utilizar una conexión SSH en esta guía.|
 |[Configuración de la red privada](/pages/public_cloud/public_cloud_network_services/getting-started-07-creating-vrack)|En OVHcloud, la tecnología vRack utiliza las redes privadas. Esta guía le ayudará a realizar esta operación.|
-|[Asociar un disco adicional a una instancia](/pages/public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance)|Esta guía explica cómo añadir almacenamiento adicional a la primera instancia de OVH.|
+|[Asociar un disco adicional a una instancia](/pages/public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance)|Esta guía explica cómo añadir almacenamiento adicional a la primera instancia de OVHcloud.|
 |[Conectarse a Horizon](/pages/public_cloud/public_cloud_cross_functional/introducing_horizon)|La interfaz Horizon de OpenStack permite realizar determinadas acciones avanzadas. Así es como conectarse a ella.|
 |[Crear un cluster Kubernetes](/pages/public_cloud/containers_orchestration/managed_kubernetes/creating-a-cluster) (EN)|Esta guía le ayudará paso a paso a la creación de su primer cluster Kubernetes.|
 |[Configurar una Additional IP](/pages/public_cloud/public_cloud_network_services/getting-started-04-configure-additional-ip-to-instance)|Las Additional IP permiten cambiar el tráfico de una instancia a otra. Esta guía explica cómo configurar esta opción.|

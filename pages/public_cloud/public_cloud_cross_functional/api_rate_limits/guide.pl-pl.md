@@ -103,6 +103,6 @@ Oto przykłady znanych bibliotek implementujących funkcję *retry backoff* w py
 - tenacity: <https://pypi.org/project/tenacity/>
 - backoff: <https://pypi.org/project/backoff/>
 
-## Sprawdź
+## Sprawdź również
 
-Przyłącz się do społeczności naszych użytkowników na <https://community.ovh.com/en/>.
+Dołącz do [grona naszych użytkowników](/links/community).

@@ -67,4 +67,4 @@ Uma vez introduzida e confirmada a sua senha, o seu projecto entrará na fase de
 
 [Criar uma primeira instância Public Cloud e ligar-se a ela](/pages/public_cloud/compute/public-cloud-first-steps)
 
-Fale com a nossa comunidade de utilizadores em <https://community.ovh.com/en/>.
+Fale com a nossa [comunidade de utilizadores](/links/community).

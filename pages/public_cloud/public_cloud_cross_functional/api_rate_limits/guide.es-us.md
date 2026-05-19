@@ -105,4 +105,4 @@ Estos son algunos ejemplos de librerías conocidas por implementar la función *
 
 ## Más información
 
-Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.
+Interactúe con nuestra [comunidad de usuarios](/links/community).

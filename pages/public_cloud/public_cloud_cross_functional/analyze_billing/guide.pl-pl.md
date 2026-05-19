@@ -121,9 +121,7 @@ Każdy model instancji jest dostępny w dwóch trybach rozliczenia: godzinowym l
 
 > [!warning]
 >
-> Fakturowanie instancji ustaje, kiedy zostaje ona ostatecznie usunięta.
-> na stałe. Jeśli instancja ma status taki jak "zatrzymana" lub "wstrzymana", licznik faktur będzie kontynuowany.
-> do działania, ponieważ instancja nie została usunięta.
+> Fakturowanie instancji ustaje, kiedy zostaje ona ostatecznie usunięta na stałe. Jeśli instancja ma status taki jak "zatrzymana" lub "wstrzymana", licznik faktur będzie kontynuowany do działania, ponieważ instancja nie została usunięta.
 > W przypadku obydwu modeli rozliczenia, zostaje zafakturowana rozpoczęta jednostka czasu.
 >
 

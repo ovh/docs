@@ -96,7 +96,7 @@ Zapoznaj się z przewodnikiem [Zmiana klucza SSH w przypadku utraty](/pages/publ
 
 ///
 
-### Kopii zapasowych
+### Kopie zapasowe
 
 /// details | Czy można wykonać kopię zapasową serwerów Public Cloud?
 

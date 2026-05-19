@@ -156,7 +156,7 @@ brew install openstackclient
 Para acceder a las herramientas de ayuda, ejecute el siguiente comando:
 
 ```sh
-openstack —-help
+openstack --help
 nova help
 ```
 
@@ -164,4 +164,4 @@ nova help
 
 [Cargar las variables de entorno necesarias para OpenStack](/pages/public_cloud/public_cloud_cross_functional/loading_openstack_environment_variables).
 
-Únase a nuestra comunidad de usuarios en <https://community.ovh.com/en/>.
+Únase a nuestra [comunidad de usuarios](/links/community).

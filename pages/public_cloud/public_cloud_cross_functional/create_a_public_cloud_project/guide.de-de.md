@@ -31,7 +31,7 @@ Das Erstellen eines Projekts ist die Voraussetzung, um [Public Cloud Instanzen](
 
 ### Erstellung des Projekts
 
-Nachdem Sie die Vertragsbedingungen gelesen haben, bestätigen Sie diese, indem Sie das entsprechende Kästchen ankreuzen und auf `Das Public-Cloud-Universun entdecken`{.action} klicken.
+Nachdem Sie die Vertragsbedingungen gelesen haben, bestätigen Sie diese, indem Sie das entsprechende Kästchen ankreuzen und auf `Das Public-Cloud-Universum entdecken`{.action} klicken.
 
 ![Projekt erstellen](images/firstproject2024.png){.thumbnail width="400"}
 
@@ -83,4 +83,4 @@ Wenn Sie im `Discovery-Modus` auf `Projekt aktivieren`{.action} klicken und ein 
 
 Wenn Sie Schulungen oder technische Unterstützung bei der Implementierung unserer Lösungen benötigen, wenden Sie sich an Ihren Vertriebsmitarbeiter oder klicken Sie auf [diesen Link](/links/professional-services), um einen Kostenvoranschlag zu erhalten und eine persönliche Analyse Ihres Projekts durch unsere Experten des Professional Services Teams anzufordern.
 
-Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.
+Treten Sie unserer [User Community](/links/community) bei.

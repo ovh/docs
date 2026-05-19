@@ -41,7 +41,7 @@ Esta sección permite almacenar y gestionar pares de claves SSH. Simplemente pue
 
 ![horizon - llaves SSH](images/key_pairs.png){.thumbnail}
 
-Si desea añadir una llave preexistente, haga clic en `Importar Public Key`{.action}. Se abrirá una ventana en la que podrá introducir una clave o seleccionar un archivo de claves.
+Si desea añadir una llave preexistente, haga clic en `Import Public Key`{.action}. Se abrirá una ventana en la que podrá introducir una clave o seleccionar un archivo de claves.
 
 Esta sección de la interfaz contiene instrucciones básicas. Para más información sobre las llaves SSH, consulte [esta guía](/pages/public_cloud/compute/creating-ssh-keys-pci).
 

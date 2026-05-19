@@ -100,7 +100,7 @@ Example: During the month, you used 1 d2-8 instance for the whole month, and 3 b
 #### Quota management
 
 You may have to deal with the quota issue.
-<br>The Public Cloud quota defines the maximum number of resources you can start. It depends on certain settings (fore example: age of account, previous invoices).
+<br>The Public Cloud quota defines the maximum number of resources you can start. It depends on certain settings (for example: age of account, previous invoices).
 <br>These quotas are allocated by region (in the OpenStack sense). As a result, you may reach the maximum possible resources for your project, and you may need to [increase these quotas](/pages/public_cloud/public_cloud_cross_functional/increasing_public_cloud_quota).
 
 ![Public Cloud quota](images/quota.png){.thumbnail}

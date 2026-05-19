@@ -39,7 +39,7 @@ Ce guide a pour objectif de fournir une méthode claire et détaillée pour la c
 - Un [projet Public Cloud OVHcloud](/links/public-cloud/public-cloud) dans votre compte OVHcloud.
 - Avoir accès à l'[API OVHcloud](/links/api) (créez vos identifiants en consultant [ce guide](/pages/manage_and_operate/api/first-steps)).
 - Être familier de l'utilisation de [Terraform](/pages/public_cloud/public_cloud_cross_functional/how_to_use_terraform) si vous souhaitez l'utiliser.
-- Connaitre les principes d'un [Savings Plan](/links/public-cloud/savings-plan)
+- Connaître les principes d'un [Savings Plan](/links/public-cloud/savings-plan)
 
 ## En pratique
 
@@ -117,7 +117,7 @@ Vous pouvez créer votre Savings Plan pour le type de ressource voulue en suivan
 >>
 >> ![Savings Plan update menu](images/savings_plan_update_menu.png){.thumbnail}
 >>
->> Si vous souhaitez modifier le nom d'unn Savings Plan, cliquez sur le bouton `Modifier le nom`{.action}, modifiez-le puis cliquez sur `Comfirmer`{.action}.
+>> Si vous souhaitez modifier le nom d'un Savings Plan, cliquez sur le bouton `Modifier le nom`{.action}, modifiez-le puis cliquez sur `Confirmer`{.action}.
 >>
 >> ![Savings Plan update name](images/savings_plan_update_name.png){.thumbnail}
 >>

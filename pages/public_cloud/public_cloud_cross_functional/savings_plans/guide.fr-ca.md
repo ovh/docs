@@ -49,7 +49,7 @@ Voici quelques scénarios pour mieux comprendre ce fonctionnement :
 > 
 > Précisions sur le terme « **ressources simultanées** » :
 >
-> Un Savings Plan couvre un certain nombre de ressources actives simultanément. Par exemple, pour un Savings Plan de 1 ressource, si un client démarre une ressource à 10h05 et l'efface à 10h10, puis crée une autre ressource à 10h17 et l'efface à 10h30, même s'il a démarré et effacé deux ressources, seules les ressources qui ont été allumées en même temps sont comptabilisées. Dans ce cas, une seule ressource est active de manière simulatnée, de sorte que le Savings plan couvre les deux ressources sans facturation supplémentaire. Il en va de même si les ressources sont utilisées à différents moments du mois (par exemple, du 1er au 10, puis du 15 au 30), sans pour autant qu'elles ne soient actives simultanément.
+> Un Savings Plan couvre un certain nombre de ressources actives simultanément. Par exemple, pour un Savings Plan de 1 ressource, si un client démarre une ressource à 10h05 et l'efface à 10h10, puis crée une autre ressource à 10h17 et l'efface à 10h30, même s'il a démarré et effacé deux ressources, seules les ressources qui ont été allumées en même temps sont comptabilisées. Dans ce cas, une seule ressource est active de manière simultanée, de sorte que le Savings plan couvre les deux ressources sans facturation supplémentaire. Il en va de même si les ressources sont utilisées à différents moments du mois (par exemple, du 1er au 10, puis du 15 au 30), sans pour autant qu'elles ne soient actives simultanément.
 >
 
 ### Fonctionnement des Savings Plans pour les instances
@@ -67,7 +67,7 @@ Les Savings Plans pour les instances sont basés sur l'engagement d'une quantit�
 
 Les Savings Plans pour Managed Rancher Service reposent sur l'engagement d’une quantité de vCPUs sur une durée définie, ce qui permet de réaliser des économies sur le service Managed Rancher. Ce modèle offre une flexibilité accrue, car les vCPUs engagés peuvent être partagés entre tous vos environnements Rancher, optimisant la facturation des ressources utilisées d'une manière flexible et évolutive.
 
-En souscrivant à un Savings PLan pour Rancher, vous vous engagez à utiliser une certaine quantité de vCPU, qui est ensuite répartie entre vos clusters Rancher, ce qui garantit la rentabilité même si votre utilisation fluctue au fil du temps.
+En souscrivant à un Savings Plan pour Rancher, vous vous engagez à utiliser une certaine quantité de vCPU, qui est ensuite répartie entre vos clusters Rancher, ce qui garantit la rentabilité même si votre utilisation fluctue au fil du temps.
 
 > [!primary]
 >
@@ -92,7 +92,7 @@ Ce tableau résume l'éligibilité des services OVHcloud :
 
 > [!warning]
 >
-> Les Local Zones et les régions aux Etats-Unis ne sont pas éligibles aux Savings Plans.
+> Les Local Zones et les régions aux États-Unis ne sont pas éligibles aux Savings Plans.
 
 ### Gestion automatisée de l’infrastructure avec les Savings Plans
 

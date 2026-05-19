@@ -11,7 +11,7 @@ Le Public Cloud OVHcloud est un environnement rassemblant un grand nombre de pro
 La mise à disposition est quasiment instantanée et la facturation est directement adaptée à votre usage, ce qui apporte simplicité et flexibilité à vos pratiques.
 
 Ce guide vous permet de découvrir les notions essentielles pour une bonne exploitation des produits.
-<br>Nous vous y présentons d'abord une [approche globale du Public Cloud](#global-approach) et quelques notions générales, puis une [approche concrète](#concrete-approach) avec les avantages fournis par le Public Cloud, ansi que les premières étapes de démarrage.
+<br>Nous vous y présentons d'abord une [approche globale du Public Cloud](#global-approach) et quelques notions générales, puis une [approche concrète](#concrete-approach) avec les avantages fournis par le Public Cloud, ainsi que les premières étapes de démarrage.
 <br>Enfin, nous vous proposons des ressources pour [aller plus loin](#gofurther).
 
 Si vous êtes déjà familier de ces concepts, vous pouvez poursuivre la découverte du Public Cloud OVHcloud en parcourant les guides suivants :
@@ -148,6 +148,6 @@ Un des gros avantages d'utiliser des technologies standards et ouvertes, comme O
 |[Kubernetes CLI Overview](https://kubernetes.io/docs/reference/kubectl/overview/) (EN)| La documentation de l'incontournable client en ligne de commande 'kubctl'.|
 |[Kubernetes APIs Overview](https://kubernetes.io/docs/reference/using-api/) (EN)| La documentation de l'API de Kubernetes, utile pour avoir une vue d'ensemble des possibilités.|
 
-Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](/links/professional-services) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services. 
+Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en œuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](/links/professional-services) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services. 
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).

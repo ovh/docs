@@ -192,7 +192,7 @@ Each Local Zone operates as a single availability zone with a limited set of ser
 
 - **Reduced latency:** Local Zones ensure fast response times to users close to them, ideal for real-time applications such as online gaming or video conferencing.
 - **Local compliance:** Data can be processed and stored in specific locations, making it easier to comply with location and regulatory requirements.
-- **Regional extension:** Local Zones can be used as an extension of the 1-AZ or 3-AZ regions to complete critical workloads locally, while benefiting from additionnal services available in the regions.
+- **Regional extension:** Local Zones can be used as an extension of the 1-AZ or 3-AZ regions to complete critical workloads locally, while benefiting from additional services available in the regions.
 
 #### Limits
 

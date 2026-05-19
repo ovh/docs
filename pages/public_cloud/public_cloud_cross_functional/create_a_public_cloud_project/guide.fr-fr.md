@@ -32,7 +32,7 @@ Après en avoir pris connaissance, validez les termes des contrats en cochant la
 ![création de projet](images/firstproject2024.png){.thumbnail width="400"}
 
 - Si vous n'avez pas encore de moyen de paiement valide dans votre compte OVHcloud, le processus de création du projet Public Cloud commence. Votre projet sera alors créé en [Mode découverte](#discovery).
-- Si vous avez déjà renseigné un moyen de paiement dans votre compte OVHcloud, vous devez d'abord nommer votre projet Public Cloud puis sélectionner votre moyen de paiment.
+- Si vous avez déjà renseigné un moyen de paiement dans votre compte OVHcloud, vous devez d'abord nommer votre projet Public Cloud puis sélectionner votre moyen de paiement.
 
 ![création de projet](images/project-creation.png){.thumbnail width="400"}
 
@@ -77,6 +77,6 @@ Lorsque vous cliquez sur `Activer le projet`{.action} depuis le `Mode découvert
 - [Supprimer un projet Public Cloud](/pages/public_cloud/public_cloud_cross_functional/delete_a_project)
 - [Informations concernant le mode de facturation cloud](/pages/public_cloud/public_cloud_cross_functional/analyze_billing)
 
-Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](/links/professional-services) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
+Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en œuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](/links/professional-services) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).

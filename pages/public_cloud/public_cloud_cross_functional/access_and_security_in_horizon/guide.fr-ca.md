@@ -7,7 +7,7 @@ updated: 2021-05-26
 ## Objectif
 
 L'interface OpenStack Horizon fournit des options pour configurer l'accès à vos instances et à d'autres services.<br>
-Vous pouvez par exemple configurer des groupes de sécurité pour filtrer les connexions entrantes et sortantes, ou bien encore télécharger le fichier OpenRC contenantvos identifiants afin d'utiliser les API OpenStack.
+Vous pouvez par exemple configurer des groupes de sécurité pour filtrer les connexions entrantes et sortantes, ou bien encore télécharger le fichier OpenRC contenant vos identifiants afin d'utiliser les API OpenStack.
 
 **Découvrez comment gérer et sécuriser l'accès à vos instances**
 

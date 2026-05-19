@@ -68,7 +68,7 @@ True
 
 #### Für ein neues privates Netzwerk:
 
-Die Aktualisierungen auf die Stein-Version in den OpenStack-Regionen und auf die neue Version von Open vSwitch werden zum 6. September 2022 durchgeführt ([Private network port default configuration change](https://public-cloud.status-ovhcloud.com/incidents/z6qq4bcvsn11)). Damit wird der Parameter "port pecurity" in jedem neu erstellten privaten Netzwerk standardmäßig auf "True" festgelegt.
+Die Aktualisierungen auf die Stein-Version in den OpenStack-Regionen und auf die neue Version von Open vSwitch werden zum 6. September 2022 durchgeführt ([Private network port default configuration change](https://public-cloud.status-ovhcloud.com/incidents/z6qq4bcvsn11)). Damit wird der Parameter "port security" in jedem neu erstellten privaten Netzwerk standardmäßig auf "True" festgelegt.
 
 Damit wird sichergestellt, dass die Standardeinstellung "True" als Richtlinie konsistent mit Vanilla-Deployments von OpenStack ist.
 

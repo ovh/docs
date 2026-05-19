@@ -72,7 +72,7 @@ Although OVHcloud’s Public Cloud is based on OpenStack, it also offers proprie
 
 You can build your Terraform/OpenTofu stacks using providers for [OpenStack](https://registry.terraform.io/providers/terraform-provider-openstack/openstack/latest/docs), OVHcloud, or S3-compatible services, depending on the resources you want to manage.
 
-You will find our guide "[Using Terraform with OVHcloud](/pages/manage_and_operate/terraform/terraform-at-ovhcloud)" some examples to help you get started with creating your Terraform/OpenTofu configurations for your landing zone and cloud infrastructure.
+You will find in our guide "[Using Terraform with OVHcloud](/pages/manage_and_operate/terraform/terraform-at-ovhcloud)" some examples to help you get started with creating your Terraform/OpenTofu configurations for your landing zone and cloud infrastructure.
 
 ### 4. Configure cloud network architecture in your Terraform stacks
 
@@ -131,7 +131,7 @@ Once your infrastructure is deployed, two possibilities:
 - Use Ansible playbooks to automatically install and configure your applications.
 - Set up your services manually on each instance.
 
-Be sure to use the same applications versions as in your source environment to ensure compatibility with your existing data.
+Be sure to use the same application versions as in your source environment to ensure compatibility with your existing data.
 
 Once configuration is complete, migrate your data using tools like rsync, scp, or database utilities, and validate that everything is working as expected.
 
@@ -165,7 +165,7 @@ After migrating, update all your applications to use the new endpoints, includin
 
 Make sure every connection points to the correct OVHcloud resources.
 
-Then, thoroughly test your entire workflow and run all integration tests to verify that your applications works correctly in the new environment.
+Then, thoroughly test your entire workflow and run all integration tests to verify that your applications work correctly in the new environment.
 
 ### 10. Update DNS records
 

@@ -35,11 +35,11 @@ De la même manière, si un token doit être révoqué avant sa date d'expiratio
 
 Pour plus d'information, consultez la documentation d'[OpenStack de l'API](https://docs.openstack.org/keystone/train/api_curl_examples.html).
 
-### Operations manuelles
+### Opérations manuelles
 
 Les opérations qui suivent peuvent être effectuées manuellement, elles sont généralement utilisées à des fins pédagogiques ou de dépannage.
 
-Il est nécessaire de charger l'environnement à l'aide du fichier openRC. Pour cela, nous vous recommandons de télécharger et utiliser le fichier openrc.sh que vous trouverez dans l'interface Horizon. Ce dernier disposera de l’ensemble des variables d’environnement nécessaires â la construction des commandes qui vont suivre.
+Il est nécessaire de charger l'environnement à l'aide du fichier openRC. Pour cela, nous vous recommandons de télécharger et utiliser le fichier openrc.sh que vous trouverez dans l'interface Horizon. Ce dernier disposera de l’ensemble des variables d’environnement nécessaires à la construction des commandes qui vont suivre.
 
 Pour vous connecter à Horizon et télécharger le fichier, consultez [ce guide](/pages/public_cloud/public_cloud_cross_functional/introducing_horizon).
 

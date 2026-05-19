@@ -24,7 +24,7 @@ updated: 2024-12-10
 
 ### Principio global
 
-La mayoría de las solicitudes presentadas a las API de OpenStack deben responder a un mecanismo de autorización. Este mecanismo funciona mediante la obtención de token (jeon en francés) y validación de este. A continuación explicamos cómo funciona una llamada desde la autenticación hasta la ejecución de la llamada.
+La mayoría de las solicitudes presentadas a las API de OpenStack deben responder a un mecanismo de autorización. Este mecanismo funciona mediante la obtención de token (jeton en francés) y validación de este. A continuación explicamos cómo funciona una llamada desde la autenticación hasta la ejecución de la llamada.
 
 - Solicitud de creación de token en el punto de autenticación con los credentials
 - Consulta sobre el punto del servicio deseado (almacenamiento, compute, network...) proporcionando el token como parámetro
@@ -145,7 +145,7 @@ curl -X GET $endpoint/photos/fullsize/ovh-summit-2014-backstage-DS.jpg -H "X-Aut
 
 - -X GET: Método HTTP GET
 - $endpoint/photos/fullsize/ovh-summit-2014-backstage-DS.jpg: dirección del objeto
-- -H "X-Auth-Token": $token": elemento de autenticación
+- -H "X-Auth-Token: $token": elemento de autenticación
 - -I: opción curl para obtener solo las metadatas
 
 La respuesta es:
