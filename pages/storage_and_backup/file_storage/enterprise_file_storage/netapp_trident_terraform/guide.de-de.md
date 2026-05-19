@@ -1,74 +1,74 @@
 ---
-title: How to deploy an EFS stack for Trident CSI with Terraform
-excerpt: Learn how to use a Terraform module to deploy the infrastructure stack for NetApp Trident CSI with Enterprise File Storage and Managed Kubernetes Service
+title: Einen EFS-Stack für Trident CSI mit Terraform bereitstellen
+excerpt: Erfahren Sie, wie Sie mit einem Terraform-Modul den Infrastruktur-Stack für NetApp Trident CSI mit Enterprise File Storage und Managed Kubernetes Service bereitstellen
 updated: 2026-05-19
 ---
 
-## Objective
+## Ziel
 
-This guide explains how to use an OVHcloud Terraform module called [efs-trident](https://github.com/ovh/terraform-ovh-efs/tree/main/modules/efs-trident) to provision the complete infrastructure stack required for using [NetApp Trident CSI](https://docs.netapp.com/us-en/trident/index.html) with Enterprise File Storage (EFS).
+Diese Anleitung erklärt, wie Sie ein OVHcloud Terraform-Modul mit dem Namen [efs-trident](https://github.com/ovh/terraform-ovh-efs/tree/main/modules/efs-trident) verwenden, um den vollständigen Infrastruktur-Stack bereitzustellen, der für die Verwendung von [NetApp Trident CSI](https://docs.netapp.com/us-en/trident/index.html) mit Enterprise File Storage (EFS) erforderlich ist.
 
-The module automates the creation of:
+Das Modul automatisiert die Erstellung von:
 
-- An **Enterprise File Storage** (EFS) service
-- A **Managed Kubernetes Service** (MKS) cluster
-- A **vRack** and a **vRack Services** and their configuration
-- A **Public Cloud Project** with private network configuration
-- An **IAM policy** and **OAuth2 credentials** for Trident CSI storage backend authentication
-- A network **Gateway** for MKS cluster nodes connectivity to the OVHcloud API
+- Einem **Enterprise File Storage** (EFS) Dienst.
+- Einem **Managed Kubernetes Service** (MKS) Cluster.
+- Ein **vRack** und ein **vRack Services** sowie deren Konfiguration.
+- Einem **Public Cloud Projekt** mit privater Netzwerkkonfiguration.
+- Einer **IAM-Richtlinie** und **OAuth2-Anmeldedaten** für die Authentifizierung des Trident CSI Storage-Backends.
+- Einem Netzwerk-**Gateway** für die Anbindung der MKS-Cluster-Knoten an die OVHcloud API.
 
-**Learn how to deploy and configure OVHcloud infrastructure with Terraform to provision EFS volumes with NetApp Trident CSI.**
+**Erfahren Sie, wie Sie die OVHcloud Infrastruktur mit Terraform bereitstellen und konfigurieren, um EFS-Volumes mit NetApp Trident CSI bereitzustellen.**
 
-## Requirements
+## Voraussetzungen
 
-- [Terraform >= 1.7.0](https://www.terraform.io/)
-- [OVHcloud Terraform provider >= v2.12.0](https://github.com/ovh/terraform-provider-ovh/releases/)
-- Access to the [OVHcloud API](/links/api)
-- An OVHcloud account with sufficient permissions to create the required resources
+- Sie haben [Terraform >= 1.7.0](https://www.terraform.io/) installiert.
+- Sie haben den [OVHcloud Terraform Provider >= v2.12.0](https://github.com/ovh/terraform-provider-ovh/releases/) installiert.
+- Sie haben Zugang zur [OVHcloud API](/links/api).
+- Sie verfügen über ein OVHcloud Konto mit ausreichenden Berechtigungen, um die erforderlichen Ressourcen zu erstellen.
 
-## Architecture
+## Architektur
 
-The Terraform module creates the following infrastructure:
+Das Terraform-Modul erstellt die folgende Infrastruktur:
 
-![Terraform Module Architecture](images/terraform-module-architecture.png){.thumbnail}
+![Architektur des Terraform-Moduls](images/terraform-module-architecture.png){.thumbnail}
 
-## Network constraints
+## Netzwerk-Beschränkungen
 
-The module enforces the following constraints:
+Das Modul setzt die folgenden Beschränkungen durch:
 
-| Constraint | Description |
+| Beschränkung | Beschreibung |
 |------------|-------------|
-| Same vRack | Cloud Project and vRack Services must be in the same vRack |
-| Same region | vRack Services and EFS must be in the same region |
-| Same VLAN ID | Private network and vRack Services subnet must use the same VLAN ID |
-| Same CIDR | Private network and vRack Services subnet must use the same CIDR |
-| No IP overlap | Private network subnet allocation pool must not overlap with service range CIDR |
-| Gateway required | MKS cluster requires a gateway to reach the OVH API |
+| Gleiches vRack | Cloud Projekt und vRack Services müssen sich im selben vRack befinden |
+| Gleiche Region | vRack Services und EFS müssen sich in derselben Region befinden |
+| Gleiche VLAN-ID | Privates Netzwerk und vRack Services Subnetz müssen dieselbe VLAN-ID verwenden |
+| Gleiches CIDR | Privates Netzwerk und vRack Services Subnetz müssen denselben CIDR verwenden |
+| Keine IP-Überschneidung | Der Zuweisungspool des privaten Netzwerk-Subnetzes darf sich nicht mit dem CIDR des Dienstbereichs überschneiden |
+| Gateway erforderlich | Der MKS-Cluster benötigt ein Gateway, um die OVH API zu erreichen |
 
-## Instructions
+## In der praktischen Anwendung
 
-### Configure the OVHcloud Terraform provider
+### OVHcloud Terraform Provider konfigurieren
 
-#### Generate API credentials
+#### API-Anmeldedaten generieren
 
-The OVHcloud Terraform Provider needs to be configured with an API token to make calls to the OVHcloud API.
+Der OVHcloud Terraform Provider muss mit einem API-Token konfiguriert werden, um Aufrufe an die OVHcloud API zu tätigen.
 
-Your API token will need to have the following rights:
+Ihr API-Token muss die folgenden Rechte besitzen:
 
-- GET, POST, PUT, DELETE on `/storage/netapp/*`
-- GET, POST, PUT, DELETE on `/vrack/*`
-- GET, POST, PUT, DELETE on `/cloud/project/*`
-- GET, POST, PUT, DELETE on `/me/*`
-- GET, POST, PUT, DELETE on `/iam/*`
-- POST on `/order/*`
+- GET, POST, PUT, DELETE auf `/storage/netapp/*`
+- GET, POST, PUT, DELETE auf `/vrack/*`
+- GET, POST, PUT, DELETE auf `/cloud/project/*`
+- GET, POST, PUT, DELETE auf `/me/*`
+- GET, POST, PUT, DELETE auf `/iam/*`
+- POST auf `/order/*`
 
-Follow the [First steps with the OVHcloud APIs](/pages/manage_and_operate/api/first-steps) guide to generate your API token.
+Folgen Sie der Anleitung [Erste Schritte mit den OVHcloud APIs](/pages/manage_and_operate/api/first-steps), um Ihr API-Token zu generieren.
 
-**Once your token is generated, save its information for later use with the OVHcloud Terraform provider**.
+**Sobald Ihr Token generiert ist, speichern Sie die Informationen für die spätere Verwendung mit dem OVHcloud Terraform Provider**.
 
-#### Configure provider parameters
+#### Provider-Parameter konfigurieren
 
-Create a `provider.tf` file with the OVHcloud provider configuration:
+Erstellen Sie eine Datei `provider.tf` mit der OVHcloud Provider-Konfiguration:
 
 ```hcl
 terraform {
@@ -90,7 +90,7 @@ provider "ovh" {
 }
 ```
 
-Then create a `variables.tf` file defining the variables that will be used inside your `.tf` files:
+Erstellen Sie anschließend eine Datei `variables.tf`, in der die Variablen definiert werden, die in Ihren `.tf`-Dateien verwendet werden:
 
 ```hcl
 variable "ovh" {
@@ -105,17 +105,17 @@ variable "ovh" {
 ```
 
 > [!primary]
-> About the `ovh.endpoint` variable: by default, `ovh-eu` is defined because we are making calls to the OVHcloud Europe API.
+> Zur Variablen `ovh.endpoint`: Standardmäßig ist `ovh-eu` definiert, da wir Aufrufe an die OVHcloud Europe API tätigen.
 >
-> Other endpoints exist, depending on your needs:
+> Je nach Bedarf existieren weitere Endpunkte:
 >
-> - `ovh-eu` for OVHcloud Europe API
-> - `ovh-ca` for OVHcloud America/Asia API
+> - `ovh-eu` für die OVHcloud Europe API
+> - `ovh-ca` für die OVHcloud America/Asia API
 
-Create a `secrets.tfvars` file with your credentials:
+Erstellen Sie eine Datei `secrets.tfvars` mit Ihren Anmeldedaten:
 
 > [!warning]
-> Don't forget to replace `<application_key>`, `<application_secret>` and `<consumer_key>` with your API token information obtained previously.
+> Vergessen Sie nicht, `<application_key>`, `<application_secret>` und `<consumer_key>` durch die zuvor erhaltenen Informationen Ihres API-Tokens zu ersetzen.
 >
 
 ```hcl
@@ -127,11 +127,11 @@ ovh = {
 }
 ```
 
-### Use the Terraform module
+### Das Terraform-Modul verwenden
 
-#### Minimal configuration
+#### Minimale Konfiguration
 
-Create a `main.tf` file using the module with minimal required parameters:
+Erstellen Sie eine Datei `main.tf`, die das Modul mit den minimal erforderlichen Parametern verwendet:
 
 ```hcl
 module "ovh_efs_trident" {
@@ -149,24 +149,24 @@ module "ovh_efs_trident" {
 }
 ```
 
-This minimal configuration creates all resources from scratch with default settings.
+Diese minimale Konfiguration erstellt alle Ressourcen von Grund auf mit Standardeinstellungen.
 
 > [!primary]
-> We recommend the EFS `region` and the MKS `public_cloud_region` to be as close as possible.
+> Wir empfehlen, dass die EFS-`region` und die MKS-`public_cloud_region` so nah wie möglich beieinander liegen.
 >
-> Latency between regions may impact your storage workload performance.
-> **Keep your storage and compute as close as possible.**
+> Die Latenz zwischen den Regionen kann die Leistung Ihres Speicher-Workloads beeinträchtigen.
+> **Halten Sie Ihren Speicher und Ihre Rechenleistung so nah wie möglich beieinander.**
 >
-> For example:
+> Zum Beispiel:
 >
-> - `eu-west-gra` and `GRA9`
-> - `eu-west-sbg` and `SBG5`
+> - `eu-west-gra` und `GRA9`
+> - `eu-west-sbg` und `SBG5`
 >
-> See the [OVHcloud Regions documentation](/links/bare-metal/regions) for the complete mapping.
+> Die vollständige Zuordnung finden Sie in der [OVHcloud Regionen-Dokumentation](/links/bare-metal/regions).
 
-#### Full configuration example
+#### Beispiel einer vollständigen Konfiguration
 
-For complete control over all resources, use the full configuration:
+Verwenden Sie für die vollständige Kontrolle über alle Ressourcen die vollständige Konfiguration:
 
 ```hcl
 module "ovh_efs_trident" {
@@ -225,11 +225,11 @@ module "ovh_efs_trident" {
 }
 ```
 
-### Use existing resources
+### Bestehende Ressourcen verwenden
 
-The module is designed to be compatible with your existing infrastructure. You can use your OVHcloud resources instead of creating new ones.
+Das Modul ist so konzipiert, dass es mit Ihrer bestehenden Infrastruktur kompatibel ist. Sie können Ihre OVHcloud Ressourcen verwenden, anstatt neue zu erstellen.
 
-#### Use an existing EFS and vRack Services bound to a vRack
+#### Eine bestehende EFS- und vRack Services-Instanz verwenden, die an ein vRack gebunden ist
 
 ```hcl
 module "ovh_efs_trident" {
@@ -264,10 +264,10 @@ module "ovh_efs_trident" {
 }
 ```
 
-#### Use an existing MKS cluster
+#### Einen bestehenden MKS-Cluster verwenden
 
-This example assumes that only Public Cloud products already exist: an MKS cluster with private network connectivity
-and a gateway to reach the Internet but no vRack, EFS, or other resources.
+Dieses Beispiel geht davon aus, dass nur Public Cloud Produkte bereits vorhanden sind: ein MKS-Cluster mit privater Netzwerkanbindung
+und ein Gateway, um das Internet zu erreichen, aber kein vRack, EFS oder andere Ressourcen.
 
 ```hcl
 module "ovh_efs_trident" {
@@ -301,9 +301,9 @@ module "ovh_efs_trident" {
 }
 ```
 
-### Deploy the infrastructure
+### Die Infrastruktur bereitstellen
 
-Create an `outputs.tf` file that will hold all the module outputs:
+Erstellen Sie eine Datei `outputs.tf`, die alle Ausgaben des Moduls enthält:
 
 ```hcl
 # OAuth2 Credentials for Trident
@@ -364,19 +364,19 @@ output "resources_created" {
 }
 ```
 
-Initialize Terraform to download the required providers:
+Initialisieren Sie Terraform, um die erforderlichen Provider herunterzuladen:
 
 ```bash
 terraform init
 ```
 
-Create an execution plan to review the changes:
+Erstellen Sie einen Ausführungsplan, um die Änderungen zu überprüfen:
 
 ```bash
 terraform plan -var-file=secrets.tfvars -out main.tfplan
 ```
 
-Review the plan output to verify the resources that will be created:
+Überprüfen Sie die Ausgabe des Plans, um die Ressourcen zu prüfen, die erstellt werden:
 
 ```bash
 Terraform will perform the following actions:
@@ -399,7 +399,7 @@ Terraform will perform the following actions:
 Plan: 14 to add, 0 to change, 0 to destroy.
 ```
 
-Apply the configuration to create the resources:
+Wenden Sie die Konfiguration an, um die Ressourcen zu erstellen:
 
 ```bash
 terraform apply main.tfplan
@@ -425,51 +425,51 @@ Apply complete! Resources: 14 added, 0 changed, 0 destroyed.
 ```
 
 > [!warning]
-> Resource creation may take several minutes. The MKS cluster creation typically takes the longest.
+> Die Erstellung der Ressourcen kann mehrere Minuten dauern. Die Erstellung des MKS-Clusters dauert in der Regel am längsten.
 
-### Retrieve outputs
+### Ausgaben abrufen
 
-After successful deployment, retrieve the outputs needed for Trident configuration:
+Rufen Sie nach der erfolgreichen Bereitstellung die für die Trident-Konfiguration erforderlichen Ausgaben ab:
 
 ```bash
 terraform output
 ```
 
-Key outputs include:
+Wichtige Ausgaben sind:
 
-| Output | Description |
+| Ausgabe | Beschreibung |
 |--------|-------------|
-| `client_id` | OAuth2 client ID for Trident backend |
-| `client_secret` | OAuth2 client secret (sensitive) |
-| `efs_id` | Enterprise File Storage service ID |
-| `mks_cluster_id` | MKS cluster ID |
-| `kubeconfig` | Kubernetes configuration file (sensitive) |
-| `private_network_subnet_cidr` | Network CIDR for Trident backend configuration |
+| `client_id` | OAuth2 Client-ID für das Trident-Backend |
+| `client_secret` | OAuth2 Client-Secret (sensibel) |
+| `efs_id` | Service-ID des Enterprise File Storage |
+| `mks_cluster_id` | ID des MKS-Clusters |
+| `kubeconfig` | Kubernetes-Konfigurationsdatei (sensibel) |
+| `private_network_subnet_cidr` | Netzwerk-CIDR für die Trident-Backend-Konfiguration |
 
-To retrieve sensitive values:
+Um sensible Werte abzurufen:
 
 ```bash
 terraform output -raw client_secret
 terraform output -raw kubeconfig > kubeconfig.yaml
 ```
 
-### Configure Trident CSI
+### Trident CSI konfigurieren
 
-After deploying the infrastructure with this module, configure Trident CSI to use Enterprise File Storage. Follow the [Getting started with Trident CSI](/pages/storage_and_backup/file_storage/enterprise_file_storage/netapp_trident_csi) guide for detailed instructions.
+Nachdem Sie die Infrastruktur mit diesem Modul bereitgestellt haben, konfigurieren Sie Trident CSI, um Enterprise File Storage zu verwenden. Folgen Sie der Anleitung [Erste Schritte mit Trident CSI](/pages/storage_and_backup/file_storage/enterprise_file_storage/netapp_trident_csi) für detaillierte Anweisungen.
 
-Use the module outputs to configure the Trident backend.
+Verwenden Sie die Ausgaben des Moduls, um das Trident-Backend zu konfigurieren.
 
-Get the OAuth2 credentials:
+Rufen Sie die OAuth2-Anmeldedaten ab:
 
 ```bash
 export CLIENT_ID=$(terraform output -raw client_id)
 export CLIENT_SECRET=$(terraform output -raw client_secret)
 ```
 
-Create Kubernetes secret:
+Erstellen Sie ein Kubernetes-Secret:
 
 > [!warning]
-> If the trident namespace does not exist yet, create it with `kubectl --kubeconfig kubeconfig.yaml create ns trident`
+> Falls der Trident-Namespace noch nicht existiert, erstellen Sie ihn mit `kubectl --kubeconfig kubeconfig.yaml create ns trident`.
 
 ```bash
 kubectl --kubeconfig kubeconfig.yaml create secret generic tbc-ovh-efs-secret \
@@ -478,9 +478,9 @@ kubectl --kubeconfig kubeconfig.yaml create secret generic tbc-ovh-efs-secret \
   --from-literal=clientSecret="$CLIENT_SECRET"
 ```
 
-### Destroy the infrastructure
+### Die Infrastruktur zerstören
 
-Before removing the resources, if the vRack Services to EFS attachment was created using Terraform, delete it first by setting `vrackservices_attach_to_efs = false` and applying new configuration.
+Bevor Sie die Ressourcen entfernen, löschen Sie zuerst die Verbindung zwischen vRack Services und EFS, falls sie mit Terraform erstellt wurde. Setzen Sie dazu `vrackservices_attach_to_efs = false` und wenden Sie die neue Konfiguration an.
 
 ```hcl
 module "ovh_efs_trident" {
@@ -495,24 +495,24 @@ module "ovh_efs_trident" {
 terraform apply -var-file=secrets.tfvars
 ```
 
-Once vRack Services is detached from EFS, all resources can be removed.
+Sobald vRack Services von EFS getrennt ist, können alle Ressourcen entfernt werden.
 
-To remove all resources created by the module:
+Um alle vom Modul erstellten Ressourcen zu entfernen:
 
 > [!warning]
-> This will permanently delete all resources including the MKS cluster and EFS storage. Ensure you have backed up any important data before proceeding.
+> Dadurch werden alle Ressourcen einschließlich des MKS-Clusters und des EFS-Speichers dauerhaft gelöscht. Stellen Sie sicher, dass Sie alle wichtigen Daten gesichert haben, bevor Sie fortfahren.
 
 ```bash
 terraform destroy -var-file=secrets.tfvars
 ```
 
-## Go further
+## Weiterführende Informationen
 
-- [Getting started with Trident CSI](/pages/storage_and_backup/file_storage/enterprise_file_storage/netapp_trident_csi)
-- [Managing Enterprise File Storage with OVHcloud Terraform provider](/pages/storage_and_backup/file_storage/enterprise_file_storage/netapp_terraform)
+- [Erste Schritte mit Trident CSI](/pages/storage_and_backup/file_storage/enterprise_file_storage/netapp_trident_csi)
+- [Enterprise File Storage mit dem OVHcloud Terraform Provider verwalten](/pages/storage_and_backup/file_storage/enterprise_file_storage/netapp_terraform)
 - [Enterprise File Storage - FAQ](/pages/storage_and_backup/file_storage/enterprise_file_storage/netapp_faq)
-- [OVHcloud Terraform Provider Documentation](https://registry.terraform.io/providers/ovh/ovh/latest/docs)
+- [Dokumentation zum OVHcloud Terraform Provider](https://registry.terraform.io/providers/ovh/ovh/latest/docs)
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for a custom analysis of your project.
+Wenn Sie Schulungen oder technische Unterstützung bei der Implementierung unserer Lösungen benötigen, wenden Sie sich an Ihren Vertriebsmitarbeiter oder klicken Sie auf [diesen Link](/links/professional-services), um einen Kostenvoranschlag zu erhalten und eine persönliche Analyse Ihres Projekts durch unsere Experten des Professional Services Teams anzufordern.
 
-Join our [community of users](/links/community).
+Treten Sie unserer [User Community](/links/community) bei.

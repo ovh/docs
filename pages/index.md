@@ -2331,7 +2331,7 @@
                 + [Enterprise File Storage - NFS Client considerations](storage_and_backup/file_storage/enterprise_file_storage/netapp_nfs_client_considerations)
                 + [Enterprise File Storage - Connect a Public Cloud instance to an EFS volume via vRack](storage_and_backup/file_storage/enterprise_file_storage/netapp_pci_connection_via_vrack)
                 + [Enterprise File Storage - Private network configuration](storage_and_backup/file_storage/enterprise_file_storage/netapp_network_config)
-                + [Enterprise File Storage - Deploying an EFS stack for Trident CSI with Terraform](storage_and_backup/file_storage/enterprise_file_storage/netapp_trident_terraform)
+                + [Enterprise File Storage - How to deploy an EFS stack for Trident CSI with Terraform](storage_and_backup/file_storage/enterprise_file_storage/netapp_trident_terraform)
             + [Migration](storage-file-storage-enterprise-file-storage-migration)
                 + [Enterprise File Storage - Clone a volume](storage_and_backup/file_storage/enterprise_file_storage/netapp_clone_volume)
             + [Additional resources](storage-file-storage-enterprise-file-storage-additional-resources)
