@@ -1,7 +1,7 @@
 ---
 title: "Web hosting - My database is full, what should I do?"
 excerpt: "Find out what to do when your database is saturated"
-updated: 2025-02-19
+updated: 2026-04-01
 ---
 
 ## Objective
@@ -46,7 +46,7 @@ The first email will be sent when your database has consumed more than **80%** o
 
 When your database is in **overquota**, you will be sent a third warning email. Your database will then switch to *READ ONLY*. You can no longer add or modify your database entries, but they are still accessible to **read** and **delete**. 
 
-### Step 1: Identify large tables
+### 1 - Identify large tables
 
 A database is made up of one or more **tables**, themselves consisting of one or more **rows** organised using predetermined **columns**.
 
@@ -59,12 +59,13 @@ The first step is to identify the large table or tables in your database.
 > [phpMyAdmin](https://www.phpmyadmin.net/) is available on all OVHcloud shared databases.
 > This database management application makes it easy to perform the manual actions you can perform with your database.
 > 
-> If your database is hosted on a [Web Cloud Databases](/links/web/databases) solution, please refer to our guide on “[Web Cloud Databases - Logging in to your database](/pages/web_cloud/web_cloud_databases/connecting-to-database-on-database-server)”, then skip to [step 1.2](#step1.2) of this guide.
+> If your database is hosted on a [Web Cloud Databases](/links/web/databases) solution, please refer to our guide on “[Web Cloud Databases - Logging in to your database](/pages/web_cloud/web_cloud_databases/connecting-to-database-on-database-server)”, then skip to [part 1.2](#step1.2) of this guide.
 
 #### 1.1 - Connect to the database via phpMyAdmin
 
-Retrieve your database access data directly from your website’s configuration file. Perform this action using **step 1** in our guide to [changing a database password](/pages/web_cloud/web_hosting/sql_change_password).
+Retrieve your database access data directly from your website’s configuration file. Perform this action using **part 1** in our guide to [changing a database password](/pages/web_cloud/web_hosting/sql_change_password).
 
+<!-- CP-STEPS-START:connect-phpmyadmin -->
 To connect to the database via phpMyAdmin, click on the tabs below to view each of the **4** steps.
 
 > [!tabs]
@@ -95,6 +96,7 @@ To connect to the database via phpMyAdmin, click on the tabs below to view each 
 >> ![phpMyAdmin Login interface](/pages/assets/screens/other/web-tools/phpmyadmin/pma-interface-login.png){.thumbnail}
 >>
 >> Enter the login information for your database, then click `Login`{.action}.
+<!-- CP-STEPS-END:connect-phpmyadmin -->
 
 #### 1.2 - Find the largest tables <a name="step1.2"></a>
 
@@ -113,9 +115,9 @@ Click on `"Your database name"`{.action} in the left-hand column, then on `Size`
 
 ![phpMyAdmin Tables](/pages/assets/screens/other/web-tools/phpmyadmin/pma-check-size.png){.thumbnail}
 
-The largest tables appear at the top of the sorted list. Identify them, then go to **Step 2**.
+The largest tables appear at the top of the sorted list. Identify them, then go to **part 2**.
 
-### Step 2: Determine the usefulness of the content in the large table(s)
+### 2 - Determine the usefulness of the content in the large table(s)
 
 Once you have identified the large tables, determine whether all of their content is required for your site to work.
 
@@ -140,7 +142,7 @@ Below are links to the official CMS websites for the OVHcloud 1-click modules:
 > If your website is a **customised** software, developed by a specialist provider, we recommend that you contact them for support.
 >
 
-### Step 3: Take corrective action
+### 3 - Take corrective action
 
 Once you have determined whether or not the contents of your tables are necessary for your site to work, you have several options:
 
@@ -153,7 +155,7 @@ You will need to upgrade your database service to one that includes more space f
 > To increase the size allocated to your database, you will need to create a new, larger database, and copy the contents of the old database into the new one. You cannot directly increase the size of a database linked to a web hosting plan.
 >
 
-Consult our [Web Cloud Databasess](/links/web/databases) offer to choose your new database service. 
+Consult our [Web Cloud Databases](/links/web/databases) offer to choose your new database service. 
 
 We recommend this solution for large databases.
 
@@ -162,8 +164,8 @@ You can duplicate the content of your OVHcloud database directly to another of y
 If you are migrating to a database outside of the [Start SQL](/links/web/hosting-options-startsql) and [Web Cloud Databases](/links/web/databases) solutions, you can manually move the content from your old database to a new one using our guides:
 
 - [Export your existing database](/pages/web_cloud/web_hosting/sql_database_export)
-- [First steps with Web Cloud Databasess](/pages/web_cloud/web_cloud_databases/starting_with_clouddb)
-- [Import your old database into your Web Cloud Databasess solution](/pages/web_cloud/web_cloud_databases/restore-import-on-database-server)
+- [First steps with Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb)
+- [Import your old database into your Web Cloud Databases solution](/pages/web_cloud/web_cloud_databases/restore-import-on-database-server)
 
 #### Case 2 - Some or all of the contents of the large table are not necessary for your site to work
 
@@ -224,7 +226,7 @@ DROP TABLE `table_1`
 
 > In this example, the command deletes the table **table_1** and all rows in it.
 
-### Step 4: Release the database from the "READ ONLY" status
+### 4 - Release the database from the "READ ONLY" status
 
 Our robots in charge of quota checks pass very regularly on our infrastructure.
 If they find that your database is no longer in **overquota** when they visit your services, they will automatically remove the “READ ONLY” status.
@@ -234,6 +236,7 @@ However, you can force them through your services to speed up the process. To do
 
 #### Recalculate the quota for a database included with your web hosting plan
 
+<!-- CP-STEPS-START:recalculate-quota-web-hosting -->
 Click on the tabs below to view each of the **4** steps.
 
 > [!tabs]
@@ -264,25 +267,21 @@ Click on the tabs below to view each of the **4** steps.
 >> Once launched, the operation may take several minutes. When it ends, the "READ ONLY" status of your database disappears.
 >> Your database is now fully operational again.
 >>
+<!-- CP-STEPS-END:recalculate-quota-web-hosting -->
 
 #### Recalculate the quota for a database hosted on a Web Cloud Databases solution
 
-Click on the tabs below to view each of the **3** steps.
+<!-- CP-STEPS-START:recalculate-quota-web-cloud-databases -->
+Click on the tabs below to view each of the **2** steps.
 
 > [!tabs]
 > **Step 1**
 >>
->> Log in to the [OVHcloud Control Panel](/links/manager), then go to the `Web Cloud`{.action} section.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Step 2**
->>
->> Click the `Web Cloud Databases`{.action} menu, then choose the Web Cloud Databases solution concerned.
+>> Go to the [Web Cloud Databases](/links/control-panel/web-cloud-databases) page, then select the Web Cloud Databases solution concerned.
 >>
 >> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases.png){.thumbnail}
 >>
-> **Step 3**
+> **Step 2**
 >>
 >> In the **General information** box, you will see **Used space**. Click the `...`{.action} button on the right, then `Refresh your database quota`{.action}.
 >>
@@ -291,6 +290,7 @@ Click on the tabs below to view each of the **3** steps.
 >> Once launched, the operation may take several minutes. When it ends, the "READ ONLY" status of your database disappears.
 >> Your database is now fully operational again.
 >>
+<!-- CP-STEPS-END:recalculate-quota-web-cloud-databases -->
 
 ## Go further <a name="go-further"></a>
 

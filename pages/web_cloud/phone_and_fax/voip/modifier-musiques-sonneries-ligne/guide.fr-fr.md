@@ -32,6 +32,7 @@ Votre ligne SIP OVHcloud vous permet de recevoir et d’émettre des appels. Afi
 
 ### Étape 1 : accéder à la gestion des musiques et sonneries
 
+<!-- CP-STEPS-START:etape-1-gestion-musiques -->
 Cliquez sur l'onglet `Gestion des musiques`{.action}.
 
 ![sonneriesetmusiques](images/gestion-musiques.png){.thumbnail width="600"}
@@ -48,6 +49,7 @@ Dans la page qui apparaît, vous avez la possibilité de modifier plusieurs musi
 |Sonnerie de pré-décroché|Ce son est joué avant que l'appel soit décroché.|Tonalité de pré-décroché classique (bip long)|
 |Musique d'attente|Ce son est joué lorsque vous mettez un correspondant en attente pendant votre conversation.|Le message suivant est joué : « Votre correspondant vous a mis en attente, veuillez patienter. »|
 |Annonce sur ligne occupée|Ce son est joué à un correspondant qui contacte la ligne alors que celle-ci a déjà un appel en cours.|Tonalité d'occupation classique (bip court)|
+<!-- CP-STEPS-END:etape-1-gestion-musiques -->
 
 ### Étape 2 : modifier une musique ou une sonnerie
 
@@ -68,9 +70,11 @@ Certaines règles et informations sont à prendre en considération en ce qui co
 > - Soit via le logiciel open source et gratuit [Audacity](https://www.audacityteam.org/).
 >
 
+<!-- CP-STEPS-START:etape-2-ajouter-musique -->
 Une fois que vous êtes prêt, en dessous de la musique ou de la sonnerie que vous voulez modifier, choisissez `Personnalisée` dans le menu déroulant puis cliquez sur le bouton `Choisir un fichier`{.action}. Dans la fenêtre qui s'ouvre, retrouvez le fichier audio que vous souhaitez utiliser. Une fois sélectionné, cliquez sur le bouton `Envoyer le fichier`{.action}.
 
 ![sonneriesetmusiques](images/ajout-musique.png){.thumbnail width="600"}
+<!-- CP-STEPS-END:etape-2-ajouter-musique -->
 
 ## Aller plus loin
 

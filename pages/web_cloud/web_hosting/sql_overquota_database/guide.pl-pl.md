@@ -1,7 +1,7 @@
 ---
 title: "Hosting WWW - Moja baza danych jest przeciążona, co robić?"
 excerpt: "Dowiedz się, jak działać, gdy baza danych jest przeciążona"
-updated: 2025-02-19
+updated: 2026-04-01
 ---
 
 ## Wprowadzenie
@@ -25,7 +25,7 @@ Tutorial ten wyjaśnia, jakie działania należy podjąć, gdy wirtualna baza da
 
 ### Dostęp do Panelu klienta OVHcloud
 
-- **Link bezpośredni:** [Hosting plans](/links/control-panel/web-hosting)
+- **Link bezpośredni:** [Hosting](/links/control-panel/web-hosting)
 - **Ścieżka nawigacji:** `Web Cloud`{.action} > `Hosting`{.action} > Wybierz hosting WWW
 
 ---
@@ -46,11 +46,11 @@ Pierwszy e-mail jest wysyłany, gdy baza danych zużywa ponad **80%** swojej prz
 
 Jeśli Twoja baza danych jest zapisana w **overquota**, otrzymasz trzeci e-mail z ostrzeżeniem. Baza danych zmienia się wówczas na "*READ ONLY*" (tylko odczyt). Nie można dodawać ani modyfikować wpisów w bazie danych, ale jest ona dostępna w **odczyt** i **usuwanie**. 
 
-### Etap 1: zidentyfikować tabelę(-y) powiększającą(-e)
+### 1 - Zidentyfikować tabelę(-y) powiększającą(-e)
 
 Baza danych składa się z jednej lub kilku **tabel**, które składają się z jednej lub więcej **wierszy** zorganizowanych z wykorzystaniem wcześniej określonych **kolumn**.
 
-Pierwszy etap polega na zidentyfikowaniu obszernej(-ych) tabeli(-ych) w Twojej bazie danych.
+Pierwszy krok polega na zidentyfikowaniu obszernej(-ych) tabeli(-ych) w Twojej bazie danych.
 
 > [!primary]
 >
@@ -59,18 +59,19 @@ Pierwszy etap polega na zidentyfikowaniu obszernej(-ych) tabeli(-ych) w Twojej b
 > [phpMyAdmin](https://www.phpmyadmin.net/) jest dostępny we wszystkich współdzielonych bazach danych OVHcloud.
 > Ta aplikacja do zarządzania bazami danych ułatwia wykonywanie czynności ręcznych, które możesz wykonać za pomocą bazy danych.
 >
-> Jeśli Twoja baza danych znajduje się w rozwiązaniu [Web Cloud Databases](/links/web/databases), zapoznaj się z naszym przewodnikiem "[Web Cloud Databases - Logowanie do bazy danych](/pages/web_cloud/web_cloud_databases/connecting-to-database-on-database-server)", następnie przejdź bezpośrednio do [etap 1.2](#step1.2) niniejszego przewodnika.
+> Jeśli Twoja baza danych znajduje się w rozwiązaniu [Web Cloud Databases](/links/web/databases), zapoznaj się z naszym przewodnikiem "[Web Cloud Databases - Logowanie do bazy danych](/pages/web_cloud/web_cloud_databases/connecting-to-database-on-database-server)", następnie przejdź bezpośrednio do [część 1.2](#step1.2) niniejszego przewodnika.
 
 #### 1.1 - Logowanie do bazy danych przez phpMyAdmin
 
-Uzyskaj informacje dotyczące dostępu do bazy danych bezpośrednio w pliku konfiguracyjnym Twojej strony WWW. Operację tę przeprowadź, korzystając z **etapu 1** naszego przewodnika dotyczącego [zmiany hasła bazy danych](/pages/web_cloud/web_hosting/sql_change_password).
+Uzyskaj informacje dotyczące dostępu do bazy danych bezpośrednio w pliku konfiguracyjnym Twojej strony WWW. Operację tę przeprowadź, korzystając z **części 1** naszego przewodnika dotyczącego [zmiany hasła bazy danych](/pages/web_cloud/web_hosting/sql_change_password).
 
+<!-- CP-STEPS-START:connect-phpmyadmin -->
 Aby połączyć się z bazą danych za pomocą narzędzia phpMyAdmin, kliknij poniższe zakładki, aby wyświetlić kolejne **4** kroki.
 
 > [!tabs]
 > **Krok 1**
 >>
->> Przejdź na stronę [Hosting plans](/links/control-panel/web-hosting), następnie wybierz odpowiedni hosting.
+>> Przejdź na stronę [Hosting](/links/control-panel/web-hosting), następnie wybierz odpowiedni hosting.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
@@ -95,6 +96,7 @@ Aby połączyć się z bazą danych za pomocą narzędzia phpMyAdmin, kliknij po
 >> ![phpMyAdmin Login interface](/pages/assets/screens/other/web-tools/phpmyadmin/pma-interface-login.png){.thumbnail}
 >>
 >> Wprowadź dane dostępowe do Twojej bazy danych, a następnie kliknij `Login`{.action}.
+<!-- CP-STEPS-END:connect-phpmyadmin -->
 
 #### 1.2 - Wyszukaj największe tabele <a name="step1.2"></a>
 
@@ -113,9 +115,9 @@ W kolumnie po lewej stronie kliknij `"Nazwa bazy danych"`{.action}, a następnie
 
 ![phpMyAdmin Tables](/pages/assets/screens/other/web-tools/phpmyadmin/pma-check-size.png){.thumbnail}
 
-Największe stoły wyświetlają się na szczycie tabeli. Wyszukaj je i przejdź do **etapu 2**.
+Największe stoły wyświetlają się na szczycie tabeli. Wyszukaj je i przejdź do **części 2**.
 
-### Etap 2: określenie użyteczności treści zawartych w tabeli lub tabelach
+### 2 - Określenie użyteczności treści zawartych w tabeli lub tabelach
 
 Po zidentyfikowaniu obszernych tabel, sprawdź, czy ich zawartość jest niezbędna do działania Twojej strony WWW.
 
@@ -140,7 +142,7 @@ Poniżej znajdziesz linki do oficjalnych stron WWW proponowanych przez OVHcloud 
 > Jeśli Twoja strona została stworzona przez wyspecjalizowanego usługodawcę "**ręcznie**", zalecamy kontakt z dostawcą usług hostingowych.
 >
 
-### Etap 3: podjęcie działań naprawczych
+### 3 - Podjęcie działań naprawczych
 
 Po określeniu, czy zawartość Twoich tabel jest niezbędna czy nie, masz do wyboru kilka opcji:
 
@@ -153,7 +155,7 @@ Musisz zmienić bazę danych na większą bazę danych.
 > Aby zwiększyć rozmiar bazy danych, musisz utworzyć nową, większą bazę danych i skopiować zawartość ze starej do nowej. Nie jest możliwe bezpośrednie zwiększenie rozmiaru bazy danych powiązanej z hostingiem.
 >
 
-Zapoznaj się z naszą ofertą baz danych [Web Cloud Databasess](/links/web/databases), aby wybrać nową usługę baz danych. 
+Zapoznaj się z naszą ofertą baz danych [Web Cloud Databases](/links/web/databases), aby wybrać nową usługę baz danych. 
 
 Zalecamy tę ofertę dla dużych baz danych.
 
@@ -162,8 +164,8 @@ Zawartość Twojej bazy danych OVHcloud można duplikować bezpośrednio do inne
 W przypadku migracji na zewnętrzną bazę danych [Start SQL](/links/web/hosting-options-startsql) i [Web Cloud Databases](/links/web/databases) możesz ręcznie przenieść zawartość starej bazy danych do nowej za pomocą naszych przewodników:
 
 - [Eksport istniejącej bazy danych](/pages/web_cloud/web_hosting/sql_database_export)
-- [Pierwsze kroki z usługą Web Cloud Databasess](/pages/web_cloud/web_cloud_databases/starting_with_clouddb)
-- [Import Twojej starej bazy danych do Twojej oferty Web Cloud Databasess](/pages/web_cloud/web_cloud_databases/restore-import-on-database-server)
+- [Pierwsze kroki z usługą Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb)
+- [Import Twojej starej bazy danych do Twojej oferty Web Cloud Databases](/pages/web_cloud/web_cloud_databases/restore-import-on-database-server)
 
 #### Przypadki nr 2 - Część lub całość zawartości tabeli nie jest konieczna do działania strony
 
@@ -224,22 +226,23 @@ DROP TABLE `table_1`
 
 > W tym przykładzie polecenie usuwa tabelę **table_1** i wszystkie linie, które ona zawiera.
 
-### Etap 4: Przejście bazy danych do stanu "READ ONLY" (tylko do odczytu)
+### 4 - Przejście bazy danych do stanu "READ ONLY" (tylko do odczytu)
 
 Nasze roboty sprawdzające limity regularnie korzystają z naszych infrastruktur.
 Jeśli stwierdzą, że Twoja baza danych nie jest już aktywna **overquota**, automatycznie usuną status "READ ONLY" (tylko do odczytu).
 Po wykonaniu niezbędnych operacji na Twojej bazie danych, wystarczy poczekać, aż nasze roboty przejdą na Twoje usługi.
 
-Możesz jednak wymusić ich przejście na Twoje usługi, aby przyspieszyć proces. W tym celu poproś nasze roboty o ponowne obliczenie rozmiaru Twojej usługi/bazy danych.
+Jednak możesz wymusić ich przejście na Twoje usługi, aby przyspieszyć proces. W tym celu poproś nasze roboty o ponowne obliczenie rozmiaru Twojej usługi/bazy danych.
 
 #### Przeliczenie rozmiaru bazy danych zawartej w ofercie hostingu
 
+<!-- CP-STEPS-START:recalculate-quota-web-hosting -->
 Kliknij poniższe zakładki, aby wyświetlić kolejne **4** kroki.
 
 > [!tabs]
 > **Krok 1**
 >>
->> Przejdź na stronę [Hosting plans](/links/control-panel/web-hosting), następnie wybierz odpowiedni hosting.
+>> Przejdź na stronę [Hosting](/links/control-panel/web-hosting), następnie wybierz odpowiedni hosting.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
@@ -264,25 +267,21 @@ Kliknij poniższe zakładki, aby wyświetlić kolejne **4** kroki.
 >> Po rozpoczęciu może to potrwać kilka minut. Po jej zakończeniu status "READ ONLY" bazy danych zostanie utracony.
 >> Twoja baza danych znów stanie się w pełni operacyjna.
 >>
+<!-- CP-STEPS-END:recalculate-quota-web-hosting -->
 
 #### Przeliczenie rozmiaru bazy danych hostowanej w rozwiązaniu Web Cloud Databases
 
-Kliknij poniższe zakładki, aby wyświetlić kolejne **3** kroki.
+<!-- CP-STEPS-START:recalculate-quota-web-cloud-databases -->
+Kliknij poniższe zakładki, aby wyświetlić kolejne **2** kroki.
 
 > [!tabs]
 > **Krok 1**
 >>
->> Zaloguj się do [Panelu klienta OVHcloud](/links/manager) i przejdź do sekcji `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Krok 2**
->>
->> Kliknij menu `Web Cloud Databases`{.action}, następnie wybierz odpowiednie rozwiązanie Web Cloud Databases.
+>> Przejdź do strony [Web Cloud Databases](/links/control-panel/web-cloud-databases) i wybierz odpowiednią usługę Web Cloud Databases.
 >>
 >> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases.png){.thumbnail}
 >>
-> **Krok 3**
+> **Krok 2**
 >>
 >> W ramce **Informacje ogólne** znajduje się pozycja **Przestrzeń wykorzystana**. Kliknij przycisk `...`{.action} po prawej stronie, a następnie przycisk `Odśwież limit wielkości bazy danych`{.action}.
 >>
@@ -291,6 +290,7 @@ Kliknij poniższe zakładki, aby wyświetlić kolejne **3** kroki.
 >> Po rozpoczęciu może to potrwać kilka minut. Po jej zakończeniu status "READ ONLY" bazy danych zostanie utracony.
 >> Twoja baza danych znów stanie się w pełni operacyjna.
 >>
+<!-- CP-STEPS-END:recalculate-quota-web-cloud-databases -->
 
 ## Sprawdź również <a name="go-further"></a>
 

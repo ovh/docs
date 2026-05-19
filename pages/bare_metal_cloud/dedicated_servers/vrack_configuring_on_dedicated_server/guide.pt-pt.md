@@ -1,6 +1,6 @@
 ---
-title: 'Configurar vários servidores dedicados no vRack'
-excerpt: 'Aprenda a configurar vários servidores dedicados graças ao vRack'
+title: "Configurar o vRack nos seus servidores dedicados"
+excerpt: "Configure a rede privada vRack OVHcloud em dois ou mais servidores dedicados para uma comunicação inter-servidores isolada"
 updated: 2026-02-20
 ---
 
@@ -17,7 +17,6 @@ O vRack (rack virtual) da OVHcloud permite agrupar virtualmente vários servidor
 - Um serviço [vRack](/links/network/vrack) ativado na sua conta
 - Vários [servidores dedicados](/links/bare-metal/bare-metal) (compatíveis com vRack)
 - Dispor de um acesso de administrador (sudo) ao servidor através de SSH ou RDP
-- Estar ligado à [Área de Cliente OVHcloud](/links/manager)
 - Preparar o intervalo de endereços IP privados que escolheu
 
 > [!warning]
@@ -25,11 +24,22 @@ O vRack (rack virtual) da OVHcloud permite agrupar virtualmente vários servidor
 >
 > Para mais informações, consulte o nosso [comparativo](/links/bare-metal/eco-compare).
 
+<!-- CP-NAV-START:network-vrack -->
+---
+
+### Acesso à Área de Cliente OVHcloud
+
+- **Ligação direta:** [vRack](/links/control-panel/network-vrack)
+- **Caminho de navegação:** `Network`{.action} > `Rede privada vRack`{.action}
+
+---
+<!-- CP-NAV-END:network-vrack -->
+
 ## Instruções
 
 ### Etapa 1: encomendar o vrack
 
-Aceda à Área de Cliente OVHcloud e clique no botão `Adicionar um serviço`{.action} (ícone de um carrinho de compras) no menu à esquerda. Utilize o filtro na parte superior da página ou percorra a página até encontrar o serviço `vRack`{.action}.
+Clique no botão `Adicionar um serviço`{.action} (ícone de um carrinho de compras) no menu à esquerda. Utilize o filtro na parte superior da página ou percorra a página até encontrar o serviço `vRack`{.action}.
 
 ![Encomendar vrack](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/network/orderingvrack25.png){.thumbnail}
 
@@ -37,9 +47,7 @@ Clique na caixa `vRack`{.action} para ser redirecionado para a página a partir 
 
 ### Etapa 2: adicionar os seus servidores ao vRack
 
-Depois de ativar o vRack na sua conta, clique em `Network`{.action} no menu à esquerda do ecrã e, a seguir, em `Rede Privada vRack`{.action}.
-
-Selecione o seu vRack na lista para apresentar a lista dos serviços elegíveis. Clique em cada um dos servidores que deseja adicionar ao vRack e, a seguir, em `Adicionar`{.action}.
+Depois de ativar o vRack na sua conta, selecione o seu vRack na lista para apresentar a lista dos serviços elegíveis. Clique em cada um dos servidores que deseja adicionar ao vRack e, a seguir, em `Adicionar`{.action}.
 
 ![Escolha do vRack](images/vrack_selection.png){.thumbnail}
 
@@ -218,13 +226,13 @@ Para efeitos de exemplo, utilizaremos o intervalo de endereços IP `192.168.0.0/
 >> No nosso exemplo, nomeámos o nosso perfil de configuração `private-interface`.
 >>
 >> ```bash
->> nmcli connection add type ethernet con-name CONNECTION_NAME ifname INTERFACE_NAME
+>> sudo nmcli connection add type ethernet con-name CONNECTION_NAME ifname INTERFACE_NAME
 >> ```
 >>
 >> **Exemplo:**
 >>
 >> ```bash
->> nmcli connection add type ethernet con-name private-interface ifname eno2
+>> sudo nmcli connection add type ethernet con-name private-interface ifname eno2
 >> ```
 >>
 >> - Verifique se a interface está ligada corretamente:
@@ -252,13 +260,13 @@ Para efeitos de exemplo, utilizaremos o intervalo de endereços IP `192.168.0.0/
 >> - Adicione o seu IP:
 >>
 >> ```bash
->> nmcli connection modify CONNECTION_NAME IPv4.address IP_ADDRESS/PREFIX
+>> sudo nmcli connection modify CONNECTION_NAME IPv4.address IP_ADDRESS/PREFIX
 >> ```
 >>
 >> **Exemplo:**
 >>
 >> ```bash
->> nmcli connection modify private-interface IPv4.address 192.168.0.1/16
+>> sudo nmcli connection modify private-interface IPv4.address 192.168.0.1/16
 >> ```
 >>
 >> - Alterar a configuração de **auto** para **manual**:

@@ -1,7 +1,7 @@
 ---
 title: How to use the Bring Your Own IP feature
 excerpt: Find out how to easily import your own IP as Additional IP to your OVHcloud account
-updated: 2026-02-19
+updated: 2026-04-17
 ---
 
 ## Objective
@@ -44,7 +44,6 @@ To be considered as a valid owned block, imported blocks must be one of the foll
 | &bull; Direct Allocation <br>&bull; Direct Assignment <br>&bull; Reallocated <br>&bull; Reassigned  |  &bull; ALLOCATED PA <br>&bull; LIR-PARTITIONED PA  <br>&bull; SUB-ALLOCATED PA  <br>&bull; ASSIGNED PA  <br>&bull; ASSIGNED PI  <br>&bull; LEGACY   |  &bull; Allocated-Portable <br>&bull; Allocated-Non-Portable <br>&bull; Assigned-Portable <br>&bull; Assigned-Non-Portable  |
 | **For more information:** <br>&bull; [Using WhoIs - Network](https://www.arin.net/resources/registry/whois/#network) <br>&bull; [Reporting Reassignments](https://www.arin.net/resources/registry/reassignments/) | **For more information:** <br>[Description of the INETNUM Object](https://docs.db.ripe.net/entire-documentation-HTML.html#description-of-the-inetnum-object) |  **For more information:** <br>&bull; [INETNUM Quick Guide](https://www.apnic.net/manage-ip/using-whois/guide/inetnum/) <br>&bull; [Recording network assignments](https://www.apnic.net/manage-ip/using-whois/updating-whois/network-assignments/) |
 
-
 ### Your IP range must have a supported size <a name="supportedsize"></a>
 
 We accept IP blocks from size /24 up to size /19. Below, is the number of /24 you will receive from the imported range:
@@ -78,21 +77,21 @@ To choose a region, please refer to the list of available regions accessible on 
 
 To prove that you are the owner of the range, you will be requested to enter a special token which we will provide, into the public whois object corresponding to your range. This will be done via the web portal of the RIR managing your IPs. This token will be provided at order.
 
-- For RIPE, edit the « **descr** » field of the « **inetnum** » object of the IP.
-- For ARIN, edit the « **Public Comments** » field of the « **Network** » object.
-- For APNIC, edit the « **remarks** » field of « **inetnum** » object.
+- For RIPE, edit the "**descr**" field of the "**inetnum**" object of the IP.
+- For ARIN, edit the "**Public Comments**" field of the "**Network**" object.
+- For APNIC, edit the "**remarks**" field of "**inetnum**" object.
 
-The token needs to appears in the description field (see above) of the whois object, in a dedicated line. Other lines may be present, as long as the token is present in its own dedicated line in the description. The token must be added before placing the order, and must not be removed until the end of the delivery process.
+The token needs to appear in the description field (see above) of the whois object, in a dedicated line. Other lines may be present, as long as the token is present in its own dedicated line in the description. The token must be added before placing the order, and must not be removed until the end of the delivery process.
 
 ### You must prove ownership of the AS number (required only if you provide an AS number) <a name="proveownershipas"></a>
 
 To prove that you are the owner of the AS number, you will be required to reuse the same token previously used to prove ownership of the IP range, and insert it into the public whois object corresponding to the AS number. This will be done via the web portal of the RIR managing your AS number. This token will be provided at order (it may also be found directly in the OVHcloud Control Panel, in the IP section).
 
-- For RIPE, edit the « **descr** » field of the « **aut-num** » object of the AS number.
-- For ARIN, edit the « **Public Comments** » field of the « **ASN** » object.
-- For APNIC, edit the « **remarks** » field of « **aut-num** » object.
+- For RIPE, edit the "**descr**" field of the "**aut-num**" object of the AS number.
+- For ARIN, edit the "**Public Comments**" field of the "**ASN**" object.
+- For APNIC, edit the "**remarks**" field of "**aut-num**" object.
 
-The token needs to appears in the description field (see above) of the whois object, in a dedicated line. Other lines may be present, as long as the token is present in its own dedicated line in the description. The token must be added before placing the order, and must not be removed until the end of the delivery process.
+The token needs to appear in the description field (see above) of the whois object, in a dedicated line. Other lines may be present, as long as the token is present in its own dedicated line in the description. The token must be added before placing the order, and must not be removed until the end of the delivery process.
 
 ### You have to allow OVHcloud to announce the IP range <a name="announceip"></a>
 
@@ -105,13 +104,22 @@ For more information on route objects, please refer to your RIR’s documentatio
 - APNIC - [Creating Route Objects](https://www.apnic.net/manage-ip/using-whois/guide/creating-route-objects/)
 
 > [!warning]
-> If your imported IP block is already advertized on the Internet from sites other than OVHcloud (multihoming case), you risk packet loss or other routing issues. We will therefore not be able to guarantee connectivity to OVHcloud services with your imported IP block.
+> If your imported IP block is already advertised on the Internet from sites other than OVHcloud (multihoming case), you risk packet loss or other routing issues. We will therefore not be able to guarantee connectivity to OVHcloud services with your imported IP block.
+
+<!-- CP-NAV-START:network-public-ip -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Public IP](/links/control-panel/network-public-ip)
+- **Navigation path:** `Network`{.action} > `Public IP Addresses`{.action}
+
+---
+<!-- CP-NAV-END:network-public-ip -->
 
 ## Instructions
 
 ### How to order a BYOIP service
-
-Log in to the [OVHcloud Control Panel](/links/manager), open the `Network`{.action} menu in the left-hand sidebar, then select `Public IP Addresses`{.action}.
 
 ![Public IP addresses - BYOIP button](images/byoip_public_ip.png){.thumbnail}
 
@@ -142,7 +150,7 @@ Filtering public IP addresses by tag is not currently available. We recommend fi
 ### How to use the product
 
 The imported IPs will behave like the current Additional IP product. An imported IP range will be split into /24 blocks that will be movable to any service in the same region.<br>
-To activate the announcement of your imported IP range on the Internet, simply assign one of your block to an eligible product via the control panel or the OVHcloud API.<br>
+To activate the announcement of your imported IP range on the Internet, simply assign one of your blocks to an eligible product via the control panel or the OVHcloud API.<br>
 
 > [!warning]
 > Some operations available on the Additional IP product will not be available on the BYOIP product.
@@ -161,61 +169,82 @@ Any imported IP block can be further split into smaller blocks and/or individual
 > [!warning] 
 > To be able to slice/merge an existing IP block, it must be unused (i.e. in the parking area) and there must not be any pending task associated with it (e.g. no pending move operation).
 
-To slice a block, use the following API call:
+To segment your BYOIP block, follow these steps:
 
-> [!api]
->
-> @api {v1} /ip POST /ip/{ip}/bringYourOwnIp/slice
->
+> [!tabs]
+> Via the OVHcloud Control Panel
+>> 1. Navigate to the `Public IP Addresses`{.action} page and locate your BYOIP block.
+>> 2. Click the `⋮`{.action} button on the right side of the table.
+>> 3. Select `Segment`{.action}.
+>> 4. Choose your desired **CIDR subnet mask** to define the size of the child blocks.
+>> 5. Review the preview of the generated blocks, then click `Confirm`{.action} to finalize the segmentation.
+>>
+> Via the OVHcloud API
+>>
+>> > [!api]
+>> >
+>> > @api {v1} /ip POST /ip/{ip}/bringYourOwnIp/slice
+>> >
+>>
+>> Use the following parameters:
+>>
+>> - ip: the IP block you want to slice, in CIDR notation.
+>> - slicingSize: the resulting size of the sliced blocks, expressed as a network prefix size, in bits. For example if you want to slice a /24 block into 2 smaller blocks of size /25, you should enter the value "25".
+>>
+>> > [!primary]
+>> > This API call is asynchronous, the newly created blocks are made available shortly after the call. They will be usable as any other Additional IP block or individual address.
+>>
+>> You can preview the resulting blocks that would be created for each block size, by using the following API call:
+>>
+>> > [!api]
+>> >
+>> > @api {v1} /ip GET /ip/{ip}/bringYourOwnIp/slice
+>> >
+>>
+>> Use the following parameters:
+>>
+>> - ip: the IP block you want to slice, in CIDR notation.
+>>
 
-Use the following parameters:
+To combine several child blocks into a parent block, follow these steps:
 
-- ip: the IP block you want to slice, in CIDR notation.
-- slicingSize: the resulting size of the sliced blocks, expressed as a network prefix size, in bits. For example if you want to slice a /24 block into 2 smaller blocks of size /25, you should enter the value "25".
-
-> [!primary]
-> This API call is asynchronous, the newly created blocks are made available shortly after the call. They will be usable as any other Additional IP block or individual address.
-
-You can preview the resulting blocks that would be created for each block size, by using the following API call:
-
-> [!api]
->
-> @api {v1} /ip GET /ip/{ip}/bringYourOwnIp/slice
->
-
-Use the following parameters:
-
-- ip: the IP block you want to slice, in CIDR notation.
-
-To merge back a block into a parent block, use this API call:
-
-> [!api]
->
-> @api {v1} /ip POST /ip/{ip}/bringYourOwnIp/aggregate
->
-
-Use the following parameters:
-
-- ip: the IP block you want to merge, in CIDR notation.-
-- aggregationIp: the resulting block, in CIDR notation.
-
-The resulting block will be an aggregate of all its children blocks.
-
-> [!primary]
-> This API call is asynchronous, the re-aggregated blocks are made available shortly after the call.
-
-You can preview all the possible configurations of aggregated blocks for a given IP block, by using the following API call:
-
-> [!api]
->
-> @api {v1} /ip GET /ip/{ip}/bringYourOwnIp/aggregate
->
-
-Use the following parameters:
-
-- ip: the IP block you want to merge into a parent block, in CIDR notation.
-
-This call returns a list of possible aggregated blocks and, for each one of them, gives the list of children blocks to be merged back.
+> [!tabs]
+> Via the OVHcloud Control Panel
+>> 1. Navigate to the `Public IP Addresses`{.action} page and locate one of the BYOIP block segment you want to combine.
+>> 2. Click the `⋮`{.action} button on the right side of the table.
+>> 3. Select `Combine`{.action}.
+>> 4. Choose the desired parent block. 
+>> 5. Review the preview of the generated blocks, then click `Confirm`{.action} to finalize the aggregation.
+>>
+> Via the OVHcloud API
+>>
+>> > [!api]
+>> >
+>> > @api {v1} /ip POST /ip/{ip}/bringYourOwnIp/aggregate
+>> >
+>>
+>> Use the following parameters:
+>>
+>> - ip: the IP block you want to merge, in CIDR notation.
+>> - aggregationIp: the resulting block, in CIDR notation.
+>>
+>> The resulting block will be an aggregate of all its children blocks.
+>>
+>> > [!primary]
+>> > This API call is asynchronous, the re-aggregated blocks are made available shortly after the call.
+>>
+>> You can preview all the possible configurations of aggregated blocks for a given IP block, by using the following API call:
+>>
+>> > [!api]
+>> >
+>> > @api {v1} /ip GET /ip/{ip}/bringYourOwnIp/aggregate
+>> >
+>>
+>> Use the following parameters:
+>>
+>> - ip: the IP block you want to merge into a parent block, in CIDR notation.
+>>
+>> This call returns a list of possible aggregated blocks and, for each one of them, gives the list of children blocks to be merged back.
 
 **Limitations**:
 
@@ -283,7 +312,7 @@ Not for the moment.
 
 ### Can I order the service while I still have my IP range announced from another site?
 
-Yes, but once the BYOIP service has been delivered, you must immediately cancel the annoucement from the other site, as you risk connectivity issues with any services hosted at OVHcloud. In this case, OVHcloud cannot be held responsible.
+Yes, but once the BYOIP service has been delivered, you must immediately cancel the announcement from the other site, as you risk connectivity issues with any services hosted at OVHcloud. In this case, OVHcloud cannot be held responsible.
 
 ## Go further
 

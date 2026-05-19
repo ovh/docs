@@ -37,16 +37,6 @@ Dans de rares cas, les lenteurs d'affichage peuvent aussi provenir de votre four
 
 - Disposer d'un site hébergé sur l'une de nos offres d'[hébergement mutualisé OVHcloud](/links/web/hosting)
 
-<!-- CP-NAV-START:web-hosting -->
----
-
-### Accès à l'espace client OVHcloud
-
-- **Lien direct :** [Hébergements](/links/control-panel/web-hosting)
-- **Pour accéder à vos services :** `Web Cloud`{.action} > `Hébergements`{.action} > Sélectionnez votre hébergement web
-
----
-<!-- CP-NAV-END:web-hosting -->
 
 ## En pratique
 
@@ -150,7 +140,7 @@ Connectez-vous à votre base de données en suivant **l'étape 3** de notre guid
 
 Si la connexion est réussie, vous arrivez sur l'interface suivante :
 
-![PHPMyAdmin](/pages/assets/screens/other/web-tools/phpmyadmin/pma-main-page.png){.thumbnail}
+![phpMyAdmin](/pages/assets/screens/other/web-tools/phpmyadmin/pma-main-page.png){.thumbnail}
 
 > [!warning]
 >

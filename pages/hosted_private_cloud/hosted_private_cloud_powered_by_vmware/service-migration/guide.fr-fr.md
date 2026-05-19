@@ -21,7 +21,6 @@ La migration d'un service Hosted Private Cloud comprend deux aspects :
 ## Prérequis
 
 - Posséder un produit [Hosted Private Cloud](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/).
-- Être connecté à votre [espace client OVHcloud](/links/manager) dans la partie `Hosted Private Cloud`{.action} puis `Private Cloud`{.action}.
 
 ## En pratique
 

@@ -21,7 +21,7 @@ Di default, la soluzione Web Cloud Databases è associata alla rete di hosting W
 ### Accesso allo Spazio Cliente OVHcloud
 
 - **Link diretto:** [Web Cloud Databases](/links/control-panel/web-cloud-databases)
-- **Percorso di navigazione:** `Web Cloud`{.action} > `Web Cloud Databases`{.action} > Seleziona il tuo database service
+- **Percorso di navigazione:** `Web Cloud`{.action} > `Web Cloud Databases`{.action} > Seleziona il tuo servizio di database
 
 ---
 <!-- CP-NAV-END:web-cloud-databases -->
@@ -30,31 +30,34 @@ Di default, la soluzione Web Cloud Databases è associata alla rete di hosting W
 
 ### Attivazione del server Web Cloud Databases incluso con il piano di hosting Web
 
-Se il piano di hosting include l'opzione Web Cloud Databases, clicca sulle schede qui sotto per visualizzare i **3** step in sequenza.
+<!-- CP-STEPS-START:activate-included-wcdb -->
+Se il piano di hosting include l'opzione Web Cloud Databases, clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **3** passaggi.
 
 > [!tabs]
-> **Step 1**
+> **Passaggio 1**
 >>
 >> Accedi alla pagina [Hosting](/links/control-panel/web-hosting), poi seleziona l'hosting Web interessato.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Step 2**
+> **Passaggio 2**
 >>
 >> Dalla scheda `Informazioni generali`, nella sezione `Configurazione`, clicca sul pulsante `...`{.action} a destra di **Web Cloud Databases**. Clicca poi su `Attiva`{.action} per avviare il processo di attivazione.
 >>
 >> ![Informazioni generali](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/web-cloud-databases-enable.png){.thumbnail}
 >>
-> **Step 3**
+> **Passaggio 3**
 >>
 >> Segui le istruzioni fornite per determinare il tipo e la versione del server Web Cloud Databases. Sarà poi accessibile dalla colonna di sinistra in `Web Cloud Databases`{.action}.
+<!-- CP-STEPS-END:activate-included-wcdb -->
 
 ### Visualizzare le informazioni generali dell'istanza
 
-Clicca sulle schede qui sotto per visualizzare i **2** step in sequenza.
+<!-- CP-STEPS-START:view-general-info -->
+Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **2** passaggi.
 
 > [!tabs]
-> **Step 1**
+> **Passaggio 1**
 >>
 >> Accedi alla pagina [Web Cloud Databases](/links/control-panel/web-cloud-databases), poi seleziona la soluzione interessata.
 >>
@@ -64,7 +67,7 @@ Clicca sulle schede qui sotto per visualizzare i **2** step in sequenza.
 >> >
 >> > Il nome del servizio Web Cloud Databases nello Spazio Cliente OVHcloud contiene una parte del riferimento cliente e termina con tre cifre (001 per il primo servizio Web Cloud Databases installato, 002 per il secondo, ecc.).
 >>
-> **Step 2**
+> **Passaggio 2**
 >>
 >> Assicurati di trovarti nella scheda `Informazioni generali`{.action}.
 >>
@@ -82,27 +85,29 @@ Clicca sulle schede qui sotto per visualizzare i **2** step in sequenza.
 >> |Host|Indica il server OVHcloud su cui è stata creata l'istanza. Si tratta di un'informazione inerente all'infrastruttura OVHcloud e può essere utilizzata nelle comunicazioni relative agli [incidenti OVHcloud](https://www.status-ovhcloud.com/).|
 >>
 >> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/general-information/general-information.png){.thumbnail}
+<!-- CP-STEPS-END:view-general-info -->
 
 ### Creare un database
 
 > [!primary]
 >
-> Questo step non si applica al sistema di database Redis.
+> Questo passaggio non si applica al sistema di database Redis.
 
-Clicca sulle schede qui sotto per visualizzare i **4** step in sequenza.
+<!-- CP-STEPS-START:create-database -->
+Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **4** passaggi.
 
 > [!tabs]
-> **Step 1**
+> **Passaggio 1**
 >>
 >> Accedi alla pagina [Web Cloud Databases](/links/control-panel/web-cloud-databases), poi seleziona la soluzione interessata.
 >>
 >> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases.png){.thumbnail}
 >>
-> **Step 2**
+> **Passaggio 2**
 >>
->> Clicca sulla scheda `Database`{.action}.
+>> Clicca sulla scheda `Databases`{.action}.
 >>
-> **Step 3**
+> **Passaggio 3**
 >>
 >> Clicca su `Aggiungi un database`{.action}.
 >>
@@ -112,7 +117,7 @@ Clicca sulle schede qui sotto per visualizzare i **4** step in sequenza.
 >> >
 >> > La creazione di schemi PostgreSQL non è attualmente disponibile sui server Web Cloud Databases.
 >>
-> **Step 4**
+> **Passaggio 4**
 >>
 >> Compila i campi rispettando i criteri indicati. È possibile creare direttamente un utente selezionando la casella **"Crea un utente"**:
 >>
@@ -124,37 +129,40 @@ Clicca sulle schede qui sotto per visualizzare i **4** step in sequenza.
 >> Clicca su `Conferma`{.action}.
 >>
 >> ![web-cloud-databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/databases/add-database-confirmation.png){.thumbnail}
+<!-- CP-STEPS-END:create-database -->
 
 ### Creare un utente
 
 > [!primary]
 >
-> Questo step non si applica al sistema di database Redis.
+> Questo passaggio non si applica al sistema di database Redis.
 
-Se l'utente è stato creato contemporaneamente al database nello step precedente, questo passaggio è facoltativo. Tuttavia, un progetto potrebbe richiedere più utenti con diritti diversi (ad esempio, lettura/scrittura per uno e sola lettura per un altro).
+Se l'utente è stato creato contemporaneamente al database nello passaggio precedente, questo passaggio è facoltativo. Tuttavia, un progetto potrebbe richiedere più utenti con diritti diversi (ad esempio, lettura/scrittura per uno e sola lettura per un altro).
 
-Se il progetto non necessita di un utente aggiuntivo, è possibile passare allo step successivo. In caso contrario, clicca sulle schede qui sotto per visualizzare i **4** step in sequenza.
+<!-- CP-STEPS-START:create-user -->
+Se il progetto non necessita di un utente aggiuntivo, è possibile passare allo passaggio successivo. In caso contrario, clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **4** passaggi.
 
 > [!tabs]
-> **Step 1**
+> **Passaggio 1**
 >>
 >> Accedi alla pagina [Web Cloud Databases](/links/control-panel/web-cloud-databases), poi seleziona la soluzione interessata.
 >>
 >> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases.png){.thumbnail}
 >>
-> **Step 2**
+> **Passaggio 2**
 >>
 >> Clicca sulla scheda `Utenti e diritti`{.action}.
 >>
-> **Step 3**
+> **Passaggio 3**
 >>
 >> Clicca su `Aggiungi un utente`{.action}.
 >>
 >> ![web-cloud-databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/users-and-rights/add-user.png){.thumbnail}
 >>
-> **Step 4**
+> **Passaggio 4**
 >>
 >> Inserisci un "nome utente" e una "password", poi clicca su `Conferma`{.action}.
+<!-- CP-STEPS-END:create-user -->
 
 Per modificare i diritti di un utente esistente, consulta la guida "[Web Cloud Databases - Modificare i diritti di un utente](/pages/web_cloud/web_cloud_databases/modify_rights_for_users)".
 
@@ -162,7 +170,7 @@ Per modificare i diritti di un utente esistente, consulta la guida "[Web Cloud D
 
 > [!primary]
 >
-> Questo step si applica se vuoi importare un backup di un database esistente. In caso contrario, passa allo step successivo.
+> Questo passaggio si applica se vuoi importare un backup di un database esistente. In caso contrario, passa allo passaggio successivo.
 
 Per importare un database, consulta la guida "[Ripristinare e importare un database sul server di database](/pages/web_cloud/web_cloud_databases/restore-import-on-database-server)".
 
@@ -172,22 +180,23 @@ Nella guida sono descritti diversi metodi di importazione.
 
 Affinché l'istanza Web Cloud Databases funzioni, è necessario indicare gli IP o gli intervalli di IP autorizzati a connettersi ai database.
 
-Per farlo, clicca sulle schede qui sotto per visualizzare i **4** step in sequenza.
+<!-- CP-STEPS-START:authorise-ip -->
+Per farlo, clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **4** passaggi.
 
 > [!tabs]
-> **Step 1**
+> **Passaggio 1**
 >>
 >> Accedi alla pagina [Web Cloud Databases](/links/control-panel/web-cloud-databases), poi seleziona la soluzione interessata.
 >>
 >> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases.png){.thumbnail}
 >>
-> **Step 2**
+> **Passaggio 2**
 >>
 >> Nella pagina visualizzata, clicca sulla scheda `IP autorizzati`{.action}.
 >>
 >> ![IP autorizzati](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/authorised-ips.png){.thumbnail}
 >>
-> **Step 3**
+> **Passaggio 3**
 >>
 >> Clicca sul pulsante `Aggiungi un indirizzo IP/mask`{.action} sopra la tabella.
 >>
@@ -197,7 +206,7 @@ Per farlo, clicca sulle schede qui sotto per visualizzare i **4** step in sequen
 >> >
 >> > Per modificare un indirizzo IP o un intervallo di IP già autorizzato, clicca sul pulsante `...`{.action} a destra della riga corrispondente nella tabella, poi su `Modifica la whitelist`{.action}.
 >>
-> **Step 4**
+> **Passaggio 4**
 >>
 >> Nella finestra che si apre, diversi campi devono essere compilati:
 >>
@@ -205,16 +214,17 @@ Per farlo, clicca sulle schede qui sotto per visualizzare i **4** step in sequen
 >>
 >> - `IP/mask *`{.action}: Inserisci l'indirizzo IP (ad esempio `203.0.113.44`) o l'intervallo di IP (ad esempio `203.0.113.0/24`, che rappresenta tutti gli indirizzi IP da `203.0.113.0` a `203.0.113.255`) da autorizzare sulla soluzione Web Cloud Databases.
 >> - `Descrizione`{.action} (facoltativo): È possibile aggiungere informazioni sul ruolo dell'indirizzo IP o dell'intervallo di IP interessato.
->> - `Database`{.action}: Seleziona questa casella per consentire all'indirizzo IP o all'intervallo di IP di accedere ai database della soluzione Web Cloud Databases.
+>> - `Databases`{.action}: Seleziona questa casella per consentire all'indirizzo IP o all'intervallo di IP di accedere ai database della soluzione Web Cloud Databases.
 >> - `SFTP`{.action}: Seleziona questa casella per consentire all'indirizzo IP o all'intervallo di IP di accedere ai log della soluzione Web Cloud Databases.
 >>
 >> > [!warning]
 >> >
->> > Si sconsiglia fortemente di selezionare la casella `Database`{.action} per autorizzare l'intervallo di IP `0.0.0.0/0` ad accedere ai database.
+>> > Si sconsiglia fortemente di selezionare la casella `Databases`{.action} per autorizzare l'intervallo di IP `0.0.0.0/0` ad accedere ai database.
 >> >
 >> > Questo consentirebbe a tutti gli indirizzi IPv4 esistenti di accedere ai database.
 >>
 >> Una volta inserite le informazioni, clicca sul pulsante `Conferma`{.action}.
+<!-- CP-STEPS-END:authorise-ip -->
 
 ### Autorizzare le connessioni da un hosting Web OVHcloud <a name="trustip"></a>
 
@@ -224,7 +234,7 @@ Per farlo, consulta i casi particolari nella guida "[Web Cloud Databases - Come 
 
 ### Associare il sito Web al database
 
-Ora che il database è stato creato, uno o più utenti dispongono dei diritti necessari e almeno un indirizzo IP o gli hosting Web OVHcloud sono stati autorizzati sull'istanza Web Cloud Databases, non resta che associare il sito Web al database. Questo step può essere eseguito in diversi modi, a seconda del sito Web o del CMS (WordPress, Joomla!, ecc.) utilizzato, nonché della fase di installazione del sito Web.
+Ora che il database è stato creato, uno o più utenti dispongono dei diritti necessari e almeno un indirizzo IP o gli hosting Web OVHcloud sono stati autorizzati sull'istanza Web Cloud Databases, non resta che associare il sito Web al database. Questo passaggio può essere eseguito in diversi modi, a seconda del sito Web o del CMS (WordPress, Joomla!, ecc.) utilizzato, nonché della fase di installazione del sito Web.
 
 A tal fine, sono necessarie le seguenti 5 informazioni:
 
@@ -236,16 +246,17 @@ A tal fine, sono necessarie le seguenti 5 informazioni:
 |Hostname del server|Il server da indicare affinché il sito Web possa connettersi al database.|
 |Porta del server|La porta di connessione all'istanza Web Cloud Databases, necessaria affinché il sito Web possa connettersi al database.|
 
-Per recuperare queste informazioni, clicca sulle schede qui sotto per visualizzare i **2** step in sequenza.
+<!-- CP-STEPS-START:link-website-database -->
+Per recuperare queste informazioni, clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **2** passaggi.
 
 > [!tabs]
-> **Step 1**
+> **Passaggio 1**
 >>
 >> Accedi alla pagina [Web Cloud Databases](/links/control-panel/web-cloud-databases), poi seleziona la soluzione interessata.
 >>
 >> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases.png){.thumbnail}
 >>
-> **Step 2**
+> **Passaggio 2**
 >>
 >> Recupera le seguenti informazioni di connessione:
 >>
@@ -256,6 +267,7 @@ Per recuperare queste informazioni, clicca sulle schede qui sotto per visualizza
 >> > [!warning]
 >> >
 >> > Se modifichi la password di un utente del database, tutte le applicazioni/siti Web che accedono a questo database devono essere aggiornati di conseguenza.
+<!-- CP-STEPS-END:link-website-database -->
 
 > [!warning]
 >

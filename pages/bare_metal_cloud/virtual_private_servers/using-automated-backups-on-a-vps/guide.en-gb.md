@@ -75,6 +75,7 @@ For more flexibility with your backups, you can activate the Premium Automated B
 
 ### How to subscribe to Premium Automated Backup
 
+<!-- CP-STEPS-START:subscribe-premium -->
 The Premium Automated Backup option creates a backup of your VPS every 24 hours at the specified time.  
 You will have access to all daily backups of the last 7 days. Once 7 backups are created, each new backup will replace the oldest one.
 
@@ -88,11 +89,13 @@ Click the link `Order a premium backup`{.action} (for services ordered from 7 AU
 </div>
 
 In the next step, note the pricing information, then click `Order`{.action}. You will be guided through the order process and receive a confirmation email.
+<!-- CP-STEPS-END:subscribe-premium -->
 
 <a name="time"></a>
 
 ### How to configure the backup time
 
+<!-- CP-STEPS-START:configure-backup-time -->
 You can change the time of day at which the backup will take place.
 
 After selecting your VPS, click on the `Automated backup`{.action} tab in the horizontal menu.
@@ -109,11 +112,13 @@ In the window that appears, edit the time of day (24-hour UTC time standard). Cl
 >
 > Once confirmed in the Control Panel, the change will come into effect after 24 to 48 hours.
 >
+<!-- CP-STEPS-END:configure-backup-time -->
 
 <a name="restore"></a>
 
 ### How to restore a backup from the OVHcloud Control Panel
 
+<!-- CP-STEPS-START:restore-backup -->
 After selecting your VPS, click on the `Automated backup`{.action} tab in the horizontal menu.  
 Click the button `...`{.action} next to the backup you would like to restore and select `Restoration`{.action}.
 
@@ -125,6 +130,7 @@ If you recently changed your root password, make sure to tick the option "Modify
 >
 > Please note that the automated backups will not include your additional disks.
 >
+<!-- CP-STEPS-END:restore-backup -->
 
 <a name="mount"></a>
 
@@ -139,10 +145,12 @@ It is not necessary to completely overwrite your existing service with a restora
 > This guide is designed to help you with common tasks. Nevertheless, we recommend contacting a [specialist service provider](/links/partner) or reaching out to the [OVHcloud community](/links/community) if you encounter any difficulties. You can find more information in the [Go further](#go-further) section of this guide.
 >
 
+<!-- CP-STEPS-START:mount-backup -->
 After selecting your VPS, click on the `Automated backup`{.action} tab in the horizontal menu.  
 Click on `...`{.action} next to the backup you need to access and select `Mounting`{.action}.
 
 ![autobackupvps](images/backup_vps_step2.png){.thumbnail}
+<!-- CP-STEPS-END:mount-backup -->
 
 When you use this option, a read-write copy of the backup is created and mounted. The original backup will remain available unchanged for future restorations.
 
@@ -184,9 +192,11 @@ sudo mount /dev/sdb1 /mnt/restore
 
 You can now switch to this folder and access your backup data.
 
+<!-- CP-STEPS-START:unmount-backup-ssh -->
 Remember to unmount the backup once you have finished using it. Click on the button `Unmount the backup`{.action} in the `Automated backup`{.action} tab, then confirm in the popup window.
 
 ![unmount](images/backup_vps_unmount.png){.thumbnail}
+<!-- CP-STEPS-END:unmount-backup-ssh -->
 
 <a name="windows"></a>
 
@@ -210,9 +220,11 @@ Once done, your mounted backup will be accessible in the `File Explorer`.
 
 ![file explorer](images/windowsbackup4.png){.thumbnail}
 
+<!-- CP-STEPS-START:unmount-backup-windows -->
 Remember to unmount the backup once you have finished using it. Click on the button `Unmount the backup`{.action} in the `Automated backup`{.action} tab, then confirm in the popup window.
 
 ![unmount](images/backup_vps_unmount.png){.thumbnail}
+<!-- CP-STEPS-END:unmount-backup-windows -->
 
 > [!warning]
 >

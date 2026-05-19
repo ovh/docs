@@ -34,7 +34,7 @@ Il tuo database può contenere numerose informazioni essenziali per il tuo sito 
 ### Accesso allo Spazio Cliente OVHcloud
 
 - **Link diretto:** [Web Cloud Databases](/links/control-panel/web-cloud-databases)
-- **Percorso di navigazione:** `Web Cloud`{.action} > `Web Cloud Databases`{.action} > Seleziona il tuo database service
+- **Percorso di navigazione:** `Web Cloud`{.action} > `Web Cloud Databases`{.action} > Seleziona il tuo servizio di database
 
 ---
 <!-- CP-NAV-END:web-cloud-databases -->
@@ -60,6 +60,7 @@ Il tuo database può contenere numerose informazioni essenziali per il tuo sito 
 
 #### Effettuare un backup manuale
 
+<!-- CP-STEPS-START:save-manual -->
 Clicca sulle schede qui di seguito per visualizzare ciascuno dei **3** passaggi.
 
 > [!tabs]
@@ -71,18 +72,20 @@ Clicca sulle schede qui di seguito per visualizzare ciascuno dei **3** passaggi.
 >>
 > **Passaggio 2**
 >>
->> Clicca sulla scheda `Database`{.action}.
+>> Clicca sulla scheda `Databases`{.action}.
 >>
 >> Nella colonna **Backup**, il numero corrisponde al numero di backup disponibili per il tuo database.
 >>
 > **Passaggio 3**
 >>
->> Clicca sul pulsante `...`{.action} a destra del database, poi su `Salva adesso`{.action}.
+>> Clicca sul pulsante `...`{.action} a destra del database, poi su `Esegui un backup adesso`{.action}.
 >>
 >> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/databases/back-up-now.png){.thumbnail}
+<!-- CP-STEPS-END:save-manual -->
 
 #### Esportare un backup
 
+<!-- CP-STEPS-START:export-backup -->
 Clicca sulle schede qui di seguito per visualizzare ciascuno dei **4** passaggi.
 
 > [!tabs]
@@ -94,19 +97,20 @@ Clicca sulle schede qui di seguito per visualizzare ciascuno dei **4** passaggi.
 >>
 > **Passaggio 2**
 >>
->> Clicca sulla scheda `Database`{.action}.
+>> Clicca sulla scheda `Databases`{.action}.
 >>
 >> Nella colonna **Backup**, il numero corrisponde al numero di backup disponibili per il tuo database.
 >>
 > **Passaggio 3**
 >>
->> Clicca sul pulsante `...`{.action} a destra del database, poi su `Mostra i backup`{.action}.
+>> Clicca sul pulsante `...`{.action} a destra del database, poi su `Visualizza i backup`{.action}.
 >>
 >> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/databases/show-backups.png){.thumbnail}
 >>
 > **Passaggio 4**
 >>
 >> Viene mostrata la lista dei backup disponibili. Clicca sul pulsante `...`{.action} a destra del backup scelto, poi su `Scarica il backup`{.action}.
+<!-- CP-STEPS-END:export-backup -->
 
 ### Salvare ed esportare un database al di fuori dello Spazio Cliente
 

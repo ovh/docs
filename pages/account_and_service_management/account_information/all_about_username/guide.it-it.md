@@ -93,13 +93,13 @@ Modifica le informazioni e clicca su `Salva le modifiche`{.action}.
 > È fondamentale che le tue informazioni siano **aggiornate** e **corrette** Ti verrà richiesto durante i contatti con il supporto OVHcloud e, in caso di necessità, sarà necessario essere in grado di giustificarne l'esattezza (ad esempio: durante una procedura di modifica dell'indirizzo email, potresti ricevere un giustificativo di domicilio identico all'indirizzo inserito sul tuo account).
 >
 
-#### Modifica l'indirizzo email principale
+#### Modifica l’indirizzo email principale
 
 Per modificare l’indirizzo che hai inserito come contatto principale, è necessario confermare la nuova email inserendo il codice ricevuto all’indirizzo del contatto principale attuale. Una volta ricevuto il codice, clicca sul pulsante `Ho ricevuto il codice di conferma`{.action}.
 
 ![identificativo cliente](images/nichandle07.png){.thumbnail}
 
-Inserisci il codice nel campo `Codice di conferma` e conferma l'operazione.
+Inserisci il codice nel campo `Codice di conferma` e conferma l’operazione.
 
 ![identificativo cliente](images/nichandle08.png){.thumbnail}
 

@@ -307,7 +307,7 @@ Remplacez `{logId}` par l'identifiant réel du log que vous souhaitez consulter.
 
 ### Déléguer l'accès à ses services
 
-/// details | Comment déléguer l'accès à mes servives à d'autres personnes ?
+/// details | Comment déléguer l’accès à mes servives à d’autres personnes ?
 
 Vous avez la possibilité de déléguer à d’autres comptes clients OVHcloud la gestion administrative, technique et facturation de vos services depuis votre espace client. Pour cela, rendez-vous sur la page [Gestion des contacts](/links/control-panel/account-contacts).
 

@@ -13,19 +13,23 @@ L'espace client OVHcloud vous propose de nombreuses options de paramétrage de v
 ## Prérequis
 
 - Une [Infrastrucure Hosted Private Cloud](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/)
-- Un accès à l'[espace client OVHcloud](/links/manager)
+
+<!-- CP-NAV-START:privatecloud-vmware-vsphere -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [VMware vSphere](/links/control-panel/privatecloud-vmware-vsphere)
+- **Pour accéder à vos services :** `Hosted Private Cloud`{.action} > `Managed VMware vSphere`{.action} > Sélectionnez votre service vSphere
+
+---
+<!-- CP-NAV-END:privatecloud-vmware-vsphere -->
 
 ## En pratique
 
-### Accès à l'Interface
-
-Naviguez vers l'[espace client OVHcloud](/links/manager) et connectez vous avec un compte administrateur.
-
-![LOGIN](images/en01login.png){.thumbnail}
-
 ### Vue Hosted Private Cloud
 
-Dans l'onglet `Hosted Private Cloud`{.action}, sélectionnez votre service dans la liste `VMware`{.action}. Vous pouvez renommer votre infrastructure en cliquant le bouton `Crayon`{.action} au centre de l'écran.
+Vous pouvez renommer votre infrastructure en cliquant le bouton `Crayon`{.action} au centre de l'écran.
 
 ![HOSTED](images/en02dashboard.png){.thumbnail}
 

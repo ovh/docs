@@ -1,6 +1,6 @@
 ---
-title: "How to activate and use rescue mode"
-excerpt: "Find out how to use the OVHcloud customer rescue system to troubleshoot your dedicated server"
+title: "Rescue Mode on a Dedicated Server"
+excerpt: "Boot your dedicated server into OVHcloud rescue mode to diagnose issues, repair filesystems, and reset passwords."
 updated: 2026-01-09
 ---
 
@@ -59,21 +59,26 @@ Usual tasks the rescue mode is appropriate for include:
 
 To use rescue mode, you need to edit the sever's `Netboot` setting. Then the server has to be restarted.
 
+<!-- CP-STEPS-START:open-general-information -->
 Click on your server's name to open the `General information`{.action} tab.
+<!-- CP-STEPS-END:open-general-information -->
 
 ### Activating rescue mode
 
+<!-- CP-STEPS-START:activate-rescue-edit-boot -->
 In the **General information** box, click the button `...`{.action} next to `Boot`. Click on `Edit`{.action} in the context menu.
 
-![Modify boot mode](images/rescue-mode-001.png){.thumbnail}
+![Edit boot option in the General information context menu](images/rescue-mode-001.png){.thumbnail}
+<!-- CP-STEPS-END:activate-rescue-edit-boot -->
 
 <a name="netboot"></a>
 
 #### 1: Rescue mode options
 
+<!-- CP-STEPS-START:rescue-mode-options -->
 On the page **Change the netboot**, select `Boot in rescue mode`{.action}.
 
-![Modify boot mode](images/rescue-mode-002.png){.thumbnail}
+![Change the netboot page with Boot in rescue mode selected](images/rescue-mode-002.png){.thumbnail}
 
 The available options for rescue mode depend on the server type and the **operating system** installed.
 
@@ -89,9 +94,11 @@ The available options for rescue mode depend on the server type and the **operat
 > Please refer to our [dedicated guide for a detailed explanation on using the **rescue system for Windows**](/pages/bare_metal_cloud/dedicated_servers/rescue-customer-windows).
 
 Select `Customer rescue system`{.action} in the drop-down menu.
+<!-- CP-STEPS-END:rescue-mode-options -->
 
 #### 2: Authentication options
 
+<!-- CP-STEPS-START:authentication-options -->
 The next choice determines the method of authentication for the SSH connection to the rescue mode system. This is mainly a matter of convenience since each rescue mode session is meant to be transitory and will be discarded once you reboot the server from its disk.
 
 - **Password authentication**: You will be sent login credentials via email.
@@ -104,7 +111,7 @@ Click on the relevant tab for your connection method:
 >>
 >> Click `Password authentication`{.action}.
 >>
->>![Auth method](images/rescue-mode-003.png){.thumbnail width="700"}
+>>![Password authentication option for rescue mode](images/rescue-mode-003.png){.thumbnail width="700"}
 >>
 >> The rescue mode notification email including its login details will be sent to the contact email address of your OVHcloud account. To use a different email address, enter it in the field `Send new login details to the following email address`.
 >>
@@ -114,7 +121,7 @@ Click on the relevant tab for your connection method:
 >>
 >> Click `Authentication via SSH key`{.action}.
 >>
->>![Auth method](images/rescue-mode-004.png){.thumbnail width="700"}
+>>![SSH key authentication option for rescue mode](images/rescue-mode-004.png){.thumbnail width="700"}
 >>
 >> You have two options:
 >>
@@ -131,9 +138,11 @@ Click on the relevant tab for your connection method:
 >>
 >> Click `Next`{.action}.
 >>
+<!-- CP-STEPS-END:authentication-options -->
 
 #### 3: Final steps to activate rescue mode
 
+<!-- CP-STEPS-START:confirm-and-reboot -->
 In the **Summary** step, click `Confirm`{.action}.
 
 ![Summary](images/rescue-mode-005.png){.thumbnail}
@@ -151,11 +160,14 @@ This "hard reboot" will take a few minutes to complete. You can check the curren
 > [!primary]
 > 
 > After you have finished your actions in rescue mode, remember to change the `Netboot` setting back to `Boot from the hard disk`{.action} before restarting the server.
+<!-- CP-STEPS-END:confirm-and-reboot -->
 
 ### Accessing your server in rescue mode via SSH
 
+<!-- CP-STEPS-START:service-emails-ssh -->
 Once you have received the email informing you that rescue mode is enabled, you can log on to the rescue mode system and access your server.  
 This email is also available in your [OVHcloud Control Panel](/links/manager) as soon as it is sent. Click on the name associated with your NIC handle (Customer ID) in the menu bar in the top right-hand corner, then select `Service emails`{.action}.
+<!-- CP-STEPS-END:service-emails-ssh -->
 
 > [!primary]
 > 
@@ -376,6 +388,7 @@ If relevant, return to the rescue mode login shell by entering:
 exit
 ```
 
+<!-- CP-STEPS-START:exit-rescue-netboot -->
 In your [OVHcloud Control Panel](/links/manager), [change the boot mode](#netboot) back to `Boot from the hard disk`{.action} and confirm.
 
 ![Netboot Disk](images/rescue-mode-007.png){.thumbnail}
@@ -387,6 +400,7 @@ reboot
 ```
 
 Alternatively, use the `Restart`{.action} function in the OVHcloud Control Panel.
+<!-- CP-STEPS-END:exit-rescue-netboot -->
 
 <a name="rescuessh"></a>
 
@@ -431,8 +445,10 @@ The field `Your Public SSH key:` will now be filled automatically with this key 
 
 /// details | Unfold this section
 
+<!-- CP-STEPS-START:legacy-windows-service-emails -->
 Once you have received the email informing you that rescue mode is enabled, you can log on to the rescue mode system and access your server.  
 This email is also available in your [OVHcloud Control Panel](/links/manager) as soon as it is sent. Click on the name associated with your NIC handle (Customer ID) in the menu bar in the top right-hand corner, then select `Service emails`{.action}.
+<!-- CP-STEPS-END:legacy-windows-service-emails -->
 
 To use the Windows PE rescue mode GUI, you will need to download and install a VNC console or use the [IPMI module](/pages/bare_metal_cloud/dedicated_servers/using_ipmi_on_dedicated_servers) (not available on all server models).
 

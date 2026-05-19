@@ -66,6 +66,7 @@ Si vous ne connaissez pas encore le TAG requis, vous pouvez en faire la demande 
 >
 > Vous devez être connecté en tant qu’[administrateur](/pages/account_and_service_management/account_information/managing_contacts) pour effectuer ces actions.
 
+<!-- CP-STEPS-START:change-outgoing-tag -->
 Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3** étapes.
 
 > [!tabs]
@@ -86,6 +87,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3*
 >> Dans la fenêtre qui s’affiche, renseignez le TAG de votre nouveau bureau d’enregistrement puis cliquez sur `Confirmer`{.action}.
 >>
 >> ![transfert sortant](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/outgoing-transfer-tag-confirmation.png){.thumbnail}
+<!-- CP-STEPS-END:change-outgoing-tag -->
 
 Si vous n’arrivez pas à modifier le TAG de votre nom de domaine depuis votre espace client, vous pouvez en demander la modification auprès du Registre Nominet. Plus d’informations sur le [site officiel de Nominet](https://www.nominet.uk/domain-support/).
 

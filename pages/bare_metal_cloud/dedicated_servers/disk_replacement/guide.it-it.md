@@ -1,6 +1,6 @@
 ---
-title: 'Sostituire un disco difettoso'
-excerpt: 'Scopri come individuare un disco difettoso e chiederne la sostituzione'
+title: "Sostituire un disco difettoso su un server dedicato"
+excerpt: "Identifica un disco difettoso sul tuo server dedicato OVHcloud e richiedi la sostituzione tramite lo Spazio Cliente"
 updated: 2018-06-21
 ---
 

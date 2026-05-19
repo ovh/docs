@@ -1,5 +1,5 @@
 ---
-title: Installer CUDA sur un serveur dédié GPU
+title: "Installer CUDA sur un serveur dédié GPU"
 updated: 2017-12-14
 ---
 
@@ -133,7 +133,6 @@ Le `nvidia-smi` fonctionne désormais correctement :
 ```sh
 nvidia-smi
 ```
-
 ```sh
 Wed Nov 1 09:14:38 2017
 +-----------------------------------------------------------------+
@@ -155,7 +154,10 @@ Wed Nov 1 09:14:38 2017
 | No running processes found |
 +----------------------------------------------------------------+
 ```
-
 ## Aller plus loin
+
+[Premiers pas avec un serveur dédié](/pages/bare_metal_cloud/dedicated_servers/getting-started-with-dedicated-server)
+
+[API OVHcloud et installation d'un OS](/pages/bare_metal_cloud/dedicated_servers/api-os-installation)
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).

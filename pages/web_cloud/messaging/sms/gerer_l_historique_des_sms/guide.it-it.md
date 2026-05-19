@@ -64,7 +64,7 @@ Il pulsante `Filtra`{.action} consente di filtrare la ricerca in base al mittent
 
 ![sms-history](images/smshistory5.png){.thumbnail}
  
-### Passaggio 2: Scarica la cronologia degli SMS in formato CSV <a name="csv"></a>
+### Passaggio 2: Scarica la cronologia degli SMS in formato CSV <a name=”csv”></a>
 
 Per scaricare la cronologia degli SMS inviati in formato “.csv”, clicca sul pulsante `Azioni`{.action} nell’angolo in alto a sinistra e poi clicca su `Scarica`{.action} 
  

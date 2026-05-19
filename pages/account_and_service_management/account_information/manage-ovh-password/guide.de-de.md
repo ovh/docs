@@ -94,6 +94,7 @@ Das Prinzip ist einfach: Ein Masterpasswort, das hinreichend komplex sein muss, 
 
 - Eine Meldung über die erfolgreiche Aktion erscheint. Klicken Sie auf die Schaltfläche `Weiter`{.action} unter dieser Nachricht, um zur Anmeldeseite weitergeleitet zu werden. Geben Sie nun Ihre Kennung und Ihr neues Passwort ein.
 
+
 <a name="lost-password"></a>
 
 #### Wenn Sie Ihr aktuelles Passwort nicht kennen 
@@ -120,6 +121,7 @@ Das Prinzip ist einfach: Ein Masterpasswort, das hinreichend komplex sein muss, 
 > 
 > Die Berücksichtigung des neuen Passworts bewirkt automatisch die Schließung aller aktiven Sitzungen Ihres OVHcloud Kunden-Accounts.
 > 
+
 
 ## Weiterführende Informationen
 

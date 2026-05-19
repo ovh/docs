@@ -1,6 +1,6 @@
 ---
-title: OVHcloud AntiSpam - Best Practices and Unblocking an IP
-excerpt: Find out about our antispam best practices and how to unblock an IP blocked for SPAM
+title: "OVHcloud AntiSpam - Best Practices and Unblocking an IP"
+excerpt: "Apply OVHcloud antispam best practices and unblock a dedicated server IP address flagged for spam sending."
 updated: 2026-01-06
 ---
 
@@ -46,8 +46,6 @@ Once an IP is "blocked for SPAM", an email will be sent to your account containi
 > Destination IP: 188.95.235.33 - Message-ID: zcb.3z54da33hn98v9bcq-nrf3r67cc57e3b8aadfac63b2c408e3f5f9a27.1d44jd9340252.1655508652095@xxxxxx.xxxx.net - Spam score: 300
 > <br>
 > <br>
-
-## Instructions
 
 **What to do after receiving the email alert?**
 
@@ -272,9 +270,9 @@ Microsoft uses a whitelist policy. This means that initially, everything starts 
 
 - **To a Gmail server**
 
-If your recipients are with Gmail, adding specific records (e.g. a DMARC record) may ensure that emails reach them. Here is a Google article that can help you with this: [Add a DMARC record](https://support.google.com/a/answer/2466563/).
+If your recipients are with Gmail, adding specific records (e.g. a DMARC record) may ensure that emails reach them. Here is a Google article that can help you with this: [Add a DMARC record](https://support.google.com/a/answer/2466580?hl=en).
 
-Google also has a [dedicated article](https://support.google.com/mail/answer/81126/) regarding spam prevention to Gmail users.
+Google also has a [dedicated article](https://support.google.com/a/answer/81126?hl=en) regarding spam prevention to Gmail users.
 
 ### Reporting a false positive
 
@@ -287,5 +285,7 @@ If your emails do comply, you can inform us by sending a sample of your email (i
 Once the information is sent, our support team will communicate with Vade Secure for further analysis of the case.
 
 ## Go further
+
+[How to secure a Dedicated Server](/pages/bare_metal_cloud/dedicated_servers/securing-a-dedicated-server)
 
 Join our [community of users](/links/community).

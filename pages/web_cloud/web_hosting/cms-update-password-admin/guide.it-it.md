@@ -1,7 +1,7 @@
 ---
 title: "Come cambiare la password amministratore di un CMS"
 excerpt: "Questa guida ti mostra come modificare la password amministratore del tuo CMS direttamente tramite l'interfaccia di amministrazione del CMS o utilizzando phpMyAdmin dallo Spazio Cliente OVHcloud"
-updated: 2024-10-15
+updated: 2026-03-31
 ---
 
 ## Obiettivo
@@ -20,7 +20,7 @@ Hai perso l'accesso all'interfaccia di gestione di WordPress, PrestaShop, Joomla
 
 ### Accesso allo Spazio Cliente OVHcloud
 
-- **Link diretto:** [Hosting plans](/links/control-panel/web-hosting)
+- **Link diretto:** [Hosting](/links/control-panel/web-hosting)
 - **Percorso di navigazione:** `Web Cloud`{.action} > `Hosting`{.action} > Seleziona il tuo hosting web
 
 ---
@@ -98,11 +98,30 @@ Hai accesso all’interfaccia di gestione del CMS e conosci la tua password attu
 
 ### Modificare la password amministratore tramite phpMyAdmin dallo Spazio Cliente OVHcloud <a name="via-phpMyAdmin"></a>
 
+<!-- CP-STEPS-START:access-phpmyadmin -->
 Non hai più accesso all'interfaccia di gestione del CMS o non puoi utilizzare la funzionalità "Password dimenticata" perché l'indirizzo email associato non è raggiungibile? Utilizza phpMyAdmin dal tuo [Spazio Cliente OVHcloud](/links/manager) per reimpostare la password direttamente dal database.
 
-Accedi allo [Spazio Cliente OVHcloud](/links/manager) e seleziona `Web Cloud`{.action}. Clicca su `Hosting`{.action} e seleziona il servizio interessato. Nella scheda `Database`{.action}, identifica il database utilizzato dal tuo CMS, clicca sul pulsante `...`{.action} e poi su `Accedi a phpMyAdmin`{.action}.
+Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **4** passaggi.
 
-Inserire gli identificativi del database (nome utente e password) definiti durante la creazione del database. Una volta connesso a phpMyAdmin, clicca sulla scheda interessata qui sotto.
+> [!tabs]
+> **Passaggio 1**
+>>
+>> Accedi alla pagina [Hosting](/links/control-panel/web-hosting) e seleziona il servizio interessato.
+>>
+>> ![Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Passaggio 2**
+>>
+>> Clicca sulla scheda `Databases`{.action} e identifica il database utilizzato dal tuo CMS.
+>>
+> **Passaggio 3**
+>>
+>> Clicca sul pulsante `...`{.action} e poi su `Accedi a phpMyAdmin`{.action}.
+>>
+> **Passaggio 4**
+>>
+>> Inserisci gli identificativi del database (nome utente e password) definiti durante la creazione del database. Una volta connesso a phpMyAdmin, clicca sulla scheda interessata qui sotto.
+<!-- CP-STEPS-END:access-phpmyadmin -->
 
 > [!tabs]
 > WordPress

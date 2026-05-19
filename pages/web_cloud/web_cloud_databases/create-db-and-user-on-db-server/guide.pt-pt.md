@@ -29,22 +29,24 @@ Uma base de dados (DB) permite armazenar elementos ditos dinâmicos, como coment
 
 ### Criar uma base de dados
 
-Clique nos separadores abaixo para ver cada um dos **4** passos.
+<!-- CP-STEPS-START:criar-base-de-dados -->
+
+Clique nos separadores abaixo para visualizar cada uma das **4** etapas.
 
 > [!tabs]
-> **Passo 1**
+> **Etapa 1**
 >>
 >> Aceda à página [Web Cloud Databases](/links/control-panel/web-cloud-databases) e escolha a solução correspondente.
 >>
 >> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases.png){.thumbnail}
 >>
-> **Passo 2**
+> **Etapa 2**
 >>
 >> Clique no separador `Bases de dados`{.action}.
 >>
-> **Passo 3**
+> **Etapa 3**
 >>
->> Clique em `Adicionar uma base de dados`{.action}.
+>> Clique em `Criar base de dados`{.action}.
 >>
 >> ![web-cloud-databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/databases/add-database.png){.thumbnail}
 >>
@@ -52,7 +54,7 @@ Clique nos separadores abaixo para ver cada um dos **4** passos.
 >> >
 >> > A criação de esquemas PostgreSQL não está atualmente disponível nos servidores Web Cloud Databases.
 >>
-> **Passo 4**
+> **Etapa 4**
 >>
 >> Preencha os campos de acordo com os critérios indicados. Pode criar diretamente um utilizador selecionando a opção **"Criar um utilizador"**:
 >>
@@ -65,57 +67,65 @@ Clique nos separadores abaixo para ver cada um dos **4** passos.
 >>
 >> ![web-cloud-databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/databases/add-database-confirmation.png){.thumbnail}
 
+<!-- CP-STEPS-END:criar-base-de-dados -->
+
 ### Criar um utilizador
 
 Para utilizar um servidor de bases de dados OVHcloud, crie utilizadores com permissões específicas de ligação a uma base de dados.
 
-Clique nos separadores abaixo para ver cada um dos **4** passos.
+<!-- CP-STEPS-START:criar-utilizador -->
+
+Clique nos separadores abaixo para visualizar cada uma das **4** etapas.
 
 > [!tabs]
-> **Passo 1**
+> **Etapa 1**
 >>
 >> Aceda à página [Web Cloud Databases](/links/control-panel/web-cloud-databases) e escolha a solução correspondente.
 >>
 >> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases.png){.thumbnail}
 >>
-> **Passo 2**
+> **Etapa 2**
 >>
 >> Clique no separador `Utilizadores e permissões`{.action}.
 >>
-> **Passo 3**
+> **Etapa 3**
 >>
->> Clique em `Adicionar um utilizador`{.action}.
+>> Clique em `Adicionar utilizador`{.action}.
 >>
 >> ![web-cloud-databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/users-and-rights/add-user.png){.thumbnail}
 >>
-> **Passo 4**
+> **Etapa 4**
 >>
 >> Introduza um "nome de utilizador" e uma "palavra-passe" e clique em `Validar`{.action}.
+
+<!-- CP-STEPS-END:criar-utilizador -->
 
 ### Gerir as permissões dos utilizadores
 
 Para permitir que um utilizador efetue ações numa base de dados, é necessário atribuir-lhe permissões.
 
-Clique nos separadores abaixo para ver cada um dos **4** passos.
+<!-- CP-STEPS-START:gerir-permissoes-utilizadores -->
+
+Clique nos separadores abaixo para visualizar cada uma das **4** etapas.
 
 > [!tabs]
-> **Passo 1**
+> **Etapa 1**
 >>
 >> Aceda à página [Web Cloud Databases](/links/control-panel/web-cloud-databases) e escolha a solução correspondente.
 >>
 >> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases.png){.thumbnail}
 >>
-> **Passo 2**
+> **Etapa 2**
 >>
 >> Clique no separador `Utilizadores e permissões`{.action}.
 >>
-> **Passo 3**
+> **Etapa 3**
 >>
->> Clique no botão `...`{.action} à direita do utilizador correspondente e depois em `Gerir as permissões`{.action}.
+>> Clique no botão `...`{.action} à direita do utilizador correspondente e depois em `Gerir permissões`{.action}.
 >>
 >> ![web-cloud-databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/users-and-rights/manage-rights.png){.thumbnail}
 >>
-> **Passo 4**
+> **Etapa 4**
 >>
 >> Na coluna da esquerda **Base de dados**, encontrará a lista das bases de dados do seu servidor.
 >>
@@ -132,6 +142,8 @@ Clique nos separadores abaixo para ver cada um dos **4** passos.
 >>
 >> ![web-cloud-databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/users-and-rights/changing-user-rights.png){.thumbnail}
 
+<!-- CP-STEPS-END:gerir-permissoes-utilizadores -->
+
 ### Eliminar uma base de dados
 
 > [!warning]
@@ -142,24 +154,28 @@ Clique nos separadores abaixo para ver cada um dos **4** passos.
 > uma cópia de segurança e o seu download antes de qualquer eliminação.
 >
 
-Clique nos separadores abaixo para ver cada um dos **3** passos.
+<!-- CP-STEPS-START:eliminar-base-de-dados -->
+
+Clique nos separadores abaixo para visualizar cada uma das **3** etapas.
 
 > [!tabs]
-> **Passo 1**
+> **Etapa 1**
 >>
 >> Aceda à página [Web Cloud Databases](/links/control-panel/web-cloud-databases) e escolha a solução correspondente.
 >>
 >> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases.png){.thumbnail}
 >>
-> **Passo 2**
+> **Etapa 2**
 >>
 >> Clique no separador `Bases de dados`{.action}.
 >>
-> **Passo 3**
+> **Etapa 3**
 >>
->> Clique no botão `...`{.action} à direita da base de dados correspondente e depois em `Eliminar a base de dados`{.action}.
+>> Clique no botão `...`{.action} à direita da base de dados correspondente e depois em `Eliminar base de dados`{.action}.
 >>
 >> ![web-cloud-databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/databases/delete-the-database.png){.thumbnail}
+
+<!-- CP-STEPS-END:eliminar-base-de-dados -->
 
 ## Quer saber mais?
 

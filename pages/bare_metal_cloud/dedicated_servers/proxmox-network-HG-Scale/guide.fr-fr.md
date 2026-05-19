@@ -1,6 +1,6 @@
 ---
-title: 'Configurer le réseau sur Proxmox VE sur les gammes High Grade, Scale & Advance'
-excerpt: 'Découvrez comment configurer le réseau sur Proxmox VE'
+title: "Configurer le réseau sur Proxmox VE sur les gammes High Grade, Scale & Advance"
+excerpt: "Configurez les interfaces réseau Proxmox VE sur les serveurs dédiés des gammes High Grade, Scale et Advance étape par étape"
 updated: 2026-01-23
 ---
 
@@ -435,5 +435,11 @@ ADDITIONAL_IP # doit retourner votre Additional IP
 > Vous devez redémarrer les services réseau de la VM pour que la configuration soit prise en compte.
 
 ## Aller plus loin
+
+[Configurer le réseau sur Windows Server avec Hyper-V](/pages/bare_metal_cloud/dedicated_servers/hyperv-network-HG-Scale)
+
+[Mise à niveau du matériel sur un serveur dédié High Grade ou Scale](/pages/bare_metal_cloud/dedicated_servers/hardware-upgrade-HG-Scale)
+
+[Réseau - Résolution des problèmes de téléchargements lents dans les conteneurs et les machines virtuelles exécutées sur les serveurs Proxmox VE avec les cartes réseau Broadcom BCM57502](/pages/bare_metal_cloud/dedicated_servers/proxmox-broadcom-slow-downloads)
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).

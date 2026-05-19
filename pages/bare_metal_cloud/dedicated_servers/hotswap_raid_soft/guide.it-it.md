@@ -1,6 +1,6 @@
 ---
-title: Sostituire un disco a caldo su un server con RAID Software
-excerpt: Come sostituire un disco senza interruzione di servizio sul tuo server con RAID Software
+title: "Sostituzione a caldo su un server dedicato con RAID software"
+excerpt: "Sostituisci un disco difettoso su un server dedicato con RAID software senza interruzione grazie alla procedura di hot-swap"
 updated: 2023-08-21
 ---
 
@@ -300,4 +300,4 @@ A questo punto il disco malfunzionante è pronto per essere sostituito da un tec
 
 [Gestire il RAID Hardware](/pages/bare_metal_cloud/dedicated_servers/raid_hard) (in inglese)
 
-Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.
+Contatta la nostra [Community di utenti](/links/community).

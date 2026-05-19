@@ -1,7 +1,7 @@
 ---
 title: "Jak zmienić hasło administratora CMS"
 excerpt: "Dowiedz się, jak zmienić hasło administratora Twojego CMS bezpośrednio w interfejsie zarządzania CMS lub za pomocą narzędzia phpMyAdmin w Panelu klienta OVHcloud"
-updated: 2024-10-15
+updated: 2026-03-31
 ---
 
 ## Wprowadzenie
@@ -20,7 +20,7 @@ Straciłeś dostęp do interfejsu administracyjnego WordPressa, PrestaShop, Joom
 
 ### Dostęp do Panelu klienta OVHcloud
 
-- **Link bezpośredni:** [Hosting plans](/links/control-panel/web-hosting)
+- **Link bezpośredni:** [Hosting](/links/control-panel/web-hosting)
 - **Ścieżka nawigacji:** `Web Cloud`{.action} > `Hosting`{.action} > Wybierz hosting WWW
 
 ---
@@ -98,11 +98,30 @@ Masz dostęp do interfejsu administracyjnego CMS i znasz swoje aktualne hasło? 
 
 ### Zmiana hasła administratora za pomocą narzędzia phpMyAdmin w Panelu klienta OVHcloud <a name="via-phpmyadmin"></a>
 
+<!-- CP-STEPS-START:access-phpmyadmin -->
 Nie masz dostępu do interfejsu administracyjnego CMS lub nie możesz użyć funkcji "Nie pamiętasz hasła", ponieważ powiązany adres e-mail jest niedostępny? Użyj narzędzia phpMyAdmin w [Panelu klienta OVHcloud](/links/manager), aby zresetować hasło bezpośrednio z bazy danych.
 
-Zaloguj się do [Panelu klienta OVHcloud](/links/manager) i wybierz opcję `Web Cloud`{.action}. Kliknij pozycję `Hosting`{.action} i wybierz odpowiednią ofertę. W zakładce `Bazy danych`{.action} znajdź bazę danych używaną przez Twój CMS, kliknij przycisk `...`{.action}, a następnie `Dostęp do phpMyAdmin`{.action}.
+Kliknij poniższe karty, aby wyświetlić kolejne **4** kroki.
 
-Wpisz identyfikatory bazy danych (nazwa użytkownika i hasło), które zdefiniowałeś podczas tworzenia bazy danych. Po zalogowaniu do phpMyAdmin kliknij odpowiednią zakładkę poniżej.
+> [!tabs]
+> **Krok 1**
+>>
+>> Przejdź na stronę [Hosting](/links/control-panel/web-hosting) i wybierz odpowiednią ofertę.
+>>
+>> ![Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Krok 2**
+>>
+>> Kliknij zakładkę `Bazy danych`{.action} i znajdź bazę danych używaną przez Twój CMS.
+>>
+> **Krok 3**
+>>
+>> Kliknij przycisk `...`{.action}, a następnie `Dostęp do phpMyAdmin`{.action}.
+>>
+> **Krok 4**
+>>
+>> Wpisz identyfikatory bazy danych (nazwa użytkownika i hasło), które zdefiniowałeś podczas tworzenia bazy danych. Po zalogowaniu do phpMyAdmin kliknij odpowiednią zakładkę poniżej.
+<!-- CP-STEPS-END:access-phpmyadmin -->
 
 > [!tabs]
 > WordPress

@@ -92,6 +92,7 @@ Si estuviese comprometida, le recomendamos encarecidamente [que la cambie de inm
 
 - A continuación, aparece un mensaje indicando que la operación se ha realizado satisfactoriamente. Haga clic en el botón `Continuar`{.action} debajo de este mensaje para ser redirigido a la página de identificación. A continuación, introduzca su usuario y su nueva contraseña.
 
+
 <a name="lost-password"></a>
 
 #### En caso de haber olvidado la contraseña actual
@@ -118,6 +119,7 @@ Si estuviese comprometida, le recomendamos encarecidamente [que la cambie de inm
 > 
 > Al guardar la nueva contraseña, todas las sesiones activas en su cuenta de OVHcloud se cerrarán automáticamente.
 > 
+
 
 ## Más información
 

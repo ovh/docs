@@ -1,7 +1,7 @@
 ---
 title: "Especificidades técnicas relacionadas com os alojamentos partilhados"
 excerpt: "Saiba neste guia diferentes informações e especificidades técnicas relacionadas com os alojamentos Web"
-updated: 2023-12-08
+updated: 2026-04-01
 ---
 
 ## Objetivo
@@ -13,17 +13,6 @@ As ofertas de alojamento web da OVHcloud são partilhadas. Por conseguinte, a co
 ## Requisitos
 
 - Ter um serviço de [alojamento web OVHcloud](/links/web/hosting) compatível.
-
-<!-- CP-NAV-START:web-hosting -->
----
-
-### Acesso à Área de Cliente OVHcloud
-
-- **Ligação direta:** [Hosting plans](/links/control-panel/web-hosting)
-- **Caminho de navegação:** `Web Cloud`{.action} > `Alojamentos`{.action} > Selecione o seu alojamento web
-
----
-<!-- CP-NAV-END:web-hosting -->
 
 ## Instruções
 
@@ -38,13 +27,7 @@ As ofertas de alojamento web da OVHcloud são partilhadas. Por conseguinte, a co
 
 - Utilizar o **modo passivo** para as ligações FTP. Certifique-se de que o script ou o cliente FTP está configurado em conformidade.
 
-- Se encontrar o erro de acesso "falha de autenticação de ligação 530" ao aceder ao espaço de armazenamento FTP: Certifique-se de que as informações de acesso ao seu espaço FTP estão corretas. Para isso, aceda à [Área de Cliente OVHcloud](/links/manager) e aceda à secção `Web Cloud`{.action}. Na coluna da esquerda, clique em `Alojamentos`{.action} e selecione o alojamento web em causa. Na página que vai aparecer, clique no separador `FTP - SSH`{.action}.
-
-Nele, encontrará todas as informações de ligação ao seu espaço de armazenamento FTP, com exceção da palavra-passe.
-
-As palavras-passe nunca são apresentadas, mas podem ser alteradas.
-
-Encontre mais informações sobre este assumpto no nosso guia "[Ligar-se ao espaço de armazenamento FTP do alojamento web](/pages/web_cloud/web_hosting/ftp_connection)".
+- Se encontrar o erro de acesso "falha de autenticação de ligação 530" ao aceder ao espaço de armazenamento FTP, certifique-se de que as informações de acesso ao seu espaço FTP estão corretas. Consulte o nosso guia "[Ligar-se ao espaço de armazenamento FTP do alojamento web](/pages/web_cloud/web_hosting/ftp_connection)" para encontrar todas as informações de ligação ao seu espaço de armazenamento FTP. As palavras-passe nunca são apresentadas, mas podem ser alteradas.
 
 ### E-mails <a name="emails"></a>
 

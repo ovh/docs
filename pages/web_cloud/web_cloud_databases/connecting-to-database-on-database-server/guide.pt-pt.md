@@ -58,34 +58,35 @@ Pode consultar o conteúdo da sua base de dados através de uma interface. Exist
 
 #### Ligação através do phpMyAdmin OVHcloud
 
-Clique nos separadores abaixo para ver cada um dos **4** passos.
+<!-- CP-STEPS-START:mysql-phpmyadmin-ovhcloud -->
+Clique nos separadores abaixo para visualizar cada uma das **4** etapas.
 
 > [!tabs]
-> **Passo 1**
+> **Etapa 1**
 >>
 >> Aceda à página [Web Cloud Databases](/links/control-panel/web-cloud-databases) e escolha a solução correspondente.
 >>
 >> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases.png){.thumbnail}
 >>
-> **Passo 2**
+> **Etapa 2**
 >>
 >> Obtenha as seguintes informações de ligação:
 >>
 >> - **Servidor (hostname) e porta:** visíveis no separador `Informações gerais`{.action}, secção `Informações da ligação`.
 >> - **Nome de utilizador:** visível no separador `Utilizadores e permissões`{.action}.
->> - **Palavra-passe:** a palavra-passe associada ao utilizador. Se não se lembra dela, aceda ao separador `Utilizadores e permissões`{.action}, clique em `...`{.action} à direita do utilizador em causa e, em seguida, em `Alterar a palavra-passe`{.action}.
+>> - **Palavra-passe:** a palavra-passe associada ao utilizador. Se não se lembra dela, aceda ao separador `Utilizadores e permissões`{.action}, clique em `...`{.action} à direita do utilizador em causa e, em seguida, em `Alterar palavra-passe`{.action}.
 >>
 >> > [!warning]
 >> >
 >> > Se alterar a palavra-passe de um utilizador de base de dados, todas as aplicações/websites que acedam a essa base de dados devem ser atualizados em conformidade.
 >>
-> **Passo 3**
+> **Etapa 3**
 >>
 >> No separador `Informações gerais`{.action}, localize a secção **Gestão da base de dados** e clique na ligação phpMyAdmin em **Interface do utilizador**.
 >>
 >> ![web-cloud-databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/general-information/database-administration.png){.thumbnail}
 >>
-> **Passo 4**
+> **Etapa 4**
 >>
 >> Na página de início de sessão do phpMyAdmin, introduza as informações obtidas no passo 2:
 >>
@@ -105,23 +106,25 @@ Se a ligação for bem-sucedida, será apresentada a página seguinte.
 >
 > - O erro #1045 significa que as credenciais estão incorretas. Verifique o nome de utilizador e/ou a palavra-passe.
 > - O erro #2005 significa que deve verificar o nome do servidor e se este está a funcionar corretamente.
+<!-- CP-STEPS-END:mysql-phpmyadmin-ovhcloud -->
 
 #### Ligação à base de dados fora da Área de Cliente
 
+<!-- CP-STEPS-START:mysql-external-credentials -->
 > [!warning]
 >
 > Se utilizar uma solução "Web Cloud Databases"/"SQL Privado", não se esqueça de autorizar o seu IP com a ajuda do guia sobre a [configuração do seu servidor de bases de dados](/pages/web_cloud/web_cloud_databases/configure-database-server#gerer-vos-acces).
 
-Clique nos separadores abaixo para ver cada um dos **2** passos.
+Clique nos separadores abaixo para visualizar cada uma das **2** etapas.
 
 > [!tabs]
-> **Passo 1**
+> **Etapa 1**
 >>
 >> Aceda à página [Web Cloud Databases](/links/control-panel/web-cloud-databases) e escolha a solução correspondente.
 >>
 >> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases.png){.thumbnail}
 >>
-> **Passo 2**
+> **Etapa 2**
 >>
 >> Obtenha as seguintes informações de ligação:
 >>
@@ -130,6 +133,7 @@ Clique nos separadores abaixo para ver cada um dos **2** passos.
 >> - **Nome de utilizador:** visível no separador `Utilizadores e permissões`{.action}.
 >> - **Palavra-passe:** a palavra-passe associada ao utilizador em causa.
 >> - **Nome da base de dados:** visível no separador `Bases de dados`{.action}.
+<!-- CP-STEPS-END:mysql-external-credentials -->
 
 **Clique no método de ligação pretendido para ver o conteúdo.**
 
@@ -188,16 +192,17 @@ Pode utilizar a sua própria interface phpMyAdmin para explorar o conteúdo da b
 
 ### Ligar-se a uma base de dados PostgreSQL
 
-Clique nos separadores abaixo para ver cada um dos **2** passos.
+<!-- CP-STEPS-START:postgresql-external-credentials -->
+Clique nos separadores abaixo para visualizar cada uma das **2** etapas.
 
 > [!tabs]
-> **Passo 1**
+> **Etapa 1**
 >>
 >> Aceda à página [Web Cloud Databases](/links/control-panel/web-cloud-databases) e escolha a solução correspondente.
 >>
 >> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases.png){.thumbnail}
 >>
-> **Passo 2**
+> **Etapa 2**
 >>
 >> Obtenha as seguintes informações de ligação:
 >>
@@ -206,6 +211,7 @@ Clique nos separadores abaixo para ver cada um dos **2** passos.
 >> - **Nome de utilizador:** visível no separador `Utilizadores e permissões`{.action}.
 >> - **Palavra-passe:** a palavra-passe associada ao utilizador em causa.
 >> - **Nome da base de dados:** visível no separador `Bases de dados`{.action}.
+<!-- CP-STEPS-END:postgresql-external-credentials -->
 
 **Clique no método de ligação pretendido para ver o conteúdo.**
 

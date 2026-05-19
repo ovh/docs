@@ -80,7 +80,9 @@ EEFFFFFFFFFFFFFGGGGGGGGGGGGGhhhhhhhhhhhhhhhhhhhhhhhhhh== new@sshkey
 
 For security reasons, delete the obsolete "old" key string from the file. Save your changes and exit the editor.
 
+<!-- CP-STEPS-START:restart-instance-normal-mode -->
 Restart the instance in "normal" mode from your [OVHcloud Control Panel](/links/manager). Refer to the [rescue mode guide](/pages/public_cloud/compute/put_an_instance_in_rescue_mode) if needed.
+<!-- CP-STEPS-END:restart-instance-normal-mode -->
 
 You have now access to the instance with your new SSH key pair.
 

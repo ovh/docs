@@ -1,20 +1,20 @@
 ---
 title: "Recuperare il backup di un database eliminato"
 excerpt: "Scopri come recuperare il backup di un database eliminato dal tuo Spazio Cliente OVHcloud"
-updated: 2025-02-20
+updated: 2026-04-01
 ---
 
 ## Obiettivo
 
-La maggior parte delle nostre soluzioni di [hosting Web](/links/web/hosting) includono database. In caso di eliminazione accidentale di un database associato all’hosting Web, è possibile tentare di recuperarne il backup tramite le nostre API.
+La maggior parte delle nostre soluzioni di [hosting Web](/links/web/hosting) includono database. In caso di eliminazione accidentale di un database associato all'hosting Web, è possibile tentare di recuperarne il backup tramite le nostre API.
 
 **Questa guida ti mostra come recuperare il backup di un database dallo Spazio Cliente OVHcloud utilizzando le API OVHcloud.**
 
 > [!warning]
 >
-> OVHcloud mette a disposizione i servizi ma non si occupa della loro configurazione e gestione. garantirne il corretto funzionamento è quindi responsabilità dell’utente.
+> OVHcloud mette a disposizione i servizi ma non si occupa della loro configurazione e gestione. garantirne il corretto funzionamento è quindi responsabilità dell'utente.
 >
-> Questa guida ti aiuta a eseguire le operazioni necessarie alla configurazione del tuo account. In caso di difficoltà o dubbi, ti consigliamo di contattare un [provider specializzato](/links/partner). OVHcloud non sarà infatti in grado di fornirti un’assistenza aggiuntiva sulle API. Per maggiori informazioni consulta la sezione ["Per saperne di più"](#go-further) di questa guida.
+> Questa guida ti aiuta a eseguire le operazioni necessarie alla configurazione del tuo account. In caso di difficoltà o dubbi, ti consigliamo di contattare un [provider specializzato](/links/partner). OVHcloud non sarà infatti in grado di fornirti un'assistenza aggiuntiva sulle API. Per maggiori informazioni consulta la sezione ["Per saperne di più"](#go-further) di questa guida.
 >
 
 ## Prerequisiti
@@ -27,7 +27,7 @@ La maggior parte delle nostre soluzioni di [hosting Web](/links/web/hosting) inc
 
 ### Accesso allo Spazio Cliente OVHcloud
 
-- **Link diretto:** [Hosting plans](/links/control-panel/web-hosting)
+- **Link diretto:** [Hosting](/links/control-panel/web-hosting)
 - **Percorso di navigazione:** `Web Cloud`{.action} > `Hosting`{.action} > Seleziona il tuo hosting web
 
 ---
@@ -44,39 +44,44 @@ Le API OVHcloud sono messe a disposizione per permettere agli sviluppatori o agl
 > Inoltre, quando un database viene eliminato dall'utente o dall'amministratore, OVHcloud non potrà garantire il recupero del backup per le ragioni sopra indicate.
 >
 
-### Step 1 - Recupera il nome dell’hosting Web al quale era associato il database eliminato
+### 1 - Recupera il nome dell'hosting Web al quale era associato il database eliminato
 
-Per recuperare il nome dell’hosting Web, esegui queste operazioni:
+<!-- CP-STEPS-START:retrieve-webhosting-name -->
+Per recuperare il nome dell'hosting Web, clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **2** passi.
 
-1. Accedi allo [Spazio Cliente OVHcloud](/links/manager).
-2. Clicca sulla scheda `Web Cloud`{.action}.
-3. Nella colonna di sinistra, clicca sul menu `Hosting`{.action}.
-4. Seleziona il tuo hosting Web.
-5. In alto a sinistra della pagina, trovi il nome del tuo hosting Web a destra della voce `Hosting /`{.action}.
+> [!tabs]
+> **Passaggio 1**
+>>
+>> Accedi alla pagina [Hosting](/links/control-panel/web-hosting) e seleziona l'hosting web interessato.
+>>
+> **Passaggio 2**
+>>
+>> In alto a sinistra nella pagina visualizzata, trovi il nome del tuo hosting web a destra della voce `Hosting /`.
+>>
+>> ![Nome dell'hosting web nello Spazio Cliente OVHcloud](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-webhosting-name.png){.thumbnail}
+<!-- CP-STEPS-END:retrieve-webhosting-name -->
 
-![API](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-webhosting-name.png){.thumbnail}
-
-### Step 2 - Connettersi alle API OVHcloud e consentire loro l'accesso ai servizi
+### 2 - Connettersi alle API OVHcloud e consentire loro l'accesso ai servizi
 
 Per effettuare questa operazione, esegui le operazioni seguenti:
 
-- Accedi al nostro sito [API OVHcloud](/links/api) (verifica di essere su `https://eu.api.ovh.com` se i tuoi servizi sono ospitati in Europa e su `https://ca.api.ovh.com` se i tuoi servizi sono ospitati al di fuori dell’Europa).
-- Nella nuova pagina, clicca al centro su `Esplora l’API OVHcloud`{.action}.
+- Accedi al nostro sito [API OVHcloud](/links/api) (verifica di essere su `https://eu.api.ovh.com` se i tuoi servizi sono ospitati in Europa e su `https://ca.api.ovh.com` se i tuoi servizi sono ospitati al di fuori dell'Europa).
+- Nella nuova pagina, clicca al centro su `Esplora l'API OVHcloud`{.action}.
 - Nella nuova pagina che appare e nella parte sinistra della pagina, clicca sul form a destra del form `v1`{.action} e seleziona/inserisci la voce `/hosting/web`.
-- Dall’elenco di API che appare sotto nella colonna di sinistra, cerca e clicca su questa API: **GET /hosting/web/{serviceName}/dump**. Per accedervi, clicca direttamente sull’API :
+- Dall'elenco di API che appare sotto nella colonna di sinistra, cerca e clicca su questa API: **GET /hosting/web/{serviceName}/dump**. Per accedervi, clicca direttamente sull'API :
 
 > [!api]
 >
 > @api {v1} /hosting/web GET /hosting/web/{serviceName}/dump
 >
 
-- Sul lato destro della pagina compare l’API con i suoi moduli da compilare.
+- Sul lato destro della pagina compare l'API con i suoi moduli da compilare.
 - Clicca sul pulsante in alto a destra intitolato `Authenticate`{.action} e poi sul pulsante `Login with OVHcloud SSO`{.action}.
-- Si apre l’interfaccia di connessione al tuo [Spazio Cliente OVHcloud](/links/manager).
+- Si apre l'interfaccia di connessione al tuo [Spazio Cliente OVHcloud](/links/manager).
 - Accedi con il tuo identificativo cliente e clicca su `Authorize`{.action} per utilizzare le API OVHcloud con i servizi presenti nel tuo Spazio Cliente.
-- Verrai reindirizzato automaticamente alla pagina precedente dell’API **GET /hosting/web/{serviceName}/dump**, mentre sarai connesso al tuo Spazio Cliente OVHcloud.
+- Verrai reindirizzato automaticamente alla pagina precedente dell'API **GET /hosting/web/{serviceName}/dump**, mentre sarai connesso al tuo Spazio Cliente OVHcloud.
 
-### Step 3 - Verifica la disponibilità dei backup e recupera l'ID dell'ultimo backup
+### 3 - Verifica la disponibilità dei backup e recupera l'ID dell'ultimo backup
 
 Per farlo, compila i diversi moduli come dettagliato di seguito:
 
@@ -101,29 +106,29 @@ Se tutto è stato inserito correttamente e alcuni backup sono disponibili per il
 
 Ognuno di questi numeri corrisponde a un identificativo di backup disponibile (ID). Questi numeri identificativi di backup vengono visualizzati dal più recente al meno recente. **Copia l'ID più alto della lista** (senza `,` alla fine) per recuperare (allo Step 4 di questa guida) l'ultimo backup del database eliminato.
 
-Se nella finestra non compare alcun ID, verifica di aver effettuato l’accesso con il corretto identificativo cliente OVHcloud (se ne hai diversi). Verificare inoltre le informazioni inserite nelle sezioni **PATH PARAMETERS** e **QUERY-STRING PARAMETERS**. Quindi riavviare l'operazione.
+Se nella finestra non compare alcun ID, verifica di aver effettuato l'accesso con il corretto identificativo cliente OVHcloud (se ne hai diversi). Verificare inoltre le informazioni inserite nelle sezioni **PATH PARAMETERS** e **QUERY-STRING PARAMETERS**. Quindi riavviare l'operazione.
 
 Se nonostante tutto non hai ancora un ID visualizzato, vuol dire che non ci sono o non ci sono più backup disponibili per il database eliminato sulla nostra infrastruttura.
 
-### Step 4 - Recupera l'ultimo backup
+### 4 - Recupera l'ultimo backup
 
-Grazie al numero identificativo di backup recuperato allo Step 3, è possibile scaricare l’ultimo backup del database eliminato utilizzando un link generato via API.
+Grazie al numero identificativo di backup recuperato allo Step 3, è possibile scaricare l'ultimo backup del database eliminato utilizzando un link generato via API.
 
 Per farlo, resta sul nostro sito [API OVHcloud](/links/api) ed effettua le seguenti operazioni:
 
 - Nella parte sinistra della pagina, clicca sul form a destra del form `v1`{.action} e seleziona/inserisci la voce `/hosting/web`{.action}.
-- Dall’elenco di API che appare sotto nella colonna di sinistra, cerca e clicca su questa API: **GET /hosting/web/{serviceName}/dump/{id}**. Per accedervi, clicca direttamente sull’API :
+- Dall'elenco di API che appare sotto nella colonna di sinistra, cerca e clicca su questa API: **GET /hosting/web/{serviceName}/dump/{id}**. Per accedervi, clicca direttamente sull'API :
 
 > [!api]
 >
 > @api {v1} /hosting/web GET /hosting/web/{serviceName}/dump/{id}
 >
 
-- Sul lato destro della pagina compare l’API con i suoi moduli da compilare.
+- Sul lato destro della pagina compare l'API con i suoi moduli da compilare.
 
 Compila i moduli disponibili nella sezione `PATH PARAMETERS` nel modo seguente:
 
-- `id`: Copia il numero identificativo di backup recuperato allo Step 3. Se non eri disconnesso dal nostro sito API OVHcloud, l’interfaccia può proporti direttamente i diversi numeri di ID di backup disponibili. In questo caso, clicca sul primo numero di ID dell’elenco presente subito sotto il form **id**.
+- `id`: Copia il numero identificativo di backup recuperato allo Step 3. Se non eri disconnesso dal nostro sito API OVHcloud, l'interfaccia può proporti direttamente i diversi numeri di ID di backup disponibili. In questo caso, clicca sul primo numero di ID dell'elenco presente subito sotto il form **id**.
 - `serviceName`: Inserisci il nome del tuo hosting Web precedentemente recuperato nello Step 1 di questa guida.
 
 ![API](/pages/assets/screens/api/get-hosting-web-servicename-dump-id.png){.thumbnail}
@@ -155,13 +160,13 @@ Se tutto è stato inserito correttamente, il seguente risultato appare nella fin
 
 In questo risultato, copia l'intero URL in "HTTPS" **senza virgolette** presente a destra della dicitura `"url":`, quindi incollalo nella barra di ricerca del tuo browser Internet per avviare il download del backup.
 
-### Step 5 - Crea un nuovo database, importa il file di backup e ripristina il collegamento tra il tuo sito Web e il nuovo database
+### 5 - Crea un nuovo database, importa il file di backup e ripristina il collegamento tra il tuo sito Web e il nuovo database
 
 Una volta recuperato il backup del database, sarà necessario crearne uno nuovo. Per farlo, consulta la nostra guida "[Creare un database sul proprio hosting Web](/pages/web_cloud/web_hosting/sql_create_database)".
 
 Una volta creato il nuovo database, importa il backup utilizzando la nostra guida "[Importare un backup nel database di un hosting Web](/pages/web_cloud/web_hosting/sql_importing_mysql_database)".
 
-Infine, collega il database OVHcloud al file di configurazione del sito Web presente nello [spazio di storage FTP dell’hosting OVHcloud](/pages/web_cloud/web_hosting/ftp_connection).
+Infine, collega il database OVHcloud al file di configurazione del sito Web presente nello [spazio di storage FTP dell'hosting OVHcloud](/pages/web_cloud/web_hosting/ftp_connection).
 Per farlo, sostituisci le informazioni di connessione al database eliminato accidentalmente con quelle del nuovo database OVHcloud. Queste informazioni si trovano nel file di "configurazione/connessione al tuo database" del tuo sito Web.
 
 > [!success]

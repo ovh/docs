@@ -1,7 +1,7 @@
 ---
 title: 'Añadir crédito Cloud'
 excerpt: 'Cómo añadir créditos o códigos promocionales a su proyecto de Public Cloud'
-updated: 2026-03-31
+updated: 2026-05-05
 ---
 
 ## Objetivo
@@ -69,5 +69,10 @@ El saldo del código promocional aparecerá en la lista `Crédito y códigos pro
 >
 
 ## Más información
+
+> [!primary]
+>
+> Los nuevos clientes reciben automáticamente $200 de crédito de prueba al activar su primer proyecto Public Cloud. Consulte nuestra guía "[Creando tu primer proyecto de Public Cloud de OVHcloud](/pages/public_cloud/public_cloud_cross_functional/create_a_public_cloud_project)".
+>
 
 Interactúe con nuestra [comunidad de usuarios](/links/community).

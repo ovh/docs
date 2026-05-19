@@ -123,6 +123,8 @@ Les manipulations pour réinitialiser nos téléphones sont décrites ci-dessous
 
 ### Étape 3 - Dépanner le téléphone depuis l'espace client OVHcloud <a name="step3"></a>
 
+<!-- CP-STEPS-START:step3-depannage-plug-phone -->
+
 > **Prérequis nécessaire: connaître l'adresse IP publique de votre réseau**
 >
 > Pour procéder au dépannage, il est indispensable de connaître l'adresse IP publique du réseau sur lequel est raccordé votre téléphone.
@@ -157,7 +159,9 @@ En fonction des informations sélectionnées, vous pourrez être amené à recon
 >
 > Si la reconfiguration de votre téléphone n'arrive pas à son terme, assurez-vous d'avoir bien respecté les manipulations précédentes.
 >
- 
+
+<!-- CP-STEPS-END:step3-depannage-plug-phone -->
+
 ### Étape 4 - Effectuer des tests complémentaires (facultatif) <a name="step4"></a>
 
 Si le dépannage de votre téléphone n'a pas permis de résoudre votre problématique, poursuivez en réalisant deux tests complémentaires. 

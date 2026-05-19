@@ -1,7 +1,7 @@
 ---
 title: 'Adding cloud credit'
 excerpt: 'Find out how to add credit or vouchers to your Public Cloud project'
-updated: 2026-03-31
+updated: 2026-05-05
 ---
 
 ## Objective
@@ -27,14 +27,14 @@ With the *cloud credit* option you can allocate a specific amount to your Public
 
 ## Instructions
 
+### Adding credit
+
 Open `Credit & Vouchers`{.action} in the left-hand menu under **Settings**.
 
 > [!warning]
 >
 > Note that credit added in this section cannot be transferred or refunded. It does not have monetary value, and any credit that has not been used within 13 months of purchase will be lost.
 >
-
-### Adding credit
 
 Click on the button `Buy Public Cloud credit`{.action}.
 
@@ -68,5 +68,10 @@ The voucher balance will appear in the `Credits & Vouchers` list.
 >
 
 ## Go further
+
+> [!primary]
+>
+> New customers automatically receive $270 of free trial credit when they activate their first Public Cloud project. See our guide on [Creating your first OVHcloud Public Cloud project](/pages/public_cloud/public_cloud_cross_functional/create_a_public_cloud_project).
+>
 
 Join our [community of users](/links/community).

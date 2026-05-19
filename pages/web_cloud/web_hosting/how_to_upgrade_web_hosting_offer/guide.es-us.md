@@ -28,7 +28,7 @@ Su [área de cliente de OVHcloud](/links/manager) permite aumentar la capacidad 
 
 ### Acceso al área de cliente de OVHcloud
 
-- **Enlace directo:** [Hosting plans](/links/control-panel/web-hosting)
+- **Enlace directo:** [Alojamientos](/links/control-panel/web-hosting)
 - **Ruta de navegación:** `Web Cloud`{.action} > `Alojamientos`{.action} > Seleccione su alojamiento web
 
 ---
@@ -52,12 +52,13 @@ Su [área de cliente de OVHcloud](/links/manager) permite aumentar la capacidad 
 > Si desea cambiar la suscripción a un plan inferior, siga los pasos de nuestra guía "[Migrar un sitio web y el correo a OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh)".
 >
 
+<!-- CP-STEPS-START:modify-subscription -->
 Para modificar su suscripción, haga clic en las fichas siguientes para ver cada una de las **2** etapas.
 
 > [!tabs]
 > **Etapa 1**
 >>
->> Acceda a la página [Hosting plans](/links/control-panel/web-hosting) y seleccione el alojamiento web correspondiente.
+>> Acceda a la página [Alojamientos](/links/control-panel/web-hosting) y seleccione el alojamiento web correspondiente.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
@@ -68,7 +69,7 @@ Para modificar su suscripción, haga clic en las fichas siguientes para ver cada
 >> ![change_plan](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/pro-change-plan.png){.thumbnail}
 >>
 >> A continuación, seleccione la nueva suscripción y su duración. Acepte los contratos correspondientes y haga clic en `Enviar`{.action}.
-
+<!-- CP-STEPS-END:modify-subscription -->
 
 ### Casos particulares
 
@@ -82,12 +83,13 @@ Con la [opción Boost](/links/web/hosting-options-boost), disponible en nuestros
 
 Si la opción **Boost** es adecuada para usted, encontrará a continuación las instrucciones para **activar** o **desactivar** esta opción en su alojamiento.
 
+<!-- CP-STEPS-START:enable-boost -->
 Para **activar la opción Boost**, haga clic en las fichas siguientes para ver cada una de las **2** etapas.
 
 > [!tabs]
 > **Etapa 1**
 >>
->> Acceda a la página [Hosting plans](/links/control-panel/web-hosting) y seleccione el alojamiento web correspondiente.
+>> Acceda a la página [Alojamientos](/links/control-panel/web-hosting) y seleccione el alojamiento web correspondiente.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
@@ -96,13 +98,15 @@ Para **activar la opción Boost**, haga clic en las fichas siguientes para ver c
 >> En el recuadro **Información general** de la página que se abre, haga clic en el botón `...`{.action} a la derecha de **Boost** y seleccione `Mejorar mi plan`{.action}.
 >>
 >> ![boost enable](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/boost-my-hosting-plan.png){.thumbnail}
+<!-- CP-STEPS-END:enable-boost -->
 
+<!-- CP-STEPS-START:disable-boost -->
 Para **desactivar la opción Boost**, haga clic en las fichas siguientes para ver cada una de las **3** etapas.
 
 > [!tabs]
 > **Etapa 1**
 >>
->> Acceda a la página [Hosting plans](/links/control-panel/web-hosting) y seleccione el alojamiento web correspondiente.
+>> Acceda a la página [Alojamientos](/links/control-panel/web-hosting) y seleccione el alojamiento web correspondiente.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
@@ -119,6 +123,7 @@ Para **desactivar la opción Boost**, haga clic en las fichas siguientes para ve
 >> Se mostrará la tabla de uso de la opción Boost. Haga clic en `Desactivar el plan Boost`{.action}.
 >>
 >>![boost disable](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/boost-my-hosting-plan/deactivate-the-boost-plan.png){.thumbnail}
+<!-- CP-STEPS-END:disable-boost -->
 
 #### La facturación en caso de cambio de producto <a name="billing"></a>
 

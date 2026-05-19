@@ -1,6 +1,6 @@
 ---
-title: "Jak używać SFTP do przesyłania plików"
-excerpt: "Dowiedz się, jak łączyć się z serwerem za pomocą FileZilla, aby wgrywać i pobierać pliki"
+title: "Transfer plików przez SFTP na serwerze dedykowanym"
+excerpt: "Przesyłaj pliki z i na serwer dedykowany za pomocą SFTP z FileZilla w celu bezpiecznego przesyłania danych."
 updated: 2024-02-23
 ---
 

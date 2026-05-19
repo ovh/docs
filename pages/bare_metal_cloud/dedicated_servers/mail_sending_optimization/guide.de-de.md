@@ -1,7 +1,7 @@
 ---
-title: Optimierung des E-Mail-Versands, damit Ihre E-Mails nicht als Spam markiert werden
-excerpt: Erfahren Sie hier, wie Sie mit vorbeugenden Maßnahmen das Risiko minimieren, dass Ihre legitimen E-Mails durch Spam-Schutz blockiert werden
-updated: 2024-01-24
+title: "E-Mail-Versand auf einem Dedicated Server optimieren"
+excerpt: "Wenden Sie Best Practices für den E-Mail-Versand auf Ihrem Dedicated Server an, damit legitime Nachrichten nicht als Spam markiert werden."
+updated: 2026-05-06
 ---
 
 > [!primary]
@@ -118,6 +118,13 @@ Für mehr Informationen hierzu können Sie bei Microsoft eine [Support-Anfrage e
 
 Das Hinzufügen spezifischer Einträge wie DMARC (Domain-based Message Authentication, Reporting, and Conformance) oder DKIM (DomainKeys Identified Mail) kann den Empfang von E-Mails vereinfachen, wenn der Empfänger bei Gmail ist. Hilfe dazu finden Sie in den [unten auf dieser Seite aufgeführten Anleitungen](#go-further).
 
+### Blockierter SMTP-Port (Port 25)
+
+Wenn keine E-Mails gesendet werden oder der SMTP-Server nicht antwortet, ist ein blockierter Port eine häufige Ursache. Standardmäßig ist der ausgehende **Port 25** in der OVHcloud Infrastruktur (Dedicated Servers, VPS, Public Cloud Instanzen) blockiert, um Spam-Missbrauch zu verhindern. Zur Lösung dieses Problems:
+
+- Verwenden Sie **Port 587** (STARTTLS) für den ausgehenden E-Mail-Versand.
+- Wenn Ihr Anwendungsfall Port 25 erfordert, beantragen Sie dessen Entsperrung, indem Sie [unser Support-Team kontaktieren](/links/support-contact).
+
 ### Ihre Konfiguration überprüfen
 
 Es kann hilfreich sein, eine Seite wie [Mail Tester](http://www.mail-tester.com/) zu verwenden, um zu überprüfen, dass alle Ihre Einstellungen korrekt sind.
@@ -131,5 +138,9 @@ Es kann hilfreich sein, eine Seite wie [Mail Tester](http://www.mail-tester.com/
 [E-Mail-Sicherheit durch DMARC-Eintrag verbessern](/pages/web_cloud/domains/dns_zone_dmarc)
 
 Kontaktieren Sie unser [OVHcloud Partner-Netzwerk](/links/partner), wenn Sie beim Einsatz Ihrer OVHcloud Lösungen Unterstützung benötigen.
+
+- [OVHcloud AntiSpam - Best Practices und Entsperren einer IP-Adresse](/pages/bare_metal_cloud/dedicated_servers/antispam_best_practices)
+
+- [Dedicated Server absichern](/pages/bare_metal_cloud/dedicated_servers/securing-a-dedicated-server)
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

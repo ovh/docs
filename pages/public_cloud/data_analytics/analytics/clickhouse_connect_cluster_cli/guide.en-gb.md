@@ -26,9 +26,19 @@ ClickHouse is an open-source, columnar analytical database system designed for r
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](/links/manager).
 - A [Public Cloud project](/links/public-cloud/public-cloud) in your OVHcloud account.
 - A [ClickHouse cluster running](/pages/public_cloud/data_analytics/analytics/clickhouse_create_cluster) on OVHcloud Public Cloud and [accepting incoming connections](/pages/public_cloud/data_analytics/analytics/clickhouse_incoming_connections).
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Navigation path:** `Public Cloud`{.action} > Select your project
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## Instructions
 

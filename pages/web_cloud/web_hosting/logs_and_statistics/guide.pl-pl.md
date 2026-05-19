@@ -1,7 +1,7 @@
 ---
 title: "Hosting - sprawdzanie statystyk i logów strony www"
 excerpt: "Dowiedz się, jak sprawdzić statystyki i logi Twojej strony WWW dzięki rozwiązaniu hostingowemu"
-updated: 2025-10-09
+updated: 2026-04-01
 ---
 
 ## Wprowadzenie 
@@ -19,7 +19,7 @@ Dostęp do logów i statystyk Twojej strony WWW jest zawarty w wybranej przez Ci
 
 ### Dostęp do Panelu klienta OVHcloud
 
-- **Link bezpośredni:** [Hosting plans](/links/control-panel/web-hosting)
+- **Link bezpośredni:** [Hosting](/links/control-panel/web-hosting)
 - **Ścieżka nawigacji:** `Web Cloud`{.action} > `Hosting`{.action} > Wybierz hosting WWW
 
 ---
@@ -27,14 +27,15 @@ Dostęp do logów i statystyk Twojej strony WWW jest zawarty w wybranej przez Ci
 
 ## W praktyce
 
+<!-- CP-STEPS-START:access-stats-and-logs -->
 Aby uzyskać dostęp do różnych danych statystycznych i logów Twojego hostingu, kliknij poniższe zakładki, aby wyświetlić kolejne **3** kroki.
 
 > [!tabs]
 > **Krok 1**
 >>
->> Przejdź na stronę [Hosting plans](/links/control-panel/web-hosting), następnie wybierz odpowiedni hosting.
+>> Przejdź do strony [Hosting](/links/control-panel/web-hosting) i wybierz odpowiedni hosting WWW.
 >>
->> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>> ![Wybór hostingu WWW w Panelu klienta OVHcloud](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
 > **Krok 2**
 >>
@@ -48,10 +49,11 @@ Aby uzyskać dostęp do różnych danych statystycznych i logów Twojego hosting
 >>
 >> - [Statystyki odwiedzin na stronie](#website-stats): Przedstawia liczne statystyki dotyczące Twojego hostingu.
 >> - [Logi strony WWW](#website-logs): Wyświetla logi hostingu WWW.
->> - [Statystyki dotyczące infrastruktury](#infra-stats): Przedstawia statystyki graficzne (zapytania HTTP i SQL, polecenia FTP, wykorzystanie CPU, połączenia wychodzące, itp.).
+>> - [Statystyki infrastruktury](#infra-stats): Przedstawia statystyki graficzne (zapytania HTTP i SQL, polecenia FTP, wykorzystanie CPU, połączenia wychodzące, itp.).
 >> - [Zarządzanie użytkownikami](#admin-user): Wyświetla użytkowników z uprawnieniami dostępu do statystyk.
 >>
 >> ![statistics and logs interface](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/statistics-and-logs/tab.png){.thumbnail}
+<!-- CP-STEPS-END:access-stats-and-logs -->
 
 ### Statystyki odwiedzin na stronie <a name="website-stats"></a>
 
@@ -96,31 +98,65 @@ Dostępne są różne rodzaje logów:
 
 > [!success]
 >
-> Aby wyświetlić statystyki i/lub logi usługi CDN, zapoznaj się z naszym przewodnikiem: „[Hosting WWW - Sprawdzanie statystyk i logów CDN](/pages/web_cloud/web_hosting/cdn_statistics_and_logs)”.
+> Aby wyświetlić statystyki i/lub logi usługi CDN, zapoznaj się z naszym przewodnikiem: „[Hosting WWW - Sprawdzanie statystyk i logów CDN](/pages/web_cloud/web_hosting/cdn_statistics_and_logs)".
 
-### Statystyki dotyczące infrastruktury <a name="infra-stats"></a>
+### Statystyki infrastruktury <a name="infra-stats"></a>
 
 W tej sekcji dowiesz się, jak działa infrastruktura Twojego hostingu, aby sprawdzić zużycie udostępnionych Ci zasobów.
 
-![infrastructure statistics](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/statistics-and-logs/infrastructure-statistics-graph.png){.thumbnail}
+<!-- CP-STEPS-START:view-infra-stats -->
+W tym celu kliknij poniższe zakładki, aby wyświetlić kolejne **3** kroki.
 
-W lewym górnym rogu rozwijanego menu można wyświetlać różne typy wykresów:
-
-- **Polecenia FTP**: wskazuje główne polecenia (upload, download, login, delete) utworzone za pomocą protokołu FTP na Twoim hostingu.
-- **Zapytania HTTP**: wskazuje liczbę i kod zwrotny żądań HTTP wykonanych na Twoim hostingu. Rozróżnimy różne kody HTTP (2xx/3xx, 4xx i 5xx). W razie potrzeby możesz znaleźć listę kodów HTTP i ich znaczenie, wyszukując je bezpośrednio w wyszukiwarce (Google, Yahoo!, bing, itp.).
-- **Połączenia wychodzące**: zapytania ze strony www do zewnętrznej witryny sieci Web.
-- **Wykorzystanie zasobów procesora**: poziom zużycia procesora w instancji hostingu WWW.
-- **Przekroczenie zasobów** : wskazuje, kiedy Twój hosting przekroczy limit zasobów.
-- **Zapytania SQL**: liczba zapytań do baz danych Twojego hostingu.
-- **Czas odpowiedzi SQL**: czas odpowiedzi zapytań wysłanych do baz danych Twojego hostingu.
+> [!tabs]
+> **Krok 1**
+>>
+>> Przejdź do strony [Hosting](/links/control-panel/web-hosting) i wybierz odpowiedni hosting WWW.
+>>
+>> ![Wybór hostingu WWW w Panelu klienta OVHcloud](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Krok 2**
+>>
+>> Na stronie, która się wyświetli kliknij zakładkę `Statystyki i logi`{.action}, a następnie przejdź do sekcji **Statystyki infrastruktury**.
+>>
+> **Krok 3**
+>>
+>> W lewym górnym rogu rozwijanego menu można wyświetlać różne typy wykresów:
+>>
+>> ![Statystyki infrastruktury hostingu WWW](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/statistics-and-logs/infrastructure-statistics-graph.png){.thumbnail}
+>>
+>> - **Polecenia FTP**: wskazuje główne polecenia (upload, download, login, delete) utworzone za pomocą protokołu FTP na Twoim hostingu.
+>> - **Zapytania HTTP**: wskazuje liczbę i kod zwrotny żądań HTTP wykonanych na Twoim hostingu, rozróżniając różne kody HTTP (2xx/3xx, 4xx i 5xx).
+>> - **Połączenia wychodzące**: zapytania ze strony www do zewnętrznej witryny sieci Web.
+>> - **Wykorzystanie zasobów procesora**: poziom zużycia procesora w instancji hostingu WWW.
+>> - **Przekroczenie zasobów** : wskazuje, kiedy Twój hosting przekroczy limit zasobów.
+>> - **Zapytania SQL**: liczba zapytań do baz danych Twojego hostingu.
+>> - **Czas odpowiedzi SQL**: czas odpowiedzi zapytań wysłanych do baz danych Twojego hostingu.
+<!-- CP-STEPS-END:view-infra-stats -->
 
 ### Zarządzanie użytkownikami <a name="admin-user"></a>
 
 Utworzenie użytkownika umożliwi komuś dostęp do statystyk Twojego hostingu, bez konieczności posiadania dostępu do Panelu klienta OVHcloud.
 
-W sekcji `Zarządzanie użytkownikami`{.action} kliknij `Utwórz nowego użytkownika`{.action}, następnie postępuj zgodnie z instrukcjami, aby dokończyć tworzenie nowego użytkownika.
+<!-- CP-STEPS-START:create-stats-user -->
+Aby utworzyć nowego użytkownika, kliknij poniższe zakładki, aby wyświetlić kolejne **3** kroki.
 
-![create a new user](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/statistics-and-logs/create-a-new-user.png){.thumbnail}
+> [!tabs]
+> **Krok 1**
+>>
+>> Przejdź do strony [Hosting](/links/control-panel/web-hosting) i wybierz odpowiedni hosting WWW.
+>>
+>> ![Wybór hostingu WWW w Panelu klienta OVHcloud](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Krok 2**
+>>
+>> Na stronie, która się wyświetli kliknij zakładkę `Statystyki i logi`{.action}, a następnie przejdź do sekcji **Administracja użytkownikami**.
+>>
+> **Krok 3**
+>>
+>> Kliknij `Utwórz nowego użytkownika`{.action}, następnie postępuj zgodnie z instrukcjami, aby dokończyć tworzenie.
+>>
+>> ![Tworzenie nowego użytkownika dla statystyk](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/statistics-and-logs/create-a-new-user.png){.thumbnail}
+<!-- CP-STEPS-END:create-stats-user -->
 
 Aby uzyskać dostęp do statystyk Twojej strony WWW dla użytkownika, którego utworzyłeś, wpisz następujący adres zastępując `000` numerem klastra Twojego hostingu, `domain.tld` nazwą domeny Twojej strony WWW (bez `www`):
 
@@ -128,24 +164,32 @@ Aby uzyskać dostęp do statystyk Twojej strony WWW dla użytkownika, którego u
 https://logs.cluster000.hosting.ovh.net/domain.tld/
 ```
 
-Link dostępowy do statystyk / logów możesz również sprawdzić bezpośrednio w Panelu klienta:
+<!-- CP-STEPS-START:retrieve-stats-link -->
+Link dostępowy do statystyk / logów możesz również sprawdzić bezpośrednio w Panelu klienta. W tym celu kliknij poniższe zakładki, aby wyświetlić kolejne **3** kroki.
 
-1. Zaloguj się do [Panelu klienta OVHcloud](/links/manager).
-2. Kliknij zakładkę `Web Cloud`{.action}.
-3. W lewej kolumnie kliknij menu `Hosting`{.action}.
-4. Wybierz odpowiedni hosting.
-5. Na stronie, która się wyświetli kliknij zakładkę `Statystyki i logi`{.action}.
-6. Przejdź do sekcji `Statystyki odwiedzin na stronie`{.action}.
-7. Kliknij przycisk `Wyświetl statystyki`{.action}.
-
-![website visit statistics](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/statistics-and-logs/view-statistics.png){.thumbnail}
-
-Na stronie, która się otworzy, pobierz adres URL z paska adresu przeglądarki internetowej.
+> [!tabs]
+> **Krok 1**
+>>
+>> Przejdź do strony [Hosting](/links/control-panel/web-hosting) i wybierz odpowiedni hosting WWW.
+>>
+>> ![Wybór hostingu WWW w Panelu klienta OVHcloud](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Krok 2**
+>>
+>> Na stronie, która się wyświetli kliknij zakładkę `Statystyki i logi`{.action}, a następnie przejdź do sekcji **Statystyki odwiedzin**.
+>>
+> **Krok 3**
+>>
+>> Kliknij przycisk `Zobacz statystyki`{.action}.
+>>
+>> ![Statystyki odwiedzin strony WWW](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/statistics-and-logs/view-statistics.png){.thumbnail}
+>>
+>> Na stronie, która się otworzy, pobierz adres URL z paska adresu przeglądarki internetowej.
+<!-- CP-STEPS-END:retrieve-stats-link -->
 
 > [!warning]
 >
-> Jeśli aktywowałeś oddzielne logi na [wpis MultiSite](/pages/web_cloud/web_hosting/multisites_configure_multisite), utworzeni tutaj użytkownicy nie mają dostępu do statystyk dla tego wpisu MultiSite.
->
+> Jeśli aktywowałeś oddzielne logi na jednej ze swoich [stron WWW](/pages/web_cloud/web_hosting/multisites_configure_multisite), utworzeni tutaj użytkownicy nie mają dostępu do statystyk dla tej konkretnej strony WWW.
 
 ## Sprawdź również
 

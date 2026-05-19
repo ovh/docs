@@ -1,7 +1,7 @@
 ---
-title: 'Konfigurowanie adresu IPv6 na serwerach dedykowanych'
-excerpt: 'Dowiedz się, jak skonfigurować adresy IPv6 w infrastrukturze OVHcloud'
-updated: 2025-12-09
+title: "Konfiguracja IPv6 na serwerze dedykowanym"
+excerpt: "Skonfiguruj adres IPv6 na serwerze dedykowanym OVHcloud z różnymi dystrybucjami Linux i systemem Windows."
+updated: 2026-04-13
 ---
 
 <style>
@@ -544,6 +544,23 @@ IPv6_GATEWAY: `2607:5300:60:62FF:00FF:00FF:00FF:00FF` można również zapisać 
 >> Wprowadź konfigurację IPv6 (`Adres IPv6` i `Default Gateway`), zaznacz kratkę `Zatwierdź parametry wychodząc` i kliknij przycisk `OK`{.action}, aby zatwierdzić zmiany.
 >>
 >> ![Properties](images/ipv6_configuration.png){.thumbnail}
+>>
+>> **Krok 4: Wyłącz losowe identyfikatory interfejsu IPv6**
+>>
+>> Otwórz menu Start, wyszukaj `Windows PowerShell`{.action}, kliknij prawym przyciskiem myszy i wybierz `Uruchom jako administrator`{.action}.
+>>
+>> ![Uruchamianie PowerShell jako administrator](images/ipv6_powershell_admin.png){.thumbnail}
+>>
+>> W oknie PowerShell wykonaj następujące polecenie:
+>>
+>> ```powershell
+>> Set-NetIPv6Protocol -RandomizeIdentifiers Disabled
+>> ```
+>>
+>> ![Wyłączanie losowych identyfikatorów](images/ipv6_powershell_randomize_identifiers.png){.thumbnail}
+>>
+>> Ten krok jest wymagany do połączenia IPv6 w infrastrukturze OVHcloud. Sprawia, że system Windows buduje swoje adresy IPv6 link-local na podstawie adresu MAC adaptera (EUI-64) zamiast używać losowych wartości. Zmiana obowiązuje natychmiast i utrzymuje się po ponownym uruchomieniu.
+>>
 
 ### Sprawdź konfigurację i przetestuj połączenie
 
@@ -640,5 +657,7 @@ W każdym przypadku nie wahaj się [skontaktować się z naszym zespołem pomocy
 - Treść tego pliku.
 
 ## Sprawdź również <a name="go-further"></a>
+
+- [Konfiguracja adresu IPv6 na maszynie wirtualnej (EN)](/pages/bare_metal_cloud/dedicated_servers/configure-an-ipv6-on-a-vm)
 
 Dołącz do [grona naszych użytkowników](/links/community).

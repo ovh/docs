@@ -33,6 +33,7 @@ W trakcie korzystania z Twoich usług może się zdarzyć, że będziesz musiał
 
 ## W praktyce
 
+<!-- CP-STEPS-START:find-database-server -->
 Kliknij poniższe zakładki, aby wyświetlić kolejne **3** kroki.
 
 > [!tabs]
@@ -62,6 +63,7 @@ Kliknij poniższe zakładki, aby wyświetlić kolejne **3** kroki.
 >> >
 >> > - **Adres serwera** to część danych logowania specyficznych dla Twojej bazy danych i umożliwia łączenie Twojej strony internetowej z tą bazą.
 >> > - **Serwer** to infrastruktura, na której znajduje się Twoja baza danych, a także inne bazy. Nazwa serwera pozwala sprawdzić, czy jest on objęty pracami konserwacyjnymi lub awarią ogłoszoną na naszej stronie [Web Cloud Status](https://web-cloud.status-ovhcloud.com/).
+<!-- CP-STEPS-END:find-database-server -->
 
 ## Sprawdź również <a name="go-further"></a>
 

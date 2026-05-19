@@ -1,7 +1,7 @@
 ---
 title: 'Optimise your website’s performance'
 excerpt: 'Find out how to analyse latency on your website and how to improve it'
-updated: 2025-10-09
+updated: 2026-04-01
 ---
 
 ## Objective
@@ -103,11 +103,8 @@ You can find more details on this topic in the Step 5 below.
 
 Correlate the graphs of resource usage of your hosting (more information below) to find the origin of the delays and consult the logs at the dates of these peaks.
 
-You can access your logs, statistics and graphs directly from the [OVHcloud Control Panel](/links/manager).
-
-How to access statistics and logs:
-
-Click on the tabs below to view each of the **3** steps.
+<!-- CP-STEPS-START:access-stats-and-logs -->
+To access the statistics and logs, click on the tabs below to view each of the **3** steps.
 
 > [!tabs]
 > **Step 1**
@@ -127,35 +124,39 @@ Click on the tabs below to view each of the **3** steps.
 >> Click the `View statistics`{.action} button to access the website visit statistics or `View logs`{.action} to view the logs available for your web hosting plan.
 >>
 >> ![logs](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/statistics-and-logs/tab.png){.thumbnail}
+<!-- CP-STEPS-END:access-stats-and-logs -->
 
-How to access charts:
+<!-- CP-STEPS-START:access-resource-charts -->
+To access the charts, click on the tabs below to view each of the **3** steps.
 
-1. Click `Hosting plans`{.action} in the left-hand column, then select the web hosting plan concerned.
-2. In the pop-up window, click the `Statistics and logs`{.action} tab. Scroll down to the bottom of the page, where you will find the graph linked to your hosting usage.
-3. Select the **type** of information as well as the **period** of the data displayed.
-
-![graphs](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/statistics-and-logs/infrastructure-statistics-graph.png){.thumbnail}
-
-What are the different types of information that can be displayed?
-
-- **HTTP requests**: Indicate the average number of website hits. Hits are classed by HTTP status 2xx/3xx/4xx/5xx.
-
-- **Average response time**: Refers to the average page response time. Dynamic and static pages are differentiated.
-
-- **Exceeding the resource threshold**: This graphic shows the PHP workers usage, in order to steer you towards a different web hosting package if needed. Using PHP-FPM could help you to reduce the use of PHP workers.
-
-- **CPU usage**: Shows your website's CPU usage. This might help you to spot a possible CPU overload.
-
-- **Outgoing connections**: This lets you see outgoing TCP request made by the server, for example if your website is hacked, the server could be used to attack other external websites. You can also check external calls made by modules such as Facebook, Twitter etc. Reducing the number of outgoing TCP requests is a good way to reduce load time because if the server which you are requesting content from is taking time to answer, the delay to load your website will increase.
-
-- **FTP commands**: Displays the different FTP commands that have been used on the hosting. For example successful and unsuccessful login attempts, download, upload and deletion of files, ...
-
-The two following categories are only displayed if you currently use a database on your hosting offer.
-Don't forget to select the name of your database and the desired period.
-
-- **SQL response time**: Displays the response time of the queries.
-
-- **SQL requests**: Displays the amount of requests.
+> [!tabs]
+> **Step 1**
+>>
+>> Go to the [Hosting plans](/links/control-panel/web-hosting) page, then select the web hosting plan concerned.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Step 2**
+>>
+>> On the page that pops up, click on the `Statistics and logs`{.action} tab. Scroll down to the bottom of the page, where you will find the graph of your hosting usage.
+>>
+> **Step 3**
+>>
+>> Select the **type** of information as well as the **period** of the data displayed.
+>>
+>> ![Infrastructure usage statistics graph](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/statistics-and-logs/infrastructure-statistics-graph.png){.thumbnail}
+>>
+>> The different types of information available:
+>>
+>> - **HTTP requests**: Indicate the average number of website hits. Hits are classed by HTTP status 2xx/3xx/4xx/5xx.
+>> - **Average response time**: Refers to the average page response time. Dynamic and static pages are differentiated.
+>> - **Exceeding the resource threshold**: This graphic shows the PHP workers usage, in order to steer you towards a different web hosting package if needed. Using PHP-FPM could help you to reduce the use of PHP workers.
+>> - **CPU usage**: Shows your website's CPU usage. This might help you to spot a possible CPU overload.
+>> - **Outgoing connections**: This lets you see outgoing TCP request made by the server, for example if your website is hacked, the server could be used to attack other external websites. You can also check external calls made by modules such as Facebook, Twitter etc. Reducing the number of outgoing TCP requests is a good way to reduce load time because if the server which you are requesting content from is taking time to answer, the delay to load your website will increase.
+>> - **FTP commands**: Displays the different FTP commands that have been used on the hosting. For example successful and unsuccessful login attempts, download, upload and deletion of files.
+>> - **SQL response time**: Displays the response time of the queries (visible only if you use a database).
+>> - **SQL requests**: Displays the amount of requests (visible only if you use a database).
+<!-- CP-STEPS-END:access-resource-charts -->
 
 ### 5 - Checking network requests
 
@@ -192,11 +193,7 @@ _This step is optional if you are not using a database._
 You can access your database using PHPMyAdmin; instructions on how to use PHPMyAdmin would go beyond the scope of this guide, therefore it won't be furtherly detailed.
 However, lots of external guides exist on this matter.
 
-**How to access the database via phpMyAdmin:** To access your database via phpMyAdmin, here is the procedure to follow via the [OVHcloud Control Panel](/links/manager):
-
-- Click on your domain under the `Hosting plans`{.action} section.
-- Go to the `Database`{.action} tab.
-- Click on `...`{.action} to the right of your database to find the access link to phpMyAdmin.
+**How to access the database via phpMyAdmin:** see the dedicated section in our guide "[Creating and managing a database in your Web Hosting plan](/pages/web_cloud/web_hosting/sql_create_database)".
 
 **Why optimise a database?** You have to maintain a database to make sure it performs well. In other words, the information contained in the database should be returned to the script that requested it as soon as possible. To achieve this, a database has to be well structured and optimised. We will look at how to best optimise your database.
 

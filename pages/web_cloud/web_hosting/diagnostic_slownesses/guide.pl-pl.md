@@ -37,16 +37,6 @@ W rzadkich przypadkach informacje o powolnym wyświetlaczu mogą pochodzić od T
 
 - Posiadanie strony internetowej zainstalowanej w ramach jednej z naszych ofert[hosting OVHcloud](/links/web/hosting)
 
-<!-- CP-NAV-START:web-hosting -->
----
-
-### Dostęp do Panelu klienta OVHcloud
-
-- **Link bezpośredni:** [Hosting plans](/links/control-panel/web-hosting)
-- **Ścieżka nawigacji:** `Web Cloud`{.action} > `Hosting`{.action} > Wybierz hosting WWW
-
----
-<!-- CP-NAV-END:web-hosting -->
 
 ## W praktyce
 
@@ -156,7 +146,7 @@ Jeśli korzystasz z bazy danych w ofercie **Web Cloud Databases**, zapoznaj się
 
 Jeśli logowanie się powiodło się, otrzymasz następujący interfejs:
 
-![PHPMyAdmin](/pages/assets/screens/other/web-tools/phpmyadmin/pma-main-page.png){.thumbnail}
+![phpMyAdmin](/pages/assets/screens/other/web-tools/phpmyadmin/pma-main-page.png){.thumbnail}
 
 > [!warning]
 >

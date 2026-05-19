@@ -1,6 +1,6 @@
 ---
-title: 'Windows Server Product Key ändern'
-excerpt: 'So passen Sie den Product Key Ihres Windows Servers an'
+title: "Windows Server Product Key ändern (Dedicated)"
+excerpt: "Ändern oder aktivieren Sie den Windows Server Product Key auf Ihrem OVHcloud Dedicated Server nach der Installation oder Neuinstallation."
 updated: 2025-01-06
 ---
 
@@ -24,7 +24,7 @@ Wenn Ihr System als Testversion installiert wird, wird ein Standard-Key hinterle
 
 ![Ausführen-Dialog starten](images/executer.png){.thumbnail}
 
-![Ausführen](images/executer2.png){.thumbnail}
+![Windows-Ausführen-Dialog für Product Key Befehle](images/executer2.png){.thumbnail}
 
 Geben Sie in dem Dialogfenster folgenden Befehl ein:
 
@@ -69,5 +69,9 @@ cscript.exe c:\windows\system32\slmgr.vbs -ato
 ```
 
 ## Weiterführende Informationen
+
+- [Admin-Passwort eines Windows Dedicated Servers ändern](/pages/bare_metal_cloud/dedicated_servers/changing-admin-password-on-windows)
+
+- [Activating Windows VMs with Hyper-V on a Dedicated Server](/pages/bare_metal_cloud/dedicated_servers/activate_windows_vm_hyperv)
 
 Treten Sie unserer [User Community](/links/community) bei.

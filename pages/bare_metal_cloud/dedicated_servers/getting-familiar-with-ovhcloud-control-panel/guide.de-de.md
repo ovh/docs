@@ -1,6 +1,6 @@
 ---
-title: "Kimsufi und So you Start Kunden - Einführung in das OVHcloud Kundencenter"
-excerpt: "Navigationshilfe für Ihr OVHcloud Kundencenter"
+title: "OVHcloud Kundencenter für Kimsufi & So you Start Dedicated Server"
+excerpt: "Navigieren Sie im OVHcloud Kundencenter als Kimsufi- oder So you Start-Kunde, um Ihre Dedicated Server zu verwalten."
 updated: 2025-04-28
 ---
 
@@ -39,9 +39,9 @@ Klicken Sie im OVHcloud Kundencenter zunächst auf das Menü `Bare Metal Cloud`{
 
 Klicken Sie im Menü `Dedicated Server`{.action} auf den Server Ihrer Wahl, um auf dessen Interface zuzugreifen.
 
-![server interface](images/serverinterface01.png){.thumbnail}
+![Tab "Allgemeine Informationen" des Servers](images/serverinterface01.png){.thumbnail}
 
-![server interface](images/serverinterface02.png){.thumbnail}
+![Serverstatus und Netzwerkdetails](images/serverinterface02.png){.thumbnail}
 
 **Allgemeine Informationen**: In diesem Abschnitt finden Sie alle Informationen zu Ihrem Server.
 

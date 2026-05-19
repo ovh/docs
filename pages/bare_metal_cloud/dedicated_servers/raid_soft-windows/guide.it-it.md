@@ -1,6 +1,6 @@
 ---
-title: Configura un software mirror (RAID) su Windows
-excerpt: "Scopri come ricostruire la configurazione dei dischi del tuo server dopo la sostituzione del disco"
+title: "Mirror RAID software su un server dedicato Windows"
+excerpt: "Ricostruisci la configurazione del mirror RAID software su un server dedicato Windows dopo la sostituzione di un disco"
 updated: 2023-03-28
 ---
 
@@ -404,4 +404,4 @@ DISKPART> list volume
 
 ## Per saperne di più
 
-Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.
+Contatta la nostra [Community di utenti](/links/community).

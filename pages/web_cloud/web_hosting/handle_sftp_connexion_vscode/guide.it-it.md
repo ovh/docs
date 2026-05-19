@@ -1,7 +1,7 @@
 ---
 title: "Gestire un hosting Web con Visual Studio Code via SFTP"
 excerpt: "Gestire un sito Internet su un hosting Web con Visual Studio Code grazie ad un'estensione SFTP"
-updated: 2025-10-21
+updated: 2026-03-31
 ---
 
 ## Obiettivo
@@ -25,7 +25,7 @@ Gli hosting Web OVHcloud mettono a disposizione uno spazio di storage per la ges
 
 ### Accesso allo Spazio Cliente OVHcloud
 
-- **Link diretto:** [Hosting plans](/links/control-panel/web-hosting)
+- **Link diretto:** [Hosting](/links/control-panel/web-hosting)
 - **Percorso di navigazione:** `Web Cloud`{.action} > `Hosting`{.action} > Seleziona il tuo hosting web
 
 ---
@@ -93,38 +93,87 @@ Il file è presente nella cartella vscode, che si trova nella cartella principal
 
 ### Configura il file sftp.json
 
-Prima di lavorare sul progetto, scaricalo nella cartella locale creata in precedenza. Per prima cosa, assicurati che il file "sftp.json" sia configurato correttamente. Le informazioni utili sono disponibili nello [Spazio Cliente OVHcloud](/links/manager). Nella sezione `Web Cloud`{.action}, clicca su `Hosting`{.action}. Seleziona l’hosting interessato e clicca sulla scheda `FTP - SSH`{.action}.
+Prima di lavorare sul progetto, scaricalo nella cartella locale creata in precedenza. Per prima cosa, assicurati che il file "sftp.json" sia configurato correttamente. Consulta la nostra guida "[Connettersi allo spazio di storage FTP del tuo hosting web](/pages/web_cloud/web_hosting/ftp_connection)" per trovare le informazioni utili.
 
-![FTP - SSH](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh.png){.thumbnail}
+Nel file "sftp.json", immettere i valori per le voci seguenti:
 
-Nel file sftp.json, immettere i valori per le voci seguenti:
+#### name
 
-#### name 
+<!-- CP-STEPS-START:find-hosting-name -->
+Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **2** passaggi.
 
-Individuarlo in entrambe le posizioni evidenziate in arancione.
-
-![hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/hosting_name.png){.thumbnail}
+> [!tabs]
+> **Passaggio 1**
+>>
+>> Accedi alla pagina [Hosting](/links/control-panel/web-hosting) e seleziona l’hosting web interessato.
+>>
+>> ![Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Passaggio 2**
+>>
+>> Individuarlo in entrambe le posizioni evidenziate in arancione.
+>>
+>> ![hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/hosting_name.png){.thumbnail}
+<!-- CP-STEPS-END:find-hosting-name -->
 
 > [!primary]
 >
-> Poiché il valore `name`(nome) è personalizzabile, è possibile assegnare quello desiderato. Tuttavia, se si configura più di un file sftp.json, è preferibile utilizzare come riferimento i valori visualizzati sopra per motivi organizzativi.
->
+> Poiché il valore `name` (nome) è personalizzabile, è possibile assegnare quello desiderato. Tuttavia, se si configura più di un file "sftp.json", è preferibile utilizzare come riferimento i valori visualizzati sopra per motivi organizzativi.
 
 #### host
 
-Sempre nella scheda `FTP-SSH`{.action}, il nome host (`host`) è visibile sotto la dicitura `Server FTP e SFTP`{.action}.
+<!-- CP-STEPS-START:find-ftp-host -->
+Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **2** passaggi.
 
-![hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/hostname.png){.thumbnail}
+> [!tabs]
+> **Passaggio 1**
+>>
+>> Accedi alla pagina [Hosting](/links/control-panel/web-hosting) e seleziona l’hosting web interessato.
+>>
+>> ![Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Passaggio 2**
+>>
+>> Nella scheda `FTP - SSH`{.action}, il nome host (`host`) è visibile sotto la dicitura `Server FTP e SFTP`.
+>>
+>> ![hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/hostname.png){.thumbnail}
+<!-- CP-STEPS-END:find-ftp-host -->
 
 #### username
 
-Individua il nome utente (`username`) nella colonna `Login`{.action} della tabella.
+<!-- CP-STEPS-START:find-ftp-username -->
+Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **2** passaggi.
+
+> [!tabs]
+> **Passaggio 1**
+>>
+>> Accedi alla pagina [Hosting](/links/control-panel/web-hosting) e seleziona l’hosting web interessato.
+>>
+>> ![Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Passaggio 2**
+>>
+>> Nella scheda `FTP - SSH`{.action}, individua il nome utente nella colonna `Login` della tabella.
+<!-- CP-STEPS-END:find-ftp-username -->
 
 #### remotePath
 
-Ritrova il percorso remoto (`remotePath`) sotto la voce `Percorso cartella Home`{.action}. Tuttavia, se sono configurati più utenti, il percorso specificato potrebbe essere diverso. In questo caso, sostituisci il nome utente indicato dopo `home/` con quello che preferisci nella lista `Login`{.action} del tuo hosting Web.
+<!-- CP-STEPS-START:find-ftp-remote-path -->
+Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **2** passaggi.
 
-**Esempio**: se il tuo nome utente è "john-smith", otterrai `home/john-smith`
+> [!tabs]
+> **Passaggio 1**
+>>
+>> Accedi alla pagina [Hosting](/links/control-panel/web-hosting) e seleziona l’hosting web interessato.
+>>
+>> ![Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Passaggio 2**
+>>
+>> Nella scheda `FTP - SSH`{.action}, ritrova il percorso remoto (`remotePath`) sotto la voce `Percorso cartella Home`. Tuttavia, se sono configurati più utenti, il percorso specificato potrebbe essere diverso. In questo caso, sostituisci il nome utente indicato dopo `home/` con quello che preferisci nella colonna `Login` della tabella.
+>>
+>> **Esempio**: se il tuo nome utente è "john-smith", otterrai `home/john-smith`.
+<!-- CP-STEPS-END:find-ftp-remote-path -->
 
 Infine, ricordati di aggiungere questa riga nel file "sftp.json": `"openSsh": true`
 

@@ -1,7 +1,7 @@
 ---
 title: "Crear una base de datos en un alojamiento web"
 excerpt: "Descubra cómo crear una base de datos en un alojamiento web de OVHcloud"
-updated: 2025-10-08
+updated: 2026-04-01
 ---
 
 ## Objetivo
@@ -20,7 +20,7 @@ Una base de datos (BD) se utiliza para almacenar elementos dinámicos (datos de 
 
 ### Acceso al área de cliente de OVHcloud
 
-- **Enlace directo:** [Hosting plans](/links/control-panel/web-hosting)
+- **Enlace directo:** [Alojamientos](/links/control-panel/web-hosting)
 - **Ruta de navegación:** `Web Cloud`{.action} > `Alojamientos`{.action} > Seleccione su alojamiento web
 
 ---
@@ -28,15 +28,28 @@ Una base de datos (BD) se utiliza para almacenar elementos dinámicos (datos de 
 
 ## Procedimiento
 
-### Etapa 1 - Acceder a la pestaña de gestión de las bases de datos de un alojamiento web
+### 1 - Acceder a la pestaña de gestión de las bases de datos de un alojamiento web
 
-Conéctese a su [área de cliente de OVHcloud](/links/manager) y acceda a la sección `Web Cloud`{.action}. Haga clic en `Alojamientos`{.action} en la columna izquierda, seleccione el alojamiento en el que desea crear una base de datos y abra la pestaña `Bases de datos`{.action}.
+<!-- CP-STEPS-START:access-databases-tab -->
+Haga clic en las fichas siguientes para ver cada una de las **2** etapas.
 
-![Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases.png){.thumbnail}
-
-La tabla de esta sección contiene todas las bases de datos creadas con su alojamiento web.
-
-![databasecreation](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/tab.png){.thumbnail}
+> [!tabs]
+> **Etapa 1**
+>>
+>> Acceda a la página [Alojamientos](/links/control-panel/web-hosting) y elija el alojamiento web correspondiente.
+>>
+>> ![Selección de un alojamiento web en el área de cliente de OVHcloud](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Etapa 2**
+>>
+>> En la página que se muestra, abra la pestaña `Bases de datos`{.action}.
+>>
+>> ![Pestaña Bases de datos del alojamiento web](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases.png){.thumbnail}
+>>
+>> La tabla de esta sección contiene todas las bases de datos creadas con su alojamiento web.
+>>
+>> ![Lista de bases de datos del alojamiento web](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/tab.png){.thumbnail}
+<!-- CP-STEPS-END:access-databases-tab -->
 
 En la tabla, las bases de datos pueden tener varios tipos diferentes:
 
@@ -50,40 +63,57 @@ En la tabla, las bases de datos pueden tener varios tipos diferentes:
 > Para duplicar rápidamente el contenido de una base de datos "**Incluida - retirada de la venta**" o "**Opcional - retirada de la venta**" en una nueva base de datos cuya obsolescencia aún no está programada, consulte nuestra guía "[Duplicar el contenido de una base de datos de OVHcloud en otra](/pages/web_cloud/web_hosting/copy_database)".
 >
 
-### Etapa 2 - Crear la base de datos
+### 2 - Crear la base de datos
 
-Existen dos formas de crear una nueva base de datos:
+<!-- CP-STEPS-START:create-database -->
+Para crear una base de datos, haga clic en las fichas siguientes para ver cada una de las **5** etapas.
 
-- **Si aún no ha creado ninguna base de datos**, haga clic en el botón `Crear una base de datos`{.action}.
-
-- **Si ya ha creado una base de datos**, haga clic en el botón `Acciones`{.action} y luego en `Crear una base de datos`{.action}.
-
-En la nueva ventana, seleccione la siguiente información:
-
-![database-creation-step1](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/create-a-database-step-1.png){.thumbnail}
-
-|Información|Descripción|  
-|---|---|
-|**Seleccione el tipo de base de datos**|Elija el tamaño de la base de datos. Este tamaño se refiere al espacio de almacenamiento de datos de la base de datos.|
-|**Seleccione el motor de la base de datos que quiere añadir**|Elija el motor que desea que utilice la base de datos. Actualmente, las bases de datos incluidas en su [plan de hosting de OVHcloud](/links/web/hosting) solo están disponibles con el motor MySQL.|
-|**Seleccione la versión de la base de datos que quiere añadir**|Elija la versión que utiliza el motor de la base de datos. Asegúrese de que su sitio web es compatible con la versión que ha elegido.|
-
-> [!primary]
->
-> La actualización de la versión del motor de una base de datos ya creada no está disponible en este momento.
->
-
-A continuación, haga clic en `Siguiente`{.action}.
-
-Se abrirá una nueva ventana:
-
-![database-creation-step2](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/create-a-database-step-2.png){.thumbnail}
-
-|Información|Descripción|
-|---|---|
-|**Usuario**|Introduzca un nombre de usuario que se asociará a la base de datos (máximo 6 caracteres además del prefijo de usuario introducido).|
-|**Contraseña**|Escriba una contraseña para este usuario según los *criterios* que se indican a continuación.|
-|**Repetir contraseña**|Vuelva a escribir la contraseña de este usuario.|
+> [!tabs]
+> **Etapa 1**
+>>
+>> Acceda a la página [Alojamientos](/links/control-panel/web-hosting) y elija el alojamiento web correspondiente.
+>>
+> **Etapa 2**
+>>
+>> En la página que se muestra, abra la pestaña `Bases de datos`{.action}, luego:
+>>
+>> - **Si aún no ha creado ninguna base de datos**: haga clic en el botón `Crear una base de datos`{.action}.
+>> - **Si ya ha creado una base de datos**: haga clic en el botón `Acciones`{.action} y luego en `Crear una base de datos`{.action}.
+>>
+> **Etapa 3**
+>>
+>> En la nueva ventana, seleccione la siguiente información y haga clic en `Siguiente`{.action}:
+>>
+>> ![Etapa 1 de la creación de una base de datos: elección del tipo y del motor](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/create-a-database-step-1.png){.thumbnail}
+>>
+>> |Información|Descripción|
+>> |---|---|
+>> |**Seleccione el tipo de base de datos**|Elija el tamaño de la base de datos. Este tamaño se refiere al espacio de almacenamiento de datos de la base de datos.|
+>> |**Seleccione el motor de la base de datos que quiere añadir**|Elija el motor que desea que utilice la base de datos. Actualmente, las bases de datos incluidas en su [plan de hosting de OVHcloud](/links/web/hosting) solo están disponibles con el motor MySQL.|
+>> |**Seleccione la versión de la base de datos que quiere añadir**|Elija la versión que utiliza el motor de la base de datos. Asegúrese de que su sitio web es compatible con la versión que ha elegido.|
+>>
+> **Etapa 4**
+>>
+>> Complete la información solicitada y haga clic en `Siguiente`{.action}:
+>>
+>> ![Etapa 2 de la creación de una base de datos: elección del nombre de usuario y la contraseña](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/create-a-database-step-2.png){.thumbnail}
+>>
+>> |Información|Descripción|
+>> |---|---|
+>> |**Usuario**|Introduzca un nombre de usuario que se asociará a la base de datos (máximo 6 caracteres además del prefijo de usuario introducido). El nombre de la base de datos será idéntico al nombre de usuario.|
+>> |**Contraseña**|Escriba una contraseña para este usuario según los *criterios* que se indican a continuación.|
+>> |**Repetir contraseña**|Vuelva a escribir la contraseña de este usuario.|
+>>
+> **Etapa 5**
+>>
+>> Asegúrese de que toda la información mostrada en el resumen es correcta. En ese caso, haga clic en `Aceptar`{.action} para iniciar la creación de la base de datos.
+>>
+>> ![Etapa 3 de la creación de una base de datos: resumen de confirmación](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/create-a-database-step-3.png){.thumbnail}
+>>
+>> > [!primary]
+>> >
+>> > La actualización de la versión del motor de una base de datos ya creada no está disponible en este momento.
+<!-- CP-STEPS-END:create-database -->
 
 > [!primary]
 >
@@ -92,36 +122,24 @@ Se abrirá una nueva ventana:
 > También se recomienda:
 >
 > - establecer una contraseña diferente para cada uno de sus servicios;
-crear una contraseña que no contenga datos personales (nombre, apellidos, fecha de nacimiento, etc.);
+> - crear una contraseña que no contenga datos personales (nombre, apellidos, fecha de nacimiento, etc.);
 > - renovar su contraseña regularmente;
 > - no conservar ningún registro escrito de su contraseña y no enviarla a otras personas (incluso a través de su dirección de correo electrónico);
-> - No guardar su contraseña en su navegador de internet, incluso si su navegador lo permite.
->
+> - no guardar su contraseña en su navegador de internet, incluso si su navegador lo permite.
 
 > [!warning]
 >
 > Recuerde que si cambia la contraseña de una base de datos, todas las aplicaciones que accedan a ella deben actualizarse en consecuencia.
->
 
-Complete la información solicitada y haga clic en `Siguiente`{.action}.
-
-![database-creation-step3](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/create-a-database-step-3.png){.thumbnail}
-
-Asegúrese de que toda la información mostrada en el resumen es correcta. En ese caso, haga clic en `Aceptar`{.action} para iniciar la creación de la base de datos.
-
-> [!primary]
->
-> Al hacer clic en `Aceptar`{.action}, la creación de la base de datos puede tardar hasta **15 minutos**. Recargue la página web de su [área de cliente de OVHcloud](/links/manager) si la base de datos no aparece automáticamente en la tabla que enumera sus bases de datos.
->
+La creación de la base de datos puede tardar hasta **15 minutos**. Recargue la página web de su [área de cliente de OVHcloud](/links/manager) si la base de datos no aparece automáticamente en la tabla que enumera sus bases de datos.
 
 Repita este proceso tantas veces como desee para crear varias bases de datos (con el límite de las bases de datos disponibles en su plan).
 
 > [!warning]
 >
 > Una vez validada la creación de la base de datos, el nombre de usuario y el nombre de la base de datos no se podrán editar.
->
 
-### Etapa 3 - Gestionar la base de datos <a name="step3"></a>
+### 3 - Gestionar la base de datos <a name="step3"></a>
 
 > [!warning]
 >
@@ -132,7 +150,7 @@ Ya puede utilizar su base de datos. Para ello, necesitará su información de co
 
 - el *nombre de usuario* y la *contraseña* que haya establecido,
 - el *nombre de la base de datos* que ha indicado,
-- la*dirección del servidor*.
+- la *dirección del servidor*.
 
 > [!primary]
 >
@@ -141,16 +159,25 @@ Ya puede utilizar su base de datos. Para ello, necesitará su información de co
 
 Esta información es esencial para que el sitio web pueda conectarse a la base de datos.
 
-Si necesita más información sobre la conexión, conéctese al [área de cliente de OVHcloud](/links/manager) y acceda a la sección `Web Cloud`{.action}. Haga clic en `Alojamientos`{.action} en la columna izquierda, seleccione el alojamiento en el que desea recuperar la información de conexión a la base de datos y abra la pestaña `Bases de datos`{.action}.
+<!-- CP-STEPS-START:get-connection-info -->
+Si necesita recuperar esta información de conexión, haga clic en las fichas siguientes para ver cada una de las **2** etapas.
 
-Se mostrará una tabla con toda la información relativa a la conexión a la base de datos. Esto excepto *password* por motivos de seguridad.
+> [!tabs]
+> **Etapa 1**
+>>
+>> Acceda a la página [Alojamientos](/links/control-panel/web-hosting) y elija el alojamiento web correspondiente.
+>>
+> **Etapa 2**
+>>
+>> En la página que se muestra, abra la pestaña `Bases de datos`{.action}. Encontrará toda la información de conexión a su base de datos en la tabla que se muestra, excepto la *contraseña* por motivos de seguridad.
+<!-- CP-STEPS-END:get-connection-info -->
 
 > [!warning]
 >
 > Si no recuerda su contraseña de conexión a la base de datos, consulte nuestra guía "[Cambiar la contraseña de la base de datos](/pages/web_cloud/web_hosting/sql_change_password)".
 >
 
-Según el programa utilizado, es posible que esta conexión necesite ser configurada manualmente o a través de una interfaz generada por la interfaz de configuración (backend) del sitio web. Este procedimiento afecta a la configuración del sitio web y no al alojamiento de OVHcloud, por lo que le recomendamos que consulte los recursos disponibles en internet o que contacte con un [proveedor especializado](/links/partner).
+Según el programa utilizado, es posible que esta conexión necesite ser configurada manualmente o a través de una interfaz generada por la interfaz de configuración (backend) del sitio web. Este procedimiento afecta a la configuración del sitio web y no al alojamiento de OVHcloud, por lo que le recomendamos que consulte los recursos disponibles en Internet o que contacte con un [proveedor especializado](/links/partner).
 
 > [!primary]
 >
@@ -159,19 +186,53 @@ Según el programa utilizado, es posible que esta conexión necesite ser configu
 
 #### Acceder a la interfaz phpMyAdmin
 
-OVHcloud ofrece una herramienta en línea para la gestión de bases de datos llamada phpMyAdmin. Para acceder a la aplicación, conéctese al [área de cliente de OVHcloud](/links/manager) y acceda a la sección `Web Cloud`{.action}. Haga clic en `Alojamientos`{.action} en la columna izquierda, seleccione el alojamiento en el que desea recuperar la información de conexión a la base de datos y abra la pestaña `Bases de datos`{.action}. En la tabla que se abre, haga clic en el botón `...`{.action} a la derecha de la base de datos correspondiente y, a continuación, haga clic en `Acceder a phpMyAdmin`{.action} en el menú desplegable.
+<!-- CP-STEPS-START:access-phpmyadmin -->
+OVHcloud ofrece una herramienta en línea para la gestión de bases de datos llamada phpMyAdmin. Para encontrar el enlace de acceso a esta aplicación, haga clic en las fichas siguientes para ver cada una de las **4** etapas.
 
-![phpMyAdmin Go Login](/pages/assets/screens/other/web-tools/phpmyadmin/pma-interface-login.png){.thumbnail}
-
-Introduzca los datos de acceso a la base de datos y haga clic en `Initiar sesión`{.action}.
-
-Si lo necesita, consulte el [Etapa 3](#step3) de esta guía para obtener la información de conexión a la base de datos.
+> [!tabs]
+> **Etapa 1**
+>>
+>> Acceda a la página [Alojamientos](/links/control-panel/web-hosting) y elija el alojamiento web correspondiente.
+>>
+> **Etapa 2**
+>>
+>> En la página que se muestra, abra la pestaña `Bases de datos`{.action}.
+>>
+> **Etapa 3**
+>>
+>> En la tabla que se abre, haga clic en el botón `...`{.action} a la derecha de la base de datos correspondiente y, a continuación, haga clic en `Acceder a phpMyAdmin`{.action} en el menú desplegable.
+>>
+> **Etapa 4**
+>>
+>> Introduzca los datos de acceso a la base de datos y haga clic en `Conectarse`{.action}.
+>>
+>> ![Página de conexión a phpMyAdmin](/pages/assets/screens/other/web-tools/phpmyadmin/pma-interface-login.png){.thumbnail}
+>>
+>> Si lo necesita, consulte el [apartado 3](#step3) de esta guía para obtener la información de conexión a la base de datos.
+<!-- CP-STEPS-END:access-phpmyadmin -->
 
 #### Utilizar las copias de seguridad de las bases de datos
 
 Para cada base de datos de alojamiento web, se crean snapshots automáticamente cada día (hasta un máximo de 32). Puede restaurar rápidamente una versión anterior de una base de datos desde el área de cliente de OVHcloud.
 
-Para comprobar los snapshots disponibles, así como la fecha y hora de su creación, conéctese al [área de cliente de OVHcloud](/links/manager) y acceda a la sección `Web Cloud`{.action}. En la columna izquierda, haga clic en `Alojamientos`{.action} y seleccione el alojamiento en el que quiera consultar los snapshots disponibles para su base de datos. A continuación, abra la pestaña `Bases de datos`{.action}. En la tabla que aparece, haga clic en el símbolo situado junto al círculo verde. También puede descargar cada copia de seguridad de una base de datos desde ese mismo lugar. Para más información, consulte nuestra guía "[Recuperar la copia de seguridad de la base de datos de un alojamiento web](/pages/web_cloud/web_hosting/sql_database_export)".
+<!-- CP-STEPS-START:check-database-snapshots -->
+Para comprobar los snapshots disponibles, así como la fecha y hora de su creación, haga clic en las fichas siguientes para ver cada una de las **3** etapas.
+
+> [!tabs]
+> **Etapa 1**
+>>
+>> Acceda a la página [Alojamientos](/links/control-panel/web-hosting) y elija el alojamiento web correspondiente.
+>>
+> **Etapa 2**
+>>
+>> En la página que se muestra, abra la pestaña `Bases de datos`{.action}.
+>>
+> **Etapa 3**
+>>
+>> En la tabla que aparece, haga clic en el símbolo situado junto al círculo verde. También puede descargar cada copia de seguridad de una base de datos desde ese mismo lugar.
+<!-- CP-STEPS-END:check-database-snapshots -->
+
+Para más información, consulte nuestra guía "[Recuperar la copia de seguridad de la base de datos de un alojamiento web](/pages/web_cloud/web_hosting/sql_database_export)".
 
 #### Entender los problemas comunes
 

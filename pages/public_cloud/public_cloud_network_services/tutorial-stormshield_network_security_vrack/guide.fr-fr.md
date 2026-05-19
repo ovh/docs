@@ -143,6 +143,7 @@ Dans la section `Public Cloud`{.action}, sélectionnez votre projet. Dans le men
 
 Accédez à la console VNC pour les deux instances SNS EVA et configurez la disposition du clavier ainsi que le mot de passe.
 
+
 Configurez la passerelle par défaut sur le premier SNS EVA avec notre passerelle de bloc IP :
 
 ```console

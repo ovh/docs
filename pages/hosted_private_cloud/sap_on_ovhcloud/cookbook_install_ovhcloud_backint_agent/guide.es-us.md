@@ -21,11 +21,21 @@ OVHcloud Backint Agent for SAP HANA has been certified by SAP, you can find cert
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](/links/manager).
 - [A Public Cloud project](/pages/public_cloud/public_cloud_cross_functional/create_a_public_cloud_project) in your OVHcloud account with:
     - An [Object Storage bucket](/pages/storage_and_backup/object_storage/s3_getting_started_with_object_storage).
     - An [Object Storage user](/pages/storage_and_backup/object_storage/s3_identity_and_access_management#creating-a-user) with the read and write rights.
 - A SAP HANA database installed.
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Navigation path:** `Public Cloud`{.action} > Select your project
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## Instructions
 
@@ -42,10 +52,9 @@ With SAP HANA backups, the versioning allows you to trigger several backups with
 
 You can check the versioning status of your Object Storage bucket by following these steps:
 
-1. Log in to the [OVHcloud Control Panel](/links/manager).
-2. Click `Public Cloud`{.action} and select your Public Cloud project. Then click `Object Storage`{.action}.
-3. Click on the Object Storage bucket that will host backups of your SAP HANA database.
-4. Check the value of the `Versioning`{.action} parameter, it must have the value `Enabled`{.action}. If the value of this parameter is `Disabled`{.action}, click on `Enable versioning`{.action}.
+1. Click `Public Cloud`{.action} and select your Public Cloud project. Then click `Object Storage`{.action}.
+2. Click on the Object Storage bucket that will host backups of your SAP HANA database.
+3. Check the value of the `Versioning`{.action} parameter, it must have the value `Enabled`{.action}. If the value of this parameter is `Disabled`{.action}, click on `Enable versioning`{.action}.
 
 | Versioning enabled | Versioning disabled |
 | --- | --- |

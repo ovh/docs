@@ -36,6 +36,7 @@ You can launch the notebook from the [OVHcloud Control Panel](/links/manager) or
 
 ### Launching a Jupyter notebook with "Conda" via UI (Control Panel)
 
+<!-- CP-STEPS-START:launch-jupyter-notebook-conda-ui -->
 To launch your notebook from the [OVHcloud Control Panel](/links/manager), refer to the following steps.
 
 #### Code editor
@@ -49,6 +50,7 @@ In this tutorial, the `conda` framework is used.
 #### Resources
 
 Using at least one **GPU is mandatory**, since fine-tuning LLMs is an intensive task.
+<!-- CP-STEPS-END:launch-jupyter-notebook-conda-ui -->
 
 ### Launching a Jupyter notebook with "conda" via CLI
 

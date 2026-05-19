@@ -37,8 +37,17 @@ Les sondes (*probes* en anglais) sont des tests de santé. Elles interrogent pé
 ## Prérequis
 
 - Posséder une offre [OVHcloud Load balancer](/links/network/load-balancer) dans votre compte OVHcloud. Le service doit être correctement configuré, avec un paramétrage des fermes et des serveurs.
-- Être connecté à votre [espace client OVHcloud](/links/manager).
 
+<!-- CP-NAV-START:network-load-balancer -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Load Balancer](/links/control-panel/network-load-balancer)
+- **Pour accéder à vos services :** `Network`{.action} > `Load Balancer`{.action} > Sélectionnez votre service
+
+---
+<!-- CP-NAV-END:network-load-balancer -->
 ## En pratique
 
 ## Sommaire

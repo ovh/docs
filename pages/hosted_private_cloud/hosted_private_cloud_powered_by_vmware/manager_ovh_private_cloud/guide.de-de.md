@@ -12,14 +12,24 @@ Das OVHcloud Kundencenter bietet zahlreiche Optionen für die Konfiguration Ihre
 
 ## Voraussetzungen
 
-- Sie sind in Ihrem [OVHcloud Kundencenter](/links/manager) eingeloggt und befinden sich unter `Hosted Private Cloud`{.action} im Bereich `Hosted Private Cloud`{.action}.
 - Sie verfügen über ein [Hosted Private Cloud](https://www.ovhcloud.com/de/enterprise/products/hosted-private-cloud/) Produkt.
+
+<!-- CP-NAV-START:privatecloud-vmware-vsphere -->
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direktlink:** [VMware vSphere](/links/control-panel/privatecloud-vmware-vsphere)
+- **Navigationspfad:** `Hosted Private Cloud`{.action} > `Managed VMware vSphere`{.action} > Wählen Sie Ihren vSphere Dienst aus
+
+---
+<!-- CP-NAV-END:privatecloud-vmware-vsphere -->
 
 ## In der praktischen Anwendung
 
 ### Tab "Allgemeine Informationen"
 
-Im Menüpunkt `Hosted Hosted Private Cloud`{.action} im Bereich `Hosted Private Cloud`{.action} Ihres [OVHcloud Kundencenters](/links/manager) finden Sie eine allgemeine Übersicht.
+Hier finden Sie eine allgemeine Übersicht.
 
 ![Allgemeine Informationen](images/controlpanel1.png){.thumbnail}
 

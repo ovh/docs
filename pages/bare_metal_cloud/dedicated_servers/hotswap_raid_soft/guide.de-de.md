@@ -1,6 +1,6 @@
 ---
-title: Festplatte auf einem Server mit Software-RAID im laufenden Betrieb wechseln
-excerpt: Hier erfahren Sie, wie eine Festplatte auf einem Server mit Software-RAID im laufenden Betrieb ausgetauscht wird
+title: "Dedicated Server - Hot-Swap bei Software-RAID"
+excerpt: "Tauschen Sie eine defekte Festplatte auf einem Dedicated Server mit Software-RAID ohne Ausfallzeit durch Hot-Swap aus."
 updated: 2023-08-21
 ---
 
@@ -299,5 +299,7 @@ Die defekte Festplatte kann jetzt von einem Techniker im Rechenzentrum ausgetaus
 [Managing hardware RAID](/pages/bare_metal_cloud/dedicated_servers/raid_hard) (Englisch)
 
 [Hot Swap - Hardware RAID](/pages/bare_metal_cloud/dedicated_servers/hotswap_raid_hard) (Englisch)
+
+- [Dedicated Server - Software-RAID verwalten (UEFI)](/pages/bare_metal_cloud/dedicated_servers/raid_soft_uefi)
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

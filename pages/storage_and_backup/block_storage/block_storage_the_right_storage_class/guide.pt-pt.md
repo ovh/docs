@@ -1,12 +1,14 @@
 ---
 title: Escolher a classe correta de Block Storage
 excerpt: Descubra como escolher a classe correta de Block Storage OVHcloud. Compare desempenho, custos e casos de utilização para otimizar o seu armazenamento em termos de preço e eficiência.
-updated: 2025-12-15
+updated: 2026-05-05
 ---
 
 ## Objetivo
 
-Este guia ajuda-o a compreender as diferentes classes de Block Storage OVHcloud e a escolher a que melhor corresponde às suas necessidades. Descubra os níveis de desempenho, as considerações de custo e os casos de utilização recomendados para tomar decisões informadas sobre o armazenamento.
+**Este guia ajuda-o a compreender as diferentes classes de Block Storage OVHcloud e a escolher a que melhor corresponde às suas necessidades.**
+
+Descubra os níveis de desempenho, as considerações de custo e os casos de utilização recomendados para tomar decisões informadas sobre o armazenamento.
 
 ## Visão geral do Block Storage
 
@@ -32,20 +34,21 @@ A classe **Classic Volume** é ideal para necessidades de aplicações quotidian
 
 Esta classe é adequada para cargas de trabalho padrão onde a baixa latência e a fiabilidade são importantes, mas onde a replicação multi-zona não é necessária.
 
-### High Speed Volume
+### High Speed Volume Gen2
 
-A classe **High Speed Volume** é proposta em duas gerações, oferecendo perfis de desempenho diferentes:
+A classe **High Speed Volume Gen2** oferece desempenhos escaláveis que aumentam com a dimensão do volume, o que a torna numa solução ideal para cargas de trabalho intensivas:
 
-- Gen 1: Até 3 000 IOPS e 128 Mo/s – adequada para cargas de trabalho padrão que exigem velocidade elevada.
-- Gen 2: 30 IOPS/Go (até 20 000 IOPS) e 0,5 Mo/s por Go (até 512 Mo/s) – recomendada para aplicações intensivas que exigem um máximo de I/O e de débito.
+- **IOPS**: 30 IOPS/Go (base de 3 000 IOPS para 10–100 Go, até 20 000 IOPS)
+- **Débito**: 0,5 Mo/s/Go (base de 50 Mo/s para 10–100 Go, até 512 Mo/s)
+- **Tamanho máximo**: 12 To
 
-Escolha Gen 1 para cargas de trabalho de alta velocidade clássicas, e Gen 2 para cargas de trabalho pesadas tais como análise, grandes bases de dados ou cálculo de alta performance.
+Esta classe é recomendada para cargas de trabalho pesadas tais como análise, grandes bases de dados e cálculo de alta performance.
 
 ### Tabela comparativa
 
 | Classe de armazenamento | Caso de utilização | Desempenho | Regiões disponíveis | SLA de disponibilidade | Replicação | Notas |
 | --- | --- | --- | --- | --- | --- | --- |
-| **High Speed Volume** | Cargas de trabalho de alto desempenho, análise, grandes bases de dados | **Gen 1**: até 3 000 IOPS, 128 Mo/s <br><br> **Gen 2**: 30 IOPS/Go (até 20 000 IOPS), 0,5 Mo/s por Go (até 512 Mo/s) | 3-AZ, 1-AZ, Local Zones | 99,9 % | Zonal | NVMe otimizado, desempenho escalável |
+| **High Speed Volume Gen2** | Cargas de trabalho de alto desempenho, análise, grandes bases de dados | 30 IOPS/Go (base de 3 000 IOPS, até 20 000 IOPS), 0,5 Mo/s/Go (base de 50 Mo/s, até 512 Mo/s), máx. 12 To | 3-AZ, 1-AZ, Local Zones | 99,9 % | Zonal | NVMe otimizado, desempenho escalável |
 | **Regional Classic Volume** | Aplicações críticas, sistemas distribuídos | 500 IOPS garantidos, 64 Mo/s | 3-AZ | 99,99 % | Multi-zona | NVMe over Fabric, alta disponibilidade |
 | **Classic Volume** | Cargas de trabalho quotidianas, máquinas virtuais, cópias de segurança | 500 IOPS garantidos, 64 Mo/s | 1-AZ, Local Zones | 99,9 % | Zonal | NVMe over Fabric, desempenho padrão |
 
@@ -73,7 +76,7 @@ Cada tipo de volume Block Storage também está disponível em versão encriptad
 Os volumes encriptados podem ser criados diretamente a partir da área de cliente OVHcloud ou através das ferramentas CLI/API, especificando o tipo de volume com o sufixo `-luks` (por exemplo: classic-luks ou highspeed-luks). Isto permite proteger facilmente os dados sensíveis, mantendo as mesmas performances e funcionalidades dos volumes padrão.
 
 > [!primary]
-> Os volumes encriptados não têm qualquer impacto no desempenho.
+> Para os volumes encriptados de grande dimensão (mais de 800 GiB), o desempenho pode ser inferior à qualidade de serviço (QoS) esperada para o volume, com uma redução de até 20 % do débito para a tecnologia High Speed Gen2. O impacto varia em função da implementação escolhida pelo cliente.
 
 ## Casos de utilização
 
@@ -101,6 +104,6 @@ Os volumes Block Storage podem ser implantados com diferentes opções de dispon
 
 [Modificar um Volume Block Storage](/pages/public_cloud/compute/switch_volume_type)
 
-Se precisar de formação ou de assistência técnica para a implementação das nossas soluções, contacte o seu representante comercial ou clique [neste link](/links/professional-services) para obter um orçamento e solicitar uma análise personalizada do seu projeto pela nossa equipa de Professional Services.
+Se precisar de formação ou de assistência técnica para a implementação das nossas soluções, contacte o seu representante comercial ou dirija-se à nossa [equipa de Professional Services](/links/professional-services) para obter um orçamento e solicitar uma análise personalizada do seu projeto.
 
 Fale com a nossa [comunidade de utilizadores](/links/community).

@@ -20,7 +20,6 @@ Pour plus d'informations sur le service OVHcloud Load Balancer, veuillez lire no
 
 - Un [Load Balancer OVHcloud](/links/network/load-balancer) configuré
 - Une [Additional IP](/links/bare-metal/ip)
-- Accès à [l'espace client OVHcloud](/links/manager)
 - Accès à [l'API OVHcloud](/links/api)
 
 > [!primary]
@@ -39,6 +38,16 @@ Pour plus d'informations sur le service OVHcloud Load Balancer, veuillez lire no
 > - **État de la configuration :** Le Load Balancer ne doit pas être en cours de rafraîchissement. Un Load Balancer ne peut pas être rafraîchi plusieurs fois en même temps, car cela empêcherait les modifications d'être appliquées à la configuration résultante.
 >
 
+<!-- CP-NAV-START:network-load-balancer -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Load Balancer](/links/control-panel/network-load-balancer)
+- **Pour accéder à vos services :** `Network`{.action} > `Load Balancer`{.action} > Sélectionnez votre service
+
+---
+<!-- CP-NAV-END:network-load-balancer -->
 ## En pratique
 
 Dans ce document, nous aborderons deux cas d'utilisation distincts :
@@ -123,7 +132,7 @@ Depuis l'[API OVHcloud](/links/api), vous pouvez utiliser les appels suivants po
 
 #### Via l'espace client OVHcloud
 
-Vous pouvez définir des Additional IPs dédiées via l'[espace client OVHcloud](/links/manager) en accédant à la section `Réseau`{.action}, puis à `Load Balancer`{.action}.
+Vous pouvez définir des Additional IPs dédiées via l'espace client OVHcloud.
 
 Une fois que vous avez sélectionné le Load Balancer que vous souhaitez modifier, accédez à l'onglet `frontends`{.action}, où vous pouvez créer un nouveau frontend ou modifier un frontend existant.
 

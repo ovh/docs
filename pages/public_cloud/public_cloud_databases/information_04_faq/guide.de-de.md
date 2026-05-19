@@ -1,7 +1,7 @@
 ---
 title: FAQ for Public Cloud Databases
 excerpt: Public Cloud Databases Frequently Asked Questions
-updated: 2025-07-31
+updated: 2026-05-06
 ---
 
 ## Objective
@@ -45,13 +45,13 @@ We expose our roadmap publicly on [Github](https://github.com/ovh/public-cloud-r
 
 ## Service Plans and instances
 
-### What are the major differences between Essential, Business/Production and Advanced/Enterprise plans?
+### What are the major differences between Essential/Discovery, Business/Production and Enterprise/Advanced plans?
 
 We built service plans based on business use-cases. They have major differentiators, related to each DBMS.
 
 Overall, we designed 5 services plans with these usages in mind:
 
-- Essential: perfect fit for test, proof-of-concept, development. Not for production purposes, mainly due to the lack of SLA, High Resiliency via clustering or Private Network.
+- Essential/Discovery: perfect fit for test, proof-of-concept, development. Not for production purposes, mainly due to the lack of SLA, High Resiliency via clustering or Private Network.
 - Business/Production: First level for development or production infrastructure. High resiliency is provided, with SLA.
 - Enterprise/Advanced: Highest level of services, with all the features and better SLA. For some DBMS such as MongoDB, you also benefit from the highest level of licensing.
 
@@ -191,7 +191,7 @@ If you already have database instances, you can check what is consumed today. Fo
 
 For each DB instance, you can:
 
-- Select a higher service plan if required (Essential to Business/Production or Enterprise/Advanced, Business/Production to Enterprise/Advanced).
+- Select a higher service plan if required (Essential/Discovery to Business/Production or Enterprise/Advanced, Business/Production to Enterprise/Advanced).
 - Select a higher or lower range of compute and storage, provided that the new storage is enough to contain your data.
 
 ### Will my DB instance remain available during scaling?

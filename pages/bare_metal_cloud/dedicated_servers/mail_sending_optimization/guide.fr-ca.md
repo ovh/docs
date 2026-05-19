@@ -1,7 +1,7 @@
 ---
-title: Comment éviter que vos e-mails ne soient marqués comme spam
-excerpt: "Découvrez comment appliquer les bonnes pratiques d'envoi d'e-mails afin de limiter les risques de blocage des e-mails légitimes par la protection contre les spams"
-updated: 2024-09-24
+title: "Optimiser l'envoi d'e-mails sur un serveur dédié"
+excerpt: "Appliquez les bonnes pratiques d'envoi d'e-mails sur votre serveur dédié pour éviter que vos messages légitimes soient marqués comme spam"
+updated: 2026-05-06
 ---
 
 ## Objectif
@@ -119,6 +119,13 @@ Pour plus d'informations, veuillez ouvrir une [demande d'assistance](https://sup
 
 L'ajout d'enregistrements spécifiques, tel qu'un enregistrement DMARC (Domain-based Message Authentication, Reporting, and Conformance) ou DKIM (DomainKeys Identified Mail) peut faciliter la réception des e-mails si votre destinataire est chez Gmail. Consultez nos guides mentionnés [en bas de cette page](#go-further) pour les configurer.
 
+### Port SMTP bloqué (port 25)
+
+Si vos e-mails ne s'envoient pas ou que le serveur SMTP ne répond pas, un port bloqué est une cause fréquente. Par défaut, le **port 25** sortant est bloqué sur l'infrastructure OVHcloud (serveurs dédiés, VPS, instances Public Cloud) afin de prévenir les abus de spam. Pour résoudre ce problème :
+
+- Utilisez le **port 587** (STARTTLS) pour la soumission des e-mails sortants.
+- Si votre cas d'usage nécessite le port 25, demandez son déblocage en [contactant notre support](/links/support-contact).
+
 ### Vérifier vos informations
 
 Il peut être intéressant d'utiliser un site comme [Mail Tester](http://www.mail-tester.com/) afin de vérifier que tous vos paramétrages sont corrects.
@@ -132,6 +139,10 @@ Il peut être intéressant d'utiliser un site comme [Mail Tester](http://www.mai
 [Améliorer la sécurité des e-mails via un enregistrement SPF](/pages/web_cloud/domains/dns_zone_spf)
 
 [Améliorer la sécurité des e-mails via un enregistrement DMARC](/pages/web_cloud/domains/dns_zone_dmarc)
+
+[OVHcloud AntiSpam - Bonnes pratiques et déblocage d'une adresse IP](/pages/bare_metal_cloud/dedicated_servers/antispam_best_practices)
+
+[Sécuriser un serveur dédié](/pages/bare_metal_cloud/dedicated_servers/securing-a-dedicated-server)
 
 Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](/links/partner).
 

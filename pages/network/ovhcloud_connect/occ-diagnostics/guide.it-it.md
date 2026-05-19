@@ -13,8 +13,17 @@ With OVHcloud Connect, you can link your company network to your private OVHclou
 ## Requirements
 
 - An [OVHcloud Connect solution](/links/network/ovhcloud-connect) with a valid POP configuration.
-- Access to the [OVHcloud Control Panel](/links/manager).
 
+<!-- CP-NAV-START:network-ovhcloud-connect -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [OVHcloud Connect](/links/control-panel/network-ovhcloud-connect)
+- **Navigation path:** `Network`{.action} > `OVHcloud Connect`{.action}
+
+---
+<!-- CP-NAV-END:network-ovhcloud-connect -->
 ## List of available diagnostics
 
 ### Layer 3 mode
@@ -30,8 +39,6 @@ With OVHcloud Connect, you can link your company network to your private OVHclou
 ## Instructions
 
 ### Layer 3 mode
-
-You can find the list of your `OVHcloud Connect`{.action} services in the `Network`{.action} section of your [OVHcloud Control Panel](/links/manager).
 
 ![OCC Control Panel](images/OCC_cpanel.png){.thumbnail}
 

@@ -1,7 +1,7 @@
 ---
 title: Object Storage - Master asynchronous replication across your buckets
 excerpt: Learn how to automate and manage object replication across buckets for enhanced data availability, redundancy, and compliance
-updated: 2026-03-06
+updated: 2026-04-21
 ---
 
 ## Introduction
@@ -303,10 +303,29 @@ Before creating your first job, please take into account the following considera
 >> 
 > Via the OVHcloud Control Panel
 >> 
+>> **Job creation**
+>> 
 >> 1. Click on your source bucket and go to the `Replication`{.action} tab.
 >> 2. Click on the `Replicate existing objects`{.action} button, you will be asked to confirm that you want to create a replication job.
 >> 3. Click on `Confirm`{.action}.
-
+>> 
+>> **Monitoring progress**
+>> Click on your source bucket and go to the `Jobs`{.action} tab. You should be able to see all newly created jobs.
+>> 
+>> The tab displays the following information for each job :
+>>
+>> - ID: a unique ID that identifies a job
+>> - Creation date: the job creation timestamp in MM/dd/yyyy HH:mm format
+>> - Status: Created | Preparing | Active | Completed | Failed
+>> - Operation: as of now, only Replication operations are supported
+>> - Failed: the number of objects that the job failed to replicate
+>> - Stuck: the number of objects that couldn't be processed but are awaiting retries
+>> - Completed: the number of objects that have been replicated
+>> - Total objects: the total number of objects eligible for replication
+>>  
+>> > [!warning]
+>> > - Jobs are automatically deleted after 60 days
+>> > - You can use the refresh button to regularly update and check job statuses
 
 ### Examples of replication configurations
 

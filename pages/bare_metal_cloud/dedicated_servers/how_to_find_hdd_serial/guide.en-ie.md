@@ -1,6 +1,6 @@
 ---
-title: Finding the serial number of a hard disk
-excerpt: This guide will show you how to retrieve the serial number of a disk in order to proceed with its replacement.
+title: "Find a Hard Disk Serial Number on a Dedicated Server"
+excerpt: "Retrieve the serial number of a hard disk on your dedicated server to identify it for a replacement request."
 updated: 2018-08-21
 ---
 
@@ -12,7 +12,7 @@ To minimise the chance of human error during hard disk replacements, we ask our 
 
 ## Requirements
 
-- a [dedicated server](https://www.ovh.ie/dedicated_servers/)
+- a [dedicated server](/links/bare-metal/bare-metal)
 - administrative (sudo) access to the server via SSH
 - the sas2ircu utility installed on your Windows server (available via the [broadcom](https://www.broadcom.com/support/download-search/?dk=sas2ircu) search engine)
 
@@ -166,5 +166,7 @@ smartctl -a /dev/sgX | grep Serial
 The sg device number will be displayed as follows: `/dev/sg0`, `/dev/sg1` etc.
 
 ## Go further
+
+[Replacing a Defective Disk on a Dedicated Server](/pages/bare_metal_cloud/dedicated_servers/disk_replacement)
 
 Join our [community of users](/links/community).

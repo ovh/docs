@@ -1,6 +1,6 @@
 ---
-title: Changing the admin password on a Windows dedicated server
-excerpt: Find out how to use the OVHcloud rescue mode to reset the password of the Administrator account on a Windows dedicated server
+title: "Change the admin password on a Windows Dedicated Server"
+excerpt: "Reset the Administrator password on a Windows dedicated server using OVHcloud rescue mode when you are locked out."
 updated: 2024-06-26
 flag: hidden
 ---
@@ -265,9 +265,11 @@ The system is going down for reboot NOW!
 
 ### Step 5: Setting a new password (IPMI)
 
+<!-- CP-STEPS-START:ipmi-kvm-session -->
 In your [OVHcloud Control Panel](/links/manager), navigate to the `IPMI`{.action} tab to open a KVM session.
 
-![IPMI](images/adminpw_win_03.png){.thumbnail}
+![IPMI tab in the OVHcloud Control Panel for KVM access](images/adminpw_win_03.png){.thumbnail}
+<!-- CP-STEPS-END:ipmi-kvm-session -->
 
 #### Step 5.1: For a newer version of Windows
 
@@ -310,19 +312,21 @@ For detailed instructions, please refer to the [rescue mode guide](/pages/bare_m
 
 #### Step 2: Clearing the current password
 
+<!-- CP-STEPS-START:ipmi-kvm-session-winrescue -->
 In your [OVHcloud Control Panel](/links/manager), navigate to the `IPMI`{.action} tab to open a KVM session.
 
-![IPMI](images/adminpw_win_03.png){.thumbnail}
+![Opening a KVM session from the IPMI tab](images/adminpw_win_03.png){.thumbnail}
+<!-- CP-STEPS-END:ipmi-kvm-session-winrescue -->
 
 To reset passwords, the tool NTPWEdit is required. Once you are connected via KVM, open the browser and download it from the [official website](http://www.cdslow.org.ru/en/ntpwedit/). Navigate to the folder where the downloaded ZIP file is located and extract the contents. Next, open the *ntpwedit64* executable to start the application.
 
-![ntpwedit](images/adminpw_win_09.png){.thumbnail}
+![NTPWEdit application opened in WinRescue](images/adminpw_win_09.png){.thumbnail}
 
 In this interface, you can manipulate the *SAM* file in order to clear the admin user's password. The default file path in the *WINDOWS* directory is pre-filled. Open the file to display the list of users by clicking on `Open`{.action}.
 
 The relevant user will either be "admin" or "Administrator", depending on the Windows version. If both are present, choose "admin". Then click on `Change password`{.action}.
 
-![ntpwedit](images/adminpw_win_10.png){.thumbnail}
+![NTPWEdit showing the list of Windows user accounts](images/adminpw_win_10.png){.thumbnail}
 
 In the popup window, leave the fields blank and click `OK`{.action}. Finish by clicking on `Save changes`{.action}  and `Exit`{.action}.
 

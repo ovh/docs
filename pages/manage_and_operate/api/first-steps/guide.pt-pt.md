@@ -132,7 +132,7 @@ Os separadores `PHP` e `Python` contêm os elementos que devem ser adicionados n
 
 Qualquer aplicação que pretenda comunicar com a API da OVHcloud deve ser declarada previamente.
 
-Para isso, clique na seguinte ligação: [https://eu.api.ovh.com/createToken/](https://eu.api.ovh.com/createToken/).
+Para isso, clique na seguinte ligação: [https://auth.eu.ovhcloud.com/api/createToken](https://auth.eu.ovhcloud.com/api/createToken).
 
 Indique o seu ID de cliente, a sua palavra-passe e o nome da sua aplicação. O nome será útil mais tarde se quiser autorizar outras pessoas a utilizá-lo.
 
@@ -190,7 +190,7 @@ Eis um exemplo de utilização da secção `/me` que permite gerir a sua conta O
 ```python
 import ovh
 
-# Instantiate. Visit https://api.ovh.com/createToken/?GET=/me
+# Instantiate. Visit https://auth.eu.ovhcloud.com/api/createToken?GET=/me
 # to get your credentials
 client = ovh.Client(
     endpoint='ovh-eu',

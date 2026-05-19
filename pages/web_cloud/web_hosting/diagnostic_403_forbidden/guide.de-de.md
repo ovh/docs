@@ -43,30 +43,20 @@ Mit der automatisierten Sperrung werden Sie auch vor möglichen rechtlichen Kons
 - Sie haben ein [OVHcloud Webhosting](/links/web/hosting).
 - Sie verfügen über die [Login-Daten](/pages/web_cloud/web_hosting/ftp_connection) für den FTP-Speicherplatz Ihres Hostings.
 
-<!-- CP-NAV-START:web-hosting -->
----
-
-### Zugriff auf das OVHcloud Kundencenter
-
-- **Direkter Link:** [Hosting-Pakete](/links/control-panel/web-hosting)
-- **Navigationspfad:** `Web Cloud`{.action} > `Hosting-Pakete`{.action} > Wählen Sie Ihr Webhosting aus
-
----
-<!-- CP-NAV-END:web-hosting -->
 
 ## In der praktischen Anwendung
 
-### Schritt 1: Die Situation analysieren
+### 1 - Die Situation analysieren
 
 Wenn die Seite "**403 forbidden**" nach einer Änderung an Ihrer Website erscheint, [setzen Sie den FTP-Speicherplatz Ihres Hostings ganz oder teilweise zu einem früheren Zeitpunkt zurück](/pages/web_cloud/web_hosting/ftp_save_and_backup).
 
 Wenn Sie mit den verfügbaren Backups den Zugang zu Ihrer Website nicht wiederherstellen können, kontaktieren Sie einen [spezialisierten Dienstleister](/links/partner).
 
-Wenn die Seite "**403 forbidden**" ohne Änderung Ihrer Website erscheint, prüfen Sie Ihren Posteingang. Wenn Sie eine E-Mail von unserem System erhalten haben, die eine Schließung Ihres Hostings aus Sicherheitsgründen meldet, gehen Sie zu [Schritt 2](#step-2) dieser Anleitung.
+Wenn die Seite "**403 forbidden**" ohne Änderung Ihrer Website erscheint, prüfen Sie Ihren Posteingang. Wenn Sie eine E-Mail von unserem System erhalten haben, die eine Schließung Ihres Hostings aus Sicherheitsgründen meldet, gehen Sie zu [Teil 2](#step-2) dieser Anleitung.
 
 Wenn die Seite "**403 forbidden**" ohne Aktion Ihrerseits erscheint und Sie diesbezüglich keine Benachrichtigung erhalten haben, überprüfen Sie zunächst die FTP-Zugriffsrechte (CHMOD) Ihrer Dateien und Ordner sowie den in Ihrer **.htaccess** enthaltenen Code. Überprüfen Sie auch, ob dieser Zustand ggf. von einem Sicherheitsplugin oder einer Application Firewall verursacht wird. Falls nötig, kontaktieren Sie einen [spezialisierten Dienstleister](/links/partner).
 
-### Schritt 2: Sicherheitsmaßnahmen auf Ihrer Seite durchführen <a name="step-2"></a>
+### 2 - Sicherheitsmaßnahmen auf Ihrer Seite durchführen <a name="step-2"></a>
 
 Überprüfen Sie zunächst die Sicherheit Ihrer Computer und Geräte:
 
@@ -87,7 +77,7 @@ Wenn die Seite "**403 forbidden**" ohne Aktion Ihrerseits erscheint und Sie dies
 > Sollten Sie Hilfe bei den durchzuführenden Maßnahmen benötigen, wenden Sie sich an die [OVHcloud Partner](/links/partner).
 >
 
-### Schritt 3: Ihr Hosting bearbeiten
+### 3 - Ihr Hosting bearbeiten
 
 Beachten Sie zunächst das Datum des Versands der E-Mail von OVHcloud, in der die Deaktivierung Ihres Hostings mitgeteilt wurde, sowie die Liste der Ordner, die auffällige Dateien enthalten.
 
@@ -122,10 +112,10 @@ Wenn Ihr Hosting vor mehr als zwei Wochen gesperrt wurde, kontaktieren Sie einen
 
 > [!success]
 >
-> Wenn Sie weitere Informationen zu den [Schritten 2 und 3](#step-2) benötigen, lesen Sie unsere Hilfe zu [Aktionen wenn Ihre Website von einem Hack betroffen ist](/pages/web_cloud/web_hosting/cms_what_to_do_if_your_site_is_hacked).
+> Wenn Sie weitere Informationen zu den [Teilen 2 und 3](#step-2) benötigen, lesen Sie unsere Hilfe zu [Aktionen wenn Ihre Website von einem Hack betroffen ist](/pages/web_cloud/web_hosting/cms_what_to_do_if_your_site_is_hacked).
 >
 
-### Schritt 4: Ihr Webhosting mit FileZilla reaktivieren <a name="reactivate-web-hosting"></a>
+### 4 - Ihr Webhosting mit FileZilla reaktivieren <a name="reactivate-web-hosting"></a>
 
 > [!warning]
 >

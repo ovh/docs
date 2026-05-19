@@ -93,6 +93,7 @@ If your password has been compromised, we strongly recommend [changing it as soo
 
 - A message will then pop up, confirming that the password has been changed successfully. Click `Continue`{.action} at the bottom of the pop-up to be redirected to the login page, then enter your NIC handle and new password.
 
+
 <a name="lost-password"></a>
 
 #### If you have forgotten your current password
@@ -119,6 +120,7 @@ If your password has been compromised, we strongly recommend [changing it as soo
 >
 > When you reset your password, all active sessions for your OVHcloud account will be automatically closed.
 >
+
 
 ## Go further
 

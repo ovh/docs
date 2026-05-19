@@ -34,7 +34,7 @@ Il campo "Inviare un SMS" è il primo elemento disponibile nella lista delle azi
 ### Passaggio 1: Configura il mittente e il destinatario
 
 > [!primary]
-> Per ulteriori informazioni sulla creazione e sull'utilizzo di un mittente, consultare la nostra guida "[Tutto ciò che devi sapere sui mittenti SMS](/pages/web_cloud/messaging/sms/tout_savoir_sur_les_expediteurs_sms)".
+> Per ulteriori informazioni sulla creazione e sull’utilizzo di un mittente, consultare la nostra guida “[Tutto ciò che devi sapere sui mittenti SMS](/pages/web_cloud/messaging/sms/tout_savoir_sur_les_expediteurs_sms)”.
 
 Una volta nella pagina di invio SMS, è necessario configurare tre distinti parametri per adattare al meglio l’invio di SMS alle tue esigenze.
 

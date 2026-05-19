@@ -33,6 +33,7 @@ This OVHcloud feature allows you to set up an automatic email responder (auto-re
 
 ### Creating an auto-reply
 
+<!-- CP-STEPS-START:create-auto-reply -->
 Open the tab `Emails`{.action}, then click on the button `Manage auto-replies`{.action} on the right.
 
 You will be redirected to the `Manage auto-replies` section where all of the email responders for this domain name are listed.
@@ -62,6 +63,7 @@ The window `Add an auto-reply` appears. Fill out the form according to the infor
 - `Message`: This will be the reply to incoming mails while the responder is active.
 
 Then click `Confirm`{.action} to finish configuring your automatic reply.
+<!-- CP-STEPS-END:create-auto-reply -->
 
 > [!success]
 >
@@ -69,9 +71,11 @@ Then click `Confirm`{.action} to finish configuring your automatic reply.
 
 ### Modifying or deleting an automatic reply
 
+<!-- CP-STEPS-START:modify-delete-auto-reply -->
 Once your automatic reply has been created, it will appear in the table in the `Manage auto-replies`{.action} section of your email service. You can delete or modify a responder by clicking on `...`{.action} to the right of it.
 
 ![hosting](images/email_responder02.png){.thumbnail}
+<!-- CP-STEPS-END:modify-delete-auto-reply -->
 
 ## Go further <a name="go-further"></a>
 

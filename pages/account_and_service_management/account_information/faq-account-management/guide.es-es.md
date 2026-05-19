@@ -128,6 +128,7 @@ Encuentre más información en nuestra guía "[Establecer y gestionar la contras
 > Si ha olvidado su identificador de cliente, puede encontrarlo en la parte superior derecha de su última factura. Tiene este aspecto: "aa00000-ovh" (las primeras letras suelen ser las iniciales de la persona que creó la cuenta). Este identificador también se indica en el correo de confirmación de creación de la cuenta, así como en los correos de confirmación o renovación de pedidos.
 >
 
+
 ///
 
 /// details | ¿Existe un límite en el número de veces que puedo cambiar la contraseña de mi cuenta OVHcloud (a través de la opción "¿No recuerda su ID de cliente o contraseña?")?

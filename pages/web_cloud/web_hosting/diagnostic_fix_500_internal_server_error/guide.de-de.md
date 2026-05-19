@@ -26,16 +26,6 @@ Diese Fehler können auch durch Updates entstehen, die **automatisch** von Kompo
 - Sie haben ein [OVHcloud Webhosting](/links/web/hosting) in Ihrem Kunden-Account.
 - Sie haben keine ausstehenden [Zahlungen](/pages/account_and_service_management/managing_billing_payments_and_services/invoice_management#pay-bills) und [Verlängerungen](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#renewal-management) der dazugehörigen Dienstleistungen (Domainname und Webhosting).
 
-<!-- CP-NAV-START:web-hosting -->
----
-
-### Zugriff auf das OVHcloud Kundencenter
-
-- **Direkter Link:** [Hosting-Pakete](/links/control-panel/web-hosting)
-- **Navigationspfad:** `Web Cloud`{.action} > `Hosting-Pakete`{.action} > Wählen Sie Ihr Webhosting aus
-
----
-<!-- CP-NAV-END:web-hosting -->
 
 ## In der praktischen Anwendung
 

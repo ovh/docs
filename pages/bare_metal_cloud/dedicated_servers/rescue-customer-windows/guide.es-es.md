@@ -1,6 +1,6 @@
 ---
-title: "Cómo activar y utilizar el modo de rescate Windows"
-excerpt: "Cómo utilizar el sistema de rescate de OVHcloud para Windows para solucionar los problemas de su servidor dedicado"
+title: "Modo rescue Windows en un servidor dedicado"
+excerpt: "Inicie su servidor dedicado Windows en modo rescue de OVHcloud para solucionar problemas, reparar o restablecer contraseñas"
 updated: 2025-01-28
 ---
 

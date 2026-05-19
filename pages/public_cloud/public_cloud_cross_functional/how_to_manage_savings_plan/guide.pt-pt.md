@@ -26,7 +26,7 @@ details[open]>summary::before {
 
 ## Objective
 
-This guide aims at providing a clear and detailed method for creating and updating Savings Plans for your resources. You will discover how to manage your Savings Plans using the OVHcloud Control Panel, the OVHcloud API and Terraform. By following this guide, you will be able to:
+This guide aims to provide a clear and detailed method for creating and updating Savings Plans for your resources. You will discover how to manage your Savings Plans using the OVHcloud Control Panel, the OVHcloud API and Terraform. By following this guide, you will be able to:
 
 - Create a Savings Plan for your resources.
 - Modify a Savings Plan.
@@ -38,23 +38,23 @@ This guide aims at providing a clear and detailed method for creating and updati
 
 - A [Public Cloud project](/links/public-cloud/public-cloud) in your OVHcloud account.
 - Access to the [OVHcloud API](/links/api) (create your credentials using [this guide](/pages/manage_and_operate/api/first-steps))
-- Being familiar with [Terraform](/pages/public_cloud/public_cloud_cross_functional/how_to_use_terraform) if you intend using it.
+- Being familiar with [Terraform](/pages/public_cloud/public_cloud_cross_functional/how_to_use_terraform) if you intend to use it.
 - Being familiar with the principles of [Savings Plans](/links/public-cloud/savings-plan)
+
+## Instructions
 
 <!-- CP-NAV-START:publiccloud-projects -->
 ---
 
-### Acesso à Área de Cliente OVHcloud
+### OVHcloud Control Panel Access
 
-- **Ligação direta:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
-- **Caminho de navegação:** `Public Cloud`{.action} > Selecione o seu projeto
+- **Direct link:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Navigation path:** `Public Cloud`{.action} > Select your project
 
 ---
 <!-- CP-NAV-END:publiccloud-projects -->
 
-## Instructions
-
-Click on `Savings Plans`{.action} in the left-hand navigation bar under **Parâmetros**.
+Click on `Savings Plans`{.action} in the left-hand navigation bar under **Settings**.
 
 ### Create a Savings Plan
 
@@ -158,7 +158,7 @@ You can create your Savings Plan for the type of resource you want by following 
 >> >
 >> The **serviceId** corresponds to the previously retrieved id.
 >>
->> You get a list of Savings Plan as follows:
+>> You get a list of Savings Plans as follows:
 >>
 >> ![Savings Plan list](images/savings_plan_list_svp.png){.thumbnail .h-600}
 >>
@@ -190,7 +190,7 @@ You can create your Savings Plan for the type of resource you want by following 
 >>
 >> /// details | Increase the number of Savings Plan resources
 >>
->> To increase the number of resources subscribed by your Savings Plan, use this route:
+>> To increase the number of resources subscribed to your Savings Plan, use this route:
 >>
 >> > [!primary]
 >> >

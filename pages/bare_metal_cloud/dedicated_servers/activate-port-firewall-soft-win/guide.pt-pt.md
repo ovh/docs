@@ -1,6 +1,6 @@
 ---
-title: Configurar a firewall em Windows
-excerpt: Saiba como configurar a firewall em Windows
+title: "Configurar a firewall do Windows num servidor dedicado"
+excerpt: "Configure a firewall integrada do Windows no seu servidor dedicado para controlar o tráfego de rede de entrada e de saída."
 updated: 2022-01-31
 ---
 

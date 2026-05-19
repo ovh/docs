@@ -63,6 +63,7 @@ Afin d'empêcher les transferts de noms de domaine non autorisés, les noms de d
 
 ### 1 - Lever la protection contre le transfert du nom de domaine
 
+<!-- CP-STEPS-START:unlock-domain-transfer -->
 Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3** étapes.
 
 > [!tabs]
@@ -70,7 +71,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3*
 >>
 >> Accédez à la page [Noms de domaine](/links/control-panel/web-domains), puis choisissez le nom de domaine concerné.
 >>
->> ![Noms de domaine](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns.png){.thumbnail}
+>> ![Noms de domaine](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
 >>
 > **Étape 2**
 >>
@@ -97,6 +98,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3*
 >> > En effet, certains *codes de transfert* sont directement gérés par le *registre* de l'extension de votre nom de domaine. Un *registre* est une organisation qui gère l'ensemble des noms de domaine pour une extension donnée. Par exemple, l'**AFNIC** gère l'ensemble des noms de domaine ayant pour extension "*.fr*". Si tel est le cas, vous devez contacter directement le *registre* qui gère l'extension de votre nom de domaine afin de récupérer le *code de transfert*.
 >>
 >> ![désactivation protection](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/protection-against-domain-name-transfert-deactivating.png){.thumbnail}
+<!-- CP-STEPS-END:unlock-domain-transfer -->
 
 > [!primary]
 >
@@ -112,6 +114,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3*
 
 Une fois la protection contre le transfert levée, vous pouvez récupérer le code de transfert de votre nom de domaine.
 
+<!-- CP-STEPS-START:get-transfer-code -->
 Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3** étapes.
 
 > [!tabs]
@@ -119,7 +122,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3*
 >>
 >> Accédez à la page [Noms de domaine](/links/control-panel/web-domains), puis choisissez le nom de domaine concerné.
 >>
->> ![Noms de domaine](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns.png){.thumbnail}
+>> ![Noms de domaine](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
 >>
 > **Étape 2**
 >>
@@ -134,6 +137,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3*
 >> Le code sera demandé par votre nouveau bureau d'enregistrement pour terminer le processus de transfert. Vous pouvez vérifier les détails auprès de votre nouveau bureau d'enregistrement.
 >>
 >> Plutôt que de taper manuellement le code, nous vous recommandons de le copier/coller, car certains caractères peuvent être facilement confondus.
+<!-- CP-STEPS-END:get-transfer-code -->
 
 Une fois le code de transfert récupéré, **ne reverrouillez pas votre nom de domaine, sauf si vous ne souhaitez plus le transférer**.
 

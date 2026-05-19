@@ -1,7 +1,7 @@
 ---
 title: FAQ Public Cloud OVHcloud
 excerpt: Encuentre las preguntas más frecuentes sobre los servicios Public Cloud de OVHcloud
-updated: 2026-03-31
+updated: 2026-05-06
 ---
 
 <style>
@@ -166,6 +166,8 @@ Esto incluye:
 - la autenticación de e-mails (SPF, DKIM, DMARC),
 - la configuración del reverse DNS (PTR),
 - el cumplimiento de las buenas prácticas de los proveedores de correo electrónico.
+
+Si sus e-mails no se envían o el servidor SMTP no responde, compruebe si los puertos SMTP están bloqueados. El puerto 25 está bloqueado por defecto en las instancias Public Cloud de OVHcloud para prevenir abusos. Utilice el puerto 587 (STARTTLS) para el envío saliente o, si es necesario, solicite el desbloqueo del puerto 25 [contactando con nuestro soporte](/links/support-contact).
 
 Para más información, consulte nuestra guía dedicada: [Cómo evitar que sus e-mails sean marcados como spam](/pages/bare_metal_cloud/dedicated_servers/mail_sending_optimization).
 

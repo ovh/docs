@@ -1,7 +1,7 @@
 ---
 title: "Automatische E-Mails eines Webhostings verwalten"
 excerpt: "Erfahren Sie hier, wie Sie über ein Webhosting versendete automatische E-Mails verwalten"
-updated: 2025-10-21
+updated: 2026-04-01
 ---
 
 ## Ziel
@@ -39,14 +39,15 @@ Automatische E-Mails sind Nachrichten, die über Skripte versendet werden, gewö
 
 ## In der praktischen Anwendung
 
-Die Überwachung und Verwaltung der automatisierten E-Mails Ihres OVHcloud Webhostings erfolgt über Ihr [OVHcloud Kundencenter](/links/manager).
+### Übersicht des Bereichs „E-Mail-Skripte"
 
-Klicken Sie auf die Tabs, um die **2** Schritte anzuzeigen.
+<!-- CP-STEPS-START:email-scripts-overview -->
+Um auf den Bereich „E-Mail-Skripte" zuzugreifen, klicken Sie auf die Tabs, um die **3** Schritte anzuzeigen.
 
 > [!tabs]
 > **Schritt 1**
 >>
->> Gehen Sie auf die Seite [Hosting-Pakete](/links/control-panel/web-hosting), und wählen Sie das betreffende Webhosting aus.
+>> Rufen Sie die Seite [Hosting-Pakete](/links/control-panel/web-hosting) auf und wählen Sie das betreffende Webhosting aus.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
@@ -58,34 +59,35 @@ Klicken Sie auf die Tabs, um die **2** Schritte anzuzeigen.
 >>
 >> ![More tab 2](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/more-2.png){.thumbnail}
 >>
->> Hier können Sie über Ihr [OVHcloud Webhosting](/links/web/hosting) versendete automatische E-Mails verwalten.
-
-### Informationen im Tab "E-Mail-Skripte"
-
-![hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/email-scripts/tab.png){.thumbnail}
-
-Diese Seite zeigt diverse Informationen zur Nachverfolgung des von Ihren Skripten generierten E-Mail-Versands:
-
-- **Dienststatus**: Aktueller Status des Dienstes, der den automatischen Versand von E-Mails von Ihrem Webhosting aus durchführt:
-    - Ein grüner Zustand (*"Aktiv"* oder *"Force"*) bedeutet, dass der Versand betriebsbereit ist.
-    - Ein roter Zustand (*"Inaktiv"*, *"Bounce"* oder *"SPAM"*) bedeutet, dass keine E-Mails mehr gesendet werden. <br>
-
-    Dieser Status hat Einfluss auf den Sendungsvorgang.
-
-- **Fehlerbericht an**: Diese Option erlaubt es, täglich einen Statusbericht an die E-Mail-Adresse Ihrer Wahl zu erhalten. Aktivieren Sie ihn, indem Sie auf `Empfänger ändern`{.action} klicken. Dieser Bericht enthält versendete E-Mails, die bei OVHcloud eine Fehlermeldung zurückliefern. Mit dem Button `E-Mails im Fehlerstatus`{.action} rechts auf der Seite `E-Mail-Skripte`{.action} können Sie ebenfalls Fehlerberichte einsehen.
-- **Gesamtzahl versandter E-Mails**: Bezieht sich auf die Anzahl der seit der Erstellung Ihres OVHcloud Webhostings versendeten automatischen E-Mails.
-- **Heute versandte E-Mails**: Gesamtzahl der am aktuellen Tag gesendeten automatischen E-Mails.
-- **Gesamtzahl E-Mails im Fehlerstatus**: Die Anzahl der seit Erstellung Ihres Webhostings versendeten automatischen E-Mails, die bei OVHcloud eine Fehlermeldung zurückgegeben haben.
-- **History der versandten E-Mails**: Verlaufskurve der E-Mails, die in den letzten Tagen von Ihrem Webhosting aus gesendet wurden.
-
-Rechts können Sie den Versand automatischer E-Mails über Ihr Webhosting verwalten. Je nach Zustand des Dienstes sind einige Optionen nicht verfügbar.
-
-- **E-Mails bereinigen**: Löscht die in der Warteschleife befindlichen E-Mails und entsperrt den Versand von E-Mails. Aus Gründen der Vertraulichkeit sind die E-Mails in der Warteschlange bei OVHcloud nicht verfügbar. Sie können diese E-Mails nur anzeigen, wenn sie vor dem Versand in der Datenbank Ihrer Website gespeichert wurden.
-- **Versand entsperren**: Den Versand automatischer E-Mails von Ihrem Webhosting entsperren. E-Mails in der Warteschlange werden ebenfalls für den Versand freigegeben.
-- **E-Mails im Fehlerstatus**: Ermöglicht den Zugriff auf die Logs der letzten E-Mails mit Sendefehlern. Dort finden Sie die betroffenen E-Mail-Adressen mit dem zugehörigen Fehler. Achtung, dieser Verlauf wird nicht zurückgesetzt, auch wenn Sie `E-Mails bereinigen`{.action} oder `Versand entsperren`{.action} nutzen.
-- **Versand blockieren**: Sperrt den E-Mail-Versand Ihres Webhostings. E-Mails, die von Ihren Skripten nach der Sperrung generiert werden, werden nicht abgeschickt, sondern für maximal 72 Stunden in einer Warteschleife gespeichert.
-
-Um die gewünschte Aktion durchzuführen, klicken Sie auf den Button und dann auf `Bestätigen`{.action}. In einigen Fällen kann es mehrere Minuten dauern, bis die Ausführung wirksam wird.
+> **Schritt 3**
+>>
+>> Hier können Sie über Ihr [OVHcloud Webhosting](/links/web/hosting) versendete automatische E-Mails überwachen und verwalten.
+>>
+>> ![Seite E-Mail-Skripte des Webhostings](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/email-scripts/tab.png){.thumbnail}
+>>
+>> Diese Seite zeigt diverse Informationen zur Nachverfolgung des von Ihren Skripten generierten E-Mail-Versands:
+>>
+>> - **Dienststatus**: Aktueller Status des Dienstes, der den automatischen Versand von E-Mails von Ihrem Webhosting aus durchführt:
+>>     - Ein grüner Zustand (*"Aktiv"* oder *"Force"*) bedeutet, dass der Versand betriebsbereit ist.
+>>     - Ein roter Zustand (*"Inaktiv"*, *"Bounce"* oder *"spam"*) bedeutet, dass keine E-Mails mehr gesendet werden.
+>>
+>>     Dieser Status hat Einfluss auf den Sendungsvorgang.
+>>
+>> - **Fehlerbericht an**: Diese Option erlaubt es, täglich einen Statusbericht an die E-Mail-Adresse Ihrer Wahl zu erhalten. Aktivieren Sie ihn, indem Sie auf `Empfänger ändern`{.action} klicken. Dieser Bericht enthält versendete E-Mails, die bei OVHcloud eine Fehlermeldung zurückliefern. Mit dem Button `E-Mails im Fehlerstatus`{.action} rechts auf der Seite `E-Mail-Skripte`{.action} können Sie ebenfalls Fehlerberichte einsehen.
+>> - **Gesamtzahl versandter E-Mails**: Bezieht sich auf die Anzahl der seit der Erstellung Ihres OVHcloud Webhostings versendeten automatischen E-Mails.
+>> - **Heute versandte E-Mails**: Gesamtzahl der am aktuellen Tag gesendeten automatischen E-Mails.
+>> - **Gesamtzahl E-Mails im Fehlerstatus**: Die Anzahl der seit Erstellung Ihres Webhostings versendeten automatischen E-Mails, die bei OVHcloud eine Fehlermeldung zurückgegeben haben.
+>> - **History der versandten E-Mails**: Verlaufskurve der E-Mails, die in den letzten Tagen von Ihrem Webhosting aus gesendet wurden.
+>>
+>> Rechts können Sie den Versand automatischer E-Mails über Ihr Webhosting verwalten. Je nach Zustand des Dienstes sind einige Optionen nicht verfügbar.
+>>
+>> - **E-Mails bereinigen**: Löscht die in der Warteschleife befindlichen E-Mails und entsperrt den Versand von E-Mails. Aus Gründen der Vertraulichkeit sind die E-Mails in der Warteschlange bei OVHcloud nicht verfügbar. Sie können diese E-Mails nur anzeigen, wenn sie vor dem Versand in der Datenbank Ihrer Website gespeichert wurden.
+>> - **E-Mails im Fehlerstatus**: Ermöglicht den Zugriff auf die Logs der letzten E-Mails mit Sendefehlern. Dort finden Sie die betroffenen E-Mail-Adressen mit dem zugehörigen Fehler. Achtung, dieser Verlauf wird nicht zurückgesetzt, auch wenn Sie `E-Mails bereinigen`{.action} oder `Versand entsperren`{.action} nutzen.
+>> - **Versand blockieren**: Sperrt den E-Mail-Versand Ihres Webhostings. E-Mails, die von Ihren Skripten nach der Sperrung generiert werden, werden nicht abgeschickt, sondern für maximal 72 Stunden in einer Warteschleife gespeichert.
+>> - **Versand entsperren**: Den Versand automatischer E-Mails von Ihrem Webhosting entsperren. E-Mails in der Warteschlange werden ebenfalls für den Versand freigegeben.
+>>
+>> Um die gewünschte Aktion durchzuführen, klicken Sie auf den Button und dann auf `Bestätigen`{.action}. In einigen Fällen kann es mehrere Minuten dauern, bis die Ausführung wirksam wird.
+<!-- CP-STEPS-END:email-scripts-overview -->
 
 > [!primary]
 >
@@ -120,7 +122,7 @@ Wenn Sie die Nachricht *Erfolgreiche Sendung* an die E-Mail-Adresse erhalten, di
 
 - **Überprüfen Sie die Gesamtgröße Ihrer E-Mail**: Die E-Mail darf die Gesamtgröße von **10 MB** (Kapselung und Header inklusive) nicht überschreiten. Der Inhalt Ihrer E-Mail sollte daher nicht größer sein als **7-8 MB**.
 
-### Die Zustände "Inaktiv", "Bounce" und "SPAM"
+### Die Zustände „Inaktiv", „Bounce" und „spam" <a name="block-state"></a>
 
 In diesem Teil finden Sie die Details zu jedem Status, der Ihre E-Mail-Funktion sperren kann.
 
@@ -133,10 +135,10 @@ In diesem Teil finden Sie die Details zu jedem Status, der Ihre E-Mail-Funktion 
 > - Konfiguration des [SPF-Eintrags](/pages/web_cloud/domains/dns_zone_spf) in der DNS-Zone der Domain.
 > - Konfiguration des [DMARC-Eintrags](/pages/web_cloud/domains/dns_zone_dmarc) in der DNS-Zone der Domain, **nur wenn der Zielserver dies erfordert**.
 > - Reputation der IP-Adresse, von der der Versand stammt ([die Ihres Webhostings](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_ip)), mit einem Tool wie [MXtoolbox](https://mxtoolbox.com/) oder [Spamhaus](https://check.spamhaus.org/) testen.
-> - Die E-Mail enthält keine Elemente, die als SPAM interpretiert werden könnten. Eine nicht erschöpfende Liste dieser Elemente finden Sie im Abschnitt „[Fall 3: Versand legitimer E-Mails, die als SPAM eingestuft werden](#elements-list-spam)“ dieser Anleitung.
+> - Die E-Mail enthält keine Elemente, die als spam interpretiert werden könnten. Eine nicht erschöpfende Liste dieser Elemente finden Sie im Abschnitt „[Fall 3: Versand legitimer E-Mails, die als spam eingestuft werden](#elements-list-spam)" dieser Anleitung.
 > - Wenn OVHcloud die E-Mail nicht blockiert und diese vom Empfänger nicht empfangen oder abgelehnt wurde, wenden Sie sich an den Empfänger, um zu überprüfen, ob die E-Mail auf dem empfangenden Server blockiert wurde.
 
-#### Der Zustand "Inaktiv"
+#### Der Zustand „Inaktiv"
 
 Dieser Zustand tritt in den folgenden Fällen ein:
 
@@ -144,24 +146,50 @@ Dieser Zustand tritt in den folgenden Fällen ein:
 - Zu viele E-Mails geben Fehlermeldungen zurück.
 - Sie haben die Funktion selbst über Ihr [OVHcloud Kundencenter](/links/manager) deaktiviert.
 
-Gehen Sie zum Entsperren in den Bereich `Web Cloud`{.action}, klicken Sie auf `Hosting-Pakete`{.action} und wählen Sie das betreffende Hosting aus der Liste aus. Klicken Sie anschließend auf den Tab `Mehr`{.action} und wählen Sie `E-Mail-Skripte`{.action}.
+<!-- CP-STEPS-START:resolve-disabled-status -->
+Klicken Sie zum Entsperren auf die Tabs, um die **3** Schritte anzuzeigen.
 
-Klicken Sie dann auf `E-Mails im Fehlerstatus`{.action} und warten Sie einige Minuten, bis der Versand-Dienst wieder aktiv ist.
+> [!tabs]
+> **Schritt 1**
+>>
+>> Rufen Sie die Seite [Hosting-Pakete](/links/control-panel/web-hosting) auf und wählen Sie das betreffende Webhosting aus.
+>>
+> **Schritt 2**
+>>
+>> Klicken Sie auf den Tab `Mehr`{.action} und klicken Sie dann auf `E-Mail-Skripte`{.action}.
+>>
+> **Schritt 3**
+>>
+>> Klicken Sie auf `Versand entsperren`{.action} und warten Sie einige Minuten, bis der Versand-Dienst wieder aktiv ist.
+<!-- CP-STEPS-END:resolve-disabled-status -->
 
-#### Der Zustand "Bounce"
+#### Der Zustand „Bounce"
 
 Dieser Zustand tritt ein, wenn ein bestimmter Prozentsatz Ihrer automatisch versandten E-Mails mit einem Fehler abgelehnt werden.
 
-Gehen Sie zum Entsperren in den Bereich `Web Cloud`{.action}, klicken Sie auf `Hosting-Pakete`{.action} und wählen Sie das betreffende Hosting aus der Liste aus. Klicken Sie anschließend auf den Tab `Mehr`{.action} und wählen Sie `E-Mail-Skripte`{.action}.
+<!-- CP-STEPS-START:resolve-bounce-status -->
+Klicken Sie zum Entsperren auf die Tabs, um die **3** Schritte anzuzeigen.
 
-Es sind zwei Optionen möglich:
+> [!tabs]
+> **Schritt 1**
+>>
+>> Rufen Sie die Seite [Hosting-Pakete](/links/control-panel/web-hosting) auf und wählen Sie das betreffende Webhosting aus.
+>>
+> **Schritt 2**
+>>
+>> Klicken Sie auf den Tab `Mehr`{.action} und klicken Sie dann auf `E-Mail-Skripte`{.action}.
+>>
+> **Schritt 3**
+>>
+>> Es sind zwei Optionen möglich:
+>>
+>> - Wenn Sie auf `Versand entsperren`{.action} klicken, wird der Status der Dienstleistung auf *"Force"* geändert. Das zulässige Verhältnis von **E-Mails im Fehlerstatus zur Gesamtzahl versendeter E-Mails** bevor eine Sperrung erfolgt, wird verdoppelt. Der Versand wird einige Minuten nach der Entsperrung wieder betriebsbereit sein.
+>> - Wenn Sie auf `E-Mails bereinigen`{.action} klicken, werden alle E-Mails in der Warteschleife gelöscht, und der Status des Dienstes wird wieder auf *"Aktiv"* verschoben, ohne dass sich das Verhältnis verdoppelt.
+<!-- CP-STEPS-END:resolve-bounce-status -->
 
-- Wenn Sie auf `E-Mails im Fehlerstatus`{.action} klicken, wird der Status der Dienstleistung auf *"Force"* geändert. Das zulässige Verhältnis von **E-Mails im Fehlerstatus zur Gesamtzahl versendeter E-Mails** bevor ein eine Sperrung erfolgt, wird verdoppelt. Der Versand wird einige Minuten nach der Entsperrung wieder betriebsbereit sein.
-- Wenn Sie auf `E-Mails bereinigen`{.action} klicken, werden alle E-Mails in der Warteschleife gelöscht, und der Status des Dienstes wird wieder auf *"Aktiv"* verschoben, ohne dass sich das Verhältnis verdoppelt.
+#### Der Zustand „spam"
 
-#### Der Zustand "SPAM"
-
-Dieser Zustand tritt ein, wenn Ihr Hosting E-Mails sendet, die als SPAM eingestuft werden.
+Dieser Zustand tritt ein, wenn Ihr Hosting E-Mails sendet, die als spam eingestuft werden.
 
 Normalerweise wird diese Sperrung begleitet von einer E-Mail der Art **"Missbrauch mit Ihrem Hosting domain.tld"**, die automatisch von unseren Sicherheitsrobotern generiert wird.
 
@@ -169,17 +197,28 @@ Normalerweise wird diese Sperrung begleitet von einer E-Mail der Art **"Missbrau
 
 Drei Szenarien sind möglich:
 
-- **Fall 1: Missbrauch eines Kontaktformulars durch Bots**
+- **Fall 1: Missbrauch eines Kontaktformulars durch Bots**:
 
 Um diesen Zustand zu beheben, sichern Sie alle Skripte, die über Ihr Hosting E-Mails senden, mit einem "Captcha" System ab.
 
-Gehen Sie dann in den Bereich `Web Cloud`{.action}, klicken Sie auf `Hosting-Pakete`{.action} und wählen Sie das betreffende Hosting aus der Liste aus. Klicken Sie anschließend auf den Tab `Mehr`{.action} und wählen Sie `E-Mail-Skripte`{.action}.
+<!-- CP-STEPS-START:resolve-spam-case-1 -->
+Gehen Sie dann in den Bereich „E-Mail-Skripte" Ihres Hostings. Klicken Sie dazu auf die Tabs, um die **3** Schritte anzuzeigen.
 
-Klicken Sie auf `E-Mails bereinigen`{.action}, um alle E-Mails in der Warteschleife zu löschen. Der Status des Dienstes wird zu *"Aktiv"* geändert.
+> [!tabs]
+> **Schritt 1**
+>>
+>> Rufen Sie die Seite [Hosting-Pakete](/links/control-panel/web-hosting) auf und wählen Sie das betreffende Webhosting aus.
+>>
+> **Schritt 2**
+>>
+>> Klicken Sie auf den Tab `Mehr`{.action} und klicken Sie dann auf `E-Mail-Skripte`{.action}.
+>>
+> **Schritt 3**
+>>
+>> Klicken Sie auf `E-Mails bereinigen`{.action}, um alle E-Mails in der Warteschleife zu löschen. Der Status des Dienstes wird zu *"Aktiv"* geändert. In diesem Fall ist ein Löschen erforderlich, um spam-Nachrichten, die noch auf Versand warten, zu löschen.
+<!-- CP-STEPS-END:resolve-spam-case-1 -->
 
-In diesem Fall ist ein Löschen erforderlich, um SPAM-Nachrichten, die noch auf Versand warten, zu löschen.
-
-- **Fall 2: Injektion schädlicher Dateien in Ihr Hosting**
+- **Fall 2: Injektion schädlicher Dateien in Ihr Hosting**:
 
 Um diesen Zustand zu beheben, müssen Sie mindestens folgende Aktionen ausführen:
 
@@ -191,15 +230,28 @@ Um diesen Zustand zu beheben, müssen Sie mindestens folgende Aktionen ausführe
 Wenn Sie ein CMS verwenden, installieren Sie nur "offizielle" Plugins und Themen.
 Aktualisieren Sie das CMS, die dazugehörigen Plugins und Themes so regelmäßig wie möglich, um eine Neuinfektion zu vermeiden.
 
-Gehen Sie nach der Sicherung Ihres Hostings in den Bereich `Web Cloud`{.action}, klicken Sie auf `Hosting-Pakete`{.action} und wählen Sie das betreffende Hosting aus der Liste aus. Klicken Sie anschließend auf den Tab `Mehr`{.action} und wählen Sie `E-Mail-Skripte`{.action}.
+<!-- CP-STEPS-START:resolve-spam-case-2 -->
+Klicken Sie nach der Sicherung Ihres Hostings auf die Tabs, um die **3** Schritte anzuzeigen.
 
-Klicken Sie auf `E-Mails bereinigen`{.action}, um alle E-Mails in der Warteschleife zu löschen. Der Status des Dienstes wird zu *"Aktiv"* geändert.
+> [!tabs]
+> **Schritt 1**
+>>
+>> Rufen Sie die Seite [Hosting-Pakete](/links/control-panel/web-hosting) auf und wählen Sie das betreffende Webhosting aus.
+>>
+> **Schritt 2**
+>>
+>> Klicken Sie auf den Tab `Mehr`{.action} und klicken Sie dann auf `E-Mail-Skripte`{.action}.
+>>
+> **Schritt 3**
+>>
+>> Klicken Sie auf `E-Mails bereinigen`{.action}, um alle E-Mails in der Warteschleife zu löschen. Der Status des Dienstes wird zu *"Aktiv"* geändert.
+<!-- CP-STEPS-END:resolve-spam-case-2 -->
 
-In diesem Fall ist ein Löschen erforderlich, um SPAM-Nachrichten, die noch auf Versand warten, zu löschen.
+In diesem Fall ist ein Löschen erforderlich, um spam-Nachrichten, die noch auf Versand warten, zu löschen.
 
-- **Fall 3: Versand legitimer E-Mails, die als SPAM eingestuft werden** <a name="elements-list-spam"></a>
+- **Fall 3: Versand legitimer E-Mails, die als spam eingestuft werden** <a name="elements-list-spam"></a>
 
-Wenn Sie E-Mails versendet haben, die zu einer Sperrung geführt haben, finden Sie hier einige Beispiele **zu vermeidender Pratiken** beim Versand von E-Mails (damit sie nicht unmittelbar als SPAM angesehen werden):
+Wenn Sie E-Mails versendet haben, die zu einer Sperrung geführt haben, finden Sie hier einige Beispiele **zu vermeidender Praktiken** beim Versand von E-Mails (damit sie nicht unmittelbar als spam angesehen werden):
 
 - 3 oder mehr Wörter in Großbuchstaben im Betreff der E-Mail.
 - E-Mails mit leerem Betreff oder Inhalt.
@@ -212,20 +264,20 @@ Wenn Sie E-Mails versendet haben, die zu einer Sperrung geführt haben, finden S
 - Der Header der gesendeten E-Mail entspricht nicht den RFC-Standards für E-Mails.
 - Links in der E-Mail sind nicht korrekt.
 - Eine URL in der E-Mail ist nicht sicher. (Beispiel: Eine als `https://` geschriebene URL, wobei die URL tatsächlich nur als `http://` existiert.)
-- Die E-Mail enthält Schagwörter pornografischen Charakters oder ähnelt diesen.
+- Die E-Mail enthält Schlagwörter pornografischen Charakters oder ähnelt diesen.
 - Die E-Mail enthält ausführbare Dateien (EXE, BAT, PIF, XML, XLSX oder Dokumente mit Makros); das gilt auch für Dateien in komprimierten Archiven (.zip, .rar etc.).
 
-Wenn der Status des Dienstes trotzdem wieder den Zustand *"SPAM"* erhält, beantworten Sie die E-Mail, die Sie erhalten haben, und erklären Sie, dass Sie angemessene Maßnahmen ergriffen haben.
+Wenn der Status des Dienstes trotzdem wieder den Zustand *"spam"* erhält, beantworten Sie die E-Mail, die Sie erhalten haben, und erklären Sie, dass Sie angemessene Maßnahmen ergriffen haben.
 
 Unser Anti-Spam-Dienst wird die Situation analysieren und unser Support kann Ihnen dann mit der Entsperrung weiterhelfen.
 
-### Versand von E-Mails mit einem "SMTP" Skript <a name="SMTP"></a>
+### Versand von E-Mails mit einem „SMTP" Skript <a name="SMTP"></a>
 
 > [!warning]
 >
 > OVHcloud stellt Ihnen Dienstleistungen zur Verfügung, für deren Konfiguration und Verwaltung Sie die alleinige Verantwortung tragen. Es liegt somit bei Ihnen, sicherzustellen, dass diese ordnungsgemäß funktionieren.
 > 
-> Bei Schwierigkeiten kontaktieren Sie bitte einen [spezialisierten Dienstleister](/links/partner) oder stellen Ihre Fragen in der OVHcloud Community. Leider können wir Ihnen für administrative Aufgaben keine weitergehende technische Unterstützung anbieten. Weitere Informationen finden Sie am [Ende dieser Anleitung](#go-further).
+> Jedoch empfehlen wir Ihnen, einen [spezialisierten Dienstleister](/links/partner) zu kontaktieren, falls Sie Schwierigkeiten haben. Leider können wir Ihnen keine weitergehende technische Unterstützung anbieten. Weitere Informationen finden Sie am [Ende dieser Anleitung](#go-further).
 >
 
 Wir empfehlen Ihnen dringend, die "mail()"-Funktion von PHP bevorzugt zu nutzen. Ein Webhosting erlaubt es Ihnen jedoch, E-Mails über ein Skript mit SMTP (Simple Mail Transfer Protocol) zu versenden. Die Gesamtgröße Ihrer E-Mail darf nicht größer sein als **10 MB** (d.h. **7-8 MB ohne Kapselung**).

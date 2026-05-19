@@ -28,6 +28,17 @@ This gives you better visibility, reduces the need for API calls and helps ensur
 - You must have activated the **Windows licences** in your [OVHcloud Control Panel](/links/manager). See the "Windows Licence" section of our guide "[Introduction to the Hosted Private Cloud Control Panel](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/manager_ovh_private_cloud/)" for more information.
 - Allow outgoing TCP connections on port 1688 from licensed VMs to kms.ovh.net in your firewall settings.
 
+<!-- CP-NAV-START:privatecloud-vmware-vsphere -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [VMware vSphere](/links/control-panel/privatecloud-vmware-vsphere)
+- **Navigation path:** `Hosted Private Cloud`{.action} > `Managed VMware vSphere`{.action} > Select your vSphere service
+
+---
+<!-- CP-NAV-END:privatecloud-vmware-vsphere -->
+
 ## Instructions
 
 ### Activate and monitor Windows licences directly from the OVHcloud Control Panel

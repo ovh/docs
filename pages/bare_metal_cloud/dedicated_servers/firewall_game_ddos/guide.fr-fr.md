@@ -1,6 +1,6 @@
 ---
-title: "Protéger un serveur Game avec le firewall applicatif"
-excerpt: "Découvrez comment configurer le OVHcloud Game DDoS Protection firewall"
+title: "Game DDoS Protection sur un serveur dédié"
+excerpt: "Configurez le firewall OVHcloud Game DDoS Protection pour protéger votre serveur de jeu contre les attaques applicatives"
 updated: 2026-03-24
 ---
 
@@ -264,6 +264,8 @@ Vous devrez partager des dumps pertinents du trafic réseau à titre d'exemples 
 ///
 
 ## Aller plus loin
+
+[Monitoring des attaques DDoS avec le Network Security Dashboard](/pages/bare_metal_cloud/dedicated_servers/network_security_dashboard)
 
 Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](/links/professional-services) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
 

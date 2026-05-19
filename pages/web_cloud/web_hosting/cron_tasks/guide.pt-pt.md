@@ -1,7 +1,7 @@
 ---
 title: "Criar tarefas automatizadas (CRON) no seu alojamento Web"
 excerpt: "Saiba como criar tarefas CRON para automatizar as tarefas programadas num alojamento web"
-updated: 2025-02-20
+updated: 2026-03-31
 ---
 
 <style>
@@ -29,7 +29,7 @@ updated: 2025-02-20
 
 ## Objetivo
 
-No seu alojamento Web OVHcloud, pode utilizar scripts para automatizar certas operações. A criação de uma tarefa planificada ("tarefa CRON") é a forma mais simples de assegurar que os seus scripts são executados em momentos específicos sem que seja necessário mais ações da sua parte. 
+No seu alojamento web OVHcloud, pode utilizar scripts para automatizar certas operações. Uma tarefa planificada ("tarefa CRON") permite que os seus scripts sejam executados em momentos específicos sem que seja necessário mais ações da sua parte.
 
 **Saiba como criar tarefas CRON para automatizar as tarefas planeadas num alojamento web.**
 
@@ -37,18 +37,18 @@ No seu alojamento Web OVHcloud, pode utilizar scripts para automatizar certas op
 >
 > A responsabilidade sobre a configuração e a gestão dos serviços que a OVHcloud disponibiliza recai sobre o utilizador. Assim, deverá certificar-se de que estes funcionam corretamente.
 >
-> Este manual fornece as instruções necessárias para realizar as operações mais habituais. No entanto, se tiver alguma dúvida, recomendamos que recorra a um fornecedor de serviços especializado e/ou que contacte o editor do serviço. Não poderemos proporcionar-lhe assistência técnica. Para mais informações, aceda à secção [“Quer saber mais?”](#go-further) deste manual. 
+> Este manual fornece as instruções necessárias para realizar as operações mais habituais. No entanto, se tiver alguma dúvida, recomendamos que recorra a um fornecedor de serviços especializado e/ou que contacte o editor do serviço. Não poderemos proporcionar-lhe assistência técnica. Para mais informações, aceda à secção ["Quer saber mais?"](#go-further) deste manual.
 >
 
 ## Requisitos
 
-- Ter um serviço de [alojamento Web da OVHcloud](/links/web/hosting).
+- Ter um serviço de [alojamento web da OVHcloud](/links/web/hosting).
 <!-- CP-NAV-START:web-hosting -->
 ---
 
 ### Acesso à Área de Cliente OVHcloud
 
-- **Ligação direta:** [Hosting plans](/links/control-panel/web-hosting)
+- **Ligação direta:** [Alojamentos](/links/control-panel/web-hosting)
 - **Caminho de navegação:** `Web Cloud`{.action} > `Alojamentos`{.action} > Selecione o seu alojamento web
 
 ---
@@ -56,73 +56,82 @@ No seu alojamento Web OVHcloud, pode utilizar scripts para automatizar certas op
 
 ## Instruções
 
-Aceda à [Área de Cliente OVHcloud](/links/manager). Clique no separador `Web Cloud`{.action} e, a seguir, em `Alojamentos`{.action}.
-
-Selecione o alojamento em causa, clique no separador `Mais`{.action} e, a seguir, em `Cron`{.action}.
-
-Nesta secção, terá uma visão geral das tarefas planeadas e dos respetivos parâmetros.
-
-![cron control panel](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/cron/schedule-jobs.png){.thumbnail}
-
 ### Criação de uma tarefa automatizada
 
-#### Etapa 1: Definição dos parâmetros gerais
+Clique nos separadores abaixo para visualizar cada uma das **5** etapas.
 
-Para criar uma tarefa CRON, clique no botão `Adicionar um planeamento`{.action} à direita. Pode personalizar os parâmetros da tarefa na nova janela.
-
-![adding scheduling](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/cron/add-scheduling-step-1.png){.thumbnail}
-
-|Opção|Descrição|   
-|---|---|   
-|Comando a executar|Defina o caminho de acesso ao ficheiro que contém o script. Exemplo: www/jobs/cron.php|   
-|Linguagem|Selecione a versão PHP utilizada pelo script.|
-|Ativação|Escolha se a tarefa será ativa após a sua criação ou ativada posteriormente.| 
-|Logs por e-mail|Se necessário, selecione um contacto (administrador ou técnico) ao qual será enviado um relatório em caso de erro de execução. Pode também fornecer outro endereço de e-mail.| 
-|Descrição|Introduza uma descrição para seguir a execução das suas tarefas.| 
-
-Clique em `Seguinte`{.action} para passar ao passo 2.
-
-#### Etapa 2: Definição da frequência
-
-A interface oferece dois modos para configurar a frequência da sua tarefa. Utilize o **Modo Simple** para uma seleção de opções de planeamento simplificado para os principiantes. Se prefere entrar diretamente uma frequência, semelhante a um formato de tabela CRON (*crontab*), escolha o **Modo expert**.
-
-|Modo simples|
-|---|
-|Utilize os menus pendente para especificar a hora, os dias de um mês, os dias da semana e os meses da tarefa.|
-|![cron frequency](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/cron/add-scheduling-basic-mod-step-2.png){.thumbnail}|
-
-> [!primary]
->
-> O formulário `Dias`{.action} permite definir frequências de execução num ciclo mensal.
->
-> O formulário `Dias da semana`{.action} permite definir frequências de execução complementares mas com um ciclo semanal.
->
-
-|Modo expert| 
-|---|
-|Introduza valores numéricos como num *crontab*. Os asteriscos indicam cada valor do período, o que significa que a tarefa será realizada continuamente **uma vez por hora, todos os dias**, no exemplo.|
-|![cron frequency](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/cron/add-scheduling-expert-mod-step-2.png){.thumbnail}|
-
-Pode alternar entre os dois modos durante a configuração para visualizar as alterações em conformidade. Tenha em atenção as [limitações durante o planeamento de uma tarefa num alojamento Web](./#limitacoes-das-tarefas-planificadas-no-seu-alojamento-web).
-
-![cron control panel](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/cron/add-scheduling-basic-mod-step-2.gif){.thumbnail}
-
-#### Etapa 3: Fim da instalação
-
-O resumo lembra-lhe os parâmetros configurados, incluindo a notação *crontab* da frequência de execução. Se tudo estiver correto, clique em `Validar`{.action}.
-
-![cron confirmação](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/cron/add-scheduling-step-3.png){.thumbnail}
-
-A tarefa estará pronta dentro de alguns minutos. Pode alterar todos os seus parâmetros ou eliminar a tarefa clicando em `...`{.action} na tabela de apresentação do seu painel de configuração OVHcloud.
+<!-- CP-STEPS-START:create-cron-task -->
+> [!tabs]
+> **Etapa 1**
+>>
+>> Aceda à página [Alojamentos](/links/control-panel/web-hosting) e escolha o alojamento web correspondente.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Etapa 2**
+>>
+>> Clique no separador `Mais`{.action} e, a seguir, em `Cron`{.action}. Terá uma visão geral das tarefas planeadas e dos respetivos parâmetros.
+>>
+>> ![cron control panel](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/cron/schedule-jobs.png){.thumbnail}
+>>
+>> Para criar uma tarefa CRON, clique no botão `Adicionar uma ação programada`{.action} à direita.
+>>
+> **Etapa 3**
+>>
+>> Personalize os parâmetros da tarefa na janela apresentada.
+>>
+>> ![adding scheduling](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/cron/add-scheduling-step-1.png){.thumbnail}
+>>
+>> |Opção|Descrição|
+>> |---|---|
+>> |Comando a executar|Defina o caminho de acesso ao ficheiro que contém o script. Exemplo: www/jobs/cron.php|
+>> |Linguagem|Selecione a versão PHP utilizada pelo script.|
+>> |Ativação|Escolha se a tarefa será ativa após a sua criação ou ativada posteriormente.|
+>> |Logs por e-mail|Se necessário, selecione um contacto (administrador ou técnico) ao qual será enviado um relatório em caso de erro de execução. Pode também fornecer outro endereço de e-mail.|
+>> |Descrição|Introduza uma descrição para seguir a execução das suas tarefas.|
+>>
+>> Clique em `Seguinte`{.action}.
+>>
+> **Etapa 4**
+>>
+>> A interface oferece dois modos para configurar a frequência da sua tarefa:
+>>
+>> - **Modo simples**: utilize os menus pendente para especificar a hora, os dias de um mês, os dias da semana e os meses da tarefa.
+>> - **Modo expert**: introduza valores numéricos como num *crontab*.
+>>
+>> |Modo simples|Modo expert|
+>> |---|---|
+>> |Utilize os menus pendente para especificar a hora, os dias de um mês, os dias da semana e os meses da tarefa.|Introduza valores numéricos como num *crontab*. Os asteriscos indicam cada valor do período, o que significa que a tarefa será realizada continuamente **uma vez por hora, todos os dias**, no exemplo.|
+>> |![cron frequency](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/cron/add-scheduling-basic-mod-step-2.png){.thumbnail}|![cron frequency](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/cron/add-scheduling-expert-mod-step-2.png){.thumbnail}|
+>>
+>> > [!primary]
+>> >
+>> > O formulário `Dias`{.action} permite definir frequências de execução num ciclo mensal.
+>> >
+>> > O formulário `Dias da semana`{.action} permite definir frequências de execução complementares mas com um ciclo semanal.
+>>
+>> Pode alternar entre os dois modos durante a configuração. Tenha em atenção as [limitações durante o planeamento de uma tarefa num alojamento web](./#limitacoes-das-tarefas-planificadas-no-seu-alojamento-web).
+>>
+>> Clique em `Seguinte`{.action}.
+>>
+> **Etapa 5**
+>>
+>> O resumo lembra-lhe os parâmetros configurados, incluindo a notação *crontab* da frequência de execução. Se tudo estiver correto, clique em `Confirmar`{.action}.
+>>
+>> ![cron confirmation](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/cron/add-scheduling-step-3.png){.thumbnail}
+>>
+>> A tarefa estará pronta dentro de alguns minutos. Pode alterar todos os seus parâmetros ou eliminar a tarefa clicando em `...`{.action} na tabela de apresentação do seu painel de configuração OVHcloud.
+<!-- CP-STEPS-END:create-cron-task -->
 
 ### Modificar ou eliminar uma tarefa agendada
 
 Clique nos separadores abaixo para visualizar cada uma das **3** etapas.
 
+<!-- CP-STEPS-START:modify-delete-cron-task -->
 > [!tabs]
 > **Etapa 1**
 >>
->> Aceda à página [Hosting plans](/links/control-panel/web-hosting) e escolha o alojamento web correspondente.
+>> Aceda à página [Alojamentos](/links/control-panel/web-hosting) e escolha o alojamento web correspondente.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
@@ -135,8 +144,9 @@ Clique nos separadores abaixo para visualizar cada uma das **3** etapas.
 >> Na tabela que aparece, clique no botão `...`{.action} situado à direita da tarefa planeada em causa.
 >>
 >> Escolha entre os botões `Alterar`{.action} ou `Eliminar`{.action} em função da ação que pretende realizar na tarefa programada.
+<!-- CP-STEPS-END:modify-delete-cron-task -->
 
-### Limitações das tarefas planificadas no seu alojamento Web
+### Limitações das tarefas planificadas no seu alojamento web
 
 |Funcionalidade|Descrição|
 |---|---|
@@ -156,47 +166,47 @@ Um teste simples para ver se o script vai produzir um erro é executá-lo num br
 #### Verificação da utilização dos caminhos absolutos
 
 Tenha o cuidado de utilizar caminhos de acesso absolutos aos ficheiros dos seus scripts. A constante "DIR", por exemplo, pode ajudar a receber o caminho corrente nos scripts PHP ([documentação PHP](https://www.php.net/manual/en/language.constants.predefined.php)).
- 
+
 #### Verificação dos logs de execução
 
-No \[logs] do seu alojamento Web, acessível a partir da sua Área de [Cliente OVHcloud](/links/manager), poderá ver a categoria de log intitulada "CRON".
+No \[logs] do seu alojamento web, acessível a partir da sua Área de [Cliente OVHcloud](/links/manager), poderá ver a categoria de log intitulada "CRON".
 
 Para mais informações, consulte o nosso guia ["Consultar as estatísticas e os logs do meu site alojado numa oferta partilhada"](/pages/web_cloud/web_hosting/logs_and_statistics).
 
 ##### **Exemplo de logs**
 
-- Exemplo de fim de script corretamente executado 
+- Exemplo de fim de script corretamente executado
 
 <pre class="bgwhite"><code>
-[2023-08-11 00:36:01] ## OVH ## START - 2023-08-11 00:36:01.524384 executing: /usr/local/php7.2/bin/php /homez.161/myftpusername/www/myscript.sh
-[2023-08-11 00:36:01] 
-[2023-08-11 00:36:01] ## OVH ## END - 2023-08-10 22:39:44.086166 exitcode: 0
+[2026-03-30 00:36:01] ## OVH ## START - 2026-03-30 00:36:01.524384 executing: /usr/local/php7.2/bin/php /homez.161/myftpusername/www/myscript.sh
+[2026-03-30 00:36:01]
+[2026-03-30 00:36:01] ## OVH ## END - 2023-08-10 22:39:44.086166 exitcode: 0
 </code></pre>
 
 - Exemplo de insucesso devido a ultrapassagem do tempo de execução
 
 <pre class="bgwhite"><code>
-[2023-08-11 00:36:01] ## OVH ## START - 2023-08-11 00:36:01.524384 executing: /usr/local/php7.2/bin/php /homez.161/myftpusername/www/sleep.sh
+[2026-03-30 00:36:01] ## OVH ## START - 2026-03-30 00:36:01.524384 executing: /usr/local/php7.2/bin/php /homez.161/myftpusername/www/sleep.sh
 
-[2023-08-11 01:36:01] ## OVH ## ERROR - CRON TASK INTERRUPTED BY OVH - reason: your script duration exceeded the maximum permitted (3600 seconds)
-[2023-08-11 01:36:01] ## OVH ## END - 2023-08-11 01:36:01.086166 exitcode: 0
+[2026-03-30 01:36:01] ## OVH ## ERROR - CRON TASK INTERRUPTED BY OVH - reason: your script duration exceeded the maximum permitted (3600 seconds)
+[2026-03-30 01:36:01] ## OVH ## END - 2026-03-30 01:36:01.086166 exitcode: 0
 </code></pre>
 
 - Exemplo de falha porque o ficheiro de script não pode ser encontrado no caminho de acesso especificado
 
 <pre class="bgwhite"><code>
-[2023-08-11 00:36:01] ## OVH ## START - 2023-08-11 00:36:01.524384 executing: /usr/local/php7.2/bin/php /homez.161/myftpusername/www/noscript.sh
+[2026-03-30 00:36:01] ## OVH ## START - 2026-03-30 00:36:01.524384 executing: /usr/local/php7.2/bin/php /homez.161/myftpusername/www/noscript.sh
 
-[2023-08-11 00:36:01] ## OVH ## ERROR command '/homez.161/myftpusername/www/noscript.sh' not found
-[2023-08-11 00:36:01] ## OVH ## END - 2023-08-11 00:36:01.086166 exitcode: 255
+[2026-03-30 00:36:01] ## OVH ## ERROR command '/homez.161/myftpusername/www/noscript.sh' not found
+[2026-03-30 00:36:01] ## OVH ## END - 2026-03-30 00:36:01.086166 exitcode: 255
 </code></pre>
 
 - Exemplo de falha devido a um erro de autorização (chmod) ou a uma configuração incorreta do ficheiro .ovhconfig
 
 <pre class="bgwhite"><code>
-[2023-08-11 18:07:10] ## OVH ## Your job could not be initiated for an unknown reason.
-[2023-08-11 18:07:10]
-[2023-08-11 18:07:10] ## OVH ## END - 2023-08-11 18:07:10.969840 exitcode: 255
+[2026-03-30 18:07:10] ## OVH ## Your job could not be initiated for an unknown reason.
+[2026-03-30 18:07:10]
+[2026-03-30 18:07:10] ## OVH ## END - 2026-03-30 18:07:10.969840 exitcode: 255
 </code></pre>
 
 ## Quer saber mais? <a name="go-further"></a>
@@ -209,4 +219,4 @@ Para serviços especializados (referenciamento, desenvolvimento, etc), contacte 
 
 Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](/links/support).
 
-Fale com nossa [comunidade de utilizadores](/links/community). 
+Fale com a nossa [comunidade de utilizadores](/links/community).

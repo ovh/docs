@@ -1,7 +1,7 @@
 ---
 title: "Como alterar a palavra-passe de um CMS"
 excerpt: "Saiba como alterar a palavra-passe de administrador do seu CMS diretamente através da interface de administração do CMS ou utilizando o phpMyAdmin a partir da Área de Cliente OVHcloud"
-updated: 2024-10-15
+updated: 2026-03-31
 ---
 
 ## Objetivo
@@ -20,7 +20,7 @@ Perdeu o acesso à sua interface de administração WordPress, PrestaShop, Jooml
 
 ### Acesso à Área de Cliente OVHcloud
 
-- **Ligação direta:** [Hosting plans](/links/control-panel/web-hosting)
+- **Ligação direta:** [Alojamentos](/links/control-panel/web-hosting)
 - **Caminho de navegação:** `Web Cloud`{.action} > `Alojamentos`{.action} > Selecione o seu alojamento web
 
 ---
@@ -98,11 +98,30 @@ Tem acesso à interface de administração do CMS e conhece a sua palavra-passe 
 
 ### Alterar a palavra-passe de administrador através do phpMyAdmin a partir da Área de Cliente OVHcloud <a name="via-phpMyAdmin"></a>
 
+<!-- CP-STEPS-START:access-phpmyadmin -->
 Já não tem acesso à interface de administração do CMS ou não pode utilizar a funcionalidade "Esqueceu-se da Palavra-passe" porque o endereço de e-mail associado está inacessível? Utilize o phpMyAdmin a partir da [Área de Cliente OVHcloud](/links/manager) para repor a palavra-passe diretamente a partir da base de dados.
 
-Aceda à sua [Área de Cliente OVHcloud](/links/manager) e selecione `Web Cloud`{.action}. Clique em `Alojamentos`{.action} e escolha a oferta em causa. No separador `Bases de dados`{.action}", identifique a base de dados utilizada pelo seu CMS, clique no botão `...`{.action} e depois em `Aceder ao phpMyAdmin`{.action}.
+Clique nos separadores abaixo para visualizar cada uma das **4** etapas.
 
-Introduza as credenciais da base de dados (nome de utilizador e palavra-passe) definidas durante a criação da base de dados. Depois de se conectar ao phpMyAdmin, clique no respetivo separador abaixo.
+> [!tabs]
+> **Etapa 1**
+>>
+>> Aceda à página [Alojamentos](/links/control-panel/web-hosting) e selecione a oferta em causa.
+>>
+>> ![Alojamentos](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Etapa 2**
+>>
+>> Clique no separador `Bases de dados`{.action} e identifique a base de dados utilizada pelo seu CMS.
+>>
+> **Etapa 3**
+>>
+>> Clique no botão `...`{.action} e depois em `Aceder ao phpMyAdmin`{.action}.
+>>
+> **Etapa 4**
+>>
+>> Introduza as credenciais da base de dados (nome de utilizador e palavra-passe) definidas durante a criação da base de dados. Depois de se conectar ao phpMyAdmin, clique no respetivo separador abaixo.
+<!-- CP-STEPS-END:access-phpmyadmin -->
 
 > [!tabs]
 > WordPress

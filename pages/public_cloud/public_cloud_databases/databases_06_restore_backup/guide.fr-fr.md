@@ -29,6 +29,7 @@ We continuously improve our offers. You can follow and submit ideas to add to ou
 
 ## Instructions
 
+
 ### Step 1: Select the database service you want to restore data from
 
 First, you need to go to the overview page of the service you want to restore the backup from.
@@ -131,6 +132,7 @@ This new service is now completely independent from the one you forked the backu
 > The newly created service does not duplicate IP restrictions nor users which were created on the old service. You will have to recreate those before using your new service.
 
 ![Forked service](images/forked-service-20230331.png){.thumbnail}
+
 
 ## Go further
 

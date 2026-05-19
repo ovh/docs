@@ -225,11 +225,24 @@ Pour en savoir plus, consultez la [page web des Local Zones](/links/public-cloud
 >>
 >> **4.3 Modèle**
 >>
->> Choisissez le modèle (flavor) adapté à votre cas d'usage. Le type `Discovery` propose des ressources partagées à tarif réduit. Les `Metal Instances` offrent des ressources physiques dédiées.
+>> Ouvrez la liste déroulante `Modèle d'instance` et sélectionnez le type adapté à votre cas d'usage. Le modèle (flavor) détermine les ressources allouées à votre instance : processeur, mémoire et capacités associées.
+>>
+>> | Type | Ressources garanties | Notes d'utilisation |
+>> | :--- | :---: | :--- |
+>> | Best Sellers | ✓ | Modèles les plus populaires. |
+>> | General Purpose | ✓ | Serveurs de développement, applications web ou métier. |
+>> | Compute Optimized | ✓ | Encodage vidéo ou autre calcul haute performance. |
+>> | Memory Optimized | ✓ | Bases de données, analyses et calculs en mémoire. |
+>> | GPU | ✓ | Puissance de traitement massivement parallèle pour applications spécialisées (rendu, big data, deep learning, etc.). |
+>> | Discovery | - | Ressources partagées pour les environnements de test et de développement. |
+>> | Storage Optimized | ✓ | Optimisé pour le transfert de données disque. |
+>> | Metal Instances | ✓ | Ressources dédiées avec accès direct aux ressources de calcul, stockage et réseau. |
 >>
 >> > [!primary]
 >> >
->> > Vérifiez vos quotas via `Quota & Régions`{.action} dans la barre de navigation de gauche sous **Paramètres**.
+>> > Vos ressources Public Cloud seront initialement limitées. Vérifiez vos quotas via `Quota & Régions`{.action} sous **Paramètres** dans la barre de navigation de gauche. Consultez [la documentation dédiée](/pages/public_cloud/public_cloud_cross_functional/increasing_public_cloud_quota) pour plus d'informations.
+>> >
+>> > Vous pouvez **mettre à niveau** votre instance après sa création pour disposer de plus de ressources. En revanche, le passage à un modèle inférieur n'est pas possible avec une instance standard. Consultez l'**étape 4.9** pour plus de détails.
 >>
 >> **4.4 Image**
 >>

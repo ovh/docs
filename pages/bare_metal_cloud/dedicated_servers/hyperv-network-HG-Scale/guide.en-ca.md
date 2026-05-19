@@ -1,6 +1,6 @@
 ---
-title: 'Configuring the network on Windows Server with Hyper-V'
-excerpt: 'Find out how to configure the network on  Windows Server with Hyper-V'
+title: "Hyper-V Networking on HG/Scale Dedicated Servers"
+excerpt: "Configure network interfaces on a Windows Server with Hyper-V running on High Grade or Scale dedicated servers."
 updated: 2025-05-16
 ---
 
@@ -77,11 +77,11 @@ In our example:
 
 Now go back to the Server Manager and go to `Local Server`{.action} and click on `Disabled`{.action} opposite `NIC Teaming`.
 
-![NIC Teaming](images/nic_teaming_1.png){.thumbnail}
+![Server Manager Local Server with NIC Teaming disabled](images/nic_teaming_1.png){.thumbnail}
 
 On the following page, right-click one of public interfaces identified earlier and click `Add to New Team`{.action}.
 
-![NIC Teaming](images/nic_teaming_2.png){.thumbnail}
+![Right-click menu to add public interface to a new team](images/nic_teaming_2.png){.thumbnail}
 
 Next, give your team a name, add the second interface to the team, then expand the Additional Properties and set "Teaming Mode" to `LACP`, and finally click `OK`{.action}.
 
@@ -91,15 +91,15 @@ In order to prevent a connection loss on a reboot we will need to configure the 
 
 Press `Windows Key` \+ `R` to open a "Run" window. Enter `ncpa.cpl` and click `OK`{.action}. This will open your Network Connections control panel.
 
-![Static IP](images/static_ip_1.png){.thumbnail}
+![Run dialog with ncpa.cpl to open Network Connections](images/static_ip_1.png){.thumbnail}
 
 Right click on your team that you created and click `Properties`{.action}.
 
-![Static IP](images/static_ip_2.png){.thumbnail}
+![NIC team properties dialog in Network Connections](images/static_ip_2.png){.thumbnail}
 
 Next, double-click on `Internet Protocol Version 4 (TCP/IPv4)`{.action}.
 
-![Static IP](images/static_ip_3.png){.thumbnail}
+![Team adapter properties with IPv4 protocol selected](images/static_ip_3.png){.thumbnail}
 
 Select `Use the following IP address` and insert your IP address.
 
@@ -109,25 +109,25 @@ For DNS servers, you can choose your own. For our example we are using 213.186.3
 
 Once done, click `OK`{.action} to close the Window, and `OK`{.action} again to close the adapter properties Window.
 
-![Static IP](images/static_ip_4.png){.thumbnail}
+![Static IP configuration with subnet mask and gateway](images/static_ip_4.png){.thumbnail}
 
 #### Installing the Hyper-V and RRAS Roles
 
 Go to the Server Manager and open the `Dashboard`{.action}, then click on `Add roles and features`{.action}
 
-![Install roles](images/install_roles_1.png){.thumbnail}
+![Server Manager Dashboard with Add roles and features](images/install_roles_1.png){.thumbnail}
 
 Go through the Wizard until you reach the `Server Roles` section and select `Hyper-V` and `Remote Access`.
 
-![Install roles](images/install_roles_2.png){.thumbnail}
+![Server Roles selection with Hyper-V and Remote Access checked](images/install_roles_2.png){.thumbnail}
 
 Next, proceed to the `Virtual Switches` subsection of `Hyper-V` and ensure no interfaces are selected.
 
-![Install roles](images/install_roles_3_2.png){.thumbnail}
+![Hyper-V Virtual Switches section with no interfaces selected](images/install_roles_3_2.png){.thumbnail}
 
 Next, proceed to the `Role Services` subsection of `Remote Access` and select `Routing`.
 
-![Install roles](images/install_roles_4.png){.thumbnail}
+![Remote Access Role Services with Routing selected](images/install_roles_4.png){.thumbnail}
 
 Finally, proceed to the `Confirmation` section, select `Restart the destination server automatically if required` and click `Install`{.action}.
 
@@ -143,19 +143,19 @@ New-VMSwitch -Name "vSwitch_Name" -NetAdapterName "NIC_Team_Name" -AllowNetLbfoT
 
 Open the new application called `Routing and Remote Access` and right click on your server and choose `Configure and Enable Routing and Remote Access`{.action}.
 
-![Configure RRAS](images/configure_rras_1.png){.thumbnail}
+![RRAS console with Configure and Enable option](images/configure_rras_1.png){.thumbnail}
 
 Now, choose `Custom configuration` and click `Next`{.action}.
 
-![Configure RRAS](images/configure_rras_2.png){.thumbnail}
+![RRAS wizard with Custom configuration selected](images/configure_rras_2.png){.thumbnail}
 
 Next, you need to select `LAN routing` and then click `Next`{.action}.
 
-![Configure RRAS](images/configure_rras_3.png){.thumbnail}
+![RRAS wizard with LAN routing option selected](images/configure_rras_3.png){.thumbnail}
 
 Finally, click on `Finish`{.action} and then `Start Service`{.action} on the popup that will appear.
 
-![Configure RRAS](images/configure_rras_4.png){.thumbnail}
+![RRAS configuration complete with Start Service prompt](images/configure_rras_4.png){.thumbnail}
 
 #### Set Primary and Additional IP statically on Hyper-V interface
 
@@ -163,15 +163,15 @@ We must now move the IP configuration to the Hyper-V interface.
 
 Press `Windows Key` \+ `R` to open a "Run" window. Enter `ncpa.cpl` and click `OK`{.action}. This will open your Network Connections control panel.
 
-![Static IP](images/static_ip_1.png){.thumbnail}
+![Opening Network Connections for Hyper-V interface](images/static_ip_1.png){.thumbnail}
 
 Right click on your vEthernet Adapter and click `Properties`{.action}.
 
-![Static IP](images/static_ip_5.png){.thumbnail}
+![vEthernet adapter properties in Network Connections](images/static_ip_5.png){.thumbnail}
 
 Next, double-click on `Internet Protocol Version 4 (TCP/IPv4)`{.action}.
 
-![Static IP](images/static_ip_3.png){.thumbnail}
+![vEthernet adapter properties with IPv4 protocol selected](images/static_ip_3.png){.thumbnail}
 
 Select `Use the following IP address` and insert your IP address.
 
@@ -179,13 +179,13 @@ The "Subnet mask" and "Default gateway" will be: 255.255.255.255 and 100.64.0.1 
 
 For DNS servers, you can choose your own. For our example we are using 213.186.33.99 and 8.8.8.8.
 
-![Static IP](images/static_ip_4.png){.thumbnail}
+![Hyper-V interface IP configuration with gateway](images/static_ip_4.png){.thumbnail}
 
 Next click on the `Advanced...`{.action} button and in the new Window click `Add...`{.action} under IP addresses.
 
 Add your IP address and subnet mask for your Additional IP and click `Add`{.action}.
 
-![Static IP](images/static_ip_6.png){.thumbnail}
+![Advanced TCP/IP settings with Additional IP added](images/static_ip_6.png){.thumbnail}
 
 Once done, click `OK`{.action} to close the Advanced Window, click `OK`{.action} again to close the TCP/IPv4 settings, and finally click `OK`{.action}, to close the adapter properties Window.
 
@@ -250,7 +250,6 @@ network:
 - Your chosen private IP address range
 - A [vRack compatible server](/links/bare-metal/bare-metal)
 - A [vRack](/links/network/vrack) service activated in your account
-- Access to the [OVHcloud Control Panel](/links/manager)
 
 #### Explanations
 
@@ -286,11 +285,11 @@ In our example:
 
 Now go back to the Server Manager, go to `Local Server` and click on `Disabled`{.action} besides NIC Teaming.
 
-![NIC Teaming](images/nic_teaming_1.png){.thumbnail}
+![Server Manager NIC Teaming link for vRack configuration](images/nic_teaming_1.png){.thumbnail}
 
 On the following page, right-click one of private interfaces identified earlier and click `Add to New Team`{.action}.
 
-![NIC Teaming](images/nic_teaming_2.png){.thumbnail}
+![Right-click menu to add private interface to a new team](images/nic_teaming_2.png){.thumbnail}
 
 Next, give your team a name, add the second interface to the team, then expand the Additional Properties and set "Teaming Mode" to `LACP`, and finally click `OK`{.action}.
 
@@ -359,5 +358,11 @@ network:
 ```
 
 ## Go further
+
+[Proxmox VE Networking on HG/Scale Dedicated Servers](/pages/bare_metal_cloud/dedicated_servers/proxmox-network-HG-Scale)
+
+[Hardware upgrade on a High Grade or Scale Dedicated Server](/pages/bare_metal_cloud/dedicated_servers/hardware-upgrade-HG-Scale)
+
+[Hyper-V VMs with Additional IPs in vRack (Dedicated)](/pages/bare_metal_cloud/dedicated_servers/ipfo-vrack-hyperv)
 
 Join our [community of users](/links/community).

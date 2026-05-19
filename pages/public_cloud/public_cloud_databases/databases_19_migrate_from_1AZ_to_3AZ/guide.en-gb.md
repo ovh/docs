@@ -1,7 +1,7 @@
 ---
 title: Migrate from a Single AZ to a 3-AZ region for Public Cloud Databases
 excerpt: "Learn how to move your OVHcloud Public Cloud Database from a single AZ to a 3-AZ region and ensure high availability"
-updated: 2025-08-19
+updated: 2026-05-05
 ---
 
 ## Objective
@@ -44,6 +44,7 @@ The migration from a Single-AZ region to a Multi-AZ region is reversible — ser
 
 ### Move a database service to 3-AZ
 
+<!-- CP-STEPS-START:move-database-service-to-3-az -->
 > [!tabs]
 > Via the OVHcloud Control Panel
 >> Click `Databases`{.action} in the left navigation bar, select your database service then click the `Backups`{.action} tab.
@@ -87,7 +88,7 @@ The migration from a Single-AZ region to a Multi-AZ region is reversible — ser
 >>
 >> > [!primary]
 >> >
->> > To interact with your Public Cloud Databases services via the OVHcloud API, make sure you've mastered the basics first by consulting our guide: [Public Cloud Databases - Getting started with APIs](/pages/public_cloud/public_cloud_databases/databases_02_order_api).
+>> > To interact with your Public Cloud Databases services via the OVHcloud API, make sure you've mastered the basics first by consulting our guide: [Public Cloud Databases - Getting started](/pages/public_cloud/public_cloud_databases/databases_01_order_control_panel).
 >> >
 >>
 >> To find the backup ID of a service, use the following API call:
@@ -146,6 +147,7 @@ The migration from a Single-AZ region to a Multi-AZ region is reversible — ser
 >> }
 >> ```
 >>
+<!-- CP-STEPS-END:move-database-service-to-3-az -->
 
 ### Validate the deployment
 
@@ -167,6 +169,7 @@ This step is crucial to avoid unnecessary costs and maintain a clean infrastruct
 
 Follow these instructions to delete the old 1-AZ service:
 
+<!-- CP-STEPS-START:clean-up -->
 > [!tabs]
 > Via the OVHcloud Control Panel
 >> Navigate to your list of database services, click on the `...`{.action} button on the service line and click on the `Delete`{.action} button to permanently delete the service.
@@ -181,6 +184,7 @@ Follow these instructions to delete the old 1-AZ service:
 >> > @api {v1} /cloud DELETE /cloud/project/{serviceName}/database/postgresql/{clusterId}
 >> >
 >>
+<!-- CP-STEPS-END:clean-up -->
 
 ## We want your feedback!
 

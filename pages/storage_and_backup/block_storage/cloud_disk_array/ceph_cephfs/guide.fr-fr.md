@@ -1,4 +1,4 @@
-﻿---
+---
 title: CephFS distributed filesystem
 excerpt: 'Learn how to create, manage, and mount a CephFS file system on OVHcloud using the API'
 updated: 2025-09-18

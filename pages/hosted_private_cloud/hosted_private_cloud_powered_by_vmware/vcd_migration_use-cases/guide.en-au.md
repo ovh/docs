@@ -18,6 +18,17 @@ updated: 2025-05-06
 - A managed [VMware vSphere on OVHcloud](/links/hosted-private-cloud/vmware) offer.
 - You must have access to the [OVHcloud Control Panel](/links/manager) and be technical administrator of the managed VMware vSphere on OVHcloud infrastructure.
 
+<!-- CP-NAV-START:privatecloud-vmware-vsphere -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [VMware vSphere](/links/control-panel/privatecloud-vmware-vsphere)
+- **Navigation path:** `Hosted Private Cloud`{.action} > `Managed VMware vSphere`{.action} > Select your vSphere service
+
+---
+<!-- CP-NAV-END:privatecloud-vmware-vsphere -->
+
 ## Instructions
 
 This practical guide is designed to provide you with information and solutions on the process of migrating your managed VMware vSphere on OVHcloud services to a Public VCF as-a-Service solution.

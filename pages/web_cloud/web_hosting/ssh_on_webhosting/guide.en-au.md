@@ -54,6 +54,7 @@ To log in and use SSH access to your web hosting plan, you will need the followi
 
 ### 1 - Make sure that SSH access is enabled for the SSH user you have chosen <a name="user-ssh-enablement"></a>
 
+<!-- CP-STEPS-START:check-ssh-access -->
 Click on the tabs below to view each of the **3** steps.
 
 > [!tabs]
@@ -84,9 +85,11 @@ Click on the tabs below to view each of the **3** steps.
 >> - 3: Check the summary of the requested change, then click `Confirm`{.action}.
 >>
 >> > If you cannot enable it, please ensure that [your OVHcloud web hosting plan](/links/web/hosting) has SSH access.
+<!-- CP-STEPS-END:check-ssh-access -->
 
 ### 2 - Retrieve the information you need to log in via SSH <a name="sshlogin"></a>
 
+<!-- CP-STEPS-START:retrieve-ssh-login -->
 Click on the tabs below to view each of the **3** steps.
 
 > [!tabs]
@@ -112,6 +115,7 @@ Click on the tabs below to view each of the **3** steps.
 >> |**SSH server connection port**| Locate `SSH port`. The default SSH port number is `22`.|
 >> |**Active SSH user**| In the table at the bottom of the page, find them in the `Login` column.<br>As a reminder, this user must [have active SSH access](#user-ssh-enablement).|
 >> |**SSH user password**| If you have forgotten this password, click the `...`{.action} button to the right of the row corresponding to the user concerned in the table at the bottom of the page, then `Change password`{.action}.|
+<!-- CP-STEPS-END:retrieve-ssh-login -->
 
 ### 3 - Log in to your Web Hosting plan’s storage space via SSH
 

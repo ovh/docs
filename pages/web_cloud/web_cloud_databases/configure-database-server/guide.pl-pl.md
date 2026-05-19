@@ -43,6 +43,7 @@ Za pomocą serwerów baz Web Cloud Databases możesz wpłynąć na globalne para
 
 ### Wyświetlanie ogólnych informacji o serwerze baz danych
 
+<!-- CP-STEPS-START:visionner-informations-generales -->
 Kliknij poniższe karty, aby wyświetlić kolejne **2** kroki.
 
 > [!tabs]
@@ -71,12 +72,15 @@ Kliknij poniższe karty, aby wyświetlić kolejne **2** kroki.
 >>
 >> ![Informacje ogólne](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/general-information/general-information.png){.thumbnail}
 
+<!-- CP-STEPS-END:visionner-informations-generales -->
+
 ### Zarządzanie dostępami
 
 Usługa Web Cloud Databases jest dostępna z poziomu hostingów OVHcloud lub/i z sieci publicznej.
 
 **Kliknij każdy tytuł, aby wyświetlić jego zawartość.**
 
+<!-- CP-STEPS-START:autoryzuj-ip -->
 /// details | Autoryzacja adresu IP
 
 Aby uzyskać dostęp do instancji Web Cloud Databases, należy wskazać adresy IP lub zakresy adresów IP, które mogą się łączyć z Twoimi bazami danych.
@@ -98,12 +102,14 @@ Kliknij poniższe karty, aby wyświetlić kolejne **3** kroki.
 >>
 > **Krok 3**
 >>
->> W oknie, które się wyświetli, wskaż adres IP lub maskę, którą chcesz autoryzować w `IP/maska`{.action}, a następnie dodaj opis, jeśli chcesz. Zdecyduj, czy chcesz udzielić dostępu wyłącznie do baz danych, czy również do SFTP. Na koniec kliknij `Zatwierdź`{.action}.
+>> W oknie, które się wyświetli, wskaż adres IP lub maskę, którą chcesz autoryzować w `IP / maska`{.action}, a następnie dodaj opis, jeśli chcesz. Zdecyduj, czy chcesz udzielić dostępu wyłącznie do baz danych, czy również do SFTP. Na koniec kliknij `Zatwierdź`{.action}.
 >>
 >> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/authorized-ips/add-an-ip-address-mask-confirmation.png){.thumbnail}
 
 ///
+<!-- CP-STEPS-END:autoryzuj-ip -->
 
+<!-- CP-STEPS-START:autoryzuj-hosting -->
 /// details | Autoryzacja połączeń z hostingami OVHcloud
 
 Kliknij poniższe karty, aby wyświetlić kolejne **3** kroki.
@@ -121,14 +127,16 @@ Kliknij poniższe karty, aby wyświetlić kolejne **3** kroki.
 >>
 > **Krok 3**
 >>
->> Zaznacz opcję `Zezwól hostingom OVHcloud na dostęp do bazy danych`{.action}.
+>> Zaznacz opcję `Zezwól hostingowi OVHcloud na dostęp do bazy danych`{.action}.
 >>
 >> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/authorized-ips/tab-empty.png){.thumbnail}
 
 ///
+<!-- CP-STEPS-END:autoryzuj-hosting -->
 
 ### Zmiana oferty Web Cloud Databases <a name="modify-ram-web-cloud-db"></a>
 
+<!-- CP-STEPS-START:modifier-offre -->
 > [!warning]
 >
 > Jeśli Twoja usługa Web Cloud Databases jest powiązana z hostingiem **Performance**, musisz wcześniej odłączyć ofertę Web Cloud Databases od hostingu **Performance**, aby przejść na wyższą ofertę.
@@ -167,10 +175,13 @@ Kliknij poniższe karty, aby wyświetlić kolejne **3** kroki.
 >> >
 >> > Jeśli aktualnie posiadasz darmową usługę Web Cloud Databases powiązaną z hostingiem Performance, zmiana oferty oznacza utratę jej bezpłatności.
 
+<!-- CP-STEPS-END:modifier-offre -->
+
 ### Zmiana konfiguracji serwera baz danych
 
 **Kliknij każdy tytuł, aby wyświetlić jego zawartość.**
 
+<!-- CP-STEPS-START:konfiguruj-mysql-mariadb -->
 /// details | Instancja MySQL i MariaDB
 
 Kliknij poniższe karty, aby wyświetlić kolejne **3** kroki.
@@ -188,7 +199,7 @@ Kliknij poniższe karty, aby wyświetlić kolejne **3** kroki.
 >>
 > **Krok 3**
 >>
->> W polu **Ogólna konfiguracja MySQL** znajdziesz konfigurację aktualnie zdefiniowaną dla Twojej bazy danych. Możesz ją bezpośrednio zmienić, a następnie kliknąć `Zastosuj`{.action}.
+>> W polu **Ogólna konfiguracja MySQL** znajdziesz konfigurację aktualnie zdefiniowaną dla Twojej bazy danych. Możesz ją bezpośrednio zmienić, a następnie kliknąć `Wyślij`{.action}.
 >>
 >> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/configuration/general-configuration-of-mysql.png){.thumbnail}
 >>
@@ -231,7 +242,9 @@ Kliknij poniższe karty, aby wyświetlić kolejne **3** kroki.
 >
 
 ///
+<!-- CP-STEPS-END:konfiguruj-mysql-mariadb -->
 
+<!-- CP-STEPS-START:konfiguruj-postgresql -->
 /// details | Instancja PostgreSQL
 
 Kliknij poniższe karty, aby wyświetlić kolejne **3** kroki.
@@ -249,7 +262,7 @@ Kliknij poniższe karty, aby wyświetlić kolejne **3** kroki.
 >>
 > **Krok 3**
 >>
->> W polu **Ogólna konfiguracja PostgreSQL** znajdziesz konfigurację aktualnie zdefiniowaną dla Twojej bazy danych. Możesz ją bezpośrednio zmienić, a następnie kliknąć `Zastosuj`{.action}.
+>> W polu **Ogólna konfiguracja PostgreSQL** znajdziesz konfigurację aktualnie zdefiniowaną dla Twojej bazy danych. Możesz ją bezpośrednio zmienić, a następnie kliknąć `Wyślij`{.action}.
 >>
 >> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/configuration/general-configuration-of-postgresql.png){.thumbnail}
 >>
@@ -269,9 +282,11 @@ Kliknij poniższe karty, aby wyświetlić kolejne **3** kroki.
 >> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/databases/extensions.png){.thumbnail}
 
 ///
+<!-- CP-STEPS-END:konfiguruj-postgresql -->
 
 ### Zmiana wersji MySQL, PostgreSQL lub MariaDB serwera baz danych
 
+<!-- CP-STEPS-START:changer-version -->
 Kliknij poniższe karty, aby wyświetlić kolejne **3** kroki.
 
 > [!tabs]
@@ -323,6 +338,8 @@ show variables like "version";
 > Korzystanie ze wszystkich wersji pośrednich jest obowiązkowe.
 >
 
+<!-- CP-STEPS-END:changer-version -->
+
 ### Logi i metryki
 
 **Kliknij każdy tytuł, aby wyświetlić jego zawartość.**
@@ -333,6 +350,7 @@ Aby uzyskać dostęp do logów rozwiązania Web Cloud Databases, zapoznaj się z
 
 ///
 
+<!-- CP-STEPS-START:monitoruj-ram -->
 /// details | Monitorowanie zużycia pamięci RAM
 
 Kliknij poniższe karty, aby wyświetlić kolejne **2** kroki.
@@ -351,7 +369,9 @@ Kliknij poniższe karty, aby wyświetlić kolejne **2** kroki.
 >> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/metrics/ram-memory-usage-statistics.png){.thumbnail}
 
 ///
+<!-- CP-STEPS-END:monitoruj-ram -->
 
+<!-- CP-STEPS-START:monitoruj-polaczenia -->
 /// details | Monitorowanie liczby połączeń na minutę
 
 Wykres ten pozwala na śledzenie, w ciągu ostatnich 24 godzin, obciążenia połączeniami na minutę na serwerze baz danych.
@@ -372,6 +392,7 @@ Kliknij poniższe karty, aby wyświetlić kolejne **2** kroki.
 >> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/metrics/statistics-for-total-connections-per-minute.png){.thumbnail}
 
 ///
+<!-- CP-STEPS-END:monitoruj-polaczenia -->
 
 ### Optymalizacja baz danych
 

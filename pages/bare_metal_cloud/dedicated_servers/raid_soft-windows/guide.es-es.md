@@ -1,6 +1,6 @@
 ---
-title: Configurar un espejo de software (RAID) en Windows
-excerpt: Cómo reconstruir la configuración de los discos de un servidor tras la sustitución de un disco
+title: "Espejo RAID por software en un servidor dedicado Windows"
+excerpt: "Reconstruya la configuración del espejo RAID por software en un servidor dedicado Windows tras un reemplazo de disco"
 updated: 2023-03-28
 ---
 

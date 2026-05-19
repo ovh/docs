@@ -19,7 +19,6 @@ Nutanix Objects implements an **Object Storage** S3* compatible solution on your
 ## Requirements
 
 - A Nutanix cluster in your OVHcloud account.
-- Access to the [OVHcloud Control Panel](/links/manager).
 - You must be connected to the cluster via Prism Central.
 
 ## Instructions

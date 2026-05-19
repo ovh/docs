@@ -1,7 +1,7 @@
 ---
-title: Bring Your Own Image (BYOI)
-excerpt: Découvrez comment déployer facilement vos propres images sur des serveurs dédiés
-updated: 2026-02-10
+title: "Déployer des images personnalisées avec le service Bring Your Own Image (BYOI) sur un serveur dédié"
+excerpt: "Déployez vos propres images OS personnalisées sur un serveur dédié OVHcloud grâce à la fonctionnalité Bring Your Own Image (BYOI)"
+updated: 2026-05-11
 ---
 
 ## Objectif
@@ -20,6 +20,11 @@ En plus des prérequis et limitations mentionnés ci-dessous, vous devez vous as
 - Un [serveur dédié](/links/bare-metal/bare-metal) dans votre compte OVHcloud
 - Avoir accès à l'[API OVHcloud](/pages/manage_and_operate/api/first-steps) (pour la méthode de [déploiement via l'API](#viaapi) de ce guide)
 - Votre image doit être inférieure à la RAM du serveur moins 3 Gio
+
+> [!primary]
+>
+> Pour appliquer les personnalisations OVHcloud au premier démarrage, votre image doit inclure [cloud-init](https://cloud-init.io/) ou une alternative compatible (par exemple [`nuageinit`](https://cgit.freebsd.org/src/tree/libexec/nuageinit/) sur FreeBSD).
+>
 
 <!-- CP-NAV-START:baremetal-dedicated-servers -->
 ---
@@ -64,19 +69,17 @@ Certaines limites techniques sont liées à l’utilisation de produits physique
 
 Dans l'onglet `Informations générales`{.action}, cliquez sur le bouton `...`{.action} à côté de « Système (OS) » puis cliquez sur `Installer`{.action}.
 
-![BringYourOwnImage Control Panel 01](images/byoi-controlpanel01.png){.thumbnail}
+![Bouton d'installation Bring Your Own Image dans l'espace client](images/byoi-controlpanel01.png){.thumbnail}
 
 À l'étape suivante, sélectionnez `Personnalisé` dans le menu puis `Bring Your Own Image - byoi` et cliquez sur `Suivant`{.action}.
 
-![BringYourOwnImage Control Panel 03](images/byoi-controlpanel03.png){.thumbnail}
+![Sélection d'image personnalisee Bring Your Own Image dans l'espace client](images/byoi-controlpanel03.png){.thumbnail}
 
 Vous allez être redirigé vers la page de configuration. Assurez-vous que l'URL de votre image est au bon format. Remplissez le reste des champs obligatoires de cette page. Une fois que vous avez confirmé que les informations sont correctes, cliquez sur `Confirmer`{.action}.
 
 Vous trouverez plus de détails sur les options dans la section « [options de déploiement](#options) » ci-dessous.
 
-Pour plus d'informations et des exemples sur ConfigDrive de Cloud-Init, consultez la documentation officielle sur [cette page](https://cloudinit.readthedocs.io/en/22.1_a/topics/examples.html).
-
-![BringYourOwnImage Control Panel 04](images/byoi-controlpanel04.png){.thumbnail}
+![Page de configuration Bring Your Own Image dans l'espace client](images/byoi-controlpanel04.png){.thumbnail}
 
 ### Déploiement de votre image via l'API <a name="viaapi"></a>
 
@@ -113,13 +116,13 @@ Le contenu de la requête API de Bring Your Own Image (BYOI) doit être similair
 }
 ```
 
-Même si le configDrive user data peut être envoyé à l'API en clair directement en échappant les bons caractères, il est recommandé d'envoyer à l'API le script encodé en base64 en utilisant par exemple la commande UNIX/Linux suivante :
+Même si `configDriveUserData` peut être envoyé à l'API directement en clair en échappant les bons caractères, il est recommandé d'envoyer à l'API le script encodé en base64 en utilisant par exemple la commande UNIX/Linux suivante :
 
 ```bash
 cat my-data.yaml | base64 -w0
 ```
 
-Voici le configDrive user data en clair avec l'exemple ci-dessus :
+Voici la version en clair de `configDriveUserData` de l'exemple ci-dessus :
 
 ```yaml
 #cloud-config
@@ -149,17 +152,17 @@ Une fois les champs complétés, démarrez le déploiement en cliquant sur `Exec
 |-|-|-|
 | customizations/hostname | Le hostname | ❌ |
 | customizations/sshKey | La clé publique SSH | ❌ |
-| customizations/imageURL | L'URL de votre image | ✅ |
-| customizations/imageType | Le type/format de votre image (qcow2, raw) | ✅ |
-| customizations/imageCheckSum | Checksum de votre image | ❌ |
-| customizations/imageCheckSumType | Type de checksum de votre image. (md5, sha1, sha256, sha512) | ❌ (sauf si checksum fourni) |
-| customizations/configDriveUserData | Contenu de votre fichier configDrive¹ | ❌ |
-| customizations/configDriveMetadata | Métadonnées Cloud-Init personnalisées | ❌ |
+| customizations/imageURL | L'URL de l'image | ✅ |
+| customizations/imageType | Le type/format de l'image (qcow2, raw) | ✅ |
+| customizations/imageCheckSum | Checksum de l'image | ❌ |
+| customizations/imageCheckSumType | Type de checksum de l'image (md5, sha1, sha256, sha512) | ❌ (sauf si checksum fourni) |
+| customizations/configDriveUserData | Données utilisateur (user-data) cloud-init¹ | ❌ |
+| customizations/configDriveMetadata | Métadonnées cloud-init personnalisées, exposées sous la clé `meta` de `meta_data.json`⁴ | ❌ |
 | customizations/httpHeaders?Key | Clé des en-têtes HTTP | ❌² |
 | customizations/httpHeaders?Value | Valeur des en-têtes HTTP | ❌² |
 | userMetadata/efiBootloaderPath | Le chemin du bootloader EFI | ✅³ |
 
-¹ Il peut s'agir d'un `#cloud-config` ou d'un script. Sa représentation JSON doit être sur une seule ligne avec `\n` pour les retours à la ligne, car les chaînes JSON ne peuvent pas contenir de retours à la ligne littéraux.<br />
+¹ [Données utilisateur](https://cloudinit.readthedocs.io/en/latest/explanation/format.html) cloud-init standard — généralement un document `#cloud-config` ou un script (voir les [exemples officiels de cloud-init](https://docs.cloud-init.io/en/latest/reference/examples.html)). Équivalent à `server create --user-data <fichier>` chez OpenStack. Sa représentation JSON doit être sur une seule ligne avec `\n` pour les retours à la ligne, car les chaînes JSON ne peuvent pas contenir de retours à la ligne littéraux.<br />
 ² À utiliser uniquement si vous avez besoin d'en-têtes HTTP, tels que `Basic Auth`<br />
 ³ Le chemin du bootloader EFI est utilisé par iPXE pour démarrer votre système d'exploitation. Pour plus d'informations, consultez notre guide « [Comprendre le processus de démarrage des serveurs dédiés](/pages/bare_metal_cloud/dedicated_servers/boot-process) ». Exemples :
 
@@ -178,9 +181,11 @@ Une fois les champs complétés, démarrez le déploiement en cliquant sur `Exec
 | Arch Linux | `\\efi\\arch\\grubx64.efi` |
 | Gentoo | `\\efi\\boot\\bootx64.efi` |
 
+⁴ Objet JSON de couples clé/valeur arbitraires, équivalent à `server create --property clé=valeur` chez OpenStack. Les couples sont écrits dans le `meta_data.json` du config drive sous la clé `meta`, où cloud-init peut les lire. Exemple : `"configDriveMetadata": {"role": "webserver", "env": "prod"}` devient `"meta": {"role": "webserver", "env": "prod"}` dans `meta_data.json`. Voir la [documentation du service de métadonnées OpenStack](https://docs.openstack.org/nova/latest/user/metadata.html#openstack-format-metadata) pour le schéma complet.
+
 > [!primary]
 >
-> La partition ConfigDrive est utilisée par cloud-init lors du premier démarrage du serveur afin d'appliquer vos configurations. Vous pouvez choisir d'utiliser la partition par défaut ou une partition personnalisée (en utilisant `configDriveUserData`).
+> Lorsque vous renseignez l'une des personnalisations de cette page, OVHcloud ajoute une petite partition de [config drive](https://docs.cloud-init.io/en/latest/reference/datasources/configdrive.html) lors de l'installation ; sinon, aucun config drive n'est créé. Cloud-init la lit au premier démarrage. Renseignez `configDriveUserData` pour ajouter vos propres données utilisateur (user-data) cloud-init.
 >
 
 #### Les erreurs clients fréquentes <a name="errors"></a>

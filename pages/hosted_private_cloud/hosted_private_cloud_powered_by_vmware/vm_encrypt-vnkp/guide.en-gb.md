@@ -21,10 +21,20 @@ The aim of this guide is to explain the implementation details of **vSphere Nati
 ## Requirements
 
 - You must have signed up to a [VMware on OVHcloud](/links/hosted-private-cloud/vmware) solution.
-- Access to the [OVHcloud Control Panel](/links/manager).
 - Access to the vSphere management interface.
 - vSphere and hosts version 7.0 Update 2 or higher.
 - The **Zerto** replication solution is not currently compatible with encryption. This means that encrypted VMs cannot be replicated.
+
+<!-- CP-NAV-START:privatecloud-vmware-vsphere -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [VMware vSphere](/links/control-panel/privatecloud-vmware-vsphere)
+- **Navigation path:** `Hosted Private Cloud`{.action} > `Managed VMware vSphere`{.action} > Select your vSphere service
+
+---
+<!-- CP-NAV-END:privatecloud-vmware-vsphere -->
 
 ## Presentation
 
@@ -43,7 +53,7 @@ In detail, when encrypting a virtual machine, the ESXi host generates a **DEK** 
 
 ### Authorising a user to administer encryption on a Hosted Private Cloud cluster powered by VMware 
 
-Log in to the [OVHcloud Control Panel](/links/manager), click on `Hosted Private Cloud`{.action} and choose your cluster. Go to `Users`{.action} and click the `...`{.action}
+Click [this link](/links/control-panel/privatecloud-vmware-vsphere) to access the `VMware vSphere`{.action} section, then select your service. Go to `Users`{.action} and click the `...`{.action}
 
 ![00 add right from manager 01](images/00-add-right-from-manager01.png){.thumbnail}
 

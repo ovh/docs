@@ -101,6 +101,7 @@ This is why we invite you to consult the chapter corresponding to the interface 
 >>
 >> ![exchange](images/config-outlook-legacy-exchange03.png){.thumbnail}
 >>
+>> <!-- CP-STEPS-START:exchange-diagnostic-check -->
 >> > [!primary]
 >> >
 >> > If you get a message saying that Outlook was unable to configure your account, this may mean that the OVHcloud SRV record is not correctly configured in your domain name’s DNS zone.
@@ -108,6 +109,7 @@ This is why we invite you to consult the chapter corresponding to the interface 
 >> > ![exchange](images/config-outlook-legacy-exchange04.png){.thumbnail}
 >> >
 >> > We recommend that you check the configuration of the domain name associated with your Exchange service. In your [OVHcloud Control Panel](/links/manager), go to the `Associated domains`{.action} tab and check the `Diagnostic`{.action} column of the table.
+>> <!-- CP-STEPS-END:exchange-diagnostic-check -->
 >>
 >> - If your domain name’s configuration is valid, you may receive a login authorisation message for your OVHcloud servers. Accept this to allow your Exchange account to be configured automatically.
 >> - Then determine the retention period of the items in your Exchange account to keep them stored **locally on your computer**. Click `Next`{.action}, and then click `Done`{.action}.

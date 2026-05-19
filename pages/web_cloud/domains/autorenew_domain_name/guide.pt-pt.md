@@ -93,6 +93,7 @@ Se a renovação automática estiver ativada, o seu método de pagamento deve se
 
 ### Alterar o modo de renovação dos meus nomes de domínio
 
+<!-- CP-STEPS-START:alterar-modo-renovacao -->
 Clique nos separadores abaixo para visualizar cada uma das **2** etapas.
 
 > [!tabs]
@@ -117,9 +118,11 @@ Clique nos separadores abaixo para visualizar cada uma das **2** etapas.
 >> - Selecione as linhas correspondentes na tabela, marcando as caixas no início da linha.
 >> - Clique no botão `Ações`{.action} no canto superior esquerdo da tabela.
 >> - Selecione `Ativar pagamento automático`{.action} ou `Desativar pagamento automático`{.action}.
+<!-- CP-STEPS-END:alterar-modo-renovacao -->
 
 ### Renovar o meu domínio antes da data de expiração
 
+<!-- CP-STEPS-START:renovar-antes-expiracao -->
 Clique nos separadores abaixo para visualizar cada uma das **3** etapas.
 
 > [!tabs]
@@ -141,6 +144,7 @@ Clique nos separadores abaixo para visualizar cada uma das **3** etapas.
 >>
 >> Pode renovar o serviço a qualquer momento antes do seu fim de validade e pode igualmente escolher o período de renovação.
 >> Neste caso, o período de validade subscrito será adicionado ao período de validade a decorrer. Não perderá o tempo de validade restante.
+<!-- CP-STEPS-END:renovar-antes-expiracao -->
 
 ### Acompanhar a renovação do meu domínio
 
@@ -148,6 +152,7 @@ Uma vez o débito da renovação efetuado, o nome de domínio será renovado no 
 
 Os dados apresentados no WHOIS serão atualizados, confirmando a renovação do domínio.
 
+<!-- CP-STEPS-START:acompanhar-renovacao -->
 Para verificar o estado da renovação do seu domínio, clique nos separadores abaixo para visualizar cada uma das **2** etapas.
 
 > [!tabs]
@@ -162,9 +167,11 @@ Para verificar o estado da renovação do seu domínio, clique nos separadores a
 >> Na secção **Informações gerais**, verifique o estado da renovação em **Estado do nome de domínio**.
 >>
 >> A menção `Renovação em curso` é apresentada quando o pagamento é efetuado, até à renovação efetiva do seu nome de domínio junto do registry.
+<!-- CP-STEPS-END:acompanhar-renovacao -->
 
 ### Rescindir o meu nome de domínio
 
+<!-- CP-STEPS-START:rescindir-dominio -->
 Clique nos separadores abaixo para visualizar cada uma das **2** etapas.
 
 > [!tabs]
@@ -179,6 +186,7 @@ Clique nos separadores abaixo para visualizar cada uma das **2** etapas.
 >> Clique à direita da linha no botão `...`{.action} e depois em `Rescindir o meu serviço`{.action}.
 >>
 >> Esta ação está disponível para os serviços parametrizados para **renovação automática**. Ao escolher esta ação, a renovação e o débito automáticos são desativados para o serviço que selecionou.
+<!-- CP-STEPS-END:rescindir-dominio -->
 
 > [!primary]
 >
@@ -188,6 +196,7 @@ Para mais informações, consulte o guia "**[Como cancelar os meus serviços OVH
 
 ### Pagar a fatura de renovação de um nome de domínio
 
+<!-- CP-STEPS-START:pagar-fatura-renovacao -->
 Clique nos separadores abaixo para visualizar cada uma das **2** etapas.
 
 > [!tabs]
@@ -207,6 +216,7 @@ Clique nos separadores abaixo para visualizar cada uma das **2** etapas.
 >> >
 >> > - Possui serviços em renovação automática.
 >> > - Não registou nenhum método de pagamento que lhe permita efetuar um débito para o pagamento das suas faturas.
+<!-- CP-STEPS-END:pagar-fatura-renovacao -->
 
 ## FAQ
 
@@ -244,6 +254,7 @@ Após a renovação efetuada pelo registry (cerca de um mês após o pagamento d
 
 Os dados do WHOIS serão atualizados posteriormente.
 
+<!-- CP-STEPS-START:faq-acompanhar-renovacao -->
 Para verificar o estado da renovação do seu domínio, clique nos separadores abaixo para visualizar cada uma das **2** etapas.
 
 > [!tabs]
@@ -256,6 +267,7 @@ Para verificar o estado da renovação do seu domínio, clique nos separadores a
 > **Etapa 2**
 >>
 >> Na secção **Informações gerais**, verifique o estado da renovação em **Estado do nome de domínio**.
+<!-- CP-STEPS-END:faq-acompanhar-renovacao -->
 
 ///
 

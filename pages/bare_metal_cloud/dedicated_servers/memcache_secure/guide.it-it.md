@@ -1,6 +1,6 @@
 ---
-title: 'Mettere in sicurezza un server con Memcached'
-excerpt: 'Come proteggere il server con Memcached'
+title: "Mettere in sicurezza un server dedicato con un servizio Memcached"
+excerpt: "Proteggi il servizio Memcached sul tuo server dedicato per impedire accessi remoti non autorizzati e l'esposizione dei dati"
 updated: 2018-03-02
 ---
 
@@ -116,4 +116,4 @@ sudo systemctl force-reload memcached
 
 ## Per saperne di più
 
-Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.
+Contatta la nostra [Community di utenti](/links/community).

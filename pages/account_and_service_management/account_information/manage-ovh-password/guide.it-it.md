@@ -92,6 +92,7 @@ Nel caso in cui la password risulti compromessa, consigliamo di [modificarla imm
 
 - A questo punto compare un messaggio che conferma che l’operazione eseguita è andata a buon fine. Clicca su `Continua`{.action} per essere reindirizzato alla pagina di login. Inserisci l’identificativo e la nuova password.
 
+
 <a name="lost-password"></a>
 
 #### Se non ricordi più la password
@@ -118,6 +119,7 @@ Nel caso in cui la password risulti compromessa, consigliamo di [modificarla imm
 > 
 > Durante la propagazione della modifica tutte le sessioni attive sull’account OVHcloud verranno chiuse automaticamente.
 > 
+
 
 ## Per saperne di più
 

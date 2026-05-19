@@ -37,16 +37,6 @@ En algunos casos, la lentitud de la visualización también puede provenir de su
 
 - Tener un sitio web alojado en uno de nuestros planes de hosting de OVHcloud (/links/web/hosting)
 
-<!-- CP-NAV-START:web-hosting -->
----
-
-### Acceso al área de cliente de OVHcloud
-
-- **Enlace directo:** [Hosting plans](/links/control-panel/web-hosting)
-- **Ruta de navegación:** `Web Cloud`{.action} > `Alojamientos`{.action} > Seleccione su alojamiento web
-
----
-<!-- CP-NAV-END:web-hosting -->
 
 ## Procedimiento
 
@@ -150,7 +140,7 @@ Conéctese a su base de datos siguiendo **el etapa 3** de nuestra guía sobre la
 
 Si la conexión se ha realizado correctamente, acceda a la siguiente interfaz:
 
-![PHPMyAdmin](/pages/assets/screens/other/web-tools/phpmyadmin/pma-main-page.png){.thumbnail}
+![phpMyAdmin](/pages/assets/screens/other/web-tools/phpmyadmin/pma-main-page.png){.thumbnail}
 
 > [!warning]
 >

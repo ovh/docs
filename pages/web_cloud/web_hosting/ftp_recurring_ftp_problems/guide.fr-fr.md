@@ -1,7 +1,7 @@
 ---
 title: "Résoudre les erreurs récurrentes lors de l’utilisation d’un logiciel FTP"
 excerpt: "Retrouvez ici les anomalies les plus fréquentes liées à votre logiciel FTP"
-updated: 2025-10-20
+updated: 2026-03-31
 ---
 
 ## Objectif
@@ -42,18 +42,11 @@ Ce message sur le logiciel [FileZilla](/pages/web_cloud/web_hosting/ftp_filezill
 
 Si les données que vous souhaitez échanger par ce biais ne sont pas confidentielles, cliquez sur `OK`{.action}.
 
-Dans le cas contraire, rendez-vous dans votre [espace client OVHcloud](/links/manager), partie `Web Cloud`{.action} puis `Hébergements`{.action}. Sélectionnez l'hébergement concerné puis choisissez l'onglet `FTP-SSH`{.action}.
-
-Si vous disposez d'un hébergement **Starter** ou [Perso](/links/web/hosting-personal-offer), cochez la case `Désactivé`{.action} dans la colonne `SFTP`{.action} puis patientez quelques minutes.
-
-Si vous disposez d'un hébergement [Pro](https://www.ovh.com/fr/hebergement-web/hebergement-pro.xml) ou [Performance](https://www.ovh.com/fr/hebergement-web/hebergement-performance.xml), cliquez sur le bouton `...`{.action} à droite de l'utilisateur FTP concerné puis sur `Modifier`{.action}.
-
-Choisissez `SFTP`{.action} ou `Activé`{.action} (pour activer le protocole SSH sur votre hébergement), cliquez sur `Suivant`{.action} puis sur `Valider`{.action}. Patientez quelques minutes.
+Dans le cas contraire, activez le protocole SFTP en consultant notre guide « [Hébergement web - Comment activer l'accès SFTP](/pages/web_cloud/web_hosting/enable_sftp) ».
 
 > [!primary]
 >
 > Pour tout autre message d'erreur, consultez la section `Diagnostic` de nos guides [Hébergements Web](/products/web-cloud-hosting).
->
 
 ### J'ai transféré mes fichiers avec un logiciel FTP, mais mon site ne s'affiche pas.
 
@@ -69,6 +62,7 @@ Si vous ne parvenez pas à vous authentifier, modifiez votre mot de passe FTP en
 
 Le manque d'espace sur votre hébergement mutualisé peut entraîner des dysfonctionnements sur votre site lorsque vous tentez de le modifier ou de le mettre à jour.
 
+<!-- CP-STEPS-START:check-disk-space -->
 Pour vérifier l'espace de stockage restant sur votre hébergement web, cliquez sur les onglets ci-dessous pour afficher successivement chacune des **2** étapes.
 
 > [!tabs]
@@ -85,6 +79,7 @@ Pour vérifier l'espace de stockage restant sur votre hébergement web, cliquez 
 >> ![disk_space](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-disk-space.png){.thumbnail}
 >>
 >> L'espace de stockage utilisé apparaît en dessous de cette mention.
+<!-- CP-STEPS-END:check-disk-space -->
 
 ### Je n'arrive pas à transférer mes fichiers vers le serveur FTP.
 

@@ -1,7 +1,7 @@
 ---
 title: "Tutoriel - Installer manuellement un CMS sur mon hébergement"
 excerpt: "Découvrez comment installer manuellement un CMS sur votre hébergement"
-updated: 2025-10-27
+updated: 2026-03-31
 ---
 
 ## Objectif
@@ -12,7 +12,7 @@ Ce tutoriel a pour objectif de vous aider à installer manuellement un CMS (Cont
 >
 > OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
 > 
-> Nous mettons à votre disposition ce tutoriel afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](/links/partner) ou l'éditeur du CMS ue vous aurez choisi d'installer si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section [« Aller plus loin »](#go-further) de ce tutoriel.
+> Nous mettons à votre disposition ce tutoriel afin de vous accompagner au mieux sur des tâches courantes. Cependant, nous vous recommandons de faire appel à un [prestataire spécialisé](/links/partner) ou l'éditeur du CMS ue vous aurez choisi d'installer si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section [« Aller plus loin »](#go-further) de ce tutoriel.
 >
 > Pour contacter les différents éditeurs des CMS cités ci-dessus, retrouvez ci-après les liens vers leurs pages officielles respectives :
 >
@@ -38,16 +38,6 @@ Ce tutoriel a pour objectif de vous aider à installer manuellement un CMS (Cont
 - Disposer d'une offre d'[hébergement web](/links/web/hosting) qui contient au moins une base de données.
 - Disposer d'un [nom de domaine](/links/web/domains)
 
-<!-- CP-NAV-START:web-hosting -->
----
-
-### Accès à l'espace client OVHcloud
-
-- **Lien direct :** [Hébergements](/links/control-panel/web-hosting)
-- **Pour accéder à vos services :** `Web Cloud`{.action} > `Hébergements`{.action} > Sélectionnez votre hébergement web
-
----
-<!-- CP-NAV-END:web-hosting -->
 
 ## En pratique
 
@@ -118,7 +108,7 @@ Retrouvez plus d'informations sur notre page relative au [module PrestaShop](/li
 > Quel que soit le CMS que vous choisirez, nous vous rappellons qu'aucune assistance n'est fournie par OVHcloud sur l'utilisation de ces CMS. Si vous éprouvez des difficultés, contactez directement l'éditeur du CMS que vous avez choisi à l'aide des liens indiqués plus haut dans ce tutoriel.
 >
 
-### Etape 1 - préparer l'installation <a name="step1"></a>
+### 1 - préparer l'installation <a name="step1"></a>
 
 Pour installer un CMS sur votre offre d'[hébergement web](/links/web/hosting), quelques préparatifs sont nécessaires.
 
@@ -137,15 +127,14 @@ Consultez notre documentation qui décrit [comment créer un site web sur son h�
 
 - Assurez-vous que le nom de domaine que vous utiliserez pour accéder à votre CMS, ainsi que son sous-domaine en « www », pointent bien vers l'adresse IP de votre offre d'[hébergement web](/links/web/hosting).
 
-Pour récupérer l'adresse IP de votre offre d'hébergement web, connectez-vous à votre [espace client OVHcloud](/links/manager) dans la partie `Web Cloud`{.action} puis sélectionnez votre offre d'hébergement web dans la section `Hébergements`{.action}.<br>
-Dans l'encadré `Informations générales`{.action} sur votre droite, vous trouverez l'adresse IP de votre hébergement web dans le formulaire `IPv4`{.action}.
-
-Si la zone DNS active de votre domaine est gérée dans votre [espace client OVHcloud](/links/manager), comparez l'adresse IP de votre hébergement avec celle présente dans la zone DNS de votre domaine, en vous aidant de notre documentation sur les [zones DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit).
+Pour récupérer l'adresse IPv4 (ou IPv6) de votre offre d'hébergement web, consultez notre guide « [Hébergement web - Liste des adresses IP par cluster](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP) ».
 
 > [!warning]
 >
-> Si vous avez activé les options `CDN`{.action} ou `IP du pays`{.action} avec votre domaine, utilisez l'adresse IP adaptée en vous aidant de notre documentation recensant [l'ensemble des adresses IP de nos hébergements mutualisés](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP).
+> Si vous avez utilisé l'option d'adresse IP géolocalisée par pays ou activé une option CDN entre votre nom de domaine et votre hébergement web, utilisez l'adresse IP adéquate indiquée dans le guide cité ci-dessus.
 >
+
+Si la zone DNS active de votre domaine est gérée dans votre [espace client OVHcloud](/links/control-panel/web-dns-zone), comparez l'adresse IP de votre hébergement avec celle présente dans la zone DNS de votre domaine, en vous aidant de notre documentation sur les [zones DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit).
 
 Si vous ne parvenez pas à effectuer ces vérifications, contactez l'hébergeur de votre zone DNS active afin de mettre à jour le pointage de votre nom de domaine.
 
@@ -181,7 +170,7 @@ Utilisez notre documentation pour [créer une base de données depuis votre offr
 
 Si vous disposez d'une offre Web Cloud Databases en MySQL ou MariaDB et que vous souhaitez l'utiliser pour installer manuellement votre CMS, consultez notre documentation sur la [création d'une base de données sur un service Web Cloud Databases](/pages/web_cloud/web_cloud_databases/create-db-and-user-on-db-server#creer-une-base-de-donnees).
 
-Une fois la base de données créée, récupérez les paramètres de connexion (serveur, nom de la base de données, nom d'utilisateur et mot de passe) et conservez-les pour [l'étape 3](#step3) de ce guide.
+Une fois la base de données créée, récupérez les paramètres de connexion (serveur, nom de la base de données, nom d'utilisateur et mot de passe) et conservez-les pour [la [partie 3](#step3)](#step3) de ce guide.
 
 > [!primary]
 >
@@ -195,7 +184,7 @@ Une fois la base de données créée, récupérez les paramètres de connexion (
 > - Pour vous connecter à une base de données présente sur un Web Cloud Databases, consultez [ce guide](/pages/web_cloud/web_cloud_databases/connecting-to-database-on-database-server).
 >
 
-### Etape 2 - démarrer l'installation manuelle
+### 2 - démarrer l'installation manuelle
 
 #### 2.1 - Récupérer les fichiers sources de votre CMS
 
@@ -388,7 +377,7 @@ rmdir ./CMS/
 >> ```
 >> 
 
-### Etape 3 - finaliser l'installation manuelle <a name="step3"></a>
+### 3 - finaliser l'installation manuelle <a name="step3"></a>
 
 > [!success]
 >

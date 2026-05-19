@@ -1,12 +1,26 @@
 ---
 title: "Inhalt einer Datenbank in eine andere duplizieren"
 excerpt: "Erfahren Sie hier, wie Sie den Inhalt einer OVHcloud Datenbank in eine andere OVHcloud Datenbank kopieren"
-updated: 2025-02-20
+updated: 2026-03-31
 ---
+
+<style>
+details>summary {
+    color:rgb(33, 153, 232) !important;
+    cursor: pointer;
+}
+details>summary::before {
+    content:'\25B6';
+    padding-right:1ch;
+}
+details[open]>summary::before {
+    content:'\25BC';
+}
+</style>
 
 ## Ziel
 
-Ihre Datenbank ist ein zentrales Element Ihrer dynamischen Website. Während des Lebenszyklus Ihrer Website kann es aus praktischen oder technischen Gründen erforderlich sein, den Inhalt Ihrer Datenbank in eine andere Ihrer Datenbanken zu kopieren. Dies is möglich innerhalb der Angebote [Start SQL](/links/web/hosting-options-startsql) oder [Web Cloud Databases](/links/web/databases).
+Ihre Datenbank ist ein zentrales Element Ihrer dynamischen Website. Während des Lebenszyklus Ihrer Website kann es aus praktischen oder technischen Gründen erforderlich sein, den Inhalt Ihrer Datenbank in eine andere Ihrer Datenbanken zu kopieren. Dies ist möglich innerhalb der Angebote [Start SQL](/links/web/hosting-options-startsql) oder [Web Cloud Databases](/links/web/databases).
 
 **Diese Anleitung erklärt, wie Sie den Inhalt einer OVHcloud Datenbank in eine andere OVHcloud Datenbank kopieren.**
 
@@ -38,18 +52,21 @@ Bevor Sie beginnen, überprüfen Sie diese Voraussetzungen:
 - Die Version des DBMS für beide Datenbanken ist identisch. Obwohl das Duplizieren mit verschiedenen Versionen funktioniert, sollten Sie dieselben Versionen verwenden.
 - Der Inhalt der Quelldatenbank darf die Größe der Zieldatenbank nicht überschreiten.
 
-### Quelldatenbank identifizieren
+### Inhalt einer Datenbank kopieren
 
 Die Duplikationsfunktion ist verfügbar für folgende Dienste:
 
 - [Start SQL](/links/web/hosting-options-startsql) (in einigen unserer [Webhostings](/links/web/hosting) enthalten oder [separat bestellt](/links/web/hosting-options-startsql))
-- [Web Cloud Databases](/links/web/databases) (in unseren [Performance Hostings](/links/web/hosting-performance-offer) enthalten oder [separat bestellt](/links/web/databases)). 
+- [Web Cloud Databases](/links/web/databases) (in unseren [Performance Hostings](/links/web/hosting-performance-offer) enthalten oder [separat bestellt](/links/web/databases)).
 
 Je nach Ihrer Ausgangslage ist der Zugriffspfad zur Quelldatenbank unterschiedlich.
 
-#### Start SQL
+**Klicken Sie auf die passende Situation, um den Inhalt anzuzeigen.**
 
-Klicken Sie auf die Tabs, um die **3** Schritte anzuzeigen.
+<!-- CP-STEPS-START:copy-from-startsql -->
+/// details | Von einer Start SQL Datenbank
+
+Klicken Sie auf die Tabs, um die **6** Schritte anzuzeigen.
 
 > [!tabs]
 > **Schritt 1**
@@ -60,100 +77,105 @@ Klicken Sie auf die Tabs, um die **3** Schritte anzuzeigen.
 >>
 > **Schritt 2**
 >>
->> Klicken Sie auf den Tab `Datenbanken`{.action}.
+>> Klicken Sie auf den Tab `Datenbanken`{.action}. Die Tabelle listet die auf Ihrem Webhosting erstellten Datenbanken auf.
 >>
->> ![Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases.png){.thumbnail}
+>> ![Start SQL DB-Liste](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/sharedsql-dashboard-db-list.png){.thumbnail}
 >>
 > **Schritt 3**
 >>
+>> Klicken Sie auf den Button `...`{.action} rechts neben der Zeile der Datenbank, deren Inhalt Sie kopieren möchten, und wählen Sie `Datenbank kopieren`{.action}.
+>>
+>> ![CTA_copy_BDD](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/databases/copy-db-tool.png){.thumbnail}
+>>
+> **Schritt 4**
+>>
+>> Ein Fenster fordert Sie auf, Ihre Zieldatenbank auszuwählen.
+>>
+>> ![Interface Copy BDD](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/copy-db-tool-step-1.png){.thumbnail}
+>>
+>> > [!primary]
+>> >
+>> > Wenn Sie keine Zieldatenbank haben, klicken Sie auf den Link im Fenster, um eine neue Datenbank zu bestellen. Denken Sie daran, sie zu aktivieren:
+>> >
+>> > - Für eine Shared SQL Datenbank: Folgen Sie unserer Anleitung "[Datenbank auf Ihrem Webhosting erstellen](/pages/web_cloud/web_hosting/sql_create_database)".
+>> > - Für eine Datenbank auf einem Web Cloud Databases Server: Folgen Sie unserer Anleitung "[Datenbank auf einem Web Cloud Databases Server erstellen](/pages/web_cloud/web_cloud_databases/create-db-and-user-on-db-server)".
+>>
+>> - **Auswahl 1 - In eine Start SQL Datenbank kopieren**: Wählen Sie `In Datenbank kopieren`{.action}, und wählen Sie die Zieldatenbank aus der Dropdown-Liste aus.
+>> - **Auswahl 2 - In einen Web Cloud Databases Server kopieren**: Wählen Sie `In eine Web Cloud Databases kopieren`{.action}. Zwei Dropdown-Listen werden angezeigt. Klicken Sie auf die erste, um die Web Cloud Databases Lösung auszuwählen, dann auf die zweite, um die Zieldatenbank auszuwählen.
+>>
+> **Schritt 5**
+>>
+>> Klicken Sie auf `Weiter`{.action}. Die folgende Bestätigungsmeldung wird angezeigt:
+>>
+>> ![BDD-Kopierbestätigungsnachricht](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/copy-db-tool-step-2.png){.thumbnail}
+>>
+>> Wenn Sie die ausgewählte Zieldatenbank nicht überschreiben möchten, klicken Sie auf `Zurück`{.action}, um Ihre Auswahl zu ändern, oder auf `Abbrechen`{.action}, um den Vorgang abzubrechen. Klicken Sie andernfalls auf `Bestätigen`{.action}, um die Duplikation zu bestätigen.
+>>
+> **Schritt 6**
+>>
+>> Der Kopiervorgang kann einige Minuten dauern. Im Tab `Aktuelle Tasks`{.action} wird eine neue Zeile für Ihre Kopie mit dem Status "Geplant" angezeigt. Wenn der Vorgang abgeschlossen ist, verschwindet die Zeile.
+>>
+>> ![Aktuelle Tasks](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/copy-db-tool-ongoing-tasks.png){.thumbnail}
 
-Wenn Sie auf den Tab `Datenbanken`{.action} klicken, wird eine Liste Ihrer Start SQL-Datenbanken angezeigt.
+///
+<!-- CP-STEPS-END:copy-from-startsql -->
 
-![Liste der SQL-Start-Datenbanken](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/sharedsql-dashboard-db-list.png){.thumbnail}
+<!-- CP-STEPS-START:copy-from-wcdb -->
+/// details | Von einem Web Cloud Databases Server
 
-#### Web Cloud Databases
-
-Klicken Sie auf die Tabs, um die **3** Schritte anzuzeigen.
+Klicken Sie auf die Tabs, um die **6** Schritte anzuzeigen.
 
 > [!tabs]
 > **Schritt 1**
 >>
->> Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein und gehen Sie dann in den Bereich `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Schritt 2**
->>
->> Klicken Sie auf das Menü `Web Cloud Databases`{.action} und wählen Sie die betreffende Web Cloud Databases Lösung aus.
+>> Gehen Sie auf die Seite [Web Cloud Databases](/links/control-panel/web-cloud-databases), und wählen Sie die betreffende Lösung aus.
 >>
 >> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases.png){.thumbnail}
 >>
-> **Schritt 3**
+> **Schritt 2**
 >>
->> Wenn Sie auf den Tab `Datenbanken`{.action} klicken, wird eine Liste der Datenbanken auf Ihrem Web Cloud Databases Server angezeigt.
+>> Klicken Sie auf den Tab `Datenbanken`{.action}. Die Liste der Datenbanken auf Ihrem Web Cloud Databases Server wird angezeigt.
 >>
 >> ![WCD DB-Liste](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/databases/wcdb-dashboard-db-list.png){.thumbnail}
+>>
+> **Schritt 3**
+>>
+>> Klicken Sie auf den Button `...`{.action} rechts neben der Zeile der Datenbank, deren Inhalt Sie kopieren möchten, und wählen Sie `Datenbank kopieren`{.action}.
+>>
+>> ![CTA_copy_BDD](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/databases/copy-db-tool.png){.thumbnail}
+>>
+> **Schritt 4**
+>>
+>> Ein Fenster fordert Sie auf, Ihre Zieldatenbank auszuwählen.
+>>
+>> ![Interface Copy BDD](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/copy-db-tool-step-1.png){.thumbnail}
+>>
+>> > [!primary]
+>> >
+>> > Wenn Sie keine Zieldatenbank haben, klicken Sie auf den Link im Fenster, um eine neue Datenbank zu bestellen. Denken Sie daran, sie zu aktivieren:
+>> >
+>> > - Für eine Shared SQL Datenbank: Folgen Sie unserer Anleitung "[Datenbank auf Ihrem Webhosting erstellen](/pages/web_cloud/web_hosting/sql_create_database)".
+>> > - Für eine Datenbank auf einem Web Cloud Databases Server: Folgen Sie unserer Anleitung "[Datenbank auf einem Web Cloud Databases Server erstellen](/pages/web_cloud/web_cloud_databases/create-db-and-user-on-db-server)".
+>>
+>> - **Auswahl 1 - In eine Start SQL Datenbank kopieren**: Wählen Sie `In Datenbank kopieren`{.action}, und wählen Sie die Zieldatenbank aus der Dropdown-Liste aus.
+>> - **Auswahl 2 - In einen Web Cloud Databases Server kopieren**: Wählen Sie `In eine Web Cloud Databases kopieren`{.action}. Zwei Dropdown-Listen werden angezeigt. Klicken Sie auf die erste, um die Web Cloud Databases Lösung auszuwählen, dann auf die zweite, um die Zieldatenbank auszuwählen.
+>>
+> **Schritt 5**
+>>
+>> Klicken Sie auf `Weiter`{.action}. Die folgende Bestätigungsmeldung wird angezeigt:
+>>
+>> ![BDD-Kopierbestätigungsnachricht](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/copy-db-tool-step-2.png){.thumbnail}
+>>
+>> Wenn Sie die ausgewählte Zieldatenbank nicht überschreiben möchten, klicken Sie auf `Zurück`{.action}, um Ihre Auswahl zu ändern, oder auf `Abbrechen`{.action}, um den Vorgang abzubrechen. Klicken Sie andernfalls auf `Bestätigen`{.action}, um die Duplikation zu bestätigen.
+>>
+> **Schritt 6**
+>>
+>> Der Kopiervorgang kann einige Minuten dauern. Im Tab `Aktuelle Tasks`{.action} wird eine neue Zeile für Ihre Kopie mit dem Status "Geplant" angezeigt. Wenn der Vorgang abgeschlossen ist, verschwindet die Zeile.
+>>
+>> ![Aktuelle Tasks](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/copy-db-tool-ongoing-tasks.png){.thumbnail}
 
-### Inhalt einer Datenbank kopieren
-
-Klicken Sie im Tab `Datenbanken`{.action} auf den Button `...`{.action} rechts in der Zeile der Datenbank, deren Inhalt Sie kopieren möchten. Wählen Sie `Datenbank kopieren`{.action}.
-
-![CTA_copy_BDD](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/databases/copy-db-tool.png){.thumbnail}
-
-Es wird ein Fenster angezeigt, in dem Sie Ihre Zieldatenbank identifizieren können.
-
-![Interface Copy BDD](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/copy-db-tool-step-1.png){.thumbnail}
-
-Wenn Sie keine Zieldatenbank haben, klicken Sie auf den Link im Text, um eine neue Datenbank zu bestellen.
-
-![WCD DB-Liste](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/copy-db-tool-link-to-buy-db.png){.thumbnail}
-
-Sie haben die Wahl zwischen [Start SQL](/links/web/hosting-options-startsql) oder [Web Cloud Databases](/links/web/databases).
-
-> [!primary]
->
-> Ihre neu bestellte Datenbank wird nicht automatisch aktiviert. Loggen Sie sich zum Aktivieren der Datenbank in Ihr [OVHcloud Kundencenter](/links/manager) ein und gehen Sie in den Bereich `Web Cloud`{.action}.
-> 
-> - Für eine Shared SQL Datenbank: Folgen Sie unserer Anleitung „[Datenbank auf Ihrem Webhosting erstellen](/pages/web_cloud/web_hosting/sql_create_database)“.
-> - Für eine Datenbank auf einem Web Cloud Databases Server: Folgen Sie unserer Anleitung „[Datenbank auf einem Web Cloud Databases Server erstellen](/pages/web_cloud/web_cloud_databases/create-db-and-user-on-db-server)“.
->
-
-Wenn Sie bereits über eine Zieldatenbank verfügen, wählen Sie zunächst deren Typ aus:
-
-- `In Datenbank kopieren`{.action}: Wenn Sie den Inhalt der Quelldatenbank nach **Start SQL** kopieren möchten.
-- `In eine Web Cloud Databases kopieren`{.action}: Wenn Sie den Inhalt der Quelldatenbank nach **Web Cloud Databases** kopieren möchten.
-
-#### Auswahl 1: Start SQL
-
-Sie haben `In Datenbank kopieren`{.action} ausgewählt. Es werden zwei Dropdownlisten angezeigt. Wählen Sie zuerst das Webhosting aus, auf dem sich Ihre Zieldatenbank befindet. Klicken Sie auf die zweite Dropdown-Liste, um die Start SQL Zieldatenbank auszuwählen.
-
-Klicken Sie auf `Weiter`{.action}. Die folgende Bestätigungsmeldung wird angezeigt:
-
-![BDD-Kopierbestätigungsnachricht](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/copy-db-tool-step-2.png){.thumbnail}
-
-Wenn Sie die ausgewählte Zieldatenbank nicht überschreiben möchten, klicken Sie auf `Zurück`{.action}, um Ihre Auswahl zu ändern, oder auf `Abbrechen`{.action}, um den Vorgang abzubrechen. Klicken Sie andernfalls auf `Bestätigen`{.action}, um den Inhalt der Quelldatenbank in die Zieldatenbank zu duplizieren.
-
-Die folgende Bestätigungsmeldung wird angezeigt:
-
-![BDD-Erfolgsmeldung](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/copy-db-tool-copied-successfull.png){.thumbnail}
-
-Der Kopiervorgang kann einige Minuten dauern. Um den Status zu überprüfen, öffnen Sie den Tab `Aktuelle Tasks`{.action}. In der Tabelle wird eine Zeile für das Kopieren mit dem Status „Geplant“ angezeigt. Wenn der Vorgang abgeschlossen ist, wird die Zeile gelöscht.
-
-![Aktuelle Tasks](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/copy-db-tool-ongoing-tasks.png){.thumbnail}
-
-#### Auswahl 2: Web Cloud Databases
-
-Sie haben `In eine Web Cloud Databases kopieren`{.action} ausgewählt. Es werden zwei Dropdownlisten angezeigt. Wählen Sie zuerst den Server von Web Cloud Databases aus, auf dem sich Ihre Zieldatenbank befindet. Klicken Sie auf die zweite Dropdown-Liste, um die Zieldatenbank auf Ihrem Web Cloud Databases Server auszuwählen.
-
-Klicken Sie auf `Weiter`{.action}. Die folgende Bestätigungsmeldung wird angezeigt:
-
-![BDD-Kopierbestätigungsnachricht](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/copy-db-tool-step-2.png){.thumbnail}
-
-Wenn Sie die ausgewählte Zieldatenbank nicht überschreiben möchten, klicken Sie auf `Zurück`{.action}, um Ihre Auswahl zu ändern, oder auf `Abbrechen`{.action}, um den Vorgang abzubrechen. Klicken Sie andernfalls auf `Bestätigen`{.action}, um den Inhalt der Quelldatenbank in die Zieldatenbank zu duplizieren.
-
-Der Kopiervorgang kann einige Minuten dauern. Um den Status zu überprüfen, öffnen Sie den Tab `Aktuelle Tasks`{.action}. In der Tabelle wird eine Zeile für das Kopieren mit dem Status „Geplant“ angezeigt. Wenn der Vorgang abgeschlossen ist, wird die Zeile gelöscht.
-
-![Aktuelle Tasks](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/copy-db-tool-ongoing-tasks.png){.thumbnail}
+///
+<!-- CP-STEPS-END:copy-from-wcdb -->
 
 ### Konfiguration Ihrer Website mit einer neuen Datenbank
 
@@ -178,14 +200,16 @@ Für weitere Informationen oder wenn Sie ein anderes CMS verwenden, lesen Sie un
 
 > [!primary]
 >
-> Die Duplikaton Ihrer Datenbank ist keine Migration. Die Quelldatenbank bleibt bestehen, bis Sie sie löschen. Sie können also Ihre Website weiterhin mit der alten Datenbank betreiben.
+> Die Duplikation Ihrer Datenbank ist keine Migration. Die Quelldatenbank bleibt bestehen, bis Sie sie löschen. Sie können also Ihre Website weiterhin mit der alten Datenbank betreiben.
 >
 
 ### Fehlerbehebung
 
 Beim Kopieren des Datenbankinhalts können Probleme auftreten.
 
-#### In der Liste werden keine Datenbanken angezeigt
+**Klicken Sie auf die passende Situation, um den Inhalt anzuzeigen.**
+
+/// details | In der Liste werden keine Datenbanken angezeigt
 
 Dies bedeutet, dass nur eine Datenbank aktiv ist. Zum Kopieren der Quelldatenbank ist auch eine aktive Zieldatenbank erforderlich. Sie haben mehrere Möglichkeiten:
 
@@ -193,22 +217,30 @@ Dies bedeutet, dass nur eine Datenbank aktiv ist. Zum Kopieren der Quelldatenban
 - Konfigurieren Sie eine neue Datenbank auf Ihrem [Web Cloud Databases](/links/web/databases) Server.
 - Bestellen Sie eine neue Datenbank innerhalb der Angebote [Start SQL](/links/web/hosting-options-startsql) oder [Web Cloud Databases](/links/web/databases).
 
-#### Es wird bereits eine Aktion ausgeführt
+///
+
+/// details | Es wird bereits eine Aktion ausgeführt
 
 Diese Meldung bedeutet, dass bereits ein Task für die Datenbank ausgeführt wird. Gehen Sie auf den Tab `Aktuelle Tasks`{.action} zum Überprüfen laufender Operationen. Ist das der Fall, warten Sie, bis der Vorgang abgeschlossen ist, und starten Sie dann ggf. die Duplikation neu.
 
-#### Die Zieldatenbank enthält nicht genügend Speicherplatz
+///
+
+/// details | Die Zieldatenbank enthält nicht genügend Speicherplatz
 
 Ihre Zieldatenbank enthält nicht genügend Speicherplatz. Sie haben zwei Möglichkeiten:
 
 - Eine neue Datenbank des Typs [Start SQL](/links/web/hosting-options-startsql) mit mehr Speicherplatz bestellen.
 - Wenn Sie bereits über einen [Web Cloud Databases](/links/web/databases) Server verfügen, wechseln Sie zu einem Angebot mit mehr Speicherplatz.
 
-#### Quell- und Zieldatenbank sind nicht kompatibel
+///
+
+/// details | Quell- und Zieldatenbank sind nicht kompatibel
 
 Diese Benachrichtigung bedeutet, dass das **D**ata**b**ase **M**anagement **S**ystem (**DBMS**) Ihrer Quelldatenbank nicht mit dem DBMS Ihrer Zieldatenbank übereinstimmt.
 
 Dieser Fehler kann beispielsweise auftreten, wenn Sie MySQL für die Quelldatenbank und PostgreSQL für die Zieldatenbank verwenden.
+
+///
 
 ## Weiterführende Informationen
 

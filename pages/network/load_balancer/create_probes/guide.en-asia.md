@@ -37,8 +37,17 @@ Probes are health checks. They periodically query each of your servers to ensure
 ## Requirements
 
 - Have an [OVHcloud Load Balancer](/links/network/load-balancer) offer in your OVHcloud account. The service must be properly configured, with farms and servers set up.
-- Be logged in to your [OVHcloud Control Panel](/links/manager).
 
+<!-- CP-NAV-START:network-load-balancer -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Load Balancer](/links/control-panel/network-load-balancer)
+- **Navigation path:** `Network`{.action} > `Load Balancer`{.action} > Select your service
+
+---
+<!-- CP-NAV-END:network-load-balancer -->
 ## Instructions
 
 **Table of contents**

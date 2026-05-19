@@ -1,7 +1,7 @@
 ---
-title: Créer et configurer un disque supplementaire sur une instance
-excerpt: Découvrez comment attacher un nouveau volume à votre instance Public Cloud
-updated: 2025-09-19
+title: Créer et configurer un disque supplémentaire sur une instance
+excerpt: "Découvrez comment créer un volume Block Storage supplémentaire, l'attacher à votre instance Public Cloud et le configurer sous Linux ou Windows"
+updated: 2026-05-05
 ---
 
 <style>
@@ -26,7 +26,7 @@ Cela peut être utile dans les cas suivants :
 - Si vous souhaitez augmenter votre capacité de stockage sans avoir à changer le modèle d’instance.
 - Si vous souhaitez disposer d’un espace de stockage hautement disponible et performant.
 - Si vous souhaitez déplacer votre stockage et vos données vers une autre instance.
-- Si vous souhaitez préparer l'environnement pour utiliser [Terraform](/pages/public_cloud/public_cloud_cross_functional/how_to_use_terraform), vous devez préparer l'environnement.
+- Si vous souhaitez utiliser [Terraform](/pages/public_cloud/public_cloud_cross_functional/how_to_use_terraform), préparez l'environnement.
 
 **Découvrez comment créer un disque supplémentaire et le configurer sur votre instance.**
 
@@ -70,25 +70,28 @@ Dans les régions 3AZ, les volumes Classic sont des services régionaux qui util
 
 ///
 
-/// details | **High-Speed – Jusqu’à 3000 IOPS**
+/// details | **High Speed Gen2 – 30 IOPS/Go et jusqu’à 20 000 IOPS**
 
-Le volume High-Speed est conçu pour des applications nécessitant un accès plus rapide aux données. Avec une performance pouvant atteindre 3000 IOPS, il convient parfaitement aux cas d’usage suivants :
+La génération 2 des volumes High Speed est optimisée pour les workloads les plus exigeants. Les performances s’adaptent à la taille du volume :
 
-- Bases de données transactionnelles (MySQL, PostgreSQL, etc.)
-- Environnements de virtualisation et de conteneurs
-- Applications nécessitant une latence réduite et un débit élevé
+- **IOPS** : 30 IOPS/Go (base 3 000 IOPS pour 10–100 Go, jusqu’à 20 000 IOPS)
+- **Débit** : 0,5 Mo/s/Go (base 50 Mo/s pour 10–100 Go, jusqu’à 512 Mo/s)
+- **Taille maximale** : 12 To
 
-///
-
-/// details | **High-Speed Gen2 – 30 IOPS/GB et jusqu’à 20 000 IOPS**
-
-La génération 2 des volumes High-Speed est optimisée pour les workloads les plus exigeants. Avec une performance de 30 IOPS/GB, pouvant atteindre 20 000 IOPS, ce type de volume est recommandé pour les usages suivants :
+Ce type de volume est recommandé pour les usages suivants :
 
 - Big Data et analyses en temps réel
 - Intelligence artificielle et Machine Learning
 - Traitement de grandes bases de données et stockage haute performance
 
 ///
+
+> [!primary]
+>
+> **Vous ne pouvez plus commander de volumes High Speed (Gen1) depuis l’espace client OVHcloud.** Ils ont été remplacés par les volumes High Speed Gen2 au même tarif, avec de meilleures performances pour les volumes de plus de 100 Go. Les volumes High Speed restent disponibles via l’API, Terraform et OpenStack.
+>
+> Les volumes High Speed existants restent pris en charge. Vous pouvez également [modifier le type de votre volume Block Storage](/pages/public_cloud/compute/switch_volume_type) pour les migrer vers le type High Speed Gen2.
+>
 
 ![volumes_types](images/volume-types.png){.thumbnail}
 
@@ -101,13 +104,13 @@ La génération 2 des volumes High-Speed est optimisée pour les workloads les p
 
 > [!tabs]
 > **Via l'espace client OVHcloud**
->> Ouvrez `Block Storage`{.action} dans le menu de gauche sous **Storage & Backup**.
+>> Ouvrez `Block Storage`{.action} dans le menu de gauche sous **Storage & backup**.
 >>
 >> Dans cette partie, cliquez sur le bouton `Créer un volume`{.action}.
 >>
 >> ![sélectionner le projet](images/avolume01.png){.thumbnail}
 >>
->> Suivez les étapes de configuration afin de sélectionner les options d'emplacement, de type de disque, de chiffrement et de capacité de disque. Renseignez un nom pour le volume et validez en cliquant sur `Créer le volume`{.action}.
+>> Sélectionnez l'emplacement, le type, le chiffrement et la capacité. Renseignez un nom et cliquez sur `Créer le volume`{.action}.
 >>
 >> > [!warning]
 >> >
@@ -116,19 +119,19 @@ La génération 2 des volumes High-Speed est optimisée pour les workloads les p
 >>
 >> ![create disk](images/avolume02.png){.thumbnail}
 >>
->> Le nouveau disque s’affichera alors dans l’espace client.
+>> Le disque apparaît dans l’espace client.
 >>
 >> ![configure disk](images/avolume03.png){.thumbnail}
 >>
->> À droite du volume, cliquez sur le bouton `...`{.action} puis sélectionnez `Attacher à l'instance`{.action}.
+>> Cliquez sur `...`{.action} à côté du volume, puis sélectionnez `Attacher à l'instance`{.action}.
 >>
 >> ![attach disk 01](images/avolume04.png){.thumbnail}
 >>
->> Dans la fenêtre qui apparaît, choisissez une instance dans la liste et cliquez sur `Confirmer`{.action} pour attacher le disque.
+>> Choisissez une instance et cliquez sur `Confirmer`{.action}.
 >>
 >> ![attach disk 02](images/avolume05.png){.thumbnail}
 >>
->> Le processus d’attachement du disque à votre instance va alors commencer. L'opération peut prendre quelques minutes.
+>> L’attachement commence. L’opération peut prendre quelques minutes.
 >>
 >> > [!warning]
 >> > Veillez à ne pas quitter la page actuelle de votre espace client OVHcloud lorsque le disque est en cours de connexion. Cela pourrait interrompre le processus.
@@ -137,7 +140,7 @@ La génération 2 des volumes High-Speed est optimisée pour les workloads les p
 > **Via Terraform**
 >> > [!warning]
 >> > 
->> > Veuillez noter que les types de volume « high-speed-gen2 » ou « luks » peuvent ne pas être disponibles dans toutes les régions.
+>> > Veuillez noter que les types de volume `high-speed-gen2` ou `luks` peuvent ne pas être disponibles dans toutes les régions.
 >> >
 >>
 >> Types de volumes :
@@ -192,7 +195,7 @@ La génération 2 des volumes High-Speed est optimisée pour les workloads les p
 >> }
 >> ```
 >>
->> Vous pouvez créer votre volume de type block storage et l'attacher à l'instance voulue en entrant la commande suivante : 
+>> Créez et attachez le volume avec la commande suivante :
 >>
 >> ```console
 >> terraform apply
@@ -255,7 +258,7 @@ La génération 2 des volumes High-Speed est optimisée pour les workloads les p
 >>
 >> > [!warning]
 >> >
->> > Veuillez noter que si le type de volume « high-speed-gen2 » ou « luks » n'apparaît pas dans la liste, cela signifie qu'il n'est pas disponible dans cette région.
+>> > Veuillez noter que si le type de volume `high-speed-gen2` ou `luks` n'apparaît pas dans la liste, cela signifie qu'il n'est pas disponible dans cette région.
 >> >
 >>
 >> ![create volume block storage 02](images/horizon_create_volume_02.png){.thumbnail width="1000"}
@@ -264,14 +267,14 @@ La génération 2 des volumes High-Speed est optimisée pour les workloads les p
 >>
 >> ![Attach a block storage volume to an instance](images/horizon_manage_attachments.png){.thumbnail}
 >>
->> Selectionnez l'instance à laquelle vous souhaitez attacher votre volume, puis cliquez sur `Attach Volume`{.action}.
+>> Sélectionnez l'instance à laquelle vous souhaitez attacher votre volume, puis cliquez sur `Attach Volume`{.action}.
 >>
 >> ![Attach a block storage volume to an instance 02](images/horizon_manage_attachments_display.png){.thumbnail}
 >>
 > **Via la CLI OpenStack**
 >> > [!warning]
 >> >
->> > Veuillez noter que si le type de volume « high-speed-gen2 » ou « luks » n'apparaît pas dans la liste, cela signifie qu'il n'est pas disponible dans cette région.
+>> > Veuillez noter que si le type de volume `high-speed-gen2` ou `luks` n'apparaît pas dans la liste, cela signifie qu'il n'est pas disponible dans cette région.
 >> >
 >>
 >> Types de volumes :
@@ -320,6 +323,37 @@ La génération 2 des volumes High-Speed est optimisée pour les workloads les p
 >> +-----------+-------------------------------------+
 >> ```
 >>
+> **Via la CLI OVHcloud**
+>> > [!warning]
+>> >
+>> > Si le type de volume `high-speed-gen2` ou `luks` n'apparaît pas dans la liste, il n'est pas disponible dans cette région.
+>> >
+>>
+>> | Option | Description |
+>> |--------|-------------|
+>> | `<region>` | Région dans laquelle le volume sera créé (ex. : `GRA11`) |
+>> | `--name` | Nom du volume |
+>> | `--size` | Taille du volume en GB |
+>> | `--type` | Type de volume : `classic`, `high-speed`, `high-speed-gen2`, ou la variante `-luks` correspondante |
+>> | `--wait` | Attend la fin de la création avant de quitter |
+>>
+>> Créez un volume en spécifiant la région, un nom, la taille en GB et un type :
+>>
+>> ```bash
+>> ovhcloud cloud storage-block create <region> --name <volume-name> --size <size-in-GB> --type <volume-type> --wait
+>> ```
+>>
+>> Une fois le volume créé, attachez-le à une instance :
+>>
+>> | Paramètre | Description |
+>> |-----------|-------------|
+>> | `<volume_id>` | ID du volume à attacher |
+>> | `<instance_id>` | ID de l'instance à laquelle attacher le volume |
+>>
+>> ```bash
+>> ovhcloud cloud storage-block attach <volume_id> <instance_id>
+>> ```
+>>
 
 ### Configuration du nouveau disque
 
@@ -345,7 +379,7 @@ vdb 254:16 0 10G 0 disk
 > Dans cet exemple, `vda` fait référence au disque par défaut de l'instance. Le disque additionnel sera alors nommé `vdb`.
 >
 
-Créez une partition sur le disque supplémentaire via les commandes ci-dessous.
+Créez une partition sur le disque supplémentaire :
 
 Si votre disque additionnel est inférieur à 2TB:
 
@@ -416,7 +450,7 @@ Ignore/Cancel? I
 (parted) quit
 ```
 
-Formatez ensuite la nouvelle partition `vdb1` à l’aide de la commande ci-dessous :
+Formatez la nouvelle partition `vdb1` :
 
 ```bash
 sudo mkfs.ext4 /dev/vdb1
@@ -435,14 +469,14 @@ Creating journal (32768 blocks): done
 Writing superblocks and filesystem accounting information: done
 ```
 
-Montez la partition avec les commandes suivantes :
+Montez la partition :
 
 ```bash
 sudo mkdir /mnt/disk
 sudo mount /dev/vdb1 /mnt/disk/
 ```
 
-Enfin, vérifiez le point de montage à l’aide de cette commande :
+Vérifiez le point de montage :
 
 ```bash
 df -h
@@ -461,10 +495,10 @@ tmpfs 982M 0 982M 0% /sys/fs/cgroup
 
 > [!primary]
 >
-> Le montage n'est pas persistant car le disque sera détaché au redémarrage de l'instance. Afin d'automatiser le montage, il est nécessaire d'éditer le fichier `fstab`.
+> Le montage n'est pas persistant : le disque sera détaché au redémarrage. Pour automatiser le montage, éditez le fichier `fstab`.
 >
 
-Récupérez tout d'abord l'UUID (block ID) du nouveau volume :
+Récupérez l'UUID du nouveau volume :
 
 ```bash
 sudo blkid
@@ -475,19 +509,19 @@ sudo blkid
 /dev/vdb1: UUID="2e4a9012-bf0e-41ef-bf9a-fbf350803ac5" TYPE="ext4" PARTUUID="95c4adcc-01"
 ```
 
-Ouvrez `/etc/fstab` avec un éditeur de texte :
+Ouvrez `/etc/fstab` :
 
 ```bash
 sudo nano /etc/fstab
 ```
 
-Ajoutez la ligne ci-dessous au fichier et remplacez l'UUID par le vôtre :
+Ajoutez cette ligne en remplaçant l'UUID par le vôtre :
 
 ```console
 UUID=2e4a9012-bf0e-41ef-bf9a-fbf350803ac5 /mnt/disk ext4 nofail 0 0
 ```
 
-Enregistrez et quittez l'éditeur. Le disque devrait alors être automatiquement monté à chaque redémarrage.
+Enregistrez et quittez. Le disque est automatiquement monté à chaque redémarrage.
 
 #### Sous Windows
 
@@ -497,11 +531,11 @@ Une fois connecté, faites un clic-droit sur le bouton `Démarrer`{.action} et o
 
 ![disk management](images/start-menu.png){.thumbnail}
 
-Le nouveau disque sera affiché en tant que volume inconnu avec de l'espace non alloué.
+Le disque apparaît en tant que volume inconnu avec de l'espace non alloué.
 
 ![volume inconnu](images/disk-management-01.png){.thumbnail}
 
-Si le disque est indiqué ici comme étant hors-ligne, il doit d'abord être initialisé. Pour ce faire, vous pouvez utiliser l'[interface utilisateur Windows](#initDiskManagement) ou l'[utilitaire DISKPART](#initDiskpart). Sinon, procédez au [formatage du disque dans Gestion des disques](#formatDiskManagement).
+S'il est hors-ligne, initialisez-le via l'[interface utilisateur Windows](#initDiskManagement) ou l'[utilitaire DISKPART](#initDiskpart). Sinon, passez au [formatage](#formatDiskManagement).
 
 ##### **Initialiser le disque dans Gestion des disques** <a name="initDiskManagement"></a>
 
@@ -517,7 +551,7 @@ Effectuez à nouveau un clic-droit et sélectionnez cette fois-ci `Initialiser l
 
 Ensuite, sélectionnez `MBR`{.action} si votre disque additionnel est inférieur à 2TB, ou `GPT`{.action} s'il est supérieur à 2TB, puis cliquez sur `OK`{.action}.
 
-![Alt text](images/initialize_disk.png){.thumbnail}
+![initialiser le disque](images/initialize_disk.png){.thumbnail}
 
 ##### **Initialiser le disque avec DISKPART** <a name="initDiskpart"></a>
 
@@ -535,7 +569,7 @@ Tapez `cmd` et cliquez sur `OK`{.action} pour ouvrir l'application de ligne de c
 C:\> diskpart
 ```
 
-Utilisez la série de commandes DISKPART suivante pour mettre le disque `en ligne` :
+Exécutez ces commandes DISKPART pour mettre le disque en ligne :
 
 ```console
 DISKPART> san
@@ -583,39 +617,39 @@ Dans l'outil `Gestion des disques`{.action}, faites un clic droit sur le nouveau
 
 ![format disk](images/format-disk-01.png){.thumbnail}
 
-Dans l'assistant, cliquez sur `Suivant`{.action} pour spécifier la taille du volume. Par défaut, il doit être au maximum. Cliquez sur `Suivant`{.action} pour continuer.
+Dans l'assistant, cliquez sur `Suivant`{.action} pour confirmer la taille du volume (maximum par défaut), puis à nouveau sur `Suivant`{.action}.
 
 ![format disk](images/format-disk-03.png){.thumbnail}
 
-Laissez la nouvelle lettre de lecteur par défaut ou sélectionnez-en une autre, puis cliquez sur `Suivant`{.action}.
+Acceptez la lettre de lecteur ou sélectionnez-en une autre, puis cliquez sur `Suivant`{.action}.
 
 ![format disk](images/format-disk-04.png){.thumbnail}
 
-Nommez le volume (facultatif) et confirmez les options de formatage en cliquant sur `Suivant`{.action}.
+Nommez le volume (facultatif) et cliquez sur `Suivant`{.action}.
 
 ![format disk](images/format-disk-05.png){.thumbnail}
 
-Dans la dernière fenêtre, cliquez sur `Terminer`{.action} pour formater le disque.
+Cliquez sur `Terminer`{.action} pour formater le disque.
 
 ![format disk](images/format-disk-06.png){.thumbnail}
 
-Le disque sera par la suite disponible en tant que lecteur dans l'explorateur de fichiers.
+Le disque est disponible dans l'explorateur de fichiers.
 
 ### Détacher un volume
 
-Si vous souhaitez détacher un volume de votre instance, la meilleure pratique est de démonter le volume du système d'exploitation avant de le détacher de l'instance.
+Avant de détacher un volume, démontez-le du système d'exploitation.
 
 > [!warning]
 >
 > Un message d'erreur peut s'afficher si des logiciels ou processus sont en cours d'exécution sur le disque supplémentaire. Dans ce cas, il est recommandé d'arrêter tous les processus avant de continuer.
 >
 
-Voici comment **démonter le volume** du système d'exploitation avant de le détacher de l'instance :
+**Démontez le volume** du système d'exploitation avant de le détacher de l'instance :
 
 > [!tabs]
 > **Sous Linux**
 >>
->> Ouvrez une [connexion SSH à votre instance](/pages/public_cloud/compute/public-cloud-first-steps#create-instance) puis utilisez la commande ci-dessous pour lister les disques attachés.
+>> Ouvrez une [connexion SSH](/pages/public_cloud/compute/public-cloud-first-steps#connect-instance) et listez les disques attachés :
 >>
 >> ```bash
 >> lsblk
@@ -629,13 +663,13 @@ Voici comment **démonter le volume** du système d'exploitation avant de le dé
 >> └─vdb1    8:1    0   10G  0 part /mnt/disk
 >> ```
 >>
->> Démontez la partition en utilisant la commande ci-dessous :
+>> Démontez la partition :
 >>
 >> ```bash
 >> sudo umount /dev/vdb1
 >> ```
 >>
->> Supprimez l'ID de périphérique du fstab pour terminer le processus de démontage. Si ce n'est pas fait, la partition sera remontée après un redémarrage.
+>> Supprimez l'entrée du fstab ; sinon la partition sera remontée après redémarrage.
 >>
 >> ```bash
 >> sudo nano /etc/fstab
@@ -647,7 +681,7 @@ Voici comment **démonter le volume** du système d'exploitation avant de le dé
 >>
 >> Établissez une connexion RDP (Remote Desktop) avec votre instance Windows.
 >>
->> Une fois connecté faites un clic-droit sur le menu `Démarrer`{.action} et ouvrez `Gestion du disque`{.action}.
+>> Une fois connecté, faites un clic-droit sur le menu `Démarrer`{.action} et ouvrez `Gestion des disques`{.action}.
 >>
 >> ![gestion des disques](images/start-menu.png){.thumbnail}
 >>
@@ -669,18 +703,20 @@ Pour finir, nous allons détacher le volume de l'instance :
 
 > [!tabs]
 > **Via l'espace client OVHcloud**
->> Rendez-vous dans la rubrique `Public Cloud`{.action} de votre espace client OVHcloud et cliquez sur `Block Storage`{.action} dans le menu de gauche sous **Storage & Backup**.
+>>
+>> Ouvrez `Block Storage`{.action} dans le menu de gauche sous **Storage & backup**.
+>>
 >> Cliquez sur le bouton `...`{.action} à côté du volume correspondant et sélectionnez `Détacher de l'instance`{.action}.
 >>
 >> ![detach disk](images/detachinstance.png){.thumbnail}
 >>
->> Cliquez sur `Confirmer`{.action} dans la fenêtre qui s'affiche pour lancer le processus.
+>> Cliquez sur `Confirmer`{.action}.
 >>
 >> ![confirm disk detach](images/confirminstancedetach.png){.thumbnail}
 >>
 > **Via Terraform**
 >> 
->> Commencez par supprimer ces lignes précédemment crées dans votre fichier Terraform : 
+>> Supprimez ces lignes de votre fichier Terraform :
 >>
 >> ```python
 >> # Attacher le volume à l'instance
@@ -690,7 +726,7 @@ Pour finir, nous allons détacher le volume de l'instance :
 >> }
 >> ```
 >>
->> Veuillez entrer la commande suivante pour vérifier si la ressource correcte va être supprimée :
+>> Exécutez cette commande pour vérifier que la ressource correcte va être supprimée :
 >>
 >> ```console
 >> terraform plan
@@ -721,7 +757,7 @@ Pour finir, nous allons détacher le volume de l'instance :
 >> Plan: 0 to add, 0 to change, 1 to destroy.
 >> ```
 >>
->> Puis appliquer les changements en entrant cette commande :
+>> Appliquez les changements :
 >>
 >> ```console
 >> terraform apply
@@ -763,6 +799,18 @@ Pour finir, nous allons détacher le volume de l'instance :
 >>
 >> Apply complete! Resources: 0 added, 0 changed, 1 destroyed.
 >> ```
+>>
+> **Via la CLI OVHcloud**
+>>
+>> | Paramètre | Description |
+>> |-----------|-------------|
+>> | `<volume_id>` | ID du volume à détacher |
+>> | `<instance_id>` | ID de l'instance de laquelle détacher le volume |
+>>
+>> ```bash
+>> ovhcloud cloud storage-block detach <volume_id> <instance_id>
+>> ```
+>>
 
 ## Aller plus loin
 

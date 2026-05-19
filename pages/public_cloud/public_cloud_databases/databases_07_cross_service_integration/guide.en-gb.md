@@ -77,6 +77,7 @@ Other integrations:
 
 #### Store yours logs or metrics
 
+<!-- CP-STEPS-START:store-logs-metrics-cp -->
 Click on `Databases`{.action} in the left-hand navigation bar, select your engine instance and open the `Service integration`{.action} tab.
 
 Click on `Add an integration`{.action}:
@@ -105,8 +106,11 @@ Your first integration is ready:
 > Don't delete them.
 >
 
+<!-- CP-STEPS-END:store-logs-metrics-cp -->
+
 #### Allow metrics visualization into Dashboards service
 
+<!-- CP-STEPS-START:allow-metrics-visualization-dashboards-cp -->
 Go to the `Service integration`{.action} tab of your `Destination service` service and click on `Add an integration`{.action}
 
 ![Service integration](images/databases_07_cross_service_integration_list_add.png){.thumbnail}
@@ -131,6 +135,8 @@ Connect to your Dashboards instance and browse the dashboards:
 Then open your new dashboard:
 
 ![PostgreSQL Dashboard](images/databases_07_cross_service_integration-20220708184410774.png){.thumbnail}
+
+<!-- CP-STEPS-END:allow-metrics-visualization-dashboards-cp -->
 
 ### Using API
 

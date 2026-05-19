@@ -26,16 +26,6 @@ Zdarza się to również w wyniku aktualizacji przeprowadzonej **automatycznie**
 - Posiadanie [hostingu](/links/web/hosting)
 - Aktualizacja w [płatności](/pages/account_and_service_management/managing_billing_payments_and_services/invoice_management#pay-bills) i [odnowienie](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#renewal-management) powiązanych usług (domena i hosting)
 
-<!-- CP-NAV-START:web-hosting -->
----
-
-### Dostęp do Panelu klienta OVHcloud
-
-- **Link bezpośredni:** [Hosting plans](/links/control-panel/web-hosting)
-- **Ścieżka nawigacji:** `Web Cloud`{.action} > `Hosting`{.action} > Wybierz hosting WWW
-
----
-<!-- CP-NAV-END:web-hosting -->
 
 ## W praktyce
 

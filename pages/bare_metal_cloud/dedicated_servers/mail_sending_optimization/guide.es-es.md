@@ -1,7 +1,7 @@
 ---
-title: Cómo evitar que sus correos electrónicos sean marcados como spam
-excerpt: "Aprenda a aplicar las buenas prácticas de envío de correo electrónico para limitar el riesgo de bloqueo de los mensajes legítimos mediante la protección contra el spam"
-updated: 2024-01-24
+title: "Optimizar el envío de e-mails en un servidor dedicado"
+excerpt: "Aplique las buenas prácticas de envío de e-mails en su servidor dedicado para evitar que sus mensajes legítimos sean marcados como spam"
+updated: 2026-05-06
 ---
 
 > [!primary]
@@ -114,6 +114,13 @@ Para más información, [solicite ayuda](https://support.microsoft.com/en-us/get
 #### Desde el servidor de Gmail
 
 La adición de registros específicos, como un registro de Domain-based Message Authentication, Reporting, and Conformance (DMARC) o DKIM (DomainKeys Identified Mail), puede facilitar la recepción de mensajes de correo electrónico si el destinatario está en Gmail. Consulte nuestras guías [en la parte inferior de esta página](#go-further) para configurarlas.
+
+### Puerto SMTP bloqueado (puerto 25)
+
+Si sus e-mails no se envían o el servidor SMTP no responde, un puerto bloqueado es una causa frecuente. Por defecto, el **puerto 25** saliente está bloqueado en la infraestructura de OVHcloud (servidores dedicados, VPS, instancias Public Cloud) para prevenir el abuso de spam. Para resolver este problema:
+
+- Utilice el **puerto 587** (STARTTLS) para el envío de e-mails salientes.
+- Si su caso de uso requiere el puerto 25, solicite su desbloqueo [contactando con nuestro soporte](/links/support-contact).
 
 ### Revisa su información
 

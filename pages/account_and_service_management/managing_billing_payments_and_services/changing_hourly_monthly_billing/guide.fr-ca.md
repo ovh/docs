@@ -40,7 +40,7 @@ Lors de la création d’une instance Public Cloud, vous pouvez choisir entre un
 
 ## En pratique
 
-### Depuis l'espace client OVHcloud
+### Depuis l’espace client OVHcloud
 
 > [!warning]
 > La procédure suivante ne fonctionne pas pour les instances de troisième génération (exemple : B3-32). Pour être facturé mensuellement pour ce type d’instance, vous devez créer un [Savings Plan](/pages/public_cloud/public_cloud_cross_functional/savings_plans) pour ce modèle d’instance.

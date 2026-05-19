@@ -1,6 +1,6 @@
 ---
-title: "Manage your server reboot with the OVHcloud Link Aggregation feature"
-excerpt: "Find out how to reboot your OVHcloud servers, working through your active private aggregation"
+title: "Manage Dedicated Server Reboot with Link Aggregation"
+excerpt: "Reboot your OVHcloud dedicated server over a fully private network using the OVHcloud Link Aggregation feature."
 updated: 2026-01-27
 ---
 
@@ -91,11 +91,13 @@ Here is a (logical) Netboot boot schema:
 <!-- CP-NAV-END:baremetal-dedicated-servers -->
 
 
+<!-- CP-STEPS-START:check-ola-eligibility -->
 > Select your server and check that it is eligible for `OLA: OVHcloud Link Aggregation` in the `Network interfaces`{.action} tab.
 >
-> ![OLA1](images/Scr_OLA1.png){.thumbnail}
+> ![OLA eligibility check in network interfaces tab](images/Scr_OLA1.png){.thumbnail}
 >
-> ![OLA2](images/Scr_OLA2.png){.thumbnail}
+> ![OLA Link Aggregation configuration details](images/Scr_OLA2.png){.thumbnail}
+<!-- CP-STEPS-END:check-ola-eligibility -->
 
 ## Instructions
 
@@ -107,7 +109,7 @@ Here is a (logical) Netboot boot schema:
 
 Below is an example of a basic private infrastructure (layer 2 diagram):
 
-![Schema](images/schema_basic_en.png)
+![Layer 2 diagram of basic private infrastructure](images/schema_basic_en.png)
 
 **Example:**
 
@@ -340,5 +342,9 @@ It is strongly recommended that you use an NTP service, especially if your infra
 [Understanding and customising your rEFInd service](https://en.wikipedia.org/wiki/REFInd)<br>
 [Discovering and understanding NTP](https://en.wikipedia.org/wiki/Network_Time_Protocol)<br>
 [Discovering and understanding Dnsmasq](https://wiki.debian.org/dnsmasq)<br>
+
+[Understanding the Dedicated Server boot process](/pages/bare_metal_cloud/dedicated_servers/boot-process)
+
+[Custom iPXE Boot Script for Dedicated Servers](/pages/bare_metal_cloud/dedicated_servers/ipxe-scripts)
 
 Join our [community of users](/links/community).

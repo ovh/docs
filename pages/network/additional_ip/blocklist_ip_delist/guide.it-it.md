@@ -40,6 +40,17 @@ La *blocklist* (o lista di blocco) è uno strumento di lotta contro lo spam util
 
 - I tuoi servizi non sono attualmente interessati da una procedura di segnalazione di abusi.
 
+
+<!-- CP-NAV-START:network-public-ip -->
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [Public IP](/links/control-panel/network-public-ip)
+- **Percorso di navigazione:** `Network`{.action} > `Indirizzi IP pubblici`{.action}
+
+---
+<!-- CP-NAV-END:network-public-ip -->
 ## Procedura
 
 ### Provider supportati
@@ -146,10 +157,10 @@ Il ritiro dalla lista dovrebbe richiedere tra i 20 e i 30 minuti.
 
 /// details | Maggiori informazioni...
 
-Per [rimuovere un IP da MIPSpace](https://www.mipspace.com/removal.php), accedi prima allo [Spazio Cliente OVHcloud](/links/manager) e assicurati che le informazioni riportate di seguito siano aggiornate:
+Per [rimuovere un IP da MIPSpace](https://www.mipspace.com/removal.php), assicurati che le informazioni riportate di seguito siano aggiornate:
 
 - [Risoluzione reverse DNS](/pages/bare_metal_cloud/virtual_private_servers/configuring-reverse-dns) (campo PTR).
-- I dettagli dell’organizzazione (*RWhois*) nella sezione `Network`{.action}: Apri `IP`{.action} e clicca sul pulsante `Ingranaggio`{.action} a destra. Seleziona `Gestisci le mie organizzazioni`{.action} nel menu a tendina.
+- I dettagli dell’organizzazione (*RWhois*): nella sezione [Indirizzi IP pubblici](/links/control-panel/network-public-ip) del tuo Spazio Cliente OVHcloud, accedi alla scheda `Gestisci le mie organizzazioni`{.action}.
 
 ///
 

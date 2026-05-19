@@ -31,8 +31,8 @@ Ce guide vous explique comment créer et gérer des utilisateurs API.
 
 Un utilisateur SMS API peut être utile pour plusieurs raisons :
 
-- Il permet au propriétaire du compte SMS de sécuriser ses accès lors d'un envoi de SMS via une API externe.
-En effet, le script appelant ne connaît que l'identifiant de l'utilisateur et son mot de passe, et non la session de l'identifiant client du propriétaire.
+- Il permet au propriétaire du compte SMS de sécuriser ses accès lors d’un envoi de SMS via une API externe.
+En effet, le script appelant ne connaît que l’identifiant de l’utilisateur et son mot de passe, et non la session de l’identifiant client du propriétaire.
 
 - La création de plusieurs utilisateurs API peut être utile dans une entreprise, notamment pour une meilleure traçabilité.
 Un utilisateur API qui envoie des SMS de manière abusive peut de suite être décelé par le propriétaire du compte.
@@ -44,7 +44,7 @@ Afin de gérer au mieux le crédit de votre compte SMS, vous pouvez fixer une li
 
 - Le **quota** est la quantité de crédits SMS disponibles pour l’utilisateur API.
 
-- La **limite** correspond au seuil minimum de crédits SMS qu'un utilisateur API doit avoir avant de recevoir une alerte pour recharger ou non le solde de ces crédits.
+- La **limite** correspond au seuil minimum de crédits SMS qu’un utilisateur API doit avoir avant de recevoir une alerte pour recharger ou non le solde de ces crédits.
 
 ### Étape 1 : Créer un utilisateur API
 
@@ -56,7 +56,7 @@ La définition du nom de l'utilisateur API est libre. Le mot de passe d'un utili
 
 ### Étape 2 : Attribuer un quota à un utilisateur API
 
-La gestion du quota s'effectue depuis l'onglet `Utilisateurs API`{.action}. En face de l'utilisateur choisi, cliquez sur les `...`{.action} puis sur `Quota`{.action}.
+La gestion du quota s’effectue depuis l’onglet `Utilisateurs API`{.action}. En face de l’utilisateur choisi, cliquez sur les `...`{.action} puis sur `Quota`{.action}.
 
 ![sms-users](images/smsusers03e-2021.png){.thumbnail}
 
@@ -69,24 +69,24 @@ Vous pourrez alors effectuer deux actions.
 
 > [!primary]
 >
-> L'affectation d'un quota à un utilisateur API va réduire d'autant le crédit total du compte SMS.
+> L’affectation d’un quota à un utilisateur API va réduire d’autant le crédit total du compte SMS.
 >
-> Exemple : un compte SMS dispose au total de 200 crédits. L'affectation de 150 crédits à un utilisateur API va défalquer 150 crédits du compte SMS qui ne disposera alors plus que de 50 crédits.
+> Exemple : un compte SMS dispose au total de 200 crédits. L’affectation de 150 crédits à un utilisateur API va défalquer 150 crédits du compte SMS qui ne disposera alors plus que de 50 crédits.
 >
 
 ### Étape 3 : Attribuer une limite à un utilisateur API
 
-La configuration d'une limite pour un utilisateur s'effectue depuis le même menu, en cliquant sur les `...`{.action} puis sur `Limite`{.action}.
+La configuration d’une limite pour un utilisateur s’effectue depuis le même menu, en cliquant sur les `...`{.action} puis sur `Limite`{.action}.
 
 Les paramètres suivants sont alors disponibles :
 
-- **Activer l’alerte ?** : permet d'activer l'alerte de limite.
+- **Activer l’alerte ?** : permet d’activer l’alerte de limite.
 - **Seuil d’alerte** : définit le niveau de crédits SMS restant à partir duquel la notification est envoyée.
 - **Notification** : permet de choisir le type de notification : e-mail (renseignez alors votre adresse e-mail), SMS (renseignez votre numéro au format international) ou les deux.
 
 > [!warning]
 >
-> L'envoi d'une notification par SMS sera déduit de votre crédit SMS.
+> L’envoi d’une notification par SMS sera déduit de votre crédit SMS.
 >
 
 ![sms-users](images/smsusers05-2021.png){.thumbnail}

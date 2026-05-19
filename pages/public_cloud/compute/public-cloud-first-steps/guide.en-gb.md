@@ -107,7 +107,9 @@ If you use an alternative software, refer to its user documentation. A usage exa
 
 ### Step 2: Import SSH keys
 
-You can store your public SSH keys in your Public Cloud project. This is not mandatory but makes the instance creation process more convenient.
+<!-- CP-STEPS-START:import-ssh-keys -->
+
+You can store your public SSH keys in the `Public Cloud`{.action} section of the [OVHcloud Control Panel](/links/manager). This is not mandatory but makes the instance creation process more convenient.
 
 > [!primary]
 >
@@ -187,6 +189,8 @@ You can store your public SSH keys in your Public Cloud project. This is not man
 >> Refer to the [Terraform guide for OVHcloud Public Cloud](/pages/public_cloud/public_cloud_cross_functional/how_to_use_terraform) for the initial provider setup.
 >>
 
+<!-- CP-STEPS-END:import-ssh-keys -->
+
 ### Step 3: Prepare the network configuration
 
 Before creating your instance, we recommend to consider the way the instance will be used in terms of networking.
@@ -216,8 +220,6 @@ Find out more on the [Local Zones web page](/links/public-cloud/local-zones).
 
 ///
 
-### Step 4: Create the instance
-
 > [!tabs]
 > **via the Control Panel**
 >>
@@ -237,11 +239,24 @@ Find out more on the [Local Zones web page](/links/public-cloud/local-zones).
 >>
 >> **4.3 Model**
 >>
->> Choose the instance model (flavor) suited to your use case. The `Discovery` type offers shared resources at reduced prices. `Metal Instances` provide dedicated physical resources.
+>> Open the `Instance Model` drop-down list and select the model type suited to your use case. The model (flavor) determines the resources allocated to your instance: processor, memory, and associated capabilities.
+>>
+>> | Type | Guaranteed Resources | Usage notes |
+>> | :--- | :---: | :--- |
+>> | Best Sellers | ✓ | Most popular models. |
+>> | General Purpose | ✓ | Development servers, web or business applications. |
+>> | Compute Optimized | ✓ | Video encoding or other high-performance computing. |
+>> | Memory Optimized | ✓ | Databases, analysis, and in-memory calculations. |
+>> | GPU | ✓ | Massively parallel processing power for specialised applications (rendering, big data, deep learning, etc.). |
+>> | Discovery | - | Shared resources for testing and development environments. |
+>> | Storage Optimized | ✓ | Optimised for disk data transfer. |
+>> | Metal Instances | ✓ | Dedicated resources with direct access to compute, storage and network resources. |
 >>
 >> > [!primary]
 >> >
->> > Check your quotas via `Quota & Regions`{.action} in the left navigation bar under **Settings**.
+>> > Your total Public Cloud resources will initially be limited. Check your quotas via `Quota & Regions`{.action} under **Settings** in the left navigation bar. See [the dedicated documentation](/pages/public_cloud/public_cloud_cross_functional/increasing_public_cloud_quota) for more information.
+>> >
+>> > You can **upgrade** your instance after creation to have more resources available. However, downgrading to a smaller model is not possible with a regular instance. See **step 4.9** for details.
 >>
 >> **4.4 Image**
 >>
@@ -406,6 +421,8 @@ Find out more on the [Local Zones web page](/links/public-cloud/local-zones).
 >> Refer to the [Terraform guide for OVHcloud Public Cloud](/pages/public_cloud/public_cloud_cross_functional/how_to_use_terraform) for the initial provider setup and authentication.
 >>
 
+<!-- CP-STEPS-END:create-instance -->
+
 ### Step 5: Connect to the instance
 
 The instructions in this part concern remote connections by means of the **OpenSSH** and **RDP** protocols through a public network (Internet).
@@ -421,6 +438,8 @@ Note that we provide alternative ways of access (mainly used for troubleshooting
 >
 
 #### 5.1: Verify the instance status in the OVHcloud Control Panel
+
+<!-- CP-STEPS-START:verify-instance-status -->
 
 Select `Instances`{.action} in the left-hand navigation bar under **Compute**. Your instance is ready when the status is set to `Enabled` in the table. If the instance was recently created and has a different status, click on the "Refresh" button located next to the search filter.
 
@@ -445,6 +464,8 @@ If your [SSH key pair is set up correctly](#step-1-create-an-ssh-key-set), you c
 >
 > This guide does not cover private networking for instances. Please consult our documentation on [Public Cloud Network Services](/products/public-cloud-network) regarding this topic. 
 >
+
+<!-- CP-STEPS-END:verify-instance-status -->
 
 #### 5.2: First login on an instance with a GNU/Linux OS installed
 
@@ -478,6 +499,8 @@ Continue with [Step 6 below](#step-6-first-steps-on-a-new-instance).
 
 ##### 5.3.1: Finish the installation of the Windows instance
 
+<!-- CP-STEPS-START:windows-vnc-setup -->
+
 After verifying that the Windows instance is [installed](#51-verify-the-instance-status-in-the-ovhcloud-control-panel), open the tab `VNC console`{.action} in your [OVHcloud Control Panel](/links/manager).
 
 You will then need to complete the initial setup of your Windows OS. Follow the steps below by navigating through the tabs:
@@ -499,6 +522,8 @@ You will then need to complete the initial setup of your Windows OS. Follow the 
 >>
 >> Enter the `Administrator` password you have created in the previous step and click on the `Arrow` button.
 >>
+
+<!-- CP-STEPS-END:windows-vnc-setup -->
 
 ##### 5.3.2: Log in remotely from Windows
 
@@ -537,6 +562,8 @@ The free and open-source software `Remmina Remote Desktop Client` is available f
 
 #### 5.4: VNC console access
 
+<!-- CP-STEPS-START:vnc-console-access -->
+
 The VNC console allows you to connect to your instances even when other means of access are not available.
 
 Select `Instances`{.action} in the left-hand navigation bar under **Compute**. Click on the instance name and open the tab `VNC console`{.action}.
@@ -550,6 +577,8 @@ Select `Instances`{.action} in the left-hand navigation bar under **Compute**. C
 >>
 >> Log in with your Windows credentials. If there is an active login session, you will have immediate access. There will be a noticeable latency compared to an RDP connection.
 >>
+
+<!-- CP-STEPS-END:vnc-console-access -->
 
 ### Step 6: First steps on a new instance
 

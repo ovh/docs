@@ -1,7 +1,7 @@
 ---
 title: Haute disponibilité et scénarios de panne de Public Cloud Databases pour PostgreSQL (EN)
 excerpt: Learn the concepts of high-availability for PostgreSQL offers
-updated: 2025-07-31
+updated: 2026-05-06
 ---
 
 ## Objective
@@ -15,7 +15,7 @@ Public Cloud Databases for PostgreSQL are available on three service plans, offe
 
 | Service plan        | Cluster topology                         | High Availability Features             | Backup retention |
 |---------------------|------------------------------------------|----------------------------------------|------------------|
-| Essential           | Single-node                              | No high availability                   | 2 days           |
+| Essential/Discovery | Single-node                              | No high availability                   | 2 days           |
 | Business/Production | Two nodes: Primary + replica             | Higher availability                    | 14 days          |
 | Enterprise/Advanced | Three nodes: One primary +  two replicas | Best high availability characteristics | 30 days          |
 
@@ -65,17 +65,17 @@ The table below summarizes the scenarios detailed in the following paragraphs.
 **RPO** is the **Recovery Point Objective**, meaning how far back before the incident you can recover the data.
 **RTO** is the **Recovery Time Objective**, meaning how long it takes to go back to a normal situation.
 
-| Scenario                                   | Essential (1 node)                                                                                             | Business/Production (2 nodes) or Enterprise/Advanced (3 nodes)                                                           |
+| Scenario                                   | Essential/Discovery (1 node)                                                                                             | Business/Production (2 nodes) or Enterprise/Advanced (3 nodes)                                                           |
 |--------------------------------------------|----------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------|
 | Primary node failure                       | **RPO**: approx. 5 minutes or 1 WAL file. **RTO**: multiple hours (time to restore your backup)                | **RPO**: Near zero. **RTO**: Approx. 60 seconds then auto failover                                   |
-| Replica node failure                       | N/A                                                                                                            | **RP0**: zero, no data loss. **RTO**: zero, no downtime                                              |
+| Replica node failure                       | N/A                                                                                                            | **RPO**: zero, no data loss. **RTO**: zero, no downtime                                              |
 | All-nodes failure                          | N/A                                                                                                            | **RPO**: approx. 5 minutes or 1 WAL file. **RTO**: multiple hours (time to restore your backup)      |
 | Datacenter outage (backups in same DC)     | **RPO**: depends of manual backups made by the customer. **RTO**: multiple hours/days (time to restore your backup) | **RPO**: depends of manual backups made by the customer. **RTO**: depends of customer actions            |
 | Datacenter outage (backups in another DC)  | **RPO**: approx. 5 minutes or 1 WAL file. **RTO**: multiple hours/days (time to restore your backup)           | **RPO**: approx. 5 minutes or 1 WAL file. **RTO:** multiple hours/days (time to restore your backup) |
 
-### Scenarios for Essential service plans with single-node
+### Scenarios for Essential/Discovery service plans with single-node
 
-Essential plans provide a single node : there is no replica.
+Essential/Discovery plans provide a single node: there is no replica.
 
 #### Node failure
 

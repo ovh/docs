@@ -1,6 +1,6 @@
 ---
-title: "Cómo restablecer la contraseña de administrador con Rescue-Customer-Windows"
-excerpt: "Cómo restablecer la contraseña de administrador con Rescue-Customer-Windows"
+title: "Restablecer la contraseña Windows en un servidor dedicado"
+excerpt: "Restablezca la contraseña de administrador Windows en un servidor dedicado a través del sistema rescue Windows de OVHcloud"
 updated: 2025-10-22
 ---
 

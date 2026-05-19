@@ -1,7 +1,7 @@
 ---
 title: "Usuwanie powtarzających się błędów podczas korzystania z programu FTP"
 excerpt: "Odnajdziesz tutaj najczęstsze nieprawidłowości związane z Twoim oprogramowaniem FTP"
-updated: 2025-10-20
+updated: 2026-03-31
 ---
 
 ## Wprowadzenie 
@@ -26,7 +26,7 @@ Korzystanie z oprogramowania FTP podczas logowania do [hostingu Cloud](/links/we
 
 ### Dostęp do Panelu klienta OVHcloud
 
-- **Link bezpośredni:** [Hosting plans](/links/control-panel/web-hosting)
+- **Link bezpośredni:** [Hosting](/links/control-panel/web-hosting)
 - **Ścieżka nawigacji:** `Web Cloud`{.action} > `Hosting`{.action} > Wybierz hosting WWW
 
 ---
@@ -42,18 +42,11 @@ Ten komunikat w programie [FileZilla](/pages/web_cloud/web_hosting/ftp_filezilla
 
 Jeśli dane, które chcesz wymienić za pomocą tego kanału nie są poufne, kliknij `OK`{.action}.
 
-W przeciwnym razie przejdź do [Panelu klienta OVHcloud](/links/manager), sekcja `Web Cloud`{.action}, a następnie wybierz `Hosting`{.action}. Wybierz odpowiedni hosting i wybierz kartę `FTP-SSH`{.action}.
-
-Jeśli dysponujesz hostingiem [Perso](/links/web/hosting-personal-offer), zaznacz kratkę `Wyłączone`{.action} w kolumnie `SFTP`{.action}, następnie odczekaj kilka minut.
-
-Jeśli dysponujesz hostingiem [Pro](/links/web/hosting-professional-offer) lub [Performance](/links/web/hosting-performance-offer), kliknij przycisk `...`{.action} po prawej stronie odpowiedniego użytkownika FTP a następnie kliknij `Zmien`{.action}.
-
-Wybierz `SFTP`{.action} lub `Aktywny`{.action} (aby aktywować protokół SSH na Twoim hostingu), kliknij `Dalej`{.action} i `Zatwierdź`{.action}. Odczekaj kilka minut.
+W przeciwnym razie aktywuj protokół SFTP, korzystając z naszego przewodnika "[Hosting - Jak włączyć dostęp SFTP](/pages/web_cloud/web_hosting/enable_sftp)".
 
 > [!primary]
 >
 > W przypadku innych wiadomości o błędzie sprawdź sekcję `Diagnostyka` naszych przewodników dotyczących [Hosting](/products/web-cloud-hosting).
->
 
 ### Przeniosłem pliki za pomocą programu FTP, ale moja strona nie wyświetla się.
 
@@ -69,12 +62,13 @@ Jeśli nie możesz się zalogować, zmień hasło FTP zgodnie z instrukcjami zaw
 
 Brak przestrzeni dyskowej na hostingu może spowodować usterki na Twojej stronie WWW podczas prób jej zmiany lub aktualizacji.
 
+<!-- CP-STEPS-START:check-disk-space -->
 Aby sprawdzić pozostałą przestrzeń dyskową Twojego hostingu, kliknij poniższe zakładki, aby wyświetlić kolejne **2** kroki.
 
 > [!tabs]
 > **Krok 1**
 >>
->> Przejdź na stronę [Hosting plans](/links/control-panel/web-hosting), następnie wybierz odpowiedni hosting.
+>> Przejdź na stronę [Hosting](/links/control-panel/web-hosting), następnie wybierz odpowiedni hosting.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
@@ -85,6 +79,7 @@ Aby sprawdzić pozostałą przestrzeń dyskową Twojego hostingu, kliknij poniż
 >> ![disk_space](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-disk-space.png){.thumbnail}
 >>
 >> Pod tą informacją wyświetlana jest wykorzystana przestrzeń dyskowa.
+<!-- CP-STEPS-END:check-disk-space -->
 
 ### Nie mogę przenieść moich plików na serwer FTP.
 

@@ -32,6 +32,7 @@ Ao longo da utilização dos seus serviços, pode vir a ter necessidade de conhe
 
 ## Instruções
 
+<!-- CP-STEPS-START:find-database-server -->
 Clique nos separadores abaixo para visualizar cada uma das **3** etapas.
 
 > [!tabs]
@@ -61,6 +62,7 @@ Clique nos separadores abaixo para visualizar cada uma das **3** etapas.
 >> >
 >> > - A **Endereço do servidor** faz parte dos identificadores de ligação específicos à sua base de dados e permite ligar o seu site web a esta.
 >> > - O **Servidor** representa a infraestrutura que aloja a sua base de dados, bem como outras bases. O nome do servidor permite verificar se está afetado por uma operação de manutenção ou um incidente declarado na nossa página [Web Cloud Status](https://web-cloud.status-ovhcloud.com/).
+<!-- CP-STEPS-END:find-database-server -->
 
 ## Quer saber mais? <a name="go-further"></a>
 

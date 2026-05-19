@@ -1,7 +1,7 @@
 ---
 title: "Logowanie do przestrzeni dyskowej FTP hostingu"
 excerpt: "Dowiedz się, jak się zalogować do przestrzeni dyskowej FTP Twojego hostingu WWW OVHcloud"
-updated: 2025-06-15
+updated: 2026-03-31
 ---
 
 ## Wprowadzenie 
@@ -24,7 +24,7 @@ Wraz z pakietami hostingowymi OVHcloud zyskujesz dostęp do przestrzeni dyskowej
 
 ### Dostęp do Panelu klienta OVHcloud
 
-- **Link bezpośredni:** [Hosting plans](/links/control-panel/web-hosting)
+- **Link bezpośredni:** [Hosting](/links/control-panel/web-hosting)
 - **Ścieżka nawigacji:** `Web Cloud`{.action} > `Hosting`{.action} > Wybierz hosting WWW
 
 ---
@@ -47,12 +47,13 @@ Aby zalogować się do przestrzeni dyskowej FTP, pobierz następujące elementy:
 > 
 > **Jeśli dysponujesz już tymi elementami**, przejdź bezpośrednio w części 2 [niniejszego przewodnika](#ftp_storage_access).
 
-Jeśli nie posiadasz tych elementów, kliknij poniższe zakładki, aby wyświetlić kolejne **3** kroki.
+<!-- CP-STEPS-START:get-ftp-credentials -->
+Jeśli nie posiadasz tych elementów, kliknij poniższe zakładki, aby wyświetlić kolejne **4** kroki.
 
 > [!tabs]
 > **Krok 1**
 >>
->> Przejdź na stronę [Hosting plans](/links/control-panel/web-hosting), następnie wybierz odpowiedni hosting.
+>> Przejdź na stronę [Hosting](/links/control-panel/web-hosting), następnie wybierz odpowiedni hosting.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
@@ -75,27 +76,27 @@ Jeśli nie posiadasz tych elementów, kliknij poniższe zakładki, aby wyświetl
 >> > Wybierz hasło dla tego nowego konta użytkownika, kliknij na `Dalej`{.action}, następnie kliknij na `Potwierdź`{.action}.
 >>
 >> Wszystkie elementy potrzebne do zalogowania się do przestrzeni dyskowej FTP znajdują się na tej samej stronie.
-
-Poniżej znajduje się opis najważniejszych informacji wyświetlanych na stronie `FTP - SSH`:
-
-- **Serwer FTP i SFTP** : adres serwera FTP hostingu pozwalający na dostęp do przestrzeni dyskowej FTP. Używając na przykład oprogramowania FTP za pomocą protokołu FTP lub SFTP.
-
-> Klasycznym portem połączenia jest port "21". Użyj portu "22", aby połączyć się przez protokół SFTP (w przypadku gdy jest on aktywny)
-
-- **Serwer SSH**: adres serwera SSH na hostingu umożliwiający dostęp do przestrzeni dyskowej FTP. Używając terminala przez protokół SSH.
-
-> Port połączenia SSH to port "22".
-
-- **Login główny**: główny identyfikator FTP utworzony na Twoim hostingu. Możesz znaleźć wszystkich użytkowników (S)FTP Twojego hostingu w kolumnie "Login" tabeli.
-
-> [!primary]
->
-> W zależności od oferty [hosting OVHcloud](/links/web/hosting), którą posiadasz, niektóre z informacji opisanych powyżej (zwłaszcza dotyczących SSH) mogą się nie pojawić.
->
+>>
+> **Krok 4**
+>>
+>> Poniżej znajduje się opis najważniejszych informacji wyświetlanych na stronie `FTP - SSH`:
+>>
+>> - **Serwer FTP i SFTP**: adres serwera FTP hostingu pozwalający na dostęp do przestrzeni dyskowej FTP za pomocą oprogramowania FTP lub SFTP.
+>>
+>> > Klasycznym portem połączenia jest port "21". Użyj portu "22", aby połączyć się przez protokół SFTP (w przypadku gdy jest on aktywny).
+>>
+>> - **Serwer SSH**: adres serwera SSH na hostingu umożliwiający dostęp do przestrzeni dyskowej FTP za pomocą terminala i protokołu SSH.
+>>
+>> > Port połączenia SSH to port "22".
+>>
+>> - **Login główny**: główny identyfikator FTP utworzony na Twoim hostingu. Możesz znaleźć wszystkich użytkowników (S)FTP Twojego hostingu w kolumnie "Login" tabeli.
+>>
+>> > [!primary]
+>> >
+>> > W zależności od oferty [hosting OVHcloud](/links/web/hosting), którą posiadasz, niektóre z informacji opisanych powyżej (zwłaszcza dotyczących SSH) mogą się nie pojawić.
+<!-- CP-STEPS-END:get-ftp-credentials -->
 
 Jeśli nie znasz hasła użytkownika FTP lub SSH, zapoznaj się z naszym przewodnikiem "[Zmiana hasła do konta FTP](/pages/web_cloud/web_hosting/ftp_change_password)".
-
-![ftpconnect](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/change-password.png){.thumbnail}
 
 W tym momencie dysponujesz wszystkimi elementami pozwalającymi na zalogowanie się do przestrzeni dyskowej FTP.
 

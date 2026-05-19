@@ -45,6 +45,7 @@ Por exemplo, o **DynHost** pode ser utilizado se *autoidentificar* (nas instala�
 
 **Se o domínio não usar os servidores DNS da OVHcloud**, contacte o fornecedor responsável pela configuração DNS para saber como proceder.
 
+<!-- CP-STEPS-START:verificar-servidores-dns -->
 **Se o domínio estiver registado na OVHcloud**, pode verificar se este último utiliza a nossa configuração. Para isso, clique nos separadores abaixo para visualizar cada uma das **3** etapas.
 
 > [!tabs]
@@ -65,6 +66,7 @@ Por exemplo, o **DynHost** pode ser utilizado se *autoidentificar* (nas instala�
 >> Aparecerá uma tabela com os servidores DNS atualmente definidos pela OVHcloud para o seu domínio. Vários servidores DNS podem estar listados, sendo que cada um deles possui a sua própria linha na tabela.
 >>
 >> ![DNS servers](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-servers/tab.png){.thumbnail}
+<!-- CP-STEPS-END:verificar-servidores-dns -->
 
 > [!success]
 >
@@ -79,8 +81,8 @@ Por exemplo, o **DynHost** pode ser utilizado se *autoidentificar* (nas instala�
 
 ### 1 - Criar um utilizador DynHost <a name="step1"></a>
 
+<!-- CP-STEPS-START:criar-um-utilizador-dynhost -->
 Para isso, clique nos separadores abaixo para visualizar cada uma das **5** etapas.
-
 > [!tabs]
 > **Etapa 1**
 >>
@@ -123,6 +125,7 @@ Para isso, clique nos separadores abaixo para visualizar cada uma das **5** etap
 >>
 >> ![DynHost tab](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dynhost/tab.png){.thumbnail}
 >>
+<!-- CP-STEPS-END:criar-um-utilizador-dynhost -->
 
 Repita este passo sempre que necessário se precisar de dados DynHost adicionais.
 
@@ -130,8 +133,10 @@ Repita este passo sempre que necessário se precisar de dados DynHost adicionais
 
 A segunda etapa consiste em criar o registo DNS que deverá ser atualizado de forma dinâmica. Relembramos que este não deve já existir na zona DNS da OVHcloud do seu nome de domínio enquanto registo "A" ou "AAAA". Para o verificar e, se necessário, eliminá-lo, consulte o nosso manual "[Editar uma zona DNS da OVHcloud](/pages/web_cloud/domains/dns_zone_edit)".
 
-Quando estiver pronto para criar o registo DynHost, clique nos separadores abaixo para visualizar cada uma das **4** etapas.
+Quando estiver pronto para criar o registo DynHost.
 
+<!-- CP-STEPS-START:criar-o-registo-dns-dinamico-dynhost -->
+Clique nos separadores abaixo para visualizar cada uma das **4** etapas.
 > [!tabs]
 > **Etapa 1**
 >>
@@ -167,6 +172,7 @@ Quando estiver pronto para criar o registo DynHost, clique nos separadores abaix
 >> ![Create a DynHost](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dynhost/create-a-dynhost.png){.thumbnail}
 >>
 >> Depois de preencher os campos, clique no botão `Validar`{.action}. O registo DynHost aparece no quadro presente na página atual.
+<!-- CP-STEPS-END:criar-o-registo-dns-dinamico-dynhost -->
 
 Repita este passo sempre que necessário se precisar de mais registos DynHost.
 
@@ -203,8 +209,10 @@ https://dns.eu.ovhapis.com/nic/update?system=dyndns&hostname=$HOSTNAME&myip=$IP
 |$HOSTNAME|O subdomínio abrangido pela alteração.|
 |$IP|O novo endereço IPv4 ou IPv6 de destino.|
 
-Pode verificar se o endereço IP de destino foi atualizado. Para isso, clique nos separadores abaixo para visualizar cada uma das **3** etapas.
+Pode verificar se o endereço IP de destino foi atualizado.
 
+<!-- CP-STEPS-START:automatizar-a-alteracao-do-dynhost -->
+Para isso, clique nos separadores abaixo para visualizar cada uma das **3** etapas.
 > [!tabs]
 > **Etapa 1**
 >>
@@ -224,6 +232,7 @@ Pode verificar se o endereço IP de destino foi atualizado. Para isso, clique no
 >>
 >> ![dynhost](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dynhost/target.png){.thumbnail}
 >>
+<!-- CP-STEPS-END:automatizar-a-alteracao-do-dynhost -->
 
 > [!warning]
 >

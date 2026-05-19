@@ -1,7 +1,7 @@
 ---
 title: OpenSearch – Capacités et limitations (EN)
 excerpt: Discover the capabilities and limitations of Public Cloud Databases for OpenSearch
-updated: 2026-02-17
+updated: 2026-04-15
 ---
 
 ## Objective
@@ -46,25 +46,11 @@ You can use any of the [OpenSearch-recommended clients and plugins](https://open
 
 Three plans are available:
 
-- *Essential*
-- *Business/Production*
-- *Enterprise/Advanced*
+- **Essential**: 1 node
+- **Business/Production**: 3 nodes
+- **Enterprise/Advanced**: 6 nodes
 
-Here is an overview of the various plans' capabilities:
-
-| Plan                  | Number of nodes by default |
-| --------------------- | -------------------------- |
-| *Essential*           | 1                          |
-| *Business/Production* | 3                          |
-| *Enterprise/Advanced* | 6                          |
-
-Your choice of plan affects the number of nodes your cluster can run, the SLA, and a few other features such as read replicas or backup retention.
-
-#### Nodes and replicas
-
-- **Essential**: the cluster can support at most one node.
-- **Business/Production**: the cluster is delivered with 3 nodes by default.
-- **Enterprise/Advanced**: the cluster is delivered with 6 nodes by default.
+Your choice of plan affects the number of nodes your cluster can run, the SLA, and a few other features such as backup retention.
 
 #### License type
 

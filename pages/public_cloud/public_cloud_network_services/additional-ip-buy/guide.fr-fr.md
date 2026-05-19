@@ -89,7 +89,8 @@ Consultez notre guide sur la [gestion des commandes OVHcloud](/pages/account_and
 
 Vous pouvez également retrouver le bon de commande dans votre espace client, rubrique `Tableau de bord`{.action}, en cliquant sur `Voir mes commandes`{.action}.
 
-La prochaine étape consiste à configurer l’IP dans votre système d'exploitation. Consultez [notre guide dédié à cette configuration](/pages/public_cloud/public_cloud_network_services/getting-started-04-configure-additional-ip-to-instance).
+
+La prochaine étape consiste à configurer l’IP dans votre système d’exploitation. Consultez [notre guide dédié à cette configuration](/pages/public_cloud/public_cloud_network_services/getting-started-04-configure-additional-ip-to-instance).
 
 ## Aller plus loin
 

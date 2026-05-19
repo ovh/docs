@@ -15,8 +15,18 @@ updated: 2024-11-05
 ## Requirements
 
 - An [OVHcloud account](/pages/account_and_service_management/account_information/ovhcloud-account-creation)
-- Access to the [OVHcloud Control Panel](/links/manager)
 - One or more [Hosted Private Cloud products - VMware on OVHcloud](/links/hosted-private-cloud/vmware) linked to this account
+
+<!-- CP-NAV-START:privatecloud-vmware-vsphere -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [VMware vSphere](/links/control-panel/privatecloud-vmware-vsphere)
+- **Navigation path:** `Hosted Private Cloud`{.action} > `Managed VMware vSphere`{.action} > Select your vSphere service
+
+---
+<!-- CP-NAV-END:privatecloud-vmware-vsphere -->
 
 ## Instructions
 

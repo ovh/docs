@@ -20,7 +20,7 @@ details[open]>summary::before {
 
 ## Objective
 
-This guide aims at providing you with a clear and practical understanding of [Savings Plans](/links/public-cloud/savings-plan), to help you optimise your infrastructure costs. We'll explain what Savings Plans are, how they work, and how to choose the model best suited to your specific needs. Through concrete examples, you will discover how these plans can reduce your expenditure while offering flexibility in the management of your resources.
+This guide aims at providing you with a clear and practical understanding of [Savings Plans](/links/public-cloud/savings-plan) to help you optimise your infrastructure costs. We'll explain what Savings Plans are, how they work, and how to choose the model best suited to your specific needs. Through concrete examples, you will discover how these plans can reduce your expenditure while offering flexibility in the management of your resources.
 
 This guide will also detail the use of the Savings Plans dashboard, which will allow you to track your costs, the number of resources used and covered by your plans, and the savings generated. Finally, we'll help you understand the billing aspects so you can analyse and maximise the benefits of your Savings Plan choices.
 
@@ -36,20 +36,20 @@ This guide will also detail the use of the Savings Plans dashboard, which will a
 
 > [!primary]
 >
-> When a customer subscribes to a Savings Plan, he agrees to pay a **fixed amount** for a **given period**. In return, this plan covers a specific number of simultaneous resources for which he will pay no other charges, enabling them to benefit from advantageous billing.
+> When a customer subscribes to a Savings Plan, they agree to pay a **fixed amount** for a **given period**. In return, this plan covers a specific number of simultaneous resources for which they will pay no other charges, enabling them to benefit from advantageous billing.
 >
 
 Here are a few scenarios to help you understand how this works:
 
-- **Case "1:1" :** Let's imagine that a customer has 10 OVHcloud B3-8 instances and subscribes to a Savings Plan that covers precisely 10 B3-8 instances for a period of 1 year. In this case, the customer will only pay the amount of their Savings Plan, and this amount will fully cover the costs associated with their 10 B3-8 instances for the duration of the commitment. There are no additional charges at the end of each month, as the instances are covered by the plan.
-- **Case "1,5:1" :** Now let's suppose that another customer uses 15 B3-8 instances, but subscribes to a Savings Plan covering only 10 B3-8 instances. In this case, the customer benefits from the advantageous Savings Plan tariff for the first 10 instances. However, the other 5 instances, which are not covered by the Savings Plan, will be billed at the standard hourly rate. 
-- **Case "0,8 :1" :** Lastly, a customer has subscribed to a Savings Plan for 10 B3-8 type instances, but only uses 8 instances simultaneously during the month. Even if this customer does not use all the instances covered by his plan, he will not pay any additional charges. The Savings Plan will always cover the 8 simultaneous instances used, and the customer will benefit from the advantageous pricing of the 10 instances at no extra cost. This situation remains financially advantageous, even if the customer does not use all 10 instances of the Savings Plan.
+- **Case "1:1":** Let's imagine that a customer has 10 OVHcloud B3-8 instances and subscribes to a Savings Plan that covers precisely 10 B3-8 instances for a period of 1 year. In this case, the customer will only pay the amount of their Savings Plan, and this amount will fully cover the costs associated with their 10 B3-8 instances for the duration of the commitment. There are no additional charges at the end of each month, as the instances are covered by the plan.
+- **Case "1,5:1":** Now let's suppose that another customer uses 15 B3-8 instances, but subscribes to a Savings Plan covering only 10 B3-8 instances. In this case, the customer benefits from the advantageous Savings Plan discount for the first 10 instances. However, the other 5 instances, which are not covered by the Savings Plan, will be billed at the standard hourly rate.
+- **Case "0,8:1":** Lastly, a customer has subscribed to a Savings Plan for 10 B3-8 type instances, but only uses 8 instances simultaneously during the month. Even if this customer does not use all the instances covered by their plan, they will not pay any additional charges. The Savings Plan will always cover the 8 simultaneous instances used, and the customer will benefit from the advantageous pricing of the 10 instances at no extra cost. This situation remains financially advantageous, even if the customer does not use all 10 instances of the Savings Plan.
 
 > [!warning]
 > 
-> Update on the term **simultaneous resources**.
+> Update on the term **simultaneous resources**:
 >
-> A Savings Plan covers a number of simultaneously active resources. For example, for a Savings Plan of 1 resource, if a customer starts a resource at 10:05 AM and deletes it at 10:10 AM, then creates another resource at 10:17 AM and deletes it at 10:30 AM, even though he has started and deleted two resources, only the resources that were switched on at the same time are counted. In this case, only one resource is active at the same time, so the Savings Plan covers both resources without additional billing. This also applies if the resources are used at different times during the month (for example, from the 1st to the 10th and then from the 15th to the 30th), as long as they are not active at the same time.
+> A Savings Plan covers a number of simultaneously active resources. For example, for a Savings Plan of 1 resource, if a customer starts a resource at 10:05 AM and deletes it at 10:10 AM, then creates another resource at 10:17 AM and deletes it at 10:30 AM, even though they have started and deleted two resources, only the resources that were switched on at the same time are counted. In this case, only one resource is active at the same time, so the Savings Plan covers both resources without additional billing. This also applies if the resources are used at different times during the month (for example, from the 1st to the 10th and then from the 15th to the 30th), as long as they are not active at the same time.
 >
 
 ### How do Savings Plans work for instances?
@@ -106,9 +106,9 @@ For example:
 
 ### Creating a tailor-made business model
 
-To optimise costs while adapting to your varied needs, it is possible to combine several Savings Plans with different characteristics, such as size, type/model of resources or length of commitment. This approach makes it possible to align coverage with specific uses, while maximising savings.
+To optimise costs while adapting to your varied needs, it is possible to combine several Savings Plans with different characteristics, such as size, type/model of resources or length of commitment. This approach makes it possible to align coverage with specific uses while maximising savings.
 
-/// details | **Real-life example :**
+/// details | **Real-life example:**
 
 - A customer uses two types of workloads:
     - A stable production environment with 20 B3-16 VMs, used 24/7 all year round.
@@ -168,9 +168,9 @@ If the selected period has already ended (one month before the current one), two
 - **Y-axis legend on graph:**
     - If ‘Instances’ is selected, the Y axis will display the number of instance(s) used.
     - If ‘Managed Rancher Services’ is selected, the Y axis will display the number of vCPU(s) used.
-- **Graph colour legends :**
-    - **Green :** Represents the number of resources covered by a Savings Plan.
-    - **Red :** Represents the number of resources not covered by a Savings Plan and billed hourly.
+- **Graph colour legends:**
+    - **Green:** Represents the number of resources covered by a Savings Plan.
+    - **Red:** Represents the number of resources not covered by a Savings Plan and billed hourly.
 
 ///
 
@@ -206,7 +206,7 @@ To better understand your billing once you subscribe to a Savings Plan, here is 
 - **a. Billing for your Savings Plans**
 
 When you subscribe to a Savings Plan, you agree to pay a fixed amount for a certain number of instances over a specified period. However, the instances covered by this plan are not itemised individually on your bill.
-On your invoice, you will only see the total amount corresponding to the Savings Plan, and not the specific instances it covers. This simplifies invoicing by showing only one line grouping together all the instances covered by your commitment, without the need to detail each instance.
+On your invoice, you will only see the total amount corresponding to the Savings Plan, and not the specific instances it covers. This simplifies invoicing by showing only one line that groups all the instances covered by your commitment, without the need to detail each instance.
 
 ![Billing instances Savings Plan](images/billings_savings_plan_instances_svp.png){.thumbnail}
 

@@ -71,6 +71,7 @@ In certain situations, you may need to view or retrieve the logs:
 
 ### Viewing real-time logs for your Web Cloud Databases
 
+<!-- CP-STEPS-START:view-realtime-logs -->
 Click on the tabs below to view each of the **2** steps.
 
 > [!tabs]
@@ -93,6 +94,7 @@ Click on the tabs below to view each of the **2** steps.
 >> > Logs are only available here in real time. They will only appear if they are generated while you are on the `Logs`{.action} tab.
 >> >
 >> > If you leave the `Logs`{.action} tab and return to it later, the previously displayed history will have disappeared.
+<!-- CP-STEPS-END:view-realtime-logs -->
 
 ### Retrieving the log history for your Web Cloud Databases solution
 
@@ -104,6 +106,7 @@ To retrieve the log history for your Web Cloud Databases solution, you need to c
 >
 > To check this, retrieve the public IP address of your internet access point, then refer to the **Authorise an IP address** section of [this guide](/pages/web_cloud/web_cloud_databases/starting_with_clouddb).
 
+<!-- CP-STEPS-START:retrieve-sftp-connection-details -->
 To find the SFTP connection details for your Web Cloud Databases solution, click on the tabs below to view each of the **2** steps.
 
 > [!tabs]
@@ -122,6 +125,7 @@ To find the SFTP connection details for your Web Cloud Databases solution, click
 >> > If you do not know the `Server password`, click the `...`{.action} button to the right to change it.
 >>
 >> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/general-information/sftp-login.png){.thumbnail}
+<!-- CP-STEPS-END:retrieve-sftp-connection-details -->
 
 Once you have the SFTP login details, connect using an FTP client (FileZilla, Cyberduck, WinSCP, etc.).
 
@@ -165,6 +169,7 @@ To subscribe your Web Cloud Databases solution to a data stream on Logs Data Pla
 
 <a name="wcdb-ldp-case1"></a>
 
+<!-- CP-STEPS-START:ldp-subscribe-existing-stream -->
 /// details | Case 1 - Subscribe to an existing data stream on your Logs Data Platform solution
 
 Click on the tabs below to view each of the **4** steps.
@@ -195,7 +200,9 @@ Click on the tabs below to view each of the **4** steps.
 >> After a few seconds, a message confirms that the subscription was successfully created.
 
 ///
+<!-- CP-STEPS-END:ldp-subscribe-existing-stream -->
 
+<!-- CP-STEPS-START:ldp-subscribe-new-stream -->
 /// details | Case 2 - Subscribe to a new data stream on your Logs Data Platform solution
 
 Click on the tabs below to view each of the **5** steps.
@@ -234,6 +241,7 @@ Click on the tabs below to view each of the **5** steps.
 >> To subscribe your Web Cloud Databases solution to this new data stream, go back to the `Logs`{.action} tab of your Web Cloud Databases solution, then follow [Case 1](#wcdb-ldp-case1) described above.
 
 ///
+<!-- CP-STEPS-END:ldp-subscribe-new-stream -->
 
 ## Go further <a name="go-further"></a>
 

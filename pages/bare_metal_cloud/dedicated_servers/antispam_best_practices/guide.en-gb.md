@@ -1,6 +1,6 @@
 ---
-title: OVHcloud AntiSpam - Best Practices and Unblocking an IP
-excerpt: Find out about our antispam best practices and how to unblock an IP blocked for SPAM
+title: "OVHcloud AntiSpam - Best Practices and Unblocking an IP"
+excerpt: "Apply OVHcloud antispam best practices and unblock a dedicated server IP address flagged for spam sending."
 updated: 2026-01-06
 ---
 
@@ -71,6 +71,7 @@ Once the issue has been resolved, you can unblock your IP by performing the foll
 
 #### Unblocking your IP from the OVHcloud Control Panel
 
+<!-- CP-STEPS-START:unblock-ip-cp -->
 You can use the drop-down menu underneath **My public IP addresses and associated services** to filter your services according to category, or directly type the desired IP address in the search bar.
 
 If you have an alert on any of your IP(s), there will be a red status icon in the **IP Alert** column.
@@ -88,6 +89,7 @@ In the window that appears, click on `Unblock the IP`{.action} at the bottom and
 The IP is being released, the operation may take several minutes.
 
 Once done, your IP will be unblocked.
+<!-- CP-STEPS-END:unblock-ip-cp -->
 
 #### Unblocking your IP from the OVHcloud API
 
@@ -270,9 +272,9 @@ Microsoft uses a whitelist policy. This means that initially, everything starts 
 
 - **To a Gmail server**
 
-If your recipients are with Gmail, adding specific records (e.g. a DMARC record) may ensure that emails reach them. Here is a Google article that can help you with this: [Add a DMARC record](https://support.google.com/a/answer/2466563/).
+If your recipients are with Gmail, adding specific records (e.g. a DMARC record) may ensure that emails reach them. Here is a Google article that can help you with this: [Add a DMARC record](https://support.google.com/a/answer/2466580?hl=en).
 
-Google also has a [dedicated article](https://support.google.com/mail/answer/81126/) regarding spam prevention to Gmail users.
+Google also has a [dedicated article](https://support.google.com/a/answer/81126?hl=en) regarding spam prevention to Gmail users.
 
 ### Reporting a false positive
 
@@ -285,5 +287,7 @@ If your emails do comply, you can inform us by sending a sample of your email (i
 Once the information is sent, our support team will communicate with Vade Secure for further analysis of the case.
 
 ## Go further
+
+[How to secure a Dedicated Server](/pages/bare_metal_cloud/dedicated_servers/securing-a-dedicated-server)
 
 Join our [community of users](/links/community).

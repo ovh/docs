@@ -1,7 +1,7 @@
 ---
 title: Object Storage - Gestion des identités et des accès
 excerpt: Ce guide a pour objectif de vous montrer la gestion de vos identités et accès à vos ressources Object Storage
-updated: 2026-03-06
+updated: 2026-05-06
 ---
 
 ## Objectif
@@ -72,22 +72,6 @@ Sélectionnez l'utilisateur à ajouter à votre bucket et cliquez sur `Suivant`{
 Définissez les accès à votre bucket pour cet utilisateur et cliquez sur `Confirmer`{.action}.
 
 ![Add a user to my container - Role](images/highperf-identity-and-access-management-20220928083800300.png){.thumbnail}
-
-### Gestion des accès à un objet via un profil
-
-Vous pouvez également définir l'accès à vos objets via des profils prédéfinis.
-
-Cliquez sur le bouton `...`{.action} à droite de votre objet puis sur `Ajouter un utilisateur à mon objet`{.action}.
-
-![object menu](images/highperf-identity-and-access-management-20220928084137918.png){.thumbnail}
-
-Sélectionnez l'utilisateur et cliquez sur `Suivant`{.action}.
-
-![add user to my object](images/highperf-identity-and-access-management-20220928084222940.png){.thumbnail}
-
-Sélectionnez le profil d'accès pour cet utilisateur et cliquez sur `Confirmer`{.action}.
-
-![add role to my object](images/highperf-identity-and-access-management-20220928084308265.png){.thumbnail}
 
 ### Gestion avancée des accès aux ressources
 
@@ -224,6 +208,7 @@ Actuellement, les autorisations utilisateur sont évaluées comme suit :
 } 
 ```
 
+
 > [!primary]
 >
 > En raison du processus d'autorisation actuel, le refus **implicite** n'est **pas** pris en charge par OVHcloud Object Storage si l'utilisateur est le propriétaire du bucket, c'est-à-dire que puisque les ACLs sont évaluées par défaut et que le propriétaire du bucket dispose d'une ACL FULL_CONTROL, si l'utilisateur est le propriétaire du bucket, l'utilisateur sera autorisé même s'il n'y a pas d'autorisation explicite dans le fichier policy.
@@ -277,6 +262,7 @@ La politique suivante visant à refuser l'accès en lecture à des objets à des
 }
 ```
 
+
 ### Liste des actions supportées
 
 | Action | Scope |
@@ -303,6 +289,8 @@ La politique suivante visant à refuser l'accès en lecture à des objets à des
 | s3:GetLifecycleConfiguration | Bucket |
 | s3:GetObject | Object |
 | s3:GetObjectAcl | Object |
+| s3:GetObjectAttributes | Object |
+| s3:GetObjectVersionAttributes | Object |
 | s3:GetObjectLegalHold | Object |
 | s3:GetObjectRetention | Object |
 | s3:GetObjectTagging | Object |

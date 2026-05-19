@@ -86,6 +86,7 @@ Per diversi motivi, potresti aver bisogno di creare una zona DNS per il tuo domi
 
 ### 1 - Creare la zona DNS dallo Spazio Cliente OVHcloud
 
+<!-- CP-STEPS-START:create-dns-zone -->
 Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **3** passi.
 
 > [!tabs]
@@ -115,6 +116,7 @@ Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **3** pa
 >> |No|Seleziona questa opzione se intendi utilizzare servizi OVHcloud come [hosting web](/links/web/hosting), con la zona preconfigurata a tal fine.<br>![no-minimale-entra](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/dashboard-ovh-full-entries.png){.thumbnail}|
 >>
 >> Una volta effettuata la tua scelta, segui le fasi visualizzate nel tuo Spazio Cliente OVHcloud fino alla creazione della zona DNS.
+<!-- CP-STEPS-END:create-dns-zone -->
 
 ### 2 - Modifica la zona DNS (facoltativo)
 
@@ -133,6 +135,7 @@ Una volta che la zona DNS OVHcloud è pronta per l'utilizzo, associala al tuo do
 
 È quindi necessario recuperare prima i **server DNS** di OVHcloud sui quali è stata creata la zona DNS di OVHcloud per il tuo dominio.
 
+<!-- CP-STEPS-START:find-dns-servers -->
 Per trovarli, clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **2** passi.
 
 > [!tabs]
@@ -154,6 +157,7 @@ Per trovarli, clicca sulle schede qui sotto per visualizzare in sequenza ciascun
 >> - `nsXX.ovh.net` e `dnsXX.ovh.net` o, `nsXXX.ovh.net` e `dnsXXX.ovh.net` (dove ogni `X` rappresenta un numero compreso tra **0** e **9**).
 >> - `nsXX.ovh.ca` e `dnsXX.ovh.ca` o, `nsXXX.ovh.ca` e `dnsXXX.ovh.ca` (dove ogni `X` rappresenta un numero compreso tra **0** e **9**).
 >> - `ns200.anycast.me` e `dns200.anycast.me` (se hai sottoscritto l'opzione [DNS anycast](/links/web/domains-options)).
+<!-- CP-STEPS-END:find-dns-servers -->
 
 Una volta recuperati i 2 nomi dei server DNS, sono possibili 2 situazioni.
 

@@ -1,6 +1,6 @@
 ---
-title: Dedicated Servers - Upgrading your Micron 7500 PRO firmware
-excerpt: Learn how to upgrade your Micron 7500 PRO firmware for Linux, ESXi and Windows Dedicated Servers
+title: "Dedicated Servers - Upgrading your Micron 7500 PRO firmware"
+excerpt: "Upgrade the Micron 7500 PRO NVMe firmware on your Linux, ESXi, or Windows dedicated server for improved stability."
 updated: 2025-09-25
 ---
 
@@ -425,5 +425,9 @@ Now your NVMe drives should have have the firmware version **E3MQ005**.
 ## Go further
 
 If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for a custom analysis of your project.
+
+[Upgrading Samsung NVMe PM9A1 Firmware on Dedicated Servers](/pages/bare_metal_cloud/dedicated_servers/samsung-nvme-fw-upgrade)
+
+[Dedicated Server - Upgrading Solidigm D7-P5520 SSD Firmware](/pages/bare_metal_cloud/dedicated_servers/solidigm_d7-p5520_fw_update)
 
 Join our [community of users](/links/community).

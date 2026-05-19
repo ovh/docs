@@ -27,6 +27,7 @@ The objective of this guide is to demonstrate how to create, configure, and dele
 
 ## Creating and Editing AI users
 
+<!-- CP-STEPS-START:creating-and-editing-ai-users -->
 To grant access to **OVHcloud AI Solutions** to the users of your Public Cloud Project, you can assign them either the **AI Training Operator** or **AI Training Reader** role.
 
 - The **AI Training Operator** role provides complete access to **AI Notebooks, AI Training, and AI Deploy** solutions. With this role, users can launch, stop, and delete AI Solutions, as well as authenticate to existing AI Notebooks, Jobs, and Apps, and the [ovhai CLI](/pages/public_cloud/ai_machine_learning/cli_10_howto_install_cli) using their credentials.
@@ -60,6 +61,8 @@ This will generate a password that will allow you to authenticate to your existi
 To edit an existing user, simply click the `...`{.action} button next to the user, and select `Edit roles` to modify its existing roles:
 
 ![image](images/05_edit_user_roles.png){.thumbnail}
+
+<!-- CP-STEPS-END:creating-and-editing-ai-users -->
 
 ## Going further
 

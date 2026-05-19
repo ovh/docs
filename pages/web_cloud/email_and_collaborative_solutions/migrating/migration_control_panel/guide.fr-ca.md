@@ -79,9 +79,8 @@ Avant de débuter votre migration, il vous faudra identifier la version du MX Pl
 
 > [!warning]
 >
-> Cette partie concerne l'ensemble des services MX Plan utilisant la technologie webmail Roundcube ou OWA.
+> Cette partie concerne l'ensemble des services MX Plan utilisant la technologie webmail OWA.
 >
-> Néanmoins, si vous souhaitez migrer un service MX Plan utilisant le webmail Roundcube vers une plateforme Exchange OVHcloud, suivez la partie « [Migration automatique d'une offre MX Plan Roundcube vers Exchange](#roundcube-mxplan) » de ce guide.
 
 > [!warning]
 >
@@ -126,58 +125,6 @@ Après la migration, vérifiez que vous retrouvez vos éléments en vous connect
 Vous pouvez conserver ou supprimer le compte d'origine avec le nom provisoire après cette migration.
 
 Si vous souhaitez le supprimer, dirigez-vous dans l'onglet `Comptes e-mail`{.action} de votre MX Plan, cliquez sur le bouton `...`{.action} puis sur `Réinitialiser ce compte`{.action}.
-
-#### 3.2 Migration automatique d'une offre MX Plan Roundcube vers Exchange <a name="roundcube-mxplan"></a>
-
-> [!warning]
->
-> Cette partie concerne uniquement les services MX Plan utilisant la technologie webmail Roundcube.
-
-> [!primary]
->
-> Votre compte OVHcloud doit préalablement être contact administrateur **et** contact technique du service MX plan à migrer, **ainsi que** du service Exchange vers lequel vous migrez.
->
-> Pour plus d'information sur les changements de contacts, consultez notre guide pour [gérer les contacts de ses services](/pages/account_and_service_management/account_information/managing_contacts).
->
-
-La migration peut être effectuée depuis deux interfaces :<br>
-
-- **celle de l'assistant de configuration Hosted Exchange**, uniquement si vous venez de commander un service Hosted Exchange et que vous n'avez encore rien paramétré sur ce dernier ;
-- **celle du MX Plan**, dès que vous êtes en possession d'un service Exchange (déjà configuré ou non) et d'une adresse MX Plan que vous souhaitez migrer.
-
-> Pour rappel, avant de débuter la migration, assurez-vous qu'aucune **redirection** ou qu'aucun **répondeur** ne soient paramétrés sur votre MX Plan.
->
-> ![email](images/mxplan-legacy-redirect.png){.thumbnail .w-640}
-
-Une fois que vous êtes prêt, poursuivez la lecture de cette documentation selon l'interface sélectionnée. Nous vous rappelons que le délai de migration dépend de la quantité de contenu à migrer vers votre nouveau compte. Celui-ci peut varier de quelques minutes à plusieurs heures.
-
-> [!warning]
->
-> Une fois la migration confirmée, vous ne pourrez plus accéder à votre ancienne adresse e-mail MX Plan ni annuler le processus de migration. Nous vous conseillons vivement de réaliser cette opération à un horaire propice.
->
-> Même si vous ne pourrez plus accéder à votre adresse e-mail actuelle, les messages déjà réceptionnés ainsi que ceux reçus ne seront pas perdus. Tous seront immédiatement accessibles depuis votre nouveau compte.
->
-
-##### **Migration depuis l'assistant de configuration Exchange**
-
-L'assistant s'affiche pour vous aider à configurer votre nouveau service Exchange. Durant ce processus, vous pouvez sélectionner les comptes e-mail MX Plan à migrer.
-
-Si l'assistant de configuration ne s'affiche pas, les informations générales du service Exchange apparaîtront à la place. Dans ce cas, vous devrez réaliser la migration de vos comptes via l'interface MX Plan.
-
-##### **Migration depuis l'interface MX Plan**
-
-Pour réaliser la migration depuis cette interface, rendez-vous dans la section [MX Plan](/links/control-panel/web-mx-plan) de votre espace client OVHcloud et sélectionnez le domaine concerné. Dans l'onglet `Emails`{.action}, cliquez sur `...`{.action} sur la ligne du compte e-mail concerné (également appelé compte source), puis sur `Migrer le compte`{.action}.
-
-![exchange](images/access_the_migration_tool.png){.thumbnail .w-640}
-
-Dans la fenêtre qui s'affiche, sélectionnez le service de destination (celui vers lequel vous souhaitez migrer l'adresse) puis cliquez sur `Suivant`{.action}. S'il possède au minimum un compte « libre » (c'est-à-dire encore non paramétré), la migration s'effectuera vers l'un de ces comptes. Dès lors, prenez connaissance des informations qui s'affichent, validez-les, puis cliquez sur `Suivant`{.action} pour poursuivre l'opération.
-
-Si vous ne possédez pas de compte « libre », un bouton `Commander des comptes`{.action} apparaîtra. Suivez les étapes, puis patientez le temps que les comptes soient installés pour effectuer de nouveau la manipulation.
-
-Confirmez enfin le mot de passe de l'adresse e-mail source (celle que vous voulez migrer), puis cliquez sur `Migrer`{.action}. Cette manipulation sera à répéter autant de fois que nécessaire pour la migration d'autres comptes.
-
-![exchange](images/account_migration_steps.png){.thumbnail .w-640}
-
 
 ### Étape 4 : Vérifier ou modifier la configuration de votre domaine
 

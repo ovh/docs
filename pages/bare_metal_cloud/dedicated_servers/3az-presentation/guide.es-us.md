@@ -1,6 +1,6 @@
 ---
 title: "Bare Metal 3-AZ Region - Presentación del producto"
-excerpt: 'Descubra el servicio Bare Metal 3-AZ, que ofrece una alta disponibilidad y redundancia sin igual entre tres datacenters'
+excerpt: "Descubra el servicio Bare Metal 3-AZ, que ofrece una alta disponibilidad y redundancia sin igual entre tres datacenters"
 updated: 2025-06-04
 ---
 
@@ -52,15 +52,15 @@ Para obtener un rendimiento óptimo, debe seleccionar una región lo más cerca 
 
 Pase a la pestaña `Clusters 3-AZ`{.action}.
 
-![list_clusters](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/dedicated-servers/general-information/clusters1.png){.thumbnail}
+![Pestaña clusters 3-AZ mostrando los clusters disponibles](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/dedicated-servers/general-information/clusters1.png){.thumbnail}
 
 Haga clic en el nombre del cluster en la tabla para ver los detalles.
 
-![list_clusters](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/dedicated-servers/general-information/clusters2.png){.thumbnail}
+![Página de detalles del cluster con información sobre las zonas de disponibilidad](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/dedicated-servers/general-information/clusters2.png){.thumbnail}
 
 Haga clic en la pestaña `Nodos`{.action} para abrir la lista de servidores del cluster.
 
-![list_clusters](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/dedicated-servers/general-information/clusters3.png){.thumbnail}
+![Pestaña Nodes mostrando la lista de servidores del cluster](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/dedicated-servers/general-information/clusters3.png){.thumbnail}
 
 Haciendo clic en un nombre de servidor/nodo de esta lista se abre la pestaña `Información general`{.action} Puede consultar los detalles en esta sección del área de cliente en nuestra guía:
 

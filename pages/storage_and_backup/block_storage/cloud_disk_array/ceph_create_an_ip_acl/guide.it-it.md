@@ -1,4 +1,4 @@
-﻿---
+---
 title: Cloud Disk Array - Creazione ACL IP (EN)
 excerpt: This guide shows you how to create an IP ACL to allow access to your Ceph cluster
 updated: 2025-04-28

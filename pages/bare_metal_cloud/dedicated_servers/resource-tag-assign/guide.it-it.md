@@ -1,6 +1,6 @@
 ---
-title: 'Come assegnare un tag a un server Bare Metal'
-excerpt: "Scopri come creare e modificare tag per ogni server dedicato dallo Spazio Cliente OVHcloud"
+title: "Come assegnare un tag a un server Bare Metal"
+excerpt: "Crea e assegna tag ai tuoi server dedicati OVHcloud tramite lo Spazio Cliente per una gestione organizzata delle tue risorse"
 updated: 2025-07-01
 ---
 

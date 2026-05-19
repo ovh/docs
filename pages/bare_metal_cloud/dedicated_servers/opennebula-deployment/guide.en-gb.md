@@ -1,6 +1,6 @@
 ---
-title: How to deploy and verify an OpenNebula Hosted Cloud on Bare Metal servers
-excerpt: Deploy a certified OpenNebula Hosted Cloud using OVHcloud Bare Metal servers and Ansible playbooks.
+title: "Deploy OpenNebula Hosted Cloud on Bare Metal Servers"
+excerpt: "Deploy a certified OpenNebula Hosted Cloud using OVHcloud Bare Metal servers and Ansible playbooks."
 updated: 2025-12-09
 ---
 
@@ -76,7 +76,9 @@ First, you need to install Ubuntu 24.04 LTS on both of your dedicated servers, b
 
 Subsequently, add both servers to your vRack service by following step 2 of [this vRack configuration guide](/pages/bare_metal_cloud/dedicated_servers/vrack_configuring_on_dedicated_server).
 
+<!-- CP-STEPS-START:order-public-ip-block -->
 Finally, from the OVHcloud Control Panel, open the `Network`{.action} section, then select `Public IP Addresses`{.action} under **Public Network**. Once you have reached the IP management interface, click on the `Order IPs`{.action} button near the top of the page. Choose the IP version, then **select the vRack your servers are attached to**, and the region where those servers are hosted.
+<!-- CP-STEPS-END:order-public-ip-block -->
 
 > [!warning]
 > 
@@ -107,9 +109,11 @@ The **Private network bond** provides network to virtual servers, leveraging the
 
 #### Bare Metal network settings <a name="bare_metal_network_settings"></a>
 
+<!-- CP-STEPS-START:collect-bare-metal-network-settings -->
 Open both management pages for your dedicated servers, and collect the highlighted parameters :
 
 ![dedicated servers administration page](images/bare_metal_network.png){.thumbnail}
+<!-- CP-STEPS-END:collect-bare-metal-network-settings -->
 
 | Description                              | Variable Names                                           | Comment                                                |
 |------------------------------------------|----------------------------------------------------------|--------------------------------------------------------|
@@ -275,6 +279,10 @@ Finally, as a cleanup step, terminate the virtual server by clicking the red "Tr
 - If you need more information about OpenNebula, you may consult the [OpenNebula Website](https://opennebula.io/) or the [official OpenNebula documentation](https://docs.opennebula.io/).
 - If you need more information about Ansible, you may consult the [Ansible page on the RedHat website](https://www.redhat.com/en/ansible-collaborative?) or the [official Ansible documentation](https://docs.ansible.com/).
 - The OpenNebula deployment repository used and referenced in this guide is [Hosted Cloud OVHcloud](https://github.com/OpenNebula/hosted-cloud-ovhcloud).
+
+[Configuring IPv6 on Dedicated Servers](/pages/bare_metal_cloud/dedicated_servers/network_ipv6)
+
+[Network Bridging on Dedicated Servers](/pages/bare_metal_cloud/dedicated_servers/network_bridging)
 
 If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for assistance on your specific use case and project.
 

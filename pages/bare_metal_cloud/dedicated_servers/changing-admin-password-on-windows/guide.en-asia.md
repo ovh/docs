@@ -1,6 +1,6 @@
 ---
-title: Changing the admin password on a Windows dedicated server
-excerpt: Find out how to use the OVHcloud rescue mode to reset the password of the Administrator account on a Windows dedicated server
+title: "Change the admin password on a Windows Dedicated Server"
+excerpt: "Reset the Administrator password on a Windows dedicated server using OVHcloud rescue mode when you are locked out."
 updated: 2024-06-26
 flag: hidden
 ---
@@ -35,7 +35,7 @@ When you install or reinstall a Windows operating system, you are provided with 
 
 ## Instructions
 
-The following steps describe the process of changing the local admin password by using the always available OVHcloud rescue mode (Linux-based). If you would like to use Windows PE (WinRescue) instead, skip to the pertinent section [at the end of this guide](./#resetting-the-admin-password-using-winrescue). 
+The following steps describe the process of changing the local admin password by using the OVHcloud rescue mode (Linux-based). If you would like to use Windows PE (WinRescue) instead, skip to the pertinent section [at the end of this guide](./#resetting-the-admin-password-using-winrescue). 
 
 ### Step 1: Rebooting the server into rescue mode
 
@@ -72,6 +72,7 @@ In the example output, "sda4" must be the (file) system partition, as determined
 ```bash
 mount /dev/sda4 /mnt
 ```
+
 Verify the mountpoint:
 
 ```bash
@@ -123,7 +124,6 @@ This step involves manipulating the *SAM* file with a tool to clear the admin us
 cd /mnt/Windows/System32/config
 /mnt/Windows/System32/config#
 ```
-
 
 ```bash
 chntpw -l SAM
@@ -189,7 +189,8 @@ Total  login count: 5
  q - Quit editing user, back to user select
 Select: [q] >
 ```
-Type "1" and press Enter . (Make use of option 2 first if there is an "X" next to "Disabled".)
+
+Type "1" and press Enter. (Make use of option 2 first if there is an "X" next to "Disabled".)
 
 ```text
 Select: [q] > 1
@@ -266,7 +267,7 @@ The system is going down for reboot NOW!
 
 In your [OVHcloud Control Panel](/links/manager), navigate to the `IPMI`{.action} tab to open a KVM session.
 
-![IPMI](images/adminpw_win_03.png){.thumbnail}
+![IPMI tab in the OVHcloud Control Panel for KVM access](images/adminpw_win_03.png){.thumbnail}
 
 #### Step 5.1: For a newer version of Windows
 
@@ -311,17 +312,17 @@ For detailed instructions, please refer to the [rescue mode guide](/pages/bare_m
 
 In your [OVHcloud Control Panel](/links/manager), navigate to the `IPMI`{.action} tab to open a KVM session.
 
-![IPMI](images/adminpw_win_03.png){.thumbnail}
+![Opening a KVM session from the IPMI tab](images/adminpw_win_03.png){.thumbnail}
 
 To reset passwords, the tool NTPWEdit is required. Once you are connected via KVM, open the browser and download it from the [official website](http://www.cdslow.org.ru/en/ntpwedit/). Navigate to the folder where the downloaded ZIP file is located and extract the contents. Next, open the *ntpwedit64* executable to start the application.
 
-![ntpwedit](images/adminpw_win_09.png){.thumbnail}
+![NTPWEdit application opened in WinRescue](images/adminpw_win_09.png){.thumbnail}
 
 In this interface, you can manipulate the *SAM* file in order to clear the admin user's password. The default file path in the *WINDOWS* directory is pre-filled. Open the file to display the list of users by clicking on `Open`{.action}.
 
 The relevant user will either be "admin" or "Administrator", depending on the Windows version. If both are present, choose "admin". Then click on `Change password`{.action}.
 
-![ntpwedit](images/adminpw_win_10.png){.thumbnail}
+![NTPWEdit showing the list of Windows user accounts](images/adminpw_win_10.png){.thumbnail}
 
 In the popup window, leave the fields blank and click `OK`{.action}. Finish by clicking on `Save changes`{.action}  and `Exit`{.action}.
 

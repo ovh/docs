@@ -82,6 +82,7 @@ Zmiana serwerów DNS Twojej nazwy domeny może być konieczna w następujących 
 
 /// details | Opcja 1 — Użyj domyślnych serwerów DNS OVHcloud
 
+<!-- CP-STEPS-START:opcja-1-domyslne-serwery-dns -->
 Ta opcja pozwala na automatyczne zastosowanie istniejącej konfiguracji strefy DNS OVHcloud dla Twojej nazwy domeny. Upewnij się wcześniej, że dla Twojej nazwy domeny istnieje strefa DNS w OVHcloud.
 
 > [!primary]
@@ -128,11 +129,13 @@ Kliknij poniższe karty, aby wyświetlić kolejne **4** kroki.
 >> W ten sposób dla Twojej nazwy domeny zostaną użyte 2 serwery DNS zadeklarowane (w rekordach typu NS strefy DNS OVHcloud).
 
 Poprzednio zadeklarowane serwery DNS i stosowana przez nie konfiguracja DNS zostaną wyłączone dla Twojej nazwy domeny. Strefa DNS OVHcloud stanie się aktywną strefą DNS dla Twojej nazwy domeny.
+<!-- CP-STEPS-END:opcja-1-domyslne-serwery-dns -->
 
 ///
 
 /// details | Opcja 2 — Użyj własnych serwerów DNS
 
+<!-- CP-STEPS-START:opcja-2-wlasne-serwery-dns -->
 Ta opcja pozwala na zadeklarowanie serwerów DNS strefy DNS niezarządzanej z poziomu Panelu klienta OVHcloud.
 
 Może to być na przykład:
@@ -201,11 +204,13 @@ Kliknij poniższe karty, aby wyświetlić kolejne **5** kroków.
 >> Jeśli odpowiadają one tym, które chcesz zastosować, kliknij `Zastosuj`{.action}.
 
 Poprzednio zadeklarowane serwery DNS i stosowana przez nie konfiguracja DNS zostaną wyłączone dla Twojej nazwy domeny. Strefa DNS zadeklarowana na Twoich własnych serwerach DNS stanie się aktywną strefą DNS dla Twojej nazwy domeny.
+<!-- CP-STEPS-END:opcja-2-wlasne-serwery-dns -->
 
 ///
 
 /// details | Opcja 3 — Użyj serwerów DNS OVHcloud i własnych serwerów DNS
 
+<!-- CP-STEPS-START:opcja-3-serwery-ovhcloud-i-wlasne -->
 Ta opcja pozwala na połączenie korzystania z własnych serwerów DNS przy jednoczesnym zachowaniu aktywnych serwerów DNS OVHcloud dla Twojej nazwy domeny. Ta kombinacja pozwala na przykład na zapewnienie większej dostępności różnych usług powiązanych z Twoją nazwą domeny (hosting WWW, serwery e-mail, etc.). Jeśli jedna grupa serwerów DNS stanie się niedostępna na kilka minut, inne zadeklarowane serwery DNS mogą przejąć jej zadania.
 
 Upewnij się jednak, że konfiguracje stref DNS na poszczególnych serwerach DNS są poprawnie skonfigurowane i mogą ze sobą współpracować. W większości przypadków wszystkie serwery DNS będą operacyjne. Wszystkie będą w stanie odpowiedzieć na żądania kierowane do nich losowo w sieci DNS.
@@ -277,6 +282,7 @@ Kliknij poniższe karty, aby wyświetlić kolejne **5** kroków.
 >> Jeśli odpowiadają one tym, które chcesz zastosować, kliknij `Zastosuj`{.action}.
 
 Poprzednio zadeklarowane serwery DNS i stosowana przez nie konfiguracja DNS zostaną wyłączone dla Twojej nazwy domeny. Strefy DNS na Twoich własnych serwerach DNS oraz na serwerach DNS OVHcloud staną się aktywnymi strefami dla Twojej nazwy domeny.
+<!-- CP-STEPS-END:opcja-3-serwery-ovhcloud-i-wlasne -->
 
 ///
 

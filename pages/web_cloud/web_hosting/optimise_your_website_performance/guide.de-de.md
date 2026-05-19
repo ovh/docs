@@ -1,7 +1,7 @@
 ---
 title: 'Optimierung der Performance Ihrer Webseite'
 excerpt: 'Erfahren Sie hier, wie Sie Latenzen auf Webseiten analysieren und verbessern können'
-updated: 2025-10-09
+updated: 2026-04-01
 ---
 
 ## Ziel 
@@ -90,11 +90,8 @@ Weitere Details zu diesem Thema finden Sie unten in Schritt 5.
 
 Vergleichen Sie die Grafiken der Ressourcennutzung Ihres Hostings (weitere Informationen unten), um den Ursprung der Verzögerungen zu ermitteln, und entnehmen Sie die Daten dieser Spitzenwerte aus den Protokollen.
 
-Sie können direkt über das [OVHcloud Kundencenter](/links/manager) auf Ihre Logs, Statistiken und Verlaufsdiagramme zugreifen.
-
-Zugriff auf Statistiken und Logs:
-
-Klicken Sie auf die Tabs, um die **3** Schritte anzuzeigen.
+<!-- CP-STEPS-START:access-stats-and-logs -->
+Um auf die Statistiken und Logs zuzugreifen, klicken Sie auf die Tabs, um die **3** Schritte anzuzeigen.
 
 > [!tabs]
 > **Schritt 1**
@@ -114,35 +111,39 @@ Klicken Sie auf die Tabs, um die **3** Schritte anzuzeigen.
 >> Klicken Sie anschließend auf den Button `Die Statistiken anzeigen`{.action} angezeigt, um auf die Besucherstatistiken der Website zuzugreifen, oder auf `Die Logs einsehen`{.action}, um die für Ihr Webhosting verfügbaren Logs anzuzeigen.
 >>
 >> ![logs](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/statistics-and-logs/tab.png){.thumbnail}
+<!-- CP-STEPS-END:access-stats-and-logs -->
 
-Zugriff auf Nutzungsgraphen:
+<!-- CP-STEPS-START:access-resource-charts -->
+Um auf die Graphen zuzugreifen, klicken Sie auf die Tabs, um die **3** Schritte anzuzeigen.
 
-1. Klicken Sie in der linken Spalte auf `Hosting-Pakete`{.action} und wählen Sie das betreffende Webhosting aus.
-2. Klicken Sie auf den Tab `Statistiken und Logs`{.action}. Scrollen Sie bis zum Ende der Seite, um die Graphen zur Webhosting-Nutzung einzusehen.
-3. Wählen Sie den **Informationstyp** sowie den **Zeitraum** der angezeigten Daten aus.
-
-![graphs](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/statistics-and-logs/infrastructure-statistics-graph.png){.thumbnail}
-
-Welche verschiedenen Arten von Informationen können angezeigt werden?
-
-- **HTTP Requests**: Gibt die durchschnittliche Anzahl der Webseitenzugriffe an. Hits werden nach HTTP-Status 2xx/3xx/4xx/5xx klassifiziert.
-
-- **Durchschnittliche Antwortzeit**: Bezieht sich auf die durchschnittliche Seitenantwortzeit. Es werden dynamische und statische Seiten unterschieden.
-
-- **Überschreitungen der Ressourcenobergrenzen**: In dieser Grafik wird die Auslastung durch PHP Worker angezeigt, um Ihnen bei Bedarf ein anderes Webhosting-Paket zu empfehlen. Die Verwendung von PHP-FPM kann Ihnen dabei helfen, den Einsatz von PHP Workern zu reduzieren.
-
-- **CPU Verwendung**: Zeigt die CPU-Auslastung Ihrer Webseite an. Auf diese Weise können Sie eine mögliche CPU-Überlastung erkennen.
-
-- **Ausgehende Verbindungen**: Auf diese Weise können Sie ausgehende TCP-Anforderungen des Servers anzeigen. Wenn Ihre Webseite beispielsweise gehackt wurde, könnte sie über den Server auf andere externe Webseiten zugreifen. Sie können auch externe Anrufe von Modulen wie Facebook, Twitter usw. überprüfen. Durch das Reduzieren der Anzahl ausgehender TCP-Anfragen lässt sich die Ladezeit verkürzen. Wenn der Server, von dem Sie Inhalte anfordern, Zeit zum Beantworten benötigt, erhöht sich die Verzögerung beim Laden Ihrer Webseite.
-
-- **FTP Befehle**: Zeigt die verschiedenen FTP-Befehle an, die auf dem Hosting verwendet wurden. z.B. erfolgreiche und erfolglose Anmeldeversuche, Herunterladen, Hochladen und Löschen von Dateien.
-
-Die beiden folgenden Kategorien werden nur dann angezeigt, wenn Sie derzeit eine Datenbank für Ihr Hosting-Angebot verwenden.
-Vergessen Sie nicht, den Namen Ihrer Datenbank und den gewünschten Zeitraum auszuwählen.
-
-- **SQL-Antwortzeiten**: Zeigt die Antwortzeit der Abfragen an.
-
-- **SQL Requests**: Zeigt die Anzahl der Anfragen an.
+> [!tabs]
+> **Schritt 1**
+>>
+>> Rufen Sie die Seite [Hosting-Pakete](/links/control-panel/web-hosting) auf und wählen Sie das betreffende Webhosting aus.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Schritt 2**
+>>
+>> Klicken Sie auf den Tab `Statistiken und Logs`{.action}. Scrollen Sie bis zum Ende der Seite, um die Graphen zur Webhosting-Nutzung einzusehen.
+>>
+> **Schritt 3**
+>>
+>> Wählen Sie den **Informationstyp** sowie den **Zeitraum** der angezeigten Daten aus.
+>>
+>> ![Graphen der Infrastrukturstatistiken](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/statistics-and-logs/infrastructure-statistics-graph.png){.thumbnail}
+>>
+>> Die verschiedenen verfügbaren Informationstypen:
+>>
+>> - **HTTP Requests**: Gibt die durchschnittliche Anzahl der Webseitenzugriffe an. Hits werden nach HTTP-Status 2xx/3xx/4xx/5xx klassifiziert.
+>> - **Durchschnittliche Antwortzeit**: Bezieht sich auf die durchschnittliche Seitenantwortzeit. Es werden dynamische und statische Seiten unterschieden.
+>> - **Überschreitungen der Ressourcenobergrenzen**: In dieser Grafik wird die Auslastung durch PHP Worker angezeigt, um Ihnen bei Bedarf ein anderes Webhosting-Paket zu empfehlen. Die Verwendung von PHP-FPM kann Ihnen dabei helfen, den Einsatz von PHP Workern zu reduzieren.
+>> - **CPU Verwendung**: Zeigt die CPU-Auslastung Ihrer Webseite an. Auf diese Weise können Sie eine mögliche CPU-Überlastung erkennen.
+>> - **Ausgehende Verbindungen**: Auf diese Weise können Sie ausgehende TCP-Anforderungen des Servers anzeigen. Wenn Ihre Webseite beispielsweise gehackt wurde, könnte sie über den Server auf andere externe Webseiten zugreifen. Sie können auch externe Anrufe von Modulen wie Facebook, Twitter usw. überprüfen. Durch das Reduzieren der Anzahl ausgehender TCP-Anfragen lässt sich die Ladezeit verkürzen. Wenn der Server, von dem Sie Inhalte anfordern, Zeit zum Beantworten benötigt, erhöht sich die Verzögerung beim Laden Ihrer Webseite.
+>> - **FTP Befehle**: Zeigt die verschiedenen FTP-Befehle an, die auf dem Hosting verwendet wurden, z.B. erfolgreiche und erfolglose Anmeldeversuche, Herunterladen, Hochladen und Löschen von Dateien.
+>> - **SQL-Antwortzeiten**: Zeigt die Antwortzeit der Abfragen an (nur sichtbar, wenn Sie eine Datenbank verwenden).
+>> - **SQL Requests**: Zeigt die Anzahl der Anfragen an (nur sichtbar, wenn Sie eine Datenbank verwenden).
+<!-- CP-STEPS-END:access-resource-charts -->
 
 ### 5 - Überprüfen von Netzwerkanfragen
 Ein nützliches Tool für die Analyse ist der [Network Monitor](https://developer.mozilla.org/en-US/docs/Tools/Network_Monitor), der direkt in den Mozilla Firefox-Browser integriert ist und die detaillierte Analyse der Ladezeit einer Webseite ermöglicht.
@@ -178,11 +179,7 @@ _Dieser Schritt ist optional, wenn Sie keine Datenbank verwenden._
 Sie können mit PHPMyAdmin auf Ihre Datenbank zugreifen. Anweisungen zur Verwendung von PHPMyAdmin würden den Rahmen dieser Anleitung sprengen und werden daher nicht weiter ausgeführt.
 Es gibt jedoch viele externe Tutorials zu diesem Thema.
 
-**So greifen Sie über phpMyAdmin auf die Datenbank zu:** Um über phpMyAdmin auf Ihre Datenbank zuzugreifen, gehen Sie wie folgt über das [OVHcloud Kundencenter](/links/manager) vor:
-
-- Klicken Sie im Bereich `Hosting-Pakete`{.action} auf Ihre Domain.
-- Wechseln Sie zur Registerkarte `Datenbanken`{.action}.
-- Klicken Sie auf `...`{.action} rechts neben Ihrer Datenbank, um auf phpMyAdmin zuzugreifen.
+**So greifen Sie über phpMyAdmin auf die Datenbank zu:** Weitere Informationen finden Sie im entsprechenden Abschnitt unserer Anleitung „[Verwaltung einer Datenbank in Ihrem Webhosting](/pages/web_cloud/web_hosting/sql_create_database)".
 
 **Warum sollte eine Datenbank optimiert werden?** Sie müssen eine Datenbank pflegen, um sicherzustellen, dass deren Leistung optimiert ist. Mit anderen Worten, die in der Datenbank enthaltenen Informationen sollten so schnell wie möglich an das Skript zurückgegeben werden, von dem sie angefordert wurden. Um dies zu erreichen, muss eine Datenbank gut strukturiert und optimiert sein. Wir haben einige Hinweise zusammengestellt, wie Sie Ihre Datenbank am besten optimieren können.
 

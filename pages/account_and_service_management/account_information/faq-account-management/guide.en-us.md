@@ -113,7 +113,7 @@ On the [Account security](/links/control-panel/account-security) page, click on 
 You can find more information in our guide [Changing your account password](/pages/account_and_service_management/account_information/manage-ovh-password).
 
 > [!success]
-> **Can't remember your password?**
+> **Can’t remember your password?**
 >
 > Go to the [login page for your Control Panel](/links/manager) and click `Forgot username or password?`{.action}. Enter your NIC handle or the primary email address associated with your OVHcloud account, then click `Submit`{.action}. An email is then sent to the account’s contact email address, to confirm the request. Please read the instructions carefully and click on the link in it.
 >

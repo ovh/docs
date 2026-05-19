@@ -1,7 +1,7 @@
 ---
-title: How to prevent your emails from being marked as spam
-excerpt: Find out how to apply best practices for email sending in order to limit the risk of legitimate emails being blocked by spam protection
-updated: 2024-09-24
+title: "Optimise Email Sending on a Dedicated Server"
+excerpt: "Apply email sending best practices on your dedicated server to prevent legitimate messages from being flagged as spam."
+updated: 2026-05-06
 ---
 
 ## Objective
@@ -82,7 +82,7 @@ Before starting the procedure to whitelist your IP, make sure you have a [revers
 
 Microsoft also checks the SPF record, so it is recommended that you configure it.
 
-Next, you will need to sign the SNDS (Smart Network Data Services) and JMRP (Junk Mail Reporting Partner Program) contracts. To subscribe, create a free account at <https://postmaster.live.com/snds/JMRP.aspx?wa=wsignin1.0>.
+Next, you will need to sign the SNDS (Smart Network Data Services) and JMRP (Junk Mail Reporting Partner Program) contracts. To subscribe, create a free account at <https://sendersupport.olc.protection.outlook.com/snds/index>.
 
 Once your account is created, you must fill in the following form: 
 
@@ -98,11 +98,11 @@ Once the information is filled in, click on `Begin Setup` to transmit the reques
 
 Once the confirmations are approved, the subscription to JMRP/SNDS will be completed.
 
-Once this is done and if your IP appears to be blocked, you can then request to delist it via the [junk mail procedure](https://support.microsoft.com/en-us/getsupport?oaspworkflow=start_1.0.0.0&wfname=capsub&productkey=edfsmsbl3&locale=en-us&ccsid=635857671692853062) (usually within 48H).
+Once this is done and if your IP appears to be blocked, you can then request to delist it via the [junk mail procedure](https://support.microsoft.com/en-us/contactus) (usually within 48H).
 
 In some cases, Microsoft may ask the date of the first billing of your IP/server. In this situation, you can send a copy of your bill and add your IP/server details (ex.: host name ns1111111.ip-203-0-113.eu) in your reply.
 
-For additional information, please open a [support request](https://support.microsoft.com/en-us/getsupport?oaspworkflow=start_1.0.0.0&wfname=capsub&productkey=edfsmsbl3&ccsid=6364926882037750656) with Microsoft. 
+For additional information, please open a [support request](https://support.microsoft.com/en-us/contactus) with Microsoft. 
 
 > [!warning]
 > 
@@ -115,6 +115,13 @@ For additional information, please open a [support request](https://support.micr
 
 Adding specific records, such as a Domain-based Message Authentication, Reporting, and Compliance (DMARC) or DomainKeys Identified Mail (DKIM) record, can make it easier to receive emails if your recipient is at Gmail. Please refer to our guides listed [at the bottom of this page](#go-further) to configure them.
 
+### Blocked SMTP port (port 25)
+
+If emails are not sending or SMTP is not responding, a blocked port is a common cause. By default, outgoing **port 25** is blocked on OVHcloud infrastructure (dedicated servers, VPS, Public Cloud instances) to prevent spam abuse. To resolve this:
+
+- Use **port 587** (STARTTLS) for outbound mail submission.
+- If your use case requires port 25, request it to be unblocked by [contacting our support team](/links/support-contact).
+
 ### Check your information
 
 You may want to use a website like [Mail Tester](http://www.mail-tester.com/) to check that all of your settings are correct.
@@ -126,6 +133,10 @@ You may want to use a website like [Mail Tester](http://www.mail-tester.com/) to
 [How to improve email security with an SPF record](/pages/web_cloud/domains/dns_zone_spf)
 
 [How to improve email security with a DMARC record](/pages/web_cloud/domains/dns_zone_dmarc)
+
+[OVHcloud AntiSpam - Best Practices and Unblocking an IP](/pages/bare_metal_cloud/dedicated_servers/antispam_best_practices)
+
+[How to secure a Dedicated Server](/pages/bare_metal_cloud/dedicated_servers/securing-a-dedicated-server)
 
 For specialized services (SEO, development, etc.), contact [OVHcloud partners](/links/partner).
 

@@ -1,7 +1,7 @@
 ---
 title: Capacités et limitations de Public Cloud Databases pour MySQL (EN)
 excerpt: Discover the capabilities and limitations of Public Cloud Databases for MySQL
-updated: 2026-02-17
+updated: 2026-05-05
 ---
 
 ## Objective
@@ -35,7 +35,7 @@ Entire database instances have to be in the same region.
 The Public Cloud Databases offer supports the following MySQL versions:
 
 - MySQL 8.0
-- MySQL 8.4 (soon)
+- MySQL 8.4
 
 Please refer to the [DBMS lifecycle policy guide](/pages/public_cloud/public_cloud_databases/information_02_lifecycle_policy) for recommendations on version upgrades and end of life announcements of major versions. MySQL recommends always installing and using the latest stable version.
 
@@ -47,34 +47,17 @@ You can use any of the [MySQL-recommended connectors and API](https://dev.mysql.
 
 Three plans are available:
 
-- *Essential*
-- *Business/Production*
-- *Enterprise/Advanced*
+- **Essential**: 1 node
+- **Business/Production**: 2 nodes
+- **Enterprise/Advanced**: 3 nodes
 
-Here is an overview of the various plans' capabilities:
-
-| Plan                  | Number of nodes by default | Read replicas | MySQL License   |
-| --------------------- | -------------------------- | ------------- | --------------- |
-| *Essential*           | 1                          | No            | Community       |
-| *Business/Production* | 2                          | Planned       | Community       |
-| *Enterprise/Advanced* | 3                          | Planned       | Community       |
-
-Your choice of plan affects the number of nodes your cluster can run, the SLA, and a few other features such as read replicas or backup retention.
-
-> [!primary]
-> Be aware that you will be able to upgrade your plan but you won't be able to downgrade it afterwards.
-
-#### Nodes and replicas
-
-- **Essential**: the cluster can support at most one node.
-- **Business/Production**: the cluster is delivered with 2 nodes by default. Adding read replicas is planned.
-- **Enterprise/Advanced**: the cluster is delivered with 3 nodes by default. Adding read replicas is planned.
+Your choice of plan affects the number of nodes your cluster can run, the SLA, and a few other features such as backup retention.
 
 #### License type
 
 Each cluster is provided with the MySQL Community (GPL) license.
 
-If any, license cost is included inside the service plans. You can't bring your own licenses.
+License cost is included inside the service plans. You cannot bring your own licenses.
 
 ### Hardware resources
 

@@ -30,6 +30,7 @@ By default, your Web Cloud Databases solution is linked to the OVHcloud web host
 
 ### Activating your Web Cloud Databases server included with your web hosting plan
 
+<!-- CP-STEPS-START:activating-wcdb-server -->
 If your hosting plan includes the Web Cloud Databases option, click on the tabs below to view each of the **3** steps.
 
 > [!tabs]
@@ -48,9 +49,11 @@ If your hosting plan includes the Web Cloud Databases option, click on the tabs 
 > **Step 3**
 >>
 >> Follow the instructions to choose the type and version. Your server will then appear in the left-hand column under `Web Cloud Databases`{.action}.
+<!-- CP-STEPS-END:activating-wcdb-server -->
 
 ### Viewing the general information of the instance
 
+<!-- CP-STEPS-START:viewing-general-information -->
 Click on the tabs below to view each of the **2** steps.
 
 > [!tabs]
@@ -82,6 +85,7 @@ Click on the tabs below to view each of the **2** steps.
 >> |Host|Shows the OVHcloud server on which your instance was created. This is information inherent to the OVHcloud infrastructure and may be used in communications related to [OVHcloud incidents](https://www.status-ovhcloud.com/).|
 >>
 >> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/general-information/general-information.png){.thumbnail}
+<!-- CP-STEPS-END:viewing-general-information -->
 
 ### Creating a database
 
@@ -89,6 +93,7 @@ Click on the tabs below to view each of the **2** steps.
 >
 > This step does not apply to the Redis database system.
 
+<!-- CP-STEPS-START:creating-a-database -->
 Click on the tabs below to view each of the **4** steps.
 
 > [!tabs]
@@ -124,6 +129,7 @@ Click on the tabs below to view each of the **4** steps.
 >> Click `Confirm`{.action}.
 >>
 >> ![web-cloud-databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/databases/add-database-confirmation.png){.thumbnail}
+<!-- CP-STEPS-END:creating-a-database -->
 
 ### Creating a user
 
@@ -134,6 +140,8 @@ Click on the tabs below to view each of the **4** steps.
 If you created the user at the same time as your database in the previous step, this step is optional. However, a project may require several users with different rights (for example, read/write for one and read-only for another).
 
 If your project does not require an additional user, you can skip to the next step. Otherwise, click on the tabs below to view each of the **4** steps.
+
+<!-- CP-STEPS-START:creating-a-user -->
 
 > [!tabs]
 > **Step 1**
@@ -157,6 +165,7 @@ If your project does not require an additional user, you can skip to the next st
 >> Enter a "username" and a "password", then click `Confirm`{.action}.
 
 If you need to modify an existing user's rights, refer to our guide "[Web Cloud Databases - Modifying a user's rights](/pages/web_cloud/web_cloud_databases/modify_rights_for_users)".
+<!-- CP-STEPS-END:creating-a-user -->
 
 ### Importing a database
 
@@ -172,6 +181,7 @@ Several import methods are described there.
 
 For your Web Cloud Databases instance to work, you must specify the IPs or IP ranges that are allowed to connect to your databases.
 
+<!-- CP-STEPS-START:authorising-an-ip-address -->
 To do this, click on the tabs below to view each of the **4** steps.
 
 > [!tabs]
@@ -215,6 +225,7 @@ To do this, click on the tabs below to view each of the **4** steps.
 >> > This would allow all existing IPv4 addresses to access your databases.
 >>
 >> Once the information is entered, click the `Confirm`{.action} button.
+<!-- CP-STEPS-END:authorising-an-ip-address -->
 
 ### Authorising connections from an OVHcloud web hosting plan <a name="trustip"></a>
 
@@ -226,6 +237,7 @@ To do this, refer to the specific cases in our guide "[Web Cloud Databases - How
 
 Now that your database is created, one or more users have rights on it, and at least one IP address or OVHcloud web hosting plans have been authorised on your Web Cloud Databases instance, all that remains is to link your website to your database. This step can be done in several ways, depending on the website or CMS (WordPress, Joomla!, etc.) used, and the stage you are at if you are installing a website.
 
+<!-- CP-STEPS-START:linking-website-to-database -->
 To do this, you need the following 5 pieces of information:
 
 |Information|Description|
@@ -262,6 +274,7 @@ To find them, click on the tabs below to view each of the **2** steps.
 > The `port`{.action} field may not be available in your website's configuration. You must add this field after the server hostname, separated by a *:*.
 >
 > For example, for the hostname `aaXXXXX-XXX.eu.clouddb.ovh.net` with SQL port `12345`, you would enter `aaXXXXX-XXX.eu.clouddb.ovh.net:12345` in the "Host" / "Hostname" section.
+<!-- CP-STEPS-END:linking-website-to-database -->
 
 ### Retrieving the logs for your Web Cloud Databases server
 

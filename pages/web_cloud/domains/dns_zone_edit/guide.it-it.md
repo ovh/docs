@@ -61,6 +61,7 @@ Per maggiori spiegazioni, consulta le nostre guide "[Scopri tutto sui server DNS
 >
 > A differenza del nome di dominio, per una zona DNS non esiste la nozione di intestatario, ma di gestione dei contatti per una zona DNS OVHcloud. Se desideri trasferire la gestione della tua zona DNS su un altro account OVHcloud, segui la nostra guida [Gestire i contatti di servizio](/pages/account_and_service_management/account_information/managing_contacts).
 
+<!-- CP-STEPS-START:access-dns-zone-management -->
 Per accedere alla gestione di una zona DNS OVHcloud, clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **2** passi.
 
 > [!tabs]
@@ -75,6 +76,7 @@ Per accedere alla gestione di una zona DNS OVHcloud, clicca sulle schede qui sot
 >> Visualizzi una tabella con tutti i record DNS associati al tuo nome di dominio in OVHcloud. Il contenuto può essere filtrato per tipo di record o nome di dominio.
 >>
 >> ![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/tab.png){.thumbnail}
+<!-- CP-STEPS-END:access-dns-zone-management -->
 
 ### Modifica la zona DNS OVHcloud del nome di dominio
 
@@ -99,6 +101,7 @@ Per effettuare questa operazione è possibile modificare manualmente la zona in 
 > Solo per gli utenti esperti. Presta particolare attenzione alla sintassi durante le modifiche.
 >
 
+<!-- CP-STEPS-START:edit-text-mode -->
 Per modificare in modalità testo una zona DNS di OVHcloud, clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **2** passi.
 
 > [!tabs]
@@ -115,6 +118,7 @@ Per modificare in modalità testo una zona DNS di OVHcloud, clicca sulle schede 
 >> > [!warning]
 >> >
 >> > Non modificare i record DNS della tua zona DNS a favore di server DNS esterni a OVHcloud, cliccando sul pulsante `Modifica in modalità testuale`{.action}. Questa zona DNS funziona **esclusivamente** con server DNS OVHcloud.
+<!-- CP-STEPS-END:edit-text-mode -->
 
 #### Utilizza i nostri assistenti di configurazione
 
@@ -127,6 +131,7 @@ Questa guida descrive la procedura relativa alla configurazione guidata.
 
 **Fare clic sui quattro titoli seguenti per visualizzare le spiegazioni.**
 
+<!-- CP-STEPS-START:add-dns-record -->
 /// details | Aggiungi un nuovo record DNS
 
 Per aggiungere un nuovo record DNS, clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **2** passi.
@@ -153,7 +158,9 @@ Per aggiungere un nuovo record DNS, clicca sulle schede qui sotto per visualizza
 >> > Dovrai avere come bersaglio `mydomain.ovh.` e non `mydomain.ovh` senza il **.** alla fine.
 
 ///
+<!-- CP-STEPS-END:add-dns-record -->
 
+<!-- CP-STEPS-START:modify-dns-record -->
 /// details | Modifica un record DNS esistente
 
 Per modificare un record DNS, clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **2** passi.
@@ -174,7 +181,9 @@ Per modificare un record DNS, clicca sulle schede qui sotto per visualizzare in 
 >> ![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/modify-record.png){.thumbnail}
 
 ///
+<!-- CP-STEPS-END:modify-dns-record -->
 
+<!-- CP-STEPS-START:delete-dns-record -->
 /// details | Elimina un record DNS
 
 Per eliminare un record DNS, clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **2** passi.
@@ -197,7 +206,9 @@ Per eliminare un record DNS, clicca sulle schede qui sotto per visualizzare in s
 >> ![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/delete-record.png){.thumbnail}
 
 ///
+<!-- CP-STEPS-END:delete-dns-record -->
 
+<!-- CP-STEPS-START:reset-dns-zone -->
 /// details | Reinizializza la zona DNS
 
 La reinizializzazione della zona DNS permette di ripristinare una configurazione minima, con i record OVHcloud di default o quelli dei servizi. Inoltre è possibile puntare il nome di dominio verso servizi di hosting Web e email personalizzati.
@@ -250,11 +261,13 @@ Per reinizializzare la zona DNS, clicca sulle schede qui sotto per visualizzare 
 >> ![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/dns-zone-reset-02.png){.thumbnail}
 
 ///
+<!-- CP-STEPS-END:reset-dns-zone -->
 
 ### Tempo di propagazione
 
 Una volta modificata la zona DNS del nome di dominio, la propagazione delle modifiche potrebbe richiedere fino a 24 ore.
 
+<!-- CP-STEPS-START:modify-ttl -->
 Per ridurre il tempo di propagazione per le prossime modifiche della zona DNS, è possibile regolare il TTL (*Time To Live*) che si applicherà a tutti i record della zona DNS. Per questo , clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **2** passi.
 
 > [!tabs]
@@ -269,6 +282,7 @@ Per ridurre il tempo di propagazione per le prossime modifiche della zona DNS, �
 >> Clicca sul pulsante `Modifica il TTL predefinito`{.action} e segui gli step.
 >>
 >> È inoltre possibile modificare il TTL di un record DNS. ma questa operazione può essere effettuata solo su una registrazione alla volta, modificandola o aggiungendola.
+<!-- CP-STEPS-END:modify-ttl -->
 
 ## Per saperne di più
 

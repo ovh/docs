@@ -1,6 +1,6 @@
 ---
-title: Enabling and configuring the Edge Network Firewall
-excerpt: Find out how to configure the Edge Network Firewall for your services
+title: "Configure the Edge Network Firewall for Dedicated Servers"
+excerpt: "Enable and configure the Edge Network Firewall to filter incoming traffic to your OVHcloud dedicated server."
 updated: 2026-03-10
 ---
 
@@ -62,6 +62,7 @@ The Edge Network Firewall can be enabled or disabled by the user at all times, b
 > The Edge Network Firewall protects a specific IP associated with a server (or service). Therefore, if you have a server with multiple IP addresses, you must configure each IP separately.
 > 
 
+<!-- CP-STEPS-START:access-firewall-config -->
 You can use the drop-down menu underneath **"My public IP addresses and associated services"** to filter your services according to category, or directly type the desired IP address in the search bar.
 
 ![filter service](images/selectservice_cut_new.png){.thumbnail}
@@ -69,6 +70,7 @@ You can use the drop-down menu underneath **"My public IP addresses and associat
 Next, click the `⁝`{.action} button to the right of the relevant IPv4 and select `Configure Edge Network Firewall`{.action} (or click on the status badge in the **Edge Firewall** column).
 
 ![Enabling the Network Firewall](images/firewall_config_new.png){.thumbnail}
+<!-- CP-STEPS-END:access-firewall-config -->
 
 You will then be taken to the firewall configuration page.
 
@@ -99,21 +101,22 @@ You can set up to **20 rules per IP**.
 > For more information, please refer to the following guides: [Configuring the firewall on Windows](/pages/bare_metal_cloud/dedicated_servers/activate-port-firewall-soft-win) and [Configuring the firewall on Linux with iptables](/pages/bare_metal_cloud/dedicated_servers/firewall-Linux-iptable).
 >
 
+<!-- CP-STEPS-START:add-firewall-rule -->
 **To add a rule**, click on the `+ Add a rule`{.action} button, on the top left:
 
-| ![add-rule-btn](images/enf_add_rule_new.png) | 
-|:--:| 
+| ![Add a rule button in Edge Network Firewall](images/enf_add_rule_new.png) |
+|:--:|
 | Click on `+ Add a rule`{.action}. |
 
 For each rule (excluding TCP), you must choose:
 
-| ![add-rule-btn](images/enf_add_rule_no_tcp_new.png){.thumbnail} |
+| ![Firewall rule form for non-TCP protocols](images/enf_add_rule_no_tcp_new.png){.thumbnail} |
 |:--|
 | - A priority (from 0 to 19, 0 being the first rule to be applied, followed by the others) <br> - An action (`Accept`{.action} or `Deny`{.action}) <br> - The protocol <br> - Source IP (optional) |
 
 For each **TCP** rule, you must choose:
 
-| ![add-rule-btn](images/enf_add_rule_tcp_new.png){.thumbnail} |
+| ![Firewall rule form for TCP protocol](images/enf_add_rule_tcp_new.png){.thumbnail} |
 |:--|
 | - A priority (from 0 to 19, 0 being the first rule to be applied, followed by the others) <br> - An action (`Accept`{.action} or `Deny`{.action}) <br> - The protocol <br> - Source IP (optional) <br> - The source port or port range (optional) <br> - The destination port or port range (optional) <br> - The TCP state (optional) <br> - Fragments (optional) |
 
@@ -132,7 +135,9 @@ When configuring a TCP or UDP rule with a port or port range, ensure the source 
 > [!warning]
 > Firewall setups with only `Accept` mode rules are not effective at all. There must be an instruction as to which traffic should be dropped by the firewall. You will see a warning unless such a `Deny` rule is created.
 > 
+<!-- CP-STEPS-END:add-firewall-rule -->
 
+<!-- CP-STEPS-START:enable-disable-firewall -->
 **Enable/disable firewall:**
 
 | ![activate-desactivate](images/enf_enable_disable_new.png) | 
@@ -142,6 +147,7 @@ When configuring a TCP or UDP rule with a port or port range, ensure the source 
 After confirmation, the firewall will be enabled or disabled.
 
 Note that rules are disabled until the moment an attack is detected - then they are activated. This logic can be used for rules that are only active when a known repeated attack is incoming.
+<!-- CP-STEPS-END:enable-disable-firewall -->
 
 ### Common mistakes and best practices
 
@@ -167,7 +173,9 @@ Creating rules allowing traffic over very large port ranges may be a security ri
 
 To make sure that only the standard ports for SSH (22), HTTP (80), HTTPS (443) and UDP (53) are left open when authorising the ICMP, follow the rules below:
 
+<!-- CP-STEPS-START:configuration-example -->
 ![Configuration example](images/exemple.png){.thumbnail}
+<!-- CP-STEPS-END:configuration-example -->
 
 The rules are sorted from 0 (the first rule read) to 19 (the last). The rule chain stops as soon as a rule is applied to the packet.
 
@@ -206,5 +214,7 @@ After reading this tutorial, you should be able to configure the Edge Network Fi
 ## Go further
 
 - [Protecting a game server with the application firewall](/pages/bare_metal_cloud/dedicated_servers/firewall_game_ddos)
+
+[Configuring Anti-DDoS for Solana on Dedicated Servers](/pages/bare_metal_cloud/dedicated_servers/blockchain_anti_ddos)
 
 Join our [community of users](/links/community).

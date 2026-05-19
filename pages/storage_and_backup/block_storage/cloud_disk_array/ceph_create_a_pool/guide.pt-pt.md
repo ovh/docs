@@ -1,4 +1,4 @@
-﻿---
+---
 title: Cloud Disk Array - Criação de pool (EN)
 excerpt: This guide shows you how to create a pool using the OVHcloud Control Panel or API
 updated: 2025-05-06

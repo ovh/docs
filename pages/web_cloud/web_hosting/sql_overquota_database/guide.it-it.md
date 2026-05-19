@@ -1,7 +1,7 @@
 ---
 title: "Hosting Web - Il mio database è saturo, cosa fare?"
 excerpt: "Questa guida ti mostra come agire in caso di saturazione del database"
-updated: 2025-02-19
+updated: 2026-04-01
 ---
 
 ## Obiettivo
@@ -25,7 +25,7 @@ Questa guida ti mostra le operazioni da effettuare quando il tuo database condiv
 
 ### Accesso allo Spazio Cliente OVHcloud
 
-- **Link diretto:** [Hosting plans](/links/control-panel/web-hosting)
+- **Link diretto:** [Hosting](/links/control-panel/web-hosting)
 - **Percorso di navigazione:** `Web Cloud`{.action} > `Hosting`{.action} > Seleziona il tuo hosting web
 
 ---
@@ -46,11 +46,11 @@ Una prima email viene inviata quando il tuo database ha consumato più di **80%*
 
 Quando il tuo database è in **overquota**, riceverai una terza email di avviso. Il tuo database passa in "*READ ONLY*" (sola lettura). Non è possibile aggiungere o modificare i record del tuo database, ma resta accessibile in **lettura** e in **eliminazione**. 
 
-### Step 1: identificare la o le tavole voluminose
+### 1 - Identificare la o le tavole voluminose
 
 Una banca dati è costituita da una o più **table**, costituite a loro volta da una o più **linee** organizzate con **colonne** predeterminate.
 
-Il primo step consiste nell'identificare le tavole voluminose presenti nel tuo database.
+Il primo passaggio consiste nell'identificare le tavole voluminose presenti nel tuo database.
 
 > [!primary]
 >
@@ -60,18 +60,19 @@ Il primo step consiste nell'identificare le tavole voluminose presenti nel tuo d
 > Questa applicazione di gestione database facilita la realizzazione delle azioni manuali che puoi effettuare con il tuo database.
 >
 >
-> Se il tuo database è presente su una soluzione [Web Cloud Databases](/links/web/databases), consulta la nostra guida "[Web Cloud Databases - Accedere al tuo database](/pages/web_cloud/web_cloud_databases/connecting-to-database-on-database-server)", quindi passa direttamente allo [step 1.2](#step1.2) della presente guida.
+> Se il tuo database è presente su una soluzione [Web Cloud Databases](/links/web/databases), consulta la nostra guida "[Web Cloud Databases - Accedere al tuo database](/pages/web_cloud/web_cloud_databases/connecting-to-database-on-database-server)", quindi passa direttamente alla [parte 1.2](#step1.2) della presente guida.
 
 #### 1.1 - Connettersi al database tramite phpMyAdmin
 
-Recupera le informazioni di accesso al database direttamente nel file di configurazione del tuo sito Web. Per effettuare questa operazione, utilizza lo step 1** della nostra guida su [modificare la password di un database](/pages/web_cloud/web_hosting/sql_change_password).
+Recupera le informazioni di accesso al database direttamente nel file di configurazione del tuo sito Web. Per effettuare questa operazione, utilizza la **parte 1** della nostra guida su [modificare la password di un database](/pages/web_cloud/web_hosting/sql_change_password).
 
+<!-- CP-STEPS-START:connect-phpmyadmin -->
 Per accedere al database tramite phpMyAdmin, clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **4** passi.
 
 > [!tabs]
 > **Passaggio 1**
 >>
->> Accedi alla pagina [Hosting plans](/links/control-panel/web-hosting), poi seleziona l'hosting Web interessato.
+>> Accedi alla pagina [Hosting](/links/control-panel/web-hosting), poi seleziona l'hosting Web interessato.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
@@ -96,6 +97,7 @@ Per accedere al database tramite phpMyAdmin, clicca sulle schede qui sotto per v
 >> ![phpMyAdmin Login interface](/pages/assets/screens/other/web-tools/phpmyadmin/pma-interface-login.png){.thumbnail}
 >>
 >> Inserisci le informazioni di accesso al database e clicca su `Connetti`{.action}.
+<!-- CP-STEPS-END:connect-phpmyadmin -->
 
 #### 1.2 - Ricerca le tavole più voluminose <a name="step1.2"></a>
 
@@ -114,9 +116,9 @@ Nella colonna di sinistra clicca su `"Nome del database"`{.action} e poi su `Tai
 
 ![phpMyAdmin Tables](/pages/assets/screens/other/web-tools/phpmyadmin/pma-check-size.png){.thumbnail}
 
-Le tavole più voluminose appaiono in cima alla tabella. Identificalo e passa allo **step 2**.
+Le tavole più voluminose appaiono in cima alla tabella. Identificalo e passa alla **parte 2**.
 
-### Step 2: determinare l'utilità del contenuto presente nella o nelle tabelle voluminose
+### 2 - Determinare l'utilità del contenuto presente nella o nelle tabelle voluminose
 
 Una volta identificate le tavole voluminose, accertati se l'intero contenuto è necessario per il funzionamento del tuo sito.
 
@@ -141,7 +143,7 @@ Di seguito trovi i link ai siti ufficiali dei CMS proposti per l'installazione "
 > Se il tuo sito è stato sviluppato "**manualmente**" da un provider specializzato, ti consigliamo di contattare quest'ultimo per ricevere assistenza.
 >
 
-### Step 3: intraprendere un'azione correttiva
+### 3 - Intraprendere un'azione correttiva
 
 Una volta stabilito se il contenuto delle tue tabelle è necessario per il funzionamento del tuo sito, puoi scegliere tra diverse opzioni:
 
@@ -154,7 +156,7 @@ Una volta stabilito se il contenuto delle tue tabelle è necessario per il funzi
 > Per aumentare le dimensioni del database, è necessario creare un nuovo database più grande e copiare il contenuto dal database precedente a quello nuovo. Infatti, non è possibile aumentare direttamente la dimensione di un database associato a un hosting Web.
 >
 
-Consulta la nostra offerta di database [Web Cloud Databasess](/links/web/databases) per scegliere il tuo nuovo servizio di database. 
+Consulta la nostra offerta di database [Web Cloud Databases](/links/web/databases) per scegliere il tuo nuovo servizio di database. 
 
 Consigliamo questa offerta per database voluminosi.
 
@@ -163,7 +165,7 @@ Consigliamo questa offerta per database voluminosi.
 In caso di migrazione verso un database esterno alle offerte [Start SQL](/links/web/hosting-options-startsql) e [Web Cloud Databases](/links/web/databases), è possibile spostare manualmente il contenuto del vecchio database verso un nuovo database utilizzando le nostre guide:
 
 - [Esporta il tuo database esistente](/pages/web_cloud/web_hosting/sql_database_export)
-- [Iniziare a utilizzare l'offerta Web Cloud Databasess](/pages/web_cloud/web_cloud_databases/starting_with_clouddb)
+- [Iniziare a utilizzare l'offerta Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb)
 - [Importare il tuo database precedente nella tua offerta Web Cloud Databases](/pages/web_cloud/web_cloud_databases/restore-import-on-database-server)
 
 #### Caso n. 2 - Una parte o l'insieme del contenuto della tavola voluminosa non è necessaria al funzionamento del tuo sito
@@ -225,22 +227,23 @@ DROP TABLE `table_1`
 
 > In questo esempio, il comando elimina la tavola **table_1** e tutte le righe che contiene.
 
-### Step 4: rimuovi il database dallo stato "READ ONLY" (sola lettura)
+### 4 - Rimuovi il database dallo stato "READ ONLY" (sola lettura)
 
 I nostri robot, responsabili delle verifiche delle quote, passano regolarmente sulle nostre infrastrutture.
-Se durante l’accesso ai servizi il tuo database non è più in **overquota**, rimuovono automaticamente lo stato "READ ONLY" (sola lettura).
+Se durante l'accesso ai servizi il tuo database non è più in **overquota**, rimuovono automaticamente lo stato "READ ONLY" (sola lettura).
 Una volta completate le operazioni necessarie sul database, è sufficiente attendere fino a quando i nostri robot non verranno spostati sui servizi.
 
 Tuttavia, è possibile forzare il passaggio ai servizi per accelerare il processo. Per farlo, chiedi ai nostri robot di ricalcolare la quota del tuo servizio/database.
 
 #### Ricalcola la quota per un database incluso nel piano di hosting Web
 
+<!-- CP-STEPS-START:recalculate-quota-web-hosting -->
 Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **4** passi.
 
 > [!tabs]
 > **Passaggio 1**
 >>
->> Accedi alla pagina [Hosting plans](/links/control-panel/web-hosting), poi seleziona l'hosting Web interessato.
+>> Accedi alla pagina [Hosting](/links/control-panel/web-hosting), poi seleziona l'hosting Web interessato.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
@@ -265,25 +268,21 @@ Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **4** pa
 >> Una volta avviata, l'operazione potrebbe richiedere alcuni minuti. Al termine, lo stato "READ ONLY" del database scompare.
 >> Il database sarà di nuovo pienamente operativo.
 >>
+<!-- CP-STEPS-END:recalculate-quota-web-hosting -->
 
 #### Ricalcola la quota di un database ospitato su una soluzione Web Cloud Databases
 
-Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **3** passi.
+<!-- CP-STEPS-START:recalculate-quota-web-cloud-databases -->
+Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **2** passi.
 
 > [!tabs]
 > **Passaggio 1**
 >>
->> Accedi allo [Spazio Cliente OVHcloud](/links/manager) e clicca su `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Passaggio 2**
->>
->> Clicca sul menu `Web Cloud Databases`{.action} e seleziona la soluzione Web Cloud Databases interessata.
+>> Accedi alla pagina [Web Cloud Databases](/links/control-panel/web-cloud-databases) e seleziona la soluzione Web Cloud Databases interessata.
 >>
 >> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases.png){.thumbnail}
 >>
-> **Passaggio 3**
+> **Passaggio 2**
 >>
 >> Nel riquadro **Informazioni generali** visualizzi la voce **Spazio utilizzato**. Clicca sui tre puntini `...`{.action} a destra e poi su `Aggiorna la quota del tuo database`{.action}.
 >>
@@ -292,6 +291,7 @@ Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **3** pa
 >> Una volta avviata, l'operazione potrebbe richiedere alcuni minuti. Al termine, lo stato "READ ONLY" del database scompare.
 >> Il database sarà di nuovo pienamente operativo.
 >>
+<!-- CP-STEPS-END:recalculate-quota-web-cloud-databases -->
 
 ## Per saperne di più <a name="go-further"></a>
 

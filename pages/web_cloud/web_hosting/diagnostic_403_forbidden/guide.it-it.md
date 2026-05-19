@@ -44,30 +44,20 @@ In seguito al rilevamento di un funzionamento sospetto, i nostri sistemi di sicu
 - Disporre di una [soluzione di hosting Web](/links/web/hosting) OVHcloud
 - Disporre delle [credenziali di accesso](/pages/web_cloud/web_hosting/ftp_connection) allo spazio di storage FTP dell'hosting
 
-<!-- CP-NAV-START:web-hosting -->
----
-
-### Accesso allo Spazio Cliente OVHcloud
-
-- **Link diretto:** [Hosting plans](/links/control-panel/web-hosting)
-- **Percorso di navigazione:** `Web Cloud`{.action} > `Hosting`{.action} > Seleziona il tuo hosting web
-
----
-<!-- CP-NAV-END:web-hosting -->
 
 ## Procedura
 
-### Step 1: analizzare la situazione
+### 1 - Analizzare la situazione
 
 Se la pagina **"403 forbidden"** è apparsa in seguito a una modifica del tuo sito Web, [ripristina totalmente o in parte lo spazio di storage FTP del tuo hosting](/pages/web_cloud/web_hosting/ftp_save_and_backup) a una data precedente.
 
 Se i backup disponibili non ti permettono di ripristinare l'accesso al tuo sito Web, contatta uno dei [provider specializzati](/links/partner).
 
-Se la pagina **"403 forbidden"** non è apparsa a seguito di una modifica del tuo sito web, consulta il tuo servizio di posta elettronica. Se hai ricevuto un'email dai nostri servizi che indica la chiusura del tuo hosting Web per motivi di sicurezza, passa direttamente allo Step 2 della presente guida.
+Se la pagina **"403 forbidden"** non è apparsa a seguito di una modifica del tuo sito web, consulta il tuo servizio di posta elettronica. Se hai ricevuto un'email dai nostri servizi che indica la chiusura del tuo hosting Web per motivi di sicurezza, passa direttamente alla [parte 2](#step-2) della presente guida.
 
 Se la pagina **"403 forbidden"** è apparsa senza azione da parte tua e non hai ricevuto alcuna email dai nostri servizi a questo proposito, verifica i diritti di accesso FTP (CHMOD) dei tuoi file/cartelle e il codice contenuto nei tuoi file **.htaccess**. Verifica che questa situazione non sia causata da un plugin di sicurezza o da un firewall applicativo. In caso di necessità, contatta un [fornitore specializzato](/links/partner).
 
-### Step 2: rendere sicure le tue soluzioni <a name="step-2"></a>
+### 2 - Rendere sicure le tue soluzioni <a name="step-2"></a>
 
 Verifica la sicurezza della tua o delle tue postazioni/dispositivi informatici:
 
@@ -88,7 +78,7 @@ Verifica la sicurezza della tua o delle tue postazioni/dispositivi informatici:
 > In caso di dubbi sulle operazioni da effettuare, contatta i [partner OVHcloud](/links/partner).
 >
 
-### Step 3: intervenire sul tuo hosting
+### 3 - Intervenire sul tuo hosting
 
 Annota innanzitutto la data di invio dell'email di OVHcloud che indica la disattivazione del tuo hosting Web, nonché la o le cartelle che contengono esempi di file illegittimi.
 
@@ -122,10 +112,10 @@ Se il tuo hosting è stato chiuso più di due settimane fa, contatta un [provide
 
 > [!success]
 >
-> Per maggiori informazioni sui [step 2 e 3](#step-2), consulta la nostra guida su [le azioni da effettuare in caso di hacking del tuo sito Web](/pages/web_cloud/web_hosting/cms_what_to_do_if_your_site_is_hacked).
+> Per maggiori informazioni sulle [parti 2 e 3](#step-2), consulta la nostra guida su [le azioni da effettuare in caso di hacking del tuo sito Web](/pages/web_cloud/web_hosting/cms_what_to_do_if_your_site_is_hacked).
 >
 
-### Step 4: riattiva il tuo hosting con FileZilla <a name="reactivate-web-hosting"></a>
+### 4 - Riattiva il tuo hosting con FileZilla <a name="reactivate-web-hosting"></a>
 
 > [!warning]
 >

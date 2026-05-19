@@ -1,6 +1,6 @@
 ---
-title: "Configuring an IPv6 address on a virtual machine"
-excerpt: "Find out how to configure an IPv6 address on a virtual machine for Proxmox VE or Microsoft Hyper-V Server on an OVHcloud Dedicated Server"
+title: "Configure IPv6 on a VM on a Dedicated Server"
+excerpt: "Configure an IPv6 address on a Proxmox VE or Hyper-V virtual machine running on an OVHcloud dedicated server."
 updated: 2024-10-18
 ---
 
@@ -61,9 +61,11 @@ The first step is to retrieve the IPv6 gateway assigned to your server. Two meth
 
 #### Via the OVHcloud Control Panel
 
+<!-- CP-STEPS-START:find-ipv6-gateway-cp -->
 The IPv6 gateway assigned to your server is displayed in the `Network` section of the `General information`{.action} tab.
 
-![configure ipv6](images/ipv6_information.png){.thumbnail}
+![Server dashboard Network section showing IPv6 gateway](images/ipv6_information.png){.thumbnail}
+<!-- CP-STEPS-END:find-ipv6-gateway-cp -->
 
 #### Via OVHcloud APIs
 
@@ -91,7 +93,7 @@ The first step is to create the virtual machine in Proxmox VE.
 
 Once you have logged in to the Proxmox dashboard, click on your server name in the left-hand corner, then `Create VM`{.action}.
 
-![create vm](images/create_vm_proxmox.png){.thumbnail}
+![Proxmox dashboard with Create VM button highlighted](images/create_vm_proxmox.png){.thumbnail}
 
 **Create: Virtual Machine**
 
@@ -100,18 +102,18 @@ Once you have logged in to the Proxmox dashboard, click on your server name in t
 >>
 >> **Name:** Enter a name for your VM.
 >>
->>![create vm](images/create_vm_name.png){.thumbnail}
+>>![VM creation General tab with name field](images/create_vm_name.png){.thumbnail}
 >>
 > **OS**
 >> Click the dropdown arrow next to `ISO image` to select the image of your choice. In our example, we use ubuntu 24.04 ISO.
 >>
->>![iso image](images/select_iso.png){.thumbnail}
+>>![OS tab with Ubuntu ISO image selected from dropdown](images/select_iso.png){.thumbnail}
 >>
 > **Confirm**
 >>
 >> Once you have done this, click `Finish`{.action} to create the VM.
 >>
->>![create vm](images/create_vm.png){.thumbnail}
+>>![VM creation Confirm tab with Finish button](images/create_vm.png){.thumbnail}
 >>
 
 Once the operating system has been installed on the virtual machine, you can [configure](#configurationsteps) the IPv6 address.
@@ -120,21 +122,21 @@ Once the operating system has been installed on the virtual machine, you can [co
 
 Once you have created your container, click on it in the left-hand menu. Then click `Network`{.action}.
 
-![container configuration](images/container_network.png){.thumbnail}
+![Proxmox container Network tab with interface listed](images/container_network.png){.thumbnail}
 
 Select the existing network and click `Edit`{.action}.
 
-![container configuration](images/edit_network.png){.thumbnail}
+![Edit network interface dialog for the container](images/edit_network.png){.thumbnail}
 
 Fill in the IPv6 fields with the correct information.
 
-![container configuration](images/configure_ipv6_container.png){.thumbnail}
+![IPv6 address and gateway fields in container network config](images/configure_ipv6_container.png){.thumbnail}
 
 Once you have done this, click `OK`{.action} to save the changes.
 
 Log in to your container to verify IPv6 connectivity with the `ping` command:
 
-![ping](images/container_ubuntu.png){.thumbnail}
+![Successful IPv6 ping from the Proxmox container](images/container_ubuntu.png){.thumbnail}
 
 #### Windows Server / Hyper-V
 
@@ -157,11 +159,11 @@ In the Hyper-V Manager, create a new virtual switch and set the connection type 
 
 Select the adapter with the server’s IP, then tick the option `Allow management operating system to share this network adapter`{.action}.
 
-![virtual switch](images/virtual_switch.png){.thumbnail}
+![Hyper-V Virtual Switch Manager with External type selected](images/virtual_switch.png){.thumbnail}
 
 Next, go to the settings of the VM and click on `Network Adapter`{.action} in the left-hand tab. From the drop down list, select the virtual switch created earlier and click on `Apply`{.action}, then on `OK`{.action}.
 
-![virtual switch](images/virtual_switch_1.png){.thumbnail}
+![VM settings Network Adapter with virtual switch assigned](images/virtual_switch_1.png){.thumbnail}
 
 Once you have installed the operating system on the virtual machine, you can proceed with the [configuration](#configurationsteps) of the IPv6 IP address.
 
@@ -209,7 +211,7 @@ sudo netplan apply
 
 To test your IPv6 connectivity, run the `ping` command at `2001:4860:4860::8888`:
 
-![ping](images/vm_ubuntu.png){.thumbnail}
+![Successful IPv6 ping result on Ubuntu VM](images/vm_ubuntu.png){.thumbnail}
 
 #### Configuration based on ENI
 
@@ -243,7 +245,7 @@ sudo systemctl restart networking.service
 
 To test your IPv6 connectivity, run the `ping` command at `2001:4860:4860::8888`:
 
-![ping](images/vm_debian.png){.thumbnail}
+![Successful IPv6 ping result on Debian VM](images/vm_debian.png){.thumbnail}
 
 #### Configuration based on NetworkManager
 
@@ -259,7 +261,7 @@ cd /etc/NetworkManager/system-connections
 
 Use the `ls` command to display the network configuration file. In our example, our file is named `ens18.nmconnection`.
 
-![ls](images/ls_command.png){.thumbnail}
+![Terminal listing NetworkManager connection files](images/ls_command.png){.thumbnail}
 
 Next, configure the IPv6 address of your choice by replacing *YOUR_IPV6*, *IPV6_PREFIX* and *IPV6_GATEWAY* with your own values.
 
@@ -285,8 +287,12 @@ sudo systemctl restart NetworkManager
 
 To test your IPv6 connectivity, run the `ping` command at `2001:4860:4860::8888`:
 
-![ping](images/vm_alma_rocky.png){.thumbnail}
+![Successful IPv6 ping result on Fedora VM](images/vm_alma_rocky.png){.thumbnail}
 
 ## Go further
+
+[Configuring IPv6 on Dedicated Servers](/pages/bare_metal_cloud/dedicated_servers/network_ipv6)
+
+[Dedicated Server - Configuring Additional IPs in Bridge Mode](/pages/bare_metal_cloud/dedicated_servers/network_bridging)
 
 Join our [community of users](/links/community).

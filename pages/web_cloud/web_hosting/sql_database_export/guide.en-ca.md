@@ -1,7 +1,7 @@
 ---
-title: 'Retrieving the backup of a Web Hosting plan’s database'
+title: 'Retrieving the backup of a Web Hosting plan''s database'
 excerpt: 'Find out how to retrieve a database backup from your OVHcloud Web Hosting plan'
-updated: 2025-10-08
+updated: 2026-04-01
 ---
 
 ## Objective
@@ -41,7 +41,7 @@ Before you begin, define the method you will follow to retrieve the backup of yo
 
 > [!success]
 >
-> If you are backing up your database because it is full/full, please read our tutorial “[What should I do when my database is full?](/pages/web_cloud/web_hosting/sql_overquota_database)”.
+> If you are backing up your database because it is full/full, please read our tutorial "[What should I do when my database is full?](/pages/web_cloud/web_hosting/sql_overquota_database)".
 >
 
 Some of the methods above are not inherent to an OVHcloud interface. You will therefore need to rely on your own knowledge to carry out this procedure. Some information is provided below, but it is not a substitute for the assistance provided by a webmaster if you have difficulties performing it alone.
@@ -57,6 +57,7 @@ We recommend reading this guide, and focusing on the backup method you wish to u
 
 ### Retrieve a backup via the OVHcloud tool
 
+<!-- CP-STEPS-START:retrieve-backup-ovhcloud-tool -->
 To access the OVHcloud backup tool, click on the tabs below to view each of the **3** steps.
 
 > [!tabs]
@@ -79,38 +80,86 @@ To access the OVHcloud backup tool, click on the tabs below to view each of the 
 >> ![Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/tab.png){.thumbnail}
 >>
 >> The table that opens will contain all of the databases created as part of your Web Hosting plan. You can now choose between creating a new backup, or recovering an existing one, in two separate steps.
+<!-- CP-STEPS-END:retrieve-backup-ovhcloud-tool -->
 
-#### Step 1: Create a new backup of the database
+#### 1 - Create a new backup of the database
 
-In the `Databases`{.action} tab, click the `...`{.action} button to the right of the database you want to back up, then `Create a backup`{.action}.
+<!-- CP-STEPS-START:create-new-backup -->
+To create a new backup, click on the tabs below to view each of the **4** steps.
 
-![databasedump](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/create-a-backup.png){.thumbnail}
+> [!tabs]
+> **Step 1**
+>>
+>> Go to the [Hosting plans](/links/control-panel/web-hosting) page, then select the web hosting plan concerned.
+>>
+> **Step 2**
+>>
+>> On the page that pops up, click on the `Databases`{.action} tab.
+>>
+> **Step 3**
+>>
+>> Click the `...`{.action} button to the right of the database you want to back up, then `Create a backup`{.action}.
+>>
+>> ![databasedump](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/create-a-backup.png){.thumbnail}
+>>
+> **Step 4**
+>>
+>> In the window that pops up, select the date you want to back up, then click the `Next`{.action} button. Check that the information in the summary is correct, then click `Confirm`{.action} to begin the procedure.
+>>
+>> ![databasedump](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/create-a-database-backup-step-1.png){.thumbnail}
+>>
+>> Wait for the backup to complete. Once it is available, you can retrieve it.
+<!-- CP-STEPS-END:create-new-backup -->
 
-In the window that pops up, select the date you want to back up, then click the `Next`{.action} button. Check that the information in the summary is correct, then click `Confirm`{.action} to begin the procedure.
+#### 2 - Retrieve a backup of the database
 
-Wait for the backup to complete. Once it is available, you can retrieve it.
+<!-- CP-STEPS-START:retrieve-existing-backup -->
+To retrieve an existing backup, click on the tabs below to view each of the **4** steps.
 
-![databasedump](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/create-a-database-backup-step-1.png){.thumbnail}
-
-#### Step 2: Retrieve a backup of the database
-
-In the `Databases`{.action} tab, click the `...`{.action} button to the right of the database you want to back up, then `Restore a backup`{.action}.
-
-![databasedump](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/restore-backup.png){.thumbnail}
-
-The table that opens contains all of the available backups for the selected database. You can view the exact date on which backups were taken, as well as the date on which they will be deleted from the OVHcloud tool.
-
-To download a backup, click on the `...`{.action} button to the right of the backup you want to retrieve, then on `Download the backup`{.action}. A window will pop up, prompting you to save it to your machine. Accept, then wait for the backup to be downloaded.
-
-![databasedump](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/download-the-backup.png){.thumbnail}
+> [!tabs]
+> **Step 1**
+>>
+>> Go to the [Hosting plans](/links/control-panel/web-hosting) page, then select the web hosting plan concerned.
+>>
+> **Step 2**
+>>
+>> On the page that pops up, click on the `Databases`{.action} tab.
+>>
+> **Step 3**
+>>
+>> Click the `...`{.action} button to the right of the database concerned, then `Restore a backup`{.action}.
+>>
+>> ![databasedump](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/restore-backup.png){.thumbnail}
+>>
+>> The table that opens contains all of the available backups for the selected database. You can view the exact date on which backups were taken, as well as the date on which they will be deleted from the OVHcloud tool.
+>>
+> **Step 4**
+>>
+>> To download a backup, click on the `...`{.action} button to the right of the backup you want to retrieve, then on `Download the backup`{.action}. Accept the download to your machine, then wait for the backup to be downloaded.
+>>
+>> ![databasedump](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/download-the-backup.png){.thumbnail}
+<!-- CP-STEPS-END:retrieve-existing-backup -->
 
 ### Retrieve a backup via the phpMyAdmin web interface
 
-To do this, log in to *phpMyAdmin*. To find the access link for this interface, log in to your [OVHcloud Control Panel](/links/manager) , then go to the `Web Cloud`{.action} section. In the left-hand column, click `Hosting plans`{.action}, then choose the name of the web hosting plan concerned. Go to the `Databases`{.action} tab.
+<!-- CP-STEPS-START:retrieve-backup-phpmyadmin -->
+To do this, log in to *phpMyAdmin*. To do this, click on the tabs below to view each of the **3** steps.
 
-The table that opens will contain all of the databases created as part of your Web Hosting plan. In this window, click the `...`{.action} button to the right of the database concerned, then `Go to phpMyAdmin`{.action}.
-
-![databasedump](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/go-to-phpmyadmin.png){.thumbnail}
+> [!tabs]
+> **Step 1**
+>>
+>> Go to the [Hosting plans](/links/control-panel/web-hosting) page, then select the web hosting plan concerned.
+>>
+> **Step 2**
+>>
+>> On the page that pops up, click on the `Databases`{.action} tab.
+>>
+> **Step 3**
+>>
+>> Click the `...`{.action} button to the right of the database concerned, then `Go to phpMyAdmin`{.action}.
+>>
+>> ![databasedump](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/go-to-phpmyadmin.png){.thumbnail}
+<!-- CP-STEPS-END:retrieve-backup-phpmyadmin -->
 
 Once you have reached the interface for connecting to *phpMyAdmin*, enter the information for the database, then log in. Once you have logged in, go to the `Export`{.action} tab, where you can choose from two export methods:
 
@@ -119,7 +168,7 @@ Once you have reached the interface for connecting to *phpMyAdmin*, enter the in
 
 > [!warning]
 >
-> Since the *phpMyAdmin* interface was not created by OVHcloud, you will need to rely on your own knowledge to carry out the manipulation. We recommend contacting a [specialist provider](/links/partner) and/or getting in touch with the interface’s publisher if you experience any difficulties. We will not be able to assist you with this.
+> Since the *phpMyAdmin* interface was not created by OVHcloud, you will need to rely on your own knowledge to carry out the manipulation. We recommend contacting a [specialist provider](/links/partner) and/or getting in touch with the interface's publisher if you experience any difficulties. We will not be able to assist you with this.
 >
 
 ### Retrieve a backup using a script
@@ -131,7 +180,7 @@ There are several steps to this process. Make sure you have the information you 
 > This solution requires programming skills. You will find below some information on how to proceed. However, we recommend contacting a [specialist provider](/links/partner) if you experience any difficulties. We will not be able to assist you with this.
 >
 
-#### Step 1: Create the backup script
+#### 1 - Create the backup script
 
 The first step is to create the script that will carry out the database backup. Below is an example of a script that can help you with this process. However, if you encounter any difficulties, this example alone will not replace the support that a webmaster can provide.
 
@@ -151,19 +200,19 @@ Please ensure that you replace the generic information in this script with the i
 |name_of_database|The name of the database concerned.|
 |backup_file_name|The name that the backup file will have after it runs.|
 
-#### Step 2: Download the script to the FTP storage space
+#### 2 - Download the script to the FTP storage space
 
-Once the backup script has been created, you will need to upload it to your web hosting plan’s FTP storage space. To do this, please refer to the information described in step 2 of the guide titled [Log in to your storage space](/pages/web_cloud/web_hosting/hosting_how_to_get_my_website_online).
+Once the backup script has been created, you will need to upload it to your web hosting plan's FTP storage space. To do this, please refer to the information described in step 2 of the guide titled [Log in to your storage space](/pages/web_cloud/web_hosting/hosting_how_to_get_my_website_online).
 
 To complete the following steps, download the script to the folder that contains the website that uses the database. **Be particularly careful about the name of the backup script file.** Do not overwrite an existing file with the same name on the FTP storage space when you upload the script. If you see a warning message like this, change the name of the newly created script and try downloading it again.
 
-#### Step 3: Call the script
+#### 3 - Call the script
 
 As soon as the script is uploaded to the FTP storage space, initiate the code in it by calling the script.
 
-To do this, go to the full URL of the script from your web browser (e.g. mypersonaldomain.ovh/backup.php if you have named your script “backup.php”). If the information entered in the script is correct, the backup is initiated. Wait a few moments for it to run. If it is not, check the information entered in the script and try the operation again.
+To do this, go to the full URL of the script from your web browser (e.g. mypersonaldomain.ovh/backup.php if you have named your script "backup.php"). If the information entered in the script is correct, the backup is initiated. Wait a few moments for it to run. If it is not, check the information entered in the script and try the operation again.
 
-#### Step 4: Retrieve the backup from the FTP storage space
+#### 4 - Retrieve the backup from the FTP storage space
 
 Once the backup is complete, retrieve it from the folder where the backup script was downloaded. The database backup must have the name that was previously defined in the script. Now you just need to retrieve the backup from your own device.
 
@@ -171,7 +220,7 @@ Before you finish, we strongly advise deleting the backup file and the script fr
 
 > [!primary]
 >
-> Using a backup script with our scheduled job system (“CRON” jobs) can allow you to automate backups at the frequency of your choice. Find out more about scheduled tasks in our guide: “[Setting up a scheduled task (CRON) on your web hosting plan](/pages/web_cloud/web_hosting/cron_tasks)”.
+> Using a backup script with our scheduled job system ("CRON" jobs) can allow you to automate backups at the frequency of your choice. Find out more about scheduled tasks in our guide: "[Setting up a scheduled task (CRON) on your web hosting plan](/pages/web_cloud/web_hosting/cron_tasks)".
 >
 
 ### Retrieve a backup via an SSH command

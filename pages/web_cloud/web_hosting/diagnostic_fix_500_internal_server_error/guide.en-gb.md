@@ -26,16 +26,6 @@ These errors may also come from updates carried out **automatically** by compone
 - an [OVHcloud Web Hosting plan](/links/web/hosting)
 - being up-to-date in the [payments](/pages/account_and_service_management/managing_billing_payments_and_services/invoice_management#pay-bills) and [renewals](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#renewal-management) of related services (domain name and web hosting plan)
 
-<!-- CP-NAV-START:web-hosting -->
----
-
-### OVHcloud Control Panel Access
-
-- **Direct link:** [Hosting plans](/links/control-panel/web-hosting)
-- **Navigation path:** `Web Cloud`{.action} > `Hosting plans`{.action} > Select your web hosting plan
-
----
-<!-- CP-NAV-END:web-hosting -->
 
 ## Instructions
 

@@ -1,6 +1,6 @@
 ---
-title: Migrar um Additional IP
-excerpt: Saiba como migrar um Additional IP a partir da Área de Cliente ou através das API OVHcloud
+title: "Deslocar um Additional IP num servidor dedicado"
+excerpt: "Desloque um endereço Additional IP entre servidores dedicados através da área de cliente OVHcloud ou da API"
 updated: 2026-01-21
 ---
 
@@ -86,13 +86,13 @@ Pode utilizar o menu suspenso em **Os meus endereços IP públicos e serviços a
 
 Clique no botão `⁝`{.action} à direita do endereço IP a ser movido e, em seguida, em `Mover Additional IP`{.action}.
 
-![Área de Cliente](images/move_ip_1_new.png){.thumbnail}
+![Menu contextual para deslocar um Additional IP](images/move_ip_1_new.png){.thumbnail}
 
 No menu contextual que aparece, selecione o serviço para o qual deseja mover o endereço IP.
 
 Clique em `Seguinte`{.action} e depois em `Confirmar`{.action}.
 
-![Área de Cliente](images/move_ip_2_new.png){.thumbnail}
+![Selecionar o serviço de destino para o Additional IP](images/move_ip_2_new.png){.thumbnail}
 
 > [!warning]
 > Tenha em atenção que, para alguns produtos, os endereços IP (ou blocos) devem primeiro ser movidos para um **Parking IP** (um local de armazenamento temporário), antes de poderem ser movidos para o produto desejado.
@@ -135,46 +135,46 @@ Para migrar um Additional IP de uma conta SYS para uma conta OVHcloud, deve ter 
 
 Para começar, inicie sessão na sua conta So you Start e clique em `IP`{.action} no painel principal.
 
-![soyoustart to ovh](images/sys-ip-section.png){.thumbnail}
+![Secção IP So you Start no painel de controlo](images/sys-ip-section.png){.thumbnail}
 
 Clique no botão de definições (em forma de engrenagem `⚙`{.action}) ao lado do endereço IP correspondente e selecione `Migrar o IP FO`{.action}.
 
-![soyoustart to ovh](images/move-ip-sys.png){.thumbnail}
+![Opção Deslocar o IP failover no menu So you Start](images/move-ip-sys.png){.thumbnail}
 
 Selecione `Migrar para um serviço OVH`{.action}, introduza o seu ID de cliente OVHcloud e clique em `Seguinte`{.action}.
 
-![soyoustart to ovh](images/move-to-ovh.png){.thumbnail}
+![Selecionar Deslocar para um serviço OVH e introduzir o NIC handle](images/move-to-ovh.png){.thumbnail}
 
 Isso irá gerar um código (token). Guarde-o.
 
-![soyoustart to ovh](images/token-id.png){.thumbnail}
+![Código token gerado para a transferência de IP](images/token-id.png){.thumbnail}
 
 Em seguida, [inicie sessão na sua conta OVHcloud](/links/manager), clique em `Network`{.action} no menu à esquerda do ecrã e, a seguir, em `Endereços IP Públicos`{.action}.
 
 Clique no botão de definições (em forma de engrenagem `⚙`{.action}) à direita e selecione `Importar os meus endereços IP da SyS para a OVHcloud`{.action}.
 
-![soyoustart to ovh](images/import-ip-to-ovh.png){.thumbnail}
+![Opção Importar endereços IP de SyS para OVHcloud](images/import-ip-to-ovh.png){.thumbnail}
 
 Aparecerá uma janela pop-up. Introduza o endereço Additional IP (ou o bloco) e o código recuperado na conta So you Start no campo `Token`. Em seguida, clique em `Seguinte`{.action}.
 
-![soyoustart to ovh](images/Step-1.png){.thumbnail}
+![Introduzir o Additional IP e o token para a importação](images/Step-1.png){.thumbnail}
 
 Selecione o servidor de destino e clique em `Seguinte`{.action}. Se o servidor dedicado for compatível com o endereço IP, será exibida uma mensagem verde. Caso contrário, receberá uma mensagem de erro.
 
-![soyoustart to ovh](images/Step-2.png){.thumbnail}<br>
-![soyoustart to ovh](images/Step-2.1.png){.thumbnail}
+![Selecionar o servidor de destino com verificação de compatibilidade](images/Step-2.png){.thumbnail}<br>
+![Mensagem de confirmação de compatibilidade do servidor](images/Step-2.1.png){.thumbnail}
 
 Na janela seguinte, a duração é selecionada automaticamente e os custos são exibidos. Clique em `Seguinte`{.action} para continuar.
 
-![soyoustart to ovh](images/Step-3.png){.thumbnail}
+![Resumo da duração e dos custos para a transferência de IP](images/Step-3.png){.thumbnail}
 
 Marque a caixa `Aceitar os contratos`{.action} para aceitar os termos de utilização após os ter lido. Em seguida, clique em `Seguinte`{.action}.
 
-![soyoustart to ovh](images/Step-4.png){.thumbnail}
+![Caixa de aceitação dos contratos para a transferência de IP](images/Step-4.png){.thumbnail}
 
 Anote o resumo do pedido e clique em `Confirmar`{.action} para validá-lo.
 
-![soyoustart to ovh](images/Step-5.png){.thumbnail}
+![Resumo e confirmação da encomenda para a transferência de IP](images/Step-5.png){.thumbnail}
 
 Será redirecionado para uma nova página para efetuar o pagamento.
 

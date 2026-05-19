@@ -49,6 +49,7 @@ A única diferença é que o SFTP utiliza um canal seguro para trocar dados. Os 
 
 **Clique numa das duas linhas abaixo, consoante a sua oferta de alojamento web, para ver as explicações.**
 
+<!-- CP-STEPS-START:enable-sftp-starter-perso -->
 /// details | Ativar o SFTP numa oferta de alojamento web **gratuita 100M**, **Starter** ou **Perso**
 
 Clique nos separadores abaixo para visualizar cada uma das **3** etapas.
@@ -76,7 +77,9 @@ Clique nos separadores abaixo para visualizar cada uma das **3** etapas.
 >>
 
 ///
+<!-- CP-STEPS-END:enable-sftp-starter-perso -->
 
+<!-- CP-STEPS-START:enable-sftp-pro-performance -->
 /// details | Ativar o SFTP numa oferta de alojamento web **Pro** ou **Performance**
 
 Clique nos separadores abaixo para visualizar cada uma das **4** etapas.
@@ -112,6 +115,7 @@ Clique nos separadores abaixo para visualizar cada uma das **4** etapas.
 >> Em seguida, clique em `Seguinte`{.action}, depois em `Validar`{.action} para concluir a ativação do SFTP para o utilizador desejado.
 
 ///
+<!-- CP-STEPS-END:enable-sftp-pro-performance -->
 
 ### Conectar-se em SFTP à sua alojamento web
 

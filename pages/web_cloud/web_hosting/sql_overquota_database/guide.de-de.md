@@ -1,7 +1,7 @@
 ---
 title: "Webhosting - Was tun, wenn meine Datenbank voll ist?"
 excerpt: "Erfahren Sie hier, wie Sie vorgehen, wenn Ihre Datenbank voll ist"
-updated: 2025-02-19
+updated: 2026-04-01
 ---
 
 ## Ziel
@@ -45,7 +45,7 @@ Die erste E-Mail wird versandt, wenn Ihre Datenbank mehr als **80%** der Speiche
 
 Wenn Ihre Datenbank im Status **overquota** ist, erhalten Sie eine dritte Warnung per E-Mail. Ihre Datenbank wird dann auf *READ ONLY* umgestellt. Sie können dann Datenbankeinträge nicht mehr hinzufügen oder ändern, aber sie können weiterhin **gelesen** und **gelöscht** werden. 
 
-### Schritt 1: Identifizieren großer Tabellen
+### 1 - Identifizieren großer Tabellen
 
 Eine Datenbank besteht aus einer oder mehreren **Tabellen**, die ihrerseits aus einer oder mehreren **Zeilen** bestehen, die anhand vorgegebener **Spalten** organisiert sind.
 
@@ -58,12 +58,13 @@ Im ersten Schritt werden die großen Tabellen in der Datenbank identifiziert.
 > [phpMyAdmin](https://www.phpmyadmin.net/) ist für alle Webhosting-Datenbanken von OVHcloud verfügbar.
 > Mit dieser Anwendung zur Datenbankverwaltung können Sie manuelle Datenbank-Aktionen einfach durchführen.
 >
-> Wenn Ihre Datenbank auf einer [Web Cloud Databases](/links/web/databases) Lösung vorhanden ist, lesen Sie unsere Anleitung „[Web Cloud Databases - Verbindung mit Ihrer Datenbank herstellen](/pages/web_cloud/web_cloud_databases/connecting-to-database-on-database-server)“ und fahren Sie dann direkt mit [Schritt 1.2](#step1.2) dieser Anleitung fort.
+> Wenn Ihre Datenbank auf einer [Web Cloud Databases](/links/web/databases) Lösung vorhanden ist, lesen Sie unsere Anleitung „[Web Cloud Databases - Verbindung mit Ihrer Datenbank herstellen](/pages/web_cloud/web_cloud_databases/connecting-to-database-on-database-server)" und fahren Sie dann direkt mit [Teil 1.2](#step1.2) dieser Anleitung fort.
 
 #### 1.1 - Verbindung zur Datenbank über phpMyAdmin
 
-Das Passwort für den Zugriff auf Ihre Datenbank erhalten Sie direkt aus der Konfigurationsdatei Ihrer Seite. Führen Sie diese Aktion mithilfe von **Schritt 1** in unserer Anleitung zur [Änderung des Datenbankpassworts](/pages/web_cloud/web_hosting/sql_change_password) durch.
+Das Passwort für den Zugriff auf Ihre Datenbank erhalten Sie direkt aus der Konfigurationsdatei Ihrer Seite. Führen Sie diese Aktion mithilfe von **Teil 1** in unserer Anleitung zur [Änderung des Datenbankpassworts](/pages/web_cloud/web_hosting/sql_change_password) durch.
 
+<!-- CP-STEPS-START:connect-phpmyadmin -->
 Um sich über phpMyAdmin mit der Datenbank zu verbinden, klicken Sie auf die Tabs, um die **4** Schritte anzuzeigen.
 
 > [!tabs]
@@ -94,6 +95,7 @@ Um sich über phpMyAdmin mit der Datenbank zu verbinden, klicken Sie auf die Tab
 >> ![phpMyAdmin Login interface](/pages/assets/screens/other/web-tools/phpmyadmin/pma-interface-login.png){.thumbnail}
 >>
 >> Geben Sie die Zugangsdaten für Ihre Datenbank ein und klicken Sie auf `Anmeldung`{.action}.
+<!-- CP-STEPS-END:connect-phpmyadmin -->
 
 #### 1.2 - Finden der größten Tabellen <a name="step1.2"></a>
 
@@ -112,9 +114,9 @@ Klicken Sie in der linken Spalte auf `"Ihr Datenbankname"`{.action} und dann in 
 
 ![phpMyAdmin Tables](/pages/assets/screens/other/web-tools/phpmyadmin/pma-check-size.png){.thumbnail}
 
-Die größten Tabellen werden oben in der sortierten Liste angezeigt. Identifizieren Sie diese, und fahren Sie mit **Schritt 2** fort.
+Die größten Tabellen werden oben in der sortierten Liste angezeigt. Identifizieren Sie diese, und fahren Sie mit **Teil 2** fort.
 
-### Schritt 2: Bestimmen Sie den Nutzen des Inhalts großer Tabellen
+### 2 - Bestimmen Sie den Nutzen des Inhalts großer Tabellen
 
 Nachdem Sie die großen Tabellen identifiziert haben, bestimmen Sie, ob der gesamte Inhalt für das Funktionieren Ihrer Website erforderlich ist.
 
@@ -139,7 +141,7 @@ Hier finden Sie die Links zu den offiziellen CMS-Websites für die **1-Klick-Mod
 > Wenn es sich bei Ihrer Website um eine von einem spezialisierten Anbieter entwickelte, **personalisierte** Software handelt, empfehlen wir Ihnen, sich mit dem jeweiligen Anbieter in Verbindung zu setzen.
 >
 
-### Schritt 3: Korrekturmaßnahmen ergreifen
+### 3 - Korrekturmaßnahmen ergreifen
 
 Sobald Sie festgestellt haben, ob der Inhalt der Tabellen für das Funktionieren Ihrer Website erforderlich ist, stehen Ihnen mehrere Optionen zur Verfügung:
 
@@ -156,13 +158,13 @@ Konsultieren Sie unsere Angebotsseite [Web Cloud Databases](/links/web/databases
 
 Wir empfehlen diese Lösung für große Datenbanken.
 
-Es ist möglich, den Inhalt Ihrer OVHcloud Datenbank direkt in eine andere Ihrer OVHcloud Datenbanken zu kopieren, indem Sie eine Funktion in Ihrem [OVHcloud Kundencenter](/links/manager) nutzen. Weitere Informationen finden Sie in unserer Anleitung „[Inhalt einer Datenbank in eine andere duplizieren](/pages/web_cloud/web_hosting/copy_database)“.
+Es ist möglich, den Inhalt Ihrer OVHcloud Datenbank direkt in eine andere Ihrer OVHcloud Datenbanken zu kopieren, indem Sie eine Funktion in Ihrem [OVHcloud Kundencenter](/links/manager) nutzen. Weitere Informationen finden Sie in unserer Anleitung „[Inhalt einer Datenbank in eine andere duplizieren](/pages/web_cloud/web_hosting/copy_database)".
 
 Zur Migration auf eine Datenbank außerhalb der Angebote [Start SQL](/links/web/hosting-options-startsql) und [Web Cloud Databases](/links/web/databases) können Sie den Inhalt Ihrer alten Datenbank mithilfe unserer Anleitungen manuell in eine neue Datenbank verschieben:
 
 - [Exportieren Sie Ihre bestehende Datenbank](/pages/web_cloud/web_hosting/sql_database_export)
-- [Erste Schritte mit Web Cloud Databasess](/pages/web_cloud/web_cloud_databases/starting_with_clouddb)
-- [Importieren Sie Ihre alte Datenbank nach Web Cloud Databasess](/pages/web_cloud/web_cloud_databases/restore-import-on-database-server)
+- [Erste Schritte mit Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb)
+- [Importieren Sie Ihre alte Datenbank nach Web Cloud Databases](/pages/web_cloud/web_cloud_databases/restore-import-on-database-server)
 
 #### Fall 2 - Der Inhalt der großen Tabelle ist nicht oder nur teilweise für das Funktionieren Ihrer Website erforderlich
 
@@ -223,16 +225,17 @@ DROP TABLE `table_1`
 
 > In diesem Beispiel löscht der Befehl die Tabelle **table_1** und alle darin enthaltenen Zeilen.
 
-### Schritt 4: Status "READ ONLY" (schreibgeschützt) von der Datenbank entfernen
+### 4 - Status "READ ONLY" (schreibgeschützt) von der Datenbank entfernen
 
 Unsere Robots zur Quota-Überprüfung werden regelmäßig auf unseren Infrastrukturen aktiv.  
 Wenn festgestellt wird, dass Ihre Datenbank nicht mehr in **overquota** ist, wird automatisch der Status "READ ONLY" (schreibgeschützt) entfernt.
 Sobald Sie die notwendigen Operationen in Ihrer Datenbank durchgeführt haben, können Sie einfach warten, bis unsere Bots Ihre Dienste überprüft haben.
 
-Sie können jedoch die Statusänderung erzwingen, um den Vorgang zu beschleunigen. Hierzu können Sie beantragen, dass die Bots doe Quota Ihres Dienstes neu berechnen.
+Dennoch können Sie die Statusänderung erzwingen, um den Vorgang zu beschleunigen. Hierzu können Sie beantragen, dass die Bots die Quota Ihres Dienstes neu berechnen.
 
 #### Quota für eine bei Ihrem Webhosting Angebot enthaltene Datenbank neu berechnen
 
+<!-- CP-STEPS-START:recalculate-quota-web-hosting -->
 Klicken Sie auf die Tabs, um die **4** Schritte anzuzeigen.
 
 > [!tabs]
@@ -263,25 +266,21 @@ Klicken Sie auf die Tabs, um die **4** Schritte anzuzeigen.
 >> Der Vorgang kann einige Minuten dauern, nachdem er gestartet wurde. Wenn die Installation abgeschlossen ist, verschwindet der Status "READ ONLY" Ihrer Datenbank.  
 >> Ihre Datenbank ist nun wieder voll funktionsfähig.
 >>
+<!-- CP-STEPS-END:recalculate-quota-web-hosting -->
 
 #### Quota für eine Datenbank neu berechnen, die auf einer Web Cloud Databases Lösung gehostet wird
 
-Klicken Sie auf die Tabs, um die **3** Schritte anzuzeigen.
+<!-- CP-STEPS-START:recalculate-quota-web-cloud-databases -->
+Klicken Sie auf die Tabs, um die **2** Schritte anzuzeigen.
 
 > [!tabs]
 > **Schritt 1**
 >>
->> Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein und gehen Sie dann in den Bereich `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Schritt 2**
->>
->> Klicken Sie auf das Menü `Web Cloud Databases`{.action} und wählen Sie die betreffende Web Cloud Databases Lösung aus.
+>> Rufen Sie die Seite [Web Cloud Databases](/links/control-panel/web-cloud-databases) auf und wählen Sie die betreffende Web Cloud Databases-Lösung aus.
 >>
 >> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases.png){.thumbnail}
 >>
-> **Schritt 3**
+> **Schritt 2**
 >>
 >> Im Bereich **Allgemeine Informationen** finden Sie den Abschnitt **Speichernutzung**. Klicken Sie rechts auf den Button `...`{.action} und anschließend auf `Quota Ihrer Datenbank aktualisieren`{.action}.
 >>
@@ -290,6 +289,7 @@ Klicken Sie auf die Tabs, um die **3** Schritte anzuzeigen.
 >> Der Vorgang kann einige Minuten dauern, nachdem er gestartet wurde. Wenn die Installation abgeschlossen ist, verschwindet der Status "READ ONLY" Ihrer Datenbank.  
 >> Ihre Datenbank ist nun wieder voll funktionsfähig.
 >>
+<!-- CP-STEPS-END:recalculate-quota-web-cloud-databases -->
 
 ## Weiterführende Informationen <a name="go-further"></a>
 

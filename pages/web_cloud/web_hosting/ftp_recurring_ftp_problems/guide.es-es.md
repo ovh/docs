@@ -1,7 +1,7 @@
 ---
 title: "Resolver los errores recurrentes durante el uso de un programa FTP"
 excerpt: "Encuentre aquí las anomalías más frecuentes asociadas a su programa FTP"
-updated: 2025-10-20
+updated: 2026-03-31
 ---
 
 ## Objetivo
@@ -25,7 +25,7 @@ El uso de software FTP durante la conexión a su [hosting Web Cloud](/links/web/
 
 ### Acceso al área de cliente de OVHcloud
 
-- **Enlace directo:** [Hosting plans](/links/control-panel/web-hosting)
+- **Enlace directo:** [Alojamientos](/links/control-panel/web-hosting)
 - **Ruta de navegación:** `Web Cloud`{.action} > `Alojamientos`{.action} > Seleccione su alojamiento web
 
 ---
@@ -41,18 +41,11 @@ Este mensaje en el programa [FileZilla](/pages/web_cloud/web_hosting/ftp_filezil
 
 Si los datos que desea intercambiar por este medio no son confidenciales, haga clic en `Aceptar`{.action}.
 
-En caso contrario, acceda al [área de cliente de OVHcloud](/links/manager), en la sección `Web Cloud`{.action} y, seguidamente, `Alojamientos`{.action}. Seleccione el alojamiento correspondiente y abra la pestaña `FTP-SSH`{.action}.
-
-Si dispone de un alojamiento [Personal](/links/web/hosting-personal-offer), marque la casilla `Desactivado`{.action} en la columna `SFTP`{.action} y espere unos minutos.
-
-Si dispone de un alojamiento [Pro](/links/web/hosting-professional-offer) o [Performance](/links/web/hosting-performance-offer), haga clic en el botón `...`{.action} a la derecha del usuario FTP correspondiente y seleccione `Editar`{.action}.
-
-Seleccione `SFTP`{.action} o `Activado`{.action} (para activar el protocolo SSH en su alojamiento), haga clic en `Siguiente`{.action} y luego en `Aceptar`{.action}. Espere unos minutos.
+En caso contrario, active el protocolo SFTP consultando nuestra guía "[Alojamiento web - Cómo activar el acceso SFTP](/pages/web_cloud/web_hosting/enable_sftp)".
 
 > [!primary]
 >
 > Para más información sobre los errores, consulte la sección `Diagnóstico` de nuestras guías de [Hosting](/products/web-cloud-hosting).
->
 
 ### He transferido mis archivos con un programa FTP, pero mi sitio web no aparece.
 
@@ -68,12 +61,13 @@ Si no puede autenticarse, modifique su contraseña FTP siguiendo las instruccion
 
 La falta de espacio en su alojamiento compartido puede provocar fallos de funcionamiento en su sitio web al intentar modificarlo o actualizarlo.
 
+<!-- CP-STEPS-START:check-disk-space -->
 Para comprobar el espacio de almacenamiento restante del alojamiento, haga clic en las fichas siguientes para ver cada una de las **2** etapas.
 
 > [!tabs]
 > **Etapa 1**
 >>
->> Acceda a la página [Hosting plans](/links/control-panel/web-hosting) y seleccione el alojamiento web correspondiente.
+>> Acceda a la página [Alojamientos](/links/control-panel/web-hosting) y seleccione el alojamiento web correspondiente.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
@@ -84,6 +78,7 @@ Para comprobar el espacio de almacenamiento restante del alojamiento, haga clic 
 >> ![disk_space](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-disk-space.png){.thumbnail}
 >>
 >> El espacio de almacenamiento utilizado aparece debajo de esta mención.
+<!-- CP-STEPS-END:check-disk-space -->
 
 ### No puedo transferir mis archivos al servidor FTP.
 

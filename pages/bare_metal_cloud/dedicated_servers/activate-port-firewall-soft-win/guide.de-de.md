@@ -1,6 +1,6 @@
 ---
-title: Firewall auf einem Windows Server konfigurieren
-excerpt: Erfahren Sie hier, wie Sie Ihre Windows Firewall konfigurieren
+title: "Windows-Firewall auf einem Dedicated Server konfigurieren"
+excerpt: "Konfigurieren Sie die integrierte Windows-Firewall auf Ihrem Dedicated Server, um ein- und ausgehenden Netzwerkverkehr zu kontrollieren."
 updated: 2022-01-31
 ---
 
@@ -38,7 +38,7 @@ Um auf die Windows Firewall zuzugreifen, führen Sie die folgenden Schritte aus:
 
 Klicken Sie anschließend auf die Zeile `Erweiterte Einstellungen`{.action}.
 
-![Step1](images/step1.PNG){.thumbnail}
+![Erweiterte Einstellungen der Windows Firewall](images/step1.PNG){.thumbnail}
 
 ### Schritt 2: Eine Regel für eingehenden Traffic aktivieren
 
@@ -50,7 +50,7 @@ Im angezeigten Fenster finden Sie Einstellungen wie:
 
 Unter den `Eingangsregeln`{.action} werden alle vorkonfigurierten Windows Server Traffic-Regeln angezeigt, die mit Netzwerkverbindungen und eingehenden Paketen zusammenhängen. Einige dieser Regeln sind nicht standardmäßig aktiviert. Wenn Sie diese aktivieren möchten, klicken Sie mit der rechten Maustaste auf die Regel und wählen Sie die Option `Regel aktivieren`{.action}.
 
-![Step1](images/step2.PNG){.thumbnail}
+![Liste der Eingangsregeln mit Option zum Aktivieren](images/step2.PNG){.thumbnail}
 
 ### Schritt 3: Eine neue Regel erstellen 
 
@@ -112,5 +112,9 @@ Klicken Sie auf die Schaltfläche `Fertigstellen`{.action}, um den Vorgang abzus
 Danach wird die neue Regel in der Übersicht angezeigt und Sie können die Einstellungen der Regel ändern.
 
 ## Weiterführende Informationen
+
+- [Dedicated Server - Edge Network Firewall](/pages/bare_metal_cloud/dedicated_servers/firewall_network)
+
+- [Dedicated Server - Network Security Dashboard](/pages/bare_metal_cloud/dedicated_servers/network_security_dashboard)
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

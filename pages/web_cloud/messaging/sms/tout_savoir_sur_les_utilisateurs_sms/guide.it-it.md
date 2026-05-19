@@ -109,7 +109,7 @@ Per maggiori informazioni sulla funzione http2sms, consulta la guida [Inviare SM
 
 ### Passaggio 5: Specifica un URL di Callback
 
-Per realizzare un follow-up personalizzato degli avvisi di ricevimento via SMS (Delivery reporting o DLR), è possibile specificare un URL chiamato Callback. Per farlo, clicca sui tre puntini `...`{.action} a destra in corrispondenza dell'utente e poi su `Callback`{.action}.
+Per realizzare un follow-up personalizzato degli avvisi di ricevimento via SMS (Delivery reporting o DLR), è possibile specificare un URL chiamato Callback. Per farlo, clicca sui tre puntini `...`{.action} a destra in corrispondenza dell’utente e poi su `Callback`{.action}.
 
 ![sms-users](images/smsusers07-2021.png){.thumbnail}
 

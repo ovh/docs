@@ -1,6 +1,6 @@
 ---
-title: 'Sauvegarder mes informations et mes bases de données dans un serveur de stockage'
-excerpt: 'Sécuriser ses données en 5 étapes'
+title: "Sauvegarder données et bases de données sur un serveur dédié"
+excerpt: "Sauvegardez vos données et bases de données sur l'espace de stockage intégré de votre serveur dédié OVHcloud en cinq étapes"
 updated: 2018-09-12
 ---
 
@@ -184,3 +184,9 @@ La syntaxe d'une *crontab* est particulière ; nous ne la détaillerons pas ici 
 Vous venez de configurer un serveur de stockage OVHcloud correspondant à vos besoins et d'automatiser de manière basique la sauvegarde de fichiers sur celui-ci. Il s'agit d'une étape importante pour éviter les pertes de données et sécuriser votre activité.
 
 Comme expliqué lors de ce tutoriel, il existe d'autres méthodes gratuites ou payantes pour optimiser davantage vos sauvegardes. Si vos données sont sensibles, nous vous conseillons également de les chiffrer et de transiter uniquement via des réseaux privés, comme le vRack d'OVHcloud.
+
+## Aller plus loin
+
+[Utiliser Backup Storage sur un serveur dédié](/pages/bare_metal_cloud/dedicated_servers/services_backup_storage)
+
+[API OVHcloud et Stockage](/pages/bare_metal_cloud/dedicated_servers/partitioning_ovh)

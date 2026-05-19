@@ -1,7 +1,7 @@
 ---
 title: "Recuperar o backup de uma base de dados eliminada"
 excerpt: "Saiba como recuperar o backup de uma base de dados quando esta foi eliminada a partir da Área de Cliente OVHcloud"
-updated: 2025-02-20
+updated: 2026-04-01
 ---
 
 ## Objetivo
@@ -27,7 +27,7 @@ A maioria dos nossos serviços de [alojamento web](/links/web/hosting) incluem b
 
 ### Acesso à Área de Cliente OVHcloud
 
-- **Ligação direta:** [Hosting plans](/links/control-panel/web-hosting)
+- **Ligação direta:** [Alojamentos](/links/control-panel/web-hosting)
 - **Caminho de navegação:** `Web Cloud`{.action} > `Alojamentos`{.action} > Selecione o seu alojamento web
 
 ---
@@ -44,19 +44,24 @@ As API da OVHcloud são disponibilizadas para permitir que os programadores ou o
 > Além disso, quando uma base de dados é eliminada pelo seu utilizador ou administrador, a OVHcloud não poderá garantir a recuperação do backup pelas razões acima mencionadas.
 >
 
-### Etapa 1 - Obter o nome do alojamento web ao qual estava associada a base de dados eliminada
+### 1 - Obter o nome do alojamento web ao qual estava associada a base de dados eliminada
 
-Para recuperar o nome do seu alojamento web, execute as seguintes ações:
+<!-- CP-STEPS-START:retrieve-webhosting-name -->
+Para recuperar o nome do seu alojamento web, clique nos separadores abaixo para visualizar cada uma das **2** etapas.
 
-1. Aceda à [Área de Cliente OVHcloud](/links/manager).
-2. Clique no separador `Web Cloud`{.action}.
-3. Na coluna da esquerda, clique no menu `Alojamentos`{.action}.
-4. Selecione o alojamento web em causa.
-5. No canto superior esquerdo da página que é apresentada, encontre o nome do seu alojamento web à direita da menção `Alojamentos /`{.action}.
+> [!tabs]
+> **Etapa 1**
+>>
+>> Aceda à página [Alojamentos](/links/control-panel/web-hosting) e selecione o alojamento web em causa.
+>>
+> **Etapa 2**
+>>
+>> No canto superior esquerdo da página apresentada, encontre o nome do seu alojamento web à direita da menção `Alojamentos /`.
+>>
+>> ![Nome do alojamento web na Área de Cliente OVHcloud](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-webhosting-name.png){.thumbnail}
+<!-- CP-STEPS-END:retrieve-webhosting-name -->
 
-![API](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-webhosting-name.png){.thumbnail}
-
-### Etapa 2 - Ligar-se às API OVHcloud e permitir-lhes o acesso aos seus serviços
+### 2 - Ligar-se às API OVHcloud e permitir-lhes o acesso aos seus serviços
 
 Para isso, efetue as seguintes ações:
 
@@ -76,7 +81,7 @@ Para isso, efetue as seguintes ações:
 - Ligue-se com o seu identificador de cliente e clique em `Authorize`{.action} para utilizar as API da OVHcloud com os serviços presentes na sua Área de Cliente.
 - De seguida, será automaticamente reencaminhado para a página anterior da API **GET /hosting/web/{serviceName}/dump** ao estar ligado à Área de Cliente OVHcloud.
 
-### Etapa 3 - Verificar a disponibilidade dos backups e recuperar o ID do último backup
+### 3 - Verificar a disponibilidade dos backups e recuperar o ID do último backup
 
 Para isso, preencha os diferentes formulários tal como se especifica a seguir:
 
@@ -105,7 +110,7 @@ Se não aparecer nenhum ID na janela, certifique-se de que está ligado com o id
 
 Se, apesar de tudo, não tiver um ID que apareça, é porque não há ou mais backups disponíveis para a base de dados eliminada na nossa infraestrutura.
 
-### Etapa 4 - Recuperar o último backup
+### 4 - Recuperar o último backup
 
 Graças ao número de identificação de backup recuperado no passo 3, poderá descarregar, graças a uma ligação gerada pela API, o último backup da sua base de dados eliminada.
 
@@ -155,7 +160,7 @@ Se tudo tiver sido indicado corretamente, o seguinte resultado aparecerá na jan
 
 Neste resultado, copie a totalidade do URL em "HTTPS" **sem os aspas** presentes à direita da menção `"url":` e, a seguir, cole-o na barra de pesquisa do seu browser para iniciar a transferência do backup.
 
-### Etapa 5 - Criar uma nova base de dados, importar o ficheiro de backup e restabelecer a ligação entre o seu website e a nova base de dados
+### 5 - Criar uma nova base de dados, importar o ficheiro de backup e restabelecer a ligação entre o seu website e a nova base de dados
 
 Uma vez recuperada a cópia de segurança da base de dados, deverá criar uma nova base de dados. Para isso, consulte o guia "[Criar uma base de dados no alojamento web](/pages/web_cloud/web_hosting/sql_create_database)".
 

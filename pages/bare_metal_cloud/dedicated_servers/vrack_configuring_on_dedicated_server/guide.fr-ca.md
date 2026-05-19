@@ -1,6 +1,6 @@
 ---
-title: 'Configurer le vRack sur vos serveurs dédiés'
-excerpt: 'Découvrez comment configurer le vRack sur plusieurs serveurs dédiés'
+title: "Configurer le vRack sur vos serveurs dédiés"
+excerpt: "Configurez le réseau privé vRack OVHcloud sur deux ou plusieurs serveurs dédiés pour une communication inter-serveurs isolée"
 updated: 2026-02-20
 ---
 
@@ -17,19 +17,29 @@ Le vRack (baie virtuelle) OVHcloud permet de rassembler virtuellement plusieurs 
 - Un service [vRack](/links/network/vrack) activé dans votre compte
 - Plusieurs [serveurs dédiés](/links/bare-metal/bare-metal) (compatibles vRack)
 - Disposer d’un accès administrateur (sudo) au serveur via SSH ou RDP
-- Être connecté à votre [espace client OVHcloud](/links/manager)
-- Préparer la plage d'adresses IP privées que vous avez choisie
+- Préparer la plage d’adresses IP privées que vous avez choisie
 
 > [!warning]
 > Cette fonctionnalité peut être indisponible ou limitée sur les [serveurs dédiés **Eco**](/links/bare-metal/eco-about).
 >
 > Consultez notre [comparatif](/links/bare-metal/eco-compare) pour plus d’informations.
 
+<!-- CP-NAV-START:network-vrack -->
+---
+
+### Accès à l’espace client OVHcloud
+
+- **Lien direct :** [vRack](/links/control-panel/network-vrack)
+- **Pour accéder à vos services :** `Network`{.action} > `Réseau Privé vRack`{.action}
+
+---
+<!-- CP-NAV-END:network-vrack -->
+
 ## En pratique
 
 ### Étape 1 : commander le vRack
 
-Connectez-vous à votre [espace client OVHcloud](/links/manager) et cliquez sur le bouton `Ajouter un service`{.action} (icône de panier d'achat) dans le menu situé à gauche de l'écran. Utilisez le filtre en haut de la page ou faites défiler vers le bas pour trouver le service `vRack`{.action}.
+Cliquez sur le bouton `Ajouter un service`{.action} (icône de panier d'achat) dans le menu situé à gauche de l'écran. Utilisez le filtre en haut de la page ou faites défiler vers le bas pour trouver le service `vRack`{.action}.
 
 ![Commander vrack](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/network/orderingvrack25.png){.thumbnail}
 
@@ -37,9 +47,7 @@ Cliquez sur la case `vRack`{.action} pour être redirigé vers la page de valida
 
 ### Étape 2 : ajouter vos serveurs au vRack
 
-Une fois le vRack activé dans votre compte, cliquez sur `Network`{.action} dans le menu situé à gauche de l'écran puis sur `Réseau Privé vRack`{.action}.
-
-Sélectionnez votre vRack dans la liste pour afficher la liste des services éligibles. Cliquez sur chacun des serveurs que vous souhaitez ajouter au vRack, puis cliquez sur le bouton `Ajouter`{.action}.
+Une fois le vRack activé dans votre compte, sélectionnez votre vRack dans la liste pour afficher la liste des services éligibles. Cliquez sur chacun des serveurs que vous souhaitez ajouter au vRack, puis cliquez sur le bouton `Ajouter`{.action}.
 
 ![Choix du vRack](images/vrack_selection.png){.thumbnail}
 
@@ -216,13 +224,13 @@ link ether f0:00:00:ef:0e:f0
 >> Dans notre exemple, nous avons nommé notre profil de configuration `private-interface`.
 >>
 >> ```bash
->> nmcli connection add type ethernet con-name CONNECTION_NAME ifname INTERFACE_NAME
+>> sudo nmcli connection add type ethernet con-name CONNECTION_NAME ifname INTERFACE_NAME
 >> ```
 >>
 >> **Exemple :**
 >>
 >> ```bash
->> nmcli connection add type ethernet con-name private-interface ifname eno2
+>> sudo nmcli connection add type ethernet con-name private-interface ifname eno2
 >> ```
 >>
 >> - Vérifiez que l'interface a été correctement connectée :
@@ -249,13 +257,13 @@ link ether f0:00:00:ef:0e:f0
 >> - Ajoutez votre IP :
 >>
 >> ```bash
->> nmcli connection modify CONNECTION_NAME IPv4.address IP_ADDRESS/PREFIX
+>> sudo nmcli connection modify CONNECTION_NAME IPv4.address IP_ADDRESS/PREFIX
 >> ```
 >>
 >> **Exemple :**
 >>
 >> ```bash
->> nmcli connection modify private-interface IPv4.address 192.168.0.1/16
+>> sudo nmcli connection modify private-interface IPv4.address 192.168.0.1/16
 >> ```
 >>
 >> - Changez la configuration de **auto** à **manual** :
@@ -330,5 +338,13 @@ Répétez cette procédure pour vos autres serveurs et attribuez à chacun d'ent
 ## Aller plus loin
 
 [Créer plusieurs VLAN dans le vRack](/pages/bare_metal_cloud/dedicated_servers/creating-multiple-vlans-in-a-vrack).
+
+[Configurer un bloc Additional IP dans le vRack](/pages/bare_metal_cloud/dedicated_servers/configuring-an-ip-block-in-a-vrack)
+
+[Bare Metal 3-AZ Region - Présentation de l'offre](/pages/bare_metal_cloud/dedicated_servers/3az-presentation)
+
+[Configuration des trames Jumbo dans le vRack](/pages/bare_metal_cloud/dedicated_servers/VRACK_MTU_Jumbo_Frames)
+
+[Comment déployer et vérifier un OpenNebula Hosted Cloud sur des serveurs Bare Metal](/pages/bare_metal_cloud/dedicated_servers/opennebula-deployment)
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).

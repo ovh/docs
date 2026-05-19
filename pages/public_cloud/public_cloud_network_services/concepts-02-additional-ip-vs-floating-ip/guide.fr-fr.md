@@ -61,7 +61,7 @@ En fonction de votre choix, vous pouvez faire votre sélection parmi les différ
 
 > [!warning]
 >
-> Les modes de tarification dépendent de l'utilisation de l'IP que vous choisissez. L'utilisation d'une adresse Additional IP est facturée au mois, tandis que l'utilisation d'une adresse Floating IP est facturée à l'heure.
+> Les modes de tarification dépendent de l’utilisation de l’IP que vous choisissez. L’utilisation d’une adresse Additional IP est facturée au mois, tandis que l’utilisation d’une adresse Floating IP est facturée à l’heure.
 
 ## Aller plus loin
 

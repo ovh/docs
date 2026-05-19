@@ -1,7 +1,7 @@
 ---
 title: "Web hosting - View website statistics and logs"
 excerpt: "Find out how to view your website's statistics and logs with your web hosting plan"
-updated: 2025-10-09
+updated: 2026-04-01
 ---
 
 ## Objective
@@ -27,6 +27,7 @@ Access to your website’s logs and statistics is included in your web hosting p
 
 ## Instructions
 
+<!-- CP-STEPS-START:access-stats-and-logs -->
 To access the different statistical data and logs on your web hosting plan, click on the tabs below to view each of the **3** steps.
 
 > [!tabs]
@@ -34,7 +35,7 @@ To access the different statistical data and logs on your web hosting plan, clic
 >>
 >> Go to the [Hosting plans](/links/control-panel/web-hosting) page, then select the web hosting plan concerned.
 >>
->> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>> ![Selection of a web hosting plan in the OVHcloud Control Panel](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
 > **Step 2**
 >>
@@ -52,6 +53,7 @@ To access the different statistical data and logs on your web hosting plan, clic
 >> - [User administration](#admin-user): Displays users who are allowed to access statistics.
 >>
 >> ![statistics and logs interface](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/statistics-and-logs/tab.png){.thumbnail}
+<!-- CP-STEPS-END:access-stats-and-logs -->
 
 ### Visit statistics <a name="website-stats"></a>
 
@@ -101,51 +103,93 @@ Different types of logs are available:
 ### Infrastructure statistics <a name="infra-stats"></a>
 
 In this section, you can view the activity of your Web Hosting plan’s infrastructure, in order to view resource usage.
+<!-- CP-STEPS-START:view-infra-stats -->
+To do this, click on the tabs below to view each of the **3** steps.
 
-![infrastructure statistics](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/statistics-and-logs/infrastructure-statistics-graph.png){.thumbnail}
-
-Different types of charts can be displayed from the drop-down menu on the top left:
-
-- **FTP commands**: Indicates the main commands (upload, download, login, delete) carried out using the FTP protocol on your web hosting plan.
-- **HTTP requests**: Specifies the number and return code of HTTP requests executed on your Web Hosting plan, separated into the different HTTP codes (2xx/3xx, 4xx and 5xx). If you need to, you can find the list of HTTP codes and their meanings by searching directly via a search engine (Google, Yahoo!, bing, etc.).
-- **Outbound connections**: Requests made from your website to an external website.
-- **CPU usage**: The level of CPU consumption on your web hosting instance.
-- **Exceeding the resource threshold**: Specifies when your Web Hosting plan exceeds its quota of resources.
-- **SQL requests**: Quantity of queries to the databases on your Web Hosting plan.
-- **SQL response time**: The response time of requests sent to the databases on your Web Hosting plan.
+> [!tabs]
+> **Step 1**
+>>
+>> Go to the [Hosting plans](/links/control-panel/web-hosting) page, then select the web hosting plan concerned.
+>>
+>> ![Selection of a web hosting plan in the OVHcloud Control Panel](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Step 2**
+>>
+>> On the page that appears, click on the `Statistics and logs`{.action} tab, then go to the **Infrastructure statistics** section.
+>>
+> **Step 3**
+>>
+>> Different types of graphs are available from the drop-down menu at the top left:
+>>
+>> ![Infrastructure statistics of the web hosting plan](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/statistics-and-logs/infrastructure-statistics-graph.png){.thumbnail}
+>>
+>> - **FTP commands**: main commands (upload, download, login, delete) via FTP.
+>> - **HTTP requests**: number and return code of HTTP requests (2xx/3xx, 4xx, 5xx).
+>> - **Outgoing connections**: requests from your website to an external website.
+>> - **CPU usage**: CPU usage on your hosting instance.
+>> - **Resource limit exceeded**: moments when your hosting exceeds its quota.
+>> - **SQL requests**: number of requests to the databases.
+>> - **SQL response time**: response time of requests to the databases.
+<!-- CP-STEPS-END:view-infra-stats -->
 
 ### User administration <a name="admin-user"></a>
 
 Creating a user will allow someone to access your web hosting plan’s statistics without having access to the OVHcloud Control Panel.
 
-In the `User administration`{.action} section, click `Create a new user`{.action} , then follow the instructions to finish creating a new user.
+<!-- CP-STEPS-START:create-stats-user -->
+To create a new user, click on the tabs below to view each of the **3** steps.
 
-![create a new user](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/statistics-and-logs/create-a-new-user.png){.thumbnail}
+> [!tabs]
+> **Step 1**
+>>
+>> Go to the [Hosting plans](/links/control-panel/web-hosting) page, then select the web hosting plan concerned.
+>>
+>> ![Selection of a web hosting plan in the OVHcloud Control Panel](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Step 2**
+>>
+>> On the page that appears, click on the `Statistics and logs`{.action} tab, then go to the **User administration** section.
+>>
+> **Step 3**
+>>
+>> Click on `Create a new user`{.action} then follow the instructions to finalise the creation.
+>>
+>> ![Creation of a new user for statistics](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/statistics-and-logs/create-a-new-user.png){.thumbnail}
+<!-- CP-STEPS-END:create-stats-user -->
 
-To access your website's statistics with a user you have created, you must enter the following address by replacing `000` with the cluster number of your web hosting plan and `domain.tld` with the domain name of your website (without `www`):
+To access your website’s statistics with a user you have created, you must enter the following address by replacing `000` with the cluster number of your web hosting plan and `domain.tld` with the domain name of your website (without `www`):
 
 ```bash
 https://logs.cluster000.hosting.ovh.net/domain.tld/
 ```
 
-You can also access the statistics/logs link directly from your Control Panel:
+You can also retrieve the statistics/logs access link directly from your Control Panel.
+<!-- CP-STEPS-START:retrieve-stats-link -->
+To do this, click on the tabs below to view each of the **3** steps.
 
-1. Log in to your [OVHcloud Control Panel](/links/manager).
-2. Click on the `Web Cloud`{.action} tab.
-3. In the left-hand column, click on the `Hosting plans`{.action} menu.
-4. Select the web hosting plan concerned.
-5. On the page that appears, click on the `Statistics and logs`{.action} tab.
-6. Go to `Website visit statistics`{.action}.
-7. Choose the `View Statistics`{.action} button.
-
-![website visit statistics](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/statistics-and-logs/view-statistics.png){.thumbnail}
-
-On the new page that pops up, retrieve the URL located in the address bar of your web browser.
+> [!tabs]
+> **Step 1**
+>>
+>> Go to the [Hosting plans](/links/control-panel/web-hosting) page, then select the web hosting plan concerned.
+>>
+>> ![Selection of a web hosting plan in the OVHcloud Control Panel](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Step 2**
+>>
+>> On the page that appears, click on the `Statistics and logs`{.action} tab, then go to the **Website visit statistics** section.
+>>
+> **Step 3**
+>>
+>> Click on the `View statistics`{.action} button.
+>>
+>> ![Visit statistics of the website](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/statistics-and-logs/view-statistics.png){.thumbnail}
+>>
+>> On the new page that appears, retrieve the URL in the address bar of your browser.
+<!-- CP-STEPS-END:retrieve-stats-link -->
 
 > [!warning]
 >
-> If you have enabled separate logs on a [multisite entry](/pages/web_cloud/web_hosting/multisites_configure_multisite), users created here cannot access statistics for that specific multisite entry.
->
+> If you have enabled separate logs on one of your [websites](/pages/web_cloud/web_hosting/multisites_configure_multisite), users created here cannot access statistics for that specific website.
 
 ## Go further
 

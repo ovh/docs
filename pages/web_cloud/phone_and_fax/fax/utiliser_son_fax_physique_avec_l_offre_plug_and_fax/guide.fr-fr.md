@@ -28,7 +28,9 @@ Vous pouvez configurer la réception de vos fax via votre espace client OVHcloud
 
 ## En pratique
 
+<!-- CP-STEPS-START:selectionner-service -->
 Sélectionnez l'onglet `Services`{.action} puis la ligne Plug & Fax concernée.
+<!-- CP-STEPS-END:selectionner-service -->
 
 ### Branchement du fax sur le Cisco ATA 191
 
@@ -48,6 +50,7 @@ Sur certains télécopieurs, la correction d'erreur peut être appelée **ECM** 
 
 ### Configurer le mode de réception des fax
 
+<!-- CP-STEPS-START:configurer-reception-fax -->
 L'offre Plug & Fax permet d'utiliser deux modes de réception, au choix :
 
 - uniquement sur le télécopieur ;
@@ -58,9 +61,11 @@ La sélection d'un de ces deux modes s'effectue via les renvois d'appels sur vot
 Pour y accéder, cliquez sur `Gestion des appels`{.action} puis sur `Renvoi d'appel`{.action}.
 
 ![Gestion des appels](images/gestion_des_appels.png){.thumbnail}
+<!-- CP-STEPS-END:configurer-reception-fax -->
 
 #### Réception via le télécopieur
 
+<!-- CP-STEPS-START:reception-telecopieur -->
 Il s'agit du mode normal de réception des fax, lorsqu'un télécopieur fonctionnel est raccordé à l'adaptateur Plug & Fax. Si votre télécopieur est débranché, éteint ou en panne, les renvois d'appels décrits ci-dessous permettent d'assurer une continuité de la réception des fax. Vous recevrez ainsi toujours vos fax par e-mail ou via le logiciel EcoFax.
 
 Depuis le menu de `Renvoi d'appel`{.action}, cochez la case devant `Renvoi quand il n'y a pas de réponse`{.action} et définissez le nombre de secondes à 45.
@@ -75,9 +80,11 @@ Enfin, cliquez sur `Valider`{.action}.
 ![renvoi d'appels](images/renvoi_dappel.png){.thumbnail}
 
 Pour configurer les notifications par e-mail de votre ligne, reportez-vous au guide « [Configurer ma ligne EcoFax Pro](/pages/web_cloud/phone_and_fax/fax/configuration_fax_espace_client) ».
+<!-- CP-STEPS-END:reception-telecopieur -->
 
 #### Réception uniquement par e-mail ou EcoFax
 
+<!-- CP-STEPS-START:reception-email-ecofax -->
 Vous pouvez choisir de ne recevoir les fax que par e-mail, par exemple lors d'un déplacement ou en cas de panne prolongée de votre télécopieur.
 
 Dans ce cas de figure, un renvoi d'appel inconditionnel est préconisé afin de rediriger tous les fax entrants vers votre adresse e-mail ou le logiciel EcoFax.
@@ -90,9 +97,11 @@ Enfin, cliquez sur `Valider`{.action}.
 ![renvoi d'appels inconditionnel](images/renvoi_dappel2.png){.thumbnail}
 
 Pour configurer les notifications par e-mail de votre ligne, reportez-vous au guide « [Configurer ma ligne EcoFax Pro](/pages/web_cloud/phone_and_fax/fax/configuration_fax_espace_client) ».
+<!-- CP-STEPS-END:reception-email-ecofax -->
 
 ### Configurer la présentation du numéro en appel sortant
 
+<!-- CP-STEPS-START:configurer-presentation-numero -->
 Avec l'offre Plug & Fax, vous pouvez modifier la présentation du numéro lors des appels sortants.
 
 Cliquez sur `Gestion des appels`{.action} puis sur `Présentation du numéro`{.action}.
@@ -106,6 +115,7 @@ Si vous ne souhaitez pas présenter de numéro, cochez la case `Rester anonyme`{
 ![présentation numéro](images/pres-numero2.png){.thumbnail}
 
 Validez votre choix en cliquant sur `Appliquer les modifications`{.action}.
+<!-- CP-STEPS-END:configurer-presentation-numero -->
 
 ## Aller plus loin
 

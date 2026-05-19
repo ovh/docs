@@ -17,8 +17,18 @@ This guide will explain how to replace the outgoing internet gateway (OVHgateway
 ## Requirements
 
 - One Nutanix cluster provided by OVHcloud
-- Access to the [OVHcloud Control Panel](/links/manager)
 - Access to your clusters via Prism Central
+
+<!-- CP-NAV-START:privatecloud-nutanix -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Nutanix](/links/control-panel/privatecloud-nutanix)
+- **Navigation path:** `Hosted Private Cloud`{.action} > `Nutanix`{.action} > Select your cluster
+
+---
+<!-- CP-NAV-END:privatecloud-nutanix -->
 
 ## Instructions
 
@@ -85,7 +95,7 @@ From the `More`{.action} menu at the top, click `Soft Shutdown`{.action}.
 
 Retrieve information about the OVHcloud gateway network settings.
 
-Log in to the [OVHcloud Control Panel](/links/manager), select your Nutanix cluster, and find the information in the `IPFO` field.
+Select your Nutanix cluster and find the information in the `IPFO` field.
 
 ![Get IP Fail OVER](images/02-get-ipfailover.png){.thumbnail}
 

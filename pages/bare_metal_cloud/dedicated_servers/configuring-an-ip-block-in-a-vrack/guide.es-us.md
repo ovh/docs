@@ -1,7 +1,7 @@
 ---
-title: 'Configurar un bloque de Additional IP en un vRack'
-excerpt: 'Descubra cómo configurar un bloque de direcciones IP públicas en el vRack.'
-updated: 2026-03-13
+title: "Configurar un bloque IP en el vRack en un servidor dedicado"
+excerpt: "Configure un bloque de direcciones IP públicas para la red privada vRack de OVHcloud entre sus servidores dedicados."
+updated: 2026-04-03
 ---
 
 <style>
@@ -85,7 +85,7 @@ Además del direccionamiento IP privado, el [vRack](/links/network/vrack) tambi�
 
 Seleccione su vRack de la lista para mostrar la lista de servicios elegibles. Haga clic en el bloque de IP que desea añadir al vRack y luego haga clic en el botón `Añadir`{.action}.
 
-![vrack](images/addIPblock.png){.thumbnail}
+![Añadir un bloque de IP al vRack](images/addIPblock.png){.thumbnail}
 
 ### Gestionar el ancho de banda de IP pública en el vRack
 
@@ -173,206 +173,352 @@ Para configurar la primera dirección IP utilizable, necesitamos editar el archi
 > La máscara de subred que hemos utilizado en nuestro ejemplo es apropiada para nuestro bloque de IP. Su máscara de subred puede variar dependiendo del tamaño de su bloque. Cuando compre su bloque de IP, recibirá un correo electrónico que le indicará qué máscara de subred debe usar.
 >
 
-### Debian/Ubuntu
+### Descargar el paquete `iproute2`
+
+Antes de empezar, descargue e instale **iproute2**, un paquete que permite configurar manualmente el enrutamiento IP. Es posible que este paquete ya esté disponible en su servidor; en ese caso, continúe con el siguiente paso.
+
+Establezca una conexión SSH con su servidor y ejecute el siguiente comando para descargar e instalar iproute2:
 
 ```sh
-/etc/network/interfaces
-
-auto eth1
-iface eth1 inet static
-address 46.105.135.97
-netmask 255.255.255.240
-broadcast 46.105.135.111
+sudo apt-get install iproute2
 ```
-### Crear una nueva tabla de enrutamiento IP
 
-En primer lugar, necesitamos descargar e instalar iproute2, que es un paquete que nos permitirá configurar manualmente el enrutamiento IP en el servidor.
-
-Establezca una conexión SSH con su servidor y ejecute el siguiente comando desde la línea de comandos. Esto descargará e instalará iproute2.
+**Fedora**
 
 ```sh
-# apt-get install iproute2
+sudo dnf install iproute
 ```
 
-A continuación, necesitamos crear una nueva ruta IP para el vRack. Añadiremos una nueva regla de tráfico modificando el archivo, como se muestra a continuación:
+#### Configuraciones GNU/Linux
 
-```sh
-/etc/iproute2/rt_tables
+> [!tabs]
+> **Debian 11**
+>>
+>> **Configurar la Additional IP**
+>>
+>> Abra el archivo de configuración de red ubicado en `/etc/network/interfaces.d` con el editor de texto de su elección. Aquí el archivo se llama `50-cloud-init`.
+>>
+>> ```sh
+>> /etc/network/interfaces.d/50-cloud-init
+>>
+>> auto eth1
+>> iface eth1 inet static
+>> address 46.105.135.97
+>> netmask 255.255.255.240
+>> broadcast 46.105.135.111
+>> ```
+>>
+>> **Crear una nueva tabla de enrutamiento IP**
+>>
+>> A continuación, cree una nueva ruta IP para el vRack. Añada una nueva regla de tráfico modificando el archivo como se muestra a continuación:
+>>
+>> ```sh
+>> sudo nano /etc/iproute2/rt_tables
+>> #
+>> # reserved values
+>> #
+>> 255	local
+>> 254	main
+>> 253	default
+>> 0	unspec
+>> #
+>> # local
+>> #
+>> #1	inr.ruhep
+>> 1 vrack
+>> ```
+>>
+>> **Modificar el archivo de configuración de red**
+>>
+>> > [!primary]
+>> >
+>> > A modo de ejemplo, el archivo de configuración de red al que hacemos referencia se encuentra en /etc/network/interfaces. El archivo equivalente en su servidor puede estar ubicado en otro lugar, dependiendo de su sistema operativo.
+>> >
+>>
+>> Por último, modifique el archivo de configuración de red para tener en cuenta la nueva regla de tráfico y enrutar el tráfico del vRack a través de la dirección de puerta de enlace de red **46.105.135.110**.
+>>
+>> ```sh
+>> sudo nano /etc/network/interfaces.d/50-cloud-init
+>>
+>> auto eth1
+>> iface eth1 inet static
+>> address 46.105.135.97
+>> netmask 255.255.255.240
+>> broadcast 46.105.135.111
+>> post-up ip route add 46.105.135.96/28 dev eth1 table vrack
+>> post-up ip route add default via 46.105.135.110 dev eth1 table vrack
+>> post-up ip rule add from 46.105.135.96/28 table vrack
+>> post-up ip rule add to 46.105.135.96/28 table vrack
+>> ```
+>>
+>> Reinicie el servidor para aplicar los cambios o habilite simplemente la nueva interfaz de red:
+>>
+>> ```sh
+>> ip link set eth1 up
+>> ```
+>>
+> **CentOS, AlmaLinux y Rocky Linux (8/9)**
+>>
+>> **Crear el archivo para la interfaz de red secundaria**
+>>
+>> Copie la configuración de la interfaz de red primaria y ajústela según sus necesidades:
+>>
+>> ```sh
+>> sudo cp /etc/sysconfig/network-scripts/ifcfg-eth0 /etc/sysconfig/network-scripts/ifcfg-eth1
+>> ```
+>>
+>> A continuación, abra el nuevo archivo:
+>>
+>> ```sh
+>> sudo nano /etc/sysconfig/network-scripts/ifcfg-eth1
+>> ```
+>>
+>> - Defina la configuración de IP:
+>>
+>> ```sh
+>> # Created by cloud-init on instance boot automatically, do not edit.
+>> #
+>> DEVICE=eth1
+>> BOOTPROTO=static
+>> ONBOOT=yes
+>> USERCTL=no
+>> IPV6INIT=no
+>> PEERDNS=yes
+>> TYPE=Ethernet
+>> NETMASK=255.255.255.240
+>> IPADDR=46.105.135.97
+>> ARP=yes
+>> ```
+>>
+>> **Crear una nueva tabla de enrutamiento IP**
+>>
+>> A continuación, cree una nueva ruta IP para el vRack. Añada una nueva regla de tráfico modificando el archivo como se muestra a continuación:
+>>
+>> ```sh
+>> sudo nano /etc/iproute2/rt_tables
+>> #
+>> # reserved values
+>> #
+>> 255	local
+>> 254	main
+>> 253	default
+>> 0	unspec
+>> #
+>> # local
+>> #
+>> #1	inr.ruhep
+>> 1 vrack
+>> ```
+>>
+>> Cree a continuación el archivo necesario para aplicar las nuevas reglas:
+>>
+>> ```sh
+>> nano /etc/sysconfig/network-scripts/rule-eth1
+>> ```
+>>
+>> Pegue el siguiente contenido (recuerde reemplazar las variables con sus propios valores):
+>>
+>> ```sh
+>> from 46.105.135.96/28 table vrack
+>> to 46.105.135.96/28 table vrack
+>> ```
+>>
+>> **Modificar el archivo de configuración de red**
+>>
+>> Por último, modifique el archivo de configuración de red para tener en cuenta la nueva regla de tráfico y enrutar el tráfico del vRack a través de la dirección de puerta de enlace de red **46.105.135.110**.
+>>
+>> Edite el siguiente archivo para añadir rutas persistentes y estáticas:
+>>
+>> ```sh
+>> nano /etc/sysconfig/network-scripts/route-eth1
+>> ```
+>>
+>> Pegue el siguiente contenido (recuerde reemplazar las variables con sus propios valores):
+>>
+>> ```sh
+>> 46.105.135.96/28 dev eth1 table vrack
+>> default via 46.105.135.110 dev eth1 table vrack
+>> ```
+>>
+>> Reinicie el servidor para aplicar los cambios o habilite simplemente la nueva interfaz de red:
+>>
+>> ```sh
+>> ip link set eth1 up
+>> ```
+>>
+> **Ubuntu y Debian 12+**
+>>
+>> - Configurar la Additional IP
+>>
+>> Abra el archivo de configuración de red ubicado en `/etc/netplan` con el editor de texto de su elección. Aquí el archivo se llama `50-cloud-init.yaml`.
+>>
+>>
+>> ```sh
+>> sudo nano /etc/netplan/50-cloud-init.yaml
+>> ```
+>>
+>> - Defina la configuración de IP con las siguientes variables:
+>>
+>> ```sh
+>> NETWORK_INTERFACE:
+>> dhcp4: false
+>> addresses:
+>> - ADDITIONAL_IP/PREFIX
+>> routes:
+>> - to: NETWORK_IP/PREFIX
+>>   via: GATEWAY_IP
+>> ```
+>>
+>> **Ejemplo**
+>>
+>> ```sh
+>> eno2:
+>> dhcp4: false
+>> addresses:
+>> - 46.105.135.97/28
+>> routes:
+>> - to: 46.105.135.96/28
+>>   via: 46.105.135.110
+>> ```
+>>
+>> Aplique la configuración con el siguiente comando:
+>>
+>> ```bash
+>> sudo netplan apply
+>> ```
+>> 
+> **Fedora, AlmaLinux y Rocky Linux (10)**
+>>
+>> En primer lugar, compruebe que su interfaz vRack está en estado `connected` o `connecting`. En nuestro ejemplo, la interfaz se llama `eno2`.
+>>
+>> ```sh
+>> nmcli device status
+>>
+>> DEVICE           TYPE      STATE                   CONNECTION
+>> eno1             ethernet  connected               cloud-init eno1
+>> lo               loopback  connected (externally)  lo
+>> eno2             ethernet   connecting (getting IP configuration)               vRack
+>> ```
+>>
+>> A continuación, obtenga el nombre del archivo de configuración ubicado en `/etc/NetworkManager/system-connections`. Aquí el archivo se llama `vRack.nmconnection`.
+>>
+>> ```sh
+>> [user@server ~]$ cd /etc/NetworkManager/system-connections
+>> cloud-init-eno1.nmconnection vRack.nmconnection
+>> ```
+>>
+>> Configure su Additional IP mediante el gestor `nmcli`. Reemplace `vRack` y los demás parámetros con sus propios valores.
+>>
+>> - Añadir la IP
+>>
+>> ```sh
+>> sudo nmcli connection modify vRack IPv4.address 46.105.135.96/28
+>> ```
+>>
+>> - Añadir la puerta de enlace
+>>
+>> ```sh
+>> sudo nmcli connection modify vRack IPv4.gateway 46.105.135.110
+>> ```
+>>
+>> - Cambiar la configuración de **auto** a **manual**:
+>>
+>> ```sh
+>> sudo nmcli connection modify vRack IPv4.method manual
+>> ```
+>>
+>> - Hacer la configuración persistente
+>>
+>> ```sh
+>> sudo nmcli con mod 'vRack' connection.autoconnect true
+>> ```
+>>
+>> **Crear una nueva tabla de enrutamiento IP**
+>>
+>> A continuación, cree una nueva ruta IP para el vRack. Añada una nueva regla de tráfico (`1 vrack`) modificando el archivo como se muestra a continuación:
+>>
+>>
+>> ```sh
+>> sudo nano /usr/share/iproute2/rt_tables
+>> #
+>> # reserved values
+>> #
+>> 255	local
+>> 254	main
+>> 253	default
+>> 0	unspec
+>> #
+>> # local
+>> #
+>> #1	inr.ruhep
+>> 1 vrack
+>> ```
+>>
+>> - Añadir la ruta
+>>
+>> ```sh
+>> sudo ip route add <network_ip>/<prefix> via <gateway> dev <interface>
+>> ```
+>>
+>> En nuestro ejemplo
+>>
+>> ```sh
+>> sudo ip route add 46.105.135.96/28 via 46.105.135.110 dev eno2
+>> ```
+>>
+>> Reinicie su red con el siguiente comando:
+>>
+>> ```bash
+>> sudo systemctl restart NetworkManager
+>> ```
+>>
 
-#
-# valores reservados
-#
-255	local
-254	main
-253	default
-0	unspec
-#
-# local
-#
-#1	inr.ruhep
-1 vrack
-```
 
-### Modificar el archivo de configuración de red
-
-> [!primary]
->
-> A modo de ejemplo, el archivo de configuración de red al que hacemos referencia se encuentra en /etc/network/interfaces. El archivo equivalente en su servidor puede estar ubicado en otro lugar, dependiendo de su sistema operativo.
->
-
-Finalmente, necesitamos modificar el archivo de configuración de red para tener en cuenta la nueva regla de tráfico y enrutar el tráfico del vRack a través de la dirección de puerta de enlace de red **46.105.135.110**.
-
-```sh
-/etc/network/interfaces
-
-auto eth1
-iface eth1 inet static
-address 46.105.135.97
-netmask 255.255.255.240
-broadcast 46.105.135.111
-post-up ip route add 46.105.135.96/28 dev eth1 table vrack
-post-up ip route add default via 46.105.135.110 dev eth1 table vrack
-post-up ip rule add from 46.105.135.96/28 table vrack
-post-up ip rule add to 46.105.135.96/28 table vrack
-```
-
-Ahora reinicie su servidor para aplicar los cambios o, alternativamente, habilite simplemente la nueva interfaz de red:
-
-```sh
-ip link set eth1 up
-```
-
-### CentOS 6/7
-
-#### Crear el archivo para la interfaz de red secundaria
-
-En primer lugar, podemos copiar y usar la configuración que se utiliza para la interfaz de red primaria y ajustarla según nuestras necesidades:
-
-```sh
-sudo cp /etc/sysconfig/network-scripts/ifcfg-eth0 /etc/sysconfig/network-scripts/ifcfg-eth1
-```
-Luego accedemos al nuevo archivo:
-
-```sh
-sudo nano /etc/sysconfig/network-scripts/ifcfg-eth1
-```
-Y definimos la configuración de IP:
-```sh
-# Creado automáticamente por cloud-init al arrancar la instancia, no editar.
-#
-DEVICE=eth1
-BOOTPROTO=static
-ONBOOT=yes
-USERCTL=no
-IPV6INIT=no
-PEERDNS=yes
-TYPE=Ethernet
-NETMASK=255.255.255.240
-IPADDR=46.105.135.97
-ARP=yes
-```
-
-### Crear una nueva tabla de enrutamiento IP
-
-A continuación, necesitamos crear una nueva ruta IP para el vRack. Añadiremos una nueva regla de tráfico modificando el archivo, como se muestra a continuación:
-
-```sh
-/etc/iproute2/rt_tables
-
-#
-# valores reservados
-#
-255	local
-254	main
-253	default
-0	unspec
-#
-# local
-#
-#1	inr.ruhep
-1 vrack
-```
-
-A continuación, cree el archivo necesario para aplicar las nuevas reglas:
-```sh
-nano /etc/sysconfig/network-scripts/rule-eth1
-```
-
-Y pegue el siguiente contenido (recuerde reemplazar nuestras variables con sus propios valores):
-
-```sh
-from 46.105.135.96/28 table vrack
-to 46.105.135.96/28 table vrack
-```
-
-### Modificar el archivo de configuración de red
-
-Finalmente, necesitamos modificar el archivo de configuración de red para tener en cuenta la nueva regla de tráfico y enrutar el tráfico del vRack a través de la dirección de puerta de enlace de red **46.105.135.110**.
-
-Podemos lograrlo editando el siguiente archivo para añadir rutas persistentes y estáticas:
-
-```sh
-nano /etc/sysconfig/network-scripts/route-eth1
-```
-
-Pegue el siguiente contenido (recuerde reemplazar nuestras variables con sus propios valores):
-
-```sh
-46.105.135.96/28 dev eth1 table vrack
-default via 46.105.135.110 dev eth1 table vrack
-```
-
-Ahora reinicie su servidor para aplicar los cambios o, alternativamente, habilite simplemente la nueva interfaz de red:
-
-```sh
-ip link set eth1 up
-```
-
-### Windows Server 2012/2016
+### Windows Server
 
 #### Paso 1: Verificar y configurar la interfaz de red secundaria
 
-Primero debemos acceder a la información de la nueva interfaz de red:
+Compruebe la información de la nueva interfaz de red:
 
-![verificar la segunda interfaz de red](images/win-ip-vrack-1.png){.thumbnail}
+![verificación de la interfaz de red secundaria](images/win-ip-vrack-1.png){.thumbnail}
 
-Luego debemos verificar las propiedades:
+A continuación, compruebe las propiedades:
 
-![propiedades de la segunda interfaz de red](images/win-ip-vrack-2.png){.thumbnail}
+![propiedades de la interfaz de red secundaria](images/win-ip-vrack-2.png){.thumbnail}
 
-![propiedades de la segunda interfaz de red](images/win-ip-vrack-3.png){.thumbnail}
+![propiedades de la interfaz de red secundaria](images/win-ip-vrack-3.png){.thumbnail}
 
 #### Paso 2: Configuración de IP
 
-Debemos seleccionar la opción ```Use the following IP address```:
+Seleccione la opción `Use the following IP address`{.action}:
 
-![configuración de ip](images/win-ip-vrack-4.png){.thumbnail}
+![configuración de IP](images/win-ip-vrack-4.png){.thumbnail}
 
-Y finalmente podemos definir la información de IP:
+Defina la información de IP:
 
-![configuración de ip](images/win-ip-vrack-5b.png){.thumbnail}
+![configuración de IP](images/win-ip-vrack-5b.png){.thumbnail}
 
 #### Paso 3: Reiniciar la interfaz de red
 
-Primero realizamos el proceso de desactivación:
+En primer lugar, desactive la interfaz.
 
-![desactivar red](images/win-ip-vrack-6.png){.thumbnail}
+![desactivación de la red](images/win-ip-vrack-6.png){.thumbnail}
 
-Luego realizamos el proceso de activación:
+A continuación, actívela.
 
-![activar red](images/win-ip-vrack-7.png){.thumbnail}
+![activación de la red](images/win-ip-vrack-7.png){.thumbnail}
 
 ### Resolución de problemas
 
-Si no puede establecer una conexión desde su VM o servidor a la red privada, envíenos un ticket desde su área de cliente con lo siguiente:
+Si no puede establecer una conexión desde su VM o servidor a la red privada, abra un ticket de soporte desde su área de cliente con la siguiente información:
 
 - IP de origen e IP de destino
-- Ifconfig -a o ipconfig /all de ambos servidores o VMs (configuración de la interfaz de configuración de red)
+- Resultado de `ifconfig -a` o `ipconfig /all` de ambos servidores o VMs (configuración de la interfaz de red)
 - Ping en ambas direcciones
-- Arp -a
+- Resultado de `arp -a`
 - Tabla de enrutamiento
 
-Por favor, incluya los resultados de lo anterior en su ticket.
+Incluya los resultados anteriores en su ticket.
 
 ## Más información
 

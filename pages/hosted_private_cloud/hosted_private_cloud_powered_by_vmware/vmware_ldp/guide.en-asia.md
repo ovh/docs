@@ -1,7 +1,7 @@
 ---
 title: "Logs Data Platform - Collect VMware on OVHcloud logs"
 excerpt: "Find out how to subscribe and enable log forwarder in order to transfer VMware on OVHcloud logs to a Logs Data Platform stream"
-updated: 2024-09-25
+updated: 2026-04-23
 ---
 
 > [!primary]
@@ -14,8 +14,7 @@ updated: 2024-09-25
 
 ## Requirements
 
-- An a [OVHcloud customer account](/links/manager).
-- A [VMware on OVHcloud](/links/hosted-private-cloud/vmware) environnement with a Logs Data Platform active stream. 
+- A [VMware on OVHcloud](/links/hosted-private-cloud/vmware) environnement with a Logs Data Platform active stream.
     - If you are not familiar with all the LDP *Stream* configuration possibilities, simply create a new one with the default options (indexing & websocket enabled, long-term storage disabled) for the purpose of this guide.
 - You must have followed the guide [Introduction to Logs Data Platform](/pages/manage_and_operate/observability/logs_data_platform/getting_started_introduction_to_LDP).
 - You must have the `logForwarder` enabled. To verify this, run [the following API call](#security-options).
@@ -45,6 +44,11 @@ These are the types of logs you want to transfer to your Logs Data Platform. Her
 - `nsxtEdge`: Everything is redirected, no filter.
 - `vcsa`: Filtered by application.
 - `nsxtManager`: Filtered by application.
+- `vmwareProxy`: Filtered by application.
+
+For the following kinds, the advanced security option is required:
+- `vmware2FA`: Filtered by application.
+- `nids`: Filtered by application.
 
 ### Step 1 - Enable Log Forwarder for VMware on OVHcloud
 
@@ -175,7 +179,7 @@ Use the following API calls to list subscriptions for your VMware on OVHcloud ac
 | **Method** | **Path**                                                                                               | **Description**                                             |
 |:------------:|:-------------------------------------------------------------------------------------------------------|:------------------------------------------------------------|
 |     GET     | /dedicatedCloud/{serviceName}/log/kind                                                                 | - List all Log kind available for your VMware on OVHcloud   |
-|     GET     | /dedicatedCloud/{serviceName}/log/kind/{name}                                                          | - List availables kind name (ESXI/NSX-T EDGE, MANAGER/VCSA) |
+|     GET     | /dedicatedCloud/{serviceName}/log/kind/{name}                                                          | - List available kind names (ESXI/NSX-T EDGE, MANAGER/VCSA/..) |
 |     GET     | /dedicatedCloud/{serviceName}/log/subscription                                                         | - List your VMware on OVHcloud subcriptions                 |
 |    POST     | /dedicatedCloud/{serviceName}/log/subscription                                                         | - Create an LDP VMware OVHcloud subscription                |
 |     GET     | /dedicatedCloud/{serviceName}/log/subscription                                                         | - List properties of this object                            |
@@ -191,7 +195,7 @@ To retrieve the **streamId** from your LDP account, please refer to the guide [Q
 > **Parameters**:
 >
 > - `serviceName` : Name of the managed vSphere service, (e.g.: `pcc-XXX-XXX-XXX-XXX`).
-> - `kind`: VMware Kind that the forwarder uses (e.g.: Available: `nsxtEdge ┃ vcsa ┃ nsxtManager ┃ esxi`).
+> - `kind`: VMware Kind that the forwarder uses (e.g.: Available: `nsxtEdge ┃ vcsa ┃ nsxtManager ┃ esxi ┃ vmwareProxy ┃ vmware2FA ┃ nids`).
 > - `streamId`: Destination stream identifier (e.g.: uuid: `ggb8d894-c491-433e-9c87-50a8bf6fe773`).
 >
 
@@ -231,7 +235,7 @@ You can refer to this guide to find out how to manage your streams in the `Log D
 > **Parameters**:
 >
 > - `serviceName` : Service name of your managed vSphere (e.g.: `pcc-XXX-XXX-XXX-XXX`).
-> - `kind` : Name of the VMware kind that the forwarder uses (e.g.: `nsxtEdge ┃ vcsa ┃ nsxtManager ┃ esxi`).
+> - `kind` : Name of the VMware kind that the forwarder uses (e.g.: `nsxtEdge ┃ vcsa ┃ nsxtManager ┃ esxi ┃ vmwareProxy ┃ vmware2FA ┃ nids`).
 >
 
 **How to list your available Kind**?
@@ -243,7 +247,7 @@ You can refer to this guide to find out how to manage your streams in the `Log D
 
 > **Parameters**:
 >
-> - `name` : Name of the kind of VMware the forwarder uses (e.g.: Available: `nsxtEdge ┃ vcsa ┃ nsxtManager ┃ esxi`).
+> - `name` : Name of the kind of VMware the forwarder uses (e.g.: Available: `nsxtEdge ┃ vcsa ┃ nsxtManager ┃ esxi ┃ vmwareProxy ┃ vmware2FA ┃ nids`).
 > - `serviceName` : Service name of your managed vSphere (e.g.: `pcc-XXX-XXX-XXX-XXX`).
 >
 
@@ -318,6 +322,56 @@ Examples of returns for different Kind:
     "level",
     "application_name"
   ]
+}
+```
+
+**Kind name: vmwareProxy**
+
+```json
+{
+  "additionalReturnedFields": [
+    "priority",
+    "type",
+    "level",
+    "client_ip",
+    "http_method",
+    "http_status",
+    "http_url"
+  ],
+  "displayName": "Vmware proxy",
+  "name": "vmwareProxy",
+  "updatedAt": "2026-04-08T21:54:25.213037+02:00"
+}
+```
+
+**Kind name: vmware2FA**
+
+```json
+{
+  "additionalReturnedFields": [
+    "priority",
+    "type",
+    "level"
+  ],
+  "createdAt": "2026-04-07T17:44:48.543739+02:00",
+  "displayName": "Vmware 2FA",
+  "updatedAt": "2026-04-07T17:44:48.543752+02:00"
+}
+```
+
+**Kind name: NIDS**
+
+```json
+{
+  "additionalReturnedFields": [
+    "priority",
+    "type",
+    "level"
+  ],
+  "createdAt": "2026-04-02T20:47:11.200559+02:00",
+  "displayName": "Nids",
+  "name": "nids",
+  "updatedAt": "2026-04-02T20:47:11.200568+02:00"
 }
 ```
 

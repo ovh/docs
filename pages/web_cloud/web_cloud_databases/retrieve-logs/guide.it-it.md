@@ -58,7 +58,7 @@ In alcune situazioni, potrebbe essere necessario consultare o recuperare i log:
 ### Accesso allo Spazio Cliente OVHcloud
 
 - **Link diretto:** [Web Cloud Databases](/links/control-panel/web-cloud-databases)
-- **Percorso di navigazione:** `Web Cloud`{.action} > `Web Cloud Databases`{.action} > Seleziona il tuo database service
+- **Percorso di navigazione:** `Web Cloud`{.action} > `Web Cloud Databases`{.action} > Seleziona il tuo servizio di database
 
 ---
 <!-- CP-NAV-END:web-cloud-databases -->
@@ -72,6 +72,7 @@ In alcune situazioni, potrebbe essere necessario consultare o recuperare i log:
 
 ### Visualizzare i log in tempo reale del tuo Web Cloud Databases
 
+<!-- CP-STEPS-START:realtime-logs -->
 Clicca sulle schede qui sotto per visualizzare ciascuno dei **2** passaggi.
 
 > [!tabs]
@@ -94,6 +95,7 @@ Clicca sulle schede qui sotto per visualizzare ciascuno dei **2** passaggi.
 >> > I log sono disponibili qui solo in tempo reale. Appariranno solo se vengono generati mentre ti trovi sulla scheda `Log`{.action}.
 >> >
 >> > Se lasci la scheda `Log`{.action} e vi torni in seguito, lo storico visualizzato in precedenza non sarà più disponibile.
+<!-- CP-STEPS-END:realtime-logs -->
 
 ### Recuperare lo storico dei log della tua soluzione Web Cloud Databases
 
@@ -106,6 +108,7 @@ Per recuperare lo storico dei log della tua soluzione Web Cloud Databases, devi 
 > Per verificarlo, recupera l'indirizzo IP pubblico del tuo punto di accesso a Internet, quindi consulta la sezione **Autorizzare un indirizzo IP** di [questa guida](/pages/web_cloud/web_cloud_databases/starting_with_clouddb).
 >
 
+<!-- CP-STEPS-START:sftp-credentials -->
 Per trovare le informazioni di connessione SFTP della tua soluzione Web Cloud Databases, clicca sulle schede qui sotto per visualizzare ciascuno dei **2** passaggi.
 
 > [!tabs]
@@ -124,6 +127,7 @@ Per trovare le informazioni di connessione SFTP della tua soluzione Web Cloud Da
 >> > Se non conosci la `Password del server`, clicca sul pulsante `...`{.action} a destra per modificarla.
 >>
 >> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/general-information/sftp-login.png){.thumbnail}
+<!-- CP-STEPS-END:sftp-credentials -->
 
 Una volta recuperate le credenziali di accesso SFTP, connettiti tramite un client FTP (FileZilla, Cyberduck, WinSCP, ecc.).
 
@@ -168,6 +172,7 @@ Per sottoscrivere la tua soluzione Web Cloud Databases a un flusso di dati su Lo
 
 <a name="wcdb-ldp-case1"></a>
 
+<!-- CP-STEPS-START:ldp-subscribe-case1 -->
 /// details | Caso 1 - Sottoscrivere un flusso di dati esistente sulla tua soluzione Logs Data Platform
 
 Clicca sulle schede qui sotto per visualizzare ciascuno dei **4** passaggi.
@@ -198,7 +203,9 @@ Clicca sulle schede qui sotto per visualizzare ciascuno dei **4** passaggi.
 >> Dopo alcuni secondi, un messaggio conferma che la sottoscrizione è stata creata correttamente.
 
 ///
+<!-- CP-STEPS-END:ldp-subscribe-case1 -->
 
+<!-- CP-STEPS-START:ldp-subscribe-case2 -->
 /// details | Caso 2 - Sottoscrivere un nuovo flusso di dati sulla tua soluzione Logs Data Platform
 
 Clicca sulle schede qui sotto per visualizzare ciascuno dei **5** passaggi.
@@ -237,6 +244,7 @@ Clicca sulle schede qui sotto per visualizzare ciascuno dei **5** passaggi.
 >> Per sottoscrivere la tua soluzione Web Cloud Databases a questo nuovo flusso, torna alla scheda `Log`{.action} della tua soluzione Web Cloud Databases, quindi segui il [Caso 1](#wcdb-ldp-case1) descritto sopra.
 
 ///
+<!-- CP-STEPS-END:ldp-subscribe-case2 -->
 
 ## Per saperne di più <a name="go-further"></a>
 

@@ -17,7 +17,6 @@ Ce document rappelle le fonctionnement d'une solution d'hyperconvergence Nutanix
 ## Prérequis
 
 - Disposer d'un cluster Nutanix dans votre compte OVHcloud
-- Être connecté à votre [espace client OVHcloud](/links/manager)
 
 ## Présentation de la solution technique
 

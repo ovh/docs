@@ -1,7 +1,7 @@
 ---
 title: "Managing your web hosting plan with Visual Studio Code via SFTP"
 excerpt: "Administering a website on a web hosting plan with Visual Studio Code using an SFTP extension"
-updated: 2025-10-21
+updated: 2026-03-31
 ---
 
 ## Objective
@@ -93,38 +93,87 @@ This file is located in the .vscode folder, which is located at the root of your
 
 ### Configure the sftp.json file
 
-Before you work on your project, upload it to your local folder that you created earlier. However, first, make sure that the “sftp.json” file is correctly configured. Useful information can be found in your [OVHcloud Control Panel](/links/manager). In the `Web Cloud`{.action} section, click `Hosting plans`{.action}. Select the web hosting plan concerned, then click on the `FTP - SSH`{.action} tab.
+Before you work on your project, upload it to your local folder that you created earlier. However, first, make sure that the “sftp.json” file is correctly configured. Refer to our guide “[Logging in to your Web Hosting plan's FTP storage space](/pages/web_cloud/web_hosting/ftp_connection)” to find the useful information.
 
-![FTP - SSH](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh.png){.thumbnail}
-
-In the "sftp.json" file, enter the values for the following entries:
+In the “sftp.json” file, enter the values for the following entries:
 
 #### name
 
-Locate it at the two locations highlighted in orange.
+<!-- CP-STEPS-START:find-hosting-name -->
+To find the name of your web hosting plan, click on the tabs below to view each of the **2** steps.
 
-![hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/hosting_name.png){.thumbnail}
+> [!tabs]
+> **Step 1**
+>>
+>> Go to the [Hosting plans](/links/control-panel/web-hosting) page, then select the web hosting plan concerned.
+>>
+>> ![Hosting plans](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Step 2**
+>>
+>> Locate it at the two locations highlighted in orange.
+>>
+>> ![hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/hosting_name.png){.thumbnail}
+<!-- CP-STEPS-END:find-hosting-name -->
 
 > [!primary]
 >
-> The `name` value is customizable, so you can assign the value of your choice. However, if you are configuring multiple "sftp.json" files, it is best to use the values visible above as a reference for organizational reasons.
->
+> The `name` value is customisable, so you can assign the value of your choice. However, if you are configuring multiple “sftp.json” files, it is best to use the values visible above as a reference for organisational reasons.
 
 #### host
 
-In the `FTP-SSH`{.action} tab, the host name (`host`) is visible under the mention `FTP and SFTP server`{.action}.
+<!-- CP-STEPS-START:find-ftp-host -->
+To find the host name (`host`), click on the tabs below to view each of the **2** steps.
 
-![hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/hostname.png){.thumbnail}
+> [!tabs]
+> **Step 1**
+>>
+>> Go to the [Hosting plans](/links/control-panel/web-hosting) page, then select the web hosting plan concerned.
+>>
+>> ![Hosting plans](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Step 2**
+>>
+>> In the `FTP - SSH`{.action} tab, the host name is visible under the mention `FTP and SFTP server`.
+>>
+>> ![hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/hostname.png){.thumbnail}
+<!-- CP-STEPS-END:find-ftp-host -->
 
 #### username
 
-Locate the `username` in the `Login`{.action} column of the table.
+<!-- CP-STEPS-START:find-ftp-username -->
+To find the username, click on the tabs below to view each of the **2** steps.
+
+> [!tabs]
+> **Step 1**
+>>
+>> Go to the [Hosting plans](/links/control-panel/web-hosting) page, then select the web hosting plan concerned.
+>>
+>> ![Hosting plans](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Step 2**
+>>
+>> In the `FTP - SSH`{.action} tab, locate the username in the `Login` column of the table.
+<!-- CP-STEPS-END:find-ftp-username -->
 
 #### remotePath
 
-Find the `remotePath` under `Home directory path`{.action}. However, if multiple users are configured, the specified path may be different. In this case, replace the username mentioned after `home/` with the one of your choice in the `Login`{.action} list of your web hosting plan.
+<!-- CP-STEPS-START:find-ftp-remote-path -->
+To find the remote path (`remotePath`), click on the tabs below to view each of the **2** steps.
 
-**Example**: If your username is "john-smith" you will get `home/john-smith`.
+> [!tabs]
+> **Step 1**
+>>
+>> Go to the [Hosting plans](/links/control-panel/web-hosting) page, then select the web hosting plan concerned.
+>>
+>> ![Hosting plans](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Step 2**
+>>
+>> In the `FTP - SSH`{.action} tab, locate the path under the mention `Home directory path`. If multiple users are configured, the specified path may be different. In this case, replace the username mentioned after `home/` with the one of your choice in the `Login` column of the table.
+>>
+>> **Example**: If your username is “john-smith” you will get `home/john-smith`.
+<!-- CP-STEPS-END:find-ftp-remote-path -->
 
 Finally, remember to add this line in the file “sftp.json”: `"openSsh": true`.
 

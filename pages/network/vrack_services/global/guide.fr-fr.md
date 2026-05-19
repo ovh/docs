@@ -27,6 +27,16 @@ Le produit vRack Services utilise le concept de sous-réseau (ou *subnet*) afin 
 3. **Service Endpoint**
 Le Service Endpoint représente votre point d'accès au service managé. Il est associé à un sous-réseau et dispose d'une ou plusieurs addresses IP privées attribuées automatiquement.
 
+<!-- CP-NAV-START:network-vrack-services -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [vRack Services](/links/control-panel/network-vrack-services)
+- **Pour accéder à vos services :** `Network`{.action} > `vRack Services`{.action}
+
+---
+<!-- CP-NAV-END:network-vrack-services -->
 ## En pratique
 
 Configurer un Service Endpoint se déroule en 3 étapes :

@@ -20,7 +20,6 @@ Vous pouvez ajouter des images ISO dans le système Nutanix pour les utiliser ul
 ## Prérequis
 
 - Disposer d'un cluster Nutanix dans votre compte OVHcloud
-- Être connecté à votre [espace client OVHcloud](/links/manager)
 - Être connecté à Prism Central sur le cluster
 
 ## Présentation du système d'images dans Nutanix

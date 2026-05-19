@@ -1,6 +1,6 @@
 ---
-title: "Jak tworzyć i używać kluczy uwierzytelniających do połączeń SSH z serwerami OVHcloud"
-excerpt: "Dowiedz się, jak tworzyć pary kluczy OpenSSH na Twoim lokalnym urządzeniu i jak je używać do nawiązywania bezpiecznych połączeń z serwerem dedykowanym lub VPS"
+title: "Jak utworzyć i używać kluczy SSH z serwerami dedykowanymi"
+excerpt: "Utwórz parę kluczy SSH i skonfiguruj serwer dedykowany OVHcloud do bezpiecznego uwierzytelniania bez hasła."
 updated: 2025-01-06
 ---
 

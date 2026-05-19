@@ -11,8 +11,18 @@ L'accesso al tuo vCenter è limitato agli indirizzi IP autorizzati.
 
 ## Prerequisiti
 
-* Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
 * Disporre di un’[infrastruttura Hosted Private Cloud](https://www.ovhcloud.com/it/enterprise/products/hosted-private-cloud/) sul proprio account OVHcloud
+
+<!-- CP-NAV-START:privatecloud-vmware-vsphere -->
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [VMware vSphere](/links/control-panel/privatecloud-vmware-vsphere)
+- **Percorso di navigazione:** `Hosted Private Cloud`{.action} > `Managed VMware vSphere`{.action} > Seleziona il tuo vSphere service
+
+---
+<!-- CP-NAV-END:privatecloud-vmware-vsphere -->
 
 ## Procedura
 

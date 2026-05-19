@@ -1,7 +1,7 @@
 ---
 title: "Web hosting - Consultar las estadísticas y logs de un sitio web"
 excerpt: "Descubra cómo consultar las estadísticas y los logs de un sitio web en un plan de hosting"
-updated: 2025-10-09
+updated: 2026-04-01
 ---
 
 ## Objetivo
@@ -18,7 +18,7 @@ El acceso a los logs y a las estadísticas de su sitio web está incluido en su 
 
 ### Acceso al área de cliente de OVHcloud
 
-- **Enlace directo:** [Hosting plans](/links/control-panel/web-hosting)
+- **Enlace directo:** [Alojamientos](/links/control-panel/web-hosting)
 - **Ruta de navegación:** `Web Cloud`{.action} > `Alojamientos`{.action} > Seleccione su alojamiento web
 
 ---
@@ -26,14 +26,15 @@ El acceso a los logs y a las estadísticas de su sitio web está incluido en su 
 
 ## Procedimiento
 
+<!-- CP-STEPS-START:access-stats-and-logs -->
 Para acceder a los diferentes datos estadísticos y logs de su alojamiento web, haga clic en las fichas siguientes para ver cada una de las **3** etapas.
 
 > [!tabs]
 > **Etapa 1**
 >>
->> Acceda a la página [Hosting plans](/links/control-panel/web-hosting) y seleccione el alojamiento web correspondiente.
+>> Acceda a la página [Alojamientos](/links/control-panel/web-hosting) y elija el alojamiento web correspondiente.
 >>
->> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>> ![Selección de un alojamiento web en el área de cliente de OVHcloud](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
 > **Etapa 2**
 >>
@@ -51,6 +52,7 @@ Para acceder a los diferentes datos estadísticos y logs de su alojamiento web, 
 >> - [Administración de los usuarios](#admin-user): Muestra los usuarios autorizados a acceder a las estadísticas.
 >>
 >> ![statistics and logs interface](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/statistics-and-logs/tab.png){.thumbnail}
+<!-- CP-STEPS-END:access-stats-and-logs -->
 
 ### Estadísticas de visitas <a name="website-stats"></a>
 
@@ -100,26 +102,59 @@ Los diferentes tipos de logs están a su disposición:
 ### Estadísticas de la infraestructura <a name="infra-stats"></a>
 
 En esta sección podrá consultar la actividad de la infraestructura de su alojamiento web para visualizar el consumo de los recursos puestos a su disposición.
+<!-- CP-STEPS-START:view-infra-stats -->
+Para ello, haga clic en las fichas siguientes para ver cada una de las **3** etapas.
 
-![infrastructure statistics](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/statistics-and-logs/infrastructure-statistics-graph.png){.thumbnail}
-
-Puede ver diferentes tipos de gráficos en el menú desplegable de la parte superior izquierda:
-
-- **Comandos FTP**: indica los comandos principales (upload, download, login, delete) realizados utilizando el protocolo FTP en su alojamiento web.
-- **Peticiones HTTP**: indica el número y el código de retorno de las solicitudes HTTP ejecutadas en su alojamiento web. Todo ello distinguiendo entre los distintos códigos HTTP (2xx/3xx, 4xx y 5xx). Si lo necesita, puede consultar la lista de códigos HTTP y su significado realizando directamente una búsqueda a través de un motor de búsqueda (Google, Yahoo!, bing, etc.).
-- **Conexiones salientes**: peticiones enviadas desde su sitio web hacia un sitio web externo.
-- **Uso de la CPU**: nivel de consumo del procesador en su instancia de alojamiento web.
-- **Superación del límite de recursos**: indica los momentos en los que el alojamiento web supera el límite de recursos.
-- **Consultas SQL** : cantidad de consultas a las bases de datos de su alojamiento web.
-- **Tiempo de respuesta SQL** : Tiempo de respuesta de las consultas enviadas a las bases de datos de su alojamiento web.
+> [!tabs]
+> **Etapa 1**
+>>
+>> Acceda a la página [Alojamientos](/links/control-panel/web-hosting) y elija el alojamiento web correspondiente.
+>>
+>> ![Selección de un alojamiento web en el área de cliente de OVHcloud](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Etapa 2**
+>>
+>> En la nueva página, haga clic en la pestaña `Estadísticas y logs`{.action} y acceda a la sección **Estadísticas de la infraestructura**.
+>>
+> **Etapa 3**
+>>
+>> Puede ver diferentes tipos de gráficos en el menú desplegable de la parte superior izquierda:
+>>
+>> ![Estadísticas de la infraestructura del alojamiento web](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/statistics-and-logs/infrastructure-statistics-graph.png){.thumbnail}
+>>
+>> - **Comandos FTP**: indica los comandos principales (upload, download, login, delete) realizados utilizando el protocolo FTP en su alojamiento web.
+>> - **Peticiones HTTP**: indica el número y el código de retorno de las solicitudes HTTP ejecutadas en su alojamiento web, distinguiendo entre los distintos códigos HTTP (2xx/3xx, 4xx y 5xx).
+>> - **Conexiones salientes**: peticiones enviadas desde su sitio web hacia un sitio web externo.
+>> - **Uso de la CPU**: nivel de consumo del procesador en su instancia de alojamiento web.
+>> - **Superación del límite de recursos**: indica los momentos en los que el alojamiento web supera el límite de recursos.
+>> - **Consultas SQL**: cantidad de consultas a las bases de datos de su alojamiento web.
+>> - **Tiempo de respuesta SQL**: tiempo de respuesta de las consultas enviadas a las bases de datos de su alojamiento web.
+<!-- CP-STEPS-END:view-infra-stats -->
 
 ### Administración de los usuarios <a name="admin-user"></a>
 
 La creación de un usuario permitirá a una persona acceder a las estadísticas de su alojamiento web sin tener acceso al área de cliente de OVHcloud.
 
-En la sección `Administración de los usuarios`{.action}, haga clic en `Crear un nuevo usuario`{.action} y siga las instrucciones para terminar de crear un nuevo usuario.
+<!-- CP-STEPS-START:create-stats-user -->
+Para crear un nuevo usuario, haga clic en las fichas siguientes para ver cada una de las **3** etapas.
 
-![create a new user](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/statistics-and-logs/create-a-new-user.png){.thumbnail}
+> [!tabs]
+> **Etapa 1**
+>>
+>> Acceda a la página [Alojamientos](/links/control-panel/web-hosting) y elija el alojamiento web correspondiente.
+>>
+>> ![Selección de un alojamiento web en el área de cliente de OVHcloud](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Etapa 2**
+>>
+>> En la nueva página, haga clic en la pestaña `Estadísticas y logs`{.action} y acceda a la sección **Administración de los usuarios**.
+>>
+> **Etapa 3**
+>>
+>> Haga clic en `Crear un nuevo usuario`{.action} y siga las instrucciones para finalizar la creación.
+>>
+>> ![Creación de un nuevo usuario para las estadísticas](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/statistics-and-logs/create-a-new-user.png){.thumbnail}
+<!-- CP-STEPS-END:create-stats-user -->
 
 Para acceder a las estadísticas de su sitio web con un usuario que haya creado, debe introducir la siguiente dirección sustituyendo `000` por el número de cluster de su alojamiento web y `domain.tld` por el nombre de dominio de su sitio web (sin los `www`):
 
@@ -127,24 +162,33 @@ Para acceder a las estadísticas de su sitio web con un usuario que haya creado,
 https://logs.cluster000.hosting.ovh.net/domain.tld/
 ```
 
-También puede consultar el enlace de acceso a las estadísticas / logs directamente desde su área de cliente:
+También puede consultar el enlace de acceso a las estadísticas / logs directamente desde su área de cliente.
+<!-- CP-STEPS-START:retrieve-stats-link -->
+Para ello, haga clic en las fichas siguientes para ver cada una de las **3** etapas.
 
-1. Conéctese a su [área de cliente de OVHcloud](/links/manager).
-2. Haga clic en la pestaña `Web Cloud`{.action}.
-3. En la columna izquierda, haga clic en el menú `Alojamientos`{.action}.
-4. Seleccione el alojamiento web correspondiente.
-5. En la nueva página, haga clic en la pestaña `Estadísticas y logs`{.action}.
-6. Acceda a la sección `Estadísticas de visitas`{.action}.
-7. Pulse el botón `Ver las estadísticas`{.action}.
-
-![website visit statistics](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/statistics-and-logs/view-statistics.png){.thumbnail}
-
-En la nueva página, consulte la dirección URL de su navegador de internet.
+> [!tabs]
+> **Etapa 1**
+>>
+>> Acceda a la página [Alojamientos](/links/control-panel/web-hosting) y elija el alojamiento web correspondiente.
+>>
+>> ![Selección de un alojamiento web en el área de cliente de OVHcloud](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Etapa 2**
+>>
+>> En la nueva página, haga clic en la pestaña `Estadísticas y logs`{.action} y acceda a la sección **Estadísticas de visitas**.
+>>
+> **Etapa 3**
+>>
+>> Pulse el botón `Ver las estadísticas`{.action}.
+>>
+>> ![Estadísticas de visitas del sitio web](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/statistics-and-logs/view-statistics.png){.thumbnail}
+>>
+>> En la nueva página, consulte la dirección URL de su navegador de internet.
+<!-- CP-STEPS-END:retrieve-stats-link -->
 
 > [!warning]
 >
-> Si ha activado los logs separados en una [entrada multisitio](/pages/web_cloud/web_hosting/multisites_configure_multisite), los usuarios creados aquí no podrán acceder a las estadísticas de esa entrada multisitio específica.
->
+> Si ha activado los logs separados en uno de sus [sitios web](/pages/web_cloud/web_hosting/multisites_configure_multisite), los usuarios creados aquí no podrán acceder a las estadísticas de ese sitio web específico.
 
 ## Más información
 

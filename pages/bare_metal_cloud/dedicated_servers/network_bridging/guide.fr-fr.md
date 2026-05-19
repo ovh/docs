@@ -1,6 +1,6 @@
 ---
-title: 'Configurer des Additional IP en mode bridge sur vos machines virtuelles'
-excerpt: 'Apprenez à utiliser le mode bridge pour configurer l’accès à Internet de vos machines virtuelles'
+title: "Configurer des Additional IP en mode bridge sur un serveur dédié"
+excerpt: "Configurez vos machines virtuelles sur un serveur dédié pour un accès Internet public via le mode bridge réseau"
 updated: 2026-01-06
 ---
 
@@ -563,5 +563,11 @@ Remplacez « MAC_ADDRESS » par l'adresse MAC virtuelle générée dans le pan
 Ensuite, il vous suffit d'effectuer un ping sur votre Additional IP depuis l'extérieur. Si cela fonctionne, cela signifie probablement qu'il y a une erreur de configuration sur la machine virtuelle ou sur l'hôte qui empêche l'Additional IP de fonctionner en mode normal. Si, au contraire, l'IP ne fonctionne toujours pas, veuillez ouvrir un ticket d'assistance via le [centre d'aide](https://help.ovhcloud.com/csm?id=csm_cases_requests).
 
 ## Aller plus loin
+
+[Configurer son adresse IP en alias](/pages/bare_metal_cloud/dedicated_servers/network_ipaliasing)
+
+[Configurer une adresse IPv6 principale sur un serveur dédié](/pages/bare_metal_cloud/dedicated_servers/network_ipv6)
+
+[Tutoriel - Configurer le mode bridge sur pfSense](/pages/bare_metal_cloud/dedicated_servers/pfSense_bridging)
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).

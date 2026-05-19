@@ -1,6 +1,6 @@
 ---
-title: 'Backup Storage auf einem Dedicated Server verwenden'
-excerpt: 'Erfahren Sie hier, wie Sie zusätzlichen Speicherplatz aktivieren und auf diesen zugreifen'
+title: "Backup Storage auf einem Dedicated Server verwenden"
+excerpt: "Aktivieren Sie den in Ihrem OVHcloud Dedicated Server enthaltenen Backup Storage und greifen Sie darauf zu, um Backups auf Dateiebene zu erstellen."
 updated: 2026-03-25
 ---
 
@@ -42,11 +42,11 @@ Die dedizierten Server von OVHcloud inkludieren einen zusätzlichen Backup-Speic
 
 Klicken Sie im Tab `Storage-Backup`{.action} auf den Button `Storage-Backup aktivieren`{.action}.
 
-![Backup Storage aktivieren](images/backup-storage01.png){.thumbnail}
+![Schaltfläche Backup Storage aktivieren auf dem Tab "Backup Storage"](images/backup-storage01.png){.thumbnail}
 
 Klicken Sie im angezeigten Kontextmenü auf `Bestätigen`{.action}.
 
-![Backup Storage aktivieren](images/backup-storage02.png){.thumbnail}
+![Aktivierung des Backup Storage im Popup-Fenster bestätigen](images/backup-storage02.png){.thumbnail}
 
 Ihr Backup Storage wird innerhalb weniger Minuten konfiguriert. Sie erhalten eine Bestätigungsmail, sobald die Konfiguration abgeschlossen ist.
 
@@ -58,7 +58,7 @@ Der Zugriff auf Ihren Speicherplatz ist per IP-Adresse mithilfe einer Zugriffsko
 
 Klicken Sie im Tab `Storage-Backup`{.action} auf den Button `Storage-Backup löschen`{.action}.
 
-![Zugang zum Backup-Speicher hinzufügen](images/backup-storage03.png){.thumbnail}
+![Schaltfläche Zugriff hinzufügen auf dem Tab "Backup Storage"](images/backup-storage03.png){.thumbnail}
 
 Wählen Sie den IP-Block aus, den Sie autorisieren möchten. Wählen Sie danach die freizugebenden Protokolle aus und klicken Sie auf `Weiter`{.action}.
 
@@ -67,7 +67,7 @@ Wählen Sie den IP-Block aus, den Sie autorisieren möchten. Wählen Sie danach 
 > Über Ihr Kundencenter können nur IP-Blöcke Ihres OVHcloud Kunden-Accounts zur ACL hinzugefügt werden.
 >
 
-![Zugang zum Backup-Speicher hinzufügen](images/backup-storage04.png){.thumbnail}
+![IP-Block und Protokolle für Backup-Zugriff auswählen](images/backup-storage04.png){.thumbnail}
 
 Bestätigen Sie, indem Sie auf `Beenden`{.action} klicken.
 
@@ -77,7 +77,7 @@ Sie können anschließend über den von Ihnen gewählten IP-Block auf den Backup
 
 Sobald der Dienst aktiviert ist, wird Ihre ACL Tabelle im Tab `Storage-Backup`{.action} angezeigt. Klicken Sie auf `...`{.action} rechts neben einem IP-Block, um das Zugangsmenü zu öffnen.
 
-![Zugang zum Backup-Speicher hinzufügen](images/backup-storage05.png){.thumbnail}
+![Backup-Zugriff ACL-Tabelle mit Ändern- und Löschen-Optionen](images/backup-storage05.png){.thumbnail}
 
 Um die Protokolle für einen autorisierten IP-Block zu ändern, klicken Sie im Popup-Fenster auf `Zugang bearbeiten`{.action} und wählen Sie die Protokolle im angezeigten Menü aus. Speichern Sie die Änderungen, indem Sie auf `Bestätigen`{.action} klicken.
 
@@ -134,7 +134,7 @@ Klicken Sie auf `Bestätigen`{.action}, um mit der Löschung fortzufahren. Ihr B
 
 Klicken Sie im Tab `Storage-Backup`{.action} auf den Button `Speicherplatz bestellen`{.action}.
 
-![Zusätzlichen Backup-Speicherplatz bestellen](images/backup-storage06.png){.thumbnail}
+![Zusätzlichen Speicherplatz für Backup Storage bestellen](images/backup-storage06.png){.thumbnail}
 
 Wählen Sie die Speicherkapazität aus, die Sie bestellen möchten, und klicken Sie dann auf `Weiter`{.action}.
 
@@ -392,5 +392,9 @@ Ersetzen Sie die Variablen im obenstehenden Beispielbefehl mit Ihren eigenen Wer
 - **FolderMount**: Verzeichnis, in das Sie die Freigabe mounten möchten (es muss bereits existieren)
 
 ## Weiterführende Informationen
+
+- [Backing Up Data and Databases on a Dedicated Server](/pages/bare_metal_cloud/dedicated_servers/save_datas_database_on_storage_ds)
+
+- [Configuring Storage on a HGR-STOR-2 Dedicated Server](/pages/bare_metal_cloud/dedicated_servers/hgrstor2_system_configuration)
 
 Treten Sie unserer [User Community](/links/community) bei.

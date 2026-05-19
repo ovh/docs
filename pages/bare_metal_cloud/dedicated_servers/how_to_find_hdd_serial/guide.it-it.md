@@ -1,6 +1,6 @@
 ---
-title: 'Recuperare il numero di serie di un hard disk'
-excerpt: 'Come conoscere il numero di serie di un disco per effettuarne la sostituzione'
+title: "Trovare il numero di serie di un disco su un server dedicato"
+excerpt: "Recupera il numero di serie di un disco rigido sul tuo server dedicato per identificarlo durante una richiesta di sostituzione"
 updated: 2018-08-21
 ---
 
@@ -173,4 +173,4 @@ Il numero del dispositivo _sg_ verrà mostrato in questo modo: `/dev/sg0`, `/dev
 
 [Configurare un RAID hardware](/pages/bare_metal_cloud/dedicated_servers/raid_hard) (in inglese)
 
-Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.
+Contatta la nostra [Community di utenti](/links/community).

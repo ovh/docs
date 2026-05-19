@@ -1,6 +1,6 @@
 ---
-title: "Jak aktywować i używać trybu Rescue Windows"
-excerpt: "Dowiedz się, jak używać systemu rescue OVHcloud dla Windows do rozwiązywania problemów z serwerem dedykowanym"
+title: "Jak używać trybu WinRescue na serwerze dedykowanym Windows"
+excerpt: "Uruchom serwer dedykowany OVHcloud w trybie WinRescue, aby rozwiązywać problemy i odzyskiwać dane z systemu Windows."
 updated: 2025-01-28
 ---
 

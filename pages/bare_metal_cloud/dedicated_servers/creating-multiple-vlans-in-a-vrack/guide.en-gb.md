@@ -1,6 +1,6 @@
 ---
-title: Creating multiple vLANs in a vRack
-excerpt: This guide will show you how to create multiple vLANs within the vRack
+title: "Create Multiple vLANs in a vRack on a Dedicated Server"
+excerpt: "Create and manage multiple vLANs within your OVHcloud vRack to segment network traffic between dedicated servers."
 updated: 2026-02-20
 ---
 
@@ -106,7 +106,7 @@ The standard [vRack configuration](/pages/bare_metal_cloud/dedicated_servers/vra
 >>
 >> For multiple configured VLANs, your network configuration should look like this:
 >>
->> ![debian VLAN](images/multiple_vlan_debian.png){.thumbnail}
+>> ![Debian network config file with multiple VLAN entries](images/multiple_vlan_debian.png){.thumbnail}
 >>
 > **Ubuntu and Debian 12+**
 >>
@@ -160,7 +160,7 @@ The standard [vRack configuration](/pages/bare_metal_cloud/dedicated_servers/vra
 >>
 >> Here the interface that we want to configure is `eno2` with MAC address: `d0:50:99:d6:6b:14`.
 >>
->> ![ubuntu VLAN](images/vrack3-ubuntu-01.png){.thumbnail}
+>> ![Ubuntu ip a output showing eno2 private interface and MAC](images/vrack3-ubuntu-01.png){.thumbnail}
 >>
 >> Add the network configuration for this network interface and the VLAN information in the following file, ensuring it is placed directly beneath the `version: 2` line. Replace the values with your own:
 >>
@@ -189,7 +189,7 @@ The standard [vRack configuration](/pages/bare_metal_cloud/dedicated_servers/vra
 >>
 >> For multiple configured VLANs, your network configuration should look like this:
 >>
->> ![ubuntu VLAN](images/multiple_vlan_ubuntu.png){.thumbnail}
+>> ![Ubuntu Netplan YAML with multiple VLAN subinterfaces](images/multiple_vlan_ubuntu.png){.thumbnail}
 >>
 >> Save and close the file, then run the following command:
 >>
@@ -203,7 +203,7 @@ The standard [vRack configuration](/pages/bare_metal_cloud/dedicated_servers/vra
 >> ip a
 >> ```
 >>
->> ![ubuntu VLAN](images/vrack3-ubuntu-02.png){.thumbnail}
+>> ![Ubuntu ip a output confirming VLAN interfaces are active](images/vrack3-ubuntu-02.png){.thumbnail}
 >>
 > **AlmaLinux and Rocky Linux (8/9)**
 >>
@@ -261,7 +261,7 @@ The standard [vRack configuration](/pages/bare_metal_cloud/dedicated_servers/vra
 >>
 >> To have multiple configured VLANs, you should have a new file created for each VLAN identifier:
 >>
->> ![alma VLAN](images/multiple_vlan_alma.png){.thumbnail}
+>> ![AlmaLinux directory listing with multiple VLAN config files](images/multiple_vlan_alma.png){.thumbnail}
 >>
 >> Restart the network interface:
 >>
@@ -350,63 +350,65 @@ The standard [vRack configuration](/pages/bare_metal_cloud/dedicated_servers/vra
 >>
 >> - Overview:
 >>
->> ![config](images/multiple_vlan_fedora.png){.thumbnail}
+>> ![Fedora directory with multiple VLAN nmconnection files](images/multiple_vlan_fedora.png){.thumbnail}
 >>
->> ![config](images/multiple_vlan_fedora_1.png){.thumbnail}
+>> ![Fedora VLAN nmconnection file contents for VLAN 10](images/multiple_vlan_fedora_1.png){.thumbnail}
 >>
 
 ### Windows
 
 Log on to your server via a remote desktop connection, and open the Server Manager app. Then select `Local Server`{.action}. Now click the `Disabled`{.action} link next to **NIC Teaming**:
 
-![Windows vLAN](images/vrack2-windows-01.png){.thumbnail}
+![Server Manager Local Server with NIC Teaming disabled](images/vrack2-windows-01.png){.thumbnail}
 
 Next, right-click on the network interface and select `Add to New Team`{.action}.
 
-![Windows vLAN](images/vrack2-windows-02.0.png){.thumbnail}
+![Right-click context menu to add interface to new team](images/vrack2-windows-02.0.png){.thumbnail}
 
 In the popup window, create a new team by typing a team name into the **Team name** field. When you have finished, click `OK`{.action}.
 
-![Windows vLAN](images/vrack2-windows-02.png){.thumbnail}
+![New Team dialog with team name and OK button](images/vrack2-windows-02.png){.thumbnail}
 
 Next, we need to define the vLAN tag. In the **ADAPTERS AND INTERFACES** pane of the **NIC Teaming** screen, go to the `Team Interfaces`{.action} tab and right-click the interface you have just added to the new team, then click `Properties`{.action}. Now click `Specific VLAN`{.action}, and define the tag:
 
-![Windows vLAN](images/vrack2-windows-03.png){.thumbnail}
+![NIC Teaming interface properties with Specific VLAN tag](images/vrack2-windows-03.png){.thumbnail}
 
 Next, we need to configure the IP address of the vLAN. Click the `Start`{.action} button on your keyboard, then click `Control Panel`{.action}:
 
-![Windows vLAN](images/vrack2-windows-04.png){.thumbnail}
+![Windows Start menu showing Control Panel option](images/vrack2-windows-04.png){.thumbnail}
 
 Next, click `Network and Internet`{.action}:
 
-![Windows vLAN](images/vrack2-windows-05.png){.thumbnail}
+![Control Panel with Network and Internet category](images/vrack2-windows-05.png){.thumbnail}
 
 Then `Network and Sharing Center`{.action}:
 
-![Windows vLAN](images/vrack2-windows-06.png){.thumbnail}
+![Network and Sharing Center link in Windows](images/vrack2-windows-06.png){.thumbnail}
 
 Then click `Change adapter settings`{.action}:
 
-![Windows vLAN](images/vrack2-windows-07.png){.thumbnail}
+![Change adapter settings in Network and Sharing Center](images/vrack2-windows-07.png){.thumbnail}
 
 Next, right-click the vLAN interface, and click `Properties`{.action}:
 
-![Windows vLAN](images/vrack2-windows-08.png){.thumbnail}
+![Right-click on VLAN interface to open Properties](images/vrack2-windows-08.png){.thumbnail}
 
 Note that in our example `Ethernet 2` is the interface used for the vRack. However, it is possible that the vRack NIC is a different interface in your configuration. The correct one to select will be the interface that does not have the server's main IP address or has a self-assigned IP.
 
 Then double-click `Internet Protocol Version 4 (TCP/IPv4)`{.action}:
 
-![Windows vLAN](images/vrack2-windows-09.png){.thumbnail}
+![Adapter properties with IPv4 protocol highlighted](images/vrack2-windows-09.png){.thumbnail}
 
 Next, click `Use the following IP address`{.action}. For **IP address**, type in an IP from your internal range. For **Subnet mask**, type in 255.255.0.0.
 
-![Windows vLAN](images/vrack2-windows-10.png){.thumbnail}
+![IPv4 settings with VLAN IP address and subnet mask](images/vrack2-windows-10.png){.thumbnail}
 
 Finally, click the `OK`{.action} button to save the changes, then reboot your server.
 
 ## Go further
 
 [Configuring the vRack on your Dedicated Servers](/pages/bare_metal_cloud/dedicated_servers/vrack_configuring_on_dedicated_server)
+
+[Configuring vRack Between Public Cloud and Dedicated Server](/pages/bare_metal_cloud/dedicated_servers/configuring-the-vrack-between-the-public-cloud-and-a-dedicated-server)
 
 Join our [community of users](/links/community).

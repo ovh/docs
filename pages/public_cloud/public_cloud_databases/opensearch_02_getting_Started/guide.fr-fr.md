@@ -128,6 +128,7 @@ Optionally, you can configure access control lists (ACL) for granular permission
 
 #### Optional: configure ACLs
 
+
 OpenSearch database supports index-level access control lists (ACLs) to control permissions. This approach allows you to limit the operations that are available to specific connections and to restrict access to certain data sets, which improves the security of your data.
 
 You first have to enable the ACLs functionality, and then you can add ACLs for all users:

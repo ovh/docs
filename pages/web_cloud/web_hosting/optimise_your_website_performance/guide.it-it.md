@@ -1,7 +1,7 @@
 ---
 title: 'Ottimizza le performance del tuo sito'
 excerpt: "Guida all'ottimizzazione delle performance del tuo sito"
-updated: 2025-10-09
+updated: 2026-04-01
 ---
 
 ## Obiettivo
@@ -21,7 +21,7 @@ Ti proponiamo qualche spunto per risolvere i problemi di un sito lento e per ott
 
 ### Accesso allo Spazio Cliente OVHcloud
 
-- **Link diretto:** [Hosting plans](/links/control-panel/web-hosting)
+- **Link diretto:** [Hosting](/links/control-panel/web-hosting)
 - **Percorso di navigazione:** `Web Cloud`{.action} > `Hosting`{.action} > Seleziona il tuo hosting web
 
 ---
@@ -99,16 +99,13 @@ Puoi trovare maggiori informazioni più avanti, allo step 5.
 
 Correla i grafici relativi all’utilizzo delle risorse del tuo hosting (ulteriori informazioni qui di seguito) per trovare l’origine dei ritardi e poi consulta i log per rilevare le date dei picchi.
 
-Puoi accedere ai tuoi log, alle statistiche e ai grafici direttamente dallo [Spazio Cliente OVHcloud](/links/manager)).
-
-Come accedere alle statistiche e ai log:
-
-Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **3** passi.
+<!-- CP-STEPS-START:access-stats-and-logs -->
+Per accedere alle statistiche e ai log, clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **3** passaggi.
 
 > [!tabs]
 > **Passaggio 1**
 >>
->> Accedi alla pagina [Hosting plans](/links/control-panel/web-hosting), poi seleziona l'hosting Web interessato.
+>> Accedi alla pagina [Hosting](/links/control-panel/web-hosting) e seleziona l'hosting web interessato.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
@@ -123,35 +120,39 @@ Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **3** pa
 >> Clicca sul pulsante `Visualizza le statistiche`{.action} per accedere alle statistiche di visita del sito Web o su `Visualizza i log`{.action} per consultare i log disponibili per il tuo hosting Web.
 >>
 >> ![logs](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/statistics-and-logs/tab.png){.thumbnail}
+<!-- CP-STEPS-END:access-stats-and-logs -->
 
-Come accedere ai grafici:
+<!-- CP-STEPS-START:access-resource-charts -->
+Per accedere ai grafici, clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **3** passaggi.
 
-1. Clicca su `Hosting`{.action} nella colonna di sinistra e seleziona l’hosting Web in questione.
-2. Nella nuova pagina, clicca sulla scheda `Statistiche e log`{.action}. Sfoglia fino in fondo alla pagina in cui si trova il grafico associato all’utilizzo dell’hosting.
-3. Seleziona il **tipo** di informazioni e il **periodo** dei dati visualizzati.
-
-![graphs](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/statistics-and-logs/infrastructure-statistics-graph.png){.thumbnail}
-
-Che tipo di informazioni è possibile visualizzare?
-
-- **Richieste HTTP**: indica il numero di hit medio al sito. (Hit: richiesta di accesso a un qualsiasi file - testo, immagine, ecc. - di una pagina web effettuata dal tuo browser).  Gli hit sono classificati per codice http: 2xx/3xx - 4xx - 5xx
-
-- **Tempo medio di risposta**: corrisponde al tempo medio di risposta delle pagine, distinguendo tra quelle dinamiche e quelle statiche.
-
-- **Superamento del limite consentito**: questo grafico ti mostra l’utilizzo dei Workers PHP e l’eventualità di effettuare un upgrade dell’offerta di hosting. L’utilizzo di PHP-FPM ti aiuta a ridurre l’uso dei Worker PHP.
-
-- **Utilizzo della CPU**: indica l’utilizzo della CPU da parte del tuo sito, cosa che può aiutarti a identificare un possibile sovraccarico.
-
-- **Connessioni in uscita**: permette di vedere le connessioni in uscita realizzate dal server. Ad esempio, in caso di hack, il server può essere utilizzato per attaccare altri siti esterni. Puoi anche verificare le chiamate esterne realizzate dai moduli come Facebook, Twitter, ecc.  Riducendo il numero di richieste TCP in uscita, si riducono i tempi di caricamento, perché se il server da cui stai richiedendo il contenuto impiega molto tempo per rispondere, i tempi di caricamento del tuo sito aumenteranno ulteriormente.
-
-- **Comandi FTP**: mostra i vari comandi FTP utilizzati nell’hosting. Ad esempio i tentativi di accesso riusciti e non riusciti, download, upload, eliminazione file, ecc.
-
-Visualizzi le due seguenti categorie, solo se al momento usi un database sul tuo piano di hosting.
-Ricordati di selezionare il nome del tuo database e il periodo che ti interessa.
-
-- **Tempo di risposta SQL**: mostra i tempi di risposta delle richieste
-
-- **Richieste SQL**: mostra la quantità di richieste
+> [!tabs]
+> **Passaggio 1**
+>>
+>> Accedi alla pagina [Hosting](/links/control-panel/web-hosting) e seleziona l’hosting web interessato.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Passaggio 2**
+>>
+>> Nella nuova pagina clicca sulla scheda `Statistiche e log`{.action}. Scorri fino in fondo alla pagina in cui si trova il grafico associato all’utilizzo dell’hosting.
+>>
+> **Passaggio 3**
+>>
+>> Seleziona il **tipo** di informazioni e il **periodo** dei dati visualizzati.
+>>
+>> ![Grafico delle statistiche dell’infrastruttura](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/statistics-and-logs/infrastructure-statistics-graph.png){.thumbnail}
+>>
+>> I diversi tipi di informazioni disponibili:
+>>
+>> - **Richieste HTTP**: indica il numero di hit medio al sito. Gli hit sono classificati per codice http: 2xx/3xx - 4xx - 5xx.
+>> - **Tempo medio di risposta**: corrisponde al tempo medio di risposta delle pagine, distinguendo tra quelle dinamiche e quelle statiche.
+>> - **Superamento del limite consentito**: questo grafico ti mostra l’utilizzo dei Workers PHP e l’eventualità di effettuare un upgrade dell’offerta di hosting. L’utilizzo di PHP-FPM ti aiuta a ridurre l’uso dei Worker PHP.
+>> - **Utilizzo della CPU**: indica l’utilizzo della CPU da parte del tuo sito, cosa che può aiutarti a identificare un possibile sovraccarico.
+>> - **Connessioni in uscita**: permette di vedere le connessioni in uscita realizzate dal server. Ad esempio, in caso di hack, il server può essere utilizzato per attaccare altri siti esterni. Puoi anche verificare le chiamate esterne realizzate dai moduli come Facebook, Twitter, ecc. Riducendo il numero di richieste TCP in uscita, si riducono i tempi di caricamento, perché se il server da cui stai richiedendo il contenuto impiega molto tempo per rispondere, i tempi di caricamento del tuo sito aumenteranno ulteriormente.
+>> - **Comandi FTP**: mostra i vari comandi FTP utilizzati nell’hosting. Ad esempio i tentativi di accesso riusciti e non riusciti, download, upload, eliminazione file, ecc.
+>> - **Tempo di risposta SQL**: mostra i tempi di risposta delle richieste (visibile solo se utilizzi un database).
+>> - **Richieste SQL**: mostra la quantità di richieste (visibile solo se utilizzi un database).
+<!-- CP-STEPS-END:access-resource-charts -->
 
 ### 5 - Controlla le richieste della rete
 
@@ -188,11 +189,7 @@ _Se non usi un database, questo step è facoltativo_
 È possibile accedere al database utilizzando PHPMyAdmin. (Dato che le istruzioni su come utilizzare PHPMyAdmin andrebbero oltre lo scopo di questa guida, non saranno forniti ulteriori dettagli).
 Tuttavia, sono disponibili numerose guide esterne su questo argomento.
 
-**Come accedere al database tramite phpMyAdmin:** Per accedere al database tramite phpMyAdmin, segui la procedura dallo [Spazio Cliente OVHcloud](/links/manager):
-
-- Clicca sul tuo dominio nella sezione `Hosting`{.action}
-- Vai alla scheda `Database`{.action}
-- Clicca sui tre puntini`...`{.action} a destra del database per accedere a phpMyAdmin.
+**Come accedere al database tramite phpMyAdmin:** consulta la sezione dedicata nella nostra guida "[Gestisci un database dal tuo hosting condiviso](/pages/web_cloud/web_hosting/sql_create_database)".
 
 **Perché ottimizzare un database?** Perché un database sia sempre performante, è necessario mantenerlo tale.  Questo significa fare in modo che le informazioni che contiene vengano fornite il più rapidamente possibile allo script che le richiede. A tal fine, è essenziale avere un database ben strutturato e ottimizzato. Ecco come fare:
 

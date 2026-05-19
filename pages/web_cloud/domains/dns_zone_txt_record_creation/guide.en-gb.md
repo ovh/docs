@@ -51,6 +51,7 @@ To do this, you will need to create a TXT record in your domain name’s active 
 >
 > Adding, modifying or deleting DNS records in an active DNS zone can cause service interruptions. If in doubt, contact a [specialist provider](/links/partner).
 
+<!-- CP-STEPS-START:add-txt-record-domain -->
 ### Add a DNS TXT record for a domain name
 
 Click on the tabs below to view each of the **5** steps.
@@ -87,7 +88,9 @@ See our detailed guides:
 - [Editing an OVHcloud DNS zone](/pages/web_cloud/domains/dns_zone_edit)
 
 ///
+<!-- CP-STEPS-END:add-txt-record-domain -->
 
+<!-- CP-STEPS-START:add-txt-record-subdomain -->
 ### Add a DNS TXT record for a domain name subdomain
 
 Click on the tabs below to view each of the **5** steps.
@@ -125,6 +128,7 @@ See our detailed guides:
 - [Editing an OVHcloud DNS zone](/pages/web_cloud/domains/dns_zone_edit)
 
 ///
+<!-- CP-STEPS-END:add-txt-record-subdomain -->
 
 ## Go further
 

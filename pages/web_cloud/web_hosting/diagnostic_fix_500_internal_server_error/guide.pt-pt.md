@@ -26,16 +26,6 @@ Por vezes, provêm também de uma atualização efetuada **automaticamente** por
 - Dispor de uma [oferta de alojamento partilhado](/links/web/hosting)
 - Estar atualizado em [pagamentos](/pages/account_and_service_management/managing_billing_payments_and_services/invoice_management#pay-bills) e [renovações](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#renewal-management) dos serviços associados (nome de domínio e alojamento web)
 
-<!-- CP-NAV-START:web-hosting -->
----
-
-### Acesso à Área de Cliente OVHcloud
-
-- **Ligação direta:** [Hosting plans](/links/control-panel/web-hosting)
-- **Caminho de navegação:** `Web Cloud`{.action} > `Alojamentos`{.action} > Selecione o seu alojamento web
-
----
-<!-- CP-NAV-END:web-hosting -->
 
 ## Instruções
 

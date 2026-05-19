@@ -1,7 +1,7 @@
 ---
 title: "Alojamento web - A minha base de dados está saturada, o que fazer?"
 excerpt: "Saiba como agir quando a base de dados está sobrecarregada"
-updated: 2025-02-19
+updated: 2026-04-01
 ---
 
 ## Objetivo
@@ -25,7 +25,7 @@ Este tutorial propõe-lhe as ações a empreender quando a sua base de dados par
 
 ### Acesso à Área de Cliente OVHcloud
 
-- **Ligação direta:** [Hosting plans](/links/control-panel/web-hosting)
+- **Ligação direta:** [Alojamentos](/links/control-panel/web-hosting)
 - **Caminho de navegação:** `Web Cloud`{.action} > `Alojamentos`{.action} > Selecione o seu alojamento web
 
 ---
@@ -46,7 +46,7 @@ Um primeiro e-mail é enviado quando a sua base de dados consumiu mais de **80%*
 
 Quando a sua base de dados está em **overquota**, receberá um terceiro e-mail de aviso. A sua base de dados muda para "*READ ONLY*" (apenas leitura). Não pode adicionar ou alterar as entradas da sua base de dados, mas esta fica acessível em **leitura** e **supressão**. 
 
-### Etapa 1: identificar a(s) mesa(s) volumosa(s)
+### 1 - Identificar a(s) mesa(s) volumosa(s)
 
 Uma base de dados é constituída por uma ou várias **tabelas**, elas próprias constituídas por uma ou várias **linhas** organizadas com a ajuda de **colunas** pré-determinadas.
 
@@ -59,18 +59,19 @@ A primeira etapa consiste em identificar a ou as tabelas volumosas presentes na 
 > [phpMyAdmin](https://www.phpmyadmin.net/) está disponível em todas as bases de dados partilhadas da OVHcloud.
 > Esta aplicação de gestão de base de dados facilita a realização das ações manuais que pode efetuar com a sua base de dados.
 >
-> Se a base de dados estiver presente numa solução [Web Cloud Databases](/links/web/databases), consulte o guia "[Web Cloud Databases - Ligar-se à base de dados](/pages/web_cloud/web_cloud_databases/connecting-to-database-on-database-server)" e, em seguida, passe diretamente para a [etapa 1.2](#step1.2) deste guia.
+> Se a base de dados estiver presente numa solução [Web Cloud Databases](/links/web/databases), consulte o guia "[Web Cloud Databases - Ligar-se à base de dados](/pages/web_cloud/web_cloud_databases/connecting-to-database-on-database-server)" e, em seguida, passe diretamente para a [parte 1.2](#step1.2) deste guia.
 
 #### 1.1 - Aceder à base de dados via phpMyAdmin
 
-Recupere as informações de acesso à sua base de dados diretamente no ficheiro de configuração do seu website. Realize esta ação através da **etapa 1** do nosso guia sobre [a alteração da palavra-passe de uma base de dados](/pages/web_cloud/web_hosting/sql_change_password).
+Recupere as informações de acesso à sua base de dados diretamente no ficheiro de configuração do seu website. Realize esta ação através da **parte 1** do nosso guia sobre [a alteração da palavra-passe de uma base de dados](/pages/web_cloud/web_hosting/sql_change_password).
 
+<!-- CP-STEPS-START:connect-phpmyadmin -->
 Para se conectar ao banco de dados via phpMyAdmin, clique nos separadores abaixo para visualizar cada uma das **4** etapas.
 
 > [!tabs]
 > **Etapa 1**
 >>
->> Aceda à página [Hosting plans](/links/control-panel/web-hosting) e escolha o alojamento web correspondente.
+>> Aceda à página [Alojamentos](/links/control-panel/web-hosting) e escolha o alojamento web correspondente.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
@@ -95,6 +96,7 @@ Para se conectar ao banco de dados via phpMyAdmin, clique nos separadores abaixo
 >> ![phpMyAdmin Login interface](/pages/assets/screens/other/web-tools/phpmyadmin/pma-interface-login.png){.thumbnail}
 >>
 >> Introduza as informações de acesso à sua base de dados e depois clique em `Entrada`{.action}.
+<!-- CP-STEPS-END:connect-phpmyadmin -->
 
 #### 1.2 - Pesquisar as tabelas mais volumosas <a name="step1.2"></a>
 
@@ -113,9 +115,9 @@ Clique em `"Nome da sua base de dados"`{.action} na coluna da esquerda, depois e
 
 ![phpMyAdmin Tables](/pages/assets/screens/other/web-tools/phpmyadmin/pma-check-size.png){.thumbnail}
 
-As tabelas mais volumosas figuram no topo da tabela. Identifique-as e passe à **etapa 2**.
+As tabelas mais volumosas figuram no topo da tabela. Identifique-as e passe à **parte 2**.
 
-### Etapa 2 : determinar a utilidade do conteúdo presente na(s) mesa(s) volumosa(s)
+### 2 - Determinar a utilidade do conteúdo presente na(s) mesa(s) volumosa(s)
 
 Depois de identificar as tabelas volumosas, verifique se o conteúdo é necessário para o funcionamento do seu site.
 
@@ -140,7 +142,7 @@ Encontre aqui as ligações para os sites oficiais dos CMS propostos em instala�
 > Se o seu site foi desenvolvido "**manualmente**" por um prestador de serviços especializado, recomendamos que contacte este último para o acompanhar.
 >
 
-### Etapa 3 : tomar medidas corretivas
+### 3 - Tomar medidas corretivas
 
 Depois de determinar se o conteúdo das suas tabelas é necessário para o funcionamento do seu site, existem várias opções:
 
@@ -153,7 +155,7 @@ Deverá migrar a sua base de dados para uma base de dados mais volumosa.
 > Para aumentar o tamanho alocado à sua base de dados, deverá obrigatoriamente criar uma nova base de dados maior e copiar o conteúdo da antiga para a nova. De facto, não é possível aumentar diretamente o tamanho de uma base de dados associada a um alojamento web.
 >
 
-Consulte a nossa oferta de bases de dados [Web Cloud Databasess](/links/web/databases) para escolher o seu novo serviço de base de dados. 
+Consulte a nossa oferta de bases de dados [Web Cloud Databases](/links/web/databases) para escolher o seu novo serviço de base de dados. 
 
 Recomendamos esta oferta para bases de dados volumosas.
 
@@ -162,8 +164,8 @@ Recomendamos esta oferta para bases de dados volumosas.
 No caso de uma migração para uma base de dados externa às ofertas [Start SQL](/links/web/hosting-options-startsql) e [Web Cloud Databases](/links/web/databases), pode migrar manualmente o conteúdo da sua antiga base de dados para uma nova através dos nossos guias:
 
 - [Exportar a sua base de dados existente](/pages/web_cloud/web_hosting/sql_database_export)
-- [Primeiros passos com a oferta Web Cloud Databasess](/pages/web_cloud/web_cloud_databases/starting_with_clouddb)
-- [Importar a sua antiga base de dados para o serviço Web Cloud Databasess](/pages/web_cloud/web_cloud_databases/restore-import-on-database-server)
+- [Primeiros passos com a oferta Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb)
+- [Importar a sua antiga base de dados para o serviço Web Cloud Databases](/pages/web_cloud/web_cloud_databases/restore-import-on-database-server)
 
 #### Caso n.º 2 - Não é necessária uma parte ou a totalidade do conteúdo da tabela volumosa para o funcionamento do seu site
 
@@ -224,7 +226,7 @@ DROP TABLE `table_1`
 
 > Neste exemplo, o comando suprime a tabela **table_1** e o conjunto das linhas que contém.
 
-### Etapa 4: Retirar a base de dados do estado "READ ONLY" (só de leitura)
+### 4 - Retirar a base de dados do estado "READ ONLY" (só de leitura)
 
 Os nossos robôs encarregados das verificações de quotas passam muito regularmente pelas nossas infraestruturas.
 Se, no momento da passagem pelos seus serviços, verificarem que a sua base de dados já não está em **overquota**, retirarão automaticamente o estado "READ ONLY" (leitura apenas).
@@ -234,12 +236,13 @@ No entanto, pode forçar a sua passagem pelos seus serviços para acelerar o pro
 
 #### Recalcular o limite para uma base de dados incluída na sua oferta de alojamento web
 
+<!-- CP-STEPS-START:recalculate-quota-web-hosting -->
 Clique nos separadores abaixo para visualizar cada uma das **4** etapas.
 
 > [!tabs]
 > **Etapa 1**
 >>
->> Aceda à página [Hosting plans](/links/control-panel/web-hosting) e escolha o alojamento web correspondente.
+>> Aceda à página [Alojamentos](/links/control-panel/web-hosting) e escolha o alojamento web correspondente.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
@@ -264,25 +267,21 @@ Clique nos separadores abaixo para visualizar cada uma das **4** etapas.
 >> Depois de iniciada, a operação pode demorar alguns minutos. Quando esta operação terminar, o estado "READ ONLY" da base de dados desaparece.
 >> A sua base de dados estará novamente plenamente operacional.
 >>
+<!-- CP-STEPS-END:recalculate-quota-web-hosting -->
 
 #### Recalcular o limite para uma base de dados alojada numa solução Web Cloud Databases
 
-Clique nos separadores abaixo para visualizar cada uma das **3** etapas.
+<!-- CP-STEPS-START:recalculate-quota-web-cloud-databases -->
+Clique nos separadores abaixo para visualizar cada uma das **2** etapas.
 
 > [!tabs]
 > **Etapa 1**
 >>
->> Aceda à [Área de Cliente OVHcloud](/links/manager) e aceda à secção `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Etapa 2**
->>
->> Clique no menu suspenso `Web Cloud Databases`{.action} e escolha a solução Web Cloud Databases correspondente.
+>> Aceda à página [Web Cloud Databases](/links/control-panel/web-cloud-databases) e selecione a solução Web Cloud Databases em causa.
 >>
 >> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases.png){.thumbnail}
 >>
-> **Etapa 3**
+> **Etapa 2**
 >>
 >> No menu **Informações gerais**, encontrará **Espaço utilizado**. Clique no botão `...`{.action} à direita e, a seguir, em `Atualizar o limite da sua base de dados`{.action}.
 >>
@@ -291,6 +290,7 @@ Clique nos separadores abaixo para visualizar cada uma das **3** etapas.
 >> Depois de iniciada, a operação pode demorar alguns minutos. Quando esta operação terminar, o estado "READ ONLY" da base de dados desaparece.
 >> A sua base de dados estará novamente plenamente operacional.
 >>
+<!-- CP-STEPS-END:recalculate-quota-web-cloud-databases -->
 
 ## Quer saber mais? <a name="go-further"></a>
 

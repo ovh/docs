@@ -1,6 +1,6 @@
 ---
-title: Assigning a Virtual MAC to an Additional IP
-excerpt: Find out how to create a virtual MAC address and assign it to an Additional IP address
+title: "Assign a Virtual MAC on a Dedicated Server"
+excerpt: "Create a virtual MAC address and assign it to an Additional IP for transparent VM networking on dedicated servers."
 updated: 2025-05-16
 ---
 
@@ -48,13 +48,14 @@ OVHcloud allows you to associate a virtual MAC address with an IP address, so th
 
 #### Via the OVHcloud Control Panel
 
+<!-- CP-STEPS-START:assign-mac-cp -->
 Click the `Additional IP`{.action} tab.
 
-![IP](images/manageIPs2022.png){.thumbnail}
+![Additional IP tab in the Control Panel](images/manageIPs2022.png){.thumbnail}
 
 Once you're in the IP section, locate your Additional IP address (or block) in the list and then click the `...`{.action} button to bring up the list of options.
 
-![IP](images/addvmac.png){.thumbnail}
+![Options menu for Additional IP address](images/addvmac.png){.thumbnail}
 
 When the 'Add a virtual MAC' box appears, select a type from the dropdown list, enter a virtual machine name, and then click `Confirm`{.action}.
 
@@ -65,12 +66,13 @@ When the 'Add a virtual MAC' box appears, select a type from the dropdown list, 
 > **Name of virtual machine:** Refers to the desired name for the virtual MAC address, in order to make it easy to identify this IP/MAC pair in the future.
 >
 
-![IP](images/addvmac2.png){.thumbnail}
+![Add a virtual MAC dialog with type and VM name](images/addvmac2.png){.thumbnail}
 
 > [!primary]
 >
 > Do not forget to assign the virtual MAC address created in your virtual machine configuration.
 >
+<!-- CP-STEPS-END:assign-mac-cp -->
 
 #### Via the OVHcloud API
 
@@ -89,9 +91,12 @@ Use the following API call:
 
 #### Via the OVHcloud Control Panel
 
+<!-- CP-STEPS-START:delete-mac-cp -->
 Log in to the [OVHcloud Control Panel](/links/manager), open the `Network`{.action} menu in the left-hand sidebar and click `Public IP Addresses`{.action}. Select the correct server, so that the Additional IP (or IP block) attached to it appears.
 
 Finally, click on the `...`{.action} button on the right, then click `Delete a Virtual MAC`{.action}.
+<!-- CP-STEPS-END:delete-mac-cp -->
+
 
 #### Via the OVHcloud API
 
@@ -111,5 +116,7 @@ The block will not be moved.
 Example: if you try to move a block of 4 IPs with different vMACs attached on a server that already has 30 vMACs the block will not be moved because the total of vMACs would be greater than the 32 vMACs allowed.
 
 ## Go further
+
+[Configuring IP Aliasing on a Dedicated Server](/pages/bare_metal_cloud/dedicated_servers/network_ipaliasing)
 
 Join our [community of users](/links/community).

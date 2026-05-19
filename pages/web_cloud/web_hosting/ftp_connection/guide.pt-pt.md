@@ -1,7 +1,7 @@
 ---
 title: "Aceder ao espaço de armazenamento FTP do alojamento web"
 excerpt: "Descubra como aceder ao espaço de armazenamento FTP do alojamento web da OVHcloud"
-updated: 2025-06-15
+updated: 2026-03-31
 ---
 
 ## Objetivo
@@ -23,7 +23,7 @@ As ofertas de alojamento web da OVHcloud dão acesso a um espaço de armazenamen
 
 ### Acesso à Área de Cliente OVHcloud
 
-- **Ligação direta:** [Hosting plans](/links/control-panel/web-hosting)
+- **Ligação direta:** [Alojamentos](/links/control-panel/web-hosting)
 - **Caminho de navegação:** `Web Cloud`{.action} > `Alojamentos`{.action} > Selecione o seu alojamento web
 
 ---
@@ -46,12 +46,13 @@ Para se ligar ao espaço de armazenamento FTP, recupere os seguintes elementos:
 >
 > **Se já dispõe destes elementos**, consulte na parte 2 "[Aceder ao espaço de armazenamento](#ftp_storage_access)" deste manual.
 
-Se não dispõe destes elementos, clique nos separadores abaixo para visualizar cada uma das **3** etapas.
+<!-- CP-STEPS-START:get-ftp-credentials -->
+Se não dispõe destes elementos, clique nos separadores abaixo para visualizar cada uma das **4** etapas.
 
 > [!tabs]
 > **Etapa 1**
 >>
->> Aceda à página [Hosting plans](/links/control-panel/web-hosting) e escolha o alojamento web correspondente.
+>> Aceda à página [Alojamentos](/links/control-panel/web-hosting) e escolha o alojamento web correspondente.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
@@ -74,27 +75,27 @@ Se não dispõe destes elementos, clique nos separadores abaixo para visualizar 
 >> > Escolha uma palavra-passe para esta nova conta de utilizador, clique em `Seguinte`{.action} e depois clique em `Confirmar`{.action}.
 >>
 >> Todos os elementos necessários para aceder ao espaço de armazenamento FTP estão presentes nesta página.
-
-Encontre aqui uma descrição das informações essenciais exibidas na página `FTP - SSH`:
-
-- **Servidor FTP e SFTP**: endereço do servidor FTP do seu alojamento web que permite aceder ao seu espaço de armazenamento FTP. Isto utilizando, por exemplo, um software FTP através do protocolo FTP ou SFTP.
-
-> A porta clássica de ligação é a porta "21". Utilize a porta "22" para uma ligação através do protocolo SFTP (caso este esteja ativado)
-
-- **Servidor SSH**: endereço do servidor SSH do seu alojamento web que permite aceder ao seu espaço de armazenamento FTP. Isto usando um terminal através do protocolo SSH.
-
-> A porta de ligação SSH é a porta "22".
-
-- **Login principal**: ID (S)FTP principal criado no seu alojamento web. Pode consultar todos os utilizadores (S)FTP do seu alojamento na coluna "Login" da tabela.
-
-> [!primary]
->
-> Dependendo da oferta de [alojamento web OVHcloud](/links/web/hosting) que possui, algumas das informações descritas acima (nomeadamente sobre o SSH) podem não aparecer.
->
+>>
+> **Etapa 4**
+>>
+>> Encontre aqui uma descrição das informações essenciais exibidas na página `FTP - SSH`:
+>>
+>> - **Servidor FTP e SFTP**: endereço do servidor FTP do seu alojamento web que permite aceder ao seu espaço de armazenamento FTP através de um software FTP ou SFTP.
+>>
+>> > A porta clássica de ligação é a porta "21". Utilize a porta "22" para uma ligação através do protocolo SFTP (caso este esteja ativado).
+>>
+>> - **Servidor SSH**: endereço do servidor SSH do seu alojamento web que permite aceder ao seu espaço de armazenamento FTP através de um terminal e do protocolo SSH.
+>>
+>> > A porta de ligação SSH é a porta "22".
+>>
+>> - **Login principal**: ID (S)FTP principal criado no seu alojamento web. Pode consultar todos os utilizadores (S)FTP do seu alojamento na coluna "Login" da tabela.
+>>
+>> > [!primary]
+>> >
+>> > Dependendo da oferta de [alojamento web OVHcloud](/links/web/hosting) que possui, algumas das informações descritas acima (nomeadamente sobre o SSH) podem não aparecer.
+<!-- CP-STEPS-END:get-ftp-credentials -->
 
 Se já não sabe a palavra-passe de um utilizador FTP ou SSH, consulte o nosso guia "[Modificar a palavra-passe de um utilizador FTP](/pages/web_cloud/web_hosting/ftp_change_password)".
-
-![ftpconnect](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/change-password.png){.thumbnail}
 
 Nesta fase, dispõe de todos os elementos que lhe permitem aceder ao seu espaço de armazenamento FTP.
 

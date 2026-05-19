@@ -31,6 +31,7 @@ You have just purchased an Email Pro solution, which gives you affordable profes
 
 ### Step 1: Add your domain name
 
+<!-- CP-STEPS-START:step-1-add-domain -->
 > [!primary]
 >
 > The name of an Email Pro service in the OVHcloud Control Panel begins with *emailpro-*, contains part of your NIC handle, and ends with a number (1 for the first Email Pro service installed, 2 for the second, etc.).
@@ -88,9 +89,11 @@ Click on the `Next`{.action} button to continue adding the domain.
 **For a non-OVHcloud** domain name, follow Step 3.
 
 At the end of the configuration process, check the information displayed, then click on the `Confirm`{.action} button to start adding the domain.
+<!-- CP-STEPS-END:step-1-add-domain -->
 
 ### Step 2: Configure your domain name
 
+<!-- CP-STEPS-START:step-2-configure-domain -->
 Once you have added the domain name as an associated domain, check its configuration using the table that pops up.
 
 You can use the `Diagnosis`{.action} column to check the domain name’s DNS configuration. A red box will appear if these configurations need to be changed. There are two possibilities:
@@ -105,9 +108,11 @@ You can use the `Diagnosis`{.action} column to check the domain name’s DNS con
     *For a DKIM* record, modify your DNS zone using the information provided when you click on the box. You can refer to our guide on "[How to improve email security with a DKIM record](/pages/web_cloud/domains/dns_zone_dkim)" to add this record.
 
 ![emailpro](images/emailpro-04.png){.thumbnail}
+<!-- CP-STEPS-END:step-2-configure-domain -->
 
 ### Step 3: Configure the Email Pro accounts
 
+<!-- CP-STEPS-START:step-3-configure-accounts -->
 To configure your email accounts, go to the `Email accounts`{.action} tab. The table displays the accounts that you have ordered in this format: “*@configureme.me*”.
 
 To configure them, click the `...`{.action} icon then `Edit`{.action}.
@@ -146,6 +151,7 @@ Once the information is complete, click on the `Next`{.action} button, check the
 >
 > Repeat this step as necessary according to the number of accounts you have. You can order additional accounts using the `Order accounts`{.action} button.
 >
+<!-- CP-STEPS-END:step-3-configure-accounts -->
 
 ### Step 4: Use your email addresses
 
@@ -166,12 +172,14 @@ If you would like to configure your email address on an email client or device (
 |Incoming|pro?.mail.ovh.net|SSL/TLS|993|
 |Outgoing|pro?.mail.ovh.net|STARTTLS|587|
 
+<!-- CP-STEPS-START:step-4-use-email-addresses -->
 > [!primary]
 >
 > In our guides, we use as the server name: pro?.mail.ovh.net. You will need to replace the "?" with the actual number indicating the appropriate server for your Email Pro service.
-> 
+>
 > You can find this information in the `General Information`{.action} tab of your Email Pro service, in the **Connection** box.
 >
+<!-- CP-STEPS-END:step-4-use-email-addresses -->
 
 ## Go further
 

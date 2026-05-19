@@ -99,7 +99,7 @@ The cancellation procedure is identical for the majority of OVHcloud services.
 
 However, there are **special cases** that are detailed [below](#specific-cases) in this guide.
 
-### How do I cancel my subscription? <a name="terminate"></a>
+### How do I cancel my subscription? <a name=”terminate”></a>
 
 To cancel your service subscription, open the [My offers and services](/links/control-panel/billing-services) page.
 
@@ -122,7 +122,7 @@ Your service will be cancelled on the **date of effect** listed in the “Manage
 
 ![termination request](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/cancellation-request.png){.thumbnail}
 
-### Special cases <a name="specific-cases"></a>
+### Special cases <a name=”specific-cases”></a>
 
 #### MX Plan email <a name="mxplan"></a>
 

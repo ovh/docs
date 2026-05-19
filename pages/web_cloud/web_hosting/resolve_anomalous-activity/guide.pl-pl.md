@@ -1,7 +1,7 @@
 ---
 title: "Jak reagować na wykrytą niezwykłą aktywność na Twoim hostingu webowym"
 excerpt: "Dowiedz się, jakie kroki należy podjąć, gdy wykryto niezwykłą aktywność na Twoim hostingu webowym OVHcloud"
-updated: 2025-10-02
+updated: 2026-04-01
 ---
 
 ## Wprowadzenie
@@ -19,7 +19,7 @@ Ten przewodnik wyjaśnia, dlaczego może zostać wykryta **niezwykła aktywnoś�
 
 ### Dostęp do Panelu klienta OVHcloud
 
-- **Link bezpośredni:** [Hosting plans](/links/control-panel/web-hosting)
+- **Link bezpośredni:** [Hosting](/links/control-panel/web-hosting)
 - **Ścieżka nawigacji:** `Web Cloud`{.action} > `Hosting`{.action} > Wybierz hosting WWW
 
 ---
@@ -79,11 +79,27 @@ Twój witryn internetowy tworzy wiele połączeń zewnętrznych (API, aktualizac
 >
 > Wykonaj ten krok **tylko po zastosowaniu powyższych rekomendacji** (diagnostyka, poprawki/aktualizacje, bezpieczeństwo). Jeśli niezwykła aktywność zostanie ponownie wykryta podczas następnego skanu, **środki bezpieczeństwa zostaną automatycznie ponownie aktywowane**. Otrzymasz nową wiadomość i blokady pozostaną w mocy do momentu **definitywnego rozwiązania** sytuacji.
 
-1. Zaloguj się do swojego [Panelu klienta OVHcloud](/links/manager), przejdź do `Web Cloud`{.action} i kliknij swój hosting webowy.
-2. Pojawia się **okno ostrzeżenia**: `Niezwykła aktywność na Twoim hostingu`. Jeśli klikniesz przycisk `Później`{.action}, **baner ostrzeżenia** `Wykryto niezwykłą aktywność` pojawia się na górze strony. Kliknij `Dowiedz się więcej`{.action}, aby ponownie otworzyć okno ostrzeżenia.
-3. **Zaznacz** pole: `Potwierdzam, że wykonałem wszystkie niezbędne działania, aby rozwiązać problem`.
-4. Kliknij `Uniknięcie środków bezpieczeństwa`{.action}.
-5. Pojawia się **baner potwierdzenia** na górze strony: `Twój hosting jest analizowany, aby uniknąć środków bezpieczeństwa.` Śledź postęp klikając w link `Zobacz bieżące zadania`{.action} lub bezpośrednio z zakładki `Bieżące zadania`{.action}.
+<!-- CP-STEPS-START:lift-security-measures -->
+Kliknij poniższe zakładki, aby wyświetlić kolejne **4** kroki.
+
+> [!tabs]
+> **Krok 1**
+>>
+>> Przejdź do strony [Hosting](/links/control-panel/web-hosting) i wybierz odpowiedni hosting WWW.
+>>
+> **Krok 2**
+>>
+>> Pojawia się **okno ostrzeżenia**: `"Niezwykła aktywność na Twoim hostingu"`. Jeśli klikniesz przycisk `Później`{.action}, **baner ostrzeżenia** `"Wykryto niezwykłą aktywność"` pojawia się na górze strony. Kliknij `Dowiedz się więcej`{.action}, aby ponownie otworzyć okno ostrzeżenia.
+>>
+> **Krok 3**
+>>
+>> **Zaznacz** pole: `Potwierdzam, że wykonałem wszystkie niezbędne działania, aby rozwiązać problem`, a następnie kliknij `Uniknięcie środków bezpieczeństwa`{.action}.
+>>
+> **Krok 4**
+>>
+>> Pojawia się **baner potwierdzenia** na górze strony: `Twój hosting jest analizowany, aby uniknąć środków bezpieczeństwa.` Śledź postęp klikając w link `Zobacz bieżące zadania`{.action} lub bezpośrednio z zakładki `Bieżące zadania`{.action}.
+>>
+<!-- CP-STEPS-END:lift-security-measures -->
 
 > [!warning]
 >

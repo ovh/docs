@@ -1,6 +1,6 @@
 ---
-title: Backing Up a Bare Metal Windows Server Using Veeam Agent for Windows
-excerpt: Learn how to configure the Veeam Agent for Microsoft Windows to back up your Bare Metal Windows server
+title: "Back up a Dedicated Windows Server with Veeam Agent"
+excerpt: "Configure the Veeam Agent for Microsoft Windows to protect your Bare Metal server with scheduled backups."
 updated: 2024-04-05
 ---
 
@@ -40,7 +40,7 @@ Click the menu button and select `+ Add New Job...`{.action}.
 
 Modify the default **Name** and/or **Description**, if you want to, and click `Next`{.action}.
 
-![Name](images/02-name.PNG){.thumbnail}
+![Veeam backup job name and description fields](images/02-name.PNG){.thumbnail}
 
 #### Backup Mode
 

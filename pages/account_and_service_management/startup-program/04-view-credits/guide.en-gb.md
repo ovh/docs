@@ -36,9 +36,11 @@ As a member of the OVHcloud Startup Program, you receive free credits to support
 
 ## Instructions
 
+<!-- CP-STEPS-START:view-startup-credits -->
 In [My payment methods](/links/control-panel/billing-payment-methods), select the `My Vouchers`{.action} tab. Here, you will see the total amount of allocated credits, the expiration date, remaining credits, and the consumption history.
 
     ![vouchers](images/02-vouchers.png){.thumbnail}
+<!-- CP-STEPS-END:view-startup-credits -->
 
 ## Conclusion
 

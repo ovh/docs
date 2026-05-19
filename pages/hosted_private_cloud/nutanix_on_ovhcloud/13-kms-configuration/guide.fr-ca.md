@@ -17,7 +17,6 @@ En suivant ce guide, vous apprendrez à utiliser les fonctionnalités de **chiff
 
 ## Prérequis
 
-- Être connecté à l'[espace client OVHcloud](/links/manager).
 - Une **clé KMS OVHcloud valide** dans votre compte OVHcloud.
     - Retrouvez plus d’informations dans notre guide « [Premiers pas avec OVHcloud Key Management Service (KMS)](/pages/manage_and_operate/kms/quick-start) »
 - Un **cluster Nutanix on OVHcloud** dans votre compte OVHcloud.

@@ -1,6 +1,6 @@
 ---
-title: 'Cambiar la contraseña de administrador en un servidor dedicado Windows'
-excerpt: 'Cómo cambiar la contraseña de administrador en un servidor dedicado Windows'
+title: "Cambiar la contraseña de administrador en un servidor dedicado Windows"
+excerpt: "Restablezca la contraseña de administrador en un servidor dedicado Windows a través del modo rescue de OVHcloud en caso de pérdida"
 updated: 2024-06-26
 flag: hidden
 ---

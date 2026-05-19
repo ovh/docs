@@ -1,7 +1,7 @@
 ---
 title: "Zarządzaj hostingiem za pomocą Visual Studio Code przez SFTP"
 excerpt: "Zarządzanie stroną WWW na hostingu za pomocą kodu Visual Studio Code z rozszerzeniem SFTP"
-updated: 2025-10-21
+updated: 2026-03-31
 ---
 
 ## Wprowadzenie
@@ -25,7 +25,7 @@ Jeśli posiadasz hosting od OVHcloud, zyskasz dostęp do przestrzeni dyskowej um
 
 ### Dostęp do Panelu klienta OVHcloud
 
-- **Link bezpośredni:** [Hosting plans](/links/control-panel/web-hosting)
+- **Link bezpośredni:** [Hosting](/links/control-panel/web-hosting)
 - **Ścieżka nawigacji:** `Web Cloud`{.action} > `Hosting`{.action} > Wybierz hosting WWW
 
 ---
@@ -93,38 +93,87 @@ Plik ten znajduje się w folderze .vscode, który jest umieszczony w katalogu g�
 
 ### Konfiguracja pliku sftp.json
 
-Zanim rozpoczniesz pracę nad Twoim projektem, przekaż go do utworzonego wcześniej lokalnego folderu. Najpierw jednak upewnij się, że plik "sftp.json" jest poprawnie skonfigurowany. Przydatne informacje można znaleźć w [Panelu klienta OVHcloud](/links/manager). W sekcji `Web Cloud`{.action} kliknij `Hosting`{.action}. Wybierz odpowiedni hosting, następnie kliknij zakładkę `FTP - SSH`{.action}.
-
-![FTP - SSH](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh.png){.thumbnail}
+Zanim rozpoczniesz pracę nad Twoim projektem, przekaż go do utworzonego wcześniej lokalnego folderu. Najpierw jednak upewnij się, że plik "sftp.json" jest poprawnie skonfigurowany. Zapoznaj się z naszym przewodnikiem "[Logowanie do przestrzeni dyskowej FTP hostingu](/pages/web_cloud/web_hosting/ftp_connection)", aby znaleźć potrzebne informacje.
 
 W pliku "sftp.json" wprowadź wartości dla następujących wpisów:
 
-#### name 
+#### name
 
-Odnajdziesz go w dwóch miejscach, które są wyróżnione na pomarańczowo.
+<!-- CP-STEPS-START:find-hosting-name -->
+Kliknij poniższe karty, aby wyświetlić kolejne **2** kroki.
 
-![hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/hosting_name.png){.thumbnail}
+> [!tabs]
+> **Krok 1**
+>>
+>> Przejdź na stronę [Hosting](/links/control-panel/web-hosting) i wybierz odpowiedni hosting.
+>>
+>> ![Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Krok 2**
+>>
+>> Odnajdziesz go w dwóch miejscach, które są wyróżnione na pomarańczowo.
+>>
+>> ![hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/hosting_name.png){.thumbnail}
+<!-- CP-STEPS-END:find-hosting-name -->
 
 > [!primary]
 >
-> Możesz ustawić dowolną wartość `name`(nazwa). Jeśli jednak konfigurujesz więcej niż jeden plik "sftp.json", to ze względów organizacyjnych lepiej jest użyć jako odwołania wartości widocznych powyżej.
->
+> Możesz ustawić dowolną wartość `name` (nazwa). Jeśli jednak konfigurujesz więcej niż jeden plik "sftp.json", to ze względów organizacyjnych lepiej jest użyć jako odwołania wartości widocznych powyżej.
 
 #### host
 
-W zakładce `FTP-SSH`{.action} nazwa hosta (`host`) jest widoczna pod napisem `Serwer FTP i SFTP`{.action}.
+<!-- CP-STEPS-START:find-ftp-host -->
+Kliknij poniższe karty, aby wyświetlić kolejne **2** kroki.
 
-![hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/hostname.png){.thumbnail}
+> [!tabs]
+> **Krok 1**
+>>
+>> Przejdź na stronę [Hosting](/links/control-panel/web-hosting) i wybierz odpowiedni hosting.
+>>
+>> ![Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Krok 2**
+>>
+>> W zakładce `FTP - SSH`{.action} nazwa hosta (`host`) jest widoczna pod napisem `Serwer FTP i SFTP`.
+>>
+>> ![hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/hostname.png){.thumbnail}
+<!-- CP-STEPS-END:find-ftp-host -->
 
 #### username
 
-Odszukaj nazwę użytkownika (`username`) w kolumnie `Login`{.action} tabeli.
+<!-- CP-STEPS-START:find-ftp-username -->
+Kliknij poniższe karty, aby wyświetlić kolejne **2** kroki.
+
+> [!tabs]
+> **Krok 1**
+>>
+>> Przejdź na stronę [Hosting](/links/control-panel/web-hosting) i wybierz odpowiedni hosting.
+>>
+>> ![Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Krok 2**
+>>
+>> W zakładce `FTP - SSH`{.action} odszukaj nazwę użytkownika w kolumnie `Login` tabeli.
+<!-- CP-STEPS-END:find-ftp-username -->
 
 #### remotePath
 
-Znajdź ścieżkę zdalną (`remotePath`) pod nazwą `Ścieżka do katalogu home`{.action}. Jeśli skonfigurowanych jest kilku użytkowników, podana ścieżka może być inna. W takim przypadku zmień nazwę użytkownika wskazaną po `home/` na wybraną przez siebie z listy `Login`{.action} Twojego hostingu.
+<!-- CP-STEPS-START:find-ftp-remote-path -->
+Kliknij poniższe karty, aby wyświetlić kolejne **2** kroki.
 
-**Przykład**: Jeśli Twoja nazwa użytkownika to "john-smith", otrzymasz `home/john-smith`
+> [!tabs]
+> **Krok 1**
+>>
+>> Przejdź na stronę [Hosting](/links/control-panel/web-hosting) i wybierz odpowiedni hosting.
+>>
+>> ![Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Krok 2**
+>>
+>> W zakładce `FTP - SSH`{.action} znajdź ścieżkę zdalną (`remotePath`) pod nazwą `Ścieżka do katalogu home`. Jeśli skonfigurowanych jest kilku użytkowników, podana ścieżka może być inna. W takim przypadku zmień nazwę użytkownika wskazaną po `home/` na wybraną przez siebie w kolumnie `Login` tabeli.
+>>
+>> **Przykład**: Jeśli Twoja nazwa użytkownika to "john-smith", otrzymasz `home/john-smith`.
+<!-- CP-STEPS-END:find-ftp-remote-path -->
 
 Dodaj ten wiersz do pliku "sftp.json": `"openSsh": true`
 

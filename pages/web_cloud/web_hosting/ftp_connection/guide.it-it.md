@@ -1,7 +1,7 @@
 ---
 title: "Accedi allo spazio di storage FTP del tuo hosting Web"
 excerpt: "Questa guida ti mostra come connettersi allo spazio di storage FTP del tuo hosting Web OVHcloud"
-updated: 2025-06-15
+updated: 2026-03-31
 ---
 
 ## Obiettivo
@@ -23,7 +23,7 @@ Le offerte di hosting Web OVHcloud danno accesso a uno spazio di storage FTP che
 
 ### Accesso allo Spazio Cliente OVHcloud
 
-- **Link diretto:** [Hosting plans](/links/control-panel/web-hosting)
+- **Link diretto:** [Hosting](/links/control-panel/web-hosting)
 - **Percorso di navigazione:** `Web Cloud`{.action} > `Hosting`{.action} > Seleziona il tuo hosting web
 
 ---
@@ -46,12 +46,13 @@ Per accedere allo spazio di storage FTP, recupera questi elementi:
 >
 > **Se disponi già di questi elementi**, prosegui direttamente alla parte 2 "[Accedi al tuo spazio di storage](#ftp_storage_access)" di questa guida.
 
-Se non disponi di questi elementi, clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **3** passi.
+<!-- CP-STEPS-START:get-ftp-credentials -->
+Se non disponi di questi elementi, clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **4** passaggi.
 
 > [!tabs]
 > **Passaggio 1**
 >>
->> Accedi alla pagina [Hosting plans](/links/control-panel/web-hosting), poi seleziona l'hosting Web interessato.
+>> Accedi alla pagina [Hosting](/links/control-panel/web-hosting), poi seleziona l'hosting Web interessato.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
@@ -69,32 +70,32 @@ Se non disponi di questi elementi, clicca sulle schede qui sotto per visualizzar
 >>
 >> > [!primary]
 >> >
->> > Per creare un nuovo utente FTP/SSH dalla stessa pagina, clicca su `Crea utente`{.action} situato a destra.
->> > Definisci l'estensione del nome di questa nuova `Utente`{.action} e la `Cartella di root`{.action} in cui l'utente potrà agire e clicca su `Avanti`{.action}.
->> > Seleziona una password per questo nuovo account utente, clicca su `Avanti`{.action} e poi clicca su `Conferma`{.action}.
+>> > Per creare un nuovo utente FTP/SSH dalla stessa pagina, clicca su `Creare un utente`{.action} situato a destra.
+>> > Definisci l'estensione del nome di questa nuova `Utente`{.action} e la `Cartella di root`{.action} in cui l'utente potrà agire e clicca su `Continua`{.action}.
+>> > Seleziona una password per questo nuovo account utente, clicca su `Continua`{.action} e poi clicca su `Conferma`{.action}.
 >>
 >> Tutti gli elementi necessari per connetterti allo spazio di storage FTP sono presenti su questa stessa pagina.
-
-Di seguito trovi una descrizione delle informazioni essenziali visualizzate sulla pagina `FTP - SSH`:
-
-- **Server FTP e SFTP**: indirizzo del server FTP del tuo hosting Web che permette di accedere al tuo spazio di archiviazione FTP, utilizzando, ad esempio, un software FTP tramite il protocollo FTP o SFTP.
-
-> La porta classica di connessione è la porta "21". Utilizza la porta "22" per una connessione tramite il protocollo SFTP (se attivo)
-
-- **Server SSH**: indirizzo del server SSH del tuo hosting Web che permette di accedere al tuo spazio di archiviazione FTP, utilizzando un terminale tramite il protocollo SSH.
-
-> La porta di connessione SSH è la porta "22".
-
-- **Login principale**: identificativo (S)FTP principale creato sul tuo hosting Web. Tutti gli utenti (S)FTP del tuo hosting sono disponibili nella colonna "Login" della tabella.
-
-> [!primary]
->
-> In base all'offerta di [hosting Web OVHcloud](/links/web/hosting), alcune delle informazioni descritte in precedenza (in particolare quelle relative all'SSH) potrebbero non comparire.
->
+>>
+> **Passaggio 4**
+>>
+>> Di seguito trovi una descrizione delle informazioni essenziali visualizzate sulla pagina `FTP - SSH`:
+>>
+>> - **Server FTP e SFTP**: indirizzo del server FTP del tuo hosting Web che permette di accedere al tuo spazio di archiviazione FTP tramite un software FTP o SFTP.
+>>
+>> > La porta classica di connessione è la porta "21". Utilizza la porta "22" per una connessione tramite il protocollo SFTP (se attivo).
+>>
+>> - **Server SSH**: indirizzo del server SSH del tuo hosting Web che permette di accedere al tuo spazio di archiviazione FTP tramite un terminale e il protocollo SSH.
+>>
+>> > La porta di connessione SSH è la porta "22".
+>>
+>> - **Login principale**: identificativo (S)FTP principale creato sul tuo hosting Web. Tutti gli utenti (S)FTP del tuo hosting sono disponibili nella colonna "Login" della tabella.
+>>
+>> > [!primary]
+>> >
+>> > In base all'offerta di [hosting Web OVHcloud](/links/web/hosting), alcune delle informazioni descritte in precedenza (in particolare quelle relative all'SSH) potrebbero non comparire.
+<!-- CP-STEPS-END:get-ftp-credentials -->
 
 Se non conosci più la password di un utente FTP o SSH, consulta la nostra guida "[Modificare la password di un utente FTP](/pages/web_cloud/web_hosting/ftp_change_password)".
-
-![ftpconnect](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/change-password.png){.thumbnail}
 
 A questo punto, disporrai di tutti gli elementi che ti permetteranno di accedere al tuo spazio di archiviazione FTP.
 

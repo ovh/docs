@@ -74,6 +74,7 @@ Please take note of the following terminology that will be used in code examples
 
 The first step is to identify the IPv6 address and the IPv6 gateway assigned to your server.
 
+<!-- CP-STEPS-START:retrieve-ipv6-info -->
 > [!tabs]
 > **Via the OVHcloud Control Panel**
 >>
@@ -104,6 +105,7 @@ The first step is to identify the IPv6 address and the IPv6 gateway assigned to 
 >> > @api {v1} /vps GET /vps/{serviceName}/ips/{ipAddress}
 >> >
 >>
+<!-- CP-STEPS-END:retrieve-ipv6-info -->
 
 Once you have retrieved these addresses, continue with [applying the IPv6 configuration](#applyipv6).
 

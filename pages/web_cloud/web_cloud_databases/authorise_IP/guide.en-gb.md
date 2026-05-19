@@ -51,6 +51,7 @@ Need to change these permissions/restrictions?
 
 ### Authorize an IP address or IP address range
 
+<!-- CP-STEPS-START:authorise-ip-address-range -->
 > [!primary]
 >
 > As a reminder, if you have just activated your [Web Cloud Databases](/links/web/databases) solution, and you only want to use its databases for an [OVHcloud web hosting](/links/web/hosting) solution, the IP addresses of these solutions are already authorized by default.
@@ -98,6 +99,7 @@ Click on the tabs below to view each of the **4** steps.
 >> > This would grant access to your databases to all IPv4 addresses.
 >>
 >> Once you have entered the information, click `Confirm`{.action}.
+<!-- CP-STEPS-END:authorise-ip-address-range -->
 
 ### Special cases
 
@@ -121,6 +123,7 @@ Effectively, this would allow all existing IPv4 addresses to have access to your
 
 When you activate your Web Cloud Databases solution, authorization to access OVHcloud web hosting plans is activated by default.
 
+<!-- CP-STEPS-START:special-cases-authorizing-web-hosting -->
 If you would like to disable this authorization because you are not using a web hosting plan with your Web Cloud Databases solution, click on the tabs below to view each of the **3** steps.
 
 > [!tabs]
@@ -141,6 +144,7 @@ If you would like to disable this authorization because you are not using a web 
 >> On the page that appears, untick the box `Authorise OVHcloud web hosting plans to access the database`{.action}.
 >>
 >> ![Authorised IPs interface](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/authorized-ips/tab-0000-sftp-hosting-enabled.png){.thumbnail}
+<!-- CP-STEPS-END:special-cases-authorizing-web-hosting -->
 
 ///
 

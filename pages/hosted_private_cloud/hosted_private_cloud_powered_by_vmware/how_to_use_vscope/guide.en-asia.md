@@ -17,17 +17,22 @@ This web interface gathers all the essential information about your resources.
 - You must be an administrator contact of the [Hosted Private Cloud](/links/hosted-private-cloud/vmware) infrastructure, in order to receive login credentials.
 - An active user ID (created in the [OVHcloud Control Panel](/links/manager)).
 
+<!-- CP-NAV-START:privatecloud-vmware-vsphere -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [VMware vSphere](/links/control-panel/privatecloud-vmware-vsphere)
+- **Navigation path:** `Hosted Private Cloud`{.action} > `Managed VMware vSphere`{.action} > Select your vSphere service
+
+---
+<!-- CP-NAV-END:privatecloud-vmware-vsphere -->
+
 ## Instructions
 
 ### Accessing vScope
 
-1. In the [OVHcloud Control Panel](/links/manager), click `Hosted Private Cloud`{.action}.
-
-2. In the left-hand menu, click `Managed VMware vSphere`{.action}.
-
-3. Select your PCC service.
-
-4. In the `General information` tab, scroll down and click the `vScope`{.action} link.
+In the `General information` tab, scroll down and click the `vScope`{.action} link.
 
 ![vScope](images/gatewayPCC.png){.thumbnail}
 

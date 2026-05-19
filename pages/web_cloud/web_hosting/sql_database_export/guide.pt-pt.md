@@ -1,7 +1,7 @@
 ---
 title: "Recuperar a cópia de segurança da base de dados de um alojamento web"
 excerpt: "Saiba como recuperar a cópia de segurança de uma base de dados de um alojamento web da OVHcloud"
-updated: 2025-10-08
+updated: 2026-04-01
 ---
 
 ## Objetivo
@@ -21,7 +21,7 @@ As bases de dados são utilizadas pela maior parte dos websites e dos **C**onten
 
 ### Acesso à Área de Cliente OVHcloud
 
-- **Ligação direta:** [Hosting plans](/links/control-panel/web-hosting)
+- **Ligação direta:** [Alojamentos](/links/control-panel/web-hosting)
 - **Caminho de navegação:** `Web Cloud`{.action} > `Alojamentos`{.action} > Selecione o seu alojamento web
 
 ---
@@ -57,12 +57,13 @@ Consulte este manual de acordo com o método de backup pretendido.
 
 ### Recuperar um backup através da ferramenta da OVHcloud
 
+<!-- CP-STEPS-START:retrieve-backup-ovhcloud-tool -->
 Para aceder à ferramenta de backup da OVHcloud, clique nos separadores abaixo para visualizar cada uma das **3** etapas.
 
 > [!tabs]
 > **Etapa 1**
 >>
->> Aceda à página [Hosting plans](/links/control-panel/web-hosting) e escolha o alojamento web correspondente.
+>> Aceda à página [Alojamentos](/links/control-panel/web-hosting) e selecione o alojamento web em causa.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
@@ -79,38 +80,86 @@ Para aceder à ferramenta de backup da OVHcloud, clique nos separadores abaixo p
 >> ![Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/tab.png){.thumbnail}
 >>
 >> Aparecerá uma tabela com todas as bases de dados criadas com o plano de alojamento web. Poderá optar por realizar um novo backup ou recuperar um já existente, através de duas operações distintas.
+<!-- CP-STEPS-END:retrieve-backup-ovhcloud-tool -->
 
-#### Etapa 1: efetuar um novo backup da base de dados
+#### 1 - Efetuar um novo backup da base de dados
 
-Ainda no separador `Bases de dados`{.action}, clique no botão `...`{.action} à direita da base de dados a salvaguardar e, a seguir, em `Criar uma cópia de segurança`{.action}.
+<!-- CP-STEPS-START:create-new-backup -->
+Para efetuar um novo backup, clique nos separadores abaixo para visualizar cada uma das **4** etapas.
 
-![databasedump](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/create-a-backup.png){.thumbnail}
+> [!tabs]
+> **Etapa 1**
+>>
+>> Aceda à página [Alojamentos](/links/control-panel/web-hosting) e selecione o alojamento web em causa.
+>>
+> **Etapa 2**
+>>
+>> Na página que se abrir, clique no separador `Bases de dados`{.action}.
+>>
+> **Etapa 3**
+>>
+>> Clique no botão `...`{.action} à direita da base de dados a salvaguardar e, a seguir, em `Criar uma cópia de segurança`{.action}.
+>>
+>> ![databasedump](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/create-a-backup.png){.thumbnail}
+>>
+> **Etapa 4**
+>>
+>> Na janela que surgir, selecione a data desejada para o backup e clique no botão `Seguinte`{.action}. Certifique-se de que as informações no resumo estão corretas e clique em `Validar`{.action} para dar início à operação.
+>>
+>> ![databasedump](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/create-a-database-backup-step-1.png){.thumbnail}
+>>
+>> Aguarde enquanto o backup é realizado. Quando estiver disponível, poderá recuperá-lo.
+<!-- CP-STEPS-END:create-new-backup -->
 
-Na janela que surgir, selecione a data desejada para o backup e clique no botão `Seguinte`{.action}. Certifique-se de que as informações no resumo estão corretas e clique em `Validar`{.action} para dar início à operação.
+#### 2 - Recuperar uma cópia de segurança da base de dados
 
-Aguarde enquanto o backup é realizado. Quando estiver disponível, poderá importá-la.
+<!-- CP-STEPS-START:retrieve-existing-backup -->
+Para recuperar um backup existente, clique nos separadores abaixo para visualizar cada uma das **4** etapas.
 
-![databasedump](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/create-a-database-backup-step-1.png){.thumbnail}
-
-#### Etapa 2: recuperar uma cópia de segurança da base de dados
-
-Ainda no separador `Bases de dados`{.action}, clique no botão `...`{.action} à direita da base de dados a salvaguardar e, a seguir, em `Restaurar um backup`{.action}.
-
-![databasedump](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/restore-backup.png){.thumbnail}
-
-A tabela que aparecerá apresenta todos os backups disponíveis da base de dados selecionada. Poderá consultar a data exata em que os backups foram realizados, assim como a data em que estes últimos serão eliminados da ferramenta da OVHcloud.
-
-Para descarregar um backup, clique no botão `...`{.action} à direita daquele que deseja recuperar e, a seguir, em `Transferir backup`{.action}. Surgirá uma janela que lhe solicitará para guardar o ficheiro na sua máquina. Aceite e espere enquanto o backup é descarregado.
-
-![databasedump](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/download-the-backup.png){.thumbnail}
+> [!tabs]
+> **Etapa 1**
+>>
+>> Aceda à página [Alojamentos](/links/control-panel/web-hosting) e selecione o alojamento web em causa.
+>>
+> **Etapa 2**
+>>
+>> Na página que se abrir, clique no separador `Bases de dados`{.action}.
+>>
+> **Etapa 3**
+>>
+>> Clique no botão `...`{.action} à direita da base de dados em causa e depois em `Restaurar um backup`{.action}.
+>>
+>> ![databasedump](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/restore-backup.png){.thumbnail}
+>>
+>> A tabela que aparecerá apresenta todos os backups disponíveis da base de dados selecionada. Poderá consultar a data exata em que os backups foram realizados, assim como a data em que estes últimos serão eliminados da ferramenta da OVHcloud.
+>>
+> **Etapa 4**
+>>
+>> Para descarregar um backup, clique no botão `...`{.action} à direita daquele que deseja recuperar e, a seguir, em `Transferir backup`{.action}. Aceite e espere enquanto o backup é descarregado.
+>>
+>> ![databasedump](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/download-the-backup.png){.thumbnail}
+<!-- CP-STEPS-END:retrieve-existing-backup -->
 
 ### Recuperar um backup a partir da interface web phpMyAdmin
 
-Para realizar a operação, aceda a *phpMyAdmin*. Para saber a ligação de acesso a esta última, aceda à [Área de Cliente OVHcloud](/links/manager) e aceda à secção `Web Cloud`{.action}. Na coluna da esquerda, clique em `Alojamentos`{.action} e escolha o nome do alojamento correspondente. Por fim, clique no separador `Bases de dados`{.action}.
+<!-- CP-STEPS-START:retrieve-backup-phpmyadmin -->
+Para realizar a operação, aceda a *phpMyAdmin*. Para o fazer, clique nos separadores abaixo para visualizar cada uma das **3** etapas.
 
-Aparecerá uma tabela com todas as bases de dados criadas com o plano de alojamento web. Clique no botão `...`{.action} à direita da base de dados em causa e depois em `Aceder ao phpMyAdmin`{.action}.
-
-![databasedump](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/go-to-phpmyadmin.png){.thumbnail}
+> [!tabs]
+> **Etapa 1**
+>>
+>> Aceda à página [Alojamentos](/links/control-panel/web-hosting) e selecione o alojamento web em causa.
+>>
+> **Etapa 2**
+>>
+>> Na página que se abrir, clique no separador `Bases de dados`{.action}.
+>>
+> **Etapa 3**
+>>
+>> Clique no botão `...`{.action} à direita da base de dados em causa e depois em `Aceder ao phpMyAdmin`{.action}.
+>>
+>> ![databasedump](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/go-to-phpmyadmin.png){.thumbnail}
+<!-- CP-STEPS-END:retrieve-backup-phpmyadmin -->
 
 Uma vez na interface de ligação a *phpMyAdmin*, introduza as informações da base de dados e ligue-se. Depois de iniciar sessão, aceda ao separador `Exportar`{.action} onde existem dois métodos de exportação:
 
@@ -132,7 +181,7 @@ Esta operação realiza-se em várias etapas. Certifique-se de que possui a info
 > Esta solução requer conhecimentos de programação. Apresentamos a seguir algumas informações sobre como o fazer. No entanto, se encontrar dificuldades, recomendamos que recorra a um [fornecedor especializado](/links/partner). Não poderemos proporcionar-lhe assistência técnica.
 >
 
-#### Etapa 1: criar o script de backup
+#### 1 - Criar o script de backup
 
 O primeiro passo consiste em criar o script que permitirá realizar o backup da base de dados. Encontrará abaixo um exemplo que o ajudará a realizar esta operação. No entanto, se encontrar dificuldades, este exemplo não substitui por si só a ajuda que um webmaster pode fornecer.
 
@@ -152,19 +201,19 @@ Substitua a informação genérica do script pela informação da base de dados 
 |name_of_database|O nome da base de dados.|
 |backup_file_name|O nome do ficheiro de backup quando este for executado.|
 
-#### Etapa 2: descarregar o script no espaço de armazenamento FTP
+#### 2 - Descarregar o script no espaço de armazenamento FTP
 
 Depois de criar o script de backup, deverá carregá-lo para o espaço de armazenamento FTP do seu alojamento web. Para isso, consulte as informações descritas no passo 2 da documentação intitulada "[Ligar-se ao espaço de armazenamento](/pages/web_cloud/web_hosting/hosting_how_to_get_my_website_online)".
 
 Para realizar as seguintes etapas, transfira o script para a pasta que contém o website que utiliza a base de dados. **Tenha cuidado com o nome do ficheiro do script de backup.** Não substitua um ficheiro já existente com o mesmo nome no espaço de armazenamento FTP quando carregar o script. Se aparecer uma mensagem de aviso, altere o nome do script que acabou de criar e tente carregá-lo novamente.
 
-#### Etapa 3: chamar o script
+#### 3 - Chamar o script
 
 Assim que o script for transferido para o espaço de armazenamento FTP, inicie o código presente no mesmo chamando o script.
 
 Para efetuar esta operação, aceda ao URL completo do script a partir do seu browser (por exemplo: mypersonaldomain.ovh/backup.php se tiver nomeado o script "backup.php"). Se as informações introduzidas no script estiverem corretas, o backup será iniciado. Aguarde alguns instantes até a instalação ser finalizada. Caso contrário, verifique as informações introduzidas no script e tente novamente.
 
-#### Etapa 4: recuperar o backup a partir do espaço de armazenamento FTP
+#### 4 - Recuperar o backup a partir do espaço de armazenamento FTP
 
 Uma vez feito o backup, recupere-o na pasta onde colocou o script de backup. O backup da base de dados deve ter o nome definido anteriormente no script. Agora já só tem de descarregar o backup para o seu dispositivo.
 
@@ -208,4 +257,4 @@ Para serviços especializados (referenciamento, desenvolvimento, etc), contacte 
 
 Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](/links/support).
 
-Fale com nossa [comunidade de utilizadores](/links/community). 
+Fale com nossa [comunidade de utilizadores](/links/community).

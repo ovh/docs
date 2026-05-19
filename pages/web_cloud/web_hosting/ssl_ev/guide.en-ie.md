@@ -101,6 +101,7 @@ To check if this is the case, please refer to our guides below:
 
 #### 1.1 - For a domain name and a hosting already existing at OVHcloud
 
+<!-- CP-STEPS-START:order-sectigo-ev -->
 Click on the tabs below to view each of the **5** steps.
 
 > [!tabs]
@@ -139,6 +140,7 @@ Click on the tabs below to view each of the **5** steps.
 >> Click `Continue`{.action} after **all items** have been entered correctly.
 >>
 >> Proceed with the order until payment in order to confirm the request to create the SSL certificate.
+<!-- CP-STEPS-END:order-sectigo-ev -->
 
 > [!alert]
 >

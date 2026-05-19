@@ -46,11 +46,13 @@ You can configure Email Pro accounts on email clients, if they are compatible. T
 
 ### Add the account <a name=”add-account”></a>
 
+<!-- CP-STEPS-START:server-name-lookup -->
 > [!warning]
 >
 > In our examples, we use the server hint: pro?.mail.ovh.net. You will need to replace the “?” with the number designating the server of your Email Pro service.
 >
 > Click [this link](/links/control-panel/web-email-pro) to access the `Email Pro`{.action} section. The server name is visible in the **Connection** box in the `General information`{.action} tab.
+<!-- CP-STEPS-END:server-name-lookup -->
 
 - **When you start the application for the first time**: A configuration wizard will appear. Tap `Add account`{.action}.
 

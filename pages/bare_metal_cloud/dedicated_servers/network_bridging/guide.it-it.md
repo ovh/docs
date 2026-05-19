@@ -1,6 +1,6 @@
 ---
-title: 'Configurare Additional IP in modalità bridge sulle proprie macchine virtuali'
-excerpt: Come configurare l'accesso a Internet delle macchine virtuali utilizzando la modalità bridge
+title: "Configurare Additional IP in modalità bridge su un server dedicato"
+excerpt: "Configura le tue macchine virtuali su un server dedicato per l'accesso pubblico a Internet tramite la modalità bridge di rete."
 updated: 2026-01-06
 ---
 

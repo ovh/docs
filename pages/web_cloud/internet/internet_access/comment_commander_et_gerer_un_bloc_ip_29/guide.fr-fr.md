@@ -38,6 +38,7 @@ Un bloc IP vous permet d'associer des équipements de votre réseau interne à u
 
 ### Étape 1 : retrouver les IP associées à votre accès <a name="trouver-ip-associees"></a>
 
+<!-- CP-STEPS-START:etape-1-trouver-ip -->
 Depuis votre [espace client OVHcloud](/links/control-panel/telecom-xdsl-fttx), cliquez sur votre accès à Internet FTTH ou xDSL dans le cadre `Accès Internet` à droite, puis positionnez-vous sur l'onglet `Mon accès`{.action}.
 
 ![blocip](images/blocip-step01-edit-2022.png){.thumbnail}
@@ -64,9 +65,11 @@ Collectez à présent les adresses IP qui serviront lors des étapes suivantes. 
 |Adresse de diffusion (_broadcast_)|Elle représente la dernière adresse de votre bloc IP /29. Celle-ci n'est pas associable à l'un de vos équipements.|1.1.1.7|
 
 Vous devez à présent avoir récupéré l'adresse IP initiale (mentionnée à côté du masque /32) et vos huit adresses du bloc /29.
+<!-- CP-STEPS-END:etape-1-trouver-ip -->
 
 ### Étape 2 : désactiver la prise en main à distance de la box
 
+<!-- CP-STEPS-START:etape-2-desactiver-prise-en-main -->
 > [!primary]
 >
 > Si vous possédez une box Technicolor ou Thomson (excepté le modèle Technicolor TG799vac) et souhaitez utiliser les API d'OVHcloud (utilisateurs experts) pour configurer le bloc IP : poursuivez directement vers l'étape 3.1 « [Configuration sur une box Technicolor ou Thomson](#conf-tecnhicolor) ».
@@ -77,6 +80,7 @@ Afin que la configuration du bloc IP puisse s'effectuer en local sur votre box O
 Sur la page, dans la partie « Configuration générale », assurez-vous de décocher la case à côté de `Configuration à distance activée`{.action} et confirmez le changement en cliquant sur `Ok`{.action}. Patientez alors le temps de la désactivation. 
 
 ![blocip](images/blocip-step04-edit-2022.png){.thumbnail}
+<!-- CP-STEPS-END:etape-2-desactiver-prise-en-main -->
 
 ### Étape 3 : configurer le bloc IP sur votre box
 
@@ -237,7 +241,9 @@ Toujours dans le menu `Network Settings`{.action}, sélectionnez le menu `Broadb
 
 En cas de doute, le type de votre connexion est disponible sur l’espace client OVHcloud.
 
+<!-- CP-STEPS-START:type-connexion-espace-client -->
 ![blocip](images/blocip-step10-2022.png){.thumbnail}
+<!-- CP-STEPS-END:type-connexion-espace-client -->
 
 Dans la fenêtre qui apparaît, descendez jusqu'à la partie « Routing feature ». Désactivez le curseur à droite de `NAT`{.action}. Cliquez enfin sur le bouton `Apply`{.action}.
 
@@ -259,7 +265,9 @@ Une fois cette opération effectuée depuis un ordinateur, vous aurez la possibi
 
 ### Résiliation du bloc IP /29
 
+<!-- CP-STEPS-START:resiliation-bloc-ip -->
 Si vous souhaitez résilier votre bloc IP /29, suivez le cheminement décrit dans [l'étape 1](#trouver-ip-associees) puis cliquez sur l'icône `corbeille`{.action} à droite de votre bloc IP /29.
+<!-- CP-STEPS-END:resiliation-bloc-ip -->
 
 ## Aller plus loin
 

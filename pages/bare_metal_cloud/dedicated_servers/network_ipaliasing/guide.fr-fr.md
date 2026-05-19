@@ -1,6 +1,6 @@
 ---
-title: 'Configurer son adresse IP en alias'
-excerpt: 'Découvrez comment ajouter des Additional IP à votre configuration'
+title: "Configurer l'IP aliasing sur un serveur dédié"
+excerpt: "Ajoutez et configurez des adresses Additional IP sur votre serveur dédié OVHcloud pour un hébergement multi-sites ou multi-services"
 updated: 2025-12-04
 ---
 
@@ -595,5 +595,7 @@ Effectuez ensuite un ping depuis votre Additional IP vers l'extérieur. Si cela 
 ## Aller plus loin
 
 [Mode bridge IP](/pages/bare_metal_cloud/dedicated_servers/network_bridging)
+
+[Déplacer une Additional IP](/pages/bare_metal_cloud/dedicated_servers/move-failover-ip)
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).

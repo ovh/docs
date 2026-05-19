@@ -48,6 +48,7 @@ Selon le type du ou des numéros que vous souhaitez porter chez OVHcloud, le pro
 
 ### 2 - Demander la portabilité
 
+<!-- CP-STEPS-START:demander-la-portabilite -->
 Dans l'onglet `Tableau de bord`{.action}, cliquez sur `Demander une portabilité`{.action}.
 
 ![numberport](images/BE-porta-request.png){.thumbnail}
@@ -99,8 +100,11 @@ Cliquez sur les onglets ci-dessous pour afficher les 5 étapes.
 >> ![numberport](images/BE-porta-request06.png){.thumbnail}
 >>
 
+<!-- CP-STEPS-END:demander-la-portabilite -->
+
 ### 3 - Joindre votre mandat de portabilité
 
+<!-- CP-STEPS-START:joindre-mandat-portabilite -->
 Une fois votre demande de portabilité validée, vous recevrez un mandat de portabilité autorisant OVHcloud à porter les numéros souhaités. Complétez puis retournez-nous ce mandat **depuis votre espace client**, au format PDF. 
 
 Pour cela, sélectionnez votre groupe de téléphonie dans la barre de services à gauche puis cliquez sur `Consulter mes portabilités en cours`{.action}. Cliquez alors sur `Attacher mon mandat de portabilité signé`{.action}, sous la demande de portabilité concernée, pour importer le mandat au format PDF. Celui-ci sera alors validé manuellement par nos services techniques.
@@ -115,8 +119,11 @@ Avant cette validation du mandat par nos soins, vous pouvez, en cas d'erreur, su
 
 ![numberport](images/BE-porta-request07.png){.thumbnail}
 
+<!-- CP-STEPS-END:joindre-mandat-portabilite -->
+
 ### 4 - Suivre une demande de portabilité <a name="suivi"></a>
 
+<!-- CP-STEPS-START:suivre-demande-portabilite -->
 Dans l'onglet `Tableau de bord`{.action}, cliquez sur `Consulter mes portabilités en cours`{.action}.
 
 ![numberport](images/BE-porta-request08.png){.thumbnail}
@@ -145,6 +152,8 @@ Vous trouverez ci-dessous un récapitulatif des différentes étapes du processu
 |Rapport intermédiaire de l'opérateur reçu|Après vérification des informations, l'opérateur confirme le lancement de la procédure de portabilité vers OVHcloud|1 jour ouvré|
 |Numéro activé|48 heures avant la finalisation de la portabilité, le numéro est disponible dans votre espace client pour être configuré. Pour vous aider, reportez-vous aux informations décrites dans la partie 5 « [Préparer la configuration des numéros portés](#configuration) »|2 jours ouvrés|
 |Rapport final de l'opérateur cédant|L'opérateur cédant confirme la portabilité. OVHcloud configure le numéro sur son réseau (routage). La portabilité est terminée et le numéro opérationnel|3 jours ouvrés|
+
+<!-- CP-STEPS-END:suivre-demande-portabilite -->
 
 ### 5 - Préparer la configuration des numéros portés <a name="configuration"></a>
 

@@ -1,7 +1,7 @@
 ---
 title: "Backup einer gelöschten Datenbank wiederherstellen"
 excerpt: "Erfahren Sie hier, wie Sie das Backup einer im OVHcloud Kundencenter gelöschten Datenbank wiederherstellen können"
-updated: 2025-02-20
+updated: 2026-04-01
 ---
 
 ## Ziel
@@ -19,7 +19,7 @@ Die meisten unserer [Webhosting](/links/web/hosting) Angebote beinhalten Datenba
 ## Voraussetzungen
 
 - Sie verfügen über ein aktives [OVHcloud Webhosting](/links/web/hosting) Angebot mit mindestens einer OVHcloud Shared-Datenbank.
-- Die Löschung der Datenbank muss weniger als 30 Tage her sein.
+- Sie müssen die Datenbank vor weniger als 30 Tagen gelöscht haben.
 
 <!-- CP-NAV-START:web-hosting -->
 ---
@@ -43,19 +43,24 @@ Die OVHcloud API wird Entwicklern zur Verfügung gestellt, um alle verfügbaren 
 > Darüber hinaus kann OVHcloud, wenn eine Datenbank von ihrem Benutzer oder Administrator gelöscht wird, aus den oben genannten Gründen keine Garantie für die Wiederherstellung des Backups der Datenbank übernehmen.
 >
 
-### Schritt 1 - Rufen Sie den Namen des Webhostings ab, mit dem die gelöschte Datenbank verbunden war
+### 1 - Rufen Sie den Namen des Webhostings ab, mit dem die gelöschte Datenbank verbunden war
 
-So rufen Sie den Namen Ihres Webhostings ab:
+<!-- CP-STEPS-START:retrieve-webhosting-name -->
+Um den Namen Ihres Webhostings abzurufen, Klicken Sie auf die Tabs, um die **2** Schritte anzuzeigen.
 
-1. Loggen Sie sich in Ihrem [OVHcloud Kundencenter](/links/manager) ein.
-2. Klicken Sie auf den Tab `Web Cloud`{.action}.
-3. Klicken Sie in der linken Spalte auf `Hosting-Pakete`{.action}.
-4. Wählen Sie das betreffende Webhosting aus.
-5. Oben links auf der angezeigten Seite finden Sie den Namen Ihres Webhostings rechts unter `Hosting-Pakete /`{.action}.
+> [!tabs]
+> **Schritt 1**
+>>
+>> Rufen Sie die Seite [Hosting-Pakete](/links/control-panel/web-hosting) auf und wählen Sie das betreffende Webhosting aus.
+>>
+> **Schritt 2**
+>>
+>> Links oben auf der angezeigten Seite finden Sie den Namen Ihres Webhostings rechts neben `Hosting-Pakete /`.
+>>
+>> ![Name des Webhostings im OVHcloud Kundencenter](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-webhosting-name.png){.thumbnail}
+<!-- CP-STEPS-END:retrieve-webhosting-name -->
 
-![API](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-webhosting-name.png){.thumbnail}
-
-### Schritt 2 - Einloggen, um die OVHcloud API zu verwenden und Zugriff auf Ihre Dienste zu erlauben
+### 2 - Einloggen, um die OVHcloud API zu verwenden und Zugriff auf Ihre Dienste zu erlauben
 
 Gehen Sie wie folgt vor:
 
@@ -75,7 +80,7 @@ Gehen Sie wie folgt vor:
 - Loggen Sie sich mit Ihrer Kundenkennung ein und klicken Sie auf `Authorize`{.action}, um der OVHcloud API Zugriff auf Ihre Dienste zu erlauben.
 - Sie werden dann automatisch wieder auf die vorherige Seite geleitet: **GET /hosting/web/{serviceName}/dump**.
 
-### Schritt 3 - Verfügbarkeit der Backups überprüfen und die ID des letzten Backups abrufen
+### 3 - Verfügbarkeit der Backups überprüfen und die ID des letzten Backups abrufen
 
 Füllen Sie hierzu die verschiedenen Felder wie folgt aus:
 
@@ -104,7 +109,7 @@ Wenn im Fenster keine ID angezeigt wird, überprüfen Sie, ob Sie mit der richti
 
 Wenn Sie trotzdem noch keine ID sehen, sind keine Backups für die gelöschte Datenbank auf unserer Infrastruktur verfügbar.
 
-### Schritt 4 - Letzte Sicherung wiederherstellen
+### 4 - Letzte Sicherung wiederherstellen
 
 Anhand der in Schritt 3 ermittelten Backup-ID können Sie über einen von der API generierten Link das letzte Backup Ihrer Datenbank herunterladen, das gelöscht wurde.
 
@@ -154,18 +159,18 @@ Wenn alles korrekt angegeben wurde, erscheint das folgende Ergebnis im Fenster `
 
 Kopieren Sie in Ihrer Ergebnisausgabe die gesamte URL in HTTPS **ohne Anführungszeichen** aus der Zeile `"url":` und fügen Sie diese in die Adresszeile Ihres Browsers ein, um den Download des Backups zu starten.
 
-### Schritt 5 - Neue Datenbank erstellen, Backup-Datei importieren und Verbindung zwischen Ihrer Website und der neuen Datenbank wiederherstellen
+### 5 - Neue Datenbank erstellen, Backup-Datei importieren und Verbindung zwischen Ihrer Website und der neuen Datenbank wiederherstellen
 
-Nachdem Sie das Backup Ihrer Datenbank wiederhergestellt haben, müssen Sie eine neue Datenbank erstellen. Weitere Informationen finden Sie in unserer Anleitung „[Datenbank auf Ihrem Webhosting erstellen](/pages/web_cloud/web_hosting/sql_create_database)“.
+Nachdem Sie das Backup Ihrer Datenbank wiederhergestellt haben, müssen Sie eine neue Datenbank erstellen. Weitere Informationen finden Sie in unserer Anleitung „[Datenbank auf Ihrem Webhosting erstellen](/pages/web_cloud/web_hosting/sql_create_database)".
 
-Importieren Sie nach der Erstellung dieser neuen Datenbank das Backup mithilfe unserer Anleitung „[Backup in eine Webhosting-Datenbank importieren](/pages/web_cloud/web_hosting/sql_importing_mysql_database)“.
+Importieren Sie nach der Erstellung dieser neuen Datenbank das Backup mithilfe unserer Anleitung „[Backup in eine Webhosting-Datenbank importieren](/pages/web_cloud/web_hosting/sql_importing_mysql_database)".
 
 Verbinden Sie zum Schluss Ihre OVHcloud-Datenbank mit der Konfigurationsdatei Ihrer Website im [FTP-Speicherplatz Ihres OVHcloud Hostings](/pages/web_cloud/web_hosting/ftp_connection).
-Ersetzen Sie hierzu die Login-Daten der versehentlich gelöschten Datenbank durch die Login-Daten Ihrer neuen OVHcloud Datenbank. Diese Informationen finden Sie in der Datei „Konfiguration/Verbindung mit Ihrer Datenbank“ Ihrer Website.
+Ersetzen Sie hierzu die Login-Daten der versehentlich gelöschten Datenbank durch die Login-Daten Ihrer neuen OVHcloud Datenbank. Diese Informationen finden Sie in der Datei „Konfiguration/Verbindung mit Ihrer Datenbank" Ihrer Website.
 
 > [!success]
 >
-> Um Ihre neue Datenbank zu verknüpfen, wenn Sie ein Content Management System (CMS) wie WordPress, Joomla!, Drupal oder PrestaShop verwenden, finden Sie die Informationen zu ihren Konfigurationsdateien in **Schritt 2** der Anleitung „[Datenbankpasswort ändern](/pages/web_cloud/web_hosting/sql_change_password)“.
+> Um Ihre neue Datenbank zu verknüpfen, wenn Sie ein Content Management System (CMS) wie WordPress, Joomla!, Drupal oder PrestaShop verwenden, finden Sie die Informationen zu ihren Konfigurationsdateien in **Schritt 2** der Anleitung „[Datenbankpasswort ändern](/pages/web_cloud/web_hosting/sql_change_password)".
 >
 
 ## Weiterführende Informationen <a name="go-further"></a>

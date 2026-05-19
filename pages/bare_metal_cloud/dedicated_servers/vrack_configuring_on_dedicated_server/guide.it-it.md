@@ -1,6 +1,6 @@
 ---
-title: 'Configurare due o più server dedicati nella vRack'
-excerpt: 'Scopri come configurare due o più server dedicati nella vRack'
+title: "Configurare la vRack sui tuoi server dedicati"
+excerpt: "Configura la rete privata vRack OVHcloud su due o più server dedicati per una comunicazione inter-server isolata"
 updated: 2026-02-20
 ---
 
@@ -17,7 +17,6 @@ La vRack (rack virtuale) OVHcloud permette di unire virtualmente diversi server 
 - Un servizio [vRack](/links/network/vrack) attivato nel tuo account
 - Diversi [server dedicati](/links/bare-metal/bare-metal) (compatibili con la vRack)
 - Avere accesso amministratore (sudo) al server via SSH o RDP
-- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
 - Aver selezionato una gamma di indirizzi IP privati
 
 > [!warning]
@@ -25,11 +24,22 @@ La vRack (rack virtuale) OVHcloud permette di unire virtualmente diversi server 
 >
 > Per maggiori informazioni, consulta la nostra [a confronto](/links/bare-metal/eco-compare).
 
+<!-- CP-NAV-START:network-vrack -->
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [vRack](/links/control-panel/network-vrack)
+- **Percorso di navigazione:** `Network`{.action} > `Rete privata vRack`{.action}
+
+---
+<!-- CP-NAV-END:network-vrack -->
+
 ## Procedura
 
 ### Step 1: ordina la vRack
 
-Accedi allo Spazio Cliente OVHcloud e clicca sul pulsante `Aggiungi un servizio`{.action} (icona del carrello) nel menu a sinistra. Utilizza il filtro in cima alla pagina o scorri verso il basso per trovare il servizio `vRack`{.action}.
+Clicca sul pulsante `Aggiungi un servizio`{.action} (icona del carrello) nel menu a sinistra. Utilizza il filtro in cima alla pagina o scorri verso il basso per trovare il servizio `vRack`{.action}.
 
 ![Ordina vrack](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/network/orderingvrack25.png){.thumbnail}
 
@@ -37,9 +47,7 @@ Clicca sulla casella `vRack`{.action} per essere reindirizzato alla pagina in cu
 
 ### Step 2: aggiungi i tuoi server alla vRack
 
-Una volta attivata la vRack, clicca su `Network`{.action} nel menu a sinistra e poi su `Rete Privata vRack`{.action}.
-
-Seleziona la tua vRack nella lista per visualizzare la lista dei servizi ammissibili. Clicca su ciascun server che vuoi aggiungere alla vRack e poi clicca sul pulsante `Aggiungi`{.action}.
+Una volta attivata la vRack, seleziona la tua vRack nella lista per visualizzare la lista dei servizi ammissibili. Clicca su ciascun server che vuoi aggiungere alla vRack e poi clicca sul pulsante `Aggiungi`{.action}.
 
 ![Choix du vRack](images/vrack_selection.png){.thumbnail}
 
@@ -219,13 +227,13 @@ A titolo di esempio, utilizzeremo l'intervallo di indirizzi IP `192.168.0.0/16` 
 >> Nel nostro esempio, abbiamo nominato il nostro profilo di configurazione `private-interface`.
 >>
 >> ```bash
->> nmcli connection add type ethernet con-name CONNECTION_NAME ifname INTERFACE_NAME
+>> sudo nmcli connection add type ethernet con-name CONNECTION_NAME ifname INTERFACE_NAME
 >> ```
 >>
 >> **Esempio:**
 >>
 >> ```bash
->> nmcli connection add type ethernet con-name private-interface ifname eno2
+>> sudo nmcli connection add type ethernet con-name private-interface ifname eno2
 >> ```
 >>
 >> - Verifica che l’interfaccia sia stata connessa correttamente:
@@ -252,13 +260,13 @@ A titolo di esempio, utilizzeremo l'intervallo di indirizzi IP `192.168.0.0/16` 
 >> - Aggiungi il tuo IP:
 >>
 >> ```bash
->> nmcli connection modify CONNECTION_NAME IPv4.address IP_ADDRESS/PREFIX
+>> sudo nmcli connection modify CONNECTION_NAME IPv4.address IP_ADDRESS/PREFIX
 >> ```
 >>
 >> **Esempio:**
 >>
 >> ```bash
->> nmcli connection modify private-interface IPv4.address 192.168.0.1/16
+>> sudo nmcli connection modify private-interface IPv4.address 192.168.0.1/16
 >> ```
 >>
 >> - Modifica la configurazione da **auto** a **manual**:

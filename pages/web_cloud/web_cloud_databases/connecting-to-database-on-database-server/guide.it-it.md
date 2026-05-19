@@ -34,7 +34,7 @@ details[open]>summary::before {
 ### Accesso allo Spazio Cliente OVHcloud
 
 - **Link diretto:** [Web Cloud Databases](/links/control-panel/web-cloud-databases)
-- **Percorso di navigazione:** `Web Cloud`{.action} > `Web Cloud Databases`{.action} > Seleziona il tuo database service
+- **Percorso di navigazione:** `Web Cloud`{.action} > `Web Cloud Databases`{.action} > Seleziona il tuo servizio di database
 
 ---
 <!-- CP-NAV-END:web-cloud-databases -->
@@ -58,16 +58,17 @@ details[open]>summary::before {
 
 #### Connessione tramite phpMyAdmin OVHcloud
 
-Clicca sulle schede qui sotto per visualizzare i **4** step in sequenza.
+<!-- CP-STEPS-START:mysql-phpmyadmin-ovhcloud -->
+Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **4** passaggi.
 
 > [!tabs]
-> **Step 1**
+> **Passaggio 1**
 >>
 >> Accedi alla pagina [Web Cloud Databases](/links/control-panel/web-cloud-databases), poi seleziona la soluzione interessata.
 >>
 >> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases.png){.thumbnail}
 >>
-> **Step 2**
+> **Passaggio 2**
 >>
 >> Recupera le seguenti informazioni di connessione:
 >>
@@ -79,13 +80,13 @@ Clicca sulle schede qui sotto per visualizzare i **4** step in sequenza.
 >> >
 >> > Se modifichi la password di un utente di database, tutte le applicazioni/siti Web che accedono a questo database devono essere aggiornati di conseguenza.
 >>
-> **Step 3**
+> **Passaggio 3**
 >>
 >> Nella scheda `Informazioni generali`{.action}, individua la sezione **"Gestione database"** e clicca sul link phpMyAdmin sotto **"Interfaccia utente"**.
 >>
 >> ![web-cloud-databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/general-information/database-administration.png){.thumbnail}
 >>
-> **Step 4**
+> **Passaggio 4**
 >>
 >> Nella pagina di login di phpMyAdmin, inserisci le informazioni recuperate allo step 2:
 >>
@@ -105,23 +106,25 @@ Se la connessione ha esito positivo, verrà visualizzata la pagina seguente.
 >
 > - Errore #1045 significa che le credenziali non sono corrette. Verifica il nome utente e/o la password.
 > - Errore #2005 significa che il nome del server deve essere verificato, così come il suo corretto funzionamento.
+<!-- CP-STEPS-END:mysql-phpmyadmin-ovhcloud -->
 
 #### Connessione al database al di fuori dello Spazio Cliente
 
+<!-- CP-STEPS-START:mysql-external-connection -->
 > [!warning]
 >
 > Se utilizzi una soluzione "Web Cloud Databases"/"SQL Privato", ricorda di autorizzare il tuo IP seguendo la guida sulla [configurazione del tuo database server](/pages/web_cloud/web_cloud_databases/configure-database-server#gerer-vos-acces).
 
-Clicca sulle schede qui sotto per visualizzare i **2** step in sequenza.
+Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **2** passaggi.
 
 > [!tabs]
-> **Step 1**
+> **Passaggio 1**
 >>
 >> Accedi alla pagina [Web Cloud Databases](/links/control-panel/web-cloud-databases), poi seleziona la soluzione interessata.
 >>
 >> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases.png){.thumbnail}
 >>
-> **Step 2**
+> **Passaggio 2**
 >>
 >> Recupera le seguenti informazioni di connessione:
 >>
@@ -129,7 +132,7 @@ Clicca sulle schede qui sotto per visualizzare i **2** step in sequenza.
 >> - **Porta:** visibile nella stessa posizione, voce "Porta" nella parte **SQL**.
 >> - **Nome utente:** visibile nella scheda `Utenti e diritti`{.action}.
 >> - **Password:** la password associata all'utente interessato.
->> - **Nome del database:** visibile nella scheda `Database`{.action}.
+>> - **Nome del database:** visibile nella scheda `Databases`{.action}.
 
 **Clicca sul metodo di connessione che preferisci per visualizzare il contenuto.**
 
@@ -185,19 +188,21 @@ Sei ora connesso al tuo database:
 Puoi utilizzare la tua interfaccia phpMyAdmin per esplorare il contenuto del tuo database. Per farlo, installa phpMyAdmin sul tuo server o hosting Web. Durante l'installazione, assicurati di configurare correttamente le informazioni del tuo database server e del database desiderato affinché phpMyAdmin possa connettersi.
 
 ///
+<!-- CP-STEPS-END:mysql-external-connection -->
 
 ### Connettersi a un database PostgreSQL
 
-Clicca sulle schede qui sotto per visualizzare i **2** step in sequenza.
+<!-- CP-STEPS-START:postgresql-connection -->
+Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **2** passaggi.
 
 > [!tabs]
-> **Step 1**
+> **Passaggio 1**
 >>
 >> Accedi alla pagina [Web Cloud Databases](/links/control-panel/web-cloud-databases), poi seleziona la soluzione interessata.
 >>
 >> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases.png){.thumbnail}
 >>
-> **Step 2**
+> **Passaggio 2**
 >>
 >> Recupera le seguenti informazioni di connessione:
 >>
@@ -205,7 +210,7 @@ Clicca sulle schede qui sotto per visualizzare i **2** step in sequenza.
 >> - **Porta:** visibile nella stessa posizione, voce "Porta" nella parte **SQL**.
 >> - **Nome utente:** visibile nella scheda `Utenti e diritti`{.action}.
 >> - **Password:** la password associata all'utente interessato.
->> - **Nome del database:** visibile nella scheda `Database`{.action}.
+>> - **Nome del database:** visibile nella scheda `Databases`{.action}.
 
 **Clicca sul metodo di connessione che preferisci per visualizzare il contenuto.**
 
@@ -255,6 +260,7 @@ Sei ora connesso al tuo database:
 ![config connection](/pages/assets/screens/other/web-tools/squirrel/general-dashboard.png){.thumbnail}
 
 ///
+<!-- CP-STEPS-END:postgresql-connection -->
 
 ## Per saperne di più
 

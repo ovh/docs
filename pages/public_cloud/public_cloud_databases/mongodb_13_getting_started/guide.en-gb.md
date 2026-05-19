@@ -27,9 +27,11 @@ updated: 2024-02-05
 
 ## Instructions
 
+<!-- CP-STEPS-START:create-database-instance -->
 Click on `Databases`{.action} in the left-hand navigation bar under **Databases & Analytics**.
 
 Click the `Create a database instance`{.action} button (click `Create a service`{.action} if your project already contains databases).
+<!-- CP-STEPS-END:create-database-instance -->
 
 ### Select the database type
 
@@ -37,6 +39,7 @@ Between all database engines, select **MongoDB**. You can choose to change the v
 
 ### Review the order
 
+<!-- CP-STEPS-START:review-the-order -->
 The **Discovery** plan is selected by default along with the following options:
 
 - The region is set to `Gravelines (GRA)`.
@@ -52,6 +55,7 @@ The **Discovery** plan is selected by default along with the following options:
 Review the service settings and click on the `Order`{.action} button.
 
 Within a few minutes, your **Discovery** MongoDB service will be deployed.
+<!-- CP-STEPS-END:review-the-order -->
 
 ### Connectivity settings
 

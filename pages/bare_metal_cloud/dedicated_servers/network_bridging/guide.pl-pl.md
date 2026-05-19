@@ -1,6 +1,6 @@
 ---
-title: 'Konfiguracja Additional IP w trybie bridge na wirtualnych maszynach'
-excerpt: 'Dowiedz się, jak używać trybu bridge do konfiguracji dostępu do Internetu Twoich wirtualnych maszyn'
+title: "Konfiguracja Additional IP w trybie bridge na serwerze dedykowanym"
+excerpt: "Skonfiguruj maszyny wirtualne na serwerze dedykowanym, aby uzyskać publiczny dostęp do Internetu za pomocą trybu bridge."
 updated: 2026-01-06
 ---
 
@@ -564,4 +564,7 @@ Następnie wykonaj ping na Additional IP z zewnątrz. Jeśli to działa, prawdop
 
 ## Sprawdź również
 
+- [Konfiguracja Additional IP jako aliasu IP na serwerze dedykowanym](/pages/bare_metal_cloud/dedicated_servers/network_ipaliasing)
+- [Konfiguracja IPv6 na serwerze dedykowanym](/pages/bare_metal_cloud/dedicated_servers/network_ipv6)
+- [Tutorial - Configuring pfSense network bridge (EN)](/pages/bare_metal_cloud/dedicated_servers/pfSense_bridging)
 Dołącz do [grona naszych użytkowników](/links/community).

@@ -53,6 +53,7 @@ Your Private Exchange or Trusted Exchange offer therefore generates its own logs
 
 ### View your Exchange platform logs in real-time
 
+<!-- CP-STEPS-START:view-logs-realtime -->
 To access real-time logs on your Private or Trusted Exchange offer, to the right of the series of tabs, click on the `More +`{.action} tab and then on `Logs`{.action}.
 
 ![exchange - logs](images/exchange-logs01.png){.thumbnail}
@@ -69,6 +70,7 @@ Exchange services offer two types of logs:
     - Sending status of emails from your Exchange service
     - Size of transmitted emails
     - etc.
+<!-- CP-STEPS-END:view-logs-realtime -->
 
 ### Integrate your Exchange solution logs on Logs Data Platform
 
@@ -89,6 +91,7 @@ Exchange solutions are compatible with various services such as web hosting, VPS
 
 To subscribe your Exchange solution logs to a data stream on Logs Data Platform, perform the following actions:
 
+<!-- CP-STEPS-START:subscribe-ldp -->
 1. To the right of the series of tabs, click on the `More +`{.action} tab and then on `Logs`{.action}.
 1. On the right side of the box where your real-time logs are displayed, click on the `Subscribe`{.action} button.
 
@@ -122,6 +125,7 @@ Two scenarios are then available to subscribe your Exchange solution:
 >> You will then be redirected to the `Data stream`{.action} tab of your Logs Data Platform solution.
 >>
 >> You can now subscribe your Exchange solution to your new Logs Data Platform stream by following the instructions above.
+<!-- CP-STEPS-END:subscribe-ldp -->
 
 ## Go further <a name="go-further"></a>
 

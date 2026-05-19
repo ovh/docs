@@ -24,7 +24,6 @@ details[open]>summary::before {
 
 ## Prérequis
 
-- Être connecté à [l'espace client OVHcloud](/links/manager).
 - Disposer d'une offre [VMware on OVHcloud](/links/hosted-private-cloud/vmware).
 - Disposer des droits nécessaires pour manipuler les ressources HPC VMware et KMS OVHcloud avec IAM.
 - Avoir lu les guides : 
@@ -32,6 +31,17 @@ details[open]>summary::before {
     - [Premiers pas avec OKMS](/pages/manage_and_operate/kms/quick-start).
 - Le certificat public du KMS OVHcloud (OKMS) (étape [vCenter Trust KMS](#trust-okms)).
 - Une demande de signature de certificat (CSR) généré par vSphere et signé par OKMS pour valider/truster l'import ainsi que les échanges entre le KMS OVHcloud et vCenter.
+
+<!-- CP-NAV-START:privatecloud-vmware-vsphere -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [VMware vSphere](/links/control-panel/privatecloud-vmware-vsphere)
+- **Pour accéder à vos services :** `Hosted Private Cloud`{.action} > `Managed VMware vSphere`{.action} > Sélectionnez votre service vSphere
+
+---
+<!-- CP-NAV-END:privatecloud-vmware-vsphere -->
 
 ## En pratique <a name="summary"></a>
 
@@ -119,7 +129,7 @@ Pour plus d'informations sur les choix qui s'offrent à vous avec KMS et Hosted 
 
 #### Via l'espace client OVHcloud
 
-Afin d'accéder au KMS OVHcloud, connectez-vous à votre [espace client OVHcloud](/links/manager), puis rendez-vous dans la partie `Hosted Private Cloud`{.action}. Dans la colonne de gauche, cliquez sur `Identité, Sécurité & Opération`{.action}, puis sur `Key Management Service`{.action}.
+Afin d'accéder au KMS OVHcloud, rendez-vous dans la partie `Hosted Private Cloud`{.action}. Dans la colonne de gauche, cliquez sur `Identité, Sécurité & Opération`{.action}, puis sur `Key Management Service`{.action}.
 
 Pour commander un nouveau serveur KMS, cliquez sur le bouton `Commander un KMS`{.action}, puis `Sélectionnez une région`{.action}.
 

@@ -149,7 +149,7 @@ The **Manage my solutions and services** page contains a table for managing your
 > Depending on the service and its eligibility to manual renewal, some actions may not be available.
 >
 
-To the right of a service, click the `...`{.action}' button in the `Actions` column, then click on the action you want to perform.
+To the right of a service, click the `...`{.action}’ button in the `Actions` column, then click on the action you want to perform.
 
 ![actions menu](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/actions-en.png){.thumbnail}
 
@@ -179,7 +179,7 @@ To the right of a service, click the `...`{.action}' button in the `Actions` col
 >>
 >> > [!success]
 >> >
->> > Once you are in the online payment interface, if the service you want to renew has associated options and you also want to renew them, **don't tick** the white button(s) followed by the words `Do not renew` associated with each of the options displayed.
+>> > Once you are in the online payment interface, if the service you want to renew has associated options and you also want to renew them, **don’t tick** the white button(s) followed by the words `Do not renew` associated with each of the options displayed.
 >> > If you tick this/these white button(s), you will request renewal for your main service **WITHOUT** any associated options.
 >> >
 >> > Once you have made your choices, proceed with your order by clicking `Confirm`{.action}.
@@ -207,7 +207,7 @@ To the right of a service, click the `...`{.action}' button in the `Actions` col
 >>
 >> > [!success]
 >> >
->> > Once you are in the online payment interface, if the service you want to renew has associated options and you also want to renew them, **don't tick** the white button(s) followed by the words `Do not renew` associated with each of the options displayed.
+>> > Once you are in the online payment interface, if the service you want to renew has associated options and you also want to renew them, **don’t tick** the white button(s) followed by the words `Do not renew` associated with each of the options displayed.
 >> > If you tick this/these white button(s), you will request renewal for your main service **WITHOUT** any associated options.
 >> >
 >> > Once you have made your choices, proceed with your order by clicking `Confirm`{.action}.

@@ -1,7 +1,7 @@
 ---
 title: "Como reagir a uma atividade anormal detectada no seu alojamento web"
 excerpt: "Descubra os passos a seguir quando uma atividade anormal é detectada no seu alojamento web OVHcloud"
-updated: 2025-10-02
+updated: 2026-04-01
 ---
 
 ## Objetivo
@@ -14,6 +14,17 @@ Este guia explica por que uma **atividade anormal** pode ser detectada no seu al
 
 - Dispor de uma oferta de [alojamento web OVHcloud](/links/web/hosting).
 - Estar conectado ao seu [espaço cliente OVHcloud](/links/manager).
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Acesso à Área de Cliente OVHcloud
+
+- **Ligação direta:** [Alojamentos](/links/control-panel/web-hosting)
+- **Caminho de navegação:** `Web Cloud`{.action} > `Alojamentos`{.action} > Selecione o seu alojamento web
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## Instruções
 
@@ -69,11 +80,27 @@ O seu site efetua muitas ligações externas (APIs, atualizações, chamadas HTT
 >
 > Execute este passo **apenas após aplicar as recomendações acima** (diagnóstico, correcções/atualizações, segurança). Se uma atividade anormal for novamente detectada num próximo scan, as **medidas de segurança serão automaticamente reativadas**. Receberá uma nova notificação e os bloqueios permanecerão em vigor até à **resolução definitiva** da situação.
 
-1. Conecte-se ao seu [espaço cliente OVHcloud](/links/manager), vá a `Web Cloud`{.action} e clique no seu alojamento web.
-2. Uma **janela de alerta** aparece: `Atividade anormal no seu alojamento`. Se clicar no botão `Mais tarde`{.action}, uma **bandeira de alerta** `Atividade anormal detectada` aparece no topo da página. Clique em `Saiba mais`{.action} para reabrir a janela de alerta.
-3. **Marque** a caixa: `Confirmo ter realizado todas as ações necessárias para resolver o problema`.
-4. Clique em `Levantar as medidas de segurança`{.action}.
-5. Uma **bandeira de confirmação** aparece no topo da página: `O seu alojamento está a ser analisado para levantar as medidas de segurança.` Siga o progresso clicando no link `Ver tarefas em curso`{.action} ou diretamente a partir do separador `Tarefas em curso`{.action}.
+<!-- CP-STEPS-START:lift-security-measures -->
+Clique nos separadores abaixo para visualizar cada uma das **4** etapas.
+
+> [!tabs]
+> **Etapa 1**
+>>
+>> Aceda à página [Alojamentos](/links/control-panel/web-hosting) e selecione o alojamento web em causa.
+>>
+> **Etapa 2**
+>>
+>> Uma **janela de alerta** aparece: `"Atividade anormal no seu alojamento"`. Se clicar no botão `Mais tarde`{.action}, uma **bandeira de alerta** `"Atividade anormal detectada"` aparece no topo da página. Clique em `Saiba mais`{.action} para reabrir a janela de alerta.
+>>
+> **Etapa 3**
+>>
+>> **Marque** a caixa: `Confirmo ter realizado todas as ações necessárias para resolver o problema`, depois clique em `Levantar as medidas de segurança`{.action}.
+>>
+> **Etapa 4**
+>>
+>> Uma **bandeira de confirmação** aparece no topo da página: `O seu alojamento está a ser analisado para levantar as medidas de segurança.` Siga o progresso clicando no link `Ver tarefas em curso`{.action} ou diretamente a partir do separador `Tarefas em curso`{.action}.
+>>
+<!-- CP-STEPS-END:lift-security-measures -->
 
 > [!warning]
 >

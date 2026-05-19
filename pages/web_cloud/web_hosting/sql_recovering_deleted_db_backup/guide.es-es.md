@@ -1,7 +1,7 @@
 ---
 title: "Recuperar la copia de seguridad de una base de datos eliminada"
 excerpt: "Descubra cómo encontrar la copia de seguridad de una base de datos eliminada desde el área de cliente de OVHcloud"
-updated: 2025-02-20
+updated: 2026-04-01
 ---
 
 ## Objetivo
@@ -14,7 +14,7 @@ La mayoría de nuestros [planes de hosting](/links/web/hosting) incluyen bases d
 >
 > OVHcloud pone a su disposición servicios cuya configuración, gestión y responsabilidad recaen sobre usted. Por lo tanto, usted deberá asegurarse de que estos funcionen correctamente.
 >
-> Esta guía le ayudará a realizar las tareas más habituales. No obstante, si necesita ayuda, le recomendamos que contacte con un [proveedor especializado](/links/partner). ya que no podremos proporcionarle ayuda adicional sobre las API. Para más información, consulte la sección ["Más información"](#go-further) de esta guía.
+> Esta guía le ayudará a realizar las tareas más habituales. Sin embargo, si necesita ayuda, le recomendamos que contacte con un [proveedor especializado](/links/partner). ya que no podremos proporcionarle ayuda adicional sobre las API. Para más información, consulte la sección ["Más información"](#go-further) de esta guía.
 >
 
 ## Requisitos
@@ -27,7 +27,7 @@ La mayoría de nuestros [planes de hosting](/links/web/hosting) incluyen bases d
 
 ### Acceso al área de cliente de OVHcloud
 
-- **Enlace directo:** [Hosting plans](/links/control-panel/web-hosting)
+- **Enlace directo:** [Alojamientos](/links/control-panel/web-hosting)
 - **Ruta de navegación:** `Web Cloud`{.action} > `Alojamientos`{.action} > Seleccione su alojamiento web
 
 ---
@@ -44,19 +44,24 @@ Las API de OVHcloud permiten a los desarrolladores o integradores asociar, por e
 > Además, cuando una base de datos es eliminada por su usuario o su administrador, OVHcloud no podrá garantizar la recuperación de la copia de seguridad de la misma por las razones anteriormente citadas.
 >
 
-### Etapa 1 - Obtener el nombre del alojamiento web al que estaba asociada la base de datos eliminada
+### 1 - Obtener el nombre del alojamiento web al que estaba asociada la base de datos eliminada
 
-Para obtener el nombre del alojamiento web, lleve a cabo los siguientes pasos:
+<!-- CP-STEPS-START:retrieve-webhosting-name -->
+Para obtener el nombre del alojamiento web, haga clic en las fichas siguientes para ver cada una de las **2** etapas.
 
-1. Conéctese a su [área de cliente de OVHcloud](/links/manager).
-2. Haga clic en la pestaña `Web Cloud`{.action}.
-3. En la columna izquierda, haga clic en el menú `Alojamientos`{.action}.
-4. Seleccione el alojamiento web correspondiente.
-5. En la parte superior izquierda de la página que aparece, consulte el nombre de su alojamiento web, a la derecha de la mención `Alojamientos /`{.action}.
+> [!tabs]
+> **Etapa 1**
+>>
+>> Acceda a la página [Alojamientos](/links/control-panel/web-hosting) y elija el alojamiento web correspondiente.
+>>
+> **Etapa 2**
+>>
+>> En la parte superior izquierda de la página que se muestra, encontrará el nombre de su alojamiento web a la derecha de la mención `Alojamientos /`.
+>>
+>> ![Nombre del alojamiento web en el área de cliente de OVHcloud](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-webhosting-name.png){.thumbnail}
+<!-- CP-STEPS-END:retrieve-webhosting-name -->
 
-![API](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-webhosting-name.png){.thumbnail}
-
-### Etapa 2 - Conectarse a las API de OVHcloud y permitirles el acceso a sus servicios
+### 2 - Conectarse a las API de OVHcloud y permitirles el acceso a sus servicios
 
 Para ello, lleve a cabo las siguientes acciones:
 
@@ -76,7 +81,7 @@ Para ello, lleve a cabo las siguientes acciones:
 - Conéctese con su ID de cliente y haga clic en `Authorize`{.action} para utilizar las API de OVHcloud con los servicios presentes en su área de cliente.
 - A continuación, el sistema le redirigirá automáticamente a la página anterior de la API **GET /hosting/web/{serviceName}/dump** mientras está conectado al área de cliente de OVHcloud.
 
-### Etapa 3 - Comprobar la disponibilidad de las copias de seguridad y recuperar el ID de la última copia de seguridad
+### 3 - Comprobar la disponibilidad de las copias de seguridad y recuperar el ID de la última copia de seguridad
 
 Para ello, complete los diferentes formularios como se detalla a continuación:
 
@@ -105,7 +110,7 @@ Si no aparece ningún ID de cliente en la ventana, compruebe que ha iniciado ses
 
 Si, a pesar de todo, todavía no aparece un ID, significa que no hay copias de seguridad disponibles para la base de datos eliminada en nuestra infraestructura.
 
-### Etapa 4 - Obtener la última copia de seguridad
+### 4 - Obtener la última copia de seguridad
 
 Gracias al número de identificador de copia de seguridad obtenido en el paso 3, podrá descargar, mediante un enlace generado por la API, la última copia de seguridad de su base de datos eliminada.
 
@@ -156,7 +161,7 @@ Si todo se ha introducido correctamente, el siguiente resultado aparecerá en la
 
 En este resultado, copie la URL completa en "HTTPS" **sin las comillas** a la derecha de la indicación `"url":` y péguela en la barra de búsqueda de su navegador para iniciar la descarga de la copia de seguridad.
 
-### Etapa 5 - Crear una nueva base de datos, importar el archivo de copia de seguridad y restablecer el enlace entre su sitio web y la nueva base de datos
+### 5 - Crear una nueva base de datos, importar el archivo de copia de seguridad y restablecer el enlace entre su sitio web y la nueva base de datos
 
 Una vez recuperada la copia de seguridad de la base de datos, deberá crear una nueva base de datos. Para ello, consulte nuestra guía "[Crear una base de datos en un alojamiento web](/pages/web_cloud/web_hosting/sql_create_database)".
 

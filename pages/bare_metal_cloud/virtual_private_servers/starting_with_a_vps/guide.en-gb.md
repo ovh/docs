@@ -81,7 +81,9 @@ Once the Windows operating system is installed, you receive an email with the de
 
 You will then need to complete the Windows installation process by setting your display language, keyboard layout, and administrator password.
 
+<!-- CP-STEPS-START:windows-kvm-launch -->
 This is done in the VPS KVM console: in the `Home`{.action} tab, click the `...`{.action} button next to your VPS name in the **Your VPS** section and select `KVM`{.action}.
+<!-- CP-STEPS-END:windows-kvm-launch -->
 
 Find more information about this tool in our "[KVM guide](/pages/bare_metal_cloud/virtual_private_servers/using_kvm_for_vps)".
 

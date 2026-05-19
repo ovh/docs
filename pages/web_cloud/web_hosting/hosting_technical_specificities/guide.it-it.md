@@ -1,7 +1,7 @@
 ---
 title: "Specifiche tecniche degli hosting condivisi"
 excerpt: "Questa guida ti mostra le informazioni e le specifiche tecniche relative agli hosting Web"
-updated: 2023-12-08
+updated: 2026-04-01
 ---
 
 ## Obiettivo
@@ -13,17 +13,6 @@ I pacchetti di web hosting OVHcloud sono condivisi. Di conseguenza, la configura
 ## Prerequisiti
 
 - Disporre di un piano di [hosting Web](/links/web/hosting) attivo
-
-<!-- CP-NAV-START:web-hosting -->
----
-
-### Accesso allo Spazio Cliente OVHcloud
-
-- **Link diretto:** [Hosting plans](/links/control-panel/web-hosting)
-- **Percorso di navigazione:** `Web Cloud`{.action} > `Hosting`{.action} > Seleziona il tuo hosting web
-
----
-<!-- CP-NAV-END:web-hosting -->
 
 ## Procedura
 
@@ -38,13 +27,7 @@ I pacchetti di web hosting OVHcloud sono condivisi. Di conseguenza, la configura
 
 - Utilizza la **modalità passiva** per le connessioni FTP. Assicurati che il tuo script o il tuo client FTP siano configurati correttamente.
 
-- Se riscontri l’errore di accesso "Autenticazione di connessione 530 non riuscita" durante la connessione al tuo spazio di storage FTP: assicurati che le informazioni di accesso al tuo spazio FTP siano corrette. Per farlo, accedi al tuo [Spazio Cliente OVHcloud](/links/manager) e clicca sulla sezione `Web Cloud`{.action}. Nella colonna di sinistra, clicca su `Hosting`{.action} e seleziona l’hosting Web interessato. Clicca sulla scheda `FTP - SSH`{.action}.
-
-In questa interfaccia sono disponibili tutte le informazioni di connessione allo spazio di storage FTP, ad eccezione della password.
-
-Le password non vengono mai mostrate, ma possono essere modificate.
-
-Per maggiori informazioni al riguardo, consulta la nostra guida "[Accedere allo spazio di storage FTP del proprio hosting Web](/pages/web_cloud/web_hosting/ftp_connection)".
+- Se riscontri l’errore di accesso "Autenticazione di connessione 530 non riuscita" durante la connessione al tuo spazio di storage FTP, assicurati che le informazioni di accesso al tuo spazio FTP siano corrette. Consulta la nostra guida "[Accedere allo spazio di storage FTP del proprio hosting web](/pages/web_cloud/web_hosting/ftp_connection)" per trovare tutte le informazioni di connessione al tuo spazio di storage FTP. Le password non vengono mai mostrate, ma possono essere modificate.
 
 ### E-mail <a name="email"></a>
 
@@ -215,15 +198,15 @@ Per quanto riguarda un cookie:
  - 1: necessario al funzionamento del servizio di hosting web condiviso;
  - 2: anonimo.
 
-Non è interessato dalla raccolta preventiva del consenso del visitatore del sito internet ai sensi del Regolamento Generale sulla Protezione dei Dati (GDPR).
+Non è interessato dalla raccolta preventiva del consenso del visitatore del sito Internet ai sensi del Regolamento Generale sulla Protezione dei Dati (GDPR).
 
 ### Informazioni sugli strumenti di statistica
 
 **OVHcloud Web Statistics**
 
-OVHcloud mette a disposizione del cliente le statistiche sugli accessi e sull'analisi delle visite al/i sito/i internet ospitato/i nell'ambito del servizio di hosting condiviso. (d’ora in poi "OVHcloud Web Statistics"). "OVHcloud Web Statistics" permette, in particolare, di identificare la zona geografica degli utenti dei siti internet, le caratteristiche dei loro terminali, le pagine visitate e i codici HTTP. "OVHcloud Web Statistics" è attivo, di default, nell’ambito del servizio di un hosting condiviso e può essere disattivato su richiesta del cliente, contattando il supporto tecnico. Per fornire "OVHcloud Web Statistics", è necessario il trattamento dei dati personali da parte di OVHcloud.
+OVHcloud mette a disposizione del cliente le statistiche sugli accessi e sull'analisi delle visite al/i sito/i internet ospitato/i nell'ambito del servizio di hosting condiviso. (d’ora in poi "OVHcloud Web Statistics"). "OVHcloud Web Statistics" permette, in particolare, di identificare la zona geografica degli utenti dei siti Internet, le caratteristiche dei loro terminali, le pagine visitate e i codici HTTP. "OVHcloud Web Statistics" è attivo, di default, nell’ambito del servizio di un hosting condiviso e può essere disattivato su richiesta del cliente, contattando il supporto tecnico. Per fornire "OVHcloud Web Statistics", è necessario il trattamento dei dati personali da parte di OVHcloud.
 
-I report "OVHcloud Web Statistics" si basano su dati di traffico anonimizzati, come l’indirizzo IP e i log degli utenti dei siti internet ospitati nell’ambito di un piano di hosting condiviso, l’URL della richiesta, la durata della richiesta e lo "useragent".
+I report "OVHcloud Web Statistics" si basano su dati di traffico anonimizzati, come l’indirizzo IP e i log degli utenti dei siti Internet ospitati nell’ambito di un piano di hosting condiviso, l’URL della richiesta, la durata della richiesta e lo "useragent".
 
 Per poter essere utilizzati nell’ambito di "OVHcloud Web Statistics", i dati citati precedentemente sono anonimizzati e aggregati mediante algoritmi operati da OVHcloud all’interno delle proprie infrastrutture. In particolare, l’indirizzo IP del visitatore presente nei dati di traffico viene estratto in forma anonima, prima di essere trattato e analizzato per determinarne la geolocalizzazione (limitata a un livello regionale). Pertanto, nell’"OVHcloud Web Statistics" non viene conservato alcun dato personale che consenta l’identificazione, diretta o indiretta, dei visitatori sopra citati.  
 

@@ -1,29 +1,18 @@
 ---
 title: "Spécificités techniques liées aux hébergements mutualisés"
-excerpt: "Découvrez dans ce guide différentes informations et spécificités techniques liées aux hébergements Web"
-updated: 2023-12-08
+excerpt: "Découvrez dans ce guide différentes informations et spécificités techniques liées aux hébergements web"
+updated: 2026-04-01
 ---
 
 ## Objectif
 
 Les offres d'hébergement web OVHcloud sont mutualisées. Par conséquent, la configuration de ces offres contient certaines spécificités techniques. Nous vous recommandons de prendre connaissance de ces spécificités *avant* d'utiliser votre hébergement web OVHcloud.
 
-**Découvrez dans ce guide différentes informations et spécificités techniques liées aux hébergements Web**
+**Découvrez dans ce guide différentes informations et spécificités techniques liées aux hébergements web**
 
 ## Prérequis
 
 - Disposer d'une [offre d'hébergement web](/links/web/hosting) compatible.
-
-<!-- CP-NAV-START:web-hosting -->
----
-
-### Accès à l'espace client OVHcloud
-
-- **Lien direct :** [Hébergements](/links/control-panel/web-hosting)
-- **Pour accéder à vos services :** `Web Cloud`{.action} > `Hébergements`{.action} > Sélectionnez votre hébergement web
-
----
-<!-- CP-NAV-END:web-hosting -->
 
 ## En pratique
 
@@ -31,20 +20,14 @@ Les offres d'hébergement web OVHcloud sont mutualisées. Par conséquent, la co
 >
 > OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
 >
-> Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](/links/partner) et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section « [Aller plus loin](#go-further) » de ce guide.
+> Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Cependant, nous vous recommandons de faire appel à un [prestataire spécialisé](/links/partner) et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section « [Aller plus loin](#go-further) » de ce guide.
 >
 
 ### FTP
 
 - Utilisez le **mode passif** pour les connexions FTP. Assurez-vous que votre script ou votre client FTP est configuré en conséquence.
 
-- Si vous rencontrez l'erreur d'accès « Échec de l'authentification de connexion 530 » lors de la connexion à votre espace de stockage FTP: Assurez-vous que les informations d'accès à votre espace FTP sont correctes. Pour cela, connectez-vous à votre [espace client OVHcloud](/links/manager) puis rendez-vous dans la partie `Web Cloud`{.action}. Dans la colonne de gauche, cliquez sur `Hébergements`{.action} puis sélectionnez l'hébergement web concerné. Sur la page qui s'affiche, cliquez sur l'onglet `FTP - SSH`{.action}.
-
-Vous y retrouverez l'ensemble des informations de connexion à votre espace de stockage FTP à l'exception du mot de passe.
-
-En effet, les mots de passe ne sont jamais affichés, mais ils peuvent être modifiés.
-
-Retrouvez plus d'informations sur le sujet dans notre guide « [Se connecter à l'espace de stockage FTP de son hébergement Web](/pages/web_cloud/web_hosting/ftp_connection) ».
+- Si vous rencontrez l'erreur d'accès « Échec de l'authentification de connexion 530 » lors de la connexion à votre espace de stockage FTP, assurez-vous que les informations d'accès à votre espace FTP sont correctes. Consultez notre guide « [Se connecter à l'espace de stockage FTP de son hébergement web](/pages/web_cloud/web_hosting/ftp_connection) » pour retrouver l'ensemble des informations de connexion à votre espace de stockage FTP. Les mots de passe ne sont jamais affichés, mais ils peuvent être modifiés.
 
 ### E-mails <a name="emails"></a>
 
@@ -72,7 +55,7 @@ En cas d'abus ou de piratage, une partie ou l'ensemble de votre service pourra �
 
 #### Connexions simultanées à la base de données
 
-Sur les offres d'hébergement Web (bases de données partagées), il existe une limite de 30 connexions simultanées par base de données (cette limite passe à 200 si vous utilisez une offre [Web Cloud Databases](/links/web/databases)). Consulter le [détail de nos offres d'hébergement web](/links/web/hosting) pour connaître les options disponibles dans chaque offre d'hébergement Web.
+Sur les offres d'hébergement web (bases de données partagées), il existe une limite de 30 connexions simultanées par base de données (cette limite passe à 200 si vous utilisez une offre [Web Cloud Databases](/links/web/databases)). Consulter le [détail de nos offres d'hébergement web](/links/web/hosting) pour connaître les options disponibles dans chaque offre d'hébergement web.
 
 Vous pouvez également commander des offres [Web Cloud Databases](/links/web/databases) supplémentaires, celles-ci disposent d'options de personnalisation :
 
@@ -83,7 +66,7 @@ Pour en savoir plus, consultez les détails de nos [offres d'hébergement web](/
 
 #### Connexions depuis un serveur externe
 
-Pour des raisons de sécurité, il n'est pas possible de se connecter d'un serveur externe à une base de données incluse dans une offre d'hébergement Web OVHcloud. Seuls les serveurs qui contiennent les hébergements Web OVHcloud peuvent se connecter aux serveurs de base de données partagées. Toute autre connexion provoquera l'erreur suivante:
+Pour des raisons de sécurité, il n'est pas possible de se connecter d'un serveur externe à une base de données incluse dans une offre d'hébergement web OVHcloud. Seuls les serveurs qui contiennent les hébergements web OVHcloud peuvent se connecter aux serveurs de base de données partagées. Toute autre connexion provoquera l'erreur suivante:
 
 ```bash
 Warning: MySQL Connection Failed: Host ip.your.connection is not allowed to connect ...
@@ -101,14 +84,14 @@ SHOW VARIABLES;
 
 > [!primary]
 >
-> La version MySQL ne peut pas être modifiée pour les bases de données intégrées à l'hébergement Web.
+> La version MySQL ne peut pas être modifiée pour les bases de données intégrées à l'hébergement web.
 >
 
 Pour plus d'informations sur la gestion des bases de données et sur la connection à l'interface *phpMyAdmin*, reportez-vous au guide « [Créer une base de données sur son hébergement web](/pages/web_cloud/web_hosting/sql_create_database) ».
 
 ### PHP
 
-Nous vous recommandons de consulter nos [offres d'hébergement web](/links/web/hosting-programming-language) pour vous assurer que l'offre d'hébergement Web que vous souhaitez commander convient à vos besoins.
+Nous vous recommandons de consulter nos [offres d'hébergement web](/links/web/hosting-programming-language) pour vous assurer que l'offre d'hébergement web que vous souhaitez commander convient à vos besoins.
 
 > [!warning]
 >
@@ -119,7 +102,7 @@ Nous vous recommandons de consulter nos [offres d'hébergement web](/links/web/h
 > Retrouvez plus de détails sur ce sujet dans notre guide « [Hébergement web : environnement, version PHP, « .ovhconfig »](/pages/web_cloud/web_hosting/configure_your_web_hosting) »
 >
 
-Par ailleurs, vous pouvez aussi vérifier les détails de la configuration de votre hébergement web. Pour cela, consultez la rubrique « [Informations techniques de votre hébergement Web](#technical-infos-web-hosting) » en bas de ce guide.
+Par ailleurs, vous pouvez aussi vérifier les détails de la configuration de votre hébergement web. Pour cela, consultez la rubrique « [Informations techniques de votre hébergement web](#technical-infos-web-hosting) » en bas de ce guide.
 
 #### PHP-FPM
 
@@ -150,7 +133,7 @@ Par exemple, vous pouvez utiliser la fonction *gethostbyaddr()* pour récupérer
 > OVHcloud ne change pas automatiquement la version de PHP de votre hébergement lorsqu'une nouvelle version est implémentée. Vous êtes maître de la sécurité du contenu services et de la mise à jour régulière de ces derniers.
 >
 
-### Informations techniques de votre hébergement Web <a name="technical-infos-web-hosting"></a>
+### Informations techniques de votre hébergement web <a name="technical-infos-web-hosting"></a>
 
 Retrouvez et vérifiez les librairies, langages et versions disponibles pour votre offre d'hébergement web depuis cette page : <https://webhosting-infos.hosting.ovh.net>
 
@@ -180,7 +163,7 @@ Découvrez comment [se connecter à l’espace de stockage FTP de votre héberge
 > OVHcloud fournit un service de sauvegarde automatique des données ainsi que la mise à disposition de ces sauvegardes. Il reste cependant *non-contractuel* et est présent en complément de vos services. Effectivement, il est de votre responsabilité de mettre en place votre propre politique de restauration, et de déterminer des points de restaurations aux moments que vous jugez opportuns.
 >
 
-Pour les bases de données mutualisées (comprises dans votre offre d'hébergement Web) ou les serveurs de base de données (Web Cloud Databases), proposés sur Gravelines (GRA), en France et Beauharnois (BHS), au Canada, la sauvegarde des bases est faite tous les jours. Ces sauvegardes sont accessibles (via [l'espace client OVHcloud](/links/manager) ou via les [API OVHcloud](/links/api)). Les sauvegardes sont également stockées sur une autre infrastructure. Ces données sont répliquées dans un centre de données situé à Strasbourg (SBG). La politique de rétention des sauvegardes est de 30 jours.
+Pour les bases de données mutualisées (comprises dans votre offre d'hébergement web) ou les serveurs de base de données (Web Cloud Databases), proposés sur Gravelines (GRA), en France et Beauharnois (BHS), au Canada, la sauvegarde des bases est faite tous les jours. Ces sauvegardes sont accessibles (via [l'espace client OVHcloud](/links/manager) ou via les [API OVHcloud](/links/api)). Les sauvegardes sont également stockées sur une autre infrastructure. Ces données sont répliquées dans un centre de données situé à Strasbourg (SBG). La politique de rétention des sauvegardes est de 30 jours.
 
 Découvrez comment [Récupérer la sauvegarde de la base de données d’un hébergement web](/pages/web_cloud/web_hosting/sql_database_export) sur notre documentation.
 
@@ -191,7 +174,7 @@ Découvrez comment [Récupérer la sauvegarde de la base de données d’un héb
 > OVHcloud fournit un service de sauvegarde automatique des données. Il reste cependant *non-contractuel* et est présent en complément de vos services. Effectivement, il est de votre responsabilité de mettre en place votre propre politique de restauration, et de déterminer des points de restaurations aux moments que vous jugez opportuns.
 >
 
-Pour les comptes e-mails mutualisés (compris dans votre offre d'hébergement Web), une sauvegarde automatique quotidienne est réalisée et copiée dans un autre centre de données.
+Pour les comptes e-mails mutualisés (compris dans votre offre d'hébergement web), une sauvegarde automatique quotidienne est réalisée et copiée dans un autre centre de données.
 
 ### Politique d'utilisation des cookies
 

@@ -1,7 +1,7 @@
 ---
 title: "Tworzenie i pobieranie kopii zapasowej przestrzeni FTP na hostingu Cloud Web"
 excerpt: "Dowiedz się, jak pobrać kopię zapasową przestrzeni FTP Twojego hostingu Cloud Web"
-updated: 2023-11-16
+updated: 2026-03-31
 ---
 
 ## Wprowadzenie
@@ -29,7 +29,7 @@ Twój hosting Cloud Web dysponuje przestrzenią dyskową, na której możesz hos
 
 ### Dostęp do Panelu klienta OVHcloud
 
-- **Link bezpośredni:** [Hosting plans](/links/control-panel/web-hosting)
+- **Link bezpośredni:** [Hosting](/links/control-panel/web-hosting)
 - **Ścieżka nawigacji:** `Web Cloud`{.action} > `Hosting`{.action} > Wybierz hosting WWW
 
 ---
@@ -46,42 +46,58 @@ Hosting Cloud Web dysponuje automatycznymi kopiami zapasowymi uruchomionymi z na
 
 OVHcloud może zaproponować wyłącznie kopie zapasowe, o których mowa powyżej, pod warunkiem, że Twój hosting Cloud Web istnieje już w wskazanych terminach i pod warunkiem, że infrastruktura będzie dostępna w momencie tworzenia kopii zapasowej.
 
-### Pobierz kopię zapasową
+### Odzyskaj kopię zapasową
 
-W przeciwieństwie do hostingu współdzielonego OVHcloud, przywracanie przestrzeni FTP nie jest możliwe za pomocą jednego kliknięcia w [Panelu klienta OVHcloud](/links/manager).
+W przeciwieństwie do hostingu współdzielonego OVHcloud, przywracanie przestrzeni FTP nie jest możliwe za pomocą jednego kliknięcia w Panelu klienta OVHcloud.
 
 Link do pobrania kopii zapasowej jest generowany, a następnie wysyłany e-mailem na adres e-mail powiązany z identyfikatorem klienta administratora hostingu Cloud Web.
 
-#### Etap 1 - Wygeneruj link do pobrania wysłany e-mailem
+<!-- CP-STEPS-START:access-ftp-backup -->
+Kliknij poniższe karty, aby wyświetlić kolejne **5** kroki.
 
-Aby wygenerować link do pobrania, zaloguj się do [Panelu klienta OVHcloud](/links/manager), przejdź do sekcji `Web Cloud`{.action}, kliknij `Hosting`{.action}, a następnie odpowiednią usługę Cloud Web. 
+> [!tabs]
+> **Krok 1**
+>>
+>> Przejdź na stronę [Hosting](/links/control-panel/web-hosting) i wybierz odpowiedni Cloud Web.
+>>
+>> ![Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Krok 2**
+>>
+>> Wybierz kartę `FTP - SSH`{.action} i kliknij przycisk `Utwórz kopię zapasową`{.action} po prawej stronie.
+>>
+>> ![Przycisk Utwórz kopię zapasową](/pages/assets/screens/control_panel/product-selection/web-cloud/cloud-web/ftp-ssh/generate-a-backup.png){.thumbnail}
+>>
+> **Krok 3**
+>>
+>> W oknie, które się otworzy, wybierz jedną z dostępnych kopii zapasowych, po czym kliknij `Dalej`{.action}.
+>>
+>> ![Wybór kopii zapasowej](/pages/assets/screens/control_panel/product-selection/web-cloud/cloud-web/ftp-ssh/generate-a-backup-step-1.png){.thumbnail}
+>>
+> **Krok 4**
+>>
+>> Pojawi się drugie okno z informacją, że link do pobrania pliku kopii zapasowej zostanie przesłany e-mailem i że OVHcloud nie przywróci automatycznie danych z Twojego hostingu Cloud Web.
+>>
+>> ![Potwierdzenie generowania kopii zapasowej](/pages/assets/screens/control_panel/product-selection/web-cloud/cloud-web/ftp-ssh/generate-a-backup-step-2.png){.thumbnail}
+>>
+>> Kliknij na `Zatwierdź`{.action}, aby potwierdzić zlecenie.
+>>
+> **Krok 5**
+>>
+>> Jeśli generowanie kopii zapasowej zostało uruchomione, w Panelu klienta OVHcloud pojawi się następujący komunikat:
+>>
+>> ![Komunikat o postępie kopii zapasowej](/pages/assets/screens/control_panel/product-selection/web-cloud/cloud-web/ftp-ssh/message-backup-progress.png){.thumbnail}
+>>
+>> Tworzenie kopii zapasowej zajmuje od 10 do 15 minut.
+<!-- CP-STEPS-END:access-ftp-backup -->
 
-Wybierz kartę `FTP - SSH`{.action} i kliknij przycisk `Wygeneruj kopię zapasową`{.action} po prawej stronie.
+### Pobierz kopię zapasową
 
-![kopia zapasowa](/pages/assets/screens/control_panel/product-selection/web-cloud/cloud-web/ftp-ssh/generate-a-backup.png){.thumbnail}
+Po sfinalizowaniu tworzenia kopii zapasowej otrzymasz e-mail na adres e-mail powiązany z identyfikatorem administratora Twojego hostingu Cloud Web.
 
-W oknie, które się otworzy wybierz jedną z dostępnych kopii zapasowych, po czym kliknij `Dalej`{.action}.
-
-![kopia zapasowa](/pages/assets/screens/control_panel/product-selection/web-cloud/cloud-web/ftp-ssh/generate-a-backup-step-1.png){.thumbnail}
-
-Pojawi się drugie okno z informacją, że link do pobrania pliku kopii zapasowej zostanie przesłany e-mailem i że OVHcloud nie przywróci automatycznie danych z Twojego hostingu Cloud Web.
-
-![kopia zapasowa](/pages/assets/screens/control_panel/product-selection/web-cloud/cloud-web/ftp-ssh/generate-a-backup-step-2.png){.thumbnail}
-
-Kliknij na `Zatwierdź`{.action}, aby potwierdzić zlecenie.
-
-Jeśli wygenerowana zostanie kopia zapasowa, w [Panelu klienta OVHcloud](/links/manager) pojawi się następujący komunikat:
-
-![kopia zapasowa](/pages/assets/screens/control_panel/product-selection/web-cloud/cloud-web/ftp-ssh/message-backup-progress.png){.thumbnail}
-
-Tworzenie kopii zapasowej zajmuje od 10 do 15 minut.
-
-#### Etap 2 - Pobranie kopii zapasowej
-
-Po sfinalizowaniu tworzenia kopii zapasowej otrzymasz e-mail na adres e-mail powiązany z identyfikatorem administratora Twojego hostingu Cloud Web.<br>
 E-mail ten zawiera link do pobrania **ważny przez 9 dni** od otrzymania wiadomości e-mail:
 
-![kopia zapasowa](/pages/assets/screens/email-sending-to-customer/cloud-web/backup-information.png){.thumbnail}
+![E-mail z linkiem do pobrania kopii zapasowej](/pages/assets/screens/email-sending-to-customer/cloud-web/backup-information.png){.thumbnail}
 
 Pobrany plik jest w formacie *.tar.gz*.
 

@@ -65,7 +65,7 @@ El botón `Filtrar`{.action} permite filtrar la búsqueda por remitente (si hubi
 ![área de cliente Telecom SMS](images/smshistory5.png){.thumbnail}
  
 ### 2. Descargar el historial de sus SMS en CSV <a name="csv"></a>
- 
+
 Para descargar el historial de los SMS enviados en formato «.CSV», haga clic en el botón `Acciones`{.action} en la esquina superior izquierda y seleccione `Descargar`{.action}. 
  
 ![área de cliente Telecom SMS](images/smshistory6.png){.thumbnail}

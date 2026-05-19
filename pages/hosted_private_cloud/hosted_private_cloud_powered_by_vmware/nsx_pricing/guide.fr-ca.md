@@ -10,15 +10,25 @@ Cette documentation a pour but d'expliquer les options de configuration des NSX 
 
 ## Prérequis
 
-- Être connecté à l'[espace client OVHcloud](/links/manager) pour gérer vos NSX Edges.
 - Utiliser **VMware NSX 4.1.1** pour accéder aux options de personnalisation.
 - Avoir des connaissances de base sur les concepts de VMware et les fonctionnalités des NSX Edges.
+
+<!-- CP-NAV-START:privatecloud-vmware-vsphere -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [VMware vSphere](/links/control-panel/privatecloud-vmware-vsphere)
+- **Pour accéder à vos services :** `Hosted Private Cloud`{.action} > `Managed VMware vSphere`{.action} > Sélectionnez votre service vSphere
+
+---
+<!-- CP-NAV-END:privatecloud-vmware-vsphere -->
 
 ## Principe général
 
 ### Configuration par défaut
 
-Lors de la création d’un environnement VMware, OVHcloud fournit automatiquement :
+Lors de la création d'un environnement VMware, OVHcloud fournit automatiquement :
 
 - **2 NSX Edges Medium** :
     - 4 vCPU.
@@ -36,7 +46,7 @@ Vous pouvez adapter votre infrastructure en fonction de vos besoins spécifiques
     - XL : 16 vCPU, 64 Go RAM.
 2. **Nombre de NSX Edges** :
     - Minimum : 2 (configuration par défaut).
-    - Maximum : Jusqu’à **10 NSX Edges par cluster**.
+    - Maximum : Jusqu'à **10 NSX Edges par cluster**.
 
 ### Limitations
 
@@ -44,13 +54,12 @@ Vous pouvez adapter votre infrastructure en fonction de vos besoins spécifiques
 - **10 NSX Edges maximum par cluster** (limitation Broadcom/VMware).
 - Les versions NSX 4.0.1 ne supportent pas :
     - La commande de nouveaux vDC sous NSX 4.1.1.
-    - La modification ou l’ajout de NSX Edges.
+    - La modification ou l'ajout de NSX Edges.
 
 ## En pratique
 
 ### Étapes pour personnaliser les NSX Edges
 
-Connectez-vous à l'[espace client OVHcloud](/links/manager).<br>
 Depuis le tableau de bord Datacentres, accédez à votre datacentre puis cliquez sur l'onglet `NSX Edge Nodes`{.action}.
 
 1. **Commander de nouveaux NSX Edges** :
@@ -65,7 +74,7 @@ Depuis le tableau de bord Datacentres, accédez à votre datacentre puis cliquez
 
     > [!primary]
     >
-    > Toutes les Edges doivent être de la même taille : lorsqu’un Edge est ajouté, il sera automatiquement aligné sur la taille des autres Edges présents.
+    > Toutes les Edges doivent être de la même taille : lorsqu'un Edge est ajouté, il sera automatiquement aligné sur la taille des autres Edges présents.
 
 2. **Modifier la taille des NSX Edges existants** :
 
@@ -73,7 +82,7 @@ Depuis le tableau de bord Datacentres, accédez à votre datacentre puis cliquez
 
     ![Selecting an Edge to resize](images/resize-an-edge-01.png)
 
-    Sélectionnez l’Edge à modifier.
+    Sélectionnez l'Edge à modifier.
 
     Choisissez une nouvelle taille (Medium, Large ou XL) et appliquez les modifications en cliquant sur `Confirmer`{.action}.
 
@@ -81,17 +90,17 @@ Depuis le tableau de bord Datacentres, accédez à votre datacentre puis cliquez
 
 3. **Supprimer des NSX Edges inutilisés** :
 
-    Identifiez l’Edge à supprimer dans l'[espace client OVHcloud](/links/manager).
+    Identifiez l'Edge à supprimer.
 
     ![List of available NSX Edges](images/list-nsx-edges.png)
 
-    Cliquez sur `Supprimer`{.action} et confirmez l’action. 
+    Cliquez sur `Supprimer`{.action} et confirmez l'action.
 
     ![Deleting an NSX Edge](images/delete-nsx-edge.png)
 
     > [!primary]
     >
-    > L’Edge doit être en mode résilience avant suppression pour garantir l’absence de trafic en cours.
+    > L'Edge doit être en mode résilience avant suppression pour garantir l'absence de trafic en cours.
 
 ## Aller plus loin
 
@@ -99,6 +108,6 @@ Pour des informations détaillées sur les fonctionnalités des NSX Edges, consu
 
 Les tarifs associés aux NSX Edges ne sont pas inclus dans cette documentation. Pour connaître les détails tarifaires ou obtenir une estimation, rendez-vous sur le [site OVHcloud](/links/hosted-private-cloud/vmware-prices) ou contactez le support via le [centre d'aide](https://help.ovhcloud.com/csm?id=csm_get_help).
 
-Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](/links/professional-services) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
+Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](/links/professional-services) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l'équipe Professional Services.
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).

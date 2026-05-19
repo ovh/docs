@@ -1,7 +1,7 @@
 ---
 title: "Hébergement web - Comment utiliser FileZilla"
 excerpt: "Découvrez comment vous connecter à l'espace de stockage de votre hébergement web OVHcloud et gérer les données qu'il contient grâce au logiciel FileZilla"
-updated: 2025-09-12
+updated: 2026-03-31
 ---
 
 <style>
@@ -69,19 +69,32 @@ Il permet de mettre en ligne des fichiers ou votre site Internet en vous [connec
 
 ### 1 - Récupérer les informations de connexion à l'espace de stockage de l'hébergement web <a name="part-1"></a>
 
-Effectuez les actions suivantes :
+<!-- CP-STEPS-START:get-ftp-connection-info -->
+Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3** étapes.
 
-1. Connectez-vous à votre [espace client OVHcloud](/links/manager), puis rendez-vous dans la partie `Web Cloud`{.action}.
-2. Cliquez sur le menu `Hébergements`{.action}, puis choisissez l'hébergement web concerné.
-3. Sur la page qui s'affiche, cliquez sur l'onglet `FTP-SSH`{.action}. 
-4. Sur la nouvelle page, les informations liées à votre espace de stockage apparaissent. Récupérez-y les éléments suivants :
-    - Le `Serveur FTP et SFTP` représenté sous la forme suivante : `ftp.clusterXXX.hosting.ovh.net` (où chacun des 3 `X` correspond à un chiffre compris entre `0` et `9`).
-    - L'un des utilisateurs présents dans la colonne `Login` du tableau situé en bas de page. Vous pouvez aussi utiliser le `Login principal` si vous le souhaitez.
-    - Le numéro du `Port FTP` ou le numéro du `Port SFTP` en fonction du protocole de connexion que vous souhaiterez utiliser pour vous connecter à votre espace de stockage.
-
-> [!primary]
->
-> Pour des raisons de sécurité, le mot de passe d'un utilisateur n'apparaît pas sur la page de l'onglet `FTP-SSH`{.action}. Si vous l'avez oublié, consultez [ce guide](/pages/web_cloud/web_hosting/ftp_change_password) pour le modifier.
+> [!tabs]
+> **Étape 1**
+>>
+>> Accédez à la page [Hébergements](/links/control-panel/web-hosting), puis choisissez l'hébergement web concerné.
+>>
+>> ![Hébergements web](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Étape 2**
+>>
+>> Cliquez sur l'onglet `FTP - SSH`{.action}.
+>>
+> **Étape 3**
+>>
+>> Les informations liées à votre espace de stockage apparaissent. Récupérez les éléments suivants :
+>>
+>> - Le `Serveur FTP et SFTP` représenté sous la forme suivante : `ftp.clusterXXX.hosting.ovh.net` (où chacun des 3 `X` correspond à un chiffre compris entre `0` et `9`).
+>> - L'un des utilisateurs présents dans la colonne `Login` du tableau situé en bas de page. Vous pouvez aussi utiliser le `Login principal` si vous le souhaitez.
+>> - Le numéro du `Port FTP` ou le numéro du `Port SFTP` en fonction du protocole de connexion que vous souhaiterez utiliser pour vous connecter à votre espace de stockage.
+>>
+>> > [!primary]
+>> >
+>> > Pour des raisons de sécurité, le mot de passe d'un utilisateur n'apparaît pas sur la page de l'onglet `FTP - SSH`{.action}. Si vous l'avez oublié, consultez [ce guide](/pages/web_cloud/web_hosting/ftp_change_password) pour le modifier.
+<!-- CP-STEPS-END:get-ftp-connection-info -->
 
 ### 2 - Se connecter à l'espace de stockage de votre hébergement grâce à FileZilla
 
@@ -109,19 +122,7 @@ Le **SFTP** utilise, comme le SSH, le port 22 par défaut au lieu du port 21. Si
 
 **Verifier l'activation du protocole SFTP**
 
-Pour cela, retournez dans l'onglet `FTP-SSH`{.action} de votre [espace client OVHcloud](/links/manager) comme indiqué dans la [première partie](#part-1) de ce guide.
-
-Dans le tableau situé en bas de page, repérez la colonne `SFTP` afin de vérifier que l'utilisateur (présent dans la colonne `Login` du tableau) concerné dispose bien d'un accès SFTP actif. La mention `Désactivé` apparaît si ce n'est pas le cas.
-
-Si l'accès SFTP de l'utilisateur concerné est `Désactivé` dans le tableau, effectuez les opérations suivantes:
-
-- Pour les offres Perso, cochez la case située à gauche de la mention `Désactivé` dans le tableau.
-
-- Pour les offres Pro et Performance :
-
-    - 1 : Cliquez sur le bouton `...`{.action} à droite de la ligne correspondant à l'utilisateur, puis sur `Modifier`{.action}.
-    - 2 : Dans la fenêtre qui s'affiche, section `Protocoles de connexion`, sélectionnez le choix `FTP et SFTP`{.action}, puis cliquez sur `Suivant`{.action}.
-    - 3 : Vérifiez le résumé de la modification demandée, puis cliquez sur `Valider`{.action}.
+Pour cela, consultez notre guide « [Hébergement web - Comment activer l'accès SFTP](/pages/web_cloud/web_hosting/enable_sftp) ».
 
 **Se connecter en SFTP avec FileZilla**
 

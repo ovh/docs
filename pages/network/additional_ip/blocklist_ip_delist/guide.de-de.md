@@ -40,6 +40,17 @@ Beachten Sie, dass Blocklisten auch Domainnamen und IP-Adressen enthalten könne
 
 - Ihre Dienste sind derzeit nicht von einem Abuse-Verfahren betroffen.
 
+
+<!-- CP-NAV-START:network-public-ip -->
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direkter Link:** [Public IP](/links/control-panel/network-public-ip)
+- **Navigationspfad:** `Network`{.action} > `Öffentliche IP`{.action}
+
+---
+<!-- CP-NAV-END:network-public-ip -->
 ## In der praktischen Anwendung
 
 ### Unterstützte Anbieter
@@ -148,10 +159,10 @@ Das Entfernen von der Liste sollte zwischen 20 und 30 Minuten dauern.
 
 /// details | Weitere Informationen...
 
-Um [eine IP aus MIPSpace zu entfernen](https://www.mipspace.com/removal.php), loggen Sie sich zunächst im [OVHcloud Kundencenter](/links/manager) ein und stellen Sie sicher, dass die folgenden Informationen aktuell sind:
+Um [eine IP aus MIPSpace zu entfernen](https://www.mipspace.com/removal.php), stellen Sie sicher, dass die folgenden Informationen aktuell sind:
 
 - [DNS Reverse-Auflösung](/pages/bare_metal_cloud/virtual_private_servers/configuring-reverse-dns) (PTR-Eintrag).
-- Details Ihrer Organisation (*RWhois*) im Bereich `Network`{.action}: Öffnen Sie `IP`{.action} und klicken Sie dann rechts auf das `Zahnrad`{.action}. Wählen Sie im Dropdown-Menü `Meine Organisationen verwalten`{.action} aus.
+- Details Ihrer Organisation (*RWhois*): Wechseln Sie im Bereich [Öffentliche IP-Adressen](/links/control-panel/network-public-ip) Ihres OVHcloud Kundencenters zum Tab `Meine Organisationen verwalten`{.action}.
 
 ///
 

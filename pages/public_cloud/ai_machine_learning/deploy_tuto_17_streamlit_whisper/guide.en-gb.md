@@ -89,6 +89,7 @@ To do things more efficiently, it is better to save the model in a remote storag
 
 You can create your Object Storage bucket using either the UI (OVHcloud Control Panel) or the `ovhai` CLI, which can be downloaded [here](/pages/public_cloud/ai_machine_learning/cli_10_howto_install_cli).
 
+<!-- CP-STEPS-START:create-object-storage-bucket -->
 > [!tabs]
 > **Using the Control Panel (UI)**
 >>
@@ -123,6 +124,8 @@ You can create your Object Storage bucket using either the UI (OVHcloud Control 
 >> *`GRA` alias and `whisper-model` will be used in this tutorial.*
 >>
 >> For your information, the previous command is applicable to both Swift and S3* compatible Object Storage buckets. However, it's important to note that for S3 compatible usage, a proper configuration is necessary. If S3 compatible Object Storage is not configured yet and you wish to use it, please read the [S3 compatible compliance guide](/pages/public_cloud/ai_machine_learning/gi_08_s3_compliance).
+
+<!-- CP-STEPS-END:create-object-storage-bucket -->
 
 #### Download whisper in the created bucket
 

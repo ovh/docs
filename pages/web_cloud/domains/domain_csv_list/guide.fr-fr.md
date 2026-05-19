@@ -27,6 +27,7 @@ Vous souhaitez récupérer la liste de tous les noms de domaine présents sur vo
 
 ## En pratique
 
+<!-- CP-STEPS-START:export-csv -->
 Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3** étapes.
 
 > [!tabs]
@@ -55,6 +56,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3*
 >> ![Export domains in CSV format step 2 done](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/export-csv/export-domains-in-csv-format-step-2b.png){.thumbnail}
 >>
 >> Si le téléchargement du fichier CSV ne s'est pas lancé automatiquement, cliquez sur le lien `télécharger manuellement`{.action} afin de le récupérer.
+<!-- CP-STEPS-END:export-csv -->
 
 ## Aller plus loin
 

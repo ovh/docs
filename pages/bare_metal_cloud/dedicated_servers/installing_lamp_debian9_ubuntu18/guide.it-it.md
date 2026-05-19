@@ -1,6 +1,6 @@
 ---
-title: Tutorial - Installare un server Web (LAMP) su Debian o Ubuntu
-excerpt: "Come configurare un server Web LAMP"
+title: "Tutorial - Installare un server Web (LAMP) su Debian o Ubuntu"
+excerpt: "Installa un server web LAMP (Linux, Apache, MySQL, PHP) su un server dedicato Debian o Ubuntu passo dopo passo"
 updated: 2023-05-10
 ---
 
@@ -288,4 +288,4 @@ Cerbot rinnova automaticamente i certificati. Non sono necessari ulteriori passi
 
 [Documentazione NGINX](https://nginx.org/en/docs/) (alternativa Apache)
 
-Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.
+Contatta la nostra [Community di utenti](/links/community).

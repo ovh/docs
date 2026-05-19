@@ -27,6 +27,16 @@ The vRack Services product uses the concept of a subnet to define a range of pri
 3. **Service Endpoint**
 The Service Endpoint is your access point to the managed service. It is associated with a subnet and has one or more automatically assigned private IP addresses.
 
+<!-- CP-NAV-START:network-vrack-services -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [vRack Services](/links/control-panel/network-vrack-services)
+- **Navigation path:** `Network`{.action} > `vRack Services`{.action}
+
+---
+<!-- CP-NAV-END:network-vrack-services -->
 ## Instructions
 
 There are 3 steps to configure a Service Endpoint:

@@ -22,42 +22,32 @@ details[open]>summary::before {
 
 Ce guide vous détaille comment ajouter les droits de lecture à un utilisateur pour accéder à la console Web NSX-T de votre Hosted Private Cloud - VMware on OVHcloud.
 
-Ces droits sont accordés depuis l'[espace client OVHcloud](/links/manager).
-
 ## Prérequis
 
-- Avoir souscrit une offre [Hosted Private Cloud](/links/hosted-private-cloud/vmware) avec les options **"Network Security Virtualization"** ou **"Software-Defined Datacenter"** 
-- Etre connecté à l'[espace client OVHcloud](/links/manager)
+- Avoir souscrit une offre [Hosted Private Cloud](/links/hosted-private-cloud/vmware) avec les options **"Network Security Virtualization"** ou **"Software-Defined Datacenter"**
 - Être contact administrateur de l'infrastructure VMware sur OVHcloud, celui-ci recevant les identifiants de connexion.
 - Avoir suivi les étapes de cette documentation : [Premiers pas avec NSX](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/nsx-01-first-steps)
 
-## Instructions
+<!-- CP-NAV-START:privatecloud-vmware-vsphere -->
+---
 
-### Etape 1 - Accéder à votre Hosted Private Cloud
+### Accès à l'espace client OVHcloud
 
-<details>
+- **Lien direct :** [VMware vSphere](/links/control-panel/privatecloud-vmware-vsphere)
+- **Pour accéder à vos services :** `Hosted Private Cloud`{.action} > `Managed VMware vSphere`{.action} > Sélectionnez votre service vSphere
 
-<summary>Comment accéder à votre Hosted Private Cloud - VMware On OVHcloud ?</summary>
+---
+<!-- CP-NAV-END:privatecloud-vmware-vsphere -->
 
-Une fois connecté à l'espace client OVHcloud, cliquez sur l'onglet <code class="action">Hosted Private Cloud</code>.
-<br><br>
+## En pratique
 
-- Lien OVHcloud : https://www.ovh.com/manager/#/dedicated/dedicated_cloud/pcc-xxx-xxx-xxx-xxx > Remplacez-le par le nom de votre service VMware on OVHcloud.
-
-<p><img alt="NSX screenshot" class="thumbnail" src="images/nsx_user_rights_7.png" loading="lazy"></p>
-
-</details>
-
-### Etape 2 - Activer NSX-T
+### Etape 1 - Activer NSX-T
 
 <details>
 
 <summary>Comment activer l'interface NSX-T pour votre utilisateur ?</summary>
 
-Depuis la page précedente, éditez l'utilisateur avec lequel vous souhaitez accéder à l'interface Web NSX-T : 
-<br><br>
-
-<code class="action">VMware</code> > <code class="action">PCC-XXX.XXX.XXX.XXX</code> > <code class="action">Utilisateur</code> > <code class="action">Modifier</code> puis activez le bouton <code class="action">NSX Interface</code>.
+Cliquez sur [ce lien](/links/control-panel/privatecloud-vmware-vsphere) pour accéder à la section `VMware vSphere`{.action}, puis sélectionnez votre service et accédez à `Utilisateur`{.action} > `Modifier`{.action}. Activez le bouton `NSX Interface`{.action}.
 
 <p><img alt="NSX screenshot" class="thumbnail" src="images/nsx_user_rights_3.png" loading="lazy"></p>
 <p><img alt="NSX screenshot" class="thumbnail" src="images/nsx_user_rights_13.png" loading="lazy"></p>
@@ -65,24 +55,24 @@ Depuis la page précedente, éditez l'utilisateur avec lequel vous souhaitez acc
 
 </details>
 
-### Etape 3 - Ajouter les droits NSX-T
+### Etape 2 - Ajouter les droits NSX-T
 
 <details>
 <summary>Comment ajouter les droits pour votre utilisateur ?</summary>
 
-Cliquez sur : <code class="action">VMware</code> > <code class="action">PCC-XXX-XXX-XXX-XXX</code> > <code class="action">Utilisateur</code> > <code class="action">Modifier</code>.
+Cliquez sur [ce lien](/links/control-panel/privatecloud-vmware-vsphere) pour accéder à la section `VMware vSphere`{.action}, puis sélectionnez votre service et accédez à `Utilisateur`{.action} > `Modifier`{.action}.
 
 <p><img alt="NSX screenshot" class="thumbnail" src="images/nsx_user_rights_7.png" loading="lazy"></p>
 
 </details>
 
 
-### Etape 4 - Ajouter les droits NSX-T aux Datacentres
+### Etape 3 - Ajouter les droits NSX-T aux Datacentres
 
 <details>
 <summary>Comment ajoutez les droits aux Datacentres ?</summary>
 
-Il ne vous reste plus que à modifier les droits de chaque Datacenter souhaité en cliquant sur : <code class="action">VMware</code> > <code class="action">PCC-XXX-XXX-XXX-XXX</code> > <code class="action">Utilisateur</code> > <code class="action">Voir / Modifier les droits par DC</code> > <code class="action">Modifier</code>.
+Il ne vous reste plus qu'à modifier les droits de chaque Datacenter souhaité. Cliquez sur [ce lien](/links/control-panel/privatecloud-vmware-vsphere) pour accéder à la section `VMware vSphere`{.action}, puis sélectionnez votre service et accédez à `Utilisateur`{.action} > `Voir / Modifier les droits par DC`{.action} > `Modifier`{.action}.
 
 Une fenetre s'ouvre alors. Choisissez les droits nécessaires parmi les 3 sections principales > <code class="action">Accès vSphere</code> / <code class="action">Accès au vmNetwork</code> / <code class="action">Accès aux V(x)Lans</code>.
 
@@ -99,14 +89,12 @@ Si vous voulez faire des modifications dans l'interface Web NSX-T, des droits su
 
 </details>
 
-### Etape 5 - Accéder à l'interface NSX-T
+### Etape 4 - Accéder à l'interface NSX-T
 
 <details>
 <summary>Comment accéder à l'interface Web NSX-T ?</summary>
 
-Toujours depuis votre arborescence Hosted Private Cloud, cliquez sur <code class="action">VMware</code> > <code class="action">PCC-XXX-XXX-XXX-XXX</code>.
-<br><br>
-- Lien OVHcloud : https://www.ovh.com/manager/#/dedicated/dedicated_cloud/PCC-XXX-XXX-XXX-XXX > Remplacez PCC-XXX-XXX-XXX-XXX par le nom de votre service PCC.
+Cliquez sur [ce lien](/links/control-panel/privatecloud-vmware-vsphere) pour accéder à la section `VMware vSphere`{.action}, puis sélectionnez votre service.
 
 <p><img alt="NSX screenshot" class="thumbnail" src="images/nsx_user_rights_9.png" loading="lazy"></p>
 <p><img alt="NSX screenshot" class="thumbnail" src="images/nsx_user_rights_10.png" loading="lazy"></p>
@@ -115,7 +103,7 @@ Toujours depuis votre arborescence Hosted Private Cloud, cliquez sur <code class
 
 </details>
 
-### Etape 6 - Informations utiles
+### Etape 5 - Informations utiles
 
 Vous pouvez vérifier si NSX-T est activé sur votre Datacenter. Vous pouvez également retrouver votre URL NSX-T et sa version :
 

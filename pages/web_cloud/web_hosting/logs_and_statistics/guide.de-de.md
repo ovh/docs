@@ -1,7 +1,7 @@
 ---
 title: "Webhosting - Statistiken und Logs einer Website einsehen"
 excerpt: "Erfahren Sie hier, wie Sie die Statistiken und Logs Ihrer Website auf Ihrem Webhosting einsehen"
-updated: 2025-10-09
+updated: 2026-04-01
 ---
 
 ## Ziel
@@ -27,14 +27,15 @@ Der Zugriff auf die Logs und Statistiken Ihrer Website ist in Ihrem Webhosting-A
 
 ## In der praktischen Anwendung
 
+<!-- CP-STEPS-START:access-stats-and-logs -->
 Um die verschiedenen statistischen Daten und Logs Ihres Webhostings einzusehen, folgen Sie diesen Schritten. Klicken Sie auf die Tabs, um die **3** Schritte anzuzeigen.
 
 > [!tabs]
 > **Schritt 1**
 >>
->> Gehen Sie auf die Seite [Hosting-Pakete](/links/control-panel/web-hosting), und wählen Sie das betreffende Webhosting aus.
+>> Rufen Sie die Seite [Hosting-Pakete](/links/control-panel/web-hosting) auf und wählen Sie das betreffende Webhosting aus.
 >>
->> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>> ![Auswahl eines Webhostings im OVHcloud Kundencenter](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
 > **Schritt 2**
 >>
@@ -52,6 +53,7 @@ Um die verschiedenen statistischen Daten und Logs Ihres Webhostings einzusehen, 
 >> - [Verwaltung der Nutzer](#admin-user): Zeigt die Benutzer an, die Zugriff auf die Statistiken haben.
 >>
 >> ![statistics and logs interface](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/statistics-and-logs/tab.png){.thumbnail}
+<!-- CP-STEPS-END:access-stats-and-logs -->
 
 ### Statistiken der Seitenaufrufe <a name="website-stats"></a>
 
@@ -96,31 +98,63 @@ Es stehen verschiedene Arten von Logs zur Verfügung:
 
 > [!success]
 >
-> Um die Statistiken und/oder Logs des CDN einzusehen, lesen Sie unsere zugehörige Anleitung: „[Webhosting - CDN Statistiken und Logs einsehen](/pages/web_cloud/web_hosting/cdn_statistics_and_logs)“.
+> Um die Statistiken und/oder Logs des CDN einzusehen, lesen Sie unsere zugehörige Anleitung: „[Webhosting - CDN Statistiken und Logs einsehen](/pages/web_cloud/web_hosting/cdn_statistics_and_logs)".
 
 ### Infrastrukturstatistiken <a name="infra-stats"></a>
 
-In diesem Bereich finden Sie die Aktivität der Infrastruktur Ihres Webhostings, um den Verbrauch der Ihnen zur Verfügung gestellten Ressourcen einsehen zu können.
+<!-- CP-STEPS-START:view-infra-stats -->
+In diesem Bereich finden Sie die Aktivität der Infrastruktur Ihres Webhostings, um den Verbrauch der Ihnen zur Verfügung gestellten Ressourcen einsehen zu können. Klicken Sie auf die Tabs, um die **3** Schritte anzuzeigen.
 
-![infrastructure statistics](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/statistics-and-logs/infrastructure-statistics-graph.png){.thumbnail}
-
-Sie können verschiedene Diagrammtypen aus dem Dropdown-Menü oben links anzeigen:
-
-- **FTP Befehle**: Zeigt die wichtigsten Befehle (*Upload*, *Download*, *Login*, *Delete*) an, die über das FTP-Protokoll auf Ihrem Webhosting ausgeführt werden.
-- **HTTP-Anfragen**: Gibt die Anzahl und den Rückgabecode der HTTP-Anfragen an, die auf Ihrem Webhosting ausgeführt wurden, eingeteilt in die verschiedenen HTTP-Codes (2xx/3xx, 4xx und 5xx). Bei Bedarf können Sie die Liste der HTTP-Codes und deren Bedeutung direkt über eine Suchmaschine (Google, Yahoo!, Bing, etc.) abrufen.
-- **Ausgehende Verbindungen**: Anfragen von Ihrer Website nach extern.
-- **CPU-Verwendung**: CPU-Verbrauch Ihrer Webhosting-Instanz.
-- **Überschreitungen der Ressourcenobergrenzen**: Zeigt an, wann Ihr Webhosting sein Ressourcenkontingent überschreitet.
-- **SQL Requests**: Anzahl der Anfragen an die Datenbanken Ihres Webhostings.
-- **SQL-Antwortzeiten**: Antwortzeit der Anfragen an die Datenbanken Ihres Webhostings.
+> [!tabs]
+> **Schritt 1**
+>>
+>> Rufen Sie die Seite [Hosting-Pakete](/links/control-panel/web-hosting) auf und wählen Sie das betreffende Webhosting aus.
+>>
+>> ![Auswahl eines Webhostings im OVHcloud Kundencenter](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Schritt 2**
+>>
+>> Klicken Sie auf der angezeigten Seite auf den Tab `Statistiken und Logs`{.action} und gehen Sie in den Abschnitt **Infrastrukturstatistiken**.
+>>
+> **Schritt 3**
+>>
+>> Sie können verschiedene Diagrammtypen aus dem Dropdown-Menü oben links anzeigen:
+>>
+>> ![Infrastrukturstatistiken des Webhostings](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/statistics-and-logs/infrastructure-statistics-graph.png){.thumbnail}
+>>
+>> - **FTP Befehle**: Zeigt die wichtigsten Befehle (*Upload*, *Download*, *Login*, *Delete*) an, die über das FTP-Protokoll auf Ihrem Webhosting ausgeführt werden.
+>> - **HTTP-Anfragen**: Gibt die Anzahl und den Rückgabecode der HTTP-Anfragen an, die auf Ihrem Webhosting ausgeführt wurden, eingeteilt in die verschiedenen HTTP-Codes (2xx/3xx, 4xx und 5xx).
+>> - **Ausgehende Verbindungen**: Anfragen von Ihrer Website nach extern.
+>> - **CPU-Verwendung**: CPU-Verbrauch Ihrer Webhosting-Instanz.
+>> - **Überschreitungen der Ressourcenobergrenzen**: Zeigt an, wann Ihr Webhosting sein Ressourcenkontingent überschreitet.
+>> - **SQL Requests**: Anzahl der Anfragen an die Datenbanken Ihres Webhostings.
+>> - **SQL-Antwortzeiten**: Antwortzeit der Anfragen an die Datenbanken Ihres Webhostings.
+<!-- CP-STEPS-END:view-infra-stats -->
 
 ### Verwaltung der Nutzer <a name="admin-user"></a>
 
 Die Erstellung eines Benutzers ermöglicht es einer Person, auf die Statistiken Ihres Webhostings zuzugreifen, ohne Zugriff auf Ihr OVHcloud Kundencenter zu haben.
 
-Klicken Sie im Bereich `Verwaltung der Nutzer`{.action} auf `Einen neuen Nutzer erstellen`{.action} und folgen Sie den Anweisungen, um die Erstellung eines neuen Benutzers abzuschließen.
+<!-- CP-STEPS-START:create-stats-user -->
+Um einen neuen Benutzer zu erstellen, klicken Sie auf die Tabs, um die **3** Schritte anzuzeigen.
 
-![create a new user](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/statistics-and-logs/create-a-new-user.png){.thumbnail}
+> [!tabs]
+> **Schritt 1**
+>>
+>> Rufen Sie die Seite [Hosting-Pakete](/links/control-panel/web-hosting) auf und wählen Sie das betreffende Webhosting aus.
+>>
+>> ![Auswahl eines Webhostings im OVHcloud Kundencenter](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Schritt 2**
+>>
+>> Klicken Sie auf der angezeigten Seite auf den Tab `Statistiken und Logs`{.action} und gehen Sie in den Abschnitt **Verwaltung der Nutzer**.
+>>
+> **Schritt 3**
+>>
+>> Klicken Sie auf `Einen neuen Nutzer erstellen`{.action} und folgen Sie den Anweisungen, um die Erstellung abzuschließen.
+>>
+>> ![Erstellung eines neuen Benutzers für die Statistiken](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/statistics-and-logs/create-a-new-user.png){.thumbnail}
+<!-- CP-STEPS-END:create-stats-user -->
 
 Um mit einem von Ihnen erstellten Benutzer auf die Statistiken Ihrer Website zuzugreifen, müssen Sie die folgende Adresse eingeben und `000` durch die Nummer des Clusters Ihres Webhostings und `domain.tld` durch den Domainnamen Ihrer Website ersetzen (ohne `www`):
 
@@ -128,24 +162,32 @@ Um mit einem von Ihnen erstellten Benutzer auf die Statistiken Ihrer Website zuz
 https://logs.cluster000.hosting.ovh.net/domain.tld/
 ```
 
-Sie können auch direkt über Ihr Kundencenter den Zugangslink zu den Statistiken und Logs abrufen:
+<!-- CP-STEPS-START:retrieve-stats-link -->
+Sie können auch direkt über Ihr Kundencenter den Zugangslink zu den Statistiken und Logs abrufen. Klicken Sie auf die Tabs, um die **3** Schritte anzuzeigen.
 
-1. Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein.
-2. Klicken Sie auf den Tab `Web Cloud`{.action}.
-3. Klicken Sie in der linken Spalte auf `Hosting-Pakete`{.action}.
-4. Wählen Sie das betreffende Webhosting aus.
-5. Klicken Sie auf der angezeigten Seite auf den Tab `Statistiken und Logs`{.action}.
-6. Gehen Sie in den Bereich `Statistiken der Seitenaufrufe`{.action}.
-7. Wählen Sie die Schaltfläche `Die Statistiken anzeigen`{.action}.
-
-![website visit statistics](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/statistics-and-logs/view-statistics.png){.thumbnail}
-
-Rufen Sie auf der neu geöffneten Seite die URL in der Adresszeile Ihres Browsers ab.
+> [!tabs]
+> **Schritt 1**
+>>
+>> Rufen Sie die Seite [Hosting-Pakete](/links/control-panel/web-hosting) auf und wählen Sie das betreffende Webhosting aus.
+>>
+>> ![Auswahl eines Webhostings im OVHcloud Kundencenter](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Schritt 2**
+>>
+>> Klicken Sie auf der angezeigten Seite auf den Tab `Statistiken und Logs`{.action} und gehen Sie in den Abschnitt **Statistiken der Seitenaufrufe**.
+>>
+> **Schritt 3**
+>>
+>> Klicken Sie auf die Schaltfläche `Die Statistiken anzeigen`{.action}.
+>>
+>> ![Besucherstatistiken der Website](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/statistics-and-logs/view-statistics.png){.thumbnail}
+>>
+>> Rufen Sie auf der neu geöffneten Seite die URL in der Adresszeile Ihres Browsers ab.
+<!-- CP-STEPS-END:retrieve-stats-link -->
 
 > [!warning]
 >
-> Wenn Sie separate Logs für einen [Multisite-Eintrag](/pages/web_cloud/web_hosting/multisites_configure_multisite) aktiviert haben, können die hier erstellten Benutzer nicht auf die Statistiken für diesen spezifischen Multisite-Eintrag zugreifen.
->
+> Wenn Sie separate Logs für eine Ihrer [Websites](/pages/web_cloud/web_hosting/multisites_configure_multisite) aktiviert haben, können die hier erstellten Benutzer nicht auf die Statistiken dieser spezifischen Website zugreifen.
 
 ## Weiterführende Informationen
 

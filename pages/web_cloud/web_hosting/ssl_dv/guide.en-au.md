@@ -83,6 +83,7 @@ To check if this is the case, please refer to our guides below:
 
 ### Order the Sectigo DV SSL certificate
 
+<!-- CP-STEPS-START:order-sectigo-dv -->
 Click on the tabs below to view each of the **4** steps.
 
 > [!tabs]
@@ -111,6 +112,7 @@ Click on the tabs below to view each of the **4** steps.
 >> ![SSL Sectigo domain selection](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ssl-certificates/order-a-sectigo-ssl-certificate-select-domain.png){.thumbnail}
 >>
 >> Proceed with the order until you pay in order to validate the request to create the Sectigo DV SSL certificate for your domain name and/or subdomain on your Web Hosting plan.
+<!-- CP-STEPS-END:order-sectigo-dv -->
 
 > [!alert]
 >
@@ -122,6 +124,7 @@ It may take up to **24** hours to install the Sectigo DV SSL certificate.
 
 ### Check the activation of the Sectigo DV SSL certificate
 
+<!-- CP-STEPS-START:check-sectigo-dv -->
 To verify that the installation is complete, click on the tabs below to view each of the **3** steps.
 
 > [!tabs]
@@ -142,6 +145,7 @@ To verify that the installation is complete, click on the tabs below to view eac
 >> When the content of the tab appears, check that each domain name and/or subdomain concerned is listed in the table with the certificate type SSL `Sectigo`.
 >>
 >> ![SSL certificate management panel](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ssl-certificates/tab.png){.thumbnail}
+<!-- CP-STEPS-END:check-sectigo-dv -->
 
 Your Sectigo DV SSL certificate is now installed and active. You can now use it with your web hosting and, for example, [enable HTTPS for your website](/pages/web_cloud/web_hosting/ssl-activate-https-website).
 

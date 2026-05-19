@@ -43,13 +43,13 @@ Ce guide vous explique comment basculer une Additional IP d'une instance à une 
 
 Dans le menu de gauche, rendez-vous dans la section **Network** puis ouvrez `IP Publiques`{.action}. Cliquez sur l’onglet `Additional IP`{.action}.
 
-Dans cet exemple, l'adresse Additional IP routée vers "Instance_A" sera migrée vers "Instance_B".
+Dans cet exemple, l’adresse Additional IP routée vers "Instance_A" sera migrée vers "Instance_B".
 
-Cliquez sur `...`{.action} dans la ligne de l'Additional IP et sélectionnez `Modifier l'instance associée`{.action}.
+Cliquez sur `...`{.action} dans la ligne de l’Additional IP et sélectionnez `Modifier l’instance associée`{.action}.
 
 ![migrating Additional IP](images/migrateip_01.png){.thumbnail}
 
-Cliquez sur le menu déroulant pour choisir l'instance de destination dans la liste.
+Cliquez sur le menu déroulant pour choisir l’instance de destination dans la liste.
 
 ![migrating Additional IP](images/migrateip_02.png){.thumbnail}
 

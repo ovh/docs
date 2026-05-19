@@ -1,7 +1,7 @@
 ---
 title: Object Storage - Smart Storage Management with Lifecycle Rules
 excerpt: Learn how to optimise your OVHcloud Object Storage costs by configuring lifecycle rules for automatic expiration, transition, and cleanup of objects
-updated: 2026-03-06
+updated: 2026-04-08
 ---
 
 <style>
@@ -520,7 +520,7 @@ The following is the basic structure of a lifecycle configuration JSON containin
 
 | Attribute                                            | Required | Description 
 | ---------------------------------------------------- | -------- | ------------
-| Transitions                                          | yes*     | An array of lifecycle operations that automatically copy all selected objects from their current storage tier to a most-effective storage tier. |
+| Transitions                                          | yes*     | An array of lifecycle operations that automatically copy all selected objects (current versions only, if versioning is enabled) from their current storage tier to the most effective storage tier. |
 | Transitions.Date                                     | no*      | Indicates the date when the objects are to be transitioned. The date value must be in the ISO 8601 date format and the time must always be set to midnight UTC. <br><br> ⚠️ This attribute is not mandatory if Days is present. <br> ⚠️ this attribute is mutually exclusive with Days i.e you either have Date or Days but you cannot specify both. |
 | Transitions.Days                                     | yes*     | Indicates the duration in days after which the objects are to be transitioned. The value must be an integer equal to or greater than 30. <br><br> ⚠️ This attribute is mandatory if Date is not present. <br> ⚠️ this attribute is mutually exclusive with Date i.e you either have Date or Days but you cannot specify both. |
 | Transitions.StorageClass                             | yes      | Indicates the target Storage class. Currently, only "STANDARD" is available. |

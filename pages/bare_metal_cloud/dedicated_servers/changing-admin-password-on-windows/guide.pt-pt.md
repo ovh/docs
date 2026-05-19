@@ -1,6 +1,6 @@
 ---
-title: 'Alterar a palavra-passe administrador num servidor dedicado Windows'
-excerpt: 'Saiba como alterar a palavra-passe de um administrador num servidor dedicado Windows'
+title: "Alterar a palavra-passe administrador num servidor dedicado Windows"
+excerpt: "Reinicialize a palavra-passe de administrador num servidor dedicado Windows através do modo rescue OVHcloud em caso de perda"
 updated: 2024-06-26
 flag: hidden
 ---

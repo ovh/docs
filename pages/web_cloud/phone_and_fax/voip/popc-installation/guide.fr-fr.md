@@ -45,6 +45,7 @@ Vous devez disposer des trois informations suivantes afin de pouvoir enregistrer
 
 #### Login et domain
 
+<!-- CP-STEPS-START:sip-login-domain -->
 Afin de retrouver votre **login** et votre **domain**, suivez les étapes ci-dessous.
 
 Dans l'onglet `Gestion`{.action}, cliquez sur `Informations générales`{.action}.
@@ -59,6 +60,7 @@ Vous retrouvez alors, dans le cadre « Informations SIP », votre **login** et v
 >
 > Dans l'image ci-dessus, le domain renseigné l'est à titre d'exemple. Veillez à bien vérifier quel **domain** est associé à votre ligne SIP.
 >
+<!-- CP-STEPS-END:sip-login-domain -->
 
 #### Mot de passe SIP
 
