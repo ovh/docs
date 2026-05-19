@@ -1,7 +1,7 @@
 ---
 title: Public Cloud Network Services - Known limits (EN)
 excerpt: 'Requirements and limits to respect'
-updated: 2024-11-12
+updated: 2026-05-05
 ---
 
 ## vRack and Public Cloud projects
@@ -68,6 +68,14 @@ openstack port list --network <PRIVATE_NETWORK_UID> --device-owner network:dhcp
 | 738e3c59-439d-4eed-bded-c7c301717a8c |      | fa:16:3e:62:32:5e | ip_address='10.0.0.128', subnet_id='578deb7c-211f-4f0f-8e45-c8ed07b3e16b' | ACTIVE |
 +--------------------------------------+------+-------------------+---------------------------------------------------------------------------+--------+
 ```
+
+## OpenStack Router and Floating IP routing conflict
+
+The Ext-Net network uses the reserved subnet `172.31.0.0/17` internally for gateway ports on compute nodes that handle Floating IPs locally. If a private customer subnet overlaps with this range, routing conflicts may occur and prevent Floating IP traffic from working correctly.
+
+> [!warning]
+>
+> Avoid using any CIDR within the `172.31.0.0/17` range for your private subnets when Floating IPs are in use. Use a different private address range (e.g. `10.0.0.0/8` or `192.168.0.0/16`) to prevent routing conflicts.
 
 ## We want your feedback!
 
