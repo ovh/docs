@@ -1,7 +1,7 @@
 ---
 title: "Web Hosting - Gérer vos sites WordPress avec MainWP"
 excerpt: "Gérez vos sites WordPress en masse depuis MainWP, inclus dans le Managed Hosting : mises à jour, actions groupées et surveillance centralisée."
-updated: 2026-05-13
+updated: 2026-05-19
 ---
 
 ## Objectif
@@ -10,6 +10,8 @@ updated: 2026-05-13
 
 > [!primary]
 > MainWP est un outil tiers, indépendant d'OVHcloud. OVHcloud héberge et met à disposition l'accès à l'interface MainWP, mais n'assure pas le support fonctionnel de l'outil. Pour toute question avancée sur les fonctionnalités MainWP, consultez la [documentation officielle MainWP](https://docs.mainwp.com/).
+
+**Découvrez comment gérer vos sites WordPress grâce à MainWP.**
 
 ## Prérequis
 
@@ -32,33 +34,33 @@ updated: 2026-05-13
 
 - **Sélectionner votre ressource** : identifiez la ressource à gérer dans la liste affichée.
 
-![Vue de la ressource Managed Hosting for WordPress avec le lien MainWP Admin](images/managed-hosting-overview.png)
+![Vue de la ressource Managed Hosting for WordPress avec le bouton Gérer mes sites](images/managed-hosting-overview.png){.thumbnail}
 
 - **Accéder aux informations de la ressource** : cliquez sur `Gérer`{.action} sous la ressource concernée. La page **Informations générales** s'affiche avec les détails de votre offre (abonnement, quotas, contacts).
 
-![Page Informations générales de la ressource avec le bouton Gérer mes sites en haut à droite](images/mainwp-access.png)
+![Page Informations générales de la ressource avec le bouton Gérer mes sites en haut à droite](images/mainwp-access.png){.thumbnail}
 
 - **Lancer MainWP** : cliquez sur `Gérer mes sites`{.action} en haut à droite. L'interface MainWP s'ouvre dans un nouvel onglet.
 
-> [!info]
-> L'accès à MainWP se fait via un lien direct depuis l'espace client. Aucune installation supplémentaire n'est nécessaire : MainWP est préinstallé sur votre ressource Managed Hosting for WordPress.
+> [!primary]
+> Accédez à MainWP via le lien direct présent dans l'espace client. Aucune installation supplémentaire n'est nécessaire : MainWP est préinstallé sur votre ressource Managed Hosting for WordPress.
 
 ### 2. Comprendre l'interface MainWP
 
-L'interface MainWP est organisée autour de deux concepts principaux :
+L'interface MainWP est organisée autour de 2 concepts principaux :
 
 - **Tableau de bord (Dashboard)** : vue centrale listant tous vos sites connectés avec leur état.
 - **Sites enfants (Child Sites)** : chacun de vos sites WordPress gérés via MainWP.
 
 <!-- DRAFT: To screenshot — capturer le tableau de bord MainWP avec la liste des sites connectés, les indicateurs d'état (mises à jour disponibles, statut de connexion) et le menu latéral -->
 
-Le tableau de bord regroupe trois zones principales :
+Le tableau de bord regroupe 3 zones principales :
 
 - **Liste des sites** : affiche tous vos sites WordPress avec leur statut (en ligne/hors ligne, mises à jour disponibles).
 - **Indicateurs d'état** : nombre de mises à jour en attente (WordPress core, extensions, thèmes).
 - **Menu latéral** : navigation vers les sections Sites, Mises à jour, Extensions, Sécurité, etc.
 
-### 3. Gérer vos sites — actions individuelles
+### 3. Gérer vos sites WordPress — actions individuelles
 
 #### 3.1 Accéder à l'administration d'un site
 
@@ -76,11 +78,11 @@ Le tableau de bord regroupe trois zones principales :
 - **Mettre à jour** : cliquez sur `Mettre à jour`{.action} en face de chaque élément, ou `Tout mettre à jour`{.action} pour appliquer toutes les mises à jour en une fois.
 
 > [!warning]
-> Effectuez un backup ou un snapshot de votre site avant toute mise à jour majeure. Certaines mises à jour d'extensions peuvent provoquer des incompatibilités. Consultez le guide **Backup & Snapshot** <!-- TODO: link target --> pour créer un point de restauration.
+> Effectuez un backup ou un snapshot de votre site avant toute mise à jour majeure. Certaines mises à jour d'extensions peuvent provoquer des incompatibilités. Consultez le guide « [Sauvegarder ses sites web WordPress avec MainWP](/pages/web_cloud/web_hosting/mainwp-backup) » pour créer un point de restauration.
 
 ### 4. Actions groupées (bulk actions)
 
-Les actions groupées appliquent une opération à plusieurs sites simultanément, sans avoir à la répéter pour chacun.
+Les actions groupées appliquent une opération à plusieurs sites WordPress simultanément, sans avoir à la répéter pour chacun.
 
 <!-- DRAFT: To screenshot — capturer l'interface de sélection multiple dans MainWP (cases à cocher devant chaque site) et le menu déroulant des actions groupées disponibles -->
 
@@ -118,14 +120,14 @@ Les actions groupées appliquent une opération à plusieurs sites simultanémen
 - **Activer un thème** sur les sites sélectionnés.
 - **Publier du contenu** (article ou page) sur plusieurs sites.
 
-> [!info]
+> [!primary]
 > Certaines actions avancées (rapports clients, monitoring de sécurité avancé, sauvegardes automatisées) nécessitent des **extensions MainWP** (premium). Consultez la [liste des extensions MainWP](https://docs.mainwp.com/).
 
 ### 5. Comment surveiller l'état de vos sites ?
 
 <!-- DRAFT: To screenshot — capturer le tableau de bord MainWP avec les indicateurs de statut : sites en ligne/hors ligne, nombre de mises à jour en attente par catégorie, alertes de sécurité éventuelles -->
 
-MainWP affiche en permanence l'état de santé de vos sites :
+MainWP affiche l'état de santé de vos sites en temps réel :
 
 - **Site en ligne (vert)** : le site répond correctement.
 - **Site hors ligne (rouge)** : le site est inaccessible, ou la connexion MainWP est perdue.
@@ -144,7 +146,12 @@ MainWP affiche en permanence l'état de santé de vos sites :
 
 ## Aller plus loin
 
-- [Documentation officielle MainWP](https://docs.mainwp.com/) — guides, extensions et FAQ.
-- **Premiers pas avec le Managed Hosting for WordPress** <!-- TODO: link target --> — accès, informations et gestion des sites.
-- **Gérer les backups et snapshots** <!-- TODO: link target --> — sauvegarder avant une mise à jour.
-- Échangez avec notre [communauté d'utilisateurs](/links/community).
+[Documentation officielle MainWP](https://docs.mainwp.com/) — guides, extensions et FAQ.
+
+[Premiers pas avec le Managed Hosting for WordPress](/pages/web_cloud/managed_hosting/01-managed-wordpress-getting-started) — accès, informations et gestion des sites WordPress.
+
+[Sauvegarder ses sites web WordPress avec MainWP](/pages/web_cloud/web_hosting/mainwp-backup)
+
+Pour des prestations spécialisées (référencement, développement, etc.), contactez les [partenaires OVHcloud](/links/partner).
+
+Échangez avec notre [communauté d'utilisateurs](/links/community).
