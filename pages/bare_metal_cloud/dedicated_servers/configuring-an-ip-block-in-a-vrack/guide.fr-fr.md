@@ -164,7 +164,7 @@ Certaines régions OVHcloud s'étendent sur trois zones de disponibilité (AZ) h
 
 #### Mécanique et gestion des priorités
 
-Lorsqu'un vRack est rattaché pour la première fois à une région 3-AZ, OVHcloud lui attribue aléatoirement une **zone de disponibilité principale**. La zone principale est affichée dans la tuile correspondante de l'onglet `Connectivité IP publique`{.action}, dans la sous-section `Priorités de basculement 3-AZ`, juste au-dessus d'un bouton `Configurer`{.action}. Les deux AZ restantes sont attribuées comme **Zone de disponibilité secondaire** et **Zone de dernier recours**.
+Lorsqu'un vRack est rattaché pour la première fois à une région 3-AZ, OVHcloud attribue aléatoirement un ordre de priorité à ses zones de disponibilité. Les **zones principale, secondaire et de dernier recours** sont affichées dans cet ordre sous l'onglet `Connectivité IP publique`{.action}, sur la tuile correspondant à la région 3-AZ, dans la sous-section `Priorités de basculement 3-AZ`, juste au-dessus du bouton `Configurer`{.action}.
 
 Vous pouvez modifier cette attribution à tout moment, par exemple pour aligner les priorités de basculement sur la disposition AZ des autres composants de votre infrastructure.
 

@@ -164,7 +164,7 @@ Some OVHcloud regions span three Availability Zones (AZs) hosted in physically i
 
 #### Mechanics and priority management
 
-When a vRack is first associated with a 3-AZ region, OVHcloud assigns a **Primary Availability Zone** to it at random. The Primary Zone is displayed in the corresponding region tile on the `Public IP routing`{.action} tab, in the `3-AZ failover priorities` subsection, right above a `Configure`{.action} button. The two remaining AZs are assigned as **Secondary Zone** and **Last resort Zone**.
+When a vRack is first associated with a 3-AZ region, OVHcloud assigns a random priority order to its availability zones. The **Primary**, **Secondary**, and **Last resort** zones are displayed in order of priority in the corresponding region tile on the `Public IP routing`{.action} tab, within the `3-AZ failover priorities` subsection, right above a `Configure`{.action} button.
 
 You can override this random assignment at any time, for example to align failover priorities with the AZ layout of other components attached to your infrastructure.
 
