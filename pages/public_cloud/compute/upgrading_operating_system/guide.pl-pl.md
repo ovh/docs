@@ -136,7 +136,7 @@ Sprawdź, czy Twoje aplikacje działają zgodnie z planem. W przypadku problemu 
 Przed rozpoczęciem aktualizacji głównej wersji systemu operacyjnego upewnij się, że aktualizujesz najnowsze wersje wszystkich pakietów zainstalowanych w jego obecnej wersji. Wprowadź to polecenie:
 
 ```sh
-$ sudo dnf upgrade —refresh
+$ sudo dnf upgrade --refresh
 ```
 
 Następnie zrestartuj serwer:

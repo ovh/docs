@@ -14,7 +14,7 @@ Diese Funktion bietet viele Möglichkeiten, birgt aber auch Risiken. Es ist also
 
 Wenn Sie z.B. ein Image aus Projekt A für Projekt B freigeben möchten (unter demselben oder einem anderen Account), gelten die folgenden Regeln:
 
-- Ein Image kamm nur innerhalb einer Region freigegeben werden. Ein in Projekt A in der Region GRA11 erstelltes Image ist beispielsweise nur für Projekt B in derselben Region (GRA11) verfügbar.
+- Ein Image kann nur innerhalb einer Region freigegeben werden. Ein in Projekt A in der Region GRA11 erstelltes Image ist beispielsweise nur für Projekt B in derselben Region (GRA11) verfügbar.
 - Das Image bleibt physisch an Projekt A angehängt. Das Projekt B verfügt nur über eine Zugriffsberechtigung (*access authorization*) für dieses Image.
 - Wenn Projekt A den Zugriff auf das Image unterdrückt (Löschen der ACL, Löschen des Images, Löschen des Projekts aufgrund ausstehender Zahlungen, etc.), funktionieren Instanzen, die von diesem Image aus in Projekt B ausgeführt werden, möglicherweise wegen Problemen bei Migration oder Rebuild nicht mehr.
 

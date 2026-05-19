@@ -112,4 +112,4 @@ Im oben stehenden Beispiel kann über diese temporäre Adresse für 60 Sekunden 
 
 ## Weiterführende Informationen
 
-Für den Austausch mit unserer Community gehen Sie auf <https://community.ovh.com/en/>.
+Treten Sie unserer [User Community](/links/community) bei.

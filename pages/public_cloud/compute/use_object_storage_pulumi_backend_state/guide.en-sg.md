@@ -64,7 +64,7 @@ A state is composed of several files inside a `.pulumi` folder:
 - `meta.yaml`: This is the metadata file. It does not hold information about the stacks but rather information about the backend itself.
 - `stacks/`: Active state files for each stack (e.g. `dev.json`).
 - `locks/`: Optional lock files for each stack if the stack is currently being operated on by a Pulumi operation (e.g. `dev/$lock.json`).
-- `history/`: History for each stack (e.g. `dev/dev-$timestamp.history.json`vwhere $timestamp records the time the history file was created).
+- `history/`: History for each stack (e.g. `dev/dev-$timestamp.history.json` where $timestamp records the time the history file was created).
 
 ## Instructions
 

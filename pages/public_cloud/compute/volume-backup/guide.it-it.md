@@ -59,10 +59,10 @@ A destra del volume, clicca sul pulsante `...`{.action} e poi su `Crea un backup
 
 Seleziona il volume da cui desideri creare un backup.
 
-Seleziona quindi il tipo di backup che vuoi creare: **Volume Snapshot** ou **Volume Backup**.
+Seleziona quindi il tipo di backup che vuoi creare: **Volume Snapshot** o **Volume Backup**.
 
 - Scegliendo **Volume Snapshot**, hai la possibilità di modificare il nome del Volume Snapshot da creare prima di confermare cliccando su `Creare il backup`{.action}.
-- Selezionando **Volume Backup**, ti verrà chiesto di scollegare il volume dall'istanza per poter continuare. È possibile modificare il nome del Volume Snapshot da creare prima di confermare il mount `Creare il backup`{.action}.
+- Selezionando **Volume Backup**, ti verrà chiesto di scollegare il volume dall'istanza per poter continuare. È possibile modificare il nome del Volume Snapshot da creare prima di confermare cliccando su `Creare il backup`{.action}.
 
 ![Volume Backup o Snapshot - creazione](images/volumebackup02.png){.thumbnail}
 
@@ -106,4 +106,4 @@ Per maggiori informazioni, consulta la [nostra guida sulla creazione di un volum
 
 [Aumenta la dimensione di un disco aggiuntivo](/pages/public_cloud/compute/increase_the_size_of_an_additional_disk)
 
-Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.
+Contatta la nostra [Community di utenti](/links/community).

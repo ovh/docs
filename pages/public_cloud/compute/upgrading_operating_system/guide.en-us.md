@@ -155,7 +155,7 @@ $ sudo dnf system-upgrade reboot
 ```
 
 Once the version is downloaded and the upgrade process has been initiated, the server will reboot to complete the upgrade.
-<br>It may take a while before you an connect again to the server as the upgrade takes a while to be completed.
+<br>It may take a while before you can connect again to the server as the upgrade takes a while to be completed.
 
 Verify if your applications are working as expected. In case there are issues, we recommend [restoring your backup](/pages/public_cloud/compute/create_restore_a_virtual_server_with_a_backup) that was taken prior to the upgrade.
 

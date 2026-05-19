@@ -112,4 +112,4 @@ Powyższy przykład pokazuje, że adres tymczasowy pozwala pobrać plik **file**
 
 ## Sprawdź również
 
-Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.
+Dołącz do [grona naszych użytkowników](/links/community).

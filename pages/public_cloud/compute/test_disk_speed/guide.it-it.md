@@ -19,7 +19,7 @@ Eseguire un test della velocità dei tuoi dischi è necessario per confrontare l
 
 ### Installare il comando di test
 
-Il comando necessario per verificare la velocità del disco si chiama `fio` Non è presente di default sul tuo server.
+Il comando necessario per verificare la velocità del disco si chiama `fio`. Non è presente di default sul tuo server.
 
 Per installare `fio`, connettiti all'istanza in SSH ed esegui il comando:
 

@@ -54,7 +54,7 @@ Também pode implementar um sistema operativo de e para um volume. A instância 
 >> | Volume Name | Especifique um nome para o volume |
 >> | Description | Facultativo, fornecer uma breve descrição do volume |
 >> | Volume Source | Escolha a opção `Image`.<br><br> ![public-cloud](images/create-a-volume-3.png){.thumbnail} |
->> Use image as a source | Pode selecionar a imagem na lista.<br><br> ![public-cloud](images/create-a-volume-4.png){.thumbnail} |
+>> | Use image as a source | Pode selecionar a imagem na lista.<br><br> ![public-cloud](images/create-a-volume-4.png){.thumbnail} |
 >> | Type | Depende do tipo de volume que pretende utilizar |
 >> | Size (GB) | Tamanho do volume em gigabytes (GiB) |
 >> | Availability Zone | nova <br><br> ![public-cloud](images/create-a-volume-5.png){.thumbnail} |

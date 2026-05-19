@@ -96,13 +96,13 @@ $ sudo apt-get update
 Danach führen Sie ein Update Ihrer installierten Pakete auf deren aktuellste Versionen durch:
 
 ```sh
-$ sudo apt get upgrade -y
+$ sudo apt-get upgrade -y
 ```
 
 Wenn Sie diese Operation abgeschlossen haben, führen Sie ein Distributionsupgrade durch, bei dem weitere Aktualisierungen durchgeführt werden, die eventuell notwendig sind:
 
 ```sh
-$ sudo apt-get dist upgrade -y
+$ sudo apt-get dist-upgrade -y
 ```
 
 Die neue Version kann anschließend installiert werden. Ubuntu stellt ein Tool namens *do-release-upgrade* zur Verfügung, das dieses Update sicherer und einfacher macht. Starten Sie das Update mit folgendem Befehl:
@@ -173,4 +173,4 @@ Sobald die Version heruntergeladen wurde und der Update-Prozess gestartet wurde,
 
 ## Weiterführende Informationen
  
-Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.
+Treten Sie unserer [User Community](/links/community) bei.

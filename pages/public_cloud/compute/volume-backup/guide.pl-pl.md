@@ -92,7 +92,7 @@ Po otrzymaniu wniosku o utworzenie wolumenu Backup zostaje on dodany do listy.
 
 ![Kopia zapasowa - lista](images/volumebackup04.png){.thumbnail}
 
-Kliknij przycisk `...`{.action}, aby `usun`{.action} lub `Utwórz wolumen`{.action} na podstawie wolumenu Snapshot lub odpowiedniego wolumenu Backup.
+Kliknij przycisk `...`{.action}, aby `Usuń`{.action} lub `Utwórz wolumen`{.action} na podstawie wolumenu Snapshot lub odpowiedniego wolumenu Backup.
 
 Więcej informacji na ten temat znajdziesz w [naszym przewodniku dotyczącym tworzenia wolumenu z kopii zapasowej](/pages/public_cloud/compute/create-volume-from-snapshot).
 

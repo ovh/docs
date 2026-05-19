@@ -16,7 +16,7 @@ De forma a automatizar as suas operações no Public Cloud, é possível utiliza
 
 ## Requisitos
 
-- [Preparar o ambiente para utilizar a API OpenStack](/pages/public_cloud/public_cloud_cross_functional/prepare_the_environment_for_using_the_openstack_api) instalando pithon-cinderclient e python-novaclient
+- [Preparar o ambiente para utilizar a API OpenStack](/pages/public_cloud/public_cloud_cross_functional/prepare_the_environment_for_using_the_openstack_api) instalando python-cinderclient e python-novaclient
 - [Carregar as variáveis de ambiente OpenStack](/pages/public_cloud/public_cloud_cross_functional/loading_openstack_environment_variables)
 
 ## Instruções
@@ -33,7 +33,7 @@ Eis a lista dos comandos principais:
 
 |Comando|Descrição|
 |---|---|
-|volume creme|Criar um novo volume|
+|volume create|Criar um novo volume|
 |volume delete|Eliminar um volume|
 |volume list|Lista dos volumes|
 |volume snapshot create|Criar uma snapshot de um volume|
@@ -194,4 +194,4 @@ admin@server-1:~$ openstack volume delete f75d60b3-4179-4ca9-8bc7-8e5f7a1682f8
 
 ## Saiba mais
 
-Fale com a nossa comunidade de utilizadores em <https://community.ovh.com/en/>.
+Fale com a nossa [comunidade de utilizadores](/links/community).

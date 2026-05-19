@@ -272,7 +272,7 @@ Diese Aktion ist nur im Horizon-Interface oder über die OpenStack/Nova-API mög
 
 #### Im Horizon-Interface
 
-Klicken Sie auf das Menü `Compute`{.action} auf der linken Seite und wählen Sie `Instances`{.action} aus. Wählen Sie `Pause Instance`{.action} Drop-down-Liste für die entsprechende Instanz aus.
+Klicken Sie auf das Menü `Compute`{.action} auf der linken Seite und wählen Sie `Instances`{.action} aus. Wählen Sie `Pause Instance`{.action} in der Drop-down-Liste für die entsprechende Instanz aus.
 
 ![Pause instance](images/pauseinstancehorizon.png){.thumbnail}
 

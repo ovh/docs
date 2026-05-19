@@ -105,4 +105,4 @@ Weitere Informationen zu diesem Thema finden Sie in unserer [Anleitung zur Erste
 
 [Die Größe einer zusätzlichen Disk erweitern](/pages/public_cloud/compute/increase_the_size_of_an_additional_disk)
 
-Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.
+Treten Sie unserer [User Community](/links/community) bei.

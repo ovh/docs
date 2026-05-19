@@ -36,7 +36,7 @@ Ecco la lista dei comandi principali:
 |volume create|Crea un nuovo volume|
 |volume delete|Elimina un volume|
 |volume list|Lista i volumi|
-|create volume snapshot|Crea uno snaspshot di un volume|
+|create volume snapshot|Crea uno snapshot di un volume|
 
 Per ottenere informazioni su un comando specifico, aggiungi `help` davanti a questo comando:
 
@@ -189,9 +189,9 @@ admin@server-1:~$ openstack server remove volume 46aec29f-fe50-4562-b3f9-2e6665a
 - Elimina il volume:
 
 ```bash
-admin@server-1:~$ opesntack volume delete f75d60b3-4179-4ca9-8bc7-8e5f7a1682f8
+admin@server-1:~$ openstack volume delete f75d60b3-4179-4ca9-8bc7-8e5f7a1682f8
 ```
 
 ## Per saperne di più
 
-Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.
+Contatta la nostra [Community di utenti](/links/community).

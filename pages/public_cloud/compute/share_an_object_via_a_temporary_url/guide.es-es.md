@@ -110,4 +110,4 @@ En este ejemplo, la URL temporal permite que cualquiera se descargue el archivo 
 
 ## Más información
 
-Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.
+Interactúe con nuestra [comunidad de usuarios](/links/community).

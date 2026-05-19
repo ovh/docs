@@ -36,7 +36,7 @@ Hier die wichtigsten Befehle im Überblick:
 |volume create|Neues Volume erstellen|
 |volume delete|Volume löschen|
 |list volume|Volumes auflisten|
-|volume snapshot create|Snaspshot eines Volumes erstellen|
+|volume snapshot create|Snapshot eines Volumes erstellen|
 
 Sie können die Erklärung zu einem speziellen Swift-Befehl aufrufen, indem Sie "help" einfügen:
 
@@ -163,7 +163,7 @@ admin@server-1:~$ openstack volume list
 - Volume mit dem OpenStack-Client auf einer Instanz mounten:
 
 ```bash
-admin@server-1: openstack server add volume 46aec29f-fe50-4562-b3f9-2e6665a7270a f75db60b-4179-b-8-3ca-4-e9e e faf ef
+admin@server-1:~$ openstack server add volume 46aec29f-fe50-4562-b3f9-2e6665a7270d f75d60b3-4179-4ca9-8bc7-8e5f7a1682f8
 ```
 
 - Überprüfen Sie mit dem OpenStack-Client, ob das Volume korrekt an die Instanz angehängt wurde:
@@ -194,4 +194,4 @@ admin@server-1:~$ openstack volume delete f75d60b3-4179-4ca9-8bc7-8e5f7a1682f8
 
 ## Weiterführende Informationen
 
-Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.
+Treten Sie unserer [User Community](/links/community) bei.

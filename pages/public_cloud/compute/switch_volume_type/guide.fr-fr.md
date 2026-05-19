@@ -28,7 +28,7 @@ L'objectif de ce guide est de vous montrer comment changer un type de volume Blo
 
 Lors de la modification d'un type de volume Block Storage en un volume « High speed gen2 », la politique de migration doit être modifiée de `Never` à `On Demand`.
 
-Par défaut, la politque de migration est définie sur `Never` car le volume reste sur le même cluster CEPH. Cependant, pour le « High speed gen2 », le volume devra être migré vers un nouveau cluster.
+Par défaut, la politique de migration est définie sur `Never` car le volume reste sur le même cluster CEPH. Cependant, pour le « High speed gen2 », le volume devra être migré vers un nouveau cluster.
 
 Cette modification peut être réalisée via Horizon ou via l’interface de ligne de commande OpenStack.
 
@@ -112,6 +112,6 @@ Cette modification peut être réalisée via Horizon ou via l’interface de lig
 
 Pour découvrir comment migrer un volume Block Storage vers un volume chiffré LUKS, consultez notre guide dédié : [Migrer un volume Block Storage vers un volume chiffré LUKS](/pages/public_cloud/compute/migrating-non-encrypted-to-encrypted-volume).
 
-Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](/links/professional-services) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
+Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en œuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](/links/professional-services) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).

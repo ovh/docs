@@ -147,7 +147,7 @@ Une fois le serveur redémarré, installez le paquet de mise à jour :
 $ sudo dnf install dnf-plugin-system-upgrade
 ```
 
-Maintenant que vous disposez du paquet requis, vous pouvez effectuer la mise à jour. Les mises à jur du système ne sont officiellement prises en charge et testées que sur 2 versions au maximum (par exemple, de 32 à 34).
+Maintenant que vous disposez du paquet requis, vous pouvez effectuer la mise à jour. Les mises à jour du système ne sont officiellement prises en charge et testées que sur 2 versions au maximum (par exemple, de 32 à 34).
 Dans cet exemple, nous allons passer de Fedora 32 à 33 :
 
 ```sh

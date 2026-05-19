@@ -4,7 +4,7 @@ excerpt: Dowiedz się, jak zaimportować własny obraz do Public Cloud
 updated: 2020-10-27
 ---
 
-## Ziel
+## Cel
 
 OVHcloud oferuje klientom Public Cloud obrazy gotowe do użycia, a także możliwość korzystania z własnych obrazów.
 

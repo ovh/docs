@@ -53,7 +53,7 @@ Możesz również wdrożyć system operacyjny z wolumenu i na wolumin. W ten spo
 >> | Informacje | Opis |
 >> | ---  | ---  |
 >> | Volume Name | Określ nazwę woluminu |
->> | Descriptiom | Opcjonalnie, podaj krótki opis wolumenu |
+>> | Description | Opcjonalnie, podaj krótki opis wolumenu |
 >> | Wolumen Źródłowy | Wybierz opcję `Image`.<br><br> ![public-cloud](images/create-a-volume-3.png){.thumbnail} |
 >> | Use image as a source | Możesz wybrać obraz z listy.<br><br> ![public-cloud](images/create-a-volume-4.png){.thumbnail} |
 >> | Type | W zależności od typu wolumenu, którego chcesz użyć |

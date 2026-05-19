@@ -66,7 +66,7 @@ Modyfikacja ta może zostać przeprowadzona za pośrednictwem interfejsu Horizon
 >>
 >> ![Wybór opcji](images/selectoption.png){.thumbnail}
 >>
->> W oknie dialogowym kliknij rozwijane menu pod `Type` i wybierz `high-speed-gen-2`{.action}. Następnie kliknij strzałkę rozwijaną pod ``Migration Policy`, i wybierz `On Demand`{.action}.
+>> W oknie dialogowym kliknij rozwijane menu pod `Type` i wybierz `high-speed-gen-2`{.action}. Następnie kliknij strzałkę rozwijaną pod `Migration Policy`, i wybierz `On Demand`{.action}.
 >>
 >> Po wykonaniu kliknij `Change Volume Type`{.action}, aby potwierdzić zmianę.
 >>

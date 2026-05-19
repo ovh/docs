@@ -37,7 +37,7 @@ Avrai anche bisogno di:
 
 > [!primary]
 >
-> Questa guida ti mostra come utilizzare il [OpenStack Cient](https://docs.openstack.org/python-openstackclient/latest/).
+> Questa guida ti mostra come utilizzare il [OpenStack Client](https://docs.openstack.org/python-openstackclient/latest/).
 >
 
 ## Procedura

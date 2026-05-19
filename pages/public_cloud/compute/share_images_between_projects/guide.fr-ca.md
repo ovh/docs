@@ -14,7 +14,7 @@ Cette fonctionnalité offre de nombreuses possibilités mais elle comporte égal
 
 Par exemple, si vous souhaitez partager une image d'un projet A avec un projet B (dans le même compte ou dans un compte différent), les règles suivantes s'appliquent :
 
-- - Les images ne peuvent être partagées qu'au sein de la même région. Par exemple, une image créée sur le projet A dans la région GRA11 ne sera disponible que pour le projet B dans cette même région GRA11.
+- Les images ne peuvent être partagées qu'au sein de la même région. Par exemple, une image créée sur le projet A dans la région GRA11 ne sera disponible que pour le projet B dans cette même région GRA11.
 - L'image reste attachée physiquement au projet A. Le projet B ne dispose que d'une « autorisation d'accès » à cette image.
 - Si le Projet A supprime l'accès à l'image (suppression de l'ACL, suppression de l'image, suppression du projet pour factures impayées, etc.), les instances s'exécutant à partir de cette image sur le Projet B peuvent ne plus fonctionner en raison de problèmes de migration ou de reconstruction.
 

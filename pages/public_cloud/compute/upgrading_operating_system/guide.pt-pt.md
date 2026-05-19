@@ -136,7 +136,7 @@ Verifique que as suas aplicações funcionam como previsto. Em caso de problema,
 Antes de começar a atualização da versão principal do SO, certifique-se de que atualiza as versões mais recentes de todos os pacotes instalados na sua versão atual. Introduza esta encomenda:
 
 ```sh
-$ sudo dnf upgrade —refresh
+$ sudo dnf upgrade --refresh
 ```
 
 A seguir, reinicie o servidor:

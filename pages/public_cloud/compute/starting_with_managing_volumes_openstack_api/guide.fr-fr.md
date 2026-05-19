@@ -32,7 +32,7 @@ Voici la liste des commandes principales :
 |volume create|Crée un nouveau volume|
 |volume delete|Supprime un volume|
 |volume list|Liste les volumes|
-|volume snapshot create|Crée un snaspshot d'un volume|
+|volume snapshot create|Crée un snapshot d'un volume|
 
 Vous pouvez également obtenir des informations concernant une commande spécifique en ajoutant `help` devant celle ci :
 

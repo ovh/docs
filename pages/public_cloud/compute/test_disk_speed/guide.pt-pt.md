@@ -13,7 +13,7 @@ Quer seja para comparar as performances entre os diferentes discos, quer seja pa
 ## Requisitos
 
 - Dispor de uma [instância Public Cloud](/links/public-cloud/compute).
-- Dispor de um Ter acesso administrativo (sudo) à sua instância através de SSH (Linux) ou RDP (Windows).
+- Ter acesso administrativo (sudo) à sua instância através de SSH (Linux) ou RDP (Windows).
 
 ## Instruções
 

@@ -56,7 +56,7 @@ Consigliamo di utilizzare immagini in formato RAW o QCOW2. Ottimizza la dimensio
 
 ### Importa la tua immagine
 
-OpenStack ci sono due modi per importare la tua immagine. Puoi farlo tramite l'interfaccia da riga di comando OpenStack o con [l'interfaccia Horizon](https://horizon.cloud.ovh.net/auth/login/).
+Con OpenStack ci sono due modi per importare la tua immagine. Puoi farlo tramite l'interfaccia da riga di comando OpenStack o con [l'interfaccia Horizon](https://horizon.cloud.ovh.net/auth/login/).
 
 #### Da riga di comando OpenStack
 

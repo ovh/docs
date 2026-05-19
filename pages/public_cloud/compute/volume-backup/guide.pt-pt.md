@@ -106,4 +106,4 @@ Para mais informações, consulte o [nosso manual sobre a criação de um volume
 
 [Aumentar o tamanho de um disco adicional](/pages/public_cloud/compute/increase_the_size_of_an_additional_disk)
 
-Fale com a nossa comunidade de utilizadores em <https://community.ovh.com/en/>.
+Fale com a nossa [comunidade de utilizadores](/links/community).

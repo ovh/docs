@@ -13,7 +13,7 @@ Es kann aus verschiedenen Gründen vorkommen, dass Sie die Geschwindigkeit Ihrer
 ## Voraussetzungen
 
 - Sie verfügen über eine [Public Cloud Instanz](/links/public-cloud/compute).
-- SIe haven administrativen Zugriff (sudo) auf Ihre Instanz über SSH (Linux) oder RDP (Windows).
+- Sie haben administrativen Zugriff (sudo) auf Ihre Instanz über SSH (Linux) oder RDP (Windows).
 
 ## In der praktischen Anwendung
 
