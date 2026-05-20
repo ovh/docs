@@ -150,27 +150,18 @@ C'est votre réseau de production. OPCP s'y raccorde via les liens fibre des ToR
 
 Au-delà de ce raccordement, le contenu et la segmentation du réseau de données restent **entièrement pilotés par OPCP** via OpenStack Neutron : chaque réseau Neutron est représenté sur les uplinks selon l'un des trois modes ci-dessous.
 
-##### Mode Access (sans VLAN)
+##### Mode access
+Le port uplink est rattaché à **un unique réseau Neutron** et présente le trafic en **802.1Q** classique à votre équipement amont. C'est le mode le plus simple, adapté lorsqu'un port amont est dédié à un seul réseau OPCP.
 
-Le port d'uplink est rattaché à un seul réseau Neutron, sans aucun tag 802.1Q. Vos équipements en face voient le trafic comme du trafic Ethernet classique. C'est le mode le plus simple, adapté lorsqu'un port amont est dédié à un unique réseau OPCP.
+Si vos instances poussent leurs propres tags VLAN à l'intérieur du réseau Neutron (taggage au niveau de l'hyperviseur, besoins spécifiques des invités, etc.), ces tags internes sont gérés de manière transparente par OPCP et votre équipement amont ne voit toujours que des trames 802.1Q standard — il n'y a rien de plus à configurer de votre côté.
 
-##### Mode Trunk (avec VLAN ID)
+##### Mode trunk
+Le port uplink transporte **plusieurs réseaux Neutron** sur une seule interface physique, chacun étant distingué par son propre identifiant VLAN. Comme le tag VLAN défini par OPCP est préservé de bout en bout et jamais décapsulé, l'encapsulation que voit votre équipement amont dépend de ce qui se passe **à l'intérieur** de chaque réseau Neutron :
 
-Le port d'uplink est rattaché à **un seul réseau Neutron**, qui transporte plusieurs sous-réseaux **identifiés chacun par un VLAN ID 802.1Q distinct**. Vos équipements en face doivent être configurés pour reconnaître ces VLAN. C'est le mode classique lorsque le réseau Neutron exposé porte plusieurs segments tagués à destination de votre infrastructure amont.
+* **802.1Q** — si vos instances n'utilisent pas de VLAN à l'intérieur du réseau Neutron. Votre équipement amont doit être configuré pour reconnaître les identifiants VLAN attribués par OPCP.
+* **802.1ad (QinQ)** — si vos instances poussent leurs propres tags VLAN à l'intérieur du réseau Neutron. Le VLAN attribué par OPCP devient le tag externe et les VLAN des instances deviennent les tags internes. **Votre équipement amont doit être capable de gérer la double encapsulation.**
 
-##### Mode QinQ (double encapsulation)
-
-Chaque réseau Neutron est nativement **encapsulé en QinQ** (double tag 802.1Q) à l'intérieur d'OPCP. **Ce mode permet de tirer plusieurs réseaux Neutron sur une seule interface physique d'uplink**, chacun étant distingué par son tag externe. Il est utile lorsque vous souhaitez mutualiser plusieurs réseaux OPCP sur un même lien amont, mais il impose que **vos équipements en face soient capables de traiter la double encapsulation**.
-
-> [!primary]
->
-> Si un port d'uplink ne transporte **qu'un seul réseau Neutron**, la double encapsulation peut être **désencapsulée sur l'edge** : le trafic sort alors avec un seul tag (mode Trunk) ou sans tag (mode Access). Cette désencapsulation n'est possible **que lorsqu'un seul réseau Neutron est tiré jusqu'au port concerné** ; dès qu'il y en a plusieurs, le mode QinQ est imposé côté amont.
->
-
-> [!warning]
->
-> Avant de retenir le mode QinQ sur vos uplinks, vérifiez que vos commutateurs amont supportent le 802.1ad (QinQ) ou disposent d'un *VLAN translation* compatible. À défaut, privilégiez le mode Trunk ou la désencapsulation sur l'edge.
->
+Les deux peuvent coexister sur un même trunk : chaque réseau Neutron est indépendant, donc certains peuvent être en 802.1Q simple et d'autres en 802.1ad, selon l'usage qui est fait de chacun.
 
 #### Côté réseau d'administration (*Customer Upstream OOB Network*)
 
