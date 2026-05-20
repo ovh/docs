@@ -449,10 +449,4 @@ Then report the issue to your OVHcloud contact.
 
 ## Go further
 
-- [What is the OVHcloud Web Application Firewall?](../1.1_what_is_owaf/guide.en-gb.md)
-- [Prerequisites and alpha limitations](../1.3_prerequisites_and_limitations/guide.en-gb.md)
-- [Quick start](../2.1_quickstart/guide.en-gb.md)
-- [Security best practices](../1.4_security_best_practices/guide.en-gb.md)
-- [Troubleshooting](../1.5_troubleshooting/guide.en-gb.md)
-
 Join our [community of users](/links/community).
