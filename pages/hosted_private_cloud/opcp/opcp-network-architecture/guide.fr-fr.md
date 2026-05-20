@@ -57,7 +57,7 @@ Le réseau de données est le réseau **emprunté par les charges de travail** h
 
 Côté matériel, le réseau de données s'appuie sur :
 
-- les **interfaces 25 GbE** des serveurs (typiquement `ens1` / `ens2`),
+- les **interfaces data** des serveurs,
 - les **commutateurs Top-of-Rack (ToR)** redondés,
 - pour les déploiements multi-baies, deux familles supplémentaires de commutateurs :
     - les commutateurs **edge**, qui assurent la **jonction entre le réseau interne d'OPCP et votre réseau amont** : ce sont eux qui portent la configuration des uplinks vers votre *Customer Upstream Data Network*,
@@ -72,21 +72,15 @@ Le réseau OOB est le réseau **par lequel OPCP s'administre lui-même** et par 
 
 - l'accès aux **API OpenStack**, à l'interface **Horizon** et aux outils de gestion d'OPCP (HTTPS),
 - l'accès SSH aux **OPCP Core Controllers** (commandes `opcp-cli`, `opcp-diag`),
-- les communications de **gestion lights-out (BMC / IPMI) des serveurs** déclenchées par OPCP (voir ci-dessous),
 - les **échanges inter-contrôleurs** qui assurent la **résilience du plan de contrôle** en modes MINIPOD et FABRIC (synchronisation d'état, élection de quorum, bascule de la VIP entre les trois OPCP Core Controllers),
 - la collecte de logs et de métriques émise depuis OPCP vers vos services internes,
 - les flux sortants d'OPCP vers vos services d'infrastructure (NTP, DNS, S3 de sauvegarde, LDAP, syslog).
 
 Côté matériel, le réseau OOB s'appuie sur :
 
-- un **commutateur de management** dédié (par exemple Cisco C9200-48T), qui agrège les BMC des serveurs, les ports de management des commutateurs data et les liens BMC des contrôleurs,
+- un **commutateur de management** dédié, qui agrège les BMC des serveurs, les ports de management des commutateurs data et les liens BMC des contrôleurs,
 - les **OPCP Core Controllers**, équipés d'un uplink OOB qui négocie en **25 GbE ou 10 GbE** selon les capacités de votre infrastructure amont, et d'un port 1 GbE BMC,
 - des **liens uplink** vers votre réseau OOB amont (*Customer Upstream OOB Network*).
-
-> [!primary]
->
-> Les **BMC des serveurs** (lights-out, console série, power control) sont utilisés en interne par OPCP – à travers le composant OpenStack Ironic – pour piloter le cycle de vie des serveurs (provisionnement, mise hors tension, diagnostic matériel). **Ces BMC ne sont pas exposés à votre administration directe** : leurs identifiants et leurs interfaces sont gérés par OPCP. Vous n'avez ni à les configurer, ni à y accéder dans le cadre de l'exploitation courante.
->
 
 > [!warning]
 >
@@ -121,9 +115,9 @@ Le nombre d'**OPCP Core Controllers** suit le mode de déploiement : **1 contrô
 
 Les éléments clés sont :
 
-- **Customer Servers** : les serveurs hébergeant les charges de travail. Leurs interfaces data (`ens1` / `ens2`) sont connectées aux deux ToR ; leur BMC est rattaché au switch de management Cisco C9200.
+- **Customer Servers** : les serveurs hébergeant les charges de travail. Leurs interfaces data sont connectées aux deux ToR ; leur BMC est rattaché au switch de management.
 - **ToR A / ToR B** (Arista DCS-7050CX3-32S) : deux commutateurs Top-of-Rack redondés. En mode NANOPOD, **ils portent directement le réseau de données et remontent vers votre *Customer Upstream Data Network*** via des liens fibre en **40 GbE ou 100 GbE**, selon les optiques validées par OVHcloud.
-- **Cisco C9200-48T (mgmt)** : commutateur de management dédié, qui agrège les BMC des serveurs et les ports de management des ToR.
+- **Switch de management (mgmt)** : commutateur de management dédié, qui agrège les BMC des serveurs et les ports de management des ToR.
 - **OPCP Core Controller** unique, raccordé via un uplink OOB en **25 GbE ou 10 GbE** vers votre *Customer Upstream OOB Network*, plus un port 1 GbE BMC pour son propre lights-out.
 
 > [!warning]

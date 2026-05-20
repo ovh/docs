@@ -57,7 +57,7 @@ The data plane is the network **used by the workloads** hosted on the OPCP serve
 
 In terms of hardware, the data plane relies on:
 
-- the **25 GbE interfaces** on the servers (typically `ens1` / `ens2`),
+- the **data interfaces** on the servers,
 - redundant **Top-of-Rack (ToR) switches**,
 - for multi-rack deployments, two additional families of switches:
     - **edge** switches, which provide the **junction between the OPCP internal network and your upstream network**: they carry the uplink configuration toward your *Customer Upstream Data Network*,
@@ -72,21 +72,15 @@ The OOB network is the network **through which OPCP administers itself** and thr
 
 - access to the **OpenStack APIs**, the **Horizon** interface, and the OPCP management interfaces (HTTPS),
 - SSH access to the **OPCP Core Controllers** (`opcp-cli`, `opcp-diag`),
-- the **lights-out (BMC / IPMI) management** communications for the servers, initiated by OPCP (see below),
 - the **inter-controller exchanges** that provide **control plane resiliency** in MINIPOD and FABRIC modes (state synchronisation, quorum election, VIP failover between the three OPCP Core Controllers),
 - the logs and metrics emitted from OPCP toward your internal services,
 - the outbound flows from OPCP toward your infrastructure services (NTP, DNS, S3 for backups, LDAP, syslog).
 
 In terms of hardware, the OOB network relies on:
 
-- a dedicated **management switch** (for example a Cisco C9200-48T), which aggregates the server BMCs, the management ports of the data switches, and the BMC links of the controllers,
+- a dedicated **management switch**, which aggregates the server BMCs, the management ports of the data switches, and the BMC links of the controllers,
 - the **OPCP Core Controllers**, each equipped with an OOB uplink negotiating at **25 GbE or 10 GbE** depending on your upstream infrastructure, plus a 1 GbE BMC port,
 - **uplinks** toward your upstream OOB network (*Customer Upstream OOB Network*).
-
-> [!primary]
->
-> The **server BMCs** (lights-out, serial console, power control) are used internally by OPCP – through the OpenStack Ironic component – to drive the server lifecycle (provisioning, power off, hardware diagnostics). **These BMCs are not exposed for your direct administration**: their credentials and interfaces are managed by OPCP. You do not need to configure them or access them as part of routine operations.
->
 
 > [!warning]
 >
@@ -121,9 +115,9 @@ The number of **OPCP Core Controllers** follows the deployment mode: **1 control
 
 The key elements are:
 
-- **Customer Servers**: the servers hosting the workloads. Their data interfaces (`ens1` / `ens2`) are connected to both ToRs; their BMC is attached to the Cisco C9200 management switch.
+- **Customer Servers**: the servers hosting the workloads. Their data interfaces are connected to both ToRs; their BMC is attached to the management switch.
 - **ToR A / ToR B** (Arista DCS-7050CX3-32S): two redundant Top-of-Rack switches. In NANOPOD mode, **they carry the data plane directly and connect to your *Customer Upstream Data Network*** through fibre uplinks at **40 GbE or 100 GbE**, depending on the optics validated by OVHcloud.
-- **Cisco C9200-48T (mgmt)**: a dedicated management switch that aggregates the server BMCs and the ToR management ports.
+- **Management switch (mgmt)**: dedicated switch that aggregates the server BMCs and the ToR management ports.
 - A single **OPCP Core Controller**, connected through a **25 GbE or 10 GbE** OOB uplink to your *Customer Upstream OOB Network*, plus a 1 GbE BMC port for its own lights-out access.
 
 > [!warning]
