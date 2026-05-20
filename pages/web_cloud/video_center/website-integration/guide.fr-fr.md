@@ -1,7 +1,7 @@
 ---
 title: "Video Center - Intégrer une vidéo sur votre site web"
-excerpt: "Copiez le code embed de votre vidéo depuis Video Center et intégrez-la en moins de 5 minutes via iframe, éditeur CMS ou bloc HTML WordPress."
-updated: 2026-05-19
+excerpt: "Copier le code embed de votre vidéo depuis Video Center et l'intégrer en moins de 5 minutes via iframe, éditeur CMS ou bloc HTML WordPress."
+updated: 2026-05-20
 ---
 
 <style>
@@ -26,9 +26,9 @@ details[open]>summary::before {
 
 3 méthodes sont couvertes selon votre environnement :
 
-- **Code embed (iframe)** — pour tout site web dont vous avez accès au code HTML.
-- **Éditeur CMS (Content Management System)** — pour Wix, Squarespace, Webflow, Joomla, etc.
-- **WordPress sans plugin** — via le bloc HTML natif de WordPress.
+- **Code embed (iframe)** : à utiliser si vous avez accès au code HTML de votre site web.
+- **Éditeur CMS (Content Management System)** : adapté à Wix, Squarespace, Webflow, Joomla et autres CMS courants.
+- **WordPress sans plugin** : en passant par le bloc HTML natif de l'éditeur Gutenberg.
 
 **Durée estimée : moins de 5 minutes.**
 
@@ -54,11 +54,27 @@ details[open]>summary::before {
 
 Quelle que soit la méthode choisie, commencez par copier le code embed depuis Video Center.
 
-![Bouton Partager / Code d'intégration affichant le code iframe d'une vidéo dans Video Center](images/integrate-video.png){.thumbnail}
+Le code embed est généré automatiquement par Video Center pour chaque vidéo, depuis sa page de détail. Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3** étapes.
 
-- **Accéder à Video Center** : depuis votre espace client OVHcloud, naviguez vers `Video Center`{.action}.
-- **Ouvrir votre vidéo** : cliquez sur la vidéo que vous souhaitez intégrer pour ouvrir sa page de détail.
-- **Copier le code embed** : cliquez sur `Partager`{.action} ou `Code d'intégration`{.action}, puis copiez le code affiché.
+> [!tabs]
+> **Étape 1**
+>>
+>> Accédez à la page [Video Center](/links/control-panel/web-video-center) de votre espace client OVHcloud.
+>>
+>> <!-- DRAFT: To screenshot — capturer la page "Video Center" listant les vidéos hébergées sur le compte -->
+>>
+> **Étape 2**
+>>
+>> Cliquez sur la vidéo que vous souhaitez intégrer pour ouvrir sa page de détail.
+>>
+>> <!-- DRAFT: To screenshot — capturer la page de détail d'une vidéo dans Video Center -->
+>>
+> **Étape 3**
+>>
+>> Cliquez sur `Partager`{.action} ou `Code d'intégration`{.action}, puis copiez le code affiché.
+>>
+>> ![Bouton Partager / Code d'intégration affichant le code iframe d'une vidéo dans Video Center](images/integrate-video.png){.thumbnail}
+>>
 
 Le code ressemble à ceci :
 
@@ -73,7 +89,7 @@ Le code ressemble à ceci :
 ```
 
 > [!primary]
-> Conservez ce code sous la main — vous en avez besoin pour les 3 méthodes décrites ci-dessous.
+> Gardez ce code à portée de main : il vous servira pour les 3 méthodes décrites ci-dessous.
 
 ### Intégrer la vidéo sur votre site web
 
@@ -86,7 +102,7 @@ Utilisez cette méthode si vous avez un accès direct au code HTML de votre page
 - **Ouvrir le fichier HTML de votre page** : dans votre éditeur de code (VS Code, Dreamweaver, etc.), ouvrez la page où vous souhaitez afficher la vidéo.
 - **Positionner le curseur** : placez-le à l'emplacement souhaité pour la vidéo.
 - **Coller le code embed** : collez le code copié depuis Video Center.
-- **Sauvegarder et publier** : enregistrez votre fichier et mettez à jour votre serveur (FTP — File Transfer Protocol, déploiement, etc.).
+- **Sauvegarder et publier** : enregistrez votre fichier et mettez à jour votre serveur (**FTP** : **F**ile **T**ransfer **P**rotocol, déploiement, etc.).
 
 Exemple de résultat dans votre fichier HTML :
 
@@ -119,11 +135,11 @@ La plupart des CMS proposent un **bloc HTML personnalisé** pour insérer du cod
 
 Bloc à utiliser selon le CMS :
 
-- **Wix** : **App Wix** → **Code HTML**.
-- **Squarespace** : **Bloc** → **Code**.
-- **Webflow** : **Composant** → **Embed**.
-- **Joomla** : **Éditeur** → désactiver le filtre HTML → coller.
-- **Prestashop** : **Module** → **HTML personnalisé**.
+- **Wix** : **App Wix** > **Code HTML**.
+- **Squarespace** : **Bloc** > **Code**.
+- **Webflow** : **Composant** > **Embed**.
+- **Joomla** : **Éditeur** > désactivez le filtre HTML > collez le code.
+- **PrestaShop** : **Module** > **HTML personnalisé**.
 
 > [!primary]
 > Si votre CMS filtre les iframes pour des raisons de sécurité, cherchez dans ses paramètres l'option **« Autoriser le code HTML brut »** ou **« Désactiver le filtre de contenu »**.
