@@ -372,4 +372,4 @@ resource "openstack_lb_l7rule_v2" "l7rule_1" {
 
 ## Go further
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

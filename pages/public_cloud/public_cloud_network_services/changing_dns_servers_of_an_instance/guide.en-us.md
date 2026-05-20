@@ -165,4 +165,4 @@ In PowerShell, you can use the command `nslookup` to check which DNS server is u
 
 [Changing the hostname of a Public Cloud instance](/pages/public_cloud/compute/changing_the_hostname_of_an_instance)
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

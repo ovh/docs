@@ -61,7 +61,7 @@ Les pays suivants sont disponibles pour la géolocalisation des IP :
 |          |          |          |           |                |
 |:--------:|:--------:|:--------:|:---------:|:--------------:|
 | Belgique  | Finlande  | France   | Allemagne   | République Tchèque |
-| Irelande  |  Italie   | Lituanie | Pays-bas | Royaume-Uni    |
+| Irlande   |  Italie   | Lituanie | Pays-bas | Royaume-Uni    |
 | Portugal |  Espagne   |  Pologne |  Suisse |                 |
 
 > [!primary] **Disponibilité**
@@ -69,17 +69,17 @@ Les pays suivants sont disponibles pour la géolocalisation des IP :
 > Il est possible que certains de ces pays ne soient pas listés, en fonction de la disponibilité actuelle des adresses IPv4.
 > 
 
-> [!primary] **Location**
+> [!primary] **Localisation**
 >
 > La géolocalisation d’IP est uniquement basée sur des organismes de référence.
 > 
 > Par exemple, le [RIPE NCC](https://www.ripe.net/) dessert l'Europe en tant que Registre Internet Régional.
 >
-> Si vous avez besoin de vérifier la géolocalisation d'une autre manière, contactez directement les organisations concernées. OVHcloud ne pourra vous founir d'assistance à ce sujet.
+> Si vous avez besoin de vérifier la géolocalisation d'une autre manière, contactez directement les organisations concernées. OVHcloud ne pourra vous fournir d'assistance à ce sujet.
 
 Une fois le pays sélectionné, cliquez sur `Suivant`{.action}.
 
-A la dernière étape, sélectionnez votre instance dans le menu déroulant. Cliquez ensuite sur `Générer le bon de commande`{.action}.
+À la dernière étape, sélectionnez votre instance dans le menu déroulant. Cliquez ensuite sur `Générer le bon de commande`{.action}.
 
 ![Ajout IP](images/buyaddIP_04.png){.thumbnail}
 
@@ -95,6 +95,6 @@ La prochaine étape consiste à configurer l’IP dans votre système d'exploita
 
 [Configurer une Additional IP](/pages/public_cloud/public_cloud_network_services/getting-started-04-configure-additional-ip-to-instance)
 
-Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](/links/professional-services) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services. 
+Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en œuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](/links/professional-services) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services. 
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).

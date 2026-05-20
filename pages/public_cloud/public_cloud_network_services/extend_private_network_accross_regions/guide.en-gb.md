@@ -54,7 +54,7 @@ This solution preserves the flexibility of a single stretched VLAN while enforci
 
 ## Use case examples
 
-Here are some practical scenarios where extending a OVHcloud private network across regions or integrating with other OVHcloud products can solve real-world challenges.
+Here are some practical scenarios where extending an OVHcloud private network across regions or integrating with other OVHcloud products can solve real-world challenges.
 
 - **Database on Bare Metal & Application on Public Cloud:** Connect a Bare Metal database server with applications running in Public Cloud regions using the same VLAN without IP conflicts.
 - **DHCP as a Service for Bare Metal Servers:** Assign IPs from Public Cloud networks to Bare Metal servers via DHCP for seamless integration.
@@ -274,7 +274,7 @@ The Public Cloud project and Bare Metal server must be added to the same vRack:
 > Via the OpenStack CLI
 >> > [!primary]
 >> >
->> > **Required:** OpenStack atuthentication configured in your environment variables.
+>> > **Required:** OpenStack authentication configured in your environment variables.
 >> >
 >>
 >> **1\. Load OpenStack credentials:**

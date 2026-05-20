@@ -61,8 +61,8 @@ done
 You should see alternating responses from the two members:
 
 ```html
-<html><head><title>Load Balanced Member 1</title></head><body><h1>You hit your OVHCloud load balancer member #1 !</h1></body></html>
-<html><head><title>Load Balanced Member 0</title></head><body><h1>You hit your OVHCloud load balancer member #0 !</h1></body></html>
+<html><head><title>Load Balanced Member 1</title></head><body><h1>You hit your OVHcloud load balancer member #1 !</h1></body></html>
+<html><head><title>Load Balanced Member 0</title></head><body><h1>You hit your OVHcloud load balancer member #0 !</h1></body></html>
 ```
 
 ### Step 2 - Set the Weight of a member to 0
@@ -96,7 +96,7 @@ You should see alternating responses from the two members:
 >> > @api {v1} /cloud GET  /cloud/project/{serviceName}/region/{regionName}/loadbalancing/pool
 >> >
 >>
->> You can leave the `loadbalancerId` field blank in order to obtain all the pools created in the region specified/
+>> You can leave the `loadbalancerId` field blank in order to obtain all the pools created in the region specified.
 >>
 >> This call retrieves the member id. Fill in the fields with the previously obtained information:
 >>
@@ -153,7 +153,7 @@ You should see alternating responses from the two members:
 >> ![Update weight](images/update-weight.png){.thumbnail}
 >>
 > CLI
->> To set the weight of a member to 0, run the following commmand:
+>> To set the weight of a member to 0, run the following command:
 >>
 >> ```bash
 >> $ openstack loadbalancer member set --weight 0 <pool> <member_0>
@@ -249,7 +249,7 @@ If having a final **DRAINED** status is critical for your operations, it is reco
 
 ### Step 4 - Confirm Traffic is directed to the active member
 
-The member whose weight is 0 will have an	Operating Status `Draining`. Run the test script again:
+The member whose weight is 0 will have an Operating Status `Draining`. Run the test script again:
 
 ```bash
 #!/bin/sh
@@ -263,7 +263,7 @@ done
 You should now only see responses from `member_1`:
 
 ```html
-<html><head><title>Load Balanced Member 1</title></head><body><h1>You hit your OVHCloud load balancer member #1 !</h1></body></html>
+<html><head><title>Load Balanced Member 1</title></head><body><h1>You hit your OVHcloud load balancer member #1 !</h1></body></html>
 ```
 
 ### Step 5 - Perform maintenance
@@ -300,7 +300,7 @@ Once the maintenance is complete, set the weight of `member_0` back to its origi
 >>
 >> Select the appropriate region from the top left drop-down menu.
 >>
->> In the left tab, click on `Network`{.action} then on click `Load Balancers`{.action}.
+>> In the left tab, click on `Network`{.action} then click `Load Balancers`{.action}.
 >>
 >> Click the load balancer concerned.
 >>
@@ -373,8 +373,8 @@ done
 You should see alternating responses from the two members:
 
 ```html
-<html><head><title>Load Balanced Member 1</title></head><body><h1>You hit your OVHCloud load balancer member #1 !</h1></body></html>
-<html><head><title>Load Balanced Member 0</title></head><body><h1>You hit your OVHCloud load balancer member #0 !</h1></body></html>
+<html><head><title>Load Balanced Member 1</title></head><body><h1>You hit your OVHcloud load balancer member #1 !</h1></body></html>
+<html><head><title>Load Balanced Member 0</title></head><body><h1>You hit your OVHcloud load balancer member #0 !</h1></body></html>
 ```
 
 ## Go further

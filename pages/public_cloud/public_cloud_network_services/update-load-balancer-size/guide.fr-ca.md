@@ -40,7 +40,7 @@ Une fois connecté, allez dans la section `Load Balancer`{.action}. Recherchez l
 
 ### Étape 3 - Modifier le Load Balancer
 
-A droite de votre Load Balancer, cliquez sur la flèche pointant vers le bas. Sélectionnez `Modifier le Load Balancer`{.action} dans le menu déroulant.
+À droite de votre Load Balancer, cliquez sur la flèche pointant vers le bas. Sélectionnez `Modifier le Load Balancer`{.action} dans le menu déroulant.
 
 ![Bouton Modifier le Load Balancer](images/editButtonLoadBalancer.png){.thumbnail}
 

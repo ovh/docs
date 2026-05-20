@@ -49,7 +49,7 @@ Oui cette [fonctionnalité](https://docs.openstack.org/octavia/latest/user/guide
 
 ///
 
-/// details | Comment est mise en oeuvre la redondance pour chaque type d'offre ? Les Amphoras sont-ils configurés en mode ACT/STBY ?
+/// details | Comment est mise en œuvre la redondance pour chaque type d'offre ? Les Amphoras sont-ils configurés en mode ACT/STBY ?
 
 Oui, nous proposons le mode Active/Standby pour toutes les offres S/M/L/XL.
 
@@ -182,6 +182,6 @@ Oui, l’[infrastructure anti-DDoS d’OVHcloud](/links/security/antiddos) est a
 
 ## Aller plus loin
 
-Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](/links/professional-services) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
+Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en œuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](/links/professional-services) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).

@@ -74,7 +74,7 @@ Dla geolokalizacji IP dostępne są następujące kraje:
 > Niektóre z tych krajów mogą nie być wymienione w zależności od dostępności obecnie adresów IPv4.
 > 
 
-> [!primary] **Dzierżawa**
+> [!primary] **Lokalizacja**
 >
 > Geolokalizacja IP opiera się wyłącznie na organizacjach referencyjnych.
 > 

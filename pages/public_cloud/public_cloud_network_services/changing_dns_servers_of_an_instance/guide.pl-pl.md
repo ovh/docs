@@ -170,4 +170,4 @@ Polecenie `nslookup` pozwala na sprawdzenie, który serwer DNS jest używany dom
 
 [Zmiana hostname instancji Public Cloud](/pages/public_cloud/compute/changing_the_hostname_of_an_instance)
 
-Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.
+Dołącz do [grona naszych użytkowników](/links/community).

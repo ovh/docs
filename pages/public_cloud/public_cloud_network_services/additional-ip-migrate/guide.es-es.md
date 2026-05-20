@@ -50,7 +50,7 @@ En la columna izquierda, haga clic en **Network** y abra la sección `IP públic
 
 En este ejemplo, la dirección Additional IP enrutada a "Instancia_A" será migrada a "Instancia_B".
 
-Haga clic en `...`{.action} en la línea de la Directorial IP y seleccione `Editar la instancia asociada`{.action}.
+Haga clic en `...`{.action} en la línea de la Additional IP y seleccione `Editar la instancia asociada`{.action}.
 
 ![Migrating Additional IP](images/migrateip_01.png){.thumbnail}
 

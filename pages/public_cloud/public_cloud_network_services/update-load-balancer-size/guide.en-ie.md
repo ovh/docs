@@ -40,7 +40,7 @@ Once you are logged in, go to the `Load Balancer`{.action} section and find your
 
 ### Step 3 - Edit the Load Balancer
 
-Click the down arrow button on the right side of your load Balancer entry.
+Click the down arrow button on the right side of your Load Balancer entry.
 
 Select `Edit Load Balancer`{.action} in the dropdown menu.
 

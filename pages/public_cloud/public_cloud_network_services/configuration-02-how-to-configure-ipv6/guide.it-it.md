@@ -158,7 +158,7 @@ Tutte le informazioni necessarie saranno visibili nella sezione **Reti**.
 >> Per configurare l'IPV6, è consigliabile creare un file di configurazione separato nella directory `/etc/netplan/`. Nel nostro esempio, il nostro file si chiama `51-cloud-init-ipv6.yaml`:
 >>
 >> ```bash
->> sudo touch /etc/netplan/51-cloud-init-ipv6.yaml
+>> sudo nano /etc/netplan/51-cloud-init-ipv6.yaml
 >> ```
 >>
 >> In questo modo è possibile separare la configurazione IPv6 e annullare le modifiche in caso di errore.

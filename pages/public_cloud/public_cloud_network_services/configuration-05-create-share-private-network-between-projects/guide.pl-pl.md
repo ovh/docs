@@ -10,8 +10,6 @@ This tutorial will show you how to connect two projects on an internal network. 
 
 ## Requirements
 
-## Requirements
-
 - You have 2 or more Public Cloud projects.
 - Both projects must be placed in the same vRack.
 

@@ -57,7 +57,7 @@ Clicca sui tre puntini `...`{.action} in corrispondenza dell'indirizzo IP che vu
 
 Clicca su `Importa`{.action}.
 
-![Importazione conferm](images/import22_03.png){.thumbnail}
+![Importazione confermata](images/import22_03.png){.thumbnail}
 
 Attendi qualche minuto fino al completamento dell'importazione. Apri la scheda `Additional IP`{.action} per ricercare l'indirizzo aggiuntivo IP importato. Aggiorna la pagina se necessario.
 

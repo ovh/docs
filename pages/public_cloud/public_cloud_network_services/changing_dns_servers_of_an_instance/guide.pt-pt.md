@@ -170,4 +170,4 @@ Num PowerShell, o comando `nslookup` permite verificar qual o servidor DNS utili
 
 [Modificar o hostname de uma instância Public Cloud](/pages/public_cloud/compute/changing_the_hostname_of_an_instance)
 
-Junte-se à nossa comunidade de utilizadores em <https://community.ovh.com/en/>.
+Fale com a nossa [comunidade de utilizadores](/links/community).

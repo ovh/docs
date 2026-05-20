@@ -61,8 +61,8 @@ done
 Les réponses des deux membres doivent être alternées :
 
 ```html
-<html><head><title>Load Balanced Member 1</title></head><body><h1>You hit your OVHCloud load balancer member #1 !</h1></body></html>
-<html><head><title>Load Balanced Member 0</title></head><body><h1>You hit your OVHCloud load balancer member #0 !</h1></body></html>
+<html><head><title>Load Balanced Member 1</title></head><body><h1>You hit your OVHcloud load balancer member #1 !</h1></body></html>
+<html><head><title>Load Balanced Member 0</title></head><body><h1>You hit your OVHcloud load balancer member #0 !</h1></body></html>
 ```
 
 ### Étape 2 - Définir le poids d'un membre sur 0
@@ -147,7 +147,7 @@ Les réponses des deux membres doivent être alternées :
 >>
 >> ![Mettre à jour le tableau de bord Openstack membre](images/update-member_openstack_dashboard-1.png){.thumbnail}
 >>
->> Modifiez le poids (`Weight`) à 0, puis cliquer sur `Update`{.action}.
+>> Modifiez le poids (`Weight`) à 0, puis cliquez sur `Update`{.action}.
 >>
 >> ![Update weight](images/update-weight.png){.thumbnail}
 >>
@@ -262,7 +262,7 @@ done
 Vous ne devriez maintenant voir que les réponses de `member_1` :
 
 ```html
-<html><head><title>Load Balanced Member 1</title></head><body><h1>You hit your OVHCloud load balancer member #1 !</h1></body></html>
+<html><head><title>Load Balanced Member 1</title></head><body><h1>You hit your OVHcloud load balancer member #1 !</h1></body></html>
 ```
 
 ### Étape 5 - Effectuer la maintenance
@@ -373,8 +373,8 @@ done
 Vous devriez voir des réponses alternées provenant des deux membres :
 
 ```html
-<html><head><title>Load Balanced Member 1</title></head><body><h1>You hit your OVHCloud load balancer member #1 !</h1></body></html>
-<html><head><title>Load Balanced Member 0</title></head><body><h1>You hit your OVHCloud load balancer member #0 !</h1></body></html>
+<html><head><title>Load Balanced Member 1</title></head><body><h1>You hit your OVHcloud load balancer member #1 !</h1></body></html>
+<html><head><title>Load Balanced Member 0</title></head><body><h1>You hit your OVHcloud load balancer member #0 !</h1></body></html>
 ```
 
 ## Aller plus loin

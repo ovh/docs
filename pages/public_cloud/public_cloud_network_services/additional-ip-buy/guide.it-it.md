@@ -74,7 +74,7 @@ Per la geolocalizzazione degli IP sono disponibili i seguenti Paesi:
 > È possibile che alcuni di questi Paesi non siano elencati, in base alla disponibilità attuale degli indirizzi IPv4.
 > 
 
-> [!primary] **Noleggio**
+> [!primary] **Localizzazione**
 >
 > La geolocalizzazione di IP è basata esclusivamente su organismi di riferimento.
 > 

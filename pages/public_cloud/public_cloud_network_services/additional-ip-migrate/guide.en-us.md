@@ -56,7 +56,7 @@ Click on the drop-down menu to choose the destination instance from the list.
 
 Confirm by clicking on `Attach`{.action}.
 
-After a few seconds, the Control Panel will be updated and a confirmation message will be displayed if the migration was done sucessfully.
+After a few seconds, the Control Panel will be updated and a confirmation message will be displayed if the migration was done successfully.
 
 ![migrating Additional IP](images/migrateip_03.png){.thumbnail}
 

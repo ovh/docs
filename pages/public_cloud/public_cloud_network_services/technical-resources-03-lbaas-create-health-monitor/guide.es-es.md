@@ -201,4 +201,4 @@ Each method offers specific advantages depending on your familiarity with the to
 
 ## Go further
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

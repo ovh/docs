@@ -148,7 +148,7 @@ You can create a private network in a selected region and attach Gateway to it. 
 
 /// details | Is the Gateway outbound public IP protected against DDoS attacks?
 
-Yes, the [OHVcloud Anti-DDoS infrastructure](/links/security/antiddos) is activated on all those IPs. You can view that information in the `Bare Metal Cloud > Network > IP` section of the Control Panel. 
+Yes, the [OVHcloud Anti-DDoS infrastructure](/links/security/antiddos) is activated on all those IPs. You can view that information in the `Bare Metal Cloud > Network > IP` section of the Control Panel. 
 
 ///
 
@@ -177,7 +177,7 @@ The pool for a Floating IP must be "Ext-Net" and you can associate it to a port 
 
 /// details | Are the Floating IPs protected against DDoS attacks?
 
-Yes, the [OHVcloud Anti-DDoS infrastructure](/links/security/antiddos) is activated on all the Floating IPs. You can view that information in the `Bare Metal Cloud > Network > IP` section of the Control Panel. 
+Yes, the [OVHcloud Anti-DDoS infrastructure](/links/security/antiddos) is activated on all the Floating IPs. You can view that information in the `Bare Metal Cloud > Network > IP` section of the Control Panel. 
 
 ///
 

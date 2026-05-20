@@ -6,7 +6,7 @@ updated: 2024-01-22
 
 ## Objective
 
-This page explains how to update the properties of an existing subnet. This can be needed if you want to comply with the pre requisites to be able to use the Public Cloud Gateway : have a gateway IP defined in your subnet.
+This page explains how to update the properties of an existing subnet. This can be needed if you want to comply with the prerequisites to be able to use the Public Cloud Gateway : have a gateway IP defined in your subnet.
 
 For this example, we will use a private network and a subnet with the following properties:
 
@@ -44,7 +44,7 @@ Click the `Subnets` tab: the subnets from the private network are listed.
 
 Click on your `Edit Subnet`. For this guide, our target is to add a gateway IP:
 
-- Click untick the  `Disable Gateway`. The field `Gateway IP` will appear. Fill it in with an IP within your CIDR (usually the first IP of the range is used). In our case, `10.1.0.1`.
+- Untick the `Disable Gateway`. The field `Gateway IP` will appear. Fill it in with an IP within your CIDR (usually the first IP of the range is used). In our case, `10.1.0.1`.
 
 ![gateway IP](images/add_gateway_ip.png){.thumbnail}
 
