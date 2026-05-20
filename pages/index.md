@@ -596,6 +596,8 @@
             + [IAM Rights Management - Bare Metal Pod SecNumCloud](hosted_private_cloud/baremetal_pod/snc_iam_manage)
     + [On-Prem Cloud Platform](products/hosted-private-cloud-hosted-private-cloud-opcp)
         + [Getting started](hosted-private-cloud-hosted-private-cloud-opcp-getting-started)
+            + [OPCP - Network integration and platform connectivity](hosted_private_cloud/opcp/opcp-network-architecture)
+            + [OPCP - Technical prerequisites for deployment](hosted_private_cloud/opcp/opcp-prerequisites)
             + [Getting started with your OPCP](hosted_private_cloud/opcp/opcp-getting-started)
             + [OPCP - Node lifecycle](hosted_private_cloud/opcp/node-lifecycle)
             + [OPCP - How to use the APIs and obtain the credentials](hosted_private_cloud/opcp/how-to-use-api-and-get-credentials)
