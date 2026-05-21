@@ -1,7 +1,7 @@
 ---
 title: Capabilities and Limitations of Analytics with Kafka
 excerpt: Discover the capabilities and limitations of Analytics for Kafka
-updated: 2026-04-15
+updated: 2026-05-21
 ---
 
 ## Objective
@@ -32,7 +32,10 @@ The Public Cloud Analytics offer is available in the following regions:
 
 The Public Cloud Analytics offer supports the following Kafka version:
 
-- Kafka 3.8
+- Kafka 3.8 (Soon deprecated)
+- Kafka 3.9
+- Kafka 4.0
+- Kafka 4.1
 
 Please refer to the [Analytics lifecycle policy guide](/pages/public_cloud/data_analytics/analytics/information_02_lifecycle_policy) for recommendations on version upgrades and end of life announcements of major versions. Additionally, you can follow Kafka Release Cycle on their official page: <https://kafka.apache.org/downloads>
 
