@@ -69,13 +69,17 @@ To set a custom IP allocation policy on pods and/or services, you can use the fo
   "nodepool": {
     "desiredNodes": 3,
     "flavorName": "b3-8",
-    "name": "my-nodepool"
+    "name": "my-nodepool-zone-b",
+    "availabilityZones": ["eu-west-par-b"]
   },
-  "region": "GRA11",
+  "region": "EU-WEST-PAR",
   "ipAllocationPolicy": {
     "podsIpv4Cidr": "172.16.0.0/12",
     "servicesIpv4Cidr": "10.100.0.0/16"
-  }
+  },
+  "privateNetworkId": "a60144a6-5ec1-4fe5-af79-31032f37876a",
+  "nodesSubnetId": "ca2809f6-b7ef-40d8-8ef1-4b64c1a1ffae",
+  "plan": "standard"
 }
 ```
 
