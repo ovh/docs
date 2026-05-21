@@ -4,13 +4,9 @@ excerpt: Configure the OVHcloud Web Application Firewall to inspect, filter, and
 updated: 2026-05-20
 ---
 
-## Introduction
-
-The OVHcloud Web Application Firewall is a high-performance, multi-tenant Web Application Firewall that inspects, filters, and blocks malicious HTTP/HTTPS traffic before it reaches your backend applications, with no code changes required on the protected service. Its rules engine is based on the **OWASP Core Rule Set (CRS)**, covering common attack vectors such as SQL injection (SQLi), cross-site scripting (XSS), remote code execution (RCE), local file inclusion (LFI), server-side template injection (SSTI), and scanner detection. The WAF is operated through the **OWAF Admin UI**, a web console for real-time configuration and monitoring.
-
 ## Objective
 
-This guide walks you through the end-to-end setup of the OVHcloud Web Application Firewall during the alpha programme, from requesting access to applying custom rules and monitoring live traffic. It also describes the most common configuration scenarios and best practices.
+This guide presents the capabilities and walks you through the end-to-end setup of the OVHcloud Web Application Firewall (OWAF) during the alpha programme, from requesting access to applying custom rules and monitoring live traffic. It also describes the most common configuration scenarios and best practices.
 
 > [!warning]
 >
@@ -28,11 +24,42 @@ This guide walks you through the end-to-end setup of the OVHcloud Web Applicatio
 - Network access from your client to the OWAF instance on port `8443` (Admin UI) and from your clients to port `8084` (WAF data path)
 - Knowledge of HTTP/HTTPS traffic, web application security concepts, and the OWASP Core Rule Set
 
+## Introduction to the OVHcloud Web Application Firewall
+
+The OWAF is a high-performance, multi-tenant Web Application Firewall that inspects, filters, and blocks malicious HTTP/HTTPS traffic before it reaches your backend applications, with no code changes required on the protected service. Its rules engine is based on the **OWASP Core Rule Set (CRS)**, covering common attack vectors such as SQL injection (SQLi), cross-site scripting (XSS), remote code execution (RCE), local file inclusion (LFI), server-side template injection (SSTI), and scanner detection. The WAF is operated through the **OWAF Admin UI**, a web console for real-time configuration and monitoring.
+
+The OVHcloud Web Application Firewall is deployed as an inline reverse proxy. Client traffic is sent to the WAF instance on port `8084`, where each request is inspected against the active rule set and scored against the anomaly threshold. Requests that pass the inspection are forwarded to the backend defined as the **Upstream URL** on the **Proxy** page; requests that exceed the threshold in **Blocking** mode are rejected with a `403 Forbidden` response. Operators configure the engine and view live metrics through the OWAF Admin UI on port `8443`, which is fully independent from the data path.
+
+```mermaid
+flowchart LR
+    Client[Client] -->|HTTP/HTTPS| WAF[OWAF proxy<br/>port 8084<br/>Request inspection]
+    WAF -->|Allowed| Backend[Backend<br/>Upstream URL]
+    WAF -->|Matched in Blocking mode| Blocked[403 Forbidden]
+    Operator[Operator] -->|HTTPS + Bearer token| AdminUI[OWAF Admin UI<br/>port 8443]
+    AdminUI -. Hot reload .-> WAF
+```
+
+For more a more detailed overview of the OWAF, you may consult the dedicated [OVHcloud Labs page](https://labs.ovhcloud.com/en/web-application-firewall).
+
+## Potential use cases
+
+The OWAF supports a range of protection scenarios; the following examples highlight some of the most frequent implementations:
+
+| Use case | How the OWAF helps |
+| :--- | :--- |
+| **Protect a public API** | Block SQLi, XSS, and RCE attempts targeting API endpoints. Use path-prefix rules to apply stricter policies to sensitive routes such as `/admin/`. |
+| **Protect a web application** | Enable Blocking mode with Paranoia Level 1 for broad coverage with minimal false positives. Tune up to Paranoia Levels 2 to 3 for higher-risk applications. |
+| **Pre-production security testing** | Run in Detection mode to see what would be blocked without impacting users. Review the **Stats** dashboard to identify noisy rules before going live. |
+| **Credential and token rotation** | Use the **Proxy** request header rules to rotate service tokens transparently — strip the client's `Authorization` header and inject a backend service token. |
+| **IP allowlisting and blocklisting** | Create custom rules using the `ipmatch` operator on `REMOTE_ADDR` to allow trusted IPs or block known malicious ranges. |
+| **Bot and scraper mitigation** | Create custom rules matching user-agent strings or suspicious request patterns to block automated traffic. |
+| **Multi-layer defence** | Deploy the WAF in front of an existing load balancer or CDN as an additional inspection layer, without changing your existing infrastructure. |
+
 ## Service capabilities and limits
 
-Before configuring the OVHcloud Web Application Firewall, be aware of the following capabilities and constraints.
+Before configuring the OWAF, be aware of the following capabilities and constraints.
 
-### What the OVHcloud Web Application Firewall can do
+### What the OWAF can do
 
 - **Full request inspection** of inbound HTTP/HTTPS traffic, including headers, body, URI, cookies, and query parameters.
 - **OWASP Core Rule Set coverage** with 900+ built-in rules detecting SQLi, XSS, RCE, LFI, SSTI, scanner detection, and other common attack categories.
@@ -62,36 +89,11 @@ Before configuring the OVHcloud Web Application Firewall, be aware of the follow
 > These limits apply to the **alpha** release and will evolve before general availability. Programmatic configuration through an OVHcloud API or a Terraform resource is not part of the alpha — all configuration is performed in the OWAF Admin UI.
 >
 
-## Potential use cases
-
-The OVHcloud Web Application Firewall supports a range of protection scenarios; the following examples highlight some of the most frequent implementations:
-
-| Use case | How the OVHcloud Web Application Firewall helps |
-| :--- | :--- |
-| **Protect a public API** | Block SQLi, XSS, and RCE attempts targeting API endpoints. Use path-prefix rules to apply stricter policies to sensitive routes such as `/admin/`. |
-| **Protect a web application** | Enable Blocking mode with Paranoia Level 1 for broad coverage with minimal false positives. Tune up to Paranoia Levels 2 to 3 for higher-risk applications. |
-| **Pre-production security testing** | Run in Detection mode to see what would be blocked without impacting users. Review the **Stats** dashboard to identify noisy rules before going live. |
-| **Credential and token rotation** | Use the **Proxy** request header rules to rotate service tokens transparently — strip the client's `Authorization` header and inject a backend service token. |
-| **IP allowlisting and blocklisting** | Create custom rules using the `ipmatch` operator on `REMOTE_ADDR` to allow trusted IPs or block known malicious ranges. |
-| **Bot and scraper mitigation** | Create custom rules matching user-agent strings or suspicious request patterns to block automated traffic. |
-| **Multi-layer defence** | Deploy the WAF in front of an existing load balancer or CDN as an additional inspection layer, without changing your existing infrastructure. |
-
 ## Instructions
-
-The OVHcloud Web Application Firewall is deployed as an inline reverse proxy. Client traffic is sent to the WAF instance on port `8084`, where each request is inspected against the active rule set and scored against the anomaly threshold. Requests that pass the inspection are forwarded to the backend defined as the **Upstream URL** on the **Proxy** page; requests that exceed the threshold in **Blocking** mode are rejected with a `403 Forbidden` response. Operators configure the engine and view live metrics through the OWAF Admin UI on port `8443`, which is fully independent from the data path.
-
-```mermaid
-flowchart LR
-    Client[Client] -->|HTTP/HTTPS| WAF[OWAF proxy<br/>port 8084<br/>Request inspection]
-    WAF -->|Allowed| Backend[Backend<br/>Upstream URL]
-    WAF -->|Matched in Blocking mode| Blocked[403 Forbidden]
-    Operator[Operator] -->|HTTPS + Bearer token| AdminUI[OWAF Admin UI<br/>port 8443]
-    AdminUI -. Hot reload .-> WAF
-```
 
 ### Step 1: Join the alpha
 
-The OVHcloud Web Application Firewall is currently available as a closed alpha. To request access, fill in the form on the [OVHcloud Labs](https://labs.ovhcloud.com/en/) page with the following information:
+The OWAF is currently available as a closed alpha. To request access, fill in the form on the [OVHcloud Labs](https://labs.ovhcloud.com/en/) page with the following information:
 
 - Your OVHcloud NIC handle (customer identifier)
 - A brief description of your use case
@@ -177,12 +179,12 @@ After Steps 2 to 4, validate that the WAF is processing traffic as expected:
 
 > [!warning]
 >
-> The OVHcloud Web Application Firewall is currently single-tenant per instance and does not persist rule changes across reboots in the alpha release. Do not rely on it as the sole protection layer for a production workload until general availability.
+> The OWAF is currently single-tenant per instance and does not persist rule changes across reboots in the alpha release. Do not rely on it as the sole protection layer for a production workload until general availability.
 >
 
 ## Use case: Managing built-in rules
 
-The **Rules** page is the default landing page after sign-in. It lets you view, search, enable, disable, and tune the OWASP Core Rule Set rules shipped with the OVHcloud Web Application Firewall.
+The **Rules** page is the default landing page after sign-in. It lets you view, search, enable, disable, and tune the OWASP Core Rule Set rules shipped with the OWAF.
 
 ### Rules summary bar
 
@@ -408,7 +410,7 @@ Use the **Credential rotation (auth token)** preset on the **Proxy** page. It mo
 
 ## Troubleshooting
 
-If you encounter issues with the OVHcloud Web Application Firewall, work through the checks below.
+If you encounter issues with the OWAF, work through the checks below.
 
 | Symptom | Possible cause | Resolution |
 | :--- | :--- | :--- |
@@ -436,7 +438,7 @@ Then report the issue to your OVHcloud contact.
 | **Anomaly Threshold** | The score value at which a request is blocked. Lower = stricter. Default: `5`. |
 | **Blocking Mode** | The WAF actively blocks requests that exceed the anomaly threshold. Recommended for production. |
 | **Built-in Rule** | A rule shipped with the WAF based on the OWASP Core Rule Set. Cannot be edited or deleted, but can be disabled or have its action and Paranoia Level changed. |
-| **CRS** | OWASP Core Rule Set — the industry-standard open-source WAF rule set that the OVHcloud Web Application Firewall is based on. |
+| **CRS** | OWASP Core Rule Set — the industry-standard open-source WAF rule set that the OWAF is based on. |
 | **Custom Rule** | A user-created rule. Can be fully edited and deleted. |
 | **Detection Mode** | The WAF evaluates all rules and logs events, but allows all requests through. Used for testing. |
 | **LFI** | Local File Inclusion — an attack that attempts to read files from the server. |
