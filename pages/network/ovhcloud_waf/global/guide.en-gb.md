@@ -4,9 +4,11 @@ excerpt: Configure the OVHcloud Web Application Firewall to inspect, filter, and
 updated: 2026-05-20
 ---
 
-## Objective
+## Introduction
 
-The OVHcloud Web Application Firewall is a high-performance, multi-tenant Web Application Firewall that inspects, filters, and blocks malicious HTTP/HTTPS traffic before it reaches your backend applications, with no code changes required on the protected service. Its rules engine is based on the **OWASP Core Rule Set (CRS)** — covering common attack vectors such as SQL injection (SQLi), cross-site scripting (XSS), remote code execution (RCE), local file inclusion (LFI), server-side template injection (SSTI), and scanner detection — and is operated through the **OWAF Admin UI**, a web console for real-time configuration and monitoring.
+The OVHcloud Web Application Firewall is a high-performance, multi-tenant Web Application Firewall that inspects, filters, and blocks malicious HTTP/HTTPS traffic before it reaches your backend applications, with no code changes required on the protected service. Its rules engine is based on the **OWASP Core Rule Set (CRS)**, covering common attack vectors such as SQL injection (SQLi), cross-site scripting (XSS), remote code execution (RCE), local file inclusion (LFI), server-side template injection (SSTI), and scanner detection. The WAF is operated through the **OWAF Admin UI**, a web console for real-time configuration and monitoring.
+
+## Objective
 
 This guide walks you through the end-to-end setup of the OVHcloud Web Application Firewall during the alpha programme, from requesting access to applying custom rules and monitoring live traffic. It also describes the most common configuration scenarios and best practices.
 
