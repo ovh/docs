@@ -58,6 +58,8 @@ You can use the BMC remote console to mount the ISO and boot the server, but the
 
 Boot the server from the installation media, then follow the interactive installer.
 
+In the GRUB menu, select the `Auto Install` entry to start the installation.
+
 During the installation, the image:
 
 - detects the available physical disks

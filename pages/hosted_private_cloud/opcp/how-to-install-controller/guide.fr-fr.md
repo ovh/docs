@@ -58,6 +58,8 @@ Vous pouvez utiliser la console distante du BMC pour monter l'ISO et démarrer l
 
 Démarrez le serveur sur le support d'installation puis suivez l'installeur interactif.
 
+Dans le menu GRUB, sélectionnez l'entrée `Auto Install` pour lancer l'installation.
+
 Pendant l'installation, l'image :
 
 - détecte les disques physiques disponibles
