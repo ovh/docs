@@ -30,7 +30,7 @@ Un serveur dédié est un serveur physique (« bare metal ») situé dans l’un
 
 ### Sommaire
 
-- [Installing or reinstalling an operating system](#install)
+- [Installation ou réinstallation de votre serveur dédié](#install)
 - [Connexion à votre serveur](#connect)
 - [Redémarrage de votre serveur dédié](#reboot)
 - [Sécurisation de votre serveur dédié](#secure)
