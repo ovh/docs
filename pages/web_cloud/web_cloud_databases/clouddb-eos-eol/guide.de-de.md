@@ -1,6 +1,6 @@
 ---
 title: Web Cloud Databases - EOL und EOS Ankündigungen
-updated: 2026-03-06
+updated: 2026-05-21
 ---
 
 ## Ziel
@@ -12,13 +12,13 @@ Weitere Informationen erhalten Sie auf der Seite zur [EOL Policy für Managed Da
 |Version|EOL Ankündigung|End-of-Sale|End-of-Support|
 |---|---|---|---|
 |MariaDB 10.6|2025-02-12|2026-01-04|2026-07-06|
-|MariaDB 10.11|Noch festzulegen|Noch festzulegen|Noch festzulegen|
+|MariaDB 10.11|2026-05-22|2027-08-17|2028-02-16|
 |MariaDB 11.4|Noch festzulegen|Noch festzulegen|Noch festzulegen|
 |MariaDB 11.8|Noch festzulegen|Noch festzulegen|Noch festzulegen|
 |MySQL 8.0|2025-03-17|2025-09-30|2026-04-01|
 |MySQL 8.4|Noch festzulegen|Noch festzulegen|Noch festzulegen|
-|PostgreSQL 14|2025-02-12|2026-05-13|2026-11-12|
-|PostgreSQL 15|Noch festzulegen|Noch festzulegen|Noch festzulegen|
+|PostgreSQL 14|2025-02-12|2026-08-22|2026-11-21|
+|PostgreSQL 15|2026-05-22|2027-05-12|2027-11-11|
 |PostgreSQL 16|Noch festzulegen|Noch festzulegen|Noch festzulegen|
 |PostgreSQL 17|Noch festzulegen|Noch festzulegen|Noch festzulegen|
 |PostgreSQL 18|Noch festzulegen|Noch festzulegen|Noch festzulegen|
