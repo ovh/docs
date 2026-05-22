@@ -42,6 +42,7 @@ Before writing the image to your boot media, download the ISO and its SHA-256 ch
 > The published artifacts are stored in the delivery bucket under the `opcp-controller-debian-image/<version>/` prefix.
 >
 > Use a dedicated credential pair restricted to read-only access on that bucket and prefix. Load it only into your current shell or through your secret manager, then remove it after the download.
+> Common base endpoints include `s3.sbg.io.cloud.ovh.net` and `s3.gra.io.cloud.ovh.net`.
 
 Set your environment variables first:
 

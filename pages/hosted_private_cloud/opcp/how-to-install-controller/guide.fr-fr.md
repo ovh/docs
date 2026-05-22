@@ -42,6 +42,7 @@ Avant d'écrire l'image sur votre support de démarrage, téléchargez l'ISO et 
 > Les artefacts sont publiés dans le bucket de livraison sous le préfixe `opcp-controller-debian-image/<version>/`.
 >
 > Utilisez une paire de credentials dédiée, limitée en lecture à ce bucket et à ce préfixe. Chargez-la uniquement dans votre shell courant ou depuis votre gestionnaire de secrets, puis supprimez-la après le téléchargement.
+> Les endpoints de base peuvent par exemple être `s3.sbg.io.cloud.ovh.net` ou `s3.gra.io.cloud.ovh.net`.
 
 Renseignez d'abord les variables de votre environnement :
 
