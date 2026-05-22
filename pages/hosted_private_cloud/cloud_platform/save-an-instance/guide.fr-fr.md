@@ -107,6 +107,76 @@ $ s3cmd la
 > Une sauvegarde a été créée et stockée dans le bucket S3.
 >
 
+### Planifier une tâche récurrente
+
+Une fois la commande testée, il est possible de planifier une tâche récurrente.
+
+1\. Créez un fichier contenant les variables d'environnement sensibles :
+
+```bash
+sudo mkdir -p /etc/restic
+sudo tee /etc/restic/credentials > /dev/null <<'EOF'
+AWS_DEFAULT_REGION=eu-west-rbx-snc
+AWS_ACCESS_KEY_ID=YOUR_ACCESS_KEY_ID
+AWS_SECRET_ACCESS_KEY=YOUR_SECRET_ACCESS_KEY
+RESTIC_REPOSITORY=s3:https://s3-beta.eu-west-rbx-snc.cloud.snc.ovh.net/backup
+RESTIC_PASSWORD=YOUR_RESTIC_PASSWORD
+EOF
+sudo chmod 600 /etc/restic/credentials
+```
+
+2\. Créez l'unité de service systemd :
+
+```bash
+sudo tee /etc/systemd/system/restic-backup.service > /dev/null <<'EOF'
+[Unit]
+Description=Restic backup
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+User=YOUR_USER
+Group=YOUR_GROUP
+EnvironmentFile=/etc/restic/credentials
+Type=oneshot
+ExecStart=/usr/bin/restic backup /var/log/ \
+  --log-file=/var/log/restic-backup.log
+EOF
+```
+
+3\. Créez l'unité de timer systemd :
+
+```bash
+sudo tee /etc/systemd/system/restic-backup.timer > /dev/null <<'EOF'
+[Unit]
+Description=Run Restic backup daily
+
+[Timer]
+OnCalendar=daily
+Persistent=true
+RandomizedDelaySec=15m
+
+[Install]
+WantedBy=timers.target
+EOF
+```
+
+4\. Rechargez la configuration systemd et activez le timer :
+
+```bash
+sudo systemctl daemon-reload
+sudo systemctl enable --now restic-backup.timer
+```
+
+5\. Vérifiez la configuration :
+
+```bash
+systemctl list-timers --all | grep restic
+sudo systemctl enable --now restic-backup.service
+systemctl status restic-backup.service
+journalctl -u restic-backup.service
+```
+
 ## Aller plus loin
 
 Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en œuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](/links/professional-services) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
