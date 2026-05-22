@@ -432,6 +432,8 @@
             + [End-Of-Life management for LV1 and LV2 storage](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/eol-storage-migration)
             + [Public VCF as-a-Service - Migrate from VMware vSphere on OVHcloud](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd_migration_use-cases)
             + [Public VCF as-a-Service - Setting up your network after vSphere to Public VCF as-a-Service migration](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd_post_migration)
+            + [Public VCF as-a-Service Migration with VCDA - Getting Started](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcda-getting-started)
+            + [Trigger your first VCDA migration to Public VCF as-a-Service](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcda-trigger-migration)
             + [Reversibility Policy for the Managed Mutualized Virtualization product](account_and_service_management/reversibility/23-mutualized-virtualization-vcd-reversibility)
         + [Tutorials](hosted-private-cloud-public-VCF-tutorials)
             + [Public VCF as-a-Service - Creating a new virtual machine](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd-first-vm-creation)
