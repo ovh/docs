@@ -10,7 +10,7 @@ Ce guide explique comment installer un contrôleur **OPCP** à partir de l'image
 
 > [!primary]
 >
-> Dans ce guide, le réseau **OOB** correspond au réseau d'accès du contrôleur. Il s'agit du premier port réseau de données du serveur, connecté à votre réseau.
+> Dans ce guide, le réseau **OOB** correspond au réseau d'accès du contrôleur. Il s'agit de la première interface réseau physique du serveur, connectée à votre réseau.
 >
 > Ce réseau n'est pas le port d'administration dédié du serveur (IPMI, iDRAC, iLO, etc.), qui peut uniquement servir à monter l'ISO ou à ouvrir une console distante.
 
@@ -29,7 +29,7 @@ Ce guide explique comment installer un contrôleur **OPCP** à partir de l'image
 - Un accès à la console locale ou à la console distante du serveur (IPMI, iDRAC, iLO, etc.)
 - Au moins deux disques physiques de taille comparable pour l'installation en RAID 1
 - Un câble réseau branché sur la première interface réseau du serveur et raccordé à votre réseau
-- Si vous utilisez une configuration statique, l'adresse IP, le masque, la passerelle et les serveurs DNS du réseau d'accès du contrôleur
+- L'adresse IP, le masque, la passerelle et les serveurs DNS du réseau d'accès du contrôleur
 
 ## En pratique
 
@@ -133,10 +133,8 @@ Remplacez `/dev/sdX` par le périphérique correspondant à votre support d'inst
 
 Avant de démarrer l'installation :
 
-- connectez le premier port réseau de données du serveur à votre réseau
-- si le serveur dispose de plusieurs interfaces de données, utilisez la première pour faciliter son identification pendant l'installation, et n'en connectez aucune autre
-
-Vous pouvez utiliser la console distante du BMC pour monter l'ISO et démarrer le serveur, mais le port BMC/IPMI ne doit pas être utilisé comme réseau d'accès du contrôleur.
+- connectez la première interface réseau du serveur à votre réseau
+- si le serveur dispose de plusieurs interfaces réseau, utilisez la première pour faciliter son identification pendant l'installation, et n'en connectez aucune autre
 
 ### 3. Démarrer l'installeur
 

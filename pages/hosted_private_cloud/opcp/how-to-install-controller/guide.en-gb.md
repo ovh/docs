@@ -10,7 +10,7 @@ This guide explains how to install an **OPCP** controller from the Debian-based 
 
 > [!primary]
 >
-> In this guide, the **OOB** network refers to the controller access network. It is the server's first physical data interface, connected to your network.
+> In this guide, the **OOB** network refers to the controller access network. It is the server's first physical network interface, connected to your network.
 >
 > It is not the server's dedicated management port (IPMI, iDRAC, iLO, and so on), which should only be used to mount the ISO or open a remote console.
 
@@ -29,7 +29,7 @@ This guide explains how to install an **OPCP** controller from the Debian-based 
 - Access to the local console or to the server's remote management console (IPMI, iDRAC, iLO, and so on)
 - At least two physical disks of comparable size for the RAID 1 installation
 - One network cable connected to the server's first network interface and to your network
-- If you use a static configuration, the IP address, subnet mask, gateway, and DNS servers for the controller access network
+- The IP address, subnet mask, gateway, and DNS servers for the controller access network
 
 ## Instructions
 
@@ -133,10 +133,8 @@ Replace `/dev/sdX` with the device corresponding to your installation media.
 
 Before you start the installation:
 
-- connect the server's first data network interface to your network
-- if the server has several data interfaces, use the first one so that it is easier to identify during the installation, and do not connect any other one
-
-You can use the BMC remote console to mount the ISO and boot the server, but the BMC or IPMI port must not be used as the controller access network.
+- connect the server's first network interface to your network
+- if the server has several network interfaces, use the first one so that it is easier to identify during the installation, and do not connect any other one
 
 ### 3. Boot the installer
 
