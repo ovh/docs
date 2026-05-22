@@ -1,7 +1,7 @@
 ---
 title: "OPCP - How to install a controller"
 excerpt: "Learn how to install an OPCP controller from the Debian image provided by OVHcloud"
-updated: 2026-05-21
+updated: 2026-05-22
 ---
 
 ## Objective
@@ -10,7 +10,7 @@ This guide explains how to install an **OPCP** controller from the Debian-based 
 
 > [!primary]
 >
-> In this guide, the **OOB** network refers to the controller access network. It is the server's first physical data interface, connected to the customer's network.
+> In this guide, the **OOB** network refers to the controller access network. It is the server's first physical data interface, connected to your network.
 >
 > It is not the server's dedicated management port (IPMI, iDRAC, iLO, and so on), which should only be used to mount the ISO or open a remote console.
 
@@ -23,21 +23,105 @@ This guide explains how to install an **OPCP** controller from the Debian-based 
 ## Prerequisites
 
 - A physical server intended to host the OPCP controller
-- The OPCP installation image: <https://opcp-public-release.snc.ovh.net/releases/live-image-amd64.hybrid.iso>
+- Read-only access to the OPCP delivery S3 bucket, including the S3 endpoint, bucket name, region, and OPCP version to download
+- A dedicated S3 access key and secret key, restricted to read-only access on that bucket and delivery prefix
 - A USB key, virtual media device, or any other bootable installation media
 - Access to the local console or to the server's remote management console (IPMI, iDRAC, iLO, and so on)
 - At least two physical disks of comparable size for the RAID 1 installation
-- One network cable connected to the server's first data interface and to the customer's network
+- One network cable connected to the server's first network interface and to your network
 - If you use a static configuration, the IP address, subnet mask, gateway, and DNS servers for the controller access network
 
 ## Instructions
 
-### 1. Download the installation image
+### 1. Download and verify the installation image
 
-Download the OPCP installation image, then write it to your boot media:
+Before writing the image to your boot media, download the ISO and its SHA-256 checksum from the read-only S3 bucket provided to you.
+
+> [!primary]
+>
+> The published artifacts are stored in the delivery bucket under the `opcp-controller-debian-image/<version>/` prefix.
+>
+> Use a dedicated credential pair restricted to read-only access on that bucket and prefix. Load it only into your current shell or through your secret manager, then remove it after the download.
+
+Set your environment variables first:
 
 ```bash
-curl -O https://opcp-public-release.snc.ovh.net/releases/live-image-amd64.hybrid.iso
+export S3_ENDPOINT="<s3-endpoint>"
+export S3_BUCKET="<s3-bucket>"
+export S3_REGION="<s3-region>"
+export OPCP_VERSION="<opcp-release-version>"
+export S3_PREFIX="opcp-controller-debian-image/${OPCP_VERSION}"
+export S3_ACCESS_KEY="<read-only-access-key>"
+export S3_SECRET_KEY="<read-only-secret-key>"
+```
+
+Then download the files with `s3cmd` (the recommended method for authenticated S3 access):
+
+```bash
+sudo apt-get update
+sudo apt-get install -y s3cmd
+
+s3cfg=$(mktemp)
+chmod 600 "$s3cfg"
+
+cat >"$s3cfg" <<EOF
+[default]
+access_key = ${S3_ACCESS_KEY}
+secret_key = ${S3_SECRET_KEY}
+host_base = ${S3_ENDPOINT}
+host_bucket = %(bucket).${S3_ENDPOINT}
+bucket_location = ${S3_REGION}
+EOF
+
+for artifact in \
+	live-image-amd64.hybrid.iso \
+	live-image-amd64.hybrid.iso.sha256; do
+	s3cmd -c "$s3cfg" get \
+		"s3://${S3_BUCKET}/${S3_PREFIX}/${artifact}" \
+		"${artifact}"
+done
+
+rm -f "$s3cfg"
+```
+
+If your environment already standardises downloads with `curl`, you can use a SigV4-signed HTTPS request instead:
+
+```bash
+download_with_curl() {
+	local artifact="$1"
+	local curl_config
+	curl_config=$(mktemp)
+	chmod 600 "$curl_config"
+
+	cat >"$curl_config" <<EOF
+url = "https://${S3_BUCKET}.${S3_ENDPOINT}/${S3_PREFIX}/${artifact}"
+user = "${S3_ACCESS_KEY}:${S3_SECRET_KEY}"
+aws-sigv4 = "aws:amz:${S3_REGION}:s3"
+output = "${artifact}"
+fail
+silent
+show-error
+EOF
+
+	curl --config "$curl_config"
+	rm -f "$curl_config"
+}
+
+for artifact in \
+	live-image-amd64.hybrid.iso \
+	live-image-amd64.hybrid.iso.sha256; do
+	download_with_curl "$artifact"
+done
+```
+
+If your `curl` build does not support SigV4, use the `s3cmd` method.
+
+Then verify the checksum before writing the ISO:
+
+```bash
+sha256sum -c live-image-amd64.hybrid.iso.sha256
+
+unset S3_ACCESS_KEY S3_SECRET_KEY
 
 sudo dd if=live-image-amd64.hybrid.iso of=/dev/sdX bs=4M status=progress oflag=sync
 ```
@@ -48,9 +132,8 @@ Replace `/dev/sdX` with the device corresponding to your installation media.
 
 Before you start the installation:
 
-- connect the server's first data network interface to the customer's network
-- keep the dedicated management port (IPMI, iDRAC, iLO, and so on) separate from this network configuration
-- if the server has several data interfaces, use the first one so that it is easier to identify during the installation
+- connect the server's first data network interface to your network
+- if the server has several data interfaces, use the first one so that it is easier to identify during the installation, and do not connect any other one
 
 You can use the BMC remote console to mount the ISO and boot the server, but the BMC or IPMI port must not be used as the controller access network.
 
@@ -80,8 +163,8 @@ The installer automatically creates the RAID 1 configuration and the system LVM 
 
 When the installer shows the list of physical network interfaces:
 
-1. Select the interface connected to the customer's network.
-2. Choose `DHCP` if addressing is provided automatically, or `Static` if you need to enter the settings manually.
+1. Select the interface connected to your network.
+2. Choose `Static` to enter the configuration manually.
 3. In static mode, enter the IP address, subnet mask, gateway, and DNS servers requested by the installer.
 4. Confirm the summary before the network configuration is written.
 
@@ -91,7 +174,7 @@ At the end of the base installation, this configuration is applied to the instal
 
 After the server restarts:
 
-1. Connect from the network linked to the server's first data interface.
+1. Connect from the network linked to the server's first network interface.
 2. Verify that the controller IP address responds over SSH.
 3. Verify that the controller can reach the network resources it needs in your environment.
 
@@ -103,7 +186,7 @@ After the first boot, log in to the controller and adjust the logical volume siz
 
 > [!warning]
 >
-> The sizes below are example targets. Check the used and available space before reducing any volume, then adapt the values to your disk capacity.
+> The sizes below are example targets for 900 GB disks. Check the used and available space before reducing any volume, then adapt the values to your disk capacity.
 
 Start by reducing the `spare` volume, then reallocate the released space to the volumes you actually use:
 
