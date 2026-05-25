@@ -136,13 +136,7 @@ Exemple en configuration 3 contrôleurs :
 
 OPCP doit présenter des certificats TLS valides pour ses interfaces (API OpenStack, Horizon, services internes). Trois options sont supportées ; vous devez choisir l'une d'entre elles avant le déploiement.
 
-#### Option A — Autorité de certification auto-signée générée par OPCP
-
-OPCP génère sa propre autorité de certification interne et signe les certificats nécessaires. **Vous n'avez rien à fournir.** La rotation est gérée automatiquement par CertManager.
-
-C'est l'option la plus simple, adaptée si votre politique de sécurité tolère une CA interne au périmètre OPCP. Vous devrez en revanche distribuer le certificat racine d'OPCP à vos clients pour éviter les alertes de sécurité.
-
-#### Option B — Autorité de certification intermédiaire fournie par le client
+#### Option A — Recommandée - Autorité de certification intermédiaire fournie par le client
 
 Vous fournissez une CA intermédiaire dérivée de votre PKI interne. OPCP l'utilise pour signer les certificats des services. Vous devez transmettre :
 
@@ -151,6 +145,11 @@ Vous fournissez une CA intermédiaire dérivée de votre PKI interne. OPCP l'uti
 
 La rotation des certificats émis sous cette intermédiaire reste gérée par CertManager côté OPCP.
 
+#### Option B — Autorité de certification auto-signée générée par OPCP
+
+OPCP génère sa propre autorité de certification interne et signe les certificats nécessaires. **Vous n'avez rien à fournir.** La rotation est gérée automatiquement par CertManager.
+
+C'est l'option la plus simple, adaptée si votre politique de sécurité tolère une CA interne au périmètre OPCP. Vous devrez en revanche distribuer le certificat racine d'OPCP à vos clients pour éviter les alertes de sécurité.
 #### Option C — Let's Encrypt
 
 OPCP demande automatiquement les certificats auprès de Let's Encrypt. Cette option nécessite :

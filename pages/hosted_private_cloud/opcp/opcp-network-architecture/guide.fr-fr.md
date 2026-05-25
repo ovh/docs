@@ -78,13 +78,13 @@ Le réseau OOB est le réseau **par lequel OPCP s'administre lui-même** et par 
 
 Côté matériel, le réseau OOB s'appuie sur :
 
-- un **commutateur de management** dédié, qui agrège les BMC des serveurs, les ports de management des commutateurs data et les liens BMC des contrôleurs,
 - les **OPCP Core Controllers**, équipés d'un uplink OOB qui négocie en **25 GbE ou 10 GbE** selon les capacités de votre infrastructure amont, et d'un port 1 GbE BMC,
 - des **liens uplink** vers votre réseau OOB amont (*Customer Upstream OOB Network*).
 
 > [!warning]
 >
-> En modes MINIPOD et FABRIC, les trois OPCP Core Controllers **communiquent entre eux à travers votre réseau OOB amont**. La résilience du plan de contrôle dépend donc directement de la disponibilité de cette connexion réseau : une panne prolongée du réseau OOB client peut perturber le quorum et l'administration de la plateforme. Le mode **NANOPOD** n'est pas concerné, puisqu'il ne dispose que d'un seul contrôleur.
+> En modes MINIPOD et FABRIC, les trois OPCP Core Controllers sont accessible via une adresse IP virtuelle commune dont le bon fonctionnement nécessite une communication au sein d'un réseau L2 non taggé commun entre les trois OPCP Core Controllers. La disponibilité du plan de contrôle dépend donc directement de la disponibilité de cette connexion réseau : une panne prolongée du réseau OOB client peut perturber l'accès à l'administration de la plateforme. Le mode **NANOPOD** n'est pas concerné, puisqu'il ne dispose que d'un seul contrôleur.
+> Les données échangées entre les OPCP Core Controllers le sont au travers du réseau de OPCP. Seul la disponibilité aux administrateurs du plan de contrôle peut être affectué par des soucis sur le réseau OOB.
 >
 
 > [!warning]
