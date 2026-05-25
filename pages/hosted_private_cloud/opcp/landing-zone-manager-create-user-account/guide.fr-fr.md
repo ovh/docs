@@ -23,7 +23,13 @@ Le Landing Zone Manager est le portail OPCP qui permet à chaque équipe, dépar
 
 Connectez-vous au Landing Zone Manager avec un compte disposant des privilèges d'administrateur. Depuis la navigation principale, ouvrez la section `Account management`{.action}.
 
+<<<<<<< HEAD
 ### Étape 2 : Créer un nouveau compte utilisateur
+=======
+![Page d'accueil du Landing Zone Manager](images/landingzone_homepage.png){.thumbnail}
+
+### Étape 2 : Créer un nouveau compte utilisateur
+>>>>>>> 189a366784 (OPCP Landing Zone Manager - Add screenshots to user account creation guide)
 
 Cliquez sur le bouton `+ Create New account`{.action} pour ouvrir le formulaire de création de compte utilisateur.
 
@@ -37,6 +43,8 @@ Renseignez les champs obligatoires suivants :
 | Last name  | Le nom de famille de l'utilisateur                                                                        |
 
 Une fois tous les champs remplis, confirmez la création du compte utilisateur.
+
+![Formulaire de création d'utilisateur](images/landingzone_create_user.png){.thumbnail}
 
 > [!primary]
 >
@@ -57,7 +65,17 @@ Une fois le compte utilisateur créé avec succès, communiquez l'URL du Landing
 
 ### Correspondance des comptes dans Keycloak
 
+<<<<<<< HEAD
 > [!primary]
+=======
+Une fois le compte utilisateur provisionné, l'utilisateur peut se connecter au Landing Zone Manager en utilisant l'URL communiquée précédemment.
+
+![Formulaire de connexion au Landing Zone Manager](images/landingzone_loginpage.png){.thumbnail}
+
+## Correspondance des comptes dans Keycloak
+
+> [!info]
+>>>>>>> 189a366784 (OPCP Landing Zone Manager - Add screenshots to user account creation guide)
 >
 > Le Landing Zone Manager repose sur sa **propre stack Keycloak dédiée**, indépendante du Keycloak OPCP Core et de tout Keycloak CloudStore. Il n'est pas fédéré avec ces instances : les identités, realms et identifiants gérés dans le Landing Zone Manager sont totalement isolés des autres couches d'identité OPCP dédiées aux administrateurs.
 >

@@ -23,6 +23,8 @@ The Landing Zone Manager is the OPCP portal that lets each team, department or c
 
 Log in to the Landing Zone Manager with an account that has administrator privileges. From the main navigation, open the `Account management`{.action} section.
 
+![Landing Zone Manager home page](images/landingzone_homepage.png){.thumbnail}
+
 ### Step 2: Create a new user account
 
 Click the `+ Create new account`{.action} button to open the user account creation form.
@@ -36,7 +38,9 @@ Fill in the required fields:
 | First name | The user's first name                                                              |
 | Last name  | The user's last name                                                               |
 
-Once all fields are filled in, confirm the user account creation.
+Once all fields are filled in, confirm the creation of the user account.
+
+![User creation form](images/landingzone_create_user.png){.thumbnail}
 
 > [!primary]
 >
@@ -55,7 +59,13 @@ Once the user account is successfully created, share the Landing Zone Manager UR
 > The default password is shared across first logins and is defined at deployment time. For security reasons, users have to change this password immediately after their first successful login.
 >
 
-### How user accounts are mapped in Keycloak
+### Step 4: First connection to the Landing Zone Manager
+
+Once the user account  has been provisioned, the user can connect to the Landing Zone Manager using the URL previously communicated.
+
+![Landing Zone Manager login form](images/landingzone_loginpage.png){.thumbnail}
+
+## How user accounts are mapped in Keycloak
 
 > [!primary]
 >
