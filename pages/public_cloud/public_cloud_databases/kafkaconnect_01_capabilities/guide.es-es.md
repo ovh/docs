@@ -41,8 +41,9 @@ Please refer to the [Analytics lifecycle policy guide](/pages/public_cloud/data_
 
 ### Plans
 
-Three plans are available:
+Four plans are available:
 
+- *Discovery*
 - *Essential*
 - *Business/Production*
 - *Enterprise/Advanced*
@@ -51,6 +52,7 @@ Here is an overview of the various plans' capabilities:
 
 | Plan                  | Number of nodes | Additional nodes |
 | --------------------- | --------------- | ---------------- |
+| *Discovery*           | 1               | No               |
 | *Essential*           | 1               | No               |
 | *Business/Production* | 3               | No               |
 | *Enterprise/Advanced* | 6               | No               |
@@ -59,6 +61,7 @@ Your choice of plan affects the number of nodes your cluster run or the SLA.
 
 #### Nodes
 
+- **Discovery**: the cluster consists of one node.
 - **Essential**: the cluster consists of one node.
 - **Business/Production**: the cluster is delivered with 3 nodes.
 - **Enterprise/Advanced**: the cluster is delivered with 6 nodes.

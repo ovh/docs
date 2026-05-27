@@ -48,6 +48,7 @@ You can use any of the [clients recommended by Redis®](https://redis.io/clients
 
 Two plans are available:
 
+- **Discovery**: 1 node
 - **Essential**: 1 node
 - **Business/Production**: 2 nodes
 

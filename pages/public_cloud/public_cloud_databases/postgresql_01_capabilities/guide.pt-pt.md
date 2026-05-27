@@ -50,6 +50,7 @@ You can use any of the [PostgreSQL-recommended drivers and extensions](https://w
 
 Different plans are available:
 
+- **Discovery**: 1 node
 - **Essential**: 1 node
 - **Business/Production**: 2 nodes
 - **Enterprise/Advanced**: 3 nodes

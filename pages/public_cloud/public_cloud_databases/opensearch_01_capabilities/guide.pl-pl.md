@@ -46,6 +46,7 @@ You can use any of the [OpenSearch-recommended clients and plugins](https://open
 
 Three plans are available:
 
+- **Discovery**: 1 node
 - **Essential**: 1 node
 - **Business/Production**: 3 nodes
 - **Enterprise/Advanced**: 6 nodes

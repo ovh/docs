@@ -47,6 +47,7 @@ You can use any of the [MySQL-recommended connectors and API](https://dev.mysql.
 
 Three plans are available:
 
+- **Discovery**: 1 node
 - **Essential**: 1 node
 - **Business/Production**: 2 nodes
 - **Enterprise/Advanced**: 3 nodes
