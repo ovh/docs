@@ -48,8 +48,7 @@ You can use any of the [clients recommended by Redis®](https://redis.io/clients
 
 Two plans are available:
 
-- **Discovery**: 1 node
-- **Essential**: 1 node
+- **Essential/Discovery**: 1 node
 - **Business/Production**: 2 nodes
 
 Your choice of plan affects the number of nodes your cluster can run, the SLA, and a few other features such as backup retention.

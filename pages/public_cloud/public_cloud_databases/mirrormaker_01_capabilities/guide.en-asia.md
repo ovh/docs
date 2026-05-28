@@ -49,8 +49,7 @@ Additionally, Kafka Connect is available at OVHcloud.
 
 Three plans are available:
 
-- **Discovery**: 1 node
-- **Essential**: 1 node
+- **Essential/Discovery**: 1 node
 - **Business/Production**: 3 nodes
 - **Enterprise/Advanced**: 6 nodes
 
