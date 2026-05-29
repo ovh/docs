@@ -55,3 +55,5 @@ Clients using HDS products must subscribe to a Business or Enterprise support. T
 | Managed Database System for Web Hosting | no | 
 | Domain Name | yes | 
 | Unified Data Platform | yes | 
+| OVHcloud KMS | yes | 
+| Secret Manager | yes | 

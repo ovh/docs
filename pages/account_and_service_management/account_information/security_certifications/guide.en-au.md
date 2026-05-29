@@ -56,3 +56,5 @@ We monitor the new versions of ISO27017, ISO27018 and ISO27701 actually under re
 | Managed Database System for Web Hosting | no | 
 | Domain Name | yes | 
 | Unified Data Platform | yes | 
+| OVHcloud KMS | yes | 
+| Secret Manager | yes | 
