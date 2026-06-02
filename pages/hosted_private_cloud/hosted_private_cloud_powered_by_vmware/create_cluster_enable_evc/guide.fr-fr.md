@@ -82,27 +82,27 @@ Cette section couvre :
 
 - Appliquer les bonnes pratiques VMware by Broadcom
 - Assurer la stabilité du cluster et la disponibilité des workloads
-- Tirer pleinement parti du nouveau matériel PREMIER2026 Generation (basé sur Intel Emerald Rapids)
+- Tirer pleinement parti du nouveau matériel PREMIER 2027 Generation (basé sur Intel Emerald Rapids)
 - Éviter les erreurs de configuration courantes impactant vMotion et la haute disponibilité (HA)
 
-PREMIER2026 augmente les performances par hôte, étend la durée de vie du cluster et permet de scaler avec du matériel de nouvelle génération sans reconstruire depuis zéro.
+PREMIER 2027 augmente les performances par hôte, étend la durée de vie du cluster et permet de scaler avec du matériel de nouvelle génération sans reconstruire depuis zéro.
 
 Cependant, le mélange de générations de CPU dans un cluster introduit des problèmes de compatibilité, notamment pour vMotion (migration à chaud) et les mécanismes de redémarrage HA. C'est là qu'EVC devient indispensable.
 
 #### Cas d'usage pris en charge :
 
 - Cluster hétérogène (croissance progressive)
-- Migration vers PREMIER2026 (cible homogène)
+- Migration vers PREMIER 2027 (cible homogène)
 
 **Cas d'usage 1 : Cluster hétérogène (croissance progressive)**
 
-Vous souhaitez conserver les hôtes existants (Essential / SDDC / Premier) et ajouter progressivement des hôtes PREMIER2026 pour faire évoluer votre cluster dans le temps.
+Vous souhaitez conserver les hôtes existants (Essential / SDDC / Premier) et ajouter progressivement des hôtes PREMIER 2027 pour faire évoluer votre cluster dans le temps.
 
 Approche recommandée :
 
 1. Activer EVC sur le cluster
 2. Sélectionner un mode EVC compatible avec la génération de CPU la plus ancienne
-3. Ajouter des hôtes PREMIER2026
+3. Ajouter des hôtes PREMIER 2027
 4. Continuer à scaler progressivement
 
 > [!warning]
@@ -110,14 +110,14 @@ Approche recommandée :
 > Implications : tous les hôtes fonctionnent sous une base CPU commune ; vous préservez la compatibilité mais ne pourrez pas exploiter pleinement les fonctionnalités CPU les plus récentes (légère limitation de performance due au masquage CPU).
 >
 
-**Cas d'usage 2 : Migration vers PREMIER2026 (cible homogène)**
+**Cas d'usage 2 : Migration vers PREMIER 2027 (cible homogène)**
 
-Vous souhaitez migrer tous les workloads vers PREMIER2026 avant de désaffecter l'ancien matériel.
+Vous souhaitez migrer tous les workloads vers PREMIER 2027 avant de désaffecter l'ancien matériel.
 
 Approche recommandée :
 
 1. Activer EVC sur le cluster (base temporaire pour la migration, peut nécessiter une extinction/allumage de vos VM)
-2. Ajouter des hôtes PREMIER2026
+2. Ajouter des hôtes PREMIER 2027
 3. Utiliser vMotion pour migrer tous les workloads
 4. Retirer les anciens hôtes du cluster
 5. (Optionnel) Reconfigurer ou désactiver EVC pour libérer toutes les capacités CPU (peut nécessiter une extinction/allumage de vos VM)
@@ -130,7 +130,7 @@ Approche recommandée :
 **Approche alternative avec un nouveau cluster**
 
 1. Créer un nouveau cluster (aucune configuration EVC requise)
-2. Ajouter des hôtes PREMIER2026 dans ce nouveau cluster
+2. Ajouter des hôtes PREMIER 2027 dans ce nouveau cluster
 3. Utiliser vMotion pour migrer tous les workloads depuis l'ancien cluster vers le nouveau (un rollback est possible mais nécessite une extinction/allumage de vos VM, EVC n'étant pas activé dans le nouveau cluster)
 4. Retirer les anciens hôtes de l'ancien cluster
 5. Supprimer l'ancien cluster
