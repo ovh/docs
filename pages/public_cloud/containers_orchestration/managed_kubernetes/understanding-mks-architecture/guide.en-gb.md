@@ -1,7 +1,7 @@
 ---
 title: Understanding OVHcloud Managed Kubernetes architecture
 excerpt: 'Learn how OVHcloud Managed Kubernetes Service works under the hood: control plane, worker nodes, networking, and storage'
-updated: 2026-02-25
+updated: 2026-06-15
 ---
 
 ## Objective
@@ -262,7 +262,7 @@ When upgrading Kubernetes versions, MKS offers two strategies for updating worke
 +=============================================================================+
 |                                                                             |
 |  IN-PLACE UPGRADE                         ROLLING UPGRADE                   |
-|  (Free & Standard)                        (Standard only for now)           |
+|  (Free)                                   (Standard only for now)           |
 |                                                                             |
 |  Same instance,                           New instances replace             |
 |  components updated                       old ones                          |
