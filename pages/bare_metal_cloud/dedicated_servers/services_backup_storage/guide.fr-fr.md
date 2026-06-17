@@ -334,6 +334,11 @@ L'exemple de code ci-dessus contient des variables que vous devrez remplacer par
 
 Une fois le partage monté, vous pouvez utiliser des commandes telles que **cp** et \`rsync\` comme vous le feriez avec un répertoire normal.
 
+En cas de problème de connexion, il faut aussi s'assurer que les ports UDP et TCP nécessaires pour NFSv3 soient bien ouvert dans le firewall en entrée et en sortie.
+Le port 111 UDP/TCP doit être ouvert dans les 2 sens, également le port 2049/TCP (NFS) ainsi que la plage de ports dynamiques (de 32768 à 60999 UDP/TCP), ces ports sont utilisés par RPC pour les programmes mountd, lockd et statd.
+Pour finir il faut également autoriser toutes les connexions sortantes vers l'IP du serveur backup storage.
+
+
 #### CIFS
 
 ##### Windows
