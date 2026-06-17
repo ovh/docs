@@ -1,7 +1,7 @@
 ---
 title: "How to use the backup storage on a Dedicated Server"
 excerpt: "Enable and access the backup storage space included with your OVHcloud dedicated server for file-level backups."
-updated: 2026-03-25
+updated: 2026-06-17
 ---
 
 ## Objective
@@ -339,6 +339,10 @@ The code example above contains variables, which you will need to substitute wit
 - **FolderMount**: The folder where you want to mount the NFS share
 
 Once the share is mounted, you can use commands like **cp** and rsync like on a normal directory.
+
+In case of connection problems, you must also ensure that the UDP and TCP ports required for NFSv3 are open in the firewall for both inbound and outbound traffic.
+Port 111 UDP/TCP must be open in both directions, as well as port 2049/TCP (NFS) and the dynamic port range (32768 to 60999 UDP/TCP). These ports are used by RPC for the mountd, lockd, and statd programs.
+Finally, you must also allow all outgoing connections to the backup storage server's IP address.
 
 #### CIFS
 
