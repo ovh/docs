@@ -1,7 +1,7 @@
 ---
 title: "Nutanix on OVHcloud - Cycle de vie"
 excerpt: "La politique de cycle de vie est fournie pour aider les clients à comprendre les raisons sous-jacentes des changements de version ou de gamme, à évaluer l'impact de chaque phase du cycle de vie sur le service et à préparer la transition vers une nouvelle version ou gamme."
-updated: 2025-12-19
+updated: 2026-06-22
 ---
 
 > [!warning]
@@ -40,9 +40,9 @@ Cette politique de cycle de vie est fournie pour aider les clients à comprendre
 
 | Modèle | Année de sortie | Processeur | Fin de vente | Fin de Maintenance (Matériel) | Fin de Support (Matériel) | AOS Version Mini | AOS Version Maxi |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| HGR-HCI-1 | 2021 | Intel Cascade Lake | - | 2025-12-31 | 2027-07-31 | - | 7.5.x |
-| HGR-HCI-2 | 2021 | Intel Cascade Lake | - | 2025-12-31 | 2027-07-31 | - | 7.5.x |
-| HGR-HCI-3 | 2021 | Intel Cascade Lake | - | 2025-12-31 | 2027-07-31 | - |7.5.x |
+| HGR-HCI-1 | 2021 | Intel Cascade Lake | - | 2025-12-31 | 2028-07-31 | - | 7.5.x |
+| HGR-HCI-2 | 2021 | Intel Cascade Lake | - | 2025-12-31 | 2028-07-31 | - | 7.5.x |
+| HGR-HCI-3 | 2021 | Intel Cascade Lake | - | 2025-12-31 | 2028-07-31 | - |7.5.x |
 | Scale-i1 | 2024 | Intel Emerald Rapid | - | - | - | - |
 | Scale-i2 | 2024 | Intel Emerald Rapid | - | - | - | - |
 | Scale-i3 | 2024 | Intel Emerald Rapid | - | - | - | - |
