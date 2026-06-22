@@ -81,7 +81,9 @@ Antes de realizar la migración, deberá identificar la versión del MX Plan des
 > ![MX plan](/pages/assets/schemas/emails/technology-email.png){.thumbnail .w-640}
 >
 
-#### 3.1 Migración manual de una oferta MX Plan a Exchange, Email Pro o Zimbra  <a name="all-mxplan"></a>
+<a name="all-mxplan"></a>
+
+### 3.1 Migración manual de una oferta MX Plan a Exchange, Email Pro o Zimbra
 
 > [!warning]
 >
@@ -133,7 +135,9 @@ Una vez realizada la migración, puede conservar o eliminar la cuenta original c
 
 Si quiere eliminarlo, abra la pestaña `Cuentas de correo`{.action} de su MX Plan y haga clic en el botón `...`{.action} y luego en `Restaurar la cuenta`{.action}.
 
-#### 3.2 Migración automática de una oferta MX Plan Roundcube a Exchange o Email Pro <a name="roundcube-mxplan"></a>
+<a name="roundcube-mxplan"></a>
+
+### 3.2 Migración automática de una oferta MX Plan Roundcube a Exchange o Email Pro
 
 > [!warning]
 >
@@ -164,13 +168,13 @@ Continúe leyendo esta guía en la interfaz seleccionada. Le recordamos que el t
 > Aunque ya no podrá acceder a su dirección de correo electrónico actual, tanto los mensajes ya recibidos como los recibidos no se perderán. Podrá acceder a todos ellos inmediatamente desde su nueva cuenta.
 >
 
-##### **Migración desde el asistente de configuración de Exchange**
+#### **Migración desde el asistente de configuración de Exchange**
 
 El asistente aparecerá para ayudarle a configurar su nuevo servicio Exchange. Durante este proceso, podrá seleccionar las cuentas MX Plan que quiera migrar.
 
 Si no aparece el asistente de configuración, la información general del servicio Exchange se mostrará en su lugar. En ese caso, deberá realizar la migración de sus cuentas a través de la interfaz MX Plan.
 
-##### **Migración desde la interfaz MX Plan**
+#### **Migración desde la interfaz MX Plan**
 
 Para realizar la migración desde esta interfaz, acceda a la sección [MX Plan](/links/control-panel/web-mx-plan) de su área de cliente de OVHcloud y seleccione el dominio correspondiente. En la pestaña `Correo electrónico`{.action}, haga clic en `...`{.action} en la línea de la cuenta de correo correspondiente (también llamada cuenta de origen) y seleccione `Migrar la cuenta`{.action}.
 

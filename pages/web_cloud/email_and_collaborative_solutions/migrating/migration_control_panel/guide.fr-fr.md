@@ -83,7 +83,9 @@ Avant de débuter votre migration, il vous faudra identifier la version du MX Pl
 > ![MX plan](/pages/assets/schemas/emails/technology-email.png){.thumbnail .w-640}
 >
 
-#### 3.1 Migration manuelle d'une offre MX Plan vers Exchange, Email Pro ou Zimbra  <a name="all-mxplan"></a>
+<a name="all-mxplan"></a>
+
+### 3.1 Migration manuelle d'une offre MX Plan vers Exchange, Email Pro ou Zimbra
 
 > [!warning]
 >
@@ -135,7 +137,9 @@ Vous pouvez conserver ou supprimer le compte d'origine avec le nom provisoire ap
 
 Si vous souhaitez le supprimer, dirigez-vous dans l'onglet `Comptes e-mail`{.action} de votre MX Plan, cliquez sur le bouton `...`{.action} puis sur `Réinitialiser ce compte`{.action}.
 
-#### 3.2 Migration automatique d'une offre MX Plan Roundcube vers Exchange ou Email Pro <a name="roundcube-mxplan"></a>
+<a name="roundcube-mxplan"></a>
+
+### 3.2 Migration automatique d'une offre MX Plan Roundcube vers Exchange ou Email Pro
 
 > [!warning]
 >
@@ -166,13 +170,13 @@ Une fois que vous êtes prêt, poursuivez la lecture de cette documentation selo
 > Même si vous ne pourrez plus accéder à votre adresse e-mail actuelle, les messages déjà réceptionnés ainsi que ceux reçus ne seront pas perdus. Tous seront immédiatement accessibles depuis votre nouveau compte.
 >
 
-##### **Migration depuis l'assistant de configuration Exchange**
+#### **Migration depuis l'assistant de configuration Exchange**
 
 L'assistant s'affiche pour vous aider à configurer votre nouveau service Exchange. Durant ce processus, vous pouvez sélectionner les comptes e-mail MX Plan à migrer.
 
 Si l'assistant de configuration ne s'affiche pas, les informations générales du service Exchange apparaîtront à la place. Dans ce cas, vous devrez réaliser la migration de vos comptes via l'interface MX Plan.
 
-##### **Migration depuis l'interface MX Plan**
+#### **Migration depuis l'interface MX Plan**
 
 Pour réaliser la migration depuis cette interface, rendez-vous dans la section [MX Plan](/links/control-panel/web-mx-plan) de votre espace client OVHcloud et sélectionnez le domaine concerné. Dans l'onglet `Emails`{.action}, cliquez sur `...`{.action} sur la ligne du compte e-mail concerné (également appelé compte source), puis sur `Migrer le compte`{.action}.
 

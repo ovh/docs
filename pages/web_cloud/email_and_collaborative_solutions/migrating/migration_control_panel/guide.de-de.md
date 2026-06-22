@@ -80,7 +80,9 @@ Bevor Sie mit der Migration beginnen, müssen Sie die Version des MX Plan identi
 > ![MX plan](/pages/assets/schemas/emails/technology-email.png){.thumbnail .w-640}
 >
 
-#### 3.1 Manuelle Migration eines MX Plan-Angebots zu Exchange, E-Mail Pro oder Zimbra  <a name="all-mxplan"></a>
+<a name="all-mxplan"></a>
+
+### 3.1 Manuelle Migration eines MX Plan-Angebots zu Exchange, E-Mail Pro oder Zimbra
 
 > [!warning]
 >
@@ -132,7 +134,9 @@ Sie können den ursprünglichen Account nach dieser Migration mit dem vorläufig
 
 Wenn Sie ihn löschen möchten, gehen Sie in den Tab `E-Mails`{.action} Ihres MX Plans, klicken Sie auf `...`{.action} und dann auf `Konto löschen`{.action}.
 
-#### 3.2 Automatische Migration eines MX Plan Roundcube Angebots zu Exchange oder E-Mail Pro <a name="roundcube-mxplan"></a>
+<a name="roundcube-mxplan"></a>
+
+### 3.2 Automatische Migration eines MX Plan Roundcube Angebots zu Exchange oder E-Mail Pro
 
 > [!warning]
 >
@@ -163,13 +167,13 @@ Wenn Sie bereit sind, folgen Sie der Anleitung entsprechend dem gewählten Inter
 > Auch wenn Sie nicht mehr auf Ihre aktuelle E-Mail-Adresse zugreifen können, gehen existierende und neue Nachrichten nicht verloren. Sie werden von Ihrem neuen Account aus sofort verfügbar sein.
 >
 
-##### **Migration mit Exchange Konfigurationsassistent**
+#### **Migration mit Exchange Konfigurationsassistent**
 
 Der Assistent sollte erscheinen, um Ihnen bei der Konfiguration Ihres neuen Exchange Dienstes zu helfen. Während dieses Vorgangs können Sie die zu migrierenden MX Plan E-Mail-Accounts auswählen.
 
 Wenn der Konfigurationsassistent nicht startet, werden stattdessen die allgemeinen Informationen zum Exchange Dienst angezeigt. In diesem Fall müssen Sie Ihre Accounts über das MX Plan Interface migrieren.
 
-##### **Migration über das MX Plan Interface**
+#### **Migration über das MX Plan Interface**
 
 Um die Migration über dieses Interface durchzuführen, wählen Sie im Bereich [MX Plan](/links/control-panel/web-mx-plan) Ihres OVHcloud Kundencenters die betreffende Domain aus. Klicken Sie im Tab `E-Mails`{.action} auf `...`{.action} in der Zeile des betreffenden E-Mail-Accounts (auch als Quell-Account bezeichnet) und dann auf `Account überführen`{.action}.
 

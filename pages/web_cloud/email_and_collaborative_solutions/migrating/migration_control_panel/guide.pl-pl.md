@@ -81,7 +81,9 @@ Przed rozpoczęciem migracji określ wersję programu MX Plan, z której chcesz 
 > ![MX plan](/pages/assets/schemas/emails/technology-email.png){.thumbnail .w-640}
 >
 
-#### 3.1 Ręczna migracja oferty MX Plan do Exchange, E-mail Pro lub Zimbra  <a name="all-mxplan"></a>
+<a name="all-mxplan"></a>
+
+### 3.1 Ręczna migracja oferty MX Plan do Exchange, E-mail Pro lub Zimbra
 
 > [!warning]
 >
@@ -133,7 +135,9 @@ Po przeprowadzeniu migracji możesz zachować lub usunąć konto źródłowe, u�
 
 Jeśli chcesz go usunąć, przejdź do zakładki `Konta e-mail`{.action} MX Plan, kliknij przycisk `...`{.action}, a następnie  `Zresetuj to konto`{.action}.
 
-#### 3.2 Automatyczna migracja oferty MX Plan Roundcube do Exchange lub E-mail Pro <a name="roundcube-mxplan"></a>
+<a name="roundcube-mxplan"></a>
+
+### 3.2 Automatyczna migracja oferty MX Plan Roundcube do Exchange lub E-mail Pro
 
 > [!warning]
 >
@@ -164,13 +168,13 @@ Kiedy wszystko jest gotowe, przejdź do opisu operacji w wybranym interfejsie. P
 > Nawet jeśli nie będziesz miał dostępu do Twojego aktualnego adresu e-mail, już odebrane wiadomości i otrzymane wiadomości nie zostaną utracone. Wszystkie konta będą natychmiast dostępne.
 >
 
-##### **Migracja z poziomu asystenta konfiguracji Exchange**
+#### **Migracja z poziomu asystenta konfiguracji Exchange**
 
 Asystent powinien pojawić się, aby pomóc Ci w skonfigurowaniu nowej usługi Exchange. Podczas tego procesu będziesz mógł wybrać konta e-mail MX Plan, które chcesz przenieść.
 
 Jeśli asystent konfiguracji nie wyświetla się, wyświetlą się ogólne informacje o usłudze Exchange. W takim przypadku będziesz musiał przeprowadzić migrację Twoich kont za pomocą interfejsu MX Plan.
 
-##### **Migracja z poziomu interfejsu MX Plan**
+#### **Migracja z poziomu interfejsu MX Plan**
 
 Aby przeprowadzić migrację w tym interfejsie, przejdź do sekcji [MX Plan](/links/control-panel/web-mx-plan) Panelu klienta OVHcloud i wybierz odpowiednią domenę. W karcie `E-maile`{.action} kliknij logo w kształcie koła zębatego na linii odpowiedniego konta e-mail (zwane również kontem źródłowym), a następnie kliknij `Przeprowadź migrację konta`{.action}.
 

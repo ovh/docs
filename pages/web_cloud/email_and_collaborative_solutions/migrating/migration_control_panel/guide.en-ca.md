@@ -66,7 +66,9 @@ Please refer to the table below.
 |![email](images/mxplan-starter-legacy-step1.png){.thumbnail}<br> Your solution is specified the "Plan" box.|![email](images/mxplan-starter-new-step1.png){.thumbnail}<br>You will find a `Server model` in the “Summary” box, starting with “mxplan-”.|
 |Continue with [Legacy version of the MX Plan solution](#LegacyMxplan)|Continue with [New version of the MX Plan solution](#NewVersionMxplan)|
 
-#### 3.1 Migrating a legacy MX Plan solution <a name="LegacyMxplan"></a>
+<a name="LegacyMxplan"></a>
+
+### 3.1 Migrating a legacy MX Plan solution
 
 > [!primary]
 >
@@ -92,13 +94,13 @@ Once you are ready, follow the steps below, depending on the interface you have 
 > Even if you can no longer access your current email address, messages that have already been received and those that have been received will not be lost. All will be immediately accessible from your new account.
 >
 
-##### **Migration with the Exchange configuration assistant**
+#### **Migration with the Exchange configuration assistant**
 
 A wizard will guide you through configuring your new Exchange service. During this process, you can select the MX Plan email accounts to migrate.
 
 If the configuration wizard does not appear, the general information for the Exchange service will appear instead. In this case, you will need to migrate your accounts via the MX Plan interface.
 
-##### **Migration from the MX Plan interface**
+#### **Migration from the MX Plan interface**
 
 To carry out the migration from this interface, go to the [MX Plan](/links/control-panel/web-mx-plan) section of your OVHcloud Control Panel and select the relevant domain. In the `Emails`{.action} tab, click on `...`{.action} next to the relevant email account (also called the source account), then `Migrate account`{.action}.
 
@@ -112,7 +114,9 @@ Finally, confirm the password for the source email address (the one you want to 
 
 ![Exchange](images/account_migration_steps.png){.thumbnail}
 
-#### 3.2 Migrating the new version of MX Plan <a name="NewVersionMxplan"></a>
+<a name="NewVersionMxplan"></a>
+
+### 3.2 Migrating the new version of MX Plan
 
 > [!warning]
 >

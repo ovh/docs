@@ -81,7 +81,9 @@ Prima di avviare la migrazione, dovrai identificare la versione del MX Plan dal 
 > ![MX plan](/pages/assets/schemas/emails/technology-email.png){.thumbnail .w-640}
 >
 
-#### 3.1 Migrazione manuale di un'offerta MX Plan verso Exchange, Email Pro o Zimbra  <a name="all-mxplan"></a>
+<a name="all-mxplan"></a>
+
+### 3.1 Migrazione manuale di un'offerta MX Plan verso Exchange, Email Pro o Zimbra
 
 > [!warning]
 >
@@ -133,7 +135,9 @@ Dopo la migrazione è possibile conservare o eliminare l'account di origine.
 
 Per eliminarlo, seleziona la scheda `Account email`{.action} del tuo MX Plan, clicca sul pulsante `...`{.action} e poi su `Reimposta questo account`{.action}.
 
-#### 3.2 Migrazione automatica di un'offerta MX Plan Roundcube verso Exchange o Email Pro <a name="roundcube-mxplan"></a>
+<a name="roundcube-mxplan"></a>
+
+### 3.2 Migrazione automatica di un'offerta MX Plan Roundcube verso Exchange o Email Pro
 
 > [!warning]
 >
@@ -164,13 +168,13 @@ Quando tutto è pronto, prosegui nella lettura di questa guida utilizzando l'int
 > Anche se non sarà più possibile accedere al tuo indirizzo email corrente, i messaggi già ricevuti e quelli ricevuti non saranno persi. Tutti saranno immediatamente accessibili dal tuo nuovo account.
 >
 
-##### **Migrazione dall'assistente di configurazione Exchange**
+#### **Migrazione dall'assistente di configurazione Exchange**
 
 L'assistente dovrebbe apparire per aiutarti a configurare il tuo nuovo servizio Exchange. Durante questo processo, è possibile selezionare gli account email MX Plan da migrare.
 
 Se l'assistente di configurazione non compare, visualizzi le informazioni generali del servizio Exchange. In questo caso, sarà necessario effettuare la migrazione dei tuoi account tramite l'interfaccia MX Plan.
 
-##### **Migrazione dall'interfaccia MX Plan**
+#### **Migrazione dall'interfaccia MX Plan**
 
 Per effettuare la migrazione da questa interfaccia, accedi alla sezione [MX Plan](/links/control-panel/web-mx-plan) del tuo Spazio Cliente OVHcloud e seleziona il dominio interessato. Nella scheda `Email`{.action}, clicca su `...`{.action} sulla riga dell'account email interessato (chiamato anche account sorgente) e poi su `Migra l'account`{.action}.
 

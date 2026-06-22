@@ -75,7 +75,9 @@ Avant de débuter votre migration, il vous faudra identifier la version du MX Pl
 > ![MX plan](/pages/assets/schemas/emails/technology-email.png){.thumbnail .w-640}
 >
 
-#### 3.1 Migration manuelle d'une offre MX Plan vers Exchange  <a name="all-mxplan"></a>
+<a name="all-mxplan"></a>
+
+### 3.1 Migration manuelle d'une offre MX Plan vers Exchange
 
 > [!warning]
 >

@@ -79,7 +79,9 @@ Before starting your migration, you will need to identify the version of the MX 
 >
 > ![MX plan](/pages/assets/schemas/emails/technology-email.png){.thumbnail .w-640}
 
-#### 3.1 Manual migration of an MX Plan offer to Exchange, Email Pro or Zimbra  <a name="all-mxplan"></a>
+<a name="all-mxplan"></a>
+
+### 3.1 Manual migration of an MX Plan offer to Exchange, Email Pro or Zimbra
 
 > [!warning]
 >
@@ -131,7 +133,9 @@ You can keep or delete the original account with the temporary name after this m
 
 If you want to delete it, go to the `Email accounts`{.action} tab in your MX Plan, click on the `...`{.action} button, then `Reset this account`{.action}.
 
-#### 3.2 Automatic migration of an MX Plan Roundcube offer to Exchange or Email Pro <a name="roundcube-mxplan"></a>
+<a name="roundcube-mxplan"></a>
+
+### 3.2 Automatic migration of an MX Plan Roundcube offer to Exchange or Email Pro
 
 > [!warning]
 >
@@ -160,13 +164,13 @@ Once you are ready, follow the steps below, depending on the interface you have 
 >
 > Even if you can no longer access your current email account, existing and newly arriving messages will not be lost. All will be immediately accessible from your new account.
 
-##### **Migration with the Exchange configuration assistant**
+#### **Migration with the Exchange configuration assistant**
 
 A wizard will guide you through configuring your new Exchange service. During this process, you can select the MX Plan email accounts to migrate.
 
 If the configuration wizard does not appear, the general information for the Exchange service will appear instead. In this case, you will need to migrate your accounts via the MX Plan interface.
 
-##### **Migration from the MX Plan interface**
+#### **Migration from the MX Plan interface**
 
 To carry out the migration from this interface, go to the [MX Plan](/links/control-panel/web-mx-plan) section of your OVHcloud Control Panel and select the relevant domain. In the `Emails`{.action} tab, click on `...`{.action} on the line of the concerned email account (also called the source account), then on `Migrate account`{.action}.
 
