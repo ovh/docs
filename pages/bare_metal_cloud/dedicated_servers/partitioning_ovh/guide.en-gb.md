@@ -90,49 +90,49 @@ Example reply:
 ```json
 {
   "bootMode": "uefi",
+  "coresPerProcessor": 64,
   "defaultHardwareRaidSize": null,
-  "description": "SCALE-7 - AMD Epyc 7763",
-  "expansionCards": null,
-  "threadsPerProcessor": 128,
-  "memorySize": {
-    "unit": "MB",
-    "value": 524288
-  },
   "defaultHardwareRaidType": null,
+  "description": "SCALE-7 - AMD Epyc 7763",
   "diskGroups": [
     {
-      "defaultHardwareRaidType": null,
-      "numberOfDisks": 2,
-      "diskGroupId": 1,
-      "diskType": "SSD",
       "defaultHardwareRaidSize": null,
+      "defaultHardwareRaidType": null,
+      "description": "2 X Disk SSD 480 GB, JBOD",
+      "diskGroupId": 1,
       "diskSize": {
         "unit": "GB",
         "value": 480
       },
-      "description": "2 X Disk SSD 480 GB, JBOD",
+      "diskType": "SSD",
+      "numberOfDisks": 2,
       "raidController": null
     },
     {
-      "defaultHardwareRaidType": null,
-      "numberOfDisks": 2,
-      "diskGroupId": 2,
-      "diskType": "NVME",
       "defaultHardwareRaidSize": null,
+      "defaultHardwareRaidType": null,
+      "description": "2 X Disk NVME 1920 GB, JBOD",
+      "diskGroupId": 2,
       "diskSize": {
         "unit": "GB",
         "value": 1920
       },
-      "raidController": null,
-      "description": "2 X Disk NVME 1920 GB, JBOD"
+      "diskType": "NVME",
+      "numberOfDisks": 2,
+      "raidController": null
     }
   ],
-  "processorArchitecture": "x86_64",
-  "coresPerProcessor": 64,
-  "processorName": "Epyc7763",
+  "expansionCards": null,
   "formFactor": "1u",
+  "memorySize": {
+    "unit": "MB",
+    "value": 524288
+  },
   "motherboard": "S8036-M",
   "numberOfProcessors": 1,
+  "processorArchitecture": "x86_64",
+  "processorName": "Epyc7763",
+  "threadsPerProcessor": 128,
   "usbKeys": null
 }
 ```
