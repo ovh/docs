@@ -91,6 +91,7 @@ Example reply:
 {
   "bootMode": "uefi",
   "coresPerProcessor": 64,
+  "defaultDiskGroupId": 1,
   "defaultHardwareRaidSize": null,
   "defaultHardwareRaidType": null,
   "description": "SCALE-7 - AMD Epyc 7763",
@@ -139,7 +140,7 @@ Example reply:
 
 In this example, there are 2 disk groups:
 
-- the first one (diskGroupId=1) contains 2 x 480 GB disks.
+- the first one (diskGroupId=1) contains 2 x 480 GB disks. This is the default diskGroupId.
 - the second one (diskGroupId=2) contains 2 x 1.9 TB disks.
 
 Example of Debian 12 (Bookworm) OS installation on the diskGroup 2:
@@ -162,7 +163,7 @@ Example of Debian 12 (Bookworm) OS installation on the diskGroup 2:
 
 > [!primary]
 >
-> By default, the OS will be installed on diskGroupId 1.
+> By default, if no diskGroupId specified or set to 0, the OS will be installed on default diskGroupId 1.
 >
 
 <br />
