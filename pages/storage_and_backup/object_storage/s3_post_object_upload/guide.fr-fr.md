@@ -47,35 +47,36 @@ Les objets écrits via POST sont immédiatement visibles dans le bucket (cohére
 
 Les chargements POST depuis le navigateur déclenchent toujours une requête de pré-vérification CORS (`OPTIONS`) avant tout envoi de données. Sans règle CORS correspondante sur le bucket, le navigateur bloque silencieusement le chargement.
 
-Enregistrez le XML suivant dans un fichier nommé `cors.xml` :
+Enregistrez le JSON suivant dans un fichier nommé `cors.json` :
 
-```xml
-<CORSConfiguration>
-  <CORSRule>
-    <AllowedOrigin>https://votre-application.com</AllowedOrigin>
-    <AllowedMethod>POST</AllowedMethod>
-    <AllowedHeader>*</AllowedHeader>
-    <ExposeHeader>ETag</ExposeHeader>
-    <ExposeHeader>x-amz-version-id</ExposeHeader>
-    <MaxAgeSeconds>3000</MaxAgeSeconds>
-  </CORSRule>
-</CORSConfiguration>
+```json
+{
+  "CORSRules": [
+    {
+      "AllowedOrigins": ["https://votre-application.com"],
+      "AllowedMethods": ["POST"],
+      "AllowedHeaders": ["*"],
+      "ExposeHeaders": ["ETag", "x-amz-version-id"],
+      "MaxAgeSeconds": 3000
+    }
+  ]
+}
 ```
 
 Puis appliquez-le à votre bucket :
 
 ```sh
-aws s3api put-bucket-cors --bucket <nom_bucket> --cors-configuration file://cors.xml
+aws s3api put-bucket-cors --bucket <nom_bucket> --cors-configuration file://cors.json
 ```
 
 **Explications :**
 
 - `--bucket <nom_bucket>` : remplacez par le nom de votre bucket.
-- `--cors-configuration file://cors.xml` : chemin vers le fichier de configuration CORS.
+- `--cors-configuration file://cors.json` : chemin vers le fichier de configuration CORS.
 
 > [!primary]
-> - Définissez `AllowedOrigin` avec l'origine exacte de votre application web. L'utilisation de `*` est acceptée mais n'est pas recommandée en production.
-> - Supprimez `<ExposeHeader>x-amz-version-id</ExposeHeader>` si le versioning n'est pas activé sur le bucket.
+> - Définissez `AllowedOrigins` avec l'origine exacte de votre application web. L'utilisation de `*` est acceptée mais n'est pas recommandée en production.
+> - Supprimez `"x-amz-version-id"` de `ExposeHeaders` si le versioning n'est pas activé sur le bucket.
 
 ### Générer la POST Policy
 
@@ -112,6 +113,20 @@ La POST Policy est un document JSON UTF-8 généré côté serveur. Elle défini
 | Commence par | `["starts-with", "$field", "prefix"]` | La valeur du champ doit commencer par le préfixe donné |
 | Commence par (valeur quelconque) | `["starts-with", "$field", ""]` | Toute valeur est acceptée pour ce champ |
 | Plage de taille de contenu | `["content-length-range", min, max]` | La taille du fichier doit être dans la plage en octets donnée |
+
+#### Conditions
+
+| Condition | Description | Types de correspondance supportés |
+|---|---|---|
+| `acl` | ACL S3 à appliquer à l'objet. Valeurs : `private`, `public-read`, `public-read-write`, `authenticated-read`, `bucket-owner-read`, `bucket-owner-full-control` | Correspondance exacte, commence par |
+| `bucket` | Nom du bucket cible. La requête est rejetée si le bucket ne correspond pas. | Correspondance exacte |
+| `content-length-range` | Taille de fichier autorisée en octets, définie par une valeur minimale et une valeur maximale. | Plage de taille de contenu |
+| `key` | Clé de l'objet ou préfixe de clé autorisé. Accepte la variable `${filename}`, substituée par le nom de fichier fourni par le navigateur avant validation. | Correspondance exacte, commence par |
+| `success_action_redirect` | URL vers laquelle le navigateur est redirigé après un chargement réussi. | Correspondance exacte, commence par |
+| `success_action_status` | Code de statut HTTP retourné en cas de succès sans redirection. Valeurs : `200`, `201`, `204`. | Correspondance exacte |
+| `x-amz-algorithm` | Algorithme de signature. Toujours `AWS4-HMAC-SHA256`. | Correspondance exacte |
+| `x-amz-credential` | Portée des informations d'identification : `<cle_acces>/<date>/<region>/s3/aws4_request`. | Correspondance exacte |
+| `x-amz-date` | Date de signature au format ISO 8601 (`YYYYMMDDTHHMMSSZ`). Doit correspondre à la date contenue dans `x-amz-credential`. | Correspondance exacte |
 
 > [!primary]
 > - La variable `${filename}` dans le champ `key` est substituée par le nom de fichier fourni par le navigateur avant la validation de la politique. Utilisez une condition `starts-with` sur `$key` pour restreindre les noms de fichiers acceptés.

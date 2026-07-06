@@ -47,35 +47,36 @@ Objects written via POST are immediately visible in the bucket (strong read-afte
 
 Browser POST uploads always trigger a CORS preflight (`OPTIONS`) request before any data is sent. Without a matching CORS rule on the bucket, the browser blocks the upload silently.
 
-Save the following XML to a file named `cors.xml`:
+Save the following JSON to a file named `cors.json`:
 
-```xml
-<CORSConfiguration>
-  <CORSRule>
-    <AllowedOrigin>https://your-application.com</AllowedOrigin>
-    <AllowedMethod>POST</AllowedMethod>
-    <AllowedHeader>*</AllowedHeader>
-    <ExposeHeader>ETag</ExposeHeader>
-    <ExposeHeader>x-amz-version-id</ExposeHeader>
-    <MaxAgeSeconds>3000</MaxAgeSeconds>
-  </CORSRule>
-</CORSConfiguration>
+```json
+{
+  "CORSRules": [
+    {
+      "AllowedOrigins": ["https://your-application.com"],
+      "AllowedMethods": ["POST"],
+      "AllowedHeaders": ["*"],
+      "ExposeHeaders": ["ETag", "x-amz-version-id"],
+      "MaxAgeSeconds": 3000
+    }
+  ]
+}
 ```
 
 Then apply it to your bucket:
 
 ```sh
-aws s3api put-bucket-cors --bucket <bucket_name> --cors-configuration file://cors.xml
+aws s3api put-bucket-cors --bucket <bucket_name> --cors-configuration file://cors.json
 ```
 
 **Explanations:**
 
 - `--bucket <bucket_name>`: replace with the name of your bucket.
-- `--cors-configuration file://cors.xml`: path to the CORS configuration file.
+- `--cors-configuration file://cors.json`: path to the CORS configuration file.
 
 > [!primary]
-> - Set `AllowedOrigin` to the exact origin of your web application. Using `*` is accepted but not recommended in production.
-> - Remove `<ExposeHeader>x-amz-version-id</ExposeHeader>` if versioning is not enabled on the bucket.
+> - Set `AllowedOrigins` to the exact origin of your web application. Using `*` is accepted but not recommended in production.
+> - Remove `"x-amz-version-id"` from `ExposeHeaders` if versioning is not enabled on the bucket.
 
 ### Generate the POST Policy
 
@@ -112,6 +113,20 @@ The POST Policy is a UTF-8 JSON document generated server-side. It defines the c
 | Starts-with | `["starts-with", "$field", "prefix"]` | The field value must start with the given prefix |
 | Starts-with (any) | `["starts-with", "$field", ""]` | Any value is accepted for that field |
 | Content-length range | `["content-length-range", min, max]` | File size must fall within the given byte range |
+
+#### Conditions
+
+| Condition | Description | Supported match types |
+|---|---|---|
+| `acl` | S3 ACL to apply to the object. Values: `private`, `public-read`, `public-read-write`, `authenticated-read`, `bucket-owner-read`, `bucket-owner-full-control` | Exact match, starts-with |
+| `bucket` | Name of the target bucket. The request is rejected if the bucket does not match. | Exact match |
+| `content-length-range` | Allowed file size in bytes, defined by a minimum and a maximum value. | Content-length range |
+| `key` | Object key or allowed key prefix. Accepts the `${filename}` variable, substituted with the browser-supplied filename before validation. | Exact match, starts-with |
+| `success_action_redirect` | URL to which the browser is redirected after a successful upload. | Exact match, starts-with |
+| `success_action_status` | HTTP status code returned on success when no redirect is set. Values: `200`, `201`, `204`. | Exact match |
+| `x-amz-algorithm` | Signing algorithm. Always `AWS4-HMAC-SHA256`. | Exact match |
+| `x-amz-credential` | Credential scope: `<access_key>/<date>/<region>/s3/aws4_request`. | Exact match |
+| `x-amz-date` | Signing date in ISO 8601 format (`YYYYMMDDTHHMMSSZ`). Must match the date in `x-amz-credential`. | Exact match |
 
 > [!primary]
 > - The `${filename}` variable in the `key` field is substituted with the browser-supplied filename before policy validation. Use a `starts-with` condition on `$key` to restrict accepted filenames.
