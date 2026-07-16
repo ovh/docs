@@ -1,7 +1,7 @@
 ---
 title: AI Endpoints - Facturation et cycle de vie (EN)
 excerpt: "Découvrez comment sont facturés les modèles AI Endpoints chez OVHcloud"
-updated: 2026-02-06
+updated: 2026-07-16
 ---
 
 > [!primary]
@@ -35,6 +35,17 @@ By following this model lifecycle process, OVHcloud ensures that customers are w
 > - Log in to the [OVHcloud Control Panel](/links/manager) using your billing OVHcloud account, click on your name in the top right corner, then click on `My messages`{.action}. Add the emails of persons who should receive these communications (or a global mailing list). This allows adding them as contact points. This will send them an email and they will need to click a link in that email to accept your mailing invitation.
 >
 > - Once the email addresses are added, go to the `Delivery settings`{.action} tab and configure a new rule (category: `Product` and priority: `Medium`). You can add a new condition to your delivery rule for each colleague that should receive the notification, following the same process.
+
+### Models currently being decommissioned
+
+The following table lists models that are currently in the decommissioning process:
+
+| Model name | Announcement date | Decommission date |
+|------------|-------------------|-------------------|
+| Mistral-7B-Instruct-v0.3 | 02/07/2026 | 01/10/2026 |
+| Qwen3-Coder-30B-A3B-Instruct-FP8 | 02/07/2026 | 01/10/2026 |
+
+This table is updated whenever a decommissioning decision is made. The **Announcement date** indicates when the decommissioning was announced via email to affected users and on the [#ai-news channel](https://discord.com/channels/850031577277792286/1045441414521180281) of the OVHcloud [Discord server](https://discord.gg/ovhcloud). The **Decommission date** indicates when the model will be removed from the API and start returning 404 errors.
 
 ## Billing principles
 
