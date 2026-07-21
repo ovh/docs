@@ -1,7 +1,7 @@
 ---
 title: Deploying a GPU application on OVHcloud Managed Kubernetes Service
 excerpt: 'Find out how to deploy a GPU application on OVHcloud Managed Kubernetes'
-updated: 2023-04-26
+updated: 2026-11-02
 ---
 
 ## Objective
@@ -25,9 +25,12 @@ To get the best and most cost-effective benefit from GPUs on OVHcloud Managed Ku
 
 The GPU operator that you will install should run on Kubernetes nodes that are equipped with GPUs.
 
-So you need to create a node pool with `t1` flavor type.
+Create a node pool that uses a GPU flavor. The driver installed later depends on the architecture:
 
-If you already have an OVHcloud Kubernetes cluster with a node pool with `t1` flavor type, you can skip the following `Autoscaling GPU Node Pool creation` step.
+- Current architectures: `A100-180`, `H100-*`, `L4-*` and `L40s-*` (Ampere, Hopper and Ada).
+- Tesla V100 and V100S: `T1-*` and `T2-*` (Volta).
+
+If you already have an OVHcloud Kubernetes cluster with a GPU node pool, you can skip the following `Autoscaling GPU Node Pool creation` step.
 
 > [!warning]
 >GPU Virtual machines are extremely powerful and significantly more expensive than general purpose nodes. If you are usually using OVHcloud Public Cloud at small scale and/or are a new user, you may need to [raise your Public Cloud quota](/pages/public_cloud/public_cloud_cross_functional/increasing_public_cloud_quota) to enable access to those type of machines for your project. Also note that these machines are only available in some of our Public Cloud regions.
@@ -63,7 +66,7 @@ Then enter a name for your GPU node pool, `gpu-node-pool` for example.
 
 ![Name your GPU node pool](images/create-a-nodepool-2.png){.thumbnail}
 
-Select a flavor for your new node pool, then click on the `GPU`{.action} tab. You can choose "T1-45" for example.
+Select a flavor for your new node pool, then click on the `GPU`{.action} tab. For a current GPU, choose a flavor such as `H100`, `L4`, `L40S` or `A100-180`. For a Tesla V100 or V100S, choose a `T1` or `T2` flavor, for example "T1-45".
 
 ![Select a flavor for your GPU node pool](images/create-a-nodepool-3.png){.thumbnail}
 
@@ -97,7 +100,7 @@ If you are interested about the operator, feel free to read the [NVIDIA GPU oper
 
 ### Installing the NVIDIA GPU Operator Helm chart
 
-For this tutorial we are using the [NVIDIA GPU Operator Helm chart](https://github.com/NVIDIA/gpu-operator/tree/master/deployments/gpu-operator) found on [NVIDIA repository](https://github.com/nvidia/). The chart is [fully configurable](https://docs.nvidia.com/datacenter/cloud-native/gpu-operator/getting-started.html), but here we are using the default configuration, with only the minimal set of customization to make it work well on OVHcloud Managed Kubernetes Service.
+For this tutorial we are using the [NVIDIA GPU Operator Helm chart](https://github.com/NVIDIA/gpu-operator/tree/master/deployments/gpu-operator) found on [NVIDIA repository](https://github.com/nvidia/). The chart is [fully configurable](https://docs.nvidia.com/datacenter/cloud-native/gpu-operator/getting-started.html). The commands below set only the driver options required for the GPU architecture of your node pool.
 
 Add the NVIDIA Helm repository:
 
@@ -122,57 +125,40 @@ Hang tight while we grab the latest from your chart repositories...
 Update Complete. ⎈Happy Helming!⎈
 ```
 
-Install the GPU Operator in the `gpu-operator` namespace:
+Install the GPU Operator in the `gpu-operator` namespace. Pick the command that matches the GPUs in the node pool.
 
-```bash
-helm install gpu-operator nvidia/gpu-operator -n gpu-operator --create-namespace --wait
-```
+> [!tabs]
+> Current architectures (A100, H100, L4, L40S)
+>> Use a precompiled driver image built for Ubuntu 22.04 and kernel `5.15`. On the [NGC driver catalog](https://catalog.ngc.nvidia.com/orgs/nvidia/containers/driver/tags), select the latest tag for the generic Ubuntu 22.04 `5.15` kernel. The example below installs driver branch `595`. Replace `595` with the branch of the tag you selected.
+>>
+>> ```bash
+>> helm install gpu-operator nvidia/gpu-operator \
+>>   -n gpu-operator --create-namespace --wait \
+>>   --set driver.usePrecompiled=true \
+>>   --set driver.version=595
+>> ```
+>>
+> Tesla V100 and V100S (T1 and T2)
+>> These cards use the Volta architecture. Volta requires the NVIDIA 580 driver branch and the proprietary kernel modules. On the [NGC driver catalog](https://catalog.ngc.nvidia.com/orgs/nvidia/containers/driver/tags), select the latest `580` tag for Ubuntu 22.04. The tag has the form `<version>-ubuntu22.04`. Pass `<version>` to `driver.version`. The operator compiles the modules for the `5.15` kernel.
+>>
+>> ```bash
+>> helm install gpu-operator nvidia/gpu-operator \
+>>   -n gpu-operator --create-namespace --wait \
+>>   --set driver.version=<version> \
+>>   --set driver.kernelModuleType=proprietary \
+>>   --set driver.usePrecompiled=false
+>> ```
+>>
+>> Compiling the modules takes longer than a precompiled install. The `nvidia-driver-daemonset` pod stays in `Init` or `ContainerCreating` until the build finishes.
+>>
+> Tesla nodes and current GPUs in the same cluster
+>> Install the latest `580` Ubuntu 22.04 driver with the proprietary kernel modules, using the command from the Tesla V100 and V100S tab. Driver 580 still supports Ampere (A100), Hopper (H100) and Ada (L4, L40S), so one install covers every GPU node in the cluster.
 
 You should have a GPU operator installed and running:
 
 ```console
-$ helm install gpu-operator nvidia/gpu-operator -n gpu-operator --create-namespace --wait
-
-NAME: gpu-operator
-LAST DEPLOYED: Tue Apr 25 09:59:59 2023
-NAMESPACE: gpu-operator
-STATUS: deployed
-REVISION: 1
-TEST SUITE: None
-
-$ kubectl get pod -n gpu-operator
-NAME                                                          READY   STATUS      RESTARTS   AGE
-gpu-feature-discovery-8xzzw                                   1/1     Running     0          22m
-gpu-feature-discovery-kxtlh                                   1/1     Running     0          22m
-gpu-feature-discovery-wdvr7                                   1/1     Running     0          22m
-gpu-operator-689dbf694b-clz7f                                 1/1     Running     0          23m
-gpu-operator-node-feature-discovery-master-7db9bfdd5b-9w2hj   1/1     Running     0          23m
-gpu-operator-node-feature-discovery-worker-2wpmm              1/1     Running     0          23m
-gpu-operator-node-feature-discovery-worker-4bsn7              1/1     Running     0          23m
-gpu-operator-node-feature-discovery-worker-9klx5              1/1     Running     0          23m
-gpu-operator-node-feature-discovery-worker-gn62n              1/1     Running     0          23m
-gpu-operator-node-feature-discovery-worker-hdzpx              1/1     Running     0          23m
-nvidia-container-toolkit-daemonset-hvx6x                      1/1     Running     0          22m
-nvidia-container-toolkit-daemonset-lhmxn                      1/1     Running     0          22m
-nvidia-container-toolkit-daemonset-tjrb2                      1/1     Running     0          22m
-nvidia-cuda-validator-fcfwn                                   0/1     Completed   0          18m
-nvidia-cuda-validator-mdbml                                   0/1     Completed   0          18m
-nvidia-cuda-validator-sv979                                   0/1     Completed   0          17m
-nvidia-dcgm-exporter-fvn8h                                    1/1     Running     0          22m
-nvidia-dcgm-exporter-mt5qh                                    1/1     Running     0          22m
-nvidia-dcgm-exporter-n65kl                                    1/1     Running     0          22m
-nvidia-device-plugin-daemonset-hwc95                          1/1     Running     0          22m
-nvidia-device-plugin-daemonset-wr5td                          1/1     Running     0          22m
-nvidia-device-plugin-daemonset-zzzkm                          1/1     Running     0          22m
-nvidia-device-plugin-validator-4k5wd                          0/1     Completed   0          17m
-nvidia-device-plugin-validator-rjkzd                          0/1     Completed   0          17m
-nvidia-device-plugin-validator-swdrr                          0/1     Completed   0          17m
-nvidia-driver-daemonset-2jsmv                                 1/1     Running     0          22m
-nvidia-driver-daemonset-5zq44                                 1/1     Running     0          22m
-nvidia-driver-daemonset-v6qgx                                 1/1     Running     0          22m
-nvidia-operator-validator-kk6nd                               1/1     Running     0          22m
-nvidia-operator-validator-m9p9k                               1/1     Running     0          22m
-nvidia-operator-validator-s6czx                               1/1     Running     0          22m
+$ helm status gpu-operator -n gpu-operator
+...                               1/1     Running     0          22m
 ```
 
 ### Verify GPU Operator Install
