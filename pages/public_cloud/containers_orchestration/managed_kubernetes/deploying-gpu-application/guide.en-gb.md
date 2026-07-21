@@ -119,6 +119,12 @@ Install the GPU Operator in the `gpu-operator` namespace:
 helm install gpu-operator nvidia/gpu-operator -n gpu-operator --create-namespace --wait
 ```
 
+> [!primary]
+>
+> We recommend selecting the latest driver version released by Nvidia: https://catalog.ngc.nvidia.com/orgs/nvidia/-/containers/driver/-/tags
+> Make sure it has the following version pattern `*-5.15.0-*-generic-ubuntu.22.04`.
+> Example: `docker pull nvcr.io/nvidia/driver:595-5.15.0-185-generic-ubuntu22.04`
+
 You should have a GPU operator installed and running:
 
 ```console
