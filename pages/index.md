@@ -1606,6 +1606,7 @@
                 + [AI Endpoints - Structured Output](public_cloud/ai_machine_learning/endpoints_guide_05_structured_output)
                 + [AI Endpoints - Function Calling](public_cloud/ai_machine_learning/endpoints_guide_06_function_calling)
                 + [AI Endpoints - Responses API](public_cloud/ai_machine_learning/endpoints_guide_09_responses_api)
+                + [AI Endpoints - Catalog API](public_cloud/ai_machine_learning/endpoints_guide_10_catalog_api)
             + [Getting started](public-cloud-ai-and-machine-learning-ai-endpoints-getting-started)
                 + [AI Endpoints - Getting started](public_cloud/ai_machine_learning/endpoints_guide_01_getting_started)
             + [Tutorials](public-cloud-ai-and-machine-learning-ai-endpoints-tutorials)
