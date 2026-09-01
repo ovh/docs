@@ -8,7 +8,7 @@
 >
 > Pull requests opened here will be closed without review.
 > The content in this repository is preserved for archival purposes only —
-> live pages on https://docs.ovh.com now redirect to the new platform.
+> live pages on https://docs.ovhcloud.com now redirect to the new platform.
 
 ---
 
