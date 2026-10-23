@@ -442,6 +442,11 @@ First, get the private network IDs (pvnwGRA9Id & pvnwGRA11Id), then create the O
 >>   max_nodes     = 3
 >>   min_nodes     = 3
 >> }
+>>
+>> output "kubeconfig_file" {
+>>  value     = ovh_cloud_project_kube.cluster_terraform.kubeconfig
+>>  sensitive = true
+>> }
 >> ```
 >>
 >> You can create your resources by entering the following command:
@@ -473,12 +478,17 @@ To proceed with the freshly created Kubernetes cluster, you must get the Kubecon
 > [!tabs]
 > Bash
 >> ```bash
->> utils/ovhAPI.sh POST /cloud/project/$OS_TENANT_ID/kube/$kubeId/kubeconfig | jq -r .content > kubeconfig-demo
+>> utils/ovhAPI.sh POST /cloud/project/$OS_TENANT_ID/kube/$kubeId/kubeconfig | jq -r .content > kubeconfig-demo.yml
 >> ```
 > API
 >> > [!api]
 >> >
 >> > @api {v1} /cloud POST /cloud/project/{serviceName}/kube/{kubeId}/kubeconfig
+> Terraform
+>> ```console
+>> terraform output -raw kubeconfig_file > kubeconfig-demo.yml
+>> ```
+
 
 To use this kubeconfig file and access to your cluster, you can follow our [configuring kubectl](/pages/public_cloud/containers_orchestration/managed_kubernetes/configuring-kubectl-on-an-ovh-managed-kubernetes-cluster) tutorial, or simply add the `--kubeconfig` flag in your `kubectl` commands.
 
@@ -487,13 +497,13 @@ To use this kubeconfig file and access to your cluster, you can follow our [conf
 List the running nodes in your cluster:
 
 ```bash
-kubectl --kubeconfig=kubeconfig-demo get no -o wide
+kubectl --kubeconfig=kubeconfig-demo.yml get no -o wide
 ```
 
 You should obtain a result like this:
 
 ```console
-$ kubectl --kubeconfig=kubeconfig-demo get no -o wide
+$ kubectl --kubeconfig=kubeconfig-demo.yml get no -o wide
 NAME                                         STATUS   ROLES    AGE   VERSION   INTERNAL-IP    EXTERNAL-IP      OS-IMAGE             KERNEL-VERSION       CONTAINER-RUNTIME
 nodepool-8f0b4d98-874a-4cfd-b8-node-c74f26   Ready    <none>   56m   v1.34.0   192.168.0.71   141.94.215.23    Ubuntu 18.04.6 LTS   4.15.0-189-generic   containerd://1.4.6
 nodepool-8f0b4d98-874a-4cfd-b8-node-c9bf60   Ready    <none>   57m   v1.34.0   192.168.0.96   141.94.208.78    Ubuntu 18.04.6 LTS   4.15.0-189-generic   containerd://1.4.6
@@ -503,7 +513,7 @@ nodepool-8f0b4d98-874a-4cfd-b8-node-e666f5   Ready    <none>   56m   v1.34.0   1
 Now test the cluster by running a simple container that requests its published IP address.
 
 ```bash
-kubectl --kubeconfig=kubeconfig-demo run --image=debian debian -it -- bash
+kubectl --kubeconfig=kubeconfig-demo.yml run --image=debian debian -it -- bash
 apt update
 apt install -y curl
 curl ifconfig.me
@@ -512,7 +522,7 @@ curl ifconfig.me
 You should obtain a result like this:
 
 ```console
-$ kubectl --kubeconfig=kubeconfig-demo run --image=debian debian  -it -- bash
+$ kubectl --kubeconfig=kubeconfig-demo.yml run --image=debian debian  -it -- bash
 If you don't see a command prompt, try pressing enter.
 root@debian:/# apt update
 Get:1 http://deb.debian.org/debian bullseye InRelease [116 kB]
