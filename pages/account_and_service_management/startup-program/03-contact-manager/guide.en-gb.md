@@ -1,7 +1,7 @@
 ---
 title: "How to contact a Startup Program manager and/or request a technical consultation"
 excerpt: 'Contact an OVHcloud Startup Program manager for advice, technical consultation or information about the program'
-updated: 2025-10-14
+updated: 2026-11-10
 ---
 
 ## Objective
@@ -20,18 +20,7 @@ All these elements are covered in detail during your onboarding session at the s
 
 ### Contact us by email
 
-You can contact our Startup Program Managers by email for any questions or assistance related to the Startup Program, including technical consultations. Please select the appropriate email address based on your geographic zone. The table below will help you identify the correct address according to your physical location, ensuring you are connected with the team in your region.
-
-| Zone | Mailing list |
-|---|---|
-| France, Belgium, Netherlands, Luxembourg | frbenelux-startup@ovh.com |
-| Africa and Middle East | africa-me-startup@ovh.com |
-| Northern Europe | ne-startup@ovh.com |
-| Asia and Pacific | apac-startup@ovh.com |
-| Central Europe (Germany, Austria, Switzerland) | dach-startup@ovh.com |
-| North America | america-startup@ovh.com |
-| Eastern Europe | cee-startup@ovh.com |
-| Southern Europe | se-startup@ovh.com |
+You can contact our Startup Program Managers by email for any questions or assistance related to the Startup Program, including technical consultations, as well as to access technical consultations. The contact email address for your region can be found in the onboarding email you received when you joined the Startup Program. Please use this address to connect with the team for your area.
 
 ### Contact a Startup Program Manager directly
 
